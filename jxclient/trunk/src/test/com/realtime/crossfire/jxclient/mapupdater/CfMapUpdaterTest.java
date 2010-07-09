@@ -23,13 +23,15 @@ package com.realtime.crossfire.jxclient.mapupdater;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
+import com.realtime.crossfire.jxclient.faces.FaceImages;
+import com.realtime.crossfire.jxclient.faces.FaceImagesUtils;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.faces.FacesQueue;
-import com.realtime.crossfire.jxclient.faces.MemoryImageCache;
+import com.realtime.crossfire.jxclient.faces.TestFacesManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import java.io.IOException;
+import javax.swing.ImageIcon;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -515,10 +517,9 @@ public class CfMapUpdaterTest extends TestCase {
      */
     public void testFogOfWar1() throws IOException {
         final FaceCache faceCache = new FaceCache();
-        final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
-        defineFace(faceCache, facesQueue, 1, "M", png64x64);
-        defineFace(faceCache, facesQueue, 2, "_", png32x32);
+        final FacesManager facesManager = new TestFacesManager(faceCache);
+        defineFace(faceCache, 1, "M", png64x64);
+        defineFace(faceCache, 2, "_", png32x32);
 
         final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
 
@@ -549,15 +550,14 @@ public class CfMapUpdaterTest extends TestCase {
      */
     public void testDisplayArtifacts1() throws IOException {
         final FaceCache faceCache = new FaceCache();
-        final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
-        defineFace(faceCache, facesQueue, 307, "behemoth.x31", png64x64);
-        defineFace(faceCache, facesQueue, 308, "behemoth.x32", png64x64);
-        defineFace(faceCache, facesQueue, 309, "behemoth.x33", png64x64);
-        defineFace(faceCache, facesQueue, 310, "behemoth.x71", png64x64);
-        defineFace(faceCache, facesQueue, 932, "charwoman.132", png32x32);
-        defineFace(faceCache, facesQueue, 4607, "woodfloor.111", png32x32);
-        defineFace(faceCache, facesQueue, 312, "behemoth.x73", png64x64);
+        final FacesManager facesManager = new TestFacesManager(faceCache);
+        defineFace(faceCache, 307, "behemoth.x31", png64x64);
+        defineFace(faceCache, 308, "behemoth.x32", png64x64);
+        defineFace(faceCache, 309, "behemoth.x33", png64x64);
+        defineFace(faceCache, 310, "behemoth.x71", png64x64);
+        defineFace(faceCache, 932, "charwoman.132", png32x32);
+        defineFace(faceCache, 4607, "woodfloor.111", png32x32);
+        defineFace(faceCache, 312, "behemoth.x73", png64x64);
 
         final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
 
@@ -632,10 +632,9 @@ public class CfMapUpdaterTest extends TestCase {
      */
     public void testDisplayArtifacts2() throws IOException {
         final FaceCache faceCache = new FaceCache();
-        final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
-        defineFace(faceCache, facesQueue, 7, "a.x11", png64x64);
-        defineFace(faceCache, facesQueue, 8, "b.x12", png64x64);
+        final FacesManager facesManager = new TestFacesManager(faceCache);
+        defineFace(faceCache, 7, "a.x11", png64x64);
+        defineFace(faceCache, 8, "b.x12", png64x64);
 
         final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
 
@@ -658,12 +657,11 @@ public class CfMapUpdaterTest extends TestCase {
      */
     public void testDisplayArtifacts3() throws IOException {
         final FaceCache faceCache = new FaceCache();
-        final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
+        final FacesManager facesManager = new TestFacesManager(faceCache);
         final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
 
         mapUpdater.processNewMap(23, 16);
-        defineFace(faceCache, facesQueue, 1316, "demon_lord.x11", png128x256);
+        defineFace(faceCache, 1316, "demon_lord.x11", png128x256);
 
         mapUpdater.processMapBegin();
         mapUpdater.processMapFace(4, 17, 6, 1316, true);
@@ -751,10 +749,25 @@ public class CfMapUpdaterTest extends TestCase {
         return sb.toString();
     }
 
-    private static void defineFace(@NotNull final FaceCache faceCache, @NotNull final FacesQueue facesQueue, final int faceNum, @NotNull final String faceName, @NotNull final byte[] data) {
+    private static void defineFace(@NotNull final FaceCache faceCache, final int faceNum, @NotNull final String faceName, @NotNull final byte[] data) {
         final Face face = new Face(faceNum, faceName, 0);
         faceCache.addFace(face);
-        facesQueue.getAskfaceQueue().processFaceData(face, data);
+
+        final ImageIcon originalImageIcon;
+        try {
+            originalImageIcon = new ImageIcon(data);
+        } catch (final IllegalArgumentException ex) {
+            fail("Invalid .png data for face "+face+": "+ex.getMessage());
+            throw new AssertionError(ex);
+        }
+
+        if (originalImageIcon.getIconWidth() <= 0 || originalImageIcon.getIconHeight() <= 0) {
+            fail("Invalid .png size for face "+face);
+            throw new AssertionError();
+        }
+
+        final FaceImages faceImages = FaceImagesUtils.newFaceImages(originalImageIcon);
+        face.setFaceImages(faceImages);
     }
 
 }
