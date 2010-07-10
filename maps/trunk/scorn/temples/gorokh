@@ -8,7 +8,7 @@ enter_x 6
 enter_y 15
 msg
 Created:  1999-01-22 Raphaël Quinet (raphael@gimp.org)
-Modified: 2008-09-29 Rick Tanner
+Modified: 2010-07-10 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -976,7 +976,7 @@ exitstyle sstair
 doorstyle door_look
 decorstyle religious_gorokh
 monsterstyle demon
-final_map /dungeons/gorokh/gorokh_final
+final_map /scorn/temples/gorokh_final
 xsize 30
 ysize 30
 symmetry 1

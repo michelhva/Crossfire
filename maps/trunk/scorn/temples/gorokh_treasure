@@ -1,7 +1,7 @@
 arch map
 name Gorokh Treasure
 difficulty 95
-region wilderness
+region scorn
 darkness 4
 width 59
 height 59
@@ -9,7 +9,7 @@ enter_x 9
 enter_y 49
 msg
 Created:  2006-12-10 Gene Alexander (poof@eracc.com)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2010-07-10 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -3474,7 +3474,7 @@ x 9
 y 49
 end
 arch stair_up_3
-slaying /dungeons/gorokh/gorokh_final
+slaying gorokh_final
 hp 9
 sp 49
 x 9
@@ -12996,7 +12996,7 @@ y 26
 end
 arch perm_magic_portal
 name Gorokh's Special Treasures
-slaying /dungeons/gorokh/gorokh_treasure
+slaying gorokh_treasure
 hp 51
 sp 8
 x 32
@@ -20116,7 +20116,7 @@ x 51
 y 8
 end
 arch perm_magic_portal
-slaying /dungeons/gorokh/gorokh_treasure
+slaying gorokh_treasure
 hp 32
 sp 26
 x 51
