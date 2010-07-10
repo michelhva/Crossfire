@@ -9,7 +9,7 @@ enter_x 2
 enter_y 3
 msg
 Created:  1999-01-22 Raphaël Quinet (raphael@gimp.org)
-Modified: 2008-10-21 Rick Tanner
+Modified: 2010-07-10 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -247,10 +247,10 @@ ysize 30
 exitstyle sstair
 decorstyle religious_valriel
 monsterstyle angel
-final_map /dungeons/valriel/valriel_final
+final_map /scorn/temples/valriel_final
 symmetry 4
 orientation 2
-dungeon_depth 99
+dungeon_depth 1
 dungeon_name Valriel's church
 final_exit_archetype archway_gold
 endmsg

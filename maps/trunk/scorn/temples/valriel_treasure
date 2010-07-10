@@ -1,14 +1,14 @@
 arch map
 name Valriel's Treasure
 difficulty 100
-region wilderness
+region scorn
 width 59
 height 59
 enter_x 29
 enter_y 45
 msg
 Created:  2006-11-12 Gene Alexander (poof@eracc.com)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2010-07-10 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -13247,7 +13247,7 @@ x 29
 y 45
 end
 arch stair3_ystone_do
-slaying /dungeons/valriel/valriel_final
+slaying valriel_final
 hp 29
 sp 29
 x 29
