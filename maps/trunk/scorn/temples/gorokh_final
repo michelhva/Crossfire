@@ -1,14 +1,14 @@
 arch map
 name Gorokh Final
 difficulty 95
-region wilderness
+region scorn
 width 59
 height 61
 enter_x 51
 enter_y 6
 msg
 Created:  2006-12-10 Gene Alexander (poof@eracc.com)
-Modified: 2007-11-12 crossfire
+Modified: 2010-07-10 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -1175,8 +1175,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -1286,8 +1286,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -1749,8 +1749,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -1860,8 +1860,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -3077,10 +3077,10 @@ resist_blind 50
 pick_up 24
 see_invisible 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 end
 end
 arch mountain
@@ -3167,10 +3167,10 @@ resist_blind 50
 pick_up 24
 see_invisible 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 end
 end
 arch mountain
@@ -3256,8 +3256,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -3367,8 +3367,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -3839,8 +3839,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -3950,8 +3950,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -4815,7 +4815,7 @@ activate_on_release 0
 end
 arch mountain_cave2
 name Gorokh's Treasure cave
-slaying /dungeons/gorokh/gorokh_treasure
+slaying gorokh_treasure
 hp 9
 sp 49
 x 9
@@ -5332,8 +5332,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -5443,8 +5443,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -5925,8 +5925,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -6036,8 +6036,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -6428,10 +6428,10 @@ resist_blind 50
 pick_up 24
 see_invisible 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 end
 end
 arch mountain
@@ -6518,10 +6518,10 @@ resist_blind 50
 pick_up 24
 see_invisible 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 end
 end
 arch mountain
@@ -7784,8 +7784,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -7895,8 +7895,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -8348,8 +8348,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -8459,8 +8459,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -9707,8 +9707,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -9818,8 +9818,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -10270,8 +10270,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -10381,8 +10381,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -11795,8 +11795,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -11906,8 +11906,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -12356,8 +12356,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
@@ -12467,8 +12467,8 @@ see_invisible 1
 run_away 20
 can_cast_spell 1
 can_use_scroll 1
-sleep 0
 can_use_range 1
+sleep 0
 can_see_in_dark 1
 arch immunity
 name typhoid
