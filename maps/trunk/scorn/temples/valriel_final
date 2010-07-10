@@ -1,14 +1,14 @@
 arch map
 name Variel Final
 difficulty 95
-region wilderness
+region scorn
 width 59
 height 59
 enter_x 29
 enter_y 50
 msg
 Created:  2006-06-11 Gene Alexander (poof@eracc.com)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2010-07-10 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -9479,7 +9479,7 @@ y 29
 end
 arch stair3_ystone_up
 name stairs to Valriel's Treasure
-slaying /dungeons/valriel/valriel_treasure
+slaying valriel_treasure
 hp 29
 sp 45
 x 29
