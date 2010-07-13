@@ -21,7 +21,8 @@ no_drop 1
 invisible 1
 msg
 Infects a target with typhoid. Typhoid
-is deadly to humanoids but harmless to
-other creatures.
+is deadly to human, goblin, giant, and
+troll races but is harmless to other
+creatures.
 endmsg
 end
