@@ -38,7 +38,7 @@ public abstract class AbstractJXCSkinSource implements JXCSkinSource {
         try {
             getInputStream("global.skin").close();
         } catch (final IOException ex) {
-            throw new JXCSkinException(getURI("globak.skin")+": "+ex.getMessage());
+            throw new JXCSkinException(getURI("global.skin")+": "+ex.getMessage());
         }
     }
 
