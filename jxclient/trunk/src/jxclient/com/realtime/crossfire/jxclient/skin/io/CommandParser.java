@@ -129,7 +129,7 @@ public class CommandParser {
     @NotNull
     public GUICommand parseCommandArgs(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
         if (command.equals("SHOW")) {
-            return paarseShow(args, argc, element);
+            return parseShow(args, argc, element);
         } else if (command.equals("HIDE")) {
             return parseHide(args, argc, element);
         } else if (command.equals("TOGGLE")) {
@@ -167,7 +167,7 @@ public class CommandParser {
         } else if (command.equals("SCROLL_RESET")) {
             return parseScrollReset(args, argc, element);
         } else if (command.equals("MOVE_FOCUS")) {
-            return parseScrollnext(args, argc, element);
+            return parseMoveFocus(args, argc, element);
         } else if (command.equals("ACCOUNT_LOGIN")) {
             return parseAccountLogin(args, argc, element, commandCallback);
         } else if (command.equals("ACCOUNT_CREATE")) {
@@ -192,7 +192,7 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand paarseShow(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException {
+    private static GUICommand parseShow(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException {
         if (args.length != argc) {
             throw new IOException("syntax error");
         }
@@ -645,7 +645,7 @@ public class CommandParser {
     }
 
     /**
-     * Parses and builds a "SCROLL_NEXT" command.
+     * Parses and builds a "MOVE_FOCUS" command.
      * @param args the list of arguments
      * @param argc the start index for parsing
      * @param element the target element
@@ -654,7 +654,7 @@ public class CommandParser {
      * @throws JXCSkinException if a syntax error occurs
      */
     @NotNull
-    private GUICommand parseScrollnext(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException, JXCSkinException {
+    private GUICommand parseMoveFocus(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException, JXCSkinException {
         if (args.length != argc+1) {
             throw new IOException("syntax error");
         }
