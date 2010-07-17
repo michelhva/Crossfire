@@ -178,7 +178,7 @@ public class ServerCache {
     }
 
     /**
-     * Parses a metserver entry line and adds the result to {@link #entries}.
+     * Parses a metaserver entry line and adds the result to {@link #entries}.
      * @param metaserverEntryLine the metaserver entry line to parse
      * @param timestamp the query timestamp
      * @return whether the line was parsed correctly

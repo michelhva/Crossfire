@@ -104,7 +104,7 @@ public class StatsParser {
         statTable.put("WIS_APPLIED", CrossfireStatsListener.CS_STAT_APPLIED_WIS);
         statTable.put("WIS_BASE", CrossfireStatsListener.CS_STAT_BASE_WIS);
         statTable.put("WIS_RACE", CrossfireStatsListener.CS_STAT_RACE_WIS);
-        statTable.put("WSPEED", CrossfireStatsListener.CS_STAT_WEAP_SP);
+        statTable.put("WEAPON_SPEED", CrossfireStatsListener.CS_STAT_WEAP_SP);
     }
 
     /**

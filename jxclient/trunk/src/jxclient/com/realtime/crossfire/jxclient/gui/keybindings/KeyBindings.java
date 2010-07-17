@@ -118,23 +118,23 @@ public class KeyBindings {
      * Adds a key binding for a key code/modifiers pair.
      * @param keyCode the key code for the key binding
      * @param modifiers the modifiers for the key binding
-     * @param cmdlist the commands to associate to the key binding
+     * @param cmdList the commands to associate to the key binding
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, @NotNull final CommandList cmdlist, final boolean isDefault) {
-        addKeyBinding(new KeyCodeKeyBinding(keyCode, modifiers, cmdlist, isDefault));
+    public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, @NotNull final CommandList cmdList, final boolean isDefault) {
+        addKeyBinding(new KeyCodeKeyBinding(keyCode, modifiers, cmdList, isDefault));
     }
 
     /**
      * Adds a key binding for a key character.
      * @param keyChar the key character for the key binding
-     * @param cmdlist the commands to associate to the key binding
+     * @param cmdList the commands to associate to the key binding
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    public void addKeyBindingAsKeyChar(final char keyChar, @NotNull final CommandList cmdlist, final boolean isDefault) {
-        addKeyBinding(new KeyCharKeyBinding(keyChar, cmdlist, isDefault));
+    public void addKeyBindingAsKeyChar(final char keyChar, @NotNull final CommandList cmdList, final boolean isDefault) {
+        addKeyBinding(new KeyCharKeyBinding(keyChar, cmdList, isDefault));
     }
 
     /**

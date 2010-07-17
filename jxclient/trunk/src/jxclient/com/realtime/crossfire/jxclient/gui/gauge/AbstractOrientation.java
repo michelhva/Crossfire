@@ -95,7 +95,7 @@ public abstract class AbstractOrientation implements Orientation {
         }
 
         this.hasNegativeImage = hasNegativeImage;
-        recalc();
+        reCalculate();
     }
 
     /**
@@ -110,7 +110,7 @@ public abstract class AbstractOrientation implements Orientation {
         this.cur = cur;
         this.min = min;
         this.max = max;
-        recalc();
+        reCalculate();
         return true;
     }
 
@@ -125,7 +125,7 @@ public abstract class AbstractOrientation implements Orientation {
 
         this.width = width;
         this.height = height;
-        recalc();
+        reCalculate();
     }
 
     /**
@@ -177,9 +177,9 @@ public abstract class AbstractOrientation implements Orientation {
     }
 
     /**
-     * Recalculate the extends of the highlighted image part.
+     * Recalculate the extents of the highlighted image part.
      */
-    protected abstract void recalc();
+    protected abstract void reCalculate();
 
     /**
      * Returns the fraction <code>val/max</code> rounded to
@@ -189,7 +189,7 @@ public abstract class AbstractOrientation implements Orientation {
      * @param size the size of the result
      * @return the fraction in pixels
      */
-    protected static int calc(final int val, final int max, final int size) {
+    protected static int calculate(final int val, final int max, final int size) {
         if (val <= 0 || max <= 0) {
             return 0;
         } else if (val >= max) {

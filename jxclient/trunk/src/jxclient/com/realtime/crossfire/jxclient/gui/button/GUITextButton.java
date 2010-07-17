@@ -137,9 +137,9 @@ public class GUITextButton extends AbstractButton {
         g.setFont(font);
         g.setColor(color);
         (isActive() ? down : up).render(g, getWidth());
-        final RectangularShape rect = font.getStringBounds(text, g.getFontRenderContext());
-        final int y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
-        g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), y);
+        final RectangularShape rectangle = font.getStringBounds(text, g.getFontRenderContext());
+        final int y = (int)Math.round((getHeight()-rectangle.getMaxY()-rectangle.getMinY()))/2;
+        g.drawString(text, (int)Math.round((getWidth()-rectangle.getWidth())/2), y);
     }
 
 }

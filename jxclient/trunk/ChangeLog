@@ -221,7 +221,7 @@
 2009-08-08  Andreas Kirschbaum
 
 	* Fix crash due to "java.lang.ArrayIndexOutOfBoundsException" when
-	updating the ground or inventroy view.
+	updating the ground or inventory view.
 
 2009-07-26  Andreas Kirschbaum
 
@@ -324,7 +324,7 @@
 	* ragnorok: Make 'chat' messages darker to improve readability.
 
 	* Fix crash due to "java.util.ConcurrentModificationException" when updating
-	the ground or inventroy view.
+	the ground or inventory view.
 
 	* Save shortcuts per character.
 
@@ -394,7 +394,7 @@
 
 	* Fix display issues with fog-of-war tiles in minimap.
 
-	* Remove memory-sensitve cache for faces. Wastes a few MB of RAM
+	* Remove memory-sensitive cache for faces. Wastes a few MB of RAM
 	but removes reappearing "?" faces.
 
 	* Add default entries to server list to prevent an empty list at
@@ -411,7 +411,7 @@
 
 2008-12-19  Andreas Kirschbaum
 
-	* Improve scaling algorithmn for minimap contents.
+	* Improve scaling algorithm for minimap contents.
 
 	* Fix display issues (ghost images) with animated items.
 
@@ -638,7 +638,7 @@
 	the seven stat values and the text messages. While not an optimal
 	solution it allows character creation.
 
-	* Allow numppad cursor keys in command input.
+	* Allow numpad cursor keys in command input.
 
 	* Do not trigger key binding for ENTER when finishing a command
 	input by pressing ENTER.
@@ -993,7 +993,7 @@
 	books "close dialog", in quit dialog "disconnect", in metaserver
 	and start dialogs "connect".
 
-	* Generalize spellbelt into shortcuts: a shortcut can hold either
+	* Generalize spell belt into shortcuts: a shortcut can hold either
 	a spell or a command.
 
 	* Add open/close button to log window.
@@ -1016,7 +1016,7 @@
 
 2007-12-02  Andreas Kirschbaum
 
-	* Add hpbar right above the player.
+	* Add hp bar right above the player.
 
 	* Add "really disconnect?" dialog when ESC is pressed.
 
@@ -1045,11 +1045,11 @@
 
 2007-08-29  Andreas Kirschbaum
 
-	* Make left-click in spellbelt work.
+	* Make left-click in spell belt work.
 
 	* Fix oversized tooltip windows.
 
-	* Update spellbelt when the chracter learns or forgets a spell.
+	* Update spell belt when the character learns or forgets a spell.
 
 	* Sort the spell belt by spell path and spell name.
 
@@ -1091,7 +1091,7 @@
 
 	* Move HP/SP/GR/FP text display below the gauges.
 
-	* Add tooltips for spellbelt and spelllist.
+	* Add tooltips for spell belt and spelllist.
 
 	* Increase font sizes and remove unnecessary text information.
 

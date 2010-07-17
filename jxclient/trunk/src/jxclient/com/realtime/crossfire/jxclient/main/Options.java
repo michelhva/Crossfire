@@ -39,7 +39,7 @@ public class Options {
      * The {@link Settings} for saving/restoring defaults.
      */
     @Nullable
-    private Settings prefs = null;
+    private Settings settings = null;
 
     /**
      * Whether full-screen mode should be enabled.
@@ -103,7 +103,7 @@ public class Options {
      * @throws IOException if an I/O error occurs
      */
     public void parse(@NotNull final String[] args) throws IOException {
-        prefs = new Settings(Filenames.getSettingsFile());
+        settings = new Settings(Filenames.getSettingsFile());
         resolution = null;
         skin = "default";
 
@@ -168,10 +168,10 @@ public class Options {
             }
             i++;
         }
-        prefs.remove("resolution"); // delete obsolete entry
-        prefs.remove("width"); // delete obsolete entry
-        prefs.remove("height"); // delete obsolete entry
-        prefs.remove("skin"); // delete obsolete entry
+        settings.remove("resolution"); // delete obsolete entry
+        settings.remove("width"); // delete obsolete entry
+        settings.remove("height"); // delete obsolete entry
+        settings.remove("skin"); // delete obsolete entry
 
         // Map "default to actual skin name; must be after skin name has
         // been written to preferences.
@@ -213,8 +213,8 @@ public class Options {
      * @return the settings
      */
     @NotNull
-    public Settings getPrefs() {
-        return prefs;
+    public Settings getSettings() {
+        return settings;
     }
 
     /**

@@ -41,7 +41,7 @@ public class FacesProviderFactory {
 
     /**
      * Creates a new instance.
-     * @param facesManager the faces manager to quey
+     * @param facesManager the faces manager to query
      */
     public FacesProviderFactory(@NotNull final FacesManager facesManager) {
         add(new MagicMapFacesProvider(facesManager));

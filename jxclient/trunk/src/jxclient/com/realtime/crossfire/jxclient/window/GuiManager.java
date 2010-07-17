@@ -404,7 +404,7 @@ public class GuiManager {
     }
 
     /**
-     * Operns the "quit" dialog. Does nothing if the dialog is open.
+     * Opens the "quit" dialog. Does nothing if the dialog is open.
      * @return whether the dialog has been opened
      */
     public boolean openQuitDialog() {
@@ -474,7 +474,7 @@ public class GuiManager {
 
         windowRenderer.openDialog(queryDialog, false);
         assert queryDialog != null;
-        queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDEINPUT) != 0);
+        queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDE_INPUT) != 0);
         currentQueryDialogIsNamePrompt = prompt.startsWith("What is your name?");
         if (currentQueryDialogIsNamePrompt) {
             final String playerName = settings.getString("player_"+connection.getHostname(), "");
@@ -689,7 +689,7 @@ public class GuiManager {
     /**
      * Activates the command input text field. If the skin defined more than one
      * input field, the first matching one is selected. <p>If neither the main
-     * gui nor any visible dialog has an input text field, invisible guis are
+     * gui nor any visible dialog has an input text field, invisible GUIs are
      * checked as well. If one is found, it is made visible.
      * @return the command input text field, or <code>null</code> if the skin
      *         has no command input text field defined
@@ -734,7 +734,7 @@ public class GuiManager {
      * input field, the first matching one is selected.
      * <p/>
      * If neither the main gui nor any visible dialog has an input text field,
-     * invisible guis are checked as well. If one is found, it is made visible.
+     * invisible GUIs are checked as well. If one is found, it is made visible.
      * @param newText the new command text if non-<code>null</code>
      */
     public void activateCommandInput(@Nullable final String newText) {
@@ -842,7 +842,7 @@ public class GuiManager {
                 message = "Requesting information...";
                 break;
 
-            case ACCOUNTINFO:
+            case ACCOUNT_INFO:
                 message = "Starting account session...";
                 break;
 
@@ -867,11 +867,11 @@ public class GuiManager {
     /**
      * Adds a key binding.
      * @param perCharacter whether a per-character key binding should be added
-     * @param cmdlist the command list to execute on key press
+     * @param cmdList the command list to execute on key press
      * @return whether the key bindings dialog should be opened
      */
-    public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist) {
-        final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdlist);
+    public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdList) {
+        final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdList);
         if (result) {
             openKeybindDialog();
         }

@@ -31,7 +31,7 @@ import org.jetbrains.annotations.Nullable;
 public interface FacesManager {
 
     /**
-     * Returns the "orignal" face for a face ID. This function returns
+     * Returns the "original" face for a face ID. This function returns
      * immediately even if the face is not loaded. A not loaded face will be
      * updated as soon as loading has finished.
      * @param faceNum the face ID

@@ -36,10 +36,10 @@ public interface StatsListener {
 
     /**
      * A stat value has changed.
-     * @param statnr the stat number
+     * @param statNo the stat number
      * @param value the new stat value
      */
-    void statChanged(int statnr, int value);
+    void statChanged(int statNo, int value);
 
     /**
      * The "simple weapon speed" value has changed.

@@ -47,7 +47,7 @@ public class ScreenshotCommand extends AbstractCommand {
 
     /**
      * A number for creating screenshot file names. It is incremented for each
-     * scrrenshot.
+     * screenshot.
      */
     private static int screenshotId = 0;
 
@@ -94,13 +94,13 @@ public class ScreenshotCommand extends AbstractCommand {
         }
 
         final BufferedImage image = new BufferedImage(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight(), BufferedImage.TYPE_INT_RGB);
-        final Graphics grfx = image.createGraphics();
+        final Graphics g = image.createGraphics();
         try {
-            grfx.setColor(Color.black);
-            grfx.fillRect(0, 0, windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight());
-            windowRenderer.redraw(grfx);
+            g.setColor(Color.black);
+            g.fillRect(0, 0, windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight());
+            windowRenderer.redraw(g);
         } finally {
-            grfx.dispose();
+            g.dispose();
         }
         try {
             ImageIO.write(image, "png", file);

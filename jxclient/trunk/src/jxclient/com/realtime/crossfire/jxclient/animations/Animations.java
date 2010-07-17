@@ -30,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Manages animations frecevied from the server. Animations are uniquely
+ * Manages animations received from the server. Animations are uniquely
  * identified by an animation id. Each animation consists of a list of faces.
  * @author Andreas Kirschbaum
  */

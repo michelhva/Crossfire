@@ -83,7 +83,7 @@ public class Extent {
     }
 
     /**
-     * Srets the location.
+     * Sets the location.
      * @param x the x coordinate
      * @param y the y coordinate
      */
@@ -93,7 +93,7 @@ public class Extent {
     }
 
     /**
-     * Srets the size.
+     * Sets the size.
      * @param w the width
      * @param h the height
      */

@@ -616,7 +616,7 @@ public class Gui {
 
     /**
      * Returns the width of the dialog.
-     * @return the width, or <code>0</code> if this is not a dlalog
+     * @return the width, or <code>0</code> if this is not a dialog
      */
     public int getWidth() {
         return w;

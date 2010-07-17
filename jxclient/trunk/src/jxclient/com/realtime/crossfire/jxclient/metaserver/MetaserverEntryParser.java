@@ -40,7 +40,7 @@ public class MetaserverEntryParser {
     private static final String UNKNOWN_VERSION = "?";
 
     /**
-     * The default for archbase, mapbase, and codebase if none specified.
+     * The default for arch base, map base, and code base if none specified.
      */
     @NotNull
     private static final String DEFAULT_BASE = "not specified";
@@ -104,19 +104,19 @@ public class MetaserverEntryParser {
      * The "archetype base" value for the current server entry.
      */
     @NotNull
-    private String archbase = DEFAULT_BASE;
+    private String archBase = DEFAULT_BASE;
 
     /**
      * The "map base" value for the current server entry.
      */
     @NotNull
-    private String mapbase = DEFAULT_BASE;
+    private String mapBase = DEFAULT_BASE;
 
     /**
      * The "code base" value for the current server entry.
      */
     @NotNull
-    private String codebase = DEFAULT_BASE;
+    private String codeBase = DEFAULT_BASE;
 
     /**
      * Creates a new instance.
@@ -145,9 +145,9 @@ public class MetaserverEntryParser {
         final long bytesIn;
         final long bytesOut;
         final int uptimeSeconds;
-        final String archbase;
-        final String mapbase;
-        final String codebase;
+        final String archBase;
+        final String mapBase;
+        final String codeBase;
         try {
             updateSeconds = Integer.parseInt(entries[0]);
             hostname = entries[1];
@@ -157,14 +157,14 @@ public class MetaserverEntryParser {
             bytesIn = Long.parseLong(entries[5]);
             bytesOut = Long.parseLong(entries[6]);
             uptimeSeconds = Integer.parseInt(entries[7]);
-            archbase = entries[8];
-            codebase = entries[9];
-            mapbase = entries[10];
+            archBase = entries[8];
+            codeBase = entries[9];
+            mapBase = entries[10];
         } catch (final NumberFormatException ex) {
             return null;
         }
 
-        return new MetaserverEntry(updateSeconds, hostname, players, version, comment, bytesIn, bytesOut, uptimeSeconds, archbase, codebase, mapbase);
+        return new MetaserverEntry(updateSeconds, hostname, players, version, comment, bytesIn, bytesOut, uptimeSeconds, archBase, codeBase, mapBase);
     }
 
     /**
@@ -183,7 +183,7 @@ public class MetaserverEntryParser {
                     System.err.println("Warning: metaserver response missing hostname field, skipping");
                     metaserverEntry = null;
                 } else {
-                    metaserverEntry = new MetaserverEntry(updateSeconds, hostname, players, version, comment, bytesIn, bytesOut, uptimeSeconds, archbase, mapbase, codebase);
+                    metaserverEntry = new MetaserverEntry(updateSeconds, hostname, players, version, comment, bytesIn, bytesOut, uptimeSeconds, archBase, mapBase, codeBase);
                 }
                 clear();
                 inSection = false;
@@ -203,11 +203,11 @@ public class MetaserverEntryParser {
                             comment = value;
                         }
                     } else if (key.equals("archbase")) {
-                        archbase = value;
+                        archBase = value;
                     } else if (key.equals("mapbase")) {
-                        mapbase = value;
+                        mapBase = value;
                     } else if (key.equals("codebase")) {
-                        codebase = value;
+                        codeBase = value;
                     } else if (key.equals("num_players")) {
                         players = NumberParser.parseInt(value, 0);
                     } else if (key.equals("in_bytes")) {
@@ -256,9 +256,9 @@ public class MetaserverEntryParser {
         bytesIn = 0;
         bytesOut = 0;
         uptimeSeconds = 0;
-        archbase = DEFAULT_BASE;
-        mapbase = DEFAULT_BASE;
-        codebase = DEFAULT_BASE;
+        archBase = DEFAULT_BASE;
+        mapBase = DEFAULT_BASE;
+        codeBase = DEFAULT_BASE;
     }
 
     /**
@@ -269,7 +269,7 @@ public class MetaserverEntryParser {
      */
     @NotNull
     public static String format(@NotNull final MetaserverEntry entry) {
-        return entry.getUpdateSeconds()+"|"+replace(entry.getHostname())+"|"+entry.getPlayers()+"|"+replace(entry.getVersion())+"|"+replace(entry.getComment())+"|"+entry.getBytesIn()+"|"+entry.getBytesOut()+"|"+entry.getUptimeSeconds()+"|"+replace(entry.getArchbase())+"|"+replace(entry.getCodebase())+"|"+replace(entry.getMapbase());
+        return entry.getUpdateSeconds()+"|"+replace(entry.getHostname())+"|"+entry.getPlayers()+"|"+replace(entry.getVersion())+"|"+replace(entry.getComment())+"|"+entry.getBytesIn()+"|"+entry.getBytesOut()+"|"+entry.getUptimeSeconds()+"|"+replace(entry.getArchBase())+"|"+replace(entry.getCodeBase())+"|"+replace(entry.getMapBase());
     }
 
     /**

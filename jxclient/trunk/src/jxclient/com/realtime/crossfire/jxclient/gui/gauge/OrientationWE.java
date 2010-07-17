@@ -31,17 +31,17 @@ public class OrientationWE extends AbstractOrientation {
      * Creates a new instance.
      */
     public OrientationWE() {
-        recalc();
+        reCalculate();
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    protected void recalc() {
+    protected void reCalculate() {
         final int cur = getCur();
         final int min = getMin();
-        final int w = calc(isNegativeImage() ? min-cur : cur-min, getMax()-min, getWidth());
+        final int w = calculate(isNegativeImage() ? min-cur : cur-min, getMax()-min, getWidth());
         setExtent(0, 0, w, getHeight());
     }
 

@@ -56,7 +56,7 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemSpelllist;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemSpellList;
 import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
@@ -103,7 +103,7 @@ import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.skin.events.ConnectionStateSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.CrossfireMagicmapSkinEvent;
-import com.realtime.crossfire.jxclient.skin.events.MapscrollSkinEvent;
+import com.realtime.crossfire.jxclient.skin.events.MapScrollSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.SkillAddedSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.SkillRemovedSkinEvent;
 import com.realtime.crossfire.jxclient.skin.factory.CheckBoxFactory;
@@ -1076,7 +1076,7 @@ public class JXCSkinLoader {
             }
 
             final CommandList commandList = skin.getCommandList(args[2]);
-            skin.addSkinEvent(new MapscrollSkinEvent(commandList, mapUpdater));
+            skin.addSkinEvent(new MapScrollSkinEvent(commandList, mapUpdater));
         } else if (type.equals("skill")) {
             if (args.length != 5) {
                 throw new IOException("syntax error");
@@ -1292,7 +1292,7 @@ public class JXCSkinLoader {
 
             final Color selectorColor = ParseUtils.parseColorNull(args[8]);
             final BufferedImage selectorImage = imageParser.getImage(selectorColor, args[8]);
-            element = new GUIItemSpelllist(tooltipManager, elementListener, commandQueue, name, extent, selectorColor, selectorImage, index, facesManager, spellsManager, currentSpellManager);
+            element = new GUIItemSpellList(tooltipManager, elementListener, commandQueue, name, extent, selectorColor, selectorImage, index, facesManager, spellsManager, currentSpellManager);
         } else {
             throw new IOException("undefined item type: "+type);
         }
@@ -1751,7 +1751,7 @@ public class JXCSkinLoader {
     /**
      * Parses a "query_text" command.
      * @param args the command arguments
-     * @param server the crossfire server connectio for sending reply commands
+     * @param server the crossfire server connection for sending reply commands
      * @param commandCallback the command callback to use
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify

@@ -278,8 +278,8 @@ public class Buffer {
         int beginIndex = 0;
         int i = 0;
         for (final Segment segment : line) {
-            final RectangularShape rect = segment.getSize(fonts, context);
-            final int width = (int)Math.round(rect.getWidth());
+            final RectangularShape rectangle = segment.getSize(fonts, context);
+            final int width = (int)Math.round(rectangle.getWidth());
             if (x != 0 && x+width > renderWidth) {
                 line.updateAttributes(beginIndex, i, height-minY, fonts, context);
 
@@ -295,8 +295,8 @@ public class Buffer {
             segment.setWidth(width);
 
             x += width;
-            minY = (int)Math.min(minY, Math.round(rect.getY()));
-            maxY = (int)Math.max(maxY, Math.round(rect.getY()+rect.getHeight()));
+            minY = (int)Math.min(minY, Math.round(rectangle.getY()));
+            maxY = (int)Math.max(maxY, Math.round(rectangle.getY()+rectangle.getHeight()));
 
             i++;
         }
@@ -334,7 +334,7 @@ public class Buffer {
     }
 
     /**
-     * Checks whether a new text line should be merged with a preceeding line.
+     * Checks whether a new text line should be merged with a preceding line.
      * @param text the text line contents
      * @param color the text line color
      * @return whether the line should be merged

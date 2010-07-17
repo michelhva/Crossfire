@@ -124,11 +124,11 @@ public interface JXCSkin extends Iterable<Gui> {
 
     /**
      * Returns the popup dialog for readables.
-     * @param booknr the book ID
+     * @param  bookNo the book ID
      * @return the dialog
      */
     @NotNull
-    Gui getDialogBook(int booknr);
+    Gui getDialogBook(int bookNo);
 
     /**
      * Returns the main window.

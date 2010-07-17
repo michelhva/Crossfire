@@ -106,7 +106,7 @@ public class PacketWatcherTest extends TestCase {
             listener.processEmpty("command");
             listener.processEmpty("commandx");
         }
-        assertEquals("watch command\nwatch commandx\n", sb.toString());
+        assertEquals("watch command\n"+"watch commandx\n", sb.toString());
     }
 
 }

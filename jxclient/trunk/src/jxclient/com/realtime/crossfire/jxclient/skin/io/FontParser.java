@@ -29,7 +29,7 @@ import java.io.InputStream;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Creates {@link Font} instances from strig representations.
+ * Creates {@link Font} instances from string representations.
  * @author Andreas Kirschbaum
  */
 public class FontParser {

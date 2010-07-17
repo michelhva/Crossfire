@@ -56,7 +56,7 @@ public class AnimationState {
     /**
      * The face was updated last in this tick number.
      */
-    private int tickno = 0;
+    private int tickNo = 0;
 
     /**
      * The face index currently shown.
@@ -89,26 +89,26 @@ public class AnimationState {
 
     /**
      * Sets the tick number. This function does not update the displayed face.
-     * @param tickno the current tick number
+     * @param tickNo the current tick number
      */
-    public void setTickno(final int tickno) {
-        this.tickno = tickno;
+    public void setTickNo(final int tickNo) {
+        this.tickNo = tickNo;
     }
 
     /**
      * Sets the tick number and update affected faces.
-     * @param tickno the tick number
+     * @param tickNo the tick number
      * @param location the location to update
      */
-    public void updateTickno(final int tickno, @NotNull final Location location) {
+    public void updateTickNo(final int tickNo, @NotNull final Location location) {
         final int oldFaceIndex = index/speed;
-        final int diff = tickno-this.tickno;
-        if (tickno < this.tickno) {
-            System.err.println("Ignoring inconsistent tick value: current tick number is "+tickno+", previous tick number was "+this.tickno+".");
+        final int diff = tickNo-this.tickNo;
+        if (tickNo < this.tickNo) {
+            System.err.println("Ignoring inconsistent tick value: current tick number is "+tickNo+", previous tick number was "+this.tickNo+".");
         } else {
             index = (index+diff)%(speed*animation.getFaces());
         }
-        this.tickno = tickno;
+        this.tickNo = tickNo;
 
         draw(location, oldFaceIndex);
     }

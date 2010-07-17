@@ -57,15 +57,15 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
     private final int uptimeSeconds;
 
     @NotNull
-    private final String archbase;
+    private final String archBase;
 
     @NotNull
-    private final String mapbase;
+    private final String mapBase;
 
     @NotNull
-    private final String codebase;
+    private final String codeBase;
 
-    public MetaserverEntry(final int updateSeconds, @NotNull final String hostname, final int players, @NotNull final String version, @NotNull final String comment, final long bytesIn, final long bytesOut, final int uptimeSeconds, @NotNull final String archbase, @NotNull final String mapbase, @NotNull final String codebase) {
+    public MetaserverEntry(final int updateSeconds, @NotNull final String hostname, final int players, @NotNull final String version, @NotNull final String comment, final long bytesIn, final long bytesOut, final int uptimeSeconds, @NotNull final String archBase, @NotNull final String mapBase, @NotNull final String codeBase) {
         this.updateSeconds = updateSeconds;
         this.hostname = hostname;
         this.players = players;
@@ -74,9 +74,9 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
         this.bytesIn = bytesIn;
         this.bytesOut = bytesOut;
         this.uptimeSeconds = uptimeSeconds;
-        this.archbase = archbase;
-        this.mapbase = mapbase;
-        this.codebase = codebase;
+        this.archBase = archBase;
+        this.mapBase = mapBase;
+        this.codeBase = codeBase;
     }
 
     public int getUpdateSeconds() {
@@ -115,18 +115,18 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
     }
 
     @NotNull
-    public String getArchbase() {
-        return archbase;
+    public String getArchBase() {
+        return archBase;
     }
 
     @NotNull
-    public String getMapbase() {
-        return mapbase;
+    public String getMapBase() {
+        return mapBase;
     }
 
     @NotNull
-    public String getCodebase() {
-        return codebase;
+    public String getCodeBase() {
+        return codeBase;
     }
 
     /**
@@ -173,8 +173,8 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
      * Return a formatted string using the given format.
      * <p/>
      * Supported format strings: <ul> <li>%% - a literal % character <li>%A -
-     * archbase <li>%C - comment <li>%E - codebase <li>%H - hostname <li>%I -
-     * bytes in <li>%M - mapbase <li>%O - bytes out <li>%P - number of players
+     * arch base <li>%C - comment <li>%E - code base <li>%H - hostname <li>%I -
+     * bytes in <li>%M - map base <li>%O - bytes out <li>%P - number of players
      * <li>%T - uptime <li>%U - time since last update <li>%V - server version
      * </ul>
      * @param format The format.
@@ -195,7 +195,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
                     break;
 
                 case 'A':
-                    sb.append(archbase);
+                    sb.append(archBase);
                     break;
 
                 case 'C':
@@ -207,7 +207,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
                     break;
 
                 case 'E':
-                    sb.append(codebase);
+                    sb.append(codeBase);
                     break;
 
                 case 'H':
@@ -219,7 +219,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
                     break;
 
                 case 'M':
-                    sb.append(mapbase);
+                    sb.append(mapBase);
                     break;
 
                 case 'O':

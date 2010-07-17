@@ -30,7 +30,7 @@ import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Tracks received Crossfire messgaes and resets the "output-count" setting
+ * Tracks received Crossfire messages and resets the "output-count" setting
  * whenever a player logs in.
  * @author Andreas Kirschbaum
  */
@@ -74,7 +74,7 @@ public class OutputCountTracker {
          * {@inheritDoc}
          */
         @Override
-        public void additemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
+        public void addItemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
             // ignore
         }
 

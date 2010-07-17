@@ -26,7 +26,7 @@ package com.realtime.crossfire.jxclient.mapupdater;
  * @version 1.0
  * @since 1.0
  */
-public interface MapscrollListener {
+public interface MapScrollListener {
 
     /**
      * The map contents have scrolled.

@@ -74,7 +74,7 @@ public class CfItem {
     private int anim;
 
     /**
-     * The animatin speed.
+     * The animation speed.
      */
     private int animSpeed;
 

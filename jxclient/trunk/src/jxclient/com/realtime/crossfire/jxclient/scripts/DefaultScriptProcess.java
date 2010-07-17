@@ -120,16 +120,16 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      * The {@link Process} instance for the executed child process.
      */
     @NotNull
-    private final Process proc;
+    private final Process process;
 
     /**
-     * The {@link InputStream} of {@link #proc}.
+     * The {@link InputStream} of {@link #process}.
      */
     @NotNull
     private final InputStream in;
 
     /**
-     * The {@link OutputStreamWriter} associated with {@link #proc}.
+     * The {@link OutputStreamWriter} associated with {@link #process}.
      */
     @NotNull
     private final OutputStreamWriter osw;
@@ -232,9 +232,9 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         this.skillSet = skillSet;
         packetWatcher = new PacketWatcher(crossfireServerConnection, this);
         final Runtime rt = Runtime.getRuntime();
-        proc = rt.exec(filename);
-        in = proc.getInputStream();
-        osw = new OutputStreamWriter(proc.getOutputStream());
+        process = rt.exec(filename);
+        in = process.getInputStream();
+        osw = new OutputStreamWriter(process.getOutputStream());
     }
 
     /**
@@ -281,7 +281,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                     isr.close();
                 }
                 try {
-                    final int exitStatus = proc.waitFor();
+                    final int exitStatus = process.waitFor();
                     result = exitStatus == 0 ? null : "exit "+exitStatus;
                 } catch (final InterruptedException ex) {
                     result = ex.getMessage();
@@ -399,28 +399,28 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
 
     /**
      * Processes a "request" command from the script process.
-     * @param parms the command arguments
+     * @param params the command arguments
      */
-    private void cmdRequest(@NotNull final String parms) {
-        if (parms.equals("player")) {
+    private void cmdRequest(@NotNull final String params) {
+        if (params.equals("player")) {
             commandSent("request player "+itemSet.getPlayer().getTag()+" "+stats.getTitle());
-        } else if (parms.equals("range")) {
+        } else if (params.equals("range")) {
             commandSent("request range "+stats.getRange());
-        } else if (parms.equals("weight")) {
+        } else if (params.equals("weight")) {
             commandSent("request weight "+stats.getStat(CrossfireStatsListener.CS_STAT_WEIGHT_LIM)+" "+itemSet.getPlayer().getWeight());
-        } else if (parms.equals("stat stats")) {
+        } else if (params.equals("stat stats")) {
             commandSent("request stat stats "+stats.getStat(CrossfireStatsListener.CS_STAT_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_CHA));
-        } else if (parms.equals("stat stats_race")) {
+        } else if (params.equals("stat stats_race")) {
             commandSent("request stat stats_race "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_CHA));
-        } else if (parms.equals("stat stats_base")) {
+        } else if (params.equals("stat stats_base")) {
             commandSent("request stat stats_base "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_CHA));
-        } else if (parms.equals("stat stats_applied")) {
+        } else if (params.equals("stat stats_applied")) {
             commandSent("request stat stats_applied "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_CHA));
-        } else if (parms.equals("stat cmbt")) {
+        } else if (params.equals("stat cmbt")) {
             commandSent("request stat cmbt "+stats.getStat(CrossfireStatsListener.CS_STAT_WC)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_AC)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_DAM)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SPEED)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_WEAP_SP));
-        } else if (parms.equals("stat hp")) {
+        } else if (params.equals("stat hp")) {
             commandSent("request stat hp "+stats.getStat(CrossfireStatsListener.CS_STAT_HP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_MAXHP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_MAXSP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_GRACE)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_FOOD));
-        } else if (parms.equals("stat xp")) {
+        } else if (params.equals("stat xp")) {
             final StringBuilder sb = new StringBuilder("request stat xp ");
             sb.append(stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL));
             sb.append(' ').append(stats.getExperience());
@@ -434,7 +434,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 }
             }
             commandSent(sb.toString());
-        } else if (parms.equals("stat resists")) {
+        } else if (params.equals("stat resists")) {
             final StringBuilder sb = new StringBuilder("request stat resists");
             for (int i = CrossfireStatsListener.CS_STAT_RESIST_START; i <= CrossfireStatsListener.CS_STAT_RESIST_END; i++) {
                 sb.append(' ');
@@ -445,28 +445,28 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 sb.append(" 0");
             }
             commandSent(sb.toString());
-        } else if (parms.equals("stat paths")) {
+        } else if (params.equals("stat paths")) {
             commandSent("request stat paths "+stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_ATTUNE)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_REPEL)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_DENY));
-        } else if (parms.equals("flags")) {
+        } else if (params.equals("flags")) {
             commandSent("request flags "+stats.getStat(CrossfireStatsListener.CS_STAT_FLAGS)+" "+(commandQueue.checkFire() ? "1" : "0")+" "+(commandQueue.checkRun() ? "1" : "0")+" 0");
-        } else if (parms.equals("items inv")) {
+        } else if (params.equals("items inv")) {
             for (final CfItem item : itemSet.getPlayerInventory()) {
                 commandSentItem("request items inv", item);
             }
             commandSent("request items inv end");
-        } else if (parms.equals("items actv")) {
+        } else if (params.equals("items actv")) {
             for (final CfItem item : itemSet.getPlayerInventory()) {
                 if (item.isApplied()) {
                     commandSentItem("request items actv", item);
                 }
             }
             commandSent("request items actv end");
-        } else if (parms.equals("items on")) {
+        } else if (params.equals("items on")) {
             for (final CfItem item : itemSet.getItemsByLocation(0)) {
                 commandSentItem("request items on", item);
             }
             commandSent("request items on end");
-        } else if (parms.equals("items cont")) {
+        } else if (params.equals("items cont")) {
             final int containerTag = floorView.getCurrentFloor();
             if (containerTag != 0) {
                 for (final CfItem item : itemSet.getItemsByLocation(containerTag)) {
@@ -474,9 +474,9 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 }
             }
             commandSent("request items cont end");
-        } else if (parms.equals("map pos")) {
+        } else if (params.equals("map pos")) {
             commandSent("request map pos "+mapUpdater.getWidth()/2+" "+mapUpdater.getHeight()/2);
-        } else if (parms.equals("map near")) {
+        } else if (params.equals("map near")) {
             final CfMap map = mapUpdater.getMap();
             final int centerX = mapUpdater.getWidth()/2;
             final int centerY = mapUpdater.getHeight()/2;
@@ -485,7 +485,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                     commandSentMap(map, centerX+x, centerY+y);
                 }
             }
-        } else if (parms.equals("map all")) {
+        } else if (params.equals("map all")) {
             final CfMap map = mapUpdater.getMap();
             final int width = mapUpdater.getWidth()/2;
             final int height = mapUpdater.getHeight()/2;
@@ -494,10 +494,10 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                     commandSentMap(map, x, y);
                 }
             }
-        } else if (parms.startsWith("map ")) {
-            final String[] tmp = parms.split(" +");
+        } else if (params.startsWith("map ")) {
+            final String[] tmp = params.split(" +");
             if (tmp.length != 3) {
-                reportError("syntax error: request "+parms);
+                reportError("syntax error: request "+params);
                 return;
             }
 
@@ -505,7 +505,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             try {
                 x = Integer.parseInt(tmp[1]);
             } catch (final NumberFormatException ex) {
-                reportError("syntax error: request "+parms);
+                reportError("syntax error: request "+params);
                 return;
             }
 
@@ -513,12 +513,12 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             try {
                 y = Integer.parseInt(tmp[2]);
             } catch (final NumberFormatException ex) {
-                reportError("syntax error: request "+parms);
+                reportError("syntax error: request "+params);
                 return;
             }
 
             commandSentMap(mapUpdater.getMap(), x, y);
-        } else if (parms.equals("skills")) {
+        } else if (params.equals("skills")) {
             for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++) {
                 final Object skill = skillSet.getSkill(i);
                 if (skill != null) {
@@ -526,26 +526,26 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 }
             }
             commandSent("request skills end");
-        } else if (parms.equals("spells")) {
+        } else if (params.equals("spells")) {
             for (final Spell spell : spellsManager) {
                 commandSent("request spells "+spell.getTag()+" "+spell.getLevel()+" "+spell.getMana()+" "+spell.getGrace()+" "+spell.getSkill()+" "+spell.getPath()+" "+spell.getCastingTime()+" "+spell.getDamage()+" "+spell.getName());
             }
             commandSent("request spells end");
         } else {
-            reportError("syntax error: request "+parms);
+            reportError("syntax error: request "+params);
         }
     }
 
     /**
      * Processes a "issue mark" command from the script process.
-     * @param parms the command arguments
+     * @param params the command arguments
      */
-    private void cmdIssueMark(@NotNull final String parms) {
+    private void cmdIssueMark(@NotNull final String params) {
         final int tag;
         try {
-            tag = Integer.parseInt(parms);
+            tag = Integer.parseInt(params);
         } catch (final NumberFormatException ex) {
-            reportError("syntax error: issue mark "+parms);
+            reportError("syntax error: issue mark "+params);
             return;
         }
         crossfireServerConnection.sendMark(tag);
@@ -553,12 +553,12 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
 
     /**
      * Processes a "issue lock" command from the script process.
-     * @param parms the command arguments
+     * @param params the command arguments
      */
-    private void cmdIssueLock(@NotNull final String parms) {
-        final String[] tmp = parms.split(" +", 2);
+    private void cmdIssueLock(@NotNull final String params) {
+        final String[] tmp = params.split(" +", 2);
         if (tmp.length != 2) {
-            reportError("syntax error: issue lock "+parms);
+            reportError("syntax error: issue lock "+params);
             return;
         }
         final int val;
@@ -567,11 +567,11 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             val = Integer.parseInt(tmp[0]);
             tag = Integer.parseInt(tmp[1]);
         } catch (final NumberFormatException ex) {
-            reportError("syntax error: issue lock "+parms);
+            reportError("syntax error: issue lock "+params);
             return;
         }
         if (val < 0 || val > 1) {
-            reportError("syntax error: issue lock "+parms);
+            reportError("syntax error: issue lock "+params);
             return;
         }
         crossfireServerConnection.sendLock(val != 0, tag);
@@ -579,12 +579,12 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
 
     /**
      * Processes a regular "issue" command from the script process.
-     * @param parms the command arguments
+     * @param params the command arguments
      */
-    private void cmdIssue(@NotNull final String parms) {
-        final String[] pps = parms.split(" +", 3);
+    private void cmdIssue(@NotNull final String params) {
+        final String[] pps = params.split(" +", 3);
         if (pps.length != 3) {
-            reportError("syntax error: issue "+parms);
+            reportError("syntax error: issue "+params);
             return;
         }
         final int repeat;
@@ -593,11 +593,11 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             repeat = Integer.parseInt(pps[0]);
             tmp = Integer.parseInt(pps[1]);
         } catch (final NumberFormatException ex) {
-            reportError("syntax error: issue "+parms);
+            reportError("syntax error: issue "+params);
             return;
         }
         if (tmp < 0 || tmp > 1) {
-            reportError("syntax error: issue "+parms);
+            reportError("syntax error: issue "+params);
             return;
         }
         final boolean mustSend = tmp != 0;
@@ -607,19 +607,19 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
 
     /**
      * Processes a "draw" command from the script process.
-     * @param parms the command arguments
+     * @param params the command arguments
      */
-    private void cmdDraw(@NotNull final String parms) {
-        final String[] pps = parms.split(" +", 2);
+    private void cmdDraw(@NotNull final String params) {
+        final String[] pps = params.split(" +", 2);
         if (pps.length != 2) {
-            reportError("syntax error: draw "+parms);
+            reportError("syntax error: draw "+params);
             return;
         }
         final int color;
         try {
             color = Integer.parseInt(pps[0]);
         } catch (final NumberFormatException ex) {
-            reportError("syntax error: draw "+parms);
+            reportError("syntax error: draw "+params);
             return;
         }
         crossfireServerConnection.drawInfo(pps[1], color);
@@ -647,15 +647,15 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
 
     /**
      * Processes a line received from the script process.
-     * @param cmdline the line
+     * @param cmdLine the line
      */
-    private void runScriptCommand(@NotNull final String cmdline) {
-        final String[] tmp = cmdline.split(" +", 2);
+    private void runScriptCommand(@NotNull final String cmdLine) {
+        final String[] tmp = cmdLine.split(" +", 2);
         if (tmp[0].equals("watch")) {
             if (tmp.length == 1) {
                 packetWatcher.addCommand("");
             } else if (tmp[1].indexOf(' ') != -1) {
-                reportError("syntax error: "+cmdline);
+                reportError("syntax error: "+cmdLine);
             } else {
                 packetWatcher.addCommand(tmp[1]);
             }
@@ -665,11 +665,11 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             if (tmp.length == 2) {
                 cmdRequest(tmp[1]);
             } else {
-                reportError("syntax error: "+cmdline);
+                reportError("syntax error: "+cmdLine);
             }
         } else if (tmp[0].equals("issue")) {
             if (tmp.length != 2) {
-                reportError("syntax error: "+cmdline);
+                reportError("syntax error: "+cmdLine);
             } else if (tmp[1].startsWith("mark ")) {
                 cmdIssueMark(tmp[1].substring(5));
             } else if (tmp[1].startsWith("lock ")) {
@@ -681,7 +681,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             if (tmp.length == 2) {
                 cmdDraw(tmp[1]);
             } else {
-                reportError("syntax error: "+cmdline);
+                reportError("syntax error: "+cmdLine);
             }
         } else if (tmp[0].equals("monitor")) {
             if (tmp.length == 1) {
@@ -696,7 +696,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 reportError("The 'unmonitor' command does not take arguments.");
             }
         } else {
-            reportError("unrecognized command from script: "+cmdline);
+            reportError("unrecognized command from script: "+cmdLine);
         }
     }
 
@@ -722,7 +722,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
     @Override
     public void killScript() {
         killed = true;
-        proc.destroy();
+        process.destroy();
     }
 
     /**

@@ -41,7 +41,7 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
     private final Object sync = new Object();
 
     /**
-     * The image cache used for loading orignal images.
+     * The image cache used for loading original images.
      */
     @NotNull
     private final ImageCache imageCacheOriginal;
@@ -121,7 +121,7 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
     }
 
     /**
-     * Saves a face to the cacches. This function returns immediately; the faces
+     * Saves a face to the caches. This function returns immediately; the faces
      * are written asynchronously.
      * @param face the face to write
      * @param faceImages the image information to write

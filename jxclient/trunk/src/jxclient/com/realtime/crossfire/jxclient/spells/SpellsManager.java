@@ -182,7 +182,7 @@ public class SpellsManager implements Iterable<Spell> {
      */
     private void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, @NotNull final String spellName, @NotNull final String message) {
         final Spell key = new Spell(spellName);
-        key.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path); // set spell path which is unsed in the comparator
+        key.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path); // set spell path which is used in the comparator
 
         final int index = Collections.binarySearch(spells, key, spellNameComparator);
         final Spell spell;
@@ -282,7 +282,7 @@ public class SpellsManager implements Iterable<Spell> {
 
     /**
      * Returns the number of known spells.
-     * @return the number of spoells
+     * @return the number of spells
      */
     public int getSpells() {
         return spells.size();

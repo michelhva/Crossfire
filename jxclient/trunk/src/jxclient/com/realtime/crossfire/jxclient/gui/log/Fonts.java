@@ -58,7 +58,7 @@ public class Fonts {
     /**
      * Create a new instance.
      * @param fontPrint The font to use for <code>FontID.PRINT</code>,
-     * <code>FontID.HAND</code>, and <code>FontID.STANGE</code> text.
+     * <code>FontID.HAND</code>, and <code>FontID.STRANGE</code> text.
      * @param fontFixed The font to use for <code>FontID.FIXED</code> text.
      * @param fontFixedBold The font to use for <code>FontID.FIXED</code> text
      * which has bold enabled.

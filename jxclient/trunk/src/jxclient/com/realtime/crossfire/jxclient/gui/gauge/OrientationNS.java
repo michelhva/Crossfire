@@ -31,17 +31,17 @@ public class OrientationNS extends AbstractOrientation {
      * Creates a new instance.
      */
     public OrientationNS() {
-        recalc();
+        reCalculate();
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    protected void recalc() {
+    protected void reCalculate() {
         final int cur = getCur();
         final int min = getMin();
-        final int h = calc(isNegativeImage() ? min-cur : cur-min, getMax()-min, getHeight());
+        final int h = calculate(isNegativeImage() ? min-cur : cur-min, getMax()-min, getHeight());
         setExtent(0, 0, getWidth(), h);
     }
 

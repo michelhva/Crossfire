@@ -213,7 +213,7 @@ public class CfMapAnimations {
         final Collection<Map.Entry<Location, AnimationState>> animationsToUpdate;
         synchronized (sync) {
             for (final AnimationState animationState : pendingTickUpdates) {
-                animationState.setTickno(tickNo);
+                animationState.setTickNo(tickNo);
             }
             pendingTickUpdates.clear();
 
@@ -230,7 +230,7 @@ public class CfMapAnimations {
         for (final Map.Entry<Location, AnimationState> e : animationsToUpdate) {
             final Location location = e.getKey();
             final AnimationState animationState = e.getValue();
-            animationState.updateTickno(tickNo, location);
+            animationState.updateTickNo(tickNo, location);
         }
         mapUpdater.processMapEnd(false);
     }

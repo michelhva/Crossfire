@@ -43,7 +43,7 @@ public class GUIQueryText extends GUIText {
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link CrossfireServerConnection} for sendig reply commands.
+     * The {@link CrossfireServerConnection} for sending reply commands.
      */
     @NotNull
     private final CrossfireServerConnection server;

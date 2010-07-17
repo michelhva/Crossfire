@@ -49,7 +49,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback {
 
     private int y = 0;
 
-    private final int origx;
+    private final int origX;
 
     private final int borderSize;
 
@@ -59,7 +59,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback {
         this.gc = gc;
         this.x = x;
         this.y = y;
-        origx = x;
+        origX = x;
         this.borderSize = borderSize;
     }
 
@@ -79,7 +79,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback {
         if (t.equals(HTML.Tag.A)) {
             fonts.push(fonts.peek());
             colors.push(Color.YELLOW);
-            //y += defaultfont.getSize()+1;
+            //y += defaultFont.getSize()+1;
         } else if (t.equals(HTML.Tag.B)) {
             fonts.push(fonts.peek().deriveFont(Font.BOLD));
             colors.push(colors.peek());
@@ -92,7 +92,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback {
             gc.setFont(fonts.peek());
             gc.setColor(colors.peek());
             final FontMetrics m = gc.getFontMetrics();
-            x = origx;
+            x = origX;
             y += fonts.peek().getSize()+1;
             final String str = " - ";
             final int w = m.stringWidth(str);
@@ -108,7 +108,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback {
     public void handleSimpleTag(@NotNull final HTML.Tag t, @NotNull final MutableAttributeSet a, final int pos) {
         if (t.equals(HTML.Tag.BR)) {
             y += fonts.peek().getSize()+1;
-            x = origx;
+            x = origX;
         }
     }
 

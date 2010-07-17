@@ -32,7 +32,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Maints the current {@link GuiState}. Notifies registered listeners about
+ * Maintains the current {@link GuiState}. Notifies registered listeners about
  * changes.
  * @author Andreas Kirschbaum
  */

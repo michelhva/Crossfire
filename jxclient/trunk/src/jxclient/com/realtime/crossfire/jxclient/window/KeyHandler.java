@@ -49,7 +49,7 @@ public class KeyHandler {
 
     private static final int KEY_SHIFT_ALT = 2;
 
-    private static final int KEY_SHIFT_ALTGR = 3;
+    private static final int KEY_SHIFT_ALT_GR = 3;
 
     /**
      * The {@link Writer} for logging keyboard debug output. Log nothing if
@@ -123,15 +123,15 @@ public class KeyHandler {
         this.keyBindings = keyBindings;
     }
 
-    private boolean getKeyShift(final int keyid) {
-        return keyShift[keyid];
+    private boolean getKeyShift(final int keyId) {
+        return keyShift[keyId];
     }
 
-    private void setKeyShift(final int keyid, final boolean state) {
-        if (keyShift[keyid] != state) {
-            debugKeyboardWrite("setKeyShift: "+keyid+"="+state);
+    private void setKeyShift(final int keyId, final boolean state) {
+        if (keyShift[keyId] != state) {
+            debugKeyboardWrite("setKeyShift: "+keyId+"="+state);
         }
-        keyShift[keyid] = state;
+        keyShift[keyId] = state;
     }
 
     private void handleKeyPress(@NotNull final KeyEvent e) {
@@ -355,7 +355,7 @@ public class KeyHandler {
         setKeyShift(KEY_SHIFT_SHIFT, (mask&InputEvent.SHIFT_DOWN_MASK) != 0);
         setKeyShift(KEY_SHIFT_CTRL, (mask&InputEvent.CTRL_DOWN_MASK) != 0);
         setKeyShift(KEY_SHIFT_ALT, (mask&InputEvent.ALT_DOWN_MASK) != 0);
-        setKeyShift(KEY_SHIFT_ALTGR, (mask&InputEvent.ALT_GRAPH_DOWN_MASK) != 0);
+        setKeyShift(KEY_SHIFT_ALT_GR, (mask&InputEvent.ALT_GRAPH_DOWN_MASK) != 0);
         if (!getKeyShift(KEY_SHIFT_CTRL)) {
             if (commandQueue.stopRunning()) {
                 debugKeyboardWrite("updateModifiers: stopping run");

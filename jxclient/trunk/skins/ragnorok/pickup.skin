@@ -27,8 +27,8 @@ checkbox checkbox_jewels      10 180 180 16 pickup_jewels Money and jewels
 #checkbox checkbox_ratio50    10 340 180 16 pickup_ratio50 >= 50
 
 label_text label_weapons     210  30 180 16 font_title BLACK Weapons:
-checkbox checkbox_allweapon  210  50 180 16 pickup_allweapon All weapons
-checkbox checkbox_missileweapon 210 70 180 16 pickup_missileweapon Missile weapons
+checkbox checkbox_allweapon  210  50 180 16 pickup_all_weapon All weapons
+checkbox checkbox_missileweapon 210 70 180 16 pickup_missile_weapon Missile weapons
 checkbox checkbox_bow        210  90 180 16 pickup_bow Bows
 checkbox checkbox_arrow      210 110 180 16 pickup_arrow Arrows
 

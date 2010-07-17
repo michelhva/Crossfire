@@ -122,16 +122,16 @@ public class KeybindingsManager {
      * Starts creating a new key binding.
      * @param perCharacter whether a per-character key bindings should be
      * created
-     * @param cmdlist the commands for the key binding
+     * @param cmdList the commands for the key binding
      * @return whether the key bindings dialog should be opened
      */
-    public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist) {
+    public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdList) {
         final KeyBindings bindings = getKeyBindings(perCharacter);
         if (bindings == null) {
             return false;
         }
 
-        keyBindingState = new KeyBindingState(bindings, null, cmdlist);
+        keyBindingState = new KeyBindingState(bindings, null, cmdList);
         return true;
     }
 

@@ -159,8 +159,8 @@ public class Parser {
 
         int begin = 0;
         boolean active = false;
-        final int imax = text.length();
-        for (int i = 0; i < imax; i++) {
+        final int iMax = text.length();
+        for (int i = 0; i < iMax; i++) {
             final char ch = text.charAt(i);
             if (active) {
                 if (ch == ']') {
@@ -181,7 +181,7 @@ public class Parser {
             }
         }
         if (!active) {
-            processText(text.substring(begin, imax), line);
+            processText(text.substring(begin, iMax), line);
         }
 
         return line;

@@ -166,7 +166,7 @@ public class Stats {
             case CS_STAT_APPLIED_POW:
                 setStat(stat, param);
                 if (stat == CS_STAT_LEVEL) {
-                    calcExperienceToNextLevel();
+                    calculateExperienceToNextLevel();
                 }
                 break;
 
@@ -316,7 +316,7 @@ public class Stats {
     };
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param crossfireServerConnection the connection to monitor
      * @param experienceTable the experience table instance to use
      * @param skillSet the skill set instance to use
@@ -330,10 +330,10 @@ public class Stats {
     }
 
     /**
-     * Set whether the {@link CrossfireStatsListener#CS_STAT_WEAP_SP} value
+     * Sets whether the {@link CrossfireStatsListener#CS_STAT_WEAP_SP} value
      * contains the weapon speed directly.
-     * @param simpleWeaponSpeed Whether <code>CS_STAT_WEAP_SP</code> is the
-     * weapon speed value.
+     * @param simpleWeaponSpeed whether <code>CS_STAT_WEAP_SP</code> is the
+     * weapon speed value
      */
     private void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed) {
         if (this.simpleWeaponSpeed == simpleWeaponSpeed) {
@@ -347,14 +347,14 @@ public class Stats {
     }
 
     /**
-     * Forget about all stats.
+     * Forgets about all stats.
      */
     private void reset() {
         for (final StatsListener statsListener : statsListeners) {
             statsListener.reset();
         }
-        for (int statnr = 0; statnr < stats.length; statnr++) {
-            setStat(statnr, 0);
+        for (int statNo = 0; statNo < stats.length; statNo++) {
+            setStat(statNo, 0);
         }
         setExperience(0);
         setRange("");
@@ -364,41 +364,41 @@ public class Stats {
 
     /**
      * Returns the numerical value of the given statistic.
-     * @param statnr The stat identifier. See the CS_STAT constants.
-     * @return The statistic value (or "score").
+     * @param statNo the stat identifier. See the CS_STAT constants
+     * @return the statistic value (or "score")
      */
-    public int getStat(final int statnr) {
-        return stats[statnr];
+    public int getStat(final int statNo) {
+        return stats[statNo];
     }
 
     /**
      * Returns the numerical value of the given statistic.
-     * @param statnr The stat identifier. See the CS_STAT constants.
-     * @return The statistic value.
+     * @param statNo the stat identifier. See the CS_STAT constants
+     * @return the statistic value
      */
-    public double getFloatStat(final int statnr) {
-        return (double)stats[statnr]/CrossfireStatsListener.FLOAT_MULTI;
+    public double getFloatStat(final int statNo) {
+        return (double)stats[statNo]/CrossfireStatsListener.FLOAT_MULTI;
     }
 
     /**
      * Sets the given statistic numerical value.
-     * @param statnr The stat identifier. See the CS_STAT constants.
-     * @param value The value to assign to the chosen statistic.
+     * @param statNo the stat identifier. See the CS_STAT constants
+     * @param value the value to assign to the chosen statistic
      */
-    public void setStat(final int statnr, final int value) {
-        if (stats[statnr] == value) {
+    public void setStat(final int statNo, final int value) {
+        if (stats[statNo] == value) {
             return;
         }
 
-        stats[statnr] = value;
+        stats[statNo] = value;
         for (final StatsListener statsListener : statsListeners) {
-            statsListener.statChanged(statnr, stats[statnr]);
+            statsListener.statChanged(statNo, stats[statNo]);
         }
     }
 
     /**
-     * Returns the current Title.
-     * @return A String representation of the Title.
+     * Returns the current title.
+     * @return a String representation of the title
      */
     @NotNull
     public String getTitle() {
@@ -406,9 +406,9 @@ public class Stats {
     }
 
     /**
-     * Returns the current content of the Range stat. This is basically the
+     * Returns the current content of the range stat. This is basically the
      * current active skill for the player.
-     * @return A String representation of the Range.
+     * @return a String representation of the range
      */
     @NotNull
     public String getRange() {
@@ -417,7 +417,7 @@ public class Stats {
 
     /**
      * Returns the active skill name.
-     * @return The active skill name.
+     * @return the active skill name
      */
     @NotNull
     public String getActiveSkill() {
@@ -426,7 +426,7 @@ public class Stats {
 
     /**
      * Sets the current Title.
-     * @param title The new Title content.
+     * @param title the new Title content
      */
     private void setTitle(@NotNull final String title) {
         if (this.title.equals(title)) {
@@ -442,7 +442,7 @@ public class Stats {
     /**
      * Sets the current value for the Range - this is basically the currently
      * active skill for the player.
-     * @param range The new content of Range.
+     * @param range the new content of range
      */
     private void setRange(@NotNull final String range) {
         if (this.range.equals(range)) {
@@ -456,8 +456,8 @@ public class Stats {
     }
 
     /**
-     * Set the active skill name.
-     * @param activeSkill The active skill name.
+     * Sets the active skill name.
+     * @param activeSkill the active skill name
      */
     public void setActiveSkill(@NotNull final String activeSkill) {
         if (this.activeSkill.equals(activeSkill)) {
@@ -492,7 +492,7 @@ public class Stats {
             statsListener.experienceChanged(this.exp);
         }
 
-        calcExperienceToNextLevel();
+        calculateExperienceToNextLevel();
     }
 
     /**
@@ -506,7 +506,7 @@ public class Stats {
     /**
      * Calculates experience needed to reach the next level.
      */
-    private void calcExperienceToNextLevel() {
+    private void calculateExperienceToNextLevel() {
         final long newExpNextLevel = experienceTable.getExperienceToNextLevel(stats[CrossfireStatsListener.CS_STAT_LEVEL], exp);
         if (expNextLevel == newExpNextLevel) {
             return;
@@ -535,8 +535,8 @@ public class Stats {
     }
 
     /**
-     * Return the weapon speed stat.
-     * @return The weapon speed stat.
+     * Returns the weapon speed stat.
+     * @return the weapon speed stat
      */
     public double getWeaponSpeed() {
         final double weaponSpeed = getFloatStat(CrossfireStatsListener.CS_STAT_WEAP_SP);

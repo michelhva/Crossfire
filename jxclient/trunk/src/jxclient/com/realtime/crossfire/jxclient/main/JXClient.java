@@ -142,7 +142,7 @@ public class JXClient {
                 try {
                     final Writer debugScreenOutputStreamWriter = openDebugStream(options.getDebugScreenFilename());
                     try {
-                        final OptionManager optionManager = new OptionManager(options.getPrefs());
+                        final OptionManager optionManager = new OptionManager(options.getSettings());
                         final MetaserverModel metaserverModel = new MetaserverModel();
                         final CharacterModel characterModel = new CharacterModel();
                         final Object semaphoreRedraw = new Object();
@@ -199,7 +199,7 @@ public class JXClient {
                                     final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback();
                                     final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
                                     final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
-                                    final Settings settings = options.getPrefs();
+                                    final Settings settings = options.getSettings();
                                     final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
                                     final GuiFactory guiFactory = new GuiFactory(options.isDebugGui() ? mouseTracker : null, commands, commandCallback, macros);
                                     final GuiManager guiManager = new GuiManager(guiStateManager, semaphoreDrawing, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);

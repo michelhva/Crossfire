@@ -25,7 +25,7 @@ import java.nio.ByteBuffer;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for listeners interested in magicmap messages recevied from the
+ * Interface for listeners interested in magicmap messages received from the
  * Crossfire server.
  * @author Lauwenmark
  */

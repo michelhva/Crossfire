@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.skin.events;
 
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
+import com.realtime.crossfire.jxclient.mapupdater.MapScrollListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -31,7 +31,7 @@ import org.jetbrains.annotations.NotNull;
  * scroll protocol command is received.
  * @author Andreas Kirschbaum
  */
-public class MapscrollSkinEvent implements SkinEvent {
+public class MapScrollSkinEvent implements SkinEvent {
 
     /**
      * The {@link CommandList} to execute.
@@ -46,10 +46,10 @@ public class MapscrollSkinEvent implements SkinEvent {
     private final CfMapUpdater mapUpdater;
 
     /**
-     * The {@link MapscrollListener} attached to {@link #mapUpdater}.
+     * The {@link MapScrollListener} attached to {@link #mapUpdater}.
      */
     @NotNull
-    private final MapscrollListener mapscrollListener = new MapscrollListener() {
+    private final MapScrollListener mapscrollListener = new MapScrollListener() {
         /** {@inheritDoc} */
         @Override
         public void mapScrolled(final int dx, final int dy) {
@@ -62,10 +62,10 @@ public class MapscrollSkinEvent implements SkinEvent {
      * @param commandList the command list to execute
      * @param mapUpdater the map updater to attach to
      */
-    public MapscrollSkinEvent(@NotNull final CommandList commandList, @NotNull final CfMapUpdater mapUpdater) {
+    public MapScrollSkinEvent(@NotNull final CommandList commandList, @NotNull final CfMapUpdater mapUpdater) {
         this.commandList = commandList;
         this.mapUpdater = mapUpdater;
-        mapUpdater.addCrossfireMapscrollListener(mapscrollListener);
+        mapUpdater.addCrossfireMapScrollListener(mapscrollListener);
     }
 
     /**
@@ -73,7 +73,7 @@ public class MapscrollSkinEvent implements SkinEvent {
      */
     @Override
     public void dispose() {
-        mapUpdater.removeCrossfireMapscrollListener(mapscrollListener);
+        mapUpdater.removeCrossfireMapScrollListener(mapscrollListener);
     }
 
 }

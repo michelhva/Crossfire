@@ -31,7 +31,7 @@ import org.jetbrains.annotations.Nullable;
 public class Event implements Comparable<Event> {
 
     /**
-     * The timeout. It is an absolue timestamp as returned by {@link
+     * The timeout. It is an absolute timestamp as returned by {@link
      * System#currentTimeMillis()}.
      */
     private final long timeout;

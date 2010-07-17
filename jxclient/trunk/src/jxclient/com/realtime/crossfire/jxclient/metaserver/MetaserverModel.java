@@ -42,14 +42,14 @@ public class MetaserverModel {
      * The current entries.
      */
     @NotNull
-    private final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
+    private final List<MetaserverEntry> metaList = new ArrayList<MetaserverEntry>();
 
     /**
      * The pending entries. Only valid between {@link #begin()} and {@link
      * #commit()}.
      */
     @NotNull
-    private final Collection<MetaserverEntry> metalistPending = new ArrayList<MetaserverEntry>();
+    private final Collection<MetaserverEntry> metaListPending = new ArrayList<MetaserverEntry>();
 
     /**
      * Object used for synchronization.
@@ -80,7 +80,7 @@ public class MetaserverModel {
     public MetaserverEntry getEntry(final int index) {
         try {
             synchronized (sync) {
-                return metalist.get(index);
+                return metaList.get(index);
             }
         } catch (final IndexOutOfBoundsException ex) {
             return null;
@@ -95,7 +95,7 @@ public class MetaserverModel {
     public int getServerIndex(@NotNull final String serverName) {
         synchronized (sync) {
             int index = 0;
-            for (final MetaserverEntry metaserverEntry : metalist) {
+            for (final MetaserverEntry metaserverEntry : metaList) {
                 if (metaserverEntry.getHostname().equals(serverName)) {
                     return index;
                 }
@@ -113,7 +113,7 @@ public class MetaserverModel {
      */
     public int size() {
         synchronized (sync) {
-            return metalist.size();
+            return metaList.size();
         }
     }
 
@@ -123,7 +123,7 @@ public class MetaserverModel {
      */
     public void add(@NotNull final MetaserverEntry metaserverEntry) {
         synchronized (sync) {
-            metalistPending.add(metaserverEntry);
+            metaListPending.add(metaserverEntry);
         }
     }
 
@@ -131,29 +131,29 @@ public class MetaserverModel {
      * Starts an update transaction.
      */
     public void begin() {
-        metalistPending.clear();
+        metaListPending.clear();
     }
 
     /**
      * Finishes an update transaction.
      */
     public void commit() {
-        final int oldMetalistSize;
-        final int newMetalistSize;
+        final int oldMetaListSize;
+        final int newMetaListSize;
         synchronized (sync) {
-            oldMetalistSize = metalist.size();
-            metalist.clear();
-            metalist.addAll(metalistPending);
-            Collections.sort(metalist);
-            newMetalistSize = metalist.size();
+            oldMetaListSize = metaList.size();
+            metaList.clear();
+            metaList.addAll(metaListPending);
+            Collections.sort(metaList);
+            newMetaListSize = metaList.size();
         }
-        metalistPending.clear();
+        metaListPending.clear();
 
         for (final MetaserverListener metaserverListener : metaserverListeners) {
             metaserverListener.numberOfEntriesChanged();
         }
 
-        for (int i = 0, imax = Math.max(oldMetalistSize, newMetalistSize); i < imax; i++) {
+        for (int i = 0, iMax = Math.max(oldMetaListSize, newMetaListSize); i < iMax; i++) {
             for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i)) {
                 metaserverEntryListener.entryChanged();
             }

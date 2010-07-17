@@ -331,7 +331,7 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @NotNull
     @Override
-    public Gui getDialogBook(final int booknr) {
+    public Gui getDialogBook(final int bookNo) {
         try {
             return getDialog("book");
         } catch (final JXCSkinException ex) {

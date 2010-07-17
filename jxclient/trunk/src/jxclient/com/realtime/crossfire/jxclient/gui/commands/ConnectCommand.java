@@ -26,7 +26,7 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link GUICommand} which connectes to a Crossfire server.
+ * A {@link GUICommand} which connects to a Crossfire server.
  * @author Andreas Kirschbaum
  */
 public class ConnectCommand implements GUICommand {

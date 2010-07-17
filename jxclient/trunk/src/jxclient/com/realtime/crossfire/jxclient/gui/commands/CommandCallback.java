@@ -74,7 +74,7 @@ public interface CommandCallback {
      * input field, the first matching one is selected.
      * <p/>
      * If neither the main gui nor any visible dialog has an input text field,
-     * invisible guis are checked as well. If one is found, it is made visible.
+     * invisible GUIs are checked as well. If one is found, it is made visible.
      * @param newText the new command text if non-<code>null</code>
      */
     void activateCommandInput(@NotNull String newText);

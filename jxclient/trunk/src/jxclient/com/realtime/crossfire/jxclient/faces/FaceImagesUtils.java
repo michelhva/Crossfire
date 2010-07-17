@@ -54,18 +54,18 @@ public class FaceImagesUtils {
     }
 
     /**
-     * Creates a new {@link FaceImages} instance consisting of empty imgaes.
+     * Creates a new {@link FaceImages} instance consisting of empty images.
      * @return the face images instance
      */
     @NotNull
     public static FaceImages newEmptyFaceImages() {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
+        final GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
 
-        final ImageIcon emptyOriginalImageIcon = new ImageIcon(gconf.createCompatibleImage(Face.SQUARE_SIZE, Face.SQUARE_SIZE, Transparency.OPAQUE));
-        final ImageIcon emptyScaledImageIcon = new ImageIcon(gconf.createCompatibleImage(Face.SQUARE_SIZE*2, Face.SQUARE_SIZE*2, Transparency.OPAQUE));
-        final ImageIcon emptyMagicMapImageIcon = new ImageIcon(gconf.createCompatibleImage(Face.SQUARE_SIZE/8, Face.SQUARE_SIZE/8, Transparency.OPAQUE));
+        final ImageIcon emptyOriginalImageIcon = new ImageIcon(graphicsConfiguration.createCompatibleImage(Face.SQUARE_SIZE, Face.SQUARE_SIZE, Transparency.OPAQUE));
+        final ImageIcon emptyScaledImageIcon = new ImageIcon(graphicsConfiguration.createCompatibleImage(Face.SQUARE_SIZE*2, Face.SQUARE_SIZE*2, Transparency.OPAQUE));
+        final ImageIcon emptyMagicMapImageIcon = new ImageIcon(graphicsConfiguration.createCompatibleImage(Face.SQUARE_SIZE/8, Face.SQUARE_SIZE/8, Transparency.OPAQUE));
         return new FaceImages(emptyOriginalImageIcon, emptyScaledImageIcon, emptyMagicMapImageIcon);
     }
 

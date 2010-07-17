@@ -32,7 +32,7 @@ public interface GUIGaugeListener {
     /**
      * Sets the values to display.
      * @param curValue the values to display
-     * @param minValue the minium possible value
+     * @param minValue the minimum possible value
      * @param maxValue the maximum possible value
      * @param labelText the label text
      * @param tooltipText the tooltip suffix

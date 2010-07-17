@@ -38,7 +38,7 @@ public class Filenames {
     private static final String REPLACEMENT_CHARACTER = "_";
 
     /**
-     * Matches all chracters that are considered "unsafe" for file names. These
+     * Matches all characters that are considered "unsafe" for file names. These
      * characters will be replaced with {@link #REPLACEMENT_CHARACTER}.
      */
     @NotNull

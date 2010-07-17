@@ -115,7 +115,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * shown.
      */
     @Nullable
-    private Rectangle tooltipRect = null;
+    private Rectangle tooltipRectangle = null;
 
     /**
      * The {@link ListSelectionListener} attached to {@link #list}.
@@ -471,21 +471,21 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
             final int index = list.locationToIndex(e.getPoint());
             if (index == -1) {
                 tooltipIndex = -1;
-                tooltipRect = null;
+                tooltipRectangle = null;
                 updateTooltip();
                 return;
             }
 
-            final Rectangle rect = list.getCellBounds(index, index);
-            if (rect == null || !rect.contains(e.getPoint())) {
+            final Rectangle rectangle = list.getCellBounds(index, index);
+            if (rectangle == null || !rectangle.contains(e.getPoint())) {
                 tooltipIndex = -1;
-                tooltipRect = null;
+                tooltipRectangle = null;
                 updateTooltip();
                 return;
             }
 
             tooltipIndex = list.getFirstVisibleIndex()+index;
-            tooltipRect = rect;
+            tooltipRectangle = rectangle;
             updateTooltip();
         }
     }
@@ -532,17 +532,17 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         if (tooltipIndex == -1) {
             setTooltipText(null);
         } else {
-            final Rectangle rect = tooltipRect;
-            if (rect == null) {
+            final Rectangle rectangle = tooltipRectangle;
+            if (rectangle == null) {
                 setTooltipText(null);
             } else {
                 final Gui gui = getGui();
                 if (gui == null) {
                     tooltipIndex = -1;
-                    tooltipRect = null;
+                    tooltipRectangle = null;
                     setTooltipText(null);
                 } else {
-                    updateTooltip(tooltipIndex, gui.getX()+getX()+rect.x, gui.getY()+getY()+rect.y, rect.width, rect.height);
+                    updateTooltip(tooltipIndex, gui.getX()+getX()+rectangle.x, gui.getY()+getY()+rectangle.y, rectangle.width, rectangle.height);
                 }
             }
         }

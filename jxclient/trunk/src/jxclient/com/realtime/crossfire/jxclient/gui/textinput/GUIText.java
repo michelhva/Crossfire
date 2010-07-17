@@ -199,15 +199,15 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         final int y;
         synchronized (syncCursor) {
             tmp = getDisplayText();
-            final RectangularShape rect = font.getStringBounds(tmp, fontRenderContext);
-            y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
+            final RectangularShape rectangle = font.getStringBounds(tmp, fontRenderContext);
+            y = (int)Math.round((getHeight()-rectangle.getMaxY()-rectangle.getMinY()))/2;
             if (isActive()) {
                 final String tmpPrefix = tmp.substring(0, cursor-offset);
                 final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                final RectangularShape rectPrefix = font.getStringBounds(tmpPrefix, fontRenderContext);
-                final RectangularShape rectCursor = font.getStringBounds(tmpCursor, fontRenderContext);
-                final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
-                final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
+                final RectangularShape rectanglePrefix = font.getStringBounds(tmpPrefix, fontRenderContext);
+                final RectangularShape rectangleCursor = font.getStringBounds(tmpCursor, fontRenderContext);
+                final int cursorX1 = (int)(rectanglePrefix.getWidth()+0.5);
+                final int cursorX2 = (int)(rectangleCursor.getWidth()+0.5);
                 g.setColor(inactiveColor);
                 g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, getHeight());
             }
@@ -400,7 +400,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /**
-     * Inserts a character at the cursort position.
+     * Inserts a character at the cursor position.
      * @param ch the character
      */
     private void insertChar(final char ch) {
@@ -411,7 +411,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /**
-     * Inserts a string at the cursort position.
+     * Inserts a string at the cursor position.
      * @param str the string
      */
     private void insertString(@NotNull final String str) {
@@ -450,8 +450,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 for (; ;) {
                     final String tmp = getDisplayText();
                     final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                    final RectangularShape rectCursor = font.getStringBounds(tmpCursor, fontRenderContext);
-                    final int cursorX = (int)(rectCursor.getWidth()+0.5);
+                    final RectangularShape rectangleCursor = font.getStringBounds(tmpCursor, fontRenderContext);
+                    final int cursorX = (int)(rectangleCursor.getWidth()+0.5);
                     if (cursorX < getWidth()) {
                         break;
                     }
