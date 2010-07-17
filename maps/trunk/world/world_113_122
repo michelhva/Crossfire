@@ -3,7 +3,7 @@ name world_113_122
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2010-07-17 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_113_121
@@ -2103,6 +2103,10 @@ x 7
 y 15
 elevation 4138
 end
+arch light4
+x 7
+y 15
+end
 arch steppe
 x 7
 y 16
@@ -2117,6 +2121,10 @@ arch steppe
 x 7
 y 18
 elevation 4306
+end
+arch light4
+x 7
+y 18
 end
 arch steppe
 x 7
@@ -2392,6 +2400,14 @@ arch steppe
 x 8
 y 16
 elevation 4491
+end
+arch l_shop1
+name Liomal's house
+slaying /dungeons/liomal_ground
+hp 3
+sp 18
+x 8
+y 16
 end
 arch steppe
 x 8
@@ -2930,6 +2946,10 @@ x 10
 y 15
 elevation 4588
 end
+arch light4
+x 10
+y 15
+end
 arch hills
 x 10
 y 16
@@ -2944,6 +2964,10 @@ arch steppe
 x 10
 y 18
 elevation 3632
+end
+arch light4
+x 10
+y 18
 end
 arch steppe
 x 10
