@@ -1012,7 +1012,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void processPacket(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         try {
-            final int args;
             packet.mark();
             switch (packet.get()) {
             case 'a':
@@ -1058,13 +1057,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv accountplayers");
                     }
                     processAccountPlayers(packet);
-                    packet.reset();
-                    notifyPacketWatcherListenersMixed(packet, args);
                     return;
 
                 case 'd':
@@ -1099,12 +1095,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet.hasRemaining()) {
                                 break;
                             }
-                            args = packet.position();
                             if (debugProtocol != null) {
                                 debugProtocol.debugProtocolWrite("recv addme_failed");
                             }
-                            // XXX: addme_failed command not implemented
-                            notifyPacketWatcherListenersNodata(packet, args);
+                            processAddmeFailed(packet);
                             return;
 
                         case 's':
@@ -1129,12 +1123,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet.hasRemaining()) {
                                 break;
                             }
-                            args = packet.position();
                             if (debugProtocol != null) {
                                 debugProtocol.debugProtocolWrite("recv addme_success");
                             }
-                            cmdAddmeSuccess();
-                            notifyPacketWatcherListenersNodata(packet, args);
+                            processAddmeSuccess(packet);
                             return;
                         }
                         break;
@@ -1155,35 +1147,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet.get() != ' ') {
                             break;
                         }
-                        args = packet.position();
-                        while (packet.hasRemaining()) {
-                            final int tag = getInt4(packet);
-                            final int level = getInt2(packet);
-                            final int castingTime = getInt2(packet);
-                            final int mana = getInt2(packet);
-                            final int grace = getInt2(packet);
-                            final int damage = getInt2(packet);
-                            final int skill = getInt1(packet);
-                            final int path = getInt4(packet);
-                            final int face = getInt4(packet);
-                            final int nameLength = getInt1(packet);
-                            final String name = getString(packet, nameLength);
-                            final int messageLength = getInt2(packet);
-                            final String message = getString(packet, messageLength);
-                            if (!packet.hasRemaining()) {
-                                break;
-                            }
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv addspell tag="+tag+" lvl="+level+" time="+castingTime+" sp="+mana+" gr="+grace+" dam="+damage+" skill="+skill+" path="+path+" face="+face+" name="+name+" msg="+message);
-                            }
-                            for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners) {
-                                crossfireSpellListener.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
-                            }
-                        }
-                        if (packet.hasRemaining()) {
-                            break;
-                        }
-                        notifyPacketWatcherListenersMixed(packet, args);
+                        processAddSpell(packet);
                         return;
                     }
                     break;
@@ -1198,32 +1162,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                {
-                    final int num = getInt2(packet);
-                    final int flags = getInt2(packet);
-                    final int[] faces = new int[packet.remaining()/2];
-                    if (faces.length <= 0) {
-                        throw new UnknownCommandException("no faces in anim command");
-                    }
-                    for (int i = 0; i < faces.length; i++) {
-                        faces[i] = getInt2(packet);
-                    }
-                    if (packet.hasRemaining()) {
-                        break;
-                    }
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv addanim num="+num+" flags="+flags+" faces="+Arrays.toString(faces));
-                    }
-                    if ((num&~0x1FFF) != 0) {
-                        throw new UnknownCommandException("invalid animation id "+num);
-                    }
-                    for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                        listener.addAnimation(num&0x1FFF, flags, faces);
-                    }
-                }
-                notifyPacketWatcherListenersShortArray(packet, args);
-                return;
+                    processAddAnim(packet);
+                    return;
                 }
                 break;
 
@@ -1240,22 +1180,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet.get() != ' ') {
                     break;
                 }
-                args = packet.position();
-            {
-                final int packetNo = getInt2(packet);
-                final int time = getInt4(packet);
-                if (packet.hasRemaining()) {
-                    break;
-                }
-                if (debugProtocol != null) {
-                    debugProtocol.debugProtocolWrite("recv comc no="+packetNo+" time="+time);
-                }
-                for (final CrossfireComcListener listener : crossfireComcListeners) {
-                    listener.commandComcReceived(packetNo, time);
-                }
-            }
-            notifyPacketWatcherListenersShortInt(packet, args);
-            return;
+                processComc(packet);
+                return;
 
             case 'd':
                 switch (packet.get()) {
@@ -1273,24 +1199,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet.get() != ' ') {
                                 break;
                             }
-                            args = packet.position();
-                        {
-                            int tag = 0;
-                            do {
-                                tag = tag*10+parseDigit(packet.get());
-                            } while (packet.hasRemaining());
-                            if (packet.hasRemaining()) {
-                                break;
-                            }
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv delinv tag="+tag);
-                            }
-                            for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
-                                crossfireUpdateItemListener.delinvReceived(tag);
-                            }
-                        }
-                        notifyPacketWatcherListenersAscii(packet, args);
-                        return;
+                            processDelInv(packet);
+                            return;
 
                         case 't':
                             if (packet.get() != 'e') {
@@ -1302,24 +1212,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet.get() != ' ') {
                                 break;
                             }
-                            args = packet.position();
-                        {
-                            final int[] tags = new int[packet.remaining()/4];
-                            for (int i = 0; i < tags.length; i++) {
-                                tags[i] = getInt4(packet);
-                            }
-                            if (packet.hasRemaining()) {
-                                break;
-                            }
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv delitem tags="+Arrays.toString(tags));
-                            }
-                            for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
-                                crossfireUpdateItemListener.delitemReceived(tags);
-                            }
-                        }
-                        notifyPacketWatcherListenersIntArray(packet, args);
-                        return;
+                            processDelItem(packet);
+                            return;
                         }
                         break;
 
@@ -1339,21 +1233,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet.get() != ' ') {
                             break;
                         }
-                        args = packet.position();
-                    {
-                        final int tag = getInt4(packet);
-                        if (packet.hasRemaining()) {
-                            break;
-                        }
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv delspell tag="+tag);
-                        }
-                        for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners) {
-                            crossfireSpellListener.deleteSpell(tag);
-                        }
-                    }
-                    notifyPacketWatcherListenersIntArray(packet, args);
-                    return;
+                        processDelSpell(packet);
+                        return;
                     }
                     break;
 
@@ -1387,38 +1268,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet.get() != ' ') {
                             break;
                         }
-                        args = packet.position();
-                    {
-                        int color = 0;
-                        do {
-                            color = color*10+parseDigit(packet.get());
-                        } while (packet.get(packet.position()) != ' ');
-                        packet.get();
-
-                        int type = 0;
-                        do {
-                            type = type*10+parseDigit(packet.get());
-                        } while (packet.get(packet.position()) != ' ');
-                        packet.get();
-
-                        int subtype = 0;
-                        do {
-                            subtype = subtype*10+parseDigit(packet.get());
-                        } while (packet.get(packet.position()) != ' ');
-                        packet.get();
-
-                        final String message = getString(packet, packet.remaining());
-
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv drawextinfo color="+color+" type="+type+"/"+subtype+" msg="+message);
-                        }
-
-                        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
-                            listener.commandDrawextinfoReceived(color, type, subtype, message);
-                        }
-                    }
-                    notifyPacketWatcherListenersAscii(packet, args);
-                    return;
+                        processDrawExtInfo(packet);
+                        return;
 
                     case 'i':
                         if (packet.get() != 'n') {
@@ -1433,24 +1284,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet.get() != ' ') {
                             break;
                         }
-                        args = packet.position();
-                    {
-                        int color = 0;
-                        do {
-                            color = color*10+parseDigit(packet.get());
-                        } while (packet.get(packet.position()) != ' ');
-                        packet.get();
-
-                        final String message = getString(packet, packet.remaining());
-
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv drawinfo color="+color+" msg="+message);
-                        }
-
-                        drawInfo(message, color);
-                    }
-                    notifyPacketWatcherListenersAscii(packet, args);
-                    return;
+                        processDrawInfo(packet);
+                        return;
                     }
                     break;
                 }
@@ -1501,20 +1336,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                    do {
-                        final int startPos = packet.position();
-                        while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
-                            packet.get();
-                        }
-                        final String string = newString(packet, startPos, packet.position()-startPos);
-                        packet.get();
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv ExtendedInfoSet "+string);
-                        }
-                        // XXX: ExtendedInfoSet command not implemented
-                    } while (packet.hasRemaining());
-                    notifyPacketWatcherListenersNodata(packet, args);
+                    processExtendedInfoSet(packet);
                     return;
 
                 case 'T':
@@ -1539,23 +1361,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                    for (;;) {
-                        final int startPos = packet.position();
-                        while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
-                            packet.get();
-                        }
-                        final String type = newString(packet, startPos, packet.position()-startPos);
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv ExtendedTextSet "+type);
-                        }
-                        // XXX: ExtendedTextSet command not implemented
-                        if (!packet.hasRemaining()) {
-                            break;
-                        }
-                        packet.get();
-                    }
-                    notifyPacketWatcherListenersNodata(packet, args);
+                    processExtendedTextSet(packet);
                     return;
                 }
                 break;
@@ -1575,21 +1381,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                {
-                    final int faceNum = getInt2(packet);
-                    final int faceSetNum = getInt1(packet);
-                    final int faceChecksum = getInt4(packet);
-                    final String faceName = getString(packet, packet.remaining()).intern();
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName);
-                    }
-                    for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners) {
-                        crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
-                    }
-                }
-                notifyPacketWatcherListenersMixed(packet, args);
-                return;
+                    processFace2(packet);
+                    return;
 
                 case 'i':
                     if (packet.get() != 'l') {
@@ -1607,25 +1400,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-
-                    final String full = getString(packet, packet.remaining());
-                    final String command;
-                    final String message;
-                    final int idx = full.indexOf(' ');
-                    if (idx == -1) {
-                        command = full;
-                        message = "";
-                    } else {
-                        command = full.substring(0, idx);
-                        message = full.substring(idx+1);
-                    }
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv failure command="+command+" message="+message);
-                    }
-
-                    for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
-                        crossfireFailureListener.failure(command, message);
-                    }
+                    processFailure(packet);
                     return;
                 }
 
@@ -1651,15 +1426,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet.get() != ' ') {
                     break;
                 }
-                args = packet.position();
-                if (packet.hasRemaining()) {
-                    break;
-                }
-                if (debugProtocol != null) {
-                    debugProtocol.debugProtocolWrite("recv goodbye");
-                }
-                // XXX: goodbye command not implemented
-                notifyPacketWatcherListenersNodata(packet, args);
+                processGoodbye(packet);
                 return;
 
             case 'i':
@@ -1680,25 +1447,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                {
-                    final int faceNum = getInt4(packet);
-                    final int faceSetNum = getInt1(packet);
-                    final int len = getInt4(packet);
-                    if (packet.remaining() != len) {
-                        break;
-                    }
-                    final int faceDataPosition = packet.position();
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len);
-                    }
-                    for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners) {
-                        packet.position(faceDataPosition);
-                        listener.updateFace(faceNum, faceSetNum, packet);
-                    }
-                }
-                notifyPacketWatcherListenersMixed(packet, args);
-                return;
+                    processImage2(packet);
+                    return;
 
                 case 't':
                     if (packet.get() != 'e') {
@@ -1713,35 +1463,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                {
-                    final int location = getInt4(packet);
-                    while (packet.hasRemaining()) {
-                        final int tag = getInt4(packet);
-                        final int flags = getInt4(packet);
-                        final int weight = getInt4(packet);
-                        final int faceNum = getInt4(packet);
-                        final int nameLength = getInt1(packet);
-                        final String[] names = getString(packet, nameLength).split("\0", 2);
-                        final String name = names[0].intern();
-                        final String namePl = names.length < 2 ? name : names[1].intern();
-                        final int anim = getInt2(packet);
-                        final int animSpeed = getInt1(packet);
-                        final int nrof = getInt4(packet);
-                        final int type = getInt2(packet);
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv item2 location="+location+" tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type);
-                        }
-                        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
-                            crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
-                        }
-                    }
-                    if (packet.hasRemaining()) {
-                        break;
-                    }
-                }
-                notifyPacketWatcherListenersMixed(packet, args);
-                return;
+                    processItem2(packet);
+                    return;
                 }
                 break;
 
@@ -1768,72 +1491,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet.get() != ' ') {
                             break;
                         }
-                        args = packet.position();
-
-                        final boolean widthSign = packet.get(packet.position()) == '-';
-                        if (widthSign) {
-                            packet.get();
-                        }
-                        int width = 0;
-                        do {
-                            width = width*10+parseDigit(packet.get());
-                        } while (packet.get(packet.position()) != ' ');
-                        packet.get();
-                        if (widthSign) {
-                            width = -width;
-                        }
-
-                        final boolean heightSign = packet.get(packet.position()) == '-';
-                        if (heightSign) {
-                            packet.get();
-                        }
-                        int height = 0;
-                        do {
-                            height = height*10+parseDigit(packet.get());
-                        } while (packet.get(packet.position()) != ' ');
-                        packet.get();
-                        if (heightSign) {
-                            height = -height;
-                        }
-
-                        final boolean pxSign = packet.get(packet.position()) == '-';
-                        if (pxSign) {
-                            packet.get();
-                        }
-                        int px = 0;
-                        do {
-                            px = px*10+parseDigit(packet.get());
-                        } while (packet.get(packet.position()) != ' ');
-                        packet.get();
-                        if (pxSign) {
-                            px = -px;
-                        }
-
-                        final boolean pySign = packet.get(packet.position()) == '-';
-                        if (pySign) {
-                            packet.get();
-                        }
-                        int py = 0;
-                        do {
-                            py = py*10+parseDigit(packet.get());
-                        } while (packet.get(packet.position()) != ' ');
-                        packet.get();
-                        if (pySign) {
-                            py = -py;
-                        }
-
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv magicmap size="+width+"x"+height+" player="+px+"/"+py+" len="+packet.remaining());
-                        }
-
-                        if (packet.remaining() != width*height) {
-                            throw new UnknownCommandException("invalid magicmap command");
-                        }
-
-                        for (final CrossfireMagicmapListener listener : magicmapListeners) {
-                            listener.commandMagicmapReceived(width, height, px, py, packet);
-                        }
-                        notifyPacketWatcherListenersMixed(packet, args);
+                        processMagicMap(packet);
                         return;
 
                     case 'p':
@@ -1842,9 +1500,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet.get() != ' ') {
                                 break;
                             }
-                            args = packet.position();
-                            cmdMap2(packet);
-                            notifyPacketWatcherListenersShortArray(packet, args);
+                            processMap2(packet);
                             return;
 
                         case 'e':
@@ -1872,12 +1528,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet.get() != ' ') {
                                 break;
                             }
-                            args = packet.position();
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv mapextended");
-                            }
-                            cmdMapextended(packet);
-                            notifyPacketWatcherListenersMixed(packet, args);
+                            processMapExtended(packet);
                             return;
                         }
                         break;
@@ -1897,16 +1548,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                    final String music = getString(packet, packet.remaining());
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv music "+music);
-                    }
-
-                    for (final CrossfireMusicListener listener : crossfireMusicListeners) {
-                        listener.commandMusicReceived(music);
-                    }
-                    notifyPacketWatcherListenersAscii(packet, args);
+                    processMusic(packet);
                     return;
                 }
                 break;
@@ -1927,15 +1569,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet.get() != 'p') {
                     break;
                 }
-                args = packet.position();
-                if (packet.hasRemaining()) {
-                    break;
-                }
-                if (debugProtocol != null) {
-                    debugProtocol.debugProtocolWrite("recv newmap");
-                }
-                fireNewMap();
-                notifyPacketWatcherListenersNodata(packet, args);
+                processNewMap(packet);
                 return;
 
             case 'p':
@@ -1956,21 +1590,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                {
-                    final int pickupOptions = getInt4(packet);
-                    if (packet.hasRemaining()) {
-                        break;
-                    }
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv pickup options="+pickupOptions);
-                    }
-                    for (final CrossfirePickupListener crossfirePickupListener : crossfirePickupListeners) {
-                        crossfirePickupListener.pickupChanged(pickupOptions);
-                    }
-                    notifyPacketWatcherListenersMixed(packet, args);
-                }
-                return;
+                    processPickup(packet);
+                    return;
 
                 case 'l':
                     if (packet.get() != 'a') {
@@ -1988,25 +1609,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                {
-                    final int tag = getInt4(packet);
-                    final int weight = getInt4(packet);
-                    final int faceNum = getInt4(packet);
-                    final int nameLength = getInt1(packet);
-                    final String name = getString(packet, nameLength);
-                    if (packet.hasRemaining()) {
-                        break;
-                    }
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+faceNum+" name="+name);
-                    }
-                    for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
-                        crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
-                    }
-                }
-                notifyPacketWatcherListenersMixed(packet, args);
-                return;
+                    processPlayer(packet);
+                    return;
                 }
                 break;
 
@@ -2026,32 +1630,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet.get() != ' ') {
                     break;
                 }
-                args = packet.position();
-            {
-                int flags = 0;
-                do {
-                    flags = flags*10+parseDigit(packet.get());
-                } while (packet.get(packet.position()) != ' ');
-                packet.get();
-
-                final String text = getString(packet, packet.remaining());
-
-                if (debugProtocol != null) {
-                    debugProtocol.debugProtocolWrite("recv query flags="+flags+" text="+text);
-                }
-
-                // XXX: hack to process "What is your name?" prompt even before addme_success is received
-                if (clientSocketState != ClientSocketState.CONNECTED) {
-                    setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
-                    negotiateMapSize(preferredMapWidth, preferredMapHeight);
-                    negotiateNumLookObjects(preferredNumLookObjects);
-                }
-                for (final CrossfireQueryListener listener : queryListeners) {
-                    listener.commandQueryReceived(text, flags);
-                }
-            }
-            notifyPacketWatcherListenersAscii(packet, args);
-            return;
+                processQuery(packet);
+                return;
 
             case 'r':
                 if (packet.get() != 'e') {
@@ -2081,27 +1661,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet.get() != ' ') {
                     break;
                 }
-                args = packet.position();
-            {
-                final int startPos = packet.position();
-                while (packet.hasRemaining() && packet.get(packet.position()) != '\n' && packet.get(packet.position()) != ' ') {
-                    packet.get();
-                }
-                final String infoType = newString(packet, startPos, packet.position()-startPos);
-                if (packet.hasRemaining()) {
-                    packet.get();
-                }
-                if (debugProtocol != null) {
-                    debugProtocol.debugProtocolWrite("recv replyinfo type="+infoType+" len="+packet.remaining());
-                }
-                try {
-                    cmdReplyinfo(infoType, packet);
-                } catch (final IOException ex) {
-                    throw new UnknownCommandException("invalid replyinfo command: "+ex.getMessage());
-                }
-            }
-            notifyPacketWatcherListenersAscii(packet, args);
-            return;
+                processReplyInfo(packet);
+                return;
 
             case 's':
                 switch (packet.get()) {
@@ -2118,32 +1679,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                    final List<String> options = new ArrayList<String>();
-                    while (packet.hasRemaining()) {
-                        while (packet.get(packet.position()) == ' ') {
-                            packet.get();
-                        }
-                        final int startPos = packet.position();
-                        while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
-                            packet.get();
-                        }
-                        options.add(newString(packet, startPos, packet.position()-startPos));
-                        if (packet.hasRemaining()) {
-                            packet.get();
-                        }
-                    }
-                    if (packet.hasRemaining()) {
-                        break;
-                    }
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv setup "+options);
-                    }
-                    if (options.size()%2 != 0) {
-                        throw new UnknownCommandException("odd number of arguments in setup command");
-                    }
-                    cmdSetup(options);
-                    notifyPacketWatcherListenersAscii(packet, args);
+                    processSetup(packet);
                     return;
 
                 case 'm':
@@ -2162,20 +1698,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                {
-                    final int facenbr = getInt2(packet);
-                    final int smoothpic = getInt2(packet);
-                    if (packet.hasRemaining()) {
-                        break;
-                    }
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv smooth face="+facenbr+" smoothpic="+smoothpic);
-                    }
-                    // XXX: smooth command not implemented
-                }
-                notifyPacketWatcherListenersShortArray(packet, args);
-                return;
+                    processSmooth(packet);
+                    return;
 
                 case 'o':
                     if (packet.get() != 'u') {
@@ -2189,54 +1713,15 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     }
                     switch (packet.get()) {
                     case ' ':
-                        args = packet.position();
-                    {
-                        final int x = packet.get();
-                        final int y = packet.get();
-                        final int num = getInt2(packet);
-                        final int type = getInt1(packet);
-                        if (packet.hasRemaining()) {
-                            break;
-                        }
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv sound pos="+x+"/"+y+" num="+num+" type="+type);
-                        }
-
-                        for (final CrossfireSoundListener listener : crossfireSoundListeners) {
-                            listener.commandSoundReceived(x, y, num, type);
-                        }
-                    }
-                    notifyPacketWatcherListenersMixed(packet, args);
-                    return;
+                        processSound(packet);
+                        return;
 
                     case '2':
                         if (packet.get() != ' ') {
                             break;
                         }
-                        args = packet.position();
-                    {
-                        final int x = packet.get();
-                        final int y = packet.get();
-                        final int dir = packet.get();
-                        final int volume = getInt1(packet);
-                        final int type = getInt1(packet);
-                        final int actionLength = getInt1(packet);
-                        final String action = getString(packet, actionLength);
-                        final int nameLength = getInt1(packet);
-                        final String name = getString(packet, nameLength);
-                        if (packet.hasRemaining()) {
-                            break;
-                        }
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv sound2 pos="+x+"/"+y+" dir="+dir+" volume="+volume+" type="+type+" action="+action+" name="+name);
-                        }
-
-                        for (final CrossfireSoundListener listener : crossfireSoundListeners) {
-                            listener.commandSound2Received(x, y, dir, volume, type, action, name);
-                        }
-                    }
-                    notifyPacketWatcherListenersMixed(packet, args);
-                    return;
+                        processSound2(packet);
+                        return;
                     }
                     break;
 
@@ -2253,133 +1738,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    while (packet.hasRemaining()) {
-                        final int stat = getInt1(packet);
-                        switch (stat) {
-                        case CrossfireStatsListener.CS_STAT_HP:
-                        case CrossfireStatsListener.CS_STAT_MAXHP:
-                        case CrossfireStatsListener.CS_STAT_SP:
-                        case CrossfireStatsListener.CS_STAT_MAXSP:
-                        case CrossfireStatsListener.CS_STAT_STR:
-                        case CrossfireStatsListener.CS_STAT_INT:
-                        case CrossfireStatsListener.CS_STAT_WIS:
-                        case CrossfireStatsListener.CS_STAT_DEX:
-                        case CrossfireStatsListener.CS_STAT_CON:
-                        case CrossfireStatsListener.CS_STAT_CHA:
-                        case CrossfireStatsListener.CS_STAT_LEVEL:
-                        case CrossfireStatsListener.CS_STAT_WC:
-                        case CrossfireStatsListener.CS_STAT_AC:
-                        case CrossfireStatsListener.CS_STAT_DAM:
-                        case CrossfireStatsListener.CS_STAT_ARMOUR:
-                        case CrossfireStatsListener.CS_STAT_FOOD:
-                        case CrossfireStatsListener.CS_STAT_POW:
-                        case CrossfireStatsListener.CS_STAT_GRACE:
-                        case CrossfireStatsListener.CS_STAT_MAXGRACE:
-                        case CrossfireStatsListener.CS_STAT_FLAGS:
-                        case CrossfireStatsListener.CS_STAT_RACE_STR:
-                        case CrossfireStatsListener.CS_STAT_RACE_INT:
-                        case CrossfireStatsListener.CS_STAT_RACE_WIS:
-                        case CrossfireStatsListener.CS_STAT_RACE_DEX:
-                        case CrossfireStatsListener.CS_STAT_RACE_CON:
-                        case CrossfireStatsListener.CS_STAT_RACE_CHA:
-                        case CrossfireStatsListener.CS_STAT_RACE_POW:
-                        case CrossfireStatsListener.CS_STAT_BASE_STR:
-                        case CrossfireStatsListener.CS_STAT_BASE_INT:
-                        case CrossfireStatsListener.CS_STAT_BASE_WIS:
-                        case CrossfireStatsListener.CS_STAT_BASE_DEX:
-                        case CrossfireStatsListener.CS_STAT_BASE_CON:
-                        case CrossfireStatsListener.CS_STAT_BASE_CHA:
-                        case CrossfireStatsListener.CS_STAT_BASE_POW:
-                        case CrossfireStatsListener.CS_STAT_APPLIED_STR:
-                        case CrossfireStatsListener.CS_STAT_APPLIED_INT:
-                        case CrossfireStatsListener.CS_STAT_APPLIED_WIS:
-                        case CrossfireStatsListener.CS_STAT_APPLIED_DEX:
-                        case CrossfireStatsListener.CS_STAT_APPLIED_CON:
-                        case CrossfireStatsListener.CS_STAT_APPLIED_CHA:
-                        case CrossfireStatsListener.CS_STAT_APPLIED_POW:
-                            final short int2Param = (short)(getInt2(packet));
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF));
-                            }
-                            for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
-                                crossfireStatsListener.statInt2Received(stat, int2Param);
-                            }
-                            notifyPacketWatcherListenersStats(stat, int2Param);
-                            break;
-
-                        case CrossfireStatsListener.CS_STAT_EXP:
-                        case CrossfireStatsListener.CS_STAT_SPEED:
-                        case CrossfireStatsListener.CS_STAT_WEAP_SP:
-                        case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
-                        case CrossfireStatsListener.CS_STAT_SPELL_ATTUNE:
-                        case CrossfireStatsListener.CS_STAT_SPELL_REPEL:
-                        case CrossfireStatsListener.CS_STAT_SPELL_DENY:
-                            final int int4Param = getInt4(packet);
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int4="+int4Param);
-                            }
-                            for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
-                                crossfireStatsListener.statInt4Received(stat, int4Param);
-                            }
-                            notifyPacketWatcherListenersStats(stat, int4Param);
-                            break;
-
-                        case CrossfireStatsListener.CS_STAT_EXP64:
-                            final long int8Param = getInt8(packet);
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int8="+int8Param);
-                            }
-                            for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
-                                crossfireStatsListener.statInt8Received(stat, int8Param);
-                            }
-                            notifyPacketWatcherListenersStats(stat, int8Param);
-                            break;
-
-                        case CrossfireStatsListener.CS_STAT_RANGE:
-                        case CrossfireStatsListener.CS_STAT_TITLE:
-                            final int length = getInt1(packet);
-                            final String strParam = getString(packet, length);
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv stats stat="+stat+" str="+strParam);
-                            }
-                            for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
-                                crossfireStatsListener.statStringReceived(stat, strParam);
-                            }
-                            notifyPacketWatcherListenersStats(stat, strParam);
-                            break;
-
-                        default:
-                            if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat < CrossfireStatsListener.CS_STAT_RESIST_START+CrossfireStatsListener.RESIST_TYPES) {
-                                final short int2Param2 = (short)(getInt2(packet));
-                                if (debugProtocol != null) {
-                                    debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param2);
-                                }
-                                for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
-                                    crossfireStatsListener.statInt2Received(stat, int2Param2);
-                                }
-                                notifyPacketWatcherListenersStats(stat, int2Param2);
-                            } else if (CrossfireStatsListener.CS_STAT_SKILLINFO <= stat && stat < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS) {
-                                final int level = getInt1(packet);
-                                final long experience = getInt8(packet);
-                                if (debugProtocol != null) {
-                                    debugProtocol.debugProtocolWrite("recv stats stat="+stat+" level="+level+" experience="+experience);
-                                }
-                                for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
-                                    crossfireStatsListener.statSkillReceived(stat, level, experience);
-                                }
-                                notifyPacketWatcherListenersStats(stat, level, experience);
-                            } else {
-                                if (debugProtocol != null) {
-                                    debugProtocol.debugProtocolWrite("recv stats stat="+stat+" <unknown parameter>");
-                                }
-                                throw new UnknownCommandException("unknown stat value: "+stat);
-                            }
-                            break;
-                        }
-                    }
-                    if (packet.hasRemaining()) {
-                        break;
-                    }
+                    processStats(packet);
                     return;
                 }
                 break;
@@ -2397,21 +1756,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet.get() != ' ') {
                     break;
                 }
-                args = packet.position();
-            {
-                final int tickNo = getInt4(packet);
-                if (packet.hasRemaining()) {
-                    break;
-                }
-                if (debugProtocol != null) {
-                    debugProtocol.debugProtocolWrite("recv tick "+tickNo);
-                }
-                for (final CrossfireTickListener listener : crossfireTickListeners) {
-                    listener.tick(tickNo);
-                }
-            }
-            notifyPacketWatcherListenersIntArray(packet, args);
-            return;
+                processTick(packet);
+                return;
 
             case 'u':
                 if (packet.get() != 'p') {
@@ -2434,44 +1780,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                {
-                    final int flags = getInt1(packet);
-                    final int tag = getInt4(packet);
-                    final int valLocation = (flags&UpdItem.UPD_LOCATION) == 0 ? 0 : getInt4(packet);
-                    final int valFlags = (flags&UpdItem.UPD_FLAGS) == 0 ? 0 : getInt4(packet);
-                    final int valWeight = (flags&UpdItem.UPD_WEIGHT) == 0 ? 0 : getInt4(packet);
-                    final int valFaceNum = (flags&UpdItem.UPD_FACE) == 0 ? 0 : getInt4(packet);
-                    final String valName;
-                    final String valNamePl;
-                    if ((flags&UpdItem.UPD_NAME) == 0) {
-                        valName = "";
-                        valNamePl = "";
-                    } else {
-                        final int nameLength = getInt1(packet);
-                        int namePlIndex = 0;
-                        while (namePlIndex < nameLength && packet.get(packet.position()+namePlIndex) != 0) {
-                            namePlIndex++;
-                        }
-                        valName = newString(packet, packet.position(), namePlIndex);
-                        valNamePl = namePlIndex+1 < nameLength ? newString(packet, packet.position()+namePlIndex+1, nameLength-(namePlIndex+1)) : valName;
-                        packet.position(packet.position()+nameLength);
-                    }
-                    final int valAnim = (flags&UpdItem.UPD_ANIM) == 0 ? 0 : getInt2(packet);
-                    final int valAnimSpeed = (flags&UpdItem.UPD_ANIMSPEED) == 0 ? 0 : getInt1(packet);
-                    final int valNrof = (flags&UpdItem.UPD_NROF) == 0 ? 0 : getInt4(packet);
-                    if (packet.hasRemaining()) {
-                        break;
-                    }
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFaceNum+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof);
-                    }
-                    for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
-                        crossfireUpdateItemListener.upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
-                    }
-                }
-                notifyPacketWatcherListenersMixed(packet, args);
-                return;
+                    processUpdItem(packet);
+                    return;
 
                 case 's':
                     if (packet.get() != 'p') {
@@ -2489,25 +1799,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    args = packet.position();
-                {
-                    final int flags = getInt1(packet);
-                    final int tag = getInt4(packet);
-                    final int mana = (flags&CrossfireSpellListener.UPD_SP_MANA) == 0 ? 0 : getInt2(packet);
-                    final int grace = (flags&CrossfireSpellListener.UPD_SP_GRACE) == 0 ? 0 : getInt2(packet);
-                    final int damage = (flags&CrossfireSpellListener.UPD_SP_DAMAGE) == 0 ? 0 : getInt2(packet);
-                    if (packet.hasRemaining()) {
-                        break;
-                    }
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv updspell flags="+flags+" tag="+tag+" sp="+mana+" gr="+grace+" dam="+damage);
-                    }
-                    for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners) {
-                        crossfireSpellListener.updateSpell(flags, tag, mana, grace, damage);
-                    }
-                }
-                notifyPacketWatcherListenersMixed(packet, args);
-                return;
+                    processUpdSpell(packet);
+                    return;
                 }
                 break;
 
@@ -2533,30 +1826,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet.get() != ' ') {
                     break;
                 }
-                args = packet.position();
-            {
-                int csval = 0;
-                do {
-                    csval = csval*10+parseDigit(packet.get());
-                } while (packet.get(packet.position()) != ' ');
-                packet.get();
-
-                int scval = 0;
-                do {
-                    scval = scval*10+parseDigit(packet.get());
-                } while (packet.get(packet.position()) != ' ');
-                packet.get();
-
-                final String vinfo = getString(packet, packet.remaining());
-
-                if (debugProtocol != null) {
-                    debugProtocol.debugProtocolWrite("recv version cs="+csval+" sc="+scval+" info="+vinfo);
-                }
-
-                cmdVersion(csval, scval, vinfo);
-            }
-            notifyPacketWatcherListenersAscii(packet, args);
-            return;
+                processVersion(packet);
+                return;
             }
         } catch (final IllegalArgumentException ex) {
             if (debugProtocol != null) {
@@ -2590,24 +1861,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Processes the "addme_success" command.
-     */
-    private void cmdAddmeSuccess() {
-        if (clientSocketState != ClientSocketState.CONNECTED) {
-            if (clientSocketState == ClientSocketState.ADDME) {
-                /* servers without account support */
-                setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
-            } else if (clientSocketState == ClientSocketState.ACCOUNTINFO) {
-                for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
-                    crossfireAccountListener.startPlaying();
-                }
-                setClientSocketState(ClientSocketState.ACCOUNTINFO, ClientSocketState.CONNECTED);
-            }
-            negotiateMapSize(preferredMapWidth, preferredMapHeight);
-        }
-    }
-
-    /**
      * Returns the command string for a received packet.
      * @param packet the packet contents
      * @return the command string
@@ -2621,55 +1874,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             }
         }
         return newString(packet, 0, cmdlen);
-    }
-
-    /**
-     * Processes the payload data for a map2 command.
-     * @param packet the packet contents
-     * @throws UnknownCommandException if the command cannot be parsed
-     */
-    private void cmdMap2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        synchronized (redrawSemaphore) {
-            for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                listener.mapBegin();
-            }
-            if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv map2 begin");
-            }
-            while (packet.hasRemaining()) {
-                final int coord = getInt2(packet);
-                final int x = ((coord>>10)&0x3F)-Map2.COORD_OFFSET;
-                final int y = ((coord>>4)&0x3F)-Map2.COORD_OFFSET;
-                final int coordType = coord&0xF;
-
-                switch (coordType) {
-                case Map2.TYPE_COORDINATE:
-                    cmdMap2Coordinate(packet, x, y);
-                    break;
-
-                case Map2.TYPE_SCROLL:
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" scroll");
-                    }
-                    for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                        listener.scroll(x, y);
-                    }
-                    break;
-
-                default:
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" <invalid>");
-                    }
-                    throw new UnknownCommandException("map2 command contains unexpected coordinate type "+coordType);
-                }
-            }
-            if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv map2 end");
-            }
-            for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                listener.mapEnd();
-            }
-        }
     }
 
     /**
@@ -2858,20 +2062,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Handles the version server to client command.
-     * @param csval the client version
-     * @param scval the server version
-     * @param vinfo the version information string
-     */
-    private void cmdVersion(final int csval, final int scval, @NotNull final String vinfo) {
-        setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
-        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1");
-        for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
-            crossfireStatsListener.setSimpleWeaponSpeed(scval >= 1029);
-        }
-    }
-
-    /**
      * Requests a change of the map size from the server.
      * @param mapWidth the map width to request
      * @param mapHeight the map height to request
@@ -2972,6 +2162,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         throw new IOException("Truncated parameter in image_info");
                     }
                     final int nrpics = Integer.parseInt(info);
+                    // XXX: replyinfo image_info not implemented
                 } finally {
                     d.close();
                 }
@@ -3070,11 +2261,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Processes a 'accountplayers' server command.
+     * Processes an 'accountplayers' server command.
      * @param packet the packet's payload
      * @throws UnknownCommandException if the packet is invalid.
      */
     private void processAccountPlayers(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
         for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.startAccountList();
         }
@@ -3178,14 +2370,718 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
 
         //sendAddme();
+
+        packet.reset();
+        notifyPacketWatcherListenersMixed(packet, args);
     }
 
     /**
-     * Handles the setup server to client command.
-     * @param options the option/value pairs
-     * @throws UnknownCommandException if a protocol error occurs
+     * Processes an 'account_failed' server command.
+     * @param packet the packet's payload
      */
-    private void cmdSetup(@NotNull final List<String> options) throws UnknownCommandException {
+    private void processAddmeFailed(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+        // XXX: addme_failed command not implemented
+        notifyPacketWatcherListenersNodata(packet, args);
+    }
+
+    /**
+     * Processes an 'account_success' server command.
+     * @param packet the packet's payload
+     */
+    private void processAddmeSuccess(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+
+        if (clientSocketState != ClientSocketState.CONNECTED) {
+            if (clientSocketState == ClientSocketState.ADDME) {
+                /* servers without account support */
+                setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
+            } else if (clientSocketState == ClientSocketState.ACCOUNTINFO) {
+                for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+                    crossfireAccountListener.startPlaying();
+                }
+                setClientSocketState(ClientSocketState.ACCOUNTINFO, ClientSocketState.CONNECTED);
+            }
+            negotiateMapSize(preferredMapWidth, preferredMapHeight);
+        }
+
+        notifyPacketWatcherListenersNodata(packet, args);
+    }
+
+    /**
+     * Processes an 'addspell' server command.
+     * @param packet the packet's payload
+     */
+    private void processAddSpell(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+        while (packet.hasRemaining()) {
+            final int tag = getInt4(packet);
+            final int level = getInt2(packet);
+            final int castingTime = getInt2(packet);
+            final int mana = getInt2(packet);
+            final int grace = getInt2(packet);
+            final int damage = getInt2(packet);
+            final int skill = getInt1(packet);
+            final int path = getInt4(packet);
+            final int face = getInt4(packet);
+            final int nameLength = getInt1(packet);
+            final String name = getString(packet, nameLength);
+            final int messageLength = getInt2(packet);
+            final String message = getString(packet, messageLength);
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("recv addspell tag="+tag+" lvl="+level+" time="+castingTime+" sp="+mana+" gr="+grace+" dam="+damage+" skill="+skill+" path="+path+" face="+face+" name="+name+" msg="+message);
+            }
+            for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners) {
+                crossfireSpellListener.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
+            }
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes an 'addanim' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processAddAnim(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int num = getInt2(packet);
+        final int flags = getInt2(packet);
+        final int[] faces = new int[packet.remaining()/2];
+        if (faces.length <= 0) {
+            throw new UnknownCommandException("no faces in anim command");
+        }
+        for (int i = 0; i < faces.length; i++) {
+            faces[i] = getInt2(packet);
+        }
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of addanim command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv addanim num="+num+" flags="+flags+" faces="+Arrays.toString(faces));
+        }
+        if ((num&~0x1FFF) != 0) {
+            throw new UnknownCommandException("invalid animation id "+num);
+        }
+        for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+            listener.addAnimation(num&0x1FFF, flags, faces);
+        }
+        notifyPacketWatcherListenersShortArray(packet, args);
+    }
+
+    /**
+     * Processes a 'comc' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processComc(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int packetNo = getInt2(packet);
+        final int time = getInt4(packet);
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of comc command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv comc no="+packetNo+" time="+time);
+        }
+        for (final CrossfireComcListener listener : crossfireComcListeners) {
+            listener.commandComcReceived(packetNo, time);
+        }
+        notifyPacketWatcherListenersShortInt(packet, args);
+    }
+
+    /**
+     * Processes a 'delinv' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processDelInv(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        int tag = 0;
+        do {
+            tag = tag*10+parseDigit(packet.get());
+        } while (packet.hasRemaining());
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of delinv command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv delinv tag="+tag);
+        }
+        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
+            crossfireUpdateItemListener.delinvReceived(tag);
+        }
+        notifyPacketWatcherListenersAscii(packet, args);
+    }
+
+    /**
+     * Processes a 'delitem' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processDelItem(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int[] tags = new int[packet.remaining()/4];
+        for (int i = 0; i < tags.length; i++) {
+            tags[i] = getInt4(packet);
+        }
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of delitem command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv delitem tags="+Arrays.toString(tags));
+        }
+        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
+            crossfireUpdateItemListener.delitemReceived(tags);
+        }
+        notifyPacketWatcherListenersIntArray(packet, args);
+    }
+
+    /**
+     * Processes a 'delspell' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processDelSpell(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int tag = getInt4(packet);
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of delspell command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv delspell tag="+tag);
+        }
+        for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners) {
+            crossfireSpellListener.deleteSpell(tag);
+        }
+        notifyPacketWatcherListenersIntArray(packet, args);
+    }
+
+    /**
+     * Processes a 'drawextinfo' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processDrawExtInfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        int color = 0;
+        do {
+            color = color*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+
+        int type = 0;
+        do {
+            type = type*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+
+        int subtype = 0;
+        do {
+            subtype = subtype*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+
+        final String message = getString(packet, packet.remaining());
+
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv drawextinfo color="+color+" type="+type+"/"+subtype+" msg="+message);
+        }
+
+        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
+            listener.commandDrawextinfoReceived(color, type, subtype, message);
+        }
+        notifyPacketWatcherListenersAscii(packet, args);
+    }
+
+    /**
+     * Processes a 'drawinfo' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processDrawInfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        int color = 0;
+        do {
+            color = color*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+
+        final String message = getString(packet, packet.remaining());
+
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv drawinfo color="+color+" msg="+message);
+        }
+
+        drawInfo(message, color);
+        notifyPacketWatcherListenersAscii(packet, args);
+    }
+
+    /**
+     * Processes an 'ExtendedInfoSet' server command.
+     * @param packet the packet's payload
+     */
+    private void processExtendedInfoSet(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+        do {
+            final int startPos = packet.position();
+            while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
+                packet.get();
+            }
+            final String string = newString(packet, startPos, packet.position()-startPos);
+            packet.get();
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("recv ExtendedInfoSet "+string);
+            }
+            // XXX: ExtendedInfoSet command not implemented
+        } while (packet.hasRemaining());
+        notifyPacketWatcherListenersNodata(packet, args);
+    }
+
+    /**
+     * Processes an 'ExtendedTextSet' server command.
+     * @param packet the packet's payload
+     */
+    private void processExtendedTextSet(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+        for (;;) {
+            final int startPos = packet.position();
+            while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
+                packet.get();
+            }
+            final String type = newString(packet, startPos, packet.position()-startPos);
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("recv ExtendedTextSet "+type);
+            }
+            // XXX: ExtendedTextSet command not implemented
+            if (!packet.hasRemaining()) {
+                break;
+            }
+            packet.get();
+        }
+        notifyPacketWatcherListenersNodata(packet, args);
+    }
+
+    /**
+     * Processes a 'face2' server command.
+     * @param packet the packet's payload
+     */
+    private void processFace2(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+        final int faceNum = getInt2(packet);
+        final int faceSetNum = getInt1(packet);
+        final int faceChecksum = getInt4(packet);
+        final String faceName = getString(packet, packet.remaining()).intern();
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName);
+        }
+        for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners) {
+            crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes a 'failure' server command.
+     * @param packet the packet's payload
+     */
+    private void processFailure(@NotNull final ByteBuffer packet) {
+        final String full = getString(packet, packet.remaining());
+        final String command;
+        final String message;
+        final int idx = full.indexOf(' ');
+        if (idx == -1) {
+            command = full;
+            message = "";
+        } else {
+            command = full.substring(0, idx);
+            message = full.substring(idx+1);
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv failure command="+command+" message="+message);
+        }
+
+        for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
+            crossfireFailureListener.failure(command, message);
+        }
+    }
+
+    /**
+     * Processes a 'goodbye' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processGoodbye(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of goodbye command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv goodbye");
+        }
+        // XXX: goodbye command not implemented
+        notifyPacketWatcherListenersNodata(packet, args);
+    }
+
+    /**
+     * Processes an 'image2' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processImage2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int faceNum = getInt4(packet);
+        final int faceSetNum = getInt1(packet);
+        final int len = getInt4(packet);
+        if (packet.remaining() != len) {
+            throw new UnknownCommandException("excess data at end of image2 command");
+        }
+        final int faceDataPosition = packet.position();
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len);
+        }
+        for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners) {
+            packet.position(faceDataPosition);
+            listener.updateFace(faceNum, faceSetNum, packet);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes an 'item2' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processItem2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int location = getInt4(packet);
+        while (packet.hasRemaining()) {
+            final int tag = getInt4(packet);
+            final int flags = getInt4(packet);
+            final int weight = getInt4(packet);
+            final int faceNum = getInt4(packet);
+            final int nameLength = getInt1(packet);
+            final String[] names = getString(packet, nameLength).split("\0", 2);
+            final String name = names[0].intern();
+            final String namePl = names.length < 2 ? name : names[1].intern();
+            final int anim = getInt2(packet);
+            final int animSpeed = getInt1(packet);
+            final int nrof = getInt4(packet);
+            final int type = getInt2(packet);
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("recv item2 location="+location+" tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type);
+            }
+            for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
+                crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
+            }
+        }
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of item2 command");
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes a 'magicmap' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processMagicMap(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+
+        final boolean widthSign = packet.get(packet.position()) == '-';
+        if (widthSign) {
+            packet.get();
+        }
+        int width = 0;
+        do {
+            width = width*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+        if (widthSign) {
+            width = -width;
+        }
+
+        final boolean heightSign = packet.get(packet.position()) == '-';
+        if (heightSign) {
+            packet.get();
+        }
+        int height = 0;
+        do {
+            height = height*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+        if (heightSign) {
+            height = -height;
+        }
+
+        final boolean pxSign = packet.get(packet.position()) == '-';
+        if (pxSign) {
+            packet.get();
+        }
+        int px = 0;
+        do {
+            px = px*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+        if (pxSign) {
+            px = -px;
+        }
+
+        final boolean pySign = packet.get(packet.position()) == '-';
+        if (pySign) {
+            packet.get();
+        }
+        int py = 0;
+        do {
+            py = py*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+        if (pySign) {
+            py = -py;
+        }
+
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv magicmap size="+width+"x"+height+" player="+px+"/"+py+" len="+packet.remaining());
+        }
+
+        if (packet.remaining() != width*height) {
+            throw new UnknownCommandException("invalid magicmap command");
+        }
+
+        for (final CrossfireMagicmapListener listener : magicmapListeners) {
+            listener.commandMagicmapReceived(width, height, px, py, packet);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes a 'map2' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processMap2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        synchronized (redrawSemaphore) {
+            for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                listener.mapBegin();
+            }
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("recv map2 begin");
+            }
+            while (packet.hasRemaining()) {
+                final int coord = getInt2(packet);
+                final int x = ((coord>>10)&0x3F)-Map2.COORD_OFFSET;
+                final int y = ((coord>>4)&0x3F)-Map2.COORD_OFFSET;
+                final int coordType = coord&0xF;
+
+                switch (coordType) {
+                case Map2.TYPE_COORDINATE:
+                    cmdMap2Coordinate(packet, x, y);
+                    break;
+
+                case Map2.TYPE_SCROLL:
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" scroll");
+                    }
+                    for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                        listener.scroll(x, y);
+                    }
+                    break;
+
+                default:
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" <invalid>");
+                    }
+                    throw new UnknownCommandException("map2 command contains unexpected coordinate type "+coordType);
+                }
+            }
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("recv map2 end");
+            }
+            for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                listener.mapEnd();
+            }
+        }
+        notifyPacketWatcherListenersShortArray(packet, args);
+    }
+
+    /**
+     * Processes a 'mapextended' server command.
+     * @param packet the packet's payload
+     */
+    private void processMapExtended(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv mapextended");
+        }
+
+        // XXX: "MapExtended" command not yet implemented
+
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes a 'music' server command.
+     * @param packet the packet's payload
+     */
+    private void processMusic(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+        final String music = getString(packet, packet.remaining());
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv music "+music);
+        }
+
+        for (final CrossfireMusicListener listener : crossfireMusicListeners) {
+            listener.commandMusicReceived(music);
+        }
+        notifyPacketWatcherListenersAscii(packet, args);
+    }
+
+    /**
+     * Processes a 'newmap' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processNewMap(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of newmap command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv newmap");
+        }
+        fireNewMap();
+        notifyPacketWatcherListenersNodata(packet, args);
+    }
+
+    /**
+     * Processes a 'pickup' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processPickup(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int pickupOptions = getInt4(packet);
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of pickup command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv pickup options="+pickupOptions);
+        }
+        for (final CrossfirePickupListener crossfirePickupListener : crossfirePickupListeners) {
+            crossfirePickupListener.pickupChanged(pickupOptions);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes a 'pickup' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processPlayer(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int tag = getInt4(packet);
+        final int weight = getInt4(packet);
+        final int faceNum = getInt4(packet);
+        final int nameLength = getInt1(packet);
+        final String name = getString(packet, nameLength);
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of player command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+faceNum+" name="+name);
+        }
+        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
+            crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes a 'pickup' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processQuery(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        int flags = 0;
+        do {
+            flags = flags*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+
+        final String text = getString(packet, packet.remaining());
+
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv query flags="+flags+" text="+text);
+        }
+
+        // XXX: hack to process "What is your name?" prompt even before addme_success is received
+        if (clientSocketState != ClientSocketState.CONNECTED) {
+            setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
+            negotiateMapSize(preferredMapWidth, preferredMapHeight);
+            negotiateNumLookObjects(preferredNumLookObjects);
+        }
+        for (final CrossfireQueryListener listener : queryListeners) {
+            listener.commandQueryReceived(text, flags);
+        }
+        notifyPacketWatcherListenersAscii(packet, args);
+    }
+
+    /**
+     * Processes a 'replyinfo' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processReplyInfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int startPos = packet.position();
+        while (packet.hasRemaining() && packet.get(packet.position()) != '\n' && packet.get(packet.position()) != ' ') {
+            packet.get();
+        }
+        final String infoType = newString(packet, startPos, packet.position()-startPos);
+        if (packet.hasRemaining()) {
+            packet.get();
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv replyinfo type="+infoType+" len="+packet.remaining());
+        }
+        try {
+            cmdReplyinfo(infoType, packet);
+        } catch (final IOException ex) {
+            throw new UnknownCommandException("invalid replyinfo command: "+ex.getMessage());
+        }
+        notifyPacketWatcherListenersAscii(packet, args);
+    }
+
+    /**
+     * Processes a 'replyinfo' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processSetup(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final List<String> options = new ArrayList<String>();
+        while (packet.hasRemaining()) {
+            while (packet.get(packet.position()) == ' ') {
+                packet.get();
+            }
+            final int startPos = packet.position();
+            while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
+                packet.get();
+            }
+            options.add(newString(packet, startPos, packet.position()-startPos));
+            if (packet.hasRemaining()) {
+                packet.get();
+            }
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv setup "+options);
+        }
+        if (options.size()%2 != 0) {
+            throw new UnknownCommandException("odd number of arguments in setup command");
+        }
         for (int i = 0; i+1 < options.size(); i += 2) {
             final String option = options.get(i);
             final String value = options.get(i+1);
@@ -3334,14 +3230,332 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             sendRequestinfo("exp_table");
             sendToggleextendedtext(MessageTypes.getAllTypes());
         }
+        notifyPacketWatcherListenersAscii(packet, args);
     }
 
     /**
-     * Handles the MapExtended server to client command.
-     * @param packet the parameter's payload
+     * Processes a 'smooth' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
      */
-    private void cmdMapextended(@NotNull final ByteBuffer packet) {
-        // XXX: "MapExtended" command not yet implemented
+    private void processSmooth(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int facenbr = getInt2(packet);
+        final int smoothpic = getInt2(packet);
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of smooth command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv smooth face="+facenbr+" smoothpic="+smoothpic);
+        }
+        // XXX: smooth command not implemented
+        notifyPacketWatcherListenersShortArray(packet, args);
+    }
+
+    /**
+     * Processes a 'sound' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processSound(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int x = packet.get();
+        final int y = packet.get();
+        final int num = getInt2(packet);
+        final int type = getInt1(packet);
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of sound command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv sound pos="+x+"/"+y+" num="+num+" type="+type);
+        }
+
+        for (final CrossfireSoundListener listener : crossfireSoundListeners) {
+            listener.commandSoundReceived(x, y, num, type);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes a 'sound2' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processSound2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int x = packet.get();
+        final int y = packet.get();
+        final int dir = packet.get();
+        final int volume = getInt1(packet);
+        final int type = getInt1(packet);
+        final int actionLength = getInt1(packet);
+        final String action = getString(packet, actionLength);
+        final int nameLength = getInt1(packet);
+        final String name = getString(packet, nameLength);
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of sound2 command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv sound2 pos="+x+"/"+y+" dir="+dir+" volume="+volume+" type="+type+" action="+action+" name="+name);
+        }
+
+        for (final CrossfireSoundListener listener : crossfireSoundListeners) {
+            listener.commandSound2Received(x, y, dir, volume, type, action, name);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes a 'stats' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processStats(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        while (packet.hasRemaining()) {
+            final int stat = getInt1(packet);
+            switch (stat) {
+            case CrossfireStatsListener.CS_STAT_HP:
+            case CrossfireStatsListener.CS_STAT_MAXHP:
+            case CrossfireStatsListener.CS_STAT_SP:
+            case CrossfireStatsListener.CS_STAT_MAXSP:
+            case CrossfireStatsListener.CS_STAT_STR:
+            case CrossfireStatsListener.CS_STAT_INT:
+            case CrossfireStatsListener.CS_STAT_WIS:
+            case CrossfireStatsListener.CS_STAT_DEX:
+            case CrossfireStatsListener.CS_STAT_CON:
+            case CrossfireStatsListener.CS_STAT_CHA:
+            case CrossfireStatsListener.CS_STAT_LEVEL:
+            case CrossfireStatsListener.CS_STAT_WC:
+            case CrossfireStatsListener.CS_STAT_AC:
+            case CrossfireStatsListener.CS_STAT_DAM:
+            case CrossfireStatsListener.CS_STAT_ARMOUR:
+            case CrossfireStatsListener.CS_STAT_FOOD:
+            case CrossfireStatsListener.CS_STAT_POW:
+            case CrossfireStatsListener.CS_STAT_GRACE:
+            case CrossfireStatsListener.CS_STAT_MAXGRACE:
+            case CrossfireStatsListener.CS_STAT_FLAGS:
+            case CrossfireStatsListener.CS_STAT_RACE_STR:
+            case CrossfireStatsListener.CS_STAT_RACE_INT:
+            case CrossfireStatsListener.CS_STAT_RACE_WIS:
+            case CrossfireStatsListener.CS_STAT_RACE_DEX:
+            case CrossfireStatsListener.CS_STAT_RACE_CON:
+            case CrossfireStatsListener.CS_STAT_RACE_CHA:
+            case CrossfireStatsListener.CS_STAT_RACE_POW:
+            case CrossfireStatsListener.CS_STAT_BASE_STR:
+            case CrossfireStatsListener.CS_STAT_BASE_INT:
+            case CrossfireStatsListener.CS_STAT_BASE_WIS:
+            case CrossfireStatsListener.CS_STAT_BASE_DEX:
+            case CrossfireStatsListener.CS_STAT_BASE_CON:
+            case CrossfireStatsListener.CS_STAT_BASE_CHA:
+            case CrossfireStatsListener.CS_STAT_BASE_POW:
+            case CrossfireStatsListener.CS_STAT_APPLIED_STR:
+            case CrossfireStatsListener.CS_STAT_APPLIED_INT:
+            case CrossfireStatsListener.CS_STAT_APPLIED_WIS:
+            case CrossfireStatsListener.CS_STAT_APPLIED_DEX:
+            case CrossfireStatsListener.CS_STAT_APPLIED_CON:
+            case CrossfireStatsListener.CS_STAT_APPLIED_CHA:
+            case CrossfireStatsListener.CS_STAT_APPLIED_POW:
+                final short int2Param = (short)(getInt2(packet));
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF));
+                }
+                for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
+                    crossfireStatsListener.statInt2Received(stat, int2Param);
+                }
+                notifyPacketWatcherListenersStats(stat, int2Param);
+                break;
+
+            case CrossfireStatsListener.CS_STAT_EXP:
+            case CrossfireStatsListener.CS_STAT_SPEED:
+            case CrossfireStatsListener.CS_STAT_WEAP_SP:
+            case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
+            case CrossfireStatsListener.CS_STAT_SPELL_ATTUNE:
+            case CrossfireStatsListener.CS_STAT_SPELL_REPEL:
+            case CrossfireStatsListener.CS_STAT_SPELL_DENY:
+                final int int4Param = getInt4(packet);
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int4="+int4Param);
+                }
+                for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
+                    crossfireStatsListener.statInt4Received(stat, int4Param);
+                }
+                notifyPacketWatcherListenersStats(stat, int4Param);
+                break;
+
+            case CrossfireStatsListener.CS_STAT_EXP64:
+                final long int8Param = getInt8(packet);
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int8="+int8Param);
+                }
+                for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
+                    crossfireStatsListener.statInt8Received(stat, int8Param);
+                }
+                notifyPacketWatcherListenersStats(stat, int8Param);
+                break;
+
+            case CrossfireStatsListener.CS_STAT_RANGE:
+            case CrossfireStatsListener.CS_STAT_TITLE:
+                final int length = getInt1(packet);
+                final String strParam = getString(packet, length);
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv stats stat="+stat+" str="+strParam);
+                }
+                for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
+                    crossfireStatsListener.statStringReceived(stat, strParam);
+                }
+                notifyPacketWatcherListenersStats(stat, strParam);
+                break;
+
+            default:
+                if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat < CrossfireStatsListener.CS_STAT_RESIST_START+CrossfireStatsListener.RESIST_TYPES) {
+                    final short int2Param2 = (short)(getInt2(packet));
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param2);
+                    }
+                    for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
+                        crossfireStatsListener.statInt2Received(stat, int2Param2);
+                    }
+                    notifyPacketWatcherListenersStats(stat, int2Param2);
+                } else if (CrossfireStatsListener.CS_STAT_SKILLINFO <= stat && stat < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS) {
+                    final int level = getInt1(packet);
+                    final long experience = getInt8(packet);
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv stats stat="+stat+" level="+level+" experience="+experience);
+                    }
+                    for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
+                        crossfireStatsListener.statSkillReceived(stat, level, experience);
+                    }
+                    notifyPacketWatcherListenersStats(stat, level, experience);
+                } else {
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv stats stat="+stat+" <unknown parameter>");
+                    }
+                    throw new UnknownCommandException("unknown stat value: "+stat);
+                }
+                break;
+            }
+        }
+    }
+
+    /**
+     * Processes a 'tick' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processTick(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int tickNo = getInt4(packet);
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of tick command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv tick "+tickNo);
+        }
+        for (final CrossfireTickListener listener : crossfireTickListeners) {
+            listener.tick(tickNo);
+        }
+        notifyPacketWatcherListenersIntArray(packet, args);
+    }
+
+    /**
+     * Processes an 'upditem' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processUpdItem(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int flags = getInt1(packet);
+        final int tag = getInt4(packet);
+        final int valLocation = (flags&UpdItem.UPD_LOCATION) == 0 ? 0 : getInt4(packet);
+        final int valFlags = (flags&UpdItem.UPD_FLAGS) == 0 ? 0 : getInt4(packet);
+        final int valWeight = (flags&UpdItem.UPD_WEIGHT) == 0 ? 0 : getInt4(packet);
+        final int valFaceNum = (flags&UpdItem.UPD_FACE) == 0 ? 0 : getInt4(packet);
+        final String valName;
+        final String valNamePl;
+        if ((flags&UpdItem.UPD_NAME) == 0) {
+            valName = "";
+            valNamePl = "";
+        } else {
+            final int nameLength = getInt1(packet);
+            int namePlIndex = 0;
+            while (namePlIndex < nameLength && packet.get(packet.position()+namePlIndex) != 0) {
+                namePlIndex++;
+            }
+            valName = newString(packet, packet.position(), namePlIndex);
+            valNamePl = namePlIndex+1 < nameLength ? newString(packet, packet.position()+namePlIndex+1, nameLength-(namePlIndex+1)) : valName;
+            packet.position(packet.position()+nameLength);
+        }
+        final int valAnim = (flags&UpdItem.UPD_ANIM) == 0 ? 0 : getInt2(packet);
+        final int valAnimSpeed = (flags&UpdItem.UPD_ANIMSPEED) == 0 ? 0 : getInt1(packet);
+        final int valNrof = (flags&UpdItem.UPD_NROF) == 0 ? 0 : getInt4(packet);
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of upditem command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFaceNum+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof);
+        }
+        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
+            crossfireUpdateItemListener.upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes an 'updspell' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processUpdSpell(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        final int flags = getInt1(packet);
+        final int tag = getInt4(packet);
+        final int mana = (flags&CrossfireSpellListener.UPD_SP_MANA) == 0 ? 0 : getInt2(packet);
+        final int grace = (flags&CrossfireSpellListener.UPD_SP_GRACE) == 0 ? 0 : getInt2(packet);
+        final int damage = (flags&CrossfireSpellListener.UPD_SP_DAMAGE) == 0 ? 0 : getInt2(packet);
+        if (packet.hasRemaining()) {
+            throw new UnknownCommandException("excess data at end of updspell command");
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv updspell flags="+flags+" tag="+tag+" sp="+mana+" gr="+grace+" dam="+damage);
+        }
+        for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners) {
+            crossfireSpellListener.updateSpell(flags, tag, mana, grace, damage);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes a 'version' server command.
+     * @param packet the packet's payload
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processVersion(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final int args = packet.position();
+        int csval = 0;
+        do {
+            csval = csval*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+
+        int scval = 0;
+        do {
+            scval = scval*10+parseDigit(packet.get());
+        } while (packet.get(packet.position()) != ' ');
+        packet.get();
+
+        final String vinfo = getString(packet, packet.remaining());
+
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv version cs="+csval+" sc="+scval+" info="+vinfo);
+        }
+
+        setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
+        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1");
+        for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
+            crossfireStatsListener.setSimpleWeaponSpeed(scval >= 1029);
+        }
+
+        notifyPacketWatcherListenersAscii(packet, args);
     }
 
     /**
