@@ -1059,6 +1059,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         break;
                     }
                     args = packet.position();
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers");
+                    }
                     processAccountPlayers(packet);
                     packet.reset();
                     notifyPacketWatcherListenersMixed(packet, args);
