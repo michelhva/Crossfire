@@ -166,7 +166,7 @@ public class CommandParser {
             return parseScroll(args, argc, element, command.equals("SCROLL"));
         } else if (command.equals("SCROLL_RESET")) {
             return parseScrollReset(args, argc, element);
-        } else if (command.equals("SCROLLNEXT")) {
+        } else if (command.equals("MOVE_FOCUS")) {
             return parseScrollnext(args, argc, element);
         } else if (command.equals("ACCOUNT_LOGIN")) {
             return parseAccountLogin(args, argc, element, commandCallback);
