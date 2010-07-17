@@ -27,3 +27,4 @@ textbutton account_cancel_login 220 180 140 18 false command_account_cancel_crea
 
 hide_input account_password
 hide_input account_password_confirm
+set_default account_do_login

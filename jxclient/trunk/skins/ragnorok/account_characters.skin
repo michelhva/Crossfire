@@ -12,3 +12,18 @@ commandlist_add command_account_character_new null DIALOG_CLOSE account_characte
 textbutton account_do_login 25 170 100 18 false command_account_character_play Play
 textbutton account_do_link 150 170 100 18 false command_account_character_link Link
 textbutton account_do_new 275 170 100 18 false command_account_character_new New
+
+set_default account_do_login
+
+commandlist command_accountlist_pageup AND characters SCROLL_LIST -8
+commandlist command_accountlist_pagedown AND characters SCROLL_LIST 8
+
+commandlist command_accountlist_prev AND characters MOVE_SELECTION 0 -1
+commandlist command_accountlist_next AND characters MOVE_SELECTION 0 1
+
+key code UP        0 exec command_accountlist_prev
+key code KP_UP     0 exec command_accountlist_prev
+key code DOWN      0 exec command_accountlist_next
+key code KP_DOWN   0 exec command_accountlist_next
+key code PAGE_UP   0 exec command_accountlist_pageup
+key code PAGE_DOWN 0 exec command_accountlist_pagedown
