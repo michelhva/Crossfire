@@ -311,8 +311,8 @@ public class ItemPainter {
      * @param text the text
      */
     private void renderText(@NotNull final Graphics2D g, final int dx, final int dy, final int height, @NotNull final String text) {
-        final RectangularShape rect = font.getStringBounds(text, g.getFontRenderContext());
-        final int y = dy+(int)Math.round((height-rect.getMaxY()-rect.getMinY()))/2;
+        final RectangularShape rectangle = font.getStringBounds(text, g.getFontRenderContext());
+        final int y = dy+(int)Math.round((height-rectangle.getMaxY()-rectangle.getMinY()))/2;
         g.drawString(text, dx, y);
     }
 

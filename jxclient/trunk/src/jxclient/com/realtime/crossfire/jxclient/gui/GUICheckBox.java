@@ -157,8 +157,8 @@ public class GUICheckBox extends ActivatableGUIElement {
         g.setFont(font);
         g.setColor(color);
         g.drawImage(option.isChecked() ? checkedImage : uncheckedImage, 0, 0, null);
-        final RectangularShape rect = font.getStringBounds(text, g.getFontRenderContext());
-        final int y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
+        final RectangularShape rectangle = font.getStringBounds(text, g.getFontRenderContext());
+        final int y = (int)Math.round((getHeight()-rectangle.getMaxY()-rectangle.getMinY()))/2;
         g.drawString(text, checkedImage.getWidth()+4, y);
     }
 

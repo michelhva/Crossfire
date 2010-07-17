@@ -50,7 +50,7 @@ public class GUIDialogTitle extends GUIPicture {
     private final JXCWindowRenderer windowRenderer;
 
     /**
-     * Set to the distance of the dialog cordinates relative to the mouse
+     * Set to the distance of the dialog coordinates relative to the mouse
      * position while dragging start. Else set to <code>null</code>.
      */
     @Nullable

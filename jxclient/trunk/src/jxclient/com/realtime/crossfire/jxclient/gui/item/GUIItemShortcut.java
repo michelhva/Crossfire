@@ -233,7 +233,7 @@ public class GUIItemShortcut extends GUIItem {
     }
 
     /**
-     * Updates {@link #shortcut} and registers/deregisteres {@link
+     * Updates {@link #shortcut} and registers/de-registers {@link
      * #shortcutListener}.
      * @param shortcut the new shortcut
      */

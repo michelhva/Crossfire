@@ -80,7 +80,7 @@ public class Commands {
     /**
      * Execute a command or a list of commands. The commands may be a client- or
      * a server-sided command.
-     * @param commands The commands to execute.
+     * @param commands the commands to execute
      */
     public void executeCommand(@NotNull final CharSequence commands) {
         String cmds = StringUtils.trimLeading(commands);

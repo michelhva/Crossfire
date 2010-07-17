@@ -33,17 +33,17 @@ public interface CrossfireQueryListener {
     /**
      * Query type: yes/no question.
      */
-    int YESNO = 1;
+    int YES_NO = 1;
 
     /**
      * Query type: single character response expected.
      */
-    int SINGLECHAR = 2;
+    int SINGLE_CHAR = 2;
 
     /**
      * Query type: hide input being entered.
      */
-    int HIDEINPUT = 4;
+    int HIDE_INPUT = 4;
 
     /**
      * A query message has been received.

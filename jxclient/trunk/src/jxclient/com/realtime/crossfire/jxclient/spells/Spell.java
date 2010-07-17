@@ -122,7 +122,7 @@ public class Spell {
 
     /**
      * Marks this spell as known or unknown for the character.
-     * @param unknown whether this spell is unkonwn
+     * @param unknown whether this spell is unknown
      */
     public void setUnknown(final boolean unknown) {
         if (this.unknown != unknown) {

@@ -79,53 +79,53 @@ public class StatGaugeUpdater extends GaugeUpdater {
 
         /** {@inheritDoc} */
         @Override
-        public void statChanged(final int statnr, final int value) {
+        public void statChanged(final int statNo, final int value) {
             switch (stat) {
             case CrossfireStatsListener.CS_STAT_HP:
-                if (statnr == CrossfireStatsListener.CS_STAT_HP) {
+                if (statNo == CrossfireStatsListener.CS_STAT_HP) {
                     setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXHP));
-                } else if (statnr == CrossfireStatsListener.CS_STAT_MAXHP) {
+                } else if (statNo == CrossfireStatsListener.CS_STAT_MAXHP) {
                     setValues(stats.getStat(CrossfireStatsListener.CS_STAT_HP), 0, value);
                 }
                 break;
 
             case CrossfireStatsListener.CS_STAT_SP:
-                if (statnr == CrossfireStatsListener.CS_STAT_SP) {
+                if (statNo == CrossfireStatsListener.CS_STAT_SP) {
                     setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXSP));
-                } else if (statnr == CrossfireStatsListener.CS_STAT_MAXSP) {
+                } else if (statNo == CrossfireStatsListener.CS_STAT_MAXSP) {
                     setValues(stats.getStat(CrossfireStatsListener.CS_STAT_SP), 0, value);
                 }
                 break;
 
             case CrossfireStatsListener.CS_STAT_FOOD:
-                if (statnr == CrossfireStatsListener.CS_STAT_FOOD) {
+                if (statNo == CrossfireStatsListener.CS_STAT_FOOD) {
                     setValues(value, 0, 999);
                 }
                 break;
 
             case CrossfireStatsListener.C_STAT_LOWFOOD:
-                if (statnr == CrossfireStatsListener.C_STAT_LOWFOOD) {
+                if (statNo == CrossfireStatsListener.C_STAT_LOWFOOD) {
                     setValues(active && stats.getStat(CrossfireStatsListener.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
                 }
                 break;
 
             case CrossfireStatsListener.CS_STAT_GRACE:
-                if (statnr == CrossfireStatsListener.CS_STAT_GRACE) {
+                if (statNo == CrossfireStatsListener.CS_STAT_GRACE) {
                     setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE));
-                } else if (statnr == CrossfireStatsListener.CS_STAT_MAXGRACE) {
+                } else if (statNo == CrossfireStatsListener.CS_STAT_MAXGRACE) {
                     setValues(stats.getStat(CrossfireStatsListener.CS_STAT_GRACE), 0, value);
                 }
                 break;
 
             case CrossfireStatsListener.C_STAT_POISONED:
-                if (statnr == CrossfireStatsListener.C_STAT_POISONED) {
+                if (statNo == CrossfireStatsListener.C_STAT_POISONED) {
                     setValues(value, 0, 1);
                 }
                 break;
 
             default:
                 if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat <= CrossfireStatsListener.CS_STAT_RESIST_END) {
-                    if (statnr == stat) {
+                    if (statNo == stat) {
                         setValues(value, 0, 100);
                     }
                 }
@@ -261,8 +261,8 @@ public class StatGaugeUpdater extends GaugeUpdater {
     private void updateExperienceNextLevel() {
         final int level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
         final long experience = stats.getExperience();
-        final int perc = getPercentsToNextLevel(level, experience);
-        setValues(perc, 0, 99, perc+"%", level+"<br>Experience:"+Formatter.formatLong(experience)+"<br>Next level:"+Formatter.formatLong(getExperienceToNextLevel(level, experience)));
+        final int percents = getPercentsToNextLevel(level, experience);
+        setValues(percents, 0, 99, percents+"%", level+"<br>Experience:"+Formatter.formatLong(experience)+"<br>Next level:"+Formatter.formatLong(getExperienceToNextLevel(level, experience)));
     }
 
 }

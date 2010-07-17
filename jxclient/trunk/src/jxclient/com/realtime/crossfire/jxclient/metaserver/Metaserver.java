@@ -140,7 +140,7 @@ public class Metaserver {
     /**
      * Update the contents of {@link #metaserverModel}.
      */
-    public void updateMetalist() {
+    public void updateMetaList() {
         metaserverModel.begin();
 
         serverCache.expire(EXPIRE_INTERVAL*1000);

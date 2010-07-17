@@ -112,8 +112,8 @@ public class GUILabelStats2 extends GUIOneLineLabel {
 
         /** {@inheritDoc} */
         @Override
-        public void statChanged(final int statnr, final int value) {
-            if (statnr == statCurrent || statnr == statBase || statnr == statRace || statnr == statApplied) {
+        public void statChanged(final int statNo, final int value) {
+            if (statNo == statCurrent || statNo == statBase || statNo == statRace || statNo == statApplied) {
                 updateStat();
             }
         }

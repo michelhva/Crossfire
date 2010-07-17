@@ -71,7 +71,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     private int valueMin = 0;
 
     /**
-     * The size of the scoll values.
+     * The size of the scroll values.
      */
     private int valueSize = 1;
 

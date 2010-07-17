@@ -71,7 +71,7 @@ public class ActiveSkillWatcher {
 
         /** {@inheritDoc} */
         @Override
-        public void statChanged(final int statnr, final int value) {
+        public void statChanged(final int statNo, final int value) {
             // ignore
         }
 

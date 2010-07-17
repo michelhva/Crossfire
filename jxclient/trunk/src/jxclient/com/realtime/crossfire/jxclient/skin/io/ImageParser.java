@@ -33,7 +33,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Creates {@link BufferedImage} instances from strig representations. Each
+ * Creates {@link BufferedImage} instances from string representations. Each
  * image is loaded only once.
  * @author Andreas Kirschbaum
  */

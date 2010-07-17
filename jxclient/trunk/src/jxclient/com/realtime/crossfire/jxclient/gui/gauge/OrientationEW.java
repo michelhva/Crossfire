@@ -31,18 +31,18 @@ public class OrientationEW extends AbstractOrientation {
      * Creates a new instance.
      */
     public OrientationEW() {
-        recalc();
+        reCalculate();
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    protected void recalc() {
+    protected void reCalculate() {
         final int width = getWidth();
         final int cur = getCur();
         final int min = getMin();
-        final int w = calc(isNegativeImage() ? min-cur : cur-min, getMax()-min, width);
+        final int w = calculate(isNegativeImage() ? min-cur : cur-min, getMax()-min, width);
         setExtent(width-w, 0, w, getHeight());
     }
 

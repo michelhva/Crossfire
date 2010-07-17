@@ -110,12 +110,12 @@ public class Pickup {
     /**
      * Pickup mode: missile weapons.
      */
-    public static final long PU_MISSILEWEAPON = 0x00010000L;
+    public static final long PU_MISSILE_WEAPON = 0x00010000L;
 
     /**
      * Pickup mode: all weapons.
      */
-    public static final long PU_ALLWEAPON = 0x00020000L;
+    public static final long PU_ALL_WEAPON = 0x00020000L;
 
     /**
      * Pickup mode: magical items.
@@ -180,7 +180,7 @@ public class Pickup {
     /**
      * Pickup mode: enable newpickup mode.
      */
-    public static final long PU_NEWMODE = 0x80000000L;
+    public static final long PU_NEW_MODE = 0x80000000L;
 
     /**
      * All pickup options.
@@ -235,8 +235,8 @@ public class Pickup {
         optionManager.addOption("pickup_gloves", "Pickup mode: gloves", newPickupOption(PU_GLOVES, "<html>Picks up gloves."));
         optionManager.addOption("pickup_cloak", "Pickup mode: cloaks", newPickupOption(PU_CLOAK, "<html>Picks up cloaks."));
         optionManager.addOption("pickup_key", "Pickup mode: keys", newPickupOption(PU_KEY, "<html>Picks up keys."));
-        optionManager.addOption("pickup_missileweapon", "Pickup mode: missile weapons", newPickupOption(PU_MISSILEWEAPON, "<html>Picks up missile weapons."));
-        optionManager.addOption("pickup_allweapon", "Pickup mode: all weapons", newPickupOption(PU_ALLWEAPON, "<html>Picks up all weapons."));
+        optionManager.addOption("pickup_missile_weapon", "Pickup mode: missile weapons", newPickupOption(PU_MISSILE_WEAPON, "<html>Picks up missile weapons."));
+        optionManager.addOption("pickup_all_weapon", "Pickup mode: all weapons", newPickupOption(PU_ALL_WEAPON, "<html>Picks up all weapons."));
         optionManager.addOption("pickup_magical", "Pickup mode: magical items", newPickupOption(PU_MAGICAL, "<html>Picks up magical items."));
         optionManager.addOption("pickup_potion", "Pickup mode: potions", newPickupOption(PU_POTION, "<html>Picks up potions."));
         optionManager.addOption("pickup_spellbook", "Pickup mode: spellbooks", newPickupOption(PU_SPELLBOOK, "<html>Picks up spellbooks and prayer books."));
@@ -308,7 +308,7 @@ public class Pickup {
      * has changed.
      */
     public void update() {
-        commandQueue.sendNcom(true, 1, "pickup "+((pickupMode == PU_NOTHING ? 0 : (pickupMode|PU_NEWMODE))&0xFFFFFFFFL));
+        commandQueue.sendNcom(true, 1, "pickup "+((pickupMode == PU_NOTHING ? 0 : (pickupMode|PU_NEW_MODE))&0xFFFFFFFFL));
         for (final PickupOption pickupOption : pickupOptions) {
             pickupOption.setPickupMode(pickupMode);
         }

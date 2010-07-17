@@ -41,7 +41,7 @@ public enum Sounds {
     public static final String POISON_ON = "poison_on";
 
     /**
-     * The sound to play when the character gets unpoisoned.
+     * The sound to play when the character gets un-poisoned.
      */
     @NotNull
     public static final String POISON_OFF = "poison_off";

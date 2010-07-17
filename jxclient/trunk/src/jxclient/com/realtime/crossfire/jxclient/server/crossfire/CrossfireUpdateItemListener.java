@@ -55,11 +55,11 @@ public interface CrossfireUpdateItemListener {
      * @param nrof the number of items
      * @param type the item's type
      */
-    void additemReceived(int location, int tag, int flags, int weight, int faceNum, @NotNull String name, @NotNull String namePl, int anim, int animSpeed, int nrof, int type);
+    void addItemReceived(int location, int tag, int flags, int weight, int faceNum, @NotNull String name, @NotNull String namePl, int anim, int animSpeed, int nrof, int type);
 
     /**
      * A "player" command has been received.
-     * @param tag the player's taqg
+     * @param tag the player's taq
      * @param weight the player's weight
      * @param faceNum the player's face ID
      * @param name the player's name

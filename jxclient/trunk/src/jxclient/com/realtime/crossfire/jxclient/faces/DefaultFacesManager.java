@@ -28,7 +28,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Retrieves {@link Face} information by face ID. If a face is not available
  * in-memory, an "unknown" (question mark) face is returned immediately.
- * Asynchonously, the face is loaded from the file cache. If loading fails, the
+ * Asynchronously, the face is loaded from the file cache. If loading fails, the
  * face is requested from the server (and later stored into the file cache). As
  * soon as the face becomes available, all registered {@link
  * FacesManagerListener}s are notified.

@@ -56,7 +56,7 @@ public enum ClientSocketState {
     /**
      * The client is connected, and account information is being exchanged.
      */
-    ACCOUNTINFO,
+    ACCOUNT_INFO,
 
     /**
      * Connection is fully established.

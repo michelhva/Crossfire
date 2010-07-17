@@ -120,7 +120,7 @@ public class CfMapPatch {
      * Sets the map square containing the head face for a layer.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
-     * @param layer the layer for the new head face betweem <code>0</code> and
+     * @param layer the layer for the new head face between <code>0</code> and
      * <code>LAYERS-1</code>
      * @param mapSquare the map square containing the head face; may be
      * <code>null</code>

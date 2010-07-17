@@ -137,14 +137,14 @@ public class CharacterModel {
      * Finishes an update transaction.
      */
     public void commit() {
-        final int oldMetalistSize;
-        final int newMetalistSize;
+        final int oldMetaListSize;
+        final int newMetaListSize;
         synchronized (sync) {
-            oldMetalistSize = characters.size();
+            oldMetaListSize = characters.size();
             characters.clear();
             characters.addAll(charactersPending);
             Collections.sort(characters);
-            newMetalistSize = characters.size();
+            newMetaListSize = characters.size();
         }
         charactersPending.clear();
 
@@ -152,7 +152,7 @@ public class CharacterModel {
             characterListener.numberOfItemsChanged();
         }
 
-        for (int i = 0, imax = Math.max(oldMetalistSize, newMetalistSize); i < imax; i++) {
+        for (int i = 0, iMax = Math.max(oldMetaListSize, newMetaListSize); i < iMax; i++) {
             for (final CharacterInformationListener metaserverEntryListener : getMetaserverEntryListeners(i)) {
                 metaserverEntryListener.informationChanged();
             }

@@ -69,30 +69,30 @@ public class GUILabelStats extends GUIOneLineLabel {
 
         /** {@inheritDoc} */
         @Override
-        public void statChanged(final int statnr, final int value) {
+        public void statChanged(final int statNo, final int value) {
             switch (stat) {
             case CrossfireStatsListener.CS_STAT_SPEED:
-                if (stat == statnr) {
+                if (stat == statNo) {
                     setText(Formatter.formatFloat(stats.getFloatStat(stat), 2));
                 }
                 break;
 
             case CrossfireStatsListener.CS_STAT_WEAP_SP:
-                if (stat == statnr) {
+                if (stat == statNo) {
                     setText(Formatter.formatFloat(stats.getWeaponSpeed(), 2));
                 }
                 break;
 
             case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
             case CrossfireStatsListener.C_STAT_WEIGHT:
-                if (stat == statnr) {
+                if (stat == statNo) {
                     setText(Formatter.formatFloat(((value+50)/100)/10.0, 1));
                     setTooltipText(Formatter.formatFloat(value/1000.0, 3)+"kg");
                 }
                 break;
 
             default:
-                if (stat == statnr) {
+                if (stat == statNo) {
                     setText(String.valueOf(value));
                 }
                 break;

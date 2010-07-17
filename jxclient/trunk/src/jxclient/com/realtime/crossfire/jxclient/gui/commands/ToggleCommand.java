@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link GUICommand} which toggles the visiblity of a target {@link
+ * A {@link GUICommand} which toggles the visibility of a target {@link
  * GUIElement}.
  * @author Andreas Kirschbaum
  */

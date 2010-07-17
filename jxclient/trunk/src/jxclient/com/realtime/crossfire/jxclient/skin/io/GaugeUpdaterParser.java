@@ -34,7 +34,7 @@ import java.io.IOException;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Creates {@link GaugeUpdater} instances from strig representations.
+ * Creates {@link GaugeUpdater} instances from string representations.
  * @author Andreas Kirschbaum
  */
 public class GaugeUpdaterParser {

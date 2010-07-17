@@ -26,8 +26,8 @@
 <li>Multiple files that define the layout of different screens (like server selection or playing) as well as dialogs (like skills, options, help, quit). These are simple text files using the same format as the global file.</li>
 <li>Resource files:
 <ul>
-<li>fonts: all displayed text is rendered using these fonts. No external fonts are referenced. Fonts use the <code>.ttf</code> file format and are stored in the <code>fonts</code> subdirectory.</li>
-<li>pictures: all displayed images (that is not retrieved from a Crossfire server) use these pictures. Pictures are encoded using the <code>.png</code> file format and are stored in the <code>pictures</code> subdirectory. GUI elements using <code>&lt;picture&gt;</code> access the file <code>pictures/&lt;picture&gt;.png</code>.</li>
+<li>fonts: all displayed text is rendered using these fonts. No external fonts are referenced. Fonts use the <code>.ttf</code> file format and are stored in the <code>fonts</code> sub-directory.</li>
+<li>pictures: all displayed images (that is not retrieved from a Crossfire server) use these pictures. Pictures are encoded using the <code>.png</code> file format and are stored in the <code>pictures</code> sub-directory. GUI elements using <code>&lt;picture&gt;</code> access the file <code>pictures/&lt;picture&gt;.png</code>.</li>
 </ul></li>
 </ul>
 
@@ -102,7 +102,7 @@
 
 <p>Commands start with one or two keywords and optionally have arguments. Keywords and arguments are separated by spaces or TABs. Arguments may be quoted with <code>&quot;</code> or <code>'</code> characters to allow embedded spaces or TABs.</p>
 
-<p>Some commands do not require quoting but combine multiple arguments into a single argument. These arguments are marked with a trailing <code>&quot;...&quot;</code>, for example <code>&lt;text...&gt;</code>. These arguments support mult-line strings using following syntax:</p>
+<p>Some commands do not require quoting but combine multiple arguments into a single argument. These arguments are marked with a trailing <code>&quot;...&quot;</code>, for example <code>&lt;text...&gt;</code>. These arguments support multi-line strings using following syntax:</p>
 <pre>
     label_multi [...] &lt;&lt;EOF
     first line
@@ -515,7 +515,7 @@ adds the GUI element &quot;first&quot;, then all defined GUI elements except &qu
 <li>&lt;selected-item-name&gt; the name of a label to display information about the selected item. Can be set to <code>null</code> if no information should be displayed.</li>
 </ul>
 
-<h3>hide_input: instrucs a text field to display entered text as <code>*</code></h3>
+<h3>hide_input: instructs a text field to display entered text as <code>*</code></h3>
 
 <p>syntax:</p>
 <pre>
@@ -1014,7 +1014,7 @@ Displays a spell known by the character.
 
 <p>The following macros are supported:</p>
 <ul>
-<li><code>&lt;&lt;to_reply&gt;&gt;</code>: the name of the last character that sent us a <code>/tell</code> command. Using a key binding like <code>/bind -e tell &lt;&lt;to_reply&gt;&gt;</code> is preferrable to <code>/bind -e reply</code> as it explicitly includes the destination character name. Using <code>/reply</code> the message may be sent to an unwanted character if someone talks to you at the wrong time, i.e., just before you finish typing and submit the command.</li>
+<li><code>&lt;&lt;to_reply&gt;&gt;</code>: the name of the last character that sent us a <code>/tell</code> command. Using a key binding like <code>/bind -e tell &lt;&lt;to_reply&gt;&gt;</code> is preferable to <code>/bind -e reply</code> as it explicitly includes the destination character name. Using <code>/reply</code> the message may be sent to an unwanted character if someone talks to you at the wrong time, i.e., just before you finish typing and submit the command.</li>
 </ul>
 
 <h3><a name="command_types">Command Types</a></h3>
@@ -1088,7 +1088,7 @@ Displays a spell known by the character.
 <li><code>LOWFOOD</code>: whether the character is low on food. 0=not low on food, 1=low on food.</li>
 <li><code>POISONED</code>: whether the character is poisoned. 0=not poisoned, 1=poisoned.</li>
 <li><code>POW</code>: the power.</li>
-<li><code>POW_APLIED</code>: the power resulting from applied gear or skills.</li>
+<li><code>POW_APPLIED</code>: the power resulting from applied gear or skills.</li>
 <li><code>POW_BASE</code>: the base power.</li>
 <li><code>POW_RACE</code>: the power limit.</li>
 <li><code>RANGE</code>: the ranged skill.</li>
@@ -1124,7 +1124,7 @@ Displays a spell known by the character.
 <li><code>WIS_APPLIED</code>: the wisdom resulting from applied gear or skills.</li>
 <li><code>WIS_BASE</code>: the base wisdom.</li>
 <li><code>WIS_RACE</code>: the wisdom limit.</li>
-<li><code>WSPEED</code>: the weapon speed.</li>
+<li><code>WEAPON_SPEED</code>: the weapon speed.</li>
 </ul>
 <p>Most constants correspond to the constants <code>CS_STAT_xyz</code> defined in <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/server/trunk/include/shared/newclient.h">the Crossfire server</a>.</p>
 
@@ -1149,8 +1149,8 @@ Displays a spell known by the character.
 <li><code>pickup_gloves</code></li>
 <li><code>pickup_cloak</code></li>
 <li><code>pickup_key</code></li>
-<li><code>pickup_missileweapon</code></li>
-<li><code>pickup_allweapon</code></li>
+<li><code>pickup_missile_weapon</code></li>
+<li><code>pickup_all_weapon</code></li>
 <li><code>pickup_magical</code></li>
 <li><code>pickup_potion</code></li>
 <li><code>pickup_spellbook</code></li>
@@ -1209,7 +1209,7 @@ Displays a spell known by the character.
 <p>Add the command-line option <code>--debug-gui</code> to enable GUI related debug information:</p>
 <ul>
 <li>The GUI element that contains the mouse will be highlighted and its name will be printed into the top left corner of the screen.</li>
-<li>The time needed for repainting the screen will be printed into the top left corder of the screen.</li>
+<li>The time needed for repainting the screen will be printed into the top left corner of the screen.</li>
 </ul>
 <p>Note: this option also works for built-in skins.</p>
 

@@ -31,18 +31,18 @@ public class OrientationSN extends AbstractOrientation {
      * Creates a new instance.
      */
     public OrientationSN() {
-        recalc();
+        reCalculate();
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    protected void recalc() {
+    protected void reCalculate() {
         final int height = getHeight();
         final int cur = getCur();
         final int min = getMin();
-        final int h = calc(isNegativeImage() ? min-cur : cur-min, getMax()-min, height);
+        final int h = calculate(isNegativeImage() ? min-cur : cur-min, getMax()-min, height);
         setExtent(0, height-h, getWidth(), h);
     }
 

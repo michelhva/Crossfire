@@ -30,7 +30,7 @@ import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapListener;
-import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
+import com.realtime.crossfire.jxclient.mapupdater.MapScrollListener;
 import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
@@ -224,10 +224,10 @@ public abstract class AbstractGUIMap extends GUIElement {
     };
 
     /**
-     * The {@link MapscrollListener} registered to receive map_scroll commands.
+     * The {@link MapScrollListener} registered to receive map_scroll commands.
      */
     @NotNull
-    private final MapscrollListener mapscrollListener = new MapscrollListener() {
+    private final MapScrollListener mapscrollListener = new MapScrollListener() {
         /** {@inheritDoc} */
         @Override
         public void mapScrolled(final int dx, final int dy) {
@@ -274,7 +274,7 @@ public abstract class AbstractGUIMap extends GUIElement {
         this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
         this.mapUpdater.addCrossfireMapListener(mapListener);
         this.mapUpdater.addCrossfireNewmapListener(newmapListener);
-        this.mapUpdater.addCrossfireMapscrollListener(mapscrollListener);
+        this.mapUpdater.addCrossfireMapScrollListener(mapscrollListener);
         setMapSize(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
     }
 
@@ -286,7 +286,7 @@ public abstract class AbstractGUIMap extends GUIElement {
         super.dispose();
         crossfireServerConnection.removeMapSizeListener(mapSizeListener);
         mapUpdater.removeCrossfireNewmapListener(newmapListener);
-        mapUpdater.removeCrossfireMapscrollListener(mapscrollListener);
+        mapUpdater.removeCrossfireMapScrollListener(mapscrollListener);
         mapUpdater.removeCrossfireMapListener(mapListener);
     }
 

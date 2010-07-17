@@ -33,7 +33,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Abstrct base class for labels that render text.
+ * Abstract base class for labels that render text.
  * @author Andreas Kirschbaum
  */
 public abstract class GUILabel extends AbstractLabel {
@@ -100,7 +100,7 @@ public abstract class GUILabel extends AbstractLabel {
     /**
      * Draw one line of text.
      * @param g The graphics to paint to.
-     * @param y0 The y-ccordinate to draw to.
+     * @param y0 The y-coordinate to draw to.
      * @param h0 The line height.
      * @param text The text to draw.
      * @return The line height.
@@ -113,23 +113,23 @@ public abstract class GUILabel extends AbstractLabel {
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.setFont(textFont);
         g.setColor(getTextColor());
-        final RectangularShape rect = textFont.getStringBounds(text, g.getFontRenderContext());
-        final int y = y0+(int)Math.round((h0-rect.getMaxY()-rect.getMinY()))/2;
+        final RectangularShape rectangle = textFont.getStringBounds(text, g.getFontRenderContext());
+        final int y = y0+(int)Math.round((h0-rectangle.getMaxY()-rectangle.getMinY()))/2;
         switch (textAlignment) {
         case LEFT:
             g.drawString(text, 0, y);
             break;
 
         case CENTER:
-            g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), y);
+            g.drawString(text, (int)Math.round((getWidth()-rectangle.getWidth())/2), y);
             break;
 
         case RIGHT:
-            g.drawString(text, (int)Math.round(getWidth()-rect.getWidth()), y);
+            g.drawString(text, (int)Math.round(getWidth()-rectangle.getWidth()), y);
             break;
         }
 
-        return (int)(rect.getHeight()+0.5);
+        return (int)(rectangle.getHeight()+0.5);
     }
 
     /**

@@ -45,7 +45,7 @@ public interface ItemSetListener extends EventListener {
 
     /**
      * A {@link CfItem}'s attributes have been changed.
-     * @param item the changeditem
+     * @param item the changed item
      */
     void itemChanged(@NotNull CfItem item);
 

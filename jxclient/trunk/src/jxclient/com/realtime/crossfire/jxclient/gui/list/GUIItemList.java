@@ -334,7 +334,7 @@ public class GUIItemList extends GUIList {
         }
 
         if (item.isLocked()) {
-            crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
+            crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+left-clicking on it.", 3);
         } else {
             commandQueue.sendMove(itemItemFactory.getMoveLocation(), item.getTag());
         }

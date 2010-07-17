@@ -27,7 +27,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Information about jxclient's screen/window resolution. It consists of a size
+ * Information about JXClient's screen/window resolution. It consists of a size
  * (width and height) and whether the exact resolution should be used, or if a
  * similar resolution is allowed.
  * @author Andreas Kirschbaum

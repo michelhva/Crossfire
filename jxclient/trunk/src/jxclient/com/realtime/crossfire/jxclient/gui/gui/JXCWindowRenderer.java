@@ -170,7 +170,7 @@ public class JXCWindowRenderer {
     private volatile boolean inhibitPaintMapUpdate = false;
 
     /**
-     * If set, do not repaint anything. It it set while the main widnow is
+     * If set, do not repaint anything. It it set while the main window is
      * iconified.
      */
     private volatile boolean inhibitPaintIconified = false;

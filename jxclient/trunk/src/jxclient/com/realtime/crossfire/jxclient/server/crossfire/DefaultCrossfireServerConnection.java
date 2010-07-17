@@ -1866,14 +1866,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @return the command string
      */
     private static String extractCommand(@NotNull final ByteBuffer packet) {
-        int cmdlen;
-        for (cmdlen = 0; cmdlen < packet.limit(); cmdlen++) {
-            final byte ch = packet.get(cmdlen);
+        int cmdLen;
+        for (cmdLen = 0; cmdLen < packet.limit(); cmdLen++) {
+            final byte ch = packet.get(cmdLen);
             if ((ch&0xFF) <= 0x20 || (ch&0xFF) >= 0x80) {
                 break;
             }
         }
-        return newString(packet, 0, cmdlen);
+        return newString(packet, 0, cmdLen);
     }
 
     /**
@@ -1898,7 +1898,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 break;
 
             case Map2.COORD_DARKNESS:
-                cmdpMap2CoordinateDarkness(packet, x, y, len);
+                cmdMap2CoordinateDarkness(packet, x, y, len);
                 break;
 
             case Map2.COORD_LAYER0:
@@ -1919,7 +1919,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /**
      * Processes the payload data for a map2 coordinate "clear_space"
-     * subcommand.
+     * sub-command.
      * @param x the x-coordinate of the currently processed square
      * @param y the y-coordinate of the currently processed square
      * @param len the payload length
@@ -1938,14 +1938,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Processes the payload data for a map2 coordinate "darkness" subcommand.
+     * Processes the payload data for a map2 coordinate "darkness" sub-command.
      * @param packet the packet contents
      * @param x the x-coordinate of the currently processed square
      * @param y the y-coordinate of the currently processed square
      * @param len the payload length
      * @throws UnknownCommandException if the command cannot be parsed
      */
-    private void cmdpMap2CoordinateDarkness(@NotNull final ByteBuffer packet, final int x, final int y, final int len) throws UnknownCommandException {
+    private void cmdMap2CoordinateDarkness(@NotNull final ByteBuffer packet, final int x, final int y, final int len) throws UnknownCommandException {
         if (len != 1) {
             throw new UnknownCommandException("map2 command contains darkness command with length "+len);
         }
@@ -1959,7 +1959,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Processes the payload data for a map2 coordinate "layer" subcommand.
+     * Processes the payload data for a map2 coordinate "layer" sub-command.
      * @param packet the packet contents
      * @param x the x-coordinate of the currently processed square
      * @param y the y-coordinate of the currently processed square
@@ -2001,7 +2001,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /**
      * Processes the additional payload data for a map2 coordinate "layer"
-     * subcommand having 4 bytes payload.
+     * sub-command having 4 bytes payload.
      * @param packet the packet contents
      * @param face the face number
      * @param x the x-coordinate of the currently processed square
@@ -2033,7 +2033,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /**
      * Processes the additional payload data for a map2 coordinate "layer"
-     * subcommand having 4 bytes payload.
+     * sub-command having 4 bytes payload.
      * @param packet the packet contents
      * @param face the face number
      * @param x the x-coordinate of the currently processed square
@@ -2161,7 +2161,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (info == null) {
                         throw new IOException("Truncated parameter in image_info");
                     }
-                    final int nrpics = Integer.parseInt(info);
+                    final int nrPics = Integer.parseInt(info);
                     // XXX: replyinfo image_info not implemented
                 } finally {
                     d.close();
@@ -2253,7 +2253,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ADDME);
             sendAddme();
         } else {
-            setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ACCOUNTINFO);
+            setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ACCOUNT_INFO);
             for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
                 crossfireAccountListener.manageAccount();
             }
@@ -2276,7 +2276,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         while (count > 0) {
 
             String name = "";
-            String cclass = "";
+            String cClass = "";
             String race = "";
             String face = "";
             String party = "";
@@ -2295,7 +2295,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     count--;
 
                     for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
-                        crossfireAccountListener.addAccount(name, cclass, race, face, party, map, level, faceNumber);
+                        crossfireAccountListener.addAccount(name, cClass, race, face, party, map, level, faceNumber);
                     }
                     break;
                 }
@@ -2310,9 +2310,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     }
                     break;
                 case ACL_CLASS:
-                    cclass = getString(packet, len-1);
+                    cClass = getString(packet, len-1);
                     if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers class="+cclass);
+                        debugProtocol.debugProtocolWrite("recv accountplayers class="+cClass);
                     }
                     break;
                 case ACL_RACE:
@@ -2382,7 +2382,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private void processAddmeFailed(@NotNull final ByteBuffer packet) {
         final int args = packet.position();
         // XXX: addme_failed command not implemented
-        notifyPacketWatcherListenersNodata(packet, args);
+        notifyPacketWatcherListenersNoData(packet, args);
     }
 
     /**
@@ -2396,16 +2396,16 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             if (clientSocketState == ClientSocketState.ADDME) {
                 /* servers without account support */
                 setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
-            } else if (clientSocketState == ClientSocketState.ACCOUNTINFO) {
+            } else if (clientSocketState == ClientSocketState.ACCOUNT_INFO) {
                 for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
                     crossfireAccountListener.startPlaying();
                 }
-                setClientSocketState(ClientSocketState.ACCOUNTINFO, ClientSocketState.CONNECTED);
+                setClientSocketState(ClientSocketState.ACCOUNT_INFO, ClientSocketState.CONNECTED);
             }
             negotiateMapSize(preferredMapWidth, preferredMapHeight);
         }
 
-        notifyPacketWatcherListenersNodata(packet, args);
+        notifyPacketWatcherListenersNoData(packet, args);
     }
 
     /**
@@ -2634,7 +2634,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             }
             // XXX: ExtendedInfoSet command not implemented
         } while (packet.hasRemaining());
-        notifyPacketWatcherListenersNodata(packet, args);
+        notifyPacketWatcherListenersNoData(packet, args);
     }
 
     /**
@@ -2658,7 +2658,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             }
             packet.get();
         }
-        notifyPacketWatcherListenersNodata(packet, args);
+        notifyPacketWatcherListenersNoData(packet, args);
     }
 
     /**
@@ -2719,7 +2719,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             debugProtocol.debugProtocolWrite("recv goodbye");
         }
         // XXX: goodbye command not implemented
-        notifyPacketWatcherListenersNodata(packet, args);
+        notifyPacketWatcherListenersNoData(packet, args);
     }
 
     /**
@@ -2771,7 +2771,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 debugProtocol.debugProtocolWrite("recv item2 location="+location+" tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type);
             }
             for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
-                crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
+                crossfireUpdateItemListener.addItemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
             }
         }
         if (packet.hasRemaining()) {
@@ -2951,7 +2951,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             debugProtocol.debugProtocolWrite("recv newmap");
         }
         fireNewMap();
-        notifyPacketWatcherListenersNodata(packet, args);
+        notifyPacketWatcherListenersNoData(packet, args);
     }
 
     /**
@@ -3240,13 +3240,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void processSmooth(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
-        final int facenbr = getInt2(packet);
-        final int smoothpic = getInt2(packet);
+        final int faceNo = getInt2(packet);
+        final int smoothPic = getInt2(packet);
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("excess data at end of smooth command");
         }
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv smooth face="+facenbr+" smoothpic="+smoothpic);
+            debugProtocol.debugProtocolWrite("recv smooth face="+faceNo+" smooth_pic="+smoothPic);
         }
         // XXX: smooth command not implemented
         notifyPacketWatcherListenersShortArray(packet, args);
@@ -3670,7 +3670,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     @Override
     public void sendLookat(final int dx, final int dy) {
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("send lockat pos="+dx+"/"+dy);
+            debugProtocol.debugProtocolWrite("send lookat pos="+dx+"/"+dy);
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
@@ -3892,7 +3892,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Sets the current map size as negotiated with the server.
      * @param currentMapWidth the new map width
-     * @param currentMapHeight the new map hieght
+     * @param currentMapHeight the new map height
      */
     private void setCurrentMapSize(final int currentMapWidth, final int currentMapHeight) {
         if (this.currentMapWidth == currentMapWidth && this.currentMapHeight == currentMapHeight) {
@@ -4100,13 +4100,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param args the start index into <code>packet</code> of the packet's
      * arguments
      */
-    private void notifyPacketWatcherListenersNodata(@NotNull final ByteBuffer packet, final int args) {
+    private void notifyPacketWatcherListenersNoData(@NotNull final ByteBuffer packet, final int args) {
         if (!receivedPacketListeners.isEmpty()) {
             final String command = extractCommand(packet);
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
                 for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners) {
                     packet.position(args);
-                    receivedPacketListener.processNodata(command, packet);
+                    receivedPacketListener.processNoData(command, packet);
                 }
             } else {
                 notifyPacketWatcherListenersEmpty(command);

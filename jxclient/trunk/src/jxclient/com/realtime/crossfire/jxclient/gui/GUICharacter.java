@@ -37,7 +37,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * A character displayer GUI element.
+ * A character displaying GUI element.
  * @author Nicolas Weeger
  */
 public class GUICharacter extends ActivatableGUIElement implements GUIScrollable {

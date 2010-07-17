@@ -107,7 +107,7 @@ public class CfMapUpdater {
      * The listeners to notify about scrolled maps.
      */
     @NotNull
-    private final Collection<MapscrollListener> mapscrollListeners = new ArrayList<MapscrollListener>();
+    private final Collection<MapScrollListener> mapScrollListeners = new ArrayList<MapScrollListener>();
 
     /**
      * Collects the changed map squares between calls to {@link
@@ -344,16 +344,16 @@ public class CfMapUpdater {
      * Adds a listener to notify about scrolled maps.
      * @param listener the listener to add
      */
-    public void addCrossfireMapscrollListener(@NotNull final MapscrollListener listener) {
-        mapscrollListeners.add(listener);
+    public void addCrossfireMapScrollListener(@NotNull final MapScrollListener listener) {
+        mapScrollListeners.add(listener);
     }
 
     /**
      * Removes a listener to notify about scrolled maps.
      * @param listener the listener to remove
      */
-    public void removeCrossfireMapscrollListener(@NotNull final MapscrollListener listener) {
-        mapscrollListeners.remove(listener);
+    public void removeCrossfireMapScrollListener(@NotNull final MapScrollListener listener) {
+        mapScrollListeners.remove(listener);
     }
 
     /**
@@ -543,7 +543,7 @@ public class CfMapUpdater {
                 visibleAnimations.scroll(dx, dy);
             }
 
-            for (final MapscrollListener mapscrollListener : mapscrollListeners) {
+            for (final MapScrollListener mapscrollListener : mapScrollListeners) {
                 mapscrollListener.mapScrolled(dx, dy);
             }
             processMapEnd(false);

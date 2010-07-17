@@ -39,7 +39,7 @@ public class Line implements Iterable<Segment> {
 
     /**
      * The segments this line consists of. The first segment should be displayed
-     * first; subsequent segments are to be displyed without padding.
+     * first; subsequent segments are to be displayed without padding.
      */
     @NotNull
     private final List<Segment> segments = new ArrayList<Segment>();

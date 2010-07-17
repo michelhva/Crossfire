@@ -301,7 +301,7 @@ public abstract class GUIElement extends JComponent {
 
     /**
      * Will be called when the user has released the mouse. This event may be
-     * deleivered even if no previous {@link #mousePressed(MouseEvent)} has been
+     * delivered even if no previous {@link #mousePressed(MouseEvent)} has been
      * delivered before.
      * @param e The mouse event relative to this element.
      */
@@ -320,7 +320,7 @@ public abstract class GUIElement extends JComponent {
      * button is pressed. This event will be delivered after {@link
      * #mouseMoved(MouseEvent)}.
      * <p/>
-     * <p>Note: if the mouse leaves this elements's bounding box while the mouse
+     * <p>Note: if the mouse leaves this element's bounding box while the mouse
      * button is still pressed, further <code>mouseDragged</code> (but no
      * <code>mouseMoved</code>) events will be generated.
      * @param e The mouse event relative to this element.
@@ -452,10 +452,10 @@ public abstract class GUIElement extends JComponent {
      * Allocates {@link #bufferedImage} with the element's current size.
      */
     private void createBuffer() {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        bufferedImage = gconf.createCompatibleImage(getWidth(), getHeight(), transparency);
+        final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
+        final GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
+        bufferedImage = graphicsConfiguration.createCompatibleImage(getWidth(), getHeight(), transparency);
     }
 
     /**
@@ -473,8 +473,8 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Paint the elements's contents into the passed graphics.
-     * @param g The gaphics to paint to.
+     * Paint the element's contents into the passed graphics.
+     * @param g the graphics to paint to
      */
     protected abstract void render(@NotNull final Graphics2D g);
 

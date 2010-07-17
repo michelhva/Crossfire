@@ -194,12 +194,12 @@ public class ParserTest extends TestCase {
         }
 
         final Rec rec = new Rec();
-        rec.parser.parse("first\n[b]second\nth[/b]ird[i]\nfourth", null, rec.buffer);
+        rec.parser.parse("first\n[b]second\nth[/b]ird[i]\n"+"fourth", null, rec.buffer);
         rec.checkResult(""+"buffer:\n"+"line:\n"+"segment:first\n"+"line:\n"+"segment:(bold)second\n"+"line:\n"+"segment:(bold)th\n"+"segment:ird\n"+"line:\n"+"segment:(italic)fourth\n");
     }
 
     /**
-     * Checks that an un-closed tag is dopped.
+     * Checks that an un-closed tag is dropped.
      */
     public void testDropUnClosedTag() {
         if (GraphicsEnvironment.isHeadless()) {
@@ -232,10 +232,10 @@ public class ParserTest extends TestCase {
          * Creates a new instance.
          */
         private Rec() {
-            final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            final GraphicsDevice gd = ge.getDefaultScreenDevice();
-            final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            final BufferedImage image = gconf.createCompatibleImage(1, 1, Transparency.TRANSLUCENT);
+            final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+            final GraphicsDevice graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
+            final GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
+            final BufferedImage image = graphicsConfiguration.createCompatibleImage(1, 1, Transparency.TRANSLUCENT);
             final Graphics2D g = image.createGraphics();
             parser = new Parser();
             final Font font;

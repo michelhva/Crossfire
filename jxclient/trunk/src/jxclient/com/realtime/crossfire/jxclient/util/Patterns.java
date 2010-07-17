@@ -30,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
 public class Patterns {
 
     /**
-     * The pattern to split a command from argments, and to split arguments.
+     * The pattern to split a command from arguments, and to split arguments.
      */
     @NotNull
     public static final Pattern PATTERN_WHITESPACE = Pattern.compile(" +");

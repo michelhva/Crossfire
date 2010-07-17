@@ -85,6 +85,6 @@ public interface ReceivedPacketListener {
      * @param command the command string
      * @param packet the buffer holding the packet
      */
-    void processNodata(@NotNull String command, @NotNull ByteBuffer packet);
+    void processNoData(@NotNull String command, @NotNull ByteBuffer packet);
 
 }

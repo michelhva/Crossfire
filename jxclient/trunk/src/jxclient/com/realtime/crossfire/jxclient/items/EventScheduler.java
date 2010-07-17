@@ -36,7 +36,7 @@ import org.jetbrains.annotations.NotNull;
 public class EventScheduler {
 
     /**
-     * The delay beween a call to {@link #trigger()} until the {@link
+     * The delay between a call to {@link #trigger()} until the {@link
      * #eventSchedulerCallback} is notified.
      */
     private final int delay;

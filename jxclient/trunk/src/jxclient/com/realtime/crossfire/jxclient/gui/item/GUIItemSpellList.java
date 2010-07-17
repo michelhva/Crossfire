@@ -39,7 +39,7 @@ import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class GUIItemSpelllist extends GUIItem {
+public class GUIItemSpellList extends GUIItem {
 
     /**
      * The serial version UID.
@@ -85,12 +85,12 @@ public class GUIItemSpelllist extends GUIItem {
     private final CurrentSpellManager currentSpellManager;
 
     /**
-     * The spelllist's width in pixel.
+     * The spell list's width in pixel.
      */
     private final int w;
 
     /**
-     * The spelllist's height in pixel.
+     * The spell list's height in pixel.
      */
     private final int h;
 
@@ -107,7 +107,7 @@ public class GUIItemSpelllist extends GUIItem {
         /** {@inheritDoc} */
         @Override
         public void spellAdded(@NotNull final Spell spell, final int index) {
-            if (GUIItemSpelllist.this.index >= index) {
+            if (GUIItemSpellList.this.index >= index) {
                 setSpell();
             }
         }
@@ -115,7 +115,7 @@ public class GUIItemSpelllist extends GUIItem {
         /** {@inheritDoc} */
         @Override
         public void spellRemoved(@NotNull final Spell spell, final int index) {
-            if (GUIItemSpelllist.this.index >= index) {
+            if (GUIItemSpellList.this.index >= index) {
                 setSpell();
             }
         }
@@ -151,7 +151,7 @@ public class GUIItemSpelllist extends GUIItem {
      * Creates a new instance.
      * @param extent the extent of this element
      */
-    public GUIItemSpelllist(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final Extent extent, @Nullable final Color selectorColor, @Nullable final Image selectorImage, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager) {
+    public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final Extent extent, @Nullable final Color selectorColor, @Nullable final Image selectorImage, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager) {
         super(tooltipManager, elementListener, name, extent);
         this.commandQueue = commandQueue;
         this.facesManager = facesManager;

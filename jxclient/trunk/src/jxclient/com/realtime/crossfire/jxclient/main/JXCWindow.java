@@ -123,11 +123,11 @@ public class JXCWindow extends JFrame {
     /**
      * The {@link WindowFocusListener} registered for this window. It resets the
      * keyboard modifier state when the window loses the focus. The idea is to
-     * prevent the following: user switches from jxclient to another window with
-     * CTRL+ALT+direction key. This makes jxclient enter RUN mode since CTRL was
-     * pressed. The following key release event is not received by jxclient
-     * because it does not own the focus. Therefore jxclient's CTRL state is
-     * still active when the user switches back to jxclient. A following
+     * prevent the following: user switches from JXClient to another window with
+     * CTRL+ALT+direction key. This makes JXClient enter RUN mode since CTRL was
+     * pressed. The following key release event is not received by JXClient
+     * because it does not own the focus. Therefore JXClient's CTRL state is
+     * still active when the user switches back to JXClient. A following
      * direction key then causes the character to run which is not what the
      * player wants.
      */
@@ -167,7 +167,7 @@ public class JXCWindow extends JFrame {
          * {@inheritDoc}
          */
         @Override
-        public void additemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
+        public void addItemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
             // ignore
         }
 

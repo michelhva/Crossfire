@@ -223,7 +223,7 @@ public abstract class GUIItemItem extends GUIItem {
 
     /**
      * Returns the slot index.
-     * @return the slot tindex
+     * @return the slot index
      */
     public abstract int getIndex();
 

@@ -31,7 +31,7 @@ public interface CrossfireExpTableListener {
 
     /**
      * An "replyinfo exp_table" command has been received.
-     * @param expTable the experience table; the array smust not be modified
+     * @param expTable the experience table; the array must not be modified
      */
     void expTableReceived(@NotNull long[] expTable);
 

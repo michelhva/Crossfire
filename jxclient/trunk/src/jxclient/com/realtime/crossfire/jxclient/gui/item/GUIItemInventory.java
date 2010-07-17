@@ -243,7 +243,7 @@ public class GUIItemInventory extends GUIItemItem {
         }
 
         if (item.isLocked()) {
-            crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
+            crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+left-clicking on it.", 3);
             return;
         }
 

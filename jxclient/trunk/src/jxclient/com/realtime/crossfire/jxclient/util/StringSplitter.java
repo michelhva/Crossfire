@@ -42,7 +42,7 @@ public class StringSplitter {
     private static final int MAXIMUM_LINE_LENGTH = 80;
 
     /**
-     * Private constructor to prevent instantation.
+     * Private constructor to prevent instantiation.
      */
     private StringSplitter() {
     }

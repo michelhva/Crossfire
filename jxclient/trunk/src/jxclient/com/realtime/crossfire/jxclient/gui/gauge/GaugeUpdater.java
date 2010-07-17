@@ -109,7 +109,7 @@ public abstract class GaugeUpdater {
     }
 
     /**
-     * Return the experience needed to reach nextlevel.
+     * Return the experience needed to reach next level.
      * @param level The level.
      * @param experience The experience.
      * @return The needed experience.

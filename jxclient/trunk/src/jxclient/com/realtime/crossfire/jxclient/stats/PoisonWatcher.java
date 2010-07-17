@@ -39,9 +39,9 @@ public class PoisonWatcher {
 
     /**
      * Timeout after that the "poisoned" state is reset. This allow to prevent a
-     * stuck poison warning if the deassertion was missed for any reason.
+     * stuck poison warning if the de-assertion was missed for any reason.
      */
-    private static final int TIMEOUT_DEASSERT = 10000;
+    private static final int TIMEOUT_DE_ASSERT = 10000;
 
     /**
      * The text message the server sends in poisoned state.
@@ -53,7 +53,7 @@ public class PoisonWatcher {
      * The text message the server sends when the poison wears off.
      */
     @NotNull
-    private static final String DEASSERT_MESSAGE = "You feel much better now.";
+    private static final String DE_ASSERT_MESSAGE = "You feel much better now.";
 
     /**
      * The object used for synchronization.
@@ -97,7 +97,7 @@ public class PoisonWatcher {
     };
 
     /**
-     * The timeout event used to turn off poisoning if the deassert message was
+     * The timeout event used to turn off poisoning if the de-assert message was
      * missed.
      */
     @NotNull
@@ -128,7 +128,7 @@ public class PoisonWatcher {
     private void check(@NotNull final String message) {
         if (message.equals(ASSERT_MESSAGE)) {
             setActive(true);
-        } else if (message.equals(DEASSERT_MESSAGE)) {
+        } else if (message.equals(DE_ASSERT_MESSAGE)) {
             setActive(false);
         }
     }
@@ -140,7 +140,7 @@ public class PoisonWatcher {
     private void setActive(final boolean active) {
         synchronized (sync) {
             if (active) {
-                Timeouts.reset(TIMEOUT_DEASSERT, timeoutEvent);
+                Timeouts.reset(TIMEOUT_DE_ASSERT, timeoutEvent);
             } else {
                 Timeouts.remove(timeoutEvent);
             }

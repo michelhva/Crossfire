@@ -28,7 +28,7 @@ package com.realtime.crossfire.jxclient.gui.scrollable;
 public interface ScrollableListener {
 
     /**
-     * Sets the scoll range.
+     * Sets the scroll range.
      * @param valueMin The minimum scroll value.
      * @param valueMax The maximum scroll value.
      * @param sliderPos The scroll location; it need not within the scroll

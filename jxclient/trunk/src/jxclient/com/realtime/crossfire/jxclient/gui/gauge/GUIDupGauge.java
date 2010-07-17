@@ -139,7 +139,7 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
     }
 
     /**
-     * Validates an images's size: checks if the given image has the given size
+     * Validates an image's size: checks if the given image has the given size
      * (in pixels).
      * @param image the image to validate; if set to <code>null</code> no
      * exception is thrown

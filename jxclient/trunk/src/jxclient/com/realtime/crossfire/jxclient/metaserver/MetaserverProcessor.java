@@ -101,7 +101,7 @@ public class MetaserverProcessor {
                         final long now = System.currentTimeMillis();
                         if (nextQuery <= now) {
                             nextQuery = now+MIN_UPDATE_INTERVAL;
-                            metaserver.updateMetalist();
+                            metaserver.updateMetaList();
                         }
                     }
                 }

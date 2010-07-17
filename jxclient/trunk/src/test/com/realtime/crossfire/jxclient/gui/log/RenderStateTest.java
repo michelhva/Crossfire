@@ -198,10 +198,10 @@ public class RenderStateTest extends TestCase {
          * Creates a new instance.
          */
         private Rec() {
-            final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            final GraphicsDevice gd = ge.getDefaultScreenDevice();
-            final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            final BufferedImage image = gconf.createCompatibleImage(1, 1, Transparency.TRANSLUCENT);
+            final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+            final GraphicsDevice graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
+            final GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
+            final BufferedImage image = graphicsConfiguration.createCompatibleImage(1, 1, Transparency.TRANSLUCENT);
             final Graphics2D g = image.createGraphics();
             final Font font;
             try {

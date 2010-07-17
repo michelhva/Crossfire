@@ -151,7 +151,7 @@ public class PacketWatcher {
 
         /** {@inheritDoc} */
         @Override
-        public void processNodata(@NotNull final String command, @NotNull final ByteBuffer packet) {
+        public void processNoData(@NotNull final String command, @NotNull final ByteBuffer packet) {
             processMixed(command, packet);
         }
 

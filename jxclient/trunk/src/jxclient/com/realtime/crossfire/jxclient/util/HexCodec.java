@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.util;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Utilit class for en-/decoding hexadecimal strings.
+ * Utility class for en-/decoding hexadecimal strings.
  * @author Andreas Kirschbaum
  */
 public class HexCodec {
@@ -52,7 +52,7 @@ public class HexCodec {
     }
 
     /**
-     * Append a given value as a foure digits hexadecimal number.
+     * Append a given value as a four digits hexadecimal number.
      * @param sb the <code>StringBuilder</code> to append to
      * @param value the value to append
      */

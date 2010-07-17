@@ -53,7 +53,7 @@ public enum CommandType {
         @Override
         protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
             if (item.isLocked()) {
-                crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
+                crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+left-clicking on it.", 3);
             } else {
                 commandQueue.sendMove(floor, item.getTag());
             }

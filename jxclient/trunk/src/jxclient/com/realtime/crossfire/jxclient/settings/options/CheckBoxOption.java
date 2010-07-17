@@ -79,7 +79,7 @@ public abstract class CheckBoxOption extends Option {
 
     /**
      * Execute the action associated with this check box option. Must be
-     * implemented in subsclasses.
+     * implemented in sub-classes.
      * @param checked whether the check box option is checked
      */
     protected abstract void execute(final boolean checked);

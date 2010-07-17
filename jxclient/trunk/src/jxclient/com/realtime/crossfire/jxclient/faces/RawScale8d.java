@@ -26,7 +26,7 @@ import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Scales down a raw image to an eigth in both dimensions.
+ * Scales down a raw image to an eighth in both dimensions.
  * @author Andreas Kirschbaum
  */
 public class RawScale8d {

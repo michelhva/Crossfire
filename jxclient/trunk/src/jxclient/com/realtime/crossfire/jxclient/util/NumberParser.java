@@ -25,7 +25,7 @@ import java.io.IOException;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Utitlity class for parsing strings into numbers.
+ * Utility class for parsing strings into numbers.
  * @author Andreas Kirschbaum
  */
 public class NumberParser {

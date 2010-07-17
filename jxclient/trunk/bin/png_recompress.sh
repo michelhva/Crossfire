@@ -18,7 +18,7 @@
 #
 # This script recompressess .png files using optipng and
 # advpng to get the smallest images. All recompression is
-# looseless.
+# lossless.
 #
 # This script needs at least bash 3.1, bash 3.x or 2.x will not work.
 # (Note that it was only tested on bash 3.2.17 or later though.)
@@ -35,7 +35,7 @@ fail_old_bash() {
 	echo "Sorry your bash version is too old!"
 	echo "You need at least version 3.1 of bash."
 	echo "Please install a newer version:"
-	echo " * Either use your distro's packages."
+	echo " * Either use your distribution's packages."
 	echo " * Or see http://www.gnu.org/software/bash/"
 	exit 2
 }
@@ -165,7 +165,7 @@ if ! hash advpng > /dev/null 2>&1; then
 	echo "Please install it or, if it is already installed add the"
 	echo "directory it is in to PATH and try again."
 	echo "Homepage of this tool is: http://advancemame.sourceforge.net/comp-readme.html"
-	echo "Hint: For package name in your distro, try looking for \"advancecomp\" if"
+	echo "Hint: For package name in your distribution, try looking for \"advancecomp\" if"
 	echo "there is no \"advpng\"."
 	die 2
 fi

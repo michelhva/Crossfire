@@ -30,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Manages all sounds. Each sound has a sound type ({@link Sounds}) atatched.
+ * Manages all sounds. Each sound has a sound type ({@link Sounds}) attached.
  * Sound types can be disabled (by the user) or muted (by the application). A
  * sound is played only if it is neither disabled nor muted.
  * @author Andreas Kirschbaum

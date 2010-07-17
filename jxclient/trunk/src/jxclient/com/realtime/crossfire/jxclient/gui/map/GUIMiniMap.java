@@ -100,7 +100,7 @@ public class GUIMiniMap extends AbstractGUIMap {
     }
 
     /**
-     * The {@link CrossfireMagicmapListener} registered to receive mapgicmap
+     * The {@link CrossfireMagicmapListener} registered to receive magicmap
      * commands.
      */
     @NotNull

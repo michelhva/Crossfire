@@ -83,8 +83,8 @@ public class StatsWatcher {
 
         /** {@inheritDoc} */
         @Override
-        public void statChanged(final int statnr, final int value) {
-            checkStats(statnr, value);
+        public void statChanged(final int statNo, final int value) {
+            checkStats(statNo, value);
         }
 
         /** {@inheritDoc} */
@@ -163,7 +163,7 @@ public class StatsWatcher {
          * {@inheritDoc}
          */
         @Override
-        public void additemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
+        public void addItemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
             // ignore
         }
 
@@ -204,11 +204,11 @@ public class StatsWatcher {
 
     /**
      * Check for changed stats and generate sound effects.
-     * @param statnr the changed stat number
+     * @param statNo the changed stat number
      * @param value the new stat value
      */
-    private void checkStats(final int statnr, final int value) {
-        if (statnr == CrossfireStatsListener.C_STAT_POISONED) {
+    private void checkStats(final int statNo, final int value) {
+        if (statNo == CrossfireStatsListener.C_STAT_POISONED) {
             final boolean newPoisoned = value != 0;
             if (poisoned != newPoisoned) {
                 poisoned = newPoisoned;
@@ -216,7 +216,7 @@ public class StatsWatcher {
                     playClip(newPoisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
                 }
             }
-        } else if (statnr == CrossfireStatsListener.CS_STAT_LEVEL) {
+        } else if (statNo == CrossfireStatsListener.CS_STAT_LEVEL) {
             final int newLevel = value;
             if (level != newLevel) {
                 if (ignoreLevelChange != 0 && ignoreLevelChange <= System.currentTimeMillis()) {

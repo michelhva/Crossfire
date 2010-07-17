@@ -105,8 +105,8 @@ public class GUITextGauge extends GUIGauge {
         g.setColor(color);
         g.setFont(font);
         final String text = labelText;
-        final RectangularShape rect = font.getStringBounds(text, g.getFontRenderContext());
-        g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2);
+        final RectangularShape rectangle = font.getStringBounds(text, g.getFontRenderContext());
+        g.drawString(text, (int)Math.round((getWidth()-rectangle.getWidth())/2), (int)Math.round((getHeight()-rectangle.getMaxY()-rectangle.getMinY()))/2);
     }
 
     /**

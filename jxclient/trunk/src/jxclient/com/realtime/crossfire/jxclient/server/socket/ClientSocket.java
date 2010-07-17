@@ -88,7 +88,7 @@ public class ClientSocket {
     private boolean reconnect = true;
 
     /**
-     * Only vaid if {@link #reconnect} is set.
+     * Only valid if {@link #reconnect} is set.
      */
     @NotNull
     private String reconnectReason = "disconnect";
