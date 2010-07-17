@@ -24,3 +24,4 @@ textbutton account_do_login 40 150 140 18 false command_account_do_link Link
 textbutton account_cancel_login 220 150 140 18 false command_account_cancel_link Cancel
 
 hide_input character_password
+set_default account_do_login

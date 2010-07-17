@@ -12,3 +12,5 @@ label_text information 30 20 340 32 font_label BLACK Please select an operation.
 textbutton account_create 25 70 100 18 false command_account_create Create
 textbutton account_login 150 70 100 18 false command_account_login Login
 textbutton account_quit 275 70 100 18 false command_disconnect Disconnect
+
+set_default account_login

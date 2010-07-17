@@ -24,3 +24,7 @@ textbutton account_do_login 40 150 140 18 false command_account_do_login Login
 textbutton account_cancel_login 220 150 140 18 false command_account_cancel_login Cancel
 
 hide_input account_password
+set_default account_login
+
+commandlist_add command_null account_password SCROLLNEXT account_do_login
+commandlist_add command_null account_login SCROLLNEXT account_password
