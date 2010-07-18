@@ -183,12 +183,12 @@ public class JXClient {
                             final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
                             final Shortcuts shortcuts = new Shortcuts(commandQueue, spellsManager);
 
+                            final Exiter exiter = new Exiter();
                             final JXCWindow[] window = new JXCWindow[1];
                             SwingUtilities.invokeAndWait(new Runnable() {
                                 /** {@inheritDoc} */
                                 @Override
                                 public void run() {
-                                    final Object semaphoreDrawing = new Object();
                                     final TooltipManager tooltipManager = new TooltipManager();
                                     final Pickup characterPickup;
                                     try {
@@ -196,13 +196,13 @@ public class JXClient {
                                     } catch (final OptionException ex) {
                                         throw new AssertionError();
                                     }
-                                    final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback();
+                                    final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter);
                                     final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
                                     final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
                                     final Settings settings = options.getSettings();
                                     final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
                                     final GuiFactory guiFactory = new GuiFactory(options.isDebugGui() ? mouseTracker : null, commands, commandCallback, macros);
-                                    final GuiManager guiManager = new GuiManager(guiStateManager, semaphoreDrawing, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
+                                    final GuiManager guiManager = new GuiManager(guiStateManager, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                     commandCallback.init(guiManager, server);
                                     final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
                                     final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
@@ -211,9 +211,10 @@ public class JXClient {
                                     new PlayerNameTracker(guiStateManager, connection, itemSet);
                                     new PickupTracker(guiStateManager, server, characterPickup);
                                     new OutputCountTracker(guiStateManager, server, commandQueue);
-                                    final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(guiManager, server, guiStateManager);
+                                    final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, guiStateManager);
                                     final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
-                                    window[0] = new JXCWindow(server, optionManager, guiStateManager, windowRenderer, commandQueue, semaphoreDrawing, guiManager, keyHandler, characterModel);
+                                    window[0] = new JXCWindow(exiter, server, optionManager, guiStateManager, windowRenderer, commandQueue, guiManager, keyHandler, characterModel);
+
                                     connection.init(window[0]);
                                     window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
                                     keybindingsManager.loadKeybindings();
@@ -223,10 +224,9 @@ public class JXClient {
                                     } else {
                                         guiStateManager.changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
                                     }
-                                    guiManager.init();
                                 }
                             });
-                            window[0].waitForTermination();
+                            exiter.waitForTermination();
                             SwingUtilities.invokeAndWait(new Runnable() {
                                 /** {@inheritDoc} */
                                 @Override

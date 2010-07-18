@@ -37,6 +37,12 @@ import org.jetbrains.annotations.Nullable;
 public class GuiManagerCommandCallback implements CommandCallback {
 
     /**
+     * The {@link Exiter} instance.
+     */
+    @NotNull
+    private final Exiter exiter;
+
+    /**
      * The {@link GuiManager} to forward to.
      */
     @NotNull
@@ -57,6 +63,14 @@ public class GuiManagerCommandCallback implements CommandCallback {
 
     /**
      * Creates a new instance.
+     * @param exiter the exiter instance
+     */
+    public GuiManagerCommandCallback(@NotNull final Exiter exiter) {
+        this.exiter = exiter;
+    }
+
+    /**
+     * Creates a new instance.
      * @param guiManager the gui manager to forward to
      * @param server the crossfire server connection for sending commands
      */
@@ -71,7 +85,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      */
     @Override
     public void quitApplication() {
-        guiManager.terminate();
+        exiter.terminate();
     }
 
     /**

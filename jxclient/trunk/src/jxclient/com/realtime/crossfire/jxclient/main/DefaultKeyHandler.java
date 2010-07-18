@@ -38,6 +38,12 @@ import org.jetbrains.annotations.NotNull;
 public class DefaultKeyHandler implements KeyHandlerListener {
 
     /**
+     * The {@link Exiter} instance.
+     */
+    @NotNull
+    private final Exiter exiter;
+
+    /**
      * The {@link GuiManager} instance.
      */
     @NotNull
@@ -105,11 +111,13 @@ public class DefaultKeyHandler implements KeyHandlerListener {
 
     /**
      * Creates a new instance.
+     * @param exiter the exter instance
      * @param guiManager the gui manager instance
      * @param server the server connection to track
      * @param guiStateManager the gui state manager instance
      */
-    public DefaultKeyHandler(@NotNull final GuiManager guiManager, @NotNull final ServerConnection server, @NotNull final GuiStateManager guiStateManager) {
+    public DefaultKeyHandler(@NotNull final Exiter exiter, @NotNull final GuiManager guiManager, @NotNull final ServerConnection server, @NotNull final GuiStateManager guiStateManager) {
+        this.exiter = exiter;
         this.guiManager = guiManager;
         this.guiStateManager = guiStateManager;
         server.addClientSocketListener(clientSocketListener);
@@ -134,7 +142,7 @@ public class DefaultKeyHandler implements KeyHandlerListener {
             break;
 
         case 2:
-            guiManager.terminate();
+            exiter.terminate();
             break;
         }
     }

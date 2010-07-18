@@ -43,9 +43,6 @@ import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.Timer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -54,18 +51,6 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class GuiManager {
-
-    /**
-     * The semaphore used to synchronized drawing operations.
-     */
-    @NotNull
-    private final Object semaphoreDrawing;
-
-    /**
-     * The object to be notified when the application terminates.
-     */
-    @NotNull
-    private final Object terminateSync = new Object();
 
     /**
      * The currently active skin. Set to <code>null</code> if no skin is set.
@@ -159,26 +144,6 @@ public class GuiManager {
      */
     @NotNull
     private final CrossfireServerConnection server;
-
-    /**
-     * Called periodically to update the display contents.
-     */
-    @NotNull
-    private final ActionListener actionListener = new ActionListener() {
-        /** {@inheritDoc} */
-        @Override
-        public void actionPerformed(final ActionEvent e) {
-            synchronized (semaphoreDrawing) {
-                windowRenderer.redrawGUI();
-            }
-        }
-    };
-
-    /**
-     * The timer used to update the display contents.
-     */
-    @NotNull
-    private final Timer timer = new Timer(10, actionListener);
 
     /**
      * The {@link CrossfireDrawextinfoListener} attached to {@link #server}.
@@ -333,7 +298,6 @@ public class GuiManager {
     /**
      * Creates a new instance.
      * @param guiStateManager the gui state manager to watch
-     * @param semaphoreDrawing the semaphore to use for drawing operations
      * @param tooltipManager the tooltip manager to update
      * @param settings the settings to use
      * @param server the crossfire server connection to monitor
@@ -342,8 +306,7 @@ public class GuiManager {
      * @param keybindingsManager the keybindings manager to use
      * @param connection the connection to use
      */
-    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GuiFactory guiFactory, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection) {
-        this.semaphoreDrawing = semaphoreDrawing;
+    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GuiFactory guiFactory, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection) {
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         this.server = server;
@@ -579,28 +542,6 @@ public class GuiManager {
     }
 
     /**
-     * Terminates the application.
-     */
-    public void terminate() {
-        timer.stop();
-        synchronized (terminateSync) {
-            //noinspection NakedNotify
-            terminateSync.notifyAll();
-        }
-    }
-
-    /**
-     * Waits until the window has been disposed.
-     * @throws InterruptedException if the current thread has been interrupted
-     */
-    public void waitForTermination() throws InterruptedException {
-        synchronized (terminateSync) {
-            //noinspection UnconditionalWait,WaitNotInLoop
-            terminateSync.wait();
-        }
-    }
-
-    /**
      * Closes all transient dialogs: disconnect, quit, connect, query, and book
      * dialogs.
      */
@@ -636,13 +577,6 @@ public class GuiManager {
                 metaElementList.setSelectedHostname(serverName);
             }
         }
-    }
-
-    /**
-     * Finishes construction.
-     */
-    public void init() {
-        timer.start();
     }
 
     /**

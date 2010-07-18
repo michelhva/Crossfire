@@ -45,6 +45,8 @@ import com.realtime.crossfire.jxclient.window.KeyHandler;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import java.awt.event.KeyEvent;
@@ -55,6 +57,7 @@ import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
 import java.io.IOException;
 import javax.swing.JFrame;
+import javax.swing.Timer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -74,6 +77,12 @@ public class JXCWindow extends JFrame {
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
+
+    /**
+     * The {@link Exiter} to use.
+     */
+    @NotNull
+    private final Exiter exiter;
 
     /**
      * The {@link GuiManager} for controlling the main GUI state.
@@ -103,7 +112,7 @@ public class JXCWindow extends JFrame {
      * The semaphore for drawing the window contents.
      */
     @NotNull
-    private final Object semaphoreDrawing;
+    private final Object semaphoreDrawing = new Object();
 
     /**
      * The {@link KeyHandler} for processing keyboard input.
@@ -119,6 +128,26 @@ public class JXCWindow extends JFrame {
 
     @NotNull
     private final CharacterModel characterModel;
+
+    /**
+     * Called periodically to update the display contents.
+     */
+    @NotNull
+    private final ActionListener actionListener = new ActionListener() {
+        /** {@inheritDoc} */
+        @Override
+        public void actionPerformed(final ActionEvent e) {
+            synchronized (semaphoreDrawing) {
+                windowRenderer.redrawGUI();
+            }
+        }
+    };
+
+    /**
+     * The timer used to update the display contents.
+     */
+    @NotNull
+    private final Timer timer = new Timer(10, actionListener);
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets the
@@ -198,7 +227,7 @@ public class JXCWindow extends JFrame {
         @Override
         public void windowClosing(@NotNull final WindowEvent e) {
             if (!guiManager.openQuitDialog()) {
-                guiManager.terminate();
+                exiter.terminate();
             }
         }
 
@@ -206,7 +235,7 @@ public class JXCWindow extends JFrame {
         @Override
         public void windowClosed(@NotNull final WindowEvent e) {
             if (!isVisible()) {
-                guiManager.terminate();
+                exiter.terminate();
             }
         }
 
@@ -280,7 +309,7 @@ public class JXCWindow extends JFrame {
             server.removeCrossfireQueryListener(crossfireQueryListener);
             server.removeCrossfireUpdateItemListener(crossfireUpdateItemListener);
             if (DISABLE_START_GUI) {
-                guiManager.terminate();
+                exiter.terminate();
             }
         }
 
@@ -387,22 +416,22 @@ public class JXCWindow extends JFrame {
 
     /**
      * Creates a new instance.
+     * @param exiter the exiter to use
      * @param server the crossfire server connection to use
      * @param optionManager the option manager instance to use
      * @param guiStateManager the gui state manager to use
      * @param windowRenderer the window renderer to use
      * @param commandQueue the command queue instance
-     * @param semaphoreDrawing the semaphore for drawing window contents
      * @param guiManager the gui manager instance
      * @param keyHandler the key handler for keyboard input
      */
-    public JXCWindow(@NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final GuiManager guiManager, @NotNull final KeyHandler keyHandler, @NotNull final CharacterModel characterModel) {
+    public JXCWindow(@NotNull final Exiter exiter, @NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final GuiManager guiManager, @NotNull final KeyHandler keyHandler, @NotNull final CharacterModel characterModel) {
         super("");
+        this.exiter = exiter;
         this.server = server;
         this.optionManager = optionManager;
         this.windowRenderer = windowRenderer;
         this.commandQueue = commandQueue;
-        this.semaphoreDrawing = semaphoreDrawing;
         this.guiManager = guiManager;
         this.keyHandler = keyHandler;
         this.characterModel = characterModel;
@@ -455,6 +484,8 @@ public class JXCWindow extends JFrame {
         server.addCrossfireAccountListener(accountListener);
         guiStateManager.addGuiStateListener(guiStateListener);
         addKeyListener(keyListener);
+
+        timer.start();
     }
 
     /**
@@ -516,16 +547,9 @@ public class JXCWindow extends JFrame {
      * Frees all resources. Should be called before the application terminates.
      */
     public void term() {
+        timer.stop();
         guiManager.term();
         optionManager.saveOptions();
-    }
-
-    /**
-     * Waits until the window has been disposed.
-     * @throws InterruptedException if the current thread has been interrupted
-     */
-    public void waitForTermination() throws InterruptedException {
-        guiManager.waitForTermination();
     }
 
     /**
