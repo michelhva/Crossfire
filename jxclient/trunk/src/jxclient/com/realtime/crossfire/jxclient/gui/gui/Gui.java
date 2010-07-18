@@ -104,10 +104,14 @@ public class Gui {
     private boolean hasChangedElements = false;
 
     /**
-     * The x-offset for drawing gui elements inside this gui. Set to
-     * <code>-1</code> if no initial position has been set.
+     * Whether an initial position has been set.
      */
-    private int x = -1;
+    private boolean initialPositionSet = false;
+
+    /**
+     * The x-offset for drawing gui elements inside this gui.
+     */
+    private int x = 0;
 
     /**
      * The y-offset for drawing gui elements inside this gui.
@@ -203,16 +207,17 @@ public class Gui {
      * @param y the y-coordinate
      */
     public void setPosition(final int x, final int y) {
-        if (this.x == x && this.y == y) {
+        if (initialPositionSet && this.x == x && this.y == y) {
             return;
         }
 
         if (w == 0 || h == 0) {
-            if (this.x >= 0 || x != 0 || y != 0) {
+            if (initialPositionSet || x != 0 || y != 0) {
                 throw new IllegalStateException();
             }
         }
 
+        initialPositionSet = true;
         this.x = x;
         this.y = y;
         hasChangedElements = true;
@@ -750,7 +755,7 @@ public class Gui {
      * @param screenHeight the screen height
      */
     public void autoSize(final int screenWidth, final int screenHeight) {
-        if (!autoSize && x >= 0) {
+        if (!autoSize && initialPositionSet) {
             return;
         }
 
@@ -758,7 +763,7 @@ public class Gui {
         if (tmpExtent != null) {
             setSize(tmpExtent.getW(screenWidth, screenHeight), tmpExtent.getH(screenWidth, screenHeight));
             setPosition(tmpExtent.getX(screenWidth, screenHeight), tmpExtent.getY(screenWidth, screenHeight));
-        } else if (x < 0) {
+        } else if (!initialPositionSet) {
             setPosition(0, 0);
         }
     }
