@@ -234,7 +234,7 @@ public class Gui extends Container {
      * more than one gui at a time.
      * @param element the <code>GUIElement</code> to add
      */
-    public void add(@NotNull final GUIElement element) {
+    public void addElement(@NotNull final GUIElement element) {
         if (element.getGui() != null) {
             throw new IllegalArgumentException();
         }
