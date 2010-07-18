@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Container;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.util.Collection;
@@ -46,7 +47,12 @@ import org.jetbrains.annotations.Nullable;
  * lower dialogs.
  * @author Andreas Kirschbaum
  */
-public class Gui {
+public class Gui extends Container {
+
+    /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1L;
 
     /**
      * The {@link MouseTracker} if in GUI debug mode or <code>null</code>
@@ -109,32 +115,6 @@ public class Gui {
     private boolean initialPositionSet = false;
 
     /**
-     * The x-offset for drawing gui elements inside this gui.
-     */
-    private int x = 0;
-
-    /**
-     * The y-offset for drawing gui elements inside this gui.
-     */
-    private int y = 0;
-
-    /**
-     * The width of the dialog.
-     */
-    private int w = 0;
-
-    /**
-     * The height of the dialog.
-     */
-    private int h = 0;
-
-    /**
-     * The name of the dialog, or <code>null</code>.
-     */
-    @Nullable
-    private String name = null;
-
-    /**
      * The extent of this dialog, or <code>null</code>.
      */
     @Nullable
@@ -166,14 +146,6 @@ public class Gui {
     }
 
     /**
-     * Sets the name of this dialog.
-     * @param name the name of the dialog
-     */
-    public void setName(@NotNull final String name) {
-        this.name = name;
-    }
-
-    /**
      * Sets the extent of this dialog.
      * @param extent the extent
      */
@@ -183,20 +155,20 @@ public class Gui {
 
     /**
      * Sets the size of this dialog. Marks this gui as a "dialog".
-     * @param w the width
-     * @param h the height
+     * @param width the width
+     * @param height the height
      */
-    public void setSize(final int w, final int h) {
-        if (w <= 0 || h <= 0) {
+    @Override
+    public void setSize(final int width, final int height) {
+        if (width <= 0 || height <= 0) {
             throw new IllegalArgumentException();
         }
 
-        if (this.w == w && this.h == h) {
+        if (getWidth() == width && getHeight() == height) {
             return;
         }
 
-        this.w = w;
-        this.h = h;
+        super.setSize(width, height);
         hasChangedElements = true;
         stateChanged = true;
     }
@@ -207,19 +179,18 @@ public class Gui {
      * @param y the y-coordinate
      */
     public void setPosition(final int x, final int y) {
-        if (initialPositionSet && this.x == x && this.y == y) {
+        if (initialPositionSet && getX() == x && getY() == y) {
             return;
         }
 
-        if (w == 0 || h == 0) {
+        if (getWidth() == 0 || getHeight() == 0) {
             if (initialPositionSet || x != 0 || y != 0) {
                 throw new IllegalStateException();
             }
         }
 
         initialPositionSet = true;
-        this.x = x;
-        this.y = y;
+        setLocation(x, y);
         hasChangedElements = true;
         stateChanged = true;
     }
@@ -604,47 +575,6 @@ public class Gui {
     }
 
     /**
-     * Returns the x-offset for drawing gui elements inside this gui.
-     * @return the x-offset
-     */
-    public int getX() {
-        return x;
-    }
-
-    /**
-     * Returns the y-offset for drawing gui elements inside this gui.
-     * @return the y-offset
-     */
-    public int getY() {
-        return y;
-    }
-
-    /**
-     * Returns the width of the dialog.
-     * @return the width, or <code>0</code> if this is not a dialog
-     */
-    public int getWidth() {
-        return w;
-    }
-
-    /**
-     * Returns the height of this dialog.
-     * @return the height, or <code>0</code> if this is not a dialog
-     */
-    public int getHeight() {
-        return h;
-    }
-
-    /**
-     * Returns the name of the dialog.
-     * @return the name, or <code>null</code> if this is not a dialog
-     */
-    @Nullable
-    public String getName() {
-        return name;
-    }
-
-    /**
      * Returns the key bindings instance for this gui.
      * @return the key bindings
      */
@@ -720,7 +650,7 @@ public class Gui {
      * @return whether the coordinate is within the drawing area
      */
     public boolean isWithinDrawingArea(final int x, final int y) {
-        return this.x <= x && x < this.x+w && this.y <= y && y < this.y+h;
+        return getX() <= x && x < getX()+getWidth() && getY() <= y && y < getY()+getHeight();
     }
 
     /**
@@ -728,7 +658,7 @@ public class Gui {
      * @return whether the state has changed
      */
     public boolean isChangedFromDefault() {
-        return name != null && w > 0 && h > 0 && stateChanged;
+        return getName() != null && getWidth() > 0 && getHeight() > 0 && stateChanged;
     }
 
     /**
@@ -746,7 +676,8 @@ public class Gui {
     @NotNull
     @Override
     public String toString() {
-        return (name == null ? "" : name)+"["+w+"x"+h+"]";
+        final String name = getName();
+        return (name == null ? "" : name)+"["+getWidth()+"x"+getHeight()+"]";
     }
 
     /**
