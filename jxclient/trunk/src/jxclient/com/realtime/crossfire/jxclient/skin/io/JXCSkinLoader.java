@@ -665,7 +665,7 @@ public class JXCSkinLoader {
                 if (element == null) {
                     break;
                 }
-                gui.add(element);
+                gui.addElement(element);
                 i++;
             }
             assert i < addedElements.size();
@@ -673,13 +673,13 @@ public class JXCSkinLoader {
         }
 
         for (final GUIElement element : wildcardElements.keySet()) {
-            gui.add(element);
+            gui.addElement(element);
         }
 
         while (i < addedElements.size()) {
             final GUIElement element = addedElements.get(i);
             if (element != null) {
-                gui.add(element);
+                gui.addElement(element);
             }
             i++;
         }
