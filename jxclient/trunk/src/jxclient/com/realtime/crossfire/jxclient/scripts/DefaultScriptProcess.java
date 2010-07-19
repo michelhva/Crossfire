@@ -102,7 +102,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      * The {@link SpellsManager} instance to use.
      */
     @NotNull
-    private final SpellsManager spellsManager;
+    private final Iterable<Spell> spellsManager;
 
     /**
      * The {@link CfMapUpdater} instance to use.
@@ -219,7 +219,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      * @param skillSet the skill set for looking up skill names
      * @throws IOException if the script cannot be created
      */
-    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final FloorView floorView, @NotNull final ItemSet itemSet, @NotNull final SpellsManager spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) throws IOException {
+    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final FloorView floorView, @NotNull final ItemSet itemSet, @NotNull final Iterable<Spell> spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) throws IOException {
         this.scriptId = scriptId;
         this.filename = filename;
         this.commandQueue = commandQueue;
