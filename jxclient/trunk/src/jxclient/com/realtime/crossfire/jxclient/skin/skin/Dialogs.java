@@ -88,7 +88,7 @@ public class Dialogs implements Iterable<Gui> {
             try {
                 dialogs.insert(name, gui);
             } catch (final JXCSkinException ex) {
-                throw new AssertionError();
+                throw new AssertionError(ex);
             }
             dialogsToLoad.add(name);
             return gui;

@@ -187,7 +187,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             try {
                 cmd = new String(buf, 0, len, "ISO-8859-1");
             } catch (final UnsupportedEncodingException ex) {
-                throw new AssertionError(); // will never happen: every JVM must implement ISO-8859-1
+                throw new AssertionError(ex); // will never happen: every JVM must implement ISO-8859-1
             }
             commandSent(cmd);
         }

@@ -107,7 +107,7 @@ public class ExpressionParser {
                 value = new Expression(value, negative, valueRest);
             }
         } catch (final NumberFormatException ex) {
-            throw new IOException("invalid number: "+str);
+            throw new IOException("invalid number: "+str, ex);
         }
 
         return value;

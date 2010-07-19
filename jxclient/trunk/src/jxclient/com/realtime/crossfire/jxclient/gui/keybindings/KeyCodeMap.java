@@ -87,7 +87,9 @@ public class KeyCodeMap {
         try {
             return Integer.parseInt(keyName);
         } catch (final NumberFormatException ex) {
-            throw new NoSuchKeyCodeException();
+            final NoSuchKeyCodeException noSuchKeyCodeException = new NoSuchKeyCodeException();
+            noSuchKeyCodeException.initCause(ex);
+            throw noSuchKeyCodeException;
         }
     }
 

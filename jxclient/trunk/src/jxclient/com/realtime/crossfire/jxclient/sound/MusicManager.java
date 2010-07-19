@@ -130,7 +130,7 @@ public class MusicManager {
             try {
                 thread.join();
             } catch (final InterruptedException ex) {
-                throw new AssertionError();
+                throw new AssertionError(ex);
             }
             thread = null;
         }

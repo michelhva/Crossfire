@@ -309,7 +309,9 @@ public class DefaultJXCSkin implements JXCSkin {
         try {
             return getDialog("keybind");
         } catch (final JXCSkinException ex) {
-            throw new AssertionError("keybind dialog does not exist");
+            final AssertionError error = new AssertionError("keybind dialog does not exist");
+            error.initCause(ex);
+            throw error;
         }
     }
 
@@ -322,7 +324,9 @@ public class DefaultJXCSkin implements JXCSkin {
         try {
             return getDialog("query");
         } catch (final JXCSkinException ex) {
-            throw new AssertionError("query dialog does not exist");
+            final AssertionError error = new AssertionError("query dialog does not exist");
+            error.initCause(ex);
+            throw error;
         }
     }
 
@@ -335,7 +339,9 @@ public class DefaultJXCSkin implements JXCSkin {
         try {
             return getDialog("book");
         } catch (final JXCSkinException ex) {
-            throw new AssertionError("book dialog does not exist");
+            final AssertionError error = new AssertionError("book dialog does not exist");
+            error.initCause(ex);
+            throw error;
         }
     }
 
@@ -348,7 +354,9 @@ public class DefaultJXCSkin implements JXCSkin {
         try {
             return getDialog("main");
         } catch (final JXCSkinException ex) {
-            throw new AssertionError("main dialog does not exist");
+            final AssertionError error = new AssertionError("main dialog does not exist");
+            error.initCause(ex);
+            throw error;
         }
     }
 
@@ -361,7 +369,9 @@ public class DefaultJXCSkin implements JXCSkin {
         try {
             return getDialog("meta");
         } catch (final JXCSkinException ex) {
-            throw new AssertionError("meta dialog does not exist");
+            final AssertionError error = new AssertionError("meta dialog does not exist");
+            error.initCause(ex);
+            throw error;
         }
     }
 
@@ -374,7 +384,9 @@ public class DefaultJXCSkin implements JXCSkin {
         try {
             return getDialog("start");
         } catch (final JXCSkinException ex) {
-            throw new AssertionError("start dialog does not exist");
+            final AssertionError error = new AssertionError("start dialog does not exist");
+            error.initCause(ex);
+            throw error;
         }
     }
 
