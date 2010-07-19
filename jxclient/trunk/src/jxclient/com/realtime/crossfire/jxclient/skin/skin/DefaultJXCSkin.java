@@ -269,7 +269,7 @@ public class DefaultJXCSkin implements JXCSkin {
     public Gui getDialogQuit() {
         try {
             return getDialog("quit");
-        } catch (final JXCSkinException ex) {
+        } catch (final JXCSkinException ignored) {
             return null;
         }
     }
@@ -282,7 +282,7 @@ public class DefaultJXCSkin implements JXCSkin {
     public Gui getDialogDisconnect() {
         try {
             return getDialog("disconnect");
-        } catch (final JXCSkinException ex) {
+        } catch (final JXCSkinException ignored) {
             return null;
         }
     }
@@ -295,7 +295,7 @@ public class DefaultJXCSkin implements JXCSkin {
     public Gui getDialogConnect() {
         try {
             return getDialog("connect");
-        } catch (final JXCSkinException ex) {
+        } catch (final JXCSkinException ignored) {
             return null;
         }
     }

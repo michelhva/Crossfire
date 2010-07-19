@@ -148,7 +148,7 @@ public class ServerCache {
                             final long timestamp;
                             try {
                                 timestamp = Long.parseLong(tmp[0]);
-                            } catch (final NumberFormatException ex) {
+                            } catch (final NumberFormatException ignored) {
                                 System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
                                 continue;
                             }
@@ -166,7 +166,7 @@ public class ServerCache {
             } finally {
                 fis.close();
             }
-        } catch (final FileNotFoundException ex) {
+        } catch (final FileNotFoundException ignored) {
             // add default entries if the cache files does not exist
             final long now = System.currentTimeMillis()-1;
             addEntry(DEFAULT_ENTRY_LOCALHOST, now);

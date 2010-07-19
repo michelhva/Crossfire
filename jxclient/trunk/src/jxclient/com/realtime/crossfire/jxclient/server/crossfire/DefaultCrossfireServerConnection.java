@@ -2206,7 +2206,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         final int skillId;
                         try {
                             skillId = Integer.parseInt(sk[0]);
-                        } catch (final NumberFormatException ex) {
+                        } catch (final NumberFormatException ignored) {
                             System.err.println("Ignoring skill definition for invalid skill: "+r+".");
                             continue;
                         }
@@ -3120,7 +3120,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 try {
                     thisMapWidth = Integer.parseInt(tmp[0]);
                     thisMapHeight = Integer.parseInt(tmp[1]);
-                } catch (final NumberFormatException ex) {
+                } catch (final NumberFormatException ignored) {
                     throw new UnknownCommandException("the server returned 'setup mapsize "+value+"'.");
                 }
                 if (pendingMapWidth == 0 || pendingMapHeight == 0) {
@@ -3185,7 +3185,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     final int thisNumLookObjects;
                     try {
                         thisNumLookObjects = Integer.parseInt(value);
-                    } catch (final NumberFormatException ex) {
+                    } catch (final NumberFormatException ignored) {
                         throw new UnknownCommandException("the server returned 'setup num_look_objects "+value+"'.");
                     }
                     if (pendingNumLookObjects == 0) {
@@ -3214,7 +3214,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 final int method;
                 try {
                     method = Integer.parseInt(value);
-                } catch (final NumberFormatException ex) {
+                } catch (final NumberFormatException ignored) {
                     throw new UnknownCommandException("the server returned 'setup loginmethod "+value+"'.");
                 }
                 loginMethod = method;

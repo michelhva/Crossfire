@@ -504,7 +504,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             final int x;
             try {
                 x = Integer.parseInt(tmp[1]);
-            } catch (final NumberFormatException ex) {
+            } catch (final NumberFormatException ignored) {
                 reportError("syntax error: request "+params);
                 return;
             }
@@ -512,7 +512,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             final int y;
             try {
                 y = Integer.parseInt(tmp[2]);
-            } catch (final NumberFormatException ex) {
+            } catch (final NumberFormatException ignored) {
                 reportError("syntax error: request "+params);
                 return;
             }
@@ -544,7 +544,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         final int tag;
         try {
             tag = Integer.parseInt(params);
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             reportError("syntax error: issue mark "+params);
             return;
         }
@@ -566,7 +566,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         try {
             val = Integer.parseInt(tmp[0]);
             tag = Integer.parseInt(tmp[1]);
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             reportError("syntax error: issue lock "+params);
             return;
         }
@@ -592,7 +592,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         try {
             repeat = Integer.parseInt(pps[0]);
             tmp = Integer.parseInt(pps[1]);
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             reportError("syntax error: issue "+params);
             return;
         }
@@ -618,7 +618,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         final int color;
         try {
             color = Integer.parseInt(pps[0]);
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             reportError("syntax error: draw "+params);
             return;
         }

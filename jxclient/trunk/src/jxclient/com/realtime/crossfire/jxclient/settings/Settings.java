@@ -91,7 +91,7 @@ public class Settings {
         final String value = getString(key, Boolean.toString(defaultValue));
         try {
             return Boolean.parseBoolean(value);
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             return defaultValue;
         }
     }
@@ -225,7 +225,7 @@ public class Settings {
             } finally {
                 fis.close();
             }
-        } catch (final FileNotFoundException ex) {
+        } catch (final FileNotFoundException ignored) {
             // ignore
         } catch (final IOException ex) {
             System.err.println(file+": "+ex.getMessage());

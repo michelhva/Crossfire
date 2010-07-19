@@ -217,7 +217,7 @@ public class MessageBufferUpdater {
     private Color findColor(final int index) {
         try {
             return colors[index];
-        } catch (final ArrayIndexOutOfBoundsException ex) {
+        } catch (final ArrayIndexOutOfBoundsException ignored) {
             return defaultColor;
         }
     }
@@ -231,7 +231,7 @@ public class MessageBufferUpdater {
     public static String getColorName(final int index) {
         try {
             return COLOR_NAMES[index];
-        } catch (final ArrayIndexOutOfBoundsException ex) {
+        } catch (final ArrayIndexOutOfBoundsException ignored) {
             return "undefined";
         }
     }

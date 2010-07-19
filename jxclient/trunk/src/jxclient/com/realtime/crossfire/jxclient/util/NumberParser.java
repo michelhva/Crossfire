@@ -45,7 +45,7 @@ public class NumberParser {
     public static int parseInt(@NotNull final String string, final int defaultValue) {
         try {
             return Integer.parseInt(string);
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             System.err.println("Warning: invalid value "+string+", using "+defaultValue+" instead.");
             return defaultValue;
         }
@@ -79,7 +79,7 @@ public class NumberParser {
     public static long parseLong(@NotNull final String string, final long defaultValue) {
         try {
             return Long.parseLong(string);
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             System.err.println("Warning: invalid value "+string+", using "+defaultValue+" instead.");
             return defaultValue;
         }

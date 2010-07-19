@@ -441,7 +441,7 @@ public class JXCSkinLoader {
             InputStream inputStream;
             try {
                 inputStream = skinSource.getInputStream(resourceName);
-            } catch (final IOException ex) {
+            } catch (final IOException ignored) {
                 resourceName = dialogName+".skin";
                 inputStream = skinSource.getInputStream(resourceName);
             }

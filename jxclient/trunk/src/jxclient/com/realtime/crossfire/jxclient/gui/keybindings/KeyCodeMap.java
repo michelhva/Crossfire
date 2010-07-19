@@ -54,15 +54,15 @@ public class KeyCodeMap {
                 final int keyCode;
                 try {
                     keyCode = field.getInt(null);
-                } catch (final SecurityException ex) {
+                } catch (final SecurityException ignored) {
                     continue;
-                } catch (final IllegalArgumentException ex) {
+                } catch (final IllegalArgumentException ignored) {
                     continue;
-                } catch (final IllegalAccessException ex) {
+                } catch (final IllegalAccessException ignored) {
                     continue;
-                } catch (final NullPointerException ex) {
+                } catch (final NullPointerException ignored) {
                     continue;
-                } catch (final ExceptionInInitializerError ex) {
+                } catch (final ExceptionInInitializerError ignored) {
                     continue;
                 }
                 final String keyName = field.getName().substring(3);

@@ -83,11 +83,11 @@ public class Dialogs implements Iterable<Gui> {
     public Gui addDialog(@NotNull final String name) {
         try {
             return dialogs.lookup(name);
-        } catch (final JXCSkinException ex) {
+        } catch (final JXCSkinException ignored) {
             final Gui gui = guiFactory.newGui();
             try {
                 dialogs.insert(name, gui);
-            } catch (final JXCSkinException ex2) {
+            } catch (final JXCSkinException ex) {
                 throw new AssertionError();
             }
             dialogsToLoad.add(name);

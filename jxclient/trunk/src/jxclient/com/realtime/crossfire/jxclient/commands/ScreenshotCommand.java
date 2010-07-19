@@ -107,8 +107,7 @@ public class ScreenshotCommand extends AbstractCommand {
         } catch (final IOException ex) {
             drawInfoError("Cannot write screenshot "+file.getPath()+": "+ex.getMessage());
             return;
-        } catch (final NullPointerException ex) // ImageIO.write() crashes if the destination cannot be written to
-        {
+        } catch (final NullPointerException ignored) { // ImageIO.write() crashes if the destination cannot be written to
             drawInfoError("Cannot write screenshot "+file.getPath());
             return;
         }

@@ -73,7 +73,7 @@ public class Resolution {
         try {
             width = Integer.parseInt(tmp[0]);
             height = Integer.parseInt(tmp[1]);
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             return null;
         }
 

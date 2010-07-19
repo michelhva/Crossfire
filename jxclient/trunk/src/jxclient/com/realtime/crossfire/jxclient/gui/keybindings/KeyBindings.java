@@ -214,7 +214,7 @@ public class KeyBindings {
             } finally {
                 fis.close();
             }
-        } catch (final FileNotFoundException ex) {
+        } catch (final FileNotFoundException ignored) {
             // no error message
             keybindings.clear();
         } catch (final IOException ex) {

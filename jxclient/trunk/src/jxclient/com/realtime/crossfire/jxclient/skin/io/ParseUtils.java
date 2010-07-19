@@ -55,7 +55,7 @@ public class ParseUtils {
     public static int parseStat(@NotNull final String name) throws IOException {
         try {
             return StatsParser.parseStat(name);
-        } catch (final IllegalArgumentException ex) {
+        } catch (final IllegalArgumentException ignored) {
             // ignore
         }
 
@@ -72,7 +72,7 @@ public class ParseUtils {
     public static Orientation parseOrientation(@NotNull final String name) throws IOException {
         try {
             return OrientationParser.parseOrientation(name);
-        } catch (final IllegalArgumentException ex) {
+        } catch (final IllegalArgumentException ignored) {
             // ignore
         }
 
@@ -109,7 +109,7 @@ public class ParseUtils {
         int alpha = 255;
         try {
             alpha = (int)(255*NumberParser.parseFloat(name.substring(pos+1))+0.5);
-        } catch (final IOException ex) {
+        } catch (final IOException ignored) {
             /* ignore */
         }
         if (alpha < 0 || alpha > 255) {
@@ -150,7 +150,7 @@ public class ParseUtils {
         if (name.length() == 7 && name.charAt(0) == '#' && name.charAt(1) != '-') {
             try {
                 return new Color(Integer.parseInt(name.substring(1), 16));
-            } catch (final NumberFormatException ex) {
+            } catch (final NumberFormatException ignored) {
                 // ignore
             }
         }

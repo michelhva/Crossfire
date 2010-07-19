@@ -459,12 +459,12 @@ public class ClientSocket {
 
                     try {
                         socketChannel.socket().shutdownOutput();
-                    } catch (final IOException ex) {
+                    } catch (final IOException ignored) {
                         // ignore
                     }
                     try {
                         socketChannel.close();
-                    } catch (final IOException ex) {
+                    } catch (final IOException ignored) {
                         // ignore
                     }
                     socketChannel = null;
@@ -556,10 +556,11 @@ public class ClientSocket {
                 } catch (final BufferOverflowException ex) {
                     throw new IOException("buffer overflow", ex);
                 }
-            } catch (final IOException ex) {
+            } catch (final IOException ignored) {
+                //noinspection UnusedCatchParameter
                 try {
                     socketChannel.close();
-                } catch (final IOException ex2) {
+                } catch (final IOException ignored2) {
                     // ignore
                 }
                 return;

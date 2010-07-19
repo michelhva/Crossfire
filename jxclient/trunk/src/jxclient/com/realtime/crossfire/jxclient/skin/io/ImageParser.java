@@ -88,7 +88,7 @@ public class ImageParser {
     public BufferedImage getImage(@NotNull final String name) throws IOException {
         try {
             return definedImages.lookup(name);
-        } catch (final JXCSkinException ex) {
+        } catch (final JXCSkinException ignored) {
             // ignore
         }
 

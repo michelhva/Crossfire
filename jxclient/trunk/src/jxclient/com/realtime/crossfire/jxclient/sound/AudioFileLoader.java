@@ -51,7 +51,7 @@ public class AudioFileLoader {
         if (name != null) {
             try {
                 return getResource(name+"/"+action);
-            } catch (final IOException ex) {
+            } catch (final IOException ignored) {
                 // ignore
             }
         }

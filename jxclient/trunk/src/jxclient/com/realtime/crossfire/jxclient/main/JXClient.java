@@ -123,7 +123,7 @@ public class JXClient {
     private static String getBuildNumber() {
         try {
             return ResourceBundle.getBundle("build").getString("build.number");
-        } catch (final MissingResourceException e) {
+        } catch (final MissingResourceException ignored) {
             return "unknown";
         }
     }
