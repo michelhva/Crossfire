@@ -1630,7 +1630,7 @@ public class JXCSkinLoader {
             try {
                 types |= 1<<MessageTypes.parseMessageType(args[i]);
             } catch (final UnknownCommandException ex) {
-                throw new IOException("undefined message type '"+args[i]+"'");
+                throw new IOException("undefined message type '"+args[i]+"'", ex);
             }
         }
         if (!add) {

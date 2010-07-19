@@ -105,7 +105,7 @@ public class DialogStateParser {
                             try {
                                 dialog = skin.getDialog(tmp[1]);
                             } catch (final JXCSkinException ex) {
-                                throw new IOException("no such dialog: "+tmp[1]);
+                                throw new IOException("no such dialog: "+tmp[1], ex);
                             }
 
                             if (!dialog.isAutoSize()) {
@@ -119,13 +119,13 @@ public class DialogStateParser {
                                     w = Integer.parseInt(tmp[4]);
                                     h = Integer.parseInt(tmp[5]);
                                 } catch (final NumberFormatException ex) {
-                                    throw new IOException("syntax error: "+line);
+                                    throw new IOException("syntax error: "+line, ex);
                                 }
 
                                 try {
                                     dialog.setSize(w, h);
                                 } catch (final IllegalArgumentException ex) {
-                                    throw new IOException("invalid dialog size for "+tmp[1]+": "+w+"x"+h);
+                                    throw new IOException("invalid dialog size for "+tmp[1]+": "+w+"x"+h, ex);
                                 }
 
                                 dialog.setPosition(x, y);

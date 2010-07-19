@@ -95,7 +95,7 @@ public class NumberParser {
         try {
             return Float.parseFloat(str);
         } catch (final NumberFormatException ex) {
-            throw new IOException("invalid number: "+str);
+            throw new IOException("invalid number: "+str, ex);
         }
     }
 
@@ -109,7 +109,7 @@ public class NumberParser {
         try {
             return Boolean.parseBoolean(str);
         } catch (final NumberFormatException ex) {
-            throw new IOException("invalid boolean: "+str);
+            throw new IOException("invalid boolean: "+str, ex);
         }
     }
 
@@ -127,7 +127,7 @@ public class NumberParser {
         try {
             return Enum.valueOf(class_, name);
         } catch (final IllegalArgumentException ex) {
-            throw new IOException("no such "+ident+" type: "+name);
+            throw new IOException("no such "+ident+" type: "+name, ex);
         }
     }
 

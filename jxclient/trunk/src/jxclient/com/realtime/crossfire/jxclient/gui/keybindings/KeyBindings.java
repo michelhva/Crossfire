@@ -339,7 +339,9 @@ public class KeyBindings {
                 commandList.add(GUICommandFactory.createCommandDecode(tmp[1], commandCallback, commands, macros));
                 addKeyBindingAsKeyChar(keyChar, commandList, isDefault);
             } catch (final NumberFormatException ex) {
-                throw new InvalidKeyBindingException("syntax error");
+                final InvalidKeyBindingException keyBindingException = new InvalidKeyBindingException("syntax error");
+                keyBindingException.initCause(ex);
+                throw keyBindingException;
             }
         } else if (line.startsWith("code ")) {
             final String[] tmp = line.substring(5).split(" +", 3);
@@ -355,14 +357,18 @@ public class KeyBindings {
             try {
                 keyCode = keyCodeMap.getKeyCode(tmp[0]);
             } catch (final NoSuchKeyCodeException ex) {
-                throw new InvalidKeyBindingException("invalid key code: "+tmp[0]);
+                final InvalidKeyBindingException keyBindingException = new InvalidKeyBindingException("invalid key code: "+tmp[0]);
+                keyBindingException.initCause(ex);
+                throw keyBindingException;
             }
 
             final int modifiers;
             try {
                 modifiers = Integer.parseInt(tmp[1]);
             } catch (final NumberFormatException ex) {
-                throw new InvalidKeyBindingException("invalid modifier: "+tmp[1]);
+                final InvalidKeyBindingException keyBindingException = new InvalidKeyBindingException("invalid modifier: "+tmp[1]);
+                keyBindingException.initCause(ex);
+                throw keyBindingException;
             }
 
             final CommandList commandList = new CommandList(CommandListType.AND);

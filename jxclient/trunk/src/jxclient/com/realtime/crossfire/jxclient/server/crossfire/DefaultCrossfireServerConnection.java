@@ -3853,7 +3853,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             try {
                 byteBuffer.put(str.getBytes("ISO-8859-1"));
             } catch (final UnsupportedEncodingException ex) {
-                throw new AssertionError(); // every Java implementation must support UTF-8
+                throw new AssertionError(ex); // every Java implementation must support UTF-8
             }
         }
     }

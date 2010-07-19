@@ -106,7 +106,7 @@ public class ImageParser {
         try {
             definedImages.insert(name, image);
         } catch (final JXCSkinException ex) {
-            throw new AssertionError();
+            throw new AssertionError(ex);
         }
         return image;
     }

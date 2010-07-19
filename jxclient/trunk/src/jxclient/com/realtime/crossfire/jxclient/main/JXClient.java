@@ -165,7 +165,7 @@ public class JXClient {
                             try {
                                 optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
                             } catch (final OptionException ex) {
-                                throw new AssertionError();
+                                throw new AssertionError(ex);
                             }
 
                             final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui());
@@ -194,7 +194,7 @@ public class JXClient {
                                     try {
                                         characterPickup = new Pickup(commandQueue, optionManager);
                                     } catch (final OptionException ex) {
-                                        throw new AssertionError();
+                                        throw new AssertionError(ex);
                                     }
                                     final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter);
                                     final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
