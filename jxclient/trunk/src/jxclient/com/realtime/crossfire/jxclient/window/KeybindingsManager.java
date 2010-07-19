@@ -187,6 +187,7 @@ public class KeybindingsManager {
             keyBindings.saveKeyBindings();
         } catch (final IOException ex) {
             System.err.println("Cannot write keybindings file "+keyBindings.getFile()+": "+ex.getMessage());
+            //noinspection UnnecessaryReturnStatement
             return;
         }
     }
@@ -199,6 +200,7 @@ public class KeybindingsManager {
             keyBindings.loadKeyBindings();
         } catch (final IOException ex) {
             System.err.println("Cannot read keybindings file "+keyBindings.getFile()+": "+ex.getMessage());
+            //noinspection UnnecessaryReturnStatement
             return;
         }
     }
