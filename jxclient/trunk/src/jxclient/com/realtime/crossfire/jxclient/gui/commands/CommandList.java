@@ -63,7 +63,7 @@ public class CommandList {
      * Returns whether execution is possible.
      * @return whether execution is possible
      */
-    public boolean canExecute() {
+    private boolean canExecute() {
         switch (commandListType) {
         case AND:
             for (final GUICommand command : commandList) {

@@ -148,7 +148,7 @@ public class GuiStateManager {
      * @param guiState the new gui state
      * @param param a parameter for the new gui state
      */
-    public void changeGUI(@NotNull final GuiState guiState, @Nullable final String param) {
+    private void changeGUI(@NotNull final GuiState guiState, @Nullable final String param) {
         synchronized (sync) {
             if (this.guiState == guiState) {
                 return;

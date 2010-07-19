@@ -191,7 +191,7 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
      * @param face the face
      * @param data the face information; it is supposed to be a .png file
      */
-    public void processFaceData(@NotNull final Face face, @NotNull final byte[] data) {
+    private void processFaceData(@NotNull final Face face, @NotNull final byte[] data) {
         final ImageIcon originalImageIcon;
         try {
             originalImageIcon = new ImageIcon(data);
