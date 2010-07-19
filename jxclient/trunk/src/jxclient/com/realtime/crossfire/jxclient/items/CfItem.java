@@ -186,7 +186,7 @@ public class CfItem {
      * Updates the flags.
      * @param flags the new flags
      */
-    public void setFlags(final int flags) {
+    private void setFlags(final int flags) {
         if (this.flags != flags) {
             this.flags = flags;
             modified = true;
@@ -197,7 +197,7 @@ public class CfItem {
      * Updates the weight.
      * @param weight the new weight
      */
-    public void setWeight(final int weight) {
+    private void setWeight(final int weight) {
         if (this.weight != weight) {
             this.weight = weight;
             modified = true;
@@ -208,7 +208,7 @@ public class CfItem {
      * Updates the face.
      * @param face the new face
      */
-    public void setFace(@NotNull final Face face) {
+    private void setFace(@NotNull final Face face) {
         if (this.face != face) {
             this.face = face;
             modified = true;
@@ -220,7 +220,7 @@ public class CfItem {
      * @param name the new singular name
      * @param namePl the new plural name
      */
-    public void setName(@NotNull final String name, @NotNull final String namePl) {
+    private void setName(@NotNull final String name, @NotNull final String namePl) {
         if (!this.name.equals(name) || !this.namePl.equals(namePl)) {
             this.name = name;
             this.namePl = namePl;
@@ -232,7 +232,7 @@ public class CfItem {
      * Updates the animation.
      * @param anim the new animation
      */
-    public void setAnim(final int anim) {
+    private void setAnim(final int anim) {
         if (this.anim != anim) {
             this.anim = anim;
             modified = true;
@@ -243,7 +243,7 @@ public class CfItem {
      * Updates the animation speed.
      * @param animSpeed the new animation speed
      */
-    public void setAnimSpeed(final int animSpeed) {
+    private void setAnimSpeed(final int animSpeed) {
         if (this.animSpeed != animSpeed) {
             this.animSpeed = animSpeed;
             modified = true;
@@ -254,7 +254,7 @@ public class CfItem {
      * Updates the number of objects in the stack.
      * @param nrof the new number of objects
      */
-    public void setNrOf(final int nrof) {
+    private void setNrOf(final int nrof) {
         if (this.nrof != nrof) {
             this.nrof = nrof;
             modified = true;
@@ -439,7 +439,7 @@ public class CfItem {
     /**
      * Notify all listener.
      */
-    public void fireModified() {
+    private void fireModified() {
         if (!modified) {
             return;
         }

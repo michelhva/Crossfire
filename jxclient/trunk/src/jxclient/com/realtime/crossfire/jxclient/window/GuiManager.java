@@ -545,7 +545,7 @@ public class GuiManager {
      * Closes all transient dialogs: disconnect, quit, connect, query, and book
      * dialogs.
      */
-    public void closeTransientDialogs() {
+    private void closeTransientDialogs() {
         if (queryDialog == null || skin == null) {
             throw new IllegalStateException();
         }
@@ -582,7 +582,7 @@ public class GuiManager {
     /**
      * Opens the keybinding dialog. Does nothing if the dialog is opened.
      */
-    public void openKeybindDialog() {
+    private void openKeybindDialog() {
         if (keybindDialog == null) {
             throw new IllegalStateException();
         }

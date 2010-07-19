@@ -353,7 +353,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param x the x-coordinate of the square to clear
      * @param y the y-coordinate of the square to clear
      */
-    protected void redrawSquareUnlessDirty(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y) {
+    private void redrawSquareUnlessDirty(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y) {
         final CfMapSquare mapSquare = map.getMapSquare(x, y);
         if (!mapSquare.isDirty()) {
             redrawSquare(g, mapSquare, x, y);
