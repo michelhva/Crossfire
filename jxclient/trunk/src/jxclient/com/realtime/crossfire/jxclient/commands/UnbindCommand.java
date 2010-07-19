@@ -80,6 +80,7 @@ public class UnbindCommand extends AbstractCommand {
 
         if (!commandCallback.removeKeyBinding(perCharacterBinding)) {
             drawInfoError("Cannot use unbind -c since no character is logged in.");
+            //noinspection UnnecessaryReturnStatement
             return;
         }
     }

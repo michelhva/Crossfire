@@ -114,9 +114,11 @@ public class ShortcutsLoader {
             shortcuts.resetModified();
             shortcuts.setFile(file);
         } catch (final FileNotFoundException ex) {
+            //noinspection UnnecessaryReturnStatement
             return;
         } catch (final IOException ex) {
             System.err.println("Cannot read shortcuts file "+file+": "+ex.getMessage());
+            //noinspection UnnecessaryReturnStatement
             return;
         }
     }

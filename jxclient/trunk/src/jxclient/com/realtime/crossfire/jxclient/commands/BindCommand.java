@@ -102,6 +102,7 @@ public class BindCommand extends AbstractCommand {
         commandList2.add(GUICommandFactory.createCommand(commandList, commandCallback, commands, macros));
         if (!commandCallback.createKeyBinding(perCharacterBinding, commandList2)) {
             drawInfoError("Cannot use bind -c since no character is logged in.");
+            //noinspection UnnecessaryReturnStatement
             return;
         }
     }
