@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.skin.skin.Expression;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -377,7 +378,7 @@ public abstract class GUIElement extends JComponent {
      * tooltip for this element.
      */
     public void setTooltipText(@Nullable final String tooltipText) {
-        final Gui tmpGui = gui;
+        final Component tmpGui = gui;
         if (tmpGui != null) {
             setTooltipText(tooltipText, tmpGui.getX()+getX(), tmpGui.getY()+getY(), getWidth(), getHeight());
         }

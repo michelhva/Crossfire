@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
+import java.awt.Component;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
@@ -83,7 +84,7 @@ public class GUIDialogTitle extends GUIPicture {
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
-        final Gui gui = getGui();
+        final Component gui = getGui();
         if (gui == null) {
             offset = null;
             return;

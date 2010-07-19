@@ -28,7 +28,7 @@ import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
-import com.realtime.crossfire.jxclient.spells.SpellsManager;
+import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import java.io.IOException;
 import java.util.Collection;
@@ -74,10 +74,10 @@ public class ScriptManager {
     private final ItemSet itemSet;
 
     /**
-     * The {@link SpellsManager} instance to use.
+     * The spells manager instance to use.
      */
     @NotNull
-    private final SpellsManager spellsManager;
+    private final Iterable<Spell> spellsManager;
 
     /**
      * The {@link CfMapUpdater} instance to use.
@@ -113,7 +113,7 @@ public class ScriptManager {
      * @param mapUpdater the map updater instance to use
      * @param skillSet the skill set for looking up skill names
      */
-    public ScriptManager(@NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final FloorView floorView, @NotNull final ItemSet itemSet, @NotNull final SpellsManager spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) {
+    public ScriptManager(@NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final FloorView floorView, @NotNull final ItemSet itemSet, @NotNull final Iterable<Spell> spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) {
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
