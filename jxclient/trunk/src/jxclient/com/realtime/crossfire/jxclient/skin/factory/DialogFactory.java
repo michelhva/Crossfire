@@ -119,16 +119,6 @@ public class DialogFactory {
     private final int sizeE;
 
     /**
-     * The width of the center area in pixels.
-     */
-    private final int contentWidth;
-
-    /**
-     * The height of the center area in pixels.
-     */
-    private final int contentHeight;
-
-    /**
      * The font for the dialog title.
      */
     private final Font titleFont;
@@ -203,8 +193,8 @@ public class DialogFactory {
         if (frameSE.getWidth(null) != sizeE) {
             throw new IllegalArgumentException("width of SE ("+frameSE.getWidth(null)+") does not match width of E");
         }
-        contentWidth = frameC.getWidth(null);
-        contentHeight = frameC.getHeight(null);
+        final int contentWidth = frameC.getWidth(null);
+        final int contentHeight = frameC.getHeight(null);
         if (frameN.getWidth(null) != contentWidth) {
             throw new IllegalArgumentException("width of N ("+frameN.getWidth(null)+") does not match width of C ("+contentWidth+")");
         }
