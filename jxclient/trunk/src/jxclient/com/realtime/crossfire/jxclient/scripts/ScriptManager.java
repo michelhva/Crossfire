@@ -165,7 +165,7 @@ public class ScriptManager {
     public Set<ScriptProcess> getScripts(@NotNull final String partialScriptName) {
         try {
             return getScriptByScriptId(Integer.parseInt(partialScriptName));
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             return getScriptsByName(partialScriptName);
         }
     }

@@ -451,7 +451,7 @@ public class ItemSet {
         final List<CfItem> inventoryItems = getInventoryByTag(tag);
         try {
             return 0 <= index && index < inventoryItems.size() ? inventoryItems.get(index) : null;
-        } catch (final ArrayIndexOutOfBoundsException ex) {
+        } catch (final ArrayIndexOutOfBoundsException ignored) {
             return null;
         }
     }

@@ -57,7 +57,7 @@ public class IndexedEventListenerList {
         synchronized (locationListeners) {
             try {
                 return locationListeners.get(index);
-            } catch (final IndexOutOfBoundsException ex) {
+            } catch (final IndexOutOfBoundsException ignored) {
                 for (int i = locationListeners.size(); i <= index; i++) {
                     locationListeners.add(new EventListenerList());
                 }

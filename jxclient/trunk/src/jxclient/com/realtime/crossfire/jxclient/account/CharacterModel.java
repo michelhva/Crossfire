@@ -81,7 +81,7 @@ public class CharacterModel {
             synchronized (sync) {
                 return characters.get(index);
             }
-        } catch (final IndexOutOfBoundsException ex) {
+        } catch (final IndexOutOfBoundsException ignored) {
             return null;
         }
     }

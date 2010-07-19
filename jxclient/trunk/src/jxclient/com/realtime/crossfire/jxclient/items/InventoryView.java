@@ -237,7 +237,7 @@ public class InventoryView extends AbstractItemView {
 
         try {
             return items.get(index);
-        } catch (final IndexOutOfBoundsException ex) {
+        } catch (final IndexOutOfBoundsException ignored) {
             return null;
         }
     }

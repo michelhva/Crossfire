@@ -114,7 +114,7 @@ public class EventScheduler {
                         nextAction = 0;
                         nextActionNotBefore = System.currentTimeMillis()+afterEventDelay;
                     }
-                } catch (final InterruptedException ex) {
+                } catch (final InterruptedException ignored) {
                     thread.interrupt();
                     break;
                 }

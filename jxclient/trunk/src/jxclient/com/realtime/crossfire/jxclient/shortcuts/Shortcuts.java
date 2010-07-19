@@ -114,7 +114,7 @@ public class Shortcuts implements Iterable<Shortcut> {
     private Shortcut getShortcut(final int index) {
         try {
             return shortcuts.get(index);
-        } catch (final IndexOutOfBoundsException ex) {
+        } catch (final IndexOutOfBoundsException ignored) {
             return null;
         }
     }

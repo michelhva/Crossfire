@@ -148,7 +148,7 @@ public class DialogStateParser {
             } finally {
                 fis.close();
             }
-        } catch (final FileNotFoundException ex) {
+        } catch (final FileNotFoundException ignored) {
             // ignore
         } catch (final IOException ex) {
             System.err.println(dialogsFile+": "+ex.getMessage());

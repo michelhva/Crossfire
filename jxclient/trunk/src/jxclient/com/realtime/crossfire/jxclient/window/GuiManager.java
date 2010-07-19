@@ -534,7 +534,7 @@ public class GuiManager {
         final Gui dialog;
         try {
             dialog = skin.getDialog(name);
-        } catch (final JXCSkinException ex) {
+        } catch (final JXCSkinException ignored) {
             // ignore
             return;
         }

@@ -160,7 +160,7 @@ public class MetaserverEntryParser {
             archBase = entries[8];
             codeBase = entries[9];
             mapBase = entries[10];
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             return null;
         }
 

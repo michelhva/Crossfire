@@ -81,7 +81,7 @@ public class ExpressionParser {
     public static Expression parseExpression(@NotNull final String str) throws IOException {
         try {
             return parseIntegerConstant(str);
-        } catch (final NumberFormatException ex) {
+        } catch (final NumberFormatException ignored) {
             // ignore
         }
 

@@ -80,7 +80,7 @@ public class GaugeUpdaterParser {
     public GaugeUpdater parseGaugeUpdater(@NotNull final String name, @NotNull final ExperienceTable experienceTable) throws IOException {
         try {
             return new StatGaugeUpdater(experienceTable, StatsParser.parseStat(name), stats, itemSet);
-        } catch (final IllegalArgumentException ex) {
+        } catch (final IllegalArgumentException ignored) {
             // ignore
         }
 

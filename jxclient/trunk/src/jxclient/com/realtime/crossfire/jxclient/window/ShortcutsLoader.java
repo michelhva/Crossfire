@@ -113,7 +113,7 @@ public class ShortcutsLoader {
             }
             shortcuts.resetModified();
             shortcuts.setFile(file);
-        } catch (final FileNotFoundException ex) {
+        } catch (final FileNotFoundException ignored) {
             //noinspection UnnecessaryReturnStatement
             return;
         } catch (final IOException ex) {

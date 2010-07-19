@@ -82,7 +82,7 @@ public class MetaserverModel {
             synchronized (sync) {
                 return metaList.get(index);
             }
-        } catch (final IndexOutOfBoundsException ex) {
+        } catch (final IndexOutOfBoundsException ignored) {
             return null;
         }
     }
