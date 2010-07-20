@@ -162,10 +162,10 @@ public class Buffer {
         synchronized (sync) {
             totalHeight += height;
             lines.add(line);
-        }
 
-        for (final BufferListener listener : listeners) {
-            listener.linesAdded(1);
+            for (final BufferListener listener : listeners) {
+                listener.linesAdded(1);
+            }
         }
     }
 
