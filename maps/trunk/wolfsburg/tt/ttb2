@@ -7,7 +7,7 @@ height 38
 enter_x 44
 enter_y 18
 msg
-Modified: 2009-02-01 Rick Tanner
+Modified: 2010-07-24 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -66,18 +66,17 @@ end
 arch cwall_1_4
 y 17
 end
-arch dungeon_floor
-y 18
-end
 arch exit
 name tower bridge
 slaying tta2
-face dung_floor.111
 hp 36
 sp 18
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+y 18
 end
 arch dungeon_floor
 y 19
@@ -214,20 +213,19 @@ arch cwall_2_1_2
 x 1
 y 17
 end
-arch dungeon_floor
-x 1
-y 18
-end
 arch exit
 name tower bridge
 slaying tta2
-face dung_floor.111
 hp 36
 sp 18
 x 1
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 1
+y 18
 end
 arch dungeon_floor
 x 1
@@ -384,20 +382,19 @@ arch cwall_2_1_2
 x 2
 y 17
 end
-arch dungeon_floor
-x 2
-y 18
-end
 arch exit
 name tower bridge
 slaying tta2
-face dung_floor.111
 hp 36
 sp 18
 x 2
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 2
+y 18
 end
 arch dungeon_floor
 x 2
@@ -554,20 +551,19 @@ arch cwall_2_1_2
 x 3
 y 17
 end
-arch dungeon_floor
-x 3
-y 18
-end
 arch exit
 name tower bridge
 slaying tta2
-face dung_floor.111
 hp 36
 sp 18
 x 3
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 3
+y 18
 end
 arch dungeon_floor
 x 3
@@ -724,20 +720,19 @@ arch cwall_2_1_2
 x 4
 y 17
 end
-arch dungeon_floor
-x 4
-y 18
-end
 arch exit
 name tower bridge
 slaying tta2
-face dung_floor.111
 hp 36
 sp 18
 x 4
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 4
+y 18
 end
 arch dungeon_floor
 x 4
@@ -894,20 +889,19 @@ arch cwall_2_1_2
 x 5
 y 17
 end
-arch dungeon_floor
-x 5
-y 18
-end
 arch exit
 name tower bridge
 slaying tta2
-face dung_floor.111
 hp 36
 sp 18
 x 5
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 5
+y 18
 end
 arch dungeon_floor
 x 5
@@ -1064,20 +1058,19 @@ arch cwall_2_1_2
 x 6
 y 17
 end
-arch dungeon_floor
-x 6
-y 18
-end
 arch exit
 name tower bridge
 slaying tta2
-face dung_floor.111
 hp 36
 sp 18
 x 6
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 6
+y 18
 end
 arch dungeon_floor
 x 6
@@ -1234,20 +1227,19 @@ arch cwall_2_1_2
 x 7
 y 17
 end
-arch dungeon_floor
-x 7
-y 18
-end
 arch exit
 name tower bridge
 slaying tta2
-face dung_floor.111
 hp 36
 sp 18
 x 7
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 7
+y 18
 end
 arch dungeon_floor
 x 7

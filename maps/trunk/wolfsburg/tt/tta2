@@ -7,7 +7,7 @@ height 38
 enter_x 36
 enter_y 18
 msg
-Modified: 2010-07-22 Nicolas Weeger
+Modified: 2010-07-24 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -8704,10 +8704,6 @@ arch cwall_2_1_2
 x 44
 y 17
 end
-arch dungeon_floor
-x 44
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb2
@@ -8718,6 +8714,10 @@ x 44
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 44
+y 18
 end
 arch dungeon_floor
 x 44
@@ -8874,10 +8874,6 @@ arch cwall_2_1_2
 x 45
 y 17
 end
-arch dungeon_floor
-x 45
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb2
@@ -8888,6 +8884,10 @@ x 45
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 45
+y 18
 end
 arch dungeon_floor
 x 45
@@ -9044,10 +9044,6 @@ arch cwall_2_1_2
 x 46
 y 17
 end
-arch dungeon_floor
-x 46
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb2
@@ -9058,6 +9054,10 @@ x 46
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 46
+y 18
 end
 arch dungeon_floor
 x 46
@@ -9214,10 +9214,6 @@ arch cwall_2_1_2
 x 47
 y 17
 end
-arch dungeon_floor
-x 47
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb2
@@ -9228,6 +9224,10 @@ x 47
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 47
+y 18
 end
 arch dungeon_floor
 x 47
@@ -9384,10 +9384,6 @@ arch cwall_2_1_2
 x 48
 y 17
 end
-arch dungeon_floor
-x 48
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb2
@@ -9398,6 +9394,10 @@ x 48
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 48
+y 18
 end
 arch dungeon_floor
 x 48
@@ -9554,10 +9554,6 @@ arch cwall_2_1_2
 x 49
 y 17
 end
-arch dungeon_floor
-x 49
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb2
@@ -9568,6 +9564,10 @@ x 49
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 49
+y 18
 end
 arch dungeon_floor
 x 49
@@ -9724,10 +9724,6 @@ arch cwall_2_1_2
 x 50
 y 17
 end
-arch dungeon_floor
-x 50
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb2
@@ -9738,6 +9734,10 @@ x 50
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 50
+y 18
 end
 arch dungeon_floor
 x 50
@@ -9894,10 +9894,6 @@ arch cwall_2_1_2
 x 51
 y 17
 end
-arch dungeon_floor
-x 51
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb2
@@ -9908,6 +9904,10 @@ x 51
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 51
+y 18
 end
 arch dungeon_floor
 x 51
@@ -10064,10 +10064,6 @@ arch cwall_1_3
 x 52
 y 17
 end
-arch dungeon_floor
-x 52
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb2
@@ -10078,6 +10074,10 @@ x 52
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 52
+y 18
 end
 arch dungeon_floor
 x 52
