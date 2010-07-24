@@ -7,7 +7,7 @@ height 38
 enter_x 1
 enter_y 18
 msg
-Modified: 2009-02-01 Rick Tanner
+Modified: 2010-07-24 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -51,9 +51,6 @@ end
 arch grass
 y 13
 end
-arch dungeon_floor
-y 14
-end
 arch exit
 slaying /world/world_128_109
 face dung_floor.111
@@ -64,7 +61,7 @@ speed_left -0.400000
 is_animated 0
 end
 arch dungeon_floor
-y 15
+y 14
 end
 arch exit
 slaying /world/world_128_109
@@ -76,7 +73,7 @@ speed_left -0.400000
 is_animated 0
 end
 arch dungeon_floor
-y 16
+y 15
 end
 arch exit
 slaying /world/world_128_109
@@ -88,7 +85,7 @@ speed_left -0.400000
 is_animated 0
 end
 arch dungeon_floor
-y 17
+y 16
 end
 arch exit
 slaying /world/world_128_109
@@ -100,7 +97,7 @@ speed_left -0.400000
 is_animated 0
 end
 arch dungeon_floor
-y 18
+y 17
 end
 arch exit
 slaying /world/world_128_109
@@ -112,7 +109,7 @@ speed_left -0.400000
 is_animated 0
 end
 arch dungeon_floor
-y 19
+y 18
 end
 arch exit
 slaying /world/world_128_109
@@ -124,7 +121,7 @@ speed_left -0.400000
 is_animated 0
 end
 arch dungeon_floor
-y 20
+y 19
 end
 arch exit
 slaying /world/world_128_109
@@ -136,7 +133,7 @@ speed_left -0.400000
 is_animated 0
 end
 arch dungeon_floor
-y 21
+y 20
 end
 arch exit
 slaying /world/world_128_109
@@ -148,7 +145,7 @@ speed_left -0.400000
 is_animated 0
 end
 arch dungeon_floor
-y 22
+y 21
 end
 arch exit
 slaying /world/world_128_109
@@ -158,6 +155,9 @@ sp 10
 y 22
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+y 22
 end
 arch grass
 y 23
@@ -259,6 +259,16 @@ arch grass
 x 1
 y 13
 end
+arch exit
+slaying /world/world_128_109
+face dung_floor.111
+hp 43
+sp 10
+x 1
+y 14
+speed_left -0.400000
+is_animated 0
+end
 arch dungeon_floor
 x 1
 y 14
@@ -290,6 +300,16 @@ end
 arch dungeon_floor
 x 1
 y 21
+end
+arch exit
+slaying /world/world_128_109
+face dung_floor.111
+hp 43
+sp 10
+x 1
+y 22
+speed_left -0.400000
+is_animated 0
 end
 arch dungeon_floor
 x 1
@@ -410,6 +430,16 @@ arch grass
 x 2
 y 13
 end
+arch exit
+slaying /world/world_128_109
+face dung_floor.111
+hp 43
+sp 10
+x 2
+y 14
+speed_left -0.400000
+is_animated 0
+end
 arch dungeon_floor
 x 2
 y 14
@@ -441,6 +471,16 @@ end
 arch dungeon_floor
 x 2
 y 21
+end
+arch exit
+slaying /world/world_128_109
+face dung_floor.111
+hp 43
+sp 10
+x 2
+y 22
+speed_left -0.400000
+is_animated 0
 end
 arch dungeon_floor
 x 2
@@ -9016,6 +9056,17 @@ arch cwall_2_1_2
 x 44
 y 17
 end
+arch exit
+name tower bridge
+slaying ttb1
+face dung_floor.111
+hp 14
+sp 18
+x 44
+y 18
+speed_left -0.400000
+is_animated 0
+end
 arch dungeon_floor
 x 44
 y 18
@@ -9175,6 +9226,17 @@ arch cwall_2_1_2
 x 45
 y 17
 end
+arch exit
+name tower bridge
+slaying ttb1
+face dung_floor.111
+hp 14
+sp 18
+x 45
+y 18
+speed_left -0.400000
+is_animated 0
+end
 arch dungeon_floor
 x 45
 y 18
@@ -9333,10 +9395,6 @@ end
 arch cwall_2_1_2
 x 46
 y 17
-end
-arch dungeon_floor
-x 46
-y 18
 end
 arch exit
 name tower bridge
@@ -9351,6 +9409,10 @@ is_animated 0
 end
 arch dungeon_floor
 x 46
+y 18
+end
+arch dungeon_floor
+x 46
 y 19
 end
 arch cwall_2_1_2
@@ -9504,10 +9566,6 @@ arch cwall_2_1_2
 x 47
 y 17
 end
-arch dungeon_floor
-x 47
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb1
@@ -9518,6 +9576,10 @@ x 47
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 47
+y 18
 end
 arch dungeon_floor
 x 47
@@ -9674,10 +9736,6 @@ arch cwall_2_1_2
 x 48
 y 17
 end
-arch dungeon_floor
-x 48
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb1
@@ -9688,6 +9746,10 @@ x 48
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 48
+y 18
 end
 arch dungeon_floor
 x 48
@@ -9844,10 +9906,6 @@ arch cwall_2_1_2
 x 49
 y 17
 end
-arch dungeon_floor
-x 49
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb1
@@ -9858,6 +9916,10 @@ x 49
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 49
+y 18
 end
 arch dungeon_floor
 x 49
@@ -10014,10 +10076,6 @@ arch cwall_2_1_2
 x 50
 y 17
 end
-arch dungeon_floor
-x 50
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb1
@@ -10028,6 +10086,10 @@ x 50
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 50
+y 18
 end
 arch dungeon_floor
 x 50
@@ -10184,10 +10246,6 @@ arch cwall_2_1_2
 x 51
 y 17
 end
-arch dungeon_floor
-x 51
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb1
@@ -10198,6 +10256,10 @@ x 51
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 51
+y 18
 end
 arch dungeon_floor
 x 51
@@ -10354,10 +10416,6 @@ arch cwall_1_3
 x 52
 y 17
 end
-arch dungeon_floor
-x 52
-y 18
-end
 arch exit
 name tower bridge
 slaying ttb1
@@ -10368,6 +10426,10 @@ x 52
 y 18
 speed_left -0.400000
 is_animated 0
+end
+arch dungeon_floor
+x 52
+y 18
 end
 arch dungeon_floor
 x 52
