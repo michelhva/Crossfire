@@ -831,9 +831,7 @@ arch dungeon_floor
 x 4
 y 23
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 4
 y 23
 end
@@ -841,9 +839,7 @@ arch dungeon_floor
 x 4
 y 24
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 4
 y 24
 end
@@ -950,9 +946,7 @@ arch dungeon_floor
 x 5
 y 9
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 5
 y 9
 end
@@ -992,12 +986,7 @@ arch dungeon_floor
 x 5
 y 18
 end
-arch fire_elemental
-name black fire
-animation elem_fire_black
-hp 1000
-maxhp 1000
-exp 500
+arch elem_fire_black
 x 5
 y 18
 end
@@ -1025,9 +1014,7 @@ arch dungeon_floor
 x 5
 y 24
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 5
 y 24
 end
@@ -1059,11 +1046,7 @@ arch dungeon_floor
 x 5
 y 31
 end
-arch earth_elemental
-name greater earth elemental
-hp 500
-maxhp 500
-exp 300
+arch greater_earth_elemental
 x 5
 y 31
 end
@@ -1166,11 +1149,7 @@ arch dungeon_floor
 x 6
 y 16
 end
-arch water_elemental
-name tsunami
-hp 400
-maxhp 400
-exp 300
+arch tsunami
 x 6
 y 16
 end
@@ -1234,11 +1213,7 @@ arch dungeon_floor
 x 6
 y 31
 end
-arch earth_elemental
-name greater earth elemental
-hp 500
-maxhp 500
-exp 300
+arch greater_earth_elemental
 x 6
 y 31
 end
@@ -1731,12 +1706,7 @@ arch dungeon_floor
 x 9
 y 5
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 9
 y 5
 end
@@ -1772,12 +1742,7 @@ arch dungeon_floor
 x 9
 y 12
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 9
 y 12
 end
@@ -1837,9 +1802,7 @@ arch dungeon_floor
 x 9
 y 26
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 9
 y 26
 end
@@ -1970,12 +1933,7 @@ arch dungeon_floor
 x 10
 y 16
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 10
 y 16
 end
@@ -2102,11 +2060,7 @@ arch dungeon_floor
 x 11
 y 5
 end
-arch earth_elemental
-name greater earth elemental
-hp 500
-maxhp 500
-exp 300
+arch greater_earth_elemental
 x 11
 y 5
 end
@@ -2126,11 +2080,7 @@ arch dungeon_floor
 x 11
 y 8
 end
-arch earth_elemental
-name greater earth elemental
-hp 500
-maxhp 500
-exp 300
+arch greater_earth_elemental
 x 11
 y 8
 end
@@ -2142,9 +2092,7 @@ arch dungeon_floor
 x 11
 y 10
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 11
 y 10
 end
@@ -2646,11 +2594,7 @@ arch dungeon_floor
 x 13
 y 29
 end
-arch water_elemental
-name tsunami
-hp 400
-maxhp 400
-exp 300
+arch tsunami
 x 13
 y 29
 end
@@ -2670,9 +2614,7 @@ arch dungeon_floor
 x 13
 y 32
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 13
 y 32
 end
@@ -2771,9 +2713,7 @@ arch dungeon_floor
 x 14
 y 13
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 14
 y 13
 end
@@ -3127,9 +3067,7 @@ arch dungeon_floor
 x 16
 y 6
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 16
 y 6
 end
@@ -3149,12 +3087,7 @@ arch dungeon_floor
 x 16
 y 9
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 16
 y 9
 end
@@ -3178,11 +3111,7 @@ arch dungeon_floor
 x 16
 y 13
 end
-arch earth_elemental
-name greater earth elemental
-hp 500
-maxhp 500
-exp 300
+arch greater_earth_elemental
 x 16
 y 13
 end
@@ -3254,9 +3183,7 @@ arch dungeon_floor
 x 16
 y 24
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 16
 y 24
 end
@@ -3702,11 +3629,7 @@ arch dungeon_floor
 x 18
 y 33
 end
-arch water_elemental
-name tsunami
-hp 400
-maxhp 400
-exp 300
+arch tsunami
 x 18
 y 33
 end
@@ -3777,9 +3700,7 @@ arch dungeon_floor
 x 19
 y 9
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 19
 y 9
 end
@@ -3835,12 +3756,7 @@ arch dungeon_floor
 x 19
 y 18
 end
-arch fire_elemental
-name black fire
-animation elem_fire_black
-hp 1000
-maxhp 1000
-exp 500
+arch elem_fire_black
 x 19
 y 18
 end
@@ -3848,12 +3764,7 @@ arch dungeon_floor
 x 19
 y 19
 end
-arch fire_elemental
-name black fire
-animation elem_fire_black
-hp 1000
-maxhp 1000
-exp 500
+arch elem_fire_black
 x 19
 y 19
 end
@@ -4016,11 +3927,7 @@ arch dungeon_floor
 x 20
 y 10
 end
-arch water_elemental
-name tsunami
-hp 400
-maxhp 400
-exp 300
+arch tsunami
 x 20
 y 10
 end
@@ -4072,12 +3979,7 @@ arch dungeon_floor
 x 20
 y 18
 end
-arch fire_elemental
-name black fire
-animation elem_fire_black
-hp 1000
-maxhp 1000
-exp 500
+arch elem_fire_black
 x 20
 y 18
 end
@@ -4085,12 +3987,7 @@ arch dungeon_floor
 x 20
 y 19
 end
-arch fire_elemental
-name black fire
-animation elem_fire_black
-hp 1000
-maxhp 1000
-exp 500
+arch elem_fire_black
 x 20
 y 19
 end
@@ -4369,12 +4266,7 @@ arch dungeon_floor
 x 21
 y 28
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 21
 y 28
 end
@@ -4605,12 +4497,7 @@ arch dungeon_floor
 x 22
 y 32
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 22
 y 32
 end
@@ -4665,11 +4552,7 @@ arch dungeon_floor
 x 23
 y 5
 end
-arch water_elemental
-name tsunami
-hp 400
-maxhp 400
-exp 300
+arch tsunami
 x 23
 y 5
 end
@@ -4920,9 +4803,7 @@ arch dungeon_floor
 x 24
 y 13
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 24
 y 13
 end
@@ -5205,11 +5086,7 @@ arch dungeon_floor
 x 25
 y 29
 end
-arch water_elemental
-name tsunami
-hp 400
-maxhp 400
-exp 300
+arch tsunami
 x 25
 y 29
 end
@@ -5320,11 +5197,7 @@ arch dungeon_floor
 x 26
 y 13
 end
-arch earth_elemental
-name greater earth elemental
-hp 500
-maxhp 500
-exp 300
+arch greater_earth_elemental
 x 26
 y 13
 end
@@ -5352,12 +5225,7 @@ arch dungeon_floor
 x 26
 y 19
 end
-arch fire_elemental
-name black fire
-animation elem_fire_black
-hp 1000
-maxhp 1000
-exp 500
+arch elem_fire_black
 x 26
 y 19
 end
@@ -5369,11 +5237,7 @@ arch dungeon_floor
 x 26
 y 21
 end
-arch earth_elemental
-name greater earth elemental
-hp 500
-maxhp 500
-exp 300
+arch greater_earth_elemental
 x 26
 y 21
 end
@@ -5488,12 +5352,7 @@ arch dungeon_floor
 x 27
 y 6
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 27
 y 6
 end
@@ -6031,9 +5890,7 @@ arch dungeon_floor
 x 29
 y 32
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 29
 y 32
 end
@@ -6136,12 +5993,7 @@ arch dungeon_floor
 x 30
 y 15
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 30
 y 15
 end
@@ -6149,12 +6001,7 @@ arch dungeon_floor
 x 30
 y 16
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 30
 y 16
 end
@@ -6170,12 +6017,7 @@ arch dungeon_floor
 x 30
 y 19
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 30
 y 19
 end
@@ -6211,9 +6053,7 @@ arch dungeon_floor
 x 30
 y 27
 end
-arch air_elemental
-name dust devil
-animation elem_dust
+arch elem_dust
 x 30
 y 27
 end
@@ -6671,11 +6511,7 @@ arch dungeon_floor
 x 32
 y 32
 end
-arch earth_elemental
-name greater earth elemental
-hp 500
-maxhp 500
-exp 300
+arch greater_earth_elemental
 x 32
 y 32
 end
@@ -6997,12 +6833,7 @@ arch dungeon_floor
 x 34
 y 31
 end
-arch golem
-name lava man
-animation golem_red
-hp 750
-maxhp 750
-exp 200
+arch golem_red
 x 34
 y 31
 end
