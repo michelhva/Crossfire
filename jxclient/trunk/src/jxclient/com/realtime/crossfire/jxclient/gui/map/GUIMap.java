@@ -128,7 +128,7 @@ public class GUIMap extends AbstractGUIMap {
      * Returns the minimal map width in squares needed to fill the map area.
      * @return the map width in squares
      */
-    public int getMapWidth() {
+    public int getPreferredMapWidth() {
         return MathUtils.divRoundUp(getWidth(), tileSize);
     }
 
@@ -136,7 +136,7 @@ public class GUIMap extends AbstractGUIMap {
      * Returns the minimal map height in squares needed to fill the map area.
      * @return the map height in squares
      */
-    public int getMapHeight() {
+    public int getPreferredMapHeight() {
         return MathUtils.divRoundUp(getHeight(), tileSize);
     }
 
