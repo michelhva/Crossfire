@@ -300,10 +300,18 @@ public abstract class AbstractGUIMap extends GUIElement {
 
     /**
      * Redraws the complete map view.
-     * @param g the graphics to draw into
      */
-    private void redrawAll(@NotNull final Graphics g) {
-        redrawTiles(g, mapUpdater.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
+    private void redrawAll() {
+        synchronized (bufferedImageSync) {
+            if (hasBufferedImage()) {
+                final Graphics g = createBufferGraphics();
+                try {
+                    redrawTiles(g, mapUpdater.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
+                } finally {
+                    g.dispose();
+                }
+            }
+        }
     }
 
     /**
@@ -481,16 +489,7 @@ public abstract class AbstractGUIMap extends GUIElement {
         displayMaxOffsetY = MathUtils.mod(-displayMinOffsetY-getHeight(), tileSize);
         offsetY = displayMinOffsetY-displayMinY*tileSize;
 
-        synchronized (bufferedImageSync) {
-            if (hasBufferedImage()) {
-                final Graphics g = createBufferGraphics();
-                try {
-                    redrawAll(g);
-                } finally {
-                    g.dispose();
-                }
-            }
-        }
+        redrawAll();
     }
 
     /**
