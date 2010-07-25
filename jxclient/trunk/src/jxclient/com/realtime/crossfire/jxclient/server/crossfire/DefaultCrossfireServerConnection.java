@@ -178,12 +178,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private final Collection<CrossfireServerConnectionListener> crossfireServerConnectionListeners = new CopyOnWriteArrayList<CrossfireServerConnectionListener>();
 
     /**
-     * The {@link MapSizeListener}s to be notified.
-     */
-    @NotNull
-    private final Collection<MapSizeListener> mapSizeListeners = new CopyOnWriteArrayList<MapSizeListener>();
-
-    /**
      * The {@link CrossfireDrawinfoListener}s to be notified.
      */
     @NotNull
@@ -729,22 +723,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     @Override
     public void addCrossfireServerConnectionListener(@NotNull final CrossfireServerConnectionListener listener) {
         crossfireServerConnectionListeners.add(listener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void addMapSizeListener(@NotNull final MapSizeListener listener) {
-        mapSizeListeners.add(listener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void removeMapSizeListener(@NotNull final MapSizeListener listener) {
-        mapSizeListeners.remove(listener);
     }
 
     /**
@@ -3902,9 +3880,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         this.currentMapWidth = currentMapWidth;
         this.currentMapHeight = currentMapHeight;
         fireNewMap();
-        for (final MapSizeListener listener : mapSizeListeners) {
-            listener.mapSizeChanged(currentMapWidth, currentMapHeight);
-        }
     }
 
     /**

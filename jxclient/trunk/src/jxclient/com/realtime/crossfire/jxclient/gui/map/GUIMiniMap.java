@@ -148,7 +148,7 @@ public class GUIMiniMap extends AbstractGUIMap {
      * @param crossfireServerConnection the server connection to monitor
      */
     public GUIMiniMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider, crossfireServerConnection);
+        super(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider);
         this.mapUpdater = mapUpdater;
         tileSize = facesProvider.getSize();
         this.crossfireServerConnection = crossfireServerConnection;

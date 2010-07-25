@@ -32,7 +32,6 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapListener;
 import com.realtime.crossfire.jxclient.mapupdater.MapScrollListener;
 import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
@@ -72,12 +71,6 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     @NotNull
     private final FacesProvider facesProvider;
-
-    /**
-     * The {@link CrossfireServerConnection} to monitor.
-     */
-    @NotNull
-    private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The map width in squares.
@@ -280,19 +273,17 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param extent the extent of this element
      * @param mapUpdater the map updater instance to use
      * @param facesProvider the faces provider for looking up faces
-     * @param crossfireServerConnection the server connection to monitor
      */
-    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
+    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider) {
         super(tooltipManager, elementListener, name, extent, Transparency.OPAQUE);
         tileSize = facesProvider.getSize();
         this.mapUpdater = mapUpdater;
         this.facesProvider = facesProvider;
-        this.crossfireServerConnection = crossfireServerConnection;
-        this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
+        this.mapUpdater.addMapSizeListener(mapSizeListener);
         this.mapUpdater.addCrossfireMapListener(mapListener);
         this.mapUpdater.addCrossfireNewmapListener(newmapListener);
         this.mapUpdater.addCrossfireMapScrollListener(mapscrollListener);
-        setMapSize(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
+        setMapSize(mapUpdater.getWidth(), mapUpdater.getHeight());
     }
 
     /**
@@ -301,7 +292,7 @@ public abstract class AbstractGUIMap extends GUIElement {
     @Override
     public void dispose() {
         super.dispose();
-        crossfireServerConnection.removeMapSizeListener(mapSizeListener);
+        mapUpdater.removeMapSizeListener(mapSizeListener);
         mapUpdater.removeCrossfireNewmapListener(newmapListener);
         mapUpdater.removeCrossfireMapScrollListener(mapscrollListener);
         mapUpdater.removeCrossfireMapListener(mapListener);
