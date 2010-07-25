@@ -77,15 +77,15 @@ public abstract class AbstractButton extends ActivatableGUIElement {
     };
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
+     * @param name the name of this element
      * @param extent the extent of this element
-     * @param transparency The transparency value for the backing buffer
-     * @param autoRepeat Whether the button should autorepeat while being
-     * pressed.
-     * @param commandList The commands to execute when the button is elected.
+     * @param transparency the transparency value for the backing buffer
+     * @param autoRepeat whether the button should autorepeat while being
+     * pressed
+     * @param commandList the commands to execute when the button is elected
      */
     protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList) {
         super(tooltipManager, elementListener, name, extent, transparency);
@@ -162,7 +162,7 @@ public abstract class AbstractButton extends ActivatableGUIElement {
     }
 
     /**
-     * Execute the command actions.
+     * Executes the command actions.
      */
     public void execute() {
         commandList.execute();

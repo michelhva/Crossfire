@@ -35,9 +35,11 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
+ * A {@link com.realtime.crossfire.jxclient.gui.gui.GUIElement GUIElement} that
+ * implements a button. The button shows an image and optionally overlays a text
+ * string.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public class GUIButton extends AbstractButton {
 
@@ -46,28 +48,71 @@ public class GUIButton extends AbstractButton {
      */
     private static final long serialVersionUID = 1;
 
+    /**
+     * The image in unselected state.
+     */
     @NotNull
     private final Image imageUp;
 
+    /**
+     * The image in selected state.
+     */
     @NotNull
     private final Image imageDown;
 
+    /**
+     * The overlay text or <code>null</code> to display only the image. The text
+     * is rendered using {@link #font}.
+     */
     @Nullable
     private final String text;
 
+    /**
+     * The {@link Font} for the overlay {@link #text} or <code>null</code> to
+     * display only the image.
+     */
     @Nullable
     private final Font font;
 
+    /**
+     * The x coordinate of the overlay text.
+     */
     private final int textX;
 
+    /**
+     * The y coordinate of the overlay text. This is the base line's y
+     * coordinate.
+     */
     private final int textY;
 
+    /**
+     * The {@link Color} of the overlay text or <code>null</code> to display
+     * only the image.
+     */
     @Nullable
     private final Color color;
 
     /**
-     * Creates a new instance.
+     * Creates a new instance. Both <code>imageUp</code> and
+     * <code>imageDown</code> must have the same size. The x/y coordinates
+     * specify the base line of the first character of the overlay text.
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param name the name of this element
      * @param extent the extent of this element
+     * @param imageUp the image in unselected state
+     * @param imageDown the image in selected state
+     * @param text the overlay text or <code>null</code> to display only the
+     * image
+     * @param font the font for the overlay text or <code>null</code> to display
+     * only the image
+     * @param color the color of the overlay text or <code>null</code> to
+     * display only the image
+     * @param textX the x coordinate of the overlay text
+     * @param textY the y coordinate of the overlay text
+     * @param autoRepeat whether the button should autorepeat while being
+     * pressed
+     * @param commandList the commands to execute when the button is elected
      */
     public GUIButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage imageUp, @NotNull final BufferedImage imageDown, @Nullable final String text, @Nullable final Font font, @Nullable final Color color, final int textX, final int textY, final boolean autoRepeat, @NotNull final CommandList commandList) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT, autoRepeat, commandList);

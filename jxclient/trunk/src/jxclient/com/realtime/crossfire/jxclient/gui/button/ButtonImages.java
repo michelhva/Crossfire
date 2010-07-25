@@ -28,11 +28,14 @@ import org.jetbrains.annotations.NotNull;
 /**
  * A set of images to form a button image. The button image consists of a left,
  * a middle, and a right part. Left and right parts have fixed size, the middle
- * part is clipped to the button's width.
+ * part is clipped or repeated to the button's width.
  * @author Andreas Kirschbaum
  */
 public class ButtonImages {
 
+    /**
+     * Half the minimum width available for the text.
+     */
     private static final int OFFSET = 3;
 
     /**
