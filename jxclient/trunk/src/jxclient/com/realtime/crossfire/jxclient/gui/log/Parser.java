@@ -39,28 +39,28 @@ public class Parser {
      * Maps font tag name to font instance.
      */
     @NotNull
-    private static final Map<String, FontID> fonts = new HashMap<String, FontID>();
+    private static final Map<String, FontID> FONTS = new HashMap<String, FontID>();
 
     static {
-        fonts.put("print", FontID.PRINT);
-        fonts.put("fixed", FontID.FIXED);
-        fonts.put("arcane", FontID.ARCANE);
-        fonts.put("hand", FontID.HAND);
-        fonts.put("strange", FontID.STRANGE);
+        FONTS.put("print", FontID.PRINT);
+        FONTS.put("fixed", FontID.FIXED);
+        FONTS.put("arcane", FontID.ARCANE);
+        FONTS.put("hand", FontID.HAND);
+        FONTS.put("strange", FontID.STRANGE);
     }
 
     /**
      * Maps color tag name to color instance. The keys must be lower case.
      */
     @NotNull
-    private static final Map<String, Color> colors = new HashMap<String, Color>();
+    private static final Map<String, Color> COLORS = new HashMap<String, Color>();
 
     static {
-        colors.put("black", Color.BLACK);
-        colors.put("blue", Color.BLUE);
-        colors.put("green", Color.GREEN);
-        colors.put("red", Color.RED);
-        colors.put("white", Color.WHITE);
+        COLORS.put("black", Color.BLACK);
+        COLORS.put("blue", Color.BLUE);
+        COLORS.put("green", Color.GREEN);
+        COLORS.put("red", Color.RED);
+        COLORS.put("white", Color.WHITE);
     }
 
     /**
@@ -238,13 +238,13 @@ public class Parser {
             underline = true;
         } else if (tag.equals("/ul")) {
             underline = false;
-        } else if (fonts.containsKey(tag)) {
-            font = fonts.get(tag);
+        } else if (FONTS.containsKey(tag)) {
+            font = FONTS.get(tag);
             assert font != null;
         } else if (tag.startsWith("color=")) {
             final String colorName = tag.substring(6).toLowerCase();
-            if (colors.containsKey(colorName)) {
-                color = colors.get(colorName);
+            if (COLORS.containsKey(colorName)) {
+                color = COLORS.get(colorName);
                 assert color != null;
             } else {
                 // ignore unknown color
@@ -298,7 +298,7 @@ public class Parser {
     public static String toString(@NotNull final Color color) {
         // function need not be efficient since it is used for regression tests
         // only
-        for (final Map.Entry<String, Color> e : colors.entrySet()) {
+        for (final Map.Entry<String, Color> e : COLORS.entrySet()) {
             if (e.getValue() == color) {
                 return e.getKey();
             }

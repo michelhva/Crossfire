@@ -76,7 +76,7 @@ public class GUIMiniMap extends AbstractGUIMap {
      * The colors for displaying magic map data.
      */
     @NotNull
-    private static final Color[] tileColors = {
+    private static final Color[] TILE_COLORS = {
         Color.BLACK,
         Color.WHITE,
         Color.BLUE,
@@ -96,7 +96,7 @@ public class GUIMiniMap extends AbstractGUIMap {
     };
 
     static {
-        assert CrossfireMagicmapListener.FACE_COLOR_MASK+1 == tileColors.length;
+        assert CrossfireMagicmapListener.FACE_COLOR_MASK+1 == TILE_COLORS.length;
     }
 
     /**
@@ -120,7 +120,7 @@ public class GUIMiniMap extends AbstractGUIMap {
                         for (int x = 0; x < width; x++) {
                             final byte ch = data.get();
                             if (ch != 0) {
-                                g.setColor(tileColors[ch&FACE_COLOR_MASK]);
+                                g.setColor(TILE_COLORS[ch&FACE_COLOR_MASK]);
                                 final int sx = offsetX+x*tileSize;
                                 final int sy = offsetY+y*tileSize;
                                 g.fillRect(sx, sy, tileSize, tileSize);
