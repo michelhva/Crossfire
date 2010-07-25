@@ -36,20 +36,20 @@ public class Codec {
 
     /**
      * Patterns that must be encoded. The corresponding replacement strings are
-     * {@link #replacementsEncode}.
+     * {@link #REPLACEMENTS_ENCODE}.
      */
     @NotNull
-    private static final Pattern[] patternsEncode = {
+    private static final Pattern[] PATTERNS_ENCODE = {
         Pattern.compile("\\\\"),
         Pattern.compile("\r"),
         Pattern.compile("\n"),
     };
 
     /**
-     * The replacement strings for {@link #patternsEncode}.
+     * The replacement strings for {@link #PATTERNS_ENCODE}.
      */
     @NotNull
-    private static final String[] replacementsEncode = {
+    private static final String[] REPLACEMENTS_ENCODE = {
         Matcher.quoteReplacement("\\\\"),
         Matcher.quoteReplacement("\\r"),
         Matcher.quoteReplacement("\\n"),
@@ -57,20 +57,20 @@ public class Codec {
 
     /**
      * Patterns that must be decoded. The corresponding replacement strings are
-     * {@link #replacementsDecode}.
+     * {@link #REPLACEMENTS_DECODE}.
      */
     @NotNull
-    private static final Pattern[] patternsDecode = {
+    private static final Pattern[] PATTERNS_DECODE = {
         Pattern.compile("\\\\n"),
         Pattern.compile("\\\\r"),
         Pattern.compile("\\\\\\\\"),
     };
 
     /**
-     * The replacement strings for {@link #patternsDecode}.
+     * The replacement strings for {@link #PATTERNS_DECODE}.
      */
     @NotNull
-    private static final String[] replacementsDecode = {
+    private static final String[] REPLACEMENTS_DECODE = {
         Matcher.quoteReplacement("\n"),
         Matcher.quoteReplacement("\r"),
         Matcher.quoteReplacement("\\"),
@@ -90,10 +90,10 @@ public class Codec {
      */
     @NotNull
     public static String encode(@NotNull final String str) {
-        assert patternsEncode.length == replacementsEncode.length;
+        assert PATTERNS_ENCODE.length == REPLACEMENTS_ENCODE.length;
         String tmp = str;
-        for (int i = 0; i < patternsEncode.length; i++) {
-            tmp = patternsEncode[i].matcher(tmp).replaceAll(replacementsEncode[i]);
+        for (int i = 0; i < PATTERNS_ENCODE.length; i++) {
+            tmp = PATTERNS_ENCODE[i].matcher(tmp).replaceAll(REPLACEMENTS_ENCODE[i]);
         }
         return tmp;
     }
@@ -106,10 +106,10 @@ public class Codec {
      */
     @NotNull
     public static String decode(@NotNull final String str) {
-        assert patternsDecode.length == replacementsDecode.length;
+        assert PATTERNS_DECODE.length == REPLACEMENTS_DECODE.length;
         String tmp = str;
-        for (int i = 0; i < patternsDecode.length; i++) {
-            tmp = patternsDecode[i].matcher(tmp).replaceAll(replacementsDecode[i]);
+        for (int i = 0; i < PATTERNS_DECODE.length; i++) {
+            tmp = PATTERNS_DECODE[i].matcher(tmp).replaceAll(REPLACEMENTS_DECODE[i]);
         }
         return tmp;
     }

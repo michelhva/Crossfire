@@ -39,20 +39,20 @@ public class Timeouts {
      * to deliver.
      */
     @NotNull
-    private static final PriorityQueue<Event> events = new PriorityQueue<Event>();
+    private static final PriorityQueue<Event> EVENTS = new PriorityQueue<Event>();
 
     /**
      * Maps {@link TimeoutEvent} instance to {@link Event} instance. This
      * information is necessary for removing active timeouts.
      */
     @NotNull
-    private static final Map<TimeoutEvent, Event> timeoutEvents = new IdentityHashMap<TimeoutEvent, Event>();
+    private static final Map<TimeoutEvent, Event> TIMEOUT_EVENTS = new IdentityHashMap<TimeoutEvent, Event>();
 
     /**
      * The thread that delivers timeout events.
      */
     @NotNull
-    private static final Runnable deliverPendingTimeouts = new Runnable() {
+    private static final Runnable DELIVER_PENDING_TIMEOUTS = new Runnable() {
         /** {@inheritDoc} */
         @Override
         public void run() {
@@ -60,27 +60,27 @@ public class Timeouts {
             while (!Thread.currentThread().isInterrupted()) {
                 final Event event;
                 final boolean execute;
-                synchronized (events) {
+                synchronized (EVENTS) {
                     if (doWait) {
                         doWait = false;
-                        final Event tmp = events.peek();
+                        final Event tmp = EVENTS.peek();
                         try {
                             if (tmp == null) {
-                                events.wait();
+                                EVENTS.wait();
                             } else {
                                 //noinspection CallToNativeMethodWhileLocked
-                                events.wait(tmp.getTimeout()-System.currentTimeMillis());
+                                EVENTS.wait(tmp.getTimeout()-System.currentTimeMillis());
                             }
                         } catch (final InterruptedException ex) {
                             break;
                         }
                     }
 
-                    event = events.peek();
+                    event = EVENTS.peek();
                     //noinspection CallToNativeMethodWhileLocked
                     execute = event != null && event.getTimeout() <= System.currentTimeMillis();
                     if (execute) {
-                        events.poll();
+                        EVENTS.poll();
                     }
                 }
                 if (execute) {
@@ -93,7 +93,7 @@ public class Timeouts {
     };
 
     static {
-        new Thread(deliverPendingTimeouts).start();
+        new Thread(DELIVER_PENDING_TIMEOUTS).start();
     }
 
     /**
@@ -109,7 +109,7 @@ public class Timeouts {
      * @param timeoutEvent The timeout event to execute.
      */
     public static void reset(final int timeout, @NotNull final TimeoutEvent timeoutEvent) {
-        synchronized (events) {
+        synchronized (EVENTS) {
             remove(timeoutEvent);
             add(timeout, timeoutEvent);
         }
@@ -121,13 +121,13 @@ public class Timeouts {
      * @param timeoutEvent The timeout event to execute.
      */
     private static void add(final int timeout, @NotNull final TimeoutEvent timeoutEvent) {
-        synchronized (events) {
-            assert !timeoutEvents.containsKey(timeoutEvent);
+        synchronized (EVENTS) {
+            assert !TIMEOUT_EVENTS.containsKey(timeoutEvent);
 
             final Event event = new Event(timeout, timeoutEvent);
-            timeoutEvents.put(timeoutEvent, event);
-            events.add(event);
-            events.notifyAll();
+            TIMEOUT_EVENTS.put(timeoutEvent, event);
+            EVENTS.add(event);
+            EVENTS.notifyAll();
         }
     }
 
@@ -137,10 +137,10 @@ public class Timeouts {
      * @param timeoutEvent The timeout event to remove.
      */
     public static void remove(@NotNull final TimeoutEvent timeoutEvent) {
-        synchronized (events) {
-            final Event event = timeoutEvents.remove(timeoutEvent);
+        synchronized (EVENTS) {
+            final Event event = TIMEOUT_EVENTS.remove(timeoutEvent);
             if (event != null) {
-                events.remove(event);
+                EVENTS.remove(event);
             }
         }
     }

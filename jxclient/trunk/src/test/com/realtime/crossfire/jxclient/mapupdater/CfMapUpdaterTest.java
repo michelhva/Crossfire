@@ -48,7 +48,7 @@ public class CfMapUpdaterTest extends TestCase {
      * A .png file of size 64x64.
      */
     @NotNull
-    private static final byte[] png32x32 = {
+    private static final byte[] PNG32X32 = {
         (byte)0x89,
         (byte)0x50,
         (byte)0x4e,
@@ -151,7 +151,7 @@ public class CfMapUpdaterTest extends TestCase {
      * A .png file of size 64x64.
      */
     @NotNull
-    private static final byte[] png64x64 = {
+    private static final byte[] PNG64X64 = {
         (byte)0x89,
         (byte)0x50,
         (byte)0x4e,
@@ -267,7 +267,7 @@ public class CfMapUpdaterTest extends TestCase {
      * A .png file of size 128x256.
      */
     @NotNull
-    private static final byte[] png128x256 = {
+    private static final byte[] PNG128X256 = {
         (byte)0x89,
         (byte)0x50,
         (byte)0x4e,
@@ -518,8 +518,8 @@ public class CfMapUpdaterTest extends TestCase {
     public void testFogOfWar1() throws IOException {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
-        defineFace(faceCache, 1, "M", png64x64);
-        defineFace(faceCache, 2, "_", png32x32);
+        defineFace(faceCache, 1, "M", PNG64X64);
+        defineFace(faceCache, 2, "_", PNG32X32);
 
         final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
 
@@ -551,13 +551,13 @@ public class CfMapUpdaterTest extends TestCase {
     public void testDisplayArtifacts1() throws IOException {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
-        defineFace(faceCache, 307, "behemoth.x31", png64x64);
-        defineFace(faceCache, 308, "behemoth.x32", png64x64);
-        defineFace(faceCache, 309, "behemoth.x33", png64x64);
-        defineFace(faceCache, 310, "behemoth.x71", png64x64);
-        defineFace(faceCache, 932, "charwoman.132", png32x32);
-        defineFace(faceCache, 4607, "woodfloor.111", png32x32);
-        defineFace(faceCache, 312, "behemoth.x73", png64x64);
+        defineFace(faceCache, 307, "behemoth.x31", PNG64X64);
+        defineFace(faceCache, 308, "behemoth.x32", PNG64X64);
+        defineFace(faceCache, 309, "behemoth.x33", PNG64X64);
+        defineFace(faceCache, 310, "behemoth.x71", PNG64X64);
+        defineFace(faceCache, 932, "charwoman.132", PNG32X32);
+        defineFace(faceCache, 4607, "woodfloor.111", PNG32X32);
+        defineFace(faceCache, 312, "behemoth.x73", PNG64X64);
 
         final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
 
@@ -633,8 +633,8 @@ public class CfMapUpdaterTest extends TestCase {
     public void testDisplayArtifacts2() throws IOException {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
-        defineFace(faceCache, 7, "a.x11", png64x64);
-        defineFace(faceCache, 8, "b.x12", png64x64);
+        defineFace(faceCache, 7, "a.x11", PNG64X64);
+        defineFace(faceCache, 8, "b.x12", PNG64X64);
 
         final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
 
@@ -661,7 +661,7 @@ public class CfMapUpdaterTest extends TestCase {
         final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
 
         mapUpdater.processNewMap(23, 16);
-        defineFace(faceCache, 1316, "demon_lord.x11", png128x256);
+        defineFace(faceCache, 1316, "demon_lord.x11", PNG128X256);
 
         mapUpdater.processMapBegin();
         mapUpdater.processMapFace(4, 17, 6, 1316, true);

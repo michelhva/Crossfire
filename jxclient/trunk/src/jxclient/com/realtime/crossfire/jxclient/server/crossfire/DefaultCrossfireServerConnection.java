@@ -332,7 +332,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "accountlogin" command.
      */
     @NotNull
-    private static final byte[] accountLoginPrefix = {
+    private static final byte[] ACCOUNT_LOGIN_PREFIX = {
         'a',
         'c',
         'c',
@@ -352,7 +352,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "accountplay" command.
      */
     @NotNull
-    private static final byte[] accountPlayPrefix = {
+    private static final byte[] ACCOUNT_PLAY_PREFIX = {
         'a',
         'c',
         'c',
@@ -371,7 +371,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "accountaddplayer" command.
      */
     @NotNull
-    private static final byte[] accountAddPlayerPrefix = {
+    private static final byte[] ACCOUNT_ADD_PLAYER_PREFIX = {
         'a',
         'c',
         'c',
@@ -395,7 +395,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "accountnew" command.
      */
     @NotNull
-    private static final byte[] accountNewPrefix = {
+    private static final byte[] ACCOUNT_NEW_PREFIX = {
         'a',
         'c',
         'c',
@@ -413,7 +413,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "createplayer" command.
      */
     @NotNull
-    private static final byte[] createPlayerPrefix = {
+    private static final byte[] CREATE_PLAYER_PREFIX = {
         'c',
         'r',
         'e',
@@ -433,7 +433,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "addme" command.
      */
     @NotNull
-    private static final byte[] addmePrefix = {
+    private static final byte[] ADDME_PREFIX = {
         'a',
         'd',
         'd',
@@ -446,7 +446,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "apply" command.
      */
     @NotNull
-    private static final byte[] applyPrefix = {
+    private static final byte[] APPLY_PREFIX = {
         'a',
         'p',
         'p',
@@ -459,7 +459,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "askface" command.
      */
     @NotNull
-    private static final byte[] askfacePrefix = {
+    private static final byte[] ASKFACE_PREFIX = {
         'a',
         's',
         'k',
@@ -474,7 +474,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "examine" command.
      */
     @NotNull
-    private static final byte[] examinePrefix = {
+    private static final byte[] EXAMINE_PREFIX = {
         'e',
         'x',
         'a',
@@ -489,7 +489,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "lock" command.
      */
     @NotNull
-    private static final byte[] lockPrefix = {
+    private static final byte[] LOCK_PREFIX = {
         'l',
         'o',
         'c',
@@ -501,7 +501,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "lookat" command.
      */
     @NotNull
-    private static final byte[] lookatPrefix = {
+    private static final byte[] LOOKAT_PREFIX = {
         'l',
         'o',
         'o',
@@ -515,7 +515,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "mark" command.
      */
     @NotNull
-    private static final byte[] markPrefix = {
+    private static final byte[] MARK_PREFIX = {
         'm',
         'a',
         'r',
@@ -527,7 +527,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "move" command.
      */
     @NotNull
-    private static final byte[] movePrefix = {
+    private static final byte[] MOVE_PREFIX = {
         'm',
         'o',
         'v',
@@ -539,7 +539,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "ncom" command.
      */
     @NotNull
-    private static final byte[] ncomPrefix = {
+    private static final byte[] NCOM_PREFIX = {
         'n',
         'c',
         'o',
@@ -551,7 +551,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "reply" command.
      */
     @NotNull
-    private static final byte[] replyPrefix = {
+    private static final byte[] REPLY_PREFIX = {
         'r',
         'e',
         'p',
@@ -564,7 +564,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "requestinfo" command.
      */
     @NotNull
-    private static final byte[] requestinfoPrefix = {
+    private static final byte[] REQUESTINFO_PREFIX = {
         'r',
         'e',
         'q',
@@ -583,7 +583,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "setup" command.
      */
     @NotNull
-    private static final byte[] setupPrefix = {
+    private static final byte[] SETUP_PREFIX = {
         's',
         'e',
         't',
@@ -595,7 +595,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "toggleextendedtext" command.
      */
     @NotNull
-    private static final byte[] toggleextendedtextPrefix = {
+    private static final byte[] TOGGLEEXTENDEDTEXT_PREFIX = {
         't',
         'o',
         'g',
@@ -620,7 +620,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The command prefix for the "version" command.
      */
     @NotNull
-    private static final byte[] versionPrefix = {
+    private static final byte[] VERSION_PREFIX = {
         'v',
         'e',
         'r',
@@ -3578,7 +3578,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(accountLoginPrefix);
+            byteBuffer.put(ACCOUNT_LOGIN_PREFIX);
             byteBuffer.put((byte)login.length());
             byteBuffer.put(login.getBytes(UTF8));
             byteBuffer.put((byte)password.length());
@@ -3596,7 +3596,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send addme");
         }
-        writePacket(addmePrefix, addmePrefix.length);
+        writePacket(ADDME_PREFIX, ADDME_PREFIX.length);
     }
 
     /**
@@ -3609,7 +3609,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(applyPrefix);
+            byteBuffer.put(APPLY_PREFIX);
             putDecimal(tag);
             writePacket(writeBuffer, byteBuffer.position());
         }
@@ -3625,7 +3625,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(askfacePrefix);
+            byteBuffer.put(ASKFACE_PREFIX);
             putDecimal(num);
             writePacket(writeBuffer, byteBuffer.position());
         }
@@ -3641,7 +3641,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(examinePrefix);
+            byteBuffer.put(EXAMINE_PREFIX);
             putDecimal(tag);
             writePacket(writeBuffer, byteBuffer.position());
         }
@@ -3657,7 +3657,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(lockPrefix);
+            byteBuffer.put(LOCK_PREFIX);
             byteBuffer.put((byte)(val ? 1 : 0));
             byteBuffer.putInt(tag);
             writePacket(writeBuffer, byteBuffer.position());
@@ -3674,7 +3674,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(lookatPrefix);
+            byteBuffer.put(LOOKAT_PREFIX);
             putDecimal(dx);
             byteBuffer.put((byte)' ');
             putDecimal(dy);
@@ -3692,7 +3692,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(markPrefix);
+            byteBuffer.put(MARK_PREFIX);
             byteBuffer.putInt(tag);
             writePacket(writeBuffer, byteBuffer.position());
         }
@@ -3708,7 +3708,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(movePrefix);
+            byteBuffer.put(MOVE_PREFIX);
             putDecimal(to);
             byteBuffer.put((byte)' ');
             putDecimal(tag);
@@ -3730,7 +3730,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         synchronized (writeBuffer) {
             thisPacket = packet++&0x00FF;
             byteBuffer.clear();
-            byteBuffer.put(ncomPrefix);
+            byteBuffer.put(NCOM_PREFIX);
             byteBuffer.putShort((short)thisPacket);
             byteBuffer.putInt(repeat);
             byteBuffer.put(command.getBytes(UTF8));
@@ -3749,7 +3749,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(replyPrefix);
+            byteBuffer.put(REPLY_PREFIX);
             byteBuffer.put(text.getBytes(UTF8));
             writePacket(writeBuffer, byteBuffer.position());
         }
@@ -3768,7 +3768,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(requestinfoPrefix);
+            byteBuffer.put(REQUESTINFO_PREFIX);
             byteBuffer.put(infoType.getBytes(UTF8));
             writePacket(writeBuffer, byteBuffer.position());
         }
@@ -3784,7 +3784,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(setupPrefix);
+            byteBuffer.put(SETUP_PREFIX);
             if (options.length <= 0) {
                 byteBuffer.put((byte)' ');
             } else {
@@ -3811,7 +3811,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(toggleextendedtextPrefix);
+            byteBuffer.put(TOGGLEEXTENDEDTEXT_PREFIX);
             for (final int type : types) {
                 byteBuffer.put((byte)' ');
                 putDecimal(type);
@@ -3830,7 +3830,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(versionPrefix);
+            byteBuffer.put(VERSION_PREFIX);
             putDecimal(csval);
             byteBuffer.put((byte)' ');
             putDecimal(scval);
@@ -4152,7 +4152,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(accountPlayPrefix);
+            byteBuffer.put(ACCOUNT_PLAY_PREFIX);
             byteBuffer.put(name.getBytes(UTF8));
             writePacket(writeBuffer, byteBuffer.position());
         }
@@ -4168,7 +4168,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(accountAddPlayerPrefix);
+            byteBuffer.put(ACCOUNT_ADD_PLAYER_PREFIX);
             byteBuffer.put((byte)force);
             byteBuffer.put((byte)login.length());
             byteBuffer.put(login.getBytes(UTF8));
@@ -4188,7 +4188,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(accountNewPrefix);
+            byteBuffer.put(ACCOUNT_NEW_PREFIX);
             byteBuffer.put((byte)login.length());
             byteBuffer.put(login.getBytes(UTF8));
             byteBuffer.put((byte)password.length());
@@ -4207,7 +4207,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
-            byteBuffer.put(createPlayerPrefix);
+            byteBuffer.put(CREATE_PLAYER_PREFIX);
             byteBuffer.put((byte)login.length());
             byteBuffer.put(login.getBytes(UTF8));
             byteBuffer.put((byte)password.length());

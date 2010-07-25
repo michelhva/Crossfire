@@ -48,7 +48,7 @@ public class DarknessColors {
      * color. Not yet allocated entries are set to <code>null</code>.
      */
     @NotNull
-    private static final Color[] darknessColors = new Color[256];
+    private static final Color[] DARKNESS_COLORS = new Color[256];
 
     /**
      * Private constructor to prevent instantiation.
@@ -63,13 +63,13 @@ public class DarknessColors {
      */
     @NotNull
     public static Color getDarknessColor(final int darkness) {
-        synchronized (darknessColors) {
-            if (darknessColors[darkness] == null) {
+        synchronized (DARKNESS_COLORS) {
+            if (DARKNESS_COLORS[darkness] == null) {
                 final float alpha = MAX_DARKNESS_ALPHA*(CfMapSquare.DARKNESS_FULL_BRIGHT-darkness)/(float)CfMapSquare.DARKNESS_FULL_BRIGHT;
-                darknessColors[darkness] = new Color(0, 0, 0, alpha);
+                DARKNESS_COLORS[darkness] = new Color(0, 0, 0, alpha);
             }
 
-            return darknessColors[darkness];
+            return DARKNESS_COLORS[darkness];
         }
     }
 
