@@ -40,9 +40,9 @@ public abstract class ActivatableGUIElement extends GUIElement {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
+     * @param name the name of this element
      * @param extent the extent of this element
-     * @param transparency The transparency value for the backing buffer
+     * @param transparency the transparency value for the backing buffer
      */
     protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int transparency) {
         super(tooltipManager, elementListener, name, extent, transparency);

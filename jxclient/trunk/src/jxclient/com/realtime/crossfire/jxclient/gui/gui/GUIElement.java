@@ -134,12 +134,12 @@ public abstract class GUIElement extends JComponent {
     private TooltipText tooltipText = null;
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
+     * @param name the name of this element
      * @param extent the extent of this element
-     * @param transparency The transparency value for the backing buffer
+     * @param transparency the transparency value for the backing buffer
      */
     protected GUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final Extent extent, final int transparency) {
         setDoubleBuffered(false);
@@ -160,8 +160,8 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Return the {@link Gui} this element is part of.
-     * @return The gui, or <code>null</code>.
+     * Returns the {@link Gui} this element is part of.
+     * @return the gui or <code>null</code>
      */
     @Nullable
     public Gui getGui() {
@@ -169,8 +169,8 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Set the {@link Gui} this element is part of.
-     * @param gui The gui, or <code>null</code>.
+     * Sets the {@link Gui} this element is part of.
+     * @param gui the gui or <code>null</code>
      */
     public void setGui(@Nullable final Gui gui) {
         this.gui = gui;
@@ -179,6 +179,9 @@ public abstract class GUIElement extends JComponent {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString() {
@@ -243,20 +246,23 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Return whether this gui element should be ignored for user interaction.
-     * @return Whether this gui element should be ignored for user interaction.
+     * Returns whether this gui element should be ignored for user interaction.
+     * @return whether this gui element should be ignored for user interaction
      */
     public boolean isIgnore() {
         return ignore;
     }
 
     /**
-     * Mark this gui element to be ignored for user interaction.
+     * Marks this gui element to be ignored for user interaction.
      */
     public void setIgnore() {
         ignore = true;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String getName() {
@@ -266,7 +272,7 @@ public abstract class GUIElement extends JComponent {
     /**
      * Will be called when the user has clicked (pressed+released) this element.
      * This event will be delivered after {@link #mouseReleased(MouseEvent)}.
-     * @param e The mouse event relative to this element.
+     * @param e the mouse event relative to this element
      */
     public void mouseClicked(@NotNull final MouseEvent e) {
         if (gui != null) {
@@ -277,7 +283,7 @@ public abstract class GUIElement extends JComponent {
     /**
      * Will be called when the mouse has entered the bounding box of this
      * element.
-     * @param e The mouse event relative to this element.
+     * @param e the mouse event relative to this element
      */
     public void mouseEntered(@NotNull final MouseEvent e) {
         tooltipManager.setElement(this);
@@ -287,7 +293,7 @@ public abstract class GUIElement extends JComponent {
      * Will be called when the mouse has left the bounding box of this element.
      * This function will not be called unless {@link #mouseEntered(MouseEvent)}
      * has been called before.
-     * @param e The mouse event relative to this element.
+     * @param e the mouse event relative to this element
      */
     public void mouseExited(@NotNull final MouseEvent e) {
         tooltipManager.unsetElement(this);
@@ -295,7 +301,7 @@ public abstract class GUIElement extends JComponent {
 
     /**
      * Will be called when the user has pressed the mouse inside this element.
-     * @param e The mouse event relative to this element.
+     * @param e the mouse event relative to this element
      */
     public void mousePressed(@NotNull final MouseEvent e) {
     }
@@ -304,14 +310,14 @@ public abstract class GUIElement extends JComponent {
      * Will be called when the user has released the mouse. This event may be
      * delivered even if no previous {@link #mousePressed(MouseEvent)} has been
      * delivered before.
-     * @param e The mouse event relative to this element.
+     * @param e the mouse event relative to this element
      */
     public void mouseReleased(@NotNull final MouseEvent e) {
     }
 
     /**
      * Will be called when the mouse moves within this component. before.
-     * @param e The mouse event relative to this element.
+     * @param e the mouse event relative to this element
      */
     public void mouseMoved(@NotNull final MouseEvent e) {
     }
@@ -321,16 +327,16 @@ public abstract class GUIElement extends JComponent {
      * button is pressed. This event will be delivered after {@link
      * #mouseMoved(MouseEvent)}.
      * <p/>
-     * <p>Note: if the mouse leaves this element's bounding box while the mouse
+     * Note: if the mouse leaves this element's bounding box while the mouse
      * button is still pressed, further <code>mouseDragged</code> (but no
      * <code>mouseMoved</code>) events will be generated.
-     * @param e The mouse event relative to this element.
+     * @param e the mouse event relative to this element
      */
     public void mouseDragged(@NotNull final MouseEvent e) {
     }
 
     /**
-     * Record that {@link #bufferedImage} has changed and must be repainted.
+     * Records that {@link #bufferedImage} has changed and must be repainted.
      */
     public void setChanged() {
         if (changed) {
@@ -350,7 +356,7 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Record that {@link #bufferedImage} has changed and must be repainted.
+     * Records that {@link #bufferedImage} has changed and must be repainted.
      * Does not notify listeners.
      */
     protected void setChangedNoListeners() {
@@ -373,9 +379,9 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Set the tooltip text to show when the mouse is inside this element.
-     * @param tooltipText The text to show, or <code>null</cod> to disable the
-     * tooltip for this element.
+     * Sets the tooltip text to show when the mouse is inside this element.
+     * @param tooltipText the text to show or <code>null</cod> to disable the
+     * tooltip for this element
      */
     public void setTooltipText(@Nullable final String tooltipText) {
         final Component tmpGui = gui;
@@ -385,13 +391,13 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Set the tooltip text to show when the mouse is inside this element.
-     * @param tooltipText The text to show, or <code>null</cod> to disable the
-     * tooltip for this element.
+     * Sets the tooltip text to show when the mouse is inside this element.
+     * @param tooltipText the text to show, or <code>null</cod> to disable the
+     * tooltip for this element
      * @param x the x coordinate
      * @param y the y coordinate
-     * @param w the w coordinate
-     * @param h the h coordinate
+     * @param w the width
+     * @param h the height
      */
     public void setTooltipText(@Nullable final String tooltipText, final int x, final int y, final int w, final int h) {
         final TooltipText oldTooltipText = this.tooltipText;
@@ -409,9 +415,9 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Return the tooltip text to show when the mouse is inside this element.
-     * @return The text to show, or <code>null</cod> to disable the tooltip for
-     *         this element.
+     * Returns the tooltip text to show when the mouse is inside this element.
+     * @return the text to show or <code>null</cod> to disable the tooltip for
+     *         this element
      */
     @Nullable
     public TooltipText getTooltipText() {
@@ -419,9 +425,9 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Change the location of this gui element.
-     * @param x The new x-coordinate.
-     * @param y The new y-coordinate.
+     * Changes the location of this gui element.
+     * @param x the new x coordinate
+     * @param y the new y coordinate
      */
     public void setElementLocation(final int x, final int y) {
         extent.setLocation(new Expression(x, 0, 0), new Expression(y, 0, 0));
@@ -432,9 +438,9 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Change the size of this gui element.
-     * @param w The new width.
-     * @param h The new height.
+     * Changes the size of this gui element.
+     * @param w the new width
+     * @param h the new height
      */
     protected void setElementSize(final int w, final int h) {
         extent.setSize(new Expression(w, 0, 0), new Expression(h, 0, 0));
@@ -460,7 +466,7 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Re-create the contents of {@link #bufferedImage}.
+     * Re-creates the contents of {@link #bufferedImage}.
      */
     private void render() {
         synchronized (bufferedImageSync) {
@@ -474,7 +480,7 @@ public abstract class GUIElement extends JComponent {
     }
 
     /**
-     * Paint the element's contents into the passed graphics.
+     * Paints the element's contents into the passed graphics.
      * @param g the graphics to paint to
      */
     protected abstract void render(@NotNull final Graphics2D g);

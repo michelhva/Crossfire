@@ -33,8 +33,11 @@ import java.awt.geom.RectangularShape;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A button which displays a string. The button width does not depend on the
- * underlying images.
+ * A {@link com.realtime.crossfire.jxclient.gui.gui.GUIElement GUIElement} that
+ * implements a button. The button shows a background image and a text. The
+ * background image consists of three parts: left, middle, and right. Left and
+ * right are fixed size image, the middle part is clipped or repeated to the
+ * actual with of the button. underlying images.
  * @author Andreas Kirschbaum
  */
 public class GUITextButton extends AbstractButton {
@@ -75,19 +78,19 @@ public class GUITextButton extends AbstractButton {
     private final Color color;
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
+     * @param name the name of this element
      * @param extent the extent of this element
-     * @param up The images comprising the "up" button state.
-     * @param down The images comprising the "down" button state.
-     * @param text The button text.
-     * @param font The font to use.
-     * @param color The text color.
-     * @param autoRepeat Whether the button should autorepeat while being
-     * pressed.
-     * @param commandList The commands to execute when the button is selected.
+     * @param up the images comprising the "up" button state
+     * @param down the images comprising the "down" button state
+     * @param text the button text
+     * @param font the font to use
+     * @param color the text color
+     * @param autoRepeat whether the button should autorepeat while being
+     * pressed
+     * @param commandList the commands to execute when the button is selected
      */
     public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final CommandList commandList) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT, autoRepeat, commandList);
