@@ -3918,9 +3918,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
         final int prevNumLookObjects = currentNumLookObjects;
         this.currentNumLookObjects = currentNumLookObjects;
-        //        for (final NumLookObjectsListener listener : numLookObjectsListeners) {
-        //            listener.numLookObjectsChanged(currentNumLookObjects);
-        //        }
+        //for (final NumLookObjectsListener listener : numLookObjectsListeners) {
+        //    listener.numLookObjectsChanged(currentNumLookObjects);
+        //}
     }
 
     /**

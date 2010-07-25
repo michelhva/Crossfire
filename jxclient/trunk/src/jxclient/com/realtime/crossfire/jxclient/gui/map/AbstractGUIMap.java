@@ -50,7 +50,8 @@ import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Abstract base class for {@link GUIElement}s that display map views.
+ * Abstract base class for {@link GUIElement GUIElements} that display map
+ * views.
  * @author Andreas Kirschbaum
  */
 public abstract class AbstractGUIMap extends GUIElement {
@@ -61,7 +62,7 @@ public abstract class AbstractGUIMap extends GUIElement {
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link CfMapUpdater} instance to use.
+     * The {@link CfMapUpdater} instance to display.
      */
     @NotNull
     private final CfMapUpdater mapUpdater;
@@ -173,7 +174,10 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     @NotNull
     private final MapListener mapListener = new MapListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapChanged(@NotNull final CfMap map, @NotNull final Set<CfMapSquare> changedSquares) {
             final int x0 = map.getOffsetX();
@@ -197,6 +201,7 @@ public abstract class AbstractGUIMap extends GUIElement {
             }
             setChanged();
         }
+
     };
 
     /**
@@ -204,7 +209,10 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     @NotNull
     private final NewmapListener newmapListener = new NewmapListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void commandNewmapReceived() {
             synchronized (bufferedImageSync) {
@@ -221,6 +229,7 @@ public abstract class AbstractGUIMap extends GUIElement {
             }
             setChanged();
         }
+
     };
 
     /**
@@ -228,7 +237,10 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     @NotNull
     private final MapScrollListener mapscrollListener = new MapScrollListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapScrolled(final int dx, final int dy) {
             synchronized (bufferedImageSync) {
@@ -241,6 +253,7 @@ public abstract class AbstractGUIMap extends GUIElement {
             }
             setChanged();
         }
+
     };
 
     /**
@@ -248,11 +261,15 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     @NotNull
     private final MapSizeListener mapSizeListener = new MapSizeListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapSizeChanged(final int mapWidth, final int mapHeight) {
             setMapSize(mapWidth, mapHeight);
         }
+
     };
 
     /**

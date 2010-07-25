@@ -105,7 +105,10 @@ public class GUIMiniMap extends AbstractGUIMap {
      */
     @NotNull
     private final CrossfireMagicmapListener crossfireMagicmapListener = new CrossfireMagicmapListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void commandMagicmapReceived(final int width, final int height, final int px, final int py, @NotNull final ByteBuffer data) {
             synchronized (bufferedImageSync) {
@@ -131,6 +134,7 @@ public class GUIMiniMap extends AbstractGUIMap {
             }
             setChanged();
         }
+
     };
 
     /**
