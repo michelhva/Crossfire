@@ -235,8 +235,8 @@ public class DefaultJXCSkin implements JXCSkin {
         int width = 1;
         int height = 1;
         for (final GUIMap map : maps) {
-            width = Math.max(width, map.getMapWidth());
-            height = Math.max(height, map.getMapHeight());
+            width = Math.max(width, map.getPreferredMapWidth());
+            height = Math.max(height, map.getPreferredMapHeight());
         }
         return new Dimension(width, height);
     }
