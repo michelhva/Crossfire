@@ -57,16 +57,6 @@ public class GUIMap extends AbstractGUIMap {
     private final int tileSize;
 
     /**
-     * The map width in squares.
-     */
-    private int mapWidth;
-
-    /**
-     * The map height in squares.
-     */
-    private int mapHeight;
-
-    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -100,6 +90,8 @@ public class GUIMap extends AbstractGUIMap {
             final int dx1 = e.getX()-getOffsetX();
             final int dy1 = e.getY()-getOffsetY();
             if (dx1 >= 0 && dy1 >= 0) {
+                final int mapWidth = getMapWidth();
+                final int mapHeight = getMapHeight();
                 final int dx2 = dx1/tileSize-mapWidth/2;
                 final int dy2 = dy1/tileSize-mapHeight/2;
                 if (dx2 < mapWidth && dy2 < mapHeight) {
@@ -112,16 +104,6 @@ public class GUIMap extends AbstractGUIMap {
         case MouseEvent.BUTTON3:
             break;
         }
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    protected void setMapSize(final int mapWidth, final int mapHeight) {
-        super.setMapSize(mapWidth, mapHeight);
-        this.mapWidth = mapWidth;
-        this.mapHeight = mapHeight;
     }
 
     /**
