@@ -50,18 +50,6 @@ public interface CrossfireServerConnection extends ServerConnection {
     void addCrossfireServerConnectionListener(@NotNull CrossfireServerConnectionListener listener);
 
     /**
-     * Adds a listener to be notified about map size changes.
-     * @param listener the listener to add
-     */
-    void addMapSizeListener(@NotNull MapSizeListener listener);
-
-    /**
-     * Removes a listener to be notified about map size changes.
-     * @param listener the listener to remove
-     */
-    void removeMapSizeListener(@NotNull MapSizeListener listener);
-
-    /**
      * Adds a new listener monitoring the drawinfo S-&gt;C messages.
      * @param listener the listener to remove
      */

@@ -35,6 +35,7 @@ import com.realtime.crossfire.jxclient.map.CfMapSquareListener;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
+import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocket;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
@@ -108,6 +109,12 @@ public class CfMapUpdater {
      */
     @NotNull
     private final Collection<MapScrollListener> mapScrollListeners = new ArrayList<MapScrollListener>();
+
+    /**
+     * The {@link MapSizeListener}s to be notified.
+     */
+    @NotNull
+    private final Collection<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
 
     /**
      * Collects the changed map squares between calls to {@link
@@ -406,11 +413,27 @@ public class CfMapUpdater {
     }
 
     /**
+     * Adds a listener to be notified about map size changes.
+     * @param listener the listener to add
+     */
+    public void addMapSizeListener(@NotNull final MapSizeListener listener) {
+        mapSizeListeners.add(listener);
+    }
+
+    /**
+     * Removes a listener to be notified about map size changes.
+     * @param listener the listener to remove
+     */
+    public void removeMapSizeListener(@NotNull final MapSizeListener listener) {
+        mapSizeListeners.remove(listener);
+    }
+
+    /**
      * Resets the animation state.
      */
     private void reset() {
         synchronized (sync) {
-            processNewMap(1, 1);
+            processNewMap(width, height);
         }
     }
 
@@ -630,6 +653,7 @@ public class CfMapUpdater {
      */
     public void processNewMap(final int width, final int height) {
         synchronized (sync) {
+            final boolean changed = this.width != width || this.height != height;
             this.width = width;
             this.height = height;
             map = new CfMap(mapSquareListener);
@@ -639,6 +663,12 @@ public class CfMapUpdater {
             map.clearSquare(width-1, height-1);
 
             visibleAnimations.setMapSize(width, height);
+
+            if (changed) {
+                for (final MapSizeListener listener : mapSizeListeners) {
+                    listener.mapSizeChanged(width, height);
+                }
+            }
 
             for (final NewmapListener listener : newmapListeners) {
                 listener.commandNewmapReceived();
