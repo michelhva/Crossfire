@@ -268,7 +268,7 @@ adds the GUI element &quot;first&quot;, then all defined GUI elements except &qu
 <li>&lt;description...&gt; describes the option. It is displayed in tooltips.</li>
 </ul>
 
-<h4>def dialog: define layout of dialogs</h4>
+<h4><a name="def_dialog">def dialog: define layout of dialogs</a></h4>
 
 <p>syntax:</p>
 <pre>
@@ -284,7 +284,7 @@ adds the GUI element &quot;first&quot;, then all defined GUI elements except &qu
 <li>&lt;alpha&gt; is the transparency of the dialog between 0 and 1. 0=fully transparent; 1=fully opaque.</li>
 </ul>
 
-<h4><a name="def_name">def item: define layout for items</a></h4>
+<h4><a name="def_item">def item: define layout for items</a></h4>
 
 <p>syntax:</p>
 <pre>
@@ -715,7 +715,7 @@ Displays a spell known by the character.
 <li>&lt;default-color&gt; is the default color if the text does not include an explicit color specification.</li>
 </ul>
 
-<h3>log_color: change color of log_message</h3>
+<h3><a name="log_color">log_color: change color of log_message</a></h3>
 
 <p>syntax:</p>
 <pre>
@@ -1031,7 +1031,7 @@ Displays a spell known by the character.
 <li><code>DISCONNECT</code>: disconnects from the Crossfire server. Does nothing if not connected.</li>
 <li><code>GUI_META</code>: shows the server selection screen. Disconnects if connected.</li>
 <li><code>GUI_START</code>: shows the start screen. Disconnects if connected. Note: the start screen is currently disabled as it is not fully implemented. Therefore this command currently is identical to <code>GUI_META</code>.</li>
-<li><a name="comment_gui_execute_element"><code>GUI_EXECUTE_ELEMENT</code></a>: &lt;element&gt; must refer to an <a href="#item"><code>item</code></a> element. Executes the default action of the referenced item.</li>
+<li><a name="command_gui_execute_element"><code>GUI_EXECUTE_ELEMENT</code></a>: &lt;element&gt; must refer to an <a href="#item"><code>item</code></a> element. Executes the default action of the referenced item.</li>
 <li><a name="command_dialog_open"><code>DIALOG_OPEN &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Makes the dialog visible.</li>
 <li><a name="command_dialog_toggle"><code>DIALOG_TOGGLE &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Makes the dialog invisible.</li>
 <li><a name="command_dialog_close"><code>DIALOG_CLOSE &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Toggles the visibility of the dialog.</li>
