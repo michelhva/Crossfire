@@ -595,4 +595,20 @@ public abstract class AbstractGUIMap extends GUIElement {
         g.drawImage(image, x, y, tileSize, tileSize, null);
     }
 
+    /**
+     * Returns the map width in squares.
+     * @return the map width
+     */
+    protected int getMapWidth() {
+        return mapWidth;
+    }
+
+    /**
+     * Returns the map height in squares.
+     * @return the map height
+     */
+    protected int getMapHeight() {
+        return mapHeight;
+    }
+
 }
