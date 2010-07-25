@@ -63,16 +63,6 @@ public class GUIMiniMap extends AbstractGUIMap {
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
-     * The x square coordinate of the player tile.
-     */
-    private int playerOffsetX;
-
-    /**
-     * The y square coordinate of the player tile.
-     */
-    private int playerOffsetY;
-
-    /**
      * The colors for displaying magic map data.
      */
     @NotNull
@@ -170,22 +160,14 @@ public class GUIMiniMap extends AbstractGUIMap {
     @Override
     protected void markPlayer(@NotNull final Graphics g, final int dx, final int dy) {
         if (dx != 0 || dy != 0) {
+            final int playerOffsetX = (getMapWidth()-1)/2;
+            final int playerOffsetY = (getMapHeight()-1)/2;
             final int mapSquareX = playerOffsetX-dx;
             final int mapSquareY = playerOffsetY-dy;
             redrawSquare(g, mapUpdater.getMap().getMapSquare(mapSquareX, mapSquareY), mapSquareX, mapSquareY);
         }
         g.setColor(Color.RED);
         g.fillRect(getPlayerX(), getPlayerY(), tileSize, tileSize);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    protected void setMapSize(final int mapWidth, final int mapHeight) {
-        super.setMapSize(mapWidth, mapHeight);
-        playerOffsetX = (mapWidth-1)/2;
-        playerOffsetY = (mapHeight-1)/2;
     }
 
 }
