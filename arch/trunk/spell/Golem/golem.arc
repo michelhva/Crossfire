@@ -14,4 +14,5 @@ level 4
 speed 0.1
 exp 65
 weight 200000
+move_type walk
 end

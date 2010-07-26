@@ -17,4 +17,5 @@ speed 0.25
 resist_magic 100
 exp 1000
 weight 200000
+move_type walk
 end
