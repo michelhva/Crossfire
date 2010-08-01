@@ -43,7 +43,7 @@ face rune_fire.111
 hp 1
 other_arch spell_dragonbreath
 msg
-You detonate a Rune of Firebreath!
+You detonate a Rune of Dragon's Breath!
 endmsg
 animation rune_dragonbreath
 speed 1
