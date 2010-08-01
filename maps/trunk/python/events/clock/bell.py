@@ -3,6 +3,33 @@
 # This script makes players aware of the time, tracking the current time
 import Crossfire
 
+def ring_scorn(pl):
+    god = pl.God
+    if (god == 'Devourers' or god == 'Sorig' or god == 'Ruggilli' or god == 'Gaea' or god == 'Mostrai' or god == 'Lythander'):
+        pl.Message('You hear the bell of the glorious temple of %s'%god)
+    elif (god == 'Valriel' or god == 'Gorokh'):
+        pl.Message('You hear the bell of the glorious church of %s'%god)
+    else:
+        pl.Message("You hear the bells of the various temples of Scorn.")
+
+def ring_darcap(pl):
+    god = pl.God
+    if (god == 'Devoureres'):
+        pl.Message('You hear the glorious bell of St Andreas')
+    else:
+        pl.Message("You hear the bell of St Andreas.")
+
+def ring_navar(pl):
+    god = pl.God
+    if (god == 'Gorokh' or god == 'Ruggilli' or god == 'Sorig' or god == 'Valriel'):
+        pl.Message('You hear the bell of the glorious temple of %s'%god)
+    elif (god == 'Mostrai'):
+        pl.Message('You hear the bell of Mostrai\'s glorious cathedral')
+    elif (god == 'Gaea'):
+        pl.Message('You hear the bell of Gaea\'s glorious shrine')
+    else:
+        pl.Message("You hear the bells of the temples of Navar.")
+
 def ring_bell():
     players = Crossfire.GetPlayers()
     for player in players:
@@ -11,11 +38,11 @@ def ring_bell():
         if player.Map.Region == None:
             continue
         if player.Map.Region.Name == 'scorn':
-            player.Message("You hear the bells of the various temples of Scorn.")
+            ring_scorn(player)
         elif player.Map.Region.Name == 'darcap':
-            player.Message("You hear the bell of St Andreas.")
+            ring_darcap(player)
         elif player.Map.Region.Name == 'navar':
-            player.Message("You hear the bell of all the temples of Navar.")
+            ring_navar(player)
 
 dict = Crossfire.GetPrivateDictionary()
 hour = Crossfire.GetTime()[3]
