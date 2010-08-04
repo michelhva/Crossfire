@@ -4413,10 +4413,12 @@ x 12
 y 14
 end
 arch farmhouse
+name Pimol's Fine Bow Shop
+slaying /navar_city/bow_shop
+hp 4
+sp 8
 x 12
 y 14
-arch store_weapons_fant
-end
 end
 arch dungeon_magic
 x 12
