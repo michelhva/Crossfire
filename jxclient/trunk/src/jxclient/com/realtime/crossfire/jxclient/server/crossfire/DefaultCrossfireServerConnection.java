@@ -2379,6 +2379,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     crossfireAccountListener.startPlaying();
                 }
                 setClientSocketState(ClientSocketState.ACCOUNT_INFO, ClientSocketState.CONNECTED);
+                negotiateNumLookObjects(preferredNumLookObjects);
             }
             negotiateMapSize(preferredMapWidth, preferredMapHeight);
         }
