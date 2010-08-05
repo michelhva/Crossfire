@@ -2252,7 +2252,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         /* number of characters */
         int count = getInt1(packet);
         while (count > 0) {
-
             String name = "";
             String cClass = "";
             String race = "";
@@ -2287,48 +2286,56 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         debugProtocol.debugProtocolWrite("recv accountplayers name="+name);
                     }
                     break;
+
                 case ACL_CLASS:
                     cClass = getString(packet, len-1);
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv accountplayers class="+cClass);
                     }
                     break;
+
                 case ACL_RACE:
                     race = getString(packet, len-1);
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv accountplayers race="+race);
                     }
                     break;
+
                 case ACL_LEVEL:
                     level = getInt2(packet);
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv accountplayers level="+level);
                     }
                     break;
+
                 case ACL_FACE:
                     face = getString(packet, len-1);
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv accountplayers face="+face);
                     }
                     break;
+
                 case ACL_PARTY:
                     party = getString(packet, len-1);
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv accountplayers party="+party);
                     }
                     break;
+
                 case ACL_MAP:
                     map = getString(packet, len-1);
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv accountplayers map="+map);
                     }
                     break;
+
                 case ACL_FACE_NUM:
                     faceNumber = getInt2(packet);
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv accountplayers face="+faceNumber);
                     }
                     break;
+
                 default:
                     // ignore those values we don't understand
                     if (debugProtocol != null) {
@@ -2622,7 +2629,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void processExtendedTextSet(@NotNull final ByteBuffer packet) {
         final int args = packet.position();
-        for (;;) {
+        for (; ;) {
             final int startPos = packet.position();
             while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
                 packet.get();
