@@ -4,9 +4,11 @@ width 6
 height 6
 msg
 Created:  1998-02-26
+Modified: 2010-08-07 Nicolas Weeger
 endmsg
 end
 arch statue
+move_block swim
 end
 arch fountain
 x 1

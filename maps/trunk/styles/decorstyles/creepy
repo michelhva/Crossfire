@@ -4,6 +4,7 @@ width 6
 height 6
 msg
 Created:  1998-02-26
+Modified: 2010-08-07 Nicolas Weeger
 endmsg
 end
 arch gravestone
@@ -49,10 +50,12 @@ y 2
 end
 arch statue
 x 4
+move_block swim
 end
 arch statue
 x 4
 y 1
+move_block swim
 end
 arch bones5
 x 4
