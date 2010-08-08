@@ -19,7 +19,7 @@ duration_modifier 1
 dam 80
 dam_modifier 1
 range 0
-maxsp 10
+maxsp 20
 is_used_up 1
 move_block all
 tear_down 1

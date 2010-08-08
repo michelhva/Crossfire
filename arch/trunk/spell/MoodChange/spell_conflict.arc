@@ -15,7 +15,7 @@ no_drop 1
 invisible 1
 range 5
 range_modifier 10
-maxgrace 10
+maxgrace 20
 berserk 1
 other_arch detect_magic
 msg

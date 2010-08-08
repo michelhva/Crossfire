@@ -16,7 +16,7 @@ no_drop 1
 invisible 1
 duration 50
 duration_modifier 2
-maxgrace 50
+maxgrace 30
 range 2
 range_modifier 13
 move_block all

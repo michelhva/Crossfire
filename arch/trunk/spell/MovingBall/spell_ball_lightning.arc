@@ -16,7 +16,7 @@ dam 8
 dam_modifier 3
 duration 40
 duration_modifier 1
-maxsp 15
+maxsp 20
 attacktype 10
 no_drop 1
 invisible 1

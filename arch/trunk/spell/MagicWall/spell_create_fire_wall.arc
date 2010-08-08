@@ -18,7 +18,7 @@ duration 260
 duration_modifier 1
 dam 4
 dam_modifier 3
-maxsp 8
+maxsp 20 
 attacktype 6
 range 2
 range_modifier 10

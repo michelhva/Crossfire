@@ -16,7 +16,7 @@ no_drop 1
 invisible 1
 duration 300
 duration_modifier 1
-maxgrace 15
+maxgrace 20
 race undead
 msg
 An invisibility spell that hides the

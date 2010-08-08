@@ -14,11 +14,11 @@ subtype 16
 value 180
 no_drop 1
 invisible 1
-range 5
-range_modifier 6
-dam 15
-dam_modifier 3
-maxsp 15
+range 4
+range_modifier 12
+dam 60
+dam_modifier 1
+maxsp 20
 attacktype 2
 msg
 Destruction damages all creatures around

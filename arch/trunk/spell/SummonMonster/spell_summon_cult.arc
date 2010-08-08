@@ -15,7 +15,7 @@ no_drop 1
 invisible 1
 attack_movement 16
 race GODCULTMON
-maxgrace 10
+maxgrace 20
 msg
 Summons pet monsters from your god.  The
 pets move around on their own and attack

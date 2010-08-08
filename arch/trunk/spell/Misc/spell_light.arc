@@ -19,7 +19,7 @@ duration 1000
 duration_modifier 1
 range_modifier 10
 range 2
-maxgrace 10
+maxgrace 20
 no_drop 1
 invisible 1
 msg

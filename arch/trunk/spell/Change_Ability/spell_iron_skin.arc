@@ -18,7 +18,7 @@ duration 500
 dam_modifier 5
 resist_physical 20
 ac 2
-maxgrace 8
+maxgrace 24
 msg
 Iron skin toughens the skin of the recipient,
 making them harder to hit and reducing the

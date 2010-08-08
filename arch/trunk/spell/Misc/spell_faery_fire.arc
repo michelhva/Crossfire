@@ -18,7 +18,7 @@ range 5
 range_modifier 6
 duration 5
 duration_modifier 5
-maxsp 15
+maxsp 20
 msg
 Causes creatures near the caster to glow
 and may have other effects. It is the

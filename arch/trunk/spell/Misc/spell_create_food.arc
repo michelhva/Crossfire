@@ -15,7 +15,7 @@ no_drop 1
 invisible 1
 food 100
 duration_modifier 1
-maxsp 10
+maxsp 20
 msg
 Creates a food item for the caster.  It
 is possible to specify what to make with
