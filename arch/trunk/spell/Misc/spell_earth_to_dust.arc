@@ -14,7 +14,7 @@ subtype 23
 value 20
 no_drop 1
 invisible 1
-maxsp 3
+maxsp 20
 range 2
 range_modifier 3
 msg

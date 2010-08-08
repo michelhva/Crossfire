@@ -13,7 +13,7 @@ dam_modifier 3
 range 10
 duration 2
 range_modifier 5
-maxsp 16
+maxsp 24
 type 101
 subtype 7
 value 130

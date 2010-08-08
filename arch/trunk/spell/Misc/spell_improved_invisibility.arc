@@ -16,7 +16,7 @@ no_drop 1
 invisible 1
 duration 200
 duration_modifier 1
-maxsp 10
+maxsp 20
 make_invisible 1
 msg
 Makes the caster invisible. Unlike the

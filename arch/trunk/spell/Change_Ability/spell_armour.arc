@@ -18,7 +18,7 @@ duration 500
 dam_modifier 5
 resist_physical 20
 ac 2
-maxsp 8
+maxsp 24
 msg
 Armour creates fields of force around the
 player, reducing the amount of damage the

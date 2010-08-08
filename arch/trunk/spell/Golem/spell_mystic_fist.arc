@@ -8,12 +8,12 @@ sp 10
 casting_time 15
 path_attuned 64
 other_arch mystic_fist
-dam 8
-dam_modifier 10
+dam 40
+dam_modifier 5
 duration 50
 duration_modifier 10
-range_modifier 20
-maxsp 15
+range_modifier 30
+maxsp 20
 type 101
 subtype 12
 value 50

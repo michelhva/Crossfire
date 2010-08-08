@@ -17,7 +17,7 @@ duration_modifier 6
 duration 500
 dam_modifier 5
 hp 1
-maxgrace 10
+maxgrace 20
 msg
 Increases the rate of healing.
 endmsg

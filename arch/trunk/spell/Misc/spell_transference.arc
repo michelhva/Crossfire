@@ -15,7 +15,7 @@ no_drop 1
 invisible 1
 dam 8
 dam_modifier 2
-maxsp 4
+maxsp 20
 msg
 Transfers spell points to other players
 by firing this spell at them. If used on

@@ -16,7 +16,7 @@ range 5
 range_modifier 10
 dam_modifier 1
 duration_modifier 1
-maxgrace 24
+maxgrace 12
 no_drop 1
 invisible 1
 msg

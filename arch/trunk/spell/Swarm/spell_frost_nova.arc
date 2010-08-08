@@ -14,7 +14,7 @@ path_attuned 16
 other_arch spell_asteroid
 duration 3
 duration_modifier 4
-maxsp 12
+maxsp 20
 no_drop 1
 invisible 1
 msg

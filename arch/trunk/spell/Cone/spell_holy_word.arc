@@ -13,7 +13,7 @@ dam_modifier 4
 range 2
 duration 1
 range_modifier 4
-maxgrace 10
+maxgrace 24
 type 101
 subtype 7
 value 10

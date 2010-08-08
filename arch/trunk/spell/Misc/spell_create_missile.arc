@@ -16,7 +16,7 @@ invisible 1
 dam_modifier 6
 duration 5
 duration_modifier 2
-maxsp 5
+maxsp 15 
 msg
 Creates arrows for use with a bow or
 crossbow. To create crossbow bolts,

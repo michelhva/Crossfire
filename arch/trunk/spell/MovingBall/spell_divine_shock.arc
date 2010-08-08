@@ -17,7 +17,7 @@ dam 1
 dam_modifier 3
 duration 30
 duration_modifier 2
-maxgrace 5
+maxgrace 10
 attacktype 1048584
 no_drop 1
 invisible 1

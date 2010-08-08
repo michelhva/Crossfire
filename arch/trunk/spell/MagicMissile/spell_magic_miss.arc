@@ -10,7 +10,7 @@ path_attuned 16
 other_arch magic_missile
 dam 9
 dam_modifier 1
-maxsp 10
+maxsp 20
 skill sorcery
 type 101
 subtype 11

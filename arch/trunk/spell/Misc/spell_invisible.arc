@@ -16,7 +16,7 @@ no_drop 1
 invisible 1
 duration 300
 duration_modifier 1
-maxsp 15
+maxsp 20
 msg
 Makes the caster invisible. Attacking
 other creatures or using spells causes

@@ -9,11 +9,11 @@ casting_time 10
 path_attuned 0
 other_arch windstorm
 dam 0
-dam_modifier 0
+dam_modifier 4
 range 20
 duration 3
 range_modifier 4
-maxgrace 8
+maxgrace 24
 type 101
 subtype 7
 value 30
