@@ -12,9 +12,7 @@ anim_speed 4
 client_anim_random 1
 Cha -5
 msg
-  There is a powerful evil spirit in the
-  shield dominating your mind. You are
-  struggling to retain control of yourself.
+  There is a powerful evil spirit in the shield dominating your mind. You are struggling to retain control of yourself.
 endmsg
 resist_fire 30
 resist_drain 100
