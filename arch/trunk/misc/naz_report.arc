@@ -1,14 +1,11 @@
 Object naz_report
 name Nazgul Report
 msg
-A Nazgul is somewhat like a grimreaper.
-However, while grimreapers are vulnerable to
-magic, Nazgul seem to be immune to magic.
-Nazgul have a drain attack.
-Nazgul cannot be attacked physically,
-except in a Special Case:
+A Nazgul is somewhat like a grimreaper. However, while grimreapers are vulnerable to magic, Nazgul seem to be immune to magic.
+
+Nazgul have a drain attack. Nazgul cannot be attacked physically, except in a Special Case:
 * this scroll is broken, *
-*so I cannot continue to read *
+* so I cannot continue to read *
 endmsg
 face naz_report.111
 nrof 1
