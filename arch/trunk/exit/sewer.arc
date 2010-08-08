@@ -4,9 +4,7 @@ face sewer_access.111
 type 66
 no_pick 1
 msg
-You open the sewer access
-grid and jump down.
-My god, you are stinking!
+You open the sewer access grid and jump down. My god, you are stinking!
 endmsg
 client_type 25012
 end
@@ -16,9 +14,7 @@ face sewer_access.112
 type 66
 no_pick 1
 msg
-You open the sewer access
-grid and jump down.
-My god, you are stinking!
+You open the sewer access grid and jump down. My god, you are stinking!
 endmsg
 client_type 25012
 end
