@@ -22,9 +22,7 @@ exp 5000
 hp 1
 sp 1
 msg
-You notice everyone is looking at you with
-evil intent.  You must kill them!  You begin
-to salivate.
+You notice everyone is looking at you with evil intent.  You must kill them!  You begin to salivate.
 endmsg
 race *
 level 12
