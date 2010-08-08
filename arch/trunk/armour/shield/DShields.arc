@@ -11,8 +11,7 @@ animation DShields
 anim_speed 5
 client_anim_random 1
 msg
-  There is a strong evil spirit in the shield
-  trying to dominate you.
+  There is a strong evil spirit in the shield trying to dominate you.
 endmsg
 Cha -3
 resist_fire 30
