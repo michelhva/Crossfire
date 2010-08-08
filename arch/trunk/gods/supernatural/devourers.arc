@@ -43,8 +43,7 @@ can_use_shield 1
 undead 1
 can_see_in_dark 1
 msg
-Soul Eaters, Harbingers of Death, Nameless
-Lords of the Tomb
+Soul Eaters, Harbingers of Death, Nameless Lords of the Tomb
 endmsg
 exp 1
 weight 1

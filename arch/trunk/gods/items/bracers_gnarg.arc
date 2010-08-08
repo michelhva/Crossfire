@@ -4,12 +4,9 @@ name bracers
 title of strength of Wargs
 face bracersdex.111
 msg
-  An exceptional pair of bracers. Not only do
-  they provide the wearer with protection
-  from cold, they also increase the wearer's
-  damage and strength, and help heal the body
-  from damage. A mighty gift from Gnarg sent
-  to aid you in annihilating His enemies.
+  An exceptional pair of bracers. Not only do they provide the wearer with protection from cold, they also increase the wearer's damage and strength, and help heal the body from damage.
+
+  A mighty gift from Gnarg sent to aid you in annihilating His enemies.
 endmsg
 type 104
 Str 2

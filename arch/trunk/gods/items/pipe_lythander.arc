@@ -4,9 +4,7 @@ name_pl Lythander's pipes
 face claypipe.111
 randomitems pipe_lythander
 msg
-    This pipe is the finest you have ever
-    seen.  Imagine the smoke rings you
-    could blow with it...
+    This pipe is the finest you have ever seen.  Imagine the smoke rings you could blow with it...
 endmsg
 type 3
 luck 1
