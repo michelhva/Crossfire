@@ -3,9 +3,7 @@ name Gaea's Shield of Earth
 face earth_shield.111
 animation shield_gaea
 msg
-  This shield is highly enchanted by the forces
-  of life and nature. It is a personal gift from
-  Gaea, to protect her beloved children.
+  This shield is highly enchanted by the forces of life and nature. It is a personal gift from Gaea, to protect her beloved children.
 endmsg
 is_animated 1
 ac 4

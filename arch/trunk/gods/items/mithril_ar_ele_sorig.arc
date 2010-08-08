@@ -10,11 +10,7 @@ ac 4
 resist_physical 40
 resist_electricity 40
 msg
-  Sorig has granted you this fine mail.  It
-  grants great protection from electricity
-  and physical attacks without reducing your
-  mobility. Be warned that what Sorig gives,
-  Sorig can take away.
+  Sorig has granted you this fine mail.  It grants great protection from electricity and physical attacks without reducing your mobility. Be warned that what Sorig gives, Sorig can take away.
 endmsg
 startequip 1
 Dex 1

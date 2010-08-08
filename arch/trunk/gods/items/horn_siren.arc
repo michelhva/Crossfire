@@ -4,8 +4,7 @@ title of the Sirens
 face shellhorn1.111
 randomitems horn_siren
 msg
-  Putting this shell to your ear, you hear a
-  strange and haunting melody.
+  Putting this shell to your ear, you hear a strange and haunting melody.
 endmsg
 type 3
 level 40

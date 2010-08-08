@@ -3,7 +3,6 @@ type 8
 invisible 1
 name message
 msg
-You are filled with a desire to slay all
-faeries and dwarfs.
+You are filled with a desire to slay all faeries and dwarfs.
 endmsg
 end
