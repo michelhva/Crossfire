@@ -11,6 +11,8 @@ sys.stdout=open("/tmp/output.log1",'w')
 #print CFDataBase.__file__
 
 CFDB=CFDataBase.CFDataBase("PShop")
+PicDB=CFDataBase.CFDataBase("PicDB")
+PicDict=PicDB.get("Dict")
 bank=CFBank.CFBank("ImperialBank_DB")
 pshop=whoami.Map.Path.replace("/","_")
 
@@ -174,11 +176,9 @@ if whoami.Name.find("Store")>-1:
 		t.Title="Python"
 		t.Slaying="/python/pshop/Ice.py"
 		GlassReplica.Speed=0.0010000000475
+		sys.stderr=open('/tmp/output.log', 'w')
 		
-		
-		
-		
-		GlassReplica.Face=str(Item.Face)
+		GlassReplica.Face=PicDict.get(str(Item.Face),"scroll.111")
 		#GlassReplica.Material=(96,'ice')
 		
 		GlassReplica.Name=str(Item.Quantity)+" "+Item.Name+" Price: "+str(Value)
