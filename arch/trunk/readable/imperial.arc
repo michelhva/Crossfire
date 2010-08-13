@@ -1,11 +1,12 @@
 Object imperial
+name Imperial Bank Note
 face imperial.111
 race gold and jewels
 nrof 1
-type 8
+type 36
 skill literacy
 material 1
-value 1
+value 10000
 weight 5
 name_pl imperials
 msg
