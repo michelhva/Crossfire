@@ -22,8 +22,6 @@ no_drop 1
 invisible 1
 skill evocation
 msg
-Fires a cone of force that attacks
-creatures in its path with both magical
-and physical damage.
+Fires a cone of force that attacks creatures in its path with both magical and physical damage.
 endmsg
 end

@@ -21,13 +21,6 @@ dam_modifier 1
 maxsp 20
 attacktype 2
 msg
-Destruction damages all creatures around
-the player.  Unlike most spells, this
-one works through walls and doors so the
-caster need not see targets to attack
-them.  The damage delivered is entirely
-magical in nature, and increases as
-sorcery skill level, Intelligence,
-Wisdom, and Power stats increase.
+Destruction damages all creatures around the player.  Unlike most spells, this one works through walls and doors so the caster need not see targets to attack them.  The damage delivered is entirely magical in nature, and increases as sorcery skill level, Intelligence, Wisdom, and Power stats increase.
 endmsg
 end

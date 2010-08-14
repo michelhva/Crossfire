@@ -18,7 +18,6 @@ duration 500
 maxgrace 50
 resist_drain 100
 msg
-Grants complete protection from attacks
-that drain experience.
+Grants complete protection from attacks that drain experience.
 endmsg
 end

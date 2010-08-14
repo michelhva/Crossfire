@@ -18,7 +18,6 @@ duration 500
 maxgrace 50
 resist_paralyze 100
 msg
-Grants complete protection from
-paralyzing attacks.
+Grants complete protection from paralyzing attacks.
 endmsg
 end

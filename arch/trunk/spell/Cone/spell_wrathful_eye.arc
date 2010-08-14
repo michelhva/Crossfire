@@ -22,9 +22,6 @@ no_drop 1
 invisible 1
 skill praying
 msg
-Summons an image of Valriel's Eye that
-may blind creatures in the cone-shaped
-area in front of it.  The spell is
-granted to Valriel.
+Summons an image of Valriel's Eye that may blind creatures in the cone-shaped area in front of it.  The spell is granted to Valriel.
 endmsg
 end

@@ -19,7 +19,6 @@ maxgrace 40
 resist_poison 50
 dam_modifier 4
 msg
-Improves the caster's protection against
-poisoning attacks.
+Improves the caster's protection against poisoning attacks.
 endmsg
 end

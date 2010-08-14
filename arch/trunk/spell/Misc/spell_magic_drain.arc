@@ -17,7 +17,6 @@ dam -75
 dam_modifier 1
 maxsp 20
 msg
-Drains mana points from the target and
-gives them to the caster. 
+Drains mana points from the target and gives them to the caster. 
 endmsg
 end

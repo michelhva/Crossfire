@@ -17,10 +17,6 @@ duration_modifier 4
 duration 500
 move_type fly_low
 msg
-Causes the caster to float or fly low
-over the ground so as to prevent falling
-into holes or traps.  It is not possible
-to pick things up off the ground while
-levitating.
+Causes the caster to float or fly low over the ground so as to prevent falling into holes or traps.  It is not possible to pick things up off the ground while levitating.
 endmsg
 end

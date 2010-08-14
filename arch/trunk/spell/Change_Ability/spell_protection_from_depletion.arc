@@ -19,7 +19,6 @@ maxgrace 40
 resist_deplete 40
 dam_modifier 3
 msg
-Improves the caster's protection against
-stat depletion attacks.
+Improves the caster's protection against stat depletion attacks.
 endmsg
 end

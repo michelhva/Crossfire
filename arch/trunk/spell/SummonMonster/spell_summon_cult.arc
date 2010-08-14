@@ -17,8 +17,6 @@ attack_movement 16
 race GODCULTMON
 maxgrace 20
 msg
-Summons pet monsters from your god.  The
-pets move around on their own and attack
-the caster's enemies.
+Summons pet monsters from your god.  The pets move around on their own and attack the caster's enemies.
 endmsg
 end

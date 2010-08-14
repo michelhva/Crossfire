@@ -24,9 +24,6 @@ range 2
 range_modifier 14
 move_block all
 msg
-Creates a wall of thorns on the ground
-that slows and damages creatures that
-attempt to cross through it.  Both Gaea
-and Mostrai grant this spell.
+Creates a wall of thorns on the ground that slows and damages creatures that attempt to cross through it.  Both Gaea and Mostrai grant this spell.
 endmsg
 end

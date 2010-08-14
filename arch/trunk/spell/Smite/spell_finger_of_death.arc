@@ -21,8 +21,6 @@ attacktype 131072
 no_drop 1
 invisible 1
 msg
-A spell granted by the Devourers that
-can to kill a target outright without
-respect to hit points.
+A spell granted by the Devourers that can to kill a target outright without respect to hit points.
 endmsg
 end

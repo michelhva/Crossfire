@@ -19,8 +19,6 @@ attacktype 1048576
 no_drop 1
 invisible 1
 msg
-Fires a bullet that inflicts damage on
-any creature it strikes.  This spell is
-granted by Sorig.
+Fires a bullet that inflicts damage on any creature it strikes.  This spell is granted by Sorig.
 endmsg
 end

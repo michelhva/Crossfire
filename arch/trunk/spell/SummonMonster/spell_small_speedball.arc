@@ -16,9 +16,6 @@ no_drop 1
 invisible 1
 monster 1
 msg
-Creates a small bundle of magical energy
-that hunts down enemies to hit.  The
-target is damaged and slowed when hit,
-then the speedball dissipates.
+Creates a small bundle of magical energy that hunts down enemies to hit.  The target is damaged and slowed when hit, then the speedball dissipates.
 endmsg
 end

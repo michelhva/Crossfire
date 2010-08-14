@@ -19,7 +19,6 @@ maxgrace 40
 resist_fire 30
 dam_modifier 3
 msg
-Improves the caster's protection against
-fire-based attacks.
+Improves the caster's protection against fire-based attacks.
 endmsg
 end

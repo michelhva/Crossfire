@@ -22,7 +22,6 @@ no_drop 1
 invisible 1
 skill praying
 msg
-A cone spell that can inflict fear in
-the undead.
+A cone spell that can inflict fear in the undead.
 endmsg
 end

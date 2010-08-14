@@ -22,9 +22,6 @@ attacktype 1048576
 no_drop 1
 invisible 1
 msg
-Damages the targeted creature with power
-directly from the god.  Creatires rarely
-have protection from godly magic.  This
-spell is granted by Ruggilli.
+Damages the targeted creature with power directly from the god.  Creatires rarely have protection from godly magic.  This spell is granted by Ruggilli.
 endmsg
 end

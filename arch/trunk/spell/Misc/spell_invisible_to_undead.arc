@@ -19,7 +19,6 @@ duration_modifier 1
 maxgrace 20
 race undead
 msg
-An invisibility spell that hides the
-caster from undead creatures.
+An invisibility spell that hides the caster from undead creatures.
 endmsg
 end

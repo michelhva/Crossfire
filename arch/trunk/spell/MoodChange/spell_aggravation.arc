@@ -16,8 +16,6 @@ range 25
 undead 1
 monster 1
 msg
-Aggravation is used to change the mood
-of unagressive creatures so that they
-attack the caster.
+Aggravation is used to change the mood of unagressive creatures so that they attack the caster.
 endmsg
 end

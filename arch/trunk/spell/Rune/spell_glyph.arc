@@ -14,13 +14,9 @@ casting_time 15
 skill praying
 path_attuned 2048
 msg
-Creates a special rune that may be used
-to encapsulate another spell.  When
-casting the spell, the caster specifies
-a praying spell to encapsulate in the
-glyph.  When the glyph is triggered, the
-specified spell is cast on the target.
+Creates a special rune that may be used to encapsulate another spell.  When casting the spell, the caster specifies a praying spell to encapsulate in the glyph.  When the glyph is triggered, the specified spell is cast on the target.
+
 An example of how to create a glyph is:
-cast glyph summon cult monsters
+ cast glyph summon cult monsters
 endmsg
 end

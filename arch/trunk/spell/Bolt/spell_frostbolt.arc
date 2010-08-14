@@ -21,7 +21,6 @@ range 12
 no_drop 1
 invisible 1
 msg
-Fires a directed bolt of frost that does
-cold damage.
+Fires a directed bolt of frost that does cold damage.
 endmsg
 end

@@ -16,8 +16,6 @@ invisible 1
 cursed 1
 maxgrace 30
 msg
-This spell concentrates, with some help of
-your god, your hate against something to curse
-the item, and leave you only your love for your god.
+This spell concentrates, with some help of your god, your hate against something to curse the item, and leave you only your love for your god.
 endmsg
 end

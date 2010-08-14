@@ -22,8 +22,6 @@ no_drop 1
 invisible 1
 skill praying
 msg
-Fires a cone of cobwebs that can nearly
-immobilize any creatures caught in it.
-Gaea grants this to her worshippers.
+Fires a cone of cobwebs that can nearly immobilize any creatures caught in it. Gaea grants this to her worshippers.
 endmsg
 end

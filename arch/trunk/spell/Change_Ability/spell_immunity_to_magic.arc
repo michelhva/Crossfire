@@ -18,7 +18,6 @@ duration 500
 maxgrace 50
 resist_magic 100
 msg
-Grants complete protection from magical
-attacks.
+Grants complete protection from magical attacks.
 endmsg
 end

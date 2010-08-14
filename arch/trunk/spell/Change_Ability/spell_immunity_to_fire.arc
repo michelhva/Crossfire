@@ -18,7 +18,6 @@ duration 500
 maxgrace 50
 resist_fire 100
 msg
-Grants complete protection from
-fire-based attacks.
+Grants complete protection from fire-based attacks.
 endmsg
 end

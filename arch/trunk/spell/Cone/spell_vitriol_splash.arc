@@ -22,8 +22,6 @@ no_drop 1
 invisible 1
 skill praying
 msg
-Fires a cone of acid that splashes on
-contact and does acid damage to affected
-creatures.
+Fires a cone of acid that splashes on contact and does acid damage to affected creatures.
 endmsg
 end

@@ -19,7 +19,6 @@ maxgrace 40
 resist_cold 30
 dam_modifier 3
 msg
-Improves the caster's protection against
-cold-based attacks.
+Improves the caster's protection against cold-based attacks.
 endmsg
 end

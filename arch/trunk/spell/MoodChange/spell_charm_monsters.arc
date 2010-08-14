@@ -19,7 +19,6 @@ maxsp 27
 no_attack 1
 other_arch charm_aura
 msg
-Attempts to convert nearby monsters into
-pets that fight for the caster. 
+Attempts to convert nearby monsters into pets that fight for the caster. 
 endmsg
 end

@@ -18,7 +18,6 @@ duration 500
 maxgrace 50
 resist_cold 100
 msg
-Grants complete protection against
-cold-based attacks.
+Grants complete protection against cold-based attacks.
 endmsg
 end

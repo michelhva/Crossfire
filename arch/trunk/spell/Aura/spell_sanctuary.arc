@@ -19,7 +19,6 @@ attacktype 524288
 no_drop 1
 invisible 1
 msg
-Surrounds the caster with a shield that
-may block incoming spells.
+Surrounds the caster with a shield that may block incoming spells.
 endmsg
 end

@@ -21,9 +21,6 @@ attacktype 144
 no_drop 1
 invisible 1
 msg
-Creates a ball of negative energy that
-heads in the direction it is cast, and
-if it encounters a monster, sticks to it
-and does drain and cold damage attached.
+Creates a ball of negative energy that heads in the direction it is cast, and if it encounters a monster, sticks to it and does drain and cold damage attached.
 endmsg
 end

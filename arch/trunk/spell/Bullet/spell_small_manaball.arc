@@ -22,9 +22,6 @@ invisible 1
 skill evocation
 food 15
 msg
-Fires a ball of magical energy that
-explodes in a small burst of magical
-energy when it hits something.  Few
-creatures can resist magical attacks.
+Fires a ball of magical energy that explodes in a small burst of magical energy when it hits something.  Few creatures can resist magical attacks.
 endmsg
 end

@@ -18,9 +18,6 @@ attacktype 37749792
 food 999
 dam 9999
 msg
-Restoration heals all damage, confusion,
-poison, and disease, and also provides a
-full stomach of food to the recipient.
-It does not take care of death.
+Restoration heals all damage, confusion, poison, and disease, and also provides a full stomach of food to the recipient. It does not take care of death.
 endmsg
 end

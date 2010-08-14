@@ -20,12 +20,6 @@ range 2
 range_modifier 10
 move_block all
 msg
-Create a wall of earth in front of the
-caster.  Earthwalls block most
-creature's movement and line of sight.
-Unlike other wall spells, earthwalls
-cast no spells and do no damage, and do
-not disappear after a specified time.
-They remain standing until destroyed.
+Create a wall of earth in front of the caster.  Earthwalls block most creature's movement and line of sight. Unlike other wall spells, earthwalls cast no spells and do no damage, and do not disappear after a specified time. They remain standing until destroyed.
 endmsg
 end

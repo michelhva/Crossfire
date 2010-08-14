@@ -18,7 +18,6 @@ duration 500
 maxgrace 50
 resist_physical 100
 msg
-Grants complete protection against
-physical attacks.
+Grants complete protection against physical attacks.
 endmsg
 end

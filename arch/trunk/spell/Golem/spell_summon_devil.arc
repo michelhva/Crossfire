@@ -24,10 +24,6 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Calls a devil from the infernal regions
-of the underworld.  The devil is
-controlled with the Fire and direction
-keys, and attacks with electrical
-energy.
+Calls a devil from the infernal regions of the underworld.  The devil is controlled with the Fire and direction keys, and attacks with electrical energy.
 endmsg
 end

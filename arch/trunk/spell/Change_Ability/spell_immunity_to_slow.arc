@@ -18,8 +18,6 @@ duration 500
 maxgrace 50
 resist_slow 100
 msg
-Grants complete protection against
-attacks that would normally magically
-slow the caster.
+Grants complete protection against attacks that would normally magically slow the caster.
 endmsg
 end

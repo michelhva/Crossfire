@@ -21,7 +21,6 @@ no_drop 1
 invisible 1
 skill sorcery
 msg
-Fires cone shaped attack that is made up
-of magical and electrical energy.
+Fires cone shaped attack that is made up of magical and electrical energy.
 endmsg
 end

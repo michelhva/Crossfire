@@ -21,9 +21,6 @@ range 12
 no_drop 1
 invisible 1
 msg
-A bolt spell that inflicts electrical
-damage on creatures in its path.  It can
-reflect off of walls (and can return to
-strike the caster).
+A bolt spell that inflicts electrical damage on creatures in its path.  It can reflect off of walls (and can return to strike the caster).
 endmsg
 end

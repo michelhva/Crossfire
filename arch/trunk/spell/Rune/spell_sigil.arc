@@ -14,12 +14,6 @@ skill evocation
 path_attuned 2048
 face penta.111
 msg
-Creates a special rune that may be used
-to encapsulate another spell.  When
-casting the spell, the caster specifies
-the spell that should be encapsulated in
-the firetrap.  When the sigil is
-triggered, the specified spell is cast
-on the target.
+Creates a special rune that may be used to encapsulate another spell.  When casting the spell, the caster specifies the spell that should be encapsulated in the firetrap.  When the sigil is triggered, the specified spell is cast on the target.
 endmsg
 end
