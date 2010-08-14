@@ -4,7 +4,7 @@ width 6
 height 6
 msg
 Created:  1998-02-26
-Modified: 2010-08-07 Nicolas Weeger
+Modified: 2010-08-14 Nicolas Weeger
 endmsg
 end
 arch barrel
@@ -81,6 +81,7 @@ end
 arch brazier
 x 3
 y 2
+move_block swim
 end
 arch arrow
 x 3
@@ -104,6 +105,7 @@ end
 arch brazier
 x 4
 y 2
+move_block swim
 end
 arch leather_armour
 x 4
