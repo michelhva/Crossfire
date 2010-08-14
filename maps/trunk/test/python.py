@@ -354,30 +354,29 @@ def do_checkinv():
 def do_face():
 	obj = whoami.Map.ObjectAt(4, 4)
 	if len(topic) == 1:
-		whoami.Say('Face is %d'%obj.Face)
+		whoami.Say('Face is %s'%obj.Face)
 		return
 	
-	face = Crossfire.FindFace(topic[1])
-	if face == 0:
-		whoami.Say('Invalid face')
-		return
-	whoami.Say('changing to %s'%topic[1])
-	obj.Face = topic[1]
-	whoami.Say('Face changed')
+	face = topic[1]
+	
+	try:
+		obj.Face = face
+		whoami.Say('Face changed to %s'%face)
+	except:
+		whoami.Say('Invalid face %s'%face)
 
 def do_anim():
 	obj = whoami.Map.ObjectAt(4, 4).Above
 	if len(topic) == 1:
-		whoami.Say('Animation is %d'%obj.Anim)
+		whoami.Say('Animation is %s'%obj.Anim)
 		return
 	
-	anim = Crossfire.FindAnimation(topic[1])
-	if anim == 0:
-		whoami.Say('Invalid animation')
-		return
-	
-	obj.Anim = (topic[1])
-	whoami.Say('Anim changed')
+	anim = topic[1]
+	try:
+		obj.Anim = anim
+		whoami.Say('Animation changed to %s'%anim)
+	except:
+		whoami.Say('Invalid animation %s'%anim)
 
 def do_hook():
 	item = whoami.Map.CreateObject('food', 0, 0)
