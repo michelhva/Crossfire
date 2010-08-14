@@ -9,7 +9,7 @@ enter_x 3
 enter_y 39
 msg
 Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2010-08-12 Nicolas Weeger
 endmsg
 end
 arch cobblestones
@@ -1031,11 +1031,7 @@ connected 7
 end
 arch magic_mouth
 msg
-Hmmmm.  There's something strange
-about this place.  You get the
-feeling that simply taking the
-Stone and leaving might not
-be wise.
+Hmmmm.  There's something strange about this place.  You get the feeling that simply taking the Stone and leaving might not be wise.
 endmsg
 x 3
 y 1
@@ -1314,10 +1310,7 @@ connected 7
 end
 arch magic_mouth
 msg
-You vaguely see some odd arcane
-markings on the stone ahead.  They
-look dangerous.  However there must be
-a way through.
+You vaguely see some odd arcane markings on the stone ahead.  They look dangerous.  However there must be a way through.
 endmsg
 food 1
 x 3
@@ -1329,10 +1322,7 @@ y 37
 end
 arch magic_mouth
 msg
-Uh, oh.  It looks like they've guarded
-this way with all sorts of magical
-traps.  Better be careful, one misstep
-and you die!
+Uh, oh.  It looks like they've guarded this way with all sorts of magical traps.  Better be careful, one misstep and you die!
 endmsg
 food 1
 x 3
@@ -1629,10 +1619,7 @@ connected 7
 end
 arch magic_mouth
 msg
-You vaguely see odd arcane markings on
-the ground in front of you.  They look
-very dangerous.  However, there must
-be a way through.
+You vaguely see odd arcane markings on the ground in front of you.  They look very dangerous.  However, there must be a way through.
 endmsg
 food 1
 x 4
@@ -1644,10 +1631,7 @@ y 37
 end
 arch magic_mouth
 msg
-Uh, oh.  It looks like they've
-installed magical traps in this
-passage.  One wrong step, and I'll
-surely be dead.
+Uh, oh.  It looks like they've installed magical traps in this passage.  One wrong step, and I'll surely be dead.
 endmsg
 food 1
 x 4
