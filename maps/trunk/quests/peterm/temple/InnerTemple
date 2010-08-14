@@ -8,7 +8,7 @@ enter_x 7
 enter_y 39
 msg
 Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
-Modified: 2008-12-21 Rick Tanner
+Modified: 2010-08-12 Nicolas Weeger
 endmsg
 end
 arch cobblestones2
@@ -3800,8 +3800,7 @@ end
 arch magic_mouth
 msg
 A foul reek emanates from the hole.
-Somehow, the hole seems like a huge
-maw, ready to swallow you up
+Somehow, the hole seems like a huge maw, ready to swallow you up
 endmsg
 x 13
 y 1
@@ -3816,10 +3815,7 @@ y 1
 end
 arch magic_mouth
 msg
-A foul reek wafts from the hole.  A
-scary analogy between that hole and
-the mouth of a demon blows through
-your mind briefly.
+A foul reek wafts from the hole.  A scary analogy between that hole and the mouth of a demon blows through your mind briefly.
 endmsg
 x 13
 y 2
@@ -3851,9 +3847,7 @@ end
 arch prisoner
 msg
 @match *
-Thank goodness you're here!  Those
-monsters were planning to use us as
-sacrifices to their dark God..
+Thank goodness you're here!  Those monsters were planning to use us as sacrifices to their dark God..
 endmsg
 hp 100
 maxhp 100
@@ -3884,8 +3878,7 @@ name starving prisoner
 msg
 @match altar|sacrifice
 Please set me free!
-I don't want to be sacrificed on the
-altar!
+I don't want to be sacrificed on the altar!
 endmsg
 hp 100
 maxhp 100
@@ -4153,10 +4146,7 @@ y 1
 end
 arch magic_mouth
 msg
-You peer down the hole into the smelly
-torchlit depths....  It goes down, and
-down, and down...  Somehow, you don't
-look forward to seeing the end of it
+You peer down the hole into the smelly torchlit depths....  It goes down, and down, and down...  Somehow, you don't look forward to seeing the end of it
 endmsg
 x 14
 y 2
@@ -4192,8 +4182,7 @@ end
 arch prisoner
 msg
 @match sacrifice|altar|god|gods
-They sacrifice someone on the altar to
-please their god....
+They sacrifice someone on the altar to please their god....
 endmsg
 hp 100
 maxhp 100
