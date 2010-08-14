@@ -15,8 +15,6 @@ no_drop 1
 invisible 1
 dam 1
 msg
-Brings about a general darkness in the
-area.  The Devourers and Gaea grant this
-spell.
+Brings about a general darkness in the area.  The Devourers and Gaea grant this spell.
 endmsg
 end

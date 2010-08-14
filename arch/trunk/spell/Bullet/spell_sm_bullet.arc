@@ -21,7 +21,6 @@ attacktype 2
 no_drop 1
 invisible 1
 msg
-Fires a magical bullet that travels in
-one direction until striking something.
+Fires a magical bullet that travels in one direction until striking something.
 endmsg
 end

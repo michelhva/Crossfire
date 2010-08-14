@@ -20,8 +20,6 @@ maxgrace 20
 no_drop 1
 invisible 1
 msg
-Unleashes a very deadly and contagious
-plague.  This spell is granted by the
-Devourers god.
+Unleashes a very deadly and contagious plague.  This spell is granted by the Devourers god.
 endmsg
 end

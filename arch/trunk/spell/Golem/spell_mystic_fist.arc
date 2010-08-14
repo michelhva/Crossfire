@@ -22,8 +22,6 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Creates a magical fist that delivers an
-electrical damage and is controlled with
-the Fire and direction keys.
+Creates a magical fist that delivers an electrical damage and is controlled with the Fire and direction keys.
 endmsg
 end

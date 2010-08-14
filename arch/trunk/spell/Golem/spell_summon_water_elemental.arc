@@ -22,10 +22,6 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Summons a creature from the elemental
-plane of water that is controlled with
-the Fire and direction keys.  This
-elemental attacks deliver cold and
-physical damage.
+Summons a creature from the elemental plane of water that is controlled with the Fire and direction keys.  This elemental attacks deliver cold and physical damage.
 endmsg
 end

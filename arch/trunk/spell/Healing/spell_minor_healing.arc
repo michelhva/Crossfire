@@ -17,8 +17,6 @@ invisible 1
 hp 1
 dam 1
 msg
-A spell that may regenerate a small
-amount of hit points for the caster or
-to another character.
+A spell that may regenerate a small amount of hit points for the caster or to another character.
 endmsg
 end

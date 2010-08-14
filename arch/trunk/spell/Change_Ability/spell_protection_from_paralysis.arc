@@ -19,7 +19,6 @@ maxgrace 40
 resist_paralyze 50
 dam_modifier 4
 msg
-Improves the caster's protection against
-paralyzing attacks.
+Improves the caster's protection against paralyzing attacks.
 endmsg
 end

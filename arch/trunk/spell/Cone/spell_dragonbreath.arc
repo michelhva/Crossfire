@@ -23,10 +23,6 @@ no_drop 1
 invisible 1
 skill pyromancy
 msg
-Dragonbreath is a cone effect that fires
-sheets of non-magical fire.  The fire is
-not magical, so it can harm creatures
-with immunity to magic but which are
-vulnerable to fire.
+Dragonbreath is a cone effect that fires sheets of non-magical fire.  The fire is not magical, so it can harm creatures with immunity to magic but which are vulnerable to fire.
 endmsg
 end

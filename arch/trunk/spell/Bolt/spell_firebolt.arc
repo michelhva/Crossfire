@@ -21,7 +21,6 @@ duration 9
 no_drop 1
 invisible 1
 msg
-Propels a damaging bolt of fire in the
-direction that the spell is cast.
+Propels a damaging bolt of fire in the direction that the spell is cast.
 endmsg
 end

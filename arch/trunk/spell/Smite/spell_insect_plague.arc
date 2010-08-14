@@ -22,8 +22,6 @@ attacktype 3
 no_drop 1
 invisible 1
 msg
-Summons insect pets that attack on
-behalf of the caster.  This spell is
-granted by Gaea and Ixalovh.
+Summons insect pets that attack on behalf of the caster.  This spell is granted by Gaea and Ixalovh.
 endmsg
 end

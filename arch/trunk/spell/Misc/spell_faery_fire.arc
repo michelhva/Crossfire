@@ -20,9 +20,6 @@ duration 5
 duration_modifier 5
 maxsp 20
 msg
-Causes creatures near the caster to glow
-and may have other effects. It is the
-only pyromancy spell in the path of
-Light.
+Causes creatures near the caster to glow and may have other effects. It is the only pyromancy spell in the path of Light.
 endmsg
 end

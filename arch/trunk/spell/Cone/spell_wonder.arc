@@ -23,9 +23,6 @@ invisible 1
 skill sorcery
 randomitems wonder_spells
 msg
-Casts a randomly selected spell, or,
-about 1/3 of the time, creates harmless
-flowers.  Low-level spells appear more
-frequently than high-level ones.
+Casts a randomly selected spell, or, about 1/3 of the time, creates harmless flowers.  Low-level spells appear more frequently than high-level ones.
 endmsg
 end

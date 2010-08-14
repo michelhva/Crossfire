@@ -18,7 +18,6 @@ duration 500
 maxgrace 50
 resist_poison 100
 msg
-Grants complete protection from
-poisoning attacks.
+Grants complete protection from poisoning attacks.
 endmsg
 end

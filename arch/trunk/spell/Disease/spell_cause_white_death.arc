@@ -20,7 +20,6 @@ maxgrace 24
 no_drop 1
 invisible 1
 msg
-Causes an outbreak of the most
-contagious and deadly disease of all.
+Causes an outbreak of the most contagious and deadly disease of all.
 endmsg
 end

@@ -22,11 +22,6 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Counterspell fires a cone of energy that
-absorbs other spell energy.  This can be
-used to counter incoming spells so that
-they do not hit the character.  It does
-not affect spells of a higher level than
-the caster's level.
+Counterspell fires a cone of energy that absorbs other spell energy.  This can be used to counter incoming spells so that they do not hit the character.  It does not affect spells of a higher level than the caster's level.
 endmsg
 end

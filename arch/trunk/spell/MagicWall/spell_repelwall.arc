@@ -23,7 +23,6 @@ range 1
 range_modifier 60
 move_block all
 msg
-Creates a wall that repels all creatures
-except those that can fly.
+Creates a wall that repels all creatures except those that can fly.
 endmsg
 end

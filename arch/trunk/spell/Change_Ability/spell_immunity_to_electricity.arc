@@ -18,7 +18,6 @@ duration 500
 maxgrace 50
 resist_electricity 100
 msg
-Grants complete protection from
-electrical attacks.
+Grants complete protection from electrical attacks.
 endmsg
 end

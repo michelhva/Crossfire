@@ -21,10 +21,6 @@ range 24
 no_drop 1
 invisible 1
 msg
-Creates a large bolt of lightning with
-extended range that does more electrical
-damage than its smaller counterpart.
-The bolt can reflect off walls and
-return to hit the caster.
+Creates a large bolt of lightning with extended range that does more electrical damage than its smaller counterpart. The bolt can reflect off walls and return to hit the caster.
 endmsg
 end

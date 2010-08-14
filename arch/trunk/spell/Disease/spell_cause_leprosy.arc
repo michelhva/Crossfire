@@ -20,11 +20,6 @@ maxgrace 20
 no_drop 1
 invisible 1
 msg
-Infects a target with leprosy. This
-disease is not very contagious, but can
-be spread by touching.  The damage
-caused increases with the length of the
-infection.  When used with patience, it
-can fell great adversaries.
+Infects a target with leprosy. This disease is not very contagious, but can be spread by touching.  The damage caused increases with the length of the infection.  When used with patience, it can fell great adversaries.
 endmsg
 end

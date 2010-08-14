@@ -17,12 +17,6 @@ exp 20
 #randomitems reincarnation_failure
 race reincarnation_races
 msg
-Brings a slain character back to life,
-as with the resurrection spell, but
-without requiring a corpse, and usually
-as a different race, with all the
-benefits and penalties associated with
-it.  Gaea grants this spell, and it is
-only useful on permanent death servers.
+Brings a slain character back to life, as with the resurrection spell, but without requiring a corpse, and usually as a different race, with all the benefits and penalties associated with it.  Gaea grants this spell, and it is only useful on permanent death servers.
 endmsg
 end

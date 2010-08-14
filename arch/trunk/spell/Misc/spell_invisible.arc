@@ -18,9 +18,6 @@ duration 300
 duration_modifier 1
 maxsp 20
 msg
-Makes the caster invisible. Attacking
-other creatures or using spells causes
-the invisibility to dissipate more
-quickly. 
+Makes the caster invisible. Attacking other creatures or using spells causes the invisibility to dissipate more quickly. 
 endmsg
 end

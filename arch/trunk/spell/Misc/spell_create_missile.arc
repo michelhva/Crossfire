@@ -18,13 +18,6 @@ duration 5
 duration_modifier 2
 maxsp 15 
 msg
-Creates arrows for use with a bow or
-crossbow. To create crossbow bolts,
-wield a crossbow when casting the spell.
-At high levels in summoning, it is
-possible to create arrows (or bolts)
-with a specific magical bonus by using
-a command like: cast create missile N
-where N is +0, +1, +2, +3 or +4.
+Creates arrows for use with a bow or crossbow. To create crossbow bolts, wield a crossbow when casting the spell. At high levels in summoning, it is possible to create arrows (or bolts) with a specific magical bonus by using a command like: cast create missile N where N is +0, +1, +2, +3 or +4.
 endmsg
 end

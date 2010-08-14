@@ -21,11 +21,6 @@ no_drop 1
 invisible 1
 skill praying
 msg
-Calls a strong fighter from the caster's
-god, whom you control with the Fire and
-direction keys, the same way that golems
-are controlled.  The character receives
-all experience from the holy servant's
-kills.
+Calls a strong fighter from the caster's god, whom you control with the Fire and direction keys, the same way that golems are controlled.  The character receives all experience from the holy servant's kills.
 endmsg
 end

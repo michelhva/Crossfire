@@ -16,8 +16,6 @@ range 5
 range_modifier 5
 other_arch polymorph
 msg
-Converts a living object into another
-monster of some sort, or transforms an
-object to another type of object.
+Converts a living object into another monster of some sort, or transforms an object to another type of object.
 endmsg
 end

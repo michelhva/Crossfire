@@ -18,10 +18,6 @@ duration_modifier 4
 duration 500
 attacktype 32
 msg
-The movement and attack directions of
-creatures affected this spell become
-random.  When a confused character casts
-a spell, there is a chance that a
-completely different spell will result.
+The movement and attack directions of creatures affected this spell become random.  When a confused character casts a spell, there is a chance that a completely different spell will result.
 endmsg
 end

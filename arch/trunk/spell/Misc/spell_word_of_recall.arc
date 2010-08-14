@@ -17,10 +17,6 @@ maxgrace 20
 no_drop 1
 invisible 1
 msg
-Word of recall transports the caster
-back to the most recently used Bed to
-Reality, but there is a delay between
-the time the spell is cast and the time
-the caster is transported home.
+Word of recall transports the caster back to the most recently used Bed to Reality, but there is a delay between the time the spell is cast and the time the caster is transported home.
 endmsg
 end

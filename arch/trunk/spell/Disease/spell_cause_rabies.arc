@@ -20,7 +20,6 @@ maxgrace 18
 no_drop 1
 invisible 1
 msg
-Causes the disease of rabies.  The spell
-is granted by Gnarg.
+Causes the disease of rabies.  The spell is granted by Gnarg.
 endmsg
 end

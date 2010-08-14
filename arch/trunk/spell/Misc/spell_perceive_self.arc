@@ -39,13 +39,8 @@ value 20
 no_drop 1
 invisible 1
 msg
-Displays information about the caster
-including: God worshipped; attributes,
-bonuses; attacks; paths attuned, denied,
-and repelled; protections; stat
-depletions, special characteristics.
-Much of the information is able to be
-found other ways, but the spell is still
-useful at times.
+Displays information about the caster including: God worshipped; attributes, bonuses; attacks; paths attuned, denied, and repelled; protections; stat depletions, special characteristics.
+
+Much of the information is able to be found other ways, but the spell is still useful at times.
 endmsg
 end

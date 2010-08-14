@@ -15,9 +15,6 @@ value 50
 no_drop 1
 invisible 1
 msg
-Shows an overhead map of the caster’s
-location.  The map is color-coded and
-can give some indication of creatures
-present on the map.
+Shows an overhead map of the caster’s location.  The map is color-coded and can give some indication of creatures present on the map.
 endmsg
 end

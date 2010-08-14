@@ -16,11 +16,6 @@ skill sorcery
 path_attuned 32768
 maxsp 24
 msg
-Creates a rune that when triggered,
-causes the recipient to gain spell
-points.  Numerous runes could be set up
-in advance of a battle to allow quick
-access to more spell points than could
-be generated naturally during the fight.
+Creates a rune that when triggered causes the recipient to gain spell points.  Numerous runes could be set up in advance of a battle to allow quick access to more spell points than could be generated naturally during the fight.
 endmsg
 end

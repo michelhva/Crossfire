@@ -16,10 +16,6 @@ invisible 1
 damned 1
 maxgrace 30
 msg
-Eliminates the damned status of objects
-the character currently is wearing to
-allow the items to be unequipped.  It
-does not alter the damned status for
-objects that are not equipped.
+Eliminates the damned status of objects the character currently is wearing to allow the items to be unequipped.  It does not alter the damned status for objects that are not equipped.
 endmsg
 end

@@ -20,9 +20,6 @@ maxgrace 24
 no_drop 1
 invisible 1
 msg
-Infects a target with typhoid. Typhoid
-is deadly to human, goblin, giant, and
-troll races but is harmless to other
-creatures.
+Infects a target with typhoid. Typhoid is deadly to human, goblin, giant, and troll races but is harmless to other creatures.
 endmsg
 end

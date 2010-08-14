@@ -22,9 +22,6 @@ no_drop 1
 invisible 1
 skill praying
 msg
-A cone spell that does damage to the
-enemies of the caster's god and to
-undeads, but has no effect on other
-creatures.
+A cone spell that does damage to the enemies of the caster's god and to undeads, but has no effect on other creatures.
 endmsg
 end

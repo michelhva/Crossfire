@@ -24,10 +24,6 @@ is_used_up 1
 tear_down 1
 move_block all
 msg
-Build lightning wall creates a wall that
-fires lightning bolts.  The wall fires in the
-direction the spell is cast.  The wall can be
-torn down by creatures, and will eventually
-expire of its own accord.
+Build lightning wall creates a wall that fires lightning bolts.  The wall fires in the direction the spell is cast.  The wall can be torn down by creatures, and will eventually expire of its own accord.
 endmsg
 end

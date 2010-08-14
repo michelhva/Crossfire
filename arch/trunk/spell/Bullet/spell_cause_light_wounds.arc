@@ -19,7 +19,6 @@ attacktype 1048576
 no_drop 1
 invisible 1
 msg
-Fires a bullet which does light damage
-to a creature in its path.
+Fires a bullet which does light damage to a creature in its path.
 endmsg
 end

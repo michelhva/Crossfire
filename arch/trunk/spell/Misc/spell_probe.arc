@@ -16,9 +16,6 @@ invisible 1
 range 25
 range_modifier 5
 msg
-Gives the caster general information
-about a nearby enemy.  Reports the
-overall condition of a target and the
-chance of defeating it.
+Gives the caster general information about a nearby enemy.  Reports the overall condition of a target and the chance of defeating it.
 endmsg
 end

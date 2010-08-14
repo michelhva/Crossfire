@@ -22,10 +22,6 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Summons a creature from the elemental
-plane of fire controlled with the Fire
-and direction keys.  They are impervious
-to fire-based damage, and deliver fire-
-based attacks.
+Summons a creature from the elemental plane of fire controlled with the Fire and direction keys.  They are impervious to fire-based damage, and deliver fire- based attacks.
 endmsg
 end

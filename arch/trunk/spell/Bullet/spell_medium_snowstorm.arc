@@ -22,10 +22,6 @@ invisible 1
 skill evocation
 food 7
 msg
-Fires a snowball that explodes into a
-mid-size flurry of ice and cold when it
-hits something.  It delivers cold
-damage, and items caught in the
-explosion are encased in blocks of ice.
+Fires a snowball that explodes into a mid-size flurry of ice and cold when it hits something.  It delivers cold damage, and items caught in the explosion are encased in blocks of ice.
 endmsg
 end

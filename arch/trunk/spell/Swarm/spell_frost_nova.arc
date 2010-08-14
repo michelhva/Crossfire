@@ -18,7 +18,6 @@ maxsp 20
 no_drop 1
 invisible 1
 msg
-Fires a swarm of asteroid bullets that
-that deliver a weaponmagic attack.
+Fires a swarm of asteroid bullets that deliver a weaponmagic attack.
 endmsg
 end
