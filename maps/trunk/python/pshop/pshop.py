@@ -178,7 +178,7 @@ if whoami.Name.find("Store")>-1:
 		GlassReplica.Speed=0.0010000000475
 		sys.stderr=open('/tmp/output.log', 'w')
 		
-		GlassReplica.Face=PicDict.get(str(Item.Face),"scroll.111")
+		GlassReplica.Face=(str(Item.Face))
 		#GlassReplica.Material=(96,'ice')
 		
 		GlassReplica.Name=str(Item.Quantity)+" "+Item.Name+" Price: "+str(Value)
