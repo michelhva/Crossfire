@@ -7,7 +7,7 @@ height 50
 msg
 Created:  2010-02-28 Alestan
 
-Modified: 2010-03-31 perkins
+Modified: 2010-08-15 crossfire
 endmsg
 outdoor 1
 temp 50
@@ -4368,6 +4368,7 @@ race icecube
 x 16
 y 31
 type 64
+move_off 0
 arch event_trigger
 name BankCheckout
 title Python
@@ -4688,6 +4689,7 @@ x 17
 y 32
 type 64
 last_sp 1
+move_off 0
 arch event_trigger
 name AutoCheckout
 title Python
@@ -5029,6 +5031,7 @@ x 18
 y 31
 type 64
 last_sp 1
+move_off 0
 arch event_trigger
 name AutoCheckout
 title Python
