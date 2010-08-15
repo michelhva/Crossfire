@@ -215,7 +215,7 @@ public class JXClient {
                                     final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
                                     window[0] = new JXCWindow(exiter, server, optionManager, guiStateManager, windowRenderer, commandQueue, guiManager, keyHandler, characterModel);
 
-                                    connection.init(window[0]);
+                                    connection.init(window[0].getFrame());
                                     window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
                                     keybindingsManager.loadKeybindings();
                                     final String serverInfo = options.getServer();
