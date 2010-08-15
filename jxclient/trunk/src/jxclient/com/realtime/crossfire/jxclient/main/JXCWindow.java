@@ -43,6 +43,7 @@ import com.realtime.crossfire.jxclient.window.DialogStateParser;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
 import java.awt.Dimension;
+import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
@@ -58,6 +59,7 @@ import java.awt.event.WindowListener;
 import java.io.IOException;
 import javax.swing.JFrame;
 import javax.swing.Timer;
+import javax.swing.WindowConstants;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -66,7 +68,7 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class JXCWindow extends JFrame {
+public class JXCWindow {
 
     /**
      * TODO: Remove when more options are implemented in the start screen gui.
@@ -128,6 +130,12 @@ public class JXCWindow extends JFrame {
 
     @NotNull
     private final CharacterModel characterModel;
+
+    /**
+     * The main window.
+     */
+    @NotNull
+    private final JFrame frame;
 
     /**
      * Called periodically to update the display contents.
@@ -234,7 +242,7 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void windowClosed(@NotNull final WindowEvent e) {
-            if (!isVisible()) {
+            if (!frame.isVisible()) {
                 exiter.terminate();
             }
         }
@@ -426,7 +434,6 @@ public class JXCWindow extends JFrame {
      * @param keyHandler the key handler for keyboard input
      */
     public JXCWindow(@NotNull final Exiter exiter, @NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final GuiManager guiManager, @NotNull final KeyHandler keyHandler, @NotNull final CharacterModel characterModel) {
-        super("");
         this.exiter = exiter;
         this.server = server;
         this.optionManager = optionManager;
@@ -435,23 +442,39 @@ public class JXCWindow extends JFrame {
         this.guiManager = guiManager;
         this.keyHandler = keyHandler;
         this.characterModel = characterModel;
-        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        frame = new JFrame("") {
+
+            /**
+             * The serial version UID.
+             */
+            private static final long serialVersionUID = 1L;
+
+            /**
+             * {@inheritDoc}
+             */
+            @Override
+            public void paint(@NotNull final Graphics g) {
+                windowRenderer.repaint();
+            }
+
+        };
+        frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         try {
-            setIconImage(ResourceUtils.loadImage(ResourceUtils.APPLICATION_ICON).getImage());
+            frame.setIconImage(ResourceUtils.loadImage(ResourceUtils.APPLICATION_ICON).getImage());
         } catch (final IOException ex) {
             System.err.println("Cannot find application icon: "+ex.getMessage());
         }
-        setFocusTraversalKeysEnabled(false);
-        addWindowFocusListener(windowFocusListener);
-        addWindowListener(windowListener);
-        addComponentListener(new ComponentListener() {
+        frame.setFocusTraversalKeysEnabled(false);
+        frame.addWindowFocusListener(windowFocusListener);
+        frame.addWindowListener(windowListener);
+        frame.addComponentListener(new ComponentListener() {
 
             /**
              * {@inheritDoc}
              */
             @Override
             public void componentResized(final ComponentEvent e) {
-                windowRenderer.updateWindowSize(getWidth(), getHeight());
+                windowRenderer.updateWindowSize(frame.getWidth(), frame.getHeight());
                 guiManager.updateWindowSize(new Dimension(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight()));
             }
 
@@ -483,7 +506,7 @@ public class JXCWindow extends JFrame {
         server.addSentReplyListener(sentReplyListener);
         server.addCrossfireAccountListener(accountListener);
         guiStateManager.addGuiStateListener(guiStateListener);
-        addKeyListener(keyListener);
+        frame.addKeyListener(keyListener);
 
         timer.start();
     }
@@ -523,24 +546,24 @@ public class JXCWindow extends JFrame {
         final Resolution minResolution = skin.getMinResolution();
         final Dimension minSize = minResolution.asDimension();
         final Dimension maxSize = skin.getMaxResolution().asDimension();
-        final Insets insets = getInsets();
+        final Insets insets = frame.getInsets();
         minSize.width += insets.left+insets.right;
         minSize.height += insets.top+insets.bottom;
         maxSize.width += insets.left+insets.right;
         maxSize.height += insets.top+insets.bottom;
-        setMinimumSize(minSize);
-        setMaximumSize(maxSize);
+        frame.setMinimumSize(minSize);
+        frame.setMaximumSize(maxSize);
 
-        if (!fullScreen || !windowRenderer.setFullScreenMode(this, resolution)) {
-            windowRenderer.setWindowMode(this, resolution, minResolution, minSize.equals(maxSize));
+        if (!fullScreen || !windowRenderer.setFullScreenMode(frame, resolution)) {
+            windowRenderer.setWindowMode(frame, resolution, minResolution, minSize.equals(maxSize));
         }
 
         guiManager.setSkin(skin);
-        guiManager.updateWindowSize(getSize());
+        guiManager.updateWindowSize(frame.getSize());
         DialogStateParser.load(skin, windowRenderer);
 
-        addMouseListener(mouseTracker);
-        addMouseMotionListener(mouseTracker);
+        frame.addMouseListener(mouseTracker);
+        frame.addMouseMotionListener(mouseTracker);
     }
 
     /**
@@ -553,11 +576,13 @@ public class JXCWindow extends JFrame {
     }
 
     /**
-     * {@inheritDoc}
+     * Returns the main window.
+     * @return the main window
      */
-    @Override
-    public void paint(@NotNull final Graphics g) {
-        windowRenderer.repaint();
+    @Deprecated
+    @NotNull
+    public Frame getFrame() {
+        return frame;
     }
 
 }
