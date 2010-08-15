@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2008-12-07 Rick Tanner
+Modified: 2010-08-15 crossfire
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -4742,11 +4742,21 @@ x 18
 y 21
 elevation 2837
 end
-arch brush
+arch grass
 x 18
 y 22
+elevation 10076
 end
-arch house_1
+arch market1
+name Private Shop - West
+slaying /brest/privateshops/privateshop_main
+msg
+As you enter the street you can sense the enormous
+treasure hordes contained within the walls of the
+nearby buildings.
+endmsg
+hp 1
+sp 4
 x 18
 y 22
 end
@@ -4761,7 +4771,7 @@ y 24
 elevation 10076
 end
 arch market1
-name Private Shops - West
+name Private Museum - West
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
@@ -5039,7 +5049,21 @@ x 19
 y 21
 elevation 467
 end
-arch woods_2
+arch grass
+x 19
+y 22
+elevation 511
+end
+arch market2
+name Private Shop - West
+slaying /brest/privateshops/privateshop_main
+msg
+As you enter the street you can sense the enormous
+treasure hordes contained within the walls of the
+nearby buildings.
+endmsg
+hp 1
+sp 4
 x 19
 y 22
 end
@@ -5058,7 +5082,7 @@ y 24
 elevation 511
 end
 arch market2
-name Private Shops - West
+name Private Museum - West
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
@@ -5320,12 +5344,21 @@ arch woods
 x 20
 y 21
 end
-arch brush
+arch grass
 x 20
 y 22
-elevation 2401
+elevation 511
 end
-arch house_1
+arch market2
+name Private Shop - East
+slaying /brest/privateshops/privateshop_main
+msg
+As you enter the street you can sense the enormous
+treasure hordes contained within the walls of the
+nearby buildings.
+endmsg
+hp 41
+sp 4
 x 20
 y 22
 end
@@ -5340,7 +5373,7 @@ y 24
 elevation 511
 end
 arch market2
-name Private Shops - East
+name Private Museum - East
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
@@ -5609,10 +5642,23 @@ arch woods
 x 21
 y 21
 end
-arch brush
+arch grass
 x 21
 y 22
-elevation 1384
+elevation 10851
+end
+arch market3
+name Private Shop - East
+slaying /brest/privateshops/privateshop_main
+msg
+As you enter the street you can sense the enormous
+treasure hordes contained within the walls of the
+nearby buildings.
+endmsg
+hp 41
+sp 4
+x 21
+y 22
 end
 arch woods_2
 x 21
@@ -5625,7 +5671,7 @@ y 24
 elevation 10851
 end
 arch market3
-name Private Shops - East
+name Private Museum - East
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
