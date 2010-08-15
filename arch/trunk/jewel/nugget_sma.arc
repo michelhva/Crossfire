@@ -7,7 +7,7 @@ type 60
 material 2
 materialname gold
 value 40
-weight 20
+weight 40
 name_pl small gold nuggets
 client_type 2005
 end
