@@ -184,7 +184,7 @@ if whoami.Name.find("Store")>-1:
 		
 		Message="Name: "+str(Item.Name)
 		Message+="\nTitle: "+str(Item.Title)
-		Message+="\nMaterial: "+str(Item.Material.get("MaterialName"))
+		#Message+="\nMaterial: "+str(Item.Material.get("MaterialName"))
 		Message+="\nQuantity: "+str(Item.Quantity)
 		if Item.Cursed==1:
 			Message+="\nCursed: True"
