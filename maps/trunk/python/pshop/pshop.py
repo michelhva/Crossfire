@@ -2,10 +2,11 @@
 
 import Crossfire,sys,datetime
 whoami=Crossfire.WhoAmI()
-
+activator=Crossfire.WhoIsActivator()
+whoami.Say(str(activator))
 import CFDataBase,CFBank
-sys.stderr=open("/tmp/output.log",'w')
-sys.stdout=open("/tmp/output.log1",'w')
+#sys.stderr=open("/tmp/output.log",'a')
+sys.stderr=sys.stdout=open("/tmp/output.log2",'a')
 #for i in dir(CFDataBase):
 	#print i
 #print CFDataBase.__file__
@@ -24,6 +25,8 @@ sys.stdout.flush()
 
 
 activator=Crossfire.WhoIsActivator()
+
+	
 def Expire():
 	global Owner
 	
@@ -108,7 +111,7 @@ def GetInvCount(object):
 		Counter+=1
 		Inv=Inv.Below
 	return Counter
-mymap=activator.Map
+mymap=whoami.Map
 CoinTypes={"SILVER":1,"GOLD":10,"PLATINUM":50,"JADE":5000,"AMBER":500000,"IMPERIAL":10000}
 Params=Crossfire.ScriptParameters()
 whoami.Say(str(whoami.Name))
@@ -483,13 +486,14 @@ elif Params=="AutoCheckout":
 	Price=0
 	
 	while Inv!=None:
+		whoami.Say(str(Inv.Message))
 		
-		if (Inv.Name.find("Price: ")>-1) and (Inv.Message.find("Value: ")>-1):
+		if (Inv.Name.find("Price: ")>-1):
 			
 			Items=Items.__add__([Inv])
 			
 		Inv=Inv.Below
-	
+	whoami.Say(str(Items))
 	for i in Items:
 		Item=(activator.Map.ObjectAt(43,2))
 		
@@ -571,8 +575,8 @@ elif Params=="BankCheckout":
 	Price=0
 	
 	while Inv!=None:
-		
-		if (Inv.Name.find("Price: ")>-1) and (Inv.Message.find("Value: ")>-1):
+		whoami.Say(str(Inv))
+		if (Inv.Name.find("Price: ")>-1):
 			
 			Items=Items.__add__([Inv])
 			
