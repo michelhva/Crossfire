@@ -17,7 +17,6 @@
 # author:Avion temitchell@sourceforge.net
 
 import Crossfire,CFGuilds,CFItemBroker,random,string,sys,CFBank,CFMail,CFLog
-
 log = CFLog.CFLog()
 priceMailScroll = 5
 priceFactor = 50
@@ -194,14 +193,19 @@ if whoami.Name=='Jack':
 
 			
 			ClearanceApproved = (text1[5])
-			if ClearanceApproved=="GuildMaster":
-				ClearanceAproved=5
+			whoami.Say(repr(ClearanceApproved))
+			if ClearanceApproved=="'GuildMaster',":
+				ClearanceApproved=5
+				whoami.Say("Welcome Guild Master")
+			elif ClearanceApproved=="'Master',":
+				ClearanceApproved=4
+			else:
+				ClearanceApproved=0
 		else:
 			ClearanceApproved=0
-	
-	if ClearanceApproved<5:
+	if ClearanceApproved<4:
 		
-		message="Only guild masters and GMs can withdraw funds from the guild."
+		message="Only guild masters, masters, and GMs can withdraw funds from the guild."
 	else:
 		try:
 			Amount=int(text[1])

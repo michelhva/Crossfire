@@ -41,9 +41,7 @@ if (guildname):
     guild = CFGuilds.CFGuild(guildname)
     text = Crossfire.WhatIsMessage().split()
     guildrecord = CFGuilds.CFGuildHouses().info(guildname)
-    whoami.Say(str(type(guildrecord)))
     found = 0
-    whoami.Say(guildrecord['Status'])
     if text[0] == 'enter' or text[0] == 'Enter':
 
             if guildrecord['Status'] == 'inactive':
