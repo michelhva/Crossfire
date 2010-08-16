@@ -1,9 +1,9 @@
-import Crossfire,random,math
+import Crossfire,random,math,sys
+sys.stdout=sys.stderr=open('/tmp/Ice.out','a')
 import CFDataBase
 CFDB=CFDataBase.CFDataBase("PShop")
 
 Params=Crossfire.ScriptParameters()
-
 
 def GetObjectByName(object, Name):
 	while object.Name!=Name:
@@ -125,7 +125,8 @@ elif Params=="PuddleDeath":
 	whoami=Crossfire.WhoAmI()
 	
 	Fogs=int(whoami.Weight/1000)
-	
+	Fogs=max(Fogs,1)
+	print Fogs
 	a=whoami.Inventory
 	while a !=None:
 		a.Remove()
@@ -147,6 +148,7 @@ elif Params=="PuddleDeath":
 	for i in range(Fogs):
 		
 		z=whoami.CreateObject("temp_fog")
+		z.Speed+=0.1
 		z.Weight=(3+random.randint(1,10+int(math.sqrt(FogsTmp))))
 		Rand=random.randint(1,2+int(FogsTmp/10))
 		z.Speed*=Rand
