@@ -1,6 +1,6 @@
 
 dialog border                WIDTH/2-250 HEIGHT/2+32  548 156 true Protections
-dialog_hide START META LOGIN NEWCHAR
+dialog_hide START META LOGIN NEWCHAR ACCOUNT
 button button_close          526 6    16  16 close_up close_down false command_protections_close
 
 label_text label_phys         10  30  90  16 font_label BLACK Physical:
