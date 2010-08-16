@@ -73,11 +73,6 @@ public class JXCWindow {
     public static final boolean DISABLE_START_GUI = true;
 
     /**
-     * The serial version UID.
-     */
-    private static final long serialVersionUID = 1;
-
-    /**
      * The {@link Exiter} to use.
      */
     @NotNull
