@@ -40,6 +40,8 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.Window;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferStrategy;
@@ -52,6 +54,7 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
+import javax.swing.Timer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -307,6 +310,24 @@ public class JXCWindowRenderer {
     };
 
     /**
+     * Called periodically to update the display contents.
+     */
+    @NotNull
+    private final ActionListener actionListener = new ActionListener() {
+        /** {@inheritDoc} */
+        @Override
+        public void actionPerformed(final ActionEvent e) {
+            redrawGUI();
+        }
+    };
+
+    /**
+     * The timer used to update the display contents.
+     */
+    @NotNull
+    private final Timer timer = new Timer(10, actionListener);
+
+    /**
      * Creates a new instance.
      * @param mouseTracker the mouse tracker instance
      * @param redrawSemaphore the semaphore used to synchronized map model
@@ -323,6 +344,20 @@ public class JXCWindowRenderer {
         graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
         graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
         defaultDisplayMode = graphicsDevice.getDisplayMode();
+    }
+
+    /**
+     * Starts repainting the window.
+     */
+    public void start() {
+        timer.start();
+    }
+
+    /**
+     * Stops repainting the window.
+     */
+    public void stop() {
+        timer.stop();
     }
 
     /**
@@ -610,7 +645,7 @@ public class JXCWindowRenderer {
     /**
      * Redraws the current gui.
      */
-    public void redrawGUI() {
+    private void redrawGUI() {
         if (inhibitPaintMapUpdate || inhibitPaintIconified) {
             skippedPaint = true;
             return;

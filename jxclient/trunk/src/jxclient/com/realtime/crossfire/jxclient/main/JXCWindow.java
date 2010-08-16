@@ -46,8 +46,6 @@ import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Insets;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import java.awt.event.KeyEvent;
@@ -58,7 +56,6 @@ import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
 import java.io.IOException;
 import javax.swing.JFrame;
-import javax.swing.Timer;
 import javax.swing.WindowConstants;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -136,26 +133,6 @@ public class JXCWindow {
      */
     @NotNull
     private final JFrame frame;
-
-    /**
-     * Called periodically to update the display contents.
-     */
-    @NotNull
-    private final ActionListener actionListener = new ActionListener() {
-        /** {@inheritDoc} */
-        @Override
-        public void actionPerformed(final ActionEvent e) {
-            synchronized (semaphoreDrawing) {
-                windowRenderer.redrawGUI();
-            }
-        }
-    };
-
-    /**
-     * The timer used to update the display contents.
-     */
-    @NotNull
-    private final Timer timer = new Timer(10, actionListener);
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets the
@@ -508,7 +485,7 @@ public class JXCWindow {
         guiStateManager.addGuiStateListener(guiStateListener);
         frame.addKeyListener(keyListener);
 
-        timer.start();
+        windowRenderer.start();
     }
 
     /**
@@ -570,7 +547,7 @@ public class JXCWindow {
      * Frees all resources. Should be called before the application terminates.
      */
     public void term() {
-        timer.stop();
+        windowRenderer.stop();
         guiManager.term();
         optionManager.saveOptions();
     }
