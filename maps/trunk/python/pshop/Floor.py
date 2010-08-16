@@ -1,5 +1,4 @@
 import Crossfire,sys
-sys.stderr=open('/tmp/output.log','w')
 Params=Crossfire.ScriptParameters()
 whoami=Crossfire.WhoAmI()
 Arch=None

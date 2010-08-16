@@ -1,5 +1,4 @@
 import Crossfire,random,math,sys
-sys.stdout=sys.stderr=open('/tmp/Ice.out','a')
 import CFDataBase
 CFDB=CFDataBase.CFDataBase("PShop")
 
@@ -148,7 +147,8 @@ elif Params=="PuddleDeath":
 	for i in range(Fogs):
 		
 		z=whoami.CreateObject("temp_fog")
-		z.Weight=(3+random.randint(1,10+int(math.sqrt(FogsTmp))))
+		z.Speed+=0.3
+		z.Weight=(3+random.randint(1,10+int(math.sqrt(FogsTmp))))*3
 		Rand=random.randint(1,2+int(FogsTmp/10))
 		z.Speed*=Rand
 		z.Weight*=int(Rand/10)+1
