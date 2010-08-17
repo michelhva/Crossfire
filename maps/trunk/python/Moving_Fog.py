@@ -27,8 +27,8 @@ if Params=="GenerateFog":
 	for i in range(Fogs):
 		
 		z=whoami.CreateObject("temp_fog")
-		z.Speed+=0.01
-		z.Weight=(3+random.randint(1,10+int(math.sqrt(FogsTmp))))*1
+		z.Speed+=0.05
+		z.Weight=(0+random.randint(1,15+int(math.sqrt(FogsTmp))))*1
 		Rand=random.randint(1,2+int(FogsTmp/10))
 		z.Speed*=Rand
 		z.Weight*=int(Rand/10)+1
@@ -38,4 +38,4 @@ if Params=="GenerateFog":
 		y.Title="Python"
 		y.Slaying="/python/Move_Fog.py"
 		z.Speed/=3
-		z.Weight=int(z.Weight/3)
+		z.Weight=int(z.Weight)/3
