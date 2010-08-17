@@ -317,6 +317,22 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      * {@inheritDoc}
      */
     @Override
+    public void drawextinfo(final int color, final int type, final int subtype, final String message) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void drawInfoSetDebugMode(final boolean printMessageTypes) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void sendAddme() {
         Assert.fail();
     }

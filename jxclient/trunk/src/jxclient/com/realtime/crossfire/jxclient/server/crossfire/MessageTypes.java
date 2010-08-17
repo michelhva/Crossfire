@@ -276,4 +276,72 @@ public class MessageTypes {
         throw new UnknownCommandException(str);
     }
 
+    /**
+     * Returns a string representation of a message type.
+     * @param type the message type
+     * @return the string representation
+     */
+    @NotNull
+    public static String toString(final int type) {
+        switch (type) {
+        case MSG_TYPE_BOOK:
+            return "BOOK";
+
+        case MSG_TYPE_CARD:
+            return "CARD";
+
+        case MSG_TYPE_PAPER:
+            return "PAPER";
+
+        case MSG_TYPE_SIGN:
+            return "SIGN";
+
+        case MSG_TYPE_MONUMENT:
+            return "MONUMENT";
+
+        case MSG_TYPE_DIALOG:
+            return "DIALOG";
+
+        case MSG_TYPE_MOTD:
+            return "MOTD";
+
+        case MSG_TYPE_ADMIN:
+            return "ADMIN";
+
+        case MSG_TYPE_SHOP:
+            return "SHOP";
+
+        case MSG_TYPE_COMMAND:
+            return "COMMAND";
+
+        case MSG_TYPE_ATTRIBUTE:
+            return "ATTRIBUTE";
+
+        case MSG_TYPE_SKILL:
+            return "SKILL";
+
+        case MSG_TYPE_APPLY:
+            return "APPLY";
+
+        case MSG_TYPE_ATTACK:
+            return "ATTACK";
+
+        case MSG_TYPE_COMMUNICATION:
+            return "COMMUNICATION";
+
+        case MSG_TYPE_SPELL:
+            return "SPELL";
+
+        case MSG_TYPE_ITEM:
+            return "ITEM";
+
+        case MSG_TYPE_MISC:
+            return "MISC";
+
+        case MSG_TYPE_VICTIM:
+            return "VICTIM";
+        }
+
+        return Integer.toString(type);
+    }
 }

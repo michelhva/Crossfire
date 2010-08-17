@@ -23,21 +23,29 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.gui.log.MessageBufferUpdater;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Implements the "debug_colors" command. It prints text to the log window using
- * different colors.
+ * Implements the "debug_messages" command. It prints text to the log window
+ * using different message types or enables/disables printing message types.
  * @author Andreas Kirschbaum
  */
-public class DebugColorsCommand extends AbstractCommand {
+public class DebugMessagesCommand extends AbstractCommand {
+
+    /**
+     * The connection instance.
+     */
+    @NotNull
+    private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection instance
      */
-    public DebugColorsCommand(@NotNull final CrossfireServerConnection crossfireServerConnection) {
+    public DebugMessagesCommand(@NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
+        this.crossfireServerConnection = crossfireServerConnection;
     }
 
     /**
@@ -53,14 +61,23 @@ public class DebugColorsCommand extends AbstractCommand {
      */
     @Override
     public void execute(@NotNull final String args) {
-        if (args.length() != 0) {
-            drawInfoError("The debug_colors commands does not take arguments.");
+        if (args.equals("colors")) {
+            for (int color = 0; color < MessageBufferUpdater.NUM_COLORS; color++) {
+                drawInfo("This line is color #"+color+" ("+MessageBufferUpdater.getColorName(color)+").", color);
+            }
+        } else if (args.equals("types")) {
+            for (final int type : MessageTypes.getAllTypes()) {
+                crossfireServerConnection.drawextinfo(0, type, 0, "This line is type #"+type+".");
+            }
+        } else if (args.equals("on")) {
+            crossfireServerConnection.drawInfoSetDebugMode(true);
+        } else if (args.equals("off")) {
+            crossfireServerConnection.drawInfoSetDebugMode(false);
+        } else {
+            drawInfoError("Valid arguments are 'colors', 'types', 'on', or 'off'. 'print' prints messages using different message types, 'on' and 'off' enable/disable printing of message types.");
             return;
         }
 
-        for (int color = 0; color < 16; color++) {
-            drawInfo("This line is color #"+color+" ("+MessageBufferUpdater.getColorName(color)+").", color);
-        }
     }
 
 }

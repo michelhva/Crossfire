@@ -39,4 +39,10 @@ public interface CrossfireDrawextinfoListener {
      */
     void commandDrawextinfoReceived(int color, int type, int subtype, @NotNull String message);
 
+    /**
+     * Enables or disables printing of message types.
+     * @param printMessageTypes whether to enable or disable message types
+     */
+    void setDebugMode(boolean printMessageTypes);
+
 }

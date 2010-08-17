@@ -94,6 +94,12 @@ public class PoisonWatcher {
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             check(message);
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void setDebugMode(final boolean printMessageTypes) {
+            // ignore
+        }
     };
 
     /**
