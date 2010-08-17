@@ -28,8 +28,8 @@ weight 1000
 value 1
 speed 0.5
 arch event_destroy
-name PuddleDeath
+name GenerateFog
 title Python
-slaying /python/pshop/Ice.py
+slaying /python/Moving_Fog.py
 end
 end
