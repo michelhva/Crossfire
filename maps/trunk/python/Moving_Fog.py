@@ -38,3 +38,4 @@ if Params=="GenerateFog":
 		y.Title="Python"
 		y.Slaying="/python/Move_Fog.py"
 		z.Speed/=3
+		z.Weight=int(z.Weight/3)
