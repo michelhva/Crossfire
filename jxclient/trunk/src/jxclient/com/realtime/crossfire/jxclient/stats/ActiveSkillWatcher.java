@@ -134,6 +134,12 @@ public class ActiveSkillWatcher {
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             checkMessage(message);
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void setDebugMode(final boolean printMessageTypes) {
+            // ignore
+        }
     };
 
     /**

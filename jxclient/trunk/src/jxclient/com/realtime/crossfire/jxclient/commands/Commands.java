@@ -74,7 +74,7 @@ public class Commands {
         commands.put("exec", new ExecCommand(commandCallback, crossfireServerConnection));
         commands.put("set", new SetCommand(crossfireServerConnection, optionManager));
         commands.put("clear", new ClearCommand(windowRenderer, crossfireServerConnection));
-        commands.put("debug_colors", new DebugColorsCommand(crossfireServerConnection));
+        commands.put("debug_messages", new DebugMessagesCommand(crossfireServerConnection));
     }
 
     /**

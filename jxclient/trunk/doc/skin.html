@@ -749,6 +749,8 @@ Displays a spell known by the character.
 <li>&lt;type...&gt; the message types to show or not to show: <code>BOOK</code>, <code>CARD</code>, <code>PAPER</code>, <code>SIGN</code>, <code>MONUMENT</code>, <code>DIALOG</code>, <code>MOTD</code>, <code>ADMIN</code>, <code>SHOP</code>, <code>COMMAND</code>, <code>ATTRIBUTE</code>, <code>SKILL</code>, <code>APPLY</code>, <code>ATTACK</code>, <code>COMMUNICATION</code>, <code>SPELL</code>, <code>ITEM</code>, <code>MISC</code>, <code>VICTIM</code>, <code>QUERY</code>. These constants correspond to the constants <code>MSG_TYPE_xyz</code> defined in <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/server/trunk/include/shared/newclient.h">the Crossfire server</a>.</li>
 </ul>
 
+<p>Note: the command <code>/debug_messages</code> may be useful for choosing the right message types.</p>
+
 <h3>minimap: display map overview</h3>
 
 <p>syntax:</p>
@@ -1215,7 +1217,7 @@ Displays a spell known by the character.
 
 <p>Add the command-line option <code>--debug-keyboard keys.log</code> to write debug information about pressed keys into <code>keys.log</code>. This information may help to define <a href="#key">key bindings</a>. &quot;pressed&quot; keys are matched by <code>key code</code> key bindings, &quot;typed&quot; keys are matched by <code>key char</code> key bindings.</p>
 
-<p>For debugging <a href="#log_color">log_color</a> definitions, the command <code>/debug_colors</code> may be useful. It prints text using all possible colors.</p>
+<p>For debugging <a href="#log_color">log_color</a> definitions, the command <code>/debug_messages</code> may be useful. It prints text using all possible color codes or message types.</p>
 
 </body>
 </html>

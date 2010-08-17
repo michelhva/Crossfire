@@ -70,4 +70,12 @@ public abstract class AbstractCommand implements Command {
         crossfireServerConnection.drawInfo(message, color);
     }
 
+    /**
+     * Enables or disables printing of message types.
+     * @param printMessageTypes whether to enable or disable message types
+     */
+    protected void drawInfoSetDebugMode(final boolean printMessageTypes) {
+        crossfireServerConnection.drawInfoSetDebugMode(printMessageTypes);
+    }
+
 }

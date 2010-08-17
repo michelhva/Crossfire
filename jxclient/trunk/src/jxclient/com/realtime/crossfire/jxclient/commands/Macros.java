@@ -97,6 +97,12 @@ public class Macros {
                 break;
             }
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void setDebugMode(final boolean printMessageTypes) {
+            // ignore
+        }
     };
 
     /**

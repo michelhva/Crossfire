@@ -2573,9 +2573,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             debugProtocol.debugProtocolWrite("recv drawextinfo color="+color+" type="+type+"/"+subtype+" msg="+message);
         }
 
-        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
-            listener.commandDrawextinfoReceived(color, type, subtype, message);
-        }
+        drawextinfo(color, type, subtype, message);
         notifyPacketWatcherListenersAscii(packet, args);
     }
 
@@ -3551,6 +3549,26 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     public void drawInfo(@NotNull final String message, final int color) {
         for (final CrossfireDrawinfoListener listener : drawinfoListeners) {
             listener.commandDrawinfoReceived(message, color);
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void drawextinfo(final int color, final int type, final int subtype, final String message) {
+        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
+            listener.commandDrawextinfoReceived(color, type, subtype, message);
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void drawInfoSetDebugMode(boolean printMessageTypes) {
+        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
+            listener.setDebugMode(printMessageTypes);
         }
     }
 

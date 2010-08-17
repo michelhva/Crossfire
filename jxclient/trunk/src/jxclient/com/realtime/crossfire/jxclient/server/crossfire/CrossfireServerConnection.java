@@ -253,6 +253,21 @@ public interface CrossfireServerConnection extends ServerConnection {
     void drawInfo(@NotNull String message, int color);
 
     /**
+     * Pretends that a drawextinfo message has been received.
+     * @param type the message type
+     * @param subtype the message subtype
+     * @param message the message
+     * @param color the color
+     */
+    void drawextinfo(int color, int type, int subtype, String message);
+
+    /**
+     * Enables or disables printing of message types.
+     * @param printMessageTypes whether to enable or disable message types
+     */
+    void drawInfoSetDebugMode(boolean printMessageTypes);
+
+    /**
      * Asks for an account login.
      * @param login the account login
      * @param password the account password

@@ -123,6 +123,11 @@ public class MessageBufferUpdater {
     private int types = ~0;
 
     /**
+     * Whether message types are included in the buffer output.
+     */
+    private boolean printMessageTypes = false;
+
+    /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
      */
     @NotNull
@@ -131,7 +136,7 @@ public class MessageBufferUpdater {
         @Override
         public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
             if (isTypeShown(MessageTypes.MSG_TYPE_QUERY)) {
-                parser.parseWithoutMediaTags(prompt, Color.RED, buffer);
+                parser.parseWithoutMediaTags(addMessageTypePrefix(MessageTypes.MSG_TYPE_QUERY, 0, prompt), Color.RED, buffer);
             }
         }
     };
@@ -142,17 +147,25 @@ public class MessageBufferUpdater {
      */
     @NotNull
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
+
         /** {@inheritDoc} */
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             if (type == MessageTypes.MSG_TYPE_QUERY // should not happen; but if it happens just display it
                 || isTypeShown(type)) {
+                final CharSequence messageWithPrefix = addMessageTypePrefix(type, subtype, message);
                 if (type == MessageTypes.MSG_TYPE_COMMUNICATION) {
-                    parser.parseWithoutMediaTags(message, findColor(color), buffer);
+                    parser.parseWithoutMediaTags(messageWithPrefix, findColor(color), buffer);
                 } else {
-                    parser.parse(message, findColor(color), buffer);
+                    parser.parse(messageWithPrefix, findColor(color), buffer);
                 }
             }
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void setDebugMode(final boolean printMessageTypes) {
+            MessageBufferUpdater.this.printMessageTypes = printMessageTypes;
         }
     };
 
@@ -181,7 +194,7 @@ public class MessageBufferUpdater {
             }
 
             if (isTypeShown(messageType)) {
-                parser.parseWithoutMediaTags(text, findColor(type), buffer);
+                parser.parseWithoutMediaTags(addMessageTypePrefix(messageType, 0, text), findColor(type), buffer);
             }
         }
     };
@@ -260,6 +273,17 @@ public class MessageBufferUpdater {
      */
     private boolean isTypeShown(final int type) {
         return type < 0 || type > 31 || (types&(1<<type)) != 0;
+    }
+
+    /**
+     * Adds a message type prefix to a message if {@link #printMessageTypes} is
+     * set.
+     * @param type the message type
+     * @param message the message
+     * @return the message with prefix
+     */
+    private CharSequence addMessageTypePrefix(final int type, final int subtype, @NotNull final String message) {
+        return printMessageTypes ? "(" + MessageTypes.toString(type) + "/" + subtype + ")" + message : message;
     }
 
 }

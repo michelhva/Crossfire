@@ -221,6 +221,12 @@ public class GuiManager {
             }
             windowRenderer.openDialog(dialog, false);
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void setDebugMode(final boolean printMessageTypes) {
+            // ignore
+        }
     };
 
     /**

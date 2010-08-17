@@ -91,6 +91,12 @@ public class GUILabelMessage extends GUIMultiLineLabel {
                 setText(message);
             }
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void setDebugMode(final boolean printMessageTypes) {
+            // ignore
+        }
     };
 
     /**
