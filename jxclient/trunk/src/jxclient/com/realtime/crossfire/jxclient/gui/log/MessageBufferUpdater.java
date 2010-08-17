@@ -279,6 +279,7 @@ public class MessageBufferUpdater {
      * Adds a message type prefix to a message if {@link #printMessageTypes} is
      * set.
      * @param type the message type
+     * @param subtype the message subtype
      * @param message the message
      * @return the message with prefix
      */
