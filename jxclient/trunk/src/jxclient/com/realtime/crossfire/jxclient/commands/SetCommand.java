@@ -85,7 +85,7 @@ public class SetCommand extends AbstractCommand {
         } else if (optionArgs.equals("off")) {
             checked = false;
         } else {
-            drawInfoError("The '"+optionArgs+"' for option '"+optionName+"'is invalid. Valid arguments are 'on' or 'off'.");
+            drawInfoError("The '"+optionArgs+"' for option '"+optionName+"' is invalid. Valid arguments are 'on' or 'off'.");
             return;
         }
 
