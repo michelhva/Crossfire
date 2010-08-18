@@ -62,11 +62,6 @@ public class ScriptkillCommand extends AbstractCommand {
      */
     @Override
     public void execute(@NotNull final String args) {
-        if (args.isEmpty()) {
-            drawInfoError("Which script to you want to kill?");
-            return;
-        }
-
         final Collection<ScriptProcess> scriptProcesses = scriptManager.getScripts(args);
         if (scriptProcesses.isEmpty()) {
             drawInfoError(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");
