@@ -20,4 +20,5 @@ invisible 1
 msg
 Meteor swarm fires several comet spells that cut a swath of physical, fire, and weaponmagic damage.
 endmsg
+weight 1250
 end

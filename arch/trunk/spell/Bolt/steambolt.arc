@@ -8,4 +8,5 @@ move_type fly_low
 generator 1
 speed 1
 no_pick 1
+weight 500
 end

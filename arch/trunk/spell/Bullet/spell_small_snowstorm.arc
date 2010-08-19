@@ -20,6 +20,7 @@ attacktype 18
 no_drop 1
 invisible 1
 skill evocation
+weight 500
 food 4
 msg
 Fires a snowball that explodes into a small flurry of ice and cold when it hits something.  It delivers cold damage, and items caught in the explosion are encased in blocks of ice.
