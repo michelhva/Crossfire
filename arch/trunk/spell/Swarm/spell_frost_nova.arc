@@ -20,4 +20,5 @@ invisible 1
 msg
 Fires a swarm of asteroid bullets that deliver a weaponmagic attack.
 endmsg
+weight 1250
 end

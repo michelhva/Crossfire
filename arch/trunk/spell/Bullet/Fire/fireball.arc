@@ -14,4 +14,5 @@ glow_radius 1
 move_type fly_low
 no_pick 1
 attacktype 4
+weight 500
 end

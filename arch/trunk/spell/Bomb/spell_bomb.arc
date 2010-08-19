@@ -23,4 +23,5 @@ invisible 1
 msg
 Creates a bomb in the direction the spell is fired.  The bomb detonates after a few seconds, firing shrapnel and encompassing the area in an explosion. Creatures are wounded if they are in the explosion or if they are hit by the flying shrapnel.
 endmsg
+weight 750
 end

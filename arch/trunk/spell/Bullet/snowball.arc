@@ -11,4 +11,5 @@ glow_radius 2
 speed 1
 move_type fly_low
 no_pick 1
+weight 1000
 end

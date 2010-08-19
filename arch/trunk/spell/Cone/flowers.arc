@@ -10,4 +10,5 @@ speed 0.5
 move_type fly_low
 weight 20
 nrof 1
+weight 500
 end

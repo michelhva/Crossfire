@@ -8,4 +8,5 @@ is_animated 0
 is_turnable 1
 speed 1
 no_pick 1
+weight 500
 end
