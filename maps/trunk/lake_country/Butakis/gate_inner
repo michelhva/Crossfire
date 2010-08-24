@@ -8,7 +8,7 @@ enter_x 7
 enter_y 1
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2008-10-29 Rick Tanner
+Modified: 2010-08-20 crossfire
 endmsg
 end
 arch marble
@@ -240,6 +240,9 @@ x 1
 y 15
 end
 arch teleporter
+slaying guilds/mainfloor
+hp 15
+sp 28
 x 1
 y 15
 end
@@ -848,17 +851,30 @@ y 15
 invisible 1
 connected 9
 end
-arch cobblestones
-x 6
-y 15
-end
 arch magic_ear
 msg
-@match Aoi
+@match nd a good time will be had by all
 endmsg
 x 6
 y 15
 connected 6
+end
+arch magic_mouth
+msg
+A voice whispers to you "There's a party at Mother's".
+endmsg
+x 6
+y 15
+connected 7
+end
+arch button_trigger
+x 6
+y 15
+connected 7
+end
+arch cobblestones
+x 6
+y 15
 end
 arch exit
 name inner city  gate house

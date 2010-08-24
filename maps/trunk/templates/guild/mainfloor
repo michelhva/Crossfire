@@ -4739,9 +4739,9 @@ x 15
 y 29
 end
 arch exit
-slaying ../../lone_town/town
-hp 12
-sp 17
+slaying TemplateExit
+hp TemplateHP
+sp TemplateSP
 x 15
 y 29
 invisible 1

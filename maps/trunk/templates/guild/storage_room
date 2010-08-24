@@ -6610,9 +6610,9 @@ x 27
 y 14
 end
 arch exit
-slaying /pup_land/lone_town/town
-hp 1
-sp 10
+slaying ExitPath
+hp ExitX
+sp ExitY
 x 27
 y 15
 move_on all
@@ -6965,9 +6965,9 @@ x 28
 y 14
 end
 arch exit
-slaying /pup_land/lone_town/town
-hp 2
-sp 10
+slaying ExitPath
+hp Exit+1X
+sp ExitY
 x 28
 y 15
 move_on all

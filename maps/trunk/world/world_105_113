@@ -5,7 +5,7 @@ region euthville
 width 50
 height 50
 msg
-Modified: 2010-05-05 Cavesomething
+Modified: 2010-08-20 crossfire
 endmsg
 outdoor 1
 tile_path_1 world_105_112
@@ -876,7 +876,15 @@ end
 arch small_stones
 x 3
 y 19
-elevation 2887
+elevation 5520
+end
+arch guild_northwest
+name Green Goblin Guild
+slaying /euthville/green_goblin/storage_hall
+hp -1
+sp -1
+x 3
+y 19
 end
 arch small_stones
 x 3
@@ -3876,6 +3884,14 @@ arch small_stones
 x 14
 y 19
 elevation 5520
+end
+arch guild_northwest
+name Green Goblin Guild
+slaying /euthville/green_goblin/mainfloor
+hp 15
+sp 28
+x 14
+y 19
 end
 arch small_stones
 x 14
