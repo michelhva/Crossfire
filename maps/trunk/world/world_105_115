@@ -5502,8 +5502,8 @@ end
 arch barn
 name Mailed Fist's storage room
 slaying /scorn/guilds/mailed_fist/storage_room
-hp 1
-sp 10
+hp -1
+sp -1
 x 12
 y 25
 end
@@ -7339,9 +7339,9 @@ elevation -1
 end
 arch guild
 name Guild of the Mailed Fist
-slaying /scorn/guilds/mailed_fist/ground
-hp 12
-sp 23
+slaying /scorn/guilds/mailed_fist/mainfloor
+hp -1
+sp -1
 x 16
 y 31
 end
