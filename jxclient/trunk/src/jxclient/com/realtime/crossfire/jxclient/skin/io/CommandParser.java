@@ -112,7 +112,6 @@ public class CommandParser {
     /**
      * Parses and builds command arguments.
      * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param command the command to parse the arguments of
      * @param guiStateManager the gui state manager instance
@@ -127,57 +126,57 @@ public class CommandParser {
      * @throws JXCSkinException if an element cannot be found
      */
     @NotNull
-    public GUICommand parseCommandArgs(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
+    public GUICommand parseCommandArgs(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
         if (command.equals("SHOW")) {
-            return parseShow(args, argc, element);
+            return parseShow(element);
         } else if (command.equals("HIDE")) {
-            return parseHide(args, argc, element);
+            return parseHide(element);
         } else if (command.equals("TOGGLE")) {
-            return parseToggle(args, argc, element);
+            return parseToggle(element);
         } else if (command.equals("PRINT")) {
-            return parsePrint(args, argc, element);
+            return parsePrint(element);
         } else if (command.equals("QUIT")) {
-            return parseQuit(args, argc, element, commandCallback);
+            return parseQuit(element, commandCallback);
         } else if (command.equals("CONNECT")) {
-            return parseConnect(args, argc, element, guiStateManager);
+            return parseConnect(element, guiStateManager);
         } else if (command.equals("DISCONNECT")) {
-            return parseDisconnect(args, argc, element, guiStateManager);
+            return parseDisconnect(element, guiStateManager);
         } else if (command.equals("GUI_META")) {
-            return parseGuiMeta(args, argc, element, guiStateManager);
+            return parseGuiMeta(element, guiStateManager);
         } else if (command.equals("GUI_START")) {
-            return parseGuiStart(args, argc, element, guiStateManager);
+            return parseGuiStart(element, guiStateManager);
         } else if (command.equals("GUI_EXECUTE_ELEMENT")) {
-            return parseGuiExecuteElement(args, argc, element);
+            return parseGuiExecuteElement(element);
         } else if (command.equals("DIALOG_OPEN")) {
-            return parseDialogOpen(args, argc, element, commandCallback);
+            return parseDialogOpen(args, element, commandCallback);
         } else if (command.equals("DIALOG_TOGGLE")) {
-            return parseDialogToggle(args, argc, element, commandCallback);
+            return parseDialogToggle(args, element, commandCallback);
         } else if (command.equals("DIALOG_CLOSE")) {
-            return parseDialogClose(args, argc, element, commandCallback);
+            return parseDialogClose(args, element, commandCallback);
         } else if (command.equals("GUI_EXECUTE_COMMAND")) {
-            return parseGuiExecuteCommand(args, argc, element, commands, lnr, macros);
+            return parseGuiExecuteCommand(args, element, commands, lnr, macros);
         } else if (command.equals("EXEC_SELECTION")) {
-            return parseExecSelection(args, argc, element, commandQueue, crossfireServerConnection);
+            return parseExecSelection(args, element, commandQueue, crossfireServerConnection);
         } else if (command.equals("MOVE_SELECTION")) {
-            return parseMoveSelection(args, argc, element);
+            return parseMoveSelection(args, element);
         } else if (command.equals("SCROLL_LIST")) {
-            return parseScrollList(args, argc, element);
+            return parseScrollList(args, element);
         } else if (command.equals("SCROLL") || command.equals("SCROLL_NEVER")) {
-            return parseScroll(args, argc, element, command.equals("SCROLL"));
+            return parseScroll(args, element, command.equals("SCROLL"));
         } else if (command.equals("SCROLL_RESET")) {
-            return parseScrollReset(args, argc, element);
+            return parseScrollReset(element);
         } else if (command.equals("MOVE_FOCUS")) {
-            return parseMoveFocus(args, argc, element);
+            return parseMoveFocus(args, element);
         } else if (command.equals("ACCOUNT_LOGIN")) {
-            return parseAccountLogin(args, argc, element, commandCallback);
+            return parseAccountLogin(element, commandCallback);
         } else if (command.equals("ACCOUNT_CREATE")) {
-            return parseAccountCreate(args, argc, element, commandCallback);
+            return parseAccountCreate(element, commandCallback);
         } else if (command.equals("ACCOUNT_PLAY")) {
-            return parseAccountPlay(args, argc, element, commandCallback);
+            return parseAccountPlay(element, commandCallback);
         } else if (command.equals("ACCOUNT_LINK")) {
-            return parseAccountLink(args, argc, element, commandCallback);
+            return parseAccountLink(element, commandCallback);
         } else if (command.equals("ACCOUNT_CREATE_CHARACTER")) {
-            return parseAccountCreateCharacter(args, argc, element, commandCallback);
+            return parseAccountCreateCharacter(element, commandCallback);
         } else {
             throw new JXCSkinException("unknown command '"+command+"'");
         }
@@ -185,18 +184,12 @@ public class CommandParser {
 
     /**
      * Parses and builds a "SHOW" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseShow(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseShow(@Nullable final GUIElement element) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -206,18 +199,12 @@ public class CommandParser {
 
     /**
      * Parses and builds a "HIDE" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseHide(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseHide(@Nullable final GUIElement element) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -227,18 +214,12 @@ public class CommandParser {
 
     /**
      * Parses and builds a "TOGGLE" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseToggle(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseToggle(@Nullable final GUIElement element) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -248,18 +229,12 @@ public class CommandParser {
 
     /**
      * Parses and builds a "PRINT" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parsePrint(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parsePrint(@Nullable final GUIElement element) throws IOException {
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -269,19 +244,13 @@ public class CommandParser {
 
     /**
      * Parses and builds a "QUIT" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commandCallback the command callback to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseQuit(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseQuit(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -291,19 +260,13 @@ public class CommandParser {
 
     /**
      * Parses and builds a "CONNECT" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param guiStateManager the gui state manager instance
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseConnect(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseConnect(@Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -317,19 +280,13 @@ public class CommandParser {
 
     /**
      * Parses and builds a "DISCONNECT" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param guiStateManager the gui state manager instance
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseDisconnect(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseDisconnect(@Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -339,19 +296,13 @@ public class CommandParser {
 
     /**
      * Parses and builds a "GUI_META" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param guiStateManager the gui state manager instance
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseGuiMeta(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseGuiMeta(@Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -361,19 +312,13 @@ public class CommandParser {
 
     /**
      * Parses and builds a "GUI_START" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param guiStateManager the gui state manager instance
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseGuiStart(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseGuiStart(@Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -383,18 +328,12 @@ public class CommandParser {
 
     /**
      * Parses and builds a "GUI_EXECUTE_ELEMENT" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseGuiExecuteElement(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseGuiExecuteElement(@Nullable final GUIElement element) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -409,73 +348,57 @@ public class CommandParser {
     /**
      * Parses and builds a "DIALOG_OPEN" command.
      * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commandCallback the command callback to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private GUICommand parseDialogOpen(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
-        if (args.length != argc+1) {
-            throw new IOException("syntax error");
-        }
-
+    private GUICommand parseDialogOpen(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
 
-        return new DialogOpenCommand(commandCallback, dialogs.addDialog(args[argc]));
+        return new DialogOpenCommand(commandCallback, dialogs.addDialog(args.get()));
     }
 
     /**
      * Parses and builds a "DIALOG_TOGGLE" command.
      * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commandCallback the command callback to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private GUICommand parseDialogToggle(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
-        if (args.length != argc+1) {
-            throw new IOException("syntax error");
-        }
-
+    private GUICommand parseDialogToggle(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
 
-        return new DialogToggleCommand(commandCallback, dialogs.addDialog(args[argc]));
+        return new DialogToggleCommand(commandCallback, dialogs.addDialog(args.get()));
     }
 
     /**
      * Parses and builds a "DIALOG_CLOSE" command.
      * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commandCallback the command callback to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private GUICommand parseDialogClose(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
-        if (args.length != argc+1) {
-            throw new IOException("syntax error");
-        }
-
+    private GUICommand parseDialogClose(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
 
-        return new DialogCloseCommand(commandCallback, dialogs.addDialog(args[argc]));
+        return new DialogCloseCommand(commandCallback, dialogs.addDialog(args.get()));
     }
 
     /**
      * Parses and builds a "GUI_EXECUTE_COMMAND" command.
      * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commands the commands instance for executing commands
      * @param lnr the source to read more parameters from
@@ -484,23 +407,18 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseGuiExecuteCommand(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final Macros macros) throws IOException {
-        if (args.length < argc+1) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseGuiExecuteCommand(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final Macros macros) throws IOException {
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
 
-        final String commandString = ParseUtils.parseText(args, argc, lnr);
+        final String commandString = ParseUtils.parseText(args, lnr);
         return new ExecuteCommandCommand(commands, commandString, macros);
     }
 
     /**
      * Parses and builds a "" command.
      * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commandQueue the command queue for executing commands
      * @param crossfireServerConnection the server connection to use
@@ -508,12 +426,8 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private GUICommand parseExecSelection(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection) throws IOException {
-        if (args.length != argc+1) {
-            throw new IOException("syntax error");
-        }
-
-        final CommandType commandType = NumberParser.parseEnum(CommandType.class, args[argc], "command name");
+    private GUICommand parseExecSelection(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection) throws IOException {
+        final CommandType commandType = NumberParser.parseEnum(CommandType.class, args.get(), "command name");
 
         if (element == null) {
             throw new IOException("<element> is required");
@@ -529,19 +443,14 @@ public class CommandParser {
     /**
      * Parses and builds a "MOVE_SELECTION" command.
      * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseMoveSelection(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException {
-        if (args.length != argc+2) {
-            throw new IOException("syntax error");
-        }
-
-        final int diffLines = ExpressionParser.parseInt(args[argc]);
-        final int diffElements = ExpressionParser.parseInt(args[argc+1]);
+    private static GUICommand parseMoveSelection(@NotNull final Args args, @Nullable final GUIElement element) throws IOException {
+        final int diffLines = ExpressionParser.parseInt(args.get());
+        final int diffElements = ExpressionParser.parseInt(args.get());
         if (diffLines == 0 && diffElements == 0) {
             throw new IOException("Invalid zero scroll distance");
         }
@@ -560,18 +469,13 @@ public class CommandParser {
     /**
      * Parses and builds a "SCROLL_LIST" command.
      * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseScrollList(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException {
-        if (args.length != argc+1) {
-            throw new IOException("syntax error");
-        }
-
-        final int distance = ExpressionParser.parseInt(args[argc]);
+    private static GUICommand parseScrollList(@NotNull final Args args, @Nullable final GUIElement element) throws IOException {
+        final int distance = ExpressionParser.parseInt(args.get());
         if (distance == 0) {
             throw new IOException("Invalid zero scroll distance");
         }
@@ -590,7 +494,6 @@ public class CommandParser {
     /**
      * Parses and builds a "SCROLL" or "SCROLL_NEVER command.
      * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param isScroll whether to parse a "SCROLL" (<code>true</code>) or a
      * "SCROLL_NEVER" (<code>false</code>) command
@@ -598,12 +501,8 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseScroll(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, final boolean isScroll) throws IOException {
-        if (args.length != argc+1) {
-            throw new IOException("syntax error");
-        }
-
-        final int distance = ExpressionParser.parseInt(args[argc]);
+    private static GUICommand parseScroll(@NotNull final Args args, @Nullable final GUIElement element, final boolean isScroll) throws IOException {
+        final int distance = ExpressionParser.parseInt(args.get());
         if (distance == 0) {
             throw new IOException("Invalid zero scroll distance");
         }
@@ -621,18 +520,12 @@ public class CommandParser {
 
     /**
      * Parses and builds a "SCROLL_RESET" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseScrollReset(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseScrollReset(@Nullable final GUIElement element) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -647,21 +540,16 @@ public class CommandParser {
     /**
      * Parses and builds a "MOVE_FOCUS" command.
      * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if a syntax error occurs
      */
     @NotNull
-    private GUICommand parseMoveFocus(@NotNull final String[] args, final int argc, @Nullable final GUIElement element) throws IOException, JXCSkinException {
-        if (args.length != argc+1) {
-            throw new IOException("syntax error");
-        }
-
-        final Object nextElement = definedGUIElements.lookup(args[argc]);
+    private GUICommand parseMoveFocus(@NotNull final Args args, @Nullable final GUIElement element) throws IOException, JXCSkinException {
+        final Object nextElement = definedGUIElements.lookup(args.get());
         if (!(nextElement instanceof ActivatableGUIElement)) {
-            throw new IOException("'"+args[argc]+"' cannot become active");
+            throw new IOException("'"+args.getPrev()+"' cannot become active");
         }
 
         if (element == null) {
@@ -677,19 +565,13 @@ public class CommandParser {
 
     /**
      * Parses and builds an "ACCOUNT_LOGIN" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commandCallback the command callback to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountLogin(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseAccountLogin(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -699,19 +581,13 @@ public class CommandParser {
 
     /**
      * Parses and builds an "ACCOUNT_CREATE" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commandCallback the command callback to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountCreate(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseAccountCreate(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -721,19 +597,13 @@ public class CommandParser {
 
     /**
      * Parses and builds an "ACCOUNT_PLAY" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commandCallback the command callback to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountPlay(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseAccountPlay(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -743,19 +613,13 @@ public class CommandParser {
 
     /**
      * Parses and builds an "ACCOUNT_LINK" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commandCallback the command callback to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountLink(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseAccountLink(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -765,19 +629,13 @@ public class CommandParser {
 
     /**
      * Parses and builds an "ACCOUNT_CREATE_CHARACTER" command.
-     * @param args the list of arguments
-     * @param argc the start index for parsing
      * @param element the target element
      * @param commandCallback the command callback to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountCreateCharacter(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
-        if (args.length != argc) {
-            throw new IOException("syntax error");
-        }
-
+    private static GUICommand parseAccountCreateCharacter(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
