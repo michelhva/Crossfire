@@ -8,7 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2000-10-12
-Modified: 2010-06-17 master
+Modified: 2010-08-29 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -937,7 +937,7 @@ sp 12
 x 3
 y 22
 carrying 70000
-arch wizard
+arch wizard_class
 end
 end
 arch flagstone
