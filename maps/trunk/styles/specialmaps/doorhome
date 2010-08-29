@@ -4,7 +4,7 @@ width 5
 height 5
 msg
 Created:  1999-02-18
-Modified: 2008-11-25 Rick Tanner
+Modified: 2010-08-29 Nicolas Weeger
 endmsg
 end
 arch cobblestones
@@ -15,14 +15,14 @@ arch woodwall_1_4
 x 1
 y 1
 end
-arch cobblestones
-x 1
-y 2
-end
 arch magic_mouth
 msg
 Homeward express.
 endmsg
+x 1
+y 2
+end
+arch cobblestones
 x 1
 y 2
 end
