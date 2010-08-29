@@ -162,19 +162,19 @@ public class ParseUtils {
      * "<<EOF", all text up to the next line containing only "EOF" is appended.
      * Comments starting with "#" are dropped.
      * @param args the args to concatenate
-     * @param startIndex the first index to concatenate
      * @param lnr where to read additional lines from
      * @return the concatenated string
      * @throws IOException if reading from <code>lnr</lnr> fails
      */
     @NotNull
-    public static String parseText(@NotNull final String[] args, final int startIndex, @NotNull final LineNumberReader lnr) throws IOException {
+    public static String parseText(@NotNull final Args args, @NotNull final LineNumberReader lnr) throws IOException {
         final StringBuilder text = new StringBuilder();
-        for (int i = startIndex; i < args.length; i++) {
-            if (i > startIndex) {
+        if (args.hasMore()) {
+            text.append(args.get());
+            while (args.hasMore()) {
                 text.append(' ');
+                text.append(args.get());
             }
-            text.append(args[i]);
         }
         if (text.toString().equals("<<EOF")) {
             text.setLength(0);
