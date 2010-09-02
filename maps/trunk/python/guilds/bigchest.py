@@ -9,8 +9,7 @@ import CFMail
 import CFLog
 activator=Crossfire.WhoIsActivator()
 mymap=activator.Map
-import sys
-sys.stderr=open('/tmp/Output.log', 'w')
+
 whoami=Crossfire.WhoAmI()
 def GetForce(Target):
 	while Target!=None:
