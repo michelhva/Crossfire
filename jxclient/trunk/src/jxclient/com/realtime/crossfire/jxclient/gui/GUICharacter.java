@@ -115,16 +115,16 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
+    protected void render(@NotNull final Graphics2D g2) {
         final CharacterInformation character = characterModel.getEntry(index);
-        g.setBackground(new Color(0, 0, 0, 0.0f));
-        g.clearRect(0, 0, getWidth(), getHeight());
-        g.setFont(font);
-        g.setColor(isActive() || selected ? Color.RED : Color.GRAY);
+        g2.setBackground(new Color(0, 0, 0, 0.0f));
+        g2.clearRect(0, 0, getWidth(), getHeight());
+        g2.setFont(font);
+        g2.setColor(isActive() || selected ? Color.RED : Color.GRAY);
         /*if (image != null) {
-            g.drawImage(image, 0, 0, null);
+            g2.drawImage(image, 0, 0, null);
         }*/
-        g.drawString(character == null ? "" : character.getName(), 0, font.getSize()+1);
+        g2.drawString(character == null ? "" : character.getName(), 0, font.getSize()+1);
     }
 
     /**

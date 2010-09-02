@@ -470,20 +470,20 @@ public abstract class GUIElement extends JComponent {
      */
     private void render() {
         synchronized (bufferedImageSync) {
-            final Graphics2D g = createBufferGraphics();
+            final Graphics2D g2 = createBufferGraphics();
             try {
-                render(g);
+                render(g2);
             } finally {
-                g.dispose();
+                g2.dispose();
             }
         }
     }
 
     /**
      * Paints the element's contents into the passed graphics.
-     * @param g the graphics to paint to
+     * @param g2 the graphics to paint to
      */
-    protected abstract void render(@NotNull final Graphics2D g);
+    protected abstract void render(@NotNull final Graphics2D g2);
 
     /**
      * {@inheritDoc}

@@ -149,15 +149,15 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
+    protected void render(@NotNull final Graphics2D g2) {
         if (renderStateManager == null) {
             return;
         }
 
-        g.setBackground(new Color(0, 0, 0, 0.0f));
-        g.clearRect(0, 0, getWidth(), getHeight());
+        g2.setBackground(new Color(0, 0, 0, 0.0f));
+        g2.clearRect(0, 0, getWidth(), getHeight());
         if (backgroundImage != null) {
-            g.drawImage(backgroundImage, 0, 0, null);
+            g2.drawImage(backgroundImage, 0, 0, null);
         }
 
         int y = -renderStateManager.getTopOffset();
@@ -165,7 +165,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
             final ListIterator<Line> it = buffer.listIterator(renderStateManager.getTopIndex());
             while (y < getHeight() && it.hasNext()) {
                 final Line line = it.next();
-                drawLine(g, y, line);
+                drawLine(g2, y, line);
                 y += line.getHeight();
             }
         }

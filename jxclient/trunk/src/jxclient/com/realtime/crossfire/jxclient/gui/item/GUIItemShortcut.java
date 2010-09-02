@@ -286,9 +286,9 @@ public class GUIItemShortcut extends GUIItem {
 
     /* {@inheritDoc} */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
-        g.setBackground(BACKGROUND_COLOR);
-        g.clearRect(0, 0, getWidth(), getHeight());
+    protected void render(@NotNull final Graphics2D g2) {
+        g2.setBackground(BACKGROUND_COLOR);
+        g2.clearRect(0, 0, getWidth(), getHeight());
 
         final Shortcut tmpShortcut = shortcut;
         if (tmpShortcut == null) {
@@ -307,20 +307,20 @@ public class GUIItemShortcut extends GUIItem {
             public void visit(@NotNull final ShortcutSpell shortcutSpell) {
                 final Color color = shortcutSpell.isCast() ? castColor : invokeColor;
                 if (color != null) {
-                    g.setColor(color);
-                    g.fillRect(0, 0, w, h);
+                    g2.setColor(color);
+                    g2.fillRect(0, 0, w, h);
                 }
-                g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
+                g2.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
                 final Image image = shortcutSpell.isCast() ? castImage : invokeImage;
                 if (image != null) {
-                    g.drawImage(image, 0, 0, null);
+                    g2.drawImage(image, 0, 0, null);
                 }
             }
         };
         tmpShortcut.visit(visitor);
-        g.setFont(font);
-        g.setColor(Color.YELLOW);
-        g.drawString("F"+(index+1), 1, 1+font.getSize()); // XXX: define in skin
+        g2.setFont(font);
+        g2.setColor(Color.YELLOW);
+        g2.drawString("F"+(index+1), 1, 1+font.getSize()); // XXX: define in skin
     }
 
     /**

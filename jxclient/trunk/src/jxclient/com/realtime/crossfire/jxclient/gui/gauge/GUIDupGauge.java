@@ -167,14 +167,14 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
-        g.setBackground(new Color(0, 0, 0, 0.0f));
-        g.clearRect(0, 0, getWidth(), getHeight());
+    protected void render(@NotNull final Graphics2D g2) {
+        g2.setBackground(new Color(0, 0, 0, 0.0f));
+        g2.clearRect(0, 0, getWidth(), getHeight());
         if (emptyImage != null) {
-            g.drawImage(emptyImage, 0, 0, null);
+            g2.drawImage(emptyImage, 0, 0, null);
         }
-        gaugeStateDiv.draw(g);
-        gaugeStateMod.draw(g);
+        gaugeStateDiv.draw(g2);
+        gaugeStateMod.draw(g2);
     }
 
     /**

@@ -73,9 +73,9 @@ public class GUIFill extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
-        g.setBackground(color);
-        g.clearRect(0, 0, getWidth(), getHeight());
+    protected void render(@NotNull final Graphics2D g2) {
+        g2.setBackground(color);
+        g2.clearRect(0, 0, getWidth(), getHeight());
     }
 
 }

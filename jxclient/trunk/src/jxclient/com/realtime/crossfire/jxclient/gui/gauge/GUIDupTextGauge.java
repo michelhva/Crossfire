@@ -95,19 +95,19 @@ public class GUIDupTextGauge extends GUIDupGauge {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
-        super.render(g);
+    protected void render(@NotNull final Graphics2D g2) {
+        super.render(g2);
 
         if (font == null) {
             return;
         }
 
-        g.setBackground(new Color(0, 0, 0, 0.0f));
-        g.setColor(color);
-        g.setFont(font);
+        g2.setBackground(new Color(0, 0, 0, 0.0f));
+        g2.setColor(color);
+        g2.setFont(font);
         final String text = labelText;
-        final RectangularShape rectangle = font.getStringBounds(text, g.getFontRenderContext());
-        g.drawString(text, (int)Math.round((getWidth()-rectangle.getWidth())/2), (int)Math.round((getHeight()-rectangle.getMaxY()-rectangle.getMinY()))/2);
+        final RectangularShape rectangle = font.getStringBounds(text, g2.getFontRenderContext());
+        g2.drawString(text, (int)Math.round((getWidth()-rectangle.getWidth())/2), (int)Math.round((getHeight()-rectangle.getMaxY()-rectangle.getMinY()))/2);
     }
 
     /**

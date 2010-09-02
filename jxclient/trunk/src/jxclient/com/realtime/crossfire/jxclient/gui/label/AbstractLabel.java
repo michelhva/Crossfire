@@ -118,12 +118,12 @@ public abstract class AbstractLabel extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
+    protected void render(@NotNull final Graphics2D g2) {
         if (backgroundImage != null) {
-            g.drawImage(backgroundImage.getImage(), 0, 0, null);
+            g2.drawImage(backgroundImage.getImage(), 0, 0, null);
         } else {
-            g.setBackground(backgroundColor);
-            g.clearRect(0, 0, getWidth(), getHeight());
+            g2.setBackground(backgroundColor);
+            g2.clearRect(0, 0, getWidth(), getHeight());
         }
     }
 
