@@ -167,7 +167,7 @@ if whoami.Name=='Jack':
 				activator.Teleport(mymap,X,Y)
 				bank.withdraw(accountname, Price)
 		else:
-			message="The guild does not have sufficient funds."
+			message="The guild does not have sufficient funds.  " +str(Price)+" jade needed."
      elif text[0] == 'mailscroll':
 	if len(text) == 2:
 		if log.info(text[1]):
