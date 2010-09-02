@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-02-27 perkins
+Modified: 2010-09-02 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -8807,6 +8807,8 @@ end
 arch perm_magic_portal
 name Navar
 slaying /world/world_121_116
+hp 34
+sp 46
 x 29
 y 3
 walk_on 0
