@@ -192,9 +192,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
-        g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
-        g.setFont(font);
+    protected void render(@NotNull final Graphics2D g2) {
+        g2.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
+        g2.setFont(font);
         final String tmp;
         final int y;
         synchronized (syncCursor) {
@@ -208,12 +208,12 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 final RectangularShape rectangleCursor = font.getStringBounds(tmpCursor, fontRenderContext);
                 final int cursorX1 = (int)(rectanglePrefix.getWidth()+0.5);
                 final int cursorX2 = (int)(rectangleCursor.getWidth()+0.5);
-                g.setColor(inactiveColor);
-                g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, getHeight());
+                g2.setColor(inactiveColor);
+                g2.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, getHeight());
             }
         }
-        g.setColor(isActive() ? activeColor : inactiveColor);
-        g.drawString(tmp, margin, y);
+        g2.setColor(isActive() ? activeColor : inactiveColor);
+        g2.drawString(tmp, margin, y);
     }
 
     @NotNull

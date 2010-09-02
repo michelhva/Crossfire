@@ -179,16 +179,16 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
-        final Composite composite = g.getComposite();
-        g.setComposite(AlphaComposite.Clear);
-        g.setColor(new Color(0, 255, 0, 255));
-        g.fillRect(0, 0, getWidth(), getHeight());
-        g.setComposite(composite);
+    protected void render(@NotNull final Graphics2D g2) {
+        final Composite composite = g2.getComposite();
+        g2.setComposite(AlphaComposite.Clear);
+        g2.setColor(new Color(0, 255, 0, 255));
+        g2.fillRect(0, 0, getWidth(), getHeight());
+        g2.setComposite(composite);
 
         synchronized (getTreeLock()) {
-            scrollPane.paint(g);
-            viewport.paint(g);
+            scrollPane.paint(g2);
+            viewport.paint(g2);
         }
     }
 

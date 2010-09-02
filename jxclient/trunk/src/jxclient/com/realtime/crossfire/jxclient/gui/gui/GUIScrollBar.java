@@ -254,14 +254,14 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
+    protected void render(@NotNull final Graphics2D g2) {
         final int sh = getSliderHeightPixels();
         final int sy = getSliderPosPixels(sh);
-        g.setColor(colorBackground);
-        g.fillRect(0, 0, getWidth(), sy);
-        g.fillRect(0, sy+sh, getWidth(), getHeight()-sy-sh);
-        g.setColor(colorForeground);
-        g.fillRect(0, sy, getWidth(), sh);
+        g2.setColor(colorBackground);
+        g2.fillRect(0, 0, getWidth(), sy);
+        g2.fillRect(0, sy+sh, getWidth(), getHeight()-sy-sh);
+        g2.setColor(colorForeground);
+        g2.fillRect(0, sy, getWidth(), sh);
     }
 
 }

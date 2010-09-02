@@ -97,8 +97,8 @@ public class GUIMultiLineLabel extends GUILabel {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
-        super.render(g);
+    protected void render(@NotNull final Graphics2D g2) {
+        super.render(g2);
 
         if (lines == null || lines.length <= 0) {
             return;
@@ -109,12 +109,12 @@ public class GUIMultiLineLabel extends GUILabel {
             return;
         }
 
-        final RectangularShape rectangle = font.getStringBounds("X", g.getFontRenderContext());
+        final RectangularShape rectangle = font.getStringBounds("X", g2.getFontRenderContext());
         final int lineHeight = (int)Math.round(rectangle.getMaxY()-rectangle.getMinY()+0.5);
 
         int y = 0;
         for (final String line : lines) {
-            y += drawLine(g, y, lineHeight, line);
+            y += drawLine(g2, y, lineHeight, line);
         }
     }
 

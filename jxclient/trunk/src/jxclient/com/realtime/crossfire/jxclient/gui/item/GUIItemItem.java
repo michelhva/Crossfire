@@ -131,16 +131,16 @@ public abstract class GUIItemItem extends GUIItem {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
-        g.setBackground(getBackground());
-        g.clearRect(0, 0, getWidth(), getHeight());
+    protected void render(@NotNull final Graphics2D g2) {
+        g2.setBackground(getBackground());
+        g2.clearRect(0, 0, getWidth(), getHeight());
 
         final CfItem tmpItem = item;
         if (tmpItem == null) {
             return;
         }
 
-        itemPainter.paint(g, tmpItem, isSelected(), getFace(tmpItem));
+        itemPainter.paint(g2, tmpItem, isSelected(), getFace(tmpItem));
     }
 
     /**

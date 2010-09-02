@@ -230,22 +230,22 @@ public class GUIItemSpellList extends GUIItem {
 
     /* {@inheritDoc} */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
-        g.setBackground(BACKGROUND_COLOR);
-        g.clearRect(0, 0, getWidth(), getHeight());
+    protected void render(@NotNull final Graphics2D g2) {
+        g2.setBackground(BACKGROUND_COLOR);
+        g2.clearRect(0, 0, getWidth(), getHeight());
 
         if (spell == null) {
             return;
         }
 
         if (isActive() && selectorColor != null) {
-            g.setColor(selectorColor);
-            g.fillRect(0, 0, w, h);
+            g2.setColor(selectorColor);
+            g2.fillRect(0, 0, w, h);
         }
         assert spell != null;
-        g.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
+        g2.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
         if (isActive() && selectorImage != null) {
-            g.drawImage(selectorImage, 0, 0, null);
+            g2.drawImage(selectorImage, 0, 0, null);
         }
     }
 

@@ -118,17 +118,17 @@ public class GUIHTMLLabel extends AbstractLabel {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
-        super.render(g);
+    protected void render(@NotNull final Graphics2D g2) {
+        super.render(g2);
         if (font == null) {
             return;
         }
 
-        g.setFont(font);
-        g.setColor(color);
+        g2.setFont(font);
+        g2.setColor(color);
 
         final Reader reader = new StringReader(getText());
-        final HTMLEditorKit.ParserCallback renderer = new InternalHTMLRenderer(font, color, g, 0, font.getSize(), autoResize ? AUTO_BORDER_SIZE : 0);
+        final HTMLEditorKit.ParserCallback renderer = new InternalHTMLRenderer(font, color, g2, 0, font.getSize(), autoResize ? AUTO_BORDER_SIZE : 0);
         final ParserDelegator parserDelegator = new ParserDelegator();
         try {
             parserDelegator.parse(reader, renderer, false);

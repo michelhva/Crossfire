@@ -81,7 +81,7 @@ public class GUIPicture extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g) {
+    protected void render(@NotNull final Graphics2D g2) {
     }
 
     /**
