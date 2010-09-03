@@ -56,7 +56,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
 
     /**
      * The last sent account or character password. Set to <code>null</code> if
-     * if no password has been sent yet.
+     * no password has been sent yet.
      */
     @Nullable
     private String lastAccountPassword = null;
