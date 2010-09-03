@@ -179,6 +179,11 @@ public class JXCSkinLoader {
     private final FacesManager facesManager;
 
     /**
+     * The default tile size for the map view.
+     */
+    private final int defaultTileSize;
+
+    /**
      * The {@link FacesProviderFactory} instance for creating faces provider
      * instances.
      */
@@ -307,13 +312,15 @@ public class JXCSkinLoader {
      * @param optionManager the option manager to use
      * @param experienceTable the experience table to use
      * @param skillSet the skill set to use
+     * @param defaultTileSize the default tile size for the map view
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
+        this.defaultTileSize = defaultTileSize;
         facesProviderFactory = new FacesProviderFactory(facesManager);
         this.stats = stats;
         this.mapUpdater = mapUpdater;
@@ -1503,11 +1510,10 @@ public class JXCSkinLoader {
     private void parseMap(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
         final String name = args.get();
         final Extent extent = parseExtent(args);
-        final int tileSize = ExpressionParser.parseInt(args.get());
 
-        final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(tileSize);
+        final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(defaultTileSize);
         if (facesProvider == null) {
-            throw new IOException("cannot create faces with size "+tileSize);
+            throw new IOException("cannot create faces with size "+defaultTileSize);
         }
         final GUIMap element = new GUIMap(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider, server);
         insertGuiElement(element);
