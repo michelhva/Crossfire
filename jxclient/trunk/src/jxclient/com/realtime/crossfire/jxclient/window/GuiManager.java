@@ -219,7 +219,7 @@ public class GuiManager {
                     log.updateText(effectiveMessage);
                 }
             }
-            windowRenderer.openDialog(dialog, false);
+            openDialog(dialog, false);
         }
 
         /** {@inheritDoc} */
@@ -273,7 +273,7 @@ public class GuiManager {
             windowRenderer.setGuiState(RendererGuiState.LOGIN);
             showGUIMain();
             if (dialogConnect != null) {
-                windowRenderer.openDialog(dialogConnect, false);
+                openDialog(dialogConnect, false);
                 updateConnectLabel(ClientSocketState.CONNECTING, null);
             }
         }
@@ -295,7 +295,7 @@ public class GuiManager {
         public void connectFailed(@NotNull final String reason) {
             closeTransientDialogs();
             if (dialogConnect != null) {
-                windowRenderer.openDialog(dialogConnect, false);
+                openDialog(dialogConnect, false);
                 updateConnectLabel(ClientSocketState.CONNECT_FAILED, reason);
             }
         }
@@ -389,7 +389,7 @@ public class GuiManager {
             closeDialog(dialogDisconnect);
         }
         assert dialogQuit != null;
-        windowRenderer.openDialog(dialogQuit, false);
+        openDialog(dialogQuit, false);
         return true;
     }
 
@@ -408,7 +408,7 @@ public class GuiManager {
         } else if (connected) {
             if (dialogDisconnect == null) {
                 return 1;
-            } else if (windowRenderer.openDialog(dialogDisconnect, false)) {
+            } else if (openDialog(dialogDisconnect, false)) {
                 if (dialogQuit != null) {
                     closeDialog(dialogQuit);
                 }
@@ -419,7 +419,7 @@ public class GuiManager {
         } else {
             if (dialogQuit == null) {
                 return 2;
-            } else if (windowRenderer.openDialog(dialogQuit, false)) {
+            } else if (openDialog(dialogQuit, false)) {
                 if (dialogDisconnect != null) {
                     closeDialog(dialogDisconnect);
                 }
@@ -441,7 +441,7 @@ public class GuiManager {
             throw new IllegalStateException();
         }
 
-        windowRenderer.openDialog(queryDialog, false);
+        openDialog(queryDialog, false);
         assert queryDialog != null;
         queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDE_INPUT) != 0);
         currentQueryDialogIsNamePrompt = prompt.startsWith("What is your name?");
@@ -475,12 +475,45 @@ public class GuiManager {
      * @param dialog the dialog to show
      * @param autoCloseOnDeactivate whether the dialog should auto-close when it
      * becomes inactive; ignored if the dialog is already open
+     * @return Whether the dialog was opened or raised; <code>false</code> if
+     *         the dialog already was opened as the topmost dialog.
      */
-    public void openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
-        windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
+    public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
+        final boolean result = windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
         if (dialog == queryDialog) {
             dialog.setHideInput(false);
+        } else {
+            final String name = dialog.getName();
+            if (name != null && name.equals("account_login")) {
+                final GUIText accountLogin = dialog.getFirstElement(GUIText.class, "account_login");
+                if (accountLogin != null) {
+                    final String accountName = settings.getString("login_account_"+connection.getHostname(), "");
+                    if (accountName.length() > 0) {
+                        accountLogin.setText(accountName);
+
+                        final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
+                        if (accountPassword != null) {
+                            accountPassword.setText("");
+                            accountPassword.setActive(true);
+                        }
+                    } else {
+                        accountLogin.setText("");
+                        accountLogin.setActive(true);
+
+                        final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
+                        if (accountPassword != null) {
+                            accountPassword.setText("");
+                        }
+                    }
+                } else {
+                    final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
+                    if (accountPassword != null) {
+                        accountPassword.setText("");
+                    }
+                }
+            }
         }
+        return result;
     }
 
     /**
@@ -593,7 +626,7 @@ public class GuiManager {
             throw new IllegalStateException();
         }
 
-        windowRenderer.openDialog(keybindDialog, false);
+        openDialog(keybindDialog, false);
     }
 
     /**
@@ -872,6 +905,14 @@ public class GuiManager {
         } catch (final JXCSkinException ex) {
             throw new NoSuchCommandException(ex.getMessage());
         }
+    }
+
+    /**
+     * Updates the current account name.
+     * @param accountName the current account name
+     */
+    public void setAccountName(@NotNull final String accountName) {
+        settings.putString("login_account_"+connection.getHostname(), accountName);
     }
 
 }
