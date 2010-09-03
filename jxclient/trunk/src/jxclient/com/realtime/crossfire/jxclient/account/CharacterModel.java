@@ -153,8 +153,8 @@ public class CharacterModel {
         }
 
         for (int i = 0, iMax = Math.max(oldMetaListSize, newMetaListSize); i < iMax; i++) {
-            for (final CharacterInformationListener metaserverEntryListener : getMetaserverEntryListeners(i)) {
-                metaserverEntryListener.informationChanged();
+            for (final CharacterInformationListener characterInformationListener : getCharacterInformationListeners(i)) {
+                characterInformationListener.informationChanged();
             }
         }
     }
@@ -163,7 +163,7 @@ public class CharacterModel {
      * Adds a character listener.
      * @param listener the listener to add
      */
-    public void addMetaserverListener(@NotNull final CharacterListener listener) {
+    public void addCharacterListener(@NotNull final CharacterListener listener) {
         characterListeners.add(listener);
     }
 
@@ -171,7 +171,7 @@ public class CharacterModel {
      * Removes a character listener.
      * @param listener the listener to remove
      */
-    public void removeMetaserverListener(@NotNull final CharacterListener listener) {
+    public void removeCharacterListener(@NotNull final CharacterListener listener) {
         characterListeners.remove(listener);
     }
 
@@ -180,8 +180,8 @@ public class CharacterModel {
      * @param index the entry index to monitor
      * @param listener the listener to add
      */
-    public void addMetaserverEntryListener(final int index, @NotNull final CharacterInformationListener listener) {
-        getMetaserverEntryListeners(index).add(listener);
+    public void addCharacterInformationListener(final int index, @NotNull final CharacterInformationListener listener) {
+        getCharacterInformationListeners(index).add(listener);
     }
 
     /**
@@ -189,8 +189,8 @@ public class CharacterModel {
      * @param index the entry index to monitor
      * @param listener the listener to remove
      */
-    public void removeMetaserverEntryListener(final int index, @NotNull final CharacterInformationListener listener) {
-        getMetaserverEntryListeners(index).remove(listener);
+    public void removeCharacterInformationListener(final int index, @NotNull final CharacterInformationListener listener) {
+        getCharacterInformationListeners(index).remove(listener);
     }
 
     /**
@@ -199,7 +199,7 @@ public class CharacterModel {
      * @return the listeners list
      */
     @NotNull
-    private Collection<CharacterInformationListener> getMetaserverEntryListeners(final int index) {
+    private Collection<CharacterInformationListener> getCharacterInformationListeners(final int index) {
         synchronized (characterInformationListeners) {
             final Collection<CharacterInformationListener> existingListeners = characterInformationListeners.get(index);
             if (existingListeners != null) {

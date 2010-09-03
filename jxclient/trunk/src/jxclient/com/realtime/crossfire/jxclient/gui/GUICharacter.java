@@ -168,9 +168,9 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
             return;
         }
 
-        characterModel.removeMetaserverEntryListener(index, characterInformationListener);
+        characterModel.removeCharacterInformationListener(index, characterInformationListener);
         this.index = index;
-        characterModel.addMetaserverEntryListener(index, characterInformationListener);
+        characterModel.addCharacterInformationListener(index, characterInformationListener);
         setChanged();
         updateTooltip();
     }
