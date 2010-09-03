@@ -652,6 +652,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private ClientSocketState clientSocketState = ClientSocketState.CONNECTING;
 
     /**
+     * The account name. Set to <code>null</code> if no account name is known.
+     */
+    @Nullable
+    private String accountName = null;
+
+    /**
      * The {@link ClientSocketListener} attached to the server socket.
      */
     @NotNull
@@ -2246,7 +2252,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private void processAccountPlayers(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
         for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
-            crossfireAccountListener.startAccountList();
+            crossfireAccountListener.startAccountList(accountName);
         }
 
         // number of characters
@@ -3578,6 +3584,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send accountlogin "+login);
         }
+        accountName = login;
         synchronized (writeBuffer) {
             byteBuffer.clear();
             byteBuffer.put(ACCOUNT_LOGIN_PREFIX);
@@ -4118,6 +4125,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public void connect(@NotNull final String hostname, final int port) {
+        accountName = null;
         clientSocketState = ClientSocketState.CONNECTING;
         setClientSocketState(ClientSocketState.CONNECTING, ClientSocketState.CONNECTING);
         super.connect(hostname, port);
@@ -4185,6 +4193,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send accountnew "+login);
         }
+        accountName = login;
         synchronized (writeBuffer) {
             byteBuffer.clear();
             byteBuffer.put(ACCOUNT_NEW_PREFIX);

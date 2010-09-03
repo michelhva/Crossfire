@@ -371,8 +371,9 @@ public class JXCWindow {
          * {@inheritDoc}
          */
         @Override
-        public void startAccountList() {
+        public void startAccountList(@NotNull final String accountName) {
             characterModel.begin();
+            guiManager.setAccountName(accountName);
         }
 
         /**
