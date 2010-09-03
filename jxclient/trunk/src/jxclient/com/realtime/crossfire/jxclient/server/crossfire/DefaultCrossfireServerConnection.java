@@ -2249,7 +2249,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             crossfireAccountListener.startAccountList();
         }
 
-        /* number of characters */
+        // number of characters
         int count = getInt1(packet);
         while (count > 0) {
             String name = "";
@@ -2354,8 +2354,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             crossfireAccountListener.endAccountList();
         }
 
-        //sendAddme();
-
         packet.reset();
         notifyPacketWatcherListenersMixed(packet, args);
     }
@@ -2379,7 +2377,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
         if (clientSocketState != ClientSocketState.CONNECTED) {
             if (clientSocketState == ClientSocketState.ADDME) {
-                /* servers without account support */
+                // servers without account support
                 setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
             } else if (clientSocketState == ClientSocketState.ACCOUNT_INFO) {
                 for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
