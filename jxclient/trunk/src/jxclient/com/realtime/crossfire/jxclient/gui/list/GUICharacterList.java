@@ -119,7 +119,7 @@ public class GUICharacterList extends GUIList {
     public GUICharacterList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @Nullable final BufferedImage image, @NotNull final Font font, @NotNull final String tooltip, @NotNull final CharacterModel characterModel) {
         super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, elementListener, name+"_template", 50, 20, image, font, cellWidth, "", tooltip, characterModel)), null);
         this.characterModel = characterModel;
-        this.characterModel.addMetaserverListener(new CharacterListener() {
+        this.characterModel.addCharacterListener(new CharacterListener() {
 
             /**
              * {@inheritDoc}
@@ -164,11 +164,11 @@ public class GUICharacterList extends GUIList {
                 for (int i = oldSize; i < newSize; i++) {
                     final GUIElement metaElement = new GUICharacter(tooltipManager, elementListener, name+i, 1, 1, image, font, i, "", tooltip, characterModel);
                     addElement(metaElement);
-                    characterModel.addMetaserverEntryListener(i, characterInformationListener);
+                    characterModel.addCharacterInformationListener(i, characterInformationListener);
                 }
             } else {
                 for (int i = newSize; i < oldSize; i++) {
-                    characterModel.removeMetaserverEntryListener(i, characterInformationListener);
+                    characterModel.removeCharacterInformationListener(i, characterInformationListener);
                 }
             }
         }
