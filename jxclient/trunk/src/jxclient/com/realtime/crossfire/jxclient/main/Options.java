@@ -36,6 +36,11 @@ import org.jetbrains.annotations.Nullable;
 public class Options {
 
     /**
+     * The default size of tiles in the map view in pixels.
+     */
+    private static final int DEFAULT_TILE_SIZE = 64;
+
+    /**
      * The {@link Settings} for saving/restoring defaults.
      */
     @Nullable
@@ -92,6 +97,11 @@ public class Options {
     private String skin = null;
 
     /**
+     * The size of tiles in the map view in pixels.
+     */
+    private int tileSize = DEFAULT_TILE_SIZE;
+
+    /**
      * The default skin name.
      */
     @NotNull
@@ -140,6 +150,18 @@ public class Options {
                 debugKeyboardFilename = args[++i];
             } else if (args[i].equals("--debug-screen") && i+1 < args.length) {
                 debugScreenFilename = args[++i];
+            } else if (args[i].equals("--tile-size") && i+1 < args.length) {
+                final String tmp = args[++i];
+                try {
+                    tileSize = Integer.parseInt(tmp);
+                } catch (final NumberFormatException ignored) {
+                    System.err.println("Invalid tile size: "+tmp);
+                    System.exit(1);
+                }
+                if (tileSize < 1) {
+                    System.err.println("Invalid tile size: "+tileSize);
+                    System.exit(1);
+                }
             } else {
                 System.out.println("");
                 System.out.println("Available options:");
@@ -152,6 +174,7 @@ public class Options {
                 System.out.println(" --skin <skin>");
                 //System.out.println(" -S <skin>"); // not advertised as it is considered deprecated
                 System.out.println(" -s <skin>      : Skin name to use.");
+                System.out.println(" --tile-size <n>: The size of map view tiles in pixels.");
                 System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
                 System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
                 System.out.println("                  windows.");
@@ -241,6 +264,14 @@ public class Options {
     @Nullable
     public String getSkin() {
         return skin;
+    }
+
+    /**
+     * Returns the size of a tile in the map view.
+     * @return the tile size in pixels
+     */
+    public int getTileSize() {
+        return tileSize;
     }
 
     /**

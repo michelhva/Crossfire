@@ -1,5 +1,9 @@
 2010-09-03  Andreas Kirschbaum
 
+	* Add --tile-size command-line option to select the size of tiles
+	in the map view. Defaults to 64 (pixels); optionally 32 or 4 is
+	supported.
+
 	* Allow the message window to be moved.
 
 2010-08-18  Andreas Kirschbaum
