@@ -17,7 +17,7 @@ Then, it can handle each in two ways:
   sure it's still necessary either, so feel free to remove it :-)
 """
 
-import Crossfire, Crossfire_Type as t
+import Crossfire
 
 def accept(description):
     pl.Write('Valkyrie accepts your %s sacrifice!' % description)
@@ -35,7 +35,7 @@ if praying and praying.Title == 'Valkyrie':
         if obj.Unpaid:
             pl.Write('Valkyrie scorns your stolen sacrifice!')
             break
-        if obj.Type & 0xffff == t.FLESH:
+        if obj.Type & 0xffff == Crossfire.Type.FLESH:
             level_factor = 0
             part_factor = 1
 
