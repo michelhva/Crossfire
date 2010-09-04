@@ -23,6 +23,9 @@ from filelist import filelist
 ToGuild=sys.argv[1]
 ToRegion=sys.argv[2]
 
+# set to 1 to put a copy of generated files in a subdirectory of templates/guild
+local_copy = 0
+
 
 Ctl=0
 if len(sys.argv)>=7:
@@ -34,7 +37,10 @@ if len(sys.argv)>=7:
                 sys.argv[7]=sys.argv[4]
         StorageExit=sys.argv[7]
         StorageX,StorageY=sys.argv[8:]
-os.system('mkdir '+ToGuild)
+
+if local_copy:
+  os.system('mkdir '+ToGuild)
+
 for i in filelist:
         fromfile=open(i, 'r')
         filecontents=fromfile.read()
@@ -42,9 +48,12 @@ for i in filelist:
         filecontents=filecontents.replace('GUILD_TEMPLATE', ToGuild)
         if Ctl==1:
                 filecontents=filecontents.replace("region Template","region "+ToRegion).replace("TemplateExit", ExitPath).replace("TemplateHP", ExitX).replace("TemplateSP", ExitY).replace("Exit+1X", StorageX).replace("ExitY",StorageY).replace("ExitX",StorageX).replace("ExitPath",StorageExit)
-        tofile=open('./'+ToGuild+'/'+i, 'w')
-        tofile.write(filecontents)
-        tofile.close()
+
+        if local_copy:
+          tofile=open('./'+ToGuild+'/'+i, 'w')
+          tofile.write(filecontents)
+          tofile.close()
+
         if Ctl==1:
                 secondtofile=open('../../'+ToFolder+"/"+i,'w')
                 secondtofile.write(filecontents)
