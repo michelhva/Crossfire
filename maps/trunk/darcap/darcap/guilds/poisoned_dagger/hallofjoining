@@ -14,7 +14,7 @@ CF Java Map Editor
 Date:    6/14/2003
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-09-02 Nicolas Weeger
+Modified: 2010-02-28 perkins
 endmsg
 end
 arch flagstone
@@ -4422,8 +4422,8 @@ unique 1
 end
 arch stair_down_1
 slaying novice_lounge
-hp 1
-sp 8
+hp -1
+sp -1
 x 18
 y 14
 end
