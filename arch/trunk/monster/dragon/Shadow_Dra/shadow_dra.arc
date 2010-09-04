@@ -1,18 +1,19 @@
 Object shadow_dragon
 name shadow dragon
 race dragon
-randomitems dragon
+randomitems shadow_dragon
 monster 1
 move_type walk
 sleep 1
 Wis 20
 face shadow_dragon.x31
+animation shadow_dragon
 level 35
 Con 11
 Pow 26
 can_cast_spell 1
-sp 200
-maxsp 200
+sp 800
+maxsp 800
 hp 5500
 maxhp 5500
 resist_fire 100
@@ -36,6 +37,7 @@ More
 Object shadow_dragon_2
 name shadow dragon
 face shadow_dragon.x31
+animation shadow_dragon
 monster 1
 move_type walk
 alive 1
@@ -46,6 +48,7 @@ More
 Object shadow_dragon_3
 name shadow dragon
 face shadow_dragon.x31
+animation shadow_dragon
 monster 1
 move_type walk
 alive 1
@@ -56,6 +59,7 @@ More
 Object shadow_dragon_4
 name shadow dragon
 face shadow_dragon.x31
+animation shadow_dragon
 monster 1
 move_type walk
 alive 1
@@ -66,6 +70,7 @@ More
 Object shadow_dragon_5
 name shadow dragon
 face shadow_dragon.x31
+animation shadow_dragon
 monster 1
 move_type walk
 alive 1
@@ -77,6 +82,7 @@ More
 Object shadow_dragon_6
 name shadow dragon
 face shadow_dragon.x31
+animation shadow_dragon
 monster 1
 move_type walk
 alive 1
