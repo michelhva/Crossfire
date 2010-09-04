@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2010-07-10 Nicolas Weeger
+Modified: 2010-09-03 Khaleh
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -2992,10 +2992,10 @@ end
 arch house_2
 name Private Shop
 slaying /scorn/shops/privateshop
-x 6
-y 41
 hp 17
 sp 35
+x 6
+y 41
 end
 arch dungeon_magic
 x 6
@@ -6994,7 +6994,10 @@ y 42
 elevation 7179
 end
 arch house_small
-name house
+name House of Doors
+slaying ../scorn/houses/doors_galore
+hp 14
+sp 16
 x 15
 y 42
 end
