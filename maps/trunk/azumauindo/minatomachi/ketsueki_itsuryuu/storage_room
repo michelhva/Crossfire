@@ -2,13 +2,14 @@ arch map
 name storage_room
 reset_timeout 300
 difficulty 1
+region azumauindo
 width 56
 height 39
 enter_x 28
 enter_y 14
 msg
 Created:  2008-10-10 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2009-12-12 perkins
+Modified: 2010-09-04 Nicolas Weeger
 endmsg
 end
 arch blocked
