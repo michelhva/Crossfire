@@ -8,7 +8,7 @@ enter_x 3
 enter_y 5
 msg
 Created:  1995-03-27
-Modified: 2010-08-20 crossfire
+Modified: 2010-09-04 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -614,7 +614,7 @@ y 14
 end
 arch guild
 name Abandoned Guild Hall
-slaying guilds/abandoned
+slaying mockers/mainfloor
 hp 15
 sp 28
 x 2
@@ -646,7 +646,7 @@ y 19
 end
 arch guild
 name Mocker's storage hall
-slaying ./guilds/storage_room
+slaying mockers/storage_room
 hp -1
 sp -1
 x 2

@@ -8,7 +8,7 @@ enter_x 7
 enter_y 1
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2010-08-20 crossfire
+Modified: 2010-09-04 Nicolas Weeger
 endmsg
 end
 arch marble
@@ -240,7 +240,7 @@ x 1
 y 15
 end
 arch teleporter
-slaying guilds/mainfloor
+slaying mockers/mainfloor
 hp 15
 sp 28
 x 1
