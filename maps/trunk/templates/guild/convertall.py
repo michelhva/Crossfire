@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# This Python script installs all guilds to their location.
 import os
 t=open('GuildLocations')
 a=t.read()
