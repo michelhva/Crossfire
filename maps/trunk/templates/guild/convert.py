@@ -1,4 +1,23 @@
 #! /usr/bin/python
+# -*- coding: utf-8 -*-
+
+# This script generates the various files for a guild, and installs them
+# to the correct location.
+# It should be launched with templates/guilds as working directory.
+#
+# Files that will be copied are specified in 'filelist.py'.
+#
+# Parameters are in the form:
+#   name region directory entrance x y storage x y
+# with:
+# - name: guild name, like PoisonedDagger; must not contain spaces
+# - region: what region to give the maps of the guild (eg "scorn")
+# - directory: where to put maps for this guild, relative to the maps's root directory
+# - entrance: map with the entrance to the guild, relative to maps's root directory
+# - x and y: coordinates in 'entrance' with the guild entrance
+# - storage: map with the storage room's entrance, can be 'same' to be equal to 'entrance'
+# - x and y: coordinates in 'storage' for the storage room's entrance
+
 import os, sys
 from filelist import filelist
 ToGuild=sys.argv[1]
