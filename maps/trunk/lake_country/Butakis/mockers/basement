@@ -10,7 +10,7 @@ Creator: CF Java Map Editor
 Date:    6/15/2003
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-02-27 perkins
+Modified: 2010-09-04 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -830,9 +830,6 @@ y 15
 unique 1
 end
 arch teleporter
-slaying msterthieflibrary
-hp 5
-sp 5
 x 3
 y 15
 connected 646
