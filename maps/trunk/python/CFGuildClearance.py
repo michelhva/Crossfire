@@ -47,7 +47,10 @@ if __name__=='__builtin__':
         
         if (texta[0].upper() == 'ENTER'):
                 Params=string.split(Crossfire.ScriptParameters())
-                Approved = "Access granted" if CheckClearance(Params,activator)==1 else "Access denied"
+                if CheckClearance(Params,activator):
+                        Approved = "Access granted"
+                else:
+                        "Access denied"
                 whoami.Say(Approved)
                 
 
