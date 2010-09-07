@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.sound;
 
+import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.io.IOException;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -39,13 +40,29 @@ import org.jetbrains.annotations.Nullable;
 public class ClipCache {
 
     /**
+     * The writer for logging sound related information or <code>null</code> to
+     * not log.
+     */
+    @Nullable
+    private final DebugWriter debugSound;
+
+    /**
+     * Creates a new instance.
+     * @param debugSound the writer for logging sound related information or
+     * <code>null</code> to not log
+     */
+    public ClipCache(@Nullable final DebugWriter debugSound) {
+        this.debugSound = debugSound;
+    }
+
+    /**
      * Allocate a new clip.
      * @param name An optional prefix for the action name.
      * @param action The action name of the clip to allocate.
      * @return The new clip, or <code>null</code> if an error occurs.
      */
     @Nullable
-    public static DataLine allocateClip(@Nullable final String name, @NotNull final String action) {
+    public DataLine allocateClip(@Nullable final String name, @NotNull final String action) {
         return newClip(name, action);
     }
 
@@ -53,7 +70,10 @@ public class ClipCache {
      * Deallocate a clip.
      * @param clip The clip to deallocate.
      */
-    public static void freeClip(@NotNull final Line clip) {
+    public void freeClip(@NotNull final Line clip) {
+        if (debugSound != null) {
+            debugSound.debugProtocolWrite("freeClip: "+System.identityHashCode(clip));
+        }
         clip.close();
     }
 
@@ -64,24 +84,33 @@ public class ClipCache {
      * @return The new clip, or <code>null</code> if an error occurs.
      */
     @Nullable
-    private static DataLine newClip(@Nullable final String name, @NotNull final String action) {
+    private DataLine newClip(@Nullable final String name, @NotNull final String action) {
         try {
             final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(name, action));
             try {
                 final Clip clip = AudioSystem.getClip();
                 clip.open(audioInputStream);
+                if (debugSound != null) {
+                    debugSound.debugProtocolWrite("newClip: "+System.identityHashCode(clip)+" "+name+"/"+action);
+                }
                 return clip;
             } finally {
                 audioInputStream.close();
             }
         } catch (final UnsupportedAudioFileException ex) {
-            System.err.println("sound "+name+": "+ex.getMessage());
+            if (debugSound != null) {
+                debugSound.debugProtocolWrite("newClip: "+ex.getMessage());
+            }
             return null;
         } catch (final LineUnavailableException ex) {
-            System.err.println("sound "+name+": "+ex.getMessage());
+            if (debugSound != null) {
+                debugSound.debugProtocolWrite("sound: "+ex.getMessage());
+            }
             return null;
         } catch (final IOException ex) {
-            System.err.println("sound "+name+": "+ex.getMessage());
+            if (debugSound != null) {
+                debugSound.debugProtocolWrite("sound: "+ex.getMessage());
+            }
             return null;
         }
     }

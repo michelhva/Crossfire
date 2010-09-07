@@ -142,101 +142,108 @@ public class JXClient {
                 try {
                     final Writer debugScreenOutputStreamWriter = openDebugStream(options.getDebugScreenFilename());
                     try {
-                        final OptionManager optionManager = new OptionManager(options.getSettings());
-                        final MetaserverModel metaserverModel = new MetaserverModel();
-                        final CharacterModel characterModel = new CharacterModel();
-                        final Object semaphoreRedraw = new Object();
-                        final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
-                        server.start();
+                        final Writer debugSoundOutputStreamWriter = openDebugStream(options.getDebugSoundFilename());
                         try {
-                            final GuiStateManager guiStateManager = new GuiStateManager(server);
-                            final ExperienceTable experienceTable = new ExperienceTable(server);
-                            final SkillSet skillSet = new SkillSet(server, guiStateManager);
-                            final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
-                            final FaceCache faceCache = new FaceCache(server);
-                            final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
-                            final FacesManager facesManager = new DefaultFacesManager(faceCache, facesQueue);
-                            final ItemSet itemSet = new ItemSet();
-                            final InventoryView inventoryView = new InventoryView(itemSet, new InventoryComparator());
-                            final FloorView floorView = new FloorView(itemSet);
-                            new ItemsManager(server, facesManager, stats, skillSet, guiStateManager, itemSet);
-                            new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
-                            final SoundManager soundManager = new SoundManager(guiStateManager);
+                            final OptionManager optionManager = new OptionManager(options.getSettings());
+                            final MetaserverModel metaserverModel = new MetaserverModel();
+                            final CharacterModel characterModel = new CharacterModel();
+                            final Object semaphoreRedraw = new Object();
+                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
+                            server.start();
                             try {
-                                optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
-                            } catch (final OptionException ex) {
-                                throw new AssertionError(ex);
+                                final GuiStateManager guiStateManager = new GuiStateManager(server);
+                                final ExperienceTable experienceTable = new ExperienceTable(server);
+                                final SkillSet skillSet = new SkillSet(server, guiStateManager);
+                                final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
+                                final FaceCache faceCache = new FaceCache(server);
+                                final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
+                                final FacesManager facesManager = new DefaultFacesManager(faceCache, facesQueue);
+                                final ItemSet itemSet = new ItemSet();
+                                final InventoryView inventoryView = new InventoryView(itemSet, new InventoryComparator());
+                                final FloorView floorView = new FloorView(itemSet);
+                                new ItemsManager(server, facesManager, stats, skillSet, guiStateManager, itemSet);
+                                new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
+                                final SoundManager soundManager = new SoundManager(guiStateManager, debugSoundOutputStreamWriter == null ? null : new DebugWriter(debugSoundOutputStreamWriter));
+                                try {
+                                    optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
+                                } catch (final OptionException ex) {
+                                    throw new AssertionError(ex);
+                                }
+
+                                final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui());
+                                final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, semaphoreRedraw, server, debugScreenOutputStreamWriter);
+                                mouseTracker.init(windowRenderer);
+                                new MusicWatcher(server, soundManager);
+                                new SoundWatcher(server, soundManager);
+                                new StatsWatcher(stats, windowRenderer, server, soundManager);
+                                new PoisonWatcher(stats, server);
+                                new ActiveSkillWatcher(stats, server);
+                                final Macros macros = new Macros(server);
+                                final CfMapUpdater mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
+                                final SpellsManager spellsManager = new SpellsManager(server, guiStateManager);
+                                final CommandQueue commandQueue = new CommandQueue(server, guiStateManager);
+                                final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
+                                final Shortcuts shortcuts = new Shortcuts(commandQueue, spellsManager);
+
+                                final Exiter exiter = new Exiter();
+                                final JXCWindow[] window = new JXCWindow[1];
+                                SwingUtilities.invokeAndWait(new Runnable() {
+                                    /** {@inheritDoc} */
+                                    @Override
+                                    public void run() {
+                                        final TooltipManager tooltipManager = new TooltipManager();
+                                        final Pickup characterPickup;
+                                        try {
+                                            characterPickup = new Pickup(commandQueue, optionManager);
+                                        } catch (final OptionException ex) {
+                                            throw new AssertionError(ex);
+                                        }
+                                        final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter);
+                                        final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
+                                        final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
+                                        final Settings settings = options.getSettings();
+                                        final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
+                                        final GuiFactory guiFactory = new GuiFactory(options.isDebugGui() ? mouseTracker : null, commands, commandCallback, macros);
+                                        final GuiManager guiManager = new GuiManager(guiStateManager, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
+                                        commandCallback.init(guiManager, server);
+                                        final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
+                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet, options.getTileSize());
+                                        final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel);
+                                        new FacesTracker(guiStateManager, facesManager);
+                                        new PlayerNameTracker(guiStateManager, connection, itemSet);
+                                        new PickupTracker(guiStateManager, server, characterPickup);
+                                        new OutputCountTracker(guiStateManager, server, commandQueue);
+                                        final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, guiStateManager);
+                                        final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
+                                        window[0] = new JXCWindow(exiter, server, optionManager, guiStateManager, windowRenderer, commandQueue, guiManager, keyHandler, characterModel);
+
+                                        connection.init(window[0].getFrame());
+                                        window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
+                                        keybindingsManager.loadKeybindings();
+                                        final String serverInfo = options.getServer();
+                                        if (serverInfo != null) {
+                                            guiStateManager.connect(serverInfo);
+                                        } else {
+                                            guiStateManager.changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
+                                        }
+                                    }
+                                });
+                                exiter.waitForTermination();
+                                SwingUtilities.invokeAndWait(new Runnable() {
+                                    /** {@inheritDoc} */
+                                    @Override
+                                    public void run() {
+                                        window[0].term();
+                                        soundManager.shutdown();
+                                    }
+                                });
+                            } finally {
+                                server.stop();
                             }
-
-                            final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui());
-                            final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, semaphoreRedraw, server, debugScreenOutputStreamWriter);
-                            mouseTracker.init(windowRenderer);
-                            new MusicWatcher(server, soundManager);
-                            new SoundWatcher(server, soundManager);
-                            new StatsWatcher(stats, windowRenderer, server, soundManager);
-                            new PoisonWatcher(stats, server);
-                            new ActiveSkillWatcher(stats, server);
-                            final Macros macros = new Macros(server);
-                            final CfMapUpdater mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
-                            final SpellsManager spellsManager = new SpellsManager(server, guiStateManager);
-                            final CommandQueue commandQueue = new CommandQueue(server, guiStateManager);
-                            final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
-                            final Shortcuts shortcuts = new Shortcuts(commandQueue, spellsManager);
-
-                            final Exiter exiter = new Exiter();
-                            final JXCWindow[] window = new JXCWindow[1];
-                            SwingUtilities.invokeAndWait(new Runnable() {
-                                /** {@inheritDoc} */
-                                @Override
-                                public void run() {
-                                    final TooltipManager tooltipManager = new TooltipManager();
-                                    final Pickup characterPickup;
-                                    try {
-                                        characterPickup = new Pickup(commandQueue, optionManager);
-                                    } catch (final OptionException ex) {
-                                        throw new AssertionError(ex);
-                                    }
-                                    final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter);
-                                    final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
-                                    final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
-                                    final Settings settings = options.getSettings();
-                                    final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
-                                    final GuiFactory guiFactory = new GuiFactory(options.isDebugGui() ? mouseTracker : null, commands, commandCallback, macros);
-                                    final GuiManager guiManager = new GuiManager(guiStateManager, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
-                                    commandCallback.init(guiManager, server);
-                                    final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
-                                    final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet, options.getTileSize());
-                                    final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel);
-                                    new FacesTracker(guiStateManager, facesManager);
-                                    new PlayerNameTracker(guiStateManager, connection, itemSet);
-                                    new PickupTracker(guiStateManager, server, characterPickup);
-                                    new OutputCountTracker(guiStateManager, server, commandQueue);
-                                    final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, guiStateManager);
-                                    final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
-                                    window[0] = new JXCWindow(exiter, server, optionManager, guiStateManager, windowRenderer, commandQueue, guiManager, keyHandler, characterModel);
-
-                                    connection.init(window[0].getFrame());
-                                    window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
-                                    keybindingsManager.loadKeybindings();
-                                    final String serverInfo = options.getServer();
-                                    if (serverInfo != null) {
-                                        guiStateManager.connect(serverInfo);
-                                    } else {
-                                        guiStateManager.changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
-                                    }
-                                }
-                            });
-                            exiter.waitForTermination();
-                            SwingUtilities.invokeAndWait(new Runnable() {
-                                /** {@inheritDoc} */
-                                @Override
-                                public void run() {
-                                    window[0].term();
-                                    soundManager.shutdown();
-                                }
-                            });
                         } finally {
-                            server.stop();
+                            if (debugSoundOutputStreamWriter != null) {
+                                debugSoundOutputStreamWriter.close();
+                            }
                         }
                     } finally {
                         if (debugScreenOutputStreamWriter != null) {

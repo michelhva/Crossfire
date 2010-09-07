@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.sound;
 
+import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import javax.sound.sampled.DataLine;
@@ -44,7 +45,16 @@ public class ClipManager {
      * The clip cache used to allocate new clips.
      */
     @NotNull
-    private final ClipCache clipCache = new ClipCache();
+    private final ClipCache clipCache;
+
+    /**
+     * Creates a new instance.
+     * @param debugSound the writer for logging sound related information or
+     * <code>null</code> to not log
+     */
+    public ClipManager(@Nullable final DebugWriter debugSound) {
+        clipCache = new ClipCache(debugSound);
+    }
 
     /**
      * Play the given sound effect. This function returns immediately.
