@@ -13,7 +13,7 @@ Editor: CrossfireEditor
 Date:    3/17/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-02-27 perkins
+Modified: 2010-09-06 crossfire
 endmsg
 end
 arch grass
@@ -1457,7 +1457,7 @@ can_use_wand 1
 arch event_say
 name PurpleButterfly GuildMaster
 title Python
-slaying /python/guilds/clearance.py
+slaying /python/guilds/guild_entry.py
 end
 end
 arch flagstone
@@ -2843,6 +2843,11 @@ x 22
 y 16
 connected 120
 end
+arch woodfloor2
+x 22
+y 16
+unique 1
+end
 arch lightningwall_5
 x 23
 speed 0.0
@@ -3013,6 +3018,11 @@ arch button_small
 x 23
 y 16
 connected 130
+end
+arch woodfloor2
+x 23
+y 16
+unique 1
 end
 arch blocked
 x 24

@@ -9,7 +9,7 @@ enter_x 1
 enter_y 8
 msg
 Created:  2004-05-12
-Modified: 2010-09-04 Nicolas Weeger
+Modified: 2010-09-06 Logan Perkins
 endmsg
 end
 arch woodfloor
@@ -543,7 +543,7 @@ y 8
 level 100
 attacktype 0
 arch event_trigger
-name GreenGoblin Initiate A
+name GreenGoblin GuildMaster A
 title Python
 slaying /python/guilds/arrest.py
 end

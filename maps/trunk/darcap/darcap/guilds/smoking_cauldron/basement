@@ -10,7 +10,7 @@ Creator: CF Java Map Editor
 Date:    6/15/2003
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-09-04 Nicolas Weeger
+Modified: 2010-09-04 Logan Perkins
 endmsg
 end
 arch woodfloor
@@ -4535,29 +4535,6 @@ title Python
 slaying /python/guilds/bigchest.py
 end
 end
-arch trap_blades
-Cha 127
-hp 1000
-dam 0
-x 19
-y 1
-level 100
-attacktype 0
-arch event_trigger
-name SmokingCauldron Initiate A
-title Python
-slaying /python/guilds/arrest.py
-end
-end
-arch counterspell
-wc -120
-x 19
-y 2
-speed 10
-nrof 1
-invisible 1
-identified 1
-end
 arch blocked
 x 19
 y 5
@@ -4927,20 +4904,6 @@ food 1
 x 21
 y 24
 connected 31
-end
-arch trap_blades
-Cha 127
-hp 1000
-dam 0
-x 22
-y 1
-level 100
-attacktype 0
-arch event_trigger
-name SmokingCauldron Initiate A
-title Python
-slaying /python/guilds/arrest.py
-end
 end
 arch blocked
 x 22

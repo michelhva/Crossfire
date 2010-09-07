@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-09-02 Nicolas Weeger
+Modified: 2010-09-06 Logan Perkins
 endmsg
 outdoor 1
 end
@@ -917,6 +917,16 @@ arch grass
 x 3
 y 21
 end
+arch statue2
+name Guard Statue
+x 3
+y 21
+arch event_say
+name LaughingSkull Guildman 730
+title Python
+slaying /python/guilds/guild_entry.py
+end
+end
 arch grass
 x 3
 y 22
@@ -1316,6 +1326,15 @@ arch woodfloor
 x 5
 y 3
 unique 1
+end
+arch button_lever
+name Left allows guildmen into mainfloor crafting areas.  Right denies
+msg
+Pull to let unwanted guests out.
+endmsg
+x 5
+y 3
+connected 721
 end
 arch dungeon_magic
 x 5
@@ -1921,9 +1940,9 @@ name Guard Statue
 x 7
 y 3
 arch event_say
-name LaughingSkull GuildMaster
+name LaughingSkull GuildMaster 9991
 title Python
-slaying /python/guilds/clearance.py
+slaying /python/guilds/guild_entry.py
 end
 end
 arch dungeon_magic
@@ -4646,13 +4665,6 @@ arch dungeon_magic
 x 15
 y 23
 end
-arch magic_mouth
-msg
-Guardian says: Goodbye my child.
-endmsg
-x 15
-y 23
-end
 arch button_small
 x 15
 y 23
@@ -4685,7 +4697,7 @@ name Guardian
 x 15
 y 25
 arch event_say
-name LaughingSkull
+name LaughingSkull Initiate 99919
 title Python
 slaying /python/guilds/guild_entry.py
 end
@@ -5431,7 +5443,17 @@ end
 arch woodfloor
 x 18
 y 3
-unique 1
+unique 0
+end
+arch statue2
+name Guard Statue
+x 18
+y 3
+arch event_say
+name LaughingSkull Guildman 720
+title Python
+slaying /python/guilds/guild_entry.py
+end
 end
 arch dungeon_magic
 x 18
@@ -8730,6 +8752,14 @@ end
 arch grass
 x 29
 end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 29
+connected 21
+end
 arch teleporter
 name scorn portal
 hp 8
@@ -8752,6 +8782,15 @@ x 29
 y 1
 unique 1
 end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 29
+y 1
+connected 22
+end
 arch teleporter
 name brest portal
 hp 7
@@ -8772,6 +8811,15 @@ end
 arch grass
 x 29
 y 2
+end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 29
+y 2
+connected 23
 end
 arch teleporter
 hp 6
@@ -8794,6 +8842,15 @@ end
 arch grass
 x 29
 y 3
+end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 29
+y 3
+connected 24
 end
 arch teleporter
 name navar portal
@@ -8818,6 +8875,15 @@ arch grass
 x 29
 y 4
 end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 29
+y 4
+connected 25
+end
 arch teleporter
 name darcap portal
 hp 6
@@ -8841,6 +8907,15 @@ arch grass
 x 29
 y 5
 end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 29
+y 5
+connected 26
+end
 arch teleporter
 hp 6
 sp 15
@@ -8860,6 +8935,15 @@ end
 arch grass
 x 29
 y 6
+end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 29
+y 6
+connected 27
 end
 arch teleporter
 name nurnberg portal
@@ -8881,6 +8965,15 @@ end
 arch grass
 x 29
 y 7
+end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 29
+y 7
+connected 28
 end
 arch teleporter
 name ancient pupland portal
@@ -9157,21 +9250,14 @@ x 30
 y 1
 unique 1
 end
-arch teleporter
-hp 1
-sp 24
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
 x 30
-y 2
-speed 0.0
-connected 130
-end
-arch teleporter
-hp 9
-sp 23
-x 30
-y 3
-speed 0.0
-connected 120
+y 4
+connected 110
 end
 arch teleporter
 hp 25
@@ -9199,6 +9285,15 @@ arch grass
 x 30
 y 5
 end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 30
+y 5
+connected 77
+end
 arch teleporter
 hp 12
 sp 21
@@ -9225,6 +9320,15 @@ arch grass
 x 30
 y 6
 end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 30
+y 6
+connected 122
+end
 arch teleporter
 hp 15
 sp 21
@@ -9241,6 +9345,15 @@ end
 arch grass
 x 30
 y 7
+end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 30
+y 7
+connected 122
 end
 arch teleporter
 hp 18
@@ -9416,6 +9529,14 @@ end
 arch grass
 x 31
 end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 31
+connected 335
+end
 arch teleporter
 hp 33
 sp 28
@@ -9442,6 +9563,15 @@ end
 arch grass
 x 31
 y 3
+end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 31
+y 3
+connected 40
 end
 arch teleporter
 hp 16
@@ -9482,6 +9612,15 @@ arch grass
 x 31
 y 6
 end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 31
+y 6
+connected 123
+end
 arch teleporter
 hp 18
 sp 19
@@ -9501,6 +9640,15 @@ end
 arch grass
 x 31
 y 7
+end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 31
+y 7
+connected 9999
 end
 arch teleporter
 hp 12
@@ -9707,6 +9855,15 @@ y 1
 connected 11100
 lifesave 1
 activate_on_release 0
+end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 32
+y 1
+connected 999
 end
 arch teleporter
 hp 4
@@ -9945,7 +10102,7 @@ y 28
 connected 334
 activate_on_release 0
 arch event_apply
-name PrupleButterfly
+name LaughingSkull
 title Python
 slaying /python/guilds/guildbuy.py
 end
@@ -10634,6 +10791,11 @@ x 35
 y 24
 connected 99919
 end
+arch woodfloor2
+x 35
+y 24
+unique 1
+end
 arch blocked
 x 35
 y 25
@@ -10675,36 +10837,6 @@ end
 arch blocked
 x 36
 y 2
-end
-arch pit_open
-hp 9
-sp 3
-x 36
-y 3
-end
-arch pit_open
-hp 11
-sp 9
-x 36
-y 4
-end
-arch pit_open
-hp 16
-sp 14
-x 36
-y 5
-end
-arch pit_open
-hp 24
-sp 19
-x 36
-y 6
-end
-arch pit_open
-hp 3
-sp 18
-x 36
-y 7
 end
 arch blocked
 x 36
@@ -10857,39 +10989,14 @@ x 36
 y 20
 connected 99919
 end
+arch woodfloor2
+x 36
+y 20
+unique 1
+end
 arch blocked
 x 37
 y 2
-end
-arch pit_open
-hp 14
-sp 5
-x 37
-y 3
-end
-arch pit_open
-hp 16
-sp 9
-x 37
-y 4
-end
-arch pit_open
-hp 24
-sp 14
-x 37
-y 5
-end
-arch pit_open
-hp 15
-sp 22
-x 37
-y 6
-end
-arch pit_open
-hp 9
-sp 5
-x 37
-y 7
 end
 arch blocked
 x 37
@@ -11095,36 +11202,6 @@ arch blocked
 x 38
 y 2
 end
-arch pit_open
-hp 19
-sp 5
-x 38
-y 3
-end
-arch pit_open
-hp 24
-sp 8
-x 38
-y 4
-end
-arch pit_open
-hp 6
-sp 19
-x 38
-y 5
-end
-arch pit_open
-hp 13
-sp 17
-x 38
-y 6
-end
-arch pit_open
-hp 12
-sp 7
-x 38
-y 7
-end
 arch blocked
 x 38
 y 8
@@ -11309,35 +11386,43 @@ arch blocked
 x 39
 y 2
 end
-arch pit_open
-hp 24
-sp 3
+arch woodfloor2
 x 39
 y 3
 end
-arch pit_open
-hp 6
-sp 14
+arch lightningwall_5
 x 39
-y 4
+y 3
+speed 0
+connected 730
+arch spell_sm_lightning
 end
-arch pit_open
-hp 11
-sp 19
+end
+arch woodfloor2
 x 39
 y 5
+unique 1
 end
-arch pit_open
-hp 16
-sp 17
+arch grate_closed_1
+x 39
+y 5
+connected 721
+end
+arch woodfloor2
 x 39
 y 6
+unique 1
 end
-arch pit_open
-hp 15
-sp 22
+arch woodfloor2
 x 39
 y 7
+end
+arch detector
+slaying lightning
+x 39
+y 7
+speed 1.0
+connected 73000
 end
 arch blocked
 x 39
@@ -11443,35 +11528,43 @@ arch blocked
 x 40
 y 2
 end
-arch pit_open
-hp 6
-sp 9
+arch woodfloor2
 x 40
 y 3
 end
-arch pit_open
-hp 11
-sp 14
+arch lightningwall_5
 x 40
-y 4
+y 3
+speed 0
+connected 720
+arch spell_sm_lightning
 end
-arch pit_open
-hp 16
-sp 19
+end
+arch woodfloor2
 x 40
 y 5
+unique 1
 end
-arch pit_open
-hp 8
-sp 17
+arch grate_closed_1
+x 40
+y 5
+connected 721
+end
+arch woodfloor2
 x 40
 y 6
+unique 1
 end
-arch pit_open
-hp 15
-sp 22
+arch woodfloor2
 x 40
 y 7
+end
+arch detector
+slaying lightning
+x 40
+y 7
+speed 1.0
+connected 72000
 end
 arch blocked
 x 40
@@ -11608,6 +11701,11 @@ arch button_small
 x 40
 y 25
 connected 110
+end
+arch woodfloor2
+x 40
+y 25
+unique 1
 end
 arch card
 name Generic Token

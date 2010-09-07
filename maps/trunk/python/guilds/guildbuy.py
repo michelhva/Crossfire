@@ -38,15 +38,12 @@ if (guildname):
         #Masterize them
         for player, name in zip(players, names):
             CFGuilds.CFGuild(guildname).add_member(name, 'GuildMaster')
-            guildmarker = player.CreateObject("marker")
-	    guildmarker.Speed = 0
-            guildmarker.Name=guildname
-            guildmarker.Slaying='GuildMaster'
 
             #teleport them
             player.Teleport(map,int(11),int(16))
             message = "You have purchased the %s guild.  Rule it wisely.  (I would type 'save' right about now...)"%guildname
-
+    elif len(players)==2:
+            message="To purchase a guild requires one additional person to stand on the alcoves above."
     else:
         message = 'To purchase a guild requires two additional persons to stand on the alcoves above.'
 else:

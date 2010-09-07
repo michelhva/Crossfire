@@ -9,7 +9,7 @@ enter_x 28
 enter_y 14
 msg
 Created:  2008-10-10 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2010-09-04 Nicolas Weeger
+Modified: 2010-09-06 Logan Perkins
 endmsg
 end
 arch blocked
@@ -5102,7 +5102,7 @@ arch dungeon_magic
 x 23
 y 5
 end
-arch stwindow_win1
+arch window_win1
 x 23
 y 5
 end
@@ -5164,7 +5164,7 @@ arch dungeon_magic
 x 23
 y 10
 end
-arch stwindow_win1
+arch window_win1
 x 23
 y 10
 end
@@ -5816,7 +5816,7 @@ arch dungeon_magic
 x 25
 y 3
 end
-arch stwindow_win2
+arch window_win2
 x 25
 y 3
 end
@@ -5876,6 +5876,10 @@ x 25
 y 5
 connected 1
 end
+arch dungeon_magic
+x 25
+y 6
+end
 arch woodfloor
 x 25
 y 6
@@ -5887,45 +5891,24 @@ x 25
 y 6
 glow_radius 10
 end
-arch woodfloor
-x 25
-y 7
-move_block fly_low
-unique 1
-end
-arch woodfloor
-x 25
-y 7
-move_block fly_low
-unique 1
-end
-arch woodfloor
-x 25
-y 7
-type 71
-unique 1
-is_buildable 0
-end
 arch dungeon_magic
 x 25
 y 7
+end
+arch woodfloor
+x 25
+y 7
+move_block fly_low
+unique 1
 end
 arch grate_closed_2
 x 25
 y 7
 connected 100
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 8
-move_block fly_low
-unique 1
-end
-arch woodfloor
-x 25
-y 8
-move_block fly_low
-unique 1
 end
 arch woodfloor
 x 25
@@ -5934,14 +5917,14 @@ type 71
 unique 1
 is_buildable 0
 end
-arch dungeon_magic
-x 25
-y 8
-end
 arch grate_closed_2
 x 25
 y 8
 connected 100
+end
+arch dungeon_magic
+x 25
+y 9
 end
 arch woodfloor
 x 25
@@ -5976,7 +5959,7 @@ arch dungeon_magic
 x 25
 y 12
 end
-arch stwindow_win2
+arch window_win2
 x 25
 y 12
 end
@@ -6557,6 +6540,10 @@ y 11
 move_block fly_low
 unique 1
 end
+arch dungeon_magic
+x 27
+y 12
+end
 arch woodfloor
 x 27
 y 12
@@ -6568,14 +6555,6 @@ x 27
 y 12
 connected 454
 end
-arch grass_only
-x 27
-y 13
-end
-arch dungeon_magic
-x 27
-y 13
-end
 arch dungeon_magic
 x 27
 y 13
@@ -6585,7 +6564,7 @@ name Guardian
 x 27
 y 13
 arch event_say
-name KetsuekiItsuryuu
+name KetsuekiItsuryuu Initiate 99919
 title Python
 slaying /python/guilds/guild_entry.py
 end
@@ -6629,11 +6608,6 @@ end
 arch blocked
 x 27
 y 16
-end
-arch grate_closed_1
-x 27
-y 20
-connected 100
 end
 arch stonefloor2
 x 27
@@ -6922,6 +6896,10 @@ y 11
 move_block fly_low
 unique 1
 end
+arch dungeon_magic
+x 28
+y 12
+end
 arch woodfloor
 x 28
 y 12
@@ -6932,14 +6910,6 @@ arch grate_closed_1
 x 28
 y 12
 connected 454
-end
-arch grass_only
-x 28
-y 13
-end
-arch dungeon_magic
-x 28
-y 13
 end
 arch dungeon_magic
 x 28
@@ -7250,12 +7220,6 @@ end
 arch woodfloor
 x 29
 y 9
-move_block fly_low
-unique 1
-end
-arch woodfloor
-x 29
-y 9
 type 71
 unique 0
 is_buildable 1
@@ -7280,9 +7244,9 @@ can_use_rod 1
 can_see_in_dark 1
 can_use_wand 1
 arch event_say
-name KetsuekiItsuryuu GuildMaster
+name KetsuekiItsuryuu GuildMaster 9991
 title Python
-slaying /python/guilds/clearance.py
+slaying /python/guilds/guild_entry.py
 end
 end
 arch woodfloor
@@ -7497,7 +7461,7 @@ arch dungeon_magic
 x 30
 y 3
 end
-arch stwindow_win2
+arch window_win2
 x 30
 y 3
 end
@@ -7557,6 +7521,10 @@ x 30
 y 5
 connected 1
 end
+arch dungeon_magic
+x 30
+y 6
+end
 arch woodfloor
 x 30
 y 6
@@ -7568,45 +7536,24 @@ x 30
 y 6
 glow_radius 10
 end
-arch woodfloor
-x 30
-y 7
-move_block fly_low
-unique 1
-end
-arch woodfloor
-x 30
-y 7
-move_block fly_low
-unique 1
-end
-arch woodfloor
-x 30
-y 7
-type 71
-unique 1
-is_buildable 0
-end
 arch dungeon_magic
 x 30
 y 7
+end
+arch woodfloor
+x 30
+y 7
+move_block fly_low
+unique 1
 end
 arch grate_closed_2
 x 30
 y 7
 connected 100
 end
-arch woodfloor
+arch dungeon_magic
 x 30
 y 8
-move_block fly_low
-unique 1
-end
-arch woodfloor
-x 30
-y 8
-move_block fly_low
-unique 1
 end
 arch woodfloor
 x 30
@@ -7615,14 +7562,14 @@ type 71
 unique 1
 is_buildable 0
 end
-arch dungeon_magic
-x 30
-y 8
-end
 arch grate_closed_2
 x 30
 y 8
 connected 100
+end
+arch dungeon_magic
+x 30
+y 9
 end
 arch woodfloor
 x 30
@@ -7635,44 +7582,30 @@ x 30
 y 9
 glow_radius 10
 end
+arch dungeon_magic
+x 30
+y 10
+end
 arch woodfloor
 x 30
 y 10
 move_block fly_low
 unique 1
-end
-arch woodfloor
-x 30
-y 10
-type 71
-unique 1
-is_buildable 0
-end
-arch dungeon_magic
-x 30
-y 10
 end
 arch grate_closed_2
 x 30
 y 10
 connected 9998
 end
+arch dungeon_magic
+x 30
+y 11
+end
 arch woodfloor
 x 30
 y 11
 move_block fly_low
 unique 1
-end
-arch woodfloor
-x 30
-y 11
-type 71
-unique 1
-is_buildable 0
-end
-arch dungeon_magic
-x 30
-y 11
 end
 arch grate_closed_2
 x 30
@@ -7689,7 +7622,7 @@ arch dungeon_magic
 x 30
 y 12
 end
-arch stwindow_win2
+arch window_win2
 x 30
 y 12
 end
@@ -7720,12 +7653,6 @@ end
 arch blocked
 x 30
 y 16
-end
-arch teleporter
-hp 27
-sp 13
-x 30
-y 19
 end
 arch stonefloor2
 x 30
@@ -8323,7 +8250,7 @@ arch dungeon_magic
 x 32
 y 5
 end
-arch stwindow_win1
+arch window_win1
 x 32
 y 5
 end
@@ -8385,7 +8312,7 @@ arch dungeon_magic
 x 32
 y 10
 end
-arch stwindow_win1
+arch window_win1
 x 32
 y 10
 end
