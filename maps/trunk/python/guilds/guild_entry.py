@@ -21,6 +21,7 @@ import Crossfire
 import CFGuilds
 
 import sys
+
 import string
 
 activator=Crossfire.WhoIsActivator()
@@ -34,68 +35,60 @@ activatorx=activator.X
 activatory=activator.Y
 whoami=Crossfire.WhoAmI()
 
-guildname=Crossfire.ScriptParameters() # 6 is say event
-print guildname
-if (guildname):
+from CFGuildClearance import CheckClearance
+Params=Crossfire.ScriptParameters().split()
 
-    guild = CFGuilds.CFGuild(guildname)
-    text = Crossfire.WhatIsMessage().split()
-    guildrecord = CFGuilds.CFGuildHouses().info(guildname)
-    found = 0
-    if text[0] == 'enter' or text[0] == 'Enter':
 
-            if guildrecord['Status'] == 'inactive':
-                message = 'This guild is currently inactive and available to be bought.'
+guild = CFGuilds.CFGuild(Params[0])
+guildname=Params[0]
 
-            elif guildrecord['Status'] == 'suspended':
-                message = 'This guild is currently under suspension.\nPlease see a DM for more information'
+text = Crossfire.WhatIsMessage().split()
+guildrecord = CFGuilds.CFGuildHouses().info(guildname)
+found = 0
+if text:
+        if text[0].upper() == 'ENTER':
+                print guildrecord
+                if guildrecord['Status'] == 'inactive':
+                        message = 'This guild is currently inactive and available to be bought.'
 
-            else:
-                if guildrecord['Status'] == 'probation':
-                    activator.Write('This guild is currently under probation.\nPlease see a DM for more information')
+                elif guildrecord['Status'] == 'suspended':
+                        message = 'This guild is currently under suspension.\nPlease see a DM for more information'
 
-                record = guild.info(activatorname) #see if they are on the board
-                if record:
+                else:
+                        if guildrecord['Status'] == 'probation':
+                                activator.Write('This guild is currently under probation.\nPlease see a DM for more information')
+
+                if (CheckClearance(Params,activator)):
                     #check their status
-                    if record['Status'] == 'suspended':
-                        message = 'You are currently suspended from the guild'
-                    elif record['Status'] == 'probation':
-                        message = 'Granted, but you are on probation'
-                        x=15
-			y=22
-			activator.Teleport(mymap,int(x1),int(y1))
-			activator.Teleport(mymap,int(activatorx),int(activatory))
-                    else:
+                
+                
                         message = 'Entry granted for %s' %activatorname
-                        y=22
-			x=15
-			activator.Teleport(mymap,int(x1),int(y1))
-			activator.Teleport(mymap,int(activatorx),int(activatory))
+                        mymap.TriggerConnected(int(Params[2]),1,activator)
                 else:
                     message = 'You try my patience %s.  BEGONE!' %activatorname
                     activator.Teleport(mymap,int(x),int(y)) #teleport them
 
-    elif text[0] == 'buy' or text[0] == 'Buy':
-        if guildrecord['Status'] == 'inactive':
-            in_guild = CFGuilds.SearchGuilds(activatorname)
-            if in_guild == 0:
-                x = 30
-                y = 19
-                message = "Proceed, but know ye that three are required to found a guild and the cost is high"
-                activator.Teleport(mymap,int(x),int(y)) #teleport them
-            else:
-                x = 30
-                y = 19
-                message = "Proceed, but know ye that three are required to found a guild and the cost is high"
-                activator.Teleport(mymap,int(x),int(y)) #teleport them
+        elif text[0].upper() == 'BUY' and whoami.Name=="Guardian":
+                if guildrecord['Status'] == 'inactive':
+                        in_guild = CFGuilds.SearchGuilds(activatorname)
+                        if in_guild == 0:
+                                x = 30
+                                y = 19
+                                message = "Proceed, but know ye that three are required to found a guild and the cost is high"
+                                activator.Teleport(mymap,int(x),int(y)) #teleport them
+                        else:
+                                x = 30
+                                y = 19
+                                message = "Proceed, but know ye that three are required to found a guild and the cost is high.\n  Note, you are already a member of a guild, some servers may prohibit being in multiple guilds.  Proceed at your own risk."
+                                activator.Teleport(mymap,int(x),int(y)) #teleport them
+                else:
+                        message = 'This guild is already owned.'
+        elif whoami.Name=="Guardian":
+                message = 'This is the entry to the great %s guild.  Enter or begone!' %guildname
         else:
-            message = 'This guild is already owned.'
-    else:
-        message = 'This is the entry to the great %s guild.  Enter or begone!' %guildname
-
+                message = "Say enter to request entry."
 else:
     message = 'Guild Guardian Error, please notify a DM'
 
 whoami.Say(message)
 
-print guild

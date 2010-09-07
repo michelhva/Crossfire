@@ -1,14 +1,10 @@
-import random
-import Crossfire
-import CFGuilds
-import sys
-import string
-#sys.stderr=open("/home/alestan/Output.log", 'a')
+import random,Crossfire,CFGuilds,sys,string
+from CFGuildClearance import CheckClearance
 activator=Crossfire.WhoIsActivator()
 whoami=Crossfire.WhoAmI()
-
 activatorname=activator.Name
 mymap = activator.Map
+
 def find_player(object):
     while (object.Type != 1) : #1 is type 'Player'
         object = object.Above
@@ -26,75 +22,22 @@ Curse = activator.Map.ObjectAt(int(x4),int(y4))
 
 x3=1
 y3=8
+Params=Crossfire.ScriptParameters()
+Approved="Access granted" if CheckClerance(Params,activator) else "Access denied"
+x1 = activator.X
+Y1 = activator.Y
+x= 26
+y=0
 
-if (1==1):
- if (activator.DungeonMaster ==1):
-	ApprovedClearanceLevel = 5
-
-
-
-
- Clearancerq=Crossfire.ScriptParameters() # 6 is say event
- x1 = activator.X
- Y1 = activator.Y
- x= 26
- y=0
-
- text = string.split(Clearancerq)
- guildname = text[0]
- guild=CFGuilds.CFGuild(guildname)
- guildrecord=CFGuilds.CFGuildHouses().info(guildname)
- ClearanceRequested=(text[1])
- ActionRequired=text[2]
- if (guild.info(activatorname)!=0):
-  text1=string.split(str(guild.info(activatorname)))
+guild=CFGuilds.CFGuild(guildname)
+guildrecord=CFGuilds.CFGuildHouses().info(guildname)
+ActionRequired=Params[2]
 
 
-  ClearanceApproved = (text1[5])
 
- # whoami.Say(ClearanceApproved)
-  if (ClearanceApproved):
-   if (ClearanceApproved == "'Initiate',"):
-	ApprovedClearanceLevel = 1
-   elif (ClearanceApproved == "'Novice',"):
-	ApprovedClearanceLevel = 2
-   elif (ClearanceApproved == "'Guildman',"):
-	ApprovedClearanceLevel = 3
-   elif (ClearanceApproved == "'Journeyman',"):
-	ApprovedClearanceLevel = 4
-   elif (ClearanceApproved == "'Master',"):
-	ApprovedClearanceLevel = 5
-   elif (ClearanceApproved == "'GuildMaster',"):
-	ApprovedClearanceLevel = 6
- else:
-	ApprovedClearanceLevel = 0
- if (activator.DungeonMaster ==1):
-	ApprovedClearanceLevel = 6
-#whoami.Say(str(ApprovedClearanceLevel))
-
- if (ClearanceRequested == "Initiate"):
-	RequiredClearanceLevel = 1
- elif (ClearanceRequested == "Novice"):
-	RequiredClearanceLevel = 2
- elif (ClearanceRequested == "Guildman"):
-	RequiredClearanceLevel = 3
- elif (ClearanceRequested == "Journeyman"):
-	RequiredClearanceLevel = 4
- elif (ClearanceRequested == "Master"):
-	RequiredClearanceLevel = 5
- elif (ClearanceRequested == "GuildMaster"):
-	RequiredClearanceLevel = 6
-#whoami.Say(str(RequiredClearanceLevel))
-
- if (ApprovedClearanceLevel >= RequiredClearanceLevel):
-	Approved = 'Access granted'
- else:
-	Approved = 'Access denied'
-
-
- if (Approved != 'Access granted'):
+if (Approved != 'Access granted'):
      if (ActionRequired == "A"):
-        activator.Teleport(mymap,int(40),int(22))
+        activator.Teleport(Crossfire.ReadyMap('/scorn/misc/jail'),int(15),random.choice([1,3,5,9,11]))
      elif (ActionRequired == "D"):
 	Corpse.Name = str("%s's body" %(activator.Name))
 	Corpse.Race = str("%s's Curse" %(activator.Name))

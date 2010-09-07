@@ -9,7 +9,7 @@ enter_x 1
 enter_y 8
 msg
 Created:  2004-05-12
-Modified: 2010-09-04 Nicolas Weeger
+Modified: 2010-09-06 Logan Perkins
 endmsg
 end
 arch woodfloor
@@ -644,7 +644,7 @@ y 10
 level 100
 attacktype 0
 arch event_trigger
-name LaughingSkulls Initiate A
+name DreamingSage Initiate A
 title Python
 slaying /python/guilds/arrest.py
 end
@@ -1191,9 +1191,9 @@ can_use_rod 1
 can_see_in_dark 1
 can_use_wand 1
 arch event_say
-name LaughingSkulls Journeyman
+name DreamingSage Journeyman9991
 title Python
-slaying /python/guilds/clearance.py
+slaying /python/guilds/guild_entry.py
 end
 end
 arch woodfloor

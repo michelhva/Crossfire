@@ -4,7 +4,7 @@ reset_timeout 300
 difficulty 1
 region wolfsburg
 width 23
-height 20
+height 22
 enter_x 12
 enter_y 11
 msg
@@ -12,7 +12,7 @@ Creator: majorwoo josh@woosworld.net
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-09-04 Nicolas Weeger
+Modified: 2010-09-06 Logan Perkins
 endmsg
 end
 arch dungeon_magic
@@ -401,6 +401,15 @@ arch spell_transference
 dam 120
 end
 end
+arch dungeon_magic
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 1
+unique 1
+end
 arch woodfloor
 x 1
 y 2
@@ -464,6 +473,15 @@ blocksview 0
 arch spell_transference
 dam 120
 end
+end
+arch dungeon_magic
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 2
+unique 1
 end
 arch woodfloor
 x 1
@@ -656,6 +674,15 @@ no_pass 0
 blocksview 0
 arch spell_transference
 end
+end
+arch dungeon_magic
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 3
+unique 1
 end
 arch woodfloor
 x 1
@@ -913,6 +940,15 @@ arch spell_transference
 dam 120
 end
 end
+arch dungeon_magic
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 1
+unique 1
+end
 arch magic_mouth
 msg
 This crystal glows brighter than anything you've ever seen. You wonder if touching it might be a bad idea.
@@ -931,6 +967,10 @@ x 2
 y 2
 unique 1
 end
+arch light4
+x 2
+y 2
+end
 arch button_lever
 name Vibrantly Flashing Crystal
 face power_crystal.111
@@ -939,10 +979,6 @@ x 2
 y 2
 connected 2
 move_block 0
-end
-arch light4
-x 2
-y 2
 end
 arch woodfloor
 x 2
@@ -1006,6 +1042,15 @@ no_pass 0
 blocksview 0
 arch spell_transference
 end
+end
+arch dungeon_magic
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 3
+unique 1
 end
 arch woodfloor
 x 2
@@ -1347,6 +1392,15 @@ arch spell_transference
 dam 121
 end
 end
+arch dungeon_magic
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 1
+unique 1
+end
 arch woodfloor
 x 3
 y 2
@@ -1410,6 +1464,15 @@ blocksview 0
 arch spell_transference
 dam 121
 end
+end
+arch dungeon_magic
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 2
+unique 1
 end
 arch woodfloor
 x 3
@@ -1539,6 +1602,15 @@ blocksview 0
 arch spell_transference
 end
 end
+arch dungeon_magic
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 3
+unique 1
+end
 arch woodfloor
 x 3
 y 4
@@ -1618,6 +1690,31 @@ arch woodfloor
 x 3
 y 11
 unique 1
+end
+arch guard
+x 3
+y 11
+level 1000
+attacktype 5201023
+monster 0
+friendly 1
+hitback 1
+reflect_missile 0
+reflect_spell 0
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch event_say
+name DamnedHeretic Guildman 8980
+title Python
+slaying /python/guilds/guild_entry.py
+end
 end
 arch dungeon_magic
 x 3
@@ -1841,6 +1938,15 @@ arch spell_transference
 dam 121
 end
 end
+arch dungeon_magic
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 1
+unique 1
+end
 arch woodfloor
 x 4
 y 2
@@ -1905,6 +2011,15 @@ arch spell_transference
 dam 121
 end
 end
+arch dungeon_magic
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 2
+unique 1
+end
 arch woodfloor
 x 4
 y 3
@@ -2032,6 +2147,15 @@ no_pass 0
 blocksview 0
 arch spell_transference
 end
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 3
+unique 1
 end
 arch dungeon_magic
 x 4
@@ -2279,11 +2403,6 @@ arch dwall_2_2_1
 x 5
 y 1
 end
-arch woodfloor
-x 5
-y 2
-unique 1
-end
 arch pedestal
 x 5
 y 2
@@ -2353,6 +2472,11 @@ blocksview 0
 arch spell_transference
 dam 120
 end
+end
+arch woodfloor
+x 5
+y 2
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -2941,12 +3065,6 @@ arch woodfloor
 x 7
 y 5
 unique 1
-end
-arch check_floor
-slaying guild_tan21
-x 7
-y 6
-connected 897
 end
 arch dungeon_magic
 x 7
@@ -3753,6 +3871,31 @@ x 10
 y 3
 unique 1
 end
+arch guard
+x 10
+y 3
+level 1000
+attacktype 5201023
+monster 0
+friendly 1
+hitback 1
+reflect_missile 0
+reflect_spell 0
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch event_say
+name DamnedHeretic Guildman 820
+title Python
+slaying /python/guilds/guild_entry.py
+end
+end
 arch dungeon_magic
 x 10
 y 4
@@ -3798,6 +3941,31 @@ arch woodfloor
 x 10
 y 7
 unique 1
+end
+arch guard
+x 10
+y 7
+level 1000
+attacktype 5201023
+monster 0
+friendly 1
+hitback 1
+reflect_missile 0
+reflect_spell 0
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch event_say
+name DamnedHeretic Guildman 3350
+title Python
+slaying /python/guilds/guild_entry.py
+end
 end
 arch dungeon_magic
 x 10
@@ -3883,15 +4051,6 @@ arch grate_closed_2
 x 10
 y 14
 connected 9191
-end
-arch dungeon_magic
-x 10
-y 15
-end
-arch woodfloor
-x 10
-y 15
-unique 1
 end
 arch dungeon_magic
 x 10
@@ -4263,6 +4422,31 @@ x 12
 y 7
 unique 1
 end
+arch guard
+x 12
+y 7
+level 1000
+attacktype 5201023
+monster 0
+friendly 1
+hitback 1
+reflect_missile 0
+reflect_spell 0
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch event_say
+name DamnedHeretic Guildman 8970
+title Python
+slaying /python/guilds/guild_entry.py
+end
+end
 arch dungeon_magic
 x 12
 y 8
@@ -4580,13 +4764,6 @@ x 13
 y 15
 unique 1
 end
-arch woodfloor
-x 13
-y 15
-type 71
-unique 0
-is_buildable 1
-end
 arch guard
 x 13
 y 15
@@ -4607,9 +4784,9 @@ can_use_rod 1
 can_see_in_dark 1
 can_use_wand 1
 arch event_say
-name DamnedHeretic GuildMaster
+name DamnedHeretic GuildMaster 9991
 title Python
-slaying /python/guilds/clearance.py
+slaying /python/guilds/guild_entry.py
 end
 end
 arch dungeon_magic
@@ -4638,6 +4815,31 @@ arch woodfloor
 x 13
 y 18
 unique 1
+end
+arch guard
+x 13
+y 18
+level 1000
+attacktype 5201023
+monster 0
+friendly 1
+hitback 1
+reflect_missile 0
+reflect_spell 0
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch event_say
+name DamnedHeretic Guildman 8990
+title Python
+slaying /python/guilds/guild_entry.py
+end
 end
 arch woodfloor
 x 13
@@ -5204,6 +5406,12 @@ x 15
 y 18
 unique 1
 end
+arch button_lever
+name Left position allows guildmen into crafting areas, right denies.
+x 15
+y 18
+connected 721
+end
 arch woodfloor
 x 15
 y 19
@@ -5624,6 +5832,98 @@ arch dwall_2_2_4
 x 17
 y 9
 end
+arch woodfloor2
+x 17
+y 11
+end
+arch lightningwall_5
+x 17
+y 11
+speed 0
+connected 820
+arch spell_sm_lightning
+end
+end
+arch woodfloor2
+x 17
+y 13
+unique 1
+end
+arch grate_closed_1
+x 17
+y 13
+connected 40
+activate_on_release 0
+end
+arch woodfloor2
+x 17
+y 14
+unique 1
+end
+arch grate_closed_1
+x 17
+y 14
+connected 721
+end
+arch woodfloor2
+x 17
+y 15
+end
+arch detector
+slaying lightning
+x 17
+y 15
+speed 1.0
+connected 82
+end
+arch woodfloor2
+x 17
+y 16
+end
+arch lightningwall_5
+x 17
+y 16
+speed 0
+connected 8980
+arch spell_sm_lightning
+end
+end
+arch woodfloor2
+x 17
+y 18
+unique 1
+end
+arch grate_closed_1
+x 17
+y 18
+connected 10
+activate_on_release 0
+end
+arch woodfloor2
+x 17
+y 19
+unique 1
+end
+arch grate_closed_1
+x 17
+y 19
+connected 721
+end
+arch woodfloor2
+x 17
+y 20
+end
+arch detector
+slaying lightning
+x 17
+y 20
+speed 1.0
+connected 898
+end
+arch blocked
+x 17
+y 21
+end
 arch lightningwall_5
 x 18
 speed 0.0
@@ -5705,90 +6005,143 @@ y 5
 end
 arch blocked
 x 18
+y 5
+end
+arch woodfloor2
+x 18
 y 6
 end
 arch lightningwall_5
-sp 1
 x 18
 y 6
-speed 0.0
-level 100
-connected 9991
-move_block 0
-arch spell_large_lightning
+speed 0
+connected 3350
+arch spell_sm_lightning
 end
 end
-arch director_1
+arch woodfloor2
 x 18
-y 6
+y 8
+unique 1
+end
+arch grate_closed_1
+x 18
+y 8
+connected 50
+activate_on_release 0
+end
+arch woodfloor2
+x 18
+y 9
+unique 1
+end
+arch grate_closed_1
+x 18
+y 9
+connected 721
+end
+arch woodfloor2
+x 18
+y 10
+end
+arch detector
+slaying lightning
+x 18
+y 10
+speed 1.0
+connected 335
+end
+arch woodfloor2
+x 18
+y 11
+end
+arch lightningwall_5
+x 18
+y 11
+speed 0
+connected 8970
+arch spell_sm_lightning
+end
+end
+arch woodfloor2
+x 18
+y 13
+unique 1
+end
+arch grate_closed_1
+x 18
+y 13
+connected 30
+activate_on_release 0
+end
+arch woodfloor2
+x 18
+y 14
+unique 1
+end
+arch grate_closed_1
+x 18
+y 14
+connected 721
+end
+arch woodfloor2
+x 18
+y 15
+end
+arch detector
+slaying lightning
+x 18
+y 15
+speed 1.0
+connected 897
+end
+arch woodfloor2
+x 18
+y 16
+end
+arch lightningwall_5
+x 18
+y 16
+speed 0
+connected 8990
+arch spell_sm_lightning
+end
+end
+arch woodfloor2
+x 18
+y 18
+unique 1
+end
+arch grate_closed_1
+x 18
+y 18
+connected 20
+activate_on_release 0
+end
+arch woodfloor2
+x 18
+y 19
+unique 1
+end
+arch grate_closed_1
+x 18
+y 19
+connected 721
+end
+arch woodfloor2
+x 18
+y 20
+end
+arch detector
+slaying lightning
+x 18
+y 20
+speed 1.0
+connected 899
 end
 arch blocked
 x 18
-y 7
-end
-arch lightningwall_5
-sp 1
-x 18
-y 7
-speed 0.0
-level 100
-connected 9991
-move_block 0
-arch spell_large_lightning
-end
-end
-arch director_1
-x 18
-y 7
-end
-arch blocked
-x 18
-y 8
-end
-arch lightningwall_5
-sp 1
-x 18
-y 8
-speed 0.0
-level 100
-connected 9991
-move_block 0
-arch spell_large_lightning
-end
-end
-arch director_1
-x 18
-y 8
-end
-arch lightningwall_5
-sp 1
-x 18
-y 9
-speed 0.0
-level 100
-connected 9991
-move_block 0
-arch spell_large_lightning
-end
-end
-arch director_1
-x 18
-y 9
-end
-arch lightningwall_5
-sp 1
-x 18
-y 10
-speed 0.0
-level 100
-connected 9991
-move_block 0
-arch spell_large_lightning
-end
-end
-arch director_1
-x 18
-y 10
+y 21
 end
 arch blocked
 x 19
@@ -6125,6 +6478,10 @@ speed 1.0
 connected 5
 end
 arch blocked
+x 20
+y 20
+end
+arch blocked
 x 21
 end
 arch button_small
@@ -6227,10 +6584,20 @@ x 21
 y 13
 connected 20
 end
+arch woodfloor2
+x 21
+y 13
+unique 1
+end
 arch button_small
 x 21
 y 14
 connected 10
+end
+arch woodfloor2
+x 21
+y 14
+unique 1
 end
 arch blocked
 x 21
@@ -6273,6 +6640,7 @@ arch grate_closed_1
 x 22
 y 2
 connected 50
+activate_on_release 0
 end
 arch woodfloor2
 x 22
@@ -6316,15 +6684,30 @@ x 22
 y 12
 connected 30
 end
+arch woodfloor2
+x 22
+y 12
+unique 1
+end
 arch button_small
 x 22
 y 13
 connected 40
 end
+arch woodfloor2
+x 22
+y 13
+unique 1
+end
 arch button_small
 x 22
 y 14
 connected 50
+end
+arch woodfloor2
+x 22
+y 14
+unique 1
 end
 arch woodfloor2
 x 22
@@ -6368,4 +6751,8 @@ x 22
 y 19
 speed 1.0
 connected 953
+end
+arch blocked
+x 22
+y 20
 end
