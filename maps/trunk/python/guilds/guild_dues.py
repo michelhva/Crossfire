@@ -146,7 +146,7 @@ if (guildname):
                         try:
                                 Amount=int(text[1])
 			
-	  if Price!=None:
+	if Price!=None:
 		balance=bank.getbalance(accountname)
 		if Price<=balance:
 			Card=False
