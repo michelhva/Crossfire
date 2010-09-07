@@ -85,6 +85,13 @@ public class Options {
     private String debugScreenFilename = null;
 
     /**
+     * The filename for sound debug logs or <code>null</code> to not log sound
+     * logs.
+     */
+    @Nullable
+    private String debugSoundFilename = null;
+
+    /**
      * The resolution to use or <code>null</code> for default.
      */
     @Nullable
@@ -150,6 +157,8 @@ public class Options {
                 debugKeyboardFilename = args[++i];
             } else if (args[i].equals("--debug-screen") && i+1 < args.length) {
                 debugScreenFilename = args[++i];
+            } else if (args[i].equals("--debug-sound") && i+1 < args.length) {
+                debugSoundFilename = args[++i];
             } else if (args[i].equals("--tile-size") && i+1 < args.length) {
                 final String tmp = args[++i];
                 try {
@@ -185,6 +194,8 @@ public class Options {
                 System.out.println("                : Log messages exchanged with the server.");
                 System.out.println(" --debug-screen <log-file>");
                 System.out.println("                : Log messages related to screen resolution.");
+                System.out.println(" --debug-sound <log-file>");
+                System.out.println("                : Log messages related to sound.");
                 System.out.println("");
                 System.out.println("Available skins: default, ragnorok.");
                 System.exit(1);
@@ -229,6 +240,15 @@ public class Options {
     @Nullable
     public String getDebugScreenFilename() {
         return debugScreenFilename;
+    }
+
+    /**
+     * Returns the filename for sound debug logs.
+     * @return the filename or <code>null</code> to not log sound logs
+     */
+    @Nullable
+    public String getDebugSoundFilename() {
+        return debugSoundFilename;
     }
 
     /**

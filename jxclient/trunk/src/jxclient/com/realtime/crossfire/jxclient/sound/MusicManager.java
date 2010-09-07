@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.sound;
 
+import com.realtime.crossfire.jxclient.util.DebugWriter;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -29,6 +30,13 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class MusicManager {
+
+    /**
+     * The writer for logging sound related information or <code>null</code> to
+     * not log.
+     */
+    @Nullable
+    private final DebugWriter debugSound;
 
     /**
      * The currently running processor, or <code>null</code> if none is active
@@ -62,6 +70,15 @@ public class MusicManager {
     private String name = null;
 
     /**
+     * Creates a new instance.
+     * @param debugSound the writer for logging sound related information or
+     * <code>null</code> to not log
+     */
+    public MusicManager(@Nullable final DebugWriter debugSound) {
+        this.debugSound = debugSound;
+    }
+
+    /**
      * Play the given music. If the new music name is unchanged, continue
      * playing.
      * @param name The music name, or <code>null</code> to stop playing music.
@@ -71,6 +88,9 @@ public class MusicManager {
             return;
         }
 
+        if (debugSound != null) {
+            debugSound.debugProtocolWrite("play: "+name);
+        }
         this.name = name;
         restart();
     }
@@ -84,6 +104,9 @@ public class MusicManager {
             return;
         }
 
+        if (debugSound != null) {
+            debugSound.debugProtocolWrite("setEnabled: "+enabled);
+        }
         this.enabled = enabled;
         restart();
     }
@@ -97,6 +120,9 @@ public class MusicManager {
             return;
         }
 
+        if (debugSound != null) {
+            debugSound.debugProtocolWrite("setMuted: "+muted);
+        }
         this.muted = muted;
         restart();
     }

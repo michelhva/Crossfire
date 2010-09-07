@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.sound;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
+import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.util.Collection;
 import java.util.EnumSet;
 import org.jetbrains.annotations.NotNull;
@@ -41,13 +42,20 @@ public class SoundManager {
      * The clip manager for playing sound effects.
      */
     @NotNull
-    private final ClipManager clipManager = new ClipManager();
+    private final ClipManager clipManager;
+
+    /**
+     * The writer for logging sound related information or <code>null</code> to
+     * not log.
+     */
+    @Nullable
+    private final DebugWriter debugSound;
 
     /**
      * The music manager for playing background music.
      */
     @NotNull
-    private final MusicManager musicManager = new MusicManager();
+    private final MusicManager musicManager;
 
     /**
      * Whether sound is enabled.
@@ -116,8 +124,13 @@ public class SoundManager {
     /**
      * Creates a new instance.
      * @param guiStateManager the gui state manager to watch
+     * @param debugSound the writer for logging sound related information or
+     * <code>null</code> to not log
      */
-    public SoundManager(@NotNull final GuiStateManager guiStateManager) {
+    public SoundManager(@NotNull final GuiStateManager guiStateManager, @Nullable final DebugWriter debugSound) {
+        clipManager = new ClipManager(debugSound);
+        musicManager = new MusicManager(debugSound);
+        this.debugSound = debugSound;
         guiStateManager.addGuiStateListener(guiStateListener);
     }
 
@@ -141,9 +154,24 @@ public class SoundManager {
      * @param action The sound action name.
      */
     public void playClip(@NotNull final Sounds type, @Nullable final String name, @NotNull final String action) {
-        if (enabled && !mutedSounds.contains(type)) {
-            clipManager.play(name, action);
+        if (!enabled) {
+            if (debugSound != null) {
+                debugSound.debugProtocolWrite("playClip(type="+type+", name="+name+", action="+action+"): sound is muted");
+            }
+            return;
         }
+
+        if (mutedSounds.contains(type)) {
+            if (debugSound != null) {
+                debugSound.debugProtocolWrite("playClip(type="+type+", name="+name+", action="+action+"): sound type is muted");
+            }
+            return;
+        }
+
+        if (debugSound != null) {
+            debugSound.debugProtocolWrite("playClip(type="+type+", name="+name+", action="+action+")");
+        }
+        clipManager.play(name, action);
     }
 
     /**
@@ -183,6 +211,9 @@ public class SoundManager {
      * Terminate all sounds and free resources.
      */
     public void shutdown() {
+        if (debugSound != null) {
+            debugSound.debugProtocolWrite("shutdown");
+        }
         musicManager.shutdown();
         clipManager.shutdown();
     }

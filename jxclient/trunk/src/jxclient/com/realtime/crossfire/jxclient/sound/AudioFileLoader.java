@@ -48,15 +48,22 @@ public class AudioFileLoader {
      */
     @NotNull
     public static InputStream getInputStream(@Nullable final String name, @NotNull final String action) throws IOException {
+        @Nullable final IOException savedException;
         if (name != null) {
             try {
                 return getResource(name+"/"+action);
-            } catch (final IOException ignored) {
-                // ignore
+            } catch (final IOException ex) {
+                savedException = ex;
             }
+        } else {
+            savedException = null;
         }
 
-        return getResource(action);
+        try {
+            return getResource(action);
+        } catch (final IOException ex) {
+            throw savedException != null ? savedException : ex;
+        }
     }
 
     /**
@@ -74,7 +81,7 @@ public class AudioFileLoader {
             return inputStream;
         }
 
-        throw new IOException(name+": resource "+resource+" does not exist");
+        throw new IOException("resource "+resource+" does not exist");
     }
 
 }
