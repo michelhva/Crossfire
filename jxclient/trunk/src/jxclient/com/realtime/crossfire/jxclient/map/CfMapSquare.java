@@ -39,7 +39,7 @@ import org.jetbrains.annotations.Nullable;
 public class CfMapSquare {
 
     /**
-     * The default darkness value for newly creates squares.
+     * The default darkness value for newly created squares.
      */
     public static final int DEFAULT_DARKNESS = 255;
 
