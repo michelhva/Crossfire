@@ -21,9 +21,6 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
-import java.nio.ByteBuffer;
-import org.jetbrains.annotations.NotNull;
-
 /**
  * Interface for listeners interested in magicmap messages received from the
  * Crossfire server.
@@ -32,28 +29,8 @@ import org.jetbrains.annotations.NotNull;
 public interface CrossfireMagicmapListener {
 
     /**
-     * Bitmask to extract the color information of a tile.
-     */
-    int FACE_COLOR_MASK = 0x0F;
-
-    /**
-     * Bitmask to denote a floor tile.
-     */
-    int FACE_FLOOR = 0x80;
-
-    /**
-     * Bitmask to denote a wall tile.
-     */
-    int FACE_WALL = 0x40;
-
-    /**
      * A magicmap protocol message has been received.
-     * @param width the width of <code>data</code>
-     * @param height the height of <code>data</code>
-     * @param px the x-coordinate of the player
-     * @param py the y-coordinate of the player
-     * @param data the data describing tiles
      */
-    void commandMagicmapReceived(int width, int height, int px, int py, @NotNull ByteBuffer data);
+    void commandMagicmapReceived();
 
 }

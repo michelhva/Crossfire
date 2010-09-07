@@ -590,7 +590,7 @@ public class JXCSkinLoader {
                         } else if (gui != null && cmd.equals("log_filter")) {
                             parseLogFilter(args);
                         } else if (gui != null && cmd.equals("minimap")) {
-                            parseMinimap(args, tooltipManager, elementListener, server);
+                            parseMinimap(args, tooltipManager, elementListener);
                         } else if (gui != null && cmd.equals("map")) {
                             parseMap(args, tooltipManager, elementListener, server);
                         } else if (gui != null && cmd.equals("meta_list")) {
@@ -1483,18 +1483,17 @@ public class JXCSkinLoader {
      * @param args the command arguments
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param server the server to monitor
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseMinimap(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+    private void parseMinimap(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
         final String name = args.get();
         final Extent extent = parseExtent(args);
         final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(4);
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        final GUIElement element = new GUIMiniMap(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider, server);
+        final GUIElement element = new GUIMiniMap(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider);
         insertGuiElement(element);
     }
 

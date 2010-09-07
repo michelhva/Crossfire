@@ -257,6 +257,14 @@ public class CfMapUpdater {
          * {@inheritDoc}
          */
         @Override
+        public void mapMagicMap(final int x, final int y, final int color) {
+            processMagicMap(x, y, color);
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
         public void mapEnd() {
             processMapEnd(true);
         }
@@ -521,6 +529,20 @@ public class CfMapUpdater {
     private void processMapDarkness(final int x, final int y, final int darkness) {
         synchronized (sync) {
             map.setDarkness(x, y, darkness);
+        }
+    }
+
+    /**
+     * Finishes processing of a set of map square changes. Notifies listeners
+     * about changes.
+     * present
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param color the magic map color to set
+     */
+    public void processMagicMap(final int x, final int y, final int color) {
+        synchronized (sync) {
+            map.setColor(x, y, color);
         }
     }
 

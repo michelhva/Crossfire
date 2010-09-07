@@ -295,6 +295,12 @@ public class JXCWindowRenderer {
 
         /** {@inheritDoc} */
         @Override
+        public void mapMagicMap(final int x, final int y, final int color) {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
         public void mapEnd() {
             if (skippedPaint) {
                 forcePaint = true;

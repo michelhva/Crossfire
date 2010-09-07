@@ -105,6 +105,27 @@ public class CfMapPatch {
     }
 
     /**
+     * Sets the magic map color of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param color the color to set
+     * @return whether fog-of-war has been cleared
+     */
+    public boolean setColor(final int x, final int y, final int color) {
+        return square[x][y].setColor(color);
+    }
+
+    /**
+     * Determines the magic map color value of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @return the color
+     */
+    public int getColor(final int x, final int y) {
+        return square[x][y].getColor();
+    }
+
+    /**
      * Determines the face of one square.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square

@@ -44,6 +44,11 @@ public class CfMapSquare {
     public static final int DEFAULT_DARKNESS = 255;
 
     /**
+     * The default magic map color for newly created squares.
+     */
+    public static final int DEFAULT_COLOR = -1;
+
+    /**
      * The darkness value for a full bright square.
      */
     public static final int DARKNESS_FULL_BRIGHT = 255;
@@ -82,6 +87,12 @@ public class CfMapSquare {
      * bright={@link #DARKNESS_FULL_BRIGHT}.
      */
     private int darkness = DEFAULT_DARKNESS;
+
+    /**
+     * The magic map color of the square. Set to {@link #DEFAULT_COLOR} if none
+     * is known.
+     */
+    private int color = DEFAULT_COLOR;
 
     /**
      * The faces (of head-parts) of all layers as sent by the server.
@@ -192,6 +203,30 @@ public class CfMapSquare {
      */
     public int getDarkness() {
         return darkness;
+    }
+
+    /**
+     * Sets the magic map color of this square.
+     * @param color the new color
+     * @return whether fog-of-war has been cleared
+     */
+    public boolean setColor(final int color) {
+        final boolean result = fogOfWar;
+        final boolean markDirty = fogOfWar || this.color != color;
+        fogOfWar = false;
+        this.color = color;
+        if (markDirty) {
+            dirty();
+        }
+        return result;
+    }
+
+    /**
+     * Returns the magic map color of this square.
+     * @return the color
+     */
+    public int getColor() {
+        return color;
     }
 
     /**
