@@ -8,7 +8,7 @@ parser.add_option("--no-install-copy",dest="install_copy",help="installs a remot
 
 (options, args) = parser.parse_args()
 local_copy = " --local-copy" if options.local_copy else ""
-local_copy+=' --no-install-copy' if options.local_copy else ''
+local_copy+=' --no-install-copy' if options.install_copy else ''
 t=open('GuildLocations')
 a=t.read()
 t.close()
