@@ -128,9 +128,7 @@ if (Access ==1) or (isDM == 1):
                                         if guild.info(text[1]):
                                                 message = '%s is already a member.' %text[1]
                                         else:
-                                                try:
-                                                        guild.add_member(text[1], 'Initiate' if len(text)==2 else text[2])
-                                                except:
+                                                        #changed to support python 2.5                                                        guild.add_member(text[1], 'Initiate' if len(text)==2 else text[2])
                                                         guild.add_member(text[1], 'Initiate' )
                                                 message = 'Added %s to the guild' %text[1]
                                 else:
