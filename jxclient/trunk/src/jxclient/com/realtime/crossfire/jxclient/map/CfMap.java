@@ -145,6 +145,31 @@ public class CfMap {
     }
 
     /**
+     * Sets the magic map color of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param color the color to set
+     */
+    public void setColor(final int x, final int y, final int color) {
+        if (expandTo(x, y).setColor(ox, oy, color)) {
+            for (int l = 0; l < Map2.NUM_LAYERS; l++) {
+                setFaceInternal(x, y, l, CfMapSquare.DEFAULT_FACE);
+            }
+        }
+    }
+
+    /**
+     * Returns the magic map color value of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @return the color
+     */
+    public int getColor(final int x, final int y) {
+        final CfMapPatch mapPatch = getMapPatch(x, y);
+        return mapPatch != null ? mapPatch.getColor(ox, oy) : CfMapSquare.DEFAULT_COLOR;
+    }
+
+    /**
      * Sets the face of one square. This function clears fog-of-war state if
      * necessary.
      * @param x the x-coordinate of the square

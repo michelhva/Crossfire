@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.skin.events;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import java.nio.ByteBuffer;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -53,7 +52,7 @@ public class CrossfireMagicmapSkinEvent implements SkinEvent {
     private final CrossfireMagicmapListener crossfireMagicmapListener = new CrossfireMagicmapListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, @NotNull final ByteBuffer data) {
+        public void commandMagicmapReceived() {
             commandList.execute();
         }
     };

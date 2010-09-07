@@ -92,6 +92,14 @@ public interface CrossfireUpdateMapListener {
     void scroll(int dx, int dy);
 
     /**
+     * Part of "magicmap" parsing: set the magic map color.
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     * @param color the color
+     */
+    void mapMagicMap(int x, int y, int color);
+
+    /**
      * Parsing of "map2" has been finished.
      */
     void mapEnd();

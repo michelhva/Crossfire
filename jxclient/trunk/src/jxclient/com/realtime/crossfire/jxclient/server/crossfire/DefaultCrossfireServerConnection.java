@@ -124,6 +124,22 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private static final int ACL_FACE_NUM = 8;
 
     /**
+     * Bitmask in magic map information to extract the color information of a
+     * tile.
+     */
+    private static final int FACE_COLOR_MASK = 0x0F;
+
+    /**
+     * Bitmask in magic map information to denote a floor tile.
+     */
+    private static final int FACE_FLOOR = 0x80;
+
+    /**
+     * Bitmask in magic map information to denote a wall tile.
+     */
+    private static final int FACE_WALL = 0x40;
+
+    /**
      * The map width in tiles that is negotiated with the server.
      */
     private int preferredMapWidth = 17;
@@ -2836,8 +2852,23 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             throw new UnknownCommandException("invalid magicmap command");
         }
 
+        for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+            listener.mapBegin();
+        }
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                final byte ch = packet.get();
+                for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                    //listener.mapMagicMap(x-px-(currentMapWidth-1)/2+currentMapWidth-1, y-py-(currentMapHeight-1)/2+currentMapHeight-1, ch&FACE_COLOR_MASK);
+                    listener.mapMagicMap(x-px+(currentMapWidth-1)/2, y-py+(currentMapHeight-1)/2, ch&FACE_COLOR_MASK);
+                }
+            }
+        }
+        for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+            listener.mapEnd();
+        }
         for (final CrossfireMagicmapListener listener : magicmapListeners) {
-            listener.commandMagicmapReceived(width, height, px, py, packet);
+            listener.commandMagicmapReceived();
         }
         notifyPacketWatcherListenersMixed(packet, args);
     }

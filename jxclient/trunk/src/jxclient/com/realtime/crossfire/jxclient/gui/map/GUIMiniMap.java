@@ -24,13 +24,11 @@ package com.realtime.crossfire.jxclient.gui.map;
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMagicmapListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Graphics;
-import java.nio.ByteBuffer;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -57,12 +55,6 @@ public class GUIMiniMap extends AbstractGUIMap {
     private final int tileSize;
 
     /**
-     * The {@link CrossfireServerConnection} to monitor.
-     */
-    @NotNull
-    private final CrossfireServerConnection crossfireServerConnection;
-
-    /**
      * The colors for displaying magic map data.
      */
     @NotNull
@@ -85,48 +77,6 @@ public class GUIMiniMap extends AbstractGUIMap {
         Color.DARK_GRAY,
     };
 
-    static {
-        assert CrossfireMagicmapListener.FACE_COLOR_MASK+1 == TILE_COLORS.length;
-    }
-
-    /**
-     * The {@link CrossfireMagicmapListener} registered to receive magicmap
-     * commands.
-     */
-    @NotNull
-    private final CrossfireMagicmapListener crossfireMagicmapListener = new CrossfireMagicmapListener() {
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, @NotNull final ByteBuffer data) {
-            synchronized (bufferedImageSync) {
-                final Graphics g = createBufferGraphics();
-                try {
-                    final int offsetX = getPlayerX()-px*tileSize;
-                    final int offsetY = getPlayerY()-py*tileSize;
-                    for (int y = 0; y < height; y++) {
-                        for (int x = 0; x < width; x++) {
-                            final byte ch = data.get();
-                            if (ch != 0) {
-                                g.setColor(TILE_COLORS[ch&FACE_COLOR_MASK]);
-                                final int sx = offsetX+x*tileSize;
-                                final int sy = offsetY+y*tileSize;
-                                g.fillRect(sx, sy, tileSize, tileSize);
-                            }
-                        }
-                    }
-                    markPlayer(g, 0, 0);
-                } finally {
-                    g.dispose();
-                }
-            }
-            setChanged();
-        }
-
-    };
-
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
@@ -135,14 +85,11 @@ public class GUIMiniMap extends AbstractGUIMap {
      * @param extent the extent of this element
      * @param mapUpdater the map updater instance to use
      * @param facesProvider the faces provider for looking up faces
-     * @param crossfireServerConnection the server connection to monitor
      */
-    public GUIMiniMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
+    public GUIMiniMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider) {
         super(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider);
         this.mapUpdater = mapUpdater;
         tileSize = facesProvider.getSize();
-        this.crossfireServerConnection = crossfireServerConnection;
-        this.crossfireServerConnection.addCrossfireMagicmapListener(crossfireMagicmapListener);
     }
 
     /**
@@ -151,7 +98,21 @@ public class GUIMiniMap extends AbstractGUIMap {
     @Override
     public void dispose() {
         super.dispose();
-        crossfireServerConnection.removeCrossfireMagicmapListener(crossfireMagicmapListener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    protected void paintSquareBackground(@NotNull final Graphics g, final int px, final int py, final boolean hasImage, @NotNull final CfMapSquare mapSquare) {
+        final Color color;
+        if (hasImage) {
+            color = Color.BLACK;
+        } else {
+            final int colorIndex = mapSquare.getColor();
+            color = 0 <= colorIndex && colorIndex < TILE_COLORS.length ? TILE_COLORS[colorIndex] : Color.BLACK;
+        }
+        paintColoredSquare(g, color, px, py);
     }
 
     /**

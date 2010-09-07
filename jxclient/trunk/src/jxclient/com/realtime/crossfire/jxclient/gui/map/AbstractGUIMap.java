@@ -384,7 +384,6 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param y the y-coordinate of the map tile to redraw
      */
     protected void redrawSquare(@NotNull final Graphics g, @NotNull final CfMapSquare mapSquare, final int x, final int y) {
-        paintColoredSquare(g, Color.BLACK, offsetX+x*tileSize, offsetY+y*tileSize);
         redrawSquare(g, x, y, mapSquare);
         if (x < 0 || y < 0 || x >= mapWidth || y >= mapHeight || mapSquare.isFogOfWar()) {
             paintColoredSquare(g, DarknessColors.FOG_OF_WAR_COLOR, offsetX+x*tileSize, offsetY+y*tileSize);
@@ -407,6 +406,7 @@ public abstract class AbstractGUIMap extends GUIElement {
         final int py = offsetY+y*tileSize;
         final int mapSquareX = mapSquare.getX();
         final int mapSquareY = mapSquare.getY();
+        boolean foundSquare = false;
         for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
             final CfMapSquare headMapSquare = mapSquare.getHeadMapSquare(layer);
             if (headMapSquare != null) {
@@ -415,15 +415,36 @@ public abstract class AbstractGUIMap extends GUIElement {
                 final int dx = headMapSquare.getX()-mapSquareX;
                 final int dy = headMapSquare.getY()-mapSquareY;
                 assert dx > 0 || dy > 0;
+                if (!foundSquare) {
+                    foundSquare = true;
+                    paintSquareBackground(g, px, py, true, mapSquare);
+                }
                 paintImage(g, headFace, px, py, tileSize*dx, tileSize*dy);
             }
 
             final Face face = mapSquare.getFace(layer);
             if (face != null) {
+                if (!foundSquare) {
+                    foundSquare = true;
+                    paintSquareBackground(g, px, py, true, mapSquare);
+                }
                 paintImage(g, face, px, py, 0, 0);
             }
         }
+        if (!foundSquare) {
+            paintSquareBackground(g, px, py, false, mapSquare);
+        }
     }
+
+    /**
+     * Paints the background of a map square.
+     * @param g the graphics to paint into
+     * @param px the x-offset for painting
+     * @param py the y-offset for painting
+     * @param hasImage whether the square contains at least one image
+     * @param mapSquare the map square
+     */
+    protected abstract void paintSquareBackground(@NotNull final Graphics g, final int px, final int py, final boolean hasImage, @NotNull final CfMapSquare mapSquare);
 
     /**
      * Paints a face into a tile.
@@ -577,7 +598,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param x the x-coordinate
      * @param y the y-coordinate
      */
-    private void paintColoredSquare(@NotNull final Graphics g, @NotNull final Color color, final int x, final int y) {
+    protected void paintColoredSquare(@NotNull final Graphics g, @NotNull final Color color, final int x, final int y) {
         Image image = images.get(color);
         if (image == null) {
             final BufferedImage bufferedImage = new BufferedImage(tileSize, tileSize, color.getTransparency() == Transparency.OPAQUE ? BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB);

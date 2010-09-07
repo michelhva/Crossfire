@@ -24,10 +24,12 @@ package com.realtime.crossfire.jxclient.gui.map;
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.util.MathUtils;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
@@ -70,6 +72,14 @@ public class GUIMap extends AbstractGUIMap {
         super(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider);
         this.crossfireServerConnection = crossfireServerConnection;
         tileSize = facesProvider.getSize();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    protected void paintSquareBackground(@NotNull final Graphics g, final int px, final int py, final boolean hasImage, @NotNull final CfMapSquare mapSquare) {
+        paintColoredSquare(g, Color.BLACK, px, py);
     }
 
     /**
