@@ -50,7 +50,7 @@ if __name__=='__builtin__':
                 if CheckClearance(Params,activator):
                         Approved = "Access granted"
                 else:
-                        "Access denied"
+                       Approved = "Access denied"
                 whoami.Say(Approved)
                 
 
