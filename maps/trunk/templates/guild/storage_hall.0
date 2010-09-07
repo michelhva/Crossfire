@@ -10,7 +10,7 @@ msg
 Creator: Chad Opperman
 cromagic@sbcglobal.net
 Date:    2007-12-19
-Modified: 2008-05-30 Andreas Kirschbaum
+Modified: 2010-09-06 crossfire
 endmsg
 end
 arch stonefloor2
@@ -270,6 +270,12 @@ x 3
 y 4
 unique 1
 end
+arch button_small
+x 3
+y 5
+invisible 1
+connected 111
+end
 arch dungeon_magic
 x 3
 y 5
@@ -280,12 +286,6 @@ y 5
 no_magic 1
 unique 1
 damned 1
-end
-arch button_small
-x 3
-y 5
-invisible 1
-connected 111
 end
 arch check_floor
 slaying GUILD_TEMPLATE
@@ -303,6 +303,12 @@ x 3
 y 6
 connected 111
 end
+arch button_small
+x 3
+y 7
+invisible 1
+connected 111
+end
 arch dungeon_magic
 x 3
 y 7
@@ -313,12 +319,6 @@ y 7
 no_magic 1
 unique 1
 damned 1
-end
-arch button_small
-x 3
-y 7
-invisible 1
-connected 111
 end
 arch dungeon_magic
 x 3
