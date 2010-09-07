@@ -20,23 +20,28 @@
 
 import os, sys
 from filelist import filelist
-ToGuild=sys.argv[1]
-ToRegion=sys.argv[2]
+from optparse import OptionParser
+parser = OptionParser()
+parser.add_option("--local-copy",dest="local_copy",help="puts a copy of generated files in a templates/guild/<guildname>",default=False,action="store_true")
+parser.add_option("--no-install-copy",dest="install_copy",help="installs a remote copy to the destination directory.  If false, only configures the files for installation.",default=True,action="store_false")
+(options, args) = parser.parse_args(sys.argv)
+ToGuild=args[1]
+ToRegion=args[2]
 
 # set to 1 to put a copy of generated files in a subdirectory of templates/guild
-local_copy = 0
+local_copy = options.local_copy
 
 
 Ctl=0
 if len(sys.argv)>=7:
-        ToFolder=sys.argv[3]
-        ExitPath=sys.argv[4]
-        ExitX,ExitY=sys.argv[5],sys.argv[6]
+        ToFolder=args[3]
+        ExitPath=args[4]
+        ExitX,ExitY=args[5],args[6]
         Ctl=1
-        if sys.argv[7]=="same":
-                sys.argv[7]=sys.argv[4]
-        StorageExit=sys.argv[7]
-        StorageX,StorageY=sys.argv[8:]
+        if args[7]=="same":
+                args[7]=args[4]
+        StorageExit=args[7]
+        StorageX,StorageY=args[8:]
 
 if local_copy:
   os.system('mkdir '+ToGuild)
