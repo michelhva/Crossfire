@@ -57,9 +57,9 @@ public class ClipManager {
     }
 
     /**
-     * Play the given sound effect. This function returns immediately.
-     * @param name An optional prefix for the action name.
-     * @param action The action name of the sound effect.
+     * Plays the given sound effect. This function returns immediately.
+     * @param name an optional prefix for the action name
+     * @param action the action name of the sound effect
      */
     public void play(@Nullable final String name, @NotNull final String action) {
         final DataLine clip = clipCache.allocateClip(name, action);
@@ -68,7 +68,10 @@ public class ClipManager {
         }
 
         executorService.execute(new Runnable() {
-            /** {@inheritDoc} */
+
+            /**
+             * {@inheritDoc}
+             */
             @Override
             public void run() {
                 try {
@@ -82,11 +85,12 @@ public class ClipManager {
                     clipCache.freeClip(clip);
                 }
             }
+
         });
     }
 
     /**
-     * Terminate all running clips and free resources.
+     * Terminates all running clips and free resources.
      */
     public void shutdown() {
         executorService.shutdownNow();

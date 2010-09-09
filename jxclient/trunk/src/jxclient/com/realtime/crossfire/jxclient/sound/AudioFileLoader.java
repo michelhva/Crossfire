@@ -39,12 +39,12 @@ public class AudioFileLoader {
     }
 
     /**
-     * Return an input stream for an audio file. <code>action</code> identifies
+     * Returns an input stream for an audio file. <code>action</code> identifies
      * the audio file. <code>name</code> is an optional prefix.
-     * @param name The name.
-     * @param action The action; may be <code>null</code>.
-     * @return The input stream.
-     * @throws IOException If the file cannot be located.
+     * @param name the name
+     * @param action the action; may be <code>null</code>
+     * @return the input stream
+     * @throws IOException if the file cannot be located
      */
     @NotNull
     public static InputStream getInputStream(@Nullable final String name, @NotNull final String action) throws IOException {
@@ -67,10 +67,10 @@ public class AudioFileLoader {
     }
 
     /**
-     * Return an input stream for an audio file.
-     * @param name The resource name.
-     * @return The input stream.
-     * @throws IOException If the file cannot be located.
+     * Returns an input stream for an audio file.
+     * @param name the resource name
+     * @return the input stream
+     * @throws IOException if the file cannot be located
      */
     @NotNull
     private static InputStream getResource(@NotNull final String name) throws IOException {

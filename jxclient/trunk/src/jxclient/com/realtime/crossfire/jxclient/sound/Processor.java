@@ -66,15 +66,15 @@ public class Processor implements Runnable {
     private float volume = MIN_VALUE;
 
     /**
-     * Create a new instance.
-     * @param name The music name to play.
+     * Creates a new instance.
+     * @param name the music name to play
      */
     public Processor(@NotNull final String name) {
         this.name = name;
     }
 
     /**
-     * Stop playing music. The music is faded out rather than cut off.
+     * Stops playing music. The music is faded out rather than cut off.
      * @param fadeOut Whether tp fade out the music (<code>true</code>) or to
      * cut it off (<code>false</code>).
      */
@@ -194,9 +194,9 @@ public class Processor implements Runnable {
     }
 
     /**
-     * Convert one audio sample according to the current {@link #volume}.
-     * @param buf The buffer holding the sample.
-     * @param i The sample offset.
+     * Converts one audio sample according to the current {@link #volume}.
+     * @param buf the buffer holding the sample
+     * @param i the sample offset
      */
     private void convertSample(@NotNull final byte[] buf, final int i) {
         final float value = (short)((buf[i]&0xFF)+(buf[i+1]&0xFF)*0x100)*volume;

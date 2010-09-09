@@ -74,51 +74,67 @@ public class SoundManager {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void start() {
             muteMusic(true);
             mute(Sounds.CHARACTER, true);
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void metaserver() {
             muteMusic(true);
             mute(Sounds.CHARACTER, true);
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             muteMusic(true);
             mute(Sounds.CHARACTER, true);
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connected() {
             muteMusic(false);
             mute(Sounds.CHARACTER, false);
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**
@@ -135,8 +151,8 @@ public class SoundManager {
     }
 
     /**
-     * Set whether the sound system is enabled.
-     * @param enabled Whether the sound system is enabled.
+     * Sets whether the sound system is enabled.
+     * @param enabled whether the sound system is enabled
      */
     public void setEnabled(final boolean enabled) {
         if (this.enabled == enabled) {
@@ -148,10 +164,10 @@ public class SoundManager {
     }
 
     /**
-     * Play a sound clip.
-     * @param type The sound type.
-     * @param name An optional prefix for the action name.
-     * @param action The sound action name.
+     * Plays a sound clip.
+     * @param type the sound type
+     * @param name an optional prefix for the action name
+     * @param action the sound action name
      */
     public void playClip(@NotNull final Sounds type, @Nullable final String name, @NotNull final String action) {
         if (!enabled) {
@@ -175,10 +191,10 @@ public class SoundManager {
     }
 
     /**
-     * Mute or unmute sound effects.
-     * @param type The sound type to affect.
-     * @param mute Whether to mute (<code>true</code>) or unmute
-     * (<code>false</code>).
+     * Mutes or unmutes sound effects.
+     * @param type the sound type to affect
+     * @param mute whether to mute (<code>true</code>) or unmute
+     * (<code>false</code>)
      */
     private void mute(@NotNull final Sounds type, final boolean mute) {
         if (mute) {
@@ -190,25 +206,25 @@ public class SoundManager {
     }
 
     /**
-     * Play a background music. If the new music name is unchanged, continue
+     * Plays a background music. If the new music name is unchanged, continue
      * playing.
-     * @param name The music name.
+     * @param name the music name
      */
     public void playMusic(@Nullable final String name) {
         musicManager.play(name);
     }
 
     /**
-     * Mute or unmute background music.
-     * @param muted Whether to mute (<code>true</code>) or unmute
-     * (<code>false</code>).
+     * Mutes or unmutes background music.
+     * @param muted whether to mute (<code>true</code>) or unmute
+     * (<code>false</code>)
      */
     private void muteMusic(final boolean muted) {
         musicManager.setMuted(muted);
     }
 
     /**
-     * Terminate all sounds and free resources.
+     * Terminates all sounds and free resources.
      */
     public void shutdown() {
         if (debugSound != null) {

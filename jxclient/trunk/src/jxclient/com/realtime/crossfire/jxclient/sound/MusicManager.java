@@ -79,9 +79,9 @@ public class MusicManager {
     }
 
     /**
-     * Play the given music. If the new music name is unchanged, continue
+     * Plays the given music. If the new music name is unchanged, continue
      * playing.
-     * @param name The music name, or <code>null</code> to stop playing music.
+     * @param name the music name, or <code>null</code> to stop playing music
      */
     public void play(@Nullable final String name) {
         if (this.name == null ? name == null : this.name.equals(name)) {
@@ -96,8 +96,8 @@ public class MusicManager {
     }
 
     /**
-     * Set whether background music is enabled.
-     * @param enabled Whether background music is enabled.
+     * Sets whether background music is enabled.
+     * @param enabled whether background music is enabled
      */
     public void setEnabled(final boolean enabled) {
         if (this.enabled == enabled) {
@@ -112,8 +112,8 @@ public class MusicManager {
     }
 
     /**
-     * Set whether background music is muted.
-     * @param muted Whether background music is muted.
+     * Sets whether background music is muted.
+     * @param muted whether background music is muted
      */
     public void setMuted(final boolean muted) {
         if (this.muted == muted) {
@@ -128,7 +128,7 @@ public class MusicManager {
     }
 
     /**
-     * Restart the current music. Take into account {@link #enabled} and {@link
+     * Restarts the current music. Take into account {@link #enabled} and {@link
      * #muted} settings.
      */
     private void restart() {
@@ -145,7 +145,7 @@ public class MusicManager {
     }
 
     /**
-     * Terminate a playing background music and free resources.
+     * Terminates a playing background music and free resources.
      */
     public void shutdown() {
         if (processor != null) {

@@ -75,53 +75,71 @@ public class StatsWatcher {
      */
     @NotNull
     private final StatsListener statsListener = new StatsListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void reset() {
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void statChanged(final int statNo, final int value) {
             checkStats(statNo, value);
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void titleChanged(@NotNull final String title) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void rangeChanged(@NotNull final String range) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void activeSkillChanged(@NotNull final String activeSkill) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void experienceChanged(final long exp) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void experienceNextLevelChanged(final long expNextLevel) {
             // ignore
         }
+
     };
 
     /**
@@ -129,12 +147,16 @@ public class StatsWatcher {
      */
     @NotNull
     private final RendererGuiStateListener rendererGuiStateListener = new RendererGuiStateListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void guiStateChanged(@NotNull final RendererGuiState rendererGuiState) {
             active = rendererGuiState == RendererGuiState.PLAYING;
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
+
     };
 
     /**
@@ -187,8 +209,8 @@ public class StatsWatcher {
 
     /**
      * Creates a new instance.
-     * @param stats The stats instance to watch.
-     * @param windowRenderer The window renderer instance.
+     * @param stats the stats instance to watch
+     * @param windowRenderer the window renderer instance
      * @param server the crossfire server connection to watch
      * @param soundManager the sound manager instance to watch
      */
@@ -203,7 +225,7 @@ public class StatsWatcher {
     }
 
     /**
-     * Check for changed stats and generate sound effects.
+     * Checks for changed stats and generate sound effects.
      * @param statNo the changed stat number
      * @param value the new stat value
      */
@@ -231,8 +253,8 @@ public class StatsWatcher {
     }
 
     /**
-     * Play a clip if sounds should be generated.
-     * @param clip The sound clip to play.
+     * Plays a clip if sounds should be generated.
+     * @param clip the sound clip to play
      */
     private void playClip(@NotNull final String clip) {
         if (active) {
