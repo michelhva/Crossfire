@@ -145,6 +145,11 @@ public class KeyBindings {
         keybindings.remove(keyBinding);
         keybindings.add(keyBinding);
         modified = true;
+        try {
+            saveKeyBindings();
+        } catch (final IOException ex) {
+            System.err.println("Cannot write keybindings file "+file+": "+ex.getMessage());
+        }
     }
 
     /**
@@ -172,6 +177,11 @@ public class KeyBindings {
         if (keyBinding != null) {
             keybindings.remove(keyBinding);
             modified = true;
+            try {
+                saveKeyBindings();
+            } catch (final IOException ex) {
+                System.err.println("Cannot write keybindings file "+file+": "+ex.getMessage());
+            }
         }
     }
 
