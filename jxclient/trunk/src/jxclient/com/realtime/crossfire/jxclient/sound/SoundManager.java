@@ -144,8 +144,9 @@ public class SoundManager {
      * <code>null</code> to not log
      */
     public SoundManager(@NotNull final GuiStateManager guiStateManager, @Nullable final DebugWriter debugSound) {
-        clipManager = new ClipManager(debugSound);
-        musicManager = new MusicManager(debugSound);
+        final AudioFileLoader audioFileLoader = new AudioFileLoader(debugSound);
+        clipManager = new ClipManager(audioFileLoader, debugSound);
+        musicManager = new MusicManager(audioFileLoader, debugSound);
         this.debugSound = debugSound;
         guiStateManager.addGuiStateListener(guiStateListener);
     }

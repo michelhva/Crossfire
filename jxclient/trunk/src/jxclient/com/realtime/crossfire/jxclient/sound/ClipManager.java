@@ -49,11 +49,12 @@ public class ClipManager {
 
     /**
      * Creates a new instance.
+     * @param audioFileLoader the audio file loader for loading audio files
      * @param debugSound the writer for logging sound related information or
      * <code>null</code> to not log
      */
-    public ClipManager(@Nullable final DebugWriter debugSound) {
-        clipCache = new ClipCache(debugSound);
+    public ClipManager(@NotNull final AudioFileLoader audioFileLoader, @Nullable final DebugWriter debugSound) {
+        clipCache = new ClipCache(audioFileLoader, debugSound);
     }
 
     /**

@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.util.DebugWriter;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -30,6 +31,12 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class MusicManager {
+
+    /**
+     * The {@link AudioFileLoader} for loading audio files.
+     */
+    @NotNull
+    private final AudioFileLoader audioFileLoader;
 
     /**
      * The writer for logging sound related information or <code>null</code> to
@@ -71,10 +78,12 @@ public class MusicManager {
 
     /**
      * Creates a new instance.
+     * @param audioFileLoader the audio file loader for loading audio files
      * @param debugSound the writer for logging sound related information or
      * <code>null</code> to not log
      */
-    public MusicManager(@Nullable final DebugWriter debugSound) {
+    public MusicManager(@NotNull final AudioFileLoader audioFileLoader, @Nullable final DebugWriter debugSound) {
+        this.audioFileLoader = audioFileLoader;
         this.debugSound = debugSound;
     }
 
@@ -138,7 +147,7 @@ public class MusicManager {
         }
 
         if (enabled && !muted && name != null) {
-            processor = new Processor(name);
+            processor = new Processor(name, audioFileLoader);
             thread = new Thread(processor);
             thread.start();
         }

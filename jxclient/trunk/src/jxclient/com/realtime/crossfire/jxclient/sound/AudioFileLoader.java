@@ -21,21 +21,32 @@
 
 package com.realtime.crossfire.jxclient.sound;
 
+import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Utility class to locate audio files.
+ * Locates audio files.
  * @author Andreas Kirschbaum
  */
 public class AudioFileLoader {
 
     /**
-     * Private constructor to prevent instantiation.
+     * The writer for logging sound related information or <code>null</code> to
+     * not log.
      */
-    private AudioFileLoader() {
+    @Nullable
+    private final DebugWriter debugSound;
+
+    /**
+     * Private constructor to prevent instantiation.
+     * @param debugSound the writer for logging sound related information or
+     * <code>null</code> to not log
+     */
+    public AudioFileLoader(@Nullable final DebugWriter debugSound) {
+        this.debugSound = debugSound;
     }
 
     /**
@@ -47,7 +58,7 @@ public class AudioFileLoader {
      * @throws IOException if the file cannot be located
      */
     @NotNull
-    public static InputStream getInputStream(@Nullable final String name, @NotNull final String action) throws IOException {
+    public InputStream getInputStream(@Nullable final String name, @NotNull final String action) throws IOException {
         @Nullable final IOException savedException;
         if (name != null) {
             try {
@@ -73,12 +84,18 @@ public class AudioFileLoader {
      * @throws IOException if the file cannot be located
      */
     @NotNull
-    private static InputStream getResource(@NotNull final String name) throws IOException {
+    private InputStream getResource(@NotNull final String name) throws IOException {
         final String resource = "resource/sounds/"+name+".wav";
 
         final InputStream inputStream = AudioFileLoader.class.getClassLoader().getResourceAsStream(resource);
         if (inputStream != null) {
+            if (debugSound != null) {
+                debugSound.debugProtocolWrite("resource: ["+resource+"] found");
+            }
             return inputStream;
+        }
+        if (debugSound != null) {
+            debugSound.debugProtocolWrite("resource: ["+resource+"] not found");
         }
 
         throw new IOException("resource "+resource+" does not exist");
