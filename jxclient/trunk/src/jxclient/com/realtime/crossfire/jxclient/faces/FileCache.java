@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
-import com.realtime.crossfire.jxclient.util.Filenames;
+import com.realtime.crossfire.jxclient.util.FilenameUtils;
 import com.realtime.crossfire.jxclient.util.Images;
 import java.io.File;
 import java.io.FileInputStream;
@@ -118,7 +118,7 @@ public class FileCache implements ImageCache {
      */
     @NotNull
     private File getImageFileName(@NotNull final String faceName, final int faceChecksum) {
-        final String quotedFaceName = Filenames.quoteName(faceName);
+        final String quotedFaceName = FilenameUtils.quoteName(faceName);
         final String dirName = quotedFaceName.substring(0, Math.min(2, quotedFaceName.length()));
         final File dir = new File(new File(cacheDir, dirName), quotedFaceName);
         if (!dir.exists() && !dir.mkdirs()) {

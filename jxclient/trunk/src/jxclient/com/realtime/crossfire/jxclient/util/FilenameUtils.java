@@ -28,7 +28,7 @@ import org.jetbrains.annotations.NotNull;
  * Utility class for manipulating filenames.
  * @author Andreas Kirschbaum
  */
-public class Filenames {
+public class FilenameUtils {
 
     /**
      * Replaces "unsafe" characters in file names (see {@link
@@ -47,7 +47,7 @@ public class Filenames {
     /**
      * Private constructor to prevent instantiation.
      */
-    private Filenames() {
+    private FilenameUtils() {
     }
 
     /**
