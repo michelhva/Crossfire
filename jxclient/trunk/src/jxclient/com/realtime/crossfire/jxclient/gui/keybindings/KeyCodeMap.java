@@ -46,7 +46,7 @@ public class KeyCodeMap {
     private final Map<Integer, String> keyNames = new HashMap<Integer, String>();
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      */
     public KeyCodeMap() {
         for (final Field field : KeyEvent.class.getDeclaredFields()) {
@@ -74,10 +74,10 @@ public class KeyCodeMap {
     }
 
     /**
-     * Return the key code for a key name.
-     * @param keyName The key name to convert.
-     * @return The key code.
-     * @throws NoSuchKeyCodeException If the key name is invalid.
+     * Returns the key code for a key name.
+     * @param keyName the key name to convert
+     * @return the key code
+     * @throws NoSuchKeyCodeException if the key name is invalid
      */
     public int getKeyCode(@NotNull final String keyName) throws NoSuchKeyCodeException {
         if (keyCodes.containsKey(keyName)) {
@@ -94,9 +94,9 @@ public class KeyCodeMap {
     }
 
     /**
-     * Return the key name for a key code.
-     * @param keyCode The key code to convert.
-     * @return The key name.
+     * Returns the key name for a key code.
+     * @param keyCode the key code to convert
+     * @return the key name
      */
     @NotNull
     public String getKeyName(final int keyCode) {

@@ -71,13 +71,18 @@ public class StatGaugeUpdater extends GaugeUpdater {
      */
     @NotNull
     private final StatsListener statsListener = new StatsListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void reset() {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void statChanged(final int statNo, final int value) {
             switch (stat) {
@@ -133,31 +138,41 @@ public class StatGaugeUpdater extends GaugeUpdater {
             }
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void titleChanged(@NotNull final String title) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void rangeChanged(@NotNull final String range) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void activeSkillChanged(@NotNull final String activeSkill) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void experienceChanged(final long exp) {
             if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL) {
@@ -165,13 +180,16 @@ public class StatGaugeUpdater extends GaugeUpdater {
             }
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void experienceNextLevelChanged(final long expNextLevel) {
             if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL) {
                 updateExperienceNextLevel();
             }
         }
+
     };
 
     /**
@@ -231,9 +249,9 @@ public class StatGaugeUpdater extends GaugeUpdater {
     };
 
     /**
-     * Create a new instance.
-     * @param experienceTable The experience table to query.
-     * @param stat The stat value to monitor.
+     * Creates a new instance.
+     * @param experienceTable the experience table to query
+     * @param stat the stat value to monitor
      * @param stats the instance to watch
      * @param itemSet the item set to watch
      */

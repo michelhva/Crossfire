@@ -68,8 +68,8 @@ public class MouseTracker implements MouseInputListener {
     }
 
     /**
-     * Return the gui element in which the mouse is.
-     * @return The gui element in which the mouse is.
+     * Returns the gui element in which the mouse is.
+     * @return the gui element in which the mouse is
      */
     @Nullable
     public Component getMouseElement() {
@@ -158,9 +158,9 @@ public class MouseTracker implements MouseInputListener {
     }
 
     /**
-     * Set a new {@link #mouseElement} and generate entered/exited events.
-     * @param element The new element; it may be <code>null</code>.
-     * @param e The event parameter.
+     * Sets a new {@link #mouseElement} and generate entered/exited events.
+     * @param element the new element; it may be <code>null</code>
+     * @param e the event parameter
      */
     private void enterElement(@Nullable final GUIElement element, @NotNull final MouseEvent e) {
         if (mouseElement == element) {

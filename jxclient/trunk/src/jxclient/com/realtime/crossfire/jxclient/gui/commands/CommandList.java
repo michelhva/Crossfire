@@ -44,16 +44,16 @@ public class CommandList {
     private final Collection<GUICommand> commandList = new ArrayList<GUICommand>();
 
     /**
-     * Create a new instance as an empty command list.
-     * @param commandListType The command list type.
+     * Creates a new instance as an empty command list.
+     * @param commandListType the command list type
      */
     public CommandList(@NotNull final CommandListType commandListType) {
         this.commandListType = commandListType;
     }
 
     /**
-     * Add a command to the end of this command list.
-     * @param guiCommand The command to add.
+     * Adds a command to the end of this command list.
+     * @param guiCommand the command to add
      */
     public void add(@NotNull final GUICommand guiCommand) {
         commandList.add(guiCommand);
@@ -105,8 +105,8 @@ public class CommandList {
     }
 
     /**
-     * Return the commands as a string.
-     * @return The commands as a string.
+     * Returns the commands as a string.
+     * @return the commands as a string
      */
     @NotNull
     public String getCommandString() {

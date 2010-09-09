@@ -80,9 +80,9 @@ public class RenderState {
     private boolean mustRepaint = true;
 
     /**
-     * The the viewable height in pixel.
-     * @param buffer The displayed buffer.
-     * @param h The viewable height.
+     * Sets the the viewable height in pixel.
+     * @param buffer the displayed buffer
+     * @param h the viewable height
      */
     public void setHeight(@NotNull final Buffer buffer, final int h) {
         synchronized (sync) {
@@ -104,7 +104,7 @@ public class RenderState {
 
     /**
      * Some lines have been added to the buffer.
-     * @param buffer The displayed buffer.
+     * @param buffer the displayed buffer
      */
     public void linesAdded(@NotNull final Buffer buffer) {
         synchronized (sync) {
@@ -121,7 +121,7 @@ public class RenderState {
 
     /**
      * Some lines have been replaced at the end of the buffer.
-     * @param buffer The displayed buffer.
+     * @param buffer the displayed buffer
      */
     public void linesReplaced(@NotNull final Buffer buffer) {
         synchronized (sync) {
@@ -136,8 +136,8 @@ public class RenderState {
 
     /**
      * Some lines have been removed from the buffer.
-     * @param buffer The displayed buffer.
-     * @param lines The number of lines that have been remove.
+     * @param buffer the displayed buffer
+     * @param lines the number of lines that have been remove
      */
     public void linesRemoved(@NotNull final Buffer buffer, @NotNull final Collection<Line> lines) {
         synchronized (sync) {
@@ -169,8 +169,8 @@ public class RenderState {
     }
 
     /**
-     * Return the index of the first line to display.
-     * @return The line index.
+     * Returns the index of the first line to display.
+     * @return the line index
      */
     public int getTopIndex() {
         synchronized (sync) {
@@ -179,8 +179,8 @@ public class RenderState {
     }
 
     /**
-     * The number of pixels to shift the first displayed line.
-     * @return The pixel offset.
+     * Returns the number of pixels to shift the first displayed line.
+     * @return the pixel offset
      */
     public int getTopOffset() {
         synchronized (sync) {
@@ -189,8 +189,8 @@ public class RenderState {
     }
 
     /**
-     * The location of the view area in pixels.
-     * @return The location.
+     * Returns the location of the view area in pixels.
+     * @return the location
      */
     public int getScrollPos() {
         synchronized (sync) {
@@ -199,8 +199,8 @@ public class RenderState {
     }
 
     /**
-     * Whether scrolling up is possible.
-     * @return Whether scrolling up is possible.
+     * Returns whether scrolling up is possible.
+     * @return whether scrolling up is possible
      */
     public boolean canScrollUp() {
         synchronized (sync) {
@@ -209,8 +209,8 @@ public class RenderState {
     }
 
     /**
-     * Whether scrolling down is possible.
-     * @return Whether scrolling down is possible.
+     * Returns whether scrolling down is possible.
+     * @return whether scrolling down is possible
      */
     public boolean canScrollDown() {
         synchronized (sync) {
@@ -219,11 +219,11 @@ public class RenderState {
     }
 
     /**
-     * Return whether the view should be repainted even if no other values have
+     * Returns whether the view should be repainted even if no other values have
      * changed. This function resets the flag; calling the function twice
      * returns <code>false</code> in the second call (if no other changes happen
      * concurrently).
-     * @return Whether the view should be repainted.
+     * @return whether the view should be repainted
      */
     public boolean mustRepaint() {
         synchronized (sync) {
@@ -234,9 +234,9 @@ public class RenderState {
     }
 
     /**
-     * Scroll to the given pixel location.
-     * @param buffer The displayed buffer.
-     * @param y The new location.
+     * Scrolls to the given pixel location.
+     * @param buffer the displayed buffer
+     * @param y the new location
      */
     public void scrollTo(@NotNull final Buffer buffer, final int y) {
         synchronized (sync) {
@@ -264,8 +264,8 @@ public class RenderState {
     }
 
     /**
-     * Set the view area to the bottom-most value.
-     * @param buffer The displayed buffer.
+     * Sets the view area to the bottom-most value.
+     * @param buffer the displayed buffer
      */
     public void scrollToBottom(@NotNull final Buffer buffer) {
         synchronized (sync) {

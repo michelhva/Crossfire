@@ -78,7 +78,7 @@ public class Commands {
     }
 
     /**
-     * Execute a command or a list of commands. The commands may be a client- or
+     * Executes a command or a list of commands. The commands may be a client- or
      * a server-sided command.
      * @param commands the commands to execute
      */
@@ -97,11 +97,11 @@ public class Commands {
     }
 
     /**
-     * Execute a client-side command.
-     * @param command The command.
-     * @param commandList The command and all remaining commands of the command
-     * list.
-     * @return <code>true</code> if all remaining commands have been consumed.
+     * Executes a client-side command.
+     * @param command the command
+     * @param commandList the command and all remaining commands of the command
+     * list
+     * @return <code>true</code> if all remaining commands have been consumed
      */
     private boolean execute(@NotNull final String command, @NotNull final String commandList) {
         if (command.length() <= 0) {

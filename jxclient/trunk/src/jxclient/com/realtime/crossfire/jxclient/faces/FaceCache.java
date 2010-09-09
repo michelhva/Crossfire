@@ -43,7 +43,10 @@ public class FaceCache {
      */
     @NotNull
     private final CrossfireFaceListener crossfireFaceListener = new CrossfireFaceListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void faceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, @NotNull final String faceName) {
             // XXX: ignores faceSetNum
@@ -52,6 +55,7 @@ public class FaceCache {
             }
             faces[faceNum] = new Face(faceNum, faceName, faceChecksum);
         }
+
     };
 
     /**
@@ -71,16 +75,16 @@ public class FaceCache {
     }
 
     /**
-     * Add a new face to the cache.
-     * @param face The face to add.
+     * Adds a new face to the cache.
+     * @param face the face to add
      */
     public void addFace(@NotNull final Face face) {
         faces[face.getFaceNum()] = face;
     }
 
     /**
-     * Return a face by face id.
-     * @param faceNum The face id to look up.
+     * Returns a face by face id.
+     * @param faceNum the face id to look up
      * @return the face
      */
     @NotNull

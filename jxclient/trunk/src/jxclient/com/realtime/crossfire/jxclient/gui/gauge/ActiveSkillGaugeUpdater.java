@@ -49,59 +49,77 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater {
      */
     @NotNull
     private final StatsListener statsListener = new StatsListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void reset() {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void statChanged(final int statNo, final int value) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void titleChanged(@NotNull final String title) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void rangeChanged(@NotNull final String range) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void activeSkillChanged(@NotNull final String activeSkill) {
             setValues(activeSkill.equals(skill) ? 1 : 0, 0, 1);
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void experienceChanged(final long exp) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void experienceNextLevelChanged(final long expNextLevel) {
             // ignore
         }
+
     };
 
     /**
-     * Create a new instance.
-     * @param experienceTable The experience table to query.
-     * @param skill The skill name to monitor.
+     * Creates a new instance.
+     * @param experienceTable the experience table to query
+     * @param skill the skill name to monitor
      * @param stats the instance to watch
      */
     public ActiveSkillGaugeUpdater(@NotNull final ExperienceTable experienceTable, @NotNull final String skill, @NotNull final Stats stats) {

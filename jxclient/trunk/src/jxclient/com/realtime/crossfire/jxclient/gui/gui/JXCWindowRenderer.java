@@ -232,11 +232,15 @@ public class JXCWindowRenderer {
      */
     @NotNull
     private final GuiAutoCloseListener guiAutoCloseListener = new GuiAutoCloseListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void autoClosed(@NotNull final Gui gui) {
             closeDialog(gui);
         }
+
     };
 
     /**
@@ -244,62 +248,83 @@ public class JXCWindowRenderer {
      */
     @NotNull
     private final CrossfireUpdateMapListener crossfireUpdateMapListener = new CrossfireUpdateMapListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void newMap(final int mapWidth, final int mapHeight) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapBegin() {
             inhibitPaintMapUpdate = true;
             skippedPaint = false;
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapClear(final int x, final int y) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapDarkness(final int x, final int y, final int darkness) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapFace(final int x, final int y, final int layer, final int faceNum) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapAnimationSpeed(final int x, final int y, final int layer, final int animSpeed) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void scroll(final int dx, final int dy) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapMagicMap(final int x, final int y, final int color) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void mapEnd() {
             if (skippedPaint) {
@@ -308,11 +333,14 @@ public class JXCWindowRenderer {
             inhibitPaintMapUpdate = false;
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void addAnimation(final int animation, final int flags, @NotNull final int[] faces) {
             // ignore
         }
+
     };
 
     /**
@@ -320,11 +348,15 @@ public class JXCWindowRenderer {
      */
     @NotNull
     private final ActionListener actionListener = new ActionListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void actionPerformed(final ActionEvent e) {
             redrawGUI();
         }
+
     };
 
     /**
@@ -367,7 +399,7 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Repaint the window.
+     * Repaints the window.
      */
     public void repaint() {
         forcePaint = true;
@@ -745,12 +777,12 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Open a dialog. Raises an already opened dialog.
-     * @param dialog The dialog to show.
+     * Opens a dialog. Raises an already opened dialog.
+     * @param dialog the dialog to show
      * @param autoCloseOnDeactivate whether the dialog should auto-close when it
      * becomes inactive; ignored if the dialog is already open
-     * @return Whether the dialog was opened or raised; <code>false</code> if
-     *         the dialog already was opened as the topmost dialog.
+     * @return whether the dialog was opened or raised; <code>false</code> if
+     *         the dialog already was opened as the topmost dialog
      */
     public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
         if (dialog == currentGui) {
@@ -772,8 +804,8 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Raise an already opened dialog.
-     * @param dialog The dialog to show.
+     * Raises an already opened dialog.
+     * @param dialog the dialog to show
      */
     public void raiseDialog(@NotNull final Gui dialog) {
         if (dialog == currentGui) {
@@ -796,18 +828,18 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Return whether a given dialog is currently visible.
-     * @param dialog The dialog to check.
-     * @return Whether the dialog is visible.
+     * Returns whether a given dialog is currently visible.
+     * @param dialog the dialog to check
+     * @return whether the dialog is visible
      */
     public boolean isDialogOpen(@NotNull final Gui dialog) {
         return openDialogs.contains(dialog);
     }
 
     /**
-     * Return all open dialogs in reverse painting order; the first element is
+     * Returns all open dialogs in reverse painting order; the first element is
      * the top-most dialog.
-     * @return The open dialogs; client code must not modify this list.
+     * @return the open dialogs; client code must not modify this list
      */
     @NotNull
     public Iterable<Gui> getOpenDialogs() {
@@ -835,7 +867,7 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Check whether any gui element has changed and needs a redraw.
+     * Checks whether any gui element has changed and needs a redraw.
      * @return whether any gui element has changed
      */
     private boolean needRedraw() {
@@ -861,24 +893,24 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Return the x-offset of the visible window.
-     * @return The x-offset of the visible window.
+     * Returns the x-offset of the visible window.
+     * @return the x-offset of the visible window
      */
     public int getOffsetX() {
         return offsetX;
     }
 
     /**
-     * Return the y-offset of the visible window.
-     * @return The y-offset of the visible window.
+     * Returns the y-offset of the visible window.
+     * @return the y-offset of the visible window
      */
     public int getOffsetY() {
         return offsetY;
     }
 
     /**
-     * Close a dialog. Does nothing if the given dialog is not open.
-     * @param dialog The dialog to close.
+     * Closes a dialog. Does nothing if the given dialog is not open.
+     * @param dialog the dialog to close
      */
     public void closeDialog(@NotNull final Gui dialog) {
         if (openDialogsRemove(dialog)) {
@@ -892,9 +924,9 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Toggle a dialog: if the dialog is not shown, show it; else hide it.
-     * @param dialog The dialog to toggle.
-     * @return Whether the dialog is shown.
+     * Toggles a dialog: if the dialog is not shown, show it; else hide it.
+     * @param dialog the dialog to toggle
+     * @return whether the dialog is shown
      */
     public boolean toggleDialog(@NotNull final Gui dialog) {
         if (dialog == currentGui) {
@@ -919,17 +951,17 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Set the tooltip to use, or <code>null</code> if no tooltips should be
+     * Sets the tooltip to use, or <code>null</code> if no tooltips should be
      * shown.
-     * @param tooltip The tooltip to use, or <code>null</code>.
+     * @param tooltip the tooltip to use, or <code>null</code>
      */
     public void setTooltip(@Nullable final GUIElement tooltip) {
         this.tooltip = tooltip;
     }
 
     /**
-     * Set the current gui state.
-     * @param rendererGuiState The gui state.
+     * Sets the current gui state.
+     * @param rendererGuiState the gui state
      */
     public void setGuiState(@NotNull final RendererGuiState rendererGuiState) {
         if (this.rendererGuiState == rendererGuiState) {
@@ -944,8 +976,8 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Return the current gui state.
-     * @return The gui state.
+     * Returns the current gui state.
+     * @return the gui state
      */
     @NotNull
     public RendererGuiState getGuiState() {
@@ -953,9 +985,9 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Add a gui state listener to be notified about {@link #rendererGuiState}
+     * Adds a gui state listener to be notified about {@link #rendererGuiState}
      * changes.
-     * @param listener The listener to add.
+     * @param listener the listener to add
      */
     public void addGuiStateListener(@NotNull final RendererGuiStateListener listener) {
         rendererGuiStateListeners.add(listener);
@@ -1136,11 +1168,11 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Find the gui element for a given {@link MouseEvent}. If a gui element was
-     * found, update the event mouse coordinates to be relative to the gui
+     * Finds the gui element for a given {@link MouseEvent}. If a gui element
+     * was found, update the event mouse coordinates to be relative to the gui
      * element.
-     * @param e The mouse event to process.
-     * @return The gui element found, or <code>null</code> if none was found.
+     * @param e the mouse event to process
+     * @return the gui element found, or <code>null</code> if none was found
      */
     @Nullable
     public GUIElement findElement(@NotNull final MouseEvent e) {

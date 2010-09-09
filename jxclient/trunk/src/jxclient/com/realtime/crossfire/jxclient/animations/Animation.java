@@ -42,9 +42,9 @@ public class Animation {
     private final int[] faces;
 
     /**
-     * Create a new instance.
-     * @param flags Flags for the animation; currently unused.
-     * @param faces The faces list of the animation.
+     * Creates a new instance.
+     * @param flags flags for the animation; currently unused
+     * @param faces the faces list of the animation
      */
     public Animation(final int flags, @NotNull final int[] faces) {
         assert faces.length > 0;
@@ -55,17 +55,17 @@ public class Animation {
     }
 
     /**
-     * Return the number of faces of this animation.
-     * @return The number of faces.
+     * Returns the number of faces of this animation.
+     * @return the number of faces
      */
     public int getFaces() {
         return faces.length;
     }
 
     /**
-     * Return one face of this animation.
-     * @param index The face index.
-     * @return The face.
+     * Returns one face of this animation.
+     * @param index the face index
+     * @return the face
      */
     public int getFace(final int index) {
         return faces[index];

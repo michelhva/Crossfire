@@ -35,8 +35,8 @@ public class InvalidKeyBindingException extends Exception {
     private static final long serialVersionUID = 1;
 
     /**
-     * Create a new instance.
-     * @param reason The error reason.
+     * Creates a new instance.
+     * @param reason the error reason
      */
     public InvalidKeyBindingException(@NotNull final String reason) {
         super(reason);

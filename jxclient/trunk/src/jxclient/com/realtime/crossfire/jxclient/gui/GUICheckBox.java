@@ -89,25 +89,29 @@ public class GUICheckBox extends ActivatableGUIElement {
      */
     @NotNull
     private final OptionListener optionListener = new OptionListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void stateChanged() {
             setChanged();
         }
+
     };
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
+     * @param name the name of this element
      * @param extent the extent of this element
-     * @param checkedImage The image for the checked state.
-     * @param uncheckedImage The image for the unchecked state.
-     * @param font The font to use.
-     * @param color The text color.
-     * @param option The option to display.
-     * @param text The text to display.
+     * @param checkedImage the image for the checked state
+     * @param uncheckedImage the image for the unchecked state
+     * @param font the font to use
+     * @param color the text color
+     * @param option the option to display
+     * @param text the text to display
      */
     public GUICheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage checkedImage, @NotNull final BufferedImage uncheckedImage, @NotNull final Font font, @NotNull final Color color, @NotNull final CheckBoxOption option, @NotNull final String text) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);

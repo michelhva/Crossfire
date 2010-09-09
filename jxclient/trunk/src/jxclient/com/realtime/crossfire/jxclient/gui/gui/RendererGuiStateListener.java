@@ -31,7 +31,7 @@ public interface RendererGuiStateListener {
 
     /**
      * The gui state has changed.
-     * @param rendererGuiState The new guiState.
+     * @param rendererGuiState the new guiState
      */
     void guiStateChanged(@NotNull RendererGuiState rendererGuiState);
 

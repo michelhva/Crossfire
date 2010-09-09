@@ -42,12 +42,12 @@ public class KeyCodeKeyBinding extends KeyBinding {
     private final int modifiers;
 
     /**
-     * Create a {@link KeyBinding} that matches by key code/modifiers pair.
-     * @param keyCode The key code to match.
-     * @param modifiers The modifiers to match.
-     * @param commands The commands to associate with this binding.
-     * @param isDefault Whether the key binding is a "default" binding which
-     * should not be saved.
+     * Creates a {@link KeyBinding} that matches by key code/modifiers pair.
+     * @param keyCode the key code to match
+     * @param modifiers the modifiers to match
+     * @param commands the commands to associate with this binding
+     * @param isDefault whether the key binding is a "default" binding which
+     * should not be saved
      */
     public KeyCodeKeyBinding(final int keyCode, final int modifiers, @NotNull final CommandList commands, final boolean isDefault) {
         super(commands, isDefault);
@@ -56,16 +56,16 @@ public class KeyCodeKeyBinding extends KeyBinding {
     }
 
     /**
-     * Return the key code to match.
-     * @return The key code to match.
+     * Returns the key code to match.
+     * @return the key code to match
      */
     public int getKeyCode() {
         return keyCode;
     }
 
     /**
-     * The modifiers to match.
-     * @return The modifiers to match.
+     * Returns the modifiers to match.
+     * @return the modifiers to match
      */
     public int getModifiers() {
         return modifiers;

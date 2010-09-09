@@ -52,11 +52,11 @@ public class RawScale2x {
     private final int height;
 
     /**
-     * Create a new scaler based on some raw data. Right now it doesn't matter
+     * Creates a new scaler based on some raw data. Right now it doesn't matter
      * what order the channels in, just that its an int per pixel
-     * @param imageData The source image data.
-     * @param dataWidth The width of the source image.
-     * @param dataHeight The height of the source image.
+     * @param imageData the source image data
+     * @param dataWidth the width of the source image
+     * @param dataHeight the height of the source image
      */
     public RawScale2x(@NotNull final int[] imageData, final int dataWidth, final int dataHeight) {
         width = dataWidth;
@@ -66,32 +66,32 @@ public class RawScale2x {
     }
 
     /**
-     * Check if two pixels are different. Place holder for maybe some clever
+     * Checks if two pixels are different. Place holder for maybe some clever
      * code about tolerance checking.
-     * @param a The first pixel value.
-     * @param b The second pixel value.
-     * @return <code>true</code> if the pixels are different.
+     * @param a the first pixel value
+     * @param b the second pixel value
+     * @return <code>true</code> if the pixels are different
      */
     private static boolean different(final int a, final int b) {
         return a != b;
     }
 
     /**
-     * Set a pixel in the destination image data.
-     * @param x The x location of the pixel to set.
-     * @param y The y location of the pixel to set.
-     * @param p The value of the pixel to set.
+     * Sets a pixel in the destination image data.
+     * @param x the x location of the pixel to set
+     * @param y the y location of the pixel to set
+     * @param p the value of the pixel to set
      */
     private void setDestPixel(final int x, final int y, final int p) {
         dstImage[x+(y*width*2)] = p;
     }
 
     /**
-     * Get a pixel from the source image. This handles bonds checks and resolves
-     * to edge pixels.
-     * @param x The x location of the pixel to retrieve.
-     * @param y The y location of the pixel to retrieve.
-     * @return The pixel value at the specified location.
+     * Gets a pixel from the source image. This handles bonds checks and
+     * resolves to edge pixels.
+     * @param x the x location of the pixel to retrieve
+     * @param y the y location of the pixel to retrieve
+     * @return The pixel value at the specified location
      */
     private int getSourcePixel(final int x, final int y) {
         final int xx = Math.min(width-1, Math.max(0, x));
@@ -100,10 +100,10 @@ public class RawScale2x {
     }
 
     /**
-     * Process a specific pixel. This will generate 4 pixels in the destination
+     * Processs a specific pixel. This will generate 4 pixels in the destination
      * image based on the scale2x algorithm.
-     * @param x The x location in the source image of the pixel to process.
-     * @param y The y location in the source image of the pixel to process.
+     * @param x the x location in the source image of the pixel to process
+     * @param y the y location in the source image of the pixel to process
      */
     private void process(final int x, final int y) {
         //final int a = getSourcePixel(x-1, y-1);
@@ -138,10 +138,10 @@ public class RawScale2x {
     }
 
     /**
-     * Get the scale image data. Note this is the method that does the work so
+     * Gets the scale image data. Note this is the method that does the work so
      * it might take some time to process.
-     * @return An array of pixels 4 times the size of the input array containing
-     *         the smoothly scaled image.
+     * @return an array of pixels 4 times the size of the input array containing
+     *         the smoothly scaled image
      */
     @NotNull
     public int[] getScaledData() {

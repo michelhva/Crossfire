@@ -37,8 +37,8 @@ public class HideCommand implements GUICommand {
     private final GUIElement target;
 
     /**
-     * Creates a new instance.
-     * @param target The gui element to hide.
+     * Createss a new instance.
+     * @param target the gui element to hide
      */
     public HideCommand(@NotNull final GUIElement target) {
         this.target = target;

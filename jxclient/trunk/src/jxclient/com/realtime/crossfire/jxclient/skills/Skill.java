@@ -55,17 +55,17 @@ public class Skill {
     private int level = 0;
 
     /**
-     * Create a new instance.
-     * @param name The skill name.
+     * Creates a new instance.
+     * @param name the skill name
      */
     public Skill(@NotNull final String name) {
         this.name = name;
     }
 
     /**
-     * Update the skill attributes.
-     * @param level The new skill level.
-     * @param experience The new skill experience.
+     * Updates the skill attributes.
+     * @param level the new skill level
+     * @param experience the new skill experience
      */
     public void set(final int level, final long experience) {
         if (this.level == level && this.experience == experience) {
@@ -79,24 +79,24 @@ public class Skill {
     }
 
     /**
-     * Return the skill experience.
-     * @return The skill experience.
+     * Returns the skill experience.
+     * @return the skill experience
      */
     public long getExperience() {
         return experience;
     }
 
     /**
-     * Return the skill level.
-     * @return The skill level.
+     * Returns the skill level.
+     * @return the skill level
      */
     public int getLevel() {
         return level;
     }
 
     /**
-     * Return whether the skill is known.
-     * @return Whether the skill is known.
+     * Returns whether the skill is known.
+     * @return whether the skill is known
      */
     private boolean isKnown() {
         return experience != 0 || level != 0;
@@ -112,8 +112,8 @@ public class Skill {
     }
 
     /**
-     * Notify all listeners about changes.
-     * @param oldKnown Whether the skill was known before the update.
+     * Notifies all listeners about changes.
+     * @param oldKnown whether the skill was known before the update
      */
     private void fireEvents(final boolean oldKnown) {
         final boolean newKnown = isKnown();
@@ -129,7 +129,7 @@ public class Skill {
     }
 
     /**
-     * Notify all listeners about a gained skill.
+     * Notifies all listeners about a gained skill.
      */
     private void fireAddSkill() {
         for (final SkillListener listener : listeners) {
@@ -138,7 +138,7 @@ public class Skill {
     }
 
     /**
-     * Notify all listeners about a lost attribute.
+     * Notifies all listeners about a lost attribute.
      */
     private void fireDelSkill() {
         for (final SkillListener listener : listeners) {
@@ -147,7 +147,7 @@ public class Skill {
     }
 
     /**
-     * Notify all listeners about an updated attribute.
+     * Notifies all listeners about an updated attribute.
      */
     private void fireUpdSkill() {
         for (final SkillListener listener : listeners) {
@@ -156,16 +156,16 @@ public class Skill {
     }
 
     /**
-     * Add a listener to be notified of changes.
-     * @param listener The listener to add.
+     * Adds a listener to be notified of changes.
+     * @param listener the listener to add
      */
     public void addSkillListener(@NotNull final SkillListener listener) {
         listeners.add(listener);
     }
 
     /**
-     * Remove a listener to be notified of changes.
-     * @param listener The listener to remove.
+     * Removes a listener to be notified of changes.
+     * @param listener the listener to remove
      */
     public void removeSkillListener(@NotNull final SkillListener listener) {
         listeners.remove(listener);

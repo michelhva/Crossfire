@@ -30,14 +30,14 @@ import org.jetbrains.annotations.NotNull;
 public interface Command {
 
     /**
-     * Return whether all remaining commands should be included as arguments.
-     * @return Whether all remaining commands should be included as arguments.
+     * Returns whether all remaining commands should be included as arguments.
+     * @return whether all remaining commands should be included as arguments
      */
     boolean allArguments();
 
     /**
-     * Execute the command with the given arguments.
-     * @param args The command arguments.
+     * Executes the command with the given arguments.
+     * @param args the command arguments
      */
     void execute(@NotNull String args);
 
