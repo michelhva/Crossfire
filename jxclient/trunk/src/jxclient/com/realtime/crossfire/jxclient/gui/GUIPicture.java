@@ -55,13 +55,13 @@ public class GUIPicture extends GUIElement {
     private final float alpha;
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
+     * @param name the name of this element
      * @param extent the extent of this element
-     * @param image The picture to paint.
-     * @param alpha The transparency value.
+     * @param image the picture to paint
+     * @param alpha the transparency value
      */
     public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage image, final float alpha) {
         super(tooltipManager, elementListener, name, extent, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());

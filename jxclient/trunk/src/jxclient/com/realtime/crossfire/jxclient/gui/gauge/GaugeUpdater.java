@@ -44,8 +44,8 @@ public abstract class GaugeUpdater {
     private GUIGaugeListener gauge = null;
 
     /**
-     * Create a new instance.
-     * @param experienceTable The experience table to query.
+     * Creates a new instance.
+     * @param experienceTable the experience table to query
      */
     protected GaugeUpdater(@NotNull final ExperienceTable experienceTable) {
         this.experienceTable = experienceTable;
@@ -57,18 +57,18 @@ public abstract class GaugeUpdater {
     public abstract void dispose();
 
     /**
-     * Set the gauge to update.
-     * @param gauge The gauge.
+     * Sets the gauge to update.
+     * @param gauge the gauge
      */
     public void setGauge(@NotNull final GUIGaugeListener gauge) {
         this.gauge = gauge;
     }
 
     /**
-     * Update the gauge values.
-     * @param curValue The current value.
-     * @param minValue The minimum value.
-     * @param maxValue The maximum value.
+     * Updates the gauge values.
+     * @param curValue the current value
+     * @param minValue the minimum value
+     * @param maxValue the maximum value
      */
     protected void setValues(final int curValue, final int minValue, final int maxValue) {
         if (gauge != null) {
@@ -85,12 +85,12 @@ public abstract class GaugeUpdater {
     }
 
     /**
-     * Update the gauge values.
-     * @param curValue The current value.
-     * @param minValue The minimum value.
-     * @param maxValue The maximum value.
-     * @param labelText The text to draw on the gauge.
-     * @param tooltipText The tooltip suffix.
+     * Updates the gauge values.
+     * @param curValue the current value
+     * @param minValue the minimum value
+     * @param maxValue the maximum value
+     * @param labelText the text to draw on the gauge
+     * @param tooltipText the tooltip suffix
      */
     protected void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText) {
         if (gauge != null) {
@@ -99,20 +99,20 @@ public abstract class GaugeUpdater {
     }
 
     /**
-     * Return the experience fraction of the current level.
-     * @param level The level.
-     * @param experience The experience.
-     * @return The fraction in percents.
+     * Returns the experience fraction of the current level.
+     * @param level the level
+     * @param experience the experience
+     * @return the fraction in percents
      */
     protected int getPercentsToNextLevel(final int level, final long experience) {
         return experienceTable.getPercentsToNextLevel(level, experience);
     }
 
     /**
-     * Return the experience needed to reach next level.
-     * @param level The level.
-     * @param experience The experience.
-     * @return The needed experience.
+     * Returns the experience needed to reach next level.
+     * @param level the level
+     * @param experience the experience
+     * @return the needed experience
      */
     protected long getExperienceToNextLevel(final int level, final long experience) {
         return experienceTable.getExperienceToNextLevel(level, experience);

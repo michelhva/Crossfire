@@ -58,14 +58,14 @@ public class GUIDialogTitle extends GUIPicture {
     private Point offset = null;
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param windowRenderer the window renderer this element belongs to
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
+     * @param name the name of this element
      * @param extent the extent of this element
-     * @param image The picture to paint.
-     * @param alpha The transparency value.
+     * @param image the picture to paint
+     * @param alpha the transparency value
      */
     public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage image, final float alpha) {
         super(tooltipManager, elementListener, name, extent, image, alpha);
@@ -94,7 +94,9 @@ public class GUIDialogTitle extends GUIPicture {
         offset = new Point(gui.getX()-point.x, gui.getY()-point.y);
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
@@ -102,7 +104,9 @@ public class GUIDialogTitle extends GUIPicture {
         offset = null;
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void mouseDragged(@NotNull final MouseEvent e) {
         super.mouseDragged(e);
@@ -110,8 +114,8 @@ public class GUIDialogTitle extends GUIPicture {
     }
 
     /**
-     * Move the dialog the given point.
-     * @param e The destination point.
+     * Moves the dialog the given point.
+     * @param e the destination point
      */
     private void moveTo(@NotNull final MouseEvent e) {
         final Point tmpOffset = offset;

@@ -43,30 +43,38 @@ public class SkillGaugeUpdater extends GaugeUpdater {
      */
     @NotNull
     private final SkillListener skillListener = new SkillListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void gainedSkill() {
             changedSkill();
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void lostSkill() {
             setValues(0, 0, 0, "", "");
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void changedSkill() {
             final int percents = getPercentsToNextLevel(skill.getLevel(), skill.getExperience());
             setValues(percents, 0, 99, Integer.toString(skill.getLevel()), percents+"% "+skill.getExperience()+" (lvl "+skill.getLevel()+")");
         }
+
     };
 
     /**
-     * Create a new instance.
-     * @param experienceTable The experience table to query.
-     * @param skill The skill to monitor.
+     * Creates a new instance.
+     * @param experienceTable the experience table to query
+     * @param skill the skill to monitor
      */
     public SkillGaugeUpdater(@NotNull final ExperienceTable experienceTable, @NotNull final Skill skill) {
         super(experienceTable);

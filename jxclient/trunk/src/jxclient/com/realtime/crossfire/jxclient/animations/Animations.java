@@ -48,47 +48,63 @@ public class Animations {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void start() {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void metaserver() {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             animations.clear();
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**
@@ -103,10 +119,10 @@ public class Animations {
     }
 
     /**
-     * Define a new animation.
-     * @param animationId The animation id.
-     * @param flags Flags for the animation; currently unused.
-     * @param faces The faces list of the animation.
+     * Defines a new animation.
+     * @param animationId the animation id
+     * @param flags flags for the animation; currently unused
+     * @param faces the faces list of the animation
      */
     public void addAnimation(final int animationId, final int flags, @NotNull final int[] faces) {
         if (faces.length == 1) {
@@ -120,10 +136,10 @@ public class Animations {
     }
 
     /**
-     * Return the animation for an animation id.
-     * @param animationId The animation id.
-     * @return The animation instance, or <code>null</code> if the animation id
-     *         does not exist.
+     * Returns the animation for an animation id.
+     * @param animationId the animation id
+     * @return the animation instance, or <code>null</code> if the animation id
+     *         does not exist
      */
     @Nullable
     public Animation get(final int animationId) {

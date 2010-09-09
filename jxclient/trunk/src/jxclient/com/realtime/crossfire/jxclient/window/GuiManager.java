@@ -150,7 +150,10 @@ public class GuiManager {
      */
     @NotNull
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             if (skin == null) {
@@ -222,11 +225,14 @@ public class GuiManager {
             openDialog(dialog, false);
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void setDebugMode(final boolean printMessageTypes) {
             // ignore
         }
+
     };
 
     /**
@@ -235,7 +241,10 @@ public class GuiManager {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void start() {
             closeTransientDialogs();
@@ -244,7 +253,9 @@ public class GuiManager {
             showGUIStart();
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void metaserver() {
             closeTransientDialogs();
@@ -254,13 +265,17 @@ public class GuiManager {
             activateMetaserverGui();
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             if (skin == null) {
@@ -278,19 +293,25 @@ public class GuiManager {
             }
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             updateConnectLabel(clientSocketState, null);
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connected() {
             closeTransientDialogs();
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void connectFailed(@NotNull final String reason) {
             closeTransientDialogs();
@@ -299,6 +320,7 @@ public class GuiManager {
                 updateConnectLabel(ClientSocketState.CONNECT_FAILED, reason);
             }
         }
+
     };
 
     /**
@@ -337,7 +359,7 @@ public class GuiManager {
     }
 
     /**
-     * Display the main account dialog, to let the player login or create a new
+     * Displays the main account dialog, to let the player login or create a new
      * account.
      */
     public void manageAccount() {
@@ -361,7 +383,7 @@ public class GuiManager {
     }
 
     /**
-     * Hide all account-related windows.
+     * Hides all account-related windows.
      */
     public void hideAccountWindows() {
         closeDialogByName("account_login");
@@ -475,8 +497,8 @@ public class GuiManager {
      * @param dialog the dialog to show
      * @param autoCloseOnDeactivate whether the dialog should auto-close when it
      * becomes inactive; ignored if the dialog is already open
-     * @return Whether the dialog was opened or raised; <code>false</code> if
-     *         the dialog already was opened as the topmost dialog.
+     * @return whether the dialog was opened or raised; <code>false</code> if
+     *         the dialog already was opened as the topmost dialog
      */
     public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
         final boolean result = windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
