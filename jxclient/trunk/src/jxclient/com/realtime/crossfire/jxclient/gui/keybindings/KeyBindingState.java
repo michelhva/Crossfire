@@ -125,9 +125,13 @@ public class KeyBindingState {
         assert type != -1;
         if (commands != null) {
             if (type == 0) {
-                keyBindings.addKeyBindingAsKeyCode(keyCode, modifiers, commands, false);
+                if (keyBindings != null) {
+                    keyBindings.addKeyBindingAsKeyCode(keyCode, modifiers, commands, false);
+                }
             } else {
-                keyBindings.addKeyBindingAsKeyChar(keyChar, commands, false);
+                if (keyBindings != null) {
+                    keyBindings.addKeyBindingAsKeyChar(keyChar, commands, false);
+                }
             }
         } else {
             if (type == 0) {
