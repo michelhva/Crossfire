@@ -40,6 +40,12 @@ import org.jetbrains.annotations.Nullable;
 public class ClipCache {
 
     /**
+     * The {@link AudioFileLoader} for loading audio files.
+     */
+    @NotNull
+    private final AudioFileLoader audioFileLoader;
+
+    /**
      * The writer for logging sound related information or <code>null</code> to
      * not log.
      */
@@ -48,10 +54,12 @@ public class ClipCache {
 
     /**
      * Creates a new instance.
+     * @param audioFileLoader the audio file loader for loading audio files
      * @param debugSound the writer for logging sound related information or
      * <code>null</code> to not log
      */
-    public ClipCache(@Nullable final DebugWriter debugSound) {
+    public ClipCache(@NotNull final AudioFileLoader audioFileLoader, @Nullable final DebugWriter debugSound) {
+        this.audioFileLoader = audioFileLoader;
         this.debugSound = debugSound;
     }
 
@@ -86,7 +94,7 @@ public class ClipCache {
     @Nullable
     private DataLine newClip(@Nullable final String name, @NotNull final String action) {
         try {
-            final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(name, action));
+            final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(name, action));
             try {
                 final Clip clip = AudioSystem.getClip();
                 clip.open(audioInputStream);

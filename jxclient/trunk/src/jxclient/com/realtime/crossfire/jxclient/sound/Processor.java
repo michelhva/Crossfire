@@ -54,6 +54,12 @@ public class Processor implements Runnable {
     private final String name;
 
     /**
+     * The {@link AudioFileLoader} for loading audio files.
+     */
+    @NotNull
+    private final AudioFileLoader audioFileLoader;
+
+    /**
      * The current state: 0=fade in, 1=playing, 2=fade out, 3=terminate,
      * 4=terminate immediately.
      */
@@ -68,9 +74,11 @@ public class Processor implements Runnable {
     /**
      * Creates a new instance.
      * @param name the music name to play
+     * @param audioFileLoader the audio file loader for loading audio files
      */
-    public Processor(@NotNull final String name) {
+    public Processor(@NotNull final String name, @NotNull final AudioFileLoader audioFileLoader) {
         this.name = name;
+        this.audioFileLoader = audioFileLoader;
     }
 
     /**
@@ -88,7 +96,7 @@ public class Processor implements Runnable {
     @Override
     public void run() {
         try {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(null, name));
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(null, name));
             try {
                 final SourceDataLine sourceDataLine = AudioSystem.getSourceDataLine(audioInputStream.getFormat());
                 final AudioFormat audioFormat = sourceDataLine.getFormat();
@@ -118,7 +126,7 @@ public class Processor implements Runnable {
                         while (state < 3 && !Thread.currentThread().isInterrupted()) {
                             int len = audioInputStream.read(buf, 0, buf.length);
                             if (len == -1) {
-                                final AudioInputStream newAudioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(null, name));
+                                final AudioInputStream newAudioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(null, name));
                                 if (!newAudioInputStream.getFormat().matches(audioInputStream.getFormat())) {
                                     newAudioInputStream.close();
                                     System.err.println("music "+name+": file format has changed");
