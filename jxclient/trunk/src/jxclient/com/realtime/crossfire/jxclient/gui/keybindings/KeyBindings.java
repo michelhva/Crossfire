@@ -246,7 +246,9 @@ public class KeyBindings {
         }
 
         if (keybindings.size() <= 0) {
-            file.delete();
+            if (!file.delete()) {
+                throw new IOException("cannot delete file");
+            }
             return;
         }
 
