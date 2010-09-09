@@ -42,11 +42,15 @@ public class MusicWatcher {
      */
     @NotNull
     private final CrossfireMusicListener crossfireMusicListener = new CrossfireMusicListener() {
-        /** {@inheritDoc} */
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
         public void commandMusicReceived(@NotNull final String music) {
             soundManager.playMusic(music.equals("NONE") ? null : music);
         }
+
     };
 
     /**

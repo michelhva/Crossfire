@@ -56,10 +56,10 @@ public class ClipCache {
     }
 
     /**
-     * Allocate a new clip.
-     * @param name An optional prefix for the action name.
-     * @param action The action name of the clip to allocate.
-     * @return The new clip, or <code>null</code> if an error occurs.
+     * Allocates a new clip.
+     * @param name an optional prefix for the action name
+     * @param action the action name of the clip to allocate
+     * @return the new clip, or <code>null</code> if an error occurs
      */
     @Nullable
     public DataLine allocateClip(@Nullable final String name, @NotNull final String action) {
@@ -67,8 +67,8 @@ public class ClipCache {
     }
 
     /**
-     * Deallocate a clip.
-     * @param clip The clip to deallocate.
+     * Deallocates a clip.
+     * @param clip the clip to deallocate
      */
     public void freeClip(@NotNull final Line clip) {
         if (debugSound != null) {
@@ -78,10 +78,10 @@ public class ClipCache {
     }
 
     /**
-     * Allocate a new clip.
-     * @param name An optional prefix for the action name.
-     * @param action The action name of the clip to allocate.
-     * @return The new clip, or <code>null</code> if an error occurs.
+     * Allocates a new clip.
+     * @param name an optional prefix for the action name
+     * @param action the action name of the clip to allocate
+     * @return the new clip, or <code>null</code> if an error occurs
      */
     @Nullable
     private DataLine newClip(@Nullable final String name, @NotNull final String action) {
