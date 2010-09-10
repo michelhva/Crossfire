@@ -200,7 +200,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         synchronized (syncCursor) {
             tmp = getDisplayText();
             final RectangularShape rectangle = font.getStringBounds(tmp, fontRenderContext);
-            y = (int)Math.round((getHeight()-rectangle.getMaxY()-rectangle.getMinY()))/2;
+            y = (int)Math.round(getHeight()-rectangle.getMaxY()-rectangle.getMinY())/2;
             if (isActive()) {
                 final String tmpPrefix = tmp.substring(0, cursor-offset);
                 final String tmpCursor = tmp.substring(0, cursor-offset+1);

@@ -77,7 +77,7 @@ public class AccountCreateCommand implements GUICommand {
         final GUIText p = gui.getFirstElement(GUIText.class, "account_password");
         final GUIText c = gui.getFirstElement(GUIText.class, "account_password_confirm");
 
-        if ((l == null) || (p == null) || (c == null)) {
+        if (l == null || p == null || c == null) {
             return;
         }
 

@@ -88,7 +88,7 @@ public class StringUtils {
             } else {
                 // unquoted token
                 start = i;
-                while (i < chars.length && (chars[i] != ' ' && chars[i] != '\t')) {
+                while (i < chars.length && chars[i] != ' ' && chars[i] != '\t') {
                     i++;
                 }
                 end = i;

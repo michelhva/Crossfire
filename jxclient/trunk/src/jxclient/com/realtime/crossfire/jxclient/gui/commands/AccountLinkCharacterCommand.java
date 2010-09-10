@@ -74,7 +74,7 @@ public class AccountLinkCharacterCommand implements GUICommand {
         final GUIText l = gui.getFirstElement(GUIText.class, "character_login");
         final GUIText p = gui.getFirstElement(GUIText.class, "character_password");
 
-        if ((l == null) || (p == null)) {
+        if (l == null || p == null) {
             return;
         }
 

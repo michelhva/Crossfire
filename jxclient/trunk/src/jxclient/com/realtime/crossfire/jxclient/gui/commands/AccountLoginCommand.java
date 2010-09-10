@@ -74,7 +74,7 @@ public class AccountLoginCommand implements GUICommand {
         final GUIText l = gui.getFirstElement(GUIText.class, "account_login");
         final GUIText p = gui.getFirstElement(GUIText.class, "account_password");
 
-        if ((l == null) || (p == null)) {
+        if (l == null || p == null) {
             return;
         }
 

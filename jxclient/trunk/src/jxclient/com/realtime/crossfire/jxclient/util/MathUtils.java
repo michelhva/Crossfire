@@ -68,7 +68,7 @@ public class MathUtils {
         if (numerator >= 0) {
             return (numerator+denominator-1)/denominator;
         } else {
-            return -((-numerator)/denominator);
+            return -(-numerator/denominator);
         }
     }
 
