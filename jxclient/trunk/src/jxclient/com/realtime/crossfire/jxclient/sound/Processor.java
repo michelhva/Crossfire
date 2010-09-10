@@ -225,7 +225,7 @@ public class Processor implements Runnable {
      * @throws UnsupportedAudioFileException if the file cannot be decoded
      */
     @NotNull
-    private AudioInputStream openAudioInputStream() throws UnsupportedAudioFileException, IOException {
+    private AudioInputStream openAudioInputStream() throws IOException, UnsupportedAudioFileException {
         return AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(null, name));
     }
 
