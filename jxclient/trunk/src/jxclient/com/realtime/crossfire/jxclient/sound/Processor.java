@@ -96,7 +96,7 @@ public class Processor implements Runnable {
     @Override
     public void run() {
         try {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(null, name));
+            AudioInputStream audioInputStream = openAudioInputStream();
             try {
                 final SourceDataLine sourceDataLine = AudioSystem.getSourceDataLine(audioInputStream.getFormat());
                 final AudioFormat audioFormat = sourceDataLine.getFormat();
@@ -126,7 +126,7 @@ public class Processor implements Runnable {
                         while (state < 3 && !Thread.currentThread().isInterrupted()) {
                             int len = audioInputStream.read(buf, 0, buf.length);
                             if (len == -1) {
-                                final AudioInputStream newAudioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(null, name));
+                                final AudioInputStream newAudioInputStream = openAudioInputStream();
                                 if (!newAudioInputStream.getFormat().matches(audioInputStream.getFormat())) {
                                     newAudioInputStream.close();
                                     System.err.println("music "+name+": file format has changed");
@@ -216,6 +216,17 @@ public class Processor implements Runnable {
             buf[i] = (byte)s;
             buf[i+1] = (byte)((s+0x10000)/0x100);
         }
+    }
+
+    /**
+     * Opens and returns an audio stream for {@link #name}.
+     * @return the audio stream
+     * @throws IOException if the file cannot be opened
+     * @throws UnsupportedAudioFileException if the file cannot be decoded
+     */
+    @NotNull
+    private AudioInputStream openAudioInputStream() throws UnsupportedAudioFileException, IOException {
+        return AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(null, name));
     }
 
 }
