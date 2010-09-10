@@ -100,8 +100,8 @@ public class RawScale2x {
     }
 
     /**
-     * Processs a specific pixel. This will generate 4 pixels in the destination
-     * image based on the scale2x algorithm.
+     * Processes a specific pixel. This will generate 4 pixels in the
+     * destination image based on the scale2x algorithm.
      * @param x the x location in the source image of the pixel to process
      * @param y the y location in the source image of the pixel to process
      */

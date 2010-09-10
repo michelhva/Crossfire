@@ -111,7 +111,7 @@ public class DefaultKeyHandler implements KeyHandlerListener {
 
     /**
      * Creates a new instance.
-     * @param exiter the exter instance
+     * @param exiter the exiter instance
      * @param guiManager the gui manager instance
      * @param server the server connection to track
      * @param guiStateManager the gui state manager instance
