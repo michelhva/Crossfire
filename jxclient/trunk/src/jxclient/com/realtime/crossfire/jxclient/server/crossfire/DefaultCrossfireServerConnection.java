@@ -3601,7 +3601,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public void drawInfoSetDebugMode(boolean printMessageTypes) {
+    public void drawInfoSetDebugMode(final boolean printMessageTypes) {
         for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
             listener.setDebugMode(printMessageTypes);
         }
