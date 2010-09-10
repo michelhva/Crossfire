@@ -42,7 +42,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireTickListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateFaceListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
-import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
