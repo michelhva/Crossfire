@@ -308,7 +308,7 @@ public class Pickup {
      * has changed.
      */
     public void update() {
-        commandQueue.sendNcom(true, 1, "pickup "+((pickupMode == PU_NOTHING ? 0 : (pickupMode|PU_NEW_MODE))&0xFFFFFFFFL));
+        commandQueue.sendNcom(true, 1, "pickup "+((pickupMode == PU_NOTHING ? 0 : pickupMode|PU_NEW_MODE)&0xFFFFFFFFL));
         for (final PickupOption pickupOption : pickupOptions) {
             pickupOption.setPickupMode(pickupMode);
         }

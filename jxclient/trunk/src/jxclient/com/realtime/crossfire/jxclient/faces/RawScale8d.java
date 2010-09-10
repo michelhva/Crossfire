@@ -79,7 +79,7 @@ public class RawScale8d {
      * @param p the value of the pixel to set
      */
     private void setDestPixel(final int x, final int y, final int p) {
-        dstImage[x+(y*width/8)] = p;
+        dstImage[x+y*width/8] = p;
     }
 
     /**

@@ -83,7 +83,7 @@ public class RawScale2x {
      * @param p the value of the pixel to set
      */
     private void setDestPixel(final int x, final int y, final int p) {
-        dstImage[x+(y*width*2)] = p;
+        dstImage[x+y*width*2] = p;
     }
 
     /**
@@ -96,7 +96,7 @@ public class RawScale2x {
     private int getSourcePixel(final int x, final int y) {
         final int xx = Math.min(width-1, Math.max(0, x));
         final int yy = Math.min(height-1, Math.max(0, y));
-        return srcImage[xx+(yy*width)];
+        return srcImage[xx+yy*width];
     }
 
     /**
@@ -132,9 +132,9 @@ public class RawScale2x {
         }
 
         setDestPixel(x*2, y*2, e0);
-        setDestPixel((x*2)+1, y*2, e1);
-        setDestPixel((x*2), (y*2)+1, e2);
-        setDestPixel((x*2)+1, (y*2)+1, e3);
+        setDestPixel(x*2+1, y*2, e1);
+        setDestPixel(x*2, y*2+1, e2);
+        setDestPixel(x*2+1, y*2+1, e3);
     }
 
     /**

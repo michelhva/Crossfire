@@ -3242,7 +3242,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             }
         }
 
-        if (options.size() != 2 || (!options.get(0).equals("mapsize")) && !options.get(0).equals("num_look_objects")) {
+        if (options.size() != 2 || !options.get(0).equals("mapsize") && !options.get(0).equals("num_look_objects")) {
             setClientSocketState(ClientSocketState.SETUP, ClientSocketState.REQUESTINFO);
             sendRequestinfo("image_info");
             sendRequestinfo("skill_info");
@@ -3374,7 +3374,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             case CrossfireStatsListener.CS_STAT_APPLIED_CON:
             case CrossfireStatsListener.CS_STAT_APPLIED_CHA:
             case CrossfireStatsListener.CS_STAT_APPLIED_POW:
-                final short int2Param = (short)(getInt2(packet));
+                final short int2Param = (short)getInt2(packet);
                 if (debugProtocol != null) {
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF));
                 }
@@ -3427,7 +3427,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
             default:
                 if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat < CrossfireStatsListener.CS_STAT_RESIST_START+CrossfireStatsListener.RESIST_TYPES) {
-                    final short int2Param2 = (short)(getInt2(packet));
+                    final short int2Param2 = (short)getInt2(packet);
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param2);
                     }

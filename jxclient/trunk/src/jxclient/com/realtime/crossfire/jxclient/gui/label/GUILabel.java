@@ -114,7 +114,7 @@ public abstract class GUILabel extends AbstractLabel {
         g.setFont(textFont);
         g.setColor(getTextColor());
         final RectangularShape rectangle = textFont.getStringBounds(text, g.getFontRenderContext());
-        final int y = y0+(int)Math.round((h0-rectangle.getMaxY()-rectangle.getMinY()))/2;
+        final int y = y0+(int)Math.round(h0-rectangle.getMaxY()-rectangle.getMinY())/2;
         switch (textAlignment) {
         case LEFT:
             g.drawString(text, 0, y);
