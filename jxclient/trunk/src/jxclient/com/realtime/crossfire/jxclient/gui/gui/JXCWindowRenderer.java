@@ -1127,6 +1127,7 @@ public class JXCWindowRenderer {
 
         /**
          * {@inheritDoc}
+         * @noinspection IteratorNextCanNotThrowNoSuchElementException
          */
         @NotNull
         @Override

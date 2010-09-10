@@ -112,6 +112,7 @@ public class JXClient {
             System.exit(1);
             throw new AssertionError();
         }
+        //noinspection InstantiationOfUtilityClass
         new JXClient(options, buildNumber);
     }
 
