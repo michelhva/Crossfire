@@ -10,7 +10,7 @@ Creator: CF Java Map Editor
 Date:    6/15/2003
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-09-04 Logan Perkins
+Modified: 2010-09-11 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -3894,7 +3894,7 @@ level 120
 connected 18
 end
 arch goldfloor
-name drop 25 potions of cold resistance for an altar of Gorokh
+name drop 25 potions of fire resistance for an altar of Gorokh
 slaying potion_fire
 food 25
 x 16
@@ -3923,7 +3923,7 @@ level 120
 connected 19
 end
 arch goldfloor
-name drop 25 potions of fire resistance for an altar of Ixalovh
+name drop 25 potions of cold resistance for an altar of Ixalovh
 slaying potion_cold
 food 25
 x 16
