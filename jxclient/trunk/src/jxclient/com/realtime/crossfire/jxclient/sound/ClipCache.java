@@ -97,7 +97,11 @@ public class ClipCache {
             final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(name, action));
             try {
                 final Clip clip = AudioSystem.getClip();
-                clip.open(audioInputStream);
+                try {
+                    clip.open(audioInputStream);
+                } catch (final IllegalArgumentException ex) {
+                    throw new UnsupportedAudioFileException(ex.getMessage());
+                }
                 if (debugSound != null) {
                     debugSound.debugProtocolWrite("newClip: "+System.identityHashCode(clip)+" "+name+"/"+action);
                 }
@@ -107,17 +111,17 @@ public class ClipCache {
             }
         } catch (final UnsupportedAudioFileException ex) {
             if (debugSound != null) {
-                debugSound.debugProtocolWrite("newClip: "+ex.getMessage());
+                debugSound.debugProtocolWrite("newClip["+name+"/"+action+"]: "+ex.getMessage());
             }
             return null;
         } catch (final LineUnavailableException ex) {
             if (debugSound != null) {
-                debugSound.debugProtocolWrite("sound: "+ex.getMessage());
+                debugSound.debugProtocolWrite("newClip["+name+"/"+action+"]: "+ex.getMessage());
             }
             return null;
         } catch (final IOException ex) {
             if (debugSound != null) {
-                debugSound.debugProtocolWrite("sound: "+ex.getMessage());
+                debugSound.debugProtocolWrite("newClip["+name+"/"+action+"]: "+ex.getMessage());
             }
             return null;
         }
