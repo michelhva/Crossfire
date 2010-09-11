@@ -91,15 +91,26 @@ public class AudioFileLoader {
     private InputStream getResource(@NotNull final String name) throws IOException {
         final String resource = "resource/sounds/"+name+".wav";
 
+        @Nullable File localFile;
         try {
-            final InputStream inputStream = new FileInputStream(resource);
+            localFile = new File(resource).getCanonicalFile();
+        } catch (final IOException ex) {
             if (debugSound != null) {
-                debugSound.debugProtocolWrite("resource: ["+resource+"] found as file:"+resource);
+                debugSound.debugProtocolWrite("resource: ["+resource+"] not found as file:"+resource+" ("+ex.getMessage()+")");
             }
-            return inputStream;
-        } catch (final FileNotFoundException ignored) {
-            if (debugSound != null) {
-                debugSound.debugProtocolWrite("resource: ["+resource+"] not found as file:"+resource);
+            localFile = null;
+        }
+        if (localFile != null) {
+            try {
+                final InputStream inputStream = new FileInputStream(localFile);
+                if (debugSound != null) {
+                    debugSound.debugProtocolWrite("resource: ["+resource+"] found as file:"+localFile);
+                }
+                return inputStream;
+            } catch (final FileNotFoundException ignored) {
+                if (debugSound != null) {
+                    debugSound.debugProtocolWrite("resource: ["+resource+"] not found as file:"+localFile);
+                }
             }
         }
 
