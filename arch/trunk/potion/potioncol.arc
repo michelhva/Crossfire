@@ -7,7 +7,7 @@ level 1
 material 4
 weight 1800
 value 5800
-resist_fire 90
+resist_cold 90
 name_pl potions of cold resistance
 on_use_yield potion_empty
 client_type 651
@@ -21,7 +21,7 @@ level 1
 material 4
 weight 1800
 value 28000
-resist_fire 95
+resist_cold 95
 name_pl potions of frost resistance
 on_use_yield potion_empty
 client_type 651
