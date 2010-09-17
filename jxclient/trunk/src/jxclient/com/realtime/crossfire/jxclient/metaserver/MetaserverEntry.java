@@ -184,12 +184,13 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
     public String format(@NotNull final String format) {
         final StringBuilder sb = new StringBuilder();
         final char[] formatChars = format.toCharArray();
-        for (int i = 0; i < formatChars.length; i++) {
-            if (formatChars[i] != '%' || i+1 >= formatChars.length) {
-                sb.append(formatChars[i]);
+        int i = 0;
+        while (i < formatChars.length) {
+            final char ch = formatChars[i++];
+            if (ch != '%' || i >= formatChars.length) {
+                sb.append(ch);
             } else {
-                i++;
-                switch (formatChars[i]) {
+                switch (formatChars[i++]) {
                 case '%':
                     sb.append('%');
                     break;
@@ -244,7 +245,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
 
                 default:
                     sb.append('%');
-                    sb.append(formatChars[i]);
+                    sb.append(formatChars[i-1]);
                     break;
                 }
             }
