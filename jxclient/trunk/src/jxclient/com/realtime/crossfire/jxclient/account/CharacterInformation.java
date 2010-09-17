@@ -36,24 +36,65 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     private final String name;
 
     /**
+     * The character's class.
+     */
+    @NotNull
+    private final String characterClass;
+
+    /**
      * The character's race.
      */
     @NotNull
     private final String race;
 
     /**
+     * The character's face.
+     */
+    @NotNull
+    private final String face;
+
+    /**
+     * The character's party.
+     */
+    @NotNull
+    private final String party;
+
+    /**
+     * The character's map.
+     */
+    @NotNull
+    private final String map;
+
+    /**
      * The character's level.
      */
-    private int level;
+    private final int level;
+
+    /**
+     * The character's face number.
+     */
+    private final int faceNumber;
 
     /**
      * Creates a new instance.
      * @param name the character's name
+     * @param characterClass the character's class
      * @param race the character's race
+     * @param face the character's face
+     * @param party the character's party
+     * @param map the character's map
+     * @param level the character's level
+     * @param faceNumber the character's face number
      */
-    public CharacterInformation(@NotNull final String name, @NotNull final String race) {
+    public CharacterInformation(@NotNull final String name, @NotNull final String characterClass, @NotNull final String race, @NotNull final String face, @NotNull final String party, @NotNull final String map, final int level, final int faceNumber) {
         this.name = name;
+        this.characterClass = characterClass;
         this.race = race;
+        this.face = face;
+        this.party = party;
+        this.map = map;
+        this.level = level;
+        this.faceNumber = faceNumber;
     }
 
     /**
@@ -66,12 +107,48 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     }
 
     /**
+     * Returns the character's class.
+     * @return the class
+     */
+    @NotNull
+    public String getCharacterClass() {
+        return characterClass;
+    }
+
+    /**
      * Returns the character's race.
      * @return the race
      */
     @NotNull
     public String getRace() {
         return race;
+    }
+
+    /**
+     * Returns the character's face.
+     * @return the face
+     */
+    @NotNull
+    public String getFace() {
+        return face;
+    }
+
+    /**
+     * Returns the character's party.
+     * @return the party
+     */
+    @NotNull
+    public String getParty() {
+        return party;
+    }
+
+    /**
+     * Returns the character's map.
+     * @return the map
+     */
+    @NotNull
+    public String getMap() {
+        return map;
     }
 
     /**
@@ -83,11 +160,11 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     }
 
     /**
-     * Sets the character's level.
-     * @param level the level to set
+     * Returns the character's face number.
+     * @return the face num ber
      */
-    public void setLevel(final int level) {
-        this.level = level;
+    public int getFaceNumber() {
+        return faceNumber;
     }
 
     /**
