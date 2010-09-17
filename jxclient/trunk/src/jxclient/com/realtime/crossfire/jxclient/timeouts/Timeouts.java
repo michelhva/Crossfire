@@ -56,38 +56,38 @@ public class Timeouts {
         /** {@inheritDoc} */
         @Override
         public void run() {
-            boolean doWait = true;
-            while (!Thread.currentThread().isInterrupted()) {
-                final Event event;
-                final boolean execute;
-                synchronized (EVENTS) {
-                    if (doWait) {
-                        doWait = false;
-                        final Event tmp = EVENTS.peek();
-                        try {
+            try {
+                boolean doWait = true;
+                while (!Thread.currentThread().isInterrupted()) {
+                    final Event event;
+                    final boolean execute;
+                    synchronized (EVENTS) {
+                        if (doWait) {
+                            doWait = false;
+                            final Event tmp = EVENTS.peek();
                             if (tmp == null) {
                                 EVENTS.wait();
                             } else {
                                 //noinspection CallToNativeMethodWhileLocked
                                 EVENTS.wait(tmp.getTimeout()-System.currentTimeMillis());
                             }
-                        } catch (final InterruptedException ex) {
-                            break;
+                        }
+
+                        event = EVENTS.peek();
+                        //noinspection CallToNativeMethodWhileLocked
+                        execute = event != null && event.getTimeout() <= System.currentTimeMillis();
+                        if (execute) {
+                            EVENTS.poll();
                         }
                     }
-
-                    event = EVENTS.peek();
-                    //noinspection CallToNativeMethodWhileLocked
-                    execute = event != null && event.getTimeout() <= System.currentTimeMillis();
                     if (execute) {
-                        EVENTS.poll();
+                        event.getTimeoutEvent().timeout();
+                    } else {
+                        doWait = true;
                     }
                 }
-                if (execute) {
-                    event.getTimeoutEvent().timeout();
-                } else {
-                    doWait = true;
-                }
+            } catch (final InterruptedException ignored) {
+                Thread.currentThread().interrupt();
             }
         }
     };
