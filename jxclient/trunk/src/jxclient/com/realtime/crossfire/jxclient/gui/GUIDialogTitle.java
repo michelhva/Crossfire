@@ -72,14 +72,6 @@ public class GUIDialogTitle extends GUIPicture {
         this.windowRenderer = windowRenderer;
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void dispose() {
-        super.dispose();
-    }
-
     /* {@inheritDoc} */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {

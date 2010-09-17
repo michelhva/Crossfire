@@ -70,14 +70,6 @@ public class GUILabelLog extends GUILog {
     }
 
     /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void dispose() {
-        super.dispose();
-    }
-
-    /**
      * Sets the displayed text by parsing a string.
      * @param string the string to parse
      */

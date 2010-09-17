@@ -131,14 +131,6 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
     }
 
     /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void dispose() {
-        super.dispose();
-    }
-
-    /**
      * Validates an image's size: checks if the given image has the given size
      * (in pixels).
      * @param image the image to validate; if set to <code>null</code> no

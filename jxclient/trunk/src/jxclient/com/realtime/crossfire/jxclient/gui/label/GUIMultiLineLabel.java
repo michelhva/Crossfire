@@ -80,14 +80,6 @@ public class GUIMultiLineLabel extends GUILabel {
      * {@inheritDoc}
      */
     @Override
-    public void dispose() {
-        super.dispose();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     protected void textChanged() {
         lines = LINE_SEPARATOR_PATTERN.split(getText(), -1);
         super.textChanged();
