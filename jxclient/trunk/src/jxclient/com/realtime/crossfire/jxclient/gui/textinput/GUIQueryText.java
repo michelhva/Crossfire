@@ -65,14 +65,6 @@ public class GUIQueryText extends GUIText {
      * {@inheritDoc}
      */
     @Override
-    public void dispose() {
-        super.dispose();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     protected void execute(@NotNull final String command) {
         server.sendReply(command);
         setText("");

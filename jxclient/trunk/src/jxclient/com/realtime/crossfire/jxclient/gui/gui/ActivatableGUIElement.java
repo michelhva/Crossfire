@@ -49,14 +49,6 @@ public abstract class ActivatableGUIElement extends GUIElement {
     }
 
     /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void dispose() {
-        super.dispose();
-    }
-
-    /**
      * Sets the active state.
      * @param active the active state
      */

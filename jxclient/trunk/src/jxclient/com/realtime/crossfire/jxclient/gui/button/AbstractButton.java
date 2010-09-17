@@ -97,14 +97,6 @@ public abstract class AbstractButton extends ActivatableGUIElement {
      * {@inheritDoc}
      */
     @Override
-    public void dispose() {
-        super.dispose();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
         final int b = e.getButton();

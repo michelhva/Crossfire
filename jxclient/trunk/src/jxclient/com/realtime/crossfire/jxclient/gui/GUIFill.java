@@ -65,14 +65,6 @@ public class GUIFill extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    public void dispose() {
-        super.dispose();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     protected void render(@NotNull final Graphics2D g2) {
         g2.setBackground(color);
         g2.clearRect(0, 0, getWidth(), getHeight());

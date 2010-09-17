@@ -73,14 +73,6 @@ public class GUIPicture extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    public void dispose() {
-        super.dispose();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     protected void render(@NotNull final Graphics2D g2) {
     }
 

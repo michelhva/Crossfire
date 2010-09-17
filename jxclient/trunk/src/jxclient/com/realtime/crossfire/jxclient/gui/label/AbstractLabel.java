@@ -82,14 +82,6 @@ public abstract class AbstractLabel extends GUIElement {
     }
 
     /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void dispose() {
-        super.dispose();
-    }
-
-    /**
      * The label text.
      * @param text the text
      */
