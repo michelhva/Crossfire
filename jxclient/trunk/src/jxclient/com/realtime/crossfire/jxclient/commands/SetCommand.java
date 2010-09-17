@@ -75,7 +75,7 @@ public class SetCommand extends AbstractCommand {
         try {
             option = optionManager.getCheckBoxOption(optionName);
         } catch (final OptionException ex) {
-            drawInfoError("Unknown option '"+optionName+"'");
+            drawInfoError(ex.getMessage());
             return;
         }
 
