@@ -85,7 +85,7 @@ public class FileCache implements ImageCache {
             } finally {
                 fis.close();
             }
-        } catch (final IOException ex) {
+        } catch (final IOException ignored) {
             return null;
         }
         final ImageIcon imageIcon = new ImageIcon(data); // cannot use ImageIcon(String) since this caches "file not found"

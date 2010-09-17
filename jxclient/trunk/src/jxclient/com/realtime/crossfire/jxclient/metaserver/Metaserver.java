@@ -202,7 +202,7 @@ public class Metaserver {
             } finally {
                 conn.disconnect();
             }
-        } catch (final IOException ex) {
+        } catch (final IOException ignored) {
             // ignore (but keep already parsed entries)
         }
 

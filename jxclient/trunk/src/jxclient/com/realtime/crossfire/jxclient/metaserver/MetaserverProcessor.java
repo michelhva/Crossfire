@@ -105,7 +105,7 @@ public class MetaserverProcessor {
                         }
                     }
                 }
-            } catch (final InterruptedException ex) {
+            } catch (final InterruptedException ignored) {
                 // ignore
             }
         }
