@@ -85,7 +85,7 @@ public class OptionManager {
     public CheckBoxOption getCheckBoxOption(@NotNull final String optionName) throws OptionException {
         final Object option = options.get(optionName);
         if (option == null || !(option instanceof CheckBoxOption)) {
-            throw new OptionException("undefined option: "+optionName);
+            throw new OptionException("Unknown option '"+optionName+"'");
         }
 
         return (CheckBoxOption)option;
