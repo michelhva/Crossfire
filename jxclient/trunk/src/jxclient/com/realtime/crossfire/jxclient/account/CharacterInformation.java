@@ -32,14 +32,14 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     /**
      * The character's name.
      */
-    @Nullable
-    private String name;
+    @NotNull
+    private final String name;
 
     /**
      * The character's race.
      */
-    @Nullable
-    private String race;
+    @NotNull
+    private final String race;
 
     /**
      * The character's level.
@@ -47,37 +47,31 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     private int level;
 
     /**
-     * Returns the character's name.
-     * @return the name
+     * Creates a new instance.
+     * @param name the character's name
+     * @param race the character's race
      */
-    @Nullable
-    public String getName() {
-        return name;
+    public CharacterInformation(@NotNull final String name, @NotNull final String race) {
+        this.name = name;
+        this.race = race;
     }
 
     /**
-     * Sets the character's name.
-     * @param name the name to set
+     * Returns the character's name.
+     * @return the name
      */
-    public void setName(@NotNull final String name) {
-        this.name = name;
+    @NotNull
+    public String getName() {
+        return name;
     }
 
     /**
      * Returns the character's race.
      * @return the race
      */
-    @Nullable
+    @NotNull
     public String getRace() {
         return race;
-    }
-
-    /**
-     * Sets the character's race.
-     * @param race the race to set
-     */
-    public void setRace(@NotNull final String race) {
-        this.race = race;
     }
 
     /**

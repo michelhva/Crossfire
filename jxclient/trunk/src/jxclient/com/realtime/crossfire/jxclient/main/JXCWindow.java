@@ -361,9 +361,7 @@ public class JXCWindow {
          */
         @Override
         public void addAccount(@NotNull final String name, @NotNull final String characterClass, @NotNull final String race, @NotNull final String face, @NotNull final String party, @NotNull final String map, final int level, final int faceNumber) {
-            final CharacterInformation information = new CharacterInformation();
-            information.setName(name);
-            information.setRace(race);
+            final CharacterInformation information = new CharacterInformation(name, race);
             characterModel.add(information);
         }
 
