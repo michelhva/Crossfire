@@ -22,3 +22,23 @@ UPDATED NOTES:
 3) The .raw sound files are installed under the client data directory
    ${prefix}/share/crossfire-client/sounds.
 
+4) The sounds may be loaded and manipulated using Audacity.
+
+   To load a sound:
+
+   a. Use File | Import | Raw Data...
+
+   b. From the resulting "Select any uncompressed audio file..." dialog, pick
+      a .raw file, then press the "Open" button.
+
+   c. Select the following settings on the "Import Raw Data" dialog.
+
+      Encoding:          Unsigned 8 bit PCM
+      Byte order:        No endianness
+      Channels:          1 Channel (Mono)
+      Start offset:      0 bytes
+      Amount to import:  100%
+      Sample rate:       11025 Hz
+
+   d. Press the "Import" button.
+
