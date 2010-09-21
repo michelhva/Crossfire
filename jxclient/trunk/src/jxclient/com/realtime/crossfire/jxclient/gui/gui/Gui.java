@@ -450,7 +450,8 @@ public class Gui extends Container {
      */
     public boolean handleKeyPress(@NotNull final KeyEvent e) {
         if (activeElement != null && activeElement instanceof KeyListener) {
-            if (((KeyListener)activeElement).keyPressed(e)) {
+            final KeyListener keyListener = (KeyListener)activeElement;
+            if (keyListener.keyPressed(e)) {
                 return true;
             }
         }
