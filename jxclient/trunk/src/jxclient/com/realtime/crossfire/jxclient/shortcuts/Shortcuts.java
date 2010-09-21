@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -42,7 +43,7 @@ public class Shortcuts implements Iterable<Shortcut> {
      * <code>null</code>.
      */
     @NotNull
-    private final ArrayList<Shortcut> shortcuts = new ArrayList<Shortcut>();
+    private final List<Shortcut> shortcuts = new ArrayList<Shortcut>();
 
     /**
      * Whether the contents of {@link #shortcuts} have been modified from the
