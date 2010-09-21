@@ -340,11 +340,9 @@ public class Buffer {
      * @return whether the line should be merged
      */
     public boolean mergeLines(@NotNull final String text, @Nullable final Color color) {
-        if (lastCount > 0 && text.equals(lastText)) {
-            if (lastColor == null ? color == null : lastColor.equals(color)) {
-                lastCount++;
-                return true;
-            }
+        if (lastCount > 0 && text.equals(lastText) && (lastColor == null ? color == null : lastColor.equals(color))) {
+            lastCount++;
+            return true;
         }
 
         lastCount = 1;

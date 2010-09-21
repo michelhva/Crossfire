@@ -129,10 +129,8 @@ public class StatGaugeUpdater extends GaugeUpdater {
                 break;
 
             default:
-                if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat <= CrossfireStatsListener.CS_STAT_RESIST_END) {
-                    if (statNo == stat) {
-                        setValues(value, 0, 100);
-                    }
+                if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat <= CrossfireStatsListener.CS_STAT_RESIST_END && statNo == stat) {
+                    setValues(value, 0, 100);
                 }
                 break;
             }

@@ -183,10 +183,8 @@ public class Gui extends Container {
             return;
         }
 
-        if (getWidth() == 0 || getHeight() == 0) {
-            if (initialPositionSet || x != 0 || y != 0) {
-                throw new IllegalStateException();
-            }
+        if ((getWidth() == 0 || getHeight() == 0) && (initialPositionSet || x != 0 || y != 0)) {
+            throw new IllegalStateException();
         }
 
         initialPositionSet = true;
@@ -376,12 +374,8 @@ public class Gui extends Container {
     public GUIElement getElementFromPoint(final int x, final int y) {
         GUIElement elected = null;
         for (final GUIElement element : visibleElements) {
-            if (!element.isIgnore()) {
-                if (element.getElementX() <= x && x < element.getElementX()+element.getWidth()) {
-                    if (element.getElementY() <= y && y < element.getElementY()+element.getHeight()) {
-                        elected = element;
-                    }
-                }
+            if (!element.isIgnore() && element.getElementX() <= x && x < element.getElementX()+element.getWidth() && element.getElementY() <= y && y < element.getElementY()+element.getHeight()) {
+                elected = element;
             }
         }
 
@@ -455,11 +449,9 @@ public class Gui extends Container {
      * @return whether a gui element did handle the event
      */
     public boolean handleKeyPress(@NotNull final KeyEvent e) {
-        if (activeElement != null) {
-            if (activeElement instanceof KeyListener) {
-                if (((KeyListener)activeElement).keyPressed(e)) {
-                    return true;
-                }
+        if (activeElement != null && activeElement instanceof KeyListener) {
+            if (((KeyListener)activeElement).keyPressed(e)) {
+                return true;
             }
         }
 
