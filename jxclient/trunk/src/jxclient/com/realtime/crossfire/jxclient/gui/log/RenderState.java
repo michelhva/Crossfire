@@ -85,10 +85,11 @@ public class RenderState {
      * @param h the viewable height
      */
     public void setHeight(@NotNull final Buffer buffer, final int h) {
+        final int bufferHeight = buffer.getTotalHeight();
         synchronized (sync) {
             final int oldHeight = height;
             height = h;
-            if (buffer.getTotalHeight() <= height) {
+            if (bufferHeight <= height) {
                 scrollPos = 0;
                 topIndex = 0;
                 topOffset = 0;
@@ -96,7 +97,7 @@ public class RenderState {
                 canScrollDown = false;
             } else if (topOffset < 0) {
                 scrollToBottom(buffer);
-            } else if (scrollPos > buffer.getTotalHeight()-height || scrollPos == buffer.getTotalHeight()-oldHeight) {
+            } else if (scrollPos > bufferHeight-height || scrollPos == bufferHeight-oldHeight) {
                 scrollToBottom(buffer);
             }
         }
@@ -140,8 +141,9 @@ public class RenderState {
      * @param lines the number of lines that have been remove
      */
     public void linesRemoved(@NotNull final Buffer buffer, @NotNull final Collection<Line> lines) {
+        final int bufferHeight = buffer.getTotalHeight();
         synchronized (sync) {
-            if (buffer.getTotalHeight() <= height) {
+            if (bufferHeight <= height) {
                 scrollPos = 0;
                 topIndex = 0;
                 topOffset = 0;
@@ -239,9 +241,10 @@ public class RenderState {
      * @param y the new location
      */
     public void scrollTo(@NotNull final Buffer buffer, final int y) {
+        final int bufferHeight = buffer.getTotalHeight();
         synchronized (sync) {
-            if (buffer.getTotalHeight() > height) {
-                scrollPos = Math.max(Math.min(y, buffer.getTotalHeight()-height), 0);
+            if (bufferHeight > height) {
+                scrollPos = Math.max(Math.min(y, bufferHeight-height), 0);
                 topIndex = 0;
                 int yPos = scrollPos;
                 while (yPos > 0) {
@@ -256,7 +259,7 @@ public class RenderState {
                 assert yPos >= 0;
                 topOffset = yPos;
                 canScrollUp = topIndex > 0 || topOffset > 0;
-                canScrollDown = y+height < buffer.getTotalHeight();
+                canScrollDown = y+height < bufferHeight;
                 //} else {
                 // ignore
             }
@@ -268,15 +271,16 @@ public class RenderState {
      * @param buffer the displayed buffer
      */
     public void scrollToBottom(@NotNull final Buffer buffer) {
+        final int bufferHeight = buffer.getTotalHeight();
         synchronized (sync) {
-            if (buffer.getTotalHeight() <= height) {
+            if (bufferHeight <= height) {
                 scrollPos = 0;
                 topIndex = 0;
                 topOffset = 0;
                 canScrollUp = false;
                 canScrollDown = false;
             } else {
-                scrollPos = Math.max(buffer.getTotalHeight()-height, 0);
+                scrollPos = Math.max(bufferHeight-height, 0);
                 topIndex = buffer.size();
                 int y = height;
                 while (y > 0) {
