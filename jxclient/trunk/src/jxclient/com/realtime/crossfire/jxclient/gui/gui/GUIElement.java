@@ -577,4 +577,16 @@ public abstract class GUIElement extends JComponent {
         }
     }
 
+    /**
+     * Returns whether this element includes a given point.
+     * @param x the point's x coordinate
+     * @param y the point's y coordinate
+     * @return whether this element includes the point
+     */
+    public boolean isElementAtPoint(final int x, final int y) {
+        final int elementX = getElementX();
+        final int elementY = getElementY();
+        return !ignore && elementX <= x && x < elementX+getWidth() && elementY <= y && y < elementY+getHeight();
+    }
+
 }

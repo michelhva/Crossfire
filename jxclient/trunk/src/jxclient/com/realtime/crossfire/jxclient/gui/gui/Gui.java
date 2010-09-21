@@ -374,7 +374,7 @@ public class Gui extends Container {
     public GUIElement getElementFromPoint(final int x, final int y) {
         GUIElement elected = null;
         for (final GUIElement element : visibleElements) {
-            if (!element.isIgnore() && element.getElementX() <= x && x < element.getElementX()+element.getWidth() && element.getElementY() <= y && y < element.getElementY()+element.getHeight()) {
+            if (element.isElementAtPoint(x, y)) {
                 elected = element;
             }
         }
