@@ -174,10 +174,8 @@ public class ItemSet {
                 throw new AssertionError("cannot find item "+item.getTag());
             }
 
-            if (list.isEmpty()) {
-                if (items.remove(item.getLocation()) != list) {
-                    throw new AssertionError();
-                }
+            if (list.isEmpty() && items.remove(item.getLocation()) != list) {
+                throw new AssertionError();
             }
 
             for (final ItemListener itemListener : itemListeners.getListeners(where, ItemListener.class)) {

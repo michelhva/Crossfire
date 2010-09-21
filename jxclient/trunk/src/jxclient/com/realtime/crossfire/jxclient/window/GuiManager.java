@@ -543,10 +543,8 @@ public class GuiManager {
      * @param dialog the dialog to toggle
      */
     public void toggleDialog(@NotNull final Gui dialog) {
-        if (windowRenderer.toggleDialog(dialog)) {
-            if (dialog == queryDialog) {
-                dialog.setHideInput(false);
-            }
+        if (windowRenderer.toggleDialog(dialog) && dialog == queryDialog) {
+            dialog.setHideInput(false);
         }
     }
 

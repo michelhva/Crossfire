@@ -356,10 +356,8 @@ public class KeyHandler {
         setKeyShift(KEY_SHIFT_CTRL, (mask&InputEvent.CTRL_DOWN_MASK) != 0);
         setKeyShift(KEY_SHIFT_ALT, (mask&InputEvent.ALT_DOWN_MASK) != 0);
         setKeyShift(KEY_SHIFT_ALT_GR, (mask&InputEvent.ALT_GRAPH_DOWN_MASK) != 0);
-        if (!getKeyShift(KEY_SHIFT_CTRL)) {
-            if (commandQueue.stopRunning()) {
-                debugKeyboardWrite("updateModifiers: stopping run");
-            }
+        if (!getKeyShift(KEY_SHIFT_CTRL) && commandQueue.stopRunning()) {
+            debugKeyboardWrite("updateModifiers: stopping run");
         }
     }
 

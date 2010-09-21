@@ -265,11 +265,9 @@ public class GUIItemShortcut extends GUIItem {
     /* {@inheritDoc} */
     @Override
     public void button2Clicked(final int modifiers) {
-        if (shortcut != null) {
-            if (shortcut instanceof ShortcutSpell) {
-                final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
-                shortcutSpell.setCast(!shortcutSpell.isCast());
-            }
+        if (shortcut != null && shortcut instanceof ShortcutSpell) {
+            final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
+            shortcutSpell.setCast(!shortcutSpell.isCast());
         }
     }
 

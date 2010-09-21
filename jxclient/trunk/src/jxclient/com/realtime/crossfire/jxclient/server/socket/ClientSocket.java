@@ -370,11 +370,9 @@ public class ClientSocket {
     private void doTransceive() throws IOException {
         selector.select();
         final Collection<SelectionKey> selectedKeys = selector.selectedKeys();
-        if (selectedKeys.remove(selectionKey)) {
-            if (isConnected) {
-                processRead();
-                processWrite();
-            }
+        if (selectedKeys.remove(selectionKey) && isConnected) {
+            processRead();
+            processWrite();
         }
         assert selectedKeys.isEmpty();
     }

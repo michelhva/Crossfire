@@ -203,11 +203,9 @@ public class GUIItemInventory extends GUIItemItem {
     @Override
     public void button2Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item != null) {
-            if ((modifiers&InputEvent.SHIFT_DOWN_MASK) != 0) {
-                crossfireServerConnection.sendMark(item.getTag());
-                return;
-            }
+        if (item != null && (modifiers&InputEvent.SHIFT_DOWN_MASK) != 0) {
+            crossfireServerConnection.sendMark(item.getTag());
+            return;
         }
 
         super.button2Clicked(modifiers);
