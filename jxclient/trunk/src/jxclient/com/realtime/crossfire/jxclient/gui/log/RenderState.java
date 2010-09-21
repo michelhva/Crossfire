@@ -240,9 +240,7 @@ public class RenderState {
      */
     public void scrollTo(@NotNull final Buffer buffer, final int y) {
         synchronized (sync) {
-            if (buffer.getTotalHeight() <= height) {
-                // ignore
-            } else {
+            if (buffer.getTotalHeight() > height) {
                 scrollPos = Math.max(Math.min(y, buffer.getTotalHeight()-height), 0);
                 topIndex = 0;
                 int yPos = scrollPos;
@@ -259,6 +257,8 @@ public class RenderState {
                 topOffset = yPos;
                 canScrollUp = topIndex > 0 || topOffset > 0;
                 canScrollDown = y+height < buffer.getTotalHeight();
+                //} else {
+                // ignore
             }
         }
     }
