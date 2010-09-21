@@ -1,4 +1,3 @@
-# Obsolete spell - here for backward compatibility
 Object spell_defense
 anim_suffix spellcasting
 name defense
