@@ -10,7 +10,7 @@ value 150
 grace 120
 casting_time 10
 skill praying
-path_attuned 0
+path_attuned 131072
 other_arch bubonic_plague
 range 5
 range_modifier 10
