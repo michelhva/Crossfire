@@ -246,12 +246,12 @@ public class Parser {
             if (COLORS.containsKey(colorName)) {
                 color = COLORS.get(colorName);
                 assert color != null;
-            } else {
+                //} else {
                 // ignore unknown color
             }
         } else if (tag.equals("/color")) {
             color = defaultColor;
-        } else {
+            //} else {
             // ignore unknown tag
         }
     }
