@@ -9,7 +9,7 @@ enter_x 1
 enter_y 8
 msg
 Created:  2004-05-12
-Modified: 2010-09-07 crossfire
+Modified: 2010-09-25 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -85,18 +85,11 @@ end
 arch woodfloor
 y 8
 type 71
+unique 1
 end
 arch wall_2_1_1
 y 8
-end
-arch woodfloor
-y 9
-type 71
-unique 1
-is_buildable 1
-end
-arch wall_2_1_1
-y 9
+type 77
 end
 arch woodfloor
 y 9
@@ -112,14 +105,9 @@ y 10
 type 71
 unique 1
 end
-arch woodfloor
-y 10
-type 71
-unique 1
-is_buildable 1
-end
 arch wall_2_1_1
 y 10
+type 77
 end
 arch woodfloor
 y 11
@@ -303,16 +291,10 @@ y 9
 type 71
 unique 1
 end
-arch woodfloor
-x 1
-y 9
-type 71
-unique 1
-is_buildable 1
-end
 arch wall_2_1_2
 x 1
 y 9
+type 77
 end
 arch woodfloor
 x 1
@@ -334,46 +316,10 @@ y 11
 type 71
 unique 1
 end
-arch woodfloor
-x 1
-y 11
-type 71
-unique 1
-is_buildable 1
-end
-arch wall_4
-x 1
-y 11
-type 77
-is_buildable 1
-end
-arch woodfloor
-x 1
-y 11
-type 71
-unique 1
-end
 arch wall_3_3
 x 1
 y 11
 type 77
-end
-arch woodfloor
-x 1
-y 11
-type 71
-unique 1
-end
-arch woodfloor
-x 1
-y 11
-type 71
-unique 1
-is_buildable 1
-end
-arch wall_2_1_2
-x 1
-y 11
 end
 arch woodfloor
 x 1
@@ -565,33 +511,10 @@ y 9
 type 71
 unique 1
 end
-arch woodfloor
-x 2
-y 9
-type 71
-unique 1
-is_buildable 1
-end
-arch wall_1_3
-x 2
-y 9
-end
-arch woodfloor
-x 2
-y 9
-type 71
-unique 1
-end
-arch woodfloor
-x 2
-y 9
-type 71
-unique 1
-is_buildable 1
-end
 arch wall_2_1_2
 x 2
 y 9
+type 77
 end
 arch button_small
 x 2
@@ -614,40 +537,6 @@ arch wall_3_3
 x 2
 y 11
 type 77
-end
-arch woodfloor
-x 2
-y 11
-type 71
-unique 1
-end
-arch woodfloor
-x 2
-y 11
-type 71
-unique 1
-is_buildable 1
-end
-arch wall_1_3
-x 2
-y 11
-end
-arch woodfloor
-x 2
-y 11
-type 71
-unique 1
-end
-arch woodfloor
-x 2
-y 11
-type 71
-unique 1
-is_buildable 1
-end
-arch wall_2_1_2
-x 2
-y 11
 end
 arch woodfloor
 x 2
@@ -852,24 +741,11 @@ x 3
 y 9
 type 71
 unique 1
-is_buildable 1
-end
-arch woodfloor
-x 3
-y 9
-type 71
-unique 1
-end
-arch woodfloor
-x 3
-y 9
-type 71
-unique 1
-is_buildable 1
 end
 arch wall_1_3
 x 3
 y 9
+type 77
 end
 arch woodfloor
 x 3
@@ -897,30 +773,6 @@ arch wall_3_3
 x 3
 y 11
 type 77
-end
-arch woodfloor
-x 3
-y 11
-type 71
-unique 1
-is_buildable 1
-end
-arch woodfloor
-x 3
-y 11
-type 71
-unique 1
-end
-arch woodfloor
-x 3
-y 11
-type 71
-unique 1
-is_buildable 1
-end
-arch wall_1_3
-x 3
-y 11
 end
 arch woodfloor
 x 3
@@ -1083,19 +935,6 @@ end
 arch wall_4
 x 4
 y 6
-type 77
-is_buildable 1
-end
-arch woodfloor
-x 4
-y 7
-type 71
-unique 1
-is_buildable 1
-end
-arch wall_4
-x 4
-y 7
 type 77
 is_buildable 1
 end
@@ -1332,19 +1171,6 @@ end
 arch wall_4
 x 5
 y 6
-type 77
-is_buildable 1
-end
-arch woodfloor
-x 5
-y 7
-type 71
-unique 1
-is_buildable 1
-end
-arch wall_4
-x 5
-y 7
 type 77
 is_buildable 1
 end
