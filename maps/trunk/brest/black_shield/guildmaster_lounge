@@ -9,7 +9,7 @@ enter_x 1
 enter_y 8
 msg
 Created:  2004-05-12
-Modified: 2010-09-06 Logan Perkins
+Modified: 2010-09-25 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -88,6 +88,7 @@ type 71
 end
 arch wall_2_1_1
 y 8
+type 77
 end
 arch woodfloor
 y 9
@@ -97,6 +98,7 @@ is_buildable 1
 end
 arch wall_2_1_1
 y 9
+type 77
 end
 arch woodfloor
 y 10
@@ -1016,13 +1018,6 @@ arch wall_3_2
 x 4
 y 8
 type 77
-is_buildable 1
-end
-arch woodfloor
-x 4
-y 9
-type 71
-unique 1
 is_buildable 1
 end
 arch woodfloor
