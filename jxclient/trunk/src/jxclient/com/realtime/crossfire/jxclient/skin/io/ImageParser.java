@@ -75,6 +75,7 @@ public class ImageParser {
      */
     @Nullable
     public BufferedImage getImage(@Nullable final Color color, @NotNull final String name) throws IOException {
+        //noinspection VariableNotUsedInsideIf
         return color != null ? null : getImage(name);
     }
 
