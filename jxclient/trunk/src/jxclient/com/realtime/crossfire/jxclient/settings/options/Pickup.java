@@ -236,7 +236,7 @@ public class Pickup {
         optionManager.addOption("pickup_cloak", "Pickup mode: cloaks", newPickupOption(PU_CLOAK, "<html>Picks up cloaks."));
         optionManager.addOption("pickup_key", "Pickup mode: keys", newPickupOption(PU_KEY, "<html>Picks up keys."));
         optionManager.addOption("pickup_missile_weapon", "Pickup mode: missile weapons", newPickupOption(PU_MISSILE_WEAPON, "<html>Picks up missile weapons."));
-        optionManager.addOption("pickup_all_weapon", "Pickup mode: all weapons", newPickupOption(PU_ALL_WEAPON, "<html>Picks up all weapons."));
+        optionManager.addOption("pickup_all_weapon", "Pickup mode: melee weapons", newPickupOption(PU_ALL_WEAPON, "<html>Picks up melee weapons."));
         optionManager.addOption("pickup_magical", "Pickup mode: magical items", newPickupOption(PU_MAGICAL, "<html>Picks up magical items."));
         optionManager.addOption("pickup_potion", "Pickup mode: potions", newPickupOption(PU_POTION, "<html>Picks up potions."));
         optionManager.addOption("pickup_spellbook", "Pickup mode: spellbooks", newPickupOption(PU_SPELLBOOK, "<html>Picks up spellbooks and prayer books."));
