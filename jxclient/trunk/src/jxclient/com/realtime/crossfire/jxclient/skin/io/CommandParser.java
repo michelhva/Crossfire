@@ -552,6 +552,11 @@ public class CommandParser {
             throw new IOException("'"+args.getPrev()+"' cannot become active");
         }
 
+        final int apply = args.hasMore() ? ExpressionParser.parseInt(args.get()) : 0;
+        if (apply != 0 && apply != 1) {
+            throw new IOException("<apply> must be 0 or 1");
+        }
+
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -560,7 +565,7 @@ public class CommandParser {
             throw new IOException("'"+element+"' cannot become active");
         }
 
-        return new ScrollNextCommand((ActivatableGUIElement)nextElement, (ActivatableGUIElement)element);
+        return new ScrollNextCommand((ActivatableGUIElement)nextElement, (ActivatableGUIElement)element, apply != 0);
     }
 
     /**
