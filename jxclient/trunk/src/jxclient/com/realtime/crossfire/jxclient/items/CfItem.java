@@ -105,6 +105,11 @@ public class CfItem {
     public static final int F_APPLIED = 0x000F;
 
     /**
+     * The flags value for unidentified items.
+     */
+    public static final int F_UNIDENTIFIED = 0x0010;
+
+    /**
      * The flags value for blessed items.
      */
     public static final int F_BLESSED = 0x0100;
@@ -315,6 +320,14 @@ public class CfItem {
     }
 
     /**
+     * Returns whether this item is unidentified.
+     * @return whether this item is unidentified
+     */
+    public boolean isUnidentified() {
+        return (flags&F_UNIDENTIFIED) != 0;
+    }
+
+    /**
      * Returns whether this item is blessed.
      * @return whether this item is blessed
      */
@@ -520,6 +533,7 @@ public class CfItem {
     @NotNull
     public String getTooltipText3() {
         final StringBuilder sb = new StringBuilder();
+        appendFlag(sb, F_UNIDENTIFIED, "unidentified");
         appendFlag(sb, F_BLESSED, "blessed");
         appendFlag(sb, F_MAGIC, "magic");
         appendFlag(sb, F_CURSED, "cursed");
