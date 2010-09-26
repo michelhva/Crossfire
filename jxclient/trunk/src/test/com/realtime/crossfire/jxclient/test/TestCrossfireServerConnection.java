@@ -46,6 +46,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.junit.Assert;
 
 /**
@@ -473,6 +474,15 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
     public int getMapHeight() {
         Assert.fail();
         throw new AssertionError();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public String getAccountName() {
+        return null;
     }
 
     /**

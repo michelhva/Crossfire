@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.server.ServerConnection;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Adds encoding/decoding of crossfire protocol packets to a {@link
@@ -419,5 +420,12 @@ public interface CrossfireServerConnection extends ServerConnection {
      * @return the map height
      */
     int getMapHeight();
+
+    /**
+     * Returns the current account name.
+     * @return the current account name or <code>null</code>
+     */
+    @Nullable
+    String getAccountName();
 
 }

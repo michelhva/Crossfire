@@ -193,4 +193,13 @@ public class GUICharacterList extends GUIList {
         return characterModel.getEntry(selectedIndex);
     }
 
+    /**
+     * Selects an entry by character name.
+     * @param characterName the character name
+     */
+    public void setCharacter(@NotNull final String characterName) {
+        final int index = characterModel.getCharacterIndex(characterName);
+        setSelectedIndex(index);
+    }
+
 }

@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
@@ -506,31 +507,44 @@ public class GuiManager {
             dialog.setHideInput(false);
         } else {
             final String name = dialog.getName();
-            if (name != null && name.equals("account_login")) {
-                final GUIText accountLogin = dialog.getFirstElement(GUIText.class, "account_login");
-                if (accountLogin != null) {
-                    final String accountName = settings.getString("login_account_"+connection.getHostname(), "");
-                    if (accountName.length() > 0) {
-                        accountLogin.setText(accountName);
+            if (name != null) {
+                if (name.equals("account_login")) {
+                    final GUIText accountLogin = dialog.getFirstElement(GUIText.class, "account_login");
+                    if (accountLogin != null) {
+                        final String accountName = settings.getString("login_account_"+connection.getHostname(), "");
+                        if (accountName.length() > 0) {
+                            accountLogin.setText(accountName);
 
-                        final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
-                        if (accountPassword != null) {
-                            accountPassword.setText("");
-                            accountPassword.setActive(true);
+                            final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
+                            if (accountPassword != null) {
+                                accountPassword.setText("");
+                                accountPassword.setActive(true);
+                            }
+                        } else {
+                            accountLogin.setText("");
+                            accountLogin.setActive(true);
+
+                            final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
+                            if (accountPassword != null) {
+                                accountPassword.setText("");
+                            }
                         }
                     } else {
-                        accountLogin.setText("");
-                        accountLogin.setActive(true);
-
                         final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
                         if (accountPassword != null) {
                             accountPassword.setText("");
                         }
                     }
-                } else {
-                    final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
-                    if (accountPassword != null) {
-                        accountPassword.setText("");
+                } else if (name.equals("account_characters")) {
+                    final GUICharacterList characterList = dialog.getFirstElement(GUICharacterList.class);
+                    if (characterList != null) {
+                        final String accountName = server.getAccountName();
+                        if (accountName != null) {
+                            final String characterName = settings.getString("login_account_"+connection.getHostname()+"_"+accountName, "");
+                            if (characterName.length() > 0) {
+                                characterList.setCharacter(characterName);
+                            }
+                        }
                     }
                 }
             }
@@ -933,6 +947,15 @@ public class GuiManager {
      */
     public void setAccountName(@NotNull final String accountName) {
         settings.putString("login_account_"+connection.getHostname(), accountName);
+    }
+
+    /**
+     * Updates the selected character name in an account.
+     * @param accountName the account name
+     * @param characterName the character name
+     */
+    public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
+        settings.putString("login_account_"+connection.getHostname()+"_"+accountName, characterName);
     }
 
 }

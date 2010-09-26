@@ -4001,6 +4001,15 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public String getAccountName() {
+        return accountName;
+    }
+
+    /**
      * Notifies all {@link ReceivedPacketListener}s about an empty packet.
      * @param command the command string
      */
@@ -4193,6 +4202,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.put(ACCOUNT_PLAY_PREFIX);
             byteBuffer.put(name.getBytes(UTF8));
             writePacket(writeBuffer, byteBuffer.position());
+        }
+
+        final String tmpAccountName = accountName;
+        if (tmpAccountName != null) {
+            for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+                crossfireAccountListener.selectCharacter(tmpAccountName, name);
+            }
         }
     }
 
