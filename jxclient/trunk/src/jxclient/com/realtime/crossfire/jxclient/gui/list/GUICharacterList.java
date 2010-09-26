@@ -87,6 +87,9 @@ public class GUICharacterList extends GUIList {
     @NotNull
     private final String tooltip;
 
+    /**
+     * The currently selected list index.
+     */
     private int selectedIndex;
 
     /**
@@ -96,11 +99,12 @@ public class GUICharacterList extends GUIList {
      */
     @NotNull
     private final CharacterInformationListener characterInformationListener = new CharacterInformationListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void informationChanged() {
             setChanged();
         }
+
     };
 
     /**
@@ -121,9 +125,6 @@ public class GUICharacterList extends GUIList {
         this.characterModel = characterModel;
         this.characterModel.addCharacterListener(new CharacterListener() {
 
-            /**
-             * {@inheritDoc}
-             */
             @Override
             public void numberOfItemsChanged() {
                 rebuildList();
@@ -138,23 +139,31 @@ public class GUICharacterList extends GUIList {
         this.name = name;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void selectionChanged(final int selectedIndex) {
         this.selectedIndex = selectedIndex;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
 
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void activeChanged() {
-
     }
 
     /**
-     * Rebuild the list cells.
+     * Rebuilds the list cells.
      */
     private void rebuildList() {
         synchronized (getTreeLock()) {
@@ -176,11 +185,12 @@ public class GUICharacterList extends GUIList {
     }
 
     /**
-     * Get the currently selected character in the list.
-     * @return null if invalid index, else the character information.
+     * Returns the currently selected character in the list.
+     * @return <code>null</code> if invalid index, else the character information
      */
     @Nullable
     public CharacterInformation getCurrentCharacter() {
         return characterModel.getEntry(selectedIndex);
     }
+
 }
