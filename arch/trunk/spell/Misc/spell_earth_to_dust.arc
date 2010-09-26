@@ -6,7 +6,7 @@ face spell_summoner.111
 level 4
 sp 5
 casting_time 15
-path_attuned 0
+path_attuned 16384
 other_arch destruction
 skill summoning
 type 101

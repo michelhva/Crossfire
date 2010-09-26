@@ -6,7 +6,7 @@ face spell_sorcery.111
 level 6
 sp 10
 casting_time 10
-path_attuned 0
+path_attuned 16384
 skill sorcery
 type 101
 subtype 24

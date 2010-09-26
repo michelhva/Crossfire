@@ -6,7 +6,7 @@ face spell_praying.111
 level 6
 grace 8
 casting_time 10
-path_attuned 0
+path_attuned 4
 other_arch wave
 dam 0
 dam_modifier 3

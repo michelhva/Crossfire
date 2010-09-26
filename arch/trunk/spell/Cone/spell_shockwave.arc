@@ -6,7 +6,7 @@ face spell_evocation.111
 level 28
 sp 26
 casting_time 9
-path_attuned 0
+path_attuned 512
 other_arch shockwave
 dam 10
 dam_modifier 3

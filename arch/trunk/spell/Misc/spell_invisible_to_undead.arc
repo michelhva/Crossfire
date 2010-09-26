@@ -6,7 +6,7 @@ face spell_praying.111
 level 12
 grace 25
 casting_time 5
-path_attuned 0
+path_attuned 524288
 other_arch enchantment
 skill praying
 type 101
