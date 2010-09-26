@@ -105,11 +105,6 @@ public class CfItem {
     public static final int F_APPLIED = 0x000F;
 
     /**
-     * The location mask.
-     */
-    public static final int F_LOCATION = 0x00F0;
-
-    /**
      * The flags value for blessed items.
      */
     public static final int F_BLESSED = 0x0100;
