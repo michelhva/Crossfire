@@ -75,6 +75,12 @@ public class ItemPainter {
     private final BufferedImage appliedImage;
 
     /**
+     * The overlay image for unidentified objects.
+     */
+    @Nullable
+    private final BufferedImage unidentifiedImage;
+
+    /**
      * The overlay image for selected objects.
      */
     @Nullable
@@ -123,6 +129,12 @@ public class ItemPainter {
     private final Color appliedColor;
 
     /**
+     * The background color for unidentified objects.
+     */
+    @Nullable
+    private final Color unidentifiedColor;
+
+    /**
      * The background color for selected objects.
      */
     @Nullable
@@ -169,6 +181,7 @@ public class ItemPainter {
      * @param magicImage the overlay image for magical objects
      * @param blessedImage the overlay image for blessed objects
      * @param appliedImage the overlay image for applied objects
+     * @param unidentifiedImage the overlay image for unidentified objects
      * @param selectorImage the overlay image for selected objects
      * @param lockedImage the overlay image for locked objects
      * @param unpaidImage the overlay image for unpaid objects
@@ -177,6 +190,7 @@ public class ItemPainter {
      * @param magicColor the background color for magical objects
      * @param blessedColor the background color for blessed objects
      * @param appliedColor the background color for applied objects
+     * @param unidentifiedColor the background color for unidentified objects
      * @param selectorColor the background color for selected objects
      * @param lockedColor the background color for locked objects
      * @param unpaidColor the background color for unpaid objects
@@ -185,12 +199,13 @@ public class ItemPainter {
      * @param w the item's width in pixel
      * @param h the item's height in pixel
      */
-    public ItemPainter(@Nullable final BufferedImage cursedImage, @Nullable final BufferedImage damnedImage, @Nullable final BufferedImage magicImage, @Nullable final BufferedImage blessedImage, @Nullable final BufferedImage appliedImage, @Nullable final BufferedImage selectorImage, @Nullable final BufferedImage lockedImage, @Nullable final BufferedImage unpaidImage, @Nullable final Color cursedColor, @Nullable final Color damnedColor, @Nullable final Color magicColor, @Nullable final Color blessedColor, @Nullable final Color appliedColor, @Nullable final Color selectorColor, @Nullable final Color lockedColor, @Nullable final Color unpaidColor, @NotNull final Font font, @NotNull final Color nrofColor, final int w, final int h) {
+    public ItemPainter(@Nullable final BufferedImage cursedImage, @Nullable final BufferedImage damnedImage, @Nullable final BufferedImage magicImage, @Nullable final BufferedImage blessedImage, @Nullable final BufferedImage appliedImage, @Nullable final BufferedImage unidentifiedImage, @Nullable final BufferedImage selectorImage, @Nullable final BufferedImage lockedImage, @Nullable final BufferedImage unpaidImage, @Nullable final Color cursedColor, @Nullable final Color damnedColor, @Nullable final Color magicColor, @Nullable final Color blessedColor, @Nullable final Color appliedColor, @Nullable final Color unidentifiedColor, @Nullable final Color selectorColor, @Nullable final Color lockedColor, @Nullable final Color unpaidColor, @NotNull final Font font, @NotNull final Color nrofColor, final int w, final int h) {
         this.cursedImage = cursedImage;
         this.damnedImage = damnedImage;
         this.magicImage = magicImage;
         this.blessedImage = blessedImage;
         this.appliedImage = appliedImage;
+        this.unidentifiedImage = unidentifiedImage;
         this.selectorImage = selectorImage;
         this.lockedImage = lockedImage;
         this.unpaidImage = unpaidImage;
@@ -199,6 +214,7 @@ public class ItemPainter {
         this.magicColor = magicColor;
         this.blessedColor = blessedColor;
         this.appliedColor = appliedColor;
+        this.unidentifiedColor = unidentifiedColor;
         this.selectorColor = selectorColor;
         this.lockedColor = lockedColor;
         this.unpaidColor = unpaidColor;
@@ -217,7 +233,7 @@ public class ItemPainter {
      */
     @NotNull
     public ItemPainter newItemPainter(final int w, final int h) {
-        return new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
+        return new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, unidentifiedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, unidentifiedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
     }
 
     /**
@@ -229,6 +245,7 @@ public class ItemPainter {
      */
     public void paint(@NotNull final Graphics2D g, @NotNull final CfItem item, final boolean selected, @NotNull final Image face) {
         paintColor(g, appliedColor, item.isApplied());
+        paintColor(g, unidentifiedColor, item.isUnidentified());
         paintColor(g, cursedColor, item.isCursed());
         paintColor(g, damnedColor, item.isDamned());
         paintColor(g, magicColor, item.isMagic());
@@ -255,6 +272,7 @@ public class ItemPainter {
         }
         g.drawImage(face, offsetX, offsetY, scaledW, scaledH, null);
         paintImage(g, appliedImage, item.isApplied());
+        paintImage(g, unidentifiedImage, item.isUnidentified());
         paintImage(g, cursedImage, item.isCursed());
         paintImage(g, damnedImage, item.isDamned());
         paintImage(g, magicImage, item.isMagic());

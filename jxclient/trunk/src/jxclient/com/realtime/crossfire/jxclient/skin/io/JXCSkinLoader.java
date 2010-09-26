@@ -869,6 +869,8 @@ public class JXCSkinLoader {
             final BufferedImage blessedImage = imageParser.getImage(blessedColor, args.getPrev());
             final Color appliedColor = ParseUtils.parseColorNull(args.get());
             final BufferedImage appliedImage = imageParser.getImage(appliedColor, args.getPrev());
+            final Color unidentifiedColor = ParseUtils.parseColorNull(args.get());
+            final BufferedImage unidentifiedImage = imageParser.getImage(appliedColor, args.getPrev());
             final Color selectorColor = ParseUtils.parseColorNull(args.get());
             final BufferedImage selectorImage = imageParser.getImage(selectorColor, args.getPrev());
             final Color lockedColor = ParseUtils.parseColorNull(args.get());
@@ -877,7 +879,7 @@ public class JXCSkinLoader {
             final BufferedImage unpaidImage = imageParser.getImage(unpaidColor, args.getPrev());
             final Font font = definedFonts.lookup(args.get());
             final Color nrofColor = ParseUtils.parseColor(args.get());
-            defaultItemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, 1, 1);
+            defaultItemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, unidentifiedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, unidentifiedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, 1, 1);
         } else if (type.equals("textbutton")) {
             final String up = args.get();
             final String down = args.get();
