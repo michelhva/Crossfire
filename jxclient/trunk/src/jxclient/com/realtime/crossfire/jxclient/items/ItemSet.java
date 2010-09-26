@@ -370,7 +370,7 @@ public class ItemSet {
 
             final boolean wasOpen = (flags&UpdItem.UPD_FLAGS) != 0 && openContainerFloor == item.getTag() && item.isOpen();
             item.update(flags, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
-            if ((flags&UpdItem.UPD_LOCATION) != 0) {
+            if ((flags&UpdItem.UPD_LOCATION) != 0 && item.getLocation() != valLocation) {
                 removeItemByTag(item.getTag(), false);
                 item.setLocation(valLocation);
                 addItem(item, false);
