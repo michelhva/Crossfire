@@ -391,6 +391,14 @@ public class JXCWindow {
             guiManager.hideAccountWindows();
         }
 
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
+            guiManager.selectCharacter(accountName, characterName);
+        }
+
     };
 
     /**

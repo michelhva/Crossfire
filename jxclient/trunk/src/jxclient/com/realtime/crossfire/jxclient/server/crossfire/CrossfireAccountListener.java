@@ -62,4 +62,12 @@ public interface CrossfireAccountListener {
      * The client should switch to playing mode.
      */
     void startPlaying();
+
+    /**
+     * An character name was sent to the server.
+     * @param accountName the account name
+     * @param characterName the character name
+     */
+    void selectCharacter(@NotNull String accountName, @NotNull String characterName);
+
 }
