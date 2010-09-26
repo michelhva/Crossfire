@@ -6,7 +6,7 @@ face spell_sorcery.111
 level 1
 sp 5
 casting_time 10
-path_attuned 0
+path_attuned 1024
 other_arch slow
 dam 5
 dam_modifier 0

@@ -6,7 +6,7 @@ face spell_sorcery.111
 level 8
 sp 25
 casting_time 10
-path_attuned 0
+path_attuned 524288
 other_arch enchantment
 skill sorcery
 type 101

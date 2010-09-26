@@ -10,7 +10,7 @@ value 10
 sp 2
 casting_time 10
 skill sorcery
-path_attuned 0
+path_attuned 64
 no_drop 1
 invisible 1
 other_arch rune_mark

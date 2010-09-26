@@ -6,7 +6,7 @@ face spell_sorcery.111
 level 30
 sp 30
 casting_time 10
-path_attuned 0
+path_attuned 512
 other_arch destruction
 skill sorcery
 type 101

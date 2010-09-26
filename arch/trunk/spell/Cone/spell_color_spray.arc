@@ -6,7 +6,7 @@ face spell_sorcery.111
 level 26
 sp 35
 casting_time 2
-path_attuned 0
+path_attuned 16384
 other_arch color_spray
 dam 25
 dam_modifier 3
