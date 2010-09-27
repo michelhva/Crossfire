@@ -71,11 +71,9 @@ import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCConnection;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
 import com.realtime.crossfire.jxclient.window.KeybindingsManager;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.lang.reflect.InvocationTargetException;
 import java.util.MissingResourceException;
@@ -289,22 +287,20 @@ public class JXClient {
             return null;
         }
 
-        final FileOutputStream outputStream;
+        Writer writer = null;
         try {
-            outputStream = new FileOutputStream(filename);
-        } catch (final FileNotFoundException ex) {
+            final FileOutputStream outputStream = new FileOutputStream(filename);
+            try {
+                writer = new OutputStreamWriter(outputStream, "UTF-8");
+            } finally {
+                if (writer == null) {
+                    outputStream.close();
+                }
+            }
+        } catch (final IOException ex) {
             System.err.println(filename+": cannot create output file: "+ex.getMessage());
             return null;
         }
-
-        final Writer writer;
-        try {
-            writer = new OutputStreamWriter(outputStream, "UTF-8");
-        } catch (final UnsupportedEncodingException ex) {
-            System.err.println("internal error: unsupported encoding 'UTF-8': "+ex.getMessage());
-            return null;
-        }
-
         return writer;
     }
 
