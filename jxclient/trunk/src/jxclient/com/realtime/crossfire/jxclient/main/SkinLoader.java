@@ -72,16 +72,19 @@ public class SkinLoader {
     private final CommandCallback commandCallback;
 
     /**
-     * The metaserver model instance for this window.
+     * The {@link MetaserverModel} instance for this window.
      */
     @NotNull
     private final MetaserverModel metaserverModel;
 
+    /**
+     * The {@link CharacterModel} instance for this window.
+     */
     @NotNull
     private final CharacterModel characterModel;
 
     /**
-     * The current spell manager instance for this window.
+     * The {@link CurrentSpellManager} instance for this window.
      */
     @NotNull
     private final CurrentSpellManager currentSpellManager = new CurrentSpellManager();
@@ -163,6 +166,7 @@ public class SkinLoader {
      * @param skinLoader the skin loader instance
      * @param commands the commands to use
      * @param shortcuts the shortcuts to use
+     * @param characterModel the character model to use
      */
     public SkinLoader(final boolean debugGui, @NotNull final MouseTracker mouseTracker, @NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts, @NotNull final CharacterModel characterModel) {
         this.debugGui = debugGui;

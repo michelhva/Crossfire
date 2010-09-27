@@ -57,6 +57,10 @@ public class SpellsManager implements Iterable<Spell> {
     @NotNull
     private final Map<String, Spell> unknownSpells = new HashMap<String, Spell>();
 
+    /**
+     * The {@link SpellsManagerListener SpellsManagerListeners} to notify about
+     * changes.
+     */
     @NotNull
     private final Collection<SpellsManagerListener> listeners = new ArrayList<SpellsManagerListener>();
 
@@ -151,10 +155,18 @@ public class SpellsManager implements Iterable<Spell> {
         guiStateManager.addGuiStateListener(guiStateListener);
     }
 
+    /**
+     * Adds a {@link SpellsManagerListener} to notify about changes.
+     * @param listener the listener to add
+     */
     public void addCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener) {
         listeners.add(listener);
     }
 
+    /**
+     * Removes a {@link SpellsManagerListener} to notify about changes.
+     * @param listener the listener to remove
+     */
     public void removeCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener) {
         listeners.remove(listener);
     }

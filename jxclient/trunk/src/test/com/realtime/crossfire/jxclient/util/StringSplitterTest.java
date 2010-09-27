@@ -42,8 +42,8 @@ public class StringSplitterTest extends TestCase {
     }
 
     /**
-     * Creates a new test suite.
-     * @return the test suite
+     * Creates a new test suite containing this test case.
+     * @return the new test suite
      */
     @NotNull
     public static Test suite() {

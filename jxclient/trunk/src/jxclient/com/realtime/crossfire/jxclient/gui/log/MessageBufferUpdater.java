@@ -215,6 +215,9 @@ public class MessageBufferUpdater {
         this.crossfireServerConnection.addCrossfireDrawinfoListener(crossfireDrawinfoListener);
     }
 
+    /**
+     * Releases resources.
+     */
     public void dispose() {
         crossfireServerConnection.removeCrossfireQueryListener(crossfireQueryListener);
         crossfireServerConnection.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);

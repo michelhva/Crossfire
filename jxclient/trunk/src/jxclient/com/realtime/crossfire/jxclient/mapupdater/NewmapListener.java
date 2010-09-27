@@ -22,12 +22,14 @@
 package com.realtime.crossfire.jxclient.mapupdater;
 
 /**
+ * Interface for listeners interested in received "newmap" messages.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public interface NewmapListener {
 
+    /**
+     * Called whenever a "newmap" message has been received.
+     */
     void commandNewmapReceived();
 
 }
