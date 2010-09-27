@@ -234,6 +234,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         final Runtime rt = Runtime.getRuntime();
         process = rt.exec(filename);
         in = process.getInputStream();
+        //noinspection IOResourceOpenedButNotSafelyClosed
         osw = new OutputStreamWriter(process.getOutputStream());
     }
 
