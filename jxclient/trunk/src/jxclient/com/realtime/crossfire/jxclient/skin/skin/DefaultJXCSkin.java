@@ -476,6 +476,9 @@ public class DefaultJXCSkin implements JXCSkin {
         for (final GUIElement guiElement : guiElements) {
             guiElement.dispose();
         }
+        for (final SkinEvent skinEvent : skinEvents) {
+            skinEvent.dispose();
+        }
         guiElements.clear();
     }
 
