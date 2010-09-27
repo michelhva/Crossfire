@@ -709,9 +709,6 @@ public class CfMapUpdaterTest extends TestCase {
                 boolean firstFace = true;
 
                 if (map.isFogOfWar(x, y)) {
-                    if (!firstFace) {
-                        sb.append(',');
-                    }
                     sb.append('#');
                     firstFace = false;
                 }
