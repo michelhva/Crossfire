@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.scripts.ScriptProcessListener;
 import junit.framework.Assert;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Implements {@link ScriptProcess} for regression tests. All functions do call
@@ -83,6 +84,22 @@ public class TestScriptProcess implements ScriptProcess {
     public int compareTo(@NotNull final ScriptProcess o) {
         Assert.fail();
         throw new AssertionError();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int hashCode() {
+        return 0;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean equals(@Nullable final Object obj) {
+        return obj != null && obj.getClass() == getClass();
     }
 
 }
