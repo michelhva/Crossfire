@@ -41,6 +41,10 @@ public class OrientationTest extends TestCase {
         super(name);
     }
 
+    /**
+     * Creates a new test suite containing this test case.
+     * @return the new test suite
+     */
     @NotNull
     public static Test suite() {
         return new TestSuite(OrientationTest.class);

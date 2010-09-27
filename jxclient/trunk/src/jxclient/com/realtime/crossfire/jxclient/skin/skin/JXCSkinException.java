@@ -24,9 +24,8 @@ package com.realtime.crossfire.jxclient.skin.skin;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * Exception thrown if a skin related problem occurs.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public class JXCSkinException extends Exception {
 
@@ -35,6 +34,10 @@ public class JXCSkinException extends Exception {
      */
     private static final long serialVersionUID = 1;
 
+    /**
+     * Creates a new instance.
+     * @param reason the reason why the skin failed
+     */
     public JXCSkinException(@NotNull final String reason) {
         super(reason);
     }

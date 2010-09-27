@@ -126,6 +126,13 @@ public abstract class AbstractFacesManager implements FacesManager {
     @NotNull
     protected abstract FaceImages getFaceImages(final int faceNum);
 
+    /**
+     * Returns the {@link Face} instance for a given face ID. Other than {@link
+     * #getFace(int)}, does not request the face face from the server if
+     * unknown.
+     * @param faceNum the face ID to look up
+     * @return the face
+     */
     @NotNull
     protected Face lookupFace(final int faceNum) {
         return faceCache.getFace(faceNum);

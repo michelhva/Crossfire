@@ -27,9 +27,8 @@ import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * Describes a Crossfire spell.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public class Spell {
 

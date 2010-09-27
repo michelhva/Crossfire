@@ -53,13 +53,13 @@ public class GUIItemSpellList extends GUIItem {
     private static final Color BACKGROUND_COLOR = new Color(0, 0, 0, 0.0f);
 
     /**
-     * The command queue for sending commands.
+     * The {@link CommandQueue} for sending commands.
      */
     @NotNull
     private final CommandQueue commandQueue;
 
     /**
-     * The instance for looking up faces.
+     * The {@link FacesManager} for looking up faces.
      */
     @NotNull
     private final FacesManager facesManager;
@@ -149,7 +149,14 @@ public class GUIItemSpellList extends GUIItem {
 
     /**
      * Creates a new instance.
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param commandQueue the command queue for sending commands
+     * @param name the name of this element
      * @param extent the extent of this element
+     * @param defaultIndex the default scroll index
+     * @param facesManager the faces manager for looking up faces
+     * @param spellsManager the spells manager instance to watch
      */
     public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final Extent extent, @Nullable final Color selectorColor, @Nullable final Image selectorImage, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager) {
         super(tooltipManager, elementListener, name, extent);

@@ -40,9 +40,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
+ * Implements an {@link AbstractLabel} that displays HTML contents.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public class GUIHTMLLabel extends AbstractLabel {
 
@@ -75,10 +74,16 @@ public class GUIHTMLLabel extends AbstractLabel {
 
     /**
      * Creates a new instance.
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param name the name of this element
      * @param extent the extent of this element
+     * @param backgroundPicture the optional background picture
+     * @param backgroundColor the background color; ignored if background
+     * picture is set
      */
-    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @Nullable final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, extent, picture, backgroundColor);
+    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage backgroundPicture, @Nullable final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text) {
+        super(tooltipManager, elementListener, name, extent, backgroundPicture, backgroundColor);
         this.font = font;
         this.color = color;
         setText(text);

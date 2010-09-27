@@ -143,7 +143,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Parser for loading {@link JXCSkin} instances from {@link JXCSkinSource}s.
+ * Parser for loading {@link JXCSkin} instances from {@link JXCSkinSource
+ * JXCSkinSources}.
  * @author Andreas Kirschbaum
  */
 public class JXCSkinLoader {
@@ -339,6 +340,7 @@ public class JXCSkinLoader {
      * @param windowRenderer the window renderer to add to
      * @param elementListener the element listener to notify
      * @param metaserverModel the metaserver mode to use
+     * @param characterModel the character model to use
      * @param commandQueue the command queue to use
      * @param shortcuts the shortcuts to use
      * @param commands the commands instance to use
@@ -429,6 +431,7 @@ public class JXCSkinLoader {
      * @param windowRenderer the window renderer to add to
      * @param elementListener the element listener to notify
      * @param metaserverModel the metaserver model to use
+     * @param characterModel the character model to use
      * @param commandQueue the command queue for sending commands
      * @param gui the Gui representing the skin file
      * @param shortcuts the shortcuts instance
@@ -479,6 +482,7 @@ public class JXCSkinLoader {
      * @param windowRenderer the window renderer to add to
      * @param elementListener the element listener to notify
      * @param metaserverModel the metaserver model to use
+     * @param characterModel the character model to use
      * @param commandQueue the command queue for sending commands
      * @param gui the Gui representing the skin file
      * @param shortcuts the shortcuts instance

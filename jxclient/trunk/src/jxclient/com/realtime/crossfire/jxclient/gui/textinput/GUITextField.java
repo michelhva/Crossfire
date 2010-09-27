@@ -43,12 +43,20 @@ public class GUITextField extends GUIText {
      */
     private static final long serialVersionUID = 1;
 
+    /**
+     * The {@link CommandList} for executing commands.
+     */
     @NotNull
     private final CommandList commandList;
 
     /**
      * Creates a new instance.
+     * @param commandCallback the command callback to use
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param name the name of this element
      * @param extent the extent of this element
+     * @param commandList the command list for executing commands
      * @param enableHistory if set, enable access to command history
      */
     public GUITextField(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Image activePicture, @NotNull final Image inactivePicture, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandList commandList, final boolean enableHistory) {

@@ -48,6 +48,9 @@ public class GUICommandText extends GUIText {
 
     /**
      * Creates a new instance.
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param name the name of this element
      * @param extent the extent of this element
      * @param enableHistory if set, enable access to command history
      */
