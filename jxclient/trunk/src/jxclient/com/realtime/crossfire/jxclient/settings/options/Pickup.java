@@ -163,6 +163,11 @@ public class Pickup {
     public static final long PU_FLESH = 0x04000000L;
 
     /**
+     * Pickup mode: container.
+     */
+    public static final long PU_CONTAINER = 0x08000000L;
+
+    /**
      * Pickup mode: debug.
      */
     public static final long PU_DEBUG = 0x10000000L;
@@ -246,6 +251,7 @@ public class Pickup {
         optionManager.addOption("pickup_not_cursed", "Pickup mode: not cursed items", newPickupOption(PU_NOT_CURSED, "<html>Ignores cursed items."));
         optionManager.addOption("pickup_jewels", "Pickup mode: jewels", newPickupOption(PU_JEWELS, "<html>Picks up jewels."));
         optionManager.addOption("pickup_flesh", "Pickup mode: flesh", newPickupOption(PU_FLESH, "<html>Picks up flesh items."));
+        optionManager.addOption("pickup_containers", "Pickup mode: container", newPickupOption(PU_CONTAINER, "<html>Picks up containers."));
         optionManager.addOption("pickup_inhibit", "Pickup mode: inhibit pickup", newPickupOption(PU_INHIBIT, "<html>Disables pickup mode."));
         optionManager.addOption("pickup_stop", "Pickup mode: stop before pickup", newPickupOption(PU_STOP, "<html>Stops running when picking up items."));
     }
