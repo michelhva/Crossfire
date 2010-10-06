@@ -22,13 +22,13 @@ Curse = activator.Map.ObjectAt(int(x4),int(y4))
 
 x3=1
 y3=8
-Params=Crossfire.ScriptParameters()
-Approved="Access granted" if CheckClerance(Params,activator) else "Access denied"
+Params=Crossfire.ScriptParameters().split()
+Approved="Access granted" if CheckClearance(Params,activator) else "Access denied"
 x1 = activator.X
 Y1 = activator.Y
 x= 26
 y=0
-
+guildname = Params[0]
 guild=CFGuilds.CFGuild(guildname)
 guildrecord=CFGuilds.CFGuildHouses().info(guildname)
 ActionRequired=Params[2]
