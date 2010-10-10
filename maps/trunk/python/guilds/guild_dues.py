@@ -38,6 +38,13 @@ SecondFloor=Crossfire.ReadyMap(path+'secondfloor')
 ToolShed=Crossfire.ReadyMap(path+"guild_toolshed")
 Rooms={"BBQ":(mymap,40,25),"AlchemyLab":(SecondFloor,22,12),"CrystalRoom":(SecondFloor,22,13),"Tannery":(SecondFloor,22,14),"ThaumaturgyRoom":(SecondFloor,21,13),"JewelrsRoom":(SecondFloor,22,14),"Bowyer":(ToolShed,22,16),"Smithy":(ToolShed,23,16)}
 
+def formatted_amount(amount):
+    """ Format a price as a string, giving full coin descriptions. Returns 'no money' if amount is 0. """
+    if amount == 0:
+        return 'no money'
+    
+    return Crossfire.CostStringFromValue(amount)
+
 def find_mailbox(object):
     while (object.Name != 'mailbox'):
         object = object.Above
@@ -69,7 +76,7 @@ if (guildname):
                                 Item=text[1]
                         except:
                                 Item=None
-                                message="Syntax: Buy <item>\n Valid items are: "+', '.join([i +' - '+ str( Items[i]) for i in Items])+'.'
+                                message="Syntax: Buy <item>\n Valid items are: \n"+'\n'.join([' - ' + i +': '+ formatted_amount(Items[i]) for i in Items])+'.'
                         if Item!=None:
                                 if ( not CheckClearance([guildname, "GuildMaster"],activator)):
                                         message="Only guild masters and GMs can buy expansions for the guild."
@@ -159,14 +166,15 @@ if (guildname):
                                                 activator.Take(id)
                                                 message+=str(bank.getbalance(accountname))+"."
                                         else:
-                                                message="You only have "+str(bank.getbalance(accountname))+" silver coins on account."
+                                                message="You only have "+formatted_amount(bank.getbalance(accountname))+" on account."
 	
                 elif text[0].upper()=='BALANCE':
                         balance=bank.getbalance(accountname)
-                        message="The guild currently has %s silver coins on deposit" %(str(balance))
+                        message="The guild currently has %s on account." %(formatted_amount(balance))
                 elif text[0].upper() == 'PAY':
                         if len(text)>2:
-                                cost,conversionfactor=text[1],CoinTypes.get(' '.join(text[2:]).upper())
+                                cost = text[1]
+                                conversionfactor = CoinTypes.get(' '.join(text[2:]).upper())
                                 total=int(cost)*conversionfactor
                                 if activator.PayAmount(total):
                                         guild.pay_dues(activator.Name,total)
