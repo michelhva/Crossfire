@@ -5,7 +5,7 @@ width 20
 height 20
 msg
 Created:  2010-10-10 Nicolas Weeger
-Modified: 2010-10-10 Nicolas Weeger
+Modified: 2010-10-17 Nicolas Weeger
 endmsg
 end
 arch grass_only
@@ -1026,7 +1026,7 @@ name Politos
 msg
 @match *
 ***************************
-Note: this is a work in progress. Only one reward for now, but only one key required.
+Note: this is a work in progress. Only one reward for now, and two keys required.
 ***************************
 
 
@@ -1856,6 +1856,10 @@ x 17
 y 2
 end
 arch stair_3_up
+name Darcap's Manor - brown zone
+slaying manor.brown
+hp 1
+sp 1
 x 17
 y 2
 end
