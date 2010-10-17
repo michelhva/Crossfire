@@ -1026,7 +1026,7 @@ name Politos
 msg
 @match *
 ***************************
-Note: this is a work in progress. Only one reward for now, and two keys required.
+Note: this is a work in progress. Only one reward for now, even though all keys are required.
 ***************************
 
 
@@ -1932,6 +1932,10 @@ x 17
 y 17
 end
 arch stair_3_up
+name Darcap's Manor - white zone
+slaying manor.white
+hp 28
+sp 28
 x 17
 y 17
 end
