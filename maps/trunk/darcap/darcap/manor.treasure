@@ -5,7 +5,7 @@ width 20
 height 22
 msg
 Created:  2010-10-10 Nicolas Weeger
-Modified: 2010-10-10 Nicolas Weeger
+Modified: 2010-10-17 Nicolas Weeger
 endmsg
 end
 arch tile_shop
@@ -1695,7 +1695,7 @@ arch tile_shop
 x 12
 y 8
 end
-arch cwall_1_3
+arch cwall_2_1_2
 x 12
 y 8
 end
@@ -1813,6 +1813,10 @@ arch tile_shop
 x 13
 y 8
 end
+arch cwall_2_1_2
+x 13
+y 8
+end
 arch tile_shop
 x 13
 y 9
@@ -1927,7 +1931,7 @@ arch tile_shop
 x 14
 y 8
 end
-arch cwall_0
+arch cwall_1_3
 x 14
 y 8
 end

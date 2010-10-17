@@ -75,7 +75,29 @@ def potion_check():
 
     env.Map.Print('The wall explodes!')
 
+def kaptel_death():
+    '''
+    Handle Kaptel's death event. Depending on whether the player triggered the lever,
+    either prevent death or trigger the opening of the exit.
+    '''
+    who = Crossfire.WhoAmI()
+
+    floor = who.Map.ObjectAt(24, 1)
+    while floor != None and floor.Above != None:
+        floor = floor.Above
+
+    if floor.Name == 'boulder':
+        who.Say('AAAAAAAAAaaaaahhhhhhhhhhhhhh!!!!!!!!!')
+        who.Map.TriggerConnected(11, 1)
+        return
+
+    who.Map.Print("%s roars and seems to regenerate!"%(Crossfire.WhoAmI().Name))
+    who.HP = who.MaxHP / 2
+    Crossfire.SetReturnValue(1)
+
 if Crossfire.ScriptParameters() == 'blue':
     blue_check()
 elif Crossfire.ScriptParameters() == 'potion':
     potion_check()
+elif Crossfire.ScriptParameters() == 'kaptel':
+    kaptel_death()
