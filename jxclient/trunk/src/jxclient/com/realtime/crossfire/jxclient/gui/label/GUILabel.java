@@ -121,7 +121,7 @@ public abstract class GUILabel extends AbstractLabel {
             break;
         }
 
-        return (int)(rectangle.getHeight()+0.5);
+        return (int)Math.round(rectangle.getHeight());
     }
 
     /**
