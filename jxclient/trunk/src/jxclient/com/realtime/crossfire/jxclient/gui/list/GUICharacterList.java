@@ -30,7 +30,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Font;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -70,22 +69,10 @@ public class GUICharacterList extends GUIList {
     private final String name;
 
     /**
-     * The image for drawing list entries.
-     */
-    @Nullable
-    private final BufferedImage image;
-
-    /**
      * The font for drawing list entries.
      */
     @NotNull
     private final Font font;
-
-    /**
-     * The tooltip format for drawing list entries.
-     */
-    @NotNull
-    private final String tooltip;
 
     /**
      * The currently selected list index.
@@ -115,13 +102,11 @@ public class GUICharacterList extends GUIList {
      * @param extent the extent of this element
      * @param cellWidth the width of cells
      * @param cellHeight the height of cells
-     * @param image picture to display for the item
      * @param font font to display with
-     * @param tooltip how to format the tooltip
      * @param characterModel what to list characters of
      */
-    public GUICharacterList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @Nullable final BufferedImage image, @NotNull final Font font, @NotNull final String tooltip, @NotNull final CharacterModel characterModel) {
-        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, elementListener, name+"_template", 50, 20, image, font, cellWidth, "", tooltip, characterModel)), null);
+    public GUICharacterList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final Font font, @NotNull final CharacterModel characterModel) {
+        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, elementListener, name+"_template", 50, 20, font, 0, characterModel)), null);
         this.characterModel = characterModel;
         this.characterModel.addCharacterListener(new CharacterListener() {
 
@@ -131,10 +116,8 @@ public class GUICharacterList extends GUIList {
             }
 
         });
-        this.tooltip = tooltip;
         this.tooltipManager = tooltipManager;
         this.font = font;
-        this.image = image;
         this.elementListener = elementListener;
         this.name = name;
     }
@@ -171,7 +154,7 @@ public class GUICharacterList extends GUIList {
             final int oldSize = resizeElements(newSize);
             if (oldSize < newSize) {
                 for (int i = oldSize; i < newSize; i++) {
-                    final GUIElement metaElement = new GUICharacter(tooltipManager, elementListener, name+i, 1, 1, image, font, i, "", tooltip, characterModel);
+                    final GUIElement metaElement = new GUICharacter(tooltipManager, elementListener, name+i, 1, 1, font, i, characterModel);
                     addElement(metaElement);
                     characterModel.addCharacterInformationListener(i, characterInformationListener);
                 }

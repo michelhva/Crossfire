@@ -31,10 +31,8 @@ import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
-import java.awt.Image;
 import java.awt.Transparency;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * A character displaying GUI element.
@@ -88,15 +86,11 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * @param name the name of this element
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
-     * @param image an image to draw before the server description. May be
-     * <code>null</code> to draw no image
      * @param font the font to use
      * @param defaultIndex the initial metaserver index
-     * @param format the format used to display metaserver instances
-     * @param tooltip the format used for displaying tooltips
      * @param characterModel the character model to monitor
      */
-    public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @Nullable final Image image, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip, final CharacterModel characterModel) {
+    public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final Font font, final int defaultIndex, final CharacterModel characterModel) {
         super(tooltipManager, elementListener, name, new Extent(0, 0, w, h), Transparency.TRANSLUCENT);
         this.characterModel = characterModel;
         this.font = font;
@@ -121,9 +115,6 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         g2.clearRect(0, 0, getWidth(), getHeight());
         g2.setFont(font);
         g2.setColor(isActive() || selected ? Color.RED : Color.GRAY);
-        /*if (image != null) {
-            g2.drawImage(image, 0, 0, null);
-        }*/
         g2.drawString(character == null ? "" : character.getName(), 0, font.getSize()+1);
     }
 
