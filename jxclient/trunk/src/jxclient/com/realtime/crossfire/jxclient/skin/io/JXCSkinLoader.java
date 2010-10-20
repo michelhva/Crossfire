@@ -1825,15 +1825,8 @@ public class JXCSkinLoader {
         final Extent extent = parseExtent(args);
         final int cellWidth = ExpressionParser.parseInt(args.get());
         final int cellHeight = ExpressionParser.parseInt(args.get());
-        final BufferedImage image = args.get().equals("null") ? null : imageParser.getImage(args.getPrev());
         final Font font = definedFonts.lookup(args.get());
-        /*final GUIText text = args.get().equals("null") ? null : guiElementParser.lookupTextElement(args.getPrev());
-        final AbstractLabel label = args.get().equals("null") ? null : guiElementParser.lookupLabelElement(args.getPrev());
-        final CommandList connectCommandList = skin.getCommandList(args.get());
-        final String format = args.get();*/
-        final String tooltip = args.get();
-
-        final GUIElement list = new GUICharacterList(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, image, font, tooltip, characterModel);
+        final GUIElement list = new GUICharacterList(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, font, characterModel);
         insertGuiElement(list);
     }
 
