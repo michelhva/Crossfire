@@ -77,15 +77,15 @@ public class Formatter {
         final int tmp;
         switch (digits) {
         case 1:
-            tmp = (int)(value*10+0.5);
+            tmp = (int)Math.round(value*10);
             return tmp/10+"."+tmp%10;
 
         case 2:
-            tmp = (int)(value*100+0.5);
+            tmp = (int)Math.round(value*100);
             return tmp/100+"."+tmp/10%10+tmp%10;
 
         case 3:
-            tmp = (int)(value*1000+0.5);
+            tmp = (int)Math.round(value*1000);
             return tmp/1000+"."+tmp/100%10+tmp/10%10+tmp%10;
         }
 

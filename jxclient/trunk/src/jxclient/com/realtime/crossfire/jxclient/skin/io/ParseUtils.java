@@ -108,7 +108,7 @@ public class ParseUtils {
 
         int alpha = 255;
         try {
-            alpha = (int)(255*NumberParser.parseFloat(name.substring(pos+1))+0.5);
+            alpha = (int)Math.round(255*NumberParser.parseFloat(name.substring(pos+1)));
         } catch (final IOException ignored) {
             /* ignore */
         }

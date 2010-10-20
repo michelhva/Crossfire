@@ -214,7 +214,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * @return the position in slider-coordinates
      */
     private int getSliderPos(final int yPixels) {
-        return (int)(yPixels*(double)(valueSize-sliderSize)/(getHeight()-getSliderHeightPixels())+0.5);
+        return (int)Math.round(yPixels*(double)(valueSize-sliderSize)/(getHeight()-getSliderHeightPixels()));
     }
 
     /**
@@ -238,7 +238,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * @return the height of the slider in pixels
      */
     private int getSliderHeightPixels() {
-        return proportionalSlider ? Math.max((int)(getHeight()*(double)sliderSize/valueSize+0.5), getWidth()) : getWidth();
+        return proportionalSlider ? Math.max((int)Math.round(getHeight()*(double)sliderSize/valueSize), getWidth()) : getWidth();
     }
 
     /**
@@ -247,7 +247,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * @return The y-coordinate.
      */
     private int getSliderPosPixels(final int sh) {
-        return (int)(sliderPos*(double)(getHeight()-sh)/(valueSize-sliderSize)+0.5);
+        return (int)Math.round(sliderPos*(double)(getHeight()-sh)/(valueSize-sliderSize));
     }
 
     /**
