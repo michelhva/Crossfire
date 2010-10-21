@@ -1,5 +1,5 @@
 Object warrior_class
-name Warrior
+name warrior
 randomitems warrior_class_items
 anim_suffix class_warrior
 face warrior.151

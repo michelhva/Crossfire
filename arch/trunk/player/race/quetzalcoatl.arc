@@ -1,5 +1,5 @@
 Object quetzalcoatl_player
-name Quetzalcoatl
+name quetzalcoatl
 race reptile
 randomitems quetzalcoatl_player_items
 face quetzalcoatl.131

@@ -1,5 +1,5 @@
 Object northman_player
-name Northman
+name northman
 race human
 randomitems northman_player_items
 face viking.151
