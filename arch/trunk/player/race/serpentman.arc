@@ -1,5 +1,5 @@
 Object serpentman_player
-name Serpentman
+name serpentman
 race reptile
 randomitems serpentman_player_items
 face serpentman.131

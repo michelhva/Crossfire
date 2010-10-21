@@ -1,6 +1,13 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Changes for new character creation:
+system/map.arc: Add subtype to existing starting map, add new ones for
+  player to be able to choose.
+player/...: Make race/class names lowercase - most already were, so make
+   few that were not lowercase so they are all consistent.
+MSW 2010-10-20
+
 Fix incorrect svn properties, for example .png should not have svn:keywords
 set, that could in worst case result in corruption. While we are updating
 properties anyway, clean up incorrect (but mostly harmless) svn:mime-type,
