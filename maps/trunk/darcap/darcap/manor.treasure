@@ -5,7 +5,7 @@ width 20
 height 22
 msg
 Created:  2010-10-10 Nicolas Weeger
-Modified: 2010-10-17 Nicolas Weeger
+Modified: 2010-10-21 Nicolas Weeger
 endmsg
 end
 arch tile_shop
@@ -467,6 +467,10 @@ arch grate_closed_2
 x 3
 y 15
 end
+arch dungeon_magic
+x 3
+y 15
+end
 arch tile_shop
 x 3
 y 16
@@ -603,11 +607,11 @@ arch tile_shop
 x 4
 y 16
 end
-arch tile_shop
+arch grate_closed_1
 x 4
 y 16
 end
-arch grate_closed_1
+arch dungeon_magic
 x 4
 y 16
 end
@@ -730,10 +734,6 @@ end
 arch tile_shop
 x 5
 y 15
-end
-arch tile_shop
-x 5
-y 16
 end
 arch tile_shop
 x 5
@@ -871,11 +871,11 @@ arch tile_shop
 x 6
 y 16
 end
-arch tile_shop
+arch grate_closed_1
 x 6
 y 16
 end
-arch grate_closed_1
+arch dungeon_magic
 x 6
 y 16
 end
@@ -1004,10 +1004,6 @@ end
 arch tile_shop
 x 7
 y 15
-end
-arch tile_shop
-x 7
-y 16
 end
 arch tile_shop
 x 7
@@ -1153,11 +1149,11 @@ arch tile_shop
 x 8
 y 16
 end
-arch tile_shop
+arch grate_closed_1
 x 8
 y 16
 end
-arch grate_closed_1
+arch dungeon_magic
 x 8
 y 16
 end
@@ -1310,10 +1306,6 @@ arch tile_shop
 x 9
 y 16
 end
-arch tile_shop
-x 9
-y 16
-end
 arch swall_1_1
 x 9
 y 16
@@ -1454,14 +1446,14 @@ arch tile_shop
 x 10
 y 16
 end
-arch tile_shop
-x 10
-y 16
-end
 arch grate_closed_1
 x 10
 y 16
 connected 204
+end
+arch dungeon_magic
+x 10
+y 16
 end
 arch tile_shop
 x 10
@@ -1605,10 +1597,6 @@ arch tile_shop
 x 11
 y 16
 end
-arch tile_shop
-x 11
-y 16
-end
 arch swall_1_1
 x 11
 y 16
@@ -1735,11 +1723,11 @@ arch tile_shop
 x 12
 y 16
 end
-arch tile_shop
+arch grate_closed_1
 x 12
 y 16
 end
-arch grate_closed_1
+arch dungeon_magic
 x 12
 y 16
 end
@@ -1848,10 +1836,6 @@ end
 arch tile_shop
 x 13
 y 15
-end
-arch tile_shop
-x 13
-y 16
 end
 arch tile_shop
 x 13
@@ -1975,11 +1959,11 @@ arch tile_shop
 x 14
 y 16
 end
-arch tile_shop
+arch grate_closed_1
 x 14
 y 16
 end
-arch grate_closed_1
+arch dungeon_magic
 x 14
 y 16
 end
@@ -2034,6 +2018,10 @@ slaying darcap_manor_blue
 x 15
 y 4
 end
+arch dungeon_magic
+x 15
+y 4
+end
 arch tile_shop
 x 15
 y 5
@@ -2052,6 +2040,10 @@ y 8
 end
 arch locked_door1
 slaying darcap_manor_brown
+x 15
+y 8
+end
+arch dungeon_magic
 x 15
 y 8
 end
@@ -2076,6 +2068,10 @@ slaying darcap_manor_white
 x 15
 y 12
 end
+arch dungeon_magic
+x 15
+y 12
+end
 arch tile_shop
 x 15
 y 13
@@ -2087,10 +2083,6 @@ end
 arch tile_shop
 x 15
 y 15
-end
-arch tile_shop
-x 15
-y 16
 end
 arch tile_shop
 x 15
@@ -2159,6 +2151,10 @@ slaying darcap_manor_blue
 x 16
 y 4
 end
+arch dungeon_magic
+x 16
+y 4
+end
 arch tile_shop
 x 16
 y 5
@@ -2177,6 +2173,10 @@ y 8
 end
 arch locked_door1
 slaying darcap_manor_brown
+x 16
+y 8
+end
+arch dungeon_magic
 x 16
 y 8
 end
@@ -2201,6 +2201,10 @@ slaying darcap_manor_white
 x 16
 y 12
 end
+arch dungeon_magic
+x 16
+y 12
+end
 arch tile_shop
 x 16
 y 13
@@ -2217,11 +2221,11 @@ arch tile_shop
 x 16
 y 16
 end
-arch tile_shop
+arch grate_closed_1
 x 16
 y 16
 end
-arch grate_closed_1
+arch dungeon_magic
 x 16
 y 16
 end
@@ -2326,10 +2330,6 @@ end
 arch tile_shop
 x 17
 y 15
-end
-arch tile_shop
-x 17
-y 16
 end
 arch tile_shop
 x 17
@@ -2453,11 +2453,11 @@ arch tile_shop
 x 18
 y 16
 end
-arch tile_shop
+arch grate_closed_1
 x 18
 y 16
 end
-arch grate_closed_1
+arch dungeon_magic
 x 18
 y 16
 end
