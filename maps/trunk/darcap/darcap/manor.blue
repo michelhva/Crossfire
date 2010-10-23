@@ -5,7 +5,7 @@ width 30
 height 30
 msg
 Created:  2010-10-10 Nicolas Weeger
-Modified: 2010-10-10 Nicolas Weeger
+Modified: 2010-10-21 Nicolas Weeger
 endmsg
 end
 arch tile_shop
@@ -879,6 +879,10 @@ slaying darcap_manor_blue_second_chance
 msg
 You need the Second Chance key to open this door.
 endmsg
+x 4
+y 27
+end
+arch dungeon_magic
 x 4
 y 27
 end
@@ -4453,6 +4457,10 @@ arch grate_closed_2
 x 27
 y 28
 connected 2
+end
+arch dungeon_magic
+x 27
+y 28
 end
 arch tile_shop
 x 27
