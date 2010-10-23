@@ -153,6 +153,7 @@ def white_challenge():
                 count += check_arch(ear.Map, pos[0], pos[1], archs[choice])
 
             ear.Say('How many piles of %s did you see %s?'%(names[choice],where))
+            ear.Say('Reply with a number in digits please.')
 
             # keep reply in  the ear, easier
             ear.WriteKey('reply', str(count), 1)
