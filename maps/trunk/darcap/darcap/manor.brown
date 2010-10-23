@@ -4,7 +4,7 @@ width 30
 height 30
 msg
 Created:  2010-10-17 Nicolas Weeger
-Modified: 2010-10-17 Nicolas Weeger
+Modified: 2010-10-22 Nicolas Weeger
 endmsg
 end
 arch afloor_left
@@ -212,6 +212,10 @@ x 1
 y 2
 connected 1
 end
+arch dungeon_magic
+x 1
+y 2
+end
 arch afloor_left
 x 1
 y 3
@@ -490,6 +494,10 @@ arch igate_open_1
 x 2
 y 2
 connected 1
+end
+arch dungeon_magic
+x 2
+y 2
 end
 arch afloor_left
 x 2
@@ -796,6 +804,10 @@ arch igate_open_1
 x 3
 y 2
 connected 1
+end
+arch dungeon_magic
+x 3
+y 2
 end
 arch button_small
 x 3
@@ -4138,6 +4150,7 @@ can_see_in_dark 1
 body_range 1
 body_arm 2
 body_skill 1
+no_mood_change 1
 arch event_death
 name kaptel
 title Python
@@ -5779,6 +5792,10 @@ arch igate_closed_1
 x 19
 y 3
 connected 10
+end
+arch dungeon_magic
+x 19
+y 3
 end
 arch battleground
 hp 23
