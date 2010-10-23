@@ -6,7 +6,7 @@ width 40
 height 30
 msg
 Created:  2010-10-17 Nicolas Weeger
-Modified: 2010-10-21 Nicolas Weeger
+Modified: 2010-10-23 Nicolas Weeger
 endmsg
 end
 arch tile_shop
@@ -1404,6 +1404,10 @@ arch white_wall_win2
 x 8
 y 3
 end
+arch dungeon_magic
+x 8
+y 3
+end
 arch tile_shop
 x 8
 y 4
@@ -1795,6 +1799,10 @@ x 10
 y 6
 end
 arch white_wall_win2
+x 10
+y 6
+end
+arch dungeon_magic
 x 10
 y 6
 end
@@ -4810,6 +4818,10 @@ arch white_wall_win1
 x 27
 y 18
 end
+arch dungeon_magic
+x 27
+y 18
+end
 arch tile_shop
 x 27
 y 19
@@ -4963,6 +4975,10 @@ x 28
 y 17
 end
 arch white_wall_win2
+x 28
+y 17
+end
+arch dungeon_magic
 x 28
 y 17
 end
