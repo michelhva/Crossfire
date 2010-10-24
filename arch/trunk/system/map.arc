@@ -25,9 +25,9 @@ Object map_scorn
 name Scorn
 type 22
 subtype 3
-slaying /world/world_105_116
-hp 4
-sp 4
+slaying /world/world_105_115
+hp 5
+sp 37
 face map.111
 msg
 Scorn is the best place for new players to start when they have already completed the beginners tutorial.
@@ -55,9 +55,9 @@ Object map_navar_city
 name Navar City
 type 22
 subtype 3
-slaying /world/world_122_117
-hp 3
-sp 10
+slaying /world/world_121_116
+hp 47
+sp 46
 face map.111
 msg
 Navar is a good place for more experienced players to start.
