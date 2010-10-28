@@ -30,6 +30,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Regression tests for class {@link Orientation} and implementing classes.
  * @author Andreas Kirschbaum
+ * @noinspection MagicNumber
  */
 public class OrientationTest extends TestCase {
 

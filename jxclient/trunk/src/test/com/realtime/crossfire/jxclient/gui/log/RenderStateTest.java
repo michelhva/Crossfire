@@ -41,6 +41,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Regression tests for {@link RenderState}.
  * @author Andreas Kirschbaum
+ * @noinspection MagicNumber
  */
 public class RenderStateTest extends TestCase {
 
