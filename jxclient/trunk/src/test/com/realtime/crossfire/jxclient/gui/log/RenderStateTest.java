@@ -39,7 +39,7 @@ import junit.textui.TestRunner;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Regression tests for class {@link RenderState}.
+ * Regression tests for {@link RenderState}.
  * @author Andreas Kirschbaum
  */
 public class RenderStateTest extends TestCase {
@@ -50,7 +50,7 @@ public class RenderStateTest extends TestCase {
     private static final int HEIGHT = 104;
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param name the test case name
      */
     public RenderStateTest(@NotNull final String name) {
@@ -67,13 +67,16 @@ public class RenderStateTest extends TestCase {
     }
 
     /**
-     * Run the regression tests.
-     * @param args The command line arguments (ignored).
+     * Runs the regression tests.
+     * @param args the command line arguments (ignored)
      */
     public static void main(@NotNull final String[] args) {
         TestRunner.run(suite());
     }
 
+    /**
+     * General checks.
+     */
     public void test1() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -108,6 +111,9 @@ public class RenderStateTest extends TestCase {
         rec.checkState(101, 0);
     }
 
+    /**
+     * Checks that overflowing the buffer works as expected.
+     */
     public void test2() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -231,7 +237,7 @@ public class RenderStateTest extends TestCase {
             rs.setHeight(buffer, HEIGHT);
 
             final BufferListener bufferListener = new BufferListener() {
-                /** {@inheritDoc} */
+
                 @Override
                 public void linesAdded(final int lines) {
                     assert rs != null;
@@ -239,7 +245,6 @@ public class RenderStateTest extends TestCase {
                     rs.linesAdded(buffer);
                 }
 
-                /** {@inheritDoc} */
                 @Override
                 public void linesReplaced(final int lines) {
                     assert rs != null;
@@ -247,13 +252,13 @@ public class RenderStateTest extends TestCase {
                     rs.linesReplaced(buffer);
                 }
 
-                /** {@inheritDoc} */
                 @Override
                 public void linesRemoved(@NotNull final List<Line> lines) {
                     assert rs != null;
                     assert buffer != null;
                     rs.linesRemoved(buffer, lines);
                 }
+
             };
             assert buffer != null;
             buffer.addBufferListener(bufferListener);

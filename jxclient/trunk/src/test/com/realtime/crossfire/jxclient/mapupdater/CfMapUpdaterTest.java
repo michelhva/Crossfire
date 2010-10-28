@@ -39,7 +39,7 @@ import junit.textui.TestRunner;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Regression tests for class {@link CfMapUpdater}.
+ * Regression tests for {@link CfMapUpdater}.
  * @author Andreas Kirschbaum
  */
 public class CfMapUpdaterTest extends TestCase {
@@ -490,7 +490,7 @@ public class CfMapUpdaterTest extends TestCase {
     };
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param name the test case name
      */
     public CfMapUpdaterTest(@NotNull final String name) {
@@ -507,15 +507,15 @@ public class CfMapUpdaterTest extends TestCase {
     }
 
     /**
-     * Run the regression tests.
-     * @param args The command line arguments (ignored).
+     * Runs the regression tests.
+     * @param args the command line arguments (ignored)
      */
     public static void main(@NotNull final String[] args) {
         TestRunner.run(suite());
     }
 
     /**
-     * Check that a cleared multi-tile face causes all affected tiles to become
+     * Checks that a cleared multi-tile face causes all affected tiles to become
      * fog-of-war.
      * @throws IOException if an error occurs
      */
@@ -549,7 +549,7 @@ public class CfMapUpdaterTest extends TestCase {
     }
 
     /**
-     * Check that a regression causing display artifacts is fixed.
+     * Checks that a regression causing display artifacts is fixed.
      * @throws IOException if an error occurs
      */
     public void testDisplayArtifacts1() throws IOException {
@@ -631,7 +631,7 @@ public class CfMapUpdaterTest extends TestCase {
     }
 
     /**
-     * Check that a regression causing display artifacts is fixed.
+     * Checks that a regression causing display artifacts is fixed.
      * @throws IOException if an error occurs
      */
     public void testDisplayArtifacts2() throws IOException {
@@ -656,7 +656,7 @@ public class CfMapUpdaterTest extends TestCase {
     }
 
     /**
-     * Check that a regression causing display artifacts is fixed.
+     * Checks that a regression causing display artifacts is fixed.
      * @throws IOException if an error occurs
      */
     public void testDisplayArtifacts3() throws IOException {
@@ -703,6 +703,16 @@ public class CfMapUpdaterTest extends TestCase {
         assertEquals(""+"[][][][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][]\n", toString(mapUpdater.getMap(), 5, 10, 9, 1));
     }
 
+    /**
+     * Returns a string representation of a rectangular area of a {@link CfMap}
+     * instance.
+     * @param map the map instance
+     * @param x0 the left border of the area
+     * @param y0 the top border of the area
+     * @param w the width of the area
+     * @param h the height of the area
+     * @return the string representation
+     */
     @NotNull
     private static String toString(@NotNull final CfMap map, final int x0, final int y0, final int w, final int h) {
         final StringBuilder sb = new StringBuilder();
@@ -750,6 +760,13 @@ public class CfMapUpdaterTest extends TestCase {
         return sb.toString();
     }
 
+    /**
+     * Adds a new face to a {@link FaceCache}.
+     * @param faceCache the face cache to add to
+     * @param faceNum the face number to add
+     * @param faceName the face name to add
+     * @param data the face data as .png
+     */
     private static void defineFace(@NotNull final FaceCache faceCache, final int faceNum, @NotNull final String faceName, @NotNull final byte[] data) {
         final Face face = new Face(faceNum, faceName, 0);
         faceCache.addFace(face);
