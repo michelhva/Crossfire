@@ -39,7 +39,7 @@ import junit.textui.TestRunner;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Regression tests for class {@link Parser}.
+ * Regression tests for {@link Parser}.
  * @author Andreas Kirschbaum
  */
 public class ParserTest extends TestCase {
@@ -261,7 +261,7 @@ public class ParserTest extends TestCase {
 
         /**
          * Checks for expected contents of {@link #buffer}.
-         * @param expected The expected buffer contents.
+         * @param expected the expected buffer contents
          */
         private void checkResult(@NotNull final String expected) {
             assertEquals(expected, dumpBuffer());
