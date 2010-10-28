@@ -41,6 +41,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Regression tests for {@link CfMapUpdater}.
  * @author Andreas Kirschbaum
+ * @noinspection MagicNumber
  */
 public class CfMapUpdaterTest extends TestCase {
 
