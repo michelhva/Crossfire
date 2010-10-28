@@ -135,7 +135,6 @@ public class GUICharacterList extends GUIList {
      */
     @Override
     protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
-
     }
 
     /**

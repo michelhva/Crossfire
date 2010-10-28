@@ -188,8 +188,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
      * {@inheritDoc}
      */
     @Override
-    public boolean canScroll(final int distance) // XXX: implement |distance|>1
-    {
+    public boolean canScroll(final int distance) { // XXX: implement |distance|>1
         if (distance < 0) {
             return renderStateManager.canScrollUp();
         } else if (distance > 0) {
