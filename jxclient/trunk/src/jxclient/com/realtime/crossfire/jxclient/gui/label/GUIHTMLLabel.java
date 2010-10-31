@@ -61,7 +61,7 @@ public class GUIHTMLLabel extends AbstractLabel {
     @NotNull
     private static final Pattern PATTERN_LINE_BREAK = Pattern.compile("<br>");
 
-    @Nullable
+    @NotNull
     private final Font font;
 
     @NotNull
@@ -82,7 +82,7 @@ public class GUIHTMLLabel extends AbstractLabel {
      * @param backgroundColor the background color; ignored if background
      * picture is set
      */
-    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage backgroundPicture, @Nullable final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text) {
+    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage backgroundPicture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text) {
         super(tooltipManager, elementListener, name, extent, backgroundPicture, backgroundColor);
         this.font = font;
         this.color = color;
@@ -117,9 +117,6 @@ public class GUIHTMLLabel extends AbstractLabel {
     @Override
     protected void render(@NotNull final Graphics2D g2) {
         super.render(g2);
-        if (font == null) {
-            return;
-        }
 
         g2.setFont(font);
         g2.setColor(color);

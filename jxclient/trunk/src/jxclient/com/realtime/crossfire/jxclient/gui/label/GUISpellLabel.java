@@ -123,7 +123,7 @@ public class GUISpellLabel extends GUIHTMLLabel {
      * @param type The display type.
      * @param currentSpellManager The current spell manager to track.
      */
-    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @Nullable final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager) {
+    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @NotNull final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager) {
         super(tooltipManager, elementListener, name, extent, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
         this.facesManager = facesManager;
         this.type = type;
