@@ -147,20 +147,21 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         this.listCellRenderer = listCellRenderer;
         this.doubleClickCommandList = doubleClickCommandList;
 
-        viewport.setView(list);
-        scrollPane = new JScrollPane(null, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollPane.setViewport(viewport);
-        viewport.setScrollMode(JViewport.BLIT_SCROLL_MODE);
-        scrollPane.setOpaque(false);
-        viewport.setOpaque(false);
-        scrollPane.setBorder(new EmptyBorder(0, 0, 0, 0));
-
         list.setCellRenderer(listCellRenderer);
         list.setFixedCellWidth(cellWidth);
         list.setFixedCellHeight(cellHeight);
         list.setOpaque(false);
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         list.addListSelectionListener(listSelectionListener);
+
+        viewport.setView(list);
+        viewport.setScrollMode(JViewport.BLIT_SCROLL_MODE);
+        viewport.setOpaque(false);
+
+        scrollPane = new JScrollPane(null, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollPane.setViewport(viewport);
+        scrollPane.setOpaque(false);
+        scrollPane.setBorder(new EmptyBorder(0, 0, 0, 0));
     }
 
     /**
