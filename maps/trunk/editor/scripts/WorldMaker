@@ -96,10 +96,12 @@ void checkDaList() {
         File f = new File("/tmp/tmp.ppm");
         String header = "P6\n"+DestWidth+" "+DestHeight+"\n255\n" ;
         print("generating empty picture");
-        FileOutputStream fos = new FileOutputStream(f,false);
+        FileOutputStream fos = new FileOutputStream(f, false);
         fos.write(header.getBytes());
         byte[] buf = new byte[(int)DestWidth.intValue()*3];
-        for (int i=0;i<DestHeight.intValue();i++) fos.write(buf);
+        for (int i = 0; i < DestHeight.intValue(); i++) {
+            fos.write(buf);
+        }
         fos.close();
         firstRun = true;
     }
@@ -129,7 +131,7 @@ void checkDaList() {
                          index+row*DestWidth.intValue()*(long)3,
                          TileWidth.intValue()*(long)3
                          );
-                    mbb.put(buf,(int)(row*TileWidth.intValue()*3),(int)(TileWidth.intValue()*3));
+                    mbb.put(buf, (int)(row*TileWidth.intValue()*3), (int)(TileWidth.intValue()*3));
                 }
 
             }
