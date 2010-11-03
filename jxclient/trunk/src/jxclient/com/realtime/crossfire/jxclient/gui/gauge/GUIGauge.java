@@ -30,7 +30,6 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -94,7 +93,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      */
-    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix) {
+    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
         final int w = extent.getConstantW();
         final int h = extent.getConstantH();
@@ -122,16 +121,16 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
      * @throws IllegalArgumentException if <code>image</code> is not
      * <code>null</code> and it's size is not <code>w</code>x<code>h</code>
      */
-    private static void checkSize(@Nullable final RenderedImage image, @NotNull final String name, final int w, final int h) {
+    private static void checkSize(@Nullable final Image image, @NotNull final String name, final int w, final int h) {
         if (image == null) {
             return;
         }
 
-        if (image.getWidth() != w) {
+        if (image.getWidth(null) != w) {
             throw new IllegalArgumentException("width of '"+name+"' does not match element width");
         }
 
-        if (image.getHeight() != h) {
+        if (image.getHeight(null) != h) {
             throw new IllegalArgumentException("height of '"+name+"' does not match element height");
         }
     }
