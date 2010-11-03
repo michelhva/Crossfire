@@ -107,7 +107,9 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
         tooltipText = "-";      // make sure the following setValues() does not short-cut
         orientation.setExtends(w, h);
         orientation.setHasNegativeImage(negativeImage != null);
-        setValues(0, 0, 0, "", "");
+        orientation.setValues(0, 0, 0);
+        gaugeState.setValues(orientation);
+        updateTooltipText();
     }
 
     /**
@@ -163,6 +165,14 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
             setChanged();
         }
 
+        updateTooltipText();
+    }
+
+    /**
+     * Updates the tooltip's text from {@link #tooltipPrefix} ad {@link
+     * #tooltipText}.
+     */
+    private void updateTooltipText() {
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }
 
