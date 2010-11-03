@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.gauge;
 
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
@@ -33,12 +32,6 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class GaugeState {
-
-    /**
-     * The owner gui element.
-     */
-    @NotNull
-    private final GUIElement owner;
 
     /**
      * The image representing a full gauge.
@@ -90,15 +83,13 @@ public class GaugeState {
 
     /**
      * Creates a new instance.
-     * @param owner the owner gui element
      * @param fullImage the image representing a full gauge
      * @param negativeImage the image representing a more-than-empty gauge; if
      * set to <code>null</code> the gauge remains in empty state
      * @param dx the x-offset for drawing
      * @param dy the y-offset for drawing
      */
-    public GaugeState(@NotNull final GUIElement owner, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, final int dx, final int dy) {
-        this.owner = owner;
+    public GaugeState(@Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, final int dx, final int dy) {
         this.fullImage = fullImage;
         this.negativeImage = negativeImage;
         this.dx = dx;
@@ -108,8 +99,9 @@ public class GaugeState {
     /**
      * Updates the values from a {@link Orientation} state.
      * @param orientation the state
+     * @return whether the state has changed
      */
-    public void setValues(@NotNull final Orientation orientation) {
+    public boolean setValues(@NotNull final Orientation orientation) {
         final int newFilledX = orientation.getX();
         final int newFilledY = orientation.getY();
         final int newFilledW = orientation.getW();
@@ -117,7 +109,7 @@ public class GaugeState {
         final Image newFilledPicture = orientation.isValid() ? orientation.isNegativeImage() ? negativeImage : fullImage : null;
 
         if (filledX == newFilledX && filledY == newFilledY && filledW == newFilledW && filledH == newFilledH && filledPicture == newFilledPicture) {
-            return;
+            return false;
         }
 
         filledX = newFilledX;
@@ -125,7 +117,7 @@ public class GaugeState {
         filledW = newFilledW;
         filledH = newFilledH;
         filledPicture = newFilledPicture;
-        owner.setChanged();
+        return true;
     }
 
     /**

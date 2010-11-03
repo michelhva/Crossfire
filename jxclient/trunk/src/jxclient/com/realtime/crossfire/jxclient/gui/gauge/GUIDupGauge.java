@@ -122,8 +122,8 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
         this.orientationDiv = orientationDiv;
         this.orientationMod = orientationMod;
         this.tooltipPrefix = tooltipPrefix;
-        gaugeStateDiv = new GaugeState(this, fullImageDiv, null, 0, 0);
-        gaugeStateMod = new GaugeState(this, fullImageMod, null, 0, h/2);
+        gaugeStateDiv = new GaugeState(fullImageDiv, null, 0, 0);
+        gaugeStateMod = new GaugeState(fullImageMod, null, 0, h/2);
         tooltipText = "-";      // make sure the following setValues() does not short-cut
         orientationDiv.setExtends(w, h);
         orientationMod.setExtends(w, h);
@@ -187,8 +187,12 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
         this.labelText = labelText;
         this.tooltipText = tooltipText;
 
-        gaugeStateDiv.setValues(orientationDiv);
-        gaugeStateMod.setValues(orientationMod);
+        if (gaugeStateDiv.setValues(orientationDiv)) {
+            setChanged();
+        }
+        if (gaugeStateMod.setValues(orientationMod)) {
+            setChanged();
+        }
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }
