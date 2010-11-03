@@ -104,7 +104,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
         this.emptyImage = emptyImage;
         this.orientation = orientation;
         this.tooltipPrefix = tooltipPrefix;
-        gaugeState = new GaugeState(this, fullImage, negativeImage, 0, 0);
+        gaugeState = new GaugeState(fullImage, negativeImage, 0, 0);
         tooltipText = "-";      // make sure the following setValues() does not short-cut
         orientation.setExtends(w, h);
         orientation.setHasNegativeImage(negativeImage != null);
@@ -160,7 +160,9 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
 
         this.tooltipText = tooltipText;
 
-        gaugeState.setValues(orientation);
+        if (gaugeState.setValues(orientation)) {
+            setChanged();
+        }
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }
