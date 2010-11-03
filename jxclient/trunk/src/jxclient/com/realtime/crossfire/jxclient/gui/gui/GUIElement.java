@@ -399,7 +399,7 @@ public abstract class GUIElement extends JComponent {
      * @param w the width
      * @param h the height
      */
-    public void setTooltipText(@Nullable final String tooltipText, final int x, final int y, final int w, final int h) {
+    protected void setTooltipText(@Nullable final String tooltipText, final int x, final int y, final int w, final int h) {
         final TooltipText oldTooltipText = this.tooltipText;
         if (oldTooltipText == null) {
             if (tooltipText == null) {
