@@ -11,7 +11,7 @@ enter_x 15
 enter_y 7
 msg
 Created:  2009-01-22 Rick Tanner
-Modified: 2009-01-23 Rick Tanner
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
 arch dun33
@@ -804,6 +804,8 @@ name floor
 face shop_empty.111
 x 13
 y 4
+no_magic 1
+damned 1
 end
 arch shop_mat
 name Exit

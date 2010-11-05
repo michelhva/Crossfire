@@ -11,7 +11,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1993-10-16
-Modified: 2008-12-14 Rick Tanner
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
 arch shop_empty
@@ -1027,7 +1027,9 @@ arch menu
 x 12
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 12
 y 15
 end
@@ -1109,7 +1111,9 @@ arch woodfloor
 x 13
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 13
 y 15
 end
@@ -1199,7 +1203,9 @@ arch woodfloor
 x 14
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 14
 y 15
 end
@@ -1316,7 +1322,9 @@ arch wall_2_1_1
 x 15
 y 11
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 15
 y 12
 end
@@ -1324,7 +1332,9 @@ arch wall_2_1_1
 x 15
 y 12
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 15
 y 13
 end
@@ -1332,7 +1342,9 @@ arch wall_2_1_1
 x 15
 y 13
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 15
 y 14
 end
@@ -1340,7 +1352,9 @@ arch wall_2_1_1
 x 15
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 15
 y 15
 end
