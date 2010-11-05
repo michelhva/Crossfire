@@ -131,10 +131,12 @@ x 1
 y 1
 type 20
 move_block all
+no_pick 1
 end
 arch elvenboots
 x 1
 y 1
+unpaid 1
 end
 arch shop_empty
 x 1
@@ -152,10 +154,12 @@ x 1
 y 2
 type 20
 move_block all
+no_pick 1
 end
 arch elven_bow
 x 1
 y 2
+unpaid 1
 end
 arch shop_empty
 x 1
@@ -261,6 +265,7 @@ arch chair_1.2
 x 2
 y 1
 value 0
+unpaid 1
 identified 1
 end
 arch shop_empty
@@ -271,6 +276,7 @@ arch chair_1.2
 x 2
 y 2
 value 0
+unpaid 1
 identified 1
 end
 arch shop_empty
