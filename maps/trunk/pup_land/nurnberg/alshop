@@ -12,7 +12,7 @@ enter_x 25
 enter_y 3
 msg
 Created:  1997-11-05 Xtreme
-Modified: 2008-11-02 Rick Tanner
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -355,6 +355,7 @@ end
 arch potion_heroism
 x 2
 y 14
+unpaid 1
 arch spell_heroism
 end
 end
@@ -1037,6 +1038,7 @@ end
 arch potion_fire
 x 6
 y 23
+unpaid 1
 end
 arch dungeon_floor
 x 6
@@ -3063,6 +3065,7 @@ end
 arch potion_cold
 x 20
 y 23
+unpaid 1
 end
 arch dungeon_floor
 x 20
@@ -3567,6 +3570,7 @@ end
 arch potion_shielding
 x 24
 y 14
+unpaid 1
 end
 arch dungeon_floor
 x 24

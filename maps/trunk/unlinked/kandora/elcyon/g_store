@@ -5,6 +5,7 @@ height 15
 enter_x 15
 msg
 Created:  1999-02-03 King Zoobus
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
 arch shop_empty
@@ -116,6 +117,7 @@ end
 arch barrel
 x 1
 y 3
+no_pick 1
 end
 arch shop_empty
 x 1
@@ -259,6 +261,7 @@ end
 arch barrel
 x 3
 y 1
+no_pick 1
 end
 arch shop_food
 x 3
@@ -785,6 +788,7 @@ end
 arch barrel
 x 10
 y 1
+no_pick 1
 end
 arch shop_ring
 x 10
@@ -867,10 +871,12 @@ end
 arch cauldron
 x 11
 y 1
+unpaid 1
 end
 arch barrel
 x 11
 y 1
+no_pick 1
 end
 arch shop_ring
 x 11
@@ -949,6 +955,7 @@ end
 arch barrel
 x 12
 y 1
+no_pick 1
 end
 arch shop_ring
 x 12
@@ -1046,6 +1053,7 @@ end
 arch barrel
 x 13
 y 2
+no_pick 1
 end
 arch shop_empty
 x 13
