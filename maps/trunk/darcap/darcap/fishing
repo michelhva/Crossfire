@@ -5,7 +5,7 @@ width 10
 height 10
 msg
 Created:  2010-01-14 Nicolas Weeger
-Modified: 2010-04-08 Nicolas Weeger
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -273,6 +273,8 @@ end
 arch flagstone
 x 4
 y 2
+no_magic 1
+damned 1
 end
 arch shop_mat
 msg

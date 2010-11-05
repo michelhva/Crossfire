@@ -8,7 +8,7 @@ enter_x 2
 enter_y 1
 msg
 Created:  2001-05-06
-Modified: 2010-06-26 Nicolas Weeger
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -814,19 +814,11 @@ arch woodfloor
 x 6
 y 5
 end
-arch shop_empty
-x 6
-y 5
-end
 arch shop_mat
 x 6
 y 5
 end
 arch woodfloor
-x 6
-y 6
-end
-arch shop_empty
 x 6
 y 6
 end

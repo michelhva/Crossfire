@@ -11,7 +11,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1993-10-15
-Modified: 2008-12-16 Rick Tanner
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
 arch shop_empty
@@ -1158,7 +1158,9 @@ arch woodfloor
 x 13
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 13
 y 15
 end
@@ -1240,17 +1242,19 @@ arch woodfloor
 x 14
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 14
 y 15
 end
 arch oakdoor_2
 slaying /world/world_104_115
-Name Exit back to town
 hp 42
 sp 32
 x 14
 y 15
+Name Exit back to town
 end
 arch shop_empty
 x 15
@@ -1334,7 +1338,9 @@ arch woodfloor
 x 15
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 15
 y 15
 end
@@ -1458,7 +1464,9 @@ arch identify_table
 x 16
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 16
 y 15
 end
@@ -1564,7 +1572,9 @@ arch swall_1_3_half
 x 17
 y 11
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 17
 y 12
 end
@@ -1572,7 +1582,9 @@ arch wall_2_1_1
 x 17
 y 12
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 17
 y 13
 end
@@ -1580,7 +1592,9 @@ arch wall_2_1_1
 x 17
 y 13
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 17
 y 14
 end
@@ -1588,7 +1602,9 @@ arch wall_2_1_1
 x 17
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 17
 y 15
 end

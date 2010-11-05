@@ -7,8 +7,8 @@ import java.io.FileWriter;
 import java.util.Iterator;
 import net.sf.gridarta.model.gameobject.GameObject;
 import net.sf.gridarta.model.io.RecursiveFileIterator;
-import net.sf.gridarta.model.map.validation.ErrorCollector;
-import net.sf.gridarta.model.map.validation.errors.ValidationError;
+import net.sf.gridarta.model.validation.ErrorCollector;
+import net.sf.gridarta.model.validation.errors.ValidationError;
 
 void log(String message) {
     print(message);

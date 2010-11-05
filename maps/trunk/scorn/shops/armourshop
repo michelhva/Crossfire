@@ -11,7 +11,7 @@ enter_x 14
 enter_y 1
 msg
 Created:  1993-10-15
-Modified: 2010-04-27 Cavesomething
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
 arch shop_empty
@@ -99,22 +99,25 @@ end
 arch wall_2_1_1
 y 12
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 y 13
 end
 arch wall_2_1_1
 y 13
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 y 14
 end
 arch wall_2_1_1
 y 14
 end
-arch shop_empty
-y 15
-end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 y 15
 end
 arch wall_2_2_1
@@ -219,7 +222,9 @@ arch woodfloor
 x 1
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 15
 end
@@ -305,7 +310,9 @@ arch woodfloor
 x 2
 y 14
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 15
 end
