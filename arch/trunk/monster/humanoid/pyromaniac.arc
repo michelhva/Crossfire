@@ -6,7 +6,6 @@ alive 1
 monster 1
 move_type walk
 no_pick 1
-type 139
 face pyromaniac.111
 animation pyromaniac
 ac 6
