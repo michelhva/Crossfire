@@ -61,6 +61,13 @@ public class GUILabelFailure extends GUIMultiLineLabel {
             setText(arguments);
         }
 
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void clearFailure() {
+            setText("");
+        }
     };
 
     /**
