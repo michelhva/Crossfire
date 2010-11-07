@@ -2710,6 +2710,15 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
+     * Inform the various failure listeners that they can clean the last displayed failure.
+     */
+    private void clearFailure() {
+        for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
+            crossfireFailureListener.clearFailure();
+        }
+    }
+
+    /**
      * Processes a 'goodbye' server command.
      * @param packet the packet's payload
      * @throws UnknownCommandException if the packet is invalid.
@@ -3612,6 +3621,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public void sendAccountLogin(@NotNull final String login, @NotNull final String password) {
+        clearFailure();
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send accountlogin "+login);
         }
@@ -4166,6 +4176,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     @Override
     public void connect(@NotNull final String hostname, final int port) {
         accountName = null;
+        clearFailure();
         clientSocketState = ClientSocketState.CONNECTING;
         setClientSocketState(ClientSocketState.CONNECTING, ClientSocketState.CONNECTING);
         super.connect(hostname, port);
@@ -4194,6 +4205,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public void sendAccountPlay(@NotNull final String name) {
+        clearFailure();
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send accountplay "+name);
         }
@@ -4217,6 +4229,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public void sendAccountLink(final int force, @NotNull final String login, @NotNull final String password) {
+        clearFailure();
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send accountaddplayer "+login);
         }
@@ -4237,6 +4250,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public void sendAccountCreate(@NotNull final String login, @NotNull final String password) {
+        clearFailure();
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send accountnew "+login);
         }
@@ -4257,6 +4271,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public void sendAccountCharacterCreate(@NotNull final String login, @NotNull final String password) {
+        clearFailure();
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send createplayer "+login);
         }

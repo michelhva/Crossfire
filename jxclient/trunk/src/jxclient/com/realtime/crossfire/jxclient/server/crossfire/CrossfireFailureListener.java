@@ -37,4 +37,9 @@ public interface CrossfireFailureListener {
      * command and the context.
      */
     void failure(@NotNull String command, @NotNull String arguments);
+
+    /**
+     * Failure is not relevant anymore, clean it.
+     */
+    void clearFailure();
 }
