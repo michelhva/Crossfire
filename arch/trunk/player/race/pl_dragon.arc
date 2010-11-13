@@ -4,7 +4,7 @@ race dragon
 randomitems dragon_player_items
 face pl_dragon_r.151
 msg
-Skills: Clawing, Levitate, Woodsman, Evocation
+Skills: Clawing, Levitate, Woodsman, Pyromancy
 Resistances: None
 Attunements: None
 Special: Can not use weapons or most armor.  Natural armor improves over time

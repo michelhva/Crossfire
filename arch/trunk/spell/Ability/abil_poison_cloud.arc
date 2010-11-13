@@ -18,5 +18,6 @@ value 20
 attacktype 1024
 no_drop 1
 invisible 1
+skill sorcery                                                                
 food 5
 end

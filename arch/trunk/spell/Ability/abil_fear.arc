@@ -19,4 +19,5 @@ value 40
 attacktype 16384
 no_drop 1
 invisible 1
+skill sorcery                                                                
 end

@@ -11,6 +11,7 @@ dam 12
 dam_modifier 4
 duration 11
 maxsp 48
+skill evocation
 type 101
 subtype 4
 value 30
