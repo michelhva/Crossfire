@@ -8,6 +8,7 @@ level 9
 value 90
 sp 10
 casting_time 3
+skill evocation                                                              
 path_attuned 8
 other_arch ball_lightning
 dam 8

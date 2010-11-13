@@ -7,6 +7,7 @@ sp 5
 casting_time 4
 path_attuned 2048
 other_arch firebreath
+skill pyromancy                                                              
 type 101
 subtype 15
 value 60

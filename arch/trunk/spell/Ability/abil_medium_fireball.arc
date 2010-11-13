@@ -18,5 +18,6 @@ value 30
 attacktype 4
 no_drop 1
 invisible 1
+skill pyromancy
 food 4
 end

@@ -12,6 +12,7 @@ path_attuned 2
 other_arch shell
 dam 7
 dam_modifier 0
+skill pyromancy                                                              
 range 8
 duration 4
 maxsp 0
