@@ -230,7 +230,7 @@ public class Pickup {
         //      optionManager.addOption("pickup_ratio75", "Pickup mode: weight/value >= 75", newPickupOption(PU_RATIO, 15));
         optionManager.addOption("pickup_food", "Pickup mode: food", newPickupOption(PU_FOOD, "<html>Picks up food items.<br>Flesh items are not included."));
         optionManager.addOption("pickup_drink", "Pickup mode: drinks", newPickupOption(PU_DRINK, "<html>Picks up drinkable items."));
-        optionManager.addOption("pickup_valuables", "Pickup mode: valuables", newPickupOption(PU_VALUABLES, "<html>Picks up valuable items."));
+        optionManager.addOption("pickup_valuables", "Pickup mode: valuables", newPickupOption(PU_VALUABLES, "<html>Picks up money and gems."));
         optionManager.addOption("pickup_bow", "Pickup mode: bows", newPickupOption(PU_BOW, "<html>Picks up bows and crossbows."));
         optionManager.addOption("pickup_arrow", "Pickup mode: arrows", newPickupOption(PU_ARROW, "<html>Picks up arrows and bolts."));
         optionManager.addOption("pickup_helmet", "Pickup mode: helmets", newPickupOption(PU_HELMET, "<html>Picks up helmets."));
@@ -249,7 +249,7 @@ public class Pickup {
         optionManager.addOption("pickup_readables", "Pickup mode: readables", newPickupOption(PU_READABLES, "<html>Picks up readables."));
         optionManager.addOption("pickup_magic_device", "Pickup mode: magic devices", newPickupOption(PU_MAGIC_DEVICE, "<html>Picks up magic devices."));
         optionManager.addOption("pickup_not_cursed", "Pickup mode: not cursed items", newPickupOption(PU_NOT_CURSED, "<html>Ignores cursed items."));
-        optionManager.addOption("pickup_jewels", "Pickup mode: jewels", newPickupOption(PU_JEWELS, "<html>Picks up jewels."));
+        optionManager.addOption("pickup_jewels", "Pickup mode: jewels", newPickupOption(PU_JEWELS, "<html>Picks up rings and amulets."));
         optionManager.addOption("pickup_flesh", "Pickup mode: flesh", newPickupOption(PU_FLESH, "<html>Picks up flesh items."));
         optionManager.addOption("pickup_containers", "Pickup mode: container", newPickupOption(PU_CONTAINER, "<html>Picks up containers."));
         optionManager.addOption("pickup_inhibit", "Pickup mode: inhibit pickup", newPickupOption(PU_INHIBIT, "<html>Disables pickup mode."));
