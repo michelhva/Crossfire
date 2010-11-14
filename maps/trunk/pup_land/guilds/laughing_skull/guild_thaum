@@ -13,7 +13,7 @@ Editor: CrossfireEditor
 Date:    3/19/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-09-04 Nicolas Weeger
+Modified: 2010-11-14 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -154,7 +154,7 @@ unique 1
 end
 arch altar_trigger
 name New Thaumaturge Desk
-slaying ThaymaturgyDesk
+slaying ThaumaturgyDesk
 msg
 Removing your old cauldron. Please wait.
 endmsg
