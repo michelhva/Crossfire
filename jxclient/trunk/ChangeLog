@@ -1,3 +1,7 @@
+2010-11-14  Andreas Kirschbaum
+
+	* Fix possible AssertionError due to race condition.
+
 2010-11-14  Nicolas Weeger
 
 	* Fix inverted valuables and jewels.
