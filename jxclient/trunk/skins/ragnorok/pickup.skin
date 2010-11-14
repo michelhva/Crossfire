@@ -10,8 +10,8 @@ checkbox checkbox_not_cursed  10  90 180 16 pickup_not_cursed Ignore cursed
 
 label_text label_misc         10 120 180 16 font_title BLACK Miscellaneous:
 checkbox checkbox_key         10 140 180 16 pickup_key Keys
-checkbox checkbox_valuables   10 160 180 16 pickup_valuables Rings and amulets
-checkbox checkbox_jewels      10 180 180 16 pickup_jewels Money and jewels
+checkbox checkbox_valuables   10 160 180 16 pickup_valuables Money and jewels
+checkbox checkbox_jewels      10 180 180 16 pickup_jewels Rings and amulets
 checkbox checkbox_containers  10 200 180 16 pickup_containers Containers
 
 #label_text label_ratio        10 120 180 16 font_title BLACK Weight/Value Ratio:
