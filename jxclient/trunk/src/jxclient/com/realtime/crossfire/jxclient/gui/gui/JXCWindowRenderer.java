@@ -688,7 +688,9 @@ public class JXCWindowRenderer {
             skippedPaint = true;
             return;
         }
-
+        if (bufferStrategy == null) {
+            return;
+        }
         if (forcePaint) {
             forcePaint = false;
         } else if (!needRedraw()) {
