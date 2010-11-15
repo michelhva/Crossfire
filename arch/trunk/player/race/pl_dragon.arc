@@ -50,6 +50,9 @@ body_waist 1
 maxhp 30
 maxsp 30
 maxgrace 30
+# Key/value list
+race_choice_1 dragon_ability_force_fire dragon_ability_force_cold dragon_ability_force_electricity dragon_ability_force_poison
+race_choice_description_1 Choose a dragon focus
 end
 Object dragon_skin_force
 name dragon skin
@@ -69,4 +72,64 @@ face blank.111
 neutral 1
 no_drop 1
 end
-
+# These are used during character creation - presented
+# as choice to player to choose one of these.
+Object dragon_ability_force_fire
+name Fire hatchling focus
+title fire hatchling
+invisible 1
+type 10
+exp 2
+neutral 1
+no_drop 1
+face pl_dragon_r.151
+animation pl_dragon_r
+is_animated 1
+anim_speed -1
+auto_apply 1
+end
+#
+Object dragon_ability_force_electricity
+name Electricity hatchling focus
+title electricity hatchling
+invisible 1
+type 10
+exp 3
+neutral 1
+no_drop 1
+face pl_dragon.151
+animation pl_dragon_blue
+is_animated 1
+anim_speed -1
+auto_apply 1
+end
+#
+Object dragon_ability_force_cold
+name Cold hatchling focus
+title cold hatchling
+invisible 1
+type 10
+exp 4
+neutral 1
+no_drop 1
+face pl_dragon_bl.151
+animation pl_dragon_bl
+is_animated 1
+anim_speed -1
+auto_apply 1
+end
+#
+Object dragon_ability_force_poison
+name Poison hatchling focus
+title poison hatchling
+invisible 1
+type 10
+exp 10
+neutral 1
+no_drop 1
+face pl_dragon_g.151
+animation pl_dragon_g
+is_animated 1
+anim_speed -1
+auto_apply 1
+end
