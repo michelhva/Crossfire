@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2010-10-10 Nicolas Weeger
+Modified: 2010-11-18 perkins
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -6268,6 +6268,14 @@ x 22
 y 43
 elevation 0
 end
+arch farmhouse
+name Fernicious Fenx Family Pet Emporium
+slaying ../darcap/darcap/petshop
+hp 7
+sp 23
+x 22
+y 43
+end
 arch brush
 x 22
 y 44
@@ -6623,6 +6631,16 @@ arch grass
 x 23
 y 44
 elevation 0
+end
+arch magic_mouth
+name Pet Chicken
+msg
+Ooh, a tame chicken!  And look, it's a new pet shop.
+endmsg
+face chicken.172
+x 23
+y 44
+invisible 0
 end
 arch grass
 x 23
