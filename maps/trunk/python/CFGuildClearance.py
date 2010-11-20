@@ -28,11 +28,10 @@ def CheckClearance(lParams,oActivator):
         iClearanceLevel=ClearanceLevels.get(lParams[1],0)
         dGuildInfo=oGuild.info(oActivator.Name)
         
-                
         if dGuildInfo==0:
-                iClearanceApproved=0
-        else:
-                iClearanceApproved=ClearanceLevels.get(dGuildInfo['Rank'],0)
+            return False
+
+        iClearanceApproved=ClearanceLevels.get(dGuildInfo['Rank'],0)
         if dGuildInfo["Status"]=='suspended':
                 iClearanceApproved=0
                 Crossfire.WhoIsActivator().Say("You are currently suspended from the guild.")
