@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-11-18 Nicolas Weeger
+Modified: 2010-11-20 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -3547,6 +3547,7 @@ dam 0
 x 12
 y 11
 attacktype 0
+lifesave 1
 arch event_trigger
 name ZasekiDzukiRyoku Initiate A
 title Python
@@ -3565,6 +3566,22 @@ end
 arch dungeon_magic
 x 12
 y 12
+end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 12
+y 12
+attacktype 0
+lifesave 1
+arch event_trigger
+name ZasekiDzukiRyoku Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
 end
 arch woodfloor
 x 12
@@ -3572,16 +3589,12 @@ y 12
 unique 1
 end
 arch rune_heal
-hp 100000
+hp 100
 x 12
 y 12
 invisible 0
+lifesave 1
 arch spell_heal
-end
-arch event_trigger
-name ZasekiDzukiRyoku Initiate A
-title Python
-slaying /python/guilds/arrest.py
 end
 end
 arch dungeon_magic
@@ -3998,6 +4011,7 @@ dam 0
 x 13
 y 20
 attacktype 0
+lifesave 1
 arch event_trigger
 name ZasekiDzukiRyoku Initiate A
 title Python
@@ -5942,6 +5956,7 @@ x 19
 y 4
 level 100
 attacktype 0
+lifesave 1
 arch event_trigger
 name ZasekiDzukiRyoku Initiate A
 title Python
@@ -7053,6 +7068,7 @@ x 22
 y 23
 level 100
 attacktype 0
+lifesave 1
 arch event_trigger
 name ZasekiDzukiRyoku Initiate
 title Python
