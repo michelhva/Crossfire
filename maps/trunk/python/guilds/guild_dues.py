@@ -319,8 +319,8 @@ class GuildDues:
             self.handle_jack()
             return
 
-        # todo: don't hardcode
-        bank.deposit(self.accountname, 5000)
+        amount = Crossfire.WhoIsOther().Value * Crossfire.WhoIsOther().Quantity
+        bank.deposit(self.accountname, amount)
 
 dues = GuildDues()
 dues.handle()
