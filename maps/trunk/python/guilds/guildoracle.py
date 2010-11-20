@@ -78,10 +78,13 @@ if (Access ==1) or (isDM == 1):
                         else:
                                 message = 'Usage "remove <member_name>"'
                 elif text[0] == 'list':
+                        Crossfire.SetPlayerMessage('Who are the members?', 2)
                         list = guild.list_members()
+
+                        message = '\nList of members:\n'
                         for member in list:
-                                activator.Write(member)
-                        message = 'Total members = ' + str(len(list))
+                                message += '%s (%s)\n'%(member, guild.info(member)['Rank'])
+                        message += 'Total members = ' + str(len(list))
 
                 elif text[0] == 'promote':
                         if len(text)==2:
@@ -121,7 +124,7 @@ if (Access ==1) or (isDM == 1):
                                 else:
                                         message = '%s is not a member' %text[1]
                         else:
-                                message = 'Usage "status <member_name> <status>\n%s"' %str(guild.status)
+                                message = 'Usage "status <member_name> <status>%s\s"' %str(guild.status)
                 elif text[0] == 'add' and isDM:
                         if len(text)==2:
                                 if log.info(text[1]):
