@@ -17,7 +17,7 @@ def find_player(object):
 
 
 whoami=Crossfire.WhoAmI()
-texta=string.split(Crossfire.WhatIsMessage())
+
 def CheckClearance(lParams,oActivator):
         
         ClearanceLevels={"Initiate":1,"Novice":2,"Guildman":3,"Journeyman":4,"Master":5,"GuildMaster":6}
@@ -44,7 +44,11 @@ def CheckClearance(lParams,oActivator):
         
 
 if __name__=='__builtin__':
-        
+
+        texta = [ '' ]
+        if Crossfire.WhatIsMessage():
+            texta=string.split(Crossfire.WhatIsMessage())
+
         if (texta[0].upper() == 'ENTER'):
                 Params=string.split(Crossfire.ScriptParameters())
                 if CheckClearance(Params,activator):
