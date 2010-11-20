@@ -33,6 +33,9 @@ guild=CFGuilds.CFGuild(guildname)
 guildrecord=CFGuilds.CFGuildHouses().info(guildname)
 ActionRequired=Params[2]
 
+# things which are not a player are ok
+if activator.Type != Crossfire.Type.PLAYER:
+    Approved = 'Access granted'
 
 
 if (Approved != 'Access granted'):
