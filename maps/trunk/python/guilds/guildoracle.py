@@ -62,7 +62,14 @@ if (Access ==1) or (isDM == 1):
                         if len(text)==2:
                                 record = guild.info(text[1])
                                 if record:
-                                        message = '%s' %record
+                                        message = 'Information pour %s:\n' %text[1]
+                                        message += 'Rank: %s\n'%record['Rank']
+                                        message += 'Status: %s\n'%record['Status']
+                                        message += 'Join date: %s\n'%record['Join_date']
+                                        if record['Demerits'] != '0':
+                                            message += 'Demerits: %s\n'%record['Demerits']
+                                        if record['Dues'] != '0':
+                                            message += 'Paid dues: %s\n'%Crossfire.CostStringFromValue(long(record['Dues']))
                                 else:
                                         message =  '%s is not a member' %text[1]
                         else:
