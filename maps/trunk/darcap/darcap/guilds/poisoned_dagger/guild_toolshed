@@ -13,7 +13,7 @@ Editor: CrossfireEditor
 Date:    3/17/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2010-09-06 crossfire
+Modified: 2010-11-22 Khaleh
 endmsg
 end
 arch grass
@@ -3219,7 +3219,7 @@ unique 1
 end
 arch teleporter
 hp 18
-sp 8
+sp 10
 x 27
 speed 0.0
 connected 120
@@ -3251,7 +3251,7 @@ end
 arch teleporter
 name PoisonedDagger
 hp 2
-sp 8
+sp 10
 x 27
 y 2
 speed 0.0
