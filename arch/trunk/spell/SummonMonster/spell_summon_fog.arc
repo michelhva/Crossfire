@@ -13,7 +13,7 @@ skill summoning
 value 20
 no_drop 1
 invisible 1
-other_arch fog
+other_arch temp_summon_fog
 dam 2
 dam_modifier 10
 monster 1
