@@ -46,7 +46,7 @@ public abstract class GUILabel extends AbstractLabel {
     /**
      * The font for rendering the label text.
      */
-    @Nullable
+    @NotNull
     private final Font textFont;
 
     /**
@@ -74,7 +74,7 @@ public abstract class GUILabel extends AbstractLabel {
      * @param backgroundColor The background color.
      * @param textAlignment The text alignment.
      */
-    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @Nullable final Font textFont, @NotNull final Color textColor, @NotNull final Color backgroundColor, @NotNull final Alignment textAlignment) {
+    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final Font textFont, @NotNull final Color textColor, @NotNull final Color backgroundColor, @NotNull final Alignment textAlignment) {
         super(tooltipManager, elementListener, name, extent, picture, backgroundColor);
         this.textFont = textFont;
         this.textColor = textColor;
@@ -98,10 +98,6 @@ public abstract class GUILabel extends AbstractLabel {
      * @return The line height.
      */
     protected int drawLine(@NotNull final Graphics2D g, final int y0, final int h0, @NotNull final String text) {
-        if (textFont == null) {
-            return 0;
-        }
-
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.setFont(textFont);
         g.setColor(getTextColor());
