@@ -90,11 +90,13 @@ public class DebugWriter {
                 writer.append(simpleDateFormat.format(new Date()));
                 writer.append(str);
                 writer.append("\n");
-                writer.append(throwable.getClass().getName());
-                writer.append("\n");
-                for (final Object stack : throwable.getStackTrace()) {
-                    writer.append(stack.toString());
+                for (Throwable t = throwable; t != null; t = t.getCause()) {
+                    writer.append(t.getClass().getName());
                     writer.append("\n");
+                    for (final Object stack : t.getStackTrace()) {
+                        writer.append(stack.toString());
+                        writer.append("\n");
+                    }
                 }
                 writer.flush();
             } catch (final IOException ex) {
