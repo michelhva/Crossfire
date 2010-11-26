@@ -46,6 +46,12 @@ public class GUIMultiLineLabel extends GUILabel {
     private static final long serialVersionUID = 1;
 
     /**
+     * An <code>String</code> array of length 0.
+     */
+    @NotNull
+    private static final String[] EMPTY_STRING_ARRAY = new String[0];
+
+    /**
      * The pattern to split the text into lines.
      */
     @NotNull
@@ -54,8 +60,8 @@ public class GUIMultiLineLabel extends GUILabel {
     /**
      * The text lines to draw.
      */
-    @Nullable
-    private String[] lines = null;
+    @NotNull
+    private String[] lines = EMPTY_STRING_ARRAY;
 
     /**
      * Create a new instance.
@@ -92,7 +98,7 @@ public class GUIMultiLineLabel extends GUILabel {
     protected void render(@NotNull final Graphics2D g2) {
         super.render(g2);
 
-        if (lines == null || lines.length <= 0) {
+        if (lines.length <= 0) {
             return;
         }
 
