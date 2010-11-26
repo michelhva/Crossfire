@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<title>JXClient FAQ</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>JXClient FAQ</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 </head>
 <body>
 
@@ -16,7 +16,11 @@
 
 <h3>Does JXClient run on my system?</h3>
 
-<p>JXClient is a Java application. To run it you need Java 6 (<a href="http://www.java.com/">Sun's JRE</a> and <a href="http://openjdk.java.net/">OpenJDK</a> do work; gcj/gij does not). In Debian systems either of <code>sun-java6-jre</code> and <code>openjdk-6-jre</code> packages work.</p>
+<p>JXClient is a Java application. To run it you need Java 6
+    (<a href="http://www.java.com/">Sun's JRE</a> and
+    <a href="http://openjdk.java.net/">OpenJDK</a> do work; gcj/gij does not).
+    In Debian systems either of <code>sun-java6-jre</code> and <code>openjdk-6-jre</code>
+    packages work.</p>
 
 <p>The client can be run with</p>
 <pre>
@@ -25,11 +29,19 @@
 
 <h3>Is there a difference between JXClient and jcrossclient?</h3>
 
-<p>Yes: JXClient and jcrossclient are different applications. <a href="http://sourceforge.net/projects/jcrossclient/">jcrossclient's</a> intention was to run as an applet to play Crossfire through a web browser. JXClient is a stand-alone full-screen application to play Crossfire.</p>
+<p>Yes: JXClient and jcrossclient are different applications.
+    <a href="http://sourceforge.net/projects/jcrossclient/">jcrossclient's</a>
+    intention was to run as an applet to play Crossfire through a web browser.
+    JXClient is a stand-alone full-screen application to play Crossfire.</p>
 
 <h3>Where do I get JXClient from?</h3>
 
-<p>Daily updated pre-built versions are available from <a href="http://invidious.meflin.net/jxclient.jar">http://invidious.meflin.net/jxclient.jar</a> and <a href="http://crossfire.ailesse.com/#header_jxclient">http://crossfire.ailesse.com/</a>. These versions include the <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/ChangeLog">latest features</a> and therefore can be unstable.</p>
+<p>Daily updated pre-built versions are available from
+    <a href="http://invidious.meflin.net/jxclient.jar">http://invidious.meflin.net/jxclient.jar</a>
+    and <a href="http://crossfire.ailesse.com/#header_jxclient">http://crossfire.ailesse.com/</a>.
+    These versions include the
+    <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/ChangeLog">latest
+        features</a> and therefore can be unstable.</p>
 
 <p>The source code is available from</p>
 <pre>
@@ -38,28 +50,36 @@
 
 <h2>JXClient fails to start</h2>
 
-<h3>JXClient exits/crashes without displaying an error message. How can I make the error message visible?</h3>
+<h3>JXClient exits/crashes without displaying an error message. How can I make
+    the error message visible?</h3>
 
 <p>Start JXClient from a console (xterm, cmd.exe, etc.):</p>
 <pre>
     java -jar jxclient.jar
 </pre>
 
-<h3>JXClient always reports "Cannot connect to Crossfire server. Network is unreachable"</h3>
+<h3>JXClient always reports "Cannot connect to Crossfire server. Network is
+    unreachable"</h3>
 
-<p>This might be a problem with Debian based systems. See the bug report <a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=560044">net.ipv6.bindv6only=1 breaks java networking</a> for details.</p>
+<p>This might be a problem with Debian based systems. See the bug report
+    <a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=560044">net.ipv6.bindv6only=1
+        breaks java networking</a> for details.</p>
 
-<p>For the impatient: add <code>-Djava.net.preferIPv4Stack=true</code> when running JXClient:</p>
+<p>For the impatient: add <code>-Djava.net.preferIPv4Stack=true</code> when
+    running JXClient:</p>
 <pre>
     java -Djava.net.preferIPv4Stack=true -jar jxclient.jar
 </pre>
-<p>Make sure to add the option <em>before</em> <code>-jar jxclient.jar</code>.</p>
+<p>Make sure to add the option <em>before</em> <code>-jar jxclient.jar</code>.
+</p>
 
 <h3>What does java.lang.UnsupportedClassVersionError mean?</h3>
 
-<p>Your Java version is too old to run JXClient. You need at least Java 6; gcj/gij does not work.</p>
+<p>Your Java version is too old to run JXClient. You need at least Java 6;
+    gcj/gij does not work.</p>
 
 <h3>What does "java.lang.reflect.InvocationTargetException" mean?</h3>
+
 <h3>What does "java.lang.OutOfMemoryError: Java heap space" mean?</h3>
 
 <pre>
@@ -106,14 +126,17 @@
            at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:160)
 </pre>
 
-<p>The client has run out of memory. Increase the available memory by starting it with</p>
+<p>The client has run out of memory. Increase the available memory by starting
+    it with</p>
 <pre>
     java -Xmx256m -jar jxclient
 </pre>
 
 <h3>Is Java 6 available for Mac OS?</h3>
 
-<p><a href="http://bsnyderblog.blogspot.com/2008/03/java-16-via-soylatte-on-macos-x-10411.html">http://bsnyderblog.blogspot.com/2008/03/java-16-via-soylatte-on-macos-x-10411.html</a> may help.</p>
+<p>
+    <a href="http://bsnyderblog.blogspot.com/2008/03/java-16-via-soylatte-on-macos-x-10411.html">http://bsnyderblog.blogspot.com/2008/03/java-16-via-soylatte-on-macos-x-10411.html</a>
+    may help.</p>
 
 <h2>Display Settings</h2>
 
@@ -133,23 +156,32 @@
 
 <h3>Why doesn't JXClient enter full-screen mode?</h3>
 
-<p>X.org users might need to patch the Java runtime. See <a href="http://crossfire.ailesse.com/#header_jxclient">The Java Client (JXClient) on Ailesse</a> for details.</p>
+<p>X.org users might need to patch the Java runtime. See
+    <a href="http://crossfire.ailesse.com/#header_jxclient">The Java Client
+        (JXClient) on Ailesse</a> for details.</p>
 
 <h2>Key Bindings</h2>
 
 <h3>How do I focus the command input field by keyboard?</h3>
 
-<p>The preferred key to open the command input is <code>/</code>; alternatively <code>\</code> or <code>'</code> can be used. Command input automatically closes after the command has been submitted (unless the dialog has been visible before).</p>
+<p>The preferred key to open the command input is <code>/</code>; alternatively
+    <code>\</code> or <code>'</code> can be used. Command input automatically
+    closes after the command has been submitted (unless the dialog has been
+    visible before).</p>
 
 <h3>How to prevent a key binding from submitting the command?</h3>
 
-<p>Use the <code>/bind -e command</code>. This enters "command" into the command input field but does not submit it.</p>
+<p>Use the <code>/bind -e command</code>. This enters "command" into the command
+    input field but does not submit it.</p>
 
 <h3>Where are the key bindings stored?</h3>
 
-<p>Normal key bindings are stored in <code>$HOME/.crossfire/jxclient/keybindings.txt</code>.</p>
+<p>Normal key bindings are stored in <code>$HOME/.crossfire/jxclient/keybindings.txt</code>.
+</p>
 
-<p>Per-character key bindings are stored in <code>$HOME/.crossfire/jxclient-HOST-CHAR.txt</code>. <code>HOST</code> is the Crossfire server's name, <code>CHAR</code> is the character's name.</p>
+<p>Per-character key bindings are stored in <code>$HOME/.crossfire/jxclient-HOST-CHAR.txt</code>.
+    <code>HOST</code> is the Crossfire server's name, <code>CHAR</code> is the
+    character's name.</p>
 
 </body>
 </html>

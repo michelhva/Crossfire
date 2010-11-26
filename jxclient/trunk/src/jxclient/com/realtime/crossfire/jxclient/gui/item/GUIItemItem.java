@@ -77,12 +77,13 @@ public abstract class GUIItemItem extends GUIItem {
      */
     @NotNull
     private final CfItemListener itemListener = new CfItemListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void itemModified() {
             setChanged();
             updateTooltipText();
         }
+
     };
 
     /**
@@ -90,13 +91,14 @@ public abstract class GUIItemItem extends GUIItem {
      */
     @NotNull
     private final FacesManagerListener facesManagerListener = new FacesManagerListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void faceUpdated(@NotNull final Face face) {
             if (item != null && face.equals(item.getFace())) {
                 setChanged();
             }
         }
+
     };
 
     /**
@@ -151,7 +153,9 @@ public abstract class GUIItemItem extends GUIItem {
     @NotNull
     protected abstract Image getFace(@NotNull final CfItem item);
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void button2Clicked(final int modifiers) {
         final CfItem tmpItem = item;

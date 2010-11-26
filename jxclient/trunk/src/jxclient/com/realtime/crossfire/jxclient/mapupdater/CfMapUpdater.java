@@ -191,7 +191,6 @@ public class CfMapUpdater {
             processNewMap(mapWidth, mapHeight);
         }
 
-
         /**
          * {@inheritDoc}
          */
@@ -534,8 +533,7 @@ public class CfMapUpdater {
 
     /**
      * Finishes processing of a set of map square changes. Notifies listeners
-     * about changes.
-     * present
+     * about changes. present
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @param color the magic map color to set

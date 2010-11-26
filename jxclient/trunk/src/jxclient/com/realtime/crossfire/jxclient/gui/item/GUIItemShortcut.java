@@ -141,7 +141,7 @@ public class GUIItemShortcut extends GUIItem {
      */
     @NotNull
     private final ShortcutsListener shortcutsListener = new ShortcutsListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void shortcutAdded(final int index, @NotNull final Shortcut shortcut) {
             if (index == GUIItemShortcut.this.index) {
@@ -149,7 +149,6 @@ public class GUIItemShortcut extends GUIItem {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void shortcutRemoved(final int index, @NotNull final Shortcut shortcut) {
             if (index == GUIItemShortcut.this.index) {
@@ -163,7 +162,7 @@ public class GUIItemShortcut extends GUIItem {
      */
     @NotNull
     private final ShortcutListener shortcutListener = new ShortcutListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void shortcutModified() {
             setChanged();
@@ -176,7 +175,7 @@ public class GUIItemShortcut extends GUIItem {
      */
     @NotNull
     private final FacesManagerListener facesManagerListener = new FacesManagerListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void faceUpdated(@NotNull final Face face) {
             if (shortcut != null && shortcut.displaysFace(face)) {
@@ -254,7 +253,9 @@ public class GUIItemShortcut extends GUIItem {
         updateTooltipText();
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button1Clicked(final int modifiers) {
         if (shortcut != null) {
@@ -262,7 +263,9 @@ public class GUIItemShortcut extends GUIItem {
         }
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button2Clicked(final int modifiers) {
         if (shortcut != null && shortcut instanceof ShortcutSpell) {
@@ -271,7 +274,9 @@ public class GUIItemShortcut extends GUIItem {
         }
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button3Clicked(final int modifiers) {
         final Spell spell = currentSpellManager.getCurrentSpell();
@@ -282,7 +287,9 @@ public class GUIItemShortcut extends GUIItem {
         shortcuts.setSpellShortcut(index, spell, true);
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void render(@NotNull final Graphics2D g2) {
         g2.setBackground(BACKGROUND_COLOR);
@@ -294,13 +301,12 @@ public class GUIItemShortcut extends GUIItem {
         }
 
         final ShortcutVisitor visitor = new ShortcutVisitor() {
-            /** {@inheritDoc} */
+
             @Override
             public void visit(@NotNull final ShortcutCommand shortcutCommand) {
                 // XXX: todo
             }
 
-            /** {@inheritDoc} */
             @Override
             public void visit(@NotNull final ShortcutSpell shortcutSpell) {
                 final Color color = shortcutSpell.isCast() ? castColor : invokeColor;
@@ -314,6 +320,7 @@ public class GUIItemShortcut extends GUIItem {
                     g2.drawImage(image, 0, 0, null);
                 }
             }
+
         };
         tmpShortcut.visit(visitor);
         g2.setFont(font);

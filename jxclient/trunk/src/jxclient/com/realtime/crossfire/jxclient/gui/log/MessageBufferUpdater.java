@@ -287,7 +287,7 @@ public class MessageBufferUpdater {
      * @return the message with prefix
      */
     private CharSequence addMessageTypePrefix(final int type, final int subtype, @NotNull final String message) {
-        return printMessageTypes ? "(" + MessageTypes.toString(type) + "/" + subtype + ")" + message : message;
+        return printMessageTypes ? "("+MessageTypes.toString(type)+"/"+subtype+")"+message : message;
     }
 
 }
