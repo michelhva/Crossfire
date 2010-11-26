@@ -482,7 +482,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param mapWidth the map width in squares
      * @param mapHeight the map height in squares
      */
-    protected void setMapSize(final int mapWidth, final int mapHeight) {
+    private void setMapSize(final int mapWidth, final int mapHeight) {
         this.mapWidth = mapWidth;
         this.mapHeight = mapHeight;
 
