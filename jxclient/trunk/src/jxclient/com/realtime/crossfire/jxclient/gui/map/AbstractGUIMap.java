@@ -601,15 +601,15 @@ public abstract class AbstractGUIMap extends GUIElement {
     protected void paintColoredSquare(@NotNull final Graphics g, @NotNull final Color color, final int x, final int y) {
         Image image = images.get(color);
         if (image == null) {
-            final BufferedImage bufferedImage = new BufferedImage(tileSize, tileSize, color.getTransparency() == Transparency.OPAQUE ? BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB);
-            final Graphics g2 = bufferedImage.createGraphics();
+            final BufferedImage tmp = new BufferedImage(tileSize, tileSize, color.getTransparency() == Transparency.OPAQUE ? BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB);
+            final Graphics g2 = tmp.createGraphics();
             try {
                 g2.setColor(color);
                 g2.fillRect(0, 0, tileSize, tileSize);
             } finally {
                 g2.dispose();
             }
-            image = bufferedImage;
+            image = tmp;
             images.put(color, image);
         }
         g.drawImage(image, x, y, tileSize, tileSize, null);
