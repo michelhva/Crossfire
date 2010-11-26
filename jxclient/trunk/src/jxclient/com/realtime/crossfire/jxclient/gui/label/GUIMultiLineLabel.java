@@ -103,7 +103,7 @@ public class GUIMultiLineLabel extends GUILabel {
         }
 
         final Font font = getTextFont();
-        final RectangularShape rectangle = font.getStringBounds("X", g2.getFontRenderContext());
+        final RectangularShape rectangle = font.getStringBounds("Xg", g2.getFontRenderContext());
         final int lineHeight = (int)Math.ceil(rectangle.getMaxY()-rectangle.getMinY());
 
         int y = 0;
