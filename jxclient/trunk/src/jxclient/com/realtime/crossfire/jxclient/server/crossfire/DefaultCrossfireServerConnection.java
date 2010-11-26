@@ -2710,7 +2710,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Inform the various failure listeners that they can clean the last displayed failure.
+     * Inform the various failure listeners that they can clean the last
+     * displayed failure.
      */
     private void clearFailure() {
         for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {

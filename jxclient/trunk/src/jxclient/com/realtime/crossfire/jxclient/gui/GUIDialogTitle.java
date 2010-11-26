@@ -72,7 +72,9 @@ public class GUIDialogTitle extends GUIPicture {
         this.windowRenderer = windowRenderer;
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);

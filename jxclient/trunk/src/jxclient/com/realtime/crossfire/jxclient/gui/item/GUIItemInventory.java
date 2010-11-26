@@ -105,9 +105,6 @@ public class GUIItemInventory extends GUIItemItem {
     @NotNull
     private final LocationListener locationListener = new LocationListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void locationChanged() {
             setChanged();
@@ -168,7 +165,9 @@ public class GUIItemInventory extends GUIItemItem {
         }
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void scroll(final int distance) {
         synchronized (sync) {
@@ -178,13 +177,17 @@ public class GUIItemInventory extends GUIItemItem {
         updateTooltipText();
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void resetScroll() {
         setIndex(defaultIndex);
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button1Clicked(final int modifiers) {
         final CfItem item = getItem();
@@ -199,7 +202,9 @@ public class GUIItemInventory extends GUIItemItem {
         }
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button2Clicked(final int modifiers) {
         final CfItem item = getItem();
@@ -232,7 +237,9 @@ public class GUIItemInventory extends GUIItemItem {
         return selected || isActive();
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button3Clicked(final int modifiers) {
         final CfItem item = getItem();

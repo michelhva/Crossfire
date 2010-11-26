@@ -35,7 +35,8 @@ public interface CrossfireAccountListener {
     void manageAccount();
 
     /**
-     * Starting to receive information for the list of characters in an account.
+     * Starting to receive information for the list of characters in an
+     * account.
      * @param accountName the account name
      */
     void startAccountList(@NotNull String accountName);

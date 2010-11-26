@@ -168,7 +168,8 @@ public class GUICharacterList extends GUIList {
 
     /**
      * Returns the currently selected character in the list.
-     * @return <code>null</code> if invalid index, else the character information
+     * @return <code>null</code> if invalid index, else the character
+     *         information
      */
     @Nullable
     public CharacterInformation getCurrentCharacter() {

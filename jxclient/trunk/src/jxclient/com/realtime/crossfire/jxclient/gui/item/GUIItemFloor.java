@@ -106,9 +106,6 @@ public class GUIItemFloor extends GUIItemItem {
     @NotNull
     private final LocationListener locationListener = new LocationListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void locationChanged() {
             setIndex(index, true);
@@ -168,19 +165,25 @@ public class GUIItemFloor extends GUIItemItem {
         }
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void scroll(final int distance) {
         setIndex(index+distance, false);
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void resetScroll() {
         setIndex(defaultIndex, false);
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button1Clicked(final int modifiers) {
         final CfItem item = getItem();
@@ -195,7 +198,9 @@ public class GUIItemFloor extends GUIItemItem {
         }
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button3Clicked(final int modifiers) {
         final CfItem item = getItem();

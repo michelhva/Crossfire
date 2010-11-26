@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<title>JXClient Features</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>JXClient Features</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 </head>
 <body>
 <h1>JXClient Features</h1>
@@ -14,98 +14,151 @@
 <h3>Server Selection Screen</h3>
 
 <ul>
-<li>metaserver2 support</li>
-<li>pre-selects last used server in server selection: after client-restart the correct server is selected</li>
-<li>periodically updates available server list: updates the server list every 15 minutes</li>
-<li>asynchronously queries metaserver: network operations do not block GUI</li>
-<li>limits maximum frequency of metaserver queries: never queries metaserver more than once every 5 minutes</li>
-<li>bypass server selection screen with --server command line option</li>
-<li>supports host:port syntax for server names</li>
-<li>caches metaserver information to overcome metaserver outages: the server list is displayed even if the metaserver is down</li>
-<li>provides default-entries in case no metaserver is available: includes metalforge, invidious, and localhost even if metaserver is down when the client is run for the first time</li>
-<li>always includes "localhost" entry</li>
+    <li>metaserver2 support</li>
+    <li>pre-selects last used server in server selection: after client-restart
+        the correct server is selected
+    </li>
+    <li>periodically updates available server list: updates the server list
+        every 15 minutes
+    </li>
+    <li>asynchronously queries metaserver: network operations do not block GUI
+    </li>
+    <li>limits maximum frequency of metaserver queries: never queries metaserver
+        more than once every 5 minutes
+    </li>
+    <li>bypass server selection screen with --server command line option</li>
+    <li>supports host:port syntax for server names</li>
+    <li>caches metaserver information to overcome metaserver outages: the server
+        list is displayed even if the metaserver is down
+    </li>
+    <li>provides default-entries in case no metaserver is available: includes
+        metalforge, invidious, and localhost even if metaserver is down when the
+        client is run for the first time
+    </li>
+    <li>always includes "localhost" entry</li>
 </ul>
 
 <h3>Login Dialog</h3>
 
 <ul>
-<li>progress dialog: during connection setup a progress dialog is shown; it displays the connection state. If an error occurs, it display the error reason.</li>
-<li>login dialog: after connecting to a server the last used character name is pre-selected. The character name is remembered per server.</li>
+    <li>progress dialog: during connection setup a progress dialog is shown; it
+        displays the connection state. If an error occurs, it display the error
+        reason.
+    </li>
+    <li>login dialog: after connecting to a server the last used character name
+        is pre-selected. The character name is remembered per server.
+    </li>
 </ul>
 
 <h3>Main View</h3>
 
 <ul>
-<li>map view is considered most important. Therefore it uses all available space; other information are overlayed.</li>
-<li>painting of map view: displays map contents even before all needed images are known
-  <ul>
-  <li>displays question mark as placeholder until image becomes available</li>
-  <li>this prevents lags when a character enters a new map: such lags may be be fatal for characters</li>
-  <li>asynchronously requests missing images from server: at most 8 images are requested concurrently from the Crossfire server. This prevents the socket from being flooded with &quot;askface&quot; messages ensuring that &quot;real&quot; command messages (such as character movement or map view updates) are transmitted without huge lags.</li>
-  <li>asynchronously loads images from disk cache: this prevents stalling the client if a huge number of faces has to be read and/or the cache device is slow.</li>
-  <li>memory-sensitive image cache: drops images from main memory when needed</li>
-  </ul>
-</li>
-<li>displays fog-of-war information</li>
-<li>graphically displays experience to reach next level; resolution is 1% steps</li>
+    <li>map view is considered most important. Therefore it uses all available
+        space; other information are overlayed.
+    </li>
+    <li>painting of map view: displays map contents even before all needed
+        images are known
+        <ul>
+            <li>displays question mark as placeholder until image becomes
+                available
+            </li>
+            <li>this prevents lags when a character enters a new map: such lags
+                may be be fatal for characters
+            </li>
+            <li>asynchronously requests missing images from server: at most 8
+                images are requested concurrently from the Crossfire server.
+                This prevents the socket from being flooded with &quot;askface&quot;
+                messages ensuring that &quot;real&quot; command messages (such
+                as character movement or map view updates) are transmitted
+                without huge lags.
+            </li>
+            <li>asynchronously loads images from disk cache: this prevents
+                stalling the client if a huge number of faces has to be read
+                and/or the cache device is slow.
+            </li>
+            <li>memory-sensitive image cache: drops images from main memory when
+                needed
+            </li>
+        </ul>
+    </li>
+    <li>displays fog-of-war information</li>
+    <li>graphically displays experience to reach next level; resolution is 1%
+        steps
+    </li>
 </ul>
 
 <h3>Pickup Dialog</h3>
 
 <ul>
-<li>settings are saved per-character and retained across logouts</li>
+    <li>settings are saved per-character and retained across logouts</li>
 </ul>
 
 <h3>Message Dialog</h3>
 
 <ul>
-<li>supports <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/server/trunk/doc/mediaTags">media tags</a> [colors, fonts, formatting]</li>
-<li>separate tabs for All/Important/Chat</li>
-<li>word-wrapping of long messages</li>
-<li>merges duplicated messages: prints "You pray. [43 times]" rather than flooding the window with identical messages.</li>
-<li>prunes messages to 250 lines</li>
+    <li>supports
+        <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/server/trunk/doc/mediaTags">media
+            tags</a> [colors, fonts, formatting]
+    </li>
+    <li>separate tabs for All/Important/Chat</li>
+    <li>word-wrapping of long messages</li>
+    <li>merges duplicated messages: prints "You pray. [43 times]" rather than
+        flooding the window with identical messages.
+    </li>
+    <li>prunes messages to 250 lines</li>
 </ul>
 
 <h3>Command Input</h3>
 
 <ul>
-<li>command history: previously entered commands can be recalled with Up/Down keys.</li>
-<li>paste: text can be pasted into input fields using <code>CTRL-V</code></li>
-<li>prefix repeat count: to drop 5 items from a pile, press <code>5</code>, then drop the pile</li>
-<li>limited command queue size: no more than 10 commands are sent to the server concurrently. This prevents excessive lags for slowly executing commands or during server or network lags.</li>
+    <li>command history: previously entered commands can be recalled with
+        Up/Down keys.
+    </li>
+    <li>paste: text can be pasted into input fields using <code>CTRL-V</code>
+    </li>
+    <li>prefix repeat count: to drop 5 items from a pile, press <code>5</code>,
+        then drop the pile
+    </li>
+    <li>limited command queue size: no more than 10 commands are sent to the
+        server concurrently. This prevents excessive lags for slowly executing
+        commands or during server or network lags.
+    </li>
 </ul>
 
 <h3>Minimap Display</h3>
 
 <ul>
-<li>displays small overview of known map contents</li>
-<li>includes magicmap information</li>
-<li>includes fog-of-war information</li>
+    <li>displays small overview of known map contents</li>
+    <li>includes magicmap information</li>
+    <li>includes fog-of-war information</li>
 </ul>
 
 <h3>Inventory Dialog</h3>
 
 <ul>
-<li>lock/unlock: SHIFT+left-click toggles locked state</li>
-<li>drop/pickup: right-click drops item; right-click into floor view takes item</li>
-<li>apply: middle-click applies item</li>
-<li>examine: left-click examines item</li>
-<li>mark: SHIFT+middle-click marks item</li>
+    <li>lock/unlock: SHIFT+left-click toggles locked state</li>
+    <li>drop/pickup: right-click drops item; right-click into floor view takes
+        item
+    </li>
+    <li>apply: middle-click applies item</li>
+    <li>examine: left-click examines item</li>
+    <li>mark: SHIFT+middle-click marks item</li>
 </ul>
 
 <h3>Skills Dialog</h3>
 
 <ul>
-<li>groups skills belonging together</li>
-<li>displays skill levels</li>
-<li>graphically displays experience needed to reach next level</li>
+    <li>groups skills belonging together</li>
+    <li>displays skill levels</li>
+    <li>graphically displays experience needed to reach next level</li>
 </ul>
 
 <h3>Book Dialog</h3>
 
 <ul>
-<li>popup dialog for books read by the character</li>
-<li>easily dismissible with <code>ENTER</code> or <code>SPACE</code> key</li>
+    <li>popup dialog for books read by the character</li>
+    <li>easily dismissible with <code>ENTER</code> or <code>SPACE</code> key
+    </li>
 </ul>
 
 <h3>User Interface</h3>
@@ -113,128 +166,185 @@
 <h4>Skins</h4>
 
 <ul>
-<li>skin definition files: the GUI is defined by <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html">skin definition files</a></li>
-<li>fallback to default skin if preferred skin cannot be loaded</li>
-<li>skin definitions are built-in files or loaded from directories</li>
+    <li>skin definition files: the GUI is defined by
+        <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html">skin
+            definition files</a></li>
+    <li>fallback to default skin if preferred skin cannot be loaded</li>
+    <li>skin definitions are built-in files or loaded from directories</li>
 </ul>
 
 <h4>General</h4>
 
 <ul>
-<li>simple user-interface: client works &quot;out of the box&quot;; few configuration options</li>
-<li>built-in help dialog</li>
-<li>dialogs: help, status, ground view, inventory, skills, protections, book popup, login popup, settings</li>
-<li>displays important information right next to the character:
-  <ul>
-  <li>hp/sp/gr health bars</li>
-  <li>low-food warning sign</li>
-  <li>poisoned warning sign</li>
-  </ul>
-</li>
-<li>window size: default skin supports window resolutions starting from 1000x640; --resolution command-line option enforces fixed window or screen size</li>
-<li>defaults to full-screen mode; does not change screen resolution unless requested by --resolution command-line option</li>
-<li>supports window-mode; --no-full-screen command-line option enforces windowed mode</li>
-<li>includes current server and current character in window title</li>
-<li>retains dialog positions across client restart; dialog positions are remembered per skin</li>
-<li>tooltips: displays additional information when the mouse is inside the GUI element</li>
-<li>quick logout: ESC+ENTER</li>
+    <li>simple user-interface: client works &quot;out of the box&quot;; few
+        configuration options
+    </li>
+    <li>built-in help dialog</li>
+    <li>dialogs: help, status, ground view, inventory, skills, protections, book
+        popup, login popup, settings
+    </li>
+    <li>displays important information right next to the character:
+        <ul>
+            <li>hp/sp/gr health bars</li>
+            <li>low-food warning sign</li>
+            <li>poisoned warning sign</li>
+        </ul>
+    </li>
+    <li>window size: default skin supports window resolutions starting from
+        1000x640; --resolution command-line option enforces fixed window or
+        screen size
+    </li>
+    <li>defaults to full-screen mode; does not change screen resolution unless
+        requested by --resolution command-line option
+    </li>
+    <li>supports window-mode; --no-full-screen command-line option enforces
+        windowed mode
+    </li>
+    <li>includes current server and current character in window title</li>
+    <li>retains dialog positions across client restart; dialog positions are
+        remembered per skin
+    </li>
+    <li>tooltips: displays additional information when the mouse is inside the
+        GUI element
+    </li>
+    <li>quick logout: ESC+ENTER</li>
 </ul>
 
 <h3>Sound Support</h3>
 
 <ul>
-<li>plays server-provided background music</li>
-<li>plays server-provided sound effects
-  <ul>
-  <li>spells</li>
-  <li>death</li>
-  </ul>
-</li>
-<li>supports multiple concurrent sounds</li>
-<li>client-synthesized sound-effects
-  <ul>
-  <li>level up</li>
-  <li>poisoned, poison cured</li>
-  </ul>
-</li>
-<li>option to disable sound</li>
+    <li>plays server-provided background music</li>
+    <li>plays server-provided sound effects
+        <ul>
+            <li>spells</li>
+            <li>death</li>
+        </ul>
+    </li>
+    <li>supports multiple concurrent sounds</li>
+    <li>client-synthesized sound-effects
+        <ul>
+            <li>level up</li>
+            <li>poisoned, poison cured</li>
+        </ul>
+    </li>
+    <li>option to disable sound</li>
 </ul>
 
 <h3>Key Bindings</h3>
 
 <ul>
-<li>default key bindings; defined per skin</li>
-<li>user-defined key bindings; override default key bindings</li>
-<li>per-character key bindings; override user-defined key bindings</li>
+    <li>default key bindings; defined per skin</li>
+    <li>user-defined key bindings; override default key bindings</li>
+    <li>per-character key bindings; override user-defined key bindings</li>
 </ul>
 
 <h3>Scripting</h3>
 
 <ul>
-<li>scripting interface mostly compatible with classic clients:
-  <ul>
-  <li>implements GTK-v2's <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/client/trunk/Documentation/Scripting.html">Client Scripting Interface - Basic howto</a></li>
-  <li>provides additional information: <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/scripting.txt">Differences between JXClient's implementation and GTK-v2's</a></li>
-  </ul>
-</li>
-<li>access to scripts from client similar to classic clients using <code>/script</code>, <code>/scripts</code>, <code>/scriptkill</code>, and <code>/scripttell</code> commands.</li>
+    <li>scripting interface mostly compatible with classic clients:
+        <ul>
+            <li>implements GTK-v2's
+                <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/client/trunk/Documentation/Scripting.html">Client
+                    Scripting Interface - Basic howto</a></li>
+            <li>provides additional information:
+                <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/scripting.txt">Differences
+                    between JXClient's implementation and GTK-v2's</a></li>
+        </ul>
+    </li>
+    <li>access to scripts from client similar to classic clients using <code>/script</code>,
+        <code>/scripts</code>, <code>/scriptkill</code>, and
+        <code>/scripttell</code> commands.
+    </li>
 </ul>
 
 <h3>Debugging</h3>
 
 <ul>
-<li>crashes usually print stack traces to console; these may help locating the problem</li>
-<li>unexpected messages received from the Crossfire server are reported; this includes unexpected message types and known message types received in unexpected connection states</li>
-<li>received messages from the Crossfire server are diligently parsed; unexpected contents are reported</li>
-<li><code>--debug-protocol</code> command-line option logs protocol messages and connection related information in human readable format</li>
-<li><code>--debug-gui</code> command-line option helps <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#debug">debugging skins</a></li>
-<li><code>--debug-keyboard</code> command-line option logs information about key binding processing</li>
-<li><code>/debug_messages</code> command helps <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#debug">debugging skins</a></li>
+    <li>crashes usually print stack traces to console; these may help locating
+        the problem
+    </li>
+    <li>unexpected messages received from the Crossfire server are reported;
+        this includes unexpected message types and known message types received
+        in unexpected connection states
+    </li>
+    <li>received messages from the Crossfire server are diligently parsed;
+        unexpected contents are reported
+    </li>
+    <li><code>--debug-protocol</code> command-line option logs protocol messages
+        and connection related information in human readable format
+    </li>
+    <li><code>--debug-gui</code> command-line option helps
+        <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#debug">debugging
+            skins</a></li>
+    <li><code>--debug-keyboard</code> command-line option logs information about
+        key binding processing
+    </li>
+    <li><code>/debug_messages</code> command helps
+        <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#debug">debugging
+            skins</a></li>
 </ul>
 
 <h3>Client-sided Commands</h3>
 
 <ul>
-<li><code>/bind</code>: creates a key binding; <code>/bind -c</code> creates per-character key binding</li>
-<li><code>/unbind</code>: removes a key binding; <code>/unbind -c</code> removes per-character key binding</li>
-<li><code>/screenshot</code>: creates a screenshot</li>
-<li><code>/script</code> command: create a new script</li>
-<li><code>/scripts</code> command: list running scripts</li>
-<li><code>/scriptkill</code> command: kills one script</li>
-<li><code>/scriptkillall</code> command: kills all scripts</li>
-<li><code>/scripttell</code> command: talks to running script</li>
-<li><code>/exec &lt;name&gt;</code> command: executes the <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#commandlist">command list &lt;name&gt; defined by the skin</a>.</li>
-<li><code>/set &lt;option&gt; &lt;value&gt;</code>: sets an option's &lt;value&gt; to &quot;on&quot; or &quot;off&quot;. <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#options">Options are defined by the skin</a>.</li>
-<li><code>/clear</code>: clears the message log</li>
-<li><code>/debug_messages</code>: prints text using all available color codes or message types; useful only when creating skins</li>
+    <li><code>/bind</code>: creates a key binding; <code>/bind -c</code> creates
+        per-character key binding
+    </li>
+    <li><code>/unbind</code>: removes a key binding; <code>/unbind -c</code>
+        removes per-character key binding
+    </li>
+    <li><code>/screenshot</code>: creates a screenshot</li>
+    <li><code>/script</code> command: create a new script</li>
+    <li><code>/scripts</code> command: list running scripts</li>
+    <li><code>/scriptkill</code> command: kills one script</li>
+    <li><code>/scriptkillall</code> command: kills all scripts</li>
+    <li><code>/scripttell</code> command: talks to running script</li>
+    <li><code>/exec &lt;name&gt;</code> command: executes the
+        <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#commandlist">command
+            list &lt;name&gt; defined by the skin</a>.
+    </li>
+    <li><code>/set &lt;option&gt; &lt;value&gt;</code>: sets an option's &lt;value&gt;
+        to &quot;on&quot; or &quot;off&quot;.
+        <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#options">Options
+            are defined by the skin</a>.
+    </li>
+    <li><code>/clear</code>: clears the message log</li>
+    <li><code>/debug_messages</code>: prints text using all available color
+        codes or message types; useful only when creating skins
+    </li>
 </ul>
 
 <h3>Macros for Key Bindings</h3>
 
 <ul>
-<li>commands bound to keys using <code>/bind</code> support <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#macros">macros</a></li>
+    <li>commands bound to keys using <code>/bind</code> support
+        <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#macros">macros</a>
+    </li>
 </ul>
 
 <h2>Not Implemented Features</h2>
 
 <ul>
-<li>support for spell belt [not supported in default skin; not fully implemented]</li>
-<li>support for shortcuts [not supported in default skin; not fully implemented]
-  <ul>
-  <li>saved per-character</li>
-  </ul>
-</li>
-<li>smoothing in map view</li>
-<li>spells dialog</li>
-<li>auto-reconnect after unexpected disconnects</li>
-<li>synchronous animations [asynchronous animations are implemented]</li>
-<li>command history retained per-character</li>
-<li>copy (CTRL-C) in message window and command input</li>
-<li>resizing of dialogs</li>
-<li>transparent message overlay into main window</li>
-<li>vertical ground view display</li>
-<li>access to items in inventory and on ground by keyboard</li>
-<li>scroll bar for inventory dialog</li>
+    <li>support for spell belt [not supported in default skin; not fully
+        implemented]
+    </li>
+    <li>support for shortcuts [not supported in default skin; not fully
+        implemented]
+        <ul>
+            <li>saved per-character</li>
+        </ul>
+    </li>
+    <li>smoothing in map view</li>
+    <li>spells dialog</li>
+    <li>auto-reconnect after unexpected disconnects</li>
+    <li>synchronous animations [asynchronous animations are implemented]</li>
+    <li>command history retained per-character</li>
+    <li>copy (CTRL-C) in message window and command input</li>
+    <li>resizing of dialogs</li>
+    <li>transparent message overlay into main window</li>
+    <li>vertical ground view display</li>
+    <li>access to items in inventory and on ground by keyboard</li>
+    <li>scroll bar for inventory dialog</li>
 </ul>
 
 </body>

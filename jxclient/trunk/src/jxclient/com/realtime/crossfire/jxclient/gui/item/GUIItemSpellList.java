@@ -104,7 +104,7 @@ public class GUIItemSpellList extends GUIItem {
      */
     @NotNull
     private final SpellsManagerListener spellsManagerListener = new SpellsManagerListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void spellAdded(@NotNull final Spell spell, final int index) {
             if (GUIItemSpellList.this.index >= index) {
@@ -112,13 +112,13 @@ public class GUIItemSpellList extends GUIItem {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void spellRemoved(@NotNull final Spell spell, final int index) {
             if (GUIItemSpellList.this.index >= index) {
                 setSpell();
             }
         }
+
     };
 
     /**
@@ -126,11 +126,12 @@ public class GUIItemSpellList extends GUIItem {
      */
     @NotNull
     private final SpellListener spellListener = new SpellListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void spellChanged() {
             setSpell();
         }
+
     };
 
     /**
@@ -138,13 +139,14 @@ public class GUIItemSpellList extends GUIItem {
      */
     @NotNull
     private final FacesManagerListener facesManagerListener = new FacesManagerListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void faceUpdated(@NotNull final Face face) {
             if (spell != null && spell.getFaceNum() == face.getFaceNum()) {
                 setChanged();
             }
         }
+
     };
 
     /**
@@ -201,20 +203,26 @@ public class GUIItemSpellList extends GUIItem {
         }
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void scroll(final int distance) {
         setIndex(index+distance);
         setChanged();
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void resetScroll() {
         setIndex(defaultIndex);
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button1Clicked(final int modifiers) {
         if (spell == null) {
@@ -225,17 +233,25 @@ public class GUIItemSpellList extends GUIItem {
         currentSpellManager.setCurrentSpell(spell);
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button2Clicked(final int modifiers) {
+        // ignore
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void button3Clicked(final int modifiers) {
+        // ignore
     }
 
-    /* {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void render(@NotNull final Graphics2D g2) {
         g2.setBackground(BACKGROUND_COLOR);

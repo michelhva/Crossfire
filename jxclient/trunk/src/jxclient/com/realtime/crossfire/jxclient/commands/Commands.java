@@ -78,8 +78,8 @@ public class Commands {
     }
 
     /**
-     * Executes a command or a list of commands. The commands may be a client- or
-     * a server-sided command.
+     * Executes a command or a list of commands. The commands may be a client-
+     * or a server-sided command.
      * @param commands the commands to execute
      */
     public void executeCommand(@NotNull final CharSequence commands) {

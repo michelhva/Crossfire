@@ -137,8 +137,8 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
     private class LoadTask implements Runnable {
 
         /**
-         * The expected task {@link FileCacheFaceQueue#id}. If it does not
-         * match the current id, the face is not loaded.
+         * The expected task {@link FileCacheFaceQueue#id}. If it does not match
+         * the current id, the face is not loaded.
          */
         private final int taskId = id;
 
