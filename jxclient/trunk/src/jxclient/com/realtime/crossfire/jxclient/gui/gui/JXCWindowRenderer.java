@@ -153,7 +153,7 @@ public class JXCWindowRenderer {
      * The currently displayed {@link Gui}.
      */
     @NotNull
-    private Gui currentGui;
+    private Gui currentGui = null;
 
     /**
      * The tooltip to use, or <code>null</code> if no tooltips should be shown.
