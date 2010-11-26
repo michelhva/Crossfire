@@ -124,7 +124,7 @@ public abstract class GUILabel extends AbstractLabel {
      * Return the font.
      * @return The font.
      */
-    @Nullable
+    @NotNull
     protected Font getTextFont() {
         return textFont;
     }
