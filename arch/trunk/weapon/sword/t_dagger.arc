@@ -11,7 +11,7 @@ is_thrown 1
 material 2
 dam 1
 weight 1500
-value 35
+value 15
 attacktype 1
 weapontype 2
 name_pl throwing daggers

@@ -7,7 +7,7 @@ material 16
 face compositebow.111
 dam 14
 weight 3000
-value 100
+value 60
 sp 35
 no_strength 0
 attacktype 1

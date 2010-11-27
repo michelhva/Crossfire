@@ -7,7 +7,7 @@ face lspear.111
 material 18
 dam 12
 weight 26500
-value 100
+value 50
 can_impale 1
 attacktype 1
 weapontype 5

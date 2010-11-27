@@ -6,7 +6,7 @@ material 16
 face bow.111
 dam 7
 weight 12000
-value 50
+value 40
 sp 50
 no_strength 0
 attacktype 1

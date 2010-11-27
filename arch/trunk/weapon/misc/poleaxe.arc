@@ -6,7 +6,7 @@ face poleaxe.111
 material 18
 dam 18
 weight 35500
-value 500
+value 200
 can_impale 1
 can_cut 1
 can_dam_armour 1

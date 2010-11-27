@@ -7,7 +7,7 @@ material 16
 face huntersbow.111
 dam 10
 weight 2000
-value 50
+value 40
 sp 20
 no_strength 0
 attacktype 1
