@@ -10,7 +10,7 @@ is_thrown 1
 material 2
 dam 7
 weight 8500
-value 50
+value 25
 attacktype 1
 weapontype 5
 name_pl spears

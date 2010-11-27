@@ -8,7 +8,7 @@ dam 7
 weight 25000
 sp 40
 wc 1
-value 75
+value 40
 no_strength 1
 attacktype 1
 name_pl crossbows

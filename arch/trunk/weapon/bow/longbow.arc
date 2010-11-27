@@ -7,7 +7,7 @@ material 16
 face longbow.111
 dam 20
 weight 8000
-value 500
+value 200
 sp 40
 no_strength 0
 attacktype 1
