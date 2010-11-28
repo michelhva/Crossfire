@@ -1,0 +1,30 @@
+set_auto_size
+
+dialog border WIDTH/2-400 HEIGHT/2-220 400 220 true Account creation
+dialog_hide START META PLAYING NEWCHAR LOGIN
+
+label_text information 30 20 340 32 font_label BLACK Please enter your new account information.
+
+
+label_text label_login 20 60 150 18 font_label BLACK Login:
+label_text label_password 20 90 150 18 font_label BLACK Password:
+label_text label_password_confirm 20 120 150 18 font_label BLACK Password (confirm):
+
+commandlist command_null_new AND
+
+text account_login 200 60 190 18 input_active input_inactive font_label GRAY BLACK 1 command_null_new true
+text account_password 200 90 190 18 input_active input_inactive font_label GRAY BLACK 1 command_null_new true
+text account_password_confirm 200 120 190 18 input_active input_inactive font_label GRAY BLACK 1 command_null_new true
+
+label_failure account_create_error 20 150 360 18 font_label BLACK
+
+commandlist command_account_do_create AND account_login ACCOUNT_CREATE
+commandlist command_account_cancel_create AND null DIALOG_CLOSE account_create
+commandlist_add command_account_cancel_create null DIALOG_OPEN account_main
+
+textbutton account_do_login 40 180 140 18 false command_account_do_create Create
+textbutton account_cancel_login 220 180 140 18 false command_account_cancel_create Cancel
+
+hide_input account_password
+hide_input account_password_confirm
+set_default account_do_login

@@ -1,0 +1,189 @@
+skin_name ragnorok 1000x640 2560x1600
+
+font font_book_title     squealer 16
+font font_button         regular  14
+font font_button_fancy   squealer 14
+font font_label          regular  14
+font font_title          regular  16
+font font_tooltip        regular  16
+font font_log_arcane     squealer 12
+font font_log_fixed      cour     11
+font font_log_fixed_bold courbd   11
+font font_log_print      regular  12
+font font_item           regular   8
+font font_metaurl        regular  16
+
+def checkbox checked unchecked font_button BLACK
+def dialog dialog font_title #d0d0d0 #401010 0.95
+def textbutton button_up button_down font_button BLACK
+def item #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied marker_unidentified marker_selector marker_locked marker_unpaid font_item BLACK
+
+commandlist command_newchar_close AND null DIALOG_CLOSE newchar
+
+commandlist command_disconnect AND null GUI_META
+commandlist command_resume_disconnect AND null DIALOG_CLOSE disconnect
+
+commandlist command_meta AND null GUI_META
+commandlist command_quit AND null QUIT
+commandlist command_resume_quit AND null DIALOG_CLOSE quit
+
+commandlist command_metaconnect AND
+commandlist command_metacancel AND null GUI_START
+
+commandlist command_status AND null DIALOG_TOGGLE status
+commandlist command_status_open AND null DIALOG_OPEN status
+commandlist command_status_close AND null DIALOG_CLOSE status
+commandlist command_ground AND null DIALOG_TOGGLE ground
+commandlist command_ground_open AND null DIALOG_OPEN ground
+commandlist command_inventory AND null DIALOG_TOGGLE inventory
+commandlist command_inventory_close AND null DIALOG_CLOSE inventory
+commandlist command_messages AND null DIALOG_TOGGLE messages
+commandlist command_messages_open AND null DIALOG_OPEN messages
+commandlist command_messages_close AND null DIALOG_CLOSE messages
+commandlist command_protections AND null DIALOG_TOGGLE protections
+commandlist command_protections_close AND null DIALOG_CLOSE protections
+commandlist command_skills AND null DIALOG_TOGGLE skills
+commandlist command_skills_close AND null DIALOG_CLOSE skills
+commandlist command_map AND null DIALOG_TOGGLE map
+commandlist command_map_open AND null DIALOG_OPEN map
+commandlist command_setup AND null DIALOG_TOGGLE setup
+commandlist command_setup_close AND null DIALOG_CLOSE setup
+commandlist command_help AND null DIALOG_TOGGLE help
+commandlist command_pickup AND null DIALOG_TOGGLE pickup
+commandlist command_pickup_close AND null DIALOG_CLOSE pickup
+
+commandlist command_help_close AND null DIALOG_CLOSE help
+
+commandlist command_book_close AND null DIALOG_CLOSE book
+
+commandlist command_ground_left AND
+commandlist command_ground_right AND
+
+commandlist command_newchar_up AND
+commandlist command_newchar_down AND
+
+commandlist command_messages_up_all AND
+commandlist command_messages_up_msg AND
+commandlist command_messages_up_chat AND
+commandlist command_messages_down_all AND
+commandlist command_messages_down_msg AND
+commandlist command_messages_down_chat AND
+
+commandlist command_message_show_all AND
+commandlist command_message_show_msg AND
+commandlist command_message_show_chat AND
+
+event magicmap command_map_open
+
+event init command_ground_open
+event init command_map_open
+event init command_messages_open
+
+key code F1 0 exec command_help
+key code F2 0 exec command_status
+key code F3 0 exec command_ground
+key code F4 0 exec command_inventory
+key code F5 0 exec command_messages
+key code F6 0 exec command_protections
+key code F7 0 exec command_skills
+#key code F8 0 exec command_spells
+key code F9 0 exec command_map
+key code F10 0 exec command_setup
+
+key char 10 -e chat -
+key char 82 -e tell <<reply_to>> -
+key char 97 apply
+key char 100 use_skill disarm traps
+key char 101 examine
+key char 105 mapinfo
+key char 106 use_skill jumping
+key char 109 -e maps -
+key char 115 use_skill find traps
+key char 112 use_skill praying
+key char 116 pickup !inhibit
+key char 119 who
+key char 63 help
+key char 44 get
+key char 47 -e
+key char 92 -e
+key char 39 -e
+key char 34 -e say -
+key code UP 2 run 1
+key code KP_UP 2 run 1
+key code NUMPAD8 2 run 1
+key code UP 1 north f
+key code KP_UP 1 north f
+key code NUMPAD8 1 north f
+key code UP 0 north
+key code KP_UP 0 north
+key code NUMPAD8 0 north
+key code PAGE_UP 2 run 2
+key code NUMPAD9 2 run 2
+key code PAGE_UP 1 northeast f
+key code NUMPAD9 1 northeast f
+key code PAGE_UP 0 northeast
+key code NUMPAD9 0 northeast
+key code RIGHT 2 run 3
+key code KP_RIGHT 2 run 3
+key code NUMPAD6 2 run 3
+key code RIGHT 1 east f
+key code KP_RIGHT 1 east f
+key code NUMPAD6 1 east f
+key code RIGHT 0 east
+key code KP_RIGHT 0 east
+key code NUMPAD6 0 east
+key code PAGE_DOWN 2 run 4
+key code NUMPAD3 2 run 4
+key code PAGE_DOWN 1 southeast f
+key code NUMPAD3 1 southeast f
+key code PAGE_DOWN 0 southeast
+key code NUMPAD3 0 southeast
+key code DOWN 2 run 5
+key code KP_DOWN 2 run 5
+key code NUMPAD2 2 run 5
+key code DOWN 1 south f
+key code KP_DOWN 1 south f
+key code NUMPAD2 1 south f
+key code DOWN 0 south
+key code KP_DOWN 0 south
+key code NUMPAD2 0 south
+key code END 2 run 6
+key code NUMPAD1 2 run 6
+key code END 1 southwest f
+key code NUMPAD1 1 southwest f
+key code END 0 southwest
+key code NUMPAD1 0 southwest
+key code LEFT 2 run 7
+key code KP_LEFT 2 run 7
+key code NUMPAD4 2 run 7
+key code LEFT 1 west f
+key code KP_LEFT 1 west f
+key code NUMPAD4 1 west f
+key code LEFT 0 west
+key code KP_LEFT 0 west
+key code NUMPAD4 0 west
+key code HOME 2 run 8
+key code NUMPAD7 2 run 8
+key code HOME 1 northwest f
+key code NUMPAD7 1 northwest f
+key code HOME 0 northwest
+key code NUMPAD7 0 northwest
+key code BEGIN 1 stay f
+key code NUMPAD5 1 stay f
+key code BEGIN 0 stay
+key code NUMPAD5 0 stay
+
+# checkbox option "lowfood"
+commandlist command_lowfood_on AND
+commandlist command_lowfood_off AND
+def checkbox_option lowfood command_lowfood_on command_lowfood_off Whether the low food indicator is visible.
+
+# checkbox option "poisoned"
+commandlist command_poisoned_on AND
+commandlist command_poisoned_off AND
+def checkbox_option poisoned command_poisoned_on command_poisoned_off Whether the poisoned indicator is visible.
+
+# checkbox option "hitpoints"
+commandlist command_hitpoints_on AND
+commandlist command_hitpoints_off AND
+def checkbox_option hitpoints command_hitpoints_on command_hitpoints_off Whether the hp indicator is visible.
