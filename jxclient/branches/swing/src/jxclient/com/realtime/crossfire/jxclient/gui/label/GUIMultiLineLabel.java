@@ -23,9 +23,10 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
@@ -68,7 +69,6 @@ public class GUIMultiLineLabel extends GUILabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param extent the extent of this element
      * @param picture The background image; <code>null</code> for no
      * background.
      * @param font The font for rendering the label text.
@@ -77,8 +77,8 @@ public class GUIMultiLineLabel extends GUILabel {
      * @param alignment The text alignment.
      * @param text The label text.
      */
-    public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, extent, picture, font, color, backgroundColor, alignment);
+    public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
+        super(tooltipManager, elementListener, name, picture, font, color, backgroundColor, alignment);
         setText(text);
     }
 
@@ -95,14 +95,15 @@ public class GUIMultiLineLabel extends GUILabel {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        super.render(g2);
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
 
         if (lines.length <= 0) {
             return;
         }
 
         final Font font = getTextFont();
+        final Graphics2D g2 = (Graphics2D)g;
         final RectangularShape rectangle = font.getStringBounds("Xg", g2.getFontRenderContext());
         final int lineHeight = (int)Math.ceil(rectangle.getMaxY()-rectangle.getMinY());
 
@@ -110,6 +111,35 @@ public class GUIMultiLineLabel extends GUILabel {
         for (final String line : lines) {
             y += drawLine(g2, y, lineHeight, line);
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        final Font textFont = getTextFont();
+
+        int width = 0;
+        int height = 0;
+        for (final String line : lines) {
+            final Dimension dimension = getTextDimension(line, textFont);
+            height += dimension.height;
+            if (width < dimension.width) {
+                width = dimension.width;
+            }
+        }
+        return new Dimension(width, height);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return getPreferredSize(); // XXX
     }
 
 }

@@ -2,31 +2,81 @@
 tooltip font_tooltip
 
 # Map Group
-map playfield 0 0 WIDTH HEIGHT
+begin group1 1 BOTH LAYERED
+map playfield 0 0 0 WIDTH HEIGHT
 
 # Stat Group
-picture gauge_hp_back          10 10 80 20 gauge_frame 0.9
-textgauge gauge_hp             13 13 74 14 gauge_hp null gauge_empty HP WE BLACK font_label Hitpoints:
+begin stat_group 1 10 8 450 20 LAYERED
+begin hp_group 0 0 0 80 20 LAYERED
+picture gauge_hp_back         0 0 0 80 20 gauge_frame 0.9
+textgauge gauge_hp            0 3 3 74 14 gauge_hp null gauge_empty HP WE BLACK font_label Hitpoints:
+end hp_group
 
-picture gauge_sp_back         100 10 80 20 gauge_frame 0.9
-textgauge gauge_sp            103 13 74 14 gauge_sp null gauge_empty SP WE BLACK font_label Mana:
+begin sp_group 0 90 0 80 20 LAYERED
+picture gauge_sp_back         0 0 0 80 20 gauge_frame 0.9
+textgauge gauge_sp            0 3 3 74 14 gauge_sp null gauge_empty SP WE BLACK font_label Mana:
+end sp_group
 
-picture gauge_gp_back         190 10 80 20 gauge_frame 0.9
-textgauge gauge_gp            193 13 74 14 gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label Grace:
+begin gp_group 0 180 0 80 20 LAYERED
+picture gauge_gp_back         0 0 0 80 20 gauge_frame 0.9
+textgauge gauge_gp            0 3 3 74 14 gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label Grace:
+end gp_group
 
-picture gauge_fp_back         280 10 80 20 gauge_frame 0.9
-textgauge gauge_fp            283 13 74 14 gauge_fp null gauge_empty FOOD WE BLACK font_label Food:
+begin fp_group 0 270 0 80 20 LAYERED
+picture gauge_fp_back         0 0 0 80 20 gauge_frame 0.9
+textgauge gauge_fp            0 3 3 74 14 gauge_fp null gauge_empty FOOD WE BLACK font_label Food:
+end fp_group
 
-picture gauge_xp_back         370 10 80 20 gauge_xp_frame 0.9
-duptextgauge gauge_xp         373 13 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Level:
+begin xp_group 0 360 0 80 20 LAYERED
+picture gauge_xp_back         0 0 0 80 20 gauge_xp_frame 0.9
+duptextgauge gauge_xp         0 3 3 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Level:
+end xp_group
+end stat_group
 
-# Hpbar in map view
-picture hpbar_back            WIDTH/2-34 HEIGHT/2-44 68  7 hpbar_frame 0.9
-gauge hpbar                   WIDTH/2-33 HEIGHT/2-43 66  5 hpbar_full null hpbar_empty HP WE
-picture spbar_back            WIDTH/2-34 HEIGHT/2-52 68  7 hpbar_frame 0.9
-gauge spbar                   WIDTH/2-33 HEIGHT/2-51 66  5 spbar_full null hpbar_empty SP WE
-picture grbar_back            WIDTH/2-34 HEIGHT/2-60 68  7 hpbar_frame 0.9
-gauge grbar                   WIDTH/2-33 HEIGHT/2-59 66  5 grbar_full null hpbar_empty GRACE WE
+# Button Group
+begin button_group 1 450 8 WIDTH-450 20 HORIZONTAL
+label_text filler_help        1 NONE font_label BLACK _
+textbutton button_help        0 NONE false command_help Help
+label_text filler_status      0 NONE font_label BLACK _
+textbutton button_status      0 NONE false command_status Status
+label_text filler_inventory   0 NONE font_label BLACK _
+textbutton button_inventory   0 NONE false command_inventory Inventory
+label_text filler_messages    0 NONE font_label BLACK _
+textbutton button_messages    0 NONE false command_messages Messages
+label_text filler_protections 0 NONE font_label BLACK _
+textbutton button_protections 0 NONE false command_protections Protections
+label_text filler_skills      0 NONE font_label BLACK _
+textbutton button_skills      0 NONE false command_skills Skills
+label_text filler_pickup      0 NONE font_label BLACK _
+textbutton button_pickup      0 NONE false command_pickup Pickup
+label_text filler_setup       0 NONE font_label BLACK _
+textbutton button_setup       0 NONE false command_setup Setup
+label_text filler_end         0 NONE font_label BLACK _
+end button_group
+
+# Hp/Sp/Gr bars in map view
+begin head_group 1 WIDTH/2-34 HEIGHT/2-110 68 73 LAYERED
+gauge lowfood                 0 21 0 25 45 lowfood  null null LOWFOOD WE
+gauge poisoned                0 24 0 20 31 poisoned null null POISONED WE
+
+begin hpbar_group 1 0 50 68 7 LAYERED
+picture hpbar_back            0 0 0 68 7 hpbar_frame 0.9
+gauge hpbar                   0 1 1 66 5 hpbar_full null hpbar_empty HP WE
+end hpbar_group
+
+begin spbar_group 1 0 58 68 7 LAYERED
+picture spbar_back            0 0 0 68 7 hpbar_frame 0.9
+gauge spbar                   0 1 1 66 5 spbar_full null hpbar_empty SP WE
+end spbar_group
+
+begin grbar_group 1 0 66 68 7 LAYERED
+picture grbar_back            0 0 0 68 7 hpbar_frame 0.9
+gauge grbar                   0 1 1 66 5 grbar_full null hpbar_empty GRACE WE
+end grbar_group
+end head_group
+
+end group1
+
 commandlist_add command_hitpoints_on hpbar_back SHOW
 commandlist_add command_hitpoints_on hpbar SHOW
 commandlist_add command_hitpoints_on spbar_back SHOW
@@ -39,22 +89,10 @@ commandlist_add command_hitpoints_off spbar_back HIDE
 commandlist_add command_hitpoints_off spbar HIDE
 commandlist_add command_hitpoints_off grbar_back HIDE
 commandlist_add command_hitpoints_off grbar HIDE
-gauge lowfood                 WIDTH/2-13 HEIGHT/2-98 25 45 lowfood null null LOWFOOD WE
 commandlist_add command_lowfood_on lowfood SHOW
 commandlist_add command_lowfood_off lowfood HIDE
-gauge poisoned                WIDTH/2-11 HEIGHT/2-85 20 30 poisoned null null POISONED WE
 commandlist_add command_poisoned_on poisoned SHOW
 commandlist_add command_poisoned_off poisoned HIDE
-
-# Button Group
-textbutton button_help        WIDTH-535 11 48 18 false command_help Help
-textbutton button_status      WIDTH-477 11 48 18 false command_status Status
-textbutton button_inventory   WIDTH-419 11 67 18 false command_inventory Inventory
-textbutton button_messages    WIDTH-342 11 74 18 false command_messages Messages
-textbutton button_protections WIDTH-258 11 82 18 false command_protections Protections
-textbutton button_skills      WIDTH-166 11 40 18 false command_skills Skills
-textbutton button_pickup      WIDTH-116 11 46 18 false command_pickup Pickup
-textbutton button_setup       WIDTH-57 11 46 18 false command_setup Setup
 
 ignore hpbar_back
 ignore hpbar

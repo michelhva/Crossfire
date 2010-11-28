@@ -30,7 +30,6 @@ import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 
@@ -140,7 +139,7 @@ public class GUIItemFloorFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIElement newItem(final int index) {
-        return new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+index, new Extent(0, 0, 1, 1), itemPainter, index, crossfireServerConnection, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
+        return new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
     }
 
     /**
@@ -149,7 +148,10 @@ public class GUIItemFloorFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIItemItem newTemplateItem(final int cellHeight) {
-        return new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+"_template", new Extent(0, 0, cellHeight, cellHeight), itemPainter, -1, crossfireServerConnection, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
+        final GUIItemItem result = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, crossfireServerConnection, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
+        //noinspection SuspiciousNameCombination
+        result.setSize(cellHeight, cellHeight);
+        return result;
     }
 
     /**

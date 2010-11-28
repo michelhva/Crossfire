@@ -7,10 +7,12 @@ commandlist_add command_account_create null DIALOG_CLOSE account_main
 commandlist command_account_login AND null DIALOG_OPEN account_login
 commandlist_add command_account_login null DIALOG_CLOSE account_main
 
-label_text information 30 20 340 32 font_label BLACK Please select an operation.
+label_text information 0 HORIZONTAL font_label BLACK Please select an operation.
 
-textbutton account_create 25 70 100 18 false command_account_create Create
-textbutton account_login 150 70 100 18 false command_account_login Login
-textbutton account_quit 275 70 100 18 false command_disconnect Disconnect
+begin button_group 0 HORIZONTAL HORIZONTAL
+textbutton account_create 1 NONE false command_account_create Create
+textbutton account_login 1 NONE false command_account_login Login
+textbutton account_quit 1 NONE false command_disconnect Disconnect
+end button_group
 
 set_default account_login

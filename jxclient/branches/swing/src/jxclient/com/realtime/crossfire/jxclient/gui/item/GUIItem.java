@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
@@ -48,10 +47,9 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      */
-    protected GUIItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent) {
-        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
+    protected GUIItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
     }
 
     /**

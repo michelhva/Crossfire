@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Graphics;
 import org.jetbrains.annotations.NotNull;
@@ -82,12 +81,11 @@ public class GUIMiniMap extends AbstractGUIMap {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param mapUpdater the map updater instance to use
      * @param facesProvider the faces provider for looking up faces
      */
-    public GUIMiniMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider) {
-        super(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider);
+    public GUIMiniMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider) {
+        super(tooltipManager, elementListener, name, mapUpdater, facesProvider);
         this.mapUpdater = mapUpdater;
         tileSize = facesProvider.getSize();
     }

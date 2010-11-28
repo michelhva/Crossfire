@@ -174,7 +174,7 @@ public class TooltipManager {
         } else {
             ty = elementY-tmpTooltip.getHeight()-TOOLTIP_DISTANCE;
         }
-        tmpTooltip.setElementLocation(tx, ty);
+        //XXX:tmpTooltip.setElementLocation(tx, ty);
     }
 
     /**

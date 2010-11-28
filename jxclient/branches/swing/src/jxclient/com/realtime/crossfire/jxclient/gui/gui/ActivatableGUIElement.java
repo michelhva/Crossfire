@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
 
@@ -29,7 +28,7 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUIElement} that can be set to active or inactive.
  * @author Andreas Kirschbaum
  */
-public abstract class ActivatableGUIElement extends GUIElement {
+public abstract class ActivatableGUIElement extends AbstractGUIElement {
 
     /**
      * The serial version UID.
@@ -41,11 +40,10 @@ public abstract class ActivatableGUIElement extends GUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param transparency the transparency value for the backing buffer
      */
-    protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int transparency) {
-        super(tooltipManager, elementListener, name, extent, transparency);
+    protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency) {
+        super(tooltipManager, elementListener, name, transparency);
     }
 
     /**

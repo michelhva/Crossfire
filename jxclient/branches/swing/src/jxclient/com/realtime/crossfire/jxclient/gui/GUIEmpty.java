@@ -19,22 +19,20 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.list;
+package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
-import java.awt.BorderLayout;
-import java.awt.Component;
-import javax.swing.JList;
-import javax.swing.JPanel;
-import javax.swing.ListCellRenderer;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import java.awt.Transparency;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link ListCellRenderer} that renders {@link GUIMetaElement} instances.
+ * A completely transparent {@link GUIElement}.
  * @author Andreas Kirschbaum
  */
-public class ItemItemCellRenderer extends JPanel implements GUIListCellRenderer {
+public class GUIEmpty extends AbstractGUIElement {
 
     /**
      * The serial version UID.
@@ -42,30 +40,21 @@ public class ItemItemCellRenderer extends JPanel implements GUIListCellRenderer 
     private static final long serialVersionUID = 1;
 
     /**
-     * The template used for painting.
-     */
-    @NotNull
-    private final GUIItemItem template;
-
-    /**
      * Creates a new instance.
-     * @param template the template used for painting
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param name the name of this element
      */
-    public ItemItemCellRenderer(@NotNull final GUIItemItem template) {
-        super(new BorderLayout());
-        setOpaque(false);
-        this.template = template;
-        add(template, BorderLayout.CENTER);
+    public GUIEmpty(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public Component getListCellRendererComponent(@NotNull final JList list, @NotNull final Object value, final int index, final boolean isSelected, final boolean cellHasFocus) {
-        template.setIndexNoListeners(((GUIItemItem)value).getIndex());
-        template.setSelected(isSelected);
-        return this;
+    public void dispose() {
+        super.dispose();
     }
 
 }

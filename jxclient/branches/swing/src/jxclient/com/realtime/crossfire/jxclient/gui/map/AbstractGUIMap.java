@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -34,11 +35,14 @@ import com.realtime.crossfire.jxclient.mapupdater.MapScrollListener;
 import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
@@ -47,13 +51,14 @@ import java.util.Map;
 import java.util.Set;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Abstract base class for {@link GUIElement GUIElements} that display map
  * views.
  * @author Andreas Kirschbaum
  */
-public abstract class AbstractGUIMap extends GUIElement {
+public abstract class AbstractGUIMap extends AbstractGUIElement {
 
     /**
      * The serial version UID.
@@ -71,6 +76,19 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     @NotNull
     private final FacesProvider facesProvider;
+
+    /**
+     * Synchronizes access to {@link #bufferedImage}.
+     */
+    @NotNull
+    private final Object bufferedImageSync = new Object();
+
+    /**
+     * An {@link BufferedImage} having the size of this component. It contains
+     * the rendered map contents.
+     */
+    @Nullable
+    private transient BufferedImage bufferedImage = null;
 
     /**
      * The map width in squares.
@@ -211,8 +229,8 @@ public abstract class AbstractGUIMap extends GUIElement {
             synchronized (bufferedImageSync) {
                 final Graphics2D g = createBufferGraphics();
                 try {
-                    g.setBackground(Color.BLACK);
-                    g.clearRect(0, 0, getWidth(), getHeight());
+                    g.setColor(Color.BLACK);
+                    g.fillRect(0, 0, getWidth(), getHeight());
                     g.setBackground(DarknessColors.FOG_OF_WAR_COLOR);
                     g.clearRect(0, 0, getWidth(), getHeight());
                     markPlayer(g, 0, 0);
@@ -261,6 +279,7 @@ public abstract class AbstractGUIMap extends GUIElement {
         @Override
         public void mapSizeChanged(final int mapWidth, final int mapHeight) {
             setMapSize(mapWidth, mapHeight);
+            redrawAll();
         }
 
     };
@@ -270,13 +289,13 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param mapUpdater the map updater instance to use
      * @param facesProvider the faces provider for looking up faces
      */
-    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider) {
-        super(tooltipManager, elementListener, name, extent, Transparency.OPAQUE);
+    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider) {
+        super(tooltipManager, elementListener, name, Transparency.OPAQUE);
         tileSize = facesProvider.getSize();
+        assert tileSize > 0;
         this.mapUpdater = mapUpdater;
         this.facesProvider = facesProvider;
         this.mapUpdater.addMapSizeListener(mapSizeListener);
@@ -303,13 +322,11 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     private void redrawAll() {
         synchronized (bufferedImageSync) {
-            if (hasBufferedImage()) {
-                final Graphics g = createBufferGraphics();
-                try {
-                    redrawTiles(g, mapUpdater.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
-                } finally {
-                    g.dispose();
-                }
+            final Graphics g = createBufferGraphics();
+            try {
+                redrawTiles(g, mapUpdater.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
+            } finally {
+                g.dispose();
             }
         }
     }
@@ -474,7 +491,11 @@ public abstract class AbstractGUIMap extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+        synchronized (bufferedImageSync) {
+            g.drawImage(bufferedImage, 0, 0, null);
+        }
     }
 
     /**
@@ -510,6 +531,10 @@ public abstract class AbstractGUIMap extends GUIElement {
         displayMaxOffsetY = MathUtils.mod(-displayMinOffsetY-getHeight(), tileSize);
         offsetY = displayMinOffsetY-displayMinY*tileSize;
 
+        final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
+        final GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
+        bufferedImage = graphicsConfiguration.createCompatibleImage(Math.max(1, getWidth()), Math.max(1, getHeight()), Transparency.OPAQUE);
         redrawAll();
     }
 
@@ -549,11 +574,12 @@ public abstract class AbstractGUIMap extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    public void updateResolution(final int screenWidth, final int screenHeight) {
-        super.updateResolution(screenWidth, screenHeight);
-        playerX = getWidth()/2-tileSize/2;
-        playerY = getHeight()/2-tileSize/2;
+    public void setBounds(final int x, final int y, final int width, final int height) {
+        super.setBounds(x, y, width, height);
+        playerX = width/2-tileSize/2;
+        playerY = height/2-tileSize/2;
         setMapSize(mapWidth, mapHeight);
+        redrawAll();
     }
 
     /**
@@ -629,6 +655,32 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     protected int getMapHeight() {
         return mapHeight;
+    }
+
+    @NotNull
+    private Graphics2D createBufferGraphics() {
+        synchronized (bufferedImageSync) {
+            assert bufferedImage != null;
+            return bufferedImage.createGraphics();
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return new Dimension(mapWidth*tileSize, mapHeight*tileSize);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return new Dimension(tileSize, tileSize);
     }
 
 }

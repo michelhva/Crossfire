@@ -68,12 +68,4 @@ public class MetaElementCellRenderer extends JPanel implements GUIListCellRender
         return this;
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void updateResolution(final int screenWidth, final int screenHeight) {
-        template.updateResolution(screenWidth, screenHeight);
-    }
-
 }

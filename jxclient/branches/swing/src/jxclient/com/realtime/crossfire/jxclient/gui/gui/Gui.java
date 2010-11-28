@@ -159,16 +159,16 @@ public class Gui extends Container {
      * @param height the height
      */
     @Override
-    public void setSize(final int width, final int height) {
-        if (width <= 0 || height <= 0) {
-            throw new IllegalArgumentException();
-        }
-
-        if (getWidth() == width && getHeight() == height) {
+    public void setBounds(final int x, final int y, final int width, final int height) {
+        if (getX() == x && getY() == y && getWidth() == width && getHeight() == height) {
             return;
         }
 
-        super.setSize(width, height);
+        super.setBounds(x, y, width, height);
+        //invalidate();
+        //validate();
+        //repaint();
+        doLayout();
         hasChangedElements = true;
         stateChanged = true;
     }
@@ -247,15 +247,15 @@ public class Gui extends Container {
      */
     public void redraw(@NotNull final Graphics g) {
         if (mouseTracker != null) {
-            final Component mouseElement = mouseTracker.getMouseElement();
+            final GUIElement mouseElement = mouseTracker.getMouseElement();
             final long t0 = System.currentTimeMillis();
 
             hasChangedElements = false;
-            for (final GUIElement element : visibleElements) {
-                element.paintComponent(g);
-                g.setColor(element == mouseElement ? Color.RED : Color.WHITE);
-                g.drawRect(element.getElementX(), element.getElementY(), element.getWidth()-1, element.getHeight()-1);
-            }
+            //for (final GUIElement element : visibleElements) {
+            //    element.paint(g);
+            //    g.setColor(element == mouseElement ? Color.RED : Color.WHITE);
+            //    g.drawRect(element.getElementX(), element.getElementY(), element.getWidth()-1, element.getHeight()-1);
+            //}
 
             final long t1 = System.currentTimeMillis();
             g.setColor(Color.black);
@@ -267,9 +267,10 @@ public class Gui extends Container {
             g.drawString((t1-t0)+"ms", 16, 64);
         } else {
             hasChangedElements = false;
-            for (final GUIElement element : visibleElements) {
-                element.paintComponent(g);
-            }
+            paint(g);
+            //for (final GUIElement element : visibleElements) {
+            //    element.paint(g);
+            //}
         }
     }
 
@@ -319,7 +320,7 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
-        for (final Component element : visibleElements) {
+        for (final GUIElement element : visibleElements) {
             if (class_.isAssignableFrom(element.getClass()) && element.getName().endsWith(ending)) {
                 return class_.cast(element);
             }
@@ -338,7 +339,7 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementNotEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
-        for (final Component element : visibleElements) {
+        for (final GUIElement element : visibleElements) {
             if (class_.isAssignableFrom(element.getClass()) && !element.getName().endsWith(ending)) {
                 return class_.cast(element);
             }
@@ -372,6 +373,7 @@ public class Gui extends Container {
      */
     @Nullable
     public GUIElement getElementFromPoint(final int x, final int y) {
+        final Component component = getComponentAt(x, y);
         GUIElement elected = null;
         for (final GUIElement element : visibleElements) {
             if (element.isElementAtPoint(x, y)) {
@@ -535,7 +537,7 @@ public class Gui extends Container {
             return false;
         }
 
-        final Component textArea = activeElement;
+        final GUIElement textArea = activeElement;
         if (!textArea.getName().equals("command")) {
             return false;
         }
@@ -554,7 +556,7 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_, @NotNull final String name) {
-        for (final Component element : visibleElements) {
+        for (final GUIElement element : visibleElements) {
             if (class_.isAssignableFrom(element.getClass()) && element.getName().equals(name)) {
                 return class_.cast(element);
             }
@@ -687,8 +689,7 @@ public class Gui extends Container {
 
         final Extent tmpExtent = extent;
         if (tmpExtent != null) {
-            setSize(tmpExtent.getW(screenWidth, screenHeight), tmpExtent.getH(screenWidth, screenHeight));
-            setPosition(tmpExtent.getX(screenWidth, screenHeight), tmpExtent.getY(screenWidth, screenHeight));
+            setBounds(tmpExtent.getX(screenWidth, screenHeight), tmpExtent.getY(screenWidth, screenHeight), tmpExtent.getW(screenWidth, screenHeight), tmpExtent.getH(screenWidth, screenHeight));
         } else if (!initialPositionSet) {
             setPosition(0, 0);
         }

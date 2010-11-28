@@ -1,57 +1,77 @@
 
 dialog border                250 250 600 300 false Auto Pickup
 dialog_hide START META LOGIN NEWCHAR ACCOUNT
-button button_close          578   6  16 16 close_up close_down false command_pickup_close
+#XXX:button button_close          578   6  16 16 close_up close_down false command_pickup_close
 
-label_text label_general      10  30 180 16 font_title BLACK General:
-checkbox checkbox_inhibit     10  50 180 16 pickup_inhibit Disable pickup
-checkbox checkbox_stop        10  70 180 16 pickup_stop Stop before pickup
-checkbox checkbox_not_cursed  10  90 180 16 pickup_not_cursed Ignore cursed
+begin groups 1 BOTH HORIZONTAL
 
-label_text label_misc         10 120 180 16 font_title BLACK Miscellaneous:
-checkbox checkbox_key         10 140 180 16 pickup_key Keys
-checkbox checkbox_valuables   10 160 180 16 pickup_valuables Money and jewels
-checkbox checkbox_jewels      10 180 180 16 pickup_jewels Rings and amulets
-checkbox checkbox_containers  10 200 180 16 pickup_containers Containers
+begin column1_group 1 BOTH VERTICAL
+label_text label_general      0 HORIZONTAL font_title BLACK General:
+checkbox checkbox_inhibit     0 HORIZONTAL pickup_inhibit Disable pickup
+checkbox checkbox_stop        0 HORIZONTAL pickup_stop Stop before pickup
+checkbox checkbox_not_cursed  0 HORIZONTAL pickup_not_cursed Ignore cursed
 
-#label_text label_ratio        10 120 180 16 font_title BLACK Weight/Value Ratio:
-#checkbox checkbox_ratio0     10 140 180 16 pickup_ratio0 Off
-#checkbox checkbox_ratio5     10 160 180 16 pickup_ratio5 >= 5
-#checkbox checkbox_ratio10    10 180 180 16 pickup_ratio10 >= 10
-#checkbox checkbox_ratio15    10 200 180 16 pickup_ratio15 >= 15
-#checkbox checkbox_ratio20    10 220 180 16 pickup_ratio20 >= 20
-#checkbox checkbox_ratio25    10 240 180 16 pickup_ratio25 >= 25
-#checkbox checkbox_ratio30    10 260 180 16 pickup_ratio30 >= 30
-#checkbox checkbox_ratio35    10 280 180 16 pickup_ratio35 >= 35
-#checkbox checkbox_ratio40    10 300 180 16 pickup_ratio40 >= 40
-#checkbox checkbox_ratio45    10 320 180 16 pickup_ratio45 >= 45
-#checkbox checkbox_ratio50    10 340 180 16 pickup_ratio50 >= 50
+label_text filler1a           0 HORIZONTAL font_label BLACK _
+label_text label_misc         0 HORIZONTAL font_title BLACK Miscellaneous:
+checkbox checkbox_key         0 HORIZONTAL pickup_key Keys
+checkbox checkbox_valuables   0 HORIZONTAL pickup_valuables Money and jewels
+checkbox checkbox_jewels      0 HORIZONTAL pickup_jewels Rings and amulets
 
-label_text label_weapons     210  30 180 16 font_title BLACK Weapons:
-checkbox checkbox_meleeweapon  210  50 180 16 pickup_melee_weapon Melee weapons
-checkbox checkbox_missileweapon 210 70 180 16 pickup_missile_weapon Missile weapons
-checkbox checkbox_bow        210  90 180 16 pickup_bow Bows
-checkbox checkbox_arrow      210 110 180 16 pickup_arrow Arrows
+#label_text filler1b          0 HORIZONTAL font_label BLACK _
+#label_text label_ratio       0 HORIZONTAL font_title BLACK Weight/Value Ratio:
+#checkbox checkbox_ratio0     0 HORIZONTAL pickup_ratio0 Off
+#checkbox checkbox_ratio5     0 HORIZONTAL pickup_ratio5 >= 5
+#checkbox checkbox_ratio10    0 HORIZONTAL pickup_ratio10 >= 10
+#checkbox checkbox_ratio15    0 HORIZONTAL pickup_ratio15 >= 15
+#checkbox checkbox_ratio20    0 HORIZONTAL pickup_ratio20 >= 20
+#checkbox checkbox_ratio25    0 HORIZONTAL pickup_ratio25 >= 25
+#checkbox checkbox_ratio30    0 HORIZONTAL pickup_ratio30 >= 30
+#checkbox checkbox_ratio35    0 HORIZONTAL pickup_ratio35 >= 35
+#checkbox checkbox_ratio40    0 HORIZONTAL pickup_ratio40 >= 40
+#checkbox checkbox_ratio45    0 HORIZONTAL pickup_ratio45 >= 45
+#checkbox checkbox_ratio50    0 HORIZONTAL pickup_ratio50 >= 50
 
-label_text label_armor       210 140 180 16 font_title BLACK Gear:
-checkbox checkbox_armour     210 160 180 16 pickup_armour Armors
-checkbox checkbox_boots      210 180 180 16 pickup_boots Boots
-checkbox checkbox_cloak      210 200 180 16 pickup_cloak Cloaks
-checkbox checkbox_gloves     210 220 180 16 pickup_gloves Gloves
-checkbox checkbox_helmet     210 240 180 16 pickup_helmet Helmets
-checkbox checkbox_shield     210 260 180 16 pickup_shield Shields
+label_text filler1c           1 HORIZONTAL font_label BLACK _
+end column1_group
 
-label_text label_readables   410  30 180 16 font_title BLACK Readables:
-checkbox checkbox_skillscroll 410 50 180 16 pickup_skillscroll Skillscrolls
-checkbox checkbox_readables  410 70 180 16 pickup_readables Normal books and scrolls
-checkbox checkbox_spellbook  410 90 180 16 pickup_spellbook Spellbooks
+begin column2_group 1 BOTH VERTICAL
+label_text label_weapons      0 HORIZONTAL font_title BLACK Weapons:
+checkbox checkbox_meleeweapon  0 HORIZONTAL pickup_melee_weapon Melee weapons
+checkbox checkbox_missileweapon 0 HORIZONTAL pickup_missile_weapon Missile weapons
+checkbox checkbox_bow         0 HORIZONTAL pickup_bow Bows
+checkbox checkbox_arrow       0 HORIZONTAL pickup_arrow Arrows
 
-label_text label_food        410 120 180 16 font_title BLACK Food:
-checkbox checkbox_drink      410 140 180 16 pickup_drink Drinks
-checkbox checkbox_food       410 160 180 16 pickup_food Normal Food
-checkbox checkbox_flesh      410 180 180 16 pickup_flesh Flesh
+label_text filler2a           0 HORIZONTAL font_label BLACK _
+label_text label_armor        0 HORIZONTAL font_title BLACK Gear:
+checkbox checkbox_armour      0 HORIZONTAL pickup_armour Armors
+checkbox checkbox_boots       0 HORIZONTAL pickup_boots Boots
+checkbox checkbox_cloak       0 HORIZONTAL pickup_cloak Cloaks
+checkbox checkbox_gloves      0 HORIZONTAL pickup_gloves Gloves
+checkbox checkbox_helmet      0 HORIZONTAL pickup_helmet Helmets
+checkbox checkbox_shield      0 HORIZONTAL pickup_shield Shields
 
-label_text label_magical     410 210 180 16 font_title BLACK Magical:
-checkbox checkbox_magical    410 230 180 16 pickup_magical Magical items
-checkbox checkbox_potion     410 250 180 16 pickup_potion Potions
-checkbox checkbox_magic_device 410 270 180 16 pickup_magic_device Magic devices
+label_text filler2b           1 HORIZONTAL font_label BLACK _
+end column2_group
+
+begin column3_group 1 BOTH VERTICAL
+label_text label_readables    0 HORIZONTAL font_title BLACK Readables:
+checkbox checkbox_skillscroll 0 HORIZONTAL pickup_skillscroll Skillscrolls
+checkbox checkbox_readables   0 HORIZONTAL pickup_readables Normal books and scrolls
+checkbox checkbox_spellbook   0 HORIZONTAL pickup_spellbook Spellbooks
+
+label_text filler3a           0 HORIZONTAL font_label BLACK _
+label_text label_food         0 HORIZONTAL font_title BLACK Food:
+checkbox checkbox_drink       0 HORIZONTAL pickup_drink Drinks
+checkbox checkbox_food        0 HORIZONTAL pickup_food Normal Food
+checkbox checkbox_flesh       0 HORIZONTAL pickup_flesh Flesh
+
+label_text filler3b           0 HORIZONTAL font_label BLACK _
+label_text label_magical      0 HORIZONTAL font_title BLACK Magical:
+checkbox checkbox_magical     0 HORIZONTAL pickup_magical Magical items
+checkbox checkbox_potion      0 HORIZONTAL pickup_potion Potions
+checkbox checkbox_magic_device 0 HORIZONTAL pickup_magic_device Magic devices
+
+label_text filler3c           1 HORIZONTAL font_label BLACK _
+end column3_group
+
+end groups

@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -81,14 +80,13 @@ public class CheckBoxFactory {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param extent the extent of this element
      * @param option The option to affect.
      * @param text The button text.
      * @return The new checkbox.
      */
     @NotNull
-    public GUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CheckBoxOption option, @NotNull final String text) {
-        return new GUICheckBox(tooltipManager, elementListener, name, extent, checked, unchecked, font, color, option, text);
+    public GUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CheckBoxOption option, @NotNull final String text) {
+        return new GUICheckBox(tooltipManager, elementListener, name, checked, unchecked, font, color, option, text);
     }
 
 }

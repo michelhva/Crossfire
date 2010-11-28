@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gauge;
 
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
@@ -46,6 +47,12 @@ public class GaugeState {
     private final BufferedImage negativeImage;
 
     /**
+     * The preferred size of this component.
+     */
+    @NotNull
+    private final Dimension preferredSize;
+
+    /**
      * The x-offset for drawing.
      */
     private final int dx;
@@ -53,7 +60,7 @@ public class GaugeState {
     /**
      * The y-offset for drawing.
      */
-    private final int dy;
+    private int dy;
 
     /**
      * The width of the "filled" area.
@@ -92,7 +99,18 @@ public class GaugeState {
     public GaugeState(@Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, final int dx, final int dy) {
         this.fullImage = fullImage;
         this.negativeImage = negativeImage;
+        final int preferredWidth = Math.max(fullImage == null ? 1 : fullImage.getWidth(), negativeImage == null ? 1 : negativeImage.getWidth());
+        final int preferredHeight = Math.max(fullImage == null ? 1 : fullImage.getHeight(), negativeImage == null ? 1 : negativeImage.getHeight());
+        preferredSize = new Dimension(preferredWidth, preferredHeight);
         this.dx = dx;
+        this.dy = dy;
+    }
+
+    /**
+     * Sets the y-offset for drawing.
+     * @param dy the y-offset for drawing
+     */
+    public void setDy(final int dy) {
         this.dy = dy;
     }
 
@@ -128,6 +146,15 @@ public class GaugeState {
         if (filledPicture != null) {
             g.drawImage(filledPicture, filledX+dx, filledY+dy, filledX+dx+filledW, filledY+dy+filledH, filledX, filledY, filledX+filledW, filledY+filledH, null);
         }
+    }
+
+    /**
+     * Returns the preferred size.
+     * @return the preferred size
+     */
+    @NotNull
+    public Dimension getPreferredSize() {
+        return new Dimension(preferredSize);
     }
 
 }

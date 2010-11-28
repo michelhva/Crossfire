@@ -494,13 +494,13 @@ public class DefaultJXCSkin implements JXCSkin {
         }
         currentScreenWidth = newScreenWidth;
         currentScreenHeight = newScreenHeight;
-        for (final GUIElement guiElement : guiElements) {
-            guiElement.updateResolution(newScreenWidth, newScreenHeight);
-        }
+        //XXX:for (final GUIElement guiElement : guiElements) {
+        //XXX:    guiElement.updateResolution(newScreenWidth, newScreenHeight);
+        //XXX:}
 
-        if (tooltipLabel != null) {
-            tooltipLabel.updateResolution(newScreenWidth, newScreenHeight);
-        }
+        //XXX:if (tooltipLabel != null) {
+        //XXX:    tooltipLabel.updateResolution(newScreenWidth, newScreenHeight);
+        //XXX:}
 
         final JXCWindowRenderer tmpWindowRenderer = windowRenderer;
         if (tmpWindowRenderer != null) {

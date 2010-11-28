@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.gui.GUICharacter;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -99,14 +98,13 @@ public class GUICharacterList extends GUIList {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param cellWidth the width of cells
      * @param cellHeight the height of cells
      * @param font font to display with
      * @param characterModel what to list characters of
      */
-    public GUICharacterList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final Font font, @NotNull final CharacterModel characterModel) {
-        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, elementListener, name+"_template", 50, 20, font, 0, characterModel)), null);
+    public GUICharacterList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final Font font, @NotNull final CharacterModel characterModel) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, elementListener, name+"_template", 50, 20, font, 0, characterModel)), null);
         this.characterModel = characterModel;
         this.characterModel.addCharacterListener(new CharacterListener() {
 
