@@ -3,24 +3,30 @@ set_auto_size
 dialog border WIDTH/2-400 HEIGHT/2-200 400 200 true Account login
 dialog_hide START META PLAYING NEWCHAR LOGIN
 
-label_text information 30 20 340 32 font_label BLACK Please enter your account information.
-
-label_text label_login 20 60 150 18 font_label BLACK Login:
-label_text label_password 20 90 150 18 font_label BLACK Password:
+label_text information 0 HORIZONTAL font_label BLACK Please enter your account information.
 
 commandlist command_null AND
 
-text account_login 200 60 190 18 input_active input_inactive font_label GRAY BLACK 1 command_null true
-text account_password 200 90 190 18 input_active input_inactive font_label GRAY BLACK 1 command_null true
+begin login_group 0 HORIZONTAL HORIZONTAL
+label_text label_login 0 NONE font_label BLACK Login:
+text account_login 1 HORIZONTAL input_active input_inactive font_label GRAY BLACK 1 command_null true
+end login_group
 
-label_failure account_login_error 20 120 360 18 font_label BLACK
+begin password_group 0 HORIZONTAL HORIZONTAL
+label_text label_password 0 NONE font_label BLACK Password:
+text account_password 1 HORIZONTAL input_active input_inactive font_label GRAY BLACK 1 command_null true
+end password_group
+
+label_failure account_login_error 1 BOTH font_label BLACK
 
 commandlist command_account_do_login AND account_login ACCOUNT_LOGIN
 commandlist command_account_cancel_login AND null DIALOG_CLOSE account_login
 commandlist_add command_account_cancel_login null DIALOG_OPEN account_main
 
-textbutton account_do_login 40 150 140 18 false command_account_do_login Login
-textbutton account_cancel_login 220 150 140 18 false command_account_cancel_login Cancel
+begin button_group 0 HORIZONTAL HORIZONTAL
+textbutton account_do_login 1 NONE false command_account_do_login Login
+textbutton account_cancel_login 1 NONE false command_account_cancel_login Cancel
+end button_group
 
 hide_input account_password
 set_default account_login

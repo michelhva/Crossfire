@@ -25,11 +25,12 @@ import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
 import com.realtime.crossfire.jxclient.timeouts.Timeouts;
+import java.awt.Dimension;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Abstract base class for button classes.
@@ -81,14 +82,13 @@ public abstract class AbstractButton extends ActivatableGUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param transparency the transparency value for the backing buffer
      * @param autoRepeat whether the button should autorepeat while being
      * pressed
      * @param commandList the commands to execute when the button is elected
      */
-    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        super(tooltipManager, elementListener, name, extent, transparency);
+    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList) {
+        super(tooltipManager, elementListener, name, transparency);
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;
     }
@@ -159,5 +159,30 @@ public abstract class AbstractButton extends ActivatableGUIElement {
     public void execute() {
         commandList.execute();
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return getMinimumSizeInt();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return getMinimumSizeInt();
+    }
+
+    /**
+     * Returns the minimal size needed to display this component.
+     * @return the minimal size
+     */
+    @NotNull
+    protected abstract Dimension getMinimumSizeInt();
 
 }

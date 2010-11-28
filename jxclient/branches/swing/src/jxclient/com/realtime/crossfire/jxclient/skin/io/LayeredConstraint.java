@@ -19,22 +19,30 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.list;
+package com.realtime.crossfire.jxclient.skin.io;
 
-import javax.swing.ListCellRenderer;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
+import org.jetbrains.annotations.NotNull;
 
-/**
- * A {@link ListCellRenderer} that implements resizing after screen resolution
- * changes.
- * @author Andreas Kirschbaum
- */
-public interface GUIListCellRenderer extends ListCellRenderer {
+public class LayeredConstraint {
 
-    /**
-     * Updates the component's size.
-     * @param width the new width
-     * @param height the new height
-     */
-    void setSize(final int width, int height);
+    @NotNull
+    private final Extent extent;
+
+    private final int layer;
+
+    public LayeredConstraint(@NotNull final Extent extent, final int layer) {
+        this.extent = extent;
+        this.layer = layer;
+    }
+
+    @NotNull
+    public Extent getExtent() {
+        return extent;
+    }
+
+    public int getLayer() {
+        return layer;
+    }
 
 }

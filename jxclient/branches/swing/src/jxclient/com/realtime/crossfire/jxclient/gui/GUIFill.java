@@ -21,11 +21,12 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import org.jetbrains.annotations.NotNull;
@@ -34,7 +35,7 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUIElement} that fills an area with a given color.
  * @author Andreas Kirschbaum
  */
-public class GUIFill extends GUIElement {
+public class GUIFill extends AbstractGUIElement {
 
     /**
      * The serial version UID.
@@ -52,12 +53,11 @@ public class GUIFill extends GUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param color the color to paint
      * @param alpha the transparency value
      */
-    public GUIFill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Color color, final float alpha) {
-        super(tooltipManager, elementListener, name, extent, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
+    public GUIFill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Color color, final float alpha) {
+        super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.color = color;
     }
 
@@ -65,7 +65,9 @@ public class GUIFill extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+        final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(color);
         g2.clearRect(0, 0, getWidth(), getHeight());
     }

@@ -23,20 +23,20 @@ package com.realtime.crossfire.jxclient.skin.factory;
 
 import com.realtime.crossfire.jxclient.gui.GUIDialogTitle;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.Alignment;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.skin.skin.Expression;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
+import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Container;
 import java.awt.Font;
+import java.awt.GridBagConstraints;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
-import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A factory class to create "textbutton" instances.
@@ -131,6 +131,7 @@ public class DialogFactory {
     /**
      * The background color for the dialog title.
      */
+    @Nullable
     private final Color titleBackgroundColor;
 
     /**
@@ -209,7 +210,8 @@ public class DialogFactory {
         }
         this.titleFont = titleFont;
         this.titleColor = titleColor;
-        this.titleBackgroundColor = new Color(titleBackgroundColor.getRed(), titleBackgroundColor.getGreen(), titleBackgroundColor.getBlue(), (int)(255*alpha));
+        final int intAlpha = (int)(255*alpha);
+        this.titleBackgroundColor = intAlpha == 0 ? null : new Color(titleBackgroundColor.getRed(), titleBackgroundColor.getGreen(), titleBackgroundColor.getBlue(), intAlpha);
         this.alpha = alpha;
     }
 
@@ -222,34 +224,73 @@ public class DialogFactory {
      * @param w The width of the dialog, including the frames.
      * @param h The height of the dialog, including the frames.
      * @param title The dialog's title, or an empty string for no title.
-     * @return The gui elements comprising the new dialog.
+     * @param gui the gui to change into a dialog
+     * @return the center component of the dialog
      */
     @NotNull
-    public Iterable<GUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Expression w, @NotNull final Expression h, @NotNull final String title) {
+    public Container newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Expression w, @NotNull final Expression h, @NotNull final String title, @NotNull final Container gui) {
         final int titleHeight = title.length() > 0 ? 18 : 0;
-        final Collection<GUIElement> result = new ArrayList<GUIElement>();
-        final Expression zeroExpression = new Expression(0, 0, 0);
-        final Expression sizeNExpression = new Expression(sizeN, 0, 0);
-        final Expression sizeSExpression = new Expression(sizeS, 0, 0);
-        final Expression sizeWExpression = new Expression(sizeW, 0, 0);
-        final Expression sizeEExpression = new Expression(sizeE, 0, 0);
-        final Expression titleHeightExpression = new Expression(titleHeight, 0, 0);
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_nw", new Extent(0, 0, sizeW, sizeN), frameNW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_n", new Extent(sizeWExpression, zeroExpression, w.addConstant(-sizeW-sizeE), sizeNExpression), frameN, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_ne", new Extent(w.addConstant(-sizeE), zeroExpression, sizeEExpression, sizeNExpression), frameNE, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_w", new Extent(zeroExpression, sizeNExpression, sizeWExpression, h.addConstant(-sizeN-sizeS)), frameW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_c", new Extent(sizeWExpression, sizeNExpression.addConstant(titleHeight), w.addConstant(-sizeW-sizeE), h.addConstant(-sizeN-sizeS-titleHeight)), frameC, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_e", new Extent(w.addConstant(-sizeE), sizeNExpression, sizeEExpression, h.addConstant(-sizeN-sizeS)), frameE, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_sw", new Extent(zeroExpression, h.addConstant(-sizeS), sizeWExpression, sizeSExpression), frameSW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_s", new Extent(sizeWExpression, h.addConstant(-sizeS), w.addConstant(-sizeW-sizeE), sizeSExpression), frameS, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_se", new Extent(w.addConstant(-sizeE), h.addConstant(-sizeS), sizeEExpression, sizeSExpression), frameSE, alpha));
+        final int width = w.evaluate(1024, 768)/*XXX*/-sizeW-sizeE;
+        final int height = h.evaluate(1024, 768)/*XXX*/-sizeN-sizeS+titleHeight;
+        final GridBagConstraints gbc = new GridBagConstraints();
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.weightx = 0;
+        gbc.weighty = 0;
+        gui.add(new GUIPicture(tooltipManager, elementListener, name+"_nw", frameNW, alpha, sizeW, sizeN), gbc);
+        gbc.gridx = 1;
+        gbc.weightx = 1;
+        gui.add(new GUIPicture(tooltipManager, elementListener, name+"_n", frameN, alpha, width, sizeN));
+        gbc.gridx = 2;
+        gbc.weightx = 0;
+        gui.add(new GUIPicture(tooltipManager, elementListener, name+"_ne", frameNE, alpha, sizeE, sizeN), gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        gbc.weightx = 0;
+        gbc.weighty = 1;
+        gbc.gridheight = 2;
+        gui.add(new GUIPicture(tooltipManager, elementListener, name+"_w", frameW, alpha, sizeW, height), gbc);
+        gbc.gridx = 1;
+        gbc.gridy = titleHeight > 0 ? 2 : 1;
+        gbc.gridheight = titleHeight > 0 ? 1 : 2;
+        gbc.weightx = 1;
+        final Container result = new GUIPicture(tooltipManager, elementListener, name+"_c", frameC, alpha, width, height-titleHeight);
+        gui.add(result, gbc);
+        gbc.gridx = 2;
+        gbc.gridy = 1;
+        gbc.gridheight = 2;
+        gbc.weightx = 0;
+        gui.add(new GUIPicture(tooltipManager, elementListener, name+"_e", frameE, alpha, sizeE, height), gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 3;
+        gbc.gridheight = 1;
+        gbc.weightx = 0;
+        gbc.weighty = 0;
+        gui.add(new GUIPicture(tooltipManager, elementListener, name+"_sw", frameSW, alpha, sizeW, sizeS), gbc);
+        gbc.gridx = 1;
+        gbc.weightx = 1;
+        gui.add(new GUIPicture(tooltipManager, elementListener, name+"_s", frameS, alpha, width, sizeS), gbc);
+        gbc.gridx = 2;
+        gbc.weightx = 0;
+        gui.add(new GUIPicture(tooltipManager, elementListener, name+"_se", frameSE, alpha, sizeE, sizeS), gbc);
+
         if (titleHeight > 0) {
-            result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, name+"_t", new Extent(sizeWExpression, sizeNExpression, w.addConstant(-sizeW-sizeE), titleHeightExpression), frameC, alpha));
+            gbc.gridx = 1;
+            gbc.gridy = 1;
+            gbc.gridheight = 1;
+            gbc.weightx = 1;
+            gbc.weighty = 0;
+            final Container dialogTitle = new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, name+"_t", frameC, alpha, width, titleHeight);
             if (!title.equals("_")) {
-                final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, elementListener, name+"_title", new Extent(sizeWExpression, sizeNExpression, w.addConstant(-sizeW-sizeE), titleHeightExpression), null, titleFont, titleColor, titleBackgroundColor, Alignment.LEFT, " "+title);
-                result.add(titleLabel);
+                final GUIOneLineLabel titleLabel = new GUIOneLineLabel(tooltipManager, elementListener, name+"_title", null, titleFont, titleColor, titleBackgroundColor, Alignment.LEFT, " "+title);
+                dialogTitle.setLayout(new BorderLayout());
+                dialogTitle.add(titleLabel, BorderLayout.CENTER);
                 titleLabel.setIgnore();
             }
+            gui.add(dialogTitle, gbc);
         }
         return result;
     }

@@ -19,22 +19,20 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.list;
+package com.realtime.crossfire.jxclient.skin.io;
 
-import javax.swing.ListCellRenderer;
+import java.io.IOException;
+import org.jetbrains.annotations.NotNull;
 
-/**
- * A {@link ListCellRenderer} that implements resizing after screen resolution
- * changes.
- * @author Andreas Kirschbaum
- */
-public interface GUIListCellRenderer extends ListCellRenderer {
+public interface ConstraintParser {
 
     /**
-     * Updates the component's size.
-     * @param width the new width
-     * @param height the new height
+     * Creates constraints from two parameters.
+     * @param args the parameters
+     * @return the constraints
+     * @throws IOException if the extent cannot be parsed
      */
-    void setSize(final int width, int height);
+    @NotNull
+    Object parseConstraints(@NotNull final Args args) throws IOException;
 
 }

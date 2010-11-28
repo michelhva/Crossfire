@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import java.awt.Component;
 import java.awt.event.MouseEvent;
 import javax.swing.event.MouseInputListener;
 import org.jetbrains.annotations.NotNull;
@@ -72,7 +71,7 @@ public class MouseTracker implements MouseInputListener {
      * @return the gui element in which the mouse is
      */
     @Nullable
-    public Component getMouseElement() {
+    public GUIElement getMouseElement() {
         return mouseElement;
     }
 

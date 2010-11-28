@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
 import java.awt.Graphics;
@@ -63,13 +62,12 @@ public class GUIMap extends AbstractGUIMap {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param mapUpdater the map updater instance to use
      * @param facesProvider the faces provider for looking up faces
      * @param crossfireServerConnection the server connection to monitor
      */
-    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider);
+    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
+        super(tooltipManager, elementListener, name, mapUpdater, facesProvider);
         this.crossfireServerConnection = crossfireServerConnection;
         tileSize = facesProvider.getSize();
     }

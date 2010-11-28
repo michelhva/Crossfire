@@ -1,56 +1,109 @@
 
-dialog border WIDTH/2-250 HEIGHT/2-329 408 264 true _
+dialog border WIDTH/2-250 HEIGHT/2-329 408 264 true Status
 dialog_hide START META LOGIN ACCOUNT
-label_stat border_title  4   4 400  24 font_title BLACK TITLE LEFT
-button button_close    386   6  16  16 close_up close_down false command_status_close
 
-label_text label_lvl    10  30 100  16 font_label BLACK Level:
-label_text label_xp     10  50 100  16 font_label BLACK Experience:
-label_text label_xp2    10  70 100  16 font_label BLACK Exp. next level:
-label_text label_range  10  90  55  16 font_label BLACK Range:
-label_stat stat_lvl    110  30  40  16 font_label BLACK LEVEL RIGHT
-label_stat stat_xp     110  50 110  16 font_label BLACK EXP RIGHT
-label_stat stat_xp2    110  70 110  16 font_label BLACK EXP_NEXT_LEVEL RIGHT
-label_stat stat_range   65  90 335  16 font_label BLACK RANGE LEFT
+begin group1           1 BOTH VERTICAL
 
-label_text label_str    10 120  90  16 font_label BLACK Strength:
-label_text label_dex    10 140  90  16 font_label BLACK Dexterity:
-label_text label_con    10 160  90  16 font_label BLACK Constitution:
-label_text label_int    10 180  90  16 font_label BLACK Intelligence:
-label_text label_wis    10 200  90  16 font_label BLACK Wisdom:
-label_text label_pow    10 220  90  16 font_label BLACK Power:
-label_text label_cha    10 240  90  16 font_label BLACK Charisma:
-label_stat2 stat_str   100 120  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF STR STR_BASE STR_RACE STR_APPLIED RIGHT
-label_stat2 stat_dex   100 140  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF DEX DEX_BASE DEX_RACE DEX_APPLIED RIGHT
-label_stat2 stat_con   100 160  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF CON CON_BASE CON_RACE CON_APPLIED RIGHT
-label_stat2 stat_int   100 180  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF INT INT_BASE INT_RACE INT_APPLIED RIGHT
-label_stat2 stat_wis   100 200  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF WIS WIS_BASE WIS_RACE WIS_APPLIED RIGHT
-label_stat2 stat_pow   100 220  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF POW POW_BASE POW_RACE POW_APPLIED RIGHT
-label_stat2 stat_cha   100 240  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF CHA CHA_BASE CHA_RACE CHA_APPLIED RIGHT
+label_stat label_title 0 HORIZONTAL       font_label BLACK TITLE LEFT
 
-label_text label_hp    230  50  50  16 font_label BLACK HP:
-label_text label_sp    230  70  50  16 font_label BLACK Mana:
-label_stat stat_hp     280  50  30  16 font_label BLACK HP RIGHT
-label_stat stat_sp     280  70  30  16 font_label BLACK SP RIGHT
+begin group2           1 BOTH HORIZONTAL
 
-label_text label_gp    315  50  50  16 font_label BLACK Grace:
-label_text label_fp    315  70  50  16 font_label BLACK Food:
-label_stat stat_gp     370  50  30  16 font_label BLACK GRACE RIGHT
-label_stat stat_fp     370  70  30  16 font_label BLACK FOOD RIGHT
+begin group2a          1 BOTH VERTICAL
+label_text label_lvl   1 HORIZONTAL       font_label BLACK Level:
+label_text label_xp    1 HORIZONTAL       font_label BLACK Experience:
+label_text label_xp2   1 HORIZONTAL       font_label BLACK Exp. next level:
+label_text label_range 1 HORIZONTAL       font_label BLACK Range:
+end group2a
 
-label_text label_spd   170 120  70  16 font_label BLACK Speed:
-label_text label_wspd  170 140  70  16 font_label BLACK Weapon:
-label_stat stat_spd    240 120  40  16 font_label BLACK SPEED RIGHT
-label_stat stat_wspd   240 140  40  16 font_label BLACK WEAPON_SPEED RIGHT
+begin group2b          1 BOTH VERTICAL
+label_stat stat_lvl    1 HORIZONTAL       font_label BLACK LEVEL RIGHT
+label_stat stat_xp     1 HORIZONTAL       font_label BLACK EXP RIGHT
+label_stat stat_xp2    1 HORIZONTAL       font_label BLACK EXP_NEXT_LEVEL RIGHT
+label_stat stat_range  1 HORIZONTAL       font_label BLACK RANGE LEFT
+end group2b
 
-label_text label_dam   170 180  70  16 font_label BLACK Dam:
-label_text label_wc    170 200  70  16 font_label BLACK WC:
-label_text label_arm   170 220  70  16 font_label BLACK Arm:
-label_text label_ac    170 240  70  16 font_label BLACK AC:
-label_stat stat_dam    240 180  40  16 font_label BLACK DAM RIGHT
-label_stat stat_wc     240 200  40  16 font_label BLACK WC RIGHT
-label_stat stat_arm    240 220  40  16 font_label BLACK RES_PHYS RIGHT
-label_stat stat_ac     240 240  40  16 font_label BLACK AC RIGHT
+begin group2c          1 BOTH VERTICAL
+label_text label_hp    1 HORIZONTAL       font_label BLACK HP:
+label_text label_sp    1 HORIZONTAL       font_label BLACK Mana:
+label_text filler2c1   1 HORIZONTAL       font_label BLACK _
+label_text filler2c2   1 HORIZONTAL       font_label BLACK _
+label_text filler2c3   1 HORIZONTAL       font_label BLACK _
+end group2c
+
+begin group2d          1 BOTH VERTICAL
+label_stat stat_hp     1 HORIZONTAL       font_label BLACK HP RIGHT
+label_stat stat_sp     1 HORIZONTAL       font_label BLACK SP RIGHT
+label_text filler2d1   1 HORIZONTAL       font_label BLACK _
+label_text filler2d2   1 HORIZONTAL       font_label BLACK _
+label_text filler2d3   1 HORIZONTAL       font_label BLACK _
+end group2d
+
+begin group2e          1 BOTH VERTICAL
+label_text label_gp    1 HORIZONTAL       font_label BLACK Grace:
+label_text label_fp    1 HORIZONTAL       font_label BLACK Food:
+label_text filler2e1   1 HORIZONTAL       font_label BLACK _
+label_text filler2e2   1 HORIZONTAL       font_label BLACK _
+label_text filler2e3   1 HORIZONTAL       font_label BLACK _
+end group2e
+
+begin group2f          1 BOTH VERTICAL
+label_stat stat_gp     1 HORIZONTAL       font_label BLACK GRACE RIGHT
+label_stat stat_fp     1 HORIZONTAL       font_label BLACK FOOD RIGHT
+label_text filler7     1 HORIZONTAL       font_label BLACK _
+label_text filler2f1   1 HORIZONTAL       font_label BLACK _
+label_text filler2f2   1 HORIZONTAL       font_label BLACK _
+label_text filler2f3   1 HORIZONTAL       font_label BLACK _
+end group2f
+
+end group2
+
+begin group3           1 BOTH HORIZONTAL
+
+begin group3a          0 BOTH VERTICAL
+label_text label_str   1 HORIZONTAL       font_label BLACK Strength:
+label_text label_dex   1 HORIZONTAL       font_label BLACK Dexterity:
+label_text label_con   1 HORIZONTAL       font_label BLACK Constitution:
+label_text label_int   1 HORIZONTAL       font_label BLACK Intelligence:
+label_text label_wis   1 HORIZONTAL       font_label BLACK Wisdom:
+label_text label_pow   1 HORIZONTAL       font_label BLACK Power:
+label_text label_cha   1 HORIZONTAL       font_label BLACK Charisma:
+end group3a
+
+begin group3b          0 BOTH VERTICAL
+label_stat2 stat_str   1 HORIZONTAL       font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF STR STR_BASE STR_RACE STR_APPLIED RIGHT
+label_stat2 stat_dex   1 HORIZONTAL       font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF DEX DEX_BASE DEX_RACE DEX_APPLIED RIGHT
+label_stat2 stat_con   1 HORIZONTAL       font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF CON CON_BASE CON_RACE CON_APPLIED RIGHT
+label_stat2 stat_int   1 HORIZONTAL       font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF INT INT_BASE INT_RACE INT_APPLIED RIGHT
+label_stat2 stat_wis   1 HORIZONTAL       font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF WIS WIS_BASE WIS_RACE WIS_APPLIED RIGHT
+label_stat2 stat_pow   1 HORIZONTAL       font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF POW POW_BASE POW_RACE POW_APPLIED RIGHT
+label_stat2 stat_cha   1 HORIZONTAL       font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF CHA CHA_BASE CHA_RACE CHA_APPLIED RIGHT
+end group3b
+
+begin group3c          1 BOTH VERTICAL
+label_text label_spd   1 HORIZONTAL       font_label BLACK Speed:
+label_text label_wspd  1 HORIZONTAL       font_label BLACK Weapon:
+label_text label_dam   1 HORIZONTAL       font_label BLACK Dam:
+label_text label_wc    1 HORIZONTAL       font_label BLACK WC:
+label_text label_arm   1 HORIZONTAL       font_label BLACK Arm:
+label_text label_ac    1 HORIZONTAL       font_label BLACK AC:
+label_text filler3c1   1 HORIZONTAL       font_label BLACK _
+end group3c
+
+begin group3d          1 BOTH VERTICAL
+label_stat stat_spd    1 HORIZONTAL       font_label BLACK SPEED RIGHT
+label_stat stat_wspd   1 HORIZONTAL       font_label BLACK WEAPON_SPEED RIGHT
+label_stat stat_dam    1 HORIZONTAL       font_label BLACK DAM RIGHT
+label_stat stat_wc     1 HORIZONTAL       font_label BLACK WC RIGHT
+label_stat stat_arm    1 HORIZONTAL       font_label BLACK RES_PHYS RIGHT
+label_stat stat_ac     1 HORIZONTAL       font_label BLACK AC RIGHT
+label_text filler3d1   1 HORIZONTAL       font_label BLACK _
+end group3d
+
+end group3
+
+end group1
+
+#XXX:button button_close    386   6  16  16 close_up close_down false command_status_close
 
 # Allow dialog shifting by dragging the title bar.
-ignore border_title
+#XXX:ignore border_title

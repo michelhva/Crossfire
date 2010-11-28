@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.gui.log;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -57,15 +56,14 @@ public class GUILabelLog extends GUILog {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param backgroundImage the background image; may be <code>null</code> if
      * unused
      * @param fonts the <code>Fonts</code> instance for looking up fonts
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */
-    public GUILabelLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor) {
-        super(tooltipManager, elementListener, name, extent, backgroundImage, fonts);
+    public GUILabelLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor) {
+        super(tooltipManager, elementListener, name, backgroundImage, fonts);
         this.defaultColor = defaultColor;
     }
 

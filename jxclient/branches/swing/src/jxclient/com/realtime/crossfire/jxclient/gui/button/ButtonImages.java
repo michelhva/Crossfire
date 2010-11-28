@@ -117,4 +117,13 @@ public class ButtonImages {
         }
     }
 
+    /**
+     * Returns the total width needed to display contents of the given width.
+     * @param width the content's width
+     * @return the total width
+     */
+    public int getWidth(final int width) {
+        return imageLeft.getWidth(null)+OFFSET+width+OFFSET+imageRight.getWidth(null);
+    }
+
 }

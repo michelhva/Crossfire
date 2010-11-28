@@ -2,11 +2,13 @@
 dialog dialog         WIDTH/2-94 HEIGHT/2-124 4+180+4 4+110+4 false Exit Crossfire?
 set_modal
 
-label_multi message    10  30  168 40 font_label BLACK <<EOF
+label_multi message 1 BOTH font_label BLACK <<EOF
 Do you really want to exit
 from Crossfire?
 EOF
-textbutton disconnect 20   90    66 18 false command_quit        Exit
-textbutton resume     100  90    66 18 false command_resume_quit Resume
+begin button_group    0 HORIZONTAL HORIZONTAL
+textbutton disconnect 0 NONE       false command_quit        Exit
+textbutton resume     0 NONE       false command_resume_quit Resume
+end button_group
 
 set_default disconnect

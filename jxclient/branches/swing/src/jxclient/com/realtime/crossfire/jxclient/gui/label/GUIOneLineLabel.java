@@ -23,9 +23,10 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
@@ -47,7 +48,6 @@ public class GUIOneLineLabel extends GUILabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the window renderer to notify
      * @param name The name of this element.
-     * @param extent the extent of this element
      * @param picture The background image; <code>null</code> for no
      * background.
      * @param font The font for rendering the label text.
@@ -56,8 +56,8 @@ public class GUIOneLineLabel extends GUILabel {
      * @param alignment The text alignment.
      * @param text The label text.
      */
-    public GUIOneLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, extent, picture, font, color, backgroundColor, alignment);
+    public GUIOneLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
+        super(tooltipManager, elementListener, name, picture, font, color, backgroundColor, alignment);
         setText(text);
     }
 
@@ -65,9 +65,36 @@ public class GUIOneLineLabel extends GUILabel {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        super.render(g2);
-        drawLine(g2, 0, getHeight(), getText());
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+        drawLine((Graphics2D)g, 0, getHeight(), getText());
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return getMinimumSizeInt();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return getMinimumSizeInt();
+    }
+
+    /**
+     * Returns the minimal size needed to display this component.
+     * @return the minimal size
+     */
+    @NotNull
+    private Dimension getMinimumSizeInt() {
+        return getTextDimension(getText(), getTextFont());
     }
 
 }

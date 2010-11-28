@@ -35,6 +35,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListe
 import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
+import com.realtime.crossfire.jxclient.skin.io.ComponentDumper;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.util.Resolution;
@@ -44,7 +45,6 @@ import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
 import java.awt.Dimension;
 import java.awt.Frame;
-import java.awt.Graphics;
 import java.awt.Insets;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
@@ -127,7 +127,7 @@ public class JXCWindow {
      * The main window.
      */
     @NotNull
-    private final JFrame frame;
+    private final JFrame frame = new JFrame("");
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets the
@@ -421,22 +421,6 @@ public class JXCWindow {
         this.guiManager = guiManager;
         this.keyHandler = keyHandler;
         this.characterModel = characterModel;
-        frame = new JFrame("") {
-
-            /**
-             * The serial version UID.
-             */
-            private static final long serialVersionUID = 1L;
-
-            /**
-             * {@inheritDoc}
-             */
-            @Override
-            public void paint(@NotNull final Graphics g) {
-                windowRenderer.repaint();
-            }
-
-        };
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         try {
             frame.setIconImage(ResourceUtils.loadImage(ResourceUtils.APPLICATION_ICON).getImage());
@@ -455,6 +439,12 @@ public class JXCWindow {
             public void componentResized(final ComponentEvent e) {
                 windowRenderer.updateWindowSize(frame.getWidth(), frame.getHeight());
                 guiManager.updateWindowSize(new Dimension(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight()));
+                ComponentDumper.dump(frame);
+                frame.invalidate();
+                frame.validate();
+                frame.getContentPane().invalidate();
+                frame.getContentPane().validate();
+                ComponentDumper.dump(frame);
             }
 
             /**

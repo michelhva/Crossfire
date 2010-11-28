@@ -59,14 +59,6 @@ public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer
      * {@inheritDoc}
      */
     @Override
-    public void updateResolution(final int screenWidth, final int screenHeight) {
-        template.updateResolution(screenWidth, screenHeight);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public Component getListCellRendererComponent(@NotNull final JList list, @NotNull final Object value, final int index, final boolean isSelected, final boolean cellHasFocus) {
         template.setIndex(((GUICharacter)value).getIndex());
         template.setSelected(isSelected);

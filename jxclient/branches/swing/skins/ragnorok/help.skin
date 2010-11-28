@@ -1,9 +1,9 @@
 
 dialog border WIDTH/2-482 HEIGHT/2-320 956+8 602+8 false Help
 dialog_hide START META LOGIN ACCOUNT
-button button_close 4+956-18 6 16 16 close_up close_down false command_help_close
+#XXX:button button_close 4+956-18 6 16 16 close_up close_down false command_help_close
 
-label_multi help_text 8 27 956-8 576 font_label DARK_GRAY <<EOF
+label_multi help_text 1 BOTH font_label DARK_GRAY <<EOF
 Common commands
 ===============
 Use direction keys to walk; CTRL + direction to run. Bumping into monsters attacks them. Bumping into other players pushes them away.

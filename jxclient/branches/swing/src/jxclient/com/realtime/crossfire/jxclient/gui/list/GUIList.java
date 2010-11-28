@@ -28,14 +28,10 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Adjustable;
-import java.awt.AlphaComposite;
-import java.awt.Color;
 import java.awt.Component;
-import java.awt.Composite;
 import java.awt.Dimension;
-import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
@@ -134,15 +130,14 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param cellWidth the width of each cell
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
      * @param doubleClickCommandList the command list to execute on double-click
      * or <code>null</code> to ignore double-clicks
      */
-    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer listCellRenderer, @Nullable final CommandList doubleClickCommandList) {
-        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
+    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer listCellRenderer, @Nullable final CommandList doubleClickCommandList) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         this.cellHeight = cellHeight;
         this.listCellRenderer = listCellRenderer;
         this.doubleClickCommandList = doubleClickCommandList;
@@ -151,17 +146,24 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         list.setFixedCellWidth(cellWidth);
         list.setFixedCellHeight(cellHeight);
         list.setOpaque(false);
+        list.setFocusable(false);
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         list.addListSelectionListener(listSelectionListener);
 
         viewport.setView(list);
         viewport.setScrollMode(JViewport.BLIT_SCROLL_MODE);
         viewport.setOpaque(false);
+        viewport.setFocusable(false);
 
         scrollPane = new JScrollPane(null, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         scrollPane.setViewport(viewport);
         scrollPane.setOpaque(false);
+        scrollPane.setFocusable(false);
         scrollPane.setBorder(new EmptyBorder(0, 0, 0, 0));
+
+        add(scrollPane);
+
+        listCellRenderer.setSize(getWidth(), cellHeight);
     }
 
     /**
@@ -180,17 +182,8 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        final Composite composite = g2.getComposite();
-        g2.setComposite(AlphaComposite.Clear);
-        g2.setColor(new Color(0, 255, 0, 255));
-        g2.fillRect(0, 0, getWidth(), getHeight());
-        g2.setComposite(composite);
-
-        synchronized (getTreeLock()) {
-            scrollPane.paint(g2);
-            viewport.paint(g2);
-        }
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
     }
 
     /**
@@ -596,32 +589,28 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * {@inheritDoc}
      */
     @Override
-    public void updateResolution(final int screenWidth, final int screenHeight) {
-        super.updateResolution(screenWidth, screenHeight);
-        final Dimension size = new Dimension(getWidth(), getHeight());
-        scrollPane.setPreferredSize(size);
-        scrollPane.setMinimumSize(size);
-        scrollPane.setMaximumSize(size);
-        scrollPane.setSize(size);
-        viewport.setSize(size);
-        list.setSize(getWidth(), Integer.MAX_VALUE);
+    public Dimension getPreferredSize() {
+        final Dimension result = list.getPreferredSize();
+        return result == null ? super.getPreferredSize() : result;
+    }
 
-        final int modelSize = model.getSize();
-        for (int i = 0; i < modelSize; i++) {
-            final GUIElement element = getElement(i);
-            element.updateResolution(screenWidth, screenHeight);
-        }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Dimension getMinimumSize() {
+        final Dimension result = list.getMinimumSize();
+        return result == null ? super.getMinimumSize() : result;
+    }
 
-        listCellRenderer.updateResolution(screenWidth, screenHeight);
-
-        synchronized (bufferedImageSync) {
-            final Graphics2D g = createBufferGraphics();
-            try {
-                render(g);
-            } finally {
-                g.dispose();
-            }
-        }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setBounds(final int x, final int y, final int width, final int height) {
+        super.setBounds(x, y, width, height);
+        scrollPane.setSize(width, height);
+        listCellRenderer.setSize(width, cellHeight);
     }
 
 }

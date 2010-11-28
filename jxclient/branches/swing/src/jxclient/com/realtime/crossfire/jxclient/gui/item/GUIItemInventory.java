@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Image;
 import java.awt.event.InputEvent;
 import org.jetbrains.annotations.NotNull;
@@ -119,7 +118,6 @@ public class GUIItemInventory extends GUIItemItem {
      * @param elementListener the element listener to notify
      * @param commandQueue the command queue for sending commands
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param index the default scroll index
      * @param crossfireServerConnection the connection instance
      * @param itemPainter the item painter for painting the icon
@@ -127,8 +125,8 @@ public class GUIItemInventory extends GUIItemItem {
      * @param floorView the floor view to use
      * @param inventoryView the inventory view to watch
      */
-    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, @NotNull final Extent extent, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView) {
-        super(tooltipManager, elementListener, name, extent, crossfireServerConnection, itemPainter, facesManager);
+    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView) {
+        super(tooltipManager, elementListener, name, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
