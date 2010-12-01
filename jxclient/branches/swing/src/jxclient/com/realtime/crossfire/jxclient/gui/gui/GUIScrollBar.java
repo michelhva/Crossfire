@@ -263,6 +263,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         g.fillRect(0, sy+sh, getWidth(), getHeight()-sy-sh);
         g.setColor(colorForeground);
         g.fillRect(0, sy, getWidth(), sh);
+        finishPaintComponent(g);
     }
 
     /**

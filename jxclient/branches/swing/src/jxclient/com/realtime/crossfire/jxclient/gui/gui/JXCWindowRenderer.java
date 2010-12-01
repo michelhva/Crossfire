@@ -1255,9 +1255,11 @@ public class JXCWindowRenderer {
     public GUIElement findElement(@NotNull final MouseEvent e) {
         GUIElement elected = null;
 
+        final int eX = e.getX();
+        final int eY = e.getY();
         for (final Gui dialog : getOpenDialogs()) {
             if (!dialog.isHidden(rendererGuiState)) {
-                elected = manageMouseEvents(dialog, e);
+                elected = manageMouseEvents(dialog, eX-dialog.getX(), eY-dialog.getY());
                 if (elected != null) {
                     break;
                 }
@@ -1269,7 +1271,7 @@ public class JXCWindowRenderer {
 
         if (elected == null) {
             assert currentGui != null;
-            elected = manageMouseEvents(currentGui, e);
+            elected = manageMouseEvents(currentGui, eX, eY);
         }
 
         if (elected != null) {
@@ -1280,9 +1282,9 @@ public class JXCWindowRenderer {
     }
 
     @Nullable
-    private GUIElement manageMouseEvents(@NotNull final Gui gui, @NotNull final MouseEvent e) {
-        final int x = e.getX()-offsetX2;
-        final int y = e.getY()-offsetY2;
+    private GUIElement manageMouseEvents(@NotNull final Gui gui, final int eX, final int eY) {
+        final int x = eX-offsetX2;
+        final int y = eY-offsetY2;
         return gui.getElementFromPoint(x, y);
     }
 

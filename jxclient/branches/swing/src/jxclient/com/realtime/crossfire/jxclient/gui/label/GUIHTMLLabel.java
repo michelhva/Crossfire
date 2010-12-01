@@ -126,6 +126,7 @@ public class GUIHTMLLabel extends AbstractLabel {
         } catch (final IOException ex) {
             // XXX: handle exception
         }
+        finishPaintComponent(g);
     }
 
     /**

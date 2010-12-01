@@ -169,17 +169,11 @@ public class MouseTracker implements MouseInputListener {
         final GUIElement tmp = mouseElement;
         if (tmp != null) {
             tmp.mouseExited(e);
-            if (debugGui) {
-                tmp.setChanged();
-            }
         }
 
         mouseElement = element;
 
         if (element != null) {
-            if (debugGui) {
-                element.setChanged();
-            }
             element.mouseEntered(e);
         }
     }

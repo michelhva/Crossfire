@@ -373,15 +373,11 @@ public class Gui extends Container {
      */
     @Nullable
     public GUIElement getElementFromPoint(final int x, final int y) {
-        final Component component = getComponentAt(x, y);
-        GUIElement elected = null;
-        for (final GUIElement element : visibleElements) {
-            if (element.isElementAtPoint(x, y)) {
-                elected = element;
-            }
+        final Component component = findComponentAt(x, y);
+        if (component == null || !(component instanceof GUIElement)) {
+            return null;
         }
-
-        return elected;
+        return (GUIElement)component;
     }
 
     /**

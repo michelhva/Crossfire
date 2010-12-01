@@ -68,6 +68,7 @@ public class GUIOneLineLabel extends GUILabel {
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
         drawLine((Graphics2D)g, 0, getHeight(), getText());
+        finishPaintComponent(g);
     }
 
     /**

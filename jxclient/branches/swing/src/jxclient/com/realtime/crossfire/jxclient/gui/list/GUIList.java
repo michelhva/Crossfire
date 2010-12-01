@@ -184,6 +184,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
+        finishPaintComponent(g);
     }
 
     /**

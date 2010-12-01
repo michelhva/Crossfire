@@ -143,6 +143,7 @@ public class GUITextButton extends AbstractButton {
         final FontMetrics fontMetrics = g2.getFontMetrics();
         final int y = (int)Math.round(preferredSize.height-rectangle.getHeight())/2+fontMetrics.getAscent();
         g2.drawString(text, x, y);
+        finishPaintComponent(g);
     }
 
     /**

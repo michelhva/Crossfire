@@ -259,6 +259,7 @@ public class GUIItemSpellList extends GUIItem {
         if (isActive() && selectorImage != null) {
             g.drawImage(selectorImage, 0, 0, null);
         }
+        finishPaintComponent(g);
     }
 
     /**

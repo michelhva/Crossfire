@@ -85,6 +85,7 @@ public class GUIPicture extends AbstractGUIElement {
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
         g.drawImage(image, 0, 0, null);
+        finishPaintComponent(g);
     }
 
     /**

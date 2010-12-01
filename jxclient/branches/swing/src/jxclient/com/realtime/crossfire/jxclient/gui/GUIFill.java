@@ -70,6 +70,7 @@ public class GUIFill extends AbstractGUIElement {
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(color);
         g2.clearRect(0, 0, getWidth(), getHeight());
+        finishPaintComponent(g);
     }
 
 }

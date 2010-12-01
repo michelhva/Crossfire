@@ -111,6 +111,7 @@ public class GUIMultiLineLabel extends GUILabel {
         for (final String line : lines) {
             y += drawLine(g2, y, lineHeight, line);
         }
+        finishPaintComponent(g);
     }
 
     /**
