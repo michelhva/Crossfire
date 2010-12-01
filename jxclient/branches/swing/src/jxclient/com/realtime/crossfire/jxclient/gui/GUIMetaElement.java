@@ -161,6 +161,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
         g.drawString(metaEntry == null ? "" : metaEntry.format(format), image != null ? image.getWidth(this) : 0, font.getSize()+1);
+        finishPaintComponent(g);
     }
 
     /**

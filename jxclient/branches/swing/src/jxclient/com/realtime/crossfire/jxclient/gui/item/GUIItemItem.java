@@ -143,6 +143,7 @@ public abstract class GUIItemItem extends GUIItem {
 
         final Graphics2D g2 = (Graphics2D)g;
         itemPainter.paint(g2, tmpItem, isSelected(), getFace(tmpItem), getWidth(), getHeight());
+        finishPaintComponent(g);
     }
 
     /**

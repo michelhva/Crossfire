@@ -168,6 +168,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
                 y += line.getHeight();
             }
         }
+        finishPaintComponent(g);
     }
 
     /**

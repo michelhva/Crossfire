@@ -147,6 +147,7 @@ public abstract class AbstractButton extends ActivatableGUIElement {
      */
     @Override
     public void mouseExited(@NotNull final MouseEvent e) {
+        super.mouseExited(e);
         if (autoRepeat) {
             Timeouts.remove(timeoutEvent);
         }

@@ -27,7 +27,9 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
+import java.awt.Color;
 import java.awt.Component;
+import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import javax.swing.JLayeredPane;
 import org.jetbrains.annotations.NotNull;
@@ -103,6 +105,11 @@ public class GUIPanel extends JLayeredPane implements GUIElement {
      */
     @Nullable
     private TooltipText tooltipText = null;
+
+    /**
+     * Whether this component is active.
+     */
+    private boolean activeComponent = false;
 
     /**
      * Creates a new instance.
@@ -250,6 +257,8 @@ public class GUIPanel extends JLayeredPane implements GUIElement {
     @Override
     public void mouseEntered(@NotNull final MouseEvent e) {
         tooltipManager.setElement(this);
+        activeComponent = true;
+        repaint();
     }
 
     /**
@@ -258,6 +267,8 @@ public class GUIPanel extends JLayeredPane implements GUIElement {
     @Override
     public void mouseExited(@NotNull final MouseEvent e) {
         tooltipManager.unsetElement(this);
+        activeComponent = false;
+        repaint();
     }
 
     /**
@@ -378,6 +389,17 @@ public class GUIPanel extends JLayeredPane implements GUIElement {
     @Override
     public boolean isElementAtPoint(final int x, final int y) {
         return false; // XXX
+    }
+
+    /**
+     * Called at the end of {@link #paintComponent(Graphics)}.
+     * @param g the graphics
+     */
+    protected void finishPaintComponent(final Graphics g) {
+        if (activeComponent) {
+            g.setColor(Color.RED);
+            g.drawRect(0, 0, getWidth()-1, getHeight()-1);
+        }
     }
 
 }

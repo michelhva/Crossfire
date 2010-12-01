@@ -199,6 +199,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         }
         g2.setColor(isActive() ? activeColor : inactiveColor);
         g2.drawString(tmp, margin, y);
+        finishPaintComponent(g);
     }
 
     /**
