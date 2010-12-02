@@ -709,7 +709,7 @@ public class JXCWindowRenderer {
     public void endRendering() {
         if (isFullScreen && frame != null) {
             if (currentGui != null) {
-                frame.remove(currentGui);
+                layeredPane.remove(currentGui);
             }
             final Resolution minResolution = new Resolution(1, 1);
             assert frame != null;
