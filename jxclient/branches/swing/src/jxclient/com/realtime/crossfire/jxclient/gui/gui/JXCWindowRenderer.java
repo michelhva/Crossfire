@@ -569,18 +569,6 @@ public class JXCWindowRenderer {
 
         setResolutionPost(frame, dimension);
         this.frame = frame;
-        this.frame.add(layeredPane);
-        if (currentGui != null) {
-            layeredPane.add(currentGui, Integer.valueOf(0));
-            layeredPane.validate();
-            frame.repaint();
-
-            if (windowWidth > 0 && windowHeight > 0) {
-                assert currentGui != null;
-                currentGui.setSize(windowWidth, windowHeight);
-                ComponentDumper.dump(frame);
-            }
-        }
     }
 
     /**
@@ -628,6 +616,20 @@ public class JXCWindowRenderer {
         frame.requestFocusInWindow();
 
         updateWindowSize(dimension.width, dimension.height);
+
+        frame.add(layeredPane);
+
+        if (currentGui != null) {
+            layeredPane.add(currentGui, Integer.valueOf(0));
+            layeredPane.validate();
+            frame.repaint();
+
+            if (windowWidth > 0 && windowHeight > 0) {
+                assert currentGui != null;
+                currentGui.setSize(windowWidth, windowHeight);
+                ComponentDumper.dump(frame);
+            }
+        }
 
         debugScreenWrite("setResolutionPost: success");
     }
