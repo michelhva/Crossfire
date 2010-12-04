@@ -51,11 +51,6 @@ public class GUIPicture extends AbstractGUIElement {
     private final Image image;
 
     /**
-     * The transparency value.
-     */
-    private final float alpha;
-
-    /**
      * The preferred size of this component.
      */
     @NotNull
@@ -74,7 +69,6 @@ public class GUIPicture extends AbstractGUIElement {
     public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage image, final float alpha, final int preferredWidth, final int preferredHeight) {
         super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
         this.image = image;
-        this.alpha = alpha;
         preferredSize = new Dimension(preferredWidth, preferredHeight);
     }
 
