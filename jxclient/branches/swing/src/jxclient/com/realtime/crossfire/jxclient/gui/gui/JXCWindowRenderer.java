@@ -214,16 +214,6 @@ public class JXCWindowRenderer {
     private int offsetY2 = 0;
 
     /**
-     * The x-difference between the visible window to the real window.
-     */
-    private int offsetW = 0;
-
-    /**
-     * The y-difference between the visible window and the real window.
-     */
-    private int offsetH = 0;
-
-    /**
      * Records whether full-screen mode is active.
      */
     private boolean isFullScreen = false;
@@ -607,9 +597,7 @@ public class JXCWindowRenderer {
         offsetY2 = insets.top;
         offsetX = 0;//insets.left;
         offsetY = 0;//insets.top;
-        offsetW = insets.left+insets.right;
-        offsetH = insets.top+insets.bottom;
-        debugScreenWrite("setResolutionPost: offset="+offsetX+"x"+offsetY+" "+offsetW+"x"+offsetH+" "+insets);
+        debugScreenWrite("setResolutionPost: offset="+offsetX+"x"+offsetY+" "+insets);
 
         debugScreenWrite("setResolutionPost: requesting focus");
         frame.requestFocusInWindow();
