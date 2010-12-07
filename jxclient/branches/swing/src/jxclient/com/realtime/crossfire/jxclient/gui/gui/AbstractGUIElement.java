@@ -428,7 +428,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      * Called at the end of {@link #paintComponent(Graphics)}.
      * @param g the graphics
      */
-    protected void finishPaintComponent(final Graphics g) {
+    protected void finishPaintComponent(@NotNull final Graphics g) {
         if (activeComponent) {
             g.setColor(Color.RED);
             g.drawRect(0, 0, getWidth()-1, getHeight()-1);
