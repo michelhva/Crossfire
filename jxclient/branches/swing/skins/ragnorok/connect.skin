@@ -1,9 +1,16 @@
-
-dialog border WIDTH/2-180 HEIGHT/2-134 360 100 false Connecting to server...
+dialog WIDTH/2 HEIGHT/2 false Connecting to server...
 set_modal
 
-label_multi message 0 HORIZONTAL font_label BLACK Connecting...
+label_multi message font_label BLACK Connecting...
 
 key char 10        exec command_disconnect
 key char 13        exec command_disconnect
 key char 32        exec command_disconnect
+
+horizontal begin seq
+  message
+end
+
+vertical begin seq
+  message
+end

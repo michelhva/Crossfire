@@ -100,4 +100,13 @@ public class GUIPicture extends AbstractGUIElement {
         return new Dimension(preferredSize);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMaximumSize() {
+        return new Dimension(preferredSize);
+    }
+
 }

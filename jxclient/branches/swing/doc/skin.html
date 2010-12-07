@@ -244,41 +244,6 @@
     EOF
 </pre>
 
-<h3>add: add GUI element to dialog</h3>
-
-<p>syntax:</p>
-<pre>
-    add &lt;name&gt;
-</pre>
-
-<p>precondition: dialog</p>
-
-<p>Adds the GUI element &lt;name&gt; to the dialog.</p>
-
-<p>Using this command is optional: all GUI elements defined but not explicitly
-    added are added implicitly after the last line of the dialog definition file
-    just as if a <code>add *</code> command was present. Explicitly adding GUI
-    elements allows to control the drawing order of GUI elements regardless of
-    declaration order.</p>
-
-<ul>
-    <li>&lt;name&gt; is the name of a defined GUI element to add. Elements
-        cannot be added more than once. The special name <code>*</code> adds all
-        elements no explicitly added elsewhere. This can be used to force
-        elements to be added last:
-<pre>
-    add first
-    add *
-    add last
-</pre>
-        adds the GUI element &quot;first&quot;, then all defined GUI elements
-        except &quot;first&quot; and &quot;last&quot;, then adds &quot;last&quot;.
-        This ensures that &quot;first&quot; is drawn below all other GUI
-        elements and that &quot;last&quot; is drawn on top of all other GUI
-        elements.
-    </li>
-</ul>
-
 <h3>button: execute command on activation</h3>
 
 <p>syntax:</p>
@@ -708,21 +673,6 @@
     <li>&lt;tooltip...&gt; is included as a prefix in the tooltip text.</li>
 </ul>
 
-<h3>empty: transparent area</h3>
-
-<p>syntax:</p>
-<pre>
-    empty &lt;name&gt;
-</pre>
-
-<p>precondition: dialog</p>
-
-<p>Defines a GUI element that is complete transparent.</p>
-
-<ul>
-<li>&lt;name&gt; is the name of the gauge</li>
-</ul>
-
 <h3><a name="event">event: execute actions for events</a></h3>
 
 <p>syntax:</p>
@@ -835,6 +785,41 @@
     </li>
     <li>&lt;size&gt; the size of the font in points.</li>
 </ul>
+
+<h3>horizontal: define horizontal layout information</h3>
+
+<p>syntax:</p>
+<pre>
+    horizontal begin &lt;type&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines horizontal layout information for a dialog.</p>
+
+<ul>
+<li>&lt;type&gt; is the layout type of the following GUI elements: "seq" creates
+    a sequential group, "par" creates a parallel group</li>
+</ul>
+
+Following lines contain the following commands:
+<pre>
+    begin &lt;type&gt;
+    end
+    gap
+    gap &lt;size&gt;
+    gap &lt;min&gt; &lt;pref&gt;
+    gap &lt;min&gt; &lt;pref&gt; &lt;max&gt;
+</pre>
+
+&lt;begin&gt; starts a nested section. &lt;end&gt; ends a nested section or
+terminates the layout information definition.
+
+&lt;gap&gt; inserts gaps: without arguments inserts a gap that fills as much
+space as available. A single argument creates a gap of exactly the given size in
+pixels. With two arguments creates a gap with a minimum and a preferred size but
+without a maximum size. Three arguments define both minimum, maximum, and
+preferred size.
 
 <h3>ignore: ignore GUI element for mouse interaction</h3>
 
@@ -1106,6 +1091,27 @@
             <li><code>SPELL_LEVEL</code>: the spell's level.</li>
             <li><code>SPELL_DESCRIPTION</code>: the spell's description.</li>
         </ul>
+    </li>
+</ul>
+
+<h3>link_size: link sizes of GUI elements</h3>
+
+<p>syntax:</p>
+<pre>
+    link_size &lt;type&gt; &lt;element...&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Links sizes of a set of GUI elements; all elements are forced to the same
+    width and/or height.</p>
+
+<ul>
+    <li>&lt;type&gt; defines the linking type: &lt;horizontal&gt; links width,
+        &lt;vertical&gt; links height, &lt;both&gt; links both width and
+        height.</li>
+    <li>&lt;element...&gt; specifies the GUI elements to link. At least two GUI
+        elements must be given.
     </li>
 </ul>
 
@@ -1544,6 +1550,10 @@
 <ul>
     <li>&lt;font&gt; the font for displaying tooltips.</li>
 </ul>
+
+<h3>vertical: define vertical layout information</h3>
+
+See &lt;horizontal&gt;.
 
 <h2>Misc</h2>
 

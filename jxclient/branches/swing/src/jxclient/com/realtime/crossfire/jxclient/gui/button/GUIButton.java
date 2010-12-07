@@ -171,4 +171,13 @@ public class GUIButton extends AbstractButton {
         return new Dimension(preferredSize);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getMaximumSize() {
+        return getMinimumSizeInt();
+    }
+
 }

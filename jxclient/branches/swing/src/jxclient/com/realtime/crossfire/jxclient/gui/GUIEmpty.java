@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import java.awt.Dimension;
 import java.awt.Transparency;
 import org.jetbrains.annotations.NotNull;
 
@@ -40,13 +41,27 @@ public class GUIEmpty extends AbstractGUIElement {
     private static final long serialVersionUID = 1;
 
     /**
+     * The preferred width of this component.
+     */
+    private final int preferredWidth;
+
+    /**
+     * The preferred height of this component.
+     */
+    private final int preferredHeight;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
+     * @param preferredWidth the preferred width of this component
+     * @param preferredHeight the preferred height of this component
      */
-    public GUIEmpty(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name) {
+    public GUIEmpty(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int preferredWidth, final int preferredHeight) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+        this.preferredWidth = preferredWidth;
+        this.preferredHeight = preferredHeight;
     }
 
     /**
@@ -55,6 +70,30 @@ public class GUIEmpty extends AbstractGUIElement {
     @Override
     public void dispose() {
         super.dispose();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Dimension getPreferredSize() {
+        return new Dimension(Math.max(1, preferredWidth), Math.max(1, preferredHeight));
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Dimension getMaximumSize() {
+        return new Dimension(preferredWidth == 0 ? Integer.MAX_VALUE : preferredWidth, preferredHeight == 0 ? Integer.MAX_VALUE : preferredHeight);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Dimension getMinimumSize() {
+        return new Dimension(Math.max(1, preferredWidth), Math.max(1, preferredHeight));
     }
 
 }

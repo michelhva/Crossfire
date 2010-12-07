@@ -1,14 +1,32 @@
-
-dialog dialog         WIDTH/2-114 HEIGHT/2-124 4+220+4 4+110+4 false Disconnect from server?
+dialog WIDTH/2 HEIGHT/2 false Disconnect from server?
 set_modal
 
-label_multi message 1 BOTH font_label BLACK <<EOF
+label_multi message font_label BLACK <<EOF
 Do you really want to disconnect
 from the server?
 EOF
-begin button_group    0 HORIZONTAL HORIZONTAL
-textbutton disconnect 1 NONE       false command_disconnect        Disconnect
-textbutton resume     1 NONE       false command_resume_disconnect Resume
-end button_group
+textbutton disconnect false command_disconnect Disconnect
+textbutton resume false command_resume_disconnect Resume
 
 set_default disconnect
+
+horizontal begin par
+  message
+  begin seq
+    gap
+    disconnect
+    gap 8
+    resume
+    gap
+  end
+end
+
+vertical begin seq
+  message
+  begin par
+    disconnect
+    resume
+  end
+end
+
+link_size horizontal disconnect resume

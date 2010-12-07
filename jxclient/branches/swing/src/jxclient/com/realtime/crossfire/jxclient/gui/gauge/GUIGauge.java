@@ -179,4 +179,13 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         return gaugeState.getPreferredSize();
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMaximumSize() {
+        return gaugeState.getPreferredSize();
+    }
+
 }

@@ -1,225 +1,530 @@
-
-dialog border                WIDTH/2-250 HEIGHT/2-168 548 305 true Skills
+dialog WIDTH/2 HEIGHT/2 true Skills
 dialog_hide START META LOGIN NEWCHAR ACCOUNT
-#XXX:button button_close          526   6  16  16 close_up close_down false command_skills_close
+button dialog_close close_up close_down false command_skills_close
 
-begin row1_group             0 HORIZONTAL HORIZONTAL
-
-begin column11_group         1 HORIZONTAL VERTICAL
 # skills group
-begin lockpicking_group      1 HORIZONTAL HORIZONTAL
-gauge     act_lockpicking    0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_lockpicking WE
-textgauge res_lockpicking    1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_lockpicking WE BLACK font_label Lockpicking:
-label_text label_lockpicking 0 NONE       font_label BLACK Lockpicking:
-end lockpicking_group
+gauge      act_lockpicking    skill_active null skill_inactive ACTIVE_SKILL_lockpicking WE
+textgauge  res_lockpicking    gauge_gp gauge_gp_negative gauge_empty SKILL_lockpicking WE BLACK font_label Lockpicking:
+label_text label_lockpicking  font_label BLACK Lockpicking:
 
-begin hiding_group           1 HORIZONTAL HORIZONTAL
-gauge     act_hiding         0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_hiding WE
-textgauge res_hiding         1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_hiding WE BLACK font_label Hiding:
-label_text label_hiding      0 NONE       font_label BLACK Hiding:
-end hiding_group
+gauge      act_hiding         skill_active null skill_inactive ACTIVE_SKILL_hiding WE
+textgauge  res_hiding         gauge_gp gauge_gp_negative gauge_empty SKILL_hiding WE BLACK font_label Hiding:
+label_text label_hiding       font_label BLACK Hiding:
 
-begin stealing_group         1 HORIZONTAL HORIZONTAL
-gauge     act_stealing       0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_stealing WE
-textgauge res_stealing       1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_stealing WE BLACK font_label Stealing:
-label_text label_stealing    0 NONE       font_label BLACK Stealing:
-end stealing_group
+gauge      act_stealing       skill_active null skill_inactive ACTIVE_SKILL_stealing WE
+textgauge  res_stealing       gauge_gp gauge_gp_negative gauge_empty SKILL_stealing WE BLACK font_label Stealing:
+label_text label_stealing     font_label BLACK Stealing:
 
-begin bargaining_group       1 HORIZONTAL HORIZONTAL
-gauge     act_bargaining     0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_bargaining WE
-textgauge res_bargaining     1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_bargaining WE BLACK font_label Bargaining:
-label_text label_bargaining  0 NONE       font_label BLACK Bargaining:
-end bargaining_group
+gauge      act_bargaining     skill_active null skill_inactive ACTIVE_SKILL_bargaining WE
+textgauge  res_bargaining     gauge_gp gauge_gp_negative gauge_empty SKILL_bargaining WE BLACK font_label Bargaining:
+label_text label_bargaining   font_label BLACK Bargaining:
 
-begin oratory_group          1 HORIZONTAL HORIZONTAL
-gauge     act_oratory        0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_oratory WE
-textgauge res_oratory        1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_oratory WE BLACK font_label Oratory:
-label_text label_oratory     0 NONE       font_label BLACK Oratory:
-end oratory_group
+gauge      act_oratory        skill_active null skill_inactive ACTIVE_SKILL_oratory WE
+textgauge  res_oratory        gauge_gp gauge_gp_negative gauge_empty SKILL_oratory WE BLACK font_label Oratory:
+label_text label_oratory      font_label BLACK Oratory:
 
-begin singing_group          1 HORIZONTAL HORIZONTAL
-gauge     act_singing        0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_singing WE
-textgauge res_singing        1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_singing WE BLACK font_label Singing:
-label_text label_singing     0 NONE       font_label BLACK Singing:
-end singing_group
+gauge      act_singing        skill_active null skill_inactive ACTIVE_SKILL_singing WE
+textgauge  res_singing        gauge_gp gauge_gp_negative gauge_empty SKILL_singing WE BLACK font_label Singing:
+label_text label_singing      font_label BLACK Singing:
 
-begin inscription_group      1 HORIZONTAL HORIZONTAL
-gauge     act_inscription    0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_inscription WE
-textgauge res_inscription    1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_inscription WE BLACK font_label Inscription:
-label_text label_inscription 0 NONE       font_label BLACK Inscription:
-end inscription_group
+gauge      act_inscription    skill_active null skill_inactive ACTIVE_SKILL_inscription WE
+textgauge  res_inscription    gauge_gp gauge_gp_negative gauge_empty SKILL_inscription WE BLACK font_label Inscription:
+label_text label_inscription  font_label BLACK Inscription:
 
-begin fishing_group          1 HORIZONTAL HORIZONTAL
-gauge     act_fishing        0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_fishing WE
-label_text label_fishing     1 HORIZONTAL font_label BLACK Fishing:
-textgauge res_fishing        0 NONE       gauge_gp gauge_gp_negative gauge_empty SKILL_fishing WE BLACK font_label Fishing:
-end fishing_group
-end column11_group
+gauge      act_fishing        skill_active null skill_inactive ACTIVE_SKILL_fishing WE
+textgauge  res_fishing        gauge_gp gauge_gp_negative gauge_empty SKILL_fishing WE BLACK font_label Fishing:
+label_text label_fishing      font_label BLACK Fishing:
 
-begin column12_group 1 HORIZONTAL VERTICAL
-# identify/creation group
-begin smithery_group         1 HORIZONTAL HORIZONTAL
-gauge     act_smithery       0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_smithery WE
-textgauge res_smithery       1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_smithery WE BLACK font_label Smithery:
-label_text label_smithery    0 NONE       font_label BLACK Smithery:
-end smithery_group
-
-begin bowyer_group           1 HORIZONTAL HORIZONTAL
-gauge     act_bowyer         0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_bowyer WE
-textgauge res_bowyer         1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_bowyer WE BLACK font_label Bowyer:
-label_text label_bowyer      0 NONE       font_label BLACK Bowyer:
-end bowyer_group
-
-begin jeweler_group          1 HORIZONTAL HORIZONTAL
-gauge     act_jeweler        0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_jeweler WE
-textgauge res_jeweler        1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_jeweler WE BLACK font_label Jeweler:
-label_text label_jeweler     0 NONE       font_label BLACK Jeweler:
-end jeweler_group
-
-begin woodsman_group         1 HORIZONTAL HORIZONTAL
-gauge     act_woodsman       0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_woodsman WE
-textgauge res_woodsman       1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_woodsman WE BLACK font_label Woodsman:
-label_text label_woodsman    0 NONE       font_label BLACK Woodsman:
-end woodsman_group
-
-begin thaumaturgy_group      1 HORIZONTAL HORIZONTAL
-gauge     act_thaumaturgy    0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_thaumaturgy WE
-textgauge res_thaumaturgy    1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_thaumaturgy WE BLACK font_label Thaumaturgy:
-label_text label_thaumaturgy 0 NONE       font_label BLACK Thaumaturgy:
-end thaumaturgy_group
-
-begin literacy_group         1 HORIZONTAL HORIZONTAL
-gauge     act_literacy       0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_literacy WE
-textgauge res_literacy       1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_literacy WE BLACK font_label Literacy:
-label_text label_literacy    0 NONE       font_label BLACK Literacy:
-end literacy_group
-
-begin alchemy_group          1 HORIZONTAL HORIZONTAL
-gauge     act_alchemy        0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_alchemy WE
-textgauge res_alchemy        1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_alchemy WE BLACK font_label Alchemy:
-label_text label_alchemy     0 NONE       font_label BLACK Alchemy:
-end alchemy_group
-end column12_group
-
-begin column13_group 1 HORIZONTAL VERTICAL
-# combat group
-begin combat_group           1 HORIZONTAL HORIZONTAL
-gauge     act_punching       0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_punching WE
-textgauge res_punching       1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_punching WE BLACK font_label Punching:
-label_text label_punching    0 NONE       font_label BLACK Punching:
-end combat_group
-
-begin karate_group           1 HORIZONTAL HORIZONTAL
-gauge     act_karate         0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_karate WE
-textgauge res_karate         1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_karate WE BLACK font_label Karate:
-label_text label_karate      0 NONE       font_label BLACK Karate:
-end karate_group
-
-begin one_handed_weapons_group 1 HORIZONTAL HORIZONTAL
-gauge     act_one_handed_weapons 0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_one_handed_weapons WE
-textgauge res_one_handed_weapons 1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_one_handed_weapons WE BLACK font_label One handed weapons:
-label_text label_one_handed_weapons 0 NONE    font_label BLACK One handed:
-end one_handed_weapons_group
-
-begin two_handed_weapons_group 1 HORIZONTAL HORIZONTAL
-gauge     act_two_handed_weapons 0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_two_handed_weapons WE
-textgauge res_two_handed_weapons 1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_two_handed_weapons WE BLACK font_label Two handed weapons:
-label_text label_two_handed_weapons 0 NONE    font_label BLACK Two handed:
-end two_handed_weapons_group
-
-begin missile_weapons_group  1 HORIZONTAL HORIZONTAL
-gauge     act_missile_weapons 0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_missile_weapons WE
-textgauge res_missile_weapons 1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_missile_weapons WE BLACK font_label Missile weapons:
-label_text label_missile_weapons 0 NONE    font_label BLACK Missiles:
-end missile_weapons_group
-
-begin throwing_group         1 HORIZONTAL HORIZONTAL
-gauge     act_throwing       0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_throwing WE
-textgauge res_throwing       1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_throwing WE BLACK font_label Throwing:
-label_text label_throwing    0 NONE       font_label BLACK Throwing:
-end throwing_group
-
-begin use_magic_item_group   1 HORIZONTAL HORIZONTAL
-gauge     act_use_magic_item 0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_use_magic_item WE
-textgauge res_use_magic_item 1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_use_magic_item WE BLACK font_label Use magic item:
-label_text label_use_magic_item 0 NONE    font_label BLACK Magic item:
-end use_magic_item_group
-
-begin flame_touch_group      1 HORIZONTAL HORIZONTAL
-gauge     act_flame_touch    0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_flame_touch WE
-textgauge res_flame_touch    1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_flame_touch WE BLACK font_label Flame touch:
-label_text label_flame_touch 0 NONE       font_label BLACK Flame touch:
-end flame_touch_group
-
-begin clawing_group          1 HORIZONTAL HORIZONTAL
-gauge     act_clawing        0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_clawing WE
-textgauge res_clawing        1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_clawing WE BLACK font_label Clawing:
-label_text label_clawing     0 NONE       font_label BLACK Clawing:
-end clawing_group
-
-begin wraith_feed_group      1 HORIZONTAL HORIZONTAL
-gauge     act_wraith_feed    0 CENTER     skill_active null skill_inactive ACTIVE_SKILL_wraith_feed WE
-textgauge res_wraith_feed    1 HORIZONTAL gauge_gp gauge_gp_negative gauge_empty SKILL_wraith_feed WE BLACK font_label Wraith feed:
-label_text label_wraith_feed 0 NONE       font_label BLACK Wraith feed:
-end wraith_feed_group
-end column13_group
-end row1_group
-
-begin row2_group 0 HORIZONTAL HORIZONTAL
-begin column21_group 1 HORIZONTAL VERTICAL
 # skills "yes/no" group
-#XXX:gauge     act_jumping          9 200 166  16 skill_active null skill_inactive ACTIVE_SKILL_jumping WE
-#XXX:gauge     act_climbing         9 220 166  16 skill_active null skill_inactive ACTIVE_SKILL_climbing WE
-#XXX:gauge     act_levitation       9 240 166  16 skill_active null skill_inactive ACTIVE_SKILL_levitation WE
-#XXX:gauge     act_meditation       9 260 166  16 skill_active null skill_inactive ACTIVE_SKILL_meditation WE
-#XXX:gauge     act_set_traps        9 280 166  16 skill_active null skill_inactive ACTIVE_SKILL_set_traps WE
-#XXX:label_text label_jumping      10 200  90  16 font_label BLACK Jumping:
-#XXX:label_text label_climbing     10 220  90  16 font_label BLACK Climbing:
-#XXX:label_text label_levitation   10 240  90  16 font_label BLACK Levitation:
-#XXX:label_text label_meditation   10 260  90  16 font_label BLACK Meditation:
-#XXX:label_text label_set_traps    10 280  90  16 font_label BLACK Set traps:
-#XXX:textgauge res_jumping        100 201  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_jumping WE BLACK font_label Jumping:
-#XXX:textgauge res_climbing       100 221  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_climbing WE BLACK font_label Climbing:
-#XXX:textgauge res_levitation     100 241  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_levitation WE BLACK font_label Levitation:
-#XXX:textgauge res_meditation     100 261  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_meditation WE BLACK font_label Meditation:
-#XXX:textgauge res_set_traps      100 281  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_set_traps WE BLACK font_label Set traps:
-end column21_group
+gauge      act_jumping        skill_active null skill_inactive ACTIVE_SKILL_jumping WE
+textgauge  res_jumping        gauge_gp gauge_gp_negative gauge_empty SKILL_jumping WE BLACK font_label Jumping:
+label_text label_jumping      font_label BLACK Jumping:
 
-begin column22_group 1 HORIZONTAL VERTICAL
+gauge      act_climbing       skill_active null skill_inactive ACTIVE_SKILL_climbing WE
+textgauge  res_climbing       gauge_gp gauge_gp_negative gauge_empty SKILL_climbing WE BLACK font_label Climbing:
+label_text label_climbing     font_label BLACK Climbing:
+
+gauge      act_levitation     skill_active null skill_inactive ACTIVE_SKILL_levitation WE
+textgauge  res_levitation     gauge_gp gauge_gp_negative gauge_empty SKILL_levitation WE BLACK font_label Levitation:
+label_text label_levitation   font_label BLACK Levitation:
+
+gauge      act_meditation     skill_active null skill_inactive ACTIVE_SKILL_meditation WE
+textgauge  res_meditation     gauge_gp gauge_gp_negative gauge_empty SKILL_meditation WE BLACK font_label Meditation:
+label_text label_meditation   font_label BLACK Meditation:
+
+gauge      act_set_traps      skill_active null skill_inactive ACTIVE_SKILL_set_traps WE
+textgauge  res_set_traps      gauge_gp gauge_gp_negative gauge_empty SKILL_set_traps WE BLACK font_label Set traps:
+label_text label_set_traps    font_label BLACK Set traps:
+
+# identify/creation group
+gauge      act_smithery       skill_active null skill_inactive ACTIVE_SKILL_smithery WE
+textgauge  res_smithery       gauge_gp gauge_gp_negative gauge_empty SKILL_smithery WE BLACK font_label Smithery:
+label_text label_smithery     font_label BLACK Smithery:
+
+gauge      act_bowyer         skill_active null skill_inactive ACTIVE_SKILL_bowyer WE
+textgauge  res_bowyer         gauge_gp gauge_gp_negative gauge_empty SKILL_bowyer WE BLACK font_label Bowyer:
+label_text label_bowyer       font_label BLACK Bowyer:
+
+gauge      act_jeweler        skill_active null skill_inactive ACTIVE_SKILL_jeweler WE
+textgauge  res_jeweler        gauge_gp gauge_gp_negative gauge_empty SKILL_jeweler WE BLACK font_label Jeweler:
+label_text label_jeweler      font_label BLACK Jeweler:
+
+gauge      act_woodsman       skill_active null skill_inactive ACTIVE_SKILL_woodsman WE
+textgauge  res_woodsman       gauge_gp gauge_gp_negative gauge_empty SKILL_woodsman WE BLACK font_label Woodsman:
+label_text label_woodsman     font_label BLACK Woodsman:
+
+gauge      act_thaumaturgy    skill_active null skill_inactive ACTIVE_SKILL_thaumaturgy WE
+textgauge  res_thaumaturgy    gauge_gp gauge_gp_negative gauge_empty SKILL_thaumaturgy WE BLACK font_label Thaumaturgy:
+label_text label_thaumaturgy  font_label BLACK Thaumaturgy:
+
+gauge      act_literacy       skill_active null skill_inactive ACTIVE_SKILL_literacy WE
+textgauge  res_literacy       gauge_gp gauge_gp_negative gauge_empty SKILL_literacy WE BLACK font_label Literacy:
+label_text label_literacy     font_label BLACK Literacy:
+
+gauge      act_alchemy        skill_active null skill_inactive ACTIVE_SKILL_alchemy WE
+textgauge  res_alchemy        gauge_gp gauge_gp_negative gauge_empty SKILL_alchemy WE BLACK font_label Alchemy:
+label_text label_alchemy      font_label BLACK Alchemy:
+
 # identify/detection group
-#XXX:gauge     act_sense_magic    189 200 166  16 skill_active null skill_inactive ACTIVE_SKILL_sense_magic WE
-#XXX:gauge     act_sense_curse    189 220 166  16 skill_active null skill_inactive ACTIVE_SKILL_sense_curse WE
-#XXX:gauge     act_find_traps     189 240 166  16 skill_active null skill_inactive ACTIVE_SKILL_find_traps WE
-#XXX:gauge     act_disarm_traps   189 260 166  16 skill_active null skill_inactive ACTIVE_SKILL_disarm_traps WE
-#XXX:label_text label_sense_magic 190 200  90  16 font_label BLACK Sense magic:
-#XXX:label_text label_sense_curse 190 220  90  16 font_label BLACK Sense curse:
-#XXX:label_text label_find_traps  190 240  90  16 font_label BLACK Find traps:
-#XXX:label_text label_disarm_traps 190 260 90  16 font_label BLACK Disarm traps:
-#XXX:textgauge res_sense_magic    280 201  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_sense_magic WE BLACK font_label Sense magic:
-#XXX:textgauge res_sense_curse    280 221  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_sense_curse WE BLACK font_label Sense curse:
-#XXX:textgauge res_find_traps     280 241  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_find_traps WE BLACK font_label Find traps:
-#XXX:textgauge res_disarm_traps   280 261  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_disarm_traps WE BLACK font_label Disarm traps:
-end column22_group
+gauge      act_sense_magic    skill_active null skill_inactive ACTIVE_SKILL_sense_magic WE
+textgauge  res_sense_magic    gauge_gp gauge_gp_negative gauge_empty SKILL_sense_magic WE BLACK font_label Sense magic:
+label_text label_sense_magic  font_label BLACK Sense magic:
 
-begin column23_group 1 HORIZONTAL VERTICAL
+gauge      act_sense_curse    skill_active null skill_inactive ACTIVE_SKILL_sense_curse WE
+textgauge  res_sense_curse    gauge_gp gauge_gp_negative gauge_empty SKILL_sense_curse WE BLACK font_label Sense curse:
+label_text label_sense_curse  font_label BLACK Sense curse:
+
+gauge      act_find_traps     skill_active null skill_inactive ACTIVE_SKILL_find_traps WE
+textgauge  res_find_traps     gauge_gp gauge_gp_negative gauge_empty SKILL_find_traps WE BLACK font_label Find traps:
+label_text label_find_traps   font_label BLACK Find traps:
+
+gauge      act_disarm_traps   skill_active null skill_inactive ACTIVE_SKILL_disarm_traps WE
+textgauge  res_disarm_traps   gauge_gp gauge_gp_negative gauge_empty SKILL_disarm_traps WE BLACK font_label Disarm traps:
+label_text label_disarm_traps font_label BLACK Disarm traps:
+
+# combat group
+gauge      act_punching       skill_active null skill_inactive ACTIVE_SKILL_punching WE
+textgauge  res_punching       gauge_gp gauge_gp_negative gauge_empty SKILL_punching WE BLACK font_label Punching:
+label_text label_punching     font_label BLACK Punching:
+
+gauge      act_karate         skill_active null skill_inactive ACTIVE_SKILL_karate WE
+textgauge  res_karate         gauge_gp gauge_gp_negative gauge_empty SKILL_karate WE BLACK font_label Karate:
+label_text label_karate       font_label BLACK Karate:
+
+gauge      act_one_handed_weapons skill_active null skill_inactive ACTIVE_SKILL_one_handed_weapons WE
+textgauge  res_one_handed_weapons gauge_gp gauge_gp_negative gauge_empty SKILL_one_handed_weapons WE BLACK font_label One handed weapons:
+label_text label_one_handed_weapons font_label BLACK One handed:
+
+gauge      act_two_handed_weapons skill_active null skill_inactive ACTIVE_SKILL_two_handed_weapons WE
+textgauge  res_two_handed_weapons gauge_gp gauge_gp_negative gauge_empty SKILL_two_handed_weapons WE BLACK font_label Two handed weapons:
+label_text label_two_handed_weapons font_label BLACK Two handed:
+
+gauge      act_missile_weapons skill_active null skill_inactive ACTIVE_SKILL_missile_weapons WE
+textgauge  res_missile_weapons gauge_gp gauge_gp_negative gauge_empty SKILL_missile_weapons WE BLACK font_label Missile weapons:
+label_text label_missile_weapons font_label BLACK Missiles:
+
+gauge      act_throwing       skill_active null skill_inactive ACTIVE_SKILL_throwing WE
+textgauge  res_throwing       gauge_gp gauge_gp_negative gauge_empty SKILL_throwing WE BLACK font_label Throwing:
+label_text label_throwing     font_label BLACK Throwing:
+
+gauge      act_use_magic_item skill_active null skill_inactive ACTIVE_SKILL_use_magic_item WE
+textgauge  res_use_magic_item gauge_gp gauge_gp_negative gauge_empty SKILL_use_magic_item WE BLACK font_label Use magic item:
+label_text label_use_magic_item font_label BLACK Magic item:
+
+gauge      act_flame_touch    skill_active null skill_inactive ACTIVE_SKILL_flame_touch WE
+textgauge  res_flame_touch    gauge_gp gauge_gp_negative gauge_empty SKILL_flame_touch WE BLACK font_label Flame touch:
+label_text label_flame_touch  font_label BLACK Flame touch:
+
+gauge      act_clawing        skill_active null skill_inactive ACTIVE_SKILL_clawing WE
+textgauge  res_clawing        gauge_gp gauge_gp_negative gauge_empty SKILL_clawing WE BLACK font_label Clawing:
+label_text label_clawing      font_label BLACK Clawing:
+
+gauge      act_wraith_feed    skill_active null skill_inactive ACTIVE_SKILL_wraith_feed WE
+textgauge  res_wraith_feed    gauge_gp gauge_gp_negative gauge_empty SKILL_wraith_feed WE BLACK font_label Wraith feed:
+label_text label_wraith_feed  font_label BLACK Wraith feed:
+
 # spells/prayers group
-#XXX:gauge     act_praying        369 200 166  16 skill_active null skill_inactive ACTIVE_SKILL_praying WE
-#XXX:gauge     act_summoning      369 220 166  16 skill_active null skill_inactive ACTIVE_SKILL_summoning WE
-#XXX:gauge     act_pyromancy      369 240 166  16 skill_active null skill_inactive ACTIVE_SKILL_pyromancy WE
-#XXX:gauge     act_evocation      369 260 166  16 skill_active null skill_inactive ACTIVE_SKILL_evocation WE
-#XXX:gauge     act_sorcery        369 280 166  16 skill_active null skill_inactive ACTIVE_SKILL_sorcery WE
-#XXX:label_text label_praying     370 200  90  16 font_label BLACK Praying:
-#XXX:label_text label_summoning   370 220  90  16 font_label BLACK Summoning:
-#XXX:label_text label_pyromancy   370 240  90  16 font_label BLACK Pyromancy:
-#XXX:label_text label_evocation   370 260  90  16 font_label BLACK Evocation:
-#XXX:label_text label_sorcery     370 280  90  16 font_label BLACK Sorcery:
-#XXX:textgauge res_praying        460 201  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_praying WE BLACK font_label Praying:
-#XXX:textgauge res_summoning      460 221  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_summoning WE BLACK font_label Summoning:
-#XXX:textgauge res_pyromancy      460 241  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_pyromancy WE BLACK font_label Pyromancy:
-#XXX:textgauge res_evocation      460 261  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_evocation WE BLACK font_label Evocation:
-#XXX:textgauge res_sorcery        460 281  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_sorcery WE BLACK font_label Sorcery:
-end column23_group
-end row2_group
+gauge      act_praying        skill_active null skill_inactive ACTIVE_SKILL_praying WE
+textgauge  res_praying        gauge_gp gauge_gp_negative gauge_empty SKILL_praying WE BLACK font_label Praying:
+label_text label_praying      font_label BLACK Praying:
+
+gauge      act_summoning      skill_active null skill_inactive ACTIVE_SKILL_summoning WE
+textgauge  res_summoning      gauge_gp gauge_gp_negative gauge_empty SKILL_summoning WE BLACK font_label Summoning:
+label_text label_summoning    font_label BLACK Summoning:
+
+gauge      act_pyromancy      skill_active null skill_inactive ACTIVE_SKILL_pyromancy WE
+textgauge  res_pyromancy      gauge_gp gauge_gp_negative gauge_empty SKILL_pyromancy WE BLACK font_label Pyromancy:
+label_text label_pyromancy    font_label BLACK Pyromancy:
+
+gauge      act_evocation      skill_active null skill_inactive ACTIVE_SKILL_evocation WE
+textgauge  res_evocation      gauge_gp gauge_gp_negative gauge_empty SKILL_evocation WE BLACK font_label Evocation:
+label_text label_evocation    font_label BLACK Evocation:
+
+gauge      act_sorcery        skill_active null skill_inactive ACTIVE_SKILL_sorcery WE
+textgauge  res_sorcery        gauge_gp gauge_gp_negative gauge_empty SKILL_sorcery WE BLACK font_label Sorcery:
+label_text label_sorcery      font_label BLACK Sorcery:
+
+horizontal begin seq
+  begin par
+    begin seq
+      begin par
+        label_lockpicking
+        label_hiding
+        label_stealing
+        label_bargaining
+        label_oratory
+        label_singing
+        label_inscription
+        label_fishing
+        label_jumping
+        label_climbing
+        label_levitation
+        label_meditation
+        label_set_traps
+      end
+      begin par
+        res_lockpicking
+        res_hiding
+        res_stealing
+        res_bargaining
+        res_oratory
+        res_singing
+        res_inscription
+        res_fishing
+        res_jumping
+        res_climbing
+        res_levitation
+        res_meditation
+        res_set_traps
+      end
+    end
+    act_lockpicking
+    act_hiding
+    act_stealing
+    act_bargaining
+    act_oratory
+    act_singing
+    act_inscription
+    act_fishing
+    act_jumping
+    act_climbing
+    act_levitation
+    act_meditation
+    act_set_traps
+  end
+  gap 8
+  begin par
+    begin seq
+      begin par
+        label_smithery
+        label_bowyer
+        label_jeweler
+        label_woodsman
+        label_thaumaturgy
+        label_literacy
+        label_alchemy
+        label_sense_magic
+        label_sense_curse
+        label_find_traps
+        label_disarm_traps
+      end
+      begin par
+        res_smithery
+        res_bowyer
+        res_jeweler
+        res_woodsman
+        res_thaumaturgy
+        res_literacy
+        res_alchemy
+        res_sense_magic
+        res_sense_curse
+        res_find_traps
+        res_disarm_traps
+      end
+    end
+    act_smithery
+    act_bowyer
+    act_jeweler
+    act_woodsman
+    act_thaumaturgy
+    act_literacy
+    act_alchemy
+    act_sense_magic
+    act_sense_curse
+    act_find_traps
+    act_disarm_traps
+  end
+  gap 8
+  begin par
+    begin seq
+      begin par
+        label_punching
+        label_karate
+        label_one_handed_weapons
+        label_two_handed_weapons
+        label_missile_weapons
+        label_throwing
+        label_use_magic_item
+        label_flame_touch
+        label_clawing
+        label_wraith_feed
+        label_praying
+        label_summoning
+        label_pyromancy
+        label_evocation
+        label_sorcery
+      end
+      begin par
+        res_punching
+        res_karate
+        res_one_handed_weapons
+        res_two_handed_weapons
+        res_missile_weapons
+        res_throwing
+        res_use_magic_item
+        res_flame_touch
+        res_clawing
+        res_wraith_feed
+        res_praying
+        res_summoning
+        res_pyromancy
+        res_evocation
+        res_sorcery
+      end
+    end
+    act_punching
+    act_karate
+    act_one_handed_weapons
+    act_two_handed_weapons
+    act_missile_weapons
+    act_throwing
+    act_use_magic_item
+    act_flame_touch
+    act_clawing
+    act_wraith_feed
+    act_praying
+    act_summoning
+    act_pyromancy
+    act_evocation
+    act_sorcery
+  end
+end
+
+vertical begin seq
+  begin par
+    act_lockpicking
+    act_smithery
+    act_punching
+    begin seq
+      gap 1
+      begin par
+        label_lockpicking
+        label_smithery
+        label_punching
+        res_lockpicking
+        res_smithery
+        res_punching
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_hiding
+    act_bowyer
+    act_karate
+    begin seq
+      gap 1
+      begin par
+        label_hiding
+        label_bowyer
+        label_karate
+        res_hiding
+        res_bowyer
+        res_karate
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_stealing
+    act_jeweler
+    act_one_handed_weapons
+    begin seq
+      gap 1
+      begin par
+        label_stealing
+        label_jeweler
+        label_one_handed_weapons
+        res_stealing
+        res_jeweler
+        res_one_handed_weapons
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_bargaining
+    act_woodsman
+    act_two_handed_weapons
+    begin seq
+      gap 1
+      begin par
+        label_bargaining
+        label_woodsman
+        label_two_handed_weapons
+        res_bargaining
+        res_woodsman
+        res_two_handed_weapons
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_oratory
+    act_thaumaturgy
+    act_missile_weapons
+    begin seq
+      gap 1
+      begin par
+        label_oratory
+        label_thaumaturgy
+        label_missile_weapons
+        res_oratory
+        res_thaumaturgy
+        res_missile_weapons
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_singing
+    act_literacy
+    act_throwing
+    begin seq
+      gap 1
+      begin par
+        label_singing
+        label_literacy
+        label_throwing
+        res_singing
+        res_literacy
+        res_throwing
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_inscription
+    act_alchemy
+    act_use_magic_item
+    begin seq
+      gap 1
+      begin par
+        label_inscription
+        label_alchemy
+        label_use_magic_item
+        res_inscription
+        res_alchemy
+        res_use_magic_item
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_jumping
+    act_sense_magic
+    act_praying
+    begin seq
+      gap 1
+      begin par
+        label_jumping
+        label_sense_magic
+        label_praying
+        res_jumping
+        res_sense_magic
+        res_praying
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_climbing
+    act_sense_curse
+    act_summoning
+    begin seq
+      gap 1
+      begin par
+        label_climbing
+        label_sense_curse
+        label_summoning
+        res_climbing
+        res_sense_curse
+        res_summoning
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_levitation
+    act_find_traps
+    act_pyromancy
+    begin seq
+      gap 1
+      begin par
+        label_levitation
+        label_find_traps
+        label_pyromancy
+        res_levitation
+        res_find_traps
+        res_pyromancy
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_meditation
+    act_disarm_traps
+    act_evocation
+    begin seq
+      gap 1
+      begin par
+        label_meditation
+        label_disarm_traps
+        label_evocation
+        res_meditation
+        res_disarm_traps
+        res_evocation
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_fishing
+    act_flame_touch
+    act_clawing
+    act_wraith_feed
+    act_set_traps
+    act_sorcery
+    begin seq
+      gap 1
+      begin par
+        label_fishing
+        label_flame_touch
+        label_clawing
+        label_wraith_feed
+        res_fishing
+        res_flame_touch
+        res_clawing
+        res_wraith_feed
+        label_set_traps
+        label_sorcery
+        res_set_traps
+        res_sorcery
+      end
+      gap 1
+    end
+  end
+end
 
 commandlist res_lockpicking_show AND res_lockpicking SHOW
 commandlist res_lockpicking_hide AND res_lockpicking HIDE
@@ -269,71 +574,77 @@ event init res_fishing_hide
 event skill add fishing res_fishing_show
 event skill del fishing res_fishing_hide
 
-#XXX:commandlist res_jumping_show AND res_jumping SHOW
-#XXX:commandlist res_jumping_hide AND res_jumping HIDE
-#XXX:event init res_jumping_hide
-#XXX:event skill add jumping res_jumping_show
-#XXX:event skill del jumping res_jumping_hide
+commandlist res_jumping_show AND res_jumping SHOW
+commandlist res_jumping_hide AND res_jumping HIDE
+event init res_jumping_hide
+event skill add jumping res_jumping_show
+event skill del jumping res_jumping_hide
 
-#XXX:commandlist res_climbing_show AND res_climbing SHOW
-#XXX:commandlist res_climbing_hide AND res_climbing HIDE
-#XXX:event init res_climbing_hide
-#XXX:event skill add climbing res_climbing_show
-#XXX:event skill del climbing res_climbing_hide
+commandlist res_climbing_show AND res_climbing SHOW
+commandlist res_climbing_hide AND res_climbing HIDE
+event init res_climbing_hide
+event skill add climbing res_climbing_show
+event skill del climbing res_climbing_hide
 
-#XXX:commandlist res_levitation_show AND res_levitation SHOW
-#XXX:commandlist_add res_levitation_show label_levitation SHOW
-#XXX:commandlist res_levitation_hide AND res_levitation HIDE
-#XXX:commandlist_add res_levitation_hide label_levitation HIDE
-#XXX:event init res_levitation_hide
-#XXX:event skill add levitation res_levitation_show
-#XXX:event skill del levitation res_levitation_hide
+commandlist res_levitation_show AND res_levitation SHOW
+commandlist_add res_levitation_show label_levitation SHOW
+commandlist_add res_levitation_show act_levitation SHOW
+commandlist res_levitation_hide AND res_levitation HIDE
+commandlist_add res_levitation_hide label_levitation HIDE
+commandlist_add res_levitation_hide act_levitation HIDE
+event init res_levitation_hide
+event skill add levitation res_levitation_show
+event skill del levitation res_levitation_hide
 
-#XXX:commandlist res_meditation_show AND res_meditation SHOW
-#XXX:commandlist_add res_meditation_show label_meditation SHOW
-#XXX:commandlist res_meditation_hide AND res_meditation HIDE
-#XXX:commandlist_add res_meditation_hide label_meditation HIDE
-#XXX:event init res_meditation_hide
-#XXX:event skill add meditation res_meditation_show
-#XXX:event skill del meditation res_meditation_hide
+commandlist res_meditation_show AND res_meditation SHOW
+commandlist_add res_meditation_show label_meditation SHOW
+commandlist_add res_meditation_show act_meditation SHOW
+commandlist res_meditation_hide AND res_meditation HIDE
+commandlist_add res_meditation_hide label_meditation HIDE
+commandlist_add res_meditation_hide act_meditation HIDE
+event init res_meditation_hide
+event skill add meditation res_meditation_show
+event skill del meditation res_meditation_hide
 
-#XXX:commandlist res_set_traps_show AND res_set_traps SHOW
-#XXX:commandlist_add res_set_traps_show label_set_traps SHOW
-#XXX:commandlist res_set_traps_hide AND res_set_traps HIDE
-#XXX:commandlist_add res_set_traps_hide label_set_traps HIDE
-#XXX:event init res_set_traps_hide
-#XXX:event skill add set_traps res_set_traps_show
-#XXX:event skill del set_traps res_set_traps_hide
+commandlist res_set_traps_show AND res_set_traps SHOW
+commandlist_add res_set_traps_show label_set_traps SHOW
+commandlist_add res_set_traps_show act_set_traps SHOW
+commandlist res_set_traps_hide AND res_set_traps HIDE
+commandlist_add res_set_traps_hide label_set_traps HIDE
+commandlist_add res_set_traps_hide act_set_traps HIDE
+event init res_set_traps_hide
+event skill add set_traps res_set_traps_show
+event skill del set_traps res_set_traps_hide
 
-#XXX:commandlist res_smithery_show AND res_smithery SHOW
-#XXX:commandlist res_smithery_hide AND res_smithery HIDE
-#XXX:event init res_smithery_hide
-#XXX:event skill add smithery res_smithery_show
-#XXX:event skill del smithery res_smithery_hide
+commandlist res_smithery_show AND res_smithery SHOW
+commandlist res_smithery_hide AND res_smithery HIDE
+event init res_smithery_hide
+event skill add smithery res_smithery_show
+event skill del smithery res_smithery_hide
 
-#XXX:commandlist res_bowyer_show AND res_bowyer SHOW
-#XXX:commandlist res_bowyer_hide AND res_bowyer HIDE
-#XXX:event init res_bowyer_hide
-#XXX:event skill add bowyer res_bowyer_show
-#XXX:event skill del bowyer res_bowyer_hide
+commandlist res_bowyer_show AND res_bowyer SHOW
+commandlist res_bowyer_hide AND res_bowyer HIDE
+event init res_bowyer_hide
+event skill add bowyer res_bowyer_show
+event skill del bowyer res_bowyer_hide
 
-#XXX:commandlist res_jeweler_show AND res_jeweler SHOW
-#XXX:commandlist res_jeweler_hide AND res_jeweler HIDE
-#XXX:event init res_jeweler_hide
-#XXX:event skill add jeweler res_jeweler_show
-#XXX:event skill del jeweler res_jeweler_hide
+commandlist res_jeweler_show AND res_jeweler SHOW
+commandlist res_jeweler_hide AND res_jeweler HIDE
+event init res_jeweler_hide
+event skill add jeweler res_jeweler_show
+event skill del jeweler res_jeweler_hide
 
-#XXX:commandlist res_woodsman_show AND res_woodsman SHOW
-#XXX:commandlist res_woodsman_hide AND res_woodsman HIDE
-#XXX:event init res_woodsman_hide
-#XXX:event skill add woodsman res_woodsman_show
-#XXX:event skill del woodsman res_woodsman_hide
+commandlist res_woodsman_show AND res_woodsman SHOW
+commandlist res_woodsman_hide AND res_woodsman HIDE
+event init res_woodsman_hide
+event skill add woodsman res_woodsman_show
+event skill del woodsman res_woodsman_hide
 
-#XXX:commandlist res_thaumaturgy_show AND res_thaumaturgy SHOW
-#XXX:commandlist res_thaumaturgy_hide AND res_thaumaturgy HIDE
-#XXX:event init res_thaumaturgy_hide
-#XXX:event skill add thaumaturgy res_thaumaturgy_show
-#XXX:event skill del thaumaturgy res_thaumaturgy_hide
+commandlist res_thaumaturgy_show AND res_thaumaturgy SHOW
+commandlist res_thaumaturgy_hide AND res_thaumaturgy HIDE
+event init res_thaumaturgy_hide
+event skill add thaumaturgy res_thaumaturgy_show
+event skill del thaumaturgy res_thaumaturgy_hide
 
 commandlist res_literacy_show AND res_literacy SHOW
 commandlist res_literacy_hide AND res_literacy HIDE
@@ -347,29 +658,29 @@ event init res_alchemy_hide
 event skill add alchemy res_alchemy_show
 event skill del alchemy res_alchemy_hide
 
-#XXX:commandlist res_sense_magic_show AND res_sense_magic SHOW
-#XXX:commandlist res_sense_magic_hide AND res_sense_magic HIDE
-#XXX:event init res_sense_magic_hide
-#XXX:event skill add sense_magic res_sense_magic_show
-#XXX:event skill del sense_magic res_sense_magic_hide
+commandlist res_sense_magic_show AND res_sense_magic SHOW
+commandlist res_sense_magic_hide AND res_sense_magic HIDE
+event init res_sense_magic_hide
+event skill add sense_magic res_sense_magic_show
+event skill del sense_magic res_sense_magic_hide
 
-#XXX:commandlist res_sense_curse_show AND res_sense_curse SHOW
-#XXX:commandlist res_sense_curse_hide AND res_sense_curse HIDE
-#XXX:event init res_sense_curse_hide
-#XXX:event skill add sense_curse res_sense_curse_show
-#XXX:event skill del sense_curse res_sense_curse_hide
+commandlist res_sense_curse_show AND res_sense_curse SHOW
+commandlist res_sense_curse_hide AND res_sense_curse HIDE
+event init res_sense_curse_hide
+event skill add sense_curse res_sense_curse_show
+event skill del sense_curse res_sense_curse_hide
 
-#XXX:commandlist res_find_traps_show AND res_find_traps SHOW
-#XXX:commandlist res_find_traps_hide AND res_find_traps HIDE
-#XXX:event init res_find_traps_hide
-#XXX:event skill add find_traps res_find_traps_show
-#XXX:event skill del find_traps res_find_traps_hide
+commandlist res_find_traps_show AND res_find_traps SHOW
+commandlist res_find_traps_hide AND res_find_traps HIDE
+event init res_find_traps_hide
+event skill add find_traps res_find_traps_show
+event skill del find_traps res_find_traps_hide
 
-#XXX:commandlist res_disarm_traps_show AND res_disarm_traps SHOW
-#XXX:commandlist res_disarm_traps_hide AND res_disarm_traps HIDE
-#XXX:event init res_disarm_traps_hide
-#XXX:event skill add disarm_traps res_disarm_traps_show
-#XXX:event skill del disarm_traps res_disarm_traps_hide
+commandlist res_disarm_traps_show AND res_disarm_traps SHOW
+commandlist res_disarm_traps_hide AND res_disarm_traps HIDE
+event init res_disarm_traps_hide
+event skill add disarm_traps res_disarm_traps_show
+event skill del disarm_traps res_disarm_traps_hide
 
 commandlist res_punching_show AND res_punching SHOW
 commandlist res_punching_hide AND res_punching HIDE
@@ -420,9 +731,13 @@ commandlist_add res_flame_touch_show res_wraith_feed HIDE
 commandlist_add res_flame_touch_show label_flame_touch SHOW
 commandlist_add res_flame_touch_show label_clawing HIDE
 commandlist_add res_flame_touch_show label_wraith_feed HIDE
+commandlist_add res_flame_touch_show act_flame_touch SHOW
+commandlist_add res_flame_touch_show act_clawing HIDE
+commandlist_add res_flame_touch_show act_wraith_feed HIDE
 commandlist res_flame_touch_hide AND
 commandlist_add res_flame_touch_hide res_flame_touch HIDE
 commandlist_add res_flame_touch_hide label_flame_touch HIDE
+commandlist_add res_flame_touch_hide act_flame_touch HIDE
 event init res_flame_touch_hide
 event skill add flame_touch res_flame_touch_show
 event skill del flame_touch res_flame_touch_hide
@@ -434,9 +749,13 @@ commandlist_add res_clawing_show res_wraith_feed HIDE
 commandlist_add res_clawing_show label_flame_touch HIDE
 commandlist_add res_clawing_show label_clawing SHOW
 commandlist_add res_clawing_show label_wraith_feed HIDE
+commandlist_add res_clawing_show act_flame_touch HIDE
+commandlist_add res_clawing_show act_clawing SHOW
+commandlist_add res_clawing_show act_wraith_feed HIDE
 commandlist res_clawing_hide AND
 commandlist_add res_clawing_hide res_clawing HIDE
 commandlist_add res_clawing_hide label_clawing HIDE
+commandlist_add res_clawing_hide act_clawing HIDE
 event init res_clawing_hide
 event skill add clawing res_clawing_show
 event skill del clawing res_clawing_hide
@@ -448,39 +767,43 @@ commandlist_add res_wraith_feed_show res_wraith_feed SHOW
 commandlist_add res_wraith_feed_show label_flame_touch HIDE
 commandlist_add res_wraith_feed_show label_clawing HIDE
 commandlist_add res_wraith_feed_show label_wraith_feed SHOW
+commandlist_add res_wraith_feed_show act_flame_touch HIDE
+commandlist_add res_wraith_feed_show act_clawing HIDE
+commandlist_add res_wraith_feed_show act_wraith_feed SHOW
 commandlist res_wraith_feed_hide AND
 commandlist_add res_wraith_feed_hide res_wraith_feed HIDE
 commandlist_add res_wraith_feed_hide label_wraith_feed HIDE
+commandlist_add res_wraith_feed_hide act_wraith_feed HIDE
 event init res_wraith_feed_hide
 event skill add wraith_feed res_wraith_feed_show
 event skill del wraith_feed res_wraith_feed_hide
 
-#XXX:commandlist res_praying_show AND res_praying SHOW
-#XXX:commandlist res_praying_hide AND res_praying HIDE
-#XXX:event init res_praying_hide
-#XXX:event skill add praying res_praying_show
-#XXX:event skill del praying res_praying_hide
+commandlist res_praying_show AND res_praying SHOW
+commandlist res_praying_hide AND res_praying HIDE
+event init res_praying_hide
+event skill add praying res_praying_show
+event skill del praying res_praying_hide
 
-#XXX:commandlist res_summoning_show AND res_summoning SHOW
-#XXX:commandlist res_summoning_hide AND res_summoning HIDE
-#XXX:event init res_summoning_hide
-#XXX:event skill add summoning res_summoning_show
-#XXX:event skill del summoning res_summoning_hide
+commandlist res_summoning_show AND res_summoning SHOW
+commandlist res_summoning_hide AND res_summoning HIDE
+event init res_summoning_hide
+event skill add summoning res_summoning_show
+event skill del summoning res_summoning_hide
 
-#XXX:commandlist res_pyromancy_show AND res_pyromancy SHOW
-#XXX:commandlist res_pyromancy_hide AND res_pyromancy HIDE
-#XXX:event init res_pyromancy_hide
-#XXX:event skill add pyromancy res_pyromancy_show
-#XXX:event skill del pyromancy res_pyromancy_hide
+commandlist res_pyromancy_show AND res_pyromancy SHOW
+commandlist res_pyromancy_hide AND res_pyromancy HIDE
+event init res_pyromancy_hide
+event skill add pyromancy res_pyromancy_show
+event skill del pyromancy res_pyromancy_hide
 
-#XXX:commandlist res_evocation_show AND res_evocation SHOW
-#XXX:commandlist res_evocation_hide AND res_evocation HIDE
-#XXX:event init res_evocation_hide
-#XXX:event skill add evocation res_evocation_show
-#XXX:event skill del evocation res_evocation_hide
+commandlist res_evocation_show AND res_evocation SHOW
+commandlist res_evocation_hide AND res_evocation HIDE
+event init res_evocation_hide
+event skill add evocation res_evocation_show
+event skill del evocation res_evocation_hide
 
-#XXX:commandlist res_sorcery_show AND res_sorcery SHOW
-#XXX:commandlist res_sorcery_hide AND res_sorcery HIDE
-#XXX:event init res_sorcery_hide
-#XXX:event skill add sorcery res_sorcery_show
-#XXX:event skill del sorcery res_sorcery_hide
+commandlist res_sorcery_show AND res_sorcery SHOW
+commandlist res_sorcery_hide AND res_sorcery HIDE
+event init res_sorcery_hide
+event skill add sorcery res_sorcery_show
+event skill del sorcery res_sorcery_hide

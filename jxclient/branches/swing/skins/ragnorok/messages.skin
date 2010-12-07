@@ -1,21 +1,13 @@
-
-dialog border 4 HEIGHT-236-20 586 198 true _
+dialog 4 HEIGHT-236-20 true Messages
 dialog_hide START META LOGIN ACCOUNT
-#XXX:button button_close 564 6 16 16 close_up close_down false command_messages_close
+button dialog_close close_up close_down false command_messages_close
 
-begin button_group 0 HORIZONTAL HORIZONTAL
-label_text filler1     0 NONE font_label BLACK _
-textbutton button_all  0 NONE false command_message_show_all  All
-label_text filler2     0 NONE font_label BLACK _
-textbutton button_msg  0 NONE false command_message_show_msg  Important
-label_text filler3     0 NONE font_label BLACK _
-textbutton button_chat 0 NONE false command_message_show_chat Chat
-label_text filler4     1 HORIZONTAL font_label BLACK _
-end button_group
+textbutton button_all  false command_message_show_all  All
+textbutton button_msg  false command_message_show_msg  Important
+textbutton button_chat false command_message_show_chat Chat
 
 # "all" tab
-begin all_group 1 BOTH HORIZONTAL
-log_message log_all 1 BOTH null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message log_all null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_all 1 #808080
 log_color log_all 4 #e07000
 log_color log_all 5 #6040c0
@@ -24,18 +16,14 @@ log_color log_all 7 #00c000
 log_color log_all 9 #505050
 log_color log_all 11 #a0a000
 log_color log_all 12 #356074
-begin slider_all_group 0 VERTICAL VERTICAL
-button slider_all_up    0 HORIZONTAL slider_up_up slider_up_down true command_messages_up_all
-scrollbar slider_all    1 BOTH true log_all #c0c0c0 #808080
-button slider_all_down  0 HORIZONTAL slider_down_up slider_down_down true command_messages_down_all
-end slider_all_group
-end all_group
+button slider_all_up    slider_up_up slider_up_down true command_messages_up_all
+scrollbar slider_all    true log_all #c0c0c0 #808080
+button slider_all_down  slider_down_up slider_down_down true command_messages_down_all
 commandlist_add command_messages_up_all log_all SCROLL -1
 commandlist_add command_messages_down_all log_all SCROLL 1
 
 # "important" tab
-begin important_group 1 BOTH HORIZONTAL
-log_message log_msg 1 BOTH null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message log_msg null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_msg 1 #808080
 log_color log_msg 4 #e07000
 log_color log_msg 5 #6040c0
@@ -45,18 +33,14 @@ log_color log_msg 9 #505050
 log_color log_msg 11 #a0a000
 log_color log_msg 12 #356074
 log_filter log_msg not ATTACK SPELL
-begin slider_important_group 0 VERTICAL VERTICAL
-button slider_msg_up    0 HORIZONTAL slider_up_up slider_up_down true command_messages_up_msg
-scrollbar slider_msg    1 BOTH true log_msg #c0c0c0 #808080
-button slider_msg_down  0 HORIZONTAL slider_down_up slider_down_down true command_messages_down_msg
-end slider_important_group
-end important_group
+button slider_msg_up    slider_up_up slider_up_down true command_messages_up_msg
+scrollbar slider_msg    true log_msg #c0c0c0 #808080
+button slider_msg_down  slider_down_up slider_down_down true command_messages_down_msg
 commandlist_add command_messages_up_msg log_msg SCROLL -1
 commandlist_add command_messages_down_msg log_msg SCROLL 1
 
 # "chat" tab
-begin chat_group 1 BOTH HORIZONTAL
-log_message log_chat 1 BOTH null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message log_chat null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_chat 1 #808080
 log_color log_chat 4 #e07000
 log_color log_chat 5 #6040c0
@@ -66,16 +50,13 @@ log_color log_chat 9 #505050
 log_color log_chat 11 #a0a000
 log_color log_chat 12 #356074
 log_filter log_chat only COMMUNICATION
-begin slider_chat_group 0 VERTICAL VERTICAL
-button slider_chat_up   0 HORIZONTAL slider_up_up slider_up_down true command_messages_up_chat
-scrollbar slider_chat   1 BOTH true log_chat #c0c0c0 #808080
-button slider_chat_down 0 HORIZONTAL slider_down_up slider_down_down true command_messages_down_chat
-end slider_chat_group
-end chat_group
+button slider_chat_up   slider_up_up slider_up_down true command_messages_up_chat
+scrollbar slider_chat   true log_chat #c0c0c0 #808080
+button slider_chat_down slider_down_up slider_down_down true command_messages_down_chat
 commandlist_add command_messages_up_chat log_chat SCROLL -1
 commandlist_add command_messages_down_chat log_chat SCROLL 1
 
-command_text command 0 HORIZONTAL command_active command_inactive font_label GRAY BLACK 1 true
+command_text command command_active command_inactive font_label GRAY BLACK 1 true
 
 commandlist command_messages_reset AND
 commandlist_add command_messages_reset log_all SCROLL_RESET
@@ -124,3 +105,69 @@ commandlist_add command_message_show_chat slider_msg_down HIDE
 commandlist_add command_message_show_chat slider_chat_down SHOW
 
 event init command_message_show_all
+
+horizontal begin par
+  begin seq
+    gap 8
+    button_all
+    gap 8
+    button_msg
+    gap 8
+    button_chat
+    gap
+  end
+  begin seq
+    begin par
+      log_all
+      log_msg
+      log_chat
+    end
+    begin par
+      slider_all_up
+      slider_all
+      slider_all_down
+      slider_msg_up
+      slider_msg
+      slider_msg_down
+      slider_chat_up
+      slider_chat
+      slider_chat_down
+    end
+  end
+  command
+end
+
+vertical begin seq
+  begin par
+    button_all
+    button_msg
+    button_chat
+  end
+  begin par
+    log_all
+    log_msg
+    log_chat
+    begin seq
+      begin par
+        slider_all_up
+        slider_msg_up
+        slider_chat_up
+      end
+      begin par
+        slider_all
+        slider_msg
+        slider_chat
+      end
+      begin par
+        slider_all_down
+        slider_msg_down
+        slider_chat_down
+      end
+    end
+  end
+  command
+end
+
+link_size horizontal button_all button_msg button_chat
+link_size horizontal slider_all_up slider_msg_up slider_chat_up slider_all slider_msg slider_chat slider_all_down slider_msg_down slider_chat_down
+link_size both log_all log_msg log_chat

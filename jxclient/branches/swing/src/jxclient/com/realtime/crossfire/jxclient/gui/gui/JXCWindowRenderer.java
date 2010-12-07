@@ -1063,6 +1063,7 @@ public class JXCWindowRenderer {
                 layeredPane.add(dialog, 1, 0);
                 dialog.invalidate();
                 dialog.validate();
+                dialog.setSize(dialog.getPreferredSize());
                 dialog.repaint();
                 layeredPane.validate();
             }
@@ -1077,6 +1078,7 @@ public class JXCWindowRenderer {
                 layeredPane.add(dialog, 1, 0);
                 dialog.invalidate();
                 dialog.validate();
+                dialog.setSize(dialog.getPreferredSize());
                 dialog.repaint();
                 layeredPane.validate();
                 mouseTracker.mouseEntered(mouseEvent);
@@ -1086,6 +1088,7 @@ public class JXCWindowRenderer {
                 layeredPane.add(dialog, 1, 0);
                 dialog.invalidate();
                 dialog.validate();
+                dialog.setSize(dialog.getPreferredSize());
                 dialog.repaint();
                 layeredPane.validate();
             }

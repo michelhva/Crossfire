@@ -1,81 +1,47 @@
-
 tooltip font_tooltip
 
 # Map Group
-begin group1 1 BOTH LAYERED
-map playfield 0 0 0 WIDTH HEIGHT
+map playfield
 
 # Stat Group
-begin stat_group 1 10 8 450 20 LAYERED
-begin hp_group 0 0 0 80 20 LAYERED
-picture gauge_hp_back         0 0 0 80 20 gauge_frame 0.9
-textgauge gauge_hp            0 3 3 74 14 gauge_hp null gauge_empty HP WE BLACK font_label Hitpoints:
-end hp_group
+picture gauge_hp_back         gauge_frame 0.9
+textgauge gauge_hp            gauge_hp null gauge_empty HP WE BLACK font_label Hitpoints:
 
-begin sp_group 0 90 0 80 20 LAYERED
-picture gauge_sp_back         0 0 0 80 20 gauge_frame 0.9
-textgauge gauge_sp            0 3 3 74 14 gauge_sp null gauge_empty SP WE BLACK font_label Mana:
-end sp_group
+picture gauge_sp_back         gauge_frame 0.9
+textgauge gauge_sp            gauge_sp null gauge_empty SP WE BLACK font_label Mana:
 
-begin gp_group 0 180 0 80 20 LAYERED
-picture gauge_gp_back         0 0 0 80 20 gauge_frame 0.9
-textgauge gauge_gp            0 3 3 74 14 gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label Grace:
-end gp_group
+picture gauge_gp_back         gauge_frame 0.9
+textgauge gauge_gp            gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label Grace:
 
-begin fp_group 0 270 0 80 20 LAYERED
-picture gauge_fp_back         0 0 0 80 20 gauge_frame 0.9
-textgauge gauge_fp            0 3 3 74 14 gauge_fp null gauge_empty FOOD WE BLACK font_label Food:
-end fp_group
+picture gauge_fp_back         gauge_frame 0.9
+textgauge gauge_fp            gauge_fp null gauge_empty FOOD WE BLACK font_label Food:
 
-begin xp_group 0 360 0 80 20 LAYERED
-picture gauge_xp_back         0 0 0 80 20 gauge_xp_frame 0.9
-duptextgauge gauge_xp         0 3 3 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Level:
-end xp_group
-end stat_group
+picture gauge_xp_back         gauge_xp_frame 0.9
+duptextgauge gauge_xp         gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Level:
 
 # Button Group
-begin button_group 1 450 8 WIDTH-450 20 HORIZONTAL
-label_text filler_help        1 NONE font_label BLACK _
-textbutton button_help        0 NONE false command_help Help
-label_text filler_status      0 NONE font_label BLACK _
-textbutton button_status      0 NONE false command_status Status
-label_text filler_inventory   0 NONE font_label BLACK _
-textbutton button_inventory   0 NONE false command_inventory Inventory
-label_text filler_messages    0 NONE font_label BLACK _
-textbutton button_messages    0 NONE false command_messages Messages
-label_text filler_protections 0 NONE font_label BLACK _
-textbutton button_protections 0 NONE false command_protections Protections
-label_text filler_skills      0 NONE font_label BLACK _
-textbutton button_skills      0 NONE false command_skills Skills
-label_text filler_pickup      0 NONE font_label BLACK _
-textbutton button_pickup      0 NONE false command_pickup Pickup
-label_text filler_setup       0 NONE font_label BLACK _
-textbutton button_setup       0 NONE false command_setup Setup
-label_text filler_end         0 NONE font_label BLACK _
-end button_group
+textbutton button_help        false command_help Help
+textbutton button_status      false command_status Status
+textbutton button_inventory   false command_inventory Inventory
+textbutton button_messages    false command_messages Messages
+textbutton button_protections false command_protections Protections
+textbutton button_skills      false command_skills Skills
+textbutton button_pickup      false command_pickup Pickup
+textbutton button_setup       false command_setup Setup
 
 # Hp/Sp/Gr bars in map view
-begin head_group 1 WIDTH/2-34 HEIGHT/2-110 68 73 LAYERED
-gauge lowfood                 0 21 0 25 45 lowfood  null null LOWFOOD WE
-gauge poisoned                0 24 0 20 31 poisoned null null POISONED WE
+gauge lowfood lowfood  null null LOWFOOD WE
 
-begin hpbar_group 1 0 50 68 7 LAYERED
-picture hpbar_back            0 0 0 68 7 hpbar_frame 0.9
-gauge hpbar                   0 1 1 66 5 hpbar_full null hpbar_empty HP WE
-end hpbar_group
+gauge poisoned poisoned null null POISONED WE
 
-begin spbar_group 1 0 58 68 7 LAYERED
-picture spbar_back            0 0 0 68 7 hpbar_frame 0.9
-gauge spbar                   0 1 1 66 5 spbar_full null hpbar_empty SP WE
-end spbar_group
+picture hpbar_back hpbar_frame 0.9
+gauge hpbar hpbar_full null hpbar_empty HP WE
 
-begin grbar_group 1 0 66 68 7 LAYERED
-picture grbar_back            0 0 0 68 7 hpbar_frame 0.9
-gauge grbar                   0 1 1 66 5 grbar_full null hpbar_empty GRACE WE
-end grbar_group
-end head_group
+picture spbar_back hpbar_frame 0.9
+gauge spbar spbar_full null hpbar_empty SP WE
 
-end group1
+picture grbar_back hpbar_frame 0.9
+gauge grbar grbar_full null hpbar_empty GRACE WE
 
 commandlist_add command_hitpoints_on hpbar_back SHOW
 commandlist_add command_hitpoints_on hpbar SHOW
@@ -102,3 +68,162 @@ ignore grbar_back
 ignore grbar
 ignore lowfood
 ignore poisoned
+
+horizontal begin par
+  begin seq
+    gap 8
+    begin par
+      gauge_hp_back
+      begin seq
+        gap 3
+        gauge_hp
+        gap 3
+      end
+    end
+    gap 4
+    begin par
+      gauge_sp_back
+      begin seq
+        gap 3
+        gauge_sp
+        gap 3
+      end
+    end
+    gap 4
+    begin par
+      gauge_gp_back
+      begin seq
+        gap 3
+        gauge_gp
+        gap 3
+      end
+    end
+    gap 4
+    begin par
+      gauge_fp_back
+      begin seq
+        gap 3
+        gauge_fp
+        gap 3
+      end
+    end
+    gap 4
+    begin par
+      gauge_xp_back
+      begin seq
+        gap 3
+        gauge_xp
+        gap 3
+      end
+    end
+    gap
+    button_help
+    gap 4
+    button_status
+    gap 4
+    button_inventory
+    gap 4
+    button_messages
+    gap 4
+    button_protections
+    gap 4
+    button_skills
+    gap 4
+    button_pickup
+    gap 4
+    button_setup
+    gap 8
+  end
+  begin seq
+    gap
+    begin par
+      begin seq
+        gap
+        lowfood
+        gap
+      end
+      begin seq
+        gap
+        poisoned
+        gap
+      end
+      hpbar_back
+      hpbar
+      spbar_back
+      spbar
+      grbar_back
+      grbar
+    end
+    gap
+  end
+  playfield
+end
+
+vertical begin par
+  begin seq
+    gap 8
+    begin par
+      gauge_hp_back
+      begin seq
+        gap 3
+        gauge_hp
+        gap 3
+      end
+      gauge_sp_back
+      begin seq
+        gap 3
+        gauge_sp
+        gap 3
+      end
+      gauge_gp_back
+      begin seq
+        gap 3
+        gauge_gp
+        gap 3
+      end
+      gauge_fp_back
+      begin seq
+        gap 3
+        gauge_fp
+        gap 3
+      end
+      gauge_xp_back
+      begin seq
+        gap 3
+        gauge_xp
+        gap 3
+      end
+      button_help
+      button_status
+      button_inventory
+      button_messages
+      button_protections
+      button_skills
+      button_pickup
+      button_setup
+    end
+  end
+  begin seq
+    gap
+    begin par
+      lowfood
+      poisoned
+    end
+    begin par
+      hpbar_back
+      hpbar
+    end
+    begin par
+      spbar_back
+      spbar
+    end
+    begin par
+      grbar_back
+      grbar
+    end
+# XXX: must be one map tile, not constant 64x64
+    gap 64
+    gap
+  end
+  playfield
+end

@@ -34,6 +34,7 @@ import java.awt.Transparency;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.RectangularShape;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link com.realtime.crossfire.jxclient.gui.gui.GUIElement GUIElement} that
@@ -153,6 +154,15 @@ public class GUITextButton extends AbstractButton {
     @Override
     protected Dimension getMinimumSizeInt() {
         return new Dimension(preferredSize);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMaximumSize() {
+        return new Dimension(Integer.MAX_VALUE, preferredSize.height);
     }
 
 }

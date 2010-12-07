@@ -1,21 +1,21 @@
-
 set_auto_size
 
-dialog border -5 HEIGHT-20-37 WIDTH+10 42+20 true
+dialog -5 HEIGHT-20-37 true
 dialog_hide START META LOGIN ACCOUNT
 
-floor_list floor 1 HORIZONTAL 32 32 null
-item floor floor_detail 0 HORIZONTAL 0
-
-#XXX:set_invisible border_nw
-#XXX:set_invisible border_n
-#XXX:set_invisible border_ne
-#XXX:set_invisible border_w
-#XXX:set_invisible border_e
-#XXX:set_invisible border_sw
-#XXX:set_invisible border_s
-#XXX:set_invisible border_se
+floor_list floor 32 32 null
+item floor floor_detail 0
 
 commandlist command_ground_reset OR floor SCROLL_RESET
 event connect command_ground_reset
 event mapscroll command_ground_reset
+
+horizontal begin par
+  floor
+  floor_detail
+end
+
+vertical begin seq
+  floor
+  floor_detail
+end

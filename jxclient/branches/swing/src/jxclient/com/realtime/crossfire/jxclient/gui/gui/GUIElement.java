@@ -40,12 +40,6 @@ public interface GUIElement {
     Gui getGui();
 
     /**
-     * Sets the {@link Gui} this element is part of.
-     * @param gui the gui or <code>null</code>
-     */
-    void setGui(@Nullable Gui gui);
-
-    /**
      * Returns the element's absolute screen coordinate.
      * @return the element's absolute x coordinate
      */

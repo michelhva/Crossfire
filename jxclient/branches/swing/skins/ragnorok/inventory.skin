@@ -1,7 +1,6 @@
-
-dialog border 220 340 504 186 true Inventory
+dialog 504 186 true Inventory
 dialog_hide START META LOGIN NEWCHAR ACCOUNT
-#XXX:button button_close  482    6   16 16 close_up close_down false command_inventory_close
+button dialog_close close_up close_down false command_inventory_close
 
 commandlist command_inventory_scrollup AND
 commandlist command_inventory_scrolldown AND
@@ -12,26 +11,16 @@ commandlist command_inventory_down AND
 commandlist command_inventory_prev AND
 commandlist command_inventory_next AND
 
-begin info_group 0 HORIZONTAL HORIZONTAL
-label_text label_weight_label 0 NONE font_label BLACK Weight:
-label_stat label_weight       0 NONE font_label BLACK WEIGHT RIGHT
-label_text label_weight_sep   0 NONE font_label BLACK /
-label_stat label_weight_limit 0 NONE font_label BLACK WEIGHT_LIMIT LEFT
-label_text inv_item           1 HORIZONTAL font_label BLACK
-end info_group
+label_text label_weight_label font_label BLACK Weight:_
+label_stat label_weight       font_label BLACK WEIGHT RIGHT
+label_text label_weight_sep   font_label BLACK /
+label_stat label_weight_limit font_label BLACK WEIGHT_LIMIT LEFT
+label_text inv_item           font_label BLACK
 
-begin list_group 1 BOTH HORIZONTAL
-inventory_list inv 1 BOTH 32 32 inv_item
+inventory_list inv 32 32 inv_item
 
-begin slider_group 0 VERTICAL VERTICAL
-button     slider_up     0 HORIZONTAL slider_up_up slider_up_down true command_inventory_scrollup
-label_text slider_middle 1 BOTH       font_label BLACK
-button     slider_down   0 HORIZONTAL slider_down_up slider_down_down true command_inventory_scrolldown
-end slider_group
-end list_group
-
-add list_group
-add info_group
+button     slider_up     slider_up_up slider_up_down true command_inventory_scrollup
+button     slider_down   slider_down_up slider_down_down true command_inventory_scrolldown
 
 commandlist_add command_inventory_scrollup inv SCROLL_LIST -1
 commandlist_add command_inventory_scrolldown inv SCROLL_LIST 1
@@ -74,3 +63,39 @@ commandlist command_inventory_unlock AND inv EXEC_SELECTION UNLOCK
 
 commandlist command_inventory_reset OR inv SCROLL_RESET
 event connect command_inventory_reset
+
+horizontal begin par
+  begin seq
+    inv
+    begin par
+      slider_up
+      slider_down
+    end
+  end
+  begin seq
+    label_weight_label
+    label_weight
+    label_weight_sep
+    label_weight_limit
+    gap 16
+    inv_item
+  end
+end
+
+vertical begin seq
+  begin par
+    inv
+    begin seq
+      slider_up
+      gap
+      slider_down
+    end
+  end
+  begin par
+    label_weight_label
+    label_weight
+    label_weight_sep
+    label_weight_limit
+    inv_item
+  end
+end
