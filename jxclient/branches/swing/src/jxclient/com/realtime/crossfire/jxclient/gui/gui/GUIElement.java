@@ -78,12 +78,6 @@ public interface GUIElement {
     void setDefault(boolean isDefault);
 
     /**
-     * Returns whether this gui element should be ignored for user interaction.
-     * @return whether this gui element should be ignored for user interaction
-     */
-    boolean isIgnore();
-
-    /**
      * Marks this gui element to be ignored for user interaction.
      */
     void setIgnore();
@@ -198,8 +192,6 @@ public interface GUIElement {
     int getWidth();
 
     int getHeight();
-
-    void setBounds(int x, int y, int w, int h);
 
     /**
      * Returns whether this element includes a given point.

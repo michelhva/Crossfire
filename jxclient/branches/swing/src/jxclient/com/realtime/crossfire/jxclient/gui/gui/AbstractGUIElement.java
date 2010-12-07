@@ -211,14 +211,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      * {@inheritDoc}
      */
     @Override
-    public boolean isIgnore() {
-        return ignore;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void setIgnore() {
         ignore = true;
     }
