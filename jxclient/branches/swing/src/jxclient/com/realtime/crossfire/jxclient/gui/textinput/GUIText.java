@@ -114,6 +114,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private final boolean enableHistory;
 
     /**
+     * The size of this component.
+     */
+    private final Dimension preferredSize;
+
+    /**
      * If set, hide input; else show input.
      */
     private boolean hideInput = false;
@@ -155,6 +160,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         this.margin = margin;
         this.text = new StringBuilder(text);
         this.enableHistory = enableHistory;
+        preferredSize = new Dimension(activeImage.getWidth(null), activeImage.getHeight(null));
+        if (!preferredSize.equals(new Dimension(inactiveImage.getWidth(null), inactiveImage.getHeight(null)))) {
+            throw new IllegalArgumentException("active image size differs from inactive image size");
+        }
         setCursor(this.text.length());
     }
 
@@ -208,7 +217,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     @NotNull
     @Override
     public Dimension getPreferredSize() {
-        return getMinimumSizeInt(200);
+        return new Dimension(preferredSize);
     }
 
     /**
@@ -217,20 +226,16 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     @NotNull
     @Override
     public Dimension getMinimumSize() {
-        return getMinimumSizeInt(30);
+        return new Dimension(preferredSize);
     }
 
     /**
-     * Returns the minimal size needed to display this component.
-     * @param textWidth the assumed text width
-     * @return the minimal size
+     * {@inheritDoc}
      */
     @NotNull
-    private Dimension getMinimumSizeInt(final int textWidth) {
-        final Dimension dimension = getTextDimension("Xg", font);
-        dimension.width = margin+Math.max(activeImage.getWidth(null), inactiveImage.getWidth(null))+textWidth;
-        dimension.height = Math.max(Math.max(activeImage.getHeight(null), inactiveImage.getHeight(null)), dimension.height);
-        return dimension;
+    @Override
+    public Dimension getMaximumSize() {
+        return new Dimension(preferredSize);
     }
 
     @NotNull

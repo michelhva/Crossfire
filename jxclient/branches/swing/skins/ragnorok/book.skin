@@ -1,7 +1,33 @@
+picture book_background bouquin 0.9
+label_text book_title font_book_title BLACK
+log_label book_text null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+button book_close button_small_active button_small_pushed false command_book_close font_button_fancy DARK_GRAY 20 34 Close
 
-picture book_background 0 CENTER bouquin 0.9
-#XXX:label_text book_title WIDTH/2-332 HEIGHT/2-284 640 20 font_book_title BLACK
-#XXX:log_label boot_text WIDTH/2-332 HEIGHT/2-254 640 390 null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
-#XXX:button book_close WIDTH/2+178 HEIGHT/2+126 135 55 button_small_active button_small_pushed false command_book_close font_button_fancy DARK_GRAY 20 34 Close
+set_default book_close
 
-#XXX:set_default book_close
+horizontal begin par
+  begin seq
+    gap 76
+    begin par
+      book_title
+      book_text
+      begin seq
+        gap
+        book_close
+      end
+    end
+    gap 64
+  end
+  book_background
+end
+
+vertical begin par
+  begin seq
+    gap 37
+    book_title
+    book_text
+    book_close
+    gap 77
+  end
+  book_background
+end

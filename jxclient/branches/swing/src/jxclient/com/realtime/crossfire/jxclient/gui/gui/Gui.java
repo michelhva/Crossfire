@@ -36,7 +36,6 @@ import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.util.Collection;
 import java.util.EnumSet;
-import java.util.concurrent.CopyOnWriteArrayList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -60,12 +59,6 @@ public class Gui extends Container {
      */
     @Nullable
     private final MouseTracker mouseTracker;
-
-    /**
-     * The list of {@link GUIElement}s comprising this gui.
-     */
-    @NotNull
-    private final Collection<GUIElement> visibleElements = new CopyOnWriteArrayList<GUIElement>();
 
     /**
      * The {@link KeyBindings} for this gui.
@@ -228,20 +221,6 @@ public class Gui extends Container {
     }
 
     /**
-     * Adds a {@link GUIElement} to this gui. The element must not be added to
-     * more than one gui at a time.
-     * @param element the <code>GUIElement</code> to add
-     */
-    public void addElement(@NotNull final GUIElement element) {
-        if (element.getGui() != null) {
-            throw new IllegalArgumentException();
-        }
-
-        updateVisibleElement(element);
-        element.setGui(this);
-    }
-
-    /**
      * Repaints the gui and clear the changed flags of all repainted elements.
      * @param g the <code>Graphics</code> to paint into
      */
@@ -290,9 +269,14 @@ public class Gui extends Container {
      */
     @Nullable
     private GUIElement getDefaultElement() {
-        for (final GUIElement element : visibleElements) {
-            if (element.isDefault()) {
-                return element;
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                if (element.isDefault()) {
+                    return element;
+                }
             }
         }
 
@@ -320,9 +304,14 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
-        for (final GUIElement element : visibleElements) {
-            if (class_.isAssignableFrom(element.getClass()) && element.getName().endsWith(ending)) {
-                return class_.cast(element);
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                if (class_.isAssignableFrom(element.getClass()) && element.getName().endsWith(ending)) {
+                    return class_.cast(element);
+                }
             }
         }
 
@@ -339,9 +328,14 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementNotEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
-        for (final GUIElement element : visibleElements) {
-            if (class_.isAssignableFrom(element.getClass()) && !element.getName().endsWith(ending)) {
-                return class_.cast(element);
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                if (class_.isAssignableFrom(element.getClass()) && !element.getName().endsWith(ending)) {
+                    return class_.cast(element);
+                }
             }
         }
 
@@ -355,9 +349,14 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_) {
-        for (final Object element : visibleElements) {
-            if (class_.isAssignableFrom(element.getClass())) {
-                return class_.cast(element);
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                if (class_.isAssignableFrom(element.getClass())) {
+                    return class_.cast(element);
+                }
             }
         }
 
@@ -552,9 +551,14 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_, @NotNull final String name) {
-        for (final GUIElement element : visibleElements) {
-            if (class_.isAssignableFrom(element.getClass()) && element.getName().equals(name)) {
-                return class_.cast(element);
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                if (class_.isAssignableFrom(element.getClass()) && element.getName().equals(name)) {
+                    return class_.cast(element);
+                }
             }
         }
         return null;
@@ -620,20 +624,6 @@ public class Gui extends Container {
         if (textArea != null) {
             textArea.setHideInput(hideInput);
         }
-    }
-
-    /**
-     * Adds or removes a {@link GUIElement} from this gui. The gui element is
-     * added if it is visible or removed if it is invisible.
-     * @param element the gui element
-     */
-    public void updateVisibleElement(@NotNull final GUIElement element) {
-        if (element.isElementVisible()) {
-            visibleElements.add(element);
-        } else {
-            visibleElements.remove(element);
-        }
-        hasChangedElements = true;
     }
 
     /**

@@ -1,55 +1,30 @@
-
 set_auto_size
 
-dialog border WIDTH/2-384 HEIGHT-354 768 354 true Create New Character
+dialog WIDTH/2 HEIGHT-354 true Create New Character
 dialog_hide START META LOGIN PLAYING ACCOUNT
 
-label_stat stat_title     0 HORIZONTAL font_label BLACK TITLE LEFT
+label_stat stat_title     font_label BLACK TITLE LEFT
 
-begin info_group 1 BOTH HORIZONTAL
-log_message messages      1 BOTH       null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
-begin message_group 1 BOTH HORIZONTAL
-begin scrollbar_group 0 VERTICAL VERTICAL
-button messages_up        0 NONE       slider_up_up slider_up_down true command_newchar_up
-scrollbar messages_slider 1 VERTICAL   true messages #c0c0c0 #808080
-button messages_down      0 NONE       slider_down_up slider_down_down true command_newchar_down
-end scrollbar_group
-add message_group
-add messages
-end message_group
+log_message messages      null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+button messages_up        slider_up_up slider_up_down true command_newchar_up
+scrollbar messages_slider true messages #c0c0c0 #808080
+button messages_down      slider_down_up slider_down_down true command_newchar_down
 
-begin stat_group 0 VERTICAL VERTICAL
-label_text filler         1 NONE       font_label BLACK _
-begin str_group 0 NONE HORIZONTAL
-label_stat stat_str       0 NONE       font_label BLACK STR RIGHT
-label_text label_str      0 NONE       font_label BLACK STR(1)
-end str_group
-begin dex_group 0 NONE HORIZONTAL
-label_stat stat_dex       0 NONE       font_label BLACK DEX RIGHT
-label_text label_dex      0 NONE       font_label BLACK DEX(2)
-end dex_group
-begin con_group 0 NONE HORIZONTAL
-label_stat stat_con       0 NONE       font_label BLACK CON RIGHT
-label_text label_con      0 NONE       font_label BLACK CON(3)
-end con_group
-begin int_group 0 NONE HORIZONTAL
-label_stat stat_int       0 NONE       font_label BLACK INT RIGHT
-label_text label_int      0 NONE       font_label BLACK INT(4)
-end int_group
-begin wis_group 0 NONE HORIZONTAL
-label_stat stat_wis       0 NONE       font_label BLACK WIS RIGHT
-label_text label_wis      0 NONE       font_label BLACK WIS(5)
-end wis_group
-begin pow_group 0 NONE HORIZONTAL
-label_stat stat_pow       0 NONE       font_label BLACK POW RIGHT
-label_text label_pow      0 NONE       font_label BLACK POW(6)
-end pow_group
-begin cha_group 0 NONE HORIZONTAL
-label_stat stat_cha       0 NONE       font_label BLACK CHA RIGHT
-label_text label_cha      0 NONE       font_label BLACK CHA(7)
-end cha_group
-end stat_group
-end info_group
+label_text filler         font_label BLACK _
+label_stat stat_str       font_label BLACK STR RIGHT
+label_text label_str      font_label BLACK STR(1)
+label_stat stat_dex       font_label BLACK DEX RIGHT
+label_text label_dex      font_label BLACK DEX(2)
+label_stat stat_con       font_label BLACK CON RIGHT
+label_text label_con      font_label BLACK CON(3)
+label_stat stat_int       font_label BLACK INT RIGHT
+label_text label_int      font_label BLACK INT(4)
+label_stat stat_wis       font_label BLACK WIS RIGHT
+label_text label_wis      font_label BLACK WIS(5)
+label_stat stat_pow       font_label BLACK POW RIGHT
+label_text label_pow      font_label BLACK POW(6)
+label_stat stat_cha       font_label BLACK CHA RIGHT
+label_text label_cha      font_label BLACK CHA(7)
 
 log_color messages 1 #000000
 log_color messages 4 #b78b00
@@ -61,3 +36,77 @@ log_color messages 12 #959054
 
 commandlist_add command_newchar_up messages SCROLL -1
 commandlist_add command_newchar_down messages SCROLL 1
+
+horizontal begin par
+  stat_title
+  begin seq
+    begin par
+      messages_up
+      messages_slider
+      messages_down
+    end
+    messages
+    begin par
+      filler
+      label_str
+      label_dex
+      label_con
+      label_int
+      label_wis
+      label_pow
+      label_cha
+    end
+    begin par
+      stat_str
+      stat_dex
+      stat_con
+      stat_int
+      stat_wis
+      stat_pow
+      stat_cha
+    end
+  end
+end
+
+vertical begin seq
+  stat_title
+  begin par
+    begin seq
+      messages_up
+      messages_slider
+      messages_down
+    end
+    messages
+    begin seq
+      filler
+      begin par
+        label_str
+        stat_str
+      end
+      begin par
+        label_dex
+        stat_dex
+      end
+      begin par
+        label_con
+        stat_con
+      end
+      begin par
+        label_int
+        stat_int
+      end
+      begin par
+        label_wis
+        stat_wis
+      end
+      begin par
+        label_pow
+        stat_pow
+      end
+      begin par
+        label_cha
+        stat_cha
+      end
+    end
+  end
+end

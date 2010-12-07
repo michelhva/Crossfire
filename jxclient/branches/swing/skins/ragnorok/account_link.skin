@@ -1,32 +1,67 @@
 set_auto_size
 
-dialog border WIDTH/2-400 HEIGHT/2-200 400 200 true Character linking to account
+dialog WIDTH/2 HEIGHT/2 true Link character to account
 dialog_hide START META PLAYING NEWCHAR LOGIN
 
-label_text information 0 HORIZONTAL font_label BLACK Please enter your character information.
+label_text information font_label BLACK Please enter your character information.
 
 commandlist command_null_link AND
 
-begin login_group 0 HORIZONTAL HORIZONTAL
-label_text label_login 0 NONE font_label BLACK Login:
-text character_login 1 HORIZONTAL input_active input_inactive font_label GRAY BLACK 1 command_null_link true
-end login_group
+label_text label_login font_label BLACK Login:
+text character_login input_active input_inactive font_label GRAY BLACK 1 command_null_link true
 
-begin password_group 0 HORIZONTAL HORIZONTAL
-label_text label_password 0 NONE font_label BLACK Password:
-text character_password 1 HORIZONTAL input_active input_inactive font_label GRAY BLACK 1 command_null_link true
-end password_group
+label_text label_password font_label BLACK Password:
+text character_password input_active input_inactive font_label GRAY BLACK 1 command_null_link true
 
-label_failure account_login_error 1 BOTH font_label BLACK
+label_failure account_login_error font_label BLACK
 
 commandlist command_account_do_link AND character_login ACCOUNT_LINK
 commandlist command_account_cancel_link AND null DIALOG_CLOSE account_link
 commandlist_add command_account_cancel_link null DIALOG_OPEN account_characters
 
-begin button_group 0 HORIZONTAL HORIZONTAL
-textbutton account_do_login 1 NONE false command_account_do_link Link
-textbutton account_cancel_login 1 NONE false command_account_cancel_link Cancel
-end button_group
+textbutton account_do_login false command_account_do_link Link
+textbutton account_cancel_login false command_account_cancel_link Cancel
 
 hide_input character_password
 set_default account_do_login
+
+horizontal begin par
+  information
+  begin seq
+    begin par
+      label_login
+      label_password
+    end
+    begin par
+      character_login
+      character_password
+    end
+  end
+  account_login_error
+  begin seq
+    gap
+    account_do_login
+    gap 8
+    account_cancel_login
+    gap
+  end
+end
+
+vertical begin seq
+  information
+  begin par
+    label_login
+    character_login
+  end
+  begin par
+    label_password
+    character_password
+  end
+  account_login_error
+  begin par
+    account_do_login
+    account_cancel_login
+  end
+end
+
+link_size horizontal account_do_login account_cancel_login

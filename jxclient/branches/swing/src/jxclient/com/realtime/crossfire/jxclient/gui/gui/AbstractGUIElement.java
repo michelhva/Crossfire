@@ -51,23 +51,11 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link Gui} this element is part of. Set to <code>null</code> if this
-     * element is not part of any gui.
-     */
-    @Nullable
-    private Gui gui = null;
-
-    /**
      * The {@link GUIElementChangedListener} to be notified whenever the {@link
      * #changed} flag is set.
      */
     @Nullable
     private GUIElementChangedListener changedListener = null;
-
-    /**
-     * Whether this element is visible.
-     */
-    private boolean visible = true;
 
     /**
      * Whether this element is the default element. The default element is
@@ -144,18 +132,12 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     @Nullable
     @Override
     public Gui getGui() {
-        return gui;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void setGui(@Nullable final Gui gui) {
-        this.gui = gui;
-        if (visible && gui != null) {
-            gui.setChangedElements();
+        for (Component component = this; component != null; component = component.getParent()) {
+            if (component instanceof Gui) {
+                return (Gui)component;
+            }
         }
+        return null;
     }
 
     /**
@@ -172,6 +154,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public int getElementX() {
+        final Component gui = getGui();
         int x = gui != null ? gui.getX() : 0;
         for (Component component = this; component != null && !(component instanceof Gui); component = component.getParent()) {
             x += component.getX();
@@ -184,6 +167,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public int getElementY() {
+        final Component gui = getGui();
         int y = gui != null ? gui.getY() : 0;
         for (Component component = this; component != null && !(component instanceof Gui); component = component.getParent()) {
             y += component.getY();
@@ -196,7 +180,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public boolean isElementVisible() {
-        return visible;
+        return isVisible();
     }
 
     /**
@@ -204,14 +188,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void setElementVisible(final boolean visible) {
-        if (this.visible != visible) {
-            this.visible = visible;
-            setChanged();
-            final Gui tmpGui = gui;
-            if (tmpGui != null) {
-                tmpGui.updateVisibleElement(this);
-            }
-        }
+        setVisible(visible);
     }
 
     /**
@@ -260,6 +237,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
+        final Gui gui = getGui();
         if (gui != null) {
             elementListener.mouseClicked(gui);
         }
@@ -327,7 +305,8 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
         }
 
         changed = true;
-        if (visible) {
+        if (isVisible()) {
+            final Gui gui = getGui();
             if (gui != null) {
                 gui.setChangedElements();
             }
@@ -367,9 +346,9 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void setTooltipText(@Nullable final String tooltipText) {
-        final Component tmpGui = gui;
-        if (tmpGui != null) {
-            setTooltipText(tooltipText, tmpGui.getX()+getX(), tmpGui.getY()+getY(), getWidth(), getHeight());
+        final Component gui = getGui();
+        if (gui != null) {
+            setTooltipText(tooltipText, gui.getX()+getX(), gui.getY()+getY(), getWidth(), getHeight());
         }
     }
 

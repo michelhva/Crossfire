@@ -26,6 +26,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Implements a cache for elements identified by name.
@@ -90,6 +91,16 @@ public class JXCSkinCache<T> implements Iterable<T> {
         }
 
         return t;
+    }
+
+    /**
+     * Lookup an element by name.
+     * @param name The name of the element.
+     * @return the element or <code>null</code> if no such element exists
+     */
+    @Nullable
+    public T lookupOptional(@NotNull final String name) {
+        return cache.get(name);
     }
 
     /**

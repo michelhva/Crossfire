@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.gui.gui;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
-import java.awt.GridBagLayout;
+import javax.swing.GroupLayout;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -80,7 +80,7 @@ public class GuiFactory {
     @NotNull
     public Gui newGui() {
         final Gui gui = new Gui(mouseTracker, commands, commandCallback, macros);
-        gui.setLayout(new GridBagLayout());
+        gui.setLayout(new GroupLayout(gui));
         return gui;
     }
 

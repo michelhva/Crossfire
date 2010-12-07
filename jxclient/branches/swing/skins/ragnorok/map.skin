@@ -1,5 +1,12 @@
-
-dialog border 12 52 204 204 true
+dialog 12 52 true
 dialog_hide START META LOGIN NEWCHAR ACCOUNT
 
-minimap magicmap 1 BOTH
+minimap magicmap
+
+horizontal begin seq
+  magicmap
+end
+
+vertical begin seq
+  magicmap
+end

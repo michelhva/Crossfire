@@ -1,4 +1,3 @@
-
 commandlist command_metaup AND
 commandlist command_metadown AND
 commandlist command_metapageup AND
@@ -6,18 +5,19 @@ commandlist command_metapagedown AND
 commandlist command_metaprev AND
 commandlist command_metanext AND
 
-begin group1 1 BOTH LAYERED
-fill background_black  0 0 0 WIDTH HEIGHT BLACK 1
-picture background     1 WIDTH/2-512 HEIGHT/2-384 1024 768 background_metaserver 1
-begin group2 2 WIDTH/2-512 HEIGHT/2-384 1024 768 LAYERED
-button metaconnect     0 WIDTH/2+130+16 HEIGHT/2+236-16+10 32 32 connect_up connect_down false command_metaconnect
-button metaup          0 WIDTH/2-12 HEIGHT/2-184  20 25 metaup metaup true command_metaup
-button metadown        0 WIDTH/2-12 HEIGHT/2+121  20 25 metadown metadown true command_metadown
-text metaurl           0 WIDTH/2-130 HEIGHT/2+236 260 20 textarea_big_active textarea_big_inactive font_metaurl WHITE GRAY 2 command_metaconnect false
-label_html metacomment 0 WIDTH/2-300 HEIGHT/2+266 600 118 font_label WHITE
-meta_list metaselect   0 WIDTH/2-242 HEIGHT/2-154 480 270 480 30 null font_metaurl metaurl metacomment command_metaconnect "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-end group2
-end group1
+fill background_black  BLACK 1
+
+picture background background_metaserver 1
+
+button metaconnect connect_up connect_down false command_metaconnect
+button metaup metaup metaup true command_metaup
+button metadown metadown metadown true command_metadown
+
+text metaurl textarea_big_active textarea_big_inactive font_metaurl WHITE GRAY 2 command_metaconnect false
+
+label_html metacomment font_label WHITE
+
+meta_list metaselect 480 30 null font_metaurl metaurl metacomment command_metaconnect "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
 
 commandlist_add command_metaconnect  metaurl    CONNECT
 commandlist_add command_metaup       metaselect SCROLL_LIST -1
@@ -38,3 +38,81 @@ key code PAGE_UP   0 exec command_metapageup
 key code PAGE_DOWN 0 exec command_metapagedown
 key char 10          exec command_metaconnect
 key char 13          exec command_metaconnect
+
+horizontal begin par
+  begin seq
+    gap
+    begin par
+      begin seq
+        gap
+        metaup
+        gap
+      end
+      begin seq
+        gap 260
+        metaselect
+        gap 260
+      end
+      begin seq
+        gap
+        metadown
+        gap
+      end
+      begin seq
+        gap
+        metaurl
+        gap 16
+        metaconnect
+        gap
+      end
+      begin seq
+        gap 200
+        metacomment
+        gap 200
+      end
+      background
+    end
+    gap
+  end
+  background_black
+end
+
+vertical begin par
+  begin seq
+    gap
+    begin par
+      begin seq
+        gap 180
+        metaup
+        gap 20
+        begin par
+          metaselect
+          gap 260
+        end
+        gap 20
+        metadown
+        gap 60
+        begin par
+          begin seq
+            gap
+            metaurl
+            gap
+          end
+          begin seq
+            gap
+            metaconnect
+            gap
+          end
+        end
+        gap 20
+        begin par
+          metacomment
+          gap 100
+        end
+      end
+      background
+    end
+    gap
+  end
+  background_black
+end

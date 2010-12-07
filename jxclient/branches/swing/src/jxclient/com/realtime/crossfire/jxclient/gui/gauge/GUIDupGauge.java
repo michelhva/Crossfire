@@ -163,6 +163,15 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getMaximumSize() {
+        return getGaugeStateSize();
+    }
+
+    /**
      * Returns the maximum size of {@link #gaugeStateDiv} and {@link
      * #gaugeStateMod}.
      * @return the maximum size
