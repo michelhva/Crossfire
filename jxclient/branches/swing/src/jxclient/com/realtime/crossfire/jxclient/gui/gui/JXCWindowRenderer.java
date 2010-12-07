@@ -408,13 +408,6 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Repaints the window.
-     */
-    public void repaint() {
-        forcePaint = true;
-    }
-
-    /**
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
      * @param frame the associated frame
