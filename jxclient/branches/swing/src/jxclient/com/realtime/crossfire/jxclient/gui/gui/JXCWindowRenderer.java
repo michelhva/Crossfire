@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
-import com.realtime.crossfire.jxclient.skin.io.ComponentDumper;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -627,7 +626,6 @@ public class JXCWindowRenderer {
             if (windowWidth > 0 && windowHeight > 0) {
                 assert currentGui != null;
                 currentGui.setSize(windowWidth, windowHeight);
-                ComponentDumper.dump(frame);
             }
         }
 
@@ -818,7 +816,6 @@ public class JXCWindowRenderer {
         }
         openDialogsAdd(dialog);
         openDialogsChanged = true;
-        ComponentDumper.dump(dialog);
         return true;
     }
 
@@ -896,7 +893,6 @@ public class JXCWindowRenderer {
         if (windowWidth > 0 && windowHeight > 0) {
             assert currentGui != null;
             currentGui.setSize(windowWidth, windowHeight);
-            ComponentDumper.dump(frame);
         }
     }
 
@@ -1093,7 +1089,6 @@ public class JXCWindowRenderer {
                 layeredPane.validate();
             }
         }
-        ComponentDumper.dump(dialog);
     }
 
     /**

@@ -35,7 +35,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListe
 import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
-import com.realtime.crossfire.jxclient.skin.io.ComponentDumper;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.util.Resolution;
@@ -439,12 +438,10 @@ public class JXCWindow {
             public void componentResized(final ComponentEvent e) {
                 windowRenderer.updateWindowSize(frame.getWidth(), frame.getHeight());
                 guiManager.updateWindowSize(new Dimension(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight()));
-                ComponentDumper.dump(frame);
                 frame.invalidate();
                 frame.validate();
                 frame.getContentPane().invalidate();
                 frame.getContentPane().validate();
-                ComponentDumper.dump(frame);
             }
 
             /**
