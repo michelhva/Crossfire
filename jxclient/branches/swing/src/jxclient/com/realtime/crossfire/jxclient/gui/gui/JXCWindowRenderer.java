@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import java.awt.Color;
+import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
 import java.awt.Frame;
@@ -77,7 +78,7 @@ public class JXCWindowRenderer {
      * #frame}.
      */
     @NotNull
-    private final JLayeredPane layeredPane = new JLayeredPane();
+    private final Container layeredPane = new JLayeredPane();
 
     /**
      * The {@link MouseTracker} instance.
