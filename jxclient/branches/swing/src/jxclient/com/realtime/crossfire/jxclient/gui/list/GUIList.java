@@ -406,8 +406,8 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * {@inheritDoc}
      */
     @Override
-    public void mouseEntered(@NotNull final MouseEvent e) {
-        super.mouseEntered(e);
+    public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
+        super.mouseEntered(e, debugGui);
         doTooltip(e);
     }
 

@@ -102,13 +102,14 @@ public interface GUIElement {
      * Will be called when the mouse has entered the bounding box of this
      * element.
      * @param e the mouse event relative to this element
+     * @param debugGui whether --debug-gui is active
      */
-    void mouseEntered(@NotNull MouseEvent e);
+    void mouseEntered(@NotNull MouseEvent e, boolean debugGui);
 
     /**
      * Will be called when the mouse has left the bounding box of this element.
-     * This function will not be called unless {@link #mouseEntered(MouseEvent)}
-     * has been called before.
+     * This function will not be called unless {@link #mouseEntered(MouseEvent,
+     * boolean)} has been called before.
      * @param e the mouse event relative to this element
      */
     void mouseExited(@NotNull MouseEvent e);
