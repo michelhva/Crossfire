@@ -80,7 +80,7 @@ public class GUIDialogTitle extends GUILabel {
      * @param title the title text
      */
     public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final Color backgroundColor, @NotNull final String title) {
-        super(tooltipManager, elementListener, name, null, textFont, textColor, backgroundColor, Alignment.LEFT);
+        super(tooltipManager, elementListener, name, null, "", textFont, textColor, backgroundColor, Alignment.LEFT);
         this.windowRenderer = windowRenderer;
         this.title = title;
     }
