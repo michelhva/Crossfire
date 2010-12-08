@@ -1,8 +1,8 @@
-set_auto_size
+set_auto_size 0 HEIGHT-64+12 WIDTH 64
 
-dialog -5 HEIGHT-20-37 true
 dialog_hide START META LOGIN ACCOUNT
 
+picture background dialog_c 0.95
 floor_list floor 32 32 null
 item floor floor_detail 0
 
@@ -11,11 +11,15 @@ event connect command_ground_reset
 event mapscroll command_ground_reset
 
 horizontal begin par
-  floor
-  floor_detail
+  floor 1 32767
+  floor_detail 1 32767
+  background 1 32767
 end
 
-vertical begin seq
-  floor
-  floor_detail
+vertical begin par
+  begin seq
+    floor 32
+    floor_detail 32
+  end
+  background
 end

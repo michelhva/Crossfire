@@ -131,7 +131,7 @@ public class GUIDialogTitle extends GUILabel {
         }
 
         final Gui gui = getGui();
-        if (gui == null || gui.isAutoSize()) {
+        if (gui == null || gui.getAutoSize() != null) {
             offset = null;
             return;
         }
