@@ -33,37 +33,6 @@ public interface GUIElement {
     void dispose();
 
     /**
-     * Returns the {@link Gui} this element is part of.
-     * @return the gui or <code>null</code>
-     */
-    @Nullable
-    Gui getGui();
-
-    /**
-     * Returns the element's absolute screen coordinate.
-     * @return the element's absolute x coordinate
-     */
-    int getElementX();
-
-    /**
-     * Returns the element's absolute screen coordinate.
-     * @return the element's absolute y coordinate
-     */
-    int getElementY();
-
-    /**
-     * Returns whether this element is visible.
-     * @return whether this element is visible
-     */
-    boolean isElementVisible();
-
-    /**
-     * Sets whether this element is visible.
-     * @param visible whether this element is visible
-     */
-    void setElementVisible(boolean visible);
-
-    /**
      * Returns whether this element is the default element. The default element
      * is selected with the ENTER key.
      * @return whether this element is the default element
@@ -81,6 +50,11 @@ public interface GUIElement {
      * Marks this gui element to be ignored for user interaction.
      */
     void setIgnore();
+
+    /**
+     * Returns whether this gui element is to be ignored for user interaction.
+     */
+    boolean isIgnore();
 
     @NotNull
     String getName();
@@ -192,13 +166,5 @@ public interface GUIElement {
     int getWidth();
 
     int getHeight();
-
-    /**
-     * Returns whether this element includes a given point.
-     * @param x the point's x coordinate
-     * @param y the point's y coordinate
-     * @return whether this element includes the point
-     */
-    boolean isElementAtPoint(int x, int y);
 
 }

@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.skin.factory;
 import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
 import com.realtime.crossfire.jxclient.gui.button.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
@@ -87,7 +87,7 @@ public class TextButtonFactory {
      * @return the new text button
      */
     @NotNull
-    public GUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList) {
+    public AbstractGUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList) {
         return new GUITextButton(tooltipManager, elementListener, name, up, down, text, font, color, autoRepeat, commandList);
     }
 

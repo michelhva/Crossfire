@@ -47,36 +47,17 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
     }
 
     /**
-     * Sets the active state.
-     * @param active the active state
-     */
-    public void setActive(final boolean active) {
-        final Gui gui = getGui();
-        if (gui != null) {
-            gui.setActiveElement(this, active);
-        }
-    }
-
-    /**
      * Will be called whenever the active state has changed.
      */
     protected abstract void activeChanged();
 
     /**
-     * Returns whether this element is active.
-     * @return whether this element is active
-     */
-    public boolean isActive() {
-        final Gui gui = getGui();
-        return gui != null && gui.getActiveElement() == this;
-    }
-
-    /**
-     * {@inheritDoc}
+     * Will be called when the user has pressed the mouse inside this element.
+     * @param e the mouse event relative to this element
      */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
-        setActive(true);
+        GuiUtils.setActive(this, true);
     }
 
 }

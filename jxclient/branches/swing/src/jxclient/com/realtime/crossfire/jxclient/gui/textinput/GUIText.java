@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.textinput;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import java.awt.Color;
@@ -186,7 +187,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         super.paintComponent(g);
 
         final Graphics2D g2 = (Graphics2D)g;
-        g2.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
+        g2.drawImage(GuiUtils.isActive(this) ? activeImage : inactiveImage, 0, 0, null);
         g2.setFont(font);
         final String tmp;
         final int y;
@@ -195,7 +196,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             final FontRenderContext fontRenderContext = g2.getFontRenderContext();
             final RectangularShape rectangle = font.getStringBounds(tmp, fontRenderContext);
             y = (int)Math.round(getHeight()-rectangle.getMaxY()-rectangle.getMinY())/2;
-            if (isActive()) {
+            if (GuiUtils.isActive(this)) {
                 final String tmpPrefix = tmp.substring(0, cursor-offset);
                 final String tmpCursor = tmp.substring(0, cursor-offset+1);
                 final RectangularShape rectanglePrefix = font.getStringBounds(tmpPrefix, fontRenderContext);
@@ -206,7 +207,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 g2.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, getHeight());
             }
         }
-        g2.setColor(isActive() ? activeColor : inactiveColor);
+        g2.setColor(GuiUtils.isActive(this) ? activeColor : inactiveColor);
         g2.drawString(tmp, margin, y);
         finishPaintComponent(g);
     }
@@ -259,7 +260,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
-            setActive(true);
+            GuiUtils.setActive(this, true);
             setChanged();
             break;
 
@@ -395,7 +396,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             if (!hideInput) {
                 commandHistory.addCommand(command);
             }
-            setActive(false);
+            GuiUtils.setActive(this, false);
             return true;
 
         case 0x0e:              // CTRL-N
@@ -475,7 +476,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                     final String tmp = getDisplayText();
                     final String tmpCursor = tmp.substring(0, cursor-offset+1);
                     //                    final RectangularShape rectangleCursor = font.getStringBounds(tmpCursor, fontRenderContext);
-                    final Dimension dimension = getTextDimension(tmpCursor, font);
+                    final Dimension dimension = GuiUtils.getTextDimension(tmpCursor, font);
                     //                    final int cursorX = (int)Math.round(rectangleCursor.getWidth());
                     final int cursorX = dimension.width;
                     if (cursorX < getWidth()) {

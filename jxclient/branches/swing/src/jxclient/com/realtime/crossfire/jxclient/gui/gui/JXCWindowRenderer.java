@@ -951,7 +951,7 @@ public class JXCWindowRenderer {
             dialog.setStateChanged(true);
             final ActivatableGUIElement activeElement = dialog.getActiveElement();
             if (activeElement != null) {
-                activeElement.setActive(false);
+                GuiUtils.setActive(activeElement, false);
             }
             openDialogsChanged = true;
         }
@@ -973,7 +973,7 @@ public class JXCWindowRenderer {
         if (openDialogsRemove(dialog)) {
             final ActivatableGUIElement activeElement = dialog.getActiveElement();
             if (activeElement != null) {
-                activeElement.setActive(false);
+                GuiUtils.setActive(activeElement, false);
             }
             return false;
         }
@@ -1247,8 +1247,8 @@ public class JXCWindowRenderer {
      * @return the gui element found, or <code>null</code> if none was found
      */
     @Nullable
-    public GUIElement findElement(@NotNull final MouseEvent e) {
-        GUIElement elected = null;
+    public AbstractGUIElement findElement(@NotNull final MouseEvent e) {
+        AbstractGUIElement elected = null;
 
         final int eX = e.getX();
         final int eY = e.getY();
@@ -1270,14 +1270,14 @@ public class JXCWindowRenderer {
         }
 
         if (elected != null) {
-            e.translatePoint(-elected.getElementX()-offsetX, -elected.getElementY()-offsetY);
+            e.translatePoint(-GuiUtils.getElementX(elected)-offsetX, -GuiUtils.getElementY(elected)-offsetY);
         }
 
         return elected;
     }
 
     @Nullable
-    private GUIElement manageMouseEvents(@NotNull final Gui gui, final int eX, final int eY) {
+    private AbstractGUIElement manageMouseEvents(@NotNull final Gui gui, final int eX, final int eY) {
         final int x = eX-offsetX2;
         final int y = eY-offsetY2;
         return gui.getElementFromPoint(x, y);

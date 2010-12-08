@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.button;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
 import com.realtime.crossfire.jxclient.timeouts.Timeouts;
@@ -107,7 +108,7 @@ public abstract class AbstractButton extends ActivatableGUIElement {
             } else {
                 execute();
             }
-            setActive(false);
+            GuiUtils.setActive(this, false);
             break;
 
         case MouseEvent.BUTTON2:
@@ -127,7 +128,7 @@ public abstract class AbstractButton extends ActivatableGUIElement {
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
-            setActive(true);
+            GuiUtils.setActive(this, true);
             if (autoRepeat) {
                 execute();
                 Timeouts.reset(TIMEOUT_FIRST, timeoutEvent);
@@ -151,7 +152,7 @@ public abstract class AbstractButton extends ActivatableGUIElement {
         if (autoRepeat) {
             Timeouts.remove(timeoutEvent);
         }
-        setActive(false);
+        GuiUtils.setActive(this, false);
     }
 
     /**

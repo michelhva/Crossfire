@@ -303,7 +303,7 @@ public class JXCSkinLoader {
      * The defined {@link GUIElement}s.
      */
     @NotNull
-    private final JXCSkinCache<GUIElement> definedGUIElements = new JXCSkinCache<GUIElement>("gui element");
+    private final JXCSkinCache<AbstractGUIElement> definedGUIElements = new JXCSkinCache<AbstractGUIElement>("gui element");
 
     /**
      * The {@link JXCSkin} being loaded.
@@ -687,7 +687,7 @@ public class JXCSkinLoader {
             throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage());
         }
 
-        final Iterator<GUIElement> it = definedGUIElements.iterator();
+        final Iterator<AbstractGUIElement> it = definedGUIElements.iterator();
         if (gui == null) {
             assert !it.hasNext();
         }
@@ -779,7 +779,7 @@ public class JXCSkinLoader {
         final CommandListType commandListType = NumberParser.parseEnum(CommandListType.class, args.get(), "type");
         skin.addCommandList(commandListName, commandListType);
         if (args.hasMore()) {
-            final GUIElement element = args.get().equals("null") ? null : definedGUIElements.lookup(args.getPrev());
+            final AbstractGUIElement element = args.get().equals("null") ? null : definedGUIElements.lookup(args.getPrev());
             addCommand(commandListName, args, element, args.get(), guiStateManager, commands, lnr, commandQueue, server, commandCallback, macros);
         }
     }
@@ -799,7 +799,7 @@ public class JXCSkinLoader {
      */
     private void parseCommandListAdd(@NotNull final Args args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
         final String name = args.get();
-        final GUIElement element = args.get().equals("null") ? null : definedGUIElements.lookup(args.getPrev());
+        final AbstractGUIElement element = args.get().equals("null") ? null : definedGUIElements.lookup(args.getPrev());
         addCommand(name, args, element, args.get(), guiStateManager, commands, lnr, commandQueue, server, commandCallback, macros);
     }
 
@@ -924,8 +924,8 @@ public class JXCSkinLoader {
         final int x = xExpression.evaluate(1024, 768)/*XXX*/;
         final int y = yExpression.evaluate(1024, 768)/*XXX*/;
         assert dialogFactory != null;
-        final Iterable<GUIElement> elements = dialogFactory.newDialog(tooltipManager, windowRenderer, elementListener, title);
-        for (final GUIElement element : elements) {
+        final Iterable<AbstractGUIElement> elements = dialogFactory.newDialog(tooltipManager, windowRenderer, elementListener, title);
+        for (final AbstractGUIElement element : elements) {
             insertGuiElement(element);
         }
         if (saveDialog) {
@@ -1218,7 +1218,7 @@ public class JXCSkinLoader {
      */
     @Nullable
     private Component getUnreferencedElement(@NotNull final String name, @NotNull final Collection<GUIElement> unreferencedElements) {
-        final AbstractGUIElement component = (/*XXX*/AbstractGUIElement)definedGUIElements.lookupOptional(name);
+        final AbstractGUIElement component = definedGUIElements.lookupOptional(name);
         if (component == null) {
             return null;
         }
@@ -1244,7 +1244,7 @@ public class JXCSkinLoader {
         final String type = args.get();
         final String name = args.get();
         final int index = ExpressionParser.parseInt(args.get());
-        final GUIElement element;
+        final AbstractGUIElement element;
         if (type.equals("floor")) {
             if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item floor' without 'def item' command");
@@ -1344,7 +1344,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
-        final GUIElement element = new GUILabelQuery(tooltipManager, elementListener, name, server, font, color, null);
+        final AbstractGUIElement element = new GUILabelQuery(tooltipManager, elementListener, name, server, font, color, null);
         insertGuiElement(element);
     }
 
@@ -1362,7 +1362,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
-        final GUIElement element = new GUILabelMessage(tooltipManager, elementListener, name, server, windowRenderer, font, color, null);
+        final AbstractGUIElement element = new GUILabelMessage(tooltipManager, elementListener, name, server, windowRenderer, font, color, null);
         insertGuiElement(element);
     }
 
@@ -1379,7 +1379,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
-        final GUIElement element = new GUILabelFailure(tooltipManager, elementListener, name, server, font, color, null);
+        final AbstractGUIElement element = new GUILabelFailure(tooltipManager, elementListener, name, server, font, color, null);
         insertGuiElement(element);
     }
 
@@ -1414,7 +1414,7 @@ public class JXCSkinLoader {
         final Color color = ParseUtils.parseColor(args.get());
         final int stat = ParseUtils.parseStat(args.get());
         final Alignment alignment = NumberParser.parseEnum(Alignment.class, args.get(), "text alignment");
-        final GUIElement element = new GUILabelStats(tooltipManager, elementListener, name, font, color, null, stat, alignment, stats);
+        final AbstractGUIElement element = new GUILabelStats(tooltipManager, elementListener, name, font, color, null, stat, alignment, stats);
         insertGuiElement(element);
     }
 
@@ -1439,7 +1439,7 @@ public class JXCSkinLoader {
         final int statRace = ParseUtils.parseStat(args.get());
         final int statApplied = ParseUtils.parseStat(args.get());
         final Alignment alignment = NumberParser.parseEnum(Alignment.class, args.get(), "text alignment");
-        final GUIElement element = new GUILabelStats2(tooltipManager, elementListener, name, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, null, statCurrent, statBase, statRace, statApplied, alignment, stats);
+        final AbstractGUIElement element = new GUILabelStats2(tooltipManager, elementListener, name, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, null, statCurrent, statBase, statRace, statApplied, alignment, stats);
         insertGuiElement(element);
     }
 
@@ -1456,7 +1456,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Type type = NumberParser.parseEnum(Type.class, args.get(), "label type");
-        final GUIElement element = new GUISpellLabel(tooltipManager, elementListener, name, null, facesManager, font, type, currentSpellManager);
+        final AbstractGUIElement element = new GUISpellLabel(tooltipManager, elementListener, name, null, facesManager, font, type, currentSpellManager);
         insertGuiElement(element);
     }
 
@@ -1471,7 +1471,7 @@ public class JXCSkinLoader {
         final String type = args.get();
         final List<Component> elements = new ArrayList<Component>();
         while (args.hasMore()) {
-            elements.add((/*XXX*/Component)definedGUIElements.lookup(args.get()));
+            elements.add(definedGUIElements.lookup(args.get()));
         }
         if (elements.size() < 2) {
             throw new IOException("'link_size' needs at least two gui elements");
@@ -1507,7 +1507,7 @@ public class JXCSkinLoader {
         final Font fontArcane = definedFonts.lookup(args.get());
         final Color defaultColor = ParseUtils.parseColor(args.get());
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final GUIElement element = new GUILabelLog(tooltipManager, elementListener, name, backgroundImage, fonts, defaultColor);
+        final AbstractGUIElement element = new GUILabelLog(tooltipManager, elementListener, name, backgroundImage, fonts, defaultColor);
         insertGuiElement(element);
     }
 
@@ -1529,7 +1529,7 @@ public class JXCSkinLoader {
         final Font fontArcane = definedFonts.lookup(args.get());
         final Color defaultColor = ParseUtils.parseColor(args.get());
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final GUIElement element = new GUIMessageLog(tooltipManager, elementListener, name, server, backgroundImage, fonts, defaultColor);
+        final AbstractGUIElement element = new GUIMessageLog(tooltipManager, elementListener, name, server, backgroundImage, fonts, defaultColor);
         insertGuiElement(element);
     }
 
@@ -1602,7 +1602,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        final GUIElement element = new GUIMiniMap(tooltipManager, elementListener, name, mapUpdater, facesProvider);
+        final AbstractGUIElement element = new GUIMiniMap(tooltipManager, elementListener, name, mapUpdater, facesProvider);
         insertGuiElement(element);
     }
 
@@ -1648,7 +1648,7 @@ public class JXCSkinLoader {
         final String format = args.get();
         final String tooltip = args.get();
 
-        final GUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, cellWidth, cellHeight, metaserverModel, image, font, format, tooltip, text, label, connectCommandList);
+        final AbstractGUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, cellWidth, cellHeight, metaserverModel, image, font, format, tooltip, text, label, connectCommandList);
         insertGuiElement(list);
     }
 
@@ -1738,7 +1738,7 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the command cannot be parsed
      */
     private void parseSetInvisible(@NotNull final Args args) throws IOException, JXCSkinException {
-        definedGUIElements.lookup(args.get()).setElementVisible(false);
+        definedGUIElements.lookup(args.get()).setVisible(false);
     }
 
     /**
@@ -1998,7 +1998,7 @@ public class JXCSkinLoader {
         final int cellWidth = ExpressionParser.parseInt(args.get());
         final int cellHeight = ExpressionParser.parseInt(args.get());
         final Font font = definedFonts.lookup(args.get());
-        final GUIElement list = new GUICharacterList(tooltipManager, elementListener, name, cellWidth, cellHeight, font, characterModel);
+        final AbstractGUIElement list = new GUICharacterList(tooltipManager, elementListener, name, cellWidth, cellHeight, font, characterModel);
         insertGuiElement(list);
     }
 
@@ -2007,7 +2007,7 @@ public class JXCSkinLoader {
      * @param guiElement the GUI element
      * @throws JXCSkinException if the name is not unique
      */
-    private void insertGuiElement(@NotNull final GUIElement guiElement) throws JXCSkinException {
+    private void insertGuiElement(@NotNull final AbstractGUIElement guiElement) throws JXCSkinException {
         definedGUIElements.insert(guiElement.getName(), guiElement);
         skin.insertGuiElement(guiElement);
     }
@@ -2028,7 +2028,7 @@ public class JXCSkinLoader {
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    private void addCommand(@NotNull final String listName, @NotNull final Args args, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
+    private void addCommand(@NotNull final String listName, @NotNull final Args args, @Nullable final AbstractGUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
         final CommandList commandList = skin.getCommandList(listName);
         commandList.add(commandParser.parseCommandArgs(args, element, command, guiStateManager, commands, lnr, commandQueue, crossfireServerConnection, commandCallback, macros));
     }

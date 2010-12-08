@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import java.awt.Component;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -35,13 +36,13 @@ public class ToggleCommand implements GUICommand {
      * The gui element to toggle.
      */
     @NotNull
-    private final GUIElement target;
+    private final Component target;
 
     /**
      * Creates a new instance.
      * @param target the gui element to toggle
      */
-    public ToggleCommand(@NotNull final GUIElement target) {
+    public ToggleCommand(@NotNull final Component target) {
         this.target = target;
     }
 
@@ -58,7 +59,7 @@ public class ToggleCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        target.setElementVisible(!target.isElementVisible());
+        target.setVisible(!target.isVisible());
     }
 
 }

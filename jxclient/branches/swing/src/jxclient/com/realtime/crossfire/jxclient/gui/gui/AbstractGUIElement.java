@@ -23,17 +23,9 @@ package com.realtime.crossfire.jxclient.gui.gui;
 
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
-import java.awt.font.FontRenderContext;
-import java.awt.font.TextLayout;
-import java.awt.geom.RectangularShape;
-import java.awt.image.BufferedImage;
 import javax.swing.JComponent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -129,66 +121,10 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     /**
      * {@inheritDoc}
      */
-    @Nullable
-    @Override
-    public Gui getGui() {
-        for (Component component = this; component != null; component = component.getParent()) {
-            if (component instanceof Gui) {
-                return (Gui)component;
-            }
-        }
-        return null;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {
         return name;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int getElementX() {
-        final Component gui = getGui();
-        int x = gui != null ? gui.getX() : 0;
-        for (Component component = this; component != null && !(component instanceof Gui); component = component.getParent()) {
-            x += component.getX();
-        }
-        return x;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int getElementY() {
-        final Component gui = getGui();
-        int y = gui != null ? gui.getY() : 0;
-        for (Component component = this; component != null && !(component instanceof Gui); component = component.getParent()) {
-            y += component.getY();
-        }
-        return y;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public boolean isElementVisible() {
-        return isVisible();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void setElementVisible(final boolean visible) {
-        setVisible(visible);
     }
 
     /**
@@ -218,6 +154,14 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     /**
      * {@inheritDoc}
      */
+    @Override
+    public boolean isIgnore() {
+        return ignore;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String getName() {
@@ -229,7 +173,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
-        final Gui gui = getGui();
+        final Gui gui = GuiUtils.getGui(this);
         if (gui != null) {
             elementListener.mouseClicked(gui);
         }
@@ -298,7 +242,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
 
         changed = true;
         if (isVisible()) {
-            final Gui gui = getGui();
+            final Gui gui = GuiUtils.getGui(this);
             if (gui != null) {
                 gui.setChangedElements();
             }
@@ -338,7 +282,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void setTooltipText(@Nullable final String tooltipText) {
-        final Component gui = getGui();
+        final Component gui = GuiUtils.getGui(this);
         if (gui != null) {
             setTooltipText(tooltipText, gui.getX()+getX(), gui.getY()+getY(), getWidth(), getHeight());
         }
@@ -378,42 +322,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     @Override
     public void setChangedListener(@Nullable final GUIElementChangedListener changedListener) {
         this.changedListener = changedListener;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public boolean isElementAtPoint(final int x, final int y) {
-        final int elementX = getElementX();
-        final int elementY = getElementY();
-        return !ignore && elementX <= x && x < elementX+getWidth() && elementY <= y && y < elementY+getHeight();
-    }
-
-    /**
-     * Returns the extents of a string when rendered in a given {@link Font} on
-     * this component.
-     * @param text the text
-     * @param font the font
-     * @return the extends
-     */
-    @NotNull
-    public static Dimension getTextDimension(@NotNull final String text, @NotNull final Font font) {
-        final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final Graphics2D g = graphicsEnvironment.createGraphics(new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB)); // XXX
-        try {
-            final FontRenderContext fontRenderContext = g.getFontRenderContext();
-
-            final TextLayout textLayout1 = new TextLayout(text.isEmpty() ? " " : text, font, fontRenderContext);
-            final RectangularShape bounds1 = textLayout1.getBounds();
-
-            final TextLayout textLayout2 = new TextLayout("Xg", font, fontRenderContext);
-            final RectangularShape bounds2 = textLayout2.getBounds();
-
-            return new Dimension((int)Math.ceil(bounds1.getWidth()), (int)Math.ceil(bounds2.getHeight()));
-        } finally {
-            g.dispose();
-        }
     }
 
     /**

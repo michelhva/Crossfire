@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.skin.factory;
 
 import com.realtime.crossfire.jxclient.gui.GUIDialogBackground;
 import com.realtime.crossfire.jxclient.gui.GUIDialogTitle;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -196,8 +196,8 @@ public class DialogFactory {
      * @return the newly created GUI elements
      */
     @NotNull
-    public Collection<GUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String title) {
-        final Collection<GUIElement> result = new ArrayList<GUIElement>();
+    public Collection<AbstractGUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String title) {
+        final Collection<AbstractGUIElement> result = new ArrayList<AbstractGUIElement>();
         result.add(new GUIDialogBackground(tooltipManager, elementListener, "dialog_background", Transparency.TRANSLUCENT, frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE));
 
         if (title.length() > 0) {

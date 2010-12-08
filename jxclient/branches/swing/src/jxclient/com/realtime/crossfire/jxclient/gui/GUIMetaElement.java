@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
@@ -155,7 +156,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         g.setColor(new Color(0, 0, 0, 0.0f));
         g.fillRect(0, 0, getWidth(), getHeight());
         g.setFont(font);
-        g.setColor(isActive() || selected ? Color.RED : Color.GRAY);
+        g.setColor(GuiUtils.isActive(this) || selected ? Color.RED : Color.GRAY);
         if (image != null) {
             g.drawImage(image, 0, 0, null);
         }
@@ -189,7 +190,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     @NotNull
     private Dimension getMinimumSizeInt() {
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
-        final Dimension result = getTextDimension(metaEntry == null ? "" : metaEntry.format(format), font);
+        final Dimension result = GuiUtils.getTextDimension(metaEntry == null ? "" : metaEntry.format(format), font);
         if (image != null) {
             result.width += image.getWidth(this);
         }
@@ -205,7 +206,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
-            setActive(true);
+            GuiUtils.setActive(this, true);
             setChanged();
             break;
 
