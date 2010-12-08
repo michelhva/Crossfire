@@ -145,10 +145,7 @@ public class Gui extends Container {
         }
 
         super.setBounds(x, y, width, height);
-        //invalidate();
-        //validate();
-        //repaint();
-        doLayout();
+        validate();
         hasChangedElements = true;
         stateChanged = true;
     }
