@@ -1934,12 +1934,17 @@ public class JXCSkinLoader {
         final GroupLayout.Group group2 = layout.createSequentialGroup();
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (title == null) {
-            final GroupLayout.Group group3 = layout.createParallelGroup();
             if (close != null) {
-                group3.addComponent(close);
+                final GroupLayout.Group group4 = layout.createParallelGroup();
+                group4.addComponent(close);
+                group4.addGap(0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE);
+                final GroupLayout.Group group3 = layout.createParallelGroup();
+                group3.addGroup(content);
+                group3.addGroup(group4);
+                group2.addGroup(group3);
+            } else {
+                group2.addGroup(content);
             }
-            group3.addGroup(content);
-            group2.addGroup(group3);
         } else {
             if (close == null) {
                 group2.addComponent(title);
