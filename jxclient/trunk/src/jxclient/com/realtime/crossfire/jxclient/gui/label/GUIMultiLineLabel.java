@@ -78,8 +78,7 @@ public class GUIMultiLineLabel extends GUILabel {
      * @param text The label text.
      */
     public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, extent, picture, font, color, backgroundColor, alignment);
-        setText(text);
+        super(tooltipManager, elementListener, name, extent, picture, text, font, color, backgroundColor, alignment);
     }
 
     /**

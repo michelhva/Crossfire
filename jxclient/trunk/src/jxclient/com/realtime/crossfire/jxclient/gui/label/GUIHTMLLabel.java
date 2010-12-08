@@ -80,8 +80,7 @@ public class GUIHTMLLabel extends AbstractLabel {
      * @param text the text
      */
     public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage backgroundPicture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, extent, font, color, backgroundPicture, backgroundColor);
-        setText(text);
+        super(tooltipManager, elementListener, name, extent, text, font, color, backgroundPicture, backgroundColor);
     }
 
     /**
