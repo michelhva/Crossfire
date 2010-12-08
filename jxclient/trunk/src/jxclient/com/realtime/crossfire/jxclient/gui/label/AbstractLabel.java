@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
@@ -53,6 +54,18 @@ public abstract class AbstractLabel extends GUIElement {
     private String text = "";
 
     /**
+     * The font for rendering the label text.
+     */
+    @NotNull
+    private final Font textFont;
+
+    /**
+     * The text color.
+     */
+    @NotNull
+    private final Color textColor;
+
+    /**
      * The background image. It takes precedence over {@link #backgroundColor}.
      */
     @Nullable
@@ -71,12 +84,16 @@ public abstract class AbstractLabel extends GUIElement {
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param extent the extent of this element
+     * @param textFont the text font
+     * @param textColor the text color
      * @param backgroundPicture the optional background picture
      * @param backgroundColor the background color; ignored if background
      * picture is set
      */
-    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage backgroundPicture, @NotNull final Color backgroundColor) {
+    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final BufferedImage backgroundPicture, @NotNull final Color backgroundColor) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
+        this.textFont = textFont;
+        this.textColor = textColor;
         backgroundImage = backgroundPicture == null ? null : new ImageIcon(backgroundPicture);
         this.backgroundColor = backgroundColor;
     }
@@ -104,6 +121,24 @@ public abstract class AbstractLabel extends GUIElement {
     @NotNull
     protected String getText() {
         return text;
+    }
+
+    /**
+     * Return the font.
+     * @return The font.
+     */
+    @NotNull
+    protected Font getTextFont() {
+        return textFont;
+    }
+
+    /**
+     * Returns the text color.
+     * @return the text color
+     */
+    @NotNull
+    protected Color getTextColor() {
+        return textColor;
     }
 
     /**

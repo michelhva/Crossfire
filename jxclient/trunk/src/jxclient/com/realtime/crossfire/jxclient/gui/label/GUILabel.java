@@ -44,18 +44,6 @@ public abstract class GUILabel extends AbstractLabel {
     private static final long serialVersionUID = 1;
 
     /**
-     * The font for rendering the label text.
-     */
-    @NotNull
-    private final Font textFont;
-
-    /**
-     * The text color.
-     */
-    @NotNull
-    private final Color textColor;
-
-    /**
      * The text alignment.
      */
     @NotNull
@@ -75,9 +63,7 @@ public abstract class GUILabel extends AbstractLabel {
      * @param textAlignment The text alignment.
      */
     protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final Font textFont, @NotNull final Color textColor, @NotNull final Color backgroundColor, @NotNull final Alignment textAlignment) {
-        super(tooltipManager, elementListener, name, extent, picture, backgroundColor);
-        this.textFont = textFont;
-        this.textColor = textColor;
+        super(tooltipManager, elementListener, name, extent, textFont, textColor, picture, backgroundColor);
         this.textAlignment = textAlignment;
     }
 
@@ -99,9 +85,9 @@ public abstract class GUILabel extends AbstractLabel {
      */
     protected int drawLine(@NotNull final Graphics2D g, final int y0, final int h0, @NotNull final String text) {
         g.setBackground(new Color(0, 0, 0, 0.0f));
-        g.setFont(textFont);
+        g.setFont(getTextFont());
         g.setColor(getTextColor());
-        final RectangularShape rectangle = textFont.getStringBounds(text, g.getFontRenderContext());
+        final RectangularShape rectangle = getTextFont().getStringBounds(text, g.getFontRenderContext());
         final int y = y0+(int)(Math.round(h0-rectangle.getHeight())/2-rectangle.getY());
         switch (textAlignment) {
         case LEFT:
@@ -118,24 +104,6 @@ public abstract class GUILabel extends AbstractLabel {
         }
 
         return (int)Math.round(rectangle.getHeight());
-    }
-
-    /**
-     * Return the font.
-     * @return The font.
-     */
-    @NotNull
-    protected Font getTextFont() {
-        return textFont;
-    }
-
-    /**
-     * Returns the text color.
-     * @return the text color
-     */
-    @NotNull
-    protected Color getTextColor() {
-        return textColor;
     }
 
 }
