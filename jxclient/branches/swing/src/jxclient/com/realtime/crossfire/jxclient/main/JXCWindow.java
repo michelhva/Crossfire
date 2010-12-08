@@ -436,8 +436,10 @@ public class JXCWindow {
              */
             @Override
             public void componentResized(final ComponentEvent e) {
-                windowRenderer.updateWindowSize(frame.getContentPane().getWidth(), frame.getContentPane().getHeight());
-                guiManager.updateWindowSize(new Dimension(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight()));
+                final int width = frame.getContentPane().getWidth();
+                final int height = frame.getContentPane().getHeight();
+                windowRenderer.updateWindowSize(width, height);
+                guiManager.updateWindowSize(new Dimension(width, height));
                 frame.invalidate();
                 frame.validate();
                 frame.getContentPane().invalidate();
