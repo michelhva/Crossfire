@@ -26,15 +26,12 @@ import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.Alignment;
-import com.realtime.crossfire.jxclient.gui.label.GUILabel;
+import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
-import java.awt.geom.RectangularShape;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -42,7 +39,7 @@ import org.jetbrains.annotations.Nullable;
  * A dialog title that allows to move the dialog.
  * @author Andreas Kirschbaum
  */
-public class GUIDialogTitle extends GUILabel {
+public class GUIDialogTitle extends GUIOneLineLabel {
 
     /**
      * The serial version UID.
@@ -54,12 +51,6 @@ public class GUIDialogTitle extends GUILabel {
      */
     @NotNull
     private final JXCWindowRenderer windowRenderer;
-
-    /**
-     * The title text.
-     */
-    @NotNull
-    private final String title;
 
     /**
      * Set to the distance of the dialog coordinates relative to the mouse
@@ -80,9 +71,8 @@ public class GUIDialogTitle extends GUILabel {
      * @param title the title text
      */
     public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final Color backgroundColor, @NotNull final String title) {
-        super(tooltipManager, elementListener, name, null, "", textFont, textColor, backgroundColor, Alignment.LEFT);
+        super(tooltipManager, elementListener, name, null, textFont, textColor, backgroundColor, Alignment.LEFT, title);
         this.windowRenderer = windowRenderer;
-        this.title = title;
     }
 
     /**
@@ -138,18 +128,6 @@ public class GUIDialogTitle extends GUILabel {
 
         final Point point = e.getLocationOnScreen();
         windowRenderer.showDialog(gui, point.x+tmpOffset.x, point.y+tmpOffset.y);
-    }
-
-    @Override
-    public void paintComponent(@NotNull final Graphics g) {
-        super.paintComponent(g);
-
-        final Font font = getTextFont();
-        final Graphics2D g2 = (Graphics2D)g;
-        final RectangularShape rectangle = font.getStringBounds(title, g2.getFontRenderContext());
-        final int lineHeight = (int)Math.ceil(rectangle.getMaxY()-rectangle.getMinY());
-        drawLine(g2, 0, lineHeight, title);
-        finishPaintComponent(g);
     }
 
 }
