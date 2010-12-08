@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.faces.FacesProviderFactory;
-import com.realtime.crossfire.jxclient.gui.GUIEmpty;
 import com.realtime.crossfire.jxclient.gui.GUIFill;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
@@ -993,38 +992,6 @@ public class JXCSkinLoader {
         final GUIDupTextGauge element = new GUIDupTextGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
-    }
-
-    /**
-     * Parses an "empty" command.
-     * @param args the command arguments
-     * @param tooltipManager the tooltip manager to update
-     * @param elementListener the element listener to notify
-     * @throws IOException if the command cannot be parsed
-     * @throws JXCSkinException if the command cannot be parsed
-     */
-    private void parseEmpty(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
-        final String name = args.get();
-        final int width;
-        if (args.get().equals("_")) {
-            width = 0;
-        } else {
-            width = ExpressionParser.parseInt(args.getPrev());
-            if (width <= 0) {
-                throw new IOException("width must be positive");
-            }
-        }
-        final int height;
-        if (args.get().equals("_")) {
-            height = 0;
-        } else {
-            height = ExpressionParser.parseInt(args.getPrev());
-            if (height <= 0) {
-                throw new IOException("height must be positive");
-            }
-        }
-        final GUIElement element = new GUIEmpty(tooltipManager, elementListener, name, width, height);
-        insertGuiElement(element);
     }
 
     /**
