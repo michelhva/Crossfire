@@ -73,12 +73,12 @@ horizontal begin par
     end
   end
   begin seq
-    label_weight_label
-    label_weight
-    label_weight_sep
-    label_weight_limit
+    label_weight_label -2
+    label_weight -2
+    label_weight_sep -2
+    label_weight_limit -2
     gap 16
-    inv_item
+    inv_item 1 -2 32767
   end
 end
 
