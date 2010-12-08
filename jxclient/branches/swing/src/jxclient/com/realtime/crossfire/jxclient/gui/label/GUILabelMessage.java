@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
@@ -70,7 +71,7 @@ public class GUILabelMessage extends GUIMultiLineLabel {
         /** {@inheritDoc} */
         @Override
         public void commandDrawinfoReceived(@NotNull final String text, final int type) {
-            final Gui gui = getGui();
+            final Gui gui = GuiUtils.getGui(GUILabelMessage.this);
             if (gui == null || !windowRenderer.isDialogOpen(gui)) {
                 setText(text);
             }
@@ -86,7 +87,7 @@ public class GUILabelMessage extends GUIMultiLineLabel {
         /** {@inheritDoc} */
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
-            final Gui gui = getGui();
+            final Gui gui = GuiUtils.getGui(GUILabelMessage.this);
             if (gui == null || !windowRenderer.isDialogOpen(gui)) {
                 setText(message);
             }

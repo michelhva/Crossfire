@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import java.awt.Component;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -34,13 +35,13 @@ public class ShowCommand implements GUICommand {
      * The gui element to show.
      */
     @NotNull
-    private final GUIElement target;
+    private final Component target;
 
     /**
      * Creates a new instance.
      * @param target the gui element to show
      */
-    public ShowCommand(@NotNull final GUIElement target) {
+    public ShowCommand(@NotNull final Component target) {
         this.target = target;
     }
 
@@ -57,7 +58,7 @@ public class ShowCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        target.setElementVisible(true);
+        target.setVisible(true);
     }
 
 }

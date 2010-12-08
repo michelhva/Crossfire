@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import java.awt.Transparency;
@@ -60,7 +61,7 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         super.mouseClicked(e);
         switch (e.getButton()) {
         case MouseEvent.BUTTON1:
-            setActive(true);
+            GuiUtils.setActive(this, true);
             button1Clicked(e.getModifiersEx());
             break;
 
@@ -100,9 +101,12 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         setChanged();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setElementVisible(final boolean visible) {
-        super.setElementVisible(visible);
+    public void setVisible(final boolean aFlag) {
+        super.setVisible(aFlag);
         setChanged();
     }
 

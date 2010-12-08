@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.Alignment;
@@ -81,7 +82,7 @@ public class GUIDialogTitle extends GUIOneLineLabel {
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
-        final Component gui = getGui();
+        final Component gui = GuiUtils.getGui(this);
         if (gui == null) {
             offset = null;
             return;
@@ -120,7 +121,7 @@ public class GUIDialogTitle extends GUIOneLineLabel {
             return;
         }
 
-        final Gui gui = getGui();
+        final Gui gui = GuiUtils.getGui(this);
         if (gui == null || gui.getAutoSize() != null) {
             offset = null;
             return;

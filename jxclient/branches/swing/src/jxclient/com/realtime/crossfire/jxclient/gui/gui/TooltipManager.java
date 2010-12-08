@@ -156,11 +156,11 @@ public class TooltipManager {
 
         final TooltipText tooltipText = tmpActiveGuiElement.getTooltipText();
         if (tooltipText == null) {
-            tmpTooltip.setElementVisible(false);
+            tmpTooltip.setVisible(false);
             return;
         }
 
-        tmpTooltip.setElementVisible(true);
+        tmpTooltip.setVisible(true);
         tmpTooltip.setText(tooltipText.getText());
 
         final int preferredX = tooltipText.getX()+tooltipText.getW()/2-tmpTooltip.getWidth()/2;
@@ -182,7 +182,7 @@ public class TooltipManager {
      */
     private void removeTooltip() {
         if (tooltip != null) {
-            tooltip.setElementVisible(false);
+            tooltip.setVisible(false);
         }
     }
 

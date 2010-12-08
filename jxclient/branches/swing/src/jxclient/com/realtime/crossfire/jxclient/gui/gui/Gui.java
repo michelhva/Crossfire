@@ -230,7 +230,7 @@ public class Gui extends Container {
         final Object defaultElement = getDefaultElement();
         if (defaultElement != null && defaultElement instanceof ActivatableGUIElement) {
             final ActivatableGUIElement activatableDefaultElement = (ActivatableGUIElement)defaultElement;
-            activatableDefaultElement.setActive(true);
+            GuiUtils.setActive(activatableDefaultElement, true);
         }
     }
 
@@ -311,11 +311,11 @@ public class Gui extends Container {
      *         <code>null</code> if none was found
      */
     @Nullable
-    public GUIElement getElementFromPoint(final int x, final int y) {
+    public AbstractGUIElement getElementFromPoint(final int x, final int y) {
         Component component = findComponentAt(x, y);
         while (component != null) {
-            if (component instanceof GUIElement) {
-                return (GUIElement)component;
+            if (component instanceof AbstractGUIElement) {
+                return (AbstractGUIElement)component;
             }
             component = component.getParent();
         }
@@ -440,7 +440,7 @@ public class Gui extends Container {
     private GUIText activateFirstTextArea() {
         final GUIText textArea = getFirstElement(GUIText.class);
         if (textArea != null) {
-            textArea.setActive(true);
+            GuiUtils.setActive(textArea, true);
         }
         return textArea;
     }
@@ -481,7 +481,7 @@ public class Gui extends Container {
         }
 
         assert activeElement != null;
-        activeElement.setActive(false);
+        GuiUtils.setActive(activeElement, false);
         return true;
     }
 

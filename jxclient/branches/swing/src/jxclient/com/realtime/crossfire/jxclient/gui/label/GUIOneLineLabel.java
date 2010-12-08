@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -94,7 +95,7 @@ public class GUIOneLineLabel extends GUILabel {
      */
     @NotNull
     private Dimension getMinimumSizeInt() {
-        return getTextDimension(getText(), getTextFont());
+        return GuiUtils.getTextDimension(getText(), getTextFont());
     }
 
 }

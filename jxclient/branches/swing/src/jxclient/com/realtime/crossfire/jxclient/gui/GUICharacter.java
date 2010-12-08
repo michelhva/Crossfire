@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.account.CharacterInformationListener;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import java.awt.Color;
@@ -116,7 +117,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         g.setColor(new Color(0, 0, 0, 0.0f));
         g.fillRect(0, 0, getWidth(), getHeight());
         g.setFont(font);
-        g.setColor(isActive() || selected ? Color.RED : Color.GRAY);
+        g.setColor(GuiUtils.isActive(this) || selected ? Color.RED : Color.GRAY);
         final CharacterInformation character = characterModel.getEntry(index);
         g.drawString(character == null ? "" : character.getName(), 0, font.getSize()+1);
         finishPaintComponent(g);
@@ -147,7 +148,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
     @NotNull
     private Dimension getMinimumSizeInt() {
         final CharacterInformation character = characterModel.getEntry(index);
-        return getTextDimension(character == null ? "" : character.getName(), font);
+        return GuiUtils.getTextDimension(character == null ? "" : character.getName(), font);
     }
 
     /**

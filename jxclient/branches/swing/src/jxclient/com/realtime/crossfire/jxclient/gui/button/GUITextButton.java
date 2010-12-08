@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.button;
 
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -112,7 +113,7 @@ public class GUITextButton extends AbstractButton {
         this.text = text;
         this.font = font;
         this.color = color;
-        preferredSize = getTextDimension(text, font);
+        preferredSize = GuiUtils.getTextDimension(text, font);
         if (preferredSize.height < preferredHeight) {
             preferredSize.height = preferredHeight;
         }
@@ -137,7 +138,7 @@ public class GUITextButton extends AbstractButton {
         g2.setFont(font);
         g2.setColor(color);
         final int width = getWidth();
-        (isActive() ? down : up).render(g2, width);
+        (GuiUtils.isActive(this) ? down : up).render(g2, width);
         final FontRenderContext fontRenderContext = g2.getFontRenderContext();
         final RectangularShape rectangle = font.getStringBounds(text, fontRenderContext);
         final int x = (int)Math.round((width-rectangle.getWidth())/2);

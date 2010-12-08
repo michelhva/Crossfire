@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
@@ -531,7 +532,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
             if (rectangle == null) {
                 setTooltipText(null);
             } else {
-                final Component gui = getGui();
+                final Component gui = GuiUtils.getGui(this);
                 if (gui == null) {
                     tooltipIndex = -1;
                     tooltipRectangle = null;

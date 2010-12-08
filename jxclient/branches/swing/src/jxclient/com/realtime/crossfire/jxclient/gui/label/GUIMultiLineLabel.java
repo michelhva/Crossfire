@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -119,7 +120,7 @@ public class GUIMultiLineLabel extends GUILabel {
         int width = 0;
         int height = 0;
         for (final String line : lines) {
-            final Dimension dimension = getTextDimension(line, textFont);
+            final Dimension dimension = GuiUtils.getTextDimension(line, textFont);
             height += dimension.height;
             if (width < dimension.width) {
                 width = dimension.width;

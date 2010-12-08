@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
@@ -250,13 +251,13 @@ public class GUIItemSpellList extends GUIItem {
             return;
         }
 
-        if (isActive() && selectorColor != null) {
+        if (GuiUtils.isActive(this) && selectorColor != null) {
             g.setColor(selectorColor);
             g.fillRect(0, 0, getWidth(), getHeight());
         }
         assert spell != null;
         g.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
-        if (isActive() && selectorImage != null) {
+        if (GuiUtils.isActive(this) && selectorImage != null) {
             g.drawImage(selectorImage, 0, 0, null);
         }
         finishPaintComponent(g);

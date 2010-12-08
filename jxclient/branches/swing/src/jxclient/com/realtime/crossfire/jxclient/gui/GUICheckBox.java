@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionListener;
@@ -177,7 +178,7 @@ public class GUICheckBox extends ActivatableGUIElement {
      */
     @NotNull
     private Dimension getMinimumSizeInt() {
-        final Dimension result = getTextDimension(text, font);
+        final Dimension result = GuiUtils.getTextDimension(text, font);
         result.width += checkedImage.getWidth()+4;
         result.height = checkedImage.getHeight();
         return result;
@@ -219,7 +220,7 @@ public class GUICheckBox extends ActivatableGUIElement {
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
-            setActive(true);
+            GuiUtils.setActive(this, true);
             break;
 
         case MouseEvent.BUTTON2:

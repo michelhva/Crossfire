@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.skin.factory;
 
 import com.realtime.crossfire.jxclient.gui.GUICheckBox;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
@@ -85,7 +85,7 @@ public class CheckBoxFactory {
      * @return The new checkbox.
      */
     @NotNull
-    public GUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CheckBoxOption option, @NotNull final String text) {
+    public AbstractGUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CheckBoxOption option, @NotNull final String text) {
         return new GUICheckBox(tooltipManager, elementListener, name, checked, unchecked, font, color, option, text);
     }
 

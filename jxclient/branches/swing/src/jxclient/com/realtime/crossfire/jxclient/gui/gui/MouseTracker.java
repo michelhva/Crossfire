@@ -51,7 +51,7 @@ public class MouseTracker implements MouseInputListener {
      * The gui element in which the mouse is.
      */
     @Nullable
-    private GUIElement mouseElement = null;
+    private AbstractGUIElement mouseElement = null;
 
     /**
      * Creates a new instance.
@@ -80,9 +80,9 @@ public class MouseTracker implements MouseInputListener {
      */
     @Override
     public void mouseDragged(@NotNull final MouseEvent e) {
-        final GUIElement element = mouseElement;
+        final AbstractGUIElement element = mouseElement;
         if (element != null) {
-            e.translatePoint(-element.getElementX()-windowRenderer.getOffsetX(), -element.getElementY()-windowRenderer.getOffsetY());
+            e.translatePoint(-GuiUtils.getElementX(element)-windowRenderer.getOffsetX(), -GuiUtils.getElementY(element)-windowRenderer.getOffsetY());
             element.mouseMoved(e);
             element.mouseDragged(e);
         }
@@ -93,7 +93,7 @@ public class MouseTracker implements MouseInputListener {
      */
     @Override
     public void mouseMoved(@NotNull final MouseEvent e) {
-        final GUIElement element = windowRenderer.findElement(e);
+        final AbstractGUIElement element = windowRenderer.findElement(e);
         enterElement(element, e);
         if (mouseElement != null) {
             mouseElement.mouseMoved(e);
@@ -113,7 +113,7 @@ public class MouseTracker implements MouseInputListener {
      */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
-        final GUIElement element = windowRenderer.findElement(e);
+        final AbstractGUIElement element = windowRenderer.findElement(e);
         enterElement(element, e);
         if (mouseElement != null) {
             mouseElement.mousePressed(e);
@@ -125,7 +125,7 @@ public class MouseTracker implements MouseInputListener {
      */
     @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
-        final GUIElement element = windowRenderer.findElement(e);
+        final AbstractGUIElement element = windowRenderer.findElement(e);
         final boolean isClicked = element != null && mouseElement == element;
         enterElement(element, e);
         if (isClicked) {
@@ -144,7 +144,7 @@ public class MouseTracker implements MouseInputListener {
      */
     @Override
     public void mouseEntered(@NotNull final MouseEvent e) {
-        final GUIElement element = windowRenderer.findElement(e);
+        final AbstractGUIElement element = windowRenderer.findElement(e);
         enterElement(element, e);
     }
 
@@ -161,7 +161,7 @@ public class MouseTracker implements MouseInputListener {
      * @param element the new element; it may be <code>null</code>
      * @param e the event parameter
      */
-    private void enterElement(@Nullable final GUIElement element, @NotNull final MouseEvent e) {
+    private void enterElement(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         if (mouseElement == element) {
             return;
         }

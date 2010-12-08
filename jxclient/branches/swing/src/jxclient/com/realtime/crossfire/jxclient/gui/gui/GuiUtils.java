@@ -1,0 +1,162 @@
+/*
+ * This file is part of JXClient, the Fullscreen Java Crossfire Client.
+ *
+ * JXClient is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * JXClient is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with JXClient; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ *
+ * Copyright (C) 2005-2008 Yann Chachkoff.
+ * Copyright (C) 2006-2010 Andreas Kirschbaum.
+ */
+
+package com.realtime.crossfire.jxclient.gui.gui;
+
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics2D;
+import java.awt.GraphicsEnvironment;
+import java.awt.event.MouseEvent;
+import java.awt.font.FontRenderContext;
+import java.awt.font.TextLayout;
+import java.awt.geom.RectangularShape;
+import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/**
+ * Utility class for {@link Gui} related functions.
+ * @author Andreas Kirschbaum
+ */
+public class GuiUtils {
+
+    /**
+     * Private constructor to prevent instantiation.
+     */
+    private GuiUtils() {
+    }
+
+    /**
+     * Returns the extents of a string when rendered in a given {@link Font} on
+     * this component.
+     * @param text the text
+     * @param font the font
+     * @return the extends
+     */
+    @NotNull
+    public static Dimension getTextDimension(@NotNull final String text, @NotNull final Font font) {
+        final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final Graphics2D g = graphicsEnvironment.createGraphics(new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB)); // XXX
+        try {
+            final FontRenderContext fontRenderContext = g.getFontRenderContext();
+
+            final TextLayout textLayout1 = new TextLayout(text.isEmpty() ? " " : text, font, fontRenderContext);
+            final RectangularShape bounds1 = textLayout1.getBounds();
+
+            final TextLayout textLayout2 = new TextLayout("Xg", font, fontRenderContext);
+            final RectangularShape bounds2 = textLayout2.getBounds();
+
+            return new Dimension((int)Math.ceil(bounds1.getWidth()), (int)Math.ceil(bounds2.getHeight()));
+        } finally {
+            g.dispose();
+        }
+    }
+
+    /**
+     * Returns an  element's absolute screen coordinate.
+     * @param element the element
+     * @return the element's absolute x coordinate
+     */
+    public static int getElementX(@NotNull final AbstractGUIElement element) {
+        final Component gui = getGui(element);
+        int x = gui != null ? gui.getX() : 0;
+        for (Component component = element; component != null && !(component instanceof Gui); component = component.getParent()) {
+            x += component.getX();
+        }
+        return x;
+    }
+
+    /**
+     * Returns an element's absolute screen coordinate.
+     * @param element the element
+     * @return the element's absolute y coordinate
+     */
+    public static int getElementY(@NotNull final AbstractGUIElement element) {
+        final Component gui = getGui(element);
+        int y = gui != null ? gui.getY() : 0;
+        for (Component component = element; component != null && !(component instanceof Gui); component = component.getParent()) {
+            y += component.getY();
+        }
+        return y;
+    }
+
+    /**
+     * Returns the {@link Gui} an element is part of.
+     * @param element the element
+     * @return the gui or <code>null</code>
+     */
+    @Nullable
+    public static Gui getGui(@NotNull final AbstractGUIElement element) {
+        for (Component component = element; component != null; component = component.getParent()) {
+            if (component instanceof Gui) {
+                return (Gui)component;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Returns whether this element includes a given point.
+     * @param element the element
+     * @param x the point's x coordinate
+     * @param y the point's y coordinate
+     * @return whether this element includes the point
+     */
+    public static boolean isElementAtPoint(@NotNull final AbstractGUIElement element, final int x, final int y) {
+        final int elementX = getElementX(element);
+        final int elementY = getElementY(element);
+        return !element.isIgnore() && elementX <= x && x < elementX+element.getWidth() && elementY <= y && y < elementY+element.getHeight();
+    }
+
+    /**
+     * Sets the active state of a GUI element.
+     * @param element the element
+     * @param active the active state
+     */
+    public static void setActive(@NotNull final ActivatableGUIElement element, final boolean active) {
+        final Gui gui = getGui(element);
+        if (gui != null) {
+            gui.setActiveElement(element, active);
+        }
+    }
+
+    /**
+     * Returns whether a GUI element is active.
+     * @param element the element
+     * @return whether the element is active
+     */
+    public static boolean isActive(@NotNull final AbstractGUIElement element) {
+        final Gui gui = getGui(element);
+        return gui != null && gui.getActiveElement() == element;
+    }
+
+    /**
+     * Will be called when the user has pressed the mouse inside a GUI element.
+     * @param element the element
+     * @param e the mouse event relative to this element
+     */
+    public static void mousePressed(@NotNull final ActivatableGUIElement element, @NotNull final MouseEvent e) {
+        setActive(element, true);
+    }
+
+}

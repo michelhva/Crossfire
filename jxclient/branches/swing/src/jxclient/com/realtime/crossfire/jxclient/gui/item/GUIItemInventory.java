@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.FloorView;
@@ -232,7 +233,7 @@ public class GUIItemInventory extends GUIItemItem {
      */
     @Override
     protected boolean isSelected() {
-        return selected || isActive();
+        return selected || GuiUtils.isActive(this);
     }
 
     /**
