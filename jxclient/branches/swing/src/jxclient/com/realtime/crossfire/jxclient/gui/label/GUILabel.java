@@ -55,13 +55,14 @@ public abstract class GUILabel extends AbstractLabel {
      * @param name The name of this element.
      * @param picture The background image; <code>null</code> for no
      * background.
+     * @param text the text
      * @param textFont The font for rendering the label text.
      * @param textColor The font color.
      * @param backgroundColor The background color.
      * @param textAlignment The text alignment.
      */
-    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final Color backgroundColor, @NotNull final Alignment textAlignment) {
-        super(tooltipManager, elementListener, name, textFont, textColor, picture, backgroundColor);
+    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final String text, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final Color backgroundColor, @NotNull final Alignment textAlignment) {
+        super(tooltipManager, elementListener, name, text, textFont, textColor, picture, backgroundColor);
         this.textAlignment = textAlignment;
     }
 
