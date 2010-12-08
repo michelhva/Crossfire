@@ -623,6 +623,19 @@ public class JXCWindowRenderer {
         this.windowWidth = windowWidth;
         this.windowHeight = windowHeight;
         debugScreenWrite("updateWindowSize: gui size="+this.windowWidth+"x"+this.windowHeight);
+        if (currentGui != null) {
+            currentGui.setSize(windowWidth, windowHeight);
+        }
+        if (frame != null) {
+            layeredPane.invalidate();
+            layeredPane.validate();
+            assert frame != null;
+            frame.invalidate();
+            assert frame != null;
+            frame.validate();
+            assert frame != null;
+            frame.repaint();
+        }
     }
 
     /**
