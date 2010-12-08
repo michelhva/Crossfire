@@ -47,12 +47,6 @@ public class GUIMultiLineLabel extends GUILabel {
     private static final long serialVersionUID = 1;
 
     /**
-     * An <code>String</code> array of length 0.
-     */
-    @NotNull
-    private static final String[] EMPTY_STRING_ARRAY = new String[0];
-
-    /**
      * The pattern to split the text into lines.
      */
     @NotNull
@@ -62,7 +56,7 @@ public class GUIMultiLineLabel extends GUILabel {
      * The text lines to draw.
      */
     @NotNull
-    private String[] lines = EMPTY_STRING_ARRAY;
+    private String[] lines;
 
     /**
      * Create a new instance.
@@ -79,6 +73,7 @@ public class GUIMultiLineLabel extends GUILabel {
      */
     public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
         super(tooltipManager, elementListener, name, picture, text, font, color, backgroundColor, alignment);
+        lines = LINE_SEPARATOR_PATTERN.split(getText(), -1);
     }
 
     /**
