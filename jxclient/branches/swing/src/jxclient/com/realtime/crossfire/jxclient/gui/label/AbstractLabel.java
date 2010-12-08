@@ -50,7 +50,7 @@ public abstract class AbstractLabel extends AbstractGUIElement {
      * The label text.
      */
     @NotNull
-    private String text = "";
+    private String text;
 
     /**
      * The font for rendering the label text.
@@ -82,14 +82,16 @@ public abstract class AbstractLabel extends AbstractGUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
+     * @param text the text
      * @param textFont the text font
      * @param textColor the text color
      * @param backgroundPicture the optional background picture
      * @param backgroundColor the background color; ignored if background
      * picture is set
      */
-    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final BufferedImage backgroundPicture, @Nullable final Color backgroundColor) {
+    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final BufferedImage backgroundPicture, @Nullable final Color backgroundColor) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+        this.text = text;
         this.textFont = textFont;
         this.textColor = textColor;
         backgroundImage = backgroundPicture == null ? null : new ImageIcon(backgroundPicture);
