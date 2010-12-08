@@ -29,7 +29,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
-import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
@@ -53,17 +52,6 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class SkinLoader {
-
-    /**
-     * Whether GUI elements should be highlighted.
-     */
-    private final boolean debugGui;
-
-    /**
-     * The {@link MouseTracker} instance.
-     */
-    @NotNull
-    private final MouseTracker mouseTracker;
 
     /**
      * The {@link CommandCallback} instance.
@@ -151,8 +139,6 @@ public class SkinLoader {
 
     /**
      * Creates a new instance.
-     * @param debugGui whether GUI elements should be highlighted
-     * @param mouseTracker the mouse tracker to use
      * @param commandCallback the command callback to use
      * @param metaserverModel the metaserver model to use
      * @param resolution the size of the client area, <code>null</code> for
@@ -168,9 +154,7 @@ public class SkinLoader {
      * @param shortcuts the shortcuts to use
      * @param characterModel the character model to use
      */
-    public SkinLoader(final boolean debugGui, @NotNull final MouseTracker mouseTracker, @NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts, @NotNull final CharacterModel characterModel) {
-        this.debugGui = debugGui;
-        this.mouseTracker = mouseTracker;
+    public SkinLoader(@NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts, @NotNull final CharacterModel characterModel) {
         this.commandCallback = commandCallback;
         this.metaserverModel = metaserverModel;
         this.resolution = resolution;
@@ -203,7 +187,7 @@ public class SkinLoader {
             // fallback: built-in resource
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
+        final GuiFactory guiFactory = new GuiFactory(commands, commandCallback, macros);
         final GUIElementListener elementListener = new GUIElementListener() {
             /** {@inheritDoc} */
             @Override

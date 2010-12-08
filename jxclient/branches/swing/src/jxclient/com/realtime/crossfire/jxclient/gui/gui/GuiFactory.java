@@ -26,19 +26,12 @@ import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import javax.swing.GroupLayout;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Factory for creating {@link Gui} instances.
  * @author Andreas Kirschbaum
  */
 public class GuiFactory {
-
-    /**
-     * The mouse tracker when in debug GUI mode or <code>null</code> otherwise.
-     */
-    @Nullable
-    private final MouseTracker mouseTracker;
 
     /**
      * The commands instance for executing commands.
@@ -60,14 +53,11 @@ public class GuiFactory {
 
     /**
      * Creates a new instance.
-     * @param mouseTracker the mouse tracker when in debug GUI mode or
-     * <code>null</code> otherwise
      * @param commands the commands instance for executing commands
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public GuiFactory(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
-        this.mouseTracker = mouseTracker;
+    public GuiFactory(@NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         this.commands = commands;
         this.commandCallback = commandCallback;
         this.macros = macros;
@@ -79,7 +69,7 @@ public class GuiFactory {
      */
     @NotNull
     public Gui newGui() {
-        final Gui gui = new Gui(mouseTracker, commands, commandCallback, macros);
+        final Gui gui = new Gui(commands, commandCallback, macros);
         gui.setLayout(new GroupLayout(gui));
         return gui;
     }

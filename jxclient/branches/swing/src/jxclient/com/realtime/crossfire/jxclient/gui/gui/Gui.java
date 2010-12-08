@@ -29,10 +29,8 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
-import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.util.Collection;
 import java.util.EnumSet;
@@ -52,13 +50,6 @@ public class Gui extends Container {
      * The serial version UID.
      */
     private static final long serialVersionUID = 1L;
-
-    /**
-     * The {@link MouseTracker} if in GUI debug mode or <code>null</code>
-     * otherwise.
-     */
-    @Nullable
-    private final MouseTracker mouseTracker;
 
     /**
      * The {@link KeyBindings} for this gui.
@@ -122,14 +113,11 @@ public class Gui extends Container {
 
     /**
      * Creates a new instance.
-     * @param mouseTracker the mouse tracker when in debug GUI mode or
-     * <code>null</code> otherwise
      * @param commands the commands instance for executing commands
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public Gui(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
-        this.mouseTracker = mouseTracker;
+    public Gui(@NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         keyBindings = new KeyBindings(null, commands, commandCallback, macros);
     }
 
@@ -203,39 +191,6 @@ public class Gui extends Container {
      */
     public boolean isModal() {
         return modal;
-    }
-
-    /**
-     * Repaints the gui and clear the changed flags of all repainted elements.
-     * @param g the <code>Graphics</code> to paint into
-     */
-    public void redraw(@NotNull final Graphics g) {
-        if (mouseTracker != null) {
-            final GUIElement mouseElement = mouseTracker.getMouseElement();
-            final long t0 = System.currentTimeMillis();
-
-            hasChangedElements = false;
-            //for (final GUIElement element : visibleElements) {
-            //    element.paint(g);
-            //    g.setColor(element == mouseElement ? Color.RED : Color.WHITE);
-            //    g.drawRect(element.getElementX(), element.getElementY(), element.getWidth()-1, element.getHeight()-1);
-            //}
-
-            final long t1 = System.currentTimeMillis();
-            g.setColor(Color.black);
-            g.fillRect(12, 36, 200, 36);
-            g.setColor(Color.YELLOW);
-            if (mouseElement != null) {
-                g.drawString(mouseElement.getName(), 16, 48);
-            }
-            g.drawString((t1-t0)+"ms", 16, 64);
-        } else {
-            hasChangedElements = false;
-            paint(g);
-            //for (final GUIElement element : visibleElements) {
-            //    element.paint(g);
-            //}
-        }
     }
 
     /**
