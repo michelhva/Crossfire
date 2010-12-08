@@ -67,10 +67,11 @@ public class Gui extends Container {
     private final KeyBindings keyBindings;
 
     /**
-     * Whether this dialog is auto-sizing. Auto-sizing dialogs cannot be moved
-     * or resized manually.
+     * The extent of the dialog if it is auto-sizing or <code>null</code>
+     * otherwise. Auto-sizing dialogs cannot be moved or resized manually.
      */
-    private boolean autoSize = false;
+    @Nullable
+    private Extent autoSize = null;
 
     /**
      * Whether this dialog is modal. Modal dialogs consume all key presses.
@@ -108,12 +109,6 @@ public class Gui extends Container {
     private boolean initialPositionSet = false;
 
     /**
-     * The extent of this dialog, or <code>null</code>.
-     */
-    @Nullable
-    private Extent extent = null;
-
-    /**
      * Whether the state (position or size) has changed.
      */
     private boolean stateChanged = false;
@@ -136,14 +131,6 @@ public class Gui extends Container {
     public Gui(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         this.mouseTracker = mouseTracker;
         keyBindings = new KeyBindings(null, commands, commandCallback, macros);
-    }
-
-    /**
-     * Sets the extent of this dialog.
-     * @param extent the extent
-     */
-    public void setExtent(@NotNull final Extent extent) {
-        this.extent = extent;
     }
 
     /**
@@ -189,18 +176,19 @@ public class Gui extends Container {
     /**
      * Sets the auto-size state. Auto-size dialogs cannot be moved or resized
      * manually.
-     * @param autoSize the new auto-size state
+     * @param autoSize the new auto-size or <code>null</code>
      */
-    public void setAutoSize(final boolean autoSize) {
+    public void setAutoSize(@Nullable final Extent autoSize) {
         this.autoSize = autoSize;
     }
 
     /**
      * Returns the auto-size state. Auto-size dialogs cannot be moved or resized
      * manually.
-     * @return the auto-size state
+     * @return the auto-size or <code>null</code>
      */
-    public boolean isAutoSize() {
+    @Nullable
+    public Extent getAutoSize() {
         return autoSize;
     }
 
@@ -669,13 +657,9 @@ public class Gui extends Container {
      * @param screenHeight the screen height
      */
     public void autoSize(final int screenWidth, final int screenHeight) {
-        if (!autoSize && initialPositionSet) {
-            return;
-        }
-
-        final Extent tmpExtent = extent;
-        if (tmpExtent != null) {
-            setBounds(tmpExtent.getX(screenWidth, screenHeight), tmpExtent.getY(screenWidth, screenHeight), tmpExtent.getW(screenWidth, screenHeight), tmpExtent.getH(screenWidth, screenHeight));
+        final Extent extent = autoSize;
+        if (extent != null) {
+            setBounds(extent.getX(screenWidth, screenHeight), extent.getY(screenWidth, screenHeight), extent.getW(screenWidth, screenHeight), extent.getH(screenWidth, screenHeight));
         } else if (!initialPositionSet) {
             setPosition(0, 0);
         }

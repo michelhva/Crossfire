@@ -653,7 +653,7 @@ public class JXCWindowRenderer {
     public void showDialog(@NotNull final Gui dialog, final int x, final int y) {
         final int newX;
         final int newY;
-        if (dialog.isAutoSize()) {
+        if (dialog.getAutoSize() != null) {
             newX = x;
             newY = y;
         } else {

@@ -108,7 +108,7 @@ public class DialogStateParser {
                                 throw new IOException("no such dialog: "+tmp[1], ex);
                             }
 
-                            if (!dialog.isAutoSize()) {
+                            if (dialog.getAutoSize() == null) {
                                 final int x;
                                 final int y;
                                 final int w;

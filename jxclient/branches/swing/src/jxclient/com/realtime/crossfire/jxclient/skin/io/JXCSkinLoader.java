@@ -114,6 +114,7 @@ import com.realtime.crossfire.jxclient.skin.factory.TextButtonFactory;
 import com.realtime.crossfire.jxclient.skin.skin.DefaultJXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
 import com.realtime.crossfire.jxclient.skin.skin.Expression;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
@@ -631,7 +632,7 @@ public class JXCSkinLoader {
                         } else if (gui != null && cmd.equals("set_forced_active")) {
                             parseSetForcedActive(args, gui);
                         } else if (gui != null && cmd.equals("set_auto_size")) {
-                            parseSetAutoSize(gui);
+                            parseSetAutoSize(gui, args);
                         } else if (gui != null && cmd.equals("set_default")) {
                             parseSetDefault(args);
                         } else if (gui != null && cmd.equals("set_invisible")) {
@@ -912,7 +913,7 @@ public class JXCSkinLoader {
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDialog(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr, @NotNull final Gui gui, @NotNull final String dialogName) throws IOException, JXCSkinException {
+    private void parseDialog(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr, @NotNull final Component gui, @NotNull final String dialogName) throws IOException, JXCSkinException {
         if (dialogFactory == null) {
             throw new IOException("missing 'def dialog' command");
         }
@@ -1741,10 +1742,16 @@ public class JXCSkinLoader {
 
     /**
      * Parses a "set_auto_size" command.
+     * @param args the command arguments
      * @param gui the gui to modify
+     * @throws IOException if the command cannot be parsed
      */
-    private static void parseSetAutoSize(@NotNull final Gui gui) {
-        gui.setAutoSize(true);
+    private static void parseSetAutoSize(@NotNull final Gui gui, @NotNull final Args args) throws IOException {
+        final Expression x = ExpressionParser.parseExpression(args.get());
+        final Expression y = ExpressionParser.parseExpression(args.get());
+        final Expression w = ExpressionParser.parseExpression(args.get());
+        final Expression h = ExpressionParser.parseExpression(args.get());
+        gui.setAutoSize(new Extent(x, y, w, h));
     }
 
     /**
@@ -2130,7 +2137,24 @@ public class JXCSkinLoader {
                 if (!unreferencedElements.remove(element)) {
                     throw new IOException("layout defines element '"+element+"' more than once");
                 }
-                group.addComponent((/*XXX*/Component)element);
+                if (args.hasMore()) {
+                    final int tmp = ExpressionParser.parseInt(args.get());
+                    final int min;
+                    final int pref;
+                    final int max;
+                    if (args.hasMore()) {
+                        min = tmp;
+                        pref = ExpressionParser.parseInt(args.get());
+                        max = args.hasMore() ? ExpressionParser.parseInt(args.get()) : Short.MAX_VALUE;
+                    } else {
+                        min = tmp;
+                        pref = tmp;
+                        max = tmp;
+                    }
+                    group.addComponent((/*XXX*/Component)element, min, pref, max);
+                } else {
+                    group.addComponent((/*XXX*/Component)element);
+                }
             }
             if (args.hasMore()) {
                 throw new IOException("excess arguments");
