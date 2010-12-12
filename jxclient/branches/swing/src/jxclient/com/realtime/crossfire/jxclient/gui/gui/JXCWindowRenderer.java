@@ -494,6 +494,7 @@ public class JXCWindowRenderer {
 
         setResolutionPost(frame, dimension);
         this.frame = frame;
+        addMouseTracker(frame);
         return true;
     }
 
@@ -565,6 +566,7 @@ public class JXCWindowRenderer {
 
         setResolutionPost(frame, dimension);
         this.frame = frame;
+        addMouseTracker(frame);
     }
 
     /**
@@ -719,6 +721,8 @@ public class JXCWindowRenderer {
             final Resolution minResolution = new Resolution(1, 1);
             assert frame != null;
             setWindowMode(frame, null, minResolution, false);
+            assert frame != null;
+            removeMouseTracker(frame);
             frame = null;
         }
     }
@@ -1325,6 +1329,24 @@ public class JXCWindowRenderer {
     private void removeFromLayeredPane(@NotNull final Component dialog) {
         layeredPane.remove(dialog);
         layeredPane.validate();
+    }
+
+    /**
+     * Adds {@link #mouseTracker} to a {@link Component}.
+     * @param component the component to add to
+     */
+    private void addMouseTracker(@NotNull final Component component) {
+        component.addMouseListener(mouseTracker);
+        component.addMouseMotionListener(mouseTracker);
+    }
+
+    /**
+     * Removes {@link #mouseTracker} from a {@link Component}.
+     * @param component the component to remove from
+     */
+    private void removeMouseTracker(@NotNull final Component component) {
+        component.removeMouseListener(mouseTracker);
+        component.removeMouseMotionListener(mouseTracker);
     }
 
 }

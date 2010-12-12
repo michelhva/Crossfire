@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.main;
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
-import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -485,12 +484,11 @@ public class JXCWindow {
      * Initializes the instance: loads and displays the skin.
      * @param resolution the size of the client area, <code>null</code> for
      * default
-     * @param mouseTracker the mouse tracker to use
      * @param skinName the skin to load
      * @param fullScreen whether full-screen mode should be enabled
      * @param skinLoader the skin loader instance
      */
-    public void init(@Nullable final Resolution resolution, @NotNull final MouseTracker mouseTracker, @NotNull final String skinName, final boolean fullScreen, @NotNull final SkinLoader skinLoader) {
+    public void init(@Nullable final Resolution resolution, @NotNull final String skinName, final boolean fullScreen, @NotNull final SkinLoader skinLoader) {
         JXCSkin skin;
         try {
             skin = skinLoader.loadSkin(skinName);
@@ -531,9 +529,6 @@ public class JXCWindow {
         guiManager.setSkin(skin);
         guiManager.updateWindowSize(frame.getSize());
         DialogStateParser.load(skin, windowRenderer);
-
-        frame.addMouseListener(mouseTracker);
-        frame.addMouseMotionListener(mouseTracker);
     }
 
     /**
