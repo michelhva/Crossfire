@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
@@ -613,8 +614,7 @@ public class JXCWindowRenderer {
         frame.add(layeredPane);
 
         if (currentGui != null) {
-            layeredPane.add(currentGui, Integer.valueOf(0));
-            layeredPane.validate();
+            addToLayeredPane(currentGui, 0, -1);
             frame.repaint();
 
             if (windowWidth > 0 && windowHeight > 0) {
@@ -714,7 +714,7 @@ public class JXCWindowRenderer {
     public void endRendering() {
         if (isFullScreen && frame != null) {
             if (currentGui != null) {
-                layeredPane.remove(currentGui);
+                removeFromLayeredPane(currentGui);
             }
             final Resolution minResolution = new Resolution(1, 1);
             assert frame != null;
@@ -881,13 +881,11 @@ public class JXCWindowRenderer {
      */
     public void setCurrentGui(@NotNull final Gui gui) {
         if (frame != null && currentGui != null) {
-            layeredPane.remove(currentGui);
-            layeredPane.validate();
+            removeFromLayeredPane(currentGui);
         }
         currentGui = gui;
         if (frame != null) {
-            layeredPane.add(currentGui, Integer.valueOf(0));
-            layeredPane.validate();
+            addToLayeredPane(currentGui, 0, -1);
             assert frame != null;
             frame.invalidate();
             assert frame != null;
@@ -1016,12 +1014,11 @@ public class JXCWindowRenderer {
 
         this.rendererGuiState = rendererGuiState;
         for (final Gui dialog : openDialogs) {
-            layeredPane.remove(dialog);
+            removeFromLayeredPane(dialog);
             if (!dialog.isHidden(rendererGuiState)) {
-                layeredPane.add(dialog, 1, 0);
+                addToLayeredPane(dialog, 1, 0);
             }
         }
-        layeredPane.validate();
         forcePaint = true;
         for (final RendererGuiStateListener listener : rendererGuiStateListeners) {
             listener.guiStateChanged(rendererGuiState);
@@ -1063,12 +1060,11 @@ public class JXCWindowRenderer {
         if (mouse == null || dialog.isHidden(rendererGuiState)) {
             openDialogs.add(dialog);
             if (!dialog.isHidden(rendererGuiState)) {
-                layeredPane.add(dialog, 1, 0);
+                addToLayeredPane(dialog, 1, 0);
                 dialog.invalidate();
                 dialog.validate();
                 dialog.setSize(dialog.getPreferredSize());
                 dialog.repaint();
-                layeredPane.validate();
             }
         } else {
             mouse.x -= offsetX;
@@ -1078,22 +1074,20 @@ public class JXCWindowRenderer {
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.add(dialog);
                 assert !dialog.isHidden(rendererGuiState);
-                layeredPane.add(dialog, 1, 0);
+                addToLayeredPane(dialog, 1, 0);
                 dialog.invalidate();
                 dialog.validate();
                 dialog.setSize(dialog.getPreferredSize());
                 dialog.repaint();
-                layeredPane.validate();
                 mouseTracker.mouseEntered(mouseEvent);
             } else {
                 openDialogs.add(dialog);
                 assert !dialog.isHidden(rendererGuiState);
-                layeredPane.add(dialog, 1, 0);
+                addToLayeredPane(dialog, 1, 0);
                 dialog.invalidate();
                 dialog.validate();
                 dialog.setSize(dialog.getPreferredSize());
                 dialog.repaint();
-                layeredPane.validate();
             }
         }
     }
@@ -1112,8 +1106,7 @@ public class JXCWindowRenderer {
         final Point mouse = frame == null ? null : frame.getMousePosition(true);
         if (mouse == null) {
             openDialogs.remove(dialog);
-            layeredPane.remove(dialog);
-            layeredPane.validate();
+            removeFromLayeredPane(dialog);
         } else {
             mouse.x -= offsetX;
             mouse.y -= offsetY;
@@ -1121,13 +1114,11 @@ public class JXCWindowRenderer {
                 final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.remove(dialog);
-                layeredPane.remove(dialog);
-                layeredPane.validate();
+                removeFromLayeredPane(dialog);
                 mouseTracker.mouseEntered(mouseEvent);
             } else {
                 openDialogs.remove(dialog);
-                layeredPane.remove(dialog);
-                layeredPane.validate();
+                removeFromLayeredPane(dialog);
             }
         }
 
@@ -1314,6 +1305,26 @@ public class JXCWindowRenderer {
             System.exit(1);
             throw new AssertionError();
         }
+    }
+
+    /**
+     * Adds a component to {@link #layeredPane}.
+     * @param dialog the component
+     * @param layer the layer to add to
+     * @param index the index within the layer to add to
+     */
+    private void addToLayeredPane(@NotNull final Component dialog, final int layer, final int index) {
+        layeredPane.add(dialog, layer, index);
+        layeredPane.validate();
+    }
+
+    /**
+     * Removes a component from {@link #layeredPane}.
+     * @param dialog the component
+     */
+    private void removeFromLayeredPane(@NotNull final Component dialog) {
+        layeredPane.remove(dialog);
+        layeredPane.validate();
     }
 
 }
