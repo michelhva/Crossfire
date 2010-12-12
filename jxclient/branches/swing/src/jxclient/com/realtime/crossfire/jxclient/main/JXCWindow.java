@@ -126,7 +126,7 @@ public class JXCWindow {
      * The main window.
      */
     @NotNull
-    private final JFrame frame = new JFrame("");
+    private final Frame frame;
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets the
@@ -410,8 +410,9 @@ public class JXCWindow {
      * @param commandQueue the command queue instance
      * @param guiManager the gui manager instance
      * @param keyHandler the key handler for keyboard input
+     * @param frame the frame to use
      */
-    public JXCWindow(@NotNull final Exiter exiter, @NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final GuiManager guiManager, @NotNull final KeyHandler keyHandler, @NotNull final CharacterModel characterModel) {
+    public JXCWindow(@NotNull final Exiter exiter, @NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final GuiManager guiManager, @NotNull final KeyHandler keyHandler, @NotNull final CharacterModel characterModel, @NotNull final JFrame frame) {
         this.exiter = exiter;
         this.server = server;
         this.optionManager = optionManager;
@@ -420,6 +421,7 @@ public class JXCWindow {
         this.guiManager = guiManager;
         this.keyHandler = keyHandler;
         this.characterModel = characterModel;
+        this.frame = frame;
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         try {
             frame.setIconImage(ResourceUtils.loadImage(ResourceUtils.APPLICATION_ICON).getImage());
@@ -541,16 +543,6 @@ public class JXCWindow {
         windowRenderer.stop();
         guiManager.term();
         optionManager.saveOptions();
-    }
-
-    /**
-     * Returns the main window.
-     * @return the main window
-     */
-    @Deprecated
-    @NotNull
-    public Frame getFrame() {
-        return frame;
     }
 
 }
