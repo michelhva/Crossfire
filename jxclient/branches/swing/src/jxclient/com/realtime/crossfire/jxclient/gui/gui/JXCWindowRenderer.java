@@ -78,11 +78,18 @@ public class JXCWindowRenderer {
      */
     @NotNull
     private final Container layeredPane = new JLayeredPane() {
+
+        /**
+         * The serial version UID.
+         */
+        private static final long serialVersionUID = 1L;
+
         @Override
         public void paint(final Graphics g) {
             super.paint(g);
             mouseTracker.paintActiveComponent(g);
         }
+
     };
 
     /**
