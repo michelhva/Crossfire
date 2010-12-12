@@ -160,7 +160,6 @@ public class GUIButton extends AbstractButton {
             g.setColor(color);
             g.drawString(text, textX, textY);
         }
-        finishPaintComponent(g);
     }
 
     /**

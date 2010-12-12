@@ -151,7 +151,6 @@ public class GUICheckBox extends ActivatableGUIElement {
         final RectangularShape rectangle = font.getStringBounds(text, g2.getFontRenderContext());
         final int y = (int)Math.round(getHeight()-rectangle.getMaxY()-rectangle.getMinY())/2;
         g2.drawString(text, checkedImage.getWidth()+4, y);
-        finishPaintComponent(g);
     }
 
     /**

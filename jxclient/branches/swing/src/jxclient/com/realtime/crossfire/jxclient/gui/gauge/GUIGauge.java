@@ -132,7 +132,6 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
             g.drawImage(emptyImage, 0, 0, null);
         }
         gaugeState.draw(g);
-        finishPaintComponent(g);
     }
 
     /**

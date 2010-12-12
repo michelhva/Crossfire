@@ -21,6 +21,9 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import javax.swing.event.MouseInputListener;
 import org.jetbrains.annotations.NotNull;
@@ -52,6 +55,12 @@ public class MouseTracker implements MouseInputListener {
      */
     @Nullable
     private AbstractGUIElement mouseElement = null;
+
+    /**
+     * The active component.
+     */
+    @Nullable
+    private AbstractGUIElement activeComponent = null;
 
     /**
      * Creates a new instance.
@@ -169,12 +178,37 @@ public class MouseTracker implements MouseInputListener {
         final GUIElement tmp = mouseElement;
         if (tmp != null) {
             tmp.mouseExited(e);
+            if (activeComponent != null) {
+                activeComponent.setChanged();
+                activeComponent = null;
+            }
         }
 
         mouseElement = element;
 
         if (element != null) {
             element.mouseEntered(e, debugGui);
+            if (debugGui && activeComponent != element) {
+                activeComponent = element;
+                activeComponent.setChanged();
+            }
+        }
+    }
+
+    /**
+     * Marks the active component in a {@link Graphics} instance.
+     * @param g the graphics
+     */
+    public void paintActiveComponent(@NotNull final Graphics g) {
+        final AbstractGUIElement component = activeComponent;
+        if (component != null) {
+            final String text = component.getName();
+            final Dimension dimension = GuiUtils.getTextDimension(text, g.getFont());
+            g.setColor(Color.BLACK);
+            g.fillRect(0, 2, dimension.width+4, dimension.height+8);
+            g.setColor(Color.RED);
+            g.drawString(text, 2, 16);
+            g.drawRect(GuiUtils.getElementX(component), GuiUtils.getElementY(component), component.getWidth()-1, component.getHeight()-1);
         }
     }
 
