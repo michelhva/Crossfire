@@ -21,9 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import java.awt.Color;
 import java.awt.Component;
-import java.awt.Graphics;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
@@ -89,11 +87,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Nullable
     private TooltipText tooltipText = null;
-
-    /**
-     * Whether this component is active.
-     */
-    private boolean activeComponent = false;
 
     /**
      * Creates a new instance.
@@ -185,10 +178,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     @Override
     public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
         tooltipManager.setElement(this);
-        if (debugGui && !activeComponent) {
-            activeComponent = true;
-            setChanged();
-        }
     }
 
     /**
@@ -197,10 +186,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     @Override
     public void mouseExited(@NotNull final MouseEvent e) {
         tooltipManager.unsetElement(this);
-        if (activeComponent) {
-            activeComponent = false;
-            setChanged();
-        }
     }
 
     /**
@@ -322,18 +307,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     @Override
     public void setChangedListener(@Nullable final GUIElementChangedListener changedListener) {
         this.changedListener = changedListener;
-    }
-
-    /**
-     * Called at the end of {@link #paintComponent(Graphics)}.
-     * @param g the graphics
-     */
-    protected void finishPaintComponent(@NotNull final Graphics g) {
-        if (activeComponent) {
-            g.setColor(Color.RED);
-            g.drawRect(0, 0, getWidth()-1, getHeight()-1);
-            g.drawString(name, 2, 16);
-        }
     }
 
 }

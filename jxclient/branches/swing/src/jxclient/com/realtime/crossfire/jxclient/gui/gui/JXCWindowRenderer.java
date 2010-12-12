@@ -44,7 +44,6 @@ import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.awt.image.BufferStrategy;
 import java.io.IOException;
 import java.io.Writer;
@@ -78,13 +77,19 @@ public class JXCWindowRenderer {
      * #frame}.
      */
     @NotNull
-    private final Container layeredPane = new JLayeredPane();
+    private final Container layeredPane = new JLayeredPane() {
+        @Override
+        public void paint(final Graphics g) {
+            super.paint(g);
+            mouseTracker.paintActiveComponent(g);
+        }
+    };
 
     /**
      * The {@link MouseTracker} instance.
      */
     @NotNull
-    private final MouseListener mouseTracker;
+    private final MouseTracker mouseTracker;
 
     /**
      * The semaphore used to synchronize map model updates and map view
@@ -383,7 +388,7 @@ public class JXCWindowRenderer {
      * @param debugScreen the writer to write screen debug to or
      * <code>null</code>
      */
-    public JXCWindowRenderer(@NotNull final MouseListener mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Writer debugScreen) {
+    public JXCWindowRenderer(@NotNull final MouseTracker mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Writer debugScreen) {
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
         this.debugScreen = debugScreen;

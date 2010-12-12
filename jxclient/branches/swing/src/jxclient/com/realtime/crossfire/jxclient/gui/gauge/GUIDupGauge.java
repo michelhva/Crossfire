@@ -141,7 +141,6 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
         }
         gaugeStateDiv.draw(g);
         gaugeStateMod.draw(g);
-        finishPaintComponent(g);
     }
 
     /**

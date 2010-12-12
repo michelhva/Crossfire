@@ -190,7 +190,6 @@ public class GUIDialogBackground extends AbstractGUIElement {
         g.drawImage(frameSW, 0, heightN+h, null);
         g.drawImage(frameS, widthW, heightN+h, widthW+w, heightN+h+heightS, 0, 0, w, heightS, null);
         g.drawImage(frameSE, widthW+w, heightN+h, null);
-        finishPaintComponent(g);
     }
 
     /**

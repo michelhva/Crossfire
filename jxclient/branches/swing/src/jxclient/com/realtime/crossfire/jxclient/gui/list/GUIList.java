@@ -32,7 +32,6 @@ import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import java.awt.Adjustable;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
@@ -177,15 +176,6 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         synchronized (getTreeLock()) {
             resizeElements(0);
         }
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void paintComponent(@NotNull final Graphics g) {
-        super.paintComponent(g);
-        finishPaintComponent(g);
     }
 
     /**

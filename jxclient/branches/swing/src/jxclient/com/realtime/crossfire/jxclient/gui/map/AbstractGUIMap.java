@@ -496,7 +496,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         synchronized (bufferedImageSync) {
             g.drawImage(bufferedImage, 0, 0, null);
         }
-        finishPaintComponent(g);
     }
 
     /**

@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
@@ -70,6 +71,12 @@ public class SkinLoader {
      */
     @NotNull
     private final CharacterModel characterModel;
+
+    /**
+     * The {@link MouseTracker} instance for this window.
+     */
+    @NotNull
+    private final MouseTracker mouseTracker;
 
     /**
      * The {@link CurrentSpellManager} instance for this window.
@@ -153,8 +160,9 @@ public class SkinLoader {
      * @param commands the commands to use
      * @param shortcuts the shortcuts to use
      * @param characterModel the character model to use
+     * @param mouseTracker the mouse tracker to use
      */
-    public SkinLoader(@NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts, @NotNull final CharacterModel characterModel) {
+    public SkinLoader(@NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts, @NotNull final CharacterModel characterModel, @NotNull final MouseTracker mouseTracker) {
         this.commandCallback = commandCallback;
         this.metaserverModel = metaserverModel;
         this.resolution = resolution;
@@ -168,6 +176,7 @@ public class SkinLoader {
         this.commands = commands;
         this.shortcuts = shortcuts;
         this.characterModel = characterModel;
+        this.mouseTracker = mouseTracker;
     }
 
     /**

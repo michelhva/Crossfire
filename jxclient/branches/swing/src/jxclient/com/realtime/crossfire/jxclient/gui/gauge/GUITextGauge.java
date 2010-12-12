@@ -96,7 +96,6 @@ public class GUITextGauge extends GUIGauge {
         final int x = (int)Math.round((getWidth()-rectangle.getWidth())/2);
         final int y = (int)Math.round(getHeight()-rectangle.getMaxY()-rectangle.getMinY())/2;
         g2.drawString(text, x, y);
-        finishPaintComponent(g);
     }
 
     /**

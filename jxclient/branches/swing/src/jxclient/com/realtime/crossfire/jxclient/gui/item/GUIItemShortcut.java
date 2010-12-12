@@ -315,7 +315,6 @@ public class GUIItemShortcut extends GUIItem {
         g.setFont(font);
         g.setColor(Color.YELLOW);
         g.drawString("F"+(index+1), 1, 1+font.getSize()); // XXX: define in skin
-        finishPaintComponent(g);
     }
 
     /**

@@ -30,10 +30,10 @@ import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Component;
-import java.awt.Container;
 import java.awt.event.KeyEvent;
 import java.util.Collection;
 import java.util.EnumSet;
+import javax.swing.JComponent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -44,7 +44,7 @@ import org.jetbrains.annotations.Nullable;
  * lower dialogs.
  * @author Andreas Kirschbaum
  */
-public class Gui extends Container {
+public class Gui extends JComponent {
 
     /**
      * The serial version UID.
