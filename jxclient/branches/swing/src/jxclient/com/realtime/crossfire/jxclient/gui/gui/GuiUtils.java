@@ -77,7 +77,7 @@ public class GuiUtils {
      * @param element the element
      * @return the element's absolute x coordinate
      */
-    public static int getElementX(@NotNull final AbstractGUIElement element) {
+    public static int getElementX(@NotNull final Component element) {
         final Component gui = getGui(element);
         int x = gui != null ? gui.getX() : 0;
         for (Component component = element; component != null && !(component instanceof Gui); component = component.getParent()) {
@@ -91,7 +91,7 @@ public class GuiUtils {
      * @param element the element
      * @return the element's absolute y coordinate
      */
-    public static int getElementY(@NotNull final AbstractGUIElement element) {
+    public static int getElementY(@NotNull final Component element) {
         final Component gui = getGui(element);
         int y = gui != null ? gui.getY() : 0;
         for (Component component = element; component != null && !(component instanceof Gui); component = component.getParent()) {
@@ -106,7 +106,7 @@ public class GuiUtils {
      * @return the gui or <code>null</code>
      */
     @Nullable
-    public static Gui getGui(@NotNull final AbstractGUIElement element) {
+    public static Gui getGui(@NotNull final Component element) {
         for (Component component = element; component != null; component = component.getParent()) {
             if (component instanceof Gui) {
                 return (Gui)component;
@@ -145,7 +145,7 @@ public class GuiUtils {
      * @param element the element
      * @return whether the element is active
      */
-    public static boolean isActive(@NotNull final AbstractGUIElement element) {
+    public static boolean isActive(@NotNull final Component element) {
         final Gui gui = getGui(element);
         return gui != null && gui.getActiveElement() == element;
     }
