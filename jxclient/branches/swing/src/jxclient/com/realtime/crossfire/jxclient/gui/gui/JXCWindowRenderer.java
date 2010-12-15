@@ -57,6 +57,7 @@ import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.JLayeredPane;
 import javax.swing.Timer;
+import javax.swing.event.MouseInputListener;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -129,6 +130,49 @@ public class JXCWindowRenderer {
      */
     @NotNull
     private final DisplayMode defaultDisplayMode;
+
+    /**
+     * A {@link MouseInputListener} that forwards to {@link #mouseTracker}.
+     */
+    @NotNull
+    private final MouseInputListener mouseInputListener = new MouseInputListener() {
+
+        @Override
+        public void mouseClicked(final MouseEvent e) {
+            // ignore
+        }
+
+        @Override
+        public void mousePressed(final MouseEvent e) {
+            mouseTracker.mousePressed(findElement(e), e);
+        }
+
+        @Override
+        public void mouseReleased(final MouseEvent e) {
+            mouseTracker.mouseReleased(findElement(e), e);
+        }
+
+        @Override
+        public void mouseEntered(final MouseEvent e) {
+            mouseTracker.mouseEntered(findElement(e), e);
+        }
+
+        @Override
+        public void mouseExited(final MouseEvent e) {
+            mouseTracker.mouseExited(e);
+        }
+
+        @Override
+        public void mouseDragged(final MouseEvent e) {
+            mouseTracker.mouseDragged(findElement(e), e);
+        }
+
+        @Override
+        public void mouseMoved(final MouseEvent e) {
+            mouseTracker.mouseMoved(findElement(e), e);
+        }
+
+    };
 
     /**
      * The current {@link BufferStrategy}. Set to <code>null</code> until {@link
@@ -1083,7 +1127,7 @@ public class JXCWindowRenderer {
                 dialog.validate();
                 dialog.setSize(dialog.getPreferredSize());
                 dialog.repaint();
-                mouseTracker.mouseEntered(mouseEvent);
+                mouseTracker.mouseEntered(findElement(mouseEvent), mouseEvent);
             } else {
                 openDialogs.add(dialog);
                 assert !dialog.isHidden(rendererGuiState);
@@ -1119,7 +1163,7 @@ public class JXCWindowRenderer {
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.remove(dialog);
                 removeFromLayeredPane(dialog);
-                mouseTracker.mouseEntered(mouseEvent);
+                mouseTracker.mouseEntered(findElement(mouseEvent), mouseEvent);
             } else {
                 openDialogs.remove(dialog);
                 removeFromLayeredPane(dialog);
@@ -1254,7 +1298,7 @@ public class JXCWindowRenderer {
      * @return the gui element found, or <code>null</code> if none was found
      */
     @Nullable
-    public AbstractGUIElement findElement(@NotNull final MouseEvent e) {
+    private AbstractGUIElement findElement(@NotNull final MouseEvent e) {
         AbstractGUIElement elected = null;
 
         final int eX = e.getX();
@@ -1336,8 +1380,8 @@ public class JXCWindowRenderer {
      * @param component the component to add to
      */
     private void addMouseTracker(@NotNull final Component component) {
-        component.addMouseListener(mouseTracker);
-        component.addMouseMotionListener(mouseTracker);
+        component.addMouseListener(mouseInputListener);
+        component.addMouseMotionListener(mouseInputListener);
     }
 
     /**
@@ -1345,8 +1389,8 @@ public class JXCWindowRenderer {
      * @param component the component to remove from
      */
     private void removeMouseTracker(@NotNull final Component component) {
-        component.removeMouseListener(mouseTracker);
-        component.removeMouseMotionListener(mouseTracker);
+        component.removeMouseListener(mouseInputListener);
+        component.removeMouseMotionListener(mouseInputListener);
     }
 
 }

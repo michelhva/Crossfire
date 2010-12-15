@@ -25,7 +25,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
-import javax.swing.event.MouseInputListener;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -37,7 +36,7 @@ import org.jetbrains.annotations.Nullable;
  * GUIElement.
  * @author Andreas Kirschbaum
  */
-public class MouseTracker implements MouseInputListener {
+public class MouseTracker {
 
     /**
      * Whether GUI elements should be highlighted.
@@ -84,12 +83,7 @@ public class MouseTracker implements MouseInputListener {
         return mouseElement;
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mouseDragged(@NotNull final MouseEvent e) {
-        final AbstractGUIElement element = mouseElement;
+    public void mouseDragged(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         if (element != null) {
             e.translatePoint(-GuiUtils.getElementX(element)-windowRenderer.getOffsetX(), -GuiUtils.getElementY(element)-windowRenderer.getOffsetY());
             element.mouseMoved(e);
@@ -97,44 +91,21 @@ public class MouseTracker implements MouseInputListener {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mouseMoved(@NotNull final MouseEvent e) {
-        final AbstractGUIElement element = windowRenderer.findElement(e);
+    public void mouseMoved(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         enterElement(element, e);
         if (mouseElement != null) {
             mouseElement.mouseMoved(e);
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mouseClicked(@NotNull final MouseEvent e) {
-        // ignore
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mousePressed(@NotNull final MouseEvent e) {
-        final AbstractGUIElement element = windowRenderer.findElement(e);
+    public void mousePressed(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         enterElement(element, e);
         if (mouseElement != null) {
             mouseElement.mousePressed(e);
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mouseReleased(@NotNull final MouseEvent e) {
-        final AbstractGUIElement element = windowRenderer.findElement(e);
+    public void mouseReleased(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         final boolean isClicked = element != null && mouseElement == element;
         enterElement(element, e);
         if (isClicked) {
@@ -148,19 +119,10 @@ public class MouseTracker implements MouseInputListener {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mouseEntered(@NotNull final MouseEvent e) {
-        final AbstractGUIElement element = windowRenderer.findElement(e);
+    public void mouseEntered(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         enterElement(element, e);
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void mouseExited(@NotNull final MouseEvent e) {
         enterElement(null, e);
     }
