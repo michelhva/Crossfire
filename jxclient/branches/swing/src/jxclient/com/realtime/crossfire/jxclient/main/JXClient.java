@@ -208,7 +208,7 @@ public class JXClient {
                                         commandCallback.init(guiManager, server);
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
                                         final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet, options.getTileSize());
-                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel, mouseTracker);
+                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel);
                                         new FacesTracker(guiStateManager, facesManager);
                                         new PlayerNameTracker(guiStateManager, connection, itemSet);
                                         new PickupTracker(guiStateManager, server, characterPickup);

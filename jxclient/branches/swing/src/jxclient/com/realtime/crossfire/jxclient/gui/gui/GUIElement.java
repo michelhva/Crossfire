@@ -163,8 +163,4 @@ public interface GUIElement {
      */
     void setChangedListener(@Nullable GUIElementChangedListener changedListener);
 
-    int getWidth();
-
-    int getHeight();
-
 }
