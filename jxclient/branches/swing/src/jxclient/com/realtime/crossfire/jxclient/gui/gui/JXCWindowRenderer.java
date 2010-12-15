@@ -56,6 +56,7 @@ import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.JLayeredPane;
+import javax.swing.JViewport;
 import javax.swing.Timer;
 import javax.swing.event.MouseInputListener;
 import org.jetbrains.annotations.NotNull;
@@ -144,17 +145,17 @@ public class JXCWindowRenderer {
 
         @Override
         public void mousePressed(final MouseEvent e) {
-            mouseTracker.mousePressed(findElement(e), e);
+            mouseTracker.mousePressed(findElement(e.getComponent(), e), e);
         }
 
         @Override
         public void mouseReleased(final MouseEvent e) {
-            mouseTracker.mouseReleased(findElement(e), e);
+            mouseTracker.mouseReleased(findElement(e.getComponent(), e), e);
         }
 
         @Override
         public void mouseEntered(final MouseEvent e) {
-            mouseTracker.mouseEntered(findElement(e), e);
+            mouseTracker.mouseEntered(findElement(e.getComponent(), e), e);
         }
 
         @Override
@@ -164,12 +165,12 @@ public class JXCWindowRenderer {
 
         @Override
         public void mouseDragged(final MouseEvent e) {
-            mouseTracker.mouseDragged(findElement(e), e);
+            mouseTracker.mouseDragged(findElement(e.getComponent(), e), e);
         }
 
         @Override
         public void mouseMoved(final MouseEvent e) {
-            mouseTracker.mouseMoved(findElement(e), e);
+            mouseTracker.mouseMoved(findElement(e.getComponent(), e), e);
         }
 
     };
@@ -539,6 +540,7 @@ public class JXCWindowRenderer {
         setResolutionPost(frame, dimension);
         this.frame = frame;
         addMouseTracker(frame);
+        addMouseTrackerRecursively(frame);
         return true;
     }
 
@@ -611,6 +613,7 @@ public class JXCWindowRenderer {
         setResolutionPost(frame, dimension);
         this.frame = frame;
         addMouseTracker(frame);
+        addMouseTrackerRecursively(frame);
     }
 
     /**
@@ -767,6 +770,8 @@ public class JXCWindowRenderer {
             setWindowMode(frame, null, minResolution, false);
             assert frame != null;
             removeMouseTracker(frame);
+            assert frame != null;
+            removeMouseTrackerRecursively(frame);
             frame = null;
         }
     }
@@ -982,22 +987,6 @@ public class JXCWindowRenderer {
         }
 
         return tooltip != null && tooltip.isChanged();
-    }
-
-    /**
-     * Returns the x-offset of the visible window.
-     * @return the x-offset of the visible window
-     */
-    public int getOffsetX() {
-        return offsetX;
-    }
-
-    /**
-     * Returns the y-offset of the visible window.
-     * @return the y-offset of the visible window
-     */
-    public int getOffsetY() {
-        return offsetY;
     }
 
     /**
@@ -1291,6 +1280,27 @@ public class JXCWindowRenderer {
     }
 
     /**
+     * Finds the gui element a given {@link Component} is part of.
+     * @param component the component to search
+     * @param mouseEvent the mouse event to update
+     * @return the gui element found or <code>null</code> if none was found
+     */
+    @Nullable
+    private static AbstractGUIElement findElement(@NotNull final Component component, @NotNull final MouseEvent mouseEvent) {
+        for (Component result = component; result != null; result = result.getParent()) {
+            if (result instanceof AbstractGUIElement) {
+                return (AbstractGUIElement)result;
+            }
+            if (result instanceof JViewport) {
+                final JViewport viewport = (JViewport)result;
+                final Point position = viewport.getViewPosition();
+                mouseEvent.translatePoint(-position.x, -position.y);
+            }
+        }
+        return null;
+    }
+
+    /**
      * Finds the gui element for a given {@link MouseEvent}. If a gui element
      * was found, update the event mouse coordinates to be relative to the gui
      * element.
@@ -1299,10 +1309,11 @@ public class JXCWindowRenderer {
      */
     @Nullable
     private AbstractGUIElement findElement(@NotNull final MouseEvent e) {
+        final MouseEvent ce = e;//convertEvent(e);
         AbstractGUIElement elected = null;
 
-        final int eX = e.getX();
-        final int eY = e.getY();
+        final int eX = ce.getX();
+        final int eY = ce.getY();
         for (final Gui dialog : getOpenDialogs()) {
             if (!dialog.isHidden(rendererGuiState)) {
                 elected = manageMouseEvents(dialog, eX-dialog.getX(), eY-dialog.getY());
@@ -1318,10 +1329,6 @@ public class JXCWindowRenderer {
         if (elected == null) {
             assert currentGui != null;
             elected = manageMouseEvents(currentGui, eX, eY);
-        }
-
-        if (elected != null) {
-            e.translatePoint(-GuiUtils.getElementX(elected)-offsetX, -GuiUtils.getElementY(elected)-offsetY);
         }
 
         return elected;
@@ -1357,22 +1364,24 @@ public class JXCWindowRenderer {
 
     /**
      * Adds a component to {@link #layeredPane}.
-     * @param dialog the component
+     * @param component the component
      * @param layer the layer to add to
      * @param index the index within the layer to add to
      */
-    private void addToLayeredPane(@NotNull final Component dialog, final int layer, final int index) {
-        layeredPane.add(dialog, layer, index);
+    private void addToLayeredPane(@NotNull final Component component, final int layer, final int index) {
+        layeredPane.add(component, layer, index);
         layeredPane.validate();
+        addMouseTrackerRecursively(component);
     }
 
     /**
      * Removes a component from {@link #layeredPane}.
-     * @param dialog the component
+     * @param component the component
      */
-    private void removeFromLayeredPane(@NotNull final Component dialog) {
-        layeredPane.remove(dialog);
+    private void removeFromLayeredPane(@NotNull final Component component) {
+        layeredPane.remove(component);
         layeredPane.validate();
+        removeMouseTrackerRecursively(component);
     }
 
     /**
@@ -1391,6 +1400,42 @@ public class JXCWindowRenderer {
     private void removeMouseTracker(@NotNull final Component component) {
         component.removeMouseListener(mouseInputListener);
         component.removeMouseMotionListener(mouseInputListener);
+    }
+
+    /**
+     * Adds {@link #mouseTracker} recursively to all children of a {@link
+     * Component}.
+     * @param component the component to add to
+     */
+    private void addMouseTrackerRecursively(@NotNull final Component component) {
+        //if (component instanceof JList) {
+        addMouseTracker(component);
+        //}
+
+        if (component instanceof Container) {
+            final Container container = (Container)component;
+            for (int i = 0; i < container.getComponentCount(); i++) {
+                addMouseTrackerRecursively(container.getComponent(i));
+            }
+        }
+    }
+
+    /**
+     * Removes {@link #mouseTracker} recursively from all children of a {@link
+     * Component}.
+     * @param component the component to add to
+     */
+    private void removeMouseTrackerRecursively(@NotNull final Component component) {
+        //if (component instanceof JList) {
+        removeMouseTracker(component);
+        //}
+
+        if (component instanceof Container) {
+            final Container container = (Container)component;
+            for (int i = 0; i < container.getComponentCount(); i++) {
+                removeMouseTrackerRecursively(container.getComponent(i));
+            }
+        }
     }
 
 }
