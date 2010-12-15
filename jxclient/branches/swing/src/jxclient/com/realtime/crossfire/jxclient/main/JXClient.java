@@ -172,7 +172,6 @@ public class JXClient {
 
                                 final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui());
                                 final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, semaphoreRedraw, server, debugScreenOutputStreamWriter);
-                                mouseTracker.init(windowRenderer);
                                 new MusicWatcher(server, soundManager);
                                 new SoundWatcher(server, soundManager);
                                 new StatsWatcher(stats, windowRenderer, server, soundManager);

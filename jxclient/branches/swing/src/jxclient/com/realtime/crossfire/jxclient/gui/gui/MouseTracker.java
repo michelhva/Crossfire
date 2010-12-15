@@ -44,16 +44,10 @@ public class MouseTracker {
     private final boolean debugGui;
 
     /**
-     * The renderer to access dialogs/gui elements.
-     */
-    /*XXX:@NotNull*/
-    private JXCWindowRenderer windowRenderer = null;
-
-    /**
      * The gui element in which the mouse is.
      */
     @Nullable
-    private AbstractGUIElement mouseElement = null;
+    private GUIElement mouseElement = null;
 
     /**
      * The active component.
@@ -69,23 +63,8 @@ public class MouseTracker {
         this.debugGui = debugGui;
     }
 
-    @Deprecated
-    public void init(@NotNull final JXCWindowRenderer windowRenderer) {
-        this.windowRenderer = windowRenderer;
-    }
-
-    /**
-     * Returns the gui element in which the mouse is.
-     * @return the gui element in which the mouse is
-     */
-    @Nullable
-    public GUIElement getMouseElement() {
-        return mouseElement;
-    }
-
-    public void mouseDragged(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
+    public void mouseDragged(@Nullable final GUIElement element, @NotNull final MouseEvent e) {
         if (element != null) {
-            e.translatePoint(-GuiUtils.getElementX(element)-windowRenderer.getOffsetX(), -GuiUtils.getElementY(element)-windowRenderer.getOffsetY());
             element.mouseMoved(e);
             element.mouseDragged(e);
         }
