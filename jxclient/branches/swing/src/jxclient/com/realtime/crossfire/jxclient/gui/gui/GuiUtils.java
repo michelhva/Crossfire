@@ -26,7 +26,6 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.GraphicsEnvironment;
-import java.awt.event.MouseEvent;
 import java.awt.font.FontRenderContext;
 import java.awt.font.TextLayout;
 import java.awt.geom.RectangularShape;
@@ -116,19 +115,6 @@ public class GuiUtils {
     }
 
     /**
-     * Returns whether this element includes a given point.
-     * @param element the element
-     * @param x the point's x coordinate
-     * @param y the point's y coordinate
-     * @return whether this element includes the point
-     */
-    public static boolean isElementAtPoint(@NotNull final AbstractGUIElement element, final int x, final int y) {
-        final int elementX = getElementX(element);
-        final int elementY = getElementY(element);
-        return !element.isIgnore() && elementX <= x && x < elementX+element.getWidth() && elementY <= y && y < elementY+element.getHeight();
-    }
-
-    /**
      * Sets the active state of a GUI element.
      * @param element the element
      * @param active the active state
@@ -148,15 +134,6 @@ public class GuiUtils {
     public static boolean isActive(@NotNull final Component element) {
         final Gui gui = getGui(element);
         return gui != null && gui.getActiveElement() == element;
-    }
-
-    /**
-     * Will be called when the user has pressed the mouse inside a GUI element.
-     * @param element the element
-     * @param e the mouse event relative to this element
-     */
-    public static void mousePressed(@NotNull final ActivatableGUIElement element, @NotNull final MouseEvent e) {
-        setActive(element, true);
     }
 
 }
