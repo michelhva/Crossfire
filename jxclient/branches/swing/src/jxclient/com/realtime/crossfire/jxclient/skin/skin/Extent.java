@@ -76,10 +76,10 @@ public class Extent {
      * @param h thr height
      */
     public Extent(final int x, final int y, final int w, final int h) {
-        this.x = new Expression(x, 0, 0);
-        this.y = new Expression(y, 0, 0);
-        this.w = new Expression(w, 0, 0);
-        this.h = new Expression(h, 0, 0);
+        this.x = new Expression(x, 0, 0, 0, 0);
+        this.y = new Expression(y, 0, 0, 0, 0);
+        this.w = new Expression(w, 0, 0, 0, 0);
+        this.h = new Expression(h, 0, 0, 0, 0);
     }
 
     /**
@@ -106,40 +106,48 @@ public class Extent {
      * Returns the x coordinate.
      * @param width the screen width
      * @param height the screen height
+     * @param prefWidth the preferred dialog width
+     * @param prefHeight the preferred dialog height
      * @return the x coordinate
      */
-    public int getX(final int width, final int height) {
-        return x.evaluate(width, height);
+    public int getX(final int width, final int height, final int prefWidth, final int prefHeight) {
+        return x.evaluate(width, height, prefWidth, prefHeight);
     }
 
     /**
      * Returns the y coordinate.
      * @param width the screen width
      * @param height the screen height
+     * @param prefWidth the preferred dialog width
+     * @param prefHeight the preferred dialog height
      * @return the y coordinate
      */
-    public int getY(final int width, final int height) {
-        return y.evaluate(width, height);
+    public int getY(final int width, final int height, final int prefWidth, final int prefHeight) {
+        return y.evaluate(width, height, prefWidth, prefHeight);
     }
 
     /**
      * Returns the width.
      * @param width the screen width
      * @param height the screen height
+     * @param prefWidth the preferred dialog width
+     * @param prefHeight the preferred dialog height
      * @return the width
      */
-    public int getW(final int width, final int height) {
-        return w.evaluate(width, height);
+    public int getW(final int width, final int height, final int prefWidth, final int prefHeight) {
+        return w.evaluate(width, height, prefWidth, prefHeight);
     }
 
     /**
      * Returns the height.
      * @param width the screen width
      * @param height the screen height
+     * @param prefWidth the preferred dialog width
+     * @param prefHeight the preferred dialog height
      * @return the height
      */
-    public int getH(final int width, final int height) {
-        return h.evaluate(width, height);
+    public int getH(final int width, final int height, final int prefWidth, final int prefHeight) {
+        return h.evaluate(width, height, prefWidth, prefHeight);
     }
 
     /**

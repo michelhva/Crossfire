@@ -869,7 +869,6 @@ public class JXCWindowRenderer {
             return false;
         }
 
-        dialog.setStateChanged(true);
         if (!openDialogsRemove(dialog)) {
             dialog.activateDefaultElement();
             dialog.setGuiAutoCloseListener(autoCloseOnDeactivate ? guiAutoCloseListener : null);
@@ -995,7 +994,6 @@ public class JXCWindowRenderer {
      */
     public void closeDialog(@NotNull final Gui dialog) {
         if (openDialogsRemove(dialog)) {
-            dialog.setStateChanged(true);
             final ActivatableGUIElement activeElement = dialog.getActiveElement();
             if (activeElement != null) {
                 GuiUtils.setActive(activeElement, false);
@@ -1015,7 +1013,6 @@ public class JXCWindowRenderer {
         }
 
         openDialogsChanged = true;
-        dialog.setStateChanged(true);
 
         if (openDialogsRemove(dialog)) {
             final ActivatableGUIElement activeElement = dialog.getActiveElement();

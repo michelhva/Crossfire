@@ -108,7 +108,7 @@ public class DialogStateParser {
                                 throw new IOException("no such dialog: "+tmp[1], ex);
                             }
 
-                            if (dialog.getAutoSize() == null) {
+                            if (dialog.getAutoSize() == null && dialog.isSaveDialog()) {
                                 final int x;
                                 final int y;
                                 final int w;
@@ -136,8 +136,6 @@ public class DialogStateParser {
                             } else {
                                 windowRenderer.closeDialog(dialog);
                             }
-
-                            dialog.setStateChanged(false);
                         }
                     } finally {
                         br.close();
@@ -161,10 +159,6 @@ public class DialogStateParser {
      * @param windowRenderer the window renderer instance to attach to
      */
     public static void save(@NotNull final JXCSkin skin, @NotNull final JXCWindowRenderer windowRenderer) {
-        if (!skin.hasChangedDialog()) {
-            return;
-        }
-
         final File dialogsFile;
         try {
             dialogsFile = Filenames.getDialogsFile(skin.getSkinName());
@@ -192,15 +186,12 @@ public class DialogStateParser {
                     try {
                         for (final Gui dialog : openDialogs) {
                             saveDialog(dialog, "open", bw);
-                            assert !dialog.isChangedFromDefault();
                         }
 
                         for (final Gui dialog : skin) {
                             if (!windowRenderer.isDialogOpen(dialog)) {
                                 saveDialog(dialog, "close", bw);
                             }
-
-                            assert !dialog.isChangedFromDefault();
                         }
                     } finally {
                         bw.close();
@@ -214,8 +205,6 @@ public class DialogStateParser {
         } catch (final IOException ex) {
             System.err.println(dialogsFile+": "+ex.getMessage());
         }
-
-        assert !skin.hasChangedDialog();
     }
 
     /**
@@ -226,8 +215,11 @@ public class DialogStateParser {
      * @throws IOException If an I/O error occurs.
      */
     private static void saveDialog(@NotNull final Gui dialog, @NotNull final String type, @NotNull final Writer bw) throws IOException {
-        final String dialogName = dialog.getName();
-        if (dialogName == null) {
+        if (dialog.getAutoSize() != null) {
+            return;
+        }
+
+        if (!dialog.isSaveDialog()) {
             return;
         }
 
@@ -243,7 +235,7 @@ public class DialogStateParser {
 
         bw.write(type);
         bw.write(" ");
-        bw.write(dialogName);
+        bw.write(dialog.getName());
         bw.write(" ");
         bw.write(Integer.toString(dialog.getX()));
         bw.write(" ");
@@ -253,8 +245,6 @@ public class DialogStateParser {
         bw.write(" ");
         bw.write(Integer.toString(dialog.getHeight()));
         bw.write("\n");
-
-        dialog.setStateChanged(false);
     }
 
 }

@@ -48,10 +48,24 @@ public class ExpressionParser {
     private static final String HEIGHT = "HEIGHT";
 
     /**
+     * The identifier evaluating to the preferred width in pixels of the current
+     * dialog.
+     */
+    @NotNull
+    private static final String PREF_WIDTH = "PREF_WIDTH";
+
+    /**
+     * The identifier evaluating to the preferred height in pixels of the
+     * current dialog.
+     */
+    @NotNull
+    private static final String PREF_HEIGHT = "PREF_HEIGHT";
+
+    /**
      * Pattern to parse integer constants.
      */
     @NotNull
-    private static final Pattern PATTERN_EXPR = Pattern.compile("([0-9]+|"+WIDTH+"|"+HEIGHT+"|"+WIDTH+"/2|"+HEIGHT+"/2)([-+])(.+)");
+    private static final Pattern PATTERN_EXPR = Pattern.compile("([0-9]+|"+WIDTH+"|"+HEIGHT+"|"+WIDTH+"/2|"+HEIGHT+"/2|"+PREF_WIDTH+"|"+PREF_HEIGHT+"|"+PREF_WIDTH+"/2|"+PREF_HEIGHT+"/2)([-+])(.+)");
 
     /**
      * Private constructor to prevent instantiation.
@@ -98,8 +112,8 @@ public class ExpressionParser {
 
                 matcher = PATTERN_EXPR.matcher(rest);
                 if (!matcher.matches()) {
-                    final int valueRest = Integer.parseInt(rest);
-                    value = new Expression(value, false, new Expression(negative ? -valueRest : valueRest, 0, 0));
+                    final Expression expressionRest = parseIntegerConstant(rest);
+                    value = new Expression(value, negative, expressionRest);
                     break;
                 }
 
@@ -122,22 +136,38 @@ public class ExpressionParser {
     @NotNull
     private static Expression parseIntegerConstant(@NotNull final String str) {
         try {
-            return new Expression(Integer.parseInt(str), 0, 0);
+            return new Expression(Integer.parseInt(str), 0, 0, 0, 0);
         } catch (final NumberFormatException ex) {
             if (str.equals(WIDTH)) {
-                return new Expression(0, 2, 0);
+                return new Expression(0, 2, 0, 0, 0);
             }
 
             if (str.equals(HEIGHT)) {
-                return new Expression(0, 0, 2);
+                return new Expression(0, 0, 2, 0, 0);
             }
 
             if (str.equals(WIDTH+"/2")) {
-                return new Expression(0, 1, 0);
+                return new Expression(0, 1, 0, 0, 0);
             }
 
             if (str.equals(HEIGHT+"/2")) {
-                return new Expression(0, 0, 1);
+                return new Expression(0, 0, 1, 0, 0);
+            }
+
+            if (str.equals(PREF_WIDTH)) {
+                return new Expression(0, 0, 0, 2, 0);
+            }
+
+            if (str.equals(PREF_HEIGHT)) {
+                return new Expression(0, 0, 0, 0, 2);
+            }
+
+            if (str.equals(PREF_WIDTH+"/2")) {
+                return new Expression(0, 0, 0, 1, 0);
+            }
+
+            if (str.equals(PREF_HEIGHT+"/2")) {
+                return new Expression(0, 0, 0, 0, 1);
             }
 
             throw ex;

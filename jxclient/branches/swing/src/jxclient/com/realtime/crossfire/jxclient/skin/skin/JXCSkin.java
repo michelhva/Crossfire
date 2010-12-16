@@ -170,12 +170,6 @@ public interface JXCSkin extends Iterable<Gui> {
     CommandList getCommandList(@NotNull String name) throws JXCSkinException;
 
     /**
-     * Returns whether the dialog state should be saved.
-     * @return whether the dialog state should be saved
-     */
-    boolean hasChangedDialog();
-
-    /**
      * Returns the default key bindings for this skin.
      * @return the default key bindings
      */
