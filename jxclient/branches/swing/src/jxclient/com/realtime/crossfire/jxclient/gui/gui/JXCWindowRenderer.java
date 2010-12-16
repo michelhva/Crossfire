@@ -1405,10 +1405,7 @@ public class JXCWindowRenderer {
      * @param component the component to add to
      */
     private void addMouseTrackerRecursively(@NotNull final Component component) {
-        //if (component instanceof JList) {
         addMouseTracker(component);
-        //}
-
         if (component instanceof Container) {
             final Container container = (Container)component;
             for (int i = 0; i < container.getComponentCount(); i++) {
@@ -1423,10 +1420,7 @@ public class JXCWindowRenderer {
      * @param component the component to add to
      */
     private void removeMouseTrackerRecursively(@NotNull final Component component) {
-        //if (component instanceof JList) {
         removeMouseTracker(component);
-        //}
-
         if (component instanceof Container) {
             final Container container = (Container)component;
             for (int i = 0; i < container.getComponentCount(); i++) {
