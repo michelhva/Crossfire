@@ -1212,7 +1212,7 @@ public class JXCSkinLoader {
      * Returns an unreferenced GUI element by name.
      * @param name the gui element's name
      * @param unreferencedElements the unreferenced gui elements
-     * @return the named uneferenced gui element or <code>null</code>
+     * @return the named unreferenced gui element or <code>null</code>
      */
     @Nullable
     private Component getUnreferencedElement(@NotNull final String name, @NotNull final Collection<GUIElement> unreferencedElements) {
