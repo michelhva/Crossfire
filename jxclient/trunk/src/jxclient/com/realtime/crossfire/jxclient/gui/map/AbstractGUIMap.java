@@ -173,23 +173,27 @@ public abstract class AbstractGUIMap extends GUIElement {
          */
         @Override
         public void mapChanged(@NotNull final CfMap map, @NotNull final Set<CfMapSquare> changedSquares) {
-            final int x0 = map.getOffsetX();
-            final int y0 = map.getOffsetY();
+            assert !Thread.holdsLock(map);
             synchronized (bufferedImageSync) {
-                final Graphics g = createBufferGraphics();
-                try {
-                    for (final CfMapSquare mapSquare : changedSquares) {
-                        final int x = mapSquare.getX()+x0;
-                        if (displayMinX <= x && x < displayMaxX) {
-                            final int y = mapSquare.getY()+y0;
-                            if (displayMinY <= y && y < displayMaxY) {
-                                redrawSquare(g, mapSquare, x, y);
+                //noinspection SynchronizationOnLocalVariableOrMethodParameter,NestedSynchronizedStatement
+                synchronized (map) {
+                    final int x0 = map.getOffsetX();
+                    final int y0 = map.getOffsetY();
+                    final Graphics g = createBufferGraphics();
+                    try {
+                        for (final CfMapSquare mapSquare : changedSquares) {
+                            final int x = mapSquare.getX()+x0;
+                            if (displayMinX <= x && x < displayMaxX) {
+                                final int y = mapSquare.getY()+y0;
+                                if (displayMinY <= y && y < displayMaxY) {
+                                    redrawSquare(g, mapSquare, x, y);
+                                }
                             }
                         }
+                        markPlayer(g, 0, 0);
+                    } finally {
+                        g.dispose();
                     }
-                    markPlayer(g, 0, 0);
-                } finally {
-                    g.dispose();
                 }
             }
             setChanged();
@@ -333,12 +337,15 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param y1 the bottom edge to redraw (exclusive)
      */
     private void redrawTiles(@NotNull final Graphics g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1) {
-        for (int x = x0; x < x1; x++) {
-            for (int y = y0; y < y1; y++) {
-                final int mapSquareX = x-offsetX/tileSize;
-                final int mapSquareY = y-offsetY/tileSize;
-                final CfMapSquare mapSquare = map.getMapSquare(mapSquareX, mapSquareY);
-                redrawSquare(g, mapSquare, mapSquareX, mapSquareY);
+        //noinspection SynchronizationOnLocalVariableOrMethodParameter
+        synchronized (map) {
+            for (int x = x0; x < x1; x++) {
+                for (int y = y0; y < y1; y++) {
+                    final int mapSquareX = x-offsetX/tileSize;
+                    final int mapSquareY = y-offsetY/tileSize;
+                    final CfMapSquare mapSquare = map.getMapSquare(mapSquareX, mapSquareY);
+                    redrawSquare(g, mapSquare, mapSquareX, mapSquareY);
+                }
             }
         }
     }
@@ -564,30 +571,33 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     private void updateScrolledMap(@NotNull final Graphics g, final int dx, final int dy) {
         final CfMap map = mapUpdater.getMap();
-        if (Math.abs(dx)*tileSize >= getWidth() || Math.abs(dy)*tileSize >= getHeight()) {
-            redrawAllUnlessDirty(g, map);
-        } else {
-            final int x = dx > 0 ? dx : 0;
-            final int w = dx > 0 ? -dx : dx;
-            final int y = dy > 0 ? dy : 0;
-            final int h = dy > 0 ? -dy : dy;
-            g.copyArea(x*tileSize, y*tileSize, getWidth()+w*tileSize, getHeight()+h*tileSize, -dx*tileSize, -dy*tileSize);
+        //noinspection SynchronizationOnLocalVariableOrMethodParameter
+        synchronized (map) {
+            if (Math.abs(dx)*tileSize >= getWidth() || Math.abs(dy)*tileSize >= getHeight()) {
+                redrawAllUnlessDirty(g, map);
+            } else {
+                final int x = dx > 0 ? dx : 0;
+                final int w = dx > 0 ? -dx : dx;
+                final int y = dy > 0 ? dy : 0;
+                final int h = dy > 0 ? -dy : dy;
+                g.copyArea(x*tileSize, y*tileSize, getWidth()+w*tileSize, getHeight()+h*tileSize, -dx*tileSize, -dy*tileSize);
 
-            if (dx > 0) {
-                final int ww = (displayMaxOffsetX == 0 ? 0 : 1)+dx;
-                redrawTilesUnlessDirty(g, map, displayMaxX-ww, displayMinY, displayMaxX, displayMaxY);
-            } else if (dx < 0) {
-                final int ww = (displayMinOffsetX == 0 ? 0 : 1)-dx;
-                redrawTilesUnlessDirty(g, map, displayMinX, displayMinY, displayMinX+ww, displayMaxY);
+                if (dx > 0) {
+                    final int ww = (displayMaxOffsetX == 0 ? 0 : 1)+dx;
+                    redrawTilesUnlessDirty(g, map, displayMaxX-ww, displayMinY, displayMaxX, displayMaxY);
+                } else if (dx < 0) {
+                    final int ww = (displayMinOffsetX == 0 ? 0 : 1)-dx;
+                    redrawTilesUnlessDirty(g, map, displayMinX, displayMinY, displayMinX+ww, displayMaxY);
+                }
+                if (dy > 0) {
+                    final int hh = (displayMaxOffsetY == 0 ? 0 : 1)+dy;
+                    redrawTilesUnlessDirty(g, map, displayMinX, displayMaxY-hh, displayMaxX, displayMaxY);
+                } else if (dy < 0) {
+                    final int hh = (displayMinOffsetY == 0 ? 0 : 1)-dy;
+                    redrawTilesUnlessDirty(g, map, displayMinX, displayMinY, displayMaxX, displayMinY+hh);
+                }
+                markPlayer(g, dx, dy);
             }
-            if (dy > 0) {
-                final int hh = (displayMaxOffsetY == 0 ? 0 : 1)+dy;
-                redrawTilesUnlessDirty(g, map, displayMinX, displayMaxY-hh, displayMaxX, displayMaxY);
-            } else if (dy < 0) {
-                final int hh = (displayMinOffsetY == 0 ? 0 : 1)-dy;
-                redrawTilesUnlessDirty(g, map, displayMinX, displayMinY, displayMaxX, displayMinY+hh);
-            }
-            markPlayer(g, dx, dy);
         }
     }
 

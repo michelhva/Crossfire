@@ -34,6 +34,8 @@ import org.jetbrains.annotations.Nullable;
  * <p/>
  * The map will be automatically enlarged by accesses to new squares. Not yet
  * set squares are considered dark.
+ * <p/>
+ * All accesses must be synchronized on the map instance.
  * @author Andreas Kirschbaum
  */
 public class CfMap {
@@ -119,6 +121,7 @@ public class CfMap {
      * @param darkness the darkness value to set; 0=dark, 255=full bright
      */
     public void setDarkness(final int x, final int y, final int darkness) {
+        assert Thread.holdsLock(this);
         if (expandTo(x, y).setDarkness(ox, oy, darkness)) {
             for (int l = 0; l < Map2.NUM_LAYERS; l++) {
                 setFaceInternal(x, y, l, CfMapSquare.DEFAULT_FACE);
@@ -134,6 +137,7 @@ public class CfMap {
      *         yet set faces return 0
      */
     public int getDarkness(final int x, final int y) {
+        assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null ? mapPatch.getDarkness(ox, oy) : CfMapSquare.DEFAULT_DARKNESS;
     }
@@ -145,6 +149,7 @@ public class CfMap {
      * @param color the color to set
      */
     public void setColor(final int x, final int y, final int color) {
+        assert Thread.holdsLock(this);
         if (expandTo(x, y).setColor(ox, oy, color)) {
             for (int l = 0; l < Map2.NUM_LAYERS; l++) {
                 setFaceInternal(x, y, l, CfMapSquare.DEFAULT_FACE);
@@ -159,6 +164,7 @@ public class CfMap {
      * @return the color
      */
     public int getColor(final int x, final int y) {
+        assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null ? mapPatch.getColor(ox, oy) : CfMapSquare.DEFAULT_COLOR;
     }
@@ -172,6 +178,7 @@ public class CfMap {
      * @param face the face to set; may be <code>null</code> to remove the face
      */
     public void setFace(final int x, final int y, final int layer, @Nullable final Face face) {
+        assert Thread.holdsLock(this);
         if (expandTo(x, y).resetFogOfWar(ox, oy)) {
             setDarkness(x, y, CfMapSquare.DEFAULT_DARKNESS);
             for (int l = 0; l < Map2.NUM_LAYERS; l++) {
@@ -262,6 +269,7 @@ public class CfMap {
      */
     @Nullable
     public Face getFace(final int x, final int y, final int layer) {
+        assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null ? mapPatch.getFace(ox, oy, layer) : CfMapSquare.DEFAULT_FACE;
     }
@@ -291,6 +299,7 @@ public class CfMap {
      */
     @Nullable
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer) {
+        assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null ? mapPatch.getHeadMapSquare(ox, oy, layer) : null;
     }
@@ -302,6 +311,7 @@ public class CfMap {
      * @param y the y-coordinate of the square
      */
     public void clearSquare(final int x, final int y) {
+        assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = expandTo(x, y);
         mapPatch.clearSquare(ox, oy);
         for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
@@ -318,6 +328,7 @@ public class CfMap {
      * @param y the y-coordinate of the square
      */
     public void dirty(final int x, final int y) {
+        assert Thread.holdsLock(this);
         expandTo(x, y).dirty(ox, oy);
     }
 
@@ -328,6 +339,7 @@ public class CfMap {
      * @return whether the tile contains fog-of-war data
      */
     public boolean isFogOfWar(final int x, final int y) {
+        assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null && mapPatch.isFogOfWar(ox, oy);
     }
@@ -378,6 +390,7 @@ public class CfMap {
      * @param dy the y-difference to scroll
      */
     public void scroll(final int dx, final int dy) {
+        assert Thread.holdsLock(this);
         if (dx == 0 && dy == 0) {
             return;
         }
@@ -576,6 +589,7 @@ public class CfMap {
      */
     @NotNull
     public CfMapSquare getMapSquare(final int x, final int y) {
+        assert Thread.holdsLock(this);
         return expandTo(x, y).getSquare(ox, oy);
     }
 
@@ -587,6 +601,7 @@ public class CfMap {
      */
     @Nullable
     public CfMapSquare getMapSquareUnlessDirty(final int x, final int y) {
+        assert Thread.holdsLock(this);
         final CfMapSquare mapSquare = getMapSquare(x, y);
         return isDirty(mapSquare) ? null : mapSquare;
     }
@@ -596,6 +611,7 @@ public class CfMap {
      * @return the x offset
      */
     public int getOffsetX() {
+        assert Thread.holdsLock(this);
         return patchX;
     }
 
@@ -605,6 +621,7 @@ public class CfMap {
      * @return the y offset
      */
     public int getOffsetY() {
+        assert Thread.holdsLock(this);
         return patchY;
     }
 
@@ -635,6 +652,7 @@ public class CfMap {
      * @param mapSquare the map square
      */
     public void squareModified(@NotNull final CfMapSquare mapSquare) {
+        assert Thread.holdsLock(this);
         dirtyMapSquares.add(mapSquare);
     }
 
@@ -644,6 +662,7 @@ public class CfMap {
      * @return whether this square needs redraw
      */
     public boolean isDirty(@NotNull final CfMapSquare mapSquare) {
+        assert Thread.holdsLock(this);
         return dirtyMapSquares.contains(mapSquare);
     }
 
@@ -653,6 +672,7 @@ public class CfMap {
      */
     @NotNull
     public Set<CfMapSquare> getDirtyMapSquares() {
+        assert Thread.holdsLock(this);
         final Set<CfMapSquare> result = new HashSet<CfMapSquare>(dirtyMapSquares);
         dirtyMapSquares.clear();
         return result;

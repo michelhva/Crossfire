@@ -360,30 +360,33 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      * @param y the cell's y-coordinate relative to the view area
      */
     private void commandSentMap(@NotNull final CfMap map, final int x, final int y) {
-        final CfMapSquare square = map.getMapSquare(x, y);
         final StringBuilder sb = new StringBuilder("request map ");
-        sb.append(x);
-        sb.append(' ');
-        sb.append(y);
-        sb.append(' ');
-        sb.append(square.getDarkness());
-        sb.append(" n y n "); // XXX: smoothing
-        sb.append(square.isFogOfWar() ? 'y' : 'n');
-        sb.append(" smooth 0 0 0 heads"); // XXX: smoothing
-        for (int i = 0; i < 3; i++) {
+        //noinspection SynchronizationOnLocalVariableOrMethodParameter
+        synchronized (map) {
+            final CfMapSquare square = map.getMapSquare(x, y);
+            sb.append(x);
             sb.append(' ');
-            final Face face = square.getFace(i);
-            sb.append(face == CfMapSquare.DEFAULT_FACE ? 0 : face.getFaceNum());
-        }
-        sb.append(" tails");
-        for (int i = 0; i < 3; i++) {
-            final CfMapSquare headSquare = square.getHeadMapSquare(i);
-            if (headSquare == null) {
-                sb.append(" 0");
-            } else {
+            sb.append(y);
+            sb.append(' ');
+            sb.append(square.getDarkness());
+            sb.append(" n y n "); // XXX: smoothing
+            sb.append(square.isFogOfWar() ? 'y' : 'n');
+            sb.append(" smooth 0 0 0 heads"); // XXX: smoothing
+            for (int i = 0; i < 3; i++) {
                 sb.append(' ');
-                final Face face = headSquare.getFace(i);
+                final Face face = square.getFace(i);
                 sb.append(face == CfMapSquare.DEFAULT_FACE ? 0 : face.getFaceNum());
+            }
+            sb.append(" tails");
+            for (int i = 0; i < 3; i++) {
+                final CfMapSquare headSquare = square.getHeadMapSquare(i);
+                if (headSquare == null) {
+                    sb.append(" 0");
+                } else {
+                    sb.append(' ');
+                    final Face face = headSquare.getFace(i);
+                    sb.append(face == CfMapSquare.DEFAULT_FACE ? 0 : face.getFaceNum());
+                }
             }
         }
         commandSent(sb.toString());
