@@ -23,6 +23,8 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
+import java.util.HashSet;
+import java.util.Set;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -35,12 +37,6 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class CfMap {
-
-    /**
-     * The {@link CfMapSquareListener} instance to notify.
-     */
-    @NotNull
-    private final CfMapSquareListener mapSquareListener;
 
     /**
      * The left edge of the defined tiles.
@@ -111,12 +107,10 @@ public class CfMap {
     private CfMapPatch[][] patch = null;
 
     /**
-     * Creates a new (empty) map.
-     * @param mapSquareListener the map square listener instance to notify
+     * The "dirty" map squares that have been modified.
      */
-    public CfMap(@NotNull final CfMapSquareListener mapSquareListener) {
-        this.mapSquareListener = mapSquareListener;
-    }
+    @NotNull
+    private final Set<CfMapSquare> dirtyMapSquares = new HashSet<CfMapSquare>();
 
     /**
      * Sets the darkness value of one square.
@@ -372,7 +366,7 @@ public class CfMap {
             return mapPatch;
         }
 
-        patch[px][py] = new CfMapPatch(mapSquareListener, x-patchX-ox, y-patchY-oy);
+        patch[px][py] = new CfMapPatch(this, x-patchX-ox, y-patchY-oy);
         assert patch != null;
         assert patch[px] != null;
         return patch[px][py];
@@ -586,6 +580,17 @@ public class CfMap {
     }
 
     /**
+     * Returns a map square.
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     * @return the map square or <code>null</code> if it would be dirty
+     */
+    @Nullable
+    public CfMapSquare getMapSquareUnlessDirty(final int x, final int y) {
+        final CfMapSquare mapSquare = getMapSquare(x, y);
+        return isDirty(mapSquare) ? null : mapSquare;
+    }
+    /**
      * Returns the offset to convert an absolute x-coordinate of a map square
      * ({@link CfMapSquare#getX()} to a relative x-coordinate.
      * @return the x offset
@@ -623,6 +628,34 @@ public class CfMap {
             }
         }
         return newPatch;
+    }
+
+    /**
+     * Marks a {@link CfMapSquare} as dirty.
+     * @param mapSquare the map square
+     */
+    public void squareModified(@NotNull final CfMapSquare mapSquare) {
+        dirtyMapSquares.add(mapSquare);
+    }
+
+    /**
+     * Returns whether a {@link CfMapSquare} is dirty.
+     * @param mapSquare the map square
+     * @return whether this square needs redraw
+     */
+    public boolean isDirty(@NotNull final CfMapSquare mapSquare) {
+        return dirtyMapSquares.contains(mapSquare);
+    }
+
+    /**
+     * Returns the dirty map squares. The result may be modified by the caller.
+     * @return the dirty map squares
+     */
+    @NotNull
+    public Set<CfMapSquare> getDirtyMapSquares() {
+        final Set<CfMapSquare> result = new HashSet<CfMapSquare>(dirtyMapSquares);
+        dirtyMapSquares.clear();
+        return result;
     }
 
 }
