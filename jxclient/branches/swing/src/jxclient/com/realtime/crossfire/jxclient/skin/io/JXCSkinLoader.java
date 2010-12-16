@@ -428,7 +428,6 @@ public class JXCSkinLoader {
                     }
                     final Gui gui = skin.getDialog(name);
                     load(skinSource, name, crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
-                    gui.setStateChanged(false);
                 }
             } finally {
                 definedFonts.clear();
@@ -912,26 +911,25 @@ public class JXCSkinLoader {
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDialog(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr, @NotNull final Component gui, @NotNull final String dialogName) throws IOException, JXCSkinException {
+    private void parseDialog(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr, @NotNull final Gui gui, @NotNull final String dialogName) throws IOException, JXCSkinException {
         if (dialogFactory == null) {
             throw new IOException("missing 'def dialog' command");
         }
 
-        final Expression xExpression = ExpressionParser.parseExpression(args.get());
-        final Expression yExpression = ExpressionParser.parseExpression(args.get());
+        final Expression defaultX = ExpressionParser.parseExpression(args.get());
+        final Expression defaultY = ExpressionParser.parseExpression(args.get());
         final boolean saveDialog = NumberParser.parseBoolean(args.get());
         final String title = ParseUtils.parseText(args, lnr);
-        final int x = xExpression.evaluate(1024, 768)/*XXX*/;
-        final int y = yExpression.evaluate(1024, 768)/*XXX*/;
         assert dialogFactory != null;
         final Iterable<AbstractGUIElement> elements = dialogFactory.newDialog(tooltipManager, windowRenderer, elementListener, title);
         for (final AbstractGUIElement element : elements) {
             insertGuiElement(element);
         }
+        gui.setName(dialogName);
+        gui.setDefaultPosition(defaultX, defaultY);
         if (saveDialog) {
-            gui.setName(dialogName);
+            gui.setSaveDialog();
         }
-        //XXX:gui.setPosition(x, y);
     }
 
     /**

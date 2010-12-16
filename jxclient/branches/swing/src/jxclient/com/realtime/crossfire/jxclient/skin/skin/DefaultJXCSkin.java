@@ -420,14 +420,6 @@ public class DefaultJXCSkin implements JXCSkin {
     /**
      * {@inheritDoc}
      */
-    @Override
-    public boolean hasChangedDialog() {
-        return dialogs.hasChangedDialog();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public KeyBindings getDefaultKeyBindings() {

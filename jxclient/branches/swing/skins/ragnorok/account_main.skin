@@ -1,4 +1,4 @@
-dialog WIDTH/2 HEIGHT/2 true Account management
+dialog WIDTH/2 HEIGHT/2 false Account management
 dialog_hide START META PLAYING NEWCHAR LOGIN
 
 commandlist command_account_create AND null DIALOG_OPEN account_create

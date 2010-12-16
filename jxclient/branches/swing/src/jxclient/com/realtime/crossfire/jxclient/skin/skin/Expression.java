@@ -45,15 +45,29 @@ public class Expression {
     private final int heightFactor;
 
     /**
+     * The preferred width dependent factor.
+     */
+    private final int prefWidthFactor;
+
+    /**
+     * The preferred height dependent factor.
+     */
+    private final int prefHeightFactor;
+
+    /**
      * Creates a new instance.
      * @param constant the constant term
      * @param widthFactor the screen width dependent factor
      * @param heightFactor the screen height dependent factor
+     * @param prefWidthFactor the preferred width dependent factor
+     * @param prefHeightFactor the preferred height dependent factor
      */
-    public Expression(final int constant, final int widthFactor, final int heightFactor) {
+    public Expression(final int constant, final int widthFactor, final int heightFactor, final int prefWidthFactor, final int prefHeightFactor) {
         this.constant = constant;
         this.widthFactor = widthFactor;
         this.heightFactor = heightFactor;
+        this.prefWidthFactor = prefWidthFactor;
+        this.prefHeightFactor = prefHeightFactor;
     }
 
     /**
@@ -64,19 +78,24 @@ public class Expression {
      * @param expression2 the right expression
      */
     public Expression(@NotNull final Expression expression1, final boolean negative, @NotNull final Expression expression2) {
-        constant = expression1.constant+expression2.constant*(negative ? -1 : 1);
-        widthFactor = expression1.widthFactor+expression2.widthFactor*(negative ? -1 : 1);
-        heightFactor = expression1.heightFactor+expression2.heightFactor*(negative ? -1 : 1);
+        final int factor = negative ? -1 : 1;
+        constant = expression1.constant+expression2.constant*factor;
+        widthFactor = expression1.widthFactor+expression2.widthFactor*factor;
+        heightFactor = expression1.heightFactor+expression2.heightFactor*factor;
+        prefWidthFactor = expression1.prefWidthFactor+expression2.prefWidthFactor*factor;
+        prefHeightFactor = expression1.prefHeightFactor+expression2.prefHeightFactor*factor;
     }
 
     /**
      * Evaluates the expression into a constant.
      * @param width the screen width
      * @param height the screen height
+     * @param prefWidth the preferred width dependent factor
+     * @param prefHeight the preferred height dependent factor
      * @return the constant
      */
-    public int evaluate(final int width, final int height) {
-        return constant+applyFactor(width, widthFactor)+applyFactor(height, heightFactor);
+    public int evaluate(final int width, final int height, final int prefWidth, final int prefHeight) {
+        return constant+applyFactor(width, widthFactor)+applyFactor(height, heightFactor)+applyFactor(prefWidth, prefWidthFactor)+applyFactor(prefHeight, prefHeightFactor);
     }
 
     /**
@@ -108,7 +127,7 @@ public class Expression {
      */
     @NotNull
     public Expression addConstant(final int value) {
-        return new Expression(constant+value, widthFactor, heightFactor);
+        return new Expression(constant+value, widthFactor, heightFactor, prefWidthFactor, prefHeightFactor);
     }
 
 }

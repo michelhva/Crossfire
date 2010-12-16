@@ -1,4 +1,4 @@
-dialog 504 186 true Inventory
+dialog WIDTH/2 HEIGHT/2 true Inventory
 dialog_hide START META LOGIN NEWCHAR ACCOUNT
 button dialog_close close_up close_down false command_inventory_close
 

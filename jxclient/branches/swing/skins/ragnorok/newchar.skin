@@ -1,4 +1,4 @@
-dialog WIDTH/2 HEIGHT-354 true Create New Character
+dialog WIDTH/2 HEIGHT/2-PREF_HEIGHT-100 false Create New Character
 dialog_hide START META LOGIN PLAYING ACCOUNT
 
 label_stat stat_title     font_label BLACK TITLE LEFT

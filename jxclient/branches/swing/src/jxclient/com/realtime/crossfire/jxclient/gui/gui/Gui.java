@@ -28,8 +28,10 @@ import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
+import com.realtime.crossfire.jxclient.skin.skin.Expression;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.event.KeyEvent;
 import java.util.Collection;
 import java.util.EnumSet;
@@ -63,6 +65,11 @@ public class Gui extends JComponent {
      */
     @Nullable
     private Extent autoSize = null;
+
+    /**
+     * Whether this dialog retains its position across restarts.
+     */
+    private boolean saveDialog = false;
 
     /**
      * Whether this dialog is modal. Modal dialogs consume all key presses.
@@ -100,16 +107,25 @@ public class Gui extends JComponent {
     private boolean initialPositionSet = false;
 
     /**
-     * Whether the state (position or size) has changed.
-     */
-    private boolean stateChanged = false;
-
-    /**
      * If set, the auto-close listener to notify if this dialog looses the
      * active gui element.
      */
     @Nullable
     private GuiAutoCloseListener guiAutoCloseListener = null;
+
+    /**
+     * The default x-coordinate for this dialog. Set to <code>null</code> for
+     * default.
+     */
+    @Nullable
+    private Expression defaultX = null;
+
+    /**
+     * The default y-coordinate for this dialog. Set to <code>null</code> for
+     * default.
+     */
+    @Nullable
+    private Expression defaultY = null;
 
     /**
      * Creates a new instance.
@@ -135,7 +151,6 @@ public class Gui extends JComponent {
         super.setBounds(x, y, width, height);
         validate();
         hasChangedElements = true;
-        stateChanged = true;
     }
 
     /**
@@ -155,7 +170,6 @@ public class Gui extends JComponent {
         initialPositionSet = true;
         setLocation(x, y);
         hasChangedElements = true;
-        stateChanged = true;
     }
 
     /**
@@ -551,14 +565,6 @@ public class Gui extends JComponent {
     }
 
     /**
-     * Sets whether the state (position or size) has changed.
-     * @param stateChanged whether the state has changed
-     */
-    public void setStateChanged(final boolean stateChanged) {
-        this.stateChanged = stateChanged;
-    }
-
-    /**
      * Enables or disables hidden text in the first input field.
      * @param hideInput if set, hide input; else show input
      */
@@ -577,14 +583,6 @@ public class Gui extends JComponent {
      */
     public boolean isWithinDrawingArea(final int x, final int y) {
         return getX() <= x && x < getX()+getWidth() && getY() <= y && y < getY()+getHeight();
-    }
-
-    /**
-     * Returns whether this dialog has changed from its default state.
-     * @return whether the state has changed
-     */
-    public boolean isChangedFromDefault() {
-        return getName() != null && getWidth() > 0 && getHeight() > 0 && stateChanged;
     }
 
     /**
@@ -614,10 +612,52 @@ public class Gui extends JComponent {
     public void autoSize(final int screenWidth, final int screenHeight) {
         final Extent extent = autoSize;
         if (extent != null) {
-            setBounds(extent.getX(screenWidth, screenHeight), extent.getY(screenWidth, screenHeight), extent.getW(screenWidth, screenHeight), extent.getH(screenWidth, screenHeight));
+            final Dimension preferredSize = getPreferredSize();
+            setBounds(extent.getX(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getY(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getW(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getH(screenWidth, screenHeight, preferredSize.width, preferredSize.height));
         } else if (!initialPositionSet) {
-            setPosition(0, 0);
+            final Dimension preferredSize = getPreferredSize();
+            final int x;
+            if (defaultX == null) {
+                x = (screenWidth-preferredSize.width)/2;
+            } else {
+                x = defaultX.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
+            }
+            final int y;
+            if (defaultY == null) {
+                y = (screenHeight-preferredSize.height)/2;
+            } else {
+                y = defaultY.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
+            }
+            if (getWidth() == 0 || getHeight() == 0) {
+                setSize(preferredSize.width, preferredSize.height);
+            }
+            setPosition(x-preferredSize.width/2, y-preferredSize.height/2);
         }
+    }
+
+    /**
+     * Sets the default position for this dialog.
+     * @param defaultX the default x-coordinate
+     * @param defaultY the default y-coordinate
+     */
+    public void setDefaultPosition(@NotNull final Expression defaultX, @NotNull final Expression defaultY) {
+        this.defaultX = defaultX;
+        this.defaultY = defaultY;
+    }
+
+    /**
+     * Returns whether this dialog retains its position across restarts.
+     * @return whether this dialog retains its position across restarts
+     */
+    public boolean isSaveDialog() {
+        return saveDialog;
+    }
+
+    /**
+     * Makes this dialog retain its position across restarts.
+     */
+    public void setSaveDialog() {
+        saveDialog = true;
     }
 
 }
