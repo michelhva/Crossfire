@@ -49,16 +49,16 @@ public class CfMapPatch {
 
     /**
      * Creates a new (empty) patch.
-     * @param mapSquareListener the map square listener to notify
+     * @param map the map this map patch is part of
      * @param x0 the absolute map x-coordinate of the top left corner of this
      * patch
      * @param y0 the absolute map y-coordinate of the top left corner of this
      * patch
      */
-    public CfMapPatch(@NotNull final CfMapSquareListener mapSquareListener, final int x0, final int y0) {
+    public CfMapPatch(@NotNull final CfMap map, final int x0, final int y0) {
         for (int y = 0; y < SIZE; y++) {
             for (int x = 0; x < SIZE; x++) {
-                square[x][y] = new CfMapSquare(mapSquareListener, x0+x, y0+y);
+                square[x][y] = new CfMapSquare(map, x0+x, y0+y);
             }
         }
     }

@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
-import com.realtime.crossfire.jxclient.map.CfMapSquareListener;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
@@ -117,13 +116,6 @@ public class CfMapUpdater {
     private final Collection<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
 
     /**
-     * Collects the changed map squares between calls to {@link
-     * #processMapBegin()} and {@link #processMapEnd(boolean)}.
-     */
-    @NotNull
-    private final Set<CfMapSquare> squares = new HashSet<CfMapSquare>();
-
-    /**
      * The animations in the visible map area.
      */
     @NotNull
@@ -134,32 +126,6 @@ public class CfMapUpdater {
      */
     @NotNull
     private final Collection<Location> outOfViewMultiFaces = new HashSet<Location>();
-
-    /**
-     * The map square listener attached to {@link #map}.
-     */
-    @NotNull
-    private final CfMapSquareListener mapSquareListener = new CfMapSquareListener() {
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void squareModified(@NotNull final CfMapSquare mapSquare) {
-            synchronized (squares) {
-                squares.add(mapSquare);
-            }
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public boolean isSquareModified(@NotNull final CfMapSquare mapSquare) {
-            return squares.contains(mapSquare);
-        }
-
-    };
 
     /**
      * The listener to detect updated faces.
@@ -351,7 +317,7 @@ public class CfMapUpdater {
         this.facesManager = facesManager;
         animations = new Animations(null);
         facesManager.addFacesManagerListener(facesManagerListener);
-        map = new CfMap(mapSquareListener);
+        map = new CfMap();
         visibleAnimations = new CfMapAnimations(this);
     }
 
@@ -365,7 +331,7 @@ public class CfMapUpdater {
         this.facesManager = facesManager;
         animations = new Animations(guiStateManager);
         facesManager.addFacesManagerListener(facesManagerListener);
-        map = new CfMap(mapSquareListener);
+        map = new CfMap();
         visibleAnimations = new CfMapAnimations(crossfireServerConnection, this);
         crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
         guiStateManager.addGuiStateListener(guiStateListener);
@@ -552,6 +518,7 @@ public class CfMapUpdater {
      */
     public void processMapEnd(final boolean alwaysProcess) {
         synchronized (sync) {
+            final Set<CfMapSquare> squares = map.getDirtyMapSquares();
             if (!alwaysProcess && squares.isEmpty()) {
                 return;
             }
@@ -559,7 +526,6 @@ public class CfMapUpdater {
             for (final MapListener listener : mapListeners) {
                 listener.mapChanged(map, squares);
             }
-            squares.clear();
         }
     }
 
@@ -676,7 +642,7 @@ public class CfMapUpdater {
             final boolean changed = this.width != width || this.height != height;
             this.width = width;
             this.height = height;
-            map = new CfMap(mapSquareListener);
+            map = new CfMap();
 
             // force dirty flags to be set for the visible map region
             map.clearSquare(0, 0);
