@@ -21,9 +21,11 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.Buffer;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
+import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.util.Resolution;
@@ -42,6 +44,7 @@ import java.awt.Toolkit;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferStrategy;
@@ -863,11 +866,6 @@ public class JXCWindowRenderer {
         currentGuiChanged = true;
     }
 
-    @NotNull
-    public Gui getCurrentGui() {
-        return currentGui;
-    }
-
     /**
      * Checks whether any gui element has changed and needs a redraw.
      * @return whether any gui element has changed
@@ -1105,6 +1103,56 @@ public class JXCWindowRenderer {
     private static Buffer getActiveMessageBuffer(@NotNull final Gui gui) {
         final GUILog buffer = gui.getFirstElement(GUIMessageLog.class);
         return buffer == null ? null : buffer.getBuffer();
+    }
+
+    /**
+     * Selects a server entry.
+     * @param serverName the server name to select
+     */
+    public void setSelectedHostname(@NotNull final String serverName) {
+        final GUIMetaElementList metaElementList = currentGui.getFirstElement(GUIMetaElementList.class);
+        if (metaElementList != null) {
+            metaElementList.setSelectedHostname(serverName);
+        }
+    }
+
+    /**
+     * Activates the command input text field. If more than one input field
+     * exists, the first matching one is selected.
+     * @return the command input text field or <code>null</code> if no command
+     *         input text field exists
+     */
+    @Nullable
+    public GUIText activateCommandInput() {
+        // check main gui
+        final GUIText textArea1 = currentGui.activateCommandInput();
+        if (textArea1 != null) {
+            return textArea1;
+        }
+
+        // check visible dialogs
+        for (final Gui dialog : getOpenDialogs()) {
+            if (!dialog.isHidden(rendererGuiState)) {
+                final GUIText textArea2 = dialog.activateCommandInput();
+                if (textArea2 != null) {
+                    openDialog(dialog, false); // raise dialog
+                    return textArea2;
+                }
+            }
+            if (dialog.isModal()) {
+                return null;
+            }
+        }
+
+        return null;
+    }
+
+    public boolean handleKeyPress(@NotNull final KeyEvent e) {
+        return currentGui.handleKeyPress(e);
+    }
+
+    public boolean handleKeyTyped(@NotNull final KeyEvent e) {
+        return currentGui.handleKeyTyped(e);
     }
 
     /**

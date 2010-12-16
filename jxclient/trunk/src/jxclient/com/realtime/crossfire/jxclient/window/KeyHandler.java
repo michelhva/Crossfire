@@ -171,8 +171,8 @@ public class KeyHandler {
             }
         }
 
-        if (windowRenderer.getCurrentGui().handleKeyPress(e)) {
-            debugKeyboardWrite("keyPressed: main gui "+windowRenderer.getCurrentGui()+" consumed key");
+        if (windowRenderer.handleKeyPress(e)) {
+            debugKeyboardWrite("keyPressed: main gui consumed key");
             return;
         }
 
@@ -301,8 +301,8 @@ public class KeyHandler {
             }
         }
 
-        if (windowRenderer.getCurrentGui().handleKeyTyped(e)) {
-            debugKeyboardWrite("keyTyped: main gui "+windowRenderer.getCurrentGui()+" consumed key");
+        if (windowRenderer.handleKeyTyped(e)) {
+            debugKeyboardWrite("keyTyped: main gui consumed key");
             return;
         }
 
