@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.map;
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import java.awt.Color;
@@ -115,7 +116,11 @@ public class GUIMiniMap extends AbstractGUIMap {
             final int playerOffsetY = (getMapHeight()-1)/2;
             final int mapSquareX = playerOffsetX-dx;
             final int mapSquareY = playerOffsetY-dy;
-            redrawSquare(g, mapUpdater.getMap().getMapSquare(mapSquareX, mapSquareY), mapSquareX, mapSquareY);
+            final CfMap map = mapUpdater.getMap();
+            //noinspection SynchronizationOnLocalVariableOrMethodParameter
+            synchronized (map) {
+                redrawSquare(g, map.getMapSquare(mapSquareX, mapSquareY), mapSquareX, mapSquareY);
+            }
         }
         g.setColor(Color.RED);
         g.fillRect(getPlayerX(), getPlayerY(), tileSize, tileSize);

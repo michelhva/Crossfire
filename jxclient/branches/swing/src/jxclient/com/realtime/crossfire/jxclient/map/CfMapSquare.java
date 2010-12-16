@@ -60,10 +60,10 @@ public class CfMapSquare {
     public static final Face DEFAULT_FACE = null;
 
     /**
-     * The {@link CfMapSquareListener} instance to notify.
+     * The {@link CfMap} this map square is part of.
      */
     @NotNull
-    private final CfMapSquareListener mapSquareListener;
+    private final CfMap map;
 
     /**
      * The absolute x-coordinate of this square in its {@link CfMap}.
@@ -109,14 +109,14 @@ public class CfMapSquare {
 
     /**
      * Creates a new (empty) square.
-     * @param mapSquareListener the map square listener to notify
+     * @param map the map this map square is part of
      * @param x the absolute map x-coordinate of the top left corner of this
      * patch
      * @param y the absolute map y-coordinate of the top left corner of this
      * patch
      */
-    public CfMapSquare(@NotNull final CfMapSquareListener mapSquareListener, final int x, final int y) {
-        this.mapSquareListener = mapSquareListener;
+    public CfMapSquare(@NotNull final CfMap map, final int x, final int y) {
+        this.map = map;
         this.x = x;
         this.y = y;
     }
@@ -141,15 +141,7 @@ public class CfMapSquare {
      * Marks this square as dirty, i.e., needing redraw.
      */
     public void dirty() {
-        mapSquareListener.squareModified(this);
-    }
-
-    /**
-     * Returns whether this square is dirty.
-     * @return whether this square needs redraw
-     */
-    public boolean isDirty() {
-        return mapSquareListener.isSquareModified(this);
+        map.squareModified(this);
     }
 
     /**

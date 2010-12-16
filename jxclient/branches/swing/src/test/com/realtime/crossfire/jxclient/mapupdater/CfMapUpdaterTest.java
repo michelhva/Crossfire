@@ -717,46 +717,49 @@ public class CfMapUpdaterTest extends TestCase {
     @NotNull
     private static String toString(@NotNull final CfMap map, final int x0, final int y0, final int w, final int h) {
         final StringBuilder sb = new StringBuilder();
-        for (int y = y0; y < y0+h; y++) {
-            for (int x = x0; x < x0+w; x++) {
-                sb.append('[');
+        //noinspection SynchronizationOnLocalVariableOrMethodParameter
+        synchronized (map) {
+            for (int y = y0; y < y0+h; y++) {
+                for (int x = x0; x < x0+w; x++) {
+                    sb.append('[');
 
-                boolean firstFace = true;
+                    boolean firstFace = true;
 
-                if (map.isFogOfWar(x, y)) {
-                    sb.append('#');
-                    firstFace = false;
-                }
-
-                for (int l = 0; l < Map2.NUM_LAYERS; l++) {
-                    final Face face = map.getFace(x, y, l);
-                    if (face != null) {
-                        if (!firstFace) {
-                            sb.append(',');
-                        }
-                        sb.append('H');
-                        sb.append(l);
-                        sb.append('=');
-                        sb.append(face.getFaceName());
+                    if (map.isFogOfWar(x, y)) {
+                        sb.append('#');
                         firstFace = false;
                     }
 
-                    final CfMapSquare headMapSquare = map.getHeadMapSquare(x, y, l);
-                    if (headMapSquare != null) {
-                        final Face headFace = headMapSquare.getFace(l);
-                        if (!firstFace) {
-                            sb.append(',');
+                    for (int l = 0; l < Map2.NUM_LAYERS; l++) {
+                        final Face face = map.getFace(x, y, l);
+                        if (face != null) {
+                            if (!firstFace) {
+                                sb.append(',');
+                            }
+                            sb.append('H');
+                            sb.append(l);
+                            sb.append('=');
+                            sb.append(face.getFaceName());
+                            firstFace = false;
                         }
-                        sb.append('T');
-                        sb.append(l);
-                        sb.append('=');
-                        sb.append(headFace == null ? "null" : headFace.getFaceName());
-                        firstFace = false;
+
+                        final CfMapSquare headMapSquare = map.getHeadMapSquare(x, y, l);
+                        if (headMapSquare != null) {
+                            final Face headFace = headMapSquare.getFace(l);
+                            if (!firstFace) {
+                                sb.append(',');
+                            }
+                            sb.append('T');
+                            sb.append(l);
+                            sb.append('=');
+                            sb.append(headFace == null ? "null" : headFace.getFaceName());
+                            firstFace = false;
+                        }
                     }
+                    sb.append(']');
                 }
-                sb.append(']');
+                sb.append('\n');
             }
-            sb.append('\n');
         }
         return sb.toString();
     }
