@@ -42,6 +42,9 @@
 
 2010-11-14  Andreas Kirschbaum
 
+	* Fix missing text in help, quit, disconnect, keybind, and connect
+	dialogs.
+
 	* Fix possible AssertionError due to race condition.
 
 2010-11-14  Nicolas Weeger

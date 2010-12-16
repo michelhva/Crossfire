@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
-import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
@@ -646,10 +645,7 @@ public class GuiManager {
     private void activateMetaserverGui() {
         final String serverName = settings.getString("server", "crossfire.metalforge.net");
         if (serverName.length() > 0) {
-            final GUIMetaElementList metaElementList = windowRenderer.getCurrentGui().getFirstElement(GUIMetaElementList.class);
-            if (metaElementList != null) {
-                metaElementList.setSelectedHostname(serverName);
-            }
+            windowRenderer.setSelectedHostname(serverName);
         }
     }
 
@@ -704,24 +700,10 @@ public class GuiManager {
      */
     @Nullable
     private GUIText activateCommandInput() {
-        // check main gui
-        final GUIText textArea1 = windowRenderer.getCurrentGui().activateCommandInput();
+        // check visible dialogs
+        final GUIText textArea1 = windowRenderer.activateCommandInput();
         if (textArea1 != null) {
             return textArea1;
-        }
-
-        // check visible dialogs
-        for (final Gui dialog : windowRenderer.getOpenDialogs()) {
-            if (!dialog.isHidden(windowRenderer.getGuiState())) {
-                final GUIText textArea2 = dialog.activateCommandInput();
-                if (textArea2 != null) {
-                    openDialog(dialog, false); // raise dialog
-                    return textArea2;
-                }
-            }
-            if (dialog.isModal()) {
-                return null;
-            }
         }
 
         // check invisible dialogs
