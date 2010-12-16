@@ -79,6 +79,7 @@ public class GUIMultiLineLabel extends GUILabel {
      */
     public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
         super(tooltipManager, elementListener, name, extent, picture, text, font, color, backgroundColor, alignment);
+        lines = LINE_SEPARATOR_PATTERN.split(getText(), -1);
     }
 
     /**
