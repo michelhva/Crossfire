@@ -440,7 +440,7 @@ public class JXCWindow {
                 final int width = frame.getContentPane().getWidth();
                 final int height = frame.getContentPane().getHeight();
                 windowRenderer.updateWindowSize(width, height);
-                guiManager.updateWindowSize(new Dimension(width, height));
+                guiManager.updateWindowSize(width, height);
                 frame.invalidate();
                 frame.validate();
                 frame.getContentPane().invalidate();
@@ -527,7 +527,7 @@ public class JXCWindow {
         }
 
         guiManager.setSkin(skin);
-        guiManager.updateWindowSize(frame.getSize());
+        guiManager.updateWindowSize(frame.getWidth(), frame.getHeight());
         DialogStateParser.load(skin, windowRenderer);
     }
 

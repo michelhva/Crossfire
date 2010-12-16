@@ -902,12 +902,13 @@ public class GuiManager {
 
     /**
      * Sets a new window size.
-     * @param size the new window size
+     * @param width the new window width
+     * @param height the new window height
      */
-    public void updateWindowSize(@NotNull final Dimension size) {
+    public void updateWindowSize(final int width, final int height) {
         if (skin != null) {
-            skin.setScreenSize(size.width, size.height);
-            tooltipManager.setScreenSize(size.width, size.height);
+            skin.setScreenSize(width, height);
+            tooltipManager.setScreenSize(width, height);
             updateServerSettings();
         }
     }
