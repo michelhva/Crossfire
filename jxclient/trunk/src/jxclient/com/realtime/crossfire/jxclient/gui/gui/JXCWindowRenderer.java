@@ -1059,7 +1059,7 @@ public class JXCWindowRenderer {
      * @return whether the command input text field has been deactivated
      */
     public boolean deactivateCommandInput() {
-        for (final Gui dialog : getOpenDialogs()) {
+        for (final Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
                 if (dialog.deactivateCommandInput()) {
                     return true;
@@ -1079,7 +1079,7 @@ public class JXCWindowRenderer {
      */
     @Nullable
     public Buffer getActiveMessageBuffer() {
-        for (final Gui dialog : getOpenDialogs()) {
+        for (final Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
                 final Buffer buffer = getActiveMessageBuffer(dialog);
                 if (buffer != null) {
@@ -1131,7 +1131,7 @@ public class JXCWindowRenderer {
         }
 
         // check visible dialogs
-        for (final Gui dialog : getOpenDialogs()) {
+        for (final Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
                 final GUIText textArea2 = dialog.activateCommandInput();
                 if (textArea2 != null) {
@@ -1229,7 +1229,7 @@ public class JXCWindowRenderer {
     public GUIElement findElement(@NotNull final MouseEvent e) {
         GUIElement elected = null;
 
-        for (final Gui dialog : getOpenDialogs()) {
+        for (final Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
                 elected = manageMouseEvents(dialog, e);
                 if (elected != null) {
