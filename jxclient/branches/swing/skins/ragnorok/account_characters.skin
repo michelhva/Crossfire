@@ -29,7 +29,11 @@ key code PAGE_UP   0 exec command_accountlist_pageup
 key code PAGE_DOWN 0 exec command_accountlist_pagedown
 
 horizontal begin par
-  characters
+  begin seq
+    gap 8
+    characters
+    gap 8
+  end
   begin seq
     gap
     account_do_login
@@ -42,7 +46,9 @@ horizontal begin par
 end
 
 vertical begin seq
+  gap 8
   characters
+  gap 8
   begin par
     account_do_login
     account_do_link

@@ -135,7 +135,7 @@ horizontal begin par
     gap 8
   end
   begin seq
-    gap
+    gap 0 10000 10000
     begin par
       begin seq
         gap
@@ -154,7 +154,7 @@ horizontal begin par
       grbar_back
       grbar
     end
-    gap
+    gap 0 10000 10000
   end
   playfield
 end
@@ -202,9 +202,10 @@ vertical begin par
       button_pickup
       button_setup
     end
+    gap
   end
   begin seq
-    gap
+    gap 0 0
     begin par
       lowfood
       poisoned
@@ -221,9 +222,8 @@ vertical begin par
       grbar_back
       grbar
     end
-# XXX: must be one map tile, not constant 64x64
-    gap 64
-    gap
+    gap 140
+    gap 0 0
   end
-  playfield
+  playfield 0 100
 end

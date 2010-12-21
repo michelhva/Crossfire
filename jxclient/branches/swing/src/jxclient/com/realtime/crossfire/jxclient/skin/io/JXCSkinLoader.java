@@ -74,6 +74,7 @@ import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.label.Type;
 import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
+import com.realtime.crossfire.jxclient.gui.list.GUIFloorList;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
@@ -637,8 +638,6 @@ public class JXCSkinLoader {
                             parseSetInvisible(args);
                         } else if (gui != null && cmd.equals("set_modal")) {
                             parseSetModal(gui);
-                        } else if (cmd.equals("set_num_look_objects")) {
-                            parseSetNumLookObjects(args);
                         } else if (gui != null && cmd.equals("scrollbar")) {
                             parseScrollbar(args, tooltipManager, elementListener);
                         } else if (gui == null && cmd.equals("skin_name")) {
@@ -1119,18 +1118,15 @@ public class JXCSkinLoader {
 
         assert defaultItemPainter != null;
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-        final GUIItemItemFactory itemFactory;
+        final AbstractGUIElement element;
         if (inventoryList) {
-            itemFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
+            final GUIItemItemFactory itemFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
+            element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, inventoryView, selectedItem, itemFactory);
         } else {
-            itemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
+            final GUIItemItemFactory itemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
+            element = new GUIFloorList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, floorView, selectedItem, itemFactory);
         }
-        final GUIItemList element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, inventoryList ? inventoryView : floorView, selectedItem, itemFactory);
         insertGuiElement(element);
-
-        if (!inventoryList) {
-            skin.addFloorList(element);
-        }
     }
 
     /**
@@ -1619,10 +1615,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size "+defaultTileSize);
         }
-        final GUIMap element = new GUIMap(tooltipManager, elementListener, name, mapUpdater, facesProvider, server);
-        insertGuiElement(element);
-
-        skin.addMap(element);
+        insertGuiElement(new GUIMap(tooltipManager, elementListener, name, mapUpdater, facesProvider, server));
     }
 
     /**
@@ -1761,15 +1754,6 @@ public class JXCSkinLoader {
      */
     private static void parseSetModal(@NotNull final Gui gui) {
         gui.setModal(true);
-    }
-
-    /**
-     * Parses a "set_num_look_objects" command.
-     * @param args the command arguments
-     * @throws IOException if the command cannot be parsed
-     */
-    private void parseSetNumLookObjects(@NotNull final Args args) throws IOException {
-        skin.setNumLookObjects(ExpressionParser.parseInt(args.get()));
     }
 
     /**
@@ -2089,15 +2073,20 @@ public class JXCSkinLoader {
             }
             if (cmd.equals("begin")) {
                 group.addGroup(parseBegin(args, layout, lnr, unreferencedElements));
+            } else if (cmd.equals("border_gap")) {
+                if (!(group instanceof GroupLayout.SequentialGroup)) {
+                    throw new IOException("'border_gap' cannot be used outside 'seq' groups");
+                }
+                ((GroupLayout.SequentialGroup)group).addContainerGap();
             } else if (cmd.equals("gap")) {
                 if (args.hasMore()) {
-                    final int size = ExpressionParser.parseInt(args.get());
+                    final int tmp = ExpressionParser.parseInt(args.get());
                     if (args.hasMore()) {
-                        final int min = ExpressionParser.parseInt(args.get());
+                        final int size = ExpressionParser.parseInt(args.get());
                         final int max = args.hasMore() ? ExpressionParser.parseInt(args.get()) : Short.MAX_VALUE;
-                        group.addGap(min, size, max);
+                        group.addGap(tmp, size, max);
                     } else {
-                        group.addGap(size);
+                        group.addGap(tmp);
                     }
                 } else {
                     group.addGap(0, 1, Short.MAX_VALUE);

@@ -25,8 +25,13 @@ hide_input character_password
 set_default account_do_login
 
 horizontal begin par
-  information
   begin seq
+    gap 8
+    information
+    gap 8
+  end
+  begin seq
+    gap 8
     begin par
       label_login
       label_password
@@ -35,8 +40,13 @@ horizontal begin par
       character_login
       character_password
     end
+    gap 8
   end
-  account_login_error
+  begin seq
+    gap 8
+    account_login_error
+    gap 8
+  end
   begin seq
     gap
     account_do_login
@@ -47,16 +57,21 @@ horizontal begin par
 end
 
 vertical begin seq
+  gap 8
   information
+  gap 8
   begin par
     label_login
     character_login
   end
+  gap 4
   begin par
     label_password
     character_password
   end
+  gap 8
   account_login_error
+  gap 8
   begin par
     account_do_login
     account_cancel_login

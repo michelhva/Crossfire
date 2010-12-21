@@ -42,7 +42,6 @@ import com.realtime.crossfire.jxclient.window.DialogStateParser;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
 import java.awt.Dimension;
-import java.awt.Frame;
 import java.awt.Insets;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
@@ -125,7 +124,7 @@ public class JXCWindow {
      * The main window.
      */
     @NotNull
-    private final Frame frame;
+    private final JFrame frame;
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets the
@@ -439,12 +438,7 @@ public class JXCWindow {
             public void componentResized(final ComponentEvent e) {
                 final int width = frame.getContentPane().getWidth();
                 final int height = frame.getContentPane().getHeight();
-                windowRenderer.updateWindowSize(width, height);
                 guiManager.updateWindowSize(width, height);
-                frame.invalidate();
-                frame.validate();
-                frame.getContentPane().invalidate();
-                frame.getContentPane().validate();
             }
 
             /**

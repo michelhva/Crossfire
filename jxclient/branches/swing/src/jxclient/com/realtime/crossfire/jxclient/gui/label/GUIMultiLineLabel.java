@@ -29,7 +29,6 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 import java.util.regex.Pattern;
 import org.jetbrains.annotations.NotNull;
@@ -99,12 +98,13 @@ public class GUIMultiLineLabel extends GUILabel {
 
         final Font font = getTextFont();
         final Graphics2D g2 = (Graphics2D)g;
-        final RectangularShape rectangle = font.getStringBounds("Xg", g2.getFontRenderContext());
-        final int lineHeight = (int)Math.ceil(rectangle.getMaxY()-rectangle.getMinY());
+        final Dimension rectangle = GuiUtils.getTextDimension("Xg", font);
+        final int lineHeight = rectangle.height;
 
         int y = 0;
         for (final String line : lines) {
-            y += drawLine(g2, y, lineHeight, line);
+            drawLine(g2, y, lineHeight, line);
+            y += lineHeight;
         }
     }
 
@@ -117,14 +117,16 @@ public class GUIMultiLineLabel extends GUILabel {
         final Font textFont = getTextFont();
 
         int width = 0;
-        int height = 0;
         for (final String line : lines) {
             final Dimension dimension = GuiUtils.getTextDimension(line, textFont);
-            height += dimension.height;
             if (width < dimension.width) {
                 width = dimension.width;
             }
         }
+
+        final Dimension rectangle = GuiUtils.getTextDimension("Xg", textFont);
+        final int height = lines.length*rectangle.height;
+
         return new Dimension(width, height);
     }
 

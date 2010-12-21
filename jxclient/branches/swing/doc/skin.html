@@ -797,8 +797,10 @@
 <p>Defines horizontal layout information for a dialog.</p>
 
 <ul>
-<li>&lt;type&gt; is the layout type of the following GUI elements: "seq" creates
-    a sequential group, "par" creates a parallel group</li>
+    <li>&lt;type&gt; is the layout type of the following GUI elements: "seq"
+        creates
+        a sequential group, "par" creates a parallel group
+    </li>
 </ul>
 
 Following lines contain the following commands:
@@ -809,20 +811,24 @@ Following lines contain the following commands:
     gap &lt;size&gt;
     gap &lt;min&gt; &lt;pref&gt;
     gap &lt;min&gt; &lt;pref&gt; &lt;max&gt;
+    border_gap
     &lt;element&gt;
     &lt;element&gt; &lt;size&gt;
     &lt;element&gt; &lt;min&gt; &lt;pref&gt;
     &lt;element&gt; &lt;min&gt; &lt;pref&gt; &lt;max&gt;
 </pre>
 
-&lt;begin&gt; starts a nested section. &lt;end&gt; ends a nested section or
+&quot;begin&quot; starts a nested section. &quot;end&quott; ends a nested
+section or
 terminates the layout information definition.
 
-&lt;gap&gt; inserts gaps: without arguments inserts a gap that fills as much
+&quot;gap&quot; inserts gaps: without arguments inserts a gap that fills as much
 space as available. A single argument creates a gap of exactly the given size in
 pixels. With two arguments creates a gap with a minimum and a preferred size but
 without a maximum size. Three arguments define both minimum, maximum, and
 preferred size.
+
+&quot;border_gap&quot; inserts a gap at the border of the window.
 
 Otherwise a GUI element is expected, optionally followed by it's size.
 
@@ -853,11 +859,8 @@ Otherwise a GUI element is expected, optionally followed by it's size.
     inventory. The items are rendered using the options defined by a preceding
     <code>def item</code> command.</p>
 
-<p>Note: if both
-    <a href="#set_num_look_objects"><code>set_num_look_objects</code></a> and
-    <code>floor_list</code> are used, <code>set_num_look_objects</code> takes
-    precedence. Otherwise the number of items shown in the floor list is
-    requested from the server; the value is re-negotiated if needed.</p>
+<p>The number of items shown in the floor list is requested from the server; the
+    value is re-negotiated if needed.</p>
 
 <ul>
     <li>&lt;name&gt; is the name of the list box.</li>
@@ -1114,7 +1117,8 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 <ul>
     <li>&lt;type&gt; defines the linking type: &lt;horizontal&gt; links width,
         &lt;vertical&gt; links height, &lt;both&gt; links both width and
-        height.</li>
+        height.
+    </li>
     <li>&lt;element...&gt; specifies the GUI elements to link. At least two GUI
         elements must be given.
     </li>
@@ -1452,21 +1456,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 <p>precondition: dialog</p>
 
 <p>Makes this dialog modal.</p>
-
-<h3><a name="set_num_look_objects">set_num_look_objects: request floor size from
-    server</a></h3>
-
-<p>syntax:</p>
-<pre>
-    set_num_look_objects &lt;n&gt;
-</pre>
-
-<p>Requests a floor size from the Crossfire server. Overrides implicit
-    definition by <a href="#floor_list"><code>floor_list</code></a>.</p>
-
-<ul>
-    <li>&lt;n&gt; the number of floor objects to request.</li>
-</ul>
 
 <h3>scrollbar: display scrollbars controlling other GUI elements</h3>
 
