@@ -15,7 +15,11 @@ textbutton account_quit false command_disconnect Disconnect
 set_default account_login
 
 horizontal begin par
-  information
+  begin seq
+    gap 8
+    information
+    gap 8
+  end
   begin seq
     gap
     account_create
@@ -28,7 +32,9 @@ horizontal begin par
 end
 
 vertical begin seq
+  gap 8
   information
+  gap 8
   begin par
     account_create
     account_login

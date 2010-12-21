@@ -19,12 +19,22 @@ textbutton account_do_login false command_account_do_createc Create
 textbutton account_cancel_login false command_account_cancel_createc Cancel
 
 horizontal begin par
-  information
   begin seq
+    gap 8
+    information
+    gap 8
+  end
+  begin seq
+    gap 8
     label_login
     character_login
+    gap 8
   end
-  account_create_error
+  begin seq
+    gap 8
+    account_create_error
+    gap 8
+  end
   begin seq
     gap
     account_do_login
@@ -35,12 +45,16 @@ horizontal begin par
 end
 
 vertical begin seq
+  gap 8
   information
+  gap 8
   begin par
     label_login
     character_login
   end
+  gap 8
   account_create_error
+  gap 8
   begin par
     account_do_login
     account_cancel_login

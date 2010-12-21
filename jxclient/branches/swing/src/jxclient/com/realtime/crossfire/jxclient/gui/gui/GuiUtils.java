@@ -26,9 +26,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.GraphicsEnvironment;
-import java.awt.font.FontRenderContext;
 import java.awt.font.TextLayout;
-import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -57,15 +55,8 @@ public class GuiUtils {
         final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final Graphics2D g = graphicsEnvironment.createGraphics(new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB)); // XXX
         try {
-            final FontRenderContext fontRenderContext = g.getFontRenderContext();
-
-            final TextLayout textLayout1 = new TextLayout(text.isEmpty() ? " " : text, font, fontRenderContext);
-            final RectangularShape bounds1 = textLayout1.getBounds();
-
-            final TextLayout textLayout2 = new TextLayout("Xg", font, fontRenderContext);
-            final RectangularShape bounds2 = textLayout2.getBounds();
-
-            return new Dimension((int)Math.ceil(bounds1.getWidth()), (int)Math.ceil(bounds2.getHeight()));
+            final TextLayout textLayout = new TextLayout(text.isEmpty() ? " " : text, font, g.getFontRenderContext());
+            return new Dimension((int)Math.ceil(textLayout.getBounds().getWidth()), (int)Math.ceil(textLayout.getAscent()+textLayout.getDescent()));
         } finally {
             g.dispose();
         }

@@ -41,7 +41,7 @@ key char 13          exec command_metaconnect
 
 horizontal begin par
   begin seq
-    gap
+    border_gap
     begin par
       begin seq
         gap
@@ -49,9 +49,9 @@ horizontal begin par
         gap
       end
       begin seq
-        gap 260
-        metaselect
-        gap 260
+        gap
+        metaselect 504
+        gap
       end
       begin seq
         gap
@@ -66,29 +66,30 @@ horizontal begin par
         gap
       end
       begin seq
-        gap 200
-        metacomment
-        gap 200
+        gap
+        metacomment 624
+        gap
       end
-      background
+      begin seq
+        gap
+        background
+        gap
+      end
     end
-    gap
+    border_gap
   end
   background_black
 end
 
 vertical begin par
   begin seq
-    gap
+    border_gap
     begin par
       begin seq
         gap 180
         metaup
         gap 20
-        begin par
-          metaselect
-          gap 260
-        end
+        metaselect 270
         gap 20
         metadown
         gap 60
@@ -112,7 +113,7 @@ vertical begin par
       end
       background
     end
-    gap
+    border_gap
   end
   background_black
 end

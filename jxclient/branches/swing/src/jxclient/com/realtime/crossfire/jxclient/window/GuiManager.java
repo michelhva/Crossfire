@@ -43,7 +43,6 @@ import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
-import java.awt.Dimension;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -284,7 +283,7 @@ public class GuiManager {
             }
 
             closeTransientDialogs();
-            updateServerSettings();
+            windowRenderer.updateServerSettings();
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.LOGIN);
             showGUIMain();
@@ -891,19 +890,7 @@ public class GuiManager {
         if (skin != null) {
             skin.setScreenSize(width, height);
             tooltipManager.setScreenSize(width, height);
-            updateServerSettings();
         }
-    }
-
-    /**
-     * Updates server based settings to current screen size.
-     */
-    private void updateServerSettings() {
-        assert skin != null;
-        final Dimension mapSize = skin.getMapSize();
-        server.setPreferredMapSize(mapSize.width, mapSize.height);
-        assert skin != null;
-        server.setPreferredNumLookObjects(skin.getNumLookObjects());
     }
 
     /**
