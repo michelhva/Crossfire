@@ -680,15 +680,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      */
     @Nullable
     @Override
-    public Dimension getPreferredSize() {
-        return new Dimension(mapWidth*tileSize, mapHeight*tileSize);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Nullable
-    @Override
     public Dimension getMinimumSize() {
         return new Dimension(tileSize, tileSize);
     }
