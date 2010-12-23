@@ -66,6 +66,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JViewport;
+import javax.swing.RootPaneContainer;
 import javax.swing.Timer;
 import javax.swing.event.MouseInputListener;
 import org.jetbrains.annotations.NotNull;
@@ -487,7 +488,7 @@ public class JXCWindowRenderer {
          */
         @Override
         public void componentResized(final ComponentEvent e) {
-            final JFrame tmpFrame = frame;
+            final RootPaneContainer tmpFrame = frame;
             assert tmpFrame != null;
             final int width = tmpFrame.getContentPane().getWidth();
             final int height = tmpFrame.getContentPane().getHeight();
