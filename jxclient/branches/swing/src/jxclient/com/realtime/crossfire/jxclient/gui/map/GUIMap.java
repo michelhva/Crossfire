@@ -29,9 +29,11 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Display the map view. It supports both normal sized (32x32 pixel) and double
@@ -112,6 +114,15 @@ public class GUIMap extends AbstractGUIMap {
         case MouseEvent.BUTTON3:
             break;
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return new Dimension(getMapWidth()*tileSize, getMapHeight()*tileSize);
     }
 
     /**

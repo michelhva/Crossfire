@@ -1592,11 +1592,13 @@ public class JXCSkinLoader {
      */
     private void parseMinimap(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
         final String name = args.get();
+        final int w = ExpressionParser.parseInt(args.get());
+        final int h = ExpressionParser.parseInt(args.get());
         final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(4);
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        final AbstractGUIElement element = new GUIMiniMap(tooltipManager, elementListener, name, mapUpdater, facesProvider);
+        final AbstractGUIElement element = new GUIMiniMap(tooltipManager, elementListener, name, mapUpdater, facesProvider, w, h);
         insertGuiElement(element);
     }
 
