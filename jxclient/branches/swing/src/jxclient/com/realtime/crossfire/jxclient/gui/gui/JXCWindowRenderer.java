@@ -810,44 +810,6 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Auto-resizes a dialog (or does nothing for non-auto-size dialogs). Then
-     * makes sure the dialog is fully visible.
-     * @param dialog the dialog to show
-     */
-    public void showDialogAuto(@NotNull final Gui dialog) {
-        dialog.autoSize(windowWidth, windowHeight);
-        showDialog(dialog);
-    }
-
-    /**
-     * Makes sure the dialog is fully visible.
-     * @param dialog the dialog to show
-     */
-    private void showDialog(@NotNull final Gui dialog) {
-        showDialog(dialog, dialog.getX(), dialog.getY());
-    }
-
-    /**
-     * Sets the position of a dialog but makes sure the dialog is fully
-     * visible.
-     * @param dialog the dialog to show
-     * @param x the dialog's x coordinate
-     * @param y the dialog's y coordinate
-     */
-    public void showDialog(@NotNull final Gui dialog, final int x, final int y) {
-        final int newX;
-        final int newY;
-        if (dialog.getAutoSize() != null) {
-            newX = x;
-            newY = y;
-        } else {
-            newX = Math.max(Math.min(x, windowWidth-dialog.getWidth()), 0);
-            newY = Math.max(Math.min(y, windowHeight-dialog.getHeight()), 0);
-        }
-        dialog.setPosition(newX, newY);
-    }
-
-    /**
      * Returns the maximum dimension of a frame to fit on the screen.
      * @param frameInsets the frame's insets
      * @return the maximum dimension
@@ -1200,7 +1162,8 @@ public class JXCWindowRenderer {
             return;
         }
 
-        showDialogAuto(dialog);
+        dialog.autoSize(windowWidth, windowHeight);
+        dialog.showDialog(dialog.getX(), dialog.getY(), windowWidth, windowHeight);
 
         final Point mouse = frame == null ? null : frame.getMousePosition(true);
         if (mouse == null || dialog.isHidden(rendererGuiState)) {
