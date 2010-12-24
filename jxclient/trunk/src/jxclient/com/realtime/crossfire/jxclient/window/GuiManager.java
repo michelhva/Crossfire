@@ -890,10 +890,9 @@ public class GuiManager {
     public void updateWindowSize(@NotNull final Dimension size) {
         if (skin != null) {
             skin.setScreenSize(size.width, size.height);
-            final JXCWindowRenderer tmpWindowRenderer = windowRenderer;
             assert skin != null;
             for (final Gui dialog : skin) {
-                tmpWindowRenderer.showDialogAuto(dialog);
+                windowRenderer.showDialogAuto(dialog);
             }
             tooltipManager.setScreenSize(size.width, size.height);
             updateServerSettings();
