@@ -415,6 +415,7 @@ public class JXCSkinLoader {
         } finally {
             if (skinToDetach != null) {
                 skinToDetach.detach();
+                windowRenderer.setTooltip(null);
             }
         }
 

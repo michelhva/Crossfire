@@ -23,9 +23,9 @@ package com.realtime.crossfire.jxclient.skin.skin;
 
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import java.awt.Dimension;
 import java.util.Iterator;
@@ -184,10 +184,9 @@ public interface JXCSkin extends Iterable<Gui> {
 
     /**
      * Attaches this skin to a gui manager.
-     * @param windowRenderer the window renderer to attach to
      * @param tooltipManager the tooltip manager to attach to
      */
-    void attach(@NotNull JXCWindowRenderer windowRenderer, @NotNull TooltipManager tooltipManager);
+    void attach(@NotNull TooltipManager tooltipManager);
 
     /**
      * Frees all allocated resources.
@@ -200,5 +199,12 @@ public interface JXCSkin extends Iterable<Gui> {
      * @param screenHeight the new screen height
      */
     void setScreenSize(final int screenWidth, final int screenHeight);
+
+    /**
+     * Returns the {@link AbstractLabel} that is used to display tooltips.
+     * @return the label or <code>null</code> if tooltips are disabled
+     */
+    @Nullable
+    AbstractLabel getTooltipLabel();
 
 }
