@@ -128,7 +128,7 @@ public class GUIDialogTitle extends GUIOneLineLabel {
         }
 
         final Point point = e.getLocationOnScreen();
-        windowRenderer.showDialog(gui, point.x+tmpOffset.x, point.y+tmpOffset.y);
+        gui.showDialog(point.x+tmpOffset.x, point.y+tmpOffset.y, windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight());
     }
 
 }

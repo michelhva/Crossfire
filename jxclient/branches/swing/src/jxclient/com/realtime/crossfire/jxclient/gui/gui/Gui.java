@@ -660,4 +660,25 @@ public class Gui extends JComponent {
         saveDialog = true;
     }
 
+    /**
+     * Sets the position of a dialog but makes sure the dialog is fully
+     * visible.
+     * @param x the dialog's x coordinate
+     * @param y the dialog's y coordinate
+     * @param windowWidth the main window's width
+     * @param windowHeight the main window's height
+     */
+    public void showDialog(final int x, final int y, final int windowWidth, final int windowHeight) {
+        final int newX;
+        final int newY;
+        if (autoSize != null) {
+            newX = x;
+            newY = y;
+        } else {
+            newX = Math.max(Math.min(x, windowWidth-getWidth()), 0);
+            newY = Math.max(Math.min(y, windowHeight-getHeight()), 0);
+        }
+        setPosition(newX, newY);
+    }
+
 }
