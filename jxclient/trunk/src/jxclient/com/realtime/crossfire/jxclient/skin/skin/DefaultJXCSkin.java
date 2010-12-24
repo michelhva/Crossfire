@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.CommandListType;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
@@ -153,13 +152,6 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @Nullable
     private AbstractLabel tooltipLabel = null;
-
-    /**
-     * The {@link JXCWindowRenderer} currently attached to or <code>null</code>
-     * if not attached.
-     */
-    @Nullable
-    private JXCWindowRenderer windowRenderer = null;
 
     /**
      * The {@link TooltipManager} currently attached to or <code>null</code> if
@@ -438,14 +430,12 @@ public class DefaultJXCSkin implements JXCSkin {
      * {@inheritDoc}
      */
     @Override
-    public void attach(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final TooltipManager tooltipManager) {
-        if (this.windowRenderer != null || this.tooltipManager != null) {
+    public void attach(@NotNull final TooltipManager tooltipManager) {
+        if (this.tooltipManager != null) {
             throw new IllegalStateException("skin is already attached");
         }
 
-        this.windowRenderer = windowRenderer;
         this.tooltipManager = tooltipManager;
-        windowRenderer.setTooltip(tooltipLabel);
         tooltipManager.setTooltip(tooltipLabel);
 
         for (final CommandList commandList : initEvents) {
@@ -458,13 +448,8 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @Override
     public void detach() {
-        final JXCWindowRenderer tmpWindowRenderer = windowRenderer;
         final TooltipManager tmpTooltipManager = tooltipManager;
-        windowRenderer = null;
         tooltipManager = null;
-        if (tmpWindowRenderer != null) {
-            tmpWindowRenderer.setTooltip(null);
-        }
         if (tmpTooltipManager != null) {
             tmpTooltipManager.setTooltip(null);
         }
@@ -500,13 +485,6 @@ public class DefaultJXCSkin implements JXCSkin {
 
         if (tooltipLabel != null) {
             tooltipLabel.updateResolution(newScreenWidth, newScreenHeight);
-        }
-
-        final JXCWindowRenderer tmpWindowRenderer = windowRenderer;
-        if (tmpWindowRenderer != null) {
-            for (final Gui dialog : dialogs) {
-                tmpWindowRenderer.showDialogAuto(dialog);
-            }
         }
     }
 
@@ -584,6 +562,15 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     public void setTooltipLabel(@Nullable final AbstractLabel tooltipLabel) {
         this.tooltipLabel = tooltipLabel;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public AbstractLabel getTooltipLabel() {
+        return tooltipLabel;
     }
 
     /**

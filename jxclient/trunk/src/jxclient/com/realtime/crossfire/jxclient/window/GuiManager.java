@@ -739,6 +739,7 @@ public class GuiManager {
     public void unsetSkin() {
         if (skin != null) {
             skin.detach();
+            windowRenderer.setTooltip(null);
             skin = null;
         }
 
@@ -754,7 +755,8 @@ public class GuiManager {
      */
     public void setSkin(@NotNull final JXCSkin skin) {
         this.skin = skin;
-        skin.attach(windowRenderer, tooltipManager);
+        skin.attach(tooltipManager);
+        windowRenderer.setTooltip(skin.getTooltipLabel());
         queryDialog = skin.getDialogQuery();
         keybindDialog = skin.getDialogKeyBind();
         dialogQuit = skin.getDialogQuit();
@@ -888,6 +890,11 @@ public class GuiManager {
     public void updateWindowSize(@NotNull final Dimension size) {
         if (skin != null) {
             skin.setScreenSize(size.width, size.height);
+            final JXCWindowRenderer tmpWindowRenderer = windowRenderer;
+            assert skin != null;
+            for (final Gui dialog : skin) {
+                tmpWindowRenderer.showDialogAuto(dialog);
+            }
             tooltipManager.setScreenSize(size.width, size.height);
             updateServerSettings();
         }
