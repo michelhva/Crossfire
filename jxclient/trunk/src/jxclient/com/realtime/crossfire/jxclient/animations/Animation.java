@@ -31,7 +31,7 @@ import org.jetbrains.annotations.NotNull;
 public class Animation {
 
     /**
-     * Flags for the animation; currently unused.
+     * Flags for the animation; currently unused by the server.
      */
     private final int flags;
 
