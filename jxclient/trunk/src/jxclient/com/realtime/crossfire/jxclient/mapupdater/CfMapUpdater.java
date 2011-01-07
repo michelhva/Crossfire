@@ -186,7 +186,7 @@ public class CfMapUpdater {
          */
         @Override
         public void mapFace(final int x, final int y, final int layer, final int faceNum) {
-            processMapFace(x, y, layer, faceNum, true);
+            processMapFace(new Location(x, y, layer), faceNum, true);
         }
 
         /**
@@ -434,21 +434,20 @@ public class CfMapUpdater {
 
     /**
      * Updates a map square by changing a face.
-     * @param x the x-coordinate of the square
-     * @param y the y-coordinate of the square
-     * @param layer the layer to update
+     * @param location the location to update
      * @param faceNum the face to set. <code>0</code> clears the square
      * @param clearAnimation whether an animation should be cleared
      */
-    public void processMapFace(final int x, final int y, final int layer, final int faceNum, final boolean clearAnimation) {
+    public void processMapFace(@NotNull final Location location, final int faceNum, final boolean clearAnimation) {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
-                final Location location = new Location(x, y, layer);
                 if (clearAnimation) {
                     visibleAnimations.remove(location);
                 }
                 final Face face = getFace(faceNum);
+                final int x = location.getX();
+                final int y = location.getY();
                 if (x >= width || y >= height) {
                     if (face == null) {
                         outOfViewMultiFaces.remove(location);
@@ -456,7 +455,7 @@ public class CfMapUpdater {
                         outOfViewMultiFaces.add(location);
                     }
                 }
-                map.setFace(x, y, layer, face);
+                map.setFace(x, y, location.getLayer(), face);
             }
         }
     }
