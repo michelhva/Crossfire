@@ -113,6 +113,22 @@ public interface Map2 {
     int FACE_ANIMATION = 0x8000;
 
     /**
+     * Animation type: normal animation. Starts at index zero.
+     */
+    int ANIM_NORMAL = 0;
+
+    /**
+     * Animation type: randomized animation. Starts at random index.
+     */
+    int ANIM_RANDOM = 1;
+
+    /**
+     * Animation type: synchronized animation. Starts at same state as similar
+     * animations.
+     */
+    int ANIM_SYNC = 2;
+
+    /**
      * The mask for extracting the animation ID.
      */
     int ANIM_MASK = 0x1FFF;

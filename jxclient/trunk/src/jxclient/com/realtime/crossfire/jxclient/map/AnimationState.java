@@ -23,30 +23,30 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Animation state information.
+ * The state of an {@link Animation} on a map.
  * @author Andreas Kirschbaum
  */
-public class AnimationState {
-
-    /**
-     * The animation to display.
-     */
-    @NotNull
-    private final Animation animation;
-
-    /**
-     * The animation type.
-     */
-    private final int type;
+public class AnimationState implements Iterable<Location> {
 
     /**
      * The {@link CfMapUpdater} instance to use.
      */
     @NotNull
     private final CfMapUpdater mapUpdater;
+
+    /**
+     * The {@link Animation} to display.
+     */
+    @NotNull
+    private final Animation animation;
 
     /**
      * The animation speed.
@@ -59,20 +59,32 @@ public class AnimationState {
     private int tickNo = 0;
 
     /**
-     * The face index currently shown.
+     * The face index currently shown. May contain values between 0 and {@link
+     * #speed}*{@link #animation}.getFaces() (exclusive).
      */
-    private int index = 0;
+    private int index;
+
+    /**
+     * Records the last known face. Used to suppress redundant map updates.
+     */
+    private int lastFace = -1;
+
+    /**
+     * All map {@link Location locations} this animation is displayed at.
+     */
+    @NotNull
+    private final Set<Location> locations = new HashSet<Location>();
 
     /**
      * Creates a new instance.
+     * @param mapUpdater the map updater instance to use
      * @param animation the animation to display
-     * @param type the animation type
-     * @param mapUpdater the instance to use
+     * @param index the initial face index
      */
-    public AnimationState(@NotNull final Animation animation, final int type, @NotNull final CfMapUpdater mapUpdater) {
-        this.animation = animation;
-        this.type = type;
+    public AnimationState(@NotNull final CfMapUpdater mapUpdater, @NotNull final Animation animation, final int index) {
         this.mapUpdater = mapUpdater;
+        this.animation = animation;
+        this.index = index%animation.getFaces();
     }
 
     /**
@@ -81,10 +93,14 @@ public class AnimationState {
      */
     public void setSpeed(final int speed) {
         assert speed > 0;
+        if (this.speed == speed) {
+            return;
+        }
         final int tmpIndex = index/this.speed;
         final int tmpDelay = Math.min(index%this.speed, speed-1);
         this.speed = speed;
         index = tmpIndex*speed+tmpDelay;
+        updateFace();
     }
 
     /**
@@ -98,10 +114,8 @@ public class AnimationState {
     /**
      * Sets the tick number and update affected faces.
      * @param tickNo the tick number
-     * @param location the location to update
      */
-    public void updateTickNo(final int tickNo, @NotNull final Location location) {
-        final int oldFaceIndex = index/speed;
+    public void updateTickNo(final int tickNo) {
         final int diff = tickNo-this.tickNo;
         if (tickNo < this.tickNo) {
             System.err.println("Ignoring inconsistent tick value: current tick number is "+tickNo+", previous tick number was "+this.tickNo+".");
@@ -109,24 +123,76 @@ public class AnimationState {
             index = (index+diff)%(speed*animation.getFaces());
         }
         this.tickNo = tickNo;
-
-        draw(location, oldFaceIndex);
+        updateFace();
     }
 
     /**
-     * Updates the map face at the given location.
-     * @param location the map location to update
-     * @param oldFaceIndex suppress the map face update if the new face index
-     * equals this value
+     * Updates the map face from the state.
      */
-    public void draw(@NotNull final Location location, final int oldFaceIndex) {
-        final int faceIndex = index/speed;
-        if (faceIndex == oldFaceIndex) {
+    private void updateFace() {
+        final int face = animation.getFace(index/speed);
+        if (face == lastFace) {
             return;
         }
+        lastFace = face;
+        for (final Location location : locations) {
+            mapUpdater.processMapFace(location, face, false);
+        }
+    }
 
-        final int face = animation.getFace(faceIndex);
-        mapUpdater.processMapFace(location, face, false);
+    /**
+     * Adds this animation state to a map {@link Location}.
+     * @param location the map location
+     */
+    public void allocate(@NotNull final Location location) {
+        if (!locations.add(location)) {
+            throw new IllegalArgumentException();
+        }
+        if (lastFace != -1) {
+            mapUpdater.processMapFace(location, lastFace, false);
+        }
+    }
+
+    /**
+     * Removes this animation state from a map {@link Location}.
+     * @param location the location to free
+     */
+    public void free(@NotNull final Location location) {
+        if (!locations.remove(location)) {
+            throw new IllegalArgumentException();
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Iterator<Location> iterator() {
+        return Collections.unmodifiableSet(locations).iterator();
+    }
+
+    /**
+     * Scrolls all map locations.
+     * @param dx the x distance to scroll
+     * @param dy the y distance to scroll
+     * @param width the map width
+     * @param height the map height
+     */
+    public void scroll(final int dx, final int dy, final int width, final int height) {
+        final Collection<Location> tmp = new HashSet<Location>();
+        for (final Location location : locations) {
+            if (0 <= location.getX() && location.getX() < width && 0 <= location.getY() && location.getY() < height) { // out-of-map bounds animations are dropped, not scrolled
+                final int newX = location.getX()-dx;
+                final int newY = location.getY()-dy;
+                if (0 <= newX && newX < width && 0 <= newY && newY < height) { // in-map bounds animations are dropped if scrolled off the visible area
+                    final Location newLocation = new Location(newX, newY, location.getLayer());
+                    tmp.add(newLocation);
+                }
+            }
+        }
+        locations.clear();
+        locations.addAll(tmp);
     }
 
 }
