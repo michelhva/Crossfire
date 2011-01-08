@@ -129,7 +129,7 @@ public class Animations {
             System.err.println("Warning: animation id "+animationId+" has only one face");
         }
 
-        final Animation animation = new Animation(flags, faces);
+        final Animation animation = new Animation(animationId, flags, faces);
         if (animations.put(animationId, animation) != null) {
             System.err.println("Warning: duplicate animation id "+animationId);
         }
