@@ -138,7 +138,7 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         final Graphics paint;
         if (alpha < 1F) {
             final Graphics2D g2d = (Graphics2D)g.create();
-            g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, this.alpha));
+            g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
             paint = g2d;
         } else {
             paint = g;
