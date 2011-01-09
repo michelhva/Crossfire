@@ -149,7 +149,6 @@ public class Gui extends JComponent {
         }
 
         super.setBounds(x, y, width, height);
-        validate();
         hasChangedElements = true;
     }
 
@@ -631,7 +630,9 @@ public class Gui extends JComponent {
             if (getWidth() == 0 || getHeight() == 0) {
                 setSize(preferredSize.width, preferredSize.height);
             }
-            setPosition(x-preferredSize.width/2, y-preferredSize.height/2);
+            if (defaultX != null && defaultY != null) {
+                setPosition(x-preferredSize.width/2, y-preferredSize.height/2);
+            }
         }
     }
 
