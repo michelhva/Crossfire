@@ -24,9 +24,12 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import java.awt.AlphaComposite;
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -117,11 +120,17 @@ public class GUIDialogBackground extends AbstractGUIElement {
     private final int widthE;
 
     /**
+     * The alpha value for the background, 1 opaque 0 full transparent.
+     */
+    private final float alpha;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param transparency the transparency value for the backing buffer
+     * @param alpha the alpha value for the background, 1 is opaque, 0 full
+     * transparent.
      * @param frameNW The north-west frame picture.
      * @param frameN The north frame picture.
      * @param frameNE The north-east frame picture.
@@ -132,8 +141,8 @@ public class GUIDialogBackground extends AbstractGUIElement {
      * @param frameS The south frame picture.
      * @param frameSE The south-east frame picture.
      */
-    public GUIDialogBackground(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency, @NotNull final BufferedImage frameNW, @NotNull final BufferedImage frameN, @NotNull final BufferedImage frameNE, @NotNull final BufferedImage frameW, @NotNull final Image frameC, @NotNull final BufferedImage frameE, @NotNull final BufferedImage frameSW, @NotNull final BufferedImage frameS, @NotNull final BufferedImage frameSE) {
-        super(tooltipManager, elementListener, name, transparency);
+    public GUIDialogBackground(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final float alpha, @NotNull final BufferedImage frameNW, @NotNull final BufferedImage frameN, @NotNull final BufferedImage frameNE, @NotNull final BufferedImage frameW, @NotNull final Image frameC, @NotNull final BufferedImage frameE, @NotNull final BufferedImage frameSW, @NotNull final BufferedImage frameS, @NotNull final BufferedImage frameSE) {
+        super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.frameNW = frameNW;
         this.frameN = frameN;
         this.frameNE = frameNE;
@@ -143,6 +152,7 @@ public class GUIDialogBackground extends AbstractGUIElement {
         this.frameSW = frameSW;
         this.frameS = frameS;
         this.frameSE = frameSE;
+        this.alpha = alpha;
         heightN = frameN.getHeight();
         heightS = frameS.getHeight();
         widthW = frameW.getWidth();
@@ -178,18 +188,30 @@ public class GUIDialogBackground extends AbstractGUIElement {
      */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
-        super.paintComponent(g);
+        final Graphics paint;
+        if (alpha < 1F) {
+            final Graphics2D g2d = (Graphics2D)g.create();
+            g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
+            paint = g2d;
+        } else {
+            paint = g;
+        }
+
+        super.paintComponent(paint);
         final int w = Math.max(1, getWidth()-widthW-widthE);
         final int h = Math.max(1, getHeight()-heightN-heightS);
-        g.drawImage(frameNW, 0, 0, null);
-        g.drawImage(frameN, widthW, 0, widthW+w, heightN, 0, 0, w, heightN, null);
-        g.drawImage(frameNE, widthW+w, 0, null);
-        g.drawImage(frameW, 0, heightN, widthW, heightN+h, 0, 0, widthW, h, null);
-        g.drawImage(frameC, widthW, heightN, widthW+w, heightN+h, 0, 0, w, h, null);
-        g.drawImage(frameE, widthW+w, heightN, widthW+w+widthE, heightN+h, 0, 0, widthE, h, null);
-        g.drawImage(frameSW, 0, heightN+h, null);
-        g.drawImage(frameS, widthW, heightN+h, widthW+w, heightN+h+heightS, 0, 0, w, heightS, null);
-        g.drawImage(frameSE, widthW+w, heightN+h, null);
+        paint.drawImage(frameNW, 0, 0, null);
+        paint.drawImage(frameN, widthW, 0, widthW+w, heightN, 0, 0, w, heightN, null);
+        paint.drawImage(frameNE, widthW+w, 0, null);
+        paint.drawImage(frameW, 0, heightN, widthW, heightN+h, 0, 0, widthW, h, null);
+        paint.drawImage(frameC, widthW, heightN, widthW+w, heightN+h, 0, 0, w, h, null);
+        paint.drawImage(frameE, widthW+w, heightN, widthW+w+widthE, heightN+h, 0, 0, widthE, h, null);
+        paint.drawImage(frameSW, 0, heightN+h, null);
+        paint.drawImage(frameS, widthW, heightN+h, widthW+w, heightN+h+heightS, 0, 0, w, heightS, null);
+        paint.drawImage(frameSE, widthW+w, heightN+h, null);
+        if (paint != g) {
+            paint.dispose();
+        }
     }
 
     /**

@@ -1070,6 +1070,10 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the command cannot be parsed
      */
     private void parseGauge(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (dialogFactory == null) {
+            throw new IOException("missing 'def dialog' command");
+        }
+
         final String name = args.get();
         final BufferedImage positiveImage = args.get().equals("null") ? null : imageParser.getImage(args.getPrev());
         final BufferedImage negativeImage = args.get().equals("null") ? null : imageParser.getImage(args.getPrev());
@@ -1077,7 +1081,9 @@ public class JXCSkinLoader {
         final GaugeUpdater gaugeUpdater = newGaugeUpdater(args.get());
         final Orientation orientation = ParseUtils.parseOrientation(args.get());
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
-        final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
+        assert dialogFactory != null;
+        final float alpha = dialogFactory.getFrameAlpha();
+        final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, alpha);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1852,6 +1858,10 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the command cannot be parsed
      */
     private void parseTextGauge(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (dialogFactory == null) {
+            throw new IOException("missing 'def dialog' command");
+        }
+
         final String name = args.get();
         final BufferedImage positiveImage = imageParser.getImage(args.get());
         final BufferedImage negativeImage = args.get().equals("null") ? null : imageParser.getImage(args.getPrev());
@@ -1861,7 +1871,9 @@ public class JXCSkinLoader {
         final Color color = ParseUtils.parseColor(args.get());
         final Font font = definedFonts.lookup(args.get());
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
-        final GUITextGauge element = new GUITextGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+        assert dialogFactory != null;
+        final float alpha = dialogFactory.getFrameAlpha();
+        final GUITextGauge element = new GUITextGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font, alpha);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }

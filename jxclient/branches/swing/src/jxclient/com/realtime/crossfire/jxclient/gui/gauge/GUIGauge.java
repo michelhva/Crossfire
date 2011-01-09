@@ -24,8 +24,10 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import java.awt.AlphaComposite;
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
@@ -78,6 +80,11 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
     private final GaugeState gaugeState;
 
     /**
+     * The gauge alpha value, 1 is opaque and 0 full transparent.
+     */
+    private final float alpha;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -90,13 +97,15 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      * @param orientation the gauge's orientation
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
+     * @param alpha alpha value of the gauge to use
      */
-    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, final float alpha) {
+        super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.emptyImage = emptyImage;
         this.orientation = orientation;
         this.tooltipPrefix = tooltipPrefix;
         gaugeState = new GaugeState(fullImage, negativeImage, 0, 0);
+        this.alpha = alpha;
         tooltipText = "-";      // make sure the following setValues() does not short-cut
         orientation.setExtends(getWidth(), getHeight());
         orientation.setHasNegativeImage(negativeImage != null);
@@ -127,11 +136,23 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
-        super.paintComponent(g);
-        if (emptyImage != null) {
-            g.drawImage(emptyImage, 0, 0, null);
+        final Graphics paint;
+        if (alpha < 1F) {
+            final Graphics2D g2d = (Graphics2D)g.create();
+            g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, this.alpha));
+            paint = g2d;
+        } else {
+            paint = g;
         }
-        gaugeState.draw(g);
+
+        super.paintComponent(paint);
+        if (emptyImage != null) {
+            paint.drawImage(emptyImage, 0, 0, null);
+        }
+        gaugeState.draw(paint);
+        if (paint != g) {
+            paint.dispose();
+        }
     }
 
     /**
