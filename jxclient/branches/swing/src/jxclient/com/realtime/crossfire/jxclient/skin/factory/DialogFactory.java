@@ -221,6 +221,6 @@ public class DialogFactory {
      * @return alpha value, 1 is opaque and 0 totally transparent.
      */
     public float getFrameAlpha() {
-        return this.frameAlpha;
+        return frameAlpha;
     }
 }
