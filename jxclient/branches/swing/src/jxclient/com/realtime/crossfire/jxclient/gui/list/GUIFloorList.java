@@ -60,11 +60,11 @@ public class GUIFloorList extends GUIItemList {
      * @param name the name of this element
      * @param cellWidth the width of cells
      * @param cellHeight the height of cells
-     * @param crossfireServerConnection the crossfire server connection for sending
-     * commands to the server
+     * @param crossfireServerConnection the crossfire server connection for
+     * sending commands to the server
      * @param itemView the item view to monitor
-     * @param currentItem the label to update with information about the selected
-     * item.
+     * @param currentItem the label to update with information about the
+     * selected item.
      * @param itemItemFactory the factory for creating item instances
      */
     public GUIFloorList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
