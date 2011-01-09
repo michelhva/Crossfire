@@ -509,12 +509,6 @@ public class JXCWindowRenderer {
          */
         @Override
         public void componentShown(final ComponentEvent e) {
-            final JFrame tmpFrame = frame;
-            assert tmpFrame != null;
-            tmpFrame.invalidate();
-            tmpFrame.validate();
-            tmpFrame.getContentPane().invalidate();
-            tmpFrame.getContentPane().validate();
             updateServerSettings();
         }
 
@@ -766,17 +760,17 @@ public class JXCWindowRenderer {
         updateWindowSize(dimension.width, dimension.height);
 
         frame.add(layeredPane);
-
         if (currentGui != null) {
             addToLayeredPane(currentGui, 0, -1);
-            frame.repaint();
-
             if (windowWidth > 0 && windowHeight > 0) {
                 assert currentGui != null;
                 currentGui.setSize(windowWidth, windowHeight);
             }
 
+            frame.validate();
             updateServerSettings();
+        } else {
+            frame.validate();
         }
 
         debugScreenWrite("setResolutionPost: success");
@@ -798,14 +792,7 @@ public class JXCWindowRenderer {
             currentGui.setSize(windowWidth, windowHeight);
         }
         if (frame != null) {
-            layeredPane.invalidate();
-            layeredPane.validate();
-            assert frame != null;
-            frame.invalidate();
-            assert frame != null;
             frame.validate();
-            assert frame != null;
-            frame.repaint();
         }
     }
 
@@ -854,7 +841,7 @@ public class JXCWindowRenderer {
      * Redraws the current gui.
      */
     private void redrawGUI() {
-        if (inhibitPaintMapUpdate || inhibitPaintIconified) {
+        if (inhibitPaintMapUpdate || inhibitPaintIconified || frame == null) {
             skippedPaint = true;
             return;
         }
@@ -1014,12 +1001,6 @@ public class JXCWindowRenderer {
         currentGui = gui;
         if (frame != null) {
             addToLayeredPane(currentGui, 0, -1);
-            assert frame != null;
-            frame.invalidate();
-            assert frame != null;
-            frame.validate();
-            assert frame != null;
-            frame.repaint();
         }
         currentGuiChanged = true;
 
@@ -1027,7 +1008,9 @@ public class JXCWindowRenderer {
             assert currentGui != null;
             currentGui.setSize(windowWidth, windowHeight);
         }
-
+        if (frame != null) {
+            frame.validate();
+        }
         updateServerSettings();
     }
 
@@ -1126,6 +1109,9 @@ public class JXCWindowRenderer {
                 addToLayeredPane(dialog, 1, 0);
             }
         }
+        if (frame != null) {
+            frame.validate();
+        }
         updateServerSettings();
         forcePaint = true;
         for (final RendererGuiStateListener listener : rendererGuiStateListeners) {
@@ -1170,10 +1156,10 @@ public class JXCWindowRenderer {
             openDialogs.add(dialog);
             if (!dialog.isHidden(rendererGuiState)) {
                 addToLayeredPane(dialog, 1, 0);
-                dialog.invalidate();
-                dialog.validate();
                 dialog.setSize(dialog.getPreferredSize());
-                dialog.repaint();
+                if (frame != null) {
+                    frame.validate();
+                }
             }
         } else {
             mouse.x -= offsetX;
@@ -1184,19 +1170,19 @@ public class JXCWindowRenderer {
                 openDialogs.add(dialog);
                 assert !dialog.isHidden(rendererGuiState);
                 addToLayeredPane(dialog, 1, 0);
-                dialog.invalidate();
-                dialog.validate();
                 dialog.setSize(dialog.getPreferredSize());
-                dialog.repaint();
+                if (frame != null) {
+                    frame.validate();
+                }
                 mouseTracker.mouseEntered(findElement(mouseEvent), mouseEvent);
             } else {
                 openDialogs.add(dialog);
                 assert !dialog.isHidden(rendererGuiState);
                 addToLayeredPane(dialog, 1, 0);
-                dialog.invalidate();
-                dialog.validate();
                 dialog.setSize(dialog.getPreferredSize());
-                dialog.repaint();
+                if (frame != null) {
+                    frame.validate();
+                }
             }
         }
     }
@@ -1216,6 +1202,9 @@ public class JXCWindowRenderer {
         if (mouse == null) {
             openDialogs.remove(dialog);
             removeFromLayeredPane(dialog);
+            if (frame != null) {
+                frame.validate();
+            }
         } else {
             mouse.x -= offsetX;
             mouse.y -= offsetY;
@@ -1224,10 +1213,16 @@ public class JXCWindowRenderer {
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.remove(dialog);
                 removeFromLayeredPane(dialog);
+                if (frame != null) {
+                    frame.validate();
+                }
                 mouseTracker.mouseEntered(findElement(mouseEvent), mouseEvent);
             } else {
                 openDialogs.remove(dialog);
                 removeFromLayeredPane(dialog);
+                if (frame != null) {
+                    frame.validate();
+                }
             }
         }
 
@@ -1496,7 +1491,6 @@ public class JXCWindowRenderer {
      */
     private void addToLayeredPane(@NotNull final Component component, final int layer, final int index) {
         layeredPane.add(component, layer, index);
-        layeredPane.validate();
         addMouseTrackerRecursively(component);
         addComponent(component);
     }
@@ -1507,7 +1501,6 @@ public class JXCWindowRenderer {
      */
     private void removeFromLayeredPane(@NotNull final Component component) {
         layeredPane.remove(component);
-        layeredPane.validate();
         removeMouseTrackerRecursively(component);
         removeComponent(component);
     }
