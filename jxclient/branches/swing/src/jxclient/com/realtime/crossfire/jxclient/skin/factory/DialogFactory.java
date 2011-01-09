@@ -29,7 +29,6 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -113,6 +112,12 @@ public class DialogFactory {
     private final Color titleBackgroundColor;
 
     /**
+     * The alpha transparency for the dialog background, 1 is opaque and 0 is
+     * transparent.
+     */
+    private final float frameAlpha;
+
+    /**
      * Create a new instance. The border images must have matching sizes.
      * @param frameNW The north-west frame picture.
      * @param frameN The north frame picture.
@@ -126,10 +131,10 @@ public class DialogFactory {
      * @param titleFont The font for the dialog title.
      * @param titleColor The color for the dialog title.
      * @param titleBackgroundColor The background color for the dialog title.
-     * @param alpha The alpha value for the dialog background except for the
-     * title.
+     * @param frameAlpha The alpha value for the dialog background except for
+     * the title.
      */
-    public DialogFactory(@NotNull final BufferedImage frameNW, @NotNull final BufferedImage frameN, @NotNull final BufferedImage frameNE, @NotNull final BufferedImage frameW, @NotNull final BufferedImage frameC, @NotNull final BufferedImage frameE, @NotNull final BufferedImage frameSW, @NotNull final BufferedImage frameS, @NotNull final BufferedImage frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float alpha) {
+    public DialogFactory(@NotNull final BufferedImage frameNW, @NotNull final BufferedImage frameN, @NotNull final BufferedImage frameNE, @NotNull final BufferedImage frameW, @NotNull final BufferedImage frameC, @NotNull final BufferedImage frameE, @NotNull final BufferedImage frameSW, @NotNull final BufferedImage frameS, @NotNull final BufferedImage frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float frameAlpha) {
         this.frameNW = frameNW;
         this.frameN = frameN;
         this.frameNE = frameNE;
@@ -139,6 +144,10 @@ public class DialogFactory {
         this.frameSW = frameSW;
         this.frameS = frameS;
         this.frameSE = frameSE;
+        this.frameAlpha = frameAlpha;
+        if (frameAlpha < 0F || frameAlpha > 1F) {
+            throw new IllegalArgumentException("alpha transparency should be between 0 and 1 inclusive");
+        }
         final int sizeN = frameN.getHeight(null);
         final int sizeS = frameS.getHeight(null);
         final int sizeW = frameW.getWidth(null);
@@ -183,7 +192,7 @@ public class DialogFactory {
         }
         this.titleFont = titleFont;
         this.titleColor = titleColor;
-        final int intAlpha = (int)(255*alpha);
+        final int intAlpha = (int)(255*frameAlpha);
         this.titleBackgroundColor = intAlpha == 0 ? null : new Color(titleBackgroundColor.getRed(), titleBackgroundColor.getGreen(), titleBackgroundColor.getBlue(), intAlpha);
     }
 
@@ -198,7 +207,7 @@ public class DialogFactory {
     @NotNull
     public Collection<AbstractGUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String title) {
         final Collection<AbstractGUIElement> result = new ArrayList<AbstractGUIElement>();
-        result.add(new GUIDialogBackground(tooltipManager, elementListener, "dialog_background", Transparency.TRANSLUCENT, frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE));
+        result.add(new GUIDialogBackground(tooltipManager, elementListener, "dialog_background", this.frameAlpha, frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE));
 
         if (title.length() > 0) {
             result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, "dialog_title", titleFont, titleColor, titleBackgroundColor, title));
@@ -207,4 +216,11 @@ public class DialogFactory {
         return result;
     }
 
+    /**
+     * Returns the alpha value for the frame background.
+     * @return alpha value, 1 is opaque and 0 totally transparent.
+     */
+    public float getFrameAlpha() {
+        return this.frameAlpha;
+    }
 }

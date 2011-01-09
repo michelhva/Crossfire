@@ -74,9 +74,10 @@ public class GUITextGauge extends GUIGauge {
      * @param tooltipPrefix the prefix for generating a tooltip
      * @param color the text color
      * @param font the text font
+     * @param alpha transparency to draw with
      */
-    public GUITextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage pictureFull, @Nullable final BufferedImage pictureNegative, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font) {
-        super(tooltipManager, elementListener, name, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix);
+    public GUITextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage pictureFull, @Nullable final BufferedImage pictureNegative, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font, final float alpha) {
+        super(tooltipManager, elementListener, name, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix, alpha);
         this.color = color;
         this.font = font;
     }
