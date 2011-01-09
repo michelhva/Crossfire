@@ -29,7 +29,7 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.image.BufferedImage;
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
@@ -45,55 +45,55 @@ public class DialogFactory {
      * The north-west frame picture.
      */
     @NotNull
-    private final BufferedImage frameNW;
+    private final Image frameNW;
 
     /**
      * The north frame picture.
      */
     @NotNull
-    private final BufferedImage frameN;
+    private final Image frameN;
 
     /**
      * The north-east frame picture.
      */
     @NotNull
-    private final BufferedImage frameNE;
+    private final Image frameNE;
 
     /**
      * The west frame picture.
      */
     @NotNull
-    private final BufferedImage frameW;
+    private final Image frameW;
 
     /**
      * The center frame picture.
      */
     @NotNull
-    private final BufferedImage frameC;
+    private final Image frameC;
 
     /**
      * The east frame picture.
      */
     @NotNull
-    private final BufferedImage frameE;
+    private final Image frameE;
 
     /**
      * The south-west frame picture.
      */
     @NotNull
-    private final BufferedImage frameSW;
+    private final Image frameSW;
 
     /**
      * The south frame picture.
      */
     @NotNull
-    private final BufferedImage frameS;
+    private final Image frameS;
 
     /**
      * The south-east frame picture.
      */
     @NotNull
-    private final BufferedImage frameSE;
+    private final Image frameSE;
 
     /**
      * The font for the dialog title.
@@ -134,7 +134,7 @@ public class DialogFactory {
      * @param frameAlpha The alpha value for the dialog background except for
      * the title.
      */
-    public DialogFactory(@NotNull final BufferedImage frameNW, @NotNull final BufferedImage frameN, @NotNull final BufferedImage frameNE, @NotNull final BufferedImage frameW, @NotNull final BufferedImage frameC, @NotNull final BufferedImage frameE, @NotNull final BufferedImage frameSW, @NotNull final BufferedImage frameS, @NotNull final BufferedImage frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float frameAlpha) {
+    public DialogFactory(@NotNull final Image frameNW, @NotNull final Image frameN, @NotNull final Image frameNE, @NotNull final Image frameW, @NotNull final Image frameC, @NotNull final Image frameE, @NotNull final Image frameSW, @NotNull final Image frameS, @NotNull final Image frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float frameAlpha) {
         this.frameNW = frameNW;
         this.frameN = frameN;
         this.frameNE = frameNE;

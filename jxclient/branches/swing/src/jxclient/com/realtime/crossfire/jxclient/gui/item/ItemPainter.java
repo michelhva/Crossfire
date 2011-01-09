@@ -30,8 +30,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.geom.RectangularShape;
-import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -50,55 +48,55 @@ public class ItemPainter {
      * The overlay image for cursed objects.
      */
     @Nullable
-    private final BufferedImage cursedImage;
+    private final Image cursedImage;
 
     /**
      * The overlay image for damned objects.
      */
     @Nullable
-    private final BufferedImage damnedImage;
+    private final Image damnedImage;
 
     /**
      * The overlay image for magical objects.
      */
     @Nullable
-    private final BufferedImage magicImage;
+    private final Image magicImage;
 
     /**
      * The overlay image for blessed objects.
      */
     @Nullable
-    private final BufferedImage blessedImage;
+    private final Image blessedImage;
 
     /**
      * The overlay image for applied objects.
      */
     @Nullable
-    private final BufferedImage appliedImage;
+    private final Image appliedImage;
 
     /**
      * The overlay image for unidentified objects.
      */
     @Nullable
-    private final BufferedImage unidentifiedImage;
+    private final Image unidentifiedImage;
 
     /**
      * The overlay image for selected objects.
      */
     @Nullable
-    private final BufferedImage selectorImage;
+    private final Image selectorImage;
 
     /**
      * The overlay image for locked objects.
      */
     @Nullable
-    private final BufferedImage lockedImage;
+    private final Image lockedImage;
 
     /**
      * The overlay image for unpaid objects.
      */
     @Nullable
-    private final BufferedImage unpaidImage;
+    private final Image unpaidImage;
 
     /**
      * The background color for cursed objects.
@@ -189,7 +187,7 @@ public class ItemPainter {
      * @param font the font for nrof information
      * @param nrofColor the color for nrof information
      */
-    public ItemPainter(@Nullable final BufferedImage cursedImage, @Nullable final BufferedImage damnedImage, @Nullable final BufferedImage magicImage, @Nullable final BufferedImage blessedImage, @Nullable final BufferedImage appliedImage, @Nullable final BufferedImage unidentifiedImage, @Nullable final BufferedImage selectorImage, @Nullable final BufferedImage lockedImage, @Nullable final BufferedImage unpaidImage, @Nullable final Color cursedColor, @Nullable final Color damnedColor, @Nullable final Color magicColor, @Nullable final Color blessedColor, @Nullable final Color appliedColor, @Nullable final Color unidentifiedColor, @Nullable final Color selectorColor, @Nullable final Color lockedColor, @Nullable final Color unpaidColor, @NotNull final Font font, @NotNull final Color nrofColor) {
+    public ItemPainter(@Nullable final Image cursedImage, @Nullable final Image damnedImage, @Nullable final Image magicImage, @Nullable final Image blessedImage, @Nullable final Image appliedImage, @Nullable final Image unidentifiedImage, @Nullable final Image selectorImage, @Nullable final Image lockedImage, @Nullable final Image unpaidImage, @Nullable final Color cursedColor, @Nullable final Color damnedColor, @Nullable final Color magicColor, @Nullable final Color blessedColor, @Nullable final Color appliedColor, @Nullable final Color unidentifiedColor, @Nullable final Color selectorColor, @Nullable final Color lockedColor, @Nullable final Color unpaidColor, @NotNull final Font font, @NotNull final Color nrofColor) {
         this.cursedImage = cursedImage;
         this.damnedImage = damnedImage;
         this.magicImage = magicImage;
@@ -244,17 +242,17 @@ public class ItemPainter {
      * @param minimumSize the minimum size
      * @param image the image
      */
-    private static void updateMinimumSize(@NotNull final Dimension minimumSize, @Nullable final RenderedImage image) {
+    private static void updateMinimumSize(@NotNull final Dimension minimumSize, @Nullable final Image image) {
         if (image == null) {
             return;
         }
 
-        final int width = image.getWidth();
+        final int width = image.getWidth(null);
         if (minimumSize.width < width) {
             minimumSize.width = width;
         }
 
-        final int height = image.getWidth();
+        final int height = image.getWidth(null);
         if (minimumSize.height < height) {
             minimumSize.height = height;
         }

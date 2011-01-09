@@ -27,8 +27,8 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.geom.RectangularShape;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -76,7 +76,7 @@ public class GUIDupTextGauge extends GUIDupGauge {
      * @param color the text color
      * @param font the text font
      */
-    public GUIDupTextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage pictureFullDiv, final BufferedImage pictureFullMod, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font) {
+    public GUIDupTextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image pictureFullDiv, final Image pictureFullMod, @NotNull final Image pictureEmpty, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font) {
         super(tooltipManager, elementListener, name, pictureFullDiv, pictureFullMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix);
         this.color = color;
         this.font = font;

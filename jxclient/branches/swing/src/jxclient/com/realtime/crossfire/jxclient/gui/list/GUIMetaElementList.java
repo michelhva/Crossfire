@@ -34,7 +34,7 @@ import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import java.awt.Font;
-import java.awt.image.BufferedImage;
+import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -77,7 +77,7 @@ public class GUIMetaElementList extends GUIList {
      * The image for drawing list entries.
      */
     @Nullable
-    private final BufferedImage image;
+    private final Image image;
 
     /**
      * The font for drawing list entries.
@@ -152,7 +152,7 @@ public class GUIMetaElementList extends GUIList {
      * @param comment the comment field to update; may be <code>null</code>
      * @param connectCommandList the command list to connect to the server
      */
-    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage image, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment, @NotNull final CommandList connectCommandList) {
+    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final Image image, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment, @NotNull final CommandList connectCommandList) {
         super(tooltipManager, elementListener, name, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", image, font, 0, format, tooltip)), connectCommandList);
         this.metaserverModel = metaserverModel;
         this.tooltipManager = tooltipManager;
