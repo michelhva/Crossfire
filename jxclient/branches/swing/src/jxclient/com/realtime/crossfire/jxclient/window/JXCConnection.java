@@ -66,10 +66,10 @@ public class JXCConnection {
     private final Settings settings;
 
     /**
-     * The {@link Frame} for updating the title.
+     * The {@link Frame} for updating the title or <code>null</code>.
      */
-    @NotNull
-    private final Frame frame;
+    @Nullable
+    private Frame frame = null;
 
     /**
      * The {@link Pickup} instance to update.
@@ -168,19 +168,25 @@ public class JXCConnection {
      * @param keybindingsManager the keybindings manager to update
      * @param shortcuts the shortcuts to update
      * @param settings the settings instance to use
-     * @param frame the frame instance for updating the title
      * @param characterPickup the character pickup instance to update
      * @param server the crossfire server connection instance used to connect
      * @param guiStateManager the gui state manager to watch
      */
-    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final Shortcuts shortcuts, @NotNull final Settings settings, @NotNull final Frame frame, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager) {
+    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final Shortcuts shortcuts, @NotNull final Settings settings, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager) {
         this.keybindingsManager = keybindingsManager;
         this.shortcuts = shortcuts;
         this.settings = settings;
-        this.frame = frame;
         this.characterPickup = characterPickup;
         this.server = server;
         guiStateManager.addGuiStateListener(guiStateListener);
+    }
+
+    /**
+     * Sets the {@link Frame} for updating the title.
+     * @param frame the frame or <code>null</code>
+     */
+    public void setFrame(@Nullable final Frame frame) {
+        this.frame = frame;
         updateTitle();
     }
 
@@ -240,13 +246,18 @@ public class JXCConnection {
      * Update the window title to reflect the current connection state.
      */
     private void updateTitle() {
-        if (hostname == null) {
-            frame.setTitle(TITLE_PREFIX);
-        } else if (character == null) {
-            frame.setTitle(TITLE_PREFIX+" - "+hostname);
-        } else {
-            frame.setTitle(TITLE_PREFIX+" - "+hostname+" - "+character);
+        if (frame == null) {
+            return;
         }
+        final String title;
+        if (hostname == null) {
+            title = TITLE_PREFIX;
+        } else if (character == null) {
+            title = TITLE_PREFIX+" - "+hostname;
+        } else {
+            title = TITLE_PREFIX+" - "+hostname+" - "+character;
+        }
+        frame.setTitle(title);
     }
 
     /**
