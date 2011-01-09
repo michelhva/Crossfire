@@ -22,6 +22,8 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import java.awt.Component;
 import org.jetbrains.annotations.NotNull;
 
@@ -58,7 +60,14 @@ public class ShowCommand implements GUICommand {
      */
     @Override
     public void execute() {
+        if (target.isVisible()) {
+            return;
+        }
         target.setVisible(true);
+        final Gui gui = GuiUtils.getGui(target);
+        if (gui != null) {
+            gui.resizeDialog();
+        }
     }
 
 }

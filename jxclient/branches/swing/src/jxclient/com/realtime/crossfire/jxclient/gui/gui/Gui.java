@@ -627,9 +627,7 @@ public class Gui extends JComponent {
             } else {
                 y = defaultY.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
             }
-            if (getWidth() == 0 || getHeight() == 0) {
-                setSize(preferredSize.width, preferredSize.height);
-            }
+            setSize(preferredSize.width, preferredSize.height);
             if (defaultX != null && defaultY != null) {
                 setPosition(x-preferredSize.width/2, y-preferredSize.height/2);
             }
@@ -680,6 +678,14 @@ public class Gui extends JComponent {
             newY = Math.max(Math.min(y, windowHeight-getHeight()), 0);
         }
         setPosition(newX, newY);
+    }
+
+    /**
+     * Resizes the dialog to make all components visible.
+     */
+    public void resizeDialog() {
+        setSize(getPreferredSize());
+        revalidate();
     }
 
 }
