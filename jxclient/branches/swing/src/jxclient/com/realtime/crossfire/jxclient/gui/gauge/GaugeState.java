@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -38,13 +37,13 @@ public class GaugeState {
      * The image representing a full gauge.
      */
     @Nullable
-    private final BufferedImage fullImage;
+    private final Image fullImage;
 
     /**
      * The image representing a more-than-empty gauge.
      */
     @Nullable
-    private final BufferedImage negativeImage;
+    private final Image negativeImage;
 
     /**
      * The preferred size of this component.
@@ -96,11 +95,11 @@ public class GaugeState {
      * @param dx the x-offset for drawing
      * @param dy the y-offset for drawing
      */
-    public GaugeState(@Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, final int dx, final int dy) {
+    public GaugeState(@Nullable final Image fullImage, @Nullable final Image negativeImage, final int dx, final int dy) {
         this.fullImage = fullImage;
         this.negativeImage = negativeImage;
-        final int preferredWidth = Math.max(fullImage == null ? 1 : fullImage.getWidth(), negativeImage == null ? 1 : negativeImage.getWidth());
-        final int preferredHeight = Math.max(fullImage == null ? 1 : fullImage.getHeight(), negativeImage == null ? 1 : negativeImage.getHeight());
+        final int preferredWidth = Math.max(Math.max(fullImage == null ? 1 : fullImage.getWidth(null), negativeImage == null ? 1 : negativeImage.getWidth(null)), 1);
+        final int preferredHeight = Math.max(Math.max(fullImage == null ? 1 : fullImage.getHeight(null), negativeImage == null ? 1 : negativeImage.getHeight(null)), 1);
         preferredSize = new Dimension(preferredWidth, preferredHeight);
         this.dx = dx;
         this.dy = dy;

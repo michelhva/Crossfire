@@ -29,7 +29,6 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Transparency;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -109,7 +108,7 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      */
-    public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage fullImageDiv, @NotNull final BufferedImage fullImageMod, @Nullable final Image emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix) {
+    public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image fullImageDiv, @NotNull final Image fullImageMod, @Nullable final Image emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         this.emptyImage = emptyImage;
         this.orientationDiv = orientationDiv;

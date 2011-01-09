@@ -27,8 +27,8 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.geom.RectangularShape;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -76,7 +76,7 @@ public class GUITextGauge extends GUIGauge {
      * @param font the text font
      * @param alpha transparency to draw with
      */
-    public GUITextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage pictureFull, @Nullable final BufferedImage pictureNegative, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font, final float alpha) {
+    public GUITextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image pictureFull, @Nullable final Image pictureNegative, @NotNull final Image pictureEmpty, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font, final float alpha) {
         super(tooltipManager, elementListener, name, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix, alpha);
         this.color = color;
         this.font = font;

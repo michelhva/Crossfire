@@ -30,7 +30,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -141,7 +140,7 @@ public class GUIDialogBackground extends AbstractGUIElement {
      * @param frameS The south frame picture.
      * @param frameSE The south-east frame picture.
      */
-    public GUIDialogBackground(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final float alpha, @NotNull final BufferedImage frameNW, @NotNull final BufferedImage frameN, @NotNull final BufferedImage frameNE, @NotNull final BufferedImage frameW, @NotNull final Image frameC, @NotNull final BufferedImage frameE, @NotNull final BufferedImage frameSW, @NotNull final BufferedImage frameS, @NotNull final BufferedImage frameSE) {
+    public GUIDialogBackground(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final float alpha, @NotNull final Image frameNW, @NotNull final Image frameN, @NotNull final Image frameNE, @NotNull final Image frameW, @NotNull final Image frameC, @NotNull final Image frameE, @NotNull final Image frameSW, @NotNull final Image frameS, @NotNull final Image frameSE) {
         super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.frameNW = frameNW;
         this.frameN = frameN;
@@ -153,32 +152,32 @@ public class GUIDialogBackground extends AbstractGUIElement {
         this.frameS = frameS;
         this.frameSE = frameSE;
         this.alpha = alpha;
-        heightN = frameN.getHeight();
-        heightS = frameS.getHeight();
-        widthW = frameW.getWidth();
-        widthE = frameE.getWidth();
-        if (frameNW.getWidth() != widthW) {
+        heightN = frameN.getHeight(null);
+        heightS = frameS.getHeight(null);
+        widthW = frameW.getWidth(null);
+        widthE = frameE.getWidth(null);
+        if (frameNW.getWidth(null) != widthW) {
             throw new IllegalArgumentException();
         }
-        if (frameSW.getWidth() != widthW) {
+        if (frameSW.getWidth(null) != widthW) {
             throw new IllegalArgumentException();
         }
-        if (frameNE.getWidth() != widthE) {
+        if (frameNE.getWidth(null) != widthE) {
             throw new IllegalArgumentException();
         }
-        if (frameSE.getWidth() != widthE) {
+        if (frameSE.getWidth(null) != widthE) {
             throw new IllegalArgumentException();
         }
-        if (frameNW.getHeight() != heightN) {
+        if (frameNW.getHeight(null) != heightN) {
             throw new IllegalArgumentException();
         }
-        if (frameSW.getHeight() != heightS) {
+        if (frameSW.getHeight(null) != heightS) {
             throw new IllegalArgumentException();
         }
-        if (frameNE.getHeight() != heightN) {
+        if (frameNE.getHeight(null) != heightN) {
             throw new IllegalArgumentException();
         }
-        if (frameSE.getHeight() != heightS) {
+        if (frameSE.getHeight(null) != heightS) {
             throw new IllegalArgumentException();
         }
     }

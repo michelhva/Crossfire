@@ -30,7 +30,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -99,7 +98,7 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      * <code>null</code> no tooltips are shown
      * @param alpha alpha value of the gauge to use
      */
-    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, final float alpha) {
+    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image fullImage, @Nullable final Image negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, final float alpha) {
         super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.emptyImage = emptyImage;
         this.orientation = orientation;
