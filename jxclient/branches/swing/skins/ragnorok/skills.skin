@@ -431,6 +431,42 @@ vertical begin seq
     end
   end
   begin par
+    act_fishing
+    act_flame_touch
+    begin seq
+      gap 1
+      begin par
+        label_fishing
+        label_flame_touch
+        res_fishing
+        res_flame_touch
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_clawing
+    begin seq
+      gap 1
+      begin par
+        label_clawing
+        res_clawing
+      end
+      gap 1
+    end
+  end
+  begin par
+    act_wraith_feed
+    begin seq
+      gap 1
+      begin par
+        label_wraith_feed
+        res_wraith_feed
+      end
+      gap 1
+    end
+  end
+  begin par
     act_jumping
     act_sense_magic
     act_praying
@@ -499,23 +535,11 @@ vertical begin seq
     end
   end
   begin par
-    act_fishing
-    act_flame_touch
-    act_clawing
-    act_wraith_feed
     act_set_traps
     act_sorcery
     begin seq
       gap 1
       begin par
-        label_fishing
-        label_flame_touch
-        label_clawing
-        label_wraith_feed
-        res_fishing
-        res_flame_touch
-        res_clawing
-        res_wraith_feed
         label_set_traps
         label_sorcery
         res_set_traps
