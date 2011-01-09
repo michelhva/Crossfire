@@ -119,20 +119,20 @@ public class DialogFactory {
 
     /**
      * Create a new instance. The border images must have matching sizes.
-     * @param frameNW The north-west frame picture.
-     * @param frameN The north frame picture.
-     * @param frameNE The north-east frame picture.
-     * @param frameW The west frame picture.
-     * @param frameC The center frame picture.
-     * @param frameE The east frame picture.
-     * @param frameSW The south-west frame picture.
-     * @param frameS The south frame picture.
-     * @param frameSE The south-east frame picture.
-     * @param titleFont The font for the dialog title.
-     * @param titleColor The color for the dialog title.
-     * @param titleBackgroundColor The background color for the dialog title.
-     * @param frameAlpha The alpha value for the dialog background except for
-     * the title.
+     * @param frameNW the north-west frame picture
+     * @param frameN the north frame picture
+     * @param frameNE the north-east frame picture
+     * @param frameW the west frame picture
+     * @param frameC the center frame picture
+     * @param frameE the east frame picture
+     * @param frameSW the south-west frame picture
+     * @param frameS the south frame picture
+     * @param frameSE the south-east frame picture
+     * @param titleFont the font for the dialog title
+     * @param titleColor the color for the dialog title
+     * @param titleBackgroundColor the background color for the dialog title
+     * @param frameAlpha the alpha value for the dialog background except for
+     * the title
      */
     public DialogFactory(@NotNull final Image frameNW, @NotNull final Image frameN, @NotNull final Image frameNE, @NotNull final Image frameW, @NotNull final Image frameC, @NotNull final Image frameE, @NotNull final Image frameSW, @NotNull final Image frameS, @NotNull final Image frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float frameAlpha) {
         this.frameNW = frameNW;
@@ -201,7 +201,7 @@ public class DialogFactory {
      * @param tooltipManager the tooltip manager to update
      * @param windowRenderer the window renderer the dialog belongs to
      * @param elementListener the element listener to notify
-     * @param title The dialog's title, or an empty string for no title.
+     * @param title the dialog's title, or an empty string for no title
      * @return the newly created GUI elements
      */
     @NotNull
@@ -218,7 +218,7 @@ public class DialogFactory {
 
     /**
      * Returns the alpha value for the frame background.
-     * @return alpha value, 1 is opaque and 0 totally transparent.
+     * @return alpha value, 1 is opaque and 0 totally transparent
      */
     public float getFrameAlpha() {
         return frameAlpha;
