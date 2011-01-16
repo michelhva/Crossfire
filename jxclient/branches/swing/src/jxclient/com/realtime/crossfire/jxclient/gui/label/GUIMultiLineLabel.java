@@ -114,6 +114,25 @@ public class GUIMultiLineLabel extends GUILabel {
     @Nullable
     @Override
     public Dimension getPreferredSize() {
+        return getTextSize();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return getTextSize();
+    }
+
+    /**
+     * Returns the minimal size of this component to display all of {@link
+     * #lines}.
+     * @return the size
+     */
+    @NotNull
+    private Dimension getTextSize() {
         final Font textFont = getTextFont();
 
         int width = 0;
@@ -128,15 +147,6 @@ public class GUIMultiLineLabel extends GUILabel {
         final int height = lines.length*rectangle.height;
 
         return new Dimension(width, height);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Nullable
-    @Override
-    public Dimension getMinimumSize() {
-        return getPreferredSize(); // XXX
     }
 
 }
