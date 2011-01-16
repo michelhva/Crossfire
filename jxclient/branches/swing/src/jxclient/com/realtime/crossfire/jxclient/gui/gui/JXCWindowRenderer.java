@@ -308,16 +308,6 @@ public class JXCWindowRenderer {
     private int offsetY = 0;
 
     /**
-     * The x-offset of the visible window.
-     */
-    private int offsetX2 = 0; // XXX: is redundant with offsetX
-
-    /**
-     * The y-offset of the visible window.
-     */
-    private int offsetY2 = 0;
-
-    /**
      * Records whether full-screen mode is active.
      */
     private boolean isFullScreen = false;
@@ -747,11 +737,8 @@ public class JXCWindowRenderer {
         bufferStrategy = frame.getBufferStrategy();
 
         final Insets insets = frame.getInsets();
-        debugScreenWrite("setResolutionPost: offset="+offsetX+"x"+offsetY);
-        offsetX2 = insets.left;
-        offsetY2 = insets.top;
-        offsetX = 0;//insets.left;
-        offsetY = 0;//insets.top;
+        offsetX = insets.left;
+        offsetY = insets.top;
         debugScreenWrite("setResolutionPost: offset="+offsetX+"x"+offsetY+" "+insets);
 
         debugScreenWrite("setResolutionPost: requesting focus");
@@ -859,7 +846,6 @@ public class JXCWindowRenderer {
                 assert bufferStrategy != null;
                 final Graphics g = bufferStrategy.getDrawGraphics();
                 try {
-                    g.translate(offsetX, offsetY);
                     assert bufferStrategy != null;
                     if (bufferStrategy.contentsRestored()) {
                         redrawBlack(g);
@@ -896,7 +882,6 @@ public class JXCWindowRenderer {
         for (int ig = 0; ig < 3; ig++) {
             assert bufferStrategy != null;
             final Graphics g = bufferStrategy.getDrawGraphics();
-            g.translate(offsetX, offsetY);
             redrawBlack(g);
             g.dispose();
             assert bufferStrategy != null;
@@ -1162,10 +1147,8 @@ public class JXCWindowRenderer {
                 }
             }
         } else {
-            mouse.x -= offsetX;
-            mouse.y -= offsetY;
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y)) {
-                final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x+offsetX, mouse.y+offsetY, 0, false);
+                final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.add(dialog);
                 assert !dialog.isHidden(rendererGuiState);
@@ -1206,8 +1189,6 @@ public class JXCWindowRenderer {
                 frame.validate();
             }
         } else {
-            mouse.x -= offsetX;
-            mouse.y -= offsetY;
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y)) {
                 final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
                 mouseTracker.mouseExited(mouseEvent);
@@ -1457,8 +1438,8 @@ public class JXCWindowRenderer {
 
     @Nullable
     private AbstractGUIElement manageMouseEvents(@NotNull final Gui gui, final int eX, final int eY) {
-        final int x = eX-offsetX2;
-        final int y = eY-offsetY2;
+        final int x = eX-offsetX;
+        final int y = eY-offsetY;
         return gui.getElementFromPoint(x, y);
     }
 
