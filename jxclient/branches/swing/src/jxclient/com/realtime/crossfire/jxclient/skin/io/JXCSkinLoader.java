@@ -2107,7 +2107,7 @@ public class JXCSkinLoader {
                     group.addGap(0, 1, Short.MAX_VALUE);
                 }
             } else {
-                final GUIElement element = definedGUIElements.lookup(cmd);
+                final AbstractGUIElement element = definedGUIElements.lookup(cmd);
                 if (!unreferencedElements.remove(element)) {
                     throw new IOException("layout defines element '"+element+"' more than once");
                 }
@@ -2125,9 +2125,9 @@ public class JXCSkinLoader {
                         pref = tmp;
                         max = tmp;
                     }
-                    group.addComponent((/*XXX*/Component)element, min, pref, max);
+                    group.addComponent(element, min, pref, max);
                 } else {
-                    group.addComponent((/*XXX*/Component)element);
+                    group.addComponent(element);
                 }
             }
             if (args.hasMore()) {
