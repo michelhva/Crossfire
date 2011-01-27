@@ -1,6 +1,10 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Remove some smoothface for cases where the smoothface does not exist -
+eliminates error during startup of server.
+MSW 2011-01-26
+
 Tweak base value of some weapons.
 MSW 2010-11-26
 
