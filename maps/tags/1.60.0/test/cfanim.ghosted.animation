@@ -1,0 +1,30 @@
+[Config]
+name= CFAnim ghosted
+victimtype= activator
+victim= activator
+unique= no
+always_delete= no
+paralyzed= yes
+time_representation= second
+errors_allowed= yes
+verbose= no
+animation= Animation
+invisible= no
+wizard= no
+[Animation]
+1 notice you're gonna see something unique!
+0 ghosted yes
+1 south
+1 south
+1 north
+1 north
+0 ghosted no
+1 notice I hope you enjoyed the view...
+[Teleport]
+0 ghosted yes
+0 notice it's gonna rock!
+1 south
+1 south
+1 south
+1 teleport 5 5 /HallOfSelection
+0 ghosted no
