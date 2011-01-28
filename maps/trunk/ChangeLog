@@ -1,10 +1,3545 @@
-Changes for SVN
-==============================================================================
+2010-12-30 20:12  ryo_saeba
 
+	* styles/specialmaps/powerroom: Let's say this capacity should be
+	  enough for now...
 
-==============================================================================
-Changes for 1.50.0
-==============================================================================
+2010-11-24 07:17  mwedel
+
+	* scorn/houses/house3.bas2: Change accented a from unicode format
+	  to utf8
+	  MSW 2010-11-23
+
+2010-11-22 22:41  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_toolshed,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_toolshed,
+	  azumauindo/zaseki_dzuki_ryoku/guild_toolshed,
+	  brest/black_shield/guild_toolshed,
+	  darcap/darcap/guilds/poisoned_dagger/guild_toolshed,
+	  darcap/darcap/guilds/smoking_cauldron/guild_toolshed,
+	  euthville/green_goblin/guild_toolshed,
+	  lake_country/Butakis/mockers/guild_toolshed,
+	  navar_city/dreaming_sage/guild_toolshed,
+	  pup_land/guilds/laughing_skull/guild_toolshed,
+	  pup_land/guilds/purple_butterfly/guild_toolshed,
+	  santo_dominion/guilds/drunken_barbarian/guild_toolshed,
+	  scorn/guilds/mailed_fist/guild_toolshed,
+	  templates/guild/guild_toolshed,
+	  wolfsburg/guilds/damned_heretics/guild_toolshed: Fix guild
+	  toolshed. Patch courtesy Khaleh.
+
+2010-11-22 22:19  ryo_saeba
+
+	* python/guilds/guildoracle.py: Fix accidental french :)
+
+2010-11-22 22:00  ryo_saeba
+
+	* python/guilds/guildoracle.py: Format 'info' result in a friendler
+	  way.
+
+2010-11-20 16:04  ryo_saeba
+
+	* python/guilds/guildoracle.py: Slightly improve the list command.
+	  Fix misplaced newline.
+
+2010-11-20 15:47  ryo_saeba
+
+	* python/guilds/arrest.py: Do not attempt arresting things like
+	  traps, please.
+
+2010-11-20 15:25  ryo_saeba
+
+	* python/CFGuildClearance.py: Fix script.
+
+2010-11-20 15:12  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/mainfloor,
+	  azumauindo/zaseki_dzuki_ryoku/mainfloor,
+	  brest/black_shield/mainfloor,
+	  darcap/darcap/guilds/poisoned_dagger/mainfloor,
+	  darcap/darcap/guilds/smoking_cauldron/mainfloor,
+	  euthville/green_goblin/mainfloor,
+	  lake_country/Butakis/mockers/mainfloor,
+	  navar_city/dreaming_sage/mainfloor,
+	  pup_land/guilds/laughing_skull/mainfloor,
+	  pup_land/guilds/purple_butterfly/mainfloor,
+	  santo_dominion/guilds/drunken_barbarian/mainfloor,
+	  scorn/guilds/mailed_fist/mainfloor, templates/guild/mainfloor,
+	  wolfsburg/guilds/damned_heretics/mainfloor: Fix rune of healing.
+	  Givee traps unlimited uses.
+
+2010-11-20 11:18  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  brest/black_shield/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  euthville/green_goblin/secondfloor,
+	  lake_country/Butakis/mockers/secondfloor,
+	  navar_city/dreaming_sage/secondfloor,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  scorn/guilds/mailed_fist/secondfloor,
+	  templates/guild/secondfloor,
+	  wolfsburg/guilds/damned_heretics/secondfloor: Fix invalid food
+	  value for jeweler access (required 200 instead of 100).
+
+2010-11-20 11:17  ryo_saeba
+
+	* python/guilds/guild_dues.py: Use actual deposit value instead of
+	  hardcoded value.
+
+2010-11-20 11:16  ryo_saeba
+
+	* python/CFGuildClearance.py: Fix issue when message is not
+	  defined.
+
+2010-11-20 09:59  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_alchemy,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_alchemy,
+	  azumauindo/zaseki_dzuki_ryoku/guild_alchemy,
+	  brest/black_shield/guild_alchemy,
+	  darcap/darcap/guilds/poisoned_dagger/guild_alchemy,
+	  darcap/darcap/guilds/smoking_cauldron/guild_alchemy,
+	  euthville/green_goblin/guild_alchemy,
+	  lake_country/Butakis/mockers/guild_alchemy,
+	  navar_city/dreaming_sage/guild_alchemy,
+	  pup_land/guilds/laughing_skull/guild_alchemy,
+	  pup_land/guilds/purple_butterfly/guild_alchemy,
+	  santo_dominion/guilds/drunken_barbarian/guild_alchemy,
+	  scorn/guilds/mailed_fist/guild_alchemy,
+	  templates/guild/guild_alchemy,
+	  wolfsburg/guilds/damned_heretics/guild_alchemy: Add missing
+	  unique flag in alchemy lab.
+
+2010-11-20 09:08  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/mainfloor,
+	  azumauindo/zaseki_dzuki_ryoku/mainfloor,
+	  brest/black_shield/mainfloor,
+	  darcap/darcap/guilds/poisoned_dagger/mainfloor,
+	  darcap/darcap/guilds/smoking_cauldron/mainfloor,
+	  euthville/green_goblin/mainfloor,
+	  lake_country/Butakis/mockers/mainfloor,
+	  navar_city/dreaming_sage/mainfloor,
+	  pup_land/guilds/laughing_skull/mainfloor,
+	  pup_land/guilds/purple_butterfly/mainfloor, python/guilds,
+	  santo_dominion/guilds/drunken_barbarian/mainfloor,
+	  scorn/guilds/mailed_fist/mainfloor, templates/guild/mainfloor,
+	  wolfsburg/guilds/damned_heretics/mainfloor: Fix guild BBQ
+	  disappearing because the spot is not unique.
+
+2010-11-19 00:21  Alestan
+
+	* darcap/darcap/petshop: Added pet shop
+
+2010-11-19 00:20  Alestan
+
+	* world/world_116_102: Added pet shop entrance
+
+2010-11-14 16:32  ryo_saeba
+
+	* world/world_105_113: Fix wrong path to storage room.
+
+2010-11-14 14:22  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_jeweler,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_thaum,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_jeweler,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_thaum,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/guild_jeweler,
+	  azumauindo/zaseki_dzuki_ryoku/guild_thaum,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  brest/black_shield/guild_jeweler, brest/black_shield/guild_thaum,
+	  brest/black_shield/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/guild_jeweler,
+	  darcap/darcap/guilds/poisoned_dagger/guild_thaum,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/guild_jeweler,
+	  darcap/darcap/guilds/smoking_cauldron/guild_thaum,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  euthville/green_goblin/guild_jeweler,
+	  euthville/green_goblin/guild_thaum,
+	  euthville/green_goblin/secondfloor,
+	  lake_country/Butakis/mockers/guild_jeweler,
+	  lake_country/Butakis/mockers/guild_thaum,
+	  lake_country/Butakis/mockers/secondfloor,
+	  navar_city/dreaming_sage/guild_jeweler,
+	  navar_city/dreaming_sage/guild_thaum,
+	  navar_city/dreaming_sage/secondfloor,
+	  pup_land/guilds/laughing_skull/guild_jeweler,
+	  pup_land/guilds/laughing_skull/guild_thaum,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/purple_butterfly/guild_jeweler,
+	  pup_land/guilds/purple_butterfly/guild_thaum,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/guild_jeweler,
+	  santo_dominion/guilds/drunken_barbarian/guild_thaum,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  scorn/guilds/mailed_fist/guild_jeweler,
+	  scorn/guilds/mailed_fist/guild_thaum,
+	  scorn/guilds/mailed_fist/secondfloor,
+	  templates/guild/guild_jeweler, templates/guild/guild_thaum,
+	  templates/guild/secondfloor,
+	  wolfsburg/guilds/damned_heretics/guild_jeweler,
+	  wolfsburg/guilds/damned_heretics/guild_thaum,
+	  wolfsburg/guilds/damned_heretics/secondfloor: Fix card names.
+	  Disable suspicious wall without spell.
+
+2010-11-14 14:21  ryo_saeba
+
+	* python/guilds/guild_dues.py: Rewrite.
+
+2010-11-05 21:48  akirschbaum
+
+	* pup_land/nurnberg/alshop, scorn/shops/bowshop,
+	  scorn/shops/light_shop, scorn/shops/magicshop,
+	  unlinked/kandora/dd_alchemy2, unlinked/kandora/dd_market,
+	  unlinked/kandora/elcyon/g_store: Mark items on shop tiles as
+	  either unpaid or no_pick.
+
+2010-11-05 21:22  akirschbaum
+
+	* azumauindo/suno-yamatoshi/shops/pawn1, brest/shops/brest.armour,
+	  brest/shops/brest.cvt, darcap/darcap/fishing,
+	  editor/scripts/MapValidator, euthville/magic.shop,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore2f,
+	  mlab/citydeclouds/citydeclouds2E, navar_city/bow_shop,
+	  pup_land/ancient/castle/gothwolte.2,
+	  pup_land/lone_town/shops/transport.shoppe,
+	  quests/peterm/Nethack_in_crossfire_entrance,
+	  santo_dominion/lord_byron/main, santo_dominion/lord_byron/weapon,
+	  santo_dominion/map.and.sale, scorn/misc/testing_area,
+	  scorn/shops/armourshop, scorn/shops/bowshop, scorn/shops/gemshop,
+	  scorn/shops/generalshop, scorn/shops/light_shop,
+	  scorn/shops/magicshop, scorn/shops/weaponshop,
+	  styles/specialmaps/minitrade, styles/specialmaps/tinytrade,
+	  styles/specialmaps/tradingpost, unlinked/tutorial1,
+	  wolfsburg/shops/transport.shoppe: Fix maps that allow stealing
+	  unpaid items from shops.
+
+2010-11-03 07:21  akirschbaum
+
+	* editor/scripts/WorldMaker: Whitespace changes.
+
+2010-10-23 09:19  ryo_saeba
+
+	* python/maps/darcap/manor.py: Make explicit that the player must
+	  give a number.
+
+2010-10-23 08:58  ryo_saeba
+
+	* darcap/darcap/manor.white: Prevent dimension door through
+	  windows, reminder courtesy Khaleh.
+
+2010-10-23 08:45  ryo_saeba
+
+	* darcap/darcap/manor.brown: Kaptel can't be charmed. Prevent
+	  dimension door to bypass doors.
+
+2010-10-23 08:44  ryo_saeba
+
+	* darcap/darcap/manor.treasure: Prevent dimension door use to
+	  bypass doors.
+
+2010-10-23 08:41  ryo_saeba
+
+	* darcap/darcap/manor.white: Prevent dimension door use to bypass
+	  doors.
+
+2010-10-23 08:41  ryo_saeba
+
+	* darcap/darcap/manor.blue: Prevent dimension door use to reach the
+	  key.
+
+2010-10-17 16:07  ryo_saeba
+
+	* darcap/darcap/manor.ground, darcap/darcap/manor.treasure,
+	  darcap/darcap/manor.white, python/maps/darcap/manor.py: White
+	  zone of Darcap's Manor.
+
+2010-10-17 11:31  ryo_saeba
+
+	* darcap/darcap/manor.brown: Add missing tiles.
+
+2010-10-17 11:23  ryo_saeba
+
+	* darcap/darcap/manor.brown, darcap/darcap/manor.ground,
+	  darcap/darcap/manor.treasure, python/maps/darcap/manor.py:
+	  Darcap's Manor, brown zone, with hopefully a nice challenge.
+
+2010-10-17 08:28  ryo_saeba
+
+	* darcap/raffle/raffle1_u1: Add an emergency exit to the first
+	  Raffle floor, to let people escape after a map reset.
+
+2010-10-17 08:27  ryo_saeba
+
+	* pup_land/raffle/raffle1_u1: Add an emergency exit to the first
+	  Raffle floor, to let people escape after a map reset.
+
+2010-10-10 19:06  ryo_saeba
+
+	* darcap/darcap/manor.blue, darcap/darcap/manor.ground,
+	  darcap/darcap/manor.treasure, python/maps/darcap,
+	  python/maps/darcap/manor.py, world/world_116_102: Darcap Manor,
+	  bases. More to come later.
+
+2010-10-10 11:25  ryo_saeba
+
+	* python/guilds/guild_dues.py: Display balance in a nicer way.
+	  Better 'buy' list.
+
+2010-10-06 18:38  anmaster
+
+	* python/guilds/arrest.py: Fix /python/guilds/arrest.py, it just
+	  kept throwing errors into server stderr...
+
+2010-09-25 08:00  ryo_saeba
+
+	* test/find_by_arch_name, test/find_by_arch_name.py: Misc tests.
+
+2010-09-25 07:58  ryo_saeba
+
+	* santo_dominion/guilds/drunken_barbarian/guildman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/guildmaster_lounge,
+	  santo_dominion/guilds/drunken_barbarian/journeyman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/master_lounge,
+	  santo_dominion/guilds/drunken_barbarian/novice_lounge: Fix walls
+	  and floors for correct building. Remove superfluous floors and
+	  walls.
+
+2010-09-25 07:58  ryo_saeba
+
+	* brest/black_shield/guildman_lounge,
+	  brest/black_shield/guildmaster_lounge,
+	  brest/black_shield/journeyman_lounge,
+	  brest/black_shield/master_lounge,
+	  brest/black_shield/novice_lounge,
+	  scorn/guilds/mailed_fist/guildman_lounge,
+	  scorn/guilds/mailed_fist/guildmaster_lounge,
+	  scorn/guilds/mailed_fist/journeyman_lounge,
+	  scorn/guilds/mailed_fist/master_lounge,
+	  scorn/guilds/mailed_fist/novice_lounge: Fix walls and floors for
+	  correct building. Remove superfluous floors and walls.
+
+2010-09-25 07:57  ryo_saeba
+
+	* darcap/darcap/guilds/poisoned_dagger/guildman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/guildmaster_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/journeyman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/master_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/novice_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/guildman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/guildmaster_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/journeyman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/master_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/novice_lounge: Fix walls
+	  and floors for correct building. Remove superfluous floors and
+	  walls.
+
+2010-09-25 07:57  ryo_saeba
+
+	* euthville/green_goblin/guildman_lounge,
+	  euthville/green_goblin/guildmaster_lounge,
+	  euthville/green_goblin/journeyman_lounge,
+	  euthville/green_goblin/master_lounge,
+	  euthville/green_goblin/novice_lounge,
+	  navar_city/dreaming_sage/guildman_lounge,
+	  navar_city/dreaming_sage/guildmaster_lounge,
+	  navar_city/dreaming_sage/journeyman_lounge,
+	  navar_city/dreaming_sage/master_lounge,
+	  navar_city/dreaming_sage/novice_lounge: Fix walls and floors for
+	  correct building. Remove superfluous floors and walls.
+
+2010-09-25 07:56  ryo_saeba
+
+	* pup_land/guilds/laughing_skull/guildman_lounge,
+	  pup_land/guilds/laughing_skull/guildmaster_lounge,
+	  pup_land/guilds/laughing_skull/journeyman_lounge,
+	  pup_land/guilds/laughing_skull/master_lounge,
+	  pup_land/guilds/laughing_skull/novice_lounge,
+	  pup_land/guilds/purple_butterfly/guildman_lounge,
+	  pup_land/guilds/purple_butterfly/guildmaster_lounge,
+	  pup_land/guilds/purple_butterfly/journeyman_lounge,
+	  pup_land/guilds/purple_butterfly/master_lounge,
+	  pup_land/guilds/purple_butterfly/novice_lounge: Fix walls and
+	  floors for correct building. Remove superfluous floors and walls.
+
+2010-09-25 07:56  ryo_saeba
+
+	* lake_country/Butakis/mockers/guildman_lounge,
+	  lake_country/Butakis/mockers/guildmaster_lounge,
+	  lake_country/Butakis/mockers/journeyman_lounge,
+	  lake_country/Butakis/mockers/master_lounge,
+	  lake_country/Butakis/mockers/novice_lounge,
+	  wolfsburg/guilds/damned_heretics/guildman_lounge,
+	  wolfsburg/guilds/damned_heretics/guildmaster_lounge,
+	  wolfsburg/guilds/damned_heretics/journeyman_lounge,
+	  wolfsburg/guilds/damned_heretics/master_lounge,
+	  wolfsburg/guilds/damned_heretics/novice_lounge: Fix walls and
+	  floors for correct building. Remove superfluous floors and walls.
+
+2010-09-25 07:55  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guildman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildmaster_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/journeyman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/master_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/novice_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildmaster_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/journeyman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/master_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/novice_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/guildman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/guildmaster_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/journeyman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/master_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/novice_lounge: Fix walls and floors
+	  for correct building. Remove superfluous floors and walls.
+
+2010-09-25 07:53  ryo_saeba
+
+	* templates/guild/guildman_lounge,
+	  templates/guild/guildmaster_lounge,
+	  templates/guild/journeyman_lounge, templates/guild/master_lounge,
+	  templates/guild/novice_lounge: Fix walls and floors for correct
+	  building. Remove superfluous floors and walls.
+
+2010-09-25 07:53  ryo_saeba
+
+	* test/playermover: Test for mover moving doors.
+
+2010-09-11 13:18  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/basement,
+	  azumauindo/suno-yamatoshi/nenshou_youso/basement,
+	  azumauindo/zaseki_dzuki_ryoku/basement,
+	  brest/black_shield/basement,
+	  darcap/darcap/guilds/poisoned_dagger/basement,
+	  darcap/darcap/guilds/smoking_cauldron/basement,
+	  euthville/green_goblin/basement,
+	  lake_country/Butakis/mockers/basement,
+	  navar_city/dreaming_sage/basement,
+	  pup_land/guilds/laughing_skull/basement,
+	  pup_land/guilds/purple_butterfly/basement,
+	  santo_dominion/guilds/drunken_barbarian/basement,
+	  scorn/guilds/mailed_fist/basement, templates/guild/basement,
+	  wolfsburg/guilds/damned_heretics/basement: Fix potions names for
+	  guild altar basements.
+
+2010-09-07 18:16  Alestan
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_hq,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_hq,
+	  azumauindo/zaseki_dzuki_ryoku/guild_hq,
+	  brest/black_shield/guild_hq,
+	  darcap/darcap/guilds/poisoned_dagger/guild_hq,
+	  darcap/darcap/guilds/smoking_cauldron/guild_hq,
+	  euthville/green_goblin/guild_hq,
+	  lake_country/Butakis/mockers/guild_hq,
+	  navar_city/dreaming_sage/guild_hq,
+	  pup_land/guilds/laughing_skull/guild_hq,
+	  pup_land/guilds/purple_butterfly/guild_hq,
+	  santo_dominion/guilds/drunken_barbarian/guild_hq,
+	  scorn/guilds/mailed_fist/guild_hq, templates/guild/guild_hq,
+	  wolfsburg/guilds/damned_heretics/guild_hq: fixed details in
+	  guild_hq
+
+2010-09-07 16:37  Alestan
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/journeyman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/master_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/journeyman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/master_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/journeyman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/master_lounge,
+	  brest/black_shield/journeyman_lounge,
+	  brest/black_shield/master_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/journeyman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/master_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/journeyman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/master_lounge,
+	  euthville/green_goblin/journeyman_lounge,
+	  euthville/green_goblin/master_lounge,
+	  lake_country/Butakis/mockers/journeyman_lounge,
+	  lake_country/Butakis/mockers/master_lounge,
+	  navar_city/dreaming_sage/journeyman_lounge,
+	  navar_city/dreaming_sage/master_lounge,
+	  pup_land/guilds/laughing_skull/journeyman_lounge,
+	  pup_land/guilds/laughing_skull/master_lounge,
+	  pup_land/guilds/purple_butterfly/journeyman_lounge,
+	  pup_land/guilds/purple_butterfly/master_lounge,
+	  santo_dominion/guilds/drunken_barbarian/journeyman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/master_lounge,
+	  scorn/guilds/mailed_fist/journeyman_lounge,
+	  scorn/guilds/mailed_fist/master_lounge,
+	  templates/guild/journeyman_lounge, templates/guild/master_lounge,
+	  wolfsburg/guilds/damned_heretics/journeyman_lounge,
+	  wolfsburg/guilds/damned_heretics/master_lounge: fixed a bug where
+	  a square was unique that shouldn't have been
+
+2010-09-07 16:28  alestan
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guildman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/guildman_lounge,
+	  brest/black_shield/guildman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/guildman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/guildman_lounge,
+	  euthville/green_goblin/guildman_lounge,
+	  lake_country/Butakis/mockers/guildman_lounge,
+	  navar_city/dreaming_sage/guildman_lounge,
+	  pup_land/guilds/laughing_skull/guildman_lounge,
+	  pup_land/guilds/purple_butterfly/guildman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/guildman_lounge,
+	  scorn/guilds/mailed_fist/guildman_lounge,
+	  templates/guild/convertall.py, templates/guild/guildman_lounge,
+	  templates/guild/hallofjoining,
+	  wolfsburg/guilds/damned_heretics/guildman_lounge: fixed a bug
+	  where a square was unique that shouldn't have been
+
+2010-09-07 02:59  Alestan
+
+	* python/guilds/guild_dues.py: fixed problems caused by svn up.
+
+2010-09-07 02:42  Alestan
+
+	* python/guilds/guild_dues.py: fixed syntax error.
+
+2010-09-07 01:50  Alestan
+
+	* python/CFGuildClearance.py: fixed synatax error
+
+2010-09-07 01:34  Alestan
+
+	* python/guilds/guildoracle.py: fixed synatax error
+
+2010-09-07 01:32  Alestan
+
+	* python/guilds/guildoracle.py: changed syntax to support python
+	  2.5.x
+
+2010-09-07 01:29  Alestan
+
+	* python/guilds/guildoracle.py: changed syntax to support python
+	  2.5.x
+
+2010-09-07 01:10  Alestan
+
+	* python/CFGuildClearance.py: Changed syntax to support python
+	  2.5.x
+
+2010-09-07 00:38  Alestan
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/basement,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_hq,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_toolshed,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildmaster_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/hallofjoining,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/journeyman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/master_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/novice_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
+	  azumauindo/suno-yamatoshi/nenshou_youso/basement,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_hq,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_toolshed,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildmaster_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/hallofjoining,
+	  azumauindo/suno-yamatoshi/nenshou_youso/journeyman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/mainfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/master_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/novice_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room,
+	  azumauindo/zaseki_dzuki_ryoku/basement,
+	  azumauindo/zaseki_dzuki_ryoku/guild_hq,
+	  azumauindo/zaseki_dzuki_ryoku/guild_toolshed,
+	  azumauindo/zaseki_dzuki_ryoku/guildman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/guildmaster_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/hallofjoining,
+	  azumauindo/zaseki_dzuki_ryoku/journeyman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/mainfloor,
+	  azumauindo/zaseki_dzuki_ryoku/master_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/novice_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room,
+	  brest/black_shield/basement, brest/black_shield/guild_hq,
+	  brest/black_shield/guild_toolshed,
+	  brest/black_shield/guildman_lounge,
+	  brest/black_shield/guildmaster_lounge,
+	  brest/black_shield/hallofjoining,
+	  brest/black_shield/journeyman_lounge,
+	  brest/black_shield/mainfloor, brest/black_shield/master_lounge,
+	  brest/black_shield/novice_lounge, brest/black_shield/secondfloor,
+	  brest/black_shield/storage_room,
+	  darcap/darcap/guilds/poisoned_dagger/basement,
+	  darcap/darcap/guilds/poisoned_dagger/guild_hq,
+	  darcap/darcap/guilds/poisoned_dagger/guild_toolshed,
+	  darcap/darcap/guilds/poisoned_dagger/guildman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/guildmaster_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/hallofjoining,
+	  darcap/darcap/guilds/poisoned_dagger/journeyman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/mainfloor,
+	  darcap/darcap/guilds/poisoned_dagger/master_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/novice_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room,
+	  darcap/darcap/guilds/smoking_cauldron/basement,
+	  darcap/darcap/guilds/smoking_cauldron/guild_hq,
+	  darcap/darcap/guilds/smoking_cauldron/guild_toolshed,
+	  darcap/darcap/guilds/smoking_cauldron/guildman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/guildmaster_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/hallofjoining,
+	  darcap/darcap/guilds/smoking_cauldron/journeyman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/mainfloor,
+	  darcap/darcap/guilds/smoking_cauldron/master_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/novice_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room,
+	  euthville/green_goblin/basement, euthville/green_goblin/guild_hq,
+	  euthville/green_goblin/guild_toolshed,
+	  euthville/green_goblin/guildman_lounge,
+	  euthville/green_goblin/guildmaster_lounge,
+	  euthville/green_goblin/hallofjoining,
+	  euthville/green_goblin/journeyman_lounge,
+	  euthville/green_goblin/mainfloor,
+	  euthville/green_goblin/master_lounge,
+	  euthville/green_goblin/novice_lounge,
+	  euthville/green_goblin/secondfloor,
+	  euthville/green_goblin/storage_room,
+	  lake_country/Butakis/mockers/basement,
+	  lake_country/Butakis/mockers/guild_hq,
+	  lake_country/Butakis/mockers/guild_toolshed,
+	  lake_country/Butakis/mockers/guildman_lounge,
+	  lake_country/Butakis/mockers/guildmaster_lounge,
+	  lake_country/Butakis/mockers/hallofjoining,
+	  lake_country/Butakis/mockers/journeyman_lounge,
+	  lake_country/Butakis/mockers/mainfloor,
+	  lake_country/Butakis/mockers/master_lounge,
+	  lake_country/Butakis/mockers/novice_lounge,
+	  lake_country/Butakis/mockers/secondfloor,
+	  lake_country/Butakis/mockers/storage_room,
+	  navar_city/dreaming_sage/basement,
+	  navar_city/dreaming_sage/guild_hq,
+	  navar_city/dreaming_sage/guild_toolshed,
+	  navar_city/dreaming_sage/guildman_lounge,
+	  navar_city/dreaming_sage/guildmaster_lounge,
+	  navar_city/dreaming_sage/hallofjoining,
+	  navar_city/dreaming_sage/journeyman_lounge,
+	  navar_city/dreaming_sage/mainfloor,
+	  navar_city/dreaming_sage/master_lounge,
+	  navar_city/dreaming_sage/novice_lounge,
+	  navar_city/dreaming_sage/secondfloor,
+	  navar_city/dreaming_sage/storage_room,
+	  pup_land/guilds/laughing_skull/basement,
+	  pup_land/guilds/laughing_skull/guild_hq,
+	  pup_land/guilds/laughing_skull/guild_toolshed,
+	  pup_land/guilds/laughing_skull/guildman_lounge,
+	  pup_land/guilds/laughing_skull/guildmaster_lounge,
+	  pup_land/guilds/laughing_skull/hallofjoining,
+	  pup_land/guilds/laughing_skull/journeyman_lounge,
+	  pup_land/guilds/laughing_skull/mainfloor,
+	  pup_land/guilds/laughing_skull/master_lounge,
+	  pup_land/guilds/laughing_skull/novice_lounge,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/purple_butterfly/basement,
+	  pup_land/guilds/purple_butterfly/guild_hq,
+	  pup_land/guilds/purple_butterfly/guild_toolshed,
+	  pup_land/guilds/purple_butterfly/guildman_lounge,
+	  pup_land/guilds/purple_butterfly/guildmaster_lounge,
+	  pup_land/guilds/purple_butterfly/hallofjoining,
+	  pup_land/guilds/purple_butterfly/journeyman_lounge,
+	  pup_land/guilds/purple_butterfly/mainfloor,
+	  pup_land/guilds/purple_butterfly/master_lounge,
+	  pup_land/guilds/purple_butterfly/novice_lounge,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  python/CFGuildClearance.py, python/guilds/README.txt,
+	  python/guilds/arrest.py, python/guilds/clearance.py,
+	  python/guilds/guild_dues.py, python/guilds/guild_entry.py,
+	  python/guilds/guildbuy.py, python/guilds/guildoracle.py,
+	  python/guilds/guildpay.py, python/guilds/guildstorage.py,
+	  python/guilds/storage_entry.py, python/guilds/trigger.py,
+	  santo_dominion/guilds/drunken_barbarian/basement,
+	  santo_dominion/guilds/drunken_barbarian/guild_hq,
+	  santo_dominion/guilds/drunken_barbarian/guild_toolshed,
+	  santo_dominion/guilds/drunken_barbarian/guildman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/guildmaster_lounge,
+	  santo_dominion/guilds/drunken_barbarian/hallofjoining,
+	  santo_dominion/guilds/drunken_barbarian/journeyman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/mainfloor,
+	  santo_dominion/guilds/drunken_barbarian/master_lounge,
+	  santo_dominion/guilds/drunken_barbarian/novice_lounge,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/storage_room,
+	  scorn/guilds/mailed_fist/basement,
+	  scorn/guilds/mailed_fist/guild_hq,
+	  scorn/guilds/mailed_fist/guild_toolshed,
+	  scorn/guilds/mailed_fist/guildman_lounge,
+	  scorn/guilds/mailed_fist/guildmaster_lounge,
+	  scorn/guilds/mailed_fist/hallofjoining,
+	  scorn/guilds/mailed_fist/journeyman_lounge,
+	  scorn/guilds/mailed_fist/mainfloor,
+	  scorn/guilds/mailed_fist/master_lounge,
+	  scorn/guilds/mailed_fist/novice_lounge,
+	  scorn/guilds/mailed_fist/secondfloor,
+	  scorn/guilds/mailed_fist/storage_room,
+	  wolfsburg/guilds/damned_heretics/basement,
+	  wolfsburg/guilds/damned_heretics/guild_hq,
+	  wolfsburg/guilds/damned_heretics/guild_toolshed,
+	  wolfsburg/guilds/damned_heretics/guildman_lounge,
+	  wolfsburg/guilds/damned_heretics/guildmaster_lounge,
+	  wolfsburg/guilds/damned_heretics/hallofjoining,
+	  wolfsburg/guilds/damned_heretics/journeyman_lounge,
+	  wolfsburg/guilds/damned_heretics/mainfloor,
+	  wolfsburg/guilds/damned_heretics/master_lounge,
+	  wolfsburg/guilds/damned_heretics/novice_lounge,
+	  wolfsburg/guilds/damned_heretics/secondfloor,
+	  wolfsburg/guilds/damned_heretics/storage_room: added a common
+	  clearance checker for the guilds and rewrote parts of the guild
+	  scripts. Also updated the guild maps to use the new scripts
+
+2010-09-07 00:07  Alestan
+
+	* templates/guild/basement, templates/guild/bigchest,
+	  templates/guild/convert.py, templates/guild/convertall.py,
+	  templates/guild/guild_hq, templates/guild/guild_toolshed,
+	  templates/guild/guildman_lounge,
+	  templates/guild/guildmaster_lounge,
+	  templates/guild/journeyman_lounge, templates/guild/mainfloor,
+	  templates/guild/master_lounge, templates/guild/novice_lounge,
+	  templates/guild/secondfloor, templates/guild/storage_hall.0,
+	  templates/guild/storage_room: fixed several minor bugs (duplicate
+	  floor tiles and the like) and made compatible with the new
+	  pythons cripts
+
+2010-09-04 10:58  ryo_saeba
+
+	* lake_country/Butakis/mockers/basement,
+	  lake_country/Butakis/mockers/guild_hq,
+	  lake_country/Butakis/mockers/guild_tan,
+	  lake_country/Butakis/mockers/guildman_lounge,
+	  lake_country/Butakis/mockers/guildmaster_lounge,
+	  lake_country/Butakis/mockers/journeyman_lounge,
+	  lake_country/Butakis/mockers/mainfloor,
+	  lake_country/Butakis/mockers/master_lounge,
+	  lake_country/Butakis/mockers/novice_lounge,
+	  lake_country/Butakis/mockers/secondfloor,
+	  lake_country/Butakis/mockers/storage_room: Fix guild.
+
+2010-09-04 10:57  ryo_saeba
+
+	* lake_country/Butakis/Butakis0, lake_country/Butakis/gate_inner:
+	  Fix exits to guild.
+
+2010-09-04 10:56  ryo_saeba
+
+	* brest/black_shield/basement, brest/black_shield/guild_hq,
+	  brest/black_shield/guild_tan, brest/black_shield/guildman_lounge,
+	  brest/black_shield/guildmaster_lounge,
+	  brest/black_shield/journeyman_lounge,
+	  brest/black_shield/master_lounge,
+	  brest/black_shield/novice_lounge, brest/black_shield/secondfloor,
+	  brest/black_shield/storage_room,
+	  darcap/darcap/guilds/poisoned_dagger/basement,
+	  darcap/darcap/guilds/poisoned_dagger/guild_hq,
+	  darcap/darcap/guilds/poisoned_dagger/guild_tan,
+	  darcap/darcap/guilds/poisoned_dagger/guildman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/guildmaster_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/hallofjoining,
+	  darcap/darcap/guilds/poisoned_dagger/journeyman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/master_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/novice_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room,
+	  darcap/darcap/guilds/smoking_cauldron/basement,
+	  darcap/darcap/guilds/smoking_cauldron/guild_hq,
+	  darcap/darcap/guilds/smoking_cauldron/guild_tan,
+	  darcap/darcap/guilds/smoking_cauldron/guildman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/guildmaster_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/journeyman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/master_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/novice_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room,
+	  euthville/green_goblin/basement, euthville/green_goblin/guild_hq,
+	  euthville/green_goblin/guild_tan,
+	  euthville/green_goblin/guildman_lounge,
+	  euthville/green_goblin/guildmaster_lounge,
+	  euthville/green_goblin/journeyman_lounge,
+	  euthville/green_goblin/master_lounge,
+	  euthville/green_goblin/novice_lounge,
+	  euthville/green_goblin/secondfloor,
+	  euthville/green_goblin/storage_room,
+	  navar_city/dreaming_sage/basement,
+	  navar_city/dreaming_sage/guild_hq,
+	  navar_city/dreaming_sage/guild_tan,
+	  navar_city/dreaming_sage/guildman_lounge,
+	  navar_city/dreaming_sage/guildmaster_lounge,
+	  navar_city/dreaming_sage/journeyman_lounge,
+	  navar_city/dreaming_sage/master_lounge,
+	  navar_city/dreaming_sage/novice_lounge,
+	  navar_city/dreaming_sage/secondfloor,
+	  navar_city/dreaming_sage/storage_room,
+	  scorn/guilds/mailed_fist/basement,
+	  scorn/guilds/mailed_fist/guild_hq,
+	  scorn/guilds/mailed_fist/guild_tan,
+	  scorn/guilds/mailed_fist/guildman_lounge,
+	  scorn/guilds/mailed_fist/guildmaster_lounge,
+	  scorn/guilds/mailed_fist/journeyman_lounge,
+	  scorn/guilds/mailed_fist/master_lounge,
+	  scorn/guilds/mailed_fist/novice_lounge,
+	  scorn/guilds/mailed_fist/secondfloor,
+	  scorn/guilds/mailed_fist/storage_room: Fix guilds.
+
+2010-09-04 10:54  ryo_saeba
+
+	* pup_land/guilds/laughing_skull/basement,
+	  pup_land/guilds/laughing_skull/guild_hq,
+	  pup_land/guilds/laughing_skull/guild_tan,
+	  pup_land/guilds/laughing_skull/guildman_lounge,
+	  pup_land/guilds/laughing_skull/guildmaster_lounge,
+	  pup_land/guilds/laughing_skull/journeyman_lounge,
+	  pup_land/guilds/laughing_skull/master_lounge,
+	  pup_land/guilds/laughing_skull/novice_lounge,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/purple_butterfly/basement,
+	  pup_land/guilds/purple_butterfly/guild_hq,
+	  pup_land/guilds/purple_butterfly/guild_tan,
+	  pup_land/guilds/purple_butterfly/guildman_lounge,
+	  pup_land/guilds/purple_butterfly/guildmaster_lounge,
+	  pup_land/guilds/purple_butterfly/journeyman_lounge,
+	  pup_land/guilds/purple_butterfly/master_lounge,
+	  pup_land/guilds/purple_butterfly/novice_lounge,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  santo_dominion/guilds/drunken_barbarian/basement,
+	  santo_dominion/guilds/drunken_barbarian/guild_hq,
+	  santo_dominion/guilds/drunken_barbarian/guild_tan,
+	  santo_dominion/guilds/drunken_barbarian/guildman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/guildmaster_lounge,
+	  santo_dominion/guilds/drunken_barbarian/journeyman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/master_lounge,
+	  santo_dominion/guilds/drunken_barbarian/novice_lounge,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/storage_room,
+	  wolfsburg/guilds/damned_heretics/basement,
+	  wolfsburg/guilds/damned_heretics/guild_hq,
+	  wolfsburg/guilds/damned_heretics/guild_tan,
+	  wolfsburg/guilds/damned_heretics/guildman_lounge,
+	  wolfsburg/guilds/damned_heretics/guildmaster_lounge,
+	  wolfsburg/guilds/damned_heretics/journeyman_lounge,
+	  wolfsburg/guilds/damned_heretics/master_lounge,
+	  wolfsburg/guilds/damned_heretics/novice_lounge,
+	  wolfsburg/guilds/damned_heretics/secondfloor,
+	  wolfsburg/guilds/damned_heretics/storage_room: Fix guilds.
+
+2010-09-04 10:53  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/basement,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_hq,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_tan,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildmaster_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/journeyman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/master_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/novice_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
+	  azumauindo/suno-yamatoshi/nenshou_youso/basement,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_hq,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_tan,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildmaster_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/journeyman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/master_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/novice_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room,
+	  azumauindo/zaseki_dzuki_ryoku/basement,
+	  azumauindo/zaseki_dzuki_ryoku/guild_hq,
+	  azumauindo/zaseki_dzuki_ryoku/guild_tan,
+	  azumauindo/zaseki_dzuki_ryoku/guildman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/guildmaster_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/journeyman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/master_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/novice_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room: Fix guilds.
+
+2010-09-04 10:52  ryo_saeba
+
+	* templates/guild/bigchest, templates/guild/guild_tan,
+	  templates/guild/guildman_lounge,
+	  templates/guild/guildmaster_lounge,
+	  templates/guild/journeyman_lounge, templates/guild/master_lounge,
+	  templates/guild/masters_lounge, templates/guild/secondfloor,
+	  templates/guild/storage_room: Fix missing region.
+
+2010-09-04 10:51  ryo_saeba
+
+	* templates/guild/novice_lounge: Fix stairs destination to finish
+	  on stairs down, for coherence.
+
+2010-09-04 10:50  ryo_saeba
+
+	* templates/guild/basement: Remove invalid destination.
+
+2010-09-04 10:50  ryo_saeba
+
+	* templates/guild/guild_hq: Fix Tannery Token having the wrong
+	  message.
+
+2010-09-04 10:31  ryo_saeba
+
+	* templates/guild/convert.py: Don't put copy in this directory
+	  unless asked for.
+
+2010-09-04 10:28  ryo_saeba
+
+	* templates/guild/convert.py, templates/guild/convertall.py:
+	  Comment scripts.
+
+2010-09-04 09:59  ryo_saeba
+
+	* brest/black_shield/guild_thaum,
+	  scorn/guilds/mailed_fist/guild_thaum: Remove invalid attribute.
+
+2010-09-04 09:58  ryo_saeba
+
+	* darcap/darcap/guilds/poisoned_dagger/guild_hq,
+	  darcap/darcap/guilds/smoking_cauldron/guild_hq: Fix card message.
+
+2010-09-04 09:58  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_thaum,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_thaum,
+	  azumauindo/zaseki_dzuki_ryoku/guild_thaum,
+	  darcap/darcap/guilds/poisoned_dagger/guild_thaum,
+	  darcap/darcap/guilds/smoking_cauldron/guild_thaum,
+	  euthville/green_goblin/guild_thaum,
+	  lake_country/Butakis/mockers/guild_thaum,
+	  navar_city/dreaming_sage/guild_thaum,
+	  pup_land/guilds/laughing_skull/guild_thaum,
+	  pup_land/guilds/purple_butterfly/guild_thaum,
+	  santo_dominion/guilds/drunken_barbarian/guild_thaum,
+	  templates/guild/guild_thaum,
+	  wolfsburg/guilds/damned_heretics/guild_thaum: Remove invalid
+	  attribute.
+
+2010-09-04 09:23  ryo_saeba
+
+	* python/maps/scorn/doors_galore.py, scorn/houses/doors_galore,
+	  world/world_105_115: Doors galore, by Khaleh.
+
+2010-09-03 16:05  ryo_saeba
+
+	* python/gods/altar_valkyrie.py: Fix bug #2933502: Valkyrie not
+	  working.
+
+2010-09-02 19:36  Alestan
+
+	* python/guilds/GUILD_TEMPLATE.txt,
+	  python/guilds/PoisonedDagger.txt,
+	  python/guilds/PurpleButterfly.txt, python/guilds/README.txt,
+	  python/guilds/SmokingCauldron.txt, python/guilds/bigchest.py,
+	  python/guilds/guild_dues.py: removed unused text files and made
+	  Jack say how much money is needed to purchase something for the
+	  guild
+
+2010-09-02 18:19  ryo_saeba
+
+	* darcap/darcap/guilds/poisoned_dagger/guild_hq,
+	  darcap/darcap/guilds/poisoned_dagger/hallofjoining: Fix wrong
+	  guild name.
+
+2010-09-02 17:43  ryo_saeba
+
+	* darcap/darcap/guilds/poisoned_dagger/guildman_lounge: Fix wrong
+	  guild reference.
+
+2010-09-02 16:47  ryo_saeba
+
+	* navar_city/dreaming_sage/mainfloor: Fix Navar destination
+	  coordinates in guilds.
+
+2010-09-02 16:46  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/mainfloor,
+	  azumauindo/zaseki_dzuki_ryoku/mainfloor,
+	  brest/black_shield/mainfloor,
+	  darcap/darcap/guilds/poisoned_dagger/mainfloor,
+	  darcap/darcap/guilds/smoking_cauldron/mainfloor,
+	  euthville/green_goblin/mainfloor,
+	  pup_land/guilds/laughing_skull/mainfloor,
+	  pup_land/guilds/purple_butterfly/mainfloor,
+	  santo_dominion/guilds/drunken_barbarian/mainfloor,
+	  scorn/guilds/mailed_fist/mainfloor, templates/guild/mainfloor,
+	  wolfsburg/guilds/damned_heretics/mainfloor: Fix Navar destination
+	  coordinates in guilds.
+
+2010-09-02 14:32  meflin2
+
+	* python/guilds/bigchest.py: one of the guild scripts got missed
+	  from being added by alestan
+
+2010-08-29 09:18  ryo_saeba
+
+	* HallOfSelection: Fix for bug #3054519: 'Wizard' class picker
+	  broken.
+
+2010-08-29 08:28  ryo_saeba
+
+	* styles/specialmaps/doorhome, styles/specialmaps/fake_heal_post,
+	  styles/specialmaps/healing_post: Move magic_mouthes under the
+	  floor, so they don't appear with show invisible.
+
+2010-08-24 07:10  Alestan
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/basement,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_alchemy,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_bbq,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_hq,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_jeweler,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_tan,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_thaum,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_toolshed,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildmaster_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/hallofjoining,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/journeyman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/master_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/novice_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
+	  azumauindo/suno-yamatoshi/nenshou_youso/basement,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_alchemy,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_bbq,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_hq,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_jeweler,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_tan,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_thaum,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_toolshed,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildmaster_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/hallofjoining,
+	  azumauindo/suno-yamatoshi/nenshou_youso/journeyman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/mainfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/master_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/novice_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room,
+	  azumauindo/zaseki_dzuki_ryoku/basement,
+	  azumauindo/zaseki_dzuki_ryoku/guild_alchemy,
+	  azumauindo/zaseki_dzuki_ryoku/guild_bbq,
+	  azumauindo/zaseki_dzuki_ryoku/guild_hq,
+	  azumauindo/zaseki_dzuki_ryoku/guild_jeweler,
+	  azumauindo/zaseki_dzuki_ryoku/guild_tan,
+	  azumauindo/zaseki_dzuki_ryoku/guild_thaum,
+	  azumauindo/zaseki_dzuki_ryoku/guild_toolshed,
+	  azumauindo/zaseki_dzuki_ryoku/guildman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/guildmaster_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/hallofjoining,
+	  azumauindo/zaseki_dzuki_ryoku/journeyman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/mainfloor,
+	  azumauindo/zaseki_dzuki_ryoku/master_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/novice_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room,
+	  brest/black_shield/basement, brest/black_shield/guild_alchemy,
+	  brest/black_shield/guild_bbq, brest/black_shield/guild_hq,
+	  brest/black_shield/guild_jeweler, brest/black_shield/guild_tan,
+	  brest/black_shield/guild_thaum,
+	  brest/black_shield/guild_toolshed,
+	  brest/black_shield/guildman_lounge,
+	  brest/black_shield/guildmaster_lounge,
+	  brest/black_shield/hallofjoining,
+	  brest/black_shield/journeyman_lounge,
+	  brest/black_shield/mainfloor, brest/black_shield/master_lounge,
+	  brest/black_shield/novice_lounge, brest/black_shield/secondfloor,
+	  brest/black_shield/storage_room,
+	  darcap/darcap/guilds/poisoned_dagger/basement,
+	  darcap/darcap/guilds/poisoned_dagger/guild_alchemy,
+	  darcap/darcap/guilds/poisoned_dagger/guild_bbq,
+	  darcap/darcap/guilds/poisoned_dagger/guild_hq,
+	  darcap/darcap/guilds/poisoned_dagger/guild_jeweler,
+	  darcap/darcap/guilds/poisoned_dagger/guild_tan,
+	  darcap/darcap/guilds/poisoned_dagger/guild_thaum,
+	  darcap/darcap/guilds/poisoned_dagger/guild_toolshed,
+	  darcap/darcap/guilds/poisoned_dagger/guildman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/guildmaster_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/hallofjoining,
+	  darcap/darcap/guilds/poisoned_dagger/journeyman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/mainfloor,
+	  darcap/darcap/guilds/poisoned_dagger/master_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/novice_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room,
+	  darcap/darcap/guilds/smoking_cauldron/basement,
+	  darcap/darcap/guilds/smoking_cauldron/guild_alchemy,
+	  darcap/darcap/guilds/smoking_cauldron/guild_bbq,
+	  darcap/darcap/guilds/smoking_cauldron/guild_hq,
+	  darcap/darcap/guilds/smoking_cauldron/guild_jeweler,
+	  darcap/darcap/guilds/smoking_cauldron/guild_tan,
+	  darcap/darcap/guilds/smoking_cauldron/guild_thaum,
+	  darcap/darcap/guilds/smoking_cauldron/guild_toolshed,
+	  darcap/darcap/guilds/smoking_cauldron/guildman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/guildmaster_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/hallofjoining,
+	  darcap/darcap/guilds/smoking_cauldron/journeyman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/mainfloor,
+	  darcap/darcap/guilds/smoking_cauldron/master_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/novice_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room,
+	  euthville/green_goblin, euthville/green_goblin/basement,
+	  euthville/green_goblin/guild_alchemy,
+	  euthville/green_goblin/guild_bbq,
+	  euthville/green_goblin/guild_hq,
+	  euthville/green_goblin/guild_jeweler,
+	  euthville/green_goblin/guild_tan,
+	  euthville/green_goblin/guild_thaum,
+	  euthville/green_goblin/guild_toolshed,
+	  euthville/green_goblin/guildman_lounge,
+	  euthville/green_goblin/guildmaster_lounge,
+	  euthville/green_goblin/hallofjoining,
+	  euthville/green_goblin/journeyman_lounge,
+	  euthville/green_goblin/mainfloor,
+	  euthville/green_goblin/master_lounge,
+	  euthville/green_goblin/novice_lounge,
+	  euthville/green_goblin/secondfloor,
+	  euthville/green_goblin/storage_room,
+	  lake_country/Butakis/Butakis0, lake_country/Butakis/gate_inner,
+	  lake_country/Butakis/mockers,
+	  lake_country/Butakis/mockers/basement,
+	  lake_country/Butakis/mockers/guild_alchemy,
+	  lake_country/Butakis/mockers/guild_bbq,
+	  lake_country/Butakis/mockers/guild_hq,
+	  lake_country/Butakis/mockers/guild_jeweler,
+	  lake_country/Butakis/mockers/guild_tan,
+	  lake_country/Butakis/mockers/guild_thaum,
+	  lake_country/Butakis/mockers/guild_toolshed,
+	  lake_country/Butakis/mockers/guildman_lounge,
+	  lake_country/Butakis/mockers/guildmaster_lounge,
+	  lake_country/Butakis/mockers/hallofjoining,
+	  lake_country/Butakis/mockers/journeyman_lounge,
+	  lake_country/Butakis/mockers/mainfloor,
+	  lake_country/Butakis/mockers/master_lounge,
+	  lake_country/Butakis/mockers/novice_lounge,
+	  lake_country/Butakis/mockers/secondfloor,
+	  lake_country/Butakis/mockers/storage_room,
+	  navar_city/dreaming_sage/basement,
+	  navar_city/dreaming_sage/guild_alchemy,
+	  navar_city/dreaming_sage/guild_bbq,
+	  navar_city/dreaming_sage/guild_hq,
+	  navar_city/dreaming_sage/guild_jeweler,
+	  navar_city/dreaming_sage/guild_tan,
+	  navar_city/dreaming_sage/guild_thaum,
+	  navar_city/dreaming_sage/guild_toolshed,
+	  navar_city/dreaming_sage/guildman_lounge,
+	  navar_city/dreaming_sage/guildmaster_lounge,
+	  navar_city/dreaming_sage/hallofjoining,
+	  navar_city/dreaming_sage/journeyman_lounge,
+	  navar_city/dreaming_sage/mainfloor,
+	  navar_city/dreaming_sage/master_lounge,
+	  navar_city/dreaming_sage/novice_lounge,
+	  navar_city/dreaming_sage/secondfloor,
+	  navar_city/dreaming_sage/storage_room,
+	  pup_land/guilds/laughing_skull/basement,
+	  pup_land/guilds/laughing_skull/guild_alchemy,
+	  pup_land/guilds/laughing_skull/guild_bbq,
+	  pup_land/guilds/laughing_skull/guild_hq,
+	  pup_land/guilds/laughing_skull/guild_jeweler,
+	  pup_land/guilds/laughing_skull/guild_tan,
+	  pup_land/guilds/laughing_skull/guild_thaum,
+	  pup_land/guilds/laughing_skull/guild_toolshed,
+	  pup_land/guilds/laughing_skull/guildman_lounge,
+	  pup_land/guilds/laughing_skull/guildmaster_lounge,
+	  pup_land/guilds/laughing_skull/hallofjoining,
+	  pup_land/guilds/laughing_skull/journeyman_lounge,
+	  pup_land/guilds/laughing_skull/mainfloor,
+	  pup_land/guilds/laughing_skull/master_lounge,
+	  pup_land/guilds/laughing_skull/novice_lounge,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/purple_butterfly/basement,
+	  pup_land/guilds/purple_butterfly/guild_alchemy,
+	  pup_land/guilds/purple_butterfly/guild_bbq,
+	  pup_land/guilds/purple_butterfly/guild_hq,
+	  pup_land/guilds/purple_butterfly/guild_jeweler,
+	  pup_land/guilds/purple_butterfly/guild_tan,
+	  pup_land/guilds/purple_butterfly/guild_thaum,
+	  pup_land/guilds/purple_butterfly/guild_toolshed,
+	  pup_land/guilds/purple_butterfly/guildman_lounge,
+	  pup_land/guilds/purple_butterfly/guildmaster_lounge,
+	  pup_land/guilds/purple_butterfly/hallofjoining,
+	  pup_land/guilds/purple_butterfly/journeyman_lounge,
+	  pup_land/guilds/purple_butterfly/mainfloor,
+	  pup_land/guilds/purple_butterfly/master_lounge,
+	  pup_land/guilds/purple_butterfly/novice_lounge,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  pup_land/lone_town/town,
+	  santo_dominion/guilds/drunken_barbarian/basement,
+	  santo_dominion/guilds/drunken_barbarian/guild_alchemy,
+	  santo_dominion/guilds/drunken_barbarian/guild_bbq,
+	  santo_dominion/guilds/drunken_barbarian/guild_hq,
+	  santo_dominion/guilds/drunken_barbarian/guild_jeweler,
+	  santo_dominion/guilds/drunken_barbarian/guild_tan,
+	  santo_dominion/guilds/drunken_barbarian/guild_thaum,
+	  santo_dominion/guilds/drunken_barbarian/guild_toolshed,
+	  santo_dominion/guilds/drunken_barbarian/guildman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/guildmaster_lounge,
+	  santo_dominion/guilds/drunken_barbarian/hallofjoining,
+	  santo_dominion/guilds/drunken_barbarian/journeyman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/mainfloor,
+	  santo_dominion/guilds/drunken_barbarian/master_lounge,
+	  santo_dominion/guilds/drunken_barbarian/novice_lounge,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/storage_room,
+	  scorn/guilds/mailed_fist/GuildList,
+	  scorn/guilds/mailed_fist/README.txt,
+	  scorn/guilds/mailed_fist/basement,
+	  scorn/guilds/mailed_fist/bigchest~,
+	  scorn/guilds/mailed_fist/guild_alchemy,
+	  scorn/guilds/mailed_fist/guild_bbq,
+	  scorn/guilds/mailed_fist/guild_hq,
+	  scorn/guilds/mailed_fist/guild_jeweler,
+	  scorn/guilds/mailed_fist/guild_tan,
+	  scorn/guilds/mailed_fist/guild_thaum,
+	  scorn/guilds/mailed_fist/guild_toolshed,
+	  scorn/guilds/mailed_fist/guildman_lounge,
+	  scorn/guilds/mailed_fist/guildmaster_lounge,
+	  scorn/guilds/mailed_fist/hallofjoining,
+	  scorn/guilds/mailed_fist/journeyman_lounge,
+	  scorn/guilds/mailed_fist/mainfloor,
+	  scorn/guilds/mailed_fist/mainfloor~,
+	  scorn/guilds/mailed_fist/master_lounge,
+	  scorn/guilds/mailed_fist/masters_lounge,
+	  scorn/guilds/mailed_fist/novice_lounge,
+	  scorn/guilds/mailed_fist/secondfloor,
+	  scorn/guilds/mailed_fist/storage_hall,
+	  scorn/guilds/mailed_fist/storage_hall.0,
+	  scorn/guilds/mailed_fist/storage_room, templates/guild/GuildList,
+	  templates/guild/GuildLocations, templates/guild/README.txt,
+	  templates/guild/convert.py, templates/guild/convertall.py,
+	  templates/guild/filelist.py, templates/guild/mainfloor,
+	  templates/guild/storage_room,
+	  wolfsburg/guilds/damned_heretics/basement,
+	  wolfsburg/guilds/damned_heretics/guild_alchemy,
+	  wolfsburg/guilds/damned_heretics/guild_bbq,
+	  wolfsburg/guilds/damned_heretics/guild_hq,
+	  wolfsburg/guilds/damned_heretics/guild_jeweler,
+	  wolfsburg/guilds/damned_heretics/guild_tan,
+	  wolfsburg/guilds/damned_heretics/guild_thaum,
+	  wolfsburg/guilds/damned_heretics/guild_toolshed,
+	  wolfsburg/guilds/damned_heretics/guildman_lounge,
+	  wolfsburg/guilds/damned_heretics/guildmaster_lounge,
+	  wolfsburg/guilds/damned_heretics/hallofjoining,
+	  wolfsburg/guilds/damned_heretics/journeyman_lounge,
+	  wolfsburg/guilds/damned_heretics/mainfloor,
+	  wolfsburg/guilds/damned_heretics/master_lounge,
+	  wolfsburg/guilds/damned_heretics/novice_lounge,
+	  wolfsburg/guilds/damned_heretics/secondfloor,
+	  wolfsburg/guilds/damned_heretics/storage_room,
+	  world/world_102_108, world/world_105_113, world/world_105_115,
+	  world/world_107_123, world/world_116_102, world/world_122_117,
+	  world/world_127_101, world/world_128_101, world/world_128_109,
+	  world/world_129_101: added script to auto configure guild halls
+	  and install them, made python guild halls the default for
+	  existing guilds
+
+2010-08-20 18:45  alestan
+
+	* templates/guild/hallofjoining: fixed bug in hallofjoining
+
+2010-08-17 23:37  Alestan
+
+	* python/Move_Fog.py, python/Moving_Fog.py: fine tuned fog duration
+	  and speed
+
+2010-08-17 22:01  Alestan
+
+	* python/Moving_Fog.py: Adjusted fog lifetime
+
+2010-08-17 21:53  Alestan
+
+	* python/Move_Fog.py, python/Moving_Fog.py: Added script specific
+	  to moving fog
+
+2010-08-16 22:55  alestan
+
+	* python/guilds/guild_dues.py, python/guilds/guild_entry.py: fixed
+	  bugs with guild scripts
+
+2010-08-16 07:05  alestan
+
+	* python/pshop/Floor.py, python/pshop/Ice.py: un-redirecting stdout
+	  and stderr
+
+2010-08-16 01:50  alestan
+
+	* python/pshop/Ice.py: fine tuning of fog speed
+
+2010-08-16 01:24  alestan
+
+	* python/pshop/Ice.py: added temp_moving_fog and made steam bolt
+	  create it instead of temp_fog, adjusted script that handles
+	  temp_moving_fog
+
+2010-08-15 23:02  alestan
+
+	* python/pshop/pshop.py: fixed bug in private shops
+
+2010-08-15 19:21  alestan
+
+	* python/pshop/pshop.py: fixed bug in private shops
+
+2010-08-15 19:03  alestan
+
+	* python/pshop/pshop.py: fixed bug in private shops
+
+2010-08-15 18:54  alestan
+
+	* brest/privateshops/privateshop_1,
+	  brest/privateshops/privateshop_10,
+	  brest/privateshops/privateshop_11,
+	  brest/privateshops/privateshop_12,
+	  brest/privateshops/privateshop_13,
+	  brest/privateshops/privateshop_14,
+	  brest/privateshops/privateshop_15,
+	  brest/privateshops/privateshop_16,
+	  brest/privateshops/privateshop_17,
+	  brest/privateshops/privateshop_18,
+	  brest/privateshops/privateshop_19,
+	  brest/privateshops/privateshop_2,
+	  brest/privateshops/privateshop_20,
+	  brest/privateshops/privateshop_21,
+	  brest/privateshops/privateshop_22,
+	  brest/privateshops/privateshop_23,
+	  brest/privateshops/privateshop_24,
+	  brest/privateshops/privateshop_25,
+	  brest/privateshops/privateshop_26,
+	  brest/privateshops/privateshop_27,
+	  brest/privateshops/privateshop_28,
+	  brest/privateshops/privateshop_3,
+	  brest/privateshops/privateshop_4,
+	  brest/privateshops/privateshop_5,
+	  brest/privateshops/privateshop_6,
+	  brest/privateshops/privateshop_7,
+	  brest/privateshops/privateshop_8,
+	  brest/privateshops/privateshop_9, scorn/shops/privateshop,
+	  scorn/shops/privateshop_43_36, scorn/shops/privateshop_43_37,
+	  scorn/shops/privateshop_48_34, scorn/shops/privateshop_48_35:
+	  fixed bug in private shops
+
+2010-08-15 11:26  ryo_saeba
+
+	* quests/peterm/temple/InnerTemple,
+	  quests/peterm/temple/OuterTemple, quests/peterm/temple/Temple:
+	  Merge lines.
+
+2010-08-15 09:21  alestan
+
+	* brest/privateshops/privateshop_1,
+	  brest/privateshops/privateshop_10,
+	  brest/privateshops/privateshop_11,
+	  brest/privateshops/privateshop_12,
+	  brest/privateshops/privateshop_13,
+	  brest/privateshops/privateshop_14,
+	  brest/privateshops/privateshop_15,
+	  brest/privateshops/privateshop_16,
+	  brest/privateshops/privateshop_17,
+	  brest/privateshops/privateshop_18,
+	  brest/privateshops/privateshop_19,
+	  brest/privateshops/privateshop_2,
+	  brest/privateshops/privateshop_20,
+	  brest/privateshops/privateshop_21,
+	  brest/privateshops/privateshop_22,
+	  brest/privateshops/privateshop_23,
+	  brest/privateshops/privateshop_24,
+	  brest/privateshops/privateshop_25,
+	  brest/privateshops/privateshop_26,
+	  brest/privateshops/privateshop_27,
+	  brest/privateshops/privateshop_28,
+	  brest/privateshops/privateshop_3,
+	  brest/privateshops/privateshop_4,
+	  brest/privateshops/privateshop_5,
+	  brest/privateshops/privateshop_6,
+	  brest/privateshops/privateshop_7,
+	  brest/privateshops/privateshop_8,
+	  brest/privateshops/privateshop_9: added 28 private shops to brest
+
+2010-08-15 09:14  alestan
+
+	* world/world_107_123: added private shop row to brest and renamed
+	  old private shops to private museums
+
+2010-08-15 09:13  alestan
+
+	* brest/privateshops, brest/privateshops/privateshop_1,
+	  brest/privateshops/privateshop_10,
+	  brest/privateshops/privateshop_11,
+	  brest/privateshops/privateshop_12,
+	  brest/privateshops/privateshop_13,
+	  brest/privateshops/privateshop_14,
+	  brest/privateshops/privateshop_15,
+	  brest/privateshops/privateshop_16,
+	  brest/privateshops/privateshop_17,
+	  brest/privateshops/privateshop_18,
+	  brest/privateshops/privateshop_19,
+	  brest/privateshops/privateshop_2,
+	  brest/privateshops/privateshop_20,
+	  brest/privateshops/privateshop_21,
+	  brest/privateshops/privateshop_22,
+	  brest/privateshops/privateshop_23,
+	  brest/privateshops/privateshop_24,
+	  brest/privateshops/privateshop_25,
+	  brest/privateshops/privateshop_26,
+	  brest/privateshops/privateshop_27,
+	  brest/privateshops/privateshop_28,
+	  brest/privateshops/privateshop_3,
+	  brest/privateshops/privateshop_4,
+	  brest/privateshops/privateshop_5,
+	  brest/privateshops/privateshop_6,
+	  brest/privateshops/privateshop_7,
+	  brest/privateshops/privateshop_8,
+	  brest/privateshops/privateshop_9,
+	  brest/privateshops/privateshop_main: added 28 private shops to
+	  brest
+
+2010-08-15 07:50  alestan
+
+	* python/pshop/pshop.py: updating how face is haneled.
+
+2010-08-15 07:48  alestan
+
+	* python/events/init/NumToNameConvert.py: removing no longer needed
+	  init script
+
+2010-08-15 07:23  alestan
+
+	* scorn/shops/privateshop_43_36, scorn/shops/privateshop_43_37,
+	  scorn/shops/privateshop_48_34, scorn/shops/privateshop_48_35:
+	  added 4 private shops to scorn, replacing the level 0 random map
+	  houses
+
+2010-08-15 07:17  alestan
+
+	* scorn/shops/privateshop_43_36, scorn/shops/privateshop_43_37,
+	  scorn/shops/privateshop_48_34, scorn/shops/privateshop_48_35:
+	  added 4 private shops to scorn, replacing the level 0 random map
+	  houses
+
+2010-08-15 07:10  alestan
+
+	* scorn/shops/privateshop_43_36, scorn/shops/privateshop_43_37,
+	  scorn/shops/privateshop_48_34, scorn/shops/privateshop_48_35:
+	  added 4 private shops to scorn, replacing the level 0 random map
+	  houses
+
+2010-08-15 07:08  alestan
+
+	* world/world_104_115: added 4 private shops to scorn, replacing
+	  the level 0 random map houses
+
+2010-08-15 01:02  alestan
+
+	* python/IPO/banksay.py, python/IPO/checks.py: improves banking
+
+2010-08-14 20:07  alestan
+
+	* scorn/shops/privateshop: added private shop
+
+2010-08-14 20:06  alestan
+
+	* world/world_105_115: added shop entrance to scorn city for the
+	  new private shop
+
+2010-08-14 13:14  ryo_saeba
+
+	* darcap/darcap/airhouse, darcap/darcap/earthhouse,
+	  darcap/darcap/waterhouse: Fix default coordinates.
+
+2010-08-14 07:52  ryo_saeba
+
+	* quests/peterm/temple/AnteChamber, quests/peterm/temple/GemTunnel,
+	  quests/peterm/temple/InnerTemple: Merge lines.
+
+2010-08-14 07:44  ryo_saeba
+
+	* test/python.py: Adjust test script to new types.
+
+2010-08-14 07:44  ryo_saeba
+
+	* styles/decorstyles/goblinjunk: Prevent brazier from blocking
+	  movement in random maps.
+
+2010-08-13 19:56  alestan
+
+	* pup_land/lone_town/bank: Added bank teller to lone town bank
+
+2010-08-13 04:09  alestan
+
+	* python/events/init/NumToNameConvert.py: added script to build
+	  dict of face numbers to names
+
+2010-08-13 03:53  alestan
+
+	* scorn/shops/bank: updated bank script to handle checks and added
+	  a startup script to build a list of face number to face name
+
+2010-08-13 03:48  alestan
+
+	* python/pshop/pshop.py: finished scripts in maps/python/pshop for
+	  handling the new private shops
+
+2010-08-10 18:24  ryo_saeba
+
+	* quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/WyvernNest: Merge split lines.
+
+2010-08-08 15:43  ryo_saeba
+
+	* navar_city/misc/city1bank: Merge lines.
+
+2010-08-07 14:02  ryo_saeba
+
+	* styles/decorstyles/creepy, styles/decorstyles/goblinjunk,
+	  styles/decorstyles/monuments,
+	  styles/decorstyles/religious_devourers,
+	  styles/decorstyles/religious_gaea,
+	  styles/decorstyles/religious_generic,
+	  styles/decorstyles/religious_gnarg,
+	  styles/decorstyles/religious_gorokh,
+	  styles/decorstyles/religious_lythander,
+	  styles/decorstyles/religious_mostrai,
+	  styles/decorstyles/religious_ruggilli,
+	  styles/decorstyles/religious_sorig,
+	  styles/decorstyles/religious_valriel: Explicitely fix 'move_block
+	  all' to 'move_block swim'. This is to remove a hack in server
+	  that prevent sitems from merging.
+
+2010-08-04 17:43  ryo_saeba
+
+	* navar_city/bow_shop, world/world_122_117: Pimol's Fine Bow Shop,
+	  in Navar.
+
+2010-08-04 17:13  ryo_saeba
+
+	* navar_city/magara/houses/large_house, world/world_122_117: Move a
+	  fighting map outside Navar's shop zone.
+
+2010-08-01 09:02  ryo_saeba
+
+	* world/world_121_117: Uppercase first letter.
+
+2010-08-01 09:01  ryo_saeba
+
+	* python/events/clock/bell.py: Improve temple's bells.
+
+2010-07-25 18:18  ryo_saeba
+
+	* python/events/clock, python/events/clock/bell.py: Let's ring some
+	  bells, it'll make it funnier for players to hear those :)
+
+2010-07-24 14:15  ryo_saeba
+
+	* wolfsburg/tt/tta2: Replace custom archetypes by their extracted
+	  counterparts.
+
+2010-07-24 13:57  ryo_saeba
+
+	* wolfsburg/tt/tta1, wolfsburg/tt/tta2, wolfsburg/tt/ttb1,
+	  wolfsburg/tt/ttb2: Put exits under the floors. Fix exits to not
+	  see black zones.
+
+2010-07-22 17:10  ryo_saeba
+
+	* wolfsburg/tt/tta2: Remove face change, acid spheres ARE acid
+	  spheres.
+
+2010-07-18 07:14  ryo_saeba
+
+	* dungeons/liomal_treasure, dungeons/liomal_upper,
+	  world/world_113_122: Fix region.
+
+2010-07-17 20:36  ryo_saeba
+
+	* dungeons/liomal_ground, dungeons/liomal_treasure,
+	  dungeons/liomal_upper, world/world_113_122: Liomal's house. Some
+	  nice treasure, hopefully fun monsters.
+
+2010-07-17 17:09  ryo_saeba
+
+	* styles/decorstyles/minerals2: Add rare alchemy components, with a
+	  low probability.
+
+2010-07-16 16:49  ryo_saeba
+
+	* pup_land/lone_town/training: Add a mover so the NPCs don't
+	  totally block players.
+
+2010-07-13 02:17  kbulgrien
+
+	* scorn/citygate.quests: - Grammar police on patrol ;-) Capitalize
+	  proper names. Replace use of
+	  passive voice from the Getting out of Scorn description to better
+	  match the
+	  style of other descriptions (but leave other occurances alone).
+	  Replace
+	  contractions (won't). past --> pass. Change use of "you" to "me"
+	  to
+	  improve consistency with the rest of the file.
+
+2010-07-10 10:35  ryo_saeba
+
+	* scorn/cannery, scorn/misc/animal_quarantine, world/world_105_115:
+	  Move map to misc folder, remove empty folder.
+
+2010-07-10 10:33  ryo_saeba
+
+	* scorn/crow: Remove empty directory.
+
+2010-07-10 10:31  ryo_saeba
+
+	* scorn/crow/train/train, scorn/misc/training_center,
+	  world/world_104_115: Move training center to misc folder.
+
+2010-07-10 10:27  ryo_saeba
+
+	* scorn/misc/devourlower, scorn/temples/devourers,
+	  scorn/temples/devourers_lower: Fix missing lower Devourers level.
+
+2010-07-10 10:24  ryo_saeba
+
+	* dungeons/gorokh, scorn/temples/gorokh,
+	  scorn/temples/gorokh_final, scorn/temples/gorokh_treasure: Move
+	  Gorokh's final maps to Scorn subdirectory and region.
+
+2010-07-10 10:19  ryo_saeba
+
+	* scorn/temples/valriel3: Fix accidentally patched depth.
+
+2010-07-10 10:17  ryo_saeba
+
+	* dungeons/valriel: Remove empty directory.
+
+2010-07-10 10:16  ryo_saeba
+
+	* dungeons/valriel/valriel_final,
+	  dungeons/valriel/valriel_treasure, scorn/temples/valriel3,
+	  scorn/temples/valriel_final, scorn/temples/valriel_treasure: Move
+	  Valriel's final and treasure maps to Scorn subdirectory and
+	  region.
+
+2010-07-10 10:11  ryo_saeba
+
+	* world/world_104_115: Fix path.
+
+2010-07-10 10:10  ryo_saeba
+
+	* scorn/misc/templelyth, scorn/temples/lythander: Move Lythander's
+	  temple to the correct folder.
+
+2010-07-10 10:08  ryo_saeba
+
+	* scorn/misc/templedevour, scorn/temples/devourers,
+	  world/world_105_115: Move Devourers's temple to the correct
+	  folder.
+
+2010-06-26 08:00  ryo_saeba
+
+	* darcap/darcap/tavern: Fix Caterham which used to be Darcap.
+
+2010-06-26 07:59  ryo_saeba
+
+	* scorn/guilds/guildhousesinc: Fix guild location.
+
+2010-06-26 07:32  ryo_saeba
+
+	* under_world/uworld_120_109: Set region as wilderness, considering
+	  the entrance and exit locations.
+
+2010-06-26 07:31  ryo_saeba
+
+	* quests/peterm/Nethack_in_crossfire_Yendor,
+	  quests/peterm/Nethack_in_crossfire_entrance: Set map region as
+	  Scorn, since entrance is in that region.
+
+2010-06-20 05:56  rjtanner
+
+	* scorn/houses/tyl: Added region scorn to Tyl's house map header
+
+2010-06-19 15:08  ryo_saeba
+
+	* darcap/cave/level4, darcap/darcap.quests,
+	  darcap/darcap/cameron.msg, darcap/darcap/cameron.quests,
+	  darcap/darcap/grape_farm, darcap/darcap/scartis,
+	  darcap/darcap/scartis.msg, darcap/darcap/talok.msg,
+	  darcap/darcap/tavern, world/world_116_102: Quest for Cameron, the
+	  tavern owner: search why he doesn't get some special wine.
+
+2010-06-19 15:06  ryo_saeba
+
+	* python/quests/QuestConditionalDrop.py: Script to drop items only
+	  if a certain quest step is reached.
+
+2010-06-19 10:04  ryo_saeba
+
+	* darcap/darcap/cameron.msg, darcap/darcap/tavern: Remove some NPCs
+	  without dialog from tavern, move some around to not have multiple
+	  conversations. Have the barman give wine when asked.
+
+2010-06-18 06:42  mwedel
+
+	* HallOfSelection: Change wizard to be the wizard_class archetype -
+	  this
+	  matches all the other archetypes of the map and makes it
+	  so that the wizard_class is shown as being used someplace in
+	  CRE.
+	  MSW 2010-06-17
+
+2010-06-13 22:27  kbulgrien
+
+	* scorn/towers/igor1.msg: - Improve the response when you do not
+	  know the name.
+
+2010-06-13 06:34  akirschbaum
+
+	* editor/scripts/WorldMaker: Adapt WorldMaker plugin script to
+	  current Gridarta.
+
+2010-06-13 06:19  akirschbaum
+
+	* world/world_102_115: Fix syntax error.
+
+2010-06-13 06:09  akirschbaum
+
+	* world/world_100_117: Fix syntax error.
+
+2010-06-12 17:22  ryo_saeba
+
+	* scorn/scorn.quests: Add missing quest definition for mad mage
+	  tower.
+
+2010-06-12 17:21  ryo_saeba
+
+	* world/world_105_115: Fix mad mage tower entrance path.
+
+2010-06-12 16:56  ryo_saeba
+
+	* scorn/towers/igor0.msg, scorn/towers/igor1.msg,
+	  scorn/towers/igor2.msg, scorn/towers/tower.mad0,
+	  scorn/towers/tower.mad1, scorn/towers/tower.mad2,
+	  scorn/towers/tower.mad3: Revamp the Mad Mage tower. Now to gain
+	  access you need to be a knowledgeable character. Remove gate pass
+	  in tower top (moved to lighthouse top).
+
+2010-06-12 16:51  ryo_saeba
+
+	* python/quests/QuestApplyIf.py: Utility script to let an item be
+	  applied only for certain quest steps.
+
+2010-06-12 16:50  ryo_saeba
+
+	* python/dialog/pre/archininventory.py: Pre-condition script,
+	  checking for some archetype in the inventory.
+
+2010-06-12 15:14  akirschbaum
+
+	* editor/scripts/WorldMaker: Remove debugging output from
+	  WorldMaker plugin script.
+
+2010-06-12 15:11  akirschbaum
+
+	* editor/scripts/MapValidator: Adapt MapValidator plugin script to
+	  current Gridarta.
+
+2010-06-12 15:11  akirschbaum
+
+	* editor/scripts/MapNormalizer: Fix typo.
+
+2010-06-12 15:05  akirschbaum
+
+	* editor/scripts/MapNormalizer: Adapt MapNormalizer plugin script
+	  to current Gridarta.
+
+2010-06-12 14:32  ryo_saeba
+
+	* scorn/towers/lighthouse.3: Add the port pass that is/was at the
+	  top of Mad Mage's tower.
+
+2010-06-09 05:25  kbulgrien
+
+	* santo_dominion/shaft/undeadshaft.1, world/world_102_109,
+	  world/world_103_109, world/world_104_109, world/world_104_111,
+	  world/world_104_112, world/world_105_109, world/world_105_110,
+	  world/world_105_111, world/world_106_109, world/world_106_110: -
+	  This is essentially a revert/replacement of 13380. After checking
+	  the world
+	  map, the route across the mountains looked preposterous. No one
+	  in their
+	  right mind would have built a road across the mountains with such
+	  a clear
+	  and shorter route available from the southwest. The road now
+	  takes this
+	  more logical path, though it joins with the imperial highway more
+	  to the
+	  south and starts near the guard tower on the road between Scorn
+	  and Santo
+	  Dominion.
+	  - Since the route change would leave the undead shaft unfindable
+	  with no other
+	  landmarks nearby, it is moved to a similar niche in the mountains
+	  at about
+	  the same distance from the training center as it used to be, and
+	  visible
+	  from the road as it was before (though not quite as close and
+	  could be
+	  missed at night).
+
+2010-06-09 03:06  kbulgrien
+
+	* world/world_102_109, world/world_103_109, world/world_104_109,
+	  world/world_105_109, world/world_106_109: - Reroute the road to
+	  the training center to replace zig zags with diagonals
+	  and to make the road follow a more logical (less mountainous)
+	  route.
+
+2010-06-08 15:01  cavesomething
+
+	* python/maps/scorn/castle_read.py, scorn/misc/HallOfQuests,
+	  scorn/misc/castle2: Hall of Heroes in Scorn castle, and script to
+	  support them.
+
+2010-06-08 14:57  cavesomething
+
+	* python/maps/scorn/castle_write.py: Improve the check for
+	  recording nobles
+
+2010-06-07 23:47  cavesomething
+
+	* python/maps/scorn/castle_write.py, scorn/misc/castle: Add a sage
+	  to scorn castle who will record the rank and title of the players
+	  who pass by.
+
+2010-06-07 20:13  cavesomething
+
+	* python/CFDataBase.py: Replace tabs with spaces
+
+2010-06-06 15:14  ryo_saeba
+
+	* python/dialog/pre/knowledgeknown.py: Fix comments.
+
+2010-06-06 15:06  ryo_saeba
+
+	* python/dialog/pre/knowledgeknown.py: Script to check if a player
+	  knows (through the knowledge system) something or not.
+
+2010-06-06 13:19  ryo_saeba
+
+	* scorn/towers/lighthouse.0, scorn/towers/lighthouse.1,
+	  scorn/towers/lighthouse.2, scorn/towers/lighthouse.3,
+	  scorn/towers/tower.mad, scorn/towers/tower.mad1,
+	  scorn/towers/tower.mad2, world/world_105_115: Convert the Mad
+	  Mage's tower to a lighthouse, add a specific top.
+
+2010-06-06 11:02  ryo_saeba
+
+	* darcap/darcap/elemental.quests, darcap/darcap/quest,
+	  darcap/quest/fire, darcap/quest/water, darcap/town2/tower2,
+	  darcap/town2/tower4, world.quests: Questify Darcap's elemental
+	  quest (basic for now).
+
+2010-06-06 08:32  ryo_saeba
+
+	* python/CFDialog.py: Fix exception syntax for Python 2.5.2.
+
+2010-06-03 20:52  ryo_saeba
+
+	* scorn/scorn.quests: Fix typos.
+
+2010-06-03 20:31  ryo_saeba
+
+	* scorn/citygate.quests: Fix tag mistake.
+
+2010-06-03 02:16  kbulgrien
+
+	* world/world_100_113, world/world_100_116, world/world_100_117,
+	  world/world_101_114, world/world_101_115, world/world_102_114,
+	  world/world_102_115: - More terra-forming around Port Joseph to
+	  smooth out the water depth
+	  contours recently edited to expand the navibable areas accessible
+	  to
+	  Scorn port ships, and cleaned up some of the glitchy depth on the
+	  map edges.
+
+2010-05-30 20:36  cavesomething
+
+	* scorn/aristocracy.quests, scorn/misc/king_archduke.msg,
+	  scorn/misc/king_count.msg, scorn/misc/king_duke.msg,
+	  scorn/misc/magistrate_baron.msg,
+	  scorn/misc/magistrate_baronet.msg,
+	  scorn/misc/magistrate_civilian.msg,
+	  scorn/misc/magistrate_earl.msg, scorn/misc/magistrate_knight.msg,
+	  scorn/misc/magistrate_marquis.msg: Use setwhen conditions to
+	  advance the aristocracy quest line rather than setting it
+	  explicitly
+
+2010-05-30 20:35  cavesomething
+
+	* scorn/anthony/portgate, scorn/citygate.quests,
+	  scorn/misc/gatehouse: Use setwhen conditions to advance these
+	  quests rather than lots of checkinvs binding to questadvance
+	  scripts
+
+2010-05-30 20:33  cavesomething
+
+	* scorn/scorn.quests: Remove full stop that was causing issues for
+	  CRE
+
+2010-05-30 15:03  ryo_saeba
+
+	* test/cfanim, test/cfanim.ghosted.animation: Various animation
+	  experiments.
+
+2010-05-30 15:03  ryo_saeba
+
+	* test/quest.py: Add missing encoding.
+
+2010-05-30 14:57  ryo_saeba
+
+	* python/CFDialog.py: Fix animation query.
+
+2010-05-30 14:29  ryo_saeba
+
+	* test/quest_handling/ninja.animation,
+	  test/quest_handling/ninja.msg, test/quest_handling/quest_map:
+	  Animate.py testing ninja.
+
+2010-05-30 14:28  ryo_saeba
+
+	* python/CFDialog.py: Disable talking while the NPC is animated.
+
+2010-05-30 14:27  ryo_saeba
+
+	* python/dialog/post/animate.py: Hook to animate through cfanim.
+
+2010-05-30 10:43  ryo_saeba
+
+	* darcap/darcap/spike.msg: Change text if player already did the
+	  quest. Also don't let do it again and again, force to wait for
+	  map reset.
+
+2010-05-30 10:43  ryo_saeba
+
+	* python/dialog/pre/questdone.py: Add a 'questdone' precondition to
+	  vary dialogs.
+
+2010-05-30 10:12  ryo_saeba
+
+	* darcap/darcap/molthir.msg: Make player required to talk before
+	  saying she got the roots.
+
+2010-05-30 10:11  ryo_saeba
+
+	* python/CFDialog.py, python/dialog/post/setnpctoken.py,
+	  python/dialog/post/settoken.py, python/dialog/pre/npctoken.py,
+	  python/dialog/pre/token.py: Add 'npctoken' and 'setnpctoken' pre
+	  and post conditions, to keep data in NPC instead of player.
+
+2010-05-30 09:47  ryo_saeba
+
+	* darcap/darcap/bob.msg, darcap/darcap/molthir.msg,
+	  darcap/darcap/potionshop, darcap/darcap/shop_g,
+	  darcap/darcap/shop_w, darcap/darcap/spike.msg: Use Python-based
+	  scripts instead of specific plugin.
+
+2010-05-30 06:36  kbulgrien
+
+	* world/world_100_113, world/world_100_114, world/world_100_115,
+	  world/world_100_116, world/world_101_114, world/world_101_115,
+	  world/world_101_116, world/world_102_114, world/world_103_114: -
+	  Open up a bit more sea to the port of Scorn ships.
+	  - For now, block access to the open ocean in the vicinity of Port
+	  Joseph, both
+	  to prevent bumping up against the edge of the map, but also to
+	  preserve the
+	  designed access to various maps that are on islands in the ocean.
+
+2010-05-29 22:44  kbulgrien
+
+	* world/world_104_114, world/world_104_115: - Adjust Scorn harbor
+	  shipping lanes. This is an incremental expansion of
+	  the navigable area.
+
+2010-05-29 21:51  ryo_saeba
+
+	* python/CFDialog.py: Force reply type to be an integer.
+
+2010-05-29 21:44  ryo_saeba
+
+	* python/dialog/npc_dialog.py: Fix 'WriteKey()' needing a string,
+	  not an integer.
+
+2010-05-29 21:22  ryo_saeba
+
+	* python/dialog/npc_dialog.py: Use the 'talked_to' key to make NPCs
+	  stop when talked to.
+
+2010-05-29 19:55  ryo_saeba
+
+	* darcap/darcap/church: Replace plugin-based handling with
+	  event-based one (using Python script).
+
+2010-05-29 19:54  ryo_saeba
+
+	* python/items/death_punisher.py: Script to punish a player from
+	  killing a NPC.
+
+2010-05-29 19:51  ryo_saeba
+
+	* python/items/sell_punisher.py: Fix import before comment.
+
+2010-05-29 18:26  ryo_saeba
+
+	* darcap/darcap/church: Replace specific plugin handler with Python
+	  script.
+
+2010-05-29 18:23  ryo_saeba
+
+	* python, python/items/sell_punisher.py: Script to punish tring to
+	  sell a protected item.
+
+2010-05-25 19:13  cavesomething
+
+	* scorn/aristocracy.quests: Add parent relationships to the scorn
+	  aristocracy quests
+
+2010-05-24 14:43  ryo_saeba
+
+	* scorn/aristocracy.quests: Give a hint about the head.
+
+2010-05-23 21:24  kbulgrien
+
+	* world/world_100_116, world/world_101_116: - Enclose port joseph
+	  mad village island in shallow sea to prevent ships from
+	  reaching shore if they begin plying the eastern seas, and shape
+	  the shallow
+	  water to connect to nearby land structures.
+	  - Add a few more jagged rocks by the port_joseph mad village
+	  island shipwreck
+	  instead of just having the wreck sit on top of the only jagged
+	  rocks in the
+	  area.
+
+2010-05-23 20:13  kbulgrien
+
+	* world/world_100_114: - Surround Goblin Isle with shallow water to
+	  prevent boat access except via
+	  the row boat going between Port Joseph and the island dock. This
+	  helps
+	  preserve map access design in the event that ships begin to
+	  navigate in
+	  the deeper waters.
+	  - Move some of the random item or monster generators away from
+	  Goblin Isle
+	  shore so that smoothing does not put them in the water.
+
+2010-05-22 15:40  ryo_saeba
+
+	* scorn/citygate.quests: Fix suspicious tag.
+
+2010-05-17 13:10  cavesomething
+
+	* python/CFDialog.py: Handle the Include rule subclass of Dialog
+	  class more sanely, this fixes an issue with include rules and
+	  pre-functions.
+
+2010-05-17 02:48  kbulgrien
+
+	* scorn/misc/magistrate_civilian.msg: - Remove spaces from front of
+	  text lines.
+
+2010-05-17 01:12  kbulgrien
+
+	* port_joseph/town/church: - Add a vague hint relating to the
+	  puzzle of the altars.
+	  - Fix some spelling.
+
+2010-05-16 19:01  kbulgrien
+
+	* scorn/taverns/fran.msg: - Fix syntax error.
+
+2010-05-16 18:58  kbulgrien
+
+	* scorn/misc/alfalfa.msg: - Fix syntax error.
+
+2010-05-16 18:55  kbulgrien
+
+	* scorn/misc/goggleguard.msg: - Fix syntax issue.
+
+2010-05-16 14:39  ryo_saeba
+
+	* wolfsburg/wolfsburg.quests: Add end_quest marker, not required
+	  but nicer.
+
+2010-05-16 09:19  ryo_saeba
+
+	* darcap/darcap/church: Typo.
+
+2010-05-16 09:19  ryo_saeba
+
+	* darcap/darcap/church: Remove dummy and weird event.
+
+2010-05-16 09:18  ryo_saeba
+
+	* darcap/darcap/church: Add missing selling hook to chalice.
+
+2010-05-16 02:54  kbulgrien
+
+	* port_joseph/town/portia, port_joseph/town/portia2: - Remove some
+	  line breaks from various msg blocks.
+
+2010-05-16 02:50  kbulgrien
+
+	* world/world_101_114, world/world_120_109: - Remove some line
+	  breaks from within msg blocks.
+
+2010-05-16 01:04  cavesomething
+
+	* scorn/houses/newhouse1: Clear the treasure list from the extra
+	  spellbook
+
+2010-05-16 00:46  cavesomething
+
+	* scorn/citygate.quests, scorn/misc/alfalfa.msg,
+	  scorn/misc/goggleguard.msg, scorn/misc/prison.1: Add Alfalfa
+	  quest
+
+2010-05-16 00:44  cavesomething
+
+	* scorn/taverns/barking_mule, scorn/taverns/fran.msg: update fran
+	  to cope with alfalfa quest
+
+2010-05-16 00:44  cavesomething
+
+	* scorn/houses/alfalfa_basement, scorn/houses/alfalfa_ground,
+	  scorn/houses/alfalfa_upstairs: Add new Alfalfa's house
+
+2010-05-16 00:43  cavesomething
+
+	* scorn/houses/newhouse1, world/world_105_116: Move Alfalfa's house
+	  and turn it into eric's house
+
+2010-05-15 21:42  cavesomething
+
+	* python/CFDialog.py: Replace LOG messages with proper exception
+	  handling, ensure that a check which raises an exception causes a
+	  rule to fail, as well as being reported in the server log
+
+2010-05-15 21:40  cavesomething
+
+	* python/dialog/pre/quest.py: Remove stub code, this is likely to
+	  be handled in a separate check
+
+2010-05-15 21:39  cavesomething
+
+	* python/dialog/pre/quest.py: Make quest pre-conditions work
+	  correctly with ranges of stages
+
+2010-05-15 21:13  ryo_saeba
+
+	* scorn/misc/king_archduke.msg, scorn/misc/magistrate_count.msg,
+	  scorn/misc/magistrate_earl.msg: Fix JSON.
+
+2010-05-15 21:11  ryo_saeba
+
+	* scorn/shops/smith.msg, scorn/taverns/dragon_emissary.msg: Fix
+	  JSON.
+
+2010-05-15 21:08  ryo_saeba
+
+	* scorn/taverns/hintson.msg, scorn/temples/servantofgaea.msg: Fix
+	  JSON.
+
+2010-05-15 19:19  ryo_saeba
+
+	* start/sigmund.msg: Fix JSON.
+
+2010-05-15 19:11  akirschbaum
+
+	* editor/scripts/WorldMaker: Adapt WorldMaker plugin script to
+	  current Gridarta.
+
+2010-05-15 18:36  ryo_saeba
+
+	* test/quest_handling/bothquests.msg,
+	  test/quest_handling/connectiontest.msg,
+	  test/quest_handling/testquest.msg: Fix JSON.
+
+2010-05-15 13:36  ryo_saeba
+
+	* scorn/aristocracy.quests: Use blank lines instead of \n.
+
+2010-05-15 11:26  ryo_saeba
+
+	* python/monsters/lursendis.py: Fix dialog.
+
+2010-05-15 10:27  ryo_saeba
+
+	* python/monsters/farnass.py, python/monsters/lursendis.py,
+	  wolfsburg/lursendis, wolfsburg/wolfsburg.quests, world.quests:
+	  Questify Lursendis's Unforgettable banquet.
+
+2010-05-15 01:32  cavesomething
+
+	* python/dialog/dialog_check.py: Add a check for the message length
+	  in dialogs and give a warning if it is exceeded (This should just
+	  result in truncation server-side)
+
+2010-05-14 04:35  kbulgrien
+
+	* scorn/anthony/portgate, scorn/misc/cistern: - Add a little
+	  "easter egg" that can be developed into a more significant
+	  map, but that serves to introduce the new "manhole" arch. The
+	  cistern
+	  is boring at present, and could use some interesting content.
+	  Anyone?
+
+2010-05-13 22:31  kbulgrien
+
+	* scorn/anthony/passoffice: - Fix up the anchor name per prior
+	  commit that renamed the head object.
+
+2010-05-13 22:17  kbulgrien
+
+	* wolfsburg/dungeons/ship: - Move a pirate from the center of the
+	  deck to the side, and put a ships wheel
+	  on the map in his old spot (because one was just added as a new
+	  arch).
+
+2010-05-13 22:15  kbulgrien
+
+	* scorn/anthony/passoffice: - Remove unneeded or duplicate no_magic
+	  or floor tiles.
+	  - Add no_magic to the portions of the counter at the top of the
+	  map.
+	  - Add a ships wheel as a decorative item since the room looks so
+	  bare.
+
+2010-05-13 21:52  ryo_saeba
+
+	* test/granpa_dialog.msg: Add 'replies' to grandpa's dialog.
+
+2010-05-13 21:52  ryo_saeba
+
+	* scorn/houses/tyl, world/world_104_115, world/world_105_115: Make
+	  exits coherent.
+
+2010-05-13 21:46  ryo_saeba
+
+	* world/world_105_115: Make exits coherent.
+
+2010-05-13 21:44  ryo_saeba
+
+	* world/world_105_115: Make exits coherent.
+
+2010-05-13 21:43  ryo_saeba
+
+	* scorn/taverns/barking_mule, world/world_104_116,
+	  world/world_105_116: Make exits coherent.
+
+2010-05-13 21:40  ryo_saeba
+
+	* mlab/mlabscrntrd1: Make exits coherent.
+
+2010-05-13 21:39  ryo_saeba
+
+	* world/world_104_115, world/world_105_115: Make exits coherent.
+
+2010-05-13 21:39  ryo_saeba
+
+	* scorn/misc/dragon_guild, scorn/misc/mercenaries: Make exits
+	  coherent.
+
+2010-05-13 21:29  ryo_saeba
+
+	* scorn/misc/library, world/world_105_115: Make exits coherent.
+
+2010-05-13 21:26  ryo_saeba
+
+	* world/world_105_115: Make destination coherent.
+
+2010-05-13 21:23  ryo_saeba
+
+	* scorn/houses/rolanda: Change doors to need to apply them.
+
+2010-05-13 21:20  ryo_saeba
+
+	* world/world_105_116: Fix destination coordinates in shop.
+
+2010-05-13 21:19  ryo_saeba
+
+	* scorn/taverns/inn: Change doors.
+
+2010-05-13 20:19  ryo_saeba
+
+	* scorn/misc/castle2: Make kind 'no_damage', and remove other
+	  flags.
+
+2010-05-13 19:50  cavesomething
+
+	* scorn/anthony/portgate: Detect status of aristocracy quest rather
+	  than hero of scorn marker in order to open the gate
+
+2010-05-13 19:42  cavesomething
+
+	* scorn/misc/gatehouse: Trigger the gate on aristocracy quest
+	  status rather than the hero of scorn marker
+
+2010-05-13 19:41  cavesomething
+
+	* scorn/misc/HospitalityRoom: Use quest state rather than markers
+	  to handle access to the various suites
+
+2010-05-13 19:34  cavesomething
+
+	* scorn/misc/HallOfQuests: Remove quests from the hall of quests,
+	  the magistrate and king are now the starting points for these.
+
+2010-05-13 19:33  cavesomething
+
+	* scorn/misc/castle2, scorn/misc/king.msg,
+	  scorn/misc/king_archduke.msg, scorn/misc/king_count.msg,
+	  scorn/misc/king_duke.msg: Add dialog for the king of scorn, make
+	  castle2 use this dialog
+
+2010-05-13 19:27  cavesomething
+
+	* styles/monsterstyles/undead_quest/undead_quest_21: Add quest
+	  events to the sword that the lord spectre carries
+
+2010-05-13 19:20  cavesomething
+
+	* euthville/demon_quest, scorn/peterm/undead_quest: Add quest
+	  handlers for city-based final maps for royalty quests
+
+2010-05-13 19:17  cavesomething
+
+	* quests/peterm/quests/TitanGate,
+	  quests/peterm/quests/dragonquest2,
+	  quests/peterm/quests/goblin_chief,
+	  quests/peterm/quests/mushroom_quest,
+	  quests/peterm/quests/ogre_chief,
+	  quests/peterm/quests/titan_quest,
+	  quests/peterm/quests/titanguard.msg,
+	  quests/peterm/quests/wyvern_quest: Add final map handling for the
+	  non-city based royalty quests
+
+2010-05-13 19:08  cavesomething
+
+	* python/quests/QuestAdvance.py: Fix name of script in comments
+
+2010-05-13 18:58  cavesomething
+
+	* scorn/misc/castle: Change the lower floor of the castle to use
+	  the new magistrate dialog
+
+2010-05-13 18:55  cavesomething
+
+	* scorn/misc/magistrate.msg, scorn/misc/magistrate_baron.msg,
+	  scorn/misc/magistrate_baronet.msg,
+	  scorn/misc/magistrate_civilian.msg,
+	  scorn/misc/magistrate_count.msg, scorn/misc/magistrate_duke.msg,
+	  scorn/misc/magistrate_earl.msg, scorn/misc/magistrate_knight.msg,
+	  scorn/misc/magistrate_marquis.msg: Dialog rules for the scorn
+	  magistrate
+
+2010-05-13 18:44  cavesomething
+
+	* scorn/temples/servantofgaea.msg: Fix syntax errors in .msg file
+
+2010-05-13 18:42  cavesomething
+
+	* scorn/temples/gaea, scorn/temples/servantofgaea.msg: Add a dialog
+	  file for the servant in the temple of gaea, one of the scorn
+	  royalty quests will involve speaking to her.
+
+2010-05-13 18:26  ryo_saeba
+
+	* world/world_104_115: Remove useless detector and marker.
+
+2010-05-13 17:19  cavesomething
+
+	* scorn/taverns/dragon_emissary.msg, scorn/taverns/goths: Add a
+	  dialog for the dragon emissary in goth's tavern
+
+2010-05-13 17:04  cavesomething
+
+	* scorn/misc/church: Trigger quest update on finding entrance to
+	  Animator's lair
+
+2010-05-13 17:01  cavesomething
+
+	* scorn/kar/gork.quests: Improve wording of one of the stage
+	  descriptions
+
+2010-05-13 16:59  cavesomething
+
+	* world/world_102_115, world/world_105_113, world/world_105_115,
+	  world/world_105_118, world/world_106_115, world/world_111_117,
+	  world/world_125_124, world/world_127_108: Add Events to trigger
+	  updates to the royalty quests on entering the appropriate caves
+
+2010-05-13 16:58  cavesomething
+
+	* world/world_111_116: Rename Hermes' Inn to make it easier to
+	  refer to in directions
+
+2010-05-13 16:50  cavesomething
+
+	* scorn/aristocracy.quests: Quest Definitions for Aristocracy
+	  Quests
+
+2010-05-13 16:36  cavesomething
+
+	* scorn/misc/gateguardcommon.msg: Add replies to the gate guard
+	  dialog
+
+2010-05-13 16:32  cavesomething
+
+	* scorn/anthony/portguard.msg: Add Replies for the portguard
+
+2010-05-11 23:49  cavesomething
+
+	* scorn/kar/gork.msg, scorn/kar/mork.msg: Add Replies to the Gork
+	  quest dialogs
+
+2010-05-11 04:39  kbulgrien
+
+	* scorn/anthony/passoffice: - Fix movement block for the office
+	  counter so that you cannot get the passes
+	  by just walking over it.
+	  - Add some scenery. Put an old anchor in the corner of the room.
+
+2010-05-10 18:16  cavesomething
+
+	* python/dialog/dialog_check.py: Fix the counting of rules, errors
+	  and warnings in included files
+
+2010-05-10 18:15  cavesomething
+
+	* python/dialog/dialog_check.py: Change the names of the recognised
+	  fields
+
+2010-05-10 17:51  ryo_saeba
+
+	* python/maps/witherspoon_manor/ghost.py: Adjust quest to new
+	  dialog system.
+
+2010-05-10 17:50  ryo_saeba
+
+	* python/CFDialog.py: Add a 'prefunction' to rules to have special
+	  processing.
+
+2010-05-10 17:20  ryo_saeba
+
+	* python/CFDialog.py: Remove the requirements, assuming player can
+	  always say anything.
+
+2010-05-10 03:25  kbulgrien
+
+	* scorn/anthony/portgate: - Make the portgate view of the
+	  portoffice more consistent with the current
+	  inside of the office.
+	  - Turn smoothing off on some floor pieces to make sure grass does
+	  not invade
+	  the interior of the office.
+
+2010-05-08 13:16  ryo_saeba
+
+	* python/CFDialog.py, python/dialog/npc_dialog.py: Add 'replies' to
+	  the dialog system, to let the player know what she can say.
+
+2010-05-08 12:28  ryo_saeba
+
+	* python/CFDialog.py: Use Crossfire.NPCSay() to have NPCs talk
+	  after the player.
+
+2010-05-08 09:07  cavesomething
+
+	* scorn/kar/mork.msg: Add a connected value to the rule that gives
+	  the key, so that another door in the south east of the map opens
+	  at the same time.
+
+2010-05-08 09:07  cavesomething
+
+	* scorn/kar/somehouse3: Tidy up wall tiles to look right
+
+2010-05-07 23:55  cavesomething
+
+	* scorn/kar/gork.msg, scorn/kar/mork.msg: Fix stage numbers in
+	  these dialogs
+
+2010-05-07 12:19  cavesomething
+
+	* python/dialog/pre/token.py: Check multiple token conditions
+	  correctly
+
+2010-05-06 11:18  cavesomething
+
+	* world/world_105_115: Change location description on sign to point
+	  to where the building actually is.
+
+2010-05-05 16:10  cavesomething
+
+	* python/quests/QuestTriggerConnect.py: New Script to enable map
+	  connections to be triggered depending on the state of a quest.
+
+2010-05-05 15:02  cavesomething
+
+	* python/dialog/pre/quest.py: Fix parsing of stage numbers
+
+2010-05-05 11:42  cavesomething
+
+	* python/dialog/dialog_check.py: Add useage note in comments
+
+2010-05-05 11:38  cavesomething
+
+	* scorn/shops/eswald.msg: Fix syntax errors
+
+2010-05-05 11:36  cavesomething
+
+	* scorn/misc/gateguardinside.msg, scorn/misc/gateguardoutside.msg:
+	  Fix include paths
+
+2010-05-05 11:35  cavesomething
+
+	* scorn/houses/gramps_malone.msg, scorn/houses/jc.msg,
+	  scorn/houses/terrys_wife.msg: Fix syntax errors in dialog files
+
+2010-05-05 11:33  cavesomething
+
+	* scorn/shops/smith.msg, scorn/shops/smith_finished.msg: Break out
+	  the smith .msg file into two separate files
+
+2010-05-05 11:11  cavesomething
+
+	* python/dialog/dialog_check.py, python/dialog/post/connection.py,
+	  python/dialog/post/givecontents.py,
+	  python/dialog/post/giveitem.py, python/dialog/post/marktime.py,
+	  python/dialog/post/quest.py, python/dialog/post/settoken.py,
+	  python/dialog/post/takeitem.py, python/dialog/pre/age.py,
+	  python/dialog/pre/item.py, python/dialog/pre/level.py,
+	  python/dialog/pre/quest.py, python/dialog/pre/token.py: Add
+	  dialog_check.py - a script to check dialog files for common
+	  errors.
+	  Add ## DIALOGCHECK blocks to all existing action scripts
+	  Allow the pre 'quest' check to express ranges of stages or an
+	  exact
+	  stage to be at
+
+2010-05-05 11:04  cavesomething
+
+	* scorn/shops/oled.msg: Correct some errors in dialog script
+
+2010-05-05 10:48  cavesomething
+
+	* test/quest_handling/girl4.msg, test/quest_handling/girl6.msg,
+	  test/quest_handling/girlmain.msg: Change the .msg files for the
+	  test map to use a mixture of absolute and relative paths
+
+2010-05-05 10:46  cavesomething
+
+	* python/dialog/npc_dialog.py: Allow include blocks to use either
+	  relative or absolute paths to reference other .msg files.
+	  Maps still need to specify a full path in the slaying field of an
+	  event say.
+
+2010-04-30 17:19  cavesomething
+
+	* python/CFDialog.py, python/dialog/npc_dialog.py,
+	  test/quest_handling/girl6.msg, test/quest_handling/girl7.msg,
+	  test/quest_handling/girlmain.msg, test/quest_handling/quest_map:
+	  Allow include rules to contain a "pre" block which will be
+	  evaluated to decide
+	  whether to allow the file(s) to be included. This is treated in
+	  exactly the same
+	  way as the "pre" blocks for all other rules.
+	  A test map demonstrating this in use is included.
+
+2010-04-30 09:55  cavesomething
+
+	* scorn/anthony/portgate, scorn/houses/cornerbrook,
+	  scorn/houses/farmhouse, scorn/houses/newhouse1,
+	  scorn/houses/riverside_manor, scorn/houses/wizz.entry,
+	  scorn/kar/gorks1, scorn/kar/gorks3, scorn/kar/somehouse3,
+	  scorn/misc/gatehouse, scorn/shops/coffeeshop,
+	  scorn/taverns/barking_mule, scorn/taverns/goths,
+	  scorn/taverns/goths2, scorn/towers/tower.mad3,
+	  start/newbieshouse: Fix a substantial number of other script
+	  paths that I had missed previously.
+
+2010-04-30 07:58  cavesomething
+
+	* scorn/houses/cornerbrook, scorn/shops/armourshop: Fix the paths
+	  to npc_dialog.py so that this script actually gets called.
+
+2010-04-27 23:43  cavesomething
+
+	* python/CFDialog.py, python/dialog/commongive.py,
+	  python/dialog/post, python/dialog/post/connection.py,
+	  python/dialog/post/givecontents.py,
+	  python/dialog/post/giveitem.py, python/dialog/post/marktime.py,
+	  python/dialog/post/quest.py, python/dialog/post/settoken.py,
+	  python/dialog/post/takeitem.py, python/dialog/pre,
+	  python/dialog/pre/README, python/dialog/pre/age.py,
+	  python/dialog/pre/item.py, python/dialog/pre/level.py,
+	  python/dialog/pre/quest.py, python/dialog/pre/token.py: Break out
+	  the CFDialog python script into a dispatcher for a number of
+	  smaller, action oriented scripts.
+
+2010-04-27 23:30  cavesomething
+
+	* test/quest_handling/timetest.msg: Change the timer condition to
+	  match what the sign says.
+
+2010-04-27 22:02  cavesomething
+
+	* scorn/houses/cornerbrook: Add wheelbarrow to cornerbrook
+
+2010-04-27 17:15  cavesomething
+
+	* scorn/misc/gateguardcommon.msg, scorn/misc/gateguardinside.msg,
+	  scorn/misc/gateguardoutside.msg: Merge the dialog rules for the
+	  gate guards into a common .msg file that both
+	  can include.
+
+2010-04-27 17:13  cavesomething
+
+	* test/quest_handling/girl2.msg, test/quest_handling/girl3.msg,
+	  test/quest_handling/girl4.msg, test/quest_handling/girl5.msg,
+	  test/quest_handling/girlmain.msg, test/quest_handling/quest_map:
+	  Updates to the quest test map and a number of .msg files that
+	  demonstrate
+	  how to use include to source rules from different files.
+
+2010-04-27 17:04  cavesomething
+
+	* python/dialog/npc_dialog.py: Change the npc_dialog.py file to
+	  allow message files to include other message
+	  files.
+
+2010-04-27 16:01  cavesomething
+
+	* scorn/scorn.quests: Fix Typo in quest include
+
+2010-04-27 14:59  cavesomething
+
+	* navar_city/magara/houses/museum: Change the custom name of the
+	  red dragon mail to Red Dragon Mail
+
+2010-04-27 14:43  cavesomething
+
+	* scorn/scorn.quests: Add the gorks quests file to the includes for
+	  the scorn file so it is picked up properly.
+
+2010-04-27 14:40  cavesomething
+
+	* default.quests, scorn/anthony/milton.msg,
+	  scorn/anthony/passoffice, scorn/anthony/portgate,
+	  scorn/anthony/portguard.msg, scorn/aristocracy.quests,
+	  scorn/citygate.quests, scorn/houses/newhouse1,
+	  scorn/houses/wizz.entry, scorn/kar/gorks1,
+	  scorn/misc/gateguardinside.msg, scorn/misc/gateguardoutside.msg,
+	  scorn/misc/gatehouse, scorn/scorn.quests, scorn/taverns/goths,
+	  scorn/taverns/goths2, scorn/towers/tower.mad3: Support for the
+	  various quests that track passage through the gates of scorn.
+
+2010-04-27 14:28  cavesomething
+
+	* scorn/taverns/goths: Amendment to goths tavern needed for the
+	  coffeegoose quest
+
+2010-04-27 14:10  cavesomething
+
+	* default.quests, scorn/houses/cornerbrook,
+	  scorn/houses/riverside_manor, scorn/scorn.quests,
+	  scorn/shops/coffeeshop, scorn/shops/eswald.msg,
+	  scorn/shops/oled.msg, scorn/shops/oleds_cafe,
+	  scorn/taverns/barking_mule, scorn/taverns/fran.msg,
+	  scorn/taverns/mark.msg: Questify the 'Esmeralda the goose' quest.
+
+2010-04-27 12:59  cavesomething
+
+	* default.quests, scorn/houses/farm.quests, scorn/houses/farmhouse,
+	  scorn/houses/terry.msg, scorn/houses/terrys_wife.msg,
+	  scorn/scorn.quests: Quest handling for Terry's farm. This commit
+	  includes some quest definitions that are not implemented on the
+	  maps yet.
+
+2010-04-27 12:48  cavesomething
+
+	* default.quests, start/newbieshouse, start/start.quests,
+	  world.quests: A Simple introductory quest in the newbies house.
+
+2010-04-27 12:40  cavesomething
+
+	* default.quests, scorn/houses/cornerbrook,
+	  scorn/houses/gramps_malone.msg, scorn/houses/jc.msg,
+	  scorn/houses/malone.quests, scorn/houses/molly_malone.msg,
+	  scorn/houses/riverside_manor, scorn/scorn.quests,
+	  scorn/taverns/barking_mule: Questify Gramps Malone's two fedex
+	  quests.
+
+2010-04-27 10:58  cavesomething
+
+	* default.quests, scorn/kar/gork.msg, scorn/kar/gork.quests,
+	  scorn/kar/gorks3, scorn/kar/mork.msg, scorn/kar/somehouse3:
+	  Questify Gork's treasure hoard.
+
+2010-04-27 10:22  cavesomething
+
+	* default.quests, scorn/scorn.quests, scorn/shops/armourshop,
+	  scorn/shops/smith.msg, world.quests: Add a 'quest' to get armour
+	  custom-made by the smith in scorn armour shop.
+
+2010-04-27 09:10  cavesomething
+
+	* test/dialog: Update test map to use new dialog syntax
+
+2010-04-27 09:04  cavesomething
+
+	* python/maps/witherspoon_manor/ghost.py, scorn/kar/gork.msg,
+	  scorn/kar/gorks3, scorn/kar/mork.msg, scorn/kar/somehouse3,
+	  scorn/taverns/goths, start/newbieshouse, start/sigmund.msg,
+	  test/granpa_dialog.msg: Update existing dialog files to use the
+	  new dialog syntax
+
+2010-04-27 08:43  cavesomething
+
+	* python/CFDialog.py, python/dialog/npc_dialog.py: Updates to the
+	  dialog handling files to support more powerful syntax
+
+2010-04-27 08:40  cavesomething
+
+	* python/dialog/npc_dialog.py, python/misc/npc_dialog.py: Move
+	  npc_dialog.py to the dialog directory rather than misc/
+
+2010-04-27 08:39  cavesomething
+
+	* python/CFNPCDialog.py, python/dialog/npc_dialog.py: Revert the
+	  files added in commit 12790, these will be created from the
+	  original versions instead.
+
+2010-04-26 20:08  cavesomething
+
+	* darcap/darcap.quests, test/test.quests, world.quests: Quest
+	  definition files using the new quest definition syntax
+
+2010-04-26 15:54  cavesomething
+
+	* default.quests: Add the two quests referenced in the test map
+
+2010-04-26 15:40  cavesomething
+
+	* test/quest_handling, test/quest_handling/apples.msg,
+	  test/quest_handling/bothquests.msg,
+	  test/quest_handling/cantkillme.msg,
+	  test/quest_handling/connectiontest.msg,
+	  test/quest_handling/friendly.msg, test/quest_handling/marker.msg,
+	  test/quest_handling/quest_map, test/quest_handling/testquest.msg,
+	  test/quest_handling/timetest.msg: A test map and associated .msg
+	  files that demonstrate the things that can
+	  be done with the test scripts and extended dialog files. The
+	  signs describe
+	  what should happen at each place, this map is intended to also
+	  track buggy
+	  behaviour and regressions.
+
+2010-04-26 15:35  cavesomething
+
+	* python/quests, python/quests/QuestAdvance.py,
+	  python/quests/QuestEssentialUntil.py: Two scripts which can be
+	  used to handle quest interaction with maps
+
+2010-04-26 15:34  cavesomething
+
+	* python/CFNPCDialog.py, python/dialog,
+	  python/dialog/npc_dialog.py: Add CFNPCDialog.py and the wrapper
+	  script dialog/npc_dialog.py, a wrapper script for advanced dialog
+	  handling.
+
+2010-04-26 04:43  mwedel
+
+	* ChangeLog: Add breaks to mark different versions, add 1.50.0
+	  break.
+	  MSW 2010-04-25
+
+2010-04-08 18:04  alestan
+
+	* python/CFDataBase.py: Added CFDataBase for handling generic
+	  python objects
+
+2010-04-08 02:18  kbulgrien
+
+	* pup_land/begin/adv, pup_land/begin/p1, pup_land/begin/p2,
+	  pup_land/begin/p3: - Give the keys to the House of Treasure
+	  reasonable names other than key1,
+	  key2, and key3. These aren't secret keys anyway and there are far
+	  too
+	  many keys that are generically named anyway. Add descriptions
+	  too.
+
+2010-04-07 22:18  alestan
+
+	* python/pshop, python/pshop/Floor.py, python/pshop/Ice.py,
+	  python/pshop/TODO, python/pshop/entry.py, python/pshop/pshop.py,
+	  python/pshop/rent.py: added dir to /python for handling the
+	  private shops
+
+2010-04-07 22:14  alestan
+
+	* test/newmaps, test/newmaps/madness_maze,
+	  test/newmaps/madness_maze/madnessmaze-1x6,
+	  test/newmaps/madness_maze/madnessmaze0x6,
+	  test/newmaps/madness_maze/madnessmaze1x10a,
+	  test/newmaps/madness_maze/madnessmaze1x10b,
+	  test/newmaps/madness_maze/madnessmaze1x10c,
+	  test/newmaps/madness_maze/madnessmaze1x11a,
+	  test/newmaps/madness_maze/madnessmaze1x11b,
+	  test/newmaps/madness_maze/madnessmaze1x11c,
+	  test/newmaps/madness_maze/madnessmaze1x1a,
+	  test/newmaps/madness_maze/madnessmaze1x1b,
+	  test/newmaps/madness_maze/madnessmaze1x1c,
+	  test/newmaps/madness_maze/madnessmaze1x2a,
+	  test/newmaps/madness_maze/madnessmaze1x2b,
+	  test/newmaps/madness_maze/madnessmaze1x2c,
+	  test/newmaps/madness_maze/madnessmaze1x3a,
+	  test/newmaps/madness_maze/madnessmaze1x3b,
+	  test/newmaps/madness_maze/madnessmaze1x3c,
+	  test/newmaps/madness_maze/madnessmaze1x4a,
+	  test/newmaps/madness_maze/madnessmaze1x4b,
+	  test/newmaps/madness_maze/madnessmaze1x4c,
+	  test/newmaps/madness_maze/madnessmaze1x5a,
+	  test/newmaps/madness_maze/madnessmaze1x5b,
+	  test/newmaps/madness_maze/madnessmaze1x5c,
+	  test/newmaps/madness_maze/madnessmaze1x6a,
+	  test/newmaps/madness_maze/madnessmaze1x6b,
+	  test/newmaps/madness_maze/madnessmaze1x6c,
+	  test/newmaps/madness_maze/madnessmaze1x7a,
+	  test/newmaps/madness_maze/madnessmaze1x7b,
+	  test/newmaps/madness_maze/madnessmaze1x7c,
+	  test/newmaps/madness_maze/madnessmaze1x8a,
+	  test/newmaps/madness_maze/madnessmaze1x8b,
+	  test/newmaps/madness_maze/madnessmaze1x8c,
+	  test/newmaps/madness_maze/madnessmaze1x9a,
+	  test/newmaps/madness_maze/madnessmaze1x9b,
+	  test/newmaps/madness_maze/madnessmaze1x9c,
+	  test/newmaps/madness_maze/madnessmaze2x1a,
+	  test/newmaps/madness_maze/madnessmaze2x1b,
+	  test/newmaps/madness_maze/madnessmaze2x1c,
+	  test/newmaps/madness_maze/madnessmaze2x2c,
+	  test/newmaps/madness_maze/madnessmaze2x4c,
+	  test/newmaps/madness_maze/madnessmaze2x7c,
+	  test/newmaps/madness_maze/madnessmaze3x3b,
+	  test/newmaps/madness_maze/madnessmaze3x8c,
+	  test/newmaps/madness_maze/scripts,
+	  test/newmaps/madness_maze/scripts/madnessmaze1.py,
+	  test/newmaps/privateshop: added newmaps dir to test, for testing
+	  new maps.
+
+2010-04-07 22:14  ryo_saeba
+
+	* darcap/darcap/fishing, scorn/houses/tyl_attic: Add region.
+
+2010-03-29 23:16  cavesomething
+
+	* default.quests: Change the quest definition to conform to the new
+	  standard.
+
+2010-03-25 17:33  meflin2
+
+	* planes/bigchest, python/guilds/guild_dues.py,
+	  templates/guild/basement, templates/guild/guildman_lounge,
+	  templates/guild/hallofjoining, templates/guild/journeyman_lounge,
+	  templates/guild/master_lounge, templates/guild/novice_lounge:
+	  more python guild updates
+
+2010-03-13 13:10  ryo_saeba
+
+	* darcap/darcap/random_house: Entrance to the random map.
+
+2010-03-13 13:09  ryo_saeba
+
+	* world/world_116_102: Fix exits to the various elemental houses,
+	  get ready for a new map.
+
+2010-03-13 12:38  ryo_saeba
+
+	* darcap/darcap/firehouse: Add lights, tweak initial speed.
+
+2010-03-13 12:37  ryo_saeba
+
+	* darcap/darcap/waterhouse: Implement the water house.
+
+2010-03-13 12:32  ryo_saeba
+
+	* darcap/darcap/earthhouse: Implement the earth house.
+
+2010-03-13 12:26  ryo_saeba
+
+	* darcap/darcap/airhouse: Implement the air house.
+
+2010-03-13 12:09  ryo_saeba
+
+	* darcap/darcap/airhouse, darcap/darcap/earthhouse,
+	  darcap/darcap/firehouse, darcap/darcap/house_tunnels,
+	  darcap/darcap/waterhouse: Totally revamp the elemental houses, so
+	  they are now exhibits (work in progress).
+
+2010-03-13 09:46  ryo_saeba
+
+	* scorn/houses/rolanda: Rename cauldron as to not confuse players,
+	  per anonymous suggestion on tracker.
+
+2010-03-07 10:36  ryo_saeba
+
+	* darcap/darcap/library_ground, darcap/darcap/library_upper,
+	  world/world_116_102: Darcap public library, with some parts of
+	  Darcap's history.
+
+2010-03-01 18:47  ryo_saeba
+
+	* pup_land/lone_town/mshop_ud: Remove 'scroll of set traps', skill
+	  not implemented.
+
+2010-02-28 11:53  ryo_saeba
+
+	* python/maps/scorn/HouseofHealing.py, scorn/misc/HouseofHealing:
+	  Have the priest give (almost) free restorations, if the player
+	  knows the answers.
+
+2010-02-27 19:14  meflin2
+
+	* python/guilds/clearance.py, python/guilds/guild_dues.py,
+	  templates/guild/guild_alchemy, templates/guild/guild_bbq,
+	  templates/guild/guild_jeweler, templates/guild/guild_tan,
+	  templates/guild/guild_thaum, templates/guild/guild_toolshed,
+	  templates/guild/mainfloor, templates/guild/secondfloor: alestan
+	  python guild updates
+
+2010-02-26 23:04  meflin2
+
+	* python/guilds/guild_dues.py: alestan python guild updates
+
+2010-02-26 18:14  meflin2
+
+	* python/guilds/GUILD_TEMPLATE.txt,
+	  python/guilds/PoisonedDagger.txt,
+	  python/guilds/PurpleButterfly.txt,
+	  python/guilds/SmokingCauldron.txt, python/guilds/arrest.py,
+	  python/guilds/clearance.py, python/guilds/guild_dues.py,
+	  python/guilds/guild_entry.py, python/guilds/guildoracle.py,
+	  python/guilds/guildstorage.py, python/guilds/trigger.py,
+	  templates/guild/GuildList, templates/guild/basement,
+	  templates/guild/bigchest, templates/guild/guild_alchemy,
+	  templates/guild/guild_bbq, templates/guild/guild_hq,
+	  templates/guild/guild_jeweler, templates/guild/guild_tan,
+	  templates/guild/guild_thaum, templates/guild/guild_toolshed,
+	  templates/guild/guildman_lounge,
+	  templates/guild/guildmaster_lounge,
+	  templates/guild/hallofjoining, templates/guild/journeyman_lounge,
+	  templates/guild/mainfloor, templates/guild/master_lounge,
+	  templates/guild/novice_lounge, templates/guild/secondfloor,
+	  templates/guild/storage_room: alestan python guild updates
+
+2010-02-14 11:10  ryo_saeba
+
+	* darcap/darcap/thilgar, darcap/darcap/thilgar_top: Give a decent
+	  name, set region.
+
+2010-02-14 10:52  ryo_saeba
+
+	* darcap/darcap/thilgar, darcap/darcap/thilgar_top,
+	  world/world_116_102: Small house, not much story yet.
+
+2010-02-11 22:47  ryo_saeba
+
+	* quests/peterm/quests/TitanGate, scorn/misc/HallOfQuests,
+	  scorn/taverns/goths: Try to give more information for the quests.
+
+2010-01-24 19:06  ryo_saeba
+
+	* test/spell_requirements: Spell requirement test map.
+
+2010-01-24 17:28  ryo_saeba
+
+	* test/talked_to: Small map to check NPC stopping when talked to.
+
+2010-01-24 15:37  ryo_saeba
+
+	* test/quest, test/quest.py: Quest-related functions test.
+
+2010-01-24 15:11  ryo_saeba
+
+	* darcap/darcap/shop_w: Tweak dialogs.
+
+2010-01-24 10:57  ryo_saeba
+
+	* default.quests: Initial quest definition file.
+
+2010-01-18 22:54  ryo_saeba
+
+	* scorn/misc/devourlower: Apply patch 'Added exit lever to
+	  Devourer's temple lower level' courtesy Otto J. Mäkelä.
+
+2010-01-17 15:26  ryo_saeba
+
+	* darcap/darcap/potionshop, darcap/darcap/shop_g,
+	  darcap/darcap/shop_w, world/world_116_102: First really basic
+	  quest, to test the mechanisms.
+
+2010-01-16 12:17  ryo_saeba
+
+	* world/world_116_102: Fix move_block.
+
+2010-01-14 17:59  ryo_saeba
+
+	* world/world_116_102: Add some fishing spots to Darcap.
+
+2010-01-14 17:56  ryo_saeba
+
+	* darcap/darcap/fishing, world/world_116_102: Fishing shop, with
+	  fishing poles.
+
+2010-01-09 22:19  ryo_saeba
+
+	* darcap/darcap/church: Trap the relics so player has a bad
+	  surprise when selling it in a Darcap shop.
+
+2010-01-09 22:18  ryo_saeba
+
+	* world/world_116_102: Remove invisible exit messing with moving.
+
+2010-01-09 18:09  ryo_saeba
+
+	* darcap/darcap/church: Revamp Saint Andreas's church.
+
+2009-12-28 18:50  ryo_saeba
+
+	* darcap/darcap/tavern: Give a name to the barman. Autoapply exits.
+	  Prevent barman from getting outside.
+
+2009-12-12 14:02  ryo_saeba
+
+	* darcap/darcap/circus/roller2, darcap/darcap/circus/roller3: Fix
+	  rollers, add sky/cloud to map, prevent players moving outside
+	  path.
+
+2009-12-05 21:44  ryo_saeba
+
+	* world/world_116_104: Use the correct name from the position.
+
+2009-12-05 16:57  ryo_saeba
+
+	* scorn/houses/tyl, scorn/houses/tyl_attic, world/world_105_115:
+	  Small house, with books to read.
+
+2009-11-07 15:07  akirschbaum
+
+	* lake_country/Butakis/Wist_study, navar_city/misc/navarwiz,
+	  pup_land/ancient/castle/castle.4, scorn/misc/wizhide,
+	  world/world_122_117: Remove redundant attributes.
+
+2009-11-07 14:39  akirschbaum
+
+	* editor/scripts/MapNormalizer: Make editor script work with latest
+	  Gridarta.
+
+2009-10-29 17:31  anmaster
+
+	* quests/peterm/FireTemple/Fire2: Remove some double floor in
+	  /quests/peterm/FireTemple/Fire2, move one magic mouth below the
+	  floor.
+
+2009-10-29 16:55  anmaster
+
+	* quests/peterm/FireTemple/LavaChamber,
+	  quests/peterm/FireTemple/Passageway: Remove some double floor and
+	  bogus non-reachable exits in
+	  /quests/peterm/FireTemple/LavaChamber and
+	  /quests/peterm/FireTemple/Passageway.
+
+2009-10-22 23:06  akirschbaum
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/ground,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/upper,
+	  azumauindo/suno-yamatoshi/nenshou_youso/ground,
+	  azumauindo/suno-yamatoshi/nenshou_youso/upper,
+	  azumauindo/zaseki_dzuki_ryoku/ground,
+	  azumauindo/zaseki_dzuki_ryoku/upper, brest/black_shield/ground,
+	  brest/black_shield/upper, darcap/castle/castle2.1,
+	  darcap/darcap/guilds/poisoned_dagger/ground,
+	  darcap/darcap/guilds/poisoned_dagger/upper,
+	  darcap/darcap/guilds/smoking_cauldron/ground,
+	  darcap/darcap/guilds/smoking_cauldron/upper,
+	  navar_city/dreaming_sage/ground, navar_city/dreaming_sage/upper,
+	  pup_land/guilds/laughing_skull/ground,
+	  pup_land/guilds/laughing_skull/upper,
+	  pup_land/guilds/purple_butterfly/ground,
+	  pup_land/guilds/purple_butterfly/upper, pup_land/nurnberg/city,
+	  quests/peterm/Nethack_in_crossfire_entrance,
+	  santo_dominion/guilds/drunken_barbarian/ground,
+	  santo_dominion/guilds/drunken_barbarian/upper,
+	  santo_dominion/lord_byron/1st_floor,
+	  santo_dominion/lord_byron/main, scorn/guilds/mailed_fist/ground,
+	  scorn/guilds/mailed_fist/upper, templates/guild/secondfloor,
+	  unlinked/Greyshield/Cavern2, unlinked/Greyshield/Ruins,
+	  unlinked/kandora/cave/cave1, unlinked/kandora/cave/cave2,
+	  unlinked/kandora/circus/mp_s, unlinked/kandora/circus/mp_world,
+	  unlinked/kandora/dd_alchemy, unlinked/kandora/denray,
+	  unlinked/kandora/dm_keep, unlinked/kandora/dun_marksel,
+	  unlinked/kandora/elcyon/old_temple,
+	  unlinked/kandora/elcyon/seacity, unlinked/kandora/kandora,
+	  unlinked/kandora/signal, unlinked/kandora/signal2,
+	  wolfsburg/guilds/damned_heretics/ground,
+	  wolfsburg/guilds/damned_heretics/upper, wolfsburg/slave_pit2,
+	  world/world_105_115, world/world_129_109: Adapt exit coordinates
+	  to server r12199.
+
+2009-10-15 12:29  anmaster
+
+	* scorn/houses/wizardw: Fix tables in /scorn/houses/wizardw to
+	  render below books that are supposed to be placed on top of them.
+
+2009-10-14 16:13  anmaster
+
+	* python/CFDataFile.py, python/CFMapTransformer.py,
+	  python/CFWorld.py, python/items/roll-o-matic.py: Minor code
+	  cleanup in some python modules (removing unused variables,
+	  cleaning up some if tests, removing import statements for some
+	  modules that were then never used.
+
+2009-08-04 01:14  kbulgrien
+
+	* scorn/misc/kboldtemp1b4: - Rework some grammar and remove
+	  linebreaks from a message.
+
+2009-08-03 03:41  kbulgrien
+
+	* world/world_103_127: - Remove duplicate grass tiles from trees
+	  and tower.
+
+2009-07-19 22:43  kbulgrien
+
+	* darcap/undead/undead.3: - Remove duplicate and triplicate
+	  "stones" floor tiles.
+
+2009-07-19 18:56  kbulgrien
+
+	* darcap/undead/undead.2: - Remove duplicate "stones" flooring from
+	  areas players can walk on.
+
+2009-07-19 04:21  kbulgrien
+
+	* navar_city/city1enter: - Spelling fixes.
+	  - Remove line breaks from NPC messages.
+
+2009-07-19 04:20  kbulgrien
+
+	* darcap/undead/undead.1: - Get rid of duplicate stones tiles over
+	  the whole map.
+
+2009-07-18 17:14  kbulgrien
+
+	* marksel/grumms_inn: - Spelling corrections.
+	  - Linebreak adjustments.
+
+2009-07-16 22:34  kbulgrien
+
+	* mlab/mlabscrntrd2: - Fix spelling errors in an NPC message and
+	  remove mid-sentence line breaks.
+
+2009-07-16 22:26  kbulgrien
+
+	* port_joseph/pirates/fortvsship: - Remove a line break from an NPC
+	  message.
+
+2009-07-14 19:56  akirschbaum
+
+	* scorn/misc/library: Fix #2816641 (/scorn/misc/library pay mat
+	  broken).
+
+2009-07-14 19:03  akirschbaum
+
+	* brest/Castle/DragonRoom, brest/Castle/Finale: Remove some
+	  monsters overlapping other monsters.
+
+2009-07-13 19:53  akirschbaum
+
+	* Info/worldmap.png: Update worldmap image.
+
+2009-07-12 18:17  akirschbaum
+
+	* editor/scripts/WorldMaker: Fix WorldMaker editor script. Needs
+	  Gridarta r6758 or later.
+
+2009-07-12 14:47  akirschbaum
+
+	* HallOfDMs, azumauindo/minatomachi/stores/postoffice,
+	  brest/brest.IPO, brest/brest.inn, brest/brittany/jessy.2,
+	  brest/sow/sow.1, darcap/darcap/circus/wurfbude,
+	  darcap/darcap/pirates.1, dragonisland/advguild3,
+	  dragonisland/hangar, editor/pickmaps/indoor,
+	  inn_and_outpost/nirlas_house, inn_and_outpost/pypers_treehouse,
+	  inn_and_outpost/sweets_inn, inn_and_outpost/sweets_inn2,
+	  inn_and_outpost/treehouse_df1, inn_and_outpost/treehouse_df2,
+	  inn_and_outpost/treehouse_df3, inn_and_outpost/treehouse_df4,
+	  inn_and_outpost/treehouse_df5, inn_and_outpost/treehouse_df6,
+	  lake_country/dragon_hangar/hangar,
+	  mlab/citydeclouds/IPO_citydeclouds,
+	  mlab/citydeclouds/castle/cwdccastlef1,
+	  mlab/citydeclouds/citydeclouds2G,
+	  navar_city/dragon_hangar/hangar, navar_city/light/smugship,
+	  navar_city/misc/IPO_navar, navar_city/misc/navarwiz,
+	  navar_city/troll_canyon/troll_canyon.7,
+	  port_joseph/goblin/dungeon1, port_joseph/goblin/dungeon2,
+	  port_joseph/pirates/fortvsship, pup_land/ancient/castle/castle.6,
+	  pup_land/ancient/ruin/path, pup_land/ancient/volcano/guardians,
+	  pup_land/castle_eureca/castle_eureca7,
+	  pup_land/lone_town/dragonhangar/hangar,
+	  pup_land/nurnberg/dragonhangar/hangar,
+	  pup_land/nurnberg/reception/electricity5,
+	  pup_land/nurnberg/reception/electricity6,
+	  pup_land/nurnberg/reception/wind6, pup_land/pplant/pplant_ud2,
+	  pup_land/s_f/floor1, pup_land/s_f/floor2,
+	  quests/greyshield/Doors, quests/mak/undead/mausoleum,
+	  quests/peterm/Demonology/EarthMaster,
+	  quests/peterm/Demonology/FireMaster,
+	  quests/peterm/Demonology/WaterMaster,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/FireTemple/Fire4,
+	  quests/peterm/quests/wyvern_quest,
+	  quests/peterm/temple/GemTunnel, quests/saromok/castlesaromok_ltl,
+	  quests/saromok/castlesaromok_ltr,
+	  quests/saromok/castlesaromok_top,
+	  quests/saromok/castlesaromok_towerf1,
+	  quests/saromok/castlesaromok_towerf10,
+	  quests/saromok/castlesaromok_towerf2,
+	  quests/saromok/castlesaromok_towerf3,
+	  quests/saromok/castlesaromok_towerf4,
+	  quests/saromok/castlesaromok_towerf5,
+	  quests/saromok/castlesaromok_towerf6,
+	  quests/saromok/castlesaromok_towerf7,
+	  quests/saromok/castlesaromok_towerf8,
+	  quests/saromok/castlesaromok_towerf9, quests/todd/aljwaf/crypt6,
+	  quests/todd/aljwaf/hall2, quests/todd/aljwaf/tower1,
+	  santo_dominion/city_hall, santo_dominion/map.and.sale,
+	  santo_dominion/shaft/undeadshaft.4, scorn/houses/bowyer,
+	  scorn/houses/breezy_under2, scorn/houses/easy_house.1.a,
+	  scorn/houses/easy_house.1.b, scorn/houses/easy_house.1.c,
+	  scorn/houses/house3.bas2, scorn/houses/newhouse1,
+	  scorn/misc/wizhide, scorn/oldcity/oldcity13,
+	  scorn/oldcity/oldcity7, scorn/shops/IPO_scorn,
+	  scorn/shops/scorn.sale2, sisters/necro_ruin1,
+	  sisters/shrine0_east, styles/monsterstyles/nethack/nethack_1,
+	  styles/monsterstyles/nethack/nethack_10,
+	  styles/monsterstyles/nethack/nethack_11,
+	  styles/monsterstyles/nethack/nethack_12,
+	  styles/monsterstyles/nethack/nethack_13,
+	  styles/monsterstyles/nethack/nethack_14,
+	  styles/monsterstyles/nethack/nethack_15,
+	  styles/monsterstyles/nethack/nethack_16,
+	  styles/monsterstyles/nethack/nethack_17,
+	  styles/monsterstyles/nethack/nethack_18,
+	  styles/monsterstyles/nethack/nethack_19,
+	  styles/monsterstyles/nethack/nethack_2,
+	  styles/monsterstyles/nethack/nethack_20,
+	  styles/monsterstyles/nethack/nethack_21,
+	  styles/monsterstyles/nethack/nethack_3,
+	  styles/monsterstyles/nethack/nethack_4,
+	  styles/monsterstyles/nethack/nethack_5,
+	  styles/monsterstyles/nethack/nethack_6,
+	  styles/monsterstyles/nethack/nethack_7,
+	  styles/monsterstyles/nethack/nethack_8,
+	  styles/monsterstyles/nethack/nethack_9,
+	  styles/monsterstyles/wyvern/wyvern_1,
+	  styles/monsterstyles/wyvern/wyvern_2,
+	  styles/monsterstyles/wyvern/wyvern_3,
+	  styles/monsterstyles/wyvern/wyvern_4,
+	  styles/monsterstyles/wyvern/wyvern_5,
+	  styles/monsterstyles/wyvern/wyvern_6,
+	  styles/monsterstyles/wyvern/wyvern_7, templates/guild/mainfloor,
+	  templates/keep/grounds.tpl, templates/keep/keep2.tpl,
+	  test/anthony/raffles_cascade, unlinked/Greyshield/Doors,
+	  wolfsburg/eeur/tower1.4, world/world_103_127,
+	  world/world_105_115, world/world_110_117, world/world_122_116:
+	  Run MapNormalizer editor script on all map files.
+
+2009-07-12 14:40  akirschbaum
+
+	* editor/scripts/MapNormalizer: Add game object attribute
+	  normalization to MapNormalizer editor script. Now game object
+	  attributes are written in canonical order and attributes
+	  redundant with the archetype are removed.
+
+2009-07-07 11:48  kbulgrien
+
+	* santo_dominion/espen/palace: - Retry spelling, ellipsis, and line
+	  ending fixes. Missed a few. Some edits
+	  are best done in a non-graphical editor.
+
+2009-07-07 03:44  kbulgrien
+
+	* santo_dominion/espen/palace: - Remove line breaks and fix
+	  spelling. Reduce ellipsis to three dots.
+
+2009-07-07 03:36  kbulgrien
+
+	* santo_dominion/espen/espen1: - Correct spelling.
+
+2009-07-07 03:02  kbulgrien
+
+	* santo_dominion/espen/espen1: - Name the dungeon in the same form
+	  as level 2 for consistency.
+
+2009-07-07 03:02  kbulgrien
+
+	* santo_dominion/espen/palace: - Spelling corrected.
+
+2009-07-06 03:02  kbulgrien
+
+	* santo_dominion/magara/opera: - Spelling fix.
+
+2009-07-04 03:05  kbulgrien
+
+	* santo_dominion/shops/erash: - Remove a spinner from next to the
+	  shop mat and under the floor tile, but
+	  visible to players.
+
+2009-06-23 03:50  kbulgrien
+
+	* scorn/shops/armourshop, world/world_104_115: - Re-orient the
+	  armourshop to have the door inside the building match the
+	  location on the world map by rotating the map 180 degrees and
+	  fixing up
+	  walls and fences. To keep the door style the same, the door was
+	  moved
+	  over by one. To make the player exit on the world tile that has
+	  the
+	  door on it, the target coordinate was also adjusted.
+
+2009-06-18 21:29  akirschbaum
+
+	* brest/ludo2: Add wall to protect treasure from getting destroyed;
+	  reduce treasure somewhat.
+
+2009-06-17 19:44  akirschbaum
+
+	* brest/zorn/castle.upper.floor.one,
+	  pup_land/ordeal/tower_ordealB3: Fix objects setting 'type 15'
+	  (weapon) but missing skill and body part information.
+
+2009-06-17 09:05  akirschbaum
+
+	* azumauindo/suno-yamatoshi/shops/magicshop1,
+	  azumauindo/suno-yamatoshi/shops/magicshop2,
+	  brest/shops/brest.magic, lake_country/shops/klondors_wands,
+	  navar_city/misc/city1magic, navar_city/misc/dragon_guild,
+	  pup_land/lone_town/shops/transport.shoppe,
+	  quests/cd/cd.store.753, scorn/shops/magicshop,
+	  wolfsburg/shops/transport.shoppe: Remove 'rod' shopitems
+	  specifications; these have been merged into 'horn'.
+
+2009-06-10 18:46  akirschbaum
+
+	* quests/peterm/FireTemple/Fire4: Replace HORNs (type 35) with RODs
+	  (type 3).
+
+2009-06-10 13:01  akirschbaum
+
+	* dragonisland/keysale: Fix typos; remove line-breaks from msg
+	  fields.
+
+2009-06-08 22:26  akirschbaum
+
+	* brest/zorn/castle.upper.floor.one, darcap/darcap/circus/wurfbude,
+	  dragonisland/hangar, dungeons/gorokh/gorokh_final,
+	  inn_and_outpost/nirlas_house, inn_and_outpost/pypers_treehouse,
+	  inn_and_outpost/sweets_inn, inn_and_outpost/treehouse_df1,
+	  inn_and_outpost/treehouse_df2, inn_and_outpost/treehouse_df3,
+	  inn_and_outpost/treehouse_df4, inn_and_outpost/treehouse_df5,
+	  inn_and_outpost/treehouse_df6, lake_country/Butakis/prison_e,
+	  mlab/citydeclouds/castle/cwdccastlef2,
+	  mlab/citydeclouds/villa/citydecloudsvillab1,
+	  navar_city/casino_infernal/casino_infernal1,
+	  navar_city/smugglers_cove/sc_warehouse2, planes/greenway1,
+	  planes/greenway2, planes/greenway5, planes/greenway6,
+	  planes/greenway8, planes/greenway9,
+	  pup_land/ancient/castle/gothwolte.3,
+	  pup_land/ancient/village/library,
+	  pup_land/castle_eureca/castle_eureca9,
+	  pup_land/cave_weapon/cave1, pup_land/cave_weapon/cave2,
+	  pup_land/cave_weapon/cave4, pup_land/jk/gs_house,
+	  pup_land/lone_town/church_ud, pup_land/lone_town/cordish,
+	  pup_land/lone_town/dress1, pup_land/lone_town/dress2,
+	  pup_land/lone_town/dress3, pup_land/nurnberg/nf_bar,
+	  quests/hendel/acid_room, quests/peterm/FireTemple/Fire4,
+	  quests/saromok/castlesaromok_ltl,
+	  quests/saromok/castlesaromok_ltr,
+	  quests/saromok/castlesaromok_top,
+	  quests/saromok/castlesaromok_towerf1,
+	  quests/saromok/castlesaromok_towerf10,
+	  quests/saromok/castlesaromok_towerf11,
+	  quests/saromok/castlesaromok_towerf2,
+	  quests/saromok/castlesaromok_towerf3,
+	  quests/saromok/castlesaromok_towerf4,
+	  quests/saromok/castlesaromok_towerf5,
+	  quests/saromok/castlesaromok_towerf6,
+	  quests/saromok/castlesaromok_towerf7,
+	  quests/saromok/castlesaromok_towerf8,
+	  quests/saromok/castlesaromok_towerf9,
+	  santo_dominion/temple_naive/templenaive.2,
+	  scorn/houses/house3.1st, scorn/houses/house3.bas2,
+	  scorn/mansion/witherspoon_manor_attic,
+	  styles/monsterstyles/sylvan/sylvan_10,
+	  styles/monsterstyles/sylvan/sylvan_6,
+	  styles/monsterstyles/sylvan/sylvan_7,
+	  styles/monsterstyles/sylvan/sylvan_8,
+	  styles/monsterstyles/sylvan/sylvan_9,
+	  unlinked/forgotten_town/palace,
+	  unlinked/zornstuff/zornstuff.NOT.a.map: Replace obsolete
+	  attributes can_use_rod, can_use_wand, and can_use_horn with
+	  can_use_range.
+
+2009-06-07 21:31  akirschbaum
+
+	* pup_land/ancient/mountain/atelir1,
+	  pup_land/ancient/mountain/mountain.b1,
+	  pup_land/ancient/mountain/tower.3,
+	  pup_land/ancient/mountain/tower.4, pup_land/ancient/village/hut1,
+	  pup_land/ancient/village/hut6, pup_land/ancient/village/library,
+	  pup_land/ancient/village/siegfried/siegfried.3,
+	  pup_land/ancient/volcano/guardians, pup_land/begin/p2,
+	  pup_land/castle_eureca/castle_eureca6,
+	  pup_land/castle_eureca/castle_eureca7,
+	  pup_land/castle_eureca/castle_eureca8,
+	  pup_land/castle_eureca/castle_eureca9, pup_land/kurte/hut2,
+	  pup_land/kurte/kurte, pup_land/lone_town/guild_freedom_ud,
+	  pup_land/nurnberg/apartment/main, pup_land/nurnberg/castle,
+	  pup_land/nurnberg/fshop, pup_land/nurnberg/guild,
+	  pup_land/nurnberg/reception/electricity5,
+	  pup_land/nurnberg/reception/electricity6,
+	  pup_land/nurnberg/washop, pup_land/nurnberg/wshop,
+	  pup_land/s_f/cave1, pup_land/s_f/st3: Apply patch #2800956 by
+	  Chris Mann: Pupland spelling improvements.
+
+2009-06-07 21:25  akirschbaum
+
+	* lake_country/Butakis/prison_e: Remove explicit line breaks from
+	  messages.
+
+2009-06-07 21:20  akirschbaum
+
+	* lake_country/Butakis/prison_e: Make communication with Twis work
+	  again.
+
+2009-05-19 00:59  kbulgrien
+
+	* world/world_104_116: - Change some river pieces in a lake near
+	  the southwestern corner of Scorn.
+	  One to biglake to match the body of water, and one river outlet
+	  to try to
+	  make the interface with the lake less ugly. A new river arch is
+	  needed!
+
+2009-05-14 20:29  akirschbaum
+
+	* editor/scripts/MapNormalizer: Make MapNormalizer editor plugin
+	  script save only map files that needed normalization.
+
+2009-05-14 20:25  akirschbaum
+
+	* editor/scripts/MapNormalizer: Adapt MapNormalizer editor plugin
+	  script to current Gridarta.
+
+2009-05-14 20:21  akirschbaum
+
+	* editor/scripts/MapValidator: Suppress some 'cannot load map file'
+	  error messages in MapValidator editor plugin script.
+
+2009-05-03 22:50  kbulgrien
+
+	* scorn/kar/mork.msg: - Add a few more legitimate replies to the
+	  key question to avoid reset of the
+	  conversation that would be aggravating.
+
+2009-05-03 20:58  kbulgrien
+
+	* scorn/houses/resir: - Remove duplicate floor pieces and duplicate
+	  monsters stacked on top of each
+	  other.
+
+2009-04-30 02:45  kbulgrien
+
+	* port_joseph/town/tomassos_house: - Add some invisible exits along
+	  the front of the yard so you can walk off
+	  the map there as well as along the sides.
+
+2009-04-30 00:57  kbulgrien
+
+	* port_joseph/town/dshark: - Block movement over the bar so the
+	  barkeep doesn't attack guests unless
+	  they come back behind the bar.
+	  - Take line breaks out of NPC messages, and tweak some of the
+	  content.
+	  The waitress now has a match all.
+
+2009-04-29 04:05  kbulgrien
+
+	* darcap/darcap/maze: - Fix spelling on statue; fix wall piece in
+	  entry area.
+
+2009-04-25 23:32  kbulgrien
+
+	* world/world_100_114: - Remove extra sand tiles under grass tiles.
+
+2009-04-08 06:45  mwedel
+
+	* test/thrown_pickup: Test map to test pickup of thrown objects.
+	  Map contains 2 thrown
+	  objects (that that name), each holding one object like a normal
+	  thrown
+	  object. One of the objects on this map is very heavy so tests
+	  code where
+	  object is too heavy to pick up.
+	  MSW 2009-04-07
+
+2009-04-06 21:01  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2009-04-04 05:18  rjtanner
 
 	* darcap/darcap/circus/fz_boulderball: Final checkin of patch 'fun
