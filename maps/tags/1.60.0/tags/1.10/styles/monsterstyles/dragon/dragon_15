@@ -1,0 +1,82 @@
+arch map
+width 6
+height 6
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat Dec 26 20:52:22 1998
+endmsg
+end
+arch baby_dragon
+end
+arch baby_dragon
+y 1
+end
+arch baby_dragon
+x 3
+end
+arch baby_dragon
+x 3
+y 1
+end
+arch baby_dragon
+x 4
+y 5
+end
+arch baby_dragon
+x 5
+y 5
+end
+arch big_dragon_ancient
+y 2
+end
+arch dragonman
+y 4
+end
+arch chinese_dragon
+name Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 1
+speed -0.300000
+level 20
+end
+arch dragonman
+x 1
+y 4
+end
+arch dragonman
+x 2
+y 4
+end
+arch dragonman
+x 3
+y 2
+end
+arch dragonman
+x 3
+y 4
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 4
+speed -0.500000
+level 25
+end
+arch dragonman
+x 4
+y 3
+end
+arch dragonman
+x 5
+y 3
+end

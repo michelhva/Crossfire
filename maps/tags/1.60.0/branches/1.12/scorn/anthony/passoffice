@@ -1,0 +1,1212 @@
+arch map
+name Port Gate of Scorn, Office of Passes
+difficulty 1
+region scorn
+width 10
+height 15
+enter_x 5
+enter_y 8
+msg
+Created:  1998-12-28 Anthony Thyssen (anthony@cit.gu.edu.au)
+Modified: 2008-10-29 Rick Tanner
+endmsg
+end
+arch woodfloor
+end
+arch mine10
+end
+arch woodfloor
+y 1
+end
+arch mine3
+y 1
+no_magic 1
+damned 1
+end
+arch woodfloor
+y 2
+end
+arch mine3
+y 2
+no_magic 1
+damned 1
+end
+arch woodfloor
+y 3
+end
+arch mine3
+y 3
+no_magic 1
+damned 1
+end
+arch woodfloor
+y 4
+end
+arch mine3
+y 4
+no_magic 1
+damned 1
+end
+arch woodfloor
+y 5
+end
+arch mine3
+y 5
+no_magic 1
+damned 1
+end
+arch woodfloor
+y 6
+end
+arch mine3
+y 6
+no_magic 1
+damned 1
+end
+arch woodfloor
+y 7
+end
+arch mine3
+y 7
+no_magic 1
+damned 1
+end
+arch woodfloor
+y 8
+end
+arch mine11
+y 8
+no_magic 1
+damned 1
+end
+arch woodfloor
+y 9
+end
+arch mine11
+y 9
+no_magic 1
+damned 1
+end
+arch grass
+y 10
+end
+arch mine11
+y 10
+no_magic 1
+damned 1
+end
+arch grass
+y 11
+end
+arch mine11
+y 11
+no_magic 1
+damned 1
+end
+arch grass
+y 12
+end
+arch grass
+y 12
+end
+arch mine11
+y 12
+no_magic 1
+damned 1
+end
+arch grass
+y 13
+end
+arch grass
+y 13
+end
+arch mine11
+y 13
+no_magic 1
+damned 1
+end
+arch grass
+y 14
+end
+arch grass
+y 14
+end
+arch mine11
+y 14
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 1
+end
+arch mine2
+x 1
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch teleporter
+x 1
+y 1
+end
+arch card
+name Gate Pass
+slaying gate_pass
+msg
+The holder of this card is allowed free
+access into and out of the City of Scorn
+to the rest of the continent without
+further charges and penalties. The City
+of Scorn reserves the right to revoke
+said access at any time of its choosing
+without recompense or liability.
+endmsg
+x 1
+y 1
+value 800
+identified 1
+end
+arch dungeon_magic
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 2
+end
+arch grate_closed_1
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch table_3
+x 1
+y 3
+no_pick 1
+end
+arch creator
+x 1
+y 3
+connected 20
+lifesave 1
+activate_on_release 0
+arch card
+name Gate Pass
+slaying gate_pass
+msg
+The holder of this card is allowed free
+access into and out of the City of Scorn
+to the rest of the continent without
+further charges and penalties. The City
+of Scorn reserves the right to revoke
+said access at any time of its choosing
+without recompense or liability.
+endmsg
+value 800
+identified 1
+end
+end
+arch woodfloor
+x 1
+y 4
+end
+arch sign
+name Gate Pass (50pp)
+msg
+For a merchants ``Gate Pass''
+please deposit 50 platinum on
+floor in beside the table.
+Pass will appear on table
+endmsg
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch barrel
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch mine16
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch mine17
+x 1
+y 9
+end
+arch grass
+x 1
+y 10
+end
+arch mine17
+x 1
+y 10
+end
+arch grass
+x 1
+y 11
+end
+arch mine17
+x 1
+y 11
+end
+arch grass
+x 1
+y 12
+end
+arch mine17
+x 1
+y 12
+end
+arch brush
+x 1
+y 13
+end
+arch mine17
+x 1
+y 13
+end
+arch grass
+x 1
+y 14
+end
+arch mine17
+x 1
+y 14
+end
+arch woodfloor
+x 2
+end
+arch mine2
+x 2
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 2
+y 1
+end
+arch brazier
+x 2
+y 1
+blocksview 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch mine2
+x 2
+y 2
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 2
+y 3
+end
+arch altar_trigger
+name Gate Pass - 50pp
+slaying money
+msg
+Crash, Groan, Rumble Rumble,
+Klang, Click, Bzzzt!
+endmsg
+face goldfloor.111
+animation goldfloor
+food 2500
+x 2
+y 3
+connected 20
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch barrel
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch mine16
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch mine13
+x 2
+y 9
+end
+arch grass
+x 2
+y 10
+end
+arch brush
+x 2
+y 11
+end
+arch brush
+x 2
+y 12
+end
+arch brush
+x 2
+y 13
+end
+arch grass
+x 2
+y 14
+end
+arch woodfloor
+x 3
+end
+arch mine2
+x 3
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch mine2
+x 3
+y 2
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch mine9
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch mine12
+x 3
+y 9
+end
+arch grass
+x 3
+y 10
+end
+arch tree4
+x 3
+y 10
+end
+arch grass
+x 3
+y 11
+end
+arch brush
+x 3
+y 12
+end
+arch grass
+x 3
+y 13
+end
+arch tree5
+x 3
+y 13
+end
+arch grass
+x 3
+y 14
+end
+arch woodfloor
+x 4
+end
+arch mine2
+x 4
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch mine2
+x 4
+y 2
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch dungeon_magic
+x 4
+y 9
+end
+arch invis_exit
+slaying portgate
+hp 4
+sp 10
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 9
+end
+arch flagstone
+x 4
+y 10
+end
+arch flagstone
+x 4
+y 11
+end
+arch flagstone
+x 4
+y 12
+end
+arch flagstone
+x 4
+y 13
+end
+arch grass
+x 4
+y 14
+end
+arch woodfloor
+x 5
+end
+arch mine2
+x 5
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 5
+y 1
+end
+arch brazier
+x 5
+y 1
+blocksview 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch mine2
+x 5
+y 2
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 5
+y 3
+end
+arch altar_trigger
+name Port Pass - 200pp
+slaying money
+msg
+Crash, Groan, Rumble Rumble,
+Blrang!
+endmsg
+face goldfloor.111
+animation goldfloor
+food 10000
+x 5
+y 3
+connected 10
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch sign
+name Office of Passes
+msg
+Office of Passes..
+Merchants trading with the city of Scorn
+may purchase entry/exit pass for either
+the port or main gate from either here
+or one of our representatives elsewhere.
+endmsg
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch dungeon_magic
+x 5
+y 9
+end
+arch invis_exit
+slaying portgate
+hp 4
+sp 10
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 9
+end
+arch flagstone
+x 5
+y 10
+end
+arch flagstone
+x 5
+y 11
+end
+arch flagstone
+x 5
+y 12
+end
+arch flagstone
+x 5
+y 13
+end
+arch grass
+x 5
+y 14
+end
+arch woodfloor
+x 6
+end
+arch mine2
+x 6
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 6
+y 1
+end
+arch teleporter
+x 6
+y 1
+end
+arch card
+name Port Pass
+slaying port_pass
+msg
+This is a merchants pass allowing paid
+access between the City of Scorn and the
+Port of Scorn, for the purposes of trade
+and commerce. Animal or plants entering
+the city of scorn must be quarantined in
+the Quarantine Warehouse in the port
+area.
+endmsg
+x 6
+y 1
+value 2500
+identified 1
+end
+arch dungeon_magic
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 2
+end
+arch grate_closed_1
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch table_3
+x 6
+y 3
+no_pick 1
+end
+arch creator
+x 6
+y 3
+connected 10
+lifesave 1
+activate_on_release 0
+arch card
+name Port Pass
+slaying port_pass
+msg
+This is a merchants pass allowing paid
+access between the City of Scorn and the
+Port of Scorn, for the purposes of trade
+and commerce. Animal or plants entering
+the city of scorn must be quarantined in
+the Quarantine Warehouse in the port
+area.
+endmsg
+value 2500
+identified 1
+end
+end
+arch woodfloor
+x 6
+y 4
+end
+arch sign
+name Port Pass (200pp)
+msg
+For a merchants ``Port Pass''
+please deposit 200 platinum on
+floor in beside the table.
+Pass will appear on table
+endmsg
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch mine10
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch mine4
+x 6
+y 9
+end
+arch brush
+x 6
+y 10
+end
+arch medium_stones
+x 6
+y 11
+end
+arch sign
+name Office of Passes
+msg
+Office of Passes.
+endmsg
+x 6
+y 11
+end
+arch flagstone
+x 6
+y 12
+end
+arch flagstone
+x 6
+y 13
+end
+arch grass
+x 6
+y 14
+end
+arch woodfloor
+x 7
+end
+arch mine2
+x 7
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 7
+y 1
+end
+arch brazier
+x 7
+y 1
+blocksview 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch mine13
+x 7
+y 2
+no_magic 1
+damned 1
+end
+arch dungeon_magic
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 3
+end
+arch bench_1_1
+x 7
+y 3
+move_block all
+end
+arch dungeon_magic
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 4
+end
+arch bench_2_1_1
+x 7
+y 4
+move_block all
+end
+arch dungeon_magic
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 5
+end
+arch bench_2_1_1
+x 7
+y 5
+move_block all
+end
+arch dungeon_magic
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 6
+end
+arch bench_2_1_1
+x 7
+y 6
+move_block all
+end
+arch dungeon_magic
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 7
+end
+arch bench_1_2
+x 7
+y 7
+move_block all
+end
+arch woodfloor
+x 7
+y 8
+end
+arch mine16
+x 7
+y 8
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 7
+y 9
+end
+arch mine13
+x 7
+y 9
+end
+arch brush
+x 7
+y 10
+end
+arch grass
+x 7
+y 11
+end
+arch flagstone
+x 7
+y 12
+end
+arch flagstone
+x 7
+y 13
+end
+arch grass
+x 7
+y 14
+end
+arch woodfloor
+x 8
+end
+arch mine2
+x 8
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch mine13
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch carton_box_1
+x 8
+y 3
+end
+arch card
+name Port Pass
+slaying port_pass
+msg
+This is a merchants pass allowing paid
+access between the City of Scorn and the
+Port of Scorn, for the purposes of trade
+and commerce. Animal or plants entering
+the city of scorn must be quarantined in
+the Quarantine Warehouse in the port
+area.
+endmsg
+x 8
+y 3
+value 2500
+identified 1
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch courier
+msg
+@match pass|passes
+What do you think this is? Grand Central
+Station! Of course we have passes. If
+the teleporters are working, that is!
+@match job
+Sleeping you till you came along idiot!
+Other than that keeping this desk warm.
+@match name
+No Commit. Ha He He.
+@match *
+*Yawn* Arrrhh, what do you want?
+We're closed! Use one of machines.
+endmsg
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch card
+name Gate Pass
+slaying gate_pass
+msg
+The holder of this card is allowed free
+access into and out of the City of Scorn
+to the rest of the continent without
+further charges and penalties. The City
+of Scorn reserves the right to revoke
+said access at any time of its choosing
+without recompense or liability.
+endmsg
+x 8
+y 7
+value 800
+identified 1
+end
+arch poison
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch mine16
+x 8
+y 8
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 8
+y 9
+end
+arch mine13
+x 8
+y 9
+end
+arch grass
+x 8
+y 10
+end
+arch brush
+x 8
+y 11
+end
+arch tree5
+x 8
+y 11
+end
+arch flagstone
+x 8
+y 12
+end
+arch flagstone
+x 8
+y 13
+end
+arch grass
+x 8
+y 14
+end
+arch woodfloor
+x 9
+end
+arch mine17
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch mine11
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch mine16
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch mine11
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch mine11
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch mine11
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch mine11
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch mine11
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch mine17
+x 9
+y 8
+no_magic 1
+damned 1
+end
+arch woodfloor
+x 9
+y 9
+end
+arch mine13
+x 9
+y 9
+end
+arch grass
+x 9
+y 10
+end
+arch grass
+x 9
+y 11
+end
+arch flagstone
+x 9
+y 12
+end
+arch flagstone
+x 9
+y 13
+end
+arch grass
+x 9
+y 14
+end

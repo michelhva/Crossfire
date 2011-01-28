@@ -1,0 +1,1271 @@
+arch map
+region scorn
+name jeweler
+msg
+Creator: Gnat the Gnu
+Email: gnu@foo.bar
+Date: Sat Dec 28 20:40:38 2002
+endmsg
+width 13
+height 14
+enter_x 7
+enter_y 13
+reset_timeout 7200
+difficulty 2
+end
+arch grass
+end
+arch grass
+y 1
+end
+arch grass
+y 2
+end
+arch grass
+y 3
+end
+arch grass
+y 4
+end
+arch grass
+y 5
+end
+arch grass
+y 6
+end
+arch grass
+y 7
+end
+arch grass
+y 8
+end
+arch grass
+y 9
+end
+arch grass
+y 10
+end
+arch grass
+y 11
+end
+arch grass
+y 12
+end
+arch grass
+y 13
+end
+arch grass
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch wwall_2_2_2
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch wwall_2_1_1
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch wwall_2_1_1
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch wwall_2_1_1
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch wwall_2_1_1
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch wwall_2_1_1
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch wwall_2_1_1
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch wwall_2_1_1
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch wwall_2_1_1
+x 1
+y 9
+end
+arch woodfloor
+x 1
+y 10
+end
+arch wwall_2_1_1
+x 1
+y 10
+end
+arch woodfloor
+x 1
+y 11
+end
+arch wwall_3_2
+x 1
+y 11
+end
+arch dungeon_magic
+x 1
+y 11
+end
+arch woodfloor
+x 1
+y 12
+end
+arch wwall_2_1_1
+x 1
+y 12
+end
+arch dungeon_magic
+x 1
+y 12
+end
+arch woodfloor
+x 1
+y 13
+end
+arch wwall_2_2_1
+x 1
+y 13
+end
+arch dungeon_magic
+x 1
+y 13
+end
+arch grass
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch wwall_2_1_2
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch platinum_converter
+name Buy Amulet (100pp)
+other_arch amulet
+name_pl Buy Amulet (100pp)
+food 100
+sp 1
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch hugenugget
+no_pick 1
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch largenugget
+no_pick 1
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch mithril
+no_pick 1
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch hugenugget
+no_pick 1
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch mithril
+no_pick 1
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch largenugget
+no_pick 1
+x 2
+y 9
+end
+arch woodfloor
+x 2
+y 10
+end
+arch hugenugget
+no_pick 1
+x 2
+y 10
+end
+arch woodfloor
+x 2
+y 11
+end
+arch swall_2_1_2
+x 2
+y 11
+end
+arch dungeon_magic
+x 2
+y 11
+end
+arch woodfloor
+x 2
+y 12
+end
+arch fatwoman
+x 2
+y 12
+end
+arch woodfloor
+x 2
+y 13
+end
+arch wwall_2_1_2
+x 2
+y 13
+end
+arch grass
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch wwall_win2
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch table
+no_pick 1
+x 3
+y 2
+end
+arch quarto
+msg
+You may create a ring of Beguilement
+with a ring, a potion of charisma, and
+3 diamonds of great value.
+endmsg
+title Beguilement
+no_pick 1
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch firepot
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch firepot
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch firepot
+x 3
+y 9
+end
+arch woodfloor
+x 3
+y 10
+end
+arch woodfloor
+x 3
+y 11
+end
+arch swall_2_1_2
+x 3
+y 11
+end
+arch dungeon_magic
+x 3
+y 11
+end
+arch woodfloor
+x 3
+y 12
+end
+arch table_2
+no_pass 1
+x 3
+y 12
+end
+arch woodfloor
+x 3
+y 13
+end
+arch wwall_2_1_2
+x 3
+y 13
+end
+arch grass
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch wwall_2_1_2
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch table
+no_pick 1
+x 4
+y 2
+end
+arch quarto
+msg
+You can create a ring of the Healer
+with a ring, a potion of wisdom, a holy
+symbol, and 3 emeralds of great value.
+endmsg
+title Healer
+no_pick 1
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 10
+end
+arch woodfloor
+x 4
+y 11
+end
+arch swall_2_1_2
+x 4
+y 11
+end
+arch dungeon_magic
+x 4
+y 11
+end
+arch woodfloor
+x 4
+y 12
+end
+arch woodfloor
+x 4
+y 13
+end
+arch wwall_2_1_2
+x 4
+y 13
+end
+arch grass
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch wwall_2_1_2
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch bookshelf
+no_pick 1
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch slevel_2_2_2
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch slevel_3_2
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch slevel_2_2_1
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch woodfloor
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 10
+end
+arch woodfloor
+x 5
+y 11
+end
+arch swall_2_1_2
+x 5
+y 11
+end
+arch dungeon_magic
+x 5
+y 11
+end
+arch woodfloor
+x 5
+y 12
+end
+arch woodfloor
+x 5
+y 13
+end
+arch wwall_2_1_2
+x 5
+y 13
+end
+arch grass
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch wwall_2_1_2
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch clock
+no_pick 1
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch slevel_3_3
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch jeweler_bench
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch slevel_3_1
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch woodfloor
+x 6
+y 10
+end
+arch woodfloor
+x 6
+y 11
+end
+arch swall_2_1_2
+x 6
+y 11
+end
+arch dungeon_magic
+x 6
+y 11
+end
+arch woodfloor
+x 6
+y 12
+end
+arch woodfloor
+x 6
+y 13
+end
+arch wwall_1_3
+x 6
+y 13
+end
+arch grass
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch wwall_2_1_2
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch bookshelf
+no_pick 1
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch slevel_2_2_3
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch slevel_3_4
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch slevel_2_2_4
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch woodfloor
+x 7
+y 11
+end
+arch swall_2_1_2
+x 7
+y 11
+end
+arch dungeon_magic
+x 7
+y 11
+end
+arch woodfloor
+x 7
+y 12
+end
+arch woodfloor
+x 7
+y 13
+end
+arch oakdoor
+slaying /world/world_105_115
+hp 13
+sp 39
+x 7
+y 13
+end
+arch grass
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch wwall_2_1_2
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch table
+no_pick 1
+x 8
+y 2
+end
+arch quarto
+msg
+You can create an amulet of holy power with
+an amulet, two potions of wisdom, a holy
+symbol, and 30 pearls.
+endmsg
+title Holiness
+no_pick 1
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch firepot
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch swall_2_2_2
+x 8
+y 10
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch woodfloor
+x 8
+y 11
+end
+arch swall_2_2_4
+x 8
+y 11
+end
+arch dungeon_magic
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
+end
+arch woodfloor
+x 8
+y 13
+end
+arch wwall_1_4
+x 8
+y 13
+end
+arch grass
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch wwall_win2
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch table
+no_pick 1
+x 9
+y 2
+end
+arch quarto
+msg
+You can create a ring of Magic with a ring
+a potion of magical resistance, a potion
+of power, and 3 diamonds of great value.
+endmsg
+title Magic
+no_pick 1
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch firepot
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch firepot
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch pedestal
+invisible 1
+connected 11
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch ggate_closed
+connected 11
+no_magic 1
+damned 1
+x 9
+y 10
+end
+arch woodfloor
+x 9
+y 11
+end
+arch check_floor
+slaying jewler_house1
+connected 11
+x 9
+y 11
+end
+arch woodfloor
+x 9
+y 12
+end
+arch trigger_marker
+msg
+You have one day's use of these facilities.
+endmsg
+slaying jewler_house1
+connected 10
+speed 1.0
+food 504
+x 9
+y 12
+end
+arch altar_trigger
+name Drop 200 platinum to enter
+slaying platinacoin
+food 200
+connected 10
+x 9
+y 12
+end
+arch woodfloor
+x 9
+y 13
+end
+arch wwall_2_1_2
+x 9
+y 13
+end
+arch grass
+x 10
+end
+arch woodfloor
+x 10
+y 1
+end
+arch wwall_2_1_2
+x 10
+y 1
+end
+arch woodfloor
+x 10
+y 2
+end
+arch platinum_converter
+name Buy Ring (50pp)
+other_arch ring
+food 50
+sp 1
+name_pl Buy Ring (50pp)
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 3
+end
+arch woodfloor
+x 10
+y 4
+end
+arch hugenugget
+no_pick 1
+x 10
+y 4
+end
+arch woodfloor
+x 10
+y 5
+end
+arch largenugget
+no_pick 1
+x 10
+y 5
+end
+arch woodfloor
+x 10
+y 6
+end
+arch mithril
+no_pick 1
+x 10
+y 6
+end
+arch woodfloor
+x 10
+y 7
+end
+arch hugenugget
+no_pick 1
+x 10
+y 7
+end
+arch woodfloor
+x 10
+y 8
+end
+arch mithril
+no_pick 1
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 9
+end
+arch firepot
+x 10
+y 9
+end
+arch woodfloor
+x 10
+y 10
+end
+arch swall_2_2_3
+x 10
+y 10
+end
+arch dungeon_magic
+x 10
+y 10
+end
+arch woodfloor
+x 10
+y 11
+end
+arch swall_2_2_1
+x 10
+y 11
+end
+arch dungeon_magic
+x 10
+y 11
+end
+arch woodfloor
+x 10
+y 12
+end
+arch woodfloor
+x 10
+y 13
+end
+arch wwall_2_1_2
+x 10
+y 13
+end
+arch grass
+x 11
+end
+arch woodfloor
+x 11
+y 1
+end
+arch wwall_2_2_3
+x 11
+y 1
+end
+arch woodfloor
+x 11
+y 2
+end
+arch wwall_2_1_1
+x 11
+y 2
+end
+arch woodfloor
+x 11
+y 3
+end
+arch wwall_2_1_1
+x 11
+y 3
+end
+arch woodfloor
+x 11
+y 4
+end
+arch wwall_2_1_1
+x 11
+y 4
+end
+arch woodfloor
+x 11
+y 5
+end
+arch wwall_2_1_1
+x 11
+y 5
+end
+arch woodfloor
+x 11
+y 6
+end
+arch wwall_2_1_1
+x 11
+y 6
+end
+arch woodfloor
+x 11
+y 7
+end
+arch wwall_2_1_1
+x 11
+y 7
+end
+arch woodfloor
+x 11
+y 8
+end
+arch wwall_2_1_1
+x 11
+y 8
+end
+arch woodfloor
+x 11
+y 9
+end
+arch wwall_2_1_1
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
+end
+arch wwall_2_1_1
+x 11
+y 10
+end
+arch woodfloor
+x 11
+y 11
+end
+arch dungeon_magic
+x 11
+y 11
+end
+arch wwall_2_1_1
+x 11
+y 11
+end
+arch swall_1_3_half
+x 11
+y 11
+end
+arch woodfloor
+x 11
+y 12
+end
+arch wwall_2_1_1
+x 11
+y 12
+end
+arch dungeon_magic
+x 11
+y 12
+end
+arch woodfloor
+x 11
+y 13
+end
+arch wwall_2_2_4
+x 11
+y 13
+end
+arch dungeon_magic
+x 11
+y 13
+end
+arch grass
+x 12
+end
+arch grass
+x 12
+y 1
+end
+arch grass
+x 12
+y 2
+end
+arch grass
+x 12
+y 3
+end
+arch grass
+x 12
+y 4
+end
+arch grass
+x 12
+y 5
+end
+arch grass
+x 12
+y 6
+end
+arch grass
+x 12
+y 7
+end
+arch grass
+x 12
+y 8
+end
+arch grass
+x 12
+y 9
+end
+arch grass
+x 12
+y 10
+end
+arch grass
+x 12
+y 11
+end
+arch grass
+x 12
+y 12
+end
+arch grass
+x 12
+y 13
+end

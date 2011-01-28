@@ -1,0 +1,168 @@
+arch map
+name minialch
+width 5
+height 5
+msg
+Created:  1999-02-18
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
+end
+arch director_3
+face director.133
+invisible 1
+state 2
+end
+arch director_1
+y 1
+invisible 1
+end
+arch director_1
+y 2
+invisible 1
+end
+arch director_1
+y 3
+invisible 1
+end
+arch director_1
+y 4
+invisible 1
+end
+arch director_3
+x 1
+invisible 1
+end
+arch lbulletwall_8
+x 1
+y 1
+speed 0.000000
+connected 7891
+no_pass 0
+blocksview 0
+arch spell_bullet_storm
+end
+end
+arch lbulletwall_7
+x 1
+y 2
+speed 0.000000
+connected 7891
+no_pass 0
+blocksview 0
+arch spell_bullet_storm
+end
+end
+arch lbulletwall_6
+x 1
+y 3
+speed 0.000000
+connected 7891
+no_pass 0
+blocksview 0
+arch spell_bullet_storm
+end
+end
+arch director_7
+x 1
+y 4
+invisible 1
+end
+arch director_3
+x 2
+invisible 1
+end
+arch lbulletwall_1
+x 2
+y 1
+speed 0.000000
+connected 7891
+no_pass 0
+blocksview 0
+arch spell_bullet_storm
+end
+end
+arch trigger
+x 2
+y 2
+connected 7891
+end
+arch lbulletwall_5
+x 2
+y 3
+speed 0.000000
+connected 7891
+no_pass 0
+blocksview 0
+arch spell_bullet_storm
+end
+end
+arch director_7
+x 2
+y 4
+invisible 1
+end
+arch director_3
+x 3
+invisible 1
+end
+arch lbulletwall_2
+x 3
+y 1
+speed 0.000000
+connected 7891
+no_pass 0
+blocksview 0
+arch spell_bullet_storm
+end
+end
+arch lbulletwall_3
+x 3
+y 2
+speed 0.000000
+connected 7891
+no_pass 0
+blocksview 0
+arch spell_bullet_storm
+end
+end
+arch lbulletwall_4
+x 3
+y 3
+speed 0.000000
+connected 7891
+no_pass 0
+blocksview 0
+arch spell_bullet_storm
+end
+end
+arch director_7
+x 3
+y 4
+invisible 1
+end
+arch director_5
+x 4
+invisible 1
+end
+arch director_5
+x 4
+y 1
+invisible 1
+end
+arch director_5
+x 4
+y 2
+invisible 1
+end
+arch director_5
+x 4
+y 3
+invisible 1
+end
+arch director_7
+face director.172
+x 4
+y 4
+invisible 1
+state 1
+end
