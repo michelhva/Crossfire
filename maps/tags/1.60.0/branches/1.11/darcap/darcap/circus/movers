@@ -1,0 +1,37 @@
+arch map
+name Movers
+difficulty 1
+region darcapcircus
+width 3
+height 3
+msg
+Created:  1999-02-28
+Modified: 2008-05-31 Rick Tanner
+endmsg
+end
+arch mover_8
+end
+arch mover_7
+y 1
+end
+arch mover_6
+y 2
+end
+arch mover_1
+x 1
+end
+arch mover_5
+x 1
+y 2
+end
+arch mover_2
+x 2
+end
+arch mover_3
+x 2
+y 1
+end
+arch mover_4
+x 2
+y 2
+end

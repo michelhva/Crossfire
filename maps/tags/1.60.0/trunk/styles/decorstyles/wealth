@@ -1,0 +1,38 @@
+arch map
+name alchemy
+width 3
+height 3
+msg
+Created:  1996-02-27
+endmsg
+end
+arch random_wealth
+end
+arch random_wealth
+y 1
+end
+arch random_wealth
+y 2
+end
+arch random_wealth
+x 1
+end
+arch random_wealth
+x 1
+y 1
+end
+arch random_wealth
+x 1
+y 2
+end
+arch random_wealth
+x 2
+end
+arch random_wealth
+x 2
+y 1
+end
+arch random_wealth
+x 2
+y 2
+end

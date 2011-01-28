@@ -1,0 +1,112 @@
+arch map
+name python
+region scorn
+width 5
+height 5
+msg
+Creator: CF Java Map Editor
+Date:    7/15/2005
+endmsg
+end
+arch cobblestones2
+end
+arch cobblestones2
+y 1
+end
+arch cobblestones2
+y 2
+end
+arch cobblestones2
+y 3
+end
+arch cobblestones2
+y 4
+end
+arch cobblestones2
+x 1
+end
+arch cobblestones2
+x 1
+y 1
+end
+arch cobblestones2
+x 1
+y 2
+end
+arch cobblestones2
+x 1
+y 3
+end
+arch cobblestones2
+x 1
+y 4
+end
+arch cobblestones2
+x 2
+end
+arch cobblestones2
+x 2
+y 1
+end
+arch cobblestones2
+x 2
+y 2
+end
+arch sage
+x 2
+y 2
+arch event_say
+title Python
+slaying /test/python.py
+end
+arch event_timer
+title Python
+slaying /test/python_timer.py
+end
+end
+arch cobblestones2
+x 2
+y 3
+end
+arch cobblestones2
+x 2
+y 4
+end
+arch cobblestones2
+x 3
+end
+arch cobblestones2
+x 3
+y 1
+end
+arch cobblestones2
+x 3
+y 2
+end
+arch cobblestones2
+x 3
+y 3
+end
+arch cobblestones2
+x 3
+y 4
+end
+arch cobblestones2
+x 4
+end
+arch cobblestones2
+x 4
+y 1
+end
+arch cobblestones2
+x 4
+y 2
+end
+arch cobblestones2
+x 4
+y 3
+end
+arch cobblestones2
+x 4
+y 4
+end

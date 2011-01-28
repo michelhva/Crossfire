@@ -1,0 +1,1541 @@
+arch map
+name Nurnberg Apartment
+swap_time 10
+difficulty 1
+region nurnberg
+width 13
+height 9
+msg
+Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
+endmsg
+end
+arch blocked
+end
+arch blocked
+y 1
+end
+arch blocked
+y 2
+end
+arch blocked
+name darkness
+y 3
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_5
+y 3
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+y 3
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+name darkness
+y 4
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_5
+y 4
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+y 5
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_4
+y 5
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+y 5
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+y 6
+end
+arch blocked
+y 7
+end
+arch blocked
+y 8
+end
+arch blocked
+x 1
+end
+arch blocked
+x 1
+y 1
+end
+arch blocked
+name darkness
+x 1
+y 2
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_6
+x 1
+y 2
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 1
+y 3
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_2
+x 1
+y 3
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 1
+y 4
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_1
+x 1
+y 4
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 1
+y 4
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+name darkness
+x 1
+y 5
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_1
+x 1
+y 5
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 1
+y 6
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_4
+x 1
+y 6
+level 1
+attacktype 1
+end
+arch blocked
+x 1
+y 7
+end
+arch blocked
+x 1
+y 8
+end
+arch blocked
+x 2
+end
+arch blocked
+name darkness
+x 2
+y 1
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_6
+x 2
+y 1
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 2
+y 1
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+name darkness
+x 2
+y 2
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_2
+x 2
+y 2
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 2
+y 2
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+name darkness
+x 2
+y 3
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_5
+x 2
+y 3
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 2
+y 3
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+name darkness
+x 2
+y 4
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_5
+x 2
+y 4
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 2
+y 5
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_4
+x 2
+y 5
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 2
+y 5
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+name darkness
+x 2
+y 6
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_8
+x 2
+y 6
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 2
+y 6
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+name darkness
+x 2
+y 7
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_4
+x 2
+y 7
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 2
+y 7
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+x 2
+y 8
+end
+arch blocked
+name darkness
+x 3
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_6
+x 3
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 3
+y 1
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_3
+x 3
+y 1
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 3
+y 2
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_6
+x 3
+y 2
+level 1
+attacktype 1
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch blocked
+name darkness
+x 3
+y 3
+blocksview 0
+is_floor 1
+end
+arch dungeon_magic
+x 3
+y 4
+end
+arch blocked
+name darkness
+x 3
+y 4
+blocksview 0
+is_floor 1
+end
+arch dungeon_magic
+x 3
+y 5
+end
+arch blocked
+name darkness
+x 3
+y 5
+blocksview 0
+is_floor 1
+end
+arch blocked
+name darkness
+x 3
+y 6
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_3
+x 3
+y 6
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 3
+y 7
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_8
+x 3
+y 7
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 3
+y 8
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_3
+x 3
+y 8
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 4
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_7
+x 4
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 4
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+name darkness
+x 4
+y 1
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_3
+x 4
+y 1
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 4
+y 1
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+name darkness
+x 4
+y 2
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_7
+x 4
+y 2
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 4
+y 2
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch blocked
+name darkness
+x 4
+y 3
+blocksview 0
+is_floor 1
+end
+arch blocked
+name darkness
+slaying /pup_land/ancient/world
+hp 28
+sp 24
+x 4
+y 4
+type 41
+connected 1
+no_pass 0
+blocksview 0
+is_floor 1
+activate_on_push 1
+activate_on_release 1
+end
+arch dungeon_magic
+x 4
+y 5
+end
+arch blocked
+name darkness
+x 4
+y 5
+blocksview 0
+is_floor 1
+end
+arch blocked
+name darkness
+x 4
+y 6
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_3
+x 4
+y 6
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 4
+y 6
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+name darkness
+x 4
+y 7
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_7
+x 4
+y 7
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 4
+y 7
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+name darkness
+x 4
+y 8
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_3
+x 4
+y 8
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 4
+y 8
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+name darkness
+x 5
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_7
+x 5
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 5
+y 1
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_4
+x 5
+y 1
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 5
+y 2
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_7
+x 5
+y 2
+level 1
+attacktype 1
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch blocked
+name darkness
+x 5
+y 3
+blocksview 0
+is_floor 1
+end
+arch dungeon_magic
+x 5
+y 4
+end
+arch blocked
+name darkness
+x 5
+y 4
+blocksview 0
+is_floor 1
+end
+arch dungeon_magic
+x 5
+y 5
+end
+arch blocked
+name darkness
+x 5
+y 5
+blocksview 0
+is_floor 1
+end
+arch blocked
+name darkness
+x 5
+y 6
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_2
+x 5
+y 6
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 5
+y 7
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_7
+x 5
+y 7
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 5
+y 8
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_2
+x 5
+y 8
+level 1
+attacktype 1
+end
+arch blocked
+x 6
+end
+arch blocked
+name darkness
+x 6
+y 1
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_8
+x 6
+y 1
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 6
+y 1
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+name darkness
+x 6
+y 2
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_4
+x 6
+y 2
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 6
+y 2
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+name darkness
+x 6
+y 3
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_8
+x 6
+y 3
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 6
+y 3
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+name darkness
+x 6
+y 4
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_1
+x 6
+y 4
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 6
+y 5
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_1
+x 6
+y 5
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 6
+y 5
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+name darkness
+x 6
+y 6
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_6
+x 6
+y 6
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 6
+y 6
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+name darkness
+x 6
+y 7
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_2
+x 6
+y 7
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 6
+y 7
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+x 6
+y 8
+end
+arch blocked
+x 7
+end
+arch blocked
+x 7
+y 1
+end
+arch blocked
+name darkness
+x 7
+y 2
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_8
+x 7
+y 2
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 7
+y 3
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_5
+x 7
+y 3
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 7
+y 4
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_5
+x 7
+y 4
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 7
+y 4
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+name darkness
+x 7
+y 5
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_6
+x 7
+y 5
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 7
+y 6
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_2
+x 7
+y 6
+level 1
+attacktype 1
+end
+arch blocked
+x 7
+y 7
+end
+arch blocked
+x 7
+y 8
+end
+arch blocked
+x 8
+end
+arch blocked
+x 8
+y 1
+end
+arch blocked
+x 8
+y 2
+end
+arch blocked
+name darkness
+x 8
+y 3
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_8
+x 8
+y 3
+level 1
+attacktype 1
+end
+arch clock
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -50
+x 8
+y 3
+nrof 0
+level 100
+type 0
+resist_physical 100
+value 0
+alive 1
+no_pick 1
+monster 1
+run_away 90
+sleep 1
+end
+arch blocked
+name darkness
+x 8
+y 4
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_1
+x 8
+y 4
+level 1
+attacktype 1
+end
+arch blocked
+name darkness
+x 8
+y 5
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch mover_1
+x 8
+y 5
+level 1
+attacktype 1
+end
+arch light
+Str 30
+Dex 30
+Con 30
+hp 500
+maxhp 500
+exp 5
+dam 5
+ac -20
+x 8
+y 5
+level 100
+resist_physical 100
+weight 10000
+invisible 0
+glow_radius 0
+move_type walk
+alive 1
+monster 1
+is_used_up 0
+end
+arch blocked
+x 8
+y 6
+end
+arch blocked
+x 8
+y 7
+end
+arch blocked
+x 8
+y 8
+end
+arch blocked
+x 9
+end
+arch blocked
+x 9
+y 1
+end
+arch blocked
+x 9
+y 2
+end
+arch blocked
+x 9
+y 3
+end
+arch blocked
+x 9
+y 4
+end
+arch blocked
+x 9
+y 5
+end
+arch blocked
+x 9
+y 6
+end
+arch blocked
+x 9
+y 7
+end
+arch blocked
+x 9
+y 8
+end
+arch mover_5
+x 10
+level 1
+attacktype 1
+end
+arch mover_5
+x 10
+y 1
+level 1
+attacktype 1
+end
+arch mover_5
+x 10
+y 2
+level 1
+attacktype 1
+end
+arch mover_5
+x 10
+y 3
+level 1
+attacktype 1
+end
+arch mover_5
+x 10
+y 4
+level 1
+attacktype 1
+end
+arch mover_5
+x 10
+y 5
+level 1
+attacktype 1
+end
+arch mover_5
+x 10
+y 6
+level 1
+attacktype 1
+end
+arch mover_3
+x 10
+y 7
+level 1
+attacktype 1
+end
+arch blocked
+x 10
+y 8
+end
+arch mover_7
+x 11
+level 1
+attacktype 1
+end
+arch mover_1
+x 11
+y 1
+level 1
+attacktype 1
+end
+arch mover_1
+x 11
+y 2
+level 1
+attacktype 1
+end
+arch kobold
+hp 200
+maxhp 200
+x 11
+y 2
+level 40
+resist_physical 100
+end
+arch mover_1
+x 11
+y 3
+level 1
+attacktype 1
+end
+arch button_small
+name 1
+x 11
+y 3
+connected 1
+end
+arch mover_1
+x 11
+y 4
+level 1
+attacktype 1
+end
+arch mover_3
+x 11
+y 5
+level 1
+attacktype 1
+end
+arch mover_1
+x 11
+y 6
+level 1
+attacktype 1
+end
+arch mover_3
+x 11
+y 7
+level 1
+attacktype 1
+end
+arch blocked
+x 11
+y 8
+end
+arch blocked
+x 12
+end
+arch blocked
+x 12
+y 1
+end
+arch blocked
+x 12
+y 2
+end
+arch blocked
+x 12
+y 3
+end
+arch mover_7
+x 12
+y 4
+level 1
+attacktype 1
+end
+arch mover_1
+x 12
+y 5
+level 1
+attacktype 1
+end
+arch mover_7
+x 12
+y 6
+level 1
+attacktype 1
+end
+arch mover_1
+x 12
+y 7
+level 1
+attacktype 1
+end
+arch blocked
+x 12
+y 8
+end

@@ -1,0 +1,1467 @@
+arch map
+name Zorn Stuff
+width 20
+height 20
+msg
+Creator: CF Java Map Editor
+Date:    9/9/2006
+endmsg
+end
+arch lamppost
+name Street Lamp
+msg
+Property of Brest Lighting Department
+endmsg
+end
+arch table_3
+name Reading table
+name_pl Reading tables
+y 1
+no_pick 1
+identified 1
+end
+arch longtable_3_2
+name dining hall table
+y 2
+end
+arch chair_2.1
+name dining hall chair
+y 3
+no_pick 1
+identified 1
+end
+arch stol_king_1
+name zorn family seating
+y 4
+end
+arch chair_2.3
+name dining hall chair
+y 5
+no_pick 1
+identified 1
+end
+arch chair_2.1
+name sitting room chair
+name_pl sitting room chairs
+y 6
+end
+arch rune_create_bomb
+Cha 50
+y 7
+level 30
+end
+arch trap_rocks
+msg
+You set off a falling rocks trap that causes rubble to
+block the hole you see ahead.
+endmsg
+Cha 100
+y 8
+level 25
+connected 1002
+end
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+y 17
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+y 18
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch desk
+name Zorn's desk
+name_pl Zorn's desks
+slaying irritable_zorn_key
+Str 20
+x 1
+container 100000
+arch claypipe
+name Zorn's pipe
+name_pl Zorn's pipes
+end
+arch pouch
+name Tobacco pouch
+name_pl Tobacco pouches
+race pipeweed
+end
+end
+arch chair_1.1
+name Reading chair
+name_pl Reading chairs
+x 1
+y 1
+no_pick 1
+identified 1
+end
+arch longtable_2_1_2
+name dining hall table
+x 1
+y 2
+end
+arch longtable_1_1
+name dining hall table
+x 1
+y 3
+end
+arch longtable_2_1_1
+name dining hall table
+x 1
+y 4
+end
+arch longtable_1_2
+name dining hall table
+x 1
+y 5
+end
+arch chair_2.2
+name sitting room chair
+name_pl sitting room chairs
+x 1
+y 6
+end
+arch shallow_sea
+name river
+x 1
+y 7
+end
+arch trap_spike_pit
+Cha 100
+x 1
+y 8
+level 25
+end
+arch medium_guard
+name Room Attendant
+Con 25
+Int 5
+hp 2000
+maxhp 2000
+sp 200
+maxsp 200
+exp 20000
+dam 20
+wc 9
+ac -9
+x 1
+y 17
+level 35
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 100
+resist_deplete 30
+resist_death 30
+resist_chaos 30
+resist_blind 30
+path_attuned 4
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch darkblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch reflector
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
+arch guard
+name fearless zorn guard
+msg
+@match *
+...
+endmsg
+hp 500
+maxhp 500
+exp 12000
+dam 35
+wc 10
+ac -5
+x 1
+y 18
+speed 0.09
+level 50
+attacktype 1
+resist_fire 25
+resist_electricity 25
+resist_cold 25
+resist_acid 25
+resist_weaponmagic 25
+resist_poison 25
+resist_paralyze 25
+resist_fear 100
+resist_blind 25
+randomitems guard_h
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+end
+arch sheepskin
+name sheepskin rug
+name_pl sheepskin rugs
+x 2
+end
+arch chair_1.2
+name Reading chair
+name_pl Reading chairs
+x 2
+y 1
+no_pick 1
+identified 1
+end
+arch longtable_2_2_3
+name dining hall table
+x 2
+y 2
+end
+arch chair_2.2
+name dining hall chair
+x 2
+y 3
+no_pick 1
+identified 1
+end
+arch crystalball
+name lighting sphere
+name_pl lighting spheres
+x 2
+y 4
+glow_radius 5
+no_pick 1
+identified 1
+end
+arch chair_2.4
+name dining hall chair
+x 2
+y 5
+no_pick 1
+identified 1
+end
+arch chair_2.3
+name sitting room chair
+name_pl sitting room chairs
+x 2
+y 6
+end
+arch medium_guard
+name Senior Room Attendant
+Con 35
+Pow 20
+Int 10
+hp 2500
+maxhp 2500
+sp 200
+maxsp 200
+exp 25000
+dam 25
+wc 10
+ac -10
+x 2
+y 17
+level 45
+resist_magic 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 100
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_poison 50
+resist_slow 100
+resist_paralyze 50
+resist_turn_undead 50
+resist_fear 100
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_skill 1
+can_use_rod 1
+arch shadow
+name Attendant shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch mournblade
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch high_boots
+applied 1
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+arch helmet
+name helmet of reflect spells
+name_pl helmets of reflect spells
+ac 2
+resist_magic 30
+magic 1
+applied 1
+reflect_spell 1
+end
+end
+arch guard
+name fearless zorn guard sergeant
+msg
+@match *
+Move along.
+endmsg
+Con 20
+hp 700
+maxhp 700
+exp 20000
+dam 45
+wc -5
+ac -10
+x 2
+y 18
+speed 0.1
+level 70
+attacktype 1
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_acid 30
+resist_weaponmagic 30
+resist_poison 30
+resist_paralyze 30
+resist_fear 100
+resist_blind 30
+carrying 28000
+run_away 5
+pick_up 24
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+stand_still 0
+can_use_skill 1
+arch shadow
+name zorn guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch falchion
+applied 1
+end
+arch mithril_chainmail
+applied 1
+end
+arch rod_light
+hp 25
+maxhp 25
+sp 21
+level 20
+applied 1
+end
+arch skill_one_handed_weapon
+end
+arch skill_use_magic_item
+end
+end
+arch bookshelf
+name Zorn Library Shelf
+name_pl Zorn Library Shelves
+x 3
+no_pick 1
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch chair_1.3
+name Reading chair
+name_pl Reading chairs
+x 3
+y 1
+no_pick 1
+identified 1
+end
+arch bookshelf
+name large bookshelf
+name_pl large bookshelves
+Str 20
+x 3
+y 2
+material 256
+container 300000
+no_pick 1
+end
+arch spikes_hidden
+x 3
+y 3
+invisible 1
+connected 9002
+no_magic 1
+damned 1
+end
+arch spikes_hidden
+x 3
+y 4
+invisible 1
+connected 9001
+no_magic 1
+damned 1
+end
+arch key2
+name Zorn's pet pelt
+name_pl Zorn's pet pelts
+slaying zorn_pet_pelt
+face sheepskin.111
+x 3
+y 5
+material 32
+end
+arch chair_2.4
+name sitting room chair
+name_pl sitting room chairs
+x 3
+y 6
+end
+arch wine
+name Vino de Zorn
+name_pl Vino's de Zorn
+x 4
+end
+arch chair_1.4
+name Reading chair
+name_pl Reading chairs
+x 4
+y 1
+no_pick 1
+identified 1
+end
+arch dresser2
+name Large storage chest
+name_pl Large storage chests
+Str 50
+x 4
+y 2
+material 256
+container 800000
+no_pick 1
+end
+arch chair_1.4
+name ballroom chair
+name_pl ballroom chairs
+x 4
+y 3
+no_pick 1
+identified 1
+end
+arch chest_2
+name old dusty chest
+name_pl old dusty chests
+x 4
+y 4
+material 0
+no_pick 1
+end
+arch table
+name card table
+name_pl card tables
+x 4
+y 5
+end
+arch table_2
+name sitting room endtable
+x 4
+y 6
+end
+arch earth
+name dirt floor
+x 5
+end
+arch tree3
+name shrubbery
+x 5
+y 1
+end
+arch chair_1.1
+name ballroom chair
+name_pl ballroom chairs
+x 5
+y 2
+no_pick 1
+identified 1
+end
+arch chair
+name orchestra chair
+name_pl orchestra chairs
+x 5
+y 3
+no_pick 1
+identified 1
+end
+arch chair_1.3
+name ballroom chair
+name_pl ballroom chairs
+x 5
+y 4
+no_pick 1
+identified 1
+end
+arch table_2
+name private reading table
+x 5
+y 5
+end
+arch tree5
+name ornamental pine
+x 6
+end
+arch pipeweed
+name tobacco
+race tobacco
+x 6
+y 1
+end
+arch dungeon_magic
+x 6
+y 2
+no_pass 1
+end
+arch chair_1.2
+name ballroom chair
+name_pl ballroom chairs
+x 6
+y 3
+no_pick 1
+identified 1
+end
+arch firepot
+name bright firepot
+x 6
+y 4
+material 0
+glow_radius 4
+no_pass 0
+identified 1
+end
+arch bookshelf
+name Personal Bookshelf
+name_pl Zorn Library Shelves
+x 6
+y 5
+no_pick 1
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+arch random_reading
+end
+end
+arch merchant
+name Irritable Zorn
+title Scroll Maker
+msg
+@match Key|key
+You want my key? You'll have to kill me to get it you
+punk adventurer! Now leave me alone.
+@match Pet|pet
+My pet is a beautiful animal. Don't mess with it if
+you know what is good for you. But knowing you
+dumb adventurer types you will not heed my
+advice. Leave me alone.
+@match Quest|quest
+So, you want a quest do you? If you can enter my
+home you may just find one. But you need a key to
+enter my home. Now quit bothering me, moron.
+@match Given Name|given name|Name|name
+Why do you want to know my given name? I am
+content to be called by my family name. Go away.
+@match Zacharus|zacharus
+Why hello old friend! I don't recall your face but
+only my closest friends know my given name. I
+am sure you have my castle key as I give one to
+all my friends. Remember to carry my pet in with
+you to get past the invisible barrier at the front
+doors. It is good to see you!
+@match *
+Don't bother me. Just do your shopping and get out.
+endmsg
+Con 85
+Pow 15
+hp 10000
+maxhp 10000
+sp 100
+maxsp 500
+exp 2000000
+dam 85
+wc -100
+ac -120
+x 10
+y 4
+speed 1.5
+level 200
+attacktype 65921
+resist_physical 99
+resist_magic 85
+resist_fire 85
+resist_electricity 85
+resist_cold 85
+resist_confusion 85
+resist_acid 85
+resist_drain 85
+resist_weaponmagic 85
+resist_ghosthit 99
+resist_poison 99
+resist_slow 75
+resist_paralyze 75
+resist_turn_undead 99
+resist_fear 85
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 99
+resist_holyword 50
+resist_blind 75
+path_attuned 607
+carrying 53700
+randomitems human_parts
+see_invisible 1
+hitback 1
+reflect_missile 1
+reflect_spell 1
+run_away 5
+pick_up 1
+sleep 1
+can_see_in_dark 1
+arch spell_large_icestorm
+end
+arch spell_dragonbreath
+end
+arch spell_improved_invisibility
+end
+arch spell_earth_to_dust
+end
+arch spell_missile_swarm
+end
+arch mournblade
+name Zorn's Mournblade
+name_pl Zorn's Mournblades
+dam 10
+resist_magic 35
+material 256
+value 200000
+weight 20000
+magic 0
+last_sp 5
+applied 1
+end
+arch mithril_chainmail
+name Zorn's chainmail
+name_pl Zorn's chainmails
+Wis 1
+Int 1
+ac 7
+resist_magic 35
+magic 1
+last_sp 10
+item_power 2
+applied 1
+end
+arch key2
+name Zorn's key
+name_pl Zorn's keys
+slaying irritable_zorn_key
+end
+arch high_boots
+name Zorn's boots
+name_pl Zorn's boots
+ac 2
+resist_physical 5
+resist_magic 5
+material 256
+value 600
+weight 2500
+item_power 2
+applied 1
+end
+arch rod_light
+name rod of sunspear
+name_pl rods of sunspear
+hp 500
+maxhp 500
+sp 161
+level 110
+value 3500
+startequip 1
+end
+arch rod_light
+name rod of sanctuary
+name_pl rods of sanctuary
+hp 500
+maxhp 500
+sp 190
+level 110
+value 3500
+startequip 1
+end
+arch skill_use_magic_item
+can_use_skill 1
+end
+arch skill_stealing
+end
+arch skill_praying
+end
+arch skill_summoning
+end
+arch skill_throwing
+end
+arch skill_karate
+end
+arch skill_punching
+end
+arch skill_sorcery
+end
+arch skill_pyromancy
+end
+arch skill_evocation
+end
+arch skill_two_handed_weapon
+end
+arch skill_one_handed_weapon
+end
+end
+arch shadow
+name Fearless personal guard shadow
+sp 100
+maxsp 100
+x 15
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch man2
+name Fearless personal guard
+Con 25
+Wis 6
+Pow 25
+hp 1800
+maxhp 1800
+sp 1000
+maxsp 1000
+exp 250000
+dam 25
+wc -50
+ac -50
+x 16
+speed 0.1
+level 120
+attacktype 1
+resist_physical 85
+resist_magic 85
+resist_fire 85
+resist_electricity 85
+resist_cold 85
+resist_confusion 85
+resist_acid 85
+resist_drain 85
+resist_weaponmagic 85
+resist_ghosthit 85
+resist_poison 85
+resist_slow 85
+resist_paralyze 85
+resist_turn_undead 85
+resist_fear 100
+resist_deplete 85
+resist_death 85
+resist_chaos 85
+resist_godpower 85
+resist_holyword 85
+resist_blind 85
+path_attuned 16
+randomitems none
+see_invisible 1
+unaggressive 0
+sleep 1
+arch shadow
+name Fearless personal guard shadow
+sp 100
+maxsp 100
+path_attuned 4
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+end
+arch skill_two_handed_weapon
+can_use_skill 1
+end
+arch skill_one_handed_weapon
+can_use_skill 1
+end
+arch skill_missile_weapon
+can_use_skill 1
+end
+arch skill_use_magic_item
+can_use_skill 1
+end
+arch skill_throwing
+can_use_skill 1
+end
+arch crossbow
+name Custom crossbow
+name_pl Custom crossbows
+msg
+This custom crossbow was specially commissioned
+for Fearless personal guards in the Zorn Castle.
+endmsg
+Dex 5
+sp 50
+dam 15
+wc 0
+value 7500
+item_power 5
+applied 1
+end
+arch bolt
+name weaponmagic bolt
+name_pl weaponmagic bolts
+msg
+These custom made bolts do weaponmagic
+damage to one's opponent.
+endmsg
+food 1
+dam 10
+wc 0
+nrof 500
+attacktype 257
+value 20
+end
+arch helmet
+applied 1
+end
+arch ring_mail2
+applied 1
+end
+arch low_boots
+applied 1
+end
+end
+arch cauldron
+name Yolanda's cauldron
+name_pl Yolanda's cauldrons
+msg
+A custom cauldron designed for Yolanda Zorn
+on her 100th wedding anniversary.
+endmsg
+x 17
+value 180000
+magic 4
+end
+arch creator
+name bomb creator
+slaying A BOMB!
+other_arch bomb
+hp 0
+x 17
+y 1
+level 50
+connected 100
+lifesave 1
+end
+arch princess
+name Zelda Zorn
+title oldest daughter
+x 18
+end
+arch woman
+name Zerina Zorn
+title middle daughter
+x 18
+y 1
+end
+arch fatwoman
+name Yolanda Zorn
+title wife
+msg
+@match zorn|Zorn
+Yes, I am a member of the Zorn family.
+@match treasure|Treasure
+Oh, I wouldn't know anything about any
+treasure. You must be mistaken.
+@match *
+Hello, dearie, welcome to my home.
+endmsg
+Con 30
+Pow 20
+hp 1000
+maxhp 1000
+sp 1000
+maxsp 1000
+exp 900000
+dam 25
+wc -50
+ac -50
+x 19
+speed 0.1
+level 120
+attacktype 257
+resist_physical 90
+resist_magic 90
+resist_fire 90
+resist_electricity 90
+resist_cold 90
+resist_confusion 90
+resist_acid 90
+resist_drain 90
+resist_weaponmagic 90
+resist_ghosthit 90
+resist_poison 90
+resist_slow 90
+resist_paralyze 90
+resist_turn_undead 90
+resist_fear -50
+resist_deplete 90
+resist_death 90
+resist_chaos 90
+resist_godpower 90
+resist_holyword 90
+resist_blind 90
+path_attuned 4
+randomitems sorcery_book_high
+see_invisible 1
+pick_up 4
+can_cast_spell 1
+arch dagger
+name Yolanda
+name_pl Yolandas
+slaying human
+dam 5
+wc 5
+attacktype 5376
+value 20000
+last_sp 1
+weapontype 5
+item_power 5
+applied 1
+end
+arch abil_icestorm
+end
+arch abil_large_icestorm
+end
+arch abil_frostbolt
+end
+arch crown
+name Ice crown
+name_pl Ice crowns
+resist_cold 15
+value 17000
+applied 1
+reflect_spell 1
+end
+arch robe
+name Ice robe
+name_pl Ice robes
+resist_cold 15
+value 3000
+last_sp 25
+applied 1
+reflect_missile 1
+end
+arch sandals
+name Ice sandals
+name_pl Ice sandals
+exp 1
+resist_cold 10
+value 5000
+applied 1
+end
+arch skill_one_handed_weapon
+can_use_skill 1
+end
+end
+arch woman2
+name Zennia Zorn
+title youngest daughter
+x 19
+y 1
+end
+arch girdle_strcon
+name Girdle
+name_pl Girdles
+title of Levitation
+msg
+This magical girdle has been imbued
+with the power of flight for as long as
+the owner wears it.
+endmsg
+Str 0
+Dex 2
+Con 0
+x 19
+y 19
+material 0
+value 275000
+item_power 2
+flying 1
+damned 1
+end
+arch baslic
+name Yang
+title unusual basilisk
+hp 12000
+maxhp 12000
+exp 400000
+dam 50
+wc -100
+ac -120
+x 8
+speed -0.5
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 0
+resist_electricity 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 95
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze 50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+randomitems scroll
+unaggressive 1
+can_use_skill 1
+arch skill_clawing
+can_use_skill 1
+end
+arch abil_fear
+level 60
+end
+arch abil_icestorm
+level 60
+end
+arch abil_large_icestorm
+level 60
+end
+arch abil_poison_cloud
+level 60
+end
+arch gem
+nrof 500
+end
+end
+arch baslic
+name Yin
+title unusual basilisk
+hp 12000
+maxhp 12000
+exp 400000
+dam 50
+wc -100
+ac -120
+x 8
+y 2
+speed -0.5
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 0
+resist_electricity 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 95
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze 50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+randomitems dragon_parts
+unaggressive 1
+can_use_skill 1
+arch skill_clawing
+can_use_skill 1
+end
+arch abil_fear
+level 60
+end
+arch abil_icestorm
+level 60
+end
+arch abil_large_icestorm
+level 60
+end
+arch abil_poison_cloud
+level 60
+end
+arch gem
+nrof 500
+end
+end
+arch giantrat
+name Ben
+title Awful rat
+Con 50
+hp 6000
+maxhp 6000
+exp 900000
+dam 95
+wc -100
+ac -120
+x 8
+y 4
+speed -0.99
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 95
+resist_electricity 95
+resist_cold 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 75
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze -50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+resist_blind 95
+randomitems none
+see_invisible 1
+reflect_missile 1
+run_away 10
+can_cast_spell 0
+can_see_in_dark 1
+arch gem
+nrof 750
+end
+end
+arch giantrat
+name Ratigan
+title Awful rat
+Con 50
+hp 6000
+maxhp 6000
+exp 900000
+dam 95
+wc -100
+ac -120
+x 8
+y 6
+speed -0.99
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 95
+resist_electricity 95
+resist_cold 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 75
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze -50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+resist_blind 95
+see_invisible 1
+reflect_missile 1
+run_away 10
+can_cast_spell 0
+can_see_in_dark 1
+arch gem
+nrof 750
+end
+end
+arch unicorn
+name Zorn's pet
+Con 25
+Pow 5
+hp 2000
+maxhp 2000
+sp 250
+maxsp 500
+exp 5000
+dam 50
+wc -50
+ac -50
+x 10
+y 5
+speed 1.0
+level 150
+attacktype 1048849
+path_attuned 1060
+glow_radius 3
+hitback 1
+reflect_missile 1
+reflect_spell 1
+can_use_skill 1
+can_see_in_dark 1
+arch key2
+name Zorn's pet pelt
+name_pl Zorn's pet pelts
+slaying zorn_pet_pelt
+face sheepskin.111
+material 32
+end
+arch abil_large_icestorm
+end
+arch abil_icestorm
+end
+arch abil_fear
+end
+arch abil_slow
+end
+arch abil_frostbolt
+end
+arch spell_major_healing
+end
+arch spell_bullet_swarm
+end
+arch skill_evocation
+end
+arch skill_praying
+end
+arch skill_meditation
+end
+end
+arch cyclops
+name Orville
+title hyper cyclops
+dam 80
+wc -25
+ac -30
+x 11
+speed 0.5
+level 150
+resist_confusion 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_turn_undead 50
+resist_fear 50
+resist_deplete 50
+resist_death 50
+resist_blind 50
+can_see_in_dark 1
+end
+arch giantrat
+name Kinktail
+title Awful rat
+Con 50
+hp 6000
+maxhp 6000
+exp 900000
+dam 95
+wc -100
+ac -120
+x 11
+y 3
+speed -0.99
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 95
+resist_electricity 95
+resist_cold 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 75
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze -50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+resist_blind 95
+randomitems none
+see_invisible 1
+reflect_missile 1
+run_away 10
+can_cast_spell 0
+can_see_in_dark 1
+arch gem
+nrof 750
+end
+end
+arch cyclops
+name Wilbur
+title hyper cyclops
+dam 80
+wc -25
+ac -30
+x 13
+speed 0.5
+level 150
+resist_confusion 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_turn_undead 50
+resist_fear 50
+resist_deplete 50
+resist_death 50
+resist_blind 50
+can_see_in_dark 1
+end
+arch giantrat
+name Horridbreath
+title Awful rat
+Con 50
+hp 6000
+maxhp 6000
+exp 900000
+dam 95
+wc -100
+ac -120
+x 13
+y 3
+speed -0.99
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 95
+resist_electricity 95
+resist_cold 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 75
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze -50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+resist_blind 95
+randomitems none
+see_invisible 1
+reflect_missile 1
+run_away 10
+can_cast_spell 0
+can_see_in_dark 1
+arch gem
+nrof 750
+end
+end

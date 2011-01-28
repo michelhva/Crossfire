@@ -1,0 +1,17 @@
+[Config]
+name= CFAnim test
+victimtype= object
+victim= who
+unique= no
+always_delete= no
+paralyzed= yes
+time_representation= second
+errors_allowed= yes
+verbose= no
+animation= Animation
+invisible= no
+wizard= no
+[Conjurer_1]
+1 say First animation script
+[Conjurer_2]
+1 say Second animation script

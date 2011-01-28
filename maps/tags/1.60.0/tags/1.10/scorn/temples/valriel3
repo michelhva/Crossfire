@@ -1,0 +1,859 @@
+arch map
+name valriel3
+region scorn
+darkness 2
+width 16
+height 16
+enter_y 3
+msg
+Creator: Raphael Quinet
+Email: quinet@gamers.org
+Date: Fri Jan 22 01:59:02 1999
+endmsg
+end
+arch woodfloor
+end
+arch cwall_2_2_2
+end
+arch woodfloor
+y 1
+end
+arch cwall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch cwall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch cwall_2_1_1
+y 3
+end
+arch woodfloor
+y 4
+end
+arch cwall_2_2_1
+y 4
+end
+arch blocked
+y 5
+end
+arch blocked
+y 6
+end
+arch blocked
+y 9
+end
+arch blocked
+y 10
+end
+arch woodfloor
+y 11
+end
+arch cwall_2_2_2
+y 11
+end
+arch woodfloor
+y 12
+end
+arch cwall_3_2
+y 12
+end
+arch woodfloor
+y 13
+end
+arch cwall_2_1_1
+y 13
+end
+arch woodfloor
+y 14
+end
+arch cwall_3_2
+y 14
+end
+arch woodfloor
+y 15
+end
+arch cwall_2_2_1
+y 15
+end
+arch woodfloor
+x 1
+end
+arch cwall_2_1_2
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch cwall_2_1_2
+x 1
+y 4
+end
+arch blocked
+x 1
+y 5
+end
+arch blocked
+x 1
+y 6
+end
+arch blocked
+x 1
+y 9
+end
+arch blocked
+x 1
+y 10
+end
+arch woodfloor
+x 1
+y 11
+end
+arch cwall_3_3
+x 1
+y 11
+end
+arch woodfloor
+x 1
+y 12
+end
+arch cwall_2_2_4
+x 1
+y 12
+end
+arch woodfloor
+x 1
+y 13
+end
+arch spider_web
+x 1
+y 13
+end
+arch woodfloor
+x 1
+y 14
+end
+arch cwall_2_2_3
+x 1
+y 14
+end
+arch woodfloor
+x 1
+y 15
+end
+arch cwall_3_1
+x 1
+y 15
+end
+arch woodfloor
+x 2
+end
+arch cwall_2_1_2
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch stair2_up
+slaying valriel3
+hp 13
+sp 3
+x 2
+y 2
+end
+arch light2
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch stair2_down
+slaying valriel2
+hp 6
+sp 10
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch cwall_2_1_2
+x 2
+y 4
+end
+arch blocked
+x 2
+y 5
+end
+arch blocked
+x 2
+y 6
+end
+arch blocked
+x 2
+y 9
+end
+arch blocked
+x 2
+y 10
+end
+arch woodfloor
+x 2
+y 11
+end
+arch cwall_2_1_2
+x 2
+y 11
+end
+arch woodfloor
+x 2
+y 12
+end
+arch perm_magic_portal
+slaying /!
+msg
+layoutstyle onion
+wallstyle castle
+floorstyle indoor
+xsize 30
+ysize 30
+exitstyle sstair
+decorstyle religious_valriel
+monsterstyle angel
+final_map /dungeons/valriel/valriel_final
+symmetry 4
+orientation 2
+dungeon_depth 99
+dungeon_name Valriel's church
+endmsg
+hp 0
+sp 0
+x 2
+y 12
+end
+arch woodfloor
+x 2
+y 13
+end
+arch gravedirt
+name dirt
+x 2
+y 13
+end
+arch woodfloor
+x 2
+y 14
+end
+arch stair_3_down
+slaying valriel3
+hp 13
+sp 2
+x 2
+y 14
+end
+arch woodfloor
+x 2
+y 15
+end
+arch cwall_2_1_2
+x 2
+y 15
+end
+arch woodfloor
+x 3
+end
+arch cwall_2_1_2
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch cwall_2_1_2
+x 3
+y 4
+end
+arch blocked
+x 3
+y 5
+end
+arch blocked
+x 3
+y 6
+end
+arch blocked
+x 3
+y 9
+end
+arch blocked
+x 3
+y 10
+end
+arch woodfloor
+x 3
+y 11
+end
+arch cwall_3_3
+x 3
+y 11
+end
+arch woodfloor
+x 3
+y 12
+end
+arch cwall_2_2_1
+x 3
+y 12
+end
+arch woodfloor
+x 3
+y 13
+end
+arch letter
+msg
+Dear Mr Redwood,
+As you are our town's best carpenter,
+could you have a look at the belltower
+of our church?  That part of our church
+is quite old and I am afraid that a
+bell might fall down and hurt someone.
+endmsg
+x 3
+y 13
+end
+arch corpse
+x 3
+y 13
+end
+arch woodfloor
+x 3
+y 14
+end
+arch cwall_2_2_2
+x 3
+y 14
+end
+arch woodfloor
+x 3
+y 15
+end
+arch cwall_3_1
+x 3
+y 15
+end
+arch woodfloor
+x 4
+end
+arch cwall_2_2_3
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch cwall_2_1_1
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch cwall_2_1_1
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch cwall_2_1_1
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch cwall_2_2_4
+x 4
+y 4
+end
+arch blocked
+x 4
+y 5
+end
+arch blocked
+x 4
+y 6
+end
+arch blocked
+x 4
+y 9
+end
+arch blocked
+x 4
+y 10
+end
+arch woodfloor
+x 4
+y 11
+end
+arch cwall_2_2_3
+x 4
+y 11
+end
+arch woodfloor
+x 4
+y 12
+end
+arch cwall_3_4
+x 4
+y 12
+end
+arch woodfloor
+x 4
+y 13
+end
+arch cwall_2_1_1
+x 4
+y 13
+end
+arch woodfloor
+x 4
+y 14
+end
+arch cwall_3_4
+x 4
+y 14
+end
+arch woodfloor
+x 4
+y 15
+end
+arch cwall_2_2_4
+x 4
+y 15
+end
+arch blocked
+x 5
+end
+arch blocked
+x 5
+y 1
+end
+arch blocked
+x 5
+y 2
+end
+arch blocked
+x 5
+y 3
+end
+arch blocked
+x 5
+y 4
+end
+arch blocked
+x 5
+y 5
+end
+arch blocked
+x 5
+y 6
+end
+arch blocked
+x 5
+y 9
+end
+arch blocked
+x 5
+y 10
+end
+arch blocked
+x 5
+y 11
+end
+arch blocked
+x 5
+y 12
+end
+arch blocked
+x 5
+y 13
+end
+arch blocked
+x 5
+y 14
+end
+arch blocked
+x 5
+y 15
+end
+arch blocked
+x 6
+end
+arch blocked
+x 6
+y 1
+end
+arch blocked
+x 6
+y 2
+end
+arch blocked
+x 6
+y 3
+end
+arch blocked
+x 6
+y 4
+end
+arch blocked
+x 6
+y 5
+end
+arch blocked
+x 6
+y 6
+end
+arch blocked
+x 6
+y 9
+end
+arch blocked
+x 6
+y 10
+end
+arch blocked
+x 6
+y 11
+end
+arch blocked
+x 6
+y 12
+end
+arch blocked
+x 6
+y 13
+end
+arch blocked
+x 6
+y 14
+end
+arch blocked
+x 6
+y 15
+end
+arch blocked
+x 9
+end
+arch blocked
+x 9
+y 1
+end
+arch blocked
+x 9
+y 2
+end
+arch blocked
+x 9
+y 3
+end
+arch blocked
+x 9
+y 4
+end
+arch blocked
+x 9
+y 5
+end
+arch blocked
+x 9
+y 6
+end
+arch blocked
+x 10
+end
+arch blocked
+x 10
+y 1
+end
+arch blocked
+x 10
+y 2
+end
+arch blocked
+x 10
+y 3
+end
+arch blocked
+x 10
+y 4
+end
+arch blocked
+x 10
+y 5
+end
+arch blocked
+x 10
+y 6
+end
+arch woodfloor
+x 11
+end
+arch cwall_2_2_2
+x 11
+end
+arch woodfloor
+x 11
+y 1
+end
+arch cwall_2_1_1
+x 11
+y 1
+end
+arch woodfloor
+x 11
+y 2
+end
+arch cwall_2_1_1
+x 11
+y 2
+end
+arch woodfloor
+x 11
+y 3
+end
+arch cwall_2_1_1
+x 11
+y 3
+end
+arch woodfloor
+x 11
+y 4
+end
+arch cwall_2_2_1
+x 11
+y 4
+end
+arch blocked
+x 11
+y 5
+end
+arch blocked
+x 11
+y 6
+end
+arch woodfloor
+x 12
+end
+arch cwall_2_1_2
+x 12
+end
+arch woodfloor
+x 12
+y 1
+end
+arch spider_web
+x 12
+y 1
+end
+arch woodfloor
+x 12
+y 2
+end
+arch woodfloor
+x 12
+y 3
+end
+arch woodfloor
+x 12
+y 4
+end
+arch cwall_2_1_2
+x 12
+y 4
+end
+arch blocked
+x 12
+y 5
+end
+arch blocked
+x 12
+y 6
+end
+arch woodfloor
+x 13
+end
+arch cwall_2_1_2
+x 13
+end
+arch woodfloor
+x 13
+y 1
+end
+arch woodfloor
+x 13
+y 2
+end
+arch stair2_up
+slaying valriel3
+hp 2
+sp 14
+x 13
+y 2
+end
+arch light1
+x 13
+y 2
+end
+arch woodfloor
+x 13
+y 3
+end
+arch stair2_down
+slaying valriel3
+hp 2
+sp 2
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 4
+end
+arch cwall_2_1_2
+x 13
+y 4
+end
+arch blocked
+x 13
+y 5
+end
+arch blocked
+x 13
+y 6
+end
+arch woodfloor
+x 14
+end
+arch cwall_2_1_2
+x 14
+end
+arch woodfloor
+x 14
+y 1
+end
+arch woodfloor
+x 14
+y 2
+end
+arch spider_web
+x 14
+y 2
+end
+arch woodfloor
+x 14
+y 3
+end
+arch woodfloor
+x 14
+y 4
+end
+arch cwall_2_1_2
+x 14
+y 4
+end
+arch blocked
+x 14
+y 5
+end
+arch blocked
+x 14
+y 6
+end
+arch woodfloor
+x 15
+end
+arch cwall_2_2_3
+x 15
+end
+arch woodfloor
+x 15
+y 1
+end
+arch cwall_2_1_1
+x 15
+y 1
+end
+arch woodfloor
+x 15
+y 2
+end
+arch cwall_2_1_1
+x 15
+y 2
+end
+arch woodfloor
+x 15
+y 3
+end
+arch cwall_2_1_1
+x 15
+y 3
+end
+arch woodfloor
+x 15
+y 4
+end
+arch cwall_2_2_4
+x 15
+y 4
+end
+arch blocked
+x 15
+y 5
+end
+arch blocked
+x 15
+y 6
+end

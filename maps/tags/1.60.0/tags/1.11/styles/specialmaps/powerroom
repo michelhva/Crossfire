@@ -1,0 +1,68 @@
+arch map
+name minialch
+width 5
+height 5
+msg
+Created:  1999-02-18
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
+end
+arch firewall_4
+x 1
+y 1
+arch spell_transference
+end
+end
+arch firewall_3
+x 1
+y 2
+arch spell_transference
+end
+end
+arch firewall_2
+x 1
+y 3
+arch spell_transference
+end
+end
+arch earthwall
+x 2
+y 1
+end
+arch power_crystal
+x 2
+y 2
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+no_pick 1
+end
+arch firewall_1
+x 2
+y 3
+arch spell_transference
+end
+end
+arch firewall_6
+x 3
+y 1
+arch spell_transference
+end
+end
+arch firewall_7
+x 3
+y 2
+arch spell_transference
+end
+end
+arch firewall_8
+x 3
+y 3
+arch spell_transference
+end
+end

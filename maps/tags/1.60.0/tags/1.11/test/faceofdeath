@@ -1,0 +1,19 @@
+arch map
+name <unnamed>
+width 16
+height 16
+msg
+Created:  1998-07-23
+endmsg
+end
+arch goblin
+name normal goblin
+x 3
+y 5
+end
+arch goblin
+name magic immune goblin
+x 8
+y 4
+immune 2
+end
