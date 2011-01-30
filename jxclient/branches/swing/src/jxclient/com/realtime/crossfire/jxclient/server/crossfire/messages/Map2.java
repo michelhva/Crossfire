@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  * Copyright (C) 2005-2008 Yann Chachkoff.
- * Copyright (C) 2006-2010 Andreas Kirschbaum.
+ * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
 package com.realtime.crossfire.jxclient.server.crossfire.messages;
@@ -111,6 +111,22 @@ public interface Map2 {
      * Bit value whether this is a face or an animation.
      */
     int FACE_ANIMATION = 0x8000;
+
+    /**
+     * Animation type: normal animation. Starts at index zero.
+     */
+    int ANIM_NORMAL = 0;
+
+    /**
+     * Animation type: randomized animation. Starts at random index.
+     */
+    int ANIM_RANDOM = 1;
+
+    /**
+     * Animation type: synchronized animation. Starts at same state as similar
+     * animations.
+     */
+    int ANIM_SYNC = 2;
 
     /**
      * The mask for extracting the animation ID.

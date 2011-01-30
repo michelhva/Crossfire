@@ -1,3 +1,24 @@
+<!--
+  ~ This file is part of JXClient, the Fullscreen Java Crossfire Client.
+  ~
+  ~ JXClient is free software; you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation; either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ JXClient is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with JXClient; if not, write to the Free Software
+  ~ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+  ~
+  ~ Copyright (C) 2005-2008 Yann Chachkoff.
+  ~ Copyright (C) 2006-2011 Andreas Kirschbaum.
+  -->
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -55,6 +76,11 @@
 <ul>
     <li>map view is considered most important. Therefore it uses all available
         space; other information are overlayed.
+        <ul>
+            <li>map square size defaults to 64 pixels; optionally 32 or 4 pixels
+                are supported (--tile-size option).
+            </li>
+        </ul>
     </li>
     <li>painting of map view: displays map contents even before all needed
         images are known
@@ -220,6 +246,13 @@
             <li>death</li>
         </ul>
     </li>
+    <li>sound sources are:
+        <ul>
+            <li>built-in (embedded into .jar file)</li>
+            <li>file in current directory</li>
+            <li>file in <code>$HOME/.crossfire/jxclient/sounds</code></li>
+        </ul>
+    </li>
     <li>supports multiple concurrent sounds</li>
     <li>client-synthesized sound-effects
         <ul>
@@ -279,6 +312,9 @@
     <li><code>--debug-keyboard</code> command-line option logs information about
         key binding processing
     </li>
+    <li><code>--debug-sound</code> command-line option logs information about
+        sound processing
+    </li>
     <li><code>/debug_messages</code> command helps
         <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#debug">debugging
             skins</a></li>
@@ -337,7 +373,6 @@
     <li>smoothing in map view</li>
     <li>spells dialog</li>
     <li>auto-reconnect after unexpected disconnects</li>
-    <li>synchronous animations [asynchronous animations are implemented]</li>
     <li>command history retained per-character</li>
     <li>copy (CTRL-C) in message window and command input</li>
     <li>resizing of dialogs</li>
