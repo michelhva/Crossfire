@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  * Copyright (C) 2005-2008 Yann Chachkoff.
- * Copyright (C) 2006-2010 Andreas Kirschbaum.
+ * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
 package com.realtime.crossfire.jxclient.server.crossfire;
@@ -1162,7 +1162,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet.get() != ' ') {
                         break;
                     }
-                    processAddAnim(packet);
+                    processAnim(packet);
                     return;
                 }
                 break;
@@ -2445,11 +2445,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Processes an 'addanim' server command.
+     * Processes an 'anim' server command.
      * @param packet the packet's payload
      * @throws UnknownCommandException if the packet is invalid.
      */
-    private void processAddAnim(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+    private void processAnim(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
         final int num = getInt2(packet);
         final int flags = getInt2(packet);
@@ -2461,10 +2461,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             faces[i] = getInt2(packet);
         }
         if (packet.hasRemaining()) {
-            throw new UnknownCommandException("excess data at end of addanim command");
+            throw new UnknownCommandException("excess data at end of anim command");
         }
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv addanim num="+num+" flags="+flags+" faces="+Arrays.toString(faces));
+            debugProtocol.debugProtocolWrite("recv anim num="+num+" flags="+flags+" faces="+Arrays.toString(faces));
         }
         if ((num&~0x1FFF) != 0) {
             throw new UnknownCommandException("invalid animation id "+num);

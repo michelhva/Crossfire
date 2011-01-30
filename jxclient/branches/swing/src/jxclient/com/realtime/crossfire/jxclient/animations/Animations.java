@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  * Copyright (C) 2005-2008 Yann Chachkoff.
- * Copyright (C) 2006-2010 Andreas Kirschbaum.
+ * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
 package com.realtime.crossfire.jxclient.animations;
@@ -129,7 +129,7 @@ public class Animations {
             System.err.println("Warning: animation id "+animationId+" has only one face");
         }
 
-        final Animation animation = new Animation(flags, faces);
+        final Animation animation = new Animation(animationId, flags, faces);
         if (animations.put(animationId, animation) != null) {
             System.err.println("Warning: duplicate animation id "+animationId);
         }
