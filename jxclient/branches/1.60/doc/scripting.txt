@@ -1,0 +1,60 @@
+This document documents differences of the scripting interface compared to the
+GTK-v2 client.
+
+The "request stat" supports two more subtypes:
+
+ * The command
+
+     request stat stats_race
+
+   returns
+
+     request stat stats_race STR CON DEX INT WIS POW CHA
+
+   for the race's maximum values.
+
+ * The command
+
+     request stat stats_base
+
+   returns
+
+     request stat stats_base STR CON DEX INT WIS POW CHA
+
+   for the base stat values without applied boosts or depletions.
+
+ * The command
+
+     request stat stats_applied
+
+   returns
+
+     request stat stats_applied STR CON DEX INT WIS POW CHA
+
+   for the stat differences due to applied gear or skills.
+
+ * The command "watch stats" may report additional types:
+
+    str_base   current strength without applied boosts or depletions
+    con_base   current constitution without applied boosts or depletions
+    dex_base   current dexterity without applied boosts or depletions
+    int_base   current intelligence without applied boosts or depletions
+    wis_base   current wisdom without applied boosts or depletions
+    pow_base   current power without applied boosts or depletions
+    cha_base   current charisma without applied boosts or depletions
+
+    str_race   maximum strength limit without boosts
+    con_race   maximum constitution limit without boosts
+    dex_race   maximum dexterity limit without boosts
+    int_race   maximum intelligence limit without boosts
+    wis_race   maximum wisdom limit without boosts
+    pow_race   maximum power limit without boosts
+    cha_race   maximum charisma limit without boosts
+
+    str_applied strength change due to applied gear or skills
+    con_applied constitution change due to applied gear or skills
+    dex_applied dexterity change due to applied gear or skills
+    int_applied intelligence change due to applied gear or skills
+    wis_applied wisdom change due to applied gear or skills
+    pow_applied power change due to applied gear or skills
+    cha_applied charisma change due to applied gear or skills
