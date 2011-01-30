@@ -1,0 +1,208 @@
+<!--
+  ~ This file is part of JXClient, the Fullscreen Java Crossfire Client.
+  ~
+  ~ JXClient is free software; you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation; either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ JXClient is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with JXClient; if not, write to the Free Software
+  ~ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+  ~
+  ~ Copyright (C) 2005-2008 Yann Chachkoff.
+  ~ Copyright (C) 2006-2011 Andreas Kirschbaum.
+  -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>JXClient FAQ</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+</head>
+<body>
+
+<h1>JXClient FAQ</h1>
+
+<h2>General</h2>
+
+<h3>What is JXClient?</h3>
+
+<p>JXClient is a Crossfire client supporting full-screen mode.</p>
+
+<h3>Does JXClient run on my system?</h3>
+
+<p>JXClient is a Java application. To run it you need Java 6
+    (<a href="http://www.java.com/">Sun's JRE</a> and
+    <a href="http://openjdk.java.net/">OpenJDK</a> do work; gcj/gij does not).
+    In Debian systems either of <code>sun-java6-jre</code> and <code>openjdk-6-jre</code>
+    packages work.</p>
+
+<p>The client can be run with</p>
+<pre>
+    java -jar jxclient.jar
+</pre>
+
+<h3>Is there a difference between JXClient and jcrossclient?</h3>
+
+<p>Yes: JXClient and jcrossclient are different applications.
+    <a href="http://sourceforge.net/projects/jcrossclient/">jcrossclient's</a>
+    intention was to run as an applet to play Crossfire through a web browser.
+    JXClient is a stand-alone full-screen application to play Crossfire.</p>
+
+<h3>Where do I get JXClient from?</h3>
+
+<p>Daily updated pre-built versions are available from
+    <a href="http://invidious.meflin.net/jxclient.jar">http://invidious.meflin.net/jxclient.jar</a>
+    and <a href="http://crossfire.ailesse.com/#header_jxclient">http://crossfire.ailesse.com/</a>.
+    These versions include the
+    <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/ChangeLog">latest
+        features</a> and therefore can be unstable.</p>
+
+<p>The source code is available from</p>
+<pre>
+    svn co https://crossfire.svn.sourceforge.net/svnroot/crossfire/jxclient/trunk jxclient
+</pre>
+
+<h2>JXClient fails to start</h2>
+
+<h3>JXClient exits/crashes without displaying an error message. How can I make
+    the error message visible?</h3>
+
+<p>Start JXClient from a console (xterm, cmd.exe, etc.):</p>
+<pre>
+    java -jar jxclient.jar
+</pre>
+
+<h3>JXClient always reports "Cannot connect to Crossfire server. Network is
+    unreachable"</h3>
+
+<p>This might be a problem with Debian based systems. See the bug report
+    <a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=560044">net.ipv6.bindv6only=1
+        breaks java networking</a> for details.</p>
+
+<p>For the impatient: add <code>-Djava.net.preferIPv4Stack=true</code> when
+    running JXClient:</p>
+<pre>
+    java -Djava.net.preferIPv4Stack=true -jar jxclient.jar
+</pre>
+<p>Make sure to add the option <em>before</em> <code>-jar jxclient.jar</code>.
+</p>
+
+<h3>What does java.lang.UnsupportedClassVersionError mean?</h3>
+
+<p>Your Java version is too old to run JXClient. You need at least Java 6;
+    gcj/gij does not work.</p>
+
+<h3>What does "java.lang.reflect.InvocationTargetException" mean?</h3>
+
+<h3>What does "java.lang.OutOfMemoryError: Java heap space" mean?</h3>
+
+<pre>
+    JXClient - Crossfire Java Client
+    (C)2005 by Lauwenmark.
+    This software is placed under the GPL License
+    java.lang.reflect.InvocationTargetException
+           at java.awt.EventQueue.invokeAndWait(EventQueue.java:997)
+           at javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1323)
+           at com.realtime.crossfire.jxclient.main.JXClient.&lt;init&gt;(JXClient.java:102)
+           at com.realtime.crossfire.jxclient.main.JXClient.main(JXClient.java:65)
+    Caused by: java.lang.OutOfMemoryError: Java heap space
+           at java.awt.image.DataBufferInt.&lt;init&gt;(DataBufferInt.java:41)
+           at java.awt.image.Raster.createPackedRaster(Raster.java:458)
+           at java.awt.image.DirectColorModel.createCompatibleWritableRaster(DirectColorModel.java:1015)
+           at java.awt.image.BufferedImage.&lt;init&gt;(BufferedImage.java:321)
+           at sun.java2d.loops.GraphicsPrimitive.convertFrom(GraphicsPrimitive.java:537)
+           at sun.java2d.loops.GraphicsPrimitive.convertFrom(GraphicsPrimitive.java:521)
+           at sun.java2d.loops.MaskBlit$General.MaskBlit(MaskBlit.java:171)
+           at sun.java2d.loops.Blit$GeneralMaskBlit.Blit(Blit.java:186)
+           at sun.java2d.pipe.DrawImage.blitSurfaceData(DrawImage.java:927)
+           at sun.java2d.pipe.DrawImage.renderImageCopy(DrawImage.java:550)
+           at sun.java2d.pipe.DrawImage.copyImage(DrawImage.java:73)
+           at sun.java2d.pipe.DrawImage.copyImage(DrawImage.java:998)
+           at sun.java2d.pipe.ValidatePipe.copyImage(ValidatePipe.java:178)
+           at sun.java2d.SunGraphics2D.copyImage(SunGraphics2D.java:2909)
+           at sun.java2d.SunGraphics2D.drawImage(SunGraphics2D.java:2940)
+           at sun.java2d.SunGraphics2D.drawImage(SunGraphics2D.java:2895)
+           at com.realtime.crossfire.jxclient.gui.GUIPicture.&lt;init&gt;(GUIPicture.java:67)
+           at com.realtime.crossfire.jxclient.skin.DialogFactory.newDialog(DialogFactory.java:205)
+           at com.realtime.crossfire.jxclient.skin.JXCSkinLoader.load(JXCSkinLoader.java:908)
+           at com.realtime.crossfire.jxclient.skin.JXCSkinLoader.load(JXCSkinLoader.java:577)
+           at com.realtime.crossfire.jxclient.skin.JXCSkinLoader.load(JXCSkinLoader.java:391)
+           at com.realtime.crossfire.jxclient.window.JXCWindow.loadSkin(JXCWindow.java:1308)
+           at com.realtime.crossfire.jxclient.window.JXCWindow.setSkin(JXCWindow.java:1270)
+           at com.realtime.crossfire.jxclient.window.JXCWindow.init(JXCWindow.java:797)
+           at com.realtime.crossfire.jxclient.main.JXClient$1.run(JXClient.java:107)
+           at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:199)
+           at java.awt.EventQueue.dispatchEvent(EventQueue.java:597)
+           at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:273)
+           at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:183)
+           at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:173)
+           at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:168)
+           at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:160)
+</pre>
+
+<p>The client has run out of memory. Increase the available memory by starting
+    it with</p>
+<pre>
+    java -Xmx256m -jar jxclient
+</pre>
+
+<h3>Is Java 6 available for Mac OS?</h3>
+
+<p>
+    <a href="http://bsnyderblog.blogspot.com/2008/03/java-16-via-soylatte-on-macos-x-10411.html">http://bsnyderblog.blogspot.com/2008/03/java-16-via-soylatte-on-macos-x-10411.html</a>
+    may help.</p>
+
+<h2>Display Settings</h2>
+
+<h3>Does JXClient support different resolutions?</h3>
+
+<p>Yes: start the client with</p>
+<pre>
+    java -jar jxclient.jar --resolution 1400x1050
+</pre>
+
+<h3>Does JXClient support non-full-screen mode?</h3>
+
+<p>Yes: start the client with</p>
+<pre>
+    java -jar jxclient.jar --no-full-screen
+</pre>
+
+<h3>Why doesn't JXClient enter full-screen mode?</h3>
+
+<p>X.org users might need to patch the Java runtime. See
+    <a href="http://crossfire.ailesse.com/#header_jxclient">The Java Client
+        (JXClient) on Ailesse</a> for details.</p>
+
+<h2>Key Bindings</h2>
+
+<h3>How do I focus the command input field by keyboard?</h3>
+
+<p>The preferred key to open the command input is <code>/</code>; alternatively
+    <code>\</code> or <code>'</code> can be used. Command input automatically
+    closes after the command has been submitted (unless the dialog has been
+    visible before).</p>
+
+<h3>How to prevent a key binding from submitting the command?</h3>
+
+<p>Use the <code>/bind -e command</code>. This enters "command" into the command
+    input field but does not submit it.</p>
+
+<h3>Where are the key bindings stored?</h3>
+
+<p>Normal key bindings are stored in <code>$HOME/.crossfire/jxclient/keybindings.txt</code>.
+</p>
+
+<p>Per-character key bindings are stored in <code>$HOME/.crossfire/jxclient-HOST-CHAR.txt</code>.
+    <code>HOST</code> is the Crossfire server's name, <code>CHAR</code> is the
+    character's name.</p>
+
+</body>
+</html>
