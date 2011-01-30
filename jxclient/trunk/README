@@ -1,3 +1,7 @@
+Project description:
+--------------------
+JXClient is a client for Crossfire (http://crossfire.real-time.com/).
+
 Requires:
 ---------
 - Sun JVM 1.6.x or higher;
@@ -5,25 +9,24 @@ Requires:
 
 Recommended:
 ------------
-- Sun JVM 1.6.0 or higher (Mustang b60 and onwards);
+- Sun JVM 1.6.0 or higher;
 - Driver-level support for hardware accelerated operations
   (Either OpenGL or DirectX, depending on your system).
 
 Fullscreen support:
 -------------------
-The JXClient uses the fullscreen support provided by the JVM.
+JXClient uses the fullscreen support provided by the JVM.
 
-Although the client will switch to windowed mode if real
-fullscreen is not available, it is important to note that
-accelerated support will probably end up being disabled.
+Although the client will switch to windowed mode if real fullscreen is not
+available, it is important to note that accelerated support will probably end up
+being disabled.
 
 You can download an updated version from either http://www.java.com
 or from http://java.sun.com/javase/downloads/index.jsp .
 
-To check if the graphical operations are accelerated, you can
-add "-Dsun.java2d.trace=log,timestamp,count,out:java2d.log" to
-your JVM command line, run the client, then check the content
-of java2d.log.
+To check if the graphical operations are accelerated, you can add
+"-Dsun.java2d.trace=log,timestamp,count,out:java2d.log" to your JVM command
+line, run the client, then check the content of java2d.log.
 
 Compiling the sources:
 ----------------------
