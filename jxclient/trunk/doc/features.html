@@ -55,6 +55,11 @@
 <ul>
     <li>map view is considered most important. Therefore it uses all available
         space; other information are overlayed.
+        <ul>
+            <li>map square size defaults to 64 pixels; optionally 32 or 4 pixels
+                are supported (--tile-size option).
+            </li>
+        </ul>
     </li>
     <li>painting of map view: displays map contents even before all needed
         images are known
@@ -220,6 +225,13 @@
             <li>death</li>
         </ul>
     </li>
+    <li>sound sources are:
+        <ul>
+            <li>built-in (embedded into .jar file)</li>
+            <li>file in current directory</li>
+            <li>file in <code>$HOME/.crossfire/jxclient/sounds</code></li>
+        </ul>
+    </li>
     <li>supports multiple concurrent sounds</li>
     <li>client-synthesized sound-effects
         <ul>
@@ -279,6 +291,9 @@
     <li><code>--debug-keyboard</code> command-line option logs information about
         key binding processing
     </li>
+    <li><code>--debug-sound</code> command-line option logs information about
+        sound processing
+    </li>
     <li><code>/debug_messages</code> command helps
         <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/jxclient/trunk/doc/skin.html#debug">debugging
             skins</a></li>
@@ -337,7 +352,6 @@
     <li>smoothing in map view</li>
     <li>spells dialog</li>
     <li>auto-reconnect after unexpected disconnects</li>
-    <li>synchronous animations [asynchronous animations are implemented]</li>
     <li>command history retained per-character</li>
     <li>copy (CTRL-C) in message window and command input</li>
     <li>resizing of dialogs</li>

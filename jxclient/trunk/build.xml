@@ -21,6 +21,9 @@
   -->
 
 <project name="jxclient" default="all" basedir=".">
+    <description>
+        JXClient - full-screen client for Crossfire.
+    </description>
     <property file="developer.properties"/>
     <property name="src.jxclient" value="src/jxclient"/>
     <property name="src.test" value="src/test"/>
@@ -49,7 +52,7 @@
             <compilerarg value="-Xlint:unchecked"/>
         </javac>
     </target>
-    <target name="jar" depends="compile-jxclient,copy-skins,update-build-properties">
+    <target name="jar" depends="compile-jxclient,copy-skins,update-build-properties" description="Compiles the client; creates jxclient.jar.">
         <jar destfile="jxclient.jar">
             <fileset dir="${build}/jxclient"/>
             <fileset dir="." includes="resource/application_icon.png"/>
@@ -80,7 +83,7 @@
     </target>
     <target name="all" depends="jar">
     </target>
-    <target name="check" depends="compile-test,jar">
+    <target name="check" depends="compile-test,jar" description="Executes all tests.">
         <mkdir dir="${build}/reports"/>
         <junit fork="yes" haltonerror="yes" haltonfailure="yes">
             <jvmarg value="-ea"/>
@@ -97,7 +100,7 @@
             </batchtest>
         </junit>
     </target>
-    <target name="doc" description="Generate javadoc documentation.">
+    <target name="doc" description="Generates javadoc documentation; creates doc-html.">
         <javadoc destdir="doc-html" packagenames="com.realtime.crossfire.*" failonerror="yes" access="private" version="no" use="yes" author="no" splitindex="no" windowtitle="Jikes" nodeprecated="yes" notree="no" noindex="no" nohelp="yes" nonavbar="yes">
             <sourcepath>
                 <pathelement path="${src.jxclient}"/>
@@ -108,7 +111,7 @@
             <tag name="noinspection" description="No Inspection:"/>
         </javadoc>
     </target>
-    <target name="update-build-properties" description="Updates build.properties.">
+    <target name="update-build-properties">
         <exec executable="svnversion" logError="true" outputproperty="build.number" failifexecutionfails="false"/>
         <property name="build.number" value="unknown"/>
         <mkdir dir="${build.properties.dir}"/>
