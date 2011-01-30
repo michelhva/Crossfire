@@ -118,14 +118,15 @@ public abstract class AbstractOrientation implements Orientation {
      * {@inheritDoc}
      */
     @Override
-    public void setExtends(final int width, final int height) {
+    public boolean setExtends(final int width, final int height) {
         if (this.width == width && this.height == height) {
-            return;
+            return false;
         }
 
         this.width = width;
         this.height = height;
         reCalculate();
+        return true;
     }
 
     /**
