@@ -271,7 +271,7 @@ public class JXCWindowRenderer {
      * The tooltip to use, or <code>null</code> if no tooltips should be shown.
      */
     @Nullable
-    private GUIElement tooltip = null;
+    private AbstractGUIElement tooltip = null;
 
     /**
      * If set, force a full repaint.
@@ -1074,8 +1074,14 @@ public class JXCWindowRenderer {
      * shown.
      * @param tooltip the tooltip to use, or <code>null</code>
      */
-    public void setTooltip(@Nullable final GUIElement tooltip) {
+    public void setTooltip(@Nullable final AbstractGUIElement tooltip) {
+        if (this.tooltip != null) {
+            layeredPane.remove(this.tooltip);
+        }
         this.tooltip = tooltip;
+        if (this.tooltip != null) {
+            layeredPane.add(this.tooltip, 2, -1);
+        }
     }
 
     /**
