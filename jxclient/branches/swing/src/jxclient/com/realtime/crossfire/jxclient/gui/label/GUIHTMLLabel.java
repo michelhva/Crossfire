@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -132,16 +133,14 @@ public class GUIHTMLLabel extends AbstractLabel {
             return;
         }
 
-        /*XXX
         int width = 0;
         int height = 0;
         for (final String str : PATTERN_LINE_BREAK.split(getText(), -1)) {
-            final Dimension size = getTextDimension(str, getTextFont());
+            final Dimension size = GuiUtils.getTextDimension(str, getTextFont());
             width = Math.max(width, size.width);
             height += size.height;
         }
-        //XXX:setElementSize(Math.max(1, width+2*AUTO_BORDER_SIZE), Math.max(1, height+2*AUTO_BORDER_SIZE));
-        */
+        setSize(Math.max(1, width+2*AUTO_BORDER_SIZE), Math.max(1, height+2*AUTO_BORDER_SIZE));
     }
 
     /**

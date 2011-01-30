@@ -73,48 +73,48 @@ horizontal begin par
   begin seq
     gap 8
     begin par
-      gauge_hp_back
       begin seq
         gap 3
         gauge_hp
         gap 3
       end
+      gauge_hp_back
     end
     gap 4
     begin par
-      gauge_sp_back
       begin seq
         gap 3
         gauge_sp
         gap 3
       end
+      gauge_sp_back
     end
     gap 4
     begin par
-      gauge_gp_back
       begin seq
         gap 3
         gauge_gp
         gap 3
       end
+      gauge_gp_back
     end
     gap 4
     begin par
-      gauge_fp_back
       begin seq
         gap 3
         gauge_fp
         gap 3
       end
+      gauge_fp_back
     end
     gap 4
     begin par
-      gauge_xp_back
       begin seq
         gap 3
         gauge_xp
         gap 3
       end
+      gauge_xp_back
     end
     gap
     button_help
