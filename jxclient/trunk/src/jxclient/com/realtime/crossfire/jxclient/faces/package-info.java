@@ -21,7 +21,8 @@
 
 /**
  * Manages image information ("faces") needed to display the map view, items,
- * and spell icons. The main class is {@link FacesManager}; it delegates to a
+ * and spell icons. The main class is {@link
+ * com.realtime.crossfire.jxclient.faces.FacesManager}; it delegates to a
  * {@link com.realtime.crossfire.jxclient.faces.FaceCache} instance for caching
  * the face information. The faces are stored in {@link
  * java.lang.ref.SoftReference}s so they can be reclaimed by the garbage

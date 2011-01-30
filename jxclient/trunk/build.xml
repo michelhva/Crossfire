@@ -105,6 +105,7 @@
             <classpath>
                 <pathelement location="lib/annotations.jar"/>
             </classpath>
+            <tag name="noinspection" description="No Inspection:"/>
         </javadoc>
     </target>
     <target name="update-build-properties" description="Updates build.properties.">
