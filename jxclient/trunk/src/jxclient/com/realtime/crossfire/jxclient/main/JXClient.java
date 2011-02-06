@@ -143,7 +143,12 @@ public class JXClient {
                     try {
                         final Writer debugSoundOutputStreamWriter = openDebugStream(options.getDebugSoundFilename());
                         try {
-                            final OptionManager optionManager = new OptionManager(options.getSettings());
+                            final Settings settings = new Settings(Filenames.getSettingsFile());
+                            settings.remove("resolution"); // delete obsolete entry
+                            settings.remove("width"); // delete obsolete entry
+                            settings.remove("height"); // delete obsolete entry
+                            settings.remove("skin"); // delete obsolete entry
+                            final OptionManager optionManager = new OptionManager(settings);
                             final MetaserverModel metaserverModel = new MetaserverModel();
                             final CharacterModel characterModel = new CharacterModel();
                             final Object semaphoreRedraw = new Object();
@@ -199,7 +204,6 @@ public class JXClient {
                                         final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter);
                                         final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
                                         final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
-                                        final Settings settings = options.getSettings();
                                         final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
                                         final GuiFactory guiFactory = new GuiFactory(commands, commandCallback, macros);
                                         final GuiManager guiManager = new GuiManager(guiStateManager, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
