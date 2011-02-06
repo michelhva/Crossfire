@@ -24,11 +24,13 @@ package com.realtime.crossfire.jxclient.gui.textinput;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -107,16 +109,15 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private final StringBuilder text;
 
     /**
-     * The context used to determine character extents.
-     */
-    @NotNull
-    private final FontRenderContext fontRenderContext;
-
-    /**
      * Whether UP and DOWN keys should be checked. If set, these keys cycle
      * through the history.
      */
     private final boolean enableHistory;
+
+    /**
+     * The size of this component.
+     */
+    private final Dimension preferredSize;
 
     /**
      * If set, hide input; else show input.
@@ -146,11 +147,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param enableHistory if set, enable access to command history
      */
-    protected GUIText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean enableHistory) {
-        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
+    protected GUIText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean enableHistory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         this.commandCallback = commandCallback;
         commandHistory = new CommandHistory(name);
         this.activeImage = activeImage;
@@ -161,14 +161,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         this.margin = margin;
         this.text = new StringBuilder(text);
         this.enableHistory = enableHistory;
-        updateResolutionConstant();
-        synchronized (bufferedImageSync) {
-            final Graphics2D g = createBufferGraphics();
-            try {
-                fontRenderContext = g.getFontRenderContext();
-            } finally {
-                g.dispose();
-            }
+        preferredSize = new Dimension(activeImage.getWidth(null), activeImage.getHeight(null));
+        if (!preferredSize.equals(new Dimension(inactiveImage.getWidth(null), inactiveImage.getHeight(null)))) {
+            throw new IllegalArgumentException("active image size differs from inactive image size");
         }
         setCursor(this.text.length());
     }
@@ -188,16 +183,20 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        g2.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+
+        final Graphics2D g2 = (Graphics2D)g;
+        g2.drawImage(GuiUtils.isActive(this) ? activeImage : inactiveImage, 0, 0, null);
         g2.setFont(font);
         final String tmp;
         final int y;
         synchronized (syncCursor) {
             tmp = getDisplayText();
+            final FontRenderContext fontRenderContext = g2.getFontRenderContext();
             final RectangularShape rectangle = font.getStringBounds(tmp, fontRenderContext);
             y = (int)Math.round(getHeight()-rectangle.getMaxY()-rectangle.getMinY())/2;
-            if (isActive()) {
+            if (GuiUtils.isActive(this)) {
                 final String tmpPrefix = tmp.substring(0, cursor-offset);
                 final String tmpCursor = tmp.substring(0, cursor-offset+1);
                 final RectangularShape rectanglePrefix = font.getStringBounds(tmpPrefix, fontRenderContext);
@@ -208,8 +207,35 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 g2.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, getHeight());
             }
         }
-        g2.setColor(isActive() ? activeColor : inactiveColor);
+        g2.setColor(GuiUtils.isActive(this) ? activeColor : inactiveColor);
         g2.drawString(tmp, margin, y);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getPreferredSize() {
+        return new Dimension(preferredSize);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getMinimumSize() {
+        return new Dimension(preferredSize);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getMaximumSize() {
+        return new Dimension(preferredSize);
     }
 
     @NotNull
@@ -233,7 +259,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
-            setActive(true);
+            GuiUtils.setActive(this, true);
             setChanged();
             break;
 
@@ -369,7 +395,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             if (!hideInput) {
                 commandHistory.addCommand(command);
             }
-            setActive(false);
+            GuiUtils.setActive(this, false);
             return true;
 
         case 0x0e:              // CTRL-N
@@ -440,23 +466,28 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     private void setCursor(final int cursor) {
         synchronized (syncCursor) {
-            if (this.cursor < cursor) {
+            if (getGraphics() == null) { // XXX: hack
+                // ignore
+            } else if (this.cursor < cursor) {
                 // cursor moved right
 
                 for (; ;) {
                     final String tmp = getDisplayText();
                     final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                    final RectangularShape rectangleCursor = font.getStringBounds(tmpCursor, fontRenderContext);
-                    final int cursorX = (int)Math.round(rectangleCursor.getWidth());
+                    //                    final RectangularShape rectangleCursor = font.getStringBounds(tmpCursor, fontRenderContext);
+                    final Dimension dimension = GuiUtils.getTextDimension(tmpCursor, font);
+                    //                    final int cursorX = (int)Math.round(rectangleCursor.getWidth());
+                    final int cursorX = dimension.width;
                     if (cursorX < getWidth()) {
                         break;
                     }
 
-                    if (offset+SCROLL_CHARS <= cursor) {
-                        offset += SCROLL_CHARS;
-                    } else {
+                    if (offset+SCROLL_CHARS > cursor) {
                         offset = cursor;
+                        break;
                     }
+
+                    offset += SCROLL_CHARS;
                 }
             } else if (this.cursor > cursor) {
                 // cursor moved left

@@ -28,14 +28,11 @@ import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
-import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
-import com.realtime.crossfire.jxclient.gui.map.GUIMap;
 import com.realtime.crossfire.jxclient.settings.options.Option;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
 import com.realtime.crossfire.jxclient.util.Resolution;
-import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -48,11 +45,6 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class DefaultJXCSkin implements JXCSkin {
-
-    /**
-     * The default number of ground view objects.
-     */
-    private static final int DEFAULT_NUM_LOOK_OBJECTS = 50;
 
     /**
      * The skin name.
@@ -81,11 +73,6 @@ public class DefaultJXCSkin implements JXCSkin {
      * The current screen height.
      */
     private int currentScreenHeight = 0;
-
-    /**
-     * The maximum number of ground view objects.
-     */
-    private int numLookObjects = 0;
 
     /**
      * All "event init" commands in execution order.
@@ -134,18 +121,6 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @NotNull
     private final Collection<String> optionNames = new HashSet<String>();
-
-    /**
-     * The {@link GUIItemList}s that display floor items.
-     */
-    @NotNull
-    private final Collection<GUIItemList> floorLists = new ArrayList<GUIItemList>();
-
-    /**
-     * The {@link GUIMap}s that display maps.
-     */
-    @NotNull
-    private final Collection<GUIMap> maps = new ArrayList<GUIMap>();
 
     /**
      * The tooltip label or <code>null</code>.
@@ -216,41 +191,6 @@ public class DefaultJXCSkin implements JXCSkin {
     @Override
     public Resolution getMaxResolution() {
         return maxResolution;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public Dimension getMapSize() {
-        int width = 1;
-        int height = 1;
-        for (final GUIMap map : maps) {
-            width = Math.max(width, map.getPreferredMapWidth());
-            height = Math.max(height, map.getPreferredMapHeight());
-        }
-        return new Dimension(width, height);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int getNumLookObjects() {
-        if (numLookObjects != 0) {
-            return numLookObjects;
-        }
-
-        int minNumLookObjects = Integer.MAX_VALUE;
-        for (final GUIItemList floorList : floorLists) {
-            minNumLookObjects = Math.min(minNumLookObjects, floorList.getNumLookObjects());
-        }
-        if (minNumLookObjects < Integer.MAX_VALUE) {
-            return minNumLookObjects;
-        }
-
-        return DEFAULT_NUM_LOOK_OBJECTS;
     }
 
     /**
@@ -412,14 +352,6 @@ public class DefaultJXCSkin implements JXCSkin {
     /**
      * {@inheritDoc}
      */
-    @Override
-    public boolean hasChangedDialog() {
-        return dialogs.hasChangedDialog();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public KeyBindings getDefaultKeyBindings() {
@@ -479,13 +411,6 @@ public class DefaultJXCSkin implements JXCSkin {
         }
         currentScreenWidth = newScreenWidth;
         currentScreenHeight = newScreenHeight;
-        for (final GUIElement guiElement : guiElements) {
-            guiElement.updateResolution(newScreenWidth, newScreenHeight);
-        }
-
-        if (tooltipLabel != null) {
-            tooltipLabel.updateResolution(newScreenWidth, newScreenHeight);
-        }
     }
 
     /**
@@ -533,14 +458,6 @@ public class DefaultJXCSkin implements JXCSkin {
     }
 
     /**
-     * Sets the maximum number of ground view objects.
-     * @param numLookObjects the number of objects
-     */
-    public void setNumLookObjects(final int numLookObjects) {
-        this.numLookObjects = numLookObjects;
-    }
-
-    /**
      * Add a new option.
      * @param optionName the option name to add
      * @param documentation the documentation string for the settings
@@ -579,26 +496,6 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     public void addSkinEvent(@NotNull final SkinEvent skinEvent) {
         skinEvents.add(skinEvent);
-    }
-
-    /**
-     * Adds a {@link GUIItemList} element that displays floor items. These
-     * elements are used to calculate the number of floor objects to request
-     * from the Crossfire server.
-     * @param floorList the floor list element
-     */
-    public void addFloorList(@NotNull final GUIItemList floorList) {
-        floorLists.add(floorList);
-    }
-
-    /**
-     * Adds a {@link GUIMap} element that displays a map. These elements are
-     * used to calculate the size of the map view to request from the Crossfire
-     * server.
-     * @param map the map element
-     */
-    public void addMap(@NotNull final GUIMap map) {
-        maps.add(map);
     }
 
 }

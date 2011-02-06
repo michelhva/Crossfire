@@ -20,8 +20,10 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import org.jetbrains.annotations.NotNull;
 
@@ -41,7 +43,7 @@ public class AccountCreateCharacterCommand implements GUICommand {
      * The {@link GUIElement} to find the Gui containing the fields.
      */
     @NotNull
-    private final GUIElement element;
+    private final AbstractGUIElement element;
 
     /**
      * Creates a new instance.
@@ -49,7 +51,7 @@ public class AccountCreateCharacterCommand implements GUICommand {
      * @param button item to link to to find the Gui from which to get
      * information.
      */
-    public AccountCreateCharacterCommand(@NotNull final CommandCallback commandCallback, @NotNull final GUIElement button) {
+    public AccountCreateCharacterCommand(@NotNull final CommandCallback commandCallback, @NotNull final AbstractGUIElement button) {
         this.commandCallback = commandCallback;
         element = button;
     }
@@ -67,7 +69,7 @@ public class AccountCreateCharacterCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        final Gui gui = element.getGui();
+        final Gui gui = GuiUtils.getGui(element);
         if (gui == null) {
             return;
         }

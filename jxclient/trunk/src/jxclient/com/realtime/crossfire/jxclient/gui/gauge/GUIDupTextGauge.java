@@ -23,12 +23,12 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.geom.RectangularShape;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -67,7 +67,6 @@ public class GUIDupTextGauge extends GUIDupGauge {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param pictureFullDiv the top image
      * @param pictureFullMod the bottom image
      * @param pictureEmpty the image for an empty gauge
@@ -77,8 +76,8 @@ public class GUIDupTextGauge extends GUIDupGauge {
      * @param color the text color
      * @param font the text font
      */
-    public GUIDupTextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage pictureFullDiv, final BufferedImage pictureFullMod, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font) {
-        super(tooltipManager, elementListener, name, extent, pictureFullDiv, pictureFullMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix);
+    public GUIDupTextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image pictureFullDiv, final Image pictureFullMod, @NotNull final Image pictureEmpty, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font) {
+        super(tooltipManager, elementListener, name, pictureFullDiv, pictureFullMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix);
         this.color = color;
         this.font = font;
     }
@@ -87,13 +86,9 @@ public class GUIDupTextGauge extends GUIDupGauge {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        super.render(g2);
-
-        if (font == null) {
-            return;
-        }
-
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+        final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
         g2.setColor(color);
         g2.setFont(font);

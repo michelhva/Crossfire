@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.util.Resolution;
-import java.awt.Dimension;
 import java.util.Iterator;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -61,19 +60,6 @@ public interface JXCSkin extends Iterable<Gui> {
      */
     @NotNull
     Resolution getMaxResolution();
-
-    /**
-     * Returns the map size in squares.
-     * @return the map size
-     */
-    @NotNull
-    Dimension getMapSize();
-
-    /**
-     * The number of ground view objects to request from the server.
-     * @return the number of ground view objects
-     */
-    int getNumLookObjects();
 
     /**
      * Returns all gui instances of this skin. The instances has no defined
@@ -168,12 +154,6 @@ public interface JXCSkin extends Iterable<Gui> {
      */
     @NotNull
     CommandList getCommandList(@NotNull String name) throws JXCSkinException;
-
-    /**
-     * Returns whether the dialog state should be saved.
-     * @return whether the dialog state should be saved
-     */
-    boolean hasChangedDialog();
 
     /**
      * Returns the default key bindings for this skin.

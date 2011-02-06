@@ -21,22 +21,19 @@
 
 package com.realtime.crossfire.jxclient.skin.factory;
 
+import com.realtime.crossfire.jxclient.gui.GUIDialogBackground;
 import com.realtime.crossfire.jxclient.gui.GUIDialogTitle;
-import com.realtime.crossfire.jxclient.gui.GUIPicture;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.gui.label.Alignment;
-import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
-import com.realtime.crossfire.jxclient.skin.skin.Expression;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.image.BufferedImage;
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A factory class to create "textbutton" instances.
@@ -48,75 +45,55 @@ public class DialogFactory {
      * The north-west frame picture.
      */
     @NotNull
-    private final BufferedImage frameNW;
+    private final Image frameNW;
 
     /**
      * The north frame picture.
      */
     @NotNull
-    private final BufferedImage frameN;
+    private final Image frameN;
 
     /**
      * The north-east frame picture.
      */
     @NotNull
-    private final BufferedImage frameNE;
+    private final Image frameNE;
 
     /**
      * The west frame picture.
      */
     @NotNull
-    private final BufferedImage frameW;
+    private final Image frameW;
 
     /**
      * The center frame picture.
      */
     @NotNull
-    private final BufferedImage frameC;
+    private final Image frameC;
 
     /**
      * The east frame picture.
      */
     @NotNull
-    private final BufferedImage frameE;
+    private final Image frameE;
 
     /**
      * The south-west frame picture.
      */
     @NotNull
-    private final BufferedImage frameSW;
+    private final Image frameSW;
 
     /**
      * The south frame picture.
      */
     @NotNull
-    private final BufferedImage frameS;
+    private final Image frameS;
 
     /**
      * The south-east frame picture.
      */
     @NotNull
-    private final BufferedImage frameSE;
-
-    /**
-     * The size of the north border in pixels.
-     */
-    private final int sizeN;
-
-    /**
-     * The size of the south border in pixels.
-     */
-    private final int sizeS;
-
-    /**
-     * The size of the west border in pixels.
-     */
-    private final int sizeW;
-
-    /**
-     * The size of the east border in pixels.
-     */
-    private final int sizeE;
+    private final Image frameSE;
 
     /**
      * The font for the dialog title.
@@ -131,31 +108,33 @@ public class DialogFactory {
     /**
      * The background color for the dialog title.
      */
+    @Nullable
     private final Color titleBackgroundColor;
 
     /**
-     * y The alpha value for the dialog background except for the title.
+     * The alpha transparency for the dialog background, 1 is opaque and 0 is
+     * transparent.
      */
-    private final float alpha;
+    private final float frameAlpha;
 
     /**
      * Create a new instance. The border images must have matching sizes.
-     * @param frameNW The north-west frame picture.
-     * @param frameN The north frame picture.
-     * @param frameNE The north-east frame picture.
-     * @param frameW The west frame picture.
-     * @param frameC The center frame picture.
-     * @param frameE The east frame picture.
-     * @param frameSW The south-west frame picture.
-     * @param frameS The south frame picture.
-     * @param frameSE The south-east frame picture.
-     * @param titleFont The font for the dialog title.
-     * @param titleColor The color for the dialog title.
-     * @param titleBackgroundColor The background color for the dialog title.
-     * @param alpha The alpha value for the dialog background except for the
-     * title.
+     * @param frameNW the north-west frame picture
+     * @param frameN the north frame picture
+     * @param frameNE the north-east frame picture
+     * @param frameW the west frame picture
+     * @param frameC the center frame picture
+     * @param frameE the east frame picture
+     * @param frameSW the south-west frame picture
+     * @param frameS the south frame picture
+     * @param frameSE the south-east frame picture
+     * @param titleFont the font for the dialog title
+     * @param titleColor the color for the dialog title
+     * @param titleBackgroundColor the background color for the dialog title
+     * @param frameAlpha the alpha value for the dialog background except for
+     * the title
      */
-    public DialogFactory(@NotNull final BufferedImage frameNW, @NotNull final BufferedImage frameN, @NotNull final BufferedImage frameNE, @NotNull final BufferedImage frameW, @NotNull final BufferedImage frameC, @NotNull final BufferedImage frameE, @NotNull final BufferedImage frameSW, @NotNull final BufferedImage frameS, @NotNull final BufferedImage frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float alpha) {
+    public DialogFactory(@NotNull final Image frameNW, @NotNull final Image frameN, @NotNull final Image frameNE, @NotNull final Image frameW, @NotNull final Image frameC, @NotNull final Image frameE, @NotNull final Image frameSW, @NotNull final Image frameS, @NotNull final Image frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float frameAlpha) {
         this.frameNW = frameNW;
         this.frameN = frameN;
         this.frameNE = frameNE;
@@ -165,10 +144,14 @@ public class DialogFactory {
         this.frameSW = frameSW;
         this.frameS = frameS;
         this.frameSE = frameSE;
-        sizeN = frameN.getHeight(null);
-        sizeS = frameS.getHeight(null);
-        sizeW = frameW.getWidth(null);
-        sizeE = frameE.getWidth(null);
+        this.frameAlpha = frameAlpha;
+        if (frameAlpha < 0F || frameAlpha > 1F) {
+            throw new IllegalArgumentException("alpha transparency should be between 0 and 1 inclusive");
+        }
+        final int sizeN = frameN.getHeight(null);
+        final int sizeS = frameS.getHeight(null);
+        final int sizeW = frameW.getWidth(null);
+        final int sizeE = frameE.getWidth(null);
         if (frameNW.getHeight(null) != sizeN) {
             throw new IllegalArgumentException("height of NW ("+frameNW.getHeight(null)+") does not match height of N ("+sizeN+")");
         }
@@ -209,8 +192,8 @@ public class DialogFactory {
         }
         this.titleFont = titleFont;
         this.titleColor = titleColor;
-        this.titleBackgroundColor = new Color(titleBackgroundColor.getRed(), titleBackgroundColor.getGreen(), titleBackgroundColor.getBlue(), (int)(255*alpha));
-        this.alpha = alpha;
+        final int intAlpha = (int)(255*frameAlpha);
+        this.titleBackgroundColor = intAlpha == 0 ? null : new Color(titleBackgroundColor.getRed(), titleBackgroundColor.getGreen(), titleBackgroundColor.getBlue(), intAlpha);
     }
 
     /**
@@ -218,40 +201,26 @@ public class DialogFactory {
      * @param tooltipManager the tooltip manager to update
      * @param windowRenderer the window renderer the dialog belongs to
      * @param elementListener the element listener to notify
-     * @param name The base name of the dialog's gui elements.
-     * @param w The width of the dialog, including the frames.
-     * @param h The height of the dialog, including the frames.
-     * @param title The dialog's title, or an empty string for no title.
-     * @return The gui elements comprising the new dialog.
+     * @param title the dialog's title, or an empty string for no title
+     * @return the newly created GUI elements
      */
     @NotNull
-    public Iterable<GUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Expression w, @NotNull final Expression h, @NotNull final String title) {
-        final int titleHeight = title.length() > 0 ? 18 : 0;
-        final Collection<GUIElement> result = new ArrayList<GUIElement>();
-        final Expression zeroExpression = new Expression(0, 0, 0);
-        final Expression sizeNExpression = new Expression(sizeN, 0, 0);
-        final Expression sizeSExpression = new Expression(sizeS, 0, 0);
-        final Expression sizeWExpression = new Expression(sizeW, 0, 0);
-        final Expression sizeEExpression = new Expression(sizeE, 0, 0);
-        final Expression titleHeightExpression = new Expression(titleHeight, 0, 0);
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_nw", new Extent(0, 0, sizeW, sizeN), frameNW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_n", new Extent(sizeWExpression, zeroExpression, w.addConstant(-sizeW-sizeE), sizeNExpression), frameN, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_ne", new Extent(w.addConstant(-sizeE), zeroExpression, sizeEExpression, sizeNExpression), frameNE, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_w", new Extent(zeroExpression, sizeNExpression, sizeWExpression, h.addConstant(-sizeN-sizeS)), frameW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_c", new Extent(sizeWExpression, sizeNExpression.addConstant(titleHeight), w.addConstant(-sizeW-sizeE), h.addConstant(-sizeN-sizeS-titleHeight)), frameC, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_e", new Extent(w.addConstant(-sizeE), sizeNExpression, sizeEExpression, h.addConstant(-sizeN-sizeS)), frameE, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_sw", new Extent(zeroExpression, h.addConstant(-sizeS), sizeWExpression, sizeSExpression), frameSW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_s", new Extent(sizeWExpression, h.addConstant(-sizeS), w.addConstant(-sizeW-sizeE), sizeSExpression), frameS, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_se", new Extent(w.addConstant(-sizeE), h.addConstant(-sizeS), sizeEExpression, sizeSExpression), frameSE, alpha));
-        if (titleHeight > 0) {
-            result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, name+"_t", new Extent(sizeWExpression, sizeNExpression, w.addConstant(-sizeW-sizeE), titleHeightExpression), frameC, alpha));
-            if (!title.equals("_")) {
-                final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, elementListener, name+"_title", new Extent(sizeWExpression, sizeNExpression, w.addConstant(-sizeW-sizeE), titleHeightExpression), null, titleFont, titleColor, titleBackgroundColor, Alignment.LEFT, " "+title);
-                result.add(titleLabel);
-                titleLabel.setIgnore();
-            }
+    public Collection<AbstractGUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String title) {
+        final Collection<AbstractGUIElement> result = new ArrayList<AbstractGUIElement>();
+        result.add(new GUIDialogBackground(tooltipManager, elementListener, "dialog_background", this.frameAlpha, frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE));
+
+        if (title.length() > 0) {
+            result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, "dialog_title", titleFont, titleColor, titleBackgroundColor, title));
         }
+
         return result;
     }
 
+    /**
+     * Returns the alpha value for the frame background.
+     * @return alpha value, 1 is opaque and 0 totally transparent
+     */
+    public float getFrameAlpha() {
+        return frameAlpha;
+    }
 }

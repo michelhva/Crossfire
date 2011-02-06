@@ -27,10 +27,11 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Displays a small map view.
@@ -49,6 +50,16 @@ public class GUIMiniMap extends AbstractGUIMap {
      */
     @NotNull
     private final CfMapUpdater mapUpdater;
+
+    /**
+     * The map width in squares.
+     */
+    private final int width;
+
+    /**
+     * The map height in squares.
+     */
+    private final int height;
 
     /**
      * The size of one tile.
@@ -83,13 +94,16 @@ public class GUIMiniMap extends AbstractGUIMap {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param mapUpdater the map updater instance to use
      * @param facesProvider the faces provider for looking up faces
+     * @param width the map width in squares
+     * @param height the map height in squares
      */
-    public GUIMiniMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider) {
-        super(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider);
+    public GUIMiniMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, final int width, final int height) {
+        super(tooltipManager, elementListener, name, mapUpdater, facesProvider);
         this.mapUpdater = mapUpdater;
+        this.width = width;
+        this.height = height;
         tileSize = facesProvider.getSize();
     }
 
@@ -126,6 +140,15 @@ public class GUIMiniMap extends AbstractGUIMap {
         }
         g.setColor(Color.RED);
         g.fillRect(getPlayerX(), getPlayerY(), tileSize, tileSize);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return new Dimension(width*tileSize, height*tileSize);
     }
 
 }

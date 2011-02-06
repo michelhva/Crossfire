@@ -24,12 +24,12 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.geom.RectangularShape;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -48,55 +48,55 @@ public class ItemPainter {
      * The overlay image for cursed objects.
      */
     @Nullable
-    private final BufferedImage cursedImage;
+    private final Image cursedImage;
 
     /**
      * The overlay image for damned objects.
      */
     @Nullable
-    private final BufferedImage damnedImage;
+    private final Image damnedImage;
 
     /**
      * The overlay image for magical objects.
      */
     @Nullable
-    private final BufferedImage magicImage;
+    private final Image magicImage;
 
     /**
      * The overlay image for blessed objects.
      */
     @Nullable
-    private final BufferedImage blessedImage;
+    private final Image blessedImage;
 
     /**
      * The overlay image for applied objects.
      */
     @Nullable
-    private final BufferedImage appliedImage;
+    private final Image appliedImage;
 
     /**
      * The overlay image for unidentified objects.
      */
     @Nullable
-    private final BufferedImage unidentifiedImage;
+    private final Image unidentifiedImage;
 
     /**
      * The overlay image for selected objects.
      */
     @Nullable
-    private final BufferedImage selectorImage;
+    private final Image selectorImage;
 
     /**
      * The overlay image for locked objects.
      */
     @Nullable
-    private final BufferedImage lockedImage;
+    private final Image lockedImage;
 
     /**
      * The overlay image for unpaid objects.
      */
     @Nullable
-    private final BufferedImage unpaidImage;
+    private final Image unpaidImage;
 
     /**
      * The background color for cursed objects.
@@ -165,16 +165,6 @@ public class ItemPainter {
     private final Color nrofColor;
 
     /**
-     * The item's width in pixel.
-     */
-    private final int w;
-
-    /**
-     * The item's height in pixel.
-     */
-    private final int h;
-
-    /**
      * Creates a new instance.
      * @param cursedImage the overlay image for cursed objects
      * @param damnedImage the overlay image for damned objects
@@ -196,10 +186,8 @@ public class ItemPainter {
      * @param unpaidColor the background color for unpaid objects
      * @param font the font for nrof information
      * @param nrofColor the color for nrof information
-     * @param w the item's width in pixel
-     * @param h the item's height in pixel
      */
-    public ItemPainter(@Nullable final BufferedImage cursedImage, @Nullable final BufferedImage damnedImage, @Nullable final BufferedImage magicImage, @Nullable final BufferedImage blessedImage, @Nullable final BufferedImage appliedImage, @Nullable final BufferedImage unidentifiedImage, @Nullable final BufferedImage selectorImage, @Nullable final BufferedImage lockedImage, @Nullable final BufferedImage unpaidImage, @Nullable final Color cursedColor, @Nullable final Color damnedColor, @Nullable final Color magicColor, @Nullable final Color blessedColor, @Nullable final Color appliedColor, @Nullable final Color unidentifiedColor, @Nullable final Color selectorColor, @Nullable final Color lockedColor, @Nullable final Color unpaidColor, @NotNull final Font font, @NotNull final Color nrofColor, final int w, final int h) {
+    public ItemPainter(@Nullable final Image cursedImage, @Nullable final Image damnedImage, @Nullable final Image magicImage, @Nullable final Image blessedImage, @Nullable final Image appliedImage, @Nullable final Image unidentifiedImage, @Nullable final Image selectorImage, @Nullable final Image lockedImage, @Nullable final Image unpaidImage, @Nullable final Color cursedColor, @Nullable final Color damnedColor, @Nullable final Color magicColor, @Nullable final Color blessedColor, @Nullable final Color appliedColor, @Nullable final Color unidentifiedColor, @Nullable final Color selectorColor, @Nullable final Color lockedColor, @Nullable final Color unpaidColor, @NotNull final Font font, @NotNull final Color nrofColor) {
         this.cursedImage = cursedImage;
         this.damnedImage = damnedImage;
         this.magicImage = magicImage;
@@ -220,20 +208,54 @@ public class ItemPainter {
         this.unpaidColor = unpaidColor;
         this.font = font;
         this.nrofColor = nrofColor;
-        this.w = w;
-        this.h = h;
     }
 
     /**
      * Creates a new instance having the same parameters as this instance except
      * for the item's size.
-     * @param w the item's width in pixel
-     * @param h the item's height in pixel
      * @return the new instance
      */
     @NotNull
-    public ItemPainter newItemPainter(final int w, final int h) {
-        return new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, unidentifiedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, unidentifiedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
+    public ItemPainter newItemPainter() {
+        return new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, unidentifiedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, unidentifiedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor);
+    }
+
+    /**
+     * Returns the minimal size needed to display this item.
+     * @return the minimal size
+     */
+    @NotNull
+    public Dimension getMinimumSize() {
+        final Dimension dimension = new Dimension(32, 32);
+        updateMinimumSize(dimension, appliedImage);
+        updateMinimumSize(dimension, unidentifiedImage);
+        updateMinimumSize(dimension, cursedImage);
+        updateMinimumSize(dimension, magicImage);
+        updateMinimumSize(dimension, blessedImage);
+        updateMinimumSize(dimension, lockedImage);
+        updateMinimumSize(dimension, unpaidImage);
+        return dimension;
+    }
+
+    /**
+     * Updates the minimum size to contain an image.
+     * @param minimumSize the minimum size
+     * @param image the image
+     */
+    private static void updateMinimumSize(@NotNull final Dimension minimumSize, @Nullable final Image image) {
+        if (image == null) {
+            return;
+        }
+
+        final int width = image.getWidth(null);
+        if (minimumSize.width < width) {
+            minimumSize.width = width;
+        }
+
+        final int height = image.getWidth(null);
+        if (minimumSize.height < height) {
+            minimumSize.height = height;
+        }
     }
 
     /**
@@ -242,17 +264,19 @@ public class ItemPainter {
      * @param item the item
      * @param selected whether the item is selected
      * @param face the item's face
+     * @param w the item's width in pixel
+     * @param h the item's height in pixel
      */
-    public void paint(@NotNull final Graphics2D g, @NotNull final CfItem item, final boolean selected, @NotNull final Image face) {
-        paintColor(g, appliedColor, item.isApplied());
-        paintColor(g, unidentifiedColor, item.isUnidentified());
-        paintColor(g, cursedColor, item.isCursed());
-        paintColor(g, damnedColor, item.isDamned());
-        paintColor(g, magicColor, item.isMagic());
-        paintColor(g, blessedColor, item.isBlessed());
-        paintColor(g, lockedColor, item.isLocked());
-        paintColor(g, selectorColor, selected);
-        paintColor(g, unpaidColor, item.isUnpaid());
+    public void paint(@NotNull final Graphics2D g, @NotNull final CfItem item, final boolean selected, @NotNull final Image face, final int w, final int h) {
+        paintColor(g, appliedColor, item.isApplied(), w, h);
+        paintColor(g, unidentifiedColor, item.isUnidentified(), w, h);
+        paintColor(g, cursedColor, item.isCursed(), w, h);
+        paintColor(g, damnedColor, item.isDamned(), w, h);
+        paintColor(g, magicColor, item.isMagic(), w, h);
+        paintColor(g, blessedColor, item.isBlessed(), w, h);
+        paintColor(g, lockedColor, item.isLocked(), w, h);
+        paintColor(g, selectorColor, selected, w, h);
+        paintColor(g, unpaidColor, item.isUnpaid(), w, h);
         final int imageW = Math.max(0, face.getWidth(null));
         final int imageH = Math.max(0, face.getHeight(null));
         final int scaledW;
@@ -300,8 +324,10 @@ public class ItemPainter {
      * @param g the context to paint into
      * @param color the color to use
      * @param isActive whether painting should be done at all
+     * @param w the item's width in pixel
+     * @param h the item's height in pixel
      */
-    private void paintColor(@NotNull final Graphics g, @Nullable final Color color, final boolean isActive) {
+    private static void paintColor(@NotNull final Graphics g, @Nullable final Color color, final boolean isActive, final int w, final int h) {
         if (isActive && color != null) {
             g.setColor(color);
             g.fillRect(0, 0, w, h);

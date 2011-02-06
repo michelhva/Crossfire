@@ -23,14 +23,19 @@ package com.realtime.crossfire.jxclient.gui.button;
 
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
+import java.awt.font.FontRenderContext;
 import java.awt.geom.RectangularShape;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link com.realtime.crossfire.jxclient.gui.gui.GUIElement GUIElement} that
@@ -78,11 +83,16 @@ public class GUITextButton extends AbstractButton {
     private final Color color;
 
     /**
+     * The preferred size of this component.
+     */
+    @NotNull
+    private final Dimension preferredSize;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param up the images comprising the "up" button state
      * @param down the images comprising the "down" button state
      * @param text the button text
@@ -92,28 +102,22 @@ public class GUITextButton extends AbstractButton {
      * pressed
      * @param commandList the commands to execute when the button is selected
      */
-    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT, autoRepeat, commandList);
-        final int w = extent.getConstantW();
-        final int h = extent.getConstantH();
-        if (up.getHeight() != h) {
-            throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);
+    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final CommandList commandList) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, autoRepeat, commandList);
+        final int preferredHeight = up.getHeight();
+        if (preferredHeight != down.getHeight()) {
+            throw new IllegalArgumentException("'up' state height is "+preferredHeight+" but 'down' state height is "+down.getHeight());
         }
-        if (down.getHeight() != h) {
-            throw new IllegalArgumentException("'down' state is height "+up.getHeight()+" but button height is "+h);
-        }
-        if (up.getMinimumWidth() > w) {
-            throw new IllegalArgumentException("minimum width in 'up' state is "+up.getMinimumWidth()+" but button width is "+w);
-        }
-        if (down.getMinimumWidth() > w) {
-            throw new IllegalArgumentException("minimum width in 'down' state is "+down.getMinimumWidth()+" but button width is "+w);
-        }
-
         this.up = up;
         this.down = down;
         this.text = text;
         this.font = font;
         this.color = color;
+        preferredSize = GuiUtils.getTextDimension(text, font);
+        if (preferredSize.height < preferredHeight) {
+            preferredSize.height = preferredHeight;
+        }
+        preferredSize.width += 12;
     }
 
     /**
@@ -128,13 +132,37 @@ public class GUITextButton extends AbstractButton {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+        final Graphics2D g2 = (Graphics2D)g;
         g2.setFont(font);
         g2.setColor(color);
-        (isActive() ? down : up).render(g2, getWidth());
-        final RectangularShape rectangle = font.getStringBounds(text, g2.getFontRenderContext());
-        final int y = (int)Math.round(getHeight()-rectangle.getMaxY()-rectangle.getMinY())/2;
-        g2.drawString(text, (int)Math.round((getWidth()-rectangle.getWidth())/2), y);
+        final int width = getWidth();
+        (GuiUtils.isActive(this) ? down : up).render(g2, width);
+        final FontRenderContext fontRenderContext = g2.getFontRenderContext();
+        final RectangularShape rectangle = font.getStringBounds(text, fontRenderContext);
+        final int x = (int)Math.round((width-rectangle.getWidth())/2);
+        final FontMetrics fontMetrics = g2.getFontMetrics();
+        final int y = (int)Math.round(preferredSize.height-rectangle.getHeight())/2+fontMetrics.getAscent();
+        g2.drawString(text, x, y);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    protected Dimension getMinimumSizeInt() {
+        return new Dimension(preferredSize);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMaximumSize() {
+        return new Dimension(Integer.MAX_VALUE, preferredSize.height);
     }
 
 }

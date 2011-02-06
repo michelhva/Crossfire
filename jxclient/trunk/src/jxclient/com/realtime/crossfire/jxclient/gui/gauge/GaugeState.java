@@ -21,9 +21,9 @@
 
 package com.realtime.crossfire.jxclient.gui.gauge;
 
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -37,13 +37,19 @@ public class GaugeState {
      * The image representing a full gauge.
      */
     @Nullable
-    private final BufferedImage fullImage;
+    private final Image fullImage;
 
     /**
      * The image representing a more-than-empty gauge.
      */
     @Nullable
-    private final BufferedImage negativeImage;
+    private final Image negativeImage;
+
+    /**
+     * The preferred size of this component.
+     */
+    @NotNull
+    private final Dimension preferredSize;
 
     /**
      * The x-offset for drawing.
@@ -53,7 +59,7 @@ public class GaugeState {
     /**
      * The y-offset for drawing.
      */
-    private final int dy;
+    private int dy;
 
     /**
      * The width of the "filled" area.
@@ -89,10 +95,21 @@ public class GaugeState {
      * @param dx the x-offset for drawing
      * @param dy the y-offset for drawing
      */
-    public GaugeState(@Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, final int dx, final int dy) {
+    public GaugeState(@Nullable final Image fullImage, @Nullable final Image negativeImage, final int dx, final int dy) {
         this.fullImage = fullImage;
         this.negativeImage = negativeImage;
+        final int preferredWidth = Math.max(Math.max(fullImage == null ? 1 : fullImage.getWidth(null), negativeImage == null ? 1 : negativeImage.getWidth(null)), 1);
+        final int preferredHeight = Math.max(Math.max(fullImage == null ? 1 : fullImage.getHeight(null), negativeImage == null ? 1 : negativeImage.getHeight(null)), 1);
+        preferredSize = new Dimension(preferredWidth, preferredHeight);
         this.dx = dx;
+        this.dy = dy;
+    }
+
+    /**
+     * Sets the y-offset for drawing.
+     * @param dy the y-offset for drawing
+     */
+    public void setDy(final int dy) {
         this.dy = dy;
     }
 
@@ -128,6 +145,15 @@ public class GaugeState {
         if (filledPicture != null) {
             g.drawImage(filledPicture, filledX+dx, filledY+dy, filledX+dx+filledW, filledY+dy+filledH, filledX, filledY, filledX+filledW, filledY+filledH, null);
         }
+    }
+
+    /**
+     * Returns the preferred size.
+     * @return the preferred size
+     */
+    @NotNull
+    public Dimension getPreferredSize() {
+        return new Dimension(preferredSize);
     }
 
 }

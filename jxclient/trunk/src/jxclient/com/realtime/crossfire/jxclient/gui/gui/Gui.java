@@ -28,15 +28,14 @@ import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
+import com.realtime.crossfire.jxclient.skin.skin.Expression;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
-import java.awt.Color;
 import java.awt.Component;
-import java.awt.Container;
-import java.awt.Graphics;
+import java.awt.Dimension;
 import java.awt.event.KeyEvent;
 import java.util.Collection;
 import java.util.EnumSet;
-import java.util.concurrent.CopyOnWriteArrayList;
+import javax.swing.JComponent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -47,25 +46,12 @@ import org.jetbrains.annotations.Nullable;
  * lower dialogs.
  * @author Andreas Kirschbaum
  */
-public class Gui extends Container {
+public class Gui extends JComponent {
 
     /**
      * The serial version UID.
      */
     private static final long serialVersionUID = 1L;
-
-    /**
-     * The {@link MouseTracker} if in GUI debug mode or <code>null</code>
-     * otherwise.
-     */
-    @Nullable
-    private final MouseTracker mouseTracker;
-
-    /**
-     * The list of {@link GUIElement}s comprising this gui.
-     */
-    @NotNull
-    private final Collection<GUIElement> visibleElements = new CopyOnWriteArrayList<GUIElement>();
 
     /**
      * The {@link KeyBindings} for this gui.
@@ -74,10 +60,16 @@ public class Gui extends Container {
     private final KeyBindings keyBindings;
 
     /**
-     * Whether this dialog is auto-sizing. Auto-sizing dialogs cannot be moved
-     * or resized manually.
+     * The extent of the dialog if it is auto-sizing or <code>null</code>
+     * otherwise. Auto-sizing dialogs cannot be moved or resized manually.
      */
-    private boolean autoSize = false;
+    @Nullable
+    private Extent autoSize = null;
+
+    /**
+     * Whether this dialog retains its position across restarts.
+     */
+    private boolean saveDialog = false;
 
     /**
      * Whether this dialog is modal. Modal dialogs consume all key presses.
@@ -115,17 +107,6 @@ public class Gui extends Container {
     private boolean initialPositionSet = false;
 
     /**
-     * The extent of this dialog, or <code>null</code>.
-     */
-    @Nullable
-    private Extent extent = null;
-
-    /**
-     * Whether the state (position or size) has changed.
-     */
-    private boolean stateChanged = false;
-
-    /**
      * If set, the auto-close listener to notify if this dialog looses the
      * active gui element.
      */
@@ -133,24 +114,27 @@ public class Gui extends Container {
     private GuiAutoCloseListener guiAutoCloseListener = null;
 
     /**
+     * The default x-coordinate for this dialog. Set to <code>null</code> for
+     * default.
+     */
+    @Nullable
+    private Expression defaultX = null;
+
+    /**
+     * The default y-coordinate for this dialog. Set to <code>null</code> for
+     * default.
+     */
+    @Nullable
+    private Expression defaultY = null;
+
+    /**
      * Creates a new instance.
-     * @param mouseTracker the mouse tracker when in debug GUI mode or
-     * <code>null</code> otherwise
      * @param commands the commands instance for executing commands
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public Gui(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
-        this.mouseTracker = mouseTracker;
+    public Gui(@NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         keyBindings = new KeyBindings(null, commands, commandCallback, macros);
-    }
-
-    /**
-     * Sets the extent of this dialog.
-     * @param extent the extent
-     */
-    public void setExtent(@NotNull final Extent extent) {
-        this.extent = extent;
     }
 
     /**
@@ -159,18 +143,13 @@ public class Gui extends Container {
      * @param height the height
      */
     @Override
-    public void setSize(final int width, final int height) {
-        if (width <= 0 || height <= 0) {
-            throw new IllegalArgumentException();
-        }
-
-        if (getWidth() == width && getHeight() == height) {
+    public void setBounds(final int x, final int y, final int width, final int height) {
+        if (getX() == x && getY() == y && getWidth() == width && getHeight() == height) {
             return;
         }
 
-        super.setSize(width, height);
+        super.setBounds(x, y, width, height);
         hasChangedElements = true;
-        stateChanged = true;
     }
 
     /**
@@ -190,24 +169,24 @@ public class Gui extends Container {
         initialPositionSet = true;
         setLocation(x, y);
         hasChangedElements = true;
-        stateChanged = true;
     }
 
     /**
      * Sets the auto-size state. Auto-size dialogs cannot be moved or resized
      * manually.
-     * @param autoSize the new auto-size state
+     * @param autoSize the new auto-size or <code>null</code>
      */
-    public void setAutoSize(final boolean autoSize) {
+    public void setAutoSize(@Nullable final Extent autoSize) {
         this.autoSize = autoSize;
     }
 
     /**
      * Returns the auto-size state. Auto-size dialogs cannot be moved or resized
      * manually.
-     * @return the auto-size state
+     * @return the auto-size or <code>null</code>
      */
-    public boolean isAutoSize() {
+    @Nullable
+    public Extent getAutoSize() {
         return autoSize;
     }
 
@@ -228,52 +207,6 @@ public class Gui extends Container {
     }
 
     /**
-     * Adds a {@link GUIElement} to this gui. The element must not be added to
-     * more than one gui at a time.
-     * @param element the <code>GUIElement</code> to add
-     */
-    public void addElement(@NotNull final GUIElement element) {
-        if (element.getGui() != null) {
-            throw new IllegalArgumentException();
-        }
-
-        updateVisibleElement(element);
-        element.setGui(this);
-    }
-
-    /**
-     * Repaints the gui and clear the changed flags of all repainted elements.
-     * @param g the <code>Graphics</code> to paint into
-     */
-    public void redraw(@NotNull final Graphics g) {
-        if (mouseTracker != null) {
-            final Component mouseElement = mouseTracker.getMouseElement();
-            final long t0 = System.currentTimeMillis();
-
-            hasChangedElements = false;
-            for (final GUIElement element : visibleElements) {
-                element.paintComponent(g);
-                g.setColor(element == mouseElement ? Color.RED : Color.WHITE);
-                g.drawRect(element.getElementX(), element.getElementY(), element.getWidth()-1, element.getHeight()-1);
-            }
-
-            final long t1 = System.currentTimeMillis();
-            g.setColor(Color.black);
-            g.fillRect(12, 36, 200, 36);
-            g.setColor(Color.YELLOW);
-            if (mouseElement != null) {
-                g.drawString(mouseElement.getName(), 16, 48);
-            }
-            g.drawString((t1-t0)+"ms", 16, 64);
-        } else {
-            hasChangedElements = false;
-            for (final GUIElement element : visibleElements) {
-                element.paintComponent(g);
-            }
-        }
-    }
-
-    /**
      * Checks whether any visible gui element of this gui has been changed since
      * it was painted last time.
      * @return <code>true</code> if any gui element has changed;
@@ -289,9 +222,14 @@ public class Gui extends Container {
      */
     @Nullable
     private GUIElement getDefaultElement() {
-        for (final GUIElement element : visibleElements) {
-            if (element.isDefault()) {
-                return element;
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                if (element.isDefault()) {
+                    return element;
+                }
             }
         }
 
@@ -305,7 +243,7 @@ public class Gui extends Container {
         final Object defaultElement = getDefaultElement();
         if (defaultElement != null && defaultElement instanceof ActivatableGUIElement) {
             final ActivatableGUIElement activatableDefaultElement = (ActivatableGUIElement)defaultElement;
-            activatableDefaultElement.setActive(true);
+            GuiUtils.setActive(activatableDefaultElement, true);
         }
     }
 
@@ -319,9 +257,14 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
-        for (final Component element : visibleElements) {
-            if (class_.isAssignableFrom(element.getClass()) && element.getName().endsWith(ending)) {
-                return class_.cast(element);
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                if (class_.isAssignableFrom(element.getClass()) && element.getName().endsWith(ending)) {
+                    return class_.cast(element);
+                }
             }
         }
 
@@ -338,9 +281,14 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementNotEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
-        for (final Component element : visibleElements) {
-            if (class_.isAssignableFrom(element.getClass()) && !element.getName().endsWith(ending)) {
-                return class_.cast(element);
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                if (class_.isAssignableFrom(element.getClass()) && !element.getName().endsWith(ending)) {
+                    return class_.cast(element);
+                }
             }
         }
 
@@ -354,9 +302,14 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_) {
-        for (final Object element : visibleElements) {
-            if (class_.isAssignableFrom(element.getClass())) {
-                return class_.cast(element);
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                if (class_.isAssignableFrom(element.getClass())) {
+                    return class_.cast(element);
+                }
             }
         }
 
@@ -371,15 +324,15 @@ public class Gui extends Container {
      *         <code>null</code> if none was found
      */
     @Nullable
-    public GUIElement getElementFromPoint(final int x, final int y) {
-        GUIElement elected = null;
-        for (final GUIElement element : visibleElements) {
-            if (element.isElementAtPoint(x, y)) {
-                elected = element;
+    public AbstractGUIElement getElementFromPoint(final int x, final int y) {
+        Component component = findComponentAt(x, y);
+        while (component != null) {
+            if (component instanceof AbstractGUIElement) {
+                return (AbstractGUIElement)component;
             }
+            component = component.getParent();
         }
-
-        return elected;
+        return null;
     }
 
     /**
@@ -500,7 +453,7 @@ public class Gui extends Container {
     private GUIText activateFirstTextArea() {
         final GUIText textArea = getFirstElement(GUIText.class);
         if (textArea != null) {
-            textArea.setActive(true);
+            GuiUtils.setActive(textArea, true);
         }
         return textArea;
     }
@@ -535,13 +488,13 @@ public class Gui extends Container {
             return false;
         }
 
-        final Component textArea = activeElement;
+        final GUIElement textArea = activeElement;
         if (!textArea.getName().equals("command")) {
             return false;
         }
 
         assert activeElement != null;
-        activeElement.setActive(false);
+        GuiUtils.setActive(activeElement, false);
         return true;
     }
 
@@ -554,9 +507,14 @@ public class Gui extends Container {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_, @NotNull final String name) {
-        for (final Component element : visibleElements) {
-            if (class_.isAssignableFrom(element.getClass()) && element.getName().equals(name)) {
-                return class_.cast(element);
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                if (class_.isAssignableFrom(element.getClass()) && element.getName().equals(name)) {
+                    return class_.cast(element);
+                }
             }
         }
         return null;
@@ -606,14 +564,6 @@ public class Gui extends Container {
     }
 
     /**
-     * Sets whether the state (position or size) has changed.
-     * @param stateChanged whether the state has changed
-     */
-    public void setStateChanged(final boolean stateChanged) {
-        this.stateChanged = stateChanged;
-    }
-
-    /**
      * Enables or disables hidden text in the first input field.
      * @param hideInput if set, hide input; else show input
      */
@@ -625,20 +575,6 @@ public class Gui extends Container {
     }
 
     /**
-     * Adds or removes a {@link GUIElement} from this gui. The gui element is
-     * added if it is visible or removed if it is invisible.
-     * @param element the gui element
-     */
-    public void updateVisibleElement(@NotNull final GUIElement element) {
-        if (element.isElementVisible()) {
-            visibleElements.add(element);
-        } else {
-            visibleElements.remove(element);
-        }
-        hasChangedElements = true;
-    }
-
-    /**
      * Returns whether a given point is within this dialog's drawing area.
      * @param x the x-coordinate of the the point
      * @param y the y-coordinate of the the point
@@ -646,14 +582,6 @@ public class Gui extends Container {
      */
     public boolean isWithinDrawingArea(final int x, final int y) {
         return getX() <= x && x < getX()+getWidth() && getY() <= y && y < getY()+getHeight();
-    }
-
-    /**
-     * Returns whether this dialog has changed from its default state.
-     * @return whether the state has changed
-     */
-    public boolean isChangedFromDefault() {
-        return getName() != null && getWidth() > 0 && getHeight() > 0 && stateChanged;
     }
 
     /**
@@ -681,17 +609,83 @@ public class Gui extends Container {
      * @param screenHeight the screen height
      */
     public void autoSize(final int screenWidth, final int screenHeight) {
-        if (!autoSize && initialPositionSet) {
-            return;
-        }
-
-        final Extent tmpExtent = extent;
-        if (tmpExtent != null) {
-            setSize(tmpExtent.getW(screenWidth, screenHeight), tmpExtent.getH(screenWidth, screenHeight));
-            setPosition(tmpExtent.getX(screenWidth, screenHeight), tmpExtent.getY(screenWidth, screenHeight));
+        final Extent extent = autoSize;
+        if (extent != null) {
+            final Dimension preferredSize = getPreferredSize();
+            setBounds(extent.getX(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getY(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getW(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getH(screenWidth, screenHeight, preferredSize.width, preferredSize.height));
         } else if (!initialPositionSet) {
-            setPosition(0, 0);
+            final Dimension preferredSize = getPreferredSize();
+            final int x;
+            if (defaultX == null) {
+                x = (screenWidth-preferredSize.width)/2;
+            } else {
+                x = defaultX.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
+            }
+            final int y;
+            if (defaultY == null) {
+                y = (screenHeight-preferredSize.height)/2;
+            } else {
+                y = defaultY.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
+            }
+            setSize(preferredSize.width, preferredSize.height);
+            if (defaultX != null && defaultY != null) {
+                setPosition(x-preferredSize.width/2, y-preferredSize.height/2);
+            }
         }
+    }
+
+    /**
+     * Sets the default position for this dialog.
+     * @param defaultX the default x-coordinate
+     * @param defaultY the default y-coordinate
+     */
+    public void setDefaultPosition(@NotNull final Expression defaultX, @NotNull final Expression defaultY) {
+        this.defaultX = defaultX;
+        this.defaultY = defaultY;
+    }
+
+    /**
+     * Returns whether this dialog retains its position across restarts.
+     * @return whether this dialog retains its position across restarts
+     */
+    public boolean isSaveDialog() {
+        return saveDialog;
+    }
+
+    /**
+     * Makes this dialog retain its position across restarts.
+     */
+    public void setSaveDialog() {
+        saveDialog = true;
+    }
+
+    /**
+     * Sets the position of a dialog but makes sure the dialog is fully
+     * visible.
+     * @param x the dialog's x coordinate
+     * @param y the dialog's y coordinate
+     * @param windowWidth the main window's width
+     * @param windowHeight the main window's height
+     */
+    public void showDialog(final int x, final int y, final int windowWidth, final int windowHeight) {
+        final int newX;
+        final int newY;
+        if (autoSize != null) {
+            newX = x;
+            newY = y;
+        } else {
+            newX = Math.max(Math.min(x, windowWidth-getWidth()), 0);
+            newY = Math.max(Math.min(y, windowHeight-getHeight()), 0);
+        }
+        setPosition(newX, newY);
+    }
+
+    /**
+     * Resizes the dialog to make all components visible.
+     */
+    public void resizeDialog() {
+     //   setSize(getPreferredSize());
+        revalidate();
     }
 
 }

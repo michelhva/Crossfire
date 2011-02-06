@@ -22,13 +22,12 @@
 package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.font.FontRenderContext;
-import java.awt.geom.RectangularShape;
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.Reader;
@@ -71,7 +70,6 @@ public class GUIHTMLLabel extends AbstractLabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param backgroundPicture the optional background picture
      * @param font the text font
      * @param color the text color
@@ -79,8 +77,8 @@ public class GUIHTMLLabel extends AbstractLabel {
      * picture is set
      * @param text the text
      */
-    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage backgroundPicture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, extent, text, font, color, backgroundPicture, backgroundColor);
+    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage backgroundPicture, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, @NotNull final String text) {
+        super(tooltipManager, elementListener, name, text, font, color, backgroundPicture, backgroundColor);
     }
 
     /**
@@ -109,16 +107,16 @@ public class GUIHTMLLabel extends AbstractLabel {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        super.render(g2);
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
 
         final Font font = getTextFont();
         final Color color = getTextColor();
-        g2.setFont(font);
-        g2.setColor(color);
+        g.setFont(font);
+        g.setColor(color);
 
         final Reader reader = new StringReader(getText());
-        final HTMLEditorKit.ParserCallback renderer = new InternalHTMLRenderer(font, color, g2, 0, font.getSize(), autoResize ? AUTO_BORDER_SIZE : 0);
+        final HTMLEditorKit.ParserCallback renderer = new InternalHTMLRenderer(font, color, g, 0, font.getSize(), autoResize ? AUTO_BORDER_SIZE : 0);
         final ParserDelegator parserDelegator = new ParserDelegator();
         try {
             parserDelegator.parse(reader, renderer, false);
@@ -135,35 +133,32 @@ public class GUIHTMLLabel extends AbstractLabel {
             return;
         }
 
-        synchronized (bufferedImageSync) {
-            if (!hasBufferedImage()) {
-                return;
-            }
-
-            final Graphics2D g = createBufferGraphics();
-            try {
-                final FontRenderContext context = g.getFontRenderContext();
-                int width = 0;
-                int height = 0;
-                for (final String str : PATTERN_LINE_BREAK.split(getText(), -1)) {
-                    final RectangularShape size = getTextFont().getStringBounds(str, context);
-                    width = Math.max(width, (int)size.getWidth());
-                    height += (int)size.getHeight();
-                }
-                setElementSize(Math.max(1, width+2*AUTO_BORDER_SIZE), Math.max(1, height+2*AUTO_BORDER_SIZE));
-            } finally {
-                g.dispose();
-            }
+        int width = 0;
+        int height = 0;
+        for (final String str : PATTERN_LINE_BREAK.split(getText(), -1)) {
+            final Dimension size = GuiUtils.getTextDimension(str, getTextFont());
+            width = Math.max(width, size.width);
+            height += size.height;
         }
+        setSize(Math.max(1, width+2*AUTO_BORDER_SIZE), Math.max(1, height+2*AUTO_BORDER_SIZE));
     }
 
     /**
      * {@inheritDoc}
      */
+    @Nullable
     @Override
-    public void updateResolution(final int screenWidth, final int screenHeight) {
-        super.updateResolution(screenWidth, screenHeight);
-        autoResize();
+    public Dimension getPreferredSize() {
+        return new Dimension(100, 32); // XXX
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return new Dimension(100, 32); // XXX
     }
 
 }

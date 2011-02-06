@@ -1,7 +1,7 @@
-dialog border WIDTH/2-400 HEIGHT/2-200 400 200 true Characters for the account
+dialog WIDTH/2 HEIGHT/2 false Characters for the account
 dialog_hide START META PLAYING NEWCHAR LOGIN
 
-character_list characters 20 20 360 140 150 20 font_metaurl
+character_list characters 150 20 font_metaurl
 
 commandlist command_account_character_play AND characters ACCOUNT_PLAY
 commandlist command_account_character_link AND null DIALOG_OPEN account_link
@@ -9,9 +9,9 @@ commandlist_add command_account_character_link null DIALOG_CLOSE account_charact
 commandlist command_account_character_new AND null DIALOG_OPEN account_character_new
 commandlist_add command_account_character_new null DIALOG_CLOSE account_characters
 
-textbutton account_do_login 25 170 100 18 false command_account_character_play Play
-textbutton account_do_link 150 170 100 18 false command_account_character_link Link
-textbutton account_do_new 275 170 100 18 false command_account_character_new New
+textbutton account_do_login false command_account_character_play Play
+textbutton account_do_link  false command_account_character_link Link
+textbutton account_do_new   false command_account_character_new  New
 
 set_default account_do_login
 
@@ -27,3 +27,33 @@ key code DOWN      0 exec command_accountlist_next
 key code KP_DOWN   0 exec command_accountlist_next
 key code PAGE_UP   0 exec command_accountlist_pageup
 key code PAGE_DOWN 0 exec command_accountlist_pagedown
+
+horizontal begin par
+  begin seq
+    gap 8
+    characters
+    gap 8
+  end
+  begin seq
+    gap
+    account_do_login
+    gap 8
+    account_do_link
+    gap 8
+    account_do_new
+    gap
+  end
+end
+
+vertical begin seq
+  gap 8
+  characters
+  gap 8
+  begin par
+    account_do_login
+    account_do_link
+    account_do_new
+  end
+end
+
+link_size horizontal account_do_login account_do_link account_do_new

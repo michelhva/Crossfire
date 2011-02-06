@@ -101,8 +101,11 @@ public class RenderStateManager {
         this.renderStateListener = renderStateListener;
         this.buffer = buffer;
         this.buffer.addBufferListener(bufferListener);
-        renderState.setHeight(buffer, renderStateListener.getHeight());
         fireChanges();
+    }
+
+    public void setHeight(final int height) {
+        renderState.setHeight(buffer, height);
     }
 
     public void dispose() {

@@ -33,12 +33,12 @@ import com.realtime.crossfire.jxclient.shortcuts.ShortcutSpell;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutVisitor;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutsListener;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -120,16 +120,6 @@ public class GUIItemShortcut extends GUIItem {
     private final CurrentSpellManager currentSpellManager;
 
     /**
-     * The item's width in pixel.
-     */
-    private final int w;
-
-    /**
-     * The item's height in pixel.
-     */
-    private final int h;
-
-    /**
      * The currently monitored {@link Shortcut} instance. Set to
      * <code>null</code> if not active.
      */
@@ -189,7 +179,6 @@ public class GUIItemShortcut extends GUIItem {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param castColor the background color for shortcuts that /cast a spell
      * @param castImage the overlay image for shortcuts that /cast a spell
      * @param invokeColor the background color for shortcuts that /invoke a
@@ -202,8 +191,8 @@ public class GUIItemShortcut extends GUIItem {
      * @param currentSpellManager the current spell manager for tracking the
      * active spell
      */
-    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final Color castColor, @Nullable final Image castImage, @Nullable final Color invokeColor, @Nullable final Image invokeImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager) {
-        super(tooltipManager, elementListener, name, extent);
+    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Color castColor, @Nullable final Image castImage, @Nullable final Color invokeColor, @Nullable final Image invokeImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager) {
+        super(tooltipManager, elementListener, name);
         this.shortcuts = shortcuts;
         this.facesManager = facesManager;
         this.castColor = castColor;
@@ -214,8 +203,6 @@ public class GUIItemShortcut extends GUIItem {
         this.index = index;
         this.currentSpellManager = currentSpellManager;
         this.shortcuts.addShortcutsListener(shortcutsListener);
-        w = extent.getConstantW();
-        h = extent.getConstantH();
         this.facesManager.addFacesManagerListener(facesManagerListener);
         updateTooltipText();
     }
@@ -291,9 +278,11 @@ public class GUIItemShortcut extends GUIItem {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        g2.setBackground(BACKGROUND_COLOR);
-        g2.clearRect(0, 0, getWidth(), getHeight());
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+
+        g.setColor(BACKGROUND_COLOR);
+        g.fillRect(0, 0, getWidth(), getHeight());
 
         final Shortcut tmpShortcut = shortcut;
         if (tmpShortcut == null) {
@@ -311,21 +300,48 @@ public class GUIItemShortcut extends GUIItem {
             public void visit(@NotNull final ShortcutSpell shortcutSpell) {
                 final Color color = shortcutSpell.isCast() ? castColor : invokeColor;
                 if (color != null) {
-                    g2.setColor(color);
-                    g2.fillRect(0, 0, w, h);
+                    g.setColor(color);
+                    g.fillRect(0, 0, getWidth(), getHeight());
                 }
-                g2.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
+                g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
                 final Image image = shortcutSpell.isCast() ? castImage : invokeImage;
                 if (image != null) {
-                    g2.drawImage(image, 0, 0, null);
+                    g.drawImage(image, 0, 0, null);
                 }
             }
 
         };
         tmpShortcut.visit(visitor);
-        g2.setFont(font);
-        g2.setColor(Color.YELLOW);
-        g2.drawString("F"+(index+1), 1, 1+font.getSize()); // XXX: define in skin
+        g.setFont(font);
+        g.setColor(Color.YELLOW);
+        g.drawString("F"+(index+1), 1, 1+font.getSize()); // XXX: define in skin
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getPreferredSize() {
+        return getMinimumSizeInt();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getMinimumSize() {
+        return getMinimumSizeInt();
+    }
+
+    /**
+     * Returns the minimal size to display this component.
+     * @return the minimal size
+     */
+    @NotNull
+    private static Dimension getMinimumSizeInt() {
+        return new Dimension(32, 32);
     }
 
     /**

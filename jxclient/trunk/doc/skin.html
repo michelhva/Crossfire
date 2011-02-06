@@ -265,41 +265,6 @@
     EOF
 </pre>
 
-<h3>add: add GUI element to dialog</h3>
-
-<p>syntax:</p>
-<pre>
-    add &lt;name&gt;
-</pre>
-
-<p>precondition: dialog</p>
-
-<p>Adds the GUI element &lt;name&gt; to the dialog.</p>
-
-<p>Using this command is optional: all GUI elements defined but not explicitly
-    added are added implicitly after the last line of the dialog definition file
-    just as if a <code>add *</code> command was present. Explicitly adding GUI
-    elements allows to control the drawing order of GUI elements regardless of
-    declaration order.</p>
-
-<ul>
-    <li>&lt;name&gt; is the name of a defined GUI element to add. Elements
-        cannot be added more than once. The special name <code>*</code> adds all
-        elements no explicitly added elsewhere. This can be used to force
-        elements to be added last:
-<pre>
-    add first
-    add *
-    add last
-</pre>
-        adds the GUI element &quot;first&quot;, then all defined GUI elements
-        except &quot;first&quot; and &quot;last&quot;, then adds &quot;last&quot;.
-        This ensures that &quot;first&quot; is drawn below all other GUI
-        elements and that &quot;last&quot; is drawn on top of all other GUI
-        elements.
-    </li>
-</ul>
-
 <h3>button: execute command on activation</h3>
 
 <p>syntax:</p>
@@ -577,7 +542,7 @@
 
 <p>syntax:</p>
 <pre>
-    dialog &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;save&gt; &lt;title...&gt;
+    dialog &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;save&gt; &lt;title...&gt;
 </pre>
 
 <p>precondition: dialog, <a href="#def_dialog"><code>def dialog</code></a></p>
@@ -593,8 +558,7 @@
         allows moving the dialog and &lt;name&gt;_title is the text label
         displaying the title.
     </li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the text field.
-        &lt;x&gt; and &lt;y&gt; specify the initial location; these may change
+    <li>&lt;x&gt; &lt;y&gt; is the initial location of the dialog. It may change
         later if the dialog is movable.
     </li>
     <li>&lt;save&gt; specifies whether the dialog's current location is retained
@@ -842,6 +806,53 @@
     <li>&lt;size&gt; the size of the font in points.</li>
 </ul>
 
+<h3>horizontal: define horizontal layout information</h3>
+
+<p>syntax:</p>
+<pre>
+    horizontal begin &lt;type&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines horizontal layout information for a dialog.</p>
+
+<ul>
+    <li>&lt;type&gt; is the layout type of the following GUI elements: "seq"
+        creates
+        a sequential group, "par" creates a parallel group
+    </li>
+</ul>
+
+Following lines contain the following commands:
+<pre>
+    begin &lt;type&gt;
+    end
+    gap
+    gap &lt;size&gt;
+    gap &lt;min&gt; &lt;pref&gt;
+    gap &lt;min&gt; &lt;pref&gt; &lt;max&gt;
+    border_gap
+    &lt;element&gt;
+    &lt;element&gt; &lt;size&gt;
+    &lt;element&gt; &lt;min&gt; &lt;pref&gt;
+    &lt;element&gt; &lt;min&gt; &lt;pref&gt; &lt;max&gt;
+</pre>
+
+&quot;begin&quot; starts a nested section. &quot;end&quott; ends a nested
+section or
+terminates the layout information definition.
+
+&quot;gap&quot; inserts gaps: without arguments inserts a gap that fills as much
+space as available. A single argument creates a gap of exactly the given size in
+pixels. With two arguments creates a gap with a minimum and a preferred size but
+without a maximum size. Three arguments define both minimum, maximum, and
+preferred size.
+
+&quot;border_gap&quot; inserts a gap at the border of the window.
+
+Otherwise a GUI element is expected, optionally followed by it's size.
+
 <h3>ignore: ignore GUI element for mouse interaction</h3>
 
 <p>syntax:</p>
@@ -869,11 +880,8 @@
     inventory. The items are rendered using the options defined by a preceding
     <code>def item</code> command.</p>
 
-<p>Note: if both
-    <a href="#set_num_look_objects"><code>set_num_look_objects</code></a> and
-    <code>floor_list</code> are used, <code>set_num_look_objects</code> takes
-    precedence. Otherwise the number of items shown in the floor list is
-    requested from the server; the value is re-negotiated if needed.</p>
+<p>The number of items shown in the floor list is requested from the server; the
+    value is re-negotiated if needed.</p>
 
 <ul>
     <li>&lt;name&gt; is the name of the list box.</li>
@@ -1112,6 +1120,28 @@
             <li><code>SPELL_LEVEL</code>: the spell's level.</li>
             <li><code>SPELL_DESCRIPTION</code>: the spell's description.</li>
         </ul>
+    </li>
+</ul>
+
+<h3>link_size: link sizes of GUI elements</h3>
+
+<p>syntax:</p>
+<pre>
+    link_size &lt;type&gt; &lt;element...&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Links sizes of a set of GUI elements; all elements are forced to the same
+    width and/or height.</p>
+
+<ul>
+    <li>&lt;type&gt; defines the linking type: &lt;horizontal&gt; links width,
+        &lt;vertical&gt; links height, &lt;both&gt; links both width and
+        height.
+    </li>
+    <li>&lt;element...&gt; specifies the GUI elements to link. At least two GUI
+        elements must be given.
     </li>
 </ul>
 
@@ -1388,13 +1418,20 @@
 
 <p>syntax:</p>
 <pre>
-    set_auto_size
+    set_auto_size &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt;
 </pre>
 
 <p>precondition: dialog</p>
 
 <p>Recalculates the dialog's extent (location and size) whenever the main
     window's size changes. Auto-sizing dialogs cannot be moved manually.</p>
+
+<ul>
+    <li>&lt;x&gt; the dialog's x coordinate.</li>
+    <li>&lt;y&gt; the dialog's y coordinate.</li>
+    <li>&lt;w&gt; the dialog's width.</li>
+    <li>&lt;h&gt; the dialog's height.</li>
+</ul>
 
 <h3><a name="set_default">set_default: define default GUI elements</a></h3>
 
@@ -1440,21 +1477,6 @@
 <p>precondition: dialog</p>
 
 <p>Makes this dialog modal.</p>
-
-<h3><a name="set_num_look_objects">set_num_look_objects: request floor size from
-    server</a></h3>
-
-<p>syntax:</p>
-<pre>
-    set_num_look_objects &lt;n&gt;
-</pre>
-
-<p>Requests a floor size from the Crossfire server. Overrides implicit
-    definition by <a href="#floor_list"><code>floor_list</code></a>.</p>
-
-<ul>
-    <li>&lt;n&gt; the number of floor objects to request.</li>
-</ul>
 
 <h3>scrollbar: display scrollbars controlling other GUI elements</h3>
 
@@ -1550,6 +1572,10 @@
 <ul>
     <li>&lt;font&gt; the font for displaying tooltips.</li>
 </ul>
+
+<h3>vertical: define vertical layout information</h3>
+
+See &lt;horizontal&gt;.
 
 <h2>Misc</h2>
 

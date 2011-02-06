@@ -605,6 +605,7 @@ public class CfMap {
         final CfMapSquare mapSquare = getMapSquare(x, y);
         return isDirty(mapSquare) ? null : mapSquare;
     }
+
     /**
      * Returns the offset to convert an absolute x-coordinate of a map square
      * ({@link CfMapSquare#getX()} to a relative x-coordinate.

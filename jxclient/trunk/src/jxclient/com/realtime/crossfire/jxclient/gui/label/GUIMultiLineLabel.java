@@ -22,12 +22,13 @@
 package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 import java.util.regex.Pattern;
 import org.jetbrains.annotations.NotNull;
@@ -46,12 +47,6 @@ public class GUIMultiLineLabel extends GUILabel {
     private static final long serialVersionUID = 1;
 
     /**
-     * An <code>String</code> array of length 0.
-     */
-    @NotNull
-    private static final String[] EMPTY_STRING_ARRAY = new String[0];
-
-    /**
      * The pattern to split the text into lines.
      */
     @NotNull
@@ -61,14 +56,13 @@ public class GUIMultiLineLabel extends GUILabel {
      * The text lines to draw.
      */
     @NotNull
-    private String[] lines = EMPTY_STRING_ARRAY;
+    private String[] lines;
 
     /**
      * Create a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param extent the extent of this element
      * @param picture The background image; <code>null</code> for no
      * background.
      * @param font The font for rendering the label text.
@@ -77,8 +71,8 @@ public class GUIMultiLineLabel extends GUILabel {
      * @param alignment The text alignment.
      * @param text The label text.
      */
-    public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, extent, picture, text, font, color, backgroundColor, alignment);
+    public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
+        super(tooltipManager, elementListener, name, picture, text, font, color, backgroundColor, alignment);
         lines = LINE_SEPARATOR_PATTERN.split(getText(), -1);
     }
 
@@ -95,21 +89,64 @@ public class GUIMultiLineLabel extends GUILabel {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        super.render(g2);
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
 
         if (lines.length <= 0) {
             return;
         }
 
         final Font font = getTextFont();
-        final RectangularShape rectangle = font.getStringBounds("Xg", g2.getFontRenderContext());
-        final int lineHeight = (int)Math.ceil(rectangle.getMaxY()-rectangle.getMinY());
+        final Graphics2D g2 = (Graphics2D)g;
+        final Dimension rectangle = GuiUtils.getTextDimension("Xg", font);
+        final int lineHeight = rectangle.height;
 
         int y = 0;
         for (final String line : lines) {
-            y += drawLine(g2, y, lineHeight, line);
+            drawLine(g2, y, lineHeight, line);
+            y += lineHeight;
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return getTextSize();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return getTextSize();
+    }
+
+    /**
+     * Returns the minimal size of this component to display all of {@link
+     * #lines}.
+     * @return the size
+     */
+    @NotNull
+    private Dimension getTextSize() {
+        final Font textFont = getTextFont();
+
+        int width = 0;
+        for (final String line : lines) {
+            final Dimension dimension = GuiUtils.getTextDimension(line, textFont);
+            if (width < dimension.width) {
+                width = dimension.width;
+            }
+        }
+
+        final Dimension rectangle = GuiUtils.getTextDimension("Xg", textFont);
+        final int height = lines.length*rectangle.height;
+
+        return new Dimension(width, height);
     }
 
 }

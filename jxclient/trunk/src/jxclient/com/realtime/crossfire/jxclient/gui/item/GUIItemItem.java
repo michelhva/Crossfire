@@ -30,7 +30,8 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
+import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -106,13 +107,12 @@ public abstract class GUIItemItem extends GUIItem {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param crossfireServerConnection the connection instance
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager instance to use
      */
-    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
-        super(tooltipManager, elementListener, name, extent);
+    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
+        super(tooltipManager, elementListener, name);
         this.itemPainter = itemPainter;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
@@ -133,16 +133,34 @@ public abstract class GUIItemItem extends GUIItem {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        g2.setBackground(getBackground());
-        g2.clearRect(0, 0, getWidth(), getHeight());
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
 
         final CfItem tmpItem = item;
         if (tmpItem == null) {
             return;
         }
 
-        itemPainter.paint(g2, tmpItem, isSelected(), getFace(tmpItem));
+        final Graphics2D g2 = (Graphics2D)g;
+        itemPainter.paint(g2, tmpItem, isSelected(), getFace(tmpItem), getWidth(), getHeight());
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return itemPainter.getMinimumSize();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return itemPainter.getMinimumSize();
     }
 
     /**
