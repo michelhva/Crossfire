@@ -567,7 +567,7 @@ public class CommandParser {
             throw new IOException("'"+element+"' cannot become active");
         }
 
-        return new ScrollNextCommand((ActivatableGUIElement)nextElement, (ActivatableGUIElement)element, apply != 0);
+        return new ScrollNextCommand((ActivatableGUIElement)nextElement, (Component)element, apply != 0);
     }
 
     /**

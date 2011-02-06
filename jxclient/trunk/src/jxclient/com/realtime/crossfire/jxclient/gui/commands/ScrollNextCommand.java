@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 import com.realtime.crossfire.jxclient.gui.button.AbstractButton;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
+import java.awt.Component;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -42,7 +43,7 @@ public class ScrollNextCommand implements GUICommand {
      * The element to deactivate.
      */
     @NotNull
-    private final ActivatableGUIElement prevElement;
+    private final Component prevElement;
 
     /**
      * Whether {@link #nextElement} should be applied.
@@ -55,7 +56,7 @@ public class ScrollNextCommand implements GUICommand {
      * @param prevElement the element to deactivate
      * @param apply whether <code>nextElement</code> should be applied
      */
-    public ScrollNextCommand(@NotNull final ActivatableGUIElement nextElement, @NotNull final ActivatableGUIElement prevElement, final boolean apply) {
+    public ScrollNextCommand(@NotNull final ActivatableGUIElement nextElement, @NotNull final Component prevElement, final boolean apply) {
         this.nextElement = nextElement;
         this.prevElement = prevElement;
         this.apply = apply;

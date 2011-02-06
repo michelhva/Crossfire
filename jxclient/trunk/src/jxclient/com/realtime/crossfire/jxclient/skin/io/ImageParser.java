@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.skin.source.JXCSkinSource;
 import java.awt.Color;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
@@ -74,7 +75,7 @@ public class ImageParser {
      * @throws IOException if the image cannot be loaded
      */
     @Nullable
-    public BufferedImage getImage(@Nullable final Color color, @NotNull final String name) throws IOException {
+    public Image getImage(@Nullable final Color color, @NotNull final String name) throws IOException {
         //noinspection VariableNotUsedInsideIf
         return color != null ? null : getImage(name);
     }

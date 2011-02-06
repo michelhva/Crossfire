@@ -257,7 +257,7 @@ public class JXCWindowRenderer {
      * The tooltip to use, or <code>null</code> if no tooltips should be shown.
      */
     @Nullable
-    private AbstractGUIElement tooltip = null;
+    private Component tooltip = null;
 
     /**
      * The x-offset of the visible window.
@@ -830,7 +830,7 @@ public class JXCWindowRenderer {
      * shown.
      * @param tooltip the tooltip to use, or <code>null</code>
      */
-    public void setTooltip(@Nullable final AbstractGUIElement tooltip) {
+    public void setTooltip(@Nullable final Component tooltip) {
         if (this.tooltip != null) {
             layeredPane.remove(this.tooltip);
         }
