@@ -471,7 +471,6 @@ public class JXCWindow {
         guiStateManager.addGuiStateListener(guiStateListener);
         frame.addKeyListener(keyListener);
         connection.setFrame(frame);
-        windowRenderer.start();
     }
 
     /**
@@ -529,7 +528,6 @@ public class JXCWindow {
      * Frees all resources. Should be called before the application terminates.
      */
     public void term() {
-        windowRenderer.stop();
         guiManager.term();
         optionManager.saveOptions();
     }

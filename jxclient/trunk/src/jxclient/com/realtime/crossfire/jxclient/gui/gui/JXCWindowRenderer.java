@@ -47,8 +47,6 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.Window;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import java.awt.event.KeyEvent;
@@ -67,7 +65,6 @@ import javax.swing.JFrame;
 import javax.swing.JLayeredPane;
 import javax.swing.JViewport;
 import javax.swing.RootPaneContainer;
-import javax.swing.Timer;
 import javax.swing.event.MouseInputListener;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -446,28 +443,6 @@ public class JXCWindowRenderer {
     };
 
     /**
-     * Called periodically to update the display contents.
-     */
-    @NotNull
-    private final ActionListener actionListener = new ActionListener() {
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void actionPerformed(final ActionEvent e) {
-            redrawGUI();
-        }
-
-    };
-
-    /**
-     * The timer used to update the display contents.
-     */
-    @NotNull
-    private final Timer timer = new Timer(10, actionListener);
-
-    /**
      * The {@link ComponentListener} attached to {@link #frame}.
      */
     @NotNull
@@ -530,20 +505,6 @@ public class JXCWindowRenderer {
         graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
         graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
         defaultDisplayMode = graphicsDevice.getDisplayMode();
-    }
-
-    /**
-     * Starts repainting the window.
-     */
-    public void start() {
-        timer.start();
-    }
-
-    /**
-     * Stops repainting the window.
-     */
-    public void stop() {
-        timer.stop();
     }
 
     /**
@@ -1193,6 +1154,8 @@ public class JXCWindowRenderer {
             removeFromLayeredPane(dialog);
             if (frame != null) {
                 frame.validate();
+                /** @todo too aggressive? */
+                frame.repaint();
             }
         } else {
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y)) {
@@ -1202,6 +1165,8 @@ public class JXCWindowRenderer {
                 removeFromLayeredPane(dialog);
                 if (frame != null) {
                     frame.validate();
+                    /** @todo too aggressive? */
+                    frame.repaint();
                 }
                 mouseTracker.mouseEntered(findElement(mouseEvent), mouseEvent);
             } else {
@@ -1209,6 +1174,8 @@ public class JXCWindowRenderer {
                 removeFromLayeredPane(dialog);
                 if (frame != null) {
                     frame.validate();
+                    /** @todo too aggressive? */
+                    frame.repaint();
                 }
             }
         }

@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.gui;
 
 import java.awt.Component;
+import java.awt.Graphics;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
@@ -228,6 +229,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
             return;
         }
 
+        repaint();
         changed = true;
         if (isVisible()) {
             final Gui gui = GuiUtils.getGui(this);
@@ -312,4 +314,9 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
         this.changedListener = changedListener;
     }
 
+    @Override
+    protected void paintComponent(Graphics g) {
+      super.paintComponent(g);
+      resetChanged();
+    }
 }
