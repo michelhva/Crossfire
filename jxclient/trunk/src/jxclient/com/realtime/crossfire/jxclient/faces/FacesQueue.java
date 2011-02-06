@@ -41,11 +41,11 @@ public class FacesQueue extends AbstractFaceQueue {
     private final FileCacheFaceQueue fileCacheFaceQueue;
 
     /**
-     * The {@link AskfaceFaceQueue} instance used to query faces from the
-     * Crossfire server.
+     * The {@link FaceQueue} instance used to query faces from the Crossfire
+     * server.
      */
     @NotNull
-    private final AskfaceFaceQueue askfaceFaceQueue;
+    private final FaceQueue askfaceFaceQueue;
 
     /**
      * The {@link FaceQueueListener} attached to {@link #fileCacheFaceQueue}.
