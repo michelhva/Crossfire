@@ -52,7 +52,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * The {@link CrossfireServerConnection} for sending commands.
      */
     @NotNull
-    private CrossfireServerConnection server;
+    private final CrossfireServerConnection server;
 
     /**
      * The last sent account or character password. Set to <code>""</code> if no
@@ -64,20 +64,20 @@ public class GuiManagerCommandCallback implements CommandCallback {
     /**
      * Creates a new instance.
      * @param exiter the exiter instance
+     * @param server the crossfire server connection for sending commands
      */
-    public GuiManagerCommandCallback(@NotNull final Exiter exiter) {
+    public GuiManagerCommandCallback(@NotNull final Exiter exiter, @NotNull final CrossfireServerConnection server) {
         this.exiter = exiter;
+        this.server = server;
     }
 
     /**
      * Creates a new instance.
      * @param guiManager the gui manager to forward to
-     * @param server the crossfire server connection for sending commands
      */
     @Deprecated
-    public void init(@NotNull final GuiManager guiManager, @NotNull final CrossfireServerConnection server) {
+    public void init(@NotNull final GuiManager guiManager) {
         this.guiManager = guiManager;
-        this.server = server;
     }
 
     /**
