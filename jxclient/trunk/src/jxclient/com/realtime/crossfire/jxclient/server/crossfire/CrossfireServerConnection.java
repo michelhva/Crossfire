@@ -410,18 +410,6 @@ public interface CrossfireServerConnection extends ServerConnection {
     void setPreferredNumLookObjects(int preferredNumLookObjects);
 
     /**
-     * Returns the map width in tiles.
-     * @return the map width
-     */
-    int getMapWidth();
-
-    /**
-     * Returns the map height in tiles.
-     * @return the map height
-     */
-    int getMapHeight();
-
-    /**
      * Returns the current account name.
      * @return the current account name or <code>null</code>
      */
