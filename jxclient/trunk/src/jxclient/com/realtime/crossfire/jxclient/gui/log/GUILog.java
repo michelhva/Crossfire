@@ -21,18 +21,20 @@
 
 package com.realtime.crossfire.jxclient.gui.log;
 
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.font.FontRenderContext;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.ListIterator;
@@ -44,7 +46,7 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public abstract class GUILog extends GUIElement implements GUIScrollable2 {
+public abstract class GUILog extends AbstractGUIElement implements GUIScrollable2 {
 
     /**
      * The serial version UID.
@@ -97,7 +99,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
         public void stateChanged() {
             setChanged();
             for (final ScrollableListener listener : listeners) {
-                listener.setRange(0, buffer.getTotalHeight(), renderStateManager.getScrollPos(), GUILog.super.getHeight());
+                listener.setRange(0, buffer.getTotalHeight(), renderStateManager.getScrollPos(), 200/*XXX:GUILog.super.getHeight()*/);
             }
         }
 
@@ -113,27 +115,25 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param backgroundImage the background image; may be <code>null</code> if
      * unused
      * @param fonts the <code>Fonts</code> instance for looking up fonts
      */
-    protected GUILog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final Image backgroundImage, @NotNull final Fonts fonts) {
-        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
+    protected GUILog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image backgroundImage, @NotNull final Fonts fonts) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
-        updateResolutionConstant();
         final FontRenderContext context;
-        synchronized (bufferedImageSync) {
-            final Graphics2D g = createBufferGraphics();
-            try {
-                context = g.getFontRenderContext();
-            } finally {
-                g.dispose();
-            }
+        final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final Graphics2D g = graphicsEnvironment.createGraphics(new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB)); // XXX
+        try {
+            context = g.getFontRenderContext();
+        } finally {
+            g.dispose();
         }
-        buffer = new Buffer(fonts, context, extent.getConstantW());
+        buffer = new Buffer(fonts, context, getWidth());
         renderStateManager = new RenderStateManager(renderStateListener, buffer);
+        renderStateManager.setHeight(getHeight());
     }
 
     /**
@@ -149,15 +149,13 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        if (renderStateManager == null) {
-            return;
-        }
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
 
-        g2.setBackground(new Color(0, 0, 0, 0.0f));
-        g2.clearRect(0, 0, getWidth(), getHeight());
+        g.setColor(new Color(0, 0, 0, 0.0f));
+        g.fillRect(0, 0, getWidth(), getHeight());
         if (backgroundImage != null) {
-            g2.drawImage(backgroundImage, 0, 0, null);
+            g.drawImage(backgroundImage, 0, 0, null);
         }
 
         int y = -renderStateManager.getTopOffset();
@@ -166,7 +164,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
             final ListIterator<Line> it = buffer.listIterator(topIndex);
             while (y < getHeight() && it.hasNext()) {
                 final Line line = it.next();
-                drawLine(g2, y, line);
+                drawLine(g, y, line);
                 y += line.getHeight();
             }
         }
@@ -257,9 +255,28 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
      * {@inheritDoc}
      */
     @Override
-    public void updateResolution(final int screenWidth, final int screenHeight) {
-        super.updateResolution(screenWidth, screenHeight);
-        buffer.setRenderWidth(getWidth());
+    public void setBounds(final int x, final int y, final int width, final int height) {
+        super.setBounds(x, y, width, height);
+        buffer.setRenderWidth(width);
+        renderStateManager.setHeight(height);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return new Dimension(600, 150); // XXX
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return new Dimension(100, 10); // XXX
     }
 
 }

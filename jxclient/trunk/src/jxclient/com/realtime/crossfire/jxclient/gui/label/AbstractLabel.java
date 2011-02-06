@@ -21,13 +21,12 @@
 
 package com.realtime.crossfire.jxclient.gui.label;
 
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
@@ -40,7 +39,7 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public abstract class AbstractLabel extends GUIElement {
+public abstract class AbstractLabel extends AbstractGUIElement {
 
     /**
      * The serial version UID.
@@ -75,7 +74,7 @@ public abstract class AbstractLabel extends GUIElement {
      * If set, the opaque background color. This field is ignored if {@link
      * #backgroundImage} is set.
      */
-    @NotNull
+    @Nullable
     private final Color backgroundColor;
 
     /**
@@ -83,7 +82,6 @@ public abstract class AbstractLabel extends GUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param text the text
      * @param textFont the text font
      * @param textColor the text color
@@ -91,8 +89,8 @@ public abstract class AbstractLabel extends GUIElement {
      * @param backgroundColor the background color; ignored if background
      * picture is set
      */
-    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final String text, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final BufferedImage backgroundPicture, @NotNull final Color backgroundColor) {
-        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
+    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final BufferedImage backgroundPicture, @Nullable final Color backgroundColor) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         this.text = text;
         this.textFont = textFont;
         this.textColor = textColor;
@@ -147,12 +145,14 @@ public abstract class AbstractLabel extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+
         if (backgroundImage != null) {
-            g2.drawImage(backgroundImage.getImage(), 0, 0, null);
-        } else {
-            g2.setBackground(backgroundColor);
-            g2.clearRect(0, 0, getWidth(), getHeight());
+            g.drawImage(backgroundImage.getImage(), 0, 0, null);
+        } else if (backgroundColor != null) {
+            g.setColor(backgroundColor);
+            g.fillRect(0, 0, getWidth(), getHeight());
         }
     }
 

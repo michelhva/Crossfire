@@ -24,10 +24,9 @@ package com.realtime.crossfire.jxclient.skin.factory;
 import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
 import com.realtime.crossfire.jxclient.gui.button.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
@@ -81,7 +80,6 @@ public class TextButtonFactory {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param extent the extent of this element
      * @param text The button text.
      * @param autoRepeat Whether the button should autorepeat while being
      * pressed.
@@ -89,8 +87,8 @@ public class TextButtonFactory {
      * @return the new text button
      */
     @NotNull
-    public GUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        return new GUITextButton(tooltipManager, elementListener, name, extent, up, down, text, font, color, autoRepeat, commandList);
+    public AbstractGUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList) {
+        return new GUITextButton(tooltipManager, elementListener, name, up, down, text, font, color, autoRepeat, commandList);
     }
 
 }

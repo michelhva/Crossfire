@@ -1,9 +1,8 @@
-
-dialog border WIDTH/2-482 HEIGHT/2-320 956+8 602+8 false Help
+dialog WIDTH/2 HEIGHT/2 true Help
 dialog_hide START META LOGIN ACCOUNT
-button button_close 4+956-18 6 16 16 close_up close_down false command_help_close
+button dialog_close close_up close_down false command_help_close
 
-label_multi help_text 8 27 956-8 576 font_label DARK_GRAY <<EOF
+label_multi help_text font_label DARK_GRAY <<EOF
 Common commands
 ===============
 Use direction keys to walk; CTRL + direction to run. Bumping into monsters attacks them. Bumping into other players pushes them away.
@@ -41,3 +40,11 @@ http://crossfire.real-time.com/             Crossfire - The Multiplayer Adventur
 http://crossfire.real-time.com/bugs     Report bugs or suggest features
 http://invidious.meflin.net/jxclient.jar   Download of daily build; includes latest features but may be instable
 EOF
+
+horizontal begin seq
+  help_text
+end
+
+vertical begin seq
+  help_text
+end

@@ -1,46 +1,168 @@
-
-dialog border                WIDTH/2-250 HEIGHT/2+32  548 156 true Protections
+dialog WIDTH/2 HEIGHT/2 true Protections
 dialog_hide START META LOGIN NEWCHAR ACCOUNT
-button button_close          526 6    16  16 close_up close_down false command_protections_close
+button dialog_close close_up close_down false command_protections_close
 
-label_text label_phys         10  30  90  16 font_label BLACK Physical:
-label_text label_fire         10  50  90  16 font_label BLACK Fire:
-label_text label_cold         10  70  90  16 font_label BLACK Cold:
-label_text label_elec         10  90  90  16 font_label BLACK Electricity:
-label_text label_acid         10 110  90  16 font_label BLACK Acid:
-label_text label_magic        10 130  90  16 font_label BLACK Magic:
+label_text label_phys         font_label BLACK Physical:
+textgauge res_phys            gauge_gp gauge_gp_negative gauge_empty RES_PHYS WE BLACK font_label Physical:
 
-textgauge res_phys           100  31  74  14 gauge_gp gauge_gp_negative gauge_empty RES_PHYS WE BLACK font_label Physical:
-textgauge res_fire           100  51  74  14 gauge_gp gauge_gp_negative gauge_empty RES_FIRE WE BLACK font_label Fire:
-textgauge res_cold           100  71  74  14 gauge_gp gauge_gp_negative gauge_empty RES_COLD WE BLACK font_label Cold:
-textgauge res_elec           100  91  74  14 gauge_gp gauge_gp_negative gauge_empty RES_ELEC WE BLACK font_label Electricity:
-textgauge res_acid           100 111  74  14 gauge_gp gauge_gp_negative gauge_empty RES_ACID WE BLACK font_label Acid:
-textgauge res_magic          100 131  74  14 gauge_gp gauge_gp_negative gauge_empty RES_MAG WE BLACK font_label Magic:
+label_text label_fire         font_label BLACK Fire:
+textgauge res_fire            gauge_gp gauge_gp_negative gauge_empty RES_FIRE WE BLACK font_label Fire:
 
-label_text label_conf        190  30  90  16 font_label BLACK Confusion:
-label_text label_fear        190  50  90  16 font_label BLACK Fear:
-label_text label_slow        190  70  90  16 font_label BLACK Slow:
-label_text label_para        190  90  90  16 font_label BLACK Paralyzation:
-label_text label_poison      190 110  90  16 font_label BLACK Poison:
-label_text label_blind       190 130  90  16 font_label BLACK Blindness:
+label_text label_cold         font_label BLACK Cold:
+textgauge res_cold            gauge_gp gauge_gp_negative gauge_empty RES_COLD WE BLACK font_label Cold:
 
-textgauge res_conf           280  31  74  14 gauge_gp gauge_gp_negative gauge_empty RES_CONF WE BLACK font_label Confusion:
-textgauge res_fear           280  51  74  14 gauge_gp gauge_gp_negative gauge_empty RES_FEAR WE BLACK font_label Fear:
-textgauge res_slow           280  71  74  14 gauge_gp gauge_gp_negative gauge_empty RES_SLOW WE BLACK font_label Slow:
-textgauge res_para           280  91  74  14 gauge_gp gauge_gp_negative gauge_empty RES_PARA WE BLACK font_label Paralyzation:
-textgauge res_poison         280 111  74  14 gauge_gp gauge_gp_negative gauge_empty RES_POISON WE BLACK font_label Poison:
-textgauge res_blind          280 131  74  14 gauge_gp gauge_gp_negative gauge_empty RES_BLIND WE BLACK font_label Blindness:
+label_text label_elec         font_label BLACK Electricity:
+textgauge res_elec            gauge_gp gauge_gp_negative gauge_empty RES_ELEC WE BLACK font_label Electricity:
 
-label_text label_drain       370  30  90  16 font_label BLACK Draining:
-label_text label_deplete     370  50  90  16 font_label BLACK Depletion:
-label_text label_death       370  70  90  16 font_label BLACK Death:
-label_text label_ghosthit    370  90  90  16 font_label BLACK Ghosthit:
-label_text label_turn_undead 370 110  90  16 font_label BLACK Turn undead:
-label_text label_holy_word   370 130  90  16 font_label BLACK Holy word:
+label_text label_acid         font_label BLACK Acid:
+textgauge res_acid            gauge_gp gauge_gp_negative gauge_empty RES_ACID WE BLACK font_label Acid:
 
-textgauge res_drain          460  31  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DRAIN WE BLACK font_label Draining:
-textgauge res_deplete        460  51  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DEPLETE WE BLACK font_label Depletion:
-textgauge res_death          460  71  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DEATH WE BLACK font_label Death:
-textgauge res_ghosthit       460  91  74  14 gauge_gp gauge_gp_negative gauge_empty RES_GHOSTHIT WE BLACK font_label Ghosthit:
-textgauge res_turn_undead    460 111  74  14 gauge_gp gauge_gp_negative gauge_empty RES_TURN_UNDEAD WE BLACK font_label Turn undead:
-textgauge res_holy_word      460 131  74  14 gauge_gp gauge_gp_negative gauge_empty RES_HOLYWORD WE BLACK font_label Holy word:
+label_text label_magic        font_label BLACK Magic:
+textgauge res_magic           gauge_gp gauge_gp_negative gauge_empty RES_MAG WE BLACK font_label Magic:
+
+label_text label_conf         font_label BLACK Confusion:
+textgauge res_conf            gauge_gp gauge_gp_negative gauge_empty RES_CONF WE BLACK font_label Confusion:
+
+label_text label_fear         font_label BLACK Fear:
+textgauge res_fear            gauge_gp gauge_gp_negative gauge_empty RES_FEAR WE BLACK font_label Fear:
+
+label_text label_slow         font_label BLACK Slow:
+textgauge res_slow            gauge_gp gauge_gp_negative gauge_empty RES_SLOW WE BLACK font_label Slow:
+
+label_text label_para         font_label BLACK Paralyzation:
+textgauge res_para            gauge_gp gauge_gp_negative gauge_empty RES_PARA WE BLACK font_label Paralyzation:
+
+label_text label_poison       font_label BLACK Poison:
+textgauge res_poison          gauge_gp gauge_gp_negative gauge_empty RES_POISON WE BLACK font_label Poison:
+
+label_text label_blind        font_label BLACK Blindness:
+textgauge res_blind           gauge_gp gauge_gp_negative gauge_empty RES_BLIND WE BLACK font_label Blindness:
+
+label_text label_drain        font_label BLACK Draining:
+textgauge res_drain           gauge_gp gauge_gp_negative gauge_empty RES_DRAIN WE BLACK font_label Draining:
+
+label_text label_deplete      font_label BLACK Depletion:
+textgauge res_deplete         gauge_gp gauge_gp_negative gauge_empty RES_DEPLETE WE BLACK font_label Depletion:
+
+label_text label_death        font_label BLACK Death:
+textgauge res_death           gauge_gp gauge_gp_negative gauge_empty RES_DEATH WE BLACK font_label Death:
+
+label_text label_ghosthit     font_label BLACK Ghosthit:
+textgauge res_ghosthit        gauge_gp gauge_gp_negative gauge_empty RES_GHOSTHIT WE BLACK font_label Ghosthit:
+
+label_text label_turn_undead  font_label BLACK Turn undead:
+textgauge res_turn_undead     gauge_gp gauge_gp_negative gauge_empty RES_TURN_UNDEAD WE BLACK font_label Turn undead:
+
+label_text label_holy_word    font_label BLACK Holy word:
+textgauge res_holy_word       gauge_gp gauge_gp_negative gauge_empty RES_HOLYWORD WE BLACK font_label Holy word:
+
+horizontal begin seq
+  begin par
+    label_phys
+    label_fire
+    label_cold
+    label_elec
+    label_acid
+    label_magic
+  end
+  begin par
+    res_phys
+    res_fire
+    res_cold
+    res_elec
+    res_acid
+    res_magic
+  end
+  gap 8
+  begin par
+    label_conf
+    label_fear
+    label_slow
+    label_para
+    label_poison
+    label_blind
+  end
+  begin par
+    res_conf
+    res_fear
+    res_slow
+    res_para
+    res_poison
+    res_blind
+  end
+  gap 8
+  begin par
+    label_drain
+    label_deplete
+    label_death
+    label_ghosthit
+    label_turn_undead
+    label_holy_word
+  end
+  begin par
+    res_drain
+    res_deplete
+    res_death
+    res_ghosthit
+    res_turn_undead
+    res_holy_word
+  end
+end
+
+vertical begin seq
+  begin par
+    label_phys
+    res_phys
+    label_conf
+    res_conf
+    label_drain
+    res_drain
+  end
+  gap 2
+  begin par
+    label_fire
+    res_fire
+    label_fear
+    res_fear
+    label_deplete
+    res_deplete
+  end
+  gap 2
+  begin par
+    label_cold
+    res_cold
+    label_slow
+    res_slow
+    label_death
+    res_death
+  end
+  gap 2
+  begin par
+    label_elec
+    res_elec
+    label_para
+    res_para
+    label_ghosthit
+    res_ghosthit
+  end
+  gap 2
+  begin par
+    label_acid
+    res_acid
+    label_poison
+    res_poison
+    label_turn_undead
+    res_turn_undead
+  end
+  gap 2
+  begin par
+    label_magic
+    res_magic
+    label_blind
+    res_blind
+    label_holy_word
+    res_holy_word
+  end
+end
+
+link_size horizontal label_phys label_fire label_cold label_elec label_acid label_magic label_conf label_fear label_slow label_para label_poison label_blind label_drain label_deplete label_death label_ghosthit label_turn_undead label_holy_word

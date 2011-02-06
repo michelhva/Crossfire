@@ -25,14 +25,16 @@ import com.realtime.crossfire.jxclient.account.CharacterInformationListener;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.Transparency;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A character displaying GUI element.
@@ -91,7 +93,8 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * @param characterModel the character model to monitor
      */
     public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final Font font, final int defaultIndex, final CharacterModel characterModel) {
-        super(tooltipManager, elementListener, name, new Extent(0, 0, w, h), Transparency.TRANSLUCENT);
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+        setSize(w, h);
         this.characterModel = characterModel;
         this.font = font;
         index = defaultIndex;
@@ -109,13 +112,42 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+        g.setColor(new Color(0, 0, 0, 0.0f));
+        g.fillRect(0, 0, getWidth(), getHeight());
+        g.setFont(font);
+        g.setColor(GuiUtils.isActive(this) || selected ? Color.RED : Color.GRAY);
         final CharacterInformation character = characterModel.getEntry(index);
-        g2.setBackground(new Color(0, 0, 0, 0.0f));
-        g2.clearRect(0, 0, getWidth(), getHeight());
-        g2.setFont(font);
-        g2.setColor(isActive() || selected ? Color.RED : Color.GRAY);
-        g2.drawString(character == null ? "" : character.getName(), 0, font.getSize()+1);
+        g.drawString(character == null ? "" : character.getName(), 0, font.getSize()+1);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return getMinimumSizeInt();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return getMinimumSizeInt();
+    }
+
+    /**
+     * Returns the minimal size needed to display this component.
+     * @return the minimal size
+     */
+    @NotNull
+    private Dimension getMinimumSizeInt() {
+        final CharacterInformation character = characterModel.getEntry(index);
+        return GuiUtils.getTextDimension(character == null ? "" : character.getName(), font);
     }
 
     /**

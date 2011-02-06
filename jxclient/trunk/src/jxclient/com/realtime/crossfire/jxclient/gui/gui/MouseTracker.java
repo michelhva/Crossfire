@@ -21,9 +21,10 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import java.awt.Component;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.event.MouseEvent;
-import javax.swing.event.MouseInputListener;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -35,7 +36,7 @@ import org.jetbrains.annotations.Nullable;
  * GUIElement.
  * @author Andreas Kirschbaum
  */
-public class MouseTracker implements MouseInputListener {
+public class MouseTracker {
 
     /**
      * Whether GUI elements should be highlighted.
@@ -43,16 +44,16 @@ public class MouseTracker implements MouseInputListener {
     private final boolean debugGui;
 
     /**
-     * The renderer to access dialogs/gui elements.
-     */
-    /*XXX:@NotNull*/
-    private JXCWindowRenderer windowRenderer = null;
-
-    /**
      * The gui element in which the mouse is.
      */
     @Nullable
     private GUIElement mouseElement = null;
+
+    /**
+     * The active component.
+     */
+    @Nullable
+    private AbstractGUIElement activeComponent = null;
 
     /**
      * Creates a new instance.
@@ -62,71 +63,28 @@ public class MouseTracker implements MouseInputListener {
         this.debugGui = debugGui;
     }
 
-    @Deprecated
-    public void init(@NotNull final JXCWindowRenderer windowRenderer) {
-        this.windowRenderer = windowRenderer;
-    }
-
-    /**
-     * Returns the gui element in which the mouse is.
-     * @return the gui element in which the mouse is
-     */
-    @Nullable
-    public Component getMouseElement() {
-        return mouseElement;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mouseDragged(@NotNull final MouseEvent e) {
-        final GUIElement element = mouseElement;
+    public void mouseDragged(@Nullable final GUIElement element, @NotNull final MouseEvent e) {
         if (element != null) {
-            e.translatePoint(-element.getElementX()-windowRenderer.getOffsetX(), -element.getElementY()-windowRenderer.getOffsetY());
             element.mouseMoved(e);
             element.mouseDragged(e);
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mouseMoved(@NotNull final MouseEvent e) {
-        final GUIElement element = windowRenderer.findElement(e);
+    public void mouseMoved(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         enterElement(element, e);
         if (mouseElement != null) {
             mouseElement.mouseMoved(e);
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mouseClicked(@NotNull final MouseEvent e) {
-        // ignore
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mousePressed(@NotNull final MouseEvent e) {
-        final GUIElement element = windowRenderer.findElement(e);
+    public void mousePressed(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         enterElement(element, e);
         if (mouseElement != null) {
             mouseElement.mousePressed(e);
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mouseReleased(@NotNull final MouseEvent e) {
-        final GUIElement element = windowRenderer.findElement(e);
+    public void mouseReleased(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         final boolean isClicked = element != null && mouseElement == element;
         enterElement(element, e);
         if (isClicked) {
@@ -140,19 +98,10 @@ public class MouseTracker implements MouseInputListener {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mouseEntered(@NotNull final MouseEvent e) {
-        final GUIElement element = windowRenderer.findElement(e);
+    public void mouseEntered(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         enterElement(element, e);
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void mouseExited(@NotNull final MouseEvent e) {
         enterElement(null, e);
     }
@@ -162,7 +111,7 @@ public class MouseTracker implements MouseInputListener {
      * @param element the new element; it may be <code>null</code>
      * @param e the event parameter
      */
-    private void enterElement(@Nullable final GUIElement element, @NotNull final MouseEvent e) {
+    private void enterElement(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         if (mouseElement == element) {
             return;
         }
@@ -170,18 +119,37 @@ public class MouseTracker implements MouseInputListener {
         final GUIElement tmp = mouseElement;
         if (tmp != null) {
             tmp.mouseExited(e);
-            if (debugGui) {
-                tmp.setChanged();
+            if (activeComponent != null) {
+                activeComponent.setChanged();
+                activeComponent = null;
             }
         }
 
         mouseElement = element;
 
         if (element != null) {
-            if (debugGui) {
-                element.setChanged();
+            element.mouseEntered(e, debugGui);
+            if (debugGui && activeComponent != element) {
+                activeComponent = element;
+                activeComponent.setChanged();
             }
-            element.mouseEntered(e);
+        }
+    }
+
+    /**
+     * Marks the active component in a {@link Graphics} instance.
+     * @param g the graphics
+     */
+    public void paintActiveComponent(@NotNull final Graphics g) {
+        final AbstractGUIElement component = activeComponent;
+        if (component != null) {
+            final String text = component.getName();
+            final Dimension dimension = GuiUtils.getTextDimension(text, g.getFont());
+            g.setColor(Color.BLACK);
+            g.fillRect(0, 2, dimension.width+4, dimension.height+8);
+            g.setColor(Color.RED);
+            g.drawString(text, 2, 16);
+            g.drawRect(GuiUtils.getElementX(component), GuiUtils.getElementY(component), component.getWidth()-1, component.getHeight()-1);
         }
     }
 

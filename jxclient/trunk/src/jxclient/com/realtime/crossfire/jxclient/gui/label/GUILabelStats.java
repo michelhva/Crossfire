@@ -24,13 +24,13 @@ package com.realtime.crossfire.jxclient.gui.label;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.util.Formatter;
 import java.awt.Color;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUILabel} that displays a value of the last received "stats"
@@ -161,7 +161,6 @@ public class GUILabelStats extends GUIOneLineLabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param font the font to use
      * @param color the color to use
      * @param backgroundColor the background color
@@ -169,8 +168,8 @@ public class GUILabelStats extends GUIOneLineLabel {
      * @param alignment the text alignment
      * @param stats the stats instance to use
      */
-    public GUILabelStats(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, final int stat, @NotNull final Alignment alignment, @NotNull final Stats stats) {
-        super(tooltipManager, elementListener, name, extent, null, font, color, backgroundColor, alignment, "");
+    public GUILabelStats(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, final int stat, @NotNull final Alignment alignment, @NotNull final Stats stats) {
+        super(tooltipManager, elementListener, name, null, font, color, backgroundColor, alignment, "");
         this.stats = stats;
         this.stat = stat;
         this.stats.addCrossfireStatsListener(statsListener);

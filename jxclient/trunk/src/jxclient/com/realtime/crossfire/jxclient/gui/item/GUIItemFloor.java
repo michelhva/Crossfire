@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 
@@ -119,7 +118,6 @@ public class GUIItemFloor extends GUIItemItem {
      * @param elementListener the element listener to notify
      * @param commandQueue the command queue for sending commands
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param itemPainter the item painter for painting the icon
      * @param index the initial scroll index
      * @param crossfireServerConnection the connection instance
@@ -129,8 +127,8 @@ public class GUIItemFloor extends GUIItemItem {
      * @param nextGroupFace the image for "prev group of items"
      * @param prevGroupFace the image for "next group of items"
      */
-    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final Extent extent, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView floorView, @NotNull final ItemSet itemSet, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) {
-        super(tooltipManager, elementListener, name, extent, crossfireServerConnection, itemPainter, facesManager);
+    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView floorView, @NotNull final ItemSet itemSet, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) {
+        super(tooltipManager, elementListener, name, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.floorView = floorView;

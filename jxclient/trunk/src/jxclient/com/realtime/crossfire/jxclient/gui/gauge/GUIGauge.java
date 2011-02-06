@@ -21,15 +21,15 @@
 
 package com.realtime.crossfire.jxclient.gui.gauge;
 
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
-import java.awt.Color;
+import java.awt.AlphaComposite;
+import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -39,7 +39,7 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class GUIGauge extends GUIElement implements GUIGaugeListener {
+public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
 
     /**
      * The serial version UID.
@@ -79,11 +79,15 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
     private final GaugeState gaugeState;
 
     /**
+     * The gauge alpha value, 1 is opaque and 0 full transparent.
+     */
+    private final float alpha;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param fullImage the image representing a full gauge
      * @param negativeImage the image representing a more-than-empty gauge; if
      * set to <code>null</code> the gauge remains in empty state
@@ -92,20 +96,17 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
      * @param orientation the gauge's orientation
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
+     * @param alpha alpha value of the gauge to use
      */
-    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix) {
-        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
-        final int w = extent.getConstantW();
-        final int h = extent.getConstantH();
-        checkSize(fullImage, "full", w, h);
-        checkSize(negativeImage, "negative", w, h);
-        checkSize(emptyImage, "empty", w, h);
+    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image fullImage, @Nullable final Image negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, final float alpha) {
+        super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.emptyImage = emptyImage;
         this.orientation = orientation;
         this.tooltipPrefix = tooltipPrefix;
         gaugeState = new GaugeState(fullImage, negativeImage, 0, 0);
+        this.alpha = alpha;
         tooltipText = "-";      // make sure the following setValues() does not short-cut
-        orientation.setExtends(w, h);
+        orientation.setExtends(getWidth(), getHeight());
         orientation.setHasNegativeImage(negativeImage != null);
         orientation.setValues(0, 0, 0);
         gaugeState.setValues(orientation);
@@ -113,41 +114,48 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
     }
 
     /**
-     * Validates an image's size: checks if the given image has the given size
-     * (in pixels).
-     * @param image the image to validate; if set to <code>null</code> no
-     * exception is thrown
-     * @param name the image's name for generating error messages
-     * @param w the expected image width
-     * @param h the expected image height
-     * @throws IllegalArgumentException if <code>image</code> is not
-     * <code>null</code> and it's size is not <code>w</code>x<code>h</code>
+     * {@inheritDoc}
      */
-    private static void checkSize(@Nullable final Image image, @NotNull final String name, final int w, final int h) {
-        if (image == null) {
-            return;
-        }
-
-        if (image.getWidth(null) != w) {
-            throw new IllegalArgumentException("width of '"+name+"' does not match element width");
-        }
-
-        if (image.getHeight(null) != h) {
-            throw new IllegalArgumentException("height of '"+name+"' does not match element height");
-        }
+    @Override
+    public void setBounds(final int x, final int y, final int width, final int height) {
+        super.setBounds(x, y, width, height);
+        if (orientation.setExtends(width, height)) {
+          if (gaugeState.setValues(orientation)) {
+              setChanged();
+          }
+      }
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        g2.setBackground(new Color(0, 0, 0, 0.0f));
-        g2.clearRect(0, 0, getWidth(), getHeight());
-        if (emptyImage != null) {
-            g2.drawImage(emptyImage, 0, 0, null);
+    public void dispose() {
+        super.dispose();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void paintComponent(@NotNull final Graphics g) {
+        final Graphics paint;
+        if (alpha < 1F) {
+            final Graphics2D g2d = (Graphics2D)g.create();
+            g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
+            paint = g2d;
+        } else {
+            paint = g;
         }
-        gaugeState.draw(g2);
+
+        super.paintComponent(paint);
+        if (emptyImage != null) {
+            paint.drawImage(emptyImage, 0, 0, null);
+        }
+        gaugeState.draw(paint);
+        if (paint != g) {
+            paint.dispose();
+        }
     }
 
     /**
@@ -174,6 +182,33 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
      */
     private void updateTooltipText() {
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return gaugeState.getPreferredSize();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return gaugeState.getPreferredSize();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMaximumSize() {
+        return gaugeState.getPreferredSize();
     }
 
 }

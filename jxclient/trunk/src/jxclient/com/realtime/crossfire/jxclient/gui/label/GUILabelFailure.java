@@ -24,10 +24,10 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFailureListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIHTMLLabel} that displays the last received "failure" message.
@@ -75,14 +75,13 @@ public class GUILabelFailure extends GUIMultiLineLabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param extent the extent of this element
      * @param crossfireServerConnection the connection instance
      * @param font The font to use.
      * @param color The color to use.
      * @param backgroundColor The background color.
      */
-    public GUILabelFailure(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor) {
-        super(tooltipManager, elementListener, name, extent, null, font, color, backgroundColor, Alignment.LEFT, "");
+    public GUILabelFailure(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor) {
+        super(tooltipManager, elementListener, name, null, font, color, backgroundColor, Alignment.LEFT, "");
         this.crossfireServerConnection = crossfireServerConnection;
         this.crossfireServerConnection.addCrossfireFailureListener(crossfireFailureListener);
     }

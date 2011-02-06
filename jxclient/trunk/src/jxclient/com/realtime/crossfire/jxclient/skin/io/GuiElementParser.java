@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin.io;
 
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
@@ -38,13 +39,13 @@ public class GuiElementParser {
      * The defined {@link GUIElement}s.
      */
     @NotNull
-    private final JXCSkinCache<GUIElement> definedGUIElements;
+    private final JXCSkinCache<AbstractGUIElement> definedGUIElements;
 
     /**
      * Creates a new instance.
      * @param definedGUIElements the defined gui elements
      */
-    public GuiElementParser(@NotNull final JXCSkinCache<GUIElement> definedGUIElements) {
+    public GuiElementParser(@NotNull final JXCSkinCache<AbstractGUIElement> definedGUIElements) {
         this.definedGUIElements = definedGUIElements;
     }
 

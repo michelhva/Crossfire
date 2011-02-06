@@ -71,7 +71,6 @@ import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCConnection;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
 import com.realtime.crossfire.jxclient.window.KeybindingsManager;
-import java.awt.Graphics;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -79,7 +78,6 @@ import java.io.Writer;
 import java.lang.reflect.InvocationTargetException;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
-import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -173,7 +171,6 @@ public class JXClient {
 
                                 final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui());
                                 final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, semaphoreRedraw, server, debugScreenOutputStreamWriter);
-                                mouseTracker.init(windowRenderer);
                                 new MusicWatcher(server, soundManager);
                                 new SoundWatcher(server, soundManager);
                                 new StatsWatcher(stats, windowRenderer, server, soundManager);
@@ -203,37 +200,21 @@ public class JXClient {
                                         final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
                                         final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
                                         final Settings settings = options.getSettings();
-                                        final JFrame frame = new JFrame("") {
-
-                                            /**
-                                             * The serial version UID.
-                                             */
-                                            private static final long serialVersionUID = 1L;
-
-                                            /**
-                                             * {@inheritDoc}
-                                             */
-                                            @Override
-                                            public void paint(@NotNull final Graphics g) {
-                                                windowRenderer.repaint();
-                                            }
-
-                                        };
-                                        final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, frame, characterPickup, server, guiStateManager);
-                                        final GuiFactory guiFactory = new GuiFactory(options.isDebugGui() ? mouseTracker : null, commands, commandCallback, macros);
+                                        final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
+                                        final GuiFactory guiFactory = new GuiFactory(commands, commandCallback, macros);
                                         final GuiManager guiManager = new GuiManager(guiStateManager, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                         commandCallback.init(guiManager, server);
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
                                         final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet, options.getTileSize());
-                                        final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel);
+                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel);
                                         new FacesTracker(guiStateManager, facesManager);
                                         new PlayerNameTracker(guiStateManager, connection, itemSet);
                                         new PickupTracker(guiStateManager, server, characterPickup);
                                         new OutputCountTracker(guiStateManager, server, commandQueue);
                                         final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, guiStateManager);
                                         final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
-                                        window[0] = new JXCWindow(exiter, server, optionManager, guiStateManager, windowRenderer, commandQueue, guiManager, keyHandler, characterModel, frame);
-                                        window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
+                                        window[0] = new JXCWindow(exiter, server, optionManager, guiStateManager, windowRenderer, commandQueue, guiManager, keyHandler, characterModel, connection);
+                                        window[0].init(options.getResolution(), options.getSkin(), options.isFullScreen(), skinLoader);
                                         keybindingsManager.loadKeybindings();
                                         final String serverInfo = options.getServer();
                                         if (serverInfo != null) {

@@ -23,12 +23,12 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import java.awt.Color;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUILabel} that displays a value of the last received "stats"
@@ -160,7 +160,6 @@ public class GUILabelStats2 extends GUIOneLineLabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param font the font to use
      * @param colorNormal the normal color
      * @param colorUpgradable the color for upgradable stats
@@ -175,8 +174,8 @@ public class GUILabelStats2 extends GUIOneLineLabel {
      * @param alignment the text alignment
      * @param stats the stats instance to use
      */
-    public GUILabelStats2(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Font font, @NotNull final Color colorNormal, @NotNull final Color colorUpgradable, @NotNull final Color colorDepleted, @NotNull final Color colorBoosted, @NotNull final Color colorBoostedUpgradable, @NotNull final Color backgroundColor, final int statCurrent, final int statBase, final int statRace, final int statApplied, @NotNull final Alignment alignment, @NotNull final Stats stats) {
-        super(tooltipManager, elementListener, name, extent, null, font, colorNormal, backgroundColor, alignment, "");
+    public GUILabelStats2(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font font, @NotNull final Color colorNormal, @NotNull final Color colorUpgradable, @NotNull final Color colorDepleted, @NotNull final Color colorBoosted, @NotNull final Color colorBoostedUpgradable, @Nullable final Color backgroundColor, final int statCurrent, final int statBase, final int statRace, final int statApplied, @NotNull final Alignment alignment, @NotNull final Stats stats) {
+        super(tooltipManager, elementListener, name, null, font, colorNormal, backgroundColor, alignment, "");
         this.colorUpgradable = colorUpgradable;
         this.colorDepleted = colorDepleted;
         this.colorBoosted = colorBoosted;

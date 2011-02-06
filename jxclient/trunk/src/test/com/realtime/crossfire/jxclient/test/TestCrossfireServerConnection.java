@@ -69,7 +69,7 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      * {@inheritDoc}
      */
     @Override
-    public void stop() throws InterruptedException {
+    public void stop() {
         Assert.fail();
     }
 

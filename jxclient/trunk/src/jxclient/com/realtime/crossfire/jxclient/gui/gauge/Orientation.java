@@ -47,8 +47,9 @@ public interface Orientation {
      * Sets the extends of the image.
      * @param width the width
      * @param height the height
+     * @return true if the size changed, false else.
      */
-    void setExtends(int width, int height);
+    boolean setExtends(int width, int height);
 
     /**
      * Returns the x-coordinate of the highlighted part of the image.

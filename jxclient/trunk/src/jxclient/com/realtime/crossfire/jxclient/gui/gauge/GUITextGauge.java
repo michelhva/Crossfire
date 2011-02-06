@@ -23,12 +23,12 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.geom.RectangularShape;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -67,7 +67,6 @@ public class GUITextGauge extends GUIGauge {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param pictureFull the image for positive values
      * @param pictureNegative the image for negative values
      * @param pictureEmpty the image for an empty gauge
@@ -75,9 +74,10 @@ public class GUITextGauge extends GUIGauge {
      * @param tooltipPrefix the prefix for generating a tooltip
      * @param color the text color
      * @param font the text font
+     * @param alpha transparency to draw with
      */
-    public GUITextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage pictureFull, @Nullable final BufferedImage pictureNegative, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font) {
-        super(tooltipManager, elementListener, name, extent, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix);
+    public GUITextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image pictureFull, @Nullable final Image pictureNegative, @NotNull final Image pictureEmpty, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font, final float alpha) {
+        super(tooltipManager, elementListener, name, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix, alpha);
         this.color = color;
         this.font = font;
     }
@@ -86,19 +86,17 @@ public class GUITextGauge extends GUIGauge {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        super.render(g2);
-
-        if (font == null) {
-            return;
-        }
-
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+        final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
         g2.setColor(color);
         g2.setFont(font);
         final String text = labelText;
         final RectangularShape rectangle = font.getStringBounds(text, g2.getFontRenderContext());
-        g2.drawString(text, (int)Math.round((getWidth()-rectangle.getWidth())/2), (int)Math.round(getHeight()-rectangle.getMaxY()-rectangle.getMinY())/2);
+        final int x = (int)Math.round((getWidth()-rectangle.getWidth())/2);
+        final int y = (int)Math.round(getHeight()-rectangle.getMaxY()-rectangle.getMinY())/2;
+        g2.drawString(text, x, y);
     }
 
     /**

@@ -56,6 +56,12 @@ public class PoisonWatcher {
     private static final String DE_ASSERT_MESSAGE = "You feel much better now.";
 
     /**
+     * The text message the server sends when the poison is cured via a spell.
+     */
+    @NotNull
+    private static final String CURE_MESSAGE = "Your body feels cleansed";
+
+    /**
      * The object used for synchronization.
      */
     @NotNull
@@ -134,7 +140,7 @@ public class PoisonWatcher {
     private void check(@NotNull final String message) {
         if (message.equals(ASSERT_MESSAGE)) {
             setActive(true);
-        } else if (message.equals(DE_ASSERT_MESSAGE)) {
+        } else if (message.equals(DE_ASSERT_MESSAGE) || message.equals(CURE_MESSAGE)) {
             setActive(false);
         }
     }

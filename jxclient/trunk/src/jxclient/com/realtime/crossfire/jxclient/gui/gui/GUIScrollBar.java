@@ -23,12 +23,13 @@ package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
-import java.awt.Graphics2D;
+import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A scroll bar gui element.
@@ -101,15 +102,14 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param proportionalSlider if set, make the slider size reflect the
      * visible area; if unset, display the slider as a square
      * @param scrollable the target element to scroll
      * @param colorBackground the background color of the slider
      * @param colorForeground the foreground color of the slider
      */
-    public GUIScrollBar(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final boolean proportionalSlider, @NotNull final GUIScrollable2 scrollable, @NotNull final Color colorBackground, @NotNull final Color colorForeground) {
-        super(tooltipManager, elementListener, name, extent, Transparency.OPAQUE);
+    public GUIScrollBar(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final boolean proportionalSlider, @NotNull final GUIScrollable2 scrollable, @NotNull final Color colorBackground, @NotNull final Color colorForeground) {
+        super(tooltipManager, elementListener, name, Transparency.OPAQUE);
         this.proportionalSlider = proportionalSlider;
         this.scrollable = scrollable;
         this.colorBackground = colorBackground;
@@ -254,14 +254,33 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
         final int sh = getSliderHeightPixels();
         final int sy = getSliderPosPixels(sh);
-        g2.setColor(colorBackground);
-        g2.fillRect(0, 0, getWidth(), sy);
-        g2.fillRect(0, sy+sh, getWidth(), getHeight()-sy-sh);
-        g2.setColor(colorForeground);
-        g2.fillRect(0, sy, getWidth(), sh);
+        g.setColor(colorBackground);
+        g.fillRect(0, 0, getWidth(), sy);
+        g.fillRect(0, sy+sh, getWidth(), getHeight()-sy-sh);
+        g.setColor(colorForeground);
+        g.fillRect(0, sy, getWidth(), sh);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getPreferredSize() {
+        return new Dimension(16, 64);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return new Dimension(16, 16);
     }
 
 }

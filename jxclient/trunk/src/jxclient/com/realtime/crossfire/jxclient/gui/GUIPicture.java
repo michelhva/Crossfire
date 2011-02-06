@@ -21,22 +21,23 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
-import java.awt.AlphaComposite;
-import java.awt.Graphics2D;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * @author Lauwenmark
  * @version 1.0
  * @since 1.0
  */
-public class GUIPicture extends GUIElement {
+public class GUIPicture extends AbstractGUIElement {
 
     /**
      * The serial version UID.
@@ -47,50 +48,64 @@ public class GUIPicture extends GUIElement {
      * The picture to paint.
      */
     @NotNull
-    private final BufferedImage image;
+    private final Image image;
 
     /**
-     * The transparency value.
+     * The preferred size of this component.
      */
-    private final float alpha;
+    @NotNull
+    private final Dimension preferredSize;
 
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param image the picture to paint
      * @param alpha the transparency value
+     * @param preferredWidth the preferred width of this picture
+     * @param preferredHeight the preferred height of this picture
      */
-    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage image, final float alpha) {
-        super(tooltipManager, elementListener, name, extent, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
+    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage image, final float alpha, final int preferredWidth, final int preferredHeight) {
+        super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
         this.image = image;
-        this.alpha = alpha;
+        preferredSize = new Dimension(preferredWidth, preferredHeight);
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+        g.drawImage(image, 0, 0, null);
     }
 
     /**
      * {@inheritDoc}
      */
+    @Nullable
     @Override
-    public void updateResolution(final int screenWidth, final int screenHeight) {
-        super.updateResolution(screenWidth, screenHeight);
-        synchronized (bufferedImageSync) {
-            final Graphics2D g = createBufferGraphics();
-            try {
-                g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
-                g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
-            } finally {
-                g.dispose();
-            }
-        }
+    public Dimension getPreferredSize() {
+        return new Dimension(preferredSize);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMinimumSize() {
+        return new Dimension(preferredSize);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Nullable
+    @Override
+    public Dimension getMaximumSize() {
+        return new Dimension(preferredSize);
     }
 
 }

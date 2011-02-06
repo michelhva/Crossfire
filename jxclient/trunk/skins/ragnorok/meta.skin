@@ -1,24 +1,31 @@
+commandlist command_metaup AND
+commandlist command_metadown AND
+commandlist command_metapageup AND
+commandlist command_metapagedown AND
+commandlist command_metaprev AND
+commandlist command_metanext AND
 
-fill background_black 0 0 WIDTH HEIGHT BLACK 1
-picture background WIDTH/2-512 HEIGHT/2-384 1024 768 background_metaserver 1
-text metaurl WIDTH/2-130 HEIGHT/2+236 260 20 textarea_big_active textarea_big_inactive font_metaurl WHITE GRAY 2 command_metaconnect false
-label_html metacomment WIDTH/2-300 HEIGHT/2+266 600 118 font_label WHITE
-meta_list metaselect WIDTH/2-242 HEIGHT/2-154 480 270 480 30 null font_metaurl metaurl metacomment command_metaconnect "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+fill background_black  BLACK 1
 
-commandlist_add command_metaconnect metaurl CONNECT
+picture background background_metaserver 1
 
-commandlist command_metaup AND metaselect SCROLL_LIST -1
-commandlist command_metadown AND metaselect SCROLL_LIST 1
+button metaconnect connect_up connect_down false command_metaconnect
+button metaup metaup metaup true command_metaup
+button metadown metadown metadown true command_metadown
 
-commandlist command_metapageup AND metaselect SCROLL_LIST -8
-commandlist command_metapagedown AND metaselect SCROLL_LIST 8
+text metaurl textarea_big_active textarea_big_inactive font_metaurl WHITE GRAY 2 command_metaconnect false
 
-commandlist command_metaprev AND metaselect MOVE_SELECTION 0 -1
-commandlist command_metanext AND metaselect MOVE_SELECTION 0 1
+label_html metacomment font_label WHITE
 
-button metaconnect WIDTH/2+130+16 HEIGHT/2+236-16+10 32 32 connect_up connect_down false command_metaconnect
-button metaup      WIDTH/2-12 HEIGHT/2-184  20 25 metaup metaup true command_metaup
-button metadown    WIDTH/2-12 HEIGHT/2+121  20 25 metadown metadown true command_metadown
+meta_list metaselect 480 30 null font_metaurl metaurl metacomment command_metaconnect "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+
+commandlist_add command_metaconnect  metaurl    CONNECT
+commandlist_add command_metaup       metaselect SCROLL_LIST -1
+commandlist_add command_metadown     metaselect SCROLL_LIST 1
+commandlist_add command_metapageup   metaselect SCROLL_LIST -8
+commandlist_add command_metapagedown metaselect SCROLL_LIST 8
+commandlist_add command_metaprev     metaselect MOVE_SELECTION 0 -1
+commandlist_add command_metanext     metaselect MOVE_SELECTION 0 1
 
 set_default metaurl
 set_forced_active metaurl
@@ -29,5 +36,84 @@ key code DOWN      0 exec command_metanext
 key code KP_DOWN   0 exec command_metanext
 key code PAGE_UP   0 exec command_metapageup
 key code PAGE_DOWN 0 exec command_metapagedown
-key char 10        exec command_metaconnect
-key char 13        exec command_metaconnect
+key char 10          exec command_metaconnect
+key char 13          exec command_metaconnect
+
+horizontal begin par
+  begin seq
+    border_gap
+    begin par
+      begin seq
+        gap
+        metaup
+        gap
+      end
+      begin seq
+        gap
+        metaselect 504
+        gap
+      end
+      begin seq
+        gap
+        metadown
+        gap
+      end
+      begin seq
+        gap
+        metaurl
+        gap 16
+        metaconnect
+        gap
+      end
+      begin seq
+        gap
+        metacomment 624
+        gap
+      end
+      begin seq
+        gap
+        background
+        gap
+      end
+    end
+    border_gap
+  end
+  background_black
+end
+
+vertical begin par
+  begin seq
+    border_gap
+    begin par
+      begin seq
+        gap 180
+        metaup
+        gap 20
+        metaselect 270
+        gap 20
+        metadown
+        gap 60
+        begin par
+          begin seq
+            gap
+            metaurl
+            gap
+          end
+          begin seq
+            gap
+            metaconnect
+            gap
+          end
+        end
+        gap 20
+        begin par
+          metacomment
+          gap 100
+        end
+      end
+      background
+    end
+    border_gap
+  end
+  background_black
+end

@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -42,7 +43,6 @@ import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
-import java.awt.Dimension;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -283,7 +283,7 @@ public class GuiManager {
             }
 
             closeTransientDialogs();
-            updateServerSettings();
+            windowRenderer.updateServerSettings();
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.LOGIN);
             showGUIMain();
@@ -517,11 +517,11 @@ public class GuiManager {
                             final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
                             if (accountPassword != null) {
                                 accountPassword.setText("");
-                                accountPassword.setActive(true);
+                                GuiUtils.setActive(accountPassword, true);
                             }
                         } else {
                             accountLogin.setText("");
-                            accountLogin.setActive(true);
+                            GuiUtils.setActive(accountLogin, true);
 
                             final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
                             if (accountPassword != null) {
@@ -885,29 +885,19 @@ public class GuiManager {
 
     /**
      * Sets a new window size.
-     * @param size the new window size
+     * @param width the new window width
+     * @param height the new window height
      */
-    public void updateWindowSize(@NotNull final Dimension size) {
+    public void updateWindowSize(final int width, final int height) {
         if (skin != null) {
-            skin.setScreenSize(size.width, size.height);
+            skin.setScreenSize(width, height);
             assert skin != null;
             for (final Gui dialog : skin) {
-                windowRenderer.showDialogAuto(dialog);
+                dialog.autoSize(width, height);
+                dialog.showDialog(dialog.getX(), dialog.getY(), width, height);
             }
-            tooltipManager.setScreenSize(size.width, size.height);
-            updateServerSettings();
+            tooltipManager.setScreenSize(width, height);
         }
-    }
-
-    /**
-     * Updates server based settings to current screen size.
-     */
-    private void updateServerSettings() {
-        assert skin != null;
-        final Dimension mapSize = skin.getMapSize();
-        server.setPreferredMapSize(mapSize.width, mapSize.height);
-        assert skin != null;
-        server.setPreferredNumLookObjects(skin.getNumLookObjects());
     }
 
     /**

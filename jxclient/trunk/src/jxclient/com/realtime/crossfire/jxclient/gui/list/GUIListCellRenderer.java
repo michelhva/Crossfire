@@ -31,10 +31,10 @@ import javax.swing.ListCellRenderer;
 public interface GUIListCellRenderer extends ListCellRenderer {
 
     /**
-     * Updates the location and size to a new screen resolution.
-     * @param screenWidth the new screen width
-     * @param screenHeight the new screen height
+     * Updates the component's size.
+     * @param width the new width
+     * @param height the new height
      */
-    void updateResolution(int screenWidth, int screenHeight);
+    void setSize(final int width, int height);
 
 }

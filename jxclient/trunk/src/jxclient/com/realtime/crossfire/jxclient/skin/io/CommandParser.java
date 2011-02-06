@@ -52,6 +52,7 @@ import com.realtime.crossfire.jxclient.gui.commands.ScrollResetCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ShowCommand;
 import com.realtime.crossfire.jxclient.gui.commands.StartCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ToggleCommand;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.item.GUIItem;
@@ -67,6 +68,7 @@ import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.util.NumberParser;
+import java.awt.Component;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import org.jetbrains.annotations.NotNull;
@@ -95,7 +97,7 @@ public class CommandParser {
      * The defined GUI elements.
      */
     @NotNull
-    private final JXCSkinCache<GUIElement> definedGUIElements;
+    private final JXCSkinCache<AbstractGUIElement> definedGUIElements;
 
     /**
      * Creates a new instance.
@@ -103,7 +105,7 @@ public class CommandParser {
      * @param floorView the floor view to use
      * @param definedGUIElements the defined GUI elements
      */
-    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final FloorView floorView, @NotNull final JXCSkinCache<GUIElement> definedGUIElements) {
+    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final FloorView floorView, @NotNull final JXCSkinCache<AbstractGUIElement> definedGUIElements) {
         this.dialogs = dialogs;
         this.floorView = floorView;
         this.definedGUIElements = definedGUIElements;
@@ -126,7 +128,7 @@ public class CommandParser {
      * @throws JXCSkinException if an element cannot be found
      */
     @NotNull
-    public GUICommand parseCommandArgs(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
+    public GUICommand parseCommandArgs(@NotNull final Args args, @Nullable final AbstractGUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
         if (command.equals("SHOW")) {
             return parseShow(element);
         } else if (command.equals("HIDE")) {
@@ -189,7 +191,7 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseShow(@Nullable final GUIElement element) throws IOException {
+    private static GUICommand parseShow(@Nullable final Component element) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -204,7 +206,7 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseHide(@Nullable final GUIElement element) throws IOException {
+    private static GUICommand parseHide(@Nullable final Component element) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -219,7 +221,7 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseToggle(@Nullable final GUIElement element) throws IOException {
+    private static GUICommand parseToggle(@Nullable final Component element) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -576,7 +578,7 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountLogin(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private static GUICommand parseAccountLogin(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -592,7 +594,7 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountCreate(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private static GUICommand parseAccountCreate(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -608,7 +610,7 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountPlay(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private static GUICommand parseAccountPlay(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -624,7 +626,7 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountLink(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private static GUICommand parseAccountLink(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
@@ -640,7 +642,7 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountCreateCharacter(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private static GUICommand parseAccountCreateCharacter(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }

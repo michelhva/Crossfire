@@ -25,16 +25,17 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
 import java.awt.Color;
-import java.awt.Graphics2D;
+import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -83,16 +84,6 @@ public class GUIItemSpellList extends GUIItem {
 
     @NotNull
     private final CurrentSpellManager currentSpellManager;
-
-    /**
-     * The spell list's width in pixel.
-     */
-    private final int w;
-
-    /**
-     * The spell list's height in pixel.
-     */
-    private final int h;
 
     @Nullable
     private Spell spell = null;
@@ -155,13 +146,12 @@ public class GUIItemSpellList extends GUIItem {
      * @param elementListener the element listener to notify
      * @param commandQueue the command queue for sending commands
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param defaultIndex the default scroll index
      * @param facesManager the faces manager for looking up faces
      * @param spellsManager the spells manager instance to watch
      */
-    public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final Extent extent, @Nullable final Color selectorColor, @Nullable final Image selectorImage, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager) {
-        super(tooltipManager, elementListener, name, extent);
+    public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @Nullable final Color selectorColor, @Nullable final Image selectorImage, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager) {
+        super(tooltipManager, elementListener, name);
         this.commandQueue = commandQueue;
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
@@ -172,8 +162,6 @@ public class GUIItemSpellList extends GUIItem {
         setIndex(defaultIndex);
         this.spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
         this.facesManager.addFacesManagerListener(facesManagerListener);
-        w = extent.getConstantW();
-        h = extent.getConstantH();
     }
 
     /**
@@ -253,23 +241,52 @@ public class GUIItemSpellList extends GUIItem {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        g2.setBackground(BACKGROUND_COLOR);
-        g2.clearRect(0, 0, getWidth(), getHeight());
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+
+        g.setColor(BACKGROUND_COLOR);
+        g.fillRect(0, 0, getWidth(), getHeight());
 
         if (spell == null) {
             return;
         }
 
-        if (isActive() && selectorColor != null) {
-            g2.setColor(selectorColor);
-            g2.fillRect(0, 0, w, h);
+        if (GuiUtils.isActive(this) && selectorColor != null) {
+            g.setColor(selectorColor);
+            g.fillRect(0, 0, getWidth(), getHeight());
         }
         assert spell != null;
-        g2.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
-        if (isActive() && selectorImage != null) {
-            g2.drawImage(selectorImage, 0, 0, null);
+        g.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
+        if (GuiUtils.isActive(this) && selectorImage != null) {
+            g.drawImage(selectorImage, 0, 0, null);
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getPreferredSize() {
+        return getMinimumSizeInt();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getMinimumSize() {
+        return getMinimumSizeInt();
+    }
+
+    /**
+     * Returns the minimal size to display this component.
+     * @return the minimal size
+     */
+    @NotNull
+    private static Dimension getMinimumSizeInt() {
+        return new Dimension(32, 32);
     }
 
     private void setSpell() {

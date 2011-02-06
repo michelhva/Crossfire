@@ -21,15 +21,14 @@
 
 package com.realtime.crossfire.jxclient.gui.gauge;
 
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
-import java.awt.Graphics2D;
+import java.awt.Dimension;
+import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Transparency;
-import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -38,7 +37,7 @@ import org.jetbrains.annotations.Nullable;
  * value.
  * @author Andreas Kirschbaum
  */
-public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
+public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener {
 
     /**
      * The serial version UID.
@@ -100,7 +99,6 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param extent the extent of this element
      * @param fullImageDiv the top image
      * @param fullImageMod the bottom image
      * @param emptyImage the image representing an empty gauge; if set to
@@ -110,18 +108,15 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      */
-    public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage fullImageDiv, @NotNull final BufferedImage fullImageMod, @Nullable final Image emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix) {
-        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
-        final int w = extent.getConstantW();
-        final int h = extent.getConstantH();
-        checkSize(fullImageDiv, "full-div", w, h/2);
-        checkSize(fullImageMod, "full-mod", w, h/2);
-        checkSize(emptyImage, "empty", w, h);
+    public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image fullImageDiv, @NotNull final Image fullImageMod, @Nullable final Image emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         this.emptyImage = emptyImage;
         this.orientationDiv = orientationDiv;
         this.orientationMod = orientationMod;
         this.tooltipPrefix = tooltipPrefix;
         gaugeStateDiv = new GaugeState(fullImageDiv, null, 0, 0);
+        final int w = getWidth();
+        final int h = getHeight();
         gaugeStateMod = new GaugeState(fullImageMod, null, 0, h/2);
         orientationDiv.setExtends(w, h);
         orientationMod.setExtends(w, h);
@@ -133,42 +128,57 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
     }
 
     /**
-     * Validates an image's size: checks if the given image has the given size
-     * (in pixels).
-     * @param image the image to validate; if set to <code>null</code> no
-     * exception is thrown
-     * @param name the image's name for generating error messages
-     * @param w the expected image width
-     * @param h the expected image height
-     * @throws IllegalArgumentException if <code>image</code> is not
-     * <code>null</code> and it's size is not <code>w</code>x<code>h</code>
+     * {@inheritDoc}
      */
-    private static void checkSize(@Nullable final Image image, @NotNull final String name, final int w, final int h) {
-        if (image == null) {
-            return;
+    @Override
+    public void paintComponent(@NotNull final Graphics g) {
+        super.paintComponent(g);
+        g.setColor(new Color(0, 0, 0, 0.0f));
+        g.fillRect(0, 0, getWidth(), getHeight());
+        if (emptyImage != null) {
+            g.drawImage(emptyImage, 0, 0, null);
         }
-
-        if (image.getWidth(null) != w) {
-            throw new IllegalArgumentException("width of '"+name+"' does not match element width");
-        }
-
-        if (image.getHeight(null) != h) {
-            throw new IllegalArgumentException("height of '"+name+"' does not match element height");
-        }
+        gaugeStateDiv.draw(g);
+        gaugeStateMod.draw(g);
     }
 
     /**
      * {@inheritDoc}
      */
+    @NotNull
     @Override
-    protected void render(@NotNull final Graphics2D g2) {
-        g2.setBackground(new Color(0, 0, 0, 0.0f));
-        g2.clearRect(0, 0, getWidth(), getHeight());
-        if (emptyImage != null) {
-            g2.drawImage(emptyImage, 0, 0, null);
-        }
-        gaugeStateDiv.draw(g2);
-        gaugeStateMod.draw(g2);
+    public Dimension getPreferredSize() {
+        return getGaugeStateSize();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getMinimumSize() {
+        return getGaugeStateSize();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Dimension getMaximumSize() {
+        return getGaugeStateSize();
+    }
+
+    /**
+     * Returns the maximum size of {@link #gaugeStateDiv} and {@link
+     * #gaugeStateMod}.
+     * @return the maximum size
+     */
+    @NotNull
+    private Dimension getGaugeStateSize() {
+        final Dimension div = gaugeStateDiv.getPreferredSize();
+        final Dimension mod = gaugeStateMod.getPreferredSize();
+        return new Dimension(Math.max(div.width, mod.width), div.height+mod.height);
     }
 
     /**
@@ -205,6 +215,17 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
      */
     private void updateTooltipText() {
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setBounds(final int x, final int y, final int width, final int height) {
+        super.setBounds(x, y, width, height);
+        gaugeStateMod.setDy(height/2);
+        orientationDiv.setExtends(width, height);
+        orientationMod.setExtends(width, height);
     }
 
 }

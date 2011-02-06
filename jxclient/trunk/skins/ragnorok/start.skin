@@ -1,10 +1,57 @@
+fill background_black  BLACK 1
 
-picture background WIDTH/2-512 HEIGHT/2-384 1024 768 background_start 1
+picture background background_start 1
 
-textbutton meta    210 200 600 18 false command_meta Connect to a game server
-textbutton new     210 300 600 18 false command_meta Create a new character (not implemented)
-textbutton load    210 400 600 18 false command_meta Load a saved character (not implemented)
-textbutton options 210 500 600 18 false command_meta Options (not implemented)
-textbutton quit    210 600 600 18 false command_quit Leave Crossfire
+textbutton meta    false command_meta Connect to a game server
+textbutton new     false command_meta Create a new character (not implemented)
+textbutton load    false command_meta Load a saved character (not implemented)
+textbutton options false command_meta Options (not implemented)
+textbutton quit    false command_quit Leave Crossfire
 
 set_default meta
+
+horizontal begin par
+  begin seq
+  gap
+    begin par
+      begin seq
+        gap 50
+        begin par
+          meta
+          new
+          load
+          options
+          quit
+        end
+        gap 50
+      end
+      background
+    end
+    gap
+  end
+  background_black
+end
+
+vertical begin par
+  begin seq
+    gap
+    begin par
+      begin seq
+        gap 200
+        meta
+        gap
+        new
+        gap
+        load
+        gap
+        options
+        gap
+        quit
+        gap 200
+      end
+      background
+    end
+    gap
+  end
+  background_black
+end

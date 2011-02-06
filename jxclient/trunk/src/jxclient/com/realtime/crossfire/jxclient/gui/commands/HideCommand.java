@@ -22,6 +22,9 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
+import java.awt.Component;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -34,13 +37,13 @@ public class HideCommand implements GUICommand {
      * The gui element to hide.
      */
     @NotNull
-    private final GUIElement target;
+    private final Component target;
 
     /**
      * Creates a new instance.
      * @param target the gui element to hide
      */
-    public HideCommand(@NotNull final GUIElement target) {
+    public HideCommand(@NotNull final Component target) {
         this.target = target;
     }
 
@@ -57,7 +60,14 @@ public class HideCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        target.setElementVisible(false);
+        if (!target.isVisible()) {
+            return;
+        }
+        target.setVisible(false);
+        final Gui gui = GuiUtils.getGui(target);
+        if (gui != null) {
+            gui.resizeDialog();
+        }
     }
 
 }
