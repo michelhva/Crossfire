@@ -680,12 +680,4 @@ public class Gui extends JComponent {
         setPosition(newX, newY);
     }
 
-    /**
-     * Resizes the dialog to make all components visible.
-     */
-    public void resizeDialog() {
-     //   setSize(getPreferredSize());
-        revalidate();
-    }
-
 }
