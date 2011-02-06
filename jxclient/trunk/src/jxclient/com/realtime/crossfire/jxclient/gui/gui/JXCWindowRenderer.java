@@ -221,11 +221,6 @@ public class JXCWindowRenderer {
     private int windowHeight = 0;
 
     /**
-     * If set, the content of {@link #openDialogs} has changed.
-     */
-    private boolean openDialogsChanged = false;
-
-    /**
      * Currently opened dialogs. The ordering is the painting order: the topmost
      * dialog is at the end.
      */
@@ -237,11 +232,6 @@ public class JXCWindowRenderer {
      */
     @NotNull
     private final Collection<RendererGuiStateListener> rendererGuiStateListeners = new CopyOnWriteArrayList<RendererGuiStateListener>();
-
-    /**
-     * If set, {@link #currentGui} has changed.
-     */
-    private boolean currentGuiChanged = false;
 
     /**
      * The currently displayed {@link Gui}.
@@ -718,7 +708,6 @@ public class JXCWindowRenderer {
         }
         openDialogsAdd(dialog);
         updateServerSettings();
-        openDialogsChanged = true;
         return true;
     }
 
@@ -744,7 +733,6 @@ public class JXCWindowRenderer {
         }
         openDialogsAdd(dialog);
         updateServerSettings();
-        openDialogsChanged = true;
     }
 
     /**
@@ -784,7 +772,6 @@ public class JXCWindowRenderer {
         if (frame != null) {
             addToLayeredPane(currentGui, 0, -1);
         }
-        currentGuiChanged = true;
 
         if (windowWidth > 0 && windowHeight > 0) {
             assert currentGui != null;
@@ -794,33 +781,6 @@ public class JXCWindowRenderer {
             frame.validate();
         }
         updateServerSettings();
-    }
-
-    /**
-     * Checks whether any gui element has changed and needs a redraw.
-     * @return whether any gui element has changed
-     */
-    private boolean needRedraw() {
-        if (openDialogsChanged) {
-            return true;
-        }
-
-        if (currentGuiChanged) {
-            return true;
-        }
-
-        assert currentGui != null;
-        if (currentGui.needRedraw()) {
-            return true;
-        }
-
-        for (final Gui dialog : openDialogs) {
-            if (!dialog.isHidden(rendererGuiState) && dialog.needRedraw()) {
-                return true;
-            }
-        }
-
-        return tooltip != null && tooltip.isChanged();
     }
 
     /**
@@ -834,7 +794,6 @@ public class JXCWindowRenderer {
                 GuiUtils.setActive(activeElement, false);
             }
             updateServerSettings();
-            openDialogsChanged = true;
         }
     }
 
@@ -847,8 +806,6 @@ public class JXCWindowRenderer {
         if (dialog == currentGui) {
             return true;
         }
-
-        openDialogsChanged = true;
 
         if (openDialogsRemove(dialog)) {
             final ActivatableGUIElement activeElement = dialog.getActiveElement();
