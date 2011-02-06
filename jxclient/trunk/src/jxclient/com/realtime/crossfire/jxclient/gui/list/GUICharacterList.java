@@ -118,6 +118,7 @@ public class GUICharacterList extends GUIList {
         this.characterModel = characterModel;
         this.facesManager = facesManager;
         this.facesManager.addFacesManagerListener(new FacesManagerListener() {
+            @Override
             public void faceUpdated(@NotNull final Face face) {
                 repaint();
             }
