@@ -1995,7 +1995,7 @@ public class JXCSkinLoader {
         final int cellWidth = ExpressionParser.parseInt(args.get());
         final int cellHeight = ExpressionParser.parseInt(args.get());
         final Font font = definedFonts.lookup(args.get());
-        final AbstractGUIElement list = new GUICharacterList(tooltipManager, elementListener, name, cellWidth, cellHeight, font, characterModel);
+        final AbstractGUIElement list = new GUICharacterList(tooltipManager, facesManager, elementListener, name, cellWidth, cellHeight, font, characterModel);
         insertGuiElement(list);
     }
 
