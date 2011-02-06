@@ -133,10 +133,9 @@ public class Buffer {
         this.renderWidth = renderWidth;
 
         synchronized (sync) {
-            int height;
             totalHeight = 0;
             for (Line line : lines) {
-                height = calculateHeight(line);
+                int height = calculateHeight(line);
                 line.setHeight(height);
                 totalHeight += height;
             }
