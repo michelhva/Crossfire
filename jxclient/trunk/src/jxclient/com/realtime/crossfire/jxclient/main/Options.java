@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.main;
 
-import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import java.io.IOException;
@@ -43,8 +42,6 @@ public class Options {
     /**
      * The {@link Settings} for saving/restoring defaults.
      */
-    @Nullable
-    private Settings settings = null;
 
     /**
      * Whether full-screen mode should be enabled.
@@ -120,7 +117,6 @@ public class Options {
      * @throws IOException if an I/O error occurs
      */
     public void parse(@NotNull final String[] args) throws IOException {
-        settings = new Settings(Filenames.getSettingsFile());
         resolution = null;
         skin = "default";
 
@@ -202,10 +198,6 @@ public class Options {
             }
             i++;
         }
-        settings.remove("resolution"); // delete obsolete entry
-        settings.remove("width"); // delete obsolete entry
-        settings.remove("height"); // delete obsolete entry
-        settings.remove("skin"); // delete obsolete entry
 
         // Map "default to actual skin name; must be after skin name has
         // been written to preferences.
@@ -249,15 +241,6 @@ public class Options {
     @Nullable
     public String getDebugSoundFilename() {
         return debugSoundFilename;
-    }
-
-    /**
-     * Returns the {@link Settings} for restoring/saving settings.
-     * @return the settings
-     */
-    @NotNull
-    public Settings getSettings() {
-        return settings;
     }
 
     /**
