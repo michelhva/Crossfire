@@ -100,7 +100,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * @param defaultIndex the initial metaserver index
      * @param characterModel the character model to monitor
      */
-    public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull FacesManager facesManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final Font font, final int defaultIndex, final CharacterModel characterModel) {
+    public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull final FacesManager facesManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final Font font, final int defaultIndex, final CharacterModel characterModel) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         setSize(w, h);
         this.facesManager = facesManager;
