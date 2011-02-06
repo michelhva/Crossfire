@@ -2161,6 +2161,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (info == null) {
                         throw new IOException("Truncated parameter in image_info");
                     }
+                    //noinspection UnusedAssignment
                     final int nrPics = Integer.parseInt(info);
                     // XXX: replyinfo image_info not implemented
                 } finally {

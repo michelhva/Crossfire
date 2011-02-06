@@ -86,6 +86,7 @@ public class GUILabelStats extends GUIOneLineLabel {
             case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
             case CrossfireStatsListener.C_STAT_WEIGHT:
                 if (stat == statNo) {
+                    //noinspection IntegerDivisionInFloatingPointContext
                     setText(Formatter.formatFloat(((value+50)/100)/10.0, 1));
                     setTooltipText(Formatter.formatFloat(value/1000.0, 3)+"kg");
                 }
