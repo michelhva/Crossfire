@@ -477,6 +477,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                     //                    final RectangularShape rectangleCursor = font.getStringBounds(tmpCursor, fontRenderContext);
                     final Dimension dimension = GuiUtils.getTextDimension(tmpCursor, font);
                     //                    final int cursorX = (int)Math.round(rectangleCursor.getWidth());
+                    //noinspection NonPrivateFieldAccessedInSynchronizedContext
                     final int cursorX = dimension.width;
                     if (cursorX < getWidth()) {
                         break;
