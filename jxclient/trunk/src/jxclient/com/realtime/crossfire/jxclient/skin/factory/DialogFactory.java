@@ -207,7 +207,7 @@ public class DialogFactory {
     @NotNull
     public Collection<AbstractGUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String title) {
         final Collection<AbstractGUIElement> result = new ArrayList<AbstractGUIElement>();
-        result.add(new GUIDialogBackground(tooltipManager, elementListener, "dialog_background", this.frameAlpha, frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE));
+        result.add(new GUIDialogBackground(tooltipManager, elementListener, "dialog_background", frameAlpha, frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE));
 
         if (title.length() > 0) {
             result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, "dialog_title", titleFont, titleColor, titleBackgroundColor, title));
