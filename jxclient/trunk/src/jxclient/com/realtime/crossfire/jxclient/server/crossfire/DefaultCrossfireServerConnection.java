@@ -2869,7 +2869,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             for (int x = 0; x < width; x++) {
                 final byte ch = packet.get();
                 for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                    //listener.mapMagicMap(x-px-(currentMapWidth-1)/2+currentMapWidth-1, y-py-(currentMapHeight-1)/2+currentMapHeight-1, ch&FACE_COLOR_MASK);
                     listener.mapMagicMap(x-px+(currentMapWidth-1)/2, y-py+(currentMapHeight-1)/2, ch&FACE_COLOR_MASK);
                 }
             }
@@ -3960,15 +3959,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param currentNumLookObjects the number of objects
      */
     private void setCurrentNumLookObjects(final int currentNumLookObjects) {
-        if (this.currentNumLookObjects == currentNumLookObjects) {
-            return;
-        }
-
-        final int prevNumLookObjects = currentNumLookObjects;
         this.currentNumLookObjects = currentNumLookObjects;
-        //for (final NumLookObjectsListener listener : numLookObjectsListeners) {
-        //    listener.numLookObjectsChanged(currentNumLookObjects);
-        //}
     }
 
     /**
@@ -3993,22 +3984,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         this.preferredNumLookObjects = preferredNumLookObjects2;
 
         negotiateNumLookObjects(this.preferredNumLookObjects);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int getMapWidth() {
-        return currentMapWidth;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int getMapHeight() {
-        return currentMapHeight;
     }
 
     /**

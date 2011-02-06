@@ -97,11 +97,6 @@ public class Gui extends JComponent {
     private ActivatableGUIElement activeElement = null;
 
     /**
-     * Records whether at least one gui element has changed since last redraw.
-     */
-    private boolean hasChangedElements = false;
-
-    /**
      * Whether an initial position has been set.
      */
     private boolean initialPositionSet = false;
@@ -138,21 +133,6 @@ public class Gui extends JComponent {
     }
 
     /**
-     * Sets the size of this dialog. Marks this gui as a "dialog".
-     * @param width the width
-     * @param height the height
-     */
-    @Override
-    public void setBounds(final int x, final int y, final int width, final int height) {
-        if (getX() == x && getY() == y && getWidth() == width && getHeight() == height) {
-            return;
-        }
-
-        super.setBounds(x, y, width, height);
-        hasChangedElements = true;
-    }
-
-    /**
      * Sets the position of this dialog.
      * @param x the x-coordinate
      * @param y the y-coordinate
@@ -168,7 +148,6 @@ public class Gui extends JComponent {
 
         initialPositionSet = true;
         setLocation(x, y);
-        hasChangedElements = true;
     }
 
     /**
@@ -204,16 +183,6 @@ public class Gui extends JComponent {
      */
     public boolean isModal() {
         return modal;
-    }
-
-    /**
-     * Checks whether any visible gui element of this gui has been changed since
-     * it was painted last time.
-     * @return <code>true</code> if any gui element has changed;
-     *         <code>false</code> otherwise
-     */
-    public boolean needRedraw() {
-        return hasChangedElements;
     }
 
     /**
@@ -518,13 +487,6 @@ public class Gui extends JComponent {
             }
         }
         return null;
-    }
-
-    /**
-     * Notifies that one gui element has changed since last redraw.
-     */
-    public void setChangedElements() {
-        hasChangedElements = true;
     }
 
     /**

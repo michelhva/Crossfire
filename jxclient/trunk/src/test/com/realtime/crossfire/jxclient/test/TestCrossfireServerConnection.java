@@ -461,24 +461,6 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
     /**
      * {@inheritDoc}
      */
-    @Override
-    public int getMapWidth() {
-        Assert.fail();
-        throw new AssertionError();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int getMapHeight() {
-        Assert.fail();
-        throw new AssertionError();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public String getAccountName() {

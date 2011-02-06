@@ -232,11 +232,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
         repaint();
         changed = true;
         if (isVisible()) {
-            final Gui gui = GuiUtils.getGui(this);
-            if (gui != null) {
-                gui.setChangedElements();
-            }
-
             if (changedListener != null) {
                 changedListener.notifyChanged(this);
             }

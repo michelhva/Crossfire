@@ -119,13 +119,4 @@ public class FacesQueue extends AbstractFaceQueue {
         fileCacheFaceQueue.loadFace(face);
     }
 
-    /**
-     * Returns the {@link AskfaceFaceQueue} instance.
-     * @return the askface queue
-     */
-    @NotNull
-    public AskfaceFaceQueue getAskfaceQueue() {
-        return askfaceFaceQueue;
-    }
-
 }

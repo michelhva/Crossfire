@@ -69,40 +69,6 @@ public class Extent {
     }
 
     /**
-     * Creates a new instance.
-     * @param x the x coordinate
-     * @param y the y coordinate
-     * @param w the width
-     * @param h thr height
-     */
-    public Extent(final int x, final int y, final int w, final int h) {
-        this.x = new Expression(x, 0, 0, 0, 0);
-        this.y = new Expression(y, 0, 0, 0, 0);
-        this.w = new Expression(w, 0, 0, 0, 0);
-        this.h = new Expression(h, 0, 0, 0, 0);
-    }
-
-    /**
-     * Sets the location.
-     * @param x the x coordinate
-     * @param y the y coordinate
-     */
-    public void setLocation(@NotNull final Expression x, @NotNull final Expression y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    /**
-     * Sets the size.
-     * @param w the width
-     * @param h the height
-     */
-    public void setSize(@NotNull final Expression w, @NotNull final Expression h) {
-        this.w = w;
-        this.h = h;
-    }
-
-    /**
      * Returns the x coordinate.
      * @param width the screen width
      * @param height the screen height
@@ -148,40 +114,6 @@ public class Extent {
      */
     public int getH(final int width, final int height, final int prefWidth, final int prefHeight) {
         return h.evaluate(width, height, prefWidth, prefHeight);
-    }
-
-    /**
-     * Returns the width. The width must evaluate to a constant.
-     * @return the width
-     */
-    public int getConstantW() {
-        return w.evaluateConstant();
-    }
-
-    /**
-     * Returns the height. The width must evaluate to a constant.
-     * @return the height
-     */
-    public int getConstantH() {
-        return h.evaluateConstant();
-    }
-
-    /**
-     * Returns the width.
-     * @return the width
-     */
-    @NotNull
-    public Expression getWExpression() {
-        return w;
-    }
-
-    /**
-     * Returns the height.
-     * @return the height
-     */
-    @NotNull
-    public Expression getHExpression() {
-        return h;
     }
 
 }
