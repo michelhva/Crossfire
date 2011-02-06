@@ -216,18 +216,6 @@ public class JXCWindow {
                 exiter.terminate();
             }
         }
-
-        /** {@inheritDoc} */
-        @Override
-        public void windowIconified(@NotNull final WindowEvent e) {
-            windowRenderer.setInhibitPaintIconified(true);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void windowDeiconified(@NotNull final WindowEvent e) {
-            windowRenderer.setInhibitPaintIconified(false);
-        }
     };
 
     /**

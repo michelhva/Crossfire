@@ -30,7 +30,6 @@ import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.gui.map.GUIMap;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import java.awt.Color;
 import java.awt.Component;
@@ -271,30 +270,6 @@ public class JXCWindowRenderer {
     private AbstractGUIElement tooltip = null;
 
     /**
-     * If set, force a full repaint.
-     */
-    private volatile boolean forcePaint = false;
-
-    /**
-     * If set, do not repaint anything. It it set while a map update is in
-     * progress.
-     */
-    private volatile boolean inhibitPaintMapUpdate = false;
-
-    /**
-     * If set, do not repaint anything. It it set while the main window is
-     * iconified.
-     */
-    private volatile boolean inhibitPaintIconified = false;
-
-    /**
-     * If set, at least one call to {@link #redrawGUI()} has been dropped while
-     * {@link #inhibitPaintMapUpdate} or {@link #inhibitPaintIconified} was
-     * set.
-     */
-    private volatile boolean skippedPaint = false;
-
-    /**
      * The x-offset of the visible window.
      */
     private int offsetX = 0;
@@ -338,106 +313,6 @@ public class JXCWindowRenderer {
         @Override
         public void autoClosed(@NotNull final Gui gui) {
             closeDialog(gui);
-        }
-
-    };
-
-    /**
-     * The listener to detect map model changes.
-     */
-    @NotNull
-    private final CrossfireUpdateMapListener crossfireUpdateMapListener = new CrossfireUpdateMapListener() {
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void newMap(final int mapWidth, final int mapHeight) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void mapBegin() {
-            inhibitPaintMapUpdate = true;
-            skippedPaint = false;
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void mapClear(final int x, final int y) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void mapDarkness(final int x, final int y, final int darkness) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void mapFace(final int x, final int y, final int layer, final int faceNum) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void mapAnimationSpeed(final int x, final int y, final int layer, final int animSpeed) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void scroll(final int dx, final int dy) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void mapMagicMap(final int x, final int y, final int color) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void mapEnd() {
-            if (skippedPaint) {
-                forcePaint = true;
-            }
-            inhibitPaintMapUpdate = false;
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void addAnimation(final int animation, final int flags, @NotNull final int[] faces) {
-            // ignore
         }
 
     };
@@ -501,7 +376,6 @@ public class JXCWindowRenderer {
         this.redrawSemaphore = redrawSemaphore;
         this.crossfireServerConnection = crossfireServerConnection;
         this.debugScreen = debugScreen;
-        crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
         graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
         graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
         defaultDisplayMode = graphicsDevice.getDisplayMode();
@@ -786,44 +660,6 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Redraws the current gui.
-     */
-    private void redrawGUI() {
-        if (inhibitPaintMapUpdate || inhibitPaintIconified || frame == null) {
-            skippedPaint = true;
-            return;
-        }
-        if (bufferStrategy == null) {
-            return;
-        }
-        if (forcePaint) {
-            forcePaint = false;
-        } else if (!needRedraw()) {
-            return;
-        }
-
-        do {
-            do {
-                assert bufferStrategy != null;
-                final Graphics g = bufferStrategy.getDrawGraphics();
-                try {
-                    assert bufferStrategy != null;
-                    if (bufferStrategy.contentsRestored()) {
-                        redrawBlack(g);
-                    }
-                    redraw(g);
-                } finally {
-                    g.dispose();
-                }
-                assert bufferStrategy != null;
-            } while (bufferStrategy.contentsLost());
-            assert bufferStrategy != null;
-            bufferStrategy.show();
-            assert bufferStrategy != null;
-        } while (bufferStrategy.contentsLost());
-    }
-
-    /**
      * Paints the view into the given graphics instance.
      * @param g the graphics instance to paint to
      */
@@ -1065,7 +901,6 @@ public class JXCWindowRenderer {
             frame.validate();
         }
         updateServerSettings();
-        forcePaint = true;
         for (final RendererGuiStateListener listener : rendererGuiStateListeners) {
             listener.guiStateChanged(rendererGuiState);
         }
@@ -1328,14 +1163,6 @@ public class JXCWindowRenderer {
         public void remove() {
             throw new UnsupportedOperationException();
         }
-    }
-
-    /**
-     * Inhibits or allows painting while the main window is iconified.
-     * @param inhibitPaintIconified whether the main window is iconified
-     */
-    public void setInhibitPaintIconified(final boolean inhibitPaintIconified) {
-        this.inhibitPaintIconified = inhibitPaintIconified;
     }
 
     /**
