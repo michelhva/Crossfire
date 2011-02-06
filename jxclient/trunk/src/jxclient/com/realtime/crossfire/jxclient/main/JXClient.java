@@ -201,13 +201,13 @@ public class JXClient {
                                         } catch (final OptionException ex) {
                                             throw new AssertionError(ex);
                                         }
-                                        final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter);
+                                        final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
                                         final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
                                         final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
                                         final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
                                         final GuiFactory guiFactory = new GuiFactory(commands, commandCallback, macros);
                                         final GuiManager guiManager = new GuiManager(guiStateManager, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
-                                        commandCallback.init(guiManager, server);
+                                        commandCallback.init(guiManager);
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
                                         final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet, options.getTileSize());
                                         final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel);
