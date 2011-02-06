@@ -317,7 +317,7 @@ public class GUIItemInventory extends GUIItemItem {
     @Override
     public void setChanged() {
         super.setChanged();
-        setItem(inventoryView == null ? null : inventoryView.getItem(index));
+        setItem(inventoryView.getItem(index));
     }
 
 }
