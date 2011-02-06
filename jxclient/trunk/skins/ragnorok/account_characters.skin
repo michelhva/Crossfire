@@ -1,7 +1,7 @@
 dialog WIDTH/2 HEIGHT/2 false Characters for the account
 dialog_hide START META PLAYING NEWCHAR LOGIN
 
-character_list characters 150 20 font_metaurl
+character_list characters 550 40 font_metaurl
 
 commandlist command_account_character_play AND characters ACCOUNT_PLAY
 commandlist command_account_character_link AND null DIALOG_OPEN account_link
