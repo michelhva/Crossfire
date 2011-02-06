@@ -499,6 +499,7 @@ public class JXCWindowRenderer {
         final Dimension maxDimension = getMaxWindowDimension(frameInsets);
         debugScreenWrite("setResolutionPre: maximal window dimension="+maxDimension);
         if (dimension.width > maxDimension.width || dimension.height > maxDimension.height) {
+            //noinspection VariableNotUsedInsideIf
             if (resolution == null) {
                 dimension.width = Math.max(minResolution.getWidth()+frameInsets.left+frameInsets.right, maxDimension.width);
                 dimension.height = Math.max(minResolution.getHeight()+frameInsets.top+frameInsets.bottom, maxDimension.height);
@@ -769,6 +770,7 @@ public class JXCWindowRenderer {
             removeFromLayeredPane(currentGui);
         }
         currentGui = gui;
+        //noinspection VariableNotUsedInsideIf
         if (frame != null) {
             addToLayeredPane(currentGui, 0, -1);
         }
