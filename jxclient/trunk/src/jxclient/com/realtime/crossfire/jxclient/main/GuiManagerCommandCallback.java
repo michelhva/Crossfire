@@ -55,11 +55,11 @@ public class GuiManagerCommandCallback implements CommandCallback {
     private CrossfireServerConnection server;
 
     /**
-     * The last sent account or character password. Set to <code>null</code> if
-     * no password has been sent yet.
+     * The last sent account or character password. Set to <code>""</code> if no
+     * password has been sent yet.
      */
     @Nullable
-    private String lastAccountPassword = null;
+    private String lastAccountPassword = "";
 
     /**
      * Creates a new instance.
