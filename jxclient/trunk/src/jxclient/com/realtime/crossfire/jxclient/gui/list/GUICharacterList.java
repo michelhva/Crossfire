@@ -113,12 +113,12 @@ public class GUICharacterList extends GUIList {
      * @param font font to display with
      * @param characterModel what to list characters of
      */
-    public GUICharacterList(@NotNull final TooltipManager tooltipManager, @NotNull FacesManager facesManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final Font font, @NotNull final CharacterModel characterModel) {
+    public GUICharacterList(@NotNull final TooltipManager tooltipManager, @NotNull final FacesManager facesManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final Font font, @NotNull final CharacterModel characterModel) {
         super(tooltipManager, elementListener, name, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, facesManager, elementListener, name+"_template", 50, 20, font, 0, characterModel)), null);
         this.characterModel = characterModel;
         this.facesManager = facesManager;
         this.facesManager.addFacesManagerListener(new FacesManagerListener() {
-            public void faceUpdated(@NotNull Face face) {
+            public void faceUpdated(@NotNull final Face face) {
                 repaint();
             }
         });

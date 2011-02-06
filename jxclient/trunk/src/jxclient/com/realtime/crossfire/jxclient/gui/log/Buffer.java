@@ -134,8 +134,8 @@ public class Buffer {
 
         synchronized (sync) {
             totalHeight = 0;
-            for (Line line : lines) {
-                int height = calculateHeight(line);
+            for (final Line line : lines) {
+                final int height = calculateHeight(line);
                 line.setHeight(height);
                 totalHeight += height;
             }

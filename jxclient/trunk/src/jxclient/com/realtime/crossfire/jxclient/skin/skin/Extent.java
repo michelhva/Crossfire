@@ -34,25 +34,25 @@ public class Extent {
      * The x coordinate.
      */
     @NotNull
-    private Expression x;
+    private final Expression x;
 
     /**
      * The y coordinate.
      */
     @NotNull
-    private Expression y;
+    private final Expression y;
 
     /**
      * The width.
      */
     @NotNull
-    private Expression w;
+    private final Expression w;
 
     /**
      * The height.
      */
     @NotNull
-    private Expression h;
+    private final Expression h;
 
     /**
      * Creates a new instance.
