@@ -252,6 +252,7 @@ public class CommandQueue {
     /**
      * Returns whether the character is firing.
      * @return whether the character is firing
+     * @noinspection MethodMayBeStatic
      */
     public boolean checkFire() {
         return false; // XXX: implement
