@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.account.CharacterInformationListener;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
@@ -46,6 +47,12 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
+
+    /**
+     * The {@link FacesManager} to use to display faces.
+     */
+    @NotNull
+    private final FacesManager facesManager;
 
     /**
      * Character model to display items from.
@@ -84,6 +91,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
+     * @param facesManager the faces to use to display
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param w the width for drawing this element to screen
@@ -92,9 +100,10 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * @param defaultIndex the initial metaserver index
      * @param characterModel the character model to monitor
      */
-    public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final Font font, final int defaultIndex, final CharacterModel characterModel) {
+    public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull FacesManager facesManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final Font font, final int defaultIndex, final CharacterModel characterModel) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         setSize(w, h);
+        this.facesManager = facesManager;
         this.characterModel = characterModel;
         this.font = font;
         index = defaultIndex;
@@ -119,7 +128,24 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         g.setFont(font);
         g.setColor(GuiUtils.isActive(this) || selected ? Color.RED : Color.GRAY);
         final CharacterInformation character = characterModel.getEntry(index);
-        g.drawString(character == null ? "" : character.getName(), 0, font.getSize()+1);
+        if (character == null)
+            return;
+
+        /**
+         * @todo improve, make skin-based ; also getOriginalImageIcon can
+         * spit warnings about undefined face, fix somehow.
+         */
+        final int y = (getHeight() + font.getSize()) / 2;
+        int x = 0;
+        g.drawImage(facesManager.getOriginalImageIcon(character.getFaceNumber()).getImage(), x, (getHeight() - facesManager.getOriginalImageIcon(character.getFaceNumber()).getImage().getHeight(null)) / 2, this);
+        x += 40;
+        g.drawString(character.getName(), x, y);
+        x += 80;
+        g.drawString(character.getRace(), x, y);
+        x += 100;
+        g.drawString(character.getParty(), x, y);
+        x += 100;
+        g.drawString(character.getMap(), x, y);
     }
 
     /**
