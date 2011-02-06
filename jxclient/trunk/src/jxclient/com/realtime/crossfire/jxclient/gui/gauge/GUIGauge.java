@@ -120,10 +120,10 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
     public void setBounds(final int x, final int y, final int width, final int height) {
         super.setBounds(x, y, width, height);
         if (orientation.setExtends(width, height)) {
-          if (gaugeState.setValues(orientation)) {
-              setChanged();
-          }
-      }
+            if (gaugeState.setValues(orientation)) {
+                setChanged();
+            }
+        }
     }
 
     /**

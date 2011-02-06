@@ -316,7 +316,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
 
     @Override
     protected void paintComponent(Graphics g) {
-      super.paintComponent(g);
-      resetChanged();
+        super.paintComponent(g);
+        resetChanged();
     }
 }
