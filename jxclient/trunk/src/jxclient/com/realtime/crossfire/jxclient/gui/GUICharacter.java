@@ -128,16 +128,17 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         g.setFont(font);
         g.setColor(GuiUtils.isActive(this) || selected ? Color.RED : Color.GRAY);
         final CharacterInformation character = characterModel.getEntry(index);
-        if (character == null)
+        if (character == null) {
             return;
+        }
 
         /**
          * @todo improve, make skin-based ; also getOriginalImageIcon can
          * spit warnings about undefined face, fix somehow.
          */
-        final int y = (getHeight() + font.getSize()) / 2;
+        final int y = (getHeight()+font.getSize())/2;
         int x = 0;
-        g.drawImage(facesManager.getOriginalImageIcon(character.getFaceNumber()).getImage(), x, (getHeight() - facesManager.getOriginalImageIcon(character.getFaceNumber()).getImage().getHeight(null)) / 2, this);
+        g.drawImage(facesManager.getOriginalImageIcon(character.getFaceNumber()).getImage(), x, (getHeight()-facesManager.getOriginalImageIcon(character.getFaceNumber()).getImage().getHeight(null))/2, this);
         x += 40;
         g.drawString(character.getName(), x, y);
         x += 80;
