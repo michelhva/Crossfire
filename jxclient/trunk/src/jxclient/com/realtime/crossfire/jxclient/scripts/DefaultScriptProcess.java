@@ -375,6 +375,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             for (int i = 0; i < 3; i++) {
                 sb.append(' ');
                 final Face face = square.getFace(i);
+                //noinspection ConstantConditions
                 sb.append(face == CfMapSquare.DEFAULT_FACE ? 0 : face.getFaceNum());
             }
             sb.append(" tails");
@@ -385,6 +386,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 } else {
                     sb.append(' ');
                     final Face face = headSquare.getFace(i);
+                    //noinspection ConstantConditions
                     sb.append(face == CfMapSquare.DEFAULT_FACE ? 0 : face.getFaceNum());
                 }
             }
