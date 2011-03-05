@@ -14,10 +14,10 @@ no_pick 1
 alive 1
 hp 10000
 maxhp 10000
-exp 5000
+exp 30000
 dam 70
-wc -50
-ac -100
+wc -20
+ac -30
 resist_physical 100
 speed .4
 level 30

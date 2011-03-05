@@ -12,10 +12,10 @@ Int 100
 hp 30000
 maxhp 30000
 maxsp 40
-exp 10000
+exp 100000
 dam 200
 wc -100
-ac -100
+ac -50
 speed 0.150000
 level 50
 resist_physical 50

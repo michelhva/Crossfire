@@ -14,7 +14,7 @@ maxsp 1000
 exp 1000000
 dam 50
 wc -50
-ac -120
+ac -50
 resist_physical 100
 resist_cold 100
 resist_electricity 60

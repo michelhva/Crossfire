@@ -10,7 +10,7 @@ no_pick 1
 alive 1
 exp 1000
 level 20
-ac -100
+ac -50
 can_see_in_dark 1
 Str 30
 Dex 20
