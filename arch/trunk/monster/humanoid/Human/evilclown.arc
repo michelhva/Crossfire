@@ -6,7 +6,7 @@ face evilclown.111
 monster 1
 move_type walk
 alive 1
-ac -80
+ac -50
 wc -50
 dam 200
 hp 3300
