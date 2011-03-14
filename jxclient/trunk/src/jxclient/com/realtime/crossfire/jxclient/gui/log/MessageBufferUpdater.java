@@ -123,7 +123,7 @@ public class MessageBufferUpdater {
         @Override
         public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
             if (isTypeShown(MessageTypes.MSG_TYPE_QUERY)) {
-                parser.parseWithoutMediaTags(addMessageTypePrefix(MessageTypes.MSG_TYPE_QUERY, 0, prompt), Color.RED, buffer);
+                parser.parseWithoutMediaTags(addMessageTypePrefix(MessageTypes.MSG_TYPE_QUERY, 0, CrossfireDrawinfoListener.NDI_RED, prompt), findColor(CrossfireDrawinfoListener.NDI_RED), buffer);
             }
         }
     };
@@ -140,7 +140,7 @@ public class MessageBufferUpdater {
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             if (type == MessageTypes.MSG_TYPE_QUERY // should not happen; but if it happens just display it
                 || isTypeShown(type)) {
-                final CharSequence messageWithPrefix = addMessageTypePrefix(type, subtype, message);
+                final CharSequence messageWithPrefix = addMessageTypePrefix(type, subtype, color, message);
                 if (type == MessageTypes.MSG_TYPE_COMMUNICATION) {
                     parser.parseWithoutMediaTags(messageWithPrefix, findColor(color), buffer);
                 } else {
@@ -181,7 +181,7 @@ public class MessageBufferUpdater {
             }
 
             if (isTypeShown(messageType)) {
-                parser.parseWithoutMediaTags(addMessageTypePrefix(messageType, 0, text), findColor(type), buffer);
+                parser.parseWithoutMediaTags(addMessageTypePrefix(messageType, 0, type, text), findColor(type), buffer);
             }
         }
     };
@@ -270,11 +270,12 @@ public class MessageBufferUpdater {
      * set.
      * @param type the message type
      * @param subtype the message subtype
+     * @param color the message color
      * @param message the message
      * @return the message with prefix
      */
-    private CharSequence addMessageTypePrefix(final int type, final int subtype, @NotNull final String message) {
-        return printMessageTypes ? "("+MessageTypes.toString(type)+"/"+subtype+")"+message : message;
+    private CharSequence addMessageTypePrefix(final int type, final int subtype, final int color, @NotNull final String message) {
+        return printMessageTypes ? "(t="+MessageTypes.toString(type)+"/"+subtype+",c="+color+")"+message : message;
     }
 
 }
