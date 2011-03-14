@@ -1,3 +1,8 @@
+2011-03-14  Andreas Kirschbaum
+
+	* Fix /screenshot command to not include a black top/left
+	border/clip off the bottom/right border.
+
 2011-02-10  Andreas Kirschbaum
 
 	* Fix tooltips for check boxes.

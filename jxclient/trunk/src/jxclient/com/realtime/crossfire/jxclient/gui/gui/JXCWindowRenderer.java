@@ -656,8 +656,7 @@ public class JXCWindowRenderer {
      */
     public void redraw(@NotNull final Graphics g) {
         synchronized (redrawSemaphore) {
-            assert frame != null;
-            frame.paint(g);
+            layeredPane.paint(g);
         }
     }
 
