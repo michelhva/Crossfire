@@ -103,13 +103,7 @@ public class JXClient {
         System.out.println("(C)2005 by Lauwenmark.");
         System.out.println("This software is placed under the GPL License");
         final Options options = new Options();
-        try {
-            options.parse(args);
-        } catch (final IOException ex) {
-            System.err.println(ex.getMessage());
-            System.exit(1);
-            throw new AssertionError();
-        }
+        options.parse(args);
         //noinspection InstantiationOfUtilityClass
         new JXClient(options, buildNumber);
     }
