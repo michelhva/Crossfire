@@ -13,8 +13,6 @@
   <component name="CodeStyleSettingsManager">
     <option name="PER_PROJECT_SETTINGS">
       <value>
-        <option name="KEEP_LINE_BREAKS" value="false" />
-        <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
         <option name="JAVA_INDENT_OPTIONS">
           <value>
             <option name="INDENT_SIZE" value="4" />
@@ -24,6 +22,7 @@
             <option name="SMART_TABS" value="false" />
             <option name="LABEL_INDENT_SIZE" value="0" />
             <option name="LABEL_INDENT_ABSOLUTE" value="true" />
+            <option name="USE_RELATIVE_INDENTS" value="false" />
           </value>
         </option>
         <option name="OTHER_INDENT_OPTIONS">
@@ -35,26 +34,9 @@
             <option name="SMART_TABS" value="false" />
             <option name="LABEL_INDENT_SIZE" value="0" />
             <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+            <option name="USE_RELATIVE_INDENTS" value="false" />
           </value>
         </option>
-        <option name="KEEP_CONTROL_STATEMENT_IN_ONE_LINE" value="false" />
-        <option name="INDENT_CASE_FROM_SWITCH" value="false" />
-        <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
-        <option name="ALIGN_MULTILINE_FOR" value="false" />
-        <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
-        <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
-        <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="1" />
-        <option name="BLANK_LINES_BEFORE_PACKAGE" value="1" />
-        <option name="BLANK_LINES_AROUND_FIELD" value="1" />
-        <option name="BLANK_LINES_AROUND_FIELD_IN_INTERFACE" value="1" />
-        <option name="BLANK_LINES_AFTER_CLASS_HEADER" value="1" />
-        <option name="SPACE_AROUND_BITWISE_OPERATORS" value="false" />
-        <option name="SPACE_AROUND_ADDITIVE_OPERATORS" value="false" />
-        <option name="SPACE_AROUND_MULTIPLICATIVE_OPERATORS" value="false" />
-        <option name="SPACE_AROUND_SHIFT_OPERATORS" value="false" />
-        <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
-        <option name="SPACE_AFTER_TYPE_CAST" value="false" />
-        <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
         <option name="GENERATE_FINAL_LOCALS" value="true" />
         <option name="GENERATE_FINAL_PARAMETERS" value="true" />
         <option name="USE_FQ_CLASS_NAMES_IN_JAVADOC" value="false" />
@@ -71,6 +53,33 @@
           </value>
         </option>
         <option name="RIGHT_MARGIN" value="80" />
+        <option name="JD_ALIGN_PARAM_COMMENTS" value="false" />
+        <option name="JD_ALIGN_EXCEPTION_COMMENTS" value="false" />
+        <option name="JD_ADD_BLANK_AFTER_DESCRIPTION" value="false" />
+        <option name="XML_ATTRIBUTE_WRAP" value="0" />
+        <option name="XML_KEEP_BLANK_LINES" value="1" />
+        <option name="HTML_ATTRIBUTE_WRAP" value="0" />
+        <option name="HTML_KEEP_BLANK_LINES" value="1" />
+        <option name="KEEP_LINE_BREAKS" value="false" />
+        <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
+        <option name="KEEP_CONTROL_STATEMENT_IN_ONE_LINE" value="false" />
+        <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
+        <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+        <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="1" />
+        <option name="BLANK_LINES_BEFORE_PACKAGE" value="1" />
+        <option name="BLANK_LINES_AROUND_FIELD" value="1" />
+        <option name="BLANK_LINES_AROUND_FIELD_IN_INTERFACE" value="1" />
+        <option name="BLANK_LINES_AFTER_CLASS_HEADER" value="1" />
+        <option name="INDENT_CASE_FROM_SWITCH" value="false" />
+        <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
+        <option name="ALIGN_MULTILINE_FOR" value="false" />
+        <option name="SPACE_AROUND_BITWISE_OPERATORS" value="false" />
+        <option name="SPACE_AROUND_ADDITIVE_OPERATORS" value="false" />
+        <option name="SPACE_AROUND_MULTIPLICATIVE_OPERATORS" value="false" />
+        <option name="SPACE_AROUND_SHIFT_OPERATORS" value="false" />
+        <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
+        <option name="SPACE_AFTER_TYPE_CAST" value="false" />
+        <option name="SPACE_BEFORE_ARRAY_INITIALIZER_LBRACE" value="true" />
         <option name="ARRAY_INITIALIZER_WRAP" value="2" />
         <option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
         <option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
@@ -79,13 +88,6 @@
         <option name="DOWHILE_BRACE_FORCE" value="3" />
         <option name="WHILE_BRACE_FORCE" value="3" />
         <option name="FOR_BRACE_FORCE" value="3" />
-        <option name="JD_ALIGN_PARAM_COMMENTS" value="false" />
-        <option name="JD_ALIGN_EXCEPTION_COMMENTS" value="false" />
-        <option name="JD_ADD_BLANK_AFTER_DESCRIPTION" value="false" />
-        <option name="XML_ATTRIBUTE_WRAP" value="0" />
-        <option name="XML_KEEP_BLANK_LINES" value="1" />
-        <option name="HTML_ATTRIBUTE_WRAP" value="0" />
-        <option name="HTML_KEEP_BLANK_LINES" value="1" />
         <option name="ENUM_CONSTANTS_WRAP" value="2" />
         <ADDITIONAL_INDENT_OPTIONS fileType="groovy">
           <option name="INDENT_SIZE" value="4" />
@@ -95,6 +97,7 @@
           <option name="SMART_TABS" value="false" />
           <option name="LABEL_INDENT_SIZE" value="0" />
           <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+          <option name="USE_RELATIVE_INDENTS" value="false" />
         </ADDITIONAL_INDENT_OPTIONS>
         <ADDITIONAL_INDENT_OPTIONS fileType="gsp">
           <option name="INDENT_SIZE" value="4" />
@@ -104,6 +107,7 @@
           <option name="SMART_TABS" value="false" />
           <option name="LABEL_INDENT_SIZE" value="0" />
           <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+          <option name="USE_RELATIVE_INDENTS" value="false" />
         </ADDITIONAL_INDENT_OPTIONS>
         <ADDITIONAL_INDENT_OPTIONS fileType="java">
           <option name="INDENT_SIZE" value="4" />
@@ -113,6 +117,7 @@
           <option name="SMART_TABS" value="false" />
           <option name="LABEL_INDENT_SIZE" value="0" />
           <option name="LABEL_INDENT_ABSOLUTE" value="true" />
+          <option name="USE_RELATIVE_INDENTS" value="false" />
         </ADDITIONAL_INDENT_OPTIONS>
         <ADDITIONAL_INDENT_OPTIONS fileType="xml">
           <option name="INDENT_SIZE" value="4" />
@@ -122,6 +127,7 @@
           <option name="SMART_TABS" value="false" />
           <option name="LABEL_INDENT_SIZE" value="0" />
           <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+          <option name="USE_RELATIVE_INDENTS" value="false" />
         </ADDITIONAL_INDENT_OPTIONS>
       </value>
     </option>
@@ -255,7 +261,9 @@
         <inspection_tool class="CastToIncompatibleInterface" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="CatchGenericClass" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="ChainedEquality" enabled="true" level="WARNING" enabled_by_default="true" />
-        <inspection_tool class="ChannelResource" enabled="true" level="WARNING" enabled_by_default="true" />
+        <inspection_tool class="ChannelResource" enabled="true" level="WARNING" enabled_by_default="true">
+          <option name="insideTryAllowed" value="false" />
+        </inspection_tool>
         <inspection_tool class="CheckDtdRefs" enabled="false" level="ERROR" enabled_by_default="false" />
         <inspection_tool class="CheckEmptyScriptTag" enabled="false" level="WARNING" enabled_by_default="false" />
         <inspection_tool class="CheckImageSize" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -317,6 +325,7 @@
         <inspection_tool class="CssUnitlessNumber" enabled="false" level="WARNING" enabled_by_default="false" />
         <inspection_tool class="CssUnknownProperty" enabled="false" level="WARNING" enabled_by_default="false">
           <option name="myCustomPropertiesEnabled" value="false" />
+          <option name="myIgnoreVendorSpecificProperties" value="false" />
           <option name="myCustomPropertiesList">
             <value>
               <list size="0" />
@@ -412,6 +421,7 @@
         </inspection_tool>
         <inspection_tool class="IOResource" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="ignoredTypesString" value="java.io.ByteArrayOutputStream,java.io.ByteArrayInputStream,java.io.StringBufferInputStream,java.io.CharArrayWriter,java.io.CharArrayReader,java.io.StringWriter,java.io.StringReader" />
+          <option name="insideTryAllowed" value="false" />
         </inspection_tool>
         <inspection_tool class="IfStatementWithIdenticalBranches" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="InconsistentResourceBundle" enabled="true" level="ERROR" enabled_by_default="true">
@@ -437,9 +447,12 @@
         </inspection_tool>
         <inspection_tool class="InstanceVariableUninitializedUse" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="m_ignorePrimitives" value="false" />
+          <option name="annotationNamesString" value="" />
         </inspection_tool>
         <inspection_tool class="InstanceofCatchParameter" enabled="true" level="WARNING" enabled_by_default="true" />
-        <inspection_tool class="InstanceofChain" enabled="true" level="WARNING" enabled_by_default="true" />
+        <inspection_tool class="InstanceofChain" enabled="true" level="WARNING" enabled_by_default="true">
+          <option name="ignoreInstanceofOnLibraryClasses" value="false" />
+        </inspection_tool>
         <inspection_tool class="InstanceofIncompatibleInterface" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="InstanceofThis" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="InstantiationOfUtilityClass" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -494,6 +507,7 @@
           <option name="IGNORE_DEPRECATED" value="true" />
           <option name="IGNORE_JAVADOC_PERIOD" value="false" />
           <option name="IGNORE_DUPLICATED_THROWS" value="false" />
+          <option name="IGNORE_POINT_TO_ITSELF" value="false" />
           <option name="myAdditionalJavadocTags" value="" />
         </inspection_tool>
         <inspection_tool class="JavaLangImport" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -537,7 +551,9 @@
         <inspection_tool class="MethodOverridesStaticMethod" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="MisorderedAssertEqualsParameters" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="MissingDeprecatedAnnotation" enabled="true" level="WARNING" enabled_by_default="true" />
-        <inspection_tool class="MissingOverrideAnnotation" enabled="true" level="WARNING" enabled_by_default="true" />
+        <inspection_tool class="MissingOverrideAnnotation" enabled="true" level="WARNING" enabled_by_default="true">
+          <option name="ignoreObjectMethods" value="true" />
+        </inspection_tool>
         <inspection_tool class="MissortedModifiers" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="m_requireAnnotationsFirst" value="true" />
         </inspection_tool>
@@ -547,7 +563,9 @@
         <inspection_tool class="MisspelledSetUp" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="MisspelledTearDown" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="MisspelledToString" enabled="true" level="WARNING" enabled_by_default="true" />
-        <inspection_tool class="MultipleDeclaration" enabled="true" level="WARNING" enabled_by_default="true" />
+        <inspection_tool class="MultipleDeclaration" enabled="true" level="WARNING" enabled_by_default="true">
+          <option name="ignoreForLoopDeclarations" value="true" />
+        </inspection_tool>
         <inspection_tool class="MultipleTopLevelClassesInFile" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="MultipleTypedDeclaration" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="NakedNotify" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -561,6 +579,8 @@
         <inspection_tool class="NestedSynchronizedStatement" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="NonBooleanMethodNameMayNotStartWithQuestion" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="questionString" value="is,can,has,should,could,will,shall,contains,equals,startsWith,endsWith" />
+          <option name="ignoreBooleanMethods" value="false" />
+          <option name="onlyWarnOnBaseMethods" value="true" />
         </inspection_tool>
         <inspection_tool class="NonExceptionNameEndsWithException" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="NonFinalFieldOfException" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -685,7 +705,9 @@
           <option name="ignoreNegations" value="false" />
         </inspection_tool>
         <inspection_tool class="SleepWhileHoldingLock" enabled="true" level="WARNING" enabled_by_default="true" />
-        <inspection_tool class="SocketResource" enabled="true" level="WARNING" enabled_by_default="true" />
+        <inspection_tool class="SocketResource" enabled="true" level="WARNING" enabled_by_default="true">
+          <option name="insideTryAllowed" value="false" />
+        </inspection_tool>
         <inspection_tool class="SpellCheckingInspection" enabled="true" level="INFO" enabled_by_default="true">
           <option name="processCode" value="true" />
           <option name="processLiterals" value="true" />
@@ -696,7 +718,10 @@
           <option name="m_ignoreWeakCollections" value="false" />
         </inspection_tool>
         <inspection_tool class="StaticFieldReferenceOnSubclass" enabled="true" level="WARNING" enabled_by_default="true" />
-        <inspection_tool class="StaticImport" enabled="true" level="WARNING" enabled_by_default="true" />
+        <inspection_tool class="StaticImport" enabled="true" level="WARNING" enabled_by_default="true">
+          <option name="ignoreSingleFieldImports" value="false" />
+          <option name="ignoreSingeMethodImports" value="false" />
+        </inspection_tool>
         <inspection_tool class="StaticInheritance" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="StaticMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="m_regex" value="[a-z][A-Za-z\d]*" />
@@ -769,6 +794,7 @@
           <option name="useRighthandTypeAsWeakestTypeInAssignments" value="false" />
           <option name="useParameterizedTypeForCollectionMethods" value="true" />
           <option name="doNotWeakenToJavaLangObject" value="true" />
+          <option name="onlyWeakentoInterface" value="true" />
         </inspection_tool>
         <inspection_tool class="TypeParameterExtendsFinalClass" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="TypeParameterHidesVisibleType" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -819,21 +845,6 @@
           <option name="m_ignoreCatchBlocksWithComments" value="false" />
           <option name="m_ignoreTestCases" value="false" />
         </inspection_tool>
-        <inspection_tool class="UnusedDeclaration" enabled="true" level="WARNING" enabled_by_default="true">
-          <option name="ADD_MAINS_TO_ENTRIES" value="true" />
-          <option name="ADD_APPLET_TO_ENTRIES" value="true" />
-          <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
-          <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
-          <option name="ADDITIONAL_ANNOTATIONS">
-            <value>
-              <list size="2">
-                <item index="0" class="java.lang.String" itemvalue="javax.ws.rs.*" />
-                <item index="1" class="java.lang.String" itemvalue="net.sf.japi.swing.action.ActionMethod" />
-              </list>
-            </value>
-          </option>
-          <option name="ADD_JUNIT_TO_ENTRIES" value="true" />
-        </inspection_tool>
         <inspection_tool class="UnusedImport" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="UnusedLibrary" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="UpperCaseFieldNameNotConstant" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -869,12 +880,13 @@
     <option name="PROJECT_PROFILE" value="Project Default" />
     <option name="USE_PROJECT_PROFILE" value="true" />
     <version value="1.0" />
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="SERVER PROBLEM" />
-      <item index="1" class="java.lang.String" itemvalue="INFO" />
-      <item index="2" class="java.lang.String" itemvalue="TYPO" />
-      <item index="3" class="java.lang.String" itemvalue="WARNING" />
-      <item index="4" class="java.lang.String" itemvalue="ERROR" />
+      <item index="1" class="java.lang.String" itemvalue="WEAK WARNING" />
+      <item index="2" class="java.lang.String" itemvalue="INFO" />
+      <item index="3" class="java.lang.String" itemvalue="TYPO" />
+      <item index="4" class="java.lang.String" itemvalue="WARNING" />
+      <item index="5" class="java.lang.String" itemvalue="ERROR" />
     </list>
   </component>
   <component name="JavadocGenerationManager">
@@ -1159,6 +1171,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jxclient.iml" filepath="$PROJECT_DIR$/jxclient.iml" />
     </modules>
+  </component>
+  <component name="ProjectResources">
+    <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
