@@ -97,7 +97,6 @@ public class JXCSkinCache<T> implements Iterable<T> {
      * Lookup an element by name.
      * @param name The name of the element.
      * @return the element or <code>null</code> if no such element exists
-     * @noinspection TypeMayBeWeakened
      */
     @Nullable
     public T lookupOptional(@NotNull final String name) {
