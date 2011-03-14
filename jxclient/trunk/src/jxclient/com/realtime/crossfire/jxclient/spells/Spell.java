@@ -194,8 +194,8 @@ public class Spell {
     }
 
     /**
-     * Updates the spell's parameters from another {@link Spell} instance. The
-     * name and unknown flag values are not copied.
+     * Updates the spell's parameters from another <code>Spell</code> instance.
+     * The name and unknown flag values are not copied.
      * @param spell the spell instance to copy from
      */
     public void setParameters(@NotNull final Spell spell) {
