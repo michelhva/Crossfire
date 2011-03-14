@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.util.Resolution;
-import java.io.IOException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -114,9 +113,8 @@ public class Options {
     /**
      * Parse command line arguments.
      * @param args the command line arguments
-     * @throws IOException if an I/O error occurs
      */
-    public void parse(@NotNull final String[] args) throws IOException {
+    public void parse(@NotNull final String[] args) {
         resolution = null;
         skin = "default";
 
