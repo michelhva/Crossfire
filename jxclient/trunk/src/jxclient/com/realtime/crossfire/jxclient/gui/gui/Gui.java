@@ -222,7 +222,6 @@ public class Gui extends JComponent {
      * @param class_ the class to search for
      * @param ending the ending to search for
      * @return the gui element or <code>null</code> if not found
-     * @noinspection TypeMayBeWeakened
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
@@ -246,7 +245,6 @@ public class Gui extends JComponent {
      * @param class_ the class to search for
      * @param ending the ending to search for
      * @return the gui element or <code>null</code> if not found
-     * @noinspection TypeMayBeWeakened
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementNotEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
