@@ -995,7 +995,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         pendingMapHeight = 0;
         pendingNumLookObjects = 0;
         setCurrentMapSize(DEFAULT_MAP_WIDTH, DEFAULT_MAP_HEIGHT);
-        setCurrentNumLookObjects(DEFAULT_NUM_LOOK_OBJECTS);
+        currentNumLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
 
         fireNewMap();
 
@@ -3225,7 +3225,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             System.err.println("Expect issues with the ground view display.");
                         }
                         pendingNumLookObjects = 0;
-                        setCurrentNumLookObjects(thisNumLookObjects);
+                        currentNumLookObjects = thisNumLookObjects;
                     }
                 }
             } else if (option.equals("faceset")) {
