@@ -8,7 +8,7 @@ enter_x 13
 enter_y 3
 msg
 Created:  1996-11-27 Mark Wedel (mark@pyramid.com)
-Modified: 2008-09-29 Rick Tanner
+Modified: 2011-03-17 Nicolas Weeger
 endmsg
 end
 arch cobblestones2
@@ -1489,16 +1489,11 @@ end
 arch sign
 name README
 msg
-This is an experimental map, and is
-only meant to be used with unique
-item codes.
-Idea is you can buy keys to the
-various rooms, in which you can store
-stuff.
-The stuff you drop off will stick
-around indefinitely (will not be reset
-with map resets).  This gives a place
-to permanently store stuff.
+This is an experimental map, and is only meant to be used with unique item codes.
+
+Idea is you can buy keys to the various rooms, in which you can store stuff.
+
+The stuff you drop off will stick around indefinitely (will not be reset with map resets). This gives a place to permanently store stuff.
 endmsg
 x 12
 y 10
@@ -1680,12 +1675,10 @@ arch guildmaster
 name Landlord
 msg
 @match *
-Cheap places to the left, nice places
-with cooking facilities to the right.
-Just put your money an the altar and
-collect your key.  Make sure you are
-standing in front of your door when
-you try to use it.
+Cheap places to the left, nice places with cooking facilities to the right.
+
+Just put your money an the altar and collect your key. Make sure you are
+standing in front of your door when you try to use it.
 endmsg
 x 14
 y 11
