@@ -4,12 +4,12 @@
   "match" : ["password"],
   "pre" : [["quest", "scorn/CityGate", "5"], ["quest", "scorn/GatePassword", "10"]],
   "post" : [],
-  "msg" : ["I am not allow to tell you the password."]
+  "msg" : ["I am not allowed to tell you the password."]
   }, {
   "match" : ["password"],
   "pre" : [["quest", "scorn/CityGate", "5"]],
   "post" : [["quest", "scorn/GatePassword", "10"]],
-  "msg" : ["I am not allow to tell you the password."]
+  "msg" : ["I am not allowed to tell you the password."]
   }, {
   "match" : ["hero", "king"],
   "pre" : [["quest", "scorn/CityGate", "5"], ["quest", "scorn/ScornHero", "10"]],
@@ -43,19 +43,23 @@
   "msg" : ["The gate opens only for certain people."]
   }, {
   "match" : ["open", "gate"],
+  "pre" : [],
   "post" : [["quest", "scorn/CityGate", "5"]],
   "msg" : ["The gate opens only for certain people."],
   "replies" : [["people", "For whom is the gate opened?"]]
   }, {
   "match" : ["secret", "wall", "door"],
+  "pre" : [],
   "post" : [],
   "msg" : ["I can't tell you that! Do you want to be thrown in JAIL?"]
   }, {
   "match" : ["monster"],
+  "pre" : [],
   "post" : [],
   "msg" : ["They keep trying to sneak in, but we always kill them."]
   }, {
   "match" : ["*"],
+  "pre" : [],
   "post" : [],
   "msg" : ["Good to see a friend!\n Have you seen any monsters lately?"],
   "replies" : [["monsters", "Why are you having problems with monsters?"]]
