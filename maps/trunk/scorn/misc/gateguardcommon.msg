@@ -62,6 +62,6 @@
   "pre" : [],
   "post" : [],
   "msg" : ["Good to see a friend!\n Have you seen any monsters lately?"],
-  "replies" : [["monsters", "Why are you having problems with monsters?"]]
+  "replies" : [["monsters", "Why are you having problems with monsters?", "2"]]
   }
 ]}
