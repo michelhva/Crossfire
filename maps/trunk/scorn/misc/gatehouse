@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1993-10-15
-Modified: 2010-05-30 Cavesomething
+Modified: 2011-03-17 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -1223,9 +1223,7 @@ end
 arch magic_mouth
 name magic_mouth (gate open/close)
 msg
-You hear from behind the northern wall,
-the sound of great wheels turning as
-the inner gates are set in motion.
+You hear from behind the northern wall the sound of great wheels turning as the inner gates are set in motion.
 endmsg
 x 12
 connected 10
@@ -1328,8 +1326,7 @@ end
 arch magic_mouth
 name magic_mouth (gate pass)
 msg
-On seeing you have a gate pass the guard
-turns the handle nearby and says...
+On seeing you have a gate pass the guard turns the handle nearby and says...
 Arrhh, a merchant off on trade.. Pass..
 endmsg
 x 13
@@ -1431,8 +1428,7 @@ arch magic_mouth
 name magic_mouth (hero of scorn)
 msg
 A guard yells.. The Hero of Scorn!
-Open the gates, open, we can't keep
-the Hero waiting. Hurry Hurry.
+Open the gates, open, we can't keep the Hero waiting. Hurry Hurry.
 endmsg
 x 14
 connected 14
@@ -1519,8 +1515,7 @@ msg
 The guard shouts....
 The brave hero of Scorn returns to us!
 Open the gates, prepare the way!
-You think you hear muffled laughing
-from somewhere...
+You think you hear muffled laughing from somewhere...
 endmsg
 x 14
 y 13
@@ -1735,9 +1730,7 @@ end
 arch magic_mouth
 name magic_mouth (gate open/close)
 msg
-The rusted outer gate is set in motion
-with loud noise emanating from the
-southern wall.
+The rusted outer gate is set in motion with loud noise emanating from the southern wall.
 endmsg
 x 16
 y 13
