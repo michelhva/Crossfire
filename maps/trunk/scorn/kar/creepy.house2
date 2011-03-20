@@ -7,7 +7,7 @@ height 25
 enter_x 12
 enter_y 11
 msg
-Modified: 2008-10-24 Rick Tanner
+Modified: 2011-03-20 Nicolas Weeger
 endmsg
 end
 arch dirtfloor
@@ -1395,7 +1395,6 @@ arch mine3
 x 9
 y 12
 move_block 0
-can_pass_thru 1
 end
 arch dirtfloor
 x 9
@@ -1794,7 +1793,6 @@ arch mine2
 x 12
 y 8
 move_block 0
-can_pass_thru 1
 end
 arch dungeon_floor
 x 12
@@ -1837,7 +1835,6 @@ arch mine2
 x 12
 y 15
 move_block 0
-can_pass_thru 1
 end
 arch dirtfloor
 x 12
@@ -2233,7 +2230,6 @@ arch mine3
 x 15
 y 12
 move_block 0
-can_pass_thru 1
 end
 arch dungeon_floor
 x 15
@@ -3256,7 +3252,6 @@ end
 arch mine2
 x 22
 y 7
-can_pass_thru 1
 end
 arch dirtfloor
 x 22
