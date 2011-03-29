@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2010-07-10 Nicolas Weeger
+Modified: 2011-03-28 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -12059,7 +12059,7 @@ arch dungeon_magic
 x 42
 y 32
 end
-arch brush
+arch cobblestones2
 x 42
 y 32
 end
@@ -14487,8 +14487,8 @@ x 48
 y 34
 end
 arch house_2
-slaying /scorn/shops/privateshop_48_34
 name Private Shop 4
+slaying /scorn/shops/privateshop_48_34
 hp 17
 sp 35
 x 48
@@ -14503,8 +14503,8 @@ x 48
 y 35
 end
 arch house_2
-slaying /scorn/shops/privateshop_48_35
 name Private Shop 5
+slaying /scorn/shops/privateshop_48_35
 hp 17
 sp 35
 x 48
