@@ -13,7 +13,7 @@ enter_x 38
 enter_y 22
 msg
 Created:  1994-07-25
-Modified: 2009-04-03 Andreas Kirschbaum
+Modified: 2011-03-31 Rick Tanner
 endmsg
 end
 arch grass
@@ -276,10 +276,6 @@ arch grass
 x 2
 y 12
 end
-arch redcwall_2_2_2
-x 2
-y 13
-end
 arch grass
 x 2
 y 13
@@ -288,10 +284,6 @@ arch redcwall_2_2_2
 x 2
 y 13
 end
-arch redcwall_3_2
-x 2
-y 14
-end
 arch grass
 x 2
 y 14
@@ -300,10 +292,6 @@ arch redcwall_3_2
 x 2
 y 14
 end
-arch redcwall_3_2
-x 2
-y 15
-end
 arch grass
 x 2
 y 15
@@ -311,10 +299,6 @@ end
 arch redcwall_3_2
 x 2
 y 15
-end
-arch redcwall_3_2
-x 2
-y 16
 end
 arch grass
 x 2
@@ -2077,10 +2061,6 @@ arch grass
 x 15
 y 10
 end
-arch redcwall_2_2_3
-x 15
-y 11
-end
 arch grass
 x 15
 y 11
@@ -2228,10 +2208,6 @@ arch grass
 x 16
 y 11
 end
-arch redcwall_2_2_3
-x 16
-y 12
-end
 arch grass
 x 16
 y 12
@@ -2315,10 +2291,6 @@ end
 arch redcwall_4
 x 16
 y 23
-end
-arch redcwall_2_2_4
-x 16
-y 24
 end
 arch grass
 x 16
