@@ -42,6 +42,7 @@ type 22
 subtype 3
 slaying /start/newbieshouse
 face map.111
+unique 1
 hp 9
 sp 4
 msg
