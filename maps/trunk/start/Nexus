@@ -11,7 +11,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  2003-09-25 Avion
-Modified: 2007-12-22 tchize
+Modified: 2011-04-02 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -2147,12 +2147,15 @@ y 8
 no_magic 1
 damned 1
 end
-arch teleporter
+arch exit
 slaying /start/newbieshouse
+face teleporter.111
+animation teleporter
 hp 9
 sp 4
 x 12
 y 8
+unique 1
 end
 arch tile_white_floor
 x 12
