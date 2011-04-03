@@ -8,7 +8,7 @@ enter_x 5
 enter_y 8
 msg
 Created:  1998-12-28 Anthony Thyssen (anthony@cit.gu.edu.au)
-Modified: 2010-05-12 Kevin Bulgrien
+Modified: 2011-04-03 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -507,10 +507,8 @@ arch sign
 name Office of Passes
 msg
 Office of Passes..
-Merchants trading with the city of Scorn
-may purchase entry/exit pass for either
-the port or main gate from either here
-or one of our representatives elsewhere.
+
+Merchants trading with the city of Scorn may purchase entry/exit pass for either the port or main gate from either here or one of our representatives elsewhere.
 endmsg
 x 5
 y 7
@@ -810,13 +808,10 @@ arch card
 name Port Pass
 slaying port_pass
 msg
-This is a merchants pass allowing paid
-access between the City of Scorn and the
-Port of Scorn, for the purposes of trade
-and commerce. Animal or plants entering
-the city of scorn must be quarantined in
-the Quarantine Warehouse in the port
-area.
+This is a merchants pass allowing paid access between the City of Scorn and the Port of Scorn, for the purposes of trade
+and commerce.
+
+Animal or plants entering the city of scorn must be quarantined in the Quarantine Warehouse in the port area.
 endmsg
 x 8
 y 3
@@ -845,13 +840,9 @@ arch card
 name Gate Pass
 slaying gate_pass
 msg
-The holder of this card is allowed free
-access into and out of the City of Scorn
-to the rest of the continent without
-further charges and penalties. The City
-of Scorn reserves the right to revoke
-said access at any time of its choosing
-without recompense or liability.
+The holder of this card is allowed free access into and out of the City of Scorn to the rest of the continent without further charges and penalties.
+
+The City of Scorn reserves the right to revoke said access at any time of its choosing without recompense or liability.
 endmsg
 value 800
 identified 1
@@ -860,13 +851,10 @@ arch card
 name Port Pass
 slaying port_pass
 msg
-This is a merchants pass allowing paid
-access between the City of Scorn and the
-Port of Scorn, for the purposes of trade
-and commerce. Animal or plants entering
-the city of scorn must be quarantined in
-the Quarantine Warehouse in the port
-area.
+This is a merchants pass allowing paid access between the City of Scorn and the Port of Scorn, for the purposes of trade
+and commerce.
+
+Animal or plants entering the city of scorn must be quarantined in the Quarantine Warehouse in the port area.
 endmsg
 value 2500
 identified 1
@@ -886,13 +874,9 @@ arch card
 name Gate Pass
 slaying gate_pass
 msg
-The holder of this card is allowed free
-access into and out of the City of Scorn
-to the rest of the continent without
-further charges and penalties. The City
-of Scorn reserves the right to revoke
-said access at any time of its choosing
-without recompense or liability.
+The holder of this card is allowed free access into and out of the City of Scorn to the rest of the continent without further charges and penalties.
+
+The City of Scorn reserves the right to revoke said access at any time of its choosing without recompense or liability.
 endmsg
 x 8
 y 7
