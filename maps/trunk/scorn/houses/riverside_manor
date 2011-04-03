@@ -1146,7 +1146,7 @@ endmsg
 x 6
 y 21
 randomitems jail
-arch event_pickup
+arch event_say
 name scorn/houses/jc.msg
 title Python
 slaying /python/dialog/npc_dialog.py
