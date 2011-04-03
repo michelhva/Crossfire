@@ -8,7 +8,7 @@ enter_x 8
 enter_y 11
 msg
 Created:  1998-12-28 Anthony Thyssen (anthony@cit.gu.edu.au)
-Modified: 2010-05-30 Cavesomething
+Modified: 2011-04-03 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -516,13 +516,10 @@ arch card
 name Port Pass
 slaying port_pass
 msg
-This is a merchants pass allowing paid
-access between the City of Scorn and the
-Port of Scorn, for the purposes of trade
-and commerce. Animal or plants entering
-the city of scorn must be quarantined in
-the Quarantine Warehouse in the port
-area.
+This is a merchants pass allowing paid access between the City of Scorn and the Port of Scorn, for the purposes of trade
+and commerce.
+
+Animal or plants entering the city of scorn must be quarantined in the Quarantine Warehouse in the port area.
 endmsg
 x 5
 y 6
@@ -549,13 +546,9 @@ arch card
 name Gate Pass
 slaying gate_pass
 msg
-The holder of this card is allowed free
-access into and out of the City of Scorn
-to the rest of the continent without
-further charges and penalties. The City
-of Scorn reserves the right to revoke
-said access at any time of its choosing
-without recompense or liability.
+The holder of this card is allowed free access into and out of the City of Scorn to the rest of the continent without further charges and penalties.
+
+The City of Scorn reserves the right to revoke said access at any time of its choosing without recompense or liability.
 endmsg
 x 5
 y 8
