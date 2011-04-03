@@ -1446,9 +1446,7 @@ end
 arch magic_mouth
 name magic_mouth (gate open/close)
 msg
-You hear from behind the eastern wall,
-a loud noise as ancient machinery is
-set in motion to move the rusty gates.
+You hear from behind the eastern wall, a loud noise as ancient machinery is set in motion to move the rusty gates.
 endmsg
 x 12
 y 4
@@ -1546,8 +1544,8 @@ end
 arch magic_mouth
 name magic_mouth (port pass)
 msg
-On seeing you have a port pass the guard
-turns a rusty handle and says...
+On seeing you have a port pass the guard turns a rusty handle and says...
+
 Everything appears in order. Pass friend.
 endmsg
 x 13
@@ -1665,8 +1663,7 @@ end
 arch magic_mouth
 name magic_mouth (hero of scorn)
 msg
-The guard seeing that the Hero approaches
-turns the handle to open the gate.
+The guard seeing that the Hero approaches turns the handle to open the gate.
 endmsg
 x 14
 y 4
