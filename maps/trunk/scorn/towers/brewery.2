@@ -9,7 +9,7 @@ enter_y 8
 msg
 Creator: lauwenmark
 Date:    2007-09-12
-Modified: 2008-10-25 Rick Tanner
+Modified: 2011-04-03 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -444,12 +444,19 @@ end
 arch fatman
 name Morioch
 msg
-@match help|rebelled|rebel
-Yeah, my employees. They rebelled and took over the factory. And they hold the key !
+@match rebel
+@question key The key?
+My employees, of course. They rebelled and took over the factory. And they hold the key !
+@match reward
+You'll know the secret of my beer, and still you expect a reward?
+
+Well, I guess you can have a potion, and whatever you find downstairs...
 @match key
+@question reward And what will be my reward?
 Yeah, the key to my secret beer recipe ! What will Scorn become without beer ?
 If you want to help me, open the door at the left, climb down the stairs, and put an end to the stake. Then, bring back the key and open the secure room at the right.
 @match *
+@question rebel Who rebelled?
 It is terrible, please help me ! They rebelled !
 endmsg
 x 7
