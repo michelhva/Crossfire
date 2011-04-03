@@ -23,7 +23,7 @@
   "msg" : ["Ya ol Gramps Malone is right duffer.\nPlays a good game of orc knuckles.\nI think he left his walking stick here last time he came round.\nThink it's under the table..."]
   }, {
   "match" : ["gramps", "malone", "staff", "stick"],
-  "pre" : [["quest", "scorn/WalkingStick", "10"]],
+  "pre" : [["quest", "scorn/WalkingStick", "20-30"]],
   "post" : [["quest", "scorn/WalkingStick", "40"]],
   "msg" : ["Ya ol Gramps Malone is right duffer.\nPlays a good game of orc knuckles.\nI think he left his walking stick here last time he came round.\nThink it's under the table..."]
   }, {
