@@ -9,7 +9,7 @@ enter_x 14
 enter_y 7
 msg
 Created:  1996-01-06 Bjoern Helfesrieder (helfesri@igd.fhg.de)
-Modified: 2010-03-30 Cavesomething
+Modified: 2011-04-03 Nicolas Weeger
 endmsg
 end
 arch dungeon_floor
@@ -644,8 +644,8 @@ y 4
 end
 arch note
 msg
-I changed the password for the
-dungeon from "wall" to "chair".
+I changed the password for the dungeon from "wall" to "chair".
+
 I must tell Charles before I leave.
 endmsg
 x 6
@@ -1127,40 +1127,31 @@ arch charwoman
 name House Keeper
 msg
 @match hello|hi|job|name
-Oh good evening Zir, I am Charles,
-zee old wizzard's houze keeper!
+Oh good evening Zir, I am Charles, zee old wizzard's houze keeper!
+
 Can I HELP you, Zir?
+
 A bed prehapzz?
 @match wiffard|dunzeon|zeletonz
 Ztrange aczent you have, zonny!
 @match wizzard
 Oh, mazzter Yarid waz a great wizzard!
-Always working away down in zee dunzeon
-he waz. Zoo bad he izz DEAD now!
+
+Always working away down in zee dunzeon he waz. Zoo bad he izz DEAD now!
 @match mouth|dungeon|gate|word
-Ah, zee dunzeon, I woulzz not go
-zown zair if I waz you, but I am
-not you. Mazzter Yarid don't tell
-me pazzword for gatz az he leavzz.
-You muzzt searzz for it. Good Luck!
-Charles pulls out a PAPER, looks at
-it, marks an X and puts it away again.
+Ah, zee dunzeon, I woulzz not go zown zair if I waz you, but I am not you. Mazzter Yarid don't tell me pazzword for gatz az he leavzz. You muzzt searzz for it. Good Luck!
+
+Charles pulls out a PAPER, looks at it, marks an X and puts it away again.
 @match paper
-Oh nothing... I juzt write zown how
-many adventurerz entered zee DUNZEON
-zinze mazzter Yarid died. Zee number
-be now 6.
+Oh nothing... I juzt write zown how many adventurerz entered zee DUNZEON zinze mazzter Yarid died.
+
+Zee number be now 6.
 @match help|bed|skeltons
-If you want a rezt put zoom food
-for zee dogz on zee table here.
+If you want a rezt put zoom food for zee dogz on zee table here.
 @match dead
-Yep! Zee mazzter Yarid died zome
-time ago. He experimentzed a lot
-down zairs dunzeon below...
+Yep! Zee mazzter Yarid died zome time ago. He experimentzed a lot down zairs dunzeon below...
 @match dungeon
-I have never been down zair? It be
-zanderouz! None of the previous
-adventurerzz have returned.
+I have never been down zair? It be zanderouz! None of the previous adventurerzz have returned.
 @match *
 I don't anyzing about zat! Zorry!
 endmsg
