@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2011-04-03 Rick Tanner
+Modified: 2011-04-04 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -3337,10 +3337,10 @@ arch dungeon_magic
 x 7
 y 32
 end
-arch grass
+arch cobblestones2
 x 7
 y 32
-elevation 4987
+elevation 5098
 end
 arch dungeon_magic
 x 7
@@ -6441,10 +6441,10 @@ arch dungeon_magic
 x 14
 y 32
 end
-arch grass
+arch cobblestones2
 x 14
 y 32
-elevation 3090
+elevation 5098
 end
 arch dungeon_magic
 x 14
