@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2011-04-03 Rick Tanner
+Modified: 2011-04-06 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -11650,7 +11650,7 @@ arch store_magic
 name Scorn Magic Shop
 slaying /scorn/shops/magicshop
 hp 38
-sp 22
+sp 21
 x 41
 y 31
 end
@@ -12862,8 +12862,8 @@ end
 arch store_weapons
 name Weapon Shop
 slaying /scorn/shops/weaponshop
-hp 12
-sp 20
+hp 11
+sp 19
 x 44
 y 31
 end
@@ -14072,7 +14072,7 @@ arch store_armour
 name Armour Shop
 slaying /scorn/shops/armourshop
 hp 5
-sp 20
+sp 19
 x 47
 y 31
 end
@@ -14856,7 +14856,7 @@ arch barrack_up
 name Food Shop Warehouse
 slaying /scorn/shops/foodshop
 hp 5
-sp 17
+sp 16
 x 49
 y 31
 end
