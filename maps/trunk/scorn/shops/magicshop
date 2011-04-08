@@ -11,7 +11,7 @@ enter_x 38
 enter_y 22
 msg
 Created:  1993-10-15
-Modified: 2011-04-01 Rick Tanner
+Modified: 2011-04-07 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -470,25 +470,11 @@ arch cwall_2_2_4
 x 3
 y 16
 end
-arch magic_mouth
-msg
-The Ground level of the Tower
-endmsg
-x 3
-y 17
-end
 arch shop_empty
 x 3
 y 17
 end
 arch light4
-x 3
-y 18
-end
-arch magic_mouth
-msg
-The Ground level of the Tower
-endmsg
 x 3
 y 18
 end
@@ -3372,10 +3358,6 @@ x 22
 y 28
 end
 arch grass
-x 22
-y 28
-end
-arch grass
 x 23
 end
 arch grass
@@ -3515,10 +3497,6 @@ x 23
 y 28
 end
 arch grass
-x 23
-y 28
-end
-arch grass
 x 24
 end
 arch grass
@@ -3640,10 +3618,6 @@ end
 arch grass
 x 24
 y 27
-end
-arch grass
-x 24
-y 28
 end
 arch grass
 x 24
@@ -3779,10 +3753,6 @@ end
 arch grass
 x 25
 y 27
-end
-arch grass
-x 25
-y 28
 end
 arch grass
 x 25
@@ -4928,10 +4898,6 @@ x 32
 y 22
 end
 arch tile_shop
-x 32
-y 23
-end
-arch dungeon_magic
 x 32
 y 23
 end
