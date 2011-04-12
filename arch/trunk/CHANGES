@@ -1,6 +1,18 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Based on feedback, removed a pixel in the letter "R" on the building labels.
+Now it's more recognizable.
+construct/town/prison_fant.base.x11.png
+construct/town/prison.base.x11.png
+construct/town/prison.clsc.x11.png
+shop/store_armo.base.x11.png
+shop/store_gene.base.x11.png
+shop/store_gene_west.base.x11.png
+shop/store_armo_fant.base.x11.png
+shop/store_gene_fant.base.x11.png
+RJT 2011-04-11
+
 Refactor and pixel color cleanup of the prison building graphic.
 construct/town/prison.base.x11.png
 RJT 2011-04-10
