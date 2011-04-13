@@ -1,6 +1,13 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+New graphic for an archery (weapon) shop, based on the existing weapon store
+graphic.  Also new archetype for the archery shop, also based on the existing
+weapon store archetype.
+shop/store_bow.base.x11.png
+shop/store_bow.arc
+RJT 2011-04-12
+
 Based on feedback, removed a pixel in the letter "R" on the building labels.
 Now it's more recognizable.
 construct/town/prison_fant.base.x11.png
