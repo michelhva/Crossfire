@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2011-04-10 Rick Tanner
+Modified: 2011-04-12 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -14116,11 +14116,11 @@ arch grass
 x 47
 y 36
 end
-arch store_weapons
+arch store_bows
 name Scorn's Best Bows
 slaying /scorn/shops/bowshop
-hp 14
-sp 14
+hp 11
+sp 16
 x 47
 y 36
 end
@@ -14128,7 +14128,7 @@ arch dungeon_magic
 x 47
 y 37
 end
-arch grass
+arch cobblestones2
 x 47
 y 37
 end
