@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2011-04-12 Rick Tanner
+Modified: 2011-04-16 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -14887,8 +14887,8 @@ end
 arch shrine
 name Mosely's Magic Books
 slaying /scorn/shops/BasicSpells
-hp 2
-sp 1
+hp 7
+sp 10
 x 49
 y 34
 end
