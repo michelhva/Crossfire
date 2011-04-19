@@ -7,7 +7,7 @@ height 16
 enter_x 1
 msg
 Created:  1994-05-26 langley (langley@fermat.dartmouth.edu)
-Modified: 2009-04-29 Kevin Bulgrien
+Modified: 2011-04-18 Rick Tanner
 endmsg
 end
 arch exit
@@ -578,7 +578,7 @@ arch cobblestones
 x 7
 y 1
 end
-arch wwall_1_3
+arch wwall_2_1_2
 x 7
 y 1
 end
@@ -638,7 +638,7 @@ arch cobblestones
 x 7
 y 15
 end
-arch wwall_1_3
+arch wwall_2_1_2
 x 7
 y 15
 end
@@ -652,7 +652,11 @@ arch woodfloor
 x 8
 y 1
 end
-arch awall_3_4
+arch awall_2_1_1
+x 8
+y 1
+end
+arch wwall_left
 x 8
 y 1
 end
@@ -766,7 +770,11 @@ arch woodfloor
 x 8
 y 15
 end
-arch awall_3_1
+arch awall_2_2_1
+x 8
+y 15
+end
+arch wwall_left
 x 8
 y 15
 end
