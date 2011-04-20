@@ -8,7 +8,7 @@ enter_x 3
 enter_y 14
 msg
 Created:  1994-05-20 larry langley (langley@fermat.dartmouth.edu)
-Modified: 2009-04-29 Kevin Bulgrien
+Modified: 2011-04-19 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -128,7 +128,11 @@ arch cobblestones
 x 1
 y 6
 end
-arch wall_3_3
+arch wall_2_1_2
+x 1
+y 6
+end
+arch swall_1_1_half
 x 1
 y 6
 end
@@ -326,11 +330,7 @@ arch cobblestones
 x 3
 y 4
 end
-arch wall_2_2_3
-x 3
-y 4
-end
-arch wall_3_4
+arch wall_2_2_4
 x 3
 y 4
 end
@@ -843,7 +843,11 @@ arch cobblestones
 x 7
 y 14
 end
-arch wall_3_4
+arch wall_2_1_1
+x 7
+y 14
+end
+arch swall_1_3_half
 x 7
 y 14
 end
