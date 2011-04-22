@@ -8,7 +8,7 @@ enter_x 3
 enter_y 5
 msg
 Created:  1995-03-27
-Modified: 2010-09-04 Nicolas Weeger
+Modified: 2011-04-21 Rick Tanner
 endmsg
 end
 arch grass
@@ -3030,8 +3030,8 @@ end
 arch store_weapons
 name Weapon Shop
 slaying B_wshop
-hp 1
-sp 9
+hp 11
+sp 19
 x 13
 y 6
 end
