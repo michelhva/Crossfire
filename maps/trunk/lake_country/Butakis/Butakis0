@@ -8,7 +8,7 @@ enter_x 3
 enter_y 5
 msg
 Created:  1995-03-27
-Modified: 2011-04-21 Rick Tanner
+Modified: 2011-04-23 Rick Tanner
 endmsg
 end
 arch grass
@@ -823,8 +823,8 @@ end
 arch store_general
 name Lord Butakis General Shop
 slaying B_gshop
-hp 1
-sp 1
+hp 16
+sp 15
 x 3
 y 12
 end
