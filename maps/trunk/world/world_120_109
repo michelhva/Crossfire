@@ -4,7 +4,7 @@ region marksel
 width 50
 height 50
 msg
-Modified: 2009-07-18 Kevin Bulgrien
+Modified: 2011-04-23 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_120_108
@@ -11348,7 +11348,8 @@ elevation 1791
 end
 arch s_shop2
 slaying /marksel/shop
-hp 3
+hp 10
+sp 11
 x 43
 y 45
 end
