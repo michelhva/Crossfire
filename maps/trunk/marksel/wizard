@@ -5,424 +5,451 @@ region marksel
 shopitems potion:40;spellbook:40;amulet:40;ring:45;scroll:40;book:40;wand:60;rod:60;*:-60
 shopmin 20
 shopmax 4000
-width 14
-height 14
+width 21
+height 21
 enter_x 13
 enter_y 7
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2008-12-23 Rick Tanner
+Modified: 2011-04-23 Rick Tanner
 endmsg
 end
-arch cobblestones2
+arch grass_only
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch grass_only
+y 8
+end
+arch grass_only
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch grass_only
+y 12
+end
+arch grass_only
+y 13
+end
+arch grass_only
+y 14
+end
+arch grass_only
+y 15
+end
+arch grass_only
+y 16
+end
+arch grass_only
+y 17
+end
+arch grass_only
+y 18
+end
+arch grass_only
+y 19
+end
+arch grass_only
+y 20
+end
+arch grass_only
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
+arch grass_only
+x 1
+y 14
+end
+arch grass_only
+x 1
+y 15
+end
+arch grass_only
+x 1
+y 16
+end
+arch grass_only
+x 1
+y 17
+end
+arch grass_only
+x 1
+y 18
+end
+arch grass_only
+x 1
+y 19
+end
+arch grass_only
+x 1
+y 20
+end
+arch grass_only
+x 2
+end
+arch grass_only
+x 2
+y 1
+end
+arch grass_only
+x 2
+y 2
+end
+arch grass_only
+x 2
+y 3
+end
+arch grass_only
+x 2
+y 4
+end
+arch flagstone
+x 2
+y 5
 end
 arch awall_2_2_2
+x 2
+y 5
 end
-arch cobblestones2
-y 1
-end
-arch awall_2_1_1
-y 1
-end
-arch cobblestones2
-y 2
+arch flagstone
+x 2
+y 6
 end
 arch awall_2_1_1
-y 2
+x 2
+y 6
 end
-arch cobblestones2
-y 3
-end
-arch awall_2_1_1
-y 3
-end
-arch cobblestones2
-y 4
+arch flagstone
+x 2
+y 7
 end
 arch awall_3_2
-y 4
-end
-arch cobblestones2
-y 5
-end
-arch awall_2_1_1
-y 5
-end
-arch cobblestones2
-y 6
-end
-arch awall_2_1_1
-y 6
-end
-arch cobblestones2
+x 2
 y 7
 end
-arch awall_2_1_1
-y 7
-end
-arch cobblestones2
+arch flagstone
+x 2
 y 8
 end
 arch awall_2_1_1
+x 2
 y 8
 end
-arch cobblestones2
+arch flagstone
+x 2
 y 9
 end
 arch awall_2_1_1
+x 2
 y 9
 end
-arch cobblestones2
+arch light2
+x 2
 y 10
 end
-arch awall_2_1_1
+arch flagstone
+x 2
 y 10
 end
-arch cobblestones2
+arch awall_win1
+x 2
+y 10
+end
+arch flagstone
+x 2
 y 11
 end
 arch awall_2_1_1
+x 2
 y 11
 end
-arch cobblestones2
+arch flagstone
+x 2
 y 12
 end
 arch awall_2_1_1
+x 2
 y 12
 end
-arch cobblestones2
+arch flagstone
+x 2
 y 13
+end
+arch awall_2_1_1
+x 2
+y 13
+end
+arch flagstone
+x 2
+y 14
+end
+arch awall_2_1_1
+x 2
+y 14
+end
+arch flagstone
+x 2
+y 15
 end
 arch awall_2_2_1
+x 2
+y 15
+end
+arch grass_only
+x 2
+y 16
+end
+arch grass_only
+x 2
+y 17
+end
+arch grass_only
+x 2
+y 18
+end
+arch grass_only
+x 2
+y 19
+end
+arch grass_only
+x 2
+y 20
+end
+arch grass_only
+x 3
+end
+arch grass_only
+x 3
+y 1
+end
+arch grass_only
+x 3
+y 2
+end
+arch grass_only
+x 3
+y 3
+end
+arch flagstone
+x 3
+y 4
+end
+arch awall_2_2_2
+x 3
+y 4
+end
+arch flagstone
+x 3
+y 5
+end
+arch awall_2_2_4
+x 3
+y 5
+end
+arch shop_alchemy
+x 3
+y 6
+end
+arch cobblestones2
+x 3
+y 7
+end
+arch wall_1_4
+x 3
+y 7
+end
+arch awall_1_3
+x 3
+y 7
+end
+arch cobblestones2
+x 3
+y 8
+end
+arch cobblestones2
+x 3
+y 9
+end
+arch torch_vermilion
+x 3
+y 9
+no_pick 1
+end
+arch cobblestones2
+x 3
+y 10
+end
+arch min_oil
+x 3
+y 10
+end
+arch cobblestones2
+x 3
+y 11
+end
+arch cobblestones2
+x 3
+y 12
+end
+arch cobblestones2
+x 3
 y 13
 end
 arch cobblestones2
-x 1
+x 3
+y 14
 end
-arch awall_2_1_2
-x 1
-end
-arch cobblestones2
-x 1
-y 1
-end
-arch cobblestones2
-x 1
-y 2
-end
-arch cobblestones2
-x 1
-y 3
-end
-arch r_sack
-x 1
-y 3
-carrying 10497
-arch book_clasp
+arch guildmaster
 msg
-Go ye into the shady groves and summon
-the shadows there.  The elves in the
-wood know many magiks lost to us. A
-wise man understands we are brothers.
--- Caladon the Druid
+@match *
+Please don't interrupt their workings.
 endmsg
+x 3
+y 14
 end
-arch scroll_2
-msg
-a balm of first aid may be alchemized
-through the careful application of the
-water of the wise and some mandrake
-root
-endmsg
-end
-arch tome
-msg
-I found these strange plants growing
-up north near the mystic pond.  I hope
-the will make my potions more potent.
-An old dwarf sold me this strange
-talisman. I must get the guildmaster
-to help me identify it.
-I need to ask Kaladon how to travel
-across the etheric plane
-endmsg
-end
-arch random_plant
-end
-arch random_plant
-arch talisman
-end
-end
-end
-arch cobblestones2
-x 1
-y 4
+arch flagstone
+x 3
+y 15
 end
 arch wall_1_4
-x 1
+x 3
+y 15
+end
+arch awall_2_2_3
+x 3
+y 15
+end
+arch flagstone
+x 3
+y 16
+end
+arch awall_2_2_1
+x 3
+y 16
+end
+arch grass_only
+x 3
+y 17
+end
+arch grass_only
+x 3
+y 18
+end
+arch grass_only
+x 3
+y 19
+end
+arch grass_only
+x 3
+y 20
+end
+arch grass_only
+x 4
+end
+arch grass_only
+x 4
+y 1
+end
+arch grass_only
+x 4
+y 2
+end
+arch flagstone
+x 4
+y 3
+end
+arch awall_2_2_2
+x 4
+y 3
+end
+arch flagstone
+x 4
 y 4
 end
-arch awall_1_3
-x 1
+arch awall_2_2_4
+x 4
 y 4
 end
 arch shop_alchemy
-x 1
+x 4
 y 5
 end
 arch shop_special
-x 1
-y 6
-end
-arch shop_gems
-x 1
-y 7
-end
-arch shop_potions
-x 1
-y 8
-end
-arch shop_potions
-x 1
-y 9
-end
-arch shop_amulets
-x 1
-y 10
-end
-arch shop_amulets
-x 1
-y 11
-end
-arch shop_wands
-x 1
-y 12
-end
-arch cobblestones2
-x 1
-y 13
-end
-arch awall_2_1_2
-x 1
-y 13
-end
-arch cobblestones2
-x 2
-end
-arch awall_2_1_2
-x 2
-end
-arch cobblestones2
-x 2
-y 1
-end
-arch clock
-x 2
-y 1
-end
-arch cobblestones2
-x 2
-y 2
-end
-arch chair_1.4
-x 2
-y 2
-end
-arch cobblestones2
-x 2
-y 3
-end
-arch cobblestones2
-x 2
-y 4
-end
-arch wall_2_1_2
-x 2
-y 4
-end
-arch shop_alchemy
-x 2
-y 5
-end
-arch shop_minerals
-x 2
-y 6
-end
-arch shop_minerals
-x 2
-y 7
-end
-arch shop_potions
-x 2
-y 8
-end
-arch shop_ring
-x 2
-y 9
-end
-arch shop_ring
-x 2
-y 10
-end
-arch shop_books
-x 2
-y 11
-end
-arch shop_wands
-x 2
-y 12
-end
-arch cobblestones2
-x 2
-y 13
-end
-arch awall_2_1_2
-x 2
-y 13
-end
-arch cobblestones2
-x 3
-end
-arch awall_2_1_2
-x 3
-end
-arch cobblestones2
-x 3
-y 1
-end
-arch fireplace
-x 3
-y 1
-end
-arch cobblestones2
-x 3
-y 2
-end
-arch table
-x 3
-y 2
-end
-arch cobblestones2
-x 3
-y 3
-end
-arch chair_1.3
-x 3
-y 3
-end
-arch cobblestones2
-x 3
-y 4
-end
-arch wall_2_2_3
-x 3
-y 4
-end
-arch cobblestones2
-x 3
-y 5
-end
-arch wall_2_1_1
-x 3
-y 5
-end
-arch cobblestones2
-x 3
-y 6
-end
-arch wall_2_1_1
-x 3
-y 6
-end
-arch cobblestones2
-x 3
-y 7
-end
-arch wall_3_2
-x 3
-y 7
-end
-arch cobblestones2
-x 3
-y 8
-end
-arch wall_2_1_1
-x 3
-y 8
-end
-arch cobblestones2
-x 3
-y 9
-end
-arch wall_2_2_1
-x 3
-y 9
-end
-arch shop_scrolls
-x 3
-y 10
-end
-arch shop_books
-x 3
-y 11
-end
-arch shop_scrolls
-x 3
-y 12
-end
-arch cobblestones2
-x 3
-y 13
-end
-arch awall_2_1_2
-x 3
-y 13
-end
-arch cobblestones2
-x 4
-end
-arch awall_2_1_2
-x 4
-end
-arch cobblestones2
-x 4
-y 1
-end
-arch bookshelf
-x 4
-y 1
-end
-arch cobblestones2
-x 4
-y 2
-end
-arch chair_1.2
-x 4
-y 2
-end
-arch cobblestones2
-x 4
-y 3
-end
-arch cobblestones2
-x 4
-y 4
-end
-arch cobblestones2
-x 4
-y 5
-end
-arch neko
-name cat
-x 4
-y 5
-unaggressive 1
-end
-arch cobblestones2
-x 4
-y 6
-end
-arch dust_generic
 x 4
 y 6
 end
@@ -438,427 +465,145 @@ arch cobblestones2
 x 4
 y 8
 end
-arch dwarf_wiz
-msg
-@match *
-I help supply this guild. Usually, I
-only let members have access... but I
-see you are in need of help.
-endmsg
-x 4
-y 8
-end
 arch cobblestones2
 x 4
 y 9
-end
-arch wall_2_1_2
-x 4
-y 9
-end
-arch shop_empty
-x 4
-y 10
-end
-arch shop_mat
-x 4
-y 10
-end
-arch shop_books
-x 4
-y 11
-end
-arch shop_scrolls
-x 4
-y 12
-end
-arch cobblestones2
-x 4
-y 13
-end
-arch awall_2_1_2
-x 4
-y 13
-end
-arch cobblestones2
-x 5
-end
-arch awall_2_1_2
-x 5
-end
-arch cobblestones2
-x 5
-y 1
-end
-arch guildmaster
-name Kaladon
-msg
-@match ETHERIC PLANE!
-Ah, you wish to know the balm of
-travelling. Very dangerous it is.
-Reminds me of a story. blah blah blah
-@match balm of travelling
-You youngsters, always in a hurry with
-no time to hear my stories. If my
-memory serves me, you need the wing of
-a faerie dragon, freshy killed. Sing
-the rites of passage while adding in
-triplicate the water of sapphire, xan
-wing, & pixie wings. Stamp thrice upon
-the ground to bind the powers
-together. Apply the balm under a new
-moon and stamp thrice to invoke the
-portal. Do not wear metal, or the
-portal shall close!
-@match whispering
-TALK LOUDER! you young dolt, always
-waking old men from their naps...
-mutter... mutter... go study the world
-as I once did... mutter...
-@match *
-eh? What's that? stop whispering.
-endmsg
-x 5
-y 1
-end
-arch cobblestones2
-x 5
-y 2
-end
-arch cobblestones2
-x 5
-y 3
-end
-arch cobblestones2
-x 5
-y 4
-end
-arch cobblestones2
-x 5
-y 5
-end
-arch cobblestones2
-x 5
-y 6
-end
-arch cobblestones2
-x 5
-y 7
-end
-arch wall_2_1_2
-x 5
-y 7
-end
-arch cobblestones2
-x 5
-y 8
-end
-arch menu
-x 5
-y 8
-end
-arch cobblestones2
-x 5
-y 9
-end
-arch wall_2_2_3
-x 5
-y 9
-end
-arch cobblestones2
-x 5
-y 10
-end
-arch wall_2_1_1
-x 5
-y 10
-end
-arch cobblestones2
-x 5
-y 11
-end
-arch wall_2_1_1
-x 5
-y 11
-end
-arch cobblestones2
-x 5
-y 12
-end
-arch wall_1_2
-x 5
-y 12
-end
-arch awall_1_1
-x 5
-y 12
-end
-arch cobblestones2
-x 5
-y 13
-end
-arch awall_3_1
-x 5
-y 13
-end
-arch cobblestones2
-x 6
-end
-arch awall_2_1_2
-x 6
-end
-arch cobblestones2
-x 6
-y 1
-end
-arch torch_vermilion
-x 6
-y 1
-no_pick 1
-end
-arch cobblestones2
-x 6
-y 2
-end
-arch cobblestones2
-x 6
-y 3
-end
-arch cobblestones2
-x 6
-y 4
-end
-arch stair_up
-x 6
-y 4
-blocksview 1
-end
-arch cobblestones2
-x 6
-y 5
-end
-arch stair_down
-x 6
-y 5
-end
-arch cobblestones2
-x 6
-y 6
-end
-arch cobblestones2
-x 6
-y 7
-end
-arch wall_2_1_2
-x 6
-y 7
-end
-arch cobblestones2
-x 6
-y 8
-end
-arch cobblestones2
-x 6
-y 9
-end
-arch cobblestones2
-x 6
-y 10
-end
-arch shop_mat
-x 6
-y 10
-end
-arch cobblestones2
-x 6
-y 11
 end
 arch water
-x 6
-y 11
-end
-arch cobblestones2
-x 6
-y 12
-end
-arch torch_vermilion
-x 6
-y 12
-no_pick 1
-end
-arch cobblestones2
-x 6
-y 13
-end
-arch awall_2_1_2
-x 6
-y 13
-end
-arch cobblestones2
-x 7
-end
-arch awall_2_1_2
-x 7
-end
-arch cobblestones2
-x 7
-y 1
-end
-arch cobblestones2
-x 7
-y 2
-end
-arch cobblestones2
-x 7
-y 3
-end
-arch cobblestones2
-x 7
-y 4
-end
-arch cobblestones2
-x 7
-y 5
-end
-arch cobblestones2
-x 7
-y 6
-end
-arch cobblestones2
-x 7
-y 7
-end
-arch wall_2_1_2
-x 7
-y 7
-end
-arch cobblestones2
-x 7
-y 8
-end
-arch cobblestones2
-x 7
+x 4
 y 9
 end
 arch cobblestones2
-x 7
+x 4
 y 10
 end
 arch cobblestones2
-x 7
+x 4
 y 11
 end
 arch cobblestones2
-x 7
-y 12
-end
-arch min_oil
-x 7
+x 4
 y 12
 end
 arch cobblestones2
-x 7
-y 13
-end
-arch awall_2_1_2
-x 7
+x 4
 y 13
 end
 arch cobblestones2
-x 8
-end
-arch awall_2_1_2
-x 8
+x 4
+y 14
 end
 arch cobblestones2
-x 8
+x 4
+y 15
+end
+arch wall_3_3
+x 4
+y 15
+end
+arch flagstone
+x 4
+y 16
+end
+arch wall_1_2
+x 4
+y 16
+end
+arch awall_2_2_3
+x 4
+y 16
+end
+arch flagstone
+x 4
+y 17
+end
+arch awall_2_2_1
+x 4
+y 17
+end
+arch grass_only
+x 4
+y 18
+end
+arch grass_only
+x 4
+y 19
+end
+arch grass_only
+x 4
+y 20
+end
+arch grass_only
+x 5
+end
+arch grass_only
+x 5
 y 1
 end
-arch bookshelf
-x 8
-y 1
-end
-arch cobblestones2
-x 8
+arch flagstone
+x 5
 y 2
 end
-arch cobblestones2
-x 8
+arch awall_2_2_2
+x 5
+y 2
+end
+arch flagstone
+x 5
 y 3
 end
-arch cobblestones2
-x 8
+arch awall_2_2_4
+x 5
+y 3
+end
+arch shop_amulets
+x 5
 y 4
 end
-arch bad_cauldron
-x 8
-y 4
-end
-arch cobblestones2
-x 8
+arch light4
+x 5
 y 5
 end
-arch cobblestones2
-x 8
+arch shop_alchemy
+x 5
+y 5
+end
+arch shop_minerals
+x 5
 y 6
 end
 arch cobblestones2
-x 8
+x 5
 y 7
 end
 arch wall_2_1_2
-x 8
+x 5
 y 7
 end
 arch cobblestones2
-x 8
+x 5
 y 8
 end
 arch cobblestones2
-x 8
+x 5
 y 9
 end
 arch cobblestones2
-x 8
+x 5
 y 10
-end
-arch conjurer2
-hp 80
-x 8
-y 10
-carrying 19800
-unaggressive 1
-arch wand
-randomitems none
-arch spell_magic_bullet
-end
-end
-arch staff
-randomitems none
-arch spell_magic_bullet
-end
-end
-arch robe
-end
-arch cloak
-end
-end
-arch cobblestones2
-x 8
-y 11
 end
 arch brazier
-x 8
-y 11
+x 5
+y 10
 end
 arch cobblestones2
-x 8
-y 12
+x 5
+y 11
 end
 arch conjurer2
 hp 99
-x 8
-y 12
+x 5
+y 11
 carrying 32600
 unaggressive 1
 arch wand
@@ -891,38 +636,1298 @@ end
 end
 end
 arch cobblestones2
-x 8
+x 5
+y 12
+end
+arch cobblestones2
+x 5
+y 12
+end
+arch cobblestones2
+x 5
+y 12
+end
+arch brazier
+x 5
+y 12
+end
+arch cobblestones2
+x 5
 y 13
+end
+arch light4
+x 5
+y 14
+end
+arch cobblestones2
+x 5
+y 14
+end
+arch cobblestones2
+x 5
+y 15
+end
+arch wall_2_1_2
+x 5
+y 15
+end
+arch dungeon_magic
+x 5
+y 16
+end
+arch cobblestones2
+x 5
+y 16
+end
+arch flagstone
+x 5
+y 17
+end
+arch awall_2_2_3
+x 5
+y 17
+end
+arch flagstone
+x 5
+y 18
+end
+arch awall_2_2_1
+x 5
+y 18
+end
+arch grass_only
+x 5
+y 19
+end
+arch grass_only
+x 5
+y 20
+end
+arch grass_only
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch flagstone
+x 6
+y 2
+end
+arch awall_2_1_2
+x 6
+y 2
+end
+arch shop_books
+x 6
+y 3
+end
+arch shop_ring
+x 6
+y 4
+end
+arch shop_empty
+x 6
+y 5
+end
+arch shop_empty
+x 6
+y 6
+end
+arch cobblestones2
+x 6
+y 7
+end
+arch wall_2_1_2
+x 6
+y 7
+end
+arch cobblestones2
+x 6
+y 8
+end
+arch cobblestones2
+x 6
+y 9
+end
+arch cobblestones2
+x 6
+y 10
+end
+arch cobblestones2
+x 6
+y 10
+end
+arch conjurer2
+hp 99
+x 6
+y 10
+carrying 28900
+unaggressive 1
+arch potion_heal
+arch spell_heal
+end
+end
+arch amulet
+end
+arch wand
+randomitems none
+arch spell_magic_bullet
+end
+end
+arch wand
+randomitems none
+arch spell_magic_bullet
+end
+end
+arch staff
+randomitems none
+arch spell_magic_bullet
+end
+end
+arch dagger
+end
+arch cloak
+end
+arch robe
+end
+arch low_boots
+end
+arch turban
+end
+end
+arch cobblestones2
+x 6
+y 11
+end
+arch cobblestones2
+x 6
+y 11
+end
+arch pentagram
+x 6
+y 11
+end
+arch rune_drain_magic
+x 6
+y 11
+end
+arch cobblestones2
+x 6
+y 12
+end
+arch cobblestones2
+x 6
+y 13
+end
+arch cobblestones2
+x 6
+y 14
+end
+arch cobblestones2
+x 6
+y 15
+end
+arch wall_2_1_2
+x 6
+y 15
+end
+arch dungeon_magic
+x 6
+y 16
+end
+arch cobblestones2
+x 6
+y 16
+end
+arch light4
+x 6
+y 17
+end
+arch dungeon_magic
+x 6
+y 17
+end
+arch cobblestones2
+x 6
+y 17
+end
+arch torch_cyan
+x 6
+y 17
+no_pick 1
+end
+arch flagstone
+x 6
+y 18
+end
+arch awall_2_1_2
+x 6
+y 18
+end
+arch grass_only
+x 6
+y 19
+end
+arch grass_only
+x 6
+y 20
+end
+arch grass_only
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch flagstone
+x 7
+y 2
+end
+arch awall_2_1_2
+x 7
+y 2
+end
+arch shop_gems
+x 7
+y 3
+end
+arch light4
+x 7
+y 4
+end
+arch shop_potions
+x 7
+y 4
+end
+arch shop_empty
+x 7
+y 5
+end
+arch shop_empty
+x 7
+y 6
+end
+arch shop_mat
+x 7
+y 6
+end
+arch cobblestones2
+x 7
+y 7
+end
+arch wall_2_1_2
+x 7
+y 7
+end
+arch cobblestones2
+x 7
+y 8
+end
+arch shop_mat
+x 7
+y 8
+end
+arch cobblestones2
+x 7
+y 9
+end
+arch cobblestones2
+x 7
+y 10
+end
+arch cobblestones2
+x 7
+y 10
+end
+arch brazier
+x 7
+y 10
+end
+arch cobblestones2
+x 7
+y 11
+end
+arch cobblestones2
+x 7
+y 11
+end
+arch cobblestones2
+x 7
+y 11
+end
+arch conjurer2
+hp 80
+x 7
+y 11
+carrying 19800
+unaggressive 1
+arch wand
+randomitems none
+arch spell_magic_bullet
+end
+end
+arch staff
+randomitems none
+arch spell_magic_bullet
+end
+end
+arch robe
+end
+arch cloak
+end
+end
+arch cobblestones2
+x 7
+y 12
+end
+arch cobblestones2
+x 7
+y 12
+end
+arch brazier
+x 7
+y 12
+end
+arch cobblestones2
+x 7
+y 13
+end
+arch cobblestones2
+x 7
+y 14
+end
+arch cobblestones2
+x 7
+y 15
+end
+arch wall_2_1_2
+x 7
+y 15
+end
+arch dungeon_magic
+x 7
+y 16
+end
+arch cobblestones2
+x 7
+y 16
+end
+arch dungeon_magic
+x 7
+y 17
+end
+arch cobblestones2
+x 7
+y 17
+end
+arch flagstone
+x 7
+y 18
+end
+arch awall_2_1_2
+x 7
+y 18
+end
+arch grass_only
+x 7
+y 19
+end
+arch grass_only
+x 7
+y 20
+end
+arch grass_only
+x 8
+end
+arch grass_only
+x 8
+y 1
+end
+arch flagstone
+x 8
+y 2
 end
 arch awall_2_1_2
 x 8
+y 2
+end
+arch shop_minerals
+x 8
+y 3
+end
+arch shop_potions
+x 8
+y 4
+end
+arch cobblestones2
+x 8
+y 5
+end
+arch wall_2_2_2
+x 8
+y 5
+end
+arch cobblestones2
+x 8
+y 6
+end
+arch wall_2_1_1
+x 8
+y 6
+end
+arch cobblestones2
+x 8
+y 7
+end
+arch wall_2_2_4
+x 8
+y 7
+end
+arch cobblestones2
+x 8
+y 8
+end
+arch cobblestones2
+x 8
+y 9
+end
+arch cobblestones2
+x 8
+y 10
+end
+arch cobblestones2
+x 8
+y 11
+end
+arch cobblestones2
+x 8
+y 12
+end
+arch cobblestones2
+x 8
 y 13
 end
 arch cobblestones2
+x 8
+y 14
+end
+arch cobblestones2
+x 8
+y 15
+end
+arch wall_1_3
+x 8
+y 15
+end
+arch light4
+x 8
+y 16
+end
+arch dungeon_magic
+x 8
+y 16
+end
+arch cobblestones2
+x 8
+y 16
+end
+arch dungeon_magic
+x 8
+y 17
+end
+arch cobblestones2
+x 8
+y 17
+end
+arch flagstone
+x 8
+y 18
+end
+arch awall_2_1_2
+x 8
+y 18
+end
+arch grass_only
+x 8
+y 19
+end
+arch grass_only
+x 8
+y 20
+end
+arch grass_only
 x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch flagstone
+x 9
+y 2
 end
 arch awall_2_1_2
 x 9
-end
-arch cobblestones2
-x 9
-y 1
-end
-arch bookshelf
-x 9
-y 1
-end
-arch cobblestones2
-x 9
 y 2
 end
-arch chair_1.4
-x 9
-y 2
-end
-arch cobblestones2
+arch shop_potions
 x 9
 y 3
+end
+arch shop_amulets
+x 9
+y 4
+end
+arch cobblestones2
+x 9
+y 5
+end
+arch wall_2_1_2
+x 9
+y 5
+end
+arch cobblestones2
+x 9
+y 6
+end
+arch dwarf_wiz
+msg
+@match *
+I help supply this guild. Usually, I
+only let members have access... but I
+see you are in need of help.
+endmsg
+x 9
+y 6
+end
+arch light4
+x 9
+y 7
+end
+arch cobblestones2
+x 9
+y 7
+end
+arch menu
+x 9
+y 7
+end
+arch cobblestones2
+x 9
+y 8
+end
+arch cobblestones2
+x 9
+y 9
+end
+arch cobblestones2
+x 9
+y 10
+end
+arch cobblestones2
+x 9
+y 11
+end
+arch cobblestones2
+x 9
+y 12
+end
+arch cobblestones2
+x 9
+y 13
+end
+arch cobblestones2
+x 9
+y 14
+end
+arch cobblestones2
+x 9
+y 15
+end
+arch look_door_exit_1
+x 9
+y 15
+end
+arch dungeon_magic
+x 9
+y 16
+end
+arch cobblestones2
+x 9
+y 16
+end
+arch dungeon_magic
+x 9
+y 17
+end
+arch button_small
+x 9
+y 17
+connected 1
+end
+arch cobblestones2
+x 9
+y 17
+end
+arch flagstone
+x 9
+y 18
+end
+arch awall_1_3
+x 9
+y 18
+end
+arch dungeon_magic
+x 9
+y 19
+end
+arch invis_exit
+slaying /world/world_120_109
+hp 35
+sp 40
+x 9
+y 19
+end
+arch grass_only
+x 9
+y 19
+end
+arch grass_only
+x 9
+y 20
+end
+arch grass_only
+x 10
+end
+arch grass_only
+x 10
+y 1
+end
+arch light2
+x 10
+y 2
+end
+arch flagstone
+x 10
+y 2
+end
+arch awall_win2
+x 10
+y 2
+end
+arch shop_ring
+x 10
+y 3
+end
+arch light4
+x 10
+y 4
+end
+arch shop_ring
+x 10
+y 4
+end
+arch cobblestones2
+x 10
+y 5
+end
+arch wall_3_3
+x 10
+y 5
+end
+arch cobblestones2
+x 10
+y 6
+end
+arch wall_2_1_1
+x 10
+y 6
+end
+arch cobblestones2
+x 10
+y 7
+end
+arch wall_2_1_1
+x 10
+y 7
+end
+arch cobblestones2
+x 10
+y 8
+end
+arch wall_2_1_1
+x 10
+y 8
+end
+arch cobblestones2
+x 10
+y 9
+end
+arch wall_2_1_1
+x 10
+y 9
+end
+arch cobblestones2
+x 10
+y 10
+end
+arch wall_2_1_1
+x 10
+y 10
+end
+arch cobblestones2
+x 10
+y 11
+end
+arch wall_2_1_1
+x 10
+y 11
+end
+arch cobblestones2
+x 10
+y 12
+end
+arch wall_2_1_1
+x 10
+y 12
+end
+arch cobblestones2
+x 10
+y 13
+end
+arch wall_2_1_1
+x 10
+y 13
+end
+arch cobblestones2
+x 10
+y 14
+end
+arch wall_2_1_1
+x 10
+y 14
+end
+arch light4
+x 10
+y 15
+end
+arch cobblestones2
+x 10
+y 15
+end
+arch wall_1_2
+x 10
+y 15
+end
+arch dungeon_magic
+x 10
+y 16
+end
+arch cobblestones2
+x 10
+y 16
+end
+arch dungeon_magic
+x 10
+y 17
+end
+arch button_small
+x 10
+y 17
+connected 1
+end
+arch cobblestones2
+x 10
+y 17
+end
+arch button_small
+x 10
+y 18
+connected 1
+end
+arch cobblestones2
+x 10
+y 18
+end
+arch odoorn2_closed_1
+x 10
+y 18
+connected 1
+end
+arch dungeon_magic
+x 10
+y 19
+end
+arch invis_exit
+slaying /world/world_120_109
+hp 35
+sp 40
+x 10
+y 19
+end
+arch grass_only
+x 10
+y 19
+end
+arch grass_only
+x 10
+y 20
+end
+arch grass_only
+x 11
+end
+arch grass_only
+x 11
+y 1
+end
+arch flagstone
+x 11
+y 2
+end
+arch awall_2_1_2
+x 11
+y 2
+end
+arch shop_amulets
+x 11
+y 3
+end
+arch shop_wands
+x 11
+y 4
+end
+arch cobblestones2
+x 11
+y 5
+end
+arch wall_2_1_2
+x 11
+y 5
+end
+arch cobblestones2
+x 11
+y 6
+end
+arch dust_generic
+x 11
+y 6
+end
+arch cobblestones2
+x 11
+y 7
+end
+arch neko
+name cat
+x 11
+y 7
+unaggressive 1
+end
+arch cobblestones2
+x 11
+y 8
+end
+arch cobblestones2
+x 11
+y 9
+end
+arch cobblestones2
+x 11
+y 10
+end
+arch cobblestones2
+x 11
+y 11
+end
+arch cobblestones2
+x 11
+y 12
+end
+arch cobblestones2
+x 11
+y 13
+end
+arch cobblestones2
+x 11
+y 14
+end
+arch cobblestones2
+x 11
+y 15
+end
+arch look_door_exit_1
+x 11
+y 15
+end
+arch dungeon_magic
+x 11
+y 16
+end
+arch cobblestones2
+x 11
+y 16
+end
+arch dungeon_magic
+x 11
+y 17
+end
+arch button_small
+x 11
+y 17
+connected 1
+end
+arch cobblestones2
+x 11
+y 17
+end
+arch flagstone
+x 11
+y 18
+end
+arch awall_1_4
+x 11
+y 18
+end
+arch dungeon_magic
+x 11
+y 19
+end
+arch invis_exit
+slaying /world/world_120_109
+hp 35
+sp 40
+x 11
+y 19
+end
+arch grass_only
+x 11
+y 19
+end
+arch grass_only
+x 11
+y 20
+end
+arch grass_only
+x 12
+end
+arch grass_only
+x 12
+y 1
+end
+arch flagstone
+x 12
+y 2
+end
+arch awall_2_1_2
+x 12
+y 2
+end
+arch shop_books
+x 12
+y 3
+end
+arch shop_wands
+x 12
+y 4
+end
+arch cobblestones2
+x 12
+y 5
+end
+arch wall_2_1_2
+x 12
+y 5
+end
+arch cobblestones2
+x 12
+y 6
+end
+arch bookshelf
+x 12
+y 6
+end
+arch light4
+x 12
+y 7
+end
+arch cobblestones2
+x 12
+y 7
+end
+arch cobblestones2
+x 12
+y 8
+end
+arch cobblestones2
+x 12
+y 9
+end
+arch light4
+x 12
+y 10
+end
+arch cobblestones2
+x 12
+y 10
+end
+arch cobblestones2
+x 12
+y 11
+end
+arch cobblestones2
+x 12
+y 12
+end
+arch light4
+x 12
+y 13
+end
+arch cobblestones2
+x 12
+y 13
+end
+arch cobblestones2
+x 12
+y 14
+end
+arch cobblestones2
+x 12
+y 15
+end
+arch wall_1_4
+x 12
+y 15
+end
+arch light4
+x 12
+y 16
+end
+arch dungeon_magic
+x 12
+y 16
+end
+arch cobblestones2
+x 12
+y 16
+end
+arch dungeon_magic
+x 12
+y 17
+end
+arch cobblestones2
+x 12
+y 17
+end
+arch flagstone
+x 12
+y 18
+end
+arch awall_2_1_2
+x 12
+y 18
+end
+arch grass_only
+x 12
+y 19
+end
+arch grass_only
+x 12
+y 20
+end
+arch grass_only
+x 13
+end
+arch grass_only
+x 13
+y 1
+end
+arch flagstone
+x 13
+y 2
+end
+arch awall_2_1_2
+x 13
+y 2
+end
+arch shop_books
+x 13
+y 3
+end
+arch light4
+x 13
+y 4
+end
+arch shop_scrolls
+x 13
+y 4
+end
+arch cobblestones2
+x 13
+y 5
+end
+arch wall_2_1_2
+x 13
+y 5
+end
+arch cobblestones2
+x 13
+y 6
+end
+arch bookshelf
+x 13
+y 6
+end
+arch cobblestones2
+x 13
+y 7
+end
+arch cobblestones2
+x 13
+y 8
+end
+arch cobblestones2
+x 13
+y 9
+end
+arch stair_down
+x 13
+y 9
+end
+arch cobblestones2
+x 13
+y 10
+end
+arch cobblestones2
+x 13
+y 11
+end
+arch bad_cauldron
+x 13
+y 11
+end
+arch cobblestones2
+x 13
+y 12
+end
+arch cobblestones2
+x 13
+y 13
+end
+arch cobblestones2
+x 13
+y 14
+end
+arch cobblestones2
+x 13
+y 15
+end
+arch wall_2_1_2
+x 13
+y 15
+end
+arch dungeon_magic
+x 13
+y 16
+end
+arch cobblestones2
+x 13
+y 16
+end
+arch dungeon_magic
+x 13
+y 17
+end
+arch cobblestones2
+x 13
+y 17
+end
+arch flagstone
+x 13
+y 18
+end
+arch awall_2_1_2
+x 13
+y 18
+end
+arch grass_only
+x 13
+y 19
+end
+arch grass_only
+x 13
+y 20
+end
+arch grass_only
+x 14
+end
+arch grass_only
+x 14
+y 1
+end
+arch flagstone
+x 14
+y 2
+end
+arch awall_2_1_2
+x 14
+y 2
+end
+arch shop_books
+x 14
+y 3
+end
+arch shop_scrolls
+x 14
+y 4
+end
+arch cobblestones2
+x 14
+y 5
+end
+arch wall_2_1_2
+x 14
+y 5
+end
+arch cobblestones2
+x 14
+y 6
+end
+arch clock
+x 14
+y 6
+end
+arch cobblestones2
+x 14
+y 7
+end
+arch chair_1.4
+x 14
+y 7
+end
+arch cobblestones2
+x 14
+y 8
+end
+arch cobblestones2
+x 14
+y 9
+end
+arch stair_up
+x 14
+y 9
+blocksview 1
+end
+arch cobblestones2
+x 14
+y 10
+end
+arch cobblestones2
+x 14
+y 11
+end
+arch cobblestones2
+x 14
+y 12
 end
 arch c_priest
 name Garlock the Great
@@ -941,8 +1946,8 @@ one of the elders about our magic lore.
 You seem a wise and honorable one. A
 stranger in a strange land.
 endmsg
-x 9
-y 3
+x 14
+y 12
 carrying 52420
 unaggressive 1
 reflect_spell 1
@@ -990,234 +1995,326 @@ arch random_spells
 end
 end
 arch cobblestones2
-x 9
-y 4
+x 14
+y 13
 end
 arch cobblestones2
-x 9
-y 5
+x 14
+y 14
 end
 arch cobblestones2
-x 9
-y 6
-end
-arch cobblestones2
-x 9
-y 7
+x 14
+y 15
 end
 arch wall_2_1_2
-x 9
-y 7
+x 14
+y 15
+end
+arch dungeon_magic
+x 14
+y 16
 end
 arch cobblestones2
-x 9
-y 8
+x 14
+y 16
+end
+arch light4
+x 14
+y 17
+end
+arch dungeon_magic
+x 14
+y 17
 end
 arch cobblestones2
-x 9
-y 9
+x 14
+y 17
 end
-arch cobblestones2
-x 9
-y 10
+arch torch_cyan
+x 14
+y 17
+no_pick 1
 end
-arch brazier
-x 9
-y 10
-end
-arch cobblestones2
-x 9
-y 11
-end
-arch pentagram
-x 9
-y 11
-end
-arch rune_drain_magic
-x 9
-y 11
-end
-arch cobblestones2
-x 9
-y 12
-end
-arch brazier
-x 9
-y 12
-end
-arch cobblestones2
-x 9
-y 13
+arch flagstone
+x 14
+y 18
 end
 arch awall_2_1_2
-x 9
-y 13
+x 14
+y 18
 end
-arch cobblestones2
-x 10
+arch grass_only
+x 14
+y 19
 end
-arch awall_2_1_2
-x 10
+arch grass_only
+x 14
+y 20
 end
-arch cobblestones2
-x 10
+arch grass_only
+x 15
+end
+arch grass_only
+x 15
 y 1
+end
+arch flagstone
+x 15
+y 2
+end
+arch awall_2_2_3
+x 15
+y 2
+end
+arch flagstone
+x 15
+y 3
+end
+arch awall_2_2_1
+x 15
+y 3
+end
+arch shop_scrolls
+x 15
+y 4
+end
+arch cobblestones2
+x 15
+y 5
+end
+arch wall_2_1_2
+x 15
+y 5
+end
+arch cobblestones2
+x 15
+y 6
 end
 arch fireplace
-x 10
-y 1
+x 15
+y 6
 end
 arch cobblestones2
-x 10
-y 2
+x 15
+y 7
 end
 arch table
-x 10
-y 2
+x 15
+y 7
 end
 arch cobblestones2
-x 10
-y 3
+x 15
+y 8
 end
 arch chair_1.3
-x 10
+x 15
+y 8
+end
+arch cobblestones2
+x 15
+y 9
+end
+arch cobblestones2
+x 15
+y 10
+end
+arch cobblestones2
+x 15
+y 11
+end
+arch cobblestones2
+x 15
+y 12
+end
+arch chair_1.4
+x 15
+y 12
+end
+arch light4
+x 15
+y 13
+end
+arch cobblestones2
+x 15
+y 13
+end
+arch cobblestones2
+x 15
+y 14
+end
+arch cobblestones2
+x 15
+y 15
+end
+arch wall_2_1_2
+x 15
+y 15
+end
+arch dungeon_magic
+x 15
+y 16
+end
+arch cobblestones2
+x 15
+y 16
+end
+arch flagstone
+x 15
+y 17
+end
+arch awall_2_2_2
+x 15
+y 17
+end
+arch flagstone
+x 15
+y 18
+end
+arch awall_2_2_4
+x 15
+y 18
+end
+arch grass_only
+x 15
+y 19
+end
+arch grass_only
+x 15
+y 20
+end
+arch grass_only
+x 16
+end
+arch grass_only
+x 16
+y 1
+end
+arch grass_only
+x 16
+y 2
+end
+arch flagstone
+x 16
 y 3
 end
-arch cobblestones2
-x 10
+arch awall_2_2_3
+x 16
+y 3
+end
+arch flagstone
+x 16
 y 4
 end
-arch wall_2_2_2
-x 10
+arch awall_2_2_1
+x 16
 y 4
-end
-arch cobblestones2
-x 10
-y 5
-end
-arch wall_1_2
-x 10
-y 5
-end
-arch cobblestones2
-x 10
-y 6
-end
-arch door_look_2
-x 10
-y 6
-end
-arch cobblestones2
-x 10
-y 7
-end
-arch wall_1_3
-x 10
-y 7
-end
-arch cobblestones2
-x 10
-y 8
-end
-arch door_look_2
-x 10
-y 8
-end
-arch cobblestones2
-x 10
-y 9
 end
 arch wall_1_1
-x 10
-y 9
+x 16
+y 4
 end
 arch cobblestones2
-x 10
-y 10
+x 16
+y 5
 end
-arch wall_2_2_1
-x 10
-y 10
-end
-arch cobblestones2
-x 10
-y 11
-end
-arch brazier
-x 10
-y 11
+arch wall_3_1
+x 16
+y 5
 end
 arch cobblestones2
-x 10
-y 12
+x 16
+y 6
 end
-arch conjurer2
-hp 99
-x 10
-y 12
-carrying 28900
-unaggressive 1
-arch potion_heal
-arch spell_heal
+arch bookshelf
+x 16
+y 6
 end
-end
-arch amulet
-end
-arch wand
-randomitems none
-arch spell_magic_bullet
-end
-end
-arch wand
-randomitems none
-arch spell_magic_bullet
-end
-end
-arch staff
-randomitems none
-arch spell_magic_bullet
-end
-end
-arch dagger
-end
-arch cloak
-end
-arch robe
-end
-arch low_boots
-end
-arch turban
-end
+arch light4
+x 16
+y 7
 end
 arch cobblestones2
-x 10
-y 13
-end
-arch awall_2_1_2
-x 10
-y 13
-end
-arch cobblestones2
-x 11
-end
-arch awall_2_1_2
-x 11
-end
-arch cobblestones2
-x 11
-y 1
-end
-arch chest
-x 11
-y 1
-end
-arch cobblestones2
-x 11
-y 2
+x 16
+y 7
 end
 arch chair_1.2
-x 11
-y 2
+x 16
+y 7
+end
+arch cobblestones2
+x 16
+y 8
+end
+arch guildmaster
+name Kaladon
+msg
+@match ETHERIC PLANE!
+Ah, you wish to know the balm of
+travelling. Very dangerous it is.
+Reminds me of a story. blah blah blah
+@match balm of travelling
+You youngsters, always in a hurry with
+no time to hear my stories. If my
+memory serves me, you need the wing of
+a faerie dragon, freshy killed. Sing
+the rites of passage while adding in
+triplicate the water of sapphire, xan
+wing, & pixie wings. Stamp thrice upon
+the ground to bind the powers
+together. Apply the balm under a new
+moon and stamp thrice to invoke the
+portal. Do not wear metal, or the
+portal shall close!
+@match whispering
+TALK LOUDER! you young dolt, always
+waking old men from their naps...
+mutter... mutter... go study the world
+as I once did... mutter...
+@match *
+eh? What's that? stop whispering.
+endmsg
+x 16
+y 8
+end
+arch cobblestones2
+x 16
+y 9
+end
+arch light4
+x 16
+y 10
+end
+arch cobblestones2
+x 16
+y 10
+end
+arch cobblestones2
+x 16
+y 11
+end
+arch chair_1.3
+x 16
+y 11
+end
+arch cobblestones2
+x 16
+y 12
+end
+arch cobblestones2
+x 16
+y 12
+end
+arch table
+x 16
+y 12
+end
+arch cobblestones2
+x 16
+y 13
+end
+arch chair_1.2
+x 16
+y 13
 end
 arch crone
 msg
@@ -1247,319 +2344,511 @@ Kaladon, the wise, has dabbled in the
 etheric plane. If he's not alseep, he
 may answer your question.
 endmsg
-x 11
-y 2
-end
-arch cobblestones2
-x 11
-y 3
-end
-arch wall_2_2_2
-x 11
-y 3
-end
-arch cobblestones2
-x 11
-y 4
-end
-arch wall_2_2_4
-x 11
-y 4
-end
-arch cobblestones2
-x 11
-y 5
-end
-arch dungeon_magic
-x 11
-y 5
-end
-arch cobblestones2
-x 11
-y 6
-end
-arch dungeon_magic
-x 11
-y 6
-end
-arch cobblestones2
-x 11
-y 7
-end
-arch dungeon_magic
-x 11
-y 7
-end
-arch cobblestones2
-x 11
-y 8
-end
-arch dungeon_magic
-x 11
-y 8
-end
-arch cobblestones2
-x 11
-y 9
-end
-arch dungeon_magic
-x 11
-y 9
-end
-arch cobblestones2
-x 11
-y 10
-end
-arch wall_2_2_3
-x 11
-y 10
-end
-arch cobblestones2
-x 11
-y 11
-end
-arch wall_2_2_1
-x 11
-y 11
-end
-arch cobblestones2
-x 11
-y 12
-end
-arch cobblestones2
-x 11
-y 13
-end
-arch awall_2_1_2
-x 11
+x 16
 y 13
 end
 arch cobblestones2
-x 12
-end
-arch awall_2_1_2
-x 12
+x 16
+y 14
 end
 arch cobblestones2
-x 12
-y 1
+x 16
+y 15
 end
-arch cobblestones2
-x 12
-y 2
+arch wall_3_3
+x 16
+y 15
 end
-arch cobblestones2
-x 12
-y 3
+arch flagstone
+x 16
+y 16
 end
-arch wall_1_3
-x 12
-y 3
+arch wall_1_2
+x 16
+y 16
 end
-arch awall_1_4
-x 12
-y 3
+arch awall_2_2_2
+x 16
+y 16
 end
-arch cobblestones2
-x 12
-y 4
-end
-arch torch_cyan
-x 12
-y 4
-no_pick 1
-end
-arch cobblestones2
-x 12
-y 5
-end
-arch dungeon_magic
-x 12
-y 5
-end
-arch cobblestones2
-x 12
-y 6
-end
-arch dungeon_magic
-x 12
-y 6
-end
-arch cobblestones2
-x 12
-y 7
-end
-arch dungeon_magic
-x 12
-y 7
-end
-arch cobblestones2
-x 12
-y 8
-end
-arch dungeon_magic
-x 12
-y 8
-end
-arch cobblestones2
-x 12
-y 9
-end
-arch dungeon_magic
-x 12
-y 9
-end
-arch cobblestones2
-x 12
-y 10
-end
-arch torch_cyan
-x 12
-y 10
-no_pick 1
-end
-arch cobblestones2
-x 12
-y 11
-end
-arch wall_1_3
-x 12
-y 11
-end
-arch awall_1_4
-x 12
-y 11
-end
-arch cobblestones2
-x 12
-y 12
-end
-arch guildmaster
-msg
-@match *
-Please don't interrupt their workings.
-endmsg
-x 12
-y 12
-end
-arch cobblestones2
-x 12
-y 13
-end
-arch awall_2_1_2
-x 12
-y 13
-end
-arch cobblestones2
-x 13
-end
-arch awall_2_2_3
-x 13
-end
-arch cobblestones2
-x 13
-y 1
-end
-arch awall_2_1_1
-x 13
-y 1
-end
-arch cobblestones2
-x 13
-y 2
-end
-arch awall_2_1_1
-x 13
-y 2
-end
-arch cobblestones2
-x 13
-y 3
-end
-arch awall_3_4
-x 13
-y 3
-end
-arch cobblestones2
-x 13
-y 4
-end
-arch awall_2_1_1
-x 13
-y 4
-end
-arch cobblestones2
-x 13
-y 5
-end
-arch awall_2_1_1
-x 13
-y 5
-end
-arch cobblestones2
-x 13
-y 6
-end
-arch awall_1_2
-x 13
-y 6
-end
-arch cobblestones2
-x 13
-y 7
-end
-arch oakdoor_1
-slaying /world/world_120_109
-hp 35
-sp 40
-x 13
-y 7
-end
-arch cobblestones2
-x 13
-y 8
-end
-arch awall_1_1
-x 13
-y 8
-end
-arch cobblestones2
-x 13
-y 9
-end
-arch awall_2_1_1
-x 13
-y 9
-end
-arch cobblestones2
-x 13
-y 10
-end
-arch awall_2_1_1
-x 13
-y 10
-end
-arch cobblestones2
-x 13
-y 11
-end
-arch awall_3_4
-x 13
-y 11
-end
-arch cobblestones2
-x 13
-y 12
-end
-arch awall_2_1_1
-x 13
-y 12
-end
-arch cobblestones2
-x 13
-y 13
+arch flagstone
+x 16
+y 17
 end
 arch awall_2_2_4
-x 13
+x 16
+y 17
+end
+arch grass_only
+x 16
+y 18
+end
+arch grass_only
+x 16
+y 19
+end
+arch grass_only
+x 16
+y 20
+end
+arch grass_only
+x 17
+end
+arch grass_only
+x 17
+y 1
+end
+arch grass_only
+x 17
+y 2
+end
+arch grass_only
+x 17
+y 3
+end
+arch flagstone
+x 17
+y 4
+end
+arch awall_2_2_3
+x 17
+y 4
+end
+arch flagstone
+x 17
+y 5
+end
+arch awall_2_2_1
+x 17
+y 5
+end
+arch wall_1_3
+x 17
+y 5
+end
+arch cobblestones2
+x 17
+y 6
+end
+arch r_sack
+x 17
+y 6
+carrying 10497
+arch book_clasp
+msg
+Go ye into the shady groves and summon
+the shadows there.  The elves in the
+wood know many magiks lost to us. A
+wise man understands we are brothers.
+-- Caladon the Druid
+endmsg
+end
+arch scroll_2
+msg
+a balm of first aid may be alchemized
+through the careful application of the
+water of the wise and some mandrake
+root
+endmsg
+end
+arch tome
+msg
+I found these strange plants growing
+up north near the mystic pond.  I hope
+the will make my potions more potent.
+An old dwarf sold me this strange
+talisman. I must get the guildmaster
+to help me identify it.
+I need to ask Kaladon how to travel
+across the etheric plane
+endmsg
+end
+arch random_plant
+end
+arch random_plant
+arch talisman
+end
+end
+end
+arch cobblestones2
+x 17
+y 7
+end
+arch cobblestones2
+x 17
+y 8
+end
+arch cobblestones2
+x 17
+y 9
+end
+arch torch_vermilion
+x 17
+y 9
+no_pick 1
+end
+arch cobblestones2
+x 17
+y 10
+end
+arch cobblestones2
+x 17
+y 11
+end
+arch cobblestones2
+x 17
+y 12
+end
+arch cobblestones2
+x 17
+y 12
+end
+arch fireplace
+x 17
+y 12
+end
+arch cobblestones2
+x 17
 y 13
+end
+arch chest
+x 17
+y 13
+end
+arch cobblestones2
+x 17
+y 14
+end
+arch flagstone
+x 17
+y 15
+end
+arch wall_1_3
+x 17
+y 15
+end
+arch awall_2_2_2
+x 17
+y 15
+end
+arch flagstone
+x 17
+y 16
+end
+arch awall_2_2_4
+x 17
+y 16
+end
+arch grass_only
+x 17
+y 17
+end
+arch grass_only
+x 17
+y 18
+end
+arch grass_only
+x 17
+y 19
+end
+arch grass_only
+x 17
+y 20
+end
+arch grass_only
+x 18
+end
+arch grass_only
+x 18
+y 1
+end
+arch grass_only
+x 18
+y 2
+end
+arch grass_only
+x 18
+y 3
+end
+arch grass_only
+x 18
+y 4
+end
+arch flagstone
+x 18
+y 5
+end
+arch awall_2_2_3
+x 18
+y 5
+end
+arch flagstone
+x 18
+y 6
+end
+arch awall_2_1_1
+x 18
+y 6
+end
+arch flagstone
+x 18
+y 7
+end
+arch awall_2_1_1
+x 18
+y 7
+end
+arch flagstone
+x 18
+y 8
+end
+arch awall_2_1_1
+x 18
+y 8
+end
+arch flagstone
+x 18
+y 9
+end
+arch awall_2_1_1
+x 18
+y 9
+end
+arch light2
+x 18
+y 10
+end
+arch flagstone
+x 18
+y 10
+end
+arch awall_win1
+x 18
+y 10
+end
+arch flagstone
+x 18
+y 11
+end
+arch awall_2_1_1
+x 18
+y 11
+end
+arch flagstone
+x 18
+y 12
+end
+arch awall_2_1_1
+x 18
+y 12
+end
+arch flagstone
+x 18
+y 13
+end
+arch awall_2_1_1
+x 18
+y 13
+end
+arch flagstone
+x 18
+y 14
+end
+arch awall_2_1_1
+x 18
+y 14
+end
+arch flagstone
+x 18
+y 15
+end
+arch awall_2_2_4
+x 18
+y 15
+end
+arch grass_only
+x 18
+y 16
+end
+arch grass_only
+x 18
+y 17
+end
+arch grass_only
+x 18
+y 18
+end
+arch grass_only
+x 18
+y 19
+end
+arch grass_only
+x 18
+y 20
+end
+arch grass_only
+x 19
+end
+arch grass_only
+x 19
+y 1
+end
+arch grass_only
+x 19
+y 2
+end
+arch grass_only
+x 19
+y 3
+end
+arch grass_only
+x 19
+y 4
+end
+arch grass_only
+x 19
+y 5
+end
+arch grass_only
+x 19
+y 6
+end
+arch grass_only
+x 19
+y 7
+end
+arch grass_only
+x 19
+y 8
+end
+arch grass_only
+x 19
+y 9
+end
+arch grass_only
+x 19
+y 10
+end
+arch grass_only
+x 19
+y 11
+end
+arch grass_only
+x 19
+y 12
+end
+arch grass_only
+x 19
+y 13
+end
+arch grass_only
+x 19
+y 14
+end
+arch grass_only
+x 19
+y 15
+end
+arch grass_only
+x 19
+y 16
+end
+arch grass_only
+x 19
+y 17
+end
+arch grass_only
+x 19
+y 18
+end
+arch grass_only
+x 19
+y 19
+end
+arch grass_only
+x 19
+y 20
+end
+arch grass_only
+x 20
+end
+arch grass_only
+x 20
+y 1
+end
+arch grass_only
+x 20
+y 2
+end
+arch grass_only
+x 20
+y 3
+end
+arch grass_only
+x 20
+y 4
+end
+arch grass_only
+x 20
+y 5
+end
+arch grass_only
+x 20
+y 6
+end
+arch grass_only
+x 20
+y 7
+end
+arch grass_only
+x 20
+y 8
+end
+arch grass_only
+x 20
+y 9
+end
+arch grass_only
+x 20
+y 10
+end
+arch grass_only
+x 20
+y 11
+end
+arch grass_only
+x 20
+y 12
+end
+arch grass_only
+x 20
+y 13
+end
+arch grass_only
+x 20
+y 14
+end
+arch grass_only
+x 20
+y 15
+end
+arch grass_only
+x 20
+y 16
+end
+arch grass_only
+x 20
+y 17
+end
+arch grass_only
+x 20
+y 18
+end
+arch grass_only
+x 20
+y 19
+end
+arch grass_only
+x 20
+y 20
 end
