@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2011-04-29 Rick Tanner
+Modified: 2011-05-03 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -5583,8 +5583,8 @@ end
 arch store_armour
 name Olaf's Armor Emporium
 slaying /navar_city/misc/city1armour
-hp 1
-sp 2
+hp 4
+sp 15
 x 16
 y 1
 end
