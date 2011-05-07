@@ -13,7 +13,7 @@ enter_x 9
 enter_y 15
 msg
 Created:  1996-04-28 b.t. (thomas@astro.psu.edu)
-Modified: 2008-11-02 Rick Tanner
+Modified: 2011-05-07 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -708,7 +708,7 @@ arch woodfloor
 x 4
 y 12
 end
-arch wwall_3_3
+arch wwall_1_1
 x 4
 y 12
 end
@@ -961,7 +961,7 @@ arch woodfloor
 x 6
 y 5
 end
-arch wwall_3_1
+arch wwall_2_2_4
 x 6
 y 5
 end
