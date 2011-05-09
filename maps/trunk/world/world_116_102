@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2011-05-04 Rick Tanner
+Modified: 2011-05-08 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -7244,8 +7244,8 @@ end
 arch store_armour
 name Smith's Armors
 slaying /darcap/darcap/shop_a
-hp 1
-sp 14
+hp 4
+sp 15
 x 25
 y 37
 end
