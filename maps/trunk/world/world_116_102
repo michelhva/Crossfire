@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2011-05-09 Rick Tanner
+Modified: 2011-05-10 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -5332,8 +5332,8 @@ end
 arch store_magic_northwest
 name Mirkland's Magic
 slaying /darcap/darcap/shop_m
-hp 14
-sp 2
+hp 10
+sp 25
 x 19
 y 43
 end
