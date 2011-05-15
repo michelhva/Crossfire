@@ -1,3 +1,589 @@
+﻿2011-05-14 06:49  rjtanner
+
+	* darcap/darcap/shop_a: Removed line break in NPC dialog and
+	  corrected a typo (armour vs. armo) in Smith's Armour in Darcap.
+
+2011-05-13 06:10  rjtanner
+
+	* darcap/darcap/gshop, world/world_116_102: Major cosmetic update
+	  to Darcap General Store. Expanded the map to include ground
+	  outside the shop walls. Floor plan matches the physical building
+	  shape. Door or entrance now opens when a player approaches. Shop
+	  item and decor layout changes. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination.
+
+2011-05-12 05:14  rjtanner
+
+	* darcap/darcap/potionshop, world/world_116_102: Major cosmetic
+	  update to Molthir's Potionshop in Darcap. Expanded the map to
+	  include ground outside the shop walls. Floor plan matches the
+	  physical building shape. Door or entrance now opens when a player
+	  approaches. Made it so accidents with the cauldron are less
+	  dangerous to other players entering the shop. Shop item and decor
+	  layout changes. Map considered an outdoor map so darkness or time
+	  of day is visible when inside; added light sources. Updated world
+	  map for new map entrance destination.
+
+2011-05-11 04:32  rjtanner
+
+	* darcap/darcap/shop_m, world/world_116_102: Major cosmetic update
+	  to Mirkland's Magic in Darcap. Expanded the map to include ground
+	  outside the shop walls. Floor plan matches the physical building
+	  shape. Door or entrance now opens when a player approaches. Shop
+	  item and decor layout changes. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination.
+
+2011-05-10 04:44  rjtanner
+
+	* darcap/darcap/shop_w, world/world_116_102: Cosmetic update to
+	  Spike's Weapons in Darcap. Expanded the map to include ground
+	  outside the shop walls. Floor plan matches the physical building
+	  shape. Door or entrance now opens when a player approaches. Some,
+	  but very little, shop item and decor layout changes. Map
+	  considered an outdoor map so darkness or time of day is visible
+	  when inside; added light sources. Updated world map for new map
+	  entrance destination.
+
+2011-05-09 04:03  rjtanner
+
+	* darcap/darcap/shop_a, world/world_116_102: Cosmetic update to
+	  Smith's Armour in Darcap. Expanded the map to include ground
+	  outside the shop walls. Floor plan matches the physical building
+	  shape. Door or entrance now opens when a player approaches. Some,
+	  but very little, shop item and decor layout changes. Map
+	  considered an outdoor map so darkness or time of day is visible
+	  when inside; added light sources. Updated world map for new map
+	  entrance destination.
+
+2011-05-08 03:04  rjtanner
+
+	* santo_dominion/shops/rings: Remove line breaks from the
+	  instructional sign in the Lord of the Rings in Santo Dominion.
+
+2011-05-07 14:34  ryo_saeba
+
+	* navar_city/misc/library: Fix walls.
+
+2011-05-07 03:13  rjtanner
+
+	* euthville/magic.shop: Remove line breaks in NPC dialogue at the
+	  Euthville Magic Shop.
+
+2011-05-06 05:25  rjtanner
+
+	* navar_city/misc/city1magic, world/world_122_117: Major cosmetic
+	  update to Wizzo's Magic Shop in Navar. Expanded the map to
+	  include ground outside the shop walls. Floor plan matches the
+	  physical building shape. Door or entrance now opens when a player
+	  approaches. Shop item and decor layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-05-05 04:27  rjtanner
+
+	* darcap/darcap/shop_g, world/world_116_102: Cosmetic overhaul to
+	  Bob's Fish & Chips in Darcap. Expa^Ced the map to include ground
+	  outside the shop walls. Floor plan matches the physical building
+	  shape. Door or entrance now opens when a player approaches. Shop
+	  item and decor layout changes. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination.
+
+2011-05-04 04:35  rjtanner
+
+	* navar_city/misc/buildshop, world/world_122_117: Cosmetic overhaul
+	  to Ye Ol' Home Depote in Navar. Expanded the map to include
+	  ground outside the shop walls. Floor plan matches the physical
+	  building shape. Door or entrance now opens when a player
+	  approaches. Shop item and decor layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-05-03 05:20  rjtanner
+
+	* navar_city/misc/city1armour, world/world_122_117: Major cosmetic
+	  overhaul to Olaf's Armour Emporium in Navar. Expanded the map to
+	  include ground outside the shop walls. Floor plan matches the
+	  physical building shape. Door or entrance now opens when a player
+	  approaches. Shop item and decor layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-04-29 05:42  rjtanner
+
+	* navar_city/misc/city1weapon, world/world_122_117: Spelling
+	  correction, Red's Weapons Bazaar (not Bazzar) in Navar.
+
+2011-04-29 05:40  rjtanner
+
+	* navar_city/misc/city1weapon, world/world_122_117: Major cosmetic
+	  overhaul to Red's Weapon Bazzar in Navar. Expanded the map to
+	  include ground outside the shop walls. Floor plan matches the
+	  physical building shape. Door or entrance now opens when a player
+	  approaches. Shop item and decor layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-04-26 04:50  rjtanner
+
+	* navar_city/misc/city1gen, world/world_122_117: Major cosmetic
+	  overhaul to Eddie's Store by the Wall (general store) in Navar.
+	  Expanded the map to include ground outside the shop walls. Floor
+	  plan matches the physical building shape. Door or entrance now
+	  opens when a player approaches. Shop item and decor layout
+	  changes. Map considered an outdoor map so darkness or time of day
+	  is visible when inside; added light sources. Updated world map
+	  for new map entrance destination.
+
+2011-04-25 00:46  rjtanner
+
+	* navar_city/bow_shop, world/world_122_117: Small redesign of
+	  Pimol's Fine Bow Shop in Navar. Added another row of tiles around
+	  the map border outside the shop walls. Minor floor plan changes
+	  to match the building shape. Door or entrance now opens when a
+	  player approaches. Shop item layout changes. Updated world map
+	  for new map entrance destination.
+
+2011-04-24 04:17  rjtanner
+
+	* marksel/wizard, world/world_120_109: Major cosmetic overhaul to
+	  Sages Tower in Marksel. Expanded the map to include ground
+	  outside the shop walls. Floor plan matches the physical building
+	  shape. Door or entrance now opens when a player approaches. Shop
+	  item and decor layout changes. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination.
+
+2011-04-24 03:13  rjtanner
+
+	* marksel/shop, world/world_120_109: Redesign of the Marksel Shoppe
+	  in Marksel. Expanded the map to include ground outside the shop
+	  walls. Floor plan matches the physical building shape. Door or
+	  entrance now opens when a player approaches. Shop item and decor
+	  layout changes. Map considered an outdoor map so darkness or time
+	  of day is visible when inside; added light sources. Updated world
+	  map for new map entrance destination.
+
+2011-04-23 23:31  rjtanner
+
+	* lake_country/shops/Olds_jewel, world/world_109_126: Major
+	  cosmetic overhaul to Oldie Moldie's Jewelry in Lake Country.
+	  Expanded the map to include ground outside the shop walls. Floor
+	  plan matches the physical building shape. Door or entrance now
+	  opens when a player approaches. Shop item and decor layout
+	  changes. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world map
+	  for new map entrance destination.
+
+2011-04-23 20:45  rjtanner
+
+	* lake_country/Butakis/B_gshop, lake_country/Butakis/Butakis0:
+	  Numerous changes to Fortress of Lord Butakis General Shop. Floor
+	  plan resembles building layout. Door or entrance now opens when a
+	  player approaches. Shop item layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated Fortress map for new shop entrance
+	  destination.
+
+2011-04-22 04:10  rjtanner
+
+	* lake_country/Butakis/B_wshop, lake_country/Butakis/Butakis0:
+	  Numerous changes to Fortress of Lord Butakis Weapon Shop. Floor
+	  plan resembles building layout. Door or entrance now opens when a
+	  player approaches. Shop item layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated Fortress map for new shop entrance
+	  destination.
+
+2011-04-21 04:27  rjtanner
+
+	* lake_country/shops/klondors_wands, world/world_109_126: Numerous
+	  changes to Klondor's Wand Shop in Lake Country. Floor plan
+	  resembles building layout. Door or entrance now opens when a
+	  player approaches. Shop item layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-04-20 19:08  ryo_saeba
+
+	* port_joseph/town/underground_tavern: Add conversation tips.
+
+2011-04-20 04:39  rjtanner
+
+	* lake_country/shops/clems_archery, world/world_109_126: Numerous
+	  changes to Clem's Fine Archery in Lake Country. Floor plan
+	  resembles building layout. Door or entrance now opens when a
+	  player approaches. Shop item layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-04-20 04:04  rjtanner
+
+	* port_joseph/town/church: Minor cosmetic changes to Church of
+	  Gabriel in Port Joseph. Changed wall sections for nicer merging
+	  or blending.
+
+2011-04-19 04:35  rjtanner
+
+	* port_joseph/town/portia: Replaced two wall sections for nicer
+	  merging or blending. Cosmetic change only, no functional changes.
+
+2011-04-19 04:33  rjtanner
+
+	* world/world_101_114: Remove extra ground (grass) tile
+
+2011-04-19 04:29  rjtanner
+
+	* port_joseph/town/inn, world/world_101_114: Map title change to
+	  Wayfarers' Rest in Port Joseph (rest vs. Rest)
+
+2011-04-19 04:28  rjtanner
+
+	* port_joseph/town/inn, world/world_101_114: Changes to Wayfarer's
+	  rest in Port Joseph. Kept the original floor plan. Map considered
+	  an outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-04-19 04:16  rjtanner
+
+	* port_joseph/town/generalstore, world/world_101_114: Multiple
+	  changes to General Store in Port Joseph. Floor plan somewhat
+	  resembles building layout. Door or entrance now opens when a
+	  player approaches. Map considered an outdoor map so darkness or
+	  time of day is visible when inside; added light sources. Shop
+	  item arrangement changes. Updated world map for new map entrance
+	  destination.
+
+2011-04-18 00:16  rjtanner
+
+	* santo_dominion/shops/rings, world/world_102_108: Changes to Lord
+	  of Rings store in Santo Dominion. Floor plan somewhat resembles
+	  building layout. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world
+	  map for new map entrance destination.
+
+2011-04-17 21:44  rjtanner
+
+	* santo_dominion/shops/nosferatu, world/world_102_108: Major
+	  changes to Nosferatu - Specialist magic store in Santo Dominion.
+	  Floor plan closely resembles building layout. Door or entrance
+	  now opens when a player approaches. Shop item layout changes.
+	  Added more detect magic, detect curse and ID tables to the shop.
+	  Map considered an outdoor map so darkness or time of day is
+	  visible when inside; added light sources. Updated world map for
+	  new map entrance destination.
+
+2011-04-17 20:36  rjtanner
+
+	* santo_dominion/shops/erash, world/world_102_108: Major cosmetic
+	  changes to Erash Sharp Blades store in Santo Dominion. Floor plan
+	  closely resembles building layout. Door or entrance now opens
+	  when a player approaches. Shop item layout changes. Map
+	  considered an outdoor map so darkness or time of day is visible
+	  when inside; added light sources. Updated world map for new map
+	  entrance destination.
+
+2011-04-17 01:34  rjtanner
+
+	* world/world_102_108: Punctuation change to Elik's General Store
+	  in Santo Dominion (Elik's vs. Eliks)
+
+2011-04-17 01:34  rjtanner
+
+	* santo_dominion/shops/eliks: Added one more light to Elik's
+	  General Store
+
+2011-04-17 01:32  rjtanner
+
+	* santo_dominion/shops/eliks, world/world_102_108: Somewhat major
+	  cosmetic changes to Eliks General Store in Santo Dominion. Door
+	  or entrance now opens when a player approaches. Shop item layout
+	  changes. Map considered an outdoor map so darkness or time of day
+	  is visible when inside; added light sources. Updated world map
+	  for new map entrance destination.
+
+2011-04-16 23:07  rjtanner
+
+	* santo_dominion/shops/armour, world/world_102_108: Somewhat major
+	  cosmetic changes to Hanz und Franz Panzer Armour Shop in Santo
+	  Dominion. Door or entrance now opens when a player approaches.
+	  Shop item layout changes. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination.
+
+2011-04-16 21:45  rjtanner
+
+	* scorn/shops/BasicSpells, world/world_104_115: Cosmetic changes to
+	  Mosley's Magic Books in Scorn. Door or entrance now opens when a
+	  player approaches. Shop item layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-04-16 04:20  rjtanner
+
+	* euthville/magic.shop, world/world_105_113: Major cosmetic
+	  overhaul to the Magic Shop in Euthville. Expanded the map to
+	  include ground outside the shop walls. Floor plan matches the
+	  physical building shape. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world
+	  map for new map entrance destination.
+
+2011-04-15 04:08  rjtanner
+
+	* scorn/taverns/inn2: Redesign and minor cosmetic changes to the
+	  Port Inn in Scorn. Expanded the map to include more ground
+	  outside the inn walls. Many of the room doors now open when a
+	  player approaches. Map is considered an outdoor map so darkness
+	  or time of day is visible when inside; added light sources.
+
+2011-04-14 04:17  rjtanner
+
+	* scorn/shops/generalshop, world/world_105_116: Cosmetic overhaul
+	  to the Scorn General Store. Expanded the map to include ground
+	  outside the shop walls. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world
+	  map for new map entrance destination.
+
+2011-04-13 04:13  rjtanner
+
+	* scorn/shops/bowshop, world/world_104_115: Major cosmetic overhaul
+	  to the Scorn's Best Bows in Scorn. Expanded the map to include
+	  ground outside the shop walls. Floor plan matches the physical
+	  building shape. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world map
+	  for new map entrance destination. Shop uses new face and
+	  archetype, requires archetype revision 14401.
+
+2011-04-12 03:43  rjtanner
+
+	* scorn/shops/alclass, scorn/shops/potionshop, world/world_104_115:
+	  Major cosmetic overhaul to the Alchemy Shop in Scorn. Expanded
+	  the map to include ground outside the shop walls. Floor plan
+	  matches the physical building shape. Door or entrance now opens
+	  when a player approaches. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination,
+	  added cobblestone tile to give a walkway to the shop entrance.
+	  Modified shop lower level stair coordinates to line up with
+	  changes with the upper/main level.
+
+2011-04-08 04:23  rjtanner
+
+	* scorn/shops/magicshop: Remove double stacked ground tiles, remove
+	  magic mouth message that were copied over by mistake (original
+	  tower layout was from Tower of Stars map), remove misplaced
+	  no_magic tile. All technical corrections, no cosmetic or
+	  functional changes.
+
+2011-04-07 04:26  rjtanner
+
+	* scorn/misc/PowerHouse, world/world_105_115: Major cosmetic
+	  overhaul to the House of Power in Scorn. Expanded the map to
+	  include ground outside the shop walls. Floor plan matches the
+	  physical building shape. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world map
+	  for new map entrance destination.
+
+2011-04-07 04:05  rjtanner
+
+	* world/world_104_115, world/world_105_115: Based on feedback,
+	  adjust the destination coordinates for recently modified Scorn
+	  shop maps so that the player is one more tile away from the
+	  doorway which works nicer/better for the floor button that causes
+	  the door to open.
+
+2011-04-06 03:41  rjtanner
+
+	* scorn/shops/gemshop, world/world_105_115: Major cosmetic overhaul
+	  to the Scorn Gem Shop. Expanded the map to include ground outside
+	  the shop walls. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Added another
+	  row of gem purchase tables. Updated world map for new map
+	  entrance destination.
+
+2011-04-06 03:30  rjtanner
+
+	* world/world_105_115: Correct overwritten elevation values made in
+	  previous commit, #14386.
+
+2011-04-05 04:45  rjtanner
+
+	* world/world_105_115: Added cobblestone tiles leading up to the
+	  Scorn Gem Shop and House of Power. Cosmetic change only.
+
+2011-04-04 03:31  rjtanner
+
+	* world/world_105_115: Update Scorn to use the new Jewel Store
+	  graphic. Requires archtype revision # 14384.
+
+2011-04-03 23:44  rjtanner
+
+	* world/world_104_115: Missed this file in previous commit. Updated
+	  world map for new map entrance destination to the Food Shop
+	  Warehouse in Scorn.
+
+2011-04-03 23:43  rjtanner
+
+	* scorn/shops/foodshop: Major cosmetic overhaul to the Food Shop
+	  Warehouse in Scorn. Expanded the map to include ground outside
+	  the shop walls. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world
+	  map for new map entrance destination.
+
+2011-04-03 14:40  ryo_saeba
+
+	* scorn/anthony/portgate: Merge lines.
+
+2011-04-03 14:38  ryo_saeba
+
+	* scorn/anthony/passoffice, scorn/anthony/portgate,
+	  scorn/houses/wizz.entry: Merge lines for port pass.
+
+2011-04-03 14:34  ryo_saeba
+
+	* scorn/houses/wizz.entry: Merge lines.
+
+2011-04-03 14:29  ryo_saeba
+
+	* scorn/houses/scorn_trappers: Add chat hints.
+
+2011-04-03 09:35  ryo_saeba
+
+	* scorn/houses/jc.msg: Fix quest logic.
+
+2011-04-03 09:35  ryo_saeba
+
+	* scorn/houses/riverside_manor: Fix wrong event type.
+
+2011-04-03 09:32  ryo_saeba
+
+	* scorn/houses/jc.msg: Reformat using CRE.
+
+2011-04-03 09:18  ryo_saeba
+
+	* scorn/magara/porter_house: Merge lines.
+
+2011-04-03 09:15  ryo_saeba
+
+	* scorn/towers/brewery.2: Add dialog tips, change a few things.
+
+2011-04-03 05:12  rjtanner
+
+	* scorn/shops/armourshop, world/world_104_115: Major cosmetic
+	  overhaul to the Armour Shop in Scorn. Expanded the map to include
+	  ground outside the shop walls. Floor plan matches the physical
+	  building shape. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated sign
+	  information. Updated world map for new map entrance destination.
+
+2011-04-03 00:27  rjtanner
+
+	* scorn/shops/weaponshop, world/world_104_115: Major cosmetic
+	  overhaul to the Weapon Shop in Scorn. Expanded the map to include
+	  ground outside the shop walls. Floor plan matches the physical
+	  building shape. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world
+	  map for new map entrance destination.
+
+2011-04-02 12:37  ryo_saeba
+
+	* start/Nexus: Make the exit to newbie house unique.
+
+2011-04-02 04:17  rjtanner
+
+	* scorn/shops/magicshop, world/world_104_115: Major cosmetic
+	  overhaul to the Magic Shop in Scorn. Expanded the map to include
+	  ground outside the shop walls. Floor plan matches the physical
+	  building shape. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world map
+	  for new map entrance destination.
+
+2011-04-01 04:00  rjtanner
+
+	* brest/shops/brest.magic: Remove wall sections that were double
+	  stacked. No functional change, no cosmetic change - purely a
+	  technical correction.
+
+2011-03-29 04:34  rjtanner
+
+	* world/world_104_115: Minor cosmetic change to add a cobblestone
+	  path leading to the Scorn Magic Shop entrance. No functional
+	  changes. Other two changes are due to map editor reformatting the
+	  placement of the Private Shop 4 & 5 name locations.
+
+2011-03-26 16:35  rjtanner
+
+	* scorn/taverns/inn, world/world_105_116: Major cosmetic overhaul
+	  to the Wanderer inn in Scorn. Expanded the map to include ground
+	  outside the walls. Replaced grates with windows. Added more
+	  windows so that interior resembles the outside appearance of the
+	  inn. Doors now open when a player approaches them. Room doors are
+	  open by default. Removed line breaks to the introductory sign.
+	  Map now considered an outdoor map so darkness or time of day is
+	  visible when inside; added light sources to the inn. Updated
+	  world map for new map entrance destination.
+
+2011-03-20 09:28  ryo_saeba
+
+	* scorn/kar/creepy.house, scorn/kar/creepy.house2: Remove invalid
+	  attribute.
+
+2011-03-20 09:25  ryo_saeba
+
+	* scorn/kar/creepy.house: Merge split lines.
+
+2011-03-17 22:33  ryo_saeba
+
+	* scorn/taverns/apartments: Merge lines.
+
+2011-03-17 22:13  ryo_saeba
+
+	* scorn/misc/gateguardcommon.msg: Set as a question instead of a
+	  'say'.
+
+2011-03-17 22:12  ryo_saeba
+
+	* scorn/misc/gatehouse: Merge lines.
+
+2011-03-17 22:04  ryo_saeba
+
+	* scorn/misc/gateguardcommon.msg, scorn/misc/gateguardinside.msg:
+	  Readd missing 'pre' blocks. Fix typos.
+
+2011-03-17 21:55  ryo_saeba
+
+	* scorn/misc/gateguardcommon.msg, scorn/misc/gateguardinside.msg:
+	  Reformat using CRE, no change.
+
+2011-03-16 22:10  ryo_saeba
+
+	* start/sigmund.msg: Reformat using CRE, no change.
+
+2011-01-28 05:39  mwedel
+
+	* ChangeLog: Run svn2cl to update ChangeLog file.
+	  MSW 2011-01-27
+
 2010-12-30 20:12  ryo_saeba
 
 	* styles/specialmaps/powerroom: Let's say this capacity should be
