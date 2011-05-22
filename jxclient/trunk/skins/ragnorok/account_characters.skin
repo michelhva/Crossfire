@@ -13,6 +13,8 @@ textbutton account_do_login false command_account_character_play Play
 textbutton account_do_link  false command_account_character_link Link
 textbutton account_do_new   false command_account_character_new  New
 
+label_failure account_login_error font_label BLACK
+
 set_default account_do_login
 
 commandlist command_accountlist_pageup AND characters SCROLL_LIST -8
@@ -35,6 +37,11 @@ horizontal begin par
     gap 8
   end
   begin seq
+    gap 8
+    account_login_error
+    gap 8
+  end
+  begin seq
     gap
     account_do_login
     gap 8
@@ -48,6 +55,8 @@ end
 vertical begin seq
   gap 8
   characters
+  gap 8
+  account_login_error
   gap 8
   begin par
     account_do_login
