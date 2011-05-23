@@ -304,6 +304,13 @@ public interface CrossfireServerConnection extends ServerConnection {
     void sendAccountCharacterCreate(@NotNull String login, @NotNull String password);
 
     /**
+     * Sends a request to change the account's password.
+     * @param currentPassword current account password
+     * @param newPassword new account password
+     */
+    void sendAccountPassword(@NotNull String currentPassword, @NotNull String newPassword);
+
+    /**
      * Sends an "addme" command to the server.
      */
     void sendAddme();

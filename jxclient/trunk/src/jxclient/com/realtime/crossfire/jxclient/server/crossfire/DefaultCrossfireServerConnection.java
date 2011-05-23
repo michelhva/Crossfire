@@ -420,6 +420,23 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     };
 
     /**
+     * The command prefix for the "accountpw" command.
+     */
+    @NotNull
+    private static final byte[] ACCOUNT_PASSWORD_PREFIX = {
+        'a',
+        'c',
+        'c',
+        'o',
+        'u',
+        'n',
+        't',
+        'p',
+        'w',
+        ' ',
+    };
+
+    /**
      * The command prefix for the "createplayer" command.
      */
     @NotNull
@@ -4259,6 +4276,25 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.put(login.getBytes(UTF8));
             byteBuffer.put((byte)password.length());
             byteBuffer.put(password.getBytes(UTF8));
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public void sendAccountPassword(String currentPassword, String newPassword) {
+        clearFailure();
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("send accountpw");
+        }
+        synchronized (writeBuffer) {
+            byteBuffer.clear();
+            byteBuffer.put(ACCOUNT_PASSWORD_PREFIX);
+            byteBuffer.put((byte)currentPassword.length());
+            byteBuffer.put(currentPassword.getBytes(UTF8));
+            byteBuffer.put((byte)newPassword.length());
+            byteBuffer.put(newPassword.getBytes(UTF8));
             writePacket(writeBuffer, byteBuffer.position());
         }
     }

@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCharacterComman
 import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountLinkCharacterCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountLoginCommand;
+import com.realtime.crossfire.jxclient.gui.commands.AccountPasswordCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountPlayCharacterCommand;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.CommandType;
@@ -179,6 +180,8 @@ public class CommandParser {
             return parseAccountLink(element, commandCallback);
         } else if (command.equals("ACCOUNT_CREATE_CHARACTER")) {
             return parseAccountCreateCharacter(element, commandCallback);
+        } else if (command.equals("ACCOUNT_PASSWORD")) {
+            return parseAccountPassword(element, commandCallback);
         } else {
             throw new JXCSkinException("unknown command '"+command+"'");
         }
@@ -648,6 +651,22 @@ public class CommandParser {
         }
 
         return new AccountCreateCharacterCommand(commandCallback, element);
+    }
+
+    /**
+     * Parses and builds an "ACCOUNT_PASSWORD" command.
+     * @param element the target element
+     * @param commandCallback the command callback to use
+     * @return the command arguments
+     * @throws IOException if a syntax error occurs
+     */
+    @NotNull
+    private static GUICommand parseAccountPassword(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+        if (element == null) {
+            throw new IOException("<element> is required");
+        }
+
+        return new AccountPasswordCommand(commandCallback, element);
     }
 
 }
