@@ -195,4 +195,12 @@ public class GuiManagerCommandCallback implements CommandCallback {
         server.sendAccountCharacterCreate(login, lastAccountPassword);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void accountPassword(String currentPassword, String newPassword) {
+        server.sendAccountPassword(currentPassword, newPassword);
+    }
+
 }

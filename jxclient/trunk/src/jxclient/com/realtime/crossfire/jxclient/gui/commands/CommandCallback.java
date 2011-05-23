@@ -129,4 +129,11 @@ public interface CommandCallback {
      * @param login the character's name
      */
     void accountCreateCharacter(@NotNull String login);
+
+    /**
+     * Change the account password.
+     * @param currentPassword current account password.
+     * @param newPassword new account password.
+     */
+    void accountPassword(@NotNull String currentPassword, @NotNull String newPassword);
 }

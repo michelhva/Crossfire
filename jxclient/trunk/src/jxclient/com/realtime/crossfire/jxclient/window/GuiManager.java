@@ -392,6 +392,7 @@ public class GuiManager {
         closeDialogByName("account_main");
         closeDialogByName("account_link");
         closeDialogByName("account_character_new");
+        closeDialogByName("account_password");
     }
 
     /**
