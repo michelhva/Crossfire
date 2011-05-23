@@ -10,8 +10,9 @@ enter_x 19
 enter_y 21
 msg
 Created:  2005-12-23 Gene Alexander
-Modified: 2008-10-28 Rick Tanner
+Modified: 2011-05-22 Rick Tanner
 endmsg
+outdoor 1
 end
 arch cobblestones
 end
@@ -383,6 +384,10 @@ arch wall_2_1_1
 x 3
 y 4
 end
+arch light2
+x 3
+y 5
+end
 arch shop_empty
 x 3
 y 5
@@ -398,6 +403,10 @@ end
 arch wall_2_1_1
 x 3
 y 6
+end
+arch light2
+x 3
+y 7
 end
 arch shop_empty
 x 3
@@ -415,6 +424,10 @@ arch wall_2_1_1
 x 3
 y 8
 end
+arch light2
+x 3
+y 9
+end
 arch shop_empty
 x 3
 y 9
@@ -430,6 +443,10 @@ end
 arch wall_2_1_1
 x 3
 y 10
+end
+arch light2
+x 3
+y 11
 end
 arch shop_empty
 x 3
@@ -447,6 +464,10 @@ arch wall_2_1_1
 x 3
 y 12
 end
+arch light2
+x 3
+y 13
+end
 arch shop_empty
 x 3
 y 13
@@ -462,6 +483,10 @@ end
 arch wall_2_1_1
 x 3
 y 14
+end
+arch light2
+x 3
+y 15
 end
 arch shop_empty
 x 3
@@ -479,6 +504,10 @@ arch wall_2_1_1
 x 3
 y 16
 end
+arch light2
+x 3
+y 17
+end
 arch shop_empty
 x 3
 y 17
@@ -494,6 +523,10 @@ end
 arch wall_2_1_1
 x 3
 y 18
+end
+arch light2
+x 3
+y 19
 end
 arch shop_empty
 x 3
@@ -671,6 +704,10 @@ arch grass
 x 5
 y 2
 end
+arch light2
+x 5
+y 3
+end
 arch shop_empty
 x 5
 y 3
@@ -682,6 +719,10 @@ end
 arch shop_building_pupland
 x 5
 y 4
+end
+arch light4
+x 5
+y 5
 end
 arch shop_empty
 x 5
@@ -743,6 +784,10 @@ arch shop_empty
 x 5
 y 19
 end
+arch light4
+x 5
+y 20
+end
 arch shop_empty
 x 5
 y 20
@@ -750,6 +795,10 @@ end
 arch shop_building_pupland
 x 5
 y 21
+end
+arch light2
+x 5
+y 22
 end
 arch shop_empty
 x 5
@@ -798,6 +847,10 @@ arch shop_empty
 x 6
 y 5
 end
+arch light4
+x 6
+y 6
+end
 arch shop_building_pupland
 x 6
 y 6
@@ -809,6 +862,10 @@ end
 arch shop_building_pupland
 x 6
 y 8
+end
+arch light4
+x 6
+y 9
 end
 arch shop_building_pupland
 x 6
@@ -822,6 +879,10 @@ arch shop_building_pupland
 x 6
 y 11
 end
+arch light4
+x 6
+y 12
+end
 arch shop_building_pupland
 x 6
 y 12
@@ -834,6 +895,10 @@ arch shop_building_pupland
 x 6
 y 14
 end
+arch light4
+x 6
+y 15
+end
 arch shop_building_pupland
 x 6
 y 15
@@ -845,6 +910,10 @@ end
 arch shop_building_pupland
 x 6
 y 17
+end
+arch light4
+x 6
+y 18
 end
 arch shop_building_pupland
 x 6
@@ -898,6 +967,10 @@ arch grass
 x 7
 y 2
 end
+arch light2
+x 7
+y 3
+end
 arch shop_empty
 x 7
 y 3
@@ -977,6 +1050,10 @@ end
 arch shop_building_pupland
 x 7
 y 21
+end
+arch light2
+x 7
+y 22
 end
 arch shop_empty
 x 7
@@ -1125,6 +1202,10 @@ arch grass
 x 9
 y 2
 end
+arch light2
+x 9
+y 3
+end
 arch shop_empty
 x 9
 y 3
@@ -1205,6 +1286,10 @@ arch shop_building_pupland
 x 9
 y 21
 end
+arch light2
+x 9
+y 22
+end
 arch shop_empty
 x 9
 y 22
@@ -1252,6 +1337,10 @@ arch shop_empty
 x 10
 y 5
 end
+arch light4
+x 10
+y 6
+end
 arch shop_building_pupland
 x 10
 y 6
@@ -1263,6 +1352,10 @@ end
 arch shop_building_pupland
 x 10
 y 8
+end
+arch light4
+x 10
+y 9
 end
 arch shop_building_pupland
 x 10
@@ -1276,6 +1369,10 @@ arch shop_building_pupland
 x 10
 y 11
 end
+arch light4
+x 10
+y 12
+end
 arch shop_building_pupland
 x 10
 y 12
@@ -1288,6 +1385,10 @@ arch shop_building_pupland
 x 10
 y 14
 end
+arch light4
+x 10
+y 15
+end
 arch shop_building_pupland
 x 10
 y 15
@@ -1299,6 +1400,10 @@ end
 arch shop_building_pupland
 x 10
 y 17
+end
+arch light4
+x 10
+y 18
 end
 arch shop_building_pupland
 x 10
@@ -1359,6 +1464,10 @@ arch grass
 x 11
 y 2
 end
+arch light2
+x 11
+y 3
+end
 arch shop_empty
 x 11
 y 3
@@ -1438,6 +1547,10 @@ end
 arch shop_building_pupland
 x 11
 y 21
+end
+arch light2
+x 11
+y 22
 end
 arch shop_empty
 x 11
@@ -1608,6 +1721,10 @@ arch evergreens2
 x 13
 y 2
 end
+arch light2
+x 13
+y 3
+end
 arch shop_empty
 x 13
 y 3
@@ -1688,6 +1805,10 @@ arch shop_building_pupland
 x 13
 y 21
 end
+arch light2
+x 13
+y 22
+end
 arch shop_empty
 x 13
 y 22
@@ -1746,6 +1867,10 @@ arch shop_empty
 x 14
 y 5
 end
+arch light4
+x 14
+y 6
+end
 arch shop_building_pupland
 x 14
 y 6
@@ -1757,6 +1882,10 @@ end
 arch shop_building_pupland
 x 14
 y 8
+end
+arch light4
+x 14
+y 9
 end
 arch shop_building_pupland
 x 14
@@ -1770,6 +1899,10 @@ arch shop_building_pupland
 x 14
 y 11
 end
+arch light4
+x 14
+y 12
+end
 arch shop_building_pupland
 x 14
 y 12
@@ -1782,6 +1915,10 @@ arch shop_building_pupland
 x 14
 y 14
 end
+arch light4
+x 14
+y 15
+end
 arch shop_building_pupland
 x 14
 y 15
@@ -1793,6 +1930,10 @@ end
 arch shop_building_pupland
 x 14
 y 17
+end
+arch light4
+x 14
+y 18
 end
 arch shop_building_pupland
 x 14
@@ -1853,6 +1994,10 @@ arch grass
 x 15
 y 2
 end
+arch light2
+x 15
+y 3
+end
 arch shop_empty
 x 15
 y 3
@@ -1925,6 +2070,10 @@ arch shop_empty
 x 15
 y 19
 end
+arch light4
+x 15
+y 20
+end
 arch shop_empty
 x 15
 y 20
@@ -1932,6 +2081,10 @@ end
 arch shop_building_pupland
 x 15
 y 21
+end
+arch light2
+x 15
+y 22
 end
 arch shop_empty
 x 15
@@ -1987,6 +2140,10 @@ arch shop_building_pupland
 x 16
 y 4
 end
+arch light4
+x 16
+y 5
+end
 arch shop_empty
 x 16
 y 5
@@ -1998,6 +2155,10 @@ end
 arch shop_empty
 x 16
 y 7
+end
+arch light4
+x 16
+y 8
 end
 arch shop_building_pupland
 x 16
@@ -2015,9 +2176,17 @@ arch shop_empty
 x 16
 y 11
 end
+arch light4
+x 16
+y 12
+end
 arch shop_building_pupland
 x 16
 y 12
+end
+arch light4
+x 16
+y 13
 end
 arch shop_empty
 x 16
@@ -2257,6 +2426,10 @@ arch evergreens2
 x 18
 y 2
 end
+arch light2
+x 18
+y 3
+end
 arch shop_empty
 x 18
 y 3
@@ -2317,6 +2490,10 @@ arch window_win2
 x 18
 y 15
 end
+arch light4
+x 18
+y 16
+end
 arch cobblestones
 x 18
 y 16
@@ -2371,6 +2548,10 @@ y 19
 material 0
 no_pick 1
 identified 1
+end
+arch light4
+x 18
+y 20
 end
 arch cobblestones
 x 18
@@ -2460,6 +2641,10 @@ arch evergreens2
 x 19
 y 2
 end
+arch light2
+x 19
+y 3
+end
 arch shop_empty
 x 19
 y 3
@@ -2484,6 +2669,10 @@ arch shop_empty
 x 19
 y 7
 end
+arch light4
+x 19
+y 8
+end
 arch shop_building_pupland
 x 19
 y 8
@@ -2499,6 +2688,10 @@ end
 arch shop_empty
 x 19
 y 11
+end
+arch light4
+x 19
+y 12
 end
 arch shop_building_pupland
 x 19
@@ -2602,6 +2795,10 @@ end
 arch evergreens2
 x 20
 y 2
+end
+arch light2
+x 20
+y 3
 end
 arch shop_empty
 x 20
@@ -2749,6 +2946,10 @@ arch evergreens2
 x 21
 y 2
 end
+arch light2
+x 21
+y 3
+end
 arch shop_empty
 x 21
 y 3
@@ -2809,6 +3010,10 @@ arch window_win2
 x 21
 y 15
 end
+arch light4
+x 21
+y 16
+end
 arch cobblestones
 x 21
 y 16
@@ -2854,6 +3059,10 @@ y 19
 material 0
 no_pick 1
 identified 1
+end
+arch light4
+x 21
+y 20
 end
 arch cobblestones
 x 21
@@ -3094,6 +3303,10 @@ arch shop_building_pupland
 x 23
 y 4
 end
+arch light4
+x 23
+y 5
+end
 arch shop_empty
 x 23
 y 5
@@ -3105,6 +3318,10 @@ end
 arch shop_empty
 x 23
 y 7
+end
+arch light4
+x 23
+y 8
 end
 arch shop_building_pupland
 x 23
@@ -3122,9 +3339,17 @@ arch shop_empty
 x 23
 y 11
 end
+arch light4
+x 23
+y 12
+end
 arch shop_building_pupland
 x 23
 y 12
+end
+arch light4
+x 23
+y 13
 end
 arch shop_empty
 x 23
@@ -3209,6 +3434,10 @@ arch evergreens2
 x 24
 y 2
 end
+arch light2
+x 24
+y 3
+end
 arch shop_empty
 x 24
 y 3
@@ -3281,6 +3510,10 @@ arch shop_empty
 x 24
 y 19
 end
+arch light4
+x 24
+y 20
+end
 arch shop_empty
 x 24
 y 20
@@ -3288,6 +3521,10 @@ end
 arch shop_building_pupland
 x 24
 y 21
+end
+arch light2
+x 24
+y 22
 end
 arch shop_empty
 x 24
@@ -3343,6 +3580,10 @@ arch shop_empty
 x 25
 y 5
 end
+arch light4
+x 25
+y 6
+end
 arch shop_building_pupland
 x 25
 y 6
@@ -3354,6 +3595,10 @@ end
 arch shop_building_pupland
 x 25
 y 8
+end
+arch light4
+x 25
+y 9
 end
 arch shop_building_pupland
 x 25
@@ -3367,6 +3612,10 @@ arch shop_building_pupland
 x 25
 y 11
 end
+arch light4
+x 25
+y 12
+end
 arch shop_building_pupland
 x 25
 y 12
@@ -3379,6 +3628,10 @@ arch shop_building_pupland
 x 25
 y 14
 end
+arch light4
+x 25
+y 15
+end
 arch shop_building_pupland
 x 25
 y 15
@@ -3390,6 +3643,10 @@ end
 arch shop_building_pupland
 x 25
 y 17
+end
+arch light4
+x 25
+y 18
 end
 arch shop_building_pupland
 x 25
@@ -3454,6 +3711,10 @@ arch evergreens2
 x 26
 y 2
 end
+arch light2
+x 26
+y 3
+end
 arch shop_empty
 x 26
 y 3
@@ -3533,6 +3794,10 @@ end
 arch shop_building_pupland
 x 26
 y 21
+end
+arch light2
+x 26
+y 22
 end
 arch shop_empty
 x 26
@@ -3700,6 +3965,10 @@ arch evergreens2
 x 28
 y 2
 end
+arch light2
+x 28
+y 3
+end
 arch shop_empty
 x 28
 y 3
@@ -3711,6 +3980,10 @@ end
 arch shop_building_pupland
 x 28
 y 4
+end
+arch light4
+x 28
+y 5
 end
 arch shop_empty
 x 28
@@ -3772,6 +4045,10 @@ arch shop_empty
 x 28
 y 19
 end
+arch light4
+x 28
+y 20
+end
 arch shop_empty
 x 28
 y 20
@@ -3779,6 +4056,10 @@ end
 arch shop_building_pupland
 x 28
 y 21
+end
+arch light2
+x 28
+y 22
 end
 arch shop_empty
 x 28
@@ -3827,6 +4108,10 @@ arch shop_empty
 x 29
 y 5
 end
+arch light4
+x 29
+y 6
+end
 arch shop_building_pupland
 x 29
 y 6
@@ -3838,6 +4123,10 @@ end
 arch shop_building_pupland
 x 29
 y 8
+end
+arch light4
+x 29
+y 9
 end
 arch shop_building_pupland
 x 29
@@ -3851,6 +4140,10 @@ arch shop_building_pupland
 x 29
 y 11
 end
+arch light4
+x 29
+y 12
+end
 arch shop_building_pupland
 x 29
 y 12
@@ -3863,6 +4156,10 @@ arch shop_building_pupland
 x 29
 y 14
 end
+arch light4
+x 29
+y 15
+end
 arch shop_building_pupland
 x 29
 y 15
@@ -3874,6 +4171,10 @@ end
 arch shop_building_pupland
 x 29
 y 17
+end
+arch light4
+x 29
+y 18
 end
 arch shop_building_pupland
 x 29
@@ -3927,6 +4228,10 @@ arch grass
 x 30
 y 2
 end
+arch light2
+x 30
+y 3
+end
 arch shop_empty
 x 30
 y 3
@@ -4006,6 +4311,10 @@ end
 arch shop_building_pupland
 x 30
 y 21
+end
+arch light2
+x 30
+y 22
 end
 arch shop_empty
 x 30
@@ -4154,6 +4463,10 @@ arch grass
 x 32
 y 2
 end
+arch light2
+x 32
+y 3
+end
 arch shop_empty
 x 32
 y 3
@@ -4165,6 +4478,10 @@ end
 arch shop_building_pupland
 x 32
 y 4
+end
+arch light4
+x 32
+y 5
 end
 arch shop_empty
 x 32
@@ -4226,6 +4543,10 @@ arch shop_empty
 x 32
 y 19
 end
+arch light4
+x 32
+y 20
+end
 arch shop_empty
 x 32
 y 20
@@ -4233,6 +4554,10 @@ end
 arch shop_building_pupland
 x 32
 y 21
+end
+arch light2
+x 32
+y 22
 end
 arch shop_empty
 x 32
@@ -4281,6 +4606,10 @@ arch shop_empty
 x 33
 y 5
 end
+arch light4
+x 33
+y 6
+end
 arch shop_building_pupland
 x 33
 y 6
@@ -4292,6 +4621,10 @@ end
 arch shop_building_pupland
 x 33
 y 8
+end
+arch light4
+x 33
+y 9
 end
 arch shop_building_pupland
 x 33
@@ -4305,6 +4638,10 @@ arch shop_building_pupland
 x 33
 y 11
 end
+arch light4
+x 33
+y 12
+end
 arch shop_building_pupland
 x 33
 y 12
@@ -4317,6 +4654,10 @@ arch shop_building_pupland
 x 33
 y 14
 end
+arch light4
+x 33
+y 15
+end
 arch shop_building_pupland
 x 33
 y 15
@@ -4328,6 +4669,10 @@ end
 arch shop_building_pupland
 x 33
 y 17
+end
+arch light4
+x 33
+y 18
 end
 arch shop_building_pupland
 x 33
@@ -4381,6 +4726,10 @@ arch grass
 x 34
 y 2
 end
+arch light2
+x 34
+y 3
+end
 arch shop_empty
 x 34
 y 3
@@ -4392,6 +4741,10 @@ end
 arch shop_building_pupland
 x 34
 y 4
+end
+arch light4
+x 34
+y 5
 end
 arch shop_empty
 x 34
@@ -4453,6 +4806,10 @@ arch shop_empty
 x 34
 y 19
 end
+arch light4
+x 34
+y 20
+end
 arch shop_empty
 x 34
 y 20
@@ -4460,6 +4817,10 @@ end
 arch shop_building_pupland
 x 34
 y 21
+end
+arch light2
+x 34
+y 22
 end
 arch shop_empty
 x 34
@@ -4624,6 +4985,10 @@ arch wall_2_1_1
 x 36
 y 4
 end
+arch light2
+x 36
+y 5
+end
 arch shop_empty
 x 36
 y 5
@@ -4639,6 +5004,10 @@ end
 arch wall_2_1_1
 x 36
 y 6
+end
+arch light2
+x 36
+y 7
 end
 arch shop_empty
 x 36
@@ -4656,6 +5025,10 @@ arch wall_2_1_1
 x 36
 y 8
 end
+arch light2
+x 36
+y 9
+end
 arch shop_empty
 x 36
 y 9
@@ -4671,6 +5044,10 @@ end
 arch wall_2_1_1
 x 36
 y 10
+end
+arch light2
+x 36
+y 11
 end
 arch shop_empty
 x 36
@@ -4688,6 +5065,10 @@ arch wall_2_1_1
 x 36
 y 12
 end
+arch light2
+x 36
+y 13
+end
 arch shop_empty
 x 36
 y 13
@@ -4703,6 +5084,10 @@ end
 arch wall_2_1_1
 x 36
 y 14
+end
+arch light2
+x 36
+y 15
 end
 arch shop_empty
 x 36
@@ -4720,6 +5105,10 @@ arch wall_2_1_1
 x 36
 y 16
 end
+arch light2
+x 36
+y 17
+end
 arch shop_empty
 x 36
 y 17
@@ -4735,6 +5124,10 @@ end
 arch wall_2_1_1
 x 36
 y 18
+end
+arch light2
+x 36
+y 19
 end
 arch shop_empty
 x 36
