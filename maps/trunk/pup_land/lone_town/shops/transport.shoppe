@@ -12,8 +12,9 @@ enter_x 17
 enter_y 21
 msg
 Created:  2007-04-08 Gene Alexander
-Modified: 2010-11-05 Andreas Kirschbaum
+Modified: 2011-05-24 Rick Tanner
 endmsg
+outdoor 1
 end
 arch grass
 end
@@ -489,6 +490,10 @@ arch bwall_2_1_2
 x 3
 y 2
 end
+arch light4
+x 3
+y 3
+end
 arch dungeon_magic
 x 3
 y 3
@@ -540,6 +545,10 @@ arch woodfloor2
 x 3
 y 6
 end
+arch light4
+x 3
+y 7
+end
 arch woodfloor2
 x 3
 y 7
@@ -573,6 +582,10 @@ x 3
 y 10
 level 120
 end
+arch light4
+x 3
+y 11
+end
 arch dungeon_magic
 x 3
 y 11
@@ -605,6 +618,10 @@ arch shop_amulets
 x 3
 y 14
 end
+arch light4
+x 3
+y 15
+end
 arch shop_empty
 x 3
 y 15
@@ -628,6 +645,10 @@ end
 arch shop_empty
 x 3
 y 20
+end
+arch light4
+x 3
+y 21
 end
 arch shop_gems
 x 3
@@ -864,6 +885,10 @@ arch bwall_2_1_2
 x 5
 y 2
 end
+arch light4
+x 5
+y 3
+end
 arch dungeon_magic
 x 5
 y 3
@@ -914,6 +939,10 @@ arch woodfloor2
 x 5
 y 6
 end
+arch light4
+x 5
+y 7
+end
 arch woodfloor2
 x 5
 y 7
@@ -946,6 +975,10 @@ arch altar_gnarg
 x 5
 y 10
 level 120
+end
+arch light4
+x 5
+y 11
 end
 arch dungeon_magic
 x 5
@@ -982,6 +1015,10 @@ end
 arch shop_empty
 x 5
 y 15
+end
+arch light4
+x 5
+y 16
 end
 arch shop_empty
 x 5
@@ -1208,6 +1245,10 @@ arch bwall_2_1_2
 x 7
 y 2
 end
+arch light4
+x 7
+y 3
+end
 arch dungeon_magic
 x 7
 y 3
@@ -1340,6 +1381,10 @@ arch shop_empty
 x 7
 y 18
 end
+arch light4
+x 7
+y 19
+end
 arch shop_empty
 x 7
 y 19
@@ -1423,6 +1468,10 @@ end
 arch woodfloor2
 x 8
 y 6
+end
+arch light4
+x 8
+y 7
 end
 arch woodfloor2
 x 8
@@ -1593,6 +1642,10 @@ arch bwall_2_1_2
 x 9
 y 2
 end
+arch light4
+x 9
+y 3
+end
 arch dungeon_magic
 x 9
 y 3
@@ -1676,6 +1729,10 @@ arch altar_mostrai
 x 9
 y 10
 level 120
+end
+arch light4
+x 9
+y 11
 end
 arch dungeon_magic
 x 9
@@ -1890,6 +1947,10 @@ arch shop_mat
 x 10
 y 14
 end
+arch light4
+x 10
+y 15
+end
 arch shop_empty
 x 10
 y 15
@@ -1979,6 +2040,10 @@ identified 1
 arch spell_word_of_recall
 end
 end
+arch light4
+x 10
+y 21
+end
 arch shop_empty
 x 10
 y 21
@@ -2013,6 +2078,10 @@ end
 arch bwall_2_1_2
 x 11
 y 2
+end
+arch light4
+x 11
+y 3
 end
 arch dungeon_magic
 x 11
@@ -2464,6 +2533,10 @@ arch woodfloor2
 x 12
 y 20
 end
+arch light4
+x 12
+y 21
+end
 arch dungeon_magic
 x 12
 y 21
@@ -2502,6 +2575,10 @@ end
 arch bwall_2_1_2
 x 13
 y 2
+end
+arch light4
+x 13
+y 3
 end
 arch dungeon_magic
 x 13
@@ -2585,6 +2662,10 @@ arch altar_valriel
 x 13
 y 10
 level 120
+end
+arch light4
+x 13
+y 11
 end
 arch dungeon_magic
 x 13
@@ -2762,6 +2843,10 @@ arch woodfloor2
 x 14
 y 6
 end
+arch light4
+x 14
+y 7
+end
 arch woodfloor2
 x 14
 y 7
@@ -2913,6 +2998,10 @@ arch bwall_2_1_2
 x 15
 y 2
 end
+arch light4
+x 15
+y 3
+end
 arch dungeon_magic
 x 15
 y 3
@@ -3002,6 +3091,10 @@ arch pentagram
 name 3 jade to enter shop and altar area
 x 15
 y 10
+end
+arch light4
+x 15
+y 11
 end
 arch woodfloor2
 x 15
@@ -3210,6 +3303,11 @@ arch woodfloor2
 x 16
 y 20
 end
+arch button_small
+x 16
+y 21
+connected 13
+end
 arch woodfloor2
 x 16
 y 21
@@ -3225,7 +3323,13 @@ end
 arch dungeon_magic
 x 16
 y 23
-move_block all
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 1
+sp 15
+x 16
+y 23
 end
 arch grass
 x 16
@@ -3249,6 +3353,10 @@ end
 arch bwall_2_1_2
 x 17
 y 2
+end
+arch light4
+x 17
+y 3
 end
 arch dungeon_magic
 x 17
@@ -3357,28 +3465,39 @@ arch woodfloor2
 x 17
 y 20
 end
+arch button_small
+x 17
+y 21
+connected 13
+end
 arch woodfloor2
 x 17
 y 21
 end
+arch button_small
+x 17
+y 22
+connected 13
+end
 arch woodfloor2
 x 17
 y 22
 end
-arch oakdoor_2
-slaying /pup_land/lone_town/town
-msg
-Thank you for visiting.
-endmsg
-hp 1
-sp 15
+arch odoorn2_closed_1
 x 17
 y 22
+connected 13
 end
 arch dungeon_magic
 x 17
 y 23
-move_block all
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 1
+sp 15
+x 17
+y 23
 end
 arch grass
 x 17
@@ -3439,6 +3558,10 @@ arch woodfloor2
 x 18
 y 6
 end
+arch light4
+x 18
+y 7
+end
 arch woodfloor2
 x 18
 y 7
@@ -3495,6 +3618,11 @@ arch woodfloor2
 x 18
 y 20
 end
+arch button_small
+x 18
+y 21
+connected 13
+end
 arch woodfloor2
 x 18
 y 21
@@ -3510,7 +3638,13 @@ end
 arch dungeon_magic
 x 18
 y 23
-move_block all
+end
+arch invis_exit
+slaying /pup_land/lone_town/town
+hp 1
+sp 15
+x 18
+y 23
 end
 arch grass
 x 18
@@ -3534,6 +3668,10 @@ end
 arch bwall_2_1_2
 x 19
 y 2
+end
+arch light4
+x 19
+y 3
 end
 arch dungeon_magic
 x 19
@@ -3819,6 +3957,10 @@ arch gold_converter
 x 20
 y 10
 end
+arch light4
+x 20
+y 11
+end
 arch woodfloor2
 x 20
 y 11
@@ -3838,6 +3980,10 @@ end
 arch bwall_2_1_2
 x 20
 y 13
+end
+arch light4
+x 20
+y 14
 end
 arch woodfloor2
 x 20
@@ -3916,6 +4062,10 @@ arch bwall_2_1_2
 x 21
 y 2
 end
+arch light4
+x 21
+y 3
+end
 arch dungeon_magic
 x 21
 y 3
@@ -3966,6 +4116,10 @@ end
 arch woodfloor2
 x 21
 y 6
+end
+arch light4
+x 21
+y 7
 end
 arch woodfloor2
 x 21
@@ -4042,6 +4196,10 @@ end
 arch woodfloor2
 x 21
 y 20
+end
+arch light4
+x 21
+y 21
 end
 arch woodfloor2
 x 21
