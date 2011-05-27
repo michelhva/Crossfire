@@ -10,7 +10,7 @@ enter_x 12
 enter_y 23
 msg
 Created:  1996-02-09
-Modified: 2008-10-12 Rick Tanner
+Modified: 2011-05-26 Rick Tanner
 endmsg
 end
 arch grass
@@ -772,7 +772,7 @@ arch cobblestones2
 x 6
 y 15
 end
-arch wwall_2_2_1
+arch wwall_1_2
 x 6
 y 15
 end
@@ -918,7 +918,11 @@ arch cobblestones2
 x 7
 y 17
 end
-arch wwall_3_3
+arch swall_1_4_half
+x 7
+y 17
+end
+arch wwall_2_2_3
 x 7
 y 17
 end
@@ -1231,7 +1235,11 @@ arch cobblestones2
 x 9
 y 17
 end
-arch wwall_2_1_2
+arch swall_1_3_half
+x 9
+y 17
+end
+arch wwall_1_4
 x 9
 y 17
 end
@@ -1346,7 +1354,7 @@ arch cobblestones2
 x 10
 y 15
 end
-arch wwall_2_2_4
+arch wwall_1_2
 x 10
 y 15
 end
