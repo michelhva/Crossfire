@@ -5,7 +5,7 @@ width 20
 height 20
 msg
 Created:  2010-03-22 Cavesomething
-Modified: 2010-05-30 Nicolas Weeger
+Modified: 2011-05-29 Nicolas Weeger
 endmsg
 end
 arch graymarble
@@ -1539,6 +1539,17 @@ arch graymarble
 x 14
 y 18
 end
+arch conjurer
+x 14
+y 18
+unaggressive 1
+stand_still 1
+arch event_say
+name /test/quest_handling/checkinv.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
+end
 arch graymarble
 x 14
 y 19
@@ -1646,7 +1657,14 @@ arch graymarble
 x 15
 y 17
 end
-arch graymarble
+arch medium_stones
+x 15
+y 18
+end
+arch key2
+name broken gateway
+slaying broken gateway
+face penta.111
 x 15
 y 18
 end
