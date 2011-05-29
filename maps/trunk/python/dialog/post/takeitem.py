@@ -30,9 +30,11 @@ else:
     inv = character.CheckInventory(itemname)
     if inv:
         if quantity == 0:
-            CFItemBroker.Item(inv).subtract(inv.Quantity)
+            inv.Remove()
         else:
-            CFItemBroker.Item(inv).subtract(int(quantity))
+            status = CFItemBroker.Item(inv).subtract(int(quantity))
+            if status == 0:
+                Crossfire.Log(Crossfire.LogError, "Dialog script tried to remove more items than available from player %s" %(character.Name))
         # we might have been wearing an item that was taken.
         character.Fix()
     else:
