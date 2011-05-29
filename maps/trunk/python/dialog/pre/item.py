@@ -29,7 +29,10 @@ if itemname == "money":
 else:
     inv = character.CheckInventory(itemname)
     if inv:
-        if inv.Quantity < int(quantity):
+        q = inv.Quantity
+        if q == 0:
+            q = 1
+        if q < int(quantity):
             verdict = False
     else:
         verdict = False
