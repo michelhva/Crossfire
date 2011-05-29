@@ -115,29 +115,44 @@ class GuildDues:
             "Smithy":200*30000,
             "Forge":200*25000}
 
-        if len(text) == 1:
-            whoami.Say('Buy what extension or desk?\n'
-             + "Valid items are: \n"+'\n'.join([' - ' + i +': '+ formatted_amount(Items[i]) for i in Items])+'.')
-            return
-
         # This is the list of cards to buy new desks
         Cards = ["Stove", "Cauldron", "TanningDesk", "ThaumaturgyDesk", "JewelersBench", "BowyerBench", "Forge"]
-        mymap=whoami.Map
-        path=mymap.Path
-        path=path.replace("mainfloor","")
-        SecondFloor=Crossfire.ReadyMap(path+'secondfloor')
-        ToolShed=Crossfire.ReadyMap(path+"guild_toolshed")
+
+        mymap = whoami.Map
+        path = mymap.Path
+        path = path.replace("mainfloor", "")
+        SecondFloor = Crossfire.ReadyMap(path + 'secondfloor')
+        ToolShed = Crossfire.ReadyMap(path + "guild_toolshed")
 
         # This is the list of guild extensions, and the coordinates of the activation button
         Rooms = {
-            "BBQ":(mymap,40,25),
-            "AlchemyLab":(SecondFloor,22,12),
-            "CrystalRoom":(SecondFloor,22,13),
-            "Tannery":(SecondFloor,22,14),
-            "ThaumaturgyRoom":(SecondFloor,21,13),
-            "JewelersRoom":(SecondFloor,22,14),
-            "Bowyer":(ToolShed,22,16),
-            "Smithy":(ToolShed,23,16) }
+            "BBQ": (mymap, 40, 25),
+            "AlchemyLab": (SecondFloor, 22, 12),
+            "CrystalRoom": (SecondFloor, 22, 13),
+            "Tannery": (SecondFloor, 22, 14),
+            "ThaumaturgyRoom": (SecondFloor, 21, 13),
+            "JewelersRoom": (SecondFloor, 22, 14),
+            "Bowyer": (ToolShed, 22, 16),
+            "Smithy": (ToolShed, 23, 16) }
+
+        if len(text) == 1:
+            help = "Buy what?\nYou can buy:\n"
+
+            for i in Items:
+                if i in Cards:
+                    help += " - " + i + " (card): " + formatted_amount(Items[i]) + "\n"
+                else:
+                    Loc = Rooms.get(i)
+                    coin = Loc[0].ObjectAt(Loc[1], Loc[2])
+                    coin = FindCoin(coin)
+
+                    if coin != 0:
+                        continue
+
+                    help += " - " + i + " (extension): " + formatted_amount(Items[i]) + "\n"
+
+            whoami.Say(help)
+            return
 
         item = text[1]
         if not item in Items.keys():
