@@ -17,6 +17,9 @@ class Item:
     def __init__(self, object):
         self.object = object
         self.numberof = self.object.Quantity
+        # 0 for non merging items
+        if self.numberof == 0:
+            self.numberof = 1
 
     def add(self, number):
         tmp = (self.numberof + number)-1
@@ -33,3 +36,6 @@ class Item:
             return 1
         else:
             return 0
+
+    def quantity(self):
+        return self.numberof
