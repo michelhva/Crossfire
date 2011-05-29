@@ -8,37 +8,41 @@ whoami=Crossfire.WhoAmI()
 who = Crossfire.WhoIsActivator()
 
 def do_help():
-	whoami.Say('Usage: say <test name>\nAvailable tests:')
-	whoami.Say(' - arch: archetypes-related tests')
-	whoami.Say(' - maps: maps-related tests')
-	whoami.Say(' - party: party-related tests')
-	whoami.Say(' - region: party-related tests')
-	whoami.Say(' - ref: some checks on objects references')
-	whoami.Say(' - mark: marked item')
-	whoami.Say(' - memory: storage-related tests')
-	whoami.Say(' - time: time of day tests')
-	whoami.Say(' - timer: timer activation test')
-	whoami.Say(' - timer_kill: kill specified timer')
-	whoami.Say(' - misc: other tests')
-	whoami.Say(' - exp')
-	whoami.Say(' - const: constants and such')
-	whoami.Say(' - move')
-	whoami.Say(' - bed')
-	whoami.Say(' - readkey')
-	whoami.Say(' - writekey')
-	whoami.Say(' - speed')
-	whoami.Say(' - owner')
-	whoami.Say(' - friendlylist')
-	whoami.Say(' - create')
-	whoami.Say(' - directory')
-	whoami.Say(' - event')
-	whoami.Say(' - light')
-	whoami.Say(' - attacktype')
-	whoami.Say(' - players')
-	whoami.Say(' - checkinv')
-	whoami.Say(' - face')
-	whoami.Say(' - anim')
-	whoami.Say(' - hook')
+	help = ''
+	help += 'Usage: say <test name>\nAvailable tests:\n'
+	help += ' - arch: archetypes-related tests\n'
+	help += ' - maps: maps-related tests\n'
+	help += ' - party: party-related tests\n'
+	help += ' - region: party-related tests\n'
+	help += ' - ref: some checks on objects references\n'
+	help += ' - mark: marked item\n'
+	help += ' - memory: storage-related tests\n'
+	help += ' - time: time of day tests\n'
+	help += ' - timer: timer activation test\n'
+	help += ' - timer_kill: kill specified timer\n'
+	help += ' - misc: other tests\n'
+	help += ' - exp\n'
+	help += ' - const: constants and such\n'
+	help += ' - move\n'
+	help += ' - bed\n'
+	help += ' - readkey\n'
+	help += ' - writekey\n'
+	help += ' - speed\n'
+	help += ' - owner\n'
+	help += ' - friendlylist\n'
+	help += ' - create\n'
+	help += ' - directory\n'
+	help += ' - event\n'
+	help += ' - light\n'
+	help += ' - attacktype\n'
+	help += ' - players\n'
+	help += ' - checkinv\n'
+	help += ' - face\n'
+	help += ' - anim\n'
+	help += ' - hook\n'
+	help += ' - checkinventory\n'
+	
+	whoami.Say(help)
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -394,6 +398,18 @@ def do_hook():
 	except:
 		whoami.Say('Exception came, ok')
 
+def do_check_inventory():
+  if len(topic) == 1:
+    whoami.Say('use: checkinventory <item''s name>')
+    return
+
+  what = ' '.join(topic[1:])
+  item = who.CheckInventory(what)
+  if item != None:
+    whoami.Say('found item: ' + item.Name)
+  else:
+    whoami.Say('did not find anything matching ' + what)
+
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
 #whoami.Say('topic[0] = %s'%topic[0])
@@ -463,5 +479,7 @@ elif topic[0] == 'face':
 	do_face()
 elif topic[0] == 'hook':
 	do_hook()
+elif topic[0] == 'checkinventory':
+  do_check_inventory()
 else:
 	do_help()
