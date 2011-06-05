@@ -1,4 +1,5 @@
 Object cause_wounds
+name cause wounds
 type 102
 subtype 5
 face cause.111
