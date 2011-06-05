@@ -21,6 +21,7 @@ attacktype 1
 no_drop 1
 invisible 1
 skill summoning
+wc_increase_rate 4
 msg
 Creates an elemental from surrounding rock that is controlled with the Fire and direction keys.  An earth elemental is very durable and strong, doing physical damage, but moves quite slowly.
 endmsg

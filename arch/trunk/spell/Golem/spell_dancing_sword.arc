@@ -21,6 +21,7 @@ maxsp 20
 attacktype 1
 no_drop 1
 invisible 1
+wc_increase_rate 4
 msg
 Summon a magical sword that battles on behalf of the caster.  The sword may be controlled with the Fire and direction keys.
 endmsg

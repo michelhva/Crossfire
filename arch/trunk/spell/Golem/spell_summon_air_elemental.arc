@@ -21,6 +21,7 @@ attacktype 8
 no_drop 1
 invisible 1
 skill summoning
+wc_increase_rate 4
 msg
 Summon an air elemental that is controlled with the Fire and direction keys and it's attacks consist of electrical energy.
 endmsg

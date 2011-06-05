@@ -21,6 +21,7 @@ attacktype 8
 no_drop 1
 invisible 1
 skill summoning
+wc_increase_rate 4
 msg
 Creates a magical fist that delivers an electrical damage and is controlled with the Fire and direction keys.
 endmsg
