@@ -21,6 +21,7 @@ attacktype 1
 no_drop 1
 invisible 1
 skill summoning
+wc_increase_rate 4
 msg
 Golem summons a magical creature that does the caster's wishes.  The caster can have it attack other creatures, bash down doors, detonate runes, etc.  The golem has a finite lifetime, and this life is shortened any time it takes damage.  This golem is a bit more powerful than the lesser golem.
 endmsg

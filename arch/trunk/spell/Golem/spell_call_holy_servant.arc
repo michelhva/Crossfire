@@ -20,6 +20,7 @@ value 60
 no_drop 1
 invisible 1
 skill praying
+wc_increase_rate 4
 msg
 Calls a strong fighter from the caster's god, whom you control with the Fire and direction keys, the same way that golems are controlled.  The character receives all experience from the holy servant's kills.
 endmsg

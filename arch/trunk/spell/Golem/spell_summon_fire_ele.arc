@@ -21,6 +21,7 @@ attacktype 4
 no_drop 1
 invisible 1
 skill summoning
+wc_increase_rate 4
 msg
 Summons a creature from the elemental plane of fire controlled with the Fire and direction keys.  They are impervious to fire-based damage, and deliver fire- based attacks.
 endmsg
