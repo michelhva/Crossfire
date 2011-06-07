@@ -10,7 +10,7 @@ enter_x 21
 enter_y 6
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-06-07 Nicolas Weeger
 endmsg
 end
 arch istone
@@ -134181,19 +134181,9 @@ arch istone
 x 122
 y 115
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 122
 y 115
-speed -0.300000
-level 20
 end
 arch istone
 x 122
@@ -134503,19 +134493,9 @@ arch istone
 x 123
 y 109
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 123
 y 109
-speed -0.300000
-level 20
 end
 arch istone
 x 123
@@ -134845,19 +134825,9 @@ arch istone
 x 124
 y 112
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 124
 y 112
-speed -0.300000
-level 20
 end
 arch istone
 x 124
@@ -134887,19 +134857,9 @@ arch istone
 x 124
 y 119
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 124
 y 119
-speed -0.300000
-level 20
 end
 arch istone
 x 124
@@ -135141,19 +135101,9 @@ arch random_wealth
 x 125
 y 106
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 125
 y 106
-speed -0.300000
-level 20
 end
 arch istone
 x 125
@@ -135167,19 +135117,9 @@ arch istone
 x 125
 y 109
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 125
 y 109
-speed -0.300000
-level 20
 end
 arch istone
 x 125
@@ -135913,19 +135853,9 @@ arch istone
 x 127
 y 121
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 127
 y 121
-speed -0.300000
-level 20
 end
 arch istone
 x 127
@@ -136114,24 +136044,9 @@ arch random_treasure
 x 128
 y 101
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 128
 y 101
-speed -0.300000
-level 90
 end
 arch istone
 x 128
@@ -137346,19 +137261,9 @@ arch istone
 x 131
 y 121
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 131
 y 121
-speed -0.300000
-level 20
 end
 arch istone
 x 131
@@ -137372,19 +137277,9 @@ arch istone
 x 131
 y 124
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 131
 y 124
-speed -0.300000
-level 20
 end
 arch istone
 x 131
@@ -138174,19 +138069,9 @@ arch istone
 x 134
 y 106
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 134
 y 106
-speed -0.300000
-level 20
 end
 arch istone
 x 134
@@ -138304,19 +138189,9 @@ arch istone
 x 134
 y 123
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 134
 y 123
-speed -0.300000
-level 20
 end
 arch istone
 x 134
@@ -138514,19 +138389,9 @@ arch istone
 x 135
 y 109
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 135
 y 109
-speed -0.300000
-level 20
 end
 arch istone
 x 135
@@ -138600,19 +138465,9 @@ arch istone
 x 135
 y 120
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 135
 y 120
-speed -0.300000
-level 20
 end
 arch istone
 x 135
@@ -138858,19 +138713,9 @@ arch istone
 x 136
 y 114
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 136
 y 114
-speed -0.300000
-level 20
 end
 arch istone
 x 136
@@ -138884,19 +138729,9 @@ arch istone
 x 136
 y 117
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 136
 y 117
-speed -0.300000
-level 20
 end
 arch istone
 x 136
@@ -139162,19 +138997,9 @@ arch istone
 x 137
 y 111
 end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 137
 y 111
-speed -0.300000
-level 20
 end
 arch istone
 x 137
