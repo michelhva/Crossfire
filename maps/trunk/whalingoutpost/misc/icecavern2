@@ -10,7 +10,7 @@ enter_x 3
 enter_y 14
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-06-07 Nicolas Weeger
 endmsg
 end
 arch istone
@@ -1024,55 +1024,9 @@ arch snow5
 x 2
 y 1
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 2
 y 1
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 2
@@ -1090,55 +1044,9 @@ arch snow5
 x 2
 y 3
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 2
 y 3
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 2
@@ -1410,55 +1318,9 @@ arch random_wealth
 x 2
 y 38
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 2
 y 38
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 2
@@ -1476,55 +1338,9 @@ arch random_wealth
 x 2
 y 40
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 2
 y 40
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 2
@@ -1542,55 +1358,9 @@ arch random_wealth
 x 2
 y 42
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 2
 y 42
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 2
@@ -2104,55 +1874,9 @@ arch random_wealth
 x 3
 y 44
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 3
 y 44
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 3
@@ -2170,55 +1894,9 @@ arch random_wealth
 x 3
 y 46
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 3
 y 46
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 3
@@ -2385,55 +2063,9 @@ arch snow5
 x 4
 y 1
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 4
 y 1
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 4
@@ -2707,55 +2339,9 @@ arch random_wealth
 x 4
 y 41
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 4
 y 41
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 4
@@ -2821,55 +2407,9 @@ arch random_wealth
 x 4
 y 49
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 4
 y 49
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 4
@@ -3316,55 +2856,9 @@ arch random_wealth
 x 5
 y 43
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 5
 y 43
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 5
@@ -3382,55 +2876,9 @@ arch random_wealth
 x 5
 y 45
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 5
 y 45
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 5
@@ -3448,55 +2896,9 @@ arch random_wealth
 x 5
 y 47
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 5
 y 47
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 5
@@ -3530,55 +2932,9 @@ arch random_wealth
 x 5
 y 51
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 5
 y 51
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 5
@@ -3973,55 +3329,9 @@ arch snow5
 x 6
 y 49
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 6
 y 49
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 6
@@ -4055,55 +3365,9 @@ arch snow5
 x 6
 y 53
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 6
 y 53
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 6
@@ -8543,55 +7807,9 @@ arch random_wealth
 x 16
 y 9
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 16
 y 9
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 16
@@ -9025,55 +8243,9 @@ arch snow5
 x 17
 y 7
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 17
 y 7
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 17
@@ -9991,55 +9163,9 @@ arch random_wealth
 x 19
 y 8
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 19
 y 8
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 19
@@ -10443,55 +9569,9 @@ arch snow5
 x 20
 y 6
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 20
 y 6
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 20
@@ -10731,55 +9811,9 @@ arch snow4
 x 20
 y 38
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 20
 y 38
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 20
@@ -11285,55 +10319,9 @@ arch snow5
 x 21
 y 41
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 21
 y 41
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 21
@@ -11763,55 +10751,9 @@ arch snow5
 x 22
 y 38
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 22
 y 38
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 22
@@ -11853,55 +10795,9 @@ arch snow4
 x 22
 y 43
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 22
 y 43
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 22
@@ -12301,55 +11197,9 @@ arch random_wealth
 x 23
 y 40
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 23
 y 40
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 23
@@ -12735,55 +11585,9 @@ arch snow4
 x 24
 y 36
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 24
 y 36
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 24
@@ -12801,55 +11605,9 @@ arch random_wealth
 x 24
 y 38
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 24
 y 38
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 24
@@ -12899,55 +11657,9 @@ arch snow5
 x 24
 y 43
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 24
 y 43
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 24
@@ -13441,55 +12153,9 @@ arch random_wealth
 x 25
 y 40
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 25
 y 40
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 25
@@ -13805,55 +12471,9 @@ arch snow5
 x 26
 y 23
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 26
 y 23
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 26
@@ -14007,55 +12627,9 @@ arch snow5
 x 26
 y 42
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 26
 y 42
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 26
@@ -14509,55 +13083,9 @@ arch snow5
 x 27
 y 39
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 27
 y 39
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 27
@@ -15143,55 +13671,9 @@ arch snow5
 x 28
 y 19
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 28
 y 19
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 28
@@ -15209,55 +13691,9 @@ arch random_wealth
 x 28
 y 21
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 28
 y 21
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 28
@@ -15844,55 +14280,9 @@ arch random_wealth
 x 29
 y 24
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 29
 y 24
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 29
@@ -16555,55 +14945,9 @@ arch snow5
 x 30
 y 18
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 30
 y 18
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 30
@@ -16621,55 +14965,9 @@ arch random_wealth
 x 30
 y 20
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 30
 y 20
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 30
@@ -17353,55 +15651,9 @@ arch random_wealth
 x 31
 y 22
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 31
 y 22
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 31
@@ -18062,55 +16314,9 @@ arch snow5
 x 32
 y 18
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 32
 y 18
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 32
@@ -18128,55 +16334,9 @@ arch random_wealth
 x 32
 y 20
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 32
 y 20
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 32
@@ -18704,55 +16864,9 @@ arch random_wealth
 x 33
 y 23
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 33
 y 23
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 33
@@ -19454,55 +17568,9 @@ arch random_wealth
 x 34
 y 21
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 34
 y 21
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 34
@@ -19870,55 +17938,9 @@ arch random_wealth
 x 35
 y 4
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 35
 y 4
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 35
@@ -20538,55 +18560,9 @@ arch random_wealth
 x 36
 y 2
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 36
 y 2
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 36
@@ -21747,55 +19723,9 @@ arch snow5
 x 38
 y 1
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 38
 y 1
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 38
@@ -23009,55 +20939,9 @@ arch snow5
 x 40
 y 34
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 40
 y 34
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 40
@@ -23075,55 +20959,9 @@ arch random_wealth
 x 40
 y 36
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 40
 y 36
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 40
@@ -23585,55 +21423,9 @@ arch random_wealth
 x 41
 y 38
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 41
 y 38
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 41
@@ -24057,55 +21849,9 @@ arch random_wealth
 x 42
 y 32
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 42
 y 32
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 42
@@ -24139,55 +21885,9 @@ arch random_wealth
 x 42
 y 36
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 42
 y 36
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 42
@@ -24707,55 +22407,9 @@ arch random_wealth
 x 43
 y 34
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 43
 y 34
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 43
@@ -25185,55 +22839,9 @@ arch snow5
 x 44
 y 32
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 44
 y 32
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 44
@@ -25275,55 +22883,9 @@ arch snow5
 x 44
 y 37
 end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
+arch legendary_chinese_dragon
 x 44
 y 37
-speed -0.300000
-level 90
-resist_magic 60
-carrying 75000
-arch dragon_scale
-nrof 3
-end
-arch random_gem
-end
-arch random_gem
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
 end
 arch istone
 x 44
