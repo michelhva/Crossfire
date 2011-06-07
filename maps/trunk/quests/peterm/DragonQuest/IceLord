@@ -9,7 +9,7 @@ enter_x 9
 enter_y 26
 msg
 Created:  1994-08-19 peterm (peterm@soda.csua.berkeley.edu)
-Modified: 2008-12-21 Rick Tanner
+Modified: 2011-06-07 Nicolas Weeger
 endmsg
 end
 arch cave_15
@@ -841,18 +841,9 @@ arch pstone_2
 x 4
 y 4
 end
-arch chinese_dragon
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 4
 y 4
-speed -0.300000
-level 20
 end
 arch pstone_2
 x 4
@@ -898,18 +889,9 @@ arch pstone_2
 x 4
 y 15
 end
-arch chinese_dragon
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 4
 y 15
-speed -0.300000
-level 20
 end
 arch pstone_2
 x 4
@@ -1903,18 +1885,9 @@ arch pstone_2
 x 10
 y 10
 end
-arch chinese_dragon
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
+arch ancient_chinese_dragon
 x 10
 y 10
-speed -0.300000
-level 20
 end
 arch pstone_2
 x 10
