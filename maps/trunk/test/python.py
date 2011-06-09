@@ -95,21 +95,23 @@ def do_party():
 		whoami.Say('changed your party!')
 
 def do_region():
-	whoami.Say('Known regions, region for current map is signaled by ***')
+	msg = 'Known regions, region for current map is signaled by ***\n'
 	cur = whoami.Map.Region
-	whoami.Say('This map\'s region is %s [msg: %s]'%(cur.Name, cur.Message))
+	msg += 'This map\'s region is %s (msg: %s)\n'%(cur.Name, cur.Message)
 	regions = Crossfire.GetRegions()
-	whoami.Say('%d regions'%len(regions))
+	msg += ('%d regions\n'%len(regions))
 	for region in regions:
 		if cur == region:
-			whoami.Say('*** %s - %s'%(region.Name,region.Longname))
+			msg += ('*** %s - %s\n'%(region.Name,region.Longname))
 		else:
-			whoami.Say('%s - %s'%(region.Name,region.Longname))
+			msg += ('%s - %s\n'%(region.Name,region.Longname))
 	parent = cur.GetParent()
 	if parent:
-		whoami.Say('Parent is %s'%parent.Name)
+		msg += ('Parent is %s\n'%parent.Name)
 	else:
-		whoami.Say('Region without parent')
+		msg += ('Region without parent\n')
+
+	whoami.Say(msg)
 
 def do_activator():
 	who2 = Crossfire.WhoIsOther()
