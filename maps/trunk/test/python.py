@@ -111,6 +111,8 @@ def do_region():
 	else:
 		msg += ('Region without parent\n')
 
+	msg += "Jail: %s (%d,%d)"%(cur.JailPath, cur.JailX, cur.JailY)
+
 	whoami.Say(msg)
 
 def do_activator():
