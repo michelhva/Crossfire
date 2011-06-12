@@ -431,7 +431,7 @@ public class KeyBindings {
     public HashSet<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
         final HashSet<KeyBinding> matches = new HashSet<KeyBinding>();
 
-        for (KeyBinding binding : keybindings) {
+        for (final KeyBinding binding : keybindings) {
             if (binding.getCommandString().startsWith(commandStart)) {
                 matches.add(binding);
             }

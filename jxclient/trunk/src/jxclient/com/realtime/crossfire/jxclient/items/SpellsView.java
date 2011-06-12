@@ -45,16 +45,16 @@ public class SpellsView extends AbstractItemView {
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         spellsManager.addCrossfireSpellChangedListener(new SpellsManagerListener() {
-            public void spellAdded(Spell spell, int index) {
+            public void spellAdded(final Spell spell, final int index) {
                 addModifiedRange(index, spellsManager.getSpells());
             }
 
-            public void spellRemoved(Spell spell, int index) {
+            public void spellRemoved(final Spell spell, final int index) {
                 addModifiedRange(index, spellsManager.getSpells());
             }
         });
         facesManager.addFacesManagerListener(new FacesManagerListener() {
-            public void faceUpdated(Face face) {
+            public void faceUpdated(final Face face) {
                 addModifiedRange(0, spellsManager.getSpells());
             }
         });
@@ -64,13 +64,13 @@ public class SpellsView extends AbstractItemView {
         return spellsManager.getSpells();
     }
 
-    public CfItem getItem(int index) {
+    public CfItem getItem(final int index) {
         final Spell spell = spellsManager.getSpell(index);
         if (spell == null) {
             return null;
         }
         final Face face = facesManager.getFace(spell.getFaceNum());
-        CfItem item = new CfItem(0, spell.getTag(), 0, 0, face, spell.getName(), spell.getName(), 0, 0, 0, 0);
+        final CfItem item = new CfItem(0, spell.getTag(), 0, 0, face, spell.getName(), spell.getName(), 0, 0, 0, 0);
         return item;
     }
 

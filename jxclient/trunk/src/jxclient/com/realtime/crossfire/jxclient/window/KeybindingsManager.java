@@ -309,9 +309,9 @@ public class KeybindingsManager {
             matches.addAll(characterKeyBindings.getBindingsForPartialCommand(commandStart));
         }
         final HashSet<KeyBinding> global = keyBindings.getBindingsForPartialCommand(commandStart);
-        for (KeyBinding candidate : global) {
+        for (final KeyBinding candidate : global) {
             boolean used = false;
-            for (KeyBinding check : matches) {
+            for (final KeyBinding check : matches) {
                 if (check.equals(candidate)) {
                     used = true;
                     break;

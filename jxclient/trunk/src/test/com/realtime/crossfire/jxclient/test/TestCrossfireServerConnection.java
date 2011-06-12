@@ -571,7 +571,7 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
         Assert.fail();
     }
 
-    public void sendAccountPassword(String currentPassword, String newPassword) {
+    public void sendAccountPassword(final String currentPassword, final String newPassword) {
         Assert.fail();
     }
 
