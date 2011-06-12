@@ -299,10 +299,26 @@ public class KeybindingsManager {
      * @return matching bindings.
      */
     public HashSet<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
-        final HashSet<KeyBinding> matches = keyBindings.getBindingsForPartialCommand(commandStart);
+        final HashSet<KeyBinding> matches = new HashSet<KeyBinding>();
 
+        /*
+         * character-specific bindings override global ones, so need to check for
+         * duplicates
+         */
         if (characterKeyBindings != null) {
             matches.addAll(characterKeyBindings.getBindingsForPartialCommand(commandStart));
+        }
+        final HashSet<KeyBinding> global = keyBindings.getBindingsForPartialCommand(commandStart);
+        for (KeyBinding candidate : global) {
+            boolean used = false;
+            for (KeyBinding check : matches) {
+                if (check.equals(candidate)) {
+                    used = true;
+                    break;
+                }
+            }
+            if (!used)
+                matches.add(candidate);
         }
 
         return matches;
