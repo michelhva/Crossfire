@@ -39,6 +39,7 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
+import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.font.FontRenderContext;
@@ -349,6 +350,27 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 }
             }
             return true;
+
+        case KeyEvent.VK_N:              // CTRL-N
+            if ((e.getModifiers()&InputEvent.CTRL_MASK) == InputEvent.CTRL_MASK) {
+                historyNext();
+                return true;
+            }
+            break;
+
+        case KeyEvent.VK_P:              // CTRL-P
+            if ((e.getModifiers()&InputEvent.CTRL_MASK) == InputEvent.CTRL_MASK) {
+                historyPrev();
+                return true;
+            }
+            break;
+
+        case KeyEvent.VK_V:              // CTRL-V
+            if ((e.getModifiers()&InputEvent.CTRL_MASK) == InputEvent.CTRL_MASK) {
+                paste();
+                return true;
+            }
+            break;
         }
 
         return false;
@@ -396,18 +418,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 commandHistory.addCommand(command);
             }
             GuiUtils.setActive(this, false);
-            return true;
-
-        case 0x0e:              // CTRL-N
-            historyNext();
-            return true;
-
-        case 0x10:              // CTRL-P
-            historyPrev();
-            return true;
-
-        case 0x16:              // CTRL-V
-            paste();
             return true;
 
         default:

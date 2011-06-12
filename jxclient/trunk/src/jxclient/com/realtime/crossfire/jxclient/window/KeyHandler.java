@@ -281,7 +281,12 @@ public class KeyHandler {
             return;
         }
 
-        if ((e.getModifiers() &~ InputEvent.SHIFT_MASK) == 0 && keybindingsManager.keyTyped(e.getKeyChar())) {
+        if ((e.getModifiers() &~ InputEvent.SHIFT_MASK) != 0) {
+            debugKeyboardWrite("keyTyped: ignoring event with non-shift modifiers");
+            return;
+        }
+
+        if (keybindingsManager.keyTyped(e.getKeyChar())) {
             debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
             commandQueue.resetRepeatCount();
             return;
