@@ -41,7 +41,6 @@ public class SpellsView extends AbstractItemView {
     private final FacesManager facesManager;
 
     public SpellsView(@NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager) {
-        super();
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         spellsManager.addCrossfireSpellChangedListener(new SpellsManagerListener() {
