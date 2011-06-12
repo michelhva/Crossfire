@@ -216,10 +216,11 @@ public class GUIItemList extends GUIList {
                 final String tooltipText1 = item.getTooltipText1();
                 final String tooltipText2 = item.getTooltipText2();
                 final String tooltipText3 = item.getTooltipText3();
-                if (tooltipText3.isEmpty())
+                if (tooltipText3.isEmpty()) {
                     currentItem.setText(tooltipText1+" "+tooltipText3);
-                else
+                } else {
                     currentItem.setText(tooltipText1+" ["+tooltipText2+"] "+tooltipText3);
+                }
                 currentItem.setTooltipText(item.getTooltipText());
             }
         }

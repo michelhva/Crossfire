@@ -317,8 +317,9 @@ public class KeybindingsManager {
                     break;
                 }
             }
-            if (!used)
+            if (!used) {
                 matches.add(candidate);
+            }
         }
 
         return matches;
