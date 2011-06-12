@@ -93,9 +93,9 @@ public class GUISpellList extends GUIItemList {
         // - from those bindings only keep the ones the spell's command matches
         final HashSet<KeyBinding> bindings = keybindings.getBindingsForPartialCommand(search);
         boolean first = true;
-        StringBuilder sb = new StringBuilder();
+        final StringBuilder sb = new StringBuilder();
 
-        for(KeyBinding binding : bindings) {
+        for(final KeyBinding binding : bindings) {
             if (match.startsWith(binding.getCommandString())) {
                 if (first) {
                     sb.append(legend);
@@ -112,8 +112,8 @@ public class GUISpellList extends GUIItemList {
     }
 
     @Override
-    protected void updateTooltip(int index, int x, int y, int w, int h) {
-        Spell spell = spellsManager.getSpell(index);
+    protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
+        final Spell spell = spellsManager.getSpell(index);
         if (spell == null) {
             setTooltipText(null, x, y, w, h);
             return;

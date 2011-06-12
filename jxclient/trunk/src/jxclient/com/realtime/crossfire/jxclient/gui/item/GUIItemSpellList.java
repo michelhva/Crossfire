@@ -310,7 +310,7 @@ public class GUIItemSpellList extends GUIItemItem {
     }
 
     @Override
-    protected Image getFace(CfItem item) {
+    protected Image getFace(final CfItem item) {
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
     }
 

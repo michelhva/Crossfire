@@ -4285,7 +4285,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * {@inheritDoc}
      */
-    public void sendAccountPassword(String currentPassword, String newPassword) {
+    public void sendAccountPassword(final String currentPassword, final String newPassword) {
         clearFailure();
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send accountpw");

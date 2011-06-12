@@ -199,7 +199,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void accountPassword(String currentPassword, String newPassword) {
+    public void accountPassword(final String currentPassword, final String newPassword) {
         server.sendAccountPassword(currentPassword, newPassword);
     }
 
