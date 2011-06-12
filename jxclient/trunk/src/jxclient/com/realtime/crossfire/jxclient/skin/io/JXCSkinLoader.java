@@ -349,7 +349,7 @@ public class JXCSkinLoader {
      * The {@link KeybindingsManager} containing key bindings.
      */
     @NotNull
-    private KeybindingsManager keybindingsManager;
+    private final KeybindingsManager keybindingsManager;
 
     /**
      * Creates a new instance.
