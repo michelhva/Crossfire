@@ -44,18 +44,23 @@ gauge spbar spbar_full null hpbar_empty SP WE
 picture grbar_back hpbar_frame 0.9
 gauge grbar grbar_full null hpbar_empty GRACE WE
 
+gauge hpgolembar hpbargolem_full null hpbargolem_empty GOLEM_HP WE
+set_invisible hpgolembar
+
 commandlist_add command_hitpoints_on hpbar_back SHOW
 commandlist_add command_hitpoints_on hpbar SHOW
 commandlist_add command_hitpoints_on spbar_back SHOW
 commandlist_add command_hitpoints_on spbar SHOW
 commandlist_add command_hitpoints_on grbar_back SHOW
 commandlist_add command_hitpoints_on grbar SHOW
+commandlist_add command_hitpoints_on hpgolembar SHOW
 commandlist_add command_hitpoints_off hpbar_back HIDE
 commandlist_add command_hitpoints_off hpbar HIDE
 commandlist_add command_hitpoints_off spbar_back HIDE
 commandlist_add command_hitpoints_off spbar HIDE
 commandlist_add command_hitpoints_off grbar_back HIDE
 commandlist_add command_hitpoints_off grbar HIDE
+commandlist_add command_hitpoints_off hpgolembar HIDE
 commandlist_add command_lowfood_on lowfood SHOW
 commandlist_add command_lowfood_off lowfood HIDE
 commandlist_add command_poisoned_on poisoned SHOW
@@ -67,6 +72,7 @@ ignore spbar_back
 ignore spbar
 ignore grbar_back
 ignore grbar
+ignore hpgolembar
 ignore lowfood
 ignore poisoned
 
@@ -150,6 +156,7 @@ horizontal begin par
         poisoned
         gap
       end
+      hpgolembar
       hpbar_back
       hpbar
       spbar_back
@@ -213,6 +220,9 @@ vertical begin par
     begin par
       lowfood
       poisoned
+    end
+    begin par
+      hpgolembar
     end
     begin par
       hpbar_back

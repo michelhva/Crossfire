@@ -84,6 +84,11 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
     private final float alpha;
 
     /**
+     * If true, the gauge will not paint itself, whatever its visibility.
+     */
+    private boolean hidden = false;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -139,6 +144,9 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
+        if (hidden)
+            return;
+
         final Graphics paint;
         if (alpha < 1F) {
             final Graphics2D g2d = (Graphics2D)g.create();
@@ -211,4 +219,11 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         return gaugeState.getPreferredSize();
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setHidden(boolean hidden) {
+        this.hidden = hidden;
+    }
 }

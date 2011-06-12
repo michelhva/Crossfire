@@ -123,7 +123,7 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater {
      * @param stats the instance to watch
      */
     public ActiveSkillGaugeUpdater(@NotNull final ExperienceTable experienceTable, @NotNull final String skill, @NotNull final Stats stats) {
-        super(experienceTable);
+        super(experienceTable, false);
         this.skill = skill;
         this.stats = stats;
         this.stats.addCrossfireStatsListener(statsListener);

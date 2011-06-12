@@ -44,11 +44,18 @@ public abstract class GaugeUpdater {
     private GUIGaugeListener gauge = null;
 
     /**
+     * If true then the gauge should be hidden if all values are 0.
+     */
+    private final boolean hideIfEmpty;
+
+    /**
      * Creates a new instance.
      * @param experienceTable the experience table to query
+     * @param hideIfEmpty if true the gauge will be hidden if all values are 0.
      */
-    protected GaugeUpdater(@NotNull final ExperienceTable experienceTable) {
+    protected GaugeUpdater(@NotNull final ExperienceTable experienceTable, final boolean hideIfEmpty) {
         this.experienceTable = experienceTable;
+        this.hideIfEmpty = hideIfEmpty;
     }
 
     /**
@@ -81,6 +88,9 @@ public abstract class GaugeUpdater {
             }
             assert gauge != null;
             gauge.setValues(curValue, minValue, maxValue, curValueString, tooltipText);
+            if (hideIfEmpty) {
+                gauge.setHidden(curValue == 0 && minValue == 0 && maxValue == 0);
+            }
         }
     }
 

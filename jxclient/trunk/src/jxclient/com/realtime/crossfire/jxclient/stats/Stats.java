@@ -164,6 +164,8 @@ public class Stats {
             case CS_STAT_APPLIED_CON:
             case CS_STAT_APPLIED_CHA:
             case CS_STAT_APPLIED_POW:
+            case CS_STAT_GOLEM_HP:
+            case CS_STAT_GOLEM_MAXHP:
                 setStat(stat, param);
                 if (stat == CS_STAT_LEVEL) {
                     calculateExperienceToNextLevel();

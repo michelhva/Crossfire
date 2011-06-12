@@ -128,6 +128,14 @@ public class StatGaugeUpdater extends GaugeUpdater {
                 }
                 break;
 
+            case CrossfireStatsListener.CS_STAT_GOLEM_HP:
+                if (statNo == CrossfireStatsListener.CS_STAT_GOLEM_HP) {
+                    setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_GOLEM_MAXHP));
+                } else if (statNo == CrossfireStatsListener.CS_STAT_GOLEM_MAXHP) {
+                    setValues(stats.getStat(CrossfireStatsListener.CS_STAT_GOLEM_HP), 0, value);
+                }
+                break;
+
             default:
                 if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat <= CrossfireStatsListener.CS_STAT_RESIST_END && statNo == stat) {
                     setValues(value, 0, 100);
@@ -254,7 +262,7 @@ public class StatGaugeUpdater extends GaugeUpdater {
      * @param itemSet the item set to watch
      */
     public StatGaugeUpdater(@NotNull final ExperienceTable experienceTable, final int stat, @NotNull final Stats stats, @NotNull final ItemSet itemSet) {
-        super(experienceTable);
+        super(experienceTable, stat == CrossfireStatsListener.CS_STAT_GOLEM_HP);
         this.stat = stat;
         this.stats = stats;
         this.itemSet = itemSet;
