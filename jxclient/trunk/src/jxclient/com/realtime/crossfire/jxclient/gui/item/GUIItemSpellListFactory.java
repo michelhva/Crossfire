@@ -76,6 +76,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
         this.spellsView = spellsView;
     }
 
+    @Override
     public GUIElement newItem(final int index) {
         return new GUIItemSpellList(tooltipManager, elementListener, crossfireServerConnection, name + index, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellsView);
     }
@@ -92,6 +93,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
         return result;
     }
 
+    @Override
     public int getMoveLocation() {
         return 0;
     }
