@@ -15,8 +15,7 @@
  * along with JXClient; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * Copyright (C) 2005-2008 Yann Chachkoff.
- * Copyright (C) 2006-2011 Andreas Kirschbaum.
+ * Copyright (C) 2011 Nicolas Weeger
  */
 
 package com.realtime.crossfire.jxclient.items;
