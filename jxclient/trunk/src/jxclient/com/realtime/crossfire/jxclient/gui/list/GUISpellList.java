@@ -24,12 +24,15 @@ package com.realtime.crossfire.jxclient.gui.list;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
+import com.realtime.crossfire.jxclient.window.KeybindingsManager;
+import java.util.HashSet;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -41,6 +44,9 @@ public class GUISpellList extends GUIItemList {
 
     @NotNull
     private final SpellsManager spellsManager;
+
+    @NotNull
+    private final KeybindingsManager keybindings;
 
     /**
      * Creates a new instance.
@@ -57,15 +63,63 @@ public class GUISpellList extends GUIItemList {
      * selected item.
      * @param itemItemFactory the factory for creating item instances
      * @param spellsManager the spells to display
+     * @param keybindings bindings, to display shortcuts
      */
-    public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory, @NotNull final SpellsManager spellsManager) {
+    public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory, @NotNull final SpellsManager spellsManager, @NotNull final KeybindingsManager keybindings) {
         super(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, crossfireServerConnection, itemView, currentItem, itemItemFactory);
         this.spellsManager = spellsManager;
+        this.keybindings = keybindings;
+    }
+
+    /**
+     * Return a text with the keybindings for the spell.
+     * @param spell what to search bindings for.
+     * @param prefix invocation prefix, "cast " or "invoke ",  to search for.
+     * @param legend text before the binding(s).
+     * @return empty string if no matching bindings, else text in the form
+     * "legend (binding 1) ; (binding 2) ; ..."
+     */
+    private String getBindings(@NotNull final Spell spell, @NotNull final String prefix, @NotNull final String legend) {
+        final String search = prefix + spell.getName().charAt(0);
+        final String match = prefix + spell.getName();
+
+        // because key bindings can specify partial names, we search in 2 steps:
+        // - search all bindings with the first spell letter
+        // - from those bindings only keep the ones the spell's command matches
+        final HashSet<KeyBinding> bindings = keybindings.getBindingsForPartialCommand(search);
+        boolean first = true;
+        StringBuilder sb = new StringBuilder();
+
+        for(KeyBinding binding : bindings) {
+            if (match.startsWith(binding.getCommandString())) {
+                if (first) {
+                    sb.append(legend);
+                    first = false;
+                } else {
+                    sb.append(" ; ");
+                }
+
+                sb.append(binding.getBindingDescription());
+            }
+        }
+
+        return sb.toString();
     }
 
     @Override
     protected void updateTooltip(int index, int x, int y, int w, int h) {
         Spell spell = spellsManager.getSpell(index);
-        setTooltipText(spell != null ? spell.getTooltipText() : null, x, y, w, h);
+        if (spell == null) {
+            setTooltipText(null, x, y, w, h);
+            return;
+        }
+
+        final StringBuilder sb = new StringBuilder(spell.getTooltipText());
+
+        // find bindings to cast or invoke the spell
+        sb.append(getBindings(spell, "cast ", "<br>Cast shortcut: "));
+        sb.append(getBindings(spell, "invoke ", "<br>Invoke shortcut:"));
+
+        setTooltipText(sb.toString(), x, y, w, h);
     }
 }
