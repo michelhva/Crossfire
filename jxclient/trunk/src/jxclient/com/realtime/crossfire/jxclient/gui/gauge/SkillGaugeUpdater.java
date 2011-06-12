@@ -77,7 +77,7 @@ public class SkillGaugeUpdater extends GaugeUpdater {
      * @param skill the skill to monitor
      */
     public SkillGaugeUpdater(@NotNull final ExperienceTable experienceTable, @NotNull final Skill skill) {
-        super(experienceTable);
+        super(experienceTable, false);
         this.skill = skill;
         this.skill.addSkillListener(skillListener);
     }

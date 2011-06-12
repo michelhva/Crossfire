@@ -90,6 +90,8 @@ public class StatUtils {
         STAT_NAMES.put(CrossfireStatsListener.CS_STAT_EXP64, "exp");
         STAT_NAMES.put(CrossfireStatsListener.CS_STAT_RANGE, "range");
         STAT_NAMES.put(CrossfireStatsListener.CS_STAT_TITLE, "title");
+        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_GOLEM_HP, "golem_hp");
+        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_GOLEM_MAXHP, "golem_maxhp");
         for (int stat = CrossfireStatsListener.CS_STAT_RESIST_START; stat < CrossfireStatsListener.CS_STAT_RESIST_START+CrossfireStatsListener.RESIST_TYPES; stat++) {
             STAT_NAMES.put(stat, "resists");
         }

@@ -228,4 +228,11 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
         orientationMod.setExtends(width, height);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setHidden(boolean hidden) {
+        // nothing
+    }
 }

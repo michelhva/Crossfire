@@ -302,6 +302,16 @@ public interface CrossfireStatsListener {
     int CS_STAT_APPLIED_POW = 52;
 
     /**
+     * The golem's hitpoints, 0 if no golem.
+     */
+    int CS_STAT_GOLEM_HP = 53;
+
+    /**
+     * The golem's maximum hitpoints, 0 if no golem.
+     */
+    int CS_STAT_GOLEM_MAXHP = 54;
+
+    /**
      * Beginning index of the resistances.
      */
     int CS_STAT_RESIST_START = 100;

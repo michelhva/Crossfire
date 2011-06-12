@@ -39,4 +39,9 @@ public interface GUIGaugeListener {
      */
     void setValues(int curValue, int minValue, int maxValue, @NotNull String labelText, @NotNull String tooltipText);
 
+    /**
+     * Specify whether this item should hide itself, independant of the "visibility" state.
+     * @param hidden
+     */
+    void setHidden(boolean hidden);
 }

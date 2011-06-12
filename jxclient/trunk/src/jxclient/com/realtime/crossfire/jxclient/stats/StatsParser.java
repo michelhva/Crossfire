@@ -58,6 +58,7 @@ public class StatsParser {
         STAT_TABLE.put("EXP", CrossfireStatsListener.CS_STAT_EXP64);
         STAT_TABLE.put("EXP_NEXT_LEVEL", CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL);
         STAT_TABLE.put("FOOD", CrossfireStatsListener.CS_STAT_FOOD);
+        STAT_TABLE.put("GOLEM_HP", CrossfireStatsListener.CS_STAT_GOLEM_HP);
         STAT_TABLE.put("GRACE", CrossfireStatsListener.CS_STAT_GRACE);
         STAT_TABLE.put("HP", CrossfireStatsListener.CS_STAT_HP);
         STAT_TABLE.put("INT", CrossfireStatsListener.CS_STAT_INT);
