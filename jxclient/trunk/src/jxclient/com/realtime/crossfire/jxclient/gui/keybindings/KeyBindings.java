@@ -432,8 +432,9 @@ public class KeyBindings {
         final HashSet<KeyBinding> matches = new HashSet<KeyBinding>();
 
         for (KeyBinding binding : keybindings) {
-            if (binding.getCommandString().startsWith(commandStart))
+            if (binding.getCommandString().startsWith(commandStart)) {
                 matches.add(binding);
+            }
         }
 
         return matches;

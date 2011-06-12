@@ -98,12 +98,15 @@ public class KeyCharKeyBinding extends KeyBinding {
      */
     @Override
     public String getBindingDescription() {
-        if (keyChar == '\n')
+        if (keyChar == '\n') {
             return "return";
-        if (keyChar == '\t')
+        }
+        if (keyChar == '\t') {
             return "tab";
-        if (keyChar == ' ')
+        }
+        if (keyChar == ' ') {
             return "space";
+        }
         return new String(new char[] { keyChar });
     }
 }
