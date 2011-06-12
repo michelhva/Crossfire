@@ -130,6 +130,7 @@ public class PacketWatcher {
                 sb.append(command);
                 sb.append(' ');
                 sb.append(packet.remaining());
+                scriptProcess.commandSent(sb.toString());
             }
         }
 
