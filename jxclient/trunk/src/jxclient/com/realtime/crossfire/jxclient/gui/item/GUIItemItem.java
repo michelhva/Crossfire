@@ -52,7 +52,7 @@ public abstract class GUIItemItem extends GUIItem {
      * The connection instance.
      */
     @NotNull
-    private final CrossfireServerConnection crossfireServerConnection;
+    protected final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The {@link FacesManager} instance to use.
