@@ -165,7 +165,7 @@ public class JXCSkinLoader {
         inventory,
         ground,
         spell
-    };
+    }
 
     /**
      * The border width of dialogs.
