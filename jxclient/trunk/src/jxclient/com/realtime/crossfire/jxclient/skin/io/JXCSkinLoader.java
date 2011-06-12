@@ -58,6 +58,7 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpellList;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemSpellListFactory;
 import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
@@ -77,6 +78,7 @@ import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.list.GUIFloorList;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
+import com.realtime.crossfire.jxclient.gui.list.GUISpellList;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
@@ -92,6 +94,7 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemView;
+import com.realtime.crossfire.jxclient.items.SpellsView;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -156,6 +159,13 @@ import org.jetbrains.annotations.Nullable;
  */
 public class JXCSkinLoader {
 
+    private enum listType
+    {
+        inventory,
+        ground,
+        spell
+    };
+
     /**
      * The border width of dialogs.
      */
@@ -178,6 +188,12 @@ public class JXCSkinLoader {
      */
     @NotNull
     private final FloorView floorView;
+
+    /**
+     * The {@link SpellsView} to use.
+     */
+    @NotNull
+    private final SpellsView spellView;
 
     /**
      * The {@link SpellsManager} instance to use.
@@ -333,6 +349,7 @@ public class JXCSkinLoader {
      * @param itemSet the item set instance to use
      * @param inventoryView the inventory item view to use
      * @param floorView the floor view to use
+     * @param spellView the spells view to use
      * @param spellsManager the spells manager instance to use
      * @param facesManager the faces manager instance to use
      * @param stats the stats instance to use
@@ -343,10 +360,11 @@ public class JXCSkinLoader {
      * @param skillSet the skill set to use
      * @param defaultTileSize the default tile size for the map view
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull SpellsView spellView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
+        this.spellView = spellView;
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         this.defaultTileSize = defaultTileSize;
@@ -582,9 +600,11 @@ public class JXCSkinLoader {
                         } else if (gui != null && cmd.equals("ignore")) {
                             parseIgnore(args);
                         } else if (gui != null && cmd.equals("inventory_list")) {
-                            parseList(args, true, tooltipManager, elementListener, commandQueue, server, nextGroupFace, prevGroupFace);
+                            parseList(args, listType.inventory, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("floor_list")) {
-                            parseList(args, false, tooltipManager, elementListener, commandQueue, server, nextGroupFace, prevGroupFace);
+                            parseList(args, listType.ground, tooltipManager, elementListener, commandQueue, server, currentSpellManager,nextGroupFace, prevGroupFace);
+                        } else if (gui != null && cmd.equals("spells_list")) {
+                            parseList(args, listType.spell, tooltipManager, elementListener, commandQueue, server, currentSpellManager,nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("horizontal")) {
                             parseHorizontal(args, gui, lnr, isDialog);
                         } else if (gui != null && cmd.equals("item")) {
@@ -1100,22 +1120,22 @@ public class JXCSkinLoader {
     }
 
     /**
-     * Parses an "inventory_list" or a "floor_list" command.
+     * Parses an "inventory_list", "floor_list" or "spells_list" command.
      * @param args the command arguments
-     * @param inventoryList <code>true</code> for "inventory_list" command,
-     * <code>false</code> for "floor_list" command
+     * @param type {@link listType} list type to create
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param commandQueue the command queue to use
      * @param server the server to use
+     * @param currentSpellManager the current spell manager to use
      * @param nextGroupFace the image for "next group of items"
      * @param prevGroupFace the image for "prev group of items"
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseList(@NotNull final Args args, final boolean inventoryList, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws IOException, JXCSkinException {
+    private void parseList(@NotNull final Args args, final listType type, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws IOException, JXCSkinException {
         if (defaultItemPainter == null) {
-            throw new IOException("cannot use '"+(inventoryList ? "inventory_list" : "floor_list")+"' without 'def item' command");
+            throw new IOException("cannot use '"+(type.toString()+"_list")+"' without 'def item' command");
         }
 
         final String name = args.get();
@@ -1126,12 +1146,15 @@ public class JXCSkinLoader {
         assert defaultItemPainter != null;
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
         final AbstractGUIElement element;
-        if (inventoryList) {
+        if (type == listType.inventory) {
             final GUIItemItemFactory itemFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
             element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, inventoryView, selectedItem, itemFactory);
-        } else {
+        } else if (type == listType.ground) {
             final GUIItemItemFactory itemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
             element = new GUIFloorList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, floorView, selectedItem, itemFactory);
+        } else {
+            final GUIItemItemFactory itemFactory = new GUIItemSpellListFactory(tooltipManager, elementListener, commandQueue, name, server, itemPainter, facesManager, spellsManager, currentSpellManager, spellView);
+            element = new GUISpellList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, spellView, selectedItem, itemFactory, spellsManager);
         }
         insertGuiElement(element);
     }
@@ -1268,9 +1291,8 @@ public class JXCSkinLoader {
             final Font font = definedFonts.lookup(args.get());
             element = new GUIItemShortcut(tooltipManager, elementListener, name, castColor, castImage, invokeColor, invokeImage, index, facesManager, shortcuts, font, currentSpellManager);
         } else if (type.equals("spelllist")) {
-            final Color selectorColor = ParseUtils.parseColorNull(args.get());
-            final Image selectorImage = imageParser.getImage(selectorColor, args.getPrev());
-            element = new GUIItemSpellList(tooltipManager, elementListener, commandQueue, name, selectorColor, selectorImage, index, facesManager, spellsManager, currentSpellManager);
+            final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
+            element = new GUIItemSpellList(tooltipManager, elementListener, null, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
         } else {
             throw new IOException("undefined item type: "+type);
         }

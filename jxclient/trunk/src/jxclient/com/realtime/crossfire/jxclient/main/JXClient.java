@@ -41,6 +41,7 @@ import com.realtime.crossfire.jxclient.items.InventoryComparator;
 import com.realtime.crossfire.jxclient.items.InventoryView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.SpellsView;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
@@ -178,6 +179,7 @@ public class JXClient {
                                 final Macros macros = new Macros(server);
                                 final CfMapUpdater mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
                                 final SpellsManager spellsManager = new SpellsManager(server, guiStateManager);
+                                final SpellsView spellsView = new SpellsView(spellsManager, facesManager);
                                 final CommandQueue commandQueue = new CommandQueue(server, guiStateManager);
                                 final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
                                 final Shortcuts shortcuts = new Shortcuts(commandQueue, spellsManager);
@@ -203,7 +205,7 @@ public class JXClient {
                                         final GuiManager guiManager = new GuiManager(guiStateManager, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                         commandCallback.init(guiManager);
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
-                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet, options.getTileSize());
+                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet, options.getTileSize());
                                         final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel);
                                         new FacesTracker(guiStateManager, facesManager);
                                         new PlayerNameTracker(guiStateManager, connection, itemSet);

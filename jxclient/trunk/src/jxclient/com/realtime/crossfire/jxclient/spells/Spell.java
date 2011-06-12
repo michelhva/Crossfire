@@ -241,6 +241,15 @@ public class Spell {
         if (unknown) {
             sb.append(" (unknown)");
         }
+        if (mana > 0) {
+            sb.append("<br>Mana: ").append(mana);
+        }
+        if (grace > 0) {
+            sb.append("<br>Grade: ").append(grace);
+        }
+        if (damage > 0) {
+            sb.append("<br>Damage: ").append(damage);
+        }
         if (message.length() > 0) {
             sb.append("<br>");
             sb.append(StringSplitter.splitAsHtml(message));

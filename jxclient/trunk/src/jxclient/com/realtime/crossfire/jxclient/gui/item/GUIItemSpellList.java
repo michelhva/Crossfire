@@ -27,20 +27,21 @@ import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.queue.CommandQueue;
+import com.realtime.crossfire.jxclient.items.CfItem;
+import com.realtime.crossfire.jxclient.items.SpellsView;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class GUIItemSpellList extends GUIItem {
+public class GUIItemSpellList extends GUIItemItem {
 
     /**
      * The serial version UID.
@@ -48,16 +49,10 @@ public class GUIItemSpellList extends GUIItem {
     private static final long serialVersionUID = 1;
 
     /**
-     * The background color of this item.
+     * The object used for synchronization on {@link #index}.
      */
     @NotNull
-    private static final Color BACKGROUND_COLOR = new Color(0, 0, 0, 0.0f);
-
-    /**
-     * The {@link CommandQueue} for sending commands.
-     */
-    @NotNull
-    private final CommandQueue commandQueue;
+    private final Object sync = new Object();
 
     /**
      * The {@link FacesManager} for looking up faces.
@@ -76,12 +71,6 @@ public class GUIItemSpellList extends GUIItem {
     @NotNull
     private final SpellsManager spellsManager;
 
-    @Nullable
-    private final Color selectorColor;
-
-    @Nullable
-    private final Image selectorImage;
-
     @NotNull
     private final CurrentSpellManager currentSpellManager;
 
@@ -89,6 +78,8 @@ public class GUIItemSpellList extends GUIItem {
     private Spell spell = null;
 
     private int index = -1;
+    private boolean selected;
+    private final SpellsView spellView;
 
     /**
      * The {@link SpellsManagerListener} used to detect spell changes.
@@ -144,24 +135,23 @@ public class GUIItemSpellList extends GUIItem {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param commandQueue the command queue for sending commands
+     * @param connection connection to server to send commands
      * @param name the name of this element
      * @param defaultIndex the default scroll index
      * @param facesManager the faces manager for looking up faces
      * @param spellsManager the spells manager instance to watch
+     * @param spellsView the spells view to use
      */
-    public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @Nullable final Color selectorColor, @Nullable final Image selectorImage, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager) {
-        super(tooltipManager, elementListener, name);
-        this.commandQueue = commandQueue;
+    public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @Nullable final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final SpellsView spellsView) {
+        super(tooltipManager, elementListener, name, connection, itemPainter, facesManager);
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
         this.spellsManager = spellsManager;
-        this.selectorColor = selectorColor;
-        this.selectorImage = selectorImage;
         this.currentSpellManager = currentSpellManager;
         setIndex(defaultIndex);
         this.spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
         this.facesManager.addFacesManagerListener(facesManagerListener);
+        this.spellView = spellsView;
     }
 
     /**
@@ -217,7 +207,7 @@ public class GUIItemSpellList extends GUIItem {
             return;
         }
 
-        commandQueue.sendNcom(false, "cast "+spell.getTag());
+        crossfireServerConnection.sendNcom(0, "cast "+spell.getName());
         currentSpellManager.setCurrentSpell(spell);
     }
 
@@ -243,7 +233,7 @@ public class GUIItemSpellList extends GUIItem {
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
-
+/*
         g.setColor(BACKGROUND_COLOR);
         g.fillRect(0, 0, getWidth(), getHeight());
 
@@ -259,7 +249,7 @@ public class GUIItemSpellList extends GUIItem {
         g.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
         if (GuiUtils.isActive(this) && selectorImage != null) {
             g.drawImage(selectorImage, 0, 0, null);
-        }
+        }*/
     }
 
     /**
@@ -319,4 +309,55 @@ public class GUIItemSpellList extends GUIItem {
         setSpell();
     }
 
+    @Override
+    protected Image getFace(CfItem item) {
+        return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setSelected(final boolean selected) {
+        if (this.selected == selected) {
+            return;
+        }
+
+        this.selected = selected;
+        setChanged();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    protected boolean isSelected() {
+        return selected || GuiUtils.isActive(this);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int getIndex() {
+        synchronized (sync) {
+            return index;
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setIndexNoListeners(final int index) {
+        synchronized (sync) {
+            if (this.index == index) {
+                return;
+            }
+
+            this.index = index;
+        }
+
+        setItemNoListeners(spellView.getItem(this.index));
+    }
 }

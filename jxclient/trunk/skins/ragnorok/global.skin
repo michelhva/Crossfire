@@ -51,6 +51,9 @@ commandlist command_setup_close AND null DIALOG_CLOSE setup
 commandlist command_help AND null DIALOG_TOGGLE help
 commandlist command_pickup AND null DIALOG_TOGGLE pickup
 commandlist command_pickup_close AND null DIALOG_CLOSE pickup
+commandlist command_spells AND null DIALOG_TOGGLE spells
+commandlist command_spells_open AND null DIALOG_OPEN spells
+commandlist command_spells_close AND null DIALOG_CLOSE spells
 
 commandlist command_help_close AND null DIALOG_CLOSE help
 

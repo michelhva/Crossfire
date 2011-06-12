@@ -196,7 +196,7 @@ public class SpellsManager implements Iterable<Spell> {
         final Spell key = new Spell(spellName);
         key.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path); // set spell path which is used in the comparator
 
-        final int index = Collections.binarySearch(spells, key, spellNameComparator);
+        int index = Collections.binarySearch(spells, key, spellNameComparator);
         final Spell spell;
         if (index < 0) {
             final Spell existingSpell = unknownSpells.remove(spellName);
@@ -206,7 +206,8 @@ public class SpellsManager implements Iterable<Spell> {
             } else {
                 spell = key;
             }
-            spells.add(-index-1, spell);
+            index = -index-1;
+            spells.add(index, spell);
         } else {
             spell = spells.get(index);
             spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);

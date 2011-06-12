@@ -28,6 +28,7 @@ textbutton button_protections false command_protections Protections
 textbutton button_skills      false command_skills Skills
 textbutton button_pickup      false command_pickup Pickup
 textbutton button_setup       false command_setup Setup
+textbutton button_spells      false command_spells Spells
 
 # Hp/Sp/Gr bars in map view
 gauge lowfood lowfood  null null LOWFOOD WE
@@ -132,6 +133,8 @@ horizontal begin par
     button_pickup
     gap 4
     button_setup
+    gap 4
+    button_spells
     gap 8
   end
   begin seq
@@ -201,6 +204,7 @@ vertical begin par
       button_skills
       button_pickup
       button_setup
+      button_spells
     end
     gap
   end
