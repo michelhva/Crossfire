@@ -42,6 +42,11 @@ import org.jetbrains.annotations.Nullable;
  */
 public class GUISpellList extends GUIItemList {
 
+    /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1L;
+
     @NotNull
     private final SpellsManager spellsManager;
 
