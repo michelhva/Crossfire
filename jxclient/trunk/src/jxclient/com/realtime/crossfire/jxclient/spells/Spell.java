@@ -245,7 +245,7 @@ public class Spell {
             sb.append("<br>Mana: ").append(mana);
         }
         if (grace > 0) {
-            sb.append("<br>Grade: ").append(grace);
+            sb.append("<br>Grace: ").append(grace);
         }
         if (damage > 0) {
             sb.append("<br>Damage: ").append(damage);
