@@ -131,6 +131,7 @@ import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.util.UnterminatedTokenException;
+import com.realtime.crossfire.jxclient.window.KeybindingsManager;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
@@ -345,6 +346,12 @@ public class JXCSkinLoader {
     };
 
     /**
+     * The {@link KeybindingsManager} containing key bindings.
+     */
+    @NotNull
+    private KeybindingsManager keybindingsManager;
+
+    /**
      * Creates a new instance.
      * @param itemSet the item set instance to use
      * @param inventoryView the inventory item view to use
@@ -359,8 +366,9 @@ public class JXCSkinLoader {
      * @param experienceTable the experience table to use
      * @param skillSet the skill set to use
      * @param defaultTileSize the default tile size for the map view
+     * @param keybindingsManager the keybindings manager to use
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull SpellsView spellView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull SpellsView spellView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
@@ -375,6 +383,7 @@ public class JXCSkinLoader {
         this.optionManager = optionManager;
         this.experienceTable = experienceTable;
         this.skillSet = skillSet;
+        this.keybindingsManager = keybindingsManager;
     }
 
     /**
@@ -1154,7 +1163,7 @@ public class JXCSkinLoader {
             element = new GUIFloorList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, floorView, selectedItem, itemFactory);
         } else {
             final GUIItemItemFactory itemFactory = new GUIItemSpellListFactory(tooltipManager, elementListener, commandQueue, name, server, itemPainter, facesManager, spellsManager, currentSpellManager, spellView);
-            element = new GUISpellList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, spellView, selectedItem, itemFactory, spellsManager);
+            element = new GUISpellList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, spellView, selectedItem, itemFactory, spellsManager, keybindingsManager);
         }
         insertGuiElement(element);
     }

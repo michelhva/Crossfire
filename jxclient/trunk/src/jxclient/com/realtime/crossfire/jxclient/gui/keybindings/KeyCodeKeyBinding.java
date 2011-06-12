@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
+import java.awt.event.KeyEvent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -108,4 +109,16 @@ public class KeyCodeKeyBinding extends KeyBinding {
         return false;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String getBindingDescription() {
+        StringBuilder sb = new StringBuilder();
+        if (modifiers != 0) {
+            sb.append(KeyEvent.getKeyModifiersText(modifiers)).append("+");
+        }
+        sb.append(KeyEvent.getKeyText(keyCode));
+        return sb.toString();
+    }
 }

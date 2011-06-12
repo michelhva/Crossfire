@@ -25,11 +25,13 @@ import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.util.HashSet;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -291,4 +293,18 @@ public class KeybindingsManager {
         return keyBindings.handleKeyPress(e);
     }
 
+    /**
+     * Search bindings having a command text starting with the specified value.
+     * @param commandStart start of the text to search for.
+     * @return matching bindings.
+     */
+    public HashSet<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
+        final HashSet<KeyBinding> matches = keyBindings.getBindingsForPartialCommand(commandStart);
+
+        if (characterKeyBindings != null) {
+            matches.addAll(characterKeyBindings.getBindingsForPartialCommand(commandStart));
+        }
+
+        return matches;
+    }
 }

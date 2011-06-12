@@ -423,4 +423,19 @@ public class KeyBindings {
         return true;
     }
 
+    /**
+     * Search bindings having a command text starting with the specified value.
+     * @param commandStart start of the text to search for.
+     * @return matching bindings.
+     */
+    public HashSet<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
+        final HashSet<KeyBinding> matches = new HashSet<KeyBinding>();
+
+        for (KeyBinding binding : keybindings) {
+            if (binding.getCommandString().startsWith(commandStart))
+                matches.add(binding);
+        }
+
+        return matches;
+    }
 }

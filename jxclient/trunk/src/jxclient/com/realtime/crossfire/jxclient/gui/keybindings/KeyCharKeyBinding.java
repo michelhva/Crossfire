@@ -93,4 +93,17 @@ public class KeyCharKeyBinding extends KeyBinding {
         return this.keyChar == keyChar;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String getBindingDescription() {
+        if (keyChar == '\n')
+            return "return";
+        if (keyChar == '\t')
+            return "tab";
+        if (keyChar == ' ')
+            return "space";
+        return new String(new char[] { keyChar });
+    }
 }

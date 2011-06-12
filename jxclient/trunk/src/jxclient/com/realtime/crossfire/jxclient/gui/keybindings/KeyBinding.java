@@ -93,6 +93,12 @@ public abstract class KeyBinding {
     public abstract boolean matchesKeyChar(final char keyChar);
 
     /**
+     * Return the binding as a human-readable text.
+     * @return human-reading text.
+     */
+    public abstract String getBindingDescription();
+
+    /**
      * Returns the commands as a string.
      * @return the commands as a string
      */
