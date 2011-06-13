@@ -14,7 +14,6 @@ dam 65
 speed 0.4
 attacktype 2065
 can_see_in_dark 1
-can_use_rod 0
 will_apply 4
 Con 10
 Pow 32
@@ -28,7 +27,7 @@ alive 1
 resist_magic 80
 resist_blind 100
 resist_fire -20
-resist_ice 100
+resist_cold 100
 resist_paralyze 90
 resist_fear 100
 weight 75000
