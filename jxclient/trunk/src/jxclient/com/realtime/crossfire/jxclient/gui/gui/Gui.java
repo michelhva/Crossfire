@@ -385,18 +385,8 @@ public class Gui extends JComponent {
      * @return whether a gui element did handle the event
      */
     public boolean handleKeyTyped(@NotNull final KeyEvent e) {
-        if (activeElement != null) {
-            if (activeElement instanceof KeyListener) {
-                if (((KeyListener)activeElement).keyTyped(e)) {
-                    return true;
-                }
-            } else if (activeElement instanceof AbstractButton) {
-                if (e.getKeyChar() == '\r' || e.getKeyChar() == '\n' || e.getKeyChar() == ' ') {
-                    assert activeElement != null;
-                    ((AbstractButton)activeElement).execute();
-                    return true;
-                }
-            }
+        if (activeElement != null && activeElement instanceof KeyTypedHandler && ((KeyTypedHandler)activeElement).keyTyped(e)) {
+            return true;
         }
 
         if (e.getKeyChar() == '\r' || e.getKeyChar() == '\n' || e.getKeyChar() == ' ') {
