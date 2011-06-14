@@ -112,17 +112,11 @@ public class CommandList {
     public String getCommandString() {
         final StringBuilder sb = new StringBuilder();
         boolean firstCommand = true;
-        for (final Object guiCommand : commandList) {
-            final String commandString;
-            if (guiCommand instanceof ExecuteCommandCommand) {
-                commandString = ((ExecuteCommandCommand)guiCommand).getCommand();
-            } else if (guiCommand instanceof ActivateCommandInputCommand) {
-                final String commandText = ((ActivateCommandInputCommand)guiCommand).getCommandText();
-                commandString = commandText.length() > 0 ? "-e "+commandText : "-e";
-            } else {
+        for (final GUICommand guiCommand : commandList) {
+            if (!(guiCommand instanceof GUICommand2)) {
                 throw new AssertionError("Cannot encode command of type "+guiCommand.getClass().getName());
             }
-
+            final String commandString = ((GUICommand2)guiCommand).getCommandString();
             if (firstCommand) {
                 firstCommand = false;
             } else {
