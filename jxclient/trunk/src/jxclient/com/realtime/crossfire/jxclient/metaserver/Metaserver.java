@@ -179,7 +179,7 @@ public class Metaserver {
                         final BufferedReader br = new BufferedReader(isr);
                         try {
                             final MetaserverEntryParser metaserverEntryParser = new MetaserverEntryParser();
-                            for (; ;) {
+                            while (true) {
                                 final String line = br.readLine();
                                 if (line == null) {
                                     break;

@@ -74,7 +74,7 @@ public class ShortcutsLoader {
                         final BufferedReader br = new BufferedReader(isr);
                         try {
                             int index = 0;
-                            for (; ;) {
+                            while (true) {
                                 final String line = br.readLine();
                                 if (line == null) {
                                     break;

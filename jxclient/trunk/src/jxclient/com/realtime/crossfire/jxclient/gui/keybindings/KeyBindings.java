@@ -203,7 +203,7 @@ public class KeyBindings {
                 try {
                     final LineNumberReader lnr = new LineNumberReader(isr);
                     try {
-                        for (; ;) {
+                        while (true) {
                             final String line = lnr.readLine();
                             if (line == null) {
                                 break;

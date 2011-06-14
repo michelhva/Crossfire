@@ -81,7 +81,7 @@ public class DialogStateParser {
                 try {
                     final BufferedReader br = new BufferedReader(isr);
                     try {
-                        for (; ;) {
+                        while (true) {
                             final String line = br.readLine();
                             if (line == null) {
                                 break;

@@ -267,7 +267,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 try {
                     final BufferedReader br = new BufferedReader(isr);
                     try {
-                        for (; ;) {
+                        while (true) {
                             final String line = br.readLine();
                             if (line == null) {
                                 break;

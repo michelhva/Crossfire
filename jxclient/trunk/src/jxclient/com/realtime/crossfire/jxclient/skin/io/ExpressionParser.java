@@ -106,7 +106,7 @@ public class ExpressionParser {
         Expression value;
         try {
             value = parseIntegerConstant(matcher.group(1));
-            for (; ;) {
+            while (true) {
                 final boolean negative = matcher.group(2).equals("-");
                 final String rest = matcher.group(3);
 

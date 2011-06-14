@@ -502,7 +502,7 @@ public class ClientSocket {
      * Parses data from {@link #inputBuffer} into commands.
      */
     private void processReadCommand() {
-        for (; ;) {
+        while (true) {
             if (inputLen == -1) {
                 if (inputBuffer.remaining() < 2) {
                     break;
