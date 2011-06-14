@@ -232,7 +232,7 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
      * {@inheritDoc}
      */
     @Override
-    public void setHidden(boolean hidden) {
+    public void setHidden(final boolean hidden) {
         // nothing
     }
 }
