@@ -67,6 +67,7 @@ public abstract class GaugeUpdater {
      * Sets the gauge to update.
      * @param gauge the gauge
      */
+    @SuppressWarnings("NullableProblems")
     public void setGauge(@NotNull final GUIGaugeListener gauge) {
         this.gauge = gauge;
         /* hide the gauge initially, so if it's never updated it doesn't appear */

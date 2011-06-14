@@ -754,6 +754,7 @@ public class GuiManager {
      * Sets a new skin.
      * @param skin the new skin
      */
+    @SuppressWarnings("NullableProblems")
     public void setSkin(@NotNull final JXCSkin skin) {
         this.skin = skin;
         skin.attach(tooltipManager);

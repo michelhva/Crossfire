@@ -119,6 +119,7 @@ public class KeyHandler {
         Arrays.fill(keyShift, false);
     }
 
+    @SuppressWarnings("NullableProblems")
     public void setKeyBindings(@NotNull final KeyBindings keyBindings) {
         this.keyBindings = keyBindings;
     }

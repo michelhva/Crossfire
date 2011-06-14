@@ -88,6 +88,7 @@ public class Face {
      * Sets the images.
      * @param faceImages the images
      */
+    @SuppressWarnings("NullableProblems")
     public void setFaceImages(@NotNull final FaceImages faceImages) {
         this.faceImages = faceImages;
         final Icon imageIcon = faceImages.getOriginalImageIcon();

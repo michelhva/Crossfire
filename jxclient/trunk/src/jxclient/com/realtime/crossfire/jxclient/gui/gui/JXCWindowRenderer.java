@@ -764,6 +764,7 @@ public class JXCWindowRenderer {
      * Sets the {@link Gui} to display.
      * @param gui the gui to display
      */
+    @SuppressWarnings("NullableProblems")
     public void setCurrentGui(@NotNull final Gui gui) {
         if (frame != null && currentGui != null) {
             removeFromLayeredPane(currentGui);
