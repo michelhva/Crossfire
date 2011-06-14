@@ -389,6 +389,7 @@
         <inspection_tool class="ExtendsConcreteCollection" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="ExtendsThread" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="ExtendsUtilityClass" enabled="true" level="WARNING" enabled_by_default="true" />
+        <inspection_tool class="FieldCanBeLocal" enabled="false" level="WARNING" enabled_by_default="false" />
         <inspection_tool class="FieldMayBeFinal" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="FieldMayBeStatic" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="FinalClass" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -549,9 +550,6 @@
           <option name="ignoreIterators" value="false" />
         </inspection_tool>
         <inspection_tool class="LoopWithImplicitTerminationCondition" enabled="true" level="WARNING" enabled_by_default="true" />
-        <inspection_tool class="MagicNumber" enabled="true" level="WARNING" enabled_by_default="true">
-          <option name="m_ignoreInHashCode" value="true" />
-        </inspection_tool>
         <inspection_tool class="MapReplaceableByEnumMap" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="MethodMayBeStatic" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="m_onlyPrivateOrFinal" value="false" />
@@ -864,6 +862,12 @@
           <option name="m_ignoreCatchBlocksWithComments" value="false" />
           <option name="m_ignoreTestCases" value="false" />
         </inspection_tool>
+        <inspection_tool class="UnusedDeclaration" enabled="false" level="WARNING" enabled_by_default="false">
+          <option name="ADD_MAINS_TO_ENTRIES" value="true" />
+          <option name="ADD_APPLET_TO_ENTRIES" value="true" />
+          <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
+          <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
+        </inspection_tool>
         <inspection_tool class="UnusedImport" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="UnusedLibrary" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="UpperCaseFieldNameNotConstant" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -880,7 +884,7 @@
         <inspection_tool class="WaitNotInSynchronizedContext" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="WaitWhileHoldingTwoLocks" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="WaitWithoutCorrespondingNotify" enabled="true" level="WARNING" enabled_by_default="true" />
-        <inspection_tool class="WeakerAccess" enabled="true" level="WARNING" enabled_by_default="true">
+        <inspection_tool class="WeakerAccess" enabled="false" level="WARNING" enabled_by_default="false">
           <option name="SUGGEST_PACKAGE_LOCAL_FOR_MEMBERS" value="false" />
           <option name="SUGGEST_PACKAGE_LOCAL_FOR_TOP_CLASSES" value="false" />
           <option name="SUGGEST_PRIVATE_FOR_INNERS" value="false" />
