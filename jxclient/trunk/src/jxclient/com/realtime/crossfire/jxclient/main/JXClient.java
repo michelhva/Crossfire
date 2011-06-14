@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesQueue;
 import com.realtime.crossfire.jxclient.faces.FileCache;
+import com.realtime.crossfire.jxclient.gui.commands.ScreenshotFiles;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
@@ -198,7 +199,8 @@ public class JXClient {
                                             throw new AssertionError(ex);
                                         }
                                         final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
-                                        final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
+                                        final ScreenshotFiles screenshotFiles = new ScreenshotFiles();
+                                        final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros, screenshotFiles);
                                         final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
                                         final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
                                         final GuiFactory guiFactory = new GuiFactory(commands, commandCallback, macros);

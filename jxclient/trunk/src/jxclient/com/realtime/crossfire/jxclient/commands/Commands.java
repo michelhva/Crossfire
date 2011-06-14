@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.ScreenshotFiles;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
@@ -60,12 +61,14 @@ public class Commands {
      * @param optionManager the option manager instance
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
+     * @param screenshotFiles the screenshot files instance for creating
+     * screenshot file names
      */
-    public Commands(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptManager scriptManager, @NotNull final OptionManager optionManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
+    public Commands(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptManager scriptManager, @NotNull final OptionManager optionManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final ScreenshotFiles screenshotFiles) {
         this.commandQueue = commandQueue;
         commands.put("bind", new BindCommand(crossfireServerConnection, this, commandCallback, macros));
         commands.put("unbind", new UnbindCommand(commandCallback, crossfireServerConnection));
-        commands.put("screenshot", new ScreenshotCommand(windowRenderer, crossfireServerConnection));
+        commands.put("screenshot", new ScreenshotCommand(windowRenderer, crossfireServerConnection, screenshotFiles));
         commands.put("script", new ScriptCommand(scriptManager, crossfireServerConnection));
         commands.put("scriptkill", new ScriptkillCommand(scriptManager, crossfireServerConnection));
         commands.put("scriptkillall", new ScriptkillallCommand(scriptManager, crossfireServerConnection));

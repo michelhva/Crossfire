@@ -21,9 +21,9 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
+import com.realtime.crossfire.jxclient.gui.commands.ScreenshotFiles;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.settings.Filenames;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
@@ -40,31 +40,28 @@ import org.jetbrains.annotations.NotNull;
 public class ScreenshotCommand extends AbstractCommand {
 
     /**
-     * The number of auto-created screenshot filenames. If more than this number
-     * of screenshots are created, old files will be recycled.
-     */
-    private static final int SCREENSHOT_FILENAMES = 10;
-
-    /**
-     * A number for creating screenshot file names. It is incremented for each
-     * screenshot.
-     */
-    private static int screenshotId = 0;
-
-    /**
      * The renderer to use.
      */
     @NotNull
     private final JXCWindowRenderer windowRenderer;
 
     /**
+     * The {@link ScreenshotFiles} instance for creating screenshot file names.
+     */
+    @NotNull
+    private final ScreenshotFiles screenshotFiles;
+
+    /**
      * Creates a new instance.
      * @param windowRenderer the renderer to use
      * @param crossfireServerConnection the connection instance
+     * @param screenshotFiles the screenshot files instance for creating
+     * screenshot file names
      */
-    public ScreenshotCommand(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection) {
+    public ScreenshotCommand(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScreenshotFiles screenshotFiles) {
         super(crossfireServerConnection);
         this.windowRenderer = windowRenderer;
+        this.screenshotFiles = screenshotFiles;
     }
 
     /**
@@ -83,12 +80,11 @@ public class ScreenshotCommand extends AbstractCommand {
         final File file;
         if (args.length() == 0) {
             try {
-                file = Filenames.getSettingsFile("screenshot"+screenshotId+".png");
+                file = screenshotFiles.getFile();
             } catch (final IOException ex) {
                 drawInfoError("Failed to create screenshot filename: "+ex.getMessage());
                 return;
             }
-            screenshotId = (screenshotId+1)%SCREENSHOT_FILENAMES;
         } else {
             file = new File(args);
         }
