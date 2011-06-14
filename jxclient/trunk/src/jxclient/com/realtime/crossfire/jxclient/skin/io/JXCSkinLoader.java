@@ -160,10 +160,10 @@ import org.jetbrains.annotations.Nullable;
  */
 public class JXCSkinLoader {
 
-    private enum listType {
-        inventory,
-        ground,
-        spell
+    private enum ListType {
+        INVENTORY,
+        GROUND,
+        SPELL
     }
 
     /**
@@ -608,11 +608,11 @@ public class JXCSkinLoader {
                         } else if (gui != null && cmd.equals("ignore")) {
                             parseIgnore(args);
                         } else if (gui != null && cmd.equals("inventory_list")) {
-                            parseList(args, listType.inventory, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                            parseList(args, ListType.INVENTORY, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("floor_list")) {
-                            parseList(args, listType.ground, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                            parseList(args, ListType.GROUND, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("spells_list")) {
-                            parseList(args, listType.spell, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                            parseList(args, ListType.SPELL, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("horizontal")) {
                             parseHorizontal(args, gui, lnr, isDialog);
                         } else if (gui != null && cmd.equals("item")) {
@@ -1130,7 +1130,7 @@ public class JXCSkinLoader {
     /**
      * Parses an "inventory_list", "floor_list" or "spells_list" command.
      * @param args the command arguments
-     * @param type {@link listType} list type to create
+     * @param type {@link ListType} list type to create
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param commandQueue the command queue to use
@@ -1141,7 +1141,7 @@ public class JXCSkinLoader {
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseList(@NotNull final Args args, final listType type, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws IOException, JXCSkinException {
+    private void parseList(@NotNull final Args args, final ListType type, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws IOException, JXCSkinException {
         if (defaultItemPainter == null) {
             throw new IOException("cannot use '"+type.toString()+"_list"+"' without 'def item' command");
         }
@@ -1154,10 +1154,10 @@ public class JXCSkinLoader {
         assert defaultItemPainter != null;
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
         final AbstractGUIElement element;
-        if (type == listType.inventory) {
+        if (type == ListType.INVENTORY) {
             final GUIItemItemFactory itemFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
             element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, inventoryView, selectedItem, itemFactory);
-        } else if (type == listType.ground) {
+        } else if (type == ListType.GROUND) {
             final GUIItemItemFactory itemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
             element = new GUIFloorList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, floorView, selectedItem, itemFactory);
         } else {
