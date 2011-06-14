@@ -60,7 +60,7 @@ public class GUICommandFactory {
      * @param macros the macros instance to use
      * @return the new command instance
      */
-    public static GUICommand2 createCommandDecode(@NotNull final String encodedCommandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros) {
+    public static GUICommand createCommandDecode(@NotNull final String encodedCommandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros) {
         return createCommand(decode(encodedCommandString), commandCallback, commands, macros);
     }
 
@@ -73,7 +73,7 @@ public class GUICommandFactory {
      * @return the new command instance
      */
     @NotNull
-    public static GUICommand2 createCommand(@NotNull final String commandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros) {
+    public static GUICommand createCommand(@NotNull final String commandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros) {
         if (commandString.equals("-e")) {
             return new ActivateCommandInputCommand("", commandCallback, macros);
         } else if (commandString.startsWith("-e ")) {

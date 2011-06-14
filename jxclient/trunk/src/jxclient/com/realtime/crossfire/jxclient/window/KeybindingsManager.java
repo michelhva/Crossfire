@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.HashSet;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -298,8 +299,8 @@ public class KeybindingsManager {
      * @param commandStart start of the text to search for.
      * @return matching bindings.
      */
-    public HashSet<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
-        final HashSet<KeyBinding> matches = new HashSet<KeyBinding>();
+    public Iterable<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
+        final Collection<KeyBinding> matches = new HashSet<KeyBinding>();
 
         /*
          * character-specific bindings override global ones, so need to check for
@@ -308,7 +309,7 @@ public class KeybindingsManager {
         if (characterKeyBindings != null) {
             matches.addAll(characterKeyBindings.getBindingsForPartialCommand(commandStart));
         }
-        final HashSet<KeyBinding> global = keyBindings.getBindingsForPartialCommand(commandStart);
+        final Iterable<KeyBinding> global = keyBindings.getBindingsForPartialCommand(commandStart);
         for (final KeyBinding candidate : global) {
             boolean used = false;
             for (final KeyBinding check : matches) {

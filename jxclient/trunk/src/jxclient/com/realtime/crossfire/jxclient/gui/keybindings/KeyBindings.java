@@ -428,8 +428,8 @@ public class KeyBindings {
      * @param commandStart start of the text to search for.
      * @return matching bindings.
      */
-    public HashSet<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
-        final HashSet<KeyBinding> matches = new HashSet<KeyBinding>();
+    public Collection<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
+        final Collection<KeyBinding> matches = new HashSet<KeyBinding>();
 
         for (final KeyBinding binding : keybindings) {
             if (binding.getCommandString().startsWith(commandStart)) {
