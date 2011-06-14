@@ -81,7 +81,7 @@ public class GUIItemSpellList extends GUIItemItem {
 
     private boolean selected;
 
-    private final ItemView spellView;
+    private final ItemView spellsView;
 
     /**
      * The {@link SpellsManagerListener} used to detect spell changes.
@@ -153,7 +153,7 @@ public class GUIItemSpellList extends GUIItemItem {
         setIndex(defaultIndex);
         this.spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
         this.facesManager.addFacesManagerListener(facesManagerListener);
-        this.spellView = spellsView;
+        this.spellsView = spellsView;
     }
 
     /**
@@ -360,6 +360,6 @@ public class GUIItemSpellList extends GUIItemItem {
             this.index = index;
         }
 
-        setItemNoListeners(spellView.getItem(this.index));
+        setItemNoListeners(spellsView.getItem(this.index));
     }
 }
