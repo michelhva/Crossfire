@@ -75,17 +75,17 @@ public class AccountPasswordCommand implements GUICommand {
             return;
         }
 
-        final GUIText fcurrent = gui.getFirstElement(GUIText.class, "account_password_current");
-        final GUIText fchange = gui.getFirstElement(GUIText.class, "account_password_new");
-        final GUIText fconfirm = gui.getFirstElement(GUIText.class, "account_password_confirm");
+        final GUIText currentPassword = gui.getFirstElement(GUIText.class, "account_password_current");
+        final GUIText newPassword = gui.getFirstElement(GUIText.class, "account_password_new");
+        final GUIText confirmPassword = gui.getFirstElement(GUIText.class, "account_password_confirm");
 
-        if (fcurrent == null || fchange == null || fconfirm == null) {
+        if (currentPassword == null || newPassword == null || confirmPassword == null) {
             return;
         }
 
-        final String current = fcurrent.getText();
-        final String password = fchange.getText();
-        final String confirm = fconfirm.getText();
+        final String current = currentPassword.getText();
+        final String password = newPassword.getText();
+        final String confirm = confirmPassword.getText();
 
         if (current.isEmpty()) {
             final AbstractLabel error = gui.getFirstElement(GUILabelFailure.class, "account_password_error");
