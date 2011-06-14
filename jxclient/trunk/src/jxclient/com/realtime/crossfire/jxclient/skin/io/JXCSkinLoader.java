@@ -160,8 +160,7 @@ import org.jetbrains.annotations.Nullable;
  */
 public class JXCSkinLoader {
 
-    private enum listType
-    {
+    private enum listType {
         inventory,
         ground,
         spell
