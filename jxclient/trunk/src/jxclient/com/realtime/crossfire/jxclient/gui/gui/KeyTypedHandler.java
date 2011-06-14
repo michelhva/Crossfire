@@ -19,30 +19,22 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.textinput;
+package com.realtime.crossfire.jxclient.gui.gui;
 
-import com.realtime.crossfire.jxclient.gui.gui.KeyTypedHandler;
 import java.awt.event.KeyEvent;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for listeners for keyboard input.
+ * Interface for classes that may handle "typed" key events.
  * @author Andreas Kirschbaum
  */
-public interface KeyListener extends KeyTypedHandler {
+public interface KeyTypedHandler {
 
     /**
-     * Invoked when a key has been pressed.
+     * Invoked when a key has been typed.
      * @param e the key event for the key
      * @return whether the key event has been consumed
      */
-    boolean keyPressed(@NotNull KeyEvent e);
-
-    /**
-     * Invoked when a key has been released.
-     * @param e the key event for the key
-     * @return whether the key event has been consumed
-     */
-    boolean keyReleased(@NotNull KeyEvent e);
+    boolean keyTyped(@NotNull KeyEvent e);
 
 }
