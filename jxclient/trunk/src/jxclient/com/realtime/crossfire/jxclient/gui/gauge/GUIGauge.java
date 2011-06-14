@@ -144,8 +144,9 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
-        if (hidden)
+        if (hidden) {
             return;
+        }
 
         final Graphics paint;
         if (alpha < 1F) {
