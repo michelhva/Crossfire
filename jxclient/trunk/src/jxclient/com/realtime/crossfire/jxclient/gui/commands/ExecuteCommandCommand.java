@@ -29,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which executes a Crossfire command.
  * @author Andreas Kirschbaum
  */
-public class ExecuteCommandCommand implements GUICommand {
+public class ExecuteCommandCommand implements GUICommand2 {
 
     /**
      * The commands instance for executing the command.
@@ -78,11 +78,11 @@ public class ExecuteCommandCommand implements GUICommand {
     }
 
     /**
-     * Returns the command to execute.
-     * @return the command to execute
+     * {@inheritDoc}
      */
     @NotNull
-    public String getCommand() {
+    @Override
+    public String getCommandString() {
         return command;
     }
 

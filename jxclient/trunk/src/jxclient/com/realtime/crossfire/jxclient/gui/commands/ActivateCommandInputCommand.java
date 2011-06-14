@@ -28,7 +28,7 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which activates the command input field.
  * @author Andreas Kirschbaum
  */
-public class ActivateCommandInputCommand implements GUICommand {
+public class ActivateCommandInputCommand implements GUICommand2 {
 
     /**
      * The {@link CommandCallback} to affect.
@@ -77,12 +77,12 @@ public class ActivateCommandInputCommand implements GUICommand {
     }
 
     /**
-     * Returns the command text to set.
-     * @return the command text
+     * {@inheritDoc}
      */
     @NotNull
-    public String getCommandText() {
-        return commandText;
+    @Override
+    public String getCommandString() {
+        return commandText.length() > 0 ? "-e "+commandText : "-e";
     }
 
 }
