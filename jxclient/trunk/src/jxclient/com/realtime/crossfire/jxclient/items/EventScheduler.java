@@ -86,7 +86,7 @@ public class EventScheduler {
         /** {@inheritDoc} */
         @Override
         public void run() {
-            for (; ;) {
+            while (true) {
                 try {
                     final long now = System.currentTimeMillis();
                     final boolean fireEvent;

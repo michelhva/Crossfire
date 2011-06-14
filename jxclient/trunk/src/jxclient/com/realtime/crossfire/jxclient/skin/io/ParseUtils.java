@@ -178,7 +178,7 @@ public class ParseUtils {
         }
         if (text.toString().equals("<<EOF")) {
             text.setLength(0);
-            for (; ;) {
+            while (true) {
                 final String line = lnr.readLine();
                 if (line == null) {
                     throw new IOException();

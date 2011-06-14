@@ -449,7 +449,7 @@ public class JXCSkinLoader {
             checkBoxFactory = null;
             try {
                 load(skinSource, "global", crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, null, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
-                for (; ;) {
+                while (true) {
                     final String name = skin.getDialogToLoad();
                     if (name == null) {
                         break;
@@ -556,7 +556,7 @@ public class JXCSkinLoader {
                 final LineNumberReader lnr = new LineNumberReader(isr);
                 try {
                     boolean isDialog = false;
-                    for (; ;) {
+                    while (true) {
                         final String line = lnr.readLine();
                         if (line == null) {
                             break;
@@ -2096,7 +2096,7 @@ public class JXCSkinLoader {
             throw new IOException("undefined type '"+type+"'");
         }
 
-        for (; ;) {
+        while (true) {
             final String line = lnr.readLine();
             if (line == null) {
                 throw new IOException("unterminated 'begin' block");

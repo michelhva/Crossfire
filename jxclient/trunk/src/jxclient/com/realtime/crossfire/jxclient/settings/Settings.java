@@ -196,7 +196,7 @@ public class Settings {
                 try {
                     final LineNumberReader lnr = new LineNumberReader(isr);
                     try {
-                        for (; ;) {
+                        while (true) {
                             final String line2 = lnr.readLine();
                             if (line2 == null) {
                                 break;

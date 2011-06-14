@@ -1901,7 +1901,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @throws UnknownCommandException if the command cannot be parsed
      */
     private void cmdMap2Coordinate(@NotNull final ByteBuffer packet, final int x, final int y) throws UnknownCommandException {
-        for (; ;) {
+        while (true) {
             final int lenType = getInt1(packet);
             if (lenType == 0xFF) {
                 break;
@@ -2209,7 +2209,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             try {
                 final BufferedReader d = new BufferedReader(isr);
                 try {
-                    for (; ;) {
+                    while (true) {
                         final String r = d.readLine();
                         if (r == null) {
                             break;
@@ -2665,7 +2665,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void processExtendedTextSet(@NotNull final ByteBuffer packet) {
         final int args = packet.position();
-        for (; ;) {
+        while (true) {
             final int startPos = packet.position();
             while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
                 packet.get();

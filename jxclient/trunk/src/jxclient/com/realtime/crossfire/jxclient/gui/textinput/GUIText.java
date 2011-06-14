@@ -481,7 +481,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             } else if (this.cursor < cursor) {
                 // cursor moved right
 
-                for (; ;) {
+                while (true) {
                     final String tmp = getDisplayText();
                     final String tmpCursor = tmp.substring(0, cursor-offset+1);
                     //                    final RectangularShape rectangleCursor = font.getStringBounds(tmpCursor, fontRenderContext);

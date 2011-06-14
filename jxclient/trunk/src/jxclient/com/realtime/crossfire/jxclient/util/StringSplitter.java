@@ -76,7 +76,7 @@ public class StringSplitter {
 
         final Collection<String> result = new ArrayList<String>();
         int start = 0;
-        for (; ;) {
+        while (true) {
             while (start < paddedMessage.length() && paddedMessage.charAt(start) == ' ') {
                 start++;
             }
