@@ -32,7 +32,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.window.KeybindingsManager;
-import java.util.HashSet;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -91,7 +90,7 @@ public class GUISpellList extends GUIItemList {
         // because key bindings can specify partial names, we search in 2 steps:
         // - search all bindings with the first spell letter
         // - from those bindings only keep the ones the spell's command matches
-        final HashSet<KeyBinding> bindings = keybindings.getBindingsForPartialCommand(search);
+        final Iterable<KeyBinding> bindings = keybindings.getBindingsForPartialCommand(search);
         boolean first = true;
         final StringBuilder sb = new StringBuilder();
 
