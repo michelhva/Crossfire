@@ -82,11 +82,11 @@ public class GUISpellList extends GUIItemList {
      * @param prefix invocation prefix, "cast " or "invoke ",  to search for.
      * @param legend text before the binding(s).
      * @return empty string if no matching bindings, else text in the form
-     * "legend (binding 1) ; (binding 2) ; ..."
+     *         "legend (binding 1) ; (binding 2) ; ..."
      */
     private String getBindings(@NotNull final Spell spell, @NotNull final String prefix, @NotNull final String legend) {
-        final String search = prefix + spell.getName().charAt(0);
-        final String match = prefix + spell.getName();
+        final String search = prefix+spell.getName().charAt(0);
+        final String match = prefix+spell.getName();
 
         // because key bindings can specify partial names, we search in 2 steps:
         // - search all bindings with the first spell letter
@@ -95,7 +95,7 @@ public class GUISpellList extends GUIItemList {
         boolean first = true;
         final StringBuilder sb = new StringBuilder();
 
-        for(final KeyBinding binding : bindings) {
+        for (final KeyBinding binding : bindings) {
             if (match.startsWith(binding.getCommandString())) {
                 if (first) {
                     sb.append(legend);

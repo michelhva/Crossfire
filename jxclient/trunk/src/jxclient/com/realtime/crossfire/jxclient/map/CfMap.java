@@ -81,14 +81,14 @@ public class CfMap {
     private int maxPy = -1;
 
     /**
-     * Result values for {@link #getMapPatch(int,int)} and {@link
-     * #expandTo(int,int)}.
+     * Result values for {@link #getMapPatch(int, int)} and {@link
+     * #expandTo(int, int)}.
      */
     private int ox;
 
     /**
-     * Result values for {@link #getMapPatch(int,int)} and {@link
-     * #expandTo(int,int)}.
+     * Result values for {@link #getMapPatch(int, int)} and {@link
+     * #expandTo(int, int)}.
      */
     private int oy;
 

@@ -611,9 +611,9 @@ public class JXCSkinLoader {
                         } else if (gui != null && cmd.equals("inventory_list")) {
                             parseList(args, listType.inventory, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("floor_list")) {
-                            parseList(args, listType.ground, tooltipManager, elementListener, commandQueue, server, currentSpellManager,nextGroupFace, prevGroupFace);
+                            parseList(args, listType.ground, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("spells_list")) {
-                            parseList(args, listType.spell, tooltipManager, elementListener, commandQueue, server, currentSpellManager,nextGroupFace, prevGroupFace);
+                            parseList(args, listType.spell, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("horizontal")) {
                             parseHorizontal(args, gui, lnr, isDialog);
                         } else if (gui != null && cmd.equals("item")) {
