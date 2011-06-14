@@ -12,7 +12,6 @@ import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
  * @author nicolas
  */
 public class GUIItemSpellListFactory implements GUIItemItemFactory {
@@ -54,7 +53,9 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     private final CrossfireServerConnection crossfireServerConnection;
 
     private final SpellsManager spellsManager;
+
     private final CurrentSpellManager currentSpellManager;
+
     private final SpellsView spellsView;
 
     /**
@@ -78,7 +79,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
 
     @Override
     public GUIElement newItem(final int index) {
-        return new GUIItemSpellList(tooltipManager, elementListener, crossfireServerConnection, name + index, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellsView);
+        return new GUIItemSpellList(tooltipManager, elementListener, crossfireServerConnection, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellsView);
     }
 
     /**
@@ -87,7 +88,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIItemItem newTemplateItem(final int cellHeight) {
-        final GUIItemItem result = new GUIItemSpellList(tooltipManager, elementListener, crossfireServerConnection, name + "_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, spellsView);
+        final GUIItemItem result = new GUIItemSpellList(tooltipManager, elementListener, crossfireServerConnection, name+"_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, spellsView);
         //noinspection SuspiciousNameCombination
         result.setSize(cellHeight, cellHeight);
         return result;

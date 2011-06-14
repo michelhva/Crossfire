@@ -281,7 +281,7 @@ public class KeyHandler {
             return;
         }
 
-        if ((e.getModifiers() &~ InputEvent.SHIFT_MASK) != 0) {
+        if ((e.getModifiers()&~InputEvent.SHIFT_MASK) != 0) {
             debugKeyboardWrite("keyTyped: ignoring event with non-shift modifiers");
             return;
         }

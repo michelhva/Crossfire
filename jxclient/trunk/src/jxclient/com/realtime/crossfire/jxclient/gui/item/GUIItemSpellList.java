@@ -78,7 +78,9 @@ public class GUIItemSpellList extends GUIItemItem {
     private Spell spell = null;
 
     private int index = -1;
+
     private boolean selected;
+
     private final SpellsView spellView;
 
     /**
@@ -233,7 +235,7 @@ public class GUIItemSpellList extends GUIItemItem {
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
-/*
+        /*
         g.setColor(BACKGROUND_COLOR);
         g.fillRect(0, 0, getWidth(), getHeight());
 

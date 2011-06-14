@@ -29,7 +29,6 @@ import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
  * @author nicolas
  */
 public class SpellsView extends AbstractItemView {
