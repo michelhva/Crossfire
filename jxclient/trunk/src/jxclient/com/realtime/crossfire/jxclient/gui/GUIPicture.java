@@ -30,7 +30,6 @@ import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * @author Lauwenmark
@@ -84,7 +83,7 @@ public class GUIPicture extends AbstractGUIElement {
     /**
      * {@inheritDoc}
      */
-    @Nullable
+    @NotNull
     @Override
     public Dimension getPreferredSize() {
         return new Dimension(preferredSize);
@@ -93,7 +92,7 @@ public class GUIPicture extends AbstractGUIElement {
     /**
      * {@inheritDoc}
      */
-    @Nullable
+    @NotNull
     @Override
     public Dimension getMinimumSize() {
         return new Dimension(preferredSize);
@@ -102,7 +101,7 @@ public class GUIPicture extends AbstractGUIElement {
     /**
      * {@inheritDoc}
      */
-    @Nullable
+    @NotNull
     @Override
     public Dimension getMaximumSize() {
         return new Dimension(preferredSize);

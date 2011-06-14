@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * @author nicolas
@@ -44,18 +45,18 @@ public class SpellsView extends AbstractItemView {
         this.facesManager = facesManager;
         spellsManager.addCrossfireSpellChangedListener(new SpellsManagerListener() {
             @Override
-            public void spellAdded(final Spell spell, final int index) {
+            public void spellAdded(@NotNull final Spell spell, final int index) {
                 addModifiedRange(index, spellsManager.getSpells());
             }
 
             @Override
-            public void spellRemoved(final Spell spell, final int index) {
+            public void spellRemoved(@NotNull final Spell spell, final int index) {
                 addModifiedRange(index, spellsManager.getSpells());
             }
         });
         facesManager.addFacesManagerListener(new FacesManagerListener() {
             @Override
-            public void faceUpdated(final Face face) {
+            public void faceUpdated(@NotNull final Face face) {
                 addModifiedRange(0, spellsManager.getSpells());
             }
         });
@@ -66,6 +67,7 @@ public class SpellsView extends AbstractItemView {
         return spellsManager.getSpells();
     }
 
+    @Nullable
     @Override
     public CfItem getItem(final int index) {
         final Spell spell = spellsManager.getSpell(index);

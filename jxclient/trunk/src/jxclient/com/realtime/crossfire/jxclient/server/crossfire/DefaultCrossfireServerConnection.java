@@ -4286,7 +4286,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public void sendAccountPassword(final String currentPassword, final String newPassword) {
+    public void sendAccountPassword(@NotNull final String currentPassword, @NotNull final String newPassword) {
         clearFailure();
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send accountpw");

@@ -81,6 +81,7 @@ public class GUIItemSpellList extends GUIItemItem {
 
     private boolean selected;
 
+    @NotNull
     private final ItemView spellsView;
 
     /**
@@ -144,7 +145,7 @@ public class GUIItemSpellList extends GUIItemItem {
      * @param spellsManager the spells manager instance to watch
      * @param spellsView the spells view to use
      */
-    public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @Nullable final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
+    public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
         super(tooltipManager, elementListener, name, connection, itemPainter, facesManager);
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
@@ -311,8 +312,9 @@ public class GUIItemSpellList extends GUIItemItem {
         setSpell();
     }
 
+    @NotNull
     @Override
-    protected Image getFace(final CfItem item) {
+    protected Image getFace(@NotNull final CfItem item) {
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
     }
 

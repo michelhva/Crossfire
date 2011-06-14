@@ -52,10 +52,13 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
+    @NotNull
     private final SpellsManager spellsManager;
 
+    @NotNull
     private final CurrentSpellManager currentSpellManager;
 
+    @NotNull
     private final SpellsView spellsView;
 
     /**
@@ -64,7 +67,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     @NotNull
     private final FacesManager facesManager;
 
-    public GUIItemSpellListFactory(final TooltipManager tooltipManager, final GUIElementListener elementListener, final CommandQueue commandQueue, final String name, final CrossfireServerConnection crossfireServerConnection, final ItemPainter itemPainter, final FacesManager facesManager, final SpellsManager spellsManager, final CurrentSpellManager currentSpellManager, @NotNull final SpellsView spellsView) {
+    public GUIItemSpellListFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final SpellsView spellsView) {
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.commandQueue = commandQueue;
@@ -77,6 +80,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
         this.spellsView = spellsView;
     }
 
+    @NotNull
     @Override
     public GUIElement newItem(final int index) {
         return new GUIItemSpellList(tooltipManager, elementListener, crossfireServerConnection, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellsView);
