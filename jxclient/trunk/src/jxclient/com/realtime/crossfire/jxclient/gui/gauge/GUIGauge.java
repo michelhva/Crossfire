@@ -224,7 +224,7 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      * {@inheritDoc}
      */
     @Override
-    public void setHidden(boolean hidden) {
+    public void setHidden(final boolean hidden) {
         this.hidden = hidden;
     }
 }
