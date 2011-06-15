@@ -37,6 +37,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Update a {@link CfMap} model from protocol commands.
@@ -123,20 +124,10 @@ public class MapUpdaterState {
     /**
      * Creates a new instance.
      * @param facesManager the faces manager to track for updated faces
+     * @param guiStateManager the gui state manager to watch or
+     * <code>null</code>
      */
-    public MapUpdaterState(@NotNull final FacesManager facesManager) {
-        this.facesManager = facesManager;
-        animations = new Animations(null);
-        map = new CfMap();
-        visibleAnimations = new CfMapAnimations(this);
-    }
-
-    /**
-     * Creates a new instance.
-     * @param facesManager the faces manager to track for updated faces
-     * @param guiStateManager the gui state manager to watch
-     */
-    public MapUpdaterState(@NotNull final FacesManager facesManager, @NotNull final GuiStateManager guiStateManager) {
+    public MapUpdaterState(@NotNull final FacesManager facesManager, @Nullable final GuiStateManager guiStateManager) {
         this.facesManager = facesManager;
         animations = new Animations(guiStateManager);
         map = new CfMap();

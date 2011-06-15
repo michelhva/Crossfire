@@ -501,7 +501,7 @@ public class MapUpdaterStateTest {
         defineFace(faceCache, 1, "M", PNG64X64);
         defineFace(faceCache, 2, "_", PNG32X32);
 
-        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager);
+        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, null);
 
         mapUpdaterState.processNewMap(5, 5);
         mapUpdaterState.processMapBegin();
@@ -540,7 +540,7 @@ public class MapUpdaterStateTest {
         defineFace(faceCache, 4607, "woodfloor.111", PNG32X32);
         defineFace(faceCache, 312, "behemoth.x73", PNG64X64);
 
-        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager);
+        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, null);
 
         mapUpdaterState.processNewMap(10, 10);
         mapUpdaterState.processMapBegin();
@@ -618,7 +618,7 @@ public class MapUpdaterStateTest {
         defineFace(faceCache, 7, "a.x11", PNG64X64);
         defineFace(faceCache, 8, "b.x12", PNG64X64);
 
-        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager);
+        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, null);
 
         mapUpdaterState.processNewMap(10, 10);
         mapUpdaterState.processMapBegin();
@@ -641,7 +641,7 @@ public class MapUpdaterStateTest {
     public void testDisplayArtifacts3() throws IOException {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
-        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager);
+        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, null);
 
         mapUpdaterState.processNewMap(23, 16);
         defineFace(faceCache, 1316, "demon_lord.x11", PNG128X256);
