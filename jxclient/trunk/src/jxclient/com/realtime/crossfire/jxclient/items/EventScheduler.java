@@ -130,7 +130,7 @@ public class EventScheduler {
      */
     public EventScheduler(final int delay, final int afterEventDelay, @NotNull final Runnable eventSchedulerCallback) {
         this.delay = delay;
-        this.afterEventDelay = 1/*afterEventDelay*/;
+        this.afterEventDelay = afterEventDelay;
         this.eventSchedulerCallback = eventSchedulerCallback;
         thread = new Thread(runnable);
     }
