@@ -94,6 +94,7 @@ public abstract class GaugeUpdater {
             assert gauge != null;
             gauge.setValues(curValue, minValue, maxValue, curValueString, tooltipText);
             if (hideIfEmpty) {
+                assert gauge != null;
                 gauge.setHidden(curValue == 0 && minValue == 0 && maxValue == 0);
             }
         }
