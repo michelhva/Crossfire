@@ -133,6 +133,7 @@ public class Filenames {
         try {
             return getSettingsFile("metaserver.txt");
         } catch (final IOException ex) {
+            System.err.println("Cannot access metaserver cache file: "+ex.getMessage());
             return null;
         }
     }
