@@ -55,6 +55,12 @@ public class GUIItemSpellList extends GUIItemItem {
     private final Object sync = new Object();
 
     /**
+     * The connection instance.
+     */
+    @NotNull
+    private final CrossfireServerConnection connection;
+
+    /**
      * The {@link FacesManager} for looking up faces.
      */
     @NotNull
@@ -147,6 +153,7 @@ public class GUIItemSpellList extends GUIItemItem {
      */
     public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
         super(tooltipManager, elementListener, name, connection, itemPainter, facesManager);
+        this.connection = connection;
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
         this.spellsManager = spellsManager;
@@ -210,7 +217,7 @@ public class GUIItemSpellList extends GUIItemItem {
             return;
         }
 
-        crossfireServerConnection.sendNcom(0, "cast "+spell.getName());
+        connection.sendNcom(0, "cast "+spell.getName());
         currentSpellManager.setCurrentSpell(spell);
     }
 
