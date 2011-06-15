@@ -32,18 +32,16 @@ import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.List;
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-import junit.textui.TestRunner;
 import org.jetbrains.annotations.NotNull;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * Regression tests for {@link RenderState}.
  * @author Andreas Kirschbaum
  * @noinspection MagicNumber
  */
-public class RenderStateTest extends TestCase {
+public class RenderStateTest {
 
     /**
      * Assumed height of log window.
@@ -51,33 +49,9 @@ public class RenderStateTest extends TestCase {
     private static final int HEIGHT = 104;
 
     /**
-     * Creates a new instance.
-     * @param name the test case name
-     */
-    public RenderStateTest(@NotNull final String name) {
-        super(name);
-    }
-
-    /**
-     * Creates a new test suite containing this test case.
-     * @return the new test suite
-     */
-    @NotNull
-    public static Test suite() {
-        return new TestSuite(RenderStateTest.class);
-    }
-
-    /**
-     * Runs the regression tests.
-     * @param args the command line arguments (ignored)
-     */
-    public static void main(@NotNull final String[] args) {
-        TestRunner.run(suite());
-    }
-
-    /**
      * General checks.
      */
+    @Test
     public void test1() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -115,6 +89,7 @@ public class RenderStateTest extends TestCase {
     /**
      * Checks that overflowing the buffer works as expected.
      */
+    @Test
     public void test2() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -123,7 +98,7 @@ public class RenderStateTest extends TestCase {
         final Rec rec = new Rec();
         final Parser parser = new Parser();
 
-        assertEquals(0, HEIGHT%Buffer.MIN_LINE_HEIGHT);
+        Assert.assertEquals(0, HEIGHT%Buffer.MIN_LINE_HEIGHT);
 
         rec.checkState(0, 0);
         parser.parse("xxx1", null, rec.buffer);
@@ -221,14 +196,14 @@ public class RenderStateTest extends TestCase {
                     try {
                         font = Font.createFont(Font.TRUETYPE_FONT, fis);
                     } catch (final FontFormatException ex) {
-                        fail();
+                        Assert.fail();
                         throw new AssertionError(ex);
                     }
                 } finally {
                     fis.close();
                 }
             } catch (final IOException ex) {
-                fail();
+                Assert.fail();
                 throw new AssertionError(ex);
             }
             buffer = new Buffer(new Fonts(font, font, font, font), g.getFontRenderContext(), 100);
@@ -284,7 +259,7 @@ public class RenderStateTest extends TestCase {
             final int topIndex = rs.getTopIndex();
             final int topOffset = rs.getTopOffset();
             final int scrollPos = rs.getScrollPos();
-            assertEquals(formatState(expectedTopIndex, expectedTopOffset, expectedScrollPos), formatState(topIndex, topOffset, scrollPos));
+            Assert.assertEquals(formatState(expectedTopIndex, expectedTopOffset, expectedScrollPos), formatState(topIndex, topOffset, scrollPos));
         }
 
         /**

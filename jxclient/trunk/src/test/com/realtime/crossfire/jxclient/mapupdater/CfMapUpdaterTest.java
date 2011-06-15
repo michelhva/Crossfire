@@ -33,18 +33,16 @@ import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import java.io.IOException;
 import javax.swing.ImageIcon;
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-import junit.textui.TestRunner;
 import org.jetbrains.annotations.NotNull;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * Regression tests for {@link CfMapUpdater}.
  * @author Andreas Kirschbaum
  * @noinspection MagicNumber
  */
-public class CfMapUpdaterTest extends TestCase {
+public class CfMapUpdaterTest {
 
     /**
      * A .png file of size 64x64.
@@ -492,35 +490,11 @@ public class CfMapUpdaterTest extends TestCase {
     };
 
     /**
-     * Creates a new instance.
-     * @param name the test case name
-     */
-    public CfMapUpdaterTest(@NotNull final String name) {
-        super(name);
-    }
-
-    /**
-     * Creates a new test suite containing this test case.
-     * @return the new test suite
-     */
-    @NotNull
-    public static Test suite() {
-        return new TestSuite(CfMapUpdaterTest.class);
-    }
-
-    /**
-     * Runs the regression tests.
-     * @param args the command line arguments (ignored)
-     */
-    public static void main(@NotNull final String[] args) {
-        TestRunner.run(suite());
-    }
-
-    /**
      * Checks that a cleared multi-tile face causes all affected tiles to become
      * fog-of-war.
      * @throws IOException if an error occurs
      */
+    @Test
     public void testFogOfWar1() throws IOException {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
@@ -537,23 +511,24 @@ public class CfMapUpdaterTest extends TestCase {
         mapUpdater.processMapFace(new Location(1, 1, 0), 2, true);
         mapUpdater.processMapFace(new Location(1, 1, 6), 1, true);
         mapUpdater.processMapEnd(true);
-        assertEquals(""+"[H0=_,T6=M][H0=_,T6=M]\n"+"[H0=_,T6=M][H0=_,H6=M]\n", toString(mapUpdater.getMap(), 0, 0, 2, 2));
+        Assert.assertEquals(""+"[H0=_,T6=M][H0=_,T6=M]\n"+"[H0=_,T6=M][H0=_,H6=M]\n", toString(mapUpdater.getMap(), 0, 0, 2, 2));
 
         mapUpdater.processMapBegin();
         mapUpdater.processMapClear(1, 0);
         mapUpdater.processMapEnd(true);
-        assertEquals(""+"[H0=_,T6=M][#,H0=_,T6=M]\n"+"[H0=_,T6=M][H0=_,H6=M]\n", toString(mapUpdater.getMap(), 0, 0, 2, 2));
+        Assert.assertEquals(""+"[H0=_,T6=M][#,H0=_,T6=M]\n"+"[H0=_,T6=M][H0=_,H6=M]\n", toString(mapUpdater.getMap(), 0, 0, 2, 2));
 
         mapUpdater.processMapBegin();
         mapUpdater.processMapClear(1, 1);
         mapUpdater.processMapEnd(true);
-        assertEquals(""+"[H0=_][#,H0=_,T6=M]\n"+"[H0=_][#,H0=_,H6=M]\n", toString(mapUpdater.getMap(), 0, 0, 2, 2));
+        Assert.assertEquals(""+"[H0=_][#,H0=_,T6=M]\n"+"[H0=_][#,H0=_,H6=M]\n", toString(mapUpdater.getMap(), 0, 0, 2, 2));
     }
 
     /**
      * Checks that a regression causing display artifacts is fixed.
      * @throws IOException if an error occurs
      */
+    @Test
     public void testDisplayArtifacts1() throws IOException {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
@@ -629,13 +604,14 @@ public class CfMapUpdaterTest extends TestCase {
 
         mapUpdater.getMapAnimations().tick(39);
 
-        assertEquals(""+"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111][]\n"+"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,H6=behemoth.x71][H0=woodfloor.111][#,H6=behemoth.x31]\n", toString(mapUpdater.getMap(), 7, 8, 4, 2));
+        Assert.assertEquals(""+"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111][]\n"+"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,H6=behemoth.x71][H0=woodfloor.111][#,H6=behemoth.x31]\n", toString(mapUpdater.getMap(), 7, 8, 4, 2));
     }
 
     /**
      * Checks that a regression causing display artifacts is fixed.
      * @throws IOException if an error occurs
      */
+    @Test
     public void testDisplayArtifacts2() throws IOException {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
@@ -654,13 +630,14 @@ public class CfMapUpdaterTest extends TestCase {
         mapUpdater.processMapClear(5, 10);
         mapUpdater.processMapEnd(true);
 
-        assertEquals(""+"[T6=b.x12][T6=b.x12][]\n"+"[T6=b.x12][H6=b.x12][#,H6=a.x11]\n", toString(mapUpdater.getMap(), 3, 9, 3, 2));
+        Assert.assertEquals(""+"[T6=b.x12][T6=b.x12][]\n"+"[T6=b.x12][H6=b.x12][#,H6=a.x11]\n", toString(mapUpdater.getMap(), 3, 9, 3, 2));
     }
 
     /**
      * Checks that a regression causing display artifacts is fixed.
      * @throws IOException if an error occurs
      */
+    @Test
     public void testDisplayArtifacts3() throws IOException {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
@@ -697,12 +674,12 @@ public class CfMapUpdaterTest extends TestCase {
         mapUpdater.processMapScroll(-1, 0);
         mapUpdater.processMapFace(new Location(9, 17, 6), 1316, true);
         mapUpdater.processMapEnd(true);
-        assertEquals(""+"[][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][][][]\n", toString(mapUpdater.getMap(), 5, 10, 9, 1));
+        Assert.assertEquals(""+"[][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][][][]\n", toString(mapUpdater.getMap(), 5, 10, 9, 1));
 
         mapUpdater.processMapBegin();
         mapUpdater.processMapScroll(-1, 0);
         mapUpdater.processMapFace(new Location(11, 17, 6), 1316, true);
-        assertEquals(""+"[][][][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][]\n", toString(mapUpdater.getMap(), 5, 10, 9, 1));
+        Assert.assertEquals(""+"[][][][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][]\n", toString(mapUpdater.getMap(), 5, 10, 9, 1));
     }
 
     /**
@@ -780,12 +757,12 @@ public class CfMapUpdaterTest extends TestCase {
         try {
             originalImageIcon = new ImageIcon(data);
         } catch (final IllegalArgumentException ex) {
-            fail("Invalid .png data for face "+face+": "+ex.getMessage());
+            Assert.fail("Invalid .png data for face "+face+": "+ex.getMessage());
             throw new AssertionError(ex);
         }
 
         if (originalImageIcon.getIconWidth() <= 0 || originalImageIcon.getIconHeight() <= 0) {
-            fail("Invalid .png size for face "+face);
+            Assert.fail("Invalid .png size for face "+face);
             throw new AssertionError();
         }
 

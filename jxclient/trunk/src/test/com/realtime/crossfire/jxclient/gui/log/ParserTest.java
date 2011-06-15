@@ -32,46 +32,20 @@ import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Iterator;
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-import junit.textui.TestRunner;
 import org.jetbrains.annotations.NotNull;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * Regression tests for {@link Parser}.
  * @author Andreas Kirschbaum
  */
-public class ParserTest extends TestCase {
-
-    /**
-     * Creates a new instance.
-     * @param name the test case name
-     */
-    public ParserTest(@NotNull final String name) {
-        super(name);
-    }
-
-    /**
-     * Creates a new test suite containing this test case.
-     * @return the new test suite
-     */
-    @NotNull
-    public static Test suite() {
-        return new TestSuite(ParserTest.class);
-    }
-
-    /**
-     * Runs the regression tests.
-     * @param args the command line arguments (ignored)
-     */
-    public static void main(@NotNull final String[] args) {
-        TestRunner.run(suite());
-    }
+public class ParserTest {
 
     /**
      * Checks that an empty string does not add anything.
      */
+    @Test
     public void testEmpty() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -85,6 +59,7 @@ public class ParserTest extends TestCase {
     /**
      * Checks that unknown attributes are ignored.
      */
+    @Test
     public void testAttributesIgnore() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -98,6 +73,7 @@ public class ParserTest extends TestCase {
     /**
      * Checks that attributes are correctly parsed.
      */
+    @Test
     public void testAttributes1() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -120,6 +96,7 @@ public class ParserTest extends TestCase {
     /**
      * Checks that attributes are correctly parsed.
      */
+    @Test
     public void testAttributes2() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -134,6 +111,7 @@ public class ParserTest extends TestCase {
     /**
      * Checks that font attributes are correctly parsed.
      */
+    @Test
     public void testAttributesFont1() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -148,6 +126,7 @@ public class ParserTest extends TestCase {
      * Checks that font attributes are correctly parsed: [/fixed] is
      * undefined/does not end [fixed] block.
      */
+    @Test
     public void testAttributesFont2() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -161,6 +140,7 @@ public class ParserTest extends TestCase {
     /**
      * Checks that color attributes are correctly parsed.
      */
+    @Test
     public void testAttributesColor() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -174,6 +154,7 @@ public class ParserTest extends TestCase {
     /**
      * Checks that attributes are reset for each message.
      */
+    @Test
     public void testAttributesReset() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -188,6 +169,7 @@ public class ParserTest extends TestCase {
     /**
      * Checks that multi-line messages are correctly parsed.
      */
+    @Test
     public void testMultiLine() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -201,6 +183,7 @@ public class ParserTest extends TestCase {
     /**
      * Checks that an un-closed tag is dropped.
      */
+    @Test
     public void testDropUnClosedTag() {
         if (GraphicsEnvironment.isHeadless()) {
             return;
@@ -245,14 +228,14 @@ public class ParserTest extends TestCase {
                     try {
                         font = Font.createFont(Font.TRUETYPE_FONT, fis);
                     } catch (final FontFormatException ex) {
-                        fail(ex.getMessage());
+                        Assert.fail(ex.getMessage());
                         throw new AssertionError(ex);
                     }
                 } finally {
                     fis.close();
                 }
             } catch (final IOException ex) {
-                fail(ex.getMessage());
+                Assert.fail(ex.getMessage());
                 throw new AssertionError(ex);
             }
             buffer = new Buffer(new Fonts(font, font, font, font), g.getFontRenderContext(), 100);
@@ -264,7 +247,7 @@ public class ParserTest extends TestCase {
          * @param expected the expected buffer contents
          */
         private void checkResult(@NotNull final String expected) {
-            assertEquals(expected, dumpBuffer());
+            Assert.assertEquals(expected, dumpBuffer());
         }
 
         /**

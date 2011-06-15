@@ -21,56 +21,29 @@
 
 package com.realtime.crossfire.jxclient.util;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-import junit.textui.TestRunner;
-import org.jetbrains.annotations.NotNull;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * Regression tests for class {@link StringSplitter}.
  * @author Andreas Kirschbaum
  */
-public class StringSplitterTest extends TestCase {
-
-    /**
-     * Creates a new instance.
-     * @param name the test case name
-     */
-    public StringSplitterTest(@NotNull final String name) {
-        super(name);
-    }
-
-    /**
-     * Creates a new test suite containing this test case.
-     * @return the new test suite
-     */
-    @NotNull
-    public static Test suite() {
-        return new TestSuite(StringSplitterTest.class);
-    }
-
-    /**
-     * Runs the regression tests.
-     * @param args the command line arguments (ignored)
-     */
-    public static void main(@NotNull final String[] args) {
-        TestRunner.run(suite());
-    }
+public class StringSplitterTest {
 
     /**
      * Checks that {@link StringSplitter#splitAsHtml(String)} does work.
      */
+    @Test
     public void testSplit() {
-        assertEquals("", StringSplitter.splitAsHtml(""));
-        assertEquals("a", StringSplitter.splitAsHtml("a"));
-        assertEquals("abc", StringSplitter.splitAsHtml("abc"));
-        assertEquals("a b c", StringSplitter.splitAsHtml("a b c"));
-        assertEquals("a  b  c", StringSplitter.splitAsHtml("  a  b  c  "));
+        Assert.assertEquals("", StringSplitter.splitAsHtml(""));
+        Assert.assertEquals("a", StringSplitter.splitAsHtml("a"));
+        Assert.assertEquals("abc", StringSplitter.splitAsHtml("abc"));
+        Assert.assertEquals("a b c", StringSplitter.splitAsHtml("a b c"));
+        Assert.assertEquals("a  b  c", StringSplitter.splitAsHtml("  a  b  c  "));
 
-        assertEquals("a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+"A B C D E", StringSplitter.splitAsHtml("a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E"));
-        assertEquals("a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+"A B C D E F G H I J K L M N O P Q R S T U V W X Y<br>"+"a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+"A B C D E", StringSplitter.splitAsHtml("a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E F G H I J K L M N O P Q R S T U V W X Y a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E"));
-        assertEquals("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>"+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>"+"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc<br>"+"cccccccccccccccccccc ddddddddddddddddddddddddddddd<br>"+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee<br>"+"ffffffffffffffffffffffffffffff<br>"+"gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg<br>"+"gggggggggggggggggggg", StringSplitter.splitAsHtml("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc ddddddddddddddddddddddddddddd eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee ffffffffffffffffffffffffffffff gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"));
+        Assert.assertEquals("a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+"A B C D E", StringSplitter.splitAsHtml("a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E"));
+        Assert.assertEquals("a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+"A B C D E F G H I J K L M N O P Q R S T U V W X Y<br>"+"a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+"A B C D E", StringSplitter.splitAsHtml("a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E F G H I J K L M N O P Q R S T U V W X Y a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E"));
+        Assert.assertEquals("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>"+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>"+"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc<br>"+"cccccccccccccccccccc ddddddddddddddddddddddddddddd<br>"+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee<br>"+"ffffffffffffffffffffffffffffff<br>"+"gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg<br>"+"gggggggggggggggggggg", StringSplitter.splitAsHtml("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc ddddddddddddddddddddddddddddd eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee ffffffffffffffffffffffffffffff gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"));
     }
 
 }
