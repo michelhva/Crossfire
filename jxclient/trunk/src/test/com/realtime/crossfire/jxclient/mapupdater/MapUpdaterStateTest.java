@@ -38,11 +38,11 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Regression tests for {@link CfMapUpdater}.
+ * Regression tests for {@link MapUpdaterState}.
  * @author Andreas Kirschbaum
  * @noinspection MagicNumber
  */
-public class CfMapUpdaterTest {
+public class MapUpdaterStateTest {
 
     /**
      * A .png file of size 64x64.
@@ -501,27 +501,27 @@ public class CfMapUpdaterTest {
         defineFace(faceCache, 1, "M", PNG64X64);
         defineFace(faceCache, 2, "_", PNG32X32);
 
-        final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
+        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager);
 
-        mapUpdater.processNewMap(5, 5);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(0, 0, 0), 2, true);
-        mapUpdater.processMapFace(new Location(1, 0, 0), 2, true);
-        mapUpdater.processMapFace(new Location(0, 1, 0), 2, true);
-        mapUpdater.processMapFace(new Location(1, 1, 0), 2, true);
-        mapUpdater.processMapFace(new Location(1, 1, 6), 1, true);
-        mapUpdater.processMapEnd(true);
-        Assert.assertEquals(""+"[H0=_,T6=M][H0=_,T6=M]\n"+"[H0=_,T6=M][H0=_,H6=M]\n", toString(mapUpdater.getMap(), 0, 0, 2, 2));
+        mapUpdaterState.processNewMap(5, 5);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(0, 0, 0), 2, true);
+        mapUpdaterState.processMapFace(new Location(1, 0, 0), 2, true);
+        mapUpdaterState.processMapFace(new Location(0, 1, 0), 2, true);
+        mapUpdaterState.processMapFace(new Location(1, 1, 0), 2, true);
+        mapUpdaterState.processMapFace(new Location(1, 1, 6), 1, true);
+        mapUpdaterState.processMapEnd(true);
+        Assert.assertEquals(""+"[H0=_,T6=M][H0=_,T6=M]\n"+"[H0=_,T6=M][H0=_,H6=M]\n", toString(mapUpdaterState.getMap(), 0, 0, 2, 2));
 
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapClear(1, 0);
-        mapUpdater.processMapEnd(true);
-        Assert.assertEquals(""+"[H0=_,T6=M][#,H0=_,T6=M]\n"+"[H0=_,T6=M][H0=_,H6=M]\n", toString(mapUpdater.getMap(), 0, 0, 2, 2));
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapClear(1, 0);
+        mapUpdaterState.processMapEnd(true);
+        Assert.assertEquals(""+"[H0=_,T6=M][#,H0=_,T6=M]\n"+"[H0=_,T6=M][H0=_,H6=M]\n", toString(mapUpdaterState.getMap(), 0, 0, 2, 2));
 
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapClear(1, 1);
-        mapUpdater.processMapEnd(true);
-        Assert.assertEquals(""+"[H0=_][#,H0=_,T6=M]\n"+"[H0=_][#,H0=_,H6=M]\n", toString(mapUpdater.getMap(), 0, 0, 2, 2));
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapClear(1, 1);
+        mapUpdaterState.processMapEnd(true);
+        Assert.assertEquals(""+"[H0=_][#,H0=_,T6=M]\n"+"[H0=_][#,H0=_,H6=M]\n", toString(mapUpdaterState.getMap(), 0, 0, 2, 2));
     }
 
     /**
@@ -540,71 +540,71 @@ public class CfMapUpdaterTest {
         defineFace(faceCache, 4607, "woodfloor.111", PNG32X32);
         defineFace(faceCache, 312, "behemoth.x73", PNG64X64);
 
-        final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
+        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager);
 
-        mapUpdater.processNewMap(10, 10);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(7, 8, 0), 4607, true);
-        mapUpdater.processMapFace(new Location(8, 8, 0), 4607, true);
-        mapUpdater.processMapFace(new Location(9, 8, 0), 4607, true);
-        mapUpdater.processMapFace(new Location(7, 9, 0), 4607, true);
-        mapUpdater.processMapFace(new Location(8, 9, 0), 4607, true);
-        mapUpdater.processMapFace(new Location(9, 9, 0), 4607, true);
-        mapUpdater.processMapFace(new Location(9, 9, 6), 312, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.processNewMap(10, 10);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(7, 8, 0), 4607, true);
+        mapUpdaterState.processMapFace(new Location(8, 8, 0), 4607, true);
+        mapUpdaterState.processMapFace(new Location(9, 8, 0), 4607, true);
+        mapUpdaterState.processMapFace(new Location(7, 9, 0), 4607, true);
+        mapUpdaterState.processMapFace(new Location(8, 9, 0), 4607, true);
+        mapUpdaterState.processMapFace(new Location(9, 9, 0), 4607, true);
+        mapUpdaterState.processMapFace(new Location(9, 9, 6), 312, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.getMapAnimations().tick(26);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(9, 9, 6), 307, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.getMapAnimations().tick(26);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(9, 9, 6), 307, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.getMapAnimations().tick(27);
-        mapUpdater.getMapAnimations().tick(28);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(9, 9, 6), 308, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.getMapAnimations().tick(27);
+        mapUpdaterState.getMapAnimations().tick(28);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(9, 9, 6), 308, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.getMapAnimations().tick(29);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(0, 5, 6), 0, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.getMapAnimations().tick(29);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(0, 5, 6), 0, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.getMapAnimations().tick(30);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(9, 9, 6), 309, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.getMapAnimations().tick(30);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(9, 9, 6), 309, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.getMapAnimations().tick(31);
-        mapUpdater.getMapAnimations().tick(32);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(9, 9, 6), 308, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.getMapAnimations().tick(31);
+        mapUpdaterState.getMapAnimations().tick(32);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(9, 9, 6), 308, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.getMapAnimations().tick(33);
-        mapUpdater.getMapAnimations().tick(34);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(9, 9, 6), 0, true);
-        mapUpdater.processMapFace(new Location(10, 9, 6), 307, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.getMapAnimations().tick(33);
+        mapUpdaterState.getMapAnimations().tick(34);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(9, 9, 6), 0, true);
+        mapUpdaterState.processMapFace(new Location(10, 9, 6), 307, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.getMapAnimations().tick(35);
-        mapUpdater.getMapAnimations().tick(36);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(0, 6, 6), 932, true);
-        mapUpdater.processMapFace(new Location(9, 9, 6), 312, true);
-        mapUpdater.processMapClear(10, 9);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.getMapAnimations().tick(35);
+        mapUpdaterState.getMapAnimations().tick(36);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(0, 6, 6), 932, true);
+        mapUpdaterState.processMapFace(new Location(9, 9, 6), 312, true);
+        mapUpdaterState.processMapClear(10, 9);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.getMapAnimations().tick(37);
-        mapUpdater.getMapAnimations().tick(38);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(8, 9, 6), 310, true);
-        mapUpdater.processMapFace(new Location(9, 9, 6), 0, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.getMapAnimations().tick(37);
+        mapUpdaterState.getMapAnimations().tick(38);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(8, 9, 6), 310, true);
+        mapUpdaterState.processMapFace(new Location(9, 9, 6), 0, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.getMapAnimations().tick(39);
+        mapUpdaterState.getMapAnimations().tick(39);
 
-        Assert.assertEquals(""+"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111][]\n"+"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,H6=behemoth.x71][H0=woodfloor.111][#,H6=behemoth.x31]\n", toString(mapUpdater.getMap(), 7, 8, 4, 2));
+        Assert.assertEquals(""+"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111][]\n"+"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,H6=behemoth.x71][H0=woodfloor.111][#,H6=behemoth.x31]\n", toString(mapUpdaterState.getMap(), 7, 8, 4, 2));
     }
 
     /**
@@ -618,19 +618,19 @@ public class CfMapUpdaterTest {
         defineFace(faceCache, 7, "a.x11", PNG64X64);
         defineFace(faceCache, 8, "b.x12", PNG64X64);
 
-        final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
+        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager);
 
-        mapUpdater.processNewMap(10, 10);
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(5, 10, 6), 7, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.processNewMap(10, 10);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(5, 10, 6), 7, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(4, 10, 6), 8, true);
-        mapUpdater.processMapClear(5, 10);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(4, 10, 6), 8, true);
+        mapUpdaterState.processMapClear(5, 10);
+        mapUpdaterState.processMapEnd(true);
 
-        Assert.assertEquals(""+"[T6=b.x12][T6=b.x12][]\n"+"[T6=b.x12][H6=b.x12][#,H6=a.x11]\n", toString(mapUpdater.getMap(), 3, 9, 3, 2));
+        Assert.assertEquals(""+"[T6=b.x12][T6=b.x12][]\n"+"[T6=b.x12][H6=b.x12][#,H6=a.x11]\n", toString(mapUpdaterState.getMap(), 3, 9, 3, 2));
     }
 
     /**
@@ -641,45 +641,45 @@ public class CfMapUpdaterTest {
     public void testDisplayArtifacts3() throws IOException {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
-        final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager);
+        final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager);
 
-        mapUpdater.processNewMap(23, 16);
+        mapUpdaterState.processNewMap(23, 16);
         defineFace(faceCache, 1316, "demon_lord.x11", PNG128X256);
 
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(new Location(4, 17, 6), 1316, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapFace(new Location(4, 17, 6), 1316, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapScroll(-1, 0);
-        mapUpdater.processMapFace(new Location(5, 17, 6), 1316, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapScroll(-1, 0);
+        mapUpdaterState.processMapFace(new Location(5, 17, 6), 1316, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapClear(5, 17);
-        mapUpdater.processMapFace(new Location(6, 17, 6), 1316, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapClear(5, 17);
+        mapUpdaterState.processMapFace(new Location(6, 17, 6), 1316, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapScroll(-1, 0);
-        mapUpdater.processMapFace(new Location(7, 17, 6), 1316, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapScroll(-1, 0);
+        mapUpdaterState.processMapFace(new Location(7, 17, 6), 1316, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapScroll(-1, 0);
-        mapUpdater.processMapFace(new Location(8, 17, 6), 1316, true);
-        mapUpdater.processMapEnd(true);
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapScroll(-1, 0);
+        mapUpdaterState.processMapFace(new Location(8, 17, 6), 1316, true);
+        mapUpdaterState.processMapEnd(true);
 
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapScroll(-1, 0);
-        mapUpdater.processMapFace(new Location(9, 17, 6), 1316, true);
-        mapUpdater.processMapEnd(true);
-        Assert.assertEquals(""+"[][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][][][]\n", toString(mapUpdater.getMap(), 5, 10, 9, 1));
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapScroll(-1, 0);
+        mapUpdaterState.processMapFace(new Location(9, 17, 6), 1316, true);
+        mapUpdaterState.processMapEnd(true);
+        Assert.assertEquals(""+"[][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][][][]\n", toString(mapUpdaterState.getMap(), 5, 10, 9, 1));
 
-        mapUpdater.processMapBegin();
-        mapUpdater.processMapScroll(-1, 0);
-        mapUpdater.processMapFace(new Location(11, 17, 6), 1316, true);
-        Assert.assertEquals(""+"[][][][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][]\n", toString(mapUpdater.getMap(), 5, 10, 9, 1));
+        mapUpdaterState.processMapBegin();
+        mapUpdaterState.processMapScroll(-1, 0);
+        mapUpdaterState.processMapFace(new Location(11, 17, 6), 1316, true);
+        Assert.assertEquals(""+"[][][][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][]\n", toString(mapUpdaterState.getMap(), 5, 10, 9, 1));
     }
 
     /**

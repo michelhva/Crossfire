@@ -27,7 +27,7 @@ import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
@@ -105,10 +105,10 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
     private final Iterable<Spell> spellsManager;
 
     /**
-     * The {@link CfMapUpdater} instance to use.
+     * The {@link MapUpdaterState} instance to use.
      */
     @NotNull
-    private final CfMapUpdater mapUpdater;
+    private final MapUpdaterState mapUpdaterState;
 
     /**
      * The {@link SkillSet} for looking up skill names.
@@ -211,11 +211,11 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      * @param floorView the floor view to use
      * @param itemSet the item set instance to use
      * @param spellsManager the spells manager instance to use
-     * @param mapUpdater the map updater instance to use
+     * @param mapUpdaterState the map updater state instance to use
      * @param skillSet the skill set for looking up skill names
      * @throws IOException if the script cannot be created
      */
-    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final FloorView floorView, @NotNull final ItemSet itemSet, @NotNull final Iterable<Spell> spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) throws IOException {
+    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final FloorView floorView, @NotNull final ItemSet itemSet, @NotNull final Iterable<Spell> spellsManager, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final SkillSet skillSet) throws IOException {
         this.scriptId = scriptId;
         this.filename = filename;
         this.commandQueue = commandQueue;
@@ -224,7 +224,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         this.floorView = floorView;
         this.itemSet = itemSet;
         this.spellsManager = spellsManager;
-        this.mapUpdater = mapUpdater;
+        this.mapUpdaterState = mapUpdaterState;
         this.skillSet = skillSet;
         packetWatcher = new PacketWatcher(crossfireServerConnection, this);
         final Runtime rt = Runtime.getRuntime();
@@ -477,20 +477,20 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             }
             commandSent("request items cont end");
         } else if (params.equals("map pos")) {
-            commandSent("request map pos "+mapUpdater.getWidth()/2+" "+mapUpdater.getHeight()/2);
+            commandSent("request map pos "+mapUpdaterState.getWidth()/2+" "+mapUpdaterState.getHeight()/2);
         } else if (params.equals("map near")) {
-            final CfMap map = mapUpdater.getMap();
-            final int centerX = mapUpdater.getWidth()/2;
-            final int centerY = mapUpdater.getHeight()/2;
+            final CfMap map = mapUpdaterState.getMap();
+            final int centerX = mapUpdaterState.getWidth()/2;
+            final int centerY = mapUpdaterState.getHeight()/2;
             for (int y = -1; y <= +1; y++) {
                 for (int x = -1; x <= +1; x++) {
                     commandSentMap(map, centerX+x, centerY+y);
                 }
             }
         } else if (params.equals("map all")) {
-            final CfMap map = mapUpdater.getMap();
-            final int width = mapUpdater.getWidth()/2;
-            final int height = mapUpdater.getHeight()/2;
+            final CfMap map = mapUpdaterState.getMap();
+            final int width = mapUpdaterState.getWidth()/2;
+            final int height = mapUpdaterState.getHeight()/2;
             for (int y = 0; y < height; y++) {
                 for (int x = 0; x < width; x++) {
                     commandSentMap(map, x, y);
@@ -519,7 +519,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 return;
             }
 
-            commandSentMap(mapUpdater.getMap(), x, y);
+            commandSentMap(mapUpdaterState.getMap(), x, y);
         } else if (params.equals("skills")) {
             for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++) {
                 final Object skill = skillSet.getSkill(i);

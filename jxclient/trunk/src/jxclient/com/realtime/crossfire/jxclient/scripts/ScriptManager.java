@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
@@ -80,10 +80,10 @@ public class ScriptManager {
     private final Iterable<Spell> spellsManager;
 
     /**
-     * The {@link CfMapUpdater} instance to use.
+     * The {@link MapUpdaterState} instance to use.
      */
     @NotNull
-    private final CfMapUpdater mapUpdater;
+    private final MapUpdaterState mapUpdaterState;
 
     /**
      * The {@link SkillSet} for looking up skill names.
@@ -110,17 +110,17 @@ public class ScriptManager {
      * @param floorView the floor view to use
      * @param itemSet the item set instance to use
      * @param spellsManager the spells manager instance to use
-     * @param mapUpdater the map updater instance to use
+     * @param mapUpdaterState the map updater state instance to use
      * @param skillSet the skill set for looking up skill names
      */
-    public ScriptManager(@NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final FloorView floorView, @NotNull final ItemSet itemSet, @NotNull final Iterable<Spell> spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) {
+    public ScriptManager(@NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final FloorView floorView, @NotNull final ItemSet itemSet, @NotNull final Iterable<Spell> spellsManager, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final SkillSet skillSet) {
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
         this.floorView = floorView;
         this.itemSet = itemSet;
         this.spellsManager = spellsManager;
-        this.mapUpdater = mapUpdater;
+        this.mapUpdaterState = mapUpdaterState;
         this.skillSet = skillSet;
     }
 
@@ -131,7 +131,7 @@ public class ScriptManager {
     public void newScript(@NotNull final String command) {
         final DefaultScriptProcess scriptProcess;
         try {
-            scriptProcess = new DefaultScriptProcess(nextScriptId, command, commandQueue, crossfireServerConnection, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
+            scriptProcess = new DefaultScriptProcess(nextScriptId, command, commandQueue, crossfireServerConnection, stats, floorView, itemSet, spellsManager, mapUpdaterState, skillSet);
         } catch (final IOException ex) {
             crossfireServerConnection.drawInfo("Unable to run script: "+ex.getMessage(), CrossfireDrawinfoListener.NDI_RED);
             return;

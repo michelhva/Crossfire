@@ -29,9 +29,9 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapListener;
 import com.realtime.crossfire.jxclient.mapupdater.MapScrollListener;
+import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
@@ -66,10 +66,10 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link CfMapUpdater} instance to display.
+     * The {@link MapUpdaterState} instance to display.
      */
     @NotNull
-    private final CfMapUpdater mapUpdater;
+    private final MapUpdaterState mapUpdaterState;
 
     /**
      * The {@link FacesProvider} for looking up faces.
@@ -281,20 +281,20 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param mapUpdater the map updater instance to use
+     * @param mapUpdaterState the map updater state instance to use
      * @param facesProvider the faces provider for looking up faces
      */
-    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider) {
+    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider) {
         super(tooltipManager, elementListener, name, Transparency.OPAQUE);
         tileSize = facesProvider.getSize();
         assert tileSize > 0;
-        this.mapUpdater = mapUpdater;
+        this.mapUpdaterState = mapUpdaterState;
         this.facesProvider = facesProvider;
-        this.mapUpdater.addMapSizeListener(mapSizeListener);
-        this.mapUpdater.addCrossfireMapListener(mapListener);
-        this.mapUpdater.addCrossfireNewmapListener(newmapListener);
-        this.mapUpdater.addCrossfireMapScrollListener(mapscrollListener);
-        setMapSize(mapUpdater.getWidth(), mapUpdater.getHeight());
+        this.mapUpdaterState.addMapSizeListener(mapSizeListener);
+        this.mapUpdaterState.addCrossfireMapListener(mapListener);
+        this.mapUpdaterState.addCrossfireNewmapListener(newmapListener);
+        this.mapUpdaterState.addCrossfireMapScrollListener(mapscrollListener);
+        setMapSize(this.mapUpdaterState.getWidth(), this.mapUpdaterState.getHeight());
     }
 
     /**
@@ -303,10 +303,10 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     @Override
     public void dispose() {
         super.dispose();
-        mapUpdater.removeMapSizeListener(mapSizeListener);
-        mapUpdater.removeCrossfireNewmapListener(newmapListener);
-        mapUpdater.removeCrossfireMapScrollListener(mapscrollListener);
-        mapUpdater.removeCrossfireMapListener(mapListener);
+        mapUpdaterState.removeMapSizeListener(mapSizeListener);
+        mapUpdaterState.removeCrossfireNewmapListener(newmapListener);
+        mapUpdaterState.removeCrossfireMapScrollListener(mapscrollListener);
+        mapUpdaterState.removeCrossfireMapListener(mapListener);
     }
 
     /**
@@ -316,7 +316,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         synchronized (bufferedImageSync) {
             final Graphics g = createBufferGraphics();
             try {
-                redrawTiles(g, mapUpdater.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
+                redrawTiles(g, mapUpdaterState.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
             } finally {
                 g.dispose();
             }
@@ -584,7 +584,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * @param dy the y-distance
      */
     private void updateScrolledMap(@NotNull final Graphics g, final int dx, final int dy) {
-        final CfMap map = mapUpdater.getMap();
+        final CfMap map = mapUpdaterState.getMap();
         //noinspection SynchronizationOnLocalVariableOrMethodParameter
         synchronized (map) {
             if (Math.abs(dx)*tileSize >= getWidth() || Math.abs(dy)*tileSize >= getHeight()) {
