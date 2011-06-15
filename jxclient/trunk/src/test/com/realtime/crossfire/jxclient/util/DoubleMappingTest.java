@@ -21,47 +21,21 @@
 
 package com.realtime.crossfire.jxclient.util;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-import junit.textui.TestRunner;
 import org.jetbrains.annotations.NotNull;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * Regression tests for class {@link DoubleMapping}.
  * @author Andreas Kirschbaum
  */
-public class DoubleMappingTest extends TestCase {
-
-    /**
-     * Creates a new instance.
-     * @param name the test case name
-     */
-    public DoubleMappingTest(@NotNull final String name) {
-        super(name);
-    }
-
-    /**
-     * Creates a new test suite containing this test case.
-     * @return the new test suite
-     */
-    @NotNull
-    public static Test suite() {
-        return new TestSuite(DoubleMappingTest.class);
-    }
-
-    /**
-     * Runs the regression tests.
-     * @param args the command line arguments (ignored)
-     */
-    public static void main(@NotNull final String[] args) {
-        TestRunner.run(suite());
-    }
+public class DoubleMappingTest {
 
     /**
      * Checks that basic operations for on {@link DoubleMapping} instances do
      * work.
      */
+    @Test
     public void test1() {
         final DoubleMapping doubleMapping = new DoubleMapping();
         doubleMapping.insert(0, 0);
@@ -89,8 +63,8 @@ public class DoubleMappingTest extends TestCase {
     private static void check(@NotNull final DoubleMapping doubleMapping, @NotNull final int... values) {
         for (int i = 0; i < values.length; i++) {
             final int dst = doubleMapping.getDst(i);
-            assertEquals("index "+i, values[i], dst);
-            assertEquals("index "+i, i, doubleMapping.getSrc(dst));
+            Assert.assertEquals("index "+i, values[i], dst);
+            Assert.assertEquals("index "+i, i, doubleMapping.getSrc(dst));
         }
     }
 

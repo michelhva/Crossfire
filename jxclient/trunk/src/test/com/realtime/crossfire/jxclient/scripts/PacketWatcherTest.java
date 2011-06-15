@@ -27,46 +27,20 @@ import com.realtime.crossfire.jxclient.test.TestCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.test.TestScriptProcess;
 import java.util.ArrayList;
 import java.util.Collection;
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-import junit.textui.TestRunner;
 import org.jetbrains.annotations.NotNull;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * Regression tests for {@link PacketWatcher}.
  * @author Andreas Kirschbaum
  */
-public class PacketWatcherTest extends TestCase {
-
-    /**
-     * Creates a new instance.
-     * @param name the test case name
-     */
-    public PacketWatcherTest(@NotNull final String name) {
-        super(name);
-    }
-
-    /**
-     * Creates a new test suite containing this test case.
-     * @return the new test suite
-     */
-    @NotNull
-    public static Test suite() {
-        return new TestSuite(PacketWatcherTest.class);
-    }
-
-    /**
-     * Runs the regression tests.
-     * @param args the command line arguments (ignored)
-     */
-    public static void main(@NotNull final String[] args) {
-        TestRunner.run(suite());
-    }
+public class PacketWatcherTest {
 
     /**
      * Checks that {@link PacketWatcher#addCommand(String)} does work.
      */
+    @Test
     public void test1() {
         final Collection<ReceivedPacketListener> listeners = new ArrayList<ReceivedPacketListener>();
         final CrossfireServerConnection connection = new TestCrossfireServerConnection() {
@@ -96,7 +70,7 @@ public class PacketWatcherTest extends TestCase {
         for (final ReceivedPacketListener listener : listeners) {
             listener.processEmpty("command");
         }
-        assertEquals("", sb.toString());
+        Assert.assertEquals("", sb.toString());
 
         packetWatcher.addCommand("command");
 
@@ -106,7 +80,7 @@ public class PacketWatcherTest extends TestCase {
             listener.processEmpty("command");
             listener.processEmpty("commandx");
         }
-        assertEquals("watch command\n"+"watch commandx\n", sb.toString());
+        Assert.assertEquals("watch command\n"+"watch commandx\n", sb.toString());
     }
 
 }

@@ -21,49 +21,23 @@
 
 package com.realtime.crossfire.jxclient.gui.gauge;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-import junit.textui.TestRunner;
 import org.jetbrains.annotations.NotNull;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * Regression tests for class {@link Orientation} and implementing classes.
  * @author Andreas Kirschbaum
  * @noinspection MagicNumber
  */
-public class OrientationTest extends TestCase {
-
-    /**
-     * Creates a new instance.
-     * @param name the test case name
-     */
-    public OrientationTest(@NotNull final String name) {
-        super(name);
-    }
-
-    /**
-     * Creates a new test suite containing this test case.
-     * @return the new test suite
-     */
-    @NotNull
-    public static Test suite() {
-        return new TestSuite(OrientationTest.class);
-    }
-
-    /**
-     * Runs the regression tests.
-     * @param args the command line arguments (ignored)
-     */
-    public static void main(@NotNull final String[] args) {
-        TestRunner.run(suite());
-    }
+public class OrientationTest {
 
     /**
      * Checks that {@link Orientation} instances work correctly.
      * @throws IllegalAccessException if the test failed
      * @throws InstantiationException if the test failed
      */
+    @Test
     public void testOrientations() throws IllegalAccessException, InstantiationException {
         check(OrientationWE.class, true, false);
         check(OrientationEW.class, true, true);
@@ -143,12 +117,12 @@ public class OrientationTest extends TestCase {
         final int isY = useX ? o.getY() : o.getX();
         final int isW = useX ? o.getW() : o.getH();
         final int isH = useX ? o.getH() : o.getW();
-        assertEquals(valid, o.isValid());
-        assertEquals(flip ? 100-x-w : x, isX);
-        assertEquals(y, isY);
-        assertEquals(w, isW);
-        assertEquals(h, isH);
-        assertEquals(negativeImage, o.isNegativeImage());
+        Assert.assertEquals(valid, o.isValid());
+        Assert.assertEquals(flip ? 100-x-w : x, isX);
+        Assert.assertEquals(y, isY);
+        Assert.assertEquals(w, isW);
+        Assert.assertEquals(h, isH);
+        Assert.assertEquals(negativeImage, o.isNegativeImage());
     }
 
 }
