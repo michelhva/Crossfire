@@ -80,9 +80,8 @@ public abstract class GUILabel extends AbstractLabel {
      * @param y0 The y-coordinate to draw to.
      * @param h0 The line height.
      * @param text The text to draw.
-     * @return The line height.
      */
-    protected int drawLine(@NotNull final Graphics2D g, final int y0, final int h0, @NotNull final String text) {
+    protected void drawLine(@NotNull final Graphics2D g, final int y0, final int h0, @NotNull final String text) {
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.setFont(getTextFont());
         g.setColor(getTextColor());
@@ -101,8 +100,6 @@ public abstract class GUILabel extends AbstractLabel {
             g.drawString(text, (int)Math.round(getWidth()-rectangle.getWidth()), y);
             break;
         }
-
-        return (int)Math.round(rectangle.getHeight());
     }
 
 }
