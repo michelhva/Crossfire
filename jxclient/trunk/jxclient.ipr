@@ -686,9 +686,6 @@
           <option name="m_reportCollectionMethods" value="true" />
           <option name="m_ignorePrivateMethods" value="false" />
         </inspection_tool>
-        <inspection_tool class="ReturnOfCollectionField" enabled="true" level="WARNING" enabled_by_default="true">
-          <option name="ignorePrivateMethods" value="true" />
-        </inspection_tool>
         <inspection_tool class="ReturnOfDateField" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="ReuseOfLocalVariable" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="SafeLock" enabled="true" level="WARNING" enabled_by_default="true" />
