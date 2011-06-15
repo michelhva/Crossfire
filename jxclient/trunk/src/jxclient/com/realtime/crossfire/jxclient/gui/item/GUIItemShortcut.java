@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
+import com.realtime.crossfire.jxclient.gui.Modifiers;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
@@ -245,8 +246,12 @@ public class GUIItemShortcut extends GUIItem {
      */
     @Override
     public void button1Clicked(final int modifiers) {
-        if (shortcut != null) {
-            shortcut.execute();
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            if (shortcut != null) {
+                shortcut.execute();
+            }
+            break;
         }
     }
 
@@ -255,9 +260,13 @@ public class GUIItemShortcut extends GUIItem {
      */
     @Override
     public void button2Clicked(final int modifiers) {
-        if (shortcut != null && shortcut instanceof ShortcutSpell) {
-            final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
-            shortcutSpell.setCast(!shortcutSpell.isCast());
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            if (shortcut != null && shortcut instanceof ShortcutSpell) {
+                final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
+                shortcutSpell.setCast(!shortcutSpell.isCast());
+            }
+            break;
         }
     }
 
@@ -266,12 +275,16 @@ public class GUIItemShortcut extends GUIItem {
      */
     @Override
     public void button3Clicked(final int modifiers) {
-        final Spell spell = currentSpellManager.getCurrentSpell();
-        if (spell == null) {
-            return;
-        }
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            final Spell spell = currentSpellManager.getCurrentSpell();
+            if (spell == null) {
+                return;
+            }
 
-        shortcuts.setSpellShortcut(index, spell, true);
+            shortcuts.setSpellShortcut(index, spell, true);
+            break;
+        }
     }
 
     /**

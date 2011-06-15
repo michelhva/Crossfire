@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
+import com.realtime.crossfire.jxclient.gui.Modifiers;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -213,12 +214,14 @@ public class GUIItemSpellList extends GUIItemItem {
      */
     @Override
     public void button1Clicked(final int modifiers) {
-        if (spell == null) {
-            return;
+        if (spell != null) {
+            switch (modifiers&Modifiers.MASK) {
+            case Modifiers.NONE:
+                connection.sendNcom(0, "cast "+spell.getName());
+                currentSpellManager.setCurrentSpell(spell);
+                break;
+            }
         }
-
-        connection.sendNcom(0, "cast "+spell.getName());
-        currentSpellManager.setCurrentSpell(spell);
     }
 
     /**

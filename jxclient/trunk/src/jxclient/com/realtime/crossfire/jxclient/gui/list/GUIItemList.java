@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.list;
 
+import com.realtime.crossfire.jxclient.gui.Modifiers;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementChangedListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
@@ -34,7 +35,6 @@ import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import java.awt.event.InputEvent;
 import java.awt.event.MouseEvent;
 import javax.swing.JList;
 import org.jetbrains.annotations.NotNull;
@@ -279,10 +279,14 @@ public class GUIItemList extends GUIList {
             return;
         }
 
-        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0) {
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
             crossfireServerConnection.sendExamine(item.getTag());
-        } else {
+            break;
+
+        case Modifiers.SHIFT:
             crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
+            break;
         }
     }
 
@@ -301,10 +305,14 @@ public class GUIItemList extends GUIList {
             return;
         }
 
-        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0) {
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
             crossfireServerConnection.sendApply(item.getTag());
-        } else {
+            break;
+
+        case Modifiers.SHIFT:
             crossfireServerConnection.sendMark(item.getTag());
+            break;
         }
     }
 
@@ -323,10 +331,14 @@ public class GUIItemList extends GUIList {
             return;
         }
 
-        if (item.isLocked()) {
-            crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+left-clicking on it.", 3);
-        } else {
-            commandQueue.sendMove(itemItemFactory.getMoveLocation(), item.getTag());
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            if (item.isLocked()) {
+                crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+left-clicking on it.", 3);
+            } else {
+                commandQueue.sendMove(itemItemFactory.getMoveLocation(), item.getTag());
+            }
+            break;
         }
     }
 

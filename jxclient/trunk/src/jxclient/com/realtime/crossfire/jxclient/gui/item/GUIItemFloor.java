@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.Modifiers;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -189,10 +190,14 @@ public class GUIItemFloor extends GUIItemItem {
             return;
         }
 
-        if (item.isItemGroupButton()) {
-            crossfireServerConnection.sendApply(item.getTag());
-        } else {
-            crossfireServerConnection.sendExamine(item.getTag());
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            if (item.isItemGroupButton()) {
+                crossfireServerConnection.sendApply(item.getTag());
+            } else {
+                crossfireServerConnection.sendExamine(item.getTag());
+            }
+            break;
         }
     }
 
@@ -211,7 +216,11 @@ public class GUIItemFloor extends GUIItemItem {
             return;
         }
 
-        commandQueue.sendMove(player.getTag(), item.getTag());
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            commandQueue.sendMove(player.getTag(), item.getTag());
+            break;
+        }
     }
 
     /**
