@@ -456,12 +456,16 @@ public class ClientSocket {
                     outputBuffer.clear();
 
                     try {
-                        socketChannel.socket().shutdownOutput();
+                        if (socketChannel != null) {
+                            socketChannel.socket().shutdownOutput();
+                        }
                     } catch (final IOException ignored) {
                         // ignore
                     }
                     try {
-                        socketChannel.close();
+                        if (socketChannel != null) {
+                            socketChannel.close();
+                        }
                     } catch (final IOException ignored) {
                         // ignore
                     }
@@ -484,11 +488,11 @@ public class ClientSocket {
      * @throws IOException if an I/O error occurs
      */
     private void processRead() throws IOException {
-        if (socketChannel == null) {
-            return;
-        }
-
         synchronized (syncOutput) {
+            if (socketChannel == null) {
+                return;
+            }
+
             if (socketChannel.read(inputBuffer) == -1) {
                 throw new EOFException();
             }
@@ -578,17 +582,17 @@ public class ClientSocket {
      */
     private void processWrite() throws IOException {
         synchronized (syncOutput) {
-            if (socketChannel == null) {
-                return;
-            }
-
             if (outputBuffer.remaining() <= 0) {
                 return;
             }
 
             outputBuffer.flip();
             try {
-                socketChannel.write(outputBuffer);
+                if (socketChannel != null) {
+                    socketChannel.write(outputBuffer);
+                } else {
+                    outputBuffer.position(outputBuffer.limit());
+                }
             } finally {
                 outputBuffer.compact();
             }
