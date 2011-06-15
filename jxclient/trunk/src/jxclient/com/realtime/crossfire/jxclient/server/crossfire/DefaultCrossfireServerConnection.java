@@ -2308,7 +2308,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv accountplayers entry");
                     }
-                    /* got all information on a character */
+                    // got all information on a character
                     count--;
 
                     for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {

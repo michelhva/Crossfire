@@ -110,7 +110,7 @@ public class ParseUtils {
         try {
             alpha = Math.round(255*NumberParser.parseFloat(name.substring(pos+1)));
         } catch (final IOException ignored) {
-            /* ignore */
+            // ignore
         }
         if (alpha < 0 || alpha > 255) {
             return parseColorName(name);
