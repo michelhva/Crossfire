@@ -32,7 +32,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Map;
-import java.util.Properties;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -158,11 +157,8 @@ public class Metaserver {
             if (httpProxy != null && httpProxy.length() > 0) {
                 if (httpProxy.regionMatches(true, 0, "http://", 0, 7)) {
                     final String[] tmp = httpProxy.substring(7).replaceAll("/.*", "").split(":", 2);
-                    final String proxy = tmp[0];
-                    final String port = tmp.length >= 2 ? tmp[1] : "80";
-                    final Properties systemProperties = System.getProperties();
-                    systemProperties.setProperty("http.proxyHost", proxy);
-                    systemProperties.setProperty("http.proxyPort", port);
+                    System.setProperty("http.proxyHost", tmp[0]);
+                    System.setProperty("http.proxyPort", tmp.length >= 2 ? tmp[1] : "80");
                 } else {
                     System.err.println("Warning: unsupported http_proxy protocol: "+httpProxy);
                 }
