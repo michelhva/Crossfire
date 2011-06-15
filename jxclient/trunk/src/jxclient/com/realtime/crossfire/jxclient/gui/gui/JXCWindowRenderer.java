@@ -948,7 +948,7 @@ public class JXCWindowRenderer {
             removeFromLayeredPane(dialog);
             if (frame != null) {
                 frame.validate();
-                /** @todo too aggressive? */
+                // @todo too aggressive?
                 frame.repaint();
             }
         } else {
@@ -959,7 +959,7 @@ public class JXCWindowRenderer {
                 removeFromLayeredPane(dialog);
                 if (frame != null) {
                     frame.validate();
-                    /** @todo too aggressive? */
+                    // @todo too aggressive?
                     frame.repaint();
                 }
                 mouseTracker.mouseEntered(findElement(mouseEvent), mouseEvent);
@@ -968,7 +968,7 @@ public class JXCWindowRenderer {
                 removeFromLayeredPane(dialog);
                 if (frame != null) {
                     frame.validate();
-                    /** @todo too aggressive? */
+                    // @todo too aggressive?
                     frame.repaint();
                 }
             }

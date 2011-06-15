@@ -45,31 +45,31 @@ public class MessageBufferUpdater {
      */
     @NotNull
     private final Color[] colors = {
-        /* black */
+        // black
         new Color(0x000000),
-        /* white */
+        // white
         new Color(0x860F9F),
-        /* navy blue */
+        // navy blue
         new Color(0x362589),
-        /* red */
+        // red
         new Color(0xD80C1B),
-        /* orange */
+        // orange
         new Color(0xAF0093),
-        /* dodger blue */
+        // dodger blue
         new Color(0x2E00B7),
-        /* dark orange */
+        // dark orange
         new Color(0xCF4507),
-        /* sea green */
+        // sea green
         new Color(0x275A0F),
-        /* dark sea green */
+        // dark sea green
         new Color(0x346B1A),
-        /* grey */
+        // grey
         new Color(0x353535),
-        /* brown sienna */
+        // brown sienna
         new Color(0x775716),
-        /* gold */
+        // gold
         new Color(0x874200),
-        /* khaki */
+        // khaki
         new Color(0x6C6E20),
     };
 

@@ -70,7 +70,7 @@ public abstract class GaugeUpdater {
     @SuppressWarnings("NullableProblems")
     public void setGauge(@NotNull final GUIGaugeListener gauge) {
         this.gauge = gauge;
-        /* hide the gauge initially, so if it's never updated it doesn't appear */
+        // hide the gauge initially, so if it's never updated it doesn't appear
         if (hideIfEmpty) {
             gauge.setHidden(true);
         }
