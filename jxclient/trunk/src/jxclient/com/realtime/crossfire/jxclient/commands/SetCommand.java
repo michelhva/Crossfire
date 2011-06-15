@@ -46,7 +46,7 @@ public class SetCommand extends AbstractCommand {
      * @param optionManager the option manager to use
      */
     public SetCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final OptionManager optionManager) {
-        super(crossfireServerConnection);
+        super("set", crossfireServerConnection);
         this.optionManager = optionManager;
     }
 

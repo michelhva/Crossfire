@@ -43,7 +43,7 @@ public class ScriptCommand extends AbstractCommand {
      * @param crossfireServerConnection the connection instance
      */
     public ScriptCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(crossfireServerConnection);
+        super("script", crossfireServerConnection);
         this.scriptManager = scriptManager;
     }
 

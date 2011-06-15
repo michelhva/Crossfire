@@ -30,6 +30,13 @@ import org.jetbrains.annotations.NotNull;
 public interface Command {
 
     /**
+     * Returns the name of the command.
+     * @return the name
+     */
+    @NotNull
+    String getCommandName();
+
+    /**
      * Returns whether all remaining commands should be included as arguments.
      * @return whether all remaining commands should be included as arguments
      */

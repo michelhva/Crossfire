@@ -22,8 +22,20 @@
 package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.account.CharacterModel;
+import com.realtime.crossfire.jxclient.commands.BindCommand;
+import com.realtime.crossfire.jxclient.commands.ClearCommand;
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.DebugMessagesCommand;
+import com.realtime.crossfire.jxclient.commands.ExecCommand;
 import com.realtime.crossfire.jxclient.commands.Macros;
+import com.realtime.crossfire.jxclient.commands.ScreenshotCommand;
+import com.realtime.crossfire.jxclient.commands.ScriptCommand;
+import com.realtime.crossfire.jxclient.commands.ScriptkillCommand;
+import com.realtime.crossfire.jxclient.commands.ScriptkillallCommand;
+import com.realtime.crossfire.jxclient.commands.ScriptsCommand;
+import com.realtime.crossfire.jxclient.commands.ScripttellCommand;
+import com.realtime.crossfire.jxclient.commands.SetCommand;
+import com.realtime.crossfire.jxclient.commands.UnbindCommand;
 import com.realtime.crossfire.jxclient.faces.DefaultFacesManager;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -202,7 +214,19 @@ public class JXClient {
                                         }
                                         final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
                                         final ScreenshotFiles screenshotFiles = new ScreenshotFiles();
-                                        final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros, screenshotFiles);
+                                        final Commands commands = new Commands(commandQueue);
+                                        commands.addCommand(new BindCommand(server, commands, commandCallback, macros));
+                                        commands.addCommand(new UnbindCommand(commandCallback, server));
+                                        commands.addCommand(new ScreenshotCommand(windowRenderer, server, screenshotFiles));
+                                        commands.addCommand(new ScriptCommand(scriptManager, server));
+                                        commands.addCommand(new ScriptkillCommand(scriptManager, server));
+                                        commands.addCommand(new ScriptkillallCommand(scriptManager, server));
+                                        commands.addCommand(new ScriptsCommand(scriptManager, server));
+                                        commands.addCommand(new ScripttellCommand(scriptManager, server));
+                                        commands.addCommand(new ExecCommand(commandCallback, server));
+                                        commands.addCommand(new SetCommand(server, optionManager));
+                                        commands.addCommand(new ClearCommand(windowRenderer, server));
+                                        commands.addCommand(new DebugMessagesCommand(server));
                                         final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
                                         final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
                                         final GuiFactory guiFactory = new GuiFactory(commands, commandCallback, macros);

@@ -61,7 +61,7 @@ public class BindCommand extends AbstractCommand {
      * @param macros the macros instance to use
      */
     public BindCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
-        super(crossfireServerConnection);
+        super("bind", crossfireServerConnection);
         this.commands = commands;
         this.commandCallback = commandCallback;
         this.macros = macros;

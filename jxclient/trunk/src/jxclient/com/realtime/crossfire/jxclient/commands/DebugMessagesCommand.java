@@ -44,7 +44,7 @@ public class DebugMessagesCommand extends AbstractCommand {
      * @param crossfireServerConnection the connection instance
      */
     public DebugMessagesCommand(@NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(crossfireServerConnection);
+        super("debug_messages", crossfireServerConnection);
         this.crossfireServerConnection = crossfireServerConnection;
     }
 

@@ -45,7 +45,7 @@ public class ExecCommand extends AbstractCommand {
      * @param crossfireServerConnection the connection instance
      */
     public ExecCommand(@NotNull final CommandCallback commandCallback, @NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(crossfireServerConnection);
+        super("exec", crossfireServerConnection);
         this.commandCallback = commandCallback;
     }
 
