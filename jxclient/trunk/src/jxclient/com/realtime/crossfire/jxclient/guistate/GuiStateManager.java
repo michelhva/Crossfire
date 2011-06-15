@@ -140,15 +140,6 @@ public class GuiStateManager {
      * @param guiState the new gui state
      */
     public void changeGUI(final GuiState guiState) {
-        changeGUI(guiState, null);
-    }
-
-    /**
-     * Sets a new {@link GuiState}.
-     * @param guiState the new gui state
-     * @param param a parameter for the new gui state
-     */
-    private void changeGUI(@NotNull final GuiState guiState, @Nullable final String param) {
         synchronized (sync) {
             if (this.guiState == guiState) {
                 return;
@@ -170,6 +161,39 @@ public class GuiStateManager {
                 break;
 
             case CONNECTING:
+                throw new IllegalArgumentException();
+
+            case CONNECTED:
+                for (final GuiStateListener listener : guiStateListeners) {
+                    listener.connected();
+                }
+                break;
+
+            case CONNECT_FAILED:
+                throw new IllegalArgumentException();
+            }
+        }
+    }
+
+    /**
+     * Sets a new {@link GuiState}.
+     * @param guiState the new gui state
+     * @param param a parameter for the new gui state
+     */
+    private void changeGUI(@NotNull final GuiState guiState, @NotNull final String param) {
+        synchronized (sync) {
+            if (this.guiState == guiState) {
+                return;
+            }
+
+            this.guiState = guiState;
+
+            switch (guiState) {
+            case START:
+            case METASERVER:
+                throw new IllegalArgumentException();
+
+            case CONNECTING:
                 for (final GuiStateListener listener : guiStateListeners) {
                     listener.preConnecting(param);
                 }
@@ -179,10 +203,7 @@ public class GuiStateManager {
                 break;
 
             case CONNECTED:
-                for (final GuiStateListener listener : guiStateListeners) {
-                    listener.connected();
-                }
-                break;
+                throw new IllegalArgumentException();
 
             case CONNECT_FAILED:
                 for (final GuiStateListener listener : guiStateListeners) {
