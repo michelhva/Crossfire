@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
+import com.realtime.crossfire.jxclient.gui.Modifiers;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -177,11 +178,13 @@ public abstract class GUIItemItem extends GUIItem {
     @Override
     protected void button2Clicked(final int modifiers) {
         final CfItem tmpItem = item;
-        if (tmpItem == null) {
-            return;
+        if (tmpItem != null) {
+            switch (modifiers&Modifiers.MASK) {
+            case Modifiers.NONE:
+                crossfireServerConnection.sendApply(tmpItem.getTag());
+                break;
+            }
         }
-
-        crossfireServerConnection.sendApply(tmpItem.getTag());
     }
 
     /**

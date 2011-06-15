@@ -1,5 +1,10 @@
 2011-06-15  Andreas Kirschbaum
 
+	* Ignore mouse clicks with unsupported modifiers. For example,
+	clicking an inventory item while SHIFT is pressed (un-)locks it.
+	Formerly also SHIFT-CTRL-click or SHIFT-ALT-click did (un-)lock;
+	now only SHIFT-click works.
+
 	* Report I/O errors caused by scripts to message dialog.
 
 	* Make 'unwatch' script command work if not arguments are given.

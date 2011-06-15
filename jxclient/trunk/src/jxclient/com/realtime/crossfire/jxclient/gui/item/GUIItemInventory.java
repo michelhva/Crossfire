@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.Modifiers;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -33,7 +34,6 @@ import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.awt.Image;
-import java.awt.event.InputEvent;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -190,14 +190,16 @@ public class GUIItemInventory extends GUIItemItem {
     @Override
     public void button1Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item == null) {
-            return;
-        }
+        if (item != null) {
+            switch (modifiers&Modifiers.MASK) {
+            case Modifiers.NONE:
+                crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
+                break;
 
-        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0) {
-            crossfireServerConnection.sendExamine(item.getTag());
-        } else {
-            crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
+            case Modifiers.SHIFT:
+                crossfireServerConnection.sendExamine(item.getTag());
+                break;
+            }
         }
     }
 
@@ -207,9 +209,12 @@ public class GUIItemInventory extends GUIItemItem {
     @Override
     public void button2Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item != null && (modifiers&InputEvent.SHIFT_DOWN_MASK) != 0) {
-            crossfireServerConnection.sendMark(item.getTag());
-            return;
+        if (item != null) {
+            switch (modifiers&Modifiers.MASK) {
+            case Modifiers.NONE:
+                crossfireServerConnection.sendMark(item.getTag());
+                return;
+            }
         }
 
         super.button2Clicked(modifiers);
@@ -242,16 +247,18 @@ public class GUIItemInventory extends GUIItemItem {
     @Override
     public void button3Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item == null) {
-            return;
-        }
+        if (item != null) {
+            switch (modifiers&Modifiers.MASK) {
+            case Modifiers.NONE:
+                if (item.isLocked()) {
+                    crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+left-clicking on it.", 3);
+                    return;
+                }
 
-        if (item.isLocked()) {
-            crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+left-clicking on it.", 3);
-            return;
+                commandQueue.sendMove(floorView.getCurrentFloor(), item.getTag());
+                break;
+            }
         }
-
-        commandQueue.sendMove(floorView.getCurrentFloor(), item.getTag());
     }
 
     /**
