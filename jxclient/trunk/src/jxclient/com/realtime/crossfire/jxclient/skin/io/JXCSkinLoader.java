@@ -1300,7 +1300,7 @@ public class JXCSkinLoader {
             element = new GUIItemShortcut(tooltipManager, elementListener, name, castColor, castImage, invokeColor, invokeImage, index, facesManager, shortcuts, font, currentSpellManager);
         } else if (type.equals("spelllist")) {
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemSpellList(tooltipManager, elementListener, null, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
+            element = new GUIItemSpellList(tooltipManager, elementListener, server, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
         } else {
             throw new IOException("undefined item type: "+type);
         }
