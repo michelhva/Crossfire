@@ -100,6 +100,29 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
      * {@inheritDoc}
      */
     @Override
+    public void mouseClicked(@NotNull final MouseEvent e) {
+        super.mouseClicked(e);
+        final int b = e.getButton();
+        switch (b) {
+        case MouseEvent.BUTTON1:
+            if (!autoRepeat) {
+                execute();
+            }
+            GuiUtils.setActive(this, false);
+            break;
+
+        case MouseEvent.BUTTON2:
+            break;
+
+        case MouseEvent.BUTTON3:
+            break;
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
         final int b = e.getButton();
@@ -107,8 +130,6 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
         case MouseEvent.BUTTON1:
             if (autoRepeat) {
                 Timeouts.remove(timeoutEvent);
-            } else {
-                execute();
             }
             GuiUtils.setActive(this, false);
             break;
