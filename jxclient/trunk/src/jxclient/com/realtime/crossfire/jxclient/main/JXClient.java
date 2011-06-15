@@ -86,6 +86,7 @@ import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCConnection;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
 import com.realtime.crossfire.jxclient.window.KeybindingsManager;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -227,7 +228,15 @@ public class JXClient {
                                         commands.addCommand(new SetCommand(server, optionManager));
                                         commands.addCommand(new ClearCommand(windowRenderer, server));
                                         commands.addCommand(new DebugMessagesCommand(server));
-                                        final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
+                                        final File keybindingsFile;
+                                        try {
+                                            keybindingsFile = Filenames.getKeybindingsFile(null, null);
+                                        } catch (final IOException ex) {
+                                            System.err.println("Cannot read keybindings file: "+ex.getMessage());
+                                            exiter.terminate();
+                                            return;
+                                        }
+                                        final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, commands, commandCallback, macros);
                                         final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
                                         final GuiFactory guiFactory = new GuiFactory(commands, commandCallback, macros);
                                         final GuiManager guiManager = new GuiManager(guiStateManager, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);

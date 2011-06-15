@@ -116,14 +116,11 @@ public class Filenames {
      * bindings file.
      * @return The keybindings file; return <code>null</code> if the file cannot
      *         be accessed.
+     * @throws IOException if the keybindings file cannot be accessed
      */
     @Nullable
-    public static File getKeybindingsFile(@Nullable final CharSequence hostname, @Nullable final CharSequence character) {
-        try {
-            return getSettingsFile(hostname == null || character == null ? "keybindings.txt" : "keybindings-"+encode(hostname)+"-"+encode(character)+".txt");
-        } catch (final IOException ex) {
-            return null;
-        }
+    public static File getKeybindingsFile(@Nullable final CharSequence hostname, @Nullable final CharSequence character) throws IOException {
+        return getSettingsFile(hostname == null || character == null ? "keybindings.txt" : "keybindings-"+encode(hostname)+"-"+encode(character)+".txt");
     }
 
     /**
