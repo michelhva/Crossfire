@@ -46,6 +46,7 @@ import com.realtime.crossfire.jxclient.items.SpellsView;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
+import com.realtime.crossfire.jxclient.metaserver.MetaserverProcessor;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
@@ -162,7 +163,8 @@ public class JXClient {
                                 final InventoryView inventoryView = new InventoryView(itemSet, new InventoryComparator());
                                 final FloorView floorView = new FloorView(itemSet);
                                 new ItemsManager(server, facesManager, stats, skillSet, guiStateManager, itemSet);
-                                new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
+                                final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel);
+                                new MetaserverProcessor(metaserver, guiStateManager);
                                 final SoundManager soundManager = new SoundManager(guiStateManager, debugSoundOutputStreamWriter == null ? null : new DebugWriter(debugSoundOutputStreamWriter));
                                 try {
                                     optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));

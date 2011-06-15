@@ -21,9 +21,6 @@
 
 package com.realtime.crossfire.jxclient.metaserver;
 
-import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
-import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -52,12 +49,6 @@ public class Metaserver {
     private static final String METASERVER_URL = "http://crossfire.real-time.com/metaserver2/meta_client.php";
 
     /**
-     * The {@link MetaserverProcessor} used for metaserver queries.
-     */
-    @NotNull
-    private final MetaserverProcessor metaserverProcessor = new MetaserverProcessor(this);
-
-    /**
      * The cached metaserver entries.
      */
     @NotNull
@@ -70,61 +61,11 @@ public class Metaserver {
     private final MetaserverModel metaserverModel;
 
     /**
-     * The {@link GuiStateListener} for detecting established or dropped
-     * connections.
-     */
-    @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
-        @Override
-        public void start() {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void metaserver() {
-            metaserverProcessor.query();
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void preConnecting(@NotNull final String serverInfo) {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void connecting(@NotNull final String serverInfo) {
-            metaserverProcessor.disable();
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState) {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void connected() {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void connectFailed(@NotNull final String reason) {
-            // ignore
-        }
-    };
-
-    /**
      * Create a new instance.
      * @param metaserverCacheFile The metaserver cache file.
      * @param metaserverModel the metaserver model instance to update
-     * @param guiStateManager the gui state manager to watch
      */
-    public Metaserver(@NotNull final File metaserverCacheFile, @NotNull final MetaserverModel metaserverModel, @NotNull final GuiStateManager guiStateManager) {
+    public Metaserver(@NotNull final File metaserverCacheFile, @NotNull final MetaserverModel metaserverModel) {
         serverCache = new ServerCache(metaserverCacheFile);
         this.metaserverModel = metaserverModel;
         metaserverModel.begin();
@@ -132,8 +73,6 @@ public class Metaserver {
             metaserverModel.add(metaserverEntry);
         }
         metaserverModel.commit();
-        guiStateManager.addGuiStateListener(guiStateListener);
-        metaserverProcessor.query();
     }
 
     /**

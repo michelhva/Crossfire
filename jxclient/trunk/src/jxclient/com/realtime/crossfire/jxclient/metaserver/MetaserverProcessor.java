@@ -21,6 +21,9 @@
 
 package com.realtime.crossfire.jxclient.metaserver;
 
+import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
+import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -112,11 +115,63 @@ public class MetaserverProcessor {
     };
 
     /**
+     * The {@link GuiStateListener} for detecting established or dropped
+     * connections.
+     */
+    @NotNull
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
+        /** {@inheritDoc} */
+        @Override
+        public void start() {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void metaserver() {
+            query();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void preConnecting(@NotNull final String serverInfo) {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(@NotNull final String serverInfo) {
+            disable();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected() {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connectFailed(@NotNull final String reason) {
+            // ignore
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param metaserver the metaserver instance to forward to
+     * @param guiStateManager the gui state manager to watch
      */
-    public MetaserverProcessor(@NotNull final Metaserver metaserver) {
+    public MetaserverProcessor(@NotNull final Metaserver metaserver, @NotNull final GuiStateManager guiStateManager) {
         this.metaserver = metaserver;
+        guiStateManager.addGuiStateListener(guiStateListener);
+        query();
     }
 
     /**
