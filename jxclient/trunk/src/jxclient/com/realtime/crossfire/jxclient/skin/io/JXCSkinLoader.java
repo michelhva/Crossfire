@@ -1286,7 +1286,7 @@ public class JXCSkinLoader {
             element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
         } else if (type.equals("inventory")) {
             if (defaultItemPainter == null) {
-                throw new IOException("cannot use 'item floor' without 'def item' command");
+                throw new IOException("cannot use 'item inventory' without 'def item' command");
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
