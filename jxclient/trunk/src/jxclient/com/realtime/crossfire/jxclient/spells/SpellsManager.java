@@ -150,7 +150,6 @@ public class SpellsManager implements Iterable<Spell> {
      * @param guiStateManager the gui state manager to watch
      */
     public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager) {
-        initSpells();
         crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
         guiStateManager.addGuiStateListener(guiStateListener);
     }
@@ -169,12 +168,6 @@ public class SpellsManager implements Iterable<Spell> {
      */
     public void removeCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener) {
         listeners.remove(listener);
-    }
-
-    private void initSpells() {
-        for (int i = spells.size()-1; i >= 0; i--) {
-            deleteSpellByIndex(i);
-        }
     }
 
     /**
