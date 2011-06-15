@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link CommandCallback} that delegates to a {@link GuiManager}.
@@ -58,7 +57,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * The last sent account or character password. Set to <code>""</code> if no
      * password has been sent yet.
      */
-    @Nullable
+    @NotNull
     private String lastAccountPassword = "";
 
     /**
