@@ -56,7 +56,7 @@ public class ItemSet {
     private final Map<Integer, List<CfItem>> items = new HashMap<Integer, List<CfItem>>();
 
     /**
-     * The synchronization object for XXX.
+     * The synchronization object for {@link #player}.
      */
     @NotNull
     private final Object sync = new Object();
@@ -309,7 +309,9 @@ public class ItemSet {
      */
     @NotNull
     public Iterable<CfItem> getPlayerInventory() {
-        return player == null ? Collections.<CfItem>emptyList() : getInventoryByTag(player.getTag());
+        synchronized (sync) {
+            return player == null ? Collections.<CfItem>emptyList() : getInventoryByTag(player.getTag());
+        }
     }
 
     /**
