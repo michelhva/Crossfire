@@ -49,7 +49,9 @@ public class FileCache implements ImageCache {
      */
     public FileCache(@NotNull final File cacheDir) {
         this.cacheDir = cacheDir;
-        cacheDir.mkdirs();
+        if (!cacheDir.isDirectory() && !cacheDir.mkdirs()) {
+            System.err.println(cacheDir+": cannot create directory");
+        }
     }
 
     /**
