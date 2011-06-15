@@ -436,7 +436,6 @@
           <option name="ignoredTypesString" value="java.io.ByteArrayOutputStream,java.io.ByteArrayInputStream,java.io.StringBufferInputStream,java.io.CharArrayWriter,java.io.CharArrayReader,java.io.StringWriter,java.io.StringReader" />
           <option name="insideTryAllowed" value="false" />
         </inspection_tool>
-        <inspection_tool class="IfStatementWithIdenticalBranches" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="InconsistentResourceBundle" enabled="true" level="ERROR" enabled_by_default="true">
           <option name="REPORT_MISSING_TRANSLATIONS" value="false" />
           <option name="REPORT_INCONSISTENT_PROPERTIES" value="true" />
@@ -680,7 +679,6 @@
         <inspection_tool class="RequiredAttributes" enabled="false" level="WARNING" enabled_by_default="false">
           <option name="myAdditionalRequiredHtmlAttributes" value="" />
         </inspection_tool>
-        <inspection_tool class="ResultOfObjectAllocationIgnored" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="ResultSetIndexZero" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="ReturnNull" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="m_reportObjectMethods" value="true" />
@@ -695,6 +693,8 @@
         <inspection_tool class="ReuseOfLocalVariable" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="SafeLock" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="SamePackageImport" enabled="true" level="WARNING" enabled_by_default="true" />
+        <inspection_tool class="SameParameterValue" enabled="false" level="WARNING" enabled_by_default="false" />
+        <inspection_tool class="SameReturnValue" enabled="false" level="WARNING" enabled_by_default="false" />
         <inspection_tool class="SerialVersionUIDNotStaticFinal" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="SerializableHasSerialVersionUIDField" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="ignoreAnonymousInnerClasses" value="false" />
