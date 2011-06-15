@@ -32,6 +32,12 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractCommand implements Command {
 
     /**
+     * The name of the command.
+     */
+    @NotNull
+    private final String commandName;
+
+    /**
      * The connection instance.
      */
     @NotNull
@@ -39,9 +45,11 @@ public abstract class AbstractCommand implements Command {
 
     /**
      * Creates a new instance.
+     * @param commandName the name of the command
      * @param crossfireServerConnection the connection instance
      */
-    protected AbstractCommand(@NotNull final CrossfireServerConnection crossfireServerConnection) {
+    protected AbstractCommand(@NotNull final String commandName, @NotNull final CrossfireServerConnection crossfireServerConnection) {
+        this.commandName = commandName;
         this.crossfireServerConnection = crossfireServerConnection;
     }
 
@@ -68,6 +76,15 @@ public abstract class AbstractCommand implements Command {
      */
     protected void drawInfo(@NotNull final String message, final int color) {
         crossfireServerConnection.drawInfo(message, color);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public String getCommandName() {
+        return commandName;
     }
 
 }

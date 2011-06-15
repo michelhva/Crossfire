@@ -59,7 +59,7 @@ public class ScreenshotCommand extends AbstractCommand {
      * screenshot file names
      */
     public ScreenshotCommand(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScreenshotFiles screenshotFiles) {
-        super(crossfireServerConnection);
+        super("screenshot", crossfireServerConnection);
         this.windowRenderer = windowRenderer;
         this.screenshotFiles = screenshotFiles;
     }

@@ -45,7 +45,7 @@ public class ScriptkillCommand extends AbstractCommand {
      * @param crossfireServerConnection the connection instance
      */
     public ScriptkillCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(crossfireServerConnection);
+        super("scriptkill", crossfireServerConnection);
         this.scriptManager = scriptManager;
     }
 

@@ -21,13 +21,7 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
-import com.realtime.crossfire.jxclient.gui.commands.ScreenshotFiles;
-import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
-import com.realtime.crossfire.jxclient.scripts.ScriptManager;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.util.Patterns;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import java.util.HashMap;
@@ -54,30 +48,20 @@ public class Commands {
 
     /**
      * Creates a new instance.
-     * @param windowRenderer the renderer to use
      * @param commandQueue the command queue for sending commands
-     * @param crossfireServerConnection the connection instance
-     * @param scriptManager the script manager instance
-     * @param optionManager the option manager instance
-     * @param commandCallback the command callback to use
-     * @param macros the macros instance to use
-     * @param screenshotFiles the screenshot files instance for creating
-     * screenshot file names
      */
-    public Commands(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptManager scriptManager, @NotNull final OptionManager optionManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final ScreenshotFiles screenshotFiles) {
+    public Commands(@NotNull final CommandQueue commandQueue) {
         this.commandQueue = commandQueue;
-        commands.put("bind", new BindCommand(crossfireServerConnection, this, commandCallback, macros));
-        commands.put("unbind", new UnbindCommand(commandCallback, crossfireServerConnection));
-        commands.put("screenshot", new ScreenshotCommand(windowRenderer, crossfireServerConnection, screenshotFiles));
-        commands.put("script", new ScriptCommand(scriptManager, crossfireServerConnection));
-        commands.put("scriptkill", new ScriptkillCommand(scriptManager, crossfireServerConnection));
-        commands.put("scriptkillall", new ScriptkillallCommand(scriptManager, crossfireServerConnection));
-        commands.put("scripts", new ScriptsCommand(scriptManager, crossfireServerConnection));
-        commands.put("scripttell", new ScripttellCommand(scriptManager, crossfireServerConnection));
-        commands.put("exec", new ExecCommand(commandCallback, crossfireServerConnection));
-        commands.put("set", new SetCommand(crossfireServerConnection, optionManager));
-        commands.put("clear", new ClearCommand(windowRenderer, crossfireServerConnection));
-        commands.put("debug_messages", new DebugMessagesCommand(crossfireServerConnection));
+    }
+
+    /**
+     * Adds an executable {@link Command}.
+     * @param command the command to add
+     */
+    public void addCommand(@NotNull final Command command) {
+        if (commands.put(command.getCommandName(), command) != null) {
+            throw new IllegalArgumentException("duplicate command: "+command.getCommandName());
+        }
     }
 
     /**

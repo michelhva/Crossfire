@@ -43,7 +43,7 @@ public class UnbindCommand extends AbstractCommand {
      * @param crossfireServerConnection the connection instance
      */
     public UnbindCommand(@NotNull final CommandCallback commandCallback, @NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(crossfireServerConnection);
+        super("unbind", crossfireServerConnection);
         this.commandCallback = commandCallback;
     }
 

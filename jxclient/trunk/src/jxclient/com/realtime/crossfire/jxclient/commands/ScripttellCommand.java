@@ -46,7 +46,7 @@ public class ScripttellCommand extends AbstractCommand {
      * @param crossfireServerConnection the connection instance
      */
     public ScripttellCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(crossfireServerConnection);
+        super("scripttell", crossfireServerConnection);
         this.scriptManager = scriptManager;
     }
 
