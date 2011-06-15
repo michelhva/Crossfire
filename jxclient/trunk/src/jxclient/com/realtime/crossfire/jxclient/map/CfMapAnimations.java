@@ -23,8 +23,6 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireTickListener;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -95,34 +93,11 @@ public class CfMapAnimations {
     private final Collection<AnimationState> pendingTickUpdates = new ArrayList<AnimationState>();
 
     /**
-     * The listener for receiving "tick" commands.
-     */
-    @NotNull
-    private final CrossfireTickListener crossfireTickListener = new CrossfireTickListener() {
-
-        @Override
-        public void tick(final int tickNo) {
-            CfMapAnimations.this.tick(tickNo);
-        }
-
-    };
-
-    /**
      * Creates a new instance.
      * @param mapUpdaterState the instance to update
      */
     public CfMapAnimations(@NotNull final MapUpdaterState mapUpdaterState) {
         this.mapUpdaterState = mapUpdaterState;
-    }
-
-    /**
-     * Creates a new instance.
-     * @param crossfireServerConnection the connection to watch
-     * @param mapUpdaterState the instance to update
-     */
-    public CfMapAnimations(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final MapUpdaterState mapUpdaterState) {
-        this(mapUpdaterState);
-        crossfireServerConnection.addCrossfireTickListener(crossfireTickListener);
     }
 
     /**
