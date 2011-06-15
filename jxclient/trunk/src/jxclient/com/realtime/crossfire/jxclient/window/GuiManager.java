@@ -686,7 +686,7 @@ public class GuiManager {
      */
     public void updatePlayerName(@NotNull final String playerName) {
         if (currentQueryDialogIsNamePrompt) {
-            settings.putString("player_"+connection.getHostname(), playerName);
+            settings.putString("player_"+connection.getHostname(), playerName, "The charactername last played on the server.");
         }
     }
 
@@ -926,7 +926,7 @@ public class GuiManager {
      * @param accountName the current account name
      */
     public void setAccountName(@NotNull final String accountName) {
-        settings.putString("login_account_"+connection.getHostname(), accountName);
+        settings.putString("login_account_"+connection.getHostname(), accountName, "The account last logged in on the server.");
     }
 
     /**
@@ -935,7 +935,7 @@ public class GuiManager {
      * @param characterName the character name
      */
     public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
-        settings.putString("login_account_"+connection.getHostname()+"_"+accountName, characterName);
+        settings.putString("login_account_"+connection.getHostname()+"_"+accountName, characterName, "The character last selected on the account.");
     }
 
 }

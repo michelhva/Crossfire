@@ -1,5 +1,7 @@
 2011-06-15  Andreas Kirschbaum
 
+	* Add documentation comments to settings file.
+
 	* Ignore mouse clicks with unsupported modifiers. For example,
 	clicking an inventory item while SHIFT is pressed (un-)locks it.
 	Formerly also SHIFT-CTRL-click or SHIFT-ALT-click did (un-)lock;

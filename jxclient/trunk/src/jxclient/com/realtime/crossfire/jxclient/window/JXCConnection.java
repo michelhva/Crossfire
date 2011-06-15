@@ -226,7 +226,7 @@ public class JXCConnection {
             if (pickupMode == Pickup.PU_NOTHING) {
                 settings.remove("pickup_"+hostname+"_"+this.character);
             } else {
-                settings.putLong("pickup_"+hostname+"_"+this.character, pickupMode);
+                settings.putLong("pickup_"+hostname+"_"+this.character, pickupMode, "The character's pickup mode.");
             }
         }
 
@@ -271,7 +271,7 @@ public class JXCConnection {
             newHostname = null;
             newPort = 0;
         } else {
-            settings.putString("server", serverInfo);
+            settings.putString("server", serverInfo, "The server last connected to.");
             final String[] tmp = serverInfo.split(":", 2);
             newHostname = tmp[0];
             newPort = tmp.length < 2 ? DEFAULT_CROSSFIRE_PORT : NumberParser.parseInt(tmp[1], DEFAULT_CROSSFIRE_PORT, 1, 65535);
