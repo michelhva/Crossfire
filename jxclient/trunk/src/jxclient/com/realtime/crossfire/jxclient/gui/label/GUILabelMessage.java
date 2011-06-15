@@ -68,7 +68,7 @@ public class GUILabelMessage extends GUIMultiLineLabel {
      */
     @NotNull
     private final CrossfireDrawinfoListener crossfireDrawinfoListener = new CrossfireDrawinfoListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandDrawinfoReceived(@NotNull final String text, final int type) {
             final Gui gui = GuiUtils.getGui(GUILabelMessage.this);
@@ -76,6 +76,7 @@ public class GUILabelMessage extends GUIMultiLineLabel {
                 setText(text);
             }
         }
+
     };
 
     /**
@@ -84,7 +85,7 @@ public class GUILabelMessage extends GUIMultiLineLabel {
      */
     @NotNull
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             final Gui gui = GuiUtils.getGui(GUILabelMessage.this);
@@ -93,11 +94,11 @@ public class GUILabelMessage extends GUIMultiLineLabel {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void setDebugMode(final boolean printMessageTypes) {
             // ignore
         }
+
     };
 
     /**

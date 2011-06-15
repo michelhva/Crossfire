@@ -65,9 +65,6 @@ public abstract class AbstractItemView implements ItemView {
     @NotNull
     private final Runnable fireEventCallback = new Runnable() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void run() {
             deliverEvents();

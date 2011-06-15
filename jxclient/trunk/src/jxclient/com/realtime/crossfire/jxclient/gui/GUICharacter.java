@@ -80,12 +80,13 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      */
     @NotNull
     private final CharacterInformationListener characterInformationListener = new CharacterInformationListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void informationChanged() {
             setChanged();
             updateTooltip();
         }
+
     };
 
     /**

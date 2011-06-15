@@ -115,11 +115,12 @@ public class GUIMetaElementList extends GUIList {
      */
     @NotNull
     private final MetaserverListener metaserverListener = new MetaserverListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void numberOfEntriesChanged() {
             rebuildList();
         }
+
     };
 
     /**
@@ -128,11 +129,12 @@ public class GUIMetaElementList extends GUIList {
      */
     @NotNull
     private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void entryChanged() {
             setChanged();
         }
+
     };
 
     /**

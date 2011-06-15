@@ -140,12 +140,13 @@ public class JXCWindow {
      */
     @NotNull
     private final WindowFocusListener windowFocusListener = new WindowAdapter() {
-        /** {@inheritDoc} */
+
         @Override
         public void windowLostFocus(final WindowEvent e) {
             keyHandler.reset();
             commandQueue.stopRunning();
         }
+
     };
 
     /**
@@ -154,41 +155,26 @@ public class JXCWindow {
     @NotNull
     private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void delinvReceived(final int tag) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void delitemReceived(@NotNull final int[] tags) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void addItemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
             guiManager.playerReceived();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
             // ignore
@@ -201,7 +187,7 @@ public class JXCWindow {
      */
     @NotNull
     private final WindowListener windowListener = new WindowAdapter() {
-        /** {@inheritDoc} */
+
         @Override
         public void windowClosing(@NotNull final WindowEvent e) {
             if (!guiManager.openQuitDialog()) {
@@ -209,13 +195,13 @@ public class JXCWindow {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void windowClosed(@NotNull final WindowEvent e) {
             if (!frame.isVisible()) {
                 exiter.terminate();
             }
         }
+
     };
 
     /**
@@ -223,7 +209,7 @@ public class JXCWindow {
      */
     @NotNull
     private final KeyListener keyListener = new KeyListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void keyTyped(@NotNull final KeyEvent e) {
             synchronized (semaphoreDrawing) {
@@ -231,7 +217,6 @@ public class JXCWindow {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void keyPressed(@NotNull final KeyEvent e) {
             synchronized (semaphoreDrawing) {
@@ -239,13 +224,13 @@ public class JXCWindow {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void keyReleased(@NotNull final KeyEvent e) {
             synchronized (semaphoreDrawing) {
                 keyHandler.keyReleased(e);
             }
         }
+
     };
 
     /**
@@ -254,13 +239,14 @@ public class JXCWindow {
      */
     @NotNull
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
             synchronized (semaphoreDrawing) {
                 guiManager.openQueryDialog(prompt, queryType);
             }
         }
+
     };
 
     /**
@@ -269,7 +255,7 @@ public class JXCWindow {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void start() {
             server.removeCrossfireQueryListener(crossfireQueryListener);
@@ -279,43 +265,38 @@ public class JXCWindow {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void metaserver() {
             server.removeCrossfireQueryListener(crossfireQueryListener);
             server.removeCrossfireUpdateItemListener(crossfireUpdateItemListener);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             server.addCrossfireQueryListener(crossfireQueryListener);
             server.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**
@@ -324,62 +305,45 @@ public class JXCWindow {
      */
     @NotNull
     private final SentReplyListener sentReplyListener = new SentReplyListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void replySent() {
             guiManager.closeQueryDialog();
         }
+
     };
 
     @NotNull
     private final CrossfireAccountListener accountListener = new CrossfireAccountListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void manageAccount() {
             guiManager.manageAccount();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void addAccount(@NotNull final String name, @NotNull final String characterClass, @NotNull final String race, @NotNull final String face, @NotNull final String party, @NotNull final String map, final int level, final int faceNumber) {
             final CharacterInformation information = new CharacterInformation(name, characterClass, race, face, party, map, level, faceNumber);
             characterModel.add(information);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void startAccountList(@NotNull final String accountName) {
             characterModel.begin();
             guiManager.setAccountName(accountName);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void endAccountList() {
             characterModel.commit();
             guiManager.showCharacters();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void startPlaying() {
             guiManager.hideAccountWindows();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
             guiManager.selectCharacter(accountName, characterName);
@@ -419,9 +383,6 @@ public class JXCWindow {
         frame.addWindowListener(windowListener);
         frame.addComponentListener(new ComponentListener() {
 
-            /**
-             * {@inheritDoc}
-             */
             @Override
             public void componentResized(final ComponentEvent e) {
                 final int width = frame.getContentPane().getWidth();
@@ -429,25 +390,16 @@ public class JXCWindow {
                 guiManager.updateWindowSize(width, height);
             }
 
-            /**
-             * {@inheritDoc}
-             */
             @Override
             public void componentMoved(final ComponentEvent e) {
                 // ignore
             }
 
-            /**
-             * {@inheritDoc}
-             */
             @Override
             public void componentShown(final ComponentEvent e) {
                 // ignore
             }
 
-            /**
-             * {@inheritDoc}
-             */
             @Override
             public void componentHidden(final ComponentEvent e) {
                 // ignore

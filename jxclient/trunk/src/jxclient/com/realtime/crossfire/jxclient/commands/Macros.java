@@ -59,7 +59,7 @@ public class Macros {
      */
     @NotNull
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             switch (type) {
@@ -98,11 +98,11 @@ public class Macros {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void setDebugMode(final boolean printMessageTypes) {
             // ignore
         }
+
     };
 
     /**

@@ -62,7 +62,7 @@ public class GuiStateManager {
      */
     @NotNull
     private final CrossfireServerConnectionListener crossfireServerConnectionListener = new CrossfireServerConnectionListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void clientSocketStateChanged(@NotNull final ClientSocketState clientSocketState) {
             for (final GuiStateListener listener : guiStateListeners) {
@@ -72,6 +72,7 @@ public class GuiStateManager {
                 changeGUI(GuiState.CONNECTED);
             }
         }
+
     };
 
     /**
@@ -80,31 +81,27 @@ public class GuiStateManager {
      */
     @NotNull
     private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void connecting() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void packetReceived(@NotNull final ByteBuffer packet) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void packetSent(@NotNull final byte[] buf, final int len) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void disconnecting(@NotNull final String reason, final boolean isError) {
             synchronized (sync) {
@@ -114,7 +111,6 @@ public class GuiStateManager {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void disconnected(@NotNull final String reason) {
             synchronized (sync) {
@@ -123,6 +119,7 @@ public class GuiStateManager {
                 }
             }
         }
+
     };
 
     /**

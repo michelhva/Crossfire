@@ -151,9 +151,6 @@ public class GuiManager {
     @NotNull
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             if (skin == null) {
@@ -225,9 +222,6 @@ public class GuiManager {
             openDialog(dialog, false);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void setDebugMode(final boolean printMessageTypes) {
             // ignore
@@ -242,9 +236,6 @@ public class GuiManager {
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void start() {
             closeTransientDialogs();
@@ -253,9 +244,6 @@ public class GuiManager {
             showGUIStart();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void metaserver() {
             closeTransientDialogs();
@@ -265,17 +253,11 @@ public class GuiManager {
             activateMetaserverGui();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             if (skin == null) {
@@ -293,25 +275,16 @@ public class GuiManager {
             }
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             updateConnectLabel(clientSocketState, null);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void connected() {
             closeTransientDialogs();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void connectFailed(@NotNull final String reason) {
             closeTransientDialogs();

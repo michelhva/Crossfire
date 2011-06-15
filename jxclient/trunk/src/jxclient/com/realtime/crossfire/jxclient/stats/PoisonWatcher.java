@@ -83,11 +83,12 @@ public class PoisonWatcher {
      */
     @NotNull
     private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandDrawinfoReceived(@NotNull final String text, final int type) {
             check(text);
         }
+
     };
 
     /**
@@ -95,17 +96,17 @@ public class PoisonWatcher {
      */
     @NotNull
     private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             check(message);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void setDebugMode(final boolean printMessageTypes) {
             // ignore
         }
+
     };
 
     /**
@@ -114,11 +115,12 @@ public class PoisonWatcher {
      */
     @NotNull
     private final TimeoutEvent timeoutEvent = new TimeoutEvent() {
-        /** {@inheritDoc} */
+
         @Override
         public void timeout() {
             setActive(false);
         }
+
     };
 
     /**

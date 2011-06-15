@@ -187,11 +187,12 @@ public class ClientSocket {
      */
     @NotNull
     private final Thread thread = new Thread(new Runnable() {
-        /** {@inheritDoc} */
+
         @Override
         public void run() {
             process();
         }
+
     });
 
     /**

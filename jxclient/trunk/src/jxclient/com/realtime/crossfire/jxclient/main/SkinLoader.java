@@ -189,11 +189,12 @@ public class SkinLoader {
         }
         final GuiFactory guiFactory = new GuiFactory(commands, commandCallback, macros);
         final GUIElementListener elementListener = new GUIElementListener() {
-            /** {@inheritDoc} */
+
             @Override
             public void mouseClicked(@NotNull final Gui gui) {
                 windowRenderer.raiseDialog(gui);
             }
+
         };
 
         final JXCSkin skin = skinLoader.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, shortcuts, commands, currentSpellManager, commandCallback, macros, guiFactory);

@@ -52,17 +52,17 @@ public class FacesQueue extends AbstractFaceQueue {
      */
     @NotNull
     private final FaceQueueListener fileCacheFaceQueueListener = new FaceQueueListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages) {
             fireFaceLoaded(face, faceImages);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void faceFailed(@NotNull final Face face) {
             askfaceFaceQueue.loadFace(face);
         }
+
     };
 
     /**
@@ -70,18 +70,18 @@ public class FacesQueue extends AbstractFaceQueue {
      */
     @NotNull
     private final FaceQueueListener askfaceFaceQueueListener = new FaceQueueListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages) {
             fireFaceLoaded(face, faceImages);
             fileCacheFaceQueue.saveFace(face, faceImages);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void faceFailed(@NotNull final Face face) {
             fireFaceFailed(face);
         }
+
     };
 
     /**

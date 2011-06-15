@@ -118,11 +118,12 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      */
     @NotNull
     private final ListSelectionListener listSelectionListener = new ListSelectionListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void valueChanged(@NotNull final ListSelectionEvent e) {
             selectionChanged();
         }
+
     };
 
     /**

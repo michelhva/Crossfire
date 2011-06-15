@@ -58,18 +58,18 @@ public class SkillSet {
      */
     @NotNull
     private final CrossfireSkillInfoListener crossfireSkillInfoListener = new CrossfireSkillInfoListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void clearSkills() {
             clearNumberedSkills();
             Arrays.fill(numberedSkills, null);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void addSkill(final int skillId, @NotNull final String skillName) {
             SkillSet.this.addSkill(skillId, skillName);
         }
+
     };
 
     /**
@@ -78,47 +78,42 @@ public class SkillSet {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void start() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void metaserver() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             clearNumberedSkills();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**

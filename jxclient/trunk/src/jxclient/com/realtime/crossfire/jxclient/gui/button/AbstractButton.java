@@ -72,12 +72,13 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
      */
     @NotNull
     private final TimeoutEvent timeoutEvent = new TimeoutEvent() {
-        /** {@inheritDoc} */
+
         @Override
         public void timeout() {
             execute();
             Timeouts.reset(TIMEOUT_SECOND, timeoutEvent);
         }
+
     };
 
     /**

@@ -52,11 +52,12 @@ public class GUILabelQuery extends GUIMultiLineLabel {
      */
     @NotNull
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
             setText(prompt);
         }
+
     };
 
     /**

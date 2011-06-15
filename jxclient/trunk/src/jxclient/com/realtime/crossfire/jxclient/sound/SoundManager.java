@@ -75,61 +75,40 @@ public class SoundManager {
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void start() {
             muteMusic(true);
             mute(Sounds.CHARACTER, true);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void metaserver() {
             muteMusic(true);
             mute(Sounds.CHARACTER, true);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             muteMusic(true);
             mute(Sounds.CHARACTER, true);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void connected() {
             muteMusic(false);
             mute(Sounds.CHARACTER, false);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore

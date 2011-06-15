@@ -108,47 +108,42 @@ public class JXCConnection {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void start() {
             disconnect("display start screen");
         }
 
-        /** {@inheritDoc} */
         @Override
         public void metaserver() {
             disconnect("display metaserver screen");
         }
 
-        /** {@inheritDoc} */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             connect();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**
@@ -156,11 +151,12 @@ public class JXCConnection {
      */
     @NotNull
     private final CrossfirePickupListener crossfirePickupListener = new CrossfirePickupListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void pickupChanged(final int pickupOptions) {
             characterPickup.setPickupMode(pickupOptions);
         }
+
     };
 
     /**

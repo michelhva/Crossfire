@@ -50,11 +50,12 @@ public class MapScrollSkinEvent implements SkinEvent {
      */
     @NotNull
     private final MapScrollListener mapscrollListener = new MapScrollListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void mapScrolled(final int dx, final int dy) {
             commandList.execute();
         }
+
     };
 
     /**

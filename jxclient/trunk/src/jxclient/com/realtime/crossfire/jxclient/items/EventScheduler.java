@@ -83,7 +83,7 @@ public class EventScheduler {
      */
     @NotNull
     private final Runnable runnable = new Runnable() {
-        /** {@inheritDoc} */
+
         @Override
         public void run() {
             while (true) {
@@ -120,6 +120,7 @@ public class EventScheduler {
                 }
             }
         }
+
     };
 
     /**

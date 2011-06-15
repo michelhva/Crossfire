@@ -70,26 +70,25 @@ public class RenderStateManager {
      */
     @NotNull
     private final BufferListener bufferListener = new BufferListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void lineAdded() {
             renderState.linesAdded(buffer);
             fireChanges();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void lineReplaced() {
             renderState.linesReplaced(buffer);
             fireChanges();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void linesRemoved(@NotNull final List<Line> lines) {
             renderState.linesRemoved(buffer, lines);
             fireChanges();
         }
+
     };
 
     /**

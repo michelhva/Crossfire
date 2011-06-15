@@ -72,7 +72,7 @@ public class CommandQueue {
      */
     @NotNull
     private final CrossfireComcListener crossfireComcListener = new CrossfireComcListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandComcReceived(final int packetNo, final int time) {
             synchronized (pendingCommands) {
@@ -90,6 +90,7 @@ public class CommandQueue {
                 }
             }
         }
+
     };
 
     /**
@@ -98,47 +99,42 @@ public class CommandQueue {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void start() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void metaserver() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             clear();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**

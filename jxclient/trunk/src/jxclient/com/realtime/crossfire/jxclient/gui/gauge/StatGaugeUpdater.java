@@ -72,17 +72,11 @@ public class StatGaugeUpdater extends GaugeUpdater {
     @NotNull
     private final StatsListener statsListener = new StatsListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void reset() {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void statChanged(final int statNo, final int value) {
             switch (stat) {
@@ -144,41 +138,26 @@ public class StatGaugeUpdater extends GaugeUpdater {
             }
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void titleChanged(@NotNull final String title) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void rangeChanged(@NotNull final String range) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void activeSkillChanged(@NotNull final String activeSkill) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void experienceChanged(final long exp) {
             if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL) {
@@ -186,9 +165,6 @@ public class StatGaugeUpdater extends GaugeUpdater {
             }
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void experienceNextLevelChanged(final long expNextLevel) {
             if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL) {
@@ -204,49 +180,31 @@ public class StatGaugeUpdater extends GaugeUpdater {
     @NotNull
     private final ItemSetListener itemSetListener = new ItemSetListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemAdded(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemMoved(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemChanged(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemRemoved(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void playerChanged(@Nullable final CfItem player) {
             active = player != null;
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void openContainerChanged(final int tag) {
             // ignore

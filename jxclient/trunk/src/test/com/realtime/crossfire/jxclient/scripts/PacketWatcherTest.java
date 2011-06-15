@@ -44,25 +44,26 @@ public class PacketWatcherTest {
     public void test1() {
         final Collection<ReceivedPacketListener> listeners = new ArrayList<ReceivedPacketListener>();
         final CrossfireServerConnection connection = new TestCrossfireServerConnection() {
-            /** {@inheritDoc} */
+
             @Override
             public void addPacketWatcherListener(@NotNull final ReceivedPacketListener listener) {
                 listeners.add(listener);
             }
 
-            /** {@inheritDoc} */
             @Override
             public void removePacketWatcherListener(@NotNull final ReceivedPacketListener listener) {
                 listeners.remove(listener);
             }
+
         };
         final StringBuilder sb = new StringBuilder();
         final ScriptProcess scriptProcess = new TestScriptProcess() {
-            /** {@inheritDoc} */
+
             @Override
             public void commandSent(@NotNull final String cmd) {
                 sb.append(cmd).append('\n');
             }
+
         };
         final PacketWatcher packetWatcher = new PacketWatcher(connection, scriptProcess);
 

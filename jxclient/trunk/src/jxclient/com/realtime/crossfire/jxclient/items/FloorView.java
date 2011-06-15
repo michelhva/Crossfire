@@ -52,49 +52,31 @@ public class FloorView extends AbstractItemView {
     @NotNull
     private final ItemSetListener itemSetListener = new ItemSetListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemAdded(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemMoved(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemChanged(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemRemoved(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void playerChanged(@Nullable final CfItem player) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void openContainerChanged(final int tag) {
             setCurrentFloor(tag);
@@ -108,9 +90,6 @@ public class FloorView extends AbstractItemView {
     @NotNull
     private final ItemListener itemListener = new ItemListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemChanged(final int tag) {
             if (currentFloor != 0) {
@@ -118,26 +97,17 @@ public class FloorView extends AbstractItemView {
             }
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemRemoved(final int tag) {
             setCurrentFloor(0);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void inventoryAdded(final int tag, final int index, @NotNull final CfItem item) {
             final int offset = getOffset();
             addModifiedRange(index+offset, itemSet.getNumberOfItemsByLocation(tag)-1+offset);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void inventoryRemoved(final int tag, final int index) {
             final int offset = getOffset();

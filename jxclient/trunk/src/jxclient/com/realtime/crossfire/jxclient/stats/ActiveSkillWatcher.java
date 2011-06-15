@@ -63,53 +63,47 @@ public class ActiveSkillWatcher {
      */
     @NotNull
     private final StatsListener statsListener = new StatsListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void reset() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void statChanged(final int statNo, final int value) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void titleChanged(@NotNull final String title) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void rangeChanged(@NotNull final String range) {
             checkRange(range);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void activeSkillChanged(@NotNull final String activeSkill) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void experienceChanged(final long exp) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void experienceNextLevelChanged(final long expNextLevel) {
             // ignore
         }
+
     };
 
     /**
@@ -117,11 +111,12 @@ public class ActiveSkillWatcher {
      */
     @NotNull
     private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandDrawinfoReceived(@NotNull final String text, final int type) {
             checkMessage(text);
         }
+
     };
 
     /**
@@ -129,17 +124,17 @@ public class ActiveSkillWatcher {
      */
     @NotNull
     private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             checkMessage(message);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void setDebugMode(final boolean printMessageTypes) {
             // ignore
         }
+
     };
 
     /**

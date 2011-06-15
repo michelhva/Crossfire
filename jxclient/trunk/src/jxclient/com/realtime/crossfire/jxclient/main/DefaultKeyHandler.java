@@ -72,41 +72,37 @@ public class DefaultKeyHandler implements KeyHandlerListener {
      */
     @NotNull
     private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void connecting() {
             setConnected(true);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void packetReceived(@NotNull final ByteBuffer packet) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void packetSent(@NotNull final byte[] buf, final int len) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void disconnecting(@NotNull final String reason, final boolean isError) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void disconnected(@NotNull final String reason) {
             setConnected(false);
         }
+
     };
 
     /**

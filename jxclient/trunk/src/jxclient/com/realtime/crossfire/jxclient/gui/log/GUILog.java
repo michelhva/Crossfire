@@ -94,7 +94,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
      */
     @NotNull
     private final RenderStateListener renderStateListener = new RenderStateListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void stateChanged() {
             setChanged();
@@ -103,11 +103,11 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public int getHeight() {
             return GUILog.super.getHeight();
         }
+
     };
 
     /**

@@ -89,9 +89,6 @@ public class GUIItemList extends GUIList {
     @NotNull
     private final LocationsListener locationsListener = new LocationsListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void locationsModified(@NotNull final Integer[] changedSlots) {
             rebuildList(changedSlots);
@@ -105,13 +102,14 @@ public class GUIItemList extends GUIList {
      */
     @NotNull
     private final GUIElementChangedListener itemChangedListener = new GUIElementChangedListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void notifyChanged(@NotNull final GUIElement element) {
             element.resetChanged();
             selectionChanged();
             setChanged();
         }
+
     };
 
     /**

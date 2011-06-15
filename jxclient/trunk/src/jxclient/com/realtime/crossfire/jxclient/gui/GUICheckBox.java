@@ -92,9 +92,6 @@ public class GUICheckBox extends ActivatableGUIElement {
     @NotNull
     private final OptionListener optionListener = new OptionListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void stateChanged() {
             setChanged();

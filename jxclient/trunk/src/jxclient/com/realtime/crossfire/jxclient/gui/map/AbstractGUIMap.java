@@ -186,9 +186,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     @NotNull
     private final MapListener mapListener = new MapListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void mapChanged(@NotNull final CfMap map, @NotNull final Set<CfMapSquare> changedSquares) {
             assert !Thread.holdsLock(map);
@@ -225,9 +222,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     @NotNull
     private final NewmapListener newmapListener = new NewmapListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void commandNewmapReceived() {
             synchronized (bufferedImageSync) {
@@ -253,9 +247,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     @NotNull
     private final MapScrollListener mapscrollListener = new MapScrollListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void mapScrolled(final int dx, final int dy) {
             synchronized (bufferedImageSync) {
@@ -277,9 +268,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     @NotNull
     private final MapSizeListener mapSizeListener = new MapSizeListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void mapSizeChanged(final int mapWidth, final int mapHeight) {
             setMapSize(mapWidth, mapHeight);

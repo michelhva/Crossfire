@@ -203,7 +203,7 @@ public class JXClient {
                                 final Exiter exiter = new Exiter();
                                 final JXCWindow[] window = new JXCWindow[1];
                                 SwingUtilities.invokeAndWait(new Runnable() {
-                                    /** {@inheritDoc} */
+
                                     @Override
                                     public void run() {
                                         final TooltipManager tooltipManager = new TooltipManager();
@@ -260,15 +260,17 @@ public class JXClient {
                                             guiStateManager.changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
                                         }
                                     }
+
                                 });
                                 exiter.waitForTermination();
                                 SwingUtilities.invokeAndWait(new Runnable() {
-                                    /** {@inheritDoc} */
+
                                     @Override
                                     public void run() {
                                         window[0].term();
                                         soundManager.shutdown();
                                     }
+
                                 });
                             } finally {
                                 server.stop();
