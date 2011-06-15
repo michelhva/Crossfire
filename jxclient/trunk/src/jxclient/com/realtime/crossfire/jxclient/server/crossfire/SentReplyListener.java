@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
-import org.jetbrains.annotations.NotNull;
-
 /**
  * Listener for classes interested in sent "reply" commands.
  * @author Andreas Kirschbaum
@@ -31,8 +29,7 @@ public interface SentReplyListener {
 
     /**
      * A "reply" command has been sent to the server.
-     * @param text the reply command text
      */
-    void replySent(@NotNull String text);
+    void replySent();
 
 }

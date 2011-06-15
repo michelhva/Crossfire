@@ -3824,7 +3824,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             writePacket(writeBuffer, byteBuffer.position());
         }
         for (final SentReplyListener sentReplyListener : sentReplyListeners) {
-            sentReplyListener.replySent(text);
+            sentReplyListener.replySent();
         }
     }
 
