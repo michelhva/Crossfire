@@ -666,7 +666,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 packetWatcher.addCommand(tmp[1]);
             }
         } else if (tmp[0].equals("unwatch")) {
-            packetWatcher.removeCommand(tmp.length >= 2 ? tmp[1] : null);
+            packetWatcher.removeCommand(tmp.length >= 2 ? tmp[1] : "");
         } else if (tmp[0].equals("request")) {
             if (tmp.length == 2) {
                 cmdRequest(tmp[1]);
