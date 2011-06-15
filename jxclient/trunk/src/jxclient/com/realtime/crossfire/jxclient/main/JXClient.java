@@ -194,7 +194,7 @@ public class JXClient {
                                 new PoisonWatcher(stats, server);
                                 new ActiveSkillWatcher(stats, server);
                                 final Macros macros = new Macros(server);
-                                final MapUpdaterState mapUpdaterState = new MapUpdaterState(server, facesManager, guiStateManager);
+                                final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, guiStateManager);
                                 new CfMapUpdater(mapUpdaterState, server, facesManager, guiStateManager);
                                 final SpellsManager spellsManager = new SpellsManager(server, guiStateManager);
                                 final SpellsView spellsView = new SpellsView(spellsManager, facesManager);

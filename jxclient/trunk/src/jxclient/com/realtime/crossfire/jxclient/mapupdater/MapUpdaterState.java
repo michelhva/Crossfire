@@ -30,7 +30,6 @@ import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.Location;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import java.util.ArrayList;
@@ -134,15 +133,14 @@ public class MapUpdaterState {
 
     /**
      * Creates a new instance.
-     * @param crossfireServerConnection the connection to monitor
      * @param facesManager the faces manager to track for updated faces
      * @param guiStateManager the gui state manager to watch
      */
-    public MapUpdaterState(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final GuiStateManager guiStateManager) {
+    public MapUpdaterState(@NotNull final FacesManager facesManager, @NotNull final GuiStateManager guiStateManager) {
         this.facesManager = facesManager;
         animations = new Animations(guiStateManager);
         map = new CfMap();
-        visibleAnimations = new CfMapAnimations(crossfireServerConnection, this);
+        visibleAnimations = new CfMapAnimations(this);
     }
 
     /**
@@ -534,6 +532,14 @@ public class MapUpdaterState {
      */
     public void addAnimation(final int animation, final int flags, @NotNull final int[] faces) {
         animations.addAnimation(animation, flags, faces);
+    }
+
+    /**
+     * Processes a tick command.
+     * @param tickNo the current tick number
+     */
+    public void tick(final int tickNo) {
+        visibleAnimations.tick(tickNo);
     }
 
 }
