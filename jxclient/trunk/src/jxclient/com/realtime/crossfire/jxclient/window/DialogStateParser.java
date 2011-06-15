@@ -168,8 +168,8 @@ public class DialogStateParser {
         }
 
         final File dir = dialogsFile.getParentFile();
-        if (dir != null) {
-            dir.mkdirs();
+        if (dir != null && !dir.mkdirs()) {
+            System.err.println(skin.getSkinName()+": cannot create directory");
         }
 
         final List<Gui> openDialogs = new LinkedList<Gui>();
