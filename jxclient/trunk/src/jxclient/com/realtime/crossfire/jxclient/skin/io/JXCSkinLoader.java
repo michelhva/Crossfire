@@ -95,7 +95,7 @@ import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.SpellsView;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
@@ -226,10 +226,10 @@ public class JXCSkinLoader {
     private final Stats stats;
 
     /**
-     * The {@link CfMapUpdater} instance to use.
+     * The {@link MapUpdaterState} instance to use.
      */
     @NotNull
-    private final CfMapUpdater mapUpdater;
+    private final MapUpdaterState mapUpdaterState;
 
     /**
      * The default key bindings.
@@ -359,7 +359,7 @@ public class JXCSkinLoader {
      * @param spellsManager the spells manager instance to use
      * @param facesManager the faces manager instance to use
      * @param stats the stats instance to use
-     * @param mapUpdater the map updater instance to use
+     * @param mapUpdaterState the map updater state instance to use
      * @param defaultKeyBindings the default key bindings
      * @param optionManager the option manager to use
      * @param experienceTable the experience table to use
@@ -367,7 +367,7 @@ public class JXCSkinLoader {
      * @param defaultTileSize the default tile size for the map view
      * @param keybindingsManager the keybindings manager to use
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
@@ -377,7 +377,7 @@ public class JXCSkinLoader {
         this.defaultTileSize = defaultTileSize;
         facesProviderFactory = new FacesProviderFactory(facesManager);
         this.stats = stats;
-        this.mapUpdater = mapUpdater;
+        this.mapUpdaterState = mapUpdaterState;
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
         this.experienceTable = experienceTable;
@@ -1040,7 +1040,7 @@ public class JXCSkinLoader {
             skin.addSkinEvent(new CrossfireMagicmapSkinEvent(commandList, server));
         } else if (type.equals("mapscroll")) {
             final CommandList commandList = skin.getCommandList(args.get());
-            skin.addSkinEvent(new MapScrollSkinEvent(commandList, mapUpdater));
+            skin.addSkinEvent(new MapScrollSkinEvent(commandList, mapUpdaterState));
         } else if (type.equals("skill")) {
             final String subtype = args.get();
             final Skill skill = skillSet.getNamedSkill(args.get().replaceAll("_", " "));
@@ -1639,7 +1639,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        final AbstractGUIElement element = new GUIMiniMap(tooltipManager, elementListener, name, mapUpdater, facesProvider, w, h);
+        final AbstractGUIElement element = new GUIMiniMap(tooltipManager, elementListener, name, mapUpdaterState, facesProvider, w, h);
         insertGuiElement(element);
     }
 
@@ -1658,7 +1658,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size "+defaultTileSize);
         }
-        insertGuiElement(new GUIMap(tooltipManager, elementListener, name, mapUpdater, facesProvider, server));
+        insertGuiElement(new GUIMap(tooltipManager, elementListener, name, mapUpdaterState, facesProvider, server));
     }
 
     /**

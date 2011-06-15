@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireTickListener;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
@@ -64,10 +64,10 @@ public class CfMapAnimations {
     private int height = 0;
 
     /**
-     * The {@link CfMapUpdater} instance to update.
+     * The {@link MapUpdaterState} instance to update.
      */
     @NotNull
-    private final CfMapUpdater mapUpdater;
+    private final MapUpdaterState mapUpdaterState;
 
     /**
      * The animations in the visible map area.
@@ -109,19 +109,19 @@ public class CfMapAnimations {
 
     /**
      * Creates a new instance.
-     * @param mapUpdater the instance to update
+     * @param mapUpdaterState the instance to update
      */
-    public CfMapAnimations(@NotNull final CfMapUpdater mapUpdater) {
-        this.mapUpdater = mapUpdater;
+    public CfMapAnimations(@NotNull final MapUpdaterState mapUpdaterState) {
+        this.mapUpdaterState = mapUpdaterState;
     }
 
     /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection to watch
-     * @param mapUpdater the instance to update
+     * @param mapUpdaterState the instance to update
      */
-    public CfMapAnimations(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CfMapUpdater mapUpdater) {
-        this(mapUpdater);
+    public CfMapAnimations(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final MapUpdaterState mapUpdaterState) {
+        this(mapUpdaterState);
         crossfireServerConnection.addCrossfireTickListener(crossfireTickListener);
     }
 
@@ -153,12 +153,12 @@ public class CfMapAnimations {
         switch (type) {
         default: // invalid; treated as "normal"
         case Map2.ANIM_NORMAL: // animation starts at index 0
-            animationState = new AnimationState(mapUpdater, animation, 0);
+            animationState = new AnimationState(mapUpdaterState, animation, 0);
             addToPendingTickUpdates = true;
             break;
 
         case Map2.ANIM_RANDOM: // animation starts at random index
-            animationState = new AnimationState(mapUpdater, animation, random.nextInt(animation.getFaces()));
+            animationState = new AnimationState(mapUpdaterState, animation, random.nextInt(animation.getFaces()));
             addToPendingTickUpdates = true;
             break;
 
@@ -169,7 +169,7 @@ public class CfMapAnimations {
                 animationState = tmp;
                 addToPendingTickUpdates = false;
             } else {
-                animationState = new AnimationState(mapUpdater, animation, 0);
+                animationState = new AnimationState(mapUpdaterState, animation, 0);
                 syncAnimationStates.put(animationId, animationState);
                 addToPendingTickUpdates = true;
             }
@@ -244,11 +244,11 @@ public class CfMapAnimations {
             pendingTickUpdates.clear();
             animationStatesToUpdate = new ArrayList<AnimationState>(animationStates.keySet());
         }
-        mapUpdater.processMapBegin();
+        mapUpdaterState.processMapBegin();
         for (final AnimationState animationState : animationStatesToUpdate) {
             animationState.updateTickNo(tickNo);
         }
-        mapUpdater.processMapEnd(false);
+        mapUpdaterState.processMapEnd(false);
     }
 
     /**

@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
@@ -37,10 +37,10 @@ import org.jetbrains.annotations.NotNull;
 public class AnimationState implements Iterable<Location> {
 
     /**
-     * The {@link CfMapUpdater} instance to use.
+     * The {@link MapUpdaterState} instance to use.
      */
     @NotNull
-    private final CfMapUpdater mapUpdater;
+    private final MapUpdaterState mapUpdaterState;
 
     /**
      * The {@link Animation} to display.
@@ -77,12 +77,12 @@ public class AnimationState implements Iterable<Location> {
 
     /**
      * Creates a new instance.
-     * @param mapUpdater the map updater instance to use
+     * @param mapUpdaterState the map updater state instance to use
      * @param animation the animation to display
      * @param index the initial face index
      */
-    public AnimationState(@NotNull final CfMapUpdater mapUpdater, @NotNull final Animation animation, final int index) {
-        this.mapUpdater = mapUpdater;
+    public AnimationState(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final Animation animation, final int index) {
+        this.mapUpdaterState = mapUpdaterState;
         this.animation = animation;
         this.index = index%animation.getFaces();
     }
@@ -136,7 +136,7 @@ public class AnimationState implements Iterable<Location> {
         }
         lastFace = face;
         for (final Location location : locations) {
-            mapUpdater.processMapFace(location, face, false);
+            mapUpdaterState.processMapFace(location, face, false);
         }
     }
 
@@ -149,7 +149,7 @@ public class AnimationState implements Iterable<Location> {
             throw new IllegalArgumentException();
         }
         if (lastFace != -1) {
-            mapUpdater.processMapFace(location, lastFace, false);
+            mapUpdaterState.processMapFace(location, lastFace, false);
         }
     }
 

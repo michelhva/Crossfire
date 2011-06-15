@@ -22,8 +22,8 @@
 package com.realtime.crossfire.jxclient.skin.events;
 
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapScrollListener;
+import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -40,13 +40,13 @@ public class MapScrollSkinEvent implements SkinEvent {
     private final CommandList commandList;
 
     /**
-     * The {@link CfMapUpdater} to attach to.
+     * The {@link MapUpdaterState} to attach to.
      */
     @NotNull
-    private final CfMapUpdater mapUpdater;
+    private final MapUpdaterState mapUpdaterState;
 
     /**
-     * The {@link MapScrollListener} attached to {@link #mapUpdater}.
+     * The {@link MapScrollListener} attached to {@link #mapUpdaterState}.
      */
     @NotNull
     private final MapScrollListener mapscrollListener = new MapScrollListener() {
@@ -61,12 +61,12 @@ public class MapScrollSkinEvent implements SkinEvent {
     /**
      * Creates a new instance.
      * @param commandList the command list to execute
-     * @param mapUpdater the map updater to attach to
+     * @param mapUpdaterState the map updater state to attach to
      */
-    public MapScrollSkinEvent(@NotNull final CommandList commandList, @NotNull final CfMapUpdater mapUpdater) {
+    public MapScrollSkinEvent(@NotNull final CommandList commandList, @NotNull final MapUpdaterState mapUpdaterState) {
         this.commandList = commandList;
-        this.mapUpdater = mapUpdater;
-        mapUpdater.addCrossfireMapScrollListener(mapscrollListener);
+        this.mapUpdaterState = mapUpdaterState;
+        this.mapUpdaterState.addCrossfireMapScrollListener(mapscrollListener);
     }
 
     /**
@@ -74,7 +74,7 @@ public class MapScrollSkinEvent implements SkinEvent {
      */
     @Override
     public void dispose() {
-        mapUpdater.removeCrossfireMapScrollListener(mapscrollListener);
+        mapUpdaterState.removeCrossfireMapScrollListener(mapscrollListener);
     }
 
 }
