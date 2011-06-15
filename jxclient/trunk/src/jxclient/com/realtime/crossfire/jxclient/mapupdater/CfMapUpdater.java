@@ -43,7 +43,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Utility class to update a {@link CfMap} model from protocol commands.
@@ -388,7 +387,7 @@ public class CfMapUpdater {
                 if (clearAnimation) {
                     visibleAnimations.remove(location);
                 }
-                final Face face = getFace(faceNum);
+                final Face face = facesManager.getFace2(faceNum);
                 final int x = location.getX();
                 final int y = location.getY();
                 if (x >= width || y >= height) {
@@ -488,17 +487,6 @@ public class CfMapUpdater {
                 listener.mapChanged(map, squares);
             }
         }
-    }
-
-    /**
-     * Returns the {@link Face} instance by face ID.
-     * @param faceNum the face ID
-     * @return return the face instance, or <code>null</code> if
-     *         <code>faceNum==0</code>
-     */
-    @Nullable
-    private Face getFace(final int faceNum) {
-        return facesManager.getFace2(faceNum);
     }
 
     /**
