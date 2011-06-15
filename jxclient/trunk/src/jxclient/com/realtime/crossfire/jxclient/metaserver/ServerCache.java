@@ -34,6 +34,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Maintains a set of known servers backed up in a file.
@@ -57,14 +58,14 @@ public class ServerCache {
     /**
      * The backing file.
      */
-    @NotNull
+    @Nullable
     private final File file;
 
     /**
      * Create a new instance.
-     * @param file The backing file.
+     * @param file The backing file or <code>null</code> to not cache on disk
      */
-    public ServerCache(@NotNull final File file) {
+    public ServerCache(@Nullable final File file) {
         this.file = file;
 
         load();
