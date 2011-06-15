@@ -326,7 +326,7 @@ public class JXCWindow {
     private final SentReplyListener sentReplyListener = new SentReplyListener() {
         /** {@inheritDoc} */
         @Override
-        public void replySent(@NotNull final String text) {
+        public void replySent() {
             guiManager.closeQueryDialog();
         }
     };
