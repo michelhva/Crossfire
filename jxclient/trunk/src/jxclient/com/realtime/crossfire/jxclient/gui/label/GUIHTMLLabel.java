@@ -121,7 +121,8 @@ public class GUIHTMLLabel extends AbstractLabel {
         try {
             parserDelegator.parse(reader, renderer, false);
         } catch (final IOException ex) {
-            // XXX: handle exception
+            System.err.println("GUIHTMLLabel: cannot render HTML: "+ex.getMessage());
+            System.err.println(getText());
         }
     }
 
