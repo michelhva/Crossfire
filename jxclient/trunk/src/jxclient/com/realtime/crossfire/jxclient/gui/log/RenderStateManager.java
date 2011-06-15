@@ -72,14 +72,14 @@ public class RenderStateManager {
     private final BufferListener bufferListener = new BufferListener() {
         /** {@inheritDoc} */
         @Override
-        public void linesAdded(final int lines) {
+        public void lineAdded() {
             renderState.linesAdded(buffer);
             fireChanges();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void linesReplaced(final int lines) {
+        public void lineReplaced() {
             renderState.linesReplaced(buffer);
             fireChanges();
         }
