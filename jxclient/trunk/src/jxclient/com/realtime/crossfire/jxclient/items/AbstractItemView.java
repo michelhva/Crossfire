@@ -86,7 +86,7 @@ public abstract class AbstractItemView implements ItemView {
      * The {@link EventScheduler} for delaying event generation.
      */
     @NotNull
-    private final EventScheduler fireEventScheduler = new EventScheduler(100, 500, fireEventCallback);
+    private final EventScheduler fireEventScheduler = new EventScheduler(100, 1, fireEventCallback);
 
     /**
      * {@inheritDoc}
