@@ -187,8 +187,15 @@ public class GUICheckBox extends ActivatableGUIElement {
      * {@inheritDoc}
      */
     @Override
-    public void mouseReleased(@NotNull final MouseEvent e) {
-        super.mouseReleased(e);
+    protected void activeChanged() {
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void mouseClicked(@NotNull final MouseEvent e) {
+        super.mouseClicked(e);
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
@@ -201,13 +208,6 @@ public class GUICheckBox extends ActivatableGUIElement {
         case MouseEvent.BUTTON3:
             break;
         }
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    protected void activeChanged() {
     }
 
     /**

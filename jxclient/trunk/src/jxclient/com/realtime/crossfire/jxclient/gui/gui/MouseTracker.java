@@ -56,6 +56,16 @@ public class MouseTracker {
     private AbstractGUIElement activeComponent = null;
 
     /**
+     * Whether a dragging operation is in progress.
+     */
+    private boolean isDragging = false;
+
+    /**
+     * Whether a button release event is considered a "click".
+     */
+    private boolean isClicked = false;
+
+    /**
      * Creates a new instance.
      * @param debugGui whether GUI elements should be highlighted
      */
@@ -64,9 +74,11 @@ public class MouseTracker {
     }
 
     public void mouseDragged(@Nullable final GUIElement element, @NotNull final MouseEvent e) {
-        if (element != null) {
-            element.mouseMoved(e);
-            element.mouseDragged(e);
+        if (mouseElement != null) {
+            mouseElement.mouseMoved(e);
+        }
+        if (isDragging && mouseElement != null) {
+            mouseElement.mouseDragged(e);
         }
     }
 
@@ -79,18 +91,20 @@ public class MouseTracker {
 
     public void mousePressed(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         enterElement(element, e);
+        isDragging = true;
+        isClicked = true;
         if (mouseElement != null) {
             mouseElement.mousePressed(e);
         }
     }
 
     public void mouseReleased(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
-        final boolean isClicked = element != null && mouseElement == element;
+        final boolean tmpIsClicked = isClicked;
+        isDragging = false;
         enterElement(element, e);
-        if (isClicked) {
+        if (tmpIsClicked && element != null) {
             // cannot use mouseElement here: it might be invalid if the
             // previous call to mouseReleased() did close the owner dialog
-            assert element != null;
             element.mouseClicked(e);
         }
         if (mouseElement != null) {
@@ -99,11 +113,17 @@ public class MouseTracker {
     }
 
     public void mouseEntered(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
-        enterElement(element, e);
+        isClicked = false;
+        if (!isDragging) {
+            enterElement(element, e);
+        }
     }
 
     public void mouseExited(@NotNull final MouseEvent e) {
-        enterElement(null, e);
+        isClicked = false;
+        if (!isDragging) {
+            enterElement(null, e);
+        }
     }
 
     /**
