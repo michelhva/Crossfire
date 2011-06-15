@@ -68,11 +68,12 @@ public class ShortcutSpell extends Shortcut {
      */
     @NotNull
     private final SpellListener spellListener = new SpellListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void spellChanged() {
             fireModifiedEvent();
         }
+
     };
 
     /**

@@ -108,19 +108,18 @@ public class Stats {
      */
     @NotNull
     private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener() {
+
         /**
          * All unhandled stat values for which an error has been printed.
          */
         @NotNull
         private final Collection<String> unhandledStats = new HashSet<String>(0);
 
-        /** {@inheritDoc} */
         @Override
         public void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed) {
             Stats.this.setSimpleWeaponSpeed(simpleWeaponSpeed);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void statInt2Received(final int stat, final short param) {
             switch (stat) {
@@ -186,7 +185,6 @@ public class Stats {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void statInt4Received(final int stat, final int param) {
             switch (stat) {
@@ -209,7 +207,6 @@ public class Stats {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void statInt8Received(final int stat, final long param) {
             switch (stat) {
@@ -223,7 +220,6 @@ public class Stats {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void statStringReceived(final int stat, @NotNull final String param) {
             switch (stat) {
@@ -241,7 +237,6 @@ public class Stats {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void statSkillReceived(final int stat, final int level, final long experience) {
             if (CS_STAT_SKILLINFO <= stat && stat < CS_STAT_SKILLINFO+CS_NUM_SKILLS) {
@@ -266,6 +261,7 @@ public class Stats {
                 System.err.println("Warning: unhandled stat "+stat+" of type "+type);
             }
         }
+
     };
 
     /**
@@ -274,47 +270,42 @@ public class Stats {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void start() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void metaserver() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             reset();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**

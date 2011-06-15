@@ -55,7 +55,7 @@ public class ExperienceTable {
      */
     @NotNull
     private final CrossfireExpTableListener crossfireExpTableListener = new CrossfireExpTableListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void expTableReceived(@NotNull final long[] expTable) {
             clear();
@@ -63,6 +63,7 @@ public class ExperienceTable {
                 add(level, expTable[level]);
             }
         }
+
     };
 
     /**

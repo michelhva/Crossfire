@@ -70,25 +70,22 @@ public class ItemsManager {
      */
     @NotNull
     private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void delinvReceived(final int tag) {
             itemSet.cleanInventory(tag);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void delitemReceived(@NotNull final int[] tags) {
             itemSet.removeItems(tags);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void addItemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
             itemSet.addItem(new CfItem(location, tag, flags, weight, facesManager.getFace(faceNum), name, namePl, anim, animSpeed, nrof, type));
         }
 
-        /** {@inheritDoc} */
         @Override
         public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
             stats.setActiveSkill("");
@@ -97,7 +94,6 @@ public class ItemsManager {
             stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, weight);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
             itemSet.updateItem(flags, tag, valLocation, valFlags, valWeight, facesManager.getFace(valFaceNum), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
@@ -108,6 +104,7 @@ public class ItemsManager {
                 }
             }
         }
+
     };
 
     /**
@@ -116,47 +113,42 @@ public class ItemsManager {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void start() {
             itemSet.reset();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void metaserver() {
             itemSet.reset();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             itemSet.reset();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**

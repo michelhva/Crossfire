@@ -61,13 +61,12 @@ public class GUILabelStats extends GUIOneLineLabel {
      */
     @NotNull
     private final StatsListener statsListener = new StatsListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void reset() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void statChanged(final int statNo, final int value) {
             switch (stat) {
@@ -100,13 +99,11 @@ public class GUILabelStats extends GUIOneLineLabel {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void titleChanged(@NotNull final String title) {
             if (stat == CrossfireStatsListener.CS_STAT_TITLE) {
@@ -114,7 +111,6 @@ public class GUILabelStats extends GUIOneLineLabel {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void rangeChanged(@NotNull final String range) {
             if (stat != CrossfireStatsListener.CS_STAT_RANGE) {
@@ -134,13 +130,11 @@ public class GUILabelStats extends GUIOneLineLabel {
             setText(text);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void activeSkillChanged(@NotNull final String activeSkill) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void experienceChanged(final long exp) {
             if (stat == CrossfireStatsListener.CS_STAT_EXP || stat == CrossfireStatsListener.CS_STAT_EXP64) {
@@ -148,13 +142,13 @@ public class GUILabelStats extends GUIOneLineLabel {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void experienceNextLevelChanged(final long expNextLevel) {
             if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL) {
                 setText(String.valueOf(expNextLevel));
             }
         }
+
     };
 
     /**

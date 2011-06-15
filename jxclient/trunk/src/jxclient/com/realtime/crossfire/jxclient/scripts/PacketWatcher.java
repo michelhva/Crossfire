@@ -68,7 +68,7 @@ public class PacketWatcher {
      */
     @NotNull
     private final ReceivedPacketListener receivedPacketListener = new ReceivedPacketListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void processEmpty(@NotNull final String command) {
             if (matchesCommand(command)) {
@@ -76,7 +76,6 @@ public class PacketWatcher {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void processAscii(@NotNull final String command, @NotNull final ByteBuffer packet) {
             if (matchesCommand(command)) {
@@ -86,7 +85,6 @@ public class PacketWatcher {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void processShortArray(@NotNull final String command, @NotNull final ByteBuffer packet) {
             if (matchesCommand(command)) {
@@ -100,7 +98,6 @@ public class PacketWatcher {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void processIntArray(@NotNull final String command, @NotNull final ByteBuffer packet) {
             if (matchesCommand(command)) {
@@ -114,7 +111,6 @@ public class PacketWatcher {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void processShortInt(@NotNull final String command, @NotNull final ByteBuffer packet) {
             if (packet.remaining() == 6 && matchesCommand(command)) {
@@ -122,7 +118,6 @@ public class PacketWatcher {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void processMixed(@NotNull final String command, @NotNull final ByteBuffer packet) {
             if (matchesCommand(command)) {
@@ -134,7 +129,6 @@ public class PacketWatcher {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void processStats(@NotNull final String command, final int stat, @NotNull final Object[] args) {
             if (matchesCommand(command)) {
@@ -150,7 +144,6 @@ public class PacketWatcher {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void processNoData(@NotNull final String command, @NotNull final ByteBuffer packet) {
             processMixed(command, packet);
@@ -173,6 +166,7 @@ public class PacketWatcher {
         private int getInt(@NotNull final ByteBuffer packet) {
             return packet.getInt();
         }
+
     };
 
     /**

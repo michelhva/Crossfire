@@ -76,23 +76,22 @@ public class SpellsManager implements Iterable<Spell> {
      */
     @NotNull
     private final CrossfireSpellListener crossfireSpellListener = new CrossfireSpellListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, @NotNull final String name, @NotNull final String message) {
             SpellsManager.this.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void deleteSpell(final int tag) {
             SpellsManager.this.deleteSpell(tag);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) {
             SpellsManager.this.updateSpell(flags, tag, mana, grace, damage);
         }
+
     };
 
     /**
@@ -101,47 +100,42 @@ public class SpellsManager implements Iterable<Spell> {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void start() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void metaserver() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             spells.clear();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**

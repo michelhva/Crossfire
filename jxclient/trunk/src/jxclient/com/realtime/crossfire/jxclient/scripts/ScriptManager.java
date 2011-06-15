@@ -139,7 +139,7 @@ public class ScriptManager {
         nextScriptId++;
         scriptProcesses.add(scriptProcess);
         scriptProcess.addScriptProcessListener(new ScriptProcessListener() {
-            /** {@inheritDoc} */
+
             @Override
             public void scriptTerminated(final String result) {
                 scriptProcesses.remove(scriptProcess);
@@ -149,6 +149,7 @@ public class ScriptManager {
                     crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' failed: "+result, CrossfireDrawinfoListener.NDI_RED);
                 }
             }
+
         });
         crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' started.", CrossfireDrawinfoListener.NDI_BLACK);
         new Thread(scriptProcess).start();

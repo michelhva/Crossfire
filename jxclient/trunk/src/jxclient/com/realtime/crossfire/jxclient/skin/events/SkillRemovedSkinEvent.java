@@ -50,23 +50,22 @@ public class SkillRemovedSkinEvent implements SkinEvent {
      */
     @NotNull
     private final SkillListener skillListener = new SkillListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void gainedSkill() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void lostSkill() {
             commandList.execute();
         }
 
-        /** {@inheritDoc} */
         @Override
         public void changedSkill() {
             // ignore
         }
+
     };
 
     /**

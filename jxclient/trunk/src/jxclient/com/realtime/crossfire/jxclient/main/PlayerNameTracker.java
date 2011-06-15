@@ -56,49 +56,31 @@ public class PlayerNameTracker {
     @NotNull
     private final ItemSetListener itemSetListener = new ItemSetListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemAdded(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemMoved(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemChanged(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemRemoved(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void playerChanged(@Nullable final CfItem player) {
             connection.setCharacter(player == null ? null : player.getName());
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void openContainerChanged(final int tag) {
             // ignore
@@ -112,47 +94,42 @@ public class PlayerNameTracker {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void start() {
             itemSet.removeItemSetListener(itemSetListener);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void metaserver() {
             itemSet.removeItemSetListener(itemSetListener);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             connection.setHost(serverInfo);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             itemSet.addItemSetListener(itemSetListener);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**

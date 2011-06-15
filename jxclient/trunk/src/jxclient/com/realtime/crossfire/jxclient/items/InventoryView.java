@@ -72,49 +72,31 @@ public class InventoryView extends AbstractItemView {
     @NotNull
     private final ItemSetListener itemSetListener = new ItemSetListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemAdded(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemMoved(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemChanged(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemRemoved(@NotNull final CfItem item) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void playerChanged(@Nullable final CfItem player) {
             setCurrentPlayerTag(player == null ? -1 : player.getTag());
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void openContainerChanged(final int tag) {
             // ignore
@@ -128,25 +110,16 @@ public class InventoryView extends AbstractItemView {
     @NotNull
     private final ItemListener playerInventoryListener = new ItemListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemChanged(final int tag) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void itemRemoved(final int tag) {
             // ignore; will be detected by itemSetListener
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void inventoryAdded(final int tag, final int index, @NotNull final CfItem item) {
             assert tag == currentPlayerTag;
@@ -157,9 +130,6 @@ public class InventoryView extends AbstractItemView {
             addModifiedRange(index2, itemSet.getNumberOfItemsByLocation(tag)-1);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void inventoryRemoved(final int tag, final int index) {
             assert tag == currentPlayerTag;
@@ -169,6 +139,7 @@ public class InventoryView extends AbstractItemView {
             items.remove(index2);
             addModifiedRange(index2, itemSet.getNumberOfItemsByLocation(tag));
         }
+
     };
 
     /**

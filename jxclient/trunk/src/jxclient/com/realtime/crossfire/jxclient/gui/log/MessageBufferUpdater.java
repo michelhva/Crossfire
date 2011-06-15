@@ -132,13 +132,14 @@ public class MessageBufferUpdater {
      */
     @NotNull
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
             if (isTypeShown(MessageTypes.MSG_TYPE_QUERY)) {
                 parser.parseWithoutMediaTags(addMessageTypePrefix(MessageTypes.MSG_TYPE_QUERY, 0, CrossfireDrawinfoListener.NDI_RED, prompt), findColor(CrossfireDrawinfoListener.NDI_RED), buffer);
             }
         }
+
     };
 
     /**
@@ -148,7 +149,6 @@ public class MessageBufferUpdater {
     @NotNull
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
 
-        /** {@inheritDoc} */
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             if (type == MessageTypes.MSG_TYPE_QUERY // should not happen; but if it happens just display it
@@ -162,11 +162,11 @@ public class MessageBufferUpdater {
             }
         }
 
-        /** {@inheritDoc} */
         @Override
         public void setDebugMode(final boolean printMessageTypes) {
             MessageBufferUpdater.this.printMessageTypes = printMessageTypes;
         }
+
     };
 
     /**
@@ -175,7 +175,7 @@ public class MessageBufferUpdater {
      */
     @NotNull
     private final CrossfireDrawinfoListener crossfireDrawinfoListener = new CrossfireDrawinfoListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandDrawinfoReceived(@NotNull final String text, final int type) {
             // guess category from message color
@@ -197,6 +197,7 @@ public class MessageBufferUpdater {
                 parser.parseWithoutMediaTags(addMessageTypePrefix(messageType, 0, type, text), findColor(type), buffer);
             }
         }
+
     };
 
     /**

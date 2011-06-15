@@ -103,12 +103,13 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      */
     @NotNull
     private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void entryChanged() {
             setChanged();
             updateTooltip();
         }
+
     };
 
     /**

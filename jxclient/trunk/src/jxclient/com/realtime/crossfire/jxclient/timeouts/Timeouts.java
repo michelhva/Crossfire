@@ -53,7 +53,7 @@ public class Timeouts {
      */
     @NotNull
     private static final Runnable DELIVER_PENDING_TIMEOUTS = new Runnable() {
-        /** {@inheritDoc} */
+
         @Override
         public void run() {
             try {
@@ -90,6 +90,7 @@ public class Timeouts {
                 Thread.currentThread().interrupt();
             }
         }
+
     };
 
     static {

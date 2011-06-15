@@ -50,11 +50,12 @@ public class CrossfireMagicmapSkinEvent implements SkinEvent {
      */
     @NotNull
     private final CrossfireMagicmapListener crossfireMagicmapListener = new CrossfireMagicmapListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void commandMagicmapReceived() {
             commandList.execute();
         }
+
     };
 
     /**

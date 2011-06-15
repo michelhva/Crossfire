@@ -162,25 +162,22 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      */
     @NotNull
     private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void connecting() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void packetReceived(@NotNull final ByteBuffer packet) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void packetSent(@NotNull final byte[] buf, final int len) {
             final String cmd;
@@ -192,17 +189,16 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             commandSent(cmd);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void disconnecting(@NotNull final String reason, final boolean isError) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void disconnected(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**

@@ -156,9 +156,6 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
             this.face = face;
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void run() {
             try {
@@ -221,9 +218,6 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
             this.faceImages = faceImages;
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void run() {
             imageCacheOriginal.save(face, faceImages.getOriginalImageIcon());

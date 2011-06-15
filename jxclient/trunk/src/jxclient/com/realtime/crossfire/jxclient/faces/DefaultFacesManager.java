@@ -59,19 +59,19 @@ public class DefaultFacesManager extends AbstractFacesManager {
      */
     @NotNull
     private final FaceQueueListener faceQueueListener = new FaceQueueListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages) {
             face.setFaceImages(faceImages);
             fireFaceUpdated(face);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void faceFailed(@NotNull final Face face) {
             face.setFaceImages(unknownFaceImages);
             fireFaceUpdated(face);
         }
+
     };
 
     /**

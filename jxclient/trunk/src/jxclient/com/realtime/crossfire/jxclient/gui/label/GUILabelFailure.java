@@ -53,21 +53,16 @@ public class GUILabelFailure extends GUIMultiLineLabel {
     @NotNull
     private final CrossfireFailureListener crossfireFailureListener = new CrossfireFailureListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void failure(@NotNull final String command, @NotNull final String arguments) {
             setText(arguments);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void clearFailure() {
             setText("");
         }
+
     };
 
     /**

@@ -297,9 +297,6 @@ public class JXCWindowRenderer {
     @NotNull
     private final GuiAutoCloseListener guiAutoCloseListener = new GuiAutoCloseListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void autoClosed(@NotNull final Gui gui) {
             closeDialog(gui);
@@ -313,9 +310,6 @@ public class JXCWindowRenderer {
     @NotNull
     private final ComponentListener componentListener = new ComponentListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void componentResized(final ComponentEvent e) {
             final RootPaneContainer tmpFrame = frame;
@@ -326,25 +320,16 @@ public class JXCWindowRenderer {
             updateServerSettings();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void componentMoved(final ComponentEvent e) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void componentShown(final ComponentEvent e) {
             updateServerSettings();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void componentHidden(final ComponentEvent e) {
             // ignore
@@ -752,11 +737,12 @@ public class JXCWindowRenderer {
     @NotNull
     public Iterable<Gui> getOpenDialogs() {
         return new Iterable<Gui>() {
-            /** {@inheritDoc} */
+
             @Override
             public Iterator<Gui> iterator() {
                 return new OpenDialogsIterator();
             }
+
         };
     }
 
@@ -1100,31 +1086,23 @@ public class JXCWindowRenderer {
         @NotNull
         private final ListIterator<Gui> it = openDialogs.listIterator(openDialogs.size());
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public boolean hasNext() {
             return it.hasPrevious();
         }
 
-        /**
-         * {@inheritDoc}
-         * @noinspection IteratorNextCanNotThrowNoSuchElementException
-         */
+        @SuppressWarnings("IteratorNextCanNotThrowNoSuchElementException")
         @NotNull
         @Override
         public Gui next() {
             return it.previous();
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void remove() {
             throw new UnsupportedOperationException();
         }
+
     }
 
     /**

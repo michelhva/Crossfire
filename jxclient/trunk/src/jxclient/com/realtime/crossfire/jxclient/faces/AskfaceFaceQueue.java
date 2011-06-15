@@ -85,11 +85,12 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
      */
     @NotNull
     private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void updateFace(final int faceNum, final int faceSetNum, @NotNull final ByteBuffer packet) {
             faceReceived(faceNum, faceSetNum, packet);
         }
+
     };
 
     /**

@@ -68,7 +68,7 @@ public class GUISpellLabel extends GUIHTMLLabel {
      */
     @NotNull
     private final CurrentSpellManagerListener currentSpellManagerListener = new CurrentSpellManagerListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void spellChanged(@Nullable final Spell spell) {
             if (spell == null) {
@@ -107,6 +107,7 @@ public class GUISpellLabel extends GUIHTMLLabel {
                 break;
             }
         }
+
     };
 
     /**

@@ -76,65 +76,41 @@ public class StatsWatcher {
     @NotNull
     private final StatsListener statsListener = new StatsListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void reset() {
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void statChanged(final int statNo, final int value) {
             checkStats(statNo, value);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void titleChanged(@NotNull final String title) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void rangeChanged(@NotNull final String range) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void activeSkillChanged(@NotNull final String activeSkill) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void experienceChanged(final long exp) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void experienceNextLevelChanged(final long expNextLevel) {
             // ignore
@@ -148,9 +124,6 @@ public class StatsWatcher {
     @NotNull
     private final RendererGuiStateListener rendererGuiStateListener = new RendererGuiStateListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void guiStateChanged(@NotNull final RendererGuiState rendererGuiState) {
             active = rendererGuiState == RendererGuiState.PLAYING;
@@ -165,41 +138,26 @@ public class StatsWatcher {
     @NotNull
     private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void delinvReceived(final int tag) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void delitemReceived(@NotNull final int[] tags) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void addItemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
             // ignore

@@ -54,41 +54,26 @@ public class PickupTracker {
     @NotNull
     private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener() {
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void delinvReceived(final int tag) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void delitemReceived(@NotNull final int[] tags) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void addItemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
             // ignore
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
             pickup.update(); // reset pickup mode
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
             // ignore
@@ -102,47 +87,42 @@ public class PickupTracker {
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener() {
-        /** {@inheritDoc} */
+
         @Override
         public void start() {
             server.removeCrossfireUpdateItemListener(crossfireUpdateItemListener);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void metaserver() {
             server.removeCrossfireUpdateItemListener(crossfireUpdateItemListener);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
             server.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connected() {
             // ignore
         }
 
-        /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
             // ignore
         }
+
     };
 
     /**
