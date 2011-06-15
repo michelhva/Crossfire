@@ -1299,6 +1299,10 @@ public class JXCSkinLoader {
             final Font font = definedFonts.lookup(args.get());
             element = new GUIItemShortcut(tooltipManager, elementListener, name, castColor, castImage, invokeColor, invokeImage, index, facesManager, shortcuts, font, currentSpellManager);
         } else if (type.equals("spelllist")) {
+            if (defaultItemPainter == null) {
+                throw new IOException("cannot use 'item spelllist' without 'def item' command");
+            }
+
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
             element = new GUIItemSpellList(tooltipManager, elementListener, server, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
         } else {
