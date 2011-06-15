@@ -71,7 +71,7 @@ public abstract class GaugeUpdater {
     public void setGauge(@NotNull final GUIGaugeListener gauge) {
         this.gauge = gauge;
         /* hide the gauge initially, so if it's never updated it doesn't appear */
-        if (gauge != null && hideIfEmpty) {
+        if (hideIfEmpty) {
             gauge.setHidden(true);
         }
     }
