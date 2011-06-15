@@ -259,14 +259,17 @@ public class JXClient {
                 }
             }
         } catch (final IOException e) {
+            //noinspection CallToPrintStackTrace
             e.printStackTrace();
             System.exit(1);
             throw new AssertionError();
         } catch (final InterruptedException e) {
+            //noinspection CallToPrintStackTrace
             e.printStackTrace();
             System.exit(1);
             throw new AssertionError();
         } catch (final InvocationTargetException e) {
+            //noinspection CallToPrintStackTrace
             e.printStackTrace();
             System.exit(1);
             throw new AssertionError();
