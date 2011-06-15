@@ -221,9 +221,8 @@ public class ItemSet {
      * @param item the item to add
      * @param notifyListeners whether listeners should be notified about the
      * addition
-     * @return the index where the item has been inserted
      */
-    private int addItem(@NotNull final CfItem item, final boolean notifyListeners) {
+    private void addItem(@NotNull final CfItem item, final boolean notifyListeners) {
         removeItemByTag(item.getTag(), true);
 
         if (allItems.put(item.getTag(), item) != null) {
@@ -250,8 +249,6 @@ public class ItemSet {
         for (final ItemListener itemListener : itemListeners.getListeners(where, ItemListener.class)) {
             itemListener.inventoryAdded(where, list.size()-1, item);
         }
-
-        return list.size()-1;
     }
 
     /**
