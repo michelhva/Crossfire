@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.HashSet;
@@ -82,15 +83,16 @@ public class KeybindingsManager {
 
     /**
      * Creates a new instance.
+     * @param keybindingsFile the global keybindings file
      * @param commands the commands instance to use
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public KeybindingsManager(@NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
+    public KeybindingsManager(@NotNull final File keybindingsFile, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         this.commands = commands;
         this.commandCallback = commandCallback;
         this.macros = macros;
-        keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null), commands, commandCallback, macros);
+        keyBindings = new KeyBindings(keybindingsFile, commands, commandCallback, macros);
     }
 
     /**
@@ -157,7 +159,14 @@ public class KeybindingsManager {
      * @param character the character's name
      */
     public void loadPerCharacterBindings(@NotNull final CharSequence hostname, @NotNull final CharSequence character) {
-        characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, commandCallback, macros);
+        try {
+            characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, commandCallback, macros);
+        } catch (final IOException ex) {
+            characterKeyBindings = null;
+            System.err.println("Cannot read keybindings file for "+character+" on "+hostname+": "+ex.getMessage());
+            return;
+        }
+
         try {
             characterKeyBindings.loadKeyBindings();
         } catch (final IOException ex) {
