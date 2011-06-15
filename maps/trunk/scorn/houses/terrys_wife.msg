@@ -34,12 +34,12 @@
   }, {
   "match" : ["yes"],
   "pre" : [["token", "highlevel", "yes"]],
-  "post" : [["quest", "scorn/TerrysFarm", "40"], ["giveitem", "Farmer's Key"]],
+  "post" : [["quest", "scorn/TerrysFarm", "40"], ["giveitem", "Farmer's key"]],
   "msg" : ["Thank you mighty adventurer. Here, take this key, it will open the door to the room they have occupied. Bring me the head of the bandit leader Guuh and I will reward you."]
   }, {
   "match" : ["yes"],
   "pre" : [["token", "highlevel", "maybe"], ["token", "lethelp", "yes"]],
-  "post" : [["quest", "scorn/TerrysFarm", "30"], ["giveitem", "Farmer's Key"]],
+  "post" : [["quest", "scorn/TerrysFarm", "30"], ["giveitem", "Farmer's key"]],
   "msg" : ["Very well then, take this key, it will open the door to the room that Guuh and his band have occupied. Bring me Guuh's head and I will reward you. \n And please do be careful"]
   }, {
   "match" : ["no"],
