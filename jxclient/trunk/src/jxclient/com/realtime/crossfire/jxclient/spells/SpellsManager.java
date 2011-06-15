@@ -214,7 +214,7 @@ public class SpellsManager implements Iterable<Spell> {
         }
 
         for (final SpellsManagerListener listener : listeners) {
-            listener.spellAdded(spell, index);
+            listener.spellAdded(index);
         }
     }
 
@@ -259,7 +259,7 @@ public class SpellsManager implements Iterable<Spell> {
         unknownSpells.put(spell.getName(), spell);
 
         for (final SpellsManagerListener listener : listeners) {
-            listener.spellRemoved(spell, index);
+            listener.spellRemoved(index);
         }
 
         spell.setUnknown(true);

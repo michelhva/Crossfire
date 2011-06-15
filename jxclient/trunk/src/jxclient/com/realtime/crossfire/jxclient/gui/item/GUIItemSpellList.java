@@ -98,14 +98,14 @@ public class GUIItemSpellList extends GUIItemItem {
     private final SpellsManagerListener spellsManagerListener = new SpellsManagerListener() {
 
         @Override
-        public void spellAdded(@NotNull final Spell spell, final int index) {
+        public void spellAdded(final int index) {
             if (GUIItemSpellList.this.index >= index) {
                 setSpell();
             }
         }
 
         @Override
-        public void spellRemoved(@NotNull final Spell spell, final int index) {
+        public void spellRemoved(final int index) {
             if (GUIItemSpellList.this.index >= index) {
                 setSpell();
             }
