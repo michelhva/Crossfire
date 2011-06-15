@@ -173,7 +173,7 @@ public class Buffer {
         }
 
         for (final BufferListener listener : listeners) {
-            listener.linesAdded(1);
+            listener.lineAdded();
         }
     }
 
@@ -192,7 +192,7 @@ public class Buffer {
         }
 
         for (final BufferListener listener : listeners) {
-            listener.linesReplaced(1);
+            listener.lineReplaced();
         }
     }
 

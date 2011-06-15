@@ -240,14 +240,14 @@ public class RenderStateTest extends TestCase {
             final BufferListener bufferListener = new BufferListener() {
 
                 @Override
-                public void linesAdded(final int lines) {
+                public void lineAdded() {
                     assert rs != null;
                     assert buffer != null;
                     rs.linesAdded(buffer);
                 }
 
                 @Override
-                public void linesReplaced(final int lines) {
+                public void lineReplaced() {
                     assert rs != null;
                     assert buffer != null;
                     rs.linesReplaced(buffer);

@@ -31,18 +31,14 @@ import org.jetbrains.annotations.NotNull;
 public interface BufferListener {
 
     /**
-     * Some lines have been added to the buffer.
-     * @param lines The number of lines that have been added to the end of the
-     * buffer.
+     * A line has been added to the buffer.
      */
-    void linesAdded(int lines);
+    void lineAdded();
 
     /**
-     * Some lines have been replaced at the end of the buffer.
-     * @param lines The number of lines that have been replaced at the end of
-     * the buffer.
+     * A line has been replaced at the end of the buffer.
      */
-    void linesReplaced(int lines);
+    void lineReplaced();
 
     /**
      * Some lines have been removed from the buffer.
