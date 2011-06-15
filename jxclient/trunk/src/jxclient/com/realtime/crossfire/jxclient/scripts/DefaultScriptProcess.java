@@ -314,8 +314,8 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         try {
             osw.write(cmd+"\n");
             osw.flush();
-        } catch (final IOException e) {
-            e.printStackTrace();
+        } catch (final IOException ex) {
+            reportError(ex.getMessage());
             killScript();
         }
     }
