@@ -42,6 +42,7 @@ public interface CrossfireServerConnection extends ServerConnection {
      * Stops operation.
      * @throws InterruptedException if stopping was interrupted
      */
+    @SuppressWarnings("RedundantThrows")
     void stop() throws InterruptedException;
 
     /**
