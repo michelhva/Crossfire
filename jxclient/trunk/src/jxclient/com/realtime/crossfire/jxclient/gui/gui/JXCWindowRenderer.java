@@ -949,6 +949,7 @@ public class JXCWindowRenderer {
             if (frame != null) {
                 frame.validate();
                 // @todo too aggressive?
+                assert frame != null;
                 frame.repaint();
             }
         } else {
@@ -960,6 +961,7 @@ public class JXCWindowRenderer {
                 if (frame != null) {
                     frame.validate();
                     // @todo too aggressive?
+                    assert frame != null;
                     frame.repaint();
                 }
                 mouseTracker.mouseEntered(findElement(mouseEvent), mouseEvent);
@@ -969,6 +971,7 @@ public class JXCWindowRenderer {
                 if (frame != null) {
                     frame.validate();
                     // @todo too aggressive?
+                    assert frame != null;
                     frame.repaint();
                 }
             }
