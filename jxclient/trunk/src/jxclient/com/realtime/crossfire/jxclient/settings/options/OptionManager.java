@@ -36,7 +36,7 @@ public class OptionManager {
      * Maps option name to option instance.
      */
     @NotNull
-    private final Map<String, Option> options = new HashMap<String, Option>();
+    private final Map<String, Entry> options = new HashMap<String, Entry>();
 
     /**
      * The settings instance for loading/saving option values.
@@ -64,7 +64,7 @@ public class OptionManager {
             throw new OptionException("duplicate option name: "+optionName);
         }
 
-        options.put(optionName, option);
+        options.put(optionName, new Entry(option, documentation));
     }
 
     /**
@@ -83,21 +83,21 @@ public class OptionManager {
      */
     @NotNull
     public CheckBoxOption getCheckBoxOption(@NotNull final String optionName) throws OptionException {
-        final Object option = options.get(optionName);
-        if (option == null || !(option instanceof CheckBoxOption)) {
+        final Entry entry = options.get(optionName);
+        if (entry == null || !(entry.getOption() instanceof CheckBoxOption)) {
             throw new OptionException("Unknown option '"+optionName+"'");
         }
 
-        return (CheckBoxOption)option;
+        return (CheckBoxOption)entry.getOption();
     }
 
     /**
      * Load all options' states from the backing settings instance.
      */
     public void loadOptions() {
-        for (final Map.Entry<String, Option> e : options.entrySet()) {
+        for (final Map.Entry<String, Entry> e : options.entrySet()) {
             final String optionName = e.getKey();
-            final Object option = e.getValue();
+            final Object option = e.getValue().getOption();
             if (option instanceof CheckBoxOption) {
                 final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
                 final boolean checked = settings.getBoolean(optionName, checkBoxOption.isDefaultChecked());
@@ -117,18 +117,67 @@ public class OptionManager {
      * Save all options' states to the backing settings instance.
      */
     public void saveOptions() {
-        for (final Map.Entry<String, Option> e : options.entrySet()) {
+        for (final Map.Entry<String, Entry> e : options.entrySet()) {
             final String optionName = e.getKey();
-            final Option option = e.getValue();
+            final Entry entry = e.getValue();
+            final Option option = entry.getOption();
             if (!option.inhibitSave()) {
                 if (option instanceof CheckBoxOption) {
                     final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
-                    settings.putBoolean(optionName, checkBoxOption.isChecked());
+                    settings.putBoolean(optionName, checkBoxOption.isChecked(), entry.getDocumentation());
                 } else {
                     throw new AssertionError();
                 }
             }
         }
+    }
+
+    /**
+     * Pair of {@link Option} and corresponding documentation string.
+     * @author Andreas Kirschbaum
+     */
+    private static class Entry {
+
+        /**
+         * The {@link Option} instance.
+         */
+        @NotNull
+        private final Option option;
+
+        /**
+         * The corresponding documentation string.
+         */
+        @NotNull
+        private final String documentation;
+
+        /**
+         * Creates a new instance.
+         * @param option the option instance
+         * @param documentation the corresponding documentation string
+         */
+        private Entry(@NotNull final Option option, @NotNull final String documentation) {
+            this.option = option;
+            this.documentation = documentation;
+        }
+
+        /**
+         * Returns the {@link Option} instance.
+         * @return the option instance
+         */
+        @NotNull
+        public Option getOption() {
+            return option;
+        }
+
+        /**
+         * Returns the corresponding documentation string.
+         * @return the corresponding documentation string
+         */
+        @NotNull
+        public String getDocumentation() {
+            return documentation;
+        }
+
     }
 
 }

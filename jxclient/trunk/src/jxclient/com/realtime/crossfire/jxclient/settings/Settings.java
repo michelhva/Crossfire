@@ -34,6 +34,7 @@ import java.io.OutputStreamWriter;
 import java.util.Map;
 import java.util.TreeMap;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Maintains a set of key/value pairs. The values are stored in a flat file.
@@ -51,7 +52,7 @@ public class Settings {
      * The stored values. Maps key name to value.
      */
     @NotNull
-    private final Map<String, String> values = new TreeMap<String, String>();
+    private final Map<String, Entry> values = new TreeMap<String, Entry>();
 
     /**
      * Flag to inhibit saving.
@@ -75,9 +76,10 @@ public class Settings {
      * @param defaultValue the defaultValue
      * @return The value.
      */
+    @NotNull
     public String getString(@NotNull final String key, @NotNull final String defaultValue) {
-        final String value = values.get(key);
-        return value != null ? value : defaultValue;
+        final Entry entry = values.get(key);
+        return entry != null ? entry.getValue() : defaultValue;
     }
 
     /**
@@ -122,11 +124,19 @@ public class Settings {
      * Store a key/value pair.
      * @param key The key to store.
      * @param value The value to store.
+     * @param documentation the documentation string of the entry or
+     * <code>null</code> if unknown
      */
-    public void putString(@NotNull final String key, @NotNull final String value) {
-        final String oldValue = values.put(key, value);
-        if (oldValue == null || !oldValue.equals(value)) {
-            setChanged();
+    public void putString(@NotNull final String key, @NotNull final String value, @Nullable final String documentation) {
+        final Entry oldEntry = values.get(key);
+        if (oldEntry != null) {
+            oldEntry.setDocumentation(documentation);
+            if (!oldEntry.getValue().equals(value)) {
+                oldEntry.setValue(value);
+                setChanged();
+            }
+        } else {
+            values.put(key, new Entry(value, documentation));
         }
     }
 
@@ -134,27 +144,30 @@ public class Settings {
      * Store a key/value pair.
      * @param key The key to store.
      * @param value The value to store.
+     * @param documentation the documentation string of the entry
      */
-    public void putBoolean(@NotNull final String key, final boolean value) {
-        putString(key, Boolean.toString(value));
+    public void putBoolean(@NotNull final String key, final boolean value, @NotNull final String documentation) {
+        putString(key, Boolean.toString(value), documentation);
     }
 
     /**
      * Store a key/value pair.
      * @param key The key to store.
      * @param value The value to store.
+     * @param documentation the documentation string of the entry
      */
-    public void putInt(@NotNull final String key, final int value) {
-        putString(key, Integer.toString(value));
+    public void putInt(@NotNull final String key, final int value, @NotNull final String documentation) {
+        putString(key, Integer.toString(value), documentation);
     }
 
     /**
      * Store a key/value pair.
      * @param key The key to store.
      * @param value The value to store.
+     * @param documentation the documentation string of the entry
      */
-    public void putLong(@NotNull final String key, final long value) {
-        putString(key, Long.toString(value));
+    public void putLong(@NotNull final String key, final long value, @NotNull final String documentation) {
+        putString(key, Long.toString(value), documentation);
     }
 
     /**
@@ -214,7 +227,7 @@ public class Settings {
                             final String key = tmp[0];
                             final String value = tmp[1];
 
-                            putString(key, value);
+                            putString(key, value, null);
                         }
                     } finally {
                         lnr.close();
@@ -266,16 +279,26 @@ public class Settings {
      * @param node The node to save.
      * @throws IOException if the node cannot be saved
      */
-    private static void saveNode(@NotNull final BufferedWriter writer, @NotNull final Map<String, String> node) throws IOException {
+    private static void saveNode(@NotNull final BufferedWriter writer, @NotNull final Map<String, Entry> node) throws IOException {
         if (node.isEmpty()) {
             return;
         }
 
-        for (final Map.Entry<String, String> entry : node.entrySet()) {
+        for (final Map.Entry<String, Entry> entry : node.entrySet()) {
+            final Entry value = entry.getValue();
+
             writer.newLine();
+
+            final String documentation = value.getDocumentation();
+            if (documentation != null) {
+                writer.write("# ");
+                writer.write(Codec.encode(documentation));
+                writer.newLine();
+            }
+
             writer.write(Codec.encode(entry.getKey()));
             writer.write("=");
-            writer.write(Codec.encode(entry.getValue()));
+            writer.write(Codec.encode(value.getValue()));
             writer.newLine();
         }
     }
