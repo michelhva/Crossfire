@@ -18,8 +18,8 @@
   "msg" : ["You'll need to bring back his head as proof that you have killed him."]
   }, {
   "match" : ["yes"],
-  "pre" : [["token", "highlevel", "head"], ["quest", "scorn/TerrysFarm", "50"], ["item", "Guuh's Head"]],
-  "post" : [["takeitem", "Guuh's Head", "1"], ["quest", "scorn/TerrysFarm", "60"], ["connection", "4"]],
+  "pre" : [["token", "highlevel", "head"], ["quest", "scorn/TerrysFarm", "50"], ["item", "Guuh's head"]],
+  "post" : [["takeitem", "Guuh's head", "1"], ["quest", "scorn/TerrysFarm", "60"], ["connection", "4"]],
   "msg" : ["Thank you so much for saving us from the evil bandits, please help yourself to whatever you wish from our treasure room"]
   }, {
   "match" : ["yes"],
@@ -31,6 +31,11 @@
   "pre" : [["quest", "scorn/TerrysFarm", "50"]],
   "post" : [["settoken", "highlevel", "head"]],
   "msg" : ["You've killed the Bandit Leader Guuh? have you recovered his head?"]
+  }, {
+  "match" : ["*"],
+  "pre" : [["quest", "scorn/TerrysFarm", "=40"]],
+  "post" : [],
+  "msg" : ["Please, kill Guuh the bandit, so we can live happily!"]
   }, {
   "match" : ["yes"],
   "pre" : [["token", "highlevel", "yes"]],
