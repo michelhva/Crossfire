@@ -389,7 +389,7 @@ public class CfMap {
      * @param dx the x-difference to scroll
      * @param dy the y-difference to scroll
      */
-    public void scroll(final int dx, final int dy) {
+    private void scroll(final int dx, final int dy) {
         assert Thread.holdsLock(this);
         if (dx == 0 && dy == 0) {
             return;
@@ -662,7 +662,7 @@ public class CfMap {
      * @param mapSquare the map square
      * @return whether this square needs redraw
      */
-    public boolean isDirty(@NotNull final CfMapSquare mapSquare) {
+    private boolean isDirty(@NotNull final CfMapSquare mapSquare) {
         assert Thread.holdsLock(this);
         return dirtyMapSquares.contains(mapSquare);
     }
