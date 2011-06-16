@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
-import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -357,6 +356,8 @@ public class MapUpdaterState {
      */
     public void processMapScroll(final int dx, final int dy) {
         synchronized (sync) {
+            processMapBegin();
+
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
                 for (final Location location : outOfViewMultiFaces) {
@@ -365,51 +366,9 @@ public class MapUpdaterState {
                 }
                 outOfViewMultiFaces.clear();
 
-                if (Math.abs(dx) >= width || Math.abs(dy) >= height) {
-                    map.scroll(dx, dy);
-                    for (int y = 0; y < height; y++) {
-                        for (int x = 0; x < width; x++) {
-                            map.clearSquare(x, y);
-                        }
-                    }
+                if (map.processMapScroll(dx, dy, width, height)) {
                     visibleAnimations.clear();
                 } else {
-                    int tx = dx;
-                    while (tx > 0) {
-                        map.scroll(-1, 0);
-                        for (int y = 0; y < height; y++) {
-                            map.clearSquare(-1, y);
-                            map.clearSquare(width-1, y);
-                        }
-                        tx--;
-                    }
-                    while (tx < 0) {
-                        map.scroll(+1, 0);
-                        for (int y = 0; y < height; y++) {
-                            map.clearSquare(0, y);
-                            map.clearSquare(width, y);
-                        }
-                        tx++;
-                    }
-
-                    int ty = dy;
-                    while (ty > 0) {
-                        map.scroll(0, -1);
-                        for (int x = 0; x < width; x++) {
-                            map.clearSquare(x, -1);
-                            map.clearSquare(x, height-1);
-                        }
-                        ty--;
-                    }
-                    while (ty < 0) {
-                        map.scroll(0, +1);
-                        for (int x = 0; x <= width; x++) {
-                            map.clearSquare(x, 0);
-                            map.clearSquare(x, height);
-                        }
-                        ty++;
-                    }
-
                     visibleAnimations.scroll(dx, dy);
                 }
             }
@@ -417,6 +376,7 @@ public class MapUpdaterState {
             for (final MapScrollListener mapscrollListener : mapScrollListeners) {
                 mapscrollListener.mapScrolled(dx, dy);
             }
+
             processMapEnd(false);
         }
     }
@@ -431,17 +391,7 @@ public class MapUpdaterState {
 
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
-                for (int y = 0; y < height; y++) {
-                    for (int x = 0; x < width; x++) {
-                        for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
-                            final Face face = map.getFace(x, y, layer);
-                            if (face != null && face.getFaceNum() == faceNum) {
-                                map.setFace(x, y, layer, face);
-                                map.dirty(x, y);
-                            }
-                        }
-                    }
-                }
+                map.updateFace(faceNum, width, height);
             }
 
             processMapEnd(false);
