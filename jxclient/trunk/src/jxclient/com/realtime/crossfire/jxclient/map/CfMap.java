@@ -679,4 +679,83 @@ public class CfMap {
         return result;
     }
 
+    /**
+     * Processes an updated face image.
+     * @param faceNum the face that has changed
+     * @param width the width of the visible map area in map squares
+     * @param height the height of the visible map area in map squares
+     */
+    public void updateFace(final int faceNum, final int width, final int height) {
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
+                    final Face face = getFace(x, y, layer);
+                    if (face != null && face.getFaceNum() == faceNum) {
+                        setFace(x, y, layer, face);
+                        dirty(x, y);
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Processes a map scroll command.
+     * @param dx the distance to scroll in x-direction in squares
+     * @param dy the distance to scroll in y-direction in squares
+     * @param width the width of the visible map area in map squares
+     * @param height the height of the visible map area in map squares
+     * @return whether scrolling did clear the whole visible map area
+     */
+    public boolean processMapScroll(final int dx, final int dy, final int width, final int height) {
+        if (Math.abs(dx) >= width || Math.abs(dy) >= height) {
+            scroll(dx, dy);
+            for (int y = 0; y < height; y++) {
+                for (int x = 0; x < width; x++) {
+                    clearSquare(x, y);
+                }
+            }
+
+            return true;
+        }
+
+        int tx = dx;
+        while (tx > 0) {
+            scroll(-1, 0);
+            for (int y = 0; y < height; y++) {
+                clearSquare(-1, y);
+                clearSquare(width-1, y);
+            }
+            tx--;
+        }
+        while (tx < 0) {
+            scroll(+1, 0);
+            for (int y = 0; y < height; y++) {
+                clearSquare(0, y);
+                clearSquare(width, y);
+            }
+            tx++;
+        }
+
+        int ty = dy;
+        while (ty > 0) {
+            scroll(0, -1);
+            for (int x = 0; x < width; x++) {
+                clearSquare(x, -1);
+                clearSquare(x, height-1);
+            }
+            ty--;
+        }
+        while (ty < 0) {
+            scroll(0, +1);
+            for (int x = 0; x <= width; x++) {
+                clearSquare(x, 0);
+                clearSquare(x, height);
+            }
+            ty++;
+        }
+
+        return false;
+    }
+
 }
