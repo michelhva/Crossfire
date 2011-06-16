@@ -603,7 +603,7 @@ public class CfMap {
     public CfMapSquare getMapSquareUnlessDirty(final int x, final int y) {
         assert Thread.holdsLock(this);
         final CfMapSquare mapSquare = getMapSquare(x, y);
-        return isDirty(mapSquare) ? null : mapSquare;
+        return dirtyMapSquares.contains(mapSquare) ? null : mapSquare;
     }
 
     /**
@@ -655,16 +655,6 @@ public class CfMap {
     public void squareModified(@NotNull final CfMapSquare mapSquare) {
         assert Thread.holdsLock(this);
         dirtyMapSquares.add(mapSquare);
-    }
-
-    /**
-     * Returns whether a {@link CfMapSquare} is dirty.
-     * @param mapSquare the map square
-     * @return whether this square needs redraw
-     */
-    private boolean isDirty(@NotNull final CfMapSquare mapSquare) {
-        assert Thread.holdsLock(this);
-        return dirtyMapSquares.contains(mapSquare);
     }
 
     /**
