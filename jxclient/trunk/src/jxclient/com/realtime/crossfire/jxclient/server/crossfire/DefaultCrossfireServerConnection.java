@@ -255,6 +255,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private final Collection<CrossfireSoundListener> crossfireSoundListeners = new CopyOnWriteArrayList<CrossfireSoundListener>();
 
     /**
+     * The {@link CrossfireSmoothListener}s to be notified.
+     */
+    @NotNull
+    private final Collection<CrossfireSmoothListener> crossfireSmoothListeners = new CopyOnWriteArrayList<CrossfireSmoothListener>();
+
+    /**
      * The {@link CrossfireMusicListener}s to be notified.
      */
     @NotNull
@@ -878,6 +884,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     @Override
     public void addCrossfireSoundListener(@NotNull final CrossfireSoundListener listener) {
         crossfireSoundListeners.add(listener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void addCrossfireSmoothListener(@NotNull final CrossfireSmoothListener listener) {
+        crossfireSmoothListeners.add(listener);
     }
 
     /**
@@ -2032,7 +2046,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" smooth="+smooth);
             }
-            // XXX: update smoothing information
+            for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                listener.mapSmooth(x, y, layer, smooth);
+            }
         } else {
             final int animSpeed = getInt1(packet);
             if (debugProtocol != null) {
@@ -2071,7 +2087,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" smooth="+smooth);
         }
-        // XXX: update smoothing information
+        for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+            listener.mapSmooth(x, y, layer, smooth);
+        }
     }
 
     /**
@@ -3290,7 +3308,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv smooth face="+faceNo+" smooth_pic="+smoothPic);
         }
-        // XXX: smooth command not implemented
+        for (final CrossfireSmoothListener listener : crossfireSmoothListeners) {
+            listener.commandSmoothReceived(faceNo, smoothPic);
+        }
         notifyPacketWatcherListenersShortArray(packet, args);
     }
 

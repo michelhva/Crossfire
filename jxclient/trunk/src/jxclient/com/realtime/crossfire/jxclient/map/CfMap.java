@@ -23,7 +23,10 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -115,6 +118,13 @@ public class CfMap {
     private final Set<CfMapSquare> dirtyMapSquares = new HashSet<CfMapSquare>();
 
     /**
+     * The map squares containing pending faces. Maps face number to map squares
+     * that need to be repainted when the face becomes available.
+     */
+    @NotNull
+    private final Map<Integer, Collection<CfMapSquare>> pendingFaceSquares = new HashMap<Integer, Collection<CfMapSquare>>();
+
+    /**
      * Sets the darkness value of one square.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
@@ -140,6 +150,42 @@ public class CfMap {
         assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null ? mapPatch.getDarkness(ox, oy) : CfMapSquare.DEFAULT_DARKNESS;
+    }
+
+    /**
+     * Sets the smooth value of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to set
+     * @param smooth the smooth value to set
+     */
+    public void setSmooth(final int x, final int y, final int layer, final int smooth) {
+        final int result = expandTo(x, y).setSmooth(ox, oy, layer, smooth);
+        if ((result&1) != 0) {
+            for (int l = 0; l < Map2.NUM_LAYERS; l++) {
+                setFaceInternal(x, y, l, CfMapSquare.DEFAULT_FACE);
+            }
+        }
+        if ((result&2) != 0) {
+            for (int dx = -1; dx <= +1; dx++) {
+                for (int dy = -1; dy <= +1; dy++) {
+                    squareModified(getMapSquare(x+dx, y+dy));
+                }
+            }
+        }
+    }
+
+    /**
+     * Returns the smooth value of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer of the square
+     * @return the smooth value of the square
+     */
+    public int getSmooth(final int x, final int y, final int layer) {
+        final CfMapPatch mapPatch = getMapPatch(x, y);
+        final int result = mapPatch != null ? mapPatch.getSmooth(ox, oy, layer) : CfMapSquare.DEFAULT_SMOOTH;
+        return result;
     }
 
     /**
@@ -658,6 +704,23 @@ public class CfMap {
     }
 
     /**
+     * Marks a {@link CfMapSquare} as containing a pending face.
+     * @param x the x coordinate of the map square
+     * @param y the y coordinate of the map square
+     * @param faceNum the pending face
+     */
+    public void squarePendingFace(final int x, final int y, final int faceNum) {
+        assert Thread.holdsLock(this);
+        final Integer tmpFaceNum = faceNum;
+        Collection<CfMapSquare> mapSquares = pendingFaceSquares.get(tmpFaceNum);
+        if (mapSquares == null) {
+            mapSquares = new HashSet<CfMapSquare>();
+            pendingFaceSquares.put(tmpFaceNum, mapSquares);
+        }
+        mapSquares.add(getMapSquare(x, y));
+    }
+
+    /**
      * Returns the dirty map squares. The result may be modified by the caller.
      * @return the dirty map squares
      */
@@ -672,8 +735,8 @@ public class CfMap {
     /**
      * Processes an updated face image.
      * @param faceNum the face that has changed
-     * @param width the width of the visible map area in map squares
-     * @param height the height of the visible map area in map squares
+     * @param width the width of the visible map area
+     * @param height the height of the visible map area
      */
     public void updateFace(final int faceNum, final int width, final int height) {
         for (int y = 0; y < height; y++) {
@@ -686,6 +749,11 @@ public class CfMap {
                     }
                 }
             }
+        }
+
+        final Collection<CfMapSquare> mapSquares = pendingFaceSquares.remove(faceNum);
+        if (mapSquares != null) {
+            dirtyMapSquares.addAll(mapSquares);
         }
     }
 

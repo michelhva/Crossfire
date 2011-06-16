@@ -78,6 +78,13 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private final FacesProvider facesProvider;
 
     /**
+     * The {@link SmoothingRenderer} to use or <code>null</code> to not draw
+     * smoothed faces.
+     */
+    @Nullable
+    private final SmoothingRenderer smoothingRenderer;
+
+    /**
      * Synchronizes access to {@link #bufferedImage}.
      */
     @NotNull
@@ -201,7 +208,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
                             if (displayMinX <= x && x < displayMaxX) {
                                 final int y = mapSquare.getY()+y0;
                                 if (displayMinY <= y && y < displayMaxY) {
-                                    redrawSquare(g, mapSquare, x, y);
+                                    redrawSquare(g, mapSquare, map, x, y);
                                 }
                             }
                         }
@@ -283,9 +290,12 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * @param name the name of this element
      * @param mapUpdaterState the map updater state instance to use
      * @param facesProvider the faces provider for looking up faces
+     * @param smoothingRenderer the smoothing renderer to use or
+     * <code>null</code> to not draw smoothed faces
      */
-    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider) {
+    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @Nullable final SmoothingRenderer smoothingRenderer) {
         super(tooltipManager, elementListener, name, Transparency.OPAQUE);
+        this.smoothingRenderer = smoothingRenderer;
         tileSize = facesProvider.getSize();
         assert tileSize > 0;
         this.mapUpdaterState = mapUpdaterState;
@@ -349,7 +359,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
                     final int mapSquareX = x-offsetX/tileSize;
                     final int mapSquareY = y-offsetY/tileSize;
                     final CfMapSquare mapSquare = map.getMapSquare(mapSquareX, mapSquareY);
-                    redrawSquare(g, mapSquare, mapSquareX, mapSquareY);
+                    redrawSquare(g, mapSquare, map, mapSquareX, mapSquareY);
                 }
             }
         }
@@ -384,7 +394,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private void redrawSquareUnlessDirty(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y) {
         final CfMapSquare mapSquare = map.getMapSquareUnlessDirty(x, y);
         if (mapSquare != null) {
-            redrawSquare(g, mapSquare, x, y);
+            redrawSquare(g, mapSquare, map, x, y);
         }
     }
 
@@ -392,11 +402,12 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * Redraws one square.
      * @param g the graphics to draw into
      * @param mapSquare the map square to draw
+     * @param map the map
      * @param x the x-coordinate of the map tile to redraw
      * @param y the y-coordinate of the map tile to redraw
      */
-    protected void redrawSquare(@NotNull final Graphics g, @NotNull final CfMapSquare mapSquare, final int x, final int y) {
-        redrawSquare(g, x, y, mapSquare);
+    protected void redrawSquare(@NotNull final Graphics g, @NotNull final CfMapSquare mapSquare, @NotNull final CfMap map, final int x, final int y) {
+        redrawSquare(g, x, y, mapSquare, map);
         if (x < 0 || y < 0 || x >= mapWidth || y >= mapHeight || mapSquare.isFogOfWar()) {
             paintColoredSquare(g, DarknessColors.FOG_OF_WAR_COLOR, offsetX+x*tileSize, offsetY+y*tileSize);
         }
@@ -412,8 +423,9 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * @param x the x coordinate of the square to redraw
      * @param y the y coordinate of the square to redraw
      * @param mapSquare the map square
+     * @param map the map
      */
-    private void redrawSquare(@NotNull final Graphics g, final int x, final int y, @NotNull final CfMapSquare mapSquare) {
+    private void redrawSquare(@NotNull final Graphics g, final int x, final int y, @NotNull final CfMapSquare mapSquare, @NotNull final CfMap map) {
         final int px = offsetX+x*tileSize;
         final int py = offsetY+y*tileSize;
         final int mapSquareX = mapSquare.getX();
@@ -441,6 +453,9 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
                     paintSquareBackground(g, px, py, true, mapSquare);
                 }
                 paintImage(g, face, px, py, 0, 0);
+                if (smoothingRenderer != null) {
+                    smoothingRenderer.paintSmooth(g, x, y, px, py, layer, map, tileSize);
+                }
             }
         }
         if (!foundSquare) {
@@ -468,7 +483,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * @param offsetY the y-offset for shifting the original face
      */
     private void paintImage(@NotNull final Graphics g, @NotNull final Face face, final int px, final int py, final int offsetX, final int offsetY) {
-        final ImageIcon imageIcon = facesProvider.getImageIcon(face.getFaceNum());
+        final ImageIcon imageIcon = facesProvider.getImageIcon(face.getFaceNum(), null);
         final int sx = imageIcon.getIconWidth()-offsetX;
         final int sy = imageIcon.getIconHeight()-offsetY;
         g.drawImage(imageIcon.getImage(), px, py, px+tileSize, py+tileSize, sx-tileSize, sy-tileSize, sx, sy, null);

@@ -84,8 +84,8 @@ public abstract class AbstractFacesManager implements FacesManager {
      */
     @NotNull
     @Override
-    public ImageIcon getOriginalImageIcon(final int faceNum) {
-        return getFaceImages(faceNum).getOriginalImageIcon();
+    public ImageIcon getOriginalImageIcon(final int faceNum, @Nullable final boolean[] isUnknownImage) {
+        return getFaceImages(faceNum, isUnknownImage).getOriginalImageIcon();
     }
 
     /**
@@ -93,8 +93,8 @@ public abstract class AbstractFacesManager implements FacesManager {
      */
     @NotNull
     @Override
-    public ImageIcon getScaledImageIcon(final int faceNum) {
-        return getFaceImages(faceNum).getScaledImageIcon();
+    public ImageIcon getScaledImageIcon(final int faceNum, @Nullable final boolean[] isUnknownImage) {
+        return getFaceImages(faceNum, isUnknownImage).getScaledImageIcon();
     }
 
     /**
@@ -102,8 +102,8 @@ public abstract class AbstractFacesManager implements FacesManager {
      */
     @NotNull
     @Override
-    public ImageIcon getMagicMapImageIcon(final int faceNum) {
-        return getFaceImages(faceNum).getMagicMapImageIcon();
+    public ImageIcon getMagicMapImageIcon(final int faceNum, @Nullable final boolean[] isUnknownImage) {
+        return getFaceImages(faceNum, isUnknownImage).getMagicMapImageIcon();
     }
 
     /**
@@ -112,7 +112,7 @@ public abstract class AbstractFacesManager implements FacesManager {
     @NotNull
     @Override
     public Face getFace(final int faceNum) {
-        getFaceImages(faceNum);
+        getFaceImages(faceNum, null);
         return faceCache.getFace(faceNum);
     }
 
@@ -121,10 +121,12 @@ public abstract class AbstractFacesManager implements FacesManager {
      * returns immediately even if the face is not loaded. A not loaded face
      * will be updated as soon as loading has finished.
      * @param faceNum the face ID
+     * @param isUnknownImage returns whether the returned face is the "unknown"
+     * face; ignored if <code>null</code>
      * @return the face images information
      */
     @NotNull
-    protected abstract FaceImages getFaceImages(final int faceNum);
+    protected abstract FaceImages getFaceImages(final int faceNum, @Nullable boolean[] isUnknownImage);
 
     /**
      * Returns the {@link Face} instance for a given face ID. Other than {@link
@@ -148,7 +150,7 @@ public abstract class AbstractFacesManager implements FacesManager {
             return null;
         }
 
-        getFaceImages(faceNum);
+        getFaceImages(faceNum, null);
         return faceCache.getFace(faceNum);
     }
 

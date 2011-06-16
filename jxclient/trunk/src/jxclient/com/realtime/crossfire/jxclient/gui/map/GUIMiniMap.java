@@ -100,7 +100,7 @@ public class GUIMiniMap extends AbstractGUIMap {
      * @param height the map height in squares
      */
     public GUIMiniMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, final int width, final int height) {
-        super(tooltipManager, elementListener, name, mapUpdaterState, facesProvider);
+        super(tooltipManager, elementListener, name, mapUpdaterState, facesProvider, null);
         this.mapUpdaterState = mapUpdaterState;
         this.width = width;
         this.height = height;
@@ -135,7 +135,7 @@ public class GUIMiniMap extends AbstractGUIMap {
             final CfMap map = mapUpdaterState.getMap();
             //noinspection SynchronizationOnLocalVariableOrMethodParameter
             synchronized (map) {
-                redrawSquare(g, map.getMapSquare(mapSquareX, mapSquareY), mapSquareX, mapSquareY);
+                redrawSquare(g, map.getMapSquare(mapSquareX, mapSquareY), map, mapSquareX, mapSquareY);
             }
         }
         g.setColor(Color.RED);

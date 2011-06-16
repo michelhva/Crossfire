@@ -296,6 +296,22 @@ public class MapUpdaterState {
     }
 
     /**
+     * Updates a map square by changing the smooth value.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to update
+     * @param smooth the smooth value to set
+     */
+    public void processMapSmooth(final int x, final int y, final int layer, final int smooth) {
+        synchronized (sync) {
+            //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
+            synchronized (map) {
+                map.setSmooth(x, y, layer, smooth);
+            }
+        }
+    }
+
+    /**
      * Updates a map square by changing the darkness value.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square

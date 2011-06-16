@@ -316,7 +316,7 @@ public class GUIItemShortcut extends GUIItem {
                     g.setColor(color);
                     g.fillRect(0, 0, getWidth(), getHeight());
                 }
-                g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
+                g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum(), null).getImage(), 0, 0, null);
                 final Image image = shortcutSpell.isCast() ? castImage : invokeImage;
                 if (image != null) {
                     g.drawImage(image, 0, 0, null);

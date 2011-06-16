@@ -315,7 +315,7 @@ public class GUIItemInventory extends GUIItemItem {
     @NotNull
     @Override
     protected Image getFace(@NotNull final CfItem item) {
-        return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
+        return facesManager.getOriginalImageIcon(item.getFace().getFaceNum(), null).getImage();
     }
 
     /**

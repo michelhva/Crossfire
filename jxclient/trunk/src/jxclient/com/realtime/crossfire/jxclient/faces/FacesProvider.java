@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.faces;
 
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Interface for face providers.
@@ -41,9 +42,11 @@ public interface FacesProvider {
      * the face is not loaded. A not loaded face will be updated as soon as
      * loading has finished.
      * @param faceNum the face ID
+     * @param isUnknownImage returns whether the returned face is the "unknown"
+     * face; ignored if <code>null</code>
      * @return the face, or the "unknown" face if the face is not loaded
      */
     @NotNull
-    ImageIcon getImageIcon(int faceNum);
+    ImageIcon getImageIcon(int faceNum, @Nullable boolean[] isUnknownImage);
 
 }
