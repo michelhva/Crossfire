@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.faces;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import java.io.IOException;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Retrieves {@link Face} information by face ID. If a face is not available
@@ -98,18 +99,27 @@ public class DefaultFacesManager extends AbstractFacesManager {
      */
     @NotNull
     @Override
-    protected FaceImages getFaceImages(final int faceNum) {
+    protected FaceImages getFaceImages(final int faceNum, @Nullable final boolean[] isUnknownImage) {
         if (faceNum == 0) {
+            if (isUnknownImage != null) {
+                isUnknownImage[0] = false;
+            }
             return emptyFaceImages;
         }
 
         final Face face = lookupFace(faceNum);
         final FaceImages faceImages = face.getFaceImages();
         if (faceImages != null) {
+            if (isUnknownImage != null) {
+                isUnknownImage[0] = false;
+            }
             return faceImages;
         }
 
         faceQueue.loadFace(face);
+        if (isUnknownImage != null) {
+            isUnknownImage[0] = true;
+        }
         return unknownFaceImages;
     }
 

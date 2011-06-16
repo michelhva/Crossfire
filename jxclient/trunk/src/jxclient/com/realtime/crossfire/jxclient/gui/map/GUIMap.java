@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.map;
 
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
+import com.realtime.crossfire.jxclient.faces.SmoothFaces;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
@@ -67,9 +68,10 @@ public class GUIMap extends AbstractGUIMap {
      * @param mapUpdaterState the map updater state instance to use
      * @param facesProvider the faces provider for looking up faces
      * @param crossfireServerConnection the server connection to monitor
+     * @param smoothFaces the smooth faces to use
      */
-    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(tooltipManager, elementListener, name, mapUpdaterState, facesProvider);
+    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SmoothFaces smoothFaces) {
+        super(tooltipManager, elementListener, name, mapUpdaterState, facesProvider, new SmoothingRenderer(smoothFaces, facesProvider));
         this.crossfireServerConnection = crossfireServerConnection;
         tileSize = facesProvider.getSize();
     }

@@ -85,6 +85,15 @@ public interface CrossfireUpdateMapListener {
     void mapAnimationSpeed(int x, int y, int layer, int animSpeed);
 
     /**
+     * Part of "map2" parsing: set the smooth level.
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     * @param layer the layer
+     * @param smooth the smooth value
+     */
+    void mapSmooth(int x, int y, int layer, int smooth);
+
+    /**
      * Part of "map2" parsing: scroll the map view.
      * @param dx the x-distance
      * @param dy the y-distance

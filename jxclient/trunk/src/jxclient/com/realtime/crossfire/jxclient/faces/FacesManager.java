@@ -35,30 +35,36 @@ public interface FacesManager {
      * immediately even if the face is not loaded. A not loaded face will be
      * updated as soon as loading has finished.
      * @param faceNum the face ID
+     * @param isUnknownImage returns whether the returned face is the "unknown"
+     * face; ignored if <code>null</code>
      * @return the face, or the "unknown" face if the face is not loaded
      */
     @NotNull
-    ImageIcon getOriginalImageIcon(int faceNum);
+    ImageIcon getOriginalImageIcon(int faceNum, @Nullable boolean[] isUnknownImage);
 
     /**
      * Returns the "scaled" face for a face ID. This function returns
      * immediately even if the face is not loaded. A not loaded face will be
      * updated as soon as loading has finished.
      * @param faceNum the face ID
+     * @param isUnknownImage returns whether the returned face is the "unknown"
+     * face; ignored if <code>null</code>
      * @return the face, or the "unknown" face if the face is not loaded
      */
     @NotNull
-    ImageIcon getScaledImageIcon(int faceNum);
+    ImageIcon getScaledImageIcon(int faceNum, @Nullable boolean[] isUnknownImage);
 
     /**
      * Returns the "magic map" face for a face ID. This function returns
      * immediately even if the face is not loaded. A not loaded face will be
      * updated as soon as loading has finished.
      * @param faceNum the face ID
+     * @param isUnknownImage returns whether the returned face is the "unknown"
+     * face; ignored if <code>null</code>
      * @return the face, or the "unknown" face if the face is not loaded
      */
     @NotNull
-    ImageIcon getMagicMapImageIcon(int faceNum);
+    ImageIcon getMagicMapImageIcon(int faceNum, @Nullable boolean[] isUnknownImage);
 
     /**
      * Returns the {@link Face} instance for a given face ID. Requests the face

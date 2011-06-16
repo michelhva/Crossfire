@@ -44,6 +44,11 @@ public class CfMapSquare {
     public static final int DEFAULT_DARKNESS = 255;
 
     /**
+     * The default smooth value for newly created squares.
+     */
+    public static final int DEFAULT_SMOOTH = 0;
+
+    /**
      * The default magic map color for newly created squares.
      */
     public static final int DEFAULT_COLOR = -1;
@@ -108,6 +113,12 @@ public class CfMapSquare {
     private final CfMapSquare[] heads = new CfMapSquare[Map2.NUM_LAYERS];
 
     /**
+     * The smooth values of all layers as sent by the server.
+     */
+    @NotNull
+    private final int[] smooths = new int[Map2.NUM_LAYERS];
+
+    /**
      * Creates a new (empty) square.
      * @param map the map this map square is part of
      * @param x the absolute map x-coordinate of the top left corner of this
@@ -159,7 +170,7 @@ public class CfMapSquare {
         if (darkness == DEFAULT_DARKNESS) {
             int layer;
             for (layer = 0; layer < faces.length; layer++) {
-                if (faces[layer] != DEFAULT_FACE || heads[layer] != null) {
+                if (faces[layer] != DEFAULT_FACE || heads[layer] != null || smooths[layer] != 0) {
                     break;
                 }
             }
@@ -195,6 +206,34 @@ public class CfMapSquare {
      */
     public int getDarkness() {
         return darkness;
+    }
+
+    /**
+     * Sets the smooth value of this square.
+     * @param layer the layer between <code>0</code> and <code>LAYERS-1</code>
+     * @param smooth the new smooth value
+     * @return whether fog-of-war has been cleared (1) or whether the smooth
+     *         value has changed (2)
+     */
+    public int setSmooth(final int layer, final int smooth) {
+        final boolean fogOfWarCleared = fogOfWar;
+        final boolean smoothChanged = smooths[layer] != smooth;
+        smooths[layer] = smooth;
+        final boolean markDirty = fogOfWar || smoothChanged;
+        fogOfWar = false;
+        if (markDirty) {
+            dirty();
+        }
+        return (fogOfWarCleared ? 1 : 0)|(smoothChanged ? 2 : 0);
+    }
+
+    /**
+     * Returns the smooth value of this square.
+     * @param layer the layer between <code>0</code> and <code>LAYERS-1</code>
+     * @return the smooth value of the square
+     */
+    public int getSmooth(final int layer) {
+        return smooths[layer];
     }
 
     /**

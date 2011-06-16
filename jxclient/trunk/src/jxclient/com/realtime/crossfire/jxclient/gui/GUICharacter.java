@@ -139,7 +139,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
          */
         final int y = (getHeight()+font.getSize())/2;
         int x = 0;
-        g.drawImage(facesManager.getOriginalImageIcon(character.getFaceNumber()).getImage(), x, (getHeight()-facesManager.getOriginalImageIcon(character.getFaceNumber()).getImage().getHeight(null))/2, this);
+        g.drawImage(facesManager.getOriginalImageIcon(character.getFaceNumber(), null).getImage(), x, (getHeight()-facesManager.getOriginalImageIcon(character.getFaceNumber(), null).getImage().getHeight(null))/2, this);
         x += 40;
         g.drawString(character.getName(), x, y);
         x += 80;

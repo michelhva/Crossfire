@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.faces;
 
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link FacesManager} for regression tests.
@@ -43,7 +44,7 @@ public class TestFacesManager extends AbstractFacesManager {
      */
     @NotNull
     @Override
-    protected FaceImages getFaceImages(final int faceNum) {
+    protected FaceImages getFaceImages(final int faceNum, @Nullable final boolean[] isUnknownImage) {
         final Face face = lookupFace(faceNum);
         final FaceImages faceImages = face.getFaceImages();
         if (faceImages != null) {

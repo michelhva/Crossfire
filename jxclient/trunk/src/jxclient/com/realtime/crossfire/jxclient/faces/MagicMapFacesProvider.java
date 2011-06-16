@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.faces;
 
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link FacesProvider} that returns faces scaled to 4x4 pixels.
@@ -62,8 +63,8 @@ public class MagicMapFacesProvider implements FacesProvider {
      */
     @NotNull
     @Override
-    public ImageIcon getImageIcon(final int faceNum) {
-        return facesManager.getMagicMapImageIcon(faceNum);
+    public ImageIcon getImageIcon(final int faceNum, @Nullable final boolean[] isUnknownImage) {
+        return facesManager.getMagicMapImageIcon(faceNum, isUnknownImage);
     }
 
 }

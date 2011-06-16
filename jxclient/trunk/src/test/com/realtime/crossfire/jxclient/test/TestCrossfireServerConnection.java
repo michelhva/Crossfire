@@ -35,6 +35,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectionListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSkillInfoListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSmoothListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSoundListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSpellListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
@@ -198,6 +199,14 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      */
     @Override
     public void addCrossfireSoundListener(@NotNull final CrossfireSoundListener listener) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void addCrossfireSmoothListener(@NotNull final CrossfireSmoothListener listener) {
         Assert.fail();
     }
 

@@ -105,6 +105,30 @@ public class CfMapPatch {
     }
 
     /**
+     * Sets the smooth value of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to set
+     * @param smooth the smooth value to set
+     * @return whether fog-of-war has been cleared (1) or whether the smooth
+     *         value has changed (2)
+     */
+    public int setSmooth(final int x, final int y, final int layer, final int smooth) {
+        return square[x][y].setSmooth(layer, smooth);
+    }
+
+    /**
+     * Determines the smooth value of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer of the square
+     * @return the smooth value of the square
+     */
+    public int getSmooth(final int x, final int y, final int layer) {
+        return square[x][y].getSmooth(layer);
+    }
+
+    /**
      * Sets the magic map color of one square.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square

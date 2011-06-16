@@ -80,6 +80,8 @@
             <li>map square size defaults to 64 pixels; optionally 32 or 4 pixels
                 are supported (--tile-size option).
             </li>
+            <li>supports smoothing (see server documentation for details).
+            </li>
         </ul>
     </li>
     <li>painting of map view: displays map contents even before all needed
@@ -157,6 +159,9 @@
     <li>displays small overview of known map contents</li>
     <li>includes magicmap information</li>
     <li>includes fog-of-war information</li>
+    <li>does not include smoothing as it would be hardly visible but
+        time-consuming
+    </li>
 </ul>
 
 <h3>Inventory Dialog</h3>
@@ -370,7 +375,6 @@
             <li>saved per-character</li>
         </ul>
     </li>
-    <li>smoothing in map view</li>
     <li>spells dialog</li>
     <li>auto-reconnect after unexpected disconnects</li>
     <li>command history retained per-character</li>
