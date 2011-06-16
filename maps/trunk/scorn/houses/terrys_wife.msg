@@ -30,12 +30,13 @@
   "match" : ["*"],
   "pre" : [["quest", "scorn/TerrysFarm", "50"]],
   "post" : [["settoken", "highlevel", "head"]],
-  "msg" : ["You've killed the Bandit Leader Guuh? have you recovered his head?"]
+  "msg" : ["You've killed the Bandit Leader Guuh? have you recovered his head?"],
+  "replies" : [["yes", "Yes, I killed him.", "1"], ["no", "Unfortunately no, not yet.", "0"]]
   }, {
   "match" : ["*"],
   "pre" : [["quest", "scorn/TerrysFarm", "=40"]],
   "post" : [],
-  "msg" : ["Please, kill Guuh the bandit, so we can live happily!"]
+  "msg" : ["So did you kill Ghuu? Oh please, help us, we can't do anything while he's here!"]
   }, {
   "match" : ["yes"],
   "pre" : [["token", "highlevel", "yes"]],
@@ -60,17 +61,20 @@
   "match" : ["strong", "help", "bandit", "guuh"],
   "pre" : [["token", "highlevel", "maybe"]],
   "post" : [["settoken", "lethelp", "yes"]],
-  "msg" : ["Guuh and his band are probably too strong for you to defeat in combat, but if you want to take them on, I won't stop you. Do you want to fight Guuh?"]
+  "msg" : ["Guuh and his band are probably too strong for you to defeat in combat, but if you want to take them on, I won't stop you. Do you want to fight Guuh?"],
+  "replies" : [["yes", "Yes, definitely.", "1"], ["no", "Hum, after some thinking, no.", "1"]]
   }, {
   "match" : ["*"],
   "pre" : [["level", "7"]],
   "post" : [["settoken", "highlevel", "yes"]],
-  "msg" : ["Hello mighty adventurer, we need your help.\nA group of bandits led by Guuh have invaded our farmhouse and occupied the room to the east. will you help us by ridding us of these evil bandits?"]
+  "msg" : ["Hello mighty adventurer, we need your help.\nA group of bandits led by Guuh have invaded our farmhouse and occupied the room to the east. will you help us by ridding us of these evil bandits?"],
+  "replies" : [["yes", "Yes, of course.", "1"], ["no", "I'm sorry, but not.", "0"]]
   }, {
   "match" : ["*"],
   "pre" : [["level", "3"]],
   "post" : [["settoken", "highlevel", "maybe"]],
-  "msg" : ["Hello adventurer, A group of bandits led by Guuh have invaded our farmhouse and occupied the room to the east. I would ask you to help, but I'm not sure you are strong enough."]
+  "msg" : ["Hello adventurer, A group of bandits led by Guuh have invaded our farmhouse and occupied the room to the east. I would ask you to help, but I'm not sure you are strong enough."],
+  "replies" : [["help", "It is my duty to help.", "0"], ["strong", "Well, how can I become stronger if I don't fight harder foes?", "2"]]
   }, {
   "match" : ["*"],
   "pre" : [],
