@@ -43,12 +43,24 @@ import org.jetbrains.annotations.Nullable;
  */
 public class KeyHandler {
 
+    /**
+     * The key index for SHIFT.
+     */
     private static final int KEY_SHIFT_SHIFT = 0;
 
+    /**
+     * The key index for CTRL.
+     */
     private static final int KEY_SHIFT_CTRL = 1;
 
+    /**
+     * The key index for ALT.
+     */
     private static final int KEY_SHIFT_ALT = 2;
 
+    /**
+     * The key index for ALT-GR.
+     */
     private static final int KEY_SHIFT_ALT_GR = 3;
 
     /**
@@ -88,6 +100,9 @@ public class KeyHandler {
     @NotNull
     private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
+    /**
+     * The current modifier states. Maps key index to state.
+     */
     @NotNull
     private final boolean[] keyShift = {
         false,
@@ -96,6 +111,10 @@ public class KeyHandler {
         false
     };
 
+    /**
+     * The active {@link KeyBindings}. Set to <code>null</code> when no key
+     * bindings are active.
+     */
     @Nullable
     private KeyBindings keyBindings = null;
 
@@ -115,19 +134,36 @@ public class KeyHandler {
         this.keyHandlerListener = keyHandlerListener;
     }
 
+    /**
+     * Resets the modifier states.
+     */
     public void reset() {
         Arrays.fill(keyShift, false);
     }
 
+    /**
+     * Sets the active {@link KeyBindings}.
+     * @param keyBindings the key bindings or <code>null</code> to unset
+     */
     @SuppressWarnings("NullableProblems")
     public void setKeyBindings(@NotNull final KeyBindings keyBindings) {
         this.keyBindings = keyBindings;
     }
 
+    /**
+     * Returns the modifier state.
+     * @param keyId the key index
+     * @return the modifier state for <code>keyId</code>
+     */
     private boolean getKeyShift(final int keyId) {
         return keyShift[keyId];
     }
 
+    /**
+     * Sets the modifier state.
+     * @param keyId the key index
+     * @param state the modifier state for <code>keyId</code>
+     */
     private void setKeyShift(final int keyId, final boolean state) {
         if (keyShift[keyId] != state) {
             debugKeyboardWrite("setKeyShift: "+keyId+"="+state);
@@ -135,6 +171,10 @@ public class KeyHandler {
         keyShift[keyId] = state;
     }
 
+    /**
+     * Handles a "key pressed" event.
+     * @param e the key event to handle
+     */
     private void handleKeyPress(@NotNull final KeyEvent e) {
         updateModifiers(e);
 
@@ -249,6 +289,10 @@ public class KeyHandler {
         debugKeyboardWrite("keyPressed: ignoring key because modifiers != 0");
     }
 
+    /**
+     * Handles a "key released" event.
+     * @param e the key event to handle
+     */
     private void handleKeyRelease(@NotNull final KeyEvent e) {
         updateModifiers(e);
 
@@ -275,6 +319,10 @@ public class KeyHandler {
         debugKeyboardWrite("keyReleased: ignoring key");
     }
 
+    /**
+     * Handles a "key typed" event.
+     * @param e the key event to handle
+     */
     private void handleKeyType(@NotNull final KeyEvent e) {
         if (e.getKeyChar() == 27) // ignore ESC key
         {
@@ -325,6 +373,10 @@ public class KeyHandler {
         debugKeyboardWrite("keyTyped: ignoring key");
     }
 
+    /**
+     * Handles a "key pressed" event.
+     * @param e the key event to handle
+     */
     public void keyPressed(@NotNull final KeyEvent e) {
         debugKeyboardWrite("pressed", e);
         try {
@@ -334,6 +386,10 @@ public class KeyHandler {
         }
     }
 
+    /**
+     * Handles a "key released" event.
+     * @param e the key event to handle
+     */
     public void keyReleased(@NotNull final KeyEvent e) {
         debugKeyboardWrite("released", e);
         try {
@@ -343,6 +399,10 @@ public class KeyHandler {
         }
     }
 
+    /**
+     * Handles a "key typed" event.
+     * @param e the key event to handle
+     */
     public void keyTyped(@NotNull final KeyEvent e) {
         debugKeyboardWrite("typed", e);
         try {
@@ -353,8 +413,8 @@ public class KeyHandler {
     }
 
     /**
-     * Update the saved modifier state from a key event.
-     * @param keyEvent The key event to process.
+     * Updates the saved modifier state from a key event.
+     * @param keyEvent the key event to process
      */
     private void updateModifiers(@NotNull final InputEvent keyEvent) {
         final int mask = keyEvent.getModifiersEx();

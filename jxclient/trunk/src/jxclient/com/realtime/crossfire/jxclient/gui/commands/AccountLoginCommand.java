@@ -46,8 +46,8 @@ public class AccountLoginCommand implements GUICommand {
 
     /**
      * Creates a new instance.
-     * @param commandCallback what to inform of the request.
-     * @param button element to find the Gui for the other fields.
+     * @param commandCallback what to inform of the request
+     * @param button the element to find the Gui for the other fields
      */
     public AccountLoginCommand(@NotNull final CommandCallback commandCallback, @NotNull final Component button) {
         this.commandCallback = commandCallback;

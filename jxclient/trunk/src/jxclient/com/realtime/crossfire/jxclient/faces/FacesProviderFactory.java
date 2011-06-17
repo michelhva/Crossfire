@@ -33,8 +33,8 @@ import org.jetbrains.annotations.Nullable;
 public class FacesProviderFactory {
 
     /**
-     * The defined {@link FacesProvider}s. Maps face size in pixels to faces
-     * provider instance.
+     * The defined {@link FacesProvider FacesProviders}. Maps face size in
+     * pixels to faces provider instance.
      */
     @NotNull
     private final Map<Integer, FacesProvider> facesProviders = new HashMap<Integer, FacesProvider>();

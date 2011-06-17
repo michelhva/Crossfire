@@ -118,7 +118,7 @@ public class DialogFactory {
     private final float frameAlpha;
 
     /**
-     * Create a new instance. The border images must have matching sizes.
+     * Creates a new instance. The border images must have matching sizes.
      * @param frameNW the north-west frame picture
      * @param frameN the north frame picture
      * @param frameNE the north-east frame picture
@@ -197,7 +197,7 @@ public class DialogFactory {
     }
 
     /**
-     * Create a new dialog.
+     * Creates a new dialog.
      * @param tooltipManager the tooltip manager to update
      * @param windowRenderer the window renderer the dialog belongs to
      * @param elementListener the element listener to notify

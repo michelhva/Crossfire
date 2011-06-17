@@ -118,6 +118,9 @@ public class JXCWindow {
     @NotNull
     private final OptionManager optionManager;
 
+    /**
+     * The {@link CharacterModel} to update.
+     */
     @NotNull
     private final CharacterModel characterModel;
 
@@ -313,6 +316,9 @@ public class JXCWindow {
 
     };
 
+    /**
+     * The {@link CrossfireAccountListener} attached to {@link #server}.
+     */
     @NotNull
     private final CrossfireAccountListener accountListener = new CrossfireAccountListener() {
 
@@ -361,6 +367,7 @@ public class JXCWindow {
      * @param commandQueue the command queue instance
      * @param guiManager the gui manager instance
      * @param keyHandler the key handler for keyboard input
+     * @param characterModel the character model to update
      * @param connection the connection to update
      */
     public JXCWindow(@NotNull final Exiter exiter, @NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final GuiManager guiManager, @NotNull final KeyHandler keyHandler, @NotNull final CharacterModel characterModel, @NotNull final JXCConnection connection) {

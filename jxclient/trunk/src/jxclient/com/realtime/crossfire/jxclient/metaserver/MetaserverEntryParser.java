@@ -262,10 +262,10 @@ public class MetaserverEntryParser {
     }
 
     /**
-     * Format a metaserver entry that returns the metaserver entry when parse
+     * Formats a metaserver entry that returns the metaserver entry when parse
      * with {@link #parseEntry(CharSequence)}.
-     * @param entry The metaserver entry to format.
-     * @return The formatted entry.
+     * @param entry the metaserver entry to format
+     * @return the formatted entry
      */
     @NotNull
     public static String format(@NotNull final MetaserverEntry entry) {
@@ -273,9 +273,9 @@ public class MetaserverEntryParser {
     }
 
     /**
-     * Replace characters with may cause parsing issues.
-     * @param str The string to replace.
-     * @return The replaced string.
+     * Replaces characters with may cause parsing issues.
+     * @param str the string to replace
+     * @return the replaced string
      */
     @NotNull
     private static String replace(@NotNull final String str) {

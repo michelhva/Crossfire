@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.settings.options;
 import java.util.EventListener;
 
 /**
- * Interface for listeners for attribute changes of {@link Option}s.
+ * Interface for listeners for attribute changes of {@link Option Options}.
  * @author Andreas Kirschbaum
  */
 public interface OptionListener extends EventListener {

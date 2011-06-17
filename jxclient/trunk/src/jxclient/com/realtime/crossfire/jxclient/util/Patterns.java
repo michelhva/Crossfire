@@ -25,7 +25,8 @@ import java.util.regex.Pattern;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Utility class containing useful {@link Pattern}s.
+ * Utility class containing useful {@link Pattern Patterns}.
+ * @author Andreas Kirschbaum
  */
 public class Patterns {
 

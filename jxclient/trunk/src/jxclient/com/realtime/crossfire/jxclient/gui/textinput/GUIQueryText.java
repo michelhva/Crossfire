@@ -54,6 +54,15 @@ public class GUIQueryText extends GUIText {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
+     * @param activeImage the element's background image when it is active
+     * @param inactiveImage the element's background image when it is inactive
+     * @param font the font for rendering displayed text
+     * @param inactiveColor the color for rendering displayed text when the
+     * element is active; also cursor color
+     * @param activeColor the color for rendering displayed text when the
+     * element is active
+     * @param margin the left margin in pixels
+     * @param text the initially entered text
      * @param enableHistory if set, enable access to command history
      */
     public GUIQueryText(@NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean enableHistory) {

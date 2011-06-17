@@ -27,16 +27,34 @@ package com.realtime.crossfire.jxclient.gui.gui;
  */
 public enum RendererGuiState {
 
+    /**
+     * The start screen is active.
+     */
     START,
 
+    /**
+     * The server selection screen is active.
+     */
     META,
 
+    /**
+     * The login screen is active.
+     */
     LOGIN,
 
+    /**
+     * The new character creation screen is active.
+     */
     NEW_CHAR,
 
+    /**
+     * The account management screen is active.
+     */
     ACCOUNT,
 
+    /**
+     * The playing screen is active.
+     */
     PLAYING
 
 }

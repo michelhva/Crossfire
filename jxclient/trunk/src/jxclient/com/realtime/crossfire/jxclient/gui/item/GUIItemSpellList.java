@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.gui.Modifiers;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.list.GUISpellList;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
@@ -42,6 +43,10 @@ import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+/**
+ * A {@link GUIItemItem} that represents an entry in a {@link GUISpellList}.
+ * @author Andreas Kirschbaum
+ */
 public class GUIItemSpellList extends GUIItemItem {
 
     /**
@@ -78,16 +83,34 @@ public class GUIItemSpellList extends GUIItemItem {
     @NotNull
     private final SpellsManager spellsManager;
 
+    /**
+     * The {@link CurrentSpellManager} to update when a spell is selected.
+     */
     @NotNull
     private final CurrentSpellManager currentSpellManager;
 
+    /**
+     * The currently selected spell or <code>null</code> if none is selected. It
+     * has {@link #spellListener} attached. Corresponds to index {@link
+     * #index}.
+     */
     @Nullable
     private Spell spell = null;
 
+    /**
+     * The currently selected spell or <code>-1</code> if none is selected.
+     * Corresponds to {@link #spell}.
+     */
     private int index = -1;
 
+    /**
+     * Whether this element is selected in its {@link GUISpellList}.
+     */
     private boolean selected;
 
+    /**
+     * The spells view to use.
+     */
     @NotNull
     private final ItemView spellsView;
 
@@ -145,11 +168,14 @@ public class GUIItemSpellList extends GUIItemItem {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param connection connection to server to send commands
+     * @param connection the server connection for sending commands
      * @param name the name of this element
+     * @param itemPainter the item painter for painting the icon
      * @param defaultIndex the default scroll index
      * @param facesManager the faces manager for looking up faces
      * @param spellsManager the spells manager instance to watch
+     * @param currentSpellManager the current spell manager to update when a
+     * spell is selected
      * @param spellsView the spells view to use
      */
     public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
@@ -292,6 +318,10 @@ public class GUIItemSpellList extends GUIItemItem {
         return new Dimension(32, 32);
     }
 
+    /**
+     * Sets the currently selected {@link #spell}. Attaches or detaches {@link
+     * #spellListener} as needed.
+     */
     private void setSpell() {
         final Spell newSpell = spellsManager.getSpell(index);
         if (spell == newSpell) {
@@ -313,6 +343,11 @@ public class GUIItemSpellList extends GUIItemItem {
         setTooltipText(newSpell == null ? null : newSpell.getTooltipText());
     }
 
+    /**
+     * Sets the {@link #index} of the currently selected {@link #spell}. Updates
+     * the currently selected spell.
+     * @param index the index to set
+     */
     private void setIndex(final int index) {
         if (this.index == index) {
             return;
@@ -322,6 +357,9 @@ public class GUIItemSpellList extends GUIItemItem {
         setSpell();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     protected Image getFace(@NotNull final CfItem item) {

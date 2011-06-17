@@ -45,19 +45,19 @@ public class OptionManager {
     private final Settings settings;
 
     /**
-     * Create a new instance.
-     * @param settings The settings instance for loading/saving option values.
+     * Creates a new instance.
+     * @param settings the settings instance for loading/saving option values
      */
     public OptionManager(@NotNull final Settings settings) {
         this.settings = settings;
     }
 
     /**
-     * Add a new option.
-     * @param optionName The option name to add.
-     * @param documentation The documentation string for the settings.
-     * @param option The option to add.
-     * @throws OptionException If the option name is not unique.
+     * Adds a new option.
+     * @param optionName the option name to add
+     * @param documentation the documentation string for the settings
+     * @param option the option to add
+     * @throws OptionException if the option name is not unique
      */
     public void addOption(@NotNull final String optionName, @NotNull final String documentation, @NotNull final Option option) throws OptionException {
         if (options.containsKey(optionName)) {
@@ -76,10 +76,10 @@ public class OptionManager {
     }
 
     /**
-     * Return a check box option.
-     * @param optionName The option name to look up.
-     * @return The option.
-     * @throws OptionException If the option name does not exist.
+     * Returns a check box option.
+     * @param optionName the option name to look up
+     * @return the option
+     * @throws OptionException if the option name does not exist
      */
     @NotNull
     public CheckBoxOption getCheckBoxOption(@NotNull final String optionName) throws OptionException {
@@ -92,7 +92,7 @@ public class OptionManager {
     }
 
     /**
-     * Load all options' states from the backing settings instance.
+     * Loads all options' states from the backing settings instance.
      */
     public void loadOptions() {
         for (final Map.Entry<String, Entry> e : options.entrySet()) {
@@ -114,7 +114,7 @@ public class OptionManager {
     }
 
     /**
-     * Save all options' states to the backing settings instance.
+     * Saves all options' states to the backing settings instance.
      */
     public void saveOptions() {
         for (final Map.Entry<String, Entry> e : options.entrySet()) {

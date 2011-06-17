@@ -37,34 +37,81 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
     @NotNull
     private static final Pattern HTML_TAG_MATCHER = Pattern.compile("<[^>]*>");
 
+    /**
+     * Time since last update in seconds.
+     */
     private final int updateSeconds;
 
+    /**
+     * The hostname.
+     */
     @NotNull
     private final String hostname;
 
+    /**
+     * The number of players.
+     */
     private final int players;
 
+    /**
+     * Returns the server version.
+     */
     @NotNull
     private final String version;
 
+    /**
+     * Returns the server comment.
+     */
     @NotNull
     private final String comment;
 
+    /**
+     * The number of bytes received.
+     */
     private final long bytesIn;
 
+    /**
+     * The number of bytes sent.
+     */
     private final long bytesOut;
 
+    /**
+     * The server's uptime in seconds.
+     */
     private final int uptimeSeconds;
 
+    /**
+     * The server's arch base.
+     */
     @NotNull
     private final String archBase;
 
+    /**
+     * The server's map base.
+     */
     @NotNull
     private final String mapBase;
 
+    /**
+     * The server's code base.
+     */
     @NotNull
     private final String codeBase;
 
+    /**
+     * Creates a new instance.
+     * @param updateSeconds time since last update in seconds
+     * @param hostname the hostname
+     * @param players the number of players
+     * @param version the server version
+     * @param comment the server comment
+     * @param bytesIn the number of bytes received
+     * @param bytesOut the number of bytes sent
+     * @param uptimeSeconds the server's uptime in seconds
+     * @param archBase the server's arch base
+     * @param mapBase the server's map base
+     * @param codeBase the server's code base
+     */
     public MetaserverEntry(final int updateSeconds, @NotNull final String hostname, final int players, @NotNull final String version, @NotNull final String comment, final long bytesIn, final long bytesOut, final int uptimeSeconds, @NotNull final String archBase, @NotNull final String mapBase, @NotNull final String codeBase) {
         this.updateSeconds = updateSeconds;
         this.hostname = hostname;
@@ -79,51 +126,95 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
         this.codeBase = codeBase;
     }
 
+    /**
+     * Returns the time since last update in seconds.
+     * @return the time in seconds
+     */
     public int getUpdateSeconds() {
         return updateSeconds;
     }
 
+    /**
+     * Returns the hostname.
+     * @return the hostname
+     */
     @NotNull
     public String getHostname() {
         return hostname;
     }
 
+    /**
+     * Returns the number of players.
+     * @return the number of players
+     */
     public int getPlayers() {
         return players;
     }
 
+    /**
+     * Returns the server version.
+     * @return the server version
+     */
     @NotNull
     public String getVersion() {
         return version;
     }
 
+    /**
+     * Returns the server comment.
+     * @return the server comment
+     */
     @NotNull
     public String getComment() {
         return comment;
     }
 
+    /**
+     * Returns the number of bytes received.
+     * @return the number of bytes received
+     */
     public long getBytesIn() {
         return bytesIn;
     }
 
+    /**
+     * Returns the number of bytes sent.
+     * @return the number of bytes sent
+     */
     public long getBytesOut() {
         return bytesOut;
     }
 
+    /**
+     * Returns the server's uptime in seconds.
+     * @return the server's uptime in seconds
+     */
     public int getUptimeSeconds() {
         return uptimeSeconds;
     }
 
+    /**
+     * Returns the server's arch base.
+     * @return the server's arch base
+     */
     @NotNull
     public String getArchBase() {
         return archBase;
     }
 
+    /**
+     * Returns the server's map base.
+     * @return the server's map base
+     */
     @NotNull
     public String getMapBase() {
         return mapBase;
     }
 
+    /**
+     * Returns the server's code base.
+     * @return the server's code base
+     */
     @NotNull
     public String getCodeBase() {
         return codeBase;
@@ -170,15 +261,15 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
     }
 
     /**
-     * Return a formatted string using the given format.
+     * Returns a formatted string using the given format.
      * <p/>
      * Supported format strings: <ul> <li>%% - a literal % character <li>%A -
-     * arch base <li>%C - comment <li>%E - code base <li>%H - hostname <li>%I -
-     * bytes in <li>%M - map base <li>%O - bytes out <li>%P - number of players
-     * <li>%T - uptime <li>%U - time since last update <li>%V - server version
-     * </ul>
-     * @param format The format.
-     * @return The formatted string.
+     * arch base <li>%C - server comment <li>%E - code base <li>%H - hostname
+     * <li>%I - bytes in <li>%M - map base <li>%O - bytes out <li>%P - number of
+     * players <li>%T - uptime in seconds <li>%U - time since last update in
+     * seconds <li>%V - server version </ul>
+     * @param format the format
+     * @return the formatted string
      */
     @NotNull
     public String format(@NotNull final String format) {

@@ -42,17 +42,17 @@ public class Info {
     private final long timestamp;
 
     /**
-     * Create a new instance. Sets the timestamp to "now".
-     * @param metaserverEntry The metaserver entry.
+     * Creates a new instance. Sets the timestamp to "now".
+     * @param metaserverEntry the metaserver entry
      */
     public Info(@NotNull final MetaserverEntry metaserverEntry) {
         this(metaserverEntry, System.currentTimeMillis());
     }
 
     /**
-     * Create a new instance.
-     * @param metaserverEntry The metaserver entry.
-     * @param timestamp The timestamp.
+     * Creates a new instance.
+     * @param metaserverEntry the metaserver entry
+     * @param timestamp the timestamp
      */
     public Info(@NotNull final MetaserverEntry metaserverEntry, final long timestamp) {
         this.metaserverEntry = metaserverEntry;
@@ -60,8 +60,8 @@ public class Info {
     }
 
     /**
-     * Return the metaserver entry.
-     * @return The metaserver entry.
+     * Returns the metaserver entry.
+     * @return the metaserver entry
      */
     @NotNull
     public MetaserverEntry getMetaserverEntry() {
@@ -69,8 +69,8 @@ public class Info {
     }
 
     /**
-     * Return the timestamp.
-     * @return The timestamp.
+     * Returns the timestamp.
+     * @return the timestamp
      */
     public long getTimestamp() {
         return timestamp;

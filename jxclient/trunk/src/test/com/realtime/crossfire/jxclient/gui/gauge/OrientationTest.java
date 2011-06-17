@@ -45,11 +45,28 @@ public class OrientationTest {
         check(OrientationSN.class, false, true);
     }
 
+    /**
+     * Checks an {@link Orientation} instance.
+     * @param class_ the instance's class
+     * @param useX if set, swap x and y coordinates
+     * @param flip if set, invert the x coordinate
+     * @throws IllegalAccessException if the test fails
+     * @throws InstantiationException if the test fails
+     */
     private static void check(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException {
         checkPositive(class_, useX, flip);
         checkNegative(class_, useX, flip);
     }
 
+    /**
+     * Checks that positive values are correctly handled by an {@link
+     * Orientation} instance.
+     * @param class_ the instance's class
+     * @param useX if set, swap x and y coordinates
+     * @param flip if set, invert the x coordinate
+     * @throws IllegalAccessException if the test fails
+     * @throws InstantiationException if the test fails
+     */
     private static void checkPositive(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException {
         final Orientation o = class_.newInstance();
         o.setHasNegativeImage(false);
@@ -81,6 +98,15 @@ public class OrientationTest {
         check(o, useX, flip, true, 0, 0, 0, 32, false);
     }
 
+    /**
+     * Checks that negative values are correctly handled by an {@link
+     * Orientation} instance.
+     * @param class_ the instance's class
+     * @param useX if set, swap x and y coordinates
+     * @param flip if set, invert the x coordinate
+     * @throws IllegalAccessException if the test fails
+     * @throws InstantiationException if the test fails
+     */
     private static void checkNegative(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException {
         final Orientation o = class_.newInstance();
         o.setHasNegativeImage(true);
@@ -112,6 +138,18 @@ public class OrientationTest {
         check(o, useX, flip, true, 0, 0, 100, 32, true);
     }
 
+    /**
+     * Checks that a value is correctly handled.
+     * @param o the orientation instance to check
+     * @param useX if set, swap x and y coordinates
+     * @param flip if set, invert the x coordinate
+     * @param valid the expected "valid" value
+     * @param x the expected x coordinate
+     * @param y the expected y coordinate
+     * @param w the expected width
+     * @param h the expected height
+     * @param negativeImage the expected "negative image" value
+     */
     private static void check(@NotNull final Orientation o, final boolean useX, final boolean flip, final boolean valid, final int x, final int y, final int w, final int h, final boolean negativeImage) {
         final int isX = useX ? o.getX() : o.getY();
         final int isY = useX ? o.getY() : o.getX();

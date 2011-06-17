@@ -88,8 +88,8 @@ public class ShortcutSpell extends Shortcut {
     }
 
     /**
-     * Return the spell to cast.
-     * @return The spell.
+     * Returns the spell to cast.
+     * @return the spell
      */
     @NotNull
     public Spell getSpell() {
@@ -97,18 +97,18 @@ public class ShortcutSpell extends Shortcut {
     }
 
     /**
-     * Return whether the spell should be "cast" or "invoked".
+     * Returns whether the spell should be "cast" or "invoked".
      * @return <code>true</code> for "cast", or <code>false</code> for
-     *         "invoke".
+     *         "invoke"
      */
     public boolean isCast() {
         return command == CAST;
     }
 
     /**
-     * Set whether the spell should be "cast" or "invoked".
+     * Sets whether the spell should be "cast" or "invoked".
      * @param cast <code>true</code> for "cast", or <code>false</code> for
-     * "invoke".
+     * "invoke"
      */
     public void setCast(final boolean cast) {
         final String newCommand = cast ? CAST : INVOKE;

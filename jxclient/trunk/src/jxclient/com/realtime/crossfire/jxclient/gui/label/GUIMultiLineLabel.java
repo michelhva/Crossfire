@@ -59,17 +59,17 @@ public class GUIMultiLineLabel extends GUILabel {
     private String[] lines;
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
-     * @param picture The background image; <code>null</code> for no
-     * background.
-     * @param font The font for rendering the label text.
-     * @param color The font color.
-     * @param backgroundColor The background color.
-     * @param alignment The text alignment.
-     * @param text The label text.
+     * @param name the name of this element
+     * @param picture the background image; <code>null</code> for no
+     * background
+     * @param font the font for rendering the label text
+     * @param color the font color
+     * @param backgroundColor the background color
+     * @param alignment the text alignment
+     * @param text the label text
      */
     public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
         super(tooltipManager, elementListener, name, picture, text, font, color, backgroundColor, alignment);

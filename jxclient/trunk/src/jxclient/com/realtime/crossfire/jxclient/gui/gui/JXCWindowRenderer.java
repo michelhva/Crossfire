@@ -661,6 +661,10 @@ public class JXCWindowRenderer {
         }
     }
 
+    /**
+     * Repaints all to black.
+     * @param g the graphics to paint into
+     */
     private void redrawBlack(@NotNull final Graphics g) {
         g.setColor(Color.BLACK);
         assert frame != null;
@@ -1064,11 +1068,21 @@ public class JXCWindowRenderer {
         return null;
     }
 
+    /**
+     * Dispatches a key press {@link KeyEvent}.
+     * @param e the event to dispatch
+     * @return whether a gui element did handle the event
+     */
     public boolean handleKeyPress(@NotNull final KeyEvent e) {
         assert currentGui != null;
         return currentGui.handleKeyPress(e);
     }
 
+    /**
+     * Dispatches a key typed {@link KeyEvent}.
+     * @param e the event to dispatch
+     * @return whether a gui element did handle the event
+     */
     public boolean handleKeyTyped(@NotNull final KeyEvent e) {
         assert currentGui != null;
         return currentGui.handleKeyTyped(e);
@@ -1158,7 +1172,7 @@ public class JXCWindowRenderer {
         final int eY = ce.getY();
         for (final Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
-                elected = manageMouseEvents(dialog, eX-dialog.getX(), eY-dialog.getY());
+                elected = getElementFromPoint(dialog, eX-dialog.getX(), eY-dialog.getY());
                 if (elected != null) {
                     break;
                 }
@@ -1170,14 +1184,23 @@ public class JXCWindowRenderer {
 
         if (elected == null) {
             assert currentGui != null;
-            elected = manageMouseEvents(currentGui, eX, eY);
+            elected = getElementFromPoint(currentGui, eX, eY);
         }
 
         return elected;
     }
 
+    /**
+     * Determines the {@link GUIElement} for a given coordinate with a given
+     * {@link Gui} instance.
+     * @param gui the gui to search
+     * @param eX the x-coordinate to check
+     * @param eY the y-coordinate to check
+     * @return the <code>GUIElement</code> at the given coordinate or
+     *         <code>null</code> if none was found
+     */
     @Nullable
-    private AbstractGUIElement manageMouseEvents(@NotNull final Gui gui, final int eX, final int eY) {
+    private AbstractGUIElement getElementFromPoint(@NotNull final Gui gui, final int eX, final int eY) {
         final int x = eX-offsetX;
         final int y = eY-offsetY;
         return gui.getElementFromPoint(x, y);
@@ -1274,6 +1297,10 @@ public class JXCWindowRenderer {
         }
     }
 
+    /**
+     * Adds a {@link Component}.
+     * @param component the component to add
+     */
     private void addComponent(@NotNull final Component component) {
         if (component instanceof GUIMap) {
             final GUIMap map = (GUIMap)component;
@@ -1291,6 +1318,10 @@ public class JXCWindowRenderer {
         }
     }
 
+    /**
+     * Removes a {@link Component}.
+     * @param component the component to remove
+     */
     private void removeComponent(@NotNull final Component component) {
         if (component instanceof GUIMap) {
             final GUIMap map = (GUIMap)component;

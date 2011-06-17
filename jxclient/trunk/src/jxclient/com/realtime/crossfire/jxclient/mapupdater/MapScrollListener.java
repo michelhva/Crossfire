@@ -22,9 +22,8 @@
 package com.realtime.crossfire.jxclient.mapupdater;
 
 /**
+ * Interface for listeners interested on map scrolled events.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public interface MapScrollListener {
 

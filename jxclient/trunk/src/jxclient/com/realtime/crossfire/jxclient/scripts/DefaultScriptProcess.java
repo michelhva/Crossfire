@@ -135,7 +135,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
     private final OutputStreamWriter osw;
 
     /**
-     * The {@link ScriptProcessListener}s to notify.
+     * The {@link ScriptProcessListener ScriptProcessListeners} to notify.
      */
     @NotNull
     private final Collection<ScriptProcessListener> scriptProcessListeners = new ArrayList<ScriptProcessListener>(1);

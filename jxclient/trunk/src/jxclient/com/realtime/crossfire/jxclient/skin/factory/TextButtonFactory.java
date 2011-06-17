@@ -62,11 +62,11 @@ public class TextButtonFactory {
     private final Color color;
 
     /**
-     * Create a new instance.
-     * @param up The images comprising the "up" button state.
-     * @param down The images comprising the "down" button state.
-     * @param font The font to use.
-     * @param color The text color.
+     * Creates a new instance.
+     * @param up the images comprising the "up" button state
+     * @param down the images comprising the "down" button state
+     * @param font the font to use
+     * @param color the text color
      */
     public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color) {
         this.up = up;
@@ -76,14 +76,14 @@ public class TextButtonFactory {
     }
 
     /**
-     * Create a new text button.
+     * Creates a new text button.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
-     * @param text The button text.
-     * @param autoRepeat Whether the button should autorepeat while being
-     * pressed.
-     * @param commandList The commands to execute when the button is elected.
+     * @param name the name of this element
+     * @param text the button text
+     * @param autoRepeat whether the button should autorepeat while being
+     * pressed
+     * @param commandList the commands to execute when the button is elected
      * @return the new text button
      */
     @NotNull

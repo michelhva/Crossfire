@@ -129,16 +129,16 @@ public class GUIDialogBackground extends AbstractGUIElement {
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param alpha the alpha value for the background, 1 is opaque, 0 full
-     * transparent.
-     * @param frameNW The north-west frame picture.
-     * @param frameN The north frame picture.
-     * @param frameNE The north-east frame picture.
-     * @param frameW The west frame picture.
-     * @param frameC The center frame picture.
-     * @param frameE The east frame picture.
-     * @param frameSW The south-west frame picture.
-     * @param frameS The south frame picture.
-     * @param frameSE The south-east frame picture.
+     * transparent
+     * @param frameNW the north-west frame picture
+     * @param frameN the north frame picture
+     * @param frameNE the north-east frame picture
+     * @param frameW the west frame picture
+     * @param frameC the center frame picture
+     * @param frameE the east frame picture
+     * @param frameSW the south-west frame picture
+     * @param frameS the south frame picture
+     * @param frameSE the south-east frame picture
      */
     public GUIDialogBackground(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final float alpha, @NotNull final Image frameNW, @NotNull final Image frameN, @NotNull final Image frameNE, @NotNull final Image frameW, @NotNull final Image frameC, @NotNull final Image frameE, @NotNull final Image frameSW, @NotNull final Image frameS, @NotNull final Image frameSE) {
         super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);

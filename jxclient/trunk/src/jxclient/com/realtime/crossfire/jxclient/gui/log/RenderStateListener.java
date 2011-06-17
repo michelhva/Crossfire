@@ -35,8 +35,8 @@ public interface RenderStateListener {
     void stateChanged();
 
     /**
-     * Return the height of the rendered gui element in pixels.
-     * @return The height.
+     * Returns the height of the rendered gui element in pixels.
+     * @return the height
      */
     int getHeight();
 

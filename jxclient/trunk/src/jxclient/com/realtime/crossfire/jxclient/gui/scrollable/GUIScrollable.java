@@ -22,6 +22,8 @@
 package com.realtime.crossfire.jxclient.gui.scrollable;
 
 /**
+ * Interface for {@link com.realtime.crossfire.jxclient.gui.gui.GUIElement
+ * GUIElements} that support scrolling.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
@@ -34,6 +36,10 @@ public interface GUIScrollable {
      */
     boolean canScroll(int distance);
 
+    /**
+     * Scrolls the element.
+     * @param distance the distance to scroll
+     */
     void scroll(int distance);
 
     /**

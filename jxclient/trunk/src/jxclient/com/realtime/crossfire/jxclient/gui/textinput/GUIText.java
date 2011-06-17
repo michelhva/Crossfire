@@ -49,6 +49,9 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
+ * Abstract base class for text input fields. It allows entering and editing
+ * text. Subclasses define the behavior when {@link #execute(String)} executing
+ * the entered text when <code>ENTER</code> is pressed.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
@@ -77,9 +80,15 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     @NotNull
     private final CommandHistory commandHistory;
 
+    /**
+     * The element's background image when it is active.
+     */
     @NotNull
     private final Image activeImage;
 
+    /**
+     * The element's background image when it is inactive.
+     */
     @NotNull
     private final Image inactiveImage;
 
@@ -95,17 +104,34 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     @Nullable
     private final Clipboard selection = Toolkit.getDefaultToolkit().getSystemSelection();
 
+    /**
+     * The {@link Font font} for rendering displayed text.
+     */
     @NotNull
     private final Font font;
 
+    /**
+     * The {@link Color color} for rendering displayed text when the element is
+     * inactive. Also color of cursor.
+     */
     @NotNull
     private final Color inactiveColor;
 
+    /**
+     * The {@link Color color} for rendering displayed text when the element is
+     * active.
+     */
     @NotNull
     private final Color activeColor;
 
+    /**
+     * The left margin in pixels.
+     */
     private final int margin;
 
+    /**
+     * The entered text.
+     */
     @NotNull
     private final StringBuilder text;
 
@@ -148,6 +174,15 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
+     * @param activeImage the element's background image when it is active
+     * @param inactiveImage the element's background image when it is inactive
+     * @param font the font for rendering displayed text
+     * @param inactiveColor the color for rendering displayed text when the
+     * element is active; also cursor color
+     * @param activeColor the color for rendering displayed text when the
+     * element is active
+     * @param margin the left margin in pixels
+     * @param text the initially entered text
      * @param enableHistory if set, enable access to command history
      */
     protected GUIText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean enableHistory) {
@@ -169,12 +204,20 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         setCursor(this.text.length());
     }
 
+    /**
+     * Sets the entered text.
+     * @param text the text
+     */
     public void setText(@NotNull final String text) {
         this.text.setLength(0);
         this.text.append(text);
         setCursor(this.text.length());
     }
 
+    /**
+     * Returns the entered text.
+     * @return the text
+     */
     @NotNull
     public String getText() {
         return text.toString();
@@ -239,6 +282,13 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         return new Dimension(preferredSize);
     }
 
+    /**
+     * Returns the displayed text. The displayed text may differ from the {@link
+     * #getText() entered text} as it may be clipped left because the input
+     * field is scrolled or because the input field is a {@link #hideInput
+     * password field that hides input}.
+     * @return the displayed text
+     */
     @NotNull
     private String getDisplayText() {
         final String tmpText = text.substring(offset);
@@ -377,7 +427,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /**
-     * Activate the previous command from the command history.
+     * Activates the previous command from the command history.
      */
     private void historyPrev() {
         final String commandUp = commandHistory.up();
@@ -387,7 +437,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /**
-     * Activate the next command from the command history.
+     * Activates the next command from the command history.
      */
     private void historyNext() {
         final String commandDown = commandHistory.down();
@@ -455,13 +505,13 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
     /**
      * Will be called to execute the entered command.
-     * @param command The entered command.
+     * @param command the entered command
      */
     protected abstract void execute(@NotNull final String command);
 
     /**
-     * Enable or disable hidden text.
-     * @param hideInput If set, hide input; else show input.
+     * Enables or disables hidden text.
+     * @param hideInput if set, hide input; else show input
      */
     public void setHideInput(final boolean hideInput) {
         if (this.hideInput != hideInput) {
@@ -471,8 +521,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /**
-     * Set the cursor position. Make sure the cursor position is visible.
-     * @param cursor The new cursor position.
+     * Sets the cursor position. Make sure the cursor position is visible.
+     * @param cursor the new cursor position
      */
     private void setCursor(final int cursor) {
         synchronized (syncCursor) {
@@ -484,9 +534,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 while (true) {
                     final String tmp = getDisplayText();
                     final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                    //                    final RectangularShape rectangleCursor = font.getStringBounds(tmpCursor, fontRenderContext);
+                    //final RectangularShape rectangleCursor = font.getStringBounds(tmpCursor, fontRenderContext);
                     final Dimension dimension = GuiUtils.getTextDimension(tmpCursor, font);
-                    //                    final int cursorX = (int)Math.round(rectangleCursor.getWidth());
+                    //final int cursorX = (int)Math.round(rectangleCursor.getWidth());
                     //noinspection NonPrivateFieldAccessedInSynchronizedContext
                     final int cursorX = dimension.width;
                     if (cursorX < getWidth()) {
@@ -519,7 +569,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /**
-     * Perform a "paste" operation from the system clipboard.
+     * Performs a "paste" operation from the system clipboard.
      */
     private void paste() {
         Transferable content = null;

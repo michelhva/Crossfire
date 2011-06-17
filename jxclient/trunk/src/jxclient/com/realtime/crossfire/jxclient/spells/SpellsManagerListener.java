@@ -29,15 +29,15 @@ public interface SpellsManagerListener {
 
     /**
      * A new spell was added.
-     * @param index The current index of <code>spell</code> in the spells
-     * manager.
+     * @param index the current index of <code>spell</code> in the spells
+     * manager
      */
     void spellAdded(int index);
 
     /**
      * A spell was removed.
-     * @param index The former index of <code>spell</code> in the spells
-     * manager.
+     * @param index the former index of <code>spell</code> in the spells
+     * manager
      */
     void spellRemoved(int index);
 

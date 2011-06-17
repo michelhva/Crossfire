@@ -32,6 +32,7 @@ import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * Queries Crossfire's metaserver to learn about existing servers.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
@@ -61,8 +62,8 @@ public class Metaserver {
     private final MetaserverModel metaserverModel;
 
     /**
-     * Create a new instance.
-     * @param metaserverCacheFile The metaserver cache file.
+     * Creates a new instance.
+     * @param metaserverCacheFile the metaserver cache file
      * @param metaserverModel the metaserver model instance to update
      */
     public Metaserver(@NotNull final File metaserverCacheFile, @NotNull final MetaserverModel metaserverModel) {
@@ -76,7 +77,7 @@ public class Metaserver {
     }
 
     /**
-     * Update the contents of {@link #metaserverModel}.
+     * Updates the contents of {@link #metaserverModel}.
      */
     public void updateMetaList() {
         metaserverModel.begin();

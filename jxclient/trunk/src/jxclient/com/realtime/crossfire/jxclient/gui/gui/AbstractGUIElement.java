@@ -30,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Abstract base class for GUI elements to be shown in {@link Gui}s.
+ * Abstract base class for GUI elements to be shown in {@link Gui Guis}.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */

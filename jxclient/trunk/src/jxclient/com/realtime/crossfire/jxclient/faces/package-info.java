@@ -25,8 +25,8 @@
  * com.realtime.crossfire.jxclient.faces.FacesManager}; it delegates to a
  * {@link com.realtime.crossfire.jxclient.faces.FaceCache} instance for caching
  * the face information. The faces are stored in {@link
- * java.lang.ref.SoftReference}s so they can be reclaimed by the garbage
- * collector.
+ * java.lang.ref.SoftReference SoftReferences} so they can be reclaimed by the
+ * garbage collector.
  * <p>If a face is not available, an "unknown" (question mark) face is returned
  * and the face is requested through a {@link
  * com.realtime.crossfire.jxclient.faces.FacesQueue} instance.

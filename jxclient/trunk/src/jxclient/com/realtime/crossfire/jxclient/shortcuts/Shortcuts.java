@@ -33,7 +33,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Manages a list of {@link Shortcut}s.
+ * Manages a list of {@link Shortcut Shortcuts}.
  * @author Andreas Kirschbaum
  */
 public class Shortcuts implements Iterable<Shortcut> {

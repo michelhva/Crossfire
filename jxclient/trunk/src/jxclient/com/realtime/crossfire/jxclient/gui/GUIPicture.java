@@ -32,9 +32,8 @@ import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * A {@link AbstractGUIElement} that displays a picture.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public class GUIPicture extends AbstractGUIElement {
 

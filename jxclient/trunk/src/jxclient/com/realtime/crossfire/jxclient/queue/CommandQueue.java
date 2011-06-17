@@ -138,9 +138,9 @@ public class CommandQueue {
     };
 
     /**
-     * Create a new instance.
-     * @param crossfireServerConnection The server connection for sending ncom
-     * commands.
+     * Creates a new instance.
+     * @param crossfireServerConnection the server connection for sending ncom
+     * commands
      * @param guiStateManager the gui state manager to watch
      */
     public CommandQueue(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager) {
@@ -150,8 +150,8 @@ public class CommandQueue {
     }
 
     /**
-     * Return the current repeat count and reset it to zero.
-     * @return The current repeat count.
+     * Returns the current repeat count and reset it to zero.
+     * @return the current repeat count
      */
     private int getRepeatCount() {
         final int oldRepeatCount = repeatCount;
@@ -160,15 +160,15 @@ public class CommandQueue {
     }
 
     /**
-     * Reset the current repeat count to zero.
+     * Resets the current repeat count to zero.
      */
     public void resetRepeatCount() {
         repeatCount = 0;
     }
 
     /**
-     * Add a digit to the current repeat count.
-     * @param digit The digit (0-9) to add.
+     * Adds a digit to the current repeat count.
+     * @param digit the digit (0-9) to add
      */
     public void addToRepeatCount(final int digit) {
         assert 0 <= digit && digit <= 9;
@@ -176,7 +176,7 @@ public class CommandQueue {
     }
 
     /**
-     * Forget about sent commands.
+     * Forgets about sent commands.
      */
     private void clear() {
         resetRepeatCount();
@@ -187,11 +187,11 @@ public class CommandQueue {
     }
 
     /**
-     * Send a "ncom" command to the server. This function uses the default
+     * Sends an "ncom" command to the server. This function uses the default
      * repeat count.
-     * @param mustSend If set, always send the command; if unset, drop the
-     * command if the command queue is full.
-     * @param command The command to send.
+     * @param mustSend if set, always send the command; if unset, drop the
+     * command if the command queue is full
+     * @param command the command to send
      * @see #sendNcom(boolean, int, String)
      */
     public void sendNcom(final boolean mustSend, @NotNull final String command) {
@@ -199,11 +199,11 @@ public class CommandQueue {
     }
 
     /**
-     * Send a "ncom" command to the server.
-     * @param mustSend If set, always send the command; if unset, drop the
-     * command if the command queue is full.
-     * @param repeat The repeat count.
-     * @param command The command to send.
+     * Sends an "ncom" command to the server.
+     * @param mustSend if set, always send the command; if unset, drop the
+     * command if the command queue is full
+     * @param repeat the repeat count
+     * @param command the command to send
      * @see #sendNcom(boolean, String)
      */
     public void sendNcom(final boolean mustSend, final int repeat, @NotNull final String command) {
@@ -224,7 +224,7 @@ public class CommandQueue {
     }
 
     /**
-     * Tell the server to stop running. If the character is not running, do
+     * Tells the server to stop running. If the character is not running, does
      * nothing.
      * @return whether running was active
      */

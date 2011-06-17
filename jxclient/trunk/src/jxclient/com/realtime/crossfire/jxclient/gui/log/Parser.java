@@ -217,7 +217,7 @@ public class Parser {
 
     /**
      * Processes a tag.
-     * @param tag the tag name to process. Leading and trailing brackets have
+     * @param tag the tag name to process; leading and trailing brackets have
      * been removed
      * @param defaultColor the default color to use
      */

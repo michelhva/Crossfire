@@ -425,8 +425,8 @@ public class KeyBindings {
 
     /**
      * Search bindings having a command text starting with the specified value.
-     * @param commandStart start of the text to search for.
-     * @return matching bindings.
+     * @param commandStart start of the text to search for
+     * @return the matching bindings
      */
     public Collection<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
         final Collection<KeyBinding> matches = new HashSet<KeyBinding>();

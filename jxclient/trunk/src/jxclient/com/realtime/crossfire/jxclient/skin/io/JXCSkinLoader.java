@@ -161,10 +161,28 @@ import org.jetbrains.annotations.Nullable;
  */
 public class JXCSkinLoader {
 
+    /**
+     * The kind of list to create in {@link #parseList(Args, ListType,
+     * TooltipManager, GUIElementListener, CommandQueue,
+     * CrossfireServerConnection, CurrentSpellManager, Image, Image)}.
+     */
     private enum ListType {
+
+        /**
+         * Create a {@link GUIItemList} instance.
+         */
         INVENTORY,
+
+        /**
+         * Create a {@link GUIFloorList} instance.
+         */
         GROUND,
+
+        /**
+         * Create a {@link GUISpellList} instance.
+         */
         SPELL
+
     }
 
     /**
@@ -318,7 +336,7 @@ public class JXCSkinLoader {
     private GuiElementParser guiElementParser;
 
     /**
-     * The defined {@link GUIElement}s.
+     * The defined {@link GUIElement GUIElements}.
      */
     @NotNull
     private final JXCSkinCache<AbstractGUIElement> definedGUIElements = new JXCSkinCache<AbstractGUIElement>("gui element");

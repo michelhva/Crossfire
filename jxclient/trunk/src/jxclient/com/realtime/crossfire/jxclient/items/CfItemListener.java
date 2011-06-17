@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.items;
 import java.util.EventListener;
 
 /**
- * Interface for listeners for attribute changes of {@link CfItem}s.
+ * Interface for listeners for attribute changes of {@link CfItem CfItems}.
  * @author Andreas Kirschbaum
  */
 public interface CfItemListener extends EventListener {

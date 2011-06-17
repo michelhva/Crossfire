@@ -31,7 +31,8 @@ import org.jetbrains.annotations.NotNull;
 public class IndexedEventListenerList {
 
     /**
-     * The registered {@link ItemListener}s to be notified about changes.
+     * The registered {@link ItemListener ItemListeners} to be notified about
+     * changes.
      */
     @NotNull
     private final List<EventListenerList> locationListeners = new ArrayList<EventListenerList>();

@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.spells;
 
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.util.StringSplitter;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -32,81 +33,168 @@ import org.jetbrains.annotations.NotNull;
  */
 public class Spell {
 
+    /**
+     * The spell name.
+     */
     @NotNull
     private final String name;
 
+    /**
+     * The {@link SpellListener SpellListeners} to be notified of changes.
+     */
     @NotNull
     private final Collection<SpellListener> listeners = new ArrayList<SpellListener>();
 
+    /**
+     * The face number.
+     */
     private int faceNum;
 
+    /**
+     * The tag ID.
+     */
     private int tag;
 
+    /**
+     * The description.
+     */
     @NotNull
     private String message = "";
 
+    /**
+     * The spell level.
+     */
     private int level;
 
+    /**
+     * The casting time.
+     */
     private int castingTime;
 
+    /**
+     * The mana needed to cast the spell.
+     */
     private int mana;
 
+    /**
+     * The grace needed to cast the spell.
+     */
     private int grace;
 
+    /**
+     * The damage done by the spell.
+     */
     private int damage;
 
+    /**
+     * The spell's skill. See {@link CrossfireStatsListener#CS_STAT_SKILLINFO}.
+     */
     private int skill;
 
+    /**
+     * The spell path.
+     */
     private int path;
 
+    /**
+     * Whether this spell is unknown to the character.
+     */
     private boolean unknown = false;
 
+    /**
+     * Creates a new instance.
+     * @param name the spell name
+     */
     public Spell(@NotNull final String name) {
         this.name = name;
     }
 
+    /**
+     * Returns the tag ID.
+     * @return the tag ID
+     */
     public int getTag() {
         return tag;
     }
 
+    /**
+     * Returns the spell level.
+     * @return the spell level
+     */
     public int getLevel() {
         return level;
     }
 
+    /**
+     * Returns the casting time.
+     * @return the casting time
+     */
     public int getCastingTime() {
         return castingTime;
     }
 
+    /**
+     * Returns the mana needed to cast the spell.
+     * @return the mana
+     */
     public int getMana() {
         return mana;
     }
 
+    /**
+     * Returns the grace needed to cast the spell.
+     * @return the grace
+     */
     public int getGrace() {
         return grace;
     }
 
+    /**
+     * Returns the damage done by the spell.
+     * @return the damage
+     */
     public int getDamage() {
         return damage;
     }
 
+    /**
+     * Returns the spell's skill. See {@link CrossfireStatsListener#CS_STAT_SKILLINFO}.
+     * @return the spell's skill
+     */
     public int getSkill() {
         return skill;
     }
 
+    /**
+     * Returns the spell path.
+     * @return the spell path
+     */
     public int getPath() {
         return path;
     }
 
+    /**
+     * Returns the spell name.
+     * @return the spell name
+     */
     @NotNull
     public String getName() {
         return name;
     }
 
+    /**
+     * Returns the description.
+     * @return the description
+     */
     @NotNull
     public String getMessage() {
         return message;
     }
 
+    /**
+     * Returns the face number.
+     * @return the face number
+     */
     public int getFaceNum() {
         return faceNum;
     }
@@ -130,6 +218,19 @@ public class Spell {
         }
     }
 
+    /**
+     * Updates the spell's parameters.
+     * @param faceNum the face number
+     * @param tag the tag ID
+     * @param message the description
+     * @param level the spell level
+     * @param castingTime the casting time
+     * @param mana the mana needed to cast the spell
+     * @param grace the grace needed to cast the spell
+     * @param damage the damage done by the spell
+     * @param skill the spell's skill
+     * @param path the spell path
+     */
     public void setParameters(final int faceNum, final int tag, @NotNull final String message, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path) {
         boolean changed = false;
 
@@ -202,6 +303,15 @@ public class Spell {
         setParameters(spell.faceNum, spell.tag, spell.message, spell.level, spell.castingTime, spell.mana, spell.grace, spell.damage, spell.skill, spell.path);
     }
 
+    /**
+     * Updates the spell's parameters.
+     * @param updateMana whether to update the mana
+     * @param mana the mana needed to cast the spell
+     * @param updateGrace whether to update the grace
+     * @param grace the grace needed to cast the spell
+     * @param updateDamage whether to update the damage
+     * @param damage the damage done by the spell
+     */
     public void updateParameters(final boolean updateMana, final int mana, final boolean updateGrace, final int grace, final boolean updateDamage, final int damage) {
         boolean changed = false;
 
@@ -225,6 +335,9 @@ public class Spell {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString() {
@@ -232,8 +345,8 @@ public class Spell {
     }
 
     /**
-     * Return a description for this spell to be used in tooltips.
-     * @return The tooltip text.
+     * Returns a description for this spell to be used in tooltips.
+     * @return the tooltip text
      */
     @NotNull
     public String getTooltipText() {

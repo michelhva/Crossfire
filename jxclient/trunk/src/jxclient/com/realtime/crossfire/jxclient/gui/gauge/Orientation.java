@@ -47,7 +47,7 @@ public interface Orientation {
      * Sets the extends of the image.
      * @param width the width
      * @param height the height
-     * @return true if the size changed, false else.
+     * @return true if the size changed, false else
      */
     boolean setExtends(int width, int height);
 

@@ -54,8 +54,8 @@ public class ShortcutCommand extends Shortcut {
     }
 
     /**
-     * Return the command to execute.
-     * @return The command.
+     * Returns the command to execute.
+     * @return the command
      */
     @NotNull
     public String getCommand() {

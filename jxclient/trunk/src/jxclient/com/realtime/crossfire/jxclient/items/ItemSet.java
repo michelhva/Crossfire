@@ -37,7 +37,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Model class maintaining the {@link CfItem}s known to the player.
+ * Model class maintaining the {@link CfItem CfItems} known to the player.
  * @author Andreas Kirschbaum
  */
 public class ItemSet {
@@ -73,13 +73,15 @@ public class ItemSet {
     private int openContainerFloor = 0;
 
     /**
-     * The list of {@link ItemSetListener}s to be notified about changes.
+     * The list of {@link ItemSetListener ItemSetListeners} to be notified about
+     * changes.
      */
     @NotNull
     private final EventListenerList itemSetListeners = new EventListenerList();
 
     /**
-     * The registered {@link ItemListener}s to be notified about changes.
+     * The registered {@link ItemListener ItemListeners} to be notified about
+     * changes.
      */
     @NotNull
     private final HashedEventListenerList itemListeners = new HashedEventListenerList();
@@ -316,7 +318,7 @@ public class ItemSet {
 
     /**
      * Returns an item by tag. This function may return the player object.
-     * @param tag The tag.
+     * @param tag the tag
      * @return the item or <code>null</code> if no such item exists
      */
     @Nullable

@@ -27,14 +27,29 @@ package com.realtime.crossfire.jxclient.guistate;
  */
 public enum GuiState {
 
+    /**
+     * Display the start screen.
+     */
     START,
 
+    /**
+     * Display the server selection screen.
+     */
     METASERVER,
 
+    /**
+     * Display the screen while a server connection is established.
+     */
     CONNECTING,
 
+    /**
+     * Display the main playing screen.
+     */
     CONNECTED,
 
+    /**
+     * Display a failed connection attempt.
+     */
     CONNECT_FAILED
 
 }

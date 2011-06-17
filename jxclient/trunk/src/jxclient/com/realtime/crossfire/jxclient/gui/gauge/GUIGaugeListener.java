@@ -42,7 +42,7 @@ public interface GUIGaugeListener {
     /**
      * Specify whether this item should hide itself, independent of the
      * "visibility" state.
-     * @param hidden
+     * @param hidden whether the gauge is hidden
      */
     void setHidden(boolean hidden);
 }

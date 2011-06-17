@@ -48,25 +48,25 @@ public class JXCSkinCache<T> implements Iterable<T> {
     private final Map<String, T> cache = new LinkedHashMap<String, T>();
 
     /**
-     * Create a new instance.
-     * @param ident The description of this cache used for creating error
-     * messages.
+     * Creates a new instance.
+     * @param ident the description of this cache used for creating error
+     * messages
      */
     public JXCSkinCache(@NotNull final String ident) {
         this.ident = ident;
     }
 
     /**
-     * Forget all cached elements.
+     * Forgets all cached elements.
      */
     public void clear() {
         cache.clear();
     }
 
     /**
-     * Add a new element to the cache.
-     * @param name The element name to add.
-     * @param t The element to add.
+     * Adds a new element to the cache.
+     * @param name the element name to add
+     * @param t the element to add
      * @throws JXCSkinException if the element name is not unique
      */
     public void insert(@NotNull final String name, @NotNull final T t) throws JXCSkinException {
@@ -78,9 +78,9 @@ public class JXCSkinCache<T> implements Iterable<T> {
     }
 
     /**
-     * Lookup an element by name.
-     * @param name The name of the element.
-     * @return The element.
+     * Looks up an element by name.
+     * @param name the name of the element
+     * @return the element
      * @throws JXCSkinException if no such element exists
      */
     @NotNull
@@ -94,8 +94,8 @@ public class JXCSkinCache<T> implements Iterable<T> {
     }
 
     /**
-     * Lookup an element by name.
-     * @param name The name of the element.
+     * Looks up an element by name.
+     * @param name the name of the element
      * @return the element or <code>null</code> if no such element exists
      */
     @Nullable
@@ -104,8 +104,8 @@ public class JXCSkinCache<T> implements Iterable<T> {
     }
 
     /**
-     * Return all stored values.
-     * @return An iterator returning all stored values.
+     * Returns all stored values.
+     * @return an (read-only) iterator returning all stored values
      */
     @NotNull
     @Override

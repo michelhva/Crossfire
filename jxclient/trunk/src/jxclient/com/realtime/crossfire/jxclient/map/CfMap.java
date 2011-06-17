@@ -33,7 +33,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents a map (as seen by the client). A map is a grid in which {@link
- * CfMapSquare}s can be stored.
+ * CfMapSquare CfMapSquares} can be stored.
  * <p/>
  * The map will be automatically enlarged by accesses to new squares. Not yet
  * set squares are considered dark.

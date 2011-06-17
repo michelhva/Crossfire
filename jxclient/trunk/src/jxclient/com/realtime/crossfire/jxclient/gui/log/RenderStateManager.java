@@ -58,10 +58,21 @@ public class RenderStateManager {
      */
     private int lastScrollPos = -1;
 
+    /**
+     * The last known result of {@link RenderState#canScrollDown} for {@link
+     * #renderState}. Used to detect changes.
+     */
     private boolean lastCanScrollDown = false;
 
+    /**
+     * The last known result of {@link RenderState#canScrollUp} for {@link
+     * #renderState}. Used to detect changes.
+     */
     private boolean lastCanScrollUp = false;
 
+    /**
+     * The underlying {@link RenderState} instance.
+     */
     @NotNull
     private final RenderState renderState = new RenderState();
 
@@ -92,9 +103,9 @@ public class RenderStateManager {
     };
 
     /**
-     * Create a new instance.
-     * @param renderStateListener The listener to notify about state changes.
-     * @param buffer The rendered buffer.
+     * Creates a new instance.
+     * @param renderStateListener the listener to notify about state changes
+     * @param buffer the rendered buffer
      */
     public RenderStateManager(@NotNull final RenderStateListener renderStateListener, @NotNull final Buffer buffer) {
         this.renderStateListener = renderStateListener;
@@ -103,36 +114,48 @@ public class RenderStateManager {
         fireChanges();
     }
 
+    /**
+     * Sets the viewable height in pixel.
+     * @param height the viewable height
+     */
     public void setHeight(final int height) {
         renderState.setHeight(buffer, height);
     }
 
+    /**
+     * Destroys this instance. Must be called when the instance is not needed
+     * anymore.
+     */
     public void dispose() {
         buffer.removeBufferListener(bufferListener);
     }
 
     /**
-     * Return the first line to render.
-     * @return The line index.
+     * Returns the first line to render.
+     * @return the line index
      */
     public int getTopIndex() {
         return renderState.getTopIndex();
     }
 
     /**
-     * Return the pixel offset for the first line to render.
-     * @return The pixel offset.
+     * Returns the number of pixels to shift the first displayed line.
+     * @return the pixel offset
      */
     public int getTopOffset() {
         return renderState.getTopOffset();
     }
 
+    /**
+     * Returns the location of the view area in pixels.
+     * @return the location
+     */
     public int getScrollPos() {
         return renderState.getScrollPos();
     }
 
     /**
-     * Reset the scrolling range to default values.
+     * Resets the scrolling range to default values.
      */
     public void resetScroll() {
         renderState.scrollToBottom(buffer);
@@ -140,8 +163,8 @@ public class RenderStateManager {
     }
 
     /**
-     * Scroll up by pixels.
-     * @param dy The number of pixels to scroll.
+     * Scrolls up by pixels.
+     * @param dy the number of pixels to scroll
      */
     public void scrollUp(final int dy) {
         assert dy > 0;
@@ -150,8 +173,8 @@ public class RenderStateManager {
     }
 
     /**
-     * Scroll down by pixels.
-     * @param dy The number of pixels to scroll.
+     * Scrolls down by pixels.
+     * @param dy the number of pixels to scroll
      */
     public void scrollDown(final int dy) {
         assert dy > 0;
@@ -160,8 +183,8 @@ public class RenderStateManager {
     }
 
     /**
-     * Scroll to a location.
-     * @param y The location.
+     * Scrolls to a location.
+     * @param y the location
      */
     public void scrollTo(final int y) {
         renderState.scrollTo(buffer, y);
@@ -169,7 +192,7 @@ public class RenderStateManager {
     }
 
     /**
-     * Whether scrolling up is possible.
+     * Returns whether scrolling up is possible.
      * @return whether scrolling up is possible
      */
     public boolean canScrollUp() {
@@ -177,13 +200,16 @@ public class RenderStateManager {
     }
 
     /**
-     * Whether scrolling down is possible.
+     * Returns whether scrolling down is possible.
      * @return whether scrolling down is possible
      */
     public boolean canScrollDown() {
         return renderState.canScrollDown();
     }
 
+    /**
+     * Notifies listeners of changes.
+     */
     private void fireChanges() {
         boolean fireChanges = false;
 

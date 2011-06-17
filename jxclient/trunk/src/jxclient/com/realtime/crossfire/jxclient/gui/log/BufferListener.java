@@ -42,8 +42,8 @@ public interface BufferListener {
 
     /**
      * Some lines have been removed from the buffer.
-     * @param lines The lines that have been removed from the beginning of the
-     * buffer.
+     * @param lines the lines that have been removed from the beginning of the
+     * buffer
      */
     void linesRemoved(@NotNull List<Line> lines);
 

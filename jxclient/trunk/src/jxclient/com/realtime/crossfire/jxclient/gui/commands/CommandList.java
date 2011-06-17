@@ -38,7 +38,7 @@ public class CommandList {
     private final CommandListType commandListType;
 
     /**
-     * The list of {@link GUICommand}s in execution order.
+     * The list of {@link GUICommand GUICommands} in execution order.
      */
     @NotNull
     private final Collection<GUICommand> commandList = new ArrayList<GUICommand>();

@@ -102,15 +102,15 @@ public class GUILabelMessage extends GUIMultiLineLabel {
     };
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
+     * @param name the name of this element
      * @param crossfireServerConnection the connection instance
      * @param windowRenderer the window renderer this element belongs to
-     * @param font The font to use.
-     * @param color The color to use.
-     * @param backgroundColor The background color.
+     * @param font the font to use
+     * @param color the color to use
+     * @param backgroundColor the background color
      */
     public GUILabelMessage(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor) {
         super(tooltipManager, elementListener, name, null, font, color, backgroundColor, Alignment.LEFT, "");

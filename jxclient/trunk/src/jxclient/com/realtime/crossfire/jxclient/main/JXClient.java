@@ -113,7 +113,7 @@ public class JXClient {
 
     /**
      * The program entry point.
-     * @param args The command line arguments.
+     * @param args the command line arguments
      */
     public static void main(@NotNull final String[] args) {
         final String buildNumber = getBuildNumber();

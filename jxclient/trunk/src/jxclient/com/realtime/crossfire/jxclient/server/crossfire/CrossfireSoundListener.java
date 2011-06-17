@@ -61,22 +61,22 @@ public interface CrossfireSoundListener {
 
     /**
      * A sound command has been received.
-     * @param x The x-coordinate relative to the player.
-     * @param y The y-coordinate relative to the player.
-     * @param num The sound number.
-     * @param type The sound type.
+     * @param x the x-coordinate relative to the player
+     * @param y the y-coordinate relative to the player
+     * @param num the sound number
+     * @param type the sound type
      */
     void commandSoundReceived(int x, int y, int num, int type);
 
     /**
      * A sound2 command has been received.
-     * @param x The x-coordinate relative to the player.
-     * @param y The y-coordinate relative to the player.
-     * @param dir The direction of the sound.
-     * @param volume The volume of the sound.
-     * @param type The sound type.
-     * @param action The action name.
-     * @param name The sound name.
+     * @param x the x-coordinate relative to the player
+     * @param y the y-coordinate relative to the player
+     * @param dir the direction of the sound
+     * @param volume the volume of the sound
+     * @param type the sound type
+     * @param action the action name
+     * @param name the sound name
      */
     void commandSound2Received(int x, int y, int dir, int volume, int type, @NotNull String action, @NotNull String name);
 

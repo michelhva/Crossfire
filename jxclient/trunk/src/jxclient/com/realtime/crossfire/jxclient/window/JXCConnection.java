@@ -204,9 +204,9 @@ public class JXCConnection {
     }
 
     /**
-     * Update the active character name.
-     * @param character The active character; <code>null</code> if not logged
-     * in.
+     * Updates the active character name.
+     * @param character the active character; <code>null</code> if not logged
+     * in
      */
     public void setCharacter(@Nullable final String character) {
         if (this.character == null ? character == null : this.character.equals(character)) {
@@ -239,7 +239,7 @@ public class JXCConnection {
     }
 
     /**
-     * Update the window title to reflect the current connection state.
+     * Updates the window title to reflect the current connection state.
      */
     private void updateTitle() {
         if (frame == null) {
@@ -257,8 +257,8 @@ public class JXCConnection {
     }
 
     /**
-     * Update information about the connected host.
-     * @param serverInfo The hostname; <code>null</code> if not connected.
+     * Updates information about the connected host.
+     * @param serverInfo the hostname; <code>null</code> if not connected
      */
     public void setHost(@Nullable final String serverInfo) {
         @Nullable final String newHostname;
@@ -293,7 +293,7 @@ public class JXCConnection {
     }
 
     /**
-     * Connect to the Crossfire server.
+     * Connects to the Crossfire server.
      */
     private void connect() {
         assert hostname != null;

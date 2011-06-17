@@ -304,9 +304,9 @@ public class KeybindingsManager {
     }
 
     /**
-     * Search bindings having a command text starting with the specified value.
-     * @param commandStart start of the text to search for.
-     * @return matching bindings.
+     * Searches bindings having a command text starting with the specified value.
+     * @param commandStart the start of the text to search for
+     * @return the matching bindings
      */
     public Iterable<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
         final Collection<KeyBinding> matches = new HashSet<KeyBinding>();

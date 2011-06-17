@@ -244,7 +244,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     /**
      * Returns the y-coordinate of the slider.
      * @param sh the height of the slider in pixels
-     * @return The y-coordinate.
+     * @return the y-coordinate
      */
     private int getSliderPosPixels(final int sh) {
         return (int)Math.round(sliderPos*(double)(getHeight()-sh)/(valueSize-sliderSize));

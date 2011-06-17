@@ -60,7 +60,7 @@ public class DialogStateParser {
     }
 
     /**
-     * Load the dialogs state from a file.
+     * Loads the dialogs state from a file.
      * @param skin the skin to update
      * @param windowRenderer the window renderer instance to attach to
      */
@@ -154,7 +154,7 @@ public class DialogStateParser {
     }
 
     /**
-     * Save the dialogs state to a file.
+     * Saves the dialogs state to a file.
      * @param skin the skin to update
      * @param windowRenderer the window renderer instance to attach to
      */
@@ -208,11 +208,11 @@ public class DialogStateParser {
     }
 
     /**
-     * Save the state of one dialog.
-     * @param dialog The dialog to save.
-     * @param type The dialog state; either "open" or "close".
-     * @param bw The writer to use.
-     * @throws IOException If an I/O error occurs.
+     * Saves the state of one dialog.
+     * @param dialog the dialog to save
+     * @param type the dialog state; either "open" or "close"
+     * @param bw the writer to use
+     * @throws IOException if an I/O error occurs
      */
     private static void saveDialog(@NotNull final Gui dialog, @NotNull final String type, @NotNull final Writer bw) throws IOException {
         if (dialog.getAutoSize() != null) {

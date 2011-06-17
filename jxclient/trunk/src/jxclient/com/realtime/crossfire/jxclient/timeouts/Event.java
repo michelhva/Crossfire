@@ -43,9 +43,9 @@ public class Event implements Comparable<Event> {
     private final TimeoutEvent timeoutEvent;
 
     /**
-     * Create a new instance.
-     * @param timeout The timeout in milliseconds; relative to "now".
-     * @param timeoutEvent The timeout event to execute.
+     * Creates a new instance.
+     * @param timeout the timeout in milliseconds; relative to "now"
+     * @param timeoutEvent the timeout event to execute
      */
     public Event(final int timeout, @NotNull final TimeoutEvent timeoutEvent) {
         this.timeout = System.currentTimeMillis()+timeout;
@@ -53,16 +53,16 @@ public class Event implements Comparable<Event> {
     }
 
     /**
-     * Return the timeout.
-     * @return The timeout.
+     * Returns the timeout.
+     * @return the timeout
      */
     public long getTimeout() {
         return timeout;
     }
 
     /**
-     * Return the timeout event.
-     * @return The timeout event.
+     * Returns the timeout event.
+     * @return the timeout event
      */
     @NotNull
     public TimeoutEvent getTimeoutEvent() {

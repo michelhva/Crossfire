@@ -62,11 +62,11 @@ public class CheckBoxFactory {
     private final Color color;
 
     /**
-     * Create a new instance.
-     * @param checked The image for the "checked" state.
-     * @param unchecked The image for the "unchecked" state.
-     * @param font The font to use.
-     * @param color The text color.
+     * Creates a new instance.
+     * @param checked the image for the "checked" state
+     * @param unchecked the image for the "unchecked" state
+     * @param font the font to use
+     * @param color the text color
      */
     public CheckBoxFactory(@NotNull final BufferedImage checked, @NotNull final BufferedImage unchecked, @NotNull final Font font, @NotNull final Color color) {
         this.checked = checked;
@@ -76,13 +76,13 @@ public class CheckBoxFactory {
     }
 
     /**
-     * Create a new checkbox.
+     * Creates a new checkbox.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
-     * @param option The option to affect.
-     * @param text The button text.
-     * @return The new checkbox.
+     * @param name the name of this element
+     * @param option the option to affect
+     * @param text the button text
+     * @return the new checkbox
      */
     @NotNull
     public AbstractGUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CheckBoxOption option, @NotNull final String text) {

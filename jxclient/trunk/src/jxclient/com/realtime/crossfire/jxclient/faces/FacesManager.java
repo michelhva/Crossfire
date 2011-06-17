@@ -26,6 +26,12 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
+ * Maintains a mapping of face numbers to face data. Face data can be queried
+ * for {@link #getOriginalImageIcon(int, boolean[]) original size}, {@link
+ * #getScaledImageIcon(int, boolean[]) scaled data for map views}, or {@link
+ * #getMagicMapImageIcon(int, boolean[]) reduced size for minimap views}. {@link
+ * #addFacesManagerListener(FacesManagerListener) Listeners can be attached} to
+ * be notified when face data has been loaded.
  * @author Andreas Kirschbaum
  */
 public interface FacesManager {

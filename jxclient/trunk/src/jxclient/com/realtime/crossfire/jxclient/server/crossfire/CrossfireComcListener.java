@@ -30,8 +30,8 @@ public interface CrossfireComcListener {
 
     /**
      * Called whenever a comc command has been received.
-     * @param packetNo The command number.
-     * @param time The execution time.
+     * @param packetNo the command number
+     * @param time the execution time
      */
     void commandComcReceived(int packetNo, int time);
 

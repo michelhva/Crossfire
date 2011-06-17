@@ -56,13 +56,13 @@ public class Fonts {
     private final Font fontArcane;
 
     /**
-     * Create a new instance.
-     * @param fontPrint The font to use for <code>FontID.PRINT</code>,
-     * <code>FontID.HAND</code>, and <code>FontID.STRANGE</code> text.
-     * @param fontFixed The font to use for <code>FontID.FIXED</code> text.
-     * @param fontFixedBold The font to use for <code>FontID.FIXED</code> text
-     * which has bold enabled.
-     * @param fontArcane The font to use for <code>FontID.ARCANE</code> text.
+     * Creates a new instance.
+     * @param fontPrint the font to use for <code>FontID.PRINT</code>,
+     * <code>FontID.HAND</code>, and <code>FontID.STRANGE</code> text
+     * @param fontFixed the font to use for <code>FontID.FIXED</code> text
+     * @param fontFixedBold the font to use for <code>FontID.FIXED</code> text
+     * which has bold enabled
+     * @param fontArcane the font to use for <code>FontID.ARCANE</code> text
      */
     public Fonts(@NotNull final Font fontPrint, @NotNull final Font fontFixed, @NotNull final Font fontFixedBold, @NotNull final Font fontArcane) {
         this.fontPrint = fontPrint;
@@ -72,9 +72,9 @@ public class Fonts {
     }
 
     /**
-     * Return the font to use for {@link FontID#PRINT}, {@link FontID#HAND}, and
+     * Returns the font to use for {@link FontID#PRINT}, {@link FontID#HAND}, and
      * {@link FontID#STRANGE} text.
-     * @return The font.
+     * @return the font
      */
     @NotNull
     public Font getFontPrint() {
@@ -82,8 +82,8 @@ public class Fonts {
     }
 
     /**
-     * Return the font to use for {@link FontID#FIXED} text.
-     * @return The font.
+     * Returns the font to use for {@link FontID#FIXED} text.
+     * @return the font
      */
     @NotNull
     public Font getFontFixed() {
@@ -91,9 +91,9 @@ public class Fonts {
     }
 
     /**
-     * Return the font to use for {@link FontID#FIXED} text which has bold
+     * Returns the font to use for {@link FontID#FIXED} text which has bold
      * enabled.
-     * @return The font.
+     * @return the font
      */
     @NotNull
     public Font getFontFixedBold() {
@@ -101,8 +101,8 @@ public class Fonts {
     }
 
     /**
-     * Return the font to use for {@link FontID#ARCANE} text.
-     * @return The font.
+     * Returns the font to use for {@link FontID#ARCANE} text.
+     * @return the font
      */
     @NotNull
     public Font getFontArcane() {
