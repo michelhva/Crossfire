@@ -49,21 +49,39 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
     @NotNull
     private final GUIElementListener elementListener;
 
+    /**
+     * The {@link CommandQueue command queue} for sending commands.
+     */
     @NotNull
     private final CommandQueue commandQueue;
 
+    /**
+     * The base name for created elements.
+     */
     @NotNull
     private final String name;
 
+    /**
+     * The {@link ItemPainter item painter} for painting the icon.
+     */
     @NotNull
     private final ItemPainter itemPainter;
 
+    /**
+     * The {@link CrossfireServerConnection connection} instance.
+     */
     @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
+    /**
+     * The {@link FacesManager faces manager} instance to use.
+     */
     @NotNull
     private final FacesManager facesManager;
 
+    /**
+     * The {@link FloorView floor view} to use.
+     */
     @NotNull
     private final FloorView floorView;
 
@@ -77,6 +95,11 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
+     * @param commandQueue the command queue for sending commands
+     * @param name the base name for created elements
+     * @param itemPainter the item painter for painting the icon
+     * @param crossfireServerConnection the connection instance
+     * @param facesManager the faces manager instance to use
      * @param floorView the floor view to use
      * @param inventoryView the inventory view to use
      */

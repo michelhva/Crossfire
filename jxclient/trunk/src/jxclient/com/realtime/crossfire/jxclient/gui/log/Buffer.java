@@ -36,7 +36,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages the contents of the contents of a log window. It consists of a list
- * of {@link Line}s.
+ * of {@link Line Lines}.
  * @author Andreas Kirschbaum
  */
 public class Buffer {
@@ -110,10 +110,10 @@ public class Buffer {
     private String lastText = "";
 
     /**
-     * Create a new instance.
-     * @param fonts The <code>Fonts</code> instance for looking up fonts.
-     * @param context The <code>FontRenderContext</code> to use.
-     * @param renderWidth The width to render.
+     * Creates a new instance.
+     * @param fonts the <code>Fonts</code> instance for looking up fonts
+     * @param context the <code>FontRenderContext</code> to use
+     * @param renderWidth the width to render
      */
     public Buffer(@NotNull final Fonts fonts, @NotNull final FontRenderContext context, final int renderWidth) {
         this.fonts = fonts;
@@ -143,7 +143,7 @@ public class Buffer {
     }
 
     /**
-     * Clear all lines from the buffer.
+     * Clears all lines from the buffer.
      */
     public void clear() {
         final List<Line> removedLines;
@@ -161,8 +161,8 @@ public class Buffer {
     }
 
     /**
-     * Append a {@link Line} to the end of the buffer.
-     * @param line The line to append.
+     * Appends a {@link Line} to the end of the buffer.
+     * @param line the line to append
      */
     public void addLine(@NotNull final Line line) {
         final int height = calculateHeight(line);
@@ -178,8 +178,8 @@ public class Buffer {
     }
 
     /**
-     * Replace the last {@link Line} of this buffer.
-     * @param line The replacing line.
+     * Replaces the last {@link Line} of this buffer.
+     * @param line the replacing line
      */
     public void replaceLine(@NotNull final Line line) {
         final int height = calculateHeight(line);
@@ -197,7 +197,7 @@ public class Buffer {
     }
 
     /**
-     * Prune excess lines.
+     * Prunes excess lines.
      */
     public void prune() {
         final List<Line> removedLines;
@@ -219,10 +219,10 @@ public class Buffer {
     }
 
     /**
-     * Return one {@link Line} by line index. The first line has the index
+     * Returns one {@link Line} by line index. The first line has the index
      * <code>0</code>.
-     * @param line The line index.
-     * @return The line.
+     * @param line the line index
+     * @return the line
      */
     @NotNull
     public Line getLine(final int line) {
@@ -232,8 +232,8 @@ public class Buffer {
     }
 
     /**
-     * Return the total height of all lines.
-     * @return The total height.
+     * Returns the total height of all lines.
+     * @return the total height
      */
     public int getTotalHeight() {
         synchronized (sync) {
@@ -242,7 +242,7 @@ public class Buffer {
     }
 
     /**
-     * Return an {@link Iterator} for the lines in this buffer. The caller must
+     * Returns an {@link Iterator} for the lines in this buffer. The caller must
      * hold {@link #sync}'s lock.
      * @return the iterator
      */
@@ -253,9 +253,9 @@ public class Buffer {
     }
 
     /**
-     * Return a {@link ListIterator} for the lines in this buffer.
-     * @param line The initial line index of the list iterator.
-     * @return The list iterator.
+     * Returns a {@link ListIterator} for the lines in this buffer.
+     * @param line the initial line index of the list iterator
+     * @return the list iterator
      */
     @NotNull
     public ListIterator<Line> listIterator(final int line) {
@@ -264,8 +264,8 @@ public class Buffer {
     }
 
     /**
-     * Return the number of lines.
-     * @return The number of lines.
+     * Returns the number of lines.
+     * @return the number of lines
      */
     public int size() {
         synchronized (sync) {
@@ -274,9 +274,9 @@ public class Buffer {
     }
 
     /**
-     * Determine the height of a {@link Line} in pixels.
-     * @param line The line to process.
-     * @return The height in pixels.
+     * Determines the height of a {@link Line} in pixels.
+     * @param line the line to process
+     * @return the height in pixels
      */
     private int calculateHeight(@NotNull final Line line) {
         int height = 0;
@@ -316,8 +316,8 @@ public class Buffer {
     }
 
     /**
-     * Add a listener to notify of changes.
-     * @param listener The listener.
+     * Adds a listener to notify of changes.
+     * @param listener the listener
      */
     public void addBufferListener(@NotNull final BufferListener listener) {
         listeners.add(listener);

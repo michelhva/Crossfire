@@ -29,11 +29,11 @@ public interface ScrollableListener {
 
     /**
      * Sets the scroll range.
-     * @param valueMin The minimum scroll value.
-     * @param valueMax The maximum scroll value.
-     * @param sliderPos The scroll location; it need not within the scroll
-     * range.
-     * @param sliderSize The size of the slider itself.
+     * @param valueMin the minimum scroll value
+     * @param valueMax the maximum scroll value
+     * @param sliderPos the scroll location; it need not within the scroll
+     * range
+     * @param sliderSize the size of the slider itself
      */
     void setRange(int valueMin, int valueMax, int sliderPos, int sliderSize);
 

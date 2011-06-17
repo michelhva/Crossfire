@@ -60,8 +60,8 @@ public class Settings {
     private boolean noSave = true;
 
     /**
-     * Create a new instance.
-     * @param file The file for loading/saving values.
+     * Creates a new instance.
+     * @param file the file for loading/saving values
      */
     public Settings(@NotNull final File file) {
         this.file = file;
@@ -70,11 +70,11 @@ public class Settings {
     }
 
     /**
-     * Return the string associated with the specified key at a node, or
+     * Returns the string associated with the specified key at a node, or
      * <code>defaultValue</code> if there is no association for this key.
-     * @param key Key to get value for.
-     * @param defaultValue the defaultValue
-     * @return The value.
+     * @param key the key to get the value for
+     * @param defaultValue the default value
+     * @return the value
      */
     @NotNull
     public String getString(@NotNull final String key, @NotNull final String defaultValue) {
@@ -83,11 +83,11 @@ public class Settings {
     }
 
     /**
-     * Return the boolean associated with the specified key at a node, or
+     * Returns the boolean associated with the specified key at a node or
      * <code>defaultValue</code> if there is no association for this key.
-     * @param key Key to get value for.
-     * @param defaultValue the defaultValue
-     * @return The value.
+     * @param key the key to get the value for
+     * @param defaultValue the default value
+     * @return the value
      */
     public boolean getBoolean(@NotNull final String key, final boolean defaultValue) {
         final String value = getString(key, Boolean.toString(defaultValue));
@@ -99,31 +99,31 @@ public class Settings {
     }
 
     /**
-     * Return the integer associated with the specified key at a node, or
+     * Returns the integer associated with the specified key at a node or
      * <code>defaultValue</code> if there is no association for this key.
-     * @param key Key to get value for.
-     * @param defaultValue the defaultValue
-     * @return The value.
+     * @param key the key to get the value for
+     * @param defaultValue the default value
+     * @return the value
      */
     public int getInt(@NotNull final String key, final int defaultValue) {
         return NumberParser.parseInt(getString(key, Integer.toString(defaultValue)), defaultValue);
     }
 
     /**
-     * Return the long associated with the specified key at a node, or
+     * Returns the long associated with the specified key at a node or
      * <code>defaultValue</code> if there is no association for this key.
-     * @param key Key to get value for.
-     * @param defaultValue the defaultValue
-     * @return The value.
+     * @param key the key to get the value for
+     * @param defaultValue the default value
+     * @return the value
      */
     public long getLong(@NotNull final String key, final long defaultValue) {
         return NumberParser.parseLong(getString(key, Long.toString(defaultValue)), defaultValue);
     }
 
     /**
-     * Store a key/value pair.
-     * @param key The key to store.
-     * @param value The value to store.
+     * Stores a key/value pair.
+     * @param key the key to store
+     * @param value the value to store
      * @param documentation the documentation string of the entry or
      * <code>null</code> if unknown
      */
@@ -141,9 +141,9 @@ public class Settings {
     }
 
     /**
-     * Store a key/value pair.
-     * @param key The key to store.
-     * @param value The value to store.
+     * Stores a key/value pair.
+     * @param key the key to store
+     * @param value the value to store
      * @param documentation the documentation string of the entry
      */
     public void putBoolean(@NotNull final String key, final boolean value, @NotNull final String documentation) {
@@ -151,9 +151,9 @@ public class Settings {
     }
 
     /**
-     * Store a key/value pair.
-     * @param key The key to store.
-     * @param value The value to store.
+     * Stores a key/value pair.
+     * @param key the key to store
+     * @param value the value to store
      * @param documentation the documentation string of the entry
      */
     public void putInt(@NotNull final String key, final int value, @NotNull final String documentation) {
@@ -161,9 +161,9 @@ public class Settings {
     }
 
     /**
-     * Store a key/value pair.
-     * @param key The key to store.
-     * @param value The value to store.
+     * Stores a key/value pair.
+     * @param key the key to store
+     * @param value the value to store
      * @param documentation the documentation string of the entry
      */
     public void putLong(@NotNull final String key, final long value, @NotNull final String documentation) {
@@ -171,8 +171,8 @@ public class Settings {
     }
 
     /**
-     * Remove a key. Does nothing if the key has no associated value.
-     * @param key The key to remove.
+     * Removes a key. Does nothing if the key has no associated value.
+     * @param key the key to remove
      */
     public void remove(@NotNull final String key) {
         if (values.remove(key) != null) {
@@ -197,7 +197,7 @@ public class Settings {
     }
 
     /**
-     * Load the values from the backing file.
+     * Loads the values from the backing file.
      */
     private void loadValues() {
         values.clear();
@@ -246,7 +246,7 @@ public class Settings {
     }
 
     /**
-     * Save the values to the backing file.
+     * Saves the values to the backing file.
      * @throws IOException if the values cannot be saved
      */
     private void saveValues() throws IOException {
@@ -274,9 +274,9 @@ public class Settings {
     }
 
     /**
-     * Save one node.
-     * @param writer The <code>Writer</code> to write to.
-     * @param node The node to save.
+     * Saves one node.
+     * @param writer the <code>Writer</code> to write to
+     * @param node the node to save
      * @throws IOException if the node cannot be saved
      */
     private static void saveNode(@NotNull final BufferedWriter writer, @NotNull final Map<String, Entry> node) throws IOException {

@@ -45,8 +45,8 @@ public class CurrentSpellManager {
     private Spell currentSpell = null;
 
     /**
-     * Set the currently selected spell.
-     * @param spell The spell to selected.
+     * Sets the currently selected spell.
+     * @param spell the spell to selected
      */
     public void setCurrentSpell(@Nullable final Spell spell) {
         if (currentSpell == spell) {
@@ -60,8 +60,8 @@ public class CurrentSpellManager {
     }
 
     /**
-     * Return the currently selected spell object.
-     * @return The spell object, or <code>null</code> if no spell is selected.
+     * Returns the currently selected spell object.
+     * @return the spell object, or <code>null</code> if no spell is selected
      */
     @Nullable
     public Spell getCurrentSpell() {
@@ -69,17 +69,17 @@ public class CurrentSpellManager {
     }
 
     /**
-     * Add a spell listener to be notified if the current spell object has
+     * Adds a spell listener to be notified if the current spell object has
      * changed.
-     * @param listener The listener to add.
+     * @param listener the listener to add
      */
     public void addSpellListener(@NotNull final CurrentSpellManagerListener listener) {
         listeners.add(listener);
     }
 
     /**
-     * Remove a spell listener.
-     * @param listener The listener to remove.
+     * Removes a spell listener.
+     * @param listener the listener to remove
      */
     public void removeSpellListener(@NotNull final CurrentSpellManagerListener listener) {
         listeners.remove(listener);

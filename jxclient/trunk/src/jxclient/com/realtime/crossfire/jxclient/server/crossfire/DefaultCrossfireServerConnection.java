@@ -188,140 +188,158 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private int currentNumLookObjects = 0;
 
     /**
-     * The {@link CrossfireServerConnectionListener}s to notify.
+     * The {@link CrossfireServerConnectionListener CrossfireServerConnectionListeners}
+     * to notify.
      */
     @NotNull
     private final Collection<CrossfireServerConnectionListener> crossfireServerConnectionListeners = new CopyOnWriteArrayList<CrossfireServerConnectionListener>();
 
     /**
-     * The {@link CrossfireDrawinfoListener}s to be notified.
+     * The {@link CrossfireDrawinfoListener CrossfireDrawinfoListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireDrawinfoListener> drawinfoListeners = new CopyOnWriteArrayList<CrossfireDrawinfoListener>();
 
     /**
-     * The {@link CrossfireDrawextinfoListener}s to be notified.
+     * The {@link CrossfireDrawextinfoListener CrossfireDrawextinfoListeners} to
+     * be notified.
      */
     @NotNull
     private final Collection<CrossfireDrawextinfoListener> drawextinfoListeners = new CopyOnWriteArrayList<CrossfireDrawextinfoListener>();
 
     /**
-     * The {@link CrossfireQueryListener}s to be notified.
+     * The {@link CrossfireQueryListener CrossfireQueryListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireQueryListener> queryListeners = new CopyOnWriteArrayList<CrossfireQueryListener>();
 
     /**
-     * The {@link CrossfireMagicmapListener}s to be notified of received
-     * magicmap commands.
+     * The {@link CrossfireMagicmapListener CrossfireMagicmapListeners} to be
+     * notified of received magicmap commands.
      */
     @NotNull
     private final Collection<CrossfireMagicmapListener> magicmapListeners = new CopyOnWriteArrayList<CrossfireMagicmapListener>();
 
     /**
-     * The {@link CrossfireUpdateFaceListener}s to be notified.
+     * The {@link CrossfireUpdateFaceListener CrossfireUpdateFaceListeners} to
+     * be notified.
      */
     @NotNull
     private final Collection<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new CopyOnWriteArrayList<CrossfireUpdateFaceListener>();
 
     /**
-     * The {@link CrossfireStatsListener}s to be notified.
+     * The {@link CrossfireStatsListener CrossfireStatsListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireStatsListener> crossfireStatsListeners = new CopyOnWriteArrayList<CrossfireStatsListener>();
 
     /**
-     * The {@link CrossfireUpdateItemListener}s to be notified.
+     * The {@link CrossfireUpdateItemListener CrossfireUpdateItemListeners} to
+     * be notified.
      */
     @NotNull
     private final Collection<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new CopyOnWriteArrayList<CrossfireUpdateItemListener>();
 
     /**
-     * The {@link CrossfireUpdateMapListener}s to be notified.
+     * The {@link CrossfireUpdateMapListener CrossfireUpdateMapListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireUpdateMapListener> crossfireUpdateMapListeners = new CopyOnWriteArrayList<CrossfireUpdateMapListener>();
 
     /**
-     * The {@link CrossfireTickListener}s to be notified.
+     * The {@link CrossfireTickListener CrossfireTickListeners} to be notified.
      */
     @NotNull
     private final Collection<CrossfireTickListener> crossfireTickListeners = new CopyOnWriteArrayList<CrossfireTickListener>();
 
     /**
-     * The {@link CrossfireSoundListener}s to be notified.
+     * The {@link CrossfireSoundListener CrossfireSoundListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireSoundListener> crossfireSoundListeners = new CopyOnWriteArrayList<CrossfireSoundListener>();
 
     /**
-     * The {@link CrossfireSmoothListener}s to be notified.
+     * The {@link CrossfireSmoothListener CrossfireSmoothListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireSmoothListener> crossfireSmoothListeners = new CopyOnWriteArrayList<CrossfireSmoothListener>();
 
     /**
-     * The {@link CrossfireMusicListener}s to be notified.
+     * The {@link CrossfireMusicListener CrossfireMusicListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireMusicListener> crossfireMusicListeners = new CopyOnWriteArrayList<CrossfireMusicListener>();
 
     /**
-     * The {@link CrossfireComcListener}s to be notified.
+     * The {@link CrossfireComcListener CrossfireComcListeners} to be notified.
      */
     @NotNull
     private final Collection<CrossfireComcListener> crossfireComcListeners = new CopyOnWriteArrayList<CrossfireComcListener>();
 
     /**
-     * The {@link CrossfireFaceListener}s to be notified.
+     * The {@link CrossfireFaceListener CrossfireFaceListeners} to be notified.
      */
     @NotNull
     private final Collection<CrossfireFaceListener> crossfireFaceListeners = new CopyOnWriteArrayList<CrossfireFaceListener>();
 
     /**
-     * The {@link CrossfireSpellListener}s to be notified.
+     * The {@link CrossfireSpellListener CrossfireSpellListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireSpellListener> crossfireSpellListeners = new CopyOnWriteArrayList<CrossfireSpellListener>();
 
     /**
-     * The {@link ReceivedPacketListener}s to be notified.
+     * The {@link ReceivedPacketListener ReceivedPacketListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<ReceivedPacketListener> receivedPacketListeners = new CopyOnWriteArrayList<ReceivedPacketListener>();
 
     /**
-     * The {@link SentReplyListener}s to be notified.
+     * The {@link SentReplyListener SentReplyListeners} to be notified.
      */
     @NotNull
     private final Collection<SentReplyListener> sentReplyListeners = new CopyOnWriteArrayList<SentReplyListener>();
 
     /**
-     * The {@link CrossfireExpTableListener}s to be notified.
+     * The {@link CrossfireExpTableListener CrossfireExpTableListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireExpTableListener> crossfireExpTableListeners = new CopyOnWriteArrayList<CrossfireExpTableListener>();
 
     /**
-     * The {@link CrossfireSkillInfoListener}s to be notified.
+     * The {@link CrossfireSkillInfoListener CrossfireSkillInfoListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireSkillInfoListener> crossfireSkillInfoListeners = new CopyOnWriteArrayList<CrossfireSkillInfoListener>();
 
     /**
-     * The {@link CrossfirePickupListener}s to be notified.
+     * The {@link CrossfirePickupListener CrossfirePickupListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfirePickupListener> crossfirePickupListeners = new CopyOnWriteArrayList<CrossfirePickupListener>();
 
     /**
-     * The {@link CrossfireAccountListener}s to be notified.
+     * The {@link CrossfireAccountListener CrossfireAccountListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireAccountListener> crossfireAccountListeners = new CopyOnWriteArrayList<CrossfireAccountListener>();
 
     /**
-     * The {@link CrossfireFailureListener}s to be notified.
+     * The {@link CrossfireFailureListener CrossfireFailureListeners} to be
+     * notified.
      */
     @NotNull
     private final Collection<CrossfireFailureListener> crossfireFailureListeners = new CopyOnWriteArrayList<CrossfireFailureListener>();
@@ -2295,7 +2313,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes an 'accountplayers' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processAccountPlayers(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2479,7 +2497,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes an 'anim' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processAnim(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2510,7 +2528,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'comc' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processComc(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2531,7 +2549,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'delinv' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processDelInv(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2554,7 +2572,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'delitem' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processDelItem(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2577,7 +2595,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'delspell' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processDelSpell(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2597,7 +2615,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'drawextinfo' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processDrawExtInfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2632,7 +2650,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'drawinfo' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processDrawInfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2754,7 +2772,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'goodbye' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processGoodbye(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2771,7 +2789,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes an 'image2' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processImage2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2795,7 +2813,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes an 'item2' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processItem2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2829,7 +2847,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'magicmap' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processMagicMap(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -2917,7 +2935,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'map2' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processMap2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3000,7 +3018,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'newmap' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processNewMap(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3017,7 +3035,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'pickup' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processPickup(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3037,7 +3055,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'pickup' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processPlayer(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3061,7 +3079,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'pickup' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processQuery(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3092,7 +3110,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'replyinfo' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processReplyInfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3118,7 +3136,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'replyinfo' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processSetup(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3296,7 +3314,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'smooth' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processSmooth(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3317,7 +3335,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'sound' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processSound(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3341,7 +3359,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'sound2' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processSound2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3370,7 +3388,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'stats' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processStats(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         while (packet.hasRemaining()) {
@@ -3504,7 +3522,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'tick' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processTick(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3524,7 +3542,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes an 'upditem' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processUpdItem(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3567,7 +3585,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes an 'updspell' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processUpdSpell(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -3591,7 +3609,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes a 'version' server command.
      * @param packet the packet's payload
-     * @throws UnknownCommandException if the packet is invalid.
+     * @throws UnknownCommandException if the packet is invalid
      */
     private void processVersion(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
@@ -4032,7 +4050,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener}s about an empty packet.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
+     * an empty packet.
      * @param command the command string
      */
     private void notifyPacketWatcherListenersEmpty(@NotNull final String command) {
@@ -4042,8 +4061,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener}s about a packet having ascii
-     * parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
+     * a packet having ascii parameters.
      * @param packet the packet contents
      * @param args the start index into <code>packet</code> of the packet's
      * arguments
@@ -4063,8 +4082,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener}s about a packet having an
-     * array of short values as parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
+     * a packet having an array of short values as parameters.
      * @param packet the packet contents
      * @param args the start index into <code>packet</code> of the packet's
      * arguments
@@ -4084,8 +4103,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener}s about a packet having an
-     * array of int values as parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
+     * a packet having an array of int values as parameters.
      * @param packet the packet contents
      * @param args the start index into <code>packet</code> of the packet's
      * arguments
@@ -4105,8 +4124,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener}s about a packet having a
-     * short and an in value as parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
+     * a packet having a short and an in value as parameters.
      * @param packet the packet contents
      * @param args the start index into <code>packet</code> of the packet's
      * arguments
@@ -4126,8 +4145,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener}s about a packet having mixed
-     * parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
+     * a packet having mixed parameters.
      * @param packet the packet contents
      * @param args the start index into <code>packet</code> of the packet's
      * arguments
@@ -4147,8 +4166,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener}s about a packet having stat
-     * parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
+     * a packet having stat parameters.
      * @param stat the stat value
      * @param args the stat arguments depending on <code>type</code> and
      * <code>stat</code>
@@ -4162,8 +4181,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener}s about a packet having
-     * unknown parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
+     * a packet having unknown parameters.
      * @param packet the packet contents
      * @param args the start index into <code>packet</code> of the packet's
      * arguments

@@ -32,7 +32,7 @@ import org.jetbrains.annotations.Nullable;
  * Asynchronously, the face is loaded from the file cache. If loading fails, the
  * face is requested from the server (and later stored into the file cache). As
  * soon as the face becomes available, all registered {@link
- * FacesManagerListener}s are notified.
+ * FacesManagerListener FacesManagerListeners} are notified.
  * @author Andreas Kirschbaum
  */
 public class DefaultFacesManager extends AbstractFacesManager {

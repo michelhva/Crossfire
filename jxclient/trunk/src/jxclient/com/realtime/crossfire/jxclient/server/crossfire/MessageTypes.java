@@ -178,7 +178,7 @@ public class MessageTypes {
     }
 
     /**
-     * Return all defined message types.
+     * Returns all defined message types.
      * @return all defined message types
      */
     @NotNull
@@ -207,10 +207,10 @@ public class MessageTypes {
     }
 
     /**
-     * Parse a string into a message type.
-     * @param str The string to parse.
-     * @return The message type.
-     * @throws UnknownCommandException If the string is unknown.
+     * Parses a string into a message type.
+     * @param str the string to parse
+     * @return the message type
+     * @throws UnknownCommandException if the string is unknown
      */
     public static int parseMessageType(@NotNull final String str) throws UnknownCommandException {
         if (str.equals("BOOK")) {

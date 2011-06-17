@@ -111,16 +111,16 @@ public class GUISpellLabel extends GUIHTMLLabel {
     };
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The gui element name.
-     * @param picture The background picture; may be <code>null</code>. It is
-     * ignored for type <code>SPELL_ICON</code>.
+     * @param name the gui element name
+     * @param picture the background picture; may be <code>null</code>; it is
+     * ignored for type <code>SPELL_ICON</code>
      * @param facesManager the instance for looking up faces
-     * @param font The font to use.
-     * @param type The display type.
-     * @param currentSpellManager The current spell manager to track.
+     * @param font the font to use
+     * @param type the display type
+     * @param currentSpellManager the current spell manager to track
      */
     public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @NotNull final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager) {
         super(tooltipManager, elementListener, name, picture, font, Color.WHITE, null, "");

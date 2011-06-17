@@ -30,20 +30,33 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * @author nicolas
+ * Provides a view of all spells a character knows.
+ * @author Nicolas Weeger
  */
 public class SpellsView extends AbstractItemView {
 
+    /**
+     * The spells to display.
+     */
     @NotNull
     private final SpellsManager spellsManager;
 
+    /**
+     * The {@link FacesManager} for retrieving face information.
+     */
     @NotNull
     private final FacesManager facesManager;
 
+    /**
+     * Creates a new instance.
+     * @param spellsManager the spells to display
+     * @param facesManager the faces manager for retrieving face information
+     */
     public SpellsView(@NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager) {
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         spellsManager.addCrossfireSpellChangedListener(new SpellsManagerListener() {
+
             @Override
             public void spellAdded(final int index) {
                 addModifiedRange(index, spellsManager.getSpells());
@@ -53,20 +66,29 @@ public class SpellsView extends AbstractItemView {
             public void spellRemoved(final int index) {
                 addModifiedRange(index, spellsManager.getSpells());
             }
+
         });
         facesManager.addFacesManagerListener(new FacesManagerListener() {
+
             @Override
             public void faceUpdated(@NotNull final Face face) {
                 addModifiedRange(0, spellsManager.getSpells());
             }
+
         });
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int getSize() {
         return spellsManager.getSpells();
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
     public CfItem getItem(final int index) {

@@ -39,8 +39,8 @@ public class JXCSkinClassSource extends AbstractJXCSkinSource {
     private final String baseName;
 
     /**
-     * Create a new instance.
-     * @param baseName The base resource name to prepend to all resource names.
+     * Creates a new instance.
+     * @param baseName the base resource name to prepend to all resource names
      * @throws JXCSkinException if the skin cannot be loaded
      */
     public JXCSkinClassSource(@NotNull final String baseName) throws JXCSkinException {
@@ -71,8 +71,8 @@ public class JXCSkinClassSource extends AbstractJXCSkinSource {
     }
 
     /**
-     * Return the {@link ClassLoader} to use.
-     * @return The class loader.
+     * Returns the {@link ClassLoader} to use.
+     * @return the class loader
      */
     @NotNull
     private ClassLoader getClassLoader() {

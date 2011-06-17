@@ -202,7 +202,7 @@ public class CfMapSquare {
 
     /**
      * Returns the darkness value of this square.
-     * @return the darkness value of the square. 0=dark, 255=full bright
+     * @return the darkness value of the square; 0=dark, 255=full bright
      */
     public int getDarkness() {
         return darkness;

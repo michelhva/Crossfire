@@ -41,8 +41,8 @@ public class JXCSkinDirSource extends AbstractJXCSkinSource {
     private final File dir;
 
     /**
-     * Create a new instance.
-     * @param dir The base directory.
+     * Creates a new instance.
+     * @param dir the base directory
      * @throws JXCSkinException if the skin cannot be loaded
      */
     public JXCSkinDirSource(@NotNull final File dir) throws JXCSkinException {

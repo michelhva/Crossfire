@@ -48,9 +48,9 @@ public class AccountPasswordCommand implements GUICommand {
 
     /**
      * Creates a new instance.
-     * @param commandCallback what to inform of various changes.
-     * @param button item to link to to find the Gui from which to get
-     * information.
+     * @param commandCallback what to inform of various changes
+     * @param button the item to link to to find the Gui from which to get
+     * information
      */
     public AccountPasswordCommand(@NotNull final CommandCallback commandCallback, @NotNull final Component button) {
         this.commandCallback = commandCallback;

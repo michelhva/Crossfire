@@ -34,13 +34,15 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractItemView implements ItemView {
 
     /**
-     * The registered {@link LocationsListener}s to be notified about changes.
+     * The registered {@link LocationsListener LocationsListeners} to be
+     * notified about changes.
      */
     @NotNull
     private final EventListenerList locationsListeners = new EventListenerList();
 
     /**
-     * The registered {@link ItemListener}s to be notified about changes.
+     * The registered {@link ItemListener ItemListeners} to be notified about
+     * changes.
      */
     @NotNull
     private final IndexedEventListenerList locationListeners = new IndexedEventListenerList();

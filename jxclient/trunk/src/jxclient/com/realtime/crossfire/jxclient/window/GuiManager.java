@@ -773,6 +773,9 @@ public class GuiManager {
         tooltipManager.reset();
     }
 
+    /**
+     * Terminates the GUI. Stops display updates and saves the display state.
+     */
     public void term() {
         windowRenderer.endRendering();
         if (skin != null) {

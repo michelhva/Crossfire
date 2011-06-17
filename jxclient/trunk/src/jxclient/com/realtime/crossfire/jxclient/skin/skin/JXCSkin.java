@@ -33,7 +33,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Defines a JXClient skin consisting of a main {@link Gui} and zero or more
- * dialog {@link Gui}s.
+ * dialog {@link Gui Guis}.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */

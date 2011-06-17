@@ -26,7 +26,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Represents a square area of {@link CfMapSquare}s.
+ * Represents a square area of {@link CfMapSquare CfMapSquares}.
  * @author Andreas Kirschbaum
  */
 public class CfMapPatch {
@@ -42,7 +42,8 @@ public class CfMapPatch {
     public static final int SIZE = 1<<SIZE_LOG;
 
     /**
-     * The array of {@link CfMapSquare}s. Elements are never <code>null</code>.
+     * The array of {@link CfMapSquare CfMapSquares}. Elements are never
+     * <code>null</code>.
      */
     @NotNull
     private final CfMapSquare[][] square = new CfMapSquare[SIZE][SIZE];
@@ -97,7 +98,7 @@ public class CfMapPatch {
      * Determines the darkness value of one square.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
-     * @return the darkness value of the square; 0=dark, 255=full bright. Not
+     * @return the darkness value of the square; 0=dark, 255=full bright; not
      *         yet set faces return 0
      */
     public int getDarkness(final int x, final int y) {

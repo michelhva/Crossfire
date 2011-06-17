@@ -128,8 +128,8 @@ public class SkillSet {
 
     /**
      * Adds a new skill to the list of known skills.
-     * @param id The numerical identifier for the new skill.
-     * @param skillName The skill name.
+     * @param id the numerical identifier for the new skill
+     * @param skillName the skill name
      */
     private void addSkill(final int id, @NotNull final String skillName) {
         final int index = id-CrossfireStatsListener.CS_STAT_SKILLINFO;
@@ -146,9 +146,9 @@ public class SkillSet {
     }
 
     /**
-     * Return the skill instance for a given skill name.
-     * @param skillName The skill name to look up.
-     * @return The skill instance.
+     * Returns the skill instance for a given skill name.
+     * @param skillName the skill name to look up
+     * @return the skill instance
      */
     public Skill getNamedSkill(final String skillName) {
         final Skill oldSkill = namedSkills.get(skillName);
@@ -174,9 +174,9 @@ public class SkillSet {
 
     /**
      * Returns the given skill as a Skill object.
-     * @param id The numerical skill identifier.
-     * @return The Skill object matching the given identifier; may be
-     *         <code>null</code> for undefined skills.
+     * @param id the numerical skill identifier
+     * @return the skill object matching the given identifier; may be
+     *         <code>null</code> for undefined skills
      */
     @Nullable
     public Skill getSkill(final int id) {

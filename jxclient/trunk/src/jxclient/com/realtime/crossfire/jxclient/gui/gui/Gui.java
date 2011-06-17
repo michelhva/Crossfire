@@ -40,7 +40,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Combines a list of {@link GUIElement}s to for a gui.
+ * Combines a list of {@link GUIElement GUIElements} to for a gui.
  * <p/>
  * A dialog can be modal. Such dialogs do not propagate key or mouse events to
  * lower dialogs.
@@ -287,7 +287,7 @@ public class Gui extends JComponent {
      * Determines the {@link GUIElement} for a given coordinate.
      * @param x the x-coordinate to check
      * @param y the y-coordinate to check
-     * @return the <code>GUIElement</code> at the given coordinate, or
+     * @return the <code>GUIElement</code> at the given coordinate or
      *         <code>null</code> if none was found
      */
     @Nullable

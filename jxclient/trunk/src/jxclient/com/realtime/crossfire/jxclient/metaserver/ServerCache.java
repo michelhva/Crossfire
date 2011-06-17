@@ -62,8 +62,8 @@ public class ServerCache {
     private final File file;
 
     /**
-     * Create a new instance.
-     * @param file The backing file or <code>null</code> to not cache on disk
+     * Creates a new instance.
+     * @param file the backing file or <code>null</code> to not cache on disk
      */
     public ServerCache(@Nullable final File file) {
         this.file = file;
@@ -72,16 +72,17 @@ public class ServerCache {
     }
 
     /**
-     * Add an entry to the cache. Overwrites old entries for the same hostname.
-     * @param metaserverEntry The entry to add.
+     * Adds an entry to the cache. Overwrites old entries for the same
+     * hostname.
+     * @param metaserverEntry the entry to add
      */
     public void put(@NotNull final MetaserverEntry metaserverEntry) {
         entries.put(makeKey(metaserverEntry), new Info(metaserverEntry));
     }
 
     /**
-     * Expire entries older than a given timestamp from the cache.
-     * @param timestamp The timestamp.
+     * Expires entries older than a given timestamp from the cache.
+     * @param timestamp the timestamp
      */
     public void expire(final long timestamp) {
         final long now = System.currentTimeMillis();
@@ -96,9 +97,9 @@ public class ServerCache {
     }
 
     /**
-     * Return all cached entries. The returned set may be modified by the
+     * Returns all cached entries. The returned set may be modified by the
      * caller.
-     * @return The cached entries; maps key to metaserver entry.
+     * @return the cached entries; maps key to metaserver entry
      */
     @NotNull
     public Map<String, MetaserverEntry> getAll() {
@@ -110,9 +111,9 @@ public class ServerCache {
     }
 
     /**
-     * Return the key for a metaserver entry.
-     * @param metaserverEntry The metaserver entry.
-     * @return The key.
+     * Returns the key for a metaserver entry.
+     * @param metaserverEntry the metaserver entry
+     * @return the key
      */
     @NotNull
     public static String makeKey(@NotNull final MetaserverEntry metaserverEntry) {
@@ -120,7 +121,7 @@ public class ServerCache {
     }
 
     /**
-     * Load the entries from the backing file.
+     * Loads the entries from the backing file.
      */
     private void load() {
         if (file == null) {
@@ -195,7 +196,7 @@ public class ServerCache {
     }
 
     /**
-     * Save all entries to the backing file.
+     * Saves all entries to the backing file.
      */
     public void save() {
         if (file == null) {

@@ -124,9 +124,9 @@ public class PoisonWatcher {
     };
 
     /**
-     * Create a new instance.
-     * @param stats The stats instance to notify.
-     * @param crossfireServerConnection The connection to watch.
+     * Creates a new instance.
+     * @param stats the stats instance to notify
+     * @param crossfireServerConnection the connection to watch
      */
     public PoisonWatcher(@NotNull final Stats stats, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         this.stats = stats;
@@ -136,8 +136,8 @@ public class PoisonWatcher {
     }
 
     /**
-     * Examine a text message.
-     * @param message The text message.
+     * Examines a text message.
+     * @param message the text message
      */
     private void check(@NotNull final String message) {
         if (message.equals(ASSERT_MESSAGE)) {
@@ -148,8 +148,8 @@ public class PoisonWatcher {
     }
 
     /**
-     * Set the current poisoned state.
-     * @param active The new poisoned state.
+     * Sets the current poisoned state.
+     * @param active the new poisoned state
      */
     private void setActive(final boolean active) {
         synchronized (sync) {

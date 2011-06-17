@@ -94,7 +94,7 @@ public abstract class KeyBinding {
 
     /**
      * Return the binding as a human-readable text.
-     * @return human-reading text.
+     * @return the human-readable text
      */
     public abstract String getBindingDescription();
 

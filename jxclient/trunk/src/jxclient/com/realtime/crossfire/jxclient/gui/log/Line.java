@@ -32,7 +32,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages the contents of one text line. A text line consists of a sequence of
- * {@link Segment}s.
+ * {@link Segment Segments}.
  * @author Andreas Kirschbaum
  */
 public class Line implements Iterable<Segment> {
@@ -81,34 +81,34 @@ public class Line implements Iterable<Segment> {
     }
 
     /**
-     * Remove the last segment. The line must not be empty.
+     * Removes the last segment. The line must not be empty.
      */
     public void removeLastSegment() {
         segments.remove(segments.size()-1);
     }
 
     /**
-     * Return the height of this line. Returns <code>-1</code> until {@link
+     * Returns the height of this line. Returns <code>-1</code> until {@link
      * #setHeight(int)} was called.
-     * @return The height of this line.
+     * @return the height of this line
      */
     public int getHeight() {
         return height;
     }
 
     /**
-     * Return the height of this line.
-     * @param height The height.
+     * Returns the height of this line.
+     * @param height the height
      */
     public void setHeight(final int height) {
         this.height = height;
     }
 
     /**
-     * Update the cached attributes of some {@link Segment}s.
-     * @param begin The index of the first segment to update.
-     * @param end The index of the first segment not to update.
-     * @param y The top border of the line's bounding box.
+     * Updates the cached attributes of some {@link Segment Segments}.
+     * @param begin the index of the first segment to update
+     * @param end the index of the first segment not to update
+     * @param y the top border of the line's bounding box
      * @param fonts the fonts instance to use
      * @param context the font render context to use
      */

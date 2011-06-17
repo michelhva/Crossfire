@@ -83,9 +83,9 @@ public class Codec {
     }
 
     /**
-     * Encode a string to make it fit into one line.
-     * @param str The string to be encoded.
-     * @return The encoded string.
+     * Encodes a string to make it fit into one line.
+     * @param str the string to be encoded
+     * @return the encoded string
      * @see #decode(String)
      */
     @NotNull
@@ -99,9 +99,9 @@ public class Codec {
     }
 
     /**
-     * Decode a string which was encoded by {@link #encode(String)}.
-     * @param str The string to be decoded.
-     * @return The decoded string.
+     * Decodes a string which was encoded by {@link #encode(String)}.
+     * @param str the string to be decoded
+     * @return the decoded string
      * @see #encode(String)
      */
     @NotNull

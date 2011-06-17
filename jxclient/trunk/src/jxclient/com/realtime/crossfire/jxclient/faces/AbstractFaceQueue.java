@@ -27,14 +27,14 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Abstract base class for classes implementing {@link FaceQueue}. This class
- * maintains the {@link FaceQueueListener}s; implementing classes need to
- * implement only the actual face loading code.
+ * maintains the {@link FaceQueueListener FaceQueueListeners}; implementing
+ * classes need to implement only the actual face loading code.
  * @author Andreas Kirschbaum
  */
 public abstract class AbstractFaceQueue implements FaceQueue {
 
     /**
-     * The registered {@link FaceQueueListener}s.
+     * The registered {@link FaceQueueListener FaceQueueListeners}.
      */
     @NotNull
     private final Collection<FaceQueueListener> faceQueueListeners = new LinkedList<FaceQueueListener>();

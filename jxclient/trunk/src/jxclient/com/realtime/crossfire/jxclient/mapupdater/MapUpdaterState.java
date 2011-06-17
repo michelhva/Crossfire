@@ -103,7 +103,7 @@ public class MapUpdaterState {
     private final Collection<MapScrollListener> mapScrollListeners = new ArrayList<MapScrollListener>();
 
     /**
-     * The {@link MapSizeListener}s to be notified.
+     * The {@link MapSizeListener MapSizeListeners} to be notified.
      */
     @NotNull
     private final Collection<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
@@ -231,7 +231,7 @@ public class MapUpdaterState {
     /**
      * Updates a map square by changing a face.
      * @param location the location to update
-     * @param faceNum the face to set. <code>0</code> clears the square
+     * @param faceNum the face to set; <code>0</code> clears the square
      * @param clearAnimation whether an animation should be cleared
      */
     public void processMapFace(@NotNull final Location location, final int faceNum, final boolean clearAnimation) {

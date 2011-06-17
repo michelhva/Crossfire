@@ -25,6 +25,10 @@ import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+/**
+ * Interface defining an abstract GUI element.
+ * @author Andreas Kirschbaum
+ */
 public interface GUIElement {
 
     /**
@@ -53,9 +57,15 @@ public interface GUIElement {
 
     /**
      * Returns whether this gui element is to be ignored for user interaction.
+     * @return whether this gui element is ignored
      */
     boolean isIgnore();
 
+    /**
+     * Returns the internal name of this gui element. The name is used in skin
+     * files for identifying an element.
+     * @return the name
+     */
     @NotNull
     String getName();
 

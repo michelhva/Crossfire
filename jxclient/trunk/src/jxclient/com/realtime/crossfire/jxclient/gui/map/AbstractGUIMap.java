@@ -670,6 +670,12 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         return mapHeight;
     }
 
+    /**
+     * Returns a {@link Graphics} instance for painting into {@link
+     * #bufferedImage}. The returned value must be freed by calling {@link
+     * Graphics#dispose()} on the returned instance.
+     * @return the graphics instance
+     */
     @NotNull
     private Graphics2D createBufferGraphics() {
         synchronized (bufferedImageSync) {

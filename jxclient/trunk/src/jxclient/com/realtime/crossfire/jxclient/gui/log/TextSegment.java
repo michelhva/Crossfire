@@ -77,13 +77,13 @@ public class TextSegment extends AbstractSegment {
     private int underlineOffset = 0;
 
     /**
-     * Create a new segment.
-     * @param text The text to display.
-     * @param bold Whether bold face is enabled.
-     * @param italic Whether italic face is enabled.
-     * @param underline Whether underlining is enabled.
-     * @param font The font to use.
-     * @param color The color to use; <code>null</code> means "default color".
+     * Creates a new segment.
+     * @param text the text to display
+     * @param bold whether bold face is enabled
+     * @param italic whether italic face is enabled
+     * @param underline whether underlining is enabled
+     * @param font the font to use
+     * @param color the color to use; <code>null</code> means "default color"
      */
     public TextSegment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color) {
         this.text = text;
@@ -95,8 +95,8 @@ public class TextSegment extends AbstractSegment {
     }
 
     /**
-     * Return the text to display.
-     * @return The text to display.
+     * Returns the text to display.
+     * @return the text to display
      */
     @NotNull
     public String getText() {
@@ -104,9 +104,9 @@ public class TextSegment extends AbstractSegment {
     }
 
     /**
-     * Return the {@link Font} to use for a given {@link Segment}.
-     * @param fonts The <code>Fonts</code> instance to use.
-     * @return The font.
+     * Returns the {@link Font} to use for a given {@link Segment}.
+     * @param fonts the <code>Fonts</code> instance to use
+     * @return the font
      */
     @NotNull
     private Font getFont(@NotNull final Fonts fonts) {

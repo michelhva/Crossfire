@@ -63,7 +63,7 @@ public class ClientSocket {
     private final DebugWriter debugProtocol;
 
     /**
-     * The {@link ClientSocketListener}s to notify.
+     * The {@link ClientSocketListener ClientSocketListeners} to notify.
      */
     @NotNull
     private final Collection<ClientSocketListener> clientSocketListeners = new ArrayList<ClientSocketListener>();

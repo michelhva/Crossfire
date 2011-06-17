@@ -132,8 +132,8 @@ public interface CommandCallback {
 
     /**
      * Change the account password.
-     * @param currentPassword current account password.
-     * @param newPassword new account password.
+     * @param currentPassword the current account password
+     * @param newPassword the new account password
      */
     void accountPassword(@NotNull String currentPassword, @NotNull String newPassword);
 }

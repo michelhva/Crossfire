@@ -73,6 +73,12 @@ public class MouseTracker {
         this.debugGui = debugGui;
     }
 
+    /**
+     * Handles a mouse dragged event.
+     * @param element the affected GUI element
+     * @param e the mouse event
+     */
+    @SuppressWarnings("UnusedParameters")
     public void mouseDragged(@Nullable final GUIElement element, @NotNull final MouseEvent e) {
         if (mouseElement != null) {
             mouseElement.mouseMoved(e);
@@ -82,6 +88,11 @@ public class MouseTracker {
         }
     }
 
+    /**
+     * Handles a mouse moved event.
+     * @param element the affected GUI element
+     * @param e the mouse event
+     */
     public void mouseMoved(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         enterElement(element, e);
         if (mouseElement != null) {
@@ -89,6 +100,11 @@ public class MouseTracker {
         }
     }
 
+    /**
+     * Handles a mouse pressed event.
+     * @param element the affected GUI element
+     * @param e the mouse event
+     */
     public void mousePressed(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         enterElement(element, e);
         isDragging = true;
@@ -98,6 +114,11 @@ public class MouseTracker {
         }
     }
 
+    /**
+     * Handles a mouse released event.
+     * @param element the affected GUI element
+     * @param e the mouse event
+     */
     public void mouseReleased(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         final boolean tmpIsClicked = isClicked;
         isDragging = false;
@@ -112,6 +133,11 @@ public class MouseTracker {
         }
     }
 
+    /**
+     * Handles a mouse entered event.
+     * @param element the affected GUI element
+     * @param e the mouse event
+     */
     public void mouseEntered(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         isClicked = false;
         if (!isDragging) {
@@ -119,6 +145,10 @@ public class MouseTracker {
         }
     }
 
+    /**
+     * Handles a mouse exited event.
+     * @param e the mouse event
+     */
     public void mouseExited(@NotNull final MouseEvent e) {
         isClicked = false;
         if (!isDragging) {

@@ -36,7 +36,7 @@ import org.jetbrains.annotations.NotNull;
 public class GuiElementParser {
 
     /**
-     * The defined {@link GUIElement}s.
+     * The defined {@link GUIElement GUIElements}.
      */
     @NotNull
     private final JXCSkinCache<AbstractGUIElement> definedGUIElements;

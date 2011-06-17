@@ -124,8 +124,8 @@ public abstract class AbstractLabel extends AbstractGUIElement {
     }
 
     /**
-     * Return the font.
-     * @return The font.
+     * Returns the font.
+     * @return the font
      */
     @NotNull
     protected Font getTextFont() {

@@ -104,10 +104,10 @@ public class Timeouts {
     }
 
     /**
-     * Set the timeout value for a given event. If the event is not yet pending,
+     * Sets the timeout value for a given event. If the event is not yet pending,
      * it is added.
-     * @param timeout The new timeout in milliseconds.
-     * @param timeoutEvent The timeout event to execute.
+     * @param timeout the new timeout in milliseconds
+     * @param timeoutEvent the timeout event to execute
      */
     public static void reset(final int timeout, @NotNull final TimeoutEvent timeoutEvent) {
         synchronized (EVENTS) {
@@ -117,9 +117,9 @@ public class Timeouts {
     }
 
     /**
-     * Add a timeout event.
-     * @param timeout The timeout in milliseconds.
-     * @param timeoutEvent The timeout event to execute.
+     * Adds a timeout event.
+     * @param timeout the timeout in milliseconds
+     * @param timeoutEvent the timeout event to execute
      */
     private static void add(final int timeout, @NotNull final TimeoutEvent timeoutEvent) {
         synchronized (EVENTS) {
@@ -133,9 +133,9 @@ public class Timeouts {
     }
 
     /**
-     * Remove a timeout event. If the timeout event is not active, nothing
+     * Removes a timeout event. If the timeout event is not active, nothing
      * happens.
-     * @param timeoutEvent The timeout event to remove.
+     * @param timeoutEvent the timeout event to remove
      */
     public static void remove(@NotNull final TimeoutEvent timeoutEvent) {
         synchronized (EVENTS) {

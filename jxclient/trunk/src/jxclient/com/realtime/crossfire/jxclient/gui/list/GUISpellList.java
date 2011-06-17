@@ -46,9 +46,15 @@ public class GUISpellList extends GUIItemList {
      */
     private static final long serialVersionUID = 1L;
 
+    /**
+     * The spells to display.
+     */
     @NotNull
     private final SpellsManager spellsManager;
 
+    /**
+     * The keybinding for displaying shortcuts.
+     */
     @NotNull
     private final KeybindingsManager keybindings;
 
@@ -67,7 +73,7 @@ public class GUISpellList extends GUIItemList {
      * selected item.
      * @param itemItemFactory the factory for creating item instances
      * @param spellsManager the spells to display
-     * @param keybindings bindings, to display shortcuts
+     * @param keybindings the bindings for displaying shortcuts
      */
     public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory, @NotNull final SpellsManager spellsManager, @NotNull final KeybindingsManager keybindings) {
         super(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, crossfireServerConnection, itemView, currentItem, itemItemFactory);
@@ -77,9 +83,9 @@ public class GUISpellList extends GUIItemList {
 
     /**
      * Return a text with the keybindings for the spell.
-     * @param spell what to search bindings for.
-     * @param prefix invocation prefix, "cast " or "invoke ",  to search for.
-     * @param legend text before the binding(s).
+     * @param spell what to search bindings for
+     * @param prefix invocation prefix, "cast " or "invoke ",  to search for
+     * @param legend the text before the binding(s)
      * @return empty string if no matching bindings, else text in the form
      *         "legend (binding 1) ; (binding 2) ; ..."
      */

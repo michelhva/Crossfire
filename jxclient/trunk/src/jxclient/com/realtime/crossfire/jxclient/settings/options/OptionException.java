@@ -35,8 +35,8 @@ public class OptionException extends Exception {
     private static final long serialVersionUID = 1;
 
     /**
-     * Create a new instance.
-     * @param reason Describes the error.
+     * Creates a new instance.
+     * @param reason describes the error
      */
     public OptionException(@NotNull final String reason) {
         super(reason);

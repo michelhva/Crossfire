@@ -357,7 +357,7 @@ public class Stats {
 
     /**
      * Returns the numerical value of the given statistic.
-     * @param statNo the stat identifier. See the CS_STAT constants
+     * @param statNo the stat identifier; see the CS_STAT constants
      * @return the statistic value (or "score")
      */
     public int getStat(final int statNo) {
@@ -366,7 +366,7 @@ public class Stats {
 
     /**
      * Returns the numerical value of the given statistic.
-     * @param statNo the stat identifier. See the CS_STAT constants
+     * @param statNo the stat identifier; see the CS_STAT constants
      * @return the statistic value
      */
     public double getFloatStat(final int statNo) {
@@ -375,7 +375,7 @@ public class Stats {
 
     /**
      * Sets the given statistic numerical value.
-     * @param statNo the stat identifier. See the CS_STAT constants
+     * @param statNo the stat identifier; see the CS_STAT constants
      * @param value the value to assign to the chosen statistic
      */
     public void setStat(final int statNo, final int value) {
@@ -391,7 +391,7 @@ public class Stats {
 
     /**
      * Returns the current title.
-     * @return a String representation of the title
+     * @return a string representation of the title
      */
     @NotNull
     public String getTitle() {
@@ -401,7 +401,7 @@ public class Stats {
     /**
      * Returns the current content of the range stat. This is basically the
      * current active skill for the player.
-     * @return a String representation of the range
+     * @return a string representation of the range
      */
     @NotNull
     public String getRange() {
@@ -465,7 +465,7 @@ public class Stats {
 
     /**
      * Returns the amount of global experience.
-     * @return Amount of global experience.
+     * @return the amount of global experience
      */
     public long getExperience() {
         return exp;
@@ -473,7 +473,7 @@ public class Stats {
 
     /**
      * Sets the amount of global experience.
-     * @param exp The new amount of global experience.
+     * @param exp the new amount of global experience
      */
     private void setExperience(final long exp) {
         if (this.exp == exp) {
@@ -497,7 +497,7 @@ public class Stats {
     }
 
     /**
-     * Calculates experience needed to reach the next level.
+     * Calculates the experience needed to reach the next level.
      */
     private void calculateExperienceToNextLevel() {
         final long newExpNextLevel = experienceTable.getExperienceToNextLevel(stats[CrossfireStatsListener.CS_STAT_LEVEL], exp);

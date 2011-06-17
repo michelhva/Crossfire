@@ -93,7 +93,7 @@ public class DefaultJXCSkin implements JXCSkin {
     private final Collection<GUIElement> guiElements = new HashSet<GUIElement>();
 
     /**
-     * All {@link SkinEvent}s attached to this instance.
+     * All {@link SkinEvent SkinEvents} attached to this instance.
      */
     @NotNull
     private final Collection<SkinEvent> skinEvents = new HashSet<SkinEvent>();

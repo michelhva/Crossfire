@@ -139,7 +139,7 @@ public class SpellsManager implements Iterable<Spell> {
     };
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param crossfireServerConnection the connection to listen on
      * @param guiStateManager the gui state manager to watch
      */

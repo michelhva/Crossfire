@@ -91,7 +91,7 @@ public class RawScale2x {
      * resolves to edge pixels.
      * @param x the x location of the pixel to retrieve
      * @param y the y location of the pixel to retrieve
-     * @return The pixel value at the specified location
+     * @return the pixel value at the specified location
      */
     private int getSourcePixel(final int x, final int y) {
         final int xx = Math.min(width-1, Math.max(0, x));

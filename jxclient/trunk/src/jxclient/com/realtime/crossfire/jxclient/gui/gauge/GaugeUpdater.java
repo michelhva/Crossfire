@@ -51,7 +51,7 @@ public abstract class GaugeUpdater {
     /**
      * Creates a new instance.
      * @param experienceTable the experience table to query
-     * @param hideIfEmpty if true the gauge will be hidden if all values are 0.
+     * @param hideIfEmpty if true the gauge will be hidden if all values are 0
      */
     protected GaugeUpdater(@NotNull final ExperienceTable experienceTable, final boolean hideIfEmpty) {
         this.experienceTable = experienceTable;

@@ -53,7 +53,7 @@ public class GUICommandFactory {
     }
 
     /**
-     * Create a new {@link GUICommand} instance from string representation.
+     * Creates a new {@link GUICommand} instance from string representation.
      * @param encodedCommandString the command string representation
      * @param commandCallback the command callback to use
      * @param commands the commands instance to use
@@ -65,7 +65,7 @@ public class GUICommandFactory {
     }
 
     /**
-     * Create a new {@link GUICommand} instance from string representation.
+     * Creates a new {@link GUICommand} instance from string representation.
      * @param commandString the command string representation
      * @param commandCallback the command callback to use
      * @param commands the commands instance to use

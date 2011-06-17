@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.faces;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for classes implementing a means to load {@link Face}s.
+ * Interface for classes implementing a means to load {@link Face Faces}.
  * @author Andreas Kirschbaum
  */
 public interface FaceQueue {

@@ -50,16 +50,16 @@ public abstract class CheckBoxOption extends Option {
     }
 
     /**
-     * Return the current state.
-     * @return The current state.
+     * Returns the current state.
+     * @return the current state
      */
     public boolean isChecked() {
         return checked;
     }
 
     /**
-     * Set the current state.
-     * @param checked The new state.
+     * Sets the current state.
+     * @param checked the new state
      */
     public void setChecked(final boolean checked) {
         if (this.checked == checked) {
@@ -71,14 +71,14 @@ public abstract class CheckBoxOption extends Option {
     }
 
     /**
-     * Toggle the checked state.
+     * Toggles the checked state.
      */
     public void toggleChecked() {
         setChecked(!checked);
     }
 
     /**
-     * Execute the action associated with this check box option. Must be
+     * Executes the action associated with this check box option. Must be
      * implemented in sub-classes.
      * @param checked whether the check box option is checked
      */
@@ -94,8 +94,8 @@ public abstract class CheckBoxOption extends Option {
     }
 
     /**
-     * Return the default value of {@link #isChecked()}.
-     * @return The default value.
+     * Returns the default value of {@link #isChecked()}.
+     * @return the default value
      */
     public abstract boolean isDefaultChecked();
 

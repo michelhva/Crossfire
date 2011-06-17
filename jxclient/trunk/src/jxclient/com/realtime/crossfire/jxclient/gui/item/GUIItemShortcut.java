@@ -68,7 +68,8 @@ public class GUIItemShortcut extends GUIItem {
     private static final String DEFAULT_TOOLTIP_TEXT = "(empty)";
 
     /**
-     * The {@link Shortcuts} instance for looking up {@link Shortcut}s.
+     * The {@link Shortcuts} instance for looking up {@link Shortcut
+     * Shortcuts}.
      */
     @NotNull
     private final Shortcuts shortcuts;

@@ -43,14 +43,14 @@ public interface CrossfireAccountListener {
 
     /**
      * Information about a character in an account was received.
-     * @param name character name.
-     * @param characterClass character's class.
-     * @param race character's race.
-     * @param face character's face name.
-     * @param party last party the character was in.
-     * @param map where the player was in when she logged out.
-     * @param level last character level.
-     * @param faceNumber identifier of the face.
+     * @param name the character name
+     * @param characterClass the character's class
+     * @param race the character's race
+     * @param face the character's face name
+     * @param party the last party the character was in
+     * @param map where the player was in when she logged out
+     * @param level the last character level
+     * @param faceNumber the identifier of the face
      */
     void addAccount(@NotNull String name, @NotNull String characterClass, @NotNull String race, @NotNull String face, @NotNull String party, @NotNull String map, int level, int faceNumber);
 

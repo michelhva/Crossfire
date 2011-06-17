@@ -138,9 +138,9 @@ public class ActiveSkillWatcher {
     };
 
     /**
-     * Create a new instance.
-     * @param stats The stats instance to notify/watch.
-     * @param crossfireServerConnection The connection to watch.
+     * Creates a new instance.
+     * @param stats the stats instance to notify/watch
+     * @param crossfireServerConnection the connection to watch
      */
     public ActiveSkillWatcher(@NotNull final Stats stats, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         this.stats = stats;
@@ -151,7 +151,7 @@ public class ActiveSkillWatcher {
     }
 
     /**
-     * Check whether the range attribute has changed.
+     * Checks whether the range attribute has changed.
      * @param range the new range attribute
      */
     private void checkRange(@NotNull final String range) {
@@ -161,7 +161,7 @@ public class ActiveSkillWatcher {
     }
 
     /**
-     * Check whether a drawinfo message is skill related.
+     * Checks whether a drawinfo message is skill related.
      * @param message the message
      */
     private void checkMessage(@NotNull final String message) {
@@ -172,8 +172,8 @@ public class ActiveSkillWatcher {
     }
 
     /**
-     * Set the active skill name.
-     * @param activeSkill The active skill name.
+     * Sets the active skill name.
+     * @param activeSkill the active skill name
      */
     private void setActive(@NotNull final String activeSkill) {
         // Normalize skill name: the Crossfire server sometimes sends "Skill:

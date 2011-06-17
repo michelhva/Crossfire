@@ -25,7 +25,8 @@ import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * The base class for all options. It manages a set of {@link OptionListener}s.
+ * The base class for all options. It manages a set of {@link OptionListener
+ * OptionListeners}.
  * @author Andreas Kirschbaum
  */
 public abstract class Option {

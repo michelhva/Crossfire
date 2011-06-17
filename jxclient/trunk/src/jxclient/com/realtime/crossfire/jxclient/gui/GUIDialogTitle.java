@@ -66,9 +66,9 @@ public class GUIDialogTitle extends GUIOneLineLabel {
      * @param windowRenderer the window renderer this element belongs to
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param textFont The font for rendering the label text.
-     * @param textColor The font color.
-     * @param backgroundColor The background color.
+     * @param textFont the font for rendering the label text
+     * @param textColor the font color
+     * @param backgroundColor the background color
      * @param title the title text
      */
     public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final Color backgroundColor, @NotNull final String title) {

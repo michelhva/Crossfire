@@ -40,8 +40,8 @@ public class Filenames {
     }
 
     /**
-     * Return the image cache directory.
-     * @return The image cache directory.
+     * Returns the image cache directory.
+     * @return the image cache directory
      */
     @NotNull
     public static File getOriginalImageCacheDir() {
@@ -55,8 +55,8 @@ public class Filenames {
     }
 
     /**
-     * Return the image cache directory for double size images.
-     * @return The image cache directory.
+     * Returns the image cache directory for double size images.
+     * @return the image cache directory
      */
     @NotNull
     public static File getScaledImageCacheDir() {
@@ -70,8 +70,8 @@ public class Filenames {
     }
 
     /**
-     * Return the image cache directory for magic map sized images.
-     * @return The image cache directory.
+     * Returns the image cache directory for magic map sized images.
+     * @return the image cache directory
      */
     @NotNull
     public static File getMagicMapImageCacheDir() {
@@ -85,9 +85,9 @@ public class Filenames {
     }
 
     /**
-     * Return the main settings file.
-     * @return The main settings file.
-     * @throws IOException If the file cannot be accessed.
+     * Returns the main settings file.
+     * @return the main settings file
+     * @throws IOException if the file cannot be accessed
      */
     @NotNull
     public static File getSettingsFile() throws IOException {
@@ -95,13 +95,13 @@ public class Filenames {
     }
 
     /**
-     * Return the shortcuts file.
-     * @param hostname The hostname of the character; <code>null</code>=global
-     * key bindings file.
-     * @param character The character name; <code>null</code>=global key
-     * bindings file.
-     * @return The shortcuts file.
-     * @throws IOException If the file cannot be accessed.
+     * Returns the shortcuts file.
+     * @param hostname the hostname of the character; <code>null</code>=global
+     * key bindings file
+     * @param character the character name; <code>null</code>=global key
+     * bindings file
+     * @return the shortcuts file
+     * @throws IOException if the file cannot be accessed
      */
     @NotNull
     public static File getShortcutsFile(@NotNull final CharSequence hostname, @NotNull final CharSequence character) throws IOException {
@@ -109,13 +109,13 @@ public class Filenames {
     }
 
     /**
-     * Return the keybindings file.
-     * @param hostname The hostname of the character; <code>null</code>=global
-     * key bindings file.
-     * @param character The character name; <code>null</code>=global key
-     * bindings file.
-     * @return The keybindings file; return <code>null</code> if the file cannot
-     *         be accessed.
+     * Returns the keybindings file.
+     * @param hostname the hostname of the character; <code>null</code>=global
+     * key bindings file
+     * @param character the character name; <code>null</code>=global key
+     * bindings file
+     * @return the keybindings file; return <code>null</code> if the file cannot
+     *         be accessed
      * @throws IOException if the keybindings file cannot be accessed
      */
     @Nullable
@@ -124,9 +124,9 @@ public class Filenames {
     }
 
     /**
-     * Return the metaserver cache file.
-     * @return The metaserver cache file, or <code>null</code> if the file
-     *         cannot be accessed.
+     * Returns the metaserver cache file.
+     * @return the metaserver cache file, or <code>null</code> if the file
+     *         cannot be accessed
      */
     @Nullable
     public static File getMetaserverCacheFile() {
@@ -139,10 +139,10 @@ public class Filenames {
     }
 
     /**
-     * Return the file for storing dialog related information for a skin.
-     * @param skinName Identifies the skin.
-     * @return The file.
-     * @throws IOException If the file cannot be accessed.
+     * Returns the file for storing dialog related information for a skin.
+     * @param skinName identifies the skin
+     * @return the file
+     * @throws IOException if the file cannot be accessed
      */
     @NotNull
     public static File getDialogsFile(@NotNull final String skinName) throws IOException {
@@ -150,10 +150,10 @@ public class Filenames {
     }
 
     /**
-     * Return a file within the settings directory.
-     * @param filename The filename.
-     * @return The settings file.
-     * @throws IOException If the file cannot be accessed.
+     * Returns a file within the settings directory.
+     * @param filename the filename
+     * @return the settings file
+     * @throws IOException if the file cannot be accessed
      */
     @NotNull
     public static File getSettingsFile(@NotNull final String filename) throws IOException {
@@ -166,9 +166,9 @@ public class Filenames {
     }
 
     /**
-     * Return the crossfire settings directory.
-     * @return The settings directory.
-     * @throws IOException If the settings directory cannot be located.
+     * Returns the crossfire settings directory.
+     * @return the settings directory
+     * @throws IOException if the settings directory cannot be located
      */
     @NotNull
     private static File getCrossfireFile() throws IOException {
@@ -181,9 +181,9 @@ public class Filenames {
     }
 
     /**
-     * Encode a string to make it safe as a file name.
-     * @param str The string to encode.
-     * @return The encoded string.
+     * Encodes a string to make it safe as a file name.
+     * @param str the string to encode
+     * @return the encoded string
      */
     @NotNull
     private static String encode(@NotNull final CharSequence str) {

@@ -34,7 +34,8 @@ import org.jetbrains.annotations.Nullable;
 public abstract class AbstractFacesManager implements FacesManager {
 
     /**
-     * The {@link FacesManagerListener}s to notify about changed faces.
+     * The {@link FacesManagerListener FacesManagerListeners} to notify about
+     * changed faces.
      */
     @NotNull
     private final Collection<FacesManagerListener> facesManagerListeners = new CopyOnWriteArrayList<FacesManagerListener>();
@@ -70,7 +71,8 @@ public abstract class AbstractFacesManager implements FacesManager {
     }
 
     /**
-     * Notifies all {@link FacesManagerListener}s that a face has been updated.
+     * Notifies all {@link FacesManagerListener FacesManagerListeners} that a
+     * face has been updated.
      * @param face the face
      */
     protected void fireFaceUpdated(@NotNull final Face face) {

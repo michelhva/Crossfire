@@ -25,7 +25,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * A list of {@link CfItem}s.
+ * A list of {@link CfItem CfItems}.
  * @author Andreas Kirschbaum
  */
 public interface ItemView {

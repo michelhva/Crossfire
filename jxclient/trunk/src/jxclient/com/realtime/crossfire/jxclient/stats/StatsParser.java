@@ -115,9 +115,9 @@ public class StatsParser {
     }
 
     /**
-     * Convert a stat name into a stat index.
-     * @param name The stat name.
-     * @return The stat index.
+     * Converts a stat name into a stat index.
+     * @param name the stat name
+     * @return the stat index
      * @throws IllegalArgumentException if the stat name is undefined
      */
     public static int parseStat(@NotNull final String name) {

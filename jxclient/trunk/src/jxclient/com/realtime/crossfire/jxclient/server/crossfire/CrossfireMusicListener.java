@@ -31,7 +31,7 @@ public interface CrossfireMusicListener {
 
     /**
      * A music command has been received.
-     * @param music The music identification.
+     * @param music the music identification
      */
     void commandMusicReceived(@NotNull String music);
 

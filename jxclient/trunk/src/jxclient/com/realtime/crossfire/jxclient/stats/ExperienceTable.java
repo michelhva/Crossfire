@@ -75,7 +75,7 @@ public class ExperienceTable {
     }
 
     /**
-     * Forget about all level-$&gt; mappings.
+     * Forgets about all level-$&gt; mappings.
      */
     private void clear() {
         info.clear();
@@ -84,9 +84,9 @@ public class ExperienceTable {
     }
 
     /**
-     * Add a new level-&gt;experience mapping.
-     * @param level The level to update.
-     * @param exp The experience needed to reach level <code>level</code>.
+     * Adds a new level-&gt;experience mapping.
+     * @param level the level to update
+     * @param exp the experience needed to reach level <code>level</code>
      */
     private void add(final int level, final long exp) {
         if (level < 1) {
@@ -103,9 +103,9 @@ public class ExperienceTable {
     }
 
     /**
-     * Return the experience needed for a given level.
-     * @param level The level to reach.
-     * @return The needed experience.
+     * Returns the experience needed for a given level.
+     * @param level the level to reach
+     * @return the needed experience
      */
     private long getExperience(final int level) {
         if (minLevel >= maxLevel) {
@@ -136,10 +136,10 @@ public class ExperienceTable {
     }
 
     /**
-     * Return the experience needed to reach the next level.
-     * @param currentLevel The current level.
-     * @param currentExp The current experience.
-     * @return The experience to reach level <code>currentLevel+1</code>.
+     * Returns the experience needed to reach the next level.
+     * @param currentLevel the current level
+     * @param currentExp the current experience
+     * @return the experience to reach level <code>currentLevel+1</code>
      */
     public long getExperienceToNextLevel(final int currentLevel, final long currentExp) {
         final long expNextLevel = getExperience(currentLevel+1);
@@ -147,12 +147,12 @@ public class ExperienceTable {
     }
 
     /**
-     * Return the experience fraction of the current level in percents. The
+     * Returns the experience fraction of the current level in percents. The
      * value starts at 0% when a new level has been gained; the next level is at
      * 100%.
-     * @param currentLevel The current level.
-     * @param currentExp The current experience.
-     * @return The experience fraction.
+     * @param currentLevel the current level
+     * @param currentExp the current experience
+     * @return the experience fraction
      */
     public int getPercentsToNextLevel(final int currentLevel, final long currentExp) {
         final long expThisLevel = getExperience(currentLevel);

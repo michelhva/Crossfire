@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link CheckBoxOption} that executes {@link CommandList}s when
+ * A {@link CheckBoxOption} that executes {@link CommandList CommandLists} when
  * checked/unchecked.
  * @author Andreas Kirschbaum
  */

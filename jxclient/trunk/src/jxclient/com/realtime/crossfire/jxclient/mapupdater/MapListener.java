@@ -27,9 +27,9 @@ import java.util.Set;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * Interface for listeners interested in changes within {@link CfMap}
+ * instances.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public interface MapListener {
 

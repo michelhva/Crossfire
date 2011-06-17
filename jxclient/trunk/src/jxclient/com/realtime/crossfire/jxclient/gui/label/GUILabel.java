@@ -49,17 +49,17 @@ public abstract class GUILabel extends AbstractLabel {
     private final Alignment textAlignment;
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param name The name of this element.
-     * @param picture The background image; <code>null</code> for no
-     * background.
+     * @param name the name of this element
+     * @param picture the background image; <code>null</code> for no
+     * background
      * @param text the text
-     * @param textFont The font for rendering the label text.
-     * @param textColor The font color.
-     * @param backgroundColor The background color.
-     * @param textAlignment The text alignment.
+     * @param textFont the font for rendering the label text
+     * @param textColor the font color
+     * @param backgroundColor the background color
+     * @param textAlignment the text alignment
      */
     protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final String text, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final Color backgroundColor, @NotNull final Alignment textAlignment) {
         super(tooltipManager, elementListener, name, text, textFont, textColor, picture, backgroundColor);
@@ -75,11 +75,11 @@ public abstract class GUILabel extends AbstractLabel {
     }
 
     /**
-     * Draw one line of text.
-     * @param g The graphics to paint to.
-     * @param y0 The y-coordinate to draw to.
-     * @param h0 The line height.
-     * @param text The text to draw.
+     * Draws one line of text.
+     * @param g the graphics to paint to
+     * @param y0 the y-coordinate to draw to
+     * @param h0 the line height
+     * @param text the text to draw
      */
     protected void drawLine(@NotNull final Graphics2D g, final int y0, final int h0, @NotNull final String text) {
         g.setBackground(new Color(0, 0, 0, 0.0f));

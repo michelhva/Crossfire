@@ -25,7 +25,7 @@ import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Consists of three {@link ImageIcon}s representing a {@link Face}.
+ * Consists of three {@link ImageIcon ImageIcons} representing a {@link Face}.
  * @author Andreas Kirschbaum
  */
 public class FaceImages {

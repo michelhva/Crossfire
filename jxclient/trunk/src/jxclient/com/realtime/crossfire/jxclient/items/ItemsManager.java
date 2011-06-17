@@ -60,7 +60,7 @@ public class ItemsManager {
     private final SkillSet skillSet;
 
     /**
-     * The known {@link CfItem}s.
+     * The known {@link CfItem CfItems}.
      */
     @NotNull
     private final ItemSet itemSet;

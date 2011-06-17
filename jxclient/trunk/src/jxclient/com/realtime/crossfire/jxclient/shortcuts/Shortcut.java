@@ -43,28 +43,28 @@ public abstract class Shortcut {
     public abstract void dispose();
 
     /**
-     * Execute the shortcut.
+     * Executes the shortcut.
      */
     public abstract void execute();
 
     /**
-     * Register a shortcut listener.
-     * @param listener The listener to register.
+     * Registers a shortcut listener.
+     * @param listener the listener to register
      */
     public void addShortcutListener(@NotNull final ShortcutListener listener) {
         listeners.add(ShortcutListener.class, listener);
     }
 
     /**
-     * Unregister a shortcut listener.
-     * @param listener The listener to unregister.
+     * Unregisters a shortcut listener.
+     * @param listener the listener to unregister
      */
     public void removeShortcutListener(@NotNull final ShortcutListener listener) {
         listeners.add(ShortcutListener.class, listener);
     }
 
     /**
-     * Notify all listeners about a modification.
+     * Notifies all listeners about a modification.
      */
     protected void fireModifiedEvent() {
         for (final ShortcutListener listener : listeners.getListeners(ShortcutListener.class)) {

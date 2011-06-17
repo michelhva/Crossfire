@@ -70,7 +70,7 @@ public class SkillAddedSkinEvent implements SkinEvent {
 
     /**
      * Creates a new instance.
-     * @param commandList the command list to execute.
+     * @param commandList the command list to execute
      * @param skill the skill to monitor
      */
     public SkillAddedSkinEvent(@NotNull final CommandList commandList, @NotNull final Skill skill) {

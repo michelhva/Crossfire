@@ -118,7 +118,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param elementListener the element listener to notify
      * @param metaserverModel the metaserver model to monitor
      * @param name the name of this element
-     * @param image an image to draw before the server description. May be
+     * @param image an image to draw before the server description; may be
      * <code>null</code> to draw no image
      * @param font the font to use
      * @param defaultIndex the initial metaserver index
