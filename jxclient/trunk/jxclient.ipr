@@ -800,7 +800,6 @@
           <option name="m_onlyLookAtBlocks" value="false" />
         </inspection_tool>
         <inspection_tool class="TransientFieldInNonSerializableClass" enabled="true" level="WARNING" enabled_by_default="true" />
-        <inspection_tool class="TransientFieldNotInitialized" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="TrivialStringConcatenation" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="TypeMayBeWeakened" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="useRighthandTypeAsWeakestTypeInAssignments" value="false" />
