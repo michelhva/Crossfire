@@ -1,31 +1,31 @@
 
 picture background 0 0 1024 768 metaserver 1
-text metaurl 382 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 WHITE GRAY 2 command_metaconnect false
-commandlist_add command_metaconnect metaurl CONNECT
-label_html metacomment 212 650 600 118 font_description WHITE
-meta_list metaselect 300 250 440 240 440 30 metaentry_tcp font_metaurl16 metaurl metacomment command_metaconnect "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+text metaurl 382 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 WHITE GRAY 2 command_meta_connect false
+commandlist_add command_meta_connect metaurl CONNECT
+label_html meta_comment 212 650 600 118 font_description WHITE
+meta_list meta_select 300 250 440 240 440 30 meta_entry_tcp font_metaurl16 metaurl meta_comment command_meta_connect "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
 
-commandlist command_metaup AND metaselect SCROLL_LIST -1
-commandlist command_metadown AND metaselect SCROLL_LIST 1
+commandlist command_meta_up AND meta_select SCROLL_LIST -1
+commandlist command_meta_down AND meta_select SCROLL_LIST 1
 
-commandlist command_metapageup AND metaselect SCROLL_LIST -7
-commandlist command_metapagedown AND metaselect SCROLL_LIST 7
+commandlist command_meta_page_up AND meta_select SCROLL_LIST -7
+commandlist command_meta_page_down AND meta_select SCROLL_LIST 7
 
-commandlist command_metaprev AND metaselect MOVE_SELECTION 0 -1
-commandlist command_metanext AND metaselect MOVE_SELECTION 0 1
+commandlist command_meta_prev AND meta_select MOVE_SELECTION 0 -1
+commandlist command_meta_next AND meta_select MOVE_SELECTION 0 1
 
-button metaconnect 658 600  32 32 connect_up          connect_down       false command_metaconnect
-button metaup      270 250  20 25 metaup              metaup              true command_metaup
-button metadown    270 455  20 25 metadown            metadown            true command_metadown
+button meta_connect 658 600  32 32 connect_up          connect_down       false command_meta_connect
+button meta_up      270 250  20 25 meta_up             meta_up             true command_meta_up
+button meta_down    270 455  20 25 meta_down           meta_down           true command_meta_down
 
 set_default metaurl
 set_forced_active metaurl
 
-key code UP        0 exec command_metaprev
-key code KP_UP     0 exec command_metaprev
-key code DOWN      0 exec command_metanext
-key code KP_DOWN   0 exec command_metanext
-key code PAGE_UP   0 exec command_metapageup
-key code PAGE_DOWN 0 exec command_metapagedown
-key char 10        exec command_metaconnect
-key char 13        exec command_metaconnect
+key code UP        0 exec command_meta_prev
+key code KP_UP     0 exec command_meta_prev
+key code DOWN      0 exec command_meta_next
+key code KP_DOWN   0 exec command_meta_next
+key code PAGE_UP   0 exec command_meta_page_up
+key code PAGE_DOWN 0 exec command_meta_page_down
+key char 10        exec command_meta_connect
+key char 13        exec command_meta_connect

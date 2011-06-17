@@ -325,7 +325,7 @@ public class GuiManager {
      * A "player" protocol command has been received.
      */
     public void playerReceived() {
-        if (windowRenderer.getGuiState() == RendererGuiState.NEWCHAR) {
+        if (windowRenderer.getGuiState() == RendererGuiState.NEW_CHAR) {
             openDialogByName("messages"); // hack for race selection
         }
         windowRenderer.setGuiState(RendererGuiState.PLAYING);
@@ -451,8 +451,8 @@ public class GuiManager {
                 }
             }
         } else if (prompt.startsWith("[y] to roll new stats") || prompt.startsWith("Welcome, Brave New Warrior!")) {
-            windowRenderer.setGuiState(RendererGuiState.NEWCHAR);
-            if (openDialogByName("newchar")) {
+            windowRenderer.setGuiState(RendererGuiState.NEW_CHAR);
+            if (openDialogByName("new_char")) {
                 closeDialogByName("messages");
                 closeDialogByName("status");
             } else {

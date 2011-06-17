@@ -1,5 +1,5 @@
 dialog WIDTH/2 HEIGHT/2 true Auto Pickup
-dialog_hide START META LOGIN NEWCHAR ACCOUNT
+dialog_hide START META LOGIN NEW_CHAR ACCOUNT
 button dialog_close close_up close_down false command_pickup_close
 
 label_text label_general      font_title BLACK General:
@@ -26,8 +26,8 @@ checkbox checkbox_jewels      pickup_jewels Rings and amulets
 #checkbox checkbox_ratio50    pickup_ratio50 >= 50
 
 label_text label_weapons      font_title BLACK Weapons:
-checkbox checkbox_meleeweapon pickup_melee_weapon Melee weapons
-checkbox checkbox_missileweapon pickup_missile_weapon Missile weapons
+checkbox checkbox_melee_weapon pickup_melee_weapon Melee weapons
+checkbox checkbox_missile_weapon pickup_missile_weapon Missile weapons
 checkbox checkbox_bow         pickup_bow Bows
 checkbox checkbox_arrow       pickup_arrow Arrows
 
@@ -68,8 +68,8 @@ horizontal begin seq
   gap 8
   begin par
     label_weapons
-    checkbox_meleeweapon
-    checkbox_missileweapon
+    checkbox_melee_weapon
+    checkbox_missile_weapon
     checkbox_bow
     checkbox_arrow
     label_armor
@@ -112,8 +112,8 @@ vertical begin par
   end
   begin seq
     label_weapons
-    checkbox_meleeweapon
-    checkbox_missileweapon
+    checkbox_melee_weapon
+    checkbox_missile_weapon
     checkbox_bow
     checkbox_arrow
     gap 8
@@ -145,5 +145,5 @@ vertical begin par
   end
 end
 
-link_size both checkbox_inhibit checkbox_stop checkbox_not_cursed checkbox_key checkbox_valuables checkbox_jewels checkbox_meleeweapon checkbox_missileweapon checkbox_bow checkbox_arrow checkbox_armour checkbox_boots checkbox_cloak checkbox_gloves checkbox_helmet checkbox_shield checkbox_skillscroll checkbox_readables checkbox_spellbook checkbox_drink checkbox_food checkbox_flesh checkbox_magical checkbox_potion checkbox_magic_device
+link_size both checkbox_inhibit checkbox_stop checkbox_not_cursed checkbox_key checkbox_valuables checkbox_jewels checkbox_melee_weapon checkbox_missile_weapon checkbox_bow checkbox_arrow checkbox_armour checkbox_boots checkbox_cloak checkbox_gloves checkbox_helmet checkbox_shield checkbox_skillscroll checkbox_readables checkbox_spellbook checkbox_drink checkbox_food checkbox_flesh checkbox_magical checkbox_potion checkbox_magic_device
 link_size both label_general label_misc label_weapons label_armor label_readables label_food label_magical

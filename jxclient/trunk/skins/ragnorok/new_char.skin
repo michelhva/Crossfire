@@ -4,9 +4,9 @@ dialog_hide START META LOGIN PLAYING ACCOUNT
 label_stat stat_title     font_label BLACK TITLE LEFT
 
 log_message messages      null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
-button messages_up        slider_up_up slider_up_down true command_newchar_up
+button messages_up        slider_up_up slider_up_down true command_new_char_up
 scrollbar messages_slider true messages #c0c0c0 #808080
-button messages_down      slider_down_up slider_down_down true command_newchar_down
+button messages_down      slider_down_up slider_down_down true command_new_char_down
 
 label_text filler         font_label BLACK _
 label_stat stat_str       font_label BLACK STR RIGHT
@@ -32,8 +32,8 @@ log_color messages 7 #00c000
 log_color messages 11 #909000
 log_color messages 12 #959054
 
-commandlist_add command_newchar_up messages SCROLL -1
-commandlist_add command_newchar_down messages SCROLL 1
+commandlist_add command_new_char_up messages SCROLL -1
+commandlist_add command_new_char_down messages SCROLL 1
 
 horizontal begin par
   stat_title

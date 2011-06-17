@@ -33,7 +33,7 @@ public enum RendererGuiState {
 
     LOGIN,
 
-    NEWCHAR,
+    NEW_CHAR,
 
     ACCOUNT,
 

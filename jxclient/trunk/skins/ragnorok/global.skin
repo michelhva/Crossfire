@@ -18,7 +18,7 @@ def dialog dialog font_title #d0d0d0 #401010 0.75
 def textbutton button_up button_down font_button BLACK
 def item #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied marker_unidentified marker_selector marker_locked marker_unpaid font_item BLACK
 
-commandlist command_newchar_close AND null DIALOG_CLOSE newchar
+commandlist command_new_char_close AND null DIALOG_CLOSE new_char
 
 commandlist command_disconnect AND null GUI_META
 commandlist command_resume_disconnect AND null DIALOG_CLOSE disconnect
@@ -27,8 +27,8 @@ commandlist command_meta AND null GUI_META
 commandlist command_quit AND null QUIT
 commandlist command_resume_quit AND null DIALOG_CLOSE quit
 
-commandlist command_metaconnect AND
-commandlist command_metacancel AND null GUI_START
+commandlist command_meta_connect AND
+commandlist command_meta_cancel AND null GUI_START
 
 commandlist command_status AND null DIALOG_TOGGLE status
 commandlist command_status_open AND null DIALOG_OPEN status
@@ -62,8 +62,8 @@ commandlist command_book_close AND null DIALOG_CLOSE book
 commandlist command_ground_left AND
 commandlist command_ground_right AND
 
-commandlist command_newchar_up AND
-commandlist command_newchar_down AND
+commandlist command_new_char_up AND
+commandlist command_new_char_down AND
 
 commandlist command_messages_up_all AND
 commandlist command_messages_up_msg AND

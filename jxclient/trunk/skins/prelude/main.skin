@@ -2,7 +2,7 @@
 tooltip font_tooltip
 
 # Map Group
-map playfield -32 -32 1024 768 64
+map map_view -32 -32 1024 768 64
 
 # LGauges Group (80, 574)
 picture sword_back     16+80  0+574 64 256 background_sword 0.9
@@ -238,11 +238,11 @@ commandlist_add rsp_down rspH SCROLL 1
 commandlist_add rsp_down rspI SCROLL 1
 commandlist_add rsp_down rspJ SCROLL 1
 
-button btn_rinv_up 0+973 13+53 10 31 inv_scrollup_inactive inv_scrollup_pushed true rinv_up
-button btn_rinv_down 0+973 656+53 10 31 inv_scrolldown_inactive inv_scrolldown_pushed true rinv_down
+button btn_rinv_up 0+973 13+53 10 31 inv_scroll_up_inactive inv_scroll_up_pushed true rinv_up
+button btn_rinv_down 0+973 656+53 10 31 inv_scroll_down_inactive inv_scroll_down_pushed true rinv_down
 
-button btn_rsp_up 0+973 13+53 10 31 inv_scrollup_inactive inv_scrollup_pushed true rsp_up
-button btn_rsp_down 0+973 656+53 10 31 inv_scrolldown_inactive inv_scrolldown_pushed true rsp_down
+button btn_rsp_up 0+973 13+53 10 31 inv_scroll_up_inactive inv_scroll_up_pushed true rsp_up
+button btn_rsp_down 0+973 656+53 10 31 inv_scroll_down_inactive inv_scroll_down_pushed true rsp_down
 
 set_invisible btn_rsp_up
 set_invisible btn_rsp_down
@@ -268,13 +268,13 @@ set_invisible rspI
 set_invisible rspJ
 
 # SecondaryStats (319, 621)
-label_stat label_sstat_level   0+309  4+621 110 20 font_stats14 WHITE LEVEL LEFT
-label_stat label_sstat_exp     0+309 27+621 110 20 font_stats14 WHITE EXP LEFT
-label_stat label_sstat_range   0+309 49+621 110 20 font_stats14 WHITE RANGE LEFT
-label_stat label_sstat_wc    200+309  4+621  56 20 font_stats14 WHITE WC RIGHT
-label_stat label_sstat_ac    200+309 27+621  56 20 font_stats14 WHITE AC RIGHT
-label_stat label_sstat_dam   200+309 49+621  56 20 font_stats14 WHITE DAM RIGHT
-label_stat label_sstat_speed 200+309 71+621  56 20 font_stats14 WHITE SPEED RIGHT
+label_stat label_stat_level   0+309  4+621 110 20 font_stats14 WHITE LEVEL LEFT
+label_stat label_stat_exp     0+309 27+621 110 20 font_stats14 WHITE EXP LEFT
+label_stat label_stat_range   0+309 49+621 110 20 font_stats14 WHITE RANGE LEFT
+label_stat label_stat_wc    200+309  4+621  56 20 font_stats14 WHITE WC RIGHT
+label_stat label_stat_ac    200+309 27+621  56 20 font_stats14 WHITE AC RIGHT
+label_stat label_stat_dam   200+309 49+621  56 20 font_stats14 WHITE DAM RIGHT
+label_stat label_stat_speed 200+309 71+621  56 20 font_stats14 WHITE SPEED RIGHT
 
 # Panel (199, 551)
 picture panel_back_dragon_left    0+199 24+551  90  53 background_panel_dragon_left 0.9
@@ -537,9 +537,9 @@ log_color log_upper 0 WHITE
 commandlist command_log_upper_up AND log_upper SCROLL -1
 commandlist command_log_upper_down AND log_upper SCROLL 1
 
-button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive true command_log_upper_up
+button log_upper_up 0+679 0+100 10 31 inv_scroll_up_inactive inv_scroll_up_inactive true command_log_upper_up
 scrollbar log_upper_scroll 0+679 0+100+31 10 180-31 false log_upper #303030 #c0c0c0
-button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive true command_log_upper_down
+button log_upper_down 0+679 180+100 10 31 inv_scroll_down_inactive inv_scroll_down_inactive true command_log_upper_down
 
 commandlist command_log_open AND
 commandlist command_log_close AND
@@ -565,13 +565,13 @@ add label_hp
 add label_fp
 add label_sp
 add label_gp
-add label_sstat_level
-add label_sstat_exp
-add label_sstat_wc
-add label_sstat_ac
-add label_sstat_dam
-add label_sstat_speed
-add label_sstat_range
+add label_stat_level
+add label_stat_exp
+add label_stat_wc
+add label_stat_ac
+add label_stat_dam
+add label_stat_speed
+add label_stat_range
 add btn_magicmap_hide
 add btn_magicmap_show
 

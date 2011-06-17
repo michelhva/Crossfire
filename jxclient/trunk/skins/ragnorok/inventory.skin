@@ -1,11 +1,11 @@
 dialog WIDTH/2 HEIGHT/2 true Inventory
-dialog_hide START META LOGIN NEWCHAR ACCOUNT
+dialog_hide START META LOGIN NEW_CHAR ACCOUNT
 button dialog_close close_up close_down false command_inventory_close
 
-commandlist command_inventory_scrollup AND
-commandlist command_inventory_scrolldown AND
-commandlist command_inventory_pageup AND
-commandlist command_inventory_pagedown AND
+commandlist command_inventory_scroll_up AND
+commandlist command_inventory_scroll_down AND
+commandlist command_inventory_page_up AND
+commandlist command_inventory_page_down AND
 commandlist command_inventory_up AND
 commandlist command_inventory_down AND
 commandlist command_inventory_prev AND
@@ -19,13 +19,13 @@ label_text inv_item           font_label BLACK
 
 inventory_list inv 32 32 inv_item
 
-button     slider_up     slider_up_up slider_up_down true command_inventory_scrollup
-button     slider_down   slider_down_up slider_down_down true command_inventory_scrolldown
+button     slider_up     slider_up_up slider_up_down true command_inventory_scroll_up
+button     slider_down   slider_down_up slider_down_down true command_inventory_scroll_down
 
-commandlist_add command_inventory_scrollup inv SCROLL_LIST -1
-commandlist_add command_inventory_scrolldown inv SCROLL_LIST 1
-commandlist_add command_inventory_pageup inv SCROLL_LIST -4
-commandlist_add command_inventory_pagedown inv SCROLL_LIST 4
+commandlist_add command_inventory_scroll_up inv SCROLL_LIST -1
+commandlist_add command_inventory_scroll_down inv SCROLL_LIST 1
+commandlist_add command_inventory_page_up inv SCROLL_LIST -4
+commandlist_add command_inventory_page_down inv SCROLL_LIST 4
 
 commandlist_add command_inventory_up inv MOVE_SELECTION -1 0
 commandlist_add command_inventory_down inv MOVE_SELECTION 1 0
@@ -49,8 +49,8 @@ commandlist command_inventory_unlock AND inv EXEC_SELECTION UNLOCK
 #key code KP_LEFT   0 exec command_inventory_prev
 #key code RIGHT     0 exec command_inventory_next
 #key code KP_RIGHT  0 exec command_inventory_next
-#key code PAGE_UP   0 exec command_inventory_pageup
-#key code PAGE_DOWN 0 exec command_inventory_pagedown
+#key code PAGE_UP   0 exec command_inventory_page_up
+#key code PAGE_DOWN 0 exec command_inventory_page_down
 #key char 10        exec command_inventory_apply
 #key char 13        exec command_inventory_apply
 #key char 97        exec command_inventory_apply

@@ -28,8 +28,8 @@ commandlist command_meta AND null GUI_META
 commandlist command_quit AND null QUIT
 commandlist command_resume_quit AND null DIALOG_CLOSE quit
 
-commandlist command_metaconnect AND
-commandlist command_metacancel AND null GUI_START
+commandlist command_meta_connect AND
+commandlist command_meta_cancel AND null GUI_START
 
 commandlist command_shortcut0 AND
 commandlist command_shortcut1 AND

@@ -173,7 +173,7 @@
     <li><code>query.skin</code> is opened whenever a &quot;query&quot; message
         is received from the Crossfire server.
     </li>
-    <li><code>newchar.skin</code> is opened (and <code>messages.skin</code> and
+    <li><code>new_char.skin</code> is opened (and <code>messages.skin</code> and
         <code>status.skin</code> are closed) when a new character is created. If
         this dialog does not exist, <code>messages.skin</code> and <code>status.skin</code>
         are opened instead.
@@ -592,10 +592,10 @@
             <li><code>META</code>: the server selection screen.</li>
             <li><code>LOGIN</code>: active while a login is in progress. Starts
                 when a Crossfire server is to be connected and ends after a
-                character has been logged in or <code>NEWCHAR</code> becomes
+                character has been logged in or <code>NEW_CHAR</code> becomes
                 active.
             </li>
-            <li><code>NEWCHAR</code>: active while a new character is created.
+            <li><code>NEW_CHAR</code>: active while a new character is created.
                 Ends after the character has been created.
             </li>
             <li><code>ACCOUNT</code>: active when the user manages his account,
