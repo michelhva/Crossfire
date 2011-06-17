@@ -1158,15 +1158,24 @@ public class JXCSkinLoader {
         assert defaultItemPainter != null;
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
         final AbstractGUIElement element;
-        if (type == ListType.INVENTORY) {
-            final GUIItemItemFactory itemFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
-            element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, inventoryView, selectedItem, itemFactory);
-        } else if (type == ListType.GROUND) {
-            final GUIItemItemFactory itemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
-            element = new GUIFloorList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, floorView, selectedItem, itemFactory);
-        } else {
-            final GUIItemItemFactory itemFactory = new GUIItemSpellListFactory(tooltipManager, elementListener, commandQueue, name, server, itemPainter, facesManager, spellsManager, currentSpellManager, spellView);
-            element = new GUISpellList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, spellView, selectedItem, itemFactory, spellsManager, keybindingsManager);
+        switch (type) {
+        case INVENTORY:
+            final GUIItemItemFactory inventoryItemFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
+            element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, inventoryView, selectedItem, inventoryItemFactory);
+            break;
+
+        case GROUND:
+            final GUIItemItemFactory groundItemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
+            element = new GUIFloorList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, floorView, selectedItem, groundItemFactory);
+            break;
+
+        case SPELL:
+            final GUIItemItemFactory spellItemFactory = new GUIItemSpellListFactory(tooltipManager, elementListener, commandQueue, name, server, itemPainter, facesManager, spellsManager, currentSpellManager, spellView);
+            element = new GUISpellList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, spellView, selectedItem, spellItemFactory, spellsManager, keybindingsManager);
+            break;
+
+        default:
+            throw new AssertionError("unhandled type "+type);
         }
         insertGuiElement(element);
     }
