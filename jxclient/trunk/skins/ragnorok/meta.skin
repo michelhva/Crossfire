@@ -1,43 +1,43 @@
-commandlist command_metaup AND
-commandlist command_metadown AND
-commandlist command_metapageup AND
-commandlist command_metapagedown AND
-commandlist command_metaprev AND
-commandlist command_metanext AND
+commandlist command_meta_up AND
+commandlist command_meta_down AND
+commandlist command_meta_page_up AND
+commandlist command_meta_page_down AND
+commandlist command_meta_prev AND
+commandlist command_meta_next AND
 
 fill background_black  BLACK 1
 
 picture background background_metaserver 1
 
-button metaconnect connect_up connect_down false command_metaconnect
-button metaup metaup metaup true command_metaup
-button metadown metadown metadown true command_metadown
+button meta_connect connect_up connect_down false command_meta_connect
+button meta_up meta_up meta_up true command_meta_up
+button meta_down meta_down meta_down true command_meta_down
 
-text metaurl textarea_big_active textarea_big_inactive font_metaurl WHITE GRAY 2 command_metaconnect false
+text metaurl textarea_big_active textarea_big_inactive font_metaurl WHITE GRAY 2 command_meta_connect false
 
-label_html metacomment font_label WHITE
+label_html meta_comment font_label WHITE
 
-meta_list metaselect 480 30 null font_metaurl metaurl metacomment command_metaconnect "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_list meta_select 480 30 null font_metaurl metaurl meta_comment command_meta_connect "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
 
-commandlist_add command_metaconnect  metaurl    CONNECT
-commandlist_add command_metaup       metaselect SCROLL_LIST -1
-commandlist_add command_metadown     metaselect SCROLL_LIST 1
-commandlist_add command_metapageup   metaselect SCROLL_LIST -8
-commandlist_add command_metapagedown metaselect SCROLL_LIST 8
-commandlist_add command_metaprev     metaselect MOVE_SELECTION 0 -1
-commandlist_add command_metanext     metaselect MOVE_SELECTION 0 1
+commandlist_add command_meta_connect   metaurl    CONNECT
+commandlist_add command_meta_up        meta_select SCROLL_LIST -1
+commandlist_add command_meta_down      meta_select SCROLL_LIST 1
+commandlist_add command_meta_page_up   meta_select SCROLL_LIST -8
+commandlist_add command_meta_page_down meta_select SCROLL_LIST 8
+commandlist_add command_meta_prev      meta_select MOVE_SELECTION 0 -1
+commandlist_add command_meta_next      meta_select MOVE_SELECTION 0 1
 
 set_default metaurl
 set_forced_active metaurl
 
-key code UP        0 exec command_metaprev
-key code KP_UP     0 exec command_metaprev
-key code DOWN      0 exec command_metanext
-key code KP_DOWN   0 exec command_metanext
-key code PAGE_UP   0 exec command_metapageup
-key code PAGE_DOWN 0 exec command_metapagedown
-key char 10          exec command_metaconnect
-key char 13          exec command_metaconnect
+key code UP        0 exec command_meta_prev
+key code KP_UP     0 exec command_meta_prev
+key code DOWN      0 exec command_meta_next
+key code KP_DOWN   0 exec command_meta_next
+key code PAGE_UP   0 exec command_meta_page_up
+key code PAGE_DOWN 0 exec command_meta_page_down
+key char 10          exec command_meta_connect
+key char 13          exec command_meta_connect
 
 horizontal begin par
   begin seq
@@ -45,29 +45,29 @@ horizontal begin par
     begin par
       begin seq
         gap
-        metaup
+        meta_up
         gap
       end
       begin seq
         gap
-        metaselect 504
+        meta_select 504
         gap
       end
       begin seq
         gap
-        metadown
+        meta_down
         gap
       end
       begin seq
         gap
         metaurl
         gap 16
-        metaconnect
+        meta_connect
         gap
       end
       begin seq
         gap
-        metacomment 624
+        meta_comment 624
         gap
       end
       begin seq
@@ -87,11 +87,11 @@ vertical begin par
     begin par
       begin seq
         gap 180
-        metaup
+        meta_up
         gap 20
-        metaselect 270
+        meta_select 270
         gap 20
-        metadown
+        meta_down
         gap 60
         begin par
           begin seq
@@ -101,13 +101,13 @@ vertical begin par
           end
           begin seq
             gap
-            metaconnect
+            meta_connect
             gap
           end
         end
         gap 20
         begin par
-          metacomment
+          meta_comment
           gap 100
         end
       end

@@ -1,5 +1,5 @@
 dialog WIDTH/2 HEIGHT/2 false Characters for the account
-dialog_hide START META PLAYING NEWCHAR LOGIN
+dialog_hide START META PLAYING NEW_CHAR LOGIN
 
 character_list characters 550 40 font_metaurl
 
@@ -20,18 +20,18 @@ label_failure account_login_error font_label BLACK
 
 set_default account_do_login
 
-commandlist command_accountlist_pageup AND characters SCROLL_LIST -8
-commandlist command_accountlist_pagedown AND characters SCROLL_LIST 8
+commandlist command_account_list_page_up AND characters SCROLL_LIST -8
+commandlist command_account_list_page_down AND characters SCROLL_LIST 8
 
-commandlist command_accountlist_prev AND characters MOVE_SELECTION 0 -1
-commandlist command_accountlist_next AND characters MOVE_SELECTION 0 1
+commandlist command_account_list_prev AND characters MOVE_SELECTION 0 -1
+commandlist command_account_list_next AND characters MOVE_SELECTION 0 1
 
-key code UP        0 exec command_accountlist_prev
-key code KP_UP     0 exec command_accountlist_prev
-key code DOWN      0 exec command_accountlist_next
-key code KP_DOWN   0 exec command_accountlist_next
-key code PAGE_UP   0 exec command_accountlist_pageup
-key code PAGE_DOWN 0 exec command_accountlist_pagedown
+key code UP        0 exec command_account_list_prev
+key code KP_UP     0 exec command_account_list_prev
+key code DOWN      0 exec command_account_list_next
+key code KP_DOWN   0 exec command_account_list_next
+key code PAGE_UP   0 exec command_account_list_page_up
+key code PAGE_DOWN 0 exec command_account_list_page_down
 
 horizontal begin par
   begin seq

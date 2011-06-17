@@ -1,5 +1,5 @@
 dialog WIDTH/2 HEIGHT/2 true Protections
-dialog_hide START META LOGIN NEWCHAR ACCOUNT
+dialog_hide START META LOGIN NEW_CHAR ACCOUNT
 button dialog_close close_up close_down false command_protections_close
 
 label_text label_phys         font_label BLACK Physical:
