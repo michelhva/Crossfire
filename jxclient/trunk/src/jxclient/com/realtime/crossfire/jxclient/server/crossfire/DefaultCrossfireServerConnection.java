@@ -3991,14 +3991,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Sets the current ground view objects as negotiated with the server.
-     * @param currentNumLookObjects the number of objects
-     */
-    private void setCurrentNumLookObjects(final int currentNumLookObjects) {
-        this.currentNumLookObjects = currentNumLookObjects;
-    }
-
-    /**
      * Notifies all listeners that a "newmap" command has been received.
      */
     private void fireNewMap() {
