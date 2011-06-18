@@ -1,3 +1,8 @@
+2011-06-18  Andreas Kirschbaum
+
+	* Fix possible crash (ConcurrentModificationException) related to
+	spell updates.
+
 2011-06-16  Andreas Kirschbaum
 
 	* Implement map smoothing.
