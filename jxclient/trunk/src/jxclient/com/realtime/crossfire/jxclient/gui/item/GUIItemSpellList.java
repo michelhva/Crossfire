@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.list.GUISpellList;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
+import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
@@ -61,10 +62,10 @@ public class GUIItemSpellList extends GUIItemItem {
     private final Object sync = new Object();
 
     /**
-     * The connection instance.
+     * The command queue for sending commands.
      */
     @NotNull
-    private final CrossfireServerConnection connection;
+    private final CommandQueue commandQueue;
 
     /**
      * The {@link FacesManager} for looking up faces.
@@ -168,6 +169,7 @@ public class GUIItemSpellList extends GUIItemItem {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
+     * @param commandQueue the command queue for sending commands
      * @param connection the server connection for sending commands
      * @param name the name of this element
      * @param itemPainter the item painter for painting the icon
@@ -178,9 +180,9 @@ public class GUIItemSpellList extends GUIItemItem {
      * spell is selected
      * @param spellsView the spells view to use
      */
-    public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
+    public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
         super(tooltipManager, elementListener, name, connection, itemPainter, facesManager);
-        this.connection = connection;
+        this.commandQueue = commandQueue;
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
         this.spellsManager = spellsManager;
@@ -243,7 +245,7 @@ public class GUIItemSpellList extends GUIItemItem {
         if (spell != null) {
             switch (modifiers&Modifiers.MASK) {
             case Modifiers.NONE:
-                connection.sendNcom(0, "cast "+spell.getName());
+                commandQueue.sendNcom(false, "cast "+spell.getName());
                 currentSpellManager.setCurrentSpell(spell);
                 break;
             }

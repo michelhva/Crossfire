@@ -101,6 +101,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
+     * @param commandQueue the command queue for sending commands
      * @param name the base name for created elements
      * @param crossfireServerConnection the server connection for sending
      * commands
@@ -130,7 +131,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     @NotNull
     @Override
     public GUIElement newItem(final int index) {
-        return new GUIItemSpellList(tooltipManager, elementListener, crossfireServerConnection, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellsView);
+        return new GUIItemSpellList(tooltipManager, elementListener, commandQueue, crossfireServerConnection, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellsView);
     }
 
     /**
@@ -139,7 +140,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIItemItem newTemplateItem(final int cellHeight) {
-        final GUIItemItem result = new GUIItemSpellList(tooltipManager, elementListener, crossfireServerConnection, name+"_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, spellsView);
+        final GUIItemItem result = new GUIItemSpellList(tooltipManager, elementListener, commandQueue, crossfireServerConnection, name+"_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, spellsView);
         //noinspection SuspiciousNameCombination
         result.setSize(cellHeight, cellHeight);
         return result;

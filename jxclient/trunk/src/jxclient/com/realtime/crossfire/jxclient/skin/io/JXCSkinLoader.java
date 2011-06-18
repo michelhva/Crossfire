@@ -1335,7 +1335,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemSpellList(tooltipManager, elementListener, server, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
+            element = new GUIItemSpellList(tooltipManager, elementListener, commandQueue, server, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
         } else {
             throw new IOException("undefined item type: "+type);
         }
