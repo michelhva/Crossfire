@@ -21,13 +21,14 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in "replyinfo exp_table" responses.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireExpTableListener {
+public interface CrossfireExpTableListener extends EventListener {
 
     /**
      * An "replyinfo exp_table" command has been received.

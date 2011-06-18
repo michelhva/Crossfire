@@ -20,11 +20,13 @@
 
 package com.realtime.crossfire.jxclient.account;
 
+import java.util.EventListener;
+
 /**
  * Callback when a {@link CharacterInformation} is changed.
  * @author Nicolas Weeger
  */
-public interface CharacterInformationListener {
+public interface CharacterInformationListener extends EventListener {
 
     /**
      * The item changed.

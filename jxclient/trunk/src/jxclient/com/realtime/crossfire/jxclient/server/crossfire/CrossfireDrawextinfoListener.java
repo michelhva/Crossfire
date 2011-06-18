@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -28,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
  * Crossfire server.
  * @author Lauwenmark
  */
-public interface CrossfireDrawextinfoListener {
+public interface CrossfireDrawextinfoListener extends EventListener {
 
     /**
      * A drawextinfo message has been received.

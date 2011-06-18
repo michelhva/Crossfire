@@ -21,12 +21,14 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
+
 /**
  * Interface for listeners interested in magicmap messages received from the
  * Crossfire server.
  * @author Lauwenmark
  */
-public interface CrossfireMagicmapListener {
+public interface CrossfireMagicmapListener extends EventListener {
 
     /**
      * A magicmap protocol message has been received.

@@ -21,11 +21,13 @@
 
 package com.realtime.crossfire.jxclient.skills;
 
+import java.util.EventListener;
+
 /**
  * Interface for listeners on skill related changes.
  * @author Andreas Kirschbaum
  */
-public interface SkillListener {
+public interface SkillListener extends EventListener {
 
     /**
      * Notifies the listener that the skill has been gained.

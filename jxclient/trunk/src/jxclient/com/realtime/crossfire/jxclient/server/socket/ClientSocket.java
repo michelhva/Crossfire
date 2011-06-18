@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.server.socket;
 
 import com.realtime.crossfire.jxclient.util.DebugWriter;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.io.EOFException;
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -35,7 +36,6 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 import java.nio.channels.UnresolvedAddressException;
-import java.util.ArrayList;
 import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -66,7 +66,7 @@ public class ClientSocket {
      * The {@link ClientSocketListener ClientSocketListeners} to notify.
      */
     @NotNull
-    private final Collection<ClientSocketListener> clientSocketListeners = new ArrayList<ClientSocketListener>();
+    private final EventListenerList2<ClientSocketListener> clientSocketListeners = new EventListenerList2<ClientSocketListener>(ClientSocketListener.class);
 
     /**
      * The {@link Selector} used for waiting.
@@ -339,7 +339,7 @@ public class ClientSocket {
             }
         }
         if (notifyConnected) {
-            for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+            for (final ClientSocketListener clientSocketListener : clientSocketListeners.getListeners()) {
                 clientSocketListener.connected();
             }
         }
@@ -389,7 +389,7 @@ public class ClientSocket {
             debugProtocol.debugProtocolWrite("socket:connecting to "+host+":"+port);
         }
         disconnectPending = true;
-        for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+        for (final ClientSocketListener clientSocketListener : clientSocketListeners.getListeners()) {
             clientSocketListener.connecting();
         }
 
@@ -444,7 +444,7 @@ public class ClientSocket {
             disconnectPending = false;
         }
         if (notifyListeners) {
-            for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+            for (final ClientSocketListener clientSocketListener : clientSocketListeners.getListeners()) {
                 clientSocketListener.disconnecting(reason, isError);
             }
         }
@@ -477,7 +477,7 @@ public class ClientSocket {
             }
         } finally {
             if (notifyListeners) {
-                for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+                for (final ClientSocketListener clientSocketListener : clientSocketListeners.getListeners()) {
                     clientSocketListener.disconnected(reason);
                 }
             }
@@ -527,7 +527,7 @@ public class ClientSocket {
             final ByteBuffer packet = ByteBuffer.wrap(inputBuf, start, end-start);
             packet.order(ByteOrder.BIG_ENDIAN);
             try {
-                for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+                for (final ClientSocketListener clientSocketListener : clientSocketListeners.getListeners()) {
                     clientSocketListener.packetReceived(packet);
                 }
             } catch (final UnknownCommandException ex) {
@@ -571,7 +571,7 @@ public class ClientSocket {
         }
 
         selector.wakeup();
-        for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+        for (final ClientSocketListener clientSocketListener : clientSocketListeners.getListeners()) {
             clientSocketListener.packetSent(buf, len);
         }
     }

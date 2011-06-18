@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.shortcuts;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import javax.swing.event.EventListenerList;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -35,7 +35,7 @@ public abstract class Shortcut {
      * The listeners to be notified.
      */
     @NotNull
-    private final EventListenerList listeners = new EventListenerList();
+    private final EventListenerList2<ShortcutListener> listeners = new EventListenerList2<ShortcutListener>(ShortcutListener.class);
 
     /**
      * Releases all allocated resources.
@@ -52,7 +52,7 @@ public abstract class Shortcut {
      * @param listener the listener to register
      */
     public void addShortcutListener(@NotNull final ShortcutListener listener) {
-        listeners.add(ShortcutListener.class, listener);
+        listeners.add(listener);
     }
 
     /**
@@ -60,14 +60,14 @@ public abstract class Shortcut {
      * @param listener the listener to unregister
      */
     public void removeShortcutListener(@NotNull final ShortcutListener listener) {
-        listeners.add(ShortcutListener.class, listener);
+        listeners.add(listener);
     }
 
     /**
      * Notifies all listeners about a modification.
      */
     protected void fireModifiedEvent() {
-        for (final ShortcutListener listener : listeners.getListeners(ShortcutListener.class)) {
+        for (final ShortcutListener listener : listeners.getListeners()) {
             listener.shortcutModified();
         }
     }

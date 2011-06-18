@@ -21,13 +21,14 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in {@link FacesManager} events.
  * @author Andreas Kirschbaum
  */
-public interface FacesManagerListener {
+public interface FacesManagerListener extends EventListener {
 
     /**
      * Called when a {@link Face} has been updated.

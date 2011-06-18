@@ -21,8 +21,7 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
-import java.util.Collection;
-import java.util.concurrent.CopyOnWriteArrayList;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -38,7 +37,7 @@ public abstract class AbstractFacesManager implements FacesManager {
      * changed faces.
      */
     @NotNull
-    private final Collection<FacesManagerListener> facesManagerListeners = new CopyOnWriteArrayList<FacesManagerListener>();
+    private final EventListenerList2<FacesManagerListener> facesManagerListeners = new EventListenerList2<FacesManagerListener>(FacesManagerListener.class);
 
     /**
      * The {@link FaceCache} instance used to look up in-memory faces.
@@ -76,7 +75,7 @@ public abstract class AbstractFacesManager implements FacesManager {
      * @param face the face
      */
     protected void fireFaceUpdated(@NotNull final Face face) {
-        for (final FacesManagerListener facesManagerListener : facesManagerListeners) {
+        for (final FacesManagerListener facesManagerListener : facesManagerListeners.getListeners()) {
             facesManagerListener.faceUpdated(face);
         }
     }

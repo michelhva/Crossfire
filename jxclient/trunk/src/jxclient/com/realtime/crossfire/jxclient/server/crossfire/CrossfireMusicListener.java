@@ -21,13 +21,14 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in "music" commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireMusicListener {
+public interface CrossfireMusicListener extends EventListener {
 
     /**
      * A music command has been received.

@@ -21,10 +21,10 @@
 
 package com.realtime.crossfire.jxclient.items;
 
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import com.realtime.crossfire.jxclient.util.IndexedEventListenerList;
 import java.util.Collection;
 import java.util.HashSet;
-import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -38,14 +38,14 @@ public abstract class AbstractItemView implements ItemView {
      * notified about changes.
      */
     @NotNull
-    private final EventListenerList locationsListeners = new EventListenerList();
+    private final EventListenerList2<LocationsListener> locationsListeners = new EventListenerList2<LocationsListener>(LocationsListener.class);
 
     /**
      * The registered {@link ItemListener ItemListeners} to be notified about
      * changes.
      */
     @NotNull
-    private final IndexedEventListenerList locationListeners = new IndexedEventListenerList();
+    private final IndexedEventListenerList<LocationListener> locationListeners = new IndexedEventListenerList<LocationListener>(LocationListener.class);
 
     /**
      * The pending modified floor slots to be reported to listeners.
@@ -92,7 +92,7 @@ public abstract class AbstractItemView implements ItemView {
      */
     @Override
     public void addLocationsListener(@NotNull final LocationsListener locationsListener) {
-        locationsListeners.add(LocationsListener.class, locationsListener);
+        locationsListeners.add(locationsListener);
     }
 
     /**
@@ -100,7 +100,7 @@ public abstract class AbstractItemView implements ItemView {
      */
     @Override
     public void removeLocationsListener(@NotNull final LocationsListener locationsListener) {
-        locationsListeners.remove(LocationsListener.class, locationsListener);
+        locationsListeners.remove(locationsListener);
     }
 
     /**
@@ -108,7 +108,7 @@ public abstract class AbstractItemView implements ItemView {
      */
     @Override
     public void addLocationListener(final int index, @NotNull final LocationListener locationListener) {
-        locationListeners.add(index, LocationListener.class, locationListener);
+        locationListeners.add(index, locationListener);
     }
 
     /**
@@ -116,7 +116,7 @@ public abstract class AbstractItemView implements ItemView {
      */
     @Override
     public void removeLocationListener(final int index, @NotNull final LocationListener locationListener) {
-        locationListeners.remove(index, LocationListener.class, locationListener);
+        locationListeners.remove(index, locationListener);
     }
 
     /**
@@ -154,11 +154,11 @@ public abstract class AbstractItemView implements ItemView {
             modifiedSlots.clear();
         }
         if (tmpModifiedSlots.length > 0) {
-            for (final LocationsListener locationsListener : locationsListeners.getListeners(LocationsListener.class)) {
+            for (final LocationsListener locationsListener : locationsListeners.getListeners()) {
                 locationsListener.locationsModified(tmpModifiedSlots);
             }
             for (final int index : tmpModifiedSlots) {
-                for (final LocationListener locationListener : locationListeners.getListeners(index, LocationListener.class)) {
+                for (final LocationListener locationListener : locationListeners.getListeners(index)) {
                     locationListener.locationChanged();
                 }
             }

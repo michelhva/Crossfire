@@ -21,11 +21,13 @@
 
 package com.realtime.crossfire.jxclient.gui.scrollable;
 
+import java.util.EventListener;
+
 /**
  * Listener for {@link GUIScrollable} elements.
  * @author Andreas Kirschbaum
  */
-public interface ScrollableListener {
+public interface ScrollableListener extends EventListener {
 
     /**
      * Sets the scroll range.

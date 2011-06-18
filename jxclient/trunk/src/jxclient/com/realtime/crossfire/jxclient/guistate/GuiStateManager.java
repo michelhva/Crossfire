@@ -25,9 +25,8 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectionListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -54,7 +53,7 @@ public class GuiStateManager {
      * The connection state listeners to notify.
      */
     @NotNull
-    private final Collection<GuiStateListener> guiStateListeners = new ArrayList<GuiStateListener>();
+    private final EventListenerList2<GuiStateListener> guiStateListeners = new EventListenerList2<GuiStateListener>(GuiStateListener.class);
 
     /**
      * The {@link CrossfireServerConnectionListener} used to detect connection
@@ -65,7 +64,7 @@ public class GuiStateManager {
 
         @Override
         public void clientSocketStateChanged(@NotNull final ClientSocketState clientSocketState) {
-            for (final GuiStateListener listener : guiStateListeners) {
+            for (final GuiStateListener listener : guiStateListeners.getListeners()) {
                 listener.connecting(clientSocketState);
             }
             if (clientSocketState == ClientSocketState.CONNECTED) {
@@ -146,13 +145,13 @@ public class GuiStateManager {
 
             switch (guiState) {
             case START:
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
                     listener.start();
                 }
                 break;
 
             case METASERVER:
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
                     listener.metaserver();
                 }
                 break;
@@ -161,7 +160,7 @@ public class GuiStateManager {
                 throw new IllegalArgumentException();
 
             case CONNECTED:
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
                     listener.connected();
                 }
                 break;
@@ -191,10 +190,10 @@ public class GuiStateManager {
                 throw new IllegalArgumentException();
 
             case CONNECTING:
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
                     listener.preConnecting(param);
                 }
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
                     listener.connecting(param);
                 }
                 break;
@@ -203,7 +202,7 @@ public class GuiStateManager {
                 throw new IllegalArgumentException();
 
             case CONNECT_FAILED:
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
                     listener.connectFailed(param);
                 }
                 break;

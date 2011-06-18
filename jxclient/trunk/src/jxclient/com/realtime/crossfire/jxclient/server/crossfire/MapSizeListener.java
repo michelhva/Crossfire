@@ -21,11 +21,13 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
+
 /**
  * Listener for clients interested in map size changes.
  * @author Andreas Kirschbaum
  */
-public interface MapSizeListener {
+public interface MapSizeListener extends EventListener {
 
     /**
      * The map size has changed.

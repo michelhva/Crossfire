@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.UpdItem;
-import javax.swing.event.EventListenerList;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -152,7 +152,7 @@ public class CfItem {
     /**
      * The listeners to be notified.
      */
-    private final EventListenerList listeners = new EventListenerList();
+    private final EventListenerList2<CfItemListener> listeners = new EventListenerList2<CfItemListener>(CfItemListener.class);
 
     /**
      * Creates a new instance.
@@ -453,7 +453,7 @@ public class CfItem {
         }
         modified = false;
 
-        for (final CfItemListener listener : listeners.getListeners(CfItemListener.class)) {
+        for (final CfItemListener listener : listeners.getListeners()) {
             listener.itemModified();
         }
     }
@@ -464,7 +464,7 @@ public class CfItem {
      * @param listener the listener to remove
      */
     public void addCfItemModifiedListener(@NotNull final CfItemListener listener) {
-        listeners.add(CfItemListener.class, listener);
+        listeners.add(listener);
     }
 
     /**
@@ -472,7 +472,7 @@ public class CfItem {
      * @param listener the listener to remove
      */
     public void removeCfItemModifiedListener(@NotNull final CfItemListener listener) {
-        listeners.remove(CfItemListener.class, listener);
+        listeners.remove(listener);
     }
 
     /**

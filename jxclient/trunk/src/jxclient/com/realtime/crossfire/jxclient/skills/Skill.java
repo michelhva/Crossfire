@@ -21,8 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skills;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -36,7 +35,7 @@ public class Skill {
      * The listeners to inform of changes.
      */
     @NotNull
-    private final Collection<SkillListener> listeners = new ArrayList<SkillListener>();
+    private final EventListenerList2<SkillListener> listeners = new EventListenerList2<SkillListener>(SkillListener.class);
 
     /**
      * The skill name.
@@ -132,7 +131,7 @@ public class Skill {
      * Notifies all listeners about a gained skill.
      */
     private void fireAddSkill() {
-        for (final SkillListener listener : listeners) {
+        for (final SkillListener listener : listeners.getListeners()) {
             listener.gainedSkill();
         }
     }
@@ -141,7 +140,7 @@ public class Skill {
      * Notifies all listeners about a lost attribute.
      */
     private void fireDelSkill() {
-        for (final SkillListener listener : listeners) {
+        for (final SkillListener listener : listeners.getListeners()) {
             listener.lostSkill();
         }
     }
@@ -150,7 +149,7 @@ public class Skill {
      * Notifies all listeners about an updated attribute.
      */
     private void fireUpdSkill() {
-        for (final SkillListener listener : listeners) {
+        for (final SkillListener listener : listeners.getListeners()) {
             listener.changedSkill();
         }
     }

@@ -21,13 +21,13 @@
 
 package com.realtime.crossfire.jxclient.metaserver;
 
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.CopyOnWriteArrayList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -61,14 +61,14 @@ public class MetaserverModel {
      * All registered metaserver listeners.
      */
     @NotNull
-    private final Collection<MetaserverListener> metaserverListeners = new CopyOnWriteArrayList<MetaserverListener>();
+    private final EventListenerList2<MetaserverListener> metaserverListeners = new EventListenerList2<MetaserverListener>(MetaserverListener.class);
 
     /**
      * All registered metaserver entry listeners. Maps entry index to list of
      * listeners.
      */
     @NotNull
-    private final Map<Integer, List<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<Integer, List<MetaserverEntryListener>>();
+    private final Map<Integer, EventListenerList2<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<Integer, EventListenerList2<MetaserverEntryListener>>();
 
     /**
      * Returns a metaserver entry by index.
@@ -149,12 +149,12 @@ public class MetaserverModel {
         }
         metaListPending.clear();
 
-        for (final MetaserverListener metaserverListener : metaserverListeners) {
+        for (final MetaserverListener metaserverListener : metaserverListeners.getListeners()) {
             metaserverListener.numberOfEntriesChanged();
         }
 
         for (int i = 0, iMax = Math.max(oldMetaListSize, newMetaListSize); i < iMax; i++) {
-            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i)) {
+            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i).getListeners()) {
                 metaserverEntryListener.entryChanged();
             }
         }
@@ -200,14 +200,14 @@ public class MetaserverModel {
      * @return the listeners list
      */
     @NotNull
-    private Collection<MetaserverEntryListener> getMetaserverEntryListeners(final int index) {
+    private EventListenerList2<MetaserverEntryListener> getMetaserverEntryListeners(final int index) {
         synchronized (metaserverEntryListeners) {
-            final Collection<MetaserverEntryListener> existingListeners = metaserverEntryListeners.get(index);
+            final EventListenerList2<MetaserverEntryListener> existingListeners = metaserverEntryListeners.get(index);
             if (existingListeners != null) {
                 return existingListeners;
             }
 
-            final List<MetaserverEntryListener> newListeners = new CopyOnWriteArrayList<MetaserverEntryListener>();
+            final EventListenerList2<MetaserverEntryListener> newListeners = new EventListenerList2<MetaserverEntryListener>(MetaserverEntryListener.class);
             metaserverEntryListeners.put(index, newListeners);
             return newListeners;
         }

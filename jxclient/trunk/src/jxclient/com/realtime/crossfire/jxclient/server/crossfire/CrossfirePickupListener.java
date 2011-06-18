@@ -21,11 +21,13 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
+
 /**
  * Interface for listeners interested in "pickup" messages.
  * @author Andreas Kirschbaum
  */
-public interface CrossfirePickupListener {
+public interface CrossfirePickupListener extends EventListener {
 
     /**
      * A "pickup" message has been received.

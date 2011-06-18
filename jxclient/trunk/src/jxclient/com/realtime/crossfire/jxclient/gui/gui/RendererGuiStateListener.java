@@ -21,13 +21,14 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in gui state changes.
  * @author Andreas Kirschbaum
  */
-public interface RendererGuiStateListener {
+public interface RendererGuiStateListener extends EventListener {
 
     /**
      * The gui state has changed.

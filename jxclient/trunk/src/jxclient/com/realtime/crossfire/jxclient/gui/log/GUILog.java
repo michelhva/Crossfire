@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -35,8 +36,6 @@ import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.font.FontRenderContext;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.ListIterator;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -62,7 +61,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
      * All listeners.
      */
     @NotNull
-    private final Collection<ScrollableListener> listeners = new ArrayList<ScrollableListener>();
+    private final EventListenerList2<ScrollableListener> listeners = new EventListenerList2<ScrollableListener>(ScrollableListener.class);
 
     /**
      * The {@link Buffer} containing all received text messages.
@@ -98,7 +97,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         @Override
         public void stateChanged() {
             setChanged();
-            for (final ScrollableListener listener : listeners) {
+            for (final ScrollableListener listener : listeners.getListeners()) {
                 listener.setRange(0, buffer.getTotalHeight(), renderStateManager.getScrollPos(), 200/*XXX:GUILog.super.getHeight()*/);
             }
         }

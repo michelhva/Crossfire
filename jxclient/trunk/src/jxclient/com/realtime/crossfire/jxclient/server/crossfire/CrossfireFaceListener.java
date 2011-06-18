@@ -21,13 +21,14 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in "face1"/"face2" commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireFaceListener {
+public interface CrossfireFaceListener extends EventListener {
 
     /**
      * A face command has been received.

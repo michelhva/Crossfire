@@ -20,6 +20,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -27,7 +28,7 @@ import org.jetbrains.annotations.NotNull;
  * the Crossfire server.
  * @author Nicolas Weeger
  */
-public interface CrossfireFailureListener {
+public interface CrossfireFailureListener extends EventListener {
 
     /**
      * Command failure received.

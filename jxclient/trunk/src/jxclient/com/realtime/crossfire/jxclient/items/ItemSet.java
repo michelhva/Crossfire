@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.UpdItem;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import com.realtime.crossfire.jxclient.util.HashedEventListenerList;
 import java.util.Collection;
 import java.util.Collections;
@@ -32,7 +33,6 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
-import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -77,21 +77,21 @@ public class ItemSet {
      * changes.
      */
     @NotNull
-    private final EventListenerList itemSetListeners = new EventListenerList();
+    private final EventListenerList2<ItemSetListener> itemSetListeners = new EventListenerList2<ItemSetListener>(ItemSetListener.class);
 
     /**
      * The registered {@link ItemListener ItemListeners} to be notified about
      * changes.
      */
     @NotNull
-    private final HashedEventListenerList itemListeners = new HashedEventListenerList();
+    private final HashedEventListenerList<ItemListener> itemListeners = new HashedEventListenerList<ItemListener>(ItemListener.class);
 
     /**
      * Adds an {@link ItemSetListener} to be notified about changes.
      * @param listener the listener to add
      */
     public void addItemSetListener(@NotNull final ItemSetListener listener) {
-        itemSetListeners.add(ItemSetListener.class, listener);
+        itemSetListeners.add(listener);
     }
 
     /**
@@ -99,7 +99,7 @@ public class ItemSet {
      * @param listener the listener to remove
      */
     public void removeItemSetListener(@NotNull final ItemSetListener listener) {
-        itemSetListeners.remove(ItemSetListener.class, listener);
+        itemSetListeners.remove(listener);
     }
 
     /**
@@ -108,7 +108,7 @@ public class ItemSet {
      * @param listener the listener to add
      */
     public void addInventoryListener(final int tag, @NotNull final ItemListener listener) {
-        itemListeners.add(tag, ItemListener.class, listener);
+        itemListeners.add(tag, listener);
     }
 
     /**
@@ -117,7 +117,7 @@ public class ItemSet {
      * @param listener the listener to add
      */
     public void removeInventoryListener(final int tag, @NotNull final ItemListener listener) {
-        itemListeners.remove(tag, ItemListener.class, listener);
+        itemListeners.remove(tag, listener);
     }
 
     /**
@@ -161,7 +161,7 @@ public class ItemSet {
                 return -1;
             }
 
-            for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+            for (final ItemSetListener listener : itemSetListeners.getListeners()) {
                 listener.itemRemoved(item);
             }
 
@@ -180,17 +180,17 @@ public class ItemSet {
                 throw new AssertionError();
             }
 
-            for (final ItemListener itemListener : itemListeners.getListeners(where, ItemListener.class)) {
+            for (final ItemListener itemListener : itemListeners.getListeners(where)) {
                 itemListener.inventoryRemoved(where, index);
             }
 
             if (notifyListeners) {
-                for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+                for (final ItemSetListener listener : itemSetListeners.getListeners()) {
                     listener.itemRemoved(item);
                 }
             }
 
-            for (final ItemListener itemListener : itemListeners.getListeners(tag, ItemListener.class)) {
+            for (final ItemListener itemListener : itemListeners.getListeners(tag)) {
                 itemListener.itemRemoved(tag);
             }
 
@@ -243,12 +243,12 @@ public class ItemSet {
         list.add(item);
 
         if (notifyListeners) {
-            for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+            for (final ItemSetListener listener : itemSetListeners.getListeners()) {
                 listener.itemAdded(item);
             }
         }
 
-        for (final ItemListener itemListener : itemListeners.getListeners(where, ItemListener.class)) {
+        for (final ItemListener itemListener : itemListeners.getListeners(where)) {
             itemListener.inventoryAdded(where, list.size()-1, item);
         }
     }
@@ -299,7 +299,7 @@ public class ItemSet {
             }
 
             this.player = player;
-            for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+            for (final ItemSetListener listener : itemSetListeners.getListeners()) {
                 listener.playerChanged(player);
             }
         }
@@ -376,15 +376,15 @@ public class ItemSet {
                 item.setLocation(valLocation);
                 addItem(item, false);
 
-                for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+                for (final ItemSetListener listener : itemSetListeners.getListeners()) {
                     listener.itemMoved(item);
                 }
             }
             if ((flags&~UpdItem.UPD_LOCATION) != 0) {
-                for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+                for (final ItemSetListener listener : itemSetListeners.getListeners()) {
                     listener.itemChanged(item);
                 }
-                for (final ItemListener itemListener : itemListeners.getListeners(tag, ItemListener.class)) {
+                for (final ItemListener itemListener : itemListeners.getListeners(tag)) {
                     itemListener.itemChanged(tag);
                 }
             }
@@ -425,7 +425,7 @@ public class ItemSet {
         }
 
         this.openContainerFloor = openContainerFloor;
-        for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+        for (final ItemSetListener listener : itemSetListeners.getListeners()) {
             listener.openContainerChanged(openContainerFloor);
         }
     }

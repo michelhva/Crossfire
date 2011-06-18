@@ -22,13 +22,14 @@
 package com.realtime.crossfire.jxclient.server.crossfire;
 
 import java.nio.ByteBuffer;
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Listener to be notified of updated face information.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateFaceListener {
+public interface CrossfireUpdateFaceListener extends EventListener {
 
     /**
      * Notifies that face information has been received from the Crossfire

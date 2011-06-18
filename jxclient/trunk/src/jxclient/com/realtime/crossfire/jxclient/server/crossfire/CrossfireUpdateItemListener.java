@@ -21,13 +21,14 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in item related commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateItemListener {
+public interface CrossfireUpdateItemListener extends EventListener {
 
     /**
      * A "delinv" command has been received.

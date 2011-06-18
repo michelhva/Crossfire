@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -28,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
  * received from the Crossfire server.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireSpellListener {
+public interface CrossfireSpellListener extends EventListener {
 
     /**
      * Flag for updspell command: mana is present.

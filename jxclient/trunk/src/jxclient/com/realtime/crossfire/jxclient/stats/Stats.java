@@ -28,7 +28,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
-import java.util.ArrayList;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.Collection;
 import java.util.HashSet;
 import org.jetbrains.annotations.NotNull;
@@ -54,7 +54,7 @@ public class Stats {
      * The listeners to inform of stat changes.
      */
     @NotNull
-    private final Collection<StatsListener> statsListeners = new ArrayList<StatsListener>();
+    private final EventListenerList2<StatsListener> statsListeners = new EventListenerList2<StatsListener>(StatsListener.class);
 
     /**
      * The {@link ExperienceTable} instance to use.
@@ -334,7 +334,7 @@ public class Stats {
         }
 
         this.simpleWeaponSpeed = simpleWeaponSpeed;
-        for (final StatsListener statsListener : statsListeners) {
+        for (final StatsListener statsListener : statsListeners.getListeners()) {
             statsListener.simpleWeaponSpeedChanged(this.simpleWeaponSpeed);
         }
     }
@@ -343,7 +343,7 @@ public class Stats {
      * Forgets about all stats.
      */
     private void reset() {
-        for (final StatsListener statsListener : statsListeners) {
+        for (final StatsListener statsListener : statsListeners.getListeners()) {
             statsListener.reset();
         }
         for (int statNo = 0; statNo < stats.length; statNo++) {
@@ -384,7 +384,7 @@ public class Stats {
         }
 
         stats[statNo] = value;
-        for (final StatsListener statsListener : statsListeners) {
+        for (final StatsListener statsListener : statsListeners.getListeners()) {
             statsListener.statChanged(statNo, stats[statNo]);
         }
     }
@@ -427,7 +427,7 @@ public class Stats {
         }
 
         this.title = title;
-        for (final StatsListener statsListener : statsListeners) {
+        for (final StatsListener statsListener : statsListeners.getListeners()) {
             statsListener.titleChanged(this.title);
         }
     }
@@ -443,7 +443,7 @@ public class Stats {
         }
 
         this.range = range;
-        for (final StatsListener statsListener : statsListeners) {
+        for (final StatsListener statsListener : statsListeners.getListeners()) {
             statsListener.rangeChanged(this.range);
         }
     }
@@ -458,7 +458,7 @@ public class Stats {
         }
 
         this.activeSkill = activeSkill;
-        for (final StatsListener statsListener : statsListeners) {
+        for (final StatsListener statsListener : statsListeners.getListeners()) {
             statsListener.activeSkillChanged(this.activeSkill);
         }
     }
@@ -481,7 +481,7 @@ public class Stats {
         }
 
         this.exp = exp;
-        for (final StatsListener statsListener : statsListeners) {
+        for (final StatsListener statsListener : statsListeners.getListeners()) {
             statsListener.experienceChanged(this.exp);
         }
 
@@ -506,7 +506,7 @@ public class Stats {
         }
 
         expNextLevel = newExpNextLevel;
-        for (final StatsListener statsListener : statsListeners) {
+        for (final StatsListener statsListener : statsListeners.getListeners()) {
             statsListener.experienceNextLevelChanged(expNextLevel);
         }
     }

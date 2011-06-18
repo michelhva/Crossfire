@@ -22,13 +22,14 @@
 package com.realtime.crossfire.jxclient.guistate;
 
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested gui state changes.
  * @author Andreas Kirschbaum
  */
-public interface GuiStateListener {
+public interface GuiStateListener extends EventListener {
 
     /**
      * The start screen is displayed.
