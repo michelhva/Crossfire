@@ -196,8 +196,7 @@ public class GUICharacterList extends GUIList {
      * @param characterName the character name
      */
     public void setCharacter(@NotNull final String characterName) {
-        final int index = characterModel.getCharacterIndex(characterName);
-        setSelectedIndex(index);
+        setSelectedIndex(characterModel.getCharacterIndex(characterName));
     }
 
 }
