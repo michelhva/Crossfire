@@ -105,7 +105,6 @@ public class GUIItemList extends GUIList {
 
         @Override
         public void notifyChanged(@NotNull final GUIElement element) {
-            element.resetChanged();
             selectionChanged();
             setChanged();
         }
@@ -161,8 +160,6 @@ public class GUIItemList extends GUIList {
                     final GUIElement item = itemItemFactory.newItem(i);
                     addElement(item);
                     item.setChangedListener(itemChangedListener);
-                    item.resetChanged();
-                    assert !item.isChanged();
                 }
                 setChanged(changedSlots, oldSize);
             } else {

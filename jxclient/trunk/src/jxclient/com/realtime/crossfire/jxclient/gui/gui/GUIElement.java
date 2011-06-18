@@ -130,17 +130,6 @@ public interface GUIElement {
     void setChanged();
 
     /**
-     * Returns the changed flag.
-     * @return the changed flag
-     */
-    boolean isChanged();
-
-    /**
-     * Clears the changed flag.
-     */
-    void resetChanged();
-
-    /**
      * Sets the tooltip text to show when the mouse is inside this element.
      * @param tooltipText the text to show or <code>null</cod> to disable the
      * tooltip for this element

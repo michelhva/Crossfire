@@ -224,7 +224,6 @@ public abstract class GUIItemItem extends GUIItem {
      */
     protected void setItemNoListeners(@Nullable final CfItem item) {
         this.item = item;
-        setChangedNoListeners();
     }
 
     /**
