@@ -21,13 +21,14 @@
 
 package com.realtime.crossfire.jxclient.scripts;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.Nullable;
 
 /**
  * Interface for listeners interested in {@link ScriptProcess} related events.
  * @author Andreas Kirschbaum
  */
-public interface ScriptProcessListener {
+public interface ScriptProcessListener extends EventListener {
 
     /**
      * Called after the script has been terminated.

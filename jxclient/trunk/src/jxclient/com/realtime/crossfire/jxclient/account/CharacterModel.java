@@ -20,13 +20,13 @@
 
 package com.realtime.crossfire.jxclient.account;
 
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.CopyOnWriteArrayList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -60,14 +60,14 @@ public class CharacterModel {
      * All registered character listeners.
      */
     @NotNull
-    private final Collection<CharacterListener> characterListeners = new CopyOnWriteArrayList<CharacterListener>();
+    private final EventListenerList2<CharacterListener> characterListeners = new EventListenerList2<CharacterListener>(CharacterListener.class);
 
     /**
      * All registered character entry listeners. Maps entry index to list of
      * listeners.
      */
     @NotNull
-    private final Map<Integer, List<CharacterInformationListener>> characterInformationListeners = new HashMap<Integer, List<CharacterInformationListener>>();
+    private final Map<Integer, EventListenerList2<CharacterInformationListener>> characterInformationListeners = new HashMap<Integer, EventListenerList2<CharacterInformationListener>>();
 
     /**
      * Returns a character entry by index.
@@ -148,12 +148,12 @@ public class CharacterModel {
         }
         charactersPending.clear();
 
-        for (final CharacterListener characterListener : characterListeners) {
+        for (final CharacterListener characterListener : characterListeners.getListeners()) {
             characterListener.numberOfItemsChanged();
         }
 
         for (int i = 0, iMax = Math.max(oldMetaListSize, newMetaListSize); i < iMax; i++) {
-            for (final CharacterInformationListener characterInformationListener : getCharacterInformationListeners(i)) {
+            for (final CharacterInformationListener characterInformationListener : getCharacterInformationListeners(i).getListeners()) {
                 characterInformationListener.informationChanged();
             }
         }
@@ -199,14 +199,14 @@ public class CharacterModel {
      * @return the listeners list
      */
     @NotNull
-    private Collection<CharacterInformationListener> getCharacterInformationListeners(final int index) {
+    private EventListenerList2<CharacterInformationListener> getCharacterInformationListeners(final int index) {
         synchronized (characterInformationListeners) {
-            final Collection<CharacterInformationListener> existingListeners = characterInformationListeners.get(index);
+            final EventListenerList2<CharacterInformationListener> existingListeners = characterInformationListeners.get(index);
             if (existingListeners != null) {
                 return existingListeners;
             }
 
-            final List<CharacterInformationListener> newListeners = new CopyOnWriteArrayList<CharacterInformationListener>();
+            final EventListenerList2<CharacterInformationListener> newListeners = new EventListenerList2<CharacterInformationListener>(CharacterInformationListener.class);
             characterInformationListeners.put(index, newListeners);
             return newListeners;
         }

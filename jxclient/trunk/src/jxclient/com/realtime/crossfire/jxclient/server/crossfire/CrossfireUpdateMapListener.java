@@ -21,13 +21,14 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in map related commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateMapListener {
+public interface CrossfireUpdateMapListener extends EventListener {
 
     /**
      * A "newmap" command has been received.

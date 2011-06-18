@@ -21,11 +21,11 @@
 
 package com.realtime.crossfire.jxclient.gui.log;
 
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.awt.Color;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.RectangularShape;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
@@ -55,7 +55,7 @@ public class Buffer {
      * The listeners to notify about changes.
      */
     @NotNull
-    private final Collection<BufferListener> listeners = new ArrayList<BufferListener>();
+    private final EventListenerList2<BufferListener> listeners = new EventListenerList2<BufferListener>(BufferListener.class);
 
     /**
      * The {@link Fonts} instance for looking up fonts.
@@ -152,7 +152,7 @@ public class Buffer {
             totalHeight = 0;
             lines.clear();
         }
-        for (final BufferListener listener : listeners) {
+        for (final BufferListener listener : listeners.getListeners()) {
             listener.linesRemoved(removedLines);
         }
         lastCount = 0;
@@ -172,7 +172,7 @@ public class Buffer {
             lines.add(line);
         }
 
-        for (final BufferListener listener : listeners) {
+        for (final BufferListener listener : listeners.getListeners()) {
             listener.lineAdded();
         }
     }
@@ -191,7 +191,7 @@ public class Buffer {
             lines.set(lastIndex, line);
         }
 
-        for (final BufferListener listener : listeners) {
+        for (final BufferListener listener : listeners.getListeners()) {
             listener.lineReplaced();
         }
     }
@@ -213,7 +213,7 @@ public class Buffer {
                 totalHeight -= line.getHeight();
             }
         }
-        for (final BufferListener listener : listeners) {
+        for (final BufferListener listener : listeners.getListeners()) {
             listener.linesRemoved(removedLines);
         }
     }

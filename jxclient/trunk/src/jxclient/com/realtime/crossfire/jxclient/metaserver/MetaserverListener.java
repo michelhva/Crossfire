@@ -21,11 +21,13 @@
 
 package com.realtime.crossfire.jxclient.metaserver;
 
+import java.util.EventListener;
+
 /**
  * Interface for listeners on metaserver related events.
  * @author Andreas Kirschbaum
  */
-public interface MetaserverListener {
+public interface MetaserverListener extends EventListener {
 
     /**
      * The number of metaserver entries has changed.

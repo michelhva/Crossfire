@@ -20,6 +20,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -27,7 +28,7 @@ import org.jetbrains.annotations.NotNull;
  * received from the Crossfire server.
  * @author Nicolas Weeger
  */
-public interface CrossfireAccountListener {
+public interface CrossfireAccountListener extends EventListener {
 
     /**
      * Client should display the account management dialog.

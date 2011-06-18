@@ -22,9 +22,8 @@
 package com.realtime.crossfire.jxclient.spells;
 
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import com.realtime.crossfire.jxclient.util.StringSplitter;
-import java.util.ArrayList;
-import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -43,7 +42,7 @@ public class Spell {
      * The {@link SpellListener SpellListeners} to be notified of changes.
      */
     @NotNull
-    private final Collection<SpellListener> listeners = new ArrayList<SpellListener>();
+    private final EventListenerList2<SpellListener> listeners = new EventListenerList2<SpellListener>(SpellListener.class);
 
     /**
      * The face number.
@@ -374,7 +373,7 @@ public class Spell {
      * Notifies all listeners.
      */
     private void fireChanged() {
-        for (final SpellListener listener : listeners) {
+        for (final SpellListener listener : listeners.getListeners()) {
             listener.spellChanged();
         }
     }

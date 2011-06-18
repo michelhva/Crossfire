@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.mapupdater;
 
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
+import java.util.EventListener;
 import java.util.Set;
 import org.jetbrains.annotations.NotNull;
 
@@ -31,7 +32,7 @@ import org.jetbrains.annotations.NotNull;
  * instances.
  * @author Lauwenmark
  */
-public interface MapListener {
+public interface MapListener extends EventListener {
 
     /**
      * The map has changed.

@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.spells;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -28,7 +29,7 @@ import org.jetbrains.annotations.Nullable;
  * events.
  * @author Lauwenmark
  */
-public interface CurrentSpellManagerListener {
+public interface CurrentSpellManagerListener extends EventListener {
 
     /**
      * The selected spell has changed.

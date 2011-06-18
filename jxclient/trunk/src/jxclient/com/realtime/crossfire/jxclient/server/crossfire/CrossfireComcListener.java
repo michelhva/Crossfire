@@ -21,12 +21,14 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
+
 /**
  * Interface for listeners interested in comc commands received from the
  * server.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireComcListener {
+public interface CrossfireComcListener extends EventListener {
 
     /**
      * Called whenever a comc command has been received.

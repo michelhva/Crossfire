@@ -21,13 +21,14 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in skill info responses.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireSkillInfoListener {
+public interface CrossfireSkillInfoListener extends EventListener {
 
     /**
      * Clears all skill info. This function is called whenever new skill info is

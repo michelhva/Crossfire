@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -28,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
  * Crossfire server.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireStatsListener {
+public interface CrossfireStatsListener extends EventListener {
 
     /**
      * The Hit Points stat.

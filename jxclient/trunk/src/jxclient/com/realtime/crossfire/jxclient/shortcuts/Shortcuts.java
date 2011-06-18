@@ -24,11 +24,11 @@ package com.realtime.crossfire.jxclient.shortcuts;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -61,7 +61,7 @@ public class Shortcuts implements Iterable<Shortcut> {
      * The listeners to be notified.
      */
     @NotNull
-    private final EventListenerList listeners = new EventListenerList();
+    private final EventListenerList2<ShortcutsListener> listeners = new EventListenerList2<ShortcutsListener>(ShortcutsListener.class);
 
     /**
      * The command queue for executing commands.
@@ -96,7 +96,7 @@ public class Shortcuts implements Iterable<Shortcut> {
         for (int i = 0; i < shortcuts.size(); i++) {
             final Shortcut shortcut = shortcuts.get(i);
             if (shortcut != null) {
-                for (final ShortcutsListener listener : listeners.getListeners(ShortcutsListener.class)) {
+                for (final ShortcutsListener listener : listeners.getListeners()) {
                     listener.shortcutRemoved(i, shortcut);
                 }
                 shortcut.dispose();
@@ -132,7 +132,7 @@ public class Shortcuts implements Iterable<Shortcut> {
 
         final Shortcut oldShortcut = shortcuts.get(index);
         if (oldShortcut != null) {
-            for (final ShortcutsListener listener : listeners.getListeners(ShortcutsListener.class)) {
+            for (final ShortcutsListener listener : listeners.getListeners()) {
                 listener.shortcutRemoved(index, oldShortcut);
             }
             oldShortcut.dispose();
@@ -140,7 +140,7 @@ public class Shortcuts implements Iterable<Shortcut> {
         shortcuts.set(index, shortcut);
         modified = true;
         if (shortcut != null) {
-            for (final ShortcutsListener listener : listeners.getListeners(ShortcutsListener.class)) {
+            for (final ShortcutsListener listener : listeners.getListeners()) {
                 listener.shortcutAdded(index, shortcut);
             }
         }
@@ -215,7 +215,7 @@ public class Shortcuts implements Iterable<Shortcut> {
      * @param listener the listener to add
      */
     public void addShortcutsListener(@NotNull final ShortcutsListener listener) {
-        listeners.add(ShortcutsListener.class, listener);
+        listeners.add(listener);
     }
 
     /**
@@ -223,7 +223,7 @@ public class Shortcuts implements Iterable<Shortcut> {
      * @param listener the listener to remove
      */
     public void removeShortcutsListener(@NotNull final ShortcutsListener listener) {
-        listeners.remove(ShortcutsListener.class, listener);
+        listeners.remove(listener);
     }
 
     /**

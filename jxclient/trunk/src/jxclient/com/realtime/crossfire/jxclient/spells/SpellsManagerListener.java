@@ -21,11 +21,13 @@
 
 package com.realtime.crossfire.jxclient.spells;
 
+import java.util.EventListener;
+
 /**
  * Interface for listeners interested in {@link SpellsManager} events.
  * @author Andreas Kirschbaum
  */
-public interface SpellsManagerListener {
+public interface SpellsManagerListener extends EventListener {
 
     /**
      * A new spell was added.

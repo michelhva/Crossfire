@@ -25,40 +25,68 @@ import com.realtime.crossfire.jxclient.items.ItemListener;
 import java.util.EventListener;
 import java.util.HashMap;
 import java.util.Map;
-import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 
-public class HashedEventListenerList {
+public class HashedEventListenerList<T extends EventListener> {
+
+    /**
+     * The listener class.
+     */
+    @NotNull
+    private final Class<T> class_;
 
     /**
      * The registered {@link ItemListener ItemListeners} to be notified about
      * changes.
      */
     @NotNull
-    private final Map<Integer, EventListenerList> locationListeners = new HashMap<Integer, EventListenerList>();
+    private final Map<Integer, EventListenerList2<T>> locationListeners = new HashMap<Integer, EventListenerList2<T>>();
 
-    public <T extends EventListener> void add(final int index, @NotNull final Class<T> class_, @NotNull final T listener) {
-        getLocationListeners(index).add(class_, listener);
+    /**
+     * Creates a new instance.
+     * @param class_ the listener class
+     */
+    public HashedEventListenerList(@NotNull final Class<T> class_) {
+        this.class_ = class_;
     }
 
-    public <T extends EventListener> void remove(final int index, @NotNull final Class<T> class_, @NotNull final T listener) {
-        getLocationListeners(index).remove(class_, listener);
+    /**
+     * Adds a listener.
+     * @param index the listener's index
+     * @param listener the listener
+     */
+    public void add(final int index, @NotNull final T listener) {
+        getLocationListeners(index).add(listener);
+    }
+
+    /**
+     * Removes a listener.
+     * @param index the listener's index
+     * @param listener the listener
+     */
+    public void remove(final int index, @NotNull final T listener) {
+        getLocationListeners(index).remove(listener);
+    }
+
+    /**
+     * Returns an array of all the listeners.
+     * @param index the listener's index
+     * @return all the listeners
+     */
+    @NotNull
+    public T[] getListeners(final int index) {
+        return getLocationListeners(index).getListeners();
     }
 
     @NotNull
-    public <T extends EventListener> T[] getListeners(final int index, @NotNull final Class<T> class_) {
-        return getLocationListeners(index).getListeners(class_);
-    }
-
-    @NotNull
-    private EventListenerList getLocationListeners(final int index) {
+    private EventListenerList2<T> getLocationListeners(final int index) {
         synchronized (locationListeners) {
-            final EventListenerList existingEventListenerList = locationListeners.get(index);
+            final EventListenerList2<T> existingEventListenerList = locationListeners.get(index);
             if (existingEventListenerList != null) {
                 return existingEventListenerList;
             }
 
-            final EventListenerList eventListenerList = new EventListenerList();
+            final EventListenerList2<T> eventListenerList = new EventListenerList2<T>(class_);
             locationListeners.put(index, eventListenerList);
             return eventListenerList;
         }

@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.log;
 
+import java.util.EventListener;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
 
@@ -28,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners for changes of {@link Buffer} contents.
  * @author Andreas Kirschbaum
  */
-public interface BufferListener {
+public interface BufferListener extends EventListener {
 
     /**
      * A line has been added to the buffer.

@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.gui.map.GUIMap;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import java.awt.Color;
 import java.awt.Component;
@@ -231,7 +232,7 @@ public class JXCWindowRenderer {
      * Listeners to be notified about {@link #rendererGuiState} changes.
      */
     @NotNull
-    private final Collection<RendererGuiStateListener> rendererGuiStateListeners = new CopyOnWriteArrayList<RendererGuiStateListener>();
+    private final EventListenerList2<RendererGuiStateListener> rendererGuiStateListeners = new EventListenerList2<RendererGuiStateListener>(RendererGuiStateListener.class);
 
     /**
      * The currently displayed {@link Gui}.
@@ -850,7 +851,7 @@ public class JXCWindowRenderer {
             frame.validate();
         }
         updateServerSettings();
-        for (final RendererGuiStateListener listener : rendererGuiStateListeners) {
+        for (final RendererGuiStateListener listener : rendererGuiStateListeners.getListeners()) {
             listener.guiStateChanged(rendererGuiState);
         }
     }

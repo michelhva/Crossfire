@@ -21,11 +21,13 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
+
 /**
  * Listener for classes interested in sent "reply" commands.
  * @author Andreas Kirschbaum
  */
-public interface SentReplyListener {
+public interface SentReplyListener extends EventListener {
 
     /**
      * A "reply" command has been sent to the server.

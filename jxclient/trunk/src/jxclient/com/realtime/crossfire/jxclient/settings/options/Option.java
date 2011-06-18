@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.settings.options;
 
-import javax.swing.event.EventListenerList;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -35,13 +35,13 @@ public abstract class Option {
      * The listeners to be notified.
      */
     @NotNull
-    private final EventListenerList listeners = new EventListenerList();
+    private final EventListenerList2<OptionListener> listeners = new EventListenerList2<OptionListener>(OptionListener.class);
 
     /**
      * Notifies all listeners that the state has changed.
      */
     protected void fireStateChangedEvent() {
-        for (final OptionListener listener : listeners.getListeners(OptionListener.class)) {
+        for (final OptionListener listener : listeners.getListeners()) {
             listener.stateChanged();
         }
     }
@@ -51,7 +51,7 @@ public abstract class Option {
      * @param listener the listener to add
      */
     public void addOptionListener(@NotNull final OptionListener listener) {
-        listeners.add(OptionListener.class, listener);
+        listeners.add(listener);
     }
 
     /**
@@ -59,7 +59,7 @@ public abstract class Option {
      * @param listener the listener to remove
      */
     public void removeOptionListener(@NotNull final OptionListener listener) {
-        listeners.remove(OptionListener.class, listener);
+        listeners.remove(listener);
     }
 
     /**

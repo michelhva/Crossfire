@@ -31,7 +31,7 @@ import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
-import java.util.ArrayList;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -88,25 +88,25 @@ public class MapUpdaterState {
      * The listeners to notify about changed map squares.
      */
     @NotNull
-    private final Collection<MapListener> mapListeners = new ArrayList<MapListener>();
+    private final EventListenerList2<MapListener> mapListeners = new EventListenerList2<MapListener>(MapListener.class);
 
     /**
      * The listeners to notify about cleared maps.
      */
     @NotNull
-    private final Collection<NewmapListener> newmapListeners = new ArrayList<NewmapListener>();
+    private final EventListenerList2<NewmapListener> newmapListeners = new EventListenerList2<NewmapListener>(NewmapListener.class);
 
     /**
      * The listeners to notify about scrolled maps.
      */
     @NotNull
-    private final Collection<MapScrollListener> mapScrollListeners = new ArrayList<MapScrollListener>();
+    private final EventListenerList2<MapScrollListener> mapScrollListeners = new EventListenerList2<MapScrollListener>(MapScrollListener.class);
 
     /**
      * The {@link MapSizeListener MapSizeListeners} to be notified.
      */
     @NotNull
-    private final Collection<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
+    private final EventListenerList2<MapSizeListener> mapSizeListeners = new EventListenerList2<MapSizeListener>(MapSizeListener.class);
 
     /**
      * The animations in the visible map area.
@@ -359,7 +359,7 @@ public class MapUpdaterState {
                 }
             }
 
-            for (final MapListener listener : mapListeners) {
+            for (final MapListener listener : mapListeners.getListeners()) {
                 listener.mapChanged(map, squares);
             }
         }
@@ -389,7 +389,7 @@ public class MapUpdaterState {
                 }
             }
 
-            for (final MapScrollListener mapscrollListener : mapScrollListeners) {
+            for (final MapScrollListener mapscrollListener : mapScrollListeners.getListeners()) {
                 mapscrollListener.mapScrolled(dx, dy);
             }
 
@@ -436,12 +436,12 @@ public class MapUpdaterState {
             visibleAnimations.setMapSize(width, height);
 
             if (changed) {
-                for (final MapSizeListener listener : mapSizeListeners) {
+                for (final MapSizeListener listener : mapSizeListeners.getListeners()) {
                     listener.mapSizeChanged(width, height);
                 }
             }
 
-            for (final NewmapListener listener : newmapListeners) {
+            for (final NewmapListener listener : newmapListeners.getListeners()) {
                 listener.commandNewmapReceived();
             }
         }

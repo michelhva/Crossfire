@@ -21,11 +21,13 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
+
 /**
  * Interface for listeners interested in "smooth" commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireSmoothListener {
+public interface CrossfireSmoothListener extends EventListener {
 
     /**
      * A smooth command has been received.

@@ -21,11 +21,13 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.util.EventListener;
+
 /**
  * Interface for listeners interested in "tick" commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireTickListener {
+public interface CrossfireTickListener extends EventListener {
 
     /**
      * A "tick" command has been received.

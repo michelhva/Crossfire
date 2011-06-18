@@ -26,8 +26,8 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSpellListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -62,7 +62,7 @@ public class SpellsManager implements Iterable<Spell> {
      * changes.
      */
     @NotNull
-    private final Collection<SpellsManagerListener> listeners = new ArrayList<SpellsManagerListener>();
+    private final EventListenerList2<SpellsManagerListener> listeners = new EventListenerList2<SpellsManagerListener>(SpellsManagerListener.class);
 
     /**
      * A {@link Comparator} to compare {@link Spell} instances by spell path and
@@ -200,7 +200,7 @@ public class SpellsManager implements Iterable<Spell> {
             spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
         }
 
-        for (final SpellsManagerListener listener : listeners) {
+        for (final SpellsManagerListener listener : listeners.getListeners()) {
             listener.spellAdded(index);
         }
     }
@@ -245,7 +245,7 @@ public class SpellsManager implements Iterable<Spell> {
         final Spell spell = spells.remove(index);
         unknownSpells.put(spell.getName(), spell);
 
-        for (final SpellsManagerListener listener : listeners) {
+        for (final SpellsManagerListener listener : listeners.getListeners()) {
             listener.spellRemoved(index);
         }
 

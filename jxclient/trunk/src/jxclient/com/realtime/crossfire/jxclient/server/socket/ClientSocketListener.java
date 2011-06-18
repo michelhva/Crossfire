@@ -22,13 +22,14 @@
 package com.realtime.crossfire.jxclient.server.socket;
 
 import java.nio.ByteBuffer;
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in {@link ClientSocket} related events.
  * @author Andreas Kirschbaum
  */
-public interface ClientSocketListener {
+public interface ClientSocketListener extends EventListener {
 
     /**
      * Called when connecting to a Crossfire server.

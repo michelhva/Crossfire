@@ -21,13 +21,14 @@
 
 package com.realtime.crossfire.jxclient.stats;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in changes of {@link Stats} instances.
  * @author Andreas Kirschbaum
  */
-public interface StatsListener {
+public interface StatsListener extends EventListener {
 
     /**
      * The stats instance is about to be reset.

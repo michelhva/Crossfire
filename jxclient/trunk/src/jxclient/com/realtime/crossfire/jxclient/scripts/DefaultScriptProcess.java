@@ -38,6 +38,7 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -45,8 +46,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -138,7 +137,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      * The {@link ScriptProcessListener ScriptProcessListeners} to notify.
      */
     @NotNull
-    private final Collection<ScriptProcessListener> scriptProcessListeners = new ArrayList<ScriptProcessListener>(1);
+    private final EventListenerList2<ScriptProcessListener> scriptProcessListeners = new EventListenerList2<ScriptProcessListener>(ScriptProcessListener.class);
 
     /**
      * The {@link PacketWatcher} to process "watch" commands.
@@ -292,7 +291,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 crossfireServerConnection.removeClientSocketListener(clientSocketListener);
             }
             packetWatcher.destroy();
-            for (final ScriptProcessListener scriptProcessListener : scriptProcessListeners) {
+            for (final ScriptProcessListener scriptProcessListener : scriptProcessListeners.getListeners()) {
                 scriptProcessListener.scriptTerminated(result);
             }
         }

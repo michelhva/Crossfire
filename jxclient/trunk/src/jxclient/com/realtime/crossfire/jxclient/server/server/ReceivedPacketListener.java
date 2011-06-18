@@ -22,13 +22,14 @@
 package com.realtime.crossfire.jxclient.server.server;
 
 import java.nio.ByteBuffer;
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in received packets.
  * @author Andreas Kirschbaum
  */
-public interface ReceivedPacketListener {
+public interface ReceivedPacketListener extends EventListener {
 
     /**
      * A packet having no parameters has been received.

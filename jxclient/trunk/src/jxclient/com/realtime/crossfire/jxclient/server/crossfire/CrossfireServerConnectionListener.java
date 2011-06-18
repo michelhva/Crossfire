@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -29,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
  * related events.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireServerConnectionListener {
+public interface CrossfireServerConnectionListener extends EventListener {
 
     /**
      * Called whenever the state has changed.

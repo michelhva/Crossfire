@@ -20,11 +20,13 @@
 
 package com.realtime.crossfire.jxclient.account;
 
+import java.util.EventListener;
+
 /**
  * Callback for a change in a character list.
  * @author Nicolas Weeger
  */
-public interface CharacterListener {
+public interface CharacterListener extends EventListener {
 
     /**
      * Items were added or removed.

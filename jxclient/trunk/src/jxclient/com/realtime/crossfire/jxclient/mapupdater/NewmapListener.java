@@ -21,11 +21,13 @@
 
 package com.realtime.crossfire.jxclient.mapupdater;
 
+import java.util.EventListener;
+
 /**
  * Interface for listeners interested in received "newmap" messages.
  * @author Lauwenmark
  */
-public interface NewmapListener {
+public interface NewmapListener extends EventListener {
 
     /**
      * Called whenever a "newmap" message has been received.

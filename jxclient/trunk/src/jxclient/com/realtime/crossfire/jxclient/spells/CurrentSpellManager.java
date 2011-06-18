@@ -21,8 +21,7 @@
 
 package com.realtime.crossfire.jxclient.spells;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -36,7 +35,7 @@ public class CurrentSpellManager {
      * The listeners to notify object changed spell objects.
      */
     @NotNull
-    private final Collection<CurrentSpellManagerListener> listeners = new ArrayList<CurrentSpellManagerListener>();
+    private final EventListenerList2<CurrentSpellManagerListener> listeners = new EventListenerList2<CurrentSpellManagerListener>(CurrentSpellManagerListener.class);
 
     /**
      * The currently selected spell, or <code>null</code>.
@@ -54,7 +53,7 @@ public class CurrentSpellManager {
         }
 
         currentSpell = spell;
-        for (final CurrentSpellManagerListener listener : listeners) {
+        for (final CurrentSpellManagerListener listener : listeners.getListeners()) {
             listener.spellChanged(spell);
         }
     }
