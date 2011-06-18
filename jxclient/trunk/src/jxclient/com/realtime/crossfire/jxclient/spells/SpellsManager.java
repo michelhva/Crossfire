@@ -27,13 +27,13 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSpellListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.CopyOnWriteArrayList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -48,11 +48,11 @@ public class SpellsManager implements Iterable<Spell> {
      * All known spells.
      */
     @NotNull
-    private final List<Spell> spells = new ArrayList<Spell>();
+    private final List<Spell> spells = new CopyOnWriteArrayList<Spell>();
 
     /**
      * All unknown spells that have been referenced before. Maps spell name to
-     * {@link Spell} instance.
+     * {@link Spell} instance. Accesses are synchronized on this instance.
      */
     @NotNull
     private final Map<String, Spell> unknownSpells = new HashMap<String, Spell>();
@@ -186,7 +186,10 @@ public class SpellsManager implements Iterable<Spell> {
         int index = Collections.binarySearch(spells, key, spellNameComparator);
         final Spell spell;
         if (index < 0) {
-            final Spell existingSpell = unknownSpells.remove(spellName);
+            final Spell existingSpell;
+            synchronized (unknownSpells) {
+                existingSpell = unknownSpells.remove(spellName);
+            }
             if (existingSpell != null) {
                 spell = existingSpell;
                 spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
@@ -243,7 +246,9 @@ public class SpellsManager implements Iterable<Spell> {
      */
     private void deleteSpellByIndex(final int index) {
         final Spell spell = spells.remove(index);
-        unknownSpells.put(spell.getName(), spell);
+        synchronized (unknownSpells) {
+            unknownSpells.put(spell.getName(), spell);
+        }
 
         for (final SpellsManagerListener listener : listeners.getListeners()) {
             listener.spellRemoved(index);
@@ -268,7 +273,9 @@ public class SpellsManager implements Iterable<Spell> {
 
         final Spell spell = new Spell(spellName);
         spell.setUnknown(true);
-        unknownSpells.put(spell.getName(), spell);
+        synchronized (unknownSpells) {
+            unknownSpells.put(spell.getName(), spell);
+        }
         return spell;
     }
 
