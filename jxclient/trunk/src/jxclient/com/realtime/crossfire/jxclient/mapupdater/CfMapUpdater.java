@@ -114,8 +114,8 @@ public class CfMapUpdater {
         }
 
         @Override
-        public void mapMagicMap(final int x, final int y, final int color) {
-            mapUpdaterState.processMagicMap(x, y, color);
+        public void mapMagicMap(final int x, final int y, final byte[][] data) {
+            mapUpdaterState.processMagicMap(x, y, data);
         }
 
         @Override
