@@ -45,11 +45,6 @@ public class Modifiers {
     public static final int CTRL = InputEvent.CTRL_DOWN_MASK;
 
     /**
-     * The mask for "alt".
-     */
-    public static final int ALT = InputEvent.ALT_DOWN_MASK;
-
-    /**
      * The mask for "alt_graph".
      */
     public static final int ALT_GRAPH = InputEvent.ALT_GRAPH_DOWN_MASK;
@@ -57,7 +52,7 @@ public class Modifiers {
     /**
      * The mask for all used modifiers.
      */
-    public static final int MASK = SHIFT|CTRL|ALT|ALT_GRAPH;
+    public static final int MASK = SHIFT|CTRL|ALT_GRAPH;
 
     /**
      * Private constructor to prevent instantiation.
