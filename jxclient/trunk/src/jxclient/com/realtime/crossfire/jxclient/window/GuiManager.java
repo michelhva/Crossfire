@@ -36,6 +36,7 @@ import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFailureListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
@@ -230,6 +231,36 @@ public class GuiManager {
     };
 
     /**
+     * The {@link CrossfireFailureListener} registered to receive failure
+     * messages.
+     */
+    @NotNull
+    private final CrossfireFailureListener crossfireFailureListener = new CrossfireFailureListener() {
+
+        @Override
+        public void failure(@NotNull final String command, @NotNull final String arguments) {
+            if (command.equals("accountlogin") && skin != null) {
+                try {
+                    final Gui dialog = skin.getDialog("account_login");
+                    final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                    if (passwordField != null) {
+                        passwordField.setText("");
+                        GuiUtils.setActive(passwordField, true);
+                    }
+                } catch (final JXCSkinException ignored) {
+                    // ignore if dialog doesn't exist
+                }
+            }
+        }
+
+        @Override
+        public void clearFailure() {
+            // ignore
+        }
+
+    };
+
+    /**
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
@@ -240,6 +271,7 @@ public class GuiManager {
         public void start() {
             closeTransientDialogs();
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+            server.removeCrossfireFailureListener(crossfireFailureListener);
             windowRenderer.setGuiState(RendererGuiState.START);
             showGUIStart();
         }
@@ -248,6 +280,7 @@ public class GuiManager {
         public void metaserver() {
             closeTransientDialogs();
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+            server.removeCrossfireFailureListener(crossfireFailureListener);
             windowRenderer.setGuiState(RendererGuiState.META);
             showGUIMeta();
             activateMetaserverGui();
@@ -267,6 +300,7 @@ public class GuiManager {
             closeTransientDialogs();
             windowRenderer.updateServerSettings();
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+            server.addCrossfireFailureListener(crossfireFailureListener);
             windowRenderer.setGuiState(RendererGuiState.LOGIN);
             showGUIMain();
             if (dialogConnect != null) {

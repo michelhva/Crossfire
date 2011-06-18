@@ -1,5 +1,8 @@
 2011-06-18  Andreas Kirschbaum
 
+	* Clear password input field and re-focus the input field if an
+	incorrect password is entered during account login.
+
 	* Make middle mouse button emulation (left+right click) work
 	again.
 
