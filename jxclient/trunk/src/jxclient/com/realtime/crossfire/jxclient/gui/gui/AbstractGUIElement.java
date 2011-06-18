@@ -225,11 +225,11 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void setChanged() {
+        repaint();
         if (changed) {
             return;
         }
 
-        repaint();
         changed = true;
         if (isVisible()) {
             if (changedListener != null) {
