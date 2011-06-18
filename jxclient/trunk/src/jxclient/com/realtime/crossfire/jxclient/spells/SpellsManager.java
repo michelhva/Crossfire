@@ -305,4 +305,19 @@ public class SpellsManager implements Iterable<Spell> {
         return 0 <= index && index < spells.size() ? spells.get(index) : null;
     }
 
+    /**
+     * Returns whether any spell has the given face.
+     * @param faceNum the face
+     * @return whether the face was found
+     */
+    public boolean displaysFace(final int faceNum) {
+        for (final Spell spell : spells) {
+            if (spell.getFaceNum() == faceNum) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 }

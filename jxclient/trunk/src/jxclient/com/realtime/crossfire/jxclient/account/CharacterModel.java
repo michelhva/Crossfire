@@ -212,4 +212,19 @@ public class CharacterModel {
         }
     }
 
+    /**
+     * Returns whether any character has the given face.
+     * @param faceNum the face
+     * @return whether the face was found
+     */
+    public boolean displaysFace(final int faceNum) {
+        for (final CharacterInformation character : characters) {
+            if (character.getFaceNumber() == faceNum) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 }
