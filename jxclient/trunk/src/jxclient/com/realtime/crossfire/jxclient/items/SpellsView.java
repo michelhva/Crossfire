@@ -72,7 +72,9 @@ public class SpellsView extends AbstractItemView {
 
             @Override
             public void faceUpdated(@NotNull final Face face) {
-                addModifiedRange(0, spellsManager.getSpells());
+                if (spellsManager.displaysFace(face.getFaceNum())) {
+                    addModifiedRange(0, spellsManager.getSpells());
+                }
             }
 
         });
