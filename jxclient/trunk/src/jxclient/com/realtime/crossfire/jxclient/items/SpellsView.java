@@ -97,8 +97,7 @@ public class SpellsView extends AbstractItemView {
             return null;
         }
         final Face face = facesManager.getFace(spell.getFaceNum());
-        final CfItem item = new CfItem(0, spell.getTag(), 0, 0, face, spell.getName(), spell.getName(), 0, 0, 0, 0);
-        return item;
+        return new CfItem(0, spell.getTag(), 0, 0, face, spell.getName(), spell.getName(), 0, 0, 0, 0);
     }
 
 }
