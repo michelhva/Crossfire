@@ -1,5 +1,7 @@
 2011-06-18  Andreas Kirschbaum
 
+	* Suppress map view blanking when changing maps.
+
 	* Fix possible crash (ConcurrentModificationException) related to
 	spell updates.
 
