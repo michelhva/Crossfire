@@ -1,5 +1,7 @@
 2011-06-18  Andreas Kirschbaum
 
+	* Fix map updates not ocurring reliably.
+
 	* Suppress map view blanking when changing maps.
 
 	* Fix possible crash (ConcurrentModificationException) related to
