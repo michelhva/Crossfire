@@ -148,7 +148,7 @@ public class MusicManager {
 
         if (enabled && !muted && name != null) {
             processor = new Processor(name, audioFileLoader);
-            thread = new Thread(processor);
+            thread = new Thread(processor, "JXClient:MusicManager");
             thread.start();
         }
     }

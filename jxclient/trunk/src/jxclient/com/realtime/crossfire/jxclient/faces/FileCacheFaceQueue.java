@@ -158,36 +158,44 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
 
         @Override
         public void run() {
+            final Thread thread = Thread.currentThread();
+            final String name = thread.getName();
             try {
-                if (taskId != id) {
-                    return;
-                }
+                thread.setName("JXClient:LoadTask:face="+face.getFaceName());
+                try {
+                    if (taskId != id) {
+                        return;
+                    }
 
-                final ImageIcon originalImageIcon = imageCacheOriginal.load(face);
-                if (originalImageIcon == null) {
-                    fireFaceFailed(face);
-                    return;
-                }
+                    final ImageIcon originalImageIcon = imageCacheOriginal.load(face);
+                    if (originalImageIcon == null) {
+                        fireFaceFailed(face);
+                        return;
+                    }
 
-                final ImageIcon scaledImageIcon = imageCacheScaled.load(face);
-                if (scaledImageIcon == null) {
-                    fireFaceFailed(face);
-                    return;
-                }
+                    final ImageIcon scaledImageIcon = imageCacheScaled.load(face);
+                    if (scaledImageIcon == null) {
+                        fireFaceFailed(face);
+                        return;
+                    }
 
-                final ImageIcon magicMapImageIcon = imageCacheMagicMap.load(face);
-                if (magicMapImageIcon == null) {
-                    fireFaceFailed(face);
-                    return;
-                }
+                    final ImageIcon magicMapImageIcon = imageCacheMagicMap.load(face);
+                    if (magicMapImageIcon == null) {
+                        fireFaceFailed(face);
+                        return;
+                    }
 
-                fireFaceLoaded(face, new FaceImages(originalImageIcon, scaledImageIcon, magicMapImageIcon));
+                    fireFaceLoaded(face, new FaceImages(originalImageIcon, scaledImageIcon, magicMapImageIcon));
+                } finally {
+                    synchronized (sync) {
+                        pendingLoadFaces.remove(face);
+                    }
+                }
             } finally {
-                synchronized (sync) {
-                    pendingLoadFaces.remove(face);
-                }
+                thread.setName(name);
             }
         }
+
     }
 
     /**
@@ -220,9 +228,16 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
 
         @Override
         public void run() {
-            imageCacheOriginal.save(face, faceImages.getOriginalImageIcon());
-            imageCacheScaled.save(face, faceImages.getScaledImageIcon());
-            imageCacheMagicMap.save(face, faceImages.getMagicMapImageIcon());
+            final Thread thread = Thread.currentThread();
+            final String name = thread.getName();
+            try {
+                thread.setName("JXClient:SaveTask:face="+face.getFaceName());
+                imageCacheOriginal.save(face, faceImages.getOriginalImageIcon());
+                imageCacheScaled.save(face, faceImages.getScaledImageIcon());
+                imageCacheMagicMap.save(face, faceImages.getMagicMapImageIcon());
+            } finally {
+                thread.setName(name);
+            }
         }
     }
 

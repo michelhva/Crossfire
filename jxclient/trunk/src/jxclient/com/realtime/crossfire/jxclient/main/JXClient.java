@@ -116,6 +116,7 @@ public class JXClient {
      * @param args the command line arguments
      */
     public static void main(@NotNull final String[] args) {
+        Thread.currentThread().setName("JXClient:Main");
         final String buildNumber = getBuildNumber();
         System.out.println("JXClient "+buildNumber+" - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
