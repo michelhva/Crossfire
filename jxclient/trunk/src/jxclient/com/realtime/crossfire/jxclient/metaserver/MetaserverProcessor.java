@@ -178,7 +178,7 @@ public class MetaserverProcessor {
         synchronized (sync) {
             if (!running) {
                 running = true;
-                new Thread(runnable).start();
+                new Thread(runnable, "JXClient:MetaserverProcessor").start();
             }
             counter = 1;
         }

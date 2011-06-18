@@ -193,7 +193,7 @@ public class ClientSocket {
             process();
         }
 
-    });
+    }, "JXClient:ClientSocket");
 
     /**
      * Creates a new instance.

@@ -94,7 +94,7 @@ public class Timeouts {
     };
 
     static {
-        new Thread(DELIVER_PENDING_TIMEOUTS).start();
+        new Thread(DELIVER_PENDING_TIMEOUTS, "JXClient:Timeouts").start();
     }
 
     /**

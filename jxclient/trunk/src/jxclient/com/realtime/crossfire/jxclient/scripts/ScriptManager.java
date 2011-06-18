@@ -152,7 +152,7 @@ public class ScriptManager {
 
         });
         crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' started.", CrossfireDrawinfoListener.NDI_BLACK);
-        new Thread(scriptProcess).start();
+        new Thread(scriptProcess, "JXClient:ScriptProcess:"+scriptProcess).start();
     }
 
     /**
