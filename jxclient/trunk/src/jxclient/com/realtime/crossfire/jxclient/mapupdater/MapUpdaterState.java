@@ -331,13 +331,13 @@ public class MapUpdaterState {
      * about changes. present
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
-     * @param color the magic map color to set
+     * @param data the magic map data (y, x); will not be changed
      */
-    public void processMagicMap(final int x, final int y, final int color) {
+    public void processMagicMap(final int x, final int y, final byte[][] data) {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
-                map.setColor(x, y, color);
+                map.setMagicMap(x, y, data);
             }
         }
     }

@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import java.util.Collection;
 import java.util.HashMap;
@@ -190,15 +191,20 @@ public class CfMap {
 
     /**
      * Sets the magic map color of one square.
-     * @param x the x-coordinate of the square
-     * @param y the y-coordinate of the square
-     * @param color the color to set
+     * @param x0 the x-coordinate of the square
+     * @param y0 the y-coordinate of the square
+     * @param data the magic map data (y, x); will not be changed
      */
-    public void setColor(final int x, final int y, final int color) {
+    public void setMagicMap(final int x0, final int y0, final byte[][] data) {
         assert Thread.holdsLock(this);
-        if (expandTo(x, y).setColor(ox, oy, color)) {
-            for (int l = 0; l < Map2.NUM_LAYERS; l++) {
-                setFaceInternal(x, y, l, CfMapSquare.DEFAULT_FACE);
+        for (int y = 0; y < data.length; y++) {
+            for (int x = 0; x < data[y].length; x++) {
+                final int color = data[y][x]&CrossfireUpdateMapListener.FACE_COLOR_MASK;
+                if (expandTo(x0+x, y0+y).setColor(ox, oy, color)) {
+                    for (int l = 0; l < Map2.NUM_LAYERS; l++) {
+                        setFaceInternal(x, y, l, CfMapSquare.DEFAULT_FACE);
+                    }
+                }
             }
         }
     }
