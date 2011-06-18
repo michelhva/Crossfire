@@ -85,7 +85,8 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private final SmoothingRenderer smoothingRenderer;
 
     /**
-     * Synchronizes access to {@link #bufferedImage}.
+     * Synchronizes access to {@link #bufferedImage} and {@link
+     * #clearMapPending}.
      */
     @NotNull
     private final Object bufferedImageSync = new Object();
@@ -96,6 +97,11 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      */
     @Nullable
     private transient BufferedImage bufferedImage = null;
+
+    /**
+     * Whether the map area should be blanked.
+     */
+    private boolean clearMapPending = true;
 
     /**
      * The map width in squares.
@@ -201,7 +207,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
                 synchronized (map) {
                     final int x0 = map.getOffsetX();
                     final int y0 = map.getOffsetY();
-                    final Graphics g = createBufferGraphics();
+                    final Graphics2D g = createBufferGraphics();
                     try {
                         for (final CfMapSquare mapSquare : changedSquares) {
                             final int x = mapSquare.getX()+x0;
@@ -232,21 +238,23 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         @Override
         public void commandNewmapReceived() {
             synchronized (bufferedImageSync) {
-                final Graphics2D g = createBufferGraphics();
-                try {
-                    g.setColor(Color.BLACK);
-                    g.fillRect(0, 0, getWidth(), getHeight());
-                    g.setBackground(DarknessColors.FOG_OF_WAR_COLOR);
-                    g.clearRect(0, 0, getWidth(), getHeight());
-                    markPlayer(g, 0, 0);
-                } finally {
-                    g.dispose();
-                }
+                clearMapPending = true;
             }
             setChanged();
         }
 
     };
+
+    /**
+     * Blanks the map display.
+     * @param g the graphics to paint to
+     */
+    private void clearMap(@NotNull final Graphics2D g) {
+        g.setColor(Color.BLACK);
+        g.fillRect(0, 0, getWidth(), getHeight());
+        g.setBackground(DarknessColors.FOG_OF_WAR_COLOR);
+        g.clearRect(0, 0, getWidth(), getHeight());
+    }
 
     /**
      * The {@link MapScrollListener} registered to receive map_scroll commands.
@@ -260,6 +268,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
                 final Graphics g = createBufferGraphics();
                 try {
                     updateScrolledMap(g, dx, dy);
+                    markPlayer(g, dx, dy);
                 } finally {
                     g.dispose();
                 }
@@ -327,6 +336,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
             final Graphics g = createBufferGraphics();
             try {
                 redrawTiles(g, mapUpdaterState.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
+                markPlayer(g, 0, 0);
             } finally {
                 g.dispose();
             }
@@ -625,7 +635,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
                     final int hh = (displayMinOffsetY == 0 ? 0 : 1)-dy;
                     redrawTilesUnlessDirty(g, map, displayMinX, displayMinY, displayMaxX, displayMinY+hh);
                 }
-                markPlayer(g, dx, dy);
             }
         }
     }
@@ -678,10 +687,14 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      */
     @NotNull
     private Graphics2D createBufferGraphics() {
-        synchronized (bufferedImageSync) {
-            assert bufferedImage != null;
-            return bufferedImage.createGraphics();
+        assert Thread.holdsLock(bufferedImageSync);
+        assert bufferedImage != null;
+        final Graphics2D graphics = bufferedImage.createGraphics();
+        if (clearMapPending) {
+            clearMapPending = false;
+            clearMap(graphics);
         }
+        return graphics;
     }
 
     /**
