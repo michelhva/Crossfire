@@ -403,10 +403,6 @@ public class GUIItemSpellList extends GUIItemItem {
     @Override
     public void setIndexNoListeners(final int index) {
         synchronized (sync) {
-            if (this.index == index) {
-                return;
-            }
-
             this.index = index;
         }
 

@@ -258,10 +258,6 @@ public class GUIItemFloor extends GUIItemItem {
      */
     @Override
     public void setIndexNoListeners(final int index) {
-        if (this.index == index) {
-            return;
-        }
-
         this.index = index;
 
         setItemNoListeners(floorView.getItem(index));

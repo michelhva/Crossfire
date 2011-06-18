@@ -299,10 +299,6 @@ public class GUIItemInventory extends GUIItemItem {
     @Override
     public void setIndexNoListeners(final int index) {
         synchronized (sync) {
-            if (this.index == index) {
-                return;
-            }
-
             this.index = index;
         }
 
