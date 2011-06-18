@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.gui.gui;
 
 import java.awt.Component;
-import java.awt.Graphics;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
@@ -42,8 +41,8 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link GUIElementChangedListener} to be notified whenever the {@link
-     * #changed} flag is set.
+     * The {@link GUIElementChangedListener} to be notified whenever this
+     * element has changed.
      */
     @Nullable
     private GUIElementChangedListener changedListener = null;
@@ -64,11 +63,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @NotNull
     private final String name;
-
-    /**
-     * Whether the contents have changed.
-     */
-    private boolean changed;
 
     /**
      * The {@link TooltipManager} to update.
@@ -226,40 +220,11 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     @Override
     public void setChanged() {
         repaint();
-        if (changed) {
-            return;
-        }
-
-        changed = true;
         if (isVisible()) {
             if (changedListener != null) {
                 changedListener.notifyChanged(this);
             }
         }
-    }
-
-    /**
-     * Records that this element has changed and must be repainted. Does not
-     * notify listeners.
-     */
-    protected void setChangedNoListeners() {
-        changed = true;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public boolean isChanged() {
-        return changed;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void resetChanged() {
-        changed = false;
     }
 
     /**
@@ -309,9 +274,4 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
         this.changedListener = changedListener;
     }
 
-    @Override
-    protected void paintComponent(final Graphics g) {
-        super.paintComponent(g);
-        resetChanged();
-    }
 }
