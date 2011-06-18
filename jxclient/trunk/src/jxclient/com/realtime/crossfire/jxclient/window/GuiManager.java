@@ -482,30 +482,30 @@ public class GuiManager {
             final String name = dialog.getName();
             if (name != null) {
                 if (name.equals("account_login")) {
-                    final GUIText accountLogin = dialog.getFirstElement(GUIText.class, "account_login");
-                    if (accountLogin != null) {
+                    final GUIText loginField = dialog.getFirstElement(GUIText.class, "account_login");
+                    if (loginField != null) {
                         final String accountName = settings.getString("login_account_"+connection.getHostname(), "");
                         if (accountName.length() > 0) {
-                            accountLogin.setText(accountName);
+                            loginField.setText(accountName);
 
-                            final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
-                            if (accountPassword != null) {
-                                accountPassword.setText("");
-                                GuiUtils.setActive(accountPassword, true);
+                            final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                            if (passwordField != null) {
+                                passwordField.setText("");
+                                GuiUtils.setActive(passwordField, true);
                             }
                         } else {
-                            accountLogin.setText("");
-                            GuiUtils.setActive(accountLogin, true);
+                            loginField.setText("");
+                            GuiUtils.setActive(loginField, true);
 
-                            final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
-                            if (accountPassword != null) {
-                                accountPassword.setText("");
+                            final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                            if (passwordField != null) {
+                                passwordField.setText("");
                             }
                         }
                     } else {
-                        final GUIText accountPassword = dialog.getFirstElement(GUIText.class, "account_password");
-                        if (accountPassword != null) {
-                            accountPassword.setText("");
+                        final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                        if (passwordField != null) {
+                            passwordField.setText("");
                         }
                     }
                 } else if (name.equals("account_characters")) {

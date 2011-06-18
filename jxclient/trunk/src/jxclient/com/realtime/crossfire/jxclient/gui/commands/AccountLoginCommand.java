@@ -72,15 +72,15 @@ public class AccountLoginCommand implements GUICommand {
             return;
         }
 
-        final GUIText l = gui.getFirstElement(GUIText.class, "account_login");
-        final GUIText p = gui.getFirstElement(GUIText.class, "account_password");
+        final GUIText loginField = gui.getFirstElement(GUIText.class, "account_login");
+        final GUIText passwordField = gui.getFirstElement(GUIText.class, "account_password");
 
-        if (l == null || p == null) {
+        if (loginField == null || passwordField == null) {
             return;
         }
 
-        final String login = l.getText();
-        final String password = p.getText();
+        final String login = loginField.getText();
+        final String password = passwordField.getText();
 
         commandCallback.accountLogin(login, password);
     }

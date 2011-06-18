@@ -75,19 +75,19 @@ public class AccountPasswordCommand implements GUICommand {
             return;
         }
 
-        final GUIText currentPassword = gui.getFirstElement(GUIText.class, "account_password_current");
-        final GUIText newPassword = gui.getFirstElement(GUIText.class, "account_password_new");
-        final GUIText confirmPassword = gui.getFirstElement(GUIText.class, "account_password_confirm");
+        final GUIText currentPasswordField = gui.getFirstElement(GUIText.class, "account_password_current");
+        final GUIText newPasswordField = gui.getFirstElement(GUIText.class, "account_password_new");
+        final GUIText confirmPasswordField = gui.getFirstElement(GUIText.class, "account_password_confirm");
 
-        if (currentPassword == null || newPassword == null || confirmPassword == null) {
+        if (currentPasswordField == null || newPasswordField == null || confirmPasswordField == null) {
             return;
         }
 
-        final String current = currentPassword.getText();
-        final String password = newPassword.getText();
-        final String confirm = confirmPassword.getText();
+        final String currentPassword = currentPasswordField.getText();
+        final String newPassword = newPasswordField.getText();
+        final String confirmPassword = confirmPasswordField.getText();
 
-        if (current.isEmpty()) {
+        if (currentPassword.isEmpty()) {
             final AbstractLabel error = gui.getFirstElement(GUILabelFailure.class, "account_password_error");
             if (error != null) {
                 error.setText("Please enter your current password!");
@@ -95,14 +95,14 @@ public class AccountPasswordCommand implements GUICommand {
             return;
         }
 
-        if (password.isEmpty()) {
+        if (newPassword.isEmpty()) {
             final AbstractLabel error = gui.getFirstElement(GUILabelFailure.class, "account_password_error");
             if (error != null) {
                 error.setText("Can't have an empty password!");
             }
             return;
         }
-        if (!confirm.equals(password)) {
+        if (!confirmPassword.equals(newPassword)) {
             final AbstractLabel error = gui.getFirstElement(GUILabelFailure.class, "account_password_error");
             if (error != null) {
                 error.setText("Passwords don't match!");
@@ -110,7 +110,7 @@ public class AccountPasswordCommand implements GUICommand {
             return;
         }
 
-        commandCallback.accountPassword(current, password);
+        commandCallback.accountPassword(currentPassword, newPassword);
     }
 
 }

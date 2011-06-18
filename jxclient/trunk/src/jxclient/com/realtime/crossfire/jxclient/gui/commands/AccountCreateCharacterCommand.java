@@ -73,13 +73,13 @@ public class AccountCreateCharacterCommand implements GUICommand {
             return;
         }
 
-        final GUIText l = gui.getFirstElement(GUIText.class, "character_login");
+        final GUIText loginField = gui.getFirstElement(GUIText.class, "character_login");
 
-        if (l == null) {
+        if (loginField == null) {
             return;
         }
 
-        final String login = l.getText();
+        final String login = loginField.getText();
 
         commandCallback.accountCreateCharacter(login);
     }
