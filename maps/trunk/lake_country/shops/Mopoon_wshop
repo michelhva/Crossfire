@@ -11,7 +11,7 @@ enter_x 9
 enter_y 9
 msg
 Created:  1995-03-19 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-06-13 Andreas Kirschbaum
 endmsg
 end
 arch cave_15
@@ -951,12 +951,9 @@ arch dungeon_floor
 x 6
 y 1
 end
-arch block_door_closed
-name wall
-face cave10.111
+arch cave10
 x 6
 y 1
-connected 13
 end
 arch dungeon_floor
 x 6
@@ -1510,12 +1507,9 @@ arch woodfloor
 x 8
 y 8
 end
-arch block_door_closed
-name wall
-face cave10.111
+arch cave10
 x 8
 y 8
-connected 13
 end
 arch woodfloor
 x 8
@@ -2637,12 +2631,9 @@ arch shop_empty
 x 15
 y 1
 end
-arch block_door_closed
-name wall
-face cave10.111
+arch cave10
 x 15
 y 1
-connected 13
 end
 arch shop_weapon
 x 15
