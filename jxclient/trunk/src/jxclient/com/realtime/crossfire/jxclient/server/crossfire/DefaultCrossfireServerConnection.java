@@ -3665,10 +3665,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         synchronized (writeBuffer) {
             byteBuffer.clear();
             byteBuffer.put(ACCOUNT_LOGIN_PREFIX);
-            byteBuffer.put((byte)login.length());
-            byteBuffer.put(login.getBytes(UTF8));
-            byteBuffer.put((byte)password.length());
-            byteBuffer.put(password.getBytes(UTF8));
+            final byte[] loginBytes = login.getBytes(UTF8);
+            byteBuffer.put((byte)loginBytes.length);
+            byteBuffer.put(loginBytes);
+            final byte[] passwordBytes = password.getBytes(UTF8);
+            byteBuffer.put((byte)passwordBytes.length);
+            byteBuffer.put(passwordBytes);
             writePacket(writeBuffer, byteBuffer.position());
         }
 
@@ -4249,10 +4251,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.clear();
             byteBuffer.put(ACCOUNT_ADD_PLAYER_PREFIX);
             byteBuffer.put((byte)force);
-            byteBuffer.put((byte)login.length());
-            byteBuffer.put(login.getBytes(UTF8));
-            byteBuffer.put((byte)password.length());
-            byteBuffer.put(password.getBytes(UTF8));
+            final byte[] loginBytes = login.getBytes(UTF8);
+            byteBuffer.put((byte)loginBytes.length);
+            byteBuffer.put(loginBytes);
+            final byte[] passwordBytes = password.getBytes(UTF8);
+            byteBuffer.put((byte)passwordBytes.length);
+            byteBuffer.put(passwordBytes);
             writePacket(writeBuffer, byteBuffer.position());
         }
     }
@@ -4270,10 +4274,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         synchronized (writeBuffer) {
             byteBuffer.clear();
             byteBuffer.put(ACCOUNT_NEW_PREFIX);
-            byteBuffer.put((byte)login.length());
-            byteBuffer.put(login.getBytes(UTF8));
-            byteBuffer.put((byte)password.length());
-            byteBuffer.put(password.getBytes(UTF8));
+            final byte[] loginBytes = login.getBytes(UTF8);
+            byteBuffer.put((byte)loginBytes.length);
+            byteBuffer.put(loginBytes);
+            final byte[] passwordBytes = password.getBytes(UTF8);
+            byteBuffer.put((byte)passwordBytes.length);
+            byteBuffer.put(passwordBytes);
             writePacket(writeBuffer, byteBuffer.position());
         }
     }
@@ -4290,10 +4296,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         synchronized (writeBuffer) {
             byteBuffer.clear();
             byteBuffer.put(CREATE_PLAYER_PREFIX);
-            byteBuffer.put((byte)login.length());
-            byteBuffer.put(login.getBytes(UTF8));
-            byteBuffer.put((byte)password.length());
-            byteBuffer.put(password.getBytes(UTF8));
+            final byte[] loginBytes = login.getBytes(UTF8);
+            byteBuffer.put((byte)loginBytes.length);
+            byteBuffer.put(loginBytes);
+            final byte[] passwordBytes = password.getBytes(UTF8);
+            byteBuffer.put((byte)passwordBytes.length);
+            byteBuffer.put(passwordBytes);
             writePacket(writeBuffer, byteBuffer.position());
         }
     }
@@ -4310,10 +4318,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         synchronized (writeBuffer) {
             byteBuffer.clear();
             byteBuffer.put(ACCOUNT_PASSWORD_PREFIX);
-            byteBuffer.put((byte)currentPassword.length());
-            byteBuffer.put(currentPassword.getBytes(UTF8));
-            byteBuffer.put((byte)newPassword.length());
-            byteBuffer.put(newPassword.getBytes(UTF8));
+            final byte[] currentPasswordBytes = currentPassword.getBytes(UTF8);
+            byteBuffer.put((byte)currentPasswordBytes.length);
+            byteBuffer.put(currentPasswordBytes);
+            final byte[] newPasswordBytes = newPassword.getBytes(UTF8);
+            byteBuffer.put((byte)newPasswordBytes.length);
+            byteBuffer.put(newPasswordBytes);
             writePacket(writeBuffer, byteBuffer.position());
         }
     }
