@@ -2,7 +2,7 @@ Object spell_earth_to_dust
 anim_suffix spellcasting
 name earth to dust
 name_pl earth to dust
-face spell_summoner.111
+face spell_earth_to_dust.111
 level 4
 sp 5
 casting_time 15

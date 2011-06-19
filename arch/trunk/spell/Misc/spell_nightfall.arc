@@ -2,7 +2,7 @@ Object spell_nightfall
 anim_suffix spellcasting
 name nightfall
 name_pl nightfall
-face spell_praying.111
+face spell_nightfall.111
 type 101
 subtype 43
 level 32

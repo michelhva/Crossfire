@@ -2,7 +2,7 @@ Object spell_wrathful_eye
 anim_suffix spellcasting
 name wrathful eye
 name_pl wrathful eye
-face spell_praying.111
+face spell_wrathful_eye.111
 level 10
 grace 30
 casting_time 8

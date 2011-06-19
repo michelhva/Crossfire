@@ -2,7 +2,7 @@ Object spell_iron_skin
 anim_suffix spellcasting
 name iron skin
 name_pl iron skin
-face spell_praying.111
+face spell_iron_skin.111
 level 1
 grace 8
 casting_time 10

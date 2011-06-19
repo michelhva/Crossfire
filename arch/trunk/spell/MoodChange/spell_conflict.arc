@@ -2,7 +2,7 @@ Object spell_conflict
 anim_suffix spellcasting
 name conflict
 name_pl conflict
-face spell_praying.111
+face spell_conflict.111
 level 20
 grace 50
 casting_time 10

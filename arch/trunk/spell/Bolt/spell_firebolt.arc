@@ -2,7 +2,7 @@ Object spell_firebolt
 anim_suffix spellcasting
 name firebolt
 name_pl firebolt
-face spell_pyromancy.111
+face spell_firebolt.111
 level 4
 sp 9
 casting_time 10

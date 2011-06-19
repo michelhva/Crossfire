@@ -2,7 +2,7 @@ Object spell_large_speedball
 anim_suffix spellcasting
 name large speedball
 name_pl large speedball
-face spell_evocation.111
+face spell_large_speedball.111
 type 101
 subtype 27
 level 6

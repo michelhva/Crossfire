@@ -2,7 +2,7 @@ Object spell_bless
 anim_suffix spellcasting
 name bless
 name_pl bless
-face spell_praying.111
+face spell_bless.111
 level 4
 grace 8
 casting_time 5

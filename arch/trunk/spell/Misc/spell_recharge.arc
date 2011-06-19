@@ -2,6 +2,7 @@ Object spell_charging
 anim_suffix spellcasting
 name charging
 name_pl charging
+face spell_charging.111
 level 10
 sp 200
 casting_time 75

@@ -2,7 +2,7 @@ Object spell_dark_vision
 anim_suffix spellcasting
 name dark vision
 name_pl dark vision
-face spell_sorcery.111
+face spell_dark_vision.111
 level 5
 sp 10
 casting_time 12

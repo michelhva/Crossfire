@@ -2,7 +2,7 @@ Object spell_identify
 anim_suffix spellcasting
 name identify
 name_pl identify
-face spell_sorcery.111
+face spell_identify.111
 level 8
 sp 60
 casting_time 20

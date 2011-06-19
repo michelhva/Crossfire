@@ -4,7 +4,7 @@ name animate weapon
 name_pl animate weapon
 type 101
 subtype 41
-face spell_sorcery.111
+face spell_animate_weapon.111
 level 7
 value 70
 sp 25

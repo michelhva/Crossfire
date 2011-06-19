@@ -2,7 +2,7 @@ Object spell_regeneration
 anim_suffix spellcasting
 name regeneration
 name_pl regeneration
-face spell_praying.111
+face spell_regeneration.111
 level 14
 grace 15
 casting_time 10

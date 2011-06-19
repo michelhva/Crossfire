@@ -2,7 +2,7 @@ Object spell_create_earth_wall
 anim_suffix spellcasting
 name create earth wall
 name_pl create earth wall
-face spell_summoner.111
+face spell_create_earth_wall.111
 level 8
 sp 6
 casting_time 12

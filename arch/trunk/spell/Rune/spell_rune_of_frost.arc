@@ -2,7 +2,7 @@ Object spell_rune_of_frost
 anim_suffix spellcasting
 name rune of frost
 name_pl rune of frost
-face spell_evocation.111
+face spell_rune_of_frost.111
 type 101
 subtype 2
 no_drop 1

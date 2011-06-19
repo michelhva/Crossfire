@@ -2,7 +2,7 @@ Object spell_cause_heavy_wounds
 anim_suffix spellcasting
 name cause heavy wounds
 name_pl cause heavy wounds
-face spell_praying.111
+face spell_cause_heavy_wounds.111
 level 10
 grace 16
 casting_time 5

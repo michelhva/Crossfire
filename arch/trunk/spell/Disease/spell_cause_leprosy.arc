@@ -2,7 +2,7 @@ Object spell_cause_leprosy
 anim_suffix spellcasting
 name cause leprosy
 name_pl cause leprosy
-face spell_praying.111
+face spell_cause_leprosy.111
 type 101
 subtype 45
 level 10

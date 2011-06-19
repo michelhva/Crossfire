@@ -2,7 +2,7 @@ Object spell_dimension_door
 anim_suffix spellcasting
 name dimension door
 name_pl dimension door
-face spell_sorcery.111
+face spell_dimension_door.111
 level 10
 value 100
 sp 25

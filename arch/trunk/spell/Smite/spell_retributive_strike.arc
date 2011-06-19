@@ -2,7 +2,7 @@ Object spell_retributive_strike
 anim_suffix spellcasting
 name retributive strike
 name_pl retributive strike
-face spell_praying.111
+face spell_retributive_strike.111
 type 101
 subtype 10
 level 36

@@ -2,7 +2,7 @@ Object spell_probe
 anim_suffix spellcasting
 name probe
 name_pl probe
-face spell_sorcery.111
+face spell_probe.111
 level 1
 sp 3
 casting_time 2

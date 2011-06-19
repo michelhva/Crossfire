@@ -2,7 +2,7 @@ Object spell_paralyze
 anim_suffix spellcasting
 name paralyze
 name_pl paralyze
-face spell_sorcery.111
+face spell_paralyze.111
 level 2
 sp 5
 casting_time 10

@@ -2,7 +2,7 @@ Object spell_poison_fog
 anim_suffix spellcasting
 name poison fog
 name_pl poison fog
-face spell_praying.111
+face spell_poison_fog.111
 type 101
 subtype 35
 level 10

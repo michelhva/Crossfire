@@ -2,7 +2,7 @@ Object spell_detect_evil
 anim_suffix spellcasting
 name detect evil
 name_pl detect evil
-face spell_praying.111
+face spell_detect_evil.111
 level 6
 grace 3
 casting_time 15

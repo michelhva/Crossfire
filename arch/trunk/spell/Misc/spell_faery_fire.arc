@@ -2,7 +2,7 @@ Object spell_faery_fire
 anim_suffix spellcasting
 name faery fire
 name_pl faery fire
-face spell_pyromancy.111
+face spell_faery_fire.111
 type 101
 subtype 44
 level 8

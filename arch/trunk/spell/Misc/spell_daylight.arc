@@ -2,7 +2,7 @@ Object spell_daylight
 anim_suffix spellcasting
 name daylight
 name_pl daylight
-face spell_praying.111
+face spell_daylight.111
 type 101
 subtype 43
 level 36

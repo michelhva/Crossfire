@@ -2,7 +2,7 @@ Object spell_fear
 anim_suffix spellcasting
 name fear
 name_pl fear
-face spell_sorcery.111
+face spell_fear.111
 level 4
 sp 6
 casting_time 5

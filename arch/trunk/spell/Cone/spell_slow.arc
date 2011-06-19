@@ -2,7 +2,7 @@ Object spell_slow
 anim_suffix spellcasting
 name slow
 name_pl slow
-face spell_sorcery.111
+face spell_slow.111
 level 1
 sp 5
 casting_time 10

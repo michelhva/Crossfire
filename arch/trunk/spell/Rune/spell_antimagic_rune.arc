@@ -2,7 +2,7 @@ Object spell_antimagic_rune
 anim_suffix spellcasting
 name antimagic rune
 name_pl antimagic rune
-face spell_sorcery.111
+face spell_antimagic_rune.111
 type 101
 subtype 2
 no_drop 1

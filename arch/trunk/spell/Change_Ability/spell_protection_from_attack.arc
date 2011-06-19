@@ -2,7 +2,7 @@ Object spell_protection_from_attack
 anim_suffix spellcasting
 name protection from attack
 name_pl protection from attack
-face spell_praying.111
+face spell_protection_from_attack.111
 level 16
 grace 50
 casting_time 15

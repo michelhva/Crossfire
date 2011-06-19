@@ -2,7 +2,7 @@ Object spell_turn_undead
 anim_suffix spellcasting
 name turn undead
 name_pl turn undead
-face spell_praying.111
+face spell_turn_undead.111
 level 1
 grace 2
 casting_time 5

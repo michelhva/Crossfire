@@ -2,7 +2,7 @@ Object spell_rune_of_fire
 anim_suffix spellcasting
 name rune of fire
 name_pl rune of fire
-face spell_pyromancy.111
+face spell_rune_of_fire.111
 type 101
 subtype 2
 no_drop 1

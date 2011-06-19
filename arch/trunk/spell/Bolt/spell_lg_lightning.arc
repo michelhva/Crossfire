@@ -2,7 +2,7 @@ Object spell_large_lightning
 anim_suffix spellcasting
 name large lightning
 name_pl large lightnings
-face spell_pyromancy.111
+face spell_large_lightning.111
 level 8
 sp 13
 casting_time 7

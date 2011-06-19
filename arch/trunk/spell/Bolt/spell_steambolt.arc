@@ -2,7 +2,7 @@ Object spell_steambolt
 anim_suffix spellcasting
 name steambolt
 name_pl steambolts
-face spell_sorcery.111
+face spell_steambolt.111
 level 10
 sp 10
 maxsp 40

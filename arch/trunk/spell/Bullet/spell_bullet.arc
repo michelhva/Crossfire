@@ -2,7 +2,7 @@ Object spell_magic_bullet
 anim_suffix spellcasting
 name magic bullet
 name_pl magic bullet
-face spell_sorcery.111
+face spell_magic_bullet.111
 level 1
 sp 1
 casting_time 2

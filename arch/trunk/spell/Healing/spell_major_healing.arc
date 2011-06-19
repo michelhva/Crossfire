@@ -2,7 +2,7 @@ Object spell_major_healing
 anim_suffix spellcasting
 name major healing
 name_pl major healing
-face spell_praying.111
+face spell_major_healing.111
 level 16
 grace 10
 casting_time 9

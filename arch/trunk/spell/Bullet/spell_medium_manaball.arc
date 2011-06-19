@@ -2,7 +2,7 @@ Object spell_medium_manaball
 anim_suffix spellcasting
 name medium manaball
 name_pl medium manaball
-face spell_evocation.111
+face spell_medium_manaball.111
 level 8
 sp 6
 casting_time 18

@@ -2,7 +2,7 @@ Object spell_cause_red_death
 anim_suffix spellcasting
 name cause red death
 name_pl cause red death
-face spell_praying.111
+face spell_cause_red_death.111
 type 101
 subtype 45
 level 24

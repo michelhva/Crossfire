@@ -2,7 +2,7 @@ Object spell_comet
 anim_suffix spellcasting
 name comet
 name_pl comet
-face spell_pyromancy.111
+face spell_comet.111
 level 16
 value 80
 sp 15

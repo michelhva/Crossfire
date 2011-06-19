@@ -2,7 +2,7 @@ Object spell_build_fireball_wall
 anim_suffix spellcasting
 name build fireball wall
 name_pl build fireball wall
-face spell_pyromancy.111
+face spell_build_fireball_wall.111
 type 101
 subtype 15
 level 32

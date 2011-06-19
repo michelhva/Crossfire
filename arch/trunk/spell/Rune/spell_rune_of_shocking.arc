@@ -2,7 +2,7 @@ Object spell_rune_of_shocking
 anim_suffix spellcasting
 name rune of shocking
 name_pl rune of shocking
-face spell_pyromancy.111
+face spell_rune_of_shocking.111
 type 101
 subtype 2
 no_drop 1

@@ -2,7 +2,7 @@ Object spell_wall_of_thorns
 anim_suffix spellcasting
 name wall of thorns
 name_pl wall of thorns
-face spell_praying.111
+face spell_wall_of_thorns.111
 level 12
 grace 20
 casting_time 5

@@ -2,7 +2,7 @@ Object spell_spiderweb
 anim_suffix spellcasting
 name spiderweb
 name_pl spiderweb
-face spell_praying.111
+face spell_spiderweb.111
 level 8
 grace 10
 casting_time 10

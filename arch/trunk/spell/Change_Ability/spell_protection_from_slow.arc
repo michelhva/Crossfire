@@ -2,7 +2,7 @@ Object spell_protection_from_slow
 anim_suffix spellcasting
 name protection from slow
 name_pl protection from slow
-face spell_praying.111
+face spell_protection_from_slow.111
 level 4
 grace 20
 casting_time 10

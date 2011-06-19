@@ -2,7 +2,7 @@ Object spell_counterspell
 anim_suffix spellcasting
 name counterspell
 name_pl counterspell
-face spell_summoner.111
+face spell_counterspell.111
 level 6
 sp 10
 casting_time 2

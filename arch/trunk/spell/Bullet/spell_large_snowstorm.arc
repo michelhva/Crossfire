@@ -2,7 +2,7 @@ Object spell_large_snowstorm
 anim_suffix spellcasting
 name large snowstorm
 name_pl large snowstorm
-face spell_evocation.111
+face spell_large_snowstorm.111
 level 10
 sp 16
 casting_time 6

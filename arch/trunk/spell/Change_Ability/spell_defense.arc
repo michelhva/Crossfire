@@ -2,7 +2,7 @@ Object spell_defense
 anim_suffix spellcasting
 name defense
 name_pl defense
-face spell_praying.111
+face spell_defense.111
 level 40
 grace 75
 casting_time 30

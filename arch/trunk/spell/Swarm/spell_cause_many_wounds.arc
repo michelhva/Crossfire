@@ -2,7 +2,7 @@ Object spell_cause_many_wounds
 anim_suffix spellcasting
 name cause many wounds
 name_pl cause many wounds
-face spell_praying.111
+face spell_cause_many_wounds.111
 skill praying
 type 101
 subtype 36

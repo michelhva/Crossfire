@@ -2,7 +2,7 @@ Object spell_cause_rabies
 anim_suffix spellcasting
 name cause rabies
 name_pl cause rabies
-face spell_praying.111
+face spell_cause_rabies.111
 type 101
 subtype 45
 level 24

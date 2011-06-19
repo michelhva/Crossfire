@@ -2,7 +2,7 @@ Object spell_raise_dead
 anim_suffix spellcasting
 name raise dead
 name_pl raise dead
-face spell_praying.111
+face spell_raise_dead.111
 type 101
 subtype 1
 level 10

@@ -2,7 +2,7 @@ Object spell_detect_curse
 anim_suffix spellcasting
 name detect curse
 name_pl detect curse
-face spell_praying.111
+face spell_detect_curse.111
 level 10
 grace 10
 casting_time 20

@@ -2,7 +2,7 @@ Object spell_curse
 anim_suffix spellcasting
 name curse
 name_pl curse
-face spell_praying.111
+face spell_curse.111
 level 4
 grace 8
 casting_time 5

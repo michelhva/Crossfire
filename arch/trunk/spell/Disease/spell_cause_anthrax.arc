@@ -2,7 +2,7 @@ Object spell_cause_anthrax
 anim_suffix spellcasting
 name cause anthrax
 name_pl cause anthrax
-face spell_praying.111
+face spell_cause_anthrax.111
 type 101
 subtype 45
 level 24

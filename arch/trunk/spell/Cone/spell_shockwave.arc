@@ -2,7 +2,7 @@ Object spell_shockwave
 anim_suffix spellcasting
 name shockwave
 name_pl shockwave
-face spell_evocation.111
+face spell_shockwave.111
 level 28
 sp 26
 casting_time 9

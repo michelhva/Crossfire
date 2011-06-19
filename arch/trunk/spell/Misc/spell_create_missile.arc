@@ -2,7 +2,7 @@ Object spell_create_missile
 anim_suffix spellcasting
 name create missile
 name_pl create missile
-face spell_summoner.111
+face spell_create_missile.111
 type 101
 subtype 39
 level 1

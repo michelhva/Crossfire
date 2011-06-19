@@ -2,7 +2,7 @@ Object spell_restoration
 anim_suffix spellcasting
 name restoration
 name_pl restoration
-face spell_praying.111
+face spell_restoration.111
 level 32
 grace 80
 casting_time 15

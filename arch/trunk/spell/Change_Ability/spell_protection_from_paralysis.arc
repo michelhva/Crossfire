@@ -2,7 +2,7 @@ Object spell_protection_from_paralysis
 anim_suffix spellcasting
 name protection from paralysis
 name_pl protection from paralysis
-face spell_praying.111
+face spell_protection_from_paralysis.111
 level 6
 grace 20
 casting_time 10

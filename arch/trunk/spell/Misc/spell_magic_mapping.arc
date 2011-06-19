@@ -2,7 +2,7 @@ Object spell_magic_mapping
 anim_suffix spellcasting
 name magic mapping
 name_pl magic mapping
-face spell_sorcery.111
+face spell_magic_mapping.111
 level 5
 sp 15
 casting_time 1

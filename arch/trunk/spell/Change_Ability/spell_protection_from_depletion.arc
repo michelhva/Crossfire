@@ -2,7 +2,7 @@ Object spell_protection_from_depletion
 anim_suffix spellcasting
 name protection from depletion
 name_pl protection from depletion
-face spell_praying.111
+face spell_protection_from_depletion.111
 level 6
 grace 20
 casting_time 10

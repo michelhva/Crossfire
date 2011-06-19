@@ -2,7 +2,7 @@ Object spell_sunspear
 anim_suffix spellcasting
 name sunspear
 name_pl sunspears
-face spell_praying.111
+face spell_sunspear.111
 level 12
 grace 8
 dam 8

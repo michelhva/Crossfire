@@ -2,7 +2,7 @@ Object spell_cure_disease
 anim_suffix spellcasting
 name cure disease
 name_pl cure disease
-face spell_praying.111
+face spell_cure_disease.111
 level 10
 grace 30
 casting_time 10

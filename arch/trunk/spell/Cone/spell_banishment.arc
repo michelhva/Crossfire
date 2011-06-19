@@ -2,7 +2,7 @@ Object spell_banishment
 anim_suffix spellcasting
 name banishment
 name_pl banishment
-face spell_praying.111
+face spell_banishment.111
 level 10
 grace 10
 casting_time 10

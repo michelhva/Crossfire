@@ -2,7 +2,7 @@ Object spell_resurrection
 anim_suffix spellcasting
 name resurrection
 name_pl resurrection
-face spell_praying.111
+face spell_resurrection.111
 type 101
 subtype 1
 level 20

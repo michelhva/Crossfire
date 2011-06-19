@@ -2,7 +2,7 @@ Object spell_summon_cult_monsters
 anim_suffix spellcasting
 name summon cult monsters
 name_pl summon cult monsters
-face spell_praying.111
+face spell_summon_cult_monsters.111
 type 101
 subtype 27
 level 6

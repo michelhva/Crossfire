@@ -1,4 +1,5 @@
 Object spell_aggravation
+face spell_aggravation.111
 anim_suffix spellcasting
 name aggravation
 name_pl aggravation

@@ -4,7 +4,7 @@ name flaming aura
 name_pl flaming aura
 type 101
 subtype 46
-face spell_praying.111
+face spell_flaming_aura.111
 level 1
 value 10
 grace 5

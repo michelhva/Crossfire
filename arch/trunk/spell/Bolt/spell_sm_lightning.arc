@@ -2,7 +2,7 @@ Object spell_sm_lightning
 anim_suffix spellcasting
 name small lightning
 name_pl small lightnings
-face spell_pyromancy.111
+face spell_sm_lightning.111
 level 1
 sp 6
 casting_time 5

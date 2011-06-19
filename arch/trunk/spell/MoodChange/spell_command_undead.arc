@@ -2,7 +2,7 @@ Object spell_command_undead
 anim_suffix spellcasting
 name command undead
 name_pl command undead
-face spell_praying.111
+face spell_command_undead.111
 level 10
 grace 12
 casting_time 10

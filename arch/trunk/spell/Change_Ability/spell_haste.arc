@@ -2,6 +2,7 @@ Object spell_haste
 anim_suffix spellcasting
 name haste
 name_pl haste
+face spell_haste.111
 level 12
 sp 50
 casting_time 10
