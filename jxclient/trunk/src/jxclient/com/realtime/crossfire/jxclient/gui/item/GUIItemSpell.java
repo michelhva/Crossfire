@@ -48,7 +48,7 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIItemItem} that represents an entry in a {@link GUISpellList}.
  * @author Andreas Kirschbaum
  */
-public class GUIItemSpellList extends GUIItemItem {
+public class GUIItemSpell extends GUIItemItem {
 
     /**
      * The serial version UID.
@@ -123,14 +123,14 @@ public class GUIItemSpellList extends GUIItemItem {
 
         @Override
         public void spellAdded(final int index) {
-            if (GUIItemSpellList.this.index >= index) {
+            if (GUIItemSpell.this.index >= index) {
                 setSpell();
             }
         }
 
         @Override
         public void spellRemoved(final int index) {
-            if (GUIItemSpellList.this.index >= index) {
+            if (GUIItemSpell.this.index >= index) {
                 setSpell();
             }
         }
@@ -180,7 +180,7 @@ public class GUIItemSpellList extends GUIItemItem {
      * spell is selected
      * @param spellsView the spells view to use
      */
-    public GUIItemSpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
+    public GUIItemSpell(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
         super(tooltipManager, elementListener, name, connection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.facesManager = facesManager;
