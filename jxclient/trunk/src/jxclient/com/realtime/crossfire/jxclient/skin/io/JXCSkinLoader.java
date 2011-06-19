@@ -58,7 +58,7 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemSpellList;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemSpell;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpellListFactory;
 import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
@@ -1335,7 +1335,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemSpellList(tooltipManager, elementListener, commandQueue, server, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
+            element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, server, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
         } else {
             throw new IOException("undefined item type: "+type);
         }

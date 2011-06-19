@@ -32,7 +32,7 @@ import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A factory for creating {@link GUIItemSpellList} instances.
+ * A factory for creating {@link GUIItemSpell} instances.
  * @author Nicolas Weeger
  */
 public class GUIItemSpellListFactory implements GUIItemItemFactory {
@@ -131,7 +131,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     @NotNull
     @Override
     public GUIElement newItem(final int index) {
-        return new GUIItemSpellList(tooltipManager, elementListener, commandQueue, crossfireServerConnection, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellsView);
+        return new GUIItemSpell(tooltipManager, elementListener, commandQueue, crossfireServerConnection, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellsView);
     }
 
     /**
@@ -140,7 +140,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIItemItem newTemplateItem(final int cellHeight) {
-        final GUIItemItem result = new GUIItemSpellList(tooltipManager, elementListener, commandQueue, crossfireServerConnection, name+"_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, spellsView);
+        final GUIItemItem result = new GUIItemSpell(tooltipManager, elementListener, commandQueue, crossfireServerConnection, name+"_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, spellsView);
         //noinspection SuspiciousNameCombination
         result.setSize(cellHeight, cellHeight);
         return result;
