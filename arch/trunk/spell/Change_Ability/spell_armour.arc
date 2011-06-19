@@ -2,7 +2,7 @@ Object spell_armour
 anim_suffix spellcasting
 name armour
 name_pl armour
-face spell_evocation.111
+face spell_armour.111
 level 1
 sp 8
 casting_time 10

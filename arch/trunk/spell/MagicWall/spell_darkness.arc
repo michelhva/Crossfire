@@ -2,7 +2,7 @@ Object spell_darkness
 anim_suffix spellcasting
 name darkness
 name_pl darkness
-face spell_praying.111
+face spell_darkness.111
 level 10
 grace 15
 casting_time 5

@@ -2,7 +2,7 @@ Object spell_heal
 anim_suffix spellcasting
 name heal
 name_pl heal
-face spell_praying.111
+face spell_heal.111
 level 30
 grace 50
 casting_time 12

@@ -2,7 +2,7 @@ Object spell_build_bullet_wall
 anim_suffix spellcasting
 name build bullet wall
 name_pl build bullet wall
-face spell_evocation.111
+face spell_build_bullet_wall.111
 type 101
 subtype 15
 level 24

@@ -4,7 +4,7 @@ Object spell_summon_devil
 anim_suffix spellcasting
 name summon devil
 name_pl summon devil
-face spell_summoner.111
+face spell_summon_devil.111
 level 6
 sp 20
 casting_time 13

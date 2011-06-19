@@ -2,7 +2,7 @@ Object spell_finger_of_death
 anim_suffix spellcasting
 name finger of death
 name_pl finger of death
-face spell_praying.111
+face spell_finger_of_death.111
 type 101
 subtype 10
 level 28

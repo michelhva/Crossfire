@@ -2,7 +2,7 @@ Object spell_small_snowstorm
 anim_suffix spellcasting
 name small snowstorm
 name_pl small snowstorm
-face spell_evocation.111
+face spell_small_snowstorm.111
 level 1
 sp 6
 casting_time 5

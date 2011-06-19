@@ -2,7 +2,7 @@ Object spell_disarm
 anim_suffix spellcasting
 name disarm
 name_pl disarm
-face spell_sorcery.111
+face spell_disarm.111
 type 101
 subtype 38
 level 4

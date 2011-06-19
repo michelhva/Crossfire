@@ -2,7 +2,7 @@ Object spell_remove_curse
 anim_suffix spellcasting
 name remove curse
 name_pl remove curse
-face spell_praying.111
+face spell_remove_curse.111
 level 16
 grace 80
 casting_time 20

@@ -2,7 +2,7 @@ Object spell_create_food
 anim_suffix spellcasting
 name create food
 name_pl create food
-face spell_summoner.111
+face spell_create_food.111
 level 12
 sp 10
 casting_time 20

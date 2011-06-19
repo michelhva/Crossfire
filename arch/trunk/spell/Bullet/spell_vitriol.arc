@@ -2,7 +2,7 @@ Object spell_vitriol
 anim_suffix spellcasting
 name vitriol
 name_pl vitriol
-face spell_praying.111
+face spell_vitriol.111
 level 10
 grace 15
 casting_time 10

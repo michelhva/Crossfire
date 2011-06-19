@@ -2,7 +2,7 @@ Object spell_rune_of_transference
 anim_suffix spellcasting
 name rune of transference
 name_pl rune of transference
-face spell_sorcery.111
+face spell_rune_of_transference.111
 type 101
 subtype 2
 other_arch rune_transferrence

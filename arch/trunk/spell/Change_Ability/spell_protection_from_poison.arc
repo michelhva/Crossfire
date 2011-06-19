@@ -2,7 +2,7 @@ Object spell_protection_from_poison
 anim_suffix spellcasting
 name protection from poison
 name_pl protection from poison
-face spell_praying.111
+face spell_protection_from_poison.111
 level 2
 grace 20
 casting_time 10

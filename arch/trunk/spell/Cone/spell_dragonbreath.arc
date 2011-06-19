@@ -2,7 +2,7 @@ Object spell_dragonbreath
 anim_suffix spellcasting
 name dragonbreath
 name_pl dragonbreath
-face spell_pyromancy.111
+face spell_dragonbreath.111
 level 24
 sp 13
 casting_time 5

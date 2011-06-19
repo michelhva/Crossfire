@@ -2,7 +2,7 @@ Object spell_constitution
 anim_suffix spellcasting
 name constitution
 name_pl constitution
-face spell_sorcery.111
+face spell_constitution.111
 level 4
 sp 15
 casting_time 20

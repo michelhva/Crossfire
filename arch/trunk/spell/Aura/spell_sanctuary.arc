@@ -4,7 +4,7 @@ name sanctuary
 name_pl sanctuary
 type 101
 subtype 46
-face spell_praying.111
+face spell_sanctuary.111
 level 14
 value 70
 grace 30

@@ -2,7 +2,7 @@ Object spell_forked_lightning
 anim_suffix spellcasting
 name forked lightning
 name_pl forked lightnings
-face spell_praying.111
+face spell_forked_lightning.111
 level 8
 grace 15
 maxgrace 24

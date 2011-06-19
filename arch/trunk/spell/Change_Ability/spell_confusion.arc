@@ -2,7 +2,7 @@ Object spell_confusion
 anim_suffix spellcasting
 name confusion
 name_pl confusion
-face spell_sorcery.111
+face spell_confusion.111
 level 2
 sp 10
 casting_time 10

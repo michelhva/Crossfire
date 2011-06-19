@@ -2,7 +2,7 @@ Object spell_cause_typhoid
 anim_suffix spellcasting
 name cause typhoid
 name_pl cause typhoid
-face spell_praying.111
+face spell_cause_typhoid.111
 type 101
 subtype 45
 level 16

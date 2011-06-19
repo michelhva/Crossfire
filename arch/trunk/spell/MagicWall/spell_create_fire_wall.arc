@@ -2,7 +2,7 @@ Object spell_create_fire_wall
 anim_suffix spellcasting
 name create fire wall
 name_pl create fire wall
-face spell_pyromancy.111
+face spell_create_fire_wall.111
 level 12
 sp 5
 casting_time 10

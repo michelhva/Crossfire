@@ -2,7 +2,7 @@ Object spell_magic_rune
 anim_suffix spellcasting
 name magic rune
 name_pl magic rune
-face generic_rune.111
+face spell_magic_rune.111
 type 101
 subtype 2
 no_drop 1

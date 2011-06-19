@@ -2,7 +2,7 @@ Object spell_reincarnation
 anim_suffix spellcasting
 name reincarnation
 name_pl reincarnation
-face spell_praying.111
+face spell_reincarnation.111
 type 101
 subtype 1
 level 25

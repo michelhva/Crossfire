@@ -2,7 +2,7 @@ Object spell_medium_healing
 anim_suffix spellcasting
 name medium healing
 name_pl medium healing
-face spell_praying.111
+face spell_medium_healing.111
 level 8
 grace 7
 casting_time 6

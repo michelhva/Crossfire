@@ -2,7 +2,7 @@ Object spell_town_portal
 anim_suffix spellcasting
 name town portal
 name_pl town portal
-face spell_sorcery.111
+face spell_town_portal.111
 type 101
 subtype 47
 level 15

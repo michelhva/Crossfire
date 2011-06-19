@@ -2,7 +2,7 @@ Object spell_manabolt
 anim_suffix spellcasting
 name mana bolt
 name_pl mana bolts
-face spell_evocation.111
+face spell_manabolt.111
 level 6
 sp 18
 maxsp 30

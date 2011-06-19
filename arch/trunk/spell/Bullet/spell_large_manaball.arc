@@ -2,7 +2,7 @@ Object spell_large_manaball
 anim_suffix spellcasting
 name large manaball
 name_pl large manaball
-face spell_evocation.111
+face spell_large_manaball.111
 level 12
 sp 32
 casting_time 9

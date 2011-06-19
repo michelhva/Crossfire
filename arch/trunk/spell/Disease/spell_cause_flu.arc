@@ -2,7 +2,7 @@ Object spell_cause_flu
 anim_suffix spellcasting
 name cause flu
 name_pl cause flu
-face spell_praying.111
+face spell_cause_flu.111
 type 101
 subtype 45
 level 4

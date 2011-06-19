@@ -2,7 +2,7 @@ Object spell_transference
 anim_suffix spellcasting
 name transference
 name_pl transference
-face spell_sorcery.111
+face spell_transference.111
 type 101
 subtype 37
 level 5

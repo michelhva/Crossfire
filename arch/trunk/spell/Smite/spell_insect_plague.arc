@@ -2,7 +2,7 @@ Object spell_insect_plague
 anim_suffix spellcasting
 name insect plague
 name_pl insect plague
-face spell_praying.111
+face spell_insect_plague.111
 type 101
 subtype 10
 level 18

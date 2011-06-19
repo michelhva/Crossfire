@@ -2,7 +2,7 @@ Object spell_alchemy
 anim_suffix spellcasting
 name alchemy
 name_pl alchemy
-face spell_summoner.111
+face spell_alchemy.111
 level 6
 sp 5
 casting_time 25

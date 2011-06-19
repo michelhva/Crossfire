@@ -2,7 +2,7 @@ Object spell_windstorm
 anim_suffix spellcasting
 name windstorm
 name_pl windstorm
-face spell_praying.111
+face spell_windstorm.111
 level 6
 grace 3
 casting_time 10

@@ -2,7 +2,7 @@ Object spell_rage
 anim_suffix spellcasting
 name rage
 name_pl rage
-face spell_praying.111
+face spell_rage.111
 level 1
 grace 5
 casting_time 10

@@ -2,7 +2,7 @@ Object spell_summon_fog
 anim_suffix spellcasting
 name summon fog
 name_pl summon fog
-face spell_summoner.111
+face spell_summon_fog.111
 type 101
 subtype 27
 level 4

@@ -2,7 +2,7 @@ Object spell_dancing_sword
 anim_suffix spellcasting
 name dancing sword
 name_pl dancing sword
-face spell_summoner.111
+face spell_dancing_sword.111
 type 101
 subtype 12
 level 12

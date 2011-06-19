@@ -2,7 +2,7 @@ Object spell_wonder
 anim_suffix spellcasting
 name wonder
 name_pl wonder
-face spell_sorcery.111
+face spell_wonder.111
 level 3
 sp 10
 casting_time 0

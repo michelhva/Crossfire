@@ -3,6 +3,7 @@ Object spell_regenerate_spellpoints
 anim_suffix spellcasting
 name regenerate spellpoints
 name_pl regenerate spellpoints
+face spell_regenerate_spellpoints.111
 level 99
 sp 0
 casting_time 0

@@ -2,7 +2,7 @@ Object spell_light
 anim_suffix spellcasting
 name light
 name_pl light
-face spell_praying.111
+face spell_light.111
 type 101
 subtype 42
 level 1

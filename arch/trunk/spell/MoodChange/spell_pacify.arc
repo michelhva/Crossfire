@@ -2,7 +2,7 @@ Object spell_pacify
 anim_suffix spellcasting
 name pacify
 name_pl pacify
-face spell_praying.111
+face spell_pacify.111
 level 8
 grace 10
 casting_time 2

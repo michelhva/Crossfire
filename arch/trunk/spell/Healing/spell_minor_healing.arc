@@ -2,7 +2,7 @@ Object spell_minor_healing
 anim_suffix spellcasting
 name minor healing
 name_pl minor healing
-face spell_praying.111
+face spell_minor_healing.111
 level 1
 grace 4
 casting_time 3

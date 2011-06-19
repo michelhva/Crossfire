@@ -2,7 +2,7 @@ Object spell_marking_rune
 anim_suffix spellcasting
 name marking rune
 name_pl marking rune
-face spell_sorcery.111
+face spell_marking_rune.111
 type 101
 subtype 3
 level 1

@@ -2,7 +2,7 @@ Object spell_summon_avatar
 anim_suffix spellcasting
 name summon avatar
 name_pl summon avatar
-face spell_praying.111
+face spell_summon_avatar.111
 level 20
 grace 60
 casting_time 15

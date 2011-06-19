@@ -2,7 +2,7 @@ Object spell_rune_of_death
 anim_suffix spellcasting
 name rune of death
 name_pl rune of death
-face spell_sorcery.111
+face spell_rune_of_death.111
 type 101
 subtype 2
 no_drop 1

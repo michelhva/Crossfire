@@ -2,7 +2,7 @@ Object spell_build_director
 anim_suffix spellcasting
 name build director
 name_pl build director
-face spell_summoner.111
+face spell_build_director.111
 type 101
 subtype 15
 level 20

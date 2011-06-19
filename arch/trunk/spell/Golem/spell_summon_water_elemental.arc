@@ -2,7 +2,7 @@ Object spell_summon_water_elemental
 anim_suffix spellcasting
 name summon water elemental
 name_pl summon water elemental
-face spell_summoner.111
+face spell_summon_water_elemental.111
 level 10
 sp 15
 casting_time 11

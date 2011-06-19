@@ -2,7 +2,7 @@ Object spell_divine_shock
 anim_suffix spellcasting
 name divine shock
 name_pl divine shock
-face spell_praying.111
+face spell_divine_shock.111
 type 101
 subtype 35
 level 10

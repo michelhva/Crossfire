@@ -2,7 +2,7 @@ Object spell_magic_drain
 anim_suffix spellcasting
 name magic drain
 name_pl magic drain
-face spell_sorcery.111
+face spell_magic_drain.111
 type 101
 subtype 37
 level 12

@@ -1,4 +1,5 @@
 Object spell_polymorph
+face spell_polymorph.111
 anim_suffix spellcasting
 name polymorph
 name_pl polymorph

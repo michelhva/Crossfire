@@ -2,7 +2,7 @@ Object spell_cure_poison
 anim_suffix spellcasting
 name cure poison
 name_pl cure poison
-face spell_praying.111
+face spell_cure_poison.111
 level 8
 grace 7
 casting_time 10

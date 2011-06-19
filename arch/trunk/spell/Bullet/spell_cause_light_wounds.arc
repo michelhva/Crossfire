@@ -2,7 +2,7 @@ Object spell_cause_light_wounds
 anim_suffix spellcasting
 name cause light wounds
 name_pl cause light wounds
-face spell_praying.111
+face spell_cause_light_wounds.111
 level 1
 grace 4
 casting_time 5

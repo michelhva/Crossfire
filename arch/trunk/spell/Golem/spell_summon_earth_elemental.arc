@@ -2,7 +2,7 @@ Object spell_summon_earth_elemental
 anim_suffix spellcasting
 name summon earth elemental
 name_pl summon earth elemental
-face spell_summoner.111
+face spell_summon_earth_elemental.111
 level 8
 sp 15
 casting_time 11

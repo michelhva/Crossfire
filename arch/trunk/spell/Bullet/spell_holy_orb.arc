@@ -2,7 +2,7 @@ Object spell_holy_orb
 anim_suffix spellcasting
 name holy orb
 name_pl holy orb
-face spell_praying.111
+face spell_holy_orb.111
 level 14
 grace 10
 casting_time 5

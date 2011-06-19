@@ -2,7 +2,7 @@ Object spell_summon_fire_elemental
 anim_suffix spellcasting
 name summon fire elemental
 name_pl summon fire elemental
-face spell_summoner.111
+face spell_summon_fire_elemental.111
 level 14
 sp 25
 casting_time 12

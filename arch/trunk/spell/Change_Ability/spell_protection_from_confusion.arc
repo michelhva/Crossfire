@@ -2,7 +2,7 @@ Object spell_protection_from_confusion
 anim_suffix spellcasting
 name protection from confusion
 name_pl protection from confusion
-face spell_praying.111
+face spell_protection_from_confusion.111
 level 4
 grace 20
 casting_time 10

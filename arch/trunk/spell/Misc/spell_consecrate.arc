@@ -2,7 +2,7 @@ Object spell_consecrate
 anim_suffix spellcasting
 name consecrate
 name_pl consecrate
-face spell_praying.111
+face spell_consecrate.111
 type 101
 subtype 40
 level 8

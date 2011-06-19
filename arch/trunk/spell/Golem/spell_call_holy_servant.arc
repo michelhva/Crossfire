@@ -2,7 +2,7 @@ Object spell_call_holy_servant
 anim_suffix spellcasting
 name call holy servant
 name_pl call holy servant
-face spell_praying.111
+face spell_call_holy_servant.111
 level 12
 grace 30
 casting_time 5

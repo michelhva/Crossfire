@@ -2,7 +2,7 @@ Object spell_summon_pet_monster
 anim_suffix spellcasting
 name summon pet monster
 name_pl summon pet monster
-face spell_summoner.111
+face spell_summon_pet_monster.111
 type 101
 subtype 27
 level 4

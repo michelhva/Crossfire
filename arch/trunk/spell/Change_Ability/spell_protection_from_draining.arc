@@ -2,7 +2,7 @@ Object spell_protection_from_draining
 anim_suffix spellcasting
 name protection from draining
 name_pl protection from draining
-face spell_praying.111
+face spell_protection_from_draining.111
 level 8
 grace 25
 casting_time 10

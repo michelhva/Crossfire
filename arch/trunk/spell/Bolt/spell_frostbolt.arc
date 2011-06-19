@@ -2,7 +2,7 @@ Object spell_frostbolt
 anim_suffix spellcasting
 name frostbolt
 name_pl frostbolts
-face spell_evocation.111
+face spell_frostbolt.111
 level 6
 sp 12
 casting_time 10

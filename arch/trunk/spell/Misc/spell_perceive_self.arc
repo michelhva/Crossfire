@@ -27,7 +27,7 @@ Object spell_perceive_self
 anim_suffix spellcasting
 name perceive self
 name_pl perceive self
-face spell_praying.111
+face spell_perceive_self.111
 level 4
 grace 5
 casting_time 1

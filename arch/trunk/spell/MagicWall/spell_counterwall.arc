@@ -2,7 +2,7 @@ Object spell_counterwall
 anim_suffix spellcasting
 name counterwall
 name_pl counterwall
-face spell_summoner.111
+face spell_counterwall.111
 level 16
 sp 8
 attacktype 524288

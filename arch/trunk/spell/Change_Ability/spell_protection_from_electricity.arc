@@ -2,7 +2,7 @@ Object spell_protection_from_electricity
 anim_suffix spellcasting
 name protection from electricity
 name_pl protection from electricity
-face spell_praying.111
+face spell_protection_from_electricity.111
 level 3
 grace 15
 casting_time 10

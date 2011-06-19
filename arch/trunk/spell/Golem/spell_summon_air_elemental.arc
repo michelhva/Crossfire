@@ -2,7 +2,7 @@ Object spell_summon_air_elemental
 anim_suffix spellcasting
 name summon air elemental
 name_pl summon air elemental
-face spell_summoner.111
+face spell_summon_air_elemental.111
 level 12
 sp 20
 casting_time 12

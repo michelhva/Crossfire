@@ -2,7 +2,7 @@ Object spell_face_of_death
 anim_suffix spellcasting
 name face of death
 name_pl face of death
-face spell_praying.111
+face spell_face_of_death.111
 level 34
 grace 80
 casting_time 10
