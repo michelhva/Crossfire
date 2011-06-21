@@ -125,7 +125,6 @@ elif Params=="PuddleDeath":
 	
 	Fogs=int(whoami.Weight/1000)
 	Fogs=max(Fogs,1)
-	print Fogs
 	a=whoami.Inventory
 	while a !=None:
 		a.Remove()
