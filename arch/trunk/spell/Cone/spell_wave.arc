@@ -2,7 +2,7 @@ Object spell_wave
 anim_suffix spellcasting
 name wave
 name_pl wave
-face spell_praying.111
+face spell_wave.111
 level 6
 grace 8
 casting_time 10
