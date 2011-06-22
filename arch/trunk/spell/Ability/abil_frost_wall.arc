@@ -2,7 +2,7 @@ Object abil_create_frost_wall
 anim_suffix spellcasting
 name create frost wall ability
 name_pl create frost wall ability
-face spell_frostwall.111
+face spell_create_frost_wall.111
 level 8
 sp 8
 casting_time 3
