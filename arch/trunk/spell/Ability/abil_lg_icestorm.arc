@@ -2,6 +2,7 @@ Object abil_large_icestorm
 anim_suffix spellcasting
 name large icestorm ability
 name_pl large icestorm ability
+face spell_large_icestorm.111
 level 12
 sp 13
 casting_time 4

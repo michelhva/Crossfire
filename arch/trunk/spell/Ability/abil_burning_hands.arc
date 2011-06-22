@@ -2,6 +2,7 @@ Object abil_burning_hands
 anim_suffix spellcasting
 name burning hands ability
 name_pl burning hands ability
+face spell_burning_hand.111
 level 1
 sp 5
 casting_time 5
