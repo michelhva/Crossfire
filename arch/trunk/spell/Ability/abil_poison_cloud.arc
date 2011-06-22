@@ -2,6 +2,7 @@ Object abil_poison_cloud
 anim_suffix spellcasting
 name poison cloud ability
 name_pl poison cloud ability
+face spell_poison_cloud.111
 level 2
 sp 5
 casting_time 10

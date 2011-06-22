@@ -2,6 +2,7 @@ Object abil_icestorm
 anim_suffix spellcasting
 name icestorm ability
 name_pl icestorm ability
+face spell_icestorm.111
 level 1
 sp 5
 casting_time 3
