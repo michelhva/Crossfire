@@ -2,6 +2,7 @@ Object spell_spark_shower
 anim_suffix spellcasting
 name spark shower
 name_pl spark shower
+face spell_spark_shower.111
 level 1
 sp 5
 casting_time 6
