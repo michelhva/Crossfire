@@ -8,5 +8,6 @@ subtype 30
 body_skill -1
 exp 0
 level 100
+anim_suffix praying
 end
 
