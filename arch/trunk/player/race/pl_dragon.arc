@@ -97,7 +97,7 @@ type 10
 exp 3
 neutral 1
 no_drop 1
-face pl_dragon.151
+face pl_dragon_blue.151
 animation pl_dragon_blue
 is_animated 1
 anim_speed -1
