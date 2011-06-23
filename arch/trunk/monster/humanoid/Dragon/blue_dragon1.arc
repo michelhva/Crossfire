@@ -2,7 +2,7 @@ Object blue_dragon1
 name blue dragon
 race dragon
 randomitems dragon_player_items
-face pl_dragon.151
+face pl_dragon_blue.151
 animation blue_dragon1
 monster 1
 move_type walk
