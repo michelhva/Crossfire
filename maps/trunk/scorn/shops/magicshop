@@ -11,7 +11,7 @@ enter_x 38
 enter_y 22
 msg
 Created:  1993-10-15
-Modified: 2011-04-07 Rick Tanner
+Modified: 2011-06-25 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -3043,6 +3043,10 @@ x 20
 y 17
 end
 arch tile_shop
+x 20
+y 18
+end
+arch menu
 x 20
 y 18
 end
