@@ -1,5 +1,6 @@
 Object skill_wraith_feed
 name wraith feed
+anim_suffix feeding
 skill wraith feed
 type 43
 invisible 1
