@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.spells;
 
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireAccountListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSpellListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
@@ -139,12 +140,45 @@ public class SpellsManager implements Iterable<Spell> {
     };
 
     /**
+     * The {@link CrossfireAccountListener} for detecting character change
+     * and clear spell information.
+     */
+    @NotNull
+    private CrossfireAccountListener crossfireAccountListener = new CrossfireAccountListener() {
+
+        public void manageAccount() {
+            // ignore
+        }
+
+        public void startAccountList(String accountName) {
+            // ignore
+        }
+
+        public void addAccount(String name, String characterClass, String race, String face, String party, String map, int level, int faceNumber) {
+            // ignore
+        }
+
+        public void endAccountList() {
+            // ignore
+        }
+
+        public void startPlaying() {
+            // ignore
+        }
+
+        public void selectCharacter(String accountName, String characterName) {
+            spells.clear();
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection to listen on
      * @param guiStateManager the gui state manager to watch
      */
     public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager) {
         crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
+        crossfireServerConnection.addCrossfireAccountListener(crossfireAccountListener);
         guiStateManager.addGuiStateListener(guiStateListener);
     }
 
