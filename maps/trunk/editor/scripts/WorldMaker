@@ -11,9 +11,6 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
 
-/*
- * Functions declaration
- */
 File getSimpleFilename(File mapFile) {
     String mapFilename = mapFile.getPath();
     int i = mapFilename.lastIndexOf(File.separator);
@@ -65,9 +62,6 @@ boolean runCommand(String cmd) {
     return p.exitValue() == 0;
 }
 
-/*
- * Running code
- */
 void checkDaList() {
     DestWidth = TileWidth.intValue() * NumX.intValue();
     DestHeight = TileHeight.intValue() * NumY.intValue();
@@ -89,26 +83,26 @@ void checkDaList() {
 
     HashSet mapList = new HashSet();
     boolean firstRun = false;
-    long headerSize = ("P6\n"+DestWidth+" "+DestHeight+"\n255\n").getBytes().length;
+    long headerSize = ("P6\n" + DestWidth + " "+DestHeight + "\n255\n").getBytes().length;
     if (new File(Location + PictureDirectory + WorldPicture + ".ppm").exists()) {
         runCommand("cp " + Location + PictureDirectory + WorldPicture + ".ppm /tmp/tmp.ppm");
     } else {
         File f = new File("/tmp/tmp.ppm");
-        String header = "P6\n"+DestWidth+" "+DestHeight+"\n255\n" ;
+        String header = "P6\n" + DestWidth + " " + DestHeight + "\n255\n";
         print("generating empty picture");
         FileOutputStream fos = new FileOutputStream(f, false);
         fos.write(header.getBytes());
-        byte[] buf = new byte[(int)DestWidth.intValue()*3];
+        byte[] buf = new byte[(int) DestWidth.intValue() * 3];
         for (int i = 0; i < DestHeight.intValue(); i++) {
             fos.write(buf);
         }
         fos.close();
         firstRun = true;
     }
-    long toSkip = ("P6\n"+TileWidth+" "+TileHeight+"\n255\n").getBytes().length;
-    RandomAccessFile raf = new RandomAccessFile(new File("/tmp/tmp.ppm"),"rw");
+    long toSkip = ("P6\n" + TileWidth + " " + TileHeight+"\n255\n").getBytes().length;
+    RandomAccessFile raf = new RandomAccessFile(new File("/tmp/tmp.ppm"), "rw");
     FileChannel fc  = raf.getChannel();
-    byte[] buf = new byte[3*TileWidth.intValue()*TileHeight.intValue()];
+    byte[] buf = new byte[3 * TileWidth.intValue() * TileHeight.intValue()];
 
     for (int x = 0; x < NumX.intValue(); x++) {
         for (int y = 0; y < NumY.intValue(); y++) {
@@ -124,16 +118,15 @@ void checkDaList() {
                 fis.read(buf);
                 sx = x * TileWidth.intValue();
                 sy = y * TileHeight.intValue();
-                long index=((long)sy*(long)DestWidth.intValue()+(long)sx)*(long)3+headerSize;
-                for (long row=0; row<TileHeight.intValue();row++){
+                long index=((long) sy * (long) DestWidth.intValue() + (long) sx) * (long) 3 + headerSize;
+                for (long row = 0; row < TileHeight.intValue(); row++){
                     MappedByteBuffer mbb = fc.map(
                          java.nio.channels.FileChannel.MapMode.READ_WRITE,
-                         index+row*DestWidth.intValue()*(long)3,
-                         TileWidth.intValue()*(long)3
+                         index + row * DestWidth.intValue() * (long) 3,
+                         TileWidth.intValue() * (long) 3
                          );
-                    mbb.put(buf, (int)(row*TileWidth.intValue()*3), (int)(TileWidth.intValue()*3));
+                    mbb.put(buf, (int) (row * TileWidth.intValue() * 3), (int) (TileWidth.intValue() * 3));
                 }
-
             }
         }
     }
