@@ -30,7 +30,7 @@ animations = {
 }
 faces = {
     2: 'pl_dragon_r.171',
-    3: 'pl_dragon.171',
+    3: 'pl_dragon_blue.171',
     4: 'pl_dragon_bl.132',
     10: 'pl_dragon_g.132',
 }
