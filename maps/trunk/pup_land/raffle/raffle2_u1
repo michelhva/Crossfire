@@ -10,7 +10,7 @@ enter_x 2
 enter_y 16
 msg
 Created:  1996-12-29
-Modified: 2008-10-25 Rick Tanner
+Modified: 2011-06-26 Nicolas Weeger
 endmsg
 end
 arch furious_floor
@@ -576,8 +576,7 @@ end
 arch magic_mouth
 msg
 An inscription on the wall:
-Apply the teleporter to enter the hall of
-trolls. Don't do it when you feel afraid.
+Apply the teleporter to enter the hall of trolls. Don't do it when you feel afraid.
 endmsg
 x 3
 y 15
