@@ -33,6 +33,7 @@
     <target name="compile-jxclient">
         <delete dir="${build}/jxclient"/>
         <mkdir dir="${build}/jxclient"/>
+        <depend srcDir="${src.jxclient}" destDir="${build}/jxclient" cache="${build}/cache.jxclient" closure="true"/>
         <javac srcdir="${src.jxclient}" destdir="${build}/jxclient" source="1.6" debug="yes" fork="yes" includeantruntime="false">
             <classpath>
                 <pathelement location="lib/annotations.jar"/>
@@ -43,6 +44,11 @@
     <target name="compile-test" depends="jar">
         <delete dir="${build}/test"/>
         <mkdir dir="${build}/test"/>
+        <depend srcDir="${src.test}" destDir="${build}/test" cache="${build}/cache.test" closure="true">
+            <classpath>
+                <pathelement location="jxclient.jar"/>
+            </classpath>
+        </depend>
         <javac srcdir="${src.test}" destdir="${build}/test" source="1.6" debug="yes" fork="yes" includeantruntime="false">
             <classpath>
                 <pathelement location="jxclient.jar"/>
