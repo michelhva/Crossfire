@@ -8,7 +8,7 @@ enter_x 1
 enter_y 13
 msg
 Created:  1994-10-15
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-06-26 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -6297,9 +6297,10 @@ arch small_stones
 x 28
 y 8
 end
-arch door_2
+arch spikes_closed
 x 28
 y 8
+connected 1
 end
 arch small_stones
 x 28
@@ -6483,9 +6484,10 @@ arch small_stones
 x 29
 y 8
 end
-arch door_2
+arch spikes_closed
 x 29
 y 8
+connected 1
 end
 arch small_stones
 x 29
@@ -6673,9 +6675,10 @@ arch small_stones
 x 30
 y 8
 end
-arch door_2
+arch spikes_closed
 x 30
 y 8
+connected 1
 end
 arch small_stones
 x 30
