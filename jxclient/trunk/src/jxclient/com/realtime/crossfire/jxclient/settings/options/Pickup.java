@@ -270,15 +270,19 @@ public class Pickup {
     }
 
     /**
-     * Sets the pickup mode. This function does <em>not</code> send a 'pickup
-     * command to the server.
+     * Sets the pickup mode.
      * @param pickupMode the pickup mode
+     * @param sendToServer whether a /pickup command should be sent to the
+     * server
      */
-    public void setPickupMode(final long pickupMode) {
+    public void updatePickupMode(final long pickupMode, final boolean sendToServer) {
         if (this.pickupMode == pickupMode) {
             return;
         }
         this.pickupMode = pickupMode;
+        if (sendToServer) {
+            commandQueue.sendNcom(true, 1, "pickup "+((pickupMode == PU_NOTHING ? 0 : pickupMode|PU_NEW_MODE)&0xFFFFFFFFL));
+        }
         for (final PickupOption pickupOption : pickupOptions) {
             pickupOption.setPickupMode(pickupMode);
         }
@@ -298,26 +302,13 @@ public class Pickup {
      * @param set <code>true</code>=set, <code>false</code>=unset
      */
     public void setPickupMode(final long pickupMode, final boolean set) {
-        final long oldPickupMode = this.pickupMode;
+        final long newPickupMode;
         if (set) {
-            this.pickupMode |= pickupMode;
+            newPickupMode = this.pickupMode|pickupMode;
         } else {
-            this.pickupMode &= ~pickupMode;
+            newPickupMode = this.pickupMode&~pickupMode;
         }
-        if (this.pickupMode != oldPickupMode) {
-            update();
-        }
-    }
-
-    /**
-     * Notifies the Crossfire server and all pickup options that the pickup mode
-     * has changed.
-     */
-    public void update() {
-        commandQueue.sendNcom(true, 1, "pickup "+((pickupMode == PU_NOTHING ? 0 : pickupMode|PU_NEW_MODE)&0xFFFFFFFFL));
-        for (final PickupOption pickupOption : pickupOptions) {
-            pickupOption.setPickupMode(pickupMode);
-        }
+        updatePickupMode(newPickupMode, true);
     }
 
 }
