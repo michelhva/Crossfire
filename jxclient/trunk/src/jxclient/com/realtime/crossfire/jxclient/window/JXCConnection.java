@@ -154,7 +154,7 @@ public class JXCConnection {
 
         @Override
         public void pickupChanged(final int pickupOptions) {
-            characterPickup.setPickupMode(pickupOptions);
+            characterPickup.updatePickupMode(pickupOptions, false);
         }
 
     };
@@ -233,7 +233,7 @@ public class JXCConnection {
             keybindingsManager.loadPerCharacterBindings(hostname, character);
             assert hostname != null;
             ShortcutsLoader.loadShortcuts(shortcuts, hostname, character);
-            characterPickup.setPickupMode(settings.getLong("pickup_"+hostname+"_"+character, Pickup.PU_NOTHING));
+            characterPickup.updatePickupMode(settings.getLong("pickup_"+hostname+"_"+character, Pickup.PU_NOTHING), true);
             server.addCrossfirePickupListener(crossfirePickupListener);
         }
     }

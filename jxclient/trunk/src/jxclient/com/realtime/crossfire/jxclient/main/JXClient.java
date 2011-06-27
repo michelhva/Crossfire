@@ -251,7 +251,6 @@ public class JXClient {
                                         final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel, smoothFaces);
                                         new FacesTracker(guiStateManager, facesManager);
                                         new PlayerNameTracker(guiStateManager, connection, itemSet);
-                                        new PickupTracker(guiStateManager, server, characterPickup);
                                         new OutputCountTracker(guiStateManager, server, commandQueue);
                                         final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, guiStateManager);
                                         final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
