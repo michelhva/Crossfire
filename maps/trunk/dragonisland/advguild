@@ -10,7 +10,7 @@ enter_x 15
 enter_y 31
 msg
 Created:  1997-07-10 Viola Krings
-Modified: 2008-12-21 Rick Tanner
+Modified: 2011-06-28 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -1257,8 +1257,6 @@ slaying guildap2
 x 6
 y 4
 connected 102
-arch igate_closed_1
-end
 end
 arch woodfloor
 x 6
