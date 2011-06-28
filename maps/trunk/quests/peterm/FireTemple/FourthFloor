@@ -8,7 +8,7 @@ enter_x 13
 enter_y 10
 msg
 Created:  1997-05-23 PeterM (peterm@soda.csua.berkeley.edu)
-Modified: 2008-12-21 Rick Tanner
+Modified: 2011-06-28 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones
@@ -7405,10 +7405,12 @@ end
 arch cobblestones
 x 26
 y 9
+end
 arch rune_large_fireball
 Cha 30
+x 26
+y 9
 level 20
-end
 end
 arch cobblestones
 x 26
