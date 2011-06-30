@@ -86,23 +86,23 @@ public class CfMapUpdater {
         }
 
         @Override
-        public void mapFace(final int x, final int y, final int layer, final int faceNum) {
-            mapUpdaterState.mapFace(new Location(x, y, layer), faceNum, true);
+        public void mapFace(@NotNull final Location location, final int faceNum) {
+            mapUpdaterState.mapFace(location, faceNum, true);
         }
 
         @Override
-        public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType) {
-            mapUpdaterState.mapAnimation(x, y, layer, animationNum, animationType);
+        public void mapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
+            mapUpdaterState.mapAnimation(location, animationNum, animationType);
         }
 
         @Override
-        public void mapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed) {
-            mapUpdaterState.mapAnimationSpeed(x, y, layer, animationSpeed);
+        public void mapAnimationSpeed(@NotNull final Location location, final int animationSpeed) {
+            mapUpdaterState.mapAnimationSpeed(location, animationSpeed);
         }
 
         @Override
-        public void mapSmooth(final int x, final int y, final int layer, final int smooth) {
-            mapUpdaterState.mapSmooth(x, y, layer, smooth);
+        public void mapSmooth(@NotNull final Location location, final int smooth) {
+            mapUpdaterState.mapSmooth(location, smooth);
         }
 
         /**

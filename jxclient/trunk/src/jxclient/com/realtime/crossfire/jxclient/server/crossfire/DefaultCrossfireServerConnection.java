@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.UpdItem;
 import com.realtime.crossfire.jxclient.server.server.DefaultServerConnection;
@@ -2002,26 +2003,27 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if (len < 2) {
             throw new UnknownCommandException("map2 command contains image command with length "+len);
         }
+        final Location location = new Location(x, y, layer);
         final int face = getInt2(packet);
         if ((face&Map2.FACE_ANIMATION) == 0) {
             if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" face="+face);
+                debugProtocol.debugProtocolWrite("recv map2 "+location+" face="+face);
             }
             if (crossfireUpdateMapListener != null) {
-                crossfireUpdateMapListener.mapFace(x, y, layer, face);
+                crossfireUpdateMapListener.mapFace(location, face);
             }
         } else {
             if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" anim="+(face&Map2.ANIM_MASK)+" type="+((face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK));
+                debugProtocol.debugProtocolWrite("recv map2 "+location+" anim="+(face&Map2.ANIM_MASK)+" type="+((face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK));
             }
             if (crossfireUpdateMapListener != null) {
-                crossfireUpdateMapListener.mapAnimation(x, y, layer, face&Map2.ANIM_MASK, (face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK);
+                crossfireUpdateMapListener.mapAnimation(location, face&Map2.ANIM_MASK, (face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK);
             }
         }
         if (len == 3) {
-            cmdMap2CoordinateLayer3(packet, x, y, layer, face);
+            cmdMap2CoordinateLayer3(packet, location, face);
         } else if (len == 4) {
-            cmdMap2CoordinateLayer4(packet, x, y, layer, face);
+            cmdMap2CoordinateLayer4(packet, location, face);
         } else if (len != 2) {
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" <invalid>");
@@ -2034,13 +2036,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * Processes the additional payload data for a map2 coordinate "layer"
      * sub-command having 4 bytes payload.
      * @param packet the packet contents
+     * @param location the location
      * @param face the face number
-     * @param x the x-coordinate of the currently processed square
-     * @param y the y-coordinate of the currently processed square
-     * @param layer the layer to update
      * @throws UnknownCommandException if the command cannot be parsed
      */
-    private void cmdMap2CoordinateLayer3(@NotNull final ByteBuffer packet, final int x, final int y, final int layer, final int face) throws UnknownCommandException {
+    private void cmdMap2CoordinateLayer3(@NotNull final ByteBuffer packet, @NotNull final Location location, final int face) throws UnknownCommandException {
         if (face == 0) {
             throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
         }
@@ -2048,18 +2048,18 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if ((face&Map2.FACE_ANIMATION) == 0) {
             final int smooth = getInt1(packet);
             if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" smooth="+smooth);
+                debugProtocol.debugProtocolWrite("recv map2 "+location+" smooth="+smooth);
             }
             if (crossfireUpdateMapListener != null) {
-                crossfireUpdateMapListener.mapSmooth(x, y, layer, smooth);
+                crossfireUpdateMapListener.mapSmooth(location, smooth);
             }
         } else {
             final int animSpeed = getInt1(packet);
             if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" anim_speed="+animSpeed);
+                debugProtocol.debugProtocolWrite("recv map2 "+location+" anim_speed="+animSpeed);
             }
             if (crossfireUpdateMapListener != null) {
-                crossfireUpdateMapListener.mapAnimationSpeed(x, y, layer, animSpeed);
+                crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
             }
         }
     }
@@ -2068,31 +2068,29 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * Processes the additional payload data for a map2 coordinate "layer"
      * sub-command having 4 bytes payload.
      * @param packet the packet contents
+     * @param location the location
      * @param face the face number
-     * @param x the x-coordinate of the currently processed square
-     * @param y the y-coordinate of the currently processed square
-     * @param layer the layer to update
      * @throws UnknownCommandException if the command cannot be parsed
      */
-    private void cmdMap2CoordinateLayer4(@NotNull final ByteBuffer packet, final int x, final int y, final int layer, final int face) throws UnknownCommandException {
+    private void cmdMap2CoordinateLayer4(@NotNull final ByteBuffer packet, @NotNull final Location location, final int face) throws UnknownCommandException {
         if (face == 0) {
             throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
         }
 
         final int animSpeed = getInt1(packet);
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" anim_speed="+animSpeed);
+            debugProtocol.debugProtocolWrite("recv map2 "+location+" anim_speed="+animSpeed);
         }
         if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapAnimationSpeed(x, y, layer, animSpeed);
+            crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
         }
 
         final int smooth = getInt1(packet);
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" smooth="+smooth);
+            debugProtocol.debugProtocolWrite("recv map2 "+location+" smooth="+smooth);
         }
         if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapSmooth(x, y, layer, smooth);
+            crossfireUpdateMapListener.mapSmooth(location, smooth);
         }
     }
 
