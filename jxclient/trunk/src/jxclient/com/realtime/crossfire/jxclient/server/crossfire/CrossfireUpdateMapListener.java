@@ -116,7 +116,7 @@ public interface CrossfireUpdateMapListener extends EventListener {
      * @param y the y-coordinate
      * @param data the magic map data (y, x); must not be changed
      */
-    void mapMagicMap(int x, int y, byte[][] data);
+    void magicMap(int x, int y, byte[][] data);
 
     /**
      * Parsing of "map2" has been finished.

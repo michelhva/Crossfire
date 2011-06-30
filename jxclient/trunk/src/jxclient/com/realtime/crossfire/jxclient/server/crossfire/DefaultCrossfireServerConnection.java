@@ -2904,7 +2904,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             packet.get(data[y]);
         }
         if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapMagicMap(-px+(currentMapWidth-1)/2, -py+(currentMapHeight-1)/2, data);
+            crossfireUpdateMapListener.magicMap(-px+(currentMapWidth-1)/2, -py+(currentMapHeight-1)/2, data);
         }
         if (crossfireUpdateMapListener != null) {
             crossfireUpdateMapListener.mapEnd();
