@@ -399,9 +399,9 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     }
 
     /**
-     * Processes an updated face image.
-     * @param face the face that has changed
+     * {@inheritDoc}
      */
+    @Override
     public void faceUpdated(@NotNull final Face face) {
         synchronized (sync) {
             mapBegin();
@@ -490,9 +490,9 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     }
 
     /**
-     * Processes a tick command.
-     * @param tickNo the current tick number
+     * {@inheritDoc}
      */
+    @Override
     public void tick(final int tickNo) {
         visibleAnimations.tick(tickNo);
     }
