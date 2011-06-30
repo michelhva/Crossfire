@@ -258,13 +258,11 @@ public class MapUpdaterState {
 
     /**
      * Updates a map square by changing an animation.
-     * @param x the x-coordinate of the square
-     * @param y the y-coordinate of the square
-     * @param layer the layer to update
+     * @param location the location
      * @param animationNum the animation number to set
      * @param animationType the animation type
      */
-    public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType) {
+    public void mapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
         final Animation animation = animations.get(animationNum);
         if (animation == null) {
             System.err.println("unknown animation id "+animationNum+", ignoring");
@@ -274,8 +272,7 @@ public class MapUpdaterState {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
-                map.setFace(x, y, layer, null);
-                final Location location = new Location(x, y, layer);
+                map.setFace(location.getX(), location.getY(), location.getLayer(), null);
                 visibleAnimations.add(location, animation, animationType);
             }
         }
@@ -283,30 +280,25 @@ public class MapUpdaterState {
 
     /**
      * Updates a map square by changing the animation speed.
-     * @param x the x-coordinate of the square
-     * @param y the y-coordinate of the square
-     * @param layer the layer to update
+     * @param location the location
      * @param animationSpeed the animation speed to set
      */
-    public void mapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed) {
+    public void mapAnimationSpeed(@NotNull final Location location, final int animationSpeed) {
         synchronized (sync) {
-            final Location location = new Location(x, y, layer);
             visibleAnimations.updateSpeed(location, animationSpeed);
         }
     }
 
     /**
      * Updates a map square by changing the smooth value.
-     * @param x the x-coordinate of the square
-     * @param y the y-coordinate of the square
-     * @param layer the layer to update
+     * @param location the location
      * @param smooth the smooth value to set
      */
-    public void mapSmooth(final int x, final int y, final int layer, final int smooth) {
+    public void mapSmooth(@NotNull final Location location, final int smooth) {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
-                map.setSmooth(x, y, layer, smooth);
+                map.setSmooth(location.getX(), location.getY(), location.getLayer(), smooth);
             }
         }
     }

@@ -76,40 +76,32 @@ public interface CrossfireUpdateMapListener extends EventListener {
 
     /**
      * Part of "map2" parsing: set the face of a cell.
-     * @param x the x-coordinate
-     * @param y the y-coordinate
-     * @param layer the layer
+     * @param location the location
      * @param faceNum the face ID
      */
-    void mapFace(int x, int y, int layer, int faceNum);
+    void mapFace(@NotNull Location location, int faceNum);
 
     /**
      * Part of "map2" parsing: set the animation of a cell.
-     * @param x the x-coordinate
-     * @param y the y-coordinate
-     * @param layer the layer
+     * @param location the location
      * @param animationNum the animation ID
      * @param animationType the animation type
      */
-    void mapAnimation(int x, int y, int layer, int animationNum, int animationType);
+    void mapAnimation(@NotNull Location location, int animationNum, int animationType);
 
     /**
      * Part of "map2" parsing: set the animation speed.
-     * @param x the x-coordinate
-     * @param y the y-coordinate
-     * @param layer the layer
+     * @param location the location
      * @param animationSpeed the animation speed
      */
-    void mapAnimationSpeed(int x, int y, int layer, int animationSpeed);
+    void mapAnimationSpeed(@NotNull Location location, int animationSpeed);
 
     /**
      * Part of "map2" parsing: set the smooth level.
-     * @param x the x-coordinate
-     * @param y the y-coordinate
-     * @param layer the layer
+     * @param location the location
      * @param smooth the smooth value
      */
-    void mapSmooth(int x, int y, int layer, int smooth);
+    void mapSmooth(@NotNull Location location, int smooth);
 
     /**
      * Part of "map2" parsing: scroll the map view.
