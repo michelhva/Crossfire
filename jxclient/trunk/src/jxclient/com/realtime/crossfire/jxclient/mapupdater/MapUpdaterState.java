@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
@@ -50,7 +51,7 @@ import org.jetbrains.annotations.Nullable;
  * applies to the whole map model {@link #map}.
  * @author Andreas Kirschbaum
  */
-public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMapListener {
+public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMapListener, FacesManagerListener {
 
     /**
      * The object used for synchronization.
@@ -399,15 +400,15 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
 
     /**
      * Processes an updated face image.
-     * @param faceNum the face that has changed
+     * @param face the face that has changed
      */
-    public void faceUpdated(final int faceNum) {
+    public void faceUpdated(@NotNull final Face face) {
         synchronized (sync) {
             mapBegin();
 
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
-                map.updateFace(faceNum, mapWidth, mapHeight);
+                map.updateFace(face.getFaceNum(), mapWidth, mapHeight);
             }
 
             mapEnd(false);

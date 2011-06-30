@@ -21,9 +21,7 @@
 
 package com.realtime.crossfire.jxclient.mapupdater;
 
-import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
@@ -42,19 +40,6 @@ public class CfMapUpdater {
      */
     @NotNull
     private final MapUpdaterState mapUpdaterState;
-
-    /**
-     * The listener to detect updated faces.
-     */
-    @NotNull
-    private final FacesManagerListener facesManagerListener = new FacesManagerListener() {
-
-        @Override
-        public void faceUpdated(@NotNull final Face face) {
-            mapUpdaterState.faceUpdated(face.getFaceNum());
-        }
-
-    };
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped
@@ -109,7 +94,7 @@ public class CfMapUpdater {
      */
     public CfMapUpdater(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final GuiStateManager guiStateManager) {
         this.mapUpdaterState = mapUpdaterState;
-        facesManager.addFacesManagerListener(facesManagerListener);
+        facesManager.addFacesManagerListener(mapUpdaterState);
         crossfireServerConnection.setCrossfireUpdateMapListener(mapUpdaterState);
         guiStateManager.addGuiStateListener(guiStateListener);
         crossfireServerConnection.addCrossfireTickListener(mapUpdaterState);
