@@ -67,60 +67,60 @@ public class CfMapUpdater {
 
         @Override
         public void newMap(final int mapWidth, final int mapHeight) {
-            mapUpdaterState.processNewMap(mapWidth, mapHeight);
+            mapUpdaterState.newMap(mapWidth, mapHeight);
         }
 
         @Override
         public void mapBegin() {
-            mapUpdaterState.processMapBegin();
+            mapUpdaterState.mapBegin();
         }
 
         @Override
         public void mapClear(final int x, final int y) {
-            mapUpdaterState.processMapClear(x, y);
+            mapUpdaterState.mapClear(x, y);
         }
 
         @Override
         public void mapDarkness(final int x, final int y, final int darkness) {
-            mapUpdaterState.processMapDarkness(x, y, darkness);
+            mapUpdaterState.mapDarkness(x, y, darkness);
         }
 
         @Override
         public void mapFace(final int x, final int y, final int layer, final int faceNum) {
-            mapUpdaterState.processMapFace(new Location(x, y, layer), faceNum, true);
+            mapUpdaterState.mapFace(new Location(x, y, layer), faceNum, true);
         }
 
         @Override
         public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType) {
-            mapUpdaterState.processMapAnimation(x, y, layer, animationNum, animationType);
+            mapUpdaterState.mapAnimation(x, y, layer, animationNum, animationType);
         }
 
         @Override
-        public void mapAnimationSpeed(final int x, final int y, final int layer, final int animSpeed) {
-            mapUpdaterState.processMapAnimationSpeed(x, y, layer, animSpeed);
+        public void mapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed) {
+            mapUpdaterState.mapAnimationSpeed(x, y, layer, animationSpeed);
         }
 
         @Override
         public void mapSmooth(final int x, final int y, final int layer, final int smooth) {
-            mapUpdaterState.processMapSmooth(x, y, layer, smooth);
+            mapUpdaterState.mapSmooth(x, y, layer, smooth);
         }
 
         /**
          * {@inheritDoc}
          */
         @Override
-        public void scroll(final int dx, final int dy) {
-            mapUpdaterState.processMapScroll(dx, dy);
+        public void mapScroll(final int dx, final int dy) {
+            mapUpdaterState.mapScroll(dx, dy);
         }
 
         @Override
         public void mapMagicMap(final int x, final int y, final byte[][] data) {
-            mapUpdaterState.processMagicMap(x, y, data);
+            mapUpdaterState.magicMap(x, y, data);
         }
 
         @Override
         public void mapEnd() {
-            mapUpdaterState.processMapEnd(true);
+            mapUpdaterState.mapEnd(true);
         }
 
         @Override

@@ -71,12 +71,12 @@ public class MapUpdaterState {
     /**
      * The width of the visible map area.
      */
-    private int width = 0;
+    private int mapWidth = 0;
 
     /**
      * The height of the visible map area.
      */
-    private int height = 0;
+    private int mapHeight = 0;
 
     /**
      * The current {@link CfMap} instance.
@@ -202,14 +202,14 @@ public class MapUpdaterState {
      */
     public void reset() {
         synchronized (sync) {
-            processNewMap(width, height);
+            newMap(mapWidth, mapHeight);
         }
     }
 
     /**
      * Starts processing of a set of map square changes.
      */
-    public void processMapBegin() {
+    public void mapBegin() {
     }
 
     /**
@@ -217,7 +217,7 @@ public class MapUpdaterState {
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      */
-    public void processMapClear(final int x, final int y) {
+    public void mapClear(final int x, final int y) {
         synchronized (sync) {
             visibleAnimations.remove(x, y);
             outOfViewMultiFaces.clear();
@@ -234,7 +234,7 @@ public class MapUpdaterState {
      * @param faceNum the face to set; <code>0</code> clears the square
      * @param clearAnimation whether an animation should be cleared
      */
-    public void processMapFace(@NotNull final Location location, final int faceNum, final boolean clearAnimation) {
+    public void mapFace(@NotNull final Location location, final int faceNum, final boolean clearAnimation) {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
@@ -244,7 +244,7 @@ public class MapUpdaterState {
                 final Face face = facesManager.getFace2(faceNum);
                 final int x = location.getX();
                 final int y = location.getY();
-                if (x >= width || y >= height) {
+                if (x >= mapWidth || y >= mapHeight) {
                     if (face == null) {
                         outOfViewMultiFaces.remove(location);
                     } else if (face.getTileWidth() > 1 || face.getTileHeight() > 1) {
@@ -262,9 +262,9 @@ public class MapUpdaterState {
      * @param y the y-coordinate of the square
      * @param layer the layer to update
      * @param animationNum the animation number to set
-     * @param type the animation type
+     * @param animationType the animation type
      */
-    public void processMapAnimation(final int x, final int y, final int layer, final int animationNum, final int type) {
+    public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType) {
         final Animation animation = animations.get(animationNum);
         if (animation == null) {
             System.err.println("unknown animation id "+animationNum+", ignoring");
@@ -276,7 +276,7 @@ public class MapUpdaterState {
             synchronized (map) {
                 map.setFace(x, y, layer, null);
                 final Location location = new Location(x, y, layer);
-                visibleAnimations.add(location, animation, type);
+                visibleAnimations.add(location, animation, animationType);
             }
         }
     }
@@ -288,7 +288,7 @@ public class MapUpdaterState {
      * @param layer the layer to update
      * @param animationSpeed the animation speed to set
      */
-    public void processMapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed) {
+    public void mapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed) {
         synchronized (sync) {
             final Location location = new Location(x, y, layer);
             visibleAnimations.updateSpeed(location, animationSpeed);
@@ -302,7 +302,7 @@ public class MapUpdaterState {
      * @param layer the layer to update
      * @param smooth the smooth value to set
      */
-    public void processMapSmooth(final int x, final int y, final int layer, final int smooth) {
+    public void mapSmooth(final int x, final int y, final int layer, final int smooth) {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
@@ -317,7 +317,7 @@ public class MapUpdaterState {
      * @param y the y-coordinate of the square
      * @param darkness the darkness value to set
      */
-    public void processMapDarkness(final int x, final int y, final int darkness) {
+    public void mapDarkness(final int x, final int y, final int darkness) {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
@@ -333,7 +333,7 @@ public class MapUpdaterState {
      * @param y the y-coordinate of the square
      * @param data the magic map data (y, x); will not be changed
      */
-    public void processMagicMap(final int x, final int y, final byte[][] data) {
+    public void magicMap(final int x, final int y, final byte[][] data) {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
@@ -348,7 +348,7 @@ public class MapUpdaterState {
      * @param alwaysProcess if set, notify listeners even if no changes are
      * present
      */
-    public void processMapEnd(final boolean alwaysProcess) {
+    public void mapEnd(final boolean alwaysProcess) {
         synchronized (sync) {
             final Set<CfMapSquare> squares;
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
@@ -370,9 +370,9 @@ public class MapUpdaterState {
      * @param dx the distance to scroll in x-direction in squares
      * @param dy the distance to scroll in y-direction in squares
      */
-    public void processMapScroll(final int dx, final int dy) {
+    public void mapScroll(final int dx, final int dy) {
         synchronized (sync) {
-            processMapBegin();
+            mapBegin();
 
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
@@ -382,7 +382,7 @@ public class MapUpdaterState {
                 }
                 outOfViewMultiFaces.clear();
 
-                if (map.processMapScroll(dx, dy, width, height)) {
+                if (map.processMapScroll(dx, dy, mapWidth, mapHeight)) {
                     visibleAnimations.clear();
                 } else {
                     visibleAnimations.scroll(dx, dy);
@@ -393,7 +393,7 @@ public class MapUpdaterState {
                 mapscrollListener.mapScrolled(dx, dy);
             }
 
-            processMapEnd(false);
+            mapEnd(false);
         }
     }
 
@@ -403,41 +403,41 @@ public class MapUpdaterState {
      */
     public void updateFace(final int faceNum) {
         synchronized (sync) {
-            processMapBegin();
+            mapBegin();
 
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
             synchronized (map) {
-                map.updateFace(faceNum, width, height);
+                map.updateFace(faceNum, mapWidth, mapHeight);
             }
 
-            processMapEnd(false);
+            mapEnd(false);
         }
     }
 
     /**
      * Processes a newmap command. This clears the map state.
-     * @param width the width of the visible map area
-     * @param height the height of the visible map area
+     * @param mapWidth the width of the visible map area
+     * @param mapHeight the height of the visible map area
      */
-    public void processNewMap(final int width, final int height) {
+    public void newMap(final int mapWidth, final int mapHeight) {
         synchronized (sync) {
-            final boolean changed = this.width != width || this.height != height;
-            this.width = width;
-            this.height = height;
+            final boolean changed = this.mapWidth != mapWidth || this.mapHeight != mapHeight;
+            this.mapWidth = mapWidth;
+            this.mapHeight = mapHeight;
             final CfMap tmp = new CfMap();
             //noinspection NestedSynchronizedStatement,SynchronizationOnLocalVariableOrMethodParameter
             synchronized (tmp) {
                 // force dirty flags to be set for the visible map region
                 tmp.clearSquare(0, 0);
-                tmp.clearSquare(width-1, height-1);
+                tmp.clearSquare(mapWidth-1, mapHeight-1);
             }
             map = tmp;
 
-            visibleAnimations.setMapSize(width, height);
+            visibleAnimations.setMapSize(mapWidth, mapHeight);
 
             if (changed) {
                 for (final MapSizeListener listener : mapSizeListeners.getListeners()) {
-                    listener.mapSizeChanged(width, height);
+                    listener.mapSizeChanged(mapWidth, mapHeight);
                 }
             }
 
@@ -460,16 +460,16 @@ public class MapUpdaterState {
      * Returns the width of the visible map area.
      * @return the width of the visible map area
      */
-    public int getWidth() {
-        return width;
+    public int getMapWidth() {
+        return mapWidth;
     }
 
     /**
      * Returns the height of the visible map area.
      * @return the height of the visible map area
      */
-    public int getHeight() {
-        return height;
+    public int getMapHeight() {
+        return mapHeight;
     }
 
     /**
