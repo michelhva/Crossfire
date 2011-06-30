@@ -401,7 +401,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      * Processes an updated face image.
      * @param faceNum the face that has changed
      */
-    public void updateFace(final int faceNum) {
+    public void faceUpdated(final int faceNum) {
         synchronized (sync) {
             mapBegin();
 
