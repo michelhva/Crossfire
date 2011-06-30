@@ -124,13 +124,6 @@ public class JXCWindowRenderer {
     private final MouseTracker mouseTracker;
 
     /**
-     * The semaphore used to synchronize map model updates and map view
-     * redraws.
-     */
-    @NotNull
-    private final Object redrawSemaphore;
-
-    /**
      * The {@link CrossfireServerConnection} to monitor.
      */
     @NotNull
@@ -341,15 +334,12 @@ public class JXCWindowRenderer {
     /**
      * Creates a new instance.
      * @param mouseTracker the mouse tracker instance
-     * @param redrawSemaphore the semaphore used to synchronized map model
-     * updates and map view redraws
      * @param crossfireServerConnection the server connection to monitor
      * @param debugScreen the writer to write screen debug to or
      * <code>null</code>
      */
-    public JXCWindowRenderer(@NotNull final MouseTracker mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Writer debugScreen) {
+    public JXCWindowRenderer(@NotNull final MouseTracker mouseTracker, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Writer debugScreen) {
         this.mouseTracker = mouseTracker;
-        this.redrawSemaphore = redrawSemaphore;
         this.crossfireServerConnection = crossfireServerConnection;
         this.debugScreen = debugScreen;
         graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -641,9 +631,7 @@ public class JXCWindowRenderer {
      * @param g the graphics instance to paint to
      */
     public void redraw(@NotNull final Graphics g) {
-        synchronized (redrawSemaphore) {
-            layeredPane.paint(g);
-        }
+        layeredPane.paint(g);
     }
 
     /**

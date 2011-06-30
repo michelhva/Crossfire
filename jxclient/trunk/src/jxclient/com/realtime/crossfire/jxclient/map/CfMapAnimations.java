@@ -219,11 +219,12 @@ public class CfMapAnimations {
             pendingTickUpdates.clear();
             animationStatesToUpdate = new ArrayList<AnimationState>(animationStates.keySet());
         }
-        mapUpdaterState.mapBegin();
-        for (final AnimationState animationState : animationStatesToUpdate) {
-            animationState.updateTickNo(tickNo);
+        synchronized (mapUpdaterState.mapBegin()) {
+            for (final AnimationState animationState : animationStatesToUpdate) {
+                animationState.updateTickNo(tickNo);
+            }
+            mapUpdaterState.mapEnd(false);
         }
-        mapUpdaterState.mapEnd(false);
     }
 
     /**
