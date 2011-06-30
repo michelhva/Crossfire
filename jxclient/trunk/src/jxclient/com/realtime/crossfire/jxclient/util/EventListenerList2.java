@@ -57,7 +57,7 @@ public class EventListenerList2<T extends EventListener> implements Serializable
     //here since class literals do not work for parametrized types.
     @SuppressWarnings("unchecked")
     public EventListenerList2(@NotNull final Class<? extends EventListener> t) {
-        this.t = (Class<T>) t;
+        this.t = (Class<T>)t;
     }
 
     /**

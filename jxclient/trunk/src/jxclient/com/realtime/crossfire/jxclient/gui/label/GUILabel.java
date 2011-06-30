@@ -53,8 +53,7 @@ public abstract class GUILabel extends AbstractLabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param picture the background image; <code>null</code> for no
-     * background
+     * @param picture the background image; <code>null</code> for no background
      * @param text the text
      * @param textFont the font for rendering the label text
      * @param textColor the font color

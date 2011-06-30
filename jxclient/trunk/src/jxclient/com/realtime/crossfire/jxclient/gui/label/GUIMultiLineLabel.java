@@ -63,8 +63,7 @@ public class GUIMultiLineLabel extends GUILabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param picture the background image; <code>null</code> for no
-     * background
+     * @param picture the background image; <code>null</code> for no background
      * @param font the font for rendering the label text
      * @param color the font color
      * @param backgroundColor the background color

@@ -140,8 +140,8 @@ public class SpellsManager implements Iterable<Spell> {
     };
 
     /**
-     * The {@link CrossfireAccountListener} for detecting character change
-     * and clear spell information.
+     * The {@link CrossfireAccountListener} for detecting character change and
+     * clear spell information.
      */
     @NotNull
     private final CrossfireAccountListener crossfireAccountListener = new CrossfireAccountListener() {
@@ -175,6 +175,7 @@ public class SpellsManager implements Iterable<Spell> {
         public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
             spells.clear();
         }
+
     };
 
     /**
