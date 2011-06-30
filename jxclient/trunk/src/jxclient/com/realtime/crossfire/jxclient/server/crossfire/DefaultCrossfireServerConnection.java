@@ -868,7 +868,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public void setCrossfireUpdateMapListener(@Nullable final CrossfireUpdateMapListener listener) {
-        if (crossfireUpdateMapListener != null) {
+        if (listener != null && crossfireUpdateMapListener != null) {
             throw new IllegalStateException();
         }
         crossfireUpdateMapListener = listener;
