@@ -152,12 +152,12 @@ public class SpellsManager implements Iterable<Spell> {
         }
 
         @Override
-        public void startAccountList(final String accountName) {
+        public void startAccountList(@NotNull final String accountName) {
             // ignore
         }
 
         @Override
-        public void addAccount(final String name, final String characterClass, final String race, final String face, final String party, final String map, final int level, final int faceNumber) {
+        public void addAccount(@NotNull final String name, @NotNull final String characterClass, @NotNull final String race, @NotNull final String face, @NotNull final String party, @NotNull final String map, final int level, final int faceNumber) {
             // ignore
         }
 
@@ -172,7 +172,7 @@ public class SpellsManager implements Iterable<Spell> {
         }
 
         @Override
-        public void selectCharacter(final String accountName, final String characterName) {
+        public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
             spells.clear();
         }
     };
