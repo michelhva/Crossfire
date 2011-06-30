@@ -146,26 +146,32 @@ public class SpellsManager implements Iterable<Spell> {
     @NotNull
     private CrossfireAccountListener crossfireAccountListener = new CrossfireAccountListener() {
 
+        @Override
         public void manageAccount() {
             // ignore
         }
 
+        @Override
         public void startAccountList(String accountName) {
             // ignore
         }
 
+        @Override
         public void addAccount(String name, String characterClass, String race, String face, String party, String map, int level, int faceNumber) {
             // ignore
         }
 
+        @Override
         public void endAccountList() {
             // ignore
         }
 
+        @Override
         public void startPlaying() {
             // ignore
         }
 
+        @Override
         public void selectCharacter(String accountName, String characterName) {
             spells.clear();
         }
