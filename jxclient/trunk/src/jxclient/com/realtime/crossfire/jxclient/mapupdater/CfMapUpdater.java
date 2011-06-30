@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireTickListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import org.jetbrains.annotations.NotNull;
 
@@ -102,19 +101,6 @@ public class CfMapUpdater {
     };
 
     /**
-     * The listener for receiving "tick" commands.
-     */
-    @NotNull
-    private final CrossfireTickListener crossfireTickListener = new CrossfireTickListener() {
-
-        @Override
-        public void tick(final int tickNo) {
-            mapUpdaterState.tick(tickNo);
-        }
-
-    };
-
-    /**
      * Creates a new instance.
      * @param mapUpdaterState the map updater state to update
      * @param crossfireServerConnection the connection to monitor
@@ -126,7 +112,7 @@ public class CfMapUpdater {
         facesManager.addFacesManagerListener(facesManagerListener);
         crossfireServerConnection.setCrossfireUpdateMapListener(mapUpdaterState);
         guiStateManager.addGuiStateListener(guiStateListener);
-        crossfireServerConnection.addCrossfireTickListener(crossfireTickListener);
+        crossfireServerConnection.addCrossfireTickListener(mapUpdaterState);
     }
 
 }
