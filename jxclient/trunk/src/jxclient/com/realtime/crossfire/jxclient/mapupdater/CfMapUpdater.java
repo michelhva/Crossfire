@@ -27,10 +27,8 @@ import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
-import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireTickListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import org.jetbrains.annotations.NotNull;
 
@@ -55,74 +53,6 @@ public class CfMapUpdater {
         @Override
         public void faceUpdated(@NotNull final Face face) {
             mapUpdaterState.updateFace(face.getFaceNum());
-        }
-
-    };
-
-    /**
-     * The listener to detect map model changes.
-     */
-    @NotNull
-    private final CrossfireUpdateMapListener crossfireUpdateMapListener = new CrossfireUpdateMapListener() {
-
-        @Override
-        public void newMap(final int mapWidth, final int mapHeight) {
-            mapUpdaterState.newMap(mapWidth, mapHeight);
-        }
-
-        @Override
-        public void mapBegin() {
-            mapUpdaterState.mapBegin();
-        }
-
-        @Override
-        public void mapClear(final int x, final int y) {
-            mapUpdaterState.mapClear(x, y);
-        }
-
-        @Override
-        public void mapDarkness(final int x, final int y, final int darkness) {
-            mapUpdaterState.mapDarkness(x, y, darkness);
-        }
-
-        @Override
-        public void mapFace(@NotNull final Location location, final int faceNum) {
-            mapUpdaterState.mapFace(location, faceNum, true);
-        }
-
-        @Override
-        public void mapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
-            mapUpdaterState.mapAnimation(location, animationNum, animationType);
-        }
-
-        @Override
-        public void mapAnimationSpeed(@NotNull final Location location, final int animationSpeed) {
-            mapUpdaterState.mapAnimationSpeed(location, animationSpeed);
-        }
-
-        @Override
-        public void mapSmooth(@NotNull final Location location, final int smooth) {
-            mapUpdaterState.mapSmooth(location, smooth);
-        }
-
-        @Override
-        public void mapScroll(final int dx, final int dy) {
-            mapUpdaterState.mapScroll(dx, dy);
-        }
-
-        @Override
-        public void magicMap(final int x, final int y, final byte[][] data) {
-            mapUpdaterState.magicMap(x, y, data);
-        }
-
-        @Override
-        public void mapEnd() {
-            mapUpdaterState.mapEnd(true);
-        }
-
-        @Override
-        public void addAnimation(final int animation, final int flags, @NotNull final int[] faces) {
-            mapUpdaterState.addAnimation(animation, flags, faces);
         }
 
     };
@@ -194,7 +124,7 @@ public class CfMapUpdater {
     public CfMapUpdater(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final GuiStateManager guiStateManager) {
         this.mapUpdaterState = mapUpdaterState;
         facesManager.addFacesManagerListener(facesManagerListener);
-        crossfireServerConnection.setCrossfireUpdateMapListener(crossfireUpdateMapListener);
+        crossfireServerConnection.setCrossfireUpdateMapListener(mapUpdaterState);
         guiStateManager.addGuiStateListener(guiStateListener);
         crossfireServerConnection.addCrossfireTickListener(crossfireTickListener);
     }

@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.Location;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.Collection;
@@ -48,7 +49,7 @@ import org.jetbrains.annotations.Nullable;
  * applies to the whole map model {@link #map}.
  * @author Andreas Kirschbaum
  */
-public class MapUpdaterState {
+public class MapUpdaterState implements CrossfireUpdateMapListener {
 
     /**
      * The object used for synchronization.
@@ -207,16 +208,16 @@ public class MapUpdaterState {
     }
 
     /**
-     * Starts processing of a set of map square changes.
+     * {@inheritDoc}
      */
+    @Override
     public void mapBegin() {
     }
 
     /**
-     * Updates a map square by clearing it.
-     * @param x the x-coordinate of the square
-     * @param y the y-coordinate of the square
+     * {@inheritDoc}
      */
+    @Override
     public void mapClear(final int x, final int y) {
         synchronized (sync) {
             visibleAnimations.remove(x, y);
@@ -226,6 +227,14 @@ public class MapUpdaterState {
                 map.clearSquare(x, y);
             }
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void mapFace(@NotNull final Location location, final int faceNum) {
+        mapFace(location, faceNum, true);
     }
 
     /**
@@ -257,11 +266,9 @@ public class MapUpdaterState {
     }
 
     /**
-     * Updates a map square by changing an animation.
-     * @param location the location
-     * @param animationNum the animation number to set
-     * @param animationType the animation type
+     * {@inheritDoc}
      */
+    @Override
     public void mapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
         final Animation animation = animations.get(animationNum);
         if (animation == null) {
@@ -279,10 +286,9 @@ public class MapUpdaterState {
     }
 
     /**
-     * Updates a map square by changing the animation speed.
-     * @param location the location
-     * @param animationSpeed the animation speed to set
+     * {@inheritDoc}
      */
+    @Override
     public void mapAnimationSpeed(@NotNull final Location location, final int animationSpeed) {
         synchronized (sync) {
             visibleAnimations.updateSpeed(location, animationSpeed);
@@ -290,10 +296,9 @@ public class MapUpdaterState {
     }
 
     /**
-     * Updates a map square by changing the smooth value.
-     * @param location the location
-     * @param smooth the smooth value to set
+     * {@inheritDoc}
      */
+    @Override
     public void mapSmooth(@NotNull final Location location, final int smooth) {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
@@ -304,11 +309,9 @@ public class MapUpdaterState {
     }
 
     /**
-     * Updates a map square by changing the darkness value.
-     * @param x the x-coordinate of the square
-     * @param y the y-coordinate of the square
-     * @param darkness the darkness value to set
+     * {@inheritDoc}
      */
+    @Override
     public void mapDarkness(final int x, final int y, final int darkness) {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
@@ -319,12 +322,9 @@ public class MapUpdaterState {
     }
 
     /**
-     * Finishes processing of a set of map square changes. Notifies listeners
-     * about changes. present
-     * @param x the x-coordinate of the square
-     * @param y the y-coordinate of the square
-     * @param data the magic map data (y, x); will not be changed
+     * {@inheritDoc}
      */
+    @Override
     public void magicMap(final int x, final int y, final byte[][] data) {
         synchronized (sync) {
             //noinspection NestedSynchronizedStatement,SynchronizeOnNonFinalField
@@ -358,10 +358,9 @@ public class MapUpdaterState {
     }
 
     /**
-     * Processes a map scroll command.
-     * @param dx the distance to scroll in x-direction in squares
-     * @param dy the distance to scroll in y-direction in squares
+     * {@inheritDoc}
      */
+    @Override
     public void mapScroll(final int dx, final int dy) {
         synchronized (sync) {
             mapBegin();
@@ -390,6 +389,14 @@ public class MapUpdaterState {
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void mapEnd() {
+        mapEnd(true);
+    }
+
+    /**
      * Processes an updated face image.
      * @param faceNum the face that has changed
      */
@@ -407,10 +414,9 @@ public class MapUpdaterState {
     }
 
     /**
-     * Processes a newmap command. This clears the map state.
-     * @param mapWidth the width of the visible map area
-     * @param mapHeight the height of the visible map area
+     * {@inheritDoc}
      */
+    @Override
     public void newMap(final int mapWidth, final int mapHeight) {
         synchronized (sync) {
             final boolean changed = this.mapWidth != mapWidth || this.mapHeight != mapHeight;
@@ -474,11 +480,9 @@ public class MapUpdaterState {
     }
 
     /**
-     * Adds a new animation to the map.
-     * @param animation the ID f the animation to add
-     * @param flags the animation flags
-     * @param faces the animation's faces
+     * {@inheritDoc}
      */
+    @Override
     public void addAnimation(final int animation, final int flags, @NotNull final int[] faces) {
         animations.addAnimation(animation, flags, faces);
     }
