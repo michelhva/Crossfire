@@ -105,9 +105,6 @@ public class CfMapUpdater {
             mapUpdaterState.mapSmooth(location, smooth);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         @Override
         public void mapScroll(final int dx, final int dy) {
             mapUpdaterState.mapScroll(dx, dy);
