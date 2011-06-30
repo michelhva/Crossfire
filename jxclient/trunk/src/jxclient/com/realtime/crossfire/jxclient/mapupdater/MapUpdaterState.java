@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.Location;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireTickListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
@@ -49,7 +50,7 @@ import org.jetbrains.annotations.Nullable;
  * applies to the whole map model {@link #map}.
  * @author Andreas Kirschbaum
  */
-public class MapUpdaterState implements CrossfireUpdateMapListener {
+public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMapListener {
 
     /**
      * The object used for synchronization.
