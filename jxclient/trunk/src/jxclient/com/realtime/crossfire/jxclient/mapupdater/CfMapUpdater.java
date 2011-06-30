@@ -197,7 +197,7 @@ public class CfMapUpdater {
     public CfMapUpdater(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final GuiStateManager guiStateManager) {
         this.mapUpdaterState = mapUpdaterState;
         facesManager.addFacesManagerListener(facesManagerListener);
-        crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
+        crossfireServerConnection.setCrossfireUpdateMapListener(crossfireUpdateMapListener);
         guiStateManager.addGuiStateListener(guiStateListener);
         crossfireServerConnection.addCrossfireTickListener(crossfireTickListener);
     }

@@ -128,10 +128,11 @@ public interface CrossfireServerConnection extends ServerConnection {
     void removeCrossfireUpdateItemListener(@NotNull CrossfireUpdateItemListener crossfireUpdateItemListener);
 
     /**
-     * Adds a listener to be notified about map changes.
-     * @param listener the listener to add
+     * Sets a listener to be notified about map changes. At most one such
+     * listener may be set.
+     * @param listener the listener to set or <code>null</code> to unset it
      */
-    void addCrossfireUpdateMapListener(@NotNull CrossfireUpdateMapListener listener);
+    void setCrossfireUpdateMapListener(@Nullable CrossfireUpdateMapListener listener);
 
     /**
      * Adds a listener to be notified about tick changes.
