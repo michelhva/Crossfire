@@ -104,8 +104,8 @@ public class Timeouts {
     }
 
     /**
-     * Sets the timeout value for a given event. If the event is not yet pending,
-     * it is added.
+     * Sets the timeout value for a given event. If the event is not yet
+     * pending, it is added.
      * @param timeout the new timeout in milliseconds
      * @param timeoutEvent the timeout event to execute
      */

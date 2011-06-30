@@ -304,7 +304,8 @@ public class KeybindingsManager {
     }
 
     /**
-     * Searches bindings having a command text starting with the specified value.
+     * Searches bindings having a command text starting with the specified
+     * value.
      * @param commandStart the start of the text to search for
      * @return the matching bindings
      */

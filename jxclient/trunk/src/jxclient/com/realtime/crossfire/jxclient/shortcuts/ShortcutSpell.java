@@ -98,8 +98,7 @@ public class ShortcutSpell extends Shortcut {
 
     /**
      * Returns whether the spell should be "cast" or "invoked".
-     * @return <code>true</code> for "cast", or <code>false</code> for
-     *         "invoke"
+     * @return <code>true</code> for "cast", or <code>false</code> for "invoke"
      */
     public boolean isCast() {
         return command == CAST;

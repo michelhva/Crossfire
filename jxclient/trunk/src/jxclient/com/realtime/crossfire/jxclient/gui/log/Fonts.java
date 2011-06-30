@@ -72,8 +72,8 @@ public class Fonts {
     }
 
     /**
-     * Returns the font to use for {@link FontID#PRINT}, {@link FontID#HAND}, and
-     * {@link FontID#STRANGE} text.
+     * Returns the font to use for {@link FontID#PRINT}, {@link FontID#HAND},
+     * and {@link FontID#STRANGE} text.
      * @return the font
      */
     @NotNull
