@@ -51,7 +51,7 @@ public class CfMapUpdater {
 
         @Override
         public void faceUpdated(@NotNull final Face face) {
-            mapUpdaterState.updateFace(face.getFaceNum());
+            mapUpdaterState.faceUpdated(face.getFaceNum());
         }
 
     };
