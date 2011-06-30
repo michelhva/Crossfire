@@ -144,7 +144,7 @@ public class SpellsManager implements Iterable<Spell> {
      * and clear spell information.
      */
     @NotNull
-    private CrossfireAccountListener crossfireAccountListener = new CrossfireAccountListener() {
+    private final CrossfireAccountListener crossfireAccountListener = new CrossfireAccountListener() {
 
         @Override
         public void manageAccount() {
@@ -152,12 +152,12 @@ public class SpellsManager implements Iterable<Spell> {
         }
 
         @Override
-        public void startAccountList(String accountName) {
+        public void startAccountList(final String accountName) {
             // ignore
         }
 
         @Override
-        public void addAccount(String name, String characterClass, String race, String face, String party, String map, int level, int faceNumber) {
+        public void addAccount(final String name, final String characterClass, final String race, final String face, final String party, final String map, final int level, final int faceNumber) {
             // ignore
         }
 
@@ -172,7 +172,7 @@ public class SpellsManager implements Iterable<Spell> {
         }
 
         @Override
-        public void selectCharacter(String accountName, String characterName) {
+        public void selectCharacter(final String accountName, final String characterName) {
             spells.clear();
         }
     };
