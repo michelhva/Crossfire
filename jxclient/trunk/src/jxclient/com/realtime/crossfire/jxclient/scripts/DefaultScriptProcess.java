@@ -476,11 +476,11 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             }
             commandSent("request items cont end");
         } else if (params.equals("map pos")) {
-            commandSent("request map pos "+mapUpdaterState.getWidth()/2+" "+mapUpdaterState.getHeight()/2);
+            commandSent("request map pos "+mapUpdaterState.getMapWidth()/2+" "+mapUpdaterState.getMapHeight()/2);
         } else if (params.equals("map near")) {
             final CfMap map = mapUpdaterState.getMap();
-            final int centerX = mapUpdaterState.getWidth()/2;
-            final int centerY = mapUpdaterState.getHeight()/2;
+            final int centerX = mapUpdaterState.getMapWidth()/2;
+            final int centerY = mapUpdaterState.getMapHeight()/2;
             for (int y = -1; y <= +1; y++) {
                 for (int x = -1; x <= +1; x++) {
                     commandSentMap(map, centerX+x, centerY+y);
@@ -488,8 +488,8 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             }
         } else if (params.equals("map all")) {
             final CfMap map = mapUpdaterState.getMap();
-            final int width = mapUpdaterState.getWidth()/2;
-            final int height = mapUpdaterState.getHeight()/2;
+            final int width = mapUpdaterState.getMapWidth()/2;
+            final int height = mapUpdaterState.getMapHeight()/2;
             for (int y = 0; y < height; y++) {
                 for (int x = 0; x < width; x++) {
                     commandSentMap(map, x, y);

@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.map.Location;
 import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
@@ -97,9 +98,9 @@ public interface CrossfireUpdateMapListener extends EventListener {
      * @param x the x-coordinate
      * @param y the y-coordinate
      * @param layer the layer
-     * @param animSpeed the animation speed
+     * @param animationSpeed the animation speed
      */
-    void mapAnimationSpeed(int x, int y, int layer, int animSpeed);
+    void mapAnimationSpeed(int x, int y, int layer, int animationSpeed);
 
     /**
      * Part of "map2" parsing: set the smooth level.
@@ -115,7 +116,7 @@ public interface CrossfireUpdateMapListener extends EventListener {
      * @param dx the x-distance
      * @param dy the y-distance
      */
-    void scroll(int dx, int dy);
+    void mapScroll(int dx, int dy);
 
     /**
      * Part of "magicmap" parsing: set the magic map color.

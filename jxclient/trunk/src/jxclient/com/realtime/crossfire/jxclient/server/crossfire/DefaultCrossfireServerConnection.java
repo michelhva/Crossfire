@@ -2051,7 +2051,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" smooth="+smooth);
             }
             if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapSmooth(x, y, layer, smooth);
+                crossfireUpdateMapListener.mapSmooth(x, y, layer, smooth);
             }
         } else {
             final int animSpeed = getInt1(packet);
@@ -2059,7 +2059,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" anim_speed="+animSpeed);
             }
             if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapAnimationSpeed(x, y, layer, animSpeed);
+                crossfireUpdateMapListener.mapAnimationSpeed(x, y, layer, animSpeed);
             }
         }
     }
@@ -2926,7 +2926,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         final int args = packet.position();
         synchronized (redrawSemaphore) {
             if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapBegin();
+                crossfireUpdateMapListener.mapBegin();
             }
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv map2 begin");
@@ -2947,7 +2947,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" scroll");
                     }
                     if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.scroll(x, y);
+                        crossfireUpdateMapListener.mapScroll(x, y);
                     }
                     break;
 
@@ -2962,7 +2962,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 debugProtocol.debugProtocolWrite("recv map2 end");
             }
             if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapEnd();
+                crossfireUpdateMapListener.mapEnd();
             }
         }
         notifyPacketWatcherListenersShortArray(packet, args);

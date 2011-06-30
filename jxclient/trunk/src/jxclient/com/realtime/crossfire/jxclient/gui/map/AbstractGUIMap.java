@@ -313,7 +313,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         this.mapUpdaterState.addCrossfireMapListener(mapListener);
         this.mapUpdaterState.addCrossfireNewmapListener(newmapListener);
         this.mapUpdaterState.addCrossfireMapScrollListener(mapscrollListener);
-        setMapSize(this.mapUpdaterState.getWidth(), this.mapUpdaterState.getHeight());
+        setMapSize(this.mapUpdaterState.getMapWidth(), this.mapUpdaterState.getMapHeight());
     }
 
     /**

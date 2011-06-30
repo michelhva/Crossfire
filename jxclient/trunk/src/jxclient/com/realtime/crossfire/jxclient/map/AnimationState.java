@@ -136,7 +136,7 @@ public class AnimationState implements Iterable<Location> {
         }
         lastFace = face;
         for (final Location location : locations) {
-            mapUpdaterState.processMapFace(location, face, false);
+            mapUpdaterState.mapFace(location, face, false);
         }
     }
 
@@ -149,7 +149,7 @@ public class AnimationState implements Iterable<Location> {
             throw new IllegalArgumentException();
         }
         if (lastFace != -1) {
-            mapUpdaterState.processMapFace(location, lastFace, false);
+            mapUpdaterState.mapFace(location, lastFace, false);
         }
     }
 
