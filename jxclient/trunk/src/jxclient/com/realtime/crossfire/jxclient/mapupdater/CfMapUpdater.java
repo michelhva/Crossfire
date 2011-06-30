@@ -111,7 +111,7 @@ public class CfMapUpdater {
         }
 
         @Override
-        public void mapMagicMap(final int x, final int y, final byte[][] data) {
+        public void magicMap(final int x, final int y, final byte[][] data) {
             mapUpdaterState.magicMap(x, y, data);
         }
 
