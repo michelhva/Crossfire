@@ -56,8 +56,11 @@ public interface CrossfireUpdateMapListener extends EventListener {
 
     /**
      * Parsing of a "map2" command has been started.
+     * @return the synchronization object which must be <code>synchronized</code>
+     *         while calling any other function (except <code>newMap()</code>)
      */
-    void mapBegin();
+    @NotNull
+    Object mapBegin();
 
     /**
      * Part of "map2" parsing: clear a cell.

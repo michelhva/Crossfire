@@ -164,8 +164,7 @@ public class JXClient {
                             final OptionManager optionManager = new OptionManager(settings);
                             final MetaserverModel metaserverModel = new MetaserverModel();
                             final CharacterModel characterModel = new CharacterModel();
-                            final Object semaphoreRedraw = new Object();
-                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
+                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
                             server.start();
                             try {
                                 final GuiStateManager guiStateManager = new GuiStateManager(server);
@@ -189,7 +188,7 @@ public class JXClient {
                                 }
 
                                 final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui());
-                                final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, semaphoreRedraw, server, debugScreenOutputStreamWriter);
+                                final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, server, debugScreenOutputStreamWriter);
                                 new MusicWatcher(server, soundManager);
                                 new SoundWatcher(server, soundManager);
                                 new StatsWatcher(stats, windowRenderer, server, soundManager);

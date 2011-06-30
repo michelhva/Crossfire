@@ -667,13 +667,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     };
 
     /**
-     * The semaphore used to synchronized map model updates and map view
-     * redraws.
-     */
-    @NotNull
-    private final Object redrawSemaphore;
-
-    /**
      * The version information to send when connecting to the server.
      */
     @NotNull
@@ -743,17 +736,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /**
      * Creates a new instance.
-     * @param redrawSemaphore the semaphore used to synchronized map model
-     * updates and map view redraws
      * @param debugProtocol tf non-<code>null</code>, write all protocol
      * commands to this writer
      * @param version the version information to send to the server when
      * connecting
      * @throws IOException if an internal error occurs
      */
-    public DefaultCrossfireServerConnection(@NotNull final Object redrawSemaphore, @Nullable final DebugWriter debugProtocol, @NotNull final String version) throws IOException {
+    public DefaultCrossfireServerConnection(@Nullable final DebugWriter debugProtocol, @NotNull final String version) throws IOException {
         super(debugProtocol);
-        this.redrawSemaphore = redrawSemaphore;
         this.version = version;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
@@ -1964,9 +1954,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" clear");
         }
-        if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapClear(x, y);
-        }
+        assert crossfireUpdateMapListener != null;
+        crossfireUpdateMapListener.mapClear(x, y);
     }
 
     /**
@@ -1985,9 +1974,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" darkness="+darkness);
         }
-        if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapDarkness(x, y, darkness);
-        }
+        assert crossfireUpdateMapListener != null;
+        crossfireUpdateMapListener.mapDarkness(x, y, darkness);
     }
 
     /**
@@ -2009,16 +1997,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv map2 "+location+" face="+face);
             }
-            if (crossfireUpdateMapListener != null) {
-                crossfireUpdateMapListener.mapFace(location, face);
-            }
+            assert crossfireUpdateMapListener != null;
+            crossfireUpdateMapListener.mapFace(location, face);
         } else {
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv map2 "+location+" anim="+(face&Map2.ANIM_MASK)+" type="+((face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK));
             }
-            if (crossfireUpdateMapListener != null) {
-                crossfireUpdateMapListener.mapAnimation(location, face&Map2.ANIM_MASK, (face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK);
-            }
+            assert crossfireUpdateMapListener != null;
+            crossfireUpdateMapListener.mapAnimation(location, face&Map2.ANIM_MASK, (face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK);
         }
         if (len == 3) {
             cmdMap2CoordinateLayer3(packet, location, face);
@@ -2050,17 +2036,15 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv map2 "+location+" smooth="+smooth);
             }
-            if (crossfireUpdateMapListener != null) {
-                crossfireUpdateMapListener.mapSmooth(location, smooth);
-            }
+            assert crossfireUpdateMapListener != null;
+            crossfireUpdateMapListener.mapSmooth(location, smooth);
         } else {
             final int animSpeed = getInt1(packet);
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv map2 "+location+" anim_speed="+animSpeed);
             }
-            if (crossfireUpdateMapListener != null) {
-                crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
-            }
+            assert crossfireUpdateMapListener != null;
+            crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
         }
     }
 
@@ -2081,17 +2065,15 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv map2 "+location+" anim_speed="+animSpeed);
         }
-        if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
-        }
+        assert crossfireUpdateMapListener != null;
+        crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
 
         final int smooth = getInt1(packet);
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv map2 "+location+" smooth="+smooth);
         }
-        if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapSmooth(location, smooth);
-        }
+        assert crossfireUpdateMapListener != null;
+        crossfireUpdateMapListener.mapSmooth(location, smooth);
     }
 
     /**
@@ -2896,18 +2878,17 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             throw new UnknownCommandException("invalid magicmap command");
         }
 
-        if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapBegin();
-        }
         final byte[][] data = new byte[height][width];
         for (int y = 0; y < height; y++) {
             packet.get(data[y]);
         }
         if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.magicMap(-px+(currentMapWidth-1)/2, -py+(currentMapHeight-1)/2, data);
-        }
-        if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.mapEnd();
+            synchronized (crossfireUpdateMapListener.mapBegin()) {
+                assert crossfireUpdateMapListener != null;
+                crossfireUpdateMapListener.magicMap(-px+(currentMapWidth-1)/2, -py+(currentMapHeight-1)/2, data);
+                assert crossfireUpdateMapListener != null;
+                crossfireUpdateMapListener.mapEnd();
+            }
         }
         for (final CrossfireMagicmapListener listener : magicmapListeners.getListeners()) {
             listener.commandMagicmapReceived();
@@ -2922,46 +2903,44 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void processMap2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
-        synchronized (redrawSemaphore) {
-            if (crossfireUpdateMapListener != null) {
-                crossfireUpdateMapListener.mapBegin();
-            }
-            if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv map2 begin");
-            }
-            while (packet.hasRemaining()) {
-                final int coord = getInt2(packet);
-                final int x = ((coord>>10)&0x3F)-Map2.COORD_OFFSET;
-                final int y = ((coord>>4)&0x3F)-Map2.COORD_OFFSET;
-                final int coordType = coord&0xF;
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv map2 begin");
+        }
+        if (crossfireUpdateMapListener != null) {
+            //noinspection NestedSynchronizedStatement
+            synchronized (crossfireUpdateMapListener.mapBegin()) {
+                while (packet.hasRemaining()) {
+                    final int coord = getInt2(packet);
+                    final int x = ((coord>>10)&0x3F)-Map2.COORD_OFFSET;
+                    final int y = ((coord>>4)&0x3F)-Map2.COORD_OFFSET;
+                    final int coordType = coord&0xF;
 
-                switch (coordType) {
-                case Map2.TYPE_COORDINATE:
-                    cmdMap2Coordinate(packet, x, y);
-                    break;
+                    switch (coordType) {
+                    case Map2.TYPE_COORDINATE:
+                        cmdMap2Coordinate(packet, x, y);
+                        break;
 
-                case Map2.TYPE_SCROLL:
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" scroll");
-                    }
-                    if (crossfireUpdateMapListener != null) {
+                    case Map2.TYPE_SCROLL:
+                        if (debugProtocol != null) {
+                            debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" scroll");
+                        }
+                        assert crossfireUpdateMapListener != null;
                         crossfireUpdateMapListener.mapScroll(x, y);
-                    }
-                    break;
+                        break;
 
-                default:
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" <invalid>");
+                    default:
+                        if (debugProtocol != null) {
+                            debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" <invalid>");
+                        }
+                        throw new UnknownCommandException("map2 command contains unexpected coordinate type "+coordType);
                     }
-                    throw new UnknownCommandException("map2 command contains unexpected coordinate type "+coordType);
                 }
-            }
-            if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv map2 end");
-            }
-            if (crossfireUpdateMapListener != null) {
+                assert crossfireUpdateMapListener != null;
                 crossfireUpdateMapListener.mapEnd();
             }
+        }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv map2 end");
         }
         notifyPacketWatcherListenersShortArray(packet, args);
     }

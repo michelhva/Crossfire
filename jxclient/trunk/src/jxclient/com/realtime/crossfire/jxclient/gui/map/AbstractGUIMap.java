@@ -201,27 +201,24 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
 
         @Override
         public void mapChanged(@NotNull final CfMap map, @NotNull final Set<CfMapSquare> changedSquares) {
-            assert !Thread.holdsLock(map);
+            assert Thread.holdsLock(map);
             synchronized (bufferedImageSync) {
-                //noinspection SynchronizationOnLocalVariableOrMethodParameter,NestedSynchronizedStatement
-                synchronized (map) {
-                    final int x0 = map.getOffsetX();
-                    final int y0 = map.getOffsetY();
-                    final Graphics2D g = createBufferGraphics();
-                    try {
-                        for (final CfMapSquare mapSquare : changedSquares) {
-                            final int x = mapSquare.getX()+x0;
-                            if (displayMinX <= x && x < displayMaxX) {
-                                final int y = mapSquare.getY()+y0;
-                                if (displayMinY <= y && y < displayMaxY) {
-                                    redrawSquare(g, mapSquare, map, x, y);
-                                }
+                final int x0 = map.getOffsetX();
+                final int y0 = map.getOffsetY();
+                final Graphics2D g = createBufferGraphics();
+                try {
+                    for (final CfMapSquare mapSquare : changedSquares) {
+                        final int x = mapSquare.getX()+x0;
+                        if (displayMinX <= x && x < displayMaxX) {
+                            final int y = mapSquare.getY()+y0;
+                            if (displayMinY <= y && y < displayMaxY) {
+                                redrawSquare(g, mapSquare, map, x, y);
                             }
                         }
-                        markPlayer(g, 0, 0);
-                    } finally {
-                        g.dispose();
                     }
+                    markPlayer(g, 0, 0);
+                } finally {
+                    g.dispose();
                 }
             }
             setChanged();
