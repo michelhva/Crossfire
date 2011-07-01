@@ -215,7 +215,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     @NotNull
     @Override
     public Object mapBegin() {
-        return map;
+        return sync;
     }
 
     /**
@@ -223,11 +223,13 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      */
     @Override
     public void mapClear(final int x, final int y) {
-        assert Thread.holdsLock(map);
+        assert Thread.holdsLock(sync);
         synchronized (sync) {
             visibleAnimations.remove(x, y);
             outOfViewMultiFaces.clear();
-            map.clearSquare(x, y);
+            synchronized (map) {
+                map.clearSquare(x, y);
+            }
         }
     }
 
@@ -246,7 +248,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      * @param clearAnimation whether an animation should be cleared
      */
     public void mapFace(@NotNull final Location location, final int faceNum, final boolean clearAnimation) {
-        assert Thread.holdsLock(map);
+        assert Thread.holdsLock(sync);
         synchronized (sync) {
             if (clearAnimation) {
                 visibleAnimations.remove(location);
@@ -261,7 +263,9 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
                     outOfViewMultiFaces.add(location);
                 }
             }
-            map.setFace(x, y, location.getLayer(), face);
+            synchronized (map) {
+                map.setFace(x, y, location.getLayer(), face);
+            }
         }
     }
 
@@ -270,7 +274,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      */
     @Override
     public void mapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
-        assert Thread.holdsLock(map);
+        assert Thread.holdsLock(sync);
         final Animation animation = animations.get(animationNum);
         if (animation == null) {
             System.err.println("unknown animation id "+animationNum+", ignoring");
@@ -278,7 +282,9 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         }
 
         synchronized (sync) {
-            map.setFace(location.getX(), location.getY(), location.getLayer(), null);
+            synchronized (map) {
+                map.setFace(location.getX(), location.getY(), location.getLayer(), null);
+            }
             visibleAnimations.add(location, animation, animationType);
         }
     }
@@ -288,7 +294,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      */
     @Override
     public void mapAnimationSpeed(@NotNull final Location location, final int animationSpeed) {
-        assert Thread.holdsLock(map);
+        assert Thread.holdsLock(sync);
         synchronized (sync) {
             visibleAnimations.updateSpeed(location, animationSpeed);
         }
@@ -299,9 +305,11 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      */
     @Override
     public void mapSmooth(@NotNull final Location location, final int smooth) {
-        assert Thread.holdsLock(map);
+        assert Thread.holdsLock(sync);
         synchronized (sync) {
-            map.setSmooth(location.getX(), location.getY(), location.getLayer(), smooth);
+            synchronized (map) {
+                map.setSmooth(location.getX(), location.getY(), location.getLayer(), smooth);
+            }
         }
     }
 
@@ -310,9 +318,11 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      */
     @Override
     public void mapDarkness(final int x, final int y, final int darkness) {
-        assert Thread.holdsLock(map);
+        assert Thread.holdsLock(sync);
         synchronized (sync) {
-            map.setDarkness(x, y, darkness);
+            synchronized (map) {
+                map.setDarkness(x, y, darkness);
+            }
         }
     }
 
@@ -321,53 +331,10 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      */
     @Override
     public void magicMap(final int x, final int y, final byte[][] data) {
-        assert Thread.holdsLock(map);
+        assert Thread.holdsLock(sync);
         synchronized (sync) {
-            map.setMagicMap(x, y, data);
-        }
-    }
-
-    /**
-     * Finishes processing of a set of map square changes. Notifies listeners
-     * about changes.
-     * @param alwaysProcess if set, notify listeners even if no changes are
-     * present
-     */
-    public void mapEnd(final boolean alwaysProcess) {
-        assert Thread.holdsLock(map);
-        synchronized (sync) {
-            final Set<CfMapSquare> squares = map.getDirtyMapSquares();
-            if (!alwaysProcess && squares.isEmpty()) {
-                return;
-            }
-
-            for (final MapListener listener : mapListeners.getListeners()) {
-                listener.mapChanged(map, squares);
-            }
-        }
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void mapScroll(final int dx, final int dy) {
-        assert Thread.holdsLock(map);
-        synchronized (sync) {
-            for (final Location location : outOfViewMultiFaces) {
-                visibleAnimations.remove(location);
-                map.setFace(location.getX(), location.getY(), location.getLayer(), null);
-            }
-            outOfViewMultiFaces.clear();
-
-            if (map.processMapScroll(dx, dy, mapWidth, mapHeight)) {
-                visibleAnimations.clear();
-            } else {
-                visibleAnimations.scroll(dx, dy);
-            }
-
-            for (final MapScrollListener mapscrollListener : mapScrollListeners.getListeners()) {
-                mapscrollListener.mapScrolled(dx, dy);
+            synchronized (map) {
+                map.setMagicMap(x, y, data);
             }
         }
     }
@@ -381,13 +348,68 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     }
 
     /**
+     * Finishes processing of a set of map square changes. Notifies listeners
+     * about changes.
+     * @param alwaysProcess if set, notify listeners even if no changes are
+     * present
+     */
+    public void mapEnd(final boolean alwaysProcess) {
+        assert Thread.holdsLock(sync);
+        synchronized (sync) {
+            synchronized (map) {
+                final Set<CfMapSquare> squares = map.getDirtyMapSquares();
+                if (!alwaysProcess && squares.isEmpty()) {
+                    return;
+                }
+
+                for (final MapListener listener : mapListeners.getListeners()) {
+                    listener.mapChanged(map, squares);
+                }
+            }
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void mapScroll(final int dx, final int dy) {
+        assert Thread.holdsLock(sync);
+        synchronized (sync) {
+            synchronized (map) {
+                for (final Location location : outOfViewMultiFaces) {
+                    visibleAnimations.remove(location);
+                    map.setFace(location.getX(), location.getY(), location.getLayer(), null);
+                }
+                outOfViewMultiFaces.clear();
+
+                if (map.processMapScroll(dx, dy, mapWidth, mapHeight)) {
+                    visibleAnimations.clear();
+                } else {
+                    visibleAnimations.scroll(dx, dy);
+                }
+            }
+
+            for (final MapScrollListener mapscrollListener : mapScrollListeners.getListeners()) {
+                mapscrollListener.mapScrolled(dx, dy);
+            }
+        }
+    }
+
+    /**
      * {@inheritDoc}
      */
     @Override
     public void faceUpdated(@NotNull final Face face) {
-        assert Thread.holdsLock(map);
-        synchronized (sync) {
-            map.updateFace(face.getFaceNum(), mapWidth, mapHeight);
+        //noinspection SynchronizeOnNonFinalField
+        synchronized (mapBegin()) {
+            //noinspection NestedSynchronizedStatement
+            synchronized (sync) {
+                synchronized (map) {
+                    map.updateFace(face.getFaceNum(), mapWidth, mapHeight);
+                }
+            }
+            mapEnd();
         }
     }
 
