@@ -2907,7 +2907,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             debugProtocol.debugProtocolWrite("recv map2 begin");
         }
         if (crossfireUpdateMapListener != null) {
-            //noinspection NestedSynchronizedStatement
             synchronized (crossfireUpdateMapListener.mapBegin()) {
                 while (packet.hasRemaining()) {
                     final int coord = getInt2(packet);
