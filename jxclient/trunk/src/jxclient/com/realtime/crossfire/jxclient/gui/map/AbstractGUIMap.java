@@ -46,6 +46,8 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -85,8 +87,8 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private final SmoothingRenderer smoothingRenderer;
 
     /**
-     * Synchronizes access to {@link #bufferedImage} and {@link
-     * #clearMapPending}.
+     * Synchronizes access to {@link #bufferedImage}, {@link #clearMapPending},
+     * and {@link #scrollMapPending}.
      */
     @NotNull
     private final Object bufferedImageSync = new Object();
@@ -102,6 +104,12 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * Whether the map area should be blanked.
      */
     private boolean clearMapPending = true;
+
+    /**
+     * Pending map scrolls.
+     */
+    @NotNull
+    private final Deque<Long> scrollMapPending = new ArrayDeque<Long>();
 
     /**
      * The map width in squares.
@@ -236,6 +244,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         public void commandNewmapReceived() {
             synchronized (bufferedImageSync) {
                 clearMapPending = true;
+                scrollMapPending.clear();
             }
             setChanged();
         }
@@ -262,13 +271,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         @Override
         public void mapScrolled(final int dx, final int dy) {
             synchronized (bufferedImageSync) {
-                final Graphics g = createBufferGraphics();
-                try {
-                    updateScrolledMap(g, dx, dy);
-                    markPlayer(g, dx, dy);
-                } finally {
-                    g.dispose();
-                }
+                scrollMapPending.offerLast(((long)dx<<32)|(dy&0xFFFFFFFFL));
             }
             setChanged();
         }
@@ -690,6 +693,17 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         if (clearMapPending) {
             clearMapPending = false;
             clearMap(graphics);
+        }
+        while (true) {
+            final Long scrollMap = scrollMapPending.pollFirst();
+            if (scrollMap == null) {
+                break;
+            }
+            final long tmp = scrollMap;
+            final int dx = (int)(tmp>>32);
+            final int dy = (int)tmp;
+            updateScrolledMap(graphics, dx, dy);
+            markPlayer(graphics, dx, dy);
         }
         return graphics;
     }
