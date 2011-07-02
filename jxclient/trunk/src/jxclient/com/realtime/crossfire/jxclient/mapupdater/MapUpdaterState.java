@@ -479,7 +479,9 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      */
     @Override
     public void tick(final int tickNo) {
-        visibleAnimations.tick(tickNo);
+        synchronized (sync) {
+            visibleAnimations.tick(tickNo);
+        }
     }
 
 }
