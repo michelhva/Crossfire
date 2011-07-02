@@ -12,7 +12,7 @@ resist_fear 100
 resist_poison 90
 resist_magic 30
 exp 20000
-ac -6
+ac -3
 wc -10
 dam 16
 hp 800

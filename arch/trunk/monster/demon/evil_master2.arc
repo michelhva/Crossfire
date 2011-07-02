@@ -14,7 +14,7 @@ maxsp 1000
 exp 400000
 dam 80
 wc -60
-ac -50
+ac -25
 attacktype 5242880
 resist_physical 100
 resist_magic 30

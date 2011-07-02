@@ -7,7 +7,7 @@ maxhp 6000
 exp 900000
 dam 95
 wc -100
-ac -120
+ac -60
 speed -0.99
 level 120
 resist_physical 95

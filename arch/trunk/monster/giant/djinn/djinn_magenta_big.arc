@@ -30,7 +30,7 @@ attack_movement 7
 attacktype 15
 see_invisible 1
 exp 800000
-ac -50
+ac -25
 wc -45
 dam 90
 hp 31000

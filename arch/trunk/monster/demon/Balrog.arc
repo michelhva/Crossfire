@@ -25,7 +25,7 @@ see_invisible 1
 attack_movement 5
 alive 1
 exp 400000
-ac -20
+ac -10
 wc -30
 dam 60
 Str 90

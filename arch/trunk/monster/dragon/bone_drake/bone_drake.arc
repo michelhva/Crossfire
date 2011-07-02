@@ -17,7 +17,7 @@ resist_fear 100
 resist_fire 70
 resist_electricity 70
 resist_blind 100
-ac -20
+ac -10
 wc -60
 dam 40
 exp 100000

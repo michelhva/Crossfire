@@ -21,7 +21,7 @@ resist_fear 100
 resist_fire -100
 resist_magic 50
 resist_blind 100
-ac -8
+ac -4
 wc -15
 dam 10
 attacktype 4194305

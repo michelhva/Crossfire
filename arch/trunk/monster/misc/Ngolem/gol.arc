@@ -16,7 +16,7 @@ maxsp 30
 exp 100000
 dam 50
 wc -20
-ac -40
+ac -20
 level 50
 resist_electricity 100
 resist_fear 100

@@ -8,7 +8,7 @@ move_type walk
 level 35
 hp 6000
 maxhp 6000
-ac -5
+ac -2
 wc -34
 dam 65
 speed 0.4

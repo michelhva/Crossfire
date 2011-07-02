@@ -19,7 +19,7 @@ resist_blind 90
 dam 20
 see_invisible 1
 wc -3
-ac -3
+ac -1
 no_pick 1
 alive 1
 maxsp 40

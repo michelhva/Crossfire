@@ -12,7 +12,7 @@ alive 1
 no_pick 1
 exp 250
 level 10
-ac -5
+ac -2
 hp 100
 maxhp 100
 wc -5

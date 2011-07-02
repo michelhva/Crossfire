@@ -23,7 +23,7 @@ resist_poison 100
 resist_paralyze 100
 resist_fear 100
 resist_blind 75
-ac -15
+ac -7
 wc -20
 dam 19
 exp 100000

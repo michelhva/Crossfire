@@ -22,7 +22,7 @@ resist_magic 60
 resist_blind 100
 resist_cold -20
 resist_confusion -50
-ac -15
+ac -7
 wc -22
 dam 30
 exp 150000

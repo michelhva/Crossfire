@@ -44,7 +44,7 @@ resist_confusion 100
 resist_drain 100
 resist_paralyze 100
 resist_fear 100
-ac -15
+ac -7
 wc -35
 dam 30
 body_skill 1

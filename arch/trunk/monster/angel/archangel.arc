@@ -16,7 +16,7 @@ Str 29
 Int 25
 Pow 60
 exp 500000
-ac -10
+ac -5
 wc -40
 dam 60
 speed 0.300000

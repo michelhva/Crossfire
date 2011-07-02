@@ -17,7 +17,7 @@ maxhp 10000
 exp 30000
 dam 70
 wc -20
-ac -30
+ac -15
 resist_physical 100
 speed .4
 level 30

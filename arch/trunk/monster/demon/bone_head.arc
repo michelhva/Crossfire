@@ -20,7 +20,7 @@ resist_cold 100
 resist_poison 100
 resist_paralyze 100
 resist_fear 100
-ac -2
+ac -1
 Pow 16
 maxsp 50
 hp 25000

@@ -17,7 +17,7 @@ resist_godpower 80
 resist_holyword 70
 resist_blind 100
 exp 300000
-ac -15
+ac -7
 wc -30
 dam 30
 hp 1500

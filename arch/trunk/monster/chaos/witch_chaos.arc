@@ -22,7 +22,7 @@ resist_drain -100
 resist_weaponmagic -100
 attacktype 262144
 attack_movement 3
-ac -8
+ac -4
 wc -7
 dam 30
 hp 1200

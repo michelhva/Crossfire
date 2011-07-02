@@ -15,7 +15,7 @@ attacktype 5
 can_see_in_dark 1
 see_invisible 1
 exp 10000
-ac -2
+ac -1
 wc -3
 dam 30
 Str 40

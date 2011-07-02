@@ -29,7 +29,7 @@ no_pick 1
 see_invisible 1
 alive 1
 exp 2000000
-ac -20
+ac -10
 wc -30
 dam 40
 Str 90

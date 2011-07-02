@@ -13,7 +13,7 @@ resist_electricity 30
 resist_poison 30
 resist_blind 100
 exp 300000
-ac -14
+ac -7
 wc -20
 dam 40
 resist_physical 35

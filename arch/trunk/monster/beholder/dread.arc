@@ -18,7 +18,7 @@ maxsp 30
 can_cast_spell 1
 hp 1500
 maxhp 1500
-ac -10
+ac -5
 wc -20
 dam 25
 level 60

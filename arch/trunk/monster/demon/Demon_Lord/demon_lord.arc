@@ -12,7 +12,7 @@ maxsp 80
 hp 3000
 maxhp 3000
 exp 300000
-ac -11
+ac -5
 dam 40
 wc -30
 weight 8000000

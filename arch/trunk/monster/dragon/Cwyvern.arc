@@ -22,7 +22,7 @@ resist_paralyze 100
 resist_blind 100
 resist_electricity 50
 attacktype 29
-ac -10
+ac -5
 wc -20
 dam 30
 exp 200000

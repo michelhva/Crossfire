@@ -29,7 +29,7 @@ resist_paralyze 50
 resist_confusion -100
 see_invisible 1
 exp 250000
-ac -10
+ac -5
 wc -15
 dam 30
 hp 4000

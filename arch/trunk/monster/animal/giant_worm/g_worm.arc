@@ -22,7 +22,7 @@ resist_paralyze 100
 resist_death 100
 resist_blind 100
 exp 100000
-ac -15
+ac -7
 wc -10
 dam 50
 attacktype 3137

@@ -37,7 +37,7 @@ resist_drain 100
 resist_slow 100
 resist_cancellation 65
 resist_counterspell 65
-ac -50
+ac -25
 wc -70
 maxsp 10000
 sp 10000

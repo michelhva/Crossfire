@@ -14,7 +14,7 @@ monster 1
 move_type walk
 attack_movement 4
 alive 1
-ac -10
+ac -5
 wc 20
 dam 12
 hp 600

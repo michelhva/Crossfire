@@ -8,7 +8,7 @@ move_type walk fly_low
 level 27
 hp 4000
 maxhp 4000
-ac -5
+ac -2
 wc -30
 dam 50
 speed 0.3
