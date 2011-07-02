@@ -39,12 +39,6 @@ import org.jetbrains.annotations.NotNull;
 public class CfMapAnimations {
 
     /**
-     * Synchronization object.
-     */
-    @NotNull
-    private final Object sync = new Object();
-
-    /**
      * The random number generator for {@link Map2#ANIM_RANDOM} type
      * animations.
      */
@@ -104,12 +98,10 @@ public class CfMapAnimations {
      * Forgets all animations.
      */
     public void clear() {
-        synchronized (sync) {
-            animations.clear();
-            animationStates.clear();
-            syncAnimationStates.clear();
-            pendingTickUpdates.clear();
-        }
+        animations.clear();
+        animationStates.clear();
+        syncAnimationStates.clear();
+        pendingTickUpdates.clear();
     }
 
     /**
@@ -151,12 +143,10 @@ public class CfMapAnimations {
             break;
         }
 
-        synchronized (sync) {
-            animationStates.put(animationState, null);
-            animations.add(location, animationState);
-            if (addToPendingTickUpdates) {
-                pendingTickUpdates.add(animationState);
-            }
+        animationStates.put(animationState, null);
+        animations.add(location, animationState);
+        if (addToPendingTickUpdates) {
+            pendingTickUpdates.add(animationState);
         }
     }
 
@@ -166,10 +156,8 @@ public class CfMapAnimations {
      * @param y the y-coordinate to un-animate
      */
     public void remove(final int x, final int y) {
-        synchronized (sync) {
-            for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
-                animations.remove(new Location(x, y, layer));
-            }
+        for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
+            animations.remove(new Location(x, y, layer));
         }
     }
 
@@ -178,9 +166,7 @@ public class CfMapAnimations {
      * @param location the location to un-animate
      */
     public void remove(@NotNull final Location location) {
-        synchronized (sync) {
-            animations.remove(location);
-        }
+        animations.remove(location);
     }
 
     /**
@@ -189,9 +175,7 @@ public class CfMapAnimations {
      * @param speed the new animation speed
      */
     public void updateSpeed(@NotNull final Location location, final int speed) {
-        synchronized (sync) {
-            animations.updateSpeed(location, speed);
-        }
+        animations.updateSpeed(location, speed);
     }
 
     /**
@@ -201,9 +185,7 @@ public class CfMapAnimations {
      * @param dy the y-distance to scroll
      */
     public void scroll(final int dx, final int dy) {
-        synchronized (sync) {
-            animations.scroll(dx, dy, width, height);
-        }
+        animations.scroll(dx, dy, width, height);
     }
 
     /**
@@ -211,14 +193,11 @@ public class CfMapAnimations {
      * @param tickNo the current tick number
      */
     public void tick(final int tickNo) {
-        final Iterable<AnimationState> animationStatesToUpdate;
-        synchronized (sync) {
-            for (final AnimationState animationState : pendingTickUpdates) {
-                animationState.setTickNo(tickNo);
-            }
-            pendingTickUpdates.clear();
-            animationStatesToUpdate = new ArrayList<AnimationState>(animationStates.keySet());
+        for (final AnimationState animationState : pendingTickUpdates) {
+            animationState.setTickNo(tickNo);
         }
+        pendingTickUpdates.clear();
+        final Iterable<AnimationState> animationStatesToUpdate = new ArrayList<AnimationState>(animationStates.keySet());
         synchronized (mapUpdaterState.mapBegin()) {
             for (final AnimationState animationState : animationStatesToUpdate) {
                 animationState.updateTickNo(tickNo);
@@ -233,11 +212,9 @@ public class CfMapAnimations {
      * @param height the map height
      */
     public void setMapSize(final int width, final int height) {
-        synchronized (sync) {
-            this.width = width;
-            this.height = height;
-            clear();
-        }
+        this.width = width;
+        this.height = height;
+        clear();
     }
 
 }
