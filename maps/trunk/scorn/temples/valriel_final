@@ -8,7 +8,7 @@ enter_x 29
 enter_y 50
 msg
 Created:  2006-06-11 Gene Alexander (poof@eracc.com)
-Modified: 2010-07-10 Nicolas Weeger
+Modified: 2011-07-02 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -9059,8 +9059,7 @@ name girdle of Valriel
 name_pl girdles of Valriel
 title of the Crusade
 msg
-A glowing girdle that grants the wearer
-some benefits compliments of Valriel
+A glowing girdle that grants the wearer some benefits compliments of Valriel
 endmsg
 Str 3
 Dex 3
@@ -9088,8 +9087,7 @@ arch ladder_down
 name ladder back to Scorn
 slaying /scorn/temples/valriel
 msg
-You feel relieved to have survived your
-trek to the entrance to Valriel's kingdom.
+You feel relieved to have survived your trek to the entrance to Valriel's kingdom.
 endmsg
 hp 9
 sp 8
