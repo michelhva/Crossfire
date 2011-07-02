@@ -1,5 +1,6 @@
 Object skill_pyromancy
 name pyromancy
+face spell_pyromancy.111
 skill pyromancy
 type 43
 invisible 1

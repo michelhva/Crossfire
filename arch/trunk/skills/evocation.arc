@@ -1,5 +1,6 @@
 Object skill_evocation
 name evocation
+face spell_evocation.111
 skill evocation
 type 43
 invisible 1
