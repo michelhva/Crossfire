@@ -1,5 +1,6 @@
 Object skill_summoning
 name summoning
+face spell_summoner.111
 skill summoning
 type 43
 invisible 1

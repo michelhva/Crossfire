@@ -1,5 +1,6 @@
 Object skill_sorcery
 name sorcery
+face spell_sorcery.111
 skill sorcery
 type 43
 invisible 1

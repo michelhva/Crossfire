@@ -1,5 +1,6 @@
 Object skill_praying
 name praying
+face spell_praying.111
 skill praying
 type 43
 invisible 1
