@@ -880,11 +880,7 @@ public class JXCWindowRenderer {
         if (mouse == null || dialog.isHidden(rendererGuiState)) {
             openDialogs.add(dialog);
             if (!dialog.isHidden(rendererGuiState)) {
-                addToLayeredPane(dialog, 1, 0);
-                dialog.setSize(dialog.getPreferredSize());
-                if (frame != null) {
-                    frame.validate();
-                }
+                openDialogInt(dialog);
             }
         } else {
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y)) {
@@ -892,21 +888,32 @@ public class JXCWindowRenderer {
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.add(dialog);
                 assert !dialog.isHidden(rendererGuiState);
-                addToLayeredPane(dialog, 1, 0);
-                dialog.setSize(dialog.getPreferredSize());
-                if (frame != null) {
-                    frame.validate();
-                }
+                openDialogInt(dialog);
                 mouseTracker.mouseEntered(findElement(mouseEvent), mouseEvent);
             } else {
                 openDialogs.add(dialog);
                 assert !dialog.isHidden(rendererGuiState);
-                addToLayeredPane(dialog, 1, 0);
-                dialog.setSize(dialog.getPreferredSize());
-                if (frame != null) {
-                    frame.validate();
-                }
+                openDialogInt(dialog);
             }
+        }
+    }
+
+    /**
+     * Opens a dialog. Resizes the dialog if necessary.
+     * @param dialog the dialog to open
+     */
+    private void openDialogInt(@NotNull final Gui dialog) {
+        addToLayeredPane(dialog, 1, 0);
+        final Dimension preferredSize = dialog.getPreferredSize();
+        final Dimension size;
+        if (preferredSize == null) {
+            size = new Dimension(320, 200);
+        } else {
+            size = new Dimension(Math.min(preferredSize.width, windowWidth), Math.min(preferredSize.height, windowHeight));
+        }
+        dialog.setSize(size);
+        if (frame != null) {
+            frame.validate();
         }
     }
 
