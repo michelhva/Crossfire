@@ -504,23 +504,26 @@ public class MapUpdaterStateTest {
         final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, null);
 
         mapUpdaterState.newMap(5, 5);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(0, 0, 0), 2, true);
-        mapUpdaterState.mapFace(new Location(1, 0, 0), 2, true);
-        mapUpdaterState.mapFace(new Location(0, 1, 0), 2, true);
-        mapUpdaterState.mapFace(new Location(1, 1, 0), 2, true);
-        mapUpdaterState.mapFace(new Location(1, 1, 6), 1, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(0, 0, 0), 2, true);
+            mapUpdaterState.mapFace(new Location(1, 0, 0), 2, true);
+            mapUpdaterState.mapFace(new Location(0, 1, 0), 2, true);
+            mapUpdaterState.mapFace(new Location(1, 1, 0), 2, true);
+            mapUpdaterState.mapFace(new Location(1, 1, 6), 1, true);
+            mapUpdaterState.mapEnd(true);
+        }
         Assert.assertEquals(""+"[H0=_,T6=M][H0=_,T6=M]\n"+"[H0=_,T6=M][H0=_,H6=M]\n", toString(mapUpdaterState.getMap(), 0, 0, 2, 2));
 
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapClear(1, 0);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapClear(1, 0);
+            mapUpdaterState.mapEnd(true);
+        }
         Assert.assertEquals(""+"[H0=_,T6=M][#,H0=_,T6=M]\n"+"[H0=_,T6=M][H0=_,H6=M]\n", toString(mapUpdaterState.getMap(), 0, 0, 2, 2));
 
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapClear(1, 1);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapClear(1, 1);
+            mapUpdaterState.mapEnd(true);
+        }
         Assert.assertEquals(""+"[H0=_][#,H0=_,T6=M]\n"+"[H0=_][#,H0=_,H6=M]\n", toString(mapUpdaterState.getMap(), 0, 0, 2, 2));
     }
 
@@ -543,64 +546,73 @@ public class MapUpdaterStateTest {
         final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, null);
 
         mapUpdaterState.newMap(10, 10);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(7, 8, 0), 4607, true);
-        mapUpdaterState.mapFace(new Location(8, 8, 0), 4607, true);
-        mapUpdaterState.mapFace(new Location(9, 8, 0), 4607, true);
-        mapUpdaterState.mapFace(new Location(7, 9, 0), 4607, true);
-        mapUpdaterState.mapFace(new Location(8, 9, 0), 4607, true);
-        mapUpdaterState.mapFace(new Location(9, 9, 0), 4607, true);
-        mapUpdaterState.mapFace(new Location(9, 9, 6), 312, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(7, 8, 0), 4607, true);
+            mapUpdaterState.mapFace(new Location(8, 8, 0), 4607, true);
+            mapUpdaterState.mapFace(new Location(9, 8, 0), 4607, true);
+            mapUpdaterState.mapFace(new Location(7, 9, 0), 4607, true);
+            mapUpdaterState.mapFace(new Location(8, 9, 0), 4607, true);
+            mapUpdaterState.mapFace(new Location(9, 9, 0), 4607, true);
+            mapUpdaterState.mapFace(new Location(9, 9, 6), 312, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
         mapUpdaterState.getMapAnimations().tick(26);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(9, 9, 6), 307, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(9, 9, 6), 307, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
         mapUpdaterState.getMapAnimations().tick(27);
         mapUpdaterState.getMapAnimations().tick(28);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(9, 9, 6), 308, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(9, 9, 6), 308, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
         mapUpdaterState.getMapAnimations().tick(29);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(0, 5, 6), 0, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(0, 5, 6), 0, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
         mapUpdaterState.getMapAnimations().tick(30);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(9, 9, 6), 309, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(9, 9, 6), 309, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
         mapUpdaterState.getMapAnimations().tick(31);
         mapUpdaterState.getMapAnimations().tick(32);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(9, 9, 6), 308, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(9, 9, 6), 308, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
         mapUpdaterState.getMapAnimations().tick(33);
         mapUpdaterState.getMapAnimations().tick(34);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(9, 9, 6), 0, true);
-        mapUpdaterState.mapFace(new Location(10, 9, 6), 307, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(9, 9, 6), 0, true);
+            mapUpdaterState.mapFace(new Location(10, 9, 6), 307, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
         mapUpdaterState.getMapAnimations().tick(35);
         mapUpdaterState.getMapAnimations().tick(36);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(0, 6, 6), 932, true);
-        mapUpdaterState.mapFace(new Location(9, 9, 6), 312, true);
-        mapUpdaterState.mapClear(10, 9);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(0, 6, 6), 932, true);
+            mapUpdaterState.mapFace(new Location(9, 9, 6), 312, true);
+            mapUpdaterState.mapClear(10, 9);
+            mapUpdaterState.mapEnd(true);
+        }
 
         mapUpdaterState.getMapAnimations().tick(37);
         mapUpdaterState.getMapAnimations().tick(38);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(8, 9, 6), 310, true);
-        mapUpdaterState.mapFace(new Location(9, 9, 6), 0, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(8, 9, 6), 310, true);
+            mapUpdaterState.mapFace(new Location(9, 9, 6), 0, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
         mapUpdaterState.getMapAnimations().tick(39);
 
@@ -621,14 +633,16 @@ public class MapUpdaterStateTest {
         final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, null);
 
         mapUpdaterState.newMap(10, 10);
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(5, 10, 6), 7, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(5, 10, 6), 7, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(4, 10, 6), 8, true);
-        mapUpdaterState.mapClear(5, 10);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(4, 10, 6), 8, true);
+            mapUpdaterState.mapClear(5, 10);
+            mapUpdaterState.mapEnd(true);
+        }
 
         Assert.assertEquals(""+"[T6=b.x12][T6=b.x12][]\n"+"[T6=b.x12][H6=b.x12][#,H6=a.x11]\n", toString(mapUpdaterState.getMap(), 3, 9, 3, 2));
     }
@@ -646,39 +660,47 @@ public class MapUpdaterStateTest {
         mapUpdaterState.newMap(23, 16);
         defineFace(faceCache, 1316, "demon_lord.x11", PNG128X256);
 
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapFace(new Location(4, 17, 6), 1316, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapFace(new Location(4, 17, 6), 1316, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapScroll(-1, 0);
-        mapUpdaterState.mapFace(new Location(5, 17, 6), 1316, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapScroll(-1, 0);
+            mapUpdaterState.mapFace(new Location(5, 17, 6), 1316, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapClear(5, 17);
-        mapUpdaterState.mapFace(new Location(6, 17, 6), 1316, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapClear(5, 17);
+            mapUpdaterState.mapFace(new Location(6, 17, 6), 1316, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapScroll(-1, 0);
-        mapUpdaterState.mapFace(new Location(7, 17, 6), 1316, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapScroll(-1, 0);
+            mapUpdaterState.mapFace(new Location(7, 17, 6), 1316, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapScroll(-1, 0);
-        mapUpdaterState.mapFace(new Location(8, 17, 6), 1316, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapScroll(-1, 0);
+            mapUpdaterState.mapFace(new Location(8, 17, 6), 1316, true);
+            mapUpdaterState.mapEnd(true);
+        }
 
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapScroll(-1, 0);
-        mapUpdaterState.mapFace(new Location(9, 17, 6), 1316, true);
-        mapUpdaterState.mapEnd(true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapScroll(-1, 0);
+            mapUpdaterState.mapFace(new Location(9, 17, 6), 1316, true);
+            mapUpdaterState.mapEnd(true);
+        }
         Assert.assertEquals(""+"[][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][][][]\n", toString(mapUpdaterState.getMap(), 5, 10, 9, 1));
 
-        mapUpdaterState.mapBegin();
-        mapUpdaterState.mapScroll(-1, 0);
-        mapUpdaterState.mapFace(new Location(11, 17, 6), 1316, true);
+        synchronized (mapUpdaterState.mapBegin()) {
+            mapUpdaterState.mapScroll(-1, 0);
+            mapUpdaterState.mapFace(new Location(11, 17, 6), 1316, true);
+            mapUpdaterState.mapEnd();
+        }
         Assert.assertEquals(""+"[][][][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][]\n", toString(mapUpdaterState.getMap(), 5, 10, 9, 1));
     }
 
