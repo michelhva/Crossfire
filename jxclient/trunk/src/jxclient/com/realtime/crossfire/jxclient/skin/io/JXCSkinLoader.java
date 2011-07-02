@@ -926,7 +926,7 @@ public class JXCSkinLoader {
             final Color appliedColor = ParseUtils.parseColorNull(args.get());
             final Image appliedImage = imageParser.getImage(appliedColor, args.getPrev());
             final Color unidentifiedColor = ParseUtils.parseColorNull(args.get());
-            final Image unidentifiedImage = imageParser.getImage(appliedColor, args.getPrev());
+            final Image unidentifiedImage = imageParser.getImage(unidentifiedColor, args.getPrev());
             final Color selectorColor = ParseUtils.parseColorNull(args.get());
             final Image selectorImage = imageParser.getImage(selectorColor, args.getPrev());
             final Color lockedColor = ParseUtils.parseColorNull(args.get());
