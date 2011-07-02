@@ -276,7 +276,11 @@ public class GUIItemList extends GUIList {
 
         switch (modifiers&Modifiers.MASK) {
         case Modifiers.NONE:
-            crossfireServerConnection.sendExamine(item.getTag());
+            if (item.isItemGroupButton()) {
+                crossfireServerConnection.sendApply(item.getTag());
+            } else {
+                crossfireServerConnection.sendExamine(item.getTag());
+            }
             break;
 
         case Modifiers.SHIFT:
