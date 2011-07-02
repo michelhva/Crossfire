@@ -11,7 +11,7 @@ resist_electricity 100
 resist_fear 100
 resist_magic 50
 exp 100000
-ac -5
+ac -2
 wc -20
 dam 20
 Str 60

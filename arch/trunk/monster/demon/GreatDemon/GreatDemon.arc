@@ -20,7 +20,7 @@ maxsp 150
 hp 8000
 maxhp 8000
 exp 550000
-ac -11
+ac -6
 dam 80
 wc -50
 weight 8000000

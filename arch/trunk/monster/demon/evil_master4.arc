@@ -15,7 +15,7 @@ maxsp 250
 exp 200000
 dam 100
 wc -50
-ac -55
+ac -27
 resist_physical 100
 resist_magic 20
 speed 0.500000

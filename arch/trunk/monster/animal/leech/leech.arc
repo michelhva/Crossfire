@@ -13,7 +13,7 @@ alive 1
 can_see_in_dark 1
 exp 7000
 level 20
-ac 3
+ac 4
 wc 0
 dam 30
 attacktype 16844928

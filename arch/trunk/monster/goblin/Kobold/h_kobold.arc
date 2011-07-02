@@ -12,7 +12,7 @@ maxhp 2000
 exp 50000
 dam 70
 wc -30
-ac -30
+ac -15
 speed 1.200000
 attack_movement 3
 level 50

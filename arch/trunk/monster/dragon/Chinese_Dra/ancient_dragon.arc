@@ -5,7 +5,7 @@ maxhp 4000
 maxsp 60
 exp 100000
 dam 30
-ac -12
+ac -6
 speed -0.300000
 level 20
 randomitems chinese

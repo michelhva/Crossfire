@@ -10,7 +10,7 @@ maxhp 100
 exp 300
 dam 20
 wc -100
-ac -10
+ac -5
 speed -1.000000
 level 80
 attacktype 1

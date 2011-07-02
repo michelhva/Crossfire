@@ -46,7 +46,7 @@ resist_drain 100
 resist_paralyze 100
 resist_fear 100
 attacktype 5
-ac -15
+ac -7
 wc -35
 dam 45
 body_skill 1

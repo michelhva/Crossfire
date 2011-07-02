@@ -15,7 +15,7 @@ maxsp 40
 exp 100000
 dam 200
 wc -100
-ac -50
+ac -25
 speed 0.150000
 level 50
 resist_physical 50

@@ -13,7 +13,7 @@ Wis 15
 no_pick 1
 alive 1
 exp 50000
-ac -4
+ac -2
 wc -10
 dam 20
 hp 1000

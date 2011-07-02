@@ -18,7 +18,7 @@ resist_physical 50
 resist_magic 50
 resist_blind 90
 wc 5
-ac -5
+ac -2
 no_pick 1
 invisible 1
 see_invisible 1

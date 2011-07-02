@@ -7,7 +7,7 @@ type 36
 material 2
 materialname silver
 value 1
-weight 10
+weight 28
 name_pl silver coins
 client_type 2001
 end

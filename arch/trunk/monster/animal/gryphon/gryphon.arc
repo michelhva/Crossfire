@@ -24,7 +24,7 @@ resist_magic 100
 resist_poison 100
 resist_paralyze 100
 resist_fear 100
-ac -15
+ac -7
 wc -20
 dam 19
 exp 350000

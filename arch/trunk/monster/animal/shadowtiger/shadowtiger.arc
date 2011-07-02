@@ -12,7 +12,7 @@ see_invisible 1
 Con 30
 maxhp 2000
 hp 2000
-ac -13
+ac -6
 wc -20
 dam 33
 level 20

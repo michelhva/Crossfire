@@ -26,7 +26,7 @@ resist_blind 100
 resist_cold -50
 resist_confusion -100
 resist_paralyze 80
-ac -16
+ac -8
 wc -25
 dam 40
 attacktype 5

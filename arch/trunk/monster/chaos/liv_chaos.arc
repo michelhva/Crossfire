@@ -13,7 +13,7 @@ Int 3
 Pow 3
 sp 1
 maxsp 50
-ac -15
+ac -7
 wc -5
 dam 20
 alive 1

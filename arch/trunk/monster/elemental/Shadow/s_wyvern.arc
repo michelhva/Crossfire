@@ -14,7 +14,7 @@ maxhp 1500
 Con 25
 speed -0.3
 exp 50000
-ac -25
+ac -12
 dam 33
 wc -17
 level 40

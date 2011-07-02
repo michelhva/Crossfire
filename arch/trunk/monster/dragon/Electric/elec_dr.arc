@@ -22,7 +22,7 @@ resist_confusion 100
 resist_fear 100
 resist_blind 100
 resist_fire -100
-ac -12
+ac -6
 wc -20
 dam 25
 exp 70000

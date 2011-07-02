@@ -9,7 +9,7 @@ resist_fear 50
 attacktype 65
 can_see_in_dark 1
 exp 70000
-ac -15
+ac -7
 wc -50
 dam 25
 hp 3000

@@ -14,7 +14,7 @@ maxhp 800
 Con 6
 speed -0.2
 exp 5000
-ac -9
+ac -4
 dam 9
 wc -20
 level 20
@@ -48,7 +48,7 @@ maxsp 150
 hp 6000
 maxhp 6000
 exp 300000
-ac -11
+ac -5
 dam 70
 wc -30
 weight 130000

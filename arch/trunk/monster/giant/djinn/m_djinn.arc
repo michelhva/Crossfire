@@ -31,7 +31,7 @@ resist_cold 50
 attack_movement 7
 see_invisible 1
 exp 70000
-ac -15
+ac -7
 wc -5
 dam 15
 hp 2500

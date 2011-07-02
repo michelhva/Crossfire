@@ -32,7 +32,7 @@ Str 25
 hp 500
 maxhp 500
 Con 40
-ac -7
+ac -3
 exp 5000
 wc 19
 dam 18

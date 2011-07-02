@@ -7,7 +7,7 @@ maxhp 32000
 maxsp 400
 exp 900000
 dam 100
-ac -12
+ac -6
 speed -0.300000
 level 110
 resist_magic 100

@@ -12,7 +12,7 @@ move_type walk
 sleep 1
 Wis 5
 alive 1
-ac 1
+ac 5
 wc 1
 dam 50
 weight 1

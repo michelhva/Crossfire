@@ -14,7 +14,7 @@ alive 1
 unaggressive 0
 Str 18
 exp 20000
-ac -5
+ac -2
 wc -10
 dam 15
 Pow 40

@@ -13,7 +13,7 @@ Wis 10
 resist_fear 100
 resist_poison 75
 exp 30000
-ac -6
+ac -3
 wc -10
 dam 60
 hp 4000

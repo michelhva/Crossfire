@@ -16,7 +16,7 @@ Str 29
 Int 25
 Pow 60
 exp 200000
-ac -5
+ac -2
 wc -20
 dam 20
 sp 100

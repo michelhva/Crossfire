@@ -14,7 +14,7 @@ maxhp 900
 Con 20
 speed -0.4
 exp 30000
-ac -20
+ac -10
 dam 13
 wc -15
 level 30
