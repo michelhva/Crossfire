@@ -3177,6 +3177,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     pendingMapWidth = 0;
                     pendingMapHeight = 0;
                     setCurrentMapSize(thisMapWidth, thisMapHeight);
+                    if (thisMapWidth != preferredMapWidth && thisMapHeight != preferredMapHeight) {
+                        negotiateMapSize(preferredMapWidth, preferredMapHeight);
+                    }
                 } else if (pendingMapWidth > thisMapWidth && pendingMapHeight > thisMapHeight) {
                     pendingMapWidth = 0;
                     pendingMapHeight = 0;
@@ -3253,6 +3256,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         currentNumLookObjects = thisNumLookObjects;
                         if (debugProtocol != null) {
                             debugProtocol.debugProtocolWrite("processSetup: num_look_objects="+currentNumLookObjects);
+                        }
+                        if (currentNumLookObjects != preferredNumLookObjects) {
+                            negotiateNumLookObjects(preferredNumLookObjects);
                         }
                     }
                 }
@@ -4422,6 +4428,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             data[i] = byteBuffer.get(i);
         }
         return HexCodec.hexDump(data, 0, len);
+    }
+
+    /**
+     * Returns the currently negotiated setup value of "num_look_objects".
+     * @return the current size of the ground view
+     */
+    public int getCurrentNumLookObjects() {
+        return currentNumLookObjects;
     }
 
 }
