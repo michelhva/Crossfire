@@ -1,5 +1,8 @@
 2011-07-02  Andreas Kirschbaum
 
+	* Reliably negotiate map size and ground view size with server
+	when the main window is resized.
+
 	* Support left-clicks on arrow buttons in ground view.
 
 	* Prevent the right ground view arrow from vanishing.
