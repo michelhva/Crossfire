@@ -333,6 +333,16 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     @Override
     public boolean keyPressed(@NotNull final KeyEvent e) {
         switch (e.getKeyCode()) {
+        case KeyEvent.VK_ENTER:
+            final String command = text.toString();
+            commandCallback.updatePlayerName(command);
+            execute(command);
+            if (!hideInput) {
+                commandHistory.addCommand(command);
+            }
+            GuiUtils.setActive(this, false);
+            return true;
+
         case KeyEvent.VK_BACK_SPACE:
             synchronized (syncCursor) {
                 if (cursor > 0) {
@@ -423,6 +433,12 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             break;
         }
 
+        final char ch = e.getKeyChar();
+        if (ch != KeyEvent.CHAR_UNDEFINED && ch != (char)127 && ch >= ' ') {
+            insertChar(ch);
+            return true;
+        }
+
         return false;
     }
 
@@ -449,35 +465,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     @Override
     public boolean keyReleased(@NotNull final KeyEvent e) {
-        return false;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public boolean keyTyped(@NotNull final KeyEvent e) {
-        final char ch = e.getKeyChar();
-        switch (ch) {
-        case '\r':
-        case '\n':
-            final String command = text.toString();
-            commandCallback.updatePlayerName(command);
-            execute(command);
-            if (!hideInput) {
-                commandHistory.addCommand(command);
-            }
-            GuiUtils.setActive(this, false);
-            return true;
-
-        default:
-            if (ch != KeyEvent.CHAR_UNDEFINED && ch != (char)127 && ch >= ' ') {
-                insertChar(ch);
-                return true;
-            }
-            break;
-        }
-
         return false;
     }
 

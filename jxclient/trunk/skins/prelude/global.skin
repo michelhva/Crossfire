@@ -56,17 +56,17 @@ key code F10 0 exec command_shortcut9
 key code F11 0 exec command_shortcutA
 key code F12 0 exec command_shortcutB
 
-key char 82 -e tell <<reply_to>> -
-key char 97 apply
-key char 100 use_skill disarm traps
-key char 101 examine
-key char 105 mapinfo
-key char 106 use_skill jumping
-key char 109 -e maps -
-key char 115 use_skill find traps
-key char 112 use_skill praying
-key char 116 ready_skill throwing
-key char 119 who
+key code R 1 -e tell <<reply_to>> -
+key code A 0 apply
+key code D 0 use_skill disarm traps
+key code E 0 examine
+key code I 0 mapinfo
+key code J 0 use_skill jumping
+key code M 0 -e maps -
+key code S 0 use_skill find traps
+key code P 0 use_skill praying
+key code T 0 ready_skill throwing
+key code W 0 who
 key char 63 help
 key char 44 get
 key char 47 -e

@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.textinput;
 
-import com.realtime.crossfire.jxclient.gui.gui.KeyTypedHandler;
+import com.realtime.crossfire.jxclient.gui.gui.KeyPressedHandler;
 import java.awt.event.KeyEvent;
 import org.jetbrains.annotations.NotNull;
 
@@ -29,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners for keyboard input.
  * @author Andreas Kirschbaum
  */
-public interface KeyListener extends KeyTypedHandler {
+public interface KeyListener extends KeyPressedHandler {
 
     /**
      * Invoked when a key has been pressed.

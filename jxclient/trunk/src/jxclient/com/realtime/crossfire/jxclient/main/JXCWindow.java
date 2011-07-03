@@ -215,9 +215,7 @@ public class JXCWindow {
 
         @Override
         public void keyTyped(@NotNull final KeyEvent e) {
-            synchronized (semaphoreDrawing) {
-                keyHandler.keyTyped(e);
-            }
+            // ignore
         }
 
         @Override

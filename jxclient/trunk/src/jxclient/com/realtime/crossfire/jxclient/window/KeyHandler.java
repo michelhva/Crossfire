@@ -320,60 +320,6 @@ public class KeyHandler {
     }
 
     /**
-     * Handles a "key typed" event.
-     * @param e the key event to handle
-     */
-    private void handleKeyType(@NotNull final KeyEvent e) {
-        if (e.getKeyChar() == 27) // ignore ESC key
-        {
-            debugKeyboardWrite("keyTyped: ignoring ESC");
-            return;
-        }
-
-        if ((e.getModifiers()&~InputEvent.SHIFT_MASK) != 0) {
-            debugKeyboardWrite("keyTyped: ignoring event with non-shift modifiers");
-            return;
-        }
-
-        if (keybindingsManager.keyTyped(e.getKeyChar())) {
-            debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
-            commandQueue.resetRepeatCount();
-            return;
-        }
-
-        for (final Gui dialog : windowRenderer.getOpenDialogs()) {
-            if (!dialog.isHidden(windowRenderer.getGuiState())) {
-                if (dialog.handleKeyTyped(e)) {
-                    debugKeyboardWrite("keyTyped: dialog "+dialog+" consumed key");
-                    return;
-                }
-                if (dialog.isModal()) {
-                    debugKeyboardWrite("keyTyped: dialog "+dialog+" is modal");
-                    return;
-                }
-                debugKeyboardWrite("keyTyped: dialog "+dialog+" didn't consume key");
-            }
-        }
-
-        if (windowRenderer.handleKeyTyped(e)) {
-            debugKeyboardWrite("keyTyped: main gui consumed key");
-            return;
-        }
-
-        if (keybindingsManager.handleKeyTyped(e)) {
-            debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
-            return;
-        }
-
-        if (keyBindings != null && keyBindings.handleKeyTyped(e)) {
-            debugKeyboardWrite("keyTyped: skin default key bindings consumed key");
-            return;
-        }
-
-        debugKeyboardWrite("keyTyped: ignoring key");
-    }
-
-    /**
      * Handles a "key pressed" event.
      * @param e the key event to handle
      */
@@ -394,19 +340,6 @@ public class KeyHandler {
         debugKeyboardWrite("released", e);
         try {
             handleKeyRelease(e);
-        } finally {
-            debugKeyboardWrite("");
-        }
-    }
-
-    /**
-     * Handles a "key typed" event.
-     * @param e the key event to handle
-     */
-    public void keyTyped(@NotNull final KeyEvent e) {
-        debugKeyboardWrite("typed", e);
-        try {
-            handleKeyType(e);
         } finally {
             debugKeyboardWrite("");
         }
