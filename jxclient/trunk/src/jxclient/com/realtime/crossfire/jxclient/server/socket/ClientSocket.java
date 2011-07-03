@@ -355,6 +355,7 @@ public class ClientSocket {
                 reconnect = false;
                 if (host != null && port != 0) {
                     processDisconnect("reconnect to "+host+":"+port, false);
+                    disconnectPending = true;
                     assert host != null;
                     processConnect(host, port);
                 } else {
@@ -388,7 +389,6 @@ public class ClientSocket {
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:connecting to "+host+":"+port);
         }
-        disconnectPending = true;
         for (final ClientSocketListener clientSocketListener : clientSocketListeners.getListeners()) {
             clientSocketListener.connecting();
         }
