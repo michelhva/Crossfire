@@ -25,16 +25,16 @@ import java.awt.event.KeyEvent;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for classes that may handle "typed" key events.
+ * Interface for classes that may handle "pressed" key events.
  * @author Andreas Kirschbaum
  */
-public interface KeyTypedHandler {
+public interface KeyPressedHandler {
 
     /**
-     * Invoked when a key has been typed.
+     * Invoked when a key has been pressed.
      * @param e the key event for the key
      * @return whether the key event has been consumed
      */
-    boolean keyTyped(@NotNull KeyEvent e);
+    boolean keyPressed(@NotNull KeyEvent e);
 
 }

@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.gui.button.AbstractButton;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
-import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
 import com.realtime.crossfire.jxclient.skin.skin.Expression;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Component;
@@ -369,35 +368,29 @@ public class Gui extends JComponent {
      * @return whether a gui element did handle the event
      */
     public boolean handleKeyPress(@NotNull final KeyEvent e) {
-        if (activeElement != null && activeElement instanceof KeyListener) {
-            final KeyListener keyListener = (KeyListener)activeElement;
+        if (activeElement != null && activeElement instanceof KeyPressedHandler && ((KeyPressedHandler)activeElement).keyPressed(e)) {
+            return true;
+        }
+
+        if (activeElement != null && activeElement instanceof KeyPressedHandler) {
+            final KeyPressedHandler keyListener = (KeyPressedHandler)activeElement;
             if (keyListener.keyPressed(e)) {
                 return true;
             }
         }
 
-        return keyBindings.handleKeyPress(e);
-    }
-
-    /**
-     * Dispatches a key typed {@link KeyEvent}.
-     * @param e the event to dispatch
-     * @return whether a gui element did handle the event
-     */
-    public boolean handleKeyTyped(@NotNull final KeyEvent e) {
-        if (activeElement != null && activeElement instanceof KeyTypedHandler && ((KeyTypedHandler)activeElement).keyTyped(e)) {
-            return true;
-        }
-
-        if (e.getKeyChar() == '\r' || e.getKeyChar() == '\n' || e.getKeyChar() == ' ') {
+        switch (e.getKeyCode()) {
+        case KeyEvent.VK_ENTER:
+        case KeyEvent.VK_SPACE:
             final GUIElement defaultElement = getDefaultElement();
             if (defaultElement != null && defaultElement instanceof AbstractButton) {
                 ((AbstractButton)defaultElement).execute();
                 return true;
             }
+            break;
         }
 
-        return keyBindings.handleKeyTyped(e);
+        return keyBindings.handleKeyPress(e);
     }
 
     /**

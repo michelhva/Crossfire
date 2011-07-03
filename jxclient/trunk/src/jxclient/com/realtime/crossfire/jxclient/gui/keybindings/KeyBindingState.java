@@ -56,7 +56,7 @@ public class KeyBindingState {
 
     /**
      * The type of key binding: -1=invalid, 0=key code ({@link #keyCode} and
-     * {@link #modifiers} are valid), 1=key char ({@link #keyChar} is valid).
+     * {@link #modifiers} are valid).
      */
     private int type = -1;
 
@@ -69,11 +69,6 @@ public class KeyBindingState {
      * The modifiers. Only valid if <code>{@link #type} == 0</code>.
      */
     private int modifiers = 0;
-
-    /**
-     * The key character. Only valid if <code>{@link #type} == 1</code>.
-     */
-    private char keyChar = '\0';
 
     /**
      * Creates a new instance.
@@ -102,17 +97,6 @@ public class KeyBindingState {
     }
 
     /**
-     * Records a binding by key character.
-     * @param keyChar the key character that was typed
-     */
-    public void keyTyped(final char keyChar) {
-        if (state != 0) {
-            type = 1;
-            this.keyChar = keyChar;
-        }
-    }
-
-    /**
      * Records a key released event.
      * @return <code>true</code> if the dialog has finished, or
      *         <code>false</code> if the dialog is still active
@@ -124,32 +108,16 @@ public class KeyBindingState {
 
         assert type != -1;
         if (commands != null) {
-            if (type == 0) {
-                if (keyBindings != null) {
-                    keyBindings.addKeyBindingAsKeyCode(keyCode, modifiers, commands, false);
-                }
-            } else {
-                if (keyBindings != null) {
-                    keyBindings.addKeyBindingAsKeyChar(keyChar, commands, false);
-                }
+            if (keyBindings != null) {
+                keyBindings.addKeyBindingAsKeyCode(keyCode, modifiers, commands, false);
             }
         } else {
-            if (type == 0) {
-                if (keyBindings != null) {
-                    keyBindings.deleteKeyBindingAsKeyCode(keyCode, modifiers);
-                }
+            if (keyBindings != null) {
+                keyBindings.deleteKeyBindingAsKeyCode(keyCode, modifiers);
+            }
 
-                if (keyBindings2 != null) {
-                    keyBindings2.deleteKeyBindingAsKeyCode(keyCode, modifiers);
-                }
-            } else {
-                if (keyBindings != null) {
-                    keyBindings.deleteKeyBindingAsKeyChar(keyChar);
-                }
-
-                if (keyBindings2 != null) {
-                    keyBindings2.deleteKeyBindingAsKeyChar(keyChar);
-                }
+            if (keyBindings2 != null) {
+                keyBindings2.deleteKeyBindingAsKeyCode(keyCode, modifiers);
             }
         }
 

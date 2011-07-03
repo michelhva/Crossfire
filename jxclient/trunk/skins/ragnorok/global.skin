@@ -93,18 +93,18 @@ key code F8 0 exec command_spells
 key code F9 0 exec command_map
 key code F10 0 exec command_setup
 
-key char 10 -e chat -
-key char 82 -e tell <<reply_to>> -
-key char 97 apply
-key char 100 use_skill disarm traps
-key char 101 examine
-key char 105 mapinfo
-key char 106 use_skill jumping
-key char 109 -e maps -
-key char 115 use_skill find traps
-key char 112 use_skill praying
-key char 116 pickup !inhibit
-key char 119 who
+key code ENTER 0 -e chat -
+key code R 0 -e tell <<reply_to>> -
+key code A 0 apply
+key code D 0 use_skill disarm traps
+key code E 0 examine
+key code I 0 mapinfo
+key code J 0 use_skill jumping
+key code M 0 -e maps -
+key code S 0 use_skill find traps
+key code P 0 use_skill praying
+key code T 0 pickup !inhibit
+key code W 0 who
 key char 63 help
 key char 44 get
 key char 47 -e

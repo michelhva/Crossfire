@@ -1075,16 +1075,6 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Dispatches a key typed {@link KeyEvent}.
-     * @param e the event to dispatch
-     * @return whether a gui element did handle the event
-     */
-    public boolean handleKeyTyped(@NotNull final KeyEvent e) {
-        assert currentGui != null;
-        return currentGui.handleKeyTyped(e);
-    }
-
-    /**
      * An {@link Iterator} that returns all open dialogs in painting order.
      */
     private class OpenDialogsIterator implements Iterator<Gui> {

@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
-import com.realtime.crossfire.jxclient.gui.gui.KeyTypedHandler;
+import com.realtime.crossfire.jxclient.gui.gui.KeyPressedHandler;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
 import com.realtime.crossfire.jxclient.timeouts.Timeouts;
@@ -39,7 +39,7 @@ import org.jetbrains.annotations.Nullable;
  * Abstract base class for button classes.
  * @author Andreas Kirschbaum
  */
-public abstract class AbstractButton extends ActivatableGUIElement implements KeyTypedHandler {
+public abstract class AbstractButton extends ActivatableGUIElement implements KeyPressedHandler {
 
     /**
      * The serial version UID.
@@ -215,14 +215,15 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
      * {@inheritDoc}
      */
     @Override
-    public boolean keyTyped(@NotNull final KeyEvent e) {
-        if (e.getKeyChar() != '\r' && e.getKeyChar() != '\n' && e.getKeyChar() != ' ') {
-            return false;
+    public boolean keyPressed(@NotNull final KeyEvent e) {
+        switch (e.getKeyCode()) {
+        case KeyEvent.VK_SPACE:
+        case KeyEvent.VK_ENTER:
+            execute();
+            return true;
         }
 
-        execute();
-        return true;
-
+        return false;
     }
 
 }

@@ -3,9 +3,8 @@ set_modal
 
 label_multi message font_label BLACK Connecting...
 
-key char 10        exec command_disconnect
-key char 13        exec command_disconnect
-key char 32        exec command_disconnect
+key code ENTER 0 exec command_disconnect
+key code SPACE 0 exec command_disconnect
 
 horizontal begin seq
   message

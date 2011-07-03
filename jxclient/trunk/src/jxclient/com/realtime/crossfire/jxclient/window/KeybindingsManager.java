@@ -218,20 +218,6 @@ public class KeybindingsManager {
     }
 
     /**
-     * Processes a key typed event.
-     * @param keyChar the character information of the key event
-     * @return whether the event has been consumed
-     */
-    public boolean keyTyped(final char keyChar) {
-        if (keyBindingState == null) {
-            return false;
-        }
-
-        keyBindingState.keyTyped(keyChar);
-        return true;
-    }
-
-    /**
      * Processes a key released event.
      * @return whether the event has been consumed
      */
@@ -275,19 +261,6 @@ public class KeybindingsManager {
 
         keyBindingState = null;
         return true;
-    }
-
-    /**
-     * Processes a key typed event.
-     * @param e the key event
-     * @return whether the event has been consumed
-     */
-    public boolean handleKeyTyped(@NotNull final KeyEvent e) {
-        if (characterKeyBindings != null && characterKeyBindings.handleKeyTyped(e)) {
-            return true;
-        }
-
-        return keyBindings.handleKeyTyped(e);
     }
 
     /**

@@ -162,14 +162,6 @@ public class KeyBindings {
     }
 
     /**
-     * Removes a key binding for a key character.
-     * @param keyChar the key character of the key binding
-     */
-    public void deleteKeyBindingAsKeyChar(final char keyChar) {
-        deleteKeyBinding(getKeyBindingAsKeyChar(keyChar));
-    }
-
-    /**
      * Removes a key binding.
      * @param keyBinding the key binding; may be <code>null</code>
      */
@@ -274,13 +266,6 @@ public class KeyBindings {
                             bw.write(' ');
                             bw.write(GUICommandFactory.encode(keyCodeKeyBinding.getCommandString()));
                             bw.newLine();
-                        } else if (keyBinding instanceof KeyCharKeyBinding) {
-                            final KeyCharKeyBinding keyCharKeyBinding = (KeyCharKeyBinding)keyBinding;
-                            bw.write("char ");
-                            bw.write(Integer.toString(keyCharKeyBinding.getKeyChar()));
-                            bw.write(' ');
-                            bw.write(GUICommandFactory.encode(keyCharKeyBinding.getCommandString()));
-                            bw.newLine();
                         } else {
                             throw new AssertionError("Cannot encode "+keyBinding.getClass().getName());
                         }
@@ -340,6 +325,12 @@ public class KeyBindings {
      */
     public void parseKeyBinding(@NotNull final String line, final boolean isDefault) throws InvalidKeyBindingException {
         if (line.startsWith("char ")) {
+            if (!isDefault) {
+                // ignore "key char" definitions in user keybindings files --
+                // these are not supported anymore.
+                return;
+            }
+
             final String[] tmp = line.substring(5).split(" +", 2);
             if (tmp.length != 2) {
                 throw new InvalidKeyBindingException("syntax error");
@@ -397,30 +388,27 @@ public class KeyBindings {
      * @return whether a matching key binding was found
      */
     public boolean handleKeyPress(@NotNull final KeyEvent e) {
-        return executeKeyBinding(getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers()));
-    }
+        final KeyBinding keyBindingCode = getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
+        if (keyBindingCode != null) {
+            executeKeyBinding(keyBindingCode);
+            return true;
+        }
 
-    /**
-     * Executes a "key typed" event.
-     * @param e the event to execute
-     * @return whether a matching key binding was found
-     */
-    public boolean handleKeyTyped(@NotNull final KeyEvent e) {
-        return executeKeyBinding(getKeyBindingAsKeyChar(e.getKeyChar()));
+        final KeyBinding keyBindingChar = getKeyBindingAsKeyChar(e.getKeyChar());
+        if (keyBindingChar != null) {
+            executeKeyBinding(keyBindingChar);
+            return true;
+        }
+
+        return false;
     }
 
     /**
      * Executes a {@link KeyBinding} instance.
      * @param keyBinding the key binding to execute; may be <code>null</code>
-     * @return whether <code>keyBinding</code> is not <code>null</code>
      */
-    private static boolean executeKeyBinding(@Nullable final KeyBinding keyBinding) {
-        if (keyBinding == null) {
-            return false;
-        }
-
+    private static void executeKeyBinding(@NotNull final KeyBinding keyBinding) {
         keyBinding.getCommands().execute();
-        return true;
     }
 
     /**

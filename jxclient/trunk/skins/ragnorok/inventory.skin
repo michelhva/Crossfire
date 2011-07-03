@@ -51,15 +51,14 @@ commandlist command_inventory_unlock AND inv EXEC_SELECTION UNLOCK
 #key code KP_RIGHT  0 exec command_inventory_next
 #key code PAGE_UP   0 exec command_inventory_page_up
 #key code PAGE_DOWN 0 exec command_inventory_page_down
-#key char 10        exec command_inventory_apply
-#key char 13        exec command_inventory_apply
-#key char 97        exec command_inventory_apply
-#key char 100       exec command_inventory_drop
-#key char 101       exec command_inventory_examine
-#key char 108       exec command_inventory_lock
-#key char 76        exec command_inventory_unlock
-#key char 109       exec command_inventory_mark
-#key char 117       exec command_inventory_unlock
+#key code ENTER     0 exec command_inventory_apply
+#key code A         0 exec command_inventory_apply
+#key code D         0 exec command_inventory_drop
+#key code E         0 exec command_inventory_examine
+#key code L         0 exec command_inventory_lock
+#key code L         1 exec command_inventory_unlock
+#key code M         0 exec command_inventory_mark
+#key code U         0 exec command_inventory_unlock
 
 commandlist command_inventory_reset OR inv SCROLL_RESET
 event connect command_inventory_reset

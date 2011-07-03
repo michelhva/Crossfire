@@ -27,5 +27,5 @@ key code DOWN      0 exec command_meta_next
 key code KP_DOWN   0 exec command_meta_next
 key code PAGE_UP   0 exec command_meta_page_up
 key code PAGE_DOWN 0 exec command_meta_page_down
-key char 10        exec command_meta_connect
-key char 13        exec command_meta_connect
+key code SPACE     0 exec command_meta_connect
+key code ENTER     0 exec command_meta_connect
