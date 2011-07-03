@@ -439,7 +439,7 @@ public class ClientSocket {
             debugProtocol.debugProtocolWrite("socket:disconnecting: "+reason+(isError ? " [unexpected]" : ""));
         }
         final boolean notifyListeners;
-        synchronized (syncOutput) {
+        synchronized (syncConnect) {
             notifyListeners = disconnectPending;
             disconnectPending = false;
         }
