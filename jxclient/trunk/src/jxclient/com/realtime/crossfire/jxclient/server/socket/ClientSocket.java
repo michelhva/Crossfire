@@ -350,18 +350,47 @@ public class ClientSocket {
      * @throws IOException if an I/O error occurs
      */
     private void doReconnect() throws IOException {
+        assert Thread.currentThread() == thread;
+
+        final boolean doReconnect;
+        final boolean doDisconnect;
+        @Nullable final String disconnectReason;
+        final boolean disconnectIsError;
         synchronized (syncConnect) {
             if (reconnect) {
                 reconnect = false;
                 if (host != null && port != 0) {
-                    processDisconnect("reconnect to "+host+":"+port, false);
-                    disconnectPending = true;
-                    assert host != null;
-                    processConnect(host, port);
+                    doReconnect = true;
+                    doDisconnect = false;
+                    disconnectReason = "reconnect to "+host+":"+port;
+                    disconnectIsError = false;
                 } else {
-                    processDisconnect(reconnectReason, reconnectIsError);
+                    doReconnect = false;
+                    doDisconnect = true;
+                    disconnectReason = reconnectReason;
+                    disconnectIsError = reconnectIsError;
                 }
+            } else {
+                doReconnect = false;
+                doDisconnect = false;
+                disconnectReason = null;
+                disconnectIsError = false;
             }
+        }
+        if (doReconnect) {
+            assert disconnectReason != null;
+            processDisconnect(disconnectReason, disconnectIsError);
+            final boolean doConnect;
+            synchronized (syncConnect) {
+                disconnectPending = true;
+                doConnect = host != null;
+            }
+            if (doConnect) {
+                processConnect(host, port);
+            }
+        }
+        if (doDisconnect) {
+            processDisconnect(disconnectReason, disconnectIsError);
         }
     }
 
@@ -386,6 +415,8 @@ public class ClientSocket {
      * @throws IOException if an I/O error occurs
      */
     private void processConnect(@NotNull final String host, final int port) throws IOException {
+        assert Thread.currentThread() == thread;
+
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:connecting to "+host+":"+port);
         }
@@ -435,6 +466,8 @@ public class ClientSocket {
      * @param isError whether the disconnect is unexpected
      */
     private void processDisconnect(@NotNull final String reason, final boolean isError) {
+        assert Thread.currentThread() == thread;
+
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:disconnecting: "+reason+(isError ? " [unexpected]" : ""));
         }
