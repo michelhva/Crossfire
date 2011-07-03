@@ -380,13 +380,15 @@ public class ClientSocket {
         if (doReconnect) {
             assert disconnectReason != null;
             processDisconnect(disconnectReason, disconnectIsError);
-            final boolean doConnect;
+            final String connectHost;
+            final int connectPort;
             synchronized (syncConnect) {
                 disconnectPending = true;
-                doConnect = host != null;
+                connectHost = host;
+                connectPort = port;
             }
-            if (doConnect) {
-                processConnect(host, port);
+            if (connectHost != null) {
+                processConnect(connectHost, connectPort);
             }
         }
         if (doDisconnect) {
