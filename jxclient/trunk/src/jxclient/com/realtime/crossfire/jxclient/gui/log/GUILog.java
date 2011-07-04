@@ -98,13 +98,13 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         public void stateChanged() {
             setChanged();
             for (final ScrollableListener listener : listeners.getListeners()) {
-                listener.setRange(0, buffer.getTotalHeight(), renderStateManager.getScrollPos(), 200/*XXX:GUILog.super.getHeight()*/);
+                listener.setRange(0, buffer.getTotalHeight(), renderStateManager.getScrollPos(), getHeight());
             }
         }
 
         @Override
         public int getHeight() {
-            return GUILog.super.getHeight();
+            return Math.max(1, GUILog.this.getHeight());
         }
 
     };
