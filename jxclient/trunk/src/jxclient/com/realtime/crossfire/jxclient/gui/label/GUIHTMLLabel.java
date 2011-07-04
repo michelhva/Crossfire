@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -134,10 +135,12 @@ public class GUIHTMLLabel extends AbstractLabel {
             return;
         }
 
+        final FontMetrics fontMetrics = getFontMetrics(getTextFont());
+
         int width = 0;
         int height = 0;
         for (final String str : PATTERN_LINE_BREAK.split(getText(), -1)) {
-            final Dimension size = GuiUtils.getTextDimension(str, getTextFont());
+            final Dimension size = GuiUtils.getTextDimension(str, fontMetrics);
             width = Math.max(width, size.width);
             height += size.height;
         }

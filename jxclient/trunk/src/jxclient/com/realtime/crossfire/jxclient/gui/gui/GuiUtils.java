@@ -24,10 +24,7 @@ package com.realtime.crossfire.jxclient.gui.gui;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.GraphicsEnvironment;
-import java.awt.font.TextLayout;
-import java.awt.image.BufferedImage;
+import java.awt.FontMetrics;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -47,19 +44,14 @@ public class GuiUtils {
      * Returns the extents of a string when rendered in a given {@link Font} on
      * this component.
      * @param text the text
-     * @param font the font
+     * @param fontMetrics the font metrics for the font
      * @return the extends
      */
     @NotNull
-    public static Dimension getTextDimension(@NotNull final String text, @NotNull final Font font) {
-        final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final Graphics2D g = graphicsEnvironment.createGraphics(new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB)); // XXX
-        try {
-            final TextLayout textLayout = new TextLayout(text.isEmpty() ? " " : text, font, g.getFontRenderContext());
-            return new Dimension((int)Math.ceil(textLayout.getBounds().getWidth()), (int)Math.ceil(textLayout.getAscent()+textLayout.getDescent()));
-        } finally {
-            g.dispose();
-        }
+    public static Dimension getTextDimension(@NotNull final String text, @NotNull final FontMetrics fontMetrics) {
+        final int width = fontMetrics.stringWidth(text);
+        final int height = fontMetrics.getMaxAscent()+fontMetrics.getMaxDescent();
+        return new Dimension(width, height);
     }
 
     /**

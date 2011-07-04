@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -95,9 +96,8 @@ public class GUIMultiLineLabel extends GUILabel {
             return;
         }
 
-        final Font font = getTextFont();
         final Graphics2D g2 = (Graphics2D)g;
-        final Dimension rectangle = GuiUtils.getTextDimension("Xg", font);
+        final Dimension rectangle = GuiUtils.getTextDimension("Xg", getFontMetrics(getTextFont()));
         final int lineHeight = rectangle.height;
 
         int y = 0;
@@ -132,17 +132,17 @@ public class GUIMultiLineLabel extends GUILabel {
      */
     @NotNull
     private Dimension getTextSize() {
-        final Font textFont = getTextFont();
+        final FontMetrics fontMetrics = getFontMetrics(getTextFont());
 
         int width = 0;
         for (final String line : lines) {
-            final Dimension dimension = GuiUtils.getTextDimension(line, textFont);
+            final Dimension dimension = GuiUtils.getTextDimension(line, fontMetrics);
             if (width < dimension.width) {
                 width = dimension.width;
             }
         }
 
-        final Dimension rectangle = GuiUtils.getTextDimension("Xg", textFont);
+        final Dimension rectangle = GuiUtils.getTextDimension("Xg", fontMetrics);
         final int height = lines.length*rectangle.height;
 
         return new Dimension(width, height);

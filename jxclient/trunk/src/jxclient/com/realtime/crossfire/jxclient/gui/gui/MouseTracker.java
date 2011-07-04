@@ -194,7 +194,7 @@ public class MouseTracker {
         final AbstractGUIElement component = activeComponent;
         if (component != null) {
             final String text = component.getName();
-            final Dimension dimension = GuiUtils.getTextDimension(text, g.getFont());
+            final Dimension dimension = GuiUtils.getTextDimension(text, g.getFontMetrics());
             g.setColor(Color.BLACK);
             g.fillRect(0, 2, dimension.width+4, dimension.height+8);
             g.setColor(Color.RED);
