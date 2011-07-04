@@ -145,6 +145,5 @@ vertical begin seq
 end
 
 link_size horizontal button_all button_msg button_chat
-link_size horizontal slider_all_up slider_all slider_all_down
 link_size horizontal slider_all_up slider_msg_up slider_chat_up slider_all slider_msg slider_chat slider_all_down slider_msg_down slider_chat_down
 link_size both log_all log_msg log_chat
