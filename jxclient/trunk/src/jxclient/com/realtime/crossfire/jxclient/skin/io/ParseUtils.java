@@ -198,7 +198,7 @@ public class ParseUtils {
             }
         }
 
-        return text.toString();
+        return text.toString().replaceFirst("_$", " ");
     }
 
     /**
