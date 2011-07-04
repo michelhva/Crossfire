@@ -175,7 +175,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
     @NotNull
     private Dimension getMinimumSizeInt() {
         final CharacterInformation character = characterModel.getEntry(index);
-        return GuiUtils.getTextDimension(character == null ? "" : character.getName(), font);
+        return GuiUtils.getTextDimension(character == null ? "" : character.getName(), getFontMetrics(font));
     }
 
     /**

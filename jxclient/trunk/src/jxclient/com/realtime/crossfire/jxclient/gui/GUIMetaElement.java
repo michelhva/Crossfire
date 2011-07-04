@@ -190,7 +190,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     @NotNull
     private Dimension getMinimumSizeInt() {
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
-        final Dimension result = GuiUtils.getTextDimension(metaEntry == null ? "" : metaEntry.format(format), font);
+        final Dimension result = GuiUtils.getTextDimension(metaEntry == null ? "" : metaEntry.format(format), getFontMetrics(font));
         if (image != null) {
             result.width += image.getWidth(this);
         }

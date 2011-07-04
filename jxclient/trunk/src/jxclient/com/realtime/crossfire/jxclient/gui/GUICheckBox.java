@@ -174,7 +174,7 @@ public class GUICheckBox extends ActivatableGUIElement {
      */
     @NotNull
     private Dimension getMinimumSizeInt() {
-        final Dimension result = GuiUtils.getTextDimension(text, font);
+        final Dimension result = GuiUtils.getTextDimension(text, getFontMetrics(font));
         result.width += checkedImage.getWidth()+4;
         result.height = checkedImage.getHeight();
         return result;

@@ -113,7 +113,7 @@ public class GUITextButton extends AbstractButton {
         this.text = text;
         this.font = font;
         this.color = color;
-        preferredSize = GuiUtils.getTextDimension(text, font);
+        preferredSize = GuiUtils.getTextDimension(text, getFontMetrics(font));
         if (preferredSize.height < preferredHeight) {
             preferredSize.height = preferredHeight;
         }

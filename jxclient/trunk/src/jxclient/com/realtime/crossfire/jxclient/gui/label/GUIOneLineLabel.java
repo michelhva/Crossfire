@@ -93,7 +93,7 @@ public class GUIOneLineLabel extends GUILabel {
      */
     @NotNull
     private Dimension getMinimumSizeInt() {
-        return GuiUtils.getTextDimension(getText(), getTextFont());
+        return GuiUtils.getTextDimension(getText(), getFontMetrics(getTextFont()));
     }
 
 }
