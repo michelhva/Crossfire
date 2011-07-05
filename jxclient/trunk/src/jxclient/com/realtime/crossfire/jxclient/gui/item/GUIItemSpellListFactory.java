@@ -146,9 +146,4 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
         return result;
     }
 
-    @Override
-    public int getMoveLocation() {
-        return 0;
-    }
-
 }

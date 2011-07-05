@@ -136,12 +136,4 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
         return result;
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int getMoveLocation() {
-        return floorView.getCurrentFloor();
-    }
-
 }

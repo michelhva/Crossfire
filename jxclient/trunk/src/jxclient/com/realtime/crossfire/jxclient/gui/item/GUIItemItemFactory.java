@@ -46,10 +46,4 @@ public interface GUIItemItemFactory {
     @NotNull
     GUIItemItem newTemplateItem(int cellHeight);
 
-    /**
-     * Returns the location to move items to when moving away.
-     * @return the location
-     */
-    int getMoveLocation();
-
 }

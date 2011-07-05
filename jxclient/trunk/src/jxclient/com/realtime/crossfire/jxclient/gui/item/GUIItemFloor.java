@@ -205,6 +205,23 @@ public class GUIItemFloor extends GUIItemItem {
      * {@inheritDoc}
      */
     @Override
+    public void button2Clicked(final int modifiers) {
+        final CfItem item = getItem();
+        if (item == null) {
+            return;
+        }
+
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            crossfireServerConnection.sendApply(item.getTag());
+            break;
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void button3Clicked(final int modifiers) {
         final CfItem item = getItem();
         if (item == null) {
@@ -219,6 +236,10 @@ public class GUIItemFloor extends GUIItemItem {
         switch (modifiers&Modifiers.MASK) {
         case Modifiers.NONE:
             commandQueue.sendMove(player.getTag(), item.getTag());
+            break;
+
+        case Modifiers.SHIFT:
+            crossfireServerConnection.sendApply(item.getTag());
             break;
         }
     }

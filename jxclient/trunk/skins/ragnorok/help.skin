@@ -23,7 +23,7 @@ map window:
    left button: examine spot; briefly displays the items or player on clicked spot
 ground and inventory view:
    left button: examine item; displays a detailed object description
-   middle button: apply item; action depends on item, typically eat/drink/wear/wield/etc.
+   middle button: apply item; action depends on item, typically eat/drink/wear/wield/etc.  [alternative: SHIFT+right button]
    right button: drop item; the item is dropped to the ground or picked up from the ground; in shops: drop=sell immediately; pick up=buy at shop mat
    SHIFT + left button: lock/unlock item in inventory; protects items from accidental drops
    SHIFT + middle button: mark item in inventory; some commands operate on or prefer marked items

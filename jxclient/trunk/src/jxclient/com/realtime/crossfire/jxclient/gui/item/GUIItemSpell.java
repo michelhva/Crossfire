@@ -39,7 +39,6 @@ import com.realtime.crossfire.jxclient.spells.SpellListener;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
 import java.awt.Dimension;
-import java.awt.Graphics;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -242,13 +241,15 @@ public class GUIItemSpell extends GUIItemItem {
      */
     @Override
     public void button1Clicked(final int modifiers) {
-        if (spell != null) {
-            switch (modifiers&Modifiers.MASK) {
-            case Modifiers.NONE:
-                commandQueue.sendNcom(false, "cast "+spell.getName());
-                currentSpellManager.setCurrentSpell(spell);
-                break;
-            }
+        if (spell == null) {
+            return;
+        }
+
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            commandQueue.sendNcom(false, "cast "+spell.getName());
+            currentSpellManager.setCurrentSpell(spell);
+            break;
         }
     }
 
@@ -257,7 +258,16 @@ public class GUIItemSpell extends GUIItemItem {
      */
     @Override
     public void button2Clicked(final int modifiers) {
-        // ignore
+        if (spell == null) {
+            return;
+        }
+
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            commandQueue.sendNcom(false, "invoke "+spell.getName());
+            currentSpellManager.setCurrentSpell(spell);
+            break;
+        }
     }
 
     /**
@@ -265,32 +275,16 @@ public class GUIItemSpell extends GUIItemItem {
      */
     @Override
     public void button3Clicked(final int modifiers) {
-        // ignore
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void paintComponent(@NotNull final Graphics g) {
-        super.paintComponent(g);
-        /*
-        g.setColor(BACKGROUND_COLOR);
-        g.fillRect(0, 0, getWidth(), getHeight());
-
         if (spell == null) {
             return;
         }
 
-        if (GuiUtils.isActive(this) && selectorColor != null) {
-            g.setColor(selectorColor);
-            g.fillRect(0, 0, getWidth(), getHeight());
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.SHIFT:
+            commandQueue.sendNcom(false, "invoke "+spell.getName());
+            currentSpellManager.setCurrentSpell(spell);
+            break;
         }
-        assert spell != null;
-        g.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
-        if (GuiUtils.isActive(this) && selectorImage != null) {
-            g.drawImage(selectorImage, 0, 0, null);
-        }*/
     }
 
     /**

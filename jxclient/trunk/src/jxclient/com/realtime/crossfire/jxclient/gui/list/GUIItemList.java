@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.list;
 
-import com.realtime.crossfire.jxclient.gui.Modifiers;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementChangedListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
@@ -269,24 +268,7 @@ public class GUIItemList extends GUIList {
             return;
         }
 
-        final CfItem item = guiItem.getItem();
-        if (item == null) {
-            return;
-        }
-
-        switch (modifiers&Modifiers.MASK) {
-        case Modifiers.NONE:
-            if (item.isItemGroupButton()) {
-                crossfireServerConnection.sendApply(item.getTag());
-            } else {
-                crossfireServerConnection.sendExamine(item.getTag());
-            }
-            break;
-
-        case Modifiers.SHIFT:
-            crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
-            break;
-        }
+        guiItem.button1Clicked(modifiers);
     }
 
     /**
@@ -299,20 +281,7 @@ public class GUIItemList extends GUIList {
             return;
         }
 
-        final CfItem item = guiItem.getItem();
-        if (item == null) {
-            return;
-        }
-
-        switch (modifiers&Modifiers.MASK) {
-        case Modifiers.NONE:
-            crossfireServerConnection.sendApply(item.getTag());
-            break;
-
-        case Modifiers.SHIFT:
-            crossfireServerConnection.sendMark(item.getTag());
-            break;
-        }
+        guiItem.button2Clicked(modifiers);
     }
 
     /**
@@ -325,20 +294,7 @@ public class GUIItemList extends GUIList {
             return;
         }
 
-        final CfItem item = guiItem.getItem();
-        if (item == null) {
-            return;
-        }
-
-        switch (modifiers&Modifiers.MASK) {
-        case Modifiers.NONE:
-            if (item.isLocked()) {
-                crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+left-clicking on it.", 3);
-            } else {
-                commandQueue.sendMove(itemItemFactory.getMoveLocation(), item.getTag());
-            }
-            break;
-        }
+        guiItem.button3Clicked(modifiers);
     }
 
     /**

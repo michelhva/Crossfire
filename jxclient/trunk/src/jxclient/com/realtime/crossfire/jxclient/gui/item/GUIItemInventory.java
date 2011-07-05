@@ -190,16 +190,18 @@ public class GUIItemInventory extends GUIItemItem {
     @Override
     public void button1Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item != null) {
-            switch (modifiers&Modifiers.MASK) {
-            case Modifiers.NONE:
-                crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
-                break;
+        if (item == null) {
+            return;
+        }
 
-            case Modifiers.SHIFT:
-                crossfireServerConnection.sendExamine(item.getTag());
-                break;
-            }
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            crossfireServerConnection.sendExamine(item.getTag());
+            break;
+
+        case Modifiers.SHIFT:
+            crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
+            break;
         }
     }
 
@@ -209,15 +211,45 @@ public class GUIItemInventory extends GUIItemItem {
     @Override
     public void button2Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item != null) {
-            switch (modifiers&Modifiers.MASK) {
-            case Modifiers.NONE:
-                crossfireServerConnection.sendMark(item.getTag());
-                return;
-            }
+        if (item == null) {
+            return;
         }
 
-        super.button2Clicked(modifiers);
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            crossfireServerConnection.sendApply(item.getTag());
+            return;
+
+        case Modifiers.SHIFT:
+            crossfireServerConnection.sendMark(item.getTag());
+            return;
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void button3Clicked(final int modifiers) {
+        final CfItem item = getItem();
+        if (item == null) {
+            return;
+        }
+
+        switch (modifiers&Modifiers.MASK) {
+        case Modifiers.NONE:
+            if (item.isLocked()) {
+                crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+left-clicking on it.", 3);
+                return;
+            }
+
+            commandQueue.sendMove(floorView.getCurrentFloor(), item.getTag());
+            break;
+
+        case Modifiers.SHIFT:
+            crossfireServerConnection.sendApply(item.getTag());
+            break;
+        }
     }
 
     /**
@@ -239,26 +271,6 @@ public class GUIItemInventory extends GUIItemItem {
     @Override
     protected boolean isSelected() {
         return selected || GuiUtils.isActive(this);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void button3Clicked(final int modifiers) {
-        final CfItem item = getItem();
-        if (item != null) {
-            switch (modifiers&Modifiers.MASK) {
-            case Modifiers.NONE:
-                if (item.isLocked()) {
-                    crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+left-clicking on it.", 3);
-                    return;
-                }
-
-                commandQueue.sendMove(floorView.getCurrentFloor(), item.getTag());
-                break;
-            }
-        }
     }
 
     /**
