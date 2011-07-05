@@ -108,11 +108,11 @@ public class MouseTracker {
      */
     public void mousePressed(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
         enterElement(element, e);
-        isDragging = true;
-        isClicked = true;
         if (mouseElement != null) {
             mouseElement.mousePressed(e);
         }
+        isDragging = true;
+        isClicked = true;
     }
 
     /**
