@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -152,15 +151,6 @@ public class GUIItemFloorFactory implements GUIItemItemFactory {
         //noinspection SuspiciousNameCombination
         result.setSize(cellHeight, cellHeight);
         return result;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int getMoveLocation() {
-        final CfItem player = itemSet.getPlayer();
-        return player == null ? 0 : player.getTag();
     }
 
 }
