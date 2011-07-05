@@ -80,6 +80,7 @@ public class MouseTracker {
      */
     @SuppressWarnings("UnusedParameters")
     public void mouseDragged(@Nullable final GUIElement element, @NotNull final MouseEvent e) {
+        isClicked = false;
         if (mouseElement != null) {
             mouseElement.mouseMoved(e);
         }
