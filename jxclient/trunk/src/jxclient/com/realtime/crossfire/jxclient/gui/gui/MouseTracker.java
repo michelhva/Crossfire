@@ -120,7 +120,7 @@ public class MouseTracker {
      * @param e the mouse event
      */
     public void mouseReleased(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
-        final boolean tmpIsClicked = isClicked && !isDragging;
+        final boolean tmpIsClicked = isClicked;
         isDragging = false;
         enterElement(element, e);
         if (tmpIsClicked && element != null) {
