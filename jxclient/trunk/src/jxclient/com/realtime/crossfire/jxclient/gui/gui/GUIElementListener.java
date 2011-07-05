@@ -30,9 +30,9 @@ import org.jetbrains.annotations.NotNull;
 public interface GUIElementListener {
 
     /**
-     * A {@link Gui} has been clicked into.
+     * The {@link Gui} should be raised.
      * @param gui the gui
      */
-    void mouseClicked(@NotNull Gui gui);
+    void raiseDialog(@NotNull Gui gui);
 
 }

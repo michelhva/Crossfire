@@ -200,7 +200,7 @@ public class SkinLoader {
         final GUIElementListener elementListener = new GUIElementListener() {
 
             @Override
-            public void mouseClicked(@NotNull final Gui gui) {
+            public void raiseDialog(@NotNull final Gui gui) {
                 windowRenderer.raiseDialog(gui);
             }
 

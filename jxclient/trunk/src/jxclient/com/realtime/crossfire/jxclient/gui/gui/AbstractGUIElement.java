@@ -163,7 +163,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     public void mouseClicked(@NotNull final MouseEvent e) {
         final Gui gui = GuiUtils.getGui(this);
         if (gui != null) {
-            elementListener.mouseClicked(gui);
+            elementListener.raiseDialog(gui);
         }
     }
 
@@ -191,6 +191,10 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
+        final Gui gui = GuiUtils.getGui(this);
+        if (gui != null) {
+            elementListener.raiseDialog(gui);
+        }
     }
 
     /**
