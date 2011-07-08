@@ -10,7 +10,6 @@ import java.io.File;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
-
 File getSimpleFilename(File mapFile) {
     String mapFilename = mapFile.getPath();
     int i = mapFilename.lastIndexOf(File.separator);
@@ -21,7 +20,7 @@ File getSimpleFilename(File mapFile) {
 }
 
 File getPngImageFilename(File mapFile) {
-    return new File(Location + PictureDirectory + getSimpleFilename(mapFile) + ".png");
+    return new File(locationDir, PictureDirectory + getSimpleFilename(mapFile) + ".png");
 }
 
 boolean updateMap(File mapFile, File pictureFile) {
@@ -66,77 +65,77 @@ void checkDaList() {
     DestWidth = TileWidth.intValue() * NumX.intValue();
     DestHeight = TileHeight.intValue() * NumY.intValue();
 
-    if (Location == null || Location.length() < 1) {
-        Location = globalSettings.getMapsDirectory().getPath();
-        print("autodetected location " + Location);
+    if (Location == null || Location.length() == 0) {
+        locationDir = globalSettings.getMapsDirectory();
+    } else {
+        locationDir = new File(Location);
     }
 
     print("World map will be " + DestWidth + "x" + DestHeight + " in size");
-    if (!Location.endsWith(File.separator)) {
-        Location = Location + File.separator;
-    }
 
     if (!PictureDirectory.endsWith(File.separator)) {
         PictureDirectory = PictureDirectory + File.separator;
     }
-    new File(Location + PictureDirectory).mkdirs();
+    new File(locationDir, PictureDirectory).mkdirs();
+
+    final long bytesPerPixel = 3L;
 
     HashSet mapList = new HashSet();
     boolean firstRun = false;
-    long headerSize = ("P6\n" + DestWidth + " "+DestHeight + "\n255\n").getBytes().length;
-    if (new File(Location + PictureDirectory + WorldPicture + ".ppm").exists()) {
-        runCommand("cp " + Location + PictureDirectory + WorldPicture + ".ppm /tmp/tmp.ppm");
+    byte[] header = ("P6\n" + DestWidth + " " + DestHeight + "\n255\n").getBytes("ISO-8859-1");
+    long headerSize = header.length;
+    File destinationFilePpm = new File(locationDir, PictureDirectory + WorldPicture + ".ppm");
+    File destinationFilePng = new File(locationDir, PictureDirectory + WorldPicture + ".png");
+    File tempFile = new File("/tmp/tmp.ppm");
+    if (destinationFilePpm.exists()) {
+        runCommand("cp '" + destinationFilePpm + "' '" + tempFile + "'");
     } else {
-        File f = new File("/tmp/tmp.ppm");
-        String header = "P6\n" + DestWidth + " " + DestHeight + "\n255\n";
         print("generating empty picture");
-        FileOutputStream fos = new FileOutputStream(f, false);
-        fos.write(header.getBytes());
-        byte[] buf = new byte[(int) DestWidth.intValue() * 3];
+        FileOutputStream fos = new FileOutputStream(tempFile, false);
+        fos.write(header);
+        byte[] buf = new byte[(int) DestWidth.intValue() * bytesPerPixel];
         for (int i = 0; i < DestHeight.intValue(); i++) {
             fos.write(buf);
         }
         fos.close();
         firstRun = true;
     }
-    long toSkip = ("P6\n" + TileWidth + " " + TileHeight+"\n255\n").getBytes().length;
-    RandomAccessFile raf = new RandomAccessFile(new File("/tmp/tmp.ppm"), "rw");
+    long toSkip = ("P6\n" + TileWidth + " " + TileHeight+"\n255\n").getBytes("ISO-8859-1").length;
+    RandomAccessFile raf = new RandomAccessFile(tempFile, "rw");
     FileChannel fc  = raf.getChannel();
-    byte[] buf = new byte[3 * TileWidth.intValue() * TileHeight.intValue()];
+    byte[] buf = new byte[bytesPerPixel * TileWidth.intValue() * TileHeight.intValue()];
 
+    File tempImageFile = new File("/tmp/ppm.tmp");
     for (int x = 0; x < NumX.intValue(); x++) {
         for (int y = 0; y < NumY.intValue(); y++) {
             currentX = StartX.intValue() + x;
             currentY = StartY.intValue() + y;
-            currentMap = new File(Location + MapFilename + "_" + currentX + "_" + currentY);
+            currentMap = new File(locationDir, MapFilename + "_" + currentX + "_" + currentY);
             currentPicture = getPngImageFilename(currentMap);
             didUpdate = updateMap(currentMap, currentPicture);
             if ((didUpdate || firstRun) && currentPicture.exists()) {
-                runCommand("pngtopnm " + currentPicture + " | pnmscale -xysize " + TileWidth + " " + TileHeight + " > /tmp/ppm.tmp");
-                FileInputStream fis = new FileInputStream("/tmp/ppm.tmp");
+                runCommand("pngtopnm '" + currentPicture + "' | pnmscale -xysize " + TileWidth + " " + TileHeight + " > '" + tempImageFile + "'");
+                FileInputStream fis = new FileInputStream(tempImageFile);
                 fis.skip(toSkip);
                 fis.read(buf);
                 sx = x * TileWidth.intValue();
                 sy = y * TileHeight.intValue();
-                long index=((long) sy * (long) DestWidth.intValue() + (long) sx) * (long) 3 + headerSize;
-                for (long row = 0; row < TileHeight.intValue(); row++){
-                    MappedByteBuffer mbb = fc.map(
-                         java.nio.channels.FileChannel.MapMode.READ_WRITE,
-                         index + row * DestWidth.intValue() * (long) 3,
-                         TileWidth.intValue() * (long) 3
-                         );
-                    mbb.put(buf, (int) (row * TileWidth.intValue() * 3), (int) (TileWidth.intValue() * 3));
+                long index = ((long) sy * (long) DestWidth.intValue() + (long) sx) * bytesPerPixel + headerSize;
+                for (long row = 0; row < TileHeight.intValue(); row++) {
+                    MappedByteBuffer mbb = fc.map(FileChannel.MapMode.READ_WRITE, index + row * DestWidth.intValue() * bytesPerPixel, TileWidth.intValue() * bytesPerPixel);
+                    mbb.put(buf, (int) (row * TileWidth.intValue() * bytesPerPixel), (int) (TileWidth.intValue() * bytesPerPixel));
                 }
             }
         }
     }
     raf.close();
-    runCommand("mv /tmp/tmp.ppm " + Location + PictureDirectory + WorldPicture + ".ppm");
+    runCommand("mv " + tempFile + " '" + destinationFilePpm + "'");
     print("converting to png if possible.\n");
-    runCommand("pnmtopng " + Location + PictureDirectory + WorldPicture + ".ppm > /tmp/tmp.png");
-    runCommand("mv /tmp/tmp.png " + Location + PictureDirectory + WorldPicture + ".png");
+    runCommand("pnmtopng '" + destinationFilePpm + "' > /tmp/tmp.png");
+    runCommand("mv /tmp/tmp.png '" + destinationFilePng + "'");
 }
 
+File locationDir;
 checkDaList();
 print("Done!");]]></code>
   <mode>
@@ -146,7 +145,7 @@ print("Done!");]]></code>
   </mode>
   <parameter>
     <name>Location</name>
-    <description>Specify the map directory to use by this script. Leave empty for auto</description>
+    <description>Specify the map directory to use by this script. Leave empty for maps directory</description>
     <type>java.lang.String</type>
     <value />
   </parameter>
