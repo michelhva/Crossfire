@@ -13,7 +13,6 @@ client_type 51
 end
 Object chest_green
 name chest
-name_pl chests
 face chest_green_1.111
 nrof 0
 type 4
