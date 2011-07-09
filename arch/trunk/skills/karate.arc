@@ -1,5 +1,6 @@
 Object skill_karate
 name karate
+anim_suffix karate
 skill karate
 type 43
 invisible 1
