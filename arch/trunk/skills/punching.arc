@@ -1,5 +1,6 @@
 Object skill_punching
 name punching
+anim_suffix punching
 skill punching
 type 43
 invisible 1
