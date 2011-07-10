@@ -296,9 +296,11 @@ public class GUIItemFloor extends GUIItemItem {
 
         /*
          * replace empty.111 with arrows for "Click here for next/previous
-         * group of items".
+         * group of items". When a container is opened, the first item
+         * will be the 'prev' arrow, so take that into account.
          */
-        return index > 0 ? nextGroupFace : prevGroupFace;
+        final int min = itemSet.getOpenContainer() == 0 ? 0 : 1;
+        return index > min ? nextGroupFace : prevGroupFace;
     }
 
     /**
