@@ -131,7 +131,7 @@ class GuildDues:
             "CrystalRoom": (SecondFloor, 22, 13),
             "Tannery": (SecondFloor, 22, 14),
             "ThaumaturgyRoom": (SecondFloor, 21, 13),
-            "JewelersRoom": (SecondFloor, 22, 14),
+            "JewelersRoom": (SecondFloor, 21, 14),
             "Bowyer": (ToolShed, 22, 16),
             "Smithy": (ToolShed, 23, 16) }
 
