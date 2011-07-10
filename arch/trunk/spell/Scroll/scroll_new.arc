@@ -1,5 +1,6 @@
 Object scroll_new
 name scroll
+anim_suffix read_scroll
 race scrolls
 face scroll.111
 nrof 1
