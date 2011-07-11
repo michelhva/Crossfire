@@ -27,6 +27,8 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireAccountListener
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSpellListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.Collections;
 import java.util.Comparator;
@@ -179,14 +181,27 @@ public class SpellsManager implements Iterable<Spell> {
     };
 
     /**
+     * The {@link SkillSet} containing skills from the server.
+     */
+    private final SkillSet skillSet;
+
+    /**
+     * The {@link Stats} for the player.
+     */
+    private final Stats stats;
+
+    /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection to listen on
      * @param guiStateManager the gui state manager to watch
+     * @param skillSet skills the players knows
      */
-    public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager) {
+    public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final SkillSet skillSet, @NotNull final Stats stats) {
         crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
         crossfireServerConnection.addCrossfireAccountListener(crossfireAccountListener);
         guiStateManager.addGuiStateListener(guiStateListener);
+        this.skillSet = skillSet;
+        this.stats = stats;
     }
 
     /**
@@ -221,7 +236,7 @@ public class SpellsManager implements Iterable<Spell> {
      * @param message the spells' description
      */
     private void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, @NotNull final String spellName, @NotNull final String message) {
-        final Spell key = new Spell(spellName);
+        final Spell key = new Spell(spellName, skillSet, stats);
         key.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path); // set spell path which is used in the comparator
 
         int index = Collections.binarySearch(spells, key, spellNameComparator);
@@ -312,7 +327,7 @@ public class SpellsManager implements Iterable<Spell> {
             }
         }
 
-        final Spell spell = new Spell(spellName);
+        final Spell spell = new Spell(spellName, skillSet, stats);
         spell.setUnknown(true);
         synchronized (unknownSpells) {
             unknownSpells.put(spell.getName(), spell);

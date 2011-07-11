@@ -22,6 +22,9 @@
 package com.realtime.crossfire.jxclient.spells;
 
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.skills.Skill;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import com.realtime.crossfire.jxclient.util.StringSplitter;
 import org.jetbrains.annotations.NotNull;
@@ -101,11 +104,24 @@ public class Spell {
     private boolean unknown = false;
 
     /**
+     * To get the skill's name, see {@link SkillSet}.
+     */
+    private final SkillSet skillSet;
+
+    /**
+     * Attuned, repelled or denied information.
+     */
+    private final Stats stats;
+
+    /**
      * Creates a new instance.
      * @param name the spell name
+     * @param skillSet the skills
      */
-    public Spell(@NotNull final String name) {
+    public Spell(@NotNull final String name, @NotNull final SkillSet skillSet, @NotNull final Stats stats) {
         this.name = name;
+        this.skillSet = skillSet;
+        this.stats = stats;
     }
 
     /**
@@ -353,14 +369,42 @@ public class Spell {
         if (unknown) {
             sb.append(" (unknown)");
         }
-        if (mana > 0) {
-            sb.append("<br>Mana: ").append(mana);
-        }
-        if (grace > 0) {
-            sb.append("<br>Grace: ").append(grace);
-        }
-        if (damage > 0) {
-            sb.append("<br>Damage: ").append(damage);
+        if ((path & stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_DENY)) != 0) {
+            sb.append("<br><b>Denied</b>");
+        } else {
+            final Skill sk = skillSet.getSkill(skill);
+            if (sk != null) {
+                sb.append("<br>Skill: ").append(sk.toString());
+            }
+            if (level > 0) {
+                String supp = null;
+                sb.append("<br>Level: ");
+                if (sk != null && level <= sk.getLevel()) {
+                    int effective = sk.getLevel() - level;
+                    if ((path & stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_ATTUNE)) != 0) {
+                        effective += 2;
+                        supp = " (attuned)";
+                    } else if ((path & stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_REPEL)) != 0) {
+                        effective -= 2;
+                        supp = " (repelled)";
+                    }
+                    sb.append(effective);
+                    if (supp != null) {
+                        sb.append(supp);
+                    }
+                } else {
+                    sb.append(level);
+                }
+            }
+            if (mana > 0) {
+                sb.append("<br>Mana: ").append(mana);
+            }
+            if (grace > 0) {
+                sb.append("<br>Grace: ").append(grace);
+            }
+            if (damage > 0) {
+                sb.append("<br>Damage: ").append(damage);
+            }
         }
         if (message.length() > 0) {
             sb.append("<br>");

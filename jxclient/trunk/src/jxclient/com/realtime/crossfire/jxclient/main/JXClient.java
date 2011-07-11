@@ -197,7 +197,7 @@ public class JXClient {
                                 final Macros macros = new Macros(server);
                                 final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, guiStateManager);
                                 new CfMapUpdater(mapUpdaterState, server, facesManager, guiStateManager);
-                                final SpellsManager spellsManager = new SpellsManager(server, guiStateManager);
+                                final SpellsManager spellsManager = new SpellsManager(server, guiStateManager, skillSet, stats);
                                 final SpellsView spellsView = new SpellsView(spellsManager, facesManager);
                                 final CommandQueue commandQueue = new CommandQueue(server, guiStateManager);
                                 final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdaterState, skillSet);
