@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.map;
 
+import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -51,12 +52,13 @@ public class AnimationMap {
     /**
      * Adds a new {@link AnimationState} to a {@link Location}. If the location
      * was not empty, the previous animation state is freed.
+     * @param mapUpdaterState the map updater state instance to use
      * @param location the location to add to
      * @param animationState the animation state to add
      */
-    public void add(@NotNull final Location location, @NotNull final AnimationState animationState) {
+    public void add(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final Location location, @NotNull final AnimationState animationState) {
         freeAnimationState(animations.put(location, animationState), location);
-        animationState.allocate(location);
+        animationState.allocate(mapUpdaterState, location);
     }
 
     /**
@@ -69,17 +71,18 @@ public class AnimationMap {
 
     /**
      * Updates the animation speed value of a {@link Location}.
+     * @param mapUpdaterState the map updater state instance to use
      * @param location the location to update
      * @param speed the new animation speed
      */
-    public void updateSpeed(@NotNull final Location location, final int speed) {
+    public void updateSpeed(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final Location location, final int speed) {
         final AnimationState animationState = animations.get(location);
         if (animationState == null) {
             System.err.println("No animation at "+location+" to update animation speed.");
             return;
         }
 
-        animationState.setSpeed(speed);
+        animationState.setSpeed(mapUpdaterState, speed);
     }
 
     /**

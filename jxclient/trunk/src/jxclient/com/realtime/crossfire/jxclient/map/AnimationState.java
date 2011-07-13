@@ -37,12 +37,6 @@ import org.jetbrains.annotations.NotNull;
 public class AnimationState implements Iterable<Location> {
 
     /**
-     * The {@link MapUpdaterState} instance to use.
-     */
-    @NotNull
-    private final MapUpdaterState mapUpdaterState;
-
-    /**
      * The {@link Animation} to display.
      */
     @NotNull
@@ -77,21 +71,20 @@ public class AnimationState implements Iterable<Location> {
 
     /**
      * Creates a new instance.
-     * @param mapUpdaterState the map updater state instance to use
      * @param animation the animation to display
      * @param index the initial face index
      */
-    public AnimationState(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final Animation animation, final int index) {
-        this.mapUpdaterState = mapUpdaterState;
+    public AnimationState(@NotNull final Animation animation, final int index) {
         this.animation = animation;
         this.index = index%animation.getFaces();
     }
 
     /**
      * Sets the animation speed.
+     * @param mapUpdaterState the map updater state instance to use
      * @param speed the new animation speed to set
      */
-    public void setSpeed(final int speed) {
+    public void setSpeed(@NotNull final MapUpdaterState mapUpdaterState, final int speed) {
         assert speed > 0;
         if (this.speed == speed) {
             return;
@@ -100,7 +93,7 @@ public class AnimationState implements Iterable<Location> {
         final int tmpDelay = Math.min(index%this.speed, speed-1);
         this.speed = speed;
         index = tmpIndex*speed+tmpDelay;
-        updateFace();
+        updateFace(mapUpdaterState);
     }
 
     /**
@@ -113,9 +106,10 @@ public class AnimationState implements Iterable<Location> {
 
     /**
      * Sets the tick number and update affected faces.
+     * @param mapUpdaterState the map updater state instance to use
      * @param tickNo the tick number
      */
-    public void updateTickNo(final int tickNo) {
+    public void updateTickNo(@NotNull final MapUpdaterState mapUpdaterState, final int tickNo) {
         final int diff = tickNo-this.tickNo;
         if (tickNo < this.tickNo) {
             System.err.println("Ignoring inconsistent tick value: current tick number is "+tickNo+", previous tick number was "+this.tickNo+".");
@@ -123,13 +117,14 @@ public class AnimationState implements Iterable<Location> {
             index = (index+diff)%(speed*animation.getFaces());
         }
         this.tickNo = tickNo;
-        updateFace();
+        updateFace(mapUpdaterState);
     }
 
     /**
      * Updates the map face from the state.
+     * @param mapUpdaterState the map updater state instance to use
      */
-    private void updateFace() {
+    private void updateFace(@NotNull final MapUpdaterState mapUpdaterState) {
         final int face = animation.getFace(index/speed);
         if (face == lastFace) {
             return;
@@ -142,9 +137,10 @@ public class AnimationState implements Iterable<Location> {
 
     /**
      * Adds this animation state to a map {@link Location}.
+     * @param mapUpdaterState the map updater state instance to use
      * @param location the map location
      */
-    public void allocate(@NotNull final Location location) {
+    public void allocate(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final Location location) {
         if (!locations.add(location)) {
             throw new IllegalArgumentException();
         }

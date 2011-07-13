@@ -56,12 +56,6 @@ public class CfMapAnimations {
     private int height = 0;
 
     /**
-     * The {@link MapUpdaterState} instance to update.
-     */
-    @NotNull
-    private final MapUpdaterState mapUpdaterState;
-
-    /**
      * The animations in the visible map area.
      */
     @NotNull
@@ -87,14 +81,6 @@ public class CfMapAnimations {
     private final Collection<AnimationState> pendingTickUpdates = new ArrayList<AnimationState>();
 
     /**
-     * Creates a new instance.
-     * @param mapUpdaterState the instance to update
-     */
-    public CfMapAnimations(@NotNull final MapUpdaterState mapUpdaterState) {
-        this.mapUpdaterState = mapUpdaterState;
-    }
-
-    /**
      * Forgets all animations.
      */
     public void clear() {
@@ -106,11 +92,12 @@ public class CfMapAnimations {
 
     /**
      * Adds a visible animation.
+     * @param mapUpdaterState the map updater state instance to use
      * @param location the location to animate
      * @param animation the animation to display
      * @param type the animation type
      */
-    public void add(@NotNull final Location location, @NotNull final Animation animation, final int type) {
+    public void add(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final Location location, @NotNull final Animation animation, final int type) {
         assert 0 <= location.getX();
         assert 0 <= location.getY();
         assert 0 <= type && type < 4;
@@ -120,12 +107,12 @@ public class CfMapAnimations {
         switch (type) {
         default: // invalid; treated as "normal"
         case Map2.ANIM_NORMAL: // animation starts at index 0
-            animationState = new AnimationState(mapUpdaterState, animation, 0);
+            animationState = new AnimationState(animation, 0);
             addToPendingTickUpdates = true;
             break;
 
         case Map2.ANIM_RANDOM: // animation starts at random index
-            animationState = new AnimationState(mapUpdaterState, animation, random.nextInt(animation.getFaces()));
+            animationState = new AnimationState(animation, random.nextInt(animation.getFaces()));
             addToPendingTickUpdates = true;
             break;
 
@@ -136,7 +123,7 @@ public class CfMapAnimations {
                 animationState = tmp;
                 addToPendingTickUpdates = false;
             } else {
-                animationState = new AnimationState(mapUpdaterState, animation, 0);
+                animationState = new AnimationState(animation, 0);
                 syncAnimationStates.put(animationId, animationState);
                 addToPendingTickUpdates = true;
             }
@@ -144,7 +131,7 @@ public class CfMapAnimations {
         }
 
         animationStates.put(animationState, null);
-        animations.add(location, animationState);
+        animations.add(mapUpdaterState, location, animationState);
         if (addToPendingTickUpdates) {
             pendingTickUpdates.add(animationState);
         }
@@ -171,11 +158,12 @@ public class CfMapAnimations {
 
     /**
      * Updates the animation speed value.
+     * @param mapUpdaterState the map updater state instance to use
      * @param location the location to update
      * @param speed the new animation speed
      */
-    public void updateSpeed(@NotNull final Location location, final int speed) {
-        animations.updateSpeed(location, speed);
+    public void updateSpeed(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final Location location, final int speed) {
+        animations.updateSpeed(mapUpdaterState, location, speed);
     }
 
     /**
@@ -190,9 +178,10 @@ public class CfMapAnimations {
 
     /**
      * Processes a tick command.
+     * @param mapUpdaterState the instance to update
      * @param tickNo the current tick number
      */
-    public void tick(final int tickNo) {
+    public void tick(@NotNull final MapUpdaterState mapUpdaterState, final int tickNo) {
         for (final AnimationState animationState : pendingTickUpdates) {
             animationState.setTickNo(tickNo);
         }
@@ -200,7 +189,7 @@ public class CfMapAnimations {
         final Iterable<AnimationState> animationStatesToUpdate = new ArrayList<AnimationState>(animationStates.keySet());
         synchronized (mapUpdaterState.mapBegin()) {
             for (final AnimationState animationState : animationStatesToUpdate) {
-                animationState.updateTickNo(tickNo);
+                animationState.updateTickNo(mapUpdaterState, tickNo);
             }
             mapUpdaterState.mapEnd(false);
         }

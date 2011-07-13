@@ -557,48 +557,48 @@ public class MapUpdaterStateTest {
             mapUpdaterState.mapEnd(true);
         }
 
-        mapUpdaterState.getMapAnimations().tick(26);
+        mapUpdaterState.tick(26);
         synchronized (mapUpdaterState.mapBegin()) {
             mapUpdaterState.mapFace(new Location(9, 9, 6), 307, true);
             mapUpdaterState.mapEnd(true);
         }
 
-        mapUpdaterState.getMapAnimations().tick(27);
-        mapUpdaterState.getMapAnimations().tick(28);
+        mapUpdaterState.tick(27);
+        mapUpdaterState.tick(28);
         synchronized (mapUpdaterState.mapBegin()) {
             mapUpdaterState.mapFace(new Location(9, 9, 6), 308, true);
             mapUpdaterState.mapEnd(true);
         }
 
-        mapUpdaterState.getMapAnimations().tick(29);
+        mapUpdaterState.tick(29);
         synchronized (mapUpdaterState.mapBegin()) {
             mapUpdaterState.mapFace(new Location(0, 5, 6), 0, true);
             mapUpdaterState.mapEnd(true);
         }
 
-        mapUpdaterState.getMapAnimations().tick(30);
+        mapUpdaterState.tick(30);
         synchronized (mapUpdaterState.mapBegin()) {
             mapUpdaterState.mapFace(new Location(9, 9, 6), 309, true);
             mapUpdaterState.mapEnd(true);
         }
 
-        mapUpdaterState.getMapAnimations().tick(31);
-        mapUpdaterState.getMapAnimations().tick(32);
+        mapUpdaterState.tick(31);
+        mapUpdaterState.tick(32);
         synchronized (mapUpdaterState.mapBegin()) {
             mapUpdaterState.mapFace(new Location(9, 9, 6), 308, true);
             mapUpdaterState.mapEnd(true);
         }
 
-        mapUpdaterState.getMapAnimations().tick(33);
-        mapUpdaterState.getMapAnimations().tick(34);
+        mapUpdaterState.tick(33);
+        mapUpdaterState.tick(34);
         synchronized (mapUpdaterState.mapBegin()) {
             mapUpdaterState.mapFace(new Location(9, 9, 6), 0, true);
             mapUpdaterState.mapFace(new Location(10, 9, 6), 307, true);
             mapUpdaterState.mapEnd(true);
         }
 
-        mapUpdaterState.getMapAnimations().tick(35);
-        mapUpdaterState.getMapAnimations().tick(36);
+        mapUpdaterState.tick(35);
+        mapUpdaterState.tick(36);
         synchronized (mapUpdaterState.mapBegin()) {
             mapUpdaterState.mapFace(new Location(0, 6, 6), 932, true);
             mapUpdaterState.mapFace(new Location(9, 9, 6), 312, true);
@@ -606,15 +606,15 @@ public class MapUpdaterStateTest {
             mapUpdaterState.mapEnd(true);
         }
 
-        mapUpdaterState.getMapAnimations().tick(37);
-        mapUpdaterState.getMapAnimations().tick(38);
+        mapUpdaterState.tick(37);
+        mapUpdaterState.tick(38);
         synchronized (mapUpdaterState.mapBegin()) {
             mapUpdaterState.mapFace(new Location(8, 9, 6), 310, true);
             mapUpdaterState.mapFace(new Location(9, 9, 6), 0, true);
             mapUpdaterState.mapEnd(true);
         }
 
-        mapUpdaterState.getMapAnimations().tick(39);
+        mapUpdaterState.tick(39);
 
         Assert.assertEquals(""+"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111][]\n"+"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,H6=behemoth.x71][H0=woodfloor.111][#,H6=behemoth.x31]\n", toString(mapUpdaterState.getMap(), 7, 8, 4, 2));
     }
