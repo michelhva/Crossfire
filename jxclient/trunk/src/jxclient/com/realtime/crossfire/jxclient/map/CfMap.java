@@ -126,6 +126,31 @@ public class CfMap {
     private final Map<Integer, Collection<CfMapSquare>> pendingFaceSquares = new HashMap<Integer, Collection<CfMapSquare>>();
 
     /**
+     * Clears the map contents.
+     * @param mapWidth the width of the visible map area
+     * @param mapHeight the height of the visible map area
+     */
+    public void reset(final int mapWidth, final int mapHeight) {
+        minX = 0;
+        maxX = -1;
+        minY = 0;
+        maxY = -1;
+        minPx = 0;
+        maxPx = -1;
+        minPy = 0;
+        maxPy = -1;
+        patchX = 0;
+        patchY = 0;
+        patch = null;
+        dirtyMapSquares.clear();
+        pendingFaceSquares.clear();
+
+        // force dirty flags to be set for the visible map region
+        clearSquare(0, 0);
+        clearSquare(mapWidth-1, mapHeight-1);
+    }
+
+    /**
      * Sets the darkness value of one square.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
