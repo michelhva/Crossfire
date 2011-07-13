@@ -115,7 +115,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      * The animations in the visible map area.
      */
     @NotNull
-    private final CfMapAnimations visibleAnimations;
+    private final CfMapAnimations visibleAnimations = new CfMapAnimations();
 
     /**
      * All multi-tiled faces with heads outside the visible map area.
@@ -132,7 +132,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     public MapUpdaterState(@NotNull final FacesManager facesManager, @Nullable final GuiStateManager guiStateManager) {
         this.facesManager = facesManager;
         animations = new Animations(guiStateManager);
-        visibleAnimations = new CfMapAnimations(this);
     }
 
     /**
@@ -282,7 +281,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         synchronized (map) {
             map.setFace(location.getX(), location.getY(), location.getLayer(), null);
         }
-        visibleAnimations.add(location, animation, animationType);
+        visibleAnimations.add(this, location, animation, animationType);
     }
 
     /**
@@ -291,7 +290,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     @Override
     public void mapAnimationSpeed(@NotNull final Location location, final int animationSpeed) {
         assert Thread.holdsLock(sync);
-        visibleAnimations.updateSpeed(location, animationSpeed);
+        visibleAnimations.updateSpeed(this, location, animationSpeed);
     }
 
     /**
@@ -453,15 +452,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     }
 
     /**
-     * Returns the {@link CfMapAnimations} instance.
-     * @return the instance
-     */
-    @NotNull
-    public CfMapAnimations getMapAnimations() {
-        return visibleAnimations;
-    }
-
-    /**
      * {@inheritDoc}
      */
     @Override
@@ -475,7 +465,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     @Override
     public void tick(final int tickNo) {
         synchronized (sync) {
-            visibleAnimations.tick(tickNo);
+            visibleAnimations.tick(this, tickNo);
         }
     }
 
