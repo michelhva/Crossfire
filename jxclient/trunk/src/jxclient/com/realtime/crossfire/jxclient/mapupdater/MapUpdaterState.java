@@ -85,7 +85,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      * The current {@link CfMap} instance.
      */
     @NotNull
-    private CfMap map;
+    private final CfMap map = new CfMap();
 
     /**
      * The listeners to notify about changed map squares.
@@ -132,7 +132,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     public MapUpdaterState(@NotNull final FacesManager facesManager, @Nullable final GuiStateManager guiStateManager) {
         this.facesManager = facesManager;
         animations = new Animations(guiStateManager);
-        map = new CfMap();
         visibleAnimations = new CfMapAnimations(this);
     }
 
@@ -409,14 +408,10 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
             final boolean changed = this.mapWidth != mapWidth || this.mapHeight != mapHeight;
             this.mapWidth = mapWidth;
             this.mapHeight = mapHeight;
-            final CfMap tmp = new CfMap();
-            //noinspection NestedSynchronizedStatement,SynchronizationOnLocalVariableOrMethodParameter
-            synchronized (tmp) {
-                // force dirty flags to be set for the visible map region
-                tmp.clearSquare(0, 0);
-                tmp.clearSquare(mapWidth-1, mapHeight-1);
+            //noinspection NestedSynchronizedStatement
+            synchronized (map) {
+                map.reset(mapWidth, mapHeight);
             }
-            map = tmp;
 
             visibleAnimations.setMapSize(mapWidth, mapHeight);
 
