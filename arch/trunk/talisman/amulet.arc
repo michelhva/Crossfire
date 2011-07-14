@@ -8,6 +8,8 @@ nrof 1
 name_pl amulets
 client_type 381
 body_neck -1
+animation amulet
+is_animated 0
 end
 
 Object amulet_white
