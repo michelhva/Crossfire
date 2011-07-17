@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  2000-11-17
-Modified: 2008-10-31 Rick Tanner
+Modified: 2011-07-17 Nicolas Weeger
 endmsg
 end
 arch dungeon_magic
@@ -1652,6 +1652,16 @@ name Mudman's residue
 type 0
 material 0
 value 4000
+arch event_pickup
+name santo_dominion/Mudman 20>30
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+arch event_drop
+name santo_dominion/Mudman 40
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
 end
 arch spell_mass_confusion
 end
@@ -3058,9 +3068,7 @@ arch magic_mouth
 name 3
 msg
 The Mudman says:
-Ssstranger! The ssswamp iss just like
-you... Ssswallowing, never getsss
-enough...
+Ssstranger! The ssswamp iss just like you... Ssswallowing, never getsss enough...
 endmsg
 x 21
 y 1
