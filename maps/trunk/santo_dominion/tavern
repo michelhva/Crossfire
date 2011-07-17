@@ -2667,6 +2667,13 @@ arch flowers_permanent
 x 18
 y 5
 end
+arch altar
+name note: here to satisfy Gridarta, the connection will be activated from the blue wizard's message file.
+food 1
+x 18
+y 6
+connected 1
+end
 arch woodfloor
 x 18
 y 6
@@ -2856,26 +2863,11 @@ type 0
 move_type walk
 monster 1
 friendly 1
+arch event_say
+name santo_dominion/blue_wizard.msg
+title Python
+slaying /python/dialog/npc_dialog.py
 end
-arch altar
-name 1
-slaying Mudman's residue
-food 1
-x 19
-y 9
-connected 1
-end
-arch magic_mouth
-name 1
-msg
-The blue wizard says:
-You defeated the Mudman, you are
-truly a hero! Take your reward.
-endmsg
-x 19
-y 9
-connected 1
-move_on 0
 end
 arch woodfloor
 x 19

@@ -726,6 +726,11 @@ hp 28
 sp 11
 x 3
 y 20
+arch event_apply
+name santo_dominion/Mudman 10>20
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch shallow_sea
 x 3
