@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-19
-Modified: 2011-04-17 Rick Tanner
+Modified: 2011-07-17 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -720,9 +720,7 @@ arch ruins
 name Mudman's Place
 slaying /santo_dominion/mudman/mudman.1
 msg
-Urgh! The swamp is cold and soaking
-wet. Smells rotten... You feel an urge
-to leave this place.
+Urgh! The swamp is cold and soaking wet. Smells rotten... You feel an urge to leave this place.
 endmsg
 hp 28
 sp 11
@@ -5381,6 +5379,11 @@ end
 arch church
 name New Cthulhu Church
 slaying /santo_dominion/crossfire
+msg
+You feel really unconfortable about this place...
+
+The smell of death, or even worse horrors, is really strong.
+endmsg
 hp 1
 sp 17
 x 22
