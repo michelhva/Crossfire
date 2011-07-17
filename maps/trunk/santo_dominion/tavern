@@ -8,7 +8,7 @@ enter_x 14
 enter_y 18
 msg
 Created:  1994-04-05 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2011-07-17 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -402,14 +402,11 @@ end
 arch man
 msg
 @match mudman
-He lives in the swamp to the south.
-You should avoid that place!
+He lives in the swamp to the west of the town. You should avoid that place!
 @match yes
 Grmbl... Leave me alone!
 @match no|stig
-He lives north of this town. There's
-one big mess in his house, but you
-might find some useful stuff too.
+He lives north of this town. There's one big mess in his house, but you might find some useful stuff too.
 @match *
 Do you know Stig?
 endmsg
@@ -774,17 +771,14 @@ arch fighter
 name TCI Representative
 msg
 @match tci
-Training Centers Incorporated is the best dang training
-you'll ever get. We have locations all over the world in
-exotic settings. Come fight with us! (heh, they tell us we
-have to say all that)
+@question location location And what are those locations?
+Training Centers Incorporated is the best dang training you'll ever get. We have locations all over the world in
+exotic settings. Come fight with us! (heh, they tell us we have to say all that)
 @match location
-Well, I don't know about all of them. But our local TCI
-is off the road south of here. Just look for one of our
-signs!
+Well, I don't know about all of them. But our local TCI is off the road south of here. Just look for one of our signs!
 @match hello|hi
-Well, hello there! Sit down and chat with me a bit. I am
-always looking for new people to tell about TCI.
+@question tci What is TCI?
+Well, hello there! Sit down and chat with me a bit. I am always looking for new people to tell about TCI.
 @match *
 Hi there young'un. Wanna join TCI?
 endmsg
@@ -1231,12 +1225,14 @@ y 13
 end
 arch sailor
 msg
+@match apartment
+Sure, it's just a matter of having enough money. I made some sailing, and the pay was good, so here I am.
 @match mudman
 Huh... Mudman? What's that?
 @match *
+@question apartment You can buy a apartment around here?
 St. Dominion is a nice little town.
-I bought one of the apartments and
-now I'm staying here for the weekends.
+I bought one of the apartments and now I'm staying here for the weekends.
 endmsg
 hp 100
 maxhp 100
@@ -2049,14 +2045,12 @@ end
 arch woman
 msg
 @match mudman
-Shhh! You must not speak HIS name!
-It's not healthy to be that curious.
+Shhh! You must not speak HIS name! It's not healthy to be that curious.
 @match warrior|wound|upstairs
 Maybe you should look after him?
 @match *
-There's a wounded warrior in one of the
-rooms upstairs. That guy is in real bad
-shape. I wonder what happened to him?
+@question warrior A warrior, really?
+There's a wounded warrior in one of the rooms upstairs. That guy is in real bad shape. I wonder what happened to him?
 endmsg
 x 14
 y 8
@@ -2844,15 +2838,11 @@ arch wizard
 name blue wizard
 msg
 @match mudman|hero|yes|gate
-The inhabitants of St. Dominion are
-scared of the Mudman. Kill him and
-put his residue on my table. Then I
-will open the gate for you.
+The Mudman is a vile creature lurking in swamps just west of this town.
+The inhabitants of St. Dominion are scared of the Mudman. Kill him and put his residue on my table. Then I will open the gate for you.
 @match *
-Do you see this room behind me? It's
-the "hero's room". You may enter if
-you prove yourself worthy by killing
-the Mudman.
+@question mudman What is the mudman?
+Do you see this room behind me? It's the "hero's room". You may enter if you prove yourself worthy by killing the Mudman.
 endmsg
 face wizard_blue.151
 Str 10
@@ -3255,8 +3245,7 @@ arch lesser_dwarven_guard
 name dwarf
 msg
 @match *
-Damn! Those chairs are too high for
-me. I hate this world...
+Damn! Those chairs are too high for me. I hate this world...
 endmsg
 x 21
 y 16
