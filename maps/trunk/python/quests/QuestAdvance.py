@@ -35,6 +35,11 @@
 import Crossfire
 
 player = Crossfire.WhoIsActivator()
+
+# if a spell was used, then the killer is the spell object, find the owner
+if player.Type != Crossfire.Type.PLAYER:
+  player = player.Owner
+
 event = Crossfire.WhatIsEvent()
 params = Crossfire.ScriptParameters()
 args = params.split()
