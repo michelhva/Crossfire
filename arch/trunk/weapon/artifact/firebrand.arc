@@ -1,5 +1,6 @@
 Object firebrand
 name Firebrand
+anim_suffix double_sword
 nrof 1
 last_sp 8
 type 15

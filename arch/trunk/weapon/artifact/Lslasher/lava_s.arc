@@ -1,5 +1,6 @@
 Object lava_s
 name Lava Slasher
+anim_suffix double_sword
 nrof 1
 face lava_s.111
 animation lava_s

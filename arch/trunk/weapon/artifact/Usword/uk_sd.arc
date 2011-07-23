@@ -1,5 +1,6 @@
 Object uk_sd
 name Unknown Sword
+anim_suffix double_sword
 nrof 1
 last_sp 6
 type 15

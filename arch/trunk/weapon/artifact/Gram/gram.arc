@@ -1,5 +1,6 @@
 Object gram
 name Gram
+anim_suffix double_sword
 nrof 1
 last_sp 15
 type 15

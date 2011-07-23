@@ -2,6 +2,7 @@ Object vlongsword
 nrof 1
 name two handed sword
 name_pl two handed swords
+anim_suffix double_sword
 last_sp 8
 type 15
 face vlongsword.111

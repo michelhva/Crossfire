@@ -1,5 +1,6 @@
 Object lamestar
 name Firestar
+anim_suffix double_sword
 nrof 1
 animation lamestar
 weapontype 7

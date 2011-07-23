@@ -1,5 +1,6 @@
 Object uw_sword
 name Belzebub's sword
+anim_suffix double_sword
 nrof 1
 last_sp 7
 dam 17

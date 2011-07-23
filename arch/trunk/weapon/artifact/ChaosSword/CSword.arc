@@ -1,5 +1,6 @@
 Object CSword
 name Chaos Sword
+anim_suffix sword
 nrof 1
 last_sp 3
 type 15
