@@ -32,7 +32,6 @@ import com.realtime.crossfire.jxclient.gui.list.GUISpellList;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
@@ -169,7 +168,6 @@ public class GUIItemSpell extends GUIItemItem {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param commandQueue the command queue for sending commands
-     * @param connection the server connection for sending commands
      * @param name the name of this element
      * @param itemPainter the item painter for painting the icon
      * @param defaultIndex the default scroll index
@@ -179,8 +177,8 @@ public class GUIItemSpell extends GUIItemItem {
      * spell is selected
      * @param spellsView the spells view to use
      */
-    public GUIItemSpell(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
-        super(tooltipManager, elementListener, name, connection, itemPainter, facesManager);
+    public GUIItemSpell(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
+        super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;

@@ -33,7 +33,6 @@ import com.realtime.crossfire.jxclient.quests.Quest;
 import com.realtime.crossfire.jxclient.quests.QuestListener;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.quests.QuestsManagerListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.awt.Dimension;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -143,7 +142,6 @@ public class GUIItemQuest extends GUIItemItem {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param connection the server connection for sending commands
      * @param name the name of this element
      * @param itemPainter the item painter for painting the icon
      * @param defaultIndex the default scroll index
@@ -151,8 +149,8 @@ public class GUIItemQuest extends GUIItemItem {
      * @param questsManager the quests manager instance to watch
      * @param questsView the quests view to use
      */
-    public GUIItemQuest(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection connection, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questsView) {
-        super(tooltipManager, elementListener, name, connection, itemPainter, facesManager);
+    public GUIItemQuest(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questsView) {
+        super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
         this.questsManager = questsManager;

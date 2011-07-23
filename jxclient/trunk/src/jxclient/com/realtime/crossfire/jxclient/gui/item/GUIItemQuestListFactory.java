@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.QuestsView;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -60,12 +59,6 @@ public class GUIItemQuestListFactory implements GUIItemItemFactory {
     private final ItemPainter itemPainter;
 
     /**
-     * The {@link CrossfireServerConnection} for sending commands.
-     */
-    @NotNull
-    private final CrossfireServerConnection crossfireServerConnection;
-
-    /**
      * The {@link QuestsManager} instance to watch.
      */
     @NotNull
@@ -88,18 +81,15 @@ public class GUIItemQuestListFactory implements GUIItemItemFactory {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the base name for created elements
-     * @param crossfireServerConnection the server connection for sending
-     * commands
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager to use
      * @param questsManager the quests manager instance to watch
      * @param questsView the quests view to use
      */
-    public GUIItemQuestListFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questsView) {
+    public GUIItemQuestListFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questsView) {
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.name = name;
-        this.crossfireServerConnection = crossfireServerConnection;
         this.itemPainter = itemPainter;
         this.facesManager = facesManager;
         this.questsManager = questsManager;
@@ -112,7 +102,7 @@ public class GUIItemQuestListFactory implements GUIItemItemFactory {
     @NotNull
     @Override
     public GUIElement newItem(final int index) {
-        return new GUIItemQuest(tooltipManager, elementListener, crossfireServerConnection, name+index, itemPainter, index, facesManager, questsManager, questsView);
+        return new GUIItemQuest(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, questsManager, questsView);
     }
 
     /**
@@ -121,7 +111,7 @@ public class GUIItemQuestListFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIItemItem newTemplateItem(final int cellHeight) {
-        final GUIItemItem result = new GUIItemQuest(tooltipManager, elementListener, crossfireServerConnection, name+"_template", itemPainter, -1, facesManager, questsManager, questsView);
+        final GUIItemItem result = new GUIItemQuest(tooltipManager, elementListener, name+"_template", itemPainter, -1, facesManager, questsManager, questsView);
         //noinspection SuspiciousNameCombination
         result.setSize(cellHeight, cellHeight);
         return result;

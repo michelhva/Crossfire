@@ -129,7 +129,7 @@ public class GUIItemFloor extends GUIItemItem {
      * @param prevGroupFace the image for "next group of items"
      */
     public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView floorView, @NotNull final ItemSet itemSet, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) {
-        super(tooltipManager, elementListener, name, crossfireServerConnection, itemPainter, facesManager);
+        super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.floorView = floorView;

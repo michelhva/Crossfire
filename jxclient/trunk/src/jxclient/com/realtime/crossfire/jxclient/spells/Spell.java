@@ -310,15 +310,6 @@ public class Spell {
     }
 
     /**
-     * Updates the spell's parameters from another <code>Spell</code> instance.
-     * The name and unknown flag values are not copied.
-     * @param spell the spell instance to copy from
-     */
-    public void setParameters(@NotNull final Spell spell) {
-        setParameters(spell.faceNum, spell.tag, spell.message, spell.level, spell.castingTime, spell.mana, spell.grace, spell.damage, spell.skill, spell.path);
-    }
-
-    /**
      * Updates the spell's parameters.
      * @param updateMana whether to update the mana
      * @param mana the mana needed to cast the spell

@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.SpellsView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import org.jetbrains.annotations.NotNull;
@@ -68,12 +67,6 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     private final ItemPainter itemPainter;
 
     /**
-     * The {@link CrossfireServerConnection} for sending commands.
-     */
-    @NotNull
-    private final CrossfireServerConnection crossfireServerConnection;
-
-    /**
      * The {@link SpellsManager} instance to watch.
      */
     @NotNull
@@ -103,8 +96,6 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
      * @param elementListener the element listener to notify
      * @param commandQueue the command queue for sending commands
      * @param name the base name for created elements
-     * @param crossfireServerConnection the server connection for sending
-     * commands
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager to use
      * @param spellsManager the spells manager instance to watch
@@ -112,13 +103,12 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
      * spell is selected
      * @param spellsView the spells view to use
      */
-    public GUIItemSpellListFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final SpellsView spellsView) {
+    public GUIItemSpellListFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final SpellsView spellsView) {
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.commandQueue = commandQueue;
         this.name = name;
         this.itemPainter = itemPainter;
-        this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.spellsManager = spellsManager;
         this.currentSpellManager = currentSpellManager;
@@ -131,7 +121,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     @NotNull
     @Override
     public GUIElement newItem(final int index) {
-        return new GUIItemSpell(tooltipManager, elementListener, commandQueue, crossfireServerConnection, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellsView);
+        return new GUIItemSpell(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellsView);
     }
 
     /**
@@ -140,7 +130,7 @@ public class GUIItemSpellListFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIItemItem newTemplateItem(final int cellHeight) {
-        final GUIItemItem result = new GUIItemSpell(tooltipManager, elementListener, commandQueue, crossfireServerConnection, name+"_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, spellsView);
+        final GUIItemItem result = new GUIItemSpell(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, spellsView);
         //noinspection SuspiciousNameCombination
         result.setSize(cellHeight, cellHeight);
         return result;
