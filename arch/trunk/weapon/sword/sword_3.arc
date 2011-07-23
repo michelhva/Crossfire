@@ -1,5 +1,4 @@
 Object sword_3
-anim_suffix sword
 nrof 1
 name two handed sword
 name_pl two handed swords
