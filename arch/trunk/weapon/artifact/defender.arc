@@ -1,5 +1,6 @@
 Object defender
 name Defender
+anim_suffix double_sword
 nrof 1
 last_sp 8
 ac -1

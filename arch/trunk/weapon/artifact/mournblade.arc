@@ -1,5 +1,6 @@
 Object mournblade
 name Mournblade
+anim_suffix double_sword
 nrof 1
 last_sp 8
 Str 1

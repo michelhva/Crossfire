@@ -1,5 +1,6 @@
 Object holy_avenger
 name Holy Avenger
+anim_suffix double_sword
 nrof 1
 face holyave.111
 animation holy_avenger

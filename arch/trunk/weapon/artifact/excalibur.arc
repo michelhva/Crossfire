@@ -1,5 +1,6 @@
 Object excalibur
 name Excalibur
+anim_suffix double_sword
 nrof 1
 last_sp 7
 Str 1

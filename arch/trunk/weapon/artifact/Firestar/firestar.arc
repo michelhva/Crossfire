@@ -1,5 +1,6 @@
 Object firestar
 name Firestar
+anim_suffix double_sword
 nrof 1
 title named Fearless
 animation firestar

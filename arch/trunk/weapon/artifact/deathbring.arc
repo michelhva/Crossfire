@@ -1,5 +1,6 @@
 Object deathbringer
 name Deathbringer
+anim_suffix double_sword
 nrof 1
 last_sp 9
 type 15

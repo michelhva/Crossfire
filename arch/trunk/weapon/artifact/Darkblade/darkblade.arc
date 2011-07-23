@@ -1,5 +1,6 @@
 Object darkblade
 name Darkblade
+anim_suffix sword
 nrof 1
 type 15
 face darkblade.111
