@@ -34,11 +34,6 @@ import org.jetbrains.annotations.NotNull;
 public class ButtonImages {
 
     /**
-     * Half the minimum width available for the text.
-     */
-    private static final int OFFSET = 3;
-
-    /**
      * The left border of the button.
      */
     @NotNull
@@ -90,14 +85,6 @@ public class ButtonImages {
     }
 
     /**
-     * Returns the minimal possible button's width.
-     * @return the minimal button's width
-     */
-    public int getMinimumWidth() {
-        return imageLeft.getWidth(null)+2*OFFSET+imageRight.getWidth(null);
-    }
-
-    /**
      * Draws the button.
      * @param g the graphics to paint into
      * @param w the button width
@@ -115,15 +102,6 @@ public class ButtonImages {
             tmpX += thisWidth;
             tmpWidth -= thisWidth;
         }
-    }
-
-    /**
-     * Returns the total width needed to display contents of the given width.
-     * @param width the content's width
-     * @return the total width
-     */
-    public int getWidth(final int width) {
-        return imageLeft.getWidth(null)+OFFSET+width+OFFSET+imageRight.getWidth(null);
     }
 
 }

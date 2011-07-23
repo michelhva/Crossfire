@@ -127,7 +127,7 @@ public class GUIItemInventory extends GUIItemItem {
      * @param inventoryView the inventory view to watch
      */
     public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView) {
-        super(tooltipManager, elementListener, name, crossfireServerConnection, itemPainter, facesManager);
+        super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;

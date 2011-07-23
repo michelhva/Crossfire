@@ -27,8 +27,6 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.ItemView;
-import com.realtime.crossfire.jxclient.queue.CommandQueue;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.window.KeybindingsManager;
@@ -62,12 +60,9 @@ public class GUISpellList extends GUIItemList {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param commandQueue the command queue for sending commands to the server
      * @param name the name of this element
      * @param cellWidth the width of cells
      * @param cellHeight the height of cells
-     * @param crossfireServerConnection the crossfire server connection for
-     * sending commands to the server
      * @param itemView the item view to monitor
      * @param currentItem the label to update with information about the
      * selected item.
@@ -75,8 +70,8 @@ public class GUISpellList extends GUIItemList {
      * @param spellsManager the spells to display
      * @param keybindings the bindings for displaying shortcuts
      */
-    public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory, @NotNull final SpellsManager spellsManager, @NotNull final KeybindingsManager keybindings) {
-        super(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, crossfireServerConnection, itemView, currentItem, itemItemFactory);
+    public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory, @NotNull final SpellsManager spellsManager, @NotNull final KeybindingsManager keybindings) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, itemItemFactory);
         this.spellsManager = spellsManager;
         this.keybindings = keybindings;
     }

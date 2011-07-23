@@ -29,7 +29,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -47,12 +46,6 @@ public abstract class GUIItemItem extends GUIItem {
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
-
-    /**
-     * The connection instance.
-     */
-    @NotNull
-    private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The {@link FacesManager} instance to use.
@@ -107,14 +100,12 @@ public abstract class GUIItemItem extends GUIItem {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param crossfireServerConnection the connection instance
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager instance to use
      */
-    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
+    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
         super(tooltipManager, elementListener, name);
         this.itemPainter = itemPainter;
-        this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.facesManager.addFacesManagerListener(facesManagerListener);
     }

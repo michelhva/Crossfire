@@ -1204,22 +1204,22 @@ public class JXCSkinLoader {
         switch (type) {
         case INVENTORY:
             final GUIItemItemFactory inventoryItemFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
-            element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, inventoryView, selectedItem, inventoryItemFactory);
+            element = new GUIItemList(tooltipManager, elementListener, name, cellWidth, cellHeight, inventoryView, selectedItem, inventoryItemFactory);
             break;
 
         case GROUND:
             final GUIItemItemFactory groundItemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
-            element = new GUIFloorList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, floorView, selectedItem, groundItemFactory);
+            element = new GUIFloorList(tooltipManager, elementListener, name, cellWidth, cellHeight, floorView, selectedItem, groundItemFactory);
             break;
 
         case SPELL:
-            final GUIItemItemFactory spellItemFactory = new GUIItemSpellListFactory(tooltipManager, elementListener, commandQueue, name, server, itemPainter, facesManager, spellsManager, currentSpellManager, spellView);
-            element = new GUISpellList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, spellView, selectedItem, spellItemFactory, spellsManager, keybindingsManager);
+            final GUIItemItemFactory spellItemFactory = new GUIItemSpellListFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, facesManager, spellsManager, currentSpellManager, spellView);
+            element = new GUISpellList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellView, selectedItem, spellItemFactory, spellsManager, keybindingsManager);
             break;
 
         case QUEST:
-            final GUIItemItemFactory questItemFactory = new GUIItemQuestListFactory(tooltipManager, elementListener, name, server, itemPainter, facesManager, questsManager, questView);
-            element = new GUIQuestList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, spellView, selectedItem, questItemFactory, questsManager);
+            final GUIItemItemFactory questItemFactory = new GUIItemQuestListFactory(tooltipManager, elementListener, name, itemPainter, facesManager, questsManager, questView);
+            element = new GUIQuestList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellView, selectedItem, questItemFactory, questsManager);
             break;
 
         default:
@@ -1365,7 +1365,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, server, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
+            element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
         } else {
             throw new IOException("undefined item type: "+type);
         }
