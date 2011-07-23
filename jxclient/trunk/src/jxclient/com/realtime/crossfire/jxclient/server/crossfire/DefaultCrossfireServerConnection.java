@@ -281,6 +281,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private final EventListenerList2<CrossfireSpellListener> crossfireSpellListeners = new EventListenerList2<CrossfireSpellListener>(CrossfireSpellListener.class);
 
     /**
+     * The {@link CrossfireQuestListener CrossfireQuestListeners} to be
+     * notified.
+     */
+    @NotNull
+    private final EventListenerList2<CrossfireQuestListener> crossfireQuestListeners = new EventListenerList2<CrossfireQuestListener>(CrossfireQuestListener.class);
+
+    /**
      * The {@link ReceivedPacketListener ReceivedPacketListeners} to be
      * notified.
      */
@@ -925,6 +932,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
+    public void addCrossfireQuestListener(@NotNull final CrossfireQuestListener listener) {
+        crossfireQuestListeners.add(listener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void addPacketWatcherListener(@NotNull final ReceivedPacketListener listener) {
         receivedPacketListeners.add(listener);
     }
@@ -1159,6 +1174,26 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         }
                         break;
 
+                    case 'q':
+                        if (packet.get() != 'u') {
+                            break;
+                        }
+                        if (packet.get() != 'e') {
+                            break;
+                        }
+                        if (packet.get() != 's') {
+                            break;
+                        }
+                        if (packet.get() != 't') {
+                            break;
+                        }
+                        if (packet.get() != ' ') {
+                            break;
+                        }
+
+                        processAddQuest(packet);
+                        return;
+                        
                     case 's':
                         if (packet.get() != 'p') {
                             break;
@@ -1811,6 +1846,25 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     processUpdItem(packet);
                     return;
 
+                case 'q':
+                    if (packet.get() != 'u') {
+                        break;
+                    }
+                    if (packet.get() != 'e') {
+                        break;
+                    }
+                    if (packet.get() != 's') {
+                        break;
+                    }
+                    if (packet.get() != 't') {
+                        break;
+                    }
+                    if (packet.get() != ' ') {
+                        break;
+                    }
+                    processUpdQuest(packet);
+                    return;
+
                 case 's':
                     if (packet.get() != 'p') {
                         break;
@@ -2437,6 +2491,33 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
 
         notifyPacketWatcherListenersNoData(packet, args);
+    }
+
+
+    /**
+     * Processes an 'addquest' server command.
+     * @param packet the packet's payload
+     */
+    private void processAddQuest(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+        while (packet.hasRemaining()) {
+            final int code = getInt2(packet);
+            final int titleLength = getInt2(packet);
+            final String title = getString(packet, titleLength);
+            final int face = getInt4(packet);
+            final int replay = getInt1(packet);
+            final int end = getInt1(packet);
+            final int stepLength = getInt2(packet);
+            final String step = (stepLength > 0) ? getString(packet, stepLength) : null;
+
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("recv addquest code="+code+" title="+title+" face="+face+"replay="+replay+" end="+end+" desc="+step);
+            }
+            for (final CrossfireQuestListener crossfireQuestListener : crossfireQuestListeners.getListeners()) {
+                crossfireQuestListener.addQuest(code, title, face, replay == 1, end == 1, step);
+            }
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
     }
 
     /**
@@ -3281,6 +3362,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     throw new UnknownCommandException("the server returned 'setup loginmethod "+value+"'.");
                 }
                 loginMethod = method;
+            } else if (option.equals("notifications")) {
+                // ignore: we do not care whether this option has been ignored
             } else {
                 System.err.println("Warning: ignoring unknown setup option from server: "+option+"="+value);
             }
@@ -3568,6 +3651,26 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
+     * Processes an 'updquest' server command.
+     * @param packet the packet's payload
+     */
+    private void processUpdQuest(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+        final int code = getInt2(packet);
+        final int end = getInt1(packet);
+        final int stepLength = getInt2(packet);
+        final String step = (stepLength > 0) ? getString(packet, stepLength) : null;
+
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv updquest code="+code+" end="+end+" description="+step);
+        }
+        for (final CrossfireQuestListener crossfireQuestListener : crossfireQuestListeners.getListeners()) {
+            crossfireQuestListener.updateQuest(code, end == 1, step);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
      * Processes an 'updspell' server command.
      * @param packet the packet's payload
      * @throws UnknownCommandException if the packet is invalid
@@ -3617,7 +3720,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
 
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
-        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1");
+        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1", "notifications 1");
         for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners.getListeners()) {
             crossfireStatsListener.setSimpleWeaponSpeed(scval >= 1029);
         }

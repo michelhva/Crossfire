@@ -57,6 +57,7 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemFloorFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemQuestListFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpell;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpellListFactory;
@@ -79,6 +80,7 @@ import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.list.GUIFloorList;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
+import com.realtime.crossfire.jxclient.gui.list.GUIQuestList;
 import com.realtime.crossfire.jxclient.gui.list.GUISpellList;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
@@ -95,9 +97,11 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemView;
+import com.realtime.crossfire.jxclient.items.QuestsView;
 import com.realtime.crossfire.jxclient.items.SpellsView;
 import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
+import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
@@ -181,8 +185,12 @@ public class JXCSkinLoader {
         /**
          * Create a {@link GUISpellList} instance.
          */
-        SPELL
+        SPELL,
 
+        /**
+         * Create a {@link GUIQuestList} instance.
+         */
+        QUEST
     }
 
     /**
@@ -215,10 +223,21 @@ public class JXCSkinLoader {
     private final SpellsView spellView;
 
     /**
+     * The {@link QuestsView} to use.
+     */
+    @NotNull final QuestsView questView;
+
+    /**
      * The {@link SpellsManager} instance to use.
      */
     @NotNull
     private final SpellsManager spellsManager;
+
+    /**
+     * The {@link QuestsManager} instance to use.
+     */
+    @NotNull
+    private final QuestsManager questsManager;
 
     /**
      * The {@link FacesManager} instance to use.
@@ -385,8 +404,10 @@ public class JXCSkinLoader {
      * @param skillSet the skill set to use
      * @param defaultTileSize the default tile size for the map view
      * @param keybindingsManager the keybindings manager to use
+     * @param questView the quests view to use
+     * @param questsManager the quests manager instance to use
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
@@ -402,6 +423,8 @@ public class JXCSkinLoader {
         this.experienceTable = experienceTable;
         this.skillSet = skillSet;
         this.keybindingsManager = keybindingsManager;
+        this.questsManager = questsManager;
+        this.questView = questView;
     }
 
     /**
@@ -635,6 +658,8 @@ public class JXCSkinLoader {
                             parseList(args, ListType.GROUND, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("spells_list")) {
                             parseList(args, ListType.SPELL, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                        } else if (gui != null && cmd.equals("quests_list")) {
+                            parseList(args, ListType.QUEST, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("horizontal")) {
                             parseHorizontal(args, gui, lnr, isDialog);
                         } else if (gui != null && cmd.equals("item")) {
@@ -1150,7 +1175,7 @@ public class JXCSkinLoader {
     }
 
     /**
-     * Parses an "inventory_list", "floor_list" or "spells_list" command.
+     * Parses an "inventory_list", "floor_list", "spells_list" or "quests_list" command.
      * @param args the command arguments
      * @param type {@link ListType} list type to create
      * @param tooltipManager the tooltip manager to update
@@ -1190,6 +1215,11 @@ public class JXCSkinLoader {
         case SPELL:
             final GUIItemItemFactory spellItemFactory = new GUIItemSpellListFactory(tooltipManager, elementListener, commandQueue, name, server, itemPainter, facesManager, spellsManager, currentSpellManager, spellView);
             element = new GUISpellList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, spellView, selectedItem, spellItemFactory, spellsManager, keybindingsManager);
+            break;
+
+        case QUEST:
+            final GUIItemItemFactory questItemFactory = new GUIItemQuestListFactory(tooltipManager, elementListener, name, server, itemPainter, facesManager, questsManager, questView);
+            element = new GUIQuestList(tooltipManager, elementListener, commandQueue, name, cellWidth, cellHeight, server, spellView, selectedItem, questItemFactory, questsManager);
             break;
 
         default:

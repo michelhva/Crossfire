@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMagicmapListene
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMusicListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfirePickupListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQuestListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectionListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSkillInfoListener;
@@ -239,6 +240,14 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      */
     @Override
     public void addCrossfireSpellListener(@NotNull final CrossfireSpellListener listener) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void addCrossfireQuestListener(CrossfireQuestListener listener) {
         Assert.fail();
     }
 

@@ -54,6 +54,9 @@ commandlist command_pickup_close AND null DIALOG_CLOSE pickup
 commandlist command_spells AND null DIALOG_TOGGLE spells
 commandlist command_spells_open AND null DIALOG_OPEN spells
 commandlist command_spells_close AND null DIALOG_CLOSE spells
+commandlist command_quests AND null DIALOG_TOGGLE quests
+commandlist command_quests_open AND null DIALOG_OPEN quests
+commandlist command_quests_close AND null DIALOG_CLOSE quests
 
 commandlist command_help_close AND null DIALOG_CLOSE help
 
