@@ -4,7 +4,7 @@
   {
   "match" : ["roots"],
   "pre" : [["quest", "darcap/Spike", "=20"]],
-  "post" : [["quest", "darcap/Spike", "40"], ["givecontents", "pouch"]],
+  "post" : [["quest", "darcap/Spike", "30"], ["givecontents", "pouch"]],
   "msg" : ["Ha yes, the roots!\n\nI almost forgot.\n\nHere, take them, and give them to Molthir for me, please."]
   }, {
   "match" : ["day"],
