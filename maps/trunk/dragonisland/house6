@@ -8,7 +8,7 @@ enter_x 9
 enter_y 18
 msg
 Created:  1997-06-23 Viola Krings
-Modified: 2008-12-01 Rick Tanner
+Modified: 2011-07-23 Khaleh                                        
 endmsg
 end
 arch woodfloor
@@ -746,8 +746,10 @@ x 5
 y 16
 end
 arch wand
+food 9                                                            
 x 5
 y 16
+level 1                                                           
 randomitems none
 arch spell_magic_bullet
 end
@@ -1637,8 +1639,10 @@ x 12
 y 2
 end
 arch wand
+food 3                                                            
 x 12
 y 2
+level 2                                                           
 randomitems none
 arch spell_magic_bullet
 end
@@ -1948,8 +1952,10 @@ x 14
 y 15
 end
 arch wand
+food 2                                                                                                                                        
 x 14
 y 15
+level 1                                                                                                                                       
 randomitems none
 arch spell_magic_bullet
 end
@@ -1963,8 +1969,10 @@ x 14
 y 16
 end
 arch wand
+food 1                                                                                                                                        
 x 14
 y 16
+level 1                                                                                                                                       
 randomitems none
 arch spell_magic_bullet
 end
@@ -1978,8 +1986,10 @@ x 14
 y 17
 end
 arch wand
+food 2                                                                                                                                        
 x 14
 y 17
+level 1                                                                                                                                       
 randomitems none
 arch spell_magic_bullet
 end
@@ -1993,8 +2003,10 @@ x 14
 y 18
 end
 arch wand
+food 4                                                                                                                                        
 x 14
 y 18
+level 1                                                                                                                                       
 randomitems none
 arch spell_magic_bullet
 end
@@ -2105,8 +2117,10 @@ x 15
 y 15
 end
 arch wand
+food 5                                                                                                                                        
 x 15
 y 15
+level 1                                                                                                                                       
 randomitems none
 arch spell_magic_bullet
 end
@@ -2136,8 +2150,10 @@ x 15
 y 18
 end
 arch wand
+food 6
 x 15
 y 18
+level 2
 randomitems none
 arch spell_magic_bullet
 end
@@ -2241,8 +2257,10 @@ x 16
 y 15
 end
 arch wand
+food 7
 x 16
 y 15
+level 1
 randomitems none
 arch spell_magic_bullet
 end
@@ -2272,8 +2290,10 @@ x 16
 y 18
 end
 arch wand
+food 5
 x 16
 y 18
+level 1
 randomitems none
 arch spell_magic_bullet
 end
@@ -2435,8 +2455,10 @@ x 18
 y 2
 end
 arch wand
+food 5
 x 18
 y 2
+level 3
 randomitems none
 arch spell_magic_bullet
 end
