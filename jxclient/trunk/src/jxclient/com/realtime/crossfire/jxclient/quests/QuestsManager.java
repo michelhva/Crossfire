@@ -35,7 +35,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Manages all quests for a player
+ * Manages all quests for a player.
  * @author nicolas
  */
 public class QuestsManager {
@@ -60,7 +60,7 @@ public class QuestsManager {
     private final Comparator<Quest> questComparator = new QuestComparator();
 
     /**
-     * The listener to receive updates for spell information.
+     * The listener to receive updates for quest information.
      */
     @NotNull
     private final CrossfireQuestListener crossfireQuestListener = new CrossfireQuestListener() {
@@ -121,7 +121,7 @@ public class QuestsManager {
 
     /**
      * The {@link CrossfireAccountListener} for detecting character change and
-     * clear spell information.
+     * clear quest information.
      */
     @NotNull
     private final CrossfireAccountListener crossfireAccountListener = new CrossfireAccountListener() {
