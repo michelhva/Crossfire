@@ -62,17 +62,25 @@ public class TextButtonFactory {
     private final Color color;
 
     /**
+     * The text color when selected.
+     */
+    @NotNull
+    private final Color colorSelected;
+
+    /**
      * Creates a new instance.
      * @param up the images comprising the "up" button state
      * @param down the images comprising the "down" button state
      * @param font the font to use
      * @param color the text color
+     * @param colorSelected the text color when selected
      */
-    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color) {
+    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color, @NotNull final Color colorSelected) {
         this.up = up;
         this.down = down;
         this.font = font;
         this.color = color;
+        this.colorSelected = colorSelected;
     }
 
     /**
@@ -88,7 +96,7 @@ public class TextButtonFactory {
      */
     @NotNull
     public AbstractGUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        return new GUITextButton(tooltipManager, elementListener, name, up, down, text, font, color, autoRepeat, commandList);
+        return new GUITextButton(tooltipManager, elementListener, name, up, down, text, font, color, colorSelected, autoRepeat, commandList);
     }
 
 }

@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.button;
 
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.GUISelectable;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
@@ -45,7 +46,7 @@ import org.jetbrains.annotations.Nullable;
  * actual with of the button. underlying images.
  * @author Andreas Kirschbaum
  */
-public class GUITextButton extends AbstractButton {
+public class GUITextButton extends AbstractButton implements GUISelectable {
 
     /**
      * The serial version UID.
@@ -83,10 +84,21 @@ public class GUITextButton extends AbstractButton {
     private final Color color;
 
     /**
+     * The text color when selected.
+     */
+    @NotNull
+    private final Color colorSelected;
+
+    /**
      * The preferred size of this component.
      */
     @NotNull
     private final Dimension preferredSize;
+
+    /**
+     * Whether the element is currently selected.
+     */
+    private boolean selected;
 
     /**
      * Creates a new instance.
@@ -98,12 +110,14 @@ public class GUITextButton extends AbstractButton {
      * @param text the button text
      * @param font the font to use
      * @param color the text color
+     * @param colorSelected the text color when selected
      * @param autoRepeat whether the button should autorepeat while being
      * pressed
      * @param commandList the commands to execute when the button is selected
      */
-    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final CommandList commandList) {
+    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, @NotNull final Color colorSelected, final boolean autoRepeat, @NotNull final CommandList commandList) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, autoRepeat, commandList);
+        this.colorSelected = colorSelected;
         final int preferredHeight = up.getHeight();
         if (preferredHeight != down.getHeight()) {
             throw new IllegalArgumentException("'up' state height is "+preferredHeight+" but 'down' state height is "+down.getHeight());
@@ -136,7 +150,7 @@ public class GUITextButton extends AbstractButton {
         super.paintComponent(g);
         final Graphics2D g2 = (Graphics2D)g;
         g2.setFont(font);
-        g2.setColor(color);
+        g2.setColor(selected ? colorSelected : color);
         final int width = getWidth();
         (GuiUtils.isActive(this) ? down : up).render(g2, width);
         final FontRenderContext fontRenderContext = g2.getFontRenderContext();
@@ -163,6 +177,14 @@ public class GUITextButton extends AbstractButton {
     @Override
     public Dimension getMaximumSize() {
         return new Dimension(Integer.MAX_VALUE, preferredSize.height);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void select(final boolean selected) {
+        this.selected = selected;
     }
 
 }

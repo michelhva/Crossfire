@@ -50,12 +50,14 @@ import com.realtime.crossfire.jxclient.gui.commands.ScrollListCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ScrollNeverCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ScrollNextCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ScrollResetCommand;
+import com.realtime.crossfire.jxclient.gui.commands.SelectCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ShowCommand;
 import com.realtime.crossfire.jxclient.gui.commands.StartCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ToggleCommand;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUISelectable;
 import com.realtime.crossfire.jxclient.gui.item.GUIItem;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIList;
@@ -182,6 +184,8 @@ public class CommandParser {
             return parseAccountCreateCharacter(element, commandCallback);
         } else if (command.equals("ACCOUNT_PASSWORD")) {
             return parseAccountPassword(element, commandCallback);
+        } else if (command.equals("SELECT")) {
+            return parseSelect(args, element);
         } else {
             throw new JXCSkinException("unknown command '"+command+"'");
         }
@@ -667,6 +671,28 @@ public class CommandParser {
         }
 
         return new AccountPasswordCommand(commandCallback, element);
+    }
+
+    /**
+     * Parses and builds a "SELECT" command.
+     * @param args the list of arguments
+     * @param element the target element
+     * @return the command arguments
+     * @throws IOException if a syntax error occurs
+     */
+    @NotNull
+    private static GUICommand parseSelect(@NotNull final Args args, @Nullable final GUIElement element) throws IOException {
+        final boolean selected = NumberParser.parseBoolean(args.get());
+
+        if (element == null) {
+            throw new IOException("<element> is required");
+        }
+
+        if (!(element instanceof GUISelectable)) {
+            throw new IOException("'"+element+"' must be a selectable element");
+        }
+
+        return new SelectCommand((GUISelectable)element, selected);
     }
 
 }
