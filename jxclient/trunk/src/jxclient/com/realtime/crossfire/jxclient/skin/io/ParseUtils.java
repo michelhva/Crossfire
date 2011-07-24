@@ -138,6 +138,9 @@ public class ParseUtils {
         if (name.equals("BLACK")) {
             return Color.BLACK;
         }
+        if (name.equals("BLUE")) {
+            return Color.BLUE;
+        }
         if (name.equals("DARK_GRAY")) {
             return Color.DARK_GRAY;
         }

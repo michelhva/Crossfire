@@ -529,7 +529,7 @@
 
 <p>syntax:</p>
 <pre>
-    def textbutton &lt;up-pic&gt; &lt;down-pic&gt; &lt;font&gt; &lt;color&gt;
+    def textbutton &lt;up-pic&gt; &lt;down-pic&gt; &lt;font&gt; &lt;color&gt; &lt;color-selected&gt;
 </pre>
 
 <p>Defines layout for rendering <a href="#textbutton">text buttons</a>.</p>
@@ -540,6 +540,9 @@
     </li>
     <li>&lt;font&gt; &lt;color&gt; define the font and color for the text
         label.
+    </li>
+    <li>&lt;color-selected&gt; the alternative color for the text label if the
+        button is <a href="#command_select">selected</a>.
     </li>
 </ul>
 
@@ -1710,6 +1713,10 @@ See &lt;horizontal&gt;.
     </li>
     <li><code>ACCOUNT_CREATE_CHARACTER</code>: Tries to create a new character.
     </li>
+    <li><a name="command_select"><code>SELECT &lt;selected&gt;</code></a>:
+        Selects or deselects the &lt;element&gt;.
+        Works only for <a href="#textbutton">text buttons</a>.
+    </li>
 </ul>
 
 <h3><a name="stats">Stats</a></h3>
@@ -1857,7 +1864,8 @@ See &lt;horizontal&gt;.
 
 <p>Colors can be specified as:</p>
 <ul>
-    <li>A named color: <code>BLACK</code>, <code>DARK_GRAY</code>,
+    <li>A named color: <code>BLACK</code>, <code>BLUE</code>,
+        <code>DARK_GRAY</code>,
         <code>GRAY</code>, <code>WHITE</code></li>
     <li>A numerical color: <code>#&lt;RR&gt;&lt;GG&gt;&lt;BB&gt;</code> where
         &lt;RR&gt;/&lt;GG&gt;/&lt;BB&gt; is the red/green/blue component in

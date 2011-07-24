@@ -40,6 +40,16 @@ commandlist_add command_messages_reset log_msg SCROLL_RESET
 commandlist_add command_messages_reset log_chat SCROLL_RESET
 event connect command_messages_reset
 
+commandlist_add command_message_show_all button_all SELECT true
+commandlist_add command_message_show_all button_msg SELECT false
+commandlist_add command_message_show_all button_chat SELECT false
+commandlist_add command_message_show_msg button_all SELECT false
+commandlist_add command_message_show_msg button_msg SELECT true
+commandlist_add command_message_show_msg button_chat SELECT false
+commandlist_add command_message_show_chat button_all SELECT false
+commandlist_add command_message_show_chat button_msg SELECT false
+commandlist_add command_message_show_chat button_chat SELECT true
+
 commandlist_add command_message_show_all log_all SHOW
 commandlist_add command_message_show_all log_msg HIDE
 commandlist_add command_message_show_all log_chat HIDE
