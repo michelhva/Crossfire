@@ -1219,7 +1219,7 @@ public class JXCSkinLoader {
 
         case QUEST:
             final GUIItemItemFactory questItemFactory = new GUIItemQuestListFactory(tooltipManager, elementListener, name, itemPainter, facesManager, questsManager, questView);
-            element = new GUIQuestList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellView, selectedItem, questItemFactory, questsManager);
+            element = new GUIQuestList(tooltipManager, elementListener, name, cellWidth, cellHeight, questView, selectedItem, questItemFactory, questsManager);
             break;
 
         default:
