@@ -65,8 +65,8 @@ public class QuestsManager {
     @NotNull
     private final CrossfireQuestListener crossfireQuestListener = new CrossfireQuestListener() {
 
-        public void addQuest(int code, String title, int face, boolean replay, boolean end, String step) {
-            QuestsManager.this.addQuest(code, title, face, replay, end, step);
+        public void addQuest(int code, String title, int face, boolean replay, int parent, boolean end, String step) {
+            QuestsManager.this.addQuest(code, title, face, replay, parent, end, step);
         }
 
         public void updateQuest(int code, boolean end, String step) {
@@ -191,11 +191,12 @@ public class QuestsManager {
      * @param title the quest's title
      * @param face the quest's face
      * @param replay whether the quest can be replayed or not
+     * @param parent quest internal code of this quest's parent, 0 if no parent.
      * @param end whether the quest is ended or not
      * @param description the quest's current step
      */
-    private void addQuest(final int code, @NotNull final String title, final int face, final boolean replay, final boolean end, @NotNull final String description) {
-        final Quest key = new Quest(code, title, face, replay, end, description);
+    private void addQuest(final int code, @NotNull final String title, final int face, final boolean replay, final int parent, final boolean end, @NotNull final String description) {
+        final Quest key = new Quest(code, title, face, replay, parent, end, description);
 
         int index = Collections.binarySearch(quests, key, questComparator);
         if (index < 0) {
