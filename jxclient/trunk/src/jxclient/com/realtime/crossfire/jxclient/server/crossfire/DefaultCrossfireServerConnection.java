@@ -2501,20 +2501,21 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private void processAddQuest(@NotNull final ByteBuffer packet) {
         final int args = packet.position();
         while (packet.hasRemaining()) {
-            final int code = getInt2(packet);
+            final int code = getInt4(packet);
             final int titleLength = getInt2(packet);
             final String title = getString(packet, titleLength);
             final int face = getInt4(packet);
             final int replay = getInt1(packet);
+            final int parent = getInt4(packet);
             final int end = getInt1(packet);
             final int stepLength = getInt2(packet);
-            final String step = (stepLength > 0) ? getString(packet, stepLength) : null;
+            final String step = (stepLength > 0) ? getString(packet, stepLength) : "";
 
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv addquest code="+code+" title="+title+" face="+face+"replay="+replay+" end="+end+" desc="+step);
             }
             for (final CrossfireQuestListener crossfireQuestListener : crossfireQuestListeners.getListeners()) {
-                crossfireQuestListener.addQuest(code, title, face, replay == 1, end == 1, step);
+                crossfireQuestListener.addQuest(code, title, face, replay == 1, parent, end == 1, step);
             }
         }
         notifyPacketWatcherListenersMixed(packet, args);
@@ -3656,10 +3657,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void processUpdQuest(@NotNull final ByteBuffer packet) {
         final int args = packet.position();
-        final int code = getInt2(packet);
+        final int code = getInt4(packet);
         final int end = getInt1(packet);
         final int stepLength = getInt2(packet);
-        final String step = (stepLength > 0) ? getString(packet, stepLength) : null;
+        final String step = (stepLength > 0) ? getString(packet, stepLength) : "";
 
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv updquest code="+code+" end="+end+" description="+step);

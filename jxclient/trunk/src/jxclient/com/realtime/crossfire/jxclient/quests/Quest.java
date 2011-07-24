@@ -56,6 +56,12 @@ public class Quest {
      */
     private final boolean replay;
 
+    
+    /**
+     * Quest internal code of this quest's parent, 0 if no parent.
+     */
+    private final int parent;
+
     /**
      * If true, the quest is completed.
      */
@@ -73,14 +79,16 @@ public class Quest {
      * @param title the quest's title.
      * @param face the quest's face.
      * @param replay if 1 the quest can be replayed.
+    * @param parent quest internal code of this quest's parent, 0 if no parent.
      * @param end if 1 the quest is completed.
      * @param step current quest's step.
      */
-    public Quest(final int code, @NotNull final String title, final int face, final boolean replay, final boolean end, @NotNull String step) {
+    public Quest(final int code, @NotNull final String title, final int face, final boolean replay, final int parent, final boolean end, @NotNull String step) {
         this.code = code;
         this.title = title;
         this.face = face;
         this.replay = replay;
+        this.parent = parent;
         this.end = end;
         this.step = step;
     }

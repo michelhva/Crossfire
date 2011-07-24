@@ -36,10 +36,11 @@ public interface CrossfireQuestListener extends EventListener {
      * @param title the quest title.
      * @param face the quest face.
      * @param replay whether the quest can be replayed or not.
+     * @param parent quest internal code of this quest's parent, 0 if no parent.
      * @param end whether the quest is finished or not.
      * @param step the current quest step.
      */
-    void addQuest(int code, @NotNull String title, int face, boolean replay, boolean end, @NotNull String step);
+    void addQuest(int code, @NotNull String title, int face, boolean replay, int parent, boolean end, @NotNull String step);
 
     /**
      * An "updquest" command was received.
