@@ -7,7 +7,7 @@ height 16
 enter_x 13
 msg
 Created:  1997-04-16 David Sundqvist (azzie@tellutec.se)
-Modified: 2010-07-10 Nicolas Weeger
+Modified: 2011-08-01 Rick Tanner
 endmsg
 end
 arch grass
@@ -325,7 +325,7 @@ arch grass
 x 2
 y 15
 end
-arch swall_1_3
+arch swall_2_1_2
 x 2
 y 15
 end
@@ -416,6 +416,10 @@ x 3
 y 15
 end
 arch stwall_2_2_1
+x 3
+y 15
+end
+arch swall_1_3_half
 x 3
 y 15
 end
@@ -825,6 +829,10 @@ arch stwall_2_2_4
 x 7
 y 15
 end
+arch swall_1_4_half
+x 7
+y 15
+end
 arch grass
 x 8
 end
@@ -891,7 +899,7 @@ arch grass
 x 8
 y 15
 end
-arch swall_1_4
+arch swall_2_1_2
 x 8
 y 15
 end
@@ -1167,6 +1175,10 @@ arch grass
 x 12
 y 1
 end
+arch swall_1_2_half
+x 12
+y 1
+end
 arch hedge_1_1
 x 12
 y 1
@@ -1355,6 +1367,10 @@ arch swall_2_2_2
 x 14
 end
 arch grass
+x 14
+y 1
+end
+arch swall_1_2_half
 x 14
 y 1
 end
