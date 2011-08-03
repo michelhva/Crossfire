@@ -14,7 +14,7 @@ resist_cold 100
 resist_confusion 100
 resist_acid 100
 resist_drain 100
-
+move_block all
 no_pick 1
 blocksview 1
 alive 1
@@ -36,7 +36,7 @@ resist_cold 100
 resist_confusion 100
 resist_acid 100
 resist_drain 100
-
+move_block all
 no_pick 1
 blocksview 1
 alive 1

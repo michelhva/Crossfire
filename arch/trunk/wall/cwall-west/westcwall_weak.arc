@@ -19,6 +19,7 @@ no_pick 1
 blocksview 1
 alive 1
 level 1
+move_block all
 end
 Object westweak_wall_4
 name wall
@@ -41,4 +42,5 @@ no_pick 1
 blocksview 1
 alive 1
 level 1
+move_block all
 end
