@@ -47,33 +47,51 @@ public class GUICommandFactory {
     private static final String TRAILING_ESCAPE = "-";
 
     /**
-     * Private constructor to prevent instantiation.
+     * The {@link CommandCallback} to use.
      */
-    private GUICommandFactory() {
+    @NotNull
+    private final CommandCallback commandCallback;
+
+    /**
+     * The {@link Commands} instance to use.
+     */
+    @NotNull
+    private final Commands commands;
+
+    /**
+     * The {@link Macros} instance to use.
+     */
+    @NotNull
+    private final Macros macros;
+
+    /**
+     * Creates a new instance.
+     * @param commandCallback the command callback to use
+     * @param commands the commands instance to use
+     * @param macros the macros instance to use
+     */
+    public GUICommandFactory(@NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros) {
+        this.commandCallback = commandCallback;
+        this.commands = commands;
+        this.macros = macros;
     }
 
     /**
      * Creates a new {@link GUICommand} instance from string representation.
      * @param encodedCommandString the command string representation
-     * @param commandCallback the command callback to use
-     * @param commands the commands instance to use
-     * @param macros the macros instance to use
      * @return the new command instance
      */
-    public static GUICommand createCommandDecode(@NotNull final String encodedCommandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros) {
-        return createCommand(decode(encodedCommandString), commandCallback, commands, macros);
+    public GUICommand createCommandDecode(@NotNull final String encodedCommandString) {
+        return createCommand(decode(encodedCommandString));
     }
 
     /**
      * Creates a new {@link GUICommand} instance from string representation.
      * @param commandString the command string representation
-     * @param commandCallback the command callback to use
-     * @param commands the commands instance to use
-     * @param macros the macros instance to use
      * @return the new command instance
      */
     @NotNull
-    public static GUICommand createCommand(@NotNull final String commandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros) {
+    public GUICommand createCommand(@NotNull final String commandString) {
         if (commandString.equals("-e")) {
             return new ActivateCommandInputCommand("", commandCallback, macros);
         } else if (commandString.startsWith("-e ")) {
