@@ -21,9 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
-import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import javax.swing.GroupLayout;
 import org.jetbrains.annotations.NotNull;
 
@@ -34,33 +32,16 @@ import org.jetbrains.annotations.NotNull;
 public class GuiFactory {
 
     /**
-     * The commands instance for executing commands.
+     * The {@link GUICommandFactory} for creating commands.
      */
-    @NotNull
-    private final Commands commands;
-
-    /**
-     * The {@link CommandCallback} to use.
-     */
-    @NotNull
-    private final CommandCallback commandCallback;
-
-    /**
-     * The {@link Macros} instance to use.
-     */
-    @NotNull
-    private final Macros macros;
+    private final GUICommandFactory guiCommandFactory;
 
     /**
      * Creates a new instance.
-     * @param commands the commands instance for executing commands
-     * @param commandCallback the command callback to use
-     * @param macros the macros instance to use
+     * @param guiCommandFactory the gui command factory for creating commands
      */
-    public GuiFactory(@NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
-        this.commands = commands;
-        this.commandCallback = commandCallback;
-        this.macros = macros;
+    public GuiFactory(@NotNull final GUICommandFactory guiCommandFactory) {
+        this.guiCommandFactory = guiCommandFactory;
     }
 
     /**
@@ -69,7 +50,7 @@ public class GuiFactory {
      */
     @NotNull
     public Gui newGui() {
-        final Gui gui = new Gui(commands, commandCallback, macros);
+        final Gui gui = new Gui(guiCommandFactory);
         gui.setLayout(new GroupLayout(gui));
         return gui;
     }

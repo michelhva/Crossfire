@@ -42,6 +42,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesQueue;
 import com.realtime.crossfire.jxclient.faces.FileCache;
 import com.realtime.crossfire.jxclient.faces.SmoothFaces;
+import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.gui.commands.ScreenshotFiles;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
@@ -223,7 +224,8 @@ public class JXClient {
                                         final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
                                         final ScreenshotFiles screenshotFiles = new ScreenshotFiles();
                                         final Commands commands = new Commands(commandQueue);
-                                        commands.addCommand(new BindCommand(server, commands, commandCallback, macros));
+                                        final GUICommandFactory guiCommandFactory = new GUICommandFactory(commandCallback, commands, macros);
+                                        commands.addCommand(new BindCommand(server, commandCallback, guiCommandFactory));
                                         commands.addCommand(new UnbindCommand(commandCallback, server));
                                         commands.addCommand(new ScreenshotCommand(windowRenderer, server, screenshotFiles));
                                         commands.addCommand(new ScriptCommand(scriptManager, server));
@@ -243,15 +245,15 @@ public class JXClient {
                                             exiter.terminate();
                                             return;
                                         }
-                                        final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, commands, commandCallback, macros);
+                                        final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
                                         final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
-                                        final GuiFactory guiFactory = new GuiFactory(commands, commandCallback, macros);
+                                        final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
                                         final GuiManager guiManager = new GuiManager(guiStateManager, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                         commandCallback.init(guiManager);
-                                        final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
+                                        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
                                         final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsView, spellsManager, facesManager, stats, mapUpdaterState, defaultKeyBindings, optionManager, experienceTable, skillSet, options.getTileSize(), keybindingsManager, questsManager, questsView);
                                         final SmoothFaces smoothFaces = new SmoothFaces(server);
-                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel, smoothFaces);
+                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel, smoothFaces, guiCommandFactory);
                                         new FacesTracker(guiStateManager, facesManager);
                                         new PlayerNameTracker(guiStateManager, connection, itemSet);
                                         new OutputCountTracker(guiStateManager, server, commandQueue);

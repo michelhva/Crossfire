@@ -21,9 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
-import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.CommandListType;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
@@ -49,22 +46,10 @@ import org.jetbrains.annotations.Nullable;
 public class KeyBindings {
 
     /**
-     * The commands instance for executing commands.
+     * The {@link GUICommandFactory} for creating commands.
      */
     @NotNull
-    private final Commands commands;
-
-    /**
-     * The {@link CommandCallback} to use.
-     */
-    @NotNull
-    private final CommandCallback commandCallback;
-
-    /**
-     * The {@link Macros} instance to use.
-     */
-    @NotNull
-    private final Macros macros;
+    private final GUICommandFactory guiCommandFactory;
 
     /**
      * The active key bindings.
@@ -94,15 +79,11 @@ public class KeyBindings {
      * Creates a new instance.
      * @param file the file for saving the bindings; <code>null</code> to not
      * save
-     * @param commands the commands instance for executing commands
-     * @param commandCallback the command callback to use
-     * @param macros the macros instance to use
+     * @param guiCommandFactory the gui command factory for creating commands
      */
-    public KeyBindings(@Nullable final File file, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
+    public KeyBindings(@Nullable final File file, @NotNull final GUICommandFactory guiCommandFactory) {
         this.file = file;
-        this.commands = commands;
-        this.commandCallback = commandCallback;
-        this.macros = macros;
+        this.guiCommandFactory = guiCommandFactory;
     }
 
     /**
@@ -339,7 +320,7 @@ public class KeyBindings {
             try {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
                 final CommandList commandList = new CommandList(CommandListType.AND);
-                commandList.add(GUICommandFactory.createCommandDecode(tmp[1], commandCallback, commands, macros));
+                commandList.add(guiCommandFactory.createCommandDecode(tmp[1]));
                 addKeyBindingAsKeyChar(keyChar, commandList, isDefault);
             } catch (final NumberFormatException ex) {
                 final InvalidKeyBindingException keyBindingException = new InvalidKeyBindingException("syntax error");
@@ -375,7 +356,7 @@ public class KeyBindings {
             }
 
             final CommandList commandList = new CommandList(CommandListType.AND);
-            commandList.add(GUICommandFactory.createCommandDecode(tmp[2], commandCallback, commands, macros));
+            commandList.add(guiCommandFactory.createCommandDecode(tmp[2]));
             addKeyBindingAsKeyCode(keyCode, modifiers, commandList, isDefault);
         } else {
             throw new InvalidKeyBindingException("syntax error");

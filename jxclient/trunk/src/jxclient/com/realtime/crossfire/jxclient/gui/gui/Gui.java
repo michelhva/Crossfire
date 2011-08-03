@@ -21,10 +21,8 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
-import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.button.AbstractButton;
-import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.skin.skin.Expression;
@@ -123,12 +121,10 @@ public class Gui extends JComponent {
 
     /**
      * Creates a new instance.
-     * @param commands the commands instance for executing commands
-     * @param commandCallback the command callback to use
-     * @param macros the macros instance to use
+     * @param guiCommandFactory the gui command factory for creating commands
      */
-    public Gui(@NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
-        keyBindings = new KeyBindings(null, commands, commandCallback, macros);
+    public Gui(@NotNull final GUICommandFactory guiCommandFactory) {
+        keyBindings = new KeyBindings(null, guiCommandFactory);
     }
 
     /**

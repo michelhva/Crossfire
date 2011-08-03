@@ -36,35 +36,27 @@ import org.jetbrains.annotations.NotNull;
 public class BindCommand extends AbstractCommand {
 
     /**
-     * The commands instance for executing commands.
-     */
-    @NotNull
-    private final Commands commands;
-
-    /**
      * The {@link CommandCallback} to use.
      */
     @NotNull
     private final CommandCallback commandCallback;
 
     /**
-     * The {@link Macros} instance to use.
+     * The {@link GUICommandFactory} for creating commands.
      */
     @NotNull
-    private final Macros macros;
+    private final GUICommandFactory guiCommandFactory;
 
     /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection instance
-     * @param commands the commands instance for executing commands
      * @param commandCallback the command callback to use
-     * @param macros the macros instance to use
+     * @param guiCommandFactory the gui command factory for creating commands
      */
-    public BindCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
+    public BindCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final GUICommandFactory guiCommandFactory) {
         super("bind", crossfireServerConnection);
-        this.commands = commands;
         this.commandCallback = commandCallback;
-        this.macros = macros;
+        this.guiCommandFactory = guiCommandFactory;
     }
 
     /**
@@ -99,7 +91,7 @@ public class BindCommand extends AbstractCommand {
         }
 
         final CommandList commandList2 = new CommandList(CommandListType.AND);
-        commandList2.add(GUICommandFactory.createCommand(commandList, commandCallback, commands, macros));
+        commandList2.add(guiCommandFactory.createCommand(commandList));
         if (!commandCallback.createKeyBinding(perCharacterBinding, commandList2)) {
             drawInfoError("Cannot use bind -c since no character is logged in.");
             //noinspection UnnecessaryReturnStatement
