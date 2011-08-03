@@ -3,6 +3,7 @@ race insect
 name slug
 face slug.x31
 animation slug
+randomitems slug
 monster 1
 move_type walk
 sleep 1
