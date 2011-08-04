@@ -130,14 +130,14 @@ public class DefaultKeyHandler implements KeyHandlerListener {
         }
 
         switch (guiManager.escPressed(isConnected())) {
-        case 0:
+        case IGNORE:
             break;
 
-        case 1:
+        case DISCONNECT:
             guiStateManager.disconnect();
             break;
 
-        case 2:
+        case QUIT:
             exiter.terminate();
             break;
         }
