@@ -8,7 +8,7 @@ enter_x 14
 enter_y 23
 msg
 Created:  1994-09-24 Gene Alexander
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2011-08-04 Andreas Kirschbaum
 endmsg
 end
 arch brush
@@ -762,6 +762,7 @@ end
 arch random_food
 x 4
 y 16
+blessed 1
 end
 arch woodfloor
 x 4
@@ -881,6 +882,7 @@ end
 arch random_food
 x 5
 y 6
+blessed 1
 end
 arch woodfloor
 x 5
@@ -929,6 +931,7 @@ end
 arch random_food
 x 5
 y 11
+blessed 1
 end
 arch woodfloor
 x 5
@@ -1245,6 +1248,7 @@ end
 arch random_food
 x 6
 y 20
+blessed 1
 end
 arch woodfloor
 x 6
@@ -1699,6 +1703,7 @@ end
 arch random_food
 x 9
 y 4
+blessed 1
 end
 arch woodfloor
 x 9
@@ -2214,6 +2219,7 @@ end
 arch random_food
 x 11
 y 20
+blessed 1
 end
 arch woodfloor
 x 11
@@ -2845,6 +2851,7 @@ end
 arch random_food
 x 15
 y 3
+blessed 1
 end
 arch magic_banned
 x 15
@@ -3913,14 +3920,17 @@ end
 arch random_food
 x 21
 y 4
+blessed 1
 end
 arch random_food
 x 21
 y 4
+blessed 1
 end
 arch random_food
 x 21
 y 4
+blessed 1
 end
 arch woodfloor
 x 21
@@ -4160,14 +4170,17 @@ end
 arch random_food
 x 22
 y 19
+blessed 1
 end
 arch random_food
 x 22
 y 19
+blessed 1
 end
 arch random_food
 x 22
 y 19
+blessed 1
 end
 arch woodfloor
 x 22
@@ -4327,14 +4340,17 @@ end
 arch random_food
 x 23
 y 19
+blessed 1
 end
 arch random_food
 x 23
 y 19
+blessed 1
 end
 arch random_food
 x 23
 y 19
+blessed 1
 end
 arch woodfloor
 x 23
@@ -4553,14 +4569,17 @@ end
 arch random_food
 x 24
 y 19
+blessed 1
 end
 arch random_food
 x 24
 y 19
+blessed 1
 end
 arch random_food
 x 24
 y 19
+blessed 1
 end
 arch woodfloor
 x 24
