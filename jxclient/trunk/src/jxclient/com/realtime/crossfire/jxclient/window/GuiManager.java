@@ -910,7 +910,6 @@ public class GuiManager {
             assert skin != null;
             for (final Gui dialog : skin) {
                 dialog.autoSize(width, height);
-                dialog.showDialog(dialog.getX(), dialog.getY(), width, height);
             }
             tooltipManager.setScreenSize(width, height);
         }
