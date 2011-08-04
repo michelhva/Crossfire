@@ -122,7 +122,7 @@ public class GUIDialogTitle extends GUIOneLineLabel {
         }
 
         final Gui gui = GuiUtils.getGui(this);
-        if (gui == null || gui.getAutoSize() != null) {
+        if (gui == null || gui.isAutoSize()) {
             offset = null;
             return;
         }

@@ -155,13 +155,12 @@ public class Gui extends JComponent {
     }
 
     /**
-     * Returns the auto-size state. Auto-size dialogs cannot be moved or resized
-     * manually.
-     * @return the auto-size or <code>null</code>
+     * Returns whether this dialog is an auto-size dialog. Auto-size dialogs
+     * cannot be moved or resized manually.
+     * @return whether this dialog is auto-size
      */
-    @Nullable
-    public Extent getAutoSize() {
-        return autoSize;
+    public boolean isAutoSize() {
+        return autoSize != null;
     }
 
     /**

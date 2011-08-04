@@ -108,7 +108,7 @@ public class DialogStateParser {
                                 throw new IOException("no such dialog: "+tmp[1], ex);
                             }
 
-                            if (dialog.getAutoSize() == null && dialog.isSaveDialog()) {
+                            if (!dialog.isAutoSize() && dialog.isSaveDialog()) {
                                 final int x;
                                 final int y;
                                 final int w;
@@ -215,7 +215,7 @@ public class DialogStateParser {
      * @throws IOException if an I/O error occurs
      */
     private static void saveDialog(@NotNull final Gui dialog, @NotNull final String type, @NotNull final Writer bw) throws IOException {
-        if (dialog.getAutoSize() != null) {
+        if (dialog.isAutoSize()) {
             return;
         }
 
