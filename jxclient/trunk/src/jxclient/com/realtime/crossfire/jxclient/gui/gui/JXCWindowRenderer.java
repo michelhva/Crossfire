@@ -879,7 +879,6 @@ public class JXCWindowRenderer {
         }
 
         dialog.autoSize(windowWidth, windowHeight);
-        dialog.showDialog(dialog.getX(), dialog.getY(), windowWidth, windowHeight);
 
         final Point mouse = frame == null ? null : frame.getMousePosition(true);
         if (mouse == null || dialog.isHidden(rendererGuiState)) {

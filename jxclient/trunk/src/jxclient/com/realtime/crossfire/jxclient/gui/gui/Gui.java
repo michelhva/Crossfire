@@ -570,6 +570,8 @@ public class Gui extends JComponent {
                 setPosition(x-preferredSize.width/2, y-preferredSize.height/2);
             }
         }
+
+        showDialog(getX(), getY(), screenWidth, screenHeight);
     }
 
     /**
