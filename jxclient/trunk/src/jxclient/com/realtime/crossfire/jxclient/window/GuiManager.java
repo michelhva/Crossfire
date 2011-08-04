@@ -435,6 +435,8 @@ public class GuiManager {
             closeDialog(keybindDialog);
         } else if (windowRenderer.deactivateCommandInput()) {
             // ignore
+        } else if (skin != null && closeDialog(skin.getDialogBook(1))) {
+            // ignore
         } else if (connected) {
             if (dialogDisconnect == null) {
                 return EscAction.DISCONNECT;
@@ -681,9 +683,11 @@ public class GuiManager {
     /**
      * Closes the given dialog. Does nothing if the dialog is not opened.
      * @param dialog the dialog to close
+     * @return whether the dialog has been closed; <code>false</code> if the
+     *         dialog was not open
      */
-    public void closeDialog(@NotNull final Gui dialog) {
-        windowRenderer.closeDialog(dialog);
+    public boolean closeDialog(@NotNull final Gui dialog) {
+        return windowRenderer.closeDialog(dialog);
     }
 
     /**
