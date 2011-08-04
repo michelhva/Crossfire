@@ -429,7 +429,7 @@ public class GuiManager {
      * @return whether how the key has been consumed: 0=ignore key, 1=disconnect
      *         from server, quit=quit application
      */
-    public int escPressed(final boolean connected) {
+    public EscAction escPressed(final boolean connected) {
         if (keybindingsManager.escPressed()) {
             assert keybindDialog != null;
             closeDialog(keybindDialog);
@@ -437,7 +437,7 @@ public class GuiManager {
             // ignore
         } else if (connected) {
             if (dialogDisconnect == null) {
-                return 1;
+                return EscAction.DISCONNECT;
             } else if (openDialog(dialogDisconnect, false)) {
                 if (dialogQuit != null) {
                     closeDialog(dialogQuit);
@@ -448,7 +448,7 @@ public class GuiManager {
             }
         } else {
             if (dialogQuit == null) {
-                return 2;
+                return EscAction.QUIT;
             } else if (openDialog(dialogQuit, false)) {
                 if (dialogDisconnect != null) {
                     closeDialog(dialogDisconnect);
@@ -458,7 +458,7 @@ public class GuiManager {
                 closeDialog(dialogQuit);
             }
         }
-        return 0;
+        return EscAction.IGNORE;
     }
 
     /**
@@ -946,6 +946,28 @@ public class GuiManager {
      */
     public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
         settings.putString("login_account_"+connection.getHostname()+"_"+accountName, characterName, "The character last selected on the account.");
+    }
+
+    /**
+     * Action after ESC has been pressed.
+     */
+    public enum EscAction {
+
+        /**
+         * Ignore the key press.
+         */
+        IGNORE,
+
+        /**
+         * Disconnect from server.
+         */
+        DISCONNECT,
+
+        /**
+         * Quit the application.
+         */
+        QUIT
+
     }
 
 }
