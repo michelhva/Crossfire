@@ -767,15 +767,20 @@ public class JXCWindowRenderer {
     /**
      * Closes a dialog. Does nothing if the given dialog is not open.
      * @param dialog the dialog to close
+     * @return whether the dialog has been closed; <code>false</code> if the
+     *         dialog was not open
      */
-    public void closeDialog(@NotNull final Gui dialog) {
-        if (openDialogsRemove(dialog)) {
-            final ActivatableGUIElement activeElement = dialog.getActiveElement();
-            if (activeElement != null) {
-                GuiUtils.setActive(activeElement, false);
-            }
-            updateServerSettings();
+    public boolean closeDialog(@NotNull final Gui dialog) {
+        if (!openDialogsRemove(dialog)) {
+            return false;
         }
+
+        final ActivatableGUIElement activeElement = dialog.getActiveElement();
+        if (activeElement != null) {
+            GuiUtils.setActive(activeElement, false);
+        }
+        updateServerSettings();
+        return true;
     }
 
     /**
