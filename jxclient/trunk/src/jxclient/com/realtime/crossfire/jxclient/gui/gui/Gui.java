@@ -608,8 +608,7 @@ public class Gui extends JComponent {
     public void showDialog(final int x, final int y, final int windowWidth, final int windowHeight) {
         final int newX;
         final int newY;
-        //noinspection VariableNotUsedInsideIf
-        if (autoSize != null) {
+        if (isAutoSize()) {
             newX = x;
             newY = y;
         } else {
