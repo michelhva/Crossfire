@@ -35,3 +35,19 @@ sure both the JAVA_HOME and ANT_HOME environment variables are set correctly.
 
 Change into the jxclient directory. On the console type "ant" - that's all. Run
 the client with "java -jar jxclient.jar".
+
+Connecting through a proxy:
+---------------------------
+Set an HTTP proxy to allow metaserver access to retrieve the list of available
+game servers:
+
+    java -Dhttp.proxyHost=proxy.hostname and -Dhttp.proxyPort=8080 -jar jxclient.jar
+
+or, alternatively,
+
+    export http_proxy=http://proxy.hostname:8080/
+    java -jar jxclient.jar
+
+Set a SOCKS proxy for connection to game servers:
+
+    java -DsocksProxyHost=proxy.hostname -DsocksProxyPort=1080 -jar jxclient.jar
