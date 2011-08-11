@@ -6,7 +6,8 @@ level 100
 face altarvalr.111
 no_pick 1
 resist_physical 100
-client_anim_random 1
-anim_speed 2
+anim_speed 0.5
 animation altar_valriel
+anim_suffix intervention
+speed 0.5
 end
