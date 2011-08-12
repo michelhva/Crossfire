@@ -8,7 +8,7 @@ enter_x 10
 enter_y 12
 msg
 Created:  1993-10-27
-Modified: 2008-12-02 Rick Tanner
+Modified: 2011-08-12 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -288,8 +288,7 @@ arch magic_mouth
 msg
 Ah, thank ye.
 The Smuggler's Cove is a tiny inlet just southwest of Navar where the top smugglers like to work.
-The Smugglers have been conducting a lot of business these past days
-but a honest bloke like me wouldn't know what that was about.
+The Smugglers have been conducting a lot of business these past days but a honest bloke like me wouldn't know what that was about.
 endmsg
 food 1
 x 2
@@ -310,13 +309,11 @@ arch pirate
 name Bradley
 msg
 @match bradley
-You try being a pirate named
-Bradley...
+You try being a pirate named Bradley...
 @match cove
 Well maybe if you drop a hundred gold on this table here I'd tell ya about that...
 @match *
-This chick's seen it all.
-She knows everyone.
+This chick's seen it all. She knows everyone.
 endmsg
 x 2
 y 10
@@ -750,46 +747,19 @@ arch fighter
 name TCI Representative
 msg
 @match tci
-Training Centers Incorporated is the best dang training
-you'll ever get. We have locations all over the world in
-exotic settings. Come fight with us! (heh, they tell us we
-have to say all that)
+@question location Where are the centers located?
+TCI, or Training Centers Incorporated, is the best dang training you'll ever get. We have locations all over the world in exotic settings. Come fight with us! (heh, they tell us we have to say all that)
 @match location
-Well, I don't know about all of them. But our local TCI
-is off the road north of here. Just head north for Darcap
-and look for one of our signs!
+Well, I don't know about all of them. But our local TCI is off the road north of here. Just head north for Darcap and look for one of our signs!
 @match hello|hi
-Well, hello there! Sit down and chat with me a bit. I am
-always looking for new people to tell about TCI.
+@question tci what is TCI?
+Well, hello there! Sit down and chat with me a bit. I am always looking for new people to tell about TCI.
 @match *
 Hi there young'un. Wanna join TCI?
 endmsg
 x 7
 y 11
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_godpower 100
-resist_holyword 100
-resist_blind 100
-friendly 1
-reflect_missile 1
-reflect_spell 1
+no_damage 1
 end
 arch woodfloor
 x 7
@@ -849,10 +819,10 @@ arch halfling2
 name Pip
 title the barkeep
 msg
-@match *
-What a rowdy lot!
 @match rhyz
 One of the rooms has stairs leading where you want to go.
+@match *
+What a rowdy lot!
 endmsg
 x 8
 y 7
