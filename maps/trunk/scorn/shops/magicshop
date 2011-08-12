@@ -11,7 +11,7 @@ enter_x 38
 enter_y 22
 msg
 Created:  1993-10-15
-Modified: 2011-06-25 Nicolas Weeger
+Modified: 2011-08-12 Khaleh
 endmsg
 outdoor 1
 end
@@ -4809,7 +4809,14 @@ arch tile_shop
 x 32
 y 6
 end
-arch potiondex
+arch sign
+name potion of dexterity
+msg
+Potions of dexterity cannot bought from shops.
+You don't want to steal this one.
+You want to go and fight for real loot in the dungeons.
+endmsg
+face potiondex.111
 x 32
 y 6
 end
@@ -4833,7 +4840,13 @@ arch tile_shop
 x 32
 y 9
 end
-arch potion_cold
+arch sign
+name potion of cold resistance
+msg
+Potions of cold resistance can be obtained in the shop area.
+Don't steal this one.
+endmsg
+face potioncol.111
 x 32
 y 9
 end
@@ -4972,7 +4985,14 @@ arch tile_shop
 x 33
 y 6
 end
-arch potionint
+arch sign
+name potion of intelligence
+msg
+Potions of intelligence can't be obtained from shops.
+This one isn't an exception, so go and fight in the dungeons to get these potions.
+Don't steal this one.
+endmsg
+face potionint.111
 x 33
 y 6
 end
@@ -4984,7 +5004,13 @@ arch tile_shop
 x 33
 y 8
 end
-arch ring_nodrain
+arch sign
+name strange ring
+msg
+Strange rings can be found in the shop area.
+Don't steal this one.
+endmsg
+face ring_drain.111
 x 33
 y 8
 end
@@ -4996,11 +5022,15 @@ arch tile_shop
 x 33
 y 9
 end
-arch potion_magic
+arch sign
+name magic power potion
+msg
+Magic power potions can be obtained in the shop area.
+Don't steal this one.
+endmsg
+face potionmag.111
 x 33
 y 9
-arch spell_regenerate_spellpoints
-end
 end
 arch tile_shop
 x 33
@@ -5427,7 +5457,13 @@ arch tile_shop
 x 36
 y 6
 end
-arch potion_restoration
+arch sign
+name supreme potion of life
+msg
+You can buy potions of life from the shops.
+It's not necessary to steal this one.
+endmsg
+face potiongen.111
 x 36
 y 6
 end
@@ -5455,11 +5491,15 @@ arch tile_shop
 x 36
 y 9
 end
-arch potion_magic
+arch sign
+name magic power potion
+msg
+Magic power potions can be obtained in the shop area.
+Don't steal this one.
+endmsg
+face potionmag.111
 x 36
 y 9
-arch spell_regenerate_spellpoints
-end
 end
 arch tile_shop
 x 36
@@ -5588,7 +5628,14 @@ arch tile_shop
 x 37
 y 6
 end
-arch potion_improve
+arch sign
+name improvement potion
+msg
+Improvement potions can be bought in the shop area.
+This particular one isn't supposed to be sold.
+Don't steal it and visit my shop instead.
+endmsg
+face potionimp.111
 x 37
 y 6
 end
@@ -5600,7 +5647,13 @@ arch tile_shop
 x 37
 y 8
 end
-arch amethyst
+arch sign
+name amethyst
+msg
+Amethysts are nice to look at, they can be obtained from shops.
+Don't steal this one.
+endmsg
+face amethyst.111
 x 37
 y 8
 end
@@ -5608,11 +5661,15 @@ arch tile_shop
 x 37
 y 9
 end
-arch potion_heal
+arch sign
+name healing potion
+msg
+Healing potions can be obtained in the shop area.
+Don't steal this one.
+endmsg
+face potionhea.111
 x 37
 y 9
-arch spell_heal
-end
 end
 arch tile_shop
 x 37
@@ -5981,12 +6038,14 @@ end
 arch table_3
 x 39
 y 11
-unpaid 1
+no_pick 1
+identified 1
 end
 arch bones3
 x 39
 y 11
-unpaid 1
+no_pick 1
+identified 1
 end
 arch tile_shop
 x 39
