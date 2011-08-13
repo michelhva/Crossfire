@@ -9,7 +9,7 @@ enter_x 5
 enter_y 5
 msg
 Created:  2006-08-11 Alex Schultz
-Modified: 2009-11-07 Andreas Kirschbaum
+Modified: 2011-08-13 Nicolas Weeger
 endmsg
 end
 arch dungeon_magic
@@ -169,27 +169,6 @@ end
 arch dungeon_magic
 x 2
 y 1
-end
-arch altar_trigger
-slaying potion_empty
-food 1
-x 2
-y 1
-invisible 1
-last_sp 1
-connected 1
-end
-arch creator
-x 2
-y 1
-connected 1
-lifesave 1
-arch potion_shielding
-name potion of gem essence
-name_pl potions of gem essence
-resist_physical 0
-value 0
-end
 end
 arch woodfloor
 x 2
@@ -362,6 +341,25 @@ endmsg
 x 4
 y 1
 stand_still 1
+arch event_say
+name /navar_city/misc/wizard.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
+arch NPCGift
+arch potion_shielding
+name potion of gem essence
+name_pl potions of gem essence
+resist_physical 0
+value 0
+identified 1
+arch event_drop
+name scorn/Rhyz 40
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
+end
+end
 end
 arch dungeon_magic
 x 4
