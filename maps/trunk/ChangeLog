@@ -1,4 +1,479 @@
-﻿2011-05-14 06:49  rjtanner
+2011-08-22 05:53  rjtanner
+
+	* scorn/misc/prison.1: Cosmetic change with how spiked wall merges
+	  with the nearby prison wall near the Shifty Bandit - no
+	  functional change.
+
+2011-08-22 05:49  rjtanner
+
+	* scorn/misc/prison.1: Removed line breaks in the NPC dialogue
+
+2011-08-22 05:46  rjtanner
+
+	* scorn/misc/prison.1: Correct more name references in Scorn
+	  Prison, should be Goth's Tavern instead of Gork's Tavern
+
+2011-08-22 05:44  rjtanner
+
+	* scorn/misc/prison.1: Removed line breaks in the NPC dialogue
+
+2011-08-22 05:40  rjtanner
+
+	* scorn/misc/prison.1: Correct name reference in Scorn Prison,
+	  should be Goth's Tavern instead of Gork's Tavern
+
+2011-08-13 17:11  ryo_saeba
+
+	* navar_city/misc/city1mermaid, navar_city/misc/navarwiz,
+	  navar_city/misc/wizard.msg, scorn/misc/rhyz.msg,
+	  scorn/misc/rhyz.quests, scorn/misc/wizhide, scorn/scorn.quests:
+	  Use the quest system for the Rhyzian amulet quest.
+
+2011-08-12 21:08  ryo_saeba
+
+	* navar_city/misc/city1mermaid: Merge split lines. Make Pip
+	  correctly reply to 'rhyz'. Add hints to TCI conversation.
+
+2011-08-12 18:54  ryo_saeba
+
+	* scorn/shops/magicshop: Don't give free potions. Patch courtesy
+	  Khaleh.
+
+2011-08-12 18:33  ryo_saeba
+
+	* world/world_103_127: Use new archetype 'bloodwell' for the
+	  corresponding exit.
+
+2011-08-07 21:47  ryo_saeba
+
+	* quests/peterm/CTower/Dungeon, quests/peterm/CTower/TowerTop:
+	  Merge lines.
+
+2011-08-04 17:51  akirschbaum
+
+	* brest/brest.inn: Do not provide bad food in Brest Inn.
+
+2011-08-01 05:11  rjtanner
+
+	* scorn/temples/devourers: Removed random_movement setting for
+	  priest of Devourers so that it no longer wanders all over the
+	  map.
+
+2011-08-01 05:07  rjtanner
+
+	* scorn/temples/devourers: Cosmetic changes in regards to how fence
+	  (swall) graphics merge with nearby hedge and stone wall (stwall)
+	  graphics.
+
+2011-07-24 14:15  ryo_saeba
+
+	* python/guilds/guildboard.py: Prevent actual reading of the panel.
+
+2011-07-23 18:37  ryo_saeba
+
+	* scorn/misc/drywell: Merge lines.
+
+2011-07-23 14:03  ryo_saeba
+
+	* scorn/scorn.quests: Add face to quest.
+
+2011-07-23 10:18  ryo_saeba
+
+	* dragonisland/house6: Misc fixes to the house, courtesy Khaleh.
+
+2011-07-23 10:05  ryo_saeba
+
+	* darcap/darcap/bob.msg: Fix invalid quest step.
+
+2011-07-22 21:02  ryo_saeba
+
+	* dragonisland/house4: Remove obsolete archetypes.
+
+2011-07-22 20:28  ryo_saeba
+
+	* python/quests/QuestAdvance.py: Correctly advance quest when
+	  something happened with a spell.
+
+2011-07-22 20:25  ryo_saeba
+
+	* world/world_106_115: Change hole so it blends better in the
+	  mountain.
+
+2011-07-22 20:17  ryo_saeba
+
+	* scorn/misc/castle: Merge lines.
+
+2011-07-17 13:49  ryo_saeba
+
+	* ., santo_dominion/blue_wizard.msg,
+	  santo_dominion/mudman/mudman.3,
+	  santo_dominion/santo_dominion.quests, santo_dominion/tavern,
+	  world.quests, world/world_102_108: Make the Mudman a quest.
+
+2011-07-17 11:33  ryo_saeba
+
+	* default.quests: Remove obsolete file.
+
+2011-07-17 10:57  ryo_saeba
+
+	* world/world_102_108: Merge lines. Add hint on the evilness of the
+	  church (grim reapers).
+
+2011-07-17 10:54  ryo_saeba
+
+	* santo_dominion/tavern: Merge lines. Add dialog hints.
+
+2011-07-17 10:48  ryo_saeba
+
+	* santo_dominion/tavern.2ndfloor: Fix broken faces. Merge lines.
+	  Add dialog hints.
+
+2011-07-17 10:21  ryo_saeba
+
+	* pup_land/nurnberg/city: Replace general shop with jewels one.
+
+2011-07-10 09:50  ryo_saeba
+
+	* python/guilds/guild_dues.py: Fix Jeweler's room coordinates
+	  preventing it from being bought.
+
+2011-07-08 20:24  ryo_saeba
+
+	* darcap/darcap/bob.msg, darcap/darcap/cameron.msg: Save with CRE,
+	  no functional change.
+
+2011-07-08 17:27  akirschbaum
+
+	* editor/scripts/WorldMaker: Clean up WorldMaker script. Make it
+	  more robust.
+
+2011-07-02 14:26  ryo_saeba
+
+	* scorn/temples/valriel_treasure: Merge split lines.
+
+2011-07-02 14:24  ryo_saeba
+
+	* scorn/temples/valriel_final: Merge split lines.
+
+2011-06-28 19:32  akirschbaum
+
+	* editor/scripts/MapValidator: Ignore more non-map files in
+	  MapValidator script.
+
+2011-06-28 19:32  akirschbaum
+
+	* quests/peterm/FireTemple/FifthFloor,
+	  quests/peterm/FireTemple/FourthFloor: Remove traps from floor
+	  inventories. Places them directly on the ground.
+
+2011-06-28 19:30  akirschbaum
+
+	* dragonisland/advguild: Remove stray gate from an inventory
+	  checker's inventory.
+
+2011-06-28 19:29  akirschbaum
+
+	* inn_and_outpost/nirlas_house: Remove stray exit from a floor's
+	  inventory.
+
+2011-06-28 19:25  akirschbaum
+
+	* world/world_122_117: Remove stray building from another
+	  building's inventory.
+
+2011-06-28 19:24  akirschbaum
+
+	* python/.cvsignore, scorn/guilds/mailed_fist/bigchest~,
+	  scorn/guilds/mailed_fist/mainfloor~: Remove stray files.
+
+2011-06-26 20:06  akirschbaum
+
+	* wolfsburg/magara/cellar_1: Add more earthwalls for easier
+	  navigation on laptop keyboards.
+
+2011-06-26 20:03  akirschbaum
+
+	* wolfsburg/magara/cellar_1: Replace doors with gates. Connect
+	  gates to formerly unconnected handle.
+
+2011-06-26 19:49  akirschbaum
+
+	* wolfsburg/temple/temple: Remove stray connections from altars.
+
+2011-06-26 19:45  akirschbaum
+
+	* world/world_124_119: Fix broken trap.
+
+2011-06-26 19:35  akirschbaum
+
+	* azumauindo/minatomachi/buildings/guildkeybuildingB2a,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2b,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2c: Remove
+	  unneeded logic from map.
+
+2011-06-26 18:33  akirschbaum
+
+	* python/start/dragon_attune.py, scorn/misc/dragon_guild,
+	  start/HallsOfSelection/pl_dragon: Adapt to renamed face names.
+
+2011-06-26 07:14  ryo_saeba
+
+	* pup_land/raffle/raffle2_u1: Merge lines.
+
+2011-06-25 18:55  akirschbaum
+
+	* editor/scripts/WorldMaker: Whitespace changes.
+
+2011-06-25 13:30  ryo_saeba
+
+	* scorn/shops/magicshop: Add shop inventory sign.
+
+2011-06-23 20:19  ryo_saeba
+
+	* editor/pickmaps/NPC: Fix face.
+
+2011-06-21 21:11  ryo_saeba
+
+	* python/pshop/Ice.py: Remove evil 'print'.
+
+2011-06-19 18:24  ryo_saeba
+
+	* styles/misc/obscure_exits: Use hole without grass.
+
+2011-06-19 08:03  akirschbaum
+
+	* lake_country/shops/Mopoon_wshop: Cosmetic changes: add floor
+	  tiles.
+
+2011-06-19 07:53  akirschbaum
+
+	* lake_country/shops/Mopoon_wshop: Remove stray doors with walls.
+
+2011-06-16 20:39  ryo_saeba
+
+	* scorn/houses/terrys_wife.msg: Add some replies.
+
+2011-06-16 18:53  ryo_saeba
+
+	* scorn/houses/terrys_wife.msg: Fix quest which can't be finished.
+	  Prevent giving multiple keys.
+
+2011-06-15 18:02  ryo_saeba
+
+	* scorn/misc/king_duke.msg: Fix for bug #3316426: Scorn
+	  nobilityArchdukequest (second part). Fix quest step mistake.
+
+2011-06-15 18:01  ryo_saeba
+
+	* scorn/misc/king_archduke.msg: CRE reformatting, no change.
+
+2011-06-15 17:59  ryo_saeba
+
+	* scorn/misc/magistrate_duke.msg: Fix for bug #3316426: Scorn
+	  nobilityArchdukequest (first part). Fix quest name typo.
+
+2011-06-15 17:54  ryo_saeba
+
+	* scorn/houses/terrys_wife.msg: Fix for bug #3316354: Farmhouse,
+	  can't get the key. Fix wrong letter case.
+
+2011-06-15 17:53  ryo_saeba
+
+	* scorn/houses/terrys_wife.msg: File reformatted by CRE, no change.
+
+2011-06-13 16:58  ryo_saeba
+
+	* scorn/houses/gramps_malone.msg: Fix for bug #3315687: Quest(#1):
+	  Gramp's earhorn , can't get rid of it. Syntax incoherence between
+	  item and message.
+
+2011-06-12 18:22  ryo_saeba
+
+	* python/quests/QuestTriggerConnect.py: Don't cause an exception if
+	  it is not a player triggering.
+
+2011-06-09 22:20  ryo_saeba
+
+	* python/commands/autojail.py, python/events/death,
+	  python/events/death/autojail.py,
+	  python/events/init/autojail_command.py,
+	  python/events/login/autojail_login.py: Add autojailing scripts
+	  for PK, activated by DMs.
+
+2011-06-09 21:00  ryo_saeba
+
+	* test/python.py: Test jail information.
+
+2011-06-09 19:31  ryo_saeba
+
+	* test/python.py: Fix script.
+
+2011-06-09 18:57  ryo_saeba
+
+	* python/commands/disinfect.py,
+	  python/events/init/disinfect_command.py: Add 'disinfect' command
+	  for DMs, removing diseases on the current map.
+
+2011-06-07 19:06  ryo_saeba
+
+	* whalingoutpost/misc/icecavern1: Replace Ancient and Legendary
+	  dragons with extracted archetype.
+
+2011-06-07 19:03  ryo_saeba
+
+	* whalingoutpost/misc/icecavern2: Replace Ancient dragon with
+	  extracted archetype.
+
+2011-06-07 19:01  ryo_saeba
+
+	* whalingoutpost/misc/icecavern2: Replace Eternal dragon with
+	  extracted archetype.
+
+2011-06-07 18:56  ryo_saeba
+
+	* whalingoutpost/misc/icecavern2: Replace Legendary dragon with
+	  extracted archetype.
+
+2011-06-07 18:28  ryo_saeba
+
+	* quests/peterm/DragonQuest/IceLord: Replace modified monster with
+	  new extracted archetype.
+
+2011-05-30 17:44  ryo_saeba
+
+	* templates/guild/secondfloor: Correct probably invalid connection.
+
+2011-05-29 22:07  ryo_saeba
+
+	* scorn/temples/gorokh_final, scorn/temples/gorokh_treasure: Merge
+	  lines.
+
+2011-05-29 21:59  ryo_saeba
+
+	* brest/brest.scrolls.upper.2: Use new awful_rat archetype, needs
+	  arch revision 14503 or more.
+
+2011-05-29 18:28  ryo_saeba
+
+	* python/dialog/post/takeitem.py: Ensure items were removed.
+
+2011-05-29 18:27  ryo_saeba
+
+	* python/CFItemBroker.py: Correctly handle items with nrof 0.
+
+2011-05-29 18:05  ryo_saeba
+
+	* test/quest_handling/checkinv.msg, test/quest_handling/quest_map:
+	  Add one more test, related to broken gateway.
+
+2011-05-29 18:04  ryo_saeba
+
+	* test/python.py: Fix script broken by NCP-related changes in
+	  server.
+
+2011-05-29 17:50  ryo_saeba
+
+	* python/dialog/pre/item.py: Quanties can be 0 for non merging,
+	  take that into account.
+
+2011-05-29 16:45  ryo_saeba
+
+	* python/guilds/guild_dues.py: Improve the 'buy' command, don't
+	  show already bought extensions.
+
+2011-05-27 04:27  rjtanner
+
+	* pup_land/nurnberg/wshop: Cosmetic wall changes to Muramasa!
+	  (Nurnberg weapon shop) - no function changes.
+
+2011-05-26 04:38  rjtanner
+
+	* pup_land/lone_town/shops/buildshop, pup_land/lone_town/town:
+	  Cosmetic update to Lone Town's Acme Building Supply. Floor plan
+	  matches the physical building shape. Updated world map for new
+	  map entrance destination.
+
+2011-05-25 04:25  rjtanner
+
+	* pup_land/lone_town/shops/transport.shoppe,
+	  pup_land/lone_town/town: Updates to Lone Town's Ye Olde Shoppe of
+	  Transport. Door or entrance now opens when a player approaches.
+	  Map considered an outdoor map so darkness or time of day is
+	  visible when inside; added light sources. Updated world map for
+	  new map entrance destination.
+
+2011-05-24 05:40  rjtanner
+
+	* world/world_128_109: Update (world) map entrance name to match
+	  map name, Acme Homebuilding Inc. is now Acme Building Supply of
+	  Wolfsburg.
+
+2011-05-23 04:25  rjtanner
+
+	* pup_land/lone_town/shops/buildshop: Minor changes to Lone Town's
+	  Acme Building Supply. Map considered an outdoor map so darkness
+	  or time of day is visible when inside; added light sources.
+
+2011-05-22 05:46  rjtanner
+
+	* wolfsburg/shops/transport.shoppe, world/world_128_109: Updates to
+	  Wolfsburg's Ye Olde Shoppe of Transport. Door or entrance now
+	  opens when a player approaches. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination.
+
+2011-05-21 02:12  rjtanner
+
+	* wolfsburg/shops/buildshop, world/world_128_109: Cosmetic updates
+	  to Acme Building Supply of Wolfsburg. Expanded the map to include
+	  ground outside the shop walls. Floor plan matches the physical
+	  building shape. Shop item and decor layout changes. Map
+	  considered an outdoor map so darkness or time of day is visible
+	  when inside; added light sources. Updated world map for new map
+	  entrance destination.
+
+2011-05-20 03:59  rjtanner
+
+	* navar_city/misc/city1gen: Remove line breaks in NPC dialog to
+	  Eddie's Store by the Wall in Navar.
+
+2011-05-19 05:05  rjtanner
+
+	* darcap/town2/shop_b, world/world_116_104: Major cosmetic update
+	  to Guild of Sages in Darcap mountain village. Expanded the map to
+	  include ground outside the shop walls. Floor plan matches the
+	  physical building shape. Door or entrance now opens when a player
+	  approaches. Shop item and decor layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-05-18 04:54  rjtanner
+
+	* darcap/town2/shop_b, darcap/town2/shop_f: Removed line breaks
+	  from NPC dialog.
+
+2011-05-17 05:12  rjtanner
+
+	* darcap/town2/shop_f, world/world_116_104: Major cosmetic update
+	  to Bob's Bakery in Darcap mountain village. Expanded the map to
+	  include ground outside the shop walls. Floor plan matches the
+	  physical building shape. Door or entrance now opens when a player
+	  approaches. Shop item and decor layout changes. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-05-16 05:30  rjtanner
+
+	* darcap/darcap/shop_a: Removed line breaks in the instructional
+	  sign text to the Darcap Armour Shop (Smith's Armour).
+
+2011-05-15 05:03  rjtanner
+
+	* ChangeLog: ChangeLog update
+
+2011-05-14 06:49  rjtanner
 
 	* darcap/darcap/shop_a: Removed line break in NPC dialog and
 	  corrected a typo (armour vs. armo) in Smith's Armour in Darcap.
