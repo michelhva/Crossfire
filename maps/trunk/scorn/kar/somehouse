@@ -2,873 +2,1099 @@ arch map
 name Friendly Giant's Tower, Entrance
 difficulty 4
 region scorn
-width 16
-height 16
+width 19
+height 21
 enter_x 14
 msg
-Modified: 2008-12-02 Rick Tanner
+Modified: 2011-08-23 Rick Tanner
 endmsg
+outdoor 1
 end
-arch woodfloor
+arch grass
 end
-arch wwall_2_2_2
-end
-arch woodfloor
+arch grass
 y 1
 end
-arch wwall_2_1_1
-y 1
-end
-arch woodfloor
+arch grass
 y 2
 end
-arch wwall_2_1_1
-y 2
-end
-arch woodfloor
+arch grass
 y 3
 end
-arch wwall_2_1_1
-y 3
-end
-arch woodfloor
+arch grass
 y 4
 end
-arch wwall_2_1_1
-y 4
-end
-arch woodfloor
+arch grass
 y 5
 end
-arch wwall_2_1_1
-y 5
-end
-arch woodfloor
+arch grass
 y 6
 end
-arch wwall_2_1_1
-y 6
-end
-arch woodfloor
+arch grass
 y 7
 end
-arch wwall_2_1_1
-y 7
-end
-arch woodfloor
+arch grass
 y 8
 end
-arch wwall_2_1_1
-y 8
-end
-arch woodfloor
+arch grass
 y 9
 end
-arch wwall_2_1_1
-y 9
-end
-arch woodfloor
+arch grass
 y 10
 end
-arch wwall_2_1_1
-y 10
-end
-arch woodfloor
+arch grass
 y 11
 end
-arch wwall_2_1_1
-y 11
-end
-arch woodfloor
+arch grass
 y 12
 end
-arch wwall_2_1_1
-y 12
-end
-arch woodfloor
+arch grass
 y 13
 end
-arch wwall_2_1_1
-y 13
-end
-arch woodfloor
+arch grass
 y 14
 end
-arch wwall_2_1_1
-y 14
-end
-arch woodfloor
+arch grass
 y 15
 end
-arch wwall_2_2_1
-y 15
+arch grass
+y 16
 end
-arch woodfloor
+arch grass
+y 17
+end
+arch grass
+y 18
+end
+arch grass
+y 19
+end
+arch grass
+y 20
+end
+arch grass
 x 1
 end
-arch wwall_2_1_2
-x 1
-end
-arch woodfloor
+arch grass
 x 1
 y 1
 end
-arch woodfloor
+arch grass
 x 1
 y 2
 end
-arch woodfloor
+arch grass
 x 1
 y 3
 end
-arch woodfloor
+arch grass
 x 1
 y 4
 end
-arch woodfloor
+arch grass
 x 1
 y 5
 end
-arch woodfloor
+arch grass
 x 1
 y 6
 end
-arch woodfloor
+arch grass
 x 1
 y 7
 end
-arch woodfloor
+arch grass
 x 1
 y 8
 end
-arch woodfloor
+arch grass
 x 1
 y 9
 end
-arch woodfloor
+arch grass
 x 1
 y 10
 end
-arch woodfloor
+arch grass
 x 1
 y 11
 end
-arch weak_wall_6
-face bwall_0.111
-x 1
-y 11
-end
-arch woodfloor
+arch grass
 x 1
 y 12
 end
-arch weak_wall_6
-face bwall_0.111
-x 1
-y 12
-end
-arch woodfloor
+arch grass
 x 1
 y 13
 end
-arch weak_wall_6
-face bwall_0.111
-x 1
-y 13
-end
-arch woodfloor
+arch grass
 x 1
 y 14
+end
+arch grass
+x 1
+y 15
+end
+arch grass
+x 1
+y 16
+end
+arch grass
+x 1
+y 17
+end
+arch grass
+x 1
+y 18
+end
+arch grass
+x 1
+y 19
+end
+arch grass
+x 1
+y 20
+end
+arch grass
+x 2
+end
+arch grass
+x 2
+y 1
+end
+arch grass
+x 2
+y 2
+end
+arch grass
+x 2
+y 3
+end
+arch grass
+x 2
+y 4
+end
+arch grass
+x 2
+y 5
+end
+arch cwall_2_2_2
+x 2
+y 5
+end
+arch grass
+x 2
+y 6
+end
+arch cwall_3_2
+x 2
+y 6
+end
+arch grass
+x 2
+y 7
+end
+arch cwall_3_2
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch cwall_3_2
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch cwall_2_1_1
+x 2
+y 9
+end
+arch light3
+x 2
+y 10
+end
+arch woodfloor
+x 2
+y 10
+end
+arch dwall_win1
+x 2
+y 10
+end
+arch woodfloor
+x 2
+y 11
+end
+arch cwall_2_1_1
+x 2
+y 11
+end
+arch woodfloor
+x 2
+y 12
+end
+arch cwall_3_2
+x 2
+y 12
+end
+arch grass
+x 2
+y 13
+end
+arch cwall_3_2
+x 2
+y 13
+end
+arch grass
+x 2
+y 14
+end
+arch cwall_3_2
+x 2
+y 14
+end
+arch grass
+x 2
+y 15
+end
+arch cwall_2_2_1
+x 2
+y 15
+end
+arch grass
+x 2
+y 16
+end
+arch grass
+x 2
+y 17
+end
+arch grass
+x 2
+y 18
+end
+arch grass
+x 2
+y 19
+end
+arch grass
+x 2
+y 20
+end
+arch grass
+x 3
+end
+arch grass
+x 3
+y 1
+end
+arch grass
+x 3
+y 2
+end
+arch grass
+x 3
+y 3
+end
+arch grass
+x 3
+y 4
+end
+arch cwall_2_2_2
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch cwall_4
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch cwall_3_4
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch cwall_3_4
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch cwall_2_2_4
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch woodfloor
+x 3
+y 10
+end
+arch woodfloor
+x 3
+y 11
+end
+arch woodfloor
+x 3
+y 12
+end
+arch cwall_2_2_3
+x 3
+y 12
+end
+arch woodfloor
+x 3
+y 13
+end
+arch cwall_3_4
+x 3
+y 13
+end
+arch woodfloor
+x 3
+y 14
+end
+arch cwall_3_4
+x 3
+y 14
+end
+arch woodfloor
+x 3
+y 15
+end
+arch cwall_4
+x 3
+y 15
+end
+arch grass
+x 3
+y 16
+end
+arch cwall_2_2_1
+x 3
+y 16
+end
+arch grass
+x 3
+y 17
+end
+arch grass
+x 3
+y 18
+end
+arch grass
+x 3
+y 19
+end
+arch grass
+x 3
+y 20
+end
+arch grass
+x 4
+end
+arch grass
+x 4
+y 1
+end
+arch grass
+x 4
+y 2
+end
+arch grass
+x 4
+y 3
+end
+arch cwall_2_2_2
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch cwall_4
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch cwall_2_2_4
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch generate_kobold
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 10
+end
+arch woodfloor
+x 4
+y 11
+end
+arch woodfloor
+x 4
+y 12
+end
+arch woodfloor
+x 4
+y 13
+end
+arch light1
+x 4
+y 14
+end
+arch woodfloor
+x 4
+y 14
+end
+arch woodfloor
+x 4
+y 15
+end
+arch cwall_2_2_3
+x 4
+y 15
+end
+arch woodfloor
+x 4
+y 16
+end
+arch cwall_4
+x 4
+y 16
+end
+arch grass
+x 4
+y 17
+end
+arch cwall_2_2_1
+x 4
+y 17
+end
+arch grass
+x 4
+y 18
+end
+arch grass
+x 4
+y 19
+end
+arch grass
+x 4
+y 20
+end
+arch grass
+x 5
+end
+arch grass
+x 5
+y 1
+end
+arch grass
+x 5
+y 2
+end
+arch cwall_2_2_2
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch cwall_4
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch cwall_2_2_4
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch bwall_0
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch bwall_0
+x 5
+y 8
+end
+arch woodfloor
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 10
+end
+arch bwall_0
+x 5
+y 10
+end
+arch woodfloor
+x 5
+y 11
+end
+arch woodfloor
+x 5
+y 12
+end
+arch bwall_0
+x 5
+y 12
+end
+arch woodfloor
+x 5
+y 13
+end
+arch woodfloor
+x 5
+y 14
+end
+arch woodfloor
+x 5
+y 15
+end
+arch woodfloor
+x 5
+y 16
+end
+arch cwall_2_2_3
+x 5
+y 16
+end
+arch woodfloor
+x 5
+y 17
+end
+arch cwall_4
+x 5
+y 17
+end
+arch grass
+x 5
+y 18
+end
+arch cwall_2_2_1
+x 5
+y 18
+end
+arch grass
+x 5
+y 19
+end
+arch grass
+x 5
+y 20
+end
+arch grass
+x 6
+end
+arch grass
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch cwall_3_3
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch cwall_2_2_4
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch generate_kobold
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch light2
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch woodfloor
+x 6
+y 10
+end
+arch woodfloor
+x 6
+y 11
+end
+arch woodfloor
+x 6
+y 12
+end
+arch light2
+x 6
+y 13
+end
+arch woodfloor
+x 6
+y 13
+end
+arch woodfloor
+x 6
+y 14
+end
+arch woodfloor
+x 6
+y 15
+end
+arch light2
+x 6
+y 16
+end
+arch woodfloor
+x 6
+y 16
+end
+arch woodfloor
+x 6
+y 17
+end
+arch swall_1_2_half
+x 6
+y 17
+end
+arch cwall_2_2_3
+x 6
+y 17
+end
+arch woodfloor
+x 6
+y 18
+end
+arch cwall_3_1
+x 6
+y 18
+end
+arch grass
+x 6
+y 19
+end
+arch grass
+x 6
+y 20
+end
+arch grass
+x 7
+end
+arch grass
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch cwall_2_1_2
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch weak_wall_6
+face bwall_0.111
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch weak_wall_6
+face bwall_0.111
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch weak_wall_6
+face bwall_0.111
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch bwall_0
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch bwall_0
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch bwall_0
+x 7
+y 10
+end
+arch woodfloor
+x 7
+y 11
+end
+arch woodfloor
+x 7
+y 12
+end
+arch bwall_0
+x 7
+y 12
+end
+arch woodfloor
+x 7
+y 13
+end
+arch woodfloor
+x 7
+y 14
+end
+arch bwall_1_4
+x 7
+y 14
+end
+arch woodfloor
+x 7
+y 15
+end
+arch woodfloor
+x 7
+y 16
+end
+arch woodfloor
+x 7
+y 17
+end
+arch woodfloor
+x 7
+y 18
+end
+arch cwall_2_1_2
+x 7
+y 18
+end
+arch grass
+x 7
+y 19
+end
+arch grass
+x 7
+y 20
+end
+arch grass
+x 8
+end
+arch grass
+x 8
+y 1
+end
+arch light3
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 2
+end
+arch dwall_win2
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch weak_wall_6
+face bwall_0.111
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch weak_wall_6
+face bwall_0.111
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch weak_wall_6
+face bwall_0.111
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch kobold
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch woodfloor
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
+end
+arch woodfloor
+x 8
+y 13
+end
+arch woodfloor
+x 8
+y 14
+end
+arch bwall_2_1_2
+x 8
+y 14
+end
+arch woodfloor
+x 8
+y 15
+end
+arch woodfloor
+x 8
+y 16
+end
+arch button_small
+x 8
+y 17
+connected 1
+end
+arch woodfloor
+x 8
+y 17
+end
+arch woodfloor
+x 8
+y 18
+end
+arch cwall_1_3
+x 8
+y 18
+end
+arch dungeon_magic
+x 8
+y 19
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 41
+sp 35
+x 8
+y 19
+end
+arch grass
+x 8
+y 19
+end
+arch grass
+x 8
+y 20
+end
+arch grass
+x 9
+end
+arch grass
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch cwall_2_1_2
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
 end
 arch stair2_up
 slaying somehouse2
 hp 1
 sp 14
-x 1
-y 14
-end
-arch woodfloor
-x 1
-y 15
-end
-arch wwall_2_1_2
-x 1
-y 15
-end
-arch woodfloor
-x 2
-end
-arch wwall_2_1_2
-x 2
-end
-arch woodfloor
-x 2
-y 1
-end
-arch woodfloor
-x 2
-y 2
-end
-arch woodfloor
-x 2
+x 9
 y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch weak_wall_6
+face bwall_0.111
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch weak_wall_6
+face bwall_0.111
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch bwall_0
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch bwall_0
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
 end
 arch generate_kobold
-x 2
-y 3
-end
-arch woodfloor
-x 2
-y 4
-end
-arch woodfloor
-x 2
-y 5
-end
-arch woodfloor
-x 2
-y 6
-end
-arch woodfloor
-x 2
-y 7
-end
-arch woodfloor
-x 2
-y 8
-end
-arch woodfloor
-x 2
-y 9
-end
-arch woodfloor
-x 2
-y 10
-end
-arch woodfloor
-x 2
-y 11
-end
-arch weak_wall_6
-face bwall_0.111
-x 2
-y 11
-end
-arch woodfloor
-x 2
-y 12
-end
-arch weak_wall_6
-face bwall_0.111
-x 2
-y 12
-end
-arch woodfloor
-x 2
-y 13
-end
-arch weak_wall_6
-face bwall_0.111
-x 2
-y 13
-end
-arch woodfloor
-x 2
-y 14
-end
-arch weak_wall_6
-face bwall_0.111
-x 2
-y 14
-end
-arch woodfloor
-x 2
-y 15
-end
-arch wwall_2_1_2
-x 2
-y 15
-end
-arch woodfloor
-x 3
-end
-arch wwall_2_1_2
-x 3
-end
-arch woodfloor
-x 3
-y 1
-end
-arch weak_wall_6
-face bwall_0.111
-x 3
-y 1
-end
-arch woodfloor
-x 3
-y 2
-end
-arch woodfloor
-x 3
-y 3
-end
-arch bwall_0
-x 3
-y 3
-end
-arch woodfloor
-x 3
-y 4
-end
-arch woodfloor
-x 3
-y 5
-end
-arch bwall_0
-x 3
-y 5
-end
-arch woodfloor
-x 3
-y 6
-end
-arch woodfloor
-x 3
-y 7
-end
-arch bwall_0
-x 3
-y 7
-end
-arch woodfloor
-x 3
-y 8
-end
-arch woodfloor
-x 3
-y 9
-end
-arch bwall_0
-x 3
-y 9
-end
-arch woodfloor
-x 3
-y 10
-end
-arch woodfloor
-x 3
-y 11
-end
-arch bwall_0
-x 3
-y 11
-end
-arch woodfloor
-x 3
-y 12
-end
-arch weak_wall_6
-face bwall_0.111
-x 3
-y 12
-end
-arch woodfloor
-x 3
-y 13
-end
-arch bwall_0
-x 3
-y 13
-end
-arch woodfloor
-x 3
-y 14
-end
-arch weak_wall_6
-face bwall_0.111
-x 3
-y 14
-end
-arch woodfloor
-x 3
-y 15
-end
-arch wwall_2_1_2
-x 3
-y 15
-end
-arch woodfloor
-x 4
-end
-arch wwall_2_1_2
-x 4
-end
-arch woodfloor
-x 4
-y 1
-end
-arch weak_wall_6
-face bwall_0.111
-x 4
-y 1
-end
-arch woodfloor
-x 4
-y 2
-end
-arch woodfloor
-x 4
-y 3
-end
-arch woodfloor
-x 4
-y 4
-end
-arch woodfloor
-x 4
-y 5
-end
-arch woodfloor
-x 4
-y 6
-end
-arch woodfloor
-x 4
-y 7
-end
-arch woodfloor
-x 4
-y 8
-end
-arch woodfloor
-x 4
-y 9
-end
-arch woodfloor
-x 4
-y 10
-end
-arch woodfloor
-x 4
-y 11
-end
-arch woodfloor
-x 4
-y 12
-end
-arch generate_kobold
-x 4
-y 12
-end
-arch woodfloor
-x 4
-y 13
-end
-arch woodfloor
-x 4
-y 14
-end
-arch woodfloor
-x 4
-y 15
-end
-arch wwall_2_1_2
-x 4
-y 15
-end
-arch woodfloor
-x 5
-end
-arch wwall_2_1_2
-x 5
-end
-arch woodfloor
-x 5
-y 1
-end
-arch woodfloor
-x 5
-y 2
-end
-arch woodfloor
-x 5
-y 3
-end
-arch bwall_0
-x 5
-y 3
-end
-arch woodfloor
-x 5
-y 4
-end
-arch woodfloor
-x 5
-y 5
-end
-arch bwall_0
-x 5
-y 5
-end
-arch woodfloor
-x 5
-y 6
-end
-arch woodfloor
-x 5
-y 7
-end
-arch bwall_0
-x 5
-y 7
-end
-arch woodfloor
-x 5
-y 8
-end
-arch woodfloor
-x 5
-y 9
-end
-arch bwall_0
-x 5
-y 9
-end
-arch woodfloor
-x 5
-y 10
-end
-arch woodfloor
-x 5
-y 11
-end
-arch bwall_0
-x 5
-y 11
-end
-arch woodfloor
-x 5
-y 12
-end
-arch woodfloor
-x 5
-y 13
-end
-arch bwall_0
-x 5
-y 13
-end
-arch woodfloor
-x 5
-y 14
-end
-arch woodfloor
-x 5
-y 15
-end
-arch wwall_2_1_2
-x 5
-y 15
-end
-arch woodfloor
-x 6
-end
-arch wwall_2_1_2
-x 6
-end
-arch woodfloor
-x 6
-y 1
-end
-arch woodfloor
-x 6
-y 2
-end
-arch woodfloor
-x 6
-y 3
-end
-arch woodfloor
-x 6
-y 4
-end
-arch woodfloor
-x 6
-y 5
-end
-arch woodfloor
-x 6
-y 6
-end
-arch woodfloor
-x 6
-y 7
-end
-arch woodfloor
-x 6
-y 8
-end
-arch woodfloor
-x 6
-y 9
-end
-arch woodfloor
-x 6
-y 10
-end
-arch woodfloor
-x 6
-y 11
-end
-arch woodfloor
-x 6
-y 12
-end
-arch woodfloor
-x 6
-y 13
-end
-arch woodfloor
-x 6
-y 14
-end
-arch woodfloor
-x 6
-y 15
-end
-arch wwall_2_1_2
-x 6
-y 15
-end
-arch woodfloor
-x 7
-end
-arch wwall_2_1_2
-x 7
-end
-arch woodfloor
-x 7
-y 1
-end
-arch woodfloor
-x 7
-y 2
-end
-arch woodfloor
-x 7
-y 3
-end
-arch bwall_0
-x 7
-y 3
-end
-arch woodfloor
-x 7
-y 4
-end
-arch woodfloor
-x 7
-y 5
-end
-arch bwall_0
-x 7
-y 5
-end
-arch woodfloor
-x 7
-y 6
-end
-arch woodfloor
-x 7
-y 7
-end
-arch bwall_0
-x 7
-y 7
-end
-arch woodfloor
-x 7
-y 8
-end
-arch generate_kobold
-x 7
-y 8
-end
-arch woodfloor
-x 7
-y 9
-end
-arch bwall_0
-x 7
-y 9
-end
-arch woodfloor
-x 7
-y 10
-end
-arch woodfloor
-x 7
-y 11
-end
-arch bwall_0
-x 7
-y 11
-end
-arch woodfloor
-x 7
-y 12
-end
-arch woodfloor
-x 7
-y 13
-end
-arch bwall_0
-x 7
-y 13
-end
-arch woodfloor
-x 7
-y 14
-end
-arch woodfloor
-x 7
-y 15
-end
-arch wwall_2_1_2
-x 7
-y 15
-end
-arch woodfloor
-x 8
-end
-arch wwall_2_1_2
-x 8
-end
-arch woodfloor
-x 8
-y 1
-end
-arch weak_wall_6
-face bwall_0.111
-x 8
-y 1
-end
-arch woodfloor
-x 8
-y 2
-end
-arch woodfloor
-x 8
-y 3
-end
-arch woodfloor
-x 8
-y 4
-end
-arch woodfloor
-x 8
-y 5
-end
-arch woodfloor
-x 8
-y 6
-end
-arch woodfloor
-x 8
-y 7
-end
-arch woodfloor
-x 8
-y 8
-end
-arch woodfloor
-x 8
-y 9
-end
-arch woodfloor
-x 8
-y 10
-end
-arch woodfloor
-x 8
-y 11
-end
-arch woodfloor
-x 8
-y 12
-end
-arch woodfloor
-x 8
-y 13
-end
-arch woodfloor
-x 8
-y 14
-end
-arch woodfloor
-x 8
-y 15
-end
-arch wwall_2_1_2
-x 8
-y 15
-end
-arch woodfloor
-x 9
-end
-arch wwall_2_1_2
-x 9
-end
-arch woodfloor
-x 9
-y 1
-end
-arch woodfloor
-x 9
-y 2
-end
-arch woodfloor
-x 9
-y 3
-end
-arch bwall_1_4
-x 9
-y 3
-end
-arch woodfloor
-x 9
-y 4
-end
-arch woodfloor
-x 9
-y 5
-end
-arch bwall_0
-x 9
-y 5
-end
-arch woodfloor
-x 9
-y 6
-end
-arch woodfloor
-x 9
-y 7
-end
-arch bwall_0
-x 9
-y 7
-end
-arch woodfloor
-x 9
-y 8
-end
-arch woodfloor
-x 9
-y 9
-end
-arch bwall_0
 x 9
 y 9
 end
@@ -876,11 +1102,11 @@ arch woodfloor
 x 9
 y 10
 end
-arch woodfloor
-x 9
-y 11
-end
 arch bwall_0
+x 9
+y 10
+end
+arch woodfloor
 x 9
 y 11
 end
@@ -888,441 +1114,651 @@ arch woodfloor
 x 9
 y 12
 end
-arch woodfloor
-x 9
-y 13
-end
 arch bwall_0
+x 9
+y 12
+end
+arch woodfloor
 x 9
 y 13
 end
 arch woodfloor
 x 9
 y 14
-end
-arch woodfloor
-x 9
-y 15
-end
-arch wwall_2_1_2
-x 9
-y 15
-end
-arch woodfloor
-x 10
-end
-arch wwall_2_1_2
-x 10
-end
-arch woodfloor
-x 10
-y 1
-end
-arch woodfloor
-x 10
-y 2
-end
-arch woodfloor
-x 10
-y 3
 end
 arch bwall_2_1_2
-x 10
-y 3
-end
-arch woodfloor
-x 10
-y 4
-end
-arch woodfloor
-x 10
-y 5
-end
-arch woodfloor
-x 10
-y 6
-end
-arch woodfloor
-x 10
-y 7
-end
-arch woodfloor
-x 10
-y 8
-end
-arch woodfloor
-x 10
-y 9
-end
-arch woodfloor
-x 10
-y 10
-end
-arch woodfloor
-x 10
-y 11
-end
-arch woodfloor
-x 10
-y 12
-end
-arch woodfloor
-x 10
-y 13
-end
-arch woodfloor
-x 10
+x 9
 y 14
 end
 arch woodfloor
-x 10
+x 9
 y 15
 end
-arch wwall_2_1_2
-x 10
-y 15
-end
-arch woodfloor
-x 11
-end
-arch wwall_2_1_2
-x 11
-end
-arch woodfloor
-x 11
-y 1
-end
-arch woodfloor
-x 11
-y 2
-end
-arch woodfloor
-x 11
-y 3
-end
-arch bwall_2_1_2
-x 11
-y 3
-end
-arch woodfloor
-x 11
-y 4
-end
-arch woodfloor
-x 11
-y 5
-end
-arch bwall_0
-x 11
-y 5
-end
-arch woodfloor
-x 11
-y 6
-end
-arch woodfloor
-x 11
-y 7
-end
-arch bwall_0
-x 11
-y 7
-end
-arch woodfloor
-x 11
-y 8
-end
-arch woodfloor
-x 11
-y 9
-end
-arch bwall_0
-x 11
-y 9
-end
-arch woodfloor
-x 11
-y 10
-end
-arch woodfloor
-x 11
-y 11
-end
-arch bwall_0
-x 11
-y 11
-end
-arch woodfloor
-x 11
-y 12
-end
-arch woodfloor
-x 11
-y 13
-end
-arch bwall_0
-x 11
-y 13
-end
-arch woodfloor
-x 11
-y 14
-end
-arch woodfloor
-x 11
-y 15
-end
-arch wwall_2_1_2
-x 11
-y 15
-end
-arch woodfloor
-x 12
-end
-arch wwall_2_1_2
-x 12
-end
-arch woodfloor
-x 12
-y 1
-end
-arch sign_w
+arch sign
 msg
 Do you like Kobolds?
 endmsg
-x 12
-y 1
-end
-arch woodfloor
-x 12
-y 2
-end
-arch woodfloor
-x 12
-y 3
-end
-arch bwall_2_1_2
-x 12
-y 3
-end
-arch woodfloor
-x 12
-y 4
-end
-arch generate_kobold
-x 12
-y 4
-end
-arch woodfloor
-x 12
-y 5
-end
-arch woodfloor
-x 12
-y 6
-end
-arch woodfloor
-x 12
-y 7
-end
-arch woodfloor
-x 12
-y 8
-end
-arch woodfloor
-x 12
-y 9
-end
-arch woodfloor
-x 12
-y 10
-end
-arch woodfloor
-x 12
-y 11
-end
-arch woodfloor
-x 12
-y 12
-end
-arch woodfloor
-x 12
-y 13
-end
-arch generate_kobold
-x 12
-y 13
-end
-arch woodfloor
-x 12
-y 14
-end
-arch woodfloor
-x 12
-y 15
-end
-arch wwall_2_1_2
-x 12
+x 9
 y 15
 end
 arch woodfloor
-x 13
+x 9
+y 16
 end
-arch wwall_1_3
-x 13
+arch light4
+x 9
+y 17
 end
-arch woodfloor
-x 13
-y 1
-end
-arch woodfloor
-x 13
-y 2
-end
-arch woodfloor
-x 13
-y 3
-end
-arch bwall_2_2_3
-x 13
-y 3
+arch button_small
+x 9
+y 17
+connected 1
 end
 arch woodfloor
-x 13
-y 4
+x 9
+y 17
 end
-arch bwall_2_1_1
-x 13
-y 4
-end
-arch woodfloor
-x 13
-y 5
-end
-arch bwall_2_1_1
-x 13
-y 5
+arch button_small
+x 9
+y 18
+connected 1
 end
 arch woodfloor
-x 13
-y 6
+x 9
+y 18
 end
-arch bwall_2_1_1
-x 13
-y 6
+arch odoorn2_closed_1
+x 9
+y 18
+connected 1
 end
-arch woodfloor
-x 13
-y 7
+arch dungeon_magic
+x 9
+y 19
 end
-arch bwall_1_2
-x 13
-y 7
-end
-arch woodfloor
-x 13
-y 8
-end
-arch woodfloor
-x 13
-y 9
-end
-arch woodfloor
-x 13
-y 10
-end
-arch kobold
-x 13
-y 10
-end
-arch woodfloor
-x 13
-y 11
-end
-arch woodfloor
-x 13
-y 12
-end
-arch woodfloor
-x 13
-y 13
-end
-arch woodfloor
-x 13
-y 14
-end
-arch woodfloor
-x 13
-y 15
-end
-arch wwall_2_1_2
-x 13
-y 15
-end
-arch woodfloor
-x 14
-end
-arch oakdoor_2
+arch invis_exit
 slaying /world/world_104_115
 hp 41
-sp 34
-x 14
+sp 35
+x 9
+y 19
 end
-arch woodfloor
-x 14
+arch grass
+x 9
+y 19
+end
+arch grass
+x 9
+y 20
+end
+arch grass
+x 10
+end
+arch grass
+x 10
 y 1
 end
-arch woodfloor
-x 14
+arch light3
+x 10
 y 2
 end
 arch woodfloor
-x 14
+x 10
+y 2
+end
+arch dwall_win2
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 3
+end
+arch weak_wall_6
+face bwall_0.111
+x 10
 y 3
 end
 arch woodfloor
-x 14
+x 10
+y 4
+end
+arch weak_wall_6
+face bwall_0.111
+x 10
 y 4
 end
 arch woodfloor
-x 14
+x 10
+y 5
+end
+arch weak_wall_6
+face bwall_0.111
+x 10
 y 5
 end
 arch woodfloor
-x 14
+x 10
 y 6
 end
 arch woodfloor
-x 14
+x 10
 y 7
 end
 arch woodfloor
-x 14
+x 10
 y 8
 end
 arch woodfloor
-x 14
+x 10
 y 9
 end
 arch woodfloor
-x 14
+x 10
 y 10
 end
 arch woodfloor
-x 14
+x 10
 y 11
 end
 arch woodfloor
-x 14
+x 10
+y 12
+end
+arch woodfloor
+x 10
+y 13
+end
+arch woodfloor
+x 10
+y 14
+end
+arch bwall_2_1_2
+x 10
+y 14
+end
+arch woodfloor
+x 10
+y 15
+end
+arch woodfloor
+x 10
+y 16
+end
+arch button_small
+x 10
+y 17
+connected 1
+end
+arch woodfloor
+x 10
+y 17
+end
+arch woodfloor
+x 10
+y 18
+end
+arch cwall_1_4
+x 10
+y 18
+end
+arch dungeon_magic
+x 10
+y 19
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 41
+sp 35
+x 10
+y 19
+end
+arch grass
+x 10
+y 19
+end
+arch grass
+x 10
+y 20
+end
+arch grass
+x 11
+end
+arch grass
+x 11
+y 1
+end
+arch woodfloor
+x 11
+y 2
+end
+arch cwall_2_1_2
+x 11
+y 2
+end
+arch woodfloor
+x 11
+y 3
+end
+arch weak_wall_6
+face bwall_0.111
+x 11
+y 3
+end
+arch woodfloor
+x 11
+y 4
+end
+arch weak_wall_6
+face bwall_0.111
+x 11
+y 4
+end
+arch woodfloor
+x 11
+y 5
+end
+arch weak_wall_6
+face bwall_0.111
+x 11
+y 5
+end
+arch woodfloor
+x 11
+y 6
+end
+arch bwall_0
+x 11
+y 6
+end
+arch woodfloor
+x 11
+y 7
+end
+arch woodfloor
+x 11
+y 8
+end
+arch bwall_0
+x 11
+y 8
+end
+arch woodfloor
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
+end
+arch bwall_0
+x 11
+y 10
+end
+arch woodfloor
+x 11
+y 11
+end
+arch woodfloor
+x 11
 y 12
 end
 arch bwall_0
+x 11
+y 12
+end
+arch woodfloor
+x 11
+y 13
+end
+arch woodfloor
+x 11
+y 14
+end
+arch bwall_1_3
+x 11
+y 14
+end
+arch woodfloor
+x 11
+y 15
+end
+arch woodfloor
+x 11
+y 16
+end
+arch woodfloor
+x 11
+y 17
+end
+arch woodfloor
+x 11
+y 18
+end
+arch cwall_2_1_2
+x 11
+y 18
+end
+arch grass
+x 11
+y 19
+end
+arch grass
+x 11
+y 20
+end
+arch grass
+x 12
+end
+arch grass
+x 12
+y 1
+end
+arch woodfloor
+x 12
+y 2
+end
+arch cwall_3_3
+x 12
+y 2
+end
+arch woodfloor
+x 12
+y 3
+end
+arch cwall_2_2_1
+x 12
+y 3
+end
+arch woodfloor
+x 12
+y 4
+end
+arch woodfloor
+x 12
+y 5
+end
+arch woodfloor
+x 12
+y 6
+end
+arch light2
+x 12
+y 7
+end
+arch woodfloor
+x 12
+y 7
+end
+arch woodfloor
+x 12
+y 8
+end
+arch woodfloor
+x 12
+y 9
+end
+arch woodfloor
+x 12
+y 10
+end
+arch woodfloor
+x 12
+y 11
+end
+arch woodfloor
+x 12
+y 12
+end
+arch light2
+x 12
+y 13
+end
+arch woodfloor
+x 12
+y 13
+end
+arch woodfloor
+x 12
+y 14
+end
+arch woodfloor
+x 12
+y 15
+end
+arch light2
+x 12
+y 16
+end
+arch woodfloor
+x 12
+y 16
+end
+arch woodfloor
+x 12
+y 17
+end
+arch swall_1_2_half
+x 12
+y 17
+end
+arch cwall_2_2_2
+x 12
+y 17
+end
+arch woodfloor
+x 12
+y 18
+end
+arch cwall_3_1
+x 12
+y 18
+end
+arch grass
+x 12
+y 19
+end
+arch grass
+x 12
+y 20
+end
+arch grass
+x 13
+end
+arch grass
+x 13
+y 1
+end
+arch grass
+x 13
+y 2
+end
+arch cwall_2_2_3
+x 13
+y 2
+end
+arch woodfloor
+x 13
+y 3
+end
+arch cwall_4
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 4
+end
+arch cwall_2_2_1
+x 13
+y 4
+end
+arch woodfloor
+x 13
+y 5
+end
+arch woodfloor
+x 13
+y 6
+end
+arch bwall_0
+x 13
+y 6
+end
+arch woodfloor
+x 13
+y 7
+end
+arch woodfloor
+x 13
+y 8
+end
+arch bwall_0
+x 13
+y 8
+end
+arch woodfloor
+x 13
+y 9
+end
+arch woodfloor
+x 13
+y 10
+end
+arch bwall_0
+x 13
+y 10
+end
+arch woodfloor
+x 13
+y 11
+end
+arch woodfloor
+x 13
+y 12
+end
+arch bwall_0
+x 13
+y 12
+end
+arch woodfloor
+x 13
+y 13
+end
+arch woodfloor
+x 13
+y 14
+end
+arch woodfloor
+x 13
+y 15
+end
+arch woodfloor
+x 13
+y 16
+end
+arch cwall_2_2_2
+x 13
+y 16
+end
+arch woodfloor
+x 13
+y 17
+end
+arch cwall_4
+x 13
+y 17
+end
+arch grass
+x 13
+y 18
+end
+arch cwall_2_2_4
+x 13
+y 18
+end
+arch grass
+x 13
+y 19
+end
+arch grass
+x 13
+y 20
+end
+arch grass
+x 14
+end
+arch grass
+x 14
+y 1
+end
+arch grass
+x 14
+y 2
+end
+arch grass
+x 14
+y 3
+end
+arch cwall_2_2_3
+x 14
+y 3
+end
+arch woodfloor
+x 14
+y 4
+end
+arch cwall_4
+x 14
+y 4
+end
+arch woodfloor
+x 14
+y 5
+end
+arch cwall_2_2_1
+x 14
+y 5
+end
+arch woodfloor
+x 14
+y 6
+end
+arch generate_kobold
+x 14
+y 6
+end
+arch woodfloor
+x 14
+y 7
+end
+arch woodfloor
+x 14
+y 8
+end
+arch woodfloor
+x 14
+y 9
+end
+arch woodfloor
+x 14
+y 10
+end
+arch woodfloor
+x 14
+y 11
+end
+arch woodfloor
 x 14
 y 12
 end
 arch woodfloor
 x 14
 y 13
+end
+arch light1
+x 14
+y 14
 end
 arch woodfloor
 x 14
@@ -1332,45 +1768,58 @@ arch woodfloor
 x 14
 y 15
 end
-arch wwall_2_1_2
+arch cwall_2_2_2
 x 14
 y 15
 end
 arch woodfloor
+x 14
+y 16
+end
+arch cwall_4
+x 14
+y 16
+end
+arch grass
+x 14
+y 17
+end
+arch cwall_2_2_4
+x 14
+y 17
+end
+arch grass
+x 14
+y 18
+end
+arch grass
+x 14
+y 19
+end
+arch grass
+x 14
+y 20
+end
+arch grass
 x 15
 end
-arch wwall_1_1
-x 15
-end
-arch woodfloor
+arch grass
 x 15
 y 1
 end
-arch wwall_2_1_1
-x 15
-y 1
-end
-arch woodfloor
+arch grass
 x 15
 y 2
 end
-arch wwall_2_1_1
-x 15
-y 2
-end
-arch woodfloor
+arch grass
 x 15
 y 3
 end
-arch wwall_2_1_1
-x 15
-y 3
-end
-arch woodfloor
+arch grass
 x 15
 y 4
 end
-arch wwall_2_1_1
+arch cwall_2_2_3
 x 15
 y 4
 end
@@ -1378,7 +1827,7 @@ arch woodfloor
 x 15
 y 5
 end
-arch wwall_2_1_1
+arch cwall_4
 x 15
 y 5
 end
@@ -1386,7 +1835,7 @@ arch woodfloor
 x 15
 y 6
 end
-arch wwall_2_1_1
+arch cwall_3_2
 x 15
 y 6
 end
@@ -1394,7 +1843,7 @@ arch woodfloor
 x 15
 y 7
 end
-arch wwall_2_1_1
+arch cwall_3_2
 x 15
 y 7
 end
@@ -1402,7 +1851,7 @@ arch woodfloor
 x 15
 y 8
 end
-arch wwall_2_1_1
+arch cwall_2_2_1
 x 15
 y 8
 end
@@ -1410,7 +1859,7 @@ arch woodfloor
 x 15
 y 9
 end
-arch wwall_2_1_1
+arch generate_kobold
 x 15
 y 9
 end
@@ -1418,47 +1867,372 @@ arch woodfloor
 x 15
 y 10
 end
-arch wwall_2_1_1
+arch woodfloor
 x 15
+y 11
+end
+arch woodfloor
+x 15
+y 12
+end
+arch cwall_2_2_2
+x 15
+y 12
+end
+arch woodfloor
+x 15
+y 13
+end
+arch cwall_3_2
+x 15
+y 13
+end
+arch woodfloor
+x 15
+y 14
+end
+arch cwall_3_2
+x 15
+y 14
+end
+arch woodfloor
+x 15
+y 15
+end
+arch cwall_4
+x 15
+y 15
+end
+arch grass
+x 15
+y 16
+end
+arch cwall_2_2_4
+x 15
+y 16
+end
+arch grass
+x 15
+y 17
+end
+arch grass
+x 15
+y 18
+end
+arch grass
+x 15
+y 19
+end
+arch grass
+x 15
+y 20
+end
+arch grass
+x 16
+end
+arch grass
+x 16
+y 1
+end
+arch grass
+x 16
+y 2
+end
+arch grass
+x 16
+y 3
+end
+arch grass
+x 16
+y 4
+end
+arch grass
+x 16
+y 5
+end
+arch cwall_2_2_3
+x 16
+y 5
+end
+arch grass
+x 16
+y 6
+end
+arch cwall_3_4
+x 16
+y 6
+end
+arch grass
+x 16
+y 7
+end
+arch cwall_3_4
+x 16
+y 7
+end
+arch woodfloor
+x 16
+y 8
+end
+arch cwall_3_4
+x 16
+y 8
+end
+arch woodfloor
+x 16
+y 9
+end
+arch cwall_2_1_1
+x 16
+y 9
+end
+arch light3
+x 16
 y 10
 end
 arch woodfloor
-x 15
+x 16
+y 10
+end
+arch dwall_win1
+x 16
+y 10
+end
+arch woodfloor
+x 16
 y 11
 end
-arch wwall_2_1_1
-x 15
+arch cwall_2_1_1
+x 16
 y 11
 end
 arch woodfloor
-x 15
+x 16
 y 12
 end
-arch wwall_2_1_1
-x 15
+arch cwall_3_4
+x 16
 y 12
 end
-arch woodfloor
-x 15
+arch cwall_3_4
+x 16
 y 13
 end
-arch wwall_2_1_1
-x 15
+arch grass
+x 16
 y 13
 end
-arch woodfloor
-x 15
+arch cwall_3_4
+x 16
+y 13
+end
+arch cwall_3_4
+x 16
 y 14
 end
-arch wwall_2_1_1
-x 15
+arch grass
+x 16
 y 14
 end
-arch woodfloor
-x 15
+arch cwall_3_4
+x 16
+y 14
+end
+arch grass
+x 16
 y 15
 end
-arch wwall_2_2_4
-x 15
+arch grass
+x 16
 y 15
+end
+arch cwall_2_2_4
+x 16
+y 15
+end
+arch grass
+x 16
+y 16
+end
+arch grass
+x 16
+y 17
+end
+arch grass
+x 16
+y 18
+end
+arch grass
+x 16
+y 19
+end
+arch grass
+x 16
+y 20
+end
+arch grass
+x 17
+end
+arch grass
+x 17
+y 1
+end
+arch grass
+x 17
+y 2
+end
+arch grass
+x 17
+y 3
+end
+arch grass
+x 17
+y 4
+end
+arch grass
+x 17
+y 5
+end
+arch grass
+x 17
+y 6
+end
+arch grass
+x 17
+y 7
+end
+arch grass
+x 17
+y 8
+end
+arch grass
+x 17
+y 9
+end
+arch grass
+x 17
+y 10
+end
+arch grass
+x 17
+y 11
+end
+arch grass
+x 17
+y 12
+end
+arch grass
+x 17
+y 13
+end
+arch grass
+x 17
+y 14
+end
+arch grass
+x 17
+y 15
+end
+arch grass
+x 17
+y 16
+end
+arch grass
+x 17
+y 17
+end
+arch grass
+x 17
+y 18
+end
+arch grass
+x 17
+y 19
+end
+arch grass
+x 17
+y 20
+end
+arch grass
+x 18
+end
+arch grass
+x 18
+y 1
+end
+arch grass
+x 18
+y 2
+end
+arch grass
+x 18
+y 3
+end
+arch grass
+x 18
+y 4
+end
+arch grass
+x 18
+y 5
+end
+arch grass
+x 18
+y 6
+end
+arch grass
+x 18
+y 7
+end
+arch grass
+x 18
+y 8
+end
+arch grass
+x 18
+y 9
+end
+arch grass
+x 18
+y 10
+end
+arch grass
+x 18
+y 11
+end
+arch grass
+x 18
+y 12
+end
+arch grass
+x 18
+y 13
+end
+arch grass
+x 18
+y 14
+end
+arch grass
+x 18
+y 15
+end
+arch grass
+x 18
+y 16
+end
+arch grass
+x 18
+y 17
+end
+arch grass
+x 18
+y 18
+end
+arch grass
+x 18
+y 19
+end
+arch grass
+x 18
+y 20
 end
