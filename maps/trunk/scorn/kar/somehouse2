@@ -7,7 +7,7 @@ height 16
 enter_x 1
 enter_y 14
 msg
-Modified: 2008-11-15 Rick Tanner
+Modified: 2011-08-23 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -189,8 +189,8 @@ y 14
 end
 arch stair_3_down
 slaying somehouse
-hp 1
-sp 14
+hp 9
+sp 3
 x 1
 y 14
 end
