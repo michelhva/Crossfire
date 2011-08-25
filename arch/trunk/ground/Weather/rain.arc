@@ -1,4 +1,4 @@
-Object rain2
+Object rain
 name rain
 face rain.111
 animation rain
