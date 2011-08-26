@@ -9,7 +9,7 @@ enter_x 16
 enter_y 4
 msg
 Created:  2003-06-19 crowbert
-Modified: 2011-08-24 Khaleh
+Modified: 2011-08-26 Khaleh
 endmsg
 end
 arch flagstone
@@ -2496,22 +2496,82 @@ arch blocked
 x 31
 y 16
 end
-arch woodfloor
+arch blocked
 x 32
-end
-arch firewall_4
-x 32
-speed -0.5
-level 100
-arch spell_dragonbreath
-end
 end
 arch blocked
 x 32
 y 1
 end
-arch woodfloor
+arch blocked
 x 32
+y 2
+end
+arch blocked
+x 32
+y 3
+end
+arch blocked
+x 32
+y 4
+end
+arch blocked
+x 32
+y 5
+end
+arch blocked
+x 32
+y 6
+end
+arch blocked
+x 32
+y 7
+end
+arch blocked
+x 32
+y 8
+end
+arch blocked
+x 32
+y 9
+end
+arch blocked
+x 32
+y 10
+end
+arch blocked
+x 32
+y 11
+end
+arch blocked
+x 32
+y 12
+end
+arch blocked
+x 32
+y 13
+end
+arch blocked
+x 32
+y 14
+end
+arch blocked
+x 32
+y 15
+end
+arch blocked
+x 32
+y 16
+end
+arch blocked
+x 33
+end
+arch blocked
+x 33
+y 1
+end
+arch woodfloor
+x 33
 y 2
 end
 arch magic_mouth
@@ -2522,16 +2582,16 @@ Zombies will return to their graves
 and will be unavailable a while.
 endmsg
 food 1
-x 32
+x 33
 y 2
 connected 777
 end
 arch blocked
-x 32
+x 33
 y 3
 end
 arch woodfloor
-x 32
+x 33
 y 4
 end
 arch magic_mouth
@@ -2539,368 +2599,242 @@ msg
 TRAINING PERIOD HAS ENDED.
 endmsg
 food 1
-x 32
+x 33
 y 4
 connected 666
 end
 arch blocked
-x 32
+x 33
 y 5
 end
 arch woodfloor
-x 32
+x 33
 y 6
 end
 arch trigger
-x 32
+x 33
 y 6
 connected 333
 end
 arch vampire
 name Training Supervisor
-x 32
+x 33
 y 6
 sleep 0
 end
 arch blocked
-x 32
+x 33
 y 7
 end
 arch blocked
-x 32
+x 33
 y 8
 end
 arch woodfloor
-x 32
+x 33
 y 9
 end
 arch spikes_closed
-x 32
+x 33
 y 9
 connected 777
 end
 arch spikes_moving
-x 32
+x 33
 y 9
 end
 arch food
-x 32
+x 33
 y 9
 end
 arch woodfloor
-x 32
+x 33
 y 10
 end
 arch spikes_closed
-x 32
+x 33
 y 10
 connected 777
 end
 arch woodfloor
-x 32
+x 33
 y 11
 end
 arch altar_trigger
 name destroy generators then reset
 food 1
-x 32
+x 33
 y 11
 connected 666
 end
 arch blocked
-x 32
+x 33
 y 12
 end
 arch woodfloor
-x 32
+x 33
 y 13
 end
 arch spikes_open
-x 32
+x 33
 y 13
 connected 1
 end
 arch food
-x 32
+x 33
 y 13
 end
 arch woodfloor
-x 32
+x 33
 y 14
 end
 arch altar_trigger
 name start timer
 exp 15500
 food 1
-x 32
+x 33
 y 14
 connected 777
 end
 arch blocked
-x 32
-y 15
-end
-arch woodfloor
-x 32
-y 16
-end
-arch firewall_2
-x 32
-y 16
-speed -0.5
-level 100
-arch spell_dragonbreath
-end
-end
-arch woodfloor
-x 33
-end
-arch grate_closed_2
-x 33
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 1
-end
-arch grate_closed_2
-x 33
-y 1
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 2
-end
-arch grate_closed_2
-x 33
-y 2
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 3
-end
-arch grate_closed_2
-x 33
-y 3
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 4
-end
-arch grate_closed_2
-x 33
-y 4
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 5
-end
-arch grate_closed_2
-x 33
-y 5
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 6
-end
-arch grate_closed_2
-x 33
-y 6
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 7
-end
-arch grate_closed_2
-x 33
-y 7
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 8
-end
-arch grate_closed_2
-x 33
-y 8
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 9
-end
-arch grate_closed_2
-x 33
-y 9
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 10
-end
-arch grate_closed_2
-x 33
-y 10
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 11
-end
-arch grate_closed_2
-x 33
-y 11
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 12
-end
-arch grate_closed_2
-x 33
-y 12
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 13
-end
-arch grate_closed_2
-x 33
-y 13
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
-x 33
-y 14
-end
-arch grate_closed_2
-x 33
-y 14
-connected 666
-no_magic 1
-damned 1
-end
-arch woodfloor
 x 33
 y 15
 end
-arch grate_closed_2
+arch blocked
 x 33
-y 15
-connected 666
-no_magic 1
-damned 1
+y 16
 end
 arch woodfloor
-x 33
-y 16
-end
-arch grate_closed_2
-x 33
-y 16
-connected 666
-no_magic 1
-damned 1
-end
-arch permanent_lava
 x 34
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+end
+arch woodfloor
 x 34
 y 1
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 1
+end
+arch woodfloor
 x 34
 y 2
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 2
+end
+arch woodfloor
 x 34
 y 3
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 3
+end
+arch woodfloor
 x 34
 y 4
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 4
+end
+arch woodfloor
 x 34
 y 5
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 5
+end
+arch woodfloor
 x 34
 y 6
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 6
+end
+arch woodfloor
 x 34
 y 7
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 7
+end
+arch woodfloor
 x 34
 y 8
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 8
+end
+arch woodfloor
 x 34
 y 9
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 9
+end
+arch woodfloor
 x 34
 y 10
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 10
+end
+arch woodfloor
 x 34
 y 11
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 11
+end
+arch woodfloor
 x 34
 y 12
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 12
+end
+arch woodfloor
 x 34
 y 13
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 13
+end
+arch woodfloor
 x 34
 y 14
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 14
+end
+arch woodfloor
 x 34
 y 15
 end
-arch permanent_lava
+arch dwall_2_1_1
+x 34
+y 15
+end
+arch woodfloor
+x 34
+y 16
+end
+arch dwall_2_1_1
 x 34
 y 16
 end
@@ -3204,6 +3138,13 @@ sp 6
 x 36
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 36
+y 1
+connected 666
+end
 arch woodfloor
 x 36
 y 1
@@ -3231,6 +3172,13 @@ sp 12
 x 36
 y 2
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 36
+y 3
+connected 666
 end
 arch woodfloor
 x 36
@@ -3260,6 +3208,13 @@ x 36
 y 4
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 36
+y 5
+connected 666
+end
 arch woodfloor
 x 36
 y 5
@@ -3287,6 +3242,13 @@ sp 3
 x 36
 y 6
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 36
+y 7
+connected 666
 end
 arch woodfloor
 x 36
@@ -3316,6 +3278,13 @@ x 36
 y 8
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 36
+y 9
+connected 666
+end
 arch woodfloor
 x 36
 y 9
@@ -3343,6 +3312,13 @@ sp 11
 x 36
 y 10
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 36
+y 11
+connected 666
 end
 arch woodfloor
 x 36
@@ -3372,6 +3348,13 @@ x 36
 y 12
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 36
+y 13
+connected 666
+end
 arch woodfloor
 x 36
 y 13
@@ -3399,6 +3382,13 @@ sp 11
 x 36
 y 14
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 36
+y 15
+connected 666
 end
 arch woodfloor
 x 36
@@ -3728,6 +3718,13 @@ sp 7
 x 38
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 38
+y 1
+connected 666
+end
 arch woodfloor
 x 38
 y 1
@@ -3755,6 +3752,13 @@ sp 3
 x 38
 y 2
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 38
+y 3
+connected 666
 end
 arch woodfloor
 x 38
@@ -3784,6 +3788,13 @@ x 38
 y 4
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 38
+y 5
+connected 666
+end
 arch woodfloor
 x 38
 y 5
@@ -3811,6 +3822,13 @@ sp 4
 x 38
 y 6
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 38
+y 7
+connected 666
 end
 arch woodfloor
 x 38
@@ -3840,6 +3858,13 @@ x 38
 y 8
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 38
+y 9
+connected 666
+end
 arch woodfloor
 x 38
 y 9
@@ -3867,6 +3892,13 @@ sp 5
 x 38
 y 10
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 38
+y 11
+connected 666
 end
 arch woodfloor
 x 38
@@ -3896,6 +3928,13 @@ x 38
 y 12
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 38
+y 13
+connected 666
+end
 arch woodfloor
 x 38
 y 13
@@ -3923,6 +3962,13 @@ sp 10
 x 38
 y 14
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 38
+y 15
+connected 666
 end
 arch woodfloor
 x 38
@@ -4252,6 +4298,13 @@ sp 8
 x 40
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 40
+y 1
+connected 666
+end
 arch woodfloor
 x 40
 y 1
@@ -4279,6 +4332,13 @@ sp 13
 x 40
 y 2
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 40
+y 3
+connected 666
 end
 arch woodfloor
 x 40
@@ -4308,6 +4368,13 @@ x 40
 y 4
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 40
+y 5
+connected 666
+end
 arch woodfloor
 x 40
 y 5
@@ -4335,6 +4402,13 @@ sp 1
 x 40
 y 6
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 40
+y 7
+connected 666
 end
 arch woodfloor
 x 40
@@ -4364,6 +4438,13 @@ x 40
 y 8
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 40
+y 9
+connected 666
+end
 arch woodfloor
 x 40
 y 9
@@ -4391,6 +4472,13 @@ sp 4
 x 40
 y 10
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 40
+y 11
+connected 666
 end
 arch woodfloor
 x 40
@@ -4420,6 +4508,13 @@ x 40
 y 12
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 40
+y 13
+connected 666
+end
 arch woodfloor
 x 40
 y 13
@@ -4447,6 +4542,13 @@ sp 8
 x 40
 y 14
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 40
+y 15
+connected 666
 end
 arch woodfloor
 x 40
@@ -4776,6 +4878,13 @@ sp 4
 x 42
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 42
+y 1
+connected 666
+end
 arch woodfloor
 x 42
 y 1
@@ -4803,6 +4912,13 @@ sp 12
 x 42
 y 2
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 42
+y 3
+connected 666
 end
 arch woodfloor
 x 42
@@ -4832,6 +4948,13 @@ x 42
 y 4
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 42
+y 5
+connected 666
+end
 arch woodfloor
 x 42
 y 5
@@ -4859,6 +4982,13 @@ sp 7
 x 42
 y 6
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 42
+y 7
+connected 666
 end
 arch woodfloor
 x 42
@@ -4888,6 +5018,13 @@ x 42
 y 8
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 42
+y 9
+connected 666
+end
 arch woodfloor
 x 42
 y 9
@@ -4915,6 +5052,13 @@ sp 6
 x 42
 y 10
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 42
+y 11
+connected 666
 end
 arch woodfloor
 x 42
@@ -4944,6 +5088,13 @@ x 42
 y 12
 connected 333
 end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 42
+y 13
+connected 666
+end
 arch woodfloor
 x 42
 y 13
@@ -4971,6 +5122,13 @@ sp 12
 x 42
 y 14
 connected 333
+end
+arch duplicator
+name bye bye generator
+other_arch generate_zombie
+x 42
+y 15
+connected 666
 end
 arch woodfloor
 x 42
