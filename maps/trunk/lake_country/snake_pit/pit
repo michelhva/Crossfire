@@ -9,7 +9,7 @@ enter_x 3
 enter_y 2
 msg
 Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch large_stones
@@ -116,9 +116,7 @@ y 2
 end
 arch magic_mouth
 msg
-You climbed a long way down and there
-is still more to go. Do you want to go
-on
+You climbed a long way down and there is still more to go. Do you want to go on?
 endmsg
 x 2
 y 3

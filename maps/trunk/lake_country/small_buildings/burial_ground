@@ -8,7 +8,7 @@ enter_x 3
 enter_y 3
 msg
 Created:  1995-03-20
-Modified: 2008-09-20 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -1625,8 +1625,7 @@ end
 arch corpse
 name bob's decayed corpse
 msg
-It smells... some larva worms fell off
-of corpse ...
+It smells... some larva worms fell off of corpse ...
 endmsg
 x 4
 y 4

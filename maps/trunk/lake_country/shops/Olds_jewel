@@ -11,7 +11,7 @@ enter_x 6
 enter_y 12
 msg
 Created:  1995-03-23
-Modified: 2011-04-23 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch grass_only
@@ -622,8 +622,7 @@ end
 arch altar
 slaying potionint
 msg
-A magic hand took your offered items,
-and gestured you to take your prize.
+A magic hand took your offered items, and gestured you to take your prize.
 endmsg
 x 3
 y 18
@@ -636,10 +635,8 @@ end
 arch sign
 msg
 Crown of Magi(magic+2, Int+2)
-Your quested items are ten potions
-of intelligence.
-Drop your quested items and you may
-take the crown..
+Your quested items are ten potions of intelligence.
+Drop your quested items and you may take the crown..
 endmsg
 x 3
 y 18
@@ -862,8 +859,7 @@ end
 arch altar
 slaying beholdereye
 msg
-A magic hand took your offered items,
-and gestured you to take your prize.
+A magic hand took your offered items, and gestured you to take your prize.
 endmsg
 food 16
 x 4
@@ -877,10 +873,8 @@ end
 arch sign
 msg
 Crown of Lordliness(Cha+2, Int+1, Wis+2)
-The quested items are sixteen beholder
-eyes.
-Drop your quested items and you may
-take the crown..
+The quested items are sixteen beholder eyes.
+Drop your quested items and you may take the crown..
 endmsg
 x 4
 y 18
@@ -1092,14 +1086,10 @@ end
 arch sign
 msg
 Crown of Might(Con+1, Str+1, Dex+1)
-Your quested items are three Glowing
-Crystals from the GemTunnel.
-Drop your quested items and you may
-take the crown..
+Your quested items are three Glowing Crystals from the GemTunnel.
+Drop your quested items and you may take the crown..
 ***Special***
-Put one crystal on each of the three
-altars up there. Oldie Moldie has bad
-memory, so bring all three together
+Put one crystal on each of the three altars up there. Oldie Moldie has bad memory, so bring all three together
 endmsg
 x 5
 y 18
@@ -1961,11 +1951,7 @@ arch smith
 name Oldie Moldie
 msg
 @match *
-Inside are my collection of fine gems.
-Out at both wings are my collections of
-rare crowns of the lands. I don't use
-them any more. So I will give them to
-worthy adventurers.
+Inside are my collection of fine gems. Out at both wings are my collections of rare crowns of the lands. I don't use them any more. So I will give them to worthy adventurers.
 endmsg
 x 11
 y 13
@@ -2610,8 +2596,7 @@ end
 arch altar
 slaying dragon_scale
 msg
-A magic hand took your offered items,
-and gestured you to take your prize.
+A magic hand took your offered items, and gestured you to take your prize.
 endmsg
 food 3
 x 15
@@ -2624,13 +2609,9 @@ y 18
 end
 arch sign
 msg
-Crown of Fire (Protected: fire,
-Attuned: fire, Repelled:
-cold)
-Your quested items are three dragon
-scales.
-Drop your quested items and you may
-take the crown..
+Crown of Fire (Protected: fire, Attuned: fire, Repelled: cold)
+Your quested items are three dragon scales.
+Drop your quested items and you may take the crown..
 endmsg
 x 15
 y 18
@@ -2858,8 +2839,7 @@ end
 arch altar
 slaying Heart of Takuse
 msg
-A magic hand took your offered items,
-and gestured you to take your prize.
+A magic hand took your offered items, and gestured you to take your prize.
 endmsg
 food 1
 x 16
@@ -2872,13 +2852,9 @@ y 18
 end
 arch sign
 msg
-Crown of Ice (Protected: cold,
-Attuned: cold, Repelled:
-fire)
-Your quested item is the heart of
-Takuse, the fiery dragon.
-Drop your quested items and you may
-take the crown.
+Crown of Ice (Protected: cold, Attuned: cold, Repelled: fire)
+Your quested item is the heart of Takuse, the fiery dragon.
+Drop your quested items and you may take the crown.
 endmsg
 x 16
 y 18
@@ -3108,8 +3084,7 @@ end
 arch altar
 slaying Winterblade
 msg
-A magic hand took your offered items,
-and gestured you to take your prize.
+A magic hand took your offered items, and gestured you to take your prize.
 endmsg
 food 1
 x 17
@@ -3122,12 +3097,9 @@ y 18
 end
 arch sign
 msg
-Crown the Elements(Protected: fire,
-cold, electricity, Attuned: electricity)
-Your quested item is the Winterblade
-owned by the Ice dragon highlord.
-Drop your quested items and you may
-take the crown.
+Crown the Elements(Protected: fire, cold, electricity, Attuned: electricity)
+Your quested item is the Winterblade owned by the Ice dragon highlord.
+Drop your quested items and you may take the crown.
 endmsg
 x 17
 y 18

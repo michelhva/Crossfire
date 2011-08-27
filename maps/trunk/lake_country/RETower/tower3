@@ -8,7 +8,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  1995-04-04 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2008-10-20 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch gwall_2_2_2
@@ -2330,8 +2330,7 @@ y 11
 end
 arch magic_mouth
 msg
-Drop 250 platinum coins to pay the
-training fee.
+Drop 250 platinum coins to pay the training fee.
 endmsg
 x 11
 y 12
@@ -2557,13 +2556,7 @@ y 11
 end
 arch sign
 msg
-This is the undead training level. Be
-careful, some of them drain you! And
-other nasty things. You need special
-magical dust to pass through walls.
-And some undead carry them. So you need
-to find them before you run out of
-magical dust.
+This is the undead training level. Be careful, some of them drain you! And other nasty things. You need special magical dust to pass through walls. And some undead carry them. So you need to find them before you run out of magical dust.
 Extreme caution is advised.
 endmsg
 x 12
@@ -2796,23 +2789,14 @@ arch statue
 name Dark panther
 msg
 @match push|how|get
-If you have the dust I requested, I
-won't push you back.
+If you have the dust I requested, I won't push you back.
 @match banisher
-The Undead Banisher is the weapon on
-the table behide me. It's the prize of
-finishing the training.
-It is one of the greatest weapon one
-can acquire. It is feared by all
-undeads. Its power grows with the
-master of the weapon.
+The Undead Banisher is the weapon on the table behide me. It's the prize of finishing the training.
+It is one of the greatest weapon one can acquire. It is feared by all undeads. Its power grows with the master of the weapon.
 @match prize|training
-If you finish the training and get the
-dust of the Fierce Spectre to prove it,
-I will give you a prize.
+If you finish the training and get the dust of the Fierce Spectre to prove it, I will give you a prize.
 @match *
-Hello. Finish the training and you may
-get a prize.
+Hello. Finish the training and you may get a prize.
 endmsg
 face panther.131
 x 13
@@ -2831,8 +2815,7 @@ arch sting
 name Undead Banisher
 slaying undead
 msg
-The Banisher glows with fierce bright
-light.
+The Banisher glows with fierce bright light.
 You feel its hunger for power.
 endmsg
 x 13
@@ -3822,10 +3805,7 @@ end
 arch sign
 msg
 Congratualations for making so far.
-It's a good option to step on the
-teleporter and leave now. But there are
-greater rewards with greater challenge
-waiting.
+It's a good option to step on the teleporter and leave now. But there are greater rewards with greater challenge waiting.
 endmsg
 x 18
 y 3

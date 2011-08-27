@@ -11,7 +11,7 @@ enter_x 9
 enter_y 9
 msg
 Created:  1995-03-19 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2011-06-19 Andreas Kirschbaum
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch cave_15
@@ -1028,101 +1028,50 @@ arch smith
 name Mopoon, the Dragonslayer
 msg
 @match Kashu
-Mopoon smiles and nods approvingly at
-you.
+Mopoon smiles and nods approvingly at you.
 @match Twak
-"Ah.. Now I remember that's the old
-druid's name!"
+"Ah.. Now I remember that's the old druid's name!"
 @match Zykie
-"Don't say that name again. It brings
-back some sad memories. How I wish to
-see him again, my old Zykie."
+"Don't say that name again. It brings back some sad memories. How I wish to see him again, my old Zykie."
 @match thanks|thank|thanx
-"You are welcome. Give me some of
-your rare discoveries next time."
+"You are welcome. Give me some of your rare discoveries next time."
 @match spirit|forest|druid
 "Someone said the wind in the forest
-.. hmm, or was it the trees? ..anyway
-they say you can find the true name of
-the ancient druid if you stay in the
-forest long enough."
+.. hmm, or was it the trees?
+.. anyway they say you can find the true name of the ancient druid if you stay in the forest long enough."
 @match lord|master
-"Don't you think I am the Lord the
-land that I have slawn so many dragons
-and freed so many people of suffering."
-"But then again, I have retired the
-world for a long time. Ask the sages who
-live by the sea."
+"Don't you think I am the Lord the land that I have slawn so many dragons and freed so many people of suffering."
+"But then again, I have retired the world for a long time. Ask the sages who live by the sea."
 @match Dragonslayer
-"That's me. Well, I was so famous,
-and my sword also, that they confused
-my name with the sword's. I was named
-Dragonslayer by my father who tried all
-his life to avenge for the deaths of
-his village."
+"That's me. Well, I was so famous, and my sword also, that they confused my name with the sword's. I was named Dragonslayer by my father who tried all his life to avenge for the deaths of his village."
 @match dragonbane
 "What do you want of my Dragonbane?"
 @match power|dragonmail|mail
-"What do you want of my Power Dragon
-Mail?"
+"What do you want of my Power Dragon Mail?"
 @match highlord|highlords
-"Dragon Highlords? They are really
-powerful. You can find a few of them
-in the dragon caves in the forest
-not far away from west of Navar."
+"Dragon Highlords? They are really powerful. You can find a few of them in the dragon caves in the forest not far away from west of Navar."
 @match dragon|dragons
-"Ah, now you say the right word.
-There are three kinds of dragons, at
-least while I was out genociding them.
-Fire dragon is the biggest. Ice dragon
-is the smallest and weakest. But the
-electric dragons are the hardest to
-deal with."
+"Ah, now you say the right word. There are three kinds of dragons, at least while I was out genociding them. Fire dragon is the biggest. Ice dragon is the smallest and weakest. But the electric dragons are the hardest to deal with."
 @match buy|give|borrow|lend|take
-"No. They are not for sale and I
-don't lend my Dragon mail or my
-Dragonbane. Unless you can impress me
-and prove yourself worthy."
+"No. They are not for sale and I don't lend my Dragon mail or my Dragonbane. Unless you can impress me and prove yourself worthy."
 @match dragonsteak
-"You can get dragonsteaks from
-wyverns and hatchlings!"
+"You can get dragonsteaks from wyverns and hatchlings!"
 @match firedragon|Fire|red|flame
-"I tell you this, fire dragons are
-vulnerable to cold."
+"I tell you this, fire dragons are vulnerable to cold."
 @match electric|lightning
-"Lightning dragons fear fire just as
-much as cold dragons. "
+"Lightning dragons fear fire just as much as cold dragons. "
 @match ice|chinese
-"Ice dragons are vulnerable to fire.
-This advice worth a lot. But we are
-friends, arn't we?"
+"Ice dragons are vulnerable to fire. This advice worth a lot. But we are friends, arn't we?"
 @match break|chat
-"Okay, I will take a break now and
-tell you something about the cave.
-The cave was originally Wist, the
-mad wizard's. But he seemed to have
-left long time ago. So I worked to
-enlarge it and made it magnificent
-as it is now. I know there is a secret
-path in this cave."
+"Okay, I will take a break now and tell you something about the cave. The cave was originally Wist, the mad wizard's. But he seemed to have left long time ago. So I worked to enlarge it and made it magnificent as it is now. I know there is a secret path in this cave."
 @match secret|path
-"Yes, a secret path that was what's
-left of the wizard's days. I don't
-like that place. So I never went in.
-But I know the word to trigger a
-portal to open to there."
+"Yes, a secret path that was what's left of the wizard's days. I don't like that place. So I never went in. But I know the word to trigger a portal to open to there."
 @match word|pass|password
-"You bring me the Crown of Fire
-that Oldie Moldie has, and I will
-tell you. When you bring it, don't
-bring it into the shop."
+"You bring me the Crown of Fire that Oldie Moldie has, and I will tell you. When you bring it, don't bring it into the shop."
 @match entrance
 "Entrance to what?"
 @match *
-"Choose some other topics, or I will
-go on make another dragon mail and you
-can enjoy the dragons. If you want a
-chat come when I am taking a break."
+"Choose some other topics, or I will go on make another dragon mail and you can enjoy the dragons. If you want a chat come when I am taking a break."
 endmsg
 x 6
 y 9
@@ -1292,9 +1241,7 @@ end
 arch altar
 slaying Crown of Fire
 msg
-Mopoon says, "The word of activation is
-the name of an old warrior king,
-Kashu.
+Mopoon says, "The word of activation is the name of an old warrior king, Kashu."
 endmsg
 food 1
 x 7
@@ -1304,9 +1251,7 @@ end
 arch magic_ear
 msg
 @match Kashu
-The whole dungeon starts to shake as
-you invokes some old mechanism of the
-place..
+The whole dungeon starts to shake as you invokes some old mechanism of the place..
 endmsg
 x 7
 y 9
@@ -1314,9 +1259,7 @@ connected 12
 end
 arch magic_mouth
 msg
-Mopoon says, "Don't litter on this
-square. The square has some power. I
-feel uncomfortable when I feel it.
+Mopoon says, "Don't litter on this square. The square has some power. I feel uncomfortable when I feel it.
 endmsg
 x 7
 y 9
@@ -1559,8 +1502,7 @@ end
 arch magic_mouth
 msg
 Thanks for visiting my shop!
-Wood and metal are not the only
-weapons you can buy here.
+Wood and metal are not the only weapons you can buy here.
 endmsg
 x 8
 y 11
@@ -3134,8 +3076,7 @@ y 22
 end
 arch magic_mouth
 msg
-Want to practice your skills
-and weapons?
+Want to practice your skills and weapons?
 endmsg
 x 17
 y 23
@@ -3731,10 +3672,7 @@ y 15
 end
 arch magic_mouth
 msg
-Drop 25 small diamonds at the altar
-to mock the nasty; and get an inspi-
-rition of how to deal with electric
-dragon.
+Drop 25 small diamonds at the altar to mock the nasty; and get an inspirition of how to deal with electric dragon.
 endmsg
 x 20
 y 16
@@ -3746,8 +3684,7 @@ end
 arch magic_mouth
 name instruct
 msg
-"Run into the target and I will do the
-rest."
+"Run into the target and I will do the rest."
 endmsg
 x 20
 y 17
@@ -3912,8 +3849,7 @@ connected 8
 end
 arch sign
 msg
-10 small diamonds for tax to use the
-exchange
+10 small diamonds for tax to use the exchange
 endmsg
 x 21
 y 6
@@ -4224,9 +4160,7 @@ end
 arch magic_mouth
 name trickery
 msg
-A voice says, "So you must be friend of
-my master. Now remember the name
-Jessy.
+A voice says, "So you must be friend of my master. Now remember the name Jessy."
 endmsg
 x 22
 y 15
@@ -4234,8 +4168,7 @@ end
 arch magic_ear
 msg
 @match Jessy
-You are surrounded by a shroud of black
-flame..
+You are surrounded by a shroud of black flame...
 endmsg
 x 22
 y 15
@@ -4243,7 +4176,7 @@ connected 10
 end
 arch magic_mouth
 msg
-You feel magical energy around
+You feel magical energy around.
 endmsg
 x 22
 y 15
@@ -4256,15 +4189,8 @@ arch teleporter
 name Old map of Lake Country
 slaying /brest/brittany/jessy.3
 msg
-It's a sketch of Lake Country,labeling
-Marsh Maze, Tenshin Palace and Sunset
-Lake to the southwest.
-At the bottom, a line catches your
-eyes:
-'Try any words, any places and you
-will find death waiting for you sooner
-than you expected; and, of course,
-infinite fun and rewards.'.
+It's a sketch of Lake Country, labeling Marsh Maze, Tenshin Palace and Sunset Lake to the southwest. At the bottom, a line catches your eyes:
+'Try any words, any places and you will find death waiting for you sooner than you expected; and, of course, infinite fun and rewards.'.
 endmsg
 face sign.111
 hp 8
@@ -4515,8 +4441,7 @@ end
 arch magic_mouth
 name warning2
 msg
-A voice says, "Last warning. Be gone or
-die!!
+A voice says, "Last warning. Be gone or die!!"
 endmsg
 x 23
 y 16
@@ -4539,11 +4464,7 @@ y 17
 end
 arch magic_mouth
 msg
-That's how you deal with electric
-dragons. Run around and avoid the
-electricity whenever the shoot it.
-Now get out of here. I'd love to keep
-my pet alive for now."
+That's how you deal with electric dragons. Run around and avoid the electricity whenever the shoot it. Now get out of here. I'd love to keep my pet alive for now."
 endmsg
 x 23
 y 18
@@ -4715,8 +4636,7 @@ end
 arch magic_mouth
 name warning1
 msg
-A voice says, "No intruder shall live!
-So be gone!
+A voice says, "No intruder shall live! So be gone!"
 endmsg
 x 24
 y 15
@@ -4901,8 +4821,7 @@ y 5
 end
 arch magic_mouth
 msg
-Thanks for visiting dragon slaying
-guild.
+Thanks for visiting dragon slaying guild.
 endmsg
 x 25
 y 6
@@ -4921,8 +4840,7 @@ y 6
 end
 arch magic_mouth
 msg
-25 small diamonds to learn the
-weakness of electric dragons!
+25 small diamonds to learn the weakness of electric dragons!
 Say 'start' to start the carnage.
 endmsg
 x 25
@@ -4944,8 +4862,7 @@ end
 arch altar
 slaying diamond
 msg
-Say 'pause' when you want to pause
-the process.
+Say 'pause' when you want to pause the process.
 start
 endmsg
 food 25
@@ -4991,7 +4908,7 @@ y 14
 end
 arch magic_mouth
 msg
-Your toes feel itchy
+Your toes feel itchy.
 endmsg
 x 25
 y 15

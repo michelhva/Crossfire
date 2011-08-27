@@ -9,7 +9,7 @@ enter_x 14
 enter_y 16
 msg
 Created:  1995-03-24
-Modified: 2008-10-26 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -2628,8 +2628,7 @@ y 6
 end
 arch magic_mouth
 msg
-You have reached the famed Tower of
-Sorcerery
+You have reached the famed Tower of Sorcerery.
 endmsg
 x 11
 y 7
@@ -2646,8 +2645,7 @@ arch locked_door1
 name Black Gate
 slaying no_key_for_wiztower
 msg
-The key to this gate has long been
-lost...
+The key to this gate has long been lost...
 endmsg
 face ldoor_brown1.111
 x 11
@@ -2863,8 +2861,7 @@ y 6
 end
 arch magic_mouth
 msg
-You have reached the famed Tower of
-Sorcerery
+You have reached the famed Tower of Sorcerery.
 endmsg
 x 12
 y 7
@@ -2881,8 +2878,7 @@ arch locked_door1
 name Black Gate
 slaying no_key_for_wiztower
 msg
-The key to this gate has long been
-lost...
+The key to this gate has long been lost...
 endmsg
 face ldoor_brown1.111
 x 12
@@ -2909,17 +2905,9 @@ end
 arch scroll
 name glowing scroll
 msg
-Welcome to the Tower of Magi, the
-traditional testing ground for those
-who wish to advance further in the art
-of magic.
-Be warned, however, that the journey
-ahead, should you wish to take it, is
-long and dangerous.
-For your convience, there are various
-safe resting places inside the tower
-where you may restore your strength and
-determination.
+Welcome to the Tower of Magi, the traditional testing ground for those who wish to advance further in the art of magic.
+Be warned, however, that the journey ahead, should you wish to take it, is long and dangerous.
+For your convience, there are various safe resting places inside the tower where you may restore your strength and determination.
 - GOOD LUCK.
 endmsg
 face naz_report.111
@@ -3117,8 +3105,7 @@ y 6
 end
 arch magic_mouth
 msg
-You have reached the famed Tower of
-Sorcerery
+You have reached the famed Tower of Sorcerery.
 endmsg
 x 13
 y 7
@@ -3135,8 +3122,7 @@ arch locked_door1
 name Black Gate
 slaying no_key_for_wiztower
 msg
-The key to this gate has long been
-lost...
+The key to this gate has long been lost...
 endmsg
 face ldoor_brown1.111
 x 13

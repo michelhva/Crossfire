@@ -9,7 +9,7 @@ enter_x 16
 enter_y 30
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 maplore
 @def ChaosLair
@@ -940,8 +940,7 @@ y 16
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 4
 y 17
@@ -1896,8 +1895,7 @@ y 22
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 8
 y 23
@@ -2869,9 +2867,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 10
 sp 35
@@ -3118,9 +3114,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 11
 sp 35
@@ -3192,8 +3186,7 @@ y 16
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon
+You hope nobody will discover will discover you, not too soon.
 endmsg
 x 14
 y 17
@@ -3273,9 +3266,7 @@ end
 arch magic_ear
 msg
 @match Orcus|Balrog|Asmodeus|Jessy
-A parade of guards and guardians
-appeared to greet. You hope no one
-discovers you.
+A parade of guards and guardians appeared to greet. You hope no one discovers you.
 endmsg
 x 14
 y 23
@@ -3284,8 +3275,7 @@ end
 arch magic_ear
 msg
 @match kill
-A line of guards appeared behide you
-grinning evilly.
+A line of guards appeared behide you grinning evilly.
 endmsg
 x 14
 y 23
@@ -3307,8 +3297,7 @@ arch dragonman
 name dragonman guard
 msg
 @match open|enter|gate|door
-What's your name? What's your
-business?
+What's your name? What's your business?
 @match Orcus|Balrog|Asmodeus|Jessy
 Gatekeeper! OPEN!!.
 @match kill
@@ -3317,8 +3306,7 @@ Great! We all need some excercises!
 Aha, the more fresh flesh the better.
 Put the sacrifice away!!
 @match *
-You'd better leave before I throw
-you out or summon more guards
+You'd better leave before I throw you out or summon more guards
 endmsg
 Wis 30
 hp 5500
@@ -3351,10 +3339,7 @@ y 26
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 14
 y 27
@@ -3432,9 +3417,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 12
 sp 35
@@ -3490,8 +3473,7 @@ y 12
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine
 endmsg
 x 15
 y 13
@@ -3506,8 +3488,7 @@ y 14
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon
+You hope nobody will discover will discover you, not too soon
 endmsg
 x 15
 y 15
@@ -3637,10 +3618,7 @@ y 26
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 15
 y 27
@@ -3718,9 +3696,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 13
 sp 35
@@ -3800,8 +3776,7 @@ y 18
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon
+You hope nobody will discover will discover you, not too soon.
 endmsg
 x 16
 y 19
@@ -3911,10 +3886,7 @@ y 25
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 16
 y 26
@@ -3925,10 +3897,7 @@ y 26
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 16
 y 27
@@ -4006,9 +3975,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 14
 sp 35
@@ -4072,8 +4039,7 @@ y 14
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon
+You hope nobody will discover will discover you, not too soon.
 endmsg
 x 17
 y 15
@@ -4274,9 +4240,7 @@ end
 arch invis_exit
 slaying Chaos_lair2
 msg
-You hear sounds of rushing air, like
-dragon breathing, together with
-continuous concussions.
+You hear sounds of rushing air, like dragon breathing, together with continuous concussions.
 endmsg
 hp 15
 sp 35
@@ -4327,8 +4291,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000
@@ -4378,8 +4341,7 @@ y 16
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon
+You hope nobody will discover will discover you, not too soon.
 endmsg
 x 18
 y 17
@@ -4501,10 +4463,7 @@ y 26
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 18
 y 27
@@ -4748,9 +4707,7 @@ end
 arch magic_ear
 msg
 @match Orcus|Balrog|Asmodeus|Jessy
-A parade of guards and guardians
-appeared to greet. You hope no one
-discovers you.
+A parade of guards and guardians appeared to greet. You hope no one discovers you.
 endmsg
 x 19
 y 23
@@ -4759,8 +4716,7 @@ end
 arch magic_ear
 msg
 @match kill
-A line of guards appeared behide you
-grinning evilly.
+A line of guards appeared behide you grinning evilly.
 endmsg
 x 19
 y 23
@@ -4782,8 +4738,7 @@ arch dragonman
 name dragonman guard
 msg
 @match open|enter|gate|door
-What's your name? What's your
-business?
+What's your name? What's your business?
 @match Orcus|Balrog|Asmodeus|Jessy
 Gatekeeper! OPEN!!.
 @match kill
@@ -4792,8 +4747,7 @@ Great! We all need some excercises!
 Aha, the more fresh flesh the better.
 Put the sacrifice away!!
 @match *
-You'd better leave before I throw
-you out or summon more guards
+You'd better leave before I throw you out or summon more guards
 endmsg
 Wis 30
 hp 5500
@@ -4822,10 +4776,7 @@ y 25
 end
 arch magic_mouth
 msg
-You hope nobody will discover will
-discover you, not too soon; because you
-hear the noise of lots of dragonmen and
-maybe other creatures.
+You hope nobody will discover will discover you, not too soon; because you hear the noise of lots of dragonmen and maybe other creatures.
 endmsg
 x 19
 y 26
@@ -5232,8 +5183,7 @@ y 18
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 21
 y 19
@@ -6193,8 +6143,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000
@@ -6291,8 +6240,7 @@ y 23
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 26
 y 24
@@ -6584,8 +6532,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000
@@ -7012,8 +6959,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000
@@ -7102,8 +7048,7 @@ y 20
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up
-your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 30
 y 21
@@ -7470,8 +7415,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000

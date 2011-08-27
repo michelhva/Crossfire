@@ -8,7 +8,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  1995-04-03
-Modified: 2008-10-20 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -216,8 +216,7 @@ end
 arch sign
 msg
 These are poisonous species.
-Be careful. Poison last more than a
-while sometimes.
+Be careful. Poison last more than a while sometimes.
 endmsg
 x 1
 y 6
@@ -270,11 +269,8 @@ end
 arch sign
 msg
 Fast moving gnomes are hard to hit.
-And they have the sneaky strategy of
-hit and run. Hard to deal with
-sometimes.
-Dark elves uses missile weapons and be
-hard also.
+And they have the sneaky strategy of hit and run. Hard to deal with sometimes.
+Dark elves uses missile weapons and be hard also.
 Good luck!
 endmsg
 x 1
@@ -482,16 +478,10 @@ connected 4
 end
 arch sign
 msg
-Room upwards contains fast-moving,
-poisonous species that's hard to deal
-with even to higher level players.
-Research the best way to deal with
-them.
+Room upwards contains fast-moving, poisonous species that's hard to deal with even to higher level players. Research the best way to deal with them.
 Good Luck!
 P.S.
-Use the middle mouse button to click on
-the handle in your look window to
-correctly turn the handle.
+Use the middle mouse button to click on the handle in your look window to correctly turn the handle.
 endmsg
 x 2
 y 12
@@ -1818,8 +1808,7 @@ y 23
 end
 arch sign
 msg
-Ogres, small trolls, dark elves and
-gnomes.
+Ogres, small trolls, dark elves and gnomes.
 Be careful!
 endmsg
 x 9
@@ -2127,8 +2116,7 @@ y 11
 end
 arch magic_mouth
 msg
-Drop 100 platinum coins to pay the
-training fee
+Drop 100 platinum coins to pay the training fee.
 endmsg
 x 11
 y 12
@@ -2147,7 +2135,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Drop fifteen foods to pay the training fee
+Drop fifteen foods to pay the training fee.
 endmsg
 x 11
 y 13
@@ -2499,8 +2487,7 @@ y 7
 end
 arch sign_w
 msg
-To go to klondor's wand shop, enter
-here
+To go to klondor's wand shop, enter here.
 endmsg
 x 13
 y 7
@@ -2690,8 +2677,7 @@ y 11
 end
 arch magic_mouth
 msg
-Drop 500 gold coins to pay the
-training fee
+Drop 500 gold coins to pay the training fee.
 endmsg
 x 14
 y 12
@@ -2710,8 +2696,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Drop twelve small diamonds to pay the
-training fee.
+Drop twelve small diamonds to pay the training fee.
 endmsg
 x 14
 y 13
@@ -2897,12 +2882,8 @@ y 8
 end
 arch sign
 msg
-This room you can enter from the
-opposite side and kill your opponents
-or run pass them to the near end to
-teleport out.
-Step on the teleporter, say 'in' to go
-in and 'open' to start the fight.
+This room you can enter from the opposite side and kill your opponents or run pass them to the near end to teleport out.
+Step on the teleporter, say 'in' to go in and 'open' to start the fight.
 endmsg
 x 15
 y 8
@@ -3181,8 +3162,7 @@ y 23
 end
 arch sign
 msg
-Giants are big and can't move around
-well. They are slow also.
+Giants are big and can't move around well. They are slow also.
 There are ways to kill them safely.
 endmsg
 x 16
@@ -4444,16 +4424,8 @@ end
 arch sign
 msg
 <<Surprise room>>
-A lot of dungeon place are like this,
-you don't know what's in there and you
-can't get back out once you get in.
-Also there are places where walls
-seemingly solid can be passed. There is
-a treasure room within and you need
-three keys to access the treasure.
-Say the word 'start' to reveal the
-surprise. Say the word, 'open' or 'out'
-to come back out.
+A lot of dungeon place are like this, you don't know what's in there and you can't get back out once you get in. Also there are places where walls seemingly solid can be passed. There is a treasure room within and you need three keys to access the treasure.
+Say the word 'start' to reveal the surprise. Say the word, 'open' or 'out' to come back out.
 Good Luck
 endmsg
 x 23

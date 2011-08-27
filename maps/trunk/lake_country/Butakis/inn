@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2008-12-23 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -553,8 +553,6 @@ end
 arch human
 name The axeman
 Con 5
-hp 50
-maxhp 50
 dam 13
 wc 5
 x 5
@@ -679,20 +677,13 @@ msg
 @match what|hear
 I have heard nothing interesting yet.
 @match why|who|you|money|bribe
-Oh, my boss bid me to do this job. I
-have to do it, since now I am in the
-guild.
+Oh, my boss bid me to do this job. I have to do it, since now I am in the guild.
 @match guild|boss
-It's the guild of ebony tiger, thieves'
-guild. My boss is one of the low
-guildmasters. He's in the room left. If
-you want to join the guild, talk to
-him.
+It's the guild of ebony tiger, thieves' guild. My boss is one of the low guildmasters. He's in the room left. If you want to join the guild, talk to him.
 @match they
 Those sitting near the main door.
 @match *
-Shh.. I am trying to hear what they
-are talking
+Shh.. I am trying to hear what they are talking.
 endmsg
 hp 10
 x 6
@@ -1512,7 +1503,7 @@ What?! *YOU* want to join the 'Guild'?
 Hahahaha, ok you can join *IF* you can find it.
 Hope you have better eyesight than that other chump - hahaha.
 @match *
-Get out of here! This is my room
+Get out of here! This is my room.
 endmsg
 Dex 25
 Con 10

@@ -8,7 +8,7 @@ enter_x 7
 enter_y 1
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2010-09-04 Nicolas Weeger
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch marble
@@ -493,10 +493,7 @@ connected 6
 end
 arch magic_mouth
 msg
-You enter a dark room hidden from the
-guards view. It must have been used by
-some kind of spy to steal in and out of
-the inner city
+You enter a dark room hidden from the guards view. It must have been used by some kind of spy to steal in and out of the inner city
 endmsg
 x 3
 y 15
@@ -940,9 +937,7 @@ y 6
 end
 arch magic_mouth
 msg
-"What's your business to the inner
-royal city?" the High Royal Guard
-asks
+"What's your business to the inner royal city?" the High Royal Guard asks.
 endmsg
 x 7
 y 7
@@ -955,8 +950,7 @@ arch magic_ear
 name ear1
 msg
 @match books|book|read|information
-"Okay, you may enter." the High Royal
-Guard says.
+"Okay, you may enter." the High Royal Guard says.
 endmsg
 x 7
 y 8
@@ -965,9 +959,7 @@ end
 arch magic_ear
 msg
 @match treasure|steal|kill|root
-"How dare you!!! Guards!! Terminate
-this brute right here!". the High Royal
-Guard yells.
+"How dare you!!! Guards!! Terminate this brute right here!". the High Royal Guard yells.
 endmsg
 x 7
 y 8
@@ -976,8 +968,7 @@ end
 arch magic_ear
 msg
 @match knowledge|prince|princess|queen|king
-"Okay, the gates will be opened for
-you." the High Royal Guard says.
+"Okay, the gates will be opened for you." the High Royal Guard says.
 endmsg
 x 7
 y 8
@@ -986,9 +977,7 @@ end
 arch magic_ear
 msg
 @match worsh|church|library|god|hearing
-"Okay, you are granted permission to
-enter the inner city." the High Royal
-Guard says.
+"Okay, you are granted permission to enter the inner city." the High Royal Guard says.
 endmsg
 x 7
 y 8
@@ -1004,8 +993,7 @@ msg
 @match worsh|church|library|god|hearing
 "Okay, you may enter."
 @match *
-"Citizens without proper reasons are not
-welcome to the inner royal city.".
+"Citizens without proper reasons are not welcome to the inner royal city.".
 endmsg
 face knight.111
 x 7
@@ -1126,9 +1114,7 @@ y 6
 end
 arch magic_mouth
 msg
-"What's your business to the inner
-royal city?" the High Royal Guard
-asks
+"What's your business to the inner royal city?" the High Royal Guard asks.
 endmsg
 x 8
 y 7
@@ -1141,8 +1127,7 @@ arch magic_ear
 name ear1
 msg
 @match books|book|read|information
-"Okay, you may enter." the High Royal
-Guard says.
+"Okay, you may enter." the High Royal Guard says.
 endmsg
 x 8
 y 8
@@ -1151,9 +1136,7 @@ end
 arch magic_ear
 msg
 @match treasure|steal|kill|root
-"How dare you!!! Guards!! Terminate
-this brute right here!". the High Royal
-Guard yells.
+"How dare you!!! Guards!! Terminate this brute right here!". the High Royal Guard yells.
 endmsg
 x 8
 y 8
@@ -1162,8 +1145,7 @@ end
 arch magic_ear
 msg
 @match knowledge|prince|princess|queen|king
-"Okay, the gates will be opened for
-you." the High Royal Guard says.
+"Okay, the gates will be opened for you." the High Royal Guard says.
 endmsg
 x 8
 y 8
@@ -1172,9 +1154,7 @@ end
 arch magic_ear
 msg
 @match worsh|church|library|god|hearing
-"Okay, you are granted permission to
-enter the inner city." the High Royal
-Guard says.
+"Okay, you are granted permission to enter the inner city." the High Royal Guard says.
 endmsg
 x 8
 y 8
@@ -1190,8 +1170,7 @@ msg
 @match worsh|church|library|god|hearing
 "Okay, you may enter."
 @match *
-"Citizens without proper reasons are not
-welcome to the inner royal city.".
+"Citizens without proper reasons are not welcome to the inner royal city.".
 endmsg
 face knight.111
 x 8
