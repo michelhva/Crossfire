@@ -1031,13 +1031,6 @@ arch large_stones
 x 4
 y 30
 end
-arch pit_closed
-hp 4
-sp 17
-x 4
-y 30
-connected 1
-end
 arch cave_15
 x 4
 y 31
@@ -1075,13 +1068,6 @@ end
 arch large_stones
 x 4
 y 33
-end
-arch pit_closed
-hp 17
-sp 14
-x 4
-y 33
-connected 1
 end
 arch cave_15
 x 4
@@ -1691,13 +1677,6 @@ arch large_stones
 x 7
 y 30
 end
-arch pit_closed
-hp 7
-sp 14
-x 7
-y 30
-connected 1
-end
 arch cave_15
 x 7
 y 31
@@ -1735,13 +1714,6 @@ end
 arch large_stones
 x 7
 y 33
-end
-arch pit_closed
-hp 15
-sp 17
-x 7
-y 33
-connected 1
 end
 arch cave_15
 x 7
@@ -6090,27 +6062,6 @@ end
 arch cave_15
 x 26
 end
-arch pit_closed
-hp 23
-sp 11
-x 26
-y 1
-connected 11
-end
-arch pit_closed
-hp 23
-sp 12
-x 26
-y 2
-connected 11
-end
-arch pit_closed
-hp 23
-sp 13
-x 26
-y 3
-connected 11
-end
 arch cave_15
 x 26
 y 4
@@ -6158,13 +6109,6 @@ end
 arch large_stones
 x 26
 y 6
-end
-arch pit_closed
-hp 18
-sp 10
-x 26
-y 6
-connected 1
 end
 arch cave_15
 x 26
@@ -6301,15 +6245,8 @@ arch cave_15
 x 27
 end
 arch pit_closed
-hp 24
+hp 23
 sp 11
-x 27
-y 1
-connected 11
-end
-arch pit_closed
-hp 24
-sp 12
 x 27
 y 2
 connected 11
@@ -6324,13 +6261,6 @@ speed_left -3.030000
 resist_physical 30
 resist_fire 90
 resist_weaponmagic 30
-end
-arch pit_closed
-hp 24
-sp 13
-x 27
-y 3
-connected 11
 end
 arch cave_15
 x 27
@@ -6479,27 +6409,6 @@ end
 arch cave_15
 x 28
 end
-arch pit_closed
-hp 25
-sp 11
-x 28
-y 1
-connected 11
-end
-arch pit_closed
-hp 25
-sp 12
-x 28
-y 2
-connected 11
-end
-arch pit_closed
-hp 25
-sp 13
-x 28
-y 3
-connected 11
-end
 arch cave_15
 x 28
 y 4
@@ -6547,13 +6456,6 @@ end
 arch large_stones
 x 28
 y 6
-end
-arch pit_closed
-hp 20
-sp 12
-x 28
-y 6
-connected 1
 end
 arch cave_15
 x 28
@@ -6856,13 +6758,6 @@ arch large_stones
 x 29
 y 31
 end
-arch pit_closed
-hp 14
-sp 13
-x 29
-y 31
-connected 1
-end
 arch cave_15
 x 29
 y 32
@@ -6900,13 +6795,6 @@ end
 arch large_stones
 x 29
 y 34
-end
-arch pit_closed
-hp 12
-sp 19
-x 29
-y 34
-connected 1
 end
 arch cave_15
 x 29
@@ -6974,13 +6862,6 @@ end
 arch large_stones
 x 30
 y 6
-end
-arch pit_closed
-hp 24
-sp 16
-x 30
-y 6
-connected 1
 end
 arch cave_15
 x 30
@@ -7134,20 +7015,6 @@ x 31
 y 1
 resist_physical 30
 resist_weaponmagic 30
-end
-arch pit_closed
-hp 14
-sp 9
-x 31
-y 2
-connected 11
-end
-arch pit_closed
-hp 14
-sp 10
-x 31
-y 3
-connected 11
 end
 arch cave_15
 x 31
@@ -7303,13 +7170,6 @@ arch large_stones
 x 31
 y 31
 end
-arch pit_closed
-hp 22
-sp 19
-x 31
-y 31
-connected 1
-end
 arch cave_15
 x 31
 y 32
@@ -7348,40 +7208,12 @@ arch large_stones
 x 31
 y 34
 end
-arch pit_closed
-hp 26
-sp 23
-x 31
-y 34
-connected 1
-end
 arch cave_15
 x 31
 y 35
 end
 arch cave_15
 x 32
-end
-arch pit_closed
-hp 15
-sp 8
-x 32
-y 1
-connected 11
-end
-arch pit_closed
-hp 15
-sp 9
-x 32
-y 2
-connected 11
-end
-arch pit_closed
-hp 15
-sp 10
-x 32
-y 3
-connected 11
 end
 arch cave_15
 x 32
@@ -7430,13 +7262,6 @@ end
 arch large_stones
 x 32
 y 6
-end
-arch pit_closed
-hp 28
-sp 13
-x 32
-y 6
-connected 1
 end
 arch cave_15
 x 32
@@ -7584,27 +7409,6 @@ y 35
 end
 arch cave_15
 x 33
-end
-arch pit_closed
-hp 16
-sp 8
-x 33
-y 1
-connected 11
-end
-arch pit_closed
-hp 16
-sp 9
-x 33
-y 2
-connected 11
-end
-arch pit_closed
-hp 16
-sp 10
-x 33
-y 3
-connected 11
 end
 arch cave_15
 x 33
@@ -7796,13 +7600,6 @@ arch large_stones
 x 33
 y 31
 end
-arch pit_closed
-hp 27
-sp 17
-x 33
-y 31
-connected 1
-end
 arch cave_15
 x 33
 y 32
@@ -7840,13 +7637,6 @@ end
 arch large_stones
 x 33
 y 34
-end
-arch pit_closed
-hp 7
-sp 14
-x 33
-y 34
-connected 1
 end
 arch cave_15
 x 33
