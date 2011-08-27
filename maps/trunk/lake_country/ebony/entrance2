@@ -2162,10 +2162,6 @@ y 11
 speed 0.500000
 connected 1
 end
-arch cobblestones2
-x 13
-y 12
-end
 arch magic_ear
 msg
 @match ebonytiger|ebony
@@ -2174,6 +2170,10 @@ endmsg
 x 13
 y 12
 connected 1
+end
+arch cobblestones2
+x 13
+y 12
 end
 arch dun12
 name A huge black tiger carved in the stone wall
