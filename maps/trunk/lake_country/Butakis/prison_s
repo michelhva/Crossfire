@@ -8,7 +8,7 @@ height 20
 enter_x 1
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2008-12-01 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch marble
@@ -173,8 +173,7 @@ y 8
 end
 arch sign
 msg
-As partial cost, drop diamond 100 to use
-the Chamber of Portals.
+As partial cost, drop diamond 100 to use the Chamber of Portals.
 endmsg
 x 1
 y 8
@@ -840,8 +839,7 @@ end
 arch magic_mouth
 msg
 Tasury asks you:
-What are you here for in the Chamber of
-Portals?!?
+What are you here for in the Chamber of Portals?!?
 endmsg
 x 5
 y 16
@@ -853,8 +851,7 @@ end
 arch magic_mouth
 msg
 Tasury asks you:
-What are you here for in the Chamber of
-Portals?!?
+What are you here for in the Chamber of Portals?!?
 endmsg
 x 5
 y 17
@@ -1028,24 +1025,13 @@ arch smith
 name High Court Wizard, Tasury
 msg
 @match thunderbolt
-You have the right word. Please go to
-the front and enter. Since you have
-this special code word for regular
-access to the portal chamber; I will
-tell you the code to open the front
-gate. It's "hailstorm". Speak it to
-the wall opposite to the gate of the
-chamber.
+You have the right word. Please go to the front and enter. Since you have this special code word for regular access to the portal chamber; I will tell you the code to open the front gate. It's "hailstorm". Speak it to the wall opposite to the gate of the chamber.
 @match yes
-Tell me the password that the Lord give
-you.
+Tell me the password that the Lord give you.
 @match use|travel|teleport|portal
-Do you have Lord Butakis' permission
-to use the portals?
+Do you have Lord Butakis' permission to use the portals?
 @match *
-If you don't have the permission here,
-please leave; because I will not open
-the gate for you.
+If you don't have the permission here, please leave; because I will not open the gate for you.
 endmsg
 face wizard.151
 x 6

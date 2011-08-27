@@ -8,7 +8,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  1995-06-20 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-10-20 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch permanent_lava
@@ -1627,8 +1627,7 @@ end
 arch angel
 msg
 @match *
-No matter what you say, I will not
-give you the key.. No no! Now leave me
+No matter what you say, I will not give you the key.. No no! Now leave me.
 endmsg
 hp 800
 x 9
@@ -2069,8 +2068,7 @@ y 11
 end
 arch magic_mouth
 msg
-Drop 500 platinum coins to pay the
-training fee.
+Drop 500 platinum coins to pay the training fee.
 endmsg
 x 11
 y 12
@@ -2089,7 +2087,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Drop sixty diamonds to pay the training fee
+Drop sixty diamonds to pay the training fee.
 endmsg
 x 11
 y 13
@@ -2238,8 +2236,7 @@ y 11
 end
 arch sign
 msg
-You will die without means to protect
-from fire!! Be warned!
+You will die without means to protect from fire!! Be warned!
 
 endmsg
 x 12

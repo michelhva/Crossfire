@@ -9,7 +9,7 @@ enter_x 7
 enter_y 35
 msg
 Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch large_stones
@@ -331,8 +331,7 @@ arch locked_door1
 name permanent ice
 slaying celestial
 msg
-You can't seem to be able to force
-yourself through this permanent ice.
+You can't seem to be able to force yourself through this permanent ice.
 endmsg
 face icecube.111
 x 1
@@ -602,8 +601,7 @@ arch bracers_dex
 name Essence of Flame
 name_pl Essences of Flame
 msg
-It's said to be from the spirit of an
-efreet. It burns with red hot fury.
+It's said to be from the spirit of an efreet. It burns with red hot fury.
 endmsg
 face burnout.111
 Cha 1
@@ -1856,10 +1854,7 @@ y 35
 end
 arch magic_mouth
 msg
-You feel the vibrating and burning
-air. Though you have experience thousands
-of battles, this feeling makes you
-suffocate in your own adrenaline.
+You feel the vibrating and burning air. Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 5
 y 35
@@ -2411,10 +2406,7 @@ y 35
 end
 arch magic_mouth
 msg
-You feel the vibrating and burning
-air. Though you have experience thousands
-of battles, this feeling makes you
-suffocate in your own adrenaline.
+You feel the vibrating and burning air. Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 7
 y 35
@@ -2956,10 +2948,7 @@ y 35
 end
 arch magic_mouth
 msg
-You feel the vibrating and burning
-air. Though you have experience thousands
-of battles, this feeling makes you
-suffocate in your own adrenaline.
+You feel the vibrating and burning air. Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 9
 y 35
@@ -4046,10 +4035,7 @@ end
 arch sign
 msg
 Place where the pillars get teleported.
-The pillars that are teleported need to
-be on top. I put them at the bottom of
-the file to be safe. Same with walls in
-Chaos_lair4.
+The pillars that are teleported need to be on top. I put them at the bottom of the file to be safe. Same with walls in Chaos_lair4.
 endmsg
 x 14
 y 14

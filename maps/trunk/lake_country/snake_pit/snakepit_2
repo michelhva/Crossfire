@@ -9,7 +9,7 @@ enter_x 32
 enter_y 27
 msg
 Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch large_stones
@@ -207,8 +207,7 @@ end
 arch magic_mouth
 msg
 Wind is blowing into your face.
-This cave seems to lead outside of
-the mountain.
+This cave seems to lead outside of the mountain.
 endmsg
 x 1
 y 4
@@ -381,9 +380,7 @@ x 2
 end
 arch magic_mouth
 msg
-You can't see the bottom of this
-hole. It's dark and quiet. You may not
-be able to return if you enter
+You can't see the bottom of this hole. It's dark and quiet. You may not be able to return if you enter.
 endmsg
 x 2
 y 1
@@ -1939,8 +1936,7 @@ arch key2
 name jade green figurine of a small snake
 slaying jade_snake
 msg
-It flashes a rhythm attuned to some
-unknown device
+It flashes a rhythm attuned to some unknown device.
 endmsg
 face snake.111
 value 6000
@@ -1958,17 +1954,9 @@ end
 arch scroll
 msg
 My dear Kasnuk,
-As our deal goes, please keep
-treasure safe and I will do the same
-with yours.
+As our deal goes, please keep treasure safe and I will do the same with yours.
                     Dusanki
-P.S. I would like to know which lord
-from underworld is staying guest of our
-Chaos Lord now? I want to discuss some
-matters with Chaos Lord. But he would
-not see anyone like me. So I plan to pose
-as his visiting guest to enter his
-chamber.
+P.S. I would like to know which lord from underworld is staying guest of our Chaos Lord now? I want to discuss some matters with Chaos Lord. But he would not see anyone like me. So I plan to pose as his visiting guest to enter his chamber.
 endmsg
 end
 end
@@ -3779,8 +3767,7 @@ connected 11
 end
 arch magic_mouth
 msg
-A low husky voice ask from behide the
-rock, "Who goes there?
+A low husky voice ask from behide the rock, "Who goes there?
 endmsg
 x 17
 y 9
@@ -6699,10 +6686,8 @@ y 16
 end
 arch magic_mouth
 msg
-Around the altar, you see scraps and
-ashes of burnt-out human corpses.
-The purple flame enveloping the blood-
-stained altar flares as you step close.
+Around the altar, you see scraps and ashes of burnt-out human corpses.
+The purple flame enveloping the blood-stained altar flares as you step close.
 You feel its unearthly hunger
 endmsg
 x 30
@@ -7548,15 +7533,8 @@ y 15
 end
 arch magic_mouth
 msg
-Echoing howling can be heard from
-below. More terrifying than anyone
-could imagine. An ominous chill creeps
-up your spine.
-Maybe it's better to leave before
-meeting your doom. Greed for something
-that you are not even sure of being
-there? Better leave now before it's too
-late
+Echoing howling can be heard from below. More terrifying than anyone could imagine. An ominous chill creeps up your spine.
+Maybe it's better to leave before meeting your doom. Greed for something that you are not even sure of being there? Better leave now before it's too late
 endmsg
 x 34
 y 16
@@ -7575,8 +7553,7 @@ end
 arch magic_mouth
 msg
 An chilly voice speaks,
-"Congratulations!! for find your way
-to doom."
+"Congratulations!! for find your way to doom."
 endmsg
 x 34
 y 17

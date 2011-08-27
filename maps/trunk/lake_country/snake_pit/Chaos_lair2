@@ -10,7 +10,7 @@ enter_x 12
 enter_y 35
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch pentagram_111
@@ -1225,8 +1225,7 @@ end
 arch magic_mouth
 name 2
 msg
-You broke the silence and summoned the
-guardians!
+You broke the silence and summoned the guardians!
 endmsg
 food 1
 x 5
@@ -2318,8 +2317,7 @@ y 4
 end
 arch magic_mouth
 msg
-Blasts of hot air coming from inner
-cavern. Hotter than any fire
+Blasts of hot air coming from inner cavern. Hotter than any fire.
 endmsg
 x 10
 y 5
@@ -2577,8 +2575,7 @@ y 4
 end
 arch magic_mouth
 msg
-Blasts of hot air coming from inner
-cavern. Hotter than any fire
+Blasts of hot air coming from inner cavern. Hotter than any fire.
 endmsg
 x 11
 y 5
@@ -3062,9 +3059,7 @@ connected 1
 end
 arch magic_mouth
 msg
-You feel you need to do something to
-open the gate, a password or to identify
-yourself
+You feel you need to do something to open the gate, a password or to identify yourself.
 endmsg
 x 12
 y 31
@@ -3372,9 +3367,7 @@ connected 1
 end
 arch magic_mouth
 msg
-You feel you need to do something to
-open the gate - Some identification
-might be required here.
+You feel you need to do something to open the gate - Some identification might be required here.
 endmsg
 x 13
 y 31
@@ -3669,9 +3662,7 @@ connected 1
 end
 arch magic_mouth
 msg
-You feel you need to do something to
-open the gate, a password or to identify
-yourself
+You feel you need to do something to open the gate, a password or to identify yourself.
 endmsg
 x 14
 y 31
@@ -3789,8 +3780,7 @@ y 5
 end
 arch magic_mouth
 msg
-Blasts of hot air coming from inner
-cavern. Hotter than any fire
+Blasts of hot air coming from inner cavern. Hotter than any fire.
 endmsg
 x 15
 y 6
@@ -4057,8 +4047,7 @@ y 5
 end
 arch magic_mouth
 msg
-Blasts of hot air coming from inner
-cavern. Hotter than any fire
+Blasts of hot air coming from inner cavern. Hotter than any fire.
 endmsg
 x 16
 y 6
@@ -5000,8 +4989,7 @@ end
 arch magic_ear
 msg
 @match *
-You broke the silence and summoned the
-guardians.
+You broke the silence and summoned the guardians.
 endmsg
 x 19
 y 32

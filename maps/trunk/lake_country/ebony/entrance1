@@ -8,7 +8,7 @@ enter_x 13
 enter_y 14
 msg
 Created:  1995-04-22
-Modified: 2008-10-21 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch marble
@@ -2211,21 +2211,17 @@ name low guildguard
 msg
 @match test
 You will find out ... hee ..
-Well I can give you few lucky numbers
-if you want.
+Well I can give you few lucky numbers if you want.
 @match lucky|number
-I will tell you the first three. You
-have to find out the rest yourself.
-Now listen:
-10, 5 and 2.
+I will tell you the first three. You have to find out the rest yourself.
+Now listen: 10, 5 and 2.
 Now do you intend to take the test?
 @match yes
 So be it!
 @match *
 Hello, we don't welcome strangers.
 Now be warned and go back.
-If you intend to go in. You must have
-pass the test.
+If you intend to go in. You must have pass the test.
 endmsg
 hp 500
 x 14
@@ -2390,8 +2386,7 @@ end
 arch locked_door1
 slaying Thievery
 msg
-You need the symbol of the guild to use
-this guild facility.
+You need the symbol of the guild to use this guild facility.
 endmsg
 x 14
 y 13

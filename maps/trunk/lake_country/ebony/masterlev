@@ -9,7 +9,7 @@ width 25
 height 25
 msg
 Created:  1995-04-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2008-12-23 Rick Tanner
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -1333,10 +1333,7 @@ name potion of dragon firebreath
 name_pl potions of dragon firebreath
 msg
 =>>
-After quaffing the liquid distilled
-from element of fire, you will
-uncontrollably breathe forth like a
-fire dragon.
+After quaffing the liquid distilled from element of fire, you will uncontrollably breathe forth like a fire dragon.
 endmsg
 face potiongen.111
 x 7
@@ -1360,9 +1357,7 @@ name potion of courage
 name_pl potions of courage
 msg
 =>>
-It hypnotizes you, gives you courage
-and makes you fearless for a short
-period.
+It hypnotizes you, gives you courage and makes you fearless for a short period.
 endmsg
 face potiongen.111
 x 7
@@ -1490,10 +1485,7 @@ name potion of dragon icebreath
 name_pl potions of dragon icebreath
 msg
 =>>
-After quaffing the liquid distilled
-from the element of ice, you will
-uncontrollably breathe forth like a ice
-dragon.
+After quaffing the liquid distilled from the element of ice, you will uncontrollably breathe forth like a ice dragon.
 endmsg
 face potiongen.111
 x 8
@@ -1517,9 +1509,7 @@ name potion of clear mind
 name_pl potions of clear mind
 msg
 =>>
-It clears your thought and make you
-impossible to be confused for a short
-period.
+It clears your thought and make you impossible to be confused for a short period.
 endmsg
 face potiongen.111
 x 8
@@ -1647,9 +1637,7 @@ name potion of awesome morningbreath
 name_pl potions of awesome morningbreath
 msg
 =>>
-This stinking liquid grant you the
-power to poison the air all around you
-with your bad breath.
+This stinking liquid grant you the power to poison the air all around you with your bad breath.
 endmsg
 face potiongen.111
 x 9
@@ -1673,8 +1661,7 @@ name potion of static protection
 name_pl potions of static protection
 msg
 =>>
-It temporarily enchances your body
-to protects your from electric attacks.
+It temporarily enchances your body to protects your from electric attacks.
 endmsg
 face potiongen.111
 x 9
@@ -1802,10 +1789,7 @@ name potion of haste self
 name_pl potions of haste self
 msg
 =>>
-Distilled from body fluid of quicklings,
-this concoction greatly improve your
-senses and let you move and react
-faster...
+Distilled from body fluid of quicklings, this concoction greatly improve your senses and let you move and react faster...
 endmsg
 face potiongen.111
 x 10
@@ -1971,25 +1955,13 @@ arch thief
 name thief guildmaster
 msg
 @match door|exit
-Do you deserve to be a guild member
-if you can't even find the door by
-yourself!!??
+Do you deserve to be a guild member if you can't even find the door by yourself!!??
 @match *
-Hello stranger! So you want to be a
-member of the guild!? Well, since you
-passed the test, I will let you in the
-guild. There are many things that the
-guild provide you.
-Make your contributions on time,
-remember! And be a good fellow.
-Okay you may go now.
-You have to search the rooms for the
-master keys of thievery, which you may
-have and use as symbol of this guild.
+Hello stranger! So you want to be a member of the guild!? Well, since you passed the test, I will let you in the guild. There are many things that the guild provide you.
+Make your contributions on time, remember! And be a good fellow.
+Okay you may go now. You have to search the rooms for the master keys of thievery, which you may have and use as symbol of this guild.
 @match symbol|thivery
-You may use the master key for many
-uses. Keep them safe and you will find
-it useful
+You may use the master key for many uses. Keep them safe and you will find it useful
 endmsg
 face guildmaste.111
 hp 3000
@@ -2291,8 +2263,7 @@ arch dun11
 name A quiet thief standing here still
 msg
 @match *
-If you have the permission of the
-guildmaster, you may enter through me
+If you have the permission of the guildmaster, you may enter through me
 endmsg
 face thief.171
 x 12
@@ -2627,10 +2598,8 @@ arch smith
 name blackmarket master
 msg
 @match *
-You have to find out where to get the
-goodies for trading.
-I have no other helpful information to
-give you.
+You have to find out where to get the goodies for trading.
+I have no other helpful information to give you.
 endmsg
 x 14
 y 22
@@ -2899,8 +2868,7 @@ arch locked_door1
 name repelling force field
 slaying Heart_Joey
 msg
-I will trade the Essence of Flame
-for Heart of Joey.
+I will trade the Essence of Flame for Heart of Joey.
 endmsg
 face enchantment.111
 x 16
@@ -2910,8 +2878,7 @@ arch bracers_dex
 name Essence of Flame
 name_pl Essences of Flame
 msg
-It's said to be from the spirit of an
-efreet. It burns with red hot fury.
+It's said to be from the spirit of an efreet. It burns with red hot fury.
 endmsg
 face burnout.111
 Cha 1
@@ -3062,8 +3029,7 @@ arch locked_door1
 name repelling force field
 slaying fig_xan
 msg
-I will trade it for the figurine of
-xan
+I will trade it for the figurine of xan.
 endmsg
 face enchantment.111
 x 17
@@ -3210,8 +3176,7 @@ arch locked_door1
 name repelling force field
 slaying 301
 msg
-I will trade for the dust of the Fierce
-Spectre.
+I will trade for the dust of the Fierce Spectre.
 endmsg
 face enchantment.111
 x 18
@@ -3285,19 +3250,13 @@ arch viking
 name viking guildguard
 msg
 @match Door|secret|door
-The door is between two of us. Go
-straight.
+The door is between two of us. Go straight.
 @match key
-Oh yeah. You need to have the Master
-key of thievery to enter next room.
-The keys are hidden under the table.
+Oh yeah. You need to have the Master key of thievery to enter next room. The keys are hidden under the table.
 @match thievery
-THe master key of thievery is a symbol
-of the guild, besides being a key. It
-has many uses and open many doors that
-open guildmembers are allowed.
+THe master key of thievery is a symbol of the guild, besides being a key. It has many uses and open many doors that open guildmembers are allowed.
 @match *
-Hello fellow guild members
+Hello fellow guild members.
 endmsg
 hp 500
 dam 40
@@ -3383,8 +3342,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to
-trade for the object here!
+You need to have some special thing to trade for the object here!
 endmsg
 face enchantment.111
 x 19
@@ -3518,9 +3476,7 @@ arch locked_door1
 name repelling force field
 slaying gbug
 msg
-You need a figurine of jade snake and
-a golden bug, at the same time, to trade
-for this item.
+You need a figurine of jade snake and a golden bug, at the same time, to trade for this item.
 endmsg
 face enchantment.111
 x 20
@@ -3530,9 +3486,7 @@ arch locked_door1
 name repelling force field
 slaying jade_snake
 msg
-You need a figurine of jade snake and
-a golden bug, at the same time, to trade
-for this item.
+You need a figurine of jade snake and a golden bug, at the same time, to trade for this item.
 endmsg
 face enchantment.111
 x 20
@@ -3542,9 +3496,7 @@ arch mithril_chainmail
 name mithril chainmail of Winter
 name_pl mithril chainmails of Winter
 msg
-This special chainmail is covered
-with patterns of snow flake. It was
-created by ancient high elves.
+This special chainmail is covered with patterns of snow flake. It was created by ancient high elves.
 endmsg
 Cha 3
 x 20
@@ -3687,8 +3639,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to
-trade for the object here!
+You need to have some special thing to trade for the object here!
 endmsg
 face enchantment.111
 x 21
@@ -3827,14 +3778,7 @@ y 19
 end
 arch sign_e
 msg
-You need a fragment of chaos to trade
-for it. The Gauntlets are an ingenious
-artifact that were made from the lost
-knowledge of the element of electricity.
-It tunes the wearer in every espect to
-the element. However it has some
-undesirable effects, as the most
-powerful artifacts usually do.
+You need a fragment of chaos to trade for it. The Gauntlets are an ingenious artifact that were made from the lost knowledge of the element of electricity. It tunes the wearer in every espect to the element. However it has some undesirable effects, as the most powerful artifacts usually do.
 endmsg
 x 22
 y 19
@@ -3855,11 +3799,7 @@ y 20
 end
 arch sign_e
 msg
-You need 30,000 diamonds to trade for
-this item. Think of a way to transport
-the diamonds here. The ring turns the
-wearer into a super-hero with incredible
-fighting power.
+You need 30,000 diamonds to trade for this item. Think of a way to transport the diamonds here. The ring turns the wearer into a super-hero with incredible fighting power.
 endmsg
 x 22
 y 20
@@ -3881,11 +3821,7 @@ y 21
 end
 arch sign_e
 msg
-You need a Thunderfist to trade for
-this item. These pair of bracers have
-the power to turn the wearer semi-
-ethereal and protect it from physical
-attacks. However it weakens the wearer
+You need a Thunderfist to trade for this item. These pair of bracers have the power to turn the wearer semi-ethereal and protect it from physical attacks. However it weakens the wearer
 both mentally and physically.
 endmsg
 x 22
@@ -3903,8 +3839,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to
-trade for the object here!
+You need to have some special thing to trade for the object here!
 endmsg
 face enchantment.111
 x 22
@@ -4093,8 +4028,7 @@ arch ring_nodrain
 name Ring of Power
 name_pl Rings of Power
 msg
-This is the legendary Ring of Power,
-the hero ring
+This is the legendary Ring of Power, the hero ring
 endmsg
 Str 2
 Dex 2
@@ -4145,8 +4079,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to
-trade for the object here!
+You need to have some special thing to trade for the object here!
 endmsg
 face enchantment.111
 x 23
