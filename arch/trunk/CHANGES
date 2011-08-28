@@ -5,6 +5,22 @@ Refactor and pixel color clean up for l_shop1 graphic.
 construct/town/l_shop1.base.x11.png
 RJT 2011-08-27
 
+Added face and arch for falling rain and falling snow.
+arch/trunk/ground/Weather/rain2.arc
+arch/trunk/ground/Weather/rain5.arc
+arch/trunk/ground/Weather/rain.arc
+arch/trunk/ground/Weather/rain.base.111.png
+arch/trunk/ground/Weather/rain.base.112.png
+arch/trunk/ground/Weather/rain.base.113.png
+arch/trunk/ground/Weather/rain.base.114.png
+arch/trunk/ground/Weather/rain.face
+arch/trunk/ground/Weather/snow.arc
+arch/trunk/ground/Weather/snow_c.base.111.png
+arch/trunk/ground/Weather/snow_c.base.112.png
+arch/trunk/ground/Weather/snow_c.base.113.png
+arch/trunk/ground/Weather/snow_c.base.114.png
+Alestan 2011-08-25
+
 Added another column of pixels to the vertical hedge wall for better alignment
 with adjacent hedge graphics.  Cosmetic change only.
 wall/hedge/hedge_5.base.111.png
