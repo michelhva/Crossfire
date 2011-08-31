@@ -3,326 +3,347 @@ name Abandoned Temple, Entrance
 reset_timeout 7200
 difficulty 3
 region scorn
-width 16
-height 16
+width 20
+height 20
 enter_x 8
 enter_y 1
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-20 Rick Tanner
+Modified: 2011-08-31 Rick Tanner
 endmsg
 outdoor 1
 end
+arch cobblestones2
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch grass_only
+y 8
+end
+arch grass_only
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch grass_only
+y 12
+end
+arch grass_only
+y 13
+end
+arch grass_only
+y 14
+end
+arch grass_only
+y 15
+end
+arch grass_only
+y 16
+end
+arch grass_only
+y 17
+end
+arch grass_only
+y 18
+end
+arch grass_only
+y 19
+end
+arch cobblestones2
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
+arch grass_only
+x 1
+y 14
+end
+arch grass_only
+x 1
+y 15
+end
+arch grass_only
+x 1
+y 16
+end
+arch grass_only
+x 1
+y 17
+end
+arch grass_only
+x 1
+y 18
+end
+arch grass_only
+x 1
+y 19
+end
+arch cobblestones2
+x 2
+end
+arch dungeon_magic
+x 2
+y 1
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 2
+y 1
+end
+arch grass_only
+x 2
+y 1
+end
 arch dungeon_floor
+x 2
+y 2
 end
 arch wwall_2_2_2
+x 2
+y 2
 end
 arch cwall_0
-end
-arch dungeon_floor
-y 1
-end
-arch wwall_2_1_1
-y 1
-end
-arch dungeon_floor
-y 2
-end
-arch wwall_2_1_1
+x 2
 y 2
 end
 arch dungeon_floor
+x 2
 y 3
 end
 arch wwall_2_1_1
+x 2
 y 3
 end
 arch dungeon_floor
+x 2
 y 4
 end
 arch wwall_2_1_1
+x 2
 y 4
 end
 arch dungeon_floor
+x 2
 y 5
 end
 arch wwall_2_1_1
+x 2
 y 5
 end
 arch dungeon_floor
+x 2
 y 6
 end
 arch wwall_2_1_1
+x 2
 y 6
 end
 arch dungeon_floor
+x 2
 y 7
 end
 arch wwall_2_1_1
+x 2
 y 7
 end
 arch dungeon_floor
+x 2
 y 8
 end
 arch wwall_2_1_1
+x 2
 y 8
 end
 arch dungeon_floor
+x 2
 y 9
 end
 arch wwall_2_1_1
+x 2
 y 9
 end
 arch dungeon_floor
+x 2
 y 10
 end
 arch wwall_2_1_1
+x 2
 y 10
 end
 arch dungeon_floor
+x 2
 y 11
 end
 arch wwall_2_1_1
+x 2
 y 11
 end
 arch dungeon_floor
+x 2
 y 12
 end
 arch wwall_2_1_1
+x 2
 y 12
 end
 arch dungeon_floor
+x 2
 y 13
 end
 arch wwall_2_1_1
+x 2
 y 13
 end
 arch dungeon_floor
+x 2
 y 14
 end
 arch wwall_2_1_1
+x 2
 y 14
 end
 arch dungeon_floor
+x 2
 y 15
+end
+arch wwall_2_1_1
+x 2
+y 15
+end
+arch dungeon_floor
+x 2
+y 16
+end
+arch wwall_2_1_1
+x 2
+y 16
+end
+arch dungeon_floor
+x 2
+y 17
 end
 arch wwall_2_2_1
-y 15
+x 2
+y 17
 end
 arch cwall_0
-y 15
+x 2
+y 17
 end
-arch dungeon_floor
-x 1
+arch grass_only
+x 2
+y 18
 end
-arch wwall_weak_2
-x 1
+arch grass_only
+x 2
+y 19
 end
-arch dungeon_floor
-x 1
+arch cobblestones2
+x 3
+end
+arch dungeon_magic
+x 3
 y 1
 end
-arch spider_web
-x 1
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 3
 y 1
 end
-arch dungeon_floor
-x 1
-y 2
-end
-arch spider_web
-x 1
-y 2
-end
-arch dungeon_floor
-x 1
-y 3
-end
-arch kobold
-x 1
-y 3
-end
-arch dungeon_floor
-x 1
-y 4
-end
-arch dungeon_floor
-x 1
-y 5
-end
-arch dungeon_floor
-x 1
-y 6
-end
-arch dungeon_floor
-x 1
-y 7
-end
-arch dungeon_floor
-x 1
-y 8
-end
-arch dungeon_floor
-x 1
-y 9
-end
-arch kobold
-x 1
-y 9
-end
-arch dungeon_floor
-x 1
-y 10
-end
-arch dungeon_floor
-x 1
-y 11
-end
-arch dungeon_floor
-x 1
-y 12
-end
-arch kobold
-x 1
-y 12
-end
-arch dungeon_floor
-x 1
-y 13
-end
-arch spider_web
-x 1
-y 13
-end
-arch dungeon_floor
-x 1
-y 14
-end
-arch spider_web
-x 1
-y 14
-end
-arch dungeon_floor
-x 1
-y 15
-end
-arch wwall_2_1_2
-x 1
-y 15
-end
-arch dungeon_floor
-x 2
-end
-arch wwall_2_1_2
-x 2
-end
-arch dungeon_floor
-x 2
+arch grass_only
+x 3
 y 1
-end
-arch spider_web
-x 2
-y 1
-end
-arch dungeon_floor
-x 2
-y 2
-end
-arch chair_1.1
-x 2
-y 2
-end
-arch dungeon_floor
-x 2
-y 3
-end
-arch dungeon_floor
-x 2
-y 4
-end
-arch dungeon_floor
-x 2
-y 5
-end
-arch chair_1.1
-x 2
-y 5
-end
-arch dungeon_floor
-x 2
-y 6
-end
-arch kobold
-x 2
-y 6
-end
-arch dungeon_floor
-x 2
-y 7
-end
-arch dungeon_floor
-x 2
-y 8
-end
-arch chair_1.1
-x 2
-y 8
-end
-arch dungeon_floor
-x 2
-y 9
-end
-arch dungeon_floor
-x 2
-y 10
-end
-arch dungeon_floor
-x 2
-y 11
-end
-arch dungeon_floor
-x 2
-y 12
-end
-arch dungeon_floor
-x 2
-y 13
-end
-arch dungeon_floor
-x 2
-y 14
-end
-arch spider_web
-x 2
-y 14
-end
-arch dungeon_floor
-x 2
-y 15
-end
-arch wwall_weak_2
-x 2
-y 15
 end
 arch dungeon_floor
 x 3
+y 2
 end
 arch wwall_weak_2
 x 3
-end
-arch dungeon_floor
-x 3
-y 1
-end
-arch dungeon_floor
-x 3
-y 2
-end
-arch chair_1.1
-x 3
 y 2
 end
 arch dungeon_floor
+x 3
+y 3
+end
+arch spider_web
 x 3
 y 3
 end
@@ -330,15 +351,19 @@ arch dungeon_floor
 x 3
 y 4
 end
+arch spider_web
+x 3
+y 4
+end
 arch dungeon_floor
 x 3
 y 5
 end
-arch dungeon_floor
-x 3
-y 6
-end
 arch kobold
+x 3
+y 5
+end
+arch dungeon_floor
 x 3
 y 6
 end
@@ -354,15 +379,7 @@ arch dungeon_floor
 x 3
 y 9
 end
-arch spider_web
-x 3
-y 9
-end
 arch dungeon_floor
-x 3
-y 10
-end
-arch kobold
 x 3
 y 10
 end
@@ -386,7 +403,7 @@ arch dungeon_floor
 x 3
 y 14
 end
-arch spider_web
+arch kobold
 x 3
 y 14
 end
@@ -394,17 +411,60 @@ arch dungeon_floor
 x 3
 y 15
 end
-arch wwall_2_1_2
+arch spider_web
 x 3
 y 15
 end
 arch dungeon_floor
-x 4
+x 3
+y 16
 end
-arch wwall_2_1_2
-x 4
+arch spider_web
+x 3
+y 16
 end
 arch dungeon_floor
+x 3
+y 17
+end
+arch wwall_2_1_2
+x 3
+y 17
+end
+arch dungeon_magic
+x 3
+y 18
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 3
+y 18
+end
+arch grass_only
+x 3
+y 18
+end
+arch grass_only
+x 3
+y 19
+end
+arch cobblestones2
+x 4
+end
+arch dungeon_magic
+x 4
+y 1
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 4
+y 1
+end
+arch grass_only
 x 4
 y 1
 end
@@ -412,35 +472,27 @@ arch dungeon_floor
 x 4
 y 2
 end
-arch chair_1.1
-x 4
-y 2
-end
-arch kobold
+arch wwall_2_1_2
 x 4
 y 2
 end
 arch dungeon_floor
 x 4
 y 3
-end
-arch kobold
-x 4
-y 3
-end
-arch dungeon_floor
-x 4
-y 4
 end
 arch spider_web
 x 4
-y 4
+y 3
 end
 arch dungeon_floor
 x 4
-y 5
+y 4
 end
 arch chair_1.1
+x 4
+y 4
+end
+arch dungeon_floor
 x 4
 y 5
 end
@@ -452,11 +504,15 @@ arch dungeon_floor
 x 4
 y 7
 end
+arch chair_1.1
+x 4
+y 7
+end
 arch dungeon_floor
 x 4
 y 8
 end
-arch chair_1.1
+arch kobold
 x 4
 y 8
 end
@@ -465,6 +521,10 @@ x 4
 y 9
 end
 arch dungeon_floor
+x 4
+y 10
+end
+arch chair_1.1
 x 4
 y 10
 end
@@ -480,10 +540,6 @@ arch dungeon_floor
 x 4
 y 13
 end
-arch kobold
-x 4
-y 13
-end
 arch dungeon_floor
 x 4
 y 14
@@ -491,22 +547,65 @@ end
 arch dungeon_floor
 x 4
 y 15
+end
+arch dungeon_floor
+x 4
+y 16
+end
+arch spider_web
+x 4
+y 16
+end
+arch dungeon_floor
+x 4
+y 17
 end
 arch wwall_weak_2
 x 4
-y 15
+y 17
 end
-arch dungeon_floor
+arch dungeon_magic
+x 4
+y 18
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 4
+y 18
+end
+arch grass_only
+x 4
+y 18
+end
+arch grass_only
+x 4
+y 19
+end
+arch cobblestones2
 x 5
 end
-arch wwall_2_1_2
+arch dungeon_magic
 x 5
+y 1
 end
-arch dungeon_floor
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 5
+y 1
+end
+arch grass_only
 x 5
 y 1
 end
 arch dungeon_floor
+x 5
+y 2
+end
+arch wwall_weak_2
 x 5
 y 2
 end
@@ -518,19 +617,15 @@ arch dungeon_floor
 x 5
 y 4
 end
-arch dungeon_floor
-x 5
-y 5
-end
 arch chair_1.1
 x 5
-y 5
+y 4
 end
 arch dungeon_floor
 x 5
-y 6
+y 5
 end
-arch kobold
+arch dungeon_floor
 x 5
 y 6
 end
@@ -539,6 +634,10 @@ x 5
 y 7
 end
 arch dungeon_floor
+x 5
+y 8
+end
+arch kobold
 x 5
 y 8
 end
@@ -554,11 +653,23 @@ arch dungeon_floor
 x 5
 y 11
 end
+arch spider_web
+x 5
+y 11
+end
 arch dungeon_floor
 x 5
 y 12
 end
+arch kobold
+x 5
+y 12
+end
 arch dungeon_floor
+x 5
+y 13
+end
+arch kobold
 x 5
 y 13
 end
@@ -570,20 +681,56 @@ arch dungeon_floor
 x 5
 y 15
 end
+arch dungeon_floor
+x 5
+y 16
+end
+arch spider_web
+x 5
+y 16
+end
+arch dungeon_floor
+x 5
+y 17
+end
 arch wwall_2_1_2
 x 5
-y 15
+y 17
 end
-arch dungeon_floor
+arch dungeon_magic
+x 5
+y 18
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 5
+y 18
+end
+arch grass_only
+x 5
+y 18
+end
+arch grass_only
+x 5
+y 19
+end
+arch cobblestones2
 x 6
 end
-arch wwall_1_3
+arch dungeon_magic
 x 6
+y 1
 end
-arch cwall_0
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
 x 6
+y 1
 end
-arch dungeon_floor
+arch grass_only
 x 6
 y 1
 end
@@ -591,11 +738,7 @@ arch dungeon_floor
 x 6
 y 2
 end
-arch chair_1.1
-x 6
-y 2
-end
-arch kobold
+arch wwall_2_1_2
 x 6
 y 2
 end
@@ -604,6 +747,14 @@ x 6
 y 3
 end
 arch dungeon_floor
+x 6
+y 4
+end
+arch chair_1.1
+x 6
+y 4
+end
+arch kobold
 x 6
 y 4
 end
@@ -619,7 +770,15 @@ arch dungeon_floor
 x 6
 y 6
 end
+arch spider_web
+x 6
+y 6
+end
 arch dungeon_floor
+x 6
+y 7
+end
+arch chair_1.1
 x 6
 y 7
 end
@@ -627,15 +786,7 @@ arch dungeon_floor
 x 6
 y 8
 end
-arch chair_1.1
-x 6
-y 8
-end
 arch dungeon_floor
-x 6
-y 9
-end
-arch kobold
 x 6
 y 9
 end
@@ -643,7 +794,7 @@ arch dungeon_floor
 x 6
 y 10
 end
-arch kobold
+arch chair_1.1
 x 6
 y 10
 end
@@ -659,10 +810,6 @@ arch dungeon_floor
 x 6
 y 13
 end
-arch kobold
-x 6
-y 13
-end
 arch dungeon_floor
 x 6
 y 14
@@ -671,370 +818,478 @@ arch dungeon_floor
 x 6
 y 15
 end
-arch wwall_1_3
+arch kobold
 x 6
 y 15
 end
-arch cwall_0
+arch dungeon_floor
 x 6
+y 16
+end
+arch dungeon_floor
+x 6
+y 17
+end
+arch wwall_weak_2
+x 6
+y 17
+end
+arch dungeon_magic
+x 6
+y 18
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 6
+y 18
+end
+arch grass_only
+x 6
+y 18
+end
+arch grass_only
+x 6
+y 19
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch dungeon_floor
+x 7
+y 2
+end
+arch wwall_2_1_2
+x 7
+y 2
+end
+arch dungeon_floor
+x 7
+y 3
+end
+arch dungeon_floor
+x 7
+y 4
+end
+arch dungeon_floor
+x 7
+y 5
+end
+arch dungeon_floor
+x 7
+y 6
+end
+arch dungeon_floor
+x 7
+y 7
+end
+arch chair_1.1
+x 7
+y 7
+end
+arch dungeon_floor
+x 7
+y 8
+end
+arch kobold
+x 7
+y 8
+end
+arch dungeon_floor
+x 7
+y 9
+end
+arch dungeon_floor
+x 7
+y 10
+end
+arch dungeon_floor
+x 7
+y 11
+end
+arch dungeon_floor
+x 7
+y 12
+end
+arch dungeon_floor
+x 7
+y 13
+end
+arch dungeon_floor
+x 7
+y 14
+end
+arch dungeon_floor
+x 7
 y 15
+end
+arch dungeon_floor
+x 7
+y 16
+end
+arch dungeon_floor
+x 7
+y 17
+end
+arch wwall_2_1_2
+x 7
+y 17
+end
+arch dungeon_magic
+x 7
+y 18
 end
 arch invis_exit
 slaying /world/world_104_115
 hp 42
 sp 39
 x 7
+y 18
 end
-arch dungeon_floor
+arch grass_only
 x 7
+y 18
 end
-arch dungeon_floor
+arch grass_only
 x 7
+y 19
+end
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
 y 1
 end
 arch dungeon_floor
-x 7
+x 8
+y 2
+end
+arch wwall_1_3
+x 8
+y 2
+end
+arch cwall_0
+x 8
 y 2
 end
 arch dungeon_floor
-x 7
+x 8
 y 3
 end
 arch dungeon_floor
-x 7
+x 8
+y 4
+end
+arch chair_1.1
+x 8
+y 4
+end
+arch kobold
+x 8
 y 4
 end
 arch dungeon_floor
-x 7
+x 8
 y 5
 end
 arch dungeon_floor
-x 7
+x 8
 y 6
 end
 arch dungeon_floor
-x 7
+x 8
+y 7
+end
+arch kobold
+x 8
 y 7
 end
 arch dungeon_floor
-x 7
+x 8
 y 8
 end
 arch dungeon_floor
-x 7
+x 8
 y 9
 end
 arch dungeon_floor
-x 7
+x 8
+y 10
+end
+arch chair_1.1
+x 8
 y 10
 end
 arch dungeon_floor
-x 7
+x 8
+y 11
+end
+arch kobold
+x 8
 y 11
 end
 arch dungeon_floor
-x 7
+x 8
 y 12
 end
-arch altar_none
-x 7
+arch kobold
+x 8
 y 12
 end
 arch dungeon_floor
-x 7
+x 8
 y 13
 end
 arch dungeon_floor
-x 7
+x 8
 y 14
 end
 arch dungeon_floor
-x 7
+x 8
 y 15
+end
+arch kobold
+x 8
+y 15
+end
+arch dungeon_floor
+x 8
+y 16
+end
+arch dungeon_floor
+x 8
+y 17
+end
+arch wwall_1_3
+x 8
+y 17
+end
+arch cwall_0
+x 8
+y 17
+end
+arch grass_only
+x 8
+y 18
+end
+arch grass_only
+x 8
+y 19
+end
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 9
+y 2
+end
+arch dungeon_floor
+x 9
+y 2
+end
+arch dungeon_floor
+x 9
+y 3
+end
+arch dungeon_floor
+x 9
+y 4
+end
+arch dungeon_floor
+x 9
+y 5
+end
+arch dungeon_floor
+x 9
+y 6
+end
+arch dungeon_floor
+x 9
+y 7
+end
+arch dungeon_floor
+x 9
+y 8
+end
+arch dungeon_floor
+x 9
+y 9
+end
+arch dungeon_floor
+x 9
+y 10
+end
+arch dungeon_floor
+x 9
+y 11
+end
+arch dungeon_floor
+x 9
+y 12
+end
+arch dungeon_floor
+x 9
+y 13
+end
+arch dungeon_floor
+x 9
+y 14
+end
+arch altar_none
+x 9
+y 14
+end
+arch dungeon_floor
+x 9
+y 15
+end
+arch dungeon_floor
+x 9
+y 16
+end
+arch dungeon_floor
+x 9
+y 17
 end
 arch wall_1_4
-x 7
-y 15
+x 9
+y 17
+end
+arch grass_only
+x 9
+y 18
+end
+arch grass_only
+x 9
+y 19
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
+y 1
 end
 arch invis_exit
 slaying /world/world_104_115
 hp 42
 sp 39
-x 8
-end
-arch dungeon_floor
-x 8
-end
-arch dungeon_floor
-x 8
-y 1
-end
-arch dungeon_floor
-x 8
+x 10
 y 2
 end
 arch dungeon_floor
-x 8
+x 10
+y 2
+end
+arch dungeon_floor
+x 10
 y 3
 end
 arch dungeon_floor
-x 8
+x 10
 y 4
 end
 arch dungeon_floor
-x 8
+x 10
 y 5
 end
 arch dungeon_floor
-x 8
+x 10
 y 6
 end
 arch dungeon_floor
-x 8
+x 10
 y 7
 end
 arch dungeon_floor
-x 8
+x 10
 y 8
 end
 arch dungeon_floor
-x 8
+x 10
 y 9
 end
 arch dungeon_floor
-x 8
+x 10
 y 10
 end
 arch dungeon_floor
-x 8
+x 10
 y 11
 end
 arch dungeon_floor
-x 8
+x 10
 y 12
+end
+arch dungeon_floor
+x 10
+y 13
+end
+arch dungeon_floor
+x 10
+y 14
 end
 arch altar_none
-x 8
-y 12
-end
-arch dungeon_floor
-x 8
-y 13
-end
-arch dungeon_floor
-x 8
+x 10
 y 14
+end
+arch dungeon_floor
+x 10
+y 15
+end
+arch dungeon_floor
+x 10
+y 16
 end
 arch kobold
-x 8
-y 14
+x 10
+y 16
 end
 arch dungeon_floor
-x 8
-y 15
+x 10
+y 17
 end
 arch wall_1_3
-x 8
-y 15
+x 10
+y 17
+end
+arch grass_only
+x 10
+y 18
+end
+arch grass_only
+x 10
+y 19
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
+y 1
 end
 arch dungeon_floor
-x 9
+x 11
+y 2
 end
 arch wwall_1_4
-x 9
+x 11
+y 2
 end
 arch cwall_0
-x 9
-end
-arch dungeon_floor
-x 9
-y 1
-end
-arch dungeon_floor
-x 9
-y 2
-end
-arch chair_1.1
-x 9
-y 2
-end
-arch dungeon_floor
-x 9
-y 3
-end
-arch dungeon_floor
-x 9
-y 4
-end
-arch kobold
-x 9
-y 4
-end
-arch dungeon_floor
-x 9
-y 5
-end
-arch chair_1.1
-x 9
-y 5
-end
-arch dungeon_floor
-x 9
-y 6
-end
-arch dungeon_floor
-x 9
-y 7
-end
-arch kobold
-x 9
-y 7
-end
-arch dungeon_floor
-x 9
-y 8
-end
-arch chair_1.1
-x 9
-y 8
-end
-arch dungeon_floor
-x 9
-y 9
-end
-arch dungeon_floor
-x 9
-y 10
-end
-arch kobold
-x 9
-y 10
-end
-arch dungeon_floor
-x 9
-y 11
-end
-arch dungeon_floor
-x 9
-y 12
-end
-arch dungeon_floor
-x 9
-y 13
-end
-arch dungeon_floor
-x 9
-y 14
-end
-arch silvercoin
-x 9
-y 14
-end
-arch dungeon_floor
-x 9
-y 15
-end
-arch wwall_1_4
-x 9
-y 15
-end
-arch cwall_0
-x 9
-y 15
-end
-arch dungeon_floor
-x 10
-end
-arch wwall_2_1_2
-x 10
-end
-arch dungeon_floor
-x 10
-y 1
-end
-arch dungeon_floor
-x 10
-y 2
-end
-arch chair_1.1
-x 10
-y 2
-end
-arch dungeon_floor
-x 10
-y 3
-end
-arch dungeon_floor
-x 10
-y 4
-end
-arch kobold
-x 10
-y 4
-end
-arch dungeon_floor
-x 10
-y 5
-end
-arch dungeon_floor
-x 10
-y 6
-end
-arch dungeon_floor
-x 10
-y 7
-end
-arch dungeon_floor
-x 10
-y 8
-end
-arch dungeon_floor
-x 10
-y 9
-end
-arch dungeon_floor
-x 10
-y 10
-end
-arch dungeon_floor
-x 10
-y 11
-end
-arch dungeon_floor
-x 10
-y 12
-end
-arch dungeon_floor
-x 10
-y 13
-end
-arch dungeon_floor
-x 10
-y 14
-end
-arch spider_web
-x 10
-y 14
-end
-arch dungeon_floor
-x 10
-y 15
-end
-arch wwall_2_1_2
-x 10
-y 15
-end
-arch dungeon_floor
-x 11
-end
-arch wwall_2_1_2
-x 11
-end
-arch dungeon_floor
-x 11
-y 1
-end
-arch dungeon_floor
 x 11
 y 2
 end
@@ -1046,11 +1301,11 @@ arch dungeon_floor
 x 11
 y 4
 end
-arch dungeon_floor
-x 11
-y 5
-end
 arch chair_1.1
+x 11
+y 4
+end
+arch dungeon_floor
 x 11
 y 5
 end
@@ -1058,7 +1313,15 @@ arch dungeon_floor
 x 11
 y 6
 end
+arch kobold
+x 11
+y 6
+end
 arch dungeon_floor
+x 11
+y 7
+end
+arch chair_1.1
 x 11
 y 7
 end
@@ -1066,15 +1329,11 @@ arch dungeon_floor
 x 11
 y 8
 end
-arch chair_1.1
+arch dungeon_floor
 x 11
-y 8
+y 9
 end
 arch kobold
-x 11
-y 8
-end
-arch dungeon_floor
 x 11
 y 9
 end
@@ -1082,7 +1341,7 @@ arch dungeon_floor
 x 11
 y 10
 end
-arch kobold
+arch chair_1.1
 x 11
 y 10
 end
@@ -1094,61 +1353,66 @@ arch dungeon_floor
 x 11
 y 12
 end
-arch dungeon_floor
-x 11
-y 13
-end
 arch kobold
+x 11
+y 12
+end
+arch dungeon_floor
 x 11
 y 13
 end
 arch dungeon_floor
 x 11
 y 14
+end
+arch dungeon_floor
+x 11
+y 15
+end
+arch dungeon_floor
+x 11
+y 16
 end
 arch silvercoin
 x 11
-y 14
+y 16
 end
 arch dungeon_floor
 x 11
-y 15
+y 17
 end
-arch wwall_weak_2
+arch wwall_1_4
 x 11
-y 15
+y 17
 end
-arch dungeon_floor
+arch cwall_0
+x 11
+y 17
+end
+arch grass_only
+x 11
+y 18
+end
+arch grass_only
+x 11
+y 19
+end
+arch cobblestones2
 x 12
 end
-arch wwall_weak_2
-x 12
-end
-arch dungeon_floor
+arch grass_only
 x 12
 y 1
 end
-arch kobold
-x 12
-y 1
-end
 arch dungeon_floor
 x 12
 y 2
 end
-arch chair_1.1
-x 12
-y 2
-end
-arch spider_web
+arch wwall_2_1_2
 x 12
 y 2
 end
 arch dungeon_floor
-x 12
-y 3
-end
-arch kobold
 x 12
 y 3
 end
@@ -1156,15 +1420,19 @@ arch dungeon_floor
 x 12
 y 4
 end
-arch dungeon_floor
-x 12
-y 5
-end
 arch chair_1.1
 x 12
+y 4
+end
+arch dungeon_floor
+x 12
 y 5
 end
 arch dungeon_floor
+x 12
+y 6
+end
+arch kobold
 x 12
 y 6
 end
@@ -1180,15 +1448,7 @@ arch dungeon_floor
 x 12
 y 9
 end
-arch spider_web
-x 12
-y 9
-end
 arch dungeon_floor
-x 12
-y 10
-end
-arch kobold
 x 12
 y 10
 end
@@ -1207,328 +1467,883 @@ end
 arch dungeon_floor
 x 12
 y 14
+end
+arch dungeon_floor
+x 12
+y 15
+end
+arch dungeon_floor
+x 12
+y 16
+end
+arch spider_web
+x 12
+y 16
+end
+arch dungeon_floor
+x 12
+y 17
+end
+arch wwall_2_1_2
+x 12
+y 17
+end
+arch dungeon_magic
+x 12
+y 18
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 12
+y 18
+end
+arch grass_only
+x 12
+y 18
+end
+arch grass_only
+x 12
+y 19
+end
+arch cobblestones2
+x 13
+end
+arch dungeon_magic
+x 13
+y 1
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 13
+y 1
+end
+arch grass_only
+x 13
+y 1
+end
+arch dungeon_floor
+x 13
+y 2
+end
+arch wwall_2_1_2
+x 13
+y 2
+end
+arch dungeon_floor
+x 13
+y 3
+end
+arch dungeon_floor
+x 13
+y 4
+end
+arch dungeon_floor
+x 13
+y 5
+end
+arch dungeon_floor
+x 13
+y 6
+end
+arch dungeon_floor
+x 13
+y 7
+end
+arch chair_1.1
+x 13
+y 7
+end
+arch dungeon_floor
+x 13
+y 8
+end
+arch dungeon_floor
+x 13
+y 9
+end
+arch dungeon_floor
+x 13
+y 10
+end
+arch chair_1.1
+x 13
+y 10
+end
+arch kobold
+x 13
+y 10
+end
+arch dungeon_floor
+x 13
+y 11
+end
+arch dungeon_floor
+x 13
+y 12
+end
+arch kobold
+x 13
+y 12
+end
+arch dungeon_floor
+x 13
+y 13
+end
+arch dungeon_floor
+x 13
+y 14
+end
+arch dungeon_floor
+x 13
+y 15
+end
+arch kobold
+x 13
+y 15
+end
+arch dungeon_floor
+x 13
+y 16
+end
+arch silvercoin
+x 13
+y 16
+end
+arch dungeon_floor
+x 13
+y 17
+end
+arch wwall_weak_2
+x 13
+y 17
+end
+arch dungeon_magic
+x 13
+y 18
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 13
+y 18
+end
+arch grass_only
+x 13
+y 18
+end
+arch grass_only
+x 13
+y 19
+end
+arch cobblestones2
+x 14
+end
+arch dungeon_magic
+x 14
+y 1
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 14
+y 1
+end
+arch grass_only
+x 14
+y 1
+end
+arch dungeon_floor
+x 14
+y 2
+end
+arch wwall_weak_2
+x 14
+y 2
+end
+arch dungeon_floor
+x 14
+y 3
+end
+arch kobold
+x 14
+y 3
+end
+arch dungeon_floor
+x 14
+y 4
+end
+arch chair_1.1
+x 14
+y 4
+end
+arch spider_web
+x 14
+y 4
+end
+arch dungeon_floor
+x 14
+y 5
+end
+arch kobold
+x 14
+y 5
+end
+arch dungeon_floor
+x 14
+y 6
+end
+arch dungeon_floor
+x 14
+y 7
+end
+arch chair_1.1
+x 14
+y 7
+end
+arch dungeon_floor
+x 14
+y 8
+end
+arch dungeon_floor
+x 14
+y 9
+end
+arch dungeon_floor
+x 14
+y 10
+end
+arch dungeon_floor
+x 14
+y 11
+end
+arch spider_web
+x 14
+y 11
+end
+arch dungeon_floor
+x 14
+y 12
+end
+arch kobold
+x 14
+y 12
+end
+arch dungeon_floor
+x 14
+y 13
+end
+arch dungeon_floor
+x 14
+y 14
+end
+arch dungeon_floor
+x 14
+y 15
+end
+arch dungeon_floor
+x 14
+y 16
 end
 arch generate_kobold
-x 12
-y 14
+x 14
+y 16
 end
 arch dungeon_floor
-x 12
-y 15
+x 14
+y 17
 end
 arch wwall_weak_2
-x 12
-y 15
+x 14
+y 17
 end
-arch dungeon_floor
-x 13
+arch dungeon_magic
+x 14
+y 18
 end
-arch wwall_weak_2
-x 13
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 14
+y 18
 end
-arch dungeon_floor
-x 13
+arch grass_only
+x 14
+y 18
+end
+arch grass_only
+x 14
+y 19
+end
+arch cobblestones2
+x 15
+end
+arch dungeon_magic
+x 15
+y 1
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 15
+y 1
+end
+arch grass_only
+x 15
 y 1
 end
 arch dungeon_floor
-x 13
+x 15
 y 2
 end
-arch chair_1.1
-x 13
+arch wwall_weak_2
+x 15
 y 2
 end
 arch dungeon_floor
-x 13
+x 15
 y 3
 end
 arch dungeon_floor
-x 13
+x 15
+y 4
+end
+arch chair_1.1
+x 15
 y 4
 end
 arch dungeon_floor
-x 13
+x 15
 y 5
 end
 arch dungeon_floor
-x 13
+x 15
 y 6
 end
 arch dungeon_floor
-x 13
+x 15
 y 7
 end
 arch dungeon_floor
-x 13
-y 8
-end
-arch chair_1.1
-x 13
+x 15
 y 8
 end
 arch dungeon_floor
-x 13
+x 15
 y 9
 end
 arch dungeon_floor
-x 13
+x 15
+y 10
+end
+arch chair_1.1
+x 15
 y 10
 end
 arch dungeon_floor
-x 13
-y 11
-end
-arch kobold
-x 13
+x 15
 y 11
 end
 arch dungeon_floor
-x 13
+x 15
 y 12
 end
 arch dungeon_floor
-x 13
+x 15
+y 13
+end
+arch kobold
+x 15
 y 13
 end
 arch dungeon_floor
-x 13
+x 15
 y 14
+end
+arch dungeon_floor
+x 15
+y 15
+end
+arch dungeon_floor
+x 15
+y 16
 end
 arch spider_web
-x 13
-y 14
+x 15
+y 16
 end
 arch dungeon_floor
-x 13
-y 15
+x 15
+y 17
 end
 arch wwall_weak_2
-x 13
-y 15
+x 15
+y 17
+end
+arch dungeon_magic
+x 15
+y 18
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 15
+y 18
+end
+arch grass_only
+x 15
+y 18
+end
+arch grass_only
+x 15
+y 19
+end
+arch cobblestones2
+x 16
+end
+arch dungeon_magic
+x 16
+y 1
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 16
+y 1
+end
+arch grass_only
+x 16
+y 1
 end
 arch dungeon_floor
-x 14
+x 16
+y 2
 end
 arch wwall_2_1_2
-x 14
-end
-arch dungeon_floor
-x 14
-y 1
-end
-arch kobold
-x 14
-y 1
-end
-arch dungeon_floor
-x 14
+x 16
 y 2
 end
 arch dungeon_floor
-x 14
+x 16
+y 3
+end
+arch kobold
+x 16
 y 3
 end
 arch dungeon_floor
-x 14
+x 16
 y 4
 end
 arch dungeon_floor
-x 14
-y 5
-end
-arch kobold
-x 14
+x 16
 y 5
 end
 arch dungeon_floor
-x 14
+x 16
 y 6
 end
 arch dungeon_floor
-x 14
+x 16
+y 7
+end
+arch kobold
+x 16
 y 7
 end
 arch dungeon_floor
-x 14
+x 16
 y 8
 end
 arch dungeon_floor
-x 14
+x 16
 y 9
 end
 arch dungeon_floor
-x 14
-y 10
-end
-arch silvercoin
-x 14
+x 16
 y 10
 end
 arch dungeon_floor
-x 14
+x 16
 y 11
 end
 arch dungeon_floor
-x 14
+x 16
+y 12
+end
+arch silvercoin
+x 16
 y 12
 end
 arch dungeon_floor
-x 14
+x 16
 y 13
+end
+arch dungeon_floor
+x 16
+y 14
+end
+arch dungeon_floor
+x 16
+y 15
 end
 arch stair_down_2
 slaying kboldtemp1b1
 hp 14
 sp 13
-x 14
-y 13
+x 16
+y 15
 end
 arch dungeon_floor
-x 14
-y 14
+x 16
+y 16
 end
 arch spider_web
-x 14
-y 14
+x 16
+y 16
 end
 arch dungeon_floor
-x 14
-y 15
+x 16
+y 17
 end
 arch wwall_2_1_2
-x 14
-y 15
+x 16
+y 17
+end
+arch dungeon_magic
+x 16
+y 18
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 39
+x 16
+y 18
+end
+arch grass_only
+x 16
+y 18
+end
+arch grass_only
+x 16
+y 19
+end
+arch cobblestones2
+x 17
+end
+arch grass_only
+x 17
+y 1
 end
 arch dungeon_floor
-x 15
+x 17
+y 2
 end
 arch wwall_2_2_3
-x 15
+x 17
+y 2
 end
 arch cwall_0
-x 15
-end
-arch dungeon_floor
-x 15
-y 1
-end
-arch wwall_2_1_1
-x 15
-y 1
-end
-arch dungeon_floor
-x 15
-y 2
-end
-arch wwall_2_1_1
-x 15
+x 17
 y 2
 end
 arch dungeon_floor
-x 15
+x 17
 y 3
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 3
 end
 arch dungeon_floor
-x 15
+x 17
 y 4
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 4
 end
 arch dungeon_floor
-x 15
+x 17
 y 5
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 5
 end
 arch dungeon_floor
-x 15
+x 17
 y 6
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 6
 end
 arch dungeon_floor
-x 15
+x 17
 y 7
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 7
 end
 arch dungeon_floor
-x 15
+x 17
 y 8
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 8
 end
 arch dungeon_floor
-x 15
+x 17
 y 9
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 9
 end
 arch dungeon_floor
-x 15
+x 17
 y 10
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 10
 end
 arch dungeon_floor
-x 15
+x 17
 y 11
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 11
 end
 arch dungeon_floor
-x 15
+x 17
 y 12
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 12
 end
 arch dungeon_floor
-x 15
+x 17
 y 13
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 13
 end
 arch dungeon_floor
-x 15
+x 17
 y 14
 end
 arch wwall_2_1_1
-x 15
+x 17
 y 14
 end
 arch dungeon_floor
-x 15
+x 17
 y 15
+end
+arch wwall_2_1_1
+x 17
+y 15
+end
+arch dungeon_floor
+x 17
+y 16
+end
+arch wwall_2_1_1
+x 17
+y 16
+end
+arch dungeon_floor
+x 17
+y 17
 end
 arch wwall_2_2_4
-x 15
-y 15
+x 17
+y 17
 end
 arch cwall_0
-x 15
+x 17
+y 17
+end
+arch grass_only
+x 17
+y 18
+end
+arch grass_only
+x 17
+y 19
+end
+arch cobblestones2
+x 18
+end
+arch grass_only
+x 18
+y 1
+end
+arch grass_only
+x 18
+y 2
+end
+arch grass_only
+x 18
+y 3
+end
+arch grass_only
+x 18
+y 4
+end
+arch grass_only
+x 18
+y 5
+end
+arch grass_only
+x 18
+y 6
+end
+arch grass_only
+x 18
+y 7
+end
+arch grass_only
+x 18
+y 8
+end
+arch grass_only
+x 18
+y 9
+end
+arch grass_only
+x 18
+y 10
+end
+arch grass_only
+x 18
+y 11
+end
+arch grass_only
+x 18
+y 12
+end
+arch grass_only
+x 18
+y 13
+end
+arch grass_only
+x 18
+y 14
+end
+arch grass_only
+x 18
 y 15
+end
+arch grass_only
+x 18
+y 16
+end
+arch grass_only
+x 18
+y 17
+end
+arch grass_only
+x 18
+y 18
+end
+arch grass_only
+x 18
+y 19
+end
+arch cobblestones2
+x 19
+end
+arch grass_only
+x 19
+y 1
+end
+arch grass_only
+x 19
+y 2
+end
+arch grass_only
+x 19
+y 3
+end
+arch grass_only
+x 19
+y 4
+end
+arch grass_only
+x 19
+y 5
+end
+arch grass_only
+x 19
+y 6
+end
+arch grass_only
+x 19
+y 7
+end
+arch grass_only
+x 19
+y 8
+end
+arch grass_only
+x 19
+y 9
+end
+arch grass_only
+x 19
+y 10
+end
+arch grass_only
+x 19
+y 11
+end
+arch grass_only
+x 19
+y 12
+end
+arch grass_only
+x 19
+y 13
+end
+arch grass_only
+x 19
+y 14
+end
+arch grass_only
+x 19
+y 15
+end
+arch grass_only
+x 19
+y 16
+end
+arch grass_only
+x 19
+y 17
+end
+arch grass_only
+x 19
+y 18
+end
+arch grass_only
+x 19
+y 19
 end
