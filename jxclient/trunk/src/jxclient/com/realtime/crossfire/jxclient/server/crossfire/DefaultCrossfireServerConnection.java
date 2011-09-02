@@ -52,7 +52,7 @@ import org.jetbrains.annotations.Nullable;
  * Default implementation of {@link CrossfireServerConnection}.
  * @author Andreas Kirschbaum
  */
-public class DefaultCrossfireServerConnection extends DefaultServerConnection implements CrossfireServerConnection {
+public class DefaultCrossfireServerConnection implements CrossfireServerConnection {
 
     /**
      * The default map width when no "setup mapsize" command has been sent.
@@ -122,6 +122,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * Parameter type in the "accountplayers" command.
      */
     private static final int ACL_FACE_NUM = 8;
+
+    /**
+     * The physical server connection.
+     */
+    @NotNull
+    private final DefaultServerConnection defaultServerConnection;
 
     /**
      * The map width in tiles that is negotiated with the server.
@@ -750,11 +756,27 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @throws IOException if an internal error occurs
      */
     public DefaultCrossfireServerConnection(@Nullable final DebugWriter debugProtocol, @NotNull final String version) throws IOException {
-        super(debugProtocol);
+        defaultServerConnection = new DefaultServerConnection(debugProtocol);
         this.version = version;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
         addClientSocketListener(clientSocketListener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void start() {
+        defaultServerConnection.start();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void stop() throws InterruptedException {
+        defaultServerConnection.stop();
     }
 
     /**
@@ -3778,7 +3800,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             final byte[] passwordBytes = password.getBytes(UTF8);
             byteBuffer.put((byte)passwordBytes.length);
             byteBuffer.put(passwordBytes);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
 
     }
@@ -3791,7 +3813,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send addme");
         }
-        writePacket(ADDME_PREFIX, ADDME_PREFIX.length);
+        defaultServerConnection.writePacket(ADDME_PREFIX, ADDME_PREFIX.length);
     }
 
     /**
@@ -3806,7 +3828,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.clear();
             byteBuffer.put(APPLY_PREFIX);
             putDecimal(tag);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -3822,7 +3844,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.clear();
             byteBuffer.put(ASKFACE_PREFIX);
             putDecimal(num);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -3838,7 +3860,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.clear();
             byteBuffer.put(EXAMINE_PREFIX);
             putDecimal(tag);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -3855,7 +3877,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.put(LOCK_PREFIX);
             byteBuffer.put((byte)(val ? 1 : 0));
             byteBuffer.putInt(tag);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -3873,7 +3895,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             putDecimal(dx);
             byteBuffer.put((byte)' ');
             putDecimal(dy);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -3889,7 +3911,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.clear();
             byteBuffer.put(MARK_PREFIX);
             byteBuffer.putInt(tag);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -3909,7 +3931,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             putDecimal(tag);
             byteBuffer.put((byte)' ');
             putDecimal(nrof);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -3929,7 +3951,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.putShort((short)thisPacket);
             byteBuffer.putInt(repeat);
             byteBuffer.put(command.getBytes(UTF8));
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
         return thisPacket;
     }
@@ -3946,7 +3968,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.clear();
             byteBuffer.put(REPLY_PREFIX);
             byteBuffer.put(text.getBytes(UTF8));
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
         for (final SentReplyListener sentReplyListener : sentReplyListeners.getListeners()) {
             sentReplyListener.replySent();
@@ -3965,7 +3987,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.clear();
             byteBuffer.put(REQUESTINFO_PREFIX);
             byteBuffer.put(infoType.getBytes(UTF8));
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -3988,7 +4010,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     byteBuffer.put(option.getBytes(UTF8));
                 }
             }
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -4011,7 +4033,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 byteBuffer.put((byte)' ');
                 putDecimal(type);
             }
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -4031,7 +4053,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             putDecimal(scval);
             byteBuffer.put((byte)' ');
             byteBuffer.put(vinfo.getBytes(UTF8));
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -4300,7 +4322,31 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         clearFailure();
         clientSocketState = ClientSocketState.CONNECTING;
         setClientSocketState(ClientSocketState.CONNECTING, ClientSocketState.CONNECTING);
-        super.connect(hostname, port);
+        defaultServerConnection.connect(hostname, port);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void disconnect(@NotNull final String reason) {
+        defaultServerConnection.disconnect(reason);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
+        defaultServerConnection.addClientSocketListener(clientSocketListener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void removeClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
+        defaultServerConnection.removeClientSocketListener(clientSocketListener);
     }
 
     /**
@@ -4334,7 +4380,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.clear();
             byteBuffer.put(ACCOUNT_PLAY_PREFIX);
             byteBuffer.put(name.getBytes(UTF8));
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
 
         final String tmpAccountName = accountName;
@@ -4364,7 +4410,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             final byte[] passwordBytes = password.getBytes(UTF8);
             byteBuffer.put((byte)passwordBytes.length);
             byteBuffer.put(passwordBytes);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -4387,7 +4433,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             final byte[] passwordBytes = password.getBytes(UTF8);
             byteBuffer.put((byte)passwordBytes.length);
             byteBuffer.put(passwordBytes);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -4409,7 +4455,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             final byte[] passwordBytes = password.getBytes(UTF8);
             byteBuffer.put((byte)passwordBytes.length);
             byteBuffer.put(passwordBytes);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 
@@ -4431,7 +4477,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             final byte[] newPasswordBytes = newPassword.getBytes(UTF8);
             byteBuffer.put((byte)newPasswordBytes.length);
             byteBuffer.put(newPasswordBytes);
-            writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
 

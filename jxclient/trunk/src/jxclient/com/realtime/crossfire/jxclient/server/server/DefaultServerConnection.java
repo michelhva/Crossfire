@@ -34,7 +34,7 @@ import org.jetbrains.annotations.Nullable;
  * or delegates their processing to other classes, like Map or Faces.
  * @author Lauwenmark
  */
-public abstract class DefaultServerConnection implements ServerConnection {
+public class DefaultServerConnection implements ServerConnection {
 
     /**
      * The {@link ClientSocket} instance used to connect to Crossfire servers.
@@ -48,7 +48,7 @@ public abstract class DefaultServerConnection implements ServerConnection {
      * commands to this writer
      * @throws IOException if an internal error occurs
      */
-    protected DefaultServerConnection(@Nullable final DebugWriter debugProtocol) throws IOException {
+    public DefaultServerConnection(@Nullable final DebugWriter debugProtocol) throws IOException {
         clientSocket = new ClientSocket(debugProtocol);
     }
 
@@ -90,7 +90,7 @@ public abstract class DefaultServerConnection implements ServerConnection {
      * @param length the length of <code>packet</code>; if the array is larger,
      * excess data is ignored
      */
-    protected void writePacket(@NotNull final byte[] packet, final int length) {
+    public void writePacket(@NotNull final byte[] packet, final int length) {
         clientSocket.writePacket(packet, length);
     }
 
