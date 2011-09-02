@@ -19,32 +19,8 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.test;
+package com.realtime.crossfire.jxclient.server.crossfire;
 
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireAccountListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireComcListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireExpTableListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFaceListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFailureListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMagicmapListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMusicListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfirePickupListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQuestListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectionListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSkillInfoListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSmoothListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSoundListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSpellListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireTickListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateFaceListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
-import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import org.jetbrains.annotations.NotNull;
