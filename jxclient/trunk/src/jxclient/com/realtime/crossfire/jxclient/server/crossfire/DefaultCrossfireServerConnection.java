@@ -2531,7 +2531,7 @@ public class DefaultCrossfireServerConnection implements CrossfireServerConnecti
             final int parent = getInt4(packet);
             final int end = getInt1(packet);
             final int stepLength = getInt2(packet);
-            final String step = (stepLength > 0) ? getString(packet, stepLength) : "";
+            final String step = stepLength > 0 ? getString(packet, stepLength) : "";
 
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv addquest code="+code+" title="+title+" face="+face+"replay="+replay+" end="+end+" desc="+step);
@@ -3682,7 +3682,7 @@ public class DefaultCrossfireServerConnection implements CrossfireServerConnecti
         final int code = getInt4(packet);
         final int end = getInt1(packet);
         final int stepLength = getInt2(packet);
-        final String step = (stepLength > 0) ? getString(packet, stepLength) : "";
+        final String step = stepLength > 0 ? getString(packet, stepLength) : "";
 
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv updquest code="+code+" end="+end+" description="+step);
