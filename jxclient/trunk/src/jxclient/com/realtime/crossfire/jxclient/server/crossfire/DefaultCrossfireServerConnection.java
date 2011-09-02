@@ -749,7 +749,7 @@ public class DefaultCrossfireServerConnection implements CrossfireServerConnecti
 
     /**
      * Creates a new instance.
-     * @param debugProtocol tf non-<code>null</code>, write all protocol
+     * @param debugProtocol if non-<code>null</code>, write all protocol
      * commands to this writer
      * @param version the version information to send to the server when
      * connecting
