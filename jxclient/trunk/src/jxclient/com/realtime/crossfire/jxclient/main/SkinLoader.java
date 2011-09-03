@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.account.CharacterModel;
-import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.SmoothFaces;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
@@ -140,10 +140,10 @@ public class SkinLoader {
     private final JXCSkinLoader skinLoader;
 
     /**
-     * The {@link Commands} instance.
+     * The {@link CommandExecutor} instance.
      */
     @NotNull
-    private final Commands commands;
+    private final CommandExecutor commandExecutor;
 
     /**
      * The {@link Shortcuts} instance.
@@ -164,13 +164,13 @@ public class SkinLoader {
      * @param tooltipManager the tooltip manager to use
      * @param commandQueue the command queue to use
      * @param skinLoader the skin loader instance
-     * @param commands the commands to use
+     * @param commandExecutor the command executor to use
      * @param shortcuts the shortcuts to use
      * @param characterModel the character model to use
      * @param smoothFaces the smooth faces
      * @param guiCommandFactory the gui command factory for creating commands
      */
-    public SkinLoader(@NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts, @NotNull final CharacterModel characterModel, @NotNull final SmoothFaces smoothFaces, @NotNull final GUICommandFactory guiCommandFactory) {
+    public SkinLoader(@NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final CommandExecutor commandExecutor, @NotNull final Shortcuts shortcuts, @NotNull final CharacterModel characterModel, @NotNull final SmoothFaces smoothFaces, @NotNull final GUICommandFactory guiCommandFactory) {
         this.commandCallback = commandCallback;
         this.metaserverModel = metaserverModel;
         this.resolution = resolution;
@@ -181,7 +181,7 @@ public class SkinLoader {
         this.tooltipManager = tooltipManager;
         this.commandQueue = commandQueue;
         this.skinLoader = skinLoader;
-        this.commands = commands;
+        this.commandExecutor = commandExecutor;
         this.shortcuts = shortcuts;
         this.characterModel = characterModel;
         this.smoothFaces = smoothFaces;
@@ -215,7 +215,7 @@ public class SkinLoader {
 
         };
 
-        final JXCSkin skin = skinLoader.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, shortcuts, commands, currentSpellManager, commandCallback, macros, guiFactory, smoothFaces);
+        final JXCSkin skin = skinLoader.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, shortcuts, commandExecutor, currentSpellManager, commandCallback, macros, guiFactory, smoothFaces);
         if (resolution != null) {
             if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
                 throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");

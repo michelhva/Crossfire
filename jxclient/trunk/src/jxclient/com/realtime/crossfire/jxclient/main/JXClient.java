@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.main;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.commands.BindCommand;
 import com.realtime.crossfire.jxclient.commands.ClearCommand;
+import com.realtime.crossfire.jxclient.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.DebugMessagesCommand;
 import com.realtime.crossfire.jxclient.commands.ExecCommand;
@@ -223,8 +224,9 @@ public class JXClient {
                                         }
                                         final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
                                         final ScreenshotFiles screenshotFiles = new ScreenshotFiles();
-                                        final Commands commands = new Commands(commandQueue);
-                                        final GUICommandFactory guiCommandFactory = new GUICommandFactory(commandCallback, commands, macros);
+                                        final Commands commands = new Commands();
+                                        final CommandExecutor commandExecutor = new CommandExecutor(commandQueue, commands);
+                                        final GUICommandFactory guiCommandFactory = new GUICommandFactory(commandCallback, commandExecutor, macros);
                                         commands.addCommand(new BindCommand(server, commandCallback, guiCommandFactory));
                                         commands.addCommand(new UnbindCommand(commandCallback, server));
                                         commands.addCommand(new ScreenshotCommand(windowRenderer, server, screenshotFiles));
@@ -253,7 +255,7 @@ public class JXClient {
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
                                         final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsView, spellsManager, facesManager, stats, mapUpdaterState, defaultKeyBindings, optionManager, experienceTable, skillSet, options.getTileSize(), keybindingsManager, questsManager, questsView);
                                         final SmoothFaces smoothFaces = new SmoothFaces(server);
-                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel, smoothFaces, guiCommandFactory);
+                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commandExecutor, shortcuts, characterModel, smoothFaces, guiCommandFactory);
                                         new FacesTracker(guiStateManager, facesManager);
                                         new PlayerNameTracker(guiStateManager, connection, itemSet);
                                         new OutputCountTracker(guiStateManager, server, commandQueue);

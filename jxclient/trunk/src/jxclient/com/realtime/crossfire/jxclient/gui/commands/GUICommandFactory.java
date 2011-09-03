@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import java.util.regex.Pattern;
@@ -53,10 +53,10 @@ public class GUICommandFactory {
     private final CommandCallback commandCallback;
 
     /**
-     * The {@link Commands} instance to use.
+     * The {@link CommandExecutor} instance to use.
      */
     @NotNull
-    private final Commands commands;
+    private final CommandExecutor commandExecutor;
 
     /**
      * The {@link Macros} instance to use.
@@ -67,12 +67,12 @@ public class GUICommandFactory {
     /**
      * Creates a new instance.
      * @param commandCallback the command callback to use
-     * @param commands the commands instance to use
+     * @param commandExecutor the command executor instance to use
      * @param macros the macros instance to use
      */
-    public GUICommandFactory(@NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros) {
+    public GUICommandFactory(@NotNull final CommandCallback commandCallback, @NotNull final CommandExecutor commandExecutor, @NotNull final Macros macros) {
         this.commandCallback = commandCallback;
-        this.commands = commands;
+        this.commandExecutor = commandExecutor;
         this.macros = macros;
     }
 
@@ -97,7 +97,7 @@ public class GUICommandFactory {
         } else if (commandString.startsWith("-e ")) {
             return new ActivateCommandInputCommand(StringUtils.trimLeading(commandString.substring(3)), commandCallback, macros);
         } else {
-            return new ExecuteCommandCommand(commands, commandString, macros);
+            return new ExecuteCommandCommand(commandExecutor, commandString, macros);
         }
     }
 

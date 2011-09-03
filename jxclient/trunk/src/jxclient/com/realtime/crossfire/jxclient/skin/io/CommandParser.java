@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin.io;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCharacterCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCommand;
@@ -120,7 +120,7 @@ public class CommandParser {
      * @param element the target element
      * @param command the command to parse the arguments of
      * @param guiStateManager the gui state manager instance
-     * @param commands the commands instance for executing commands
+     * @param commandExecutor the command executor for executing commands
      * @param lnr the source to read more parameters from
      * @param commandQueue the command queue for executing commands
      * @param crossfireServerConnection the server connection to use
@@ -131,7 +131,7 @@ public class CommandParser {
      * @throws JXCSkinException if an element cannot be found
      */
     @NotNull
-    public GUICommand parseCommandArgs(@NotNull final Args args, @Nullable final AbstractGUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
+    public GUICommand parseCommandArgs(@NotNull final Args args, @Nullable final AbstractGUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final CommandExecutor commandExecutor, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
         if (command.equals("SHOW")) {
             return parseShow(element);
         } else if (command.equals("HIDE")) {
@@ -159,7 +159,7 @@ public class CommandParser {
         } else if (command.equals("DIALOG_CLOSE")) {
             return parseDialogClose(args, element, commandCallback);
         } else if (command.equals("GUI_EXECUTE_COMMAND")) {
-            return parseGuiExecuteCommand(args, element, commands, lnr, macros);
+            return parseGuiExecuteCommand(args, element, commandExecutor, lnr, macros);
         } else if (command.equals("EXEC_SELECTION")) {
             return parseExecSelection(args, element, commandQueue, crossfireServerConnection);
         } else if (command.equals("MOVE_SELECTION")) {
@@ -409,20 +409,20 @@ public class CommandParser {
      * Parses and builds a "GUI_EXECUTE_COMMAND" command.
      * @param args the list of arguments
      * @param element the target element
-     * @param commands the commands instance for executing commands
+     * @param commandExecutor the command executor for executing commands
      * @param lnr the source to read more parameters from
      * @param macros the macros instance to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseGuiExecuteCommand(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final Macros macros) throws IOException {
+    private static GUICommand parseGuiExecuteCommand(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandExecutor commandExecutor, @NotNull final LineNumberReader lnr, @NotNull final Macros macros) throws IOException {
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
 
         final String commandString = ParseUtils.parseText(args, lnr);
-        return new ExecuteCommandCommand(commands, commandString, macros);
+        return new ExecuteCommandCommand(commandExecutor, commandString, macros);
     }
 
     /**

@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.TestCrossfireServerConnection;
 import java.util.Arrays;
@@ -43,10 +41,7 @@ public class CommandExpanderTest {
      */
     @Test
     public void testExpandSingle() {
-        final CrossfireServerConnection crossfireServerConnection = new TestCrossfireServerConnection();
-        final GuiStateManager guiStateManager = new GuiStateManager(crossfireServerConnection);
-        final CommandQueue commandQueue = new CommandQueue(crossfireServerConnection, guiStateManager);
-        final Commands commands = new Commands(commandQueue);
+        final Commands commands = new Commands();
         check("xyz", commands, new CommandExec(null, "xyz"));
     }
 
@@ -56,10 +51,7 @@ public class CommandExpanderTest {
      */
     @Test
     public void testExpandMultiple() {
-        final CrossfireServerConnection crossfireServerConnection = new TestCrossfireServerConnection();
-        final GuiStateManager guiStateManager = new GuiStateManager(crossfireServerConnection);
-        final CommandQueue commandQueue = new CommandQueue(crossfireServerConnection, guiStateManager);
-        final Commands commands = new Commands(commandQueue);
+        final Commands commands = new Commands();
         check("xyz;abc;abc", commands, new CommandExec(null, "xyz"), new CommandExec(null, "abc"), new CommandExec(null, "abc"));
     }
 
@@ -69,10 +61,7 @@ public class CommandExpanderTest {
      */
     @Test
     public void testExpandIgnoreWhitespace() {
-        final CrossfireServerConnection crossfireServerConnection = new TestCrossfireServerConnection();
-        final GuiStateManager guiStateManager = new GuiStateManager(crossfireServerConnection);
-        final CommandQueue commandQueue = new CommandQueue(crossfireServerConnection, guiStateManager);
-        final Commands commands = new Commands(commandQueue);
+        final Commands commands = new Commands();
         check("xyz;abc", commands, new CommandExec(null, "xyz"), new CommandExec(null, "abc"));
         check("xyz ;abc", commands, new CommandExec(null, "xyz"), new CommandExec(null, "abc"));
         check("xyz; abc", commands, new CommandExec(null, "xyz"), new CommandExec(null, "abc"));
@@ -85,10 +74,7 @@ public class CommandExpanderTest {
      */
     @Test
     public void testExpandIgnoreEmpty() {
-        final CrossfireServerConnection crossfireServerConnection = new TestCrossfireServerConnection();
-        final GuiStateManager guiStateManager = new GuiStateManager(crossfireServerConnection);
-        final CommandQueue commandQueue = new CommandQueue(crossfireServerConnection, guiStateManager);
-        final Commands commands = new Commands(commandQueue);
+        final Commands commands = new Commands();
         check("", commands);
         check(";;;", commands);
         check("   ;   xyz   ;   abc   ;   ", commands, new CommandExec(null, "xyz"), new CommandExec(null, "abc"));
@@ -101,9 +87,7 @@ public class CommandExpanderTest {
     @Test
     public void testExpandPredefined() {
         final CrossfireServerConnection crossfireServerConnection = new TestCrossfireServerConnection();
-        final GuiStateManager guiStateManager = new GuiStateManager(crossfireServerConnection);
-        final CommandQueue commandQueue = new CommandQueue(crossfireServerConnection, guiStateManager);
-        final Commands commands = new Commands(commandQueue);
+        final Commands commands = new Commands();
         final TestCommand cmd = new TestCommand("cmd", false, crossfireServerConnection);
         commands.addCommand(cmd);
         check("cmd", commands, new CommandExec(cmd, ""));
@@ -120,9 +104,7 @@ public class CommandExpanderTest {
     @Test
     public void testExpandArguments() {
         final CrossfireServerConnection crossfireServerConnection = new TestCrossfireServerConnection();
-        final GuiStateManager guiStateManager = new GuiStateManager(crossfireServerConnection);
-        final CommandQueue commandQueue = new CommandQueue(crossfireServerConnection, guiStateManager);
-        final Commands commands = new Commands(commandQueue);
+        final Commands commands = new Commands();
         final TestCommand cmd = new TestCommand("cmd", false, crossfireServerConnection);
         commands.addCommand(cmd);
         check("cmd", commands, new CommandExec(cmd, ""));
@@ -141,9 +123,7 @@ public class CommandExpanderTest {
     @Test
     public void testExpandCaseInsensitiveCommandNames() {
         final CrossfireServerConnection crossfireServerConnection = new TestCrossfireServerConnection();
-        final GuiStateManager guiStateManager = new GuiStateManager(crossfireServerConnection);
-        final CommandQueue commandQueue = new CommandQueue(crossfireServerConnection, guiStateManager);
-        final Commands commands = new Commands(commandQueue);
+        final Commands commands = new Commands();
         final TestCommand cmd = new TestCommand("cmd", false, crossfireServerConnection);
         commands.addCommand(cmd);
         check("cmd", commands, new CommandExec(cmd, ""));
@@ -159,9 +139,7 @@ public class CommandExpanderTest {
     @Test
     public void testExpandAllArguments() {
         final CrossfireServerConnection crossfireServerConnection = new TestCrossfireServerConnection();
-        final GuiStateManager guiStateManager = new GuiStateManager(crossfireServerConnection);
-        final CommandQueue commandQueue = new CommandQueue(crossfireServerConnection, guiStateManager);
-        final Commands commands = new Commands(commandQueue);
+        final Commands commands = new Commands();
         final TestCommand cmd = new TestCommand("cmd", false, crossfireServerConnection);
         final TestCommand bind = new TestCommand("bind", true, crossfireServerConnection);
         commands.addCommand(cmd);
