@@ -87,4 +87,12 @@ public abstract class AbstractCommand implements Command {
         return commandName;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    public String toString() {
+        return commandName;
+    }
+
 }
