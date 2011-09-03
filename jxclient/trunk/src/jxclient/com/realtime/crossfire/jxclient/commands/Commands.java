@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
@@ -34,24 +33,10 @@ import org.jetbrains.annotations.Nullable;
 public class Commands {
 
     /**
-     * The command queue for sending commands.
-     */
-    @NotNull
-    private final CommandQueue commandQueue;
-
-    /**
      * Maps command name to {@link Command} instance.
      */
     @NotNull
     private final Map<String, Command> commands = new HashMap<String, Command>();
-
-    /**
-     * Creates a new instance.
-     * @param commandQueue the command queue for sending commands
-     */
-    public Commands(@NotNull final CommandQueue commandQueue) {
-        this.commandQueue = commandQueue;
-    }
 
     /**
      * Adds an executable {@link Command}.
@@ -72,23 +57,6 @@ public class Commands {
     @Nullable
     public Command findCommand(@NotNull final String commandName) {
         return commands.get(commandName.toLowerCase());
-    }
-
-    /**
-     * Executes a command or a list of commands. The commands may be a client-
-     * or a server-sided command.
-     * @param commandLine the commands to execute
-     */
-    public void executeCommand(@NotNull final CharSequence commandLine) {
-        final Iterable<CommandExec> commandList = CommandExpander.expand(commandLine, this);
-        for (final CommandExec commandExec : commandList) {
-            final Command command = commandExec.getCommand();
-            if (command == null) {
-                commandQueue.sendNcom(false, commandExec.getArgs());
-            } else {
-                command.execute(commandExec.getArgs());
-            }
-        }
     }
 
 }

@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.textinput;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -42,10 +42,10 @@ public class GUICommandText extends GUIText {
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link Commands} instance for executing entered commands.
+     * The {@link CommandExecutor} for executing entered commands.
      */
     @NotNull
-    private final Commands commands;
+    private final CommandExecutor commandExecutor;
 
     /**
      * Creates a new instance.
@@ -62,12 +62,13 @@ public class GUICommandText extends GUIText {
      * element is active
      * @param margin the left margin in pixels
      * @param text the initially entered text
-     * @param commands the commands instance for executing entered commands
+     * @param commandExecutor the command executor for executing entered
+     * commands
      * @param enableHistory if set, enable access to command history
      */
-    public GUICommandText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final Commands commands, final boolean enableHistory) {
+    public GUICommandText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandExecutor commandExecutor, final boolean enableHistory) {
         super(commandCallback, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, enableHistory);
-        this.commands = commands;
+        this.commandExecutor = commandExecutor;
     }
 
     /**
@@ -75,7 +76,7 @@ public class GUICommandText extends GUIText {
      */
     @Override
     protected void execute(@NotNull final String command) {
-        commands.executeCommand(command);
+        commandExecutor.executeCommand(command);
         setText("");
     }
 
