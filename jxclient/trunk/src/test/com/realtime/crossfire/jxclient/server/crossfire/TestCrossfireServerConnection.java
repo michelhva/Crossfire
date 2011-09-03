@@ -193,7 +193,6 @@ public class TestCrossfireServerConnection extends AbstractCrossfireServerConnec
      */
     @Override
     public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
-        throw new AssertionError();
     }
 
     /**

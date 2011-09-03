@@ -22,11 +22,10 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
-import com.realtime.crossfire.jxclient.util.Patterns;
-import com.realtime.crossfire.jxclient.util.StringUtils;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Parses and executes client-side commands.
@@ -65,54 +64,31 @@ public class Commands {
     }
 
     /**
-     * Executes a command or a list of commands. The commands may be a client-
-     * or a server-sided command.
-     * @param commands the commands to execute
+     * Returns a {@link Command} by name.
+     * @param commandName the command name to search
+     * @return the command or <code>null</code> if <code>commandName</code> is
+     *         undefined
      */
-    public void executeCommand(@NotNull final CharSequence commands) {
-        String cmds = StringUtils.trimLeading(commands);
-        while (cmds.length() > 0) {
-            final String[] cmd = cmds.split(" *; *", 2);
-            if (execute(cmd[0], cmds)) {
-                break;
-            }
-            if (cmd.length <= 1) {
-                break;
-            }
-            cmds = cmd[1];
-        }
+    @Nullable
+    public Command findCommand(@NotNull final String commandName) {
+        return commands.get(commandName.toLowerCase());
     }
 
     /**
-     * Executes a client-side command.
-     * @param command the command
-     * @param commandList the command and all remaining commands of the command
-     * list
-     * @return <code>true</code> if all remaining commands have been consumed
+     * Executes a command or a list of commands. The commands may be a client-
+     * or a server-sided command.
+     * @param commandLine the commands to execute
      */
-    private boolean execute(@NotNull final String command, @NotNull final String commandList) {
-        if (command.length() <= 0) {
-            return false;
+    public void executeCommand(@NotNull final CharSequence commandLine) {
+        final Iterable<CommandExec> commandList = CommandExpander.expand(commandLine, this);
+        for (final CommandExec commandExec : commandList) {
+            final Command command = commandExec.getCommand();
+            if (command == null) {
+                commandQueue.sendNcom(false, commandExec.getArgs());
+            } else {
+                command.execute(commandExec.getArgs());
+            }
         }
-
-        final String[] args = Patterns.PATTERN_WHITESPACE.split(StringUtils.trimLeading(command), 2);
-        final Command cmd = commands.get(args[0]);
-        if (cmd == null) {
-            commandQueue.sendNcom(false, command);
-            return false;
-        }
-
-        if (!cmd.allArguments()) {
-            cmd.execute(args.length >= 2 ? args[1] : "");
-            return false;
-        }
-
-        assert commandList.startsWith(command);
-        final String[] argsList = Patterns.PATTERN_WHITESPACE.split(StringUtils.trimLeading(commandList), 2);
-        assert argsList[0].equals(args[0]);
-
-        cmd.execute(argsList.length >= 2 ? argsList[1] : "");
-        return true;
     }
 
 }
