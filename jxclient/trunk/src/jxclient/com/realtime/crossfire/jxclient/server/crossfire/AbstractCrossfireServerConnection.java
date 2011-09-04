@@ -514,7 +514,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
 
     protected void fireMapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
         assert crossfireUpdateMapListener != null;
-        crossfireUpdateMapListener.mapAnimation(location, animationType, animationType);
+        crossfireUpdateMapListener.mapAnimation(location, animationNum, animationType);
     }
 
     protected void fireMapSmooth(@NotNull final Location location, final int smooth) {
