@@ -2,7 +2,7 @@ arch map
 name Fortress of Lord Butakis, Weapon Shop
 difficulty 25
 region butakisfortress
-shopitems weapons:65;potion:0;scroll:0;arrow:20;bow:20;armour:-15;boots:-20;shield:-15;helmet:-20;bracers:-20;girdle:-20;weapon improver:5;*:-50
+shopitems weapon:65;potion:0;scroll:0;arrow:20;bow:20;armour:-15;boots:-20;shield:-15;helmet:-20;bracers:-20;girdle:-20;weapon improver:5;*:-50
 shopgreed 1.30000
 shopmin 10
 shopmax 100000
@@ -13,7 +13,7 @@ enter_x 1
 enter_y 9
 msg
 Created:  1995-03-27 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2011-04-21 Rick Tanner
+Modified: 2011-09-04 Nicolas Weeger
 endmsg
 outdoor 1
 end
