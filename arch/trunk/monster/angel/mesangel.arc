@@ -2,7 +2,7 @@ Object mesangel
 name messenger
 randomitems mesangel
 race angel
-face liteangel.112
+face mesangel.112
 animation mesangel
 monster 1
 move_type walk fly_low
