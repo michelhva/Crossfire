@@ -1,0 +1,881 @@
+arch map
+name Beginners Entry
+difficulty 1
+region scorn
+width 13
+height 12
+msg
+Created:  2011-09-07 Rick Tanner
+Modified: 2011-09-07 Rick Tanner
+endmsg
+outdoor 1
+end
+arch cobblestones2
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch grass_only
+y 8
+end
+arch grass_only
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch cobblestones2
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch cobblestones2
+x 2
+end
+arch grass_only
+x 2
+y 1
+end
+arch flagstone
+x 2
+y 2
+end
+arch flagstone
+x 2
+y 3
+end
+arch flagstone
+x 2
+y 4
+end
+arch flagstone
+x 2
+y 5
+end
+arch flagstone
+x 2
+y 6
+end
+arch flagstone
+x 2
+y 7
+end
+arch flagstone
+x 2
+y 8
+end
+arch flagstone
+x 2
+y 9
+end
+arch grass_only
+x 2
+y 10
+end
+arch grass_only
+x 2
+y 11
+end
+arch cobblestones2
+x 3
+end
+arch grass_only
+x 3
+y 1
+end
+arch flagstone
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch wwall_2_2_2
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch wwall_win1
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch wwall_2_1_1
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch wwall_2_1_1
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch wwall_win1
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch wwall_2_2_1
+x 3
+y 8
+end
+arch flagstone
+x 3
+y 9
+end
+arch grass_only
+x 3
+y 10
+end
+arch grass_only
+x 3
+y 11
+end
+arch cobblestones2
+x 4
+end
+arch grass_only
+x 4
+y 1
+end
+arch flagstone
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch wwall_win2
+x 4
+y 3
+end
+arch light4
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 4
+end
+arch potion_heal
+x 4
+y 4
+identified 1
+arch spell_heal
+end
+end
+arch woodfloor
+x 4
+y 5
+end
+arch locked_door1
+slaying ogre_blue_key
+msg
+You need the Blue Key to open this door to the Potion of Healing.
+endmsg
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch sign
+msg
+One Potion of Healing
+endmsg
+x 4
+y 6
+end
+arch light4
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 7
+end
+arch sage
+name Sage of Training
+msg
+@match hi|hello
+Greetings Adventurer!  Here to test your skills and abilities?
+@match skills|skill|test|abilities|portal|arch
+Proceed through the archway ahead and bring back the blue key and choose a reward..
+@match reward
+Why yes, a reward.  To your left is a Potion of Healing - recover and heal yourself after battle.  To your right is a Potion of Minor Life - recover lost stats after a untimely, but momentary death.
+@match key|blue
+A devious Ogre holds the key. But don't expect to find him to easily.  Explore, use your might, use your wit.  Fight and survive and come back here to collect your prize.
+@match *
+Good day, traveler!
+endmsg
+x 4
+y 7
+stand_still 1
+no_mood_change 1
+end
+arch woodfloor
+x 4
+y 8
+end
+arch wwall_win2
+x 4
+y 8
+end
+arch flagstone
+x 4
+y 9
+end
+arch grass_only
+x 4
+y 10
+end
+arch grass_only
+x 4
+y 11
+end
+arch cobblestones2
+x 5
+end
+arch grass_only
+x 5
+y 1
+end
+arch flagstone
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch wwall_3_3
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch wwall_2_1_1
+x 5
+y 4
+end
+arch wwall_0
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch wwall_1_2
+x 5
+y 5
+end
+arch wwall_0
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch wwall_win2
+x 5
+y 8
+end
+arch flagstone
+x 5
+y 9
+end
+arch grass_only
+x 5
+y 10
+end
+arch grass_only
+x 5
+y 11
+end
+arch cobblestones2
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch flagstone
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch wwall_2_1_2
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch exit
+slaying beginners
+hp 14
+sp 28
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch archway
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch button_small
+x 6
+y 7
+connected 1
+end
+arch woodfloor
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch wwall_1_3
+x 6
+y 8
+end
+arch wwall_0
+x 6
+y 8
+end
+arch dungeon_magic
+x 6
+y 9
+end
+arch invis_exit
+slaying ../../world/world_105_116
+hp 2
+sp 4
+x 6
+y 9
+end
+arch flagstone
+x 6
+y 9
+end
+arch grass_only
+x 6
+y 10
+end
+arch grass_only
+x 6
+y 11
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch flagstone
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch wwall_3_3
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch wwall_2_1_1
+x 7
+y 4
+end
+arch wwall_0
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch wwall_1_2
+x 7
+y 5
+end
+arch wwall_0
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch button_small
+x 7
+y 7
+connected 1
+end
+arch woodfloor
+x 7
+y 7
+end
+arch button_small
+x 7
+y 8
+connected 1
+end
+arch woodfloor
+x 7
+y 8
+end
+arch odoorn2_closed_1
+x 7
+y 8
+connected 1
+end
+arch dungeon_magic
+x 7
+y 9
+end
+arch invis_exit
+slaying ../../world/world_105_116
+hp 2
+sp 4
+x 7
+y 9
+end
+arch flagstone
+x 7
+y 9
+end
+arch grass_only
+x 7
+y 10
+end
+arch grass_only
+x 7
+y 11
+end
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
+y 1
+end
+arch flagstone
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch wwall_win2
+x 8
+y 3
+end
+arch light4
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 4
+end
+arch minor_potion_restoration
+x 8
+y 4
+identified 1
+end
+arch woodfloor
+x 8
+y 5
+end
+arch locked_door1
+slaying ogre_blue_key
+msg
+You need the Blue Key to open this door to the Potion of Minor Life.
+endmsg
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch sign
+msg
+One Potion of Minor Life
+endmsg
+x 8
+y 6
+end
+arch light4
+x 8
+y 7
+end
+arch button_small
+x 8
+y 7
+connected 1
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch wwall_1_4
+x 8
+y 8
+end
+arch wwall_0
+x 8
+y 8
+end
+arch dungeon_magic
+x 8
+y 9
+end
+arch invis_exit
+slaying ../../world/world_105_116
+hp 2
+sp 4
+x 8
+y 9
+end
+arch flagstone
+x 8
+y 9
+end
+arch grass_only
+x 8
+y 10
+end
+arch grass_only
+x 8
+y 11
+end
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch flagstone
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch wwall_2_2_3
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch wwall_win1
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch wwall_2_1_1
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch wwall_2_1_1
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch wwall_win1
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch wwall_2_2_4
+x 9
+y 8
+end
+arch flagstone
+x 9
+y 9
+end
+arch grass_only
+x 9
+y 10
+end
+arch grass_only
+x 9
+y 11
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
+y 1
+end
+arch flagstone
+x 10
+y 2
+end
+arch flagstone
+x 10
+y 3
+end
+arch flagstone
+x 10
+y 4
+end
+arch flagstone
+x 10
+y 5
+end
+arch flagstone
+x 10
+y 6
+end
+arch flagstone
+x 10
+y 7
+end
+arch flagstone
+x 10
+y 8
+end
+arch flagstone
+x 10
+y 9
+end
+arch grass_only
+x 10
+y 10
+end
+arch grass_only
+x 10
+y 11
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
+y 1
+end
+arch grass_only
+x 11
+y 2
+end
+arch grass_only
+x 11
+y 3
+end
+arch grass_only
+x 11
+y 4
+end
+arch grass_only
+x 11
+y 5
+end
+arch grass_only
+x 11
+y 6
+end
+arch grass_only
+x 11
+y 7
+end
+arch grass_only
+x 11
+y 8
+end
+arch grass_only
+x 11
+y 9
+end
+arch grass_only
+x 11
+y 10
+end
+arch grass_only
+x 11
+y 11
+end
+arch cobblestones2
+x 12
+end
+arch cobblestones2
+x 12
+y 1
+end
+arch cobblestones2
+x 12
+y 2
+end
+arch cobblestones2
+x 12
+y 3
+end
+arch cobblestones2
+x 12
+y 4
+end
+arch cobblestones2
+x 12
+y 5
+end
+arch cobblestones2
+x 12
+y 6
+end
+arch cobblestones2
+x 12
+y 7
+end
+arch cobblestones2
+x 12
+y 8
+end
+arch cobblestones2
+x 12
+y 9
+end
+arch cobblestones2
+x 12
+y 10
+end
+arch cobblestones2
+x 12
+y 11
+end
