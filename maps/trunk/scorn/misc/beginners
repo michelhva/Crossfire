@@ -9,7 +9,7 @@ enter_x 14
 enter_y 28
 msg
 Created:  1993-10-15
-Modified: 2008-09-28 Rick Tanner
+Modified: 2011-09-07 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -558,6 +558,14 @@ end
 arch ogre
 x 2
 y 25
+arch blue_key
+name Blue Key
+name_pl Blue Keys
+slaying ogre_blue_key
+msg
+A blue key.  A blue key carried by an Ogre.  Perhaps this is the key the Sage mentioned earlier..?
+endmsg
+end
 end
 arch woodfloor
 x 2
@@ -2482,7 +2490,7 @@ arch woodfloor
 x 12
 y 29
 end
-arch bwall_1_3
+arch bwall_2_1_2
 x 12
 y 29
 end
@@ -2604,14 +2612,11 @@ arch woodfloor
 x 13
 y 28
 end
-arch invis_exit
-slaying /world/world_105_116
-hp 2
-sp 4
+arch woodfloor
 x 13
 y 29
 end
-arch woodfloor
+arch bwall_1_3
 x 13
 y 29
 end
@@ -2772,14 +2777,14 @@ arch woodfloor
 x 14
 y 28
 end
-arch invis_exit
-slaying /world/world_105_116
-hp 2
-sp 4
+arch woodfloor
 x 14
 y 29
 end
-arch woodfloor
+arch exit
+slaying beginners_entry
+hp 6
+sp 6
 x 14
 y 29
 end
@@ -3008,277 +3013,271 @@ endmsg
 x 15
 y 28
 end
-arch invis_exit
-slaying /world/world_105_116
-hp 2
-sp 4
-x 15
-y 29
-end
 arch woodfloor
 x 15
-y 29
-end
-arch woodfloor
-x 16
-end
-arch bwall_2_1_2
-x 16
-end
-arch woodfloor
-x 16
-y 1
-end
-arch food
-x 16
-y 1
-end
-arch woodfloor
-x 16
-y 2
-end
-arch woodfloor
-x 16
-y 3
-end
-arch woodfloor
-x 16
-y 4
-end
-arch woodfloor
-x 16
-y 5
-end
-arch woodfloor
-x 16
-y 6
-end
-arch woodfloor
-x 16
-y 7
-end
-arch woodfloor
-x 16
-y 8
-end
-arch woodfloor
-x 16
-y 9
-end
-arch woodfloor
-x 16
-y 10
-end
-arch woodfloor
-x 16
-y 11
-end
-arch woodfloor
-x 16
-y 12
-end
-arch woodfloor
-x 16
-y 13
-end
-arch woodfloor
-x 16
-y 14
-end
-arch woodfloor
-x 16
-y 15
-end
-arch woodfloor
-x 16
-y 16
-end
-arch woodfloor
-x 16
-y 17
-end
-arch woodfloor
-x 16
-y 18
-end
-arch woodfloor
-x 16
-y 19
-end
-arch woodfloor
-x 16
-y 20
-end
-arch woodfloor
-x 16
-y 21
-end
-arch woodfloor
-x 16
-y 22
-end
-arch woodfloor
-x 16
-y 23
-end
-arch woodfloor
-x 16
-y 24
-end
-arch woodfloor
-x 16
-y 25
-end
-arch woodfloor
-x 16
-y 26
-end
-arch woodfloor
-x 16
-y 27
-end
-arch woodfloor
-x 16
-y 28
-end
-arch invis_exit
-slaying /world/world_105_116
-hp 2
-sp 4
-x 16
-y 29
-end
-arch woodfloor
-x 16
-y 29
-end
-arch woodfloor
-x 17
-end
-arch bwall_2_1_2
-x 17
-end
-arch woodfloor
-x 17
-y 1
-end
-arch food
-x 17
-y 1
-end
-arch woodfloor
-x 17
-y 2
-end
-arch woodfloor
-x 17
-y 3
-end
-arch woodfloor
-x 17
-y 4
-end
-arch woodfloor
-x 17
-y 5
-end
-arch woodfloor
-x 17
-y 6
-end
-arch woodfloor
-x 17
-y 7
-end
-arch woodfloor
-x 17
-y 8
-end
-arch woodfloor
-x 17
-y 9
-end
-arch woodfloor
-x 17
-y 10
-end
-arch woodfloor
-x 17
-y 11
-end
-arch woodfloor
-x 17
-y 12
-end
-arch woodfloor
-x 17
-y 13
-end
-arch woodfloor
-x 17
-y 14
-end
-arch woodfloor
-x 17
-y 15
-end
-arch woodfloor
-x 17
-y 16
-end
-arch woodfloor
-x 17
-y 17
-end
-arch woodfloor
-x 17
-y 18
-end
-arch woodfloor
-x 17
-y 19
-end
-arch woodfloor
-x 17
-y 20
-end
-arch woodfloor
-x 17
-y 21
-end
-arch woodfloor
-x 17
-y 22
-end
-arch woodfloor
-x 17
-y 23
-end
-arch woodfloor
-x 17
-y 24
-end
-arch woodfloor
-x 17
-y 25
-end
-arch woodfloor
-x 17
-y 26
-end
-arch woodfloor
-x 17
-y 27
-end
-arch woodfloor
-x 17
-y 28
-end
-arch woodfloor
-x 17
 y 29
 end
 arch bwall_1_4
+x 15
+y 29
+end
+arch woodfloor
+x 16
+end
+arch bwall_2_1_2
+x 16
+end
+arch woodfloor
+x 16
+y 1
+end
+arch food
+x 16
+y 1
+end
+arch woodfloor
+x 16
+y 2
+end
+arch woodfloor
+x 16
+y 3
+end
+arch woodfloor
+x 16
+y 4
+end
+arch woodfloor
+x 16
+y 5
+end
+arch woodfloor
+x 16
+y 6
+end
+arch woodfloor
+x 16
+y 7
+end
+arch woodfloor
+x 16
+y 8
+end
+arch woodfloor
+x 16
+y 9
+end
+arch woodfloor
+x 16
+y 10
+end
+arch woodfloor
+x 16
+y 11
+end
+arch woodfloor
+x 16
+y 12
+end
+arch woodfloor
+x 16
+y 13
+end
+arch woodfloor
+x 16
+y 14
+end
+arch woodfloor
+x 16
+y 15
+end
+arch woodfloor
+x 16
+y 16
+end
+arch woodfloor
+x 16
+y 17
+end
+arch woodfloor
+x 16
+y 18
+end
+arch woodfloor
+x 16
+y 19
+end
+arch woodfloor
+x 16
+y 20
+end
+arch woodfloor
+x 16
+y 21
+end
+arch woodfloor
+x 16
+y 22
+end
+arch woodfloor
+x 16
+y 23
+end
+arch woodfloor
+x 16
+y 24
+end
+arch woodfloor
+x 16
+y 25
+end
+arch woodfloor
+x 16
+y 26
+end
+arch woodfloor
+x 16
+y 27
+end
+arch woodfloor
+x 16
+y 28
+end
+arch woodfloor
+x 16
+y 29
+end
+arch bwall_2_1_2
+x 16
+y 29
+end
+arch woodfloor
+x 17
+end
+arch bwall_2_1_2
+x 17
+end
+arch woodfloor
+x 17
+y 1
+end
+arch food
+x 17
+y 1
+end
+arch woodfloor
+x 17
+y 2
+end
+arch woodfloor
+x 17
+y 3
+end
+arch woodfloor
+x 17
+y 4
+end
+arch woodfloor
+x 17
+y 5
+end
+arch woodfloor
+x 17
+y 6
+end
+arch woodfloor
+x 17
+y 7
+end
+arch woodfloor
+x 17
+y 8
+end
+arch woodfloor
+x 17
+y 9
+end
+arch woodfloor
+x 17
+y 10
+end
+arch woodfloor
+x 17
+y 11
+end
+arch woodfloor
+x 17
+y 12
+end
+arch woodfloor
+x 17
+y 13
+end
+arch woodfloor
+x 17
+y 14
+end
+arch woodfloor
+x 17
+y 15
+end
+arch woodfloor
+x 17
+y 16
+end
+arch woodfloor
+x 17
+y 17
+end
+arch woodfloor
+x 17
+y 18
+end
+arch woodfloor
+x 17
+y 19
+end
+arch woodfloor
+x 17
+y 20
+end
+arch woodfloor
+x 17
+y 21
+end
+arch woodfloor
+x 17
+y 22
+end
+arch woodfloor
+x 17
+y 23
+end
+arch woodfloor
+x 17
+y 24
+end
+arch woodfloor
+x 17
+y 25
+end
+arch woodfloor
+x 17
+y 26
+end
+arch woodfloor
+x 17
+y 27
+end
+arch woodfloor
+x 17
+y 28
+end
+arch woodfloor
+x 17
+y 29
+end
+arch bwall_2_1_2
 x 17
 y 29
 end
