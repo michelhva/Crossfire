@@ -8,7 +8,7 @@ width 40
 height 25
 msg
 Created:  2010-09-28 neodeno
-Modified: 2010-10-05 neodeno
+Modified: 2011-09-10 crossfire
 endmsg
 outdoor 1
 end
@@ -283,7 +283,8 @@ y 21
 no_magic 1
 damned 1
 end
-arch rain2
+arch rain1
+face rain2.111
 x 1
 y 21
 end
