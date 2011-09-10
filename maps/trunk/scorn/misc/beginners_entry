@@ -6,7 +6,7 @@ width 13
 height 12
 msg
 Created:  2011-09-07 Rick Tanner
-Modified: 2011-09-07 Rick Tanner
+Modified: 2011-09-10 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -279,12 +279,17 @@ arch sage
 name Sage of Training
 msg
 @match hi|hello
+@reply test Well yes, of course!
 Greetings Adventurer!  Here to test your skills and abilities?
 @match skills|skill|test|abilities|portal|arch
+@question reward A reward, really?
+@question key Can you tell me anything about the blue key?
 Proceed through the archway ahead and bring back the blue key and choose a reward..
 @match reward
+@question key Can you tell me anything about the blue key?
 Why yes, a reward.  To your left is a Potion of Healing - recover and heal yourself after battle.  To your right is a Potion of Minor Life - recover lost stats after a untimely, but momentary death.
 @match key|blue
+@question reward So this key gives me a reward?
 A devious Ogre holds the key. But don't expect to find him to easily.  Explore, use your might, use your wit.  Fight and survive and come back here to collect your prize.
 @match *
 Good day, traveler!
