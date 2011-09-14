@@ -4,7 +4,7 @@ Params=Crossfire.ScriptParameters()
 
 if Params=="GenerateFog":
 	
-	Fogs=int(whoami.Weight/1000)
+	Fogs=int(whoami.Weight/10000)
 	Fogs=max(Fogs,1)
 	a=whoami.Inventory
 	while a !=None:
