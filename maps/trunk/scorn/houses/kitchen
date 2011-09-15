@@ -2,184 +2,346 @@ arch map
 name Medieval Kitchen
 difficulty 1
 region scorn
-width 9
-height 12
+width 13
+height 16
 enter_x 4
 enter_y 11
 msg
 Created:  2002-12-29
-Modified: 2008-12-02 Rick Tanner
+Modified: 2011-09-15 Rick Tanner
 endmsg
+outdoor 1
+end
+arch cobblestones2
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch grass_only
+y 8
+end
+arch grass_only
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch grass_only
+y 12
+end
+arch grass_only
+y 13
+end
+arch grass_only
+y 14
+end
+arch grass_only
+y 15
+end
+arch cobblestones2
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
+arch grass_only
+x 1
+y 14
+end
+arch grass_only
+x 1
+y 15
+end
+arch cobblestones2
+x 2
+end
+arch grass_only
+x 2
+y 1
 end
 arch woodfloor
+x 2
+y 2
 end
 arch wwall_2_2_2
-end
-arch woodfloor
-y 1
-end
-arch wwall_2_1_1
-y 1
-end
-arch woodfloor
-y 2
-end
-arch wwall_2_1_1
+x 2
 y 2
 end
 arch woodfloor
+x 2
 y 3
 end
 arch wwall_2_1_1
+x 2
 y 3
 end
 arch woodfloor
+x 2
 y 4
 end
 arch wwall_2_1_1
+x 2
 y 4
 end
 arch woodfloor
+x 2
 y 5
 end
-arch wwall_2_1_1
+arch wwall_win1
+x 2
 y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch wwall_2_1_1
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch wwall_2_1_1
+x 2
+y 7
 end
 arch woodfloor2
-y 6
+x 2
+y 8
 end
 arch wwall_3_2
-y 6
+x 2
+y 8
 end
 arch dungeon_magic
-y 6
-end
-arch woodfloor2
-y 7
-end
-arch wwall_2_1_1
-y 7
-end
-arch woodfloor2
-y 8
-end
-arch wwall_2_1_1
+x 2
 y 8
 end
 arch woodfloor2
+x 2
 y 9
 end
 arch wwall_2_1_1
+x 2
 y 9
 end
 arch woodfloor2
+x 2
 y 10
 end
-arch wwall_2_1_1
+arch wwall_win1
+x 2
 y 10
 end
 arch woodfloor2
+x 2
 y 11
+end
+arch wwall_2_1_1
+x 2
+y 11
+end
+arch woodfloor2
+x 2
+y 12
+end
+arch wwall_2_1_1
+x 2
+y 12
+end
+arch woodfloor2
+x 2
+y 13
 end
 arch wwall_2_2_1
-y 11
+x 2
+y 13
+end
+arch grass_only
+x 2
+y 14
+end
+arch grass_only
+x 2
+y 15
+end
+arch cobblestones2
+x 3
+end
+arch grass_only
+x 3
+y 1
 end
 arch woodfloor
-x 1
+x 3
+y 2
 end
 arch wwall_2_1_2
-x 1
+x 3
+y 2
 end
 arch woodfloor
-x 1
-y 1
+x 3
+y 3
 end
 arch table_3
-x 1
-y 1
+x 3
+y 3
 end
 arch cheeseburger
 name Garbled's Cheeseburger, Plain
-x 1
-y 1
+x 3
+y 3
 map_layer item
 no_pick 1
 startequip 1
 end
 arch woodfloor
-x 1
-y 2
+x 3
+y 4
 end
 arch table_4
-x 1
-y 2
+x 3
+y 4
 end
 arch cabbage
 food 30
-x 1
-y 2
+x 3
+y 4
 map_layer item
 no_pick 1
 startequip 1
 end
 arch carrot
-x 1
-y 2
+x 3
+y 4
 map_layer item
 no_pick 1
 startequip 1
 end
 arch woodfloor
-x 1
-y 3
+x 3
+y 5
 end
 arch food_table
 name Flour Barrel (7 g.c. @)
 face barrel.111
-x 1
-y 3
+x 3
+y 5
 end
 arch woodfloor
-x 1
-y 4
+x 3
+y 6
 end
 arch food_table
 name Apple Barrel (7 g.c. @)
 face barrel.111
-x 1
-y 4
+x 3
+y 6
 end
 arch woodfloor
-x 1
-y 5
+x 3
+y 7
 end
 arch food_table
 name Onion Barrel (7 g.c. @)
 face barrel.111
-x 1
-y 5
+x 3
+y 7
 end
 arch woodfloor2
-x 1
-y 6
+x 3
+y 8
 end
 arch wwall_2_1_2
-x 1
-y 6
+x 3
+y 8
 end
 arch dungeon_magic
-x 1
-y 6
+x 3
+y 8
 end
 arch dirtfloor
-x 1
-y 7
+x 3
+y 9
 no_magic 1
 damned 1
 end
 arch chair_1.4
-x 1
-y 7
+x 3
+y 9
 end
 arch woman
 msg
@@ -189,8 +351,8 @@ You think that is supposed to turn a girl on?
 Go away before I call the guards!
 endmsg
 exp 1
-x 1
-y 7
+x 3
+y 9
 level 1
 monster 0
 friendly 1
@@ -198,24 +360,24 @@ can_cast_spell 0
 stand_still 1
 end
 arch dirtfloor
-x 1
-y 8
+x 3
+y 10
 no_magic 1
 damned 1
 end
 arch chair_1.4
-x 1
-y 8
+x 3
+y 10
 end
 arch dirtfloor
-x 1
-y 9
+x 3
+y 11
 no_magic 1
 damned 1
 end
 arch chair_1.4
-x 1
-y 9
+x 3
+y 11
 end
 arch charwoman
 msg
@@ -224,20 +386,20 @@ You adventures... always making a mess of our town.
 Go find adventure elsewhere!
 endmsg
 exp 1
-x 1
-y 9
+x 3
+y 11
 monster 0
 friendly 1
 end
 arch dirtfloor
-x 1
-y 10
+x 3
+y 12
 no_magic 1
 damned 1
 end
 arch chair_1.4
-x 1
-y 10
+x 3
+y 12
 end
 arch guildmaster
 name thief
@@ -250,8 +412,8 @@ face thief.151
 hp 100
 maxhp 100
 exp 1
-x 1
-y 10
+x 3
+y 12
 level 1
 randomitems none
 pick_up 0
@@ -261,133 +423,184 @@ stand_still 1
 one_hit 1
 end
 arch woodfloor2
-x 1
-y 11
+x 3
+y 13
 end
 arch wwall_2_1_2
-x 1
-y 11
+x 3
+y 13
+end
+arch grass_only
+x 3
+y 14
+end
+arch grass_only
+x 3
+y 15
+end
+arch cobblestones2
+x 4
+end
+arch grass_only
+x 4
+y 1
 end
 arch woodfloor
-x 2
+x 4
+y 2
 end
 arch flagstone_1_4
-x 2
+x 4
+y 2
 end
 arch wwall_1_3
-x 2
+x 4
+y 2
 end
 arch woodfloor
-x 2
-y 1
+x 4
+y 3
 end
 arch table_3
-x 2
-y 1
+x 4
+y 3
 end
 arch pear
-x 2
-y 1
+x 4
+y 3
 map_layer item
 no_pick 1
 end
 arch woodfloor
-x 2
-y 2
+x 4
+y 4
 end
-arch woodfloor
-x 2
-y 3
-end
-arch woodfloor
-x 2
+arch light4
+x 4
 y 4
 end
 arch woodfloor
-x 2
+x 4
 y 5
 end
-arch woodfloor2
-x 2
+arch woodfloor
+x 4
 y 6
+end
+arch light4
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor2
+x 4
+y 8
 end
 arch wwall_2_1_2
-x 2
-y 6
+x 4
+y 8
 end
 arch dungeon_magic
-x 2
-y 6
+x 4
+y 8
 end
 arch dirtfloor
-x 2
-y 7
+x 4
+y 9
 no_magic 1
 damned 1
 end
 arch table_2
-x 2
-y 7
+x 4
+y 9
 end
 arch w_glass
-x 2
-y 7
+x 4
+y 9
 value 1
 map_layer item
 no_pick 1
 startequip 1
 end
 arch dirtfloor
-x 2
-y 8
-no_magic 1
-damned 1
-end
-arch table_2
-x 2
-y 8
-end
-arch dirtfloor
-x 2
-y 9
-no_magic 1
-damned 1
-end
-arch table_2
-x 2
-y 9
-end
-arch dirtfloor
-x 2
+x 4
 y 10
 no_magic 1
 damned 1
 end
 arch table_2
-x 2
+x 4
 y 10
+end
+arch light4
+x 4
+y 10
+end
+arch dirtfloor
+x 4
+y 11
+no_magic 1
+damned 1
+end
+arch table_2
+x 4
+y 11
+end
+arch dirtfloor
+x 4
+y 12
+no_magic 1
+damned 1
+end
+arch table_2
+x 4
+y 12
+end
+arch light4
+x 4
+y 12
 end
 arch woodfloor2
-x 2
-y 11
+x 4
+y 13
 end
-arch wwall_2_1_2
-x 2
-y 11
+arch wwall_win2
+x 4
+y 13
+end
+arch grass_only
+x 4
+y 14
+end
+arch grass_only
+x 4
+y 15
+end
+arch cobblestones2
+x 5
+end
+arch grass_only
+x 5
+y 1
 end
 arch flagstone
-x 3
+x 5
+y 2
 end
 arch flagstone_2_1_2
-x 3
+x 5
+y 2
 end
 arch flagstone
-x 3
-y 1
+x 5
+y 3
 end
 arch rock
-x 3
-y 1
+x 5
+y 3
 move_block 0
 can_roll 0
 end
@@ -398,68 +611,68 @@ A mushroom which provides a bit more
 for the refined tastes, can be made with
 7 mushrooms, and water of the wise.
 endmsg
-x 3
-y 1
+x 5
+y 3
 no_pick 1
 identified 1
 end
 arch flagstone
-x 3
-y 2
+x 5
+y 4
 end
 arch firepot
-x 3
-y 2
-end
-arch woodfloor
-x 3
-y 3
-end
-arch woodfloor
-x 3
+x 5
 y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
 end
 arch wwall_0
-x 3
-y 4
+x 5
+y 6
 end
 arch woodfloor
-x 3
-y 5
+x 5
+y 7
 end
 arch swall_2_2_2
-x 3
-y 5
+x 5
+y 7
 end
 arch dungeon_magic
-x 3
-y 5
+x 5
+y 7
 end
 arch woodfloor2
-x 3
-y 6
+x 5
+y 8
 end
 arch swall_1_2_half
-x 3
-y 6
+x 5
+y 8
 end
 arch wwall_1_3
-x 3
-y 6
+x 5
+y 8
 end
 arch dungeon_magic
-x 3
-y 6
+x 5
+y 8
 end
 arch dirtfloor
-x 3
-y 7
+x 5
+y 9
 no_magic 1
 damned 1
 end
 arch chair_1.2
-x 3
-y 7
+x 5
+y 9
 end
 arch c_man
 msg
@@ -467,8 +680,8 @@ msg
 I wish Garbled hadn't eaten all the cheeseburgers!
 endmsg
 exp 1
-x 3
-y 7
+x 5
+y 9
 level 1
 randomitems none
 monster 0
@@ -476,105 +689,138 @@ friendly 1
 stand_still 1
 end
 arch dirtfloor
-x 3
-y 8
-no_magic 1
-damned 1
-end
-arch chair_1.2
-x 3
-y 8
-end
-arch dirtfloor
-x 3
-y 9
-no_magic 1
-damned 1
-end
-arch chair_1.2
-x 3
-y 9
-end
-arch dirtfloor
-x 3
+x 5
 y 10
 no_magic 1
 damned 1
 end
 arch chair_1.2
-x 3
+x 5
 y 10
 end
-arch woodfloor2
-x 3
+arch dirtfloor
+x 5
+y 11
+no_magic 1
+damned 1
+end
+arch chair_1.2
+x 5
 y 11
 end
+arch button_trigger
+x 5
+y 12
+connected 2
+end
+arch dirtfloor
+x 5
+y 12
+no_magic 1
+damned 1
+end
+arch chair_1.2
+x 5
+y 12
+end
 arch woodfloor2
-x 3
-y 11
+x 5
+y 13
+end
+arch woodfloor2
+x 5
+y 13
 end
 arch wwall_1_3
-x 3
-y 11
+x 5
+y 13
+end
+arch dungeon_magic
+x 5
+y 14
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 14
+sp 39
+x 5
+y 14
+end
+arch grass_only
+x 5
+y 14
+end
+arch grass_only
+x 5
+y 15
+end
+arch cobblestones2
+x 6
+end
+arch grass_only
+x 6
+y 1
 end
 arch flagstone
-x 4
+x 6
+y 2
 end
 arch flagstone_2_1_2
-x 4
-end
-arch flagstone
-x 4
-y 1
-end
-arch stove
-x 4
-y 1
-end
-arch flagstone
-x 4
+x 6
 y 2
 end
 arch flagstone
-x 4
+x 6
+y 3
+end
+arch stove
+x 6
 y 3
 end
 arch flagstone
-x 4
+x 6
 y 4
 end
+arch flagstone
+x 6
+y 5
+end
+arch flagstone
+x 6
+y 6
+end
 arch pedestal
-x 4
-y 4
+x 6
+y 6
 invisible 1
 connected 11
 end
 arch flagstone
-x 4
-y 5
+x 6
+y 7
 end
 arch ggate_closed
-x 4
-y 5
+x 6
+y 7
 connected 11
 no_magic 1
 damned 1
 end
 arch dirtfloor
-x 4
-y 6
+x 6
+y 8
 no_magic 1
 damned 1
 end
 arch check_inv
 slaying kitchen_house1
-x 4
-y 6
+x 6
+y 8
 connected 11
 end
 arch dirtfloor
-x 4
-y 7
+x 6
+y 9
 no_magic 1
 damned 1
 end
@@ -584,8 +830,8 @@ msg
 You have one day's use of these facilities.
 endmsg
 food 504
-x 4
-y 7
+x 6
+y 9
 speed 1.0
 connected 10
 end
@@ -593,54 +839,90 @@ arch altar_trigger
 name Drop 200 platinum to enter
 slaying money
 food 10000
-x 4
-y 7
+x 6
+y 9
 connected 10
 end
 arch dirtfloor
-x 4
-y 8
-no_magic 1
-damned 1
-end
-arch dirtfloor
-x 4
-y 9
-no_magic 1
-damned 1
-end
-arch dirtfloor
-x 4
+x 6
 y 10
 no_magic 1
 damned 1
 end
-arch woodfloor2
-x 4
+arch dirtfloor
+x 6
 y 11
 no_magic 1
 damned 1
 end
-arch oakdoor_2
+arch button_trigger
+x 6
+y 12
+connected 2
+end
+arch dirtfloor
+x 6
+y 12
+no_magic 1
+damned 1
+end
+arch button_trigger
+x 6
+y 13
+connected 2
+end
+arch woodfloor2
+x 6
+y 13
+no_magic 1
+damned 1
+end
+arch odoorn2_closed_1
+x 6
+y 13
+connected 2
+end
+arch dungeon_magic
+x 6
+y 14
+end
+arch invis_exit
 slaying /world/world_105_115
 hp 14
 sp 39
-x 4
-y 11
+x 6
+y 14
+end
+arch grass_only
+x 6
+y 14
+end
+arch grass_only
+x 6
+y 15
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
+y 1
 end
 arch flagstone
-x 5
+x 7
+y 2
 end
 arch flagstone_2_1_2
-x 5
+x 7
+y 2
 end
 arch flagstone
-x 5
-y 1
+x 7
+y 3
 end
 arch rock
-x 5
-y 1
+x 7
+y 3
 move_block 0
 can_roll 0
 end
@@ -651,88 +933,88 @@ The fabled waybread of Aelingas requires
 7 of the elven wafers, and a draught of
 hero's drink.
 endmsg
-x 5
-y 1
+x 7
+y 3
 no_pick 1
 identified 1
 end
 arch flagstone
-x 5
-y 2
+x 7
+y 4
 end
 arch firepot
-x 5
-y 2
-end
-arch woodfloor
-x 5
-y 3
-end
-arch woodfloor
-x 5
+x 7
 y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
 end
 arch wwall_0
-x 5
-y 4
+x 7
+y 6
 end
 arch woodfloor
-x 5
-y 5
+x 7
+y 7
 end
 arch swall_2_2_3
-x 5
-y 5
+x 7
+y 7
 end
 arch dungeon_magic
-x 5
-y 5
+x 7
+y 7
 end
 arch woodfloor2
-x 5
-y 6
+x 7
+y 8
 end
 arch swall_1_2_half
-x 5
-y 6
+x 7
+y 8
 end
 arch wwall_1_4
-x 5
-y 6
+x 7
+y 8
 end
 arch dungeon_magic
-x 5
-y 6
+x 7
+y 8
 end
 arch dirtfloor
-x 5
-y 7
+x 7
+y 9
 no_magic 1
 damned 1
 end
 arch table
-x 5
-y 7
+x 7
+y 9
 end
 arch dirtfloor
-x 5
-y 8
+x 7
+y 10
 no_magic 1
 damned 1
 end
 arch chair_1.3
-x 5
-y 8
+x 7
+y 10
 end
 arch dirtfloor
-x 5
-y 9
+x 7
+y 11
 no_magic 1
 damned 1
 end
 arch chair_1.1
-x 5
-y 9
+x 7
+y 11
 end
 arch fatman
 msg
@@ -740,121 +1022,167 @@ msg
 Better...better get a bucket!
 endmsg
 exp 1
-x 5
-y 9
+x 7
+y 11
 monster 0
 friendly 1
 stand_still 1
 end
+arch button_trigger
+x 7
+y 12
+connected 2
+end
 arch dirtfloor
-x 5
-y 10
+x 7
+y 12
 no_magic 1
 damned 1
 end
 arch table
-x 5
-y 10
+x 7
+y 12
 end
 arch roast_bird
-x 5
-y 10
+x 7
+y 12
 no_pick 1
 end
 arch woodfloor2
-x 5
-y 11
+x 7
+y 13
 end
 arch woodfloor2
-x 5
-y 11
+x 7
+y 13
 end
 arch wwall_1_4
-x 5
-y 11
+x 7
+y 13
+end
+arch dungeon_magic
+x 7
+y 14
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 14
+sp 39
+x 7
+y 14
+end
+arch grass_only
+x 7
+y 14
+end
+arch grass_only
+x 7
+y 15
+end
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
+y 1
 end
 arch woodfloor
-x 6
+x 8
+y 2
 end
 arch flagstone_1_3
-x 6
+x 8
+y 2
 end
 arch wwall_1_4
-x 6
+x 8
+y 2
 end
 arch woodfloor
-x 6
-y 1
+x 8
+y 3
 end
 arch table_3
-x 6
-y 1
+x 8
+y 3
 end
 arch wine
-x 6
-y 1
+x 8
+y 3
 value 1
 map_layer item
 no_pick 1
 startequip 1
 end
 arch woodfloor
-x 6
-y 2
+x 8
+y 4
 end
-arch woodfloor
-x 6
-y 3
-end
-arch woodfloor
-x 6
+arch light4
+x 8
 y 4
 end
 arch woodfloor
-x 6
+x 8
 y 5
 end
-arch woodfloor2
-x 6
+arch woodfloor
+x 8
 y 6
+end
+arch light4
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor2
+x 8
+y 8
 end
 arch wwall_2_1_2
-x 6
-y 6
+x 8
+y 8
 end
 arch dungeon_magic
-x 6
-y 6
+x 8
+y 8
 end
 arch dirtfloor
-x 6
-y 7
+x 8
+y 9
 no_magic 1
 damned 1
 end
 arch table
-x 6
-y 7
+x 8
+y 9
 end
 arch dirtfloor
-x 6
-y 8
+x 8
+y 10
 no_magic 1
 damned 1
 end
 arch chair_1.3
-x 6
-y 8
+x 8
+y 10
+end
+arch light4
+x 8
+y 10
 end
 arch dirtfloor
-x 6
-y 9
+x 8
+y 11
 no_magic 1
 damned 1
 end
 arch chair_1.1
-x 6
-y 9
+x 8
+y 11
 end
 arch a_townsman3
 msg
@@ -870,153 +1198,174 @@ if you have woodlore that is.
 My this coffee is strong...
 endmsg
 exp 1
-x 6
-y 9
+x 8
+y 11
 map_layer item
 monster 0
 friendly 1
 stand_still 1
 end
 arch dirtfloor
-x 6
-y 10
+x 8
+y 12
 no_magic 1
 damned 1
 end
 arch table
-x 6
-y 10
+x 8
+y 12
 end
 arch coffee
-x 6
-y 10
+x 8
+y 12
 map_layer item
 no_pick 1
 end
+arch light4
+x 8
+y 12
+end
 arch woodfloor2
-x 6
-y 11
+x 8
+y 13
 end
-arch wwall_2_1_2
-x 6
-y 11
+arch wwall_win2
+x 8
+y 13
 end
-arch woodfloor
-x 7
+arch grass_only
+x 8
+y 14
 end
-arch wwall_2_1_2
-x 7
+arch grass_only
+x 8
+y 15
 end
-arch woodfloor
-x 7
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
 y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch wwall_2_1_2
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
 end
 arch table_3
-x 7
-y 1
+x 9
+y 3
 end
 arch bag_popcorn
 name Yarro's Bag of Unbuttered Popcorn
 name_pl Bags of Unbuttered Popcorn
-x 7
-y 1
+x 9
+y 3
 map_layer item
 no_pick 1
 end
 arch woodfloor
-x 7
-y 2
+x 9
+y 4
 end
 arch table_4
-x 7
-y 2
+x 9
+y 4
 end
 arch dragon_steak
 name aging steak
 food 0
-x 7
-y 2
+x 9
+y 4
 value 1
 map_layer item
 no_pick 1
 startequip 1
 end
 arch orcchop
-x 7
-y 2
+x 9
+y 4
 map_layer item
 no_pick 1
 startequip 1
 end
 arch woodfloor
-x 7
-y 3
+x 9
+y 5
 end
 arch food_table
-x 7
-y 3
+x 9
+y 5
 end
 arch woodfloor
-x 7
-y 4
+x 9
+y 6
 end
 arch dragon_steak_table
-x 7
-y 4
+x 9
+y 6
 arch dragon_steak
 value 1
 weight 1000
 end
 end
 arch woodfloor
-x 7
-y 5
+x 9
+y 7
 end
 arch booze_table
-x 7
-y 5
+x 9
+y 7
 end
 arch woodfloor2
-x 7
-y 6
+x 9
+y 8
 end
 arch wwall_2_1_2
-x 7
-y 6
+x 9
+y 8
 end
 arch dungeon_magic
-x 7
-y 6
+x 9
+y 8
 end
 arch dirtfloor
-x 7
-y 7
+x 9
+y 9
 no_magic 1
 damned 1
 end
 arch table
-x 7
-y 7
+x 9
+y 9
 end
 arch dirtfloor
-x 7
-y 8
+x 9
+y 10
 no_magic 1
 damned 1
 end
 arch chair_1.3
-x 7
-y 8
+x 9
+y 10
 end
 arch dirtfloor
-x 7
-y 9
+x 9
+y 11
 no_magic 1
 damned 1
 end
 arch chair_1.1
-x 7
-y 9
+x 9
+y 11
 end
 arch guildmaster
 name monk
@@ -1029,8 +1378,8 @@ face monk.151
 hp 100
 maxhp 100
 exp 1
-x 7
-y 9
+x 9
+y 11
 level 1
 randomitems none
 pick_up 0
@@ -1039,123 +1388,274 @@ friendly 1
 stand_still 1
 end
 arch dirtfloor
-x 7
-y 10
+x 9
+y 12
 no_magic 1
 damned 1
 end
 arch table
-x 7
-y 10
+x 9
+y 12
 end
 arch wine
-x 7
-y 10
+x 9
+y 12
 map_layer item
 end
 arch woodfloor2
-x 7
-y 11
+x 9
+y 13
 end
 arch wwall_2_1_2
-x 7
-y 11
+x 9
+y 13
+end
+arch grass_only
+x 9
+y 14
+end
+arch grass_only
+x 9
+y 15
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
+y 1
 end
 arch woodfloor
-x 8
+x 10
+y 2
 end
 arch wwall_2_2_3
-x 8
-end
-arch woodfloor
-x 8
-y 1
-end
-arch wwall_2_1_1
-x 8
-y 1
-end
-arch woodfloor
-x 8
-y 2
-end
-arch wwall_2_1_1
-x 8
+x 10
 y 2
 end
 arch woodfloor
-x 8
+x 10
 y 3
 end
 arch wwall_2_1_1
-x 8
+x 10
 y 3
 end
 arch woodfloor
-x 8
+x 10
 y 4
 end
 arch wwall_2_1_1
-x 8
+x 10
 y 4
 end
 arch woodfloor
-x 8
+x 10
 y 5
 end
-arch wwall_2_1_1
-x 8
+arch wwall_win1
+x 10
 y 5
+end
+arch woodfloor
+x 10
+y 6
+end
+arch wwall_2_1_1
+x 10
+y 6
+end
+arch woodfloor
+x 10
+y 7
+end
+arch wwall_2_1_1
+x 10
+y 7
 end
 arch woodfloor2
-x 8
-y 6
+x 10
+y 8
 end
 arch wwall_3_4
-x 8
-y 6
+x 10
+y 8
 end
 arch dungeon_magic
-x 8
-y 6
-end
-arch woodfloor2
-x 8
-y 7
-end
-arch wwall_2_1_1
-x 8
-y 7
-end
-arch woodfloor2
-x 8
-y 8
-end
-arch wwall_2_1_1
-x 8
+x 10
 y 8
 end
 arch woodfloor2
-x 8
+x 10
 y 9
 end
 arch wwall_2_1_1
-x 8
+x 10
 y 9
 end
 arch woodfloor2
-x 8
+x 10
 y 10
 end
-arch wwall_2_1_1
-x 8
+arch wwall_win1
+x 10
 y 10
 end
 arch woodfloor2
-x 8
+x 10
 y 11
+end
+arch wwall_2_1_1
+x 10
+y 11
+end
+arch woodfloor2
+x 10
+y 12
+end
+arch wwall_2_1_1
+x 10
+y 12
+end
+arch woodfloor2
+x 10
+y 13
 end
 arch wwall_2_2_4
-x 8
+x 10
+y 13
+end
+arch grass_only
+x 10
+y 14
+end
+arch grass_only
+x 10
+y 15
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
+y 1
+end
+arch grass_only
+x 11
+y 2
+end
+arch grass_only
+x 11
+y 3
+end
+arch grass_only
+x 11
+y 4
+end
+arch grass_only
+x 11
+y 5
+end
+arch grass_only
+x 11
+y 6
+end
+arch grass_only
+x 11
+y 7
+end
+arch grass_only
+x 11
+y 8
+end
+arch grass_only
+x 11
+y 9
+end
+arch grass_only
+x 11
+y 10
+end
+arch grass_only
+x 11
 y 11
+end
+arch grass_only
+x 11
+y 12
+end
+arch grass_only
+x 11
+y 13
+end
+arch grass_only
+x 11
+y 14
+end
+arch grass_only
+x 11
+y 15
+end
+arch cobblestones2
+x 12
+end
+arch grass_only
+x 12
+y 1
+end
+arch grass_only
+x 12
+y 2
+end
+arch grass_only
+x 12
+y 3
+end
+arch grass_only
+x 12
+y 4
+end
+arch grass_only
+x 12
+y 5
+end
+arch grass_only
+x 12
+y 6
+end
+arch grass_only
+x 12
+y 7
+end
+arch grass_only
+x 12
+y 8
+end
+arch grass_only
+x 12
+y 9
+end
+arch grass_only
+x 12
+y 10
+end
+arch grass_only
+x 12
+y 11
+end
+arch grass_only
+x 12
+y 12
+end
+arch grass_only
+x 12
+y 13
+end
+arch grass_only
+x 12
+y 14
+end
+arch grass_only
+x 12
+y 15
 end
