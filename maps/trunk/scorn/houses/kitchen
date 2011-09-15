@@ -177,15 +177,15 @@ arch wwall_2_1_1
 x 2
 y 7
 end
+arch dungeon_magic
+x 2
+y 8
+end
 arch woodfloor2
 x 2
 y 8
 end
 arch wwall_3_2
-x 2
-y 8
-end
-arch dungeon_magic
 x 2
 y 8
 end
@@ -321,15 +321,15 @@ face barrel.111
 x 3
 y 7
 end
+arch dungeon_magic
+x 3
+y 8
+end
 arch woodfloor2
 x 3
 y 8
 end
 arch wwall_2_1_2
-x 3
-y 8
-end
-arch dungeon_magic
 x 3
 y 8
 end
@@ -495,15 +495,15 @@ arch woodfloor
 x 4
 y 7
 end
+arch dungeon_magic
+x 4
+y 8
+end
 arch woodfloor2
 x 4
 y 8
 end
 arch wwall_2_1_2
-x 4
-y 8
-end
-arch dungeon_magic
 x 4
 y 8
 end
@@ -635,6 +635,11 @@ end
 arch wwall_0
 x 5
 y 6
+blocksview 0
+end
+arch dungeon_magic
+x 5
+y 7
 end
 arch woodfloor
 x 5
@@ -646,7 +651,7 @@ y 7
 end
 arch dungeon_magic
 x 5
-y 7
+y 8
 end
 arch woodfloor2
 x 5
@@ -657,10 +662,6 @@ x 5
 y 8
 end
 arch wwall_1_3
-x 5
-y 8
-end
-arch dungeon_magic
 x 5
 y 8
 end
@@ -957,6 +958,11 @@ end
 arch wwall_0
 x 7
 y 6
+blocksview 0
+end
+arch dungeon_magic
+x 7
+y 7
 end
 arch woodfloor
 x 7
@@ -968,7 +974,7 @@ y 7
 end
 arch dungeon_magic
 x 7
-y 7
+y 8
 end
 arch woodfloor2
 x 7
@@ -979,10 +985,6 @@ x 7
 y 8
 end
 arch wwall_1_4
-x 7
-y 8
-end
-arch dungeon_magic
 x 7
 y 8
 end
@@ -1138,15 +1140,15 @@ arch woodfloor
 x 8
 y 7
 end
+arch dungeon_magic
+x 8
+y 8
+end
 arch woodfloor2
 x 8
 y 8
 end
 arch wwall_2_1_2
-x 8
-y 8
-end
-arch dungeon_magic
 x 8
 y 8
 end
@@ -1325,15 +1327,15 @@ arch booze_table
 x 9
 y 7
 end
+arch dungeon_magic
+x 9
+y 8
+end
 arch woodfloor2
 x 9
 y 8
 end
 arch wwall_2_1_2
-x 9
-y 8
-end
-arch dungeon_magic
 x 9
 y 8
 end
@@ -1473,15 +1475,15 @@ arch wwall_2_1_1
 x 10
 y 7
 end
+arch dungeon_magic
+x 10
+y 8
+end
 arch woodfloor2
 x 10
 y 8
 end
 arch wwall_3_4
-x 10
-y 8
-end
-arch dungeon_magic
 x 10
 y 8
 end
