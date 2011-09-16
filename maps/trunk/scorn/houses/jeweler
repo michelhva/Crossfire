@@ -9,7 +9,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2002-12-28
-Modified: 2008-12-02 Rick Tanner
+Modified: 2011-09-15 Rick Tanner
 endmsg
 end
 arch grass
@@ -136,11 +136,11 @@ arch wwall_2_1_1
 x 1
 y 10
 end
-arch woodfloor
+arch dungeon_magic
 x 1
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 1
 y 11
 end
@@ -152,6 +152,10 @@ arch wwall_2_1_1
 x 1
 y 11
 end
+arch dungeon_magic
+x 1
+y 12
+end
 arch woodfloor
 x 1
 y 12
@@ -162,17 +166,13 @@ y 12
 end
 arch dungeon_magic
 x 1
-y 12
+y 13
 end
 arch woodfloor
 x 1
 y 13
 end
 arch wwall_2_2_1
-x 1
-y 13
-end
-arch dungeon_magic
 x 1
 y 13
 end
@@ -267,15 +267,15 @@ x 2
 y 10
 no_pick 1
 end
+arch dungeon_magic
+x 2
+y 11
+end
 arch woodfloor
 x 2
 y 11
 end
 arch swall_2_1_2
-x 2
-y 11
-end
-arch dungeon_magic
 x 2
 y 11
 end
@@ -370,15 +370,15 @@ arch woodfloor
 x 3
 y 10
 end
+arch dungeon_magic
+x 3
+y 11
+end
 arch woodfloor
 x 3
 y 11
 end
 arch swall_2_1_2
-x 3
-y 11
-end
-arch dungeon_magic
 x 3
 y 11
 end
@@ -462,15 +462,15 @@ arch woodfloor
 x 4
 y 10
 end
+arch dungeon_magic
+x 4
+y 11
+end
 arch woodfloor
 x 4
 y 11
 end
 arch swall_2_1_2
-x 4
-y 11
-end
-arch dungeon_magic
 x 4
 y 11
 end
@@ -550,15 +550,15 @@ arch woodfloor
 x 5
 y 10
 end
+arch dungeon_magic
+x 5
+y 11
+end
 arch woodfloor
 x 5
 y 11
 end
 arch swall_2_1_2
-x 5
-y 11
-end
-arch dungeon_magic
 x 5
 y 11
 end
@@ -638,15 +638,15 @@ arch woodfloor
 x 6
 y 10
 end
+arch dungeon_magic
+x 6
+y 11
+end
 arch woodfloor
 x 6
 y 11
 end
 arch swall_2_1_2
-x 6
-y 11
-end
-arch dungeon_magic
 x 6
 y 11
 end
@@ -726,15 +726,15 @@ arch woodfloor
 x 7
 y 10
 end
+arch dungeon_magic
+x 7
+y 11
+end
 arch woodfloor
 x 7
 y 11
 end
 arch swall_2_1_2
-x 7
-y 11
-end
-arch dungeon_magic
 x 7
 y 11
 end
@@ -816,6 +816,10 @@ arch firepot
 x 8
 y 9
 end
+arch dungeon_magic
+x 8
+y 10
+end
 arch woodfloor
 x 8
 y 10
@@ -826,17 +830,13 @@ y 10
 end
 arch dungeon_magic
 x 8
-y 10
+y 11
 end
 arch woodfloor
 x 8
 y 11
 end
 arch swall_2_2_4
-x 8
-y 11
-end
-arch dungeon_magic
 x 8
 y 11
 end
@@ -1058,6 +1058,10 @@ arch firepot
 x 10
 y 9
 end
+arch dungeon_magic
+x 10
+y 10
+end
 arch woodfloor
 x 10
 y 10
@@ -1068,17 +1072,13 @@ y 10
 end
 arch dungeon_magic
 x 10
-y 10
+y 11
 end
 arch woodfloor
 x 10
 y 11
 end
 arch swall_2_2_1
-x 10
-y 11
-end
-arch dungeon_magic
 x 10
 y 11
 end
@@ -1177,11 +1177,11 @@ arch wwall_2_1_1
 x 11
 y 10
 end
-arch woodfloor
+arch dungeon_magic
 x 11
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 11
 end
@@ -1193,6 +1193,10 @@ arch swall_1_3_half
 x 11
 y 11
 end
+arch dungeon_magic
+x 11
+y 12
+end
 arch woodfloor
 x 11
 y 12
@@ -1203,17 +1207,13 @@ y 12
 end
 arch dungeon_magic
 x 11
-y 12
+y 13
 end
 arch woodfloor
 x 11
 y 13
 end
 arch wwall_2_2_4
-x 11
-y 13
-end
-arch dungeon_magic
 x 11
 y 13
 end
