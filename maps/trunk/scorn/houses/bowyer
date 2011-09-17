@@ -3,199 +3,289 @@ name Bowyer's Workshop
 reset_timeout 7200
 difficulty 2
 region scorn
-width 12
-height 15
+width 14
+height 17
 enter_x 6
 enter_y 14
 msg
 Created:  2002-12-28
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2011-09-15 Rick Tanner
 endmsg
+outdoor 1
 end
-arch grass
+arch cobblestones2
 end
-arch grass
+arch grass_only
 y 1
 end
-arch grass
+arch grass_only
 y 2
 end
-arch grass
+arch grass_only
 y 3
 end
-arch grass
+arch grass_only
 y 4
 end
-arch grass
+arch grass_only
 y 5
 end
-arch grass
+arch grass_only
 y 6
 end
-arch grass
+arch grass_only
 y 7
 end
-arch grass
+arch grass_only
 y 8
 end
-arch grass
+arch grass_only
 y 9
 end
-arch grass
+arch grass_only
 y 10
 end
-arch grass
+arch grass_only
 y 11
 end
-arch grass
+arch grass_only
 y 12
 end
-arch grass
+arch grass_only
 y 13
 end
-arch grass
+arch grass_only
 y 14
 end
-arch grass
+arch grass_only
+y 15
+end
+arch grass_only
+y 16
+end
+arch cobblestones2
 x 1
 end
-arch grass
+arch grass_only
 x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
+arch grass_only
+x 1
+y 14
+end
+arch grass_only
+x 1
+y 15
+end
+arch grass_only
+x 1
+y 16
+end
+arch cobblestones2
+x 2
+end
+arch grass_only
+x 2
 y 1
 end
 arch woodfloor2
-x 1
+x 2
 y 2
 end
 arch wall_2_2_2
-x 1
+x 2
 y 2
 end
 arch woodfloor2
-x 1
+x 2
 y 3
 end
 arch wall_2_1_1
-x 1
+x 2
 y 3
 end
-arch woodfloor2
-x 1
-y 4
-end
-arch wall_2_1_1
-x 1
+arch light2
+x 2
 y 4
 end
 arch woodfloor2
-x 1
+x 2
+y 4
+end
+arch window_win1
+x 2
+y 4
+end
+arch woodfloor2
+x 2
 y 5
 end
 arch wall_2_1_1
-x 1
+x 2
 y 5
 end
 arch woodfloor2
-x 1
+x 2
 y 6
 end
 arch wall_2_1_1
-x 1
+x 2
 y 6
 end
 arch woodfloor2
-x 1
+x 2
 y 7
 end
 arch wall_2_1_1
-x 1
+x 2
 y 7
 end
 arch woodfloor2
-x 1
+x 2
 y 8
 end
 arch wall_2_1_1
-x 1
+x 2
 y 8
 end
-arch woodfloor2
-x 1
-y 9
-end
-arch wall_2_1_1
-x 1
+arch light2
+x 2
 y 9
 end
 arch woodfloor2
-x 1
+x 2
+y 9
+end
+arch window_win1
+x 2
+y 9
+end
+arch woodfloor2
+x 2
 y 10
 end
 arch wall_2_1_1
-x 1
+x 2
 y 10
-end
-arch woodfloor2
-x 1
-y 11
 end
 arch dungeon_magic
-x 1
+x 2
+y 11
+end
+arch woodfloor2
+x 2
 y 11
 end
 arch swall_1_4_half
-x 1
+x 2
 y 11
 end
 arch wall_2_1_1
-x 1
+x 2
 y 11
 end
 arch woodfloor2
-x 1
+x 2
 y 12
 end
 arch wall_2_1_1
-x 1
+x 2
 y 12
 end
 arch woodfloor2
-x 1
+x 2
 y 13
 end
 arch wall_2_1_1
-x 1
+x 2
 y 13
 end
 arch woodfloor2
-x 1
+x 2
 y 14
 end
 arch wall_2_2_1
-x 1
+x 2
 y 14
 end
-arch grass
+arch grass_only
 x 2
+y 15
 end
-arch grass
+arch grass_only
 x 2
+y 16
+end
+arch cobblestones2
+x 3
+end
+arch grass_only
+x 3
 y 1
 end
 arch woodfloor2
-x 2
+x 3
 y 2
 end
 arch wall_2_1_2
-x 2
+x 3
 y 2
 end
 arch woodfloor2
-x 2
+x 3
 y 3
 end
 arch desk
-x 2
+x 3
 y 3
 no_pick 1
 end
@@ -206,20 +296,20 @@ Create projectiles of Slay Dragon
 with 20 bolts or arrows and a
 single claw from one of the beasts.
 endmsg
-x 2
+x 3
 y 3
 no_pick 1
 end
 arch woodfloor2
-x 2
+x 3
 y 4
 end
 arch woodfloor2
-x 2
+x 3
 y 5
 end
 arch dresser2
-x 2
+x 3
 y 5
 no_pick 1
 end
@@ -230,16 +320,16 @@ Create projectiles of Fire
 with 20 bolts or arrows and the
 meat of a wyvern.
 endmsg
-x 2
+x 3
 y 5
 no_pick 1
 end
 arch woodfloor2
-x 2
+x 3
 y 6
 end
 arch dresser2
-x 2
+x 3
 y 6
 no_pick 1
 end
@@ -250,16 +340,16 @@ Create projectiles of Cold
 with 20 bolts or arrows and the
 remnants of a ghost.
 endmsg
-x 2
+x 3
 y 6
 no_pick 1
 end
 arch woodfloor2
-x 2
+x 3
 y 7
 end
 arch dresser2
-x 2
+x 3
 y 7
 no_pick 1
 end
@@ -270,16 +360,16 @@ Projectiles of Paralysis can be
 made with 20 arrows or bolts and
 the eye of a beholder.
 endmsg
-x 2
+x 3
 y 7
 no_pick 1
 end
 arch woodfloor2
-x 2
+x 3
 y 8
 end
 arch dresser2
-x 2
+x 3
 y 8
 no_pick 1
 end
@@ -290,32 +380,32 @@ Projectiles of Poison can be
 made with 20 arrows or bolts and
 the stinger of a scorpion.
 endmsg
-x 2
+x 3
 y 8
 no_pick 1
 end
 arch woodfloor2
-x 2
+x 3
 y 9
 end
 arch woodfloor2
-x 2
+x 3
 y 10
 end
+arch dungeon_magic
+x 3
+y 11
+end
 arch woodfloor2
-x 2
+x 3
 y 11
 end
 arch swall_2_1_2
-x 2
-y 11
-end
-arch dungeon_magic
-x 2
+x 3
 y 11
 end
 arch woodfloor2
-x 2
+x 3
 y 12
 end
 arch elf_1
@@ -333,178 +423,83 @@ Welcome, feel free to use my workbench,
 I'm not using it right now.  Just ask me
 about using your bowyer skill.
 endmsg
-x 2
+x 3
 y 12
 end
 arch dungeon_magic
-x 2
+x 3
 y 13
 end
 arch woodfloor2
-x 2
+x 3
 y 13
 end
+arch light2
+x 3
+y 14
+end
 arch woodfloor2
-x 2
+x 3
 y 14
 end
-arch wall_2_1_2
-x 2
+arch window_win2
+x 3
 y 14
 end
-arch grass
+arch grass_only
 x 3
+y 15
 end
-arch grass
+arch grass_only
 x 3
+y 16
+end
+arch cobblestones2
+x 4
+end
+arch grass_only
+x 4
 y 1
 end
 arch woodfloor2
-x 3
+x 4
 y 2
 end
 arch wall_2_1_2
-x 3
+x 4
 y 2
 end
 arch woodfloor2
-x 3
+x 4
 y 3
 end
 arch bookshelf
-x 3
+x 4
 y 3
 end
-arch woodfloor2
-x 3
+arch light4
+x 4
 y 4
 end
 arch woodfloor2
-x 3
+x 4
+y 4
+end
+arch woodfloor2
+x 4
 y 5
 end
 arch woodfloor2
-x 3
+x 4
 y 6
 end
 arch woodfloor2
-x 3
+x 4
 y 7
 end
-arch woodfloor2
-x 3
+arch light4
+x 4
 y 8
-end
-arch woodfloor2
-x 3
-y 9
-end
-arch woodfloor2
-x 3
-y 10
-end
-arch woodfloor2
-x 3
-y 11
-end
-arch swall_2_1_2
-x 3
-y 11
-end
-arch dungeon_magic
-x 3
-y 11
-end
-arch woodfloor2
-x 3
-y 12
-end
-arch table_2
-x 3
-y 12
-move_block all
-no_pick 1
-end
-arch woodfloor2
-x 3
-y 13
-end
-arch table_2
-x 3
-y 13
-move_block all
-no_pick 1
-end
-arch woodfloor2
-x 3
-y 14
-end
-arch wall_2_1_2
-x 3
-y 14
-end
-arch grass
-x 4
-end
-arch grass
-x 4
-y 1
-end
-arch woodfloor2
-x 4
-y 2
-end
-arch wall_2_1_2
-x 4
-y 2
-end
-arch woodfloor2
-x 4
-y 3
-end
-arch bookshelf
-x 4
-y 3
-end
-arch woodfloor2
-x 4
-y 4
-end
-arch woodfloor2
-x 4
-y 5
-end
-arch glue
-name sawdust
-name_pl sawdust
-exp 0
-x 4
-y 5
-move_slow_penalty 0.000000
-end
-arch woodfloor2
-x 4
-y 6
-end
-arch glue
-name sawdust
-name_pl sawdust
-exp 0
-x 4
-y 6
-move_slow_penalty 0.000000
-end
-arch woodfloor2
-x 4
-y 7
-end
-arch glue
-name sawdust
-name_pl sawdust
-exp 0
-x 4
-y 7
-move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 4
@@ -518,6 +513,10 @@ arch woodfloor2
 x 4
 y 10
 end
+arch dungeon_magic
+x 4
+y 11
+end
 arch woodfloor2
 x 4
 y 11
@@ -526,17 +525,34 @@ arch swall_2_1_2
 x 4
 y 11
 end
-arch dungeon_magic
+arch woodwall_0
 x 4
 y 11
+blocksview 0
 end
-arch woodfloor2
+arch light4
 x 4
 y 12
 end
 arch woodfloor2
 x 4
+y 12
+end
+arch table_2
+x 4
+y 12
+move_block all
+no_pick 1
+end
+arch woodfloor2
+x 4
 y 13
+end
+arch table_2
+x 4
+y 13
+move_block all
+no_pick 1
 end
 arch woodfloor2
 x 4
@@ -546,10 +562,18 @@ arch wall_2_1_2
 x 4
 y 14
 end
-arch grass
+arch grass_only
+x 4
+y 15
+end
+arch grass_only
+x 4
+y 16
+end
+arch cobblestones2
 x 5
 end
-arch grass
+arch grass_only
 x 5
 y 1
 end
@@ -587,190 +611,220 @@ move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 5
+y 6
+end
+arch glue
+name sawdust
+name_pl sawdust
+exp 0
+x 5
+y 6
+move_slow_penalty 0.000000
+end
+arch woodfloor2
+x 5
+y 7
+end
+arch glue
+name sawdust
+name_pl sawdust
+exp 0
+x 5
+y 7
+move_slow_penalty 0.000000
+end
+arch woodfloor2
+x 5
+y 8
+end
+arch woodfloor2
+x 5
+y 9
+end
+arch woodfloor2
+x 5
+y 10
+end
+arch dungeon_magic
+x 5
+y 11
+end
+arch woodfloor2
+x 5
+y 11
+end
+arch swall_2_1_2
+x 5
+y 11
+end
+arch woodfloor2
+x 5
+y 12
+end
+arch woodfloor2
+x 5
+y 13
+end
+arch light2
+x 5
+y 14
+end
+arch woodfloor2
+x 5
+y 14
+end
+arch window_win2
+x 5
+y 14
+end
+arch grass_only
+x 5
+y 15
+end
+arch grass_only
+x 5
+y 16
+end
+arch cobblestones2
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch woodfloor2
+x 6
+y 2
+end
+arch wall_2_1_2
+x 6
+y 2
+end
+arch woodfloor2
+x 6
+y 3
+end
+arch bookshelf
+x 6
+y 3
+end
+arch woodfloor2
+x 6
+y 4
+end
+arch woodfloor2
+x 6
+y 5
+end
+arch glue
+name sawdust
+name_pl sawdust
+exp 0
+x 6
+y 5
+move_slow_penalty 0.000000
+end
+arch woodfloor2
+x 6
 y 6
 end
 arch workbench
-x 5
+x 6
 y 6
 end
 arch woodfloor2
-x 5
+x 6
 y 7
 end
 arch glue
 name sawdust
 name_pl sawdust
 exp 0
-x 5
+x 6
 y 7
 move_slow_penalty 0.000000
 end
 arch woodfloor2
-x 5
+x 6
 y 8
 end
 arch glue
 name sawdust
 name_pl sawdust
 exp 0
-x 5
+x 6
 y 8
 move_slow_penalty 0.000000
 end
 arch woodfloor2
-x 5
+x 6
 y 9
 end
 arch woodfloor2
-x 5
+x 6
 y 10
 end
+arch dungeon_magic
+x 6
+y 11
+end
 arch woodfloor2
-x 5
+x 6
 y 11
 end
 arch swall_2_1_2
-x 5
+x 6
 y 11
 end
-arch dungeon_magic
-x 5
+arch woodwall_0
+x 6
 y 11
+blocksview 0
 end
 arch woodfloor2
-x 5
+x 6
 y 12
 end
+arch button_small
+x 6
+y 13
+connected 2
+end
 arch woodfloor2
-x 5
+x 6
 y 13
 end
 arch woodfloor2
-x 5
+x 6
 y 14
 end
 arch wall_1_3
-x 5
+x 6
 y 14
-end
-arch grass
-x 6
-end
-arch grass
-x 6
-y 1
-end
-arch woodfloor2
-x 6
-y 2
-end
-arch wall_2_1_2
-x 6
-y 2
-end
-arch woodfloor2
-x 6
-y 3
-end
-arch bookshelf
-x 6
-y 3
-end
-arch woodfloor2
-x 6
-y 4
-end
-arch woodfloor2
-x 6
-y 5
-end
-arch glue
-name sawdust
-name_pl sawdust
-exp 0
-x 6
-y 5
-move_slow_penalty 0.000000
-end
-arch woodfloor2
-x 6
-y 6
-end
-arch glue
-name sawdust
-name_pl sawdust
-exp 0
-x 6
-y 6
-move_slow_penalty 0.000000
-end
-arch woodfloor2
-x 6
-y 7
-end
-arch glue
-name sawdust
-name_pl sawdust
-exp 0
-x 6
-y 7
-move_slow_penalty 0.000000
-end
-arch woodfloor2
-x 6
-y 8
-end
-arch glue
-name sawdust
-name_pl sawdust
-exp 0
-x 6
-y 8
-move_slow_penalty 0.000000
-end
-arch woodfloor2
-x 6
-y 9
-end
-arch woodfloor2
-x 6
-y 10
-end
-arch woodfloor2
-x 6
-y 11
-end
-arch swall_2_1_2
-x 6
-y 11
 end
 arch dungeon_magic
 x 6
-y 11
+y 15
 end
-arch woodfloor2
-x 6
-y 12
-end
-arch woodfloor2
-x 6
-y 13
-end
-arch woodfloor2
-x 6
-y 14
-end
-arch oakdoor_2
+arch invis_exit
 slaying /world/world_105_115
 hp 12
 sp 39
 x 6
-y 14
+y 15
 end
-arch grass
+arch grass_only
+x 6
+y 15
+end
+arch grass_only
+x 6
+y 16
+end
+arch cobblestones2
 x 7
 end
-arch grass
+arch grass_only
 x 7
 y 1
 end
@@ -798,9 +852,25 @@ arch woodfloor2
 x 7
 y 5
 end
+arch glue
+name sawdust
+name_pl sawdust
+exp 0
+x 7
+y 5
+move_slow_penalty 0.000000
+end
 arch woodfloor2
 x 7
 y 6
+end
+arch glue
+name sawdust
+name_pl sawdust
+exp 0
+x 7
+y 6
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 7
@@ -834,9 +904,9 @@ arch woodfloor2
 x 7
 y 10
 end
-arch wall_0
+arch dungeon_magic
 x 7
-y 10
+y 11
 end
 arch woodfloor2
 x 7
@@ -846,34 +916,56 @@ arch swall_2_1_2
 x 7
 y 11
 end
-arch dungeon_magic
-x 7
-y 11
-end
 arch woodfloor2
 x 7
 y 12
 end
-arch wall_0
+arch button_small
 x 7
-y 12
+y 13
+connected 2
 end
 arch woodfloor2
 x 7
 y 13
 end
+arch button_small
+x 7
+y 14
+connected 2
+end
 arch woodfloor2
 x 7
 y 14
 end
-arch wall_1_4
+arch odoorn2_closed_1
 x 7
 y 14
+connected 2
 end
-arch grass
+arch dungeon_magic
+x 7
+y 15
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 12
+sp 39
+x 7
+y 15
+end
+arch grass_only
+x 7
+y 15
+end
+arch grass_only
+x 7
+y 16
+end
+arch cobblestones2
 x 8
 end
-arch grass
+arch grass_only
 x 8
 y 1
 end
@@ -909,9 +1001,25 @@ arch woodfloor2
 x 8
 y 7
 end
+arch glue
+name sawdust
+name_pl sawdust
+exp 0
+x 8
+y 7
+move_slow_penalty 0.000000
+end
 arch woodfloor2
 x 8
 y 8
+end
+arch glue
+name sawdust
+name_pl sawdust
+exp 0
+x 8
+y 8
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 8
@@ -921,35 +1029,155 @@ arch woodfloor2
 x 8
 y 10
 end
-arch pedestal
+arch dungeon_magic
 x 8
+y 11
+end
+arch woodfloor2
+x 8
+y 11
+end
+arch swall_2_1_2
+x 8
+y 11
+end
+arch woodwall_0
+x 8
+y 11
+blocksview 0
+end
+arch light4
+x 8
+y 12
+end
+arch woodfloor2
+x 8
+y 12
+end
+arch button_small
+x 8
+y 13
+connected 2
+end
+arch woodfloor2
+x 8
+y 13
+end
+arch woodfloor2
+x 8
+y 14
+end
+arch wall_1_4
+x 8
+y 14
+end
+arch dungeon_magic
+x 8
+y 15
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 12
+sp 39
+x 8
+y 15
+end
+arch grass_only
+x 8
+y 15
+end
+arch grass_only
+x 8
+y 16
+end
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch woodfloor2
+x 9
+y 2
+end
+arch wall_2_1_2
+x 9
+y 2
+end
+arch woodfloor2
+x 9
+y 3
+end
+arch bookshelf
+x 9
+y 3
+end
+arch light4
+x 9
+y 4
+end
+arch woodfloor2
+x 9
+y 4
+end
+arch woodfloor2
+x 9
+y 5
+end
+arch woodfloor2
+x 9
+y 6
+end
+arch woodfloor2
+x 9
+y 7
+end
+arch light4
+x 9
+y 8
+end
+arch woodfloor2
+x 9
+y 8
+end
+arch woodfloor2
+x 9
+y 9
+end
+arch woodfloor2
+x 9
+y 10
+end
+arch pedestal
+x 9
 y 10
 invisible 1
 connected 11
 end
 arch woodfloor2
-x 8
+x 9
 y 11
 end
 arch ggate_closed
-x 8
+x 9
 y 11
 connected 11
 no_magic 1
 damned 1
 end
 arch woodfloor2
-x 8
+x 9
 y 12
 end
 arch check_floor
 slaying bowyer_house1
-x 8
+x 9
 y 12
 connected 11
 end
 arch woodfloor2
-x 8
+x 9
 y 13
 end
 arch trigger_marker
@@ -958,7 +1186,7 @@ msg
 You have one day's use of these facilities.
 endmsg
 food 504
-x 8
+x 9
 y 13
 speed 1.0
 connected 10
@@ -967,39 +1195,47 @@ arch altar_trigger
 name Drop 200 platinum to enter
 slaying money
 food 10000
-x 8
+x 9
 y 13
 connected 10
 end
 arch woodfloor2
-x 8
+x 9
 y 14
 end
 arch wall_2_1_2
-x 8
+x 9
 y 14
 end
-arch grass
+arch grass_only
 x 9
+y 15
 end
-arch grass
+arch grass_only
 x 9
+y 16
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
 y 1
 end
 arch woodfloor2
-x 9
+x 10
 y 2
 end
 arch wall_2_1_2
-x 9
+x 10
 y 2
 end
 arch woodfloor2
-x 9
+x 10
 y 3
 end
 arch desk
-x 9
+x 10
 y 3
 no_pick 1
 end
@@ -1010,16 +1246,16 @@ Projectiles of Lightning
 can be made with 20 arrows or bolts
 and the tooth of a skull.
 endmsg
-x 9
+x 10
 y 3
 no_pick 1
 end
 arch woodfloor2
-x 9
+x 10
 y 4
 end
 arch woodfloor2
-x 9
+x 10
 y 5
 end
 arch platinum_converter
@@ -1028,11 +1264,11 @@ slaying money
 other_arch arrow
 sp 1
 food 10
-x 9
+x 10
 y 5
 end
 arch woodfloor2
-x 9
+x 10
 y 6
 end
 arch platinum_converter
@@ -1041,236 +1277,336 @@ slaying money
 other_arch bolt
 sp 1
 food 10
-x 9
+x 10
 y 6
 end
 arch woodfloor2
-x 9
+x 10
 y 7
 end
 arch woodfloor2
-x 9
+x 10
 y 8
 end
 arch woodfloor2
-x 9
+x 10
 y 9
 end
 arch woodfloor2
-x 9
+x 10
 y 10
 end
-arch wall_0
-x 9
-y 10
+arch dungeon_magic
+x 10
+y 11
 end
 arch woodfloor2
-x 9
+x 10
 y 11
 end
 arch swall_2_1_2
-x 9
+x 10
 y 11
 end
-arch dungeon_magic
-x 9
+arch woodwall_0
+x 10
 y 11
+blocksview 0
 end
 arch woodfloor2
-x 9
+x 10
 y 12
 end
-arch wall_0
-x 9
-y 12
-end
-arch woodfloor2
-x 9
+arch light4
+x 10
 y 13
 end
 arch woodfloor2
-x 9
+x 10
+y 13
+end
+arch woodfloor2
+x 10
 y 14
 end
 arch wall_2_1_2
-x 9
+x 10
 y 14
 end
-arch grass
+arch grass_only
 x 10
+y 15
 end
-arch grass
+arch grass_only
 x 10
+y 16
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
 y 1
 end
 arch woodfloor2
-x 10
+x 11
 y 2
 end
 arch wall_2_2_3
-x 10
+x 11
 y 2
 end
 arch woodfloor2
-x 10
+x 11
 y 3
 end
 arch wall_2_1_1
-x 10
+x 11
 y 3
 end
-arch woodfloor2
-x 10
-y 4
-end
-arch wall_2_1_1
-x 10
+arch light2
+x 11
 y 4
 end
 arch woodfloor2
-x 10
+x 11
+y 4
+end
+arch window_win1
+x 11
+y 4
+end
+arch woodfloor2
+x 11
 y 5
 end
 arch wall_2_1_1
-x 10
+x 11
 y 5
 end
 arch woodfloor2
-x 10
+x 11
 y 6
 end
 arch wall_2_1_1
-x 10
+x 11
 y 6
 end
 arch woodfloor2
-x 10
+x 11
 y 7
 end
 arch wall_2_1_1
-x 10
+x 11
 y 7
 end
 arch woodfloor2
-x 10
+x 11
 y 8
 end
 arch wall_2_1_1
-x 10
+x 11
 y 8
 end
-arch woodfloor2
-x 10
-y 9
-end
-arch wall_2_1_1
-x 10
+arch light2
+x 11
 y 9
 end
 arch woodfloor2
-x 10
+x 11
+y 9
+end
+arch window_win1
+x 11
+y 9
+end
+arch woodfloor2
+x 11
 y 10
 end
 arch wall_2_1_1
-x 10
+x 11
 y 10
-end
-arch woodfloor2
-x 10
-y 11
 end
 arch dungeon_magic
-x 10
+x 11
+y 11
+end
+arch woodfloor2
+x 11
 y 11
 end
 arch wall_2_1_1
-x 10
+x 11
 y 11
 end
 arch swall_1_3_half
-x 10
+x 11
 y 11
 end
 arch woodfloor2
-x 10
+x 11
 y 12
 end
 arch wall_2_1_1
-x 10
+x 11
 y 12
 end
 arch woodfloor2
-x 10
+x 11
 y 13
 end
 arch wall_2_1_1
-x 10
+x 11
 y 13
 end
 arch woodfloor2
-x 10
+x 11
 y 14
 end
 arch wall_2_2_4
-x 10
+x 11
 y 14
 end
-arch grass
+arch grass_only
 x 11
+y 15
 end
-arch grass
+arch grass_only
 x 11
+y 16
+end
+arch cobblestones2
+x 12
+end
+arch grass_only
+x 12
 y 1
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 2
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 3
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 4
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 5
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 6
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 7
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 8
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 9
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 10
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 11
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 12
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 13
 end
-arch grass
-x 11
+arch grass_only
+x 12
 y 14
+end
+arch grass_only
+x 12
+y 15
+end
+arch grass_only
+x 12
+y 16
+end
+arch cobblestones2
+x 13
+end
+arch grass_only
+x 13
+y 1
+end
+arch grass_only
+x 13
+y 2
+end
+arch grass_only
+x 13
+y 3
+end
+arch grass_only
+x 13
+y 4
+end
+arch grass_only
+x 13
+y 5
+end
+arch grass_only
+x 13
+y 6
+end
+arch grass_only
+x 13
+y 7
+end
+arch grass_only
+x 13
+y 8
+end
+arch grass_only
+x 13
+y 9
+end
+arch grass_only
+x 13
+y 10
+end
+arch grass_only
+x 13
+y 11
+end
+arch grass_only
+x 13
+y 12
+end
+arch grass_only
+x 13
+y 13
+end
+arch grass_only
+x 13
+y 14
+end
+arch grass_only
+x 13
+y 15
+end
+arch grass_only
+x 13
+y 16
 end
