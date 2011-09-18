@@ -9,7 +9,7 @@ enter_x 4
 enter_y 11
 msg
 Created:  2002-12-28
-Modified: 2011-09-17 Rick Tanner
+Modified: 2011-09-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -487,9 +487,7 @@ end
 arch quarto
 title Titans
 msg
-To make gauntlets of the Titans, you will
-need gauntlets, the heart of a giant, and a
-bottle of philosophical oil.
+To make gauntlets of the Titans, you will need gauntlets, the heart of a giant, and a bottle of philosophical oil.
 endmsg
 face book_red.111
 x 5
@@ -795,8 +793,7 @@ end
 arch greater_dwarven_guard
 msg
 @match hi
-Honor Mostrai with your smithery or...
-I'll beat some respect in to you.
+Honor Mostrai with your smithery or... I'll beat some respect in to you.
 @match how
 Put the right items on the forge and use your skill.
 @match *
@@ -1094,8 +1091,7 @@ end
 arch quarto
 title Steel
 msg
-Combine a pair of shoes or boots with
-3 crystals of mithril to create steel.
+Combine a pair of shoes or boots with 3 crystals of mithril to create steel.
 endmsg
 face book_red.111
 x 9
