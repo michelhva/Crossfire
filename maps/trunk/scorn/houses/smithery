@@ -9,7 +9,7 @@ enter_x 4
 enter_y 11
 msg
 Created:  2002-12-28
-Modified: 2008-12-02 Rick Tanner
+Modified: 2011-09-17 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -194,6 +194,10 @@ arch woodfloor
 x 2
 y 2
 end
+arch dungeon_magic
+x 2
+y 3
+end
 arch stonefloor2
 x 2
 y 3
@@ -208,7 +212,7 @@ y 3
 end
 arch dungeon_magic
 x 2
-y 3
+y 4
 end
 arch stonefloor2
 x 2
@@ -220,7 +224,7 @@ y 4
 end
 arch dungeon_magic
 x 2
-y 4
+y 5
 end
 arch stonefloor2
 x 2
@@ -232,7 +236,7 @@ y 5
 end
 arch dungeon_magic
 x 2
-y 5
+y 6
 end
 arch stonefloor2
 x 2
@@ -244,7 +248,7 @@ y 6
 end
 arch dungeon_magic
 x 2
-y 6
+y 7
 end
 arch stonefloor2
 x 2
@@ -256,7 +260,7 @@ y 7
 end
 arch dungeon_magic
 x 2
-y 7
+y 8
 end
 arch stonefloor2
 x 2
@@ -267,14 +271,6 @@ x 2
 y 8
 end
 arch awall_0
-x 2
-y 8
-end
-arch dungeon_magic
-x 2
-y 8
-end
-arch dungeon_magic
 x 2
 y 8
 end
@@ -326,15 +322,15 @@ arch woodfloor
 x 3
 y 2
 end
+arch dungeon_magic
+x 3
+y 3
+end
 arch stonefloor2
 x 3
 y 3
 end
 arch swall_2_1_2
-x 3
-y 3
-end
-arch dungeon_magic
 x 3
 y 3
 end
@@ -358,15 +354,15 @@ x 3
 y 7
 type 0
 end
+arch dungeon_magic
+x 3
+y 8
+end
 arch stonefloor2
 x 3
 y 8
 end
 arch swall_2_1_2
-x 3
-y 8
-end
-arch dungeon_magic
 x 3
 y 8
 end
@@ -413,15 +409,15 @@ arch woodfloor
 x 4
 y 2
 end
+arch dungeon_magic
+x 4
+y 3
+end
 arch stonefloor2
 x 4
 y 3
 end
 arch swall_2_1_2
-x 4
-y 3
-end
-arch dungeon_magic
 x 4
 y 3
 end
@@ -560,15 +556,15 @@ arch woodfloor
 x 5
 y 2
 end
+arch dungeon_magic
+x 5
+y 3
+end
 arch stonefloor2
 x 5
 y 3
 end
 arch swall_2_1_2
-x 5
-y 3
-end
-arch dungeon_magic
 x 5
 y 3
 end
@@ -592,15 +588,15 @@ x 5
 y 7
 type 0
 end
+arch dungeon_magic
+x 5
+y 8
+end
 arch stonefloor2
 x 5
 y 8
 end
 arch swall_2_1_2
-x 5
-y 8
-end
-arch dungeon_magic
 x 5
 y 8
 end
@@ -658,6 +654,10 @@ arch woodfloor
 x 6
 y 2
 end
+arch dungeon_magic
+x 6
+y 3
+end
 arch stonefloor2
 x 6
 y 3
@@ -672,7 +672,7 @@ y 3
 end
 arch dungeon_magic
 x 6
-y 3
+y 4
 end
 arch stonefloor2
 x 6
@@ -684,7 +684,7 @@ y 4
 end
 arch dungeon_magic
 x 6
-y 4
+y 5
 end
 arch stonefloor2
 x 6
@@ -696,7 +696,7 @@ y 5
 end
 arch dungeon_magic
 x 6
-y 5
+y 6
 end
 arch stonefloor2
 x 6
@@ -708,7 +708,7 @@ y 6
 end
 arch dungeon_magic
 x 6
-y 6
+y 7
 end
 arch stonefloor2
 x 6
@@ -720,7 +720,7 @@ y 7
 end
 arch dungeon_magic
 x 6
-y 7
+y 8
 end
 arch stonefloor2
 x 6
@@ -731,10 +731,6 @@ x 6
 y 8
 end
 arch awall_0
-x 6
-y 8
-end
-arch dungeon_magic
 x 6
 y 8
 end
