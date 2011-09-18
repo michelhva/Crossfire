@@ -11,6 +11,7 @@ msg
 Created:  2002-12-28
 Modified: 2011-09-17 Rick Tanner
 endmsg
+outdoor 1
 end
 arch cobblestones2
 end
@@ -183,11 +184,15 @@ arch wall_2_1_1
 x 2
 y 6
 end
+arch light2
+x 2
+y 7
+end
 arch woodfloor
 x 2
 y 7
 end
-arch wall_2_1_1
+arch window_win1
 x 2
 y 7
 end
@@ -382,6 +387,10 @@ arch woodfloor
 x 4
 y 4
 end
+arch light4
+x 4
+y 5
+end
 arch woodfloor
 x 4
 y 5
@@ -405,6 +414,10 @@ end
 arch woodfloor
 x 4
 y 10
+end
+arch light4
+x 4
+y 11
 end
 arch woodfloor
 x 4
@@ -575,6 +588,10 @@ arch woodfloor
 x 5
 y 12
 end
+arch light3
+x 5
+y 13
+end
 arch woodfloor
 x 5
 y 13
@@ -583,11 +600,15 @@ arch woodfloor
 x 5
 y 14
 end
+arch light2
+x 5
+y 15
+end
 arch woodfloor
 x 5
 y 15
 end
-arch wall_2_1_2
+arch window_win2
 x 5
 y 15
 end
@@ -613,6 +634,10 @@ end
 arch wall_2_1_2
 x 6
 y 2
+end
+arch light3
+x 6
+y 3
 end
 arch woodfloor
 x 6
@@ -687,6 +712,11 @@ arch woodfloor
 x 6
 y 13
 end
+arch button_small
+x 6
+y 14
+connected 2
+end
 arch woodfloor
 x 6
 y 14
@@ -698,6 +728,17 @@ end
 arch wall_1_3
 x 6
 y 15
+end
+arch dungeon_magic
+x 6
+y 16
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 10
+sp 39
+x 6
+y 16
 end
 arch grass_only
 x 6
@@ -790,6 +831,10 @@ arch forge
 x 7
 y 7
 end
+arch light2
+x 7
+y 8
+end
 arch stonefloor2
 x 7
 y 8
@@ -852,20 +897,39 @@ arch woodfloor
 x 7
 y 13
 end
+arch button_small
+x 7
+y 14
+connected 2
+end
 arch woodfloor
 x 7
 y 14
 end
+arch button_small
+x 7
+y 15
+connected 2
+end
 arch woodfloor
 x 7
 y 15
 end
-arch oakdoor_2
+arch odoorn2_closed_1
+x 7
+y 15
+connected 2
+end
+arch dungeon_magic
+x 7
+y 16
+end
+arch invis_exit
 slaying /world/world_105_115
 hp 10
 sp 39
 x 7
-y 15
+y 16
 end
 arch grass_only
 x 7
@@ -889,6 +953,10 @@ end
 arch wall_2_1_2
 x 8
 y 2
+end
+arch light3
+x 8
+y 3
 end
 arch woodfloor
 x 8
@@ -963,6 +1031,11 @@ arch woodfloor
 x 8
 y 13
 end
+arch button_small
+x 8
+y 14
+connected 2
+end
 arch woodfloor
 x 8
 y 14
@@ -974,6 +1047,17 @@ end
 arch wall_1_4
 x 8
 y 15
+end
+arch dungeon_magic
+x 8
+y 16
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 10
+sp 39
+x 8
+y 16
 end
 arch grass_only
 x 8
@@ -1110,6 +1194,10 @@ arch woodfloor
 x 9
 y 12
 end
+arch light3
+x 9
+y 13
+end
 arch woodfloor
 x 9
 y 13
@@ -1118,11 +1206,15 @@ arch woodfloor
 x 9
 y 14
 end
+arch light2
+x 9
+y 15
+end
 arch woodfloor
 x 9
 y 15
 end
-arch wall_2_1_2
+arch window_win2
 x 9
 y 15
 end
@@ -1157,6 +1249,10 @@ arch woodfloor
 x 10
 y 4
 end
+arch light4
+x 10
+y 5
+end
 arch woodfloor
 x 10
 y 5
@@ -1180,6 +1276,10 @@ end
 arch woodfloor
 x 10
 y 10
+end
+arch light4
+x 10
+y 11
 end
 arch woodfloor
 x 10
@@ -1365,11 +1465,15 @@ arch wall_2_1_1
 x 12
 y 6
 end
+arch light2
+x 12
+y 7
+end
 arch woodfloor
 x 12
 y 7
 end
-arch wall_2_1_1
+arch window_win1
 x 12
 y 7
 end
