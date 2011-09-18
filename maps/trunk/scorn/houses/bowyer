@@ -9,7 +9,7 @@ enter_x 6
 enter_y 14
 msg
 Created:  2002-12-28
-Modified: 2011-09-15 Rick Tanner
+Modified: 2011-09-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -292,9 +292,7 @@ end
 arch book_clasp
 title Dragons
 msg
-Create projectiles of Slay Dragon
-with 20 bolts or arrows and a
-single claw from one of the beasts.
+Create projectiles of Slay Dragon with 20 bolts or arrows and a single claw from one of the beasts.
 endmsg
 x 3
 y 3
@@ -316,9 +314,7 @@ end
 arch book_clasp
 title Fire
 msg
-Create projectiles of Fire
-with 20 bolts or arrows and the
-meat of a wyvern.
+Create projectiles of Fire with 20 bolts or arrows and the meat of a wyvern.
 endmsg
 x 3
 y 5
@@ -336,9 +332,7 @@ end
 arch book_clasp
 title Cold
 msg
-Create projectiles of Cold
-with 20 bolts or arrows and the
-remnants of a ghost.
+Create projectiles of Cold with 20 bolts or arrows and the remnants of a ghost.
 endmsg
 x 3
 y 6
@@ -356,9 +350,7 @@ end
 arch book_clasp
 title Paralysis
 msg
-Projectiles of Paralysis can be
-made with 20 arrows or bolts and
-the eye of a beholder.
+Projectiles of Paralysis can be made with 20 arrows or bolts and the eye of a beholder.
 endmsg
 x 3
 y 7
@@ -376,9 +368,7 @@ end
 arch book_clasp
 title Poison
 msg
-Projectiles of Poison can be
-made with 20 arrows or bolts and
-the stinger of a scorpion.
+Projectiles of Poison can be made with 20 arrows or bolts and the stinger of a scorpion.
 endmsg
 x 3
 y 8
@@ -414,14 +404,9 @@ msg
 @match dust|sawdust|glue
 Please pardon our dust, we're remodeling.
 @match bowyer|missile|arrow|bolt|skill|help
-Here you can use your skill bowyer to
-create new items.  Simply place the appropriate
-ingredients in the workbench, and use_skill bowyer.
-If things go well, you will have created a new item.
+Here you can use your skill bowyer to create new items.  Simply place the appropriate ingredients in the workbench, and use_skill bowyer. If things go well, you will have created a new item.
 @match *
-Welcome, feel free to use my workbench,
-I'm not using it right now.  Just ask me
-about using your bowyer skill.
+Welcome, feel free to use my workbench, I'm not using it right now.  Just ask me about using your bowyer skill.
 endmsg
 x 3
 y 12
@@ -1242,9 +1227,7 @@ end
 arch book_clasp
 title Lightning
 msg
-Projectiles of Lightning
-can be made with 20 arrows or bolts
-and the tooth of a skull.
+Projectiles of Lightning can be made with 20 arrows or bolts and the tooth of a skull.
 endmsg
 x 10
 y 3

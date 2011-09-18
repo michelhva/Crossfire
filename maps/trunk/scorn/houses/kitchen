@@ -8,7 +8,7 @@ enter_x 4
 enter_y 11
 msg
 Created:  2002-12-29
-Modified: 2011-09-15 Rick Tanner
+Modified: 2011-09-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -346,9 +346,7 @@ end
 arch woman
 msg
 @match *
-Look at you...covered in mud and monster blood...
-You think that is supposed to turn a girl on?
-Go away before I call the guards!
+Look at you...covered in mud and monster blood... You think that is supposed to turn a girl on? Go away before I call the guards!
 endmsg
 exp 1
 x 3
@@ -382,8 +380,7 @@ end
 arch charwoman
 msg
 @match *
-You adventures... always making a mess of our town.
-Go find adventure elsewhere!
+You adventures... always making a mess of our town. Go find adventure elsewhere!
 endmsg
 exp 1
 x 3
@@ -405,8 +402,7 @@ arch guildmaster
 name thief
 msg
 @match *
-Never sit with your back to the door...
-at least in this town.
+Never sit with your back to the door... at least in this town.
 endmsg
 face thief.151
 hp 100
@@ -607,9 +603,7 @@ end
 arch book_clasp
 title of Gourmet
 msg
-A mushroom which provides a bit more
-for the refined tastes, can be made with
-7 mushrooms, and water of the wise.
+A mushroom which provides a bit more for the refined tastes, can be made with 7 mushrooms, and water of the wise.
 endmsg
 x 5
 y 3
@@ -930,9 +924,7 @@ end
 arch book_clasp
 title of Aelingas
 msg
-The fabled waybread of Aelingas requires
-7 of the elven wafers, and a draught of
-hero's drink.
+The fabled waybread of Aelingas requires 7 of the elven wafers, and a draught of hero's drink.
 endmsg
 x 7
 y 3
@@ -1189,14 +1181,11 @@ end
 arch a_townsman3
 msg
 @match *
-Don't bother talking to the monk.
-I think he has taken a vow of silence.
-I wish my wife would take a vow of silence.
+Don't bother talking to the monk. I think he has taken a vow of silence. I wish my wife would take a vow of silence.
 Have you seen the state of the town lately?
 I think we should petition the King?
 You should try cooking.
-For a 100 platinum they teach you how...
-if you have woodlore that is.
+For a 100 platinum they teach you how... if you have woodlore that is.
 My this coffee is strong...
 endmsg
 exp 1
@@ -1373,8 +1362,7 @@ arch guildmaster
 name monk
 msg
 @match *
-<In a whisper>  I wish he would just shutup...
-Oh my, I musn't think like that what would Gaea do?
+<In a whisper>  I wish he would just shutup... Oh my, I musn't think like that what would Gaea do?
 endmsg
 face monk.151
 hp 100

@@ -8,7 +8,7 @@ enter_x 5
 enter_y 10
 msg
 Created:  2002-12-29
-Modified: 2011-09-17 Rick Tanner
+Modified: 2011-09-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -580,9 +580,7 @@ end
 arch quarto
 title Marksmanship
 msg
-Gloves of Marksmanship can be made with
-gloves, 5 arrows of accuracy, and a bottle
-of mineral oil.
+Gloves of Marksmanship can be made with gloves, 5 arrows of accuracy, and a bottle of mineral oil.
 endmsg
 x 5
 y 3
@@ -881,9 +879,7 @@ arch a_townsman2
 name Tanning Master
 msg
 @match *
-Can't you see I am busy...
-Neko scarves are the latest rage at court.
-If you don't want to be an apprentice, then read the books!
+Can't you see I am busy... Neko scarves are the latest rage at court. If you don't want to be an apprentice, then read the books!
 endmsg
 exp 1
 x 7
@@ -1172,9 +1168,7 @@ end
 arch quarto
 title Minor Protection
 msg
-A cloak of minor protection can be
-manufactured by adding a balm of
-aethereality to a cloak.
+A cloak of minor protection can be manufactured by adding a balm of aethereality to a cloak.
 endmsg
 x 9
 y 3
