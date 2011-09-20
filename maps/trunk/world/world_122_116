@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2011-09-19 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -3018,11 +3018,22 @@ arch cobblestones2
 x 8
 y 45
 end
+arch westcwall_2_2_2
+x 8
+y 45
+end
 arch dungeon_magic
 x 8
 y 46
 end
 arch cobblestones2
+x 8
+y 46
+end
+arch westguard_house_1
+slaying ../navar_city/westgatehouse
+hp 1
+sp 6
 x 8
 y 46
 end
@@ -3031,6 +3042,10 @@ x 8
 y 47
 end
 arch cobblestones2
+x 8
+y 47
+end
+arch westcwall_2_2_1
 x 8
 y 47
 end
@@ -3359,10 +3374,6 @@ arch westcwall_2_1_1
 x 9
 y 44
 end
-arch westcwall_1_1
-x 9
-y 44
-end
 arch dungeon_magic
 x 9
 y 45
@@ -3371,7 +3382,7 @@ arch cobblestones2
 x 9
 y 45
 end
-arch westcityport_b
+arch westcwall_4
 x 9
 y 45
 end
@@ -3383,7 +3394,14 @@ arch cobblestones2
 x 9
 y 46
 end
-arch westcityport_b
+arch westguard_house_1
+x 9
+y 46
+type 0
+move_block all
+is_floor 1
+end
+arch westguard_house_2
 x 9
 y 46
 end
@@ -3395,7 +3413,7 @@ arch cobblestones2
 x 9
 y 47
 end
-arch westcityport_b
+arch westcwall_4
 x 9
 y 47
 end
@@ -3408,10 +3426,6 @@ x 9
 y 48
 end
 arch westcwall_2_1_1
-x 9
-y 48
-end
-arch westcwall_1_1
 x 9
 y 48
 end
@@ -3742,11 +3756,22 @@ arch cobblestones2
 x 10
 y 45
 end
+arch westcwall_2_2_3
+x 10
+y 45
+end
 arch dungeon_magic
 x 10
 y 46
 end
 arch cobblestones2
+x 10
+y 46
+end
+arch westguard_house_2
+slaying ../navar_city/westgatehouse
+hp 19
+sp 6
 x 10
 y 46
 end
@@ -3755,6 +3780,10 @@ x 10
 y 47
 end
 arch cobblestones2
+x 10
+y 47
+end
+arch westcwall_2_2_4
 x 10
 y 47
 end
