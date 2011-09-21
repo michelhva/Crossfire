@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2011-06-28 Andreas Kirschbaum
+Modified: 2011-09-20 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -4634,7 +4634,7 @@ arch cobblestones2
 x 13
 y 3
 end
-arch westcwall_2_1_2
+arch westcwall_3_3
 x 13
 y 3
 end
@@ -4646,15 +4646,9 @@ arch grass
 x 13
 y 4
 end
-arch guard
-msg
-@match *
-'Ello, 'ello, 'ello...
-'Wot have we 'ere then?
-endmsg
+arch westcwall_2_2_1
 x 13
 y 4
-speed_left -4.000000
 end
 arch dungeon_magic
 x 13
@@ -4967,7 +4961,10 @@ arch cobblestones2
 x 14
 y 3
 end
-arch westcityport_a
+arch westguard_house_4
+slaying ../navar_city/southgatehouse
+hp 7
+sp 1
 x 14
 y 3
 end
@@ -4976,6 +4973,13 @@ x 14
 y 4
 end
 arch cobblestones2
+x 14
+y 4
+end
+arch westguard_house_3
+slaying ../navar_city/southgatehouse
+hp 6
+sp 16
 x 14
 y 4
 end
@@ -5267,7 +5271,10 @@ arch cobblestones2
 x 15
 y 3
 end
-arch westcityport_a
+arch westguard_house_4
+slaying ../navar_city/southgatehouse
+hp 14
+sp 1
 x 15
 y 3
 end
@@ -5276,6 +5283,13 @@ x 15
 y 4
 end
 arch cobblestones2
+x 15
+y 4
+end
+arch westguard_house_3
+slaying ../navar_city/southgatehouse
+hp 13
+sp 16
 x 15
 y 4
 end
@@ -5602,7 +5616,7 @@ arch cobblestones2
 x 16
 y 3
 end
-arch westcwall_2_1_2
+arch westcwall_3_3
 x 16
 y 3
 end
@@ -5614,14 +5628,9 @@ arch grass
 x 16
 y 4
 end
-arch guard
-msg
-@match *
-You may pass...
-endmsg
+arch westcwall_2_2_4
 x 16
 y 4
-speed_left -4.000000
 end
 arch dungeon_magic
 x 16
