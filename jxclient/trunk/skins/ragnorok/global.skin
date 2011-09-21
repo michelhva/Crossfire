@@ -117,18 +117,27 @@ key char 34 -e say -
 key code UP 2 run 1
 key code KP_UP 2 run 1
 key code NUMPAD8 2 run 1
+key code EQUALS 2 run 1
 key code UP 1 north f
 key code KP_UP 1 north f
 key code NUMPAD8 1 north f
+key code EQUALS 1 north f
 key code UP 0 north
 key code KP_UP 0 north
 key code NUMPAD8 0 north
+key code EQUALS 0 north
 key code PAGE_UP 2 run 2
 key code NUMPAD9 2 run 2
+key code CLEAR 2 run 2
+key code DIVIDE 2 run 2
 key code PAGE_UP 1 northeast f
 key code NUMPAD9 1 northeast f
+key code CLEAR 1 northeast f
+key code DIVIDE 1 northeast f
 key code PAGE_UP 0 northeast
 key code NUMPAD9 0 northeast
+key code CLEAR 0 northeast
+key code DIVIDE 0 northeast
 key code RIGHT 2 run 3
 key code KP_RIGHT 2 run 3
 key code NUMPAD6 2 run 3
