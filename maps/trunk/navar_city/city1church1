@@ -610,7 +610,7 @@ arch stwall_0
 x 3
 y 6
 end
-arch blackslate
+arch dungeon_magic
 x 3
 y 7
 end
@@ -623,6 +623,10 @@ y 7
 end
 arch blackslate
 x 3
+y 7
+end
+arch blackslate
+x 3
 y 8
 end
 arch stwall_1_1
@@ -645,7 +649,7 @@ arch stwall_0
 x 3
 y 9
 end
-arch blackslate
+arch dungeon_magic
 x 3
 y 10
 end
@@ -658,6 +662,10 @@ y 10
 end
 arch blackslate
 x 3
+y 10
+end
+arch blackslate
+x 3
 y 11
 end
 arch stwall_1_1
@@ -680,7 +688,7 @@ arch stwall_0
 x 3
 y 12
 end
-arch blackslate
+arch dungeon_magic
 x 3
 y 13
 end
@@ -693,6 +701,10 @@ y 13
 end
 arch blackslate
 x 3
+y 13
+end
+arch blackslate
+x 3
 y 14
 end
 arch stwall_1_1
@@ -715,7 +727,7 @@ arch stwall_0
 x 3
 y 15
 end
-arch blackslate
+arch dungeon_magic
 x 3
 y 16
 end
@@ -728,6 +740,10 @@ y 16
 end
 arch blackslate
 x 3
+y 16
+end
+arch blackslate
+x 3
 y 17
 end
 arch stwall_1_1
@@ -750,7 +766,7 @@ arch stwall_0
 x 3
 y 18
 end
-arch blackslate
+arch dungeon_magic
 x 3
 y 19
 end
@@ -763,6 +779,10 @@ y 19
 end
 arch blackslate
 x 3
+y 19
+end
+arch blackslate
+x 3
 y 20
 end
 arch stwall_1_1
@@ -785,7 +805,7 @@ arch stwall_0
 x 3
 y 21
 end
-arch blackslate
+arch dungeon_magic
 x 3
 y 22
 end
@@ -798,6 +818,10 @@ y 22
 end
 arch blackslate
 x 3
+y 22
+end
+arch blackslate
+x 3
 y 23
 end
 arch stwall_1_1
@@ -820,7 +844,7 @@ arch stwall_0
 x 3
 y 24
 end
-arch blackslate
+arch dungeon_magic
 x 3
 y 25
 end
@@ -833,6 +857,10 @@ y 25
 end
 arch blackslate
 x 3
+y 25
+end
+arch blackslate
+x 3
 y 26
 end
 arch stwall_1_1
@@ -855,7 +883,7 @@ arch stwall_0
 x 3
 y 27
 end
-arch blackslate
+arch dungeon_magic
 x 3
 y 28
 end
@@ -868,6 +896,10 @@ y 28
 end
 arch blackslate
 x 3
+y 28
+end
+arch blackslate
+x 3
 y 29
 end
 arch stwall_1_1
@@ -890,7 +922,7 @@ arch stwall_0
 x 3
 y 30
 end
-arch blackslate
+arch dungeon_magic
 x 3
 y 31
 end
@@ -898,6 +930,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 45
 sp 14
+x 3
+y 31
+end
+arch blackslate
 x 3
 y 31
 end
@@ -1139,7 +1175,7 @@ arch slevel_3_3
 x 5
 y 3
 end
-arch blackslate
+arch dungeon_magic
 x 5
 y 4
 end
@@ -1147,6 +1183,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 45
 sp 11
+x 5
+y 4
+end
+arch blackslate
 x 5
 y 4
 end
@@ -1266,7 +1306,7 @@ arch blackslate
 x 5
 y 33
 end
-arch blackslate
+arch dungeon_magic
 x 5
 y 34
 end
@@ -1274,6 +1314,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 46
 sp 14
+x 5
+y 34
+end
+arch blackslate
 x 5
 y 34
 end
@@ -2292,7 +2336,7 @@ arch slevel_3_3
 x 10
 y 3
 end
-arch blackslate
+arch dungeon_magic
 x 10
 y 4
 end
@@ -2300,6 +2344,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 45
 sp 11
+x 10
+y 4
+end
+arch blackslate
 x 10
 y 4
 end
@@ -2984,7 +3032,7 @@ arch blackslate
 x 12
 y 33
 end
-arch blackslate
+arch dungeon_magic
 x 12
 y 34
 end
@@ -2992,6 +3040,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 47
 sp 14
+x 12
+y 34
+end
+arch blackslate
 x 12
 y 34
 end
@@ -3206,7 +3258,7 @@ arch blackslate
 x 13
 y 33
 end
-arch blackslate
+arch dungeon_magic
 x 13
 y 34
 end
@@ -3214,6 +3266,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 47
 sp 14
+x 13
+y 34
+end
+arch blackslate
 x 13
 y 34
 end
@@ -3823,7 +3879,7 @@ arch blackslate
 x 16
 y 33
 end
-arch blackslate
+arch dungeon_magic
 x 16
 y 34
 end
@@ -3831,6 +3887,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 47
 sp 14
+x 16
+y 34
+end
+arch blackslate
 x 16
 y 34
 end
@@ -4082,7 +4142,7 @@ arch blackslate
 x 17
 y 33
 end
-arch blackslate
+arch dungeon_magic
 x 17
 y 34
 end
@@ -4090,6 +4150,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 47
 sp 14
+x 17
+y 34
+end
+arch blackslate
 x 17
 y 34
 end
@@ -4352,7 +4416,7 @@ arch slevel_3_3
 x 19
 y 3
 end
-arch blackslate
+arch dungeon_magic
 x 19
 y 4
 end
@@ -4360,6 +4424,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 49
 sp 11
+x 19
+y 4
+end
+arch blackslate
 x 19
 y 4
 end
@@ -5583,7 +5651,7 @@ arch slevel_3_3
 x 24
 y 3
 end
-arch blackslate
+arch dungeon_magic
 x 24
 y 4
 end
@@ -5591,6 +5659,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 49
 sp 11
+x 24
+y 4
+end
+arch blackslate
 x 24
 y 4
 end
@@ -5710,7 +5782,7 @@ arch blackslate
 x 24
 y 33
 end
-arch blackslate
+arch dungeon_magic
 x 24
 y 34
 end
@@ -5718,6 +5790,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 48
 sp 14
+x 24
+y 34
+end
+arch blackslate
 x 24
 y 34
 end
@@ -5959,7 +6035,7 @@ arch stwall_0
 x 26
 y 6
 end
-arch blackslate
+arch dungeon_magic
 x 26
 y 7
 end
@@ -5972,6 +6048,10 @@ y 7
 end
 arch blackslate
 x 26
+y 7
+end
+arch blackslate
+x 26
 y 8
 end
 arch stwall_1_1
@@ -5994,7 +6074,7 @@ arch stwall_0
 x 26
 y 9
 end
-arch blackslate
+arch dungeon_magic
 x 26
 y 10
 end
@@ -6007,6 +6087,10 @@ y 10
 end
 arch blackslate
 x 26
+y 10
+end
+arch blackslate
+x 26
 y 11
 end
 arch stwall_1_1
@@ -6029,7 +6113,7 @@ arch stwall_0
 x 26
 y 12
 end
-arch blackslate
+arch dungeon_magic
 x 26
 y 13
 end
@@ -6042,6 +6126,10 @@ y 13
 end
 arch blackslate
 x 26
+y 13
+end
+arch blackslate
+x 26
 y 14
 end
 arch stwall_1_1
@@ -6064,7 +6152,7 @@ arch stwall_0
 x 26
 y 15
 end
-arch blackslate
+arch dungeon_magic
 x 26
 y 16
 end
@@ -6077,6 +6165,10 @@ y 16
 end
 arch blackslate
 x 26
+y 16
+end
+arch blackslate
+x 26
 y 17
 end
 arch stwall_1_1
@@ -6099,7 +6191,7 @@ arch stwall_0
 x 26
 y 18
 end
-arch blackslate
+arch dungeon_magic
 x 26
 y 19
 end
@@ -6112,6 +6204,10 @@ y 19
 end
 arch blackslate
 x 26
+y 19
+end
+arch blackslate
+x 26
 y 20
 end
 arch stwall_1_1
@@ -6134,7 +6230,7 @@ arch stwall_0
 x 26
 y 21
 end
-arch blackslate
+arch dungeon_magic
 x 26
 y 22
 end
@@ -6147,6 +6243,10 @@ y 22
 end
 arch blackslate
 x 26
+y 22
+end
+arch blackslate
+x 26
 y 23
 end
 arch stwall_1_1
@@ -6169,7 +6269,7 @@ arch stwall_0
 x 26
 y 24
 end
-arch blackslate
+arch dungeon_magic
 x 26
 y 25
 end
@@ -6182,6 +6282,10 @@ y 25
 end
 arch blackslate
 x 26
+y 25
+end
+arch blackslate
+x 26
 y 26
 end
 arch stwall_1_1
@@ -6204,7 +6308,7 @@ arch stwall_0
 x 26
 y 27
 end
-arch blackslate
+arch dungeon_magic
 x 26
 y 28
 end
@@ -6217,6 +6321,10 @@ y 28
 end
 arch blackslate
 x 26
+y 28
+end
+arch blackslate
+x 26
 y 29
 end
 arch stwall_1_1
@@ -6239,7 +6347,7 @@ arch stwall_0
 x 26
 y 30
 end
-arch blackslate
+arch dungeon_magic
 x 26
 y 31
 end
@@ -6247,6 +6355,10 @@ arch invis_exit
 slaying /world/world_121_117
 hp 49
 sp 14
+x 26
+y 31
+end
+arch blackslate
 x 26
 y 31
 end
