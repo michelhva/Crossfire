@@ -8,7 +8,7 @@ enter_x 8
 enter_y 14
 msg
 Created:  1997-06-19
-Modified: 2009-02-11 Rick Tanner
+Modified: 2011-09-25 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -207,6 +207,7 @@ end
 arch random_food
 x 1
 y 13
+blessed 1
 end
 arch woodfloor
 x 1
@@ -215,6 +216,7 @@ end
 arch random_food
 x 1
 y 14
+blessed 1
 end
 arch woodfloor
 x 1
@@ -321,6 +323,7 @@ end
 arch random_food
 x 2
 y 13
+blessed 1
 end
 arch woodfloor
 x 2
@@ -329,6 +332,7 @@ end
 arch random_food
 x 2
 y 14
+blessed 1
 end
 arch mouse
 x 2
@@ -367,6 +371,7 @@ end
 arch random_food
 x 3
 y 3
+blessed 1
 end
 arch woodfloor
 x 3
@@ -435,6 +440,7 @@ end
 arch random_food
 x 3
 y 14
+blessed 1
 end
 arch mouse
 x 3
@@ -533,6 +539,7 @@ end
 arch random_food
 x 4
 y 14
+blessed 1
 end
 arch mouse
 x 4
@@ -559,6 +566,7 @@ end
 arch random_food
 x 5
 y 1
+blessed 1
 end
 arch woodfloor
 x 5
@@ -654,6 +662,7 @@ end
 arch random_food
 x 5
 y 14
+blessed 1
 end
 arch mouse
 x 5
