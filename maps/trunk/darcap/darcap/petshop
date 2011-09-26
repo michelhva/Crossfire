@@ -1,6 +1,7 @@
 arch map
 name petshop
 difficulty 5
+region darcap
 shopitems container:95;food:80
 shopgreed 1.50000
 shoprace fenx
@@ -8,7 +9,7 @@ width 40
 height 25
 msg
 Created:  2010-09-28 neodeno
-Modified: 2011-09-10 crossfire
+Modified: 2011-09-25 Rick Tanner
 endmsg
 outdoor 1
 end
