@@ -6382,11 +6382,26 @@ arch grass_only
 x 26
 y 10
 end
+arch cwall_2_2_2
+x 26
+y 10
+end
 arch cobblestones
 x 26
 y 11
 end
+arch guard_house_1
+slaying ../santo_dominion/sdgatehouse
+hp 2
+sp 9
+x 26
+y 11
+end
 arch grass
+x 26
+y 12
+end
+arch cwall_2_2_1
 x 26
 y 12
 end
@@ -6609,7 +6624,7 @@ arch grass_only
 x 27
 y 10
 end
-arch cwall_2_1_1
+arch cwall_4
 x 27
 y 10
 end
@@ -6617,7 +6632,7 @@ arch cobblestones
 x 27
 y 11
 end
-arch cityport_b
+arch guard_house_2
 x 27
 y 11
 end
@@ -6625,7 +6640,7 @@ arch grass
 x 27
 y 12
 end
-arch dwall_2_1_1
+arch cwall_4
 x 27
 y 12
 end
@@ -6888,11 +6903,30 @@ arch cobblestones
 x 28
 y 10
 end
-arch cobblestones
+arch cwall_2_2_3
+x 28
+y 10
+end
+arch invis_exit
+slaying ../santo_dominion/sdgatehouse
+hp 22
+sp 9
 x 28
 y 11
 end
 arch cobblestones
+x 28
+y 11
+end
+arch cityport_b
+x 28
+y 11
+end
+arch cobblestones
+x 28
+y 12
+end
+arch cwall_2_2_4
 x 28
 y 12
 end
