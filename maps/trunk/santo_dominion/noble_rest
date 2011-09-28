@@ -2897,13 +2897,9 @@ arch veiled_woman3
 name woman
 msg
 @match ring
-No, I don't want to speak to you
-anymore... Go away!
+No, I don't want to speak to you anymore... Go away!
 @match mudman
-The Mudman is living in the mud south-
-west, outside the city walls.
-He is very dangerous, because of his
-magic ring.
+The Mudman is living in the mud southwest, outside the city walls. He is very dangerous, because of his magic ring.
 @match *
 Beware of the Mudman!
 endmsg
