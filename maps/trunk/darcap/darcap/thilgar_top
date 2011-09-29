@@ -5,7 +5,7 @@ width 20
 height 20
 msg
 Created:  2010-02-14 Nicolas Weeger
-Modified: 2010-02-14 Nicolas Weeger
+Modified: 2011-09-28 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -387,7 +387,7 @@ arch marble
 x 4
 y 5
 end
-arch swall_1_3
+arch swall_2_1_2
 x 4
 y 5
 end
@@ -431,7 +431,7 @@ arch marble
 x 4
 y 15
 end
-arch swall_1_3
+arch swall_2_1_2
 x 4
 y 15
 end
@@ -491,6 +491,10 @@ x 5
 y 5
 end
 arch white_wall_1_2
+x 5
+y 5
+end
+arch swall_1_3_half
 x 5
 y 5
 end
@@ -567,6 +571,10 @@ x 5
 y 15
 end
 arch white_wall_2_1_1
+x 5
+y 15
+end
+arch swall_1_3_half
 x 5
 y 15
 end
@@ -1355,6 +1363,10 @@ arch white_wall_1_2
 x 14
 y 5
 end
+arch swall_1_4_half
+x 14
+y 5
+end
 arch marble
 x 14
 y 6
@@ -1427,6 +1439,10 @@ arch marble
 x 14
 y 15
 end
+arch swall_1_4_half
+x 14
+y 15
+end
 arch white_wall_2_1_1
 x 14
 y 15
@@ -1486,7 +1502,7 @@ arch marble
 x 15
 y 5
 end
-arch swall_1_4
+arch swall_2_1_2
 x 15
 y 5
 end
@@ -1530,7 +1546,7 @@ arch marble
 x 15
 y 15
 end
-arch swall_1_4
+arch swall_2_1_2
 x 15
 y 15
 end
