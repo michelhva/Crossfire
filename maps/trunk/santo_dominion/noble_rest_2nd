@@ -8,7 +8,7 @@ height 22
 enter_x 9
 enter_y 1
 msg
-Modified: 2011-09-28 Rick Tanner
+Modified: 2011-09-29 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2010,10 +2010,6 @@ arch white_wall_1_3
 x 12
 y 10
 end
-arch white_wall_0
-x 12
-y 10
-end
 arch dungeon_magic
 x 12
 y 11
@@ -2057,10 +2053,6 @@ x 12
 y 13
 end
 arch white_wall_1_3
-x 12
-y 13
-end
-arch white_wall_0
 x 12
 y 13
 end
@@ -2462,10 +2454,6 @@ arch white_wall_1_4
 x 14
 y 10
 end
-arch white_wall_0
-x 14
-y 10
-end
 arch dungeon_magic
 x 14
 y 11
@@ -2495,10 +2483,6 @@ x 14
 y 13
 end
 arch white_wall_1_4
-x 14
-y 13
-end
-arch white_wall_0
 x 14
 y 13
 end
