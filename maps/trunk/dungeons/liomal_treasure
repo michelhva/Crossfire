@@ -6,7 +6,7 @@ width 27
 height 27
 msg
 Created:  2010-07-17 Nicolas Weeger
-Modified: 2010-07-18 Nicolas Weeger
+Modified: 2011-09-29 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -83,6 +83,9 @@ end
 arch woodfloor
 y 12
 end
+arch swall_1_4_half
+y 12
+end
 arch westcwall_2_1_1
 y 12
 end
@@ -93,6 +96,9 @@ arch westcwall_2_1_1
 y 13
 end
 arch woodfloor
+y 14
+end
+arch swall_1_4_half
 y 14
 end
 arch westcwall_2_1_1
@@ -272,7 +278,7 @@ arch woodfloor
 x 1
 y 12
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 12
 end
@@ -284,7 +290,7 @@ arch woodfloor
 x 1
 y 14
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 14
 end
@@ -1104,7 +1110,7 @@ arch woodfloor
 x 5
 y 12
 end
-arch swall_1_3
+arch swall_2_1_2
 x 5
 y 12
 end
@@ -1116,7 +1122,7 @@ arch woodfloor
 x 5
 y 14
 end
-arch swall_1_3
+arch swall_2_1_2
 x 5
 y 14
 end
@@ -1480,7 +1486,7 @@ arch woodfloor
 x 7
 y 12
 end
-arch swall_1_4
+arch swall_2_1_2
 x 7
 y 12
 end
@@ -1492,7 +1498,7 @@ arch woodfloor
 x 7
 y 14
 end
-arch swall_1_4
+arch swall_2_1_2
 x 7
 y 14
 end
@@ -2434,11 +2440,14 @@ end
 arch westcwall_2_1_2
 x 12
 end
+arch swall_1_1_half
+x 12
+end
 arch woodfloor
 x 12
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 12
 y 1
 end
@@ -2626,11 +2635,15 @@ arch woodfloor
 x 12
 y 25
 end
-arch swall_1_2
+arch swall_2_1_1
 x 12
 y 25
 end
 arch woodfloor
+x 12
+y 26
+end
+arch swall_1_2_half
 x 12
 y 26
 end
@@ -2773,11 +2786,14 @@ end
 arch westcwall_2_1_2
 x 14
 end
+arch swall_1_1_half
+x 14
+end
 arch woodfloor
 x 14
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 14
 y 1
 end
@@ -2965,11 +2981,15 @@ arch woodfloor
 x 14
 y 25
 end
-arch swall_1_2
+arch swall_2_1_1
 x 14
 y 25
 end
 arch woodfloor
+x 14
+y 26
+end
+arch swall_1_2_half
 x 14
 y 26
 end
@@ -3911,7 +3931,7 @@ arch woodfloor
 x 19
 y 12
 end
-arch swall_1_3
+arch swall_2_1_2
 x 19
 y 12
 end
@@ -3923,7 +3943,7 @@ arch woodfloor
 x 19
 y 14
 end
-arch swall_1_3
+arch swall_2_1_2
 x 19
 y 14
 end
@@ -4287,7 +4307,7 @@ arch woodfloor
 x 21
 y 12
 end
-arch swall_1_4
+arch swall_2_1_2
 x 21
 y 12
 end
@@ -4299,7 +4319,7 @@ arch woodfloor
 x 21
 y 14
 end
-arch swall_1_4
+arch swall_2_1_2
 x 21
 y 14
 end
@@ -5119,7 +5139,7 @@ arch woodfloor
 x 25
 y 12
 end
-arch swall_1_3
+arch swall_2_1_2
 x 25
 y 12
 end
@@ -5131,7 +5151,7 @@ arch woodfloor
 x 25
 y 14
 end
-arch swall_1_3
+arch swall_2_1_2
 x 25
 y 14
 end
@@ -5337,6 +5357,10 @@ arch westcwall_2_1_1
 x 26
 y 12
 end
+arch swall_1_3_half
+x 26
+y 12
+end
 arch woodfloor
 x 26
 y 13
@@ -5350,6 +5374,10 @@ x 26
 y 14
 end
 arch westcwall_2_1_1
+x 26
+y 14
+end
+arch swall_1_3_half
 x 26
 y 14
 end
