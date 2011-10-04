@@ -2,123 +2,341 @@ arch map
 name Run-down Church
 difficulty 6
 region wolfsburg
-width 11
-height 17
+width 15
+height 21
 enter_x 5
 enter_y 16
 msg
-Modified: 2008-12-02 Rick Tanner
+Modified: 2011-10-04 Rick Tanner
 endmsg
+outdoor 1
+end
+arch pstone_1
+end
+arch pstone_1
+y 1
+end
+arch pstone_1
+y 2
+end
+arch pstone_1
+y 3
+end
+arch pstone_1
+y 4
+end
+arch pstone_1
+y 5
+end
+arch pstone_1
+y 6
+end
+arch pstone_1
+y 7
+end
+arch pstone_1
+y 8
+end
+arch pstone_1
+y 9
+end
+arch pstone_1
+y 10
+end
+arch pstone_1
+y 11
+end
+arch pstone_1
+y 12
+end
+arch pstone_1
+y 13
+end
+arch pstone_1
+y 14
+end
+arch pstone_1
+y 15
+end
+arch pstone_1
+y 16
+end
+arch pstone_1
+y 17
+end
+arch pstone_1
+y 18
+end
+arch pstone_1
+y 19
+end
+arch pstone_1
+y 20
+end
+arch pstone_1
+x 1
+end
+arch pstone_1
+x 1
+y 1
+end
+arch pstone_1
+x 1
+y 2
+end
+arch pstone_1
+x 1
+y 3
+end
+arch pstone_1
+x 1
+y 4
+end
+arch pstone_1
+x 1
+y 5
+end
+arch pstone_1
+x 1
+y 6
+end
+arch pstone_1
+x 1
+y 7
+end
+arch pstone_1
+x 1
+y 8
+end
+arch pstone_1
+x 1
+y 9
+end
+arch pstone_1
+x 1
+y 10
+end
+arch pstone_1
+x 1
+y 11
+end
+arch pstone_1
+x 1
+y 12
+end
+arch pstone_1
+x 1
+y 13
+end
+arch pstone_1
+x 1
+y 14
+end
+arch pstone_1
+x 1
+y 15
+end
+arch pstone_1
+x 1
+y 16
+end
+arch pstone_1
+x 1
+y 17
+end
+arch pstone_1
+x 1
+y 18
+end
+arch pstone_1
+x 1
+y 19
+end
+arch pstone_1
+x 1
+y 20
+end
+arch pstone_1
+x 2
+end
+arch pstone_1
+x 2
+y 1
 end
 arch woodfloor
+x 2
+y 2
 end
 arch wwall_2_2_2
-end
-arch woodfloor
-y 1
-end
-arch wwall_2_1_1
-y 1
-end
-arch woodfloor
-y 2
-end
-arch wwall_2_1_1
+x 2
 y 2
 end
 arch woodfloor
+x 2
 y 3
 end
 arch wwall_2_1_1
+x 2
 y 3
 end
 arch woodfloor
+x 2
 y 4
 end
 arch wwall_2_1_1
+x 2
 y 4
 end
-arch woodfloor
-y 5
-end
-arch wwall_2_1_1
+arch light2
+x 2
 y 5
 end
 arch woodfloor
+x 2
+y 5
+end
+arch wwall_win1
+x 2
+y 5
+end
+arch woodfloor
+x 2
 y 6
 end
 arch wwall_2_1_1
+x 2
 y 6
 end
 arch woodfloor
+x 2
 y 7
 end
 arch wwall_2_1_1
+x 2
 y 7
 end
 arch woodfloor
+x 2
 y 8
 end
 arch wwall_2_1_1
+x 2
 y 8
 end
-arch woodfloor
-y 9
-end
-arch wwall_2_1_1
+arch light2
+x 2
 y 9
 end
 arch woodfloor
+x 2
+y 9
+end
+arch wwall_win1
+x 2
+y 9
+end
+arch woodfloor
+x 2
 y 10
 end
 arch wwall_2_1_1
+x 2
 y 10
 end
 arch woodfloor
+x 2
 y 11
 end
 arch wwall_2_1_1
+x 2
 y 11
 end
 arch woodfloor
+x 2
 y 12
 end
 arch wwall_2_1_1
+x 2
 y 12
 end
 arch woodfloor
+x 2
 y 13
+end
+arch wwall_2_1_1
+x 2
+y 13
+end
+arch light2
+x 2
+y 14
+end
+arch woodfloor
+x 2
+y 14
+end
+arch wwall_win1
+x 2
+y 14
+end
+arch woodfloor
+x 2
+y 15
 end
 arch wwall_3_2
-y 13
-end
-arch woodfloor
-y 14
-end
-arch wwall_2_1_1
-y 14
-end
-arch woodfloor
-y 15
-end
-arch wwall_2_1_1
+x 2
 y 15
 end
 arch woodfloor
+x 2
 y 16
+end
+arch wwall_2_1_1
+x 2
+y 16
+end
+arch woodfloor
+x 2
+y 17
+end
+arch wwall_2_1_1
+x 2
+y 17
+end
+arch woodfloor
+x 2
+y 18
 end
 arch wwall_2_2_1
-y 16
+x 2
+y 18
+end
+arch pstone_1
+x 2
+y 19
+end
+arch pstone_1
+x 2
+y 20
+end
+arch pstone_1
+x 3
+end
+arch pstone_1
+x 3
+y 1
 end
 arch woodfloor
-x 1
+x 3
+y 2
 end
 arch wwall_2_1_2
-x 1
+x 3
+y 2
 end
 arch woodfloor
-x 1
-y 1
+x 3
+y 3
 end
 arch fighter
 name highlander
@@ -128,8 +346,8 @@ This is Holy Ground.  You cannot defile
 it with combat!
 endmsg
 hp 100
-x 1
-y 1
+x 3
+y 3
 carrying 11000
 randomitems none
 monster 0
@@ -138,579 +356,766 @@ arch katana_1
 end
 end
 arch woodfloor
-x 1
-y 2
-end
-arch woodfloor
-x 1
-y 3
-end
-arch woodfloor
-x 1
+x 3
 y 4
 end
 arch woodfloor
-x 1
+x 3
 y 5
 end
 arch woodfloor
-x 1
+x 3
 y 6
 end
 arch woodfloor
-x 1
+x 3
 y 7
 end
 arch woodfloor
-x 1
+x 3
 y 8
 end
 arch woodfloor
-x 1
+x 3
 y 9
 end
 arch woodfloor
-x 1
+x 3
 y 10
 end
 arch woodfloor
-x 1
+x 3
 y 11
 end
 arch woodfloor
-x 1
+x 3
 y 12
 end
 arch woodfloor
-x 1
+x 3
 y 13
+end
+arch woodfloor
+x 3
+y 14
+end
+arch woodfloor
+x 3
+y 15
 end
 arch wwall_1_3
-x 1
-y 13
-end
-arch woodfloor
-x 1
-y 14
-end
-arch pirate
-x 1
-y 14
-end
-arch woodfloor
-x 1
-y 15
-end
-arch pirate
-x 1
+x 3
 y 15
 end
 arch woodfloor
-x 1
+x 3
 y 16
 end
-arch wwall_2_1_2
-x 1
+arch pirate
+x 3
 y 16
 end
 arch woodfloor
-x 2
+x 3
+y 17
 end
-arch wwall_2_1_2
-x 2
+arch pirate
+x 3
+y 17
 end
 arch woodfloor
-x 2
+x 3
+y 18
+end
+arch wwall_2_1_2
+x 3
+y 18
+end
+arch pstone_1
+x 3
+y 19
+end
+arch pstone_1
+x 3
+y 20
+end
+arch pstone_1
+x 4
+end
+arch pstone_1
+x 4
 y 1
 end
-arch woodfloor
-x 2
+arch light2
+x 4
 y 2
 end
 arch woodfloor
-x 2
-y 3
+x 4
+y 2
+end
+arch wwall_win2
+x 4
+y 2
 end
 arch woodfloor
-x 2
+x 4
+y 3
+end
+arch light4
+x 4
 y 4
 end
 arch woodfloor
-x 2
+x 4
+y 4
+end
+arch woodfloor
+x 4
 y 5
 end
 arch woodfloor
-x 2
+x 4
 y 6
 end
 arch woodfloor
-x 2
+x 4
 y 7
 end
-arch woodfloor
-x 2
+arch light4
+x 4
 y 8
 end
 arch woodfloor
-x 2
+x 4
+y 8
+end
+arch woodfloor
+x 4
 y 9
 end
 arch woodfloor
-x 2
+x 4
 y 10
 end
 arch woodfloor
-x 2
+x 4
 y 11
 end
-arch woodfloor
-x 2
+arch light4
+x 4
 y 12
 end
 arch woodfloor
-x 2
+x 4
+y 12
+end
+arch woodfloor
+x 4
 y 13
+end
+arch woodfloor
+x 4
+y 14
+end
+arch woodfloor
+x 4
+y 15
 end
 arch door_look_1
-x 2
-y 13
-end
-arch woodfloor
-x 2
-y 14
-end
-arch pirate
-x 2
-y 14
-end
-arch woodfloor
-x 2
+x 4
 y 15
 end
-arch pirate
-x 2
-y 15
-end
-arch woodfloor
-x 2
-y 16
-end
-arch wwall_2_1_2
-x 2
+arch light4
+x 4
 y 16
 end
 arch woodfloor
-x 3
+x 4
+y 16
 end
-arch wwall_2_1_2
-x 3
+arch pirate
+x 4
+y 16
 end
 arch woodfloor
-x 3
+x 4
+y 17
+end
+arch pirate
+x 4
+y 17
+end
+arch light2
+x 4
+y 18
+end
+arch woodfloor
+x 4
+y 18
+end
+arch wwall_win2
+x 4
+y 18
+end
+arch pstone_1
+x 4
+y 19
+end
+arch pstone_1
+x 4
+y 20
+end
+arch pstone_1
+x 5
+end
+arch pstone_1
+x 5
 y 1
 end
 arch woodfloor
-x 3
+x 5
+y 2
+end
+arch wwall_2_1_2
+x 5
 y 2
 end
 arch woodfloor
-x 3
+x 5
 y 3
 end
 arch woodfloor
-x 3
-y 4
-end
-arch chair_1.3
-x 3
+x 5
 y 4
 end
 arch woodfloor
-x 3
-y 5
-end
-arch chair_1.3
-x 3
+x 5
 y 5
 end
 arch woodfloor
-x 3
+x 5
 y 6
 end
 arch chair_1.3
-x 3
+x 5
 y 6
 end
 arch woodfloor
-x 3
+x 5
 y 7
 end
 arch chair_1.3
-x 3
+x 5
 y 7
 end
 arch woodfloor
-x 3
+x 5
 y 8
 end
 arch chair_1.3
-x 3
+x 5
 y 8
 end
 arch woodfloor
-x 3
+x 5
 y 9
 end
 arch chair_1.3
-x 3
+x 5
 y 9
 end
 arch woodfloor
-x 3
+x 5
 y 10
 end
 arch chair_1.3
-x 3
+x 5
 y 10
 end
 arch woodfloor
-x 3
+x 5
 y 11
 end
 arch chair_1.3
-x 3
+x 5
 y 11
 end
 arch woodfloor
-x 3
+x 5
+y 12
+end
+arch chair_1.3
+x 5
 y 12
 end
 arch woodfloor
-x 3
+x 5
 y 13
+end
+arch chair_1.3
+x 5
+y 13
+end
+arch woodfloor
+x 5
+y 14
+end
+arch woodfloor
+x 5
+y 15
 end
 arch wwall_1_4
-x 3
-y 13
-end
-arch woodfloor
-x 3
-y 14
-end
-arch pirate
-x 3
-y 14
-end
-arch woodfloor
-x 3
-y 15
-end
-arch pirate
-x 3
+x 5
 y 15
 end
 arch woodfloor
-x 3
+x 5
 y 16
 end
-arch wwall_2_1_2
-x 3
+arch pirate
+x 5
 y 16
 end
 arch woodfloor
-x 4
+x 5
+y 17
 end
-arch wwall_2_1_2
-x 4
+arch pirate
+x 5
+y 17
 end
 arch woodfloor
-x 4
+x 5
+y 18
+end
+arch wwall_2_1_2
+x 5
+y 18
+end
+arch pstone_1
+x 5
+y 19
+end
+arch pstone_1
+x 5
+y 20
+end
+arch pstone_1
+x 6
+end
+arch pstone_1
+x 6
 y 1
 end
 arch woodfloor
-x 4
+x 6
+y 2
+end
+arch wwall_2_1_2
+x 6
 y 2
 end
 arch woodfloor
-x 4
+x 6
 y 3
 end
 arch woodfloor
-x 4
+x 6
 y 4
 end
 arch woodfloor
-x 4
+x 6
 y 5
 end
 arch woodfloor
-x 4
+x 6
 y 6
 end
 arch woodfloor
-x 4
+x 6
 y 7
 end
 arch woodfloor
-x 4
+x 6
 y 8
 end
 arch woodfloor
-x 4
+x 6
 y 9
 end
 arch woodfloor
-x 4
+x 6
 y 10
 end
 arch woodfloor
-x 4
+x 6
 y 11
 end
 arch woodfloor
-x 4
+x 6
 y 12
 end
 arch woodfloor
-x 4
+x 6
 y 13
+end
+arch woodfloor
+x 6
+y 14
+end
+arch woodfloor
+x 6
+y 15
 end
 arch wwall_2_2_3
-x 4
-y 13
-end
-arch woodfloor
-x 4
-y 14
-end
-arch wwall_2_1_1
-x 4
-y 14
-end
-arch woodfloor
-x 4
-y 15
-end
-arch wwall_2_1_1
-x 4
+x 6
 y 15
 end
 arch woodfloor
-x 4
+x 6
 y 16
+end
+arch wwall_2_1_1
+x 6
+y 16
+end
+arch woodfloor
+x 6
+y 17
+end
+arch wwall_2_1_1
+x 6
+y 17
+end
+arch woodfloor
+x 6
+y 18
 end
 arch wwall_2_2_4
-x 4
-y 16
+x 6
+y 18
 end
-arch woodfloor
-x 5
+arch dungeon_magic
+x 6
+y 19
 end
-arch wwall_2_1_2
-x 5
-end
-arch woodfloor
-x 5
-y 1
-end
-arch woodfloor
-x 5
-y 2
-end
-arch altar_none
-x 5
-y 2
-end
-arch woodfloor
-x 5
-y 3
-end
-arch woodfloor
-x 5
-y 4
-end
-arch chair_1.3
-x 5
-y 4
-end
-arch woodfloor
-x 5
-y 5
-end
-arch chair_1.3
-x 5
-y 5
-end
-arch woodfloor
-x 5
-y 6
-end
-arch chair_1.3
-x 5
-y 6
-end
-arch woodfloor
-x 5
-y 7
-end
-arch chair_1.3
-x 5
-y 7
-end
-arch woodfloor
-x 5
-y 8
-end
-arch chair_1.3
-x 5
-y 8
-end
-arch woodfloor
-x 5
-y 9
-end
-arch chair_1.3
-x 5
-y 9
-end
-arch woodfloor
-x 5
-y 10
-end
-arch chair_1.3
-x 5
-y 10
-end
-arch woodfloor
-x 5
-y 11
-end
-arch chair_1.3
-x 5
-y 11
-end
-arch woodfloor
-x 5
-y 12
-end
-arch woodfloor
-x 5
-y 13
-end
-arch woodfloor
-x 5
-y 14
-end
-arch woodfloor
-x 5
-y 15
-end
-arch woodfloor
-x 5
-y 16
-end
-arch oakdoor_2
+arch invis_exit
 slaying /world/world_128_109
 hp 43
 sp 3
-x 5
-y 16
-end
-arch woodfloor
 x 6
+y 19
 end
-arch wwall_2_1_2
+arch pstone_1
 x 6
+y 19
 end
-arch woodfloor
+arch pstone_1
 x 6
+y 20
+end
+arch pstone_1
+x 7
+end
+arch pstone_1
+x 7
 y 1
 end
-arch woodfloor
-x 6
+arch light2
+x 7
 y 2
 end
 arch woodfloor
-x 6
-y 3
+x 7
+y 2
+end
+arch wwall_win2
+x 7
+y 2
 end
 arch woodfloor
-x 6
+x 7
+y 3
+end
+arch light4
+x 7
 y 4
 end
 arch woodfloor
-x 6
+x 7
+y 4
+end
+arch altar_none
+x 7
+y 4
+end
+arch woodfloor
+x 7
 y 5
 end
 arch woodfloor
-x 6
+x 7
+y 6
+end
+arch chair_1.3
+x 7
 y 6
 end
 arch woodfloor
-x 6
+x 7
 y 7
 end
-arch woodfloor
-x 6
+arch chair_1.3
+x 7
+y 7
+end
+arch light4
+x 7
 y 8
 end
 arch woodfloor
-x 6
+x 7
+y 8
+end
+arch chair_1.3
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch chair_1.3
+x 7
 y 9
 end
 arch woodfloor
-x 6
+x 7
+y 10
+end
+arch chair_1.3
+x 7
 y 10
 end
 arch woodfloor
-x 6
+x 7
 y 11
 end
-arch woodfloor
-x 6
+arch chair_1.3
+x 7
+y 11
+end
+arch light4
+x 7
 y 12
 end
 arch woodfloor
-x 6
-y 13
+x 7
+y 12
 end
-arch wwall_2_2_2
-x 6
-y 13
-end
-arch woodfloor
-x 6
-y 14
-end
-arch wwall_2_1_1
-x 6
-y 14
-end
-arch woodfloor
-x 6
-y 15
-end
-arch wwall_2_1_1
-x 6
-y 15
-end
-arch woodfloor
-x 6
-y 16
-end
-arch wwall_2_2_1
-x 6
-y 16
+arch chair_1.3
+x 7
+y 12
 end
 arch woodfloor
 x 7
+y 13
+end
+arch chair_1.3
+x 7
+y 13
+end
+arch light4
+x 7
+y 14
+end
+arch woodfloor
+x 7
+y 14
+end
+arch woodfloor
+x 7
+y 15
+end
+arch woodfloor
+x 7
+y 16
+end
+arch button_small
+x 7
+y 17
+connected 1
+end
+arch woodfloor
+x 7
+y 17
+end
+arch button_small
+x 7
+y 18
+connected 1
+end
+arch woodfloor
+x 7
+y 18
+end
+arch odoorn2_closed_1
+x 7
+y 18
+connected 1
+end
+arch dungeon_magic
+x 7
+y 19
+end
+arch invis_exit
+slaying /world/world_128_109
+hp 43
+sp 3
+x 7
+y 19
+end
+arch pstone_1
+x 7
+y 19
+end
+arch pstone_1
+x 7
+y 20
+end
+arch pstone_1
+x 8
+end
+arch pstone_1
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
 end
 arch wwall_2_1_2
-x 7
+x 8
+y 2
 end
 arch woodfloor
-x 7
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch woodfloor
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
+end
+arch woodfloor
+x 8
+y 13
+end
+arch woodfloor
+x 8
+y 14
+end
+arch woodfloor
+x 8
+y 15
+end
+arch wwall_2_2_2
+x 8
+y 15
+end
+arch woodfloor
+x 8
+y 16
+end
+arch wwall_2_1_1
+x 8
+y 16
+end
+arch woodfloor
+x 8
+y 17
+end
+arch wwall_2_1_1
+x 8
+y 17
+end
+arch woodfloor
+x 8
+y 18
+end
+arch wwall_2_2_1
+x 8
+y 18
+end
+arch dungeon_magic
+x 8
+y 19
+end
+arch invis_exit
+slaying /world/world_128_109
+hp 43
+sp 3
+x 8
+y 19
+end
+arch pstone_1
+x 8
+y 19
+end
+arch pstone_1
+x 8
+y 20
+end
+arch pstone_1
+x 9
+end
+arch pstone_1
+x 9
 y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch wwall_2_1_2
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
 end
 arch sage
 name bored priest
@@ -719,420 +1124,681 @@ msg
 Mass starts in a few hours, I'll talk
 to you then.
 endmsg
-x 7
-y 1
-end
-arch woodfloor
-x 7
-y 2
-end
-arch woodfloor
-x 7
+x 9
 y 3
 end
 arch woodfloor
-x 7
-y 4
-end
-arch chair_1.3
-x 7
+x 9
 y 4
 end
 arch woodfloor
-x 7
-y 5
-end
-arch chair_1.3
-x 7
+x 9
 y 5
 end
 arch woodfloor
-x 7
+x 9
 y 6
 end
 arch chair_1.3
-x 7
+x 9
 y 6
 end
 arch woodfloor
-x 7
+x 9
 y 7
 end
 arch chair_1.3
-x 7
+x 9
 y 7
 end
 arch woodfloor
-x 7
+x 9
 y 8
 end
 arch chair_1.3
-x 7
+x 9
 y 8
 end
 arch woodfloor
-x 7
+x 9
 y 9
 end
 arch chair_1.3
-x 7
+x 9
 y 9
 end
 arch woodfloor
-x 7
+x 9
 y 10
 end
 arch chair_1.3
-x 7
+x 9
 y 10
 end
 arch woodfloor
-x 7
+x 9
 y 11
 end
 arch chair_1.3
-x 7
+x 9
 y 11
 end
 arch woodfloor
-x 7
+x 9
+y 12
+end
+arch chair_1.3
+x 9
 y 12
 end
 arch woodfloor
-x 7
+x 9
 y 13
+end
+arch chair_1.3
+x 9
+y 13
+end
+arch woodfloor
+x 9
+y 14
+end
+arch woodfloor
+x 9
+y 15
 end
 arch wwall_1_3
-x 7
-y 13
-end
-arch woodfloor
-x 7
-y 14
-end
-arch pirate
-x 7
-y 14
-end
-arch woodfloor
-x 7
-y 15
-end
-arch pirate
-x 7
+x 9
 y 15
 end
 arch woodfloor
-x 7
+x 9
 y 16
 end
-arch wwall_2_1_2
-x 7
+arch pirate
+x 9
 y 16
 end
 arch woodfloor
-x 8
+x 9
+y 17
 end
-arch wwall_2_1_2
-x 8
+arch pirate
+x 9
+y 17
 end
 arch woodfloor
-x 8
+x 9
+y 18
+end
+arch wwall_2_1_2
+x 9
+y 18
+end
+arch pstone_1
+x 9
+y 19
+end
+arch pstone_1
+x 9
+y 20
+end
+arch pstone_1
+x 10
+end
+arch pstone_1
+x 10
 y 1
 end
-arch woodfloor
-x 8
+arch light2
+x 10
 y 2
 end
 arch woodfloor
-x 8
-y 3
+x 10
+y 2
+end
+arch wwall_win2
+x 10
+y 2
 end
 arch woodfloor
-x 8
+x 10
+y 3
+end
+arch light4
+x 10
 y 4
 end
 arch woodfloor
-x 8
+x 10
+y 4
+end
+arch woodfloor
+x 10
 y 5
 end
 arch woodfloor
-x 8
+x 10
 y 6
 end
 arch woodfloor
-x 8
+x 10
 y 7
 end
-arch woodfloor
-x 8
+arch light4
+x 10
 y 8
 end
 arch woodfloor
-x 8
+x 10
+y 8
+end
+arch woodfloor
+x 10
 y 9
 end
 arch woodfloor
-x 8
+x 10
 y 10
 end
 arch woodfloor
-x 8
+x 10
 y 11
 end
-arch woodfloor
-x 8
+arch light4
+x 10
 y 12
 end
 arch woodfloor
-x 8
+x 10
+y 12
+end
+arch woodfloor
+x 10
 y 13
+end
+arch woodfloor
+x 10
+y 14
+end
+arch woodfloor
+x 10
+y 15
 end
 arch door_look_1
-x 8
-y 13
-end
-arch woodfloor
-x 8
-y 14
-end
-arch pirate
-x 8
-y 14
-end
-arch woodfloor
-x 8
+x 10
 y 15
 end
-arch pirate
-x 8
-y 15
-end
-arch woodfloor
-x 8
-y 16
-end
-arch wwall_2_1_2
-x 8
+arch light4
+x 10
 y 16
 end
 arch woodfloor
-x 9
+x 10
+y 16
 end
-arch wwall_2_1_2
-x 9
+arch pirate
+x 10
+y 16
 end
 arch woodfloor
-x 9
+x 10
+y 17
+end
+arch pirate
+x 10
+y 17
+end
+arch light2
+x 10
+y 18
+end
+arch woodfloor
+x 10
+y 18
+end
+arch wwall_win2
+x 10
+y 18
+end
+arch pstone_1
+x 10
+y 19
+end
+arch pstone_1
+x 10
+y 20
+end
+arch pstone_1
+x 11
+end
+arch pstone_1
+x 11
 y 1
 end
 arch woodfloor
-x 9
+x 11
+y 2
+end
+arch wwall_2_1_2
+x 11
 y 2
 end
 arch woodfloor
-x 9
+x 11
 y 3
 end
 arch woodfloor
-x 9
+x 11
 y 4
 end
 arch woodfloor
-x 9
+x 11
 y 5
 end
 arch woodfloor
-x 9
+x 11
 y 6
 end
 arch woodfloor
-x 9
+x 11
 y 7
 end
 arch woodfloor
-x 9
+x 11
 y 8
 end
 arch woodfloor
-x 9
+x 11
 y 9
 end
 arch woodfloor
-x 9
+x 11
 y 10
 end
 arch woodfloor
-x 9
+x 11
 y 11
 end
 arch woodfloor
-x 9
+x 11
 y 12
 end
 arch woodfloor
-x 9
+x 11
 y 13
+end
+arch woodfloor
+x 11
+y 14
+end
+arch woodfloor
+x 11
+y 15
 end
 arch wwall_1_4
-x 9
-y 13
-end
-arch woodfloor
-x 9
-y 14
-end
-arch pirate
-x 9
-y 14
-end
-arch woodfloor
-x 9
-y 15
-end
-arch pirate
-x 9
+x 11
 y 15
 end
 arch woodfloor
-x 9
+x 11
 y 16
+end
+arch pirate
+x 11
+y 16
+end
+arch woodfloor
+x 11
+y 17
+end
+arch pirate
+x 11
+y 17
+end
+arch woodfloor
+x 11
+y 18
 end
 arch wwall_2_1_2
-x 9
-y 16
+x 11
+y 18
+end
+arch pstone_1
+x 11
+y 19
+end
+arch pstone_1
+x 11
+y 20
+end
+arch pstone_1
+x 12
+end
+arch pstone_1
+x 12
+y 1
 end
 arch woodfloor
-x 10
+x 12
+y 2
 end
 arch wwall_2_2_3
-x 10
-end
-arch woodfloor
-x 10
-y 1
-end
-arch wwall_2_1_1
-x 10
-y 1
-end
-arch woodfloor
-x 10
-y 2
-end
-arch wwall_2_1_1
-x 10
+x 12
 y 2
 end
 arch woodfloor
-x 10
+x 12
 y 3
 end
 arch wwall_2_1_1
-x 10
+x 12
 y 3
 end
 arch woodfloor
-x 10
+x 12
 y 4
 end
 arch wwall_2_1_1
-x 10
+x 12
 y 4
 end
-arch woodfloor
-x 10
-y 5
-end
-arch wwall_2_1_1
-x 10
+arch light2
+x 12
 y 5
 end
 arch woodfloor
-x 10
+x 12
+y 5
+end
+arch wwall_win1
+x 12
+y 5
+end
+arch woodfloor
+x 12
 y 6
 end
 arch wwall_2_1_1
-x 10
+x 12
 y 6
 end
 arch woodfloor
-x 10
+x 12
 y 7
 end
 arch wwall_2_1_1
-x 10
+x 12
 y 7
 end
 arch woodfloor
-x 10
+x 12
 y 8
 end
 arch wwall_2_1_1
-x 10
+x 12
 y 8
 end
-arch woodfloor
-x 10
-y 9
-end
-arch wwall_2_1_1
-x 10
+arch light2
+x 12
 y 9
 end
 arch woodfloor
-x 10
+x 12
+y 9
+end
+arch wwall_win1
+x 12
+y 9
+end
+arch woodfloor
+x 12
 y 10
 end
 arch wwall_2_1_1
-x 10
+x 12
 y 10
 end
 arch woodfloor
-x 10
+x 12
 y 11
 end
 arch wwall_2_1_1
-x 10
+x 12
 y 11
 end
 arch woodfloor
-x 10
+x 12
 y 12
 end
 arch wwall_2_1_1
-x 10
+x 12
 y 12
 end
 arch woodfloor
-x 10
+x 12
 y 13
+end
+arch wwall_2_1_1
+x 12
+y 13
+end
+arch light2
+x 12
+y 14
+end
+arch woodfloor
+x 12
+y 14
+end
+arch wwall_win1
+x 12
+y 14
+end
+arch woodfloor
+x 12
+y 15
 end
 arch wwall_3_4
-x 10
-y 13
-end
-arch woodfloor
-x 10
-y 14
-end
-arch wwall_2_1_1
-x 10
-y 14
-end
-arch woodfloor
-x 10
-y 15
-end
-arch wwall_2_1_1
-x 10
+x 12
 y 15
 end
 arch woodfloor
-x 10
+x 12
 y 16
+end
+arch wwall_2_1_1
+x 12
+y 16
+end
+arch woodfloor
+x 12
+y 17
+end
+arch wwall_2_1_1
+x 12
+y 17
+end
+arch woodfloor
+x 12
+y 18
 end
 arch wwall_2_2_4
-x 10
+x 12
+y 18
+end
+arch pstone_1
+x 12
+y 19
+end
+arch pstone_1
+x 12
+y 20
+end
+arch pstone_1
+x 13
+end
+arch pstone_1
+x 13
+y 1
+end
+arch pstone_1
+x 13
+y 2
+end
+arch pstone_1
+x 13
+y 3
+end
+arch pstone_1
+x 13
+y 4
+end
+arch pstone_1
+x 13
+y 5
+end
+arch pstone_1
+x 13
+y 6
+end
+arch pstone_1
+x 13
+y 7
+end
+arch pstone_1
+x 13
+y 8
+end
+arch pstone_1
+x 13
+y 9
+end
+arch pstone_1
+x 13
+y 10
+end
+arch pstone_1
+x 13
+y 11
+end
+arch pstone_1
+x 13
+y 12
+end
+arch pstone_1
+x 13
+y 13
+end
+arch pstone_1
+x 13
+y 14
+end
+arch pstone_1
+x 13
+y 15
+end
+arch pstone_1
+x 13
 y 16
+end
+arch pstone_1
+x 13
+y 17
+end
+arch pstone_1
+x 13
+y 18
+end
+arch pstone_1
+x 13
+y 19
+end
+arch pstone_1
+x 13
+y 20
+end
+arch pstone_1
+x 14
+end
+arch pstone_1
+x 14
+y 1
+end
+arch pstone_1
+x 14
+y 2
+end
+arch pstone_1
+x 14
+y 3
+end
+arch pstone_1
+x 14
+y 4
+end
+arch pstone_1
+x 14
+y 5
+end
+arch pstone_1
+x 14
+y 6
+end
+arch pstone_1
+x 14
+y 7
+end
+arch pstone_1
+x 14
+y 8
+end
+arch pstone_1
+x 14
+y 9
+end
+arch pstone_1
+x 14
+y 10
+end
+arch pstone_1
+x 14
+y 11
+end
+arch pstone_1
+x 14
+y 12
+end
+arch pstone_1
+x 14
+y 13
+end
+arch pstone_1
+x 14
+y 14
+end
+arch pstone_1
+x 14
+y 15
+end
+arch pstone_1
+x 14
+y 16
+end
+arch pstone_1
+x 14
+y 17
+end
+arch pstone_1
+x 14
+y 18
+end
+arch pstone_1
+x 14
+y 19
+end
+arch pstone_1
+x 14
+y 20
 end
