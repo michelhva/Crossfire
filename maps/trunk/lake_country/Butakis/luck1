@@ -8,7 +8,7 @@ enter_x 3
 enter_y 5
 msg
 Created:  1995-05-02 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-10-29 Rick Tanner
+Modified: 2011-10-07 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -4693,7 +4693,11 @@ arch woodfloor
 x 22
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
+x 22
+y 2
+end
+arch dungeon_magic
 x 22
 y 2
 end
@@ -4757,11 +4761,11 @@ arch woodfloor
 x 22
 y 10
 end
-arch swall_1_3
+arch dungeon_magic
 x 22
 y 10
 end
-arch dungeon_magic
+arch swall_2_1_2
 x 22
 y 10
 end
@@ -4893,6 +4897,10 @@ arch woodfloor
 x 23
 y 2
 end
+arch swall_1_3_half
+x 23
+y 2
+end
 arch mine3
 x 23
 y 2
@@ -4954,6 +4962,10 @@ x 23
 y 9
 end
 arch woodfloor
+x 23
+y 10
+end
+arch swall_1_3_half
 x 23
 y 10
 end
