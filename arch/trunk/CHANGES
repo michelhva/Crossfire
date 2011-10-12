@@ -1,6 +1,25 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Refactored bench graphics - less pixelation and colors were cleaned up.
+wall/bench/bench_E.base.111.png
+wall/bench/bench_0.base.111.png
+wall/bench/bench_2.base.111.png
+wall/bench/bench_4.base.111.png
+wall/bench/bench_6.base.111.png
+wall/bench/bench_8.base.111.png
+wall/bench/bench_B.base.111.png
+wall/bench/bench_D.base.111.png
+wall/bench/bench_F.base.111.png
+wall/bench/bench_1.base.111.png
+wall/bench/bench_3.base.111.png
+wall/bench/bench_5.base.111.png
+wall/bench/bench_7.base.111.png
+wall/bench/bench_9.base.111.png
+wall/bench/bench_A.base.111.png
+wall/bench/bench_C.base.111.png
+RJT 2011-10-12
+
 Refactored holy_word graphics to resolve transparency issue as reported under bug 
 ID 3330490 - PNG Transparency.
 spell/Cone/turnundead.base.111.png
