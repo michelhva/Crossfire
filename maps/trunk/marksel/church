@@ -467,15 +467,10 @@ end
 arch holy_priest
 msg
 @match darcap
-Ah, I did not realize how far you have
-travelled. Darcap is the city to the north
-of here. The long road shall take you there. I
-shall pray for your safety.
+Ah, I did not realize how far you have travelled. Darcap is the city to the north of here. The long road shall take you there. I shall pray for your safety.
 @match *
 @question darcap Where is Darcap?
-You have come a long way, stranger. I
-feel this must be an omen. You must
-visit the high priest in Darcap.
+You have come a long way, stranger. I feel this must be an omen. You must visit the high priest in Darcap.
 endmsg
 x 5
 y 4
@@ -684,8 +679,7 @@ arch northman
 name warrior
 msg
 @match *
-I have come a long way to have my
-child baptised.
+I have come a long way to have my child baptised.
 endmsg
 hp 250
 x 6
@@ -841,8 +835,7 @@ end
 arch a_priest
 msg
 @match *
-Bless this child, o Lord, so that he
-may live in honor
+Bless this child, o Lord, so that he may live in honor.
 endmsg
 hp 150
 x 7
