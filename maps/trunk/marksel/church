@@ -8,7 +8,7 @@ enter_x 5
 enter_y 10
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2011-10-12 Rick Tanner
+Modified: 2011-10-13 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -256,6 +256,7 @@ end
 arch holy_symbol
 x 3
 y 4
+no_pick 1
 end
 arch cobblestones2
 x 3
@@ -638,6 +639,7 @@ end
 arch rose_red
 x 6
 y 4
+no_pick 1
 end
 arch cobblestones2
 x 6
