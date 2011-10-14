@@ -11,7 +11,7 @@ enter_x 9
 enter_y 15
 msg
 Created:  2002-02-28
-Modified: 2011-10-09 Rick Tanner
+Modified: 2011-10-13 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -184,11 +184,15 @@ arch cwall_2_1_1
 x 2
 y 4
 end
+arch light2
+x 2
+y 5
+end
 arch flagstone
 x 2
 y 5
 end
-arch cwall_2_1_1
+arch dwall_win1
 x 2
 y 5
 end
@@ -224,11 +228,15 @@ arch cwall_2_1_1
 x 2
 y 9
 end
+arch light2
+x 2
+y 10
+end
 arch flagstone
 x 2
 y 10
 end
-arch cwall_2_1_1
+arch dwall_win1
 x 2
 y 10
 end
@@ -263,12 +271,16 @@ end
 arch cwall_2_1_1
 x 2
 y 14
+end
+arch light2
+x 2
+y 15
 end
 arch flagstone
 x 2
 y 15
 end
-arch cwall_2_1_1
+arch dwall_win1
 x 2
 y 15
 end
@@ -529,11 +541,15 @@ arch table
 x 4
 y 16
 end
+arch light2
+x 4
+y 17
+end
 arch flagstone
 x 4
 y 17
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 4
 y 17
 end
@@ -552,11 +568,15 @@ arch grass_only
 x 5
 y 1
 end
+arch light2
+x 5
+y 2
+end
 arch flagstone
 x 5
 y 2
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 5
 y 2
 end
@@ -969,11 +989,15 @@ arch flagstone
 x 7
 y 16
 end
+arch light2
+x 7
+y 17
+end
 arch flagstone
 x 7
 y 17
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 7
 y 17
 end
@@ -1545,11 +1569,15 @@ arch flagstone
 x 11
 y 16
 end
+arch light2
+x 11
+y 17
+end
 arch flagstone
 x 11
 y 17
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 11
 y 17
 end
@@ -1682,11 +1710,15 @@ arch grass_only
 x 13
 y 1
 end
+arch light2
+x 13
+y 2
+end
 arch flagstone
 x 13
 y 2
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 13
 y 2
 end
@@ -1875,11 +1907,15 @@ arch flagstone
 x 14
 y 16
 end
+arch light2
+x 14
+y 17
+end
 arch flagstone
 x 14
 y 17
 end
-arch cwall_2_1_2
+arch dwall_win2
 x 14
 y 17
 end
@@ -2021,11 +2057,15 @@ arch cwall_2_1_1
 x 16
 y 4
 end
+arch light2
+x 16
+y 5
+end
 arch flagstone
 x 16
 y 5
 end
-arch cwall_2_1_1
+arch dwall_win1
 x 16
 y 5
 end
@@ -2061,11 +2101,15 @@ arch cwall_2_1_1
 x 16
 y 9
 end
+arch light2
+x 16
+y 10
+end
 arch flagstone
 x 16
 y 10
 end
-arch cwall_2_1_1
+arch dwall_win1
 x 16
 y 10
 end
@@ -2100,12 +2144,16 @@ end
 arch cwall_2_1_1
 x 16
 y 14
+end
+arch light2
+x 16
+y 15
 end
 arch flagstone
 x 16
 y 15
 end
-arch cwall_2_1_1
+arch dwall_win1
 x 16
 y 15
 end
