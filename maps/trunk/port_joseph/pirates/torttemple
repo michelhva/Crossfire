@@ -9,7 +9,7 @@ enter_x 7
 enter_y 20
 msg
 Created:  1994-06-10 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-11-02 Rick Tanner
+Modified: 2011-10-14 Rick Tanner
 endmsg
 end
 arch jungle_1
@@ -134,7 +134,11 @@ arch marble
 x 1
 y 5
 end
-arch awall_3_2
+arch awall_2_2_1
+x 1
+y 5
+end
+arch swall_1_1_half
 x 1
 y 5
 end
@@ -246,7 +250,11 @@ arch marble
 x 1
 y 19
 end
-arch awall_2_1_1
+arch swall_1_2_half
+x 1
+y 19
+end
+arch awall_1_1
 x 1
 y 19
 end
@@ -675,7 +683,7 @@ arch marble
 x 5
 y 5
 end
-arch awall_3_1
+arch awall_2_2_4
 x 5
 y 5
 end
@@ -1228,7 +1236,7 @@ arch marble
 x 9
 y 5
 end
-arch awall_3_1
+arch awall_2_2_1
 x 9
 y 5
 end
@@ -1786,7 +1794,11 @@ arch marble
 x 13
 y 5
 end
-arch awall_3_4
+arch awall_2_2_4
+x 13
+y 5
+end
+arch swall_1_1_half
 x 13
 y 5
 end
@@ -1898,7 +1910,11 @@ arch marble
 x 13
 y 19
 end
-arch awall_2_1_1
+arch swall_1_2_half
+x 13
+y 19
+end
+arch awall_1_1
 x 13
 y 19
 end
