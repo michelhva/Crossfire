@@ -8,7 +8,7 @@ enter_x 15
 enter_y 15
 msg
 Created:  1996-02-08
-Modified: 2008-10-27 Rick Tanner
+Modified: 2011-10-15 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1021,6 +1021,10 @@ arch flagstone
 x 5
 y 13
 end
+arch swall_1_4_half
+x 5
+y 13
+end
 arch dun12
 x 5
 y 13
@@ -1207,7 +1211,7 @@ arch flagstone
 x 6
 y 13
 end
-arch swall_1_4
+arch swall_2_1_2
 x 6
 y 13
 end
@@ -1414,7 +1418,7 @@ arch flagstone
 x 7
 y 13
 end
-arch swall_1_3
+arch swall_2_1_2
 x 7
 y 13
 end
@@ -1510,6 +1514,10 @@ arch dun2
 x 8
 y 2
 end
+arch swall_1_1_half
+x 8
+y 2
+end
 arch dungeon_magic
 x 8
 y 3
@@ -1518,7 +1526,7 @@ arch pstone_1
 x 8
 y 3
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 3
 end
@@ -1607,6 +1615,10 @@ x 8
 y 13
 end
 arch dun0
+x 8
+y 13
+end
+arch swall_1_3_half
 x 8
 y 13
 end
@@ -1834,7 +1846,7 @@ arch flagstone
 x 9
 y 13
 end
-arch swall_1_4
+arch swall_2_1_2
 x 9
 y 13
 end
@@ -1934,6 +1946,10 @@ arch dun2
 x 10
 y 2
 end
+arch swall_1_1_half
+x 10
+y 2
+end
 arch dungeon_magic
 x 10
 y 3
@@ -1942,7 +1958,7 @@ arch pstone_1
 x 10
 y 3
 end
-arch swall_1_1
+arch swall_2_1_1
 x 10
 y 3
 end
@@ -2049,7 +2065,7 @@ arch flagstone
 x 10
 y 13
 end
-arch swall_1_3
+arch swall_2_1_2
 x 10
 y 13
 end
@@ -2233,6 +2249,10 @@ x 11
 y 13
 end
 arch dun0
+x 11
+y 13
+end
+arch swall_1_3_half
 x 11
 y 13
 end
@@ -2435,7 +2455,7 @@ arch flagstone
 x 12
 y 13
 end
-arch swall_1_4
+arch swall_2_1_2
 x 12
 y 13
 end
@@ -2610,7 +2630,7 @@ arch flagstone
 x 13
 y 13
 end
-arch swall_1_3
+arch swall_2_1_2
 x 13
 y 13
 end
@@ -2779,6 +2799,10 @@ x 14
 y 13
 end
 arch dun4
+x 14
+y 13
+end
+arch swall_1_3_half
 x 14
 y 13
 end
