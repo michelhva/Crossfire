@@ -9,7 +9,7 @@ width 25
 height 25
 msg
 Created:  1995-04-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2011-10-14 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -1961,7 +1961,7 @@ Hello stranger! So you want to be a member of the guild!? Well, since you passed
 Make your contributions on time, remember! And be a good fellow.
 Okay you may go now. You have to search the rooms for the master keys of thievery, which you may have and use as symbol of this guild.
 @match symbol|thivery
-You may use the master key for many uses. Keep them safe and you will find it useful
+You may use the master key for many uses. Keep them safe and you will find it useful.
 endmsg
 face guildmaste.111
 hp 3000
@@ -2263,7 +2263,7 @@ arch dun11
 name A quiet thief standing here still
 msg
 @match *
-If you have the permission of the guildmaster, you may enter through me
+If you have the permission of the guildmaster, you may enter through me.
 endmsg
 face thief.171
 x 12
@@ -3249,12 +3249,12 @@ end
 arch viking
 name viking guildguard
 msg
-@match Door|secret|door
+@match door|secret|door
 The door is between two of us. Go straight.
 @match key
 Oh yeah. You need to have the Master key of thievery to enter next room. The keys are hidden under the table.
 @match thievery
-THe master key of thievery is a symbol of the guild, besides being a key. It has many uses and open many doors that open guildmembers are allowed.
+The master key of thievery is a symbol of the guild, besides being a key. It has many uses and opens many doors that open guildmembers are allowed.
 @match *
 Hello fellow guild members.
 endmsg
@@ -3821,8 +3821,7 @@ y 21
 end
 arch sign_e
 msg
-You need a Thunderfist to trade for this item. These pair of bracers have the power to turn the wearer semi-ethereal and protect it from physical attacks. However it weakens the wearer
-both mentally and physically.
+You need a Thunderfist to trade for this item. These pair of bracers have the power to turn the wearer semi-ethereal and protect it from physical attacks. However it weakens the wearer both mentally and physically.
 endmsg
 x 22
 y 21
