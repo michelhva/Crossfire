@@ -541,10 +541,7 @@ name mystery man
 msg
 @match key
 I'll give you a hint.
-"You'll never open the door which
- was closed first"
- You can open the door which was
- opened first"
+"You'll never open the door which was closed first. You can open the door which was opened first"
 @match yes
 So, you have to get a Key.
 @match *
