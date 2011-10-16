@@ -7,7 +7,7 @@ enter_x 4
 enter_y 8
 msg
 Created:  2009-12-05 Nicolas Weeger
-Modified: 2010-06-20 Rick Tanner
+Modified: 2011-10-16 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -184,7 +184,7 @@ y 4
 end
 arch magic_ear
 msg
-@match please
+@match amudrias
 Click.
 endmsg
 x 3
@@ -198,8 +198,12 @@ end
 arch guildmaster
 name Tyl
 msg
+@match amudrias
+Great, you really know the history of the world!
+
+Feel free to go look at my books all your heart, but don't pick any please.
 @match please
-Ha well, you seem like a decent follow, so feel free to go look, but don't pick any one of them, please!
+Ha well, you seem like a decent follow, so I will let you look if you can reply to this question: where did Lorkas the fallen come from?
 @match see
 Well, I'm not sure, they are precious ones...
 @match store
