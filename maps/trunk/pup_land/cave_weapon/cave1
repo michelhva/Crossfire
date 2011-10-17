@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-02-07
-Modified: 2011-10-15 Rick Tanner
+Modified: 2011-10-16 Rick Tanner
 endmsg
 end
 arch exit
@@ -1136,7 +1136,7 @@ arch pstone_2
 x 11
 y 3
 end
-arch mine4
+arch cave_16
 x 11
 y 3
 end
@@ -1275,7 +1275,7 @@ arch pstone_2
 x 12
 y 13
 end
-arch mine6
+arch cave_17
 x 12
 y 13
 end
@@ -1374,7 +1374,7 @@ arch pstone_1
 x 13
 y 13
 end
-arch mine2
+arch cave_21
 x 13
 y 13
 end
@@ -1416,7 +1416,7 @@ arch dungeon_floor
 x 14
 y 1
 end
-arch mine2
+arch cave_21
 x 14
 y 1
 end
@@ -1522,7 +1522,7 @@ arch dungeon_floor
 x 15
 y 1
 end
-arch mine2
+arch cave_21
 x 15
 y 1
 end
@@ -1582,7 +1582,7 @@ arch pstone_1
 x 15
 y 14
 end
-arch mine2
+arch cave_21
 x 15
 y 14
 end
@@ -1624,7 +1624,7 @@ arch dungeon_floor
 x 16
 y 1
 end
-arch mine2
+arch cave_21
 x 16
 y 1
 end
@@ -1723,7 +1723,7 @@ arch dungeon_floor
 x 17
 y 1
 end
-arch mine2
+arch cave_21
 x 17
 y 1
 end
@@ -1787,7 +1787,7 @@ arch dungeon_floor
 x 17
 y 15
 end
-arch mine2
+arch cave_21
 x 17
 y 15
 end
@@ -1825,7 +1825,7 @@ arch dungeon_floor
 x 18
 y 1
 end
-arch mine2
+arch cave_21
 x 18
 y 1
 end
@@ -1885,7 +1885,7 @@ arch dungeon_floor
 x 18
 y 15
 end
-arch mine2
+arch cave_21
 x 18
 y 15
 end
@@ -1924,7 +1924,7 @@ arch dungeon_floor
 x 19
 y 1
 end
-arch mine2
+arch cave_21
 x 19
 y 1
 end
@@ -2019,7 +2019,7 @@ arch dungeon_floor
 x 20
 y 1
 end
-arch mine2
+arch cave_21
 x 20
 y 1
 end
@@ -2087,7 +2087,7 @@ arch dungeon_floor
 x 20
 y 16
 end
-arch mine9
+arch cave_20
 x 20
 y 16
 end
@@ -2095,7 +2095,7 @@ arch pstone_1
 x 20
 y 17
 end
-arch mine3
+arch cave_22
 x 20
 y 17
 end
@@ -2118,7 +2118,7 @@ arch dungeon_floor
 x 21
 y 1
 end
-arch mine2
+arch cave_21
 x 21
 y 1
 end
@@ -2213,7 +2213,7 @@ arch dungeon_floor
 x 22
 y 1
 end
-arch mine2
+arch cave_21
 x 22
 y 1
 end
@@ -2297,6 +2297,10 @@ arch mine2
 x 22
 y 19
 end
+arch cave_21
+x 22
+y 19
+end
 arch cave_15
 x 23
 end
@@ -2304,7 +2308,7 @@ arch dungeon_floor
 x 23
 y 1
 end
-arch mine2
+arch cave_21
 x 23
 y 1
 end
@@ -2380,7 +2384,7 @@ arch dungeon_floor
 x 23
 y 19
 end
-arch mine2
+arch cave_21
 x 23
 y 19
 end
@@ -2391,7 +2395,7 @@ arch dungeon_floor
 x 24
 y 1
 end
-arch mine2
+arch cave_21
 x 24
 y 1
 end
@@ -2467,7 +2471,7 @@ arch dungeon_floor
 x 24
 y 19
 end
-arch mine2
+arch cave_21
 x 24
 y 19
 end
@@ -2562,7 +2566,7 @@ arch dungeon_floor
 x 25
 y 19
 end
-arch mine2
+arch cave_21
 x 25
 y 19
 end
@@ -2676,7 +2680,7 @@ arch dungeon_floor
 x 27
 y 3
 end
-arch mine9
+arch cave_20
 x 27
 y 3
 end
@@ -2684,7 +2688,7 @@ arch dungeon_floor
 x 27
 y 4
 end
-arch mine3
+arch cave_22
 x 27
 y 4
 end
@@ -2748,7 +2752,7 @@ arch dungeon_floor
 x 27
 y 18
 end
-arch mine2
+arch cave_21
 x 27
 y 18
 end
@@ -2861,7 +2865,7 @@ arch dungeon_floor
 x 28
 y 18
 end
-arch mine2
+arch cave_21
 x 28
 y 18
 end
@@ -2896,7 +2900,7 @@ arch dungeon_floor
 x 29
 y 6
 end
-arch mine9
+arch cave_20
 x 29
 y 6
 end
@@ -2904,7 +2908,7 @@ arch dungeon_floor
 x 29
 y 7
 end
-arch mine3
+arch cave_22
 x 29
 y 7
 end
@@ -2956,7 +2960,7 @@ arch dungeon_floor
 x 29
 y 18
 end
-arch mine2
+arch cave_21
 x 29
 y 18
 end
@@ -2999,7 +3003,7 @@ arch dungeon_floor
 x 30
 y 8
 end
-arch mine9
+arch cave_20
 x 30
 y 8
 end
@@ -3007,7 +3011,7 @@ arch dungeon_floor
 x 30
 y 9
 end
-arch mine3
+arch cave_22
 x 30
 y 9
 end
@@ -3015,7 +3019,7 @@ arch dungeon_floor
 x 30
 y 10
 end
-arch mine3
+arch cave_22
 x 30
 y 10
 end
@@ -3023,7 +3027,7 @@ arch dungeon_floor
 x 30
 y 11
 end
-arch mine3
+arch cave_22
 x 30
 y 11
 end
@@ -3031,7 +3035,7 @@ arch dungeon_floor
 x 30
 y 12
 end
-arch mine3
+arch cave_22
 x 30
 y 12
 end
@@ -3039,7 +3043,7 @@ arch dungeon_floor
 x 30
 y 13
 end
-arch mine3
+arch cave_22
 x 30
 y 13
 end
@@ -3047,7 +3051,7 @@ arch dungeon_floor
 x 30
 y 14
 end
-arch mine11
+arch cave_22
 x 30
 y 14
 end
@@ -3055,7 +3059,7 @@ arch dungeon_floor
 x 30
 y 15
 end
-arch mine11
+arch cave_22
 x 30
 y 15
 end
@@ -3063,7 +3067,7 @@ arch dungeon_floor
 x 30
 y 16
 end
-arch mine4
+arch cave_16
 x 30
 y 16
 end
@@ -3086,7 +3090,7 @@ arch dungeon_floor
 x 30
 y 18
 end
-arch mine2
+arch cave_21
 x 30
 y 18
 end
@@ -3153,7 +3157,7 @@ arch dungeon_floor
 x 31
 y 14
 end
-arch mine9
+arch cave_20
 x 31
 y 14
 end
@@ -3161,7 +3165,7 @@ arch dungeon_floor
 x 31
 y 15
 end
-arch mine14
+arch cave_20
 x 31
 y 15
 end
@@ -3169,7 +3173,7 @@ arch dungeon_floor
 x 31
 y 16
 end
-arch mine12
+arch cave_21
 x 31
 y 16
 end
@@ -3202,7 +3206,7 @@ arch dungeon_floor
 x 31
 y 18
 end
-arch mine9
+arch cave_20
 x 31
 y 18
 end
@@ -3210,7 +3214,7 @@ arch dungeon_floor
 x 31
 y 19
 end
-arch mine3
+arch cave_22
 x 31
 y 19
 end
