@@ -1,6 +1,31 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+New graphics, faces and archetypes for the carved cave wall. They match the 
+existing cave wall coloring, and do not stand out like the (black) mine graphics.
+cave_21.base.111.png
+cave_17.base.111.png
+cave_19.base.111.png
+cave_20.base.111.png
+cave_16.base.111.png
+cave_22.base.111.png
+cave_18.base.111.png
+cave_17.arc
+cave_19.arc
+cave_20.arc
+cave_22.arc
+cave_16.arc
+cave_18.arc
+cave_21.arc
+cave_18.face
+cave_21.face
+cave_17.face
+cave_19.face
+cave_20.face
+cave_16.face
+cave_22.face
+RJT 2011-10-16
+
 Refactored bench graphics - less pixelation and colors were cleaned up.
 wall/bench/bench_E.base.111.png
 wall/bench/bench_0.base.111.png
