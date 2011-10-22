@@ -12,7 +12,7 @@ Creator: majorwoo josh@woosworld.net
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-05-30 Nicolas Weeger
+Modified: 2011-10-21 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2192,7 +2192,7 @@ x 4
 y 6
 unique 1
 end
-arch dwall_2_1_1
+arch dwall_1_2
 x 4
 y 6
 end
@@ -2227,7 +2227,7 @@ x 4
 y 8
 unique 1
 end
-arch dwall_2_1_1
+arch dwall_1_1
 x 4
 y 8
 end
@@ -3616,6 +3616,10 @@ y 4
 unique 1
 end
 arch swall_4
+x 9
+y 4
+end
+arch dwall_1_1
 x 9
 y 4
 end
