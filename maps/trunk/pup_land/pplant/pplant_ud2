@@ -8,7 +8,7 @@ enter_x 9
 enter_y 13
 msg
 Created:  1996-02-06
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2011-10-21 Rick Tanner
 endmsg
 end
 arch blocked
@@ -369,11 +369,11 @@ arch cobblestones
 x 4
 y 1
 end
-arch swall_1_1
+arch cave9
 x 4
 y 1
 end
-arch cave9
+arch swall_1_1_half
 x 4
 y 1
 end
