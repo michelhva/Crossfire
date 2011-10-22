@@ -8,7 +8,7 @@ enter_x 18
 enter_y 8
 msg
 Created:  1996-02-06
-Modified: 2008-10-25 Rick Tanner
+Modified: 2011-10-21 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1454,11 +1454,14 @@ end
 arch mine_2_1_2
 x 16
 end
+arch swall_1_1_half
+x 16
+end
 arch dungeon_floor
 x 16
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 16
 y 1
 end
