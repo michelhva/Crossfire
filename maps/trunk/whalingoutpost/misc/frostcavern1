@@ -10,7 +10,7 @@ enter_x 34
 enter_y 42
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-10-22 Nicolas Weeger
 endmsg
 end
 arch istone
@@ -10577,11 +10577,12 @@ resist_physical 100
 resist_cold 100
 unaggressive 1
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 17
 y 45
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
@@ -11303,11 +11304,12 @@ x 18
 y 44
 attacktype 16
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 18
 y 45
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
@@ -11987,11 +11989,12 @@ x 19
 y 44
 attacktype 16
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 19
 y 45
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
