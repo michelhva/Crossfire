@@ -10,7 +10,7 @@ enter_x 21
 enter_y 6
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-06-07 Nicolas Weeger
+Modified: 2011-10-22 Nicolas Weeger
 endmsg
 end
 arch istone
@@ -34356,11 +34356,12 @@ resist_physical 100
 resist_cold 100
 unaggressive 1
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 30
 y 22
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
@@ -35861,11 +35862,12 @@ resist_physical 100
 resist_cold 100
 unaggressive 1
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 31
 y 18
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
@@ -35925,11 +35927,12 @@ x 31
 y 21
 attacktype 16
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 31
 y 22
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
@@ -37686,11 +37689,12 @@ x 32
 y 17
 attacktype 16
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 32
 y 18
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
@@ -37760,11 +37764,12 @@ x 32
 y 21
 attacktype 16
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 32
 y 22
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
@@ -39416,11 +39421,12 @@ x 33
 y 17
 attacktype 16
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 33
 y 18
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
@@ -76363,11 +76369,12 @@ resist_physical 100
 resist_cold 100
 unaggressive 1
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 64
 y 61
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
@@ -77784,11 +77791,12 @@ x 65
 y 60
 attacktype 16
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 65
 y 61
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
@@ -79285,11 +79293,12 @@ resist_physical 100
 resist_cold 100
 unaggressive 1
 end
-arch mover_5
+arch magic_mouth
+msg
+The current seems weaker here.
+endmsg
 x 66
 y 61
-level 1
-attacktype 1
 end
 arch permanent_lava
 name freezing water
