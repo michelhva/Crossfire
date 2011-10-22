@@ -9,7 +9,7 @@ enter_x 28
 enter_y 14
 msg
 Created:  2008-10-10 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2010-09-06 Logan Perkins
+Modified: 2011-10-20 Rick Tanner
 endmsg
 end
 arch blocked
@@ -461,7 +461,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 2
 y 26
 end
@@ -507,7 +507,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 2
 y 33
 end
@@ -905,7 +905,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 4
 y 26
 end
@@ -951,7 +951,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 4
 y 33
 end
@@ -1601,7 +1601,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 8
 y 26
 end
@@ -1647,7 +1647,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 8
 y 33
 end
@@ -2039,7 +2039,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 10
 y 26
 end
@@ -2085,7 +2085,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 10
 y 33
 end
@@ -2735,7 +2735,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 14
 y 26
 end
@@ -2781,7 +2781,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 14
 y 33
 end
@@ -3173,7 +3173,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 16
 y 26
 end
@@ -3219,7 +3219,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 16
 y 33
 end
@@ -4227,7 +4227,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 20
 y 26
 end
@@ -4273,7 +4273,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 20
 y 33
 end
@@ -4933,7 +4933,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 22
 y 26
 end
@@ -4979,7 +4979,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 22
 y 33
 end
@@ -6241,7 +6241,7 @@ y 12
 move_block fly_low
 unique 1
 end
-arch wall_2_1_2
+arch wall_1_3
 x 26
 y 12
 end
@@ -6269,7 +6269,7 @@ arch grass_only
 x 26
 y 15
 end
-arch swall_2_1_2
+arch swall_1_3
 x 26
 y 15
 end
@@ -7267,7 +7267,7 @@ y 12
 move_block fly_low
 unique 1
 end
-arch wall_2_1_2
+arch wall_1_4
 x 29
 y 12
 end
@@ -7295,7 +7295,7 @@ arch grass_only
 x 29
 y 15
 end
-arch swall_2_1_2
+arch swall_1_4
 x 29
 y 15
 end
@@ -8741,7 +8741,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 33
 y 26
 end
@@ -8787,7 +8787,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 33
 y 33
 end
@@ -9457,7 +9457,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 35
 y 26
 end
@@ -9503,7 +9503,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 35
 y 33
 end
@@ -10381,7 +10381,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 39
 y 26
 end
@@ -10427,7 +10427,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 39
 y 33
 end
@@ -10601,10 +10601,6 @@ x 40
 y 26
 move_block fly_low
 no_damage 1
-end
-arch dungeon_magic
-x 40
-y 26
 end
 arch stonefloor2
 x 40
@@ -10837,7 +10833,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 41
 y 26
 end
@@ -10883,7 +10879,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 41
 y 33
 end
@@ -11533,7 +11529,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 45
 y 26
 end
@@ -11579,7 +11575,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 45
 y 33
 end
@@ -11994,7 +11990,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 47
 y 26
 end
@@ -12040,7 +12036,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 47
 y 33
 end
@@ -12685,7 +12681,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 51
 y 26
 end
@@ -12731,7 +12727,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_3
 x 51
 y 33
 end
@@ -13141,7 +13137,7 @@ y 26
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 53
 y 26
 end
@@ -13187,7 +13183,7 @@ y 33
 move_block fly_low
 unique 1
 end
-arch cwall_2_1_2
+arch cwall_1_4
 x 53
 y 33
 end
