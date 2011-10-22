@@ -8,7 +8,7 @@ enter_x 9
 enter_y 1
 msg
 Created:  1996-03-07
-Modified: 2008-10-20 Rick Tanner
+Modified: 2011-10-21 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -451,11 +451,15 @@ arch dungeon_magic
 x 2
 y 9
 end
-arch swall_1_2
+arch swall_2_1_1
 x 2
 y 9
 end
 arch dungeon_floor
+x 2
+y 10
+end
+arch swall_1_2_half
 x 2
 y 10
 end
@@ -1086,7 +1090,7 @@ arch dungeon_magic
 x 6
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 6
 y 2
 end
@@ -1243,6 +1247,10 @@ x 7
 y 2
 end
 arch cwall_2_1_1
+x 7
+y 2
+end
+arch swall_1_3_half
 x 7
 y 2
 end
