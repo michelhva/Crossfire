@@ -356,7 +356,9 @@ public class Spell {
      */
     @NotNull
     public String getTooltipText() {
-        final StringBuilder sb = new StringBuilder(name);
+        final StringBuilder sb = new StringBuilder("<b>");
+        sb.append(name.substring(0, 1).toUpperCase()).append(name.substring(1));
+        sb.append("</b>");
         if (unknown) {
             sb.append(" (unknown)");
         }
