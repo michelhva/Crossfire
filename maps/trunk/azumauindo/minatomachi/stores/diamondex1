@@ -9,7 +9,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-05 Rick Tanner
+Modified: 2011-10-25 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -472,7 +472,6 @@ y 15
 end
 arch cobblestones2
 name store room floor
-name_pl store room floor
 x 1
 y 15
 end
@@ -591,7 +590,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -662,7 +660,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -733,7 +730,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -863,7 +859,6 @@ y 15
 end
 arch cobblestones2
 name store room floor
-name_pl store room floor
 x 2
 y 15
 end
@@ -1160,7 +1155,6 @@ y 15
 end
 arch cobblestones2
 name store room floor
-name_pl store room floor
 x 3
 y 15
 end
@@ -1261,7 +1255,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -1332,7 +1325,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -1403,7 +1395,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -1901,7 +1892,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -1972,7 +1962,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -2043,7 +2032,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -2387,7 +2375,6 @@ y 12
 end
 arch platinum_converter
 name convert imperials into plat
-name_pl convert imperials into gold
 slaying imperial
 other_arch platinacoin
 sp 200
@@ -2538,7 +2525,6 @@ y 4
 end
 arch altar_trigger
 name FWB 2000 Diamond Note - 2000 Diamonds
-name_pl Gate Pass - 50pp
 slaying gem
 msg
 Click Click Click Click Click...
@@ -2565,7 +2551,6 @@ y 5
 end
 arch silver_converter
 name sell gold block bullion for imperials
-name_pl convert imperial notes into silver
 slaying goldblock
 other_arch imperial
 sp 100
@@ -2807,7 +2792,6 @@ y 1
 end
 arch table_3
 name heavy table
-name_pl heavy table
 x 9
 y 1
 no_pick 1
@@ -2862,7 +2846,6 @@ y 5
 end
 arch silver_converter
 name sell gold bar bullion for imperials
-name_pl convert imperial notes into silver
 slaying goldbar
 other_arch imperial
 sp 1
@@ -2904,7 +2887,6 @@ y 7
 end
 arch man
 name Accountant
-name_pl Accountant
 x 9
 y 7
 arch event_say
@@ -2926,7 +2908,6 @@ y 8
 end
 arch guildmaster
 name Diamond Broker
-name_pl Diamond Broker
 msg
 @match *
 You can buy First World Bank 2000
@@ -2970,7 +2951,6 @@ y 10
 end
 arch diamond_converter
 name convert diamonds into platinum coins
-name_pl convert diamonds into platinum coins
 slaying gem
 other_arch platinacoin
 sp 8
@@ -3034,7 +3014,6 @@ y 14
 end
 arch sign
 name First World Bank Diamond Exchange
-name_pl First World Bank Diamond Exchange
 msg
 Welcome the Minatomachi branch of the
 First World Bank Diamond Exchange.
@@ -3157,7 +3136,6 @@ y 5
 end
 arch silver_converter
 name sell gold block bullion
-name_pl convert imperial notes into silver
 slaying goldblock
 other_arch platinacoin
 sp 20000
@@ -3442,7 +3420,6 @@ y 6
 end
 arch silver_converter
 name sell silver bar bullion (min: 10) for imperials
-name_pl convert imperial notes into silver
 slaying silverbar
 other_arch imperial
 sp 1
@@ -3463,7 +3440,6 @@ y 7
 end
 arch sign_w
 name Partnership Accounts
-name_pl Accounts
 msg
 Partnership Accounts
 The First World Bank has partnered
@@ -3488,7 +3464,6 @@ y 8
 end
 arch silver_converter
 name sell platinum bar bullion for imperials
-name_pl convert imperial notes into silver
 slaying platbar
 other_arch imperial
 sp 5
