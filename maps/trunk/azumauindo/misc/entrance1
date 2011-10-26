@@ -9,7 +9,7 @@ enter_x 6
 enter_y 13
 msg
 Created:  2005-04-26 Mikeeusa
-Modified: 2008-10-05 Rick Tanner
+Modified: 2011-10-26 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -688,7 +688,6 @@ speed 0.0
 end
 arch key2
 name Gaijin Pass
-name_pl Gaijin Passes
 slaying azumauindolvl0pass
 msg
 You are thus allowed enterance to the
@@ -1164,7 +1163,6 @@ y 4
 end
 arch altar_trigger
 name Kabuto of Geisya for 2 Gaijin Passes
-name_pl Gate Pass - 50pp
 slaying kog
 face goldfloor.111
 animation goldfloor
@@ -1182,7 +1180,6 @@ lifesave 1
 activate_on_release 0
 arch key2
 name Gaijin Pass
-name_pl Gaijin Passes
 slaying azumauindolvl0pass
 msg
 You are thus allowed enterance to the
