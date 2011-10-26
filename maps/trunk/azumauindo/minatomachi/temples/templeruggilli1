@@ -9,7 +9,7 @@ enter_x 8
 enter_y 14
 msg
 Created:  2005-03-12 MikeeUSA
-Modified: 2008-10-25 Rick Tanner
+Modified: 2011-10-25 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -378,7 +378,6 @@ y 3
 end
 arch fire_elemental
 name Knight of Ruggilli
-name_pl Knight of Ruggilli
 msg
 @match ruggilli
 ....Massster...We...Live...In...His...
@@ -431,7 +430,6 @@ y 12
 end
 arch fire_elemental
 name Knight of Ruggilli
-name_pl Knight of Ruggilli
 msg
 @match ruggilli
 ....Massster...We...Live...In...His...
@@ -1230,7 +1228,6 @@ y 4
 end
 arch faerie_dragon
 name Devotee of Ruggilli
-name_pl Devotee of Ruggilli
 msg
 @match ruggilli
 Ruggilli, God of Destruction and
@@ -1470,7 +1467,6 @@ y 3
 end
 arch fire_elemental
 name Knight of Ruggilli
-name_pl Knight of Ruggilli
 msg
 @match ruggilli
 ....Massster...We...Live...In...His...
@@ -1523,7 +1519,6 @@ y 12
 end
 arch fire_elemental
 name Knight of Ruggilli
-name_pl Knight of Ruggilli
 msg
 @match ruggilli
 ....Massster...We...Live...In...His...

@@ -9,25 +9,22 @@ enter_x 8
 enter_y 4
 msg
 Created:  2005-03-12 MikeeUSA
-Modified: 2008-10-25 Rick Tanner
+Modified: 2011-10-25 Rick Tanner
 endmsg
 end
 arch blocked
 name nothing
-name_pl nothing
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 1
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 2
 move_block 0
 blocksview 0
@@ -37,14 +34,12 @@ y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 y 3
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 4
 move_block 0
 blocksview 0
@@ -54,28 +49,24 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 y 5
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 6
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 7
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 8
 move_block 0
 blocksview 0
@@ -85,35 +76,30 @@ y 8
 end
 arch blocked
 name nothing
-name_pl nothing
 y 9
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 10
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 11
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 12
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 13
 move_block 0
 blocksview 0
@@ -123,21 +109,18 @@ y 13
 end
 arch blocked
 name nothing
-name_pl nothing
 y 14
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 15
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 move_block 0
 blocksview 0
@@ -368,7 +351,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 15
 move_block 0
@@ -376,7 +358,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 move_block 0
 blocksview 0
@@ -514,7 +495,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 15
 move_block 0
@@ -522,7 +502,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 move_block 0
 blocksview 0
@@ -657,7 +636,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 15
 move_block 0
@@ -669,7 +647,6 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 move_block 0
 blocksview 0
@@ -809,7 +786,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 15
 move_block 0
@@ -817,7 +793,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 move_block 0
 blocksview 0
@@ -867,7 +842,6 @@ y 4
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 5
 y 4
@@ -930,7 +904,6 @@ y 11
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 5
 y 11
@@ -969,7 +942,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 15
 move_block 0
@@ -977,7 +949,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 move_block 0
 blocksview 0
@@ -1024,7 +995,6 @@ y 4
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 6
 y 4
@@ -1087,7 +1057,6 @@ y 11
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 6
 y 11
@@ -1126,7 +1095,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 15
 move_block 0
@@ -1134,7 +1102,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 move_block 0
 blocksview 0
@@ -1177,7 +1144,6 @@ y 4
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 7
 y 4
@@ -1199,7 +1165,6 @@ y 5
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 7
 y 5
@@ -1246,7 +1211,6 @@ y 10
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 7
 y 10
@@ -1261,7 +1225,6 @@ y 11
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 7
 y 11
@@ -1300,7 +1263,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 15
 move_block 0
@@ -1308,7 +1270,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 move_block 0
 blocksview 0
@@ -1351,7 +1312,6 @@ y 4
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 8
 y 4
@@ -1373,7 +1333,6 @@ y 5
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 8
 y 5
@@ -1420,7 +1379,6 @@ y 10
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 8
 y 10
@@ -1435,7 +1393,6 @@ y 11
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 8
 y 11
@@ -1474,7 +1431,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 15
 move_block 0
@@ -1482,7 +1438,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 move_block 0
 blocksview 0
@@ -1532,7 +1487,6 @@ y 4
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 9
 y 4
@@ -1595,7 +1549,6 @@ y 11
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 9
 y 11
@@ -1634,7 +1587,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 15
 move_block 0
@@ -1642,7 +1594,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 move_block 0
 blocksview 0
@@ -1689,7 +1640,6 @@ y 4
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 10
 y 4
@@ -1757,7 +1707,6 @@ y 11
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 10
 y 11
@@ -1801,7 +1750,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 15
 move_block 0
@@ -1813,7 +1761,6 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 move_block 0
 blocksview 0
@@ -1948,7 +1895,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 15
 move_block 0
@@ -1956,7 +1902,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 move_block 0
 blocksview 0
@@ -2091,7 +2036,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 15
 move_block 0
@@ -2099,7 +2043,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 move_block 0
 blocksview 0
@@ -2237,7 +2180,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 15
 move_block 0
@@ -2245,7 +2187,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 move_block 0
 blocksview 0
@@ -2476,7 +2417,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 15
 move_block 0
@@ -2488,14 +2428,12 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 1
 move_block 0
@@ -2503,7 +2441,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 2
 move_block 0
@@ -2515,7 +2452,6 @@ y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 3
 move_block 0
@@ -2523,7 +2459,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 4
 move_block 0
@@ -2531,7 +2466,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 5
 move_block 0
@@ -2539,7 +2473,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 6
 move_block 0
@@ -2551,7 +2484,6 @@ y 6
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 7
 move_block 0
@@ -2559,7 +2491,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 8
 move_block 0
@@ -2567,7 +2498,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 9
 move_block 0
@@ -2575,7 +2505,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 10
 move_block 0
@@ -2583,7 +2512,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 11
 move_block 0
@@ -2591,7 +2519,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 12
 move_block 0
@@ -2599,7 +2526,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 13
 move_block 0
@@ -2611,7 +2537,6 @@ y 13
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 14
 move_block 0
@@ -2619,7 +2544,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 15
 move_block 0
