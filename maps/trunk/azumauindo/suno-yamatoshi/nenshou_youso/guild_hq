@@ -13,7 +13,7 @@ Creator: Avion
 Date:    6/14/2003
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-10-25 Rick Tanner
+Modified: 2011-10-26 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -419,7 +419,6 @@ connected 16
 end
 arch card
 name Kennel Token
-name_pl Kennel Tokens
 slaying NenshouYouso_Kennel_Token
 msg
 The holder of this card is allowed free
@@ -451,7 +450,6 @@ connected 36
 end
 arch card
 name Alchemy Token
-name_pl Alchemy Tokens
 slaying NenshouYouso_Alch_Token
 msg
 The holder of this card is allowed free
@@ -902,7 +900,6 @@ connected 16
 end
 arch card
 name Kennel Token
-name_pl Kennel Tokens
 slaying NenshouYouso_Kennel_Token
 msg
 The holder of this card is allowed free
@@ -948,7 +945,6 @@ connected 36
 end
 arch card
 name Alchemy Token
-name_pl Alchemy Tokens
 slaying NenshouYouso_Alch_Token
 msg
 The holder of this card is allowed free
@@ -1343,7 +1339,6 @@ unique 1
 end
 arch crystalball
 name Guild Oracle
-name_pl Guild Oracle
 x 8
 y 8
 resist_physical 100
@@ -1460,7 +1455,6 @@ connected 16
 end
 arch card
 name Kennel Token
-name_pl Kennel Tokens
 slaying NenshouYouso_Kennel_Token
 msg
 The holder of this card is allowed free
@@ -1488,7 +1482,6 @@ connected 36
 end
 arch card
 name Alchemy Token
-name_pl Alchemy Tokens
 slaying NenshouYouso_Alch_Token
 msg
 The holder of this card is allowed free
@@ -1516,7 +1509,6 @@ connected 46
 end
 arch card
 name Garden Token
-name_pl Garden Tokens
 slaying NenshouYouso_Gard_Token
 msg
 The holder of this card is allowed free
@@ -1980,7 +1972,6 @@ connected 16
 end
 arch card
 name Kennel Token
-name_pl Kennel Tokens
 slaying NenshouYouso_Kennel_Token
 msg
 The holder of this card is allowed free
@@ -2009,7 +2000,6 @@ connected 36
 end
 arch card
 name Alchemy Token
-name_pl Alchemy Tokens
 slaying NenshouYouso_Alch_Token
 msg
 The holder of this card is allowed free
@@ -2033,7 +2023,6 @@ connected 46
 end
 arch card
 name Garden Token
-name_pl Garden Tokens
 slaying NenshouYouso_Gard_Token
 msg
 The holder of this card is allowed free
@@ -2570,7 +2559,6 @@ connected 46
 end
 arch card
 name Garden Token
-name_pl Garden Tokens
 slaying NenshouYouso_Gard_Token
 msg
 The holder of this card is allowed free
@@ -2877,7 +2865,6 @@ connected 26
 end
 arch card
 name Toolshed Token
-name_pl Toolshed Tokens
 slaying NenshouYouso_Tool_Token
 msg
 The holder of this card is allowed free
@@ -3127,7 +3114,6 @@ connected 56
 end
 arch card
 name Thaumaturgy Token
-name_pl Thaumaturgy Tokens
 slaying NenshouYouso_Thau_Token
 msg
 The holder of this card is allowed free
@@ -3390,7 +3376,6 @@ connected 46
 end
 arch card
 name Garden Token
-name_pl Garden Tokens
 slaying NenshouYouso_Gard_Token
 msg
 The holder of this card is allowed free
@@ -3425,7 +3410,6 @@ unique 1
 end
 arch card
 name Kennel Token
-name_pl Kennel Tokens
 slaying NenshouYouso_Kennel_Token
 msg
 The holder of this card is allowed free
@@ -3463,7 +3447,6 @@ unique 1
 end
 arch card
 name Tannery Token
-name_pl Tannery Tokens
 slaying NenshouYouso_Tan_Token
 msg
 The holder of this card is allowed free
@@ -3496,7 +3479,6 @@ unique 1
 end
 arch card
 name Toolshed Token
-name_pl Toolshed Tokens
 slaying NenshouYouso_Tool_Token
 msg
 The holder of this card is allowed free
@@ -3524,7 +3506,6 @@ unique 1
 end
 arch card
 name Alchemy Token
-name_pl Alchemy Tokens
 slaying NenshouYouso_Alch_Token
 msg
 The holder of this card is allowed free
@@ -3552,7 +3533,6 @@ unique 1
 end
 arch card
 name Garden Token
-name_pl Garden Tokens
 slaying NenshouYouso_Gard_Token
 msg
 The holder of this card is allowed free
@@ -3580,7 +3560,6 @@ unique 1
 end
 arch card
 name Thaumaturgy Token
-name_pl Thaumaturgy Tokens
 slaying NenshouYouso_Thau_Token
 msg
 The holder of this card is allowed free
@@ -3607,7 +3586,6 @@ unique 1
 end
 arch card
 name Glowing Crystal Token
-name_pl Glowing Crystal Tokens
 slaying NenshouYouso_GC_Token
 msg
 The holder of this card is allowed free
@@ -3635,7 +3613,6 @@ unique 1
 end
 arch card
 name Jeweler Token
-name_pl Jeweler Tokens
 slaying NenshouYouso_Jewe_Token
 msg
 The holder of this card is allowed free
@@ -3694,7 +3671,6 @@ connected 26
 end
 arch card
 name Toolshed Token
-name_pl Toolshed Tokens
 slaying NenshouYouso_Tool_Token
 msg
 The holder of this card is allowed free
@@ -3964,7 +3940,6 @@ connected 56
 end
 arch card
 name Thaumaturgy Token
-name_pl Thaumaturgy Tokens
 slaying NenshouYouso_Thau_Token
 msg
 The holder of this card is allowed free
@@ -4410,7 +4385,6 @@ connected 26
 end
 arch card
 name Toolshed Token
-name_pl Toolshed Tokens
 slaying NenshouYouso_Tool_Token
 msg
 The holder of this card is allowed free
@@ -4568,7 +4542,6 @@ connected 86
 end
 arch card
 name Tannery Token
-name_pl Tannery Tokens
 slaying NenshouYouso_Tan_Token
 msg
 The holder of this card is allowed free
@@ -4600,7 +4573,6 @@ connected 86
 end
 arch card
 name Tannery Token
-name_pl Tannery Tokens
 slaying NenshouYouso_Tan_Token
 msg
 The holder of this card is allowed free
@@ -4636,7 +4608,6 @@ connected 86
 end
 arch card
 name Tannery Token
-name_pl Tannery Tokens
 slaying NenshouYouso_Tan_Token
 msg
 The holder of this card is allowed free
@@ -4681,7 +4652,6 @@ connected 86
 end
 arch card
 name Tannery Token
-name_pl Tannery Tokens
 slaying NenshouYouso_Tan_Token
 msg
 The holder of this card is allowed free
@@ -4861,7 +4831,6 @@ connected 56
 end
 arch card
 name Thaumaturgy Token
-name_pl Thaumaturgy Tokens
 slaying NenshouYouso_Thau_Token
 msg
 The holder of this card is allowed free
@@ -5205,7 +5174,6 @@ connected 76
 end
 arch card
 name Jeweler Token
-name_pl Jeweler Tokens
 slaying NenshouYouso_Jewe_Token
 msg
 The holder of this card is allowed free
@@ -5237,7 +5205,6 @@ connected 76
 end
 arch card
 name Jeweler Token
-name_pl Jeweler Tokens
 slaying NenshouYouso_Jewe_Token
 msg
 The holder of this card is allowed free
@@ -5273,7 +5240,6 @@ connected 76
 end
 arch card
 name Jeweler Token
-name_pl Jeweler Tokens
 slaying NenshouYouso_Jewe_Token
 msg
 The holder of this card is allowed free
@@ -5318,7 +5284,6 @@ connected 76
 end
 arch card
 name Jeweler Token
-name_pl Jeweler Tokens
 slaying NenshouYouso_Jewe_Token
 msg
 The holder of this card is allowed free
@@ -5367,7 +5332,6 @@ connected 26
 end
 arch card
 name Toolshed Token
-name_pl Toolshed Tokens
 slaying NenshouYouso_Tool_Token
 msg
 The holder of this card is allowed free
@@ -5551,7 +5515,6 @@ connected 56
 end
 arch card
 name Thaumaturgy Token
-name_pl Thaumaturgy Tokens
 slaying NenshouYouso_Thau_Token
 msg
 The holder of this card is allowed free
@@ -5637,7 +5600,6 @@ connected 66
 end
 arch card
 name Glowing Crystal Token
-name_pl Glowing Crystal Tokens
 slaying NenshouYouso_GC_Token
 msg
 The holder of this card is allowed free
@@ -5669,7 +5631,6 @@ connected 66
 end
 arch card
 name Glowing Crystal Token
-name_pl Glowing Crystal Tokens
 slaying NenshouYouso_GC_Token
 msg
 The holder of this card is allowed free
@@ -5705,7 +5666,6 @@ connected 66
 end
 arch card
 name Glowing Crystal Token
-name_pl Glowing Crystal Tokens
 slaying NenshouYouso_GC_Token
 msg
 The holder of this card is allowed free
@@ -5750,7 +5710,6 @@ connected 66
 end
 arch card
 name Glowing Crystal Token
-name_pl Glowing Crystal Tokens
 slaying NenshouYouso_GC_Token
 msg
 The holder of this card is allowed free
