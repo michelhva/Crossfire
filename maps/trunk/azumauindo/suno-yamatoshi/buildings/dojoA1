@@ -9,7 +9,7 @@ enter_x 38
 enter_y 57
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-05 Rick Tanner
+Modified: 2011-10-26 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -5313,7 +5313,6 @@ y 29
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 6
 y 29
 blocksview 0
@@ -5337,7 +5336,6 @@ y 30
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 6
 y 30
 blocksview 0
@@ -5361,7 +5359,6 @@ y 31
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 6
 y 31
 blocksview 0
@@ -5385,7 +5382,6 @@ y 32
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 6
 y 32
 blocksview 0
@@ -6111,7 +6107,6 @@ y 28
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 7
 y 28
 blocksview 0
@@ -6135,7 +6130,6 @@ y 29
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 7
 y 29
 blocksview 0
@@ -6892,7 +6886,6 @@ y 26
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 8
 y 26
 blocksview 0
@@ -6916,7 +6909,6 @@ y 27
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 8
 y 27
 blocksview 0
@@ -6940,7 +6932,6 @@ y 28
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 8
 y 28
 blocksview 0
@@ -7722,7 +7713,6 @@ y 26
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 9
 y 26
 blocksview 0
@@ -8574,7 +8564,6 @@ y 26
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 10
 y 26
 blocksview 0
@@ -9423,7 +9412,6 @@ y 26
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 11
 y 26
 blocksview 0
@@ -20613,7 +20601,6 @@ y 44
 end
 arch wwall_weak_1
 name paper wall
-name_pl paper wall
 face ewall_5.111
 hp 20
 maxhp 20
@@ -20653,7 +20640,6 @@ y 45
 end
 arch wwall_weak_1
 name paper wall
-name_pl paper wall
 face ewall_5.111
 hp 20
 maxhp 20
@@ -20693,7 +20679,6 @@ y 46
 end
 arch wwall_weak_1
 name paper wall
-name_pl paper wall
 face ewall_5.111
 hp 20
 maxhp 20
@@ -24820,7 +24805,6 @@ y 40
 end
 arch serp_sword
 name Crook'd sword
-name_pl Crook'd sword
 slaying dojo
 x 28
 y 40
@@ -32749,7 +32733,6 @@ y 32
 end
 arch wwall_weak_2
 name paper wall
-name_pl paper wall
 face ewall_A.111
 hp 20
 maxhp 20
@@ -33639,7 +33622,6 @@ y 32
 end
 arch wwall_weak_2
 name paper wall
-name_pl paper wall
 face ewall_A.111
 hp 20
 maxhp 20
@@ -34537,7 +34519,6 @@ y 32
 end
 arch wwall_weak_2
 name paper wall
-name_pl paper wall
 face ewall_A.111
 hp 20
 maxhp 20
@@ -35480,7 +35461,6 @@ y 32
 end
 arch wwall_weak_2
 name paper wall
-name_pl paper wall
 face ewall_A.111
 hp 20
 maxhp 20
@@ -36160,7 +36140,6 @@ unique 1
 end
 arch sign
 name Suno-yamatoshi Dojo
-name_pl Mikeeusa's Dojo
 msg
 Welcome to the Suno-yamatoshi Dojo.
 *You may fight as if in an arena.
@@ -48432,7 +48411,6 @@ y 44
 end
 arch wwall_weak_1
 name paper wall
-name_pl paper wall
 face ewall_5.111
 hp 20
 maxhp 20
@@ -48472,7 +48450,6 @@ y 45
 end
 arch wwall_weak_1
 name paper wall
-name_pl paper wall
 face ewall_5.111
 hp 20
 maxhp 20
@@ -48512,7 +48489,6 @@ y 46
 end
 arch wwall_weak_1
 name paper wall
-name_pl paper wall
 face ewall_5.111
 hp 20
 maxhp 20
