@@ -14,7 +14,7 @@ enter_x 8
 enter_y 14
 msg
 Created:  2005-03-18 MikeeUSA
-Modified: 2010-11-05 Andreas Kirschbaum
+Modified: 2011-10-26 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -210,7 +210,6 @@ x 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 1
@@ -218,7 +217,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 2
@@ -226,7 +224,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 3
@@ -250,7 +247,6 @@ y 4
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 5
@@ -258,7 +254,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 6
@@ -266,7 +261,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 7
@@ -290,7 +284,6 @@ y 8
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 9
@@ -298,7 +291,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 10
@@ -306,7 +298,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 11
@@ -330,7 +321,6 @@ y 12
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 13
@@ -338,7 +328,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 1
 y 14
@@ -371,7 +360,6 @@ x 2
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 1
@@ -379,7 +367,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 2
@@ -387,7 +374,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 3
@@ -407,7 +393,6 @@ y 4
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 5
@@ -415,7 +400,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 6
@@ -423,7 +407,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 7
@@ -443,7 +426,6 @@ y 8
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 9
@@ -451,7 +433,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 10
@@ -459,7 +440,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 11
@@ -479,7 +459,6 @@ y 12
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 13
@@ -487,7 +466,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 2
 y 14
@@ -519,7 +497,6 @@ x 3
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 1
@@ -527,7 +504,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 2
@@ -535,7 +511,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 3
@@ -555,7 +530,6 @@ y 4
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 5
@@ -563,7 +537,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 6
@@ -571,7 +544,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 7
@@ -591,7 +563,6 @@ y 8
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 9
@@ -599,7 +570,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 10
@@ -607,7 +577,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 11
@@ -627,7 +596,6 @@ y 12
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 13
@@ -635,7 +603,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 3
 y 14
@@ -683,7 +650,6 @@ y 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 4
 y 2
@@ -731,7 +697,6 @@ y 5
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 4
 y 6
@@ -779,7 +744,6 @@ y 9
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 4
 y 10
@@ -827,7 +791,6 @@ y 13
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 4
 y 14
@@ -859,7 +822,6 @@ x 5
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 1
@@ -867,7 +829,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 2
@@ -875,7 +836,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 3
@@ -883,7 +843,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 4
@@ -891,7 +850,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 5
@@ -899,7 +857,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 6
@@ -907,7 +864,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 7
@@ -915,7 +871,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 8
@@ -923,7 +878,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 9
@@ -931,7 +885,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 10
@@ -939,7 +892,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 11
@@ -947,7 +899,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 12
@@ -955,7 +906,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 13
@@ -963,7 +913,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 5
 y 14
@@ -996,7 +945,6 @@ x 6
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 6
 y 1
@@ -1132,7 +1080,6 @@ y 11
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 6
 y 12
@@ -1192,7 +1139,6 @@ x 7
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 7
 y 1
@@ -1212,7 +1158,6 @@ y 2
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 7
 y 3
@@ -1220,7 +1165,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 7
 y 4
@@ -1228,7 +1172,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 7
 y 5
@@ -1236,7 +1179,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 7
 y 6
@@ -1244,7 +1186,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 7
 y 7
@@ -1252,7 +1193,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 7
 y 8
@@ -1357,7 +1297,6 @@ x 8
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 8
 y 1
@@ -1377,7 +1316,6 @@ y 2
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 8
 y 3
@@ -1385,7 +1323,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 8
 y 4
@@ -1393,7 +1330,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 8
 y 5
@@ -1401,7 +1337,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 8
 y 6
@@ -1409,7 +1344,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 8
 y 7
@@ -1417,7 +1351,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 8
 y 8
@@ -1453,7 +1386,6 @@ y 10
 end
 arch sage
 name shop keeper
-name_pl shop keeper
 msg
 @match *
 The eastern wind is rich in treasures
@@ -1476,7 +1408,6 @@ y 11
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 8
 y 12
@@ -1500,7 +1431,6 @@ y 14
 end
 arch sign
 name Suno-yamatoshi Sale Shop
-name_pl Suno-yamatoshi Sale Shop
 msg
 Suno-yamatoshi Sale Shop
 Here you can sell or buy found goods.
@@ -1534,7 +1464,6 @@ x 9
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 9
 y 1
@@ -1570,7 +1499,6 @@ y 3
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 9
 y 4
@@ -1666,7 +1594,6 @@ y 11
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 9
 y 12
@@ -1726,7 +1653,6 @@ x 10
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 1
@@ -1734,7 +1660,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 2
@@ -1742,7 +1667,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 3
@@ -1750,7 +1674,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 4
@@ -1758,7 +1681,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 5
@@ -1766,7 +1688,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 6
@@ -1774,7 +1695,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 7
@@ -1782,7 +1702,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 8
@@ -1790,7 +1709,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 9
@@ -1798,7 +1716,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 10
@@ -1806,7 +1723,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 11
@@ -1814,7 +1730,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 12
@@ -1822,7 +1737,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 13
@@ -1830,7 +1744,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 10
 y 14
@@ -1882,7 +1795,6 @@ y 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 11
 y 2
@@ -1930,7 +1842,6 @@ y 5
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 11
 y 6
@@ -1978,7 +1889,6 @@ y 9
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 11
 y 10
@@ -2026,7 +1936,6 @@ y 13
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 11
 y 14
@@ -2058,7 +1967,6 @@ x 12
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 1
@@ -2066,7 +1974,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 2
@@ -2074,7 +1981,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 3
@@ -2094,7 +2000,6 @@ y 4
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 5
@@ -2102,7 +2007,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 6
@@ -2110,7 +2014,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 7
@@ -2130,7 +2033,6 @@ y 8
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 9
@@ -2138,7 +2040,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 10
@@ -2146,7 +2047,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 11
@@ -2166,7 +2066,6 @@ y 12
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 13
@@ -2174,7 +2073,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 12
 y 14
@@ -2203,7 +2101,6 @@ x 13
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 1
@@ -2211,7 +2108,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 2
@@ -2219,7 +2115,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 3
@@ -2239,7 +2134,6 @@ y 4
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 5
@@ -2247,7 +2141,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 6
@@ -2255,7 +2148,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 7
@@ -2275,7 +2167,6 @@ y 8
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 9
@@ -2283,7 +2174,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 10
@@ -2291,7 +2181,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 11
@@ -2311,7 +2200,6 @@ y 12
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 13
@@ -2319,7 +2207,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 13
 y 14
@@ -2351,7 +2238,6 @@ x 14
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 1
@@ -2359,7 +2245,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 2
@@ -2367,7 +2252,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 3
@@ -2391,7 +2275,6 @@ y 4
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 5
@@ -2399,7 +2282,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 6
@@ -2407,7 +2289,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 7
@@ -2431,7 +2312,6 @@ y 8
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 9
@@ -2439,7 +2319,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 10
@@ -2447,7 +2326,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 11
@@ -2471,7 +2349,6 @@ y 12
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 13
@@ -2479,7 +2356,6 @@ unique 1
 end
 arch shop_empty
 name perm tiles
-name_pl perm tiles
 face woodfloor.111
 x 14
 y 14
