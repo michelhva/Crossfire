@@ -8,7 +8,7 @@ enter_x 7
 enter_y 17
 msg
 Created:  2005-11-04 Gene Alexander
-Modified: 2008-09-11 Rick Tanner
+Modified: 2011-10-27 Rick Tanner
 endmsg
 end
 arch grassmedium
@@ -271,7 +271,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 2
 end
@@ -286,7 +285,6 @@ y 2
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 3
 end
@@ -301,7 +299,6 @@ y 3
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 4
 end
@@ -316,7 +313,6 @@ y 4
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 5
 end
@@ -331,7 +327,6 @@ y 5
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 6
 end
@@ -346,7 +341,6 @@ y 6
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 7
 end
@@ -361,7 +355,6 @@ y 7
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 8
 end
@@ -376,7 +369,6 @@ y 8
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 9
 end
@@ -391,7 +383,6 @@ y 9
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 10
 end
@@ -406,7 +397,6 @@ y 10
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 11
 end
@@ -421,7 +411,6 @@ y 11
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 12
 end
@@ -436,7 +425,6 @@ y 12
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 13
 end
@@ -451,7 +439,6 @@ y 13
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 14
 end
@@ -466,7 +453,6 @@ y 14
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 15
 end
@@ -481,7 +467,6 @@ y 15
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 16
 end
@@ -496,7 +481,6 @@ y 16
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 17
 end
@@ -511,7 +495,6 @@ y 17
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 18
 end
@@ -526,7 +509,6 @@ y 18
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 19
 end
@@ -541,7 +523,6 @@ y 19
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 20
 end
@@ -556,7 +537,6 @@ y 20
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 21
 end
@@ -571,7 +551,6 @@ y 21
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 22
 end
@@ -586,7 +565,6 @@ y 22
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 23
 end
@@ -601,7 +579,6 @@ y 23
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 24
 end
@@ -616,7 +593,6 @@ y 24
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 25
 end
@@ -631,7 +607,6 @@ y 25
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 26
 end
@@ -646,7 +621,6 @@ y 26
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 27
 end
@@ -661,7 +635,6 @@ y 27
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 28
 end
@@ -676,7 +649,6 @@ y 28
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 29
 end
@@ -691,7 +663,6 @@ y 29
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 30
 end
@@ -706,7 +677,6 @@ y 30
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 31
 end
@@ -721,7 +691,6 @@ y 31
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 2
 y 32
 end
@@ -751,7 +720,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 3
 y 2
 end
@@ -1027,7 +995,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 3
 y 32
 end
@@ -1057,7 +1024,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 4
 y 2
 end
@@ -1085,7 +1051,6 @@ y 4
 end
 arch perm_magic_portal
 name Portal to Scorn
-name_pl Portal to Scorn
 slaying /world/world_105_115
 hp 5
 sp 34
@@ -1244,7 +1209,6 @@ connected 393939
 end
 arch goldfloor
 name Drop 30 holy symbols for an altar
-name_pl Drop 30 holy symbols for an altar
 slaying holy_symbol
 food 30
 x 4
@@ -1262,7 +1226,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 4
 y 32
 end
@@ -1292,7 +1255,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 5
 y 2
 end
@@ -1347,7 +1309,6 @@ y 7
 end
 arch altar
 name Drop 10000 diamonds for portal to Scorn
-name_pl Drop 10000 diamonds for portal to Scorn
 slaying diamond
 food 10000
 x 5
@@ -1482,7 +1443,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 5
 y 32
 end
@@ -1516,7 +1476,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 6
 y 2
 end
@@ -1544,7 +1503,6 @@ y 4
 end
 arch perm_magic_portal
 name Portal to Navar
-name_pl Portal to Navar
 slaying /world/world_121_116
 hp 46
 sp 46
@@ -1763,7 +1721,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 7
 y 2
 end
@@ -1818,7 +1775,6 @@ y 7
 end
 arch altar
 name Drop 10000 diamonds for portal to Navar
-name_pl Drop 10000 diamonds for portal to Navar
 slaying diamond
 food 10000
 x 7
@@ -2029,7 +1985,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 8
 y 2
 end
@@ -2057,7 +2012,6 @@ y 4
 end
 arch perm_magic_portal
 name Portal to Darcap
-name_pl Portal to Darcap
 slaying /world/world_116_102
 hp 28
 sp 37
@@ -2178,7 +2132,6 @@ is_buildable 1
 end
 arch book_clasp
 name Brest Town House Owner Guide
-name_pl Brest Town House Owner Guides
 msg
 Welcome to your new town house located
 in beautiful downtown Brest. Brest Realty
@@ -2260,7 +2213,6 @@ move_off 0
 end
 arch altar
 name 320
-name_pl 320
 slaying diamond
 food 5000
 x 8
@@ -2320,7 +2272,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 9
 y 2
 end
@@ -2375,7 +2326,6 @@ y 7
 end
 arch altar
 name Drop 10000 diamonds for portal to Darcap
-name_pl Drop 10000 diamonds for portal to Darcap
 slaying diamond
 food 10000
 x 9
@@ -2566,7 +2516,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 10
 y 2
 end
@@ -2594,7 +2543,6 @@ y 4
 end
 arch perm_magic_portal
 name Portal to Lake Country
-name_pl Portal to Lake Country
 slaying /world/world_109_126
 hp 16
 x 10
@@ -2783,7 +2731,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 11
 y 2
 end
@@ -2838,7 +2785,6 @@ y 7
 end
 arch altar
 name Drop 10000 diamonds for portal to Lake Country
-name_pl Drop 10000 diamonds for portal to Lake Country
 slaying diamond
 food 10000
 x 11
@@ -2971,7 +2917,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 11
 y 32
 end
@@ -3005,7 +2950,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 12
 y 2
 end
@@ -3169,7 +3113,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 12
 y 32
 end
@@ -3199,7 +3142,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 13
 y 2
 end
@@ -3529,7 +3471,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 13
 y 32
 end
@@ -3559,7 +3500,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 14
 y 2
 end
@@ -3889,7 +3829,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 14
 y 32
 end
@@ -3919,7 +3858,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 15
 y 2
 end
@@ -4249,7 +4187,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 15
 y 32
 end
@@ -4279,7 +4216,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 16
 y 2
 end
@@ -4609,7 +4545,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 16
 y 32
 end
@@ -4639,7 +4574,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 17
 y 2
 end
@@ -4969,7 +4903,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 17
 y 32
 end
@@ -4999,7 +4932,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 18
 y 2
 end
@@ -5329,7 +5261,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 18
 y 32
 end
@@ -5359,7 +5290,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 19
 y 2
 end
@@ -5689,7 +5619,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 19
 y 32
 end
@@ -5719,7 +5648,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 20
 y 2
 end
@@ -6049,7 +5977,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 20
 y 32
 end
@@ -6079,7 +6006,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 21
 y 2
 end
@@ -6409,7 +6335,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 21
 y 32
 end
@@ -6439,7 +6364,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 22
 y 2
 end
@@ -6769,7 +6693,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 22
 y 32
 end
@@ -6799,7 +6722,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 23
 y 2
 end
@@ -7129,7 +7051,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 23
 y 32
 end
@@ -7159,7 +7080,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 24
 y 2
 end
@@ -7489,7 +7409,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 24
 y 32
 end
@@ -7519,7 +7438,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 25
 y 2
 end
@@ -7849,7 +7767,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 25
 y 32
 end
@@ -7879,7 +7796,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 26
 y 2
 end
@@ -8209,7 +8125,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 26
 y 32
 end
@@ -8239,7 +8154,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 27
 y 2
 end
@@ -8569,7 +8483,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 27
 y 32
 end
@@ -8599,7 +8512,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 28
 y 2
 end
@@ -8929,7 +8841,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 28
 y 32
 end
@@ -8959,7 +8870,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 29
 y 2
 end
@@ -9289,7 +9199,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 29
 y 32
 end
@@ -9319,7 +9228,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 30
 y 2
 end
@@ -9649,7 +9557,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 30
 y 32
 end
@@ -9679,7 +9586,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 31
 y 2
 end
@@ -9955,7 +9861,6 @@ type 77
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 31
 y 32
 end
@@ -9985,7 +9890,6 @@ y 1
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 2
 end
@@ -10000,7 +9904,6 @@ y 2
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 3
 end
@@ -10015,7 +9918,6 @@ y 3
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 4
 end
@@ -10030,7 +9932,6 @@ y 4
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 5
 end
@@ -10045,7 +9946,6 @@ y 5
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 6
 end
@@ -10060,7 +9960,6 @@ y 6
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 7
 end
@@ -10075,7 +9974,6 @@ y 7
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 8
 end
@@ -10090,7 +9988,6 @@ y 8
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 9
 end
@@ -10105,7 +10002,6 @@ y 9
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 10
 end
@@ -10120,7 +10016,6 @@ y 10
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 11
 end
@@ -10135,7 +10030,6 @@ y 11
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 12
 end
@@ -10150,7 +10044,6 @@ y 12
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 13
 end
@@ -10165,7 +10058,6 @@ y 13
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 14
 end
@@ -10180,7 +10072,6 @@ y 14
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 15
 end
@@ -10195,7 +10086,6 @@ y 15
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 16
 end
@@ -10210,7 +10100,6 @@ y 16
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 17
 end
@@ -10225,7 +10114,6 @@ y 17
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 18
 end
@@ -10240,7 +10128,6 @@ y 18
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 19
 end
@@ -10255,7 +10142,6 @@ y 19
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 20
 end
@@ -10270,7 +10156,6 @@ y 20
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 21
 end
@@ -10285,7 +10170,6 @@ y 21
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 22
 end
@@ -10300,7 +10184,6 @@ y 22
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 23
 end
@@ -10315,7 +10198,6 @@ y 23
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 24
 end
@@ -10330,7 +10212,6 @@ y 24
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 25
 end
@@ -10345,7 +10226,6 @@ y 25
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 26
 end
@@ -10360,7 +10240,6 @@ y 26
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 27
 end
@@ -10375,7 +10254,6 @@ y 27
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 28
 end
@@ -10390,7 +10268,6 @@ y 28
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 29
 end
@@ -10405,7 +10282,6 @@ y 29
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 30
 end
@@ -10420,7 +10296,6 @@ y 30
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 31
 end
@@ -10435,7 +10310,6 @@ y 31
 end
 arch earth
 name flower bed
-name_pl flower bed
 x 32
 y 32
 end
