@@ -8,7 +8,7 @@ enter_x 14
 enter_y 23
 msg
 Created:  1994-09-24 Gene Alexander
-Modified: 2011-10-09 Rick Tanner
+Modified: 2011-10-28 Rick Tanner
 endmsg
 end
 arch brush
@@ -1179,7 +1179,6 @@ y 15
 end
 arch altar
 name pay 4 gold coins
-name_pl pay 4 gold coins
 slaying money
 msg
 Enjoy your stay
@@ -1373,7 +1372,6 @@ y 12
 end
 arch altar
 name pay 4 gold coins
-name_pl pay 4 gold coins
 slaying money
 msg
 Enjoy your stay
@@ -1515,7 +1513,6 @@ y 5
 end
 arch altar
 name pay 4 gold coins
-name_pl pay 4 gold coins
 slaying money
 msg
 Enjoy your stay
@@ -1553,7 +1550,6 @@ y 9
 end
 arch altar
 name pay 5 gold coins
-name_pl pay 5 gold coins
 slaying money
 msg
 Enjoy your stay
@@ -1799,7 +1795,6 @@ y 15
 end
 arch altar
 name pay 5 gold coins
-name_pl pay 5 gold coins
 slaying money
 msg
 Enjoy your stay!
@@ -2304,7 +2299,6 @@ connected 5
 end
 arch altar
 name pay 7 gold coins
-name_pl pay 7 gold coins
 slaying money
 msg
 Enjoy your stay
@@ -3466,7 +3460,6 @@ connected 6
 end
 arch altar
 name pay 10 gold coins
-name_pl pay 10 gold coins
 slaying money
 msg
 Enjoy your stay
@@ -3724,7 +3717,6 @@ y 18
 end
 arch altar
 name pay 3 gold coins
-name_pl pay 3 gold coins
 slaying money
 food 30
 x 19
@@ -3828,7 +3820,6 @@ connected 8
 end
 arch altar
 name pay 1 gold coin
-name_pl pay 1 gold coin
 slaying money
 x 20
 y 7
@@ -4586,7 +4577,6 @@ y 14
 end
 arch wine
 name bottle of Mogen David
-name_pl bottles of Mogen David
 msg
 A strong wine.
 endmsg
@@ -4766,7 +4756,6 @@ y 14
 end
 arch fighter
 name TCI Representative
-name_pl TCI Representative
 msg
 @match tci
 @question location Where are these locations?
