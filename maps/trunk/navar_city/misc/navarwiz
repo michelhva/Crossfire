@@ -351,10 +351,8 @@ name_pl potions of gem essence
 resist_physical 0
 value 0
 identified 1
-arch event_drop
+arch quest_prevent_drop
 name scorn/Rhyz 40
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 end

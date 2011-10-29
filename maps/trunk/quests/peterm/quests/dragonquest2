@@ -3364,10 +3364,8 @@ name scorn/DragonWhisker 50>60
 title Python
 slaying /python/quests/QuestAdvance.py
 end
-arch event_drop
+arch quest_prevent_drop
 name scorn/DragonWhisker 70
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch pstone_2

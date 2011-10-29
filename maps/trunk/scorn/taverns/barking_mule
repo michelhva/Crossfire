@@ -203,10 +203,8 @@ name scorn/Earhorn 20-30>50 0>10
 title Python
 slaying python/quests/QuestAdvance.py
 end
-arch event_drop
+arch quest_prevent_drop
 name scorn/Earhorn 60
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 end

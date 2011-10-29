@@ -1842,10 +1842,8 @@ arch blackroot
 name smaprh root
 name_pl smaprh roots
 nrof 5
-arch event_drop
+arch quest_prevent_drop
 name darcap/Spike 40
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 end

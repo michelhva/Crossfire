@@ -312,10 +312,8 @@ name testquest 0>30 10>20
 title Python
 slaying python/quests/QuestAdvance.py
 end
-arch event_drop
+arch quest_prevent_drop
 name testquest 40
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch graymarble
@@ -1701,10 +1699,8 @@ stand_still 1
 arch coffee_empty
 name mcguffin
 name_pl mcguffins
-arch event_drop
+arch quest_prevent_drop
 name testquest2 30
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch npc_dialog

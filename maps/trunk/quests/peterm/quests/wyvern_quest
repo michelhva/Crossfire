@@ -3743,10 +3743,8 @@ carrying 25
 arch dragon_wing
 name Slithselest's wing
 material 0
-arch event_drop
+arch quest_prevent_drop
 name scorn/WyvernWing 50
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 arch event_pickup
 name scorn/WyvernWing 30>40
