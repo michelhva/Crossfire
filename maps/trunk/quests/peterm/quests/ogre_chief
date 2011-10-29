@@ -4080,10 +4080,8 @@ end
 arch head
 name Head of the Ogre Chief
 material 0
-arch event_pickup
+arch quest_advance_pickup
 name scorn/OgreKing 30>40
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 arch quest_prevent_drop
 name scorn/OgreKing 50
@@ -4093,10 +4091,8 @@ arch skill_throwing
 end
 arch small_shield
 end
-arch event_death
+arch quest_advance_death
 name scorn/OgreKing 20>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch large_stones

@@ -7150,10 +7150,8 @@ endmsg
 x 28
 y 3
 is_floor 0
-arch event_apply
+arch quest_advance_apply
 name scorn/WyvernWing 10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch steppe

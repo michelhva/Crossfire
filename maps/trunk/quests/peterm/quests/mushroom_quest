@@ -1615,10 +1615,8 @@ y 27
 arch quest_prevent_drop
 name scorn/BlueMushroom 50
 end
-arch event_pickup
+arch quest_advance_pickup
 name scorn/BlueMushroom 30>40
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch sea

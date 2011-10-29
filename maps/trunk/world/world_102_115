@@ -298,10 +298,8 @@ difficulty_increase 0.5
 endmsg
 x 1
 y 14
-arch event_apply
+arch quest_advance_apply
 name scorn/BlueMushroom 10>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch swamp

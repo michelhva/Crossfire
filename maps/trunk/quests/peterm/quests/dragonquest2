@@ -3359,10 +3359,8 @@ reflect_missile 1
 reflect_spell 1
 xrays 1
 lifesave 1
-arch event_pickup
+arch quest_advance_pickup
 name scorn/DragonWhisker 50>60
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 arch quest_prevent_drop
 name scorn/DragonWhisker 70

@@ -4426,10 +4426,8 @@ arch key2
 name broken gateway
 slaying broken gateway
 face penta.111
-arch event_pickup
+arch quest_advance_pickup
 name scorn/DemonPit 30>40
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 arch quest_prevent_drop
 name scorn/DemonPit 50

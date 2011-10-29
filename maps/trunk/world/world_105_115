@@ -12860,10 +12860,8 @@ endmsg
 x 33
 y 15
 elevation 10852
-arch event_apply
+arch quest_advance_apply
 name scorn/GoblinKing 10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch mountain

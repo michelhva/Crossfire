@@ -11705,10 +11705,8 @@ dungeon_depth 50
 endmsg
 x 45
 y 49
-arch event_apply
+arch quest_advance_apply
 name scorn/LordSpectre 10-20>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch sea

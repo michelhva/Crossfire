@@ -401,10 +401,8 @@ end
 arch npc_dialog
 name scorn/houses/terrys_wife.msg
 end
-arch event_death
+arch quest_advance_death
 name scorn/TerrysFarm 0-50>70
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch woodfloor2
@@ -845,10 +843,8 @@ stand_still 1
 arch npc_dialog
 name scorn/houses/terry.msg
 end
-arch event_death
+arch quest_advance_death
 name scorn/TerrysFarm 0-50>70
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch woodfloor2
@@ -2197,10 +2193,8 @@ end
 arch goldcoin
 nrof 50
 end
-arch event_death
+arch quest_advance_death
 name scorn/TerrysFarm 30-40>50
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch pstone_1

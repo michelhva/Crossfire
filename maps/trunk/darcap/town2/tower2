@@ -2673,10 +2673,8 @@ hp 5
 sp 1
 x 13
 y 26
-arch event_apply
+arch quest_advance_apply
 name darcap/Elemental 0>10
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch giant

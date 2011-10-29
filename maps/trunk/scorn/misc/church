@@ -524,10 +524,8 @@ final_map /scorn/peterm/undead_quest
 endmsg
 x 4
 y 14
-arch event_apply
+arch quest_advance_apply
 name scorn/Animator 10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch tree

@@ -830,10 +830,8 @@ arch check_floor
 hp 1
 x 7
 y 9
-arch event_trigger
+arch quest_advance_trigger
 name scorn/PortGate 0-10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_floor
@@ -946,10 +944,8 @@ arch check_floor
 hp 1
 x 8
 y 9
-arch event_trigger
+arch quest_advance_trigger
 name scorn/PortGate 0-10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_floor
@@ -1062,10 +1058,8 @@ arch check_floor
 hp 1
 x 9
 y 9
-arch event_trigger
+arch quest_advance_trigger
 name scorn/PortGate 0-10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_floor
@@ -1216,10 +1210,8 @@ arch check_floor
 hp 1
 x 10
 y 9
-arch event_trigger
+arch quest_advance_trigger
 name scorn/PortGate 0-10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_floor

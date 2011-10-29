@@ -554,10 +554,8 @@ This dress is huge, far larger than any normal-sized person might wear.
 endmsg
 value 1
 race_restriction :giant:
-arch event_pickup
+arch quest_advance_pickup
 name scorn/OrcDress 20>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 end
