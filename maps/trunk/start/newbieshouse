@@ -3284,10 +3284,8 @@ resist_magic 100
 weight 50000000
 friendly 1
 stand_still 1
-arch event_say
+arch npc_dialog
 name start/sigmund.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch dungeon_magic
