@@ -4528,10 +4528,8 @@ hp 18
 sp 14
 x 21
 y 5
-arch event_apply
+arch quest_advance_apply
 name darcap/Elemental 0>10
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch dirtfloor

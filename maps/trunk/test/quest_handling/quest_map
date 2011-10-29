@@ -138,10 +138,8 @@ end
 arch check_floor
 hp 1
 x 1
-arch event_trigger
+arch quest_advance_trigger
 name testquest2 10-20>25
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch graymarble
@@ -151,10 +149,8 @@ arch check_floor
 hp 1
 x 1
 y 1
-arch event_trigger
+arch quest_advance_trigger
 name testquest2 10-20>25
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch graymarble
@@ -165,10 +161,8 @@ arch check_floor
 hp 1
 x 1
 y 2
-arch event_trigger
+arch quest_advance_trigger
 name testquest2 10-20>25
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch graymarble
@@ -179,10 +173,8 @@ arch check_floor
 hp 1
 x 1
 y 3
-arch event_trigger
+arch quest_advance_trigger
 name testquest2 10-20>25
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch graymarble
@@ -193,10 +185,8 @@ arch check_floor
 hp 1
 x 1
 y 4
-arch event_trigger
+arch quest_advance_trigger
 name testquest2 10-20>25
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch graymarble
@@ -207,10 +197,8 @@ arch check_floor
 hp 1
 x 1
 y 5
-arch event_trigger
+arch quest_advance_trigger
 name testquest2 10-20>25
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch graymarble
@@ -221,10 +209,8 @@ arch check_floor
 hp 1
 x 1
 y 6
-arch event_trigger
+arch quest_advance_trigger
 name testquest2 10-20>25
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch graymarble
@@ -307,10 +293,8 @@ arch broadsword
 name testquesttarget
 name_pl testquesttargets
 x 2
-arch event_pickup
+arch quest_advance_pickup
 name testquest 0>30 10>20
-title Python
-slaying python/quests/QuestAdvance.py
 end
 arch quest_prevent_drop
 name testquest 40

@@ -948,10 +948,8 @@ arch button_handle
 name handle earth
 x 6
 y 2
-arch event_apply
+arch quest_advance_apply
 name darcap/Elemental-Earth 10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch flagstone
@@ -1092,10 +1090,8 @@ arch button_handle
 name handle air
 x 6
 y 13
-arch event_apply
+arch quest_advance_apply
 name darcap/Elemental-Air 10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch flagstone
@@ -1223,10 +1219,8 @@ Good luck!
 endmsg
 x 7
 y 7
-arch event_apply
+arch quest_advance_apply
 name darcap/Elemental 0>10
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch flagstone
@@ -1875,10 +1869,8 @@ arch button_handle
 x 11
 y 4
 connected 2
-arch event_apply
+arch quest_advance_apply
 name darcap/Elemental 20>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch flagstone
@@ -1957,10 +1949,8 @@ arch button_handle
 x 11
 y 11
 connected 2
-arch event_apply
+arch quest_advance_apply
 name darcap/Elemental 20>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch flagstone
@@ -2897,10 +2887,8 @@ arch button_handle
 name handle water
 x 17
 y 2
-arch event_apply
+arch quest_advance_apply
 name darcap/Elemental-Water 10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch flagstone
@@ -3041,10 +3029,8 @@ arch button_handle
 name handle fire
 x 17
 y 13
-arch event_apply
+arch quest_advance_apply
 name darcap/Elemental-Fire 10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch flagstone

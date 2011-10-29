@@ -114,16 +114,12 @@ magic 7
 arch quest_prevent_drop
 name scorn/LordSpectre 60
 end
-arch event_pickup
+arch quest_advance_pickup
 name scorn/LordSpectre 30-40>50
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
-arch event_death
+arch quest_advance_death
 name scorn/LordSpectre 30>40
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch demilich

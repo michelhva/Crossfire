@@ -17824,10 +17824,8 @@ drop_if_quest darcap/Cameron-wine 30
 arch quest_prevent_drop
 name darcap/Cameron-wine 50
 end
-arch event_pickup
+arch quest_advance_pickup
 name darcap/Cameron-wine 30>40
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch event_death

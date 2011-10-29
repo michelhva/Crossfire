@@ -12405,10 +12405,8 @@ endmsg
 x 39
 y 42
 is_floor 0
-arch event_apply
+arch quest_advance_apply
 name scorn/DragonWhisker 10-40>50
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch mountain2

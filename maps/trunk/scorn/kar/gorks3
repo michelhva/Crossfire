@@ -285,10 +285,8 @@ end
 arch check_floor
 x 5
 y 8
-arch event_trigger
+arch quest_advance_trigger
 name scorn/GorksTreasure 40>50
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch cobblestones2

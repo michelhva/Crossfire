@@ -1722,10 +1722,8 @@ hp 5
 sp 5
 x 18
 y 11
-arch event_apply
+arch quest_advance_apply
 name scorn/Rhyz 10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch woodfloor

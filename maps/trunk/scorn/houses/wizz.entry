@@ -879,10 +879,8 @@ Animal or plants entering the city of scorn must be quarantined in the Quarantin
 endmsg
 value 2500
 identified 1
-arch event_pickup
+arch quest_advance_pickup
 name scorn/PortPass 0-10>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 end

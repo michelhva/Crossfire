@@ -1532,10 +1532,8 @@ face rock.111
 x 14
 y 14
 no_pick 1
-arch event_apply
+arch quest_advance_apply
 name scorn/OrcDress 40>50
-title Python
-slaying python/quests/QuestAdvance.py
 end
 arch card
 name Gate Pass
@@ -1551,10 +1549,8 @@ without recompense or liability.
 endmsg
 value 800
 identified 1
-arch event_pickup
+arch quest_advance_pickup
 name scorn/GatePass 0-10>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 end

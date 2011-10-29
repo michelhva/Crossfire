@@ -3099,10 +3099,8 @@ final_map /euthville/demon_quest
 endmsg
 x 11
 y 22
-arch event_apply
+arch quest_advance_apply
 name scorn/DemonPit 10>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch medium_stones

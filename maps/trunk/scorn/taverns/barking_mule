@@ -198,10 +198,8 @@ Git yer paws offa it!
 endmsg
 type 21
 value 1
-arch event_pickup
+arch quest_advance_pickup
 name scorn/Earhorn 20-30>50 0>10
-title Python
-slaying python/quests/QuestAdvance.py
 end
 arch quest_prevent_drop
 name scorn/Earhorn 60

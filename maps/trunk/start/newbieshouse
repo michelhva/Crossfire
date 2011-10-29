@@ -3316,10 +3316,8 @@ arch check_floor
 hp 1
 x 11
 y 10
-arch event_trigger
+arch quest_advance_trigger
 name tutorial/keys 0>10
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_magic
@@ -4305,10 +4303,8 @@ arch random_wealth
 end
 arch random_food
 end
-arch event_apply
+arch quest_advance_apply
 name tutorial/keys 40>50
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_magic
@@ -4949,10 +4945,8 @@ endmsg
 arch quest_prevent_drop
 name tutorial/keys 50
 end
-arch event_pickup
+arch quest_advance_pickup
 name tutorial/keys 30>40
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 end
@@ -4976,10 +4970,8 @@ arch check_floor
 hp 1
 x 16
 y 6
-arch event_trigger
+arch quest_advance_trigger
 name tutorial/keys 20>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_magic
@@ -5007,10 +4999,8 @@ arch check_floor
 hp 1
 x 16
 y 8
-arch event_trigger
+arch quest_advance_trigger
 name tutorial/keys 10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_magic

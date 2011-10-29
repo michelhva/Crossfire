@@ -2361,10 +2361,8 @@ endmsg
 x 9
 y 18
 is_floor 0
-arch event_apply
+arch quest_advance_apply
 name scorn/OgreKing 10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch hills

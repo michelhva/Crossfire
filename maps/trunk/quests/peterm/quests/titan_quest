@@ -3788,19 +3788,15 @@ carrying 12300
 arch crown
 name Meganthropopulos' Crown
 material 0
-arch event_pickup
+arch quest_advance_pickup
 name scorn/TitanCrown 60>70
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 arch quest_prevent_drop
 name scorn/TitanCrown 80
 end
 end
-arch event_death
+arch quest_advance_death
 name scorn/TitanCrown 50>60
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch woodfloor2

@@ -419,10 +419,8 @@ arch check_floor
 hp 1
 x 4
 y 5
-arch event_trigger
+arch quest_advance_trigger
 name scorn/CityGate 0-10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch cobblestones2
@@ -433,10 +431,8 @@ arch check_floor
 hp 1
 x 4
 y 6
-arch event_trigger
+arch quest_advance_trigger
 name scorn/CityGate 0-10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch cobblestones2
@@ -447,10 +443,8 @@ arch check_floor
 hp 1
 x 4
 y 7
-arch event_trigger
+arch quest_advance_trigger
 name scorn/CityGate 0-10>20
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch cobblestones2

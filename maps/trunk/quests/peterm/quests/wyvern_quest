@@ -3746,16 +3746,12 @@ material 0
 arch quest_prevent_drop
 name scorn/WyvernWing 50
 end
-arch event_pickup
+arch quest_advance_pickup
 name scorn/WyvernWing 30>40
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
-arch event_death
+arch quest_advance_death
 name scorn/WyvernWing 20>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch medium_stones

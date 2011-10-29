@@ -1602,19 +1602,15 @@ arch goblin_head
 name Head of the Goblin Chief
 slaying Head of the Goblin Chief
 material 0
-arch event_pickup
+arch quest_advance_pickup
 name scorn/GoblinKing 30>40
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 arch quest_prevent_drop
 name scorn/GoblinKing 50
 end
 end
-arch event_death
+arch quest_advance_death
 name scorn/GoblinKing 20>30
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch pstone_4

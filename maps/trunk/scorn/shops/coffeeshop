@@ -424,10 +424,8 @@ arch coffee
 name Eswald's inferior coffee
 name_pl Eswald's inferior coffees
 food 1
-arch event_apply
+arch quest_advance_apply
 name scorn/CoffeeGoose 0>10
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 end

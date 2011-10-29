@@ -513,10 +513,8 @@ endmsg
 x 2
 y 21
 type 21
-arch event_pickup
+arch quest_advance_pickup
 name scorn/WalkingStick 0>10 20-40>50
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 arch quest_prevent_drop
 name scorn/WalkingStick 60
@@ -1649,10 +1647,8 @@ face goose.131
 animation goose
 x 9
 y 19
-arch event_pickup
+arch quest_advance_pickup
 name scorn/CoffeeGoose 20-80>90
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 arch quest_prevent_drop
 name scorn/CoffeeGoose 100
@@ -2242,10 +2238,8 @@ arch check_floor
 hp 1
 x 13
 y 21
-arch event_trigger
+arch quest_advance_trigger
 name scorn/CoffeeGoose 50>70
-title Python
-slaying /python/quests/QuestAdvance.py
 end
 end
 arch woodfloor
