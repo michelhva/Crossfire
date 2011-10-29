@@ -1146,10 +1146,8 @@ endmsg
 x 6
 y 21
 randomitems jail
-arch event_say
+arch npc_dialog
 name scorn/houses/jc.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor

@@ -343,10 +343,8 @@ name Oled's coffee
 name_pl Oled's coffees
 end
 end
-arch event_say
+arch npc_dialog
 name scorn/shops/oled.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor

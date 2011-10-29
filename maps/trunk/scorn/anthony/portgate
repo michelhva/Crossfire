@@ -604,10 +604,8 @@ x 6
 y 2
 friendly 1
 unaggressive 0
-arch event_say
+arch npc_dialog
 name scorn/anthony/portguard.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch dungeon_floor
@@ -708,10 +706,8 @@ y 10
 speed_left -0.700000
 friendly 1
 unaggressive 0
-arch event_say
+arch npc_dialog
 name scorn/anthony/portguard.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch cobblestones2
@@ -1290,10 +1286,8 @@ x 11
 y 2
 friendly 1
 unaggressive 0
-arch event_say
+arch npc_dialog
 name scorn/anthony/portguard.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch dungeon_magic
@@ -1402,10 +1396,8 @@ y 10
 speed_left -0.700000
 friendly 1
 unaggressive 0
-arch event_say
+arch npc_dialog
 name scorn/anthony/portguard.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch grass

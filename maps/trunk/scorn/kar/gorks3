@@ -593,10 +593,8 @@ endmsg
 x 9
 y 8
 unaggressive 1
-arch event_say
+arch npc_dialog
 name scorn/kar/gork.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch cobblestones2

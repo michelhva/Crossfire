@@ -443,10 +443,8 @@ endmsg
 x 5
 y 5
 unaggressive 1
-arch event_say
+arch npc_dialog
 name quests/peterm/quests/titanguard.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch dungeon_floor

@@ -1412,10 +1412,8 @@ arch crone
 name Servant of Gaea
 x 13
 y 6
-arch event_say
+arch npc_dialog
 name scorn/temples/servantofgaea.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch pstone_1

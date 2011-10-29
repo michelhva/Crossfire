@@ -2808,10 +2808,8 @@ y 20
 type 0
 randomitems jail
 stand_still 1
-arch event_say
+arch npc_dialog
 name scorn/houses/molly_malone.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor
@@ -3644,10 +3642,8 @@ arch gem
 nrof 5
 end
 end
-arch event_say
+arch npc_dialog
 name scorn/houses/gramps_malone.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor

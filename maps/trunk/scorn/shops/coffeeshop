@@ -431,10 +431,8 @@ slaying /python/quests/QuestAdvance.py
 end
 end
 end
-arch event_say
+arch npc_dialog
 name scorn/shops/eswald.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor2

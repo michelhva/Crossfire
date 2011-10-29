@@ -380,10 +380,8 @@ x 3
 y 5
 randomitems jail
 stand_still 1
-arch event_say
+arch npc_dialog
 name scorn/taverns/fran.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 arch NPCGift
 arch white_key

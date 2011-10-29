@@ -860,10 +860,8 @@ value 2500
 identified 1
 end
 end
-arch event_say
+arch npc_dialog
 name scorn/anthony/milton.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor

@@ -443,10 +443,8 @@ y 1
 direction 4
 randomitems mage
 stand_still 1
-arch event_say
+arch npc_dialog
 name /scorn/misc/rhyz.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 arch NPCGift
 arch clock

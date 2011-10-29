@@ -2863,10 +2863,8 @@ type 0
 move_type walk
 monster 1
 friendly 1
-arch event_say
+arch npc_dialog
 name santo_dominion/blue_wizard.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor
