@@ -17828,9 +17828,7 @@ arch quest_advance_pickup
 name darcap/Cameron-wine 30>40
 end
 end
-arch event_death
-title Python
-slaying /python/quests/QuestConditionalDrop.py
+arch quest_conditional_drop
 end
 end
 arch pstone_2
