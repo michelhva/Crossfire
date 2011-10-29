@@ -400,10 +400,8 @@ slaying /python/quests/QuestEssentialUntil.py
 end
 end
 end
-arch event_say
+arch npc_dialog
 name scorn/houses/terrys_wife.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 arch event_death
 name scorn/TerrysFarm 0-50>70
@@ -846,10 +844,8 @@ monster 0
 friendly 1
 unaggressive 0
 stand_still 1
-arch event_say
+arch npc_dialog
 name scorn/houses/terry.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 arch event_death
 name scorn/TerrysFarm 0-50>70

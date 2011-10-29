@@ -1877,10 +1877,8 @@ food 0
 end
 end
 end
-arch event_say
+arch npc_dialog
 name scorn/misc/magistrate.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch cobblestones2

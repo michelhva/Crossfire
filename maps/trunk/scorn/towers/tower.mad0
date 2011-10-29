@@ -791,10 +791,8 @@ x 8
 y 8
 type 0
 unaggressive 1
-arch event_say
+arch npc_dialog
 name /scorn/towers/igor0.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch whiteslate

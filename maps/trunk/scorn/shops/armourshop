@@ -2008,10 +2008,8 @@ end
 arch smith
 x 14
 y 5
-arch event_say
+arch npc_dialog
 name scorn/shops/smith.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 arch NPCGift
 arch eyeshield

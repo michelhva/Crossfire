@@ -341,10 +341,8 @@ endmsg
 x 4
 y 1
 stand_still 1
-arch event_say
+arch npc_dialog
 name /navar_city/misc/wizard.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 arch NPCGift
 arch potion_shielding

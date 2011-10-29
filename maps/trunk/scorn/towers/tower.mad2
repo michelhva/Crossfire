@@ -151,10 +151,8 @@ x 7
 y 10
 type 0
 unaggressive 1
-arch event_say
+arch npc_dialog
 name /scorn/towers/igor2.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch graymarble

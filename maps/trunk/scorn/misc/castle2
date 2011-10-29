@@ -1599,10 +1599,8 @@ arch dragonslayer
 end
 end
 end
-arch event_say
+arch npc_dialog
 name scorn/misc/king.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor2

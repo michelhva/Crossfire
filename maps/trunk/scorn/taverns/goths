@@ -3936,10 +3936,8 @@ x 17
 y 20
 level 4
 friendly 1
-arch event_say
+arch npc_dialog
 name scorn/taverns/hintson.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor
@@ -5772,10 +5770,8 @@ endmsg
 x 24
 y 30
 friendly 1
-arch event_say
+arch npc_dialog
 name scorn/taverns/mark.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor
@@ -7928,10 +7924,8 @@ x 34
 y 19
 friendly 1
 unaggressive 0
-arch event_say
+arch npc_dialog
 name /scorn/taverns/dragon_emissary.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor

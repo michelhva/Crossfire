@@ -165,10 +165,8 @@ x 2
 y 4
 friendly 1
 unaggressive 0
-arch event_say
+arch npc_dialog
 name scorn/misc/gateguardinside.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch cobblestones2
@@ -469,10 +467,8 @@ x 4
 y 8
 friendly 1
 unaggressive 0
-arch event_say
+arch npc_dialog
 name scorn/misc/gateguardinside.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch cobblestones
@@ -1887,10 +1883,8 @@ x 18
 y 5
 friendly 1
 unaggressive 0
-arch event_say
+arch npc_dialog
 name scorn/misc/gateguardoutside.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch cobblestones2
@@ -2469,10 +2463,8 @@ y 9
 speed_left -0.520000
 friendly 1
 unaggressive 0
-arch event_say
+arch npc_dialog
 name scorn/misc/gateguardoutside.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch flagstone
