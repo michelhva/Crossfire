@@ -1,4 +1,4 @@
-Object event_apply
+Object quest_apply_if
 face event_apply.111
 title Python
 slaying /python/quests/QuestApplyIf.py
