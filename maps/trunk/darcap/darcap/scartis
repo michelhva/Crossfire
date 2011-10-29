@@ -656,10 +656,8 @@ y 11
 speed 0.05
 type 0
 random_movement 1
-arch event_say
+arch npc_dialog
 name /darcap/darcap/scartis.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor

@@ -1226,10 +1226,8 @@ x 11
 y 14
 randomitems throw_stnd
 pick_up 0
-arch event_say
+arch npc_dialog
 name /darcap/darcap/spike.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 arch NPCGift
 arch pouch
