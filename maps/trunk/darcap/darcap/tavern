@@ -513,10 +513,8 @@ x 5
 y 10
 pick_up 0
 random_movement 1
-arch event_say
+arch npc_dialog
 name /darcap/darcap/cameron.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 arch NPCGift
 arch wine

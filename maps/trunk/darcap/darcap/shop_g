@@ -1833,10 +1833,8 @@ x 17
 y 13
 pick_up 0
 monster 0
-arch event_say
+arch npc_dialog
 name /darcap/darcap/bob.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 arch NPCGift
 arch pouch

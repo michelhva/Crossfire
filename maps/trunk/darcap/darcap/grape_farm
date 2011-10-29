@@ -523,10 +523,8 @@ speed 0.07
 type 0
 unaggressive 1
 random_movement 1
-arch event_say
+arch npc_dialog
 name /darcap/darcap/talok.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch dirtfloor
