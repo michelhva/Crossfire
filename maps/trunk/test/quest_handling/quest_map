@@ -5,7 +5,7 @@ width 20
 height 20
 msg
 Created:  2010-03-22 Cavesomething
-Modified: 2011-05-29 Nicolas Weeger
+Modified: 2011-10-29 Nicolas Weeger
 endmsg
 end
 arch graymarble
@@ -62,10 +62,8 @@ arch charwoman
 y 9
 type 0
 stand_still 1
-arch event_say
+arch npc_dialog
 name test/quest_handling/marker.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 arch NPCGift
 arch carton_box_1
@@ -118,10 +116,8 @@ arch ninja2
 y 14
 type 0
 stand_still 1
-arch event_say
+arch npc_dialog
 name /test/quest_handling/ninja.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch graymarble
@@ -338,10 +334,8 @@ arch fatman
 x 2
 y 3
 random_movement 0
-arch event_say
+arch npc_dialog
 name test/quest_handling/testquest.msg
-title Python
-slaying python/dialog/npc_dialog.py
 end
 end
 arch graymarble
@@ -686,10 +680,8 @@ end
 arch guildmaster
 x 5
 y 6
-arch event_say
+arch npc_dialog
 name test/quest_handling/connectiontest.msg
-title Python
-slaying python/dialog/npc_dialog.py
 end
 arch waybread
 name biccie
@@ -934,10 +926,8 @@ y 2
 type 0
 randomitems jail
 stand_still 1
-arch event_say
+arch npc_dialog
 name test/quest_handling/friendly.msg
-title Python
-slaying python/dialog/npc_dialog.py
 end
 end
 arch graymarble
@@ -1312,10 +1302,8 @@ unaggressive 1
 can_use_armour 0
 can_use_weapon 0
 stand_still 1
-arch event_say
+arch npc_dialog
 name test/quest_handling/cantkillme.msg
-title Python
-slaying python/dialog/npc_dialog.py
 end
 arch NPCGift
 arch dice
@@ -1544,7 +1532,7 @@ x 14
 y 18
 unaggressive 1
 stand_still 1
-arch event_say
+arch npc_dialog
 name /test/quest_handling/checkinv.msg
 title Python
 slaying /python/dialog/npc_dialog.py
@@ -1570,10 +1558,8 @@ x 15
 y 1
 type 0
 stand_still 1
-arch event_say
+arch npc_dialog
 name test/quest_handling/bothquests.msg
-title Python
-slaying python/dialog/npc_dialog.py
 end
 arch crown
 name crown of win
@@ -1723,10 +1709,8 @@ title Python
 slaying /python/quests/QuestEssentialUntil.py
 end
 end
-arch event_say
+arch npc_dialog
 name test/quest_handling/apples.msg
-title Python
-slaying python/dialog/npc_dialog.py
 end
 end
 arch graymarble
@@ -1946,10 +1930,8 @@ arch dancing_girl
 x 19
 type 0
 stand_still 1
-arch event_say
+arch npc_dialog
 name test/quest_handling/girlmain.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch graymarble
@@ -2017,10 +1999,8 @@ end
 arch farmer
 x 19
 y 9
-arch event_say
+arch npc_dialog
 name test/quest_handling/timetest.msg
-title Python
-slaying python/dialog/npc_dialog.py
 end
 arch waybread
 name biccie
