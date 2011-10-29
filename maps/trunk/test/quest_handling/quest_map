@@ -1534,8 +1534,6 @@ unaggressive 1
 stand_still 1
 arch npc_dialog
 name /test/quest_handling/checkinv.msg
-title Python
-slaying /python/dialog/npc_dialog.py
 end
 end
 arch graymarble
