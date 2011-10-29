@@ -115,10 +115,8 @@ hp 10
 sp 11
 x 7
 y 4
-arch event_apply
+arch quest_apply_if
 name scorn/Kelthior 40
-title Python
-slaying /python/quests/QuestApplyIf.py
 end
 end
 arch graymarble
@@ -198,10 +196,8 @@ hp 10
 sp 10
 x 8
 y 4
-arch event_apply
+arch quest_apply_if
 name scorn/Kelthior 40
-title Python
-slaying /python/quests/QuestApplyIf.py
 end
 end
 arch graymarble

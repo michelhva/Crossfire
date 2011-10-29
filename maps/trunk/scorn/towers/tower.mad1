@@ -155,10 +155,8 @@ hp 7
 sp 12
 x 7
 y 12
-arch event_apply
+arch quest_apply_if
 name scorn/Kelthior 30-40
-title Python
-slaying /python/quests/QuestApplyIf.py
 end
 end
 arch woodlarge
@@ -238,10 +236,8 @@ hp 8
 sp 12
 x 8
 y 12
-arch event_apply
+arch quest_apply_if
 name scorn/Kelthior 30-40
-title Python
-slaying /python/quests/QuestApplyIf.py
 end
 end
 arch woodlarge

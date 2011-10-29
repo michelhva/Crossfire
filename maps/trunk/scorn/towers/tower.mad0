@@ -663,10 +663,8 @@ hp 7
 sp 4
 x 7
 y 3
-arch event_apply
+arch quest_apply_if
 name scorn/Kelthior 20-40
-title Python
-slaying /python/quests/QuestApplyIf.py
 end
 end
 arch whiteslate
@@ -759,10 +757,8 @@ hp 8
 sp 4
 x 8
 y 3
-arch event_apply
+arch quest_apply_if
 name scorn/Kelthior 20-40
-title Python
-slaying /python/quests/QuestApplyIf.py
 end
 end
 arch whiteslate
