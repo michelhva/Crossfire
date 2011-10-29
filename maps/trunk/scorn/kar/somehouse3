@@ -545,10 +545,8 @@ arch key2
 name gorks key
 name_pl gorks keys
 slaying mork
-arch event_drop
+arch quest_prevent_drop
 name scorn/GorksTreasure 50
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 end

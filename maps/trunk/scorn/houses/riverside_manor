@@ -518,10 +518,8 @@ name scorn/WalkingStick 0>10 20-40>50
 title Python
 slaying /python/quests/QuestAdvance.py
 end
-arch event_drop
+arch quest_prevent_drop
 name scorn/WalkingStick 60
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch table_3
@@ -1656,10 +1654,8 @@ name scorn/CoffeeGoose 20-80>90
 title Python
 slaying /python/quests/QuestAdvance.py
 end
-arch event_drop
+arch quest_prevent_drop
 name scorn/CoffeeGoose 100
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch grass

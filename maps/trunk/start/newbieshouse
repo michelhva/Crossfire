@@ -4620,10 +4620,8 @@ Use this key to open the locked door in the training house.
 endmsg
 x 15
 y 5
-arch event_drop
+arch quest_prevent_drop
 name tutorial/keys 50
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch dungeon_magic
@@ -4948,10 +4946,8 @@ slaying open_door
 msg
 Use this key to open the locked door in the training house.
 endmsg
-arch event_drop
+arch quest_prevent_drop
 name tutorial/keys 50
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 arch event_pickup
 name tutorial/keys 30>40

@@ -111,10 +111,8 @@ dam 25
 attacktype 69633
 value 100000
 magic 7
-arch event_drop
+arch quest_prevent_drop
 name scorn/LordSpectre 60
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 arch event_pickup
 name scorn/LordSpectre 30-40>50

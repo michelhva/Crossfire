@@ -17821,10 +17821,8 @@ arch scythe1
 name Talok's scythe
 material 0
 drop_if_quest darcap/Cameron-wine 30
-arch event_drop
+arch quest_prevent_drop
 name darcap/Cameron-wine 50
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 arch event_pickup
 name darcap/Cameron-wine 30>40

@@ -393,10 +393,8 @@ arch key2
 name Farmer's key
 name_pl Farmer's keys
 slaying scornfarmkey
-arch event_drop
+arch quest_prevent_drop
 name scorn/TerrysFarm 60
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 end
@@ -2181,10 +2179,8 @@ msg
 Blood-stained troll head, still drooling from greed
 endmsg
 face head.111
-arch event_drop
+arch quest_prevent_drop
 name scorn/TerrysFarm 60
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch big_club

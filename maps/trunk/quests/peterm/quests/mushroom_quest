@@ -1612,10 +1612,8 @@ name blue mushroom
 name_pl blue mushrooms
 x 8
 y 27
-arch event_drop
+arch quest_prevent_drop
 name scorn/BlueMushroom 50
-title Python
-slaying /python/quests/QuestEssentialUntil.py
 end
 arch event_pickup
 name scorn/BlueMushroom 30>40
