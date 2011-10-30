@@ -13,7 +13,7 @@ enter_x 1
 enter_y 10
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2010-05-13 Nicolas Weeger
+Modified: 2011-10-30 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -624,7 +624,6 @@ y 17
 end
 arch afloor_left
 name floor
-name_pl floor
 x 2
 y 17
 end
@@ -638,7 +637,6 @@ y 18
 end
 arch afloor_left
 name floor
-name_pl floor
 x 2
 y 18
 end
@@ -656,7 +654,6 @@ y 19
 end
 arch afloor_left
 name floor
-name_pl floor
 x 2
 y 19
 end
@@ -891,7 +888,6 @@ y 17
 end
 arch afloor_left
 name floor
-name_pl floor
 x 3
 y 17
 end
@@ -909,7 +905,6 @@ y 18
 end
 arch afloor_right
 name floor
-name_pl floor
 x 3
 y 18
 end
@@ -927,7 +922,6 @@ y 19
 end
 arch afloor_left
 name floor
-name_pl floor
 x 3
 y 19
 end
@@ -1066,7 +1060,6 @@ y 9
 end
 arch sign
 name West Scorn Trademarket
-name_pl Trader Joe's
 msg
 Welcome to the West Scorn Trademarket.
 Here 2 players may place their
@@ -1148,7 +1141,6 @@ y 17
 end
 arch afloor_left
 name floor
-name_pl floor
 x 4
 y 17
 end
@@ -1166,7 +1158,6 @@ y 18
 end
 arch afloor_right
 name floor
-name_pl floor
 x 4
 y 18
 end
@@ -1184,7 +1175,6 @@ y 19
 end
 arch afloor_left
 name floor
-name_pl floor
 x 4
 y 19
 end
@@ -1247,7 +1237,6 @@ y 2
 end
 arch guildmaster
 name shopkeeper
-name_pl shopkeeper
 x 5
 y 2
 end
@@ -1394,7 +1383,6 @@ y 17
 end
 arch afloor_left
 name floor
-name_pl floor
 x 5
 y 17
 end
@@ -1408,7 +1396,6 @@ y 18
 end
 arch afloor_left
 name floor
-name_pl floor
 x 5
 y 18
 end
@@ -1426,7 +1413,6 @@ y 19
 end
 arch afloor_left
 name floor
-name_pl floor
 x 5
 y 19
 end
@@ -4307,7 +4293,6 @@ y 16
 end
 arch sign_w
 name Trader 1
-name_pl Trader 1
 msg
 Trader
 endmsg
@@ -4569,7 +4554,6 @@ y 16
 end
 arch sign_e
 name Trader 2
-name_pl Trader 2
 x 17
 y 16
 end
