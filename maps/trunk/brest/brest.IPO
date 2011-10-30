@@ -11,6 +11,7 @@ Created:  2001-09-05 Commander Gros (yann.chachkoff@mailandnews.com)
 Modified: 2011-10-30 Rick Tanner
 Following a Lord MiDS idea
 endmsg
+outdoor 1
 end
 arch grass
 end
@@ -133,6 +134,10 @@ arch woodwall_2_1_1
 x 2
 y 3
 end
+arch light2
+x 2
+y 4
+end
 arch woodfloor
 x 2
 y 4
@@ -185,6 +190,10 @@ arch woodwall_2_1_1
 x 2
 y 8
 end
+arch light2
+x 2
+y 9
+end
 arch woodfloor
 x 2
 y 9
@@ -236,6 +245,10 @@ arch woodfloor
 x 3
 y 3
 end
+arch light4
+x 3
+y 4
+end
 arch woodfloor
 x 3
 y 4
@@ -274,6 +287,10 @@ title Python
 slaying /python/IPO/receive.py
 end
 end
+arch light4
+x 3
+y 7
+end
 arch woodfloor
 x 3
 y 7
@@ -286,9 +303,17 @@ arch woodfloor
 x 3
 y 9
 end
+arch light4
+x 3
+y 10
+end
 arch woodfloor
 x 3
 y 10
+end
+arch light2
+x 3
+y 11
 end
 arch woodfloor
 x 3
@@ -458,6 +483,10 @@ arch woodfloor
 x 5
 y 10
 end
+arch light2
+x 5
+y 11
+end
 arch woodfloor
 x 5
 y 11
@@ -493,6 +522,10 @@ arch woodfloor
 x 6
 y 3
 end
+arch light4
+x 6
+y 4
+end
 arch woodfloor
 x 6
 y 4
@@ -517,6 +550,10 @@ arch woodfloor
 x 6
 y 6
 end
+arch light4
+x 6
+y 7
+end
 arch woodfloor
 x 6
 y 7
@@ -528,6 +565,15 @@ end
 arch woodfloor
 x 6
 y 9
+end
+arch light4
+x 6
+y 10
+end
+arch button_small
+x 6
+y 10
+connected 1
 end
 arch woodfloor
 x 6
@@ -545,10 +591,16 @@ arch dungeon_magic
 x 6
 y 12
 end
+arch invis_exit
+slaying /world/world_107_123
+hp 35
+sp 29
+x 6
+y 12
+end
 arch grass
 x 6
 y 12
-move_block all
 end
 arch flagstone
 x 6
@@ -605,29 +657,43 @@ arch woodfloor
 x 7
 y 9
 end
+arch button_small
+x 7
+y 10
+connected 1
+end
 arch woodfloor
 x 7
 y 10
 end
+arch button_small
+x 7
+y 11
+connected 1
+end
 arch woodfloor
 x 7
 y 11
 end
-arch oakdoor_2
+arch odoorn2_closed_1
+x 7
+y 11
+connected 1
+end
+arch dungeon_magic
+x 7
+y 12
+end
+arch invis_exit
 slaying /world/world_107_123
 hp 35
 sp 29
-x 7
-y 11
-end
-arch dungeon_magic
 x 7
 y 12
 end
 arch grass
 x 7
 y 12
-move_block all
 end
 arch flagstone
 x 7
@@ -688,6 +754,11 @@ arch chair_2.4
 x 8
 y 9
 end
+arch button_small
+x 8
+y 10
+connected 1
+end
 arch woodfloor
 x 8
 y 10
@@ -704,10 +775,16 @@ arch dungeon_magic
 x 8
 y 12
 end
+arch invis_exit
+slaying /world/world_107_123
+hp 35
+sp 29
+x 8
+y 12
+end
 arch grass
 x 8
 y 12
-move_block all
 end
 arch flagstone
 x 8
@@ -731,6 +808,10 @@ end
 arch woodfloor
 x 9
 y 3
+end
+arch light4
+x 9
+y 4
 end
 arch woodfloor
 x 9
@@ -765,6 +846,10 @@ name Brest board
 title Python
 slaying /python/IPO/board.py
 end
+end
+arch light4
+x 9
+y 7
 end
 arch woodfloor
 x 9
@@ -819,6 +904,10 @@ When done, drop the scroll in the mailbox and it will be sent.
 endmsg
 x 9
 y 9
+end
+arch light4
+x 9
+y 10
 end
 arch woodfloor
 x 9
@@ -950,6 +1039,10 @@ arch woodwall_2_1_1
 x 11
 y 3
 end
+arch light2
+x 11
+y 4
+end
 arch woodfloor
 x 11
 y 4
@@ -993,6 +1086,10 @@ end
 arch woodwall_2_1_1
 x 11
 y 8
+end
+arch light2
+x 11
+y 9
 end
 arch woodfloor
 x 11
