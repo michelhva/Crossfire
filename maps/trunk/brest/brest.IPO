@@ -335,7 +335,6 @@ y 4
 end
 arch merchant
 name Postmaster Seruvvo
-name_pl Postmaster Seruvvo
 msg
 @match *
 Seems the mail's down... sorry, come
@@ -756,7 +755,6 @@ y 6
 end
 arch sign
 name Brest Message Board
-name_pl Brest Message Board
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, try help.
@@ -787,7 +785,6 @@ y 9
 end
 arch scroll
 name Prospectus
-name_pl Prospectus
 msg
 Imperial Post Services
 -----------------------
@@ -806,7 +803,6 @@ y 9
 end
 arch book_read
 name Manual
-name_pl Manual
 msg
 Receiving Mail
 -----------------------
