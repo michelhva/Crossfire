@@ -13,7 +13,7 @@ Creator: Avion
 Date:    6/14/2003
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-10-27 Rick Tanner
+Modified: 2011-10-30 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -2598,11 +2598,6 @@ end
 arch awall_2_1_2
 x 15
 end
-arch flagstone
-x 15
-y 1
-unique 1
-end
 arch pedestal
 x 15
 y 1
@@ -2629,21 +2624,6 @@ x 15
 y 2
 unique 1
 end
-arch flagstone
-x 15
-y 2
-unique 1
-end
-arch flagstone
-x 15
-y 3
-unique 1
-end
-arch flagstone
-x 15
-y 3
-unique 1
-end
 arch pedestal
 x 15
 y 3
@@ -2668,11 +2648,6 @@ end
 arch flagstone
 x 15
 y 4
-unique 1
-end
-arch flagstone
-x 15
-y 5
 unique 1
 end
 arch pedestal
@@ -2937,19 +2912,9 @@ x 16
 y 2
 unique 1
 end
-arch flagstone
+arch awall_1_4
 x 16
 y 2
-unique 1
-end
-arch awall_2_1_2
-x 16
-y 2
-end
-arch flagstone
-x 16
-y 3
-unique 1
 end
 arch flagstone
 x 16
@@ -2965,7 +2930,7 @@ x 16
 y 4
 unique 1
 end
-arch awall_2_1_2
+arch awall_1_4
 x 16
 y 4
 end
@@ -2983,7 +2948,7 @@ x 16
 y 6
 unique 1
 end
-arch awall_2_1_2
+arch awall_1_4
 x 16
 y 6
 end
@@ -3052,7 +3017,7 @@ x 16
 y 14
 unique 1
 end
-arch awall_2_1_2
+arch awall_1_4
 x 16
 y 14
 end
@@ -3159,24 +3124,9 @@ x 17
 y 2
 unique 1
 end
-arch flagstone
-x 17
-y 2
-unique 1
-end
-arch flagstone
-x 17
-y 2
-unique 1
-end
 arch awall_2_1_2
 x 17
 y 2
-end
-arch flagstone
-x 17
-y 3
-unique 1
 end
 arch pedestal
 x 17
@@ -3186,11 +3136,6 @@ end
 arch flagstone
 x 17
 y 3
-unique 1
-end
-arch flagstone
-x 17
-y 4
 unique 1
 end
 arch flagstone
@@ -3296,11 +3241,6 @@ end
 arch awall_2_1_2
 x 17
 y 14
-end
-arch flagstone
-x 17
-y 15
-unique 1
 end
 arch pedestal
 x 17
@@ -3442,16 +3382,6 @@ x 18
 y 2
 unique 1
 end
-arch flagstone
-x 18
-y 2
-unique 1
-end
-arch flagstone
-x 18
-y 2
-unique 1
-end
 arch awall_2_1_2
 x 18
 y 2
@@ -3474,11 +3404,6 @@ x 18
 y 3
 value 800
 identified 1
-end
-arch flagstone
-x 18
-y 4
-unique 1
 end
 arch flagstone
 x 18
@@ -3772,19 +3697,9 @@ x 19
 y 2
 unique 1
 end
-arch flagstone
-x 19
-y 2
-unique 1
-end
 arch awall_3_4
 x 19
 y 2
-end
-arch flagstone
-x 19
-y 3
-unique 1
 end
 arch flagstone
 x 19
