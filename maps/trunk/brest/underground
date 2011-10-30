@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1994-05-31
-Modified: 2008-11-27 Rick Tanner
+Modified: 2011-10-30 Rick Tanner
 endmsg
 end
 arch pstone_2
@@ -1484,7 +1484,6 @@ y 24
 end
 arch sage
 name invocator
-name_pl invocator
 x 3
 y 24
 speed_left -0.340000
@@ -2448,7 +2447,6 @@ y 30
 end
 arch sage
 name invocator
-name_pl invocator
 x 5
 y 30
 speed_left -0.340000
@@ -3307,7 +3305,6 @@ y 21
 end
 arch sage
 name invocator
-name_pl invocator
 x 7
 y 21
 speed_left -0.340000
@@ -4654,7 +4651,6 @@ y 30
 end
 arch sage
 name invocator
-name_pl invocator
 x 10
 y 30
 speed_left -0.340000
@@ -5572,7 +5568,6 @@ y 24
 end
 arch sage
 name invocator
-name_pl invocator
 x 12
 y 24
 speed_left -0.340000
