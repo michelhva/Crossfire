@@ -5023,15 +5023,7 @@ arch grass
 x 16
 y 22
 end
-arch dungeon_magic
-x 16
-y 22
-end
-arch grass
-x 16
-y 22
-end
-arch swall_2_1_2
+arch swall_1_4
 x 16
 y 22
 end
@@ -5338,14 +5330,6 @@ y 21
 type 17
 invisible 1
 connected 998
-end
-arch dungeon_magic
-x 17
-y 22
-end
-arch grass
-x 17
-y 22
 end
 arch dungeon_magic
 x 17
@@ -5834,14 +5818,6 @@ arch grass
 x 18
 y 22
 end
-arch dungeon_magic
-x 18
-y 22
-end
-arch grass
-x 18
-y 22
-end
 arch swall_2_1_2
 x 18
 y 22
@@ -6138,18 +6114,6 @@ end
 arch swall_2_1_1
 x 19
 y 21
-end
-arch dungeon_magic
-x 19
-y 22
-end
-arch grass
-x 19
-y 22
-end
-arch swall_2_1_1
-x 19
-y 22
 end
 arch dungeon_magic
 x 19
