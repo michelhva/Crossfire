@@ -8,7 +8,7 @@ enter_x 7
 enter_y 10
 msg
 Created:  2001-09-05 Commander Gros (yann.chachkoff@mailandnews.com)
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2011-10-30 Rick Tanner
 Following a Lord MiDS idea
 endmsg
 end
@@ -337,8 +337,7 @@ arch merchant
 name Postmaster Seruvvo
 msg
 @match *
-Seems the mail's down... sorry, come
-back once the required law is passed.
+Seems the mail's down... sorry, come back once the required law is passed.
 endmsg
 x 4
 y 4
@@ -806,20 +805,17 @@ name Manual
 msg
 Receiving Mail
 -----------------------
-Open the mailbox and get the scrolls,
-read them by applying.
+Open the mailbox and get the scrolls, read them by applying.
+..
 Sending Mail
 -----------------------
-Get a pencil and be sure that you are
-able to use the literacy skill. You can
-get both at the office; ask the postmaster
-for help.
-Get a pre-addressed mailscroll, mark it
-and write on it with the command:
-use_skill inscription <text>
+Get a pencil and be sure that you are able to use the literacy skill. You can get both at the office; ask Postmaster Seruvvo for help.
+..
+Get a pre-addressed mailscroll, mark it and write on it with the command: use_skill inscription <text>
+..
 Multiple lines of text may be written.
-When done, drop the scroll in the
-mailbox and it will be sent.
+..
+When done, drop the scroll in the mailbox and it will be sent.
 endmsg
 x 9
 y 9
