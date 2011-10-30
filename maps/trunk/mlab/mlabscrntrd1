@@ -1062,10 +1062,10 @@ arch sign
 name West Scorn Trademarket
 msg
 Welcome to the West Scorn Trademarket.
-Here 2 players may place their
-tradeable goods in the trade zones.
-Then both players can turn their
-levers to complete the trade.
+...
+Here 2 players may place their tradeable goods in the trade zones.
+...
+Then both players can turn their levers to complete the trade.
 endmsg
 x 4
 y 9
@@ -4294,7 +4294,7 @@ end
 arch sign_w
 name Trader 1
 msg
-Trader
+Trader 1
 endmsg
 x 16
 y 16
@@ -4554,6 +4554,9 @@ y 16
 end
 arch sign_e
 name Trader 2
+msg
+Trader 2
+endmsg
 x 17
 y 16
 end
