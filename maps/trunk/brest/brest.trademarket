@@ -9,7 +9,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-12-01 Rick Tanner
+Modified: 2011-10-30 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1503,7 +1503,6 @@ y 13
 end
 arch sign_w
 name Trader 1
-name_pl Trader 1
 msg
 Trader
 endmsg
@@ -1720,7 +1719,6 @@ y 13
 end
 arch sign_e
 name Trader 2
-name_pl Trader 2
 x 7
 y 13
 end
@@ -1991,7 +1989,6 @@ y 15
 end
 arch sign
 name Brest Trademarket
-name_pl Trader Joe's
 msg
 Welcome to the Brest Trademarket.
 Here 2 players may place their
