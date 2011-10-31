@@ -9,7 +9,7 @@ enter_x 36
 enter_y 65
 msg
 Created:  2004-08-04 Mikeeusa
-Modified: 2008-10-06 Rick Tanner
+Modified: 2011-10-31 Rick Tanner
 endmsg
 end
 arch blocked
@@ -3056,7 +3056,6 @@ y 35
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 35
 unique 1
@@ -3067,7 +3066,6 @@ y 36
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 36
 unique 1
@@ -3078,7 +3076,6 @@ y 37
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 37
 unique 1
@@ -3089,7 +3086,6 @@ y 38
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 38
 unique 1
@@ -3100,7 +3096,6 @@ y 39
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 39
 unique 1
@@ -3111,7 +3106,6 @@ y 40
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 40
 unique 1
@@ -3122,7 +3116,6 @@ y 41
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 41
 unique 1
@@ -3133,7 +3126,6 @@ y 42
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 42
 unique 1
@@ -3144,7 +3136,6 @@ y 43
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 43
 unique 1
@@ -3155,7 +3146,6 @@ y 44
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 44
 unique 1
@@ -3166,7 +3156,6 @@ y 45
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 6
 y 45
 unique 1
@@ -3565,7 +3554,6 @@ y 35
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 35
 unique 1
@@ -3576,7 +3564,6 @@ y 36
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 36
 unique 1
@@ -3587,7 +3574,6 @@ y 37
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 37
 unique 1
@@ -3598,7 +3584,6 @@ y 38
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 38
 unique 1
@@ -3609,7 +3594,6 @@ y 39
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 39
 unique 1
@@ -3620,7 +3604,6 @@ y 40
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 40
 unique 1
@@ -3631,7 +3614,6 @@ y 41
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 41
 unique 1
@@ -3642,7 +3624,6 @@ y 42
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 42
 unique 1
@@ -3653,7 +3634,6 @@ y 43
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 43
 unique 1
@@ -3664,7 +3644,6 @@ y 44
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 44
 unique 1
@@ -3675,7 +3654,6 @@ y 45
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 7
 y 45
 unique 1
@@ -3821,7 +3799,6 @@ y 58
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 7
@@ -3830,7 +3807,6 @@ connected 601
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 7
@@ -3839,7 +3815,6 @@ connected 602
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 7
@@ -3848,7 +3823,6 @@ connected 603
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 7
@@ -3857,7 +3831,6 @@ connected 604
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 7
@@ -3866,7 +3839,6 @@ connected 605
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 7
@@ -3875,7 +3847,6 @@ connected 606
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 7
@@ -3884,7 +3855,6 @@ connected 607
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 7
@@ -3893,7 +3863,6 @@ connected 608
 end
 arch marble
 name 6
-name_pl 6
 x 7
 y 58
 end
@@ -3911,7 +3880,6 @@ y 60
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 7
@@ -3920,7 +3888,6 @@ connected 501
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 7
@@ -3929,7 +3896,6 @@ connected 502
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 7
@@ -3938,7 +3904,6 @@ connected 503
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 7
@@ -3947,7 +3912,6 @@ connected 504
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 7
@@ -3956,7 +3920,6 @@ connected 505
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 7
@@ -3965,7 +3928,6 @@ connected 506
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 7
@@ -3974,7 +3936,6 @@ connected 507
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 7
@@ -3983,7 +3944,6 @@ connected 508
 end
 arch marble
 name 5
-name_pl 5
 x 7
 y 60
 end
@@ -4125,7 +4085,6 @@ y 35
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 35
 unique 1
@@ -4136,7 +4095,6 @@ y 36
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 36
 unique 1
@@ -4147,7 +4105,6 @@ y 37
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 37
 unique 1
@@ -4158,7 +4115,6 @@ y 38
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 38
 unique 1
@@ -4169,7 +4125,6 @@ y 39
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 39
 unique 1
@@ -4180,7 +4135,6 @@ y 40
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 40
 unique 1
@@ -4191,7 +4145,6 @@ y 41
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 41
 unique 1
@@ -4202,7 +4155,6 @@ y 42
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 42
 unique 1
@@ -4213,7 +4165,6 @@ y 43
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 43
 unique 1
@@ -4224,7 +4175,6 @@ y 44
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 44
 unique 1
@@ -4235,7 +4185,6 @@ y 45
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 8
 y 45
 unique 1
@@ -4250,7 +4199,6 @@ y 46
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 8
 y 46
 speed 0.500000
@@ -4273,7 +4221,6 @@ y 47
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 8
 y 47
 speed 0.500000
@@ -4304,7 +4251,6 @@ y 49
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 8
 y 49
 speed 0.500000
@@ -4320,7 +4266,6 @@ y 50
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 8
 y 50
 speed 0.500000
@@ -4351,7 +4296,6 @@ y 52
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 8
 y 52
 speed 0.500000
@@ -4367,7 +4311,6 @@ y 53
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 8
 y 53
 speed 0.500000
@@ -4668,7 +4611,6 @@ y 35
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 35
 unique 1
@@ -4679,7 +4621,6 @@ y 36
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 36
 unique 1
@@ -4690,7 +4631,6 @@ y 37
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 37
 unique 1
@@ -4701,7 +4641,6 @@ y 38
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 38
 unique 1
@@ -4712,7 +4651,6 @@ y 39
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 39
 unique 1
@@ -4723,7 +4661,6 @@ y 40
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 40
 unique 1
@@ -4734,7 +4671,6 @@ y 41
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 41
 unique 1
@@ -4745,7 +4681,6 @@ y 42
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 42
 unique 1
@@ -4756,7 +4691,6 @@ y 43
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 43
 unique 1
@@ -4767,7 +4701,6 @@ y 44
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 44
 unique 1
@@ -4778,7 +4711,6 @@ y 45
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 9
 y 45
 unique 1
@@ -4793,7 +4725,6 @@ y 46
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 9
 y 46
 speed 0.500000
@@ -4816,7 +4747,6 @@ y 47
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 9
 y 47
 speed 0.500000
@@ -4847,7 +4777,6 @@ y 49
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 9
 y 49
 speed 0.500000
@@ -4863,7 +4792,6 @@ y 50
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 9
 y 50
 speed 0.500000
@@ -4894,7 +4822,6 @@ y 52
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 9
 y 52
 speed 0.500000
@@ -4910,7 +4837,6 @@ y 53
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 9
 y 53
 speed 0.500000
@@ -4951,7 +4877,6 @@ y 57
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 9
@@ -4960,7 +4885,6 @@ connected 101
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 9
@@ -4969,7 +4893,6 @@ connected 102
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 9
@@ -4978,7 +4901,6 @@ connected 103
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 9
@@ -4987,7 +4909,6 @@ connected 104
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 9
@@ -4996,7 +4917,6 @@ connected 105
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 9
@@ -5005,7 +4925,6 @@ connected 106
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 9
@@ -5014,7 +4933,6 @@ connected 107
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 9
@@ -5023,7 +4941,6 @@ connected 108
 end
 arch marble
 name 1
-name_pl 1
 x 9
 y 57
 end
@@ -5057,7 +4974,6 @@ y 61
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 9
@@ -5066,7 +4982,6 @@ connected 401
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 9
@@ -5075,7 +4990,6 @@ connected 402
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 9
@@ -5084,7 +4998,6 @@ connected 403
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 9
@@ -5093,7 +5006,6 @@ connected 404
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 9
@@ -5102,7 +5014,6 @@ connected 405
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 9
@@ -5111,7 +5022,6 @@ connected 406
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 9
@@ -5120,7 +5030,6 @@ connected 407
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 9
@@ -5129,7 +5038,6 @@ connected 408
 end
 arch marble
 name 4
-name_pl 4
 x 9
 y 61
 end
@@ -5327,7 +5235,6 @@ y 35
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 35
 unique 1
@@ -5338,7 +5245,6 @@ y 36
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 36
 unique 1
@@ -5349,7 +5255,6 @@ y 37
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 37
 unique 1
@@ -5360,7 +5265,6 @@ y 38
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 38
 unique 1
@@ -5371,7 +5275,6 @@ y 39
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 39
 unique 1
@@ -5382,7 +5285,6 @@ y 40
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 40
 unique 1
@@ -5393,7 +5295,6 @@ y 41
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 41
 unique 1
@@ -5404,7 +5305,6 @@ y 42
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 42
 unique 1
@@ -5415,7 +5315,6 @@ y 43
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 43
 unique 1
@@ -5426,7 +5325,6 @@ y 44
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 44
 unique 1
@@ -5437,7 +5335,6 @@ y 45
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 10
 y 45
 unique 1
@@ -5452,7 +5349,6 @@ y 46
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 10
 y 46
 speed 0.500000
@@ -5475,7 +5371,6 @@ y 47
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 10
 y 47
 speed 0.500000
@@ -5506,7 +5401,6 @@ y 49
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 10
 y 49
 speed 0.500000
@@ -5522,7 +5416,6 @@ y 50
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 10
 y 50
 speed 0.500000
@@ -5553,7 +5446,6 @@ y 52
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 10
 y 52
 speed 0.500000
@@ -5569,7 +5461,6 @@ y 53
 end
 arch igate_closed_1
 name vault door
-name_pl vault door
 x 10
 y 53
 speed 0.500000
@@ -5842,7 +5733,6 @@ y 16
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 11
@@ -5851,7 +5741,6 @@ connected 101
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 11
@@ -5860,7 +5749,6 @@ connected 102
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 11
@@ -5869,7 +5757,6 @@ connected 103
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 11
@@ -5878,7 +5765,6 @@ connected 104
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 11
@@ -5887,7 +5773,6 @@ connected 105
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 11
@@ -5896,7 +5781,6 @@ connected 106
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 11
@@ -5905,7 +5789,6 @@ connected 107
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 11
@@ -5914,7 +5797,6 @@ connected 108
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 11
@@ -5923,7 +5805,6 @@ connected 801
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 11
@@ -5932,7 +5813,6 @@ connected 802
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 11
@@ -5941,7 +5821,6 @@ connected 803
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 11
@@ -5950,7 +5829,6 @@ connected 804
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 11
@@ -5959,7 +5837,6 @@ connected 805
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 11
@@ -5968,7 +5845,6 @@ connected 806
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 11
@@ -5977,7 +5853,6 @@ connected 807
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 11
@@ -5986,7 +5861,6 @@ connected 808
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 11
@@ -5995,7 +5869,6 @@ connected 701
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 11
@@ -6004,7 +5877,6 @@ connected 702
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 11
@@ -6013,7 +5885,6 @@ connected 703
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 11
@@ -6022,7 +5893,6 @@ connected 704
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 11
@@ -6031,7 +5901,6 @@ connected 705
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 11
@@ -6040,7 +5909,6 @@ connected 706
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 11
@@ -6049,7 +5917,6 @@ connected 707
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 11
@@ -6086,7 +5953,6 @@ y 35
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 35
 unique 1
@@ -6097,7 +5963,6 @@ y 36
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 36
 unique 1
@@ -6108,7 +5973,6 @@ y 37
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 37
 unique 1
@@ -6119,7 +5983,6 @@ y 38
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 38
 unique 1
@@ -6130,7 +5993,6 @@ y 39
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 39
 unique 1
@@ -6141,7 +6003,6 @@ y 40
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 40
 unique 1
@@ -6152,7 +6013,6 @@ y 41
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 41
 unique 1
@@ -6163,7 +6023,6 @@ y 42
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 42
 unique 1
@@ -6174,7 +6033,6 @@ y 43
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 43
 unique 1
@@ -6185,7 +6043,6 @@ y 44
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 44
 unique 1
@@ -6196,7 +6053,6 @@ y 45
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 11
 y 45
 unique 1
@@ -6342,7 +6198,6 @@ y 58
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 11
@@ -6351,7 +6206,6 @@ connected 201
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 11
@@ -6360,7 +6214,6 @@ connected 202
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 11
@@ -6369,7 +6222,6 @@ connected 203
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 11
@@ -6378,7 +6230,6 @@ connected 204
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 11
@@ -6387,7 +6238,6 @@ connected 205
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 11
@@ -6396,7 +6246,6 @@ connected 206
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 11
@@ -6405,7 +6254,6 @@ connected 207
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 11
@@ -6414,7 +6262,6 @@ connected 208
 end
 arch marble
 name 2
-name_pl 2
 x 11
 y 58
 end
@@ -6432,7 +6279,6 @@ y 60
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 11
@@ -6441,7 +6287,6 @@ connected 301
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 11
@@ -6450,7 +6295,6 @@ connected 302
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 11
@@ -6459,7 +6303,6 @@ connected 303
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 11
@@ -6468,7 +6311,6 @@ connected 304
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 11
@@ -6477,7 +6319,6 @@ connected 305
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 11
@@ -6486,7 +6327,6 @@ connected 306
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 11
@@ -6495,7 +6335,6 @@ connected 307
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 11
@@ -6504,7 +6343,6 @@ connected 308
 end
 arch marble
 name 3
-name_pl 3
 x 11
 y 60
 end
@@ -6646,7 +6484,6 @@ y 16
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 12
@@ -6655,7 +6492,6 @@ connected 201
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 12
@@ -6664,7 +6500,6 @@ connected 202
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 12
@@ -6673,7 +6508,6 @@ connected 203
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 12
@@ -6682,7 +6516,6 @@ connected 204
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 12
@@ -6691,7 +6524,6 @@ connected 205
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 12
@@ -6700,7 +6532,6 @@ connected 206
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 12
@@ -6709,7 +6540,6 @@ connected 207
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 12
@@ -6718,7 +6548,6 @@ connected 208
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 12
@@ -6727,7 +6556,6 @@ connected 601
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 12
@@ -6736,7 +6564,6 @@ connected 602
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 12
@@ -6745,7 +6572,6 @@ connected 603
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 12
@@ -6754,7 +6580,6 @@ connected 604
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 12
@@ -6763,7 +6588,6 @@ connected 605
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 12
@@ -6772,7 +6596,6 @@ connected 606
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 12
@@ -6781,7 +6604,6 @@ connected 607
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 12
@@ -6818,7 +6640,6 @@ y 35
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 12
 y 35
 unique 1
@@ -6829,7 +6650,6 @@ y 36
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 12
 y 36
 unique 1
@@ -6840,7 +6660,6 @@ y 37
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 12
 y 37
 unique 1
@@ -6851,7 +6670,6 @@ y 38
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 12
 y 38
 unique 1
@@ -6862,7 +6680,6 @@ y 39
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 12
 y 39
 unique 1
@@ -6873,7 +6690,6 @@ y 40
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 12
 y 40
 unique 1
@@ -6884,7 +6700,6 @@ y 41
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 12
 y 41
 unique 1
@@ -6895,7 +6710,6 @@ y 42
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 12
 y 42
 unique 1
@@ -6906,7 +6720,6 @@ y 43
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 12
 y 43
 unique 1
@@ -6917,7 +6730,6 @@ y 44
 end
 arch cobblestones2
 name vault floor
-name_pl vault floor
 x 12
 y 44
 unique 1
@@ -6928,21 +6740,18 @@ y 45
 end
 arch cobblestones2
 name standard floor
-name_pl standard floor
 x 12
 y 45
 unique 1
 end
 arch button_lever
 name Reset Lock
-name_pl Reset Lock
 x 12
 y 45
 connected 98
 end
 arch button_lever
 name Raise Gate
-name_pl Raise Gate
 x 12
 y 45
 connected 1100001
@@ -7261,7 +7070,6 @@ y 16
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 13
@@ -7270,7 +7078,6 @@ connected 301
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 13
@@ -7279,7 +7086,6 @@ connected 302
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 13
@@ -7288,7 +7094,6 @@ connected 303
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 13
@@ -7297,7 +7102,6 @@ connected 304
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 13
@@ -7306,7 +7110,6 @@ connected 305
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 13
@@ -7315,7 +7118,6 @@ connected 306
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 13
@@ -7324,7 +7126,6 @@ connected 307
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 13
@@ -7333,7 +7134,6 @@ connected 308
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 13
@@ -7342,7 +7142,6 @@ connected 401
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 13
@@ -7351,7 +7150,6 @@ connected 402
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 13
@@ -7360,7 +7158,6 @@ connected 403
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 13
@@ -7369,7 +7166,6 @@ connected 404
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 13
@@ -7378,7 +7174,6 @@ connected 405
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 13
@@ -7387,7 +7182,6 @@ connected 406
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 13
@@ -7396,7 +7190,6 @@ connected 407
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 13
@@ -7405,7 +7198,6 @@ connected 408
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 13
@@ -7414,7 +7206,6 @@ connected 501
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 13
@@ -7423,7 +7214,6 @@ connected 502
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 13
@@ -7432,7 +7222,6 @@ connected 503
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 13
@@ -7441,7 +7230,6 @@ connected 504
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 13
@@ -7450,7 +7238,6 @@ connected 505
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 13
@@ -7459,7 +7246,6 @@ connected 506
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 13
@@ -7468,7 +7254,6 @@ connected 507
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 13
@@ -8555,7 +8340,6 @@ y 13
 end
 arch button_lever
 name Reset Lock
-name_pl Reset Lock
 x 15
 y 14
 connected 98
@@ -9881,7 +9665,6 @@ y 13
 end
 arch altar
 name apple
-name_pl apple
 slaying apple
 food 1
 x 17
@@ -9890,7 +9673,6 @@ connected 101
 end
 arch altar
 name cabbage
-name_pl cabbage
 slaying cabbage
 food 1
 x 17
@@ -9899,7 +9681,6 @@ connected 102
 end
 arch altar
 name carrot
-name_pl carrot
 slaying carrot
 food 1
 x 17
@@ -9908,7 +9689,6 @@ connected 103
 end
 arch altar
 name clover
-name_pl clover
 slaying clover
 food 1
 x 17
@@ -9917,7 +9697,6 @@ connected 104
 end
 arch altar
 name onion
-name_pl onion
 slaying onion
 food 1
 x 17
@@ -9926,7 +9705,6 @@ connected 105
 end
 arch altar
 name orange
-name_pl orange
 slaying orange
 food 1
 x 17
@@ -9935,7 +9713,6 @@ connected 106
 end
 arch altar
 name pear
-name_pl pear
 slaying pear
 food 1
 x 17
@@ -9944,7 +9721,6 @@ connected 107
 end
 arch altar
 name water
-name_pl water
 slaying water
 food 1
 x 17
@@ -13602,7 +13378,6 @@ y 62
 end
 arch sign_e
 name 1 Rep
-name_pl 1 Rep
 msg
 1 Rep
 endmsg
@@ -14127,7 +13902,6 @@ y 62
 end
 arch sign_e
 name 2 Rep
-name_pl 2 Rep
 msg
 2 Rep
 endmsg
@@ -14485,7 +14259,6 @@ y 24
 end
 arch button_lever
 name Raise Gate
-name_pl Raise Gate
 x 25
 y 31
 connected 1100001
@@ -14772,7 +14545,6 @@ y 62
 end
 arch sign_e
 name 3 Rep
-name_pl 3 Rep
 msg
 3 Rep
 endmsg
@@ -15208,7 +14980,6 @@ y 62
 end
 arch sign_e
 name 4 Rep
-name_pl 4 Rep
 msg
 4 Rep
 endmsg
@@ -15730,7 +15501,6 @@ y 62
 end
 arch sign_e
 name 5 Rep
-name_pl 5 Rep
 msg
 5 Rep
 endmsg
@@ -16156,7 +15926,6 @@ y 62
 end
 arch sign_e
 name 6 Rep
-name_pl 6 Rep
 msg
 6 Rep
 endmsg
@@ -16656,7 +16425,6 @@ y 62
 end
 arch sign_e
 name 7 Rep
-name_pl 7 Rep
 msg
 7 Rep
 endmsg
@@ -17082,7 +16850,6 @@ y 62
 end
 arch sign_e
 name 8 Rep
-name_pl 8 Rep
 msg
 8 Rep
 endmsg
@@ -18292,7 +18059,6 @@ y 59
 end
 arch sign
 name Notice
-name_pl Notice
 msg
 At the entrance to the vault is a
 circular marble area. Parts of the
@@ -18563,7 +18329,6 @@ connected 99
 end
 arch button_plate
 name open
-name_pl open
 x 34
 y 7
 connected 9999
