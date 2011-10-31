@@ -8,7 +8,7 @@ enter_x 9
 enter_y 25
 msg
 Created:  2005-05-28 mikeeusa
-Modified: 2008-10-21 Rick Tanner
+Modified: 2011-10-31 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -622,7 +622,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 2
 end
@@ -640,7 +639,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 3
 end
@@ -658,7 +656,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 4
 end
@@ -676,7 +673,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 5
 end
@@ -694,7 +690,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 6
 end
@@ -712,7 +707,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 7
 end
@@ -730,7 +724,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 8
 end
@@ -821,7 +814,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -880,7 +872,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -939,7 +930,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -1102,7 +1092,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 2
 end
@@ -1120,7 +1109,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 3
 end
@@ -1138,7 +1126,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 4
 end
@@ -1156,7 +1143,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 5
 end
@@ -1174,7 +1160,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 6
 end
@@ -1192,7 +1177,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 7
 end
@@ -1210,7 +1194,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 8
 end
@@ -1482,7 +1465,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 2
 end
@@ -1500,7 +1482,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 3
 end
@@ -1518,7 +1499,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 4
 end
@@ -1536,7 +1516,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 5
 end
@@ -1554,7 +1533,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 6
 end
@@ -1572,7 +1550,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 7
 end
@@ -1590,7 +1567,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 8
 end
@@ -1667,7 +1643,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -1726,7 +1701,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -1785,7 +1759,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -1920,7 +1893,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 2
 end
@@ -1938,7 +1910,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 3
 end
@@ -1956,7 +1927,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 4
 end
@@ -1974,7 +1944,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 5
 end
@@ -1992,7 +1961,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 6
 end
@@ -2010,7 +1978,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 7
 end
@@ -2028,7 +1995,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 8
 end
@@ -2297,7 +2263,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 6
 y 2
 end
@@ -2311,7 +2276,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 6
 y 3
 end
@@ -2329,7 +2293,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 6
 y 4
 end
@@ -2343,7 +2306,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 6
 y 5
 end
@@ -2480,7 +2442,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -2539,7 +2500,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -2598,7 +2558,6 @@ connected 26
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
@@ -2719,7 +2678,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 7
 y 2
 end
@@ -2737,7 +2695,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 7
 y 3
 end
@@ -2755,7 +2712,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 7
 y 4
 end
@@ -2773,7 +2729,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 7
 y 5
 end
@@ -2811,7 +2766,6 @@ y 7
 end
 arch silver_converter
 name convert gold coins into small gold nugget bullion
-name_pl convert gold coins into small gold nugget bullion
 slaying goldcoin
 other_arch smallnugget
 food 4
@@ -3092,7 +3046,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 8
 y 2
 end
@@ -3110,7 +3063,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 8
 y 3
 end
@@ -3128,7 +3080,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 8
 y 4
 end
@@ -3142,7 +3093,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 8
 y 5
 end
@@ -3180,7 +3130,6 @@ y 7
 end
 arch silver_converter
 name convert gold coins into large gold nugget bullion
-name_pl convert gold coins into large gold nugget bullion
 slaying goldcoin
 other_arch largenugget
 food 40
@@ -3272,7 +3221,6 @@ y 14
 end
 arch altar_trigger
 name FWB 2000 Diamond Note - 2000 Diamonds
-name_pl Gate Pass - 50pp
 slaying gem
 msg
 Click Click Click Click Click...
@@ -3472,7 +3420,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 9
 y 2
 end
@@ -3490,7 +3437,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 9
 y 3
 end
@@ -3508,7 +3454,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 9
 y 4
 end
@@ -3526,7 +3471,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 9
 y 5
 end
@@ -3564,7 +3508,6 @@ y 7
 end
 arch silver_converter
 name convert gold coins into gold bar bullion
-name_pl convert gold coins into gold bar bullion
 slaying goldcoin
 other_arch goldbar
 food 1000
@@ -3613,7 +3556,6 @@ y 11
 end
 arch table_3
 name heavy table
-name_pl heavy table
 x 9
 y 11
 no_pick 1
@@ -3684,7 +3626,6 @@ y 18
 end
 arch guildmaster
 name Diamond Broker
-name_pl Diamond Broker
 msg
 @match *
 You can buy First World Bank 2000
@@ -3720,7 +3661,6 @@ y 20
 end
 arch diamond_converter
 name convert diamonds into platinum coins
-name_pl convert diamonds into platinum coins
 slaying gem
 other_arch platinacoin
 sp 8
@@ -3822,7 +3762,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 10
 y 2
 end
@@ -3836,7 +3775,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 10
 y 3
 end
@@ -3854,7 +3792,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 10
 y 4
 end
@@ -3868,7 +3805,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 10
 y 5
 end
@@ -3914,7 +3850,6 @@ y 8
 end
 arch grate_closed_2
 name depository door
-name_pl depository door
 x 10
 y 8
 speed 0.500000
@@ -4149,7 +4084,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 2
 end
@@ -4167,7 +4101,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 3
 end
@@ -4185,7 +4118,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 4
 end
@@ -4203,7 +4135,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 5
 end
@@ -4221,7 +4152,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 6
 end
@@ -4239,7 +4169,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 7
 end
@@ -4257,7 +4186,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 8
 end
@@ -4486,7 +4414,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 2
 end
@@ -4504,7 +4431,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 3
 end
@@ -4522,7 +4448,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 4
 end
@@ -4540,7 +4465,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 5
 end
@@ -4558,7 +4482,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 6
 end
@@ -4576,7 +4499,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 7
 end
@@ -4594,7 +4516,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 8
 end
@@ -4812,7 +4733,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 2
 end
@@ -4830,7 +4750,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 3
 end
@@ -4848,7 +4767,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 4
 end
@@ -4866,7 +4784,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 5
 end
@@ -4884,7 +4801,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 6
 end
@@ -4902,7 +4818,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 7
 end
@@ -4920,7 +4835,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 8
 end
@@ -5225,7 +5139,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 2
 end
@@ -5243,7 +5156,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 3
 end
@@ -5261,7 +5173,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 4
 end
@@ -5279,7 +5190,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 5
 end
@@ -5297,7 +5207,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 6
 end
@@ -5315,7 +5224,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 7
 end
@@ -5333,7 +5241,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 8
 end
