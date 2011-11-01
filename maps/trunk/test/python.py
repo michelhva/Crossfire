@@ -41,6 +41,7 @@ def do_help():
 	help += ' - anim\n'
 	help += ' - hook\n'
 	help += ' - checkinventory\n'
+	help += ' - nosave\n'
 	
 	whoami.Say(help)
 
@@ -414,6 +415,11 @@ def do_check_inventory():
   else:
     whoami.Say('did not find anything matching ' + what)
 
+def do_no_save():
+  item = whoami.Map.CreateObject('food', 2, 1)
+  item.NoSave = 1
+  whoami.Say('no_save set, the food should not be saved')
+
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
 #whoami.Say('topic[0] = %s'%topic[0])
@@ -485,5 +491,7 @@ elif topic[0] == 'hook':
 	do_hook()
 elif topic[0] == 'checkinventory':
   do_check_inventory()
+elif topic[0] == 'nosave':
+  do_no_save()
 else:
 	do_help()
