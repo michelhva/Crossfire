@@ -10,33 +10,33 @@ enter_x 1
 enter_y 10
 msg
 Created:  1997-04-01
-Modified: 2008-10-25 Rick Tanner
+Modified: 2011-11-01 Rick Tanner
 endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
-arch blocked
+arch cave_15
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
-arch blocked
+arch cave_15
 y 4
 end
-arch blocked
+arch cave_15
 y 5
 end
-arch blocked
+arch cave_15
 y 6
 end
-arch blocked
+arch cave_15
 y 7
 end
-arch blocked
+arch cave_15
 y 8
 end
 arch flagstone
@@ -177,7 +177,7 @@ end
 arch mine4
 y 31
 end
-arch blocked
+arch cave_15
 x 1
 end
 arch button_small
@@ -192,7 +192,7 @@ arch boulder
 x 1
 y 1
 end
-arch blocked
+arch cave_15
 x 1
 y 2
 end
@@ -239,7 +239,7 @@ y 5
 speed 0.500000
 connected 1003
 end
-arch blocked
+arch cave_15
 x 1
 y 6
 end
@@ -247,7 +247,7 @@ arch dungeon_magic
 x 1
 y 7
 end
-arch blocked
+arch cave_15
 x 1
 y 7
 end
@@ -255,7 +255,7 @@ arch dungeon_magic
 x 1
 y 8
 end
-arch blocked
+arch cave_15
 x 1
 y 8
 end
@@ -492,30 +492,30 @@ arch mine2
 x 1
 y 31
 end
-arch blocked
+arch cave_15
 x 2
 end
-arch blocked
+arch cave_15
 x 2
 y 1
 end
-arch blocked
+arch cave_15
 x 2
 y 2
 end
-arch blocked
+arch cave_15
 x 2
 y 3
 end
-arch blocked
+arch cave_15
 x 2
 y 4
 end
-arch blocked
+arch cave_15
 x 2
 y 5
 end
-arch blocked
+arch cave_15
 x 2
 y 6
 end
@@ -756,7 +756,7 @@ arch mine2
 x 2
 y 31
 end
-arch blocked
+arch cave_15
 x 3
 end
 arch spikes_open
@@ -770,7 +770,7 @@ arch boulder
 x 3
 y 1
 end
-arch blocked
+arch cave_15
 x 3
 y 2
 end
@@ -810,7 +810,7 @@ arch dungeon_magic
 x 3
 y 5
 end
-arch blocked
+arch cave_15
 x 3
 y 5
 end
@@ -1052,7 +1052,7 @@ arch mine2
 x 3
 y 31
 end
-arch blocked
+arch cave_15
 x 4
 end
 arch spikes_closed
@@ -1062,15 +1062,15 @@ y 1
 speed 0.500000
 connected 1002
 end
-arch blocked
+arch cave_15
 x 4
 y 2
 end
-arch blocked
+arch cave_15
 x 4
 y 3
 end
-arch blocked
+arch cave_15
 x 4
 y 4
 end
@@ -1078,7 +1078,7 @@ arch dungeon_magic
 x 4
 y 5
 end
-arch blocked
+arch cave_15
 x 4
 y 5
 end
@@ -1290,7 +1290,7 @@ arch mine2
 x 4
 y 31
 end
-arch blocked
+arch cave_15
 x 5
 end
 arch magic_mouth
@@ -1316,7 +1316,7 @@ speed 0.500000
 value 1
 connected 1002
 end
-arch blocked
+arch cave_15
 x 5
 y 2
 end
@@ -1356,7 +1356,7 @@ arch dungeon_magic
 x 5
 y 5
 end
-arch blocked
+arch cave_15
 x 5
 y 5
 end
@@ -1615,22 +1615,22 @@ arch mine2
 x 5
 y 31
 end
-arch blocked
+arch cave_15
 x 6
 end
-arch blocked
+arch cave_15
 x 6
 y 1
 end
-arch blocked
+arch cave_15
 x 6
 y 2
 end
-arch blocked
+arch cave_15
 x 6
 y 3
 end
-arch blocked
+arch cave_15
 x 6
 y 4
 end
@@ -1638,7 +1638,7 @@ arch dungeon_magic
 x 6
 y 5
 end
-arch blocked
+arch cave_15
 x 6
 y 5
 end
@@ -1854,14 +1854,14 @@ arch mine2
 x 6
 y 31
 end
-arch blocked
+arch cave_15
 x 7
 end
-arch blocked
+arch cave_15
 x 7
 y 1
 end
-arch blocked
+arch cave_15
 x 7
 y 2
 end
@@ -1894,7 +1894,7 @@ arch dungeon_magic
 x 7
 y 5
 end
-arch blocked
+arch cave_15
 x 7
 y 5
 end
@@ -2197,14 +2197,14 @@ end
 arch dungeon_magic
 x 8
 end
-arch blocked
+arch cave_15
 x 8
 end
 arch dungeon_magic
 x 8
 y 1
 end
-arch blocked
+arch cave_15
 x 8
 y 1
 end
@@ -2212,7 +2212,7 @@ arch dungeon_magic
 x 8
 y 2
 end
-arch blocked
+arch cave_15
 x 8
 y 2
 end
@@ -2220,7 +2220,7 @@ arch dungeon_magic
 x 8
 y 3
 end
-arch blocked
+arch cave_15
 x 8
 y 3
 end
@@ -2228,7 +2228,7 @@ arch dungeon_magic
 x 8
 y 4
 end
-arch blocked
+arch cave_15
 x 8
 y 4
 end
@@ -2236,7 +2236,7 @@ arch dungeon_magic
 x 8
 y 5
 end
-arch blocked
+arch cave_15
 x 8
 y 5
 end
@@ -3133,7 +3133,7 @@ arch small_stones
 x 11
 y 8
 end
-arch blocked
+arch cave_15
 x 11
 y 8
 end
@@ -3363,7 +3363,7 @@ arch mine2
 x 11
 y 31
 end
-arch blocked
+arch cave_15
 x 12
 end
 arch igate_open_1
@@ -3406,7 +3406,7 @@ arch dungeon_magic
 x 12
 y 3
 end
-arch blocked
+arch cave_15
 x 12
 y 3
 end
@@ -3414,7 +3414,7 @@ arch dungeon_magic
 x 12
 y 4
 end
-arch blocked
+arch cave_15
 x 12
 y 4
 end
@@ -3422,7 +3422,7 @@ arch dungeon_magic
 x 12
 y 5
 end
-arch blocked
+arch cave_15
 x 12
 y 5
 end
@@ -3430,7 +3430,7 @@ arch dungeon_magic
 x 12
 y 6
 end
-arch blocked
+arch cave_15
 x 12
 y 6
 end
@@ -3438,7 +3438,7 @@ arch dungeon_magic
 x 12
 y 7
 end
-arch blocked
+arch cave_15
 x 12
 y 7
 end
@@ -3446,7 +3446,7 @@ arch dungeon_magic
 x 12
 y 8
 end
-arch blocked
+arch cave_15
 x 12
 y 8
 end
@@ -3766,7 +3766,7 @@ arch small_stones
 x 13
 y 8
 end
-arch blocked
+arch cave_15
 x 13
 y 8
 end
@@ -4466,14 +4466,14 @@ end
 arch dungeon_magic
 x 16
 end
-arch blocked
+arch cave_15
 x 16
 end
-arch blocked
+arch cave_15
 x 16
 y 1
 end
-arch blocked
+arch cave_15
 x 16
 y 2
 end
@@ -4481,7 +4481,7 @@ arch dungeon_magic
 x 16
 y 3
 end
-arch blocked
+arch cave_15
 x 16
 y 3
 end
@@ -4489,7 +4489,7 @@ arch dungeon_magic
 x 16
 y 4
 end
-arch blocked
+arch cave_15
 x 16
 y 4
 end
@@ -4497,7 +4497,7 @@ arch dungeon_magic
 x 16
 y 5
 end
-arch blocked
+arch cave_15
 x 16
 y 5
 end
@@ -4731,10 +4731,10 @@ arch mine2
 x 16
 y 31
 end
-arch blocked
+arch cave_15
 x 17
 end
-arch blocked
+arch cave_15
 x 17
 y 2
 end
@@ -4774,7 +4774,7 @@ arch dungeon_magic
 x 17
 y 5
 end
-arch blocked
+arch cave_15
 x 17
 y 5
 end
@@ -5053,22 +5053,22 @@ arch mine2
 x 17
 y 31
 end
-arch blocked
+arch cave_15
 x 18
 end
-arch blocked
+arch cave_15
 x 18
 y 1
 end
-arch blocked
+arch cave_15
 x 18
 y 2
 end
-arch blocked
+arch cave_15
 x 18
 y 3
 end
-arch blocked
+arch cave_15
 x 18
 y 4
 end
@@ -5076,7 +5076,7 @@ arch dungeon_magic
 x 18
 y 5
 end
-arch blocked
+arch cave_15
 x 18
 y 5
 end
@@ -5311,10 +5311,10 @@ arch mine2
 x 18
 y 31
 end
-arch blocked
+arch cave_15
 x 19
 end
-arch blocked
+arch cave_15
 x 19
 y 2
 end
@@ -5354,7 +5354,7 @@ arch dungeon_magic
 x 19
 y 5
 end
-arch blocked
+arch cave_15
 x 19
 y 5
 end
@@ -5557,22 +5557,22 @@ arch mine2
 x 19
 y 31
 end
-arch blocked
+arch cave_15
 x 20
 end
-arch blocked
+arch cave_15
 x 20
 y 1
 end
-arch blocked
+arch cave_15
 x 20
 y 2
 end
-arch blocked
+arch cave_15
 x 20
 y 3
 end
-arch blocked
+arch cave_15
 x 20
 y 4
 end
@@ -5580,7 +5580,7 @@ arch dungeon_magic
 x 20
 y 5
 end
-arch blocked
+arch cave_15
 x 20
 y 5
 end
@@ -5782,14 +5782,14 @@ arch mine2
 x 20
 y 31
 end
-arch blocked
+arch cave_15
 x 21
 end
-arch blocked
+arch cave_15
 x 21
 y 1
 end
-arch blocked
+arch cave_15
 x 21
 y 2
 end
@@ -5822,7 +5822,7 @@ arch dungeon_magic
 x 21
 y 5
 end
-arch blocked
+arch cave_15
 x 21
 y 5
 end
@@ -5995,22 +5995,22 @@ arch mine2
 x 21
 y 31
 end
-arch blocked
+arch cave_15
 x 22
 end
-arch blocked
+arch cave_15
 x 22
 y 1
 end
-arch blocked
+arch cave_15
 x 22
 y 2
 end
-arch blocked
+arch cave_15
 x 22
 y 3
 end
-arch blocked
+arch cave_15
 x 22
 y 4
 end
@@ -6018,7 +6018,7 @@ arch dungeon_magic
 x 22
 y 5
 end
-arch blocked
+arch cave_15
 x 22
 y 5
 end
@@ -6026,7 +6026,7 @@ arch small_stones
 x 22
 y 6
 end
-arch blocked
+arch cave_15
 x 22
 y 6
 end
@@ -6231,7 +6231,7 @@ arch mine2
 x 22
 y 31
 end
-arch blocked
+arch cave_15
 x 23
 end
 arch pit_closed
@@ -6394,7 +6394,7 @@ arch big_eye
 name Dread's eye
 end
 end
-arch blocked
+arch cave_15
 x 23
 y 5
 end
@@ -6402,7 +6402,7 @@ arch dungeon_magic
 x 23
 y 6
 end
-arch blocked
+arch cave_15
 x 23
 y 6
 end
@@ -6410,7 +6410,7 @@ arch dungeon_magic
 x 23
 y 7
 end
-arch blocked
+arch cave_15
 x 23
 y 7
 end
@@ -6418,7 +6418,7 @@ arch dungeon_magic
 x 23
 y 8
 end
-arch blocked
+arch cave_15
 x 23
 y 8
 end
@@ -6616,38 +6616,38 @@ arch mine2
 x 23
 y 31
 end
-arch blocked
+arch cave_15
 x 24
 end
-arch blocked
+arch cave_15
 x 24
 y 1
 end
-arch blocked
+arch cave_15
 x 24
 y 2
 end
-arch blocked
+arch cave_15
 x 24
 y 3
 end
-arch blocked
+arch cave_15
 x 24
 y 4
 end
-arch blocked
+arch cave_15
 x 24
 y 5
 end
-arch blocked
+arch cave_15
 x 24
 y 6
 end
-arch blocked
+arch cave_15
 x 24
 y 7
 end
-arch blocked
+arch cave_15
 x 24
 y 8
 end
