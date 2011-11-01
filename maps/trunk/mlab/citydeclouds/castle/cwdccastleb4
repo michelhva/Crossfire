@@ -19480,67 +19480,35 @@ arch cave20
 x 11
 y 71
 end
-arch steppe
+arch cave_15
 x 11
 y 72
 end
-arch blocked
-x 11
-y 72
-end
-arch steppe
+arch cave_15
 x 11
 y 73
 end
-arch blocked
-x 11
-y 73
-end
-arch steppe
+arch cave_15
 x 11
 y 74
 end
-arch blocked
-x 11
-y 74
-end
-arch steppe
+arch cave_15
 x 11
 y 75
 end
-arch blocked
-x 11
-y 75
-end
-arch steppe
+arch cave_15
 x 11
 y 76
 end
-arch blocked
-x 11
-y 76
-end
-arch pstone_3
+arch cave_15
 x 11
 y 77
 end
-arch blocked
-x 11
-y 77
-end
-arch pstone_3
+arch cave_15
 x 11
 y 78
 end
-arch blocked
-x 11
-y 78
-end
-arch pstone_3
-x 11
-y 79
-end
-arch blocked
+arch cave_15
 x 11
 y 79
 end
@@ -21135,91 +21103,47 @@ arch cave17
 x 12
 y 72
 end
-arch steppe
+arch cave_15
 x 12
 y 73
 end
-arch blocked
-x 12
-y 73
-end
-arch steppe
+arch cave_15
 x 12
 y 74
 end
-arch blocked
-x 12
-y 74
-end
-arch steppe
+arch cave_15
 x 12
 y 75
 end
-arch blocked
-x 12
-y 75
-end
-arch steppe
+arch cave_15
 x 12
 y 76
 end
-arch blocked
-x 12
-y 76
-end
-arch pstone_3
+arch cave_15
 x 12
 y 77
 end
-arch blocked
-x 12
-y 77
-end
-arch pstone_3
+arch cave_15
 x 12
 y 78
 end
-arch blocked
-x 12
-y 78
-end
-arch pstone_3
+arch cave_15
 x 12
 y 79
 end
-arch blocked
-x 12
-y 79
-end
-arch pstone_3
+arch cave_15
 x 12
 y 80
 end
-arch blocked
-x 12
-y 80
-end
-arch pstone_3
+arch cave_15
 x 12
 y 81
 end
-arch blocked
-x 12
-y 81
-end
-arch pstone_3
+arch cave_15
 x 12
 y 82
 end
-arch blocked
-x 12
-y 82
-end
-arch pstone_3
-x 12
-y 83
-end
-arch blocked
+arch cave_15
 x 12
 y 83
 end
@@ -22346,35 +22270,19 @@ arch cave20
 x 13
 y 48
 end
-arch small_stones
+arch cave_15
 x 13
 y 49
 end
-arch blocked
-x 13
-y 49
-end
-arch small_stones
+arch cave_15
 x 13
 y 50
 end
-arch blocked
-x 13
-y 50
-end
-arch small_stones
+arch cave_15
 x 13
 y 51
 end
-arch blocked
-x 13
-y 51
-end
-arch small_stones
-x 13
-y 52
-end
-arch blocked
+arch cave_15
 x 13
 y 52
 end
@@ -22752,67 +22660,35 @@ arch cave17
 x 13
 y 77
 end
-arch pstone_3
+arch cave_15
 x 13
 y 78
 end
-arch blocked
-x 13
-y 78
-end
-arch pstone_3
+arch cave_15
 x 13
 y 79
 end
-arch blocked
-x 13
-y 79
-end
-arch pstone_3
+arch cave_15
 x 13
 y 80
 end
-arch blocked
-x 13
-y 80
-end
-arch pstone_3
+arch cave_15
 x 13
 y 81
 end
-arch blocked
-x 13
-y 81
-end
-arch pstone_3
+arch cave_15
 x 13
 y 82
 end
-arch blocked
-x 13
-y 82
-end
-arch pstone_3
+arch cave_15
 x 13
 y 83
 end
-arch blocked
-x 13
-y 83
-end
-arch pstone_3
+arch cave_15
 x 13
 y 84
 end
-arch blocked
-x 13
-y 84
-end
-arch pstone_3
-x 13
-y 85
-end
-arch blocked
+arch cave_15
 x 13
 y 85
 end
@@ -23804,11 +23680,7 @@ arch cave20
 x 14
 y 46
 end
-arch small_stones
-x 14
-y 47
-end
-arch blocked
+arch cave_15
 x 14
 y 47
 end
@@ -23860,11 +23732,7 @@ arch cave17
 x 14
 y 53
 end
-arch steppe
-x 14
-y 54
-end
-arch blocked
+arch cave_15
 x 14
 y 54
 end
@@ -23919,27 +23787,15 @@ arch cave20
 x 14
 y 57
 end
-arch pstone_2
+arch cave_15
 x 14
 y 58
 end
-arch blocked
-x 14
-y 58
-end
-arch pstone_2
+arch cave_15
 x 14
 y 59
 end
-arch blocked
-x 14
-y 59
-end
-arch pstone_2
-x 14
-y 60
-end
-arch blocked
+arch cave_15
 x 14
 y 60
 end
@@ -24240,27 +24096,15 @@ arch cave17
 x 14
 y 84
 end
-arch pstone_3
+arch cave_15
 x 14
 y 85
 end
-arch blocked
-x 14
-y 85
-end
-arch pstone_3
+arch cave_15
 x 14
 y 86
 end
-arch blocked
-x 14
-y 86
-end
-arch pstone_3
-x 14
-y 87
-end
-arch blocked
+arch cave_15
 x 14
 y 87
 end
@@ -24865,44 +24709,19 @@ arch cave20
 x 15
 y 24
 end
-arch blocked
-name nothing
-x 15
-y 25
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 15
 y 25
 end
-arch blocked
-x 15
-y 25
-end
-arch large_stones
+arch cave_15
 x 15
 y 26
 end
-arch blocked
-x 15
-y 26
-end
-arch large_stones
+arch cave_15
 x 15
 y 27
 end
-arch blocked
-x 15
-y 27
-end
-arch large_stones
-x 15
-y 28
-end
-arch blocked
+arch cave_15
 x 15
 y 28
 end
@@ -25127,11 +24946,7 @@ arch cave2
 x 15
 y 44
 end
-arch small_stones
-x 15
-y 45
-end
-arch blocked
+arch cave_15
 x 15
 y 45
 end
@@ -25231,19 +25046,11 @@ arch cave17
 x 15
 y 58
 end
-arch pstone_2
+arch cave_15
 x 15
 y 59
 end
-arch blocked
-x 15
-y 59
-end
-arch pstone_2
-x 15
-y 60
-end
-arch blocked
+arch cave_15
 x 15
 y 60
 end
@@ -25545,11 +25352,7 @@ arch cave17
 x 15
 y 87
 end
-arch pstone_3
-x 15
-y 88
-end
-arch blocked
+arch cave_15
 x 15
 y 88
 end
@@ -26129,27 +25932,15 @@ arch cave2
 x 16
 y 22
 end
-arch small_stones
+arch cave_15
 x 16
 y 23
 end
-arch blocked
-x 16
-y 23
-end
-arch large_stones
+arch cave_15
 x 16
 y 24
 end
-arch blocked
-x 16
-y 24
-end
-arch large_stones
-x 16
-y 25
-end
-arch blocked
+arch cave_15
 x 16
 y 25
 end
@@ -27439,11 +27230,7 @@ arch cave2
 x 17
 y 33
 end
-arch pstone_2
-x 17
-y 34
-end
-arch blocked
+arch cave_15
 x 17
 y 34
 end
@@ -28630,11 +28417,7 @@ arch cave2
 x 18
 y 33
 end
-arch pstone_2
-x 18
-y 34
-end
-arch blocked
+arch cave_15
 x 18
 y 34
 end
@@ -29808,11 +29591,7 @@ arch cave17
 x 19
 y 34
 end
-arch pstone_2
-x 19
-y 35
-end
-arch blocked
+arch cave_15
 x 19
 y 35
 end
@@ -30405,11 +30184,7 @@ arch cave2
 x 19
 y 88
 end
-arch pstone_2
-x 19
-y 89
-end
-arch blocked
+arch cave_15
 x 19
 y 89
 end
@@ -31010,11 +30785,7 @@ arch cave2
 x 20
 y 34
 end
-arch pstone_2
-x 20
-y 35
-end
-arch blocked
+arch cave_15
 x 20
 y 35
 end
@@ -31602,11 +31373,7 @@ arch cave2
 x 20
 y 88
 end
-arch pstone_2
-x 20
-y 89
-end
-arch blocked
+arch cave_15
 x 20
 y 89
 end
@@ -32062,11 +31829,7 @@ arch cave2
 x 21
 y 17
 end
-arch pstone_1
-x 21
-y 18
-end
-arch blocked
+arch cave_15
 x 21
 y 18
 end
@@ -32178,11 +31941,7 @@ arch cave2
 x 21
 y 34
 end
-arch pstone_2
-x 21
-y 35
-end
-arch blocked
+arch cave_15
 x 21
 y 35
 end
@@ -32271,11 +32030,7 @@ arch cave2
 x 21
 y 40
 end
-arch dirtfloor
-x 21
-y 41
-end
-arch blocked
+arch cave_15
 x 21
 y 41
 end
@@ -32715,11 +32470,7 @@ arch cave17
 x 21
 y 89
 end
-arch pstone_2
-x 21
-y 90
-end
-arch blocked
+arch cave_15
 x 21
 y 90
 end
@@ -33846,11 +33597,7 @@ arch cave2
 x 22
 y 89
 end
-arch pstone_2
-x 22
-y 90
-end
-arch blocked
+arch cave_15
 x 22
 y 90
 end
@@ -34397,11 +34144,7 @@ arch cave2
 x 23
 y 28
 end
-arch pstone_2
-x 23
-y 29
-end
-arch blocked
+arch cave_15
 x 23
 y 29
 end
@@ -35028,11 +34771,7 @@ arch cave2
 x 23
 y 89
 end
-arch pstone_2
-x 23
-y 90
-end
-arch blocked
+arch cave_15
 x 23
 y 90
 end
@@ -35563,11 +35302,7 @@ arch cave2
 x 24
 y 28
 end
-arch pstone_2
-x 24
-y 29
-end
-arch blocked
+arch cave_15
 x 24
 y 29
 end
@@ -36238,19 +35973,11 @@ arch cave2
 x 24
 y 89
 end
-arch pstone_2
+arch cave_15
 x 24
 y 90
 end
-arch blocked
-x 24
-y 90
-end
-arch pstone_2
-x 24
-y 91
-end
-arch blocked
+arch cave_15
 x 24
 y 91
 end
@@ -37423,27 +37150,15 @@ arch cave2
 x 25
 y 89
 end
-arch pstone_1
+arch cave_15
 x 25
 y 90
 end
-arch blocked
-x 25
-y 90
-end
-arch pstone_2
+arch cave_15
 x 25
 y 91
 end
-arch blocked
-x 25
-y 91
-end
-arch pstone_2
-x 25
-y 92
-end
-arch blocked
+arch cave_15
 x 25
 y 92
 end
@@ -38668,27 +38383,15 @@ arch cave2
 x 26
 y 89
 end
-arch pstone_1
+arch cave_15
 x 26
 y 90
 end
-arch blocked
-x 26
-y 90
-end
-arch pstone_2
+arch cave_15
 x 26
 y 91
 end
-arch blocked
-x 26
-y 91
-end
-arch pstone_2
-x 26
-y 92
-end
-arch blocked
+arch cave_15
 x 26
 y 92
 end
@@ -39929,19 +39632,11 @@ arch cave17
 x 27
 y 90
 end
-arch pstone_2
+arch cave_15
 x 27
 y 91
 end
-arch blocked
-x 27
-y 91
-end
-arch pstone_2
-x 27
-y 92
-end
-arch blocked
+arch cave_15
 x 27
 y 92
 end
@@ -41151,27 +40846,15 @@ arch cave2
 x 28
 y 90
 end
-arch pstone_2
+arch cave_15
 x 28
 y 91
 end
-arch blocked
-x 28
-y 91
-end
-arch pstone_2
+arch cave_15
 x 28
 y 92
 end
-arch blocked
-x 28
-y 92
-end
-arch pstone_2
-x 28
-y 93
-end
-arch blocked
+arch cave_15
 x 28
 y 93
 end
@@ -41944,7 +41627,7 @@ arch cave2
 x 29
 y 50
 end
-arch blocked
+arch cave_15
 x 29
 y 51
 end
@@ -42358,27 +42041,15 @@ arch cave2
 x 29
 y 90
 end
-arch pstone_2
+arch cave_15
 x 29
 y 91
 end
-arch blocked
-x 29
-y 91
-end
-arch pstone_2
+arch cave_15
 x 29
 y 92
 end
-arch blocked
-x 29
-y 92
-end
-arch pstone_2
-x 29
-y 93
-end
-arch blocked
+arch cave_15
 x 29
 y 93
 end
@@ -42837,11 +42508,7 @@ arch cave17
 x 30
 y 21
 end
-arch pstone_3
-x 30
-y 22
-end
-arch blocked
+arch cave_15
 x 30
 y 22
 end
@@ -43169,7 +42836,7 @@ arch cave20
 x 30
 y 50
 end
-arch blocked
+arch cave_15
 x 30
 y 51
 end
@@ -43428,11 +43095,7 @@ arch cave20
 x 30
 y 72
 end
-arch pstone_2
-x 30
-y 73
-end
-arch blocked
+arch cave_15
 x 30
 y 73
 end
@@ -43556,27 +43219,15 @@ arch cave2
 x 30
 y 90
 end
-arch pstone_2
+arch cave_15
 x 30
 y 91
 end
-arch blocked
-x 30
-y 91
-end
-arch pstone_2
+arch cave_15
 x 30
 y 92
 end
-arch blocked
-x 30
-y 92
-end
-arch pstone_2
-x 30
-y 93
-end
-arch blocked
+arch cave_15
 x 30
 y 93
 end
@@ -44048,27 +43699,15 @@ arch cave17
 x 31
 y 22
 end
-arch steppe
+arch cave_15
 x 31
 y 23
 end
-arch blocked
-x 31
-y 23
-end
-arch steppe
+arch cave_15
 x 31
 y 24
 end
-arch blocked
-x 31
-y 24
-end
-arch steppe
-x 31
-y 25
-end
-arch blocked
+arch cave_15
 x 31
 y 25
 end
@@ -44414,19 +44053,11 @@ arch cave2
 x 31
 y 49
 end
-arch pstone_3
+arch cave_15
 x 31
 y 50
 end
-arch blocked
-x 31
-y 50
-end
-arch pstone_3
-x 31
-y 51
-end
-arch blocked
+arch cave_15
 x 31
 y 51
 end
@@ -44659,35 +44290,19 @@ arch cave2
 x 31
 y 71
 end
-arch pstone_2
+arch cave_15
 x 31
 y 72
 end
-arch blocked
-x 31
-y 72
-end
-arch pstone_2
+arch cave_15
 x 31
 y 73
 end
-arch blocked
-x 31
-y 73
-end
-arch pstone_2
+arch cave_15
 x 31
 y 74
 end
-arch blocked
-x 31
-y 74
-end
-arch pstone_2
-x 31
-y 75
-end
-arch blocked
+arch cave_15
 x 31
 y 75
 end
@@ -44791,31 +44406,15 @@ arch cave2
 x 31
 y 90
 end
-arch pstone_2
+arch cave_15
 x 31
 y 91
 end
-arch dirtfloor
-x 31
-y 91
-end
-arch blocked
-x 31
-y 91
-end
-arch pstone_2
+arch cave_15
 x 31
 y 92
 end
-arch blocked
-x 31
-y 92
-end
-arch pstone_2
-x 31
-y 93
-end
-arch blocked
+arch cave_15
 x 31
 y 93
 end
@@ -45679,19 +45278,11 @@ arch cave2
 x 32
 y 49
 end
-arch pstone_3
+arch cave_15
 x 32
 y 50
 end
-arch blocked
-x 32
-y 50
-end
-arch pstone_3
-x 32
-y 51
-end
-arch blocked
+arch cave_15
 x 32
 y 51
 end
@@ -46056,19 +45647,11 @@ arch cave17
 x 32
 y 91
 end
-arch pstone_2
+arch cave_15
 x 32
 y 92
 end
-arch blocked
-x 32
-y 92
-end
-arch pstone_2
-x 32
-y 93
-end
-arch blocked
+arch cave_15
 x 32
 y 93
 end
@@ -46914,11 +46497,7 @@ arch cave2
 x 33
 y 49
 end
-arch pstone_3
-x 33
-y 50
-end
-arch blocked
+arch cave_15
 x 33
 y 50
 end
@@ -47272,19 +46851,11 @@ arch cave2
 x 33
 y 91
 end
-arch pstone_2
+arch cave_15
 x 33
 y 92
 end
-arch blocked
-x 33
-y 92
-end
-arch pstone_2
-x 33
-y 93
-end
-arch blocked
+arch cave_15
 x 33
 y 93
 end
@@ -48094,11 +47665,7 @@ arch cave2
 x 34
 y 49
 end
-arch pstone_3
-x 34
-y 50
-end
-arch blocked
+arch cave_15
 x 34
 y 50
 end
@@ -48341,19 +47908,11 @@ arch cave2
 x 34
 y 81
 end
-arch dirtfloor
+arch cave_15
 x 34
 y 82
 end
-arch blocked
-x 34
-y 82
-end
-arch dirtfloor
-x 34
-y 83
-end
-arch blocked
+arch cave_15
 x 34
 y 83
 end
@@ -48409,19 +47968,11 @@ arch cave2
 x 34
 y 91
 end
-arch pstone_2
+arch cave_15
 x 34
 y 92
 end
-arch blocked
-x 34
-y 92
-end
-arch pstone_2
-x 34
-y 93
-end
-arch blocked
+arch cave_15
 x 34
 y 93
 end
@@ -49466,27 +49017,15 @@ arch cave2
 x 35
 y 81
 end
-arch dirtfloor
+arch cave_15
 x 35
 y 82
 end
-arch blocked
-x 35
-y 82
-end
-arch dirtfloor
+arch cave_15
 x 35
 y 83
 end
-arch blocked
-x 35
-y 83
-end
-arch dirtfloor
-x 35
-y 84
-end
-arch blocked
+arch cave_15
 x 35
 y 84
 end
@@ -49530,19 +49069,11 @@ arch cave2
 x 35
 y 91
 end
-arch pstone_2
+arch cave_15
 x 35
 y 92
 end
-arch blocked
-x 35
-y 92
-end
-arch pstone_2
-x 35
-y 93
-end
-arch blocked
+arch cave_15
 x 35
 y 93
 end
@@ -50551,11 +50082,7 @@ arch cave17
 x 36
 y 82
 end
-arch dirtfloor
-x 36
-y 83
-end
-arch blocked
+arch cave_15
 x 36
 y 83
 end
@@ -50611,19 +50138,11 @@ arch cave2
 x 36
 y 91
 end
-arch pstone_2
+arch cave_15
 x 36
 y 92
 end
-arch blocked
-x 36
-y 92
-end
-arch pstone_2
-x 36
-y 93
-end
-arch blocked
+arch cave_15
 x 36
 y 93
 end
@@ -51668,19 +51187,11 @@ arch cave2
 x 37
 y 91
 end
-arch pstone_2
+arch cave_15
 x 37
 y 92
 end
-arch blocked
-x 37
-y 92
-end
-arch pstone_2
-x 37
-y 93
-end
-arch blocked
+arch cave_15
 x 37
 y 93
 end
@@ -52279,11 +51790,7 @@ arch cave20
 x 38
 y 39
 end
-arch steppe
-x 38
-y 40
-end
-arch blocked
+arch cave_15
 x 38
 y 40
 end
@@ -52742,19 +52249,11 @@ arch cave2
 x 38
 y 91
 end
-arch pstone_2
+arch cave_15
 x 38
 y 92
 end
-arch blocked
-x 38
-y 92
-end
-arch pstone_2
-x 38
-y 93
-end
-arch blocked
+arch cave_15
 x 38
 y 93
 end
@@ -53311,11 +52810,7 @@ arch cave2
 x 39
 y 37
 end
-arch pstone_3
-x 39
-y 38
-end
-arch blocked
+arch cave_15
 x 39
 y 38
 end
@@ -53854,19 +53349,11 @@ arch cave2
 x 39
 y 91
 end
-arch pstone_2
+arch cave_15
 x 39
 y 92
 end
-arch blocked
-x 39
-y 92
-end
-arch pstone_2
-x 39
-y 93
-end
-arch blocked
+arch cave_15
 x 39
 y 93
 end
@@ -54927,19 +54414,11 @@ arch cave2
 x 40
 y 91
 end
-arch pstone_2
+arch cave_15
 x 40
 y 92
 end
-arch blocked
-x 40
-y 92
-end
-arch pstone_2
-x 40
-y 93
-end
-arch blocked
+arch cave_15
 x 40
 y 93
 end
@@ -55849,11 +55328,7 @@ arch cave20
 x 41
 y 63
 end
-arch pstone_2
-x 41
-y 64
-end
-arch blocked
+arch cave_15
 x 41
 y 64
 end
@@ -56157,19 +55632,11 @@ arch cave2
 x 41
 y 91
 end
-arch pstone_2
+arch cave_15
 x 41
 y 92
 end
-arch blocked
-x 41
-y 92
-end
-arch pstone_2
-x 41
-y 93
-end
-arch blocked
+arch cave_15
 x 41
 y 93
 end
@@ -56788,27 +56255,15 @@ arch cave2
 x 42
 y 31
 end
-arch pstone_3
+arch cave_15
 x 42
 y 32
 end
-arch blocked
-x 42
-y 32
-end
-arch pstone_3
+arch cave_15
 x 42
 y 33
 end
-arch blocked
-x 42
-y 33
-end
-arch pstone_3
-x 42
-y 34
-end
-arch blocked
+arch cave_15
 x 42
 y 34
 end
@@ -57090,27 +56545,15 @@ arch cave20
 x 42
 y 61
 end
-arch pstone_2
+arch cave_15
 x 42
 y 62
 end
-arch blocked
-x 42
-y 62
-end
-arch pstone_2
+arch cave_15
 x 42
 y 63
 end
-arch blocked
-x 42
-y 63
-end
-arch pstone_2
-x 42
-y 64
-end
-arch blocked
+arch cave_15
 x 42
 y 64
 end
@@ -57439,19 +56882,11 @@ arch cave20
 x 42
 y 91
 end
-arch pstone_2
+arch cave_15
 x 42
 y 92
 end
-arch blocked
-x 42
-y 92
-end
-arch pstone_2
-x 42
-y 93
-end
-arch blocked
+arch cave_15
 x 42
 y 93
 end
@@ -58128,19 +57563,11 @@ arch cave17
 x 43
 y 32
 end
-arch pstone_3
+arch cave_15
 x 43
 y 33
 end
-arch blocked
-x 43
-y 33
-end
-arch dirtfloor
-x 43
-y 34
-end
-arch blocked
+arch cave_15
 x 43
 y 34
 end
@@ -58430,51 +57857,27 @@ arch cave2
 x 43
 y 60
 end
-arch pstone_2
+arch cave_15
 x 43
 y 61
 end
-arch blocked
-x 43
-y 61
-end
-arch pstone_2
+arch cave_15
 x 43
 y 62
 end
-arch blocked
-x 43
-y 62
-end
-arch pstone_2
+arch cave_15
 x 43
 y 63
 end
-arch blocked
-x 43
-y 63
-end
-arch pstone_2
+arch cave_15
 x 43
 y 64
 end
-arch blocked
-x 43
-y 64
-end
-arch pstone_2
+arch cave_15
 x 43
 y 65
 end
-arch blocked
-x 43
-y 65
-end
-arch pstone_2
-x 43
-y 66
-end
-arch blocked
+arch cave_15
 x 43
 y 66
 end
@@ -58766,31 +58169,15 @@ arch cave2
 x 43
 y 90
 end
-arch dungeon_magic
+arch cave_15
 x 43
 y 91
 end
-arch steppe
-x 43
-y 91
-end
-arch blocked
-x 43
-y 91
-end
-arch pstone_2
+arch cave_15
 x 43
 y 92
 end
-arch blocked
-x 43
-y 92
-end
-arch pstone_2
-x 43
-y 93
-end
-arch blocked
+arch cave_15
 x 43
 y 93
 end
@@ -59429,19 +58816,11 @@ arch cave2
 x 44
 y 32
 end
-arch dirtfloor
+arch cave_15
 x 44
 y 33
 end
-arch blocked
-x 44
-y 33
-end
-arch dirtfloor
-x 44
-y 34
-end
-arch blocked
+arch cave_15
 x 44
 y 34
 end
@@ -59707,11 +59086,7 @@ arch cave17
 x 44
 y 61
 end
-arch pstone_2
-x 44
-y 62
-end
-arch blocked
+arch cave_15
 x 44
 y 62
 end
@@ -60023,31 +59398,15 @@ arch cave2
 x 44
 y 90
 end
-arch dungeon_magic
+arch cave_15
 x 44
 y 91
 end
-arch steppe
-x 44
-y 91
-end
-arch blocked
-x 44
-y 91
-end
-arch pstone_2
+arch cave_15
 x 44
 y 92
 end
-arch blocked
-x 44
-y 92
-end
-arch pstone_2
-x 44
-y 93
-end
-arch blocked
+arch cave_15
 x 44
 y 93
 end
@@ -60690,19 +60049,11 @@ arch cave2
 x 45
 y 32
 end
-arch dirtfloor
+arch cave_15
 x 45
 y 33
 end
-arch blocked
-x 45
-y 33
-end
-arch dirtfloor
-x 45
-y 34
-end
-arch blocked
+arch cave_15
 x 45
 y 34
 end
@@ -61214,31 +60565,15 @@ arch cave2
 x 45
 y 90
 end
-arch dungeon_magic
+arch cave_15
 x 45
 y 91
 end
-arch steppe
-x 45
-y 91
-end
-arch blocked
-x 45
-y 91
-end
-arch pstone_2
+arch cave_15
 x 45
 y 92
 end
-arch blocked
-x 45
-y 92
-end
-arch pstone_2
-x 45
-y 93
-end
-arch blocked
+arch cave_15
 x 45
 y 93
 end
@@ -61881,19 +61216,11 @@ arch cave2
 x 46
 y 32
 end
-arch dirtfloor
+arch cave_15
 x 46
 y 33
 end
-arch blocked
-x 46
-y 33
-end
-arch dirtfloor
-x 46
-y 34
-end
-arch blocked
+arch cave_15
 x 46
 y 34
 end
@@ -62399,31 +61726,15 @@ arch cave20
 x 46
 y 90
 end
-arch dungeon_magic
+arch cave_15
 x 46
 y 91
 end
-arch steppe
-x 46
-y 91
-end
-arch blocked
-x 46
-y 91
-end
-arch pstone_2
+arch cave_15
 x 46
 y 92
 end
-arch blocked
-x 46
-y 92
-end
-arch pstone_2
-x 46
-y 93
-end
-arch blocked
+arch cave_15
 x 46
 y 93
 end
@@ -63066,19 +62377,11 @@ arch cave2
 x 47
 y 32
 end
-arch dirtfloor
+arch cave_15
 x 47
 y 33
 end
-arch blocked
-x 47
-y 33
-end
-arch dirtfloor
-x 47
-y 34
-end
-arch blocked
+arch cave_15
 x 47
 y 34
 end
@@ -63483,11 +62786,7 @@ arch cave2
 x 47
 y 80
 end
-arch small_stones
-x 47
-y 81
-end
-arch blocked
+arch cave_15
 x 47
 y 81
 end
@@ -63622,31 +62921,15 @@ arch cave17
 x 47
 y 90
 end
-arch dungeon_magic
+arch cave_15
 x 47
 y 91
 end
-arch steppe
-x 47
-y 91
-end
-arch blocked
-x 47
-y 91
-end
-arch pstone_2
+arch cave_15
 x 47
 y 92
 end
-arch blocked
-x 47
-y 92
-end
-arch pstone_2
-x 47
-y 93
-end
-arch blocked
+arch cave_15
 x 47
 y 93
 end
@@ -64289,11 +63572,7 @@ arch cave2
 x 48
 y 32
 end
-arch dirtfloor
-x 48
-y 33
-end
-arch blocked
+arch cave_15
 x 48
 y 33
 end
@@ -64677,11 +63956,7 @@ arch cave2
 x 48
 y 80
 end
-arch small_stones
-x 48
-y 81
-end
-arch blocked
+arch cave_15
 x 48
 y 81
 end
@@ -64821,31 +64096,15 @@ arch cave2
 x 48
 y 90
 end
-arch dungeon_magic
+arch cave_15
 x 48
 y 91
 end
-arch steppe
-x 48
-y 91
-end
-arch blocked
-x 48
-y 91
-end
-arch pstone_2
+arch cave_15
 x 48
 y 92
 end
-arch blocked
-x 48
-y 92
-end
-arch pstone_2
-x 48
-y 93
-end
-arch blocked
+arch cave_15
 x 48
 y 93
 end
@@ -65488,11 +64747,7 @@ arch cave2
 x 49
 y 32
 end
-arch dirtfloor
-x 49
-y 33
-end
-arch blocked
+arch cave_15
 x 49
 y 33
 end
@@ -65544,19 +64799,11 @@ arch cave2
 x 49
 y 39
 end
-arch pstone_1
+arch cave_15
 x 49
 y 40
 end
-arch blocked
-x 49
-y 40
-end
-arch pstone_1
-x 49
-y 41
-end
-arch blocked
+arch cave_15
 x 49
 y 41
 end
@@ -66031,19 +65278,11 @@ arch cave17
 x 49
 y 91
 end
-arch pstone_2
+arch cave_15
 x 49
 y 92
 end
-arch blocked
-x 49
-y 92
-end
-arch pstone_2
-x 49
-y 93
-end
-arch blocked
+arch cave_15
 x 49
 y 93
 end
@@ -66682,11 +65921,7 @@ arch cave2
 x 50
 y 32
 end
-arch dirtfloor
-x 50
-y 33
-end
-arch blocked
+arch cave_15
 x 50
 y 33
 end
@@ -66738,19 +65973,11 @@ arch cave20
 x 50
 y 39
 end
-arch pstone_1
+arch cave_15
 x 50
 y 40
 end
-arch blocked
-x 50
-y 40
-end
-arch pstone_1
-x 50
-y 41
-end
-arch blocked
+arch cave_15
 x 50
 y 41
 end
@@ -67072,11 +66299,7 @@ arch cave20
 x 50
 y 74
 end
-arch large_stones
-x 50
-y 75
-end
-arch blocked
+arch cave_15
 x 50
 y 75
 end
@@ -67957,11 +67180,7 @@ arch cave2
 x 51
 y 32
 end
-arch pstone_3
-x 51
-y 33
-end
-arch blocked
+arch cave_15
 x 51
 y 33
 end
@@ -68009,11 +67228,7 @@ arch cave17
 x 51
 y 39
 end
-arch pstone_1
-x 51
-y 40
-end
-arch blocked
+arch cave_15
 x 51
 y 40
 end
@@ -68061,11 +67276,7 @@ arch cave2
 x 51
 y 47
 end
-arch pstone_3
-x 51
-y 48
-end
-arch blocked
+arch cave_15
 x 51
 y 48
 end
@@ -68117,11 +67328,7 @@ arch cave2
 x 51
 y 56
 end
-arch pstone_1
-x 51
-y 57
-end
-arch blocked
+arch cave_15
 x 51
 y 57
 end
@@ -68303,35 +67510,19 @@ arch cave2
 x 51
 y 72
 end
-arch large_stones
+arch cave_15
 x 51
 y 73
 end
-arch blocked
-x 51
-y 73
-end
-arch large_stones
+arch cave_15
 x 51
 y 74
 end
-arch blocked
-x 51
-y 74
-end
-arch large_stones
+arch cave_15
 x 51
 y 75
 end
-arch blocked
-x 51
-y 75
-end
-arch small_stones
-x 51
-y 76
-end
-arch blocked
+arch cave_15
 x 51
 y 76
 end
@@ -69196,11 +68387,7 @@ arch cave2
 x 52
 y 32
 end
-arch pstone_3
-x 52
-y 33
-end
-arch blocked
+arch cave_15
 x 52
 y 33
 end
@@ -69248,11 +68435,7 @@ arch cave2
 x 52
 y 39
 end
-arch pstone_1
-x 52
-y 40
-end
-arch blocked
+arch cave_15
 x 52
 y 40
 end
@@ -69352,19 +68535,11 @@ arch cave2
 x 52
 y 56
 end
-arch pstone_1
+arch cave_15
 x 52
 y 57
 end
-arch blocked
-x 52
-y 57
-end
-arch pstone_1
-x 52
-y 58
-end
-arch blocked
+arch cave_15
 x 52
 y 58
 end
@@ -69544,43 +68719,23 @@ arch cave2
 x 52
 y 72
 end
-arch large_stones
+arch cave_15
 x 52
 y 73
 end
-arch blocked
-x 52
-y 73
-end
-arch large_stones
+arch cave_15
 x 52
 y 74
 end
-arch blocked
-x 52
-y 74
-end
-arch large_stones
+arch cave_15
 x 52
 y 75
 end
-arch blocked
-x 52
-y 75
-end
-arch small_stones
+arch cave_15
 x 52
 y 76
 end
-arch blocked
-x 52
-y 76
-end
-arch small_stones
-x 52
-y 77
-end
-arch blocked
+arch cave_15
 x 52
 y 77
 end
@@ -70442,11 +69597,7 @@ arch cave20
 x 53
 y 32
 end
-arch pstone_3
-x 53
-y 33
-end
-arch blocked
+arch cave_15
 x 53
 y 33
 end
@@ -70594,19 +69745,11 @@ arch cave20
 x 53
 y 56
 end
-arch pstone_1
+arch cave_15
 x 53
 y 57
 end
-arch blocked
-x 53
-y 57
-end
-arch pstone_1
-x 53
-y 58
-end
-arch blocked
+arch cave_15
 x 53
 y 58
 end
@@ -70803,35 +69946,19 @@ arch cave17
 x 53
 y 73
 end
-arch large_stones
+arch cave_15
 x 53
 y 74
 end
-arch blocked
-x 53
-y 74
-end
-arch large_stones
+arch cave_15
 x 53
 y 75
 end
-arch blocked
-x 53
-y 75
-end
-arch small_stones
+arch cave_15
 x 53
 y 76
 end
-arch blocked
-x 53
-y 76
-end
-arch pstone_1
-x 53
-y 77
-end
-arch blocked
+arch cave_15
 x 53
 y 77
 end
@@ -70899,36 +70026,11 @@ arch cave20
 x 53
 y 85
 end
-arch dungeon_magic
+arch cave_15
 x 53
 y 86
 end
-arch pstone_3
-x 53
-y 86
-end
-arch blocked
-x 53
-y 86
-end
-arch dungeon_magic
-x 53
-y 87
-end
-arch blocked
-name nothing
-x 53
-y 87
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 53
-y 87
-end
-arch blocked
+arch cave_15
 x 53
 y 87
 end
@@ -71676,19 +70778,11 @@ arch cave2
 x 54
 y 31
 end
-arch pstone_3
+arch cave_15
 x 54
 y 32
 end
-arch blocked
-x 54
-y 32
-end
-arch pstone_3
-x 54
-y 33
-end
-arch blocked
+arch cave_15
 x 54
 y 33
 end
@@ -71876,11 +70970,7 @@ arch cave2
 x 54
 y 55
 end
-arch pstone_1
-x 54
-y 56
-end
-arch blocked
+arch cave_15
 x 54
 y 56
 end
@@ -72051,27 +71141,15 @@ arch cave2
 x 54
 y 73
 end
-arch large_stones
+arch cave_15
 x 54
 y 74
 end
-arch blocked
-x 54
-y 74
-end
-arch large_stones
+arch cave_15
 x 54
 y 75
 end
-arch blocked
-x 54
-y 75
-end
-arch pstone_1
-x 54
-y 76
-end
-arch blocked
+arch cave_15
 x 54
 y 76
 end
@@ -72135,35 +71213,19 @@ arch cave2
 x 54
 y 83
 end
-arch pstone_3
+arch cave_15
 x 54
 y 84
 end
-arch blocked
-x 54
-y 84
-end
-arch pstone_2
+arch cave_15
 x 54
 y 85
 end
-arch blocked
-x 54
-y 85
-end
-arch pstone_2
+arch cave_15
 x 54
 y 86
 end
-arch blocked
-x 54
-y 86
-end
-arch pstone_2
-x 54
-y 87
-end
-arch blocked
+arch cave_15
 x 54
 y 87
 end
@@ -72899,19 +71961,11 @@ arch cave2
 x 55
 y 31
 end
-arch pstone_3
+arch cave_15
 x 55
 y 32
 end
-arch blocked
-x 55
-y 32
-end
-arch pstone_3
-x 55
-y 33
-end
-arch blocked
+arch cave_15
 x 55
 y 33
 end
@@ -73275,27 +72329,15 @@ arch cave2
 x 55
 y 73
 end
-arch large_stones
+arch cave_15
 x 55
 y 74
 end
-arch blocked
-x 55
-y 74
-end
-arch pstone_1
+arch cave_15
 x 55
 y 75
 end
-arch blocked
-x 55
-y 75
-end
-arch pstone_1
-x 55
-y 76
-end
-arch blocked
+arch cave_15
 x 55
 y 76
 end
@@ -73359,43 +72401,23 @@ arch cave20
 x 55
 y 83
 end
-arch pstone_2
+arch cave_15
 x 55
 y 84
 end
-arch blocked
-x 55
-y 84
-end
-arch pstone_2
+arch cave_15
 x 55
 y 85
 end
-arch blocked
-x 55
-y 85
-end
-arch pstone_2
+arch cave_15
 x 55
 y 86
 end
-arch blocked
-x 55
-y 86
-end
-arch pstone_2
+arch cave_15
 x 55
 y 87
 end
-arch blocked
-x 55
-y 87
-end
-arch pstone_2
-x 55
-y 88
-end
-arch blocked
+arch cave_15
 x 55
 y 88
 end
@@ -74114,19 +73136,11 @@ arch cave20
 x 56
 y 31
 end
-arch pstone_3
+arch cave_15
 x 56
 y 32
 end
-arch blocked
-x 56
-y 32
-end
-arch pstone_3
-x 56
-y 33
-end
-arch blocked
+arch cave_15
 x 56
 y 33
 end
@@ -74460,19 +73474,11 @@ arch cave2
 x 56
 y 73
 end
-arch pstone_3
+arch cave_15
 x 56
 y 74
 end
-arch blocked
-x 56
-y 74
-end
-arch pstone_1
-x 56
-y 75
-end
-arch blocked
+arch cave_15
 x 56
 y 75
 end
@@ -74528,35 +73534,19 @@ arch cave2
 x 56
 y 82
 end
-arch pstone_3
+arch cave_15
 x 56
 y 83
 end
-arch blocked
-x 56
-y 83
-end
-arch pstone_2
+arch cave_15
 x 56
 y 84
 end
-arch blocked
-x 56
-y 84
-end
-arch pstone_2
+arch cave_15
 x 56
 y 85
 end
-arch blocked
-x 56
-y 85
-end
-arch pstone_2
-x 56
-y 86
-end
-arch blocked
+arch cave_15
 x 56
 y 86
 end
@@ -75271,27 +74261,15 @@ arch cave20
 x 57
 y 29
 end
-arch pstone_3
+arch cave_15
 x 57
 y 30
 end
-arch blocked
-x 57
-y 30
-end
-arch pstone_3
+arch cave_15
 x 57
 y 31
 end
-arch blocked
-x 57
-y 31
-end
-arch pstone_3
-x 57
-y 32
-end
-arch blocked
+arch cave_15
 x 57
 y 32
 end
@@ -75700,27 +74678,15 @@ arch cave2
 x 57
 y 82
 end
-arch pstone_3
+arch cave_15
 x 57
 y 83
 end
-arch blocked
-x 57
-y 83
-end
-arch pstone_2
+arch cave_15
 x 57
 y 84
 end
-arch blocked
-x 57
-y 84
-end
-arch pstone_2
-x 57
-y 85
-end
-arch blocked
+arch cave_15
 x 57
 y 85
 end
@@ -76453,27 +75419,15 @@ arch cave17
 x 58
 y 29
 end
-arch pstone_3
+arch cave_15
 x 58
 y 30
 end
-arch blocked
-x 58
-y 30
-end
-arch pstone_3
+arch cave_15
 x 58
 y 31
 end
-arch blocked
-x 58
-y 31
-end
-arch pstone_3
-x 58
-y 32
-end
-arch blocked
+arch cave_15
 x 58
 y 32
 end
@@ -76876,19 +75830,11 @@ arch cave2
 x 58
 y 82
 end
-arch pstone_1
+arch cave_15
 x 58
 y 83
 end
-arch blocked
-x 58
-y 83
-end
-arch pstone_2
-x 58
-y 84
-end
-arch blocked
+arch cave_15
 x 58
 y 84
 end
@@ -78077,19 +77023,11 @@ arch cave2
 x 59
 y 82
 end
-arch pstone_1
+arch cave_15
 x 59
 y 83
 end
-arch blocked
-x 59
-y 83
-end
-arch pstone_2
-x 59
-y 84
-end
-arch blocked
+arch cave_15
 x 59
 y 84
 end
@@ -79313,19 +78251,11 @@ arch cave2
 x 60
 y 82
 end
-arch pstone_1
+arch cave_15
 x 60
 y 83
 end
-arch blocked
-x 60
-y 83
-end
-arch pstone_2
-x 60
-y 84
-end
-arch blocked
+arch cave_15
 x 60
 y 84
 end
@@ -80098,19 +79028,11 @@ arch cave2
 x 61
 y 39
 end
-arch small_stones
+arch cave_15
 x 61
 y 40
 end
-arch blocked
-x 61
-y 40
-end
-arch small_stones
-x 61
-y 41
-end
-arch blocked
+arch cave_15
 x 61
 y 41
 end
@@ -80411,19 +79333,11 @@ arch blocked
 x 61
 y 73
 end
-arch pstone_2
+arch cave_15
 x 61
 y 74
 end
-arch blocked
-x 61
-y 74
-end
-arch pstone_2
-x 61
-y 75
-end
-arch blocked
+arch cave_15
 x 61
 y 75
 end
@@ -80483,19 +79397,11 @@ arch cave20
 x 61
 y 82
 end
-arch steppe
+arch cave_15
 x 61
 y 83
 end
-arch blocked
-x 61
-y 83
-end
-arch pstone_2
-x 61
-y 84
-end
-arch blocked
+arch cave_15
 x 61
 y 84
 end
@@ -81284,35 +80190,19 @@ arch cave17
 x 62
 y 40
 end
-arch small_stones
+arch cave_15
 x 62
 y 41
 end
-arch blocked
-x 62
-y 41
-end
-arch small_stones
+arch cave_15
 x 62
 y 42
 end
-arch blocked
-x 62
-y 42
-end
-arch small_stones
+arch cave_15
 x 62
 y 43
 end
-arch blocked
-x 62
-y 43
-end
-arch small_stones
-x 62
-y 44
-end
-arch blocked
+arch cave_15
 x 62
 y 44
 end
@@ -81376,11 +80266,7 @@ arch cave20
 x 62
 y 52
 end
-arch dirtfloor
-x 62
-y 53
-end
-arch blocked
+arch cave_15
 x 62
 y 53
 end
@@ -81549,28 +80435,11 @@ arch blocked
 x 62
 y 74
 end
-arch blocked
-name nothing
-x 62
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 62
 y 75
 end
-arch blocked
-x 62
-y 75
-end
-arch pstone_2
-x 62
-y 76
-end
-arch blocked
+arch cave_15
 x 62
 y 76
 end
@@ -81614,27 +80483,15 @@ arch cave20
 x 62
 y 81
 end
-arch steppe
+arch cave_15
 x 62
 y 82
 end
-arch blocked
-x 62
-y 82
-end
-arch steppe
+arch cave_15
 x 62
 y 83
 end
-arch blocked
-x 62
-y 83
-end
-arch pstone_2
-x 62
-y 84
-end
-arch blocked
+arch cave_15
 x 62
 y 84
 end
@@ -82431,19 +81288,11 @@ arch cave2
 x 63
 y 40
 end
-arch small_stones
+arch cave_15
 x 63
 y 41
 end
-arch blocked
-x 63
-y 41
-end
-arch small_stones
-x 63
-y 42
-end
-arch blocked
+arch cave_15
 x 63
 y 42
 end
@@ -82684,92 +81533,43 @@ arch blocked
 x 63
 y 74
 end
-arch blocked
-name nothing
-x 63
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 63
 y 75
 end
-arch blocked
-x 63
-y 75
-end
-arch pstone_2
+arch cave_15
 x 63
 y 76
 end
-arch blocked
-x 63
-y 76
-end
-arch dirtfloor
+arch cave_15
 x 63
 y 77
 end
-arch blocked
-x 63
-y 77
-end
-arch dirtfloor
+arch cave_15
 x 63
 y 78
 end
-arch blocked
-x 63
-y 78
-end
-arch dirtfloor
+arch cave_15
 x 63
 y 79
 end
-arch blocked
-x 63
-y 79
-end
-arch dirtfloor
+arch cave_15
 x 63
 y 80
 end
-arch blocked
-x 63
-y 80
-end
-arch steppe
+arch cave_15
 x 63
 y 81
 end
-arch blocked
-x 63
-y 81
-end
-arch steppe
+arch cave_15
 x 63
 y 82
 end
-arch blocked
-x 63
-y 82
-end
-arch steppe
+arch cave_15
 x 63
 y 83
 end
-arch blocked
-x 63
-y 83
-end
-arch pstone_2
-x 63
-y 84
-end
-arch blocked
+arch cave_15
 x 63
 y 84
 end
@@ -83809,92 +82609,43 @@ arch blocked
 x 64
 y 74
 end
-arch blocked
-name nothing
-x 64
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 64
 y 75
 end
-arch blocked
-x 64
-y 75
-end
-arch pstone_2
+arch cave_15
 x 64
 y 76
 end
-arch blocked
-x 64
-y 76
-end
-arch dirtfloor
+arch cave_15
 x 64
 y 77
 end
-arch blocked
-x 64
-y 77
-end
-arch dirtfloor
+arch cave_15
 x 64
 y 78
 end
-arch blocked
-x 64
-y 78
-end
-arch dirtfloor
+arch cave_15
 x 64
 y 79
 end
-arch blocked
-x 64
-y 79
-end
-arch dirtfloor
+arch cave_15
 x 64
 y 80
 end
-arch blocked
-x 64
-y 80
-end
-arch dirtfloor
+arch cave_15
 x 64
 y 81
 end
-arch blocked
-x 64
-y 81
-end
-arch steppe
+arch cave_15
 x 64
 y 82
 end
-arch blocked
-x 64
-y 82
-end
-arch steppe
+arch cave_15
 x 64
 y 83
 end
-arch blocked
-x 64
-y 83
-end
-arch pstone_2
-x 64
-y 84
-end
-arch blocked
+arch cave_15
 x 64
 y 84
 end
@@ -84899,92 +83650,43 @@ arch blocked
 x 65
 y 74
 end
-arch blocked
-name nothing
-x 65
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 65
 y 75
 end
-arch blocked
-x 65
-y 75
-end
-arch pstone_2
+arch cave_15
 x 65
 y 76
 end
-arch blocked
-x 65
-y 76
-end
-arch pstone_2
+arch cave_15
 x 65
 y 77
 end
-arch blocked
-x 65
-y 77
-end
-arch pstone_2
+arch cave_15
 x 65
 y 78
 end
-arch blocked
-x 65
-y 78
-end
-arch pstone_2
+arch cave_15
 x 65
 y 79
 end
-arch blocked
-x 65
-y 79
-end
-arch pstone_2
+arch cave_15
 x 65
 y 80
 end
-arch blocked
-x 65
-y 80
-end
-arch pstone_2
+arch cave_15
 x 65
 y 81
 end
-arch blocked
-x 65
-y 81
-end
-arch pstone_2
+arch cave_15
 x 65
 y 82
 end
-arch blocked
-x 65
-y 82
-end
-arch pstone_2
+arch cave_15
 x 65
 y 83
 end
-arch blocked
-x 65
-y 83
-end
-arch pstone_2
-x 65
-y 84
-end
-arch blocked
+arch cave_15
 x 65
 y 84
 end
@@ -85655,15 +84357,7 @@ arch cave2
 x 66
 y 27
 end
-arch dungeon_magic
-x 66
-y 28
-end
-arch dirtfloor
-x 66
-y 28
-end
-arch blocked
+arch cave_15
 x 66
 y 28
 end
@@ -86016,76 +84710,35 @@ arch blocked
 x 66
 y 74
 end
-arch blocked
-name nothing
-x 66
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 66
 y 75
 end
-arch blocked
-x 66
-y 75
-end
-arch pstone_2
+arch cave_15
 x 66
 y 76
 end
-arch blocked
-x 66
-y 76
-end
-arch pstone_2
+arch cave_15
 x 66
 y 77
 end
-arch blocked
-x 66
-y 77
-end
-arch pstone_2
+arch cave_15
 x 66
 y 78
 end
-arch blocked
-x 66
-y 78
-end
-arch pstone_2
+arch cave_15
 x 66
 y 79
 end
-arch blocked
-x 66
-y 79
-end
-arch pstone_2
+arch cave_15
 x 66
 y 80
 end
-arch blocked
-x 66
-y 80
-end
-arch pstone_2
+arch cave_15
 x 66
 y 81
 end
-arch blocked
-x 66
-y 81
-end
-arch pstone_2
-x 66
-y 82
-end
-arch blocked
+arch cave_15
 x 66
 y 82
 end
@@ -86786,11 +85439,7 @@ arch cave2
 x 67
 y 27
 end
-arch dirtfloor
-x 67
-y 28
-end
-arch blocked
+arch cave_15
 x 67
 y 28
 end
@@ -86958,11 +85607,7 @@ arch cave20
 x 67
 y 55
 end
-arch pstone_1
-x 67
-y 56
-end
-arch blocked
+arch cave_15
 x 67
 y 56
 end
@@ -86970,11 +85615,7 @@ arch light3
 x 67
 y 57
 end
-arch pstone_1
-x 67
-y 57
-end
-arch blocked
+arch cave_15
 x 67
 y 57
 end
@@ -87105,60 +85746,27 @@ arch blocked
 x 67
 y 74
 end
-arch blocked
-name nothing
-x 67
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 67
 y 75
 end
-arch blocked
-x 67
-y 75
-end
-arch pstone_2
+arch cave_15
 x 67
 y 76
 end
-arch blocked
-x 67
-y 76
-end
-arch pstone_2
+arch cave_15
 x 67
 y 77
 end
-arch blocked
-x 67
-y 77
-end
-arch pstone_2
+arch cave_15
 x 67
 y 78
 end
-arch blocked
-x 67
-y 78
-end
-arch pstone_2
+arch cave_15
 x 67
 y 79
 end
-arch blocked
-x 67
-y 79
-end
-arch pstone_2
-x 67
-y 80
-end
-arch blocked
+arch cave_15
 x 67
 y 80
 end
@@ -87881,11 +86489,7 @@ arch cave2
 x 68
 y 27
 end
-arch dirtfloor
-x 68
-y 28
-end
-arch blocked
+arch cave_15
 x 68
 y 28
 end
@@ -88134,37 +86738,15 @@ arch cave20
 x 68
 y 54
 end
-arch dirtfloor
+arch cave_15
 x 68
 y 55
 end
-arch blocked
-x 68
-y 55
-end
-arch woodfloor2
-name woodfloor
+arch cave_15
 x 68
 y 56
 end
-arch mine14
-x 68
-y 56
-end
-arch blocked
-x 68
-y 56
-end
-arch woodfloor2
-name woodfloor
-x 68
-y 57
-end
-arch mine14
-x 68
-y 57
-end
-arch blocked
+arch cave_15
 x 68
 y 57
 end
@@ -88297,52 +86879,23 @@ arch blocked
 x 68
 y 74
 end
-arch blocked
-name nothing
-x 68
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 68
 y 75
 end
-arch blocked
-x 68
-y 75
-end
-arch pstone_2
+arch cave_15
 x 68
 y 76
 end
-arch blocked
-x 68
-y 76
-end
-arch pstone_2
+arch cave_15
 x 68
 y 77
 end
-arch blocked
-x 68
-y 77
-end
-arch pstone_2
+arch cave_15
 x 68
 y 78
 end
-arch blocked
-x 68
-y 78
-end
-arch pstone_2
-x 68
-y 79
-end
-arch blocked
+arch cave_15
 x 68
 y 79
 end
@@ -89078,11 +87631,7 @@ arch cave2
 x 69
 y 27
 end
-arch dirtfloor
-x 69
-y 28
-end
-arch blocked
+arch cave_15
 x 69
 y 28
 end
@@ -89341,11 +87890,7 @@ arch cave17
 x 69
 y 47
 end
-arch small_stones
-x 69
-y 48
-end
-arch blocked
+arch cave_15
 x 69
 y 48
 end
@@ -89381,88 +87926,23 @@ arch cave20
 x 69
 y 52
 end
-arch blocked
-name nothing
-x 69
-y 53
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 69
 y 53
 end
-arch blocked
-x 69
-y 53
-end
-arch blocked
-name nothing
-x 69
-y 54
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 69
 y 54
 end
-arch blocked
-x 69
-y 54
-end
-arch blocked
-name nothing
-x 69
-y 55
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 69
 y 55
 end
-arch blocked
-x 69
-y 55
-end
-arch blocked
-name nothing
-x 69
-y 56
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 69
 y 56
 end
-arch blocked
-x 69
-y 56
-end
-arch blocked
-name nothing
-x 69
-y 57
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 69
-y 57
-end
-arch blocked
+arch cave_15
 x 69
 y 57
 end
@@ -89609,52 +88089,23 @@ arch blocked
 x 69
 y 74
 end
-arch blocked
-name nothing
-x 69
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 69
 y 75
 end
-arch blocked
-x 69
-y 75
-end
-arch pstone_2
+arch cave_15
 x 69
 y 76
 end
-arch blocked
-x 69
-y 76
-end
-arch pstone_2
+arch cave_15
 x 69
 y 77
 end
-arch blocked
-x 69
-y 77
-end
-arch pstone_2
+arch cave_15
 x 69
 y 78
 end
-arch blocked
-x 69
-y 78
-end
-arch pstone_2
-x 69
-y 79
-end
-arch blocked
+arch cave_15
 x 69
 y 79
 end
@@ -90411,11 +88862,7 @@ arch light3
 x 70
 y 29
 end
-arch dirtfloor
-x 70
-y 29
-end
-arch blocked
+arch cave_15
 x 70
 y 29
 end
@@ -90483,11 +88930,7 @@ arch light3
 x 70
 y 35
 end
-arch steppe
-x 70
-y 35
-end
-arch blocked
+arch cave_15
 x 70
 y 35
 end
@@ -90495,11 +88938,7 @@ arch light3
 x 70
 y 36
 end
-arch steppe
-x 70
-y 36
-end
-arch blocked
+arch cave_15
 x 70
 y 36
 end
@@ -90507,11 +88946,7 @@ arch light3
 x 70
 y 37
 end
-arch steppe
-x 70
-y 37
-end
-arch blocked
+arch cave_15
 x 70
 y 37
 end
@@ -90767,156 +89202,39 @@ arch light3
 x 70
 y 49
 end
-arch blocked
-name nothing
-x 70
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 70
 y 49
 end
-arch blocked
-x 70
-y 49
-end
-arch blocked
-name nothing
-x 70
-y 50
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 70
 y 50
 end
-arch blocked
-x 70
-y 50
-end
-arch blocked
-name nothing
-x 70
-y 51
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 70
 y 51
 end
-arch blocked
-x 70
-y 51
-end
-arch blocked
-name nothing
-x 70
-y 52
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 70
 y 52
 end
-arch blocked
-x 70
-y 52
-end
-arch blocked
-name nothing
-x 70
-y 53
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 70
 y 53
 end
-arch blocked
-x 70
-y 53
-end
-arch blocked
-name nothing
-x 70
-y 54
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 70
 y 54
 end
-arch blocked
-x 70
-y 54
-end
-arch blocked
-name nothing
-x 70
-y 55
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 70
 y 55
 end
-arch blocked
-x 70
-y 55
-end
-arch blocked
-name nothing
-x 70
-y 56
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 70
 y 56
 end
-arch blocked
-x 70
-y 56
-end
-arch blocked
-name nothing
-x 70
-y 57
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 70
-y 57
-end
-arch blocked
+arch cave_15
 x 70
 y 57
 end
@@ -91076,52 +89394,23 @@ arch blocked
 x 70
 y 74
 end
-arch blocked
-name nothing
-x 70
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 70
 y 75
 end
-arch blocked
-x 70
-y 75
-end
-arch pstone_2
+arch cave_15
 x 70
 y 76
 end
-arch blocked
-x 70
-y 76
-end
-arch pstone_2
+arch cave_15
 x 70
 y 77
 end
-arch blocked
-x 70
-y 77
-end
-arch pstone_2
+arch cave_15
 x 70
 y 78
 end
-arch blocked
-x 70
-y 78
-end
-arch pstone_2
-x 70
-y 79
-end
-arch blocked
+arch cave_15
 x 70
 y 79
 end
@@ -91916,11 +90205,7 @@ arch light3
 x 71
 y 31
 end
-arch dirtfloor
-x 71
-y 31
-end
-arch blocked
+arch cave_15
 x 71
 y 31
 end
@@ -91928,11 +90213,7 @@ arch light3
 x 71
 y 32
 end
-arch dirtfloor
-x 71
-y 32
-end
-arch blocked
+arch cave_15
 x 71
 y 32
 end
@@ -91940,11 +90221,7 @@ arch light3
 x 71
 y 33
 end
-arch dirtfloor
-x 71
-y 33
-end
-arch blocked
+arch cave_15
 x 71
 y 33
 end
@@ -91952,11 +90229,7 @@ arch light3
 x 71
 y 34
 end
-arch dirtfloor
-x 71
-y 34
-end
-arch blocked
+arch cave_15
 x 71
 y 34
 end
@@ -91964,11 +90237,7 @@ arch light3
 x 71
 y 35
 end
-arch dirtfloor
-x 71
-y 35
-end
-arch blocked
+arch cave_15
 x 71
 y 35
 end
@@ -91976,11 +90245,7 @@ arch light3
 x 71
 y 36
 end
-arch dirtfloor
-x 71
-y 36
-end
-arch blocked
+arch cave_15
 x 71
 y 36
 end
@@ -92256,173 +90521,43 @@ arch light3
 x 71
 y 49
 end
-arch blocked
-name nothing
-x 71
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 49
 end
-arch blocked
-x 71
-y 49
-end
-arch blocked
-name nothing
-x 71
-y 50
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 50
 end
-arch blocked
-x 71
-y 50
-end
-arch blocked
-name nothing
-x 71
-y 51
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 51
 end
-arch blocked
-x 71
-y 51
-end
-arch blocked
-name nothing
-x 71
-y 52
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 52
 end
-arch blocked
-x 71
-y 52
-end
-arch blocked
-name nothing
-x 71
-y 53
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 53
 end
-arch blocked
-x 71
-y 53
-end
-arch blocked
-name nothing
-x 71
-y 54
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 54
 end
-arch blocked
-x 71
-y 54
-end
-arch blocked
-name nothing
-x 71
-y 55
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 55
 end
-arch blocked
-x 71
-y 55
-end
-arch blocked
-name nothing
-x 71
-y 56
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 56
 end
-arch blocked
-x 71
-y 56
-end
-arch blocked
-name nothing
-x 71
-y 57
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 57
 end
-arch blocked
-x 71
-y 57
-end
-arch blocked
-name nothing
-x 71
-y 58
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 71
-y 58
-end
-arch blocked
+arch cave_15
 x 71
 y 58
 end
@@ -92601,69 +90736,27 @@ arch blocked
 x 71
 y 73
 end
-arch blocked
-name nothing
-x 71
-y 74
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 74
 end
-arch blocked
-x 71
-y 74
-end
-arch blocked
-name nothing
-x 71
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 71
 y 75
 end
-arch blocked
-x 71
-y 75
-end
-arch pstone_2
+arch cave_15
 x 71
 y 76
 end
-arch blocked
-x 71
-y 76
-end
-arch pstone_2
+arch cave_15
 x 71
 y 77
 end
-arch blocked
-x 71
-y 77
-end
-arch pstone_2
+arch cave_15
 x 71
 y 78
 end
-arch blocked
-x 71
-y 78
-end
-arch pstone_2
-x 71
-y 79
-end
-arch blocked
+arch cave_15
 x 71
 y 79
 end
@@ -93866,139 +91959,35 @@ arch cave17
 x 72
 y 50
 end
-arch blocked
-name nothing
-x 72
-y 51
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 51
 end
-arch blocked
-x 72
-y 51
-end
-arch blocked
-name nothing
-x 72
-y 52
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 52
 end
-arch blocked
-x 72
-y 52
-end
-arch blocked
-name nothing
-x 72
-y 53
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 53
 end
-arch blocked
-x 72
-y 53
-end
-arch blocked
-name nothing
-x 72
-y 54
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 54
 end
-arch blocked
-x 72
-y 54
-end
-arch blocked
-name nothing
-x 72
-y 55
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 55
 end
-arch blocked
-x 72
-y 55
-end
-arch blocked
-name nothing
-x 72
-y 56
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 56
 end
-arch blocked
-x 72
-y 56
-end
-arch blocked
-name nothing
-x 72
-y 57
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 57
 end
-arch blocked
-x 72
-y 57
-end
-arch blocked
-name nothing
-x 72
-y 58
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 72
-y 58
-end
-arch blocked
+arch cave_15
 x 72
 y 58
 end
@@ -94183,105 +92172,27 @@ arch blocked
 x 72
 y 73
 end
-arch blocked
-name nothing
-x 72
-y 74
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 74
 end
-arch blocked
-x 72
-y 74
-end
-arch blocked
-name nothing
-x 72
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 75
 end
-arch blocked
-x 72
-y 75
-end
-arch blocked
-name nothing
-x 72
-y 76
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 76
 end
-arch blocked
-x 72
-y 76
-end
-arch blocked
-name nothing
-x 72
-y 77
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 77
 end
-arch blocked
-x 72
-y 77
-end
-arch blocked
-name nothing
-x 72
-y 78
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 72
 y 78
 end
-arch blocked
-x 72
-y 78
-end
-arch blocked
-name nothing
-x 72
-y 79
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 72
-y 79
-end
-arch blocked
+arch cave_15
 x 72
 y 79
 end
@@ -95455,105 +93366,27 @@ arch cave17
 x 73
 y 53
 end
-arch blocked
-name nothing
-x 73
-y 54
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 54
 end
-arch blocked
-x 73
-y 54
-end
-arch blocked
-name nothing
-x 73
-y 55
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 55
 end
-arch blocked
-x 73
-y 55
-end
-arch blocked
-name nothing
-x 73
-y 56
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 56
 end
-arch blocked
-x 73
-y 56
-end
-arch blocked
-name nothing
-x 73
-y 57
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 57
 end
-arch blocked
-x 73
-y 57
-end
-arch blocked
-name nothing
-x 73
-y 58
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 58
 end
-arch blocked
-x 73
-y 58
-end
-arch blocked
-name nothing
-x 73
-y 59
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 73
-y 59
-end
-arch blocked
+arch cave_15
 x 73
 y 59
 end
@@ -95671,122 +93504,31 @@ arch blocked
 x 73
 y 72
 end
-arch blocked
-name nothing
-x 73
-y 73
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 73
 end
-arch blocked
-x 73
-y 73
-end
-arch blocked
-name nothing
-x 73
-y 74
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 74
 end
-arch blocked
-x 73
-y 74
-end
-arch blocked
-name nothing
-x 73
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 75
 end
-arch blocked
-x 73
-y 75
-end
-arch blocked
-name nothing
-x 73
-y 76
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 76
 end
-arch blocked
-x 73
-y 76
-end
-arch blocked
-name nothing
-x 73
-y 77
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 77
 end
-arch blocked
-x 73
-y 77
-end
-arch blocked
-name nothing
-x 73
-y 78
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 73
 y 78
 end
-arch blocked
-x 73
-y 78
-end
-arch blocked
-name nothing
-x 73
-y 79
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 73
-y 79
-end
-arch blocked
+arch cave_15
 x 73
 y 79
 end
@@ -96999,88 +94741,23 @@ arch cave17
 x 74
 y 56
 end
-arch blocked
-name nothing
-x 74
-y 57
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 57
 end
-arch blocked
-x 74
-y 57
-end
-arch blocked
-name nothing
-x 74
-y 58
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 58
 end
-arch blocked
-x 74
-y 58
-end
-arch blocked
-name nothing
-x 74
-y 59
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 59
 end
-arch blocked
-x 74
-y 59
-end
-arch blocked
-name nothing
-x 74
-y 60
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 60
 end
-arch blocked
-x 74
-y 60
-end
-arch blocked
-name nothing
-x 74
-y 61
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 74
-y 61
-end
-arch blocked
+arch cave_15
 x 74
 y 61
 end
@@ -97169,139 +94846,35 @@ arch blocked
 x 74
 y 70
 end
-arch blocked
-name nothing
-x 74
-y 71
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 71
 end
-arch blocked
-x 74
-y 71
-end
-arch blocked
-name nothing
-x 74
-y 72
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 72
 end
-arch blocked
-x 74
-y 72
-end
-arch blocked
-name nothing
-x 74
-y 73
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 73
 end
-arch blocked
-x 74
-y 73
-end
-arch blocked
-name nothing
-x 74
-y 74
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 74
 end
-arch blocked
-x 74
-y 74
-end
-arch blocked
-name nothing
-x 74
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 75
 end
-arch blocked
-x 74
-y 75
-end
-arch blocked
-name nothing
-x 74
-y 76
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 76
 end
-arch blocked
-x 74
-y 76
-end
-arch blocked
-name nothing
-x 74
-y 77
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 74
 y 77
 end
-arch blocked
-x 74
-y 77
-end
-arch blocked
-name nothing
-x 74
-y 78
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 74
-y 78
-end
-arch blocked
+arch cave_15
 x 74
 y 78
 end
@@ -98553,343 +96126,83 @@ arch cave17
 x 75
 y 58
 end
-arch blocked
-name nothing
-x 75
-y 59
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 59
 end
-arch blocked
-x 75
-y 59
-end
-arch blocked
-name nothing
-x 75
-y 60
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 60
 end
-arch blocked
-x 75
-y 60
-end
-arch blocked
-name nothing
-x 75
-y 61
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 61
 end
-arch blocked
-x 75
-y 61
-end
-arch blocked
-name nothing
-x 75
-y 62
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 62
 end
-arch blocked
-x 75
-y 62
-end
-arch blocked
-name nothing
-x 75
-y 63
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 63
 end
-arch blocked
-x 75
-y 63
-end
-arch blocked
-name nothing
-x 75
-y 64
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 64
 end
-arch blocked
-x 75
-y 64
-end
-arch blocked
-name nothing
-x 75
-y 65
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 65
 end
-arch blocked
-x 75
-y 65
-end
-arch blocked
-name nothing
-x 75
-y 66
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 66
 end
-arch blocked
-x 75
-y 66
-end
-arch blocked
-name nothing
-x 75
-y 67
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 67
 end
-arch blocked
-x 75
-y 67
-end
-arch blocked
-name nothing
-x 75
-y 68
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 68
 end
-arch blocked
-x 75
-y 68
-end
-arch blocked
-name nothing
-x 75
-y 69
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 69
 end
-arch blocked
-x 75
-y 69
-end
-arch blocked
-name nothing
-x 75
-y 70
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 70
 end
-arch blocked
-x 75
-y 70
-end
-arch blocked
-name nothing
-x 75
-y 71
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 71
 end
-arch blocked
-x 75
-y 71
-end
-arch blocked
-name nothing
-x 75
-y 72
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 72
 end
-arch blocked
-x 75
-y 72
-end
-arch blocked
-name nothing
-x 75
-y 73
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 73
 end
-arch blocked
-x 75
-y 73
-end
-arch blocked
-name nothing
-x 75
-y 74
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 74
 end
-arch blocked
-x 75
-y 74
-end
-arch blocked
-name nothing
-x 75
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 75
 end
-arch blocked
-x 75
-y 75
-end
-arch blocked
-name nothing
-x 75
-y 76
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 76
 end
-arch blocked
-x 75
-y 76
-end
-arch blocked
-name nothing
-x 75
-y 77
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 75
 y 77
 end
-arch blocked
-x 75
-y 77
-end
-arch blocked
-name nothing
-x 75
-y 78
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 75
-y 78
-end
-arch blocked
+arch cave_15
 x 75
 y 78
 end
@@ -100184,241 +97497,59 @@ arch cave17
 x 76
 y 61
 end
-arch blocked
-name nothing
-x 76
-y 62
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 62
 end
-arch blocked
-x 76
-y 62
-end
-arch blocked
-name nothing
-x 76
-y 63
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 63
 end
-arch blocked
-x 76
-y 63
-end
-arch blocked
-name nothing
-x 76
-y 64
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 64
 end
-arch blocked
-x 76
-y 64
-end
-arch blocked
-name nothing
-x 76
-y 65
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 65
 end
-arch blocked
-x 76
-y 65
-end
-arch blocked
-name nothing
-x 76
-y 66
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 66
 end
-arch blocked
-x 76
-y 66
-end
-arch blocked
-name nothing
-x 76
-y 67
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 67
 end
-arch blocked
-x 76
-y 67
-end
-arch blocked
-name nothing
-x 76
-y 68
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 68
 end
-arch blocked
-x 76
-y 68
-end
-arch blocked
-name nothing
-x 76
-y 69
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 69
 end
-arch blocked
-x 76
-y 69
-end
-arch blocked
-name nothing
-x 76
-y 70
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 70
 end
-arch blocked
-x 76
-y 70
-end
-arch blocked
-name nothing
-x 76
-y 71
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 71
 end
-arch blocked
-x 76
-y 71
-end
-arch blocked
-name nothing
-x 76
-y 72
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 72
 end
-arch blocked
-x 76
-y 72
-end
-arch blocked
-name nothing
-x 76
-y 73
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 73
 end
-arch blocked
-x 76
-y 73
-end
-arch blocked
-name nothing
-x 76
-y 74
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 76
 y 74
 end
-arch blocked
-x 76
-y 74
-end
-arch blocked
-name nothing
-x 76
-y 75
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 76
-y 75
-end
-arch blocked
+arch cave_15
 x 76
 y 75
 end
@@ -101769,105 +98900,27 @@ arch cave17
 x 77
 y 62
 end
-arch blocked
-name nothing
-x 77
-y 63
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 77
 y 63
 end
-arch blocked
-x 77
-y 63
-end
-arch blocked
-name nothing
-x 77
-y 64
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 77
 y 64
 end
-arch blocked
-x 77
-y 64
-end
-arch blocked
-name nothing
-x 77
-y 65
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 77
 y 65
 end
-arch blocked
-x 77
-y 65
-end
-arch blocked
-name nothing
-x 77
-y 66
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 77
 y 66
 end
-arch blocked
-x 77
-y 66
-end
-arch blocked
-name nothing
-x 77
-y 67
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch cave_15
 x 77
 y 67
 end
-arch blocked
-x 77
-y 67
-end
-arch blocked
-name nothing
-x 77
-y 68
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 77
-y 68
-end
-arch blocked
+arch cave_15
 x 77
 y 68
 end
