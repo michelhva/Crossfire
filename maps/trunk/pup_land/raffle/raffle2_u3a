@@ -10,7 +10,7 @@ enter_x 10
 enter_y 13
 msg
 Created:  1997-04-03
-Modified: 2008-10-25 Rick Tanner
+Modified: 2011-10-31 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -77,37 +77,37 @@ end
 arch small_stones
 y 11
 end
-arch blocked
+arch cave_15
 y 11
 end
 arch small_stones
 y 12
 end
-arch blocked
+arch cave_15
 y 12
 end
 arch small_stones
 y 13
 end
-arch blocked
+arch cave_15
 y 13
 end
 arch small_stones
 y 14
 end
-arch blocked
+arch cave_15
 y 14
 end
 arch small_stones
 y 15
 end
-arch blocked
+arch cave24
 y 15
 end
 arch small_stones
 y 16
 end
-arch blocked
+arch cave13
 y 16
 end
 arch small_stones
@@ -187,7 +187,7 @@ arch small_stones
 x 1
 y 10
 end
-arch blocked
+arch cave_15
 x 1
 y 10
 end
@@ -195,7 +195,7 @@ arch small_stones
 x 1
 y 11
 end
-arch blocked
+arch cave_15
 x 1
 y 11
 end
@@ -203,7 +203,7 @@ arch small_stones
 x 1
 y 12
 end
-arch blocked
+arch cave_15
 x 1
 y 12
 end
@@ -211,7 +211,7 @@ arch small_stones
 x 1
 y 13
 end
-arch blocked
+arch cave_15
 x 1
 y 13
 end
@@ -219,7 +219,7 @@ arch dungeon_magic
 x 1
 y 14
 end
-arch blocked
+arch cave_15
 x 1
 y 14
 end
@@ -243,7 +243,7 @@ arch small_stones
 x 1
 y 17
 end
-arch cave2
+arch cave15
 x 1
 y 17
 end
@@ -314,7 +314,7 @@ arch small_stones
 x 2
 y 10
 end
-arch blocked
+arch cave_15
 x 2
 y 10
 end
@@ -322,7 +322,7 @@ arch small_stones
 x 2
 y 11
 end
-arch blocked
+arch cave_15
 x 2
 y 11
 end
@@ -330,7 +330,7 @@ arch small_stones
 x 2
 y 12
 end
-arch blocked
+arch cave_15
 x 2
 y 12
 end
@@ -338,7 +338,7 @@ arch small_stones
 x 2
 y 13
 end
-arch blocked
+arch cave_15
 x 2
 y 13
 end
@@ -346,7 +346,7 @@ arch dungeon_magic
 x 2
 y 14
 end
-arch blocked
+arch cave_15
 x 2
 y 14
 end
@@ -449,7 +449,7 @@ arch small_stones
 x 3
 y 10
 end
-arch blocked
+arch cave_15
 x 3
 y 10
 end
@@ -457,7 +457,7 @@ arch small_stones
 x 3
 y 11
 end
-arch blocked
+arch cave_15
 x 3
 y 11
 end
@@ -465,7 +465,7 @@ arch small_stones
 x 3
 y 12
 end
-arch blocked
+arch cave_15
 x 3
 y 12
 end
@@ -473,7 +473,7 @@ arch small_stones
 x 3
 y 13
 end
-arch blocked
+arch cave_15
 x 3
 y 13
 end
@@ -481,7 +481,7 @@ arch dungeon_magic
 x 3
 y 14
 end
-arch blocked
+arch cave_15
 x 3
 y 14
 end
@@ -584,7 +584,7 @@ arch dungeon_magic
 x 4
 y 9
 end
-arch blocked
+arch cave_15
 x 4
 y 9
 end
@@ -592,7 +592,7 @@ arch dungeon_magic
 x 4
 y 10
 end
-arch blocked
+arch cave_15
 x 4
 y 10
 end
@@ -600,7 +600,7 @@ arch dungeon_magic
 x 4
 y 11
 end
-arch blocked
+arch cave_15
 x 4
 y 11
 end
@@ -608,7 +608,7 @@ arch dungeon_magic
 x 4
 y 12
 end
-arch blocked
+arch cave_15
 x 4
 y 12
 end
@@ -616,7 +616,7 @@ arch dungeon_magic
 x 4
 y 13
 end
-arch blocked
+arch cave_15
 x 4
 y 13
 end
@@ -624,7 +624,7 @@ arch dungeon_magic
 x 4
 y 14
 end
-arch blocked
+arch cave_15
 x 4
 y 14
 end
@@ -1070,7 +1070,7 @@ arch small_stones
 x 7
 y 17
 end
-arch blocked
+arch cave_15
 x 7
 y 17
 end
@@ -1149,7 +1149,7 @@ arch dungeon_magic
 x 8
 y 9
 end
-arch blocked
+arch cave_15
 x 8
 y 9
 end
@@ -1157,7 +1157,7 @@ arch dungeon_magic
 x 8
 y 10
 end
-arch blocked
+arch cave_15
 x 8
 y 10
 end
@@ -1165,7 +1165,7 @@ arch dungeon_magic
 x 8
 y 11
 end
-arch blocked
+arch cave_15
 x 8
 y 11
 end
@@ -1173,7 +1173,7 @@ arch dungeon_magic
 x 8
 y 12
 end
-arch blocked
+arch cave_15
 x 8
 y 12
 end
@@ -1181,7 +1181,7 @@ arch dungeon_magic
 x 8
 y 13
 end
-arch blocked
+arch cave_15
 x 8
 y 13
 end
@@ -1189,7 +1189,7 @@ arch dungeon_magic
 x 8
 y 14
 end
-arch blocked
+arch cave_15
 x 8
 y 14
 end
@@ -1197,7 +1197,7 @@ arch dungeon_magic
 x 8
 y 15
 end
-arch blocked
+arch cave_15
 x 8
 y 15
 end
@@ -1205,7 +1205,7 @@ arch dungeon_magic
 x 8
 y 16
 end
-arch blocked
+arch cave_15
 x 8
 y 16
 end
@@ -1213,7 +1213,7 @@ arch dungeon_magic
 x 8
 y 17
 end
-arch blocked
+arch cave_15
 x 8
 y 17
 end
@@ -1358,7 +1358,7 @@ arch small_stones
 x 9
 y 17
 end
-arch blocked
+arch cave_15
 x 9
 y 17
 end
@@ -1706,7 +1706,7 @@ arch dungeon_magic
 x 12
 y 9
 end
-arch blocked
+arch cave_15
 x 12
 y 9
 end
@@ -1714,7 +1714,7 @@ arch dungeon_magic
 x 12
 y 10
 end
-arch blocked
+arch cave_15
 x 12
 y 10
 end
@@ -1722,7 +1722,7 @@ arch dungeon_magic
 x 12
 y 11
 end
-arch blocked
+arch cave_15
 x 12
 y 11
 end
@@ -1730,7 +1730,7 @@ arch dungeon_magic
 x 12
 y 12
 end
-arch blocked
+arch cave_15
 x 12
 y 12
 end
@@ -1738,7 +1738,7 @@ arch dungeon_magic
 x 12
 y 13
 end
-arch blocked
+arch cave_15
 x 12
 y 13
 end
@@ -1746,7 +1746,7 @@ arch dungeon_magic
 x 12
 y 14
 end
-arch blocked
+arch cave_15
 x 12
 y 14
 end
@@ -1847,7 +1847,7 @@ arch small_stones
 x 13
 y 10
 end
-arch blocked
+arch cave_15
 x 13
 y 10
 end
@@ -1855,7 +1855,7 @@ arch small_stones
 x 13
 y 11
 end
-arch blocked
+arch cave_15
 x 13
 y 11
 end
@@ -1863,7 +1863,7 @@ arch small_stones
 x 13
 y 12
 end
-arch blocked
+arch cave_15
 x 13
 y 12
 end
@@ -1871,7 +1871,7 @@ arch small_stones
 x 13
 y 13
 end
-arch blocked
+arch cave_15
 x 13
 y 13
 end
@@ -1879,7 +1879,7 @@ arch dungeon_magic
 x 13
 y 14
 end
-arch blocked
+arch cave_15
 x 13
 y 14
 end
@@ -1978,7 +1978,7 @@ arch small_stones
 x 14
 y 11
 end
-arch blocked
+arch cave_15
 x 14
 y 11
 end
@@ -1986,7 +1986,7 @@ arch small_stones
 x 14
 y 12
 end
-arch blocked
+arch cave_15
 x 14
 y 12
 end
@@ -1994,7 +1994,7 @@ arch small_stones
 x 14
 y 13
 end
-arch blocked
+arch cave_15
 x 14
 y 13
 end
@@ -2002,7 +2002,7 @@ arch dungeon_magic
 x 14
 y 14
 end
-arch blocked
+arch cave_15
 x 14
 y 14
 end
@@ -2103,7 +2103,7 @@ arch small_stones
 x 15
 y 11
 end
-arch blocked
+arch cave_15
 x 15
 y 11
 end
@@ -2111,7 +2111,7 @@ arch small_stones
 x 15
 y 12
 end
-arch blocked
+arch cave_15
 x 15
 y 12
 end
@@ -2119,7 +2119,7 @@ arch small_stones
 x 15
 y 13
 end
-arch blocked
+arch cave_15
 x 15
 y 13
 end
@@ -2127,7 +2127,7 @@ arch dungeon_magic
 x 15
 y 14
 end
-arch blocked
+arch cave_15
 x 15
 y 14
 end
@@ -2147,7 +2147,7 @@ arch small_stones
 x 15
 y 17
 end
-arch cave2
+arch cave16
 x 15
 y 17
 end
@@ -2230,7 +2230,7 @@ arch small_stones
 x 16
 y 11
 end
-arch blocked
+arch cave_15
 x 16
 y 11
 end
@@ -2238,7 +2238,7 @@ arch small_stones
 x 16
 y 12
 end
-arch blocked
+arch cave_15
 x 16
 y 12
 end
@@ -2246,7 +2246,7 @@ arch small_stones
 x 16
 y 13
 end
-arch blocked
+arch cave_15
 x 16
 y 13
 end
@@ -2254,7 +2254,7 @@ arch small_stones
 x 16
 y 14
 end
-arch blocked
+arch cave_15
 x 16
 y 14
 end
@@ -2262,7 +2262,7 @@ arch small_stones
 x 16
 y 15
 end
-arch blocked
+arch cave25
 x 16
 y 15
 end
@@ -2270,7 +2270,7 @@ arch small_stones
 x 16
 y 16
 end
-arch blocked
+arch cave14
 x 16
 y 16
 end
