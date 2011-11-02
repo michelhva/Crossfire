@@ -11,7 +11,7 @@ enter_x 7
 enter_y 10
 msg
 Created:  2000-10-18
-Modified: 2011-10-10 Rick Tanner
+Modified: 2011-11-01 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1391,6 +1391,13 @@ randomitems none
 unpaid 1
 identified 1
 arch spell_marking_rune
+end
+end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_spark_shower
 end
 end
 end
