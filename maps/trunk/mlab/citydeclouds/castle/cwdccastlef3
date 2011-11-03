@@ -19801,11 +19801,11 @@ arch dungeon_floor
 x 28
 y 33
 end
-arch swall_1_1
+arch cwall_1_2
 x 28
 y 33
 end
-arch cwall_1_2
+arch swall_1_1_half
 x 28
 y 33
 end
@@ -20086,11 +20086,11 @@ arch dungeon_floor
 x 28
 y 65
 end
-arch swall_1_1
+arch cwall_1_2
 x 28
 y 65
 end
-arch cwall_1_2
+arch swall_1_1_half
 x 28
 y 65
 end
@@ -24889,11 +24889,11 @@ arch dungeon_floor
 x 34
 y 40
 end
-arch swall_2_2_3
+arch cwall_1_3
 x 34
 y 40
 end
-arch cwall_1_3
+arch swall_1_1_half
 x 34
 y 40
 end
@@ -30784,11 +30784,11 @@ arch flagstone
 x 42
 y 34
 end
-arch swall_2_1_2
+arch dwall_2_2_1
 x 42
 y 34
 end
-arch dwall_2_2_1
+arch swall_1_3_half
 x 42
 y 34
 end
@@ -33244,11 +33244,11 @@ arch flagstone
 x 45
 y 34
 end
-arch swall_2_1_2
+arch dwall_2_2_1
 x 45
 y 34
 end
-arch dwall_2_2_1
+arch swall_1_3_half
 x 45
 y 34
 end
@@ -35830,11 +35830,11 @@ arch flagstone
 x 48
 y 34
 end
-arch swall_2_1_2
+arch dwall_2_2_1
 x 48
 y 34
 end
-arch dwall_2_2_1
+arch swall_1_3_half
 x 48
 y 34
 end
@@ -38402,11 +38402,11 @@ arch flagstone
 x 51
 y 34
 end
-arch swall_2_1_2
+arch dwall_2_2_1
 x 51
 y 34
 end
-arch dwall_2_2_1
+arch swall_1_3_half
 x 51
 y 34
 end
@@ -40873,11 +40873,11 @@ arch flagstone
 x 54
 y 34
 end
-arch swall_2_1_2
+arch dwall_2_2_1
 x 54
 y 34
 end
-arch dwall_2_2_1
+arch swall_1_3_half
 x 54
 y 34
 end
@@ -43346,11 +43346,11 @@ arch flagstone
 x 57
 y 34
 end
-arch swall_2_1_2
+arch dwall_2_2_1
 x 57
 y 34
 end
-arch dwall_2_2_1
+arch swall_1_3_half
 x 57
 y 34
 end
@@ -45552,11 +45552,11 @@ arch dungeon_floor
 x 60
 y 34
 end
-arch swall_2_2_4
+arch cwall_1_2
 x 60
 y 34
 end
-arch cwall_1_2
+arch swall_1_3_half
 x 60
 y 34
 end
@@ -47867,11 +47867,11 @@ arch dungeon_floor
 x 63
 y 35
 end
-arch swall_1_1
+arch cwall_1_2
 x 63
 y 35
 end
-arch cwall_1_2
+arch swall_1_1_half
 x 63
 y 35
 end
@@ -50353,14 +50353,14 @@ arch dungeon_floor
 x 66
 y 40
 end
-arch swall_2_2_2
-x 66
-y 40
-end
 arch cwall_1_4
 x 66
 y 40
 end
+arch swall_1_1_half
+x 66
+y 40
+end
 arch flagstone
 x 66
 y 41
@@ -50385,11 +50385,11 @@ arch flagstone
 x 66
 y 43
 end
-arch swall_2_1_1
+arch dwall_2_2_1
 x 66
 y 43
 end
-arch dwall_2_2_1
+arch swall_1_1_half
 x 66
 y 43
 end
@@ -50417,11 +50417,11 @@ arch flagstone
 x 66
 y 46
 end
-arch swall_2_1_1
+arch dwall_2_2_1
 x 66
 y 46
 end
-arch dwall_2_2_1
+arch swall_1_1_half
 x 66
 y 46
 end
@@ -50449,11 +50449,11 @@ arch flagstone
 x 66
 y 49
 end
-arch swall_2_1_1
+arch dwall_2_2_1
 x 66
 y 49
 end
-arch dwall_2_2_1
+arch swall_1_1_half
 x 66
 y 49
 end
@@ -50481,11 +50481,11 @@ arch flagstone
 x 66
 y 52
 end
-arch swall_2_1_1
+arch dwall_2_2_1
 x 66
 y 52
 end
-arch dwall_2_2_1
+arch swall_1_1_half
 x 66
 y 52
 end
@@ -50513,11 +50513,11 @@ arch flagstone
 x 66
 y 55
 end
-arch swall_2_1_1
+arch dwall_2_2_1
 x 66
 y 55
 end
-arch dwall_2_2_1
+arch swall_1_1_half
 x 66
 y 55
 end
@@ -50545,11 +50545,11 @@ arch flagstone
 x 66
 y 58
 end
-arch swall_2_1_1
+arch dwall_2_2_1
 x 66
 y 58
 end
-arch dwall_2_2_1
+arch swall_1_1_half
 x 66
 y 58
 end
@@ -52017,6 +52017,10 @@ arch cwall_2_2_1
 x 68
 y 29
 end
+arch swall_1_1_half
+x 68
+y 29
+end
 arch light4
 x 68
 y 30
@@ -52026,7 +52030,7 @@ name woodfloor
 x 68
 y 30
 end
-arch swall_1_1
+arch swall_2_1_1
 x 68
 y 30
 end
@@ -55473,11 +55477,11 @@ arch dungeon_floor
 x 72
 y 33
 end
-arch swall_1_1
+arch cwall_1_2
 x 72
 y 33
 end
-arch cwall_1_2
+arch swall_1_1_half
 x 72
 y 33
 end
@@ -55766,11 +55770,11 @@ arch dungeon_floor
 x 72
 y 65
 end
-arch swall_1_1
+arch cwall_1_2
 x 72
 y 65
 end
-arch cwall_1_2
+arch swall_1_1_half
 x 72
 y 65
 end
