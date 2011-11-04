@@ -9,7 +9,7 @@ enter_x 18
 enter_y 18
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-15 Rick Tanner
+Modified: 2011-11-03 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -789,7 +789,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 5
 y 13
 end
@@ -1019,7 +1018,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 5
 y 50
 end
@@ -1192,7 +1190,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 6
 y 13
 end
@@ -1306,7 +1303,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 6
 y 50
 end
@@ -1993,7 +1989,6 @@ y 61
 end
 arch skree
 name hynin skree
-name_pl greater skree
 hp 10000
 maxhp 10000
 exp 900000
@@ -2048,7 +2043,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 10
 end
@@ -2058,7 +2052,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 11
 end
@@ -2068,7 +2061,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 12
 end
@@ -2078,7 +2070,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 13
 end
@@ -2088,7 +2079,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 14
 end
@@ -2098,7 +2088,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 15
 end
@@ -2108,7 +2097,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 16
 end
@@ -2174,7 +2162,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 47
 end
@@ -2184,7 +2171,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 48
 end
@@ -2194,7 +2180,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 49
 end
@@ -2204,7 +2189,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 50
 end
@@ -2214,7 +2198,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 51
 end
@@ -2224,7 +2207,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 52
 end
@@ -2234,7 +2216,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 53
 end
@@ -2319,7 +2300,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 10
 end
@@ -2329,7 +2309,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 11
 end
@@ -2339,7 +2318,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 12
 end
@@ -2349,7 +2327,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 13
 end
@@ -2359,7 +2336,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 14
 end
@@ -2369,7 +2345,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 15
 end
@@ -2379,7 +2354,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 16
 end
@@ -2453,7 +2427,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 47
 end
@@ -2463,7 +2436,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 48
 end
@@ -2473,7 +2445,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 49
 end
@@ -2483,7 +2454,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 50
 end
@@ -2493,7 +2463,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 51
 end
@@ -2503,7 +2472,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 52
 end
@@ -2513,7 +2481,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 53
 end
@@ -2559,7 +2526,6 @@ y 61
 end
 arch skree
 name devi skree
-name_pl greater skree
 hp 8000
 maxhp 8000
 dam 75
@@ -2617,7 +2583,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 10
 end
@@ -2627,7 +2592,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 11
 end
@@ -2637,7 +2601,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 12
 end
@@ -2647,7 +2610,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 13
 end
@@ -2657,7 +2619,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 14
 end
@@ -2667,7 +2628,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 15
 end
@@ -2677,7 +2637,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 16
 end
@@ -2771,7 +2730,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 47
 end
@@ -2781,7 +2739,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 48
 end
@@ -2791,7 +2748,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 49
 end
@@ -2801,7 +2757,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 50
 end
@@ -2811,7 +2766,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 51
 end
@@ -2821,7 +2775,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 52
 end
@@ -2831,7 +2784,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 53
 end
@@ -2896,7 +2848,6 @@ y 5
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 5
 end
@@ -2906,7 +2857,6 @@ y 5
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 6
 end
@@ -2932,7 +2882,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 10
 end
@@ -2942,7 +2891,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 11
 end
@@ -2952,7 +2900,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 12
 end
@@ -2962,7 +2909,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 13
 end
@@ -2972,7 +2918,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 14
 end
@@ -2982,7 +2927,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 15
 end
@@ -2992,7 +2936,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 16
 end
@@ -3018,7 +2961,6 @@ y 19
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 20
 end
@@ -3036,7 +2978,6 @@ y 21
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 21
 end
@@ -3050,7 +2991,6 @@ y 42
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 42
 end
@@ -3060,7 +3000,6 @@ y 42
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 43
 end
@@ -3086,7 +3025,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 47
 end
@@ -3096,7 +3034,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 48
 end
@@ -3106,7 +3043,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 49
 end
@@ -3116,7 +3052,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 50
 end
@@ -3126,7 +3061,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 51
 end
@@ -3136,7 +3070,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 52
 end
@@ -3146,7 +3079,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 53
 end
@@ -3172,7 +3104,6 @@ y 56
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 57
 end
@@ -3186,7 +3117,6 @@ y 58
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 58
 end
@@ -3200,7 +3130,6 @@ y 61
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -3262,7 +3191,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 10
 end
@@ -3272,7 +3200,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 11
 end
@@ -3282,7 +3209,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 12
 end
@@ -3292,7 +3218,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 13
 end
@@ -3302,7 +3227,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 14
 end
@@ -3312,7 +3236,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 15
 end
@@ -3322,7 +3245,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 16
 end
@@ -3400,7 +3322,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 47
 end
@@ -3410,7 +3331,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 48
 end
@@ -3420,7 +3340,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 49
 end
@@ -3430,7 +3349,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 50
 end
@@ -3440,7 +3358,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 51
 end
@@ -3450,7 +3367,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 52
 end
@@ -3460,7 +3376,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 53
 end
@@ -3553,7 +3468,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 10
 end
@@ -3563,7 +3477,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 11
 end
@@ -3573,7 +3486,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 12
 end
@@ -3583,7 +3495,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 13
 end
@@ -3593,7 +3504,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 14
 end
@@ -3603,7 +3513,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 15
 end
@@ -3613,7 +3522,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 16
 end
@@ -3699,7 +3607,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 47
 end
@@ -3709,7 +3616,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 48
 end
@@ -3719,7 +3625,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 49
 end
@@ -3729,7 +3634,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 50
 end
@@ -3739,7 +3643,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 51
 end
@@ -3749,7 +3652,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 52
 end
@@ -3759,7 +3661,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 53
 end
@@ -3805,7 +3706,6 @@ y 61
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -3855,7 +3755,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 10
 end
@@ -3865,7 +3764,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 11
 end
@@ -3875,7 +3773,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 12
 end
@@ -3885,7 +3782,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 13
 end
@@ -3895,7 +3791,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 14
 end
@@ -3905,7 +3800,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 15
 end
@@ -3915,7 +3809,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 16
 end
@@ -3981,7 +3874,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 47
 end
@@ -3991,7 +3883,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 48
 end
@@ -4001,7 +3892,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 49
 end
@@ -4011,7 +3901,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 50
 end
@@ -4021,7 +3910,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 51
 end
@@ -4031,7 +3919,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 52
 end
@@ -4041,7 +3928,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 53
 end
@@ -4079,7 +3965,6 @@ y 61
 end
 arch nazgul
 name capital nazgul
-name_pl capital nazgul
 hp 2000
 maxhp 2000
 exp 7000
@@ -4297,7 +4182,6 @@ y 62
 end
 arch barrel
 name wall
-name_pl wall
 face awall_5.111
 x 17
 y 63
@@ -4515,7 +4399,6 @@ y 61
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 18
@@ -4523,7 +4406,6 @@ y 62
 end
 arch door_2
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 18
@@ -4726,7 +4608,6 @@ y 62
 end
 arch sign
 name torch
-name_pl torch
 face torch_lit1.111
 x 19
 y 63
@@ -4797,7 +4678,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 20
 y 13
 end
@@ -4907,7 +4787,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 20
 y 50
 end
@@ -5104,7 +4983,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 21
 y 13
 end
@@ -5338,7 +5216,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 21
 y 50
 end
@@ -6070,7 +5947,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 13
 end
@@ -6328,7 +6204,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 50
 end
@@ -6525,7 +6400,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 43
 y 13
 end
@@ -6631,7 +6505,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 43
 y 50
 end
@@ -7377,7 +7250,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 10
 end
@@ -7387,7 +7259,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 11
 end
@@ -7397,7 +7268,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 12
 end
@@ -7407,7 +7277,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 13
 end
@@ -7417,7 +7286,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 14
 end
@@ -7427,7 +7295,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 15
 end
@@ -7437,7 +7304,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 16
 end
@@ -7511,7 +7377,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 47
 end
@@ -7521,7 +7386,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 48
 end
@@ -7531,7 +7395,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 49
 end
@@ -7541,7 +7404,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 50
 end
@@ -7551,7 +7413,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 51
 end
@@ -7561,7 +7422,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 52
 end
@@ -7571,7 +7431,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 53
 end
@@ -7668,7 +7527,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 10
 end
@@ -7678,7 +7536,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 11
 end
@@ -7688,7 +7545,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 12
 end
@@ -7698,7 +7554,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 13
 end
@@ -7708,7 +7563,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 14
 end
@@ -7718,7 +7572,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 15
 end
@@ -7728,7 +7581,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 16
 end
@@ -7810,7 +7662,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 47
 end
@@ -7820,7 +7671,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 48
 end
@@ -7830,7 +7680,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 49
 end
@@ -7840,7 +7689,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 50
 end
@@ -7850,7 +7698,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 51
 end
@@ -7860,7 +7707,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 52
 end
@@ -7870,7 +7716,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 53
 end
@@ -7971,7 +7816,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 10
 end
@@ -7981,7 +7825,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 11
 end
@@ -7991,7 +7834,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 12
 end
@@ -8001,7 +7843,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 13
 end
@@ -8011,7 +7852,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 14
 end
@@ -8021,7 +7861,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 15
 end
@@ -8031,7 +7870,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 16
 end
@@ -8113,7 +7951,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 47
 end
@@ -8123,7 +7960,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 48
 end
@@ -8133,7 +7969,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 49
 end
@@ -8143,7 +7978,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 50
 end
@@ -8153,7 +7987,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 51
 end
@@ -8163,7 +7996,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 52
 end
@@ -8173,7 +8005,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 53
 end
@@ -8258,7 +8089,6 @@ y 5
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 5
 end
@@ -8268,7 +8098,6 @@ y 5
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 6
 end
@@ -8294,7 +8123,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 10
 end
@@ -8304,7 +8132,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 11
 end
@@ -8314,7 +8141,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 12
 end
@@ -8324,7 +8150,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 13
 end
@@ -8338,7 +8163,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 14
 end
@@ -8348,7 +8172,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 15
 end
@@ -8358,7 +8181,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 16
 end
@@ -8384,7 +8206,6 @@ y 19
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 20
 end
@@ -8402,7 +8223,6 @@ y 21
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 21
 end
@@ -8420,7 +8240,6 @@ y 42
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 42
 end
@@ -8430,7 +8249,6 @@ y 42
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 43
 end
@@ -8456,7 +8274,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 47
 end
@@ -8466,7 +8283,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 48
 end
@@ -8476,7 +8292,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 49
 end
@@ -8486,7 +8301,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 50
 end
@@ -8496,7 +8310,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 51
 end
@@ -8506,7 +8319,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 52
 end
@@ -8516,7 +8328,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 53
 end
@@ -8542,7 +8353,6 @@ y 56
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 57
 end
@@ -8560,7 +8370,6 @@ y 58
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 58
 end
@@ -8637,7 +8446,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 10
 end
@@ -8647,7 +8455,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 11
 end
@@ -8657,7 +8464,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 12
 end
@@ -8667,7 +8473,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 13
 end
@@ -8677,7 +8482,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 14
 end
@@ -8687,7 +8491,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 15
 end
@@ -8697,7 +8500,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 16
 end
@@ -8795,7 +8597,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 47
 end
@@ -8805,7 +8606,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 48
 end
@@ -8815,7 +8615,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 49
 end
@@ -8825,7 +8624,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 50
 end
@@ -8835,7 +8633,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 51
 end
@@ -8845,7 +8642,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 52
 end
@@ -8855,7 +8651,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 53
 end
@@ -8956,7 +8751,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 10
 end
@@ -8966,7 +8760,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 11
 end
@@ -8976,7 +8769,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 12
 end
@@ -8986,7 +8778,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 13
 end
@@ -8996,7 +8787,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 14
 end
@@ -9006,7 +8796,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 15
 end
@@ -9016,7 +8805,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 16
 end
@@ -9094,7 +8882,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 47
 end
@@ -9104,7 +8891,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 48
 end
@@ -9114,7 +8900,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 49
 end
@@ -9124,7 +8909,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 50
 end
@@ -9134,7 +8918,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 51
 end
@@ -9144,7 +8927,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 52
 end
@@ -9154,7 +8936,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 53
 end
@@ -9255,7 +9036,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 10
 end
@@ -9265,7 +9045,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 11
 end
@@ -9275,7 +9054,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 12
 end
@@ -9285,7 +9063,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 13
 end
@@ -9295,7 +9072,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 14
 end
@@ -9305,7 +9081,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 15
 end
@@ -9315,7 +9090,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 16
 end
@@ -9389,7 +9163,6 @@ y 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 47
 end
@@ -9399,7 +9172,6 @@ y 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 48
 end
@@ -9409,7 +9181,6 @@ y 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 49
 end
@@ -9419,7 +9190,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 50
 end
@@ -9429,7 +9199,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 51
 end
@@ -9439,7 +9208,6 @@ y 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 52
 end
@@ -9449,7 +9217,6 @@ y 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 53
 end
@@ -10221,7 +9988,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 13
 end
@@ -10331,7 +10097,6 @@ y 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 50
 end
@@ -10548,7 +10313,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 13
 end
@@ -10814,7 +10578,6 @@ y 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 50
 end
