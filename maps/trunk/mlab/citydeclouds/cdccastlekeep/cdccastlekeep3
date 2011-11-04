@@ -730,14 +730,14 @@ arch flagstone
 x 4
 y 8
 end
-arch swall_1_1
-x 4
-y 8
-end
 arch mine5
 x 4
 y 8
 end
+arch swall_1_1_half
+x 4
+y 8
+end
 arch dungeon_magic
 x 4
 y 9
@@ -758,11 +758,15 @@ arch flagstone
 x 4
 y 10
 end
-arch swall_2_1_1
+arch swall_1_2_half
 x 4
 y 10
 end
 arch mine0
+x 4
+y 10
+end
+arch swall_1_1_half
 x 4
 y 10
 end
