@@ -17427,6 +17427,10 @@ name stonefloor
 x 26
 y 53
 end
+arch swall_1_4_half
+x 26
+y 53
+end
 arch stwall_2_1_1
 x 26
 y 53
@@ -17458,6 +17462,10 @@ y 55
 end
 arch stonefloor2
 name stonefloor
+x 26
+y 55
+end
+arch swall_1_4_half
 x 26
 y 55
 end
@@ -17998,7 +18006,7 @@ arch slevel_3_3
 x 27
 y 53
 end
-arch swall_1_4
+arch swall_2_1_2
 x 27
 y 53
 end
@@ -18015,7 +18023,7 @@ arch slevel_3_1
 x 27
 y 55
 end
-arch swall_1_4
+arch swall_2_1_2
 x 27
 y 55
 end
