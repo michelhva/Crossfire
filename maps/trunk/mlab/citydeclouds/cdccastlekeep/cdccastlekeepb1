@@ -2908,11 +2908,15 @@ name stonefloor
 x 12
 y 7
 end
-arch swall_2_2_3
+arch mine0
 x 12
 y 7
 end
-arch mine0
+arch swall_1_3_half
+x 12
+y 7
+end
+arch swall_1_1_half
 x 12
 y 7
 end
