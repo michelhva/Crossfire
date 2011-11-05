@@ -4,7 +4,7 @@ region portjoseph
 width 50
 height 50
 msg
-Modified: 2010-06-01 Kevin Bulgrien
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_100_115
@@ -6187,7 +6187,7 @@ arch brush
 x 25
 y 18
 end
-arch ford_we
+arch river_ford_we
 x 25
 y 18
 end
@@ -6744,7 +6744,7 @@ arch pstone_1
 x 27
 y 23
 end
-arch ford_ns
+arch river_ford_ns
 x 27
 y 23
 end
@@ -7017,7 +7017,7 @@ arch pstone_1
 x 28
 y 25
 end
-arch ford_ns
+arch river_ford_ns
 x 28
 y 25
 end
@@ -7049,7 +7049,7 @@ arch swamp
 x 28
 y 31
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 28
 y 31
 end
@@ -7235,7 +7235,7 @@ arch director_3
 x 29
 y 17
 end
-arch ford_we
+arch river_ford_we
 x 29
 y 17
 end
@@ -7243,7 +7243,7 @@ arch pstone_1
 x 29
 y 18
 end
-arch rjunct_ns-se
+arch river_junct_ns-se
 x 29
 y 18
 end
@@ -7474,7 +7474,7 @@ arch sea
 x 30
 y 13
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 30
 y 13
 end
@@ -7581,7 +7581,7 @@ arch brush
 x 30
 y 29
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 30
 y 29
 end
@@ -7597,7 +7597,7 @@ arch swamp
 x 30
 y 31
 end
-arch ford_we
+arch river_ford_we
 x 30
 y 31
 end
@@ -7609,7 +7609,7 @@ arch swamp
 x 30
 y 32
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 30
 y 32
 end

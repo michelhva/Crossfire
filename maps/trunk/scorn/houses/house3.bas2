@@ -8,7 +8,7 @@ enter_x 8
 enter_y 18
 msg
 Created:  2005-03-23 Huhanhi
-Modified: 2011-09-10 crossfire
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -513,7 +513,7 @@ arch dungeon_floor
 x 2
 y 17
 end
-arch bridge_we
+arch river_bridge_we
 x 2
 y 17
 end
@@ -1125,7 +1125,7 @@ arch flagstone
 x 6
 y 5
 end
-arch rjunct_we-s
+arch river_junct_we-s
 x 6
 y 5
 end

@@ -8,7 +8,7 @@ enter_x 18
 enter_y 11
 msg
 Created:  1999-01-28 Cater & Wade (john_cater@yahoo.com)
-Modified: 2008-11-20 Rick Tanner
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -7485,7 +7485,7 @@ arch grassmedium
 x 22
 y 22
 end
-arch bridge_ns
+arch river_bridge_ns
 x 22
 y 22
 end
@@ -7617,7 +7617,7 @@ arch grassmedium
 x 22
 y 47
 end
-arch bridge_ns
+arch river_bridge_ns
 x 22
 y 47
 end
@@ -7747,7 +7747,7 @@ arch grassmedium
 x 23
 y 20
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 23
 y 20
 end
@@ -7755,7 +7755,7 @@ arch grassmedium
 x 23
 y 21
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 23
 y 21
 end
@@ -7767,7 +7767,7 @@ arch tree4
 x 23
 y 22
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 23
 y 22
 end
@@ -7907,7 +7907,7 @@ arch grassmedium
 x 23
 y 45
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 23
 y 45
 end
@@ -7915,7 +7915,7 @@ arch grassmedium
 x 23
 y 46
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 23
 y 46
 end
@@ -7927,7 +7927,7 @@ arch tree4
 x 23
 y 47
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 23
 y 47
 end
@@ -15627,7 +15627,7 @@ arch grassmedium
 x 47
 y 22
 end
-arch bridge_ns
+arch river_bridge_ns
 x 47
 y 22
 end
@@ -15759,7 +15759,7 @@ arch grassmedium
 x 47
 y 47
 end
-arch bridge_ns
+arch river_bridge_ns
 x 47
 y 47
 end
@@ -15889,7 +15889,7 @@ arch grassmedium
 x 48
 y 20
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 48
 y 20
 end
@@ -15897,7 +15897,7 @@ arch grassmedium
 x 48
 y 21
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 48
 y 21
 end
@@ -15909,7 +15909,7 @@ arch tree4
 x 48
 y 22
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 48
 y 22
 end
@@ -16049,7 +16049,7 @@ arch grassmedium
 x 48
 y 45
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 48
 y 45
 end
@@ -16057,7 +16057,7 @@ arch grassmedium
 x 48
 y 46
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 48
 y 46
 end
@@ -16069,7 +16069,7 @@ arch tree4
 x 48
 y 47
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 48
 y 47
 end

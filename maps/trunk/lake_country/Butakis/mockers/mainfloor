@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-10-30 Rick Tanner
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -2170,7 +2170,7 @@ arch grass
 x 7
 y 22
 end
-arch bridge_ns
+arch river_bridge_ns
 x 7
 y 22
 end
@@ -4728,7 +4728,7 @@ arch grass
 x 15
 y 25
 end
-arch bridge_ns
+arch river_bridge_ns
 x 15
 y 25
 end
@@ -6566,7 +6566,7 @@ arch grass
 x 21
 y 4
 end
-arch bridge_we
+arch river_bridge_we
 x 21
 y 4
 end

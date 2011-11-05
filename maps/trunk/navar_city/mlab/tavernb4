@@ -10,7 +10,7 @@ enter_x 9
 enter_y 9
 msg
 Created:  2002-02-20 mikeeusa
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch cave_15
@@ -57,7 +57,7 @@ end
 arch small_stones
 y 13
 end
-arch rjunct_we-se
+arch river_junct_we-se
 y 13
 end
 arch small_stones
@@ -1241,7 +1241,7 @@ arch small_stones
 x 5
 y 14
 end
-arch rcrook_we-sw
+arch river_crook_we-sw
 x 5
 y 14
 end
@@ -1448,7 +1448,7 @@ arch small_stones
 x 6
 y 14
 end
-arch rjunct_we-sw
+arch river_junct_we-sw
 x 6
 y 14
 end
@@ -5266,7 +5266,7 @@ arch small_stones
 x 22
 y 10
 end
-arch bridge_ns
+arch river_bridge_ns
 x 22
 y 10
 end

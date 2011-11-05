@@ -9,7 +9,7 @@ enter_x 34
 enter_y 2
 msg
 Created:  2002-08-23 Andreas Vogl
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch cave_15
@@ -379,7 +379,7 @@ arch pstone_1
 x 1
 y 24
 end
-arch ford_ns
+arch river_ford_ns
 x 1
 y 24
 end
@@ -4924,7 +4924,7 @@ arch pstone_1
 x 17
 y 25
 end
-arch rjunct_we-se
+arch river_junct_we-se
 x 17
 y 25
 end
@@ -5251,7 +5251,7 @@ arch pstone_1
 x 18
 y 25
 end
-arch rcrook_we-se
+arch river_crook_we-se
 x 18
 y 25
 end
@@ -7216,7 +7216,7 @@ arch pstone_1
 x 25
 y 26
 end
-arch rjunct_we-ne
+arch river_junct_we-ne
 x 25
 y 26
 end
@@ -7494,7 +7494,7 @@ arch pstone_1
 x 26
 y 26
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 x 26
 y 26
 end

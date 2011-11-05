@@ -4,7 +4,7 @@ region scorn
 width 50
 height 50
 msg
-Modified: 2010-05-13 Nicolas Weeger
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_104_115
@@ -13064,7 +13064,7 @@ arch flagstone
 x 48
 y 3
 end
-arch rjunct_ns-ne
+arch river_junct_ns-ne
 x 48
 y 3
 end
@@ -13108,7 +13108,7 @@ arch cobblestones2
 x 48
 y 6
 end
-arch bridge_we
+arch river_bridge_we
 x 48
 y 6
 end
@@ -13121,7 +13121,7 @@ arch cobblestones2
 x 48
 y 7
 end
-arch bridge_we
+arch river_bridge_we
 x 48
 y 7
 end
@@ -13174,7 +13174,7 @@ x 48
 y 11
 elevation 11762
 end
-arch rjunct_we-n
+arch river_junct_we-n
 x 48
 y 11
 end

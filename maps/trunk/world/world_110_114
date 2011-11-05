@@ -3,7 +3,7 @@ name world_110_114
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_110_113
@@ -4801,7 +4801,7 @@ x 16
 y 46
 elevation 3187
 end
-arch bridge_we
+arch river_bridge_we
 x 16
 y 46
 elevation 3187
@@ -4811,7 +4811,7 @@ x 16
 y 47
 elevation 2899
 end
-arch rjunct_ns-se
+arch river_junct_ns-se
 x 16
 y 47
 elevation 2899
@@ -4821,7 +4821,7 @@ x 16
 y 48
 elevation 3743
 end
-arch rcrook_ns-se
+arch river_crook_ns-se
 x 16
 y 48
 elevation 3743
@@ -6514,7 +6514,7 @@ arch woods5
 x 22
 y 2
 end
-arch rcrook_we-nw
+arch river_crook_we-nw
 x 22
 y 2
 end
@@ -6808,7 +6808,7 @@ arch woods5
 x 23
 y 2
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 x 23
 y 2
 end

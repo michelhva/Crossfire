@@ -5,7 +5,7 @@ height 14
 enter_y 10
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2008-06-03 Arvid Norlander
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch mountain2
@@ -31,7 +31,7 @@ end
 arch grass
 y 7
 end
-arch rcrook_we-nw
+arch river_crook_we-nw
 y 7
 end
 arch grass
@@ -92,7 +92,7 @@ arch grass
 x 1
 y 7
 end
-arch rcrook_we-ne
+arch river_crook_we-ne
 x 1
 y 7
 end
@@ -159,7 +159,7 @@ arch grass
 x 2
 y 7
 end
-arch rcrook_we-sw
+arch river_crook_we-sw
 x 2
 y 7
 end
@@ -222,7 +222,7 @@ arch grass
 x 3
 y 7
 end
-arch rcrook_we-se
+arch river_crook_we-se
 x 3
 y 7
 end
@@ -285,7 +285,7 @@ arch grass
 x 4
 y 7
 end
-arch rjunct_we-ne
+arch river_junct_we-ne
 x 4
 y 7
 end
@@ -356,7 +356,7 @@ arch grass
 x 5
 y 7
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 x 5
 y 7
 end
@@ -431,7 +431,7 @@ arch grass
 x 6
 y 7
 end
-arch bridge_ns
+arch river_bridge_ns
 x 6
 y 7
 end
@@ -506,7 +506,7 @@ arch grass
 x 7
 y 7
 end
-arch rjunct_we-s
+arch river_junct_we-s
 x 7
 y 7
 end
@@ -569,7 +569,7 @@ arch grass
 x 8
 y 7
 end
-arch rcrook_we-nw
+arch river_crook_we-nw
 x 8
 y 7
 end
@@ -640,7 +640,7 @@ arch grass
 x 9
 y 7
 end
-arch rcrook_we-ne
+arch river_crook_we-ne
 x 9
 y 7
 end
@@ -718,7 +718,7 @@ arch grass
 x 10
 y 7
 end
-arch rjunct_we-ne
+arch river_junct_we-ne
 x 10
 y 7
 end
@@ -798,7 +798,7 @@ arch grass
 x 11
 y 7
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 x 11
 y 7
 end
@@ -873,7 +873,7 @@ arch grass
 x 12
 y 7
 end
-arch bridge_ns
+arch river_bridge_ns
 x 12
 y 7
 end
@@ -952,7 +952,7 @@ arch grass
 x 13
 y 7
 end
-arch rjunct_we-se
+arch river_junct_we-se
 x 13
 y 7
 end

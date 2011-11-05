@@ -8,7 +8,7 @@ enter_x 2
 enter_y 1
 msg
 Created:  1993-11-01
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch cave24
@@ -3843,7 +3843,7 @@ arch pstone_1
 x 23
 y 20
 end
-arch rcrook_we-sw
+arch river_crook_we-sw
 x 23
 y 20
 end
@@ -3982,7 +3982,7 @@ arch pstone_1
 x 24
 y 20
 end
-arch rjunct_we-sw
+arch river_junct_we-sw
 x 24
 y 20
 end

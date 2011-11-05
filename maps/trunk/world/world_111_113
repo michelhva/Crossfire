@@ -3,7 +3,7 @@ name world_111_113
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_111_112
@@ -204,7 +204,7 @@ end
 arch evergreens2
 y 42
 end
-arch rcrook_we-sw
+arch river_crook_we-sw
 y 42
 end
 arch grass_only
@@ -494,7 +494,7 @@ arch evergreens2
 x 1
 y 42
 end
-arch rjunct_we-sw
+arch river_junct_we-sw
 x 1
 y 42
 end
