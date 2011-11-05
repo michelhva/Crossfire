@@ -8,7 +8,7 @@ msg
 Created:  1996-02-07
 Updated 2007.11.12 by Gene Alexander
  - make this an outdoor map for day/night/weather
-Modified: 2009-10-23 Andreas Kirschbaum
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -2345,7 +2345,7 @@ arch pstone_1
 x 14
 y 3
 end
-arch bridge_ns
+arch river_bridge_ns
 x 14
 y 3
 end
@@ -2491,7 +2491,7 @@ arch pstone_1
 x 15
 y 3
 end
-arch bridge_ns
+arch river_bridge_ns
 x 15
 y 3
 end

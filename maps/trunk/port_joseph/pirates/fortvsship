@@ -8,7 +8,7 @@ enter_x 3
 enter_y 27
 msg
 Created:  1994-05-27 langley (langley@fermat.dartmouth.edu)
-Modified: 2009-07-16 Kevin Bulgrien
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -1237,7 +1237,7 @@ arch pstone_1
 x 6
 y 15
 end
-arch rjunct_ns-ne
+arch river_junct_ns-ne
 x 6
 y 15
 end
@@ -1245,7 +1245,7 @@ arch pstone_1
 x 6
 y 16
 end
-arch ford_we
+arch river_ford_we
 x 6
 y 16
 end

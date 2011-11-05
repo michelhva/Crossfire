@@ -6,7 +6,7 @@ enter_x 39
 enter_y 39
 msg
 Created:  1999-02-18 King Zoobus
-Modified: 2009-10-23 Andreas Kirschbaum
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch desert
@@ -6649,7 +6649,7 @@ x 32
 y 26
 move_block all -boat -walk
 end
-arch bridge_ns
+arch river_bridge_ns
 x 32
 y 26
 move_on walk

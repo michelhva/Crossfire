@@ -8,6 +8,7 @@ enter_y 2
 msg
 Created:  2005-07-17 K. Ahlers
 Mail: info@knutshome.de
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -3895,7 +3896,7 @@ arch grass
 x 14
 y 26
 end
-arch bridge_ns
+arch river_bridge_ns
 x 14
 y 26
 end
@@ -3911,7 +3912,7 @@ arch grass
 x 14
 y 29
 end
-arch bridge_ns
+arch river_bridge_ns
 x 14
 y 29
 end
@@ -3927,7 +3928,7 @@ arch grass
 x 14
 y 32
 end
-arch bridge_ns
+arch river_bridge_ns
 x 14
 y 32
 end
@@ -3943,7 +3944,7 @@ arch grass
 x 14
 y 35
 end
-arch bridge_ns
+arch river_bridge_ns
 x 14
 y 35
 end
@@ -3959,7 +3960,7 @@ arch grass
 x 14
 y 38
 end
-arch bridge_ns
+arch river_bridge_ns
 x 14
 y 38
 end
@@ -6968,7 +6969,7 @@ arch grass
 x 27
 y 32
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 27
 y 32
 end
@@ -7190,7 +7191,7 @@ arch grass
 x 28
 y 32
 end
-arch rjunct_ns-e
+arch river_junct_ns-e
 x 28
 y 32
 end

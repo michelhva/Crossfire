@@ -4,7 +4,7 @@ width 40
 height 28
 msg
 Created:  1999-02-26 King Zoobus
-Modified: 2009-10-23 Andreas Kirschbaum
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch woods
@@ -36,7 +36,7 @@ end
 arch grass
 y 7
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 y 7
 end
 arch brush
@@ -149,7 +149,7 @@ arch grass
 x 1
 y 7
 end
-arch bridge_ns
+arch river_bridge_ns
 x 1
 y 7
 end
@@ -590,7 +590,7 @@ arch grassmedium
 x 4
 y 7
 end
-arch rcrook_we-ne
+arch river_crook_we-ne
 x 4
 y 7
 end
@@ -732,7 +732,7 @@ arch grassmedium
 x 5
 y 7
 end
-arch rcrook_we-nw
+arch river_crook_we-nw
 x 5
 y 7
 end
@@ -854,7 +854,7 @@ arch grassmedium
 x 6
 y 7
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 x 6
 y 7
 end

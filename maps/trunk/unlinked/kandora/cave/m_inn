@@ -5,12 +5,12 @@ height 14
 enter_y 10
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2008-06-03 Arvid Norlander
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch grass
 end
-arch rjunct_we-ne
+arch river_junct_we-ne
 end
 arch grass
 y 1
@@ -90,7 +90,7 @@ end
 arch grass
 x 1
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 x 1
 end
 arch grass
@@ -168,7 +168,7 @@ end
 arch grass
 x 2
 end
-arch rjunct_we-se
+arch river_junct_we-se
 x 2
 end
 arch grass
@@ -267,7 +267,7 @@ end
 arch grass
 x 3
 end
-arch rcrook_we-se
+arch river_crook_we-se
 x 3
 end
 arch grass
@@ -366,7 +366,7 @@ end
 arch grass
 x 4
 end
-arch rjunct_we-ne
+arch river_junct_we-ne
 x 4
 end
 arch grass
@@ -448,7 +448,7 @@ end
 arch grass
 x 5
 end
-arch rcrook_we-ne
+arch river_crook_we-ne
 x 5
 end
 arch grass
@@ -534,7 +534,7 @@ end
 arch grass
 x 6
 end
-arch rjunct_we-se
+arch river_junct_we-se
 x 6
 end
 arch grass
@@ -612,7 +612,7 @@ end
 arch grass
 x 7
 end
-arch rjunct_we-sw
+arch river_junct_we-sw
 x 7
 end
 arch grass

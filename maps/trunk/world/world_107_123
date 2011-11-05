@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2011-10-30 Rick Tanner
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -6229,7 +6229,7 @@ arch flagstone
 x 23
 y 13
 end
-arch bridge_we
+arch river_bridge_we
 x 23
 y 13
 end
@@ -6436,7 +6436,7 @@ arch flagstone
 x 23
 y 37
 end
-arch bridge_we
+arch river_bridge_we
 x 23
 y 37
 end
@@ -6990,7 +6990,7 @@ arch flagstone
 x 25
 y 19
 end
-arch bridge_we
+arch river_bridge_we
 x 25
 y 19
 end
@@ -7070,7 +7070,7 @@ arch flagstone
 x 25
 y 30
 end
-arch bridge_we
+arch river_bridge_we
 x 25
 y 30
 end

@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2011-08-31 Rick Tanner
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -8069,7 +8069,7 @@ x 30
 y 13
 elevation -7
 end
-arch rcrook_ns-ne
+arch river_crook_ns-ne
 x 30
 y 13
 end
@@ -8078,7 +8078,7 @@ x 30
 y 14
 elevation 80
 end
-arch rjunct_ns-ne
+arch river_junct_ns-ne
 x 30
 y 14
 end
@@ -9653,7 +9653,7 @@ x 35
 y 40
 elevation 8124
 end
-arch bridge_ns
+arch river_bridge_ns
 x 35
 y 40
 end
@@ -10250,7 +10250,7 @@ x 37
 y 39
 elevation 9122
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 37
 y 39
 end
@@ -10259,7 +10259,7 @@ x 37
 y 40
 elevation 8571
 end
-arch rcrook_ns-sw
+arch river_crook_ns-sw
 x 37
 y 40
 end
@@ -10425,7 +10425,7 @@ x 38
 y 18
 elevation 2154
 end
-arch rjunct_ns-ne
+arch river_junct_ns-ne
 x 38
 y 18
 end
@@ -10515,7 +10515,7 @@ x 38
 y 28
 elevation 8478
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 38
 y 28
 end
@@ -10524,7 +10524,7 @@ x 38
 y 29
 elevation 9503
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 38
 y 29
 end
@@ -10542,7 +10542,7 @@ x 38
 y 31
 elevation 9387
 end
-arch bridge_we
+arch river_bridge_we
 x 38
 y 31
 end
@@ -13198,7 +13198,7 @@ arch cobblestones2
 x 45
 y 26
 end
-arch bridge_we
+arch river_bridge_we
 x 45
 y 26
 end
@@ -13558,7 +13558,7 @@ arch cobblestones2
 x 46
 y 22
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 46
 y 22
 end
@@ -13582,7 +13582,7 @@ arch cobblestones2
 x 46
 y 24
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 46
 y 24
 end
@@ -13594,7 +13594,7 @@ arch cobblestones2
 x 46
 y 25
 end
-arch rcrook_ns-sw
+arch river_crook_ns-sw
 x 46
 y 25
 end
@@ -13606,7 +13606,7 @@ arch cobblestones2
 x 46
 y 26
 end
-arch bridge_we
+arch river_bridge_we
 x 46
 y 26
 end
@@ -13618,7 +13618,7 @@ arch cobblestones2
 x 46
 y 27
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 46
 y 27
 end
@@ -13630,7 +13630,7 @@ arch cobblestones2
 x 46
 y 28
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 46
 y 28
 end
@@ -13642,7 +13642,7 @@ arch cobblestones2
 x 46
 y 29
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 46
 y 29
 end

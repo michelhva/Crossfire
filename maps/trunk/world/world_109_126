@@ -8,7 +8,7 @@ height 50
 enter_x 25
 enter_y 25
 msg
-Modified: 2011-04-23 Rick Tanner
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_109_125
@@ -3665,7 +3665,7 @@ arch grass
 x 14
 y 22
 end
-arch rjunct_ns-e
+arch river_junct_ns-e
 x 14
 y 22
 end
@@ -3673,7 +3673,7 @@ arch brush
 x 14
 y 23
 end
-arch bridge_we
+arch river_bridge_we
 x 14
 y 23
 end
@@ -4036,7 +4036,7 @@ arch grass
 x 15
 y 29
 end
-arch bridge_we
+arch river_bridge_we
 x 15
 y 29
 end
@@ -4044,7 +4044,7 @@ arch grass
 x 15
 y 30
 end
-arch rjunct_ns-e
+arch river_junct_ns-e
 x 15
 y 30
 end
@@ -4076,7 +4076,7 @@ arch grass
 x 15
 y 34
 end
-arch rjunct_ns-se
+arch river_junct_ns-se
 x 15
 y 34
 end
@@ -4084,7 +4084,7 @@ arch grass
 x 15
 y 35
 end
-arch rcrook_ns-se
+arch river_crook_ns-se
 x 15
 y 35
 end
@@ -4099,7 +4099,7 @@ x 15
 y 36
 move_block 0
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 15
 y 36
 move_block 0
@@ -4280,7 +4280,7 @@ arch grass
 x 16
 y 22
 end
-arch bridge_ns
+arch river_bridge_ns
 x 16
 y 22
 end
@@ -4336,7 +4336,7 @@ arch grass
 x 16
 y 30
 end
-arch bridge_ns
+arch river_bridge_ns
 x 16
 y 30
 end
@@ -4380,7 +4380,7 @@ arch grass
 x 16
 y 36
 end
-arch rjunct_ns-se
+arch river_junct_ns-se
 x 16
 y 36
 end
@@ -4389,7 +4389,7 @@ x 16
 y 37
 move_block 0
 end
-arch rcrook_ns-se
+arch river_crook_ns-se
 x 16
 y 37
 end
@@ -5477,7 +5477,7 @@ arch grass
 x 20
 y 28
 end
-arch bridge_we
+arch river_bridge_we
 x 20
 y 28
 end

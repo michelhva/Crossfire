@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2011-10-13 Rick Tanner
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -1640,7 +1640,7 @@ x 4
 y 23
 elevation 1688
 end
-arch bridge_we
+arch river_bridge_we
 x 4
 y 23
 end
@@ -2966,7 +2966,7 @@ arch cobblestones2
 x 8
 y 12
 end
-arch bridge_we
+arch river_bridge_we
 x 8
 y 12
 end
@@ -2978,7 +2978,7 @@ arch cobblestones2
 x 8
 y 13
 end
-arch bridge_we
+arch river_bridge_we
 x 8
 y 13
 end
@@ -3307,7 +3307,7 @@ arch cobblestones2
 x 9
 y 8
 end
-arch bridge_we
+arch river_bridge_we
 x 9
 y 8
 end
@@ -4991,7 +4991,7 @@ arch cobblestones2
 x 14
 y 5
 end
-arch bridge_ns
+arch river_bridge_ns
 x 14
 y 5
 end
@@ -5301,7 +5301,7 @@ arch cobblestones2
 x 15
 y 5
 end
-arch bridge_ns
+arch river_bridge_ns
 x 15
 y 5
 end
@@ -6003,7 +6003,7 @@ arch cobblestones2
 x 17
 y 5
 end
-arch bridge_ns
+arch river_bridge_ns
 x 17
 y 5
 end
