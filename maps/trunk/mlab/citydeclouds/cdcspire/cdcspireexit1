@@ -9,7 +9,7 @@ enter_x 1
 enter_y 3
 msg
 Created:  2004-02-27 mikeeusa
-Modified: 2008-10-15 Rick Tanner
+Modified: 2011-11-04 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -112,7 +112,6 @@ y 2
 end
 arch altar_trigger
 name demon
-name_pl demon
 slaying largenugget
 food 1
 x 1
@@ -122,7 +121,6 @@ connected 66615
 end
 arch altar_trigger
 name hellhound
-name_pl hellhound
 slaying sulphur
 food 1
 x 1
@@ -132,7 +130,6 @@ connected 66625
 end
 arch altar_trigger
 name raas
-name_pl raas
 slaying ruby
 food 1
 x 1
@@ -142,7 +139,6 @@ connected 66635
 end
 arch altar_trigger
 name imp
-name_pl imp
 slaying smallnugget
 food 1
 x 1
@@ -152,7 +148,6 @@ connected 66645
 end
 arch altar_trigger
 name evilmaster
-name_pl evilmaster
 slaying bat_wing
 food 1
 x 1
@@ -162,7 +157,6 @@ connected 66655
 end
 arch altar_trigger
 name shadow
-name_pl shadow
 slaying rose_white
 food 1
 x 1
@@ -172,7 +166,6 @@ connected 66665
 end
 arch altar_trigger
 name meddemon
-name_pl meddemon
 slaying apple
 food 1
 x 1
@@ -182,7 +175,6 @@ connected 66675
 end
 arch altar_trigger
 name balrog
-name_pl balrog
 slaying demon_head
 food 1
 x 1
@@ -192,7 +184,6 @@ connected 66685
 end
 arch altar_trigger
 name fireelemental
-name_pl fireelemental
 food 1
 x 1
 y 2
@@ -201,7 +192,6 @@ connected 66695
 end
 arch altar_trigger
 name ghost
-name_pl ghost
 slaying mint
 food 1
 x 1
@@ -219,7 +209,6 @@ y 3
 end
 arch altar_trigger
 name demon
-name_pl demon
 slaying largenugget
 food 1
 x 1
@@ -229,7 +218,6 @@ connected 66614
 end
 arch altar_trigger
 name hellhound
-name_pl hellhound
 slaying sulphur
 food 1
 x 1
@@ -239,7 +227,6 @@ connected 66624
 end
 arch altar_trigger
 name raas
-name_pl raas
 slaying ruby
 food 1
 x 1
@@ -249,7 +236,6 @@ connected 66634
 end
 arch altar_trigger
 name imp
-name_pl imp
 slaying smallnugget
 food 1
 x 1
@@ -259,7 +245,6 @@ connected 66644
 end
 arch altar_trigger
 name evilmaster
-name_pl evilmaster
 slaying salt
 food 1
 x 1
@@ -269,7 +254,6 @@ connected 66654
 end
 arch altar_trigger
 name shadow
-name_pl shadow
 slaying rose_pink
 food 1
 x 1
@@ -279,7 +263,6 @@ connected 66664
 end
 arch altar_trigger
 name meddemon
-name_pl meddemon
 slaying apple
 food 1
 x 1
@@ -289,7 +272,6 @@ connected 66674
 end
 arch altar_trigger
 name balrog
-name_pl balrog
 slaying mace_2
 food 1
 x 1
@@ -299,7 +281,6 @@ connected 66684
 end
 arch altar_trigger
 name fireelemental
-name_pl fireelemental
 food 1
 x 1
 y 3
@@ -308,7 +289,6 @@ connected 66694
 end
 arch altar_trigger
 name ghost
-name_pl ghost
 slaying mint
 food 1
 x 1
@@ -431,7 +411,6 @@ y 1
 end
 arch altar_trigger
 name demon
-name_pl demon
 slaying largenugget
 food 1
 x 2
@@ -441,7 +420,6 @@ connected 66611
 end
 arch altar_trigger
 name hellhound
-name_pl hellhound
 slaying ruby
 food 1
 x 2
@@ -451,7 +429,6 @@ connected 66621
 end
 arch altar_trigger
 name raas
-name_pl raas
 slaying rock2
 food 1
 x 2
@@ -461,7 +438,6 @@ connected 66631
 end
 arch altar_trigger
 name imp
-name_pl imp
 slaying smallnugget
 food 1
 x 2
@@ -471,7 +447,6 @@ connected 66641
 end
 arch altar_trigger
 name evilmaster
-name_pl evilmaster
 slaying bat_wing
 food 1
 x 2
@@ -481,7 +456,6 @@ connected 66651
 end
 arch altar_trigger
 name shadow
-name_pl shadow
 slaying rose_white
 food 1
 x 2
@@ -491,7 +465,6 @@ connected 66661
 end
 arch altar_trigger
 name meddemon
-name_pl meddemon
 slaying sulphur
 food 1
 x 2
@@ -501,7 +474,6 @@ connected 66671
 end
 arch altar_trigger
 name balrog
-name_pl balrog
 slaying demon_head
 food 1
 x 2
@@ -511,7 +483,6 @@ connected 66681
 end
 arch altar_trigger
 name fireelemental
-name_pl balrog
 food 1
 x 2
 y 1
@@ -520,7 +491,6 @@ connected 66691
 end
 arch altar_trigger
 name ghost
-name_pl balrog
 slaying mint
 food 1
 x 2
@@ -538,7 +508,6 @@ y 2
 end
 arch creator
 name demon
-name_pl demon
 other_arch devil
 x 2
 y 2
@@ -546,7 +515,6 @@ connected 99961
 end
 arch creator
 name hellhound
-name_pl hellhound
 other_arch hellhound
 x 2
 y 2
@@ -554,7 +522,6 @@ connected 99962
 end
 arch creator
 name raas
-name_pl raas
 other_arch raas
 x 2
 y 2
@@ -562,7 +529,6 @@ connected 99963
 end
 arch creator
 name imp
-name_pl hellhound
 other_arch imp
 x 2
 y 2
@@ -570,7 +536,6 @@ connected 99964
 end
 arch creator
 name evilmaster
-name_pl evilmaster
 other_arch evil_master1
 x 2
 y 2
@@ -578,7 +543,6 @@ connected 99965
 end
 arch creator
 name shadow
-name_pl shadow
 other_arch shadow
 x 2
 y 2
@@ -586,7 +550,6 @@ connected 99966
 end
 arch creator
 name meddemon
-name_pl meddemon
 other_arch medium_demon
 x 2
 y 2
@@ -594,7 +557,6 @@ connected 99967
 end
 arch creator
 name balrog
-name_pl balrog
 other_arch Balrog
 x 2
 y 2
@@ -602,7 +564,6 @@ connected 99968
 end
 arch creator
 name fireelemental
-name_pl balrog
 other_arch fire_elemental
 x 2
 y 2
@@ -610,7 +571,6 @@ connected 99969
 end
 arch creator
 name ghost
-name_pl balrog
 other_arch ghost
 x 2
 y 2
@@ -731,7 +691,6 @@ y 2
 end
 arch altar_trigger
 name demon
-name_pl demon
 slaying largenugget
 food 1
 x 3
@@ -741,7 +700,6 @@ connected 66612
 end
 arch altar_trigger
 name hellhound
-name_pl hellhound
 slaying ruby
 food 1
 x 3
@@ -751,7 +709,6 @@ connected 66622
 end
 arch altar_trigger
 name raas
-name_pl raas
 slaying rock2
 food 1
 x 3
@@ -761,7 +718,6 @@ connected 66632
 end
 arch altar_trigger
 name imp
-name_pl imp
 slaying smallnugget
 food 1
 x 3
@@ -771,7 +727,6 @@ connected 66642
 end
 arch altar_trigger
 name evilmaster
-name_pl evilmaster
 slaying salt
 food 1
 x 3
@@ -781,7 +736,6 @@ connected 66652
 end
 arch altar_trigger
 name shadow
-name_pl shadow
 slaying rose_red
 food 1
 x 3
@@ -791,7 +745,6 @@ connected 66662
 end
 arch altar_trigger
 name meddemon
-name_pl meddemon
 slaying sulphur
 food 1
 x 3
@@ -801,7 +754,6 @@ connected 66672
 end
 arch altar_trigger
 name balrog
-name_pl balrog
 slaying apple
 food 1
 x 3
@@ -811,7 +763,6 @@ connected 66682
 end
 arch altar_trigger
 name fireelemental
-name_pl balrog
 food 1
 x 3
 y 2
@@ -820,7 +771,6 @@ connected 66692
 end
 arch altar_trigger
 name ghost
-name_pl balrog
 slaying mint
 food 1
 x 3
@@ -838,7 +788,6 @@ y 3
 end
 arch altar_trigger
 name demon
-name_pl demon
 slaying largenugget
 food 1
 x 3
@@ -848,7 +797,6 @@ connected 66613
 end
 arch altar_trigger
 name hellhound
-name_pl hellhound
 slaying sulphur
 food 1
 x 3
@@ -858,7 +806,6 @@ connected 66623
 end
 arch altar_trigger
 name raas
-name_pl raas
 slaying rock2
 food 1
 x 3
@@ -868,7 +815,6 @@ connected 66633
 end
 arch altar_trigger
 name imp
-name_pl imp
 slaying smallnugget
 food 1
 x 3
@@ -878,7 +824,6 @@ connected 66643
 end
 arch altar_trigger
 name evilmaster
-name_pl evilmaster
 slaying gem
 food 1
 x 3
@@ -888,7 +833,6 @@ connected 66653
 end
 arch altar_trigger
 name shadow
-name_pl shadow
 slaying rose_yellow
 food 1
 x 3
@@ -898,7 +842,6 @@ connected 66663
 end
 arch altar_trigger
 name meddemon
-name_pl meddemon
 slaying apple
 food 1
 x 3
@@ -908,7 +851,6 @@ connected 66673
 end
 arch altar_trigger
 name balrog
-name_pl balrog
 slaying ruby
 food 1
 x 3
@@ -918,7 +860,6 @@ connected 66683
 end
 arch altar_trigger
 name fireelemental
-name_pl balrog
 food 1
 x 3
 y 3
@@ -927,7 +868,6 @@ connected 66693
 end
 arch altar_trigger
 name ghost
-name_pl balrog
 slaying mint
 food 1
 x 3
