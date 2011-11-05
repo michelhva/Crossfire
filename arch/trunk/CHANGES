@@ -15,7 +15,7 @@ Pixel and color clean up for the pipe (weapon) graphic.
 weapon/other/pipe.base.111.png
 RJT 2011-10-20
 
-Color updates to make the dungeon wall sections the same color. 
+Color updates to make the dungeon wall sections the same color.
 (#010101 vs #000000)
 wall/dun/dun_10.base.111.png
 wall/dun/dun_20.base.111.png
@@ -51,7 +51,7 @@ cave_23.face
 cave_23.arc
 RJT 2011-10-17
 
-New graphics, faces and archetypes for the carved cave wall. They match the 
+New graphics, faces and archetypes for the carved cave wall. They match the
 existing cave wall coloring, and do not stand out like the (black) mine graphics.
 cave_21.base.111.png
 cave_17.base.111.png
@@ -95,14 +95,14 @@ wall/bench/bench_A.base.111.png
 wall/bench/bench_C.base.111.png
 RJT 2011-10-12
 
-Refactored holy_word graphics to resolve transparency issue as reported under bug 
+Refactored holy_word graphics to resolve transparency issue as reported under bug
 ID 3330490 - PNG Transparency.
 spell/Cone/turnundead.base.111.png
 spell/Cone/turnundead.base.112.png
 spell/Cone/turnundead.base.113.png
 RJT 2011-10-10
 
-Add additional pixel to the roof line to the cwall-west and cwall-red Guard Houses 
+Add additional pixel to the roof line to the cwall-west and cwall-red Guard Houses
 so they merge nicer with nearby wall sections.
 wall/cwall-west/westguard_ho_2.base.111.png
 wall/cwall-red/redguard_ho_2.base.111.png
@@ -116,7 +116,7 @@ Refactor and pixel color clean up of RL House 2 (rl_house2) graphic.
 construct/town/rl_house2.base.x11.png
 RJT 2011-09-18
 
-Touch up the roof line and other edges of RL House West (rl_house_west) graphic. 
+Touch up the roof line and other edges of RL House West (rl_house_west) graphic.
 construct/town/rl_house_west.base.x11.png
 RJT 2011-09-18
 
@@ -293,7 +293,7 @@ just outside the door on the small tavern graphic.
 construct/house/tavern.base.111.png
 RJT 04-30-2011
 
-House small border tweaks to make it similar to other small houses.  Removed 
+House small border tweaks to make it similar to other small houses.  Removed
 black pixels and replaced them with dark grey.
 construct/house/housesmall.base.111.png
 RJT 04-30-2011
@@ -322,7 +322,7 @@ Refactor and pixel color clean up for the farmhouse graphic.
 construct/house/farmhouse.base.x11.png
 RJT 2011-04-24
 
-Based on feedback - cosmetic changes to the flag on the roof, and some 
+Based on feedback - cosmetic changes to the flag on the roof, and some
 additional pixel touch ups on the 64x64 fort graphic.
 construct/fort/fort.base.x11.png
 RJT 2011-04-23
@@ -383,7 +383,7 @@ shop/store_gene_fant.base.x11.png
 shop/store_weap.base.x11.png
 RJT 2011-04-09
 
-Reworked graphics from previous commit, weird drop shadow like artifact 
+Reworked graphics from previous commit, weird drop shadow like artifact
 appeared for some reason.
 shop/store_magi.base.x11.png
 shop/store_armo.base.x11.png
@@ -396,7 +396,7 @@ shop/store_armo.base.x11.png
 shop/store_alch.base.x11.png
 RJT 2011-04-09
 
-New face or image (shop/store_gems.base.x11.png) and object (shop/store_gems.arc) 
+New face or image (shop/store_gems.base.x11.png) and object (shop/store_gems.arc)
 for a gems/jewels shop, based on the General Store graphic and archetype.
 RJT 2011-04-03
 
