@@ -27,6 +27,8 @@
     <property file="developer.properties"/>
     <property name="src.jxclient" value="src/jxclient"/>
     <property name="src.test" value="src/test"/>
+    <property name="src.network.main" value="network/src/main/java"/>
+    <property name="src.network.test" value="network/src/test/java"/>
     <property name="src.util.main" value="util/src/main/java"/>
     <property name="src.util.test" value="util/src/test/java"/>
     <property name="build" value="build"/>
@@ -35,8 +37,8 @@
     <target name="compile-jxclient">
         <delete dir="${build}/jxclient"/>
         <mkdir dir="${build}/jxclient"/>
-        <depend srcDir="${src.jxclient}:${src.util.main}" destDir="${build}/jxclient" cache="${build}/cache.jxclient" closure="true"/>
-        <javac srcdir="${src.jxclient}:${src.util.main}" destdir="${build}/jxclient" source="1.6" debug="yes" fork="yes" includeantruntime="false">
+        <depend srcDir="${src.jxclient}:${src.network.main}:${src.util.main}" destDir="${build}/jxclient" cache="${build}/cache.jxclient" closure="true"/>
+        <javac srcdir="${src.jxclient}:${src.network.main}:${src.util.main}" destdir="${build}/jxclient" source="1.6" debug="yes" fork="yes" includeantruntime="false">
             <classpath>
                 <pathelement location="lib/annotations.jar"/>
             </classpath>
@@ -46,12 +48,12 @@
     <target name="compile-test" depends="jar">
         <delete dir="${build}/test"/>
         <mkdir dir="${build}/test"/>
-        <depend srcDir="${src.test}:${src.util.test}" destDir="${build}/test" cache="${build}/cache.test" closure="true">
+        <depend srcDir="${src.test}:${src.network.test}:${src.util.test}" destDir="${build}/test" cache="${build}/cache.test" closure="true">
             <classpath>
                 <pathelement location="jxclient.jar"/>
             </classpath>
         </depend>
-        <javac srcdir="${src.test}:${src.util.test}" destdir="${build}/test" source="1.6" debug="yes" fork="yes" includeantruntime="false">
+        <javac srcdir="${src.test}:${src.network.test}:${src.util.test}" destdir="${build}/test" source="1.6" debug="yes" fork="yes" includeantruntime="false">
             <classpath>
                 <pathelement location="jxclient.jar"/>
                 <pathelement location="lib/annotations.jar"/>
@@ -105,6 +107,7 @@
             <formatter type="xml"/>
             <batchtest fork="yes" todir="${build}/reports">
                 <fileset dir="${src.test}" includes="**/*Test.java"/>
+                <fileset dir="${src.network.test}" includes="**/*Test.java"/>
                 <fileset dir="${src.util.test}" includes="**/*Test.java"/>
             </batchtest>
         </junit>
@@ -113,6 +116,7 @@
         <javadoc destdir="doc-html" packagenames="com.realtime.crossfire.*" failonerror="yes" access="private" version="no" use="yes" author="no" splitindex="no" windowtitle="Jikes" nodeprecated="yes" notree="no" noindex="no" nohelp="yes" nonavbar="yes">
             <sourcepath>
                 <pathelement path="${src.jxclient}"/>
+                <pathelement path="${src.network.main}"/>
                 <pathelement path="${src.util.main}"/>
             </sourcepath>
             <classpath>
