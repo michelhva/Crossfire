@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.util;
 
-import com.realtime.crossfire.jxclient.items.ItemListener;
 import java.util.ArrayList;
 import java.util.EventListener;
 import java.util.List;
@@ -36,8 +35,7 @@ public class IndexedEventListenerList<T extends EventListener> {
     private final Class<T> class_;
 
     /**
-     * The registered {@link ItemListener ItemListeners} to be notified about
-     * changes.
+     * The registered listeners to be notified about changes.
      */
     @NotNull
     private final List<EventListenerList2<T>> locationListeners = new ArrayList<EventListenerList2<T>>();

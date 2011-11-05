@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.util;
 
-import com.realtime.crossfire.jxclient.items.ItemListener;
 import java.util.EventListener;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,8 +35,7 @@ public class HashedEventListenerList<T extends EventListener> {
     private final Class<T> class_;
 
     /**
-     * The registered {@link ItemListener ItemListeners} to be notified about
-     * changes.
+     * The registered listener to be notified about changes.
      */
     @NotNull
     private final Map<Integer, EventListenerList2<T>> locationListeners = new HashMap<Integer, EventListenerList2<T>>();
