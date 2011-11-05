@@ -1,4 +1,4 @@
-Object bridge_we
+Object river_bridge_we
 face bridge_37.111
 name bridge
 no_pick 1
