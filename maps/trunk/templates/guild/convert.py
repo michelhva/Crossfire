@@ -41,7 +41,8 @@ if len(sys.argv)>=7:
         if args[7]=="same":
                 args[7]=args[4]
         StorageExit=args[7]
-        StorageX,StorageY=args[8:]
+        StorageX,StorageY=args[8],args[9]
+        GuildName = ' '.join(args[10:])
 
 if local_copy:
   os.system('mkdir '+ToGuild)
@@ -53,6 +54,7 @@ for i in filelist:
         filecontents=filecontents.replace('GUILD_TEMPLATE', ToGuild)
         if Ctl==1:
                 filecontents=filecontents.replace("region Template","region "+ToRegion).replace("TemplateExit", ExitPath).replace("TemplateHP", ExitX).replace("TemplateSP", ExitY).replace("Exit+1X", StorageX).replace("ExitY",StorageY).replace("ExitX",StorageX).replace("ExitPath",StorageExit)
+                filecontents=filecontents.replace("[Template]",GuildName)
 
         if local_copy:
           tofile=open('./'+ToGuild+'/'+i, 'w')
