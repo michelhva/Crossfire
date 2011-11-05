@@ -12,7 +12,7 @@ Creator: majorwoo josh@woosworld.net
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-10-27 Rick Tanner
+Modified: 2011-11-05 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2280,15 +2280,6 @@ x 4
 y 13
 unique 1
 end
-arch dungeon_magic
-x 4
-y 13
-end
-arch woodfloor
-x 4
-y 13
-unique 1
-end
 arch grate_closed_1
 x 4
 y 13
@@ -2801,24 +2792,6 @@ end
 arch dwall_2_2_4
 x 6
 y 4
-end
-arch dungeon_magic
-x 6
-y 5
-end
-arch woodfloor
-x 6
-y 5
-unique 1
-end
-arch dungeon_magic
-x 6
-y 5
-end
-arch woodfloor
-x 6
-y 5
-unique 1
 end
 arch dungeon_magic
 x 6
@@ -4032,15 +4005,6 @@ end
 arch dwall_1_3
 x 10
 y 13
-end
-arch dungeon_magic
-x 10
-y 14
-end
-arch woodfloor
-x 10
-y 14
-unique 1
 end
 arch dungeon_magic
 x 10
