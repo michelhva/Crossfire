@@ -9,7 +9,7 @@ enter_x 7
 enter_y 11
 msg
 Created:  2004-09-03 Mikeeusa
-Modified: 2008-10-18 Rick Tanner
+Modified: 2011-11-04 Rick Tanner
 endmsg
 end
 arch marble
@@ -166,7 +166,6 @@ y 6
 end
 arch booze_table
 name serving wine (20 g.c @)
-name_pl serving wine (20 g.c @)
 other_arch wine
 face chair_1.121
 food 20
@@ -183,7 +182,6 @@ y 7
 end
 arch slotmachine2
 name DwarfHorde
-name_pl DwarfHorde
 food 0
 x 1
 y 7
@@ -205,7 +203,6 @@ y 9
 end
 arch slotmachine1
 name KingMaker
-name_pl KingMaker
 food 0
 x 1
 y 9
@@ -227,7 +224,6 @@ y 11
 end
 arch slotmachine3
 name RoyalHouse
-name_pl GoldenShower
 food 0
 x 1
 y 11
@@ -322,7 +318,6 @@ y 6
 end
 arch booze_table
 name serving wine (20 g.c @)
-name_pl serving wine (20 g.c @)
 other_arch wine
 face chair_1.121
 food 20
@@ -336,7 +331,6 @@ y 7
 end
 arch slotmachine2
 name DwarfHorde
-name_pl DwarfHorde
 food 0
 x 2
 y 7
@@ -358,7 +352,6 @@ y 9
 end
 arch slotmachine1
 name KingMaker
-name_pl KingMaker
 food 0
 x 2
 y 9
@@ -380,7 +373,6 @@ y 11
 end
 arch slotmachine3
 name RoyalHouse
-name_pl GoldenShower
 food 0
 x 2
 y 11
@@ -472,7 +464,6 @@ y 6
 end
 arch booze_table
 name serving wine (20 g.c @)
-name_pl serving wine (20 g.c @)
 other_arch wine
 face chair_1.121
 food 20
@@ -485,7 +476,6 @@ y 7
 end
 arch slotmachine2
 name DwarfHorde
-name_pl DwarfHorde
 food 0
 x 3
 y 7
@@ -507,7 +497,6 @@ y 9
 end
 arch slotmachine1
 name KingMaker
-name_pl KingMaker
 food 0
 x 3
 y 9
@@ -529,7 +518,6 @@ y 11
 end
 arch slotmachine3
 name RoyalHouse
-name_pl GoldenShower
 food 0
 x 3
 y 11
@@ -604,7 +592,6 @@ y 4
 end
 arch man
 name bartender
-name_pl bartender
 x 4
 y 4
 end
@@ -626,7 +613,6 @@ y 6
 end
 arch booze_table
 name serving wine (20 g.c @)
-name_pl serving wine (20 g.c @)
 other_arch wine
 face chair_1.121
 food 20
@@ -640,7 +626,6 @@ y 7
 end
 arch slotmachine2
 name DwarfHorde
-name_pl DwarfHorde
 food 0
 x 4
 y 7
@@ -662,7 +647,6 @@ y 9
 end
 arch slotmachine1
 name KingMaker
-name_pl KingMaker
 food 0
 x 4
 y 9
@@ -684,7 +668,6 @@ y 11
 end
 arch slotmachine3
 name RoyalHouse
-name_pl GoldenShower
 food 0
 x 4
 y 11
@@ -784,7 +767,6 @@ y 6
 end
 arch booze_table
 name serving wine (20 g.c @)
-name_pl serving wine (20 g.c @)
 other_arch wine
 face chair_1.121
 food 20
@@ -797,7 +779,6 @@ y 7
 end
 arch slotmachine2
 name DwarfHorde
-name_pl DwarfHorde
 food 0
 x 5
 y 7
@@ -819,7 +800,6 @@ y 9
 end
 arch slotmachine1
 name KingMaker
-name_pl KingMaker
 food 0
 x 5
 y 9
@@ -841,7 +821,6 @@ y 11
 end
 arch slotmachine3
 name RoyalHouse
-name_pl GoldenShower
 food 0
 x 5
 y 11
@@ -916,7 +895,6 @@ y 4
 end
 arch booze_table
 name serving wine (20 g.c @)
-name_pl serving wine (20 g.c @)
 other_arch wine
 face chair_1.111
 food 20
@@ -930,7 +908,6 @@ y 5
 end
 arch booze_table
 name serving wine (20 g.c @)
-name_pl serving wine (20 g.c @)
 other_arch wine
 face chair_1.111
 food 20
@@ -1047,7 +1024,6 @@ y 7
 end
 arch courier
 name casino owner
-name_pl casino owner
 x 7
 y 7
 end
