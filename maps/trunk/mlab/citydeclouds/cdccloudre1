@@ -9,14 +9,13 @@ enter_x 17
 enter_y 3
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-18 Rick Tanner
+Modified: 2011-11-04 Rick Tanner
 endmsg
 end
 arch dungeon_magic
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 end
 arch woodwall_2_2_2
 end
@@ -25,7 +24,6 @@ y 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 1
 end
 arch woodwall_2_1_1
@@ -36,7 +34,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 2
 end
 arch woodwall_2_1_1
@@ -47,7 +44,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 3
 end
 arch woodwall_2_1_1
@@ -58,7 +54,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 4
 end
 arch woodwall_3_2
@@ -69,7 +64,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 5
 end
 arch woodwall_2_1_1
@@ -80,7 +74,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 6
 end
 arch swall_2_2_2
@@ -94,7 +87,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 7
 end
 arch woodwall_2_1_1
@@ -105,7 +97,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 8
 end
 arch swall_2_2_2
@@ -119,7 +110,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 9
 end
 arch woodwall_2_1_1
@@ -133,7 +123,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 10
 end
 arch swall_2_2_2
@@ -147,7 +136,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 11
 end
 arch woodwall_2_1_1
@@ -158,7 +146,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 12
 end
 arch woodwall_2_2_1
@@ -166,84 +153,72 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 y 13
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 14
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 15
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 16
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 17
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 18
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 19
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 20
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 21
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 22
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 23
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 24
 move_block 0
 blocksview 0
@@ -253,7 +228,6 @@ x 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 end
 arch woodwall_2_1_2
@@ -324,7 +298,6 @@ unique 1
 end
 arch key2
 name Town Haus 1 Key
-name_pl Lot 1 Key
 slaying cwdctownhauskey1
 face key_blue.111
 x 1
@@ -354,7 +327,6 @@ unique 1
 end
 arch key2
 name Town Haus 2 Key
-name_pl Lot 1 Key
 slaying cwdctownhauskey2
 face key_blue.111
 x 1
@@ -384,7 +356,6 @@ unique 1
 end
 arch key2
 name Town Haus 3 Key
-name_pl Lot 1 Key
 slaying cwdctownhauskey3
 face key_blue.111
 x 1
@@ -414,7 +385,6 @@ unique 1
 end
 arch key2
 name Town Haus 4 Key
-name_pl Lot 1 Key
 slaying cwdctownhauskey4
 face key_blue.111
 x 1
@@ -427,7 +397,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 y 12
 end
@@ -437,7 +406,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 13
 move_block 0
@@ -445,7 +413,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 14
 move_block 0
@@ -453,7 +420,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 15
 move_block 0
@@ -461,7 +427,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 16
 move_block 0
@@ -469,7 +434,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 17
 move_block 0
@@ -477,7 +441,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 18
 move_block 0
@@ -485,7 +448,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 19
 move_block 0
@@ -493,7 +455,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 20
 move_block 0
@@ -501,7 +462,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 21
 move_block 0
@@ -509,7 +469,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 22
 move_block 0
@@ -517,7 +476,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 23
 move_block 0
@@ -525,7 +483,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 24
 move_block 0
@@ -536,7 +493,6 @@ x 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 end
 arch woodwall_2_1_2
@@ -602,7 +558,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 5
 end
@@ -630,7 +585,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 7
 end
@@ -658,7 +612,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 9
 end
@@ -700,7 +653,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 12
 end
@@ -710,7 +662,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 13
 move_block 0
@@ -718,7 +669,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 14
 move_block 0
@@ -726,7 +676,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 15
 move_block 0
@@ -738,7 +687,6 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 16
 move_block 0
@@ -746,7 +694,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 17
 move_block 0
@@ -754,7 +701,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 18
 move_block 0
@@ -762,7 +708,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 19
 move_block 0
@@ -770,7 +715,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 20
 move_block 0
@@ -778,7 +722,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 21
 move_block 0
@@ -786,7 +729,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 22
 move_block 0
@@ -794,7 +736,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 23
 move_block 0
@@ -802,7 +743,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 24
 move_block 0
@@ -813,7 +753,6 @@ x 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 end
 arch woodwall_2_1_2
@@ -867,7 +806,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 4
 end
@@ -885,7 +823,6 @@ y 5
 end
 arch goldfloor
 name Town Haus 1: 32000 Diamonds
-name_pl Lot 5: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -901,7 +838,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 6
 end
@@ -915,7 +851,6 @@ y 7
 end
 arch goldfloor
 name Town Haus 2: 32000 Diamonds
-name_pl Lot 5: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -931,7 +866,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 8
 end
@@ -945,7 +879,6 @@ y 9
 end
 arch goldfloor
 name Town Haus 3: 32000 Diamonds
-name_pl Lot 5: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -961,7 +894,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 10
 end
@@ -975,7 +907,6 @@ y 11
 end
 arch goldfloor
 name Town Haus 4: 32000 Diamonds
-name_pl Lot 5: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -991,7 +922,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 12
 end
@@ -1001,7 +931,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 13
 move_block 0
@@ -1009,7 +938,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 14
 move_block 0
@@ -1017,7 +945,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 15
 move_block 0
@@ -1025,7 +952,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 16
 move_block 0
@@ -1033,7 +959,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 17
 move_block 0
@@ -1041,7 +966,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 18
 move_block 0
@@ -1049,7 +973,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 19
 move_block 0
@@ -1057,7 +980,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 20
 move_block 0
@@ -1065,7 +987,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 21
 move_block 0
@@ -1073,7 +994,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 22
 move_block 0
@@ -1081,7 +1001,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 23
 move_block 0
@@ -1089,7 +1008,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 24
 move_block 0
@@ -1104,7 +1022,6 @@ x 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 end
 arch woodwall_2_1_2
@@ -1164,7 +1081,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 5
 end
@@ -1182,7 +1098,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 7
 end
@@ -1200,7 +1115,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 9
 end
@@ -1226,7 +1140,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 12
 end
@@ -1236,7 +1149,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 13
 move_block 0
@@ -1244,7 +1156,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 14
 move_block 0
@@ -1252,7 +1163,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 15
 move_block 0
@@ -1260,7 +1170,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 16
 move_block 0
@@ -1268,7 +1177,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 17
 move_block 0
@@ -1276,7 +1184,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 18
 move_block 0
@@ -1284,7 +1191,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 19
 move_block 0
@@ -1292,7 +1198,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 20
 move_block 0
@@ -1300,7 +1205,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 21
 move_block 0
@@ -1308,7 +1212,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 22
 move_block 0
@@ -1316,7 +1219,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 23
 move_block 0
@@ -1324,7 +1226,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 24
 move_block 0
@@ -1335,7 +1236,6 @@ x 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 end
 arch woodwall_3_3
@@ -1364,7 +1264,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 2
 end
@@ -1390,7 +1289,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 4
 end
@@ -1412,7 +1310,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 6
 end
@@ -1434,7 +1331,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 8
 end
@@ -1452,7 +1348,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 10
 end
@@ -1470,7 +1365,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 12
 end
@@ -1480,7 +1374,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 13
 move_block 0
@@ -1488,7 +1381,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 14
 move_block 0
@@ -1496,7 +1388,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 15
 move_block 0
@@ -1504,7 +1395,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 16
 move_block 0
@@ -1512,7 +1402,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 17
 move_block 0
@@ -1520,7 +1409,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 18
 move_block 0
@@ -1528,7 +1416,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 19
 move_block 0
@@ -1536,7 +1423,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 20
 move_block 0
@@ -1544,7 +1430,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 21
 move_block 0
@@ -1552,7 +1437,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 22
 move_block 0
@@ -1560,7 +1444,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 23
 move_block 0
@@ -1568,7 +1451,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 24
 move_block 0
@@ -1579,7 +1461,6 @@ x 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 end
 arch woodwall_2_1_2
@@ -1612,7 +1493,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 3
 end
@@ -1630,7 +1510,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 5
 end
@@ -1648,7 +1527,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 7
 end
@@ -1666,7 +1544,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 9
 end
@@ -1700,7 +1577,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 12
 end
@@ -1714,7 +1590,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 13
 move_block 0
@@ -1722,7 +1597,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 14
 move_block 0
@@ -1734,7 +1608,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 15
 move_block 0
@@ -1742,7 +1615,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 16
 move_block 0
@@ -1750,7 +1622,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 17
 move_block 0
@@ -1758,7 +1629,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 18
 move_block 0
@@ -1766,7 +1636,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 19
 move_block 0
@@ -1774,7 +1643,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 20
 move_block 0
@@ -1782,7 +1650,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 21
 move_block 0
@@ -1790,7 +1657,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 22
 move_block 0
@@ -1798,7 +1664,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 23
 move_block 0
@@ -1806,7 +1671,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 24
 move_block 0
@@ -1817,7 +1681,6 @@ x 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 end
 arch woodwall_2_1_2
@@ -1837,7 +1700,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 2
 end
@@ -1860,7 +1722,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 4
 end
@@ -1878,7 +1739,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 6
 end
@@ -1896,7 +1756,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 8
 end
@@ -1910,7 +1769,6 @@ y 9
 end
 arch goldfloor
 name Lot 1: 1500 Diamonds
-name_pl Lot 1: 1500 Diamonds
 slaying gem
 msg
 Cha Ching
@@ -1926,7 +1784,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 10
 end
@@ -1947,7 +1804,6 @@ unique 1
 end
 arch key2
 name Lot 1 Key
-name_pl Lot 1 Key
 slaying cdcwlot1key
 face key_blue.111
 x 7
@@ -1960,7 +1816,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 12
 end
@@ -1974,7 +1829,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 13
 move_block 0
@@ -1982,7 +1836,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 14
 move_block 0
@@ -1990,7 +1843,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 15
 move_block 0
@@ -1998,7 +1850,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 16
 move_block 0
@@ -2006,7 +1857,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 17
 move_block 0
@@ -2014,7 +1864,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 18
 move_block 0
@@ -2022,7 +1871,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 19
 move_block 0
@@ -2030,7 +1878,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 20
 move_block 0
@@ -2042,7 +1889,6 @@ y 20
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 21
 move_block 0
@@ -2050,7 +1896,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 22
 move_block 0
@@ -2058,7 +1903,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 23
 move_block 0
@@ -2066,7 +1910,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 24
 move_block 0
@@ -2077,7 +1920,6 @@ x 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 end
 arch woodwall_2_1_2
@@ -2110,7 +1952,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 3
 end
@@ -2128,7 +1969,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 5
 end
@@ -2146,7 +1986,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 7
 end
@@ -2164,7 +2003,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 9
 end
@@ -2198,7 +2036,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 12
 end
@@ -2212,7 +2049,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 13
 move_block 0
@@ -2220,7 +2056,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 14
 move_block 0
@@ -2228,7 +2063,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 15
 move_block 0
@@ -2236,7 +2070,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 16
 move_block 0
@@ -2244,7 +2077,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 17
 move_block 0
@@ -2252,7 +2084,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 18
 move_block 0
@@ -2260,7 +2091,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 19
 move_block 0
@@ -2268,7 +2098,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 20
 move_block 0
@@ -2276,7 +2105,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 21
 move_block 0
@@ -2284,7 +2112,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 22
 move_block 0
@@ -2292,7 +2119,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 23
 move_block 0
@@ -2300,7 +2126,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 24
 move_block 0
@@ -2311,7 +2136,6 @@ x 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 end
 arch woodwall_2_1_2
@@ -2331,7 +2155,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 2
 end
@@ -2354,7 +2177,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 4
 end
@@ -2376,7 +2198,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 6
 end
@@ -2394,7 +2215,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 8
 end
@@ -2408,7 +2228,6 @@ y 9
 end
 arch goldfloor
 name Lot 2: 1500 Diamonds
-name_pl Lot 2: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -2424,7 +2243,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 10
 end
@@ -2445,7 +2263,6 @@ unique 1
 end
 arch key2
 name Lot 2 Key
-name_pl Lot 1 Key
 slaying cdcwlot2key
 face key_blue.111
 x 9
@@ -2458,7 +2275,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 12
 end
@@ -2472,7 +2288,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 13
 move_block 0
@@ -2480,7 +2295,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 14
 move_block 0
@@ -2488,7 +2302,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 15
 move_block 0
@@ -2496,7 +2309,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 16
 move_block 0
@@ -2508,7 +2320,6 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 17
 move_block 0
@@ -2516,7 +2327,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 18
 move_block 0
@@ -2524,7 +2334,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 19
 move_block 0
@@ -2532,7 +2341,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 20
 move_block 0
@@ -2540,7 +2348,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 21
 move_block 0
@@ -2548,7 +2355,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 22
 move_block 0
@@ -2556,7 +2362,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 23
 move_block 0
@@ -2564,7 +2369,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 24
 move_block 0
@@ -2575,7 +2379,6 @@ x 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 end
 arch woodwall_2_1_2
@@ -2591,7 +2394,6 @@ y 1
 end
 arch pirate
 name Al the Real Estate Broker
-name_pl Al the Real Estate Broker
 msg
 @match *
 Hello, we have a wide selection of
@@ -2619,7 +2421,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 3
 end
@@ -2637,7 +2438,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 5
 end
@@ -2655,7 +2455,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 7
 end
@@ -2673,7 +2472,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 9
 end
@@ -2707,7 +2505,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 12
 end
@@ -2721,7 +2518,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 13
 move_block 0
@@ -2729,7 +2525,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 14
 move_block 0
@@ -2737,7 +2532,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 15
 move_block 0
@@ -2745,7 +2539,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 16
 move_block 0
@@ -2753,7 +2546,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 17
 move_block 0
@@ -2761,7 +2553,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 18
 move_block 0
@@ -2769,7 +2560,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 19
 move_block 0
@@ -2777,7 +2567,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 20
 move_block 0
@@ -2785,7 +2574,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 21
 move_block 0
@@ -2793,7 +2581,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 22
 move_block 0
@@ -2801,7 +2588,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 23
 move_block 0
@@ -2809,7 +2595,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 24
 move_block 0
@@ -2820,7 +2605,6 @@ x 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 end
 arch woodwall_2_1_2
@@ -2845,7 +2629,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 2
 end
@@ -2868,7 +2651,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 4
 end
@@ -2886,7 +2668,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 6
 end
@@ -2904,7 +2685,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 8
 end
@@ -2918,7 +2698,6 @@ y 9
 end
 arch goldfloor
 name Lot 3: 1500 Diamonds
-name_pl Lot 3: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -2934,7 +2713,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 10
 end
@@ -2955,7 +2733,6 @@ unique 1
 end
 arch key2
 name Lot 3 Key
-name_pl Lot 1 Key
 slaying cdcwlot3key
 face key_blue.111
 x 11
@@ -2968,7 +2745,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 12
 end
@@ -2982,7 +2758,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 13
 move_block 0
@@ -2990,7 +2765,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 14
 move_block 0
@@ -2998,7 +2772,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 15
 move_block 0
@@ -3006,7 +2779,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 16
 move_block 0
@@ -3014,7 +2786,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 17
 move_block 0
@@ -3022,7 +2793,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 18
 move_block 0
@@ -3030,7 +2800,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 19
 move_block 0
@@ -3038,7 +2807,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 20
 move_block 0
@@ -3046,7 +2814,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 21
 move_block 0
@@ -3054,7 +2821,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 22
 move_block 0
@@ -3066,7 +2832,6 @@ y 22
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 23
 move_block 0
@@ -3074,7 +2839,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 24
 move_block 0
@@ -3085,7 +2849,6 @@ x 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 end
 arch woodwall_2_1_2
@@ -3113,7 +2876,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 3
 end
@@ -3131,7 +2893,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 5
 end
@@ -3149,7 +2910,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 7
 end
@@ -3167,7 +2927,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 9
 end
@@ -3201,7 +2960,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 12
 end
@@ -3215,7 +2973,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 13
 move_block 0
@@ -3223,7 +2980,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 14
 move_block 0
@@ -3231,7 +2987,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 15
 move_block 0
@@ -3243,7 +2998,6 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 16
 move_block 0
@@ -3251,7 +3005,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 17
 move_block 0
@@ -3259,7 +3012,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 18
 move_block 0
@@ -3267,7 +3019,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 19
 move_block 0
@@ -3275,7 +3026,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 20
 move_block 0
@@ -3283,7 +3033,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 21
 move_block 0
@@ -3291,7 +3040,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 22
 move_block 0
@@ -3299,7 +3047,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 23
 move_block 0
@@ -3307,7 +3054,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 24
 move_block 0
@@ -3318,7 +3064,6 @@ x 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 end
 arch woodwall_2_1_2
@@ -3338,7 +3083,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 2
 end
@@ -3356,7 +3100,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 4
 end
@@ -3374,7 +3117,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 6
 end
@@ -3392,7 +3134,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 8
 end
@@ -3406,7 +3147,6 @@ y 9
 end
 arch goldfloor
 name Lot 4: 1500 Diamonds
-name_pl Lot 4: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -3422,7 +3162,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 10
 end
@@ -3443,7 +3182,6 @@ unique 1
 end
 arch key2
 name Lot 4 Key
-name_pl Lot 1 Key
 slaying cdcwlot4key
 face key_blue.111
 x 13
@@ -3456,7 +3194,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 12
 end
@@ -3470,7 +3207,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 13
 move_block 0
@@ -3478,7 +3214,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 14
 move_block 0
@@ -3486,7 +3221,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 15
 move_block 0
@@ -3494,7 +3228,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 16
 move_block 0
@@ -3502,7 +3235,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 17
 move_block 0
@@ -3510,7 +3242,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 18
 move_block 0
@@ -3518,7 +3249,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 19
 move_block 0
@@ -3526,7 +3256,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 20
 move_block 0
@@ -3534,7 +3263,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 21
 move_block 0
@@ -3542,7 +3270,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 22
 move_block 0
@@ -3550,7 +3277,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 23
 move_block 0
@@ -3558,7 +3284,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 24
 move_block 0
@@ -3569,7 +3294,6 @@ x 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 end
 arch woodwall_2_1_2
@@ -3597,7 +3321,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 3
 end
@@ -3615,7 +3338,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 5
 end
@@ -3633,13 +3355,11 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 7
 end
 arch woman
 name Al's Daughter
-name_pl Al's Daughter
 msg
 @match *
 I love flower
@@ -3661,7 +3381,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 9
 end
@@ -3695,7 +3414,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 12
 end
@@ -3709,7 +3427,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 13
 move_block 0
@@ -3717,7 +3434,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 14
 move_block 0
@@ -3725,7 +3441,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 15
 move_block 0
@@ -3733,7 +3448,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 16
 move_block 0
@@ -3741,7 +3455,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 17
 move_block 0
@@ -3749,7 +3462,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 18
 move_block 0
@@ -3757,7 +3469,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 19
 move_block 0
@@ -3765,7 +3476,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 20
 move_block 0
@@ -3773,7 +3483,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 21
 move_block 0
@@ -3781,7 +3490,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 22
 move_block 0
@@ -3789,7 +3497,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 23
 move_block 0
@@ -3797,7 +3504,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 24
 move_block 0
@@ -3808,7 +3514,6 @@ x 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 end
 arch woodwall_2_1_2
@@ -3848,7 +3553,6 @@ y 4
 end
 arch sign
 name CDC Cloud Real Estate INC.
-name_pl CDC Cloud Real Estate INC.
 msg
 Welcome to the office of
 CDC Cloud Real Estate INC.
@@ -3900,7 +3604,6 @@ y 9
 end
 arch goldfloor
 name Lot 5: 1500 Diamonds
-name_pl Lot 5: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -3935,7 +3638,6 @@ unique 1
 end
 arch key2
 name Lot 5 Key
-name_pl Lot 1 Key
 slaying cdcwlot5key
 face key_blue.111
 x 15
@@ -3948,7 +3650,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 12
 end
@@ -3958,7 +3659,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 13
 move_block 0
@@ -3966,7 +3666,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 14
 move_block 0
@@ -3974,7 +3673,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 15
 move_block 0
@@ -3982,7 +3680,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 16
 move_block 0
@@ -3990,7 +3687,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 17
 move_block 0
@@ -3998,7 +3694,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 18
 move_block 0
@@ -4006,7 +3701,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 19
 move_block 0
@@ -4014,7 +3708,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 20
 move_block 0
@@ -4026,7 +3719,6 @@ y 20
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 21
 move_block 0
@@ -4034,7 +3726,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 22
 move_block 0
@@ -4042,7 +3733,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 23
 move_block 0
@@ -4050,7 +3740,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 24
 move_block 0
@@ -4061,7 +3750,6 @@ x 16
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 end
 arch woodwall_2_2_3
@@ -4073,7 +3761,6 @@ y 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 1
 end
@@ -4091,7 +3778,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 2
 end
@@ -4109,7 +3795,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 3
 end
@@ -4119,7 +3804,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 4
 end
@@ -4129,7 +3813,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 5
 end
@@ -4139,7 +3822,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 6
 end
@@ -4157,7 +3839,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 7
 end
@@ -4175,7 +3856,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 8
 end
@@ -4189,7 +3869,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 9
 end
@@ -4203,7 +3882,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 10
 end
@@ -4217,7 +3895,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 11
 end
@@ -4231,7 +3908,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 12
 end
@@ -4241,7 +3917,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 13
 move_block 0
@@ -4249,7 +3924,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 14
 move_block 0
@@ -4257,7 +3931,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 15
 move_block 0
@@ -4265,7 +3938,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 16
 move_block 0
@@ -4273,7 +3945,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 17
 move_block 0
@@ -4281,7 +3952,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 18
 move_block 0
@@ -4289,7 +3959,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 19
 move_block 0
@@ -4297,7 +3966,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 20
 move_block 0
@@ -4305,7 +3973,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 21
 move_block 0
@@ -4313,7 +3980,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 22
 move_block 0
@@ -4321,7 +3987,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 23
 move_block 0
@@ -4329,7 +3994,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 24
 move_block 0
@@ -4340,7 +4004,6 @@ x 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 move_block 0
 blocksview 0
@@ -4351,7 +4014,6 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 1
 move_block 0
@@ -4363,7 +4025,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 2
 end
@@ -4381,7 +4042,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 3
 end
@@ -4398,7 +4058,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 4
 end
@@ -4408,7 +4067,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 5
 end
@@ -4425,7 +4083,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 6
 end
@@ -4443,7 +4100,6 @@ y 7
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 7
 move_block 0
@@ -4455,7 +4111,6 @@ y 8
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 8
 move_block 0
@@ -4467,7 +4122,6 @@ y 9
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 9
 move_block 0
@@ -4479,7 +4133,6 @@ y 10
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 10
 move_block 0
@@ -4491,7 +4144,6 @@ y 11
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 11
 move_block 0
@@ -4503,7 +4155,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 12
 move_block 0
@@ -4511,7 +4162,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 13
 move_block 0
@@ -4519,7 +4169,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 14
 move_block 0
@@ -4527,7 +4176,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 15
 move_block 0
@@ -4535,7 +4183,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 16
 move_block 0
@@ -4543,7 +4190,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 17
 move_block 0
@@ -4551,7 +4197,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 18
 move_block 0
@@ -4559,7 +4204,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 19
 move_block 0
@@ -4567,7 +4211,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 20
 move_block 0
@@ -4575,7 +4218,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 21
 move_block 0
@@ -4583,7 +4225,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 22
 move_block 0
@@ -4591,7 +4232,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 23
 move_block 0
@@ -4599,7 +4239,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 24
 move_block 0
@@ -4610,7 +4249,6 @@ x 18
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 move_block 0
 blocksview 0
@@ -4621,7 +4259,6 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 1
 move_block 0
@@ -4633,7 +4270,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 2
 end
@@ -4651,7 +4287,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 3
 end
@@ -4669,7 +4304,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 4
 end
@@ -4687,7 +4321,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 5
 end
@@ -4705,7 +4338,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 6
 end
@@ -4723,7 +4355,6 @@ y 7
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 7
 move_block 0
@@ -4735,7 +4366,6 @@ y 8
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 8
 move_block 0
@@ -4747,7 +4377,6 @@ y 9
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 9
 move_block 0
@@ -4763,7 +4392,6 @@ y 10
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 10
 move_block 0
@@ -4775,7 +4403,6 @@ y 11
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 11
 move_block 0
@@ -4787,7 +4414,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 12
 move_block 0
@@ -4795,7 +4421,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 13
 move_block 0
@@ -4803,7 +4428,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 14
 move_block 0
@@ -4811,7 +4435,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 15
 move_block 0
@@ -4819,7 +4442,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 16
 move_block 0
@@ -4827,7 +4449,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 17
 move_block 0
@@ -4835,7 +4456,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 18
 move_block 0
@@ -4843,7 +4463,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 19
 move_block 0
@@ -4851,7 +4470,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 20
 move_block 0
@@ -4859,7 +4477,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 21
 move_block 0
@@ -4867,7 +4484,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 22
 move_block 0
@@ -4875,7 +4491,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 23
 move_block 0
@@ -4883,7 +4498,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 24
 move_block 0
@@ -4891,14 +4505,12 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 1
 move_block 0
@@ -4906,7 +4518,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 2
 move_block 0
@@ -4914,7 +4525,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 3
 move_block 0
@@ -4922,7 +4532,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 4
 move_block 0
@@ -4930,7 +4539,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 5
 move_block 0
@@ -4938,7 +4546,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 6
 move_block 0
@@ -4946,7 +4553,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 7
 move_block 0
@@ -4954,7 +4560,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 8
 move_block 0
@@ -4962,7 +4567,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 9
 move_block 0
@@ -4970,7 +4574,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 10
 move_block 0
@@ -4978,7 +4581,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 11
 move_block 0
@@ -4986,7 +4588,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 12
 move_block 0
@@ -4994,7 +4595,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 13
 move_block 0
@@ -5002,7 +4602,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 14
 move_block 0
@@ -5010,7 +4609,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 15
 move_block 0
@@ -5018,7 +4616,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 16
 move_block 0
@@ -5030,7 +4627,6 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 17
 move_block 0
@@ -5038,7 +4634,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 18
 move_block 0
@@ -5046,7 +4641,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 19
 move_block 0
@@ -5054,7 +4648,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 20
 move_block 0
@@ -5062,7 +4655,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 21
 move_block 0
@@ -5070,7 +4662,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 22
 move_block 0
@@ -5078,7 +4669,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 23
 move_block 0
@@ -5086,7 +4676,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 24
 move_block 0
@@ -5094,14 +4683,12 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 1
 move_block 0
@@ -5109,7 +4696,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 2
 move_block 0
@@ -5117,7 +4703,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 3
 move_block 0
@@ -5125,7 +4710,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 4
 move_block 0
@@ -5133,7 +4717,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 5
 move_block 0
@@ -5141,7 +4724,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 6
 move_block 0
@@ -5153,7 +4735,6 @@ y 6
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 7
 move_block 0
@@ -5161,7 +4742,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 8
 move_block 0
@@ -5169,7 +4749,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 9
 move_block 0
@@ -5177,7 +4756,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 10
 move_block 0
@@ -5185,7 +4763,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 11
 move_block 0
@@ -5193,7 +4770,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 12
 move_block 0
@@ -5201,7 +4777,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 13
 move_block 0
@@ -5209,7 +4784,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 14
 move_block 0
@@ -5217,7 +4791,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 15
 move_block 0
@@ -5225,7 +4798,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 16
 move_block 0
@@ -5233,7 +4805,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 17
 move_block 0
@@ -5241,7 +4812,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 18
 move_block 0
@@ -5249,7 +4819,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 19
 move_block 0
@@ -5257,7 +4826,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 20
 move_block 0
@@ -5265,7 +4833,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 21
 move_block 0
@@ -5273,7 +4840,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 22
 move_block 0
@@ -5281,7 +4847,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 23
 move_block 0
@@ -5293,7 +4858,6 @@ y 23
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 24
 move_block 0
@@ -5301,14 +4865,12 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 1
 move_block 0
@@ -5316,7 +4878,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 2
 move_block 0
@@ -5324,7 +4885,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 3
 move_block 0
@@ -5332,7 +4892,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 4
 move_block 0
@@ -5340,7 +4899,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 5
 move_block 0
@@ -5348,7 +4906,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 6
 move_block 0
@@ -5356,7 +4913,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 7
 move_block 0
@@ -5364,7 +4920,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 8
 move_block 0
@@ -5372,7 +4927,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 9
 move_block 0
@@ -5380,7 +4934,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 10
 move_block 0
@@ -5388,7 +4941,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 11
 move_block 0
@@ -5396,7 +4948,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 12
 move_block 0
@@ -5404,7 +4955,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 13
 move_block 0
@@ -5416,7 +4966,6 @@ y 13
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 14
 move_block 0
@@ -5424,7 +4973,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 15
 move_block 0
@@ -5432,7 +4980,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 16
 move_block 0
@@ -5440,7 +4987,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 17
 move_block 0
@@ -5452,7 +4998,6 @@ y 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 18
 move_block 0
@@ -5460,7 +5005,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 19
 move_block 0
@@ -5468,7 +5012,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 20
 move_block 0
@@ -5476,7 +5019,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 21
 move_block 0
@@ -5484,7 +5026,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 22
 move_block 0
@@ -5492,7 +5033,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 23
 move_block 0
@@ -5500,7 +5040,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 24
 move_block 0
@@ -5508,14 +5047,12 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 1
 move_block 0
@@ -5527,7 +5064,6 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 2
 move_block 0
@@ -5535,7 +5071,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 3
 move_block 0
@@ -5543,7 +5078,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 4
 move_block 0
@@ -5551,7 +5085,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 5
 move_block 0
@@ -5559,7 +5092,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 6
 move_block 0
@@ -5567,7 +5099,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 7
 move_block 0
@@ -5575,7 +5106,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 8
 move_block 0
@@ -5583,7 +5113,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 9
 move_block 0
@@ -5591,7 +5120,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 10
 move_block 0
@@ -5599,7 +5127,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 11
 move_block 0
@@ -5607,7 +5134,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 12
 move_block 0
@@ -5615,7 +5141,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 13
 move_block 0
@@ -5623,7 +5148,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 14
 move_block 0
@@ -5631,7 +5155,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 15
 move_block 0
@@ -5639,7 +5162,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 16
 move_block 0
@@ -5647,7 +5169,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 17
 move_block 0
@@ -5655,7 +5176,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 18
 move_block 0
@@ -5663,7 +5183,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 19
 move_block 0
@@ -5671,7 +5190,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 20
 move_block 0
@@ -5679,7 +5197,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 21
 move_block 0
@@ -5687,7 +5204,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 22
 move_block 0
@@ -5695,7 +5211,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 23
 move_block 0
@@ -5703,7 +5218,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 24
 move_block 0
@@ -5711,14 +5225,12 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 1
 move_block 0
@@ -5726,7 +5238,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 2
 move_block 0
@@ -5734,7 +5245,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 3
 move_block 0
@@ -5742,7 +5252,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 4
 move_block 0
@@ -5750,7 +5259,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 5
 move_block 0
@@ -5758,7 +5266,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 6
 move_block 0
@@ -5766,7 +5273,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 7
 move_block 0
@@ -5774,7 +5280,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 8
 move_block 0
@@ -5782,7 +5287,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 9
 move_block 0
@@ -5790,7 +5294,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 10
 move_block 0
@@ -5802,7 +5305,6 @@ y 10
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 11
 move_block 0
@@ -5810,7 +5312,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 12
 move_block 0
@@ -5818,7 +5319,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 13
 move_block 0
@@ -5826,7 +5326,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 14
 move_block 0
@@ -5834,7 +5333,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 15
 move_block 0
@@ -5842,7 +5340,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 16
 move_block 0
@@ -5850,7 +5347,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 17
 move_block 0
@@ -5858,7 +5354,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 18
 move_block 0
@@ -5866,7 +5361,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 19
 move_block 0
@@ -5874,7 +5368,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 20
 move_block 0
@@ -5882,7 +5375,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 21
 move_block 0
@@ -5890,7 +5382,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 22
 move_block 0
@@ -5898,7 +5389,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 23
 move_block 0
@@ -5906,7 +5396,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 24
 move_block 0
@@ -5914,14 +5403,12 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 1
 move_block 0
@@ -5929,7 +5416,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 2
 move_block 0
@@ -5937,7 +5423,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 3
 move_block 0
@@ -5945,7 +5430,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 4
 move_block 0
@@ -5953,7 +5437,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 5
 move_block 0
@@ -5961,7 +5444,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 6
 move_block 0
@@ -5969,7 +5451,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 7
 move_block 0
@@ -5977,7 +5458,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 8
 move_block 0
@@ -5985,7 +5465,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 9
 move_block 0
@@ -5993,7 +5472,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 10
 move_block 0
@@ -6001,7 +5479,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 11
 move_block 0
@@ -6009,7 +5486,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 12
 move_block 0
@@ -6017,7 +5493,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 13
 move_block 0
@@ -6025,7 +5500,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 14
 move_block 0
@@ -6033,7 +5507,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 15
 move_block 0
@@ -6041,7 +5514,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 16
 move_block 0
@@ -6049,7 +5521,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 17
 move_block 0
@@ -6057,7 +5528,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 18
 move_block 0
@@ -6065,7 +5535,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 19
 move_block 0
@@ -6073,7 +5542,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 20
 move_block 0
@@ -6081,7 +5549,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 21
 move_block 0
@@ -6089,7 +5556,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 22
 move_block 0
@@ -6097,7 +5563,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 23
 move_block 0
@@ -6105,7 +5570,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 24
 move_block 0
