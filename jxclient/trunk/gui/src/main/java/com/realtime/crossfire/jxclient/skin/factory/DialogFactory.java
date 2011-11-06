@@ -23,9 +23,9 @@ package com.realtime.crossfire.jxclient.skin.factory;
 
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
-import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.GUIDialogTitle;
+import com.realtime.crossfire.jxclient.gui.label.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.misc.GUIDialogBackground;
 import java.awt.Color;
 import java.awt.Font;

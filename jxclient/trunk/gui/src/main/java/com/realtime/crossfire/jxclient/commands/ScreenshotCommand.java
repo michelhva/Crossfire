@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.gui.commands.ScreenshotFiles;
-import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.gui.label.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.awt.Color;
 import java.awt.Graphics;

@@ -21,6 +21,8 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import com.realtime.crossfire.jxclient.gui.label.JXCWindowRenderer;
+
 /**
  * All gui states of {@link JXCWindowRenderer}.
  * @author Andreas Kirschbaum
