@@ -2895,7 +2895,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv smooth face="+faceNo+" smooth_pic="+smoothPic);
         }
-        fireCommandSmoothReceived(faceNo, smoothPic);
+        model.getSmoothFaces().updateSmoothFace(faceNo, smoothPic);
         notifyPacketWatcherListenersShortArray(packet, args);
     }
 

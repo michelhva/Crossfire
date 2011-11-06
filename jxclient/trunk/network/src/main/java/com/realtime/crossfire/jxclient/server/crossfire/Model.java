@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.faces.FaceCache;
+import com.realtime.crossfire.jxclient.faces.SmoothFaces;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
@@ -58,6 +59,9 @@ public class Model {
     private final FaceCache faceCache = new FaceCache();
 
     @NotNull
+    private final SmoothFaces smoothFaces = new SmoothFaces();
+
+    @NotNull
     public SkillSet getSkillSet() {
         return skillSet;
     }
@@ -90,6 +94,11 @@ public class Model {
     @NotNull
     public FaceCache getFaceCache() {
         return faceCache;
+    }
+
+    @NotNull
+    public SmoothFaces getSmoothFaces() {
+        return smoothFaces;
     }
 
 }

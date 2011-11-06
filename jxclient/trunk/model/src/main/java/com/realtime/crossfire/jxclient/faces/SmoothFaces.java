@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSmoothListener;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
@@ -40,25 +38,6 @@ public class SmoothFaces {
     private final Map<Integer, Integer> smoothFaces = new HashMap<Integer, Integer>();
 
     /**
-     * Creates a new instance.
-     * @param crossfireServerConnection the crossfire server connection to
-     * monitor
-     */
-    public SmoothFaces(@NotNull final CrossfireServerConnection crossfireServerConnection) {
-        final CrossfireSmoothListener crossfireSmoothListener = new CrossfireSmoothListener() {
-
-            @Override
-            public void commandSmoothReceived(final int face, final int smoothFace) {
-                synchronized (smoothFaces) {
-                    smoothFaces.put(face, smoothFace);
-                }
-            }
-
-        };
-        crossfireServerConnection.addCrossfireSmoothListener(crossfireSmoothListener);
-    }
-
-    /**
      * Returns the smoothing face associated with a given face.
      * @param face the face
      * @return the smoothing face or <code>0</code>
@@ -69,6 +48,17 @@ public class SmoothFaces {
             smooth = smoothFaces.get(face);
         }
         return smooth == null ? 0 : smooth;
+    }
+
+    /**
+     * Updates smooth face information.
+     * @param face the face number
+     * @param smoothFace the face number of the corresponding smooth face
+     */
+    public void updateSmoothFace(final int face, final int smoothFace) {
+        synchronized (smoothFaces) {
+            smoothFaces.put(face, smoothFace);
+        }
     }
 
 }
