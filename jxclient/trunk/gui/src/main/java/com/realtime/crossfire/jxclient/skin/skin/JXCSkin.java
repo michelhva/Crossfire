@@ -23,9 +23,9 @@ package com.realtime.crossfire.jxclient.skin.skin;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.TooltipManagerImpl;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.label.TooltipManagerImpl;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import java.util.Iterator;
 import org.jetbrains.annotations.NotNull;
