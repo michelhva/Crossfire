@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
@@ -42,6 +41,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import com.realtime.crossfire.jxclient.settings.Settings;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import org.jetbrains.annotations.NotNull;

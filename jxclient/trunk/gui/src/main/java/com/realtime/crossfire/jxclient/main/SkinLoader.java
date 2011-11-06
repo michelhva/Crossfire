@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.faces.SmoothFaces;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.JXCWindowRenderer;
@@ -40,6 +39,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skin.io.JXCSkinLoader;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.skin.source.JXCSkinClassSource;
