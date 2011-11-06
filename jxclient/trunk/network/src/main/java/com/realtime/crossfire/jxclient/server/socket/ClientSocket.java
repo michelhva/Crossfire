@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.socket;
 
+import com.realtime.crossfire.jxclient.server.crossfire.Model;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.io.EOFException;
@@ -54,6 +55,12 @@ public class ClientSocket {
      * The maximum payload size of a Crossfire protocol packet.
      */
     private static final int MAXIMUM_PACKET_SIZE = 65536;
+
+    /**
+     * The {@link Model} instance that is updated.
+     */
+    @NotNull
+    private final Model model;
 
     /**
      * The appender to write state changes to. May be <code>null</code> to not
@@ -197,11 +204,13 @@ public class ClientSocket {
 
     /**
      * Creates a new instance.
+     * @param model the model to update
      * @param debugProtocol tf non-<code>null</code>, write all protocol
      * commands to this writer
      * @throws IOException if the socket cannot be created
      */
-    public ClientSocket(@Nullable final DebugWriter debugProtocol) throws IOException {
+    public ClientSocket(@NotNull final Model model, @Nullable final DebugWriter debugProtocol) throws IOException {
+        this.model = model;
         this.debugProtocol = debugProtocol;
         selector = Selector.open();
     }
@@ -479,6 +488,7 @@ public class ClientSocket {
             disconnectPending = false;
         }
         if (notifyListeners) {
+            model.getGuiStateManager().disconnecting(reason, isError);
             for (final ClientSocketListener clientSocketListener : clientSocketListeners.getListeners()) {
                 clientSocketListener.disconnecting(reason, isError);
             }
@@ -512,6 +522,7 @@ public class ClientSocket {
             }
         } finally {
             if (notifyListeners) {
+                model.getGuiStateManager().disconnected();
                 for (final ClientSocketListener clientSocketListener : clientSocketListeners.getListeners()) {
                     clientSocketListener.disconnected(reason);
                 }
