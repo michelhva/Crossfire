@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
+import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;
 import javax.swing.GroupLayout;
 import org.jetbrains.annotations.NotNull;
 
