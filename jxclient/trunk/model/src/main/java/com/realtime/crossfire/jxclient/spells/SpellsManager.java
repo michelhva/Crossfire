@@ -23,8 +23,6 @@ package com.realtime.crossfire.jxclient.spells;
 
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireAccountListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -133,45 +131,6 @@ public class SpellsManager implements Iterable<Spell> {
     };
 
     /**
-     * The {@link CrossfireAccountListener} for detecting character change and
-     * clear spell information.
-     */
-    @NotNull
-    private final CrossfireAccountListener crossfireAccountListener = new CrossfireAccountListener() {
-
-        @Override
-        public void manageAccount() {
-            // ignore
-        }
-
-        @Override
-        public void startAccountList(@NotNull final String accountName) {
-            // ignore
-        }
-
-        @Override
-        public void addAccount(@NotNull final String name, @NotNull final String characterClass, @NotNull final String race, @NotNull final String face, @NotNull final String party, @NotNull final String map, final int level, final int faceNumber) {
-            // ignore
-        }
-
-        @Override
-        public void endAccountList() {
-            // ignore
-        }
-
-        @Override
-        public void startPlaying() {
-            // ignore
-        }
-
-        @Override
-        public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
-            spells.clear();
-        }
-
-    };
-
-    /**
      * The {@link SkillSet} containing skills from the server.
      */
     private final SkillSet skillSet;
@@ -183,13 +142,11 @@ public class SpellsManager implements Iterable<Spell> {
 
     /**
      * Creates a new instance.
-     * @param crossfireServerConnection the connection to listen on
      * @param guiStateManager the gui state manager to watch
      * @param skillSet skills the players knows
      * @param stats the stats for the player
      */
-    public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final SkillSet skillSet, @NotNull final Stats stats) {
-        crossfireServerConnection.addCrossfireAccountListener(crossfireAccountListener);
+    public SpellsManager(@NotNull final GuiStateManager guiStateManager, @NotNull final SkillSet skillSet, @NotNull final Stats stats) {
         guiStateManager.addGuiStateListener(guiStateListener);
         this.skillSet = skillSet;
         this.stats = stats;
@@ -365,6 +322,13 @@ public class SpellsManager implements Iterable<Spell> {
         }
 
         return false;
+    }
+
+    /**
+     * An character name was sent to the server.
+     */
+    public void selectCharacter() {
+        spells.clear();
     }
 
 }

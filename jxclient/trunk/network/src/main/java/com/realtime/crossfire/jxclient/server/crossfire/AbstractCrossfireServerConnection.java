@@ -847,6 +847,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     protected void fireSelectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
+        model.getSpellsManager().selectCharacter();
         for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
             crossfireAccountListener.selectCharacter(accountName, characterName);
         }
