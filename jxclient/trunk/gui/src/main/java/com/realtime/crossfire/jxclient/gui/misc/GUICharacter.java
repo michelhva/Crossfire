@@ -18,7 +18,7 @@
  * Copyright (C) 2010 Nicolas Weeger.
  */
 
-package com.realtime.crossfire.jxclient.gui;
+package com.realtime.crossfire.jxclient.gui.misc;
 
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.account.CharacterInformationListener;

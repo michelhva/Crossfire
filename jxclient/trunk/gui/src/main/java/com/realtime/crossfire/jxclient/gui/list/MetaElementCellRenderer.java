@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.list;
 
-import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import javax.swing.JList;

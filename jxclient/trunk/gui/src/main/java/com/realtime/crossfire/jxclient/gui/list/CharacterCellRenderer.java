@@ -20,7 +20,7 @@
 
 package com.realtime.crossfire.jxclient.gui.list;
 
-import com.realtime.crossfire.jxclient.gui.GUICharacter;
+import com.realtime.crossfire.jxclient.gui.misc.GUICharacter;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import javax.swing.JList;

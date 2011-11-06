@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.scrollable;
 
-import com.realtime.crossfire.jxclient.gui.gui.GUIScrollBar;
+import com.realtime.crossfire.jxclient.gui.misc.GUIScrollBar;
 import org.jetbrains.annotations.NotNull;
 
 /**
