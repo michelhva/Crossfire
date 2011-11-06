@@ -501,17 +501,6 @@ public class Gui extends JComponent {
     }
 
     /**
-     * Enables or disables hidden text in the first input field.
-     * @param hideInput if set, hide input; else show input
-     */
-    public void setHideInput(final boolean hideInput) {
-        final GUIText textArea = getFirstElement(GUIText.class);
-        if (textArea != null) {
-            textArea.setHideInput(hideInput);
-        }
-    }
-
-    /**
      * Returns whether a given point is within this dialog's drawing area.
      * @param x the x-coordinate of the the point
      * @param y the y-coordinate of the the point
