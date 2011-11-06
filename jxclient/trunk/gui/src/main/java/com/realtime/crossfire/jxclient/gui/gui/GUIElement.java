@@ -148,12 +148,10 @@ public interface GUIElement {
     void setTooltipText(@Nullable String tooltipText, int x, int y, int w, int h);
 
     /**
-     * Returns the tooltip text to show when the mouse is inside this element.
-     * @return the text to show or <code>null</cod> to disable the tooltip for
-     *         this element
+     * Returns whether the tooltip is enabled.
+     * @return whether the tooltip is enabled
      */
-    @Nullable
-    TooltipText getTooltipText();
+    boolean hasTooltipText();
 
     /**
      * Sets the {@link GUIElementChangedListener} to be notified. Note that at
