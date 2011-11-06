@@ -127,7 +127,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         g.setColor(new Color(0, 0, 0, 0.0f));
         g.fillRect(0, 0, getWidth(), getHeight());
         g.setFont(font);
-        g.setColor(GuiUtils.isActive(this) || selected ? Color.RED : Color.GRAY);
+        g.setColor(isActive() || selected ? Color.RED : Color.GRAY);
         final CharacterInformation character = characterModel.getEntry(index);
         if (character == null) {
             return;

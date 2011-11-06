@@ -97,14 +97,4 @@ public class GuiUtils {
         return null;
     }
 
-    /**
-     * Returns whether a GUI element is active.
-     * @param element the element
-     * @return whether the element is active
-     */
-    public static boolean isActive(@NotNull final ActivatableGUIElement element) {
-        final Gui gui = getGui(element);
-        return gui != null && gui.isActiveElement(element);
-    }
-
 }

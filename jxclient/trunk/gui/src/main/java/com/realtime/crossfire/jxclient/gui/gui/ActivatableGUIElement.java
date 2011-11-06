@@ -71,4 +71,13 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
         }
     }
 
+    /**
+     * Returns whether a GUI element is active.
+     * @return whether the element is active
+     */
+    public boolean isActive() {
+        final Gui gui = GuiUtils.getGui(this);
+        return gui != null && gui.isActiveElement(this);
+    }
+
 }
