@@ -4145,6 +4145,12 @@ x 11
 y 4
 connected 81
 end
+arch pedestal
+x 11
+y 5
+invisible 1
+connected 81
+end
 arch dungeon_magic
 x 11
 y 5
@@ -6343,20 +6349,6 @@ name PurpleButterfly
 title Python
 slaying /python/guilds/guild_dues.py
 end
-end
-arch teleporter
-hp 11
-sp 5
-x 20
-y 13
-connected 80
-end
-arch pedestal_trigger
-x 20
-y 13
-type 17
-invisible 1
-connected 81
 end
 arch creator
 other_arch jadecoin
