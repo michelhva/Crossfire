@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.faces.SmoothFaces;
+import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
@@ -216,6 +217,20 @@ public class SkinLoader {
                 if (gui != null) {
                     windowRenderer.raiseDialog(gui);
                 }
+            }
+
+            @Override
+            public void activeChanged(@NotNull final ActivatableGUIElement element, final boolean active) {
+                final Gui gui = GuiUtils.getGui(element);
+                if (gui != null) {
+                    gui.setActiveElement(element, active);
+                }
+            }
+
+            @Override
+            public boolean isActive(@NotNull final ActivatableGUIElement element) {
+                final Gui gui = GuiUtils.getGui(element);
+                return gui != null && gui.isActiveElement(element);
             }
 
         };

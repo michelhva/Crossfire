@@ -36,6 +36,12 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
     private static final long serialVersionUID = 1;
 
     /**
+     * The {@link GUIElementListener} to notify.
+     */
+    @NotNull
+    private final GUIElementListener elementListener;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -44,6 +50,7 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
      */
     protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency) {
         super(tooltipManager, elementListener, name, transparency);
+        this.elementListener = elementListener;
     }
 
     /**
@@ -65,10 +72,7 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
      * @param active the active state
      */
     public void setActive(final boolean active) {
-        final Gui gui = GuiUtils.getGui(this);
-        if (gui != null) {
-            gui.setActiveElement(this, active);
-        }
+        elementListener.activeChanged(this, active);
     }
 
     /**
@@ -76,8 +80,7 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
      * @return whether the element is active
      */
     public boolean isActive() {
-        final Gui gui = GuiUtils.getGui(this);
-        return gui != null && gui.isActiveElement(this);
+        return elementListener.isActive(this);
     }
 
 }
