@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.server.crossfire;
+package com.realtime.crossfire.jxclient.mapupdater;
 
 import java.util.EventListener;
 
