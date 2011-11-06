@@ -8,7 +8,7 @@ enter_x 3
 enter_y 3
 msg
 Created:  1995-03-20
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2011-11-06 Nicolas Weeger
 endmsg
 end
 arch dungeon_floor
@@ -146,11 +146,15 @@ arch dungeon_magic
 x 1
 y 2
 end
-arch dungeon_floor
+arch statue2
 name Angel of Death
+msg
+A magnificient but somewhat frightful statue.
+endmsg
 face angel.111
 x 1
 y 2
+move_block 0
 end
 arch magic_mouth
 name howling voice
