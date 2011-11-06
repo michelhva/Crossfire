@@ -388,33 +388,23 @@ public class Gui extends JComponent {
     }
 
     /**
-     * Returns the first {@link GUIText} gui element of this gui and make it
-     * active.
-     * @return the <code>GUIText</code> element, or <code>null</code> if this
-     *         gui does not contain any <code>GUIText</code> gui elements
-     */
-    @Nullable
-    private GUIText activateFirstTextArea() {
-        final GUIText textArea = getFirstElement(GUIText.class);
-        if (textArea != null) {
-            textArea.setActive(true);
-        }
-        return textArea;
-    }
-
-    /**
      * Returns the first command text field of this gui and make it active.
      * @return the comment text field, or <code>null</code> if this gui does not
      *         contain any command text fields
      */
     @Nullable
     public GUIText activateCommandInput() {
-        final GUIText textArea = activateFirstTextArea();
-        if (textArea != null && textArea.getName().equals("command")) {
-            return textArea;
+        final GUIText textArea = getFirstElement(GUIText.class);
+        if (textArea == null) {
+            return null;
         }
 
-        return null;
+        textArea.setActive(true);
+        if (!textArea.getName().equals("command")) {
+            return null;
+        }
+
+        return textArea;
     }
 
     /**
