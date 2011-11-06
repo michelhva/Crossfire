@@ -67,8 +67,11 @@ public class Model {
     @NotNull
     private ItemsManager itemsManager;
 
+    @NotNull
+    private final ItemSet itemSet = new ItemSet();
+
     @Deprecated
-    public void setItemsManager(@NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet) {
+    public void setItemsManager(@NotNull final FacesManager facesManager) {
         itemsManager = new ItemsManager(facesManager, stats, skillSet, guiStateManager, itemSet);
     }
 
@@ -115,6 +118,11 @@ public class Model {
     @NotNull
     public ItemsManager getItemsManager() {
         return itemsManager;
+    }
+
+    @NotNull
+    public ItemSet getItemSet() {
+        return itemSet;
     }
 
 }
