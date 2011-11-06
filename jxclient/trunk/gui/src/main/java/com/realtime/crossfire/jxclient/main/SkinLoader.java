@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.faces.SmoothFaces;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
@@ -45,6 +46,7 @@ import com.realtime.crossfire.jxclient.skin.source.JXCSkinDirSource;
 import com.realtime.crossfire.jxclient.skin.source.JXCSkinSource;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.util.Resolution;
+import java.awt.Component;
 import java.io.File;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -209,8 +211,11 @@ public class SkinLoader {
         final GUIElementListener elementListener = new GUIElementListener() {
 
             @Override
-            public void raiseDialog(@NotNull final Gui gui) {
-                windowRenderer.raiseDialog(gui);
+            public void raiseDialog(@NotNull final Component component) {
+                final Gui gui = GuiUtils.getGui(component);
+                if (gui != null) {
+                    windowRenderer.raiseDialog(gui);
+                }
             }
 
         };

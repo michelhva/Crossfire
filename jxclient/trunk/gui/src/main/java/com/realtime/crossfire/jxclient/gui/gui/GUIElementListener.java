@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import java.awt.Component;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -30,9 +31,9 @@ import org.jetbrains.annotations.NotNull;
 public interface GUIElementListener {
 
     /**
-     * The {@link Gui} should be raised.
-     * @param gui the gui
+     * The {@link Gui} of a {@link Component} should be raised.
+     * @param component the component
      */
-    void raiseDialog(@NotNull Gui gui);
+    void raiseDialog(@NotNull Component component);
 
 }
