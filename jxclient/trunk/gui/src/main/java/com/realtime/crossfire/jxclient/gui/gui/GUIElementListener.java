@@ -36,4 +36,18 @@ public interface GUIElementListener {
      */
     void raiseDialog(@NotNull Component component);
 
+    /**
+     * The active state of an {@link AbstractGUIElement} has changed.
+     * @param element the changed element
+     * @param active the new active state
+     */
+    void activeChanged(@NotNull ActivatableGUIElement element, boolean active);
+
+    /**
+     * Returns whether an {@link ActivatableGUIElement} is active.
+     * @param element the element to check
+     * @return whether the element is active
+     */
+    boolean isActive(@NotNull ActivatableGUIElement element);
+
 }
