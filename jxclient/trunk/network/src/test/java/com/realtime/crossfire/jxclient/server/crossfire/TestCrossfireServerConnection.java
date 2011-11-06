@@ -35,6 +35,13 @@ import org.junit.Assert;
 public class TestCrossfireServerConnection extends AbstractCrossfireServerConnection {
 
     /**
+     * Creates a new instance.
+     */
+    public TestCrossfireServerConnection() {
+        super(new Model());
+    }
+
+    /**
      * {@inheritDoc}
      */
     @Override

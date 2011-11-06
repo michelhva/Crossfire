@@ -23,8 +23,6 @@ package com.realtime.crossfire.jxclient.skills;
 
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSkillInfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import java.util.Arrays;
@@ -51,26 +49,6 @@ public class SkillSet {
      */
     @NotNull
     private final Map<String, Skill> namedSkills = new HashMap<String, Skill>();
-
-    /**
-     * The {@link CrossfireSkillInfoListener} attached to the server connection
-     * for detecting changed skill info.
-     */
-    @NotNull
-    private final CrossfireSkillInfoListener crossfireSkillInfoListener = new CrossfireSkillInfoListener() {
-
-        @Override
-        public void clearSkills() {
-            clearNumberedSkills();
-            Arrays.fill(numberedSkills, null);
-        }
-
-        @Override
-        public void addSkill(final int skillId, @NotNull final String skillName) {
-            SkillSet.this.addSkill(skillId, skillName);
-        }
-
-    };
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped
@@ -118,12 +96,18 @@ public class SkillSet {
 
     /**
      * Creates a new instance.
-     * @param crossfireServerConnection the server connection to monitor
      * @param guiStateManager the gui state manager to watch
      */
-    public SkillSet(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager) {
-        crossfireServerConnection.addCrossfireSkillInfoListener(crossfireSkillInfoListener);
+    public SkillSet(@NotNull final GuiStateManager guiStateManager) {
         guiStateManager.addGuiStateListener(guiStateListener);
+    }
+
+    /**
+     * Clears all skills.
+     */
+    public void clearSkills() {
+        clearNumberedSkills();
+        Arrays.fill(numberedSkills, null);
     }
 
     /**
@@ -131,7 +115,7 @@ public class SkillSet {
      * @param id the numerical identifier for the new skill
      * @param skillName the skill name
      */
-    private void addSkill(final int id, @NotNull final String skillName) {
+    public void addSkill(final int id, @NotNull final String skillName) {
         final int index = id-CrossfireStatsListener.CS_STAT_SKILLINFO;
         final Skill oldSkill = numberedSkills[index];
         final Skill newSkill = getNamedSkill(skillName);

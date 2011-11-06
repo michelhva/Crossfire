@@ -21,26 +21,26 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
-import java.util.EventListener;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for listeners interested in skill info responses.
+ * Combines all model classes that are updated.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireSkillInfoListener extends EventListener {
+public class Model {
 
-    /**
-     * Clears all skill info. This function is called whenever new skill info is
-     * available.
-     */
-    void clearSkills();
+    @NotNull
+    private SkillSet skillSet;
 
-    /**
-     * Adds one skill info. This function is called for each skill info line.
-     * @param skillId the skill ID
-     * @param skillName the skill name
-     */
-    void addSkill(int skillId, @NotNull String skillName);
+    @Deprecated
+    public void setSkillSet(@NotNull final SkillSet skillSet) {
+        this.skillSet = skillSet;
+    }
+
+    @NotNull
+    public SkillSet getSkillSet() {
+        return skillSet;
+    }
 
 }

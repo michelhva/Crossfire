@@ -55,7 +55,8 @@ public class DefaultCrossfireServerConnectionTest {
     @Test
     public void testNegotiateNumLookObjects1() throws InterruptedException, IOException {
         sem = new Semaphore(0);
-        final DefaultCrossfireServerConnection connection = new DefaultCrossfireServerConnection(null, "version");
+        final Model model = new Model();
+        final DefaultCrossfireServerConnection connection = new DefaultCrossfireServerConnection(model, null, "version");
         final int port = startServer();
         connection.start();
         try {
