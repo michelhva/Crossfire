@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.gui.button.AbstractButton;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
-import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -119,10 +118,10 @@ public class Gui extends JComponent {
 
     /**
      * Creates a new instance.
-     * @param guiCommandFactory the gui command factory for creating commands
+     * @param keyBindings the keybindings to use
      */
-    public Gui(@NotNull final GUICommandFactory guiCommandFactory) {
-        keyBindings = new KeyBindings(null, guiCommandFactory);
+    public Gui(@NotNull final KeyBindings keyBindings) {
+        this.keyBindings = keyBindings;
     }
 
     /**
