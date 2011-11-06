@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.skin.skin;
 
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;
 import javax.swing.GroupLayout;
 import org.jetbrains.annotations.NotNull;
@@ -51,7 +52,7 @@ public class GuiFactory {
      */
     @NotNull
     public Gui newGui() {
-        final Gui gui = new Gui(guiCommandFactory);
+        final Gui gui = new Gui(new KeyBindings(null, guiCommandFactory));
         gui.setLayout(new GroupLayout(gui));
         return gui;
     }
