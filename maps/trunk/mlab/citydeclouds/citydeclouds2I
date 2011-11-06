@@ -1439,8 +1439,7 @@ arch wizard
 name hooded merchant
 msg
 @match *
-Welcome and stay for awhile,
-replenish thy spirit and abilities.
+Welcome and stay for awhile, replenish thy spirit and abilities.
 endmsg
 face wizard.151
 hp 100
@@ -18627,51 +18626,12 @@ arch guildmaster
 name High Magistrate
 msg
 @match hi|hello
-Your concerns may be addressed by a
-lower office. Begone with you
-now!
+Your concerns may be addressed by a lower office. Begone with you now!
 ...
-Unless you do happen to be a adventurer
-of strong will... Would you perchance
-risk your life on an urgent quest needed
-to be completed in order to save our
-fair city? There are troubling matters at
-hand.
-Do you accept this tenure that I am about
-to bestow upon you?
+Unless you do happen to be a adventurer of strong will... Would you perchance risk your life on an urgent quest needed to be completed in order to save our fair city? There are troubling matters at hand. Do you accept this tenure that I am about to bestow upon you?
 @match yes
-Lying outside the city walls just
-under the cloud surface is a well
-hidden strike force of dragons
-alligned with the elf lord Valdak.
-They have been lying in wait for
-months and our spies have only
-detected them last week! We have
-deduced that they are commanded by
-the Ancient dragon General Czarthin
-whom was previously lord Valdak's
-emissary to our city before he turned
-against us. Many dragon agents have
-infiltrated our fair city and are
-believed to be under the direct
-command of Czarthin along with the
-strike force. What is needed is the
-assasination of the Ancient dragon
-Czarthin... however a direct attack
-by one of our agents would bring
-complete destruction of our city by
-the strike force as well as the
-hundreds of mighty fire dragons
-stationed at the castle of lord
-Valdak. We need you to silently slip
-into Czarthin's assembly and remove
-from him his life force... once done
-bring my Assistant a claw from his
-corpse.
-For your reward you shall recieve an
-esquire seal upon completion as-well
-as any treasure you loot from
-Czarthin's camp.
+Lying outside the city walls just under the cloud surface is a well hidden strike force of dragons alligned with the elf lord Valdak. They have been lying in wait for months and our spies have only detected them last week! We have deduced that they are commanded by the Ancient dragon General Czarthin whom was previously lord Valdak's emissary to our city before he turned against us. Many dragon agents have infiltrated our fair city and are believed to be under the direct command of Czarthin along with the strike force. What is needed is the assasination of the Ancient dragon Czarthin... however a direct attack by one of our agents would bring complete destruction of our city by the strike force as well as the hundreds of mighty fire dragons stationed at the castle of lord Valdak. We need you to silently slip 
+into Czarthin's assembly and remove from him his life force... once done bring my Assistant a claw from his corpse. For your reward you shall recieve an esquire seal upon completion as-well as any treasure you loot from Czarthin's camp.
 endmsg
 x 42
 y 25
@@ -18779,8 +18739,7 @@ y 36
 end
 arch sign_w
 msg
-Line to speak to High Magistrate
-starts here.
+Line to speak to High Magistrate starts here.
 endmsg
 x 42
 y 36
@@ -19576,9 +19535,7 @@ name CDC Esquire Seal
 name_pl CDC Esquire Seals
 slaying cdcesquirepass1uptocotg
 msg
-This seal proves the rank of Esquire
-of the CityDeClouds in all the realm
-that the city controls.
+This seal proves the rank of Esquire of the CityDeClouds in all the realm that the city controls.
 endmsg
 x 44
 y 27
@@ -19589,10 +19546,7 @@ arch locked_door1
 name Assistant
 slaying cdcczarthinclaw1mystarea
 msg
-Assistant: Pardon me missure but do
-you have the relic for thee High
-Magistrate that sits in the seat of
-power today? If not go-away.
+Assistant: Pardon me missure but do you have the relic for thee High Magistrate that sits in the seat of power today? If not go-away.
 endmsg
 face halfling2.151
 x 44
@@ -21692,8 +21646,7 @@ y 45
 end
 arch magic_mouth
 msg
-Assistant: OMG! He's got a BOMB!!!
-Guards! Guards!! Kill the adventurer!
+Assistant: OMG! He's got a BOMB!!! Guards! Guards!! Kill the adventurer!
 endmsg
 x 48
 y 46
