@@ -35,34 +35,19 @@ import org.jetbrains.annotations.NotNull;
 public class Model {
 
     @NotNull
-    private SkillSet skillSet;
+    private final GuiStateManager guiStateManager = new GuiStateManager();
 
     @NotNull
-    private Stats stats;
+    private final SkillSet skillSet = new SkillSet(guiStateManager);
 
     @NotNull
     private final ExperienceTable experienceTable = new ExperienceTable();
 
     @NotNull
-    private final GuiStateManager guiStateManager = new GuiStateManager();
+    private final Stats stats = new Stats(experienceTable, skillSet, guiStateManager);
 
     @NotNull
-    private SpellsManager spellsManager;
-
-    @Deprecated
-    public void setSkillSet(@NotNull final SkillSet skillSet) {
-        this.skillSet = skillSet;
-    }
-
-    @Deprecated
-    public void setStats(@NotNull final Stats stats) {
-        this.stats = stats;
-    }
-
-    @Deprecated
-    public void setSpellsManager(@NotNull final SpellsManager spellsManager) {
-        this.spellsManager = spellsManager;
-    }
+    private final SpellsManager spellsManager = new SpellsManager(guiStateManager, skillSet, stats);
 
     @NotNull
     public SkillSet getSkillSet() {

@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
-import com.realtime.crossfire.jxclient.skills.SkillSet;
-import com.realtime.crossfire.jxclient.stats.Stats;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -58,9 +56,6 @@ public class DefaultCrossfireServerConnectionTest {
     public void testNegotiateNumLookObjects1() throws InterruptedException, IOException {
         sem = new Semaphore(0);
         final Model model = new Model();
-        final SkillSet skillSet = new SkillSet(model.getGuiStateManager());
-        final Stats stats = new Stats(model.getExperienceTable(), skillSet, model.getGuiStateManager());
-        model.setStats(stats);
         final DefaultCrossfireServerConnection connection = new DefaultCrossfireServerConnection(model, null, "version");
         final int port = startServer();
         connection.start();
