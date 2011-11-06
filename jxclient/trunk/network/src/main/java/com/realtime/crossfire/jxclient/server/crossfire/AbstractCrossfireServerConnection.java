@@ -491,6 +491,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     protected void fireFaceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, @NotNull final String faceName) {
+        model.getFaceCache().addFace(faceNum, faceSetNum, faceChecksum, faceName);
         for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners.getListeners()) {
             crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
         }

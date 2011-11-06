@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
@@ -54,6 +55,9 @@ public class Model {
     private final QuestsManager questsManager = new QuestsManager(guiStateManager);
 
     @NotNull
+    private final FaceCache faceCache = new FaceCache();
+
+    @NotNull
     public SkillSet getSkillSet() {
         return skillSet;
     }
@@ -81,6 +85,11 @@ public class Model {
     @NotNull
     public QuestsManager getQuestsManager() {
         return questsManager;
+    }
+
+    @NotNull
+    public FaceCache getFaceCache() {
+        return faceCache;
     }
 
 }
