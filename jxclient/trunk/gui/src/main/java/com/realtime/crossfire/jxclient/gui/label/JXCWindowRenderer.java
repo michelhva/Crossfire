@@ -1047,7 +1047,7 @@ public class JXCWindowRenderer {
     public GUIText activateCommandInput() {
         // check main gui
         assert currentGui != null;
-        final GUIText textArea1 = currentGui.activateCommandInput();
+        final GUIText textArea1 = activateCommandInput(currentGui);
         if (textArea1 != null) {
             return textArea1;
         }
@@ -1055,7 +1055,7 @@ public class JXCWindowRenderer {
         // check visible dialogs
         for (final Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
-                final GUIText textArea2 = dialog.activateCommandInput();
+                final GUIText textArea2 = activateCommandInput(dialog);
                 if (textArea2 != null) {
                     openDialog(dialog, false); // raise dialog
                     return textArea2;
@@ -1373,6 +1373,27 @@ public class JXCWindowRenderer {
         }
 
         return DEFAULT_NUM_LOOK_OBJECTS;
+    }
+
+    /**
+     * Returns the first command text field of a gui and make it active.
+     * @param gui the gui to check
+     * @return the comment text field, or <code>null</code> if this gui does not
+     *         contain any command text fields
+     */
+    @Nullable
+    public static GUIText activateCommandInput(@NotNull final Gui gui) {
+        final GUIText textArea = gui.getFirstElement(GUIText.class);
+        if (textArea == null) {
+            return null;
+        }
+
+        if (!textArea.getName().equals("command")) {
+            return null;
+        }
+
+        textArea.setActive(true);
+        return textArea;
     }
 
 }
