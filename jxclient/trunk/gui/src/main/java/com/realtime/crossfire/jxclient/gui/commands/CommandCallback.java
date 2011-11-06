@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import org.jetbrains.annotations.NotNull;
 

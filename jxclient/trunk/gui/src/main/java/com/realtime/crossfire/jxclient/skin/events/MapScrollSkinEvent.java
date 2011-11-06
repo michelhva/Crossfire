@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin.events;
 
-import com.realtime.crossfire.jxclient.gui.commands.CommandList;
+import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.map.MapScrollListener;
 import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import org.jetbrains.annotations.NotNull;

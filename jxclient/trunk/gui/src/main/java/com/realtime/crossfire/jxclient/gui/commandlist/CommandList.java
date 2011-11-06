@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.commands;
+package com.realtime.crossfire.jxclient.gui.commandlist;
 
 import java.util.ArrayList;
 import java.util.Collection;

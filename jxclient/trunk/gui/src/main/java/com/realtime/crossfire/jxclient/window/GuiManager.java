@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.gui.commands.CommandList;
+import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;

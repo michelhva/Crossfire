@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import org.jetbrains.annotations.NotNull;
 

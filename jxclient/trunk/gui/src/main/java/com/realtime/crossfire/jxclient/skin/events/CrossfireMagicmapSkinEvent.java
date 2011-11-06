@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin.events;
 
-import com.realtime.crossfire.jxclient.gui.commands.CommandList;
+import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import org.jetbrains.annotations.NotNull;
