@@ -138,13 +138,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     private final EventListenerList2<CrossfireFaceListener> crossfireFaceListeners = new EventListenerList2<CrossfireFaceListener>(CrossfireFaceListener.class);
 
     /**
-     * The {@link CrossfireSpellListener CrossfireSpellListeners} to be
-     * notified.
-     */
-    @NotNull
-    private final EventListenerList2<CrossfireSpellListener> crossfireSpellListeners = new EventListenerList2<CrossfireSpellListener>(CrossfireSpellListener.class);
-
-    /**
      * The {@link CrossfireQuestListener CrossfireQuestListeners} to be
      * notified.
      */
@@ -344,14 +337,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * {@inheritDoc}
      */
     @Override
-    public void addCrossfireSpellListener(@NotNull final CrossfireSpellListener listener) {
-        crossfireSpellListeners.add(listener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void addCrossfireQuestListener(@NotNull final CrossfireQuestListener listener) {
         crossfireQuestListeners.add(listener);
     }
@@ -502,12 +487,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         }
     }
 
-    protected void fireAddSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, @NotNull final String name, @NotNull final String message) {
-        for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners.getListeners()) {
-            crossfireSpellListener.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
-        }
-    }
-
     protected void fireAddAnimation(final int animation, final int flags, @NotNull final int[] faces) {
         if (crossfireUpdateMapListener != null) {
             crossfireUpdateMapListener.addAnimation(animation, flags, faces);
@@ -529,12 +508,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     protected void fireDelitemReceived(@NotNull final int[] tags) {
         for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
             crossfireUpdateItemListener.delitemReceived(tags);
-        }
-    }
-
-    protected void fireDeleteSpell(final int tag) {
-        for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners.getListeners()) {
-            crossfireSpellListener.deleteSpell(tag);
         }
     }
 
@@ -644,12 +617,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     protected void fireUpdateQuest(final int code, final boolean end, @NotNull final String step) {
         for (final CrossfireQuestListener crossfireQuestListener : crossfireQuestListeners.getListeners()) {
             crossfireQuestListener.updateQuest(code, end, step);
-        }
-    }
-
-    protected void fireUpdateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) {
-        for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners.getListeners()) {
-            crossfireSpellListener.updateSpell(flags, tag, mana, grace, damage);
         }
     }
 

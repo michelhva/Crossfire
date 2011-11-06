@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
+import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import org.jetbrains.annotations.NotNull;
@@ -45,6 +46,9 @@ public class Model {
     @NotNull
     private final GuiStateManager guiStateManager = new GuiStateManager();
 
+    @NotNull
+    private SpellsManager spellsManager;
+
     @Deprecated
     public void setSkillSet(@NotNull final SkillSet skillSet) {
         this.skillSet = skillSet;
@@ -53,6 +57,11 @@ public class Model {
     @Deprecated
     public void setStats(@NotNull final Stats stats) {
         this.stats = stats;
+    }
+
+    @Deprecated
+    public void setSpellsManager(@NotNull final SpellsManager spellsManager) {
+        this.spellsManager = spellsManager;
     }
 
     @NotNull
@@ -73,6 +82,11 @@ public class Model {
     @NotNull
     public GuiStateManager getGuiStateManager() {
         return guiStateManager;
+    }
+
+    @NotNull
+    public SpellsManager getSpellsManager() {
+        return spellsManager;
     }
 
 }
