@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.commands.CommandExecutor;
-import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.SmoothFaces;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
@@ -36,6 +35,7 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skin.io.JXCSkinLoader;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;

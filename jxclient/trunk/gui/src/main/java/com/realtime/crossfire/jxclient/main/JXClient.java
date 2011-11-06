@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.DebugMessagesCommand;
 import com.realtime.crossfire.jxclient.commands.ExecCommand;
-import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.commands.ScreenshotCommand;
 import com.realtime.crossfire.jxclient.commands.ScriptCommand;
 import com.realtime.crossfire.jxclient.commands.ScriptkillCommand;
@@ -66,6 +65,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.crossfire.DefaultCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.Model;
 import com.realtime.crossfire.jxclient.settings.Filenames;
+import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;

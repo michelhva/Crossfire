@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.commands;
+package com.realtime.crossfire.jxclient.settings;
 
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;

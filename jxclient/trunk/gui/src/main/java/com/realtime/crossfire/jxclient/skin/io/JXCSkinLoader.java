@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.skin.io;
 
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.commands.CommandExecutor;
-import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.faces.FacesProviderFactory;
@@ -106,6 +105,7 @@ import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
+import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;

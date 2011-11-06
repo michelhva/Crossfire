@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.skin.io;
 
 import com.realtime.crossfire.jxclient.commands.CommandExecutor;
-import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCharacterCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountLinkCharacterCommand;
@@ -67,6 +66,7 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
