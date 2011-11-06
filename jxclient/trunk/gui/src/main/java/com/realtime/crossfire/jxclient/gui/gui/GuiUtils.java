@@ -102,9 +102,9 @@ public class GuiUtils {
      * @param element the element
      * @return whether the element is active
      */
-    public static boolean isActive(@NotNull final Component element) {
+    public static boolean isActive(@NotNull final ActivatableGUIElement element) {
         final Gui gui = getGui(element);
-        return gui != null && gui.getActiveElement() == element;
+        return gui != null && gui.isActiveElement(element);
     }
 
 }
