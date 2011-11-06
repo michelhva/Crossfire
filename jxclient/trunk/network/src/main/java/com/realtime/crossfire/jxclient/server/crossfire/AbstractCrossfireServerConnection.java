@@ -78,13 +78,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     private final EventListenerList2<CrossfireMagicmapListener> magicmapListeners = new EventListenerList2<CrossfireMagicmapListener>(CrossfireMagicmapListener.class);
 
     /**
-     * The {@link CrossfireUpdateFaceListener CrossfireUpdateFaceListeners} to
-     * be notified.
-     */
-    @NotNull
-    private final EventListenerList2<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new EventListenerList2<CrossfireUpdateFaceListener>(CrossfireUpdateFaceListener.class);
-
-    /**
      * The {@link CrossfireUpdateItemListener CrossfireUpdateItemListeners} to
      * be notified.
      */
@@ -234,14 +227,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     @Override
     public void removeCrossfireMagicmapListener(@NotNull final CrossfireMagicmapListener listener) {
         magicmapListeners.remove(listener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void addCrossfireUpdateFaceListener(@NotNull final CrossfireUpdateFaceListener listener) {
-        crossfireUpdateFaceListeners.add(listener);
     }
 
     /**
@@ -497,13 +482,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     protected void clearFailure() {
         for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners.getListeners()) {
             crossfireFailureListener.clearFailure();
-        }
-    }
-
-    protected void fireUpdateFace(@NotNull final ByteBuffer packet, final int faceDataPosition, final int faceNum, final int faceSetNum) {
-        for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners.getListeners()) {
-            packet.position(faceDataPosition);
-            listener.updateFace(faceNum, faceSetNum, packet);
         }
     }
 

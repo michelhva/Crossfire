@@ -98,12 +98,6 @@ public interface CrossfireServerConnection extends ServerConnection {
     void removeCrossfireMagicmapListener(@NotNull CrossfireMagicmapListener listener);
 
     /**
-     * Add a listener to be notified about face image changes.
-     * @param listener the listener to add
-     */
-    void addCrossfireUpdateFaceListener(@NotNull CrossfireUpdateFaceListener listener);
-
-    /**
      * Adds a listener to be notified about item changes.
      * @param crossfireUpdateItemListener the listener to add
      */

@@ -2383,7 +2383,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len);
         }
-        fireUpdateFace(packet, faceDataPosition, faceNum, faceSetNum);
+        packet.position(faceDataPosition);
+        model.getAskfaceFaceQueue().faceReceived(faceNum, faceSetNum, packet);
         notifyPacketWatcherListenersMixed(packet, args);
     }
 

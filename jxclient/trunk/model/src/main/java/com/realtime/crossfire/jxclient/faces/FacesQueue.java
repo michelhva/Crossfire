@@ -21,9 +21,7 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * The main {@link FaceQueue} for loading faces. It first delegates to a {@link
@@ -45,7 +43,7 @@ public class FacesQueue extends AbstractFaceQueue {
      * server.
      */
     @NotNull
-    private final FaceQueue askfaceFaceQueue;
+    private final FaceQueue faceQueue;
 
     /**
      * The {@link FaceQueueListener} attached to {@link #fileCacheFaceQueue}.
@@ -60,13 +58,13 @@ public class FacesQueue extends AbstractFaceQueue {
 
         @Override
         public void faceFailed(@NotNull final Face face) {
-            askfaceFaceQueue.loadFace(face);
+            faceQueue.loadFace(face);
         }
 
     };
 
     /**
-     * The {@link FaceQueueListener} attached to {@link #askfaceFaceQueue}.
+     * The {@link FaceQueueListener} attached to {@link #faceQueue}.
      */
     @NotNull
     private final FaceQueueListener askfaceFaceQueueListener = new FaceQueueListener() {
@@ -86,8 +84,7 @@ public class FacesQueue extends AbstractFaceQueue {
 
     /**
      * Creates a new instance.
-     * @param crossfireServerConnection the server connection for sending
-     * askface commands
+     * @param faceQueue the face queue for sending askface commands
      * @param imageCacheOriginal the image cache used for loading original image
      * files
      * @param imageCacheScaled the image cache used for loading scaled image
@@ -95,11 +92,11 @@ public class FacesQueue extends AbstractFaceQueue {
      * @param imageCacheMagicMap the image cache used for loading magic map
      * image files
      */
-    public FacesQueue(@Nullable final CrossfireServerConnection crossfireServerConnection, @NotNull final ImageCache imageCacheOriginal, @NotNull final ImageCache imageCacheScaled, @NotNull final ImageCache imageCacheMagicMap) {
+    public FacesQueue(@NotNull final FaceQueue faceQueue, @NotNull final ImageCache imageCacheOriginal, @NotNull final ImageCache imageCacheScaled, @NotNull final ImageCache imageCacheMagicMap) {
         fileCacheFaceQueue = new FileCacheFaceQueue(imageCacheOriginal, imageCacheScaled, imageCacheMagicMap);
-        askfaceFaceQueue = new AskfaceFaceQueue(crossfireServerConnection);
+        this.faceQueue = faceQueue;
         fileCacheFaceQueue.addFaceQueueListener(fileCacheFaceQueueListener);
-        askfaceFaceQueue.addFaceQueueListener(askfaceFaceQueueListener);
+        faceQueue.addFaceQueueListener(askfaceFaceQueueListener);
     }
 
     /**
@@ -108,7 +105,7 @@ public class FacesQueue extends AbstractFaceQueue {
     @Override
     public void reset() {
         fileCacheFaceQueue.reset();
-        askfaceFaceQueue.reset();
+        faceQueue.reset();
     }
 
     /**
