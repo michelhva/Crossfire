@@ -719,7 +719,7 @@ public class GuiManager {
         // check invisible dialogs
         assert skin != null;
         for (final Gui dialog : skin) {
-            final GUIText textArea3 = dialog.activateCommandInput();
+            final GUIText textArea3 = JXCWindowRenderer.activateCommandInput(dialog);
             if (textArea3 != null) {
                 openDialog(dialog, true);
                 return textArea3;

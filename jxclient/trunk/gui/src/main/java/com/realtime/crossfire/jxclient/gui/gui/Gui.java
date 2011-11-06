@@ -387,26 +387,6 @@ public class Gui extends JComponent {
     }
 
     /**
-     * Returns the first command text field of this gui and make it active.
-     * @return the comment text field, or <code>null</code> if this gui does not
-     *         contain any command text fields
-     */
-    @Nullable
-    public GUIText activateCommandInput() {
-        final GUIText textArea = getFirstElement(GUIText.class);
-        if (textArea == null) {
-            return null;
-        }
-
-        if (!textArea.getName().equals("command")) {
-            return null;
-        }
-
-        textArea.setActive(true);
-        return textArea;
-    }
-
-    /**
      * Deactivates the command text input field of this dialog. Does nothing if
      * the command text input field is not active or if this dialog has no
      * command text input field.
