@@ -138,13 +138,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     private final EventListenerList2<CrossfireFaceListener> crossfireFaceListeners = new EventListenerList2<CrossfireFaceListener>(CrossfireFaceListener.class);
 
     /**
-     * The {@link CrossfireQuestListener CrossfireQuestListeners} to be
-     * notified.
-     */
-    @NotNull
-    private final EventListenerList2<CrossfireQuestListener> crossfireQuestListeners = new EventListenerList2<CrossfireQuestListener>(CrossfireQuestListener.class);
-
-    /**
      * The {@link ReceivedPacketListener ReceivedPacketListeners} to be
      * notified.
      */
@@ -337,14 +330,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * {@inheritDoc}
      */
     @Override
-    public void addCrossfireQuestListener(@NotNull final CrossfireQuestListener listener) {
-        crossfireQuestListeners.add(listener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void addPacketWatcherListener(@NotNull final ReceivedPacketListener listener) {
         receivedPacketListeners.add(listener);
     }
@@ -481,12 +466,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         }
     }
 
-    protected void fireAddQuest(final int code, @NotNull final String title, final int face, final boolean replay, final int parent, final boolean end, @NotNull final String step) {
-        for (final CrossfireQuestListener crossfireQuestListener : crossfireQuestListeners.getListeners()) {
-            crossfireQuestListener.addQuest(code, title, face, replay, parent, end, step);
-        }
-    }
-
     protected void fireAddAnimation(final int animation, final int flags, @NotNull final int[] faces) {
         if (crossfireUpdateMapListener != null) {
             crossfireUpdateMapListener.addAnimation(animation, flags, faces);
@@ -611,12 +590,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     protected void fireUpditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
         for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
             crossfireUpdateItemListener.upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
-        }
-    }
-
-    protected void fireUpdateQuest(final int code, final boolean end, @NotNull final String step) {
-        for (final CrossfireQuestListener crossfireQuestListener : crossfireQuestListeners.getListeners()) {
-            crossfireQuestListener.updateQuest(code, end, step);
         }
     }
 
@@ -848,6 +821,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
 
     protected void fireSelectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
         model.getSpellsManager().selectCharacter();
+        model.getQuestsManager().selectCharacter();
         for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
             crossfireAccountListener.selectCharacter(accountName, characterName);
         }

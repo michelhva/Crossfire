@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
+import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
@@ -50,6 +51,9 @@ public class Model {
     private final SpellsManager spellsManager = new SpellsManager(guiStateManager, skillSet, stats);
 
     @NotNull
+    private final QuestsManager questsManager = new QuestsManager(guiStateManager);
+
+    @NotNull
     public SkillSet getSkillSet() {
         return skillSet;
     }
@@ -72,6 +76,11 @@ public class Model {
     @NotNull
     public SpellsManager getSpellsManager() {
         return spellsManager;
+    }
+
+    @NotNull
+    public QuestsManager getQuestsManager() {
+        return questsManager;
     }
 
 }

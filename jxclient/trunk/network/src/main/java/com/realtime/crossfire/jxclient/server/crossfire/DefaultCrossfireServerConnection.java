@@ -2065,7 +2065,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv addquest code="+code+" title="+title+" face="+face+"replay="+replay+" end="+end+" desc="+step);
             }
-            fireAddQuest(code, title, face, replay == 1, parent, end == 1, step);
+            model.getQuestsManager().addQuest(code, title, face, replay == 1, parent, end == 1, step);
         }
         notifyPacketWatcherListenersMixed(packet, args);
     }
@@ -3143,7 +3143,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv updquest code="+code+" end="+end+" description="+step);
         }
-        fireUpdateQuest(code, end == 1, step);
+        model.getQuestsManager().updateQuest(code, end == 1, step);
         notifyPacketWatcherListenersMixed(packet, args);
     }
 

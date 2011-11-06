@@ -63,7 +63,6 @@ import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverProcessor;
-import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
@@ -195,8 +194,7 @@ public class JXClient {
                                 final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, model.getGuiStateManager());
                                 new CfMapUpdater(mapUpdaterState, server, facesManager, model.getGuiStateManager());
                                 final SpellsView spellsView = new SpellsView(model.getSpellsManager(), facesManager);
-                                final QuestsManager questsManager = new QuestsManager(server, model.getGuiStateManager());
-                                final QuestsView questsView = new QuestsView(questsManager, facesManager);
+                                final QuestsView questsView = new QuestsView(model.getQuestsManager(), facesManager);
                                 final CommandQueue commandQueue = new CommandQueue(server, model.getGuiStateManager());
                                 final ScriptManager scriptManager = new ScriptManager(commandQueue, server, model.getStats(), floorView, itemSet, model.getSpellsManager(), mapUpdaterState, model.getSkillSet());
                                 final Shortcuts shortcuts = new Shortcuts(commandQueue, model.getSpellsManager());
@@ -245,7 +243,7 @@ public class JXClient {
                                         final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                         commandCallback.init(guiManager);
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
-                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsView, model.getSpellsManager(), facesManager, model.getStats(), mapUpdaterState, defaultKeyBindings, optionManager, model.getExperienceTable(), model.getSkillSet(), options.getTileSize(), keybindingsManager, questsManager, questsView);
+                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsView, model.getSpellsManager(), facesManager, model.getStats(), mapUpdaterState, defaultKeyBindings, optionManager, model.getExperienceTable(), model.getSkillSet(), options.getTileSize(), keybindingsManager, model.getQuestsManager(), questsView);
                                         final SmoothFaces smoothFaces = new SmoothFaces(server);
                                         final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, model.getGuiStateManager(), tooltipManager, commandQueue, jxcSkinLoader, commandExecutor, shortcuts, characterModel, smoothFaces, guiCommandFactory);
                                         new FacesTracker(model.getGuiStateManager(), facesManager);
