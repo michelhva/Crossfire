@@ -54,7 +54,7 @@ public class GUISpellList extends GUIItemList {
      * The keybinding for displaying shortcuts.
      */
     @NotNull
-    private final KeybindingsManager keybindings;
+    private final KeybindingsManager keybindingsManager;
 
     /**
      * Creates a new instance.
@@ -68,12 +68,12 @@ public class GUISpellList extends GUIItemList {
      * selected item.
      * @param itemItemFactory the factory for creating item instances
      * @param spellsManager the spells to display
-     * @param keybindings the bindings for displaying shortcuts
+     * @param keybindingsManager the bindings for displaying shortcuts
      */
-    public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory, @NotNull final SpellsManager spellsManager, @NotNull final KeybindingsManager keybindings) {
+    public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory, @NotNull final SpellsManager spellsManager, @NotNull final KeybindingsManager keybindingsManager) {
         super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, itemItemFactory);
         this.spellsManager = spellsManager;
-        this.keybindings = keybindings;
+        this.keybindingsManager = keybindingsManager;
     }
 
     /**
@@ -91,7 +91,7 @@ public class GUISpellList extends GUIItemList {
         // because key bindings can specify partial names, we search in 2 steps:
         // - search all bindings with the first spell letter
         // - from those bindings only keep the ones the spell's command matches
-        final Iterable<KeyBinding> bindings = keybindings.getBindingsForPartialCommand(search);
+        final Iterable<KeyBinding> bindings = keybindingsManager.getBindingsForPartialCommand(search);
         boolean first = true;
         final StringBuilder sb = new StringBuilder();
 
