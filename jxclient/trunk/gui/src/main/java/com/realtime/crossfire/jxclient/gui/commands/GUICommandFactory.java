@@ -22,6 +22,8 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommand;
+import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.textinput.CommandExecutor;
 import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import java.util.regex.Pattern;

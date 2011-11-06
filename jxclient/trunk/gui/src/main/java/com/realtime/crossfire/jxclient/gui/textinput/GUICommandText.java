@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.textinput;
 
-import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
-import com.realtime.crossfire.jxclient.gui.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;

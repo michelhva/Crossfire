@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.gui.commands.CommandExecutor;
+import com.realtime.crossfire.jxclient.gui.textinput.CommandExecutor;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import org.jetbrains.annotations.NotNull;
 

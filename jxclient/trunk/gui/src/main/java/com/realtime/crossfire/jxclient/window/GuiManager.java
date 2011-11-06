@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
-import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
@@ -32,6 +31,7 @@ import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
+import com.realtime.crossfire.jxclient.gui.textinput.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
