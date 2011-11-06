@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.util.Formatter;
@@ -70,20 +69,20 @@ public class GUILabelStats extends GUIOneLineLabel {
         @Override
         public void statChanged(final int statNo, final int value) {
             switch (stat) {
-            case CrossfireStatsListener.CS_STAT_SPEED:
+            case Stats.CS_STAT_SPEED:
                 if (stat == statNo) {
                     setText(Formatter.formatFloat(stats.getFloatStat(stat), 2));
                 }
                 break;
 
-            case CrossfireStatsListener.CS_STAT_WEAP_SP:
+            case Stats.CS_STAT_WEAP_SP:
                 if (stat == statNo) {
                     setText(Formatter.formatFloat(stats.getWeaponSpeed(), 2));
                 }
                 break;
 
-            case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
-            case CrossfireStatsListener.C_STAT_WEIGHT:
+            case Stats.CS_STAT_WEIGHT_LIM:
+            case Stats.C_STAT_WEIGHT:
                 if (stat == statNo) {
                     //noinspection IntegerDivisionInFloatingPointContext
                     setText(Formatter.formatFloat(((value+50)/100)/10.0, 1));
@@ -106,14 +105,14 @@ public class GUILabelStats extends GUIOneLineLabel {
 
         @Override
         public void titleChanged(@NotNull final String title) {
-            if (stat == CrossfireStatsListener.CS_STAT_TITLE) {
+            if (stat == Stats.CS_STAT_TITLE) {
                 setText(title);
             }
         }
 
         @Override
         public void rangeChanged(@NotNull final String range) {
-            if (stat != CrossfireStatsListener.CS_STAT_RANGE) {
+            if (stat != Stats.CS_STAT_RANGE) {
                 return;
             }
 
@@ -137,14 +136,14 @@ public class GUILabelStats extends GUIOneLineLabel {
 
         @Override
         public void experienceChanged(final long exp) {
-            if (stat == CrossfireStatsListener.CS_STAT_EXP || stat == CrossfireStatsListener.CS_STAT_EXP64) {
+            if (stat == Stats.CS_STAT_EXP || stat == Stats.CS_STAT_EXP64) {
                 setText(String.valueOf(exp));
             }
         }
 
         @Override
         public void experienceNextLevelChanged(final long expNextLevel) {
-            if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL) {
+            if (stat == Stats.C_STAT_EXP_NEXT_LEVEL) {
                 setText(String.valueOf(expNextLevel));
             }
         }

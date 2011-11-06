@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.UpdItem;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
@@ -91,7 +90,7 @@ public class ItemsManager {
             stats.setActiveSkill("");
             skillSet.clearNumberedSkills();
             itemSet.setPlayer(new CfPlayer(tag, weight, facesManager.getFace(faceNum), name));
-            stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, weight);
+            stats.setStat(Stats.C_STAT_WEIGHT, weight);
         }
 
         @Override
@@ -100,7 +99,7 @@ public class ItemsManager {
             if ((flags&UpdItem.UPD_WEIGHT) != 0) {
                 final CfItem player = itemSet.getPlayer();
                 if (player != null && player.getTag() == tag) {
-                    stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, valWeight);
+                    stats.setStat(Stats.C_STAT_WEIGHT, valWeight);
                 }
             }
         }

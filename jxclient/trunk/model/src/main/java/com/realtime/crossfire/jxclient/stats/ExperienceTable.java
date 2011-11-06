@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.stats;
 
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireExpTableListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
@@ -48,31 +46,6 @@ public class ExperienceTable {
      * The maximum level value in {@link #info}.
      */
     private int maxLevel = 0;
-
-    /**
-     * The {@link CrossfireExpTableListener} to receive updated experience
-     * tables.
-     */
-    @NotNull
-    private final CrossfireExpTableListener crossfireExpTableListener = new CrossfireExpTableListener() {
-
-        @Override
-        public void expTableReceived(@NotNull final long[] expTable) {
-            clear();
-            for (int level = 1; level < expTable.length; level++) {
-                add(level, expTable[level]);
-            }
-        }
-
-    };
-
-    /**
-     * Creates a new instance.
-     * @param crossfireServerConnection the connection to monitor
-     */
-    public ExperienceTable(@NotNull final CrossfireServerConnection crossfireServerConnection) {
-        crossfireServerConnection.addCrossfireExpTableListener(crossfireExpTableListener);
-    }
 
     /**
      * Forgets about all level-$&gt; mappings.
@@ -169,6 +142,17 @@ public class ExperienceTable {
         }
 
         return (int)((currentExp-expThisLevel)*100/(expNextLevel-expThisLevel));
+    }
+
+    /**
+     * Updates the experience table information.
+     * @param expTable the new experience table
+     */
+    public void setExpTable(@NotNull final long[] expTable) {
+        clear();
+        for (int level = 1; level < expTable.length; level++) {
+            add(level, expTable[level]);
+        }
     }
 
 }

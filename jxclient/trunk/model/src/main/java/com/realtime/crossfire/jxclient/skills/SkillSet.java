@@ -23,8 +23,8 @@ package com.realtime.crossfire.jxclient.skills;
 
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -42,7 +42,7 @@ public class SkillSet {
      * the server did not provide a mapping.
      */
     @NotNull
-    private final Skill[] numberedSkills = new Skill[CrossfireStatsListener.CS_NUM_SKILLS];
+    private final Skill[] numberedSkills = new Skill[Stats.CS_NUM_SKILLS];
 
     /**
      * Maps skill name to skill instance.
@@ -116,7 +116,7 @@ public class SkillSet {
      * @param skillName the skill name
      */
     public void addSkill(final int id, @NotNull final String skillName) {
-        final int index = id-CrossfireStatsListener.CS_STAT_SKILLINFO;
+        final int index = id-Stats.CS_STAT_SKILLINFO;
         final Skill oldSkill = numberedSkills[index];
         final Skill newSkill = getNamedSkill(skillName);
         if (oldSkill == newSkill) {
@@ -164,7 +164,7 @@ public class SkillSet {
      */
     @Nullable
     public Skill getSkill(final int id) {
-        return numberedSkills[id-CrossfireStatsListener.CS_STAT_SKILLINFO];
+        return numberedSkills[id-Stats.CS_STAT_SKILLINFO];
     }
 
 }

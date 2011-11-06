@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.scripts;
 
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
@@ -39,63 +39,63 @@ public class StatUtils {
     private static final Map<Integer, String> STAT_NAMES = new HashMap<Integer, String>();
 
     static {
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_HP, "hp");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_MAXHP, "maxhp");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_SP, "sp");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_MAXSP, "maxsp");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_STR, "str");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_RACE_STR, "str_race");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_BASE_STR, "str_base");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_APPLIED_STR, "str_applied");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_INT, "int");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_RACE_INT, "int_race");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_BASE_INT, "int_base");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_APPLIED_INT, "int_applied");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_WIS, "wis");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_RACE_WIS, "wis_race");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_BASE_WIS, "wis_base");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_APPLIED_WIS, "wis_applied");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_DEX, "dex");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_RACE_DEX, "dex_race");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_BASE_DEX, "dex_base");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_APPLIED_DEX, "dex_applied");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_CON, "con");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_RACE_CON, "con_race");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_BASE_CON, "con_base");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_APPLIED_CON, "con_applied");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_CHA, "cha");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_RACE_CHA, "cha_race");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_BASE_CHA, "cha_base");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_APPLIED_CHA, "cha_applied");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_LEVEL, "level");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_WC, "wc");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_AC, "ac");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_DAM, "dam");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_ARMOUR, "armour");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_FOOD, "food");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_POW, "pow");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_RACE_POW, "pow_race");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_BASE_POW, "pow_base");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_APPLIED_POW, "pow_applied");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_GRACE, "grace");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_MAXGRACE, "maxgrace");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_FLAGS, "flags");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_EXP, "exp");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_SPEED, "speed");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_WEAP_SP, "weap_sp");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_WEIGHT_LIM, "weight_lim");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_SPELL_ATTUNE, "spell_attune");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_SPELL_REPEL, "spell_repel");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_SPELL_DENY, "spell_deny");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_EXP64, "exp");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_RANGE, "range");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_TITLE, "title");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_GOLEM_HP, "golem_hp");
-        STAT_NAMES.put(CrossfireStatsListener.CS_STAT_GOLEM_MAXHP, "golem_maxhp");
-        for (int stat = CrossfireStatsListener.CS_STAT_RESIST_START; stat < CrossfireStatsListener.CS_STAT_RESIST_START+CrossfireStatsListener.RESIST_TYPES; stat++) {
+        STAT_NAMES.put(Stats.CS_STAT_HP, "hp");
+        STAT_NAMES.put(Stats.CS_STAT_MAXHP, "maxhp");
+        STAT_NAMES.put(Stats.CS_STAT_SP, "sp");
+        STAT_NAMES.put(Stats.CS_STAT_MAXSP, "maxsp");
+        STAT_NAMES.put(Stats.CS_STAT_STR, "str");
+        STAT_NAMES.put(Stats.CS_STAT_RACE_STR, "str_race");
+        STAT_NAMES.put(Stats.CS_STAT_BASE_STR, "str_base");
+        STAT_NAMES.put(Stats.CS_STAT_APPLIED_STR, "str_applied");
+        STAT_NAMES.put(Stats.CS_STAT_INT, "int");
+        STAT_NAMES.put(Stats.CS_STAT_RACE_INT, "int_race");
+        STAT_NAMES.put(Stats.CS_STAT_BASE_INT, "int_base");
+        STAT_NAMES.put(Stats.CS_STAT_APPLIED_INT, "int_applied");
+        STAT_NAMES.put(Stats.CS_STAT_WIS, "wis");
+        STAT_NAMES.put(Stats.CS_STAT_RACE_WIS, "wis_race");
+        STAT_NAMES.put(Stats.CS_STAT_BASE_WIS, "wis_base");
+        STAT_NAMES.put(Stats.CS_STAT_APPLIED_WIS, "wis_applied");
+        STAT_NAMES.put(Stats.CS_STAT_DEX, "dex");
+        STAT_NAMES.put(Stats.CS_STAT_RACE_DEX, "dex_race");
+        STAT_NAMES.put(Stats.CS_STAT_BASE_DEX, "dex_base");
+        STAT_NAMES.put(Stats.CS_STAT_APPLIED_DEX, "dex_applied");
+        STAT_NAMES.put(Stats.CS_STAT_CON, "con");
+        STAT_NAMES.put(Stats.CS_STAT_RACE_CON, "con_race");
+        STAT_NAMES.put(Stats.CS_STAT_BASE_CON, "con_base");
+        STAT_NAMES.put(Stats.CS_STAT_APPLIED_CON, "con_applied");
+        STAT_NAMES.put(Stats.CS_STAT_CHA, "cha");
+        STAT_NAMES.put(Stats.CS_STAT_RACE_CHA, "cha_race");
+        STAT_NAMES.put(Stats.CS_STAT_BASE_CHA, "cha_base");
+        STAT_NAMES.put(Stats.CS_STAT_APPLIED_CHA, "cha_applied");
+        STAT_NAMES.put(Stats.CS_STAT_LEVEL, "level");
+        STAT_NAMES.put(Stats.CS_STAT_WC, "wc");
+        STAT_NAMES.put(Stats.CS_STAT_AC, "ac");
+        STAT_NAMES.put(Stats.CS_STAT_DAM, "dam");
+        STAT_NAMES.put(Stats.CS_STAT_ARMOUR, "armour");
+        STAT_NAMES.put(Stats.CS_STAT_FOOD, "food");
+        STAT_NAMES.put(Stats.CS_STAT_POW, "pow");
+        STAT_NAMES.put(Stats.CS_STAT_RACE_POW, "pow_race");
+        STAT_NAMES.put(Stats.CS_STAT_BASE_POW, "pow_base");
+        STAT_NAMES.put(Stats.CS_STAT_APPLIED_POW, "pow_applied");
+        STAT_NAMES.put(Stats.CS_STAT_GRACE, "grace");
+        STAT_NAMES.put(Stats.CS_STAT_MAXGRACE, "maxgrace");
+        STAT_NAMES.put(Stats.CS_STAT_FLAGS, "flags");
+        STAT_NAMES.put(Stats.CS_STAT_EXP, "exp");
+        STAT_NAMES.put(Stats.CS_STAT_SPEED, "speed");
+        STAT_NAMES.put(Stats.CS_STAT_WEAP_SP, "weap_sp");
+        STAT_NAMES.put(Stats.CS_STAT_WEIGHT_LIM, "weight_lim");
+        STAT_NAMES.put(Stats.CS_STAT_SPELL_ATTUNE, "spell_attune");
+        STAT_NAMES.put(Stats.CS_STAT_SPELL_REPEL, "spell_repel");
+        STAT_NAMES.put(Stats.CS_STAT_SPELL_DENY, "spell_deny");
+        STAT_NAMES.put(Stats.CS_STAT_EXP64, "exp");
+        STAT_NAMES.put(Stats.CS_STAT_RANGE, "range");
+        STAT_NAMES.put(Stats.CS_STAT_TITLE, "title");
+        STAT_NAMES.put(Stats.CS_STAT_GOLEM_HP, "golem_hp");
+        STAT_NAMES.put(Stats.CS_STAT_GOLEM_MAXHP, "golem_maxhp");
+        for (int stat = Stats.CS_STAT_RESIST_START; stat < Stats.CS_STAT_RESIST_START+Stats.RESIST_TYPES; stat++) {
             STAT_NAMES.put(stat, "resists");
         }
-        for (int skill = CrossfireStatsListener.CS_STAT_SKILLINFO; skill < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; skill++) {
+        for (int skill = Stats.CS_STAT_SKILLINFO; skill < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS; skill++) {
             STAT_NAMES.put(skill, "skill");
         }
     }
