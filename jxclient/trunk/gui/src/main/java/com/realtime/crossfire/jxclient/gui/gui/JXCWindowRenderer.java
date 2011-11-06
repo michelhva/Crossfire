@@ -775,10 +775,7 @@ public class JXCWindowRenderer {
             return false;
         }
 
-        final ActivatableGUIElement activeElement = dialog.getActiveElement();
-        if (activeElement != null) {
-            activeElement.setActive(false);
-        }
+        dialog.setActiveElementActive(false);
         updateServerSettings();
         return true;
     }
@@ -794,10 +791,7 @@ public class JXCWindowRenderer {
         }
 
         if (openDialogsRemove(dialog)) {
-            final ActivatableGUIElement activeElement = dialog.getActiveElement();
-            if (activeElement != null) {
-                activeElement.setActive(false);
-            }
+            dialog.setActiveElementActive(false);
             updateServerSettings();
             return false;
         }

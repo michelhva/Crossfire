@@ -348,13 +348,14 @@ public class Gui extends JComponent {
     }
 
     /**
-     * Returns the gui element owning the focus.
-     * @return the gui element owning the focus, or <code>null</code> if no such
-     *         element exists
+     * Activates or deactivates the GUI element owning the focus. Does nothing
+     * if no focus owner exists.
+     * @param active whether to activate the GUI element
      */
-    @Nullable
-    public ActivatableGUIElement getActiveElement() {
-        return activeElement;
+    public void setActiveElementActive(final boolean active) {
+        if (activeElement != null) {
+            activeElement.setActive(active);
+        }
     }
 
     /**
