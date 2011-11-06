@@ -399,11 +399,11 @@ public class Gui extends JComponent {
             return null;
         }
 
-        textArea.setActive(true);
         if (!textArea.getName().equals("command")) {
             return null;
         }
 
+        textArea.setActive(true);
         return textArea;
     }
 
