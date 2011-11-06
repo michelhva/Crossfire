@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandListType;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManagerImpl;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.settings.options.Option;
@@ -129,11 +129,11 @@ public class DefaultJXCSkin implements JXCSkin {
     private AbstractLabel tooltipLabel = null;
 
     /**
-     * The {@link TooltipManager} currently attached to or <code>null</code> if
-     * not attached.
+     * The {@link TooltipManagerImpl} currently attached to or <code>null</code>
+     * if not attached.
      */
     @Nullable
-    private TooltipManager tooltipManager = null;
+    private TooltipManagerImpl tooltipManager = null;
 
     /**
      * Creates a new instance.
@@ -362,7 +362,7 @@ public class DefaultJXCSkin implements JXCSkin {
      * {@inheritDoc}
      */
     @Override
-    public void attach(@NotNull final TooltipManager tooltipManager) {
+    public void attach(@NotNull final TooltipManagerImpl tooltipManager) {
         if (this.tooltipManager != null) {
             throw new IllegalStateException("skin is already attached");
         }
@@ -380,7 +380,7 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @Override
     public void detach() {
-        final TooltipManager tmpTooltipManager = tooltipManager;
+        final TooltipManagerImpl tmpTooltipManager = tooltipManager;
         tooltipManager = null;
         if (tmpTooltipManager != null) {
             tmpTooltipManager.setTooltip(null);

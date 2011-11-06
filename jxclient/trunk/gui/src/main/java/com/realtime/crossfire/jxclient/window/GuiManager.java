@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManagerImpl;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
@@ -125,7 +126,7 @@ public class GuiManager {
      * The {@link TooltipManager} for this window.
      */
     @NotNull
-    private final TooltipManager tooltipManager;
+    private final TooltipManagerImpl tooltipManager;
 
     /**
      * The {@link Settings} to use.
@@ -340,7 +341,7 @@ public class GuiManager {
      * @param keybindingsManager the keybindings manager to use
      * @param connection the connection to use
      */
-    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GuiFactory guiFactory, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection) {
+    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManagerImpl tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GuiFactory guiFactory, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection) {
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         this.server = server;

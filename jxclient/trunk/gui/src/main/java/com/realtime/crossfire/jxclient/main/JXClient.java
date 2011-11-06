@@ -45,7 +45,7 @@ import com.realtime.crossfire.jxclient.gui.commands.ScreenshotFiles;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
-import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManagerImpl;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandExecutor;
 import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;
@@ -203,7 +203,7 @@ public class JXClient {
 
                                     @Override
                                     public void run() {
-                                        final TooltipManager tooltipManager = new TooltipManager();
+                                        final TooltipManagerImpl tooltipManager = new TooltipManagerImpl();
                                         final Pickup characterPickup;
                                         try {
                                             characterPickup = new Pickup(commandQueue, optionManager);
