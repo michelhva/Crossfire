@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.skin.io;
 
 import com.realtime.crossfire.jxclient.account.CharacterModel;
-import com.realtime.crossfire.jxclient.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.faces.FacesProviderFactory;
@@ -33,6 +32,7 @@ import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
 import com.realtime.crossfire.jxclient.gui.button.GUIButton;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCheckBoxOption;
+import com.realtime.crossfire.jxclient.gui.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.CommandListType;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupGauge;
