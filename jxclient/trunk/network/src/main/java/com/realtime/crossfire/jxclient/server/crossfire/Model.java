@@ -21,7 +21,10 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
+import com.realtime.crossfire.jxclient.stats.ExperienceTable;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -33,14 +36,43 @@ public class Model {
     @NotNull
     private SkillSet skillSet;
 
+    @NotNull
+    private Stats stats;
+
+    @NotNull
+    private final ExperienceTable experienceTable = new ExperienceTable();
+
+    @NotNull
+    private final GuiStateManager guiStateManager = new GuiStateManager();
+
     @Deprecated
     public void setSkillSet(@NotNull final SkillSet skillSet) {
         this.skillSet = skillSet;
     }
 
+    @Deprecated
+    public void setStats(@NotNull final Stats stats) {
+        this.stats = stats;
+    }
+
     @NotNull
     public SkillSet getSkillSet() {
         return skillSet;
+    }
+
+    @NotNull
+    public Stats getStats() {
+        return stats;
+    }
+
+    @NotNull
+    public ExperienceTable getExperienceTable() {
+        return experienceTable;
+    }
+
+    @NotNull
+    public GuiStateManager getGuiStateManager() {
+        return guiStateManager;
     }
 
 }

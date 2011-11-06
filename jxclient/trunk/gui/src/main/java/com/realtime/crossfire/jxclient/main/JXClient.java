@@ -51,7 +51,6 @@ import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.guistate.GuiState;
-import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.InventoryComparator;
 import com.realtime.crossfire.jxclient.items.InventoryView;
@@ -85,7 +84,6 @@ import com.realtime.crossfire.jxclient.sound.SoundWatcher;
 import com.realtime.crossfire.jxclient.sound.StatsWatcher;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
-import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
@@ -173,21 +171,20 @@ public class JXClient {
                             final CrossfireServerConnection server = new DefaultCrossfireServerConnection(model, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
                             server.start();
                             try {
-                                final GuiStateManager guiStateManager = new GuiStateManager(server);
-                                final ExperienceTable experienceTable = new ExperienceTable(server);
-                                final SkillSet skillSet = new SkillSet(guiStateManager);
+                                final SkillSet skillSet = new SkillSet(model.getGuiStateManager());
                                 model.setSkillSet(skillSet);
-                                final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
+                                final Stats stats = new Stats(model.getExperienceTable(), skillSet, model.getGuiStateManager());
+                                model.setStats(stats);
                                 final FaceCache faceCache = new FaceCache(server);
                                 final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
                                 final FacesManager facesManager = new DefaultFacesManager(faceCache, facesQueue);
                                 final ItemSet itemSet = new ItemSet();
                                 final InventoryView inventoryView = new InventoryView(itemSet, new InventoryComparator());
                                 final FloorView floorView = new FloorView(itemSet);
-                                new ItemsManager(server, facesManager, stats, skillSet, guiStateManager, itemSet);
+                                new ItemsManager(server, facesManager, stats, skillSet, model.getGuiStateManager(), itemSet);
                                 final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel);
-                                new MetaserverProcessor(metaserver, guiStateManager);
-                                final SoundManager soundManager = new SoundManager(guiStateManager, debugSoundOutputStreamWriter == null ? null : new DebugWriter(debugSoundOutputStreamWriter));
+                                new MetaserverProcessor(metaserver, model.getGuiStateManager());
+                                final SoundManager soundManager = new SoundManager(model.getGuiStateManager(), debugSoundOutputStreamWriter == null ? null : new DebugWriter(debugSoundOutputStreamWriter));
                                 try {
                                     optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
                                 } catch (final OptionException ex) {
@@ -202,13 +199,13 @@ public class JXClient {
                                 new PoisonWatcher(stats, server);
                                 new ActiveSkillWatcher(stats, server);
                                 final Macros macros = new Macros(server);
-                                final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, guiStateManager);
-                                new CfMapUpdater(mapUpdaterState, server, facesManager, guiStateManager);
-                                final SpellsManager spellsManager = new SpellsManager(server, guiStateManager, skillSet, stats);
+                                final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, model.getGuiStateManager());
+                                new CfMapUpdater(mapUpdaterState, server, facesManager, model.getGuiStateManager());
+                                final SpellsManager spellsManager = new SpellsManager(server, model.getGuiStateManager(), skillSet, stats);
                                 final SpellsView spellsView = new SpellsView(spellsManager, facesManager);
-                                final QuestsManager questsManager = new QuestsManager(server, guiStateManager);
+                                final QuestsManager questsManager = new QuestsManager(server, model.getGuiStateManager());
                                 final QuestsView questsView = new QuestsView(questsManager, facesManager);
-                                final CommandQueue commandQueue = new CommandQueue(server, guiStateManager);
+                                final CommandQueue commandQueue = new CommandQueue(server, model.getGuiStateManager());
                                 final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdaterState, skillSet);
                                 final Shortcuts shortcuts = new Shortcuts(commandQueue, spellsManager);
 
@@ -251,27 +248,27 @@ public class JXClient {
                                             return;
                                         }
                                         final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
-                                        final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
+                                        final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager());
                                         final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
-                                        final GuiManager guiManager = new GuiManager(guiStateManager, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
+                                        final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                         commandCallback.init(guiManager);
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
-                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsView, spellsManager, facesManager, stats, mapUpdaterState, defaultKeyBindings, optionManager, experienceTable, skillSet, options.getTileSize(), keybindingsManager, questsManager, questsView);
+                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsView, spellsManager, facesManager, stats, mapUpdaterState, defaultKeyBindings, optionManager, model.getExperienceTable(), skillSet, options.getTileSize(), keybindingsManager, questsManager, questsView);
                                         final SmoothFaces smoothFaces = new SmoothFaces(server);
-                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commandExecutor, shortcuts, characterModel, smoothFaces, guiCommandFactory);
-                                        new FacesTracker(guiStateManager, facesManager);
-                                        new PlayerNameTracker(guiStateManager, connection, itemSet);
-                                        new OutputCountTracker(guiStateManager, server, commandQueue);
-                                        final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, guiStateManager);
+                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, model.getGuiStateManager(), tooltipManager, commandQueue, jxcSkinLoader, commandExecutor, shortcuts, characterModel, smoothFaces, guiCommandFactory);
+                                        new FacesTracker(model.getGuiStateManager(), facesManager);
+                                        new PlayerNameTracker(model.getGuiStateManager(), connection, itemSet);
+                                        new OutputCountTracker(model.getGuiStateManager(), server, commandQueue);
+                                        final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, model.getGuiStateManager());
                                         final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
-                                        window[0] = new JXCWindow(exiter, server, optionManager, guiStateManager, windowRenderer, commandQueue, guiManager, keyHandler, characterModel, connection);
+                                        window[0] = new JXCWindow(exiter, server, optionManager, model.getGuiStateManager(), windowRenderer, commandQueue, guiManager, keyHandler, characterModel, connection);
                                         window[0].init(options.getResolution(), options.getSkin(), options.isFullScreen(), skinLoader);
                                         keybindingsManager.loadKeybindings();
                                         final String serverInfo = options.getServer();
                                         if (serverInfo != null) {
-                                            guiStateManager.connect(serverInfo);
+                                            model.getGuiStateManager().connect(serverInfo);
                                         } else {
-                                            guiStateManager.changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
+                                            model.getGuiStateManager().changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
                                         }
                                     }
 

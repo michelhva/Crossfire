@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
@@ -408,24 +407,24 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         } else if (params.equals("range")) {
             commandSent("request range "+stats.getRange());
         } else if (params.equals("weight")) {
-            commandSent("request weight "+stats.getStat(CrossfireStatsListener.CS_STAT_WEIGHT_LIM)+" "+itemSet.getPlayer().getWeight());
+            commandSent("request weight "+stats.getStat(Stats.CS_STAT_WEIGHT_LIM)+" "+itemSet.getPlayer().getWeight());
         } else if (params.equals("stat stats")) {
-            commandSent("request stat stats "+stats.getStat(CrossfireStatsListener.CS_STAT_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_CHA));
+            commandSent("request stat stats "+stats.getStat(Stats.CS_STAT_STR)+" "+stats.getStat(Stats.CS_STAT_CON)+" "+stats.getStat(Stats.CS_STAT_DEX)+" "+stats.getStat(Stats.CS_STAT_INT)+" "+stats.getStat(Stats.CS_STAT_WIS)+" "+stats.getStat(Stats.CS_STAT_POW)+" "+stats.getStat(Stats.CS_STAT_CHA));
         } else if (params.equals("stat stats_race")) {
-            commandSent("request stat stats_race "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_CHA));
+            commandSent("request stat stats_race "+stats.getStat(Stats.CS_STAT_RACE_STR)+" "+stats.getStat(Stats.CS_STAT_RACE_CON)+" "+stats.getStat(Stats.CS_STAT_RACE_DEX)+" "+stats.getStat(Stats.CS_STAT_RACE_INT)+" "+stats.getStat(Stats.CS_STAT_RACE_WIS)+" "+stats.getStat(Stats.CS_STAT_RACE_POW)+" "+stats.getStat(Stats.CS_STAT_RACE_CHA));
         } else if (params.equals("stat stats_base")) {
-            commandSent("request stat stats_base "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_CHA));
+            commandSent("request stat stats_base "+stats.getStat(Stats.CS_STAT_BASE_STR)+" "+stats.getStat(Stats.CS_STAT_BASE_CON)+" "+stats.getStat(Stats.CS_STAT_BASE_DEX)+" "+stats.getStat(Stats.CS_STAT_BASE_INT)+" "+stats.getStat(Stats.CS_STAT_BASE_WIS)+" "+stats.getStat(Stats.CS_STAT_BASE_POW)+" "+stats.getStat(Stats.CS_STAT_BASE_CHA));
         } else if (params.equals("stat stats_applied")) {
-            commandSent("request stat stats_applied "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_APPLIED_CHA));
+            commandSent("request stat stats_applied "+stats.getStat(Stats.CS_STAT_APPLIED_STR)+" "+stats.getStat(Stats.CS_STAT_APPLIED_CON)+" "+stats.getStat(Stats.CS_STAT_APPLIED_DEX)+" "+stats.getStat(Stats.CS_STAT_APPLIED_INT)+" "+stats.getStat(Stats.CS_STAT_APPLIED_WIS)+" "+stats.getStat(Stats.CS_STAT_APPLIED_POW)+" "+stats.getStat(Stats.CS_STAT_APPLIED_CHA));
         } else if (params.equals("stat cmbt")) {
-            commandSent("request stat cmbt "+stats.getStat(CrossfireStatsListener.CS_STAT_WC)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_AC)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_DAM)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SPEED)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_WEAP_SP));
+            commandSent("request stat cmbt "+stats.getStat(Stats.CS_STAT_WC)+" "+stats.getStat(Stats.CS_STAT_AC)+" "+stats.getStat(Stats.CS_STAT_DAM)+" "+stats.getStat(Stats.CS_STAT_SPEED)+" "+stats.getStat(Stats.CS_STAT_WEAP_SP));
         } else if (params.equals("stat hp")) {
-            commandSent("request stat hp "+stats.getStat(CrossfireStatsListener.CS_STAT_HP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_MAXHP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_MAXSP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_GRACE)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_FOOD));
+            commandSent("request stat hp "+stats.getStat(Stats.CS_STAT_HP)+" "+stats.getStat(Stats.CS_STAT_MAXHP)+" "+stats.getStat(Stats.CS_STAT_SP)+" "+stats.getStat(Stats.CS_STAT_MAXSP)+" "+stats.getStat(Stats.CS_STAT_GRACE)+" "+stats.getStat(Stats.CS_STAT_MAXGRACE)+" "+stats.getStat(Stats.CS_STAT_FOOD));
         } else if (params.equals("stat xp")) {
             final StringBuilder sb = new StringBuilder("request stat xp ");
-            sb.append(stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL));
+            sb.append(stats.getStat(Stats.CS_STAT_LEVEL));
             sb.append(' ').append(stats.getExperience());
-            for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++) {
+            for (int i = Stats.CS_STAT_SKILLINFO; i < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS; i++) {
                 final Skill skill = skillSet.getSkill(i);
                 if (skill != null) {
                     sb.append(' ').append(skill.getLevel());
@@ -437,19 +436,19 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             commandSent(sb.toString());
         } else if (params.equals("stat resists")) {
             final StringBuilder sb = new StringBuilder("request stat resists");
-            for (int i = CrossfireStatsListener.CS_STAT_RESIST_START; i <= CrossfireStatsListener.CS_STAT_RESIST_END; i++) {
+            for (int i = Stats.CS_STAT_RESIST_START; i <= Stats.CS_STAT_RESIST_END; i++) {
                 sb.append(' ');
                 sb.append(stats.getStat(i));
             }
             // add dummy values for GTK client compatibility
-            for (int i = CrossfireStatsListener.CS_STAT_RESIST_END+1-CrossfireStatsListener.CS_STAT_RESIST_START; i < 30; i++) {
+            for (int i = Stats.CS_STAT_RESIST_END+1-Stats.CS_STAT_RESIST_START; i < 30; i++) {
                 sb.append(" 0");
             }
             commandSent(sb.toString());
         } else if (params.equals("stat paths")) {
-            commandSent("request stat paths "+stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_ATTUNE)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_REPEL)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_DENY));
+            commandSent("request stat paths "+stats.getStat(Stats.CS_STAT_SPELL_ATTUNE)+" "+stats.getStat(Stats.CS_STAT_SPELL_REPEL)+" "+stats.getStat(Stats.CS_STAT_SPELL_DENY));
         } else if (params.equals("flags")) {
-            commandSent("request flags "+stats.getStat(CrossfireStatsListener.CS_STAT_FLAGS)+" "+(commandQueue.checkFire() ? "1" : "0")+" "+(commandQueue.checkRun() ? "1" : "0")+" 0");
+            commandSent("request flags "+stats.getStat(Stats.CS_STAT_FLAGS)+" "+(commandQueue.checkFire() ? "1" : "0")+" "+(commandQueue.checkRun() ? "1" : "0")+" 0");
         } else if (params.equals("items inv")) {
             for (final CfItem item : itemSet.getPlayerInventory()) {
                 commandSentItem("request items inv", item);
@@ -520,7 +519,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
 
             commandSentMap(mapUpdaterState.getMap(), x, y);
         } else if (params.equals("skills")) {
-            for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++) {
+            for (int i = Stats.CS_STAT_SKILLINFO; i < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS; i++) {
                 final Object skill = skillSet.getSkill(i);
                 if (skill != null) {
                     commandSent("request skills "+i+" "+skill);

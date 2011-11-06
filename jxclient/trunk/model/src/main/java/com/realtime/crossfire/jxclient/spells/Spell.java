@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.spells;
 
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -89,7 +88,7 @@ public class Spell {
     private int damage;
 
     /**
-     * The spell's skill. See {@link CrossfireStatsListener#CS_STAT_SKILLINFO}.
+     * The spell's skill. See {@link Stats#CS_STAT_SKILLINFO}.
      */
     private int skill;
 
@@ -173,7 +172,7 @@ public class Spell {
     }
 
     /**
-     * Returns the spell's skill. See {@link CrossfireStatsListener#CS_STAT_SKILLINFO}.
+     * Returns the spell's skill. See {@link Stats#CS_STAT_SKILLINFO}.
      * @return the spell's skill
      */
     public int getSkill() {
@@ -362,7 +361,7 @@ public class Spell {
         if (unknown) {
             sb.append(" (unknown)");
         }
-        if ((path & stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_DENY)) != 0) {
+        if ((path & stats.getStat(Stats.CS_STAT_SPELL_DENY)) != 0) {
             sb.append("<br><b>Denied</b>");
         } else {
             final Skill sk = skillSet.getSkill(skill);
@@ -374,10 +373,10 @@ public class Spell {
                 sb.append("<br>Level: ");
                 if (sk != null && level <= sk.getLevel()) {
                     int effective = sk.getLevel() - level;
-                    if ((path & stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_ATTUNE)) != 0) {
+                    if ((path & stats.getStat(Stats.CS_STAT_SPELL_ATTUNE)) != 0) {
                         effective += 2;
                         supp = " (attuned)";
-                    } else if ((path & stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_REPEL)) != 0) {
+                    } else if ((path & stats.getStat(Stats.CS_STAT_SPELL_REPEL)) != 0) {
                         effective -= 2;
                         supp = " (repelled)";
                     }

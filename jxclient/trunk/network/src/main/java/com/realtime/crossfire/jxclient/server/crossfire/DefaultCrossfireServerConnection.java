@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.server.server.DefaultServerConnection;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
 import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.BufferedReader;
@@ -1854,7 +1855,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                             continue;
                         }
 
-                        if (skillId < CrossfireStatsListener.CS_STAT_SKILLINFO || skillId >= CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS) {
+                        if (skillId < Stats.CS_STAT_SKILLINFO || skillId >= Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS) {
                             System.err.println("Ignoring skill definition for invalid skill id "+skillId+": "+r+".");
                             continue;
                         }
@@ -1886,7 +1887,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             System.err.println("Ignoring excess data at end of exp_table");
         }
 
-        fireExpTableReceived(expTable);
+        model.getExperienceTable().setExpTable(expTable);
 
         if (loginMethod == 0) {
             setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ADDME);
@@ -2955,107 +2956,107 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         while (packet.hasRemaining()) {
             final int stat = getInt1(packet);
             switch (stat) {
-            case CrossfireStatsListener.CS_STAT_HP:
-            case CrossfireStatsListener.CS_STAT_MAXHP:
-            case CrossfireStatsListener.CS_STAT_SP:
-            case CrossfireStatsListener.CS_STAT_MAXSP:
-            case CrossfireStatsListener.CS_STAT_STR:
-            case CrossfireStatsListener.CS_STAT_INT:
-            case CrossfireStatsListener.CS_STAT_WIS:
-            case CrossfireStatsListener.CS_STAT_DEX:
-            case CrossfireStatsListener.CS_STAT_CON:
-            case CrossfireStatsListener.CS_STAT_CHA:
-            case CrossfireStatsListener.CS_STAT_LEVEL:
-            case CrossfireStatsListener.CS_STAT_WC:
-            case CrossfireStatsListener.CS_STAT_AC:
-            case CrossfireStatsListener.CS_STAT_DAM:
-            case CrossfireStatsListener.CS_STAT_ARMOUR:
-            case CrossfireStatsListener.CS_STAT_FOOD:
-            case CrossfireStatsListener.CS_STAT_POW:
-            case CrossfireStatsListener.CS_STAT_GRACE:
-            case CrossfireStatsListener.CS_STAT_MAXGRACE:
-            case CrossfireStatsListener.CS_STAT_FLAGS:
-            case CrossfireStatsListener.CS_STAT_RACE_STR:
-            case CrossfireStatsListener.CS_STAT_RACE_INT:
-            case CrossfireStatsListener.CS_STAT_RACE_WIS:
-            case CrossfireStatsListener.CS_STAT_RACE_DEX:
-            case CrossfireStatsListener.CS_STAT_RACE_CON:
-            case CrossfireStatsListener.CS_STAT_RACE_CHA:
-            case CrossfireStatsListener.CS_STAT_RACE_POW:
-            case CrossfireStatsListener.CS_STAT_BASE_STR:
-            case CrossfireStatsListener.CS_STAT_BASE_INT:
-            case CrossfireStatsListener.CS_STAT_BASE_WIS:
-            case CrossfireStatsListener.CS_STAT_BASE_DEX:
-            case CrossfireStatsListener.CS_STAT_BASE_CON:
-            case CrossfireStatsListener.CS_STAT_BASE_CHA:
-            case CrossfireStatsListener.CS_STAT_BASE_POW:
-            case CrossfireStatsListener.CS_STAT_APPLIED_STR:
-            case CrossfireStatsListener.CS_STAT_APPLIED_INT:
-            case CrossfireStatsListener.CS_STAT_APPLIED_WIS:
-            case CrossfireStatsListener.CS_STAT_APPLIED_DEX:
-            case CrossfireStatsListener.CS_STAT_APPLIED_CON:
-            case CrossfireStatsListener.CS_STAT_APPLIED_CHA:
-            case CrossfireStatsListener.CS_STAT_APPLIED_POW:
-            case CrossfireStatsListener.CS_STAT_GOLEM_HP:
-            case CrossfireStatsListener.CS_STAT_GOLEM_MAXHP:
+            case Stats.CS_STAT_HP:
+            case Stats.CS_STAT_MAXHP:
+            case Stats.CS_STAT_SP:
+            case Stats.CS_STAT_MAXSP:
+            case Stats.CS_STAT_STR:
+            case Stats.CS_STAT_INT:
+            case Stats.CS_STAT_WIS:
+            case Stats.CS_STAT_DEX:
+            case Stats.CS_STAT_CON:
+            case Stats.CS_STAT_CHA:
+            case Stats.CS_STAT_LEVEL:
+            case Stats.CS_STAT_WC:
+            case Stats.CS_STAT_AC:
+            case Stats.CS_STAT_DAM:
+            case Stats.CS_STAT_ARMOUR:
+            case Stats.CS_STAT_FOOD:
+            case Stats.CS_STAT_POW:
+            case Stats.CS_STAT_GRACE:
+            case Stats.CS_STAT_MAXGRACE:
+            case Stats.CS_STAT_FLAGS:
+            case Stats.CS_STAT_RACE_STR:
+            case Stats.CS_STAT_RACE_INT:
+            case Stats.CS_STAT_RACE_WIS:
+            case Stats.CS_STAT_RACE_DEX:
+            case Stats.CS_STAT_RACE_CON:
+            case Stats.CS_STAT_RACE_CHA:
+            case Stats.CS_STAT_RACE_POW:
+            case Stats.CS_STAT_BASE_STR:
+            case Stats.CS_STAT_BASE_INT:
+            case Stats.CS_STAT_BASE_WIS:
+            case Stats.CS_STAT_BASE_DEX:
+            case Stats.CS_STAT_BASE_CON:
+            case Stats.CS_STAT_BASE_CHA:
+            case Stats.CS_STAT_BASE_POW:
+            case Stats.CS_STAT_APPLIED_STR:
+            case Stats.CS_STAT_APPLIED_INT:
+            case Stats.CS_STAT_APPLIED_WIS:
+            case Stats.CS_STAT_APPLIED_DEX:
+            case Stats.CS_STAT_APPLIED_CON:
+            case Stats.CS_STAT_APPLIED_CHA:
+            case Stats.CS_STAT_APPLIED_POW:
+            case Stats.CS_STAT_GOLEM_HP:
+            case Stats.CS_STAT_GOLEM_MAXHP:
                 final short int2Param = (short)getInt2(packet);
                 if (debugProtocol != null) {
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF));
                 }
-                fireStatInt2Received(stat, int2Param);
+                model.getStats().setStatInt2(stat, int2Param);
                 notifyPacketWatcherListenersStats(stat, int2Param);
                 break;
 
-            case CrossfireStatsListener.CS_STAT_EXP:
-            case CrossfireStatsListener.CS_STAT_SPEED:
-            case CrossfireStatsListener.CS_STAT_WEAP_SP:
-            case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
-            case CrossfireStatsListener.CS_STAT_SPELL_ATTUNE:
-            case CrossfireStatsListener.CS_STAT_SPELL_REPEL:
-            case CrossfireStatsListener.CS_STAT_SPELL_DENY:
+            case Stats.CS_STAT_EXP:
+            case Stats.CS_STAT_SPEED:
+            case Stats.CS_STAT_WEAP_SP:
+            case Stats.CS_STAT_WEIGHT_LIM:
+            case Stats.CS_STAT_SPELL_ATTUNE:
+            case Stats.CS_STAT_SPELL_REPEL:
+            case Stats.CS_STAT_SPELL_DENY:
                 final int int4Param = getInt4(packet);
                 if (debugProtocol != null) {
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int4="+int4Param);
                 }
-                fireStatInt4Received(stat, int4Param);
+                model.getStats().setStatInt4(stat, int4Param);
                 notifyPacketWatcherListenersStats(stat, int4Param);
                 break;
 
-            case CrossfireStatsListener.CS_STAT_EXP64:
+            case Stats.CS_STAT_EXP64:
                 final long int8Param = getInt8(packet);
                 if (debugProtocol != null) {
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int8="+int8Param);
                 }
-                fireStatInt8Received(stat, int8Param);
+                model.getStats().setStatInt8(stat, int8Param);
                 notifyPacketWatcherListenersStats(stat, int8Param);
                 break;
 
-            case CrossfireStatsListener.CS_STAT_RANGE:
-            case CrossfireStatsListener.CS_STAT_TITLE:
+            case Stats.CS_STAT_RANGE:
+            case Stats.CS_STAT_TITLE:
                 final int length = getInt1(packet);
                 final String strParam = getString(packet, length);
                 if (debugProtocol != null) {
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" str="+strParam);
                 }
-                fireStringReceived(stat, strParam);
+                model.getStats().setStatString(stat, strParam);
                 notifyPacketWatcherListenersStats(stat, strParam);
                 break;
 
             default:
-                if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat < CrossfireStatsListener.CS_STAT_RESIST_START+CrossfireStatsListener.RESIST_TYPES) {
+                if (Stats.CS_STAT_RESIST_START <= stat && stat < Stats.CS_STAT_RESIST_START+Stats.RESIST_TYPES) {
                     final short int2Param2 = (short)getInt2(packet);
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param2);
                     }
-                    fireStatInt2Received(stat, int2Param2);
+                    model.getStats().setStatInt2(stat, int2Param2);
                     notifyPacketWatcherListenersStats(stat, int2Param2);
-                } else if (CrossfireStatsListener.CS_STAT_SKILLINFO <= stat && stat < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS) {
+                } else if (Stats.CS_STAT_SKILLINFO <= stat && stat < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS) {
                     final int level = getInt1(packet);
                     final long experience = getInt8(packet);
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv stats stat="+stat+" level="+level+" experience="+experience);
                     }
-                    fireStatSkillReceived(stat, level, experience);
+                    model.getStats().setStatSkill(stat, level, experience);
                     notifyPacketWatcherListenersStats(stat, level, experience);
                 } else {
                     if (debugProtocol != null) {
@@ -3194,7 +3195,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
         sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1", "notifications 1");
-        fireSetSimpleWeaponSpeed(scval >= 1029);
+        model.getStats().setSimpleWeaponSpeed(scval >= 1029);
 
         notifyPacketWatcherListenersAscii(packet, args);
     }
@@ -3619,7 +3620,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             System.err.println("Warning: connection state is "+clientSocketState+" when switching to state "+nextState+", expecting state "+prevState);
         }
         clientSocketState = nextState;
-        fireClientSocketStateChanged(nextState);
+        model.getGuiStateManager().setClientSocketState(nextState);
     }
 
     /**

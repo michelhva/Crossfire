@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemSetListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
@@ -80,58 +79,58 @@ public class StatGaugeUpdater extends GaugeUpdater {
         @Override
         public void statChanged(final int statNo, final int value) {
             switch (stat) {
-            case CrossfireStatsListener.CS_STAT_HP:
-                if (statNo == CrossfireStatsListener.CS_STAT_HP) {
-                    setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXHP));
-                } else if (statNo == CrossfireStatsListener.CS_STAT_MAXHP) {
-                    setValues(stats.getStat(CrossfireStatsListener.CS_STAT_HP), 0, value);
+            case Stats.CS_STAT_HP:
+                if (statNo == Stats.CS_STAT_HP) {
+                    setValues(value, 0, stats.getStat(Stats.CS_STAT_MAXHP));
+                } else if (statNo == Stats.CS_STAT_MAXHP) {
+                    setValues(stats.getStat(Stats.CS_STAT_HP), 0, value);
                 }
                 break;
 
-            case CrossfireStatsListener.CS_STAT_SP:
-                if (statNo == CrossfireStatsListener.CS_STAT_SP) {
-                    setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXSP));
-                } else if (statNo == CrossfireStatsListener.CS_STAT_MAXSP) {
-                    setValues(stats.getStat(CrossfireStatsListener.CS_STAT_SP), 0, value);
+            case Stats.CS_STAT_SP:
+                if (statNo == Stats.CS_STAT_SP) {
+                    setValues(value, 0, stats.getStat(Stats.CS_STAT_MAXSP));
+                } else if (statNo == Stats.CS_STAT_MAXSP) {
+                    setValues(stats.getStat(Stats.CS_STAT_SP), 0, value);
                 }
                 break;
 
-            case CrossfireStatsListener.CS_STAT_FOOD:
-                if (statNo == CrossfireStatsListener.CS_STAT_FOOD) {
+            case Stats.CS_STAT_FOOD:
+                if (statNo == Stats.CS_STAT_FOOD) {
                     setValues(value, 0, 999);
                 }
                 break;
 
-            case CrossfireStatsListener.C_STAT_LOWFOOD:
-                if (statNo == CrossfireStatsListener.C_STAT_LOWFOOD) {
-                    setValues(active && stats.getStat(CrossfireStatsListener.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
+            case Stats.C_STAT_LOWFOOD:
+                if (statNo == Stats.C_STAT_LOWFOOD) {
+                    setValues(active && stats.getStat(Stats.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
                 }
                 break;
 
-            case CrossfireStatsListener.CS_STAT_GRACE:
-                if (statNo == CrossfireStatsListener.CS_STAT_GRACE) {
-                    setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE));
-                } else if (statNo == CrossfireStatsListener.CS_STAT_MAXGRACE) {
-                    setValues(stats.getStat(CrossfireStatsListener.CS_STAT_GRACE), 0, value);
+            case Stats.CS_STAT_GRACE:
+                if (statNo == Stats.CS_STAT_GRACE) {
+                    setValues(value, 0, stats.getStat(Stats.CS_STAT_MAXGRACE));
+                } else if (statNo == Stats.CS_STAT_MAXGRACE) {
+                    setValues(stats.getStat(Stats.CS_STAT_GRACE), 0, value);
                 }
                 break;
 
-            case CrossfireStatsListener.C_STAT_POISONED:
-                if (statNo == CrossfireStatsListener.C_STAT_POISONED) {
+            case Stats.C_STAT_POISONED:
+                if (statNo == Stats.C_STAT_POISONED) {
                     setValues(value, 0, 1);
                 }
                 break;
 
-            case CrossfireStatsListener.CS_STAT_GOLEM_HP:
-                if (statNo == CrossfireStatsListener.CS_STAT_GOLEM_HP) {
-                    setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_GOLEM_MAXHP));
-                } else if (statNo == CrossfireStatsListener.CS_STAT_GOLEM_MAXHP) {
-                    setValues(stats.getStat(CrossfireStatsListener.CS_STAT_GOLEM_HP), 0, value);
+            case Stats.CS_STAT_GOLEM_HP:
+                if (statNo == Stats.CS_STAT_GOLEM_HP) {
+                    setValues(value, 0, stats.getStat(Stats.CS_STAT_GOLEM_MAXHP));
+                } else if (statNo == Stats.CS_STAT_GOLEM_MAXHP) {
+                    setValues(stats.getStat(Stats.CS_STAT_GOLEM_HP), 0, value);
                 }
                 break;
 
             default:
-                if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat <= CrossfireStatsListener.CS_STAT_RESIST_END && statNo == stat) {
+                if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END && statNo == stat) {
                     setValues(value, 0, 100);
                 }
                 break;
@@ -160,14 +159,14 @@ public class StatGaugeUpdater extends GaugeUpdater {
 
         @Override
         public void experienceChanged(final long exp) {
-            if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL) {
+            if (stat == Stats.C_STAT_EXP_NEXT_LEVEL) {
                 updateExperienceNextLevel();
             }
         }
 
         @Override
         public void experienceNextLevelChanged(final long expNextLevel) {
-            if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL) {
+            if (stat == Stats.C_STAT_EXP_NEXT_LEVEL) {
                 updateExperienceNextLevel();
             }
         }
@@ -220,7 +219,7 @@ public class StatGaugeUpdater extends GaugeUpdater {
      * @param itemSet the item set to watch
      */
     public StatGaugeUpdater(@NotNull final ExperienceTable experienceTable, final int stat, @NotNull final Stats stats, @NotNull final ItemSet itemSet) {
-        super(experienceTable, stat == CrossfireStatsListener.CS_STAT_GOLEM_HP);
+        super(experienceTable, stat == Stats.CS_STAT_GOLEM_HP);
         this.stat = stat;
         this.stats = stats;
         this.itemSet = itemSet;
@@ -238,10 +237,10 @@ public class StatGaugeUpdater extends GaugeUpdater {
     }
 
     /**
-     * Updates information for {@link CrossfireStatsListener#C_STAT_EXP_NEXT_LEVEL}.
+     * Updates information for {@link Stats#C_STAT_EXP_NEXT_LEVEL}.
      */
     private void updateExperienceNextLevel() {
-        final int level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
+        final int level = stats.getStat(Stats.CS_STAT_LEVEL);
         final long experience = stats.getExperience();
         final int percents = getPercentsToNextLevel(level, experience);
         setValues(percents, 0, 99, percents+"%", level+"<br>Experience:"+Formatter.formatLong(experience)+"<br>Next level:"+Formatter.formatLong(getExperienceToNextLevel(level, experience)));

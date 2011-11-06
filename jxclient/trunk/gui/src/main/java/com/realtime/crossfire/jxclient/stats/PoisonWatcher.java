@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.stats;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
 import com.realtime.crossfire.jxclient.timeouts.Timeouts;
 import org.jetbrains.annotations.NotNull;
@@ -164,7 +163,7 @@ public class PoisonWatcher {
             }
 
             this.active = active;
-            stats.setStat(CrossfireStatsListener.C_STAT_POISONED, active ? 1 : 0);
+            stats.setStat(Stats.C_STAT_POISONED, active ? 1 : 0);
         }
     }
 

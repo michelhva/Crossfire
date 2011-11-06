@@ -21,8 +21,7 @@
 
 package com.realtime.crossfire.jxclient.guistate;
 
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectionListener;
+import com.realtime.crossfire.jxclient.server.server.ServerConnection;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
@@ -54,25 +53,6 @@ public class GuiStateManager {
      */
     @NotNull
     private final EventListenerList2<GuiStateListener> guiStateListeners = new EventListenerList2<GuiStateListener>(GuiStateListener.class);
-
-    /**
-     * The {@link CrossfireServerConnectionListener} used to detect connection
-     * progress changes.
-     */
-    @NotNull
-    private final CrossfireServerConnectionListener crossfireServerConnectionListener = new CrossfireServerConnectionListener() {
-
-        @Override
-        public void clientSocketStateChanged(@NotNull final ClientSocketState clientSocketState) {
-            for (final GuiStateListener listener : guiStateListeners.getListeners()) {
-                listener.connecting(clientSocketState);
-            }
-            if (clientSocketState == ClientSocketState.CONNECTED) {
-                changeGUI(GuiState.CONNECTED);
-            }
-        }
-
-    };
 
     /**
      * The {@link ClientSocketListener} used to detect connection state
@@ -122,13 +102,11 @@ public class GuiStateManager {
     };
 
     /**
-     * Creates a new instance.
-     * @param crossfireServerConnection the crossfire server connection to
-     * monitor
+     * @param serverConnection the server connection to monitor
      */
-    public GuiStateManager(@NotNull final CrossfireServerConnection crossfireServerConnection) {
-        crossfireServerConnection.addCrossfireServerConnectionListener(crossfireServerConnectionListener);
-        crossfireServerConnection.addClientSocketListener(clientSocketListener);
+    @Deprecated
+    public void setServerConnection(@NotNull final ServerConnection serverConnection) {
+        serverConnection.addClientSocketListener(clientSocketListener);
     }
 
     /**
@@ -250,6 +228,19 @@ public class GuiStateManager {
      */
     public void disconnect() {
         changeGUI(GuiState.METASERVER);
+    }
+
+    /**
+     * Sets the new {@link ClientSocketState}.
+     * @param clientSocketState the new state
+     */
+    public void setClientSocketState(@NotNull final ClientSocketState clientSocketState) {
+        for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+            listener.connecting(clientSocketState);
+        }
+        if (clientSocketState == ClientSocketState.CONNECTED) {
+            changeGUI(GuiState.CONNECTED);
+        }
     }
 
 }

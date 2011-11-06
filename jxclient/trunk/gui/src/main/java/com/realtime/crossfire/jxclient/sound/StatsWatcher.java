@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiStateListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
@@ -174,8 +173,8 @@ public class StatsWatcher {
      */
     public StatsWatcher(@NotNull final Stats stats, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final SoundManager soundManager) {
         this.soundManager = soundManager;
-        poisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
-        level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
+        poisoned = stats.getStat(Stats.C_STAT_POISONED) != 0;
+        level = stats.getStat(Stats.CS_STAT_LEVEL);
         stats.addCrossfireStatsListener(statsListener);
         windowRenderer.addGuiStateListener(rendererGuiStateListener);
         rendererGuiStateListener.guiStateChanged(windowRenderer.getGuiState());
@@ -188,7 +187,7 @@ public class StatsWatcher {
      * @param value the new stat value
      */
     private void checkStats(final int statNo, final int value) {
-        if (statNo == CrossfireStatsListener.C_STAT_POISONED) {
+        if (statNo == Stats.C_STAT_POISONED) {
             final boolean newPoisoned = value != 0;
             if (poisoned != newPoisoned) {
                 poisoned = newPoisoned;
@@ -196,7 +195,7 @@ public class StatsWatcher {
                     playClip(newPoisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
                 }
             }
-        } else if (statNo == CrossfireStatsListener.CS_STAT_LEVEL) {
+        } else if (statNo == Stats.CS_STAT_LEVEL) {
             final int newLevel = value;
             if (level != newLevel) {
                 if (ignoreLevelChange != 0 && ignoreLevelChange <= System.currentTimeMillis()) {

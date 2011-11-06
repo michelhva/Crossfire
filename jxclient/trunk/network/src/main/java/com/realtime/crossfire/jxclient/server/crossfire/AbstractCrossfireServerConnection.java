@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
-import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
@@ -49,13 +48,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      */
     @NotNull
     private final Model model;
-
-    /**
-     * The {@link CrossfireServerConnectionListener CrossfireServerConnectionListeners}
-     * to notify.
-     */
-    @NotNull
-    private final EventListenerList2<CrossfireServerConnectionListener> crossfireServerConnectionListeners = new EventListenerList2<CrossfireServerConnectionListener>(CrossfireServerConnectionListener.class);
 
     /**
      * The {@link CrossfireDrawinfoListener CrossfireDrawinfoListeners} to be
@@ -91,13 +83,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      */
     @NotNull
     private final EventListenerList2<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new EventListenerList2<CrossfireUpdateFaceListener>(CrossfireUpdateFaceListener.class);
-
-    /**
-     * The {@link CrossfireStatsListener CrossfireStatsListeners} to be
-     * notified.
-     */
-    @NotNull
-    private final EventListenerList2<CrossfireStatsListener> crossfireStatsListeners = new EventListenerList2<CrossfireStatsListener>(CrossfireStatsListener.class);
 
     /**
      * The {@link CrossfireUpdateItemListener CrossfireUpdateItemListeners} to
@@ -180,13 +165,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     private final EventListenerList2<SentReplyListener> sentReplyListeners = new EventListenerList2<SentReplyListener>(SentReplyListener.class);
 
     /**
-     * The {@link CrossfireExpTableListener CrossfireExpTableListeners} to be
-     * notified.
-     */
-    @NotNull
-    private final EventListenerList2<CrossfireExpTableListener> crossfireExpTableListeners = new EventListenerList2<CrossfireExpTableListener>(CrossfireExpTableListener.class);
-
-    /**
      * The {@link CrossfirePickupListener CrossfirePickupListeners} to be
      * notified.
      */
@@ -213,14 +191,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      */
     protected AbstractCrossfireServerConnection(@NotNull final Model model) {
         this.model = model;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void addCrossfireServerConnectionListener(@NotNull final CrossfireServerConnectionListener listener) {
-        crossfireServerConnectionListeners.add(listener);
     }
 
     /**
@@ -293,14 +263,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     @Override
     public void addCrossfireUpdateFaceListener(@NotNull final CrossfireUpdateFaceListener listener) {
         crossfireUpdateFaceListeners.add(listener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void addCrossfireStatsListener(@NotNull final CrossfireStatsListener crossfireStatsListener) {
-        crossfireStatsListeners.add(crossfireStatsListener);
     }
 
     /**
@@ -446,14 +408,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * {@inheritDoc}
      */
     @Override
-    public void addCrossfireExpTableListener(@NotNull final CrossfireExpTableListener crossfireExpTableListener) {
-        crossfireExpTableListeners.add(crossfireExpTableListener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void addCrossfirePickupListener(@NotNull final CrossfirePickupListener listener) {
         crossfirePickupListeners.add(listener);
     }
@@ -510,12 +464,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     protected void fireMapAnimationSpeed(@NotNull final Location location, final int animSpeed) {
         assert crossfireUpdateMapListener != null;
         crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
-    }
-
-    protected void fireExpTableReceived(@NotNull final long[] expTable) {
-        for (final CrossfireExpTableListener crossfireExpTableListener : crossfireExpTableListeners.getListeners()) {
-            crossfireExpTableListener.expTableReceived(expTable);
-        }
     }
 
     protected void fireManageAccount() {
@@ -681,36 +629,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         }
     }
 
-    protected void fireStatInt2Received(final int stat, final short param) {
-        for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners.getListeners()) {
-            crossfireStatsListener.statInt2Received(stat, param);
-        }
-    }
-
-    protected void fireStatInt4Received(final int stat, final int param) {
-        for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners.getListeners()) {
-            crossfireStatsListener.statInt4Received(stat, param);
-        }
-    }
-
-    protected void fireStatInt8Received(final int stat, final long param) {
-        for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners.getListeners()) {
-            crossfireStatsListener.statInt8Received(stat, param);
-        }
-    }
-
-    protected void fireStringReceived(final int stat, @NotNull final String param) {
-        for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners.getListeners()) {
-            crossfireStatsListener.statStringReceived(stat, param);
-        }
-    }
-
-    protected void fireStatSkillReceived(final int stat, final int level, final long experience) {
-        for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners.getListeners()) {
-            crossfireStatsListener.statSkillReceived(stat, level, experience);
-        }
-    }
-
     protected void fireTick(final int tickNo) {
         for (final CrossfireTickListener listener : crossfireTickListeners.getListeners()) {
             listener.tick(tickNo);
@@ -732,12 +650,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     protected void fireUpdateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) {
         for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners.getListeners()) {
             crossfireSpellListener.updateSpell(flags, tag, mana, grace, damage);
-        }
-    }
-
-    protected void fireSetSimpleWeaponSpeed(final boolean simpleWeaponSpeed) {
-        for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners.getListeners()) {
-            crossfireStatsListener.setSimpleWeaponSpeed(simpleWeaponSpeed);
         }
     }
 
@@ -965,12 +877,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
             tmp[i] = byteBuffer.get(start+i);
         }
         return new String(tmp, UTF8);
-    }
-
-    protected void fireClientSocketStateChanged(@NotNull final ClientSocketState nextState) {
-        for (final CrossfireServerConnectionListener crossfireServerConnectionListener : crossfireServerConnectionListeners.getListeners()) {
-            crossfireServerConnectionListener.clientSocketStateChanged(nextState);
-        }
     }
 
     protected void fireSelectCharacter(@NotNull final String accountName, @NotNull final String characterName) {

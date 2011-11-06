@@ -46,12 +46,6 @@ public interface CrossfireServerConnection extends ServerConnection {
     void stop() throws InterruptedException;
 
     /**
-     * Adds a listener to be notified about connection progress.
-     * @param listener the listener to add
-     */
-    void addCrossfireServerConnectionListener(@NotNull CrossfireServerConnectionListener listener);
-
-    /**
      * Adds a new listener monitoring the drawinfo S-&gt;C messages.
      * @param listener the listener to remove
      */
@@ -108,12 +102,6 @@ public interface CrossfireServerConnection extends ServerConnection {
      * @param listener the listener to add
      */
     void addCrossfireUpdateFaceListener(@NotNull CrossfireUpdateFaceListener listener);
-
-    /**
-     * Adds a listener to be notified about stats changes.
-     * @param crossfireStatsListener the listener to add
-     */
-    void addCrossfireStatsListener(@NotNull CrossfireStatsListener crossfireStatsListener);
 
     /**
      * Adds a listener to be notified about item changes.
@@ -181,12 +169,6 @@ public interface CrossfireServerConnection extends ServerConnection {
      * @param listener the listener to add
      */
     void addCrossfireQuestListener(@NotNull CrossfireQuestListener listener);
-
-    /**
-     * Adds a listener to be notified about received experience table changes.
-     * @param crossfireExpTableListener the listener to add
-     */
-    void addCrossfireExpTableListener(@NotNull CrossfireExpTableListener crossfireExpTableListener);
 
     /**
      * Adds a listener to be notified about received "pickup" messages.
