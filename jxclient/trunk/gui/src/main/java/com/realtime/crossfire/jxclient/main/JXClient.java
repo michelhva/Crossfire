@@ -69,6 +69,7 @@ import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.DefaultCrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.Model;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
@@ -168,12 +169,14 @@ public class JXClient {
                             final OptionManager optionManager = new OptionManager(settings);
                             final MetaserverModel metaserverModel = new MetaserverModel();
                             final CharacterModel characterModel = new CharacterModel();
-                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
+                            final Model model = new Model();
+                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(model, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
                             server.start();
                             try {
                                 final GuiStateManager guiStateManager = new GuiStateManager(server);
                                 final ExperienceTable experienceTable = new ExperienceTable(server);
-                                final SkillSet skillSet = new SkillSet(server, guiStateManager);
+                                final SkillSet skillSet = new SkillSet(guiStateManager);
+                                model.setSkillSet(skillSet);
                                 final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
                                 final FaceCache faceCache = new FaceCache(server);
                                 final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));

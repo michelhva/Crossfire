@@ -45,6 +45,12 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     protected static final Charset UTF8 = Charset.forName("UTF-8");
 
     /**
+     * The {@link Model} instance that is updated.
+     */
+    @NotNull
+    private final Model model;
+
+    /**
      * The {@link CrossfireServerConnectionListener CrossfireServerConnectionListeners}
      * to notify.
      */
@@ -181,13 +187,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     private final EventListenerList2<CrossfireExpTableListener> crossfireExpTableListeners = new EventListenerList2<CrossfireExpTableListener>(CrossfireExpTableListener.class);
 
     /**
-     * The {@link CrossfireSkillInfoListener CrossfireSkillInfoListeners} to be
-     * notified.
-     */
-    @NotNull
-    private final EventListenerList2<CrossfireSkillInfoListener> crossfireSkillInfoListeners = new EventListenerList2<CrossfireSkillInfoListener>(CrossfireSkillInfoListener.class);
-
-    /**
      * The {@link CrossfirePickupListener CrossfirePickupListeners} to be
      * notified.
      */
@@ -210,8 +209,10 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
 
     /**
      * Creates a new instance.
+     * @param model the model instance to update
      */
-    protected AbstractCrossfireServerConnection() {
+    protected AbstractCrossfireServerConnection(@NotNull final Model model) {
+        this.model = model;
     }
 
     /**
@@ -453,22 +454,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * {@inheritDoc}
      */
     @Override
-    public void addCrossfireSkillInfoListener(@NotNull final CrossfireSkillInfoListener listener) {
-        crossfireSkillInfoListeners.add(listener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void removeCrossfireSkillInfoListener(@NotNull final CrossfireSkillInfoListener listener) {
-        crossfireSkillInfoListeners.remove(listener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void addCrossfirePickupListener(@NotNull final CrossfirePickupListener listener) {
         crossfirePickupListeners.add(listener);
     }
@@ -525,18 +510,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     protected void fireMapAnimationSpeed(@NotNull final Location location, final int animSpeed) {
         assert crossfireUpdateMapListener != null;
         crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
-    }
-
-    protected void fireClearSkills() {
-        for (final CrossfireSkillInfoListener crossfireSkillInfoListener : crossfireSkillInfoListeners.getListeners()) {
-            crossfireSkillInfoListener.clearSkills();
-        }
-    }
-
-    protected void fireAddSkill(final int skillId, @NotNull final String skillName) {
-        for (final CrossfireSkillInfoListener crossfireSkillInfoListener : crossfireSkillInfoListeners.getListeners()) {
-            crossfireSkillInfoListener.addSkill(skillId, skillName);
-        }
     }
 
     protected void fireExpTableReceived(@NotNull final long[] expTable) {

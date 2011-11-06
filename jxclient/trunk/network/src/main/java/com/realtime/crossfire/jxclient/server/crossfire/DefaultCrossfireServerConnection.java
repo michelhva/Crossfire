@@ -114,6 +114,12 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private static final int ACL_FACE_NUM = 8;
 
     /**
+     * The {@link Model} instance that is updated.
+     */
+    @NotNull
+    private final Model model;
+
+    /**
      * The physical server connection.
      */
     @NotNull
@@ -575,13 +581,16 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
     /**
      * Creates a new instance.
+     * @param model the model instance to update
      * @param debugProtocol if non-<code>null</code>, write all protocol
      * commands to this writer
      * @param version the version information to send to the server when
      * connecting
      * @throws IOException if an internal error occurs
      */
-    public DefaultCrossfireServerConnection(@Nullable final DebugWriter debugProtocol, @NotNull final String version) throws IOException {
+    public DefaultCrossfireServerConnection(@NotNull final Model model, @Nullable final DebugWriter debugProtocol, @NotNull final String version) throws IOException {
+        super(model);
+        this.model = model;
         defaultServerConnection = new DefaultServerConnection(debugProtocol);
         this.version = version;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
@@ -1816,7 +1825,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws IOException if the packet cannot be parsed
      */
     private void processSkillInfoReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
-        fireClearSkills();
+        model.getSkillSet().clearSkills();
         final byte[] data = new byte[packet.remaining()];
         packet.get(data);
         final ByteArrayInputStream is = new ByteArrayInputStream(data);
@@ -1850,7 +1859,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                             continue;
                         }
 
-                        fireAddSkill(skillId, sk[1]);
+                        model.getSkillSet().addSkill(skillId, sk[1]);
                     }
                 } finally {
                     d.close();
