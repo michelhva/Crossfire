@@ -160,4 +160,10 @@ public interface GUIElement {
      */
     void setChangedListener(@Nullable GUIElementChangedListener changedListener);
 
+    /**
+     * Executes the actions associated with this GUI element. Does nothing if
+     * this element has no associated actions.
+     */
+    void execute();
+
 }

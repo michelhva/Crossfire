@@ -325,6 +325,14 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * {@inheritDoc}
      */
     @Override
+    public void execute() {
+        // ignore
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     protected void activeChanged() {
         setChanged();
     }

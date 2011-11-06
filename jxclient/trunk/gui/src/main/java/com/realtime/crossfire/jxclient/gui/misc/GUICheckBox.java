@@ -231,6 +231,14 @@ public class GUICheckBox extends ActivatableGUIElement {
      * {@inheritDoc}
      */
     @Override
+    public void execute() {
+        // ignore
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
         if (!hasTooltipText()) { // XXX: properly initialize tooltip text
             setTooltipText(option.getTooltipText());

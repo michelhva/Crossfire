@@ -545,6 +545,14 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void execute() {
+        // ignore
+    }
+
+    /**
      * Updates the tooltip text.
      * @param index the index to use
      * @param x the x coordinate of the cell

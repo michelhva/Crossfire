@@ -179,8 +179,9 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
     }
 
     /**
-     * Executes the command actions.
+     * {@inheritDoc}
      */
+    @Override
     public void execute() {
         commandList.execute();
     }

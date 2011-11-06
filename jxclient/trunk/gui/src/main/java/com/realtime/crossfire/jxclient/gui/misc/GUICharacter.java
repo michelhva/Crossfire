@@ -247,4 +247,12 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         setChanged();
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void execute() {
+        // ignore
+    }
+
 }

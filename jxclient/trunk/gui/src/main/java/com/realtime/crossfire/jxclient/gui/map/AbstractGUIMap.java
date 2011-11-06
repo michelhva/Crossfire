@@ -329,6 +329,14 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void execute() {
+        // ignore
+    }
+
+    /**
      * Redraws the complete map view.
      */
     private void redrawAll() {
