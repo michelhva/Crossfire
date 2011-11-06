@@ -201,7 +201,7 @@ public class JXClient {
                                 final Macros macros = new Macros(server);
                                 final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, model.getGuiStateManager());
                                 new CfMapUpdater(mapUpdaterState, server, facesManager, model.getGuiStateManager());
-                                final SpellsManager spellsManager = new SpellsManager(server, model.getGuiStateManager(), skillSet, stats);
+                                final SpellsManager spellsManager = new SpellsManager(model.getGuiStateManager(), skillSet, stats);
                                 model.setSpellsManager(spellsManager);
                                 final SpellsView spellsView = new SpellsView(spellsManager, facesManager);
                                 final QuestsManager questsManager = new QuestsManager(server, model.getGuiStateManager());
