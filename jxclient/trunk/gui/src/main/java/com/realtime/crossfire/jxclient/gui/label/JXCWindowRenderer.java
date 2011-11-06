@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiAutoCloseListener;
-import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiStateListener;
 import com.realtime.crossfire.jxclient.gui.list.GUIFloorList;
