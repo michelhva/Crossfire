@@ -19,21 +19,21 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.mapupdater;
+package com.realtime.crossfire.jxclient.map;
 
 import java.util.EventListener;
 
 /**
- * Listener for clients interested in map size changes.
- * @author Andreas Kirschbaum
+ * Interface for listeners interested on map scrolled events.
+ * @author Lauwenmark
  */
-public interface MapSizeListener extends EventListener {
+public interface MapScrollListener extends EventListener {
 
     /**
-     * The map size has changed.
-     * @param mapWidth the new map width in tiles
-     * @param mapHeight the new map height in tiles
+     * The map contents have scrolled.
+     * @param dx the x-distance
+     * @param dy the y-distance
      */
-    void mapSizeChanged(int mapWidth, int mapHeight);
+    void mapScrolled(int dx, int dy);
 
 }

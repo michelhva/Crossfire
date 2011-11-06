@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.map;
 
-import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;

@@ -19,19 +19,24 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.mapupdater;
+package com.realtime.crossfire.jxclient.map;
 
 import java.util.EventListener;
+import java.util.Set;
+import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for listeners interested in received "newmap" messages.
+ * Interface for listeners interested in changes within {@link CfMap}
+ * instances.
  * @author Lauwenmark
  */
-public interface NewmapListener extends EventListener {
+public interface MapListener extends EventListener {
 
     /**
-     * Called whenever a "newmap" message has been received.
+     * The map has changed.
+     * @param map the changed map
+     * @param changedSquares the changed map squares
      */
-    void commandNewmapReceived();
+    void mapChanged(@NotNull CfMap map, @NotNull Set<CfMapSquare> changedSquares);
 
 }

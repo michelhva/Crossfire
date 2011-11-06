@@ -99,7 +99,7 @@ import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.QuestsView;
 import com.realtime.crossfire.jxclient.items.SpellsView;
-import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
+import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;

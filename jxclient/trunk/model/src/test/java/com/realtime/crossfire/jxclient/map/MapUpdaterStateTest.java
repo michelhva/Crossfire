@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.mapupdater;
+package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
@@ -27,9 +27,6 @@ import com.realtime.crossfire.jxclient.faces.FaceImages;
 import com.realtime.crossfire.jxclient.faces.FaceImagesUtils;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.TestFacesManager;
-import com.realtime.crossfire.jxclient.map.CfMap;
-import com.realtime.crossfire.jxclient.map.CfMapSquare;
-import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import java.io.IOException;
 import javax.swing.ImageIcon;
