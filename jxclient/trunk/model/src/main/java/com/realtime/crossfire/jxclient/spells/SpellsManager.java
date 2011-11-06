@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireAccountListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSpellListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -46,6 +45,21 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class SpellsManager implements Iterable<Spell> {
+
+    /**
+     * Flag for updspell command: mana is present.
+     */
+    public static final int UPD_SP_MANA = 1;
+
+    /**
+     * Flag for updspell command: grace is present.
+     */
+    public static final int UPD_SP_GRACE = 2;
+
+    /**
+     * Flag for updspell command: damage is present.
+     */
+    public static final int UPD_SP_DAMAGE = 4;
 
     /**
      * All known spells.
@@ -73,29 +87,6 @@ public class SpellsManager implements Iterable<Spell> {
      */
     @NotNull
     private final Comparator<Spell> spellNameComparator = new SpellComparator();
-
-    /**
-     * The listener to receive updates for spell information.
-     */
-    @NotNull
-    private final CrossfireSpellListener crossfireSpellListener = new CrossfireSpellListener() {
-
-        @Override
-        public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, @NotNull final String name, @NotNull final String message) {
-            SpellsManager.this.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
-        }
-
-        @Override
-        public void deleteSpell(final int tag) {
-            SpellsManager.this.deleteSpell(tag);
-        }
-
-        @Override
-        public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) {
-            SpellsManager.this.updateSpell(flags, tag, mana, grace, damage);
-        }
-
-    };
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped
@@ -195,9 +186,9 @@ public class SpellsManager implements Iterable<Spell> {
      * @param crossfireServerConnection the connection to listen on
      * @param guiStateManager the gui state manager to watch
      * @param skillSet skills the players knows
+     * @param stats the stats for the player
      */
     public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final SkillSet skillSet, @NotNull final Stats stats) {
-        crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
         crossfireServerConnection.addCrossfireAccountListener(crossfireAccountListener);
         guiStateManager.addGuiStateListener(guiStateListener);
         this.skillSet = skillSet;
@@ -235,7 +226,7 @@ public class SpellsManager implements Iterable<Spell> {
      * @param spellName the spell's name
      * @param message the spells' description
      */
-    private void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, @NotNull final String spellName, @NotNull final String message) {
+    public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, @NotNull final String spellName, @NotNull final String message) {
         final Spell key = new Spell(spellName, skillSet, stats);
         key.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path); // set spell path which is used in the comparator
 
@@ -272,10 +263,10 @@ public class SpellsManager implements Iterable<Spell> {
      * @param grace the spell's new grace cost
      * @param damage the spell's new damage
      */
-    private void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) {
+    public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) {
         for (final Spell spell : spells) {
             if (spell.getTag() == tag) {
-                spell.updateParameters((flags&CrossfireSpellListener.UPD_SP_MANA) != 0, mana, (flags&CrossfireSpellListener.UPD_SP_GRACE) != 0, grace, (flags&CrossfireSpellListener.UPD_SP_DAMAGE) != 0, damage);
+                spell.updateParameters((flags&UPD_SP_MANA) != 0, mana, (flags&UPD_SP_GRACE) != 0, grace, (flags&UPD_SP_DAMAGE) != 0, damage);
                 break;
             }
         }
@@ -285,7 +276,7 @@ public class SpellsManager implements Iterable<Spell> {
      * Deletes a spell.
      * @param tag the spell's tag
      */
-    private void deleteSpell(final int tag) {
+    public void deleteSpell(final int tag) {
         int index = 0;
         for (final Spell spell : spells) {
             if (spell.getTag() == tag) {

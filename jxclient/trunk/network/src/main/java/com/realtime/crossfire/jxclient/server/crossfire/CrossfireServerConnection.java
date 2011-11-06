@@ -159,12 +159,6 @@ public interface CrossfireServerConnection extends ServerConnection {
     void addCrossfireFaceListener(@NotNull CrossfireFaceListener listener);
 
     /**
-     * Adds a listener to be notified about received spell commands.
-     * @param listener the listener to add
-     */
-    void addCrossfireSpellListener(@NotNull CrossfireSpellListener listener);
-
-    /**
      * Adds a listener to be notified about received quest commands.
      * @param listener the listener to add
      */

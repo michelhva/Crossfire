@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.server.server.DefaultServerConnection;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
+import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
 import com.realtime.crossfire.jxclient.util.HexCodec;
@@ -2092,7 +2093,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv addspell tag="+tag+" lvl="+level+" time="+castingTime+" sp="+mana+" gr="+grace+" dam="+damage+" skill="+skill+" path="+path+" face="+face+" name="+name+" msg="+message);
             }
-            fireAddSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
+            model.getSpellsManager().addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
         }
         notifyPacketWatcherListenersMixed(packet, args);
     }
@@ -2201,7 +2202,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv delspell tag="+tag);
         }
-        fireDeleteSpell(tag);
+        model.getSpellsManager().deleteSpell(tag);
         notifyPacketWatcherListenersIntArray(packet, args);
     }
 
@@ -3155,16 +3156,16 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         final int args = packet.position();
         final int flags = getInt1(packet);
         final int tag = getInt4(packet);
-        final int mana = (flags&CrossfireSpellListener.UPD_SP_MANA) == 0 ? 0 : getInt2(packet);
-        final int grace = (flags&CrossfireSpellListener.UPD_SP_GRACE) == 0 ? 0 : getInt2(packet);
-        final int damage = (flags&CrossfireSpellListener.UPD_SP_DAMAGE) == 0 ? 0 : getInt2(packet);
+        final int mana = (flags&SpellsManager.UPD_SP_MANA) == 0 ? 0 : getInt2(packet);
+        final int grace = (flags&SpellsManager.UPD_SP_GRACE) == 0 ? 0 : getInt2(packet);
+        final int damage = (flags&SpellsManager.UPD_SP_DAMAGE) == 0 ? 0 : getInt2(packet);
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("excess data at end of updspell command");
         }
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv updspell flags="+flags+" tag="+tag+" sp="+mana+" gr="+grace+" dam="+damage);
         }
-        fireUpdateSpell(flags, tag, mana, grace, damage);
+        model.getSpellsManager().updateSpell(flags, tag, mana, grace, damage);
         notifyPacketWatcherListenersMixed(packet, args);
     }
 
