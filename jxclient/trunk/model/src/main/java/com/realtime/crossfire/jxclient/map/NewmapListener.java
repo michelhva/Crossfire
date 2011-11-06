@@ -19,21 +19,19 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.mapupdater;
+package com.realtime.crossfire.jxclient.map;
 
 import java.util.EventListener;
 
 /**
- * Interface for listeners interested on map scrolled events.
+ * Interface for listeners interested in received "newmap" messages.
  * @author Lauwenmark
  */
-public interface MapScrollListener extends EventListener {
+public interface NewmapListener extends EventListener {
 
     /**
-     * The map contents have scrolled.
-     * @param dx the x-distance
-     * @param dy the y-distance
+     * Called whenever a "newmap" message has been received.
      */
-    void mapScrolled(int dx, int dy);
+    void commandNewmapReceived();
 
 }

@@ -26,7 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
-import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
+import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;

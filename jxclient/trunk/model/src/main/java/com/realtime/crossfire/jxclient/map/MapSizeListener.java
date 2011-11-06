@@ -19,26 +19,21 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.mapupdater;
+package com.realtime.crossfire.jxclient.map;
 
-import com.realtime.crossfire.jxclient.map.CfMap;
-import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import java.util.EventListener;
-import java.util.Set;
-import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for listeners interested in changes within {@link CfMap}
- * instances.
- * @author Lauwenmark
+ * Listener for clients interested in map size changes.
+ * @author Andreas Kirschbaum
  */
-public interface MapListener extends EventListener {
+public interface MapSizeListener extends EventListener {
 
     /**
-     * The map has changed.
-     * @param map the changed map
-     * @param changedSquares the changed map squares
+     * The map size has changed.
+     * @param mapWidth the new map width in tiles
+     * @param mapHeight the new map height in tiles
      */
-    void mapChanged(@NotNull CfMap map, @NotNull Set<CfMapSquare> changedSquares);
+    void mapSizeChanged(int mapWidth, int mapHeight);
 
 }

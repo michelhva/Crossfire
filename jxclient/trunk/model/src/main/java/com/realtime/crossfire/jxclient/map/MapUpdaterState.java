@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.mapupdater;
+package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.animations.Animations;
@@ -27,10 +27,6 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.map.CfMap;
-import com.realtime.crossfire.jxclient.map.CfMapAnimations;
-import com.realtime.crossfire.jxclient.map.CfMapSquare;
-import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireTickListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;

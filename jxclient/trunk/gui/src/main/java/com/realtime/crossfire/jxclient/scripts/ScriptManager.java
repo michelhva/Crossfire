@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.mapupdater.MapUpdaterState;
+import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
