@@ -88,7 +88,7 @@ public class GUIItemList extends GUIList {
     private final GUIElementChangedListener itemChangedListener = new GUIElementChangedListener() {
 
         @Override
-        public void notifyChanged(@NotNull final GUIElement element) {
+        public void notifyChanged() {
             selectionChanged();
             setChanged();
         }

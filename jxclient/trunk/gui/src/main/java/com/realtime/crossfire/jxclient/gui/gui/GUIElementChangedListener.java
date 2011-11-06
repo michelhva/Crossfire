@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import org.jetbrains.annotations.NotNull;
-
 /**
  * Interface for listeners interested in the changed flag of {@link GUIElement}
  * instances.
@@ -33,8 +31,7 @@ public interface GUIElementChangedListener {
     /**
      * Called whenever the changed flag was set while a {@link GUIElement} was
      * visible.
-     * @param element the affected instance
      */
-    void notifyChanged(@NotNull GUIElement element);
+    void notifyChanged();
 
 }
