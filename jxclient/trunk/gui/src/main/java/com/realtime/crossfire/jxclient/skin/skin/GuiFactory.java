@@ -19,8 +19,9 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.gui;
+package com.realtime.crossfire.jxclient.skin.skin;
 
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;
 import javax.swing.GroupLayout;
 import org.jetbrains.annotations.NotNull;
