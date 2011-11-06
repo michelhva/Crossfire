@@ -106,4 +106,12 @@ public class GUIPicture extends AbstractGUIElement {
         return new Dimension(preferredSize);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void execute() {
+        // ignore
+    }
+
 }

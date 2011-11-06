@@ -72,4 +72,12 @@ public class GUIFill extends AbstractGUIElement {
         g2.clearRect(0, 0, getWidth(), getHeight());
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void execute() {
+        // ignore
+    }
+
 }

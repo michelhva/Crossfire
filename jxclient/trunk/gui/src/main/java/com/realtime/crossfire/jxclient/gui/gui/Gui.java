@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import com.realtime.crossfire.jxclient.gui.button.AbstractButton;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -375,8 +374,8 @@ public class Gui extends JComponent {
         case KeyEvent.VK_ENTER:
         case KeyEvent.VK_SPACE:
             final GUIElement defaultElement = getDefaultElement();
-            if (defaultElement != null && defaultElement instanceof AbstractButton) {
-                ((AbstractButton)defaultElement).execute();
+            if (defaultElement != null) {
+                defaultElement.execute();
                 return true;
             }
             break;

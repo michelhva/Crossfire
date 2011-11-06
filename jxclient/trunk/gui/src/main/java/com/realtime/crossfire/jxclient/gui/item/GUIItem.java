@@ -75,6 +75,14 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void execute() {
+        // ignore
+    }
+
+    /**
      * Called when the left mouse button was pressed.
      * @param modifiers the input event modifiers
      */

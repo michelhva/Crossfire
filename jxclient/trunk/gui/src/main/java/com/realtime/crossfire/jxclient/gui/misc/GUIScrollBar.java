@@ -212,6 +212,14 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void execute() {
+        // ignore
+    }
+
+    /**
      * Returns the current slider position in slider-coordinates.
      * @param yPixels the y-coordinate within the gui element
      * @return the position in slider-coordinates

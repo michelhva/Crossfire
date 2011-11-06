@@ -235,4 +235,13 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
     public void setHidden(final boolean hidden) {
         // nothing
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void execute() {
+        // ignore
+    }
+
 }

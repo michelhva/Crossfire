@@ -143,6 +143,14 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      * {@inheritDoc}
      */
     @Override
+    public void execute() {
+        // ignore
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void paintComponent(@NotNull final Graphics g) {
         if (hidden) {
             return;

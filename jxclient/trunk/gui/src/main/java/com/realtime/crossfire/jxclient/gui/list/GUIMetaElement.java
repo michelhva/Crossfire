@@ -222,6 +222,14 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * {@inheritDoc}
      */
     @Override
+    public void execute() {
+        // ignore
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public boolean canScroll(final int distance) {
         if (distance < 0) {
             return index >= -distance;
