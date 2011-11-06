@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.skin.io;
 
-import com.realtime.crossfire.jxclient.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCharacterCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountLinkCharacterCommand;
@@ -29,6 +28,7 @@ import com.realtime.crossfire.jxclient.gui.commands.AccountLoginCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountPasswordCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountPlayCharacterCommand;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.gui.commands.CommandType;
 import com.realtime.crossfire.jxclient.gui.commands.ConnectCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogCloseCommand;

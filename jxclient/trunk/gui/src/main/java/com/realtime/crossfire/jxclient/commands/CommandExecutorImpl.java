@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
+import com.realtime.crossfire.jxclient.gui.commands.CommandExecutor;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import org.jetbrains.annotations.NotNull;
 
@@ -28,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
  * Executes {@link Command Commands}.
  * @author Andreas Kirschbaum
  */
-public class CommandExecutor {
+public class CommandExecutorImpl implements CommandExecutor {
 
     /**
      * The command queue for sending commands.
@@ -47,16 +48,15 @@ public class CommandExecutor {
      * @param commandQueue the command queue for sending commands
      * @param commands the commands to consider
      */
-    public CommandExecutor(@NotNull final CommandQueue commandQueue, @NotNull final Commands commands) {
+    public CommandExecutorImpl(@NotNull final CommandQueue commandQueue, @NotNull final Commands commands) {
         this.commandQueue = commandQueue;
         this.commands = commands;
     }
 
     /**
-     * Executes a command or a list of commands. The commands may be a client-
-     * or a server-sided command.
-     * @param commandLine the commands to execute
+     * {@inheritDoc}
      */
+    @Override
     public void executeCommand(@NotNull final CharSequence commandLine) {
         final Iterable<CommandExec> commandList = CommandExpander.expand(commandLine, commands);
         for (final CommandExec commandExec : commandList) {
