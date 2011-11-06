@@ -37,6 +37,7 @@ import com.realtime.crossfire.jxclient.commands.ScriptsCommand;
 import com.realtime.crossfire.jxclient.commands.ScripttellCommand;
 import com.realtime.crossfire.jxclient.commands.SetCommand;
 import com.realtime.crossfire.jxclient.commands.UnbindCommand;
+import com.realtime.crossfire.jxclient.faces.AskfaceFaceQueue;
 import com.realtime.crossfire.jxclient.faces.DefaultFacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesQueue;
@@ -163,7 +164,9 @@ public class JXClient {
                             final CrossfireServerConnection server = new DefaultCrossfireServerConnection(model, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
                             server.start();
                             try {
-                                final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
+                                final AskfaceFaceQueue askfaceFaceQueue = new AskfaceFaceQueue(server);
+                                model.setAskfaceFaceQueue(askfaceFaceQueue);
+                                final FacesQueue facesQueue = new FacesQueue(askfaceFaceQueue, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
                                 final FacesManager facesManager = new DefaultFacesManager(model.getFaceCache(), facesQueue);
                                 model.setItemsManager(facesManager);
                                 final InventoryView inventoryView = new InventoryView(model.getItemSet(), new InventoryComparator());

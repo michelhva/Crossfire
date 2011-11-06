@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateFaceListener;
 import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -30,7 +29,6 @@ import java.util.List;
 import java.util.Map;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link FaceQueue} requesting faces by "askface" commands sent to the
@@ -55,7 +53,7 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
     /**
      * The connection to use.
      */
-    @Nullable
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
@@ -80,29 +78,12 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
     private final List<Face> pendingFacesQueue = new LinkedList<Face>();
 
     /**
-     * The {@link CrossfireUpdateFaceListener} registered to {@link
-     * #crossfireServerConnection} receive face commands.
-     */
-    @NotNull
-    private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener() {
-
-        @Override
-        public void updateFace(final int faceNum, final int faceSetNum, @NotNull final ByteBuffer packet) {
-            faceReceived(faceNum, faceSetNum, packet);
-        }
-
-    };
-
-    /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection instance for sending
      * askface commands
      */
-    public AskfaceFaceQueue(@Nullable final CrossfireServerConnection crossfireServerConnection) {
+    public AskfaceFaceQueue(@NotNull final CrossfireServerConnection crossfireServerConnection) {
         this.crossfireServerConnection = crossfireServerConnection;
-        if (crossfireServerConnection != null) {
-            crossfireServerConnection.addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
-        }
     }
 
     /**
@@ -152,7 +133,7 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
             }
 
             final int faceNum = face.getFaceNum();
-            if (pendingAskfaces.put(faceNum, face) == null && crossfireServerConnection != null) {
+            if (pendingAskfaces.put(faceNum, face) == null) {
                 crossfireServerConnection.sendAskface(faceNum);
             }
         }
@@ -165,7 +146,7 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
      * @param faceSetNum the face set
      * @param packet the face data
      */
-    private void faceReceived(final int faceNum, final int faceSetNum, @NotNull final ByteBuffer packet) {
+    public void faceReceived(final int faceNum, final int faceSetNum, @NotNull final ByteBuffer packet) {
         final Integer faceObject = faceNum;
         synchronized (sync) {
             final Face face = pendingAskfaces.remove(faceObject);
