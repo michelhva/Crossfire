@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.server;
 
+import com.realtime.crossfire.jxclient.server.crossfire.Model;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocket;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
@@ -44,12 +45,13 @@ public class DefaultServerConnection implements ServerConnection {
 
     /**
      * Creates a new instance.
+     * @param model the model to update
      * @param debugProtocol tf non-<code>null</code>, write all protocol
      * commands to this writer
      * @throws IOException if an internal error occurs
      */
-    public DefaultServerConnection(@Nullable final DebugWriter debugProtocol) throws IOException {
-        clientSocket = new ClientSocket(debugProtocol);
+    public DefaultServerConnection(@NotNull final Model model, @Nullable final DebugWriter debugProtocol) throws IOException {
+        clientSocket = new ClientSocket(model, debugProtocol);
     }
 
     /**

@@ -21,11 +21,8 @@
 
 package com.realtime.crossfire.jxclient.guistate;
 
-import com.realtime.crossfire.jxclient.server.server.ServerConnection;
-import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
-import java.nio.ByteBuffer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -53,61 +50,6 @@ public class GuiStateManager {
      */
     @NotNull
     private final EventListenerList2<GuiStateListener> guiStateListeners = new EventListenerList2<GuiStateListener>(GuiStateListener.class);
-
-    /**
-     * The {@link ClientSocketListener} used to detect connection state
-     * changes.
-     */
-    @NotNull
-    private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
-
-        @Override
-        public void connecting() {
-            // ignore
-        }
-
-        @Override
-        public void connected() {
-            // ignore
-        }
-
-        @Override
-        public void packetReceived(@NotNull final ByteBuffer packet) {
-            // ignore
-        }
-
-        @Override
-        public void packetSent(@NotNull final byte[] buf, final int len) {
-            // ignore
-        }
-
-        @Override
-        public void disconnecting(@NotNull final String reason, final boolean isError) {
-            synchronized (sync) {
-                if (guiState == GuiState.CONNECTING || (isError && guiState == GuiState.CONNECTED)) {
-                    changeGUI(GuiState.CONNECT_FAILED, reason);
-                }
-            }
-        }
-
-        @Override
-        public void disconnected(@NotNull final String reason) {
-            synchronized (sync) {
-                if (guiState != GuiState.CONNECT_FAILED) {
-                    changeGUI(GuiState.METASERVER);
-                }
-            }
-        }
-
-    };
-
-    /**
-     * @param serverConnection the server connection to monitor
-     */
-    @Deprecated
-    public void setServerConnection(@NotNull final ServerConnection serverConnection) {
-        serverConnection.addClientSocketListener(clientSocketListener);
-    }
 
     /**
      * Sets a new {@link GuiState}.
@@ -240,6 +182,30 @@ public class GuiStateManager {
         }
         if (clientSocketState == ClientSocketState.CONNECTED) {
             changeGUI(GuiState.CONNECTED);
+        }
+    }
+
+    /**
+     * Called when the connection is being teared down.
+     * @param reason the disconnect reason
+     * @param isError whether the disconnect is unexpected
+     */
+    public void disconnecting(@NotNull final String reason, final boolean isError) {
+        synchronized (sync) {
+            if (guiState == GuiState.CONNECTING || (isError && guiState == GuiState.CONNECTED)) {
+                changeGUI(GuiState.CONNECT_FAILED, reason);
+            }
+        }
+    }
+
+    /**
+     * Called after the connection has been closed.
+     */
+    public void disconnected() {
+        synchronized (sync) {
+            if (guiState != GuiState.CONNECT_FAILED) {
+                changeGUI(GuiState.METASERVER);
+            }
         }
     }
 

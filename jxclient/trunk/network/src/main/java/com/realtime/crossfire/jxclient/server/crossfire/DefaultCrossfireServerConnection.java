@@ -593,7 +593,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     public DefaultCrossfireServerConnection(@NotNull final Model model, @Nullable final DebugWriter debugProtocol, @NotNull final String version) throws IOException {
         super(model);
         this.model = model;
-        defaultServerConnection = new DefaultServerConnection(debugProtocol);
+        defaultServerConnection = new DefaultServerConnection(model, debugProtocol);
         this.version = version;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
