@@ -57,7 +57,18 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
      */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
-        GuiUtils.setActive(this, true);
+        setActive(true);
+    }
+
+    /**
+     * Sets the active state of a GUI element.
+     * @param active the active state
+     */
+    public void setActive(final boolean active) {
+        final Gui gui = GuiUtils.getGui(this);
+        if (gui != null) {
+            gui.setActiveElement(this, active);
+        }
     }
 
 }

@@ -206,7 +206,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
-            GuiUtils.setActive(this, true);
+            setActive(true);
             setChanged();
             break;
 

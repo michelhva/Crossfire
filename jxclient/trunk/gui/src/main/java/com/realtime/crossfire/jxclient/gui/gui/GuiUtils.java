@@ -98,18 +98,6 @@ public class GuiUtils {
     }
 
     /**
-     * Sets the active state of a GUI element.
-     * @param element the element
-     * @param active the active state
-     */
-    public static void setActive(@NotNull final ActivatableGUIElement element, final boolean active) {
-        final Gui gui = getGui(element);
-        if (gui != null) {
-            gui.setActiveElement(element, active);
-        }
-    }
-
-    /**
      * Returns whether a GUI element is active.
      * @param element the element
      * @return whether the element is active

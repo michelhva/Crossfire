@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.gui.list;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementChangedListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
@@ -224,7 +223,7 @@ public class GUIItemList extends GUIList {
         super.mouseClicked(e);
         switch (e.getButton()) {
         case MouseEvent.BUTTON1:
-            GuiUtils.setActive(this, true);
+            setActive(true);
             button1Clicked(e.getModifiersEx());
             break;
 

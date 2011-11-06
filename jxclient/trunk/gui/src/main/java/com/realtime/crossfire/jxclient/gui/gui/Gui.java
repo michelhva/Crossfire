@@ -206,7 +206,7 @@ public class Gui extends JComponent {
         final Object defaultElement = getDefaultElement();
         if (defaultElement != null && defaultElement instanceof ActivatableGUIElement) {
             final ActivatableGUIElement activatableDefaultElement = (ActivatableGUIElement)defaultElement;
-            GuiUtils.setActive(activatableDefaultElement, true);
+            activatableDefaultElement.setActive(true);
         }
     }
 
@@ -398,7 +398,7 @@ public class Gui extends JComponent {
     private GUIText activateFirstTextArea() {
         final GUIText textArea = getFirstElement(GUIText.class);
         if (textArea != null) {
-            GuiUtils.setActive(textArea, true);
+            textArea.setActive(true);
         }
         return textArea;
     }
@@ -439,7 +439,7 @@ public class Gui extends JComponent {
         }
 
         assert activeElement != null;
-        GuiUtils.setActive(activeElement, false);
+        activeElement.setActive(false);
         return true;
     }
 
