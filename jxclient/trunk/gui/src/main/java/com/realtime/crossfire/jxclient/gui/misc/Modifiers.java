@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui;
+package com.realtime.crossfire.jxclient.gui.misc;
 
 import java.awt.event.InputEvent;
 

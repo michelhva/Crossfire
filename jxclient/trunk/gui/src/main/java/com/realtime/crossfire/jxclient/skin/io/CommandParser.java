@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin.io;
 
+import com.realtime.crossfire.jxclient.gui.button.GUISelectable;
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCharacterCommand;
 import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCommand;
@@ -53,7 +54,6 @@ import com.realtime.crossfire.jxclient.gui.commands.ToggleCommand;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.gui.GUISelectable;
 import com.realtime.crossfire.jxclient.gui.item.GUIItem;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIList;

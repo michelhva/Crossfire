@@ -19,8 +19,11 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.gui;
+package com.realtime.crossfire.jxclient.gui.misc;
 
+import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
 import java.awt.Color;

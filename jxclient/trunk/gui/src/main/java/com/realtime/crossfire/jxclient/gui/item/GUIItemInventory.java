@@ -22,9 +22,9 @@
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.Modifiers;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.misc.Modifiers;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemListener;

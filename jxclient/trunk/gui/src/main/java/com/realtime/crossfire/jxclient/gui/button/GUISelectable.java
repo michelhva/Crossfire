@@ -19,7 +19,9 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.gui;
+package com.realtime.crossfire.jxclient.gui.button;
+
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 
 /**
  * A {@link GUIElement} that can be selected.
