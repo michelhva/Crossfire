@@ -226,7 +226,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
         repaint();
         if (isVisible()) {
             if (changedListener != null) {
-                changedListener.notifyChanged(this);
+                changedListener.notifyChanged();
             }
         }
     }
