@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.gui.commands;
 import com.realtime.crossfire.jxclient.gui.button.AbstractButton;
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommand;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import org.jetbrains.annotations.NotNull;
 
 /**

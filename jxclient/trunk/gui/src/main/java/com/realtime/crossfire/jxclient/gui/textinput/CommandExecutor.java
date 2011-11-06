@@ -19,27 +19,21 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.commands;
+package com.realtime.crossfire.jxclient.gui.textinput;
 
 import org.jetbrains.annotations.NotNull;
 
 /**
- * An {@link Exception} thrown if a command does not exist.
+ * Executes commands.
  * @author Andreas Kirschbaum
  */
-public class NoSuchCommandException extends Exception {
+public interface CommandExecutor {
 
     /**
-     * The serial version UID.
+     * Executes a command or a list of commands. The commands may be a client-
+     * or a server-sided command.
+     * @param commandLine the commands to execute
      */
-    private static final long serialVersionUID = 1;
-
-    /**
-     * Creates a new instance.
-     * @param reason the failure reason
-     */
-    public NoSuchCommandException(@NotNull final String reason) {
-        super(reason);
-    }
+    void executeCommand(@NotNull final CharSequence commandLine);
 
 }

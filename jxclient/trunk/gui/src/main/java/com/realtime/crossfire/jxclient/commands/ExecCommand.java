@@ -22,8 +22,8 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
-import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
-import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
+import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.textinput.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import org.jetbrains.annotations.NotNull;
 
