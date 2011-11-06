@@ -7,7 +7,7 @@ height 24
 enter_x 9
 msg
 Created:  1995-03-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2011-11-06 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -2394,6 +2394,9 @@ as a final challenge but fail to return.
 endmsg
 x 16
 y 14
+arch quest_advance_apply
+name lake_country/undead_catacomb 0>10
+end
 end
 arch woodfloor
 x 16
