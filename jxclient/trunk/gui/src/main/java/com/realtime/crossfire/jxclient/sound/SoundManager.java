@@ -21,9 +21,9 @@
 
 package com.realtime.crossfire.jxclient.sound;
 
+import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.util.Collection;
 import java.util.EnumSet;

@@ -20,9 +20,9 @@
 
 package com.realtime.crossfire.jxclient.quests;
 
+import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.Collections;
 import java.util.Comparator;
