@@ -464,12 +464,14 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     protected void fireDelinvReceived(final int tag) {
+        model.getItemsManager().delinvReceived(tag);
         for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
             crossfireUpdateItemListener.delinvReceived(tag);
         }
     }
 
     protected void fireDelitemReceived(@NotNull final int[] tags) {
+        model.getItemsManager().delitemReceived(tags);
         for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
             crossfireUpdateItemListener.delitemReceived(tags);
         }
@@ -506,6 +508,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     protected void fireAddItemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
+        model.getItemsManager().addItemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
         for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
             crossfireUpdateItemListener.addItemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
         }
@@ -538,6 +541,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     protected void firePlayerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
+        model.getItemsManager().playerReceived(tag, weight, faceNum, name);
         for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
             crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
         }
@@ -568,6 +572,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     protected void fireUpditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
+        model.getItemsManager().upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
             crossfireUpdateItemListener.upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         }
