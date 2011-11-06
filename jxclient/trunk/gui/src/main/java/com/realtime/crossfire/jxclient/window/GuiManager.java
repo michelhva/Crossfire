@@ -474,8 +474,7 @@ public class GuiManager {
         }
 
         openDialog(queryDialog, false);
-        assert queryDialog != null;
-        queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDE_INPUT) != 0);
+        setHideInput((queryType&CrossfireQueryListener.HIDE_INPUT) != 0);
         currentQueryDialogIsNamePrompt = prompt.startsWith("What is your name?");
         if (currentQueryDialogIsNamePrompt) {
             final String playerName = settings.getString("player_"+connection.getHostname(), "");
@@ -513,7 +512,7 @@ public class GuiManager {
     public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
         final boolean result = windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
         if (dialog == queryDialog) {
-            dialog.setHideInput(false);
+            setHideInput(false);
         } else {
             final String name = dialog.getName();
             if (name != null) {
@@ -567,7 +566,7 @@ public class GuiManager {
      */
     public void toggleDialog(@NotNull final Gui dialog) {
         if (windowRenderer.toggleDialog(dialog) && dialog == queryDialog) {
-            dialog.setHideInput(false);
+            setHideInput(false);
         }
     }
 
@@ -949,6 +948,19 @@ public class GuiManager {
      */
     public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
         settings.putString("login_account_"+connection.getHostname()+"_"+accountName, characterName, "The character last selected on the account.");
+    }
+
+    /**
+     * Enables or disables hidden text in the first input field of the {@link
+     * #queryDialog}.
+     * @param hideInput if set, hide input; else show input
+     */
+    private void setHideInput(final boolean hideInput) {
+        assert queryDialog != null;
+        final GUIText textArea = queryDialog.getFirstElement(GUIText.class);
+        if (textArea != null) {
+            textArea.setHideInput(hideInput);
+        }
     }
 
     /**
