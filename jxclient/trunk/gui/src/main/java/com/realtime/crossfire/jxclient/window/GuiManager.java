@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -245,7 +244,7 @@ public class GuiManager {
                     final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
                     if (passwordField != null) {
                         passwordField.setText("");
-                        GuiUtils.setActive(passwordField, true);
+                        passwordField.setActive(true);
                     }
                 } catch (final JXCSkinException ignored) {
                     // ignore if dialog doesn't exist
@@ -527,11 +526,11 @@ public class GuiManager {
                             final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
                             if (passwordField != null) {
                                 passwordField.setText("");
-                                GuiUtils.setActive(passwordField, true);
+                                passwordField.setActive(true);
                             }
                         } else {
                             loginField.setText("");
-                            GuiUtils.setActive(loginField, true);
+                            loginField.setActive(true);
 
                             final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
                             if (passwordField != null) {

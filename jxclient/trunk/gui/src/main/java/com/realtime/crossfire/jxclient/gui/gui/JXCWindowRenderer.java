@@ -777,7 +777,7 @@ public class JXCWindowRenderer {
 
         final ActivatableGUIElement activeElement = dialog.getActiveElement();
         if (activeElement != null) {
-            GuiUtils.setActive(activeElement, false);
+            activeElement.setActive(false);
         }
         updateServerSettings();
         return true;
@@ -796,7 +796,7 @@ public class JXCWindowRenderer {
         if (openDialogsRemove(dialog)) {
             final ActivatableGUIElement activeElement = dialog.getActiveElement();
             if (activeElement != null) {
-                GuiUtils.setActive(activeElement, false);
+                activeElement.setActive(false);
             }
             updateServerSettings();
             return false;

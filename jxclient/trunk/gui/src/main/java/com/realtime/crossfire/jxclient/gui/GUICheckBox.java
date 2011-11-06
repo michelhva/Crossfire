@@ -216,7 +216,7 @@ public class GUICheckBox extends ActivatableGUIElement {
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
-            GuiUtils.setActive(this, true);
+            setActive(true);
             break;
 
         case MouseEvent.BUTTON2:

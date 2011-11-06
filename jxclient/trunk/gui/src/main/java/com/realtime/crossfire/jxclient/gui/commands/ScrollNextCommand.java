@@ -81,7 +81,7 @@ public class ScrollNextCommand implements GUICommand {
                 final AbstractButton abstractButton = (AbstractButton)nextElement;
                 abstractButton.execute();
             } else {
-                GuiUtils.setActive(nextElement, true);
+                nextElement.setActive(true);
             }
         }
     }

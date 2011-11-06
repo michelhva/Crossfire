@@ -310,7 +310,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
-            GuiUtils.setActive(this, true);
+            setActive(true);
             setChanged();
             break;
 
@@ -340,7 +340,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             if (!hideInput) {
                 commandHistory.addCommand(command);
             }
-            GuiUtils.setActive(this, false);
+            setActive(false);
             return true;
 
         case KeyEvent.VK_BACK_SPACE:
