@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.skin.skin;
+package com.realtime.crossfire.jxclient.gui.gui;
 
 import org.jetbrains.annotations.NotNull;
 
