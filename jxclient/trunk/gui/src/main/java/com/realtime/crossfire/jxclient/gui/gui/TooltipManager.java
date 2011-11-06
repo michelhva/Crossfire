@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages the tooltip display. An {@link AbstractLabel} is moved/resized to
@@ -47,8 +48,21 @@ public interface TooltipManager {
     /**
      * Updates the tooltip text of a GUI element. Does nothing if the given GUI
      * element is not active.
-     * @param guiElement the gui element to process
+     * @param tooltipText the next tooltip text
      */
-    void updateElement(@NotNull GUIElement guiElement);
+    void setTooltipText(@NotNull AbstractGUIElement element, @Nullable String tooltipText);
+
+    /**
+     * Updates the tooltip text of a GUI element. Does nothing if the given GUI
+     * element is not active.
+     * @param element the GUI element to process
+     */
+    void setTooltipText(@NotNull GUIElement element, @Nullable String tooltipText, int x, int y, int w, int h);
+
+    /**
+     * Returns whether the tooltip is enabled.
+     * @param element the element to check
+     */
+    boolean hasTooltipText(AbstractGUIElement element);
 
 }

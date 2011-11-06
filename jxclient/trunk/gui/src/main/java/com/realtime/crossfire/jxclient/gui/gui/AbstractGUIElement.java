@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import java.awt.Component;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
@@ -75,13 +74,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @NotNull
     private final GUIElementListener elementListener;
-
-    /**
-     * The tooltip text to show when the mouse is inside this element. May be
-     * <code>null</code> to show no tooltip.
-     */
-    @Nullable
-    private TooltipText tooltipText = null;
 
     /**
      * Creates a new instance.
@@ -169,9 +161,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
-        if (tooltipText != null) {
-            setTooltipText(tooltipText.getText());
-        }
         tooltipManager.setElement(this);
     }
 
@@ -230,10 +219,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void setTooltipText(@Nullable final String tooltipText) {
-        final Component gui = GuiUtils.getGui(this);
-        if (gui != null) {
-            setTooltipText(tooltipText, gui.getX()+getX(), gui.getY()+getY(), getWidth(), getHeight());
-        }
+        tooltipManager.setTooltipText(this, tooltipText);
     }
 
     /**
@@ -241,27 +227,15 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void setTooltipText(@Nullable final String tooltipText, final int x, final int y, final int w, final int h) {
-        final TooltipText oldTooltipText = this.tooltipText;
-        if (oldTooltipText == null) {
-            if (tooltipText == null) {
-                return;
-            }
-        } else {
-            if (tooltipText != null && tooltipText.equals(oldTooltipText.getText()) && x == oldTooltipText.getX() && y == oldTooltipText.getY() && w == oldTooltipText.getW() && h == oldTooltipText.getH()) {
-                return;
-            }
-        }
-        this.tooltipText = tooltipText == null ? null : new TooltipText(tooltipText, x, y, w, h);
-        tooltipManager.updateElement(this);
+        tooltipManager.setTooltipText(this, tooltipText, x, y, w, h);
     }
 
     /**
      * {@inheritDoc}
      */
-    @Nullable
     @Override
-    public TooltipText getTooltipText() {
-        return tooltipText;
+    public boolean hasTooltipText() {
+        return tooltipManager.hasTooltipText(this);
     }
 
     /**

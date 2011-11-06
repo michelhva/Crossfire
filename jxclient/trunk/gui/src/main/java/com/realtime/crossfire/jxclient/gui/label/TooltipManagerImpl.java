@@ -21,9 +21,13 @@
 
 package com.realtime.crossfire.jxclient.gui.label;
 
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
+import java.awt.Component;
+import java.util.WeakHashMap;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -70,6 +74,14 @@ public class TooltipManagerImpl implements TooltipManager {
     private final Object activeGuiElementSync = new Object();
 
     /**
+     * Maps {@link GUIElement} to associated {@link TooltipText}. The tooltip
+     * text is shown when the mouse is inside this element. May be
+     * <code>null</code> to show no tooltip.
+     */
+    @NotNull
+    private final WeakHashMap<GUIElement, TooltipText> tooltipTexts = new WeakHashMap<GUIElement, TooltipText>();
+
+    /**
      * Updates the current window size.
      * @param windowWidth the window width
      * @param windowHeight the window height
@@ -102,6 +114,10 @@ public class TooltipManagerImpl implements TooltipManager {
      */
     @Override
     public void setElement(@NotNull final GUIElement guiElement) {
+        final TooltipText tooltipText = tooltipTexts.get(guiElement);
+        if (tooltipText != null) {
+            guiElement.setTooltipText(tooltipText.getText());
+        }
         synchronized (activeGuiElementSync) {
             if (activeGuiElement == null) {
                 activeGuiElement = guiElement;
@@ -131,13 +147,44 @@ public class TooltipManagerImpl implements TooltipManager {
      * {@inheritDoc}
      */
     @Override
-    public void updateElement(@NotNull final GUIElement guiElement) {
+    public void setTooltipText(@NotNull final AbstractGUIElement element, @Nullable final String tooltipText) {
+        final Component gui = GuiUtils.getGui(element);
+        if (gui != null) {
+            setTooltipText(element, tooltipText, gui.getX()+element.getX(), gui.getY()+element.getY(), element.getWidth(), element.getHeight());
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setTooltipText(@NotNull final GUIElement element, @Nullable final String tooltipText, final int x, final int y, final int w, final int h) {
+        final TooltipText oldTooltipText = tooltipTexts.get(element);
+        if (oldTooltipText == null) {
+            if (tooltipText == null) {
+                return;
+            }
+        } else {
+            if (tooltipText != null && tooltipText.equals(oldTooltipText.getText()) && x == oldTooltipText.getX() && y == oldTooltipText.getY() && w == oldTooltipText.getW() && h == oldTooltipText.getH()) {
+                return;
+            }
+        }
+        tooltipTexts.put(element, tooltipText == null ? null : new TooltipText(tooltipText, x, y, w, h));
+
         synchronized (activeGuiElementSync) {
-            if (activeGuiElement == guiElement) {
+            if (activeGuiElement == element) {
                 removeTooltip();
                 addTooltip();
             }
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean hasTooltipText(final AbstractGUIElement element) {
+        return tooltipTexts.get(element) != null;
     }
 
     /**
@@ -154,7 +201,7 @@ public class TooltipManagerImpl implements TooltipManager {
             return;
         }
 
-        final TooltipText tooltipText = tmpActiveGuiElement.getTooltipText();
+        final TooltipText tooltipText = tooltipTexts.get(tmpActiveGuiElement);
         if (tooltipText == null) {
             tmpTooltip.setVisible(false);
             return;
