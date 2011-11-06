@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin.io;
 
-import com.realtime.crossfire.jxclient.skin.skin.Expression;
+import com.realtime.crossfire.jxclient.gui.gui.Expression;
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

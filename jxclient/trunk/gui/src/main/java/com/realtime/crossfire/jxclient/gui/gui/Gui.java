@@ -25,8 +25,6 @@ import com.realtime.crossfire.jxclient.gui.button.AbstractButton;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
-import com.realtime.crossfire.jxclient.skin.skin.Expression;
-import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.KeyEvent;
