@@ -112,13 +112,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     private final EventListenerList2<CrossfireSoundListener> crossfireSoundListeners = new EventListenerList2<CrossfireSoundListener>(CrossfireSoundListener.class);
 
     /**
-     * The {@link CrossfireSmoothListener CrossfireSmoothListeners} to be
-     * notified.
-     */
-    @NotNull
-    private final EventListenerList2<CrossfireSmoothListener> crossfireSmoothListeners = new EventListenerList2<CrossfireSmoothListener>(CrossfireSmoothListener.class);
-
-    /**
      * The {@link CrossfireMusicListener CrossfireMusicListeners} to be
      * notified.
      */
@@ -292,14 +285,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     @Override
     public void addCrossfireSoundListener(@NotNull final CrossfireSoundListener listener) {
         crossfireSoundListeners.add(listener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void addCrossfireSmoothListener(@NotNull final CrossfireSmoothListener listener) {
-        crossfireSmoothListeners.add(listener);
     }
 
     /**
@@ -561,12 +546,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     protected void fireCommandQueryReceived(@NotNull final String prompt, final int queryType) {
         for (final CrossfireQueryListener listener : queryListeners.getListeners()) {
             listener.commandQueryReceived(prompt, queryType);
-        }
-    }
-
-    protected void fireCommandSmoothReceived(final int faceNo, final int smoothFace) {
-        for (final CrossfireSmoothListener listener : crossfireSmoothListeners.getListeners()) {
-            listener.commandSmoothReceived(faceNo, smoothFace);
         }
     }
 

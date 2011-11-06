@@ -135,12 +135,6 @@ public interface CrossfireServerConnection extends ServerConnection {
     void addCrossfireSoundListener(@NotNull CrossfireSoundListener listener);
 
     /**
-     * Adds a listener to be notified about received smooth commands.
-     * @param listener the listener to add
-     */
-    void addCrossfireSmoothListener(@NotNull CrossfireSmoothListener listener);
-
-    /**
      * Adds a listener to be notified about received music commands.
      * @param listener the listener to add
      */
