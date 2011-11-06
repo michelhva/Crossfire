@@ -19,7 +19,9 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.server.socket;
+package com.realtime.crossfire.jxclient.guistate;
+
+import com.realtime.crossfire.jxclient.server.socket.ClientSocket;
 
 /**
  * Connection progress states of the {@link ClientSocket}. The state transitions

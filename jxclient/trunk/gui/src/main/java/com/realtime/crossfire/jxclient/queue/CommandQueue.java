@@ -21,11 +21,11 @@
 
 package com.realtime.crossfire.jxclient.queue;
 
+import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireComcListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import java.util.LinkedList;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;

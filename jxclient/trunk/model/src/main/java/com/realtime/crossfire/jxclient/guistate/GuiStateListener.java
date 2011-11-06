@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.guistate;
 
-import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
