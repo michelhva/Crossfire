@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFaceListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 
@@ -39,36 +37,10 @@ public class FaceCache {
     private final Face[] faces = new Face[65536];
 
     /**
-     * The listener to receive face commands.
-     */
-    @NotNull
-    private final CrossfireFaceListener crossfireFaceListener = new CrossfireFaceListener() {
-
-        @Override
-        public void faceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, @NotNull final String faceName) {
-            // XXX: ignores faceSetNum
-            if (faces[faceNum] != null) {
-                System.err.println("Warning: defining duplicate face "+faceNum+" ("+faceName+")");
-            }
-            faces[faceNum] = new Face(faceNum, faceName, faceChecksum);
-        }
-
-    };
-
-    /**
      * Creates a new instance.
      */
     public FaceCache() {
         faces[0] = new Face(0, "empty", 0);
-    }
-
-    /**
-     * Creates a new instance.
-     * @param crossfireServerConnection the server connection to use
-     */
-    public FaceCache(@NotNull final CrossfireServerConnection crossfireServerConnection) {
-        this();
-        crossfireServerConnection.addCrossfireFaceListener(crossfireFaceListener);
     }
 
     /**
@@ -103,6 +75,21 @@ public class FaceCache {
     public void reset() {
         Arrays.fill(faces, null);
         faces[0] = new Face(0, "empty", 0);
+    }
+
+    /**
+     * Adds a new face.
+     * @param faceNum the face ID
+     * @param faceSetNum the face set
+     * @param faceChecksum the face checksum
+     * @param faceName the face name
+     */
+    public void addFace(final int faceNum, final int faceSetNum, final int faceChecksum, @NotNull final String faceName) {
+        // XXX: ignores faceSetNum
+        if (faces[faceNum] != null) {
+            System.err.println("Warning: defining duplicate face "+faceNum+" ("+faceName+")");
+        }
+        faces[faceNum] = new Face(faceNum, faceName, faceChecksum);
     }
 
 }
