@@ -22,8 +22,11 @@
 package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.faces.FaceCache;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.SmoothFaces;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
+import com.realtime.crossfire.jxclient.items.ItemSet;
+import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
@@ -60,6 +63,14 @@ public class Model {
 
     @NotNull
     private final SmoothFaces smoothFaces = new SmoothFaces();
+
+    @NotNull
+    private ItemsManager itemsManager;
+
+    @Deprecated
+    public void setItemsManager(@NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet) {
+        itemsManager = new ItemsManager(facesManager, stats, skillSet, guiStateManager, itemSet);
+    }
 
     @NotNull
     public SkillSet getSkillSet() {
@@ -99,6 +110,11 @@ public class Model {
     @NotNull
     public SmoothFaces getSmoothFaces() {
         return smoothFaces;
+    }
+
+    @NotNull
+    public ItemsManager getItemsManager() {
+        return itemsManager;
     }
 
 }

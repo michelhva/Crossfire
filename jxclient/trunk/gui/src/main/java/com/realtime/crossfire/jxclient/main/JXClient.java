@@ -168,9 +168,9 @@ public class JXClient {
                                 final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
                                 final FacesManager facesManager = new DefaultFacesManager(model.getFaceCache(), facesQueue);
                                 final ItemSet itemSet = new ItemSet();
+                                model.setItemsManager(facesManager, itemSet);
                                 final InventoryView inventoryView = new InventoryView(itemSet, new InventoryComparator());
                                 final FloorView floorView = new FloorView(itemSet);
-                                new ItemsManager(server, facesManager, model.getStats(), model.getSkillSet(), model.getGuiStateManager(), itemSet);
                                 final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel);
                                 new MetaserverProcessor(metaserver, model.getGuiStateManager());
                                 final SoundManager soundManager = new SoundManager(model.getGuiStateManager(), debugSoundOutputStreamWriter == null ? null : new DebugWriter(debugSoundOutputStreamWriter));
