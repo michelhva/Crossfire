@@ -343,7 +343,7 @@ public class Gui extends JComponent {
      * @param activeElement the gui element
      * @return whether the given gui element is active
      */
-    private boolean isActiveElement(@Nullable final ActivatableGUIElement activeElement) {
+    public boolean isActiveElement(@Nullable final ActivatableGUIElement activeElement) {
         return this.activeElement != null && this.activeElement == activeElement;
     }
 
