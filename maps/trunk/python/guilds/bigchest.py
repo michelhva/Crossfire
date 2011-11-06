@@ -17,10 +17,7 @@ def GetForce(Target):
 			return Target
 		else:
 			Target=Target.Below
-if activator.Name=="shrike":
-	Target=activator.CheckInventory("skill_praying")
-	if Target.Title=="Sorig":
-		Target.quantity=0
+
 if whoami.Name=="Big Chest":
 	myPath=mymap.Path
 	Target=activator.CheckInventory("BigChest")
