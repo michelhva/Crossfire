@@ -19,11 +19,9 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.commands;
+package com.realtime.crossfire.jxclient.gui.textinput;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommand;
-import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
-import com.realtime.crossfire.jxclient.gui.textinput.CommandExecutor;
 import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import java.util.regex.Pattern;

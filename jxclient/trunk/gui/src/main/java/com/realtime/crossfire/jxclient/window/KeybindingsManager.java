@@ -22,10 +22,10 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
-import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import java.awt.event.KeyEvent;
 import java.io.File;
