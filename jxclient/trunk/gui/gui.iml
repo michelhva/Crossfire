@@ -11,7 +11,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../jxclient.orig/lib/annotations.jar!/" />
+          <root url="jar://$MODULE_DIR$/../lib/junit-4.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -20,14 +20,15 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../jxclient.orig/lib/junit-4.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/../lib/annotations.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="gui" />
     <orderEntry type="module" module-name="model" />
+    <orderEntry type="module" module-name="network" />
+    <orderEntry type="module" module-name="util" />
   </component>
 </module>
 
