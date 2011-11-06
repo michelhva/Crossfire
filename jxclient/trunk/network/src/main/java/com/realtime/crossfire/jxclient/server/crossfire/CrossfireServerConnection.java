@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.faces.AskfaceQueue;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.server.ServerConnection;
 import org.jetbrains.annotations.NotNull;
@@ -31,7 +32,7 @@ import org.jetbrains.annotations.Nullable;
  * ServerConnection}.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireServerConnection extends ServerConnection {
+public interface CrossfireServerConnection extends AskfaceQueue, ServerConnection {
 
     /**
      * Starts operation.

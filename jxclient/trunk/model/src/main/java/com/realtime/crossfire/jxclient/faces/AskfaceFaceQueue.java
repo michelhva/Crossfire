@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -54,7 +53,7 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
      * The connection to use.
      */
     @NotNull
-    private final CrossfireServerConnection crossfireServerConnection;
+    private final AskfaceQueue askfaceQueue;
 
     /**
      * Face numbers for which "askface" commands have been sent without having
@@ -79,11 +78,11 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
 
     /**
      * Creates a new instance.
-     * @param crossfireServerConnection the connection instance for sending
+     * @param askfaceQueue the connection instance for sending
      * askface commands
      */
-    public AskfaceFaceQueue(@NotNull final CrossfireServerConnection crossfireServerConnection) {
-        this.crossfireServerConnection = crossfireServerConnection;
+    public AskfaceFaceQueue(@NotNull final AskfaceQueue askfaceQueue) {
+        this.askfaceQueue = askfaceQueue;
     }
 
     /**
@@ -134,7 +133,7 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
 
             final int faceNum = face.getFaceNum();
             if (pendingAskfaces.put(faceNum, face) == null) {
-                crossfireServerConnection.sendAskface(faceNum);
+                askfaceQueue.sendAskface(faceNum);
             }
         }
     }
