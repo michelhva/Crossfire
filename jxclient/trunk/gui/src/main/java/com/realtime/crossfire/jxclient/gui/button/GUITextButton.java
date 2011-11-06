@@ -152,7 +152,7 @@ public class GUITextButton extends AbstractButton implements GUISelectable {
         g2.setFont(font);
         g2.setColor(selected ? colorSelected : color);
         final int width = getWidth();
-        (GuiUtils.isActive(this) ? down : up).render(g2, width);
+        (isActive() ? down : up).render(g2, width);
         final FontRenderContext fontRenderContext = g2.getFontRenderContext();
         final RectangularShape rectangle = font.getStringBounds(text, fontRenderContext);
         final int x = (int)Math.round((width-rectangle.getWidth())/2);

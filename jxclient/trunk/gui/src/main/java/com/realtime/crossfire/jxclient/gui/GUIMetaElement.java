@@ -157,7 +157,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         g.setColor(new Color(0, 0, 0, 0.0f));
         g.fillRect(0, 0, getWidth(), getHeight());
         g.setFont(font);
-        g.setColor(GuiUtils.isActive(this) || selected ? Color.RED : Color.GRAY);
+        g.setColor(isActive() || selected ? Color.RED : Color.GRAY);
         if (image != null) {
             g.drawImage(image, 0, 0, null);
         }

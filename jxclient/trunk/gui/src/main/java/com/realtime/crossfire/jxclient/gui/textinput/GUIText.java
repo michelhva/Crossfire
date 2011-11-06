@@ -231,7 +231,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         super.paintComponent(g);
 
         final Graphics2D g2 = (Graphics2D)g;
-        g2.drawImage(GuiUtils.isActive(this) ? activeImage : inactiveImage, 0, 0, null);
+        g2.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
         g2.setFont(font);
         final String tmp;
         final int y;
@@ -240,7 +240,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             final FontRenderContext fontRenderContext = g2.getFontRenderContext();
             final RectangularShape rectangle = font.getStringBounds(tmp, fontRenderContext);
             y = (int)Math.round(getHeight()-rectangle.getMaxY()-rectangle.getMinY())/2;
-            if (GuiUtils.isActive(this)) {
+            if (isActive()) {
                 final String tmpPrefix = tmp.substring(0, cursor-offset);
                 final String tmpCursor = tmp.substring(0, cursor-offset+1);
                 final RectangularShape rectanglePrefix = font.getStringBounds(tmpPrefix, fontRenderContext);
@@ -251,7 +251,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 g2.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, getHeight());
             }
         }
-        g2.setColor(GuiUtils.isActive(this) ? activeColor : inactiveColor);
+        g2.setColor(isActive() ? activeColor : inactiveColor);
         g2.drawString(tmp, margin, y);
     }
 

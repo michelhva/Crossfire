@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.gui.button;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -154,7 +153,7 @@ public class GUIButton extends AbstractButton {
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
-        g.drawImage(GuiUtils.isActive(this) ? imageDown : imageUp, 0, 0, null);
+        g.drawImage(isActive() ? imageDown : imageUp, 0, 0, null);
         if (text != null && font != null && color != null) {
             g.setFont(font);
             g.setColor(color);

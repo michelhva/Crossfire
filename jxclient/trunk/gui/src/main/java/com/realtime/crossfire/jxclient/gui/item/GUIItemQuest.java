@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.list.GUIQuestList;
 import com.realtime.crossfire.jxclient.items.CfItem;
@@ -297,7 +296,7 @@ public class GUIItemQuest extends GUIItemItem {
      */
     @Override
     protected boolean isSelected() {
-        return selected || GuiUtils.isActive(this);
+        return selected || isActive();
     }
 
     /**
