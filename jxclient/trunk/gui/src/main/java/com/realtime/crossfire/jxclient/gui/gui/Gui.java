@@ -332,7 +332,7 @@ public class Gui extends JComponent {
             if (guiAutoCloseListener != null) {
                 final GuiAutoCloseListener listener = guiAutoCloseListener;
                 guiAutoCloseListener = null;
-                listener.autoClosed(this);
+                listener.autoClosed();
             }
         }
     }

@@ -286,19 +286,6 @@ public class JXCWindowRenderer {
     private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
-     * The {@link GuiAutoCloseListener} used to track auto-closing dialogs.
-     */
-    @NotNull
-    private final GuiAutoCloseListener guiAutoCloseListener = new GuiAutoCloseListener() {
-
-        @Override
-        public void autoClosed(@NotNull final Gui gui) {
-            closeDialog(gui);
-        }
-
-    };
-
-    /**
      * The {@link ComponentListener} attached to {@link #frame}.
      */
     @NotNull
@@ -682,7 +669,21 @@ public class JXCWindowRenderer {
 
         if (!openDialogsRemove(dialog)) {
             dialog.activateDefaultElement();
-            dialog.setGuiAutoCloseListener(autoCloseOnDeactivate ? guiAutoCloseListener : null);
+            @Nullable final GuiAutoCloseListener guiAutoCloseListener;
+            if (autoCloseOnDeactivate) {
+                guiAutoCloseListener = new GuiAutoCloseListener() {
+
+                    @Override
+                    public void autoClosed() {
+                        closeDialog(dialog);
+                    }
+
+                };
+
+            } else {
+                guiAutoCloseListener = null;
+            }
+            dialog.setGuiAutoCloseListener(guiAutoCloseListener);
         }
         openDialogsAdd(dialog);
         updateServerSettings();
