@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
-import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.gui.label.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;

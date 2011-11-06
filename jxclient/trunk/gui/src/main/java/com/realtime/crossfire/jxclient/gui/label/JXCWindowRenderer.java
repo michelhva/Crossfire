@@ -19,8 +19,15 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.gui;
+package com.realtime.crossfire.jxclient.gui.label;
 
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.GuiAutoCloseListener;
+import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
+import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
+import com.realtime.crossfire.jxclient.gui.gui.RendererGuiStateListener;
 import com.realtime.crossfire.jxclient.gui.list.GUIFloorList;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
