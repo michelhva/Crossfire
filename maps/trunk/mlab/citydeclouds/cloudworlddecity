@@ -57880,10 +57880,7 @@ y 47
 end
 arch magic_mouth
 msg
-A statue of a great wizard stands
-before you. The wizard is holding a
-staff and is wearing a amulet of some
-sort...
+A statue of a great wizard stands before you. The wizard is holding a staff and is wearing a amulet of some sort...
 endmsg
 x 47
 y 48
@@ -60017,9 +60014,7 @@ connected 1110
 end
 arch magic_mouth
 msg
-An Area Dragon Port Pass can be
-acquired at CDC Area Travels LTD. in
-the CityDeClouds.
+An Area Dragon Port Pass can be acquired at CDC Area Travels LTD. in the CityDeClouds.
 endmsg
 x 48
 y 110
@@ -60047,12 +60042,9 @@ arch fatman
 name Proprietor
 msg
 @match hi|hello
-Welcome to the dragon dock. Please
-show your pass.
+Welcome to the dragon dock. Please show your pass.
 @match lord|Valdak
-Oh... that buisness... I'd not
-venture to that castle far enough to
-the west if I were you.
+Oh... that buisness... I'd not venture to that castle far enough to the west if I were you.
 endmsg
 x 48
 y 111
@@ -77323,8 +77315,7 @@ arch keep
 name Cloud World Keep
 slaying keep/cwdcrandkeep1
 msg
-It is ... quiet here... the doors
-unlocked... but uninviting.
+It is ... quiet here... the doors unlocked... but uninviting.
 endmsg
 hp 12
 sp 21
@@ -84563,12 +84554,7 @@ end
 arch sign
 msg
 -Welcome to the City De Clouds-
-The city was created upon the whim of
-a great wizard thought to be long
-gone who built a tall tower to the
-clouds and infused upon them an air
-of magik so thus they could support a
-wonderous city.
+The city was created upon the whim of a great wizard thought to be long gone who built a tall tower to the clouds and infused upon them an air of magik so thus they could support a wonderous city.
 endmsg
 x 63
 y 106
@@ -86695,8 +86681,7 @@ arch chess_club
 name Trader Joe's Trademarket
 slaying shops/cwdctrademarket
 msg
-This seems like a safe and secure
-trading area.
+This seems like a safe and secure trading area.
 endmsg
 hp 6
 sp 15
@@ -172659,9 +172644,7 @@ end
 arch knight
 msg
 @match *
-No entry!... Unless ofcourse you have
-permission from the Captain of the
-Guard.
+No entry!... Unless ofcourse you have permission from the Captain of the Guard.
 endmsg
 x 118
 y 33
@@ -185017,8 +185000,7 @@ arch s_inn
 name Snow Cloud Cafe
 slaying shops/cdcwcafe1
 msg
-You enter a nice cafe upon a cold,
-almost frozen, cloud.
+You enter a nice cafe upon a cold, almost frozen, cloud. 
 Host: Welcome to the Snow Cloud Cafe.
 Where would you like to sit?
 endmsg
