@@ -3228,8 +3228,8 @@ end
 arch northman
 name Thall
 msg
-@match * I will drink the blood of
-your tribesmen.
+@match * 
+I will drink the blood of your tribesmen.
 endmsg
 x 11
 y 13
@@ -3494,8 +3494,7 @@ end
 arch sign
 name CityDeClouds Message Board
 msg
-I am a talking board, please say something to me.
-If you don't know what to say, say help.
+I am a talking board, please say something to me. If you don't know what to say, say help.
 endmsg
 x 12
 y 18
@@ -4698,7 +4697,8 @@ end
 arch dragon_exit
 name express mail dragon
 msg
-@match * grr
+@match * 
+grr
 endmsg
 x 18
 y 13
@@ -4960,15 +4960,7 @@ name Prospectus
 msg
 Imperial Post Services
 -----------------------
-Thank you for choosing the IPS to
-take care of your messages. Want to
-get more ? We have a wide range of
-products and services to offer to
-anyone. Pirate ? Try  our
-TalkParrots(tm) ! Beholder ? Enjoy
-our fabulous non-stereoscopical cards
-! And don't forget:
-The Empire Is Everywhere For You
+Thank you for choosing the IPS to take care of your messages. Want to get more ? We have a wide range of products and services to offer to anyone. Pirate ? Try  our TalkParrots(tm) ! Beholder ? Enjoy our fabulous non-stereoscopical cards! And don't forget: The Empire Is Everywhere For You
 endmsg
 x 19
 y 17
@@ -5173,20 +5165,16 @@ name Manual
 msg
 Recieving Mail
 -----------------------
-Open the mailbox and get the scrolls,
-read them by applying.
+Open the mailbox and get the scrolls, read them by applying.
+...
 Sending Mail
 -----------------------
-Get a pencil and be sure that you are
-able to use the literacy skill. You can
-get both at the office, ask Colette for
-help.
-Get a preadressed mailscroll, mark it
-and write on it with:
+Get a pencil and be sure that you are able to use the literacy skill. You can get both at the office, ask Colette for help.
+...
+Get a preadressed mailscroll, mark it and write on it with:
 use_skill inscription <text>
-You can write multiple lines, when done
-drop the scoll in the mailbox and it
-will be send.
+...
+You can write multiple lines, when done drop the scoll in the mailbox and it will be send.
 endmsg
 x 20
 y 17
