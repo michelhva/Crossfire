@@ -19,12 +19,15 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.label;
+package com.realtime.crossfire.jxclient.gui.misc;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.label.Alignment;
+import com.realtime.crossfire.jxclient.gui.label.GUIHTMLLabel;
+import com.realtime.crossfire.jxclient.gui.label.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
