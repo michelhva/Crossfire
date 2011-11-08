@@ -38,6 +38,7 @@ import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import com.realtime.crossfire.jxclient.util.Resolution;
+import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
@@ -835,15 +836,22 @@ public class JXCWindowRenderer {
         }
 
         this.rendererGuiState = rendererGuiState;
-        for (final Gui dialog : openDialogs) {
-            removeFromLayeredPane(dialog);
-            if (!dialog.isHidden(rendererGuiState)) {
-                addToLayeredPane(dialog, 1, 0);
+        SwingUtilities2.invokeAndWait(new Runnable() {
+
+            @Override
+            public void run() {
+                for (final Gui dialog : openDialogs) {
+                    removeFromLayeredPane(dialog);
+                    if (!dialog.isHidden(rendererGuiState)) {
+                        addToLayeredPane(dialog, 1, 0);
+                    }
+                }
+                if (frame != null) {
+                    frame.validate();
+                }
             }
-        }
-        if (frame != null) {
-            frame.validate();
-        }
+
+        });
         updateServerSettings();
         for (final RendererGuiStateListener listener : rendererGuiStateListeners.getListeners()) {
             listener.guiStateChanged(rendererGuiState);
