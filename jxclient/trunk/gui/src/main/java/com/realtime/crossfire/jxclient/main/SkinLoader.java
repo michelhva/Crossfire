@@ -28,7 +28,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.gui.label.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.gui.misc.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandExecutor;
 import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;

@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiStateListener;
-import com.realtime.crossfire.jxclient.gui.label.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.gui.misc.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
