@@ -45,6 +45,7 @@ import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
+import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -511,54 +512,62 @@ public class GuiManager {
      *         the dialog already was opened as the topmost dialog
      */
     public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
-        final boolean result = windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
-        if (dialog == queryDialog) {
-            setHideInput(false);
-        } else {
-            final String name = dialog.getName();
-            if (name != null) {
-                if (name.equals("account_login")) {
-                    final GUIText loginField = dialog.getFirstElement(GUIText.class, "account_login");
-                    if (loginField != null) {
-                        final String accountName = settings.getString("login_account_"+connection.getHostname(), "");
-                        if (accountName.length() > 0) {
-                            loginField.setText(accountName);
+        final boolean[] result = new boolean[1];
+        SwingUtilities2.invokeAndWait(new Runnable() {
 
-                            final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
-                            if (passwordField != null) {
-                                passwordField.setText("");
-                                passwordField.setActive(true);
-                            }
-                        } else {
-                            loginField.setText("");
-                            loginField.setActive(true);
+            @Override
+            public void run() {
+                result[0] = windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
+                if (dialog == queryDialog) {
+                    setHideInput(false);
+                } else {
+                    final String name = dialog.getName();
+                    if (name != null) {
+                        if (name.equals("account_login")) {
+                            final GUIText loginField = dialog.getFirstElement(GUIText.class, "account_login");
+                            if (loginField != null) {
+                                final String accountName = settings.getString("login_account_"+connection.getHostname(), "");
+                                if (accountName.length() > 0) {
+                                    loginField.setText(accountName);
 
-                            final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
-                            if (passwordField != null) {
-                                passwordField.setText("");
+                                    final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                                    if (passwordField != null) {
+                                        passwordField.setText("");
+                                        passwordField.setActive(true);
+                                    }
+                                } else {
+                                    loginField.setText("");
+                                    loginField.setActive(true);
+
+                                    final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                                    if (passwordField != null) {
+                                        passwordField.setText("");
+                                    }
+                                }
+                            } else {
+                                final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                                if (passwordField != null) {
+                                    passwordField.setText("");
+                                }
                             }
-                        }
-                    } else {
-                        final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
-                        if (passwordField != null) {
-                            passwordField.setText("");
-                        }
-                    }
-                } else if (name.equals("account_characters")) {
-                    final GUICharacterList characterList = dialog.getFirstElement(GUICharacterList.class);
-                    if (characterList != null) {
-                        final String accountName = server.getAccountName();
-                        if (accountName != null) {
-                            final String characterName = settings.getString("login_account_"+connection.getHostname()+"_"+accountName, "");
-                            if (characterName.length() > 0) {
-                                characterList.setCharacter(characterName);
+                        } else if (name.equals("account_characters")) {
+                            final GUICharacterList characterList = dialog.getFirstElement(GUICharacterList.class);
+                            if (characterList != null) {
+                                final String accountName = server.getAccountName();
+                                if (accountName != null) {
+                                    final String characterName = settings.getString("login_account_"+connection.getHostname()+"_"+accountName, "");
+                                    if (characterName.length() > 0) {
+                                        characterList.setCharacter(characterName);
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
-        }
-        return result;
+
+        });
+        return result[0];
     }
 
     /**
