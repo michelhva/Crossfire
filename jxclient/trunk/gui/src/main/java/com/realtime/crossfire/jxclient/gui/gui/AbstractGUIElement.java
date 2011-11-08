@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.gui;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
+import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -74,6 +75,25 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @NotNull
     private final GUIElementListener elementListener;
+
+    /**
+     * The {@link Runnable} that implements the code of {@link #setChanged()}
+     * which must run on the EDT.
+     */
+    @NotNull
+    private final Runnable setChangedRunnable = new Runnable() {
+
+        @Override
+        public void run() {
+            repaint();
+            if (isVisible()) {
+                if (changedListener != null) {
+                    changedListener.notifyChanged();
+                }
+            }
+        }
+
+    };
 
     /**
      * Creates a new instance.
@@ -206,11 +226,10 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void setChanged() {
-        repaint();
-        if (isVisible()) {
-            if (changedListener != null) {
-                changedListener.notifyChanged();
-            }
+        if (SwingUtilities.isEventDispatchThread()) {
+            setChangedRunnable.run();
+        } else {
+            SwingUtilities.invokeLater(setChangedRunnable);
         }
     }
 
