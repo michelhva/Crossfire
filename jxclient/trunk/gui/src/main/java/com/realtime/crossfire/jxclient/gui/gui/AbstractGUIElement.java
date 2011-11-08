@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
@@ -226,11 +227,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void setChanged() {
-        if (SwingUtilities.isEventDispatchThread()) {
-            setChangedRunnable.run();
-        } else {
-            SwingUtilities.invokeLater(setChangedRunnable);
-        }
+        SwingUtilities2.invokeLater(setChangedRunnable);
     }
 
     /**
