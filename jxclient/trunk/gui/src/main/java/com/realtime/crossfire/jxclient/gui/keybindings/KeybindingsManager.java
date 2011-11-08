@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
-import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;
+import com.realtime.crossfire.jxclient.gui.commandlist.GUICommandFactory;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import java.awt.event.KeyEvent;
 import java.io.File;

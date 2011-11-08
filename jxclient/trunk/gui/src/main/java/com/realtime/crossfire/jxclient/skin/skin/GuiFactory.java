@@ -21,9 +21,9 @@
 
 package com.realtime.crossfire.jxclient.skin.skin;
 
+import com.realtime.crossfire.jxclient.gui.commandlist.GUICommandFactory;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
-import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;
 import javax.swing.GroupLayout;
 import org.jetbrains.annotations.NotNull;
 

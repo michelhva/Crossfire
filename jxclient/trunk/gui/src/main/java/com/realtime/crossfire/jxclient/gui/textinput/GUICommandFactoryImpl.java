@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.textinput;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommand;
+import com.realtime.crossfire.jxclient.gui.commandlist.GUICommandFactory;
 import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import java.util.regex.Pattern;
@@ -32,7 +33,7 @@ import org.jetbrains.annotations.NotNull;
  * representation.
  * @author Andreas Kirschbaum
  */
-public class GUICommandFactory {
+public class GUICommandFactoryImpl implements GUICommandFactory {
 
     /**
      * Pattern matching lines that need a {@link #TRAILING_ESCAPE} appended.
@@ -70,7 +71,7 @@ public class GUICommandFactory {
      * @param commandExecutor the command executor instance to use
      * @param macros the macros instance to use
      */
-    public GUICommandFactory(@NotNull final CommandCallback commandCallback, @NotNull final CommandExecutor commandExecutor, @NotNull final Macros macros) {
+    public GUICommandFactoryImpl(@NotNull final CommandCallback commandCallback, @NotNull final CommandExecutor commandExecutor, @NotNull final Macros macros) {
         this.commandCallback = commandCallback;
         this.commandExecutor = commandExecutor;
         this.macros = macros;
@@ -81,6 +82,7 @@ public class GUICommandFactory {
      * @param encodedCommandString the command string representation
      * @return the new command instance
      */
+    @Override
     public GUICommand createCommandDecode(@NotNull final String encodedCommandString) {
         return createCommand(decode(encodedCommandString));
     }
@@ -91,6 +93,7 @@ public class GUICommandFactory {
      * @return the new command instance
      */
     @NotNull
+    @Override
     public GUICommand createCommand(@NotNull final String commandString) {
         if (commandString.equals("-e")) {
             return new ActivateCommandInputCommand("", commandCallback, macros);
@@ -107,7 +110,8 @@ public class GUICommandFactory {
      * @return the encoded key binding
      */
     @NotNull
-    public static String encode(@NotNull final String command) {
+    @Override
+    public String encode(@NotNull final String command) {
         return PATTERN_ENCODE.matcher(command).matches() ? command+TRAILING_ESCAPE : command;
     }
 
@@ -117,7 +121,8 @@ public class GUICommandFactory {
      * @return the decoded key binding
      */
     @NotNull
-    private static String decode(@NotNull final String command) {
+    @Override
+    public String decode(@NotNull final String command) {
         return command.endsWith(TRAILING_ESCAPE) ? command.substring(0, command.length()-TRAILING_ESCAPE.length()) : command;
     }
 
