@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandListType;
-import com.realtime.crossfire.jxclient.gui.textinput.GUICommandFactory;
+import com.realtime.crossfire.jxclient.gui.commandlist.GUICommandFactory;
 import java.awt.event.KeyEvent;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -245,7 +245,7 @@ public class KeyBindings {
                             bw.write(' ');
                             bw.write(Integer.toString(keyCodeKeyBinding.getModifiers()));
                             bw.write(' ');
-                            bw.write(GUICommandFactory.encode(keyCodeKeyBinding.getCommandString()));
+                            bw.write(guiCommandFactory.encode(keyCodeKeyBinding.getCommandString()));
                             bw.newLine();
                         } else {
                             throw new AssertionError("Cannot encode "+keyBinding.getClass().getName());
