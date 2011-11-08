@@ -753,22 +753,29 @@ public class JXCWindowRenderer {
      */
     @SuppressWarnings("NullableProblems")
     public void setCurrentGui(@NotNull final Gui gui) {
-        if (frame != null && currentGui != null) {
-            removeFromLayeredPane(currentGui);
-        }
-        currentGui = gui;
-        //noinspection VariableNotUsedInsideIf
-        if (frame != null) {
-            addToLayeredPane(currentGui, 0, -1);
-        }
+        SwingUtilities2.invokeAndWait(new Runnable() {
 
-        if (windowWidth > 0 && windowHeight > 0) {
-            assert currentGui != null;
-            currentGui.setSize(windowWidth, windowHeight);
-        }
-        if (frame != null) {
-            frame.validate();
-        }
+            @Override
+            public void run() {
+                if (frame != null && currentGui != null) {
+                    removeFromLayeredPane(currentGui);
+                }
+                currentGui = gui;
+                //noinspection VariableNotUsedInsideIf
+                if (frame != null) {
+                    addToLayeredPane(currentGui, 0, -1);
+                }
+
+                if (windowWidth > 0 && windowHeight > 0) {
+                    assert currentGui != null;
+                    currentGui.setSize(windowWidth, windowHeight);
+                }
+                if (frame != null) {
+                    frame.validate();
+                }
+            }
+
+        });
         updateServerSettings();
     }
 
