@@ -6,6 +6,7 @@ width 35
 height 27
 msg
 Created:  1993-11-10
+Modified: 2011-11-09 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -858,7 +859,6 @@ y 23
 end
 arch c_man
 name Ben
-name_pl Ben
 msg
 @match daughters
 My daughters Susan and Nancy.
@@ -2239,7 +2239,6 @@ y 2
 end
 arch c_man
 name Rudy
-name_pl Rudy
 x 13
 y 2
 arch event_say
