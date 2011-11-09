@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2003-08-18 mikeeusa
-Modified: 2009-02-06 Arvid Norlander
+Modified: 2011-11-08 Rick Tanner
 endmsg
 end
 arch blocked
@@ -399,21 +399,18 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 7
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 8
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 9
 unique 1
@@ -499,7 +496,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 6
 unique 1
@@ -514,28 +510,24 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 7
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 8
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 9
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 10
 unique 1
@@ -606,28 +598,24 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 5
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 6
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 7
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 8
 unique 1
@@ -640,21 +628,18 @@ no_pick 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 9
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 10
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 11
 unique 1
@@ -669,7 +654,7 @@ y 12
 end
 arch bookshelf
 name wall shelf
-name_pl wall shelf
+name_pl wall shelves
 x 7
 y 12
 end
@@ -714,21 +699,18 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 5
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 6
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 7
 unique 1
@@ -739,14 +721,13 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 8
 unique 1
 end
 arch table_4
 name high bargaining table
-name_pl high table
+name_pl high tables
 x 8
 y 8
 material 0
@@ -755,7 +736,6 @@ no_pick 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 9
 unique 1
@@ -766,14 +746,12 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 10
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 11
 unique 1
@@ -788,7 +766,7 @@ y 12
 end
 arch bookshelf
 name wall shelf
-name_pl wall shelf
+name_pl wall shelves
 x 8
 y 12
 end
@@ -834,28 +812,24 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 5
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 6
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 7
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 8
 unique 1
@@ -868,21 +842,18 @@ no_pick 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 9
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 10
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 11
 unique 1
@@ -897,7 +868,7 @@ y 12
 end
 arch bookshelf
 name wall shelf
-name_pl wall shelf
+name_pl wall shelves
 x 9
 y 12
 end
@@ -954,35 +925,30 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 6
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 7
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 8
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 9
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 10
 unique 1
@@ -1068,21 +1034,18 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 7
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 8
 unique 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 9
 unique 1
