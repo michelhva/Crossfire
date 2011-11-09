@@ -9,7 +9,7 @@ enter_x 23
 enter_y 31
 msg
 Created:  2003-08-17 mikeeusa
-Modified: 2011-11-07 Rick Tanner
+Modified: 2011-11-08 Rick Tanner
 endmsg
 end
 arch blocked
@@ -364,10 +364,10 @@ end
 arch flagstone
 y 42
 end
-arch swall_1_1
+arch cwall_2_2_1
 y 42
 end
-arch cwall_2_2_1
+arch swall_1_1_half
 y 42
 end
 arch dungeon_magic
@@ -12606,11 +12606,15 @@ x 21
 y 38
 unique 1
 end
-arch swall_2_2_3
+arch swall_1_3_half
 x 21
 y 38
 end
 arch cwall_0
+x 21
+y 38
+end
+arch swall_1_1_half
 x 21
 y 38
 end
