@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
+import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import java.awt.Component;
 import java.util.WeakHashMap;
 import org.jetbrains.annotations.NotNull;
@@ -82,6 +83,23 @@ public class TooltipManagerImpl implements TooltipManager {
     private final WeakHashMap<GUIElement, TooltipText> tooltipTexts = new WeakHashMap<GUIElement, TooltipText>();
 
     /**
+     * The {@link Runnable} that implements the functionality of {@link
+     * #reset()}.
+     */
+    @NotNull
+    private final Runnable resetRunnable = new Runnable() {
+
+        @Override
+        public void run() {
+            synchronized (activeGuiElementSync) {
+                removeTooltip();
+                activeGuiElement = null;
+            }
+        }
+
+    };
+
+    /**
      * Updates the current window size.
      * @param windowWidth the window width
      * @param windowHeight the window height
@@ -103,10 +121,7 @@ public class TooltipManagerImpl implements TooltipManager {
      * Removes the tooltip. Does nothing if no tooltip is active.
      */
     public void reset() {
-        synchronized (activeGuiElementSync) {
-            removeTooltip();
-            activeGuiElement = null;
-        }
+        SwingUtilities2.invokeAndWait(resetRunnable);
     }
 
     /**
