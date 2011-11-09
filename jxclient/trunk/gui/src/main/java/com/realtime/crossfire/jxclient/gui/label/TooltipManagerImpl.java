@@ -186,12 +186,19 @@ public class TooltipManagerImpl implements TooltipManager {
         }
         tooltipTexts.put(element, tooltipText == null ? null : new TooltipText(tooltipText, x, y, w, h));
 
-        synchronized (activeGuiElementSync) {
-            if (activeGuiElement == element) {
-                removeTooltip();
-                addTooltip();
+        SwingUtilities2.invokeAndWait(new Runnable() {
+
+            @Override
+            public void run() {
+                synchronized (activeGuiElementSync) {
+                    if (activeGuiElement == element) {
+                        removeTooltip();
+                        addTooltip();
+                    }
+                }
             }
-        }
+
+        });
     }
 
     /**
