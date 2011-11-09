@@ -46,6 +46,7 @@ import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.util.SwingUtilities2;
+import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -917,10 +918,17 @@ public class GuiManager {
         if (skin != null) {
             skin.setScreenSize(width, height);
             assert skin != null;
-            for (final Gui dialog : skin) {
-                dialog.autoSize(width, height);
-            }
-            tooltipManager.setScreenSize(width, height);
+            SwingUtilities2.invokeAndWait(new Runnable() {
+
+                @Override
+                public void run() {
+                    for (final Gui dialog : skin) {
+                        dialog.autoSize(width, height);
+                    }
+                    tooltipManager.setScreenSize(width, height);
+                }
+
+            });
         }
     }
 
