@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommand;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import java.awt.Component;
 import org.jetbrains.annotations.NotNull;
 
@@ -37,6 +38,20 @@ public class HideCommand implements GUICommand {
      */
     @NotNull
     private final Component target;
+
+    /**
+     * The {@link Runnable} that implements the functionality of {@link
+     * #execute()}.
+     */
+    @NotNull
+    private final Runnable executeRunnable = new Runnable() {
+
+        @Override
+        public void run() {
+            target.setVisible(false);
+        }
+
+    };
 
     /**
      * Creates a new instance.
@@ -59,7 +74,7 @@ public class HideCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        target.setVisible(false);
+        SwingUtilities2.invokeAndWait(executeRunnable);
     }
 
 }
