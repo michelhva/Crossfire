@@ -150,12 +150,19 @@ public class TooltipManagerImpl implements TooltipManager {
      */
     @Override
     public void unsetElement(@NotNull final GUIElement guiElement) {
-        synchronized (activeGuiElementSync) {
-            if (activeGuiElement == guiElement) {
-                removeTooltip();
-                activeGuiElement = null;
+        SwingUtilities2.invokeAndWait(new Runnable() {
+
+            @Override
+            public void run() {
+                synchronized (activeGuiElementSync) {
+                    if (activeGuiElement == guiElement) {
+                        removeTooltip();
+                        activeGuiElement = null;
+                    }
+                }
             }
-        }
+
+        });
     }
 
     /**
