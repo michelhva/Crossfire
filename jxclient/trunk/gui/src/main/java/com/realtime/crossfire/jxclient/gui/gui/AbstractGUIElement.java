@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import javax.swing.JComponent;
-import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
