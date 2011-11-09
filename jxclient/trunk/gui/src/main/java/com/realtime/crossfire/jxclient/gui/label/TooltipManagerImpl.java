@@ -133,16 +133,23 @@ public class TooltipManagerImpl implements TooltipManager {
         if (tooltipText != null) {
             guiElement.setTooltipText(tooltipText.getText());
         }
-        synchronized (activeGuiElementSync) {
-            if (activeGuiElement == null) {
-                activeGuiElement = guiElement;
-                addTooltip();
-            } else if (activeGuiElement != guiElement) {
-                removeTooltip();
-                activeGuiElement = guiElement;
-                addTooltip();
+        SwingUtilities2.invokeAndWait(new Runnable() {
+
+            @Override
+            public void run() {
+                synchronized (activeGuiElementSync) {
+                    if (activeGuiElement == null) {
+                        activeGuiElement = guiElement;
+                        addTooltip();
+                    } else if (activeGuiElement != guiElement) {
+                        removeTooltip();
+                        activeGuiElement = guiElement;
+                        addTooltip();
+                    }
+                }
             }
-        }
+
+        });
     }
 
     /**
