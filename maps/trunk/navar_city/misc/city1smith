@@ -14,7 +14,7 @@ enter_x 8
 enter_y 8
 msg
 Created:  1993-10-27
-Modified: 2008-12-02 Rick Tanner
+Modified: 2011-11-09 Rick Tanner
 endmsg
 end
 arch stonefloor2
@@ -578,7 +578,6 @@ y 4
 end
 arch platinum_converter
 name Buy Small Shield (7pp)
-name_pl Buy Small Shield (7pp)
 other_arch small_shield
 sp 1
 food 7
@@ -595,7 +594,6 @@ y 6
 end
 arch platinum_converter
 name Buy Gauntlets (8pp)
-name_pl Buy Gauntlets (8pp)
 other_arch gauntlets
 sp 1
 food 8
@@ -1073,7 +1071,6 @@ y 4
 end
 arch platinum_converter
 name Buy Helmets (10pp)
-name_pl Buy Helmets (10pp)
 other_arch helmet
 sp 1
 food 10
@@ -1090,7 +1087,6 @@ y 6
 end
 arch platinum_converter
 name Buy shoes (5pp)
-name_pl Buy shoes (5pp)
 other_arch low_boots
 sp 1
 food 5
