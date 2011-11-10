@@ -144,8 +144,7 @@ end
 arch sign
 name Navar Message Board
 msg
-I am a talking board, please say something to me.
-If you don't know what to say, try help.
+I am a talking board, please say something to me. If you don't know what to say, try help.
 endmsg
 x 1
 y 8
@@ -550,15 +549,7 @@ name_pl Prospectus
 msg
 Imperial Post Services
 -----------------------
-Thank you for choosing the IPS to
-take care of your messages. Want to
-get more? We have a wide range of
-products and services to offer to
-anyone. Pirate? Try our
-TalkParrots(tm)! Beholder? Enjoy
-our fabulous non-stereoscopical
-cards! And don't forget:
-The Empire Is Everywhere For You!
+Thank you for choosing the IPS to take care of your messages. Want to get more? We have a wide range of products and services to offer to anyone. Pirate? Try our TalkParrots(tm)! Beholder? Enjoy our fabulous non-stereoscopical cards! And don't forget: The Empire Is Everywhere For You!
 endmsg
 x 7
 y 7
@@ -569,20 +560,17 @@ name_pl Manuals
 msg
 Receiving Mail
 -----------------------
-Open the mailbox and get the scrolls,
-read them by applying.
+Open the mailbox and get the scrolls, read them by applying.
+...
 Sending Mail
 -----------------------
-Get a pencil and be sure that you are
-able to use the literacy skill. You can
-get both at the office; ask Babs for
-help.
-Get a pre-addressed mailscroll, mark it
-and write on it with the command:
-use_skill inscription <text>
+Get a pencil and be sure that you are able to use the literacy skill. You can get both at the office; ask Babs for help.
+...
+Get a pre-addressed mailscroll, mark it and write on it with the command: use_skill inscription <text>
+...
 Multiple lines of text may be written.
-When done, drop the scroll in the
-mailbox and it will be sent.
+...
+When done, drop the scroll in the mailbox and it will be sent.
 endmsg
 x 7
 y 7
