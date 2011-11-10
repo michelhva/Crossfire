@@ -9,7 +9,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2004-02-21 Avion
-Modified: 2008-12-02 Rick Tanner
+Modified: 2011-11-09 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -257,7 +257,6 @@ y 2
 end
 arch platinum_converter
 name Buy Amulet (100pp)
-name_pl Buy Amulet (100pp)
 other_arch amulet
 sp 1
 food 100
@@ -973,7 +972,6 @@ y 2
 end
 arch platinum_converter
 name Buy Ring (50pp)
-name_pl Buy Ring (50pp)
 other_arch ring
 sp 1
 food 50
