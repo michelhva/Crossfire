@@ -10,7 +10,7 @@ enter_x 4
 enter_y 13
 msg
 Created:  2004-22-02 Avion
-Modified: 2008-12-02 Rick Tanner
+Modified: 2011-11-09 Rick Tanner
 endmsg
 end
 arch tile_white_floor
@@ -121,7 +121,6 @@ y 3
 end
 arch platinum_converter
 name Talisman of evocation (100 diamonds)
-name_pl Talisman of evocation (100 diamonds)
 slaying gem
 other_arch talisman_evocation
 sp 1
@@ -135,7 +134,6 @@ y 4
 end
 arch platinum_converter
 name Talisman of sorcery (100 diamonds)
-name_pl Talisman of sorcery (100 diamonds)
 slaying gem
 other_arch talisman_sorcery
 sp 1
@@ -149,7 +147,6 @@ y 5
 end
 arch platinum_converter
 name Talisman of pyromancy (100 diamonds)
-name_pl Talisman of pyromancy (100 diamonds)
 slaying gem
 other_arch talisman_pyromancy
 sp 1
@@ -659,7 +656,6 @@ y 4
 end
 arch platinum_converter
 name Staff (100 platinum)
-name_pl Staff (100 platinum)
 other_arch staff
 sp 1
 food 100
@@ -672,7 +668,6 @@ y 5
 end
 arch platinum_converter
 name Holy symbol (120 platinum)
-name_pl Holy symbol (120 platinum)
 other_arch holy_symbol
 sp 1
 food 120
