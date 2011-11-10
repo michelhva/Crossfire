@@ -9532,7 +9532,6 @@ y 15
 end
 arch northman
 name northman
-name_pl northman
 msg
 @match *
 *burp* Get away from me weakling
@@ -10077,7 +10076,6 @@ y 6
 end
 arch dwarf
 name angry dwarf
-name_pl angry dwarf
 hp 60
 x 19
 y 6
@@ -10439,7 +10437,7 @@ y 61
 end
 arch quarto
 name Prayer book of Valriel
-name_pl Prayer book of Valriel
+name_pl Prayer books of Valriel
 msg
 You cannot decypher the language this book was written in
 endmsg
@@ -10607,7 +10605,6 @@ y 6
 end
 arch scroll_2
 name The Imperial Tribune
-name_pl The Scorn Tribune
 msg
 HEADLINE: EXPLOSION ROCKS TAVERN
 A bomber detonated a high povered explosive device in the popular Goth's Tavern in Scorn. The blast killed two and injured 5. The bomber is reported to have screamed "Die booze ridden devil worshipers! Viva Valriel!" before throwing the bomb and then fleeing on foot. He is belived to have be a popular priest at the 'Traveling Ministry Of The Most Holy Power'. 
@@ -11588,7 +11585,6 @@ y 65
 carrying 75000
 arch corpse1
 name rotting corpse
-name_pl rotting corpse
 end
 end
 arch woodfloor2
@@ -11611,7 +11607,6 @@ y 67
 end
 arch guildmaster
 name wealthy old man
-name_pl wealthy old man
 msg
 @match *
 I'ma gunna do something 'bout that there tavern. There's gad dang so much crime 'n murda here now since it opened. It's a cesspool of slime gamblin,booze, and sex! There all going straight to hell! Ah hear theres devil worshopers in there too!! Damn them!
@@ -11767,7 +11762,6 @@ y 11
 end
 arch woman
 name strong woman
-name_pl strong woman
 hp 65
 x 22
 y 11
@@ -12927,7 +12921,6 @@ y 26
 end
 arch thief
 name murdering thief
-name_pl murdering thief
 Con 2
 Cha 3
 hp 150
@@ -13685,7 +13678,6 @@ y 65
 carrying 15000
 arch water
 name Concentrated Nerve Agent
-name_pl Concentrated Nerve Agent
 value 40
 end
 arch water
@@ -14018,7 +14010,6 @@ y 36
 end
 arch sign_w
 name store room
-name_pl store room
 msg
 store roo
 endmsg
@@ -15422,7 +15413,6 @@ y 3
 end
 arch guard
 name doorman
-name_pl doorman
 x 29
 y 3
 carrying 25000
@@ -16331,7 +16321,6 @@ y 34
 end
 arch a_townsman
 name Arab
-name_pl Arab
 x 30
 y 34
 end
@@ -17092,7 +17081,6 @@ y 3
 end
 arch lord_e
 name Richie
-name_pl Richie
 hp 300
 maxhp 300
 dam 20
@@ -17591,7 +17579,6 @@ y 3
 end
 arch chalice
 name gold chalice
-name_pl gold chalice
 x 33
 y 3
 value 5000
@@ -17612,7 +17599,6 @@ y 5
 end
 arch viking
 name drunk viking
-name_pl drunk viking
 msg
 @match *
 *hicup
@@ -17698,7 +17684,6 @@ y 17
 end
 arch big_slave
 name cooking slave
-name_pl cooking slave
 x 33
 y 17
 end
@@ -18122,7 +18107,6 @@ y 8
 end
 arch devil
 name demon priest of Gorokh
-name_pl demon priest of Gorokh
 x 34
 y 8
 unaggressive 1
@@ -18737,7 +18721,6 @@ y 34
 end
 arch sign_w
 name goblin army
-name_pl goblin army
 msg
 goblin arm
 endmsg
@@ -19129,7 +19112,6 @@ y 21
 end
 arch swashbuckler
 name murder
-name_pl murder
 hp 400
 maxhp 100
 x 36
@@ -19704,7 +19686,6 @@ y 28
 end
 arch rock2
 name coal
-name_pl coal
 x 37
 y 28
 material 0
@@ -20027,7 +20008,6 @@ y 3
 end
 arch a_townsman2
 name Palastinian
-name_pl Palastinian
 x 38
 y 3
 end
@@ -20062,7 +20042,6 @@ y 8
 end
 arch man
 name tax collector
-name_pl tax collector
 x 38
 y 8
 end
@@ -20181,7 +20160,6 @@ y 28
 end
 arch rock2
 name coal
-name_pl coal
 x 38
 y 28
 material 0
