@@ -8,7 +8,7 @@ enter_x 8
 enter_y 14
 msg
 Created:  1993-11-17
-Modified: 2010-08-08 Nicolas Weeger
+Modified: 2011-11-09 Nicolas Weeger
 endmsg
 end
 arch cobblestones
@@ -409,7 +409,6 @@ y 5
 end
 arch c_man
 name cashier
-name_pl cashier
 x 3
 y 5
 end
@@ -669,7 +668,6 @@ y 5
 end
 arch c_man
 name cashier
-name_pl cashier
 x 5
 y 5
 end
@@ -1081,7 +1079,6 @@ y 5
 end
 arch c_man
 name Sal
-name_pl Sal
 title acount manager
 msg
 @match *
@@ -1541,7 +1538,6 @@ y 5
 end
 arch c_man
 name cashier
-name_pl cashier
 x 11
 y 5
 end
@@ -1828,7 +1824,6 @@ y 5
 end
 arch c_man
 name cashier
-name_pl cashier
 x 13
 y 5
 end
