@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.KeyEvent;
@@ -498,29 +499,36 @@ public class Gui extends JComponent {
      * @param screenHeight the screen height
      */
     public void autoSize(final int screenWidth, final int screenHeight) {
-        final Extent extent = autoSize;
-        if (extent != null) {
-            final Dimension preferredSize = getPreferredSize();
-            setBounds(extent.getX(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getY(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getW(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getH(screenWidth, screenHeight, preferredSize.width, preferredSize.height));
-        } else if (!initialPositionSet) {
-            final Dimension preferredSize = getPreferredSize();
-            final int x;
-            if (defaultX == null) {
-                x = (screenWidth-preferredSize.width)/2;
-            } else {
-                x = defaultX.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
+        SwingUtilities2.invokeAndWait(new Runnable() {
+
+            @Override
+            public void run() {
+                final Extent extent = autoSize;
+                if (extent != null) {
+                    final Dimension preferredSize = getPreferredSize();
+                    setBounds(extent.getX(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getY(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getW(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getH(screenWidth, screenHeight, preferredSize.width, preferredSize.height));
+                } else if (!initialPositionSet) {
+                    final Dimension preferredSize = getPreferredSize();
+                    final int x;
+                    if (defaultX == null) {
+                        x = (screenWidth-preferredSize.width)/2;
+                    } else {
+                        x = defaultX.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
+                    }
+                    final int y;
+                    if (defaultY == null) {
+                        y = (screenHeight-preferredSize.height)/2;
+                    } else {
+                        y = defaultY.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
+                    }
+                    setSize(preferredSize.width, preferredSize.height);
+                    if (defaultX != null && defaultY != null) {
+                        setPosition(x-preferredSize.width/2, y-preferredSize.height/2);
+                    }
+                }
             }
-            final int y;
-            if (defaultY == null) {
-                y = (screenHeight-preferredSize.height)/2;
-            } else {
-                y = defaultY.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
-            }
-            setSize(preferredSize.width, preferredSize.height);
-            if (defaultX != null && defaultY != null) {
-                setPosition(x-preferredSize.width/2, y-preferredSize.height/2);
-            }
-        }
+
+        });
 
         showDialog(getX(), getY(), screenWidth, screenHeight);
     }
