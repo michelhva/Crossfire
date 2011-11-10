@@ -9,7 +9,7 @@ enter_y 8
 msg
 Created:  2001-09-05 Commander Gros (yann.chachkoff@mailandnews.com)
 Following a Lord MiDS idea
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2011-11-09 Rick Tanner
 endmsg
 end
 arch tile_tan_floor
@@ -143,7 +143,6 @@ y 8
 end
 arch sign
 name Navar Message Board
-name_pl Navar Message Board
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, try help.
@@ -176,7 +175,6 @@ y 1
 end
 arch halfling2
 name Gofer
-name_pl Gofer
 x 2
 y 1
 friendly 1
@@ -249,7 +247,6 @@ y 2
 end
 arch cauldron
 name Coffee supplies
-name_pl Coffee supplies
 x 3
 y 2
 end
@@ -317,7 +314,6 @@ y 2
 end
 arch c_woman
 name Babs
-name_pl Babs
 msg
 @match *
 I'm on a break.
@@ -569,7 +565,7 @@ y 7
 end
 arch book_read
 name Manual
-name_pl Manual
+name_pl Manuals
 msg
 Receiving Mail
 -----------------------
