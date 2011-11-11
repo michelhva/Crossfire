@@ -24,8 +24,9 @@ package com.realtime.crossfire.jxclient.stats;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
-import com.realtime.crossfire.jxclient.timeouts.Timeouts;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.Timer;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -113,14 +114,20 @@ public class PoisonWatcher {
      * missed.
      */
     @NotNull
-    private final TimeoutEvent timeoutEvent = new TimeoutEvent() {
+    private final ActionListener timeoutEvent = new ActionListener() {
 
         @Override
-        public void timeout() {
+        public void actionPerformed(@NotNull final ActionEvent e) {
             setActive(false);
         }
 
     };
+
+    /**
+     * The {@link Timer} for turning off the poison symbol.
+     */
+    @NotNull
+    private final Timer timer = new Timer(TIMEOUT_DE_ASSERT, timeoutEvent);
 
     /**
      * Creates a new instance.
@@ -129,6 +136,7 @@ public class PoisonWatcher {
      */
     public PoisonWatcher(@NotNull final Stats stats, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         this.stats = stats;
+        timer.setRepeats(false);
         crossfireServerConnection.addCrossfireDrawinfoListener(drawinfoListener);
         crossfireServerConnection.addCrossfireDrawextinfoListener(drawextinfoListener);
         setActive(false);
@@ -153,9 +161,9 @@ public class PoisonWatcher {
     private void setActive(final boolean active) {
         synchronized (sync) {
             if (active) {
-                Timeouts.reset(TIMEOUT_DE_ASSERT, timeoutEvent);
+                timer.restart();
             } else {
-                Timeouts.remove(timeoutEvent);
+                timer.stop();
             }
 
             if (this.active == active) {
