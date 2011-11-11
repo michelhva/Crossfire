@@ -2,30 +2,25 @@
   "location" : "scorn/eswald",
   "rules": [
   {
-  "match" : ["hello", "hi"],
-  "pre" : [["token", "seenbefore", "yes"]],
-  "post" : [],
-  "msg" : ["Hello $you, would you like to buy some coffee?"]
-  }, {
-  "match" : ["hello", "hi"],
-  "pre" : [],
-  "post" : [["settoken", "seenbefore", "yes"]],
-  "msg" : ["Hello stranger. would you like to buy some coffee?"]
+  "match" : ["yes", "like"],
+  "pre" : [["token", "offercoffee", "yes"], ["item", "money", "1"], ["quest", "scorn/CoffeeGoose", "100"]],
+  "post" : [["giveitem", "Eswald's superior coffee"], ["settoken", "offercoffee", "0"], ["takeitem", "money", "1"]],
+  "msg" : ["Here you go, a cup of the best coffee you'll ever drink."]
   }, {
   "match" : ["yes", "like"],
-  "pre" : [["token", "offercoffee", "yes"], ["item", "money", "2"], ["quest", "scorn/CoffeeGoose", "100"]],
-  "post" : [["giveitem", "Eswald's superior coffee"], ["settoken", "offercoffee", "0"], ["takeitem", "money", "2"]],
-  "msg" : ["Here you go, a cup of the best coffee you'll ever drink."]
+  "pre" : [["token", "offercoffee", "yes"], ["quest", "scorn/CoffeeGoose", "100"]],
+  "post" : [["settoken", "offercoffee", "0"]],
+  "msg" : ["Sorry $you, but 1 silver is the lowest I can do, even for you..."]
   }, {
   "match" : ["no"],
   "pre" : [["quest", "scorn/CoffeeGoose", "100"], ["token", "offercoffee", "yes"]],
-  "post" : [["settoken", "askgoose", "0"]],
+  "post" : [["settoken", "offercoffee", "0"]],
   "msg" : ["Ok, come back if you change your mind."]
   }, {
   "match" : ["*"],
-  "pre" : [["quest", "scorn/CoffeeGoose", "100"], ["token", "askgoose", "yes"]],
+  "pre" : [["quest", "scorn/CoffeeGoose", "100"]],
   "post" : [["settoken", "offercoffee", "yes"]],
-  "msg" : ["Welcome back to to Eswald's coffee shop, $you, would you like some of the finest brew east of Navar. only 1 silver to you."]
+  "msg" : ["Welcome back to to Eswald's coffee shop, $you, would you like some of the finest brew east of Navar? Only 1 silver to you, because of all you did for me!"]
   }, {
   "match" : ["no"],
   "pre" : [["quest", "scorn/CoffeeGoose", "20"], ["token", "askgoose", "yes"]],
@@ -95,12 +90,22 @@
   "match" : ["yes", "like"],
   "pre" : [["token", "offercoffee", "yes"]],
   "post" : [["giveitem", "Eswald's inferior coffee"], ["settoken", "offercoffee", "no"], ["settoken", "badcoffee", "yes"], ["takeitem", "money", "2"], ["settoken", "freebie", "yes"]],
-  "msg" : ["You haven't even got too silver coins to rub together? Here, have the coffee anyway, you clearly need a hand-out, and no one is buying it nowadays anyway"]
+  "msg" : ["You haven't even got two silver coins to rub together? Here, have the coffee anyway, you clearly need a hand-out, and no one is buying it nowadays anyway"]
   }, {
   "match" : ["coffee"],
   "pre" : [],
   "post" : [["settoken", "offercoffee", "yes"]],
   "msg" : ["Would you like to buy some coffee, only 2 silver a cup?"]
+  }, {
+  "match" : ["hello", "hi"],
+  "pre" : [["token", "seenbefore", "yes"]],
+  "post" : [],
+  "msg" : ["Hello $you, would you like to buy some coffee?"]
+  }, {
+  "match" : ["hello", "hi"],
+  "pre" : [],
+  "post" : [["settoken", "seenbefore", "yes"]],
+  "msg" : ["Hello stranger. would you like to buy some coffee?"]
   }, {
   "match" : ["*"],
   "pre" : [],
