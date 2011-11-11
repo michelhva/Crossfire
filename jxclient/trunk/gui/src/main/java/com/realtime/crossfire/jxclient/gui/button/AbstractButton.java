@@ -26,11 +26,12 @@ import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.KeyPressedHandler;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
-import com.realtime.crossfire.jxclient.timeouts.Timeouts;
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
+import javax.swing.Timer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -67,18 +68,23 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
     private final CommandList commandList;
 
     /**
-     * The {@link TimeoutEvent} for generating autorepeat events.
+     * The {@link ActionListener} for generating autorepeat events.
      */
     @NotNull
-    private final TimeoutEvent timeoutEvent = new TimeoutEvent() {
+    private final ActionListener timeoutEvent = new ActionListener() {
 
         @Override
-        public void timeout() {
+        public void actionPerformed(@NotNull final ActionEvent e) {
             execute();
-            Timeouts.reset(TIMEOUT_SECOND, timeoutEvent);
         }
 
     };
+
+    /**
+     * The {@link Timer} for auto-repeating buttons.
+     */
+    @NotNull
+    private final Timer timer = new Timer(TIMEOUT_FIRST, timeoutEvent);
 
     /**
      * Creates a new instance.
@@ -94,6 +100,7 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
         super(tooltipManager, elementListener, name, transparency);
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;
+        timer.setDelay(TIMEOUT_SECOND);
     }
 
     /**
@@ -129,7 +136,7 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
         switch (b) {
         case MouseEvent.BUTTON1:
             if (autoRepeat) {
-                Timeouts.remove(timeoutEvent);
+                timer.stop();
             }
             setActive(false);
             break;
@@ -154,7 +161,7 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
             setActive(true);
             if (autoRepeat) {
                 execute();
-                Timeouts.reset(TIMEOUT_FIRST, timeoutEvent);
+                timer.start();
             }
             break;
 
@@ -173,7 +180,7 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
     public void mouseExited(@NotNull final MouseEvent e) {
         super.mouseExited(e);
         if (autoRepeat) {
-            Timeouts.remove(timeoutEvent);
+            timer.stop();
         }
         setActive(false);
     }
