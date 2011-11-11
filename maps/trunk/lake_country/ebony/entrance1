@@ -8,7 +8,7 @@ enter_x 13
 enter_y 14
 msg
 Created:  1995-04-22
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2011-11-11 Andreas Kirschbaum
 endmsg
 end
 arch marble
@@ -391,7 +391,7 @@ end
 arch magic_mouth
 msg
 No, you don't!
-This is not the way to pass the test
+This is not the way to pass the test.
 endmsg
 x 3
 y 2
@@ -439,7 +439,7 @@ end
 arch magic_mouth
 msg
 No, you don't!
-This is not the way to pass the test
+This is not the way to pass the test.
 endmsg
 x 3
 y 5
@@ -487,7 +487,7 @@ end
 arch magic_mouth
 msg
 No, you don't!
-This is not the way to pass the test
+This is not the way to pass the test.
 endmsg
 x 3
 y 8

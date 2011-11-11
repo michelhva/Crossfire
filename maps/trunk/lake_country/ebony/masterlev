@@ -9,7 +9,7 @@ width 25
 height 25
 msg
 Created:  1995-04-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2011-10-14 Andreas Kirschbaum
+Modified: 2011-11-11 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -2185,7 +2185,7 @@ name A quiet thief here standing still
 msg
 @match *
 Be careful!
-Don't bump around
+Don't bump around!
 endmsg
 face thief.171
 x 12
@@ -4027,7 +4027,7 @@ arch ring_nodrain
 name Ring of Power
 name_pl Rings of Power
 msg
-This is the legendary Ring of Power, the hero ring
+This is the legendary Ring of Power, the hero ring.
 endmsg
 Str 2
 Dex 2

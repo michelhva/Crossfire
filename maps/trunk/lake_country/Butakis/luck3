@@ -8,7 +8,7 @@ enter_x 30
 enter_y 17
 msg
 Created:  1995-05-01 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2011-11-11 Andreas Kirschbaum
 endmsg
 end
 arch button_plate
@@ -2737,8 +2737,7 @@ y 15
 end
 arch magic_mouth
 msg
-Sacrify 99 platinum coins for your
-chance
+Sacrify 99 platinum coins for your chance.
 endmsg
 x 14
 y 16
@@ -2951,8 +2950,7 @@ y 15
 end
 arch magic_mouth
 msg
-Sacrify 666 platinum coins for a
-chance
+Sacrify 666 platinum coins for a chance
 endmsg
 x 15
 y 16
@@ -2990,7 +2988,7 @@ connected 5
 end
 arch magic_mouth
 msg
-Sacrify 66 diamonds for a chance
+Sacrify 66 diamonds for a chance.
 endmsg
 x 15
 y 18
@@ -5268,8 +5266,7 @@ y 16
 end
 arch magic_mouth
 msg
-Open it and do not think of coming
-back
+Open it and do not think of coming back.
 endmsg
 x 27
 y 17
@@ -5981,8 +5978,7 @@ y 16
 end
 arch magic_mouth
 msg
-If the entrance is blocked, it means
-it's in use. Come back later.
+If the entrance is blocked, it means it's in use. Come back later.
 endmsg
 x 30
 y 17
