@@ -8,7 +8,7 @@ enter_x 3
 enter_y 5
 msg
 Created:  1995-05-02 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2011-10-07 Rick Tanner
+Modified: 2011-11-11 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -340,7 +340,7 @@ y 13
 end
 arch magic_mouth
 msg
-100 platinum coins for another chance
+100 platinum coins for another chance.
 endmsg
 x 1
 y 14
@@ -723,7 +723,7 @@ connected 28
 end
 arch magic_mouth
 msg
-100 platinum coins for a chance
+100 platinum coins for a chance.
 endmsg
 x 3
 y 3
@@ -798,7 +798,7 @@ connected 24
 end
 arch magic_mouth
 msg
-100 platinum coins for another chance
+100 platinum coins for another chance.
 endmsg
 x 3
 y 9
@@ -892,8 +892,7 @@ y 17
 end
 arch magic_mouth
 msg
-100 platinum coins to gamble for
-treasure
+100 platinum coins to gamble for treasure.
 endmsg
 x 3
 y 18
@@ -1329,8 +1328,7 @@ connected 16
 end
 arch magic_mouth
 msg
-100 platinum coins to gamble for
-treasure
+100 platinum coins to gamble for treasure.
 endmsg
 x 5
 y 16
@@ -2195,7 +2193,7 @@ connected 31
 end
 arch magic_mouth
 msg
-100 platinum coins for another chance
+100 platinum coins for another chance.
 endmsg
 x 9
 y 18
@@ -3191,7 +3189,6 @@ msg
 Die! DIE DIE!!
 endmsg
 Str 10
-Dex 10
 Con 6
 Wis 30
 Int 12
@@ -3593,7 +3590,7 @@ y 1
 end
 arch magic_mouth
 msg
-100 platinum coins for a chance
+100 platinum coins for a chance.
 endmsg
 x 17
 y 2
@@ -3909,7 +3906,7 @@ y 11
 end
 arch magic_mouth
 msg
-100 platinum coins for a chance
+100 platinum coins for a chance.
 endmsg
 x 18
 y 12

@@ -8,7 +8,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  1995-04-03
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2011-11-11 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -4478,8 +4478,7 @@ attacktype 1
 end
 arch sign
 msg
-That was the famour death tree
-formation by peterm.
+That was the famour death tree formation by peterm.
 endmsg
 x 23
 y 15
@@ -4596,8 +4595,7 @@ end
 arch locked_door1
 slaying 3
 msg
-You need the key from the hill giant to
-open this door.
+You need the key from the hill giant to open this door.
 endmsg
 x 23
 y 20
@@ -4613,8 +4611,7 @@ end
 arch locked_door1
 slaying 2
 msg
-You need the key from the death tree to
-open this door.
+You need the key from the death tree to open this door.
 endmsg
 x 23
 y 21
@@ -4630,8 +4627,7 @@ end
 arch locked_door1
 slaying 1
 msg
-You need the key from the wyvern to
-open this.
+You need the key from the wyvern to open this.
 endmsg
 x 23
 y 22
