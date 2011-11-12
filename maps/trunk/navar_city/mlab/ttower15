@@ -461,7 +461,7 @@ name stonefloor
 x 3
 y 6
 end
-arch swall_2_2_2
+arch swall_1_4_half
 x 3
 y 6
 end
@@ -518,7 +518,7 @@ name stonefloor
 x 3
 y 11
 end
-arch swall_2_2_1
+arch swall_1_4_half
 x 3
 y 11
 end
@@ -1060,11 +1060,11 @@ name stonefloor
 x 6
 y 3
 end
-arch swall_2_2_2
+arch cwall_1_4
 x 6
 y 3
 end
-arch cwall_1_4
+arch swall_1_1_half
 x 6
 y 3
 end
@@ -1211,7 +1211,7 @@ name stonefloor
 x 6
 y 14
 end
-arch swall_2_2_1
+arch swall_1_2_half
 x 6
 y 14
 end
@@ -2039,11 +2039,11 @@ name stonefloor
 x 11
 y 3
 end
-arch swall_2_2_3
+arch cwall_1_3
 x 11
 y 3
 end
-arch cwall_1_3
+arch swall_1_1_half
 x 11
 y 3
 end
@@ -2190,7 +2190,7 @@ name stonefloor
 x 11
 y 14
 end
-arch swall_2_2_4
+arch swall_1_2_half
 x 11
 y 14
 end
@@ -2748,7 +2748,7 @@ name stonefloor
 x 14
 y 6
 end
-arch swall_2_2_3
+arch swall_1_3_half
 x 14
 y 6
 end
@@ -2805,7 +2805,7 @@ name stonefloor
 x 14
 y 11
 end
-arch swall_2_2_4
+arch swall_1_3_half
 x 14
 y 11
 end
