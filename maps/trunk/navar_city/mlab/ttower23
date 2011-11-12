@@ -9,12 +9,11 @@ enter_x 12
 enter_y 12
 msg
 Created:  2002-02-25 mikeeusa
-Modified: 2008-10-26 Rick Tanner
+Modified: 2011-11-11 Rick Tanner
 endmsg
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 2
 y 11
 end
@@ -24,7 +23,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 2
 y 12
 end
@@ -34,7 +32,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 2
 y 13
 end
@@ -44,7 +41,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 2
 y 14
 end
@@ -54,7 +50,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 3
 y 10
 end
@@ -64,7 +59,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 3
 y 11
 end
@@ -90,7 +84,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 3
 y 14
 end
@@ -100,7 +93,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 3
 y 15
 end
@@ -110,7 +102,6 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 4
 move_block 0
@@ -118,7 +109,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 5
 move_block 0
@@ -126,7 +116,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 6
 move_block 0
@@ -134,7 +123,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 7
 move_block 0
@@ -142,7 +130,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 8
 move_block 0
@@ -150,7 +137,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 4
 y 9
 end
@@ -160,7 +146,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 4
 y 10
 end
@@ -178,7 +163,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 12
 end
@@ -188,7 +172,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 13
 end
@@ -206,7 +189,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 4
 y 15
 end
@@ -216,7 +198,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 4
 y 16
 end
@@ -226,7 +207,6 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 17
 move_block 0
@@ -234,7 +214,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 18
 move_block 0
@@ -242,7 +221,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 19
 move_block 0
@@ -250,7 +228,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 20
 move_block 0
@@ -258,7 +235,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 21
 move_block 0
@@ -266,7 +242,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 4
 move_block 0
@@ -274,7 +249,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 5
 move_block 0
@@ -282,7 +256,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 6
 move_block 0
@@ -290,7 +263,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 7
 move_block 0
@@ -298,7 +270,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 5
 y 8
 end
@@ -308,7 +279,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 5
 y 9
 end
@@ -326,7 +296,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 11
 end
@@ -336,7 +305,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 12
 end
@@ -346,7 +314,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 13
 end
@@ -356,7 +323,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 14
 end
@@ -374,7 +340,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 5
 y 16
 end
@@ -384,7 +349,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 5
 y 17
 end
@@ -394,7 +358,6 @@ y 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 18
 move_block 0
@@ -402,7 +365,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 19
 move_block 0
@@ -410,7 +372,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 20
 move_block 0
@@ -418,7 +379,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 20
 move_block 0
@@ -426,7 +386,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 21
 move_block 0
@@ -434,7 +393,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 4
 move_block 0
@@ -442,7 +400,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 5
 move_block 0
@@ -450,14 +407,12 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 6
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 7
 move_block 0
@@ -465,7 +420,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 6
 y 8
 end
@@ -483,7 +437,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 10
 end
@@ -493,7 +446,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 11
 end
@@ -503,7 +455,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 12
 end
@@ -517,7 +468,6 @@ end
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 13
 end
@@ -527,7 +477,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 14
 end
@@ -537,7 +486,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 15
 end
@@ -555,7 +503,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 6
 y 17
 end
@@ -565,7 +512,6 @@ y 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 18
 move_block 0
@@ -573,14 +519,12 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 19
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 20
 move_block 0
@@ -588,7 +532,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 20
 move_block 0
@@ -596,7 +539,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 21
 move_block 0
@@ -604,7 +546,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 4
 move_block 0
@@ -612,7 +553,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 5
 move_block 0
@@ -620,7 +560,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 6
 move_block 0
@@ -628,7 +567,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 7
 move_block 0
@@ -636,7 +574,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 7
 y 8
 end
@@ -646,7 +583,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 9
 end
@@ -656,7 +592,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 10
 end
@@ -666,7 +601,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 11
 end
@@ -676,7 +610,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 12
 end
@@ -686,7 +619,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 13
 end
@@ -696,7 +628,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 14
 end
@@ -706,7 +637,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 15
 end
@@ -716,7 +646,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 16
 end
@@ -726,7 +655,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 7
 y 17
 end
@@ -736,7 +664,6 @@ y 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 18
 move_block 0
@@ -744,7 +671,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 19
 move_block 0
@@ -752,14 +678,12 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 20
 move_block 0
@@ -767,7 +691,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 21
 move_block 0
@@ -775,7 +698,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 4
 move_block 0
@@ -783,7 +705,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 5
 end
@@ -793,7 +714,6 @@ y 5
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 6
 end
@@ -803,7 +723,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 7
 end
@@ -813,7 +732,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 8
 end
@@ -823,7 +741,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 9
 end
@@ -833,7 +750,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 10
 end
@@ -843,7 +759,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 11
 end
@@ -853,7 +768,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 12
 end
@@ -863,7 +777,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 13
 end
@@ -873,7 +786,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 14
 end
@@ -883,7 +795,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 15
 end
@@ -893,7 +804,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 16
 end
@@ -903,7 +813,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 17
 end
@@ -913,7 +822,6 @@ y 17
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 18
 end
@@ -923,7 +831,6 @@ y 18
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 19
 end
@@ -933,7 +840,6 @@ y 19
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 8
 y 20
 end
@@ -943,7 +849,6 @@ y 20
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 21
 move_block 0
@@ -951,7 +856,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 21
 move_block 0
@@ -959,7 +863,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 9
 y 4
 end
@@ -969,7 +872,6 @@ y 4
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 9
 y 5
 end
@@ -987,7 +889,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 7
 end
@@ -997,7 +898,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 9
 y 8
 end
@@ -1007,7 +907,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 9
 y 9
 end
@@ -1017,7 +916,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 10
 end
@@ -1027,7 +925,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 11
 end
@@ -1037,7 +934,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 12
 end
@@ -1047,7 +943,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 13
 end
@@ -1057,7 +952,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 14
 end
@@ -1067,7 +961,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 15
 end
@@ -1077,7 +970,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 9
 y 16
 end
@@ -1087,7 +979,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 9
 y 17
 end
@@ -1097,7 +988,6 @@ y 17
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 18
 end
@@ -1115,7 +1005,6 @@ y 19
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 9
 y 20
 end
@@ -1125,7 +1014,6 @@ y 20
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 9
 y 21
 end
@@ -1135,7 +1023,6 @@ y 21
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 3
 end
@@ -1145,7 +1032,6 @@ y 3
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 4
 end
@@ -1167,7 +1053,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 6
 end
@@ -1177,7 +1062,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 7
 end
@@ -1187,7 +1071,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 8
 end
@@ -1197,7 +1080,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 9
 end
@@ -1207,7 +1089,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 10
 end
@@ -1217,7 +1098,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 11
 end
@@ -1227,7 +1107,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 12
 end
@@ -1237,7 +1116,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 13
 end
@@ -1247,7 +1125,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 14
 end
@@ -1257,7 +1134,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 15
 end
@@ -1267,7 +1143,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 16
 end
@@ -1277,7 +1152,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 17
 end
@@ -1287,7 +1161,6 @@ y 17
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 18
 end
@@ -1297,7 +1170,6 @@ y 18
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 19
 end
@@ -1315,7 +1187,6 @@ y 20
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 21
 end
@@ -1325,7 +1196,6 @@ y 21
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 10
 y 22
 end
@@ -1335,7 +1205,6 @@ y 22
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 2
 end
@@ -1345,7 +1214,6 @@ y 2
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 3
 end
@@ -1363,7 +1231,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 5
 end
@@ -1373,7 +1240,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 6
 end
@@ -1383,7 +1249,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 7
 end
@@ -1393,7 +1258,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 8
 end
@@ -1403,7 +1267,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 9
 end
@@ -1413,7 +1276,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 10
 end
@@ -1423,7 +1285,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 11
 end
@@ -1433,7 +1294,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 12
 end
@@ -1443,7 +1303,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 13
 end
@@ -1453,7 +1312,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 14
 end
@@ -1463,7 +1321,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 15
 end
@@ -1473,7 +1330,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 16
 end
@@ -1483,7 +1339,6 @@ y 16
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 17
 end
@@ -1493,7 +1348,6 @@ y 17
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 18
 end
@@ -1503,7 +1357,6 @@ y 18
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 19
 end
@@ -1513,7 +1366,6 @@ y 19
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 20
 end
@@ -1531,7 +1383,6 @@ y 21
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 22
 end
@@ -1541,7 +1392,6 @@ y 22
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 11
 y 23
 end
@@ -1551,7 +1401,6 @@ y 23
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 2
 end
@@ -1580,7 +1429,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 4
 end
@@ -1591,7 +1439,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 5
 end
@@ -1601,7 +1448,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 6
 end
@@ -1611,7 +1457,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 7
 end
@@ -1621,7 +1466,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 8
 end
@@ -1631,7 +1475,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 9
 end
@@ -1641,7 +1484,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 10
 end
@@ -1651,7 +1493,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 11
 end
@@ -1661,7 +1502,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 12
 end
@@ -1674,7 +1514,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 13
 end
@@ -1684,7 +1523,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 14
 end
@@ -1694,7 +1532,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 15
 end
@@ -1704,7 +1541,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 16
 end
@@ -1714,7 +1550,6 @@ y 16
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 17
 end
@@ -1724,7 +1559,6 @@ y 17
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 18
 end
@@ -1734,7 +1568,6 @@ y 18
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 19
 end
@@ -1744,7 +1577,6 @@ y 19
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 20
 end
@@ -1754,7 +1586,6 @@ y 20
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 21
 end
@@ -1772,7 +1603,6 @@ y 22
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 12
 y 23
 end
@@ -1782,7 +1612,6 @@ y 23
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 2
 end
@@ -1811,7 +1640,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 4
 end
@@ -1822,7 +1650,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 5
 end
@@ -1832,7 +1659,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 6
 end
@@ -1842,7 +1668,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 7
 end
@@ -1852,7 +1677,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 8
 end
@@ -1862,7 +1686,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 9
 end
@@ -1872,7 +1695,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 10
 end
@@ -1882,7 +1704,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 11
 end
@@ -1892,7 +1713,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 12
 end
@@ -1902,7 +1722,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 13
 end
@@ -1915,7 +1734,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 14
 end
@@ -1925,7 +1743,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 15
 end
@@ -1935,7 +1752,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 16
 end
@@ -1945,7 +1761,6 @@ y 16
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 17
 end
@@ -1955,7 +1770,6 @@ y 17
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 18
 end
@@ -1965,7 +1779,6 @@ y 18
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 19
 end
@@ -1975,7 +1788,6 @@ y 19
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 20
 end
@@ -1985,7 +1797,6 @@ y 20
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 21
 end
@@ -2003,7 +1814,6 @@ y 22
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 13
 y 23
 end
@@ -2013,7 +1823,6 @@ y 23
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 2
 end
@@ -2023,7 +1832,6 @@ y 2
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 3
 end
@@ -2041,7 +1849,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 5
 end
@@ -2051,7 +1858,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 6
 end
@@ -2061,7 +1867,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 7
 end
@@ -2071,7 +1876,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 8
 end
@@ -2081,7 +1885,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 9
 end
@@ -2091,7 +1894,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 10
 end
@@ -2101,7 +1903,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 11
 end
@@ -2111,7 +1912,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 12
 end
@@ -2121,7 +1921,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 13
 end
@@ -2131,7 +1930,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 14
 end
@@ -2141,7 +1939,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 15
 end
@@ -2151,7 +1948,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 16
 end
@@ -2161,7 +1957,6 @@ y 16
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 17
 end
@@ -2171,7 +1966,6 @@ y 17
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 18
 end
@@ -2181,7 +1975,6 @@ y 18
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 19
 end
@@ -2191,7 +1984,6 @@ y 19
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 20
 end
@@ -2209,7 +2001,6 @@ y 21
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 22
 end
@@ -2219,7 +2010,6 @@ y 22
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 14
 y 23
 end
@@ -2229,7 +2019,6 @@ y 23
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 3
 end
@@ -2239,7 +2028,6 @@ y 3
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 4
 end
@@ -2261,7 +2049,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 6
 end
@@ -2271,7 +2058,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 7
 end
@@ -2281,7 +2067,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 8
 end
@@ -2291,7 +2076,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 9
 end
@@ -2301,7 +2085,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 10
 end
@@ -2311,7 +2094,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 11
 end
@@ -2321,7 +2103,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 12
 end
@@ -2331,7 +2112,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 13
 end
@@ -2341,7 +2121,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 14
 end
@@ -2351,7 +2130,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 15
 end
@@ -2361,7 +2139,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 16
 end
@@ -2371,7 +2148,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 17
 end
@@ -2381,7 +2157,6 @@ y 17
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 18
 end
@@ -2391,7 +2166,6 @@ y 18
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 19
 end
@@ -2409,7 +2183,6 @@ y 20
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 21
 end
@@ -2419,7 +2192,6 @@ y 21
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 15
 y 22
 end
@@ -2429,7 +2201,6 @@ y 22
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 4
 end
@@ -2439,7 +2210,6 @@ y 4
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 5
 end
@@ -2457,7 +2227,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 7
 end
@@ -2467,7 +2236,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 8
 end
@@ -2477,7 +2245,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 9
 end
@@ -2487,7 +2254,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 10
 end
@@ -2497,7 +2263,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 11
 end
@@ -2507,7 +2272,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 12
 end
@@ -2517,7 +2281,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 13
 end
@@ -2527,7 +2290,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 14
 end
@@ -2537,7 +2299,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 15
 end
@@ -2547,7 +2308,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 16
 end
@@ -2557,7 +2317,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 17
 end
@@ -2567,7 +2326,6 @@ y 17
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 18
 end
@@ -2585,7 +2343,6 @@ y 19
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 20
 end
@@ -2595,7 +2352,6 @@ y 20
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 16
 y 21
 end
@@ -2605,7 +2361,6 @@ y 21
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 4
 move_block 0
@@ -2613,7 +2368,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 5
 end
@@ -2623,7 +2377,6 @@ y 5
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 6
 end
@@ -2633,7 +2386,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 7
 end
@@ -2643,7 +2395,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 8
 end
@@ -2653,7 +2404,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 9
 end
@@ -2663,7 +2413,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 10
 end
@@ -2673,7 +2422,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 11
 end
@@ -2683,7 +2431,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 12
 end
@@ -2693,7 +2440,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 13
 end
@@ -2703,7 +2449,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 14
 end
@@ -2713,7 +2458,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 15
 end
@@ -2723,7 +2467,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 16
 end
@@ -2733,7 +2476,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 17
 end
@@ -2743,7 +2485,6 @@ y 17
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 18
 end
@@ -2753,7 +2494,6 @@ y 18
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 19
 end
@@ -2763,7 +2503,6 @@ y 19
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 17
 y 20
 end
@@ -2773,7 +2512,6 @@ y 20
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 21
 move_block 0
@@ -2781,7 +2519,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 21
 move_block 0
@@ -2789,7 +2526,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 4
 move_block 0
@@ -2797,7 +2533,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 5
 move_block 0
@@ -2805,7 +2540,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 6
 move_block 0
@@ -2813,7 +2547,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 7
 move_block 0
@@ -2821,7 +2554,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 18
 y 8
 end
@@ -2831,7 +2563,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 9
 end
@@ -2841,7 +2572,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 10
 end
@@ -2851,7 +2581,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 11
 end
@@ -2861,7 +2590,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 12
 end
@@ -2871,7 +2599,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 13
 end
@@ -2881,7 +2608,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 14
 end
@@ -2891,7 +2617,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 15
 end
@@ -2901,7 +2626,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 16
 end
@@ -2911,7 +2635,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 18
 y 17
 end
@@ -2921,7 +2644,6 @@ y 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 18
 move_block 0
@@ -2929,7 +2651,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 19
 move_block 0
@@ -2937,7 +2658,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 20
 move_block 0
@@ -2945,7 +2665,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 20
 move_block 0
@@ -2957,7 +2676,6 @@ y 20
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 20
 move_block 0
@@ -2965,7 +2683,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 21
 move_block 0
@@ -2973,7 +2690,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 21
 move_block 0
@@ -2981,7 +2697,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 4
 move_block 0
@@ -2989,7 +2704,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 5
 move_block 0
@@ -2997,14 +2711,12 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 6
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 7
 move_block 0
@@ -3012,7 +2724,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 19
 y 8
 end
@@ -3030,7 +2741,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 19
 y 10
 end
@@ -3040,7 +2750,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 19
 y 11
 end
@@ -3050,7 +2759,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 19
 y 12
 end
@@ -3060,7 +2768,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 19
 y 13
 end
@@ -3070,7 +2777,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 19
 y 14
 end
@@ -3080,7 +2786,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 19
 y 15
 end
@@ -3098,7 +2803,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 19
 y 17
 end
@@ -3108,7 +2812,6 @@ y 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 18
 move_block 0
@@ -3116,7 +2819,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 19
 move_block 0
@@ -3124,7 +2826,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 20
 move_block 0
@@ -3132,7 +2833,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 20
 move_block 0
@@ -3140,7 +2840,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 21
 move_block 0
@@ -3148,7 +2847,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 4
 move_block 0
@@ -3156,7 +2854,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 5
 move_block 0
@@ -3164,7 +2861,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 6
 move_block 0
@@ -3172,7 +2868,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 7
 move_block 0
@@ -3180,7 +2875,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 20
 y 8
 end
@@ -3190,7 +2884,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 20
 y 9
 end
@@ -3208,7 +2901,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 20
 y 11
 end
@@ -3218,7 +2910,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 20
 y 12
 end
@@ -3228,7 +2919,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 20
 y 13
 end
@@ -3238,7 +2928,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 20
 y 14
 end
@@ -3256,7 +2945,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 20
 y 16
 end
@@ -3266,7 +2954,6 @@ y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 20
 y 17
 end
@@ -3276,7 +2963,6 @@ y 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 18
 move_block 0
@@ -3284,7 +2970,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 19
 move_block 0
@@ -3292,7 +2977,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 20
 move_block 0
@@ -3300,7 +2984,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 20
 move_block 0
@@ -3308,7 +2991,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 21
 move_block 0
@@ -3316,7 +2998,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 4
 move_block 0
@@ -3324,7 +3005,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 5
 move_block 0
@@ -3332,7 +3012,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 6
 move_block 0
@@ -3340,7 +3019,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 7
 move_block 0
@@ -3348,7 +3026,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 8
 move_block 0
@@ -3356,7 +3033,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 21
 y 9
 end
@@ -3366,7 +3042,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 21
 y 10
 end
@@ -3384,7 +3059,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 21
 y 12
 end
@@ -3394,7 +3068,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 21
 y 13
 end
@@ -3412,7 +3085,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 21
 y 15
 end
@@ -3422,7 +3094,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 21
 y 16
 end
@@ -3432,7 +3103,6 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 17
 move_block 0
@@ -3440,7 +3110,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 18
 move_block 0
@@ -3448,7 +3117,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 19
 move_block 0
@@ -3456,7 +3124,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 20
 move_block 0
@@ -3464,7 +3131,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 21
 move_block 0
@@ -3472,7 +3138,6 @@ blocksview 0
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 22
 y 10
 end
@@ -3482,7 +3147,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 22
 y 11
 end
@@ -3508,7 +3172,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 22
 y 14
 end
@@ -3518,7 +3181,6 @@ y 14
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 22
 y 15
 end
@@ -3528,7 +3190,6 @@ y 15
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 23
 y 11
 end
@@ -3538,7 +3199,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 23
 y 12
 end
@@ -3548,7 +3208,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 23
 y 13
 end
@@ -3558,7 +3217,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 23
 y 14
 end
