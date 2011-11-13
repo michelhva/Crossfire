@@ -8,7 +8,7 @@ enter_x 7
 enter_y 11
 msg
 Created:  2002-12-29
-Modified: 2011-10-09 Rick Tanner
+Modified: 2011-11-12 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1369,7 +1369,6 @@ y 9
 end
 arch platinum_converter
 name Buy Cloaks (4pp)
-name_pl Buy Cloaks (4pp)
 other_arch cloak
 sp 1
 food 4
@@ -1382,7 +1381,6 @@ y 10
 end
 arch platinum_converter
 name Buy Gloves (2pp)
-name_pl Buy Gloves (2pp)
 other_arch gloves
 sp 1
 food 2
