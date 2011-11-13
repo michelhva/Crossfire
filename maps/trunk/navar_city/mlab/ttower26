@@ -9,7 +9,7 @@ enter_x 21
 enter_y 12
 msg
 Created:  2002-02-25 mikeeusa
-Modified: 2011-11-11 Rick Tanner
+Modified: 2011-11-12 Rick Tanner
 endmsg
 end
 arch blocked
@@ -178,7 +178,7 @@ y 13
 carrying 100
 arch key2
 name gold key
-name_pl gold key
+name_pl gold keys
 slaying tttower28gldn
 face key_brown.111
 end
