@@ -9,7 +9,7 @@ enter_x 16
 enter_y 15
 msg
 Created:  2004-02-26 mikeeusa
-Modified: 2011-11-11 Rick Tanner
+Modified: 2011-11-12 Rick Tanner
 endmsg
 end
 arch blocked
@@ -2205,7 +2205,6 @@ y 6
 carrying 3000
 arch quarto
 name Alkaline Earth Metals
-name_pl Alkaline Earth Metals
 msg
 * Beryllium
 * Magnesium
@@ -2217,7 +2216,6 @@ endmsg
 end
 arch quarto
 name Alkali Metals
-name_pl Alkali Metals
 msg
 * Lithium
 * Sodium
@@ -2229,7 +2227,6 @@ endmsg
 end
 arch quarto
 name Noble Gases
-name_pl Noble Gases
 msg
 * Helium
 * Neon
@@ -2504,7 +2501,6 @@ title of the wise
 end
 arch water
 name Concentrated Nerve Agent
-name_pl Concentrated Nerve Agent
 title of the wise
 nrof 3
 value 40
@@ -2528,7 +2524,6 @@ title of the wise
 end
 arch water
 name Concentrated Nerve Agent
-name_pl Concentrated Nerve Agent
 title of the wise
 nrof 3
 value 40
@@ -2552,7 +2547,6 @@ title of the wise
 end
 arch water
 name Concentrated Nerve Agent
-name_pl Concentrated Nerve Agent
 title of the wise
 nrof 3
 value 40
@@ -3787,7 +3781,6 @@ y 6
 end
 arch altar_none
 name stove
-name_pl stove
 face altarrugg.111
 x 15
 y 6
@@ -4043,7 +4036,6 @@ y 6
 end
 arch altar_none
 name grill
-name_pl grill
 x 16
 y 6
 move_block all
