@@ -9,7 +9,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  2002-02-25 mikeeusa
-Modified: 2011-11-11 Rick Tanner
+Modified: 2011-11-12 Rick Tanner
 endmsg
 end
 arch blocked
@@ -4107,7 +4107,6 @@ y 11
 end
 arch brazier
 name forever burning torch
-name_pl forever burning torch
 x 11
 y 11
 end
@@ -4160,7 +4159,6 @@ y 14
 end
 arch brazier
 name forever burning torch
-name_pl forever burning torch
 x 11
 y 14
 end
@@ -5157,7 +5155,6 @@ y 11
 end
 arch brazier
 name forever burning torch
-name_pl forever burning torch
 x 14
 y 11
 end
@@ -5210,7 +5207,6 @@ y 14
 end
 arch brazier
 name forever burning torch
-name_pl forever burning torch
 x 14
 y 14
 end
