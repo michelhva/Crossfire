@@ -9,7 +9,7 @@ enter_x 4
 enter_y 8
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-09-21 Rick Tanner
+Modified: 2011-11-12 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -667,7 +667,6 @@ y 10
 end
 arch sage
 name spy of Azumauindo
-name_pl spy of Azumauindo
 msg
 @match *
 We have gathered up these Navarians
@@ -770,7 +769,7 @@ y 4
 carrying 100
 arch key2
 name antarctic castle key
-name_pl antarctic castle key
+name_pl antarctic castle keys
 slaying castle1antarctickey1234bb2
 face key_blue.111
 end
@@ -1150,7 +1149,6 @@ y 14
 end
 arch bed_save
 name futon to reality
-name_pl futon to reality
 x 7
 y 14
 end
@@ -1172,7 +1170,6 @@ y 17
 end
 arch bed_save
 name futon to reality
-name_pl futon to reality
 x 7
 y 17
 end
