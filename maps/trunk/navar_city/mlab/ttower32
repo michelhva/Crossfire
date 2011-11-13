@@ -9,7 +9,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  2002-02-25 mikeeusa
-Modified: 2011-11-11 Rick Tanner
+Modified: 2011-11-12 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1941,7 +1941,6 @@ y 11
 end
 arch dread
 name Arch Dread
-name_pl Arch Dread
 hp 5500
 maxhp 5500
 x 8
@@ -2205,7 +2204,6 @@ y 14
 end
 arch dread
 name Arch Dread
-name_pl Arch Dread
 hp 5500
 maxhp 5500
 x 9
@@ -2714,7 +2712,6 @@ y 11
 end
 arch spectre
 name Spectral Mage
-name_pl Spectral Mage
 hp 2200
 x 11
 y 11
@@ -2766,7 +2763,6 @@ y 16
 end
 arch dread
 name Arch Dread
-name_pl Arch Dread
 hp 5500
 maxhp 5500
 x 11
@@ -3200,7 +3196,6 @@ y 11
 end
 arch spectre
 name Spectral Mage
-name_pl Spectral Mage
 hp 2200
 x 13
 y 11
@@ -3256,7 +3251,6 @@ y 16
 end
 arch dread
 name Arch Dread
-name_pl Arch Dread
 hp 5500
 maxhp 5500
 x 13
@@ -3478,7 +3472,6 @@ y 9
 end
 arch dread
 name Arch Dread
-name_pl Arch Dread
 hp 5500
 maxhp 5500
 x 14
@@ -3755,7 +3748,6 @@ y 14
 end
 arch dread
 name Arch Dread
-name_pl Arch Dread
 hp 5500
 maxhp 5500
 x 15
@@ -3966,7 +3958,6 @@ y 11
 end
 arch dread
 name Arch Dread
-name_pl Arch Dread
 hp 5500
 maxhp 5500
 x 16
