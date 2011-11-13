@@ -9,7 +9,7 @@ enter_x 14
 enter_y 8
 msg
 Created:  2002-02-25 mikeeusa
-Modified: 2011-11-11 Rick Tanner
+Modified: 2011-11-12 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1965,7 +1965,7 @@ y 14
 end
 arch chest_2
 name heavy chest
-name_pl heavy chest
+name_pl heavy chests
 x 8
 y 14
 arch random_treasure
@@ -2177,7 +2177,7 @@ y 15
 end
 arch chest_2
 name heavy chest
-name_pl heavy chest
+name_pl heavy chests
 x 9
 y 15
 arch random_treasure
@@ -2417,7 +2417,7 @@ y 16
 end
 arch chest_2
 name heavy chest
-name_pl heavy chest
+name_pl heavy chests
 x 10
 y 16
 arch random_treasure
