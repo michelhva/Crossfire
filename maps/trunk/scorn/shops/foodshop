@@ -11,7 +11,7 @@ enter_x 5
 enter_y 16
 msg
 Created:  1993-10-15 MikeeUSA
-Modified: 2011-10-10 Rick Tanner
+Modified: 2011-11-12 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -490,7 +490,6 @@ y 15
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 4
 y 16
@@ -506,7 +505,6 @@ connected 1
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 4
 y 17
@@ -627,7 +625,6 @@ y 15
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 5
 y 16
@@ -643,7 +640,6 @@ connected 1
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 5
 y 17
@@ -655,7 +651,6 @@ connected 1
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 5
 y 18
@@ -1042,7 +1037,6 @@ y 5
 end
 arch dwarf_wiz
 name dwarf merchant
-name_pl dwarf merchant
 msg
 @match *
 Food fit for a mighty dragon!
