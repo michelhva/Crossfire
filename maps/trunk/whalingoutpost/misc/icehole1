@@ -10,7 +10,7 @@ enter_x 36
 enter_y 37
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-11-14 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -134,20 +134,17 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 y 35
 move_block 0
 blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 36
 move_block 0
 blocksview 0
@@ -157,7 +154,6 @@ y 36
 end
 arch blocked
 name nothing
-name_pl nothing
 y 37
 move_block 0
 blocksview 0
@@ -167,14 +163,12 @@ y 37
 end
 arch blocked
 name nothing
-name_pl nothing
 y 38
 move_block 0
 blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 y 38
 blocksview 0
 end
@@ -425,7 +419,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 35
 move_block 0
@@ -433,14 +426,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 1
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 36
 move_block 0
@@ -452,7 +443,6 @@ y 36
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 37
 move_block 0
@@ -464,7 +454,6 @@ y 37
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 38
 move_block 0
@@ -472,7 +461,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 1
 y 38
 blocksview 0
@@ -742,7 +730,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 35
 move_block 0
@@ -750,14 +737,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 2
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 36
 move_block 0
@@ -765,7 +750,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 37
 move_block 0
@@ -777,7 +761,6 @@ y 37
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 38
 move_block 0
@@ -785,7 +768,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 2
 y 38
 blocksview 0
@@ -1071,7 +1053,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 35
 move_block 0
@@ -1079,14 +1060,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 3
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 36
 move_block 0
@@ -1094,7 +1073,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 37
 move_block 0
@@ -1102,7 +1080,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 38
 move_block 0
@@ -1110,14 +1087,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 3
 y 38
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 39
 move_block 0
@@ -1125,7 +1100,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 3
 y 39
 blocksview 0
@@ -1415,7 +1389,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 35
 move_block 0
@@ -1423,14 +1396,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 4
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 36
 move_block 0
@@ -1438,14 +1409,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 4
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 37
 move_block 0
@@ -1453,7 +1422,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 38
 move_block 0
@@ -1461,7 +1429,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 39
 move_block 0
@@ -1469,7 +1436,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 4
 y 39
 blocksview 0
@@ -1763,7 +1729,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 36
 move_block 0
@@ -1771,14 +1736,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 5
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 37
 move_block 0
@@ -1786,7 +1749,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 38
 move_block 0
@@ -1794,7 +1756,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 39
 move_block 0
@@ -1802,7 +1763,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 5
 y 39
 blocksview 0
@@ -2104,7 +2064,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 36
 move_block 0
@@ -2112,14 +2071,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 6
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 37
 move_block 0
@@ -2127,7 +2084,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 38
 move_block 0
@@ -2135,7 +2091,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 39
 move_block 0
@@ -2143,7 +2098,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 6
 y 39
 blocksview 0
@@ -2457,7 +2411,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 36
 move_block 0
@@ -2465,14 +2418,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 7
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 37
 move_block 0
@@ -2480,7 +2431,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 38
 move_block 0
@@ -2488,7 +2438,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 39
 move_block 0
@@ -2496,14 +2445,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 7
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 40
 move_block 0
@@ -2511,7 +2458,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 7
 y 40
 blocksview 0
@@ -2813,7 +2759,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 36
 move_block 0
@@ -2821,14 +2766,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 8
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 37
 move_block 0
@@ -2836,14 +2779,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 8
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 38
 move_block 0
@@ -2851,7 +2792,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 39
 move_block 0
@@ -2859,7 +2799,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 40
 move_block 0
@@ -2867,7 +2806,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 8
 y 40
 blocksview 0
@@ -3165,7 +3103,6 @@ y 36
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 37
 move_block 0
@@ -3173,14 +3110,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 9
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 38
 move_block 0
@@ -3188,7 +3123,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 39
 move_block 0
@@ -3196,7 +3130,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 40
 move_block 0
@@ -3204,7 +3137,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 9
 y 40
 blocksview 0
@@ -3494,7 +3426,6 @@ y 36
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 37
 move_block 0
@@ -3502,14 +3433,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 10
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 38
 move_block 0
@@ -3517,7 +3446,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 39
 move_block 0
@@ -3525,7 +3453,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 40
 move_block 0
@@ -3533,14 +3460,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 10
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 41
 move_block 0
@@ -3548,7 +3473,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 10
 y 41
 blocksview 0
@@ -3826,7 +3750,6 @@ y 36
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 37
 move_block 0
@@ -3834,14 +3757,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 11
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 38
 move_block 0
@@ -3849,14 +3770,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 11
 y 38
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 39
 move_block 0
@@ -3864,7 +3783,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 40
 move_block 0
@@ -3872,7 +3790,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 41
 move_block 0
@@ -3880,7 +3797,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 11
 y 41
 blocksview 0
@@ -4158,7 +4074,6 @@ y 37
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 38
 move_block 0
@@ -4166,14 +4081,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 12
 y 38
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 39
 move_block 0
@@ -4181,7 +4094,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 40
 move_block 0
@@ -4189,7 +4101,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 41
 move_block 0
@@ -4197,14 +4108,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 12
 y 41
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 42
 move_block 0
@@ -4212,7 +4121,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 12
 y 42
 blocksview 0
@@ -4498,7 +4406,6 @@ y 37
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 38
 move_block 0
@@ -4506,14 +4413,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 13
 y 38
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 39
 move_block 0
@@ -4521,14 +4426,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 13
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 40
 move_block 0
@@ -4536,7 +4439,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 41
 move_block 0
@@ -4544,7 +4446,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 42
 move_block 0
@@ -4552,7 +4453,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 13
 y 42
 blocksview 0
@@ -4842,7 +4742,6 @@ y 38
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 39
 move_block 0
@@ -4850,14 +4749,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 14
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 40
 move_block 0
@@ -4865,7 +4762,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 41
 move_block 0
@@ -4873,7 +4769,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 42
 move_block 0
@@ -4881,7 +4776,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 14
 y 42
 blocksview 0
@@ -5159,7 +5053,6 @@ y 38
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 39
 move_block 0
@@ -5167,14 +5060,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 15
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 40
 move_block 0
@@ -5182,7 +5073,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 41
 move_block 0
@@ -5190,7 +5080,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 42
 move_block 0
@@ -5198,7 +5087,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 15
 y 42
 blocksview 0
@@ -5464,7 +5352,6 @@ y 38
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 39
 move_block 0
@@ -5472,14 +5359,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 16
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 40
 move_block 0
@@ -5487,7 +5372,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 41
 move_block 0
@@ -5495,7 +5379,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 42
 move_block 0
@@ -5503,14 +5386,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 16
 y 42
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 43
 move_block 0
@@ -5518,7 +5399,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 16
 y 43
 blocksview 0
@@ -5780,7 +5660,6 @@ y 38
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 39
 move_block 0
@@ -5788,14 +5667,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 17
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 40
 move_block 0
@@ -5803,14 +5680,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 17
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 41
 move_block 0
@@ -5818,7 +5693,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 42
 move_block 0
@@ -5826,7 +5700,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 43
 move_block 0
@@ -5834,7 +5707,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 17
 y 43
 blocksview 0
@@ -6108,7 +5980,6 @@ y 39
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 40
 move_block 0
@@ -6116,14 +5987,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 18
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 41
 move_block 0
@@ -6131,7 +6000,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 42
 move_block 0
@@ -6139,7 +6007,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 43
 move_block 0
@@ -6147,7 +6014,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 18
 y 43
 blocksview 0
@@ -6441,7 +6307,6 @@ y 39
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 40
 move_block 0
@@ -6449,14 +6314,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 19
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 41
 move_block 0
@@ -6464,7 +6327,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 42
 move_block 0
@@ -6472,7 +6334,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 43
 move_block 0
@@ -6480,7 +6341,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 19
 y 43
 blocksview 0
@@ -6786,7 +6646,6 @@ y 39
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 40
 move_block 0
@@ -6794,14 +6653,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 20
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 41
 move_block 0
@@ -6809,7 +6666,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 42
 move_block 0
@@ -6817,7 +6673,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 43
 move_block 0
@@ -6825,14 +6680,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 20
 y 43
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 44
 move_block 0
@@ -6840,7 +6693,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 20
 y 44
 blocksview 0
@@ -7126,7 +6978,6 @@ y 39
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 40
 move_block 0
@@ -7134,14 +6985,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 21
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 41
 move_block 0
@@ -7149,14 +6998,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 21
 y 41
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 42
 move_block 0
@@ -7164,7 +7011,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 43
 move_block 0
@@ -7172,7 +7018,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 44
 move_block 0
@@ -7180,14 +7025,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 21
 y 44
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 45
 move_block 0
@@ -7195,7 +7038,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 21
 y 45
 blocksview 0
@@ -7274,7 +7116,6 @@ y 57
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 58
 move_block 0
@@ -7282,7 +7123,6 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 21
 y 58
 blocksview 0
@@ -7293,7 +7133,6 @@ y 58
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 59
 move_block 0
@@ -7301,14 +7140,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 21
 y 59
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 60
 move_block 0
@@ -7316,14 +7153,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 21
 y 60
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 61
 move_block 0
@@ -7331,14 +7166,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 21
 y 61
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 62
 move_block 0
@@ -7346,14 +7179,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 21
 y 62
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 63
 move_block 0
@@ -7361,7 +7192,6 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 21
 y 63
 blocksview 0
@@ -7551,7 +7381,6 @@ y 40
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 41
 move_block 0
@@ -7559,14 +7388,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 22
 y 41
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 42
 move_block 0
@@ -7574,7 +7401,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 43
 move_block 0
@@ -7582,7 +7408,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 44
 move_block 0
@@ -7590,7 +7415,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 45
 move_block 0
@@ -7598,7 +7422,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 22
 y 45
 blocksview 0
@@ -7621,7 +7444,6 @@ y 49
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 50
 move_block 0
@@ -7629,14 +7451,12 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 22
 y 50
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 51
 move_block 0
@@ -7644,14 +7464,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 22
 y 51
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 52
 move_block 0
@@ -7659,14 +7477,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 22
 y 52
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 53
 move_block 0
@@ -7674,14 +7490,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 22
 y 53
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 54
 move_block 0
@@ -7689,14 +7503,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 22
 y 54
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 55
 move_block 0
@@ -7704,14 +7516,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 22
 y 55
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 56
 move_block 0
@@ -7719,14 +7529,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 22
 y 56
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 57
 move_block 0
@@ -7734,14 +7542,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 22
 y 57
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 58
 move_block 0
@@ -7749,14 +7555,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 22
 y 58
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 59
 move_block 0
@@ -7764,7 +7568,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 60
 move_block 0
@@ -7772,7 +7575,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 61
 move_block 0
@@ -7780,7 +7582,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 62
 move_block 0
@@ -7792,7 +7593,6 @@ y 62
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 63
 move_block 0
@@ -7983,7 +7783,6 @@ y 40
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 41
 move_block 0
@@ -7991,14 +7790,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 23
 y 41
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 42
 move_block 0
@@ -8006,7 +7803,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 43
 move_block 0
@@ -8014,7 +7810,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 44
 move_block 0
@@ -8022,7 +7817,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 45
 move_block 0
@@ -8030,14 +7824,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 23
 y 45
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 46
 move_block 0
@@ -8045,14 +7837,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 23
 y 46
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 47
 move_block 0
@@ -8060,14 +7850,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 23
 y 47
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 48
 move_block 0
@@ -8075,14 +7863,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 23
 y 48
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 49
 move_block 0
@@ -8090,14 +7876,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 23
 y 49
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 50
 move_block 0
@@ -8105,14 +7889,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 23
 y 50
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 51
 move_block 0
@@ -8120,7 +7902,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 52
 move_block 0
@@ -8128,7 +7909,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 53
 move_block 0
@@ -8136,7 +7916,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 54
 move_block 0
@@ -8144,7 +7923,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 55
 move_block 0
@@ -8152,7 +7930,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 56
 move_block 0
@@ -8160,7 +7937,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 57
 move_block 0
@@ -8168,7 +7944,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 58
 move_block 0
@@ -8176,7 +7951,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 59
 move_block 0
@@ -8184,7 +7958,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 60
 move_block 0
@@ -8192,7 +7965,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 61
 move_block 0
@@ -8200,7 +7972,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 62
 move_block 0
@@ -8212,7 +7983,6 @@ y 62
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 63
 move_block 0
@@ -8371,7 +8141,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 36
 move_block 0
@@ -8379,14 +8148,12 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 24
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 37
 move_block 0
@@ -8394,14 +8161,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 24
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 38
 move_block 0
@@ -8409,14 +8174,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 24
 y 38
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 39
 move_block 0
@@ -8424,14 +8187,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 24
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 40
 move_block 0
@@ -8439,14 +8200,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 24
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 41
 move_block 0
@@ -8454,14 +8213,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 24
 y 41
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 42
 move_block 0
@@ -8469,7 +8226,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 43
 move_block 0
@@ -8477,7 +8233,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 44
 move_block 0
@@ -8485,7 +8240,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 45
 move_block 0
@@ -8493,7 +8247,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 46
 move_block 0
@@ -8501,7 +8254,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 47
 move_block 0
@@ -8509,7 +8261,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 48
 move_block 0
@@ -8517,7 +8268,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 49
 move_block 0
@@ -8525,7 +8275,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 50
 move_block 0
@@ -8533,7 +8282,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 51
 move_block 0
@@ -8541,7 +8289,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 52
 move_block 0
@@ -8549,7 +8296,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 53
 move_block 0
@@ -8557,7 +8303,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 54
 move_block 0
@@ -8565,7 +8310,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 55
 move_block 0
@@ -8573,7 +8317,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 56
 move_block 0
@@ -8581,7 +8324,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 57
 move_block 0
@@ -8589,7 +8331,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 58
 move_block 0
@@ -8597,7 +8338,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 59
 move_block 0
@@ -8605,7 +8345,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 60
 move_block 0
@@ -8613,7 +8352,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 61
 move_block 0
@@ -8625,7 +8363,6 @@ y 61
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 62
 move_block 0
@@ -8637,7 +8374,6 @@ y 62
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 63
 move_block 0
@@ -8776,7 +8512,6 @@ y 28
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 29
 move_block 0
@@ -8784,14 +8519,12 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 25
 y 29
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 30
 move_block 0
@@ -8799,14 +8532,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 25
 y 30
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 31
 move_block 0
@@ -8814,14 +8545,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 25
 y 31
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 32
 move_block 0
@@ -8829,7 +8558,6 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 25
 y 32
 blocksview 0
@@ -8840,7 +8568,6 @@ y 33
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 33
 move_block 0
@@ -8848,7 +8575,6 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 25
 y 33
 blocksview 0
@@ -8859,7 +8585,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 34
 move_block 0
@@ -8867,7 +8592,6 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 25
 y 34
 move_block 0
@@ -8883,7 +8607,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 35
 move_block 0
@@ -8891,14 +8614,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 25
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 36
 move_block 0
@@ -8906,14 +8627,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 25
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 37
 move_block 0
@@ -8921,7 +8640,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 38
 move_block 0
@@ -8929,7 +8647,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 39
 move_block 0
@@ -8937,7 +8654,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 40
 move_block 0
@@ -8945,7 +8661,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 41
 move_block 0
@@ -8953,7 +8668,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 42
 move_block 0
@@ -8961,7 +8675,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 43
 move_block 0
@@ -8969,7 +8682,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 44
 move_block 0
@@ -8977,7 +8689,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 45
 move_block 0
@@ -8985,7 +8696,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 46
 move_block 0
@@ -8993,7 +8703,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 47
 move_block 0
@@ -9001,7 +8710,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 48
 move_block 0
@@ -9009,7 +8717,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 49
 move_block 0
@@ -9017,7 +8724,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 50
 move_block 0
@@ -9025,7 +8731,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 51
 move_block 0
@@ -9033,7 +8738,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 52
 move_block 0
@@ -9041,7 +8745,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 53
 move_block 0
@@ -9049,7 +8752,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 54
 move_block 0
@@ -9057,7 +8759,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 55
 move_block 0
@@ -9065,7 +8766,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 56
 move_block 0
@@ -9073,7 +8773,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 57
 move_block 0
@@ -9081,14 +8780,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 25
 y 57
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 58
 move_block 0
@@ -9096,14 +8793,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 25
 y 58
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 59
 move_block 0
@@ -9111,14 +8806,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 25
 y 59
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 60
 move_block 0
@@ -9126,14 +8819,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 25
 y 60
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 61
 move_block 0
@@ -9141,14 +8832,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 25
 y 61
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 62
 move_block 0
@@ -9156,14 +8845,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 25
 y 62
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 25
 y 63
 move_block 0
@@ -9171,7 +8858,6 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 25
 y 63
 blocksview 0
@@ -9269,7 +8955,6 @@ y 21
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 22
 move_block 0
@@ -9277,14 +8962,12 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 26
 y 22
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 23
 move_block 0
@@ -9292,14 +8975,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 26
 y 23
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 24
 move_block 0
@@ -9307,14 +8988,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 26
 y 24
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 25
 move_block 0
@@ -9322,14 +9001,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 26
 y 25
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 26
 move_block 0
@@ -9337,14 +9014,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 26
 y 26
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 27
 move_block 0
@@ -9352,14 +9027,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 26
 y 27
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 28
 move_block 0
@@ -9367,14 +9040,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 26
 y 28
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 29
 move_block 0
@@ -9382,14 +9053,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 26
 y 29
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 30
 move_block 0
@@ -9397,7 +9066,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 31
 move_block 0
@@ -9405,7 +9073,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 32
 move_block 0
@@ -9417,7 +9084,6 @@ y 33
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 33
 blocksview 0
@@ -9428,7 +9094,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 34
 move_block 0
@@ -9444,14 +9109,12 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 36
 move_block 0
@@ -9459,7 +9122,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 37
 move_block 0
@@ -9467,7 +9129,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 38
 move_block 0
@@ -9475,7 +9136,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 39
 move_block 0
@@ -9483,7 +9143,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 40
 move_block 0
@@ -9491,7 +9150,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 41
 move_block 0
@@ -9499,7 +9157,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 42
 move_block 0
@@ -9507,7 +9164,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 43
 move_block 0
@@ -9515,7 +9171,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 44
 move_block 0
@@ -9523,7 +9178,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 45
 move_block 0
@@ -9531,7 +9185,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 46
 move_block 0
@@ -9539,7 +9192,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 47
 move_block 0
@@ -9547,7 +9199,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 48
 move_block 0
@@ -9555,7 +9206,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 49
 move_block 0
@@ -9563,14 +9213,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 26
 y 49
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 50
 move_block 0
@@ -9578,14 +9226,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 26
 y 50
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 51
 move_block 0
@@ -9593,14 +9239,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 26
 y 51
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 52
 move_block 0
@@ -9608,14 +9252,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 26
 y 52
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 53
 move_block 0
@@ -9623,14 +9265,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 26
 y 53
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 54
 move_block 0
@@ -9638,14 +9278,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 26
 y 54
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 55
 move_block 0
@@ -9653,14 +9291,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 26
 y 55
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 56
 move_block 0
@@ -9668,14 +9304,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 26
 y 56
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 26
 y 57
 move_block 0
@@ -9683,7 +9317,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 26
 y 57
 blocksview 0
@@ -9841,7 +9474,6 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 15
 move_block 0
@@ -9849,7 +9481,6 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 27
 y 15
 blocksview 0
@@ -9860,7 +9491,6 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 16
 move_block 0
@@ -9868,14 +9498,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 27
 y 16
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 17
 move_block 0
@@ -9883,14 +9511,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 27
 y 17
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 18
 move_block 0
@@ -9898,14 +9524,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 27
 y 18
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 19
 move_block 0
@@ -9913,14 +9537,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 27
 y 19
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 20
 move_block 0
@@ -9928,14 +9550,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 27
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 21
 move_block 0
@@ -9943,14 +9563,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 27
 y 21
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 22
 move_block 0
@@ -9958,14 +9576,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 27
 y 22
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 23
 move_block 0
@@ -9973,7 +9589,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 24
 move_block 0
@@ -9981,7 +9596,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 25
 move_block 0
@@ -9989,7 +9603,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 26
 move_block 0
@@ -9997,7 +9610,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 27
 move_block 0
@@ -10005,7 +9617,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 28
 move_block 0
@@ -10013,7 +9624,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 29
 move_block 0
@@ -10021,7 +9631,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 30
 move_block 0
@@ -10029,7 +9638,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 31
 move_block 0
@@ -10037,7 +9645,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 32
 move_block 0
@@ -10049,7 +9656,6 @@ y 33
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 33
 blocksview 0
@@ -10060,7 +9666,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 34
 move_block 0
@@ -10076,14 +9681,12 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 36
 move_block 0
@@ -10091,7 +9694,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 37
 move_block 0
@@ -10099,7 +9701,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 38
 move_block 0
@@ -10107,14 +9708,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 27
 y 38
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 39
 move_block 0
@@ -10122,14 +9721,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 27
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 40
 move_block 0
@@ -10137,14 +9734,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 27
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 41
 move_block 0
@@ -10152,14 +9747,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 27
 y 41
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 42
 move_block 0
@@ -10167,14 +9760,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 27
 y 42
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 43
 move_block 0
@@ -10182,14 +9773,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 27
 y 43
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 44
 move_block 0
@@ -10197,7 +9786,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 45
 move_block 0
@@ -10205,7 +9793,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 46
 move_block 0
@@ -10213,7 +9800,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 47
 move_block 0
@@ -10221,7 +9807,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 48
 move_block 0
@@ -10229,14 +9814,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 27
 y 48
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 27
 y 49
 move_block 0
@@ -10244,7 +9827,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 27
 y 49
 blocksview 0
@@ -10361,7 +9943,6 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 5
 move_block 0
@@ -10369,7 +9950,6 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 28
 y 5
 blocksview 0
@@ -10380,7 +9960,6 @@ y 5
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 6
 move_block 0
@@ -10388,14 +9967,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 28
 y 6
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 7
 move_block 0
@@ -10403,14 +9980,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 28
 y 7
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 8
 move_block 0
@@ -10418,14 +9993,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 28
 y 8
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 9
 move_block 0
@@ -10433,14 +10006,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 28
 y 9
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 10
 move_block 0
@@ -10448,14 +10019,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 28
 y 10
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 11
 move_block 0
@@ -10463,14 +10032,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 28
 y 11
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 12
 move_block 0
@@ -10478,14 +10045,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 28
 y 12
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 13
 move_block 0
@@ -10493,14 +10058,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 28
 y 13
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 14
 move_block 0
@@ -10508,14 +10071,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 28
 y 14
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 15
 move_block 0
@@ -10523,14 +10084,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 28
 y 15
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 16
 move_block 0
@@ -10538,7 +10097,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 17
 move_block 0
@@ -10546,7 +10104,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 18
 move_block 0
@@ -10554,7 +10111,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 19
 move_block 0
@@ -10562,7 +10118,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 20
 move_block 0
@@ -10570,7 +10125,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 21
 move_block 0
@@ -10578,7 +10132,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 22
 move_block 0
@@ -10586,7 +10139,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 23
 move_block 0
@@ -10594,7 +10146,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 24
 move_block 0
@@ -10602,7 +10153,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 25
 move_block 0
@@ -10610,7 +10160,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 26
 move_block 0
@@ -10618,7 +10167,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 27
 move_block 0
@@ -10626,7 +10174,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 28
 move_block 0
@@ -10634,7 +10181,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 29
 move_block 0
@@ -10642,7 +10188,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 30
 move_block 0
@@ -10650,7 +10195,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 31
 move_block 0
@@ -10658,14 +10202,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 28
 y 31
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 32
 move_block 0
@@ -10673,7 +10215,6 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 28
 y 32
 blocksview 0
@@ -10684,7 +10225,6 @@ y 33
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 33
 move_block 0
@@ -10692,7 +10232,6 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 28
 y 33
 blocksview 0
@@ -10703,7 +10242,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 34
 move_block 0
@@ -10711,7 +10249,6 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 28
 y 34
 move_block 0
@@ -10727,7 +10264,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 35
 move_block 0
@@ -10735,14 +10271,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 28
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 36
 move_block 0
@@ -10750,14 +10284,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 28
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 37
 move_block 0
@@ -10765,14 +10297,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 28
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 38
 move_block 0
@@ -10780,7 +10310,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 28
 y 38
 blocksview 0
@@ -10807,7 +10336,6 @@ y 42
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 43
 move_block 0
@@ -10815,14 +10343,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 28
 y 43
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 44
 move_block 0
@@ -10830,7 +10356,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 45
 move_block 0
@@ -10838,7 +10363,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 46
 move_block 0
@@ -10846,7 +10370,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 47
 move_block 0
@@ -10854,7 +10377,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 28
 y 48
 move_block 0
@@ -10862,7 +10384,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 28
 y 48
 blocksview 0
@@ -10965,20 +10486,17 @@ y 63
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 move_block 0
 blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 29
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 1
 move_block 0
@@ -10986,14 +10504,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 29
 y 1
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 2
 move_block 0
@@ -11001,14 +10517,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 29
 y 2
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 3
 move_block 0
@@ -11016,14 +10530,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 29
 y 3
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 4
 move_block 0
@@ -11031,14 +10543,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 29
 y 4
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 5
 move_block 0
@@ -11046,14 +10556,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 29
 y 5
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 6
 move_block 0
@@ -11061,7 +10569,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 7
 move_block 0
@@ -11069,7 +10576,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 8
 move_block 0
@@ -11077,7 +10583,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 9
 move_block 0
@@ -11085,7 +10590,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 10
 move_block 0
@@ -11093,7 +10597,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 11
 move_block 0
@@ -11101,7 +10604,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 12
 move_block 0
@@ -11109,7 +10611,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 13
 move_block 0
@@ -11117,7 +10618,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 14
 move_block 0
@@ -11125,7 +10625,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 15
 move_block 0
@@ -11133,7 +10632,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 16
 move_block 0
@@ -11141,7 +10639,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 17
 move_block 0
@@ -11149,7 +10646,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 18
 move_block 0
@@ -11157,7 +10653,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 19
 move_block 0
@@ -11165,7 +10660,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 20
 move_block 0
@@ -11173,7 +10667,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 21
 move_block 0
@@ -11181,7 +10674,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 22
 move_block 0
@@ -11189,7 +10681,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 23
 move_block 0
@@ -11197,7 +10688,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 24
 move_block 0
@@ -11205,7 +10695,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 25
 move_block 0
@@ -11213,14 +10702,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 29
 y 25
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 26
 move_block 0
@@ -11228,14 +10715,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 29
 y 26
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 27
 move_block 0
@@ -11243,14 +10728,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 29
 y 27
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 28
 move_block 0
@@ -11258,14 +10741,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 29
 y 28
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 29
 move_block 0
@@ -11273,14 +10754,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 29
 y 29
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 30
 move_block 0
@@ -11288,14 +10767,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 29
 y 30
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 31
 move_block 0
@@ -11303,7 +10780,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 29
 y 31
 blocksview 0
@@ -11354,7 +10830,6 @@ y 42
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 43
 move_block 0
@@ -11362,14 +10837,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 29
 y 43
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 44
 move_block 0
@@ -11377,14 +10850,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 29
 y 44
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 45
 move_block 0
@@ -11392,7 +10863,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 46
 move_block 0
@@ -11400,7 +10870,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 47
 move_block 0
@@ -11408,7 +10877,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 29
 y 48
 move_block 0
@@ -11416,7 +10884,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 29
 y 48
 blocksview 0
@@ -11515,7 +10982,6 @@ y 63
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 move_block 0
 blocksview 0
@@ -11525,7 +10991,6 @@ x 30
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 1
 move_block 0
@@ -11537,7 +11002,6 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 2
 move_block 0
@@ -11549,7 +11013,6 @@ y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 3
 move_block 0
@@ -11557,7 +11020,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 4
 move_block 0
@@ -11565,7 +11027,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 5
 move_block 0
@@ -11573,7 +11034,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 6
 move_block 0
@@ -11581,7 +11041,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 7
 move_block 0
@@ -11589,7 +11048,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 8
 move_block 0
@@ -11597,7 +11055,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 9
 move_block 0
@@ -11605,7 +11062,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 10
 move_block 0
@@ -11613,7 +11069,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 11
 move_block 0
@@ -11621,7 +11076,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 12
 move_block 0
@@ -11629,7 +11083,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 13
 move_block 0
@@ -11637,7 +11090,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 14
 move_block 0
@@ -11645,7 +11097,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 15
 move_block 0
@@ -11653,7 +11104,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 16
 move_block 0
@@ -11661,14 +11111,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 30
 y 16
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 17
 move_block 0
@@ -11676,14 +11124,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 30
 y 17
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 18
 move_block 0
@@ -11691,14 +11137,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 30
 y 18
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 19
 move_block 0
@@ -11706,14 +11150,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 30
 y 19
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 20
 move_block 0
@@ -11721,7 +11163,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 21
 move_block 0
@@ -11729,7 +11170,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 22
 move_block 0
@@ -11737,7 +11177,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 23
 move_block 0
@@ -11745,7 +11184,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 24
 move_block 0
@@ -11753,14 +11191,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 30
 y 24
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 25
 move_block 0
@@ -11768,7 +11204,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 30
 y 25
 blocksview 0
@@ -11847,7 +11282,6 @@ y 43
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 44
 move_block 0
@@ -11855,14 +11289,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 30
 y 44
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 45
 move_block 0
@@ -11870,7 +11302,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 46
 move_block 0
@@ -11878,7 +11309,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 47
 move_block 0
@@ -11886,7 +11316,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 30
 y 48
 move_block 0
@@ -11894,7 +11323,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 30
 y 48
 blocksview 0
@@ -11989,7 +11417,6 @@ y 63
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 move_block 0
 blocksview 0
@@ -11999,7 +11426,6 @@ x 31
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 1
 move_block 0
@@ -12011,7 +11437,6 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 2
 move_block 0
@@ -12023,7 +11448,6 @@ y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 3
 move_block 0
@@ -12035,7 +11459,6 @@ y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 4
 move_block 0
@@ -12043,7 +11466,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 5
 move_block 0
@@ -12051,7 +11473,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 6
 move_block 0
@@ -12059,7 +11480,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 7
 move_block 0
@@ -12067,14 +11487,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 31
 y 7
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 8
 move_block 0
@@ -12082,14 +11500,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 31
 y 8
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 9
 move_block 0
@@ -12097,14 +11513,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 31
 y 9
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 10
 move_block 0
@@ -12112,14 +11526,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 31
 y 10
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 11
 move_block 0
@@ -12127,14 +11539,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 31
 y 11
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 12
 move_block 0
@@ -12142,14 +11552,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 31
 y 12
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 13
 move_block 0
@@ -12157,14 +11565,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 31
 y 13
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 14
 move_block 0
@@ -12172,14 +11578,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 31
 y 14
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 15
 move_block 0
@@ -12187,14 +11591,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 31
 y 15
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 16
 move_block 0
@@ -12202,7 +11604,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 31
 y 16
 blocksview 0
@@ -12229,7 +11630,6 @@ y 18
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 19
 move_block 0
@@ -12237,7 +11637,6 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 31
 y 19
 blocksview 0
@@ -12248,7 +11647,6 @@ y 19
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 20
 move_block 0
@@ -12256,14 +11654,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 31
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 21
 move_block 0
@@ -12271,7 +11667,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 22
 move_block 0
@@ -12279,7 +11674,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 23
 move_block 0
@@ -12287,7 +11681,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 24
 move_block 0
@@ -12295,7 +11688,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 31
 y 24
 blocksview 0
@@ -12390,7 +11782,6 @@ y 43
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 44
 move_block 0
@@ -12398,14 +11789,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 31
 y 44
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 45
 move_block 0
@@ -12413,14 +11802,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 31
 y 45
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 46
 move_block 0
@@ -12428,7 +11815,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 47
 move_block 0
@@ -12436,7 +11822,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 31
 y 48
 move_block 0
@@ -12444,7 +11829,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 31
 y 48
 blocksview 0
@@ -12539,20 +11923,17 @@ y 63
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 move_block 0
 blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 32
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 1
 move_block 0
@@ -12560,14 +11941,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 32
 y 1
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 2
 move_block 0
@@ -12575,14 +11954,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 32
 y 2
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 3
 move_block 0
@@ -12590,14 +11967,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 32
 y 3
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 4
 move_block 0
@@ -12605,14 +11980,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 32
 y 4
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 5
 move_block 0
@@ -12620,14 +11993,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 32
 y 5
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 6
 move_block 0
@@ -12635,14 +12006,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 32
 y 6
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 7
 move_block 0
@@ -12650,7 +12019,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 32
 y 7
 blocksview 0
@@ -12757,7 +12125,6 @@ y 19
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 20
 move_block 0
@@ -12765,14 +12132,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 32
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 21
 move_block 0
@@ -12780,7 +12145,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 22
 move_block 0
@@ -12788,7 +12152,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 23
 move_block 0
@@ -12796,7 +12159,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 24
 move_block 0
@@ -12804,7 +12166,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 32
 y 24
 blocksview 0
@@ -12907,7 +12268,6 @@ y 44
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 45
 move_block 0
@@ -12915,14 +12275,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 32
 y 45
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 46
 move_block 0
@@ -12930,7 +12288,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 47
 move_block 0
@@ -12938,7 +12295,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 48
 move_block 0
@@ -12946,14 +12302,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 32
 y 48
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 32
 y 49
 move_block 0
@@ -12961,7 +12315,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 32
 y 49
 blocksview 0
@@ -13210,7 +12563,6 @@ y 19
 end
 arch blocked
 name nothing
-name_pl nothing
 x 33
 y 20
 move_block 0
@@ -13218,14 +12570,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 33
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 33
 y 21
 move_block 0
@@ -13233,7 +12583,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 33
 y 22
 move_block 0
@@ -13241,7 +12590,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 33
 y 23
 move_block 0
@@ -13249,14 +12597,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 33
 y 23
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 33
 y 24
 move_block 0
@@ -13264,7 +12610,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 33
 y 24
 blocksview 0
@@ -13351,7 +12696,6 @@ y 44
 end
 arch blocked
 name nothing
-name_pl nothing
 x 33
 y 45
 move_block 0
@@ -13359,14 +12703,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 33
 y 45
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 33
 y 46
 move_block 0
@@ -13374,14 +12716,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 33
 y 46
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 33
 y 47
 move_block 0
@@ -13389,7 +12729,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 33
 y 48
 move_block 0
@@ -13397,7 +12736,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 33
 y 49
 move_block 0
@@ -13405,7 +12743,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 33
 y 49
 blocksview 0
@@ -13615,7 +12952,6 @@ y 19
 end
 arch blocked
 name nothing
-name_pl nothing
 x 34
 y 20
 move_block 0
@@ -13623,14 +12959,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 34
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 34
 y 21
 move_block 0
@@ -13638,7 +12972,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 34
 y 22
 move_block 0
@@ -13646,7 +12979,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 34
 y 23
 move_block 0
@@ -13654,7 +12986,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 34
 y 23
 blocksview 0
@@ -13757,7 +13088,6 @@ y 45
 end
 arch blocked
 name nothing
-name_pl nothing
 x 34
 y 46
 move_block 0
@@ -13765,14 +13095,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 34
 y 46
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 34
 y 47
 move_block 0
@@ -13780,7 +13108,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 34
 y 48
 move_block 0
@@ -13788,7 +13115,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 34
 y 49
 move_block 0
@@ -13796,7 +13122,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 34
 y 49
 blocksview 0
@@ -13978,7 +13303,6 @@ y 19
 end
 arch blocked
 name nothing
-name_pl nothing
 x 35
 y 20
 move_block 0
@@ -13986,14 +13310,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 35
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 35
 y 21
 move_block 0
@@ -14001,7 +13323,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 35
 y 22
 move_block 0
@@ -14009,7 +13330,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 35
 y 23
 move_block 0
@@ -14017,7 +13337,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 35
 y 23
 blocksview 0
@@ -14132,7 +13451,6 @@ y 45
 end
 arch blocked
 name nothing
-name_pl nothing
 x 35
 y 46
 move_block 0
@@ -14140,14 +13458,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 35
 y 46
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 35
 y 47
 move_block 0
@@ -14155,7 +13471,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 35
 y 48
 move_block 0
@@ -14163,7 +13478,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 35
 y 49
 move_block 0
@@ -14171,7 +13485,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 35
 y 49
 blocksview 0
@@ -14353,7 +13666,6 @@ y 19
 end
 arch blocked
 name nothing
-name_pl nothing
 x 36
 y 20
 move_block 0
@@ -14361,14 +13673,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 36
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 36
 y 21
 move_block 0
@@ -14376,7 +13686,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 36
 y 22
 move_block 0
@@ -14384,7 +13693,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 36
 y 23
 move_block 0
@@ -14392,7 +13700,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 36
 y 23
 blocksview 0
@@ -14494,7 +13801,6 @@ y 45
 end
 arch blocked
 name nothing
-name_pl nothing
 x 36
 y 46
 move_block 0
@@ -14502,14 +13808,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 36
 y 46
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 36
 y 47
 move_block 0
@@ -14517,7 +13821,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 36
 y 48
 move_block 0
@@ -14525,7 +13828,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 36
 y 49
 move_block 0
@@ -14533,14 +13835,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 36
 y 49
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 36
 y 50
 move_block 0
@@ -14548,7 +13848,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 36
 y 50
 blocksview 0
@@ -14745,7 +14044,6 @@ y 19
 end
 arch blocked
 name nothing
-name_pl nothing
 x 37
 y 20
 move_block 0
@@ -14753,14 +14051,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 37
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 37
 y 21
 move_block 0
@@ -14768,7 +14064,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 37
 y 22
 move_block 0
@@ -14776,7 +14071,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 37
 y 23
 move_block 0
@@ -14784,7 +14078,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 37
 y 23
 blocksview 0
@@ -14883,7 +14176,6 @@ y 45
 end
 arch blocked
 name nothing
-name_pl nothing
 x 37
 y 46
 move_block 0
@@ -14891,14 +14183,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 37
 y 46
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 37
 y 47
 move_block 0
@@ -14906,7 +14196,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 37
 y 48
 move_block 0
@@ -14914,7 +14203,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 37
 y 49
 move_block 0
@@ -14922,7 +14210,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 37
 y 50
 move_block 0
@@ -14930,14 +14217,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 37
 y 50
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 37
 y 51
 move_block 0
@@ -14945,7 +14230,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 37
 y 51
 blocksview 0
@@ -15012,20 +14296,17 @@ y 63
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 move_block 0
 blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 38
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 1
 move_block 0
@@ -15033,14 +14314,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 38
 y 1
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 2
 move_block 0
@@ -15048,14 +14327,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 38
 y 2
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 3
 move_block 0
@@ -15063,7 +14340,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 38
 y 3
 blocksview 0
@@ -15186,7 +14462,6 @@ y 19
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 20
 move_block 0
@@ -15194,14 +14469,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 38
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 21
 move_block 0
@@ -15209,7 +14482,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 22
 move_block 0
@@ -15217,7 +14489,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 23
 move_block 0
@@ -15225,14 +14496,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 38
 y 23
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 24
 move_block 0
@@ -15240,7 +14509,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 38
 y 24
 blocksview 0
@@ -15335,7 +14603,6 @@ y 45
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 46
 move_block 0
@@ -15343,14 +14610,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 38
 y 46
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 47
 move_block 0
@@ -15358,14 +14623,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 38
 y 47
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 48
 move_block 0
@@ -15373,7 +14636,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 49
 move_block 0
@@ -15381,7 +14643,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 50
 move_block 0
@@ -15389,7 +14650,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 38
 y 51
 move_block 0
@@ -15397,7 +14657,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 38
 y 51
 blocksview 0
@@ -15476,7 +14735,6 @@ y 63
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 move_block 0
 blocksview 0
@@ -15486,7 +14744,6 @@ x 39
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 1
 move_block 0
@@ -15498,7 +14755,6 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 2
 move_block 0
@@ -15506,7 +14762,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 3
 move_block 0
@@ -15514,14 +14769,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 39
 y 3
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 4
 move_block 0
@@ -15529,14 +14782,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 4
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 5
 move_block 0
@@ -15544,14 +14795,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 5
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 6
 move_block 0
@@ -15559,14 +14808,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 6
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 7
 move_block 0
@@ -15574,7 +14821,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 39
 y 7
 blocksview 0
@@ -15677,7 +14923,6 @@ y 19
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 20
 move_block 0
@@ -15685,14 +14930,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 39
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 21
 move_block 0
@@ -15700,7 +14943,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 22
 move_block 0
@@ -15708,7 +14950,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 23
 move_block 0
@@ -15716,7 +14957,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 24
 move_block 0
@@ -15724,7 +14964,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 39
 y 24
 blocksview 0
@@ -15835,7 +15074,6 @@ y 46
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 47
 move_block 0
@@ -15843,14 +15081,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 39
 y 47
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 48
 move_block 0
@@ -15858,7 +15094,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 49
 move_block 0
@@ -15866,7 +15101,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 50
 move_block 0
@@ -15874,7 +15108,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 39
 y 51
 move_block 0
@@ -15882,7 +15115,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 39
 y 51
 blocksview 0
@@ -15965,7 +15197,6 @@ y 63
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 move_block 0
 blocksview 0
@@ -15975,7 +15206,6 @@ x 40
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 1
 move_block 0
@@ -15983,7 +15213,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 2
 move_block 0
@@ -15991,7 +15220,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 3
 move_block 0
@@ -15999,7 +15227,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 4
 move_block 0
@@ -16007,7 +15234,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 5
 move_block 0
@@ -16015,7 +15241,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 6
 move_block 0
@@ -16023,7 +15248,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 7
 move_block 0
@@ -16031,14 +15255,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 40
 y 7
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 8
 move_block 0
@@ -16046,14 +15268,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 40
 y 8
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 9
 move_block 0
@@ -16061,14 +15281,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 40
 y 9
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 10
 move_block 0
@@ -16076,14 +15294,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 40
 y 10
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 11
 move_block 0
@@ -16091,7 +15307,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 40
 y 11
 blocksview 0
@@ -16162,7 +15377,6 @@ y 19
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 20
 move_block 0
@@ -16170,7 +15384,6 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 40
 y 20
 blocksview 0
@@ -16181,7 +15394,6 @@ y 20
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 21
 move_block 0
@@ -16189,14 +15401,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 40
 y 21
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 22
 move_block 0
@@ -16204,7 +15414,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 23
 move_block 0
@@ -16212,7 +15421,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 24
 move_block 0
@@ -16220,7 +15428,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 40
 y 24
 blocksview 0
@@ -16343,7 +15550,6 @@ y 46
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 47
 move_block 0
@@ -16351,14 +15557,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 40
 y 47
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 48
 move_block 0
@@ -16366,7 +15570,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 49
 move_block 0
@@ -16374,7 +15577,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 50
 move_block 0
@@ -16382,7 +15584,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 51
 move_block 0
@@ -16390,7 +15591,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 40
 y 51
 blocksview 0
@@ -16449,7 +15649,6 @@ y 60
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 61
 move_block 0
@@ -16457,7 +15656,6 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 40
 y 61
 blocksview 0
@@ -16468,7 +15666,6 @@ y 61
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 62
 move_block 0
@@ -16476,14 +15673,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 40
 y 62
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 40
 y 63
 move_block 0
@@ -16491,27 +15686,23 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 40
 y 63
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 move_block 0
 blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 41
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 1
 move_block 0
@@ -16519,14 +15710,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 41
 y 1
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 2
 move_block 0
@@ -16534,7 +15723,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 3
 move_block 0
@@ -16542,7 +15730,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 4
 move_block 0
@@ -16550,7 +15737,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 5
 move_block 0
@@ -16558,7 +15744,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 6
 move_block 0
@@ -16566,7 +15751,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 7
 move_block 0
@@ -16574,7 +15758,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 8
 move_block 0
@@ -16582,7 +15765,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 9
 move_block 0
@@ -16590,7 +15772,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 10
 move_block 0
@@ -16598,7 +15779,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 11
 move_block 0
@@ -16606,14 +15786,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 41
 y 11
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 12
 move_block 0
@@ -16621,14 +15799,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 41
 y 12
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 13
 move_block 0
@@ -16636,14 +15812,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 41
 y 13
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 14
 move_block 0
@@ -16651,7 +15825,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 41
 y 14
 blocksview 0
@@ -16710,7 +15883,6 @@ y 20
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 21
 move_block 0
@@ -16718,14 +15890,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 41
 y 21
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 22
 move_block 0
@@ -16733,7 +15903,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 23
 move_block 0
@@ -16741,7 +15910,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 24
 move_block 0
@@ -16749,7 +15917,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 41
 y 24
 blocksview 0
@@ -16852,7 +16019,6 @@ y 46
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 47
 move_block 0
@@ -16860,14 +16026,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 41
 y 47
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 48
 move_block 0
@@ -16875,14 +16039,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 41
 y 48
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 49
 move_block 0
@@ -16890,7 +16052,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 50
 move_block 0
@@ -16898,7 +16059,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 51
 move_block 0
@@ -16906,7 +16066,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 41
 y 51
 blocksview 0
@@ -16929,7 +16088,6 @@ y 55
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 56
 move_block 0
@@ -16937,14 +16095,12 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 41
 y 56
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 57
 move_block 0
@@ -16952,14 +16108,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 41
 y 57
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 58
 move_block 0
@@ -16967,14 +16121,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 41
 y 58
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 59
 move_block 0
@@ -16982,14 +16134,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 41
 y 59
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 60
 move_block 0
@@ -16997,14 +16147,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 41
 y 60
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 61
 move_block 0
@@ -17012,14 +16160,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 41
 y 61
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 62
 move_block 0
@@ -17031,7 +16177,6 @@ y 62
 end
 arch blocked
 name nothing
-name_pl nothing
 x 41
 y 63
 move_block 0
@@ -17049,7 +16194,6 @@ x 42
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 1
 move_block 0
@@ -17057,7 +16201,6 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 42
 y 1
 blocksview 0
@@ -17068,7 +16211,6 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 2
 move_block 0
@@ -17076,14 +16218,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 42
 y 2
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 3
 move_block 0
@@ -17091,14 +16231,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 42
 y 3
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 4
 move_block 0
@@ -17106,14 +16244,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 42
 y 4
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 5
 move_block 0
@@ -17121,14 +16257,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 42
 y 5
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 6
 move_block 0
@@ -17136,7 +16270,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 7
 move_block 0
@@ -17144,7 +16277,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 8
 move_block 0
@@ -17152,7 +16284,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 9
 move_block 0
@@ -17160,7 +16291,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 10
 move_block 0
@@ -17168,7 +16298,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 11
 move_block 0
@@ -17176,7 +16305,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 12
 move_block 0
@@ -17184,7 +16312,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 13
 move_block 0
@@ -17192,7 +16319,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 14
 move_block 0
@@ -17200,14 +16326,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 42
 y 14
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 15
 move_block 0
@@ -17215,14 +16339,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 15
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 16
 move_block 0
@@ -17230,14 +16352,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 16
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 17
 move_block 0
@@ -17245,14 +16365,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 17
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 18
 move_block 0
@@ -17260,14 +16378,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 18
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 19
 move_block 0
@@ -17275,14 +16391,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 19
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 20
 move_block 0
@@ -17290,14 +16404,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 21
 move_block 0
@@ -17305,14 +16417,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 42
 y 21
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 22
 move_block 0
@@ -17320,7 +16430,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 23
 move_block 0
@@ -17328,7 +16437,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 24
 move_block 0
@@ -17336,14 +16444,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 42
 y 24
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 25
 move_block 0
@@ -17351,7 +16457,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 42
 y 25
 blocksview 0
@@ -17454,7 +16559,6 @@ y 47
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 48
 move_block 0
@@ -17462,14 +16566,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 42
 y 48
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 49
 move_block 0
@@ -17477,7 +16579,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 50
 move_block 0
@@ -17485,7 +16586,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 51
 move_block 0
@@ -17493,14 +16593,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 42
 y 51
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 52
 move_block 0
@@ -17508,14 +16606,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 52
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 53
 move_block 0
@@ -17523,14 +16619,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 53
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 54
 move_block 0
@@ -17538,14 +16632,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 54
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 55
 move_block 0
@@ -17553,14 +16645,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 55
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 56
 move_block 0
@@ -17568,14 +16658,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 42
 y 56
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 57
 move_block 0
@@ -17583,7 +16671,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 58
 move_block 0
@@ -17591,7 +16678,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 59
 move_block 0
@@ -17599,7 +16685,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 60
 move_block 0
@@ -17607,7 +16692,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 61
 move_block 0
@@ -17615,7 +16699,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 62
 move_block 0
@@ -17623,7 +16706,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 42
 y 63
 move_block 0
@@ -17670,7 +16752,6 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 5
 move_block 0
@@ -17678,7 +16759,6 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 43
 y 5
 blocksview 0
@@ -17689,7 +16769,6 @@ y 5
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 6
 move_block 0
@@ -17697,14 +16776,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 43
 y 6
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 7
 move_block 0
@@ -17712,14 +16789,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 43
 y 7
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 8
 move_block 0
@@ -17727,14 +16802,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 43
 y 8
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 9
 move_block 0
@@ -17742,14 +16815,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 43
 y 9
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 10
 move_block 0
@@ -17757,14 +16828,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 43
 y 10
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 11
 move_block 0
@@ -17772,14 +16841,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 43
 y 11
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 12
 move_block 0
@@ -17787,14 +16854,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 43
 y 12
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 13
 move_block 0
@@ -17802,7 +16867,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 14
 move_block 0
@@ -17810,7 +16874,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 15
 move_block 0
@@ -17818,7 +16881,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 16
 move_block 0
@@ -17826,7 +16888,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 17
 move_block 0
@@ -17834,7 +16895,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 18
 move_block 0
@@ -17842,7 +16902,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 19
 move_block 0
@@ -17850,7 +16909,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 20
 move_block 0
@@ -17858,7 +16916,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 21
 move_block 0
@@ -17866,7 +16923,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 22
 move_block 0
@@ -17874,7 +16930,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 23
 move_block 0
@@ -17882,7 +16937,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 24
 move_block 0
@@ -17890,7 +16944,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 25
 move_block 0
@@ -17898,14 +16951,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 43
 y 25
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 26
 move_block 0
@@ -17913,14 +16964,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 43
 y 26
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 27
 move_block 0
@@ -17928,14 +16977,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 43
 y 27
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 28
 move_block 0
@@ -17943,14 +16990,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 43
 y 28
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 29
 move_block 0
@@ -17958,14 +17003,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 43
 y 29
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 30
 move_block 0
@@ -17973,7 +17016,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 43
 y 30
 blocksview 0
@@ -18048,7 +17090,6 @@ y 46
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 47
 move_block 0
@@ -18056,14 +17097,12 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 43
 y 47
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 48
 move_block 0
@@ -18071,14 +17110,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 43
 y 48
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 49
 move_block 0
@@ -18086,7 +17123,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 50
 move_block 0
@@ -18094,7 +17130,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 51
 move_block 0
@@ -18102,7 +17137,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 52
 move_block 0
@@ -18110,7 +17144,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 53
 move_block 0
@@ -18118,7 +17151,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 54
 move_block 0
@@ -18126,7 +17158,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 55
 move_block 0
@@ -18134,7 +17165,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 56
 move_block 0
@@ -18142,7 +17172,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 57
 move_block 0
@@ -18150,7 +17179,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 58
 move_block 0
@@ -18158,7 +17186,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 59
 move_block 0
@@ -18166,7 +17193,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 60
 move_block 0
@@ -18174,7 +17200,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 61
 move_block 0
@@ -18182,7 +17207,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 62
 move_block 0
@@ -18190,7 +17214,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 43
 y 63
 move_block 0
@@ -18277,7 +17300,6 @@ y 11
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 12
 move_block 0
@@ -18285,7 +17307,6 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 44
 y 12
 blocksview 0
@@ -18296,7 +17317,6 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 13
 move_block 0
@@ -18304,14 +17324,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 44
 y 13
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 14
 move_block 0
@@ -18319,14 +17337,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 44
 y 14
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 15
 move_block 0
@@ -18334,14 +17350,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 44
 y 15
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 16
 move_block 0
@@ -18349,14 +17363,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 44
 y 16
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 17
 move_block 0
@@ -18364,14 +17376,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 44
 y 17
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 18
 move_block 0
@@ -18379,7 +17389,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 19
 move_block 0
@@ -18387,7 +17396,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 20
 move_block 0
@@ -18395,7 +17403,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 21
 move_block 0
@@ -18403,7 +17410,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 22
 move_block 0
@@ -18411,7 +17417,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 23
 move_block 0
@@ -18419,7 +17424,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 24
 move_block 0
@@ -18427,7 +17431,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 25
 move_block 0
@@ -18435,7 +17438,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 26
 move_block 0
@@ -18443,7 +17445,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 27
 move_block 0
@@ -18451,7 +17452,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 28
 move_block 0
@@ -18459,7 +17459,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 29
 move_block 0
@@ -18467,7 +17466,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 30
 move_block 0
@@ -18475,14 +17473,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 44
 y 30
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 31
 move_block 0
@@ -18490,14 +17486,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 44
 y 31
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 32
 move_block 0
@@ -18505,14 +17499,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 44
 y 32
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 33
 move_block 0
@@ -18520,7 +17512,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 44
 y 33
 blocksview 0
@@ -18567,7 +17558,6 @@ y 43
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 44
 move_block 0
@@ -18575,14 +17565,12 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 44
 y 44
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 45
 move_block 0
@@ -18590,14 +17578,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 44
 y 45
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 46
 move_block 0
@@ -18605,14 +17591,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 44
 y 46
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 47
 move_block 0
@@ -18620,14 +17604,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 44
 y 47
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 48
 move_block 0
@@ -18635,7 +17617,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 49
 move_block 0
@@ -18643,7 +17624,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 50
 move_block 0
@@ -18651,7 +17631,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 51
 move_block 0
@@ -18659,7 +17638,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 52
 move_block 0
@@ -18667,7 +17645,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 53
 move_block 0
@@ -18675,7 +17652,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 54
 move_block 0
@@ -18683,7 +17659,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 55
 move_block 0
@@ -18691,7 +17666,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 56
 move_block 0
@@ -18699,7 +17673,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 57
 move_block 0
@@ -18707,7 +17680,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 58
 move_block 0
@@ -18715,14 +17687,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 44
 y 58
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 59
 move_block 0
@@ -18730,14 +17700,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 44
 y 59
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 60
 move_block 0
@@ -18745,14 +17713,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 44
 y 60
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 61
 move_block 0
@@ -18760,14 +17726,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 44
 y 61
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 62
 move_block 0
@@ -18775,14 +17739,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 44
 y 62
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 44
 y 63
 move_block 0
@@ -18790,7 +17752,6 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 44
 y 63
 blocksview 0
@@ -18884,7 +17845,6 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 17
 move_block 0
@@ -18892,7 +17852,6 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 45
 y 17
 blocksview 0
@@ -18903,7 +17862,6 @@ y 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 18
 move_block 0
@@ -18911,14 +17869,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 45
 y 18
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 19
 move_block 0
@@ -18926,14 +17882,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 45
 y 19
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 20
 move_block 0
@@ -18941,14 +17895,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 45
 y 20
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 21
 move_block 0
@@ -18956,14 +17908,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 45
 y 21
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 22
 move_block 0
@@ -18971,7 +17921,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 23
 move_block 0
@@ -18979,7 +17928,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 24
 move_block 0
@@ -18987,7 +17935,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 25
 move_block 0
@@ -18995,7 +17942,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 26
 move_block 0
@@ -19003,7 +17949,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 27
 move_block 0
@@ -19011,7 +17956,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 28
 move_block 0
@@ -19019,7 +17963,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 29
 move_block 0
@@ -19027,7 +17970,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 30
 move_block 0
@@ -19035,7 +17977,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 31
 move_block 0
@@ -19043,7 +17984,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 32
 move_block 0
@@ -19051,7 +17991,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 33
 move_block 0
@@ -19059,14 +17998,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 45
 y 33
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 34
 move_block 0
@@ -19074,14 +18011,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 45
 y 34
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 35
 move_block 0
@@ -19089,14 +18024,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 45
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 36
 move_block 0
@@ -19104,14 +18037,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 45
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 37
 move_block 0
@@ -19119,14 +18050,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 45
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 38
 move_block 0
@@ -19134,14 +18063,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 45
 y 38
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 39
 move_block 0
@@ -19149,14 +18076,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 45
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 40
 move_block 0
@@ -19164,14 +18089,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 45
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 41
 move_block 0
@@ -19179,14 +18102,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 45
 y 41
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 42
 move_block 0
@@ -19194,14 +18115,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 45
 y 42
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 43
 move_block 0
@@ -19209,14 +18128,12 @@ blocksview 0
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 45
 y 43
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 44
 move_block 0
@@ -19224,14 +18141,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 45
 y 44
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 45
 move_block 0
@@ -19239,7 +18154,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 46
 move_block 0
@@ -19247,7 +18161,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 47
 move_block 0
@@ -19255,7 +18168,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 48
 move_block 0
@@ -19263,7 +18175,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 49
 move_block 0
@@ -19271,7 +18182,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 50
 move_block 0
@@ -19279,7 +18189,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 51
 move_block 0
@@ -19287,7 +18196,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 52
 move_block 0
@@ -19295,7 +18203,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 53
 move_block 0
@@ -19303,7 +18210,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 54
 move_block 0
@@ -19311,14 +18217,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 45
 y 54
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 55
 move_block 0
@@ -19326,14 +18230,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 45
 y 55
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 56
 move_block 0
@@ -19341,14 +18243,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 45
 y 56
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 57
 move_block 0
@@ -19356,14 +18256,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 45
 y 57
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 45
 y 58
 move_block 0
@@ -19371,7 +18269,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 45
 y 58
 blocksview 0
@@ -19521,7 +18418,6 @@ y 20
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 21
 move_block 0
@@ -19529,7 +18425,6 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 46
 y 21
 blocksview 0
@@ -19540,7 +18435,6 @@ y 21
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 22
 move_block 0
@@ -19548,14 +18442,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 22
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 23
 move_block 0
@@ -19563,14 +18455,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 23
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 24
 move_block 0
@@ -19578,14 +18468,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 24
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 25
 move_block 0
@@ -19593,14 +18481,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 25
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 26
 move_block 0
@@ -19608,14 +18494,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 26
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 27
 move_block 0
@@ -19623,14 +18507,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 27
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 28
 move_block 0
@@ -19638,14 +18520,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 46
 y 28
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 29
 move_block 0
@@ -19653,7 +18533,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 30
 move_block 0
@@ -19661,7 +18540,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 31
 move_block 0
@@ -19669,7 +18547,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 32
 move_block 0
@@ -19677,7 +18554,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 33
 move_block 0
@@ -19685,7 +18561,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 34
 move_block 0
@@ -19693,7 +18568,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 35
 move_block 0
@@ -19701,7 +18575,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 36
 move_block 0
@@ -19709,7 +18582,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 37
 move_block 0
@@ -19717,7 +18589,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 38
 move_block 0
@@ -19725,7 +18596,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 39
 move_block 0
@@ -19733,7 +18603,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 40
 move_block 0
@@ -19741,7 +18610,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 41
 move_block 0
@@ -19749,7 +18617,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 42
 move_block 0
@@ -19757,7 +18624,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 43
 move_block 0
@@ -19765,7 +18631,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 44
 move_block 0
@@ -19773,7 +18638,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 45
 move_block 0
@@ -19781,7 +18645,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 46
 move_block 0
@@ -19789,7 +18652,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 47
 move_block 0
@@ -19797,7 +18659,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 48
 move_block 0
@@ -19805,7 +18666,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 49
 move_block 0
@@ -19813,14 +18673,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 46
 y 49
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 50
 move_block 0
@@ -19828,14 +18686,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 50
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 51
 move_block 0
@@ -19843,14 +18699,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 51
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 52
 move_block 0
@@ -19858,14 +18712,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 52
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 53
 move_block 0
@@ -19873,14 +18725,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 53
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 46
 y 54
 move_block 0
@@ -19888,7 +18738,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 46
 y 54
 blocksview 0
@@ -20050,7 +18899,6 @@ y 27
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 28
 move_block 0
@@ -20058,14 +18906,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 47
 y 28
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 29
 move_block 0
@@ -20073,14 +18919,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 47
 y 29
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 30
 move_block 0
@@ -20088,14 +18932,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 47
 y 30
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 31
 move_block 0
@@ -20103,14 +18945,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 47
 y 31
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 32
 move_block 0
@@ -20118,14 +18958,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 47
 y 32
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 33
 move_block 0
@@ -20133,7 +18971,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 34
 move_block 0
@@ -20141,7 +18978,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 35
 move_block 0
@@ -20149,7 +18985,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 36
 move_block 0
@@ -20157,7 +18992,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 37
 move_block 0
@@ -20165,7 +18999,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 38
 move_block 0
@@ -20173,7 +19006,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 39
 move_block 0
@@ -20181,7 +19013,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 40
 move_block 0
@@ -20189,7 +19020,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 41
 move_block 0
@@ -20197,7 +19027,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 42
 move_block 0
@@ -20205,7 +19034,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 43
 move_block 0
@@ -20213,7 +19041,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 44
 move_block 0
@@ -20221,14 +19048,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 47
 y 44
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 45
 move_block 0
@@ -20236,14 +19061,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 47
 y 45
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 46
 move_block 0
@@ -20251,14 +19074,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 47
 y 46
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 47
 move_block 0
@@ -20266,14 +19087,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 47
 y 47
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 48
 move_block 0
@@ -20281,14 +19100,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 47
 y 48
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 47
 y 49
 move_block 0
@@ -20296,7 +19113,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 47
 y 49
 blocksview 0
@@ -20502,7 +19318,6 @@ y 31
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 32
 move_block 0
@@ -20510,14 +19325,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 48
 y 32
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 33
 move_block 0
@@ -20525,14 +19338,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 48
 y 33
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 34
 move_block 0
@@ -20540,14 +19351,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 48
 y 34
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 35
 move_block 0
@@ -20555,14 +19364,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 48
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 36
 move_block 0
@@ -20570,14 +19377,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 48
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 37
 move_block 0
@@ -20585,7 +19390,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 38
 move_block 0
@@ -20593,7 +19397,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 39
 move_block 0
@@ -20601,7 +19404,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 40
 move_block 0
@@ -20609,14 +19411,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 48
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 41
 move_block 0
@@ -20624,14 +19424,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 48
 y 41
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 42
 move_block 0
@@ -20639,14 +19437,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 48
 y 42
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 43
 move_block 0
@@ -20654,14 +19450,12 @@ blocksview 0
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 48
 y 43
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 48
 y 44
 move_block 0
@@ -20669,7 +19463,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 48
 y 44
 blocksview 0
@@ -20943,7 +19736,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 49
 y 36
 move_block 0
@@ -20951,14 +19743,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 49
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 49
 y 37
 move_block 0
@@ -20966,7 +19756,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 49
 y 38
 move_block 0
@@ -20974,7 +19763,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 49
 y 39
 move_block 0
@@ -20982,7 +19770,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 49
 y 40
 move_block 0
@@ -20990,7 +19777,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 49
 y 40
 blocksview 0
@@ -21280,7 +20066,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 50
 y 36
 move_block 0
@@ -21288,14 +20073,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 50
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 50
 y 37
 move_block 0
@@ -21303,7 +20086,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 50
 y 38
 move_block 0
@@ -21311,7 +20093,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 50
 y 39
 move_block 0
@@ -21319,14 +20100,12 @@ blocksview 0
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 50
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 50
 y 40
 move_block 0
@@ -21334,7 +20113,6 @@ blocksview 0
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 50
 y 40
 blocksview 0
@@ -21624,7 +20402,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 51
 y 36
 move_block 0
@@ -21632,14 +20409,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 51
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 51
 y 37
 move_block 0
@@ -21647,7 +20422,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 51
 y 38
 move_block 0
@@ -21655,7 +20429,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 51
 y 39
 move_block 0
@@ -21663,7 +20436,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 51
 y 39
 blocksview 0
@@ -21933,7 +20705,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 52
 y 35
 move_block 0
@@ -21941,14 +20712,12 @@ blocksview 0
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 52
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 52
 y 36
 move_block 0
@@ -21956,14 +20725,12 @@ blocksview 0
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 52
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 52
 y 37
 move_block 0
@@ -21971,7 +20738,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 52
 y 38
 move_block 0
@@ -21979,7 +20745,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 52
 y 39
 move_block 0
@@ -21987,7 +20752,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 52
 y 39
 blocksview 0
@@ -22289,7 +21053,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 53
 y 35
 move_block 0
@@ -22297,14 +21060,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 53
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 53
 y 36
 move_block 0
@@ -22312,7 +21073,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 53
 y 37
 move_block 0
@@ -22320,7 +21080,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 53
 y 38
 move_block 0
@@ -22328,7 +21087,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 53
 y 39
 move_block 0
@@ -22336,7 +21094,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 53
 y 39
 blocksview 0
@@ -22638,7 +21395,6 @@ y 34
 end
 arch blocked
 name nothing
-name_pl nothing
 x 54
 y 35
 move_block 0
@@ -22646,14 +21402,12 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 54
 y 35
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 54
 y 36
 move_block 0
@@ -22661,14 +21415,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 54
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 54
 y 37
 move_block 0
@@ -22676,7 +21428,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 54
 y 38
 move_block 0
@@ -22684,7 +21435,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 54
 y 39
 move_block 0
@@ -22692,7 +21442,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 54
 y 39
 blocksview 0
@@ -23006,7 +21755,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 55
 y 36
 move_block 0
@@ -23014,14 +21762,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 55
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 55
 y 37
 move_block 0
@@ -23029,7 +21775,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 55
 y 38
 move_block 0
@@ -23037,7 +21782,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 55
 y 39
 move_block 0
@@ -23045,7 +21789,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 55
 y 39
 blocksview 0
@@ -23359,7 +22102,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 56
 y 36
 move_block 0
@@ -23367,14 +22109,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 56
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 56
 y 37
 move_block 0
@@ -23382,7 +22122,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 56
 y 38
 move_block 0
@@ -23390,7 +22129,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 56
 y 39
 move_block 0
@@ -23398,7 +22136,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 56
 y 39
 blocksview 0
@@ -23704,7 +22441,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 57
 y 36
 move_block 0
@@ -23712,14 +22448,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 57
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 57
 y 37
 move_block 0
@@ -23727,7 +22461,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 57
 y 38
 move_block 0
@@ -23735,7 +22468,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 57
 y 39
 move_block 0
@@ -23743,14 +22475,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 57
 y 39
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 57
 y 40
 move_block 0
@@ -23758,7 +22488,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 57
 y 40
 blocksview 0
@@ -24056,7 +22785,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 58
 y 36
 move_block 0
@@ -24064,14 +22792,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 58
 y 36
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 58
 y 37
 move_block 0
@@ -24079,7 +22805,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 58
 y 38
 move_block 0
@@ -24087,7 +22812,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 58
 y 39
 move_block 0
@@ -24095,7 +22819,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 58
 y 40
 move_block 0
@@ -24103,7 +22826,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 58
 y 40
 blocksview 0
@@ -24405,7 +23127,6 @@ y 35
 end
 arch blocked
 name nothing
-name_pl nothing
 x 59
 y 36
 move_block 0
@@ -24413,7 +23134,6 @@ blocksview 0
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 59
 y 36
 blocksview 0
@@ -24424,7 +23144,6 @@ y 36
 end
 arch blocked
 name nothing
-name_pl nothing
 x 59
 y 37
 move_block 0
@@ -24432,14 +23151,12 @@ blocksview 0
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 59
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 59
 y 38
 move_block 0
@@ -24447,7 +23164,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 59
 y 39
 move_block 0
@@ -24455,7 +23171,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 59
 y 40
 move_block 0
@@ -24463,7 +23178,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 59
 y 40
 blocksview 0
@@ -24793,7 +23507,6 @@ y 36
 end
 arch blocked
 name nothing
-name_pl nothing
 x 60
 y 37
 move_block 0
@@ -24801,14 +23514,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 60
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 60
 y 38
 move_block 0
@@ -24816,7 +23527,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 60
 y 39
 move_block 0
@@ -24824,7 +23534,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 60
 y 40
 move_block 0
@@ -24832,14 +23541,12 @@ blocksview 0
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 60
 y 40
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 60
 y 41
 move_block 0
@@ -24847,7 +23554,6 @@ blocksview 0
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 60
 y 41
 blocksview 0
@@ -25189,7 +23895,6 @@ y 36
 end
 arch blocked
 name nothing
-name_pl nothing
 x 61
 y 37
 move_block 0
@@ -25197,14 +23902,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 61
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 61
 y 38
 move_block 0
@@ -25212,7 +23915,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 61
 y 39
 move_block 0
@@ -25220,7 +23922,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 61
 y 40
 move_block 0
@@ -25232,7 +23933,6 @@ y 40
 end
 arch blocked
 name nothing
-name_pl nothing
 x 61
 y 41
 move_block 0
@@ -25240,7 +23940,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 61
 y 41
 blocksview 0
@@ -25562,7 +24261,6 @@ y 36
 end
 arch blocked
 name nothing
-name_pl nothing
 x 62
 y 37
 move_block 0
@@ -25570,14 +24268,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 62
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 62
 y 38
 move_block 0
@@ -25585,7 +24281,6 @@ blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 62
 y 39
 move_block 0
@@ -25597,7 +24292,6 @@ y 39
 end
 arch blocked
 name nothing
-name_pl nothing
 x 62
 y 40
 move_block 0
@@ -25609,7 +24303,6 @@ y 40
 end
 arch blocked
 name nothing
-name_pl nothing
 x 62
 y 41
 move_block 0
@@ -25617,7 +24310,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 62
 y 41
 blocksview 0
@@ -25911,7 +24603,6 @@ y 36
 end
 arch blocked
 name nothing
-name_pl nothing
 x 63
 y 37
 move_block 0
@@ -25919,14 +24610,12 @@ blocksview 0
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 63
 y 37
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 63
 y 38
 move_block 0
@@ -25938,7 +24627,6 @@ y 38
 end
 arch blocked
 name nothing
-name_pl nothing
 x 63
 y 39
 move_block 0
@@ -25950,7 +24638,6 @@ y 39
 end
 arch blocked
 name nothing
-name_pl nothing
 x 63
 y 40
 move_block 0
@@ -25962,7 +24649,6 @@ y 40
 end
 arch blocked
 name nothing
-name_pl nothing
 x 63
 y 41
 move_block 0
@@ -25970,7 +24656,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 63
 y 41
 blocksview 0
