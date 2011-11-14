@@ -121,11 +121,11 @@ arch istone
 x 2
 y 8
 end
-arch swall_1_1
+arch cwall_1_2
 x 2
 y 8
 end
-arch cwall_1_2
+arch swall_1_1_half
 x 2
 y 8
 end
@@ -141,7 +141,7 @@ arch istone
 x 2
 y 10
 end
-arch swall_1_2
+arch swall_1_2_half
 x 2
 y 10
 end
@@ -1503,7 +1503,7 @@ arch istone
 x 8
 y 2
 end
-arch swall_1_4
+arch swall_1_4_half
 x 8
 y 2
 end
@@ -1609,6 +1609,10 @@ arch cwall_1_3
 x 8
 y 16
 end
+arch swall_1_1_half
+x 8
+y 16
+end
 arch flagstone
 x 8
 y 17
@@ -1621,7 +1625,7 @@ arch snow5
 x 8
 y 17
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 17
 end
@@ -1637,7 +1641,7 @@ arch snow5
 x 8
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 18
 end
@@ -1646,6 +1650,10 @@ x 8
 y 19
 end
 arch slevel_3_2
+x 8
+y 19
+end
+arch swall_1_2_half
 x 8
 y 19
 end
@@ -1665,6 +1673,10 @@ arch cwall_1_2
 x 8
 y 20
 end
+arch swall_1_1_half
+x 8
+y 20
+end
 arch flagstone
 x 8
 y 21
@@ -1677,7 +1689,7 @@ arch snow5
 x 8
 y 21
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 21
 end
@@ -1693,7 +1705,7 @@ arch snow5
 x 8
 y 22
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 22
 end
@@ -1702,6 +1714,10 @@ x 8
 y 23
 end
 arch slevel_3_2
+x 8
+y 23
+end
+arch swall_1_2_half
 x 8
 y 23
 end
@@ -1721,6 +1737,10 @@ arch cwall_1_2
 x 8
 y 24
 end
+arch swall_1_1_half
+x 8
+y 24
+end
 arch flagstone
 x 8
 y 25
@@ -1733,7 +1753,7 @@ arch snow5
 x 8
 y 25
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 25
 end
@@ -1749,7 +1769,7 @@ arch snow5
 x 8
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 26
 end
@@ -1758,6 +1778,10 @@ x 8
 y 27
 end
 arch slevel_3_2
+x 8
+y 27
+end
+arch swall_1_2_half
 x 8
 y 27
 end
@@ -1777,6 +1801,10 @@ arch cwall_1_2
 x 8
 y 28
 end
+arch swall_1_1_half
+x 8
+y 28
+end
 arch flagstone
 x 8
 y 29
@@ -1789,7 +1817,7 @@ arch snow5
 x 8
 y 29
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 29
 end
@@ -1805,7 +1833,7 @@ arch snow5
 x 8
 y 30
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 30
 end
@@ -1814,6 +1842,10 @@ x 8
 y 31
 end
 arch slevel_3_2
+x 8
+y 31
+end
+arch swall_1_2_half
 x 8
 y 31
 end
@@ -1833,6 +1865,10 @@ arch cwall_1_2
 x 8
 y 32
 end
+arch swall_1_1_half
+x 8
+y 32
+end
 arch flagstone
 x 8
 y 33
@@ -1845,7 +1881,7 @@ arch snow5
 x 8
 y 33
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 33
 end
@@ -1861,7 +1897,7 @@ arch snow5
 x 8
 y 34
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 34
 end
@@ -1870,6 +1906,10 @@ x 8
 y 35
 end
 arch slevel_3_2
+x 8
+y 35
+end
+arch swall_1_2_half
 x 8
 y 35
 end
@@ -1889,6 +1929,10 @@ arch cwall_1_2
 x 8
 y 36
 end
+arch swall_1_1_half
+x 8
+y 36
+end
 arch flagstone
 x 8
 y 37
@@ -1901,7 +1945,7 @@ arch snow5
 x 8
 y 37
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 37
 end
@@ -1917,7 +1961,7 @@ arch snow5
 x 8
 y 38
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 38
 end
@@ -1926,6 +1970,10 @@ x 8
 y 39
 end
 arch slevel_3_2
+x 8
+y 39
+end
+arch swall_1_2_half
 x 8
 y 39
 end
@@ -1945,6 +1993,10 @@ arch cwall_1_2
 x 8
 y 40
 end
+arch swall_1_1_half
+x 8
+y 40
+end
 arch flagstone
 x 8
 y 41
@@ -1957,7 +2009,7 @@ arch snow5
 x 8
 y 41
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 41
 end
@@ -1973,7 +2025,7 @@ arch snow5
 x 8
 y 42
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 42
 end
@@ -1982,6 +2034,10 @@ x 8
 y 43
 end
 arch slevel_3_2
+x 8
+y 43
+end
+arch swall_1_2_half
 x 8
 y 43
 end
@@ -2001,6 +2057,10 @@ arch cwall_1_2
 x 8
 y 44
 end
+arch swall_1_1_half
+x 8
+y 44
+end
 arch flagstone
 x 8
 y 45
@@ -2013,7 +2073,7 @@ arch snow5
 x 8
 y 45
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 45
 end
@@ -2029,11 +2089,15 @@ arch snow5
 x 8
 y 46
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 46
 end
 arch istone
+x 8
+y 47
+end
+arch swall_1_2_half
 x 8
 y 47
 end
@@ -2150,7 +2214,7 @@ arch istone
 x 8
 y 61
 end
-arch swall_1_4
+arch swall_1_4_half
 x 8
 y 61
 end
@@ -2675,7 +2739,7 @@ arch istone
 x 10
 y 2
 end
-arch swall_1_3
+arch swall_1_3_half
 x 10
 y 2
 end
@@ -3138,7 +3202,7 @@ arch istone
 x 10
 y 61
 end
-arch swall_1_3
+arch swall_1_3_half
 x 10
 y 61
 end
@@ -3257,6 +3321,10 @@ arch cwall_1_2
 x 11
 y 16
 end
+arch swall_1_1_half
+x 11
+y 16
+end
 arch flagstone
 x 11
 y 17
@@ -3269,7 +3337,7 @@ arch snow5
 x 11
 y 17
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 17
 end
@@ -3285,7 +3353,7 @@ arch snow5
 x 11
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 11
 y 18
 end
@@ -3294,6 +3362,10 @@ x 11
 y 19
 end
 arch slevel_3_4
+x 11
+y 19
+end
+arch swall_1_2_half
 x 11
 y 19
 end
@@ -3313,6 +3385,10 @@ arch cwall_1_2
 x 11
 y 20
 end
+arch swall_1_1_half
+x 11
+y 20
+end
 arch flagstone
 x 11
 y 21
@@ -3325,7 +3401,7 @@ arch snow5
 x 11
 y 21
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 21
 end
@@ -3341,7 +3417,7 @@ arch snow5
 x 11
 y 22
 end
-arch swall_1_2
+arch swall_2_1_1
 x 11
 y 22
 end
@@ -3350,6 +3426,10 @@ x 11
 y 23
 end
 arch slevel_3_4
+x 11
+y 23
+end
+arch swall_1_2_half
 x 11
 y 23
 end
@@ -3369,6 +3449,10 @@ arch cwall_1_2
 x 11
 y 24
 end
+arch swall_1_1_half
+x 11
+y 24
+end
 arch flagstone
 x 11
 y 25
@@ -3381,7 +3465,7 @@ arch snow5
 x 11
 y 25
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 25
 end
@@ -3397,7 +3481,7 @@ arch snow5
 x 11
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 11
 y 26
 end
@@ -3406,6 +3490,10 @@ x 11
 y 27
 end
 arch slevel_3_4
+x 11
+y 27
+end
+arch swall_1_2_half
 x 11
 y 27
 end
@@ -3425,6 +3513,10 @@ arch cwall_1_2
 x 11
 y 28
 end
+arch swall_1_1_half
+x 11
+y 28
+end
 arch flagstone
 x 11
 y 29
@@ -3437,7 +3529,7 @@ arch snow5
 x 11
 y 29
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 29
 end
@@ -3453,7 +3545,7 @@ arch snow5
 x 11
 y 30
 end
-arch swall_1_2
+arch swall_2_1_1
 x 11
 y 30
 end
@@ -3462,6 +3554,10 @@ x 11
 y 31
 end
 arch slevel_3_4
+x 11
+y 31
+end
+arch swall_1_2_half
 x 11
 y 31
 end
@@ -3481,6 +3577,10 @@ arch cwall_1_2
 x 11
 y 32
 end
+arch swall_1_1_half
+x 11
+y 32
+end
 arch flagstone
 x 11
 y 33
@@ -3493,7 +3593,7 @@ arch snow5
 x 11
 y 33
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 33
 end
@@ -3509,7 +3609,7 @@ arch snow5
 x 11
 y 34
 end
-arch swall_1_2
+arch swall_2_1_1
 x 11
 y 34
 end
@@ -3518,6 +3618,10 @@ x 11
 y 35
 end
 arch slevel_3_4
+x 11
+y 35
+end
+arch swall_1_2_half
 x 11
 y 35
 end
@@ -3537,6 +3641,10 @@ arch cwall_1_2
 x 11
 y 36
 end
+arch swall_1_1_half
+x 11
+y 36
+end
 arch flagstone
 x 11
 y 37
@@ -3549,7 +3657,7 @@ arch snow5
 x 11
 y 37
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 37
 end
@@ -3565,7 +3673,7 @@ arch snow5
 x 11
 y 38
 end
-arch swall_1_2
+arch swall_2_1_1
 x 11
 y 38
 end
@@ -3574,6 +3682,10 @@ x 11
 y 39
 end
 arch slevel_3_4
+x 11
+y 39
+end
+arch swall_1_2_half
 x 11
 y 39
 end
@@ -3593,6 +3705,10 @@ arch cwall_1_2
 x 11
 y 40
 end
+arch swall_1_1_half
+x 11
+y 40
+end
 arch flagstone
 x 11
 y 41
@@ -3605,7 +3721,7 @@ arch snow5
 x 11
 y 41
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 41
 end
@@ -3621,7 +3737,7 @@ arch snow5
 x 11
 y 42
 end
-arch swall_1_2
+arch swall_2_1_1
 x 11
 y 42
 end
@@ -3630,6 +3746,10 @@ x 11
 y 43
 end
 arch slevel_3_4
+x 11
+y 43
+end
+arch swall_1_2_half
 x 11
 y 43
 end
@@ -3649,6 +3769,10 @@ arch cwall_1_2
 x 11
 y 44
 end
+arch swall_1_1_half
+x 11
+y 44
+end
 arch flagstone
 x 11
 y 45
@@ -3661,7 +3785,7 @@ arch snow5
 x 11
 y 45
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 45
 end
@@ -3677,11 +3801,15 @@ arch snow5
 x 11
 y 46
 end
-arch swall_1_2
+arch swall_2_1_1
 x 11
 y 46
 end
 arch istone
+x 11
+y 47
+end
+arch swall_1_2_half
 x 11
 y 47
 end
@@ -4751,6 +4879,10 @@ arch istone
 x 16
 y 8
 end
+arch swall_1_4_half
+x 16
+y 8
+end
 arch cwall_1_2
 x 16
 y 8
@@ -4774,6 +4906,10 @@ y 10
 move_block 0
 end
 arch istone
+x 16
+y 11
+end
+arch swall_1_4_half
 x 16
 y 11
 end
@@ -4809,6 +4945,10 @@ arch istone
 x 16
 y 52
 end
+arch swall_1_4_half
+x 16
+y 52
+end
 arch cwall_1_3
 x 16
 y 52
@@ -4834,6 +4974,10 @@ speed 0.500000
 connected 2
 end
 arch istone
+x 16
+y 55
+end
+arch swall_1_4_half
 x 16
 y 55
 end
@@ -4881,7 +5025,7 @@ arch snow5
 x 17
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 17
 y 8
 end
@@ -4913,7 +5057,7 @@ arch snow5
 x 17
 y 11
 end
-arch swall_1_4
+arch swall_2_1_2
 x 17
 y 11
 end
@@ -4941,7 +5085,7 @@ arch snow5
 x 17
 y 52
 end
-arch swall_1_4
+arch swall_2_1_2
 x 17
 y 52
 end
@@ -4973,7 +5117,7 @@ arch snow5
 x 17
 y 55
 end
-arch swall_1_4
+arch swall_2_1_2
 x 17
 y 55
 end
@@ -5005,7 +5149,7 @@ arch snow5
 x 18
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 18
 y 8
 end
@@ -5037,7 +5181,7 @@ arch snow5
 x 18
 y 11
 end
-arch swall_1_3
+arch swall_2_1_2
 x 18
 y 11
 end
@@ -5061,7 +5205,7 @@ arch snow5
 x 18
 y 52
 end
-arch swall_1_3
+arch swall_2_1_2
 x 18
 y 52
 end
@@ -5093,7 +5237,7 @@ arch snow5
 x 18
 y 55
 end
-arch swall_1_3
+arch swall_2_1_2
 x 18
 y 55
 end
@@ -5110,6 +5254,10 @@ x 19
 y 8
 end
 arch slevel_3_3
+x 19
+y 8
+end
+arch swall_1_3_half
 x 19
 y 8
 end
@@ -5138,6 +5286,10 @@ x 19
 y 11
 end
 arch slevel_3_1
+x 19
+y 11
+end
+arch swall_1_3_half
 x 19
 y 11
 end
@@ -5165,6 +5317,10 @@ arch slevel_3_3
 x 19
 y 52
 end
+arch swall_1_3_half
+x 19
+y 52
+end
 arch cwall_1_4
 x 19
 y 52
@@ -5193,6 +5349,10 @@ arch slevel_3_1
 x 19
 y 55
 end
+arch swall_1_3_half
+x 19
+y 55
+end
 arch cwall_1_4
 x 19
 y 55
@@ -5210,6 +5370,10 @@ x 20
 y 8
 end
 arch slevel_3_3
+x 20
+y 8
+end
+arch swall_1_4_half
 x 20
 y 8
 end
@@ -5238,6 +5402,10 @@ x 20
 y 11
 end
 arch slevel_3_1
+x 20
+y 11
+end
+arch swall_1_4_half
 x 20
 y 11
 end
@@ -5269,6 +5437,10 @@ arch slevel_3_3
 x 20
 y 52
 end
+arch swall_1_4_half
+x 20
+y 52
+end
 arch cwall_1_3
 x 20
 y 52
@@ -5297,6 +5469,10 @@ arch slevel_3_1
 x 20
 y 55
 end
+arch swall_1_4_half
+x 20
+y 55
+end
 arch cwall_1_3
 x 20
 y 55
@@ -5321,7 +5497,7 @@ arch snow5
 x 21
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 21
 y 8
 end
@@ -5353,7 +5529,7 @@ arch snow5
 x 21
 y 11
 end
-arch swall_1_4
+arch swall_2_1_2
 x 21
 y 11
 end
@@ -5381,7 +5557,7 @@ arch snow5
 x 21
 y 52
 end
-arch swall_1_4
+arch swall_2_1_2
 x 21
 y 52
 end
@@ -5413,7 +5589,7 @@ arch snow5
 x 21
 y 55
 end
-arch swall_1_4
+arch swall_2_1_2
 x 21
 y 55
 end
@@ -5441,7 +5617,7 @@ arch snow5
 x 22
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 22
 y 8
 end
@@ -5473,7 +5649,7 @@ arch snow5
 x 22
 y 11
 end
-arch swall_1_3
+arch swall_2_1_2
 x 22
 y 11
 end
@@ -5497,7 +5673,7 @@ arch snow5
 x 22
 y 52
 end
-arch swall_1_3
+arch swall_2_1_2
 x 22
 y 52
 end
@@ -5529,7 +5705,7 @@ arch snow5
 x 22
 y 55
 end
-arch swall_1_3
+arch swall_2_1_2
 x 22
 y 55
 end
@@ -5556,6 +5732,10 @@ arch slevel_3_3
 x 23
 y 8
 end
+arch swall_1_3_half
+x 23
+y 8
+end
 arch cwall_1_4
 x 23
 y 8
@@ -5581,6 +5761,10 @@ x 23
 y 11
 end
 arch slevel_3_1
+x 23
+y 11
+end
+arch swall_1_3_half
 x 23
 y 11
 end
@@ -5604,6 +5788,10 @@ arch slevel_3_3
 x 23
 y 52
 end
+arch swall_1_3_half
+x 23
+y 52
+end
 arch cwall_1_4
 x 23
 y 52
@@ -5632,6 +5820,10 @@ arch slevel_3_1
 x 23
 y 55
 end
+arch swall_1_3_half
+x 23
+y 55
+end
 arch cwall_1_4
 x 23
 y 55
@@ -5649,6 +5841,10 @@ x 24
 y 8
 end
 arch slevel_3_3
+x 24
+y 8
+end
+arch swall_1_4_half
 x 24
 y 8
 end
@@ -5677,6 +5873,10 @@ x 24
 y 11
 end
 arch slevel_3_1
+x 24
+y 11
+end
+arch swall_1_4_half
 x 24
 y 11
 end
@@ -5756,6 +5956,10 @@ arch slevel_3_3
 x 24
 y 52
 end
+arch swall_1_4_half
+x 24
+y 52
+end
 arch cwall_1_3
 x 24
 y 52
@@ -5784,6 +5988,10 @@ arch slevel_3_1
 x 24
 y 55
 end
+arch swall_1_4_half
+x 24
+y 55
+end
 arch cwall_1_3
 x 24
 y 55
@@ -5808,7 +6016,7 @@ arch snow5
 x 25
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 25
 y 8
 end
@@ -5840,7 +6048,7 @@ arch snow5
 x 25
 y 11
 end
-arch swall_1_4
+arch swall_2_1_2
 x 25
 y 11
 end
@@ -5968,7 +6176,7 @@ arch snow5
 x 25
 y 52
 end
-arch swall_1_4
+arch swall_2_1_2
 x 25
 y 52
 end
@@ -6000,7 +6208,7 @@ arch snow5
 x 25
 y 55
 end
-arch swall_1_4
+arch swall_2_1_2
 x 25
 y 55
 end
@@ -6024,7 +6232,7 @@ arch snow5
 x 26
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 26
 y 8
 end
@@ -6056,7 +6264,7 @@ arch snow5
 x 26
 y 11
 end
-arch swall_1_3
+arch swall_2_1_2
 x 26
 y 11
 end
@@ -6092,11 +6300,11 @@ arch istone
 x 26
 y 27
 end
-arch swall_2_1_1
+arch cwall_2_2_4
 x 26
 y 27
 end
-arch cwall_2_2_4
+arch swall_1_1_half
 x 26
 y 27
 end
@@ -6116,7 +6324,7 @@ arch istone
 x 26
 y 29
 end
-arch swall_2_1_1
+arch swall_1_2_half
 x 26
 y 29
 end
@@ -6160,11 +6368,11 @@ arch istone
 x 26
 y 34
 end
-arch swall_2_1_1
+arch cwall_2_2_4
 x 26
 y 34
 end
-arch cwall_2_2_4
+arch swall_1_1_half
 x 26
 y 34
 end
@@ -6184,7 +6392,7 @@ arch istone
 x 26
 y 36
 end
-arch swall_1_2
+arch swall_1_2_half
 x 26
 y 36
 end
@@ -6240,7 +6448,7 @@ arch snow5
 x 26
 y 52
 end
-arch swall_1_3
+arch swall_2_1_2
 x 26
 y 52
 end
@@ -6272,7 +6480,7 @@ arch snow5
 x 26
 y 55
 end
-arch swall_1_3
+arch swall_2_1_2
 x 26
 y 55
 end
@@ -6304,6 +6512,10 @@ arch slevel_3_3
 x 27
 y 8
 end
+arch swall_1_3_half
+x 27
+y 8
+end
 arch cwall_1_4
 x 27
 y 8
@@ -6329,6 +6541,10 @@ x 27
 y 11
 end
 arch slevel_3_1
+x 27
+y 11
+end
+arch swall_1_3_half
 x 27
 y 11
 end
@@ -6360,7 +6576,7 @@ arch istone
 x 27
 y 26
 end
-arch swall_2_1_2
+arch swall_1_4_half
 x 27
 y 26
 end
@@ -6481,7 +6697,7 @@ arch istone
 x 27
 y 37
 end
-arch swall_1_4
+arch swall_1_4_half
 x 27
 y 37
 end
@@ -6541,6 +6757,10 @@ arch cwall_1_2
 x 27
 y 52
 end
+arch swall_1_3_half
+x 27
+y 52
+end
 arch istone
 x 27
 y 53
@@ -6564,6 +6784,10 @@ x 27
 y 55
 end
 arch cwall_1_1
+x 27
+y 55
+end
+arch swall_1_3_half
 x 27
 y 55
 end
@@ -6599,6 +6823,10 @@ arch slevel_3_3
 x 28
 y 8
 end
+arch swall_1_4_half
+x 28
+y 8
+end
 arch cwall_1_3
 x 28
 y 8
@@ -6624,6 +6852,10 @@ x 28
 y 11
 end
 arch slevel_3_1
+x 28
+y 11
+end
+arch swall_1_4_half
 x 28
 y 11
 end
@@ -6827,7 +7059,7 @@ arch snow5
 x 29
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 29
 y 8
 end
@@ -6859,7 +7091,7 @@ arch snow5
 x 29
 y 11
 end
-arch swall_1_4
+arch swall_2_1_2
 x 29
 y 11
 end
@@ -6907,7 +7139,7 @@ arch istone
 x 29
 y 26
 end
-arch swall_2_1_2
+arch swall_1_3_half
 x 29
 y 26
 end
@@ -6980,7 +7212,7 @@ arch istone
 x 29
 y 37
 end
-arch swall_1_3
+arch swall_1_3_half
 x 29
 y 37
 end
@@ -7088,7 +7320,7 @@ arch snow5
 x 30
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 30
 y 8
 end
@@ -7120,7 +7352,7 @@ arch snow5
 x 30
 y 11
 end
-arch swall_1_3
+arch swall_2_1_2
 x 30
 y 11
 end
@@ -7336,6 +7568,10 @@ arch slevel_3_3
 x 31
 y 8
 end
+arch swall_1_3_half
+x 31
+y 8
+end
 arch cwall_1_4
 x 31
 y 8
@@ -7361,6 +7597,10 @@ x 31
 y 11
 end
 arch slevel_3_1
+x 31
+y 11
+end
+arch swall_1_3_half
 x 31
 y 11
 end
@@ -7654,6 +7894,10 @@ arch slevel_3_3
 x 32
 y 8
 end
+arch swall_1_4_half
+x 32
+y 8
+end
 arch cwall_1_3
 x 32
 y 8
@@ -7679,6 +7923,10 @@ x 32
 y 11
 end
 arch slevel_3_1
+x 32
+y 11
+end
+arch swall_1_4_half
 x 32
 y 11
 end
@@ -7968,7 +8216,7 @@ arch snow5
 x 33
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 33
 y 8
 end
@@ -8000,7 +8248,7 @@ arch snow5
 x 33
 y 11
 end
-arch swall_1_4
+arch swall_2_1_2
 x 33
 y 11
 end
@@ -8308,7 +8556,7 @@ arch snow5
 x 34
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 34
 y 8
 end
@@ -8340,7 +8588,7 @@ arch snow5
 x 34
 y 11
 end
-arch swall_1_3
+arch swall_2_1_2
 x 34
 y 11
 end
@@ -8522,7 +8770,7 @@ arch istone
 x 34
 y 37
 end
-arch swall_1_4
+arch swall_1_4_half
 x 34
 y 37
 end
@@ -8630,6 +8878,10 @@ arch slevel_3_3
 x 35
 y 8
 end
+arch swall_1_3_half
+x 35
+y 8
+end
 arch cwall_1_4
 x 35
 y 8
@@ -8655,6 +8907,10 @@ x 35
 y 11
 end
 arch slevel_3_1
+x 35
+y 11
+end
+arch swall_1_3_half
 x 35
 y 11
 end
@@ -8938,6 +9194,10 @@ arch slevel_3_3
 x 36
 y 8
 end
+arch swall_1_4_half
+x 36
+y 8
+end
 arch cwall_1_3
 x 36
 y 8
@@ -8963,6 +9223,10 @@ x 36
 y 11
 end
 arch slevel_3_1
+x 36
+y 11
+end
+arch swall_1_4_half
 x 36
 y 11
 end
@@ -9167,7 +9431,7 @@ arch istone
 x 36
 y 37
 end
-arch swall_2_1_2
+arch swall_1_3_half
 x 36
 y 37
 end
@@ -9227,6 +9491,10 @@ arch istone
 x 36
 y 52
 end
+arch swall_1_4_half
+x 36
+y 52
+end
 arch cwall_1_2
 x 36
 y 52
@@ -9250,6 +9518,10 @@ y 54
 move_block 0
 end
 arch istone
+x 36
+y 55
+end
+arch swall_1_4_half
 x 36
 y 55
 end
@@ -9293,7 +9565,7 @@ arch snow5
 x 37
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 37
 y 8
 end
@@ -9325,7 +9597,7 @@ arch snow5
 x 37
 y 11
 end
-arch swall_1_4
+arch swall_2_1_2
 x 37
 y 11
 end
@@ -9506,11 +9778,11 @@ arch istone
 x 37
 y 34
 end
-arch swall_2_1_1
+arch cwall_2_2_1
 x 37
 y 34
 end
-arch cwall_2_2_1
+arch swall_1_1_half
 x 37
 y 34
 end
@@ -9530,7 +9802,7 @@ arch istone
 x 37
 y 36
 end
-arch swall_2_1_1
+arch swall_1_2_half
 x 37
 y 36
 end
@@ -9590,7 +9862,7 @@ arch snow5
 x 37
 y 52
 end
-arch swall_1_4
+arch swall_2_1_2
 x 37
 y 52
 end
@@ -9622,7 +9894,7 @@ arch snow5
 x 37
 y 55
 end
-arch swall_1_4
+arch swall_2_1_2
 x 37
 y 55
 end
@@ -9654,7 +9926,7 @@ arch snow5
 x 38
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 38
 y 8
 end
@@ -9686,7 +9958,7 @@ arch snow5
 x 38
 y 11
 end
-arch swall_1_3
+arch swall_2_1_2
 x 38
 y 11
 end
@@ -9887,7 +10159,7 @@ arch snow5
 x 38
 y 52
 end
-arch swall_1_3
+arch swall_2_1_2
 x 38
 y 52
 end
@@ -9919,7 +10191,7 @@ arch snow5
 x 38
 y 55
 end
-arch swall_1_3
+arch swall_2_1_2
 x 38
 y 55
 end
@@ -9936,6 +10208,10 @@ x 39
 y 8
 end
 arch slevel_3_3
+x 39
+y 8
+end
+arch swall_1_3_half
 x 39
 y 8
 end
@@ -9964,6 +10240,10 @@ x 39
 y 11
 end
 arch slevel_3_1
+x 39
+y 11
+end
+arch swall_1_3_half
 x 39
 y 11
 end
@@ -10124,6 +10404,10 @@ arch slevel_3_3
 x 39
 y 52
 end
+arch swall_1_3_half
+x 39
+y 52
+end
 arch cwall_1_4
 x 39
 y 52
@@ -10152,6 +10436,10 @@ arch slevel_3_1
 x 39
 y 55
 end
+arch swall_1_3_half
+x 39
+y 55
+end
 arch cwall_1_4
 x 39
 y 55
@@ -10173,6 +10461,10 @@ x 40
 y 8
 end
 arch slevel_3_3
+x 40
+y 8
+end
+arch swall_1_4_half
 x 40
 y 8
 end
@@ -10201,6 +10493,10 @@ x 40
 y 11
 end
 arch slevel_3_1
+x 40
+y 11
+end
+arch swall_1_4_half
 x 40
 y 11
 end
@@ -10309,6 +10605,10 @@ arch slevel_3_3
 x 40
 y 52
 end
+arch swall_1_4_half
+x 40
+y 52
+end
 arch cwall_1_3
 x 40
 y 52
@@ -10334,6 +10634,10 @@ x 40
 y 55
 end
 arch slevel_3_1
+x 40
+y 55
+end
+arch swall_1_4_half
 x 40
 y 55
 end
@@ -10369,7 +10673,7 @@ arch snow5
 x 41
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 41
 y 8
 end
@@ -10401,7 +10705,7 @@ arch snow5
 x 41
 y 11
 end
-arch swall_1_4
+arch swall_2_1_2
 x 41
 y 11
 end
@@ -10510,7 +10814,7 @@ arch snow5
 x 41
 y 52
 end
-arch swall_1_4
+arch swall_2_1_2
 x 41
 y 52
 end
@@ -10542,7 +10846,7 @@ arch snow5
 x 41
 y 55
 end
-arch swall_1_4
+arch swall_2_1_2
 x 41
 y 55
 end
@@ -10569,7 +10873,7 @@ arch snow5
 x 42
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 42
 y 8
 end
@@ -10601,7 +10905,7 @@ arch snow5
 x 42
 y 11
 end
-arch swall_1_3
+arch swall_2_1_2
 x 42
 y 11
 end
@@ -10710,7 +11014,7 @@ arch snow5
 x 42
 y 52
 end
-arch swall_1_3
+arch swall_2_1_2
 x 42
 y 52
 end
@@ -10742,7 +11046,7 @@ arch snow5
 x 42
 y 55
 end
-arch swall_1_3
+arch swall_2_1_2
 x 42
 y 55
 end
@@ -10759,6 +11063,10 @@ x 43
 y 8
 end
 arch slevel_3_3
+x 43
+y 8
+end
+arch swall_1_3_half
 x 43
 y 8
 end
@@ -10787,6 +11095,10 @@ x 43
 y 11
 end
 arch slevel_3_1
+x 43
+y 11
+end
+arch swall_1_3_half
 x 43
 y 11
 end
@@ -10891,6 +11203,10 @@ arch slevel_3_3
 x 43
 y 52
 end
+arch swall_1_3_half
+x 43
+y 52
+end
 arch cwall_1_4
 x 43
 y 52
@@ -10919,6 +11235,10 @@ arch slevel_3_1
 x 43
 y 55
 end
+arch swall_1_3_half
+x 43
+y 55
+end
 arch cwall_1_4
 x 43
 y 55
@@ -10936,6 +11256,10 @@ x 44
 y 8
 end
 arch slevel_3_3
+x 44
+y 8
+end
+arch swall_1_4_half
 x 44
 y 8
 end
@@ -10964,6 +11288,10 @@ x 44
 y 11
 end
 arch slevel_3_1
+x 44
+y 11
+end
+arch swall_1_4_half
 x 44
 y 11
 end
@@ -11068,6 +11396,10 @@ arch slevel_3_3
 x 44
 y 52
 end
+arch swall_1_4_half
+x 44
+y 52
+end
 arch cwall_1_3
 x 44
 y 52
@@ -11093,6 +11425,10 @@ x 44
 y 55
 end
 arch slevel_3_1
+x 44
+y 55
+end
+arch swall_1_4_half
 x 44
 y 55
 end
@@ -11128,7 +11464,7 @@ arch snow5
 x 45
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 45
 y 8
 end
@@ -11160,7 +11496,7 @@ arch snow5
 x 45
 y 11
 end
-arch swall_1_4
+arch swall_2_1_2
 x 45
 y 11
 end
@@ -11265,7 +11601,7 @@ arch snow5
 x 45
 y 52
 end
-arch swall_1_4
+arch swall_2_1_2
 x 45
 y 52
 end
@@ -11297,7 +11633,7 @@ arch snow5
 x 45
 y 55
 end
-arch swall_1_4
+arch swall_2_1_2
 x 45
 y 55
 end
@@ -11325,7 +11661,7 @@ arch snow5
 x 46
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 46
 y 8
 end
@@ -11357,7 +11693,7 @@ arch snow5
 x 46
 y 11
 end
-arch swall_1_3
+arch swall_2_1_2
 x 46
 y 11
 end
@@ -11462,7 +11798,7 @@ arch snow5
 x 46
 y 52
 end
-arch swall_1_3
+arch swall_2_1_2
 x 46
 y 52
 end
@@ -11494,7 +11830,7 @@ arch snow5
 x 46
 y 55
 end
-arch swall_1_3
+arch swall_2_1_2
 x 46
 y 55
 end
@@ -11534,6 +11870,10 @@ arch istone
 x 47
 y 8
 end
+arch swall_1_3_half
+x 47
+y 8
+end
 arch cwall_1_2
 x 47
 y 8
@@ -11557,6 +11897,10 @@ y 10
 move_block 0
 end
 arch istone
+x 47
+y 11
+end
+arch swall_1_3_half
 x 47
 y 11
 end
@@ -11678,6 +12022,10 @@ arch istone
 x 47
 y 52
 end
+arch swall_1_3_half
+x 47
+y 52
+end
 arch cwall_1_4
 x 47
 y 52
@@ -11701,6 +12049,10 @@ y 54
 move_block 0
 end
 arch istone
+x 47
+y 55
+end
+arch swall_1_3_half
 x 47
 y 55
 end
@@ -12836,6 +13188,10 @@ arch cwall_1_2
 x 52
 y 16
 end
+arch swall_1_1_half
+x 52
+y 16
+end
 arch flagstone
 x 52
 y 17
@@ -12848,7 +13204,7 @@ arch snow5
 x 52
 y 17
 end
-arch swall_1_1
+arch swall_2_1_1
 x 52
 y 17
 end
@@ -12864,7 +13220,7 @@ arch snow5
 x 52
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 52
 y 18
 end
@@ -12873,6 +13229,10 @@ x 52
 y 19
 end
 arch slevel_3_2
+x 52
+y 19
+end
+arch swall_1_2_half
 x 52
 y 19
 end
@@ -12892,6 +13252,10 @@ arch cwall_1_2
 x 52
 y 20
 end
+arch swall_1_1_half
+x 52
+y 20
+end
 arch flagstone
 x 52
 y 21
@@ -12904,7 +13268,7 @@ arch snow5
 x 52
 y 21
 end
-arch swall_1_1
+arch swall_2_1_1
 x 52
 y 21
 end
@@ -12920,7 +13284,7 @@ arch snow5
 x 52
 y 22
 end
-arch swall_1_2
+arch swall_2_1_1
 x 52
 y 22
 end
@@ -12929,6 +13293,10 @@ x 52
 y 23
 end
 arch slevel_3_2
+x 52
+y 23
+end
+arch swall_1_2_half
 x 52
 y 23
 end
@@ -12948,6 +13316,10 @@ arch cwall_1_2
 x 52
 y 24
 end
+arch swall_1_1_half
+x 52
+y 24
+end
 arch flagstone
 x 52
 y 25
@@ -12960,7 +13332,7 @@ arch snow5
 x 52
 y 25
 end
-arch swall_1_1
+arch swall_2_1_1
 x 52
 y 25
 end
@@ -12976,7 +13348,7 @@ arch snow5
 x 52
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 52
 y 26
 end
@@ -12985,6 +13357,10 @@ x 52
 y 27
 end
 arch slevel_3_2
+x 52
+y 27
+end
+arch swall_1_2_half
 x 52
 y 27
 end
@@ -13004,6 +13380,10 @@ arch cwall_1_2
 x 52
 y 28
 end
+arch swall_1_1_half
+x 52
+y 28
+end
 arch flagstone
 x 52
 y 29
@@ -13016,7 +13396,7 @@ arch snow5
 x 52
 y 29
 end
-arch swall_1_1
+arch swall_2_1_1
 x 52
 y 29
 end
@@ -13032,7 +13412,7 @@ arch snow5
 x 52
 y 30
 end
-arch swall_1_2
+arch swall_2_1_1
 x 52
 y 30
 end
@@ -13041,6 +13421,10 @@ x 52
 y 31
 end
 arch slevel_3_2
+x 52
+y 31
+end
+arch swall_1_2_half
 x 52
 y 31
 end
@@ -13060,6 +13444,10 @@ arch cwall_1_2
 x 52
 y 32
 end
+arch swall_1_1_half
+x 52
+y 32
+end
 arch flagstone
 x 52
 y 33
@@ -13072,7 +13460,7 @@ arch snow5
 x 52
 y 33
 end
-arch swall_1_1
+arch swall_2_1_1
 x 52
 y 33
 end
@@ -13088,7 +13476,7 @@ arch snow5
 x 52
 y 34
 end
-arch swall_1_2
+arch swall_2_1_1
 x 52
 y 34
 end
@@ -13097,6 +13485,10 @@ x 52
 y 35
 end
 arch slevel_3_2
+x 52
+y 35
+end
+arch swall_1_2_half
 x 52
 y 35
 end
@@ -13116,6 +13508,10 @@ arch cwall_1_2
 x 52
 y 36
 end
+arch swall_1_1_half
+x 52
+y 36
+end
 arch flagstone
 x 52
 y 37
@@ -13128,7 +13524,7 @@ arch snow5
 x 52
 y 37
 end
-arch swall_1_1
+arch swall_2_1_1
 x 52
 y 37
 end
@@ -13144,7 +13540,7 @@ arch snow5
 x 52
 y 38
 end
-arch swall_1_2
+arch swall_2_1_1
 x 52
 y 38
 end
@@ -13153,6 +13549,10 @@ x 52
 y 39
 end
 arch slevel_3_2
+x 52
+y 39
+end
+arch swall_1_2_half
 x 52
 y 39
 end
@@ -13172,6 +13572,10 @@ arch cwall_1_2
 x 52
 y 40
 end
+arch swall_1_1_half
+x 52
+y 40
+end
 arch flagstone
 x 52
 y 41
@@ -13184,7 +13588,7 @@ arch snow5
 x 52
 y 41
 end
-arch swall_1_1
+arch swall_2_1_1
 x 52
 y 41
 end
@@ -13200,7 +13604,7 @@ arch snow5
 x 52
 y 42
 end
-arch swall_1_2
+arch swall_2_1_1
 x 52
 y 42
 end
@@ -13209,6 +13613,10 @@ x 52
 y 43
 end
 arch slevel_3_2
+x 52
+y 43
+end
+arch swall_1_2_half
 x 52
 y 43
 end
@@ -13228,6 +13636,10 @@ arch cwall_1_2
 x 52
 y 44
 end
+arch swall_1_1_half
+x 52
+y 44
+end
 arch flagstone
 x 52
 y 45
@@ -13240,7 +13652,7 @@ arch snow5
 x 52
 y 45
 end
-arch swall_1_1
+arch swall_2_1_1
 x 52
 y 45
 end
@@ -13256,11 +13668,15 @@ arch snow5
 x 52
 y 46
 end
-arch swall_1_2
+arch swall_2_1_1
 x 52
 y 46
 end
 arch istone
+x 52
+y 47
+end
+arch swall_1_2_half
 x 52
 y 47
 end
@@ -13388,7 +13804,7 @@ arch istone
 x 53
 y 2
 end
-arch swall_1_4
+arch swall_1_4_half
 x 53
 y 2
 end
@@ -13867,7 +14283,7 @@ arch istone
 x 53
 y 61
 end
-arch swall_1_4
+arch swall_1_4_half
 x 53
 y 61
 end
@@ -14373,7 +14789,7 @@ arch istone
 x 55
 y 2
 end
-arch swall_1_3
+arch swall_1_3_half
 x 55
 y 2
 end
@@ -14485,6 +14901,10 @@ arch cwall_1_4
 x 55
 y 16
 end
+arch swall_1_1_half
+x 55
+y 16
+end
 arch flagstone
 x 55
 y 17
@@ -14497,7 +14917,7 @@ arch snow5
 x 55
 y 17
 end
-arch swall_1_1
+arch swall_2_1_1
 x 55
 y 17
 end
@@ -14513,7 +14933,7 @@ arch snow5
 x 55
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 55
 y 18
 end
@@ -14522,6 +14942,10 @@ x 55
 y 19
 end
 arch slevel_3_4
+x 55
+y 19
+end
+arch swall_1_2_half
 x 55
 y 19
 end
@@ -14541,6 +14965,10 @@ arch cwall_1_2
 x 55
 y 20
 end
+arch swall_1_1_half
+x 55
+y 20
+end
 arch flagstone
 x 55
 y 21
@@ -14553,7 +14981,7 @@ arch snow5
 x 55
 y 21
 end
-arch swall_1_1
+arch swall_2_1_1
 x 55
 y 21
 end
@@ -14569,7 +14997,7 @@ arch snow5
 x 55
 y 22
 end
-arch swall_1_2
+arch swall_2_1_1
 x 55
 y 22
 end
@@ -14578,6 +15006,10 @@ x 55
 y 23
 end
 arch slevel_3_4
+x 55
+y 23
+end
+arch swall_1_2_half
 x 55
 y 23
 end
@@ -14597,6 +15029,10 @@ arch cwall_1_2
 x 55
 y 24
 end
+arch swall_1_1_half
+x 55
+y 24
+end
 arch flagstone
 x 55
 y 25
@@ -14609,7 +15045,7 @@ arch snow5
 x 55
 y 25
 end
-arch swall_1_1
+arch swall_2_1_1
 x 55
 y 25
 end
@@ -14625,7 +15061,7 @@ arch snow5
 x 55
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 55
 y 26
 end
@@ -14634,6 +15070,10 @@ x 55
 y 27
 end
 arch slevel_3_4
+x 55
+y 27
+end
+arch swall_1_2_half
 x 55
 y 27
 end
@@ -14653,6 +15093,10 @@ arch cwall_1_2
 x 55
 y 28
 end
+arch swall_1_1_half
+x 55
+y 28
+end
 arch flagstone
 x 55
 y 29
@@ -14665,7 +15109,7 @@ arch snow5
 x 55
 y 29
 end
-arch swall_1_1
+arch swall_2_1_1
 x 55
 y 29
 end
@@ -14681,7 +15125,7 @@ arch snow5
 x 55
 y 30
 end
-arch swall_1_2
+arch swall_2_1_1
 x 55
 y 30
 end
@@ -14690,6 +15134,10 @@ x 55
 y 31
 end
 arch slevel_3_4
+x 55
+y 31
+end
+arch swall_1_2_half
 x 55
 y 31
 end
@@ -14709,6 +15157,10 @@ arch cwall_1_2
 x 55
 y 32
 end
+arch swall_1_1_half
+x 55
+y 32
+end
 arch flagstone
 x 55
 y 33
@@ -14721,7 +15173,7 @@ arch snow5
 x 55
 y 33
 end
-arch swall_1_1
+arch swall_2_1_1
 x 55
 y 33
 end
@@ -14737,7 +15189,7 @@ arch snow5
 x 55
 y 34
 end
-arch swall_1_2
+arch swall_2_1_1
 x 55
 y 34
 end
@@ -14746,6 +15198,10 @@ x 55
 y 35
 end
 arch slevel_3_4
+x 55
+y 35
+end
+arch swall_1_2_half
 x 55
 y 35
 end
@@ -14765,6 +15221,10 @@ arch cwall_1_2
 x 55
 y 36
 end
+arch swall_1_1_half
+x 55
+y 36
+end
 arch flagstone
 x 55
 y 37
@@ -14777,7 +15237,7 @@ arch snow5
 x 55
 y 37
 end
-arch swall_1_1
+arch swall_2_1_1
 x 55
 y 37
 end
@@ -14793,7 +15253,7 @@ arch snow5
 x 55
 y 38
 end
-arch swall_1_2
+arch swall_2_1_1
 x 55
 y 38
 end
@@ -14802,6 +15262,10 @@ x 55
 y 39
 end
 arch slevel_3_4
+x 55
+y 39
+end
+arch swall_1_2_half
 x 55
 y 39
 end
@@ -14821,6 +15285,10 @@ arch cwall_1_2
 x 55
 y 40
 end
+arch swall_1_1_half
+x 55
+y 40
+end
 arch flagstone
 x 55
 y 41
@@ -14833,7 +15301,7 @@ arch snow5
 x 55
 y 41
 end
-arch swall_1_1
+arch swall_2_1_1
 x 55
 y 41
 end
@@ -14849,7 +15317,7 @@ arch snow5
 x 55
 y 42
 end
-arch swall_1_2
+arch swall_2_1_1
 x 55
 y 42
 end
@@ -14858,6 +15326,10 @@ x 55
 y 43
 end
 arch slevel_3_4
+x 55
+y 43
+end
+arch swall_1_2_half
 x 55
 y 43
 end
@@ -14877,6 +15349,10 @@ arch cwall_1_2
 x 55
 y 44
 end
+arch swall_1_1_half
+x 55
+y 44
+end
 arch flagstone
 x 55
 y 45
@@ -14889,7 +15365,7 @@ arch snow5
 x 55
 y 45
 end
-arch swall_1_1
+arch swall_2_1_1
 x 55
 y 45
 end
@@ -14905,11 +15381,15 @@ arch snow5
 x 55
 y 46
 end
-arch swall_1_2
+arch swall_2_1_1
 x 55
 y 46
 end
 arch istone
+x 55
+y 47
+end
+arch swall_1_2_half
 x 55
 y 47
 end
@@ -15037,7 +15517,7 @@ arch istone
 x 55
 y 61
 end
-arch swall_1_3
+arch swall_1_3_half
 x 55
 y 61
 end
@@ -16339,11 +16819,11 @@ arch istone
 x 61
 y 8
 end
-arch swall_1_1
+arch cwall_1_2
 x 61
 y 8
 end
-arch cwall_1_2
+arch swall_1_1_half
 x 61
 y 8
 end
@@ -16359,7 +16839,7 @@ arch istone
 x 61
 y 10
 end
-arch swall_1_2
+arch swall_1_2_half
 x 61
 y 10
 end
@@ -16427,6 +16907,10 @@ arch cwall_1_2
 x 61
 y 53
 end
+arch swall_1_1_half
+x 61
+y 53
+end
 arch istone
 x 61
 y 54
@@ -16440,6 +16924,10 @@ x 61
 y 55
 end
 arch swall_1_2
+x 61
+y 55
+end
+arch swall_1_2_half
 x 61
 y 55
 end
