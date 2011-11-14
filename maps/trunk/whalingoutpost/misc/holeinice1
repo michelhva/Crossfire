@@ -10,7 +10,7 @@ enter_x 19
 enter_y 2
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-11-14 Rick Tanner
 endmsg
 end
 arch istone
@@ -390,7 +390,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -411,7 +410,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -427,7 +425,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -437,7 +434,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 1
 y 2
@@ -453,7 +449,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -813,7 +808,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -827,7 +821,6 @@ y 52
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -860,7 +853,6 @@ y 53
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -871,7 +863,6 @@ move_block all
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -881,7 +872,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -891,7 +881,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -901,7 +890,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -911,7 +899,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -921,7 +908,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -931,7 +917,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -941,7 +926,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -951,7 +935,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -961,7 +944,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -971,7 +953,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -981,7 +962,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -991,7 +971,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1001,7 +980,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1024,7 +1002,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1045,7 +1022,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1061,7 +1037,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1077,7 +1052,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1093,7 +1067,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1365,7 +1338,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1381,7 +1353,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1397,7 +1368,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1407,7 +1377,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 2
 y 49
@@ -1423,7 +1392,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1439,7 +1407,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1453,7 +1420,6 @@ y 52
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1486,7 +1452,6 @@ y 53
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1497,7 +1462,6 @@ move_block all
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1507,7 +1471,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1517,7 +1480,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1527,7 +1489,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1537,7 +1498,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1547,7 +1507,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1557,7 +1516,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1567,7 +1525,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1577,7 +1534,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1587,7 +1543,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1597,7 +1552,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1607,7 +1561,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1617,7 +1570,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1627,7 +1579,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1637,7 +1588,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1656,7 +1606,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1677,7 +1626,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1693,7 +1641,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1709,7 +1656,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1725,7 +1671,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1741,7 +1686,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1945,7 +1889,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1961,7 +1904,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1977,7 +1919,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -1993,7 +1934,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2009,7 +1949,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2025,7 +1964,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2041,7 +1979,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2057,7 +1994,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2073,7 +2009,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2087,7 +2022,6 @@ y 52
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2120,7 +2054,6 @@ y 53
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2131,7 +2064,6 @@ move_block all
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2141,7 +2073,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2151,7 +2082,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2161,7 +2091,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2171,7 +2100,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2181,7 +2109,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2191,7 +2118,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2201,7 +2127,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2211,7 +2136,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2221,7 +2145,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2231,7 +2154,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2265,7 +2187,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2275,7 +2196,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 4
 y 4
@@ -2291,7 +2211,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2307,7 +2226,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2455,7 +2373,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2471,7 +2388,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2481,7 +2397,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 4
 y 41
@@ -2497,7 +2412,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2513,7 +2427,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2529,7 +2442,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2545,7 +2457,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2555,7 +2466,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 4
 y 45
@@ -2571,7 +2481,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2587,7 +2496,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2603,7 +2511,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2619,7 +2526,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2635,7 +2541,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2757,7 +2662,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2773,7 +2677,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2789,7 +2692,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2937,7 +2839,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2953,7 +2854,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2969,7 +2869,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -2985,7 +2884,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3001,7 +2899,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3017,7 +2914,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3033,7 +2929,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3049,7 +2944,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3065,7 +2959,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3223,7 +3116,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3239,7 +3131,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3255,7 +3146,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3265,7 +3155,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 6
 y 7
@@ -3401,7 +3290,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3417,7 +3305,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3433,7 +3320,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3449,7 +3335,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3465,7 +3350,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3481,7 +3365,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3655,7 +3538,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3671,7 +3553,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3687,7 +3568,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3815,7 +3695,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3831,7 +3710,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3841,7 +3719,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 7
 y 37
@@ -3857,7 +3734,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -3873,7 +3749,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4067,7 +3942,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4083,7 +3957,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4099,7 +3972,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4211,7 +4083,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4227,7 +4098,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4243,7 +4113,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4259,7 +4128,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4275,7 +4143,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4450,7 +4317,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4465,7 +4331,6 @@ x 9
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4475,7 +4340,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4507,7 +4371,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4517,7 +4380,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 9
 y 7
@@ -4533,7 +4395,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4549,7 +4410,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4661,7 +4521,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4677,7 +4536,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4693,7 +4551,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4709,7 +4566,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4725,7 +4581,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4900,7 +4755,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4915,7 +4769,6 @@ x 10
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4925,7 +4778,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4935,7 +4787,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4967,7 +4818,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4983,7 +4833,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -4999,7 +4848,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5009,7 +4857,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 10
 y 10
@@ -5105,7 +4952,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5121,7 +4967,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5137,7 +4982,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5147,7 +4991,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 10
 y 33
@@ -5163,7 +5006,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5179,7 +5021,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5358,7 +5199,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5373,7 +5213,6 @@ x 11
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5383,7 +5222,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5393,7 +5231,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5403,7 +5240,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5435,7 +5271,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5451,7 +5286,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5467,7 +5301,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5483,7 +5316,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5499,7 +5331,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5515,7 +5346,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5591,7 +5421,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5607,7 +5436,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5623,7 +5451,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5819,7 +5646,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5829,7 +5655,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5839,7 +5664,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5849,7 +5673,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5885,7 +5708,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5901,7 +5723,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5917,7 +5738,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5933,7 +5753,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5943,7 +5762,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5959,7 +5777,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5975,7 +5792,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -5985,7 +5801,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 12
 y 16
@@ -6001,7 +5816,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6017,7 +5831,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6061,7 +5874,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6077,7 +5889,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6093,7 +5904,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6103,7 +5913,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 12
 y 28
@@ -6119,7 +5928,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6135,7 +5943,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6151,7 +5958,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6355,7 +6161,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6365,7 +6170,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6375,7 +6179,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6385,7 +6188,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6395,7 +6197,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6427,7 +6228,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6437,7 +6237,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 13
 y 11
@@ -6453,7 +6252,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6463,7 +6261,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6479,7 +6276,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6495,7 +6291,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6511,7 +6306,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6527,7 +6321,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6537,7 +6330,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6553,7 +6345,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6589,7 +6380,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6605,7 +6395,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6621,7 +6410,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6637,7 +6425,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6653,7 +6440,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6669,7 +6455,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6873,7 +6658,6 @@ x 14
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6883,7 +6667,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6893,7 +6676,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6903,7 +6685,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6913,7 +6694,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6923,7 +6703,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6963,7 +6742,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6979,7 +6757,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -6995,7 +6772,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7011,7 +6787,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7021,7 +6796,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7037,7 +6811,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7047,7 +6820,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7063,7 +6835,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7087,7 +6858,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7103,7 +6873,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7119,7 +6888,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7135,7 +6903,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7151,7 +6918,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7167,7 +6933,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7183,7 +6948,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7395,7 +7159,6 @@ x 15
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7405,7 +7168,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7415,7 +7177,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7425,7 +7186,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7435,7 +7195,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7445,7 +7204,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7501,7 +7259,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7511,7 +7268,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7527,7 +7283,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7537,7 +7292,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 15
 y 19
@@ -7547,7 +7301,6 @@ unaggressive 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7563,7 +7316,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7579,7 +7331,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7595,7 +7346,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7611,7 +7361,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7627,7 +7376,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7637,7 +7385,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 15
 y 25
@@ -7865,7 +7612,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7875,7 +7621,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7885,7 +7630,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7895,7 +7639,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7905,7 +7648,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7965,7 +7707,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7975,7 +7716,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -7991,7 +7731,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8007,7 +7746,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8023,7 +7761,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8039,7 +7776,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8055,7 +7791,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8303,7 +8038,6 @@ y 2
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8313,7 +8047,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8323,7 +8056,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8385,7 +8117,6 @@ y 17
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8401,7 +8132,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8417,7 +8147,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8433,7 +8162,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8449,7 +8177,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8465,7 +8192,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8481,7 +8207,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8791,7 +8516,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8807,7 +8531,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8823,7 +8546,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8839,7 +8561,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8855,7 +8576,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8871,7 +8591,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8887,7 +8606,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -8903,7 +8621,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9211,7 +8928,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9227,7 +8943,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9243,7 +8958,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9259,7 +8973,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9275,7 +8988,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9291,7 +9003,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9307,7 +9018,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9323,7 +9033,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9333,7 +9042,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 19
 y 20
@@ -9349,7 +9057,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9365,7 +9072,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9381,7 +9087,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9391,7 +9096,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9407,7 +9111,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9685,7 +9388,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9695,7 +9397,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 20
 y 11
@@ -9709,7 +9410,6 @@ y 12
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9725,7 +9425,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9741,7 +9440,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9757,7 +9455,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9773,7 +9470,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9789,7 +9485,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9805,7 +9500,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9821,7 +9515,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9837,7 +9530,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9853,7 +9545,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9869,7 +9560,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9879,7 +9569,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9895,7 +9584,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9905,7 +9593,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -9921,7 +9608,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10144,7 +9830,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10165,7 +9850,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10175,7 +9859,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 21
 y 1
@@ -10191,7 +9874,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10207,7 +9889,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10243,7 +9924,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10257,7 +9937,6 @@ y 10
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10273,7 +9952,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10287,7 +9965,6 @@ y 12
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10303,7 +9980,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10319,7 +9995,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10329,7 +10004,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 21
 y 14
@@ -10345,7 +10019,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10361,7 +10034,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10401,7 +10073,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10411,7 +10082,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10427,7 +10097,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10437,7 +10106,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10453,7 +10121,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10676,7 +10343,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10697,7 +10363,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10713,7 +10378,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10729,7 +10393,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10745,7 +10408,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10765,7 +10427,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10781,7 +10442,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10795,7 +10455,6 @@ y 8
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10811,7 +10470,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10825,7 +10483,6 @@ y 10
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10841,7 +10498,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10855,7 +10511,6 @@ y 12
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10919,7 +10574,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10929,7 +10583,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10939,7 +10592,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 22
 y 25
@@ -10955,7 +10607,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10965,7 +10616,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -10981,7 +10631,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11204,7 +10853,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11225,7 +10873,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11241,7 +10888,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11257,7 +10903,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11273,7 +10918,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11289,7 +10933,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11299,7 +10942,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 23
 y 5
@@ -11315,7 +10957,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11331,7 +10972,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11345,7 +10985,6 @@ y 8
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11361,7 +11000,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11375,7 +11013,6 @@ y 10
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11385,7 +11022,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 23
 y 10
@@ -11465,7 +11101,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11481,7 +11116,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11497,7 +11131,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11507,7 +11140,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11523,7 +11155,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11757,7 +11388,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11773,7 +11403,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11789,7 +11418,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11805,7 +11433,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11819,7 +11446,6 @@ y 8
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11911,7 +11537,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11927,7 +11552,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11943,7 +11567,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11959,7 +11582,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -11969,7 +11591,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 24
 y 30
@@ -11985,7 +11606,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12001,7 +11621,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12231,7 +11850,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12335,7 +11953,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12351,7 +11968,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12367,7 +11983,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12383,7 +11998,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12399,7 +12013,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12415,7 +12028,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12749,7 +12361,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12765,7 +12376,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12781,7 +12391,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12797,7 +12406,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12813,7 +12421,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12829,7 +12436,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -12839,7 +12445,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 26
 y 34
@@ -12855,7 +12460,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13193,7 +12797,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13209,7 +12812,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13225,7 +12827,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13241,7 +12842,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13257,7 +12857,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13273,7 +12872,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13289,7 +12887,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13305,7 +12902,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13497,7 +13093,6 @@ y 6
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13507,7 +13102,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13517,7 +13111,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13641,7 +13234,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13657,7 +13249,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13673,7 +13264,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13689,7 +13279,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13705,7 +13294,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13721,7 +13309,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13737,7 +13324,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13753,7 +13339,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13913,7 +13498,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13923,7 +13507,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13933,7 +13516,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13943,7 +13525,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13953,7 +13534,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13963,7 +13543,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13973,7 +13552,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -13983,7 +13561,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14103,7 +13680,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14119,7 +13695,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14129,7 +13704,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 29
 y 37
@@ -14145,7 +13719,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14161,7 +13734,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14177,7 +13749,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14193,7 +13764,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14209,7 +13779,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14219,7 +13788,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 29
 y 42
@@ -14370,7 +13938,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14385,7 +13952,6 @@ x 30
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14395,7 +13961,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14405,7 +13970,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14415,7 +13979,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14425,7 +13988,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14435,7 +13997,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14445,7 +14006,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14455,7 +14015,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14465,7 +14024,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14475,7 +14033,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14493,7 +14050,6 @@ y 12
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14503,7 +14059,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14513,7 +14068,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14645,7 +14199,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14661,7 +14214,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14677,7 +14229,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14693,7 +14244,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14709,7 +14259,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14725,7 +14274,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14860,7 +14408,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14875,7 +14422,6 @@ x 31
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14885,7 +14431,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14895,7 +14440,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14905,7 +14449,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14915,7 +14458,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14925,7 +14467,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14935,7 +14476,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14945,7 +14485,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14955,7 +14494,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14965,7 +14503,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14979,7 +14516,6 @@ y 11
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14989,7 +14525,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -14999,7 +14534,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15009,7 +14543,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15137,7 +14670,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15153,7 +14685,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15169,7 +14700,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15185,7 +14715,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15201,7 +14730,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15217,7 +14745,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15233,7 +14760,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15344,7 +14870,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15359,7 +14884,6 @@ x 32
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15369,7 +14893,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15379,7 +14902,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15389,7 +14911,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15399,7 +14920,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15409,7 +14929,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15419,7 +14938,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15429,7 +14947,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15439,7 +14956,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15449,7 +14965,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15459,7 +14974,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15469,7 +14983,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15479,7 +14992,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15489,7 +15001,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15633,7 +15144,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15649,7 +15159,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15665,7 +15174,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15675,7 +15183,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 32
 y 45
@@ -15691,7 +15198,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15707,7 +15213,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15723,7 +15228,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15739,7 +15243,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15755,7 +15258,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15771,7 +15273,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15785,7 +15286,6 @@ y 52
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15818,7 +15318,6 @@ y 53
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15829,7 +15328,6 @@ move_block all
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15839,7 +15337,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15849,7 +15346,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15859,7 +15355,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15869,7 +15364,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15879,7 +15373,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15889,7 +15382,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15899,7 +15391,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15909,7 +15400,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15919,7 +15409,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15929,7 +15418,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15939,7 +15427,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15949,7 +15436,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15959,7 +15445,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15987,7 +15472,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -15997,7 +15481,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16007,7 +15490,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16017,7 +15499,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16027,7 +15508,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16037,7 +15517,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16047,7 +15526,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16057,7 +15535,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16067,7 +15544,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16077,7 +15553,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16087,7 +15562,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16097,7 +15571,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16107,7 +15580,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16267,7 +15739,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16283,7 +15754,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16299,7 +15769,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16315,7 +15784,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16325,7 +15793,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 33
 y 50
@@ -16341,7 +15808,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16355,7 +15821,6 @@ y 52
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16388,7 +15853,6 @@ y 53
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16399,7 +15863,6 @@ move_block all
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16409,7 +15872,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16419,7 +15881,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16429,7 +15890,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16439,7 +15899,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16449,7 +15908,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16459,7 +15917,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16469,7 +15926,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16479,7 +15935,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16489,7 +15944,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16499,7 +15953,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16509,7 +15962,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16519,7 +15971,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16529,7 +15980,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16539,7 +15989,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16563,7 +16012,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16573,7 +16021,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16583,7 +16030,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16593,7 +16039,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16603,7 +16048,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16613,7 +16057,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16623,7 +16066,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16633,7 +16075,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16643,7 +16084,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16653,7 +16093,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16663,7 +16102,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16673,7 +16111,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16841,7 +16278,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16857,7 +16293,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16873,7 +16308,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16887,7 +16321,6 @@ y 52
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16920,7 +16353,6 @@ y 53
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16931,7 +16363,6 @@ move_block all
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16941,7 +16372,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16951,7 +16381,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16961,7 +16390,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16971,7 +16399,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16981,7 +16408,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -16991,7 +16417,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17001,7 +16426,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17011,7 +16435,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17021,7 +16444,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17031,7 +16453,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17055,7 +16476,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17065,7 +16485,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17075,7 +16494,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17085,7 +16503,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17095,7 +16512,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17105,7 +16521,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17115,7 +16530,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17125,7 +16539,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17135,7 +16548,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17145,7 +16557,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17155,7 +16566,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17165,7 +16575,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17433,7 +16842,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17443,7 +16851,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17453,7 +16860,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17463,7 +16869,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17473,7 +16878,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17483,7 +16887,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17493,7 +16896,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17503,7 +16905,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17513,7 +16914,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17523,7 +16923,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17533,7 +16932,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17841,7 +17239,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17851,7 +17248,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17861,7 +17257,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17871,7 +17266,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17881,7 +17275,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17891,7 +17284,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17901,7 +17293,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17911,7 +17302,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17921,7 +17311,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17931,7 +17320,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17941,7 +17329,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -17951,7 +17338,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18246,7 +17632,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18261,7 +17646,6 @@ x 38
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18271,7 +17655,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18281,7 +17664,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18291,7 +17673,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18301,7 +17682,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18311,7 +17691,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18321,7 +17700,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18331,7 +17709,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18341,7 +17718,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18351,7 +17727,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18361,7 +17736,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18371,7 +17745,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18381,7 +17754,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18391,7 +17763,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18690,7 +18061,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18705,7 +18075,6 @@ x 39
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18715,7 +18084,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18725,7 +18093,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18735,7 +18102,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18745,7 +18111,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18755,7 +18120,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18765,7 +18129,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18775,7 +18138,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18785,7 +18147,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18795,7 +18156,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18805,7 +18165,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18815,7 +18174,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18825,7 +18183,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -18835,7 +18192,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19154,7 +18510,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19169,7 +18524,6 @@ x 40
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19179,7 +18533,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19189,7 +18542,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19199,7 +18551,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19209,7 +18560,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19219,7 +18569,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19229,7 +18578,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19239,7 +18587,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19249,7 +18596,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19259,7 +18605,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19269,7 +18614,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19279,7 +18623,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19289,7 +18632,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19299,7 +18641,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19615,7 +18956,6 @@ x 41
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19625,7 +18965,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19635,7 +18974,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19645,7 +18983,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19655,7 +18992,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19665,7 +19001,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19675,7 +19010,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19685,7 +19019,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19695,7 +19028,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19705,7 +19037,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19715,7 +19046,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19725,7 +19055,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19735,7 +19064,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -19745,7 +19073,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20049,7 +19376,6 @@ x 42
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20059,7 +19385,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20069,7 +19394,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20079,7 +19403,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20089,7 +19412,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20099,7 +19421,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20109,7 +19430,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20119,7 +19439,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20129,7 +19448,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20139,7 +19457,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20149,7 +19466,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20159,7 +19475,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20169,7 +19484,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20457,7 +19771,6 @@ x 43
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20467,7 +19780,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20477,7 +19789,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20487,7 +19798,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20497,7 +19807,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20507,7 +19816,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20517,7 +19825,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20527,7 +19834,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20537,7 +19843,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20547,7 +19852,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20557,7 +19861,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20567,7 +19870,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20577,7 +19879,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20873,7 +20174,6 @@ x 44
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20883,7 +20183,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20893,7 +20192,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20903,7 +20201,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20913,7 +20210,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20923,7 +20219,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20933,7 +20228,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20943,7 +20237,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20953,7 +20246,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20963,7 +20255,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20973,7 +20264,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -20983,7 +20273,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21107,7 +20396,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21123,7 +20411,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21139,7 +20426,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21149,7 +20435,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 44
 y 38
@@ -21165,7 +20450,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21181,7 +20465,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21197,7 +20480,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21213,7 +20495,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21229,7 +20510,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21245,7 +20525,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21409,7 +20688,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21419,7 +20697,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21429,7 +20706,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21439,7 +20715,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21449,7 +20724,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21459,7 +20733,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21469,7 +20742,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21479,7 +20751,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21489,7 +20760,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21499,7 +20769,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21623,7 +20892,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21639,7 +20907,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21655,7 +20922,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21671,7 +20937,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21687,7 +20952,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21703,7 +20967,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21719,7 +20982,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21735,7 +20997,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21751,7 +21012,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21767,7 +21027,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21777,7 +21036,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 45
 y 44
@@ -21793,7 +21051,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21953,7 +21210,6 @@ y 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21963,7 +21219,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21973,7 +21228,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21983,7 +21237,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -21993,7 +21246,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22003,7 +21255,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22013,7 +21264,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22023,7 +21273,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22033,7 +21282,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22153,7 +21401,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22169,7 +21416,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22185,7 +21431,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22201,7 +21446,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22217,7 +21461,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22233,7 +21476,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22249,7 +21491,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22265,7 +21506,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22275,7 +21515,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 46
 y 41
@@ -22291,7 +21530,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22307,7 +21545,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22323,7 +21560,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22339,7 +21575,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22355,7 +21590,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22506,7 +21740,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22521,7 +21754,6 @@ x 47
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22531,7 +21763,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22541,7 +21772,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22551,7 +21781,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22561,7 +21790,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22571,7 +21799,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22581,7 +21808,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22591,7 +21817,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22601,7 +21826,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22697,7 +21921,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22707,7 +21930,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 47
 y 28
@@ -22723,7 +21945,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22739,7 +21960,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22755,7 +21975,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22771,7 +21990,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22787,7 +22005,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22803,7 +22020,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22819,7 +22035,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22871,7 +22086,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22887,7 +22101,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -22903,7 +22116,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23046,7 +22258,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23061,7 +22272,6 @@ x 48
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23071,7 +22281,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23081,7 +22290,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23091,7 +22299,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23101,7 +22308,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23111,7 +22317,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23121,7 +22326,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23233,7 +22437,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23249,7 +22452,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23265,7 +22467,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23281,7 +22482,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23297,7 +22497,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23313,7 +22512,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23329,7 +22527,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23345,7 +22542,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23417,7 +22613,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23433,7 +22628,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23449,7 +22643,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23459,7 +22652,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 48
 y 48
@@ -23594,7 +22786,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23609,7 +22800,6 @@ x 49
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23619,7 +22809,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23629,7 +22818,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23639,7 +22827,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23649,7 +22836,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23659,7 +22845,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23743,7 +22928,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23759,7 +22943,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23775,7 +22958,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23791,7 +22973,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23807,7 +22988,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23823,7 +23003,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23839,7 +23018,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23855,7 +23033,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23871,7 +23048,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23887,7 +23063,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23903,7 +23078,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -23913,7 +23087,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 49
 y 32
@@ -23929,7 +23102,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24013,7 +23185,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24029,7 +23200,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24045,7 +23215,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24251,7 +23420,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24267,7 +23435,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24283,7 +23450,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24299,7 +23465,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24315,7 +23480,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24331,7 +23495,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24347,7 +23510,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24455,7 +23617,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24471,7 +23632,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24487,7 +23647,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24501,7 +23660,6 @@ y 51
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24534,7 +23692,6 @@ y 52
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24545,7 +23702,6 @@ move_block all
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24555,7 +23711,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24565,7 +23720,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24575,7 +23729,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24585,7 +23738,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24595,7 +23747,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24605,7 +23756,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24615,7 +23765,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24625,7 +23774,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24635,7 +23783,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24645,7 +23792,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24655,7 +23801,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24665,7 +23810,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24675,7 +23819,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24761,7 +23904,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24777,7 +23919,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24793,7 +23934,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24809,7 +23949,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24825,7 +23964,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24841,7 +23979,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24857,7 +23994,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24873,7 +24009,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24883,7 +24018,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 51
 y 19
@@ -24899,7 +24033,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24915,7 +24048,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24931,7 +24063,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24947,7 +24078,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24963,7 +24093,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -24973,7 +24102,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 51
 y 24
@@ -24989,7 +24117,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25005,7 +24132,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25113,7 +24239,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25129,7 +24254,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25143,7 +24267,6 @@ y 51
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25176,7 +24299,6 @@ y 52
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25187,7 +24309,6 @@ move_block all
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25197,7 +24318,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25207,7 +24327,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25217,7 +24336,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25227,7 +24345,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25237,7 +24354,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25247,7 +24363,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25257,7 +24372,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25267,7 +24381,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25277,7 +24390,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25287,7 +24399,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25297,7 +24408,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25307,7 +24417,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25317,7 +24426,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25327,7 +24435,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25397,7 +24504,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25413,7 +24519,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25429,7 +24534,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25439,7 +24543,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 52
 y 11
@@ -25455,7 +24558,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25471,7 +24573,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25487,7 +24588,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25503,7 +24603,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25519,7 +24618,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25535,7 +24633,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25551,7 +24648,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25567,7 +24663,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25583,7 +24678,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25599,7 +24693,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25751,7 +24844,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25765,7 +24857,6 @@ y 51
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25798,7 +24889,6 @@ y 52
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25809,7 +24899,6 @@ move_block all
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25819,7 +24908,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25829,7 +24917,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25839,7 +24926,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25849,7 +24935,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25859,7 +24944,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25869,7 +24953,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25879,7 +24962,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25889,7 +24971,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25899,7 +24980,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25909,7 +24989,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25975,7 +25054,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -25991,7 +25069,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26007,7 +25084,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26023,7 +25099,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26039,7 +25114,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26055,7 +25129,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26071,7 +25144,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26087,7 +25159,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26097,7 +25168,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 53
 y 15
@@ -26113,7 +25183,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26129,7 +25198,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26145,7 +25213,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26161,7 +25228,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26177,7 +25243,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26455,7 +25520,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26471,7 +25535,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26481,7 +25544,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 54
 y 8
@@ -26497,7 +25559,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26513,7 +25574,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26529,7 +25589,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26804,7 +25863,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26825,7 +25883,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26841,7 +25898,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26851,7 +25907,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 55
 y 2
@@ -26867,7 +25922,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26883,7 +25937,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26899,7 +25952,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26915,7 +25967,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26931,7 +25982,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -26947,7 +25997,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27222,7 +26271,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27243,7 +26291,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27259,7 +26306,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27275,7 +26321,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27291,7 +26336,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27307,7 +26351,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27323,7 +26366,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27339,7 +26381,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27634,7 +26675,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27655,7 +26695,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27671,7 +26710,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27687,7 +26725,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27703,7 +26740,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27719,7 +26755,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -27729,7 +26764,6 @@ attacktype 16
 end
 arch door_look_1
 name ice
-name_pl ice
 face icecube.111
 x 57
 y 5
@@ -27745,7 +26779,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -28704,7 +27737,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -28719,7 +27751,6 @@ x 60
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -28729,7 +27760,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -28739,7 +27769,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29086,7 +28115,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29101,7 +28129,6 @@ x 61
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29111,7 +28138,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29121,7 +28147,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29131,7 +28156,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29141,7 +28165,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29560,7 +28583,6 @@ attacktype 1
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29575,7 +28597,6 @@ x 62
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29585,7 +28606,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29595,7 +28615,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29605,7 +28624,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29615,7 +28633,6 @@ attacktype 16
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29629,7 +28646,6 @@ y 5
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -29643,7 +28659,6 @@ y 6
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -30087,7 +29102,6 @@ y 2
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -30101,7 +29115,6 @@ y 3
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -30115,7 +29128,6 @@ y 4
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -30129,7 +29141,6 @@ y 5
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
@@ -30143,7 +29154,6 @@ y 6
 end
 arch permanent_lava
 name freezing water
-name_pl freezing water
 face deep_sea.111
 animation deep_sea
 dam 5
