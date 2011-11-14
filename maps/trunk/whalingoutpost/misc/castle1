@@ -11293,11 +11293,15 @@ arch cwall_1_2
 x 29
 y 51
 end
+arch swall_1_1_half
+x 29
+y 51
+end
 arch flagstone
 x 29
 y 52
 end
-arch swall_1_1
+arch swall_2_1_1
 x 29
 y 52
 end
@@ -11313,11 +11317,15 @@ arch flagstone
 x 29
 y 54
 end
-arch swall_1_2
+arch swall_2_1_1
 x 29
 y 54
 end
 arch istone
+x 29
+y 55
+end
+arch swall_1_2_half
 x 29
 y 55
 end
@@ -13532,11 +13540,15 @@ arch cwall_1_2
 x 34
 y 51
 end
+arch swall_1_1_half
+x 34
+y 51
+end
 arch flagstone
 x 34
 y 52
 end
-arch swall_1_1
+arch swall_2_1_1
 x 34
 y 52
 end
@@ -13552,11 +13564,15 @@ arch flagstone
 x 34
 y 54
 end
-arch swall_1_2
+arch swall_2_1_1
 x 34
 y 54
 end
 arch istone
+x 34
+y 55
+end
+arch swall_1_2_half
 x 34
 y 55
 end
