@@ -9,7 +9,7 @@ enter_x 6
 enter_y 23
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-14 Rick Tanner
+Modified: 2011-11-15 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -297,10 +297,6 @@ arch istone
 x 2
 y 16
 end
-arch snow5
-x 2
-y 16
-end
 arch cave3
 x 2
 y 16
@@ -309,19 +305,11 @@ arch istone
 x 2
 y 17
 end
-arch snow5
-x 2
-y 17
-end
 arch cave3
 x 2
 y 17
 end
 arch istone
-x 2
-y 18
-end
-arch snow4
 x 2
 y 18
 end
