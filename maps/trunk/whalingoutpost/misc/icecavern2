@@ -10,7 +10,7 @@ enter_x 3
 enter_y 14
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-06-07 Nicolas Weeger
+Modified: 2011-11-15 Rick Tanner
 endmsg
 end
 arch istone
@@ -20,7 +20,7 @@ end
 arch istone
 y 1
 end
-arch cave18
+arch cave24
 y 1
 end
 arch istone
@@ -41,7 +41,7 @@ end
 arch snow5
 y 4
 end
-arch cave17
+arch cave23
 y 4
 end
 arch istone
@@ -155,7 +155,7 @@ end
 arch snow5
 y 21
 end
-arch cave18
+arch cave24
 y 21
 end
 arch istone
@@ -251,7 +251,7 @@ end
 arch snow
 y 34
 end
-arch cave17
+arch cave23
 y 34
 end
 arch istone
@@ -449,7 +449,7 @@ end
 arch istone
 x 1
 end
-arch cave18
+arch cave24
 x 1
 end
 arch istone
@@ -516,7 +516,7 @@ arch snow
 x 1
 y 7
 end
-arch cave17
+arch cave23
 x 1
 y 7
 end
@@ -564,7 +564,7 @@ arch snow
 x 1
 y 13
 end
-arch cave18
+arch cave24
 x 1
 y 13
 end
@@ -832,7 +832,7 @@ arch istone
 x 1
 y 44
 end
-arch cave17
+arch cave23
 x 1
 y 44
 end
@@ -1070,7 +1070,7 @@ arch snow
 x 2
 y 8
 end
-arch cave17
+arch cave23
 x 2
 y 8
 end
@@ -1102,7 +1102,7 @@ arch snow
 x 2
 y 12
 end
-arch cave18
+arch cave24
 x 2
 y 12
 end
@@ -1374,7 +1374,7 @@ arch istone
 x 2
 y 49
 end
-arch cave17
+arch cave23
 x 2
 y 49
 end
@@ -1890,7 +1890,7 @@ arch istone
 x 3
 y 53
 end
-arch cave17
+arch cave23
 x 3
 y 53
 end
@@ -2862,7 +2862,7 @@ arch snow5
 x 5
 y 55
 end
-arch cave17
+arch cave23
 x 5
 y 55
 end
@@ -4178,7 +4178,7 @@ end
 arch snow
 x 9
 end
-arch cave19
+arch cave25
 x 9
 end
 arch snow
@@ -4281,7 +4281,7 @@ arch snow
 x 9
 y 20
 end
-arch cave20
+arch cave22
 x 9
 y 20
 end
@@ -4305,7 +4305,7 @@ arch snow
 x 9
 y 23
 end
-arch cave19
+arch cave25
 x 9
 y 23
 end
@@ -4529,7 +4529,7 @@ arch snow
 x 9
 y 57
 end
-arch cave17
+arch cave23
 x 9
 y 57
 end
@@ -4699,7 +4699,7 @@ arch snow
 x 10
 y 21
 end
-arch cave18
+arch cave24
 x 10
 y 21
 end
@@ -4715,7 +4715,7 @@ arch snow
 x 10
 y 23
 end
-arch cave17
+arch cave23
 x 10
 y 23
 end
@@ -4927,7 +4927,7 @@ arch snow
 x 10
 y 58
 end
-arch cave17
+arch cave23
 x 10
 y 58
 end
@@ -5069,7 +5069,7 @@ arch snow
 x 11
 y 20
 end
-arch cave18
+arch cave24
 x 11
 y 20
 end
@@ -5225,7 +5225,7 @@ arch snow
 x 11
 y 38
 end
-arch cave20
+arch cave22
 x 11
 y 38
 end
@@ -6009,7 +6009,7 @@ arch snow
 x 13
 y 20
 end
-arch cave19
+arch cave25
 x 13
 y 20
 end
@@ -6483,7 +6483,7 @@ arch snow
 x 14
 y 21
 end
-arch cave19
+arch cave25
 x 14
 y 21
 end
@@ -6511,7 +6511,7 @@ arch snow4
 x 14
 y 24
 end
-arch cave20
+arch cave22
 x 14
 y 24
 end
@@ -6643,7 +6643,7 @@ arch snow
 x 14
 y 42
 end
-arch cave18
+arch cave24
 x 14
 y 42
 end
@@ -6897,7 +6897,7 @@ arch snow
 x 15
 y 19
 end
-arch cave20
+arch cave22
 x 15
 y 19
 end
@@ -6941,7 +6941,7 @@ arch snow4
 x 15
 y 24
 end
-arch cave18
+arch cave24
 x 15
 y 24
 end
@@ -7145,7 +7145,7 @@ arch snow
 x 15
 y 59
 end
-arch cave17
+arch cave23
 x 15
 y 59
 end
@@ -7455,7 +7455,7 @@ arch snow
 x 16
 y 39
 end
-arch cave17
+arch cave23
 x 16
 y 39
 end
@@ -8083,7 +8083,7 @@ arch istone
 x 18
 y 11
 end
-arch cave20
+arch cave22
 x 18
 y 11
 end
@@ -8931,7 +8931,7 @@ arch snow5
 x 20
 y 13
 end
-arch cave19
+arch cave25
 x 20
 y 13
 end
@@ -8991,7 +8991,7 @@ arch snow
 x 20
 y 21
 end
-arch cave17
+arch cave23
 x 20
 y 21
 end
@@ -9265,7 +9265,7 @@ arch snow
 x 21
 y 1
 end
-arch cave19
+arch cave25
 x 21
 y 1
 end
@@ -10551,7 +10551,7 @@ arch snow
 x 24
 y 11
 end
-arch cave17
+arch cave23
 x 24
 y 11
 end
@@ -11129,7 +11129,7 @@ arch snow
 x 25
 y 31
 end
-arch cave20
+arch cave22
 x 25
 y 31
 end
@@ -11353,7 +11353,7 @@ arch istone
 x 25
 y 62
 end
-arch cave17
+arch cave23
 x 25
 y 62
 end
@@ -11567,7 +11567,7 @@ arch snow
 x 26
 y 31
 end
-arch cave18
+arch cave24
 x 26
 y 31
 end
@@ -11583,7 +11583,7 @@ arch snow
 x 26
 y 33
 end
-arch cave17
+arch cave23
 x 26
 y 33
 end
@@ -11603,7 +11603,7 @@ arch snow4
 x 26
 y 35
 end
-arch cave19
+arch cave25
 x 26
 y 35
 end
@@ -11791,7 +11791,7 @@ arch istone
 x 26
 y 63
 end
-arch cave17
+arch cave23
 x 26
 y 63
 end
@@ -11997,7 +11997,7 @@ arch snow
 x 27
 y 29
 end
-arch cave20
+arch cave22
 x 27
 y 29
 end
@@ -12069,7 +12069,7 @@ arch snow
 x 27
 y 35
 end
-arch cave17
+arch cave23
 x 27
 y 35
 end
@@ -12527,7 +12527,7 @@ arch snow
 x 28
 y 29
 end
-arch cave18
+arch cave24
 x 28
 y 29
 end
@@ -12747,7 +12747,7 @@ arch snow
 x 28
 y 46
 end
-arch cave20
+arch cave22
 x 28
 y 46
 end
@@ -13461,7 +13461,7 @@ arch snow4
 x 30
 y 2
 end
-arch cave19
+arch cave25
 x 30
 y 2
 end
@@ -13741,7 +13741,7 @@ arch snow
 x 30
 y 35
 end
-arch cave20
+arch cave22
 x 30
 y 35
 end
@@ -13749,7 +13749,7 @@ arch snow
 x 30
 y 36
 end
-arch cave18
+arch cave24
 x 30
 y 36
 end
@@ -13793,7 +13793,7 @@ arch snow
 x 30
 y 44
 end
-arch cave20
+arch cave22
 x 30
 y 44
 end
@@ -14203,7 +14203,7 @@ arch snow
 x 31
 y 33
 end
-arch cave20
+arch cave22
 x 31
 y 33
 end
@@ -14311,7 +14311,7 @@ arch snow
 x 31
 y 49
 end
-arch cave19
+arch cave25
 x 31
 y 49
 end
@@ -14676,7 +14676,7 @@ arch snow
 x 32
 y 33
 end
-arch cave18
+arch cave24
 x 32
 y 33
 end
@@ -14740,7 +14740,7 @@ arch snow
 x 32
 y 43
 end
-arch cave20
+arch cave22
 x 32
 y 43
 end
@@ -15210,7 +15210,7 @@ arch snow
 x 33
 y 45
 end
-arch cave18
+arch cave24
 x 33
 y 45
 end
@@ -15226,7 +15226,7 @@ arch snow
 x 33
 y 47
 end
-arch cave17
+arch cave23
 x 33
 y 47
 end
@@ -15640,7 +15640,7 @@ arch snow
 x 34
 y 44
 end
-arch cave18
+arch cave24
 x 34
 y 44
 end
@@ -15700,7 +15700,7 @@ arch snow
 x 34
 y 48
 end
-arch cave17
+arch cave23
 x 34
 y 48
 end
@@ -15826,7 +15826,7 @@ arch istone
 x 35
 y 1
 end
-arch cave18
+arch cave24
 x 35
 y 1
 end
@@ -16309,7 +16309,7 @@ end
 arch istone
 x 36
 end
-arch cave18
+arch cave24
 x 36
 end
 arch istone
@@ -16897,7 +16897,7 @@ arch snow
 x 37
 y 10
 end
-arch cave19
+arch cave25
 x 37
 y 10
 end
@@ -17001,7 +17001,7 @@ arch snow
 x 37
 y 25
 end
-arch cave20
+arch cave22
 x 37
 y 25
 end
@@ -17017,7 +17017,7 @@ arch snow
 x 37
 y 27
 end
-arch cave19
+arch cave25
 x 37
 y 27
 end
@@ -17105,7 +17105,7 @@ arch snow
 x 37
 y 43
 end
-arch cave17
+arch cave23
 x 37
 y 43
 end
@@ -17471,7 +17471,7 @@ arch snow
 x 38
 y 23
 end
-arch cave20
+arch cave22
 x 38
 y 23
 end
@@ -17615,7 +17615,7 @@ arch snow
 x 38
 y 44
 end
-arch cave19
+arch cave25
 x 38
 y 44
 end
@@ -18088,7 +18088,7 @@ arch snow
 x 39
 y 45
 end
-arch cave19
+arch cave25
 x 39
 y 45
 end
@@ -18253,7 +18253,7 @@ arch snow
 x 40
 y 8
 end
-arch cave20
+arch cave22
 x 40
 y 8
 end
@@ -18285,7 +18285,7 @@ arch snow
 x 40
 y 12
 end
-arch cave19
+arch cave25
 x 40
 y 12
 end
@@ -18337,7 +18337,7 @@ arch snow
 x 40
 y 21
 end
-arch cave20
+arch cave22
 x 40
 y 21
 end
@@ -18528,1174 +18528,1174 @@ end
 arch snow
 x 40
 y 44
-end
-arch cave17
-x 40
-y 44
-end
-arch snow
-x 40
-y 45
-end
-arch cave_15
-x 40
-y 45
-end
-arch snow
-x 40
-y 46
-end
-arch cave_15
-x 40
-y 46
-end
-arch snow
-x 40
-y 47
-end
-arch cave4
-x 40
-y 47
-end
-arch snow
-x 40
-y 48
-end
-arch snow
-x 40
-y 49
-end
-arch snow
-x 40
-y 50
-end
-arch snow
-x 40
-y 51
-end
-arch snow
-x 40
-y 52
-end
-arch snow
-x 40
-y 53
-end
-arch snow
-x 40
-y 54
-end
-arch snow
-x 40
-y 55
-end
-arch snow
-x 40
-y 56
-end
-arch snow
-x 40
-y 57
-end
-arch snow
-x 40
-y 58
-end
-arch snow
-x 40
-y 59
-end
-arch ancient_chinese_dragon
-x 40
-y 59
-end
-arch snow
-x 40
-y 60
-end
-arch istone
-x 40
-y 61
-end
-arch snow4
-x 40
-y 61
-end
-arch istone
-x 40
-y 62
-end
-arch snow5
-x 40
-y 62
-end
-arch cave15
-x 40
-y 62
-end
-arch istone
-x 40
-y 63
-end
-arch snow5
-x 40
-y 63
-end
-arch cave20
-x 40
-y 63
-end
-arch snow
-x 41
-end
-arch cave4
-x 41
-end
-arch snow
-x 41
-y 1
-end
-arch snow
-x 41
-y 2
-end
-arch snow
-x 41
-y 3
-end
-arch snow
-x 41
-y 4
-end
-arch snow
-x 41
-y 5
-end
-arch snow
-x 41
-y 6
-end
-arch snow
-x 41
-y 7
-end
-arch cave2
-x 41
-y 7
-end
-arch snow
-x 41
-y 8
-end
-arch cave_15
-x 41
-y 8
-end
-arch snow
-x 41
-y 9
-end
-arch cave_15
-x 41
-y 9
-end
-arch snow
-x 41
-y 10
-end
-arch cave_15
-x 41
-y 10
-end
-arch snow
-x 41
-y 11
-end
-arch cave_15
-x 41
-y 11
-end
-arch snow
-x 41
-y 12
-end
-arch cave_15
-x 41
-y 12
-end
-arch snow
-x 41
-y 13
-end
-arch cave19
-x 41
-y 13
-end
-arch snow
-x 41
-y 14
-end
-arch cave14
-x 41
-y 14
-end
-arch snow
-x 41
-y 15
-end
-arch cold_dragon
-x 41
-y 15
-end
-arch snow
-x 41
-y 16
-end
-arch snow
-x 41
-y 17
-end
-arch snow
-x 41
-y 18
-end
-arch snow
-x 41
-y 19
-end
-arch snow
-x 41
-y 20
-end
-arch cave2
-x 41
-y 20
-end
-arch snow
-x 41
-y 21
-end
-arch cave_15
-x 41
-y 21
-end
-arch snow
-x 41
-y 22
-end
-arch cave_15
-x 41
-y 22
-end
-arch snow
-x 41
-y 23
-end
-arch cave_15
-x 41
-y 23
-end
-arch snow
-x 41
-y 24
-end
-arch cave_15
-x 41
-y 24
-end
-arch snow
-x 41
-y 25
-end
-arch cave_15
-x 41
-y 25
-end
-arch snow
-x 41
-y 26
-end
-arch cave_15
-x 41
-y 26
-end
-arch snow
-x 41
-y 27
-end
-arch cave_15
-x 41
-y 27
-end
-arch snow
-x 41
-y 28
-end
-arch cave_15
-x 41
-y 28
-end
-arch istone
-x 41
-y 29
-end
-arch snow4
-x 41
-y 29
-end
-arch cave19
-x 41
-y 29
-end
-arch istone
-x 41
-y 30
-end
-arch snow5
-x 41
-y 30
-end
-arch cave14
-x 41
-y 30
-end
-arch istone
-x 41
-y 31
-end
-arch snow5
-x 41
-y 31
-end
-arch istone
-x 41
-y 32
-end
-arch snow5
-x 41
-y 32
-end
-arch istone
-x 41
-y 33
-end
-arch random_wealth
-x 41
-y 33
-end
-arch istone
-x 41
-y 34
-end
-arch random_wealth
-x 41
-y 34
-end
-arch istone
-x 41
-y 35
-end
-arch snow5
-x 41
-y 35
-end
-arch istone
-x 41
-y 36
-end
-arch random_wealth
-x 41
-y 36
-end
-arch istone
-x 41
-y 37
-end
-arch random_wealth
-x 41
-y 37
-end
-arch istone
-x 41
-y 38
-end
-arch random_wealth
-x 41
-y 38
-end
-arch legendary_chinese_dragon
-x 41
-y 38
-end
-arch istone
-x 41
-y 39
-end
-arch snow5
-x 41
-y 39
-end
-arch istone
-x 41
-y 40
-end
-arch snow5
-x 41
-y 40
-end
-arch istone
-x 41
-y 41
-end
-arch snow4
-x 41
-y 41
-end
-arch snow
-x 41
-y 42
-end
-arch snow
-x 41
-y 43
-end
-arch cold_dragon
-x 41
-y 43
-end
-arch snow
-x 41
-y 44
-end
-arch cave16
-x 41
-y 44
-end
-arch snow
-x 41
-y 45
-end
-arch cave3
-x 41
-y 45
-end
-arch snow
-x 41
-y 46
-end
-arch cave3
-x 41
-y 46
-end
-arch snow
-x 41
-y 47
-end
-arch cave13
-x 41
-y 47
-end
-arch snow
-x 41
-y 48
-end
-arch snow
-x 41
-y 49
-end
-arch snow
-x 41
-y 50
-end
-arch ancient_chinese_dragon
-x 41
-y 50
-end
-arch snow
-x 41
-y 51
-end
-arch snow
-x 41
-y 52
-end
-arch snow
-x 41
-y 53
-end
-arch snow
-x 41
-y 54
-end
-arch cold_dragon
-x 41
-y 54
-end
-arch snow
-x 41
-y 55
-end
-arch snow
-x 41
-y 56
-end
-arch snow
-x 41
-y 57
-end
-arch snow
-x 41
-y 58
-end
-arch snow
-x 41
-y 59
-end
-arch snow
-x 41
-y 60
-end
-arch istone
-x 41
-y 61
-end
-arch snow4
-x 41
-y 61
-end
-arch istone
-x 41
-y 62
-end
-arch snow4
-x 41
-y 62
-end
-arch cave2
-x 41
-y 62
-end
-arch istone
-x 41
-y 63
-end
-arch snow5
-x 41
-y 63
-end
-arch cave_15
-x 41
-y 63
-end
-arch snow
-x 42
-end
-arch cave4
-x 42
-end
-arch snow
-x 42
-y 1
-end
-arch ancient_chinese_dragon
-x 42
-y 1
-end
-arch snow
-x 42
-y 2
-end
-arch snow
-x 42
-y 3
-end
-arch snow
-x 42
-y 4
-end
-arch cold_dragon
-x 42
-y 4
-end
-arch snow
-x 42
-y 5
-end
-arch snow
-x 42
-y 6
-end
-arch snow
-x 42
-y 7
-end
-arch cave2
-x 42
-y 7
-end
-arch snow
-x 42
-y 8
-end
-arch cave_15
-x 42
-y 8
-end
-arch istone
-x 42
-y 9
-end
-arch snow4
-x 42
-y 9
-end
-arch cave_15
-x 42
-y 9
-end
-arch istone
-x 42
-y 10
-end
-arch snow4
-x 42
-y 10
-end
-arch cave_15
-x 42
-y 10
-end
-arch snow
-x 42
-y 11
-end
-arch cave_15
-x 42
-y 11
-end
-arch snow
-x 42
-y 12
-end
-arch cave_15
-x 42
-y 12
-end
-arch snow
-x 42
-y 13
-end
-arch cave_15
-x 42
-y 13
-end
-arch snow
-x 42
-y 14
-end
-arch cave4
-x 42
-y 14
-end
-arch snow
-x 42
-y 15
-end
-arch snow
-x 42
-y 16
-end
-arch snow
-x 42
-y 17
-end
-arch snow
-x 42
-y 18
-end
-arch snow
-x 42
-y 19
-end
-arch snow
-x 42
-y 20
-end
-arch cave2
-x 42
-y 20
-end
-arch snow
-x 42
-y 21
-end
-arch cave_15
-x 42
-y 21
-end
-arch snow
-x 42
-y 22
-end
-arch cave_15
-x 42
-y 22
-end
-arch snow
-x 42
-y 23
-end
-arch cave_15
-x 42
-y 23
-end
-arch snow
-x 42
-y 24
-end
-arch cave_15
-x 42
-y 24
-end
-arch snow
-x 42
-y 25
-end
-arch cave_15
-x 42
-y 25
-end
-arch snow
-x 42
-y 26
-end
-arch cave_15
-x 42
-y 26
-end
-arch snow
-x 42
-y 27
-end
-arch cave_15
-x 42
-y 27
-end
-arch snow
-x 42
-y 28
-end
-arch cave_15
-x 42
-y 28
-end
-arch istone
-x 42
-y 29
-end
-arch snow4
-x 42
-y 29
-end
-arch cave18
-x 42
-y 29
-end
-arch istone
-x 42
-y 30
-end
-arch snow5
-x 42
-y 30
-end
-arch cave13
-x 42
-y 30
-end
-arch istone
-x 42
-y 31
-end
-arch snow5
-x 42
-y 31
-end
-arch istone
-x 42
-y 32
-end
-arch random_wealth
-x 42
-y 32
-end
-arch legendary_chinese_dragon
-x 42
-y 32
-end
-arch istone
-x 42
-y 33
-end
-arch snow5
-x 42
-y 33
-end
-arch istone
-x 42
-y 34
-end
-arch random_wealth
-x 42
-y 34
-end
-arch istone
-x 42
-y 35
-end
-arch random_wealth
-x 42
-y 35
-end
-arch istone
-x 42
-y 36
-end
-arch random_wealth
-x 42
-y 36
-end
-arch legendary_chinese_dragon
-x 42
-y 36
-end
-arch istone
-x 42
-y 37
-end
-arch random_wealth
-x 42
-y 37
-end
-arch istone
-x 42
-y 38
-end
-arch snow5
-x 42
-y 38
-end
-arch istone
-x 42
-y 39
-end
-arch random_wealth
-x 42
-y 39
-end
-arch istone
-x 42
-y 40
-end
-arch snow5
-x 42
-y 40
-end
-arch cold_dragon
-x 42
-y 40
-end
-arch istone
-x 42
-y 41
-end
-arch snow4
-x 42
-y 41
-end
-arch snow
-x 42
-y 42
-end
-arch ancient_chinese_dragon
-x 42
-y 42
-end
-arch snow
-x 42
-y 43
-end
-arch snow
-x 42
-y 44
-end
-arch snow
-x 42
-y 45
-end
-arch ancient_chinese_dragon
-x 42
-y 45
-end
-arch snow
-x 42
-y 46
-end
-arch snow
-x 42
-y 47
-end
-arch snow
-x 42
-y 48
-end
-arch ancient_chinese_dragon
-x 42
-y 48
-end
-arch snow
-x 42
-y 49
-end
-arch snow
-x 42
-y 50
-end
-arch snow
-x 42
-y 51
-end
-arch snow
-x 42
-y 52
-end
-arch snow
-x 42
-y 53
-end
-arch snow
-x 42
-y 54
-end
-arch ancient_chinese_dragon
-x 42
-y 54
-end
-arch snow
-x 42
-y 55
-end
-arch snow
-x 42
-y 56
-end
-arch snow
-x 42
-y 57
-end
-arch ancient_chinese_dragon
-x 42
-y 57
-end
-arch snow
-x 42
-y 58
-end
-arch snow
-x 42
-y 59
-end
-arch snow
-x 42
-y 60
-end
-arch snow
-x 42
-y 61
-end
-arch cave15
-x 42
-y 61
-end
-arch istone
-x 42
-y 62
-end
-arch snow4
-x 42
-y 62
-end
-arch cave20
-x 42
-y 62
-end
-arch istone
-x 42
-y 63
-end
-arch snow4
-x 42
-y 63
-end
-arch cave_15
-x 42
-y 63
-end
-arch snow
-x 43
-end
-arch cave4
-x 43
-end
-arch snow
-x 43
-y 1
-end
-arch snow
-x 43
-y 2
-end
-arch snow
-x 43
-y 3
-end
-arch snow
-x 43
-y 4
-end
-arch ancient_chinese_dragon
-x 43
-y 4
-end
-arch snow
-x 43
-y 5
-end
-arch snow
-x 43
-y 6
-end
-arch snow
-x 43
-y 7
-end
-arch cave2
-x 43
-y 7
-end
-arch istone
-x 43
-y 8
-end
-arch snow4
-x 43
-y 8
-end
-arch cave_15
-x 43
-y 8
-end
-arch istone
-x 43
-y 9
-end
-arch snow4
-x 43
-y 9
-end
-arch cave_15
-x 43
-y 9
-end
-arch istone
-x 43
-y 10
-end
-arch snow4
-x 43
-y 10
-end
-arch cave_15
-x 43
-y 10
-end
-arch istone
-x 43
-y 11
-end
-arch snow4
-x 43
-y 11
-end
-arch cave_15
-x 43
-y 11
-end
-arch snow
-x 43
-y 12
-end
-arch cave_15
-x 43
-y 12
-end
-arch snow
-x 43
-y 13
-end
-arch cave_15
-x 43
-y 13
-end
-arch snow
-x 43
-y 14
-end
-arch cave4
-x 43
-y 14
-end
-arch snow
-x 43
-y 15
-end
-arch ancient_chinese_dragon
-x 43
-y 15
-end
-arch snow
-x 43
-y 16
-end
-arch snow
-x 43
-y 17
-end
-arch snow
-x 43
-y 18
-end
-arch ancient_chinese_dragon
-x 43
-y 18
-end
-arch snow
-x 43
-y 19
-end
-arch snow
-x 43
-y 20
-end
-arch cave16
-x 43
-y 20
-end
-arch snow
-x 43
-y 21
 end
 arch cave17
+x 40
+y 44
+end
+arch snow
+x 40
+y 45
+end
+arch cave_15
+x 40
+y 45
+end
+arch snow
+x 40
+y 46
+end
+arch cave_15
+x 40
+y 46
+end
+arch snow
+x 40
+y 47
+end
+arch cave4
+x 40
+y 47
+end
+arch snow
+x 40
+y 48
+end
+arch snow
+x 40
+y 49
+end
+arch snow
+x 40
+y 50
+end
+arch snow
+x 40
+y 51
+end
+arch snow
+x 40
+y 52
+end
+arch snow
+x 40
+y 53
+end
+arch snow
+x 40
+y 54
+end
+arch snow
+x 40
+y 55
+end
+arch snow
+x 40
+y 56
+end
+arch snow
+x 40
+y 57
+end
+arch snow
+x 40
+y 58
+end
+arch snow
+x 40
+y 59
+end
+arch ancient_chinese_dragon
+x 40
+y 59
+end
+arch snow
+x 40
+y 60
+end
+arch istone
+x 40
+y 61
+end
+arch snow4
+x 40
+y 61
+end
+arch istone
+x 40
+y 62
+end
+arch snow5
+x 40
+y 62
+end
+arch cave15
+x 40
+y 62
+end
+arch istone
+x 40
+y 63
+end
+arch snow5
+x 40
+y 63
+end
+arch cave22
+x 40
+y 63
+end
+arch snow
+x 41
+end
+arch cave4
+x 41
+end
+arch snow
+x 41
+y 1
+end
+arch snow
+x 41
+y 2
+end
+arch snow
+x 41
+y 3
+end
+arch snow
+x 41
+y 4
+end
+arch snow
+x 41
+y 5
+end
+arch snow
+x 41
+y 6
+end
+arch snow
+x 41
+y 7
+end
+arch cave2
+x 41
+y 7
+end
+arch snow
+x 41
+y 8
+end
+arch cave_15
+x 41
+y 8
+end
+arch snow
+x 41
+y 9
+end
+arch cave_15
+x 41
+y 9
+end
+arch snow
+x 41
+y 10
+end
+arch cave_15
+x 41
+y 10
+end
+arch snow
+x 41
+y 11
+end
+arch cave_15
+x 41
+y 11
+end
+arch snow
+x 41
+y 12
+end
+arch cave_15
+x 41
+y 12
+end
+arch snow
+x 41
+y 13
+end
+arch cave19
+x 41
+y 13
+end
+arch snow
+x 41
+y 14
+end
+arch cave14
+x 41
+y 14
+end
+arch snow
+x 41
+y 15
+end
+arch cold_dragon
+x 41
+y 15
+end
+arch snow
+x 41
+y 16
+end
+arch snow
+x 41
+y 17
+end
+arch snow
+x 41
+y 18
+end
+arch snow
+x 41
+y 19
+end
+arch snow
+x 41
+y 20
+end
+arch cave2
+x 41
+y 20
+end
+arch snow
+x 41
+y 21
+end
+arch cave_15
+x 41
+y 21
+end
+arch snow
+x 41
+y 22
+end
+arch cave_15
+x 41
+y 22
+end
+arch snow
+x 41
+y 23
+end
+arch cave_15
+x 41
+y 23
+end
+arch snow
+x 41
+y 24
+end
+arch cave_15
+x 41
+y 24
+end
+arch snow
+x 41
+y 25
+end
+arch cave_15
+x 41
+y 25
+end
+arch snow
+x 41
+y 26
+end
+arch cave_15
+x 41
+y 26
+end
+arch snow
+x 41
+y 27
+end
+arch cave_15
+x 41
+y 27
+end
+arch snow
+x 41
+y 28
+end
+arch cave_15
+x 41
+y 28
+end
+arch istone
+x 41
+y 29
+end
+arch snow4
+x 41
+y 29
+end
+arch cave25
+x 41
+y 29
+end
+arch istone
+x 41
+y 30
+end
+arch snow5
+x 41
+y 30
+end
+arch cave14
+x 41
+y 30
+end
+arch istone
+x 41
+y 31
+end
+arch snow5
+x 41
+y 31
+end
+arch istone
+x 41
+y 32
+end
+arch snow5
+x 41
+y 32
+end
+arch istone
+x 41
+y 33
+end
+arch random_wealth
+x 41
+y 33
+end
+arch istone
+x 41
+y 34
+end
+arch random_wealth
+x 41
+y 34
+end
+arch istone
+x 41
+y 35
+end
+arch snow5
+x 41
+y 35
+end
+arch istone
+x 41
+y 36
+end
+arch random_wealth
+x 41
+y 36
+end
+arch istone
+x 41
+y 37
+end
+arch random_wealth
+x 41
+y 37
+end
+arch istone
+x 41
+y 38
+end
+arch random_wealth
+x 41
+y 38
+end
+arch legendary_chinese_dragon
+x 41
+y 38
+end
+arch istone
+x 41
+y 39
+end
+arch snow5
+x 41
+y 39
+end
+arch istone
+x 41
+y 40
+end
+arch snow5
+x 41
+y 40
+end
+arch istone
+x 41
+y 41
+end
+arch snow4
+x 41
+y 41
+end
+arch snow
+x 41
+y 42
+end
+arch snow
+x 41
+y 43
+end
+arch cold_dragon
+x 41
+y 43
+end
+arch snow
+x 41
+y 44
+end
+arch cave16
+x 41
+y 44
+end
+arch snow
+x 41
+y 45
+end
+arch cave3
+x 41
+y 45
+end
+arch snow
+x 41
+y 46
+end
+arch cave3
+x 41
+y 46
+end
+arch snow
+x 41
+y 47
+end
+arch cave13
+x 41
+y 47
+end
+arch snow
+x 41
+y 48
+end
+arch snow
+x 41
+y 49
+end
+arch snow
+x 41
+y 50
+end
+arch ancient_chinese_dragon
+x 41
+y 50
+end
+arch snow
+x 41
+y 51
+end
+arch snow
+x 41
+y 52
+end
+arch snow
+x 41
+y 53
+end
+arch snow
+x 41
+y 54
+end
+arch cold_dragon
+x 41
+y 54
+end
+arch snow
+x 41
+y 55
+end
+arch snow
+x 41
+y 56
+end
+arch snow
+x 41
+y 57
+end
+arch snow
+x 41
+y 58
+end
+arch snow
+x 41
+y 59
+end
+arch snow
+x 41
+y 60
+end
+arch istone
+x 41
+y 61
+end
+arch snow4
+x 41
+y 61
+end
+arch istone
+x 41
+y 62
+end
+arch snow4
+x 41
+y 62
+end
+arch cave2
+x 41
+y 62
+end
+arch istone
+x 41
+y 63
+end
+arch snow5
+x 41
+y 63
+end
+arch cave_15
+x 41
+y 63
+end
+arch snow
+x 42
+end
+arch cave4
+x 42
+end
+arch snow
+x 42
+y 1
+end
+arch ancient_chinese_dragon
+x 42
+y 1
+end
+arch snow
+x 42
+y 2
+end
+arch snow
+x 42
+y 3
+end
+arch snow
+x 42
+y 4
+end
+arch cold_dragon
+x 42
+y 4
+end
+arch snow
+x 42
+y 5
+end
+arch snow
+x 42
+y 6
+end
+arch snow
+x 42
+y 7
+end
+arch cave2
+x 42
+y 7
+end
+arch snow
+x 42
+y 8
+end
+arch cave_15
+x 42
+y 8
+end
+arch istone
+x 42
+y 9
+end
+arch snow4
+x 42
+y 9
+end
+arch cave_15
+x 42
+y 9
+end
+arch istone
+x 42
+y 10
+end
+arch snow4
+x 42
+y 10
+end
+arch cave_15
+x 42
+y 10
+end
+arch snow
+x 42
+y 11
+end
+arch cave_15
+x 42
+y 11
+end
+arch snow
+x 42
+y 12
+end
+arch cave_15
+x 42
+y 12
+end
+arch snow
+x 42
+y 13
+end
+arch cave_15
+x 42
+y 13
+end
+arch snow
+x 42
+y 14
+end
+arch cave4
+x 42
+y 14
+end
+arch snow
+x 42
+y 15
+end
+arch snow
+x 42
+y 16
+end
+arch snow
+x 42
+y 17
+end
+arch snow
+x 42
+y 18
+end
+arch snow
+x 42
+y 19
+end
+arch snow
+x 42
+y 20
+end
+arch cave2
+x 42
+y 20
+end
+arch snow
+x 42
+y 21
+end
+arch cave_15
+x 42
+y 21
+end
+arch snow
+x 42
+y 22
+end
+arch cave_15
+x 42
+y 22
+end
+arch snow
+x 42
+y 23
+end
+arch cave_15
+x 42
+y 23
+end
+arch snow
+x 42
+y 24
+end
+arch cave_15
+x 42
+y 24
+end
+arch snow
+x 42
+y 25
+end
+arch cave_15
+x 42
+y 25
+end
+arch snow
+x 42
+y 26
+end
+arch cave_15
+x 42
+y 26
+end
+arch snow
+x 42
+y 27
+end
+arch cave_15
+x 42
+y 27
+end
+arch snow
+x 42
+y 28
+end
+arch cave_15
+x 42
+y 28
+end
+arch istone
+x 42
+y 29
+end
+arch snow4
+x 42
+y 29
+end
+arch cave24
+x 42
+y 29
+end
+arch istone
+x 42
+y 30
+end
+arch snow5
+x 42
+y 30
+end
+arch cave13
+x 42
+y 30
+end
+arch istone
+x 42
+y 31
+end
+arch snow5
+x 42
+y 31
+end
+arch istone
+x 42
+y 32
+end
+arch random_wealth
+x 42
+y 32
+end
+arch legendary_chinese_dragon
+x 42
+y 32
+end
+arch istone
+x 42
+y 33
+end
+arch snow5
+x 42
+y 33
+end
+arch istone
+x 42
+y 34
+end
+arch random_wealth
+x 42
+y 34
+end
+arch istone
+x 42
+y 35
+end
+arch random_wealth
+x 42
+y 35
+end
+arch istone
+x 42
+y 36
+end
+arch random_wealth
+x 42
+y 36
+end
+arch legendary_chinese_dragon
+x 42
+y 36
+end
+arch istone
+x 42
+y 37
+end
+arch random_wealth
+x 42
+y 37
+end
+arch istone
+x 42
+y 38
+end
+arch snow5
+x 42
+y 38
+end
+arch istone
+x 42
+y 39
+end
+arch random_wealth
+x 42
+y 39
+end
+arch istone
+x 42
+y 40
+end
+arch snow5
+x 42
+y 40
+end
+arch cold_dragon
+x 42
+y 40
+end
+arch istone
+x 42
+y 41
+end
+arch snow4
+x 42
+y 41
+end
+arch snow
+x 42
+y 42
+end
+arch ancient_chinese_dragon
+x 42
+y 42
+end
+arch snow
+x 42
+y 43
+end
+arch snow
+x 42
+y 44
+end
+arch snow
+x 42
+y 45
+end
+arch ancient_chinese_dragon
+x 42
+y 45
+end
+arch snow
+x 42
+y 46
+end
+arch snow
+x 42
+y 47
+end
+arch snow
+x 42
+y 48
+end
+arch ancient_chinese_dragon
+x 42
+y 48
+end
+arch snow
+x 42
+y 49
+end
+arch snow
+x 42
+y 50
+end
+arch snow
+x 42
+y 51
+end
+arch snow
+x 42
+y 52
+end
+arch snow
+x 42
+y 53
+end
+arch snow
+x 42
+y 54
+end
+arch ancient_chinese_dragon
+x 42
+y 54
+end
+arch snow
+x 42
+y 55
+end
+arch snow
+x 42
+y 56
+end
+arch snow
+x 42
+y 57
+end
+arch ancient_chinese_dragon
+x 42
+y 57
+end
+arch snow
+x 42
+y 58
+end
+arch snow
+x 42
+y 59
+end
+arch snow
+x 42
+y 60
+end
+arch snow
+x 42
+y 61
+end
+arch cave15
+x 42
+y 61
+end
+arch istone
+x 42
+y 62
+end
+arch snow4
+x 42
+y 62
+end
+arch cave22
+x 42
+y 62
+end
+arch istone
+x 42
+y 63
+end
+arch snow4
+x 42
+y 63
+end
+arch cave_15
+x 42
+y 63
+end
+arch snow
+x 43
+end
+arch cave4
+x 43
+end
+arch snow
+x 43
+y 1
+end
+arch snow
+x 43
+y 2
+end
+arch snow
+x 43
+y 3
+end
+arch snow
+x 43
+y 4
+end
+arch ancient_chinese_dragon
+x 43
+y 4
+end
+arch snow
+x 43
+y 5
+end
+arch snow
+x 43
+y 6
+end
+arch snow
+x 43
+y 7
+end
+arch cave2
+x 43
+y 7
+end
+arch istone
+x 43
+y 8
+end
+arch snow4
+x 43
+y 8
+end
+arch cave_15
+x 43
+y 8
+end
+arch istone
+x 43
+y 9
+end
+arch snow4
+x 43
+y 9
+end
+arch cave_15
+x 43
+y 9
+end
+arch istone
+x 43
+y 10
+end
+arch snow4
+x 43
+y 10
+end
+arch cave_15
+x 43
+y 10
+end
+arch istone
+x 43
+y 11
+end
+arch snow4
+x 43
+y 11
+end
+arch cave_15
+x 43
+y 11
+end
+arch snow
+x 43
+y 12
+end
+arch cave_15
+x 43
+y 12
+end
+arch snow
+x 43
+y 13
+end
+arch cave_15
+x 43
+y 13
+end
+arch snow
+x 43
+y 14
+end
+arch cave4
+x 43
+y 14
+end
+arch snow
+x 43
+y 15
+end
+arch ancient_chinese_dragon
+x 43
+y 15
+end
+arch snow
+x 43
+y 16
+end
+arch snow
+x 43
+y 17
+end
+arch snow
+x 43
+y 18
+end
+arch ancient_chinese_dragon
+x 43
+y 18
+end
+arch snow
+x 43
+y 19
+end
+arch snow
+x 43
+y 20
+end
+arch cave16
+x 43
+y 20
+end
+arch snow
+x 43
+y 21
+end
+arch cave23
 x 43
 y 21
 end
@@ -19974,7 +19974,7 @@ end
 arch snow
 x 44
 end
-arch cave19
+arch cave25
 x 44
 end
 arch snow
@@ -20169,7 +20169,7 @@ arch snow
 x 44
 y 26
 end
-arch cave18
+arch cave24
 x 44
 y 26
 end
@@ -20511,7 +20511,7 @@ arch snow5
 x 45
 y 10
 end
-arch cave17
+arch cave23
 x 45
 y 10
 end
@@ -20535,7 +20535,7 @@ arch snow4
 x 45
 y 12
 end
-arch cave18
+arch cave24
 x 45
 y 12
 end
@@ -21587,7 +21587,7 @@ arch snow5
 x 47
 y 35
 end
-arch cave20
+arch cave22
 x 47
 y 35
 end
@@ -22699,7 +22699,7 @@ arch snow
 x 49
 y 60
 end
-arch cave20
+arch cave22
 x 49
 y 60
 end
@@ -22889,7 +22889,7 @@ arch snow
 x 50
 y 21
 end
-arch cave20
+arch cave22
 x 50
 y 21
 end
@@ -23219,7 +23219,7 @@ arch snow
 x 51
 y 1
 end
-arch cave19
+arch cave25
 x 51
 y 1
 end
@@ -23351,7 +23351,7 @@ arch snow
 x 51
 y 17
 end
-arch cave20
+arch cave22
 x 51
 y 17
 end
@@ -23423,7 +23423,7 @@ arch snow
 x 51
 y 26
 end
-arch cave19
+arch cave25
 x 51
 y 26
 end
@@ -23511,7 +23511,7 @@ arch snow
 x 51
 y 39
 end
-arch cave18
+arch cave24
 x 51
 y 39
 end
@@ -24000,7 +24000,7 @@ arch snow
 x 52
 y 36
 end
-arch cave18
+arch cave24
 x 52
 y 36
 end
@@ -24673,7 +24673,7 @@ arch snow
 x 53
 y 59
 end
-arch cave20
+arch cave22
 x 53
 y 59
 end
@@ -25146,7 +25146,7 @@ arch snow4
 x 54
 y 58
 end
-arch cave20
+arch cave22
 x 54
 y 58
 end
@@ -25316,7 +25316,7 @@ arch snow
 x 55
 y 16
 end
-arch cave17
+arch cave23
 x 55
 y 16
 end
@@ -25387,486 +25387,486 @@ end
 arch snow
 x 55
 y 25
+end
+arch cave24
+x 55
+y 25
+end
+arch snow
+x 55
+y 26
+end
+arch cave3
+x 55
+y 26
+end
+arch snow
+x 55
+y 27
+end
+arch cave13
+x 55
+y 27
+end
+arch snow
+x 55
+y 28
+end
+arch snow
+x 55
+y 29
+end
+arch snow
+x 55
+y 30
+end
+arch snow
+x 55
+y 31
+end
+arch snow
+x 55
+y 32
+end
+arch snow
+x 55
+y 33
+end
+arch snow
+x 55
+y 34
+end
+arch ancient_chinese_dragon
+x 55
+y 34
+end
+arch snow
+x 55
+y 35
+end
+arch snow
+x 55
+y 36
+end
+arch cold_dragon
+x 55
+y 36
+end
+arch snow
+x 55
+y 37
+end
+arch snow
+x 55
+y 38
+end
+arch snow
+x 55
+y 39
+end
+arch cold_dragon
+x 55
+y 39
+end
+arch snow
+x 55
+y 40
+end
+arch snow
+x 55
+y 41
+end
+arch snow
+x 55
+y 42
+end
+arch ancient_chinese_dragon
+x 55
+y 42
+end
+arch snow
+x 55
+y 43
+end
+arch snow
+x 55
+y 44
+end
+arch cold_dragon
+x 55
+y 44
+end
+arch snow
+x 55
+y 45
+end
+arch snow
+x 55
+y 46
+end
+arch istone
+x 55
+y 47
+end
+arch snow4
+x 55
+y 47
+end
+arch istone
+x 55
+y 48
+end
+arch snow5
+x 55
+y 48
+end
+arch eternal_chinese_dragon
+x 55
+y 48
+end
+arch istone
+x 55
+y 49
+end
+arch snow5
+x 55
+y 49
+end
+arch istone
+x 55
+y 50
+end
+arch random_wealth
+x 55
+y 50
+end
+arch random_spells
+x 55
+y 50
+end
+arch istone
+x 55
+y 51
+end
+arch snow5
+x 55
+y 51
+end
+arch random_wealth
+x 55
+y 51
+end
+arch random_scroll
+x 55
+y 51
+end
+arch istone
+x 55
+y 52
+end
+arch random_wealth
+x 55
+y 52
+end
+arch istone
+x 55
+y 53
+end
+arch random_wealth
+x 55
+y 53
+end
+arch random_spells
+x 55
+y 53
+end
+arch istone
+x 55
+y 54
+end
+arch cave15
+x 55
+y 54
+end
+arch istone
+x 55
+y 55
+end
+arch snow5
+x 55
+y 55
+end
+arch cave20
+x 55
+y 55
+end
+arch istone
+x 55
+y 56
+end
+arch snow5
+x 55
+y 56
+end
+arch cave_15
+x 55
+y 56
+end
+arch istone
+x 55
+y 57
+end
+arch snow5
+x 55
+y 57
+end
+arch cave_15
+x 55
+y 57
+end
+arch istone
+x 55
+y 58
+end
+arch snow4
+x 55
+y 58
+end
+arch cave_15
+x 55
+y 58
+end
+arch snow
+x 55
+y 59
+end
+arch cave_15
+x 55
+y 59
+end
+arch snow
+x 55
+y 60
+end
+arch cave_15
+x 55
+y 60
+end
+arch snow
+x 55
+y 61
+end
+arch cave_15
+x 55
+y 61
+end
+arch snow
+x 55
+y 62
+end
+arch cave_15
+x 55
+y 62
+end
+arch snow
+x 55
+y 63
+end
+arch cave_15
+x 55
+y 63
+end
+arch istone
+x 56
+end
+arch cave_15
+x 56
+end
+arch istone
+x 56
+y 1
+end
+arch cave_15
+x 56
+y 1
+end
+arch istone
+x 56
+y 2
+end
+arch cave25
+x 56
+y 2
+end
+arch istone
+x 56
+y 3
+end
+arch snow5
+x 56
+y 3
+end
+arch cave14
+x 56
+y 3
+end
+arch istone
+x 56
+y 4
+end
+arch snow5
+x 56
+y 4
+end
+arch istone
+x 56
+y 5
+end
+arch snow5
+x 56
+y 5
+end
+arch istone
+x 56
+y 6
+end
+arch snow4
+x 56
+y 6
+end
+arch snow
+x 56
+y 7
+end
+arch ancient_chinese_dragon
+x 56
+y 7
+end
+arch snow
+x 56
+y 8
+end
+arch snow
+x 56
+y 9
+end
+arch snow
+x 56
+y 10
+end
+arch snow
+x 56
+y 11
+end
+arch ancient_chinese_dragon
+x 56
+y 11
+end
+arch snow
+x 56
+y 12
+end
+arch snow
+x 56
+y 13
+end
+arch ancient_chinese_dragon
+x 56
+y 13
+end
+arch snow
+x 56
+y 14
+end
+arch snow
+x 56
+y 15
+end
+arch snow
+x 56
+y 16
+end
+arch cave16
+x 56
+y 16
+end
+arch istone
+x 56
+y 17
+end
+arch snow4
+x 56
+y 17
+end
+arch cave3
+x 56
+y 17
+end
+arch istone
+x 56
+y 18
+end
+arch snow4
+x 56
+y 18
+end
+arch cave3
+x 56
+y 18
+end
+arch istone
+x 56
+y 19
+end
+arch snow4
+x 56
+y 19
+end
+arch cave23
+x 56
+y 19
+end
+arch istone
+x 56
+y 20
+end
+arch snow4
+x 56
+y 20
+end
+arch cave_15
+x 56
+y 20
+end
+arch snow
+x 56
+y 21
+end
+arch cave_15
+x 56
+y 21
+end
+arch snow
+x 56
+y 22
+end
+arch cave_15
+x 56
+y 22
+end
+arch snow
+x 56
+y 23
+end
+arch cave_15
+x 56
+y 23
+end
+arch snow
+x 56
+y 24
 end
 arch cave18
-x 55
-y 25
-end
-arch snow
-x 55
-y 26
-end
-arch cave3
-x 55
-y 26
-end
-arch snow
-x 55
-y 27
-end
-arch cave13
-x 55
-y 27
-end
-arch snow
-x 55
-y 28
-end
-arch snow
-x 55
-y 29
-end
-arch snow
-x 55
-y 30
-end
-arch snow
-x 55
-y 31
-end
-arch snow
-x 55
-y 32
-end
-arch snow
-x 55
-y 33
-end
-arch snow
-x 55
-y 34
-end
-arch ancient_chinese_dragon
-x 55
-y 34
-end
-arch snow
-x 55
-y 35
-end
-arch snow
-x 55
-y 36
-end
-arch cold_dragon
-x 55
-y 36
-end
-arch snow
-x 55
-y 37
-end
-arch snow
-x 55
-y 38
-end
-arch snow
-x 55
-y 39
-end
-arch cold_dragon
-x 55
-y 39
-end
-arch snow
-x 55
-y 40
-end
-arch snow
-x 55
-y 41
-end
-arch snow
-x 55
-y 42
-end
-arch ancient_chinese_dragon
-x 55
-y 42
-end
-arch snow
-x 55
-y 43
-end
-arch snow
-x 55
-y 44
-end
-arch cold_dragon
-x 55
-y 44
-end
-arch snow
-x 55
-y 45
-end
-arch snow
-x 55
-y 46
-end
-arch istone
-x 55
-y 47
-end
-arch snow4
-x 55
-y 47
-end
-arch istone
-x 55
-y 48
-end
-arch snow5
-x 55
-y 48
-end
-arch eternal_chinese_dragon
-x 55
-y 48
-end
-arch istone
-x 55
-y 49
-end
-arch snow5
-x 55
-y 49
-end
-arch istone
-x 55
-y 50
-end
-arch random_wealth
-x 55
-y 50
-end
-arch random_spells
-x 55
-y 50
-end
-arch istone
-x 55
-y 51
-end
-arch snow5
-x 55
-y 51
-end
-arch random_wealth
-x 55
-y 51
-end
-arch random_scroll
-x 55
-y 51
-end
-arch istone
-x 55
-y 52
-end
-arch random_wealth
-x 55
-y 52
-end
-arch istone
-x 55
-y 53
-end
-arch random_wealth
-x 55
-y 53
-end
-arch random_spells
-x 55
-y 53
-end
-arch istone
-x 55
-y 54
-end
-arch cave15
-x 55
-y 54
-end
-arch istone
-x 55
-y 55
-end
-arch snow5
-x 55
-y 55
-end
-arch cave20
-x 55
-y 55
-end
-arch istone
-x 55
-y 56
-end
-arch snow5
-x 55
-y 56
-end
-arch cave_15
-x 55
-y 56
-end
-arch istone
-x 55
-y 57
-end
-arch snow5
-x 55
-y 57
-end
-arch cave_15
-x 55
-y 57
-end
-arch istone
-x 55
-y 58
-end
-arch snow4
-x 55
-y 58
-end
-arch cave_15
-x 55
-y 58
-end
-arch snow
-x 55
-y 59
-end
-arch cave_15
-x 55
-y 59
-end
-arch snow
-x 55
-y 60
-end
-arch cave_15
-x 55
-y 60
-end
-arch snow
-x 55
-y 61
-end
-arch cave_15
-x 55
-y 61
-end
-arch snow
-x 55
-y 62
-end
-arch cave_15
-x 55
-y 62
-end
-arch snow
-x 55
-y 63
-end
-arch cave_15
-x 55
-y 63
-end
-arch istone
-x 56
-end
-arch cave_15
-x 56
-end
-arch istone
-x 56
-y 1
-end
-arch cave_15
-x 56
-y 1
-end
-arch istone
-x 56
-y 2
-end
-arch cave19
-x 56
-y 2
-end
-arch istone
-x 56
-y 3
-end
-arch snow5
-x 56
-y 3
-end
-arch cave14
-x 56
-y 3
-end
-arch istone
-x 56
-y 4
-end
-arch snow5
-x 56
-y 4
-end
-arch istone
-x 56
-y 5
-end
-arch snow5
-x 56
-y 5
-end
-arch istone
-x 56
-y 6
-end
-arch snow4
-x 56
-y 6
-end
-arch snow
-x 56
-y 7
-end
-arch ancient_chinese_dragon
-x 56
-y 7
-end
-arch snow
-x 56
-y 8
-end
-arch snow
-x 56
-y 9
-end
-arch snow
-x 56
-y 10
-end
-arch snow
-x 56
-y 11
-end
-arch ancient_chinese_dragon
-x 56
-y 11
-end
-arch snow
-x 56
-y 12
-end
-arch snow
-x 56
-y 13
-end
-arch ancient_chinese_dragon
-x 56
-y 13
-end
-arch snow
-x 56
-y 14
-end
-arch snow
-x 56
-y 15
-end
-arch snow
-x 56
-y 16
-end
-arch cave16
-x 56
-y 16
-end
-arch istone
-x 56
-y 17
-end
-arch snow4
-x 56
-y 17
-end
-arch cave3
-x 56
-y 17
-end
-arch istone
-x 56
-y 18
-end
-arch snow4
-x 56
-y 18
-end
-arch cave3
-x 56
-y 18
-end
-arch istone
-x 56
-y 19
-end
-arch snow4
-x 56
-y 19
-end
-arch cave17
-x 56
-y 19
-end
-arch istone
-x 56
-y 20
-end
-arch snow4
-x 56
-y 20
-end
-arch cave_15
-x 56
-y 20
-end
-arch snow
-x 56
-y 21
-end
-arch cave_15
-x 56
-y 21
-end
-arch snow
-x 56
-y 22
-end
-arch cave_15
-x 56
-y 22
-end
-arch snow
-x 56
-y 23
-end
-arch cave_15
-x 56
-y 23
-end
-arch snow
-x 56
-y 24
-end
-arch cave18
 x 56
 y 24
 end
@@ -26515,7 +26515,7 @@ arch snow5
 x 57
 y 53
 end
-arch cave20
+arch cave22
 x 57
 y 53
 end
@@ -26928,7 +26928,7 @@ arch snow4
 x 58
 y 50
 end
-arch cave20
+arch cave22
 x 58
 y 50
 end
@@ -27085,7 +27085,7 @@ arch snow
 x 59
 y 3
 end
-arch cave19
+arch cave25
 x 59
 y 3
 end
@@ -27385,7 +27385,7 @@ arch snow
 x 59
 y 48
 end
-arch cave20
+arch cave22
 x 59
 y 48
 end
@@ -27807,7 +27807,7 @@ arch snow
 x 60
 y 43
 end
-arch cave20
+arch cave22
 x 60
 y 43
 end
@@ -28013,7 +28013,7 @@ arch snow
 x 61
 y 5
 end
-arch cave19
+arch cave25
 x 61
 y 5
 end
@@ -28287,7 +28287,7 @@ arch snow
 x 61
 y 36
 end
-arch cave20
+arch cave22
 x 61
 y 36
 end
@@ -28581,7 +28581,7 @@ arch snow
 x 62
 y 9
 end
-arch cave19
+arch cave25
 x 62
 y 9
 end
@@ -28823,7 +28823,7 @@ arch snow
 x 62
 y 30
 end
-arch cave20
+arch cave22
 x 62
 y 30
 end
@@ -29229,7 +29229,7 @@ arch snow5
 x 63
 y 15
 end
-arch cave19
+arch cave25
 x 63
 y 15
 end
@@ -29325,7 +29325,7 @@ arch snow5
 x 63
 y 26
 end
-arch cave20
+arch cave22
 x 63
 y 26
 end
