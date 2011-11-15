@@ -3384,19 +3384,11 @@ arch cave2
 x 25
 y 24
 end
-arch blocked
+arch cave_15
 x 25
 y 25
 end
-arch dungeon_floor
-x 25
-y 26
-end
-arch mine6
-x 25
-y 26
-end
-arch blocked
+arch cave_15
 x 25
 y 26
 end
@@ -3420,79 +3412,39 @@ arch cave2
 x 25
 y 29
 end
-arch dungeon_floor
+arch cave_15
 x 25
 y 30
 end
-arch mine6
-x 25
-y 30
-end
-arch blocked
-x 25
-y 30
-end
-arch blocked
+arch cave_15
 x 25
 y 31
 end
-arch blocked
+arch cave_15
 x 25
 y 32
 end
-arch dungeon_floor
+arch cave_15
 x 25
 y 33
 end
-arch mine10
-x 25
-y 33
-end
-arch blocked
-x 25
-y 33
-end
-arch dungeon_floor
+arch cave_15
 x 25
 y 34
 end
-arch mine4
-x 25
-y 34
-end
-arch blocked
-x 25
-y 34
-end
-arch blocked
+arch cave_15
 x 25
 y 35
 end
-arch dungeon_floor
+arch cave_15
 x 25
 y 36
 end
-arch mine10
-x 25
-y 36
-end
-arch blocked
-x 25
-y 36
-end
-arch dungeon_floor
+arch cave_15
 x 25
 y 37
 end
-arch mine4
-x 25
-y 37
-end
-arch blocked
-x 25
-y 37
-end
-arch blocked
+arch cave_15
 x 25
 y 38
 end
@@ -3554,27 +3506,11 @@ arch cave2
 x 26
 y 24
 end
-arch dungeon_floor
+arch cave_15
 x 26
 y 25
 end
-arch mine10
-x 26
-y 25
-end
-arch blocked
-x 26
-y 25
-end
-arch dungeon_floor
-x 26
-y 26
-end
-arch mine13
-x 26
-y 26
-end
-arch blocked
+arch cave_15
 x 26
 y 26
 end
@@ -3712,15 +3648,7 @@ arch blocked
 x 26
 y 37
 end
-arch dungeon_floor
-x 26
-y 38
-end
-arch mine4
-x 26
-y 38
-end
-arch blocked
+arch cave_15
 x 26
 y 38
 end
@@ -3782,31 +3710,11 @@ arch cave2
 x 27
 y 24
 end
-arch dungeon_floor
+arch cave_15
 x 27
 y 25
 end
-arch mine9
-x 27
-y 25
-end
-arch blocked
-x 27
-y 25
-end
-arch dungeon_floor
-x 27
-y 26
-end
-arch snow4
-x 27
-y 26
-end
-arch mine17
-x 27
-y 26
-end
-arch blocked
+arch cave24
 x 27
 y 26
 end
@@ -3906,15 +3814,7 @@ arch blocked
 x 27
 y 37
 end
-arch dungeon_floor
-x 27
-y 38
-end
-arch mine12
-x 27
-y 38
-end
-arch blocked
+arch cave_15
 x 27
 y 38
 end
@@ -3976,7 +3876,7 @@ arch cave2
 x 28
 y 24
 end
-arch blocked
+arch cave_15
 x 28
 y 25
 end
@@ -4089,7 +3989,7 @@ arch blocked
 x 28
 y 37
 end
-arch blocked
+arch cave_15
 x 28
 y 38
 end
@@ -4151,27 +4051,11 @@ arch cave2
 x 29
 y 24
 end
-arch dungeon_floor
-x 29
-y 25
-end
-arch snow5
-x 29
-y 25
-end
-arch mine10
-x 29
-y 25
-end
-arch blocked
+arch cave_15
 x 29
 y 25
 end
 arch dungeon_floor
-x 29
-y 26
-end
-arch snow5
 x 29
 y 26
 end
@@ -4271,15 +4155,7 @@ arch blocked
 x 29
 y 37
 end
-arch dungeon_floor
-x 29
-y 38
-end
-arch mine4
-x 29
-y 38
-end
-arch blocked
+arch cave_15
 x 29
 y 38
 end
@@ -4341,23 +4217,11 @@ arch cave2
 x 30
 y 24
 end
-arch dungeon_floor
-x 30
-y 25
-end
-arch mine9
-x 30
-y 25
-end
-arch blocked
+arch cave_15
 x 30
 y 25
 end
 arch dungeon_floor
-x 30
-y 26
-end
-arch snow5
 x 30
 y 26
 end
@@ -4485,15 +4349,7 @@ arch blocked
 x 30
 y 37
 end
-arch dungeon_floor
-x 30
-y 38
-end
-arch mine12
-x 30
-y 38
-end
-arch blocked
+arch cave_15
 x 30
 y 38
 end
@@ -4555,7 +4411,7 @@ arch cave2
 x 31
 y 24
 end
-arch blocked
+arch cave_15
 x 31
 y 25
 end
@@ -4662,7 +4518,7 @@ arch blocked
 x 31
 y 37
 end
-arch blocked
+arch cave_15
 x 31
 y 38
 end
@@ -4724,7 +4580,7 @@ arch cave2
 x 32
 y 24
 end
-arch blocked
+arch cave_15
 x 32
 y 25
 end
@@ -4828,7 +4684,7 @@ arch blocked
 x 32
 y 37
 end
-arch blocked
+arch cave_15
 x 32
 y 38
 end
@@ -4890,15 +4746,7 @@ arch cave2
 x 33
 y 24
 end
-arch dungeon_floor
-x 33
-y 25
-end
-arch mine10
-x 33
-y 25
-end
-arch blocked
+arch cave_15
 x 33
 y 25
 end
@@ -4982,15 +4830,7 @@ arch blocked
 x 33
 y 37
 end
-arch dungeon_floor
-x 33
-y 38
-end
-arch mine4
-x 33
-y 38
-end
-arch blocked
+arch cave_15
 x 33
 y 38
 end
@@ -5052,15 +4892,7 @@ arch cave2
 x 34
 y 24
 end
-arch dungeon_floor
-x 34
-y 25
-end
-arch mine9
-x 34
-y 25
-end
-arch blocked
+arch cave_15
 x 34
 y 25
 end
@@ -5128,15 +4960,7 @@ arch blocked
 x 34
 y 37
 end
-arch dungeon_floor
-x 34
-y 38
-end
-arch mine12
-x 34
-y 38
-end
-arch blocked
+arch cave_15
 x 34
 y 38
 end
@@ -5198,7 +5022,7 @@ arch cave2
 x 35
 y 24
 end
-arch blocked
+arch cave_15
 x 35
 y 25
 end
@@ -5278,7 +5102,7 @@ arch blocked
 x 35
 y 37
 end
-arch blocked
+arch cave_15
 x 35
 y 38
 end
@@ -5340,15 +5164,7 @@ arch cave2
 x 36
 y 24
 end
-arch dungeon_floor
-x 36
-y 25
-end
-arch mine10
-x 36
-y 25
-end
-arch blocked
+arch cave_15
 x 36
 y 25
 end
@@ -5447,15 +5263,7 @@ arch blocked
 x 36
 y 37
 end
-arch dungeon_floor
-x 36
-y 38
-end
-arch mine4
-x 36
-y 38
-end
-arch blocked
+arch cave_15
 x 36
 y 38
 end
@@ -5517,15 +5325,7 @@ arch cave2
 x 37
 y 24
 end
-arch dungeon_floor
-x 37
-y 25
-end
-arch mine9
-x 37
-y 25
-end
-arch blocked
+arch cave_15
 x 37
 y 25
 end
@@ -5629,15 +5429,7 @@ arch blocked
 x 37
 y 37
 end
-arch dungeon_floor
-x 37
-y 38
-end
-arch mine12
-x 37
-y 38
-end
-arch blocked
+arch cave_15
 x 37
 y 38
 end
@@ -5699,123 +5491,59 @@ arch cave16
 x 38
 y 24
 end
-arch blocked
+arch cave_15
 x 38
 y 25
 end
-arch dungeon_floor
+arch cave_15
 x 38
 y 26
 end
-arch mine9
-x 38
-y 26
-end
-arch blocked
-x 38
-y 26
-end
-arch dungeon_floor
+arch cave_15
 x 38
 y 27
 end
-arch mine12
-x 38
-y 27
-end
-arch blocked
-x 38
-y 27
-end
-arch blocked
+arch cave_15
 x 38
 y 28
 end
-arch dungeon_floor
+arch cave_15
 x 38
 y 29
 end
-arch mine9
-x 38
-y 29
-end
-arch blocked
-x 38
-y 29
-end
-arch dungeon_floor
+arch cave_15
 x 38
 y 30
 end
-arch mine12
-x 38
-y 30
-end
-arch blocked
-x 38
-y 30
-end
-arch blocked
+arch cave_15
 x 38
 y 31
 end
-arch blocked
+arch cave_15
 x 38
 y 32
 end
-arch dungeon_floor
+arch cave_15
 x 38
 y 33
 end
-arch mine9
-x 38
-y 33
-end
-arch blocked
-x 38
-y 33
-end
-arch dungeon_floor
+arch cave_15
 x 38
 y 34
 end
-arch mine12
-x 38
-y 34
-end
-arch blocked
-x 38
-y 34
-end
-arch blocked
+arch cave_15
 x 38
 y 35
 end
-arch dungeon_floor
+arch cave_15
 x 38
 y 36
 end
-arch mine9
-x 38
-y 36
-end
-arch blocked
-x 38
-y 36
-end
-arch dungeon_floor
+arch cave_15
 x 38
 y 37
 end
-arch mine12
-x 38
-y 37
-end
-arch blocked
-x 38
-y 37
-end
-arch blocked
+arch cave_15
 x 38
 y 38
 end
