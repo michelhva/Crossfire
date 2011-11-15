@@ -136,6 +136,10 @@ arch slevel_3_2
 x 2
 y 8
 end
+arch swall_1_2_half
+x 2
+y 8
+end
 arch cwall_1_1
 x 2
 y 8
@@ -161,6 +165,10 @@ x 2
 y 10
 end
 arch cwall_1_2
+x 2
+y 10
+end
+arch swall_1_1_half
 x 2
 y 10
 end
@@ -228,6 +236,10 @@ arch slevel_3_2
 x 2
 y 53
 end
+arch swall_1_2_half
+x 2
+y 53
+end
 arch cwall_1_1
 x 2
 y 53
@@ -253,6 +265,10 @@ x 2
 y 55
 end
 arch cwall_1_2
+x 2
+y 55
+end
+arch swall_1_1_half
 x 2
 y 55
 end
@@ -308,6 +324,10 @@ arch slevel_2_2_2
 x 3
 y 5
 end
+arch swall_1_4_half
+x 3
+y 5
+end
 arch cwall_1_1
 x 3
 y 5
@@ -321,6 +341,10 @@ x 3
 y 6
 end
 arch cwall_1_2
+x 3
+y 6
+end
+arch swall_1_1_half
 x 3
 y 6
 end
@@ -372,6 +396,10 @@ arch slevel_3_2
 x 3
 y 12
 end
+arch swall_1_2_half
+x 3
+y 12
+end
 arch cwall_1_1
 x 3
 y 12
@@ -381,6 +409,10 @@ x 3
 y 13
 end
 arch slevel_2_2_1
+x 3
+y 13
+end
+arch swall_1_4_half
 x 3
 y 13
 end
@@ -416,6 +448,10 @@ arch slevel_2_2_2
 x 3
 y 50
 end
+arch swall_1_4_half
+x 3
+y 50
+end
 arch cwall_1_1
 x 3
 y 50
@@ -429,6 +465,10 @@ x 3
 y 51
 end
 arch cwall_1_2
+x 3
+y 51
+end
+arch swall_1_1_half
 x 3
 y 51
 end
@@ -480,6 +520,10 @@ arch slevel_3_2
 x 3
 y 57
 end
+arch swall_1_2_half
+x 3
+y 57
+end
 arch cwall_1_1
 x 3
 y 57
@@ -489,6 +533,10 @@ x 3
 y 58
 end
 arch slevel_2_2_1
+x 3
+y 58
+end
+arch swall_1_4_half
 x 3
 y 58
 end
@@ -752,6 +800,10 @@ arch cwall_1_4
 x 5
 y 3
 end
+arch swall_1_1_half
+x 5
+y 3
+end
 arch istone
 x 5
 y 4
@@ -865,6 +917,10 @@ arch slevel_2_2_1
 x 5
 y 15
 end
+arch swall_1_2_half
+x 5
+y 15
+end
 arch cwall_1_4
 x 5
 y 15
@@ -890,6 +946,10 @@ x 5
 y 48
 end
 arch cwall_1_4
+x 5
+y 48
+end
+arch swall_1_1_half
 x 5
 y 48
 end
@@ -1014,6 +1074,10 @@ arch slevel_2_2_1
 x 5
 y 60
 end
+arch swall_1_2_half
+x 5
+y 60
+end
 arch cwall_1_4
 x 5
 y 60
@@ -1038,6 +1102,10 @@ x 6
 y 3
 end
 arch slevel_3_3
+x 6
+y 3
+end
+arch swall_1_4_half
 x 6
 y 3
 end
@@ -1169,6 +1237,10 @@ x 6
 y 15
 end
 arch slevel_3_1
+x 6
+y 15
+end
+arch swall_1_4_half
 x 6
 y 15
 end
@@ -1204,6 +1276,10 @@ arch slevel_3_3
 x 6
 y 48
 end
+arch swall_1_4_half
+x 6
+y 48
+end
 arch cwall_1_3
 x 6
 y 48
@@ -1332,6 +1408,10 @@ x 6
 y 60
 end
 arch slevel_3_1
+x 6
+y 60
+end
+arch swall_1_4_half
 x 6
 y 60
 end
@@ -1717,6 +1797,10 @@ arch slevel_3_3
 x 8
 y 2
 end
+arch swall_1_3_half
+x 8
+y 2
+end
 arch cwall_1_4
 x 8
 y 2
@@ -1859,6 +1943,10 @@ x 8
 y 16
 end
 arch slevel_3_1
+x 8
+y 16
+end
+arch swall_1_3_half
 x 8
 y 16
 end
@@ -1886,6 +1974,10 @@ arch slevel_3_3
 x 8
 y 47
 end
+arch swall_1_3_half
+x 8
+y 47
+end
 arch cwall_1_4
 x 8
 y 47
@@ -2028,6 +2120,10 @@ x 8
 y 61
 end
 arch slevel_3_1
+x 8
+y 61
+end
+arch swall_1_3_half
 x 8
 y 61
 end
@@ -2385,6 +2481,10 @@ arch slevel_3_3
 x 10
 y 2
 end
+arch swall_1_4_half
+x 10
+y 2
+end
 arch cwall_1_3
 x 10
 y 2
@@ -2519,6 +2619,10 @@ x 10
 y 16
 end
 arch slevel_3_1
+x 10
+y 16
+end
+arch swall_1_4_half
 x 10
 y 16
 end
@@ -2546,6 +2650,10 @@ arch slevel_3_3
 x 10
 y 47
 end
+arch swall_1_4_half
+x 10
+y 47
+end
 arch cwall_1_3
 x 10
 y 47
@@ -2684,6 +2792,10 @@ x 10
 y 61
 end
 arch slevel_3_1
+x 10
+y 61
+end
+arch swall_1_4_half
 x 10
 y 61
 end
@@ -3038,6 +3150,10 @@ x 12
 y 3
 end
 arch slevel_3_3
+x 12
+y 3
+end
+arch swall_1_3_half
 x 12
 y 3
 end
@@ -3145,6 +3261,10 @@ x 12
 y 15
 end
 arch slevel_3_1
+x 12
+y 15
+end
+arch swall_1_3_half
 x 12
 y 15
 end
@@ -3181,6 +3301,10 @@ x 12
 y 48
 end
 arch slevel_3_3
+x 12
+y 48
+end
+arch swall_1_3_half
 x 12
 y 48
 end
@@ -3314,6 +3438,10 @@ arch slevel_3_1
 x 12
 y 60
 end
+arch swall_1_3_half
+x 12
+y 60
+end
 arch cwall_1_4
 x 12
 y 60
@@ -3342,6 +3470,10 @@ x 13
 y 3
 end
 arch cwall_1_3
+x 13
+y 3
+end
+arch swall_1_1_half
 x 13
 y 3
 end
@@ -3453,6 +3585,10 @@ arch slevel_2_2_4
 x 13
 y 15
 end
+arch swall_1_2_half
+x 13
+y 15
+end
 arch cwall_1_3
 x 13
 y 15
@@ -3474,6 +3610,10 @@ x 13
 y 48
 end
 arch cwall_1_3
+x 13
+y 48
+end
+arch swall_1_1_half
 x 13
 y 48
 end
@@ -3579,6 +3719,10 @@ x 13
 y 60
 end
 arch slevel_2_2_4
+x 13
+y 60
+end
+arch swall_1_2_half
 x 13
 y 60
 end
@@ -3838,6 +3982,10 @@ arch slevel_2_2_3
 x 15
 y 5
 end
+arch swall_1_3_half
+x 15
+y 5
+end
 arch cwall_1_1
 x 15
 y 5
@@ -3851,6 +3999,10 @@ x 15
 y 6
 end
 arch cwall_1_2
+x 15
+y 6
+end
+arch swall_1_1_half
 x 15
 y 6
 end
@@ -3902,6 +4054,10 @@ arch slevel_3_4
 x 15
 y 12
 end
+arch swall_1_2_half
+x 15
+y 12
+end
 arch cwall_1_1
 x 15
 y 12
@@ -3911,6 +4067,10 @@ x 15
 y 13
 end
 arch slevel_2_2_4
+x 15
+y 13
+end
+arch swall_1_3_half
 x 15
 y 13
 end
@@ -3946,6 +4106,10 @@ arch slevel_2_2_3
 x 15
 y 50
 end
+arch swall_1_3_half
+x 15
+y 50
+end
 arch cwall_1_1
 x 15
 y 50
@@ -3959,6 +4123,10 @@ x 15
 y 51
 end
 arch cwall_1_2
+x 15
+y 51
+end
+arch swall_1_1_half
 x 15
 y 51
 end
@@ -4010,6 +4178,10 @@ arch slevel_3_4
 x 15
 y 57
 end
+arch swall_1_2_half
+x 15
+y 57
+end
 arch cwall_1_1
 x 15
 y 57
@@ -4023,6 +4195,10 @@ x 15
 y 58
 end
 arch cwall_1_2
+x 15
+y 58
+end
+arch swall_1_3_half
 x 15
 y 58
 end
@@ -4070,6 +4246,10 @@ arch slevel_3_4
 x 16
 y 8
 end
+arch swall_1_2_half
+x 16
+y 8
+end
 arch cwall_1_1
 x 16
 y 8
@@ -4095,6 +4275,10 @@ x 16
 y 10
 end
 arch cwall_1_2
+x 16
+y 10
+end
+arch swall_1_1_half
 x 16
 y 10
 end
@@ -4158,6 +4342,10 @@ arch slevel_3_4
 x 16
 y 53
 end
+arch swall_1_2_half
+x 16
+y 53
+end
 arch cwall_1_1
 x 16
 y 53
@@ -4183,6 +4371,10 @@ x 16
 y 55
 end
 arch cwall_1_2
+x 16
+y 55
+end
+arch swall_1_1_half
 x 16
 y 55
 end
@@ -4839,6 +5031,10 @@ arch slevel_2_2_2
 x 27
 y 49
 end
+arch swall_1_4_half
+x 27
+y 49
+end
 arch cwall_1_1
 x 27
 y 49
@@ -4852,6 +5048,10 @@ x 27
 y 50
 end
 arch cwall_1_2
+x 27
+y 50
+end
+arch swall_1_1_half
 x 27
 y 50
 end
@@ -4872,6 +5072,10 @@ x 27
 y 52
 end
 arch slevel_3_2
+x 27
+y 52
+end
+arch swall_1_2_half
 x 27
 y 52
 end
@@ -4903,6 +5107,10 @@ arch cwall_1_2
 x 27
 y 54
 end
+arch swall_1_1_half
+x 27
+y 54
+end
 arch istone
 x 27
 y 55
@@ -4923,6 +5131,10 @@ arch slevel_3_2
 x 27
 y 56
 end
+arch swall_1_2_half
+x 27
+y 56
+end
 arch cwall_1_1
 x 27
 y 56
@@ -4932,6 +5144,10 @@ x 27
 y 57
 end
 arch slevel_2_2_1
+x 27
+y 57
+end
+arch swall_1_4_half
 x 27
 y 57
 end
@@ -5326,11 +5542,19 @@ arch slevel_2_2_3
 x 29
 y 49
 end
+arch swall_1_3_half
+x 29
+y 49
+end
 arch cwall_1_1
 x 29
 y 49
 end
 arch istone
+x 29
+y 50
+end
+arch swall_1_4_half
 x 29
 y 50
 end
@@ -5390,6 +5614,10 @@ arch istone
 x 29
 y 56
 end
+arch swall_1_4_half
+x 29
+y 56
+end
 arch cwall_1_1
 x 29
 y 56
@@ -5399,6 +5627,10 @@ x 29
 y 57
 end
 arch slevel_2_2_4
+x 29
+y 57
+end
+arch swall_1_3_half
 x 29
 y 57
 end
@@ -5822,6 +6054,10 @@ arch slevel_3_3
 x 31
 y 50
 end
+arch swall_1_3_half
+x 31
+y 50
+end
 arch cwall_1_4
 x 31
 y 50
@@ -5875,6 +6111,10 @@ x 31
 y 56
 end
 arch slevel_3_1
+x 31
+y 56
+end
+arch swall_1_3_half
 x 31
 y 56
 end
@@ -6024,6 +6264,10 @@ arch slevel_3_3
 x 32
 y 50
 end
+arch swall_1_4_half
+x 32
+y 50
+end
 arch cwall_1_3
 x 32
 y 50
@@ -6081,6 +6325,10 @@ x 32
 y 56
 end
 arch slevel_3_1
+x 32
+y 56
+end
+arch swall_1_4_half
 x 32
 y 56
 end
@@ -6468,11 +6716,19 @@ arch slevel_2_2_2
 x 34
 y 49
 end
+arch swall_1_4_half
+x 34
+y 49
+end
 arch cwall_1_1
 x 34
 y 49
 end
 arch istone
+x 34
+y 50
+end
+arch swall_1_3_half
 x 34
 y 50
 end
@@ -6532,6 +6788,10 @@ arch istone
 x 34
 y 56
 end
+arch swall_1_3_half
+x 34
+y 56
+end
 arch cwall_1_1
 x 34
 y 56
@@ -6541,6 +6801,10 @@ x 34
 y 57
 end
 arch slevel_2_2_1
+x 34
+y 57
+end
+arch swall_1_4_half
 x 34
 y 57
 end
@@ -6903,6 +7167,10 @@ arch slevel_2_2_3
 x 36
 y 49
 end
+arch swall_1_3_half
+x 36
+y 49
+end
 arch cwall_1_1
 x 36
 y 49
@@ -6916,6 +7184,10 @@ x 36
 y 50
 end
 arch cwall_1_2
+x 36
+y 50
+end
+arch swall_1_1_half
 x 36
 y 50
 end
@@ -6936,6 +7208,10 @@ x 36
 y 52
 end
 arch slevel_3_4
+x 36
+y 52
+end
+arch swall_1_2_half
 x 36
 y 52
 end
@@ -6967,6 +7243,10 @@ arch cwall_1_2
 x 36
 y 54
 end
+arch swall_1_1_half
+x 36
+y 54
+end
 arch istone
 x 36
 y 55
@@ -6987,6 +7267,10 @@ arch slevel_3_4
 x 36
 y 56
 end
+arch swall_1_2_half
+x 36
+y 56
+end
 arch cwall_1_1
 x 36
 y 56
@@ -6996,6 +7280,10 @@ x 36
 y 57
 end
 arch slevel_2_2_4
+x 36
+y 57
+end
+arch swall_1_3_half
 x 36
 y 57
 end
@@ -7502,6 +7790,10 @@ arch slevel_3_2
 x 47
 y 8
 end
+arch swall_1_2_half
+x 47
+y 8
+end
 arch cwall_1_1
 x 47
 y 8
@@ -7527,6 +7819,10 @@ x 47
 y 10
 end
 arch cwall_1_2
+x 47
+y 10
+end
+arch swall_1_1_half
 x 47
 y 10
 end
@@ -7614,6 +7910,10 @@ arch slevel_3_2
 x 47
 y 53
 end
+arch swall_1_2_half
+x 47
+y 53
+end
 arch cwall_1_1
 x 47
 y 53
@@ -7639,6 +7939,10 @@ x 47
 y 55
 end
 arch cwall_1_2
+x 47
+y 55
+end
+arch swall_1_1_half
 x 47
 y 55
 end
@@ -7694,6 +7998,10 @@ arch slevel_2_2_2
 x 48
 y 5
 end
+arch swall_1_4_half
+x 48
+y 5
+end
 arch cwall_1_1
 x 48
 y 5
@@ -7707,6 +8015,10 @@ x 48
 y 6
 end
 arch cwall_1_2
+x 48
+y 6
+end
+arch swall_1_1_half
 x 48
 y 6
 end
@@ -7766,6 +8078,10 @@ arch slevel_3_2
 x 48
 y 12
 end
+arch swall_1_2_half
+x 48
+y 12
+end
 arch cwall_1_1
 x 48
 y 12
@@ -7775,6 +8091,10 @@ x 48
 y 13
 end
 arch slevel_2_2_1
+x 48
+y 13
+end
+arch swall_1_4_half
 x 48
 y 13
 end
@@ -7834,6 +8154,10 @@ arch slevel_2_2_2
 x 48
 y 50
 end
+arch swall_1_4_half
+x 48
+y 50
+end
 arch cwall_1_1
 x 48
 y 50
@@ -7847,6 +8171,10 @@ x 48
 y 51
 end
 arch cwall_1_2
+x 48
+y 51
+end
+arch swall_1_1_half
 x 48
 y 51
 end
@@ -7910,6 +8238,10 @@ arch slevel_3_2
 x 48
 y 57
 end
+arch swall_1_2_half
+x 48
+y 57
+end
 arch cwall_1_1
 x 48
 y 57
@@ -7919,6 +8251,10 @@ x 48
 y 58
 end
 arch slevel_2_2_1
+x 48
+y 58
+end
+arch swall_1_4_half
 x 48
 y 58
 end
@@ -8234,6 +8570,10 @@ arch cwall_1_4
 x 50
 y 3
 end
+arch swall_1_1_half
+x 50
+y 3
+end
 arch istone
 x 50
 y 4
@@ -8362,6 +8702,10 @@ arch slevel_2_2_1
 x 50
 y 15
 end
+arch swall_1_2_half
+x 50
+y 15
+end
 arch cwall_1_4
 x 50
 y 15
@@ -8383,6 +8727,10 @@ x 50
 y 48
 end
 arch cwall_1_4
+x 50
+y 48
+end
+arch swall_1_1_half
 x 50
 y 48
 end
@@ -8523,6 +8871,10 @@ arch slevel_2_2_1
 x 50
 y 60
 end
+arch swall_1_2_half
+x 50
+y 60
+end
 arch cwall_1_4
 x 50
 y 60
@@ -8544,6 +8896,10 @@ x 51
 y 3
 end
 arch slevel_3_3
+x 51
+y 3
+end
+arch swall_1_4_half
 x 51
 y 3
 end
@@ -8678,6 +9034,10 @@ arch slevel_3_1
 x 51
 y 15
 end
+arch swall_1_4_half
+x 51
+y 15
+end
 arch cwall_1_3
 x 51
 y 15
@@ -8711,6 +9071,10 @@ x 51
 y 48
 end
 arch slevel_3_3
+x 51
+y 48
+end
+arch swall_1_4_half
 x 51
 y 48
 end
@@ -8880,6 +9244,10 @@ arch slevel_3_1
 x 51
 y 60
 end
+arch swall_1_4_half
+x 51
+y 60
+end
 arch cwall_1_3
 x 51
 y 60
@@ -9270,6 +9638,10 @@ arch slevel_3_3
 x 53
 y 2
 end
+arch swall_1_3_half
+x 53
+y 2
+end
 arch cwall_1_4
 x 53
 y 2
@@ -9419,6 +9791,10 @@ arch slevel_3_1
 x 53
 y 16
 end
+arch swall_1_3_half
+x 53
+y 16
+end
 arch cwall_1_4
 x 53
 y 16
@@ -9436,6 +9812,10 @@ x 53
 y 47
 end
 arch slevel_3_3
+x 53
+y 47
+end
+arch swall_1_3_half
 x 53
 y 47
 end
@@ -9617,6 +9997,10 @@ x 53
 y 61
 end
 arch slevel_3_1
+x 53
+y 61
+end
+arch swall_1_3_half
 x 53
 y 61
 end
@@ -10001,6 +10385,10 @@ arch slevel_3_3
 x 55
 y 2
 end
+arch swall_1_4_half
+x 55
+y 2
+end
 arch cwall_1_3
 x 55
 y 2
@@ -10158,6 +10546,10 @@ arch slevel_3_1
 x 55
 y 16
 end
+arch swall_1_4_half
+x 55
+y 16
+end
 arch cwall_1_3
 x 55
 y 16
@@ -10179,6 +10571,10 @@ x 55
 y 47
 end
 arch slevel_3_3
+x 55
+y 47
+end
+arch swall_1_4_half
 x 55
 y 47
 end
@@ -10348,6 +10744,10 @@ x 55
 y 61
 end
 arch slevel_3_1
+x 55
+y 61
+end
+arch swall_1_4_half
 x 55
 y 61
 end
@@ -10729,6 +11129,10 @@ arch slevel_3_3
 x 57
 y 3
 end
+arch swall_1_3_half
+x 57
+y 3
+end
 arch cwall_1_4
 x 57
 y 3
@@ -10848,6 +11252,10 @@ arch slevel_3_1
 x 57
 y 15
 end
+arch swall_1_3_half
+x 57
+y 15
+end
 arch cwall_1_4
 x 57
 y 15
@@ -10873,6 +11281,10 @@ x 57
 y 48
 end
 arch slevel_3_3
+x 57
+y 48
+end
+arch swall_1_3_half
 x 57
 y 48
 end
@@ -11023,6 +11435,10 @@ arch slevel_3_1
 x 57
 y 60
 end
+arch swall_1_3_half
+x 57
+y 60
+end
 arch cwall_1_4
 x 57
 y 60
@@ -11052,6 +11468,10 @@ x 58
 y 3
 end
 arch cwall_1_3
+x 58
+y 3
+end
+arch swall_1_1_half
 x 58
 y 3
 end
@@ -11148,6 +11568,10 @@ arch slevel_2_2_4
 x 58
 y 15
 end
+arch swall_1_2_half
+x 58
+y 15
+end
 arch cwall_1_3
 x 58
 y 15
@@ -11173,6 +11597,10 @@ x 58
 y 48
 end
 arch cwall_1_3
+x 58
+y 48
+end
+arch swall_1_1_half
 x 58
 y 48
 end
@@ -11282,6 +11710,10 @@ x 58
 y 60
 end
 arch slevel_2_2_4
+x 58
+y 60
+end
+arch swall_1_2_half
 x 58
 y 60
 end
@@ -11521,6 +11953,10 @@ arch slevel_2_2_3
 x 60
 y 5
 end
+arch swall_1_3_half
+x 60
+y 5
+end
 arch cwall_1_1
 x 60
 y 5
@@ -11534,6 +11970,10 @@ x 60
 y 6
 end
 arch cwall_1_2
+x 60
+y 6
+end
+arch swall_1_1_half
 x 60
 y 6
 end
@@ -11585,6 +12025,10 @@ arch slevel_3_4
 x 60
 y 12
 end
+arch swall_1_2_half
+x 60
+y 12
+end
 arch cwall_1_1
 x 60
 y 12
@@ -11594,6 +12038,10 @@ x 60
 y 13
 end
 arch slevel_2_2_4
+x 60
+y 13
+end
+arch swall_1_3_half
 x 60
 y 13
 end
@@ -11625,6 +12073,10 @@ arch slevel_2_2_3
 x 60
 y 50
 end
+arch swall_1_3_half
+x 60
+y 50
+end
 arch cwall_1_1
 x 60
 y 50
@@ -11638,6 +12090,10 @@ x 60
 y 51
 end
 arch cwall_1_2
+x 60
+y 51
+end
+arch swall_1_1_half
 x 60
 y 51
 end
@@ -11693,6 +12149,10 @@ arch slevel_3_4
 x 60
 y 57
 end
+arch swall_1_2_half
+x 60
+y 57
+end
 arch cwall_1_1
 x 60
 y 57
@@ -11702,6 +12162,10 @@ x 60
 y 58
 end
 arch slevel_2_2_4
+x 60
+y 58
+end
+arch swall_1_3_half
 x 60
 y 58
 end
@@ -11753,6 +12217,10 @@ arch slevel_3_4
 x 61
 y 8
 end
+arch swall_1_2_half
+x 61
+y 8
+end
 arch cwall_1_1
 x 61
 y 8
@@ -11778,6 +12246,10 @@ x 61
 y 10
 end
 arch cwall_1_2
+x 61
+y 10
+end
+arch swall_1_1_half
 x 61
 y 10
 end
@@ -11837,6 +12309,10 @@ arch slevel_3_4
 x 61
 y 53
 end
+arch swall_1_2_half
+x 61
+y 53
+end
 arch cwall_1_1
 x 61
 y 53
@@ -11862,6 +12338,10 @@ x 61
 y 55
 end
 arch cwall_1_2
+x 61
+y 55
+end
+arch swall_1_1_half
 x 61
 y 55
 end
