@@ -9,7 +9,7 @@ enter_x 26
 enter_y 33
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-14 Rick Tanner
+Modified: 2011-11-15 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -322,7 +322,7 @@ x 2
 y 10
 attacktype 16
 end
-arch cave18
+arch cave24
 x 2
 y 10
 end
@@ -743,7 +743,7 @@ x 4
 y 16
 attacktype 16
 end
-arch cave17
+arch cave23
 x 4
 y 16
 end
@@ -854,7 +854,7 @@ arch istone
 x 5
 y 8
 end
-arch cave18
+arch cave24
 x 5
 y 8
 end
@@ -950,7 +950,7 @@ x 5
 y 18
 attacktype 16
 end
-arch cave17
+arch cave23
 x 5
 y 18
 end
@@ -1356,7 +1356,7 @@ arch istone
 x 7
 y 22
 end
-arch cave17
+arch cave23
 x 7
 y 22
 end
@@ -1439,7 +1439,7 @@ arch istone
 x 8
 y 7
 end
-arch cave18
+arch cave24
 x 8
 y 7
 end
@@ -1574,7 +1574,7 @@ arch istone
 x 8
 y 26
 end
-arch cave17
+arch cave23
 x 8
 y 26
 end
@@ -1955,19 +1955,11 @@ arch istone
 x 10
 y 27
 end
-arch snow5
-x 10
-y 27
-end
 arch cave16
 x 10
 y 27
 end
 arch istone
-x 10
-y 28
-end
-arch snow4
 x 10
 y 28
 end
@@ -1979,7 +1971,7 @@ arch istone
 x 10
 y 29
 end
-arch cave17
+arch cave23
 x 10
 y 29
 end
@@ -2206,7 +2198,7 @@ arch snow
 x 11
 y 31
 end
-arch cave17
+arch cave23
 x 11
 y 31
 end
@@ -2415,7 +2407,7 @@ arch snow
 x 12
 y 32
 end
-arch cave17
+arch cave23
 x 12
 y 32
 end
@@ -2647,7 +2639,7 @@ arch istone
 x 14
 y 4
 end
-arch cave18
+arch cave24
 x 14
 y 4
 end
@@ -3256,7 +3248,7 @@ arch istone
 x 17
 y 2
 end
-arch cave18
+arch cave24
 x 17
 y 2
 end
@@ -3705,7 +3697,7 @@ arch istone
 x 19
 y 1
 end
-arch cave18
+arch cave24
 x 19
 y 1
 end
@@ -4143,7 +4135,7 @@ arch snow
 x 20
 y 31
 end
-arch cave20
+arch cave22
 x 20
 y 31
 end
@@ -4226,7 +4218,7 @@ arch istone
 x 21
 y 9
 end
-arch cave19
+arch cave25
 x 21
 y 9
 end
@@ -4367,7 +4359,7 @@ arch snow
 x 21
 y 30
 end
-arch cave20
+arch cave22
 x 21
 y 30
 end
@@ -4566,10 +4558,6 @@ arch istone
 x 22
 y 28
 end
-arch snow5
-x 22
-y 28
-end
 arch cave2
 x 22
 y 28
@@ -4669,7 +4657,7 @@ arch istone
 x 23
 y 8
 end
-arch cave17
+arch cave23
 x 23
 y 8
 end
@@ -4685,7 +4673,7 @@ arch istone
 x 23
 y 11
 end
-arch cave19
+arch cave25
 x 23
 y 11
 end
@@ -4801,7 +4789,7 @@ arch istone
 x 23
 y 28
 end
-arch cave20
+arch cave22
 x 23
 y 28
 end
@@ -5038,7 +5026,7 @@ arch istone
 x 25
 y 1
 end
-arch cave19
+arch cave25
 x 25
 y 1
 end
@@ -5429,7 +5417,7 @@ arch istone
 x 26
 y 25
 end
-arch cave20
+arch cave22
 x 26
 y 25
 end
@@ -5484,7 +5472,7 @@ arch istone
 x 27
 y 2
 end
-arch cave19
+arch cave25
 x 27
 y 2
 end
@@ -5711,7 +5699,7 @@ arch istone
 x 28
 y 3
 end
-arch cave19
+arch cave25
 x 28
 y 3
 end
@@ -5832,7 +5820,7 @@ x 28
 y 21
 attacktype 16
 end
-arch cave20
+arch cave22
 x 28
 y 21
 end
@@ -6016,7 +6004,7 @@ arch istone
 x 29
 y 19
 end
-arch cave20
+arch cave22
 x 29
 y 19
 end
@@ -6115,7 +6103,7 @@ arch istone
 x 30
 y 6
 end
-arch cave19
+arch cave25
 x 30
 y 6
 end
@@ -6294,7 +6282,7 @@ arch istone
 x 31
 y 9
 end
-arch cave19
+arch cave25
 x 31
 y 9
 end
@@ -6469,7 +6457,7 @@ arch istone
 x 32
 y 12
 end
-arch cave19
+arch cave25
 x 32
 y 12
 end
@@ -6493,7 +6481,7 @@ arch istone
 x 32
 y 15
 end
-arch cave20
+arch cave22
 x 32
 y 15
 end
