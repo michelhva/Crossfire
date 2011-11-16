@@ -70,7 +70,7 @@ public class GUIQuestList extends GUIItemList {
      */
     @Override
     protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
-        final Quest quest = questsManager.getQuest(index) ;
+        final Quest quest = questsManager.getQuest(index);
         if (quest == null) {
             setTooltipText(null, x, y, w, h);
             return;
