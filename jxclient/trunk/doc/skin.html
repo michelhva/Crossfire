@@ -418,9 +418,10 @@
     </li>
     <li>&lt;enable-history&gt; specifies whether access to the command history
         should be provided: <code>true</code> enabled <code>Page Up</code> and
-        <code>Page Down</code> keys for history recall. For now each input field
-        maintains a separate history which is not retained across client
-        restarts.
+        <code>Page Down</code> keys for history recall. Each input field
+        maintains a separate history except for input fields having the same
+        &lt;name&gt;: these input fields share the command history. For now the
+        command history is not retained across client restarts.
     </li>
 </ul>
 

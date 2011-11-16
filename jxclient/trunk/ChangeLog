@@ -1,5 +1,8 @@
 2011-11-16  Andreas Kirschbaum
 
+	* Share the command history for text input fields having the same
+	name in skin file.
+
 	* Properly disable command history access if "enable-history"
 	parameter is unset in skin file.
 
