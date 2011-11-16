@@ -122,4 +122,16 @@ public class CommandHistory {
         return commandIndex < commands.size() ? commands.get(commandIndex) : null;
     }
 
+    /**
+     * Returns the last executed command.
+     * @param index the index of the command; 0=last command, 1=second to last,
+     * etc.
+     * @return the last executed command or <code>null</code> if the index is
+     *         invalid
+     */
+    @Nullable
+    public String last(final int index) {
+        return index >= commands.size() ? null : commands.get(commands.size()-index-1);
+    }
+
 }
