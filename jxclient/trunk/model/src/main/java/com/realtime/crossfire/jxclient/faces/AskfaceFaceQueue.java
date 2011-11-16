@@ -78,8 +78,7 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
 
     /**
      * Creates a new instance.
-     * @param askfaceQueue the connection instance for sending
-     * askface commands
+     * @param askfaceQueue the connection instance for sending askface commands
      */
     public AskfaceFaceQueue(@NotNull final AskfaceQueue askfaceQueue) {
         this.askfaceQueue = askfaceQueue;

@@ -38,7 +38,6 @@ public class SelectCommand implements GUICommand {
     private final GUISelectable element;
 
     /**
-     *
      * Whether to select the {@link #element}.
      */
     private final boolean selected;

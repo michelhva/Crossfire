@@ -785,7 +785,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
                         processAddQuest(packet);
                         return;
-                        
+
                     case 's':
                         if (packet.get() != 'p') {
                             break;

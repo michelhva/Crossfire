@@ -41,8 +41,9 @@ public class QuestComparator implements Comparator<Quest>, Serializable {
     @Override
     public int compare(@NotNull final Quest o1, @NotNull final Quest o2) {
         final int cmp = String.CASE_INSENSITIVE_ORDER.compare(o1.getTitle(), o2.getTitle());
-        if (cmp != 0)
+        if (cmp != 0) {
             return cmp;
+        }
 
         return (o1.getCode() < o2.getCode()) ? -1 : (o1.getCode() > o2.getCode() ? 1 : 0);
     }

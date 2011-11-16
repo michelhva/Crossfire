@@ -56,7 +56,6 @@ public class Quest {
      */
     private final boolean replay;
 
-    
     /**
      * Quest internal code of this quest's parent, 0 if no parent.
      */
@@ -79,7 +78,8 @@ public class Quest {
      * @param title the quest's title.
      * @param face the quest's face.
      * @param replay if 1 the quest can be replayed.
-    * @param parent quest internal code of this quest's parent, 0 if no parent.
+     * @param parent quest internal code of this quest's parent, 0 if no
+     * parent.
      * @param end if 1 the quest is completed.
      * @param step current quest's step.
      */

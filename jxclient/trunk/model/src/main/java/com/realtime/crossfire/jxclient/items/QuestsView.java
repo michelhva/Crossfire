@@ -60,7 +60,7 @@ public class QuestsView extends AbstractItemView {
             public void questAdded(final int index) {
                 addModifiedRange(index, questsManager.getQuests());
             }
-        }) ;
+        });
         facesManager.addFacesManagerListener(new FacesManagerListener() {
 
             @Override

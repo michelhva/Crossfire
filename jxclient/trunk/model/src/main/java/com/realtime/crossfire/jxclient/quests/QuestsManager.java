@@ -51,7 +51,8 @@ public class QuestsManager {
     private final EventListenerList2<QuestsManagerListener> listeners = new EventListenerList2<QuestsManagerListener>(QuestsManagerListener.class);
 
     /**
-     * A {@link Comparator} to compare {@link Quest} instances by title and code.
+     * A {@link Comparator} to compare {@link Quest} instances by title and
+     * code.
      */
     @NotNull
     private final Comparator<Quest> questComparator = new QuestComparator();
@@ -130,7 +131,8 @@ public class QuestsManager {
      * @param title the quest's title
      * @param face the quest's face
      * @param replay whether the quest can be replayed or not
-     * @param parent quest internal code of this quest's parent, 0 if no parent.
+     * @param parent quest internal code of this quest's parent, 0 if no
+     * parent.
      * @param end whether the quest is ended or not
      * @param description the quest's current step
      */

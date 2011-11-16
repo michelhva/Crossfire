@@ -1179,7 +1179,8 @@ public class JXCSkinLoader {
     }
 
     /**
-     * Parses an "inventory_list", "floor_list", "spells_list" or "quests_list" command.
+     * Parses an "inventory_list", "floor_list", "spells_list" or "quests_list"
+     * command.
      * @param args the command arguments
      * @param type {@link ListType} list type to create
      * @param tooltipManager the tooltip manager to update

@@ -361,7 +361,7 @@ public class Spell {
         if (unknown) {
             sb.append(" (unknown)");
         }
-        if ((path & stats.getStat(Stats.CS_STAT_SPELL_DENY)) != 0) {
+        if ((path&stats.getStat(Stats.CS_STAT_SPELL_DENY)) != 0) {
             sb.append("<br><b>Denied</b>");
         } else {
             final Skill sk = skillSet.getSkill(skill);
@@ -372,11 +372,11 @@ public class Spell {
                 String supp = null;
                 sb.append("<br>Level: ");
                 if (sk != null && level <= sk.getLevel()) {
-                    int effective = sk.getLevel() - level;
-                    if ((path & stats.getStat(Stats.CS_STAT_SPELL_ATTUNE)) != 0) {
+                    int effective = sk.getLevel()-level;
+                    if ((path&stats.getStat(Stats.CS_STAT_SPELL_ATTUNE)) != 0) {
                         effective += 2;
                         supp = " (attuned)";
-                    } else if ((path & stats.getStat(Stats.CS_STAT_SPELL_REPEL)) != 0) {
+                    } else if ((path&stats.getStat(Stats.CS_STAT_SPELL_REPEL)) != 0) {
                         effective -= 2;
                         supp = " (repelled)";
                     }
