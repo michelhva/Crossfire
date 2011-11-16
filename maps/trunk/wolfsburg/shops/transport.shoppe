@@ -12,7 +12,7 @@ enter_x 17
 enter_y 22
 msg
 Created:  2007-04-08 Gene Alexander
-Modified: 2011-05-22 Rick Tanner
+Modified: 2011-11-15 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2651,7 +2651,6 @@ y 13
 end
 arch platinum_converter
 name Holy symbol (120 platinum)
-name_pl Holy symbol (120 platinum)
 other_arch holy_symbol
 sp 1
 food 120
