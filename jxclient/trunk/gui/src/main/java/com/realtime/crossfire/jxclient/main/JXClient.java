@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.account.CharacterModel;
+import com.realtime.crossfire.jxclient.commands.AgainCommand;
 import com.realtime.crossfire.jxclient.commands.BindCommand;
 import com.realtime.crossfire.jxclient.commands.ClearCommand;
 import com.realtime.crossfire.jxclient.commands.CommandExecutorImpl;
@@ -230,6 +231,7 @@ public class JXClient {
                                         commands.addCommand(new SetCommand(server, optionManager));
                                         commands.addCommand(new ClearCommand(windowRenderer, server));
                                         commands.addCommand(new DebugMessagesCommand(server));
+                                        commands.addCommand(new AgainCommand(server, commandExecutor, commandHistoryFactory.getCommandHistory("command")));
                                         final File keybindingsFile;
                                         try {
                                             keybindingsFile = Filenames.getKeybindingsFile(null, null);

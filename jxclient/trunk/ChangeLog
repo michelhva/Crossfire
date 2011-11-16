@@ -1,5 +1,8 @@
 2011-11-16  Andreas Kirschbaum
 
+	* Implement /again command to repeat the previously entered
+	command. Add default keybinding CTRL-G for /again.
+
 	* Share the command history for text input fields having the same
 	name in skin file.
 
