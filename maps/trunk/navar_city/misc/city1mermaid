@@ -2,180 +2,358 @@ arch map
 name The Frolicing Mermaid
 difficulty 8
 region navar
-width 21
-height 13
+width 26
+height 17
 enter_x 10
 enter_y 12
 msg
 Created:  1993-10-27
-Modified: 2011-08-13 Nicolas Weeger
+Modified: 2011-11-16 Rick Tanner
 endmsg
+outdoor 1
+end
+arch cobblestones2
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch grass_only
+y 8
+end
+arch grass_only
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch grass_only
+y 12
+end
+arch grass_only
+y 13
+end
+arch grass_only
+y 14
+end
+arch grass_only
+y 15
+end
+arch cobblestones2
+y 16
+end
+arch cobblestones2
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
+arch grass_only
+x 1
+y 14
+end
+arch grass_only
+x 1
+y 15
+end
+arch cobblestones2
+x 1
+y 16
+end
+arch cobblestones2
+x 2
+end
+arch grass_only
+x 2
+y 1
 end
 arch woodfloor
+x 2
+y 2
 end
 arch wwall_2_2_2
-end
-arch woodfloor
-y 1
-end
-arch wwall_2_1_1
-y 1
-end
-arch woodfloor
-y 2
-end
-arch wwall_2_1_1
+x 2
 y 2
 end
 arch woodfloor
+x 2
 y 3
 end
 arch wwall_2_1_1
+x 2
 y 3
 end
 arch woodfloor
+x 2
 y 4
 end
 arch wwall_2_1_1
+x 2
 y 4
 end
-arch woodfloor
-y 5
-end
-arch wwall_2_1_1
+arch light2
+x 2
 y 5
 end
 arch woodfloor
+x 2
+y 5
+end
+arch wwall_win1
+x 2
+y 5
+end
+arch woodfloor
+x 2
 y 6
 end
 arch wwall_2_1_1
+x 2
 y 6
 end
 arch woodfloor
+x 2
 y 7
 end
 arch wwall_2_1_1
+x 2
 y 7
 end
 arch woodfloor
+x 2
 y 8
 end
 arch wwall_2_1_1
+x 2
 y 8
 end
-arch woodfloor
-y 9
-end
-arch wwall_2_1_1
+arch light2
+x 2
 y 9
 end
 arch woodfloor
+x 2
+y 9
+end
+arch wwall_win1
+x 2
+y 9
+end
+arch woodfloor
+x 2
 y 10
 end
 arch wwall_2_1_1
+x 2
 y 10
 end
 arch woodfloor
+x 2
 y 11
 end
 arch wwall_2_1_1
+x 2
 y 11
 end
 arch woodfloor
+x 2
 y 12
+end
+arch wwall_2_1_1
+x 2
+y 12
+end
+arch woodfloor
+x 2
+y 13
+end
+arch wwall_2_1_1
+x 2
+y 13
+end
+arch woodfloor
+x 2
+y 14
 end
 arch wwall_2_2_1
-y 12
+x 2
+y 14
 end
-arch woodfloor
-x 1
+arch grass_only
+x 2
+y 15
 end
-arch wwall_2_1_2
-x 1
+arch cobblestones2
+x 2
+y 16
 end
-arch woodfloor
-x 1
+arch cobblestones2
+x 3
+end
+arch grass_only
+x 3
 y 1
 end
 arch woodfloor
-x 1
+x 3
 y 2
 end
-arch chair_1.1
-x 1
+arch wwall_2_1_2
+x 3
 y 2
-end
-arch pirate
-x 1
-y 2
-unaggressive 1
 end
 arch woodfloor
-x 1
+x 3
 y 3
 end
 arch woodfloor
-x 1
+x 3
 y 4
 end
-arch woodfloor
-x 1
-y 5
-end
 arch chair_1.1
-x 1
-y 5
+x 3
+y 4
 end
-arch pirate_lass
-x 1
-y 5
+arch pirate
+x 3
+y 4
 unaggressive 1
 end
 arch woodfloor
-x 1
+x 3
+y 5
+end
+arch woodfloor
+x 3
 y 6
 end
 arch woodfloor
-x 1
+x 3
 y 7
 end
 arch chair_1.1
-x 1
+x 3
 y 7
 end
-arch pirate
-x 1
+arch pirate_lass
+x 3
 y 7
 unaggressive 1
 end
 arch woodfloor
-x 1
+x 3
 y 8
-end
-arch chair_1.1
-x 1
-y 8
-end
-arch pirate
-x 1
-y 8
-unaggressive 1
 end
 arch woodfloor
-x 1
+x 3
 y 9
 end
+arch chair_1.1
+x 3
+y 9
+end
+arch pirate
+x 3
+y 9
+unaggressive 1
+end
 arch woodfloor
-x 1
+x 3
 y 10
 end
+arch chair_1.1
+x 3
+y 10
+end
+arch pirate
+x 3
+y 10
+unaggressive 1
+end
 arch woodfloor
-x 1
+x 3
 y 11
 end
+arch woodfloor
+x 3
+y 12
+end
+arch woodfloor
+x 3
+y 13
+end
 arch chair_1.1
-x 1
-y 11
+x 3
+y 13
 end
 arch pirate_lass
 name Cindy Loo
@@ -183,8 +361,8 @@ msg
 @match *
 I ain't seen nuthin.
 endmsg
-x 1
-y 11
+x 3
+y 13
 unaggressive 1
 arch event_say
 title Python
@@ -192,97 +370,126 @@ slaying /python/IPO/seen.py
 end
 end
 arch woodfloor
-x 1
-y 12
+x 3
+y 14
 end
 arch wwall_2_1_2
-x 1
-y 12
+x 3
+y 14
 end
-arch woodfloor
-x 2
+arch grass_only
+x 3
+y 15
 end
-arch wwall_2_1_2
-x 2
+arch cobblestones2
+x 3
+y 16
 end
-arch woodfloor
-x 2
+arch cobblestones2
+x 4
+end
+arch grass_only
+x 4
 y 1
 end
-arch chair_1.1
-x 2
-y 1
-end
-arch pirate
-x 2
-y 1
-unaggressive 1
-end
 arch woodfloor
-x 2
+x 4
 y 2
 end
-arch table_4
-x 2
+arch wwall_2_1_2
+x 4
 y 2
 end
 arch woodfloor
-x 2
+x 4
 y 3
 end
-arch woodfloor
-x 2
-y 4
-end
 arch chair_1.1
-x 2
-y 4
+x 4
+y 3
 end
 arch pirate
-x 2
+x 4
+y 3
+unaggressive 1
+end
+arch light4
+x 4
 y 4
+end
+arch woodfloor
+x 4
+y 4
+end
+arch table_4
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch chair_1.1
+x 4
+y 6
+end
+arch pirate
+x 4
+y 6
 unaggressive 1
 end
 arch woodfloor
-x 2
-y 5
+x 4
+y 7
 end
 arch table_4
-x 2
-y 5
+x 4
+y 7
+end
+arch light4
+x 4
+y 8
 end
 arch woodfloor
-x 2
-y 6
+x 4
+y 8
 end
 arch chair_1.1
-x 2
-y 6
+x 4
+y 8
 end
 arch pirate
-x 2
-y 6
+x 4
+y 8
 unaggressive 1
 end
 arch woodfloor
-x 2
-y 7
-end
-arch chair_1.1
-x 2
-y 7
-end
-arch woodfloor
-x 2
-y 8
-end
-arch table_4
-x 2
-y 8
-end
-arch woodfloor
-x 2
+x 4
 y 9
+end
+arch chair_1.1
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 10
+end
+arch table_4
+x 4
+y 10
+end
+arch woodfloor
+x 4
+y 11
+end
+arch light4
+x 4
+y 12
 end
 arch magic_mouth
 msg
@@ -291,19 +498,19 @@ The Smuggler's Cove is a tiny inlet just southwest of Navar where the top smuggl
 The Smugglers have been conducting a lot of business these past days but a honest bloke like me wouldn't know what that was about.
 endmsg
 food 1
-x 2
-y 10
+x 4
+y 12
 connected 5
 move_on 0
 activate_on_release 0
 end
 arch woodfloor
-x 2
-y 10
+x 4
+y 12
 end
 arch chair_1.1
-x 2
-y 10
+x 4
+y 12
 end
 arch pirate
 name Bradley
@@ -315,433 +522,542 @@ Well maybe if you drop a hundred gold on this table here I'd tell ya about that.
 @match *
 This chick's seen it all. She knows everyone.
 endmsg
-x 2
-y 10
+x 4
+y 12
 unaggressive 1
 end
 arch altar
 slaying money
 food 1000
-x 2
-y 11
+x 4
+y 13
 connected 5
 end
 arch woodfloor
-x 2
-y 11
+x 4
+y 13
 end
 arch table_4
-x 2
-y 11
+x 4
+y 13
 no_pick 1
 end
 arch woodfloor
-x 2
-y 12
+x 4
+y 14
 end
 arch wwall_2_1_2
-x 2
-y 12
+x 4
+y 14
+end
+arch grass_only
+x 4
+y 15
+end
+arch cobblestones2
+x 4
+y 16
+end
+arch cobblestones2
+x 5
+end
+arch grass_only
+x 5
+y 1
 end
 arch woodfloor
-x 3
+x 5
+y 2
 end
 arch wwall_2_1_2
-x 3
-end
-arch woodfloor
-x 3
-y 1
-end
-arch chair_1.1
-x 3
-y 1
-end
-arch pirate
-x 3
-y 1
-unaggressive 1
-end
-arch woodfloor
-x 3
+x 5
 y 2
 end
-arch chair_1.2
-x 3
-y 2
-end
-arch pirate
-x 3
-y 2
-unaggressive 1
-end
 arch woodfloor
-x 3
+x 5
 y 3
 end
-arch woodfloor
-x 3
-y 4
-end
-arch woodfloor
-x 3
-y 5
-end
-arch chair_1.2
-x 3
-y 5
+arch chair_1.1
+x 5
+y 3
 end
 arch pirate
-x 3
-y 5
+x 5
+y 3
 unaggressive 1
 end
 arch woodfloor
-x 3
+x 5
+y 4
+end
+arch chair_1.2
+x 5
+y 4
+end
+arch pirate
+x 5
+y 4
+unaggressive 1
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
 y 6
 end
 arch woodfloor
-x 3
+x 5
 y 7
 end
-arch woodfloor
-x 3
-y 8
-end
 arch chair_1.2
-x 3
+x 5
+y 7
+end
+arch pirate
+x 5
+y 7
+unaggressive 1
+end
+arch woodfloor
+x 5
 y 8
 end
 arch woodfloor
-x 3
+x 5
 y 9
 end
 arch woodfloor
-x 3
+x 5
+y 10
+end
+arch chair_1.2
+x 5
 y 10
 end
 arch woodfloor
-x 3
+x 5
 y 11
+end
+arch woodfloor
+x 5
+y 12
+end
+arch woodfloor
+x 5
+y 13
 end
 arch chair_1.2
-x 3
-y 11
+x 5
+y 13
 end
 arch woodfloor
-x 3
-y 12
+x 5
+y 14
 end
 arch wwall_2_1_2
-x 3
-y 12
+x 5
+y 14
 end
-arch woodfloor
-x 4
+arch grass_only
+x 5
+y 15
 end
-arch wwall_2_1_2
-x 4
+arch cobblestones2
+x 5
+y 16
 end
-arch woodfloor
-x 4
+arch cobblestones2
+x 6
+end
+arch grass_only
+x 6
 y 1
+end
+arch light2
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 2
+end
+arch wwall_win2
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
 end
 arch table_4
-x 4
-y 1
-end
-arch woodfloor
-x 4
-y 2
-end
-arch woodfloor
-x 4
+x 6
 y 3
 end
 arch woodfloor
-x 4
+x 6
 y 4
 end
 arch woodfloor
-x 4
+x 6
 y 5
 end
 arch woodfloor
-x 4
+x 6
 y 6
 end
 arch woodfloor
-x 4
+x 6
 y 7
 end
 arch woodfloor
-x 4
+x 6
 y 8
 end
 arch woodfloor
-x 4
+x 6
 y 9
 end
 arch woodfloor
-x 4
+x 6
 y 10
 end
 arch woodfloor
-x 4
+x 6
 y 11
 end
 arch woodfloor
-x 4
-y 12
-end
-arch wwall_2_1_2
-x 4
+x 6
 y 12
 end
 arch woodfloor
-x 5
+x 6
+y 13
 end
-arch wwall_2_1_2
-x 5
+arch light2
+x 6
+y 14
 end
 arch woodfloor
-x 5
+x 6
+y 14
+end
+arch wwall_win2
+x 6
+y 14
+end
+arch grass_only
+x 6
+y 15
+end
+arch cobblestones2
+x 6
+y 16
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
 y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch wwall_2_1_2
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
 end
 arch chair_1.2
-x 5
-y 1
-end
-arch pirate
-x 5
-y 1
-unaggressive 1
-end
-arch woodfloor
-x 5
-y 2
-end
-arch woodfloor
-x 5
+x 7
 y 3
 end
-arch woodfloor
-x 5
+arch pirate
+x 7
+y 3
+unaggressive 1
+end
+arch light4
+x 7
 y 4
 end
 arch woodfloor
-x 5
+x 7
+y 4
+end
+arch woodfloor
+x 7
 y 5
 end
 arch woodfloor
-x 5
+x 7
 y 6
 end
 arch woodfloor
-x 5
+x 7
 y 7
 end
-arch woodfloor
-x 5
+arch light4
+x 7
 y 8
 end
 arch woodfloor
-x 5
+x 7
+y 8
+end
+arch woodfloor
+x 7
 y 9
 end
 arch woodfloor
-x 5
+x 7
 y 10
 end
 arch woodfloor
-x 5
+x 7
 y 11
+end
+arch light4
+x 7
+y 12
+end
+arch woodfloor
+x 7
+y 12
+end
+arch woodfloor
+x 7
+y 13
 end
 arch chair_1.1
-x 5
-y 11
+x 7
+y 13
 end
 arch pirate
-x 5
-y 11
+x 7
+y 13
 unaggressive 1
 end
 arch woodfloor
-x 5
-y 12
+x 7
+y 14
 end
 arch wwall_2_1_2
-x 5
-y 12
+x 7
+y 14
 end
-arch woodfloor
-x 6
+arch grass_only
+x 7
+y 15
 end
-arch wwall_2_1_2
-x 6
+arch cobblestones2
+x 7
+y 16
 end
-arch woodfloor
-x 6
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
 y 1
 end
 arch woodfloor
-x 6
+x 8
+y 2
+end
+arch wwall_2_1_2
+x 8
 y 2
 end
 arch woodfloor
-x 6
+x 8
 y 3
 end
 arch woodfloor
-x 6
+x 8
 y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
 end
 arch wwall_2_2_2
-x 6
-y 4
+x 8
+y 6
 end
 arch woodfloor
-x 6
-y 5
+x 8
+y 7
 end
 arch wwall_2_1_1
-x 6
-y 5
+x 8
+y 7
 end
 arch woodfloor
-x 6
-y 6
+x 8
+y 8
 end
 arch wwall_2_2_1
-x 6
-y 6
-end
-arch woodfloor
-x 6
-y 7
-end
-arch bench_1_1
-x 6
-y 7
-move_block all
-end
-arch woodfloor
-x 6
+x 8
 y 8
 end
-arch bench_2_2_1
-x 6
-y 8
-move_block all
-end
 arch woodfloor
-x 6
+x 8
 y 9
 end
+arch bench_1_1
+x 8
+y 9
+move_block all
+end
 arch woodfloor
-x 6
+x 8
 y 10
+end
+arch bench_2_2_1
+x 8
+y 10
+move_block all
+end
+arch woodfloor
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
 end
 arch chair_1.1
-x 6
-y 10
+x 8
+y 12
 end
 arch pirate
-x 6
-y 10
+x 8
+y 12
 unaggressive 1
 end
 arch woodfloor
-x 6
-y 11
+x 8
+y 13
 end
 arch table_4
-x 6
-y 11
+x 8
+y 13
 end
 arch woodfloor
-x 6
-y 12
+x 8
+y 14
 end
 arch wwall_2_1_2
-x 6
-y 12
+x 8
+y 14
 end
-arch woodfloor
-x 7
+arch grass_only
+x 8
+y 15
 end
-arch wwall_2_1_2
-x 7
+arch cobblestones2
+x 8
+y 16
 end
-arch woodfloor
-x 7
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
 y 1
 end
-arch chair_1.1
-x 7
-y 1
-end
-arch pirate
-x 7
-y 1
-unaggressive 1
-end
-arch woodfloor
-x 7
+arch light2
+x 9
 y 2
 end
 arch woodfloor
-x 7
+x 9
+y 2
+end
+arch wwall_win2
+x 9
+y 2
+end
+arch woodfloor
+x 9
 y 3
 end
+arch chair_1.1
+x 9
+y 3
+end
+arch pirate
+x 9
+y 3
+unaggressive 1
+end
 arch woodfloor
-x 7
+x 9
 y 4
 end
-arch wwall_1_3
-x 7
-y 4
-end
 arch woodfloor
-x 7
+x 9
 y 5
 end
 arch woodfloor
-x 7
+x 9
 y 6
 end
-arch wwall_2_1_2
-x 7
+arch wwall_1_3
+x 9
 y 6
 end
 arch woodfloor
-x 7
+x 9
 y 7
 end
 arch woodfloor
-x 7
+x 9
 y 8
 end
-arch bench_2_1_2
-x 7
+arch wwall_2_1_2
+x 9
 y 8
-move_block all
 end
 arch woodfloor
-x 7
+x 9
 y 9
 end
 arch woodfloor
-x 7
+x 9
 y 10
 end
+arch bench_2_1_2
+x 9
+y 10
+move_block all
+end
 arch woodfloor
-x 7
+x 9
 y 11
 end
+arch woodfloor
+x 9
+y 12
+end
+arch woodfloor
+x 9
+y 13
+end
 arch chair_1.2
-x 7
-y 11
+x 9
+y 13
 end
 arch fighter
 name TCI Representative
@@ -757,63 +1073,88 @@ Well, hello there! Sit down and chat with me a bit. I am always looking for new 
 @match *
 Hi there young'un. Wanna join TCI?
 endmsg
-x 7
-y 11
+x 9
+y 13
 no_damage 1
 end
-arch woodfloor
-x 7
-y 12
-end
-arch wwall_2_1_2
-x 7
-y 12
+arch light2
+x 9
+y 14
 end
 arch woodfloor
-x 8
+x 9
+y 14
 end
-arch wwall_2_1_2
-x 8
+arch wwall_win2
+x 9
+y 14
 end
-arch woodfloor
-x 8
+arch grass_only
+x 9
+y 15
+end
+arch cobblestones2
+x 9
+y 16
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
 y 1
 end
-arch table_4
-x 8
-y 1
-end
 arch woodfloor
-x 8
+x 10
 y 2
 end
-arch chair_1.1
-x 8
+arch wwall_2_1_2
+x 10
 y 2
 end
 arch woodfloor
-x 8
+x 10
 y 3
 end
-arch woodfloor
-x 8
+arch table_4
+x 10
+y 3
+end
+arch light4
+x 10
 y 4
 end
 arch woodfloor
-x 8
+x 10
+y 4
+end
+arch chair_1.1
+x 10
+y 4
+end
+arch woodfloor
+x 10
 y 5
 end
 arch woodfloor
-x 8
-y 6
-end
-arch wwall_2_1_2
-x 8
+x 10
 y 6
 end
 arch woodfloor
-x 8
+x 10
 y 7
+end
+arch woodfloor
+x 10
+y 8
+end
+arch wwall_2_1_2
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 9
 end
 arch halfling2
 name Pip
@@ -824,561 +1165,819 @@ One of the rooms has stairs leading where you want to go.
 @match *
 What a rowdy lot!
 endmsg
-x 8
-y 7
-end
-arch woodfloor
-x 8
-y 8
-end
-arch bench_2_1_2
-x 8
-y 8
-move_block all
-end
-arch woodfloor
-x 8
+x 10
 y 9
 end
 arch woodfloor
-x 8
+x 10
 y 10
 end
+arch bench_2_1_2
+x 10
+y 10
+move_block all
+end
 arch woodfloor
-x 8
+x 10
 y 11
 end
-arch woodfloor
-x 8
-y 12
-end
-arch wwall_2_1_2
-x 8
+arch light4
+x 10
 y 12
 end
 arch woodfloor
-x 9
-end
-arch wwall_2_1_2
-x 9
+x 10
+y 12
 end
 arch woodfloor
-x 9
+x 10
+y 13
+end
+arch woodfloor
+x 10
+y 14
+end
+arch wwall_2_1_2
+x 10
+y 14
+end
+arch grass_only
+x 10
+y 15
+end
+arch cobblestones2
+x 10
+y 16
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
 y 1
+end
+arch woodfloor
+x 11
+y 2
+end
+arch wwall_2_1_2
+x 11
+y 2
+end
+arch woodfloor
+x 11
+y 3
 end
 arch chair_1.2
-x 9
-y 1
+x 11
+y 3
 end
 arch pirate_lass
-x 9
-y 1
+x 11
+y 3
 unaggressive 1
 end
 arch woodfloor
-x 9
-y 2
-end
-arch woodfloor
-x 9
-y 3
-end
-arch woodfloor
-x 9
+x 11
 y 4
+end
+arch woodfloor
+x 11
+y 5
+end
+arch woodfloor
+x 11
+y 6
 end
 arch wwall_1_4
-x 9
-y 4
-end
-arch woodfloor
-x 9
-y 5
-end
-arch woodfloor
-x 9
-y 6
-end
-arch wwall_2_1_2
-x 9
+x 11
 y 6
 end
 arch woodfloor
-x 9
+x 11
 y 7
 end
 arch woodfloor
-x 9
+x 11
 y 8
 end
-arch bench_2_1_2
-x 9
+arch wwall_2_1_2
+x 11
 y 8
-move_block all
 end
 arch woodfloor
-x 9
+x 11
 y 9
 end
 arch woodfloor
-x 9
+x 11
 y 10
 end
+arch bench_2_1_2
+x 11
+y 10
+move_block all
+end
 arch woodfloor
-x 9
+x 11
 y 11
 end
 arch woodfloor
-x 9
+x 11
 y 12
+end
+arch woodfloor
+x 11
+y 13
+end
+arch woodfloor
+x 11
+y 14
 end
 arch wwall_1_3
-x 9
-y 12
+x 11
+y 14
+end
+arch dungeon_magic
+x 11
+y 15
+end
+arch grass_only
+x 11
+y 15
+move_block all
+end
+arch cobblestones2
+x 11
+y 16
+end
+arch cobblestones2
+x 12
+end
+arch grass_only
+x 12
+y 1
 end
 arch woodfloor
-x 10
+x 12
+y 2
 end
 arch wwall_3_3
-x 10
-end
-arch woodfloor
-x 10
-y 1
-end
-arch wwall_2_1_1
-x 10
-y 1
-end
-arch woodfloor
-x 10
-y 2
-end
-arch wwall_2_1_1
-x 10
+x 12
 y 2
 end
 arch woodfloor
-x 10
+x 12
 y 3
 end
 arch wwall_2_1_1
-x 10
+x 12
 y 3
 end
 arch woodfloor
-x 10
+x 12
 y 4
 end
-arch wwall_3_1
-x 10
+arch wwall_2_1_1
+x 12
 y 4
 end
 arch woodfloor
-x 10
+x 12
+y 5
+end
+arch wwall_2_1_1
+x 12
 y 5
 end
 arch woodfloor
-x 10
+x 12
 y 6
 end
-arch wwall_2_1_2
-x 10
+arch wwall_3_1
+x 12
 y 6
 end
 arch woodfloor
-x 10
+x 12
 y 7
 end
 arch woodfloor
-x 10
+x 12
 y 8
 end
-arch bench_2_1_2
-x 10
+arch wwall_2_1_2
+x 12
 y 8
-move_block all
 end
 arch woodfloor
-x 10
+x 12
 y 9
 end
 arch woodfloor
-x 10
+x 12
 y 10
 end
+arch bench_2_1_2
+x 12
+y 10
+move_block all
+end
 arch woodfloor
-x 10
+x 12
 y 11
 end
 arch woodfloor
-x 10
+x 12
 y 12
+end
+arch woodfloor
+x 12
+y 13
+end
+arch woodfloor
+x 12
+y 14
 end
 arch oakdoor_2
 slaying /world/world_122_117
 hp 12
 sp 0
-x 10
-y 12
+x 12
+y 14
 end
-arch woodfloor
-x 11
+arch dungeon_magic
+x 12
+y 15
 end
-arch wwall_2_1_2
-x 11
+arch grass_only
+x 12
+y 15
+move_block all
 end
-arch woodfloor
-x 11
+arch cobblestones2
+x 12
+y 16
+end
+arch cobblestones2
+x 13
+end
+arch grass_only
+x 13
 y 1
 end
 arch woodfloor
-x 11
+x 13
+y 2
+end
+arch wwall_2_1_2
+x 13
 y 2
 end
 arch woodfloor
-x 11
+x 13
 y 3
+end
+arch light4
+x 13
+y 4
+end
+arch woodfloor
+x 13
+y 4
+end
+arch woodfloor
+x 13
+y 5
 end
 arch bed_save
-x 11
-y 3
-end
-arch woodfloor
-x 11
-y 4
-end
-arch wwall_2_1_2
-x 11
-y 4
-end
-arch woodfloor
-x 11
+x 13
 y 5
 end
 arch woodfloor
-x 11
+x 13
 y 6
 end
 arch wwall_2_1_2
-x 11
+x 13
 y 6
 end
-arch woodfloor
-x 11
+arch light4
+x 13
 y 7
 end
 arch woodfloor
-x 11
+x 13
+y 7
+end
+arch woodfloor
+x 13
 y 8
+end
+arch wwall_2_1_2
+x 13
+y 8
+end
+arch light4
+x 13
+y 9
+end
+arch woodfloor
+x 13
+y 9
+end
+arch woodfloor
+x 13
+y 10
 end
 arch bench_1_3
-x 11
-y 8
+x 13
+y 10
 move_block all
 end
 arch woodfloor
-x 11
-y 9
-end
-arch woodfloor
-x 11
-y 10
-end
-arch woodfloor
-x 11
+x 13
 y 11
 end
-arch woodfloor
-x 11
+arch light4
+x 13
 y 12
+end
+arch woodfloor
+x 13
+y 12
+end
+arch woodfloor
+x 13
+y 13
+end
+arch woodfloor
+x 13
+y 14
 end
 arch oakdoor_2
 slaying /world/world_122_117
 hp 12
 sp 0
-x 11
-y 12
+x 13
+y 14
+end
+arch dungeon_magic
+x 13
+y 15
+end
+arch grass_only
+x 13
+y 15
+move_block all
+end
+arch cobblestones2
+x 13
+y 16
+end
+arch cobblestones2
+x 14
+end
+arch grass_only
+x 14
+y 1
 end
 arch woodfloor
-x 12
+x 14
+y 2
 end
 arch wwall_2_1_2
-x 12
+x 14
+y 2
 end
 arch woodfloor
-x 12
-y 1
+x 14
+y 3
 end
 arch door_look_2
-x 12
-y 1
+x 14
+y 3
 move_block 0
 blocksview 1
 end
 arch woodfloor
-x 12
-y 2
+x 14
+y 4
 end
 arch wwall_1_1
-x 12
-y 2
+x 14
+y 4
 end
 arch woodfloor
-x 12
-y 3
+x 14
+y 5
 end
 arch wwall_2_1_1
-x 12
-y 3
+x 14
+y 5
 end
 arch woodfloor
-x 12
-y 4
+x 14
+y 6
 end
 arch wwall_2_2_4
-x 12
-y 4
-end
-arch woodfloor
-x 12
-y 5
-end
-arch woodfloor
-x 12
+x 14
 y 6
+end
+arch woodfloor
+x 14
+y 7
+end
+arch woodfloor
+x 14
+y 8
 end
 arch wwall_2_2_3
-x 12
-y 6
-end
-arch woodfloor
-x 12
-y 7
-end
-arch wwall_2_1_1
-x 12
-y 7
-end
-arch woodfloor
-x 12
-y 8
-end
-arch wwall_2_1_1
-x 12
+x 14
 y 8
 end
 arch woodfloor
-x 12
+x 14
 y 9
 end
 arch wwall_2_1_1
-x 12
+x 14
 y 9
 end
 arch woodfloor
-x 12
+x 14
 y 10
 end
 arch wwall_2_1_1
-x 12
+x 14
 y 10
 end
 arch woodfloor
-x 12
+x 14
 y 11
 end
 arch wwall_2_1_1
-x 12
+x 14
 y 11
 end
 arch woodfloor
-x 12
+x 14
 y 12
+end
+arch wwall_2_1_1
+x 14
+y 12
+end
+arch woodfloor
+x 14
+y 13
+end
+arch wwall_2_1_1
+x 14
+y 13
+end
+arch woodfloor
+x 14
+y 14
 end
 arch wwall_2_2_1
-x 12
-y 12
+x 14
+y 14
 end
-arch woodfloor
-x 13
+arch dungeon_magic
+x 14
+y 15
 end
-arch wwall_2_1_2
-x 13
+arch grass_only
+x 14
+y 15
+move_block all
 end
-arch woodfloor
-x 13
+arch cobblestones2
+x 14
+y 16
+end
+arch cobblestones2
+x 15
+end
+arch grass_only
+x 15
 y 1
 end
 arch woodfloor
-x 13
+x 15
+y 2
+end
+arch wwall_2_1_2
+x 15
 y 2
 end
 arch woodfloor
-x 13
+x 15
 y 3
 end
 arch woodfloor
-x 13
+x 15
 y 4
 end
 arch woodfloor
-x 13
+x 15
 y 5
 end
 arch woodfloor
-x 13
+x 15
 y 6
 end
 arch woodfloor
-x 13
+x 15
 y 7
 end
 arch woodfloor
-x 13
+x 15
 y 8
 end
 arch woodfloor
-x 13
+x 15
 y 9
 end
 arch woodfloor
-x 13
+x 15
 y 10
 end
 arch woodfloor
-x 13
+x 15
 y 11
 end
 arch woodfloor
-x 13
-y 12
-end
-arch wwall_2_1_2
-x 13
+x 15
 y 12
 end
 arch woodfloor
-x 14
-end
-arch wwall_2_1_2
-x 14
+x 15
+y 13
 end
 arch woodfloor
-x 14
+x 15
+y 14
+end
+arch wwall_2_1_2
+x 15
+y 14
+end
+arch grass_only
+x 15
+y 15
+end
+arch cobblestones2
+x 15
+y 16
+end
+arch cobblestones2
+x 16
+end
+arch grass_only
+x 16
 y 1
+end
+arch light2
+x 16
+y 2
+end
+arch woodfloor
+x 16
+y 2
+end
+arch wwall_win2
+x 16
+y 2
+end
+arch woodfloor
+x 16
+y 3
+end
+arch light4
+x 16
+y 4
+end
+arch woodfloor
+x 16
+y 4
+end
+arch woodfloor
+x 16
+y 5
+end
+arch woodfloor
+x 16
+y 6
+end
+arch light4
+x 16
+y 7
+end
+arch woodfloor
+x 16
+y 7
+end
+arch woodfloor
+x 16
+y 8
+end
+arch light4
+x 16
+y 9
+end
+arch woodfloor
+x 16
+y 9
+end
+arch woodfloor
+x 16
+y 10
+end
+arch woodfloor
+x 16
+y 11
+end
+arch light4
+x 16
+y 12
+end
+arch woodfloor
+x 16
+y 12
+end
+arch woodfloor
+x 16
+y 13
+end
+arch light2
+x 16
+y 14
+end
+arch woodfloor
+x 16
+y 14
+end
+arch wwall_win2
+x 16
+y 14
+end
+arch grass_only
+x 16
+y 15
+end
+arch cobblestones2
+x 16
+y 16
+end
+arch cobblestones2
+x 17
+end
+arch grass_only
+x 17
+y 1
+end
+arch woodfloor
+x 17
+y 2
+end
+arch wwall_2_1_2
+x 17
+y 2
+end
+arch woodfloor
+x 17
+y 3
 end
 arch door_look_2
-x 14
-y 1
+x 17
+y 3
 move_block 0
 blocksview 1
 end
 arch woodfloor
-x 14
-y 2
+x 17
+y 4
 end
 arch wwall_1_1
-x 14
-y 2
+x 17
+y 4
 end
 arch woodfloor
-x 14
-y 3
+x 17
+y 5
 end
 arch wwall_2_1_1
-x 14
-y 3
+x 17
+y 5
 end
 arch woodfloor
-x 14
-y 4
+x 17
+y 6
 end
 arch wwall_2_2_1
-x 14
-y 4
-end
-arch woodfloor
-x 14
-y 5
-end
-arch woodfloor
-x 14
+x 17
 y 6
+end
+arch woodfloor
+x 17
+y 7
+end
+arch woodfloor
+x 17
+y 8
 end
 arch wwall_2_2_2
-x 14
-y 6
+x 17
+y 8
 end
 arch woodfloor
-x 14
-y 7
+x 17
+y 9
 end
 arch wwall_1_2
-x 14
-y 7
+x 17
+y 9
 end
 arch woodfloor
-x 14
-y 8
+x 17
+y 10
 end
 arch door_look_2
-x 14
-y 8
+x 17
+y 10
 move_block 0
 blocksview 1
 end
 arch woodfloor
-x 14
-y 9
+x 17
+y 11
 end
 arch wwall_2_2_2
-x 14
-y 9
+x 17
+y 11
 end
 arch woodfloor
-x 14
-y 10
+x 17
+y 12
 end
 arch wwall_1_2
-x 14
-y 10
+x 17
+y 12
 end
 arch woodfloor
-x 14
-y 11
+x 17
+y 13
 end
 arch door_look_2
-x 14
-y 11
+x 17
+y 13
 move_block 0
 blocksview 1
 end
 arch woodfloor
-x 14
-y 12
+x 17
+y 14
 end
 arch wwall_2_1_2
-x 14
-y 12
+x 17
+y 14
 end
-arch woodfloor
-x 15
+arch grass_only
+x 17
+y 15
 end
-arch wwall_2_1_2
-x 15
+arch cobblestones2
+x 17
+y 16
 end
-arch woodfloor
-x 15
+arch cobblestones2
+x 18
+end
+arch grass_only
+x 18
 y 1
 end
 arch woodfloor
-x 15
+x 18
+y 2
+end
+arch wwall_2_1_2
+x 18
 y 2
 end
 arch woodfloor
-x 15
+x 18
 y 3
+end
+arch woodfloor
+x 18
+y 4
+end
+arch woodfloor
+x 18
+y 5
 end
 arch pirate
 name Drunken Smuggler
@@ -1389,291 +1988,366 @@ Go away shilly...weave me awone...
 endmsg
 hp 50
 maxhp 50
-x 15
-y 3
+x 18
+y 5
 unaggressive 1
 end
 arch woodfloor
-x 15
-y 4
-end
-arch wwall_2_1_2
-x 15
-y 4
-end
-arch woodfloor
-x 15
-y 5
-end
-arch woodfloor
-x 15
+x 18
 y 6
 end
 arch wwall_2_1_2
-x 15
+x 18
 y 6
 end
 arch woodfloor
-x 15
+x 18
 y 7
 end
 arch woodfloor
-x 15
+x 18
+y 8
+end
+arch wwall_2_1_2
+x 18
 y 8
 end
 arch woodfloor
-x 15
-y 9
-end
-arch wwall_2_1_2
-x 15
+x 18
 y 9
 end
 arch woodfloor
-x 15
+x 18
 y 10
 end
 arch woodfloor
-x 15
+x 18
 y 11
 end
-arch woodfloor
-x 15
+arch wwall_2_1_2
+x 18
+y 11
+end
+arch light4
+x 18
 y 12
 end
-arch wwall_2_1_2
-x 15
+arch woodfloor
+x 18
 y 12
 end
 arch woodfloor
-x 16
-end
-arch wwall_2_1_2
-x 16
+x 18
+y 13
 end
 arch woodfloor
-x 16
+x 18
+y 14
+end
+arch wwall_2_1_2
+x 18
+y 14
+end
+arch grass_only
+x 18
+y 15
+end
+arch cobblestones2
+x 18
+y 16
+end
+arch cobblestones2
+x 19
+end
+arch grass_only
+x 19
 y 1
+end
+arch light2
+x 19
+y 2
+end
+arch woodfloor
+x 19
+y 2
+end
+arch wwall_win2
+x 19
+y 2
+end
+arch woodfloor
+x 19
+y 3
 end
 arch clock
-x 16
-y 1
-end
-arch woodfloor
-x 16
-y 2
-end
-arch woodfloor
-x 16
+x 19
 y 3
+end
+arch light4
+x 19
+y 4
+end
+arch woodfloor
+x 19
+y 4
+end
+arch woodfloor
+x 19
+y 5
 end
 arch bed_save
-x 16
-y 3
-end
-arch woodfloor
-x 16
-y 4
-end
-arch wwall_2_1_2
-x 16
-y 4
-end
-arch woodfloor
-x 16
+x 19
 y 5
 end
 arch woodfloor
-x 16
+x 19
 y 6
 end
 arch wwall_2_1_2
-x 16
+x 19
 y 6
 end
 arch woodfloor
-x 16
+x 19
 y 7
 end
 arch woodfloor
-x 16
+x 19
 y 8
-end
-arch bed_save
-x 16
-y 8
-end
-arch woodfloor
-x 16
-y 9
 end
 arch wwall_2_1_2
-x 16
+x 19
+y 8
+end
+arch light4
+x 19
 y 9
 end
 arch woodfloor
-x 16
+x 19
+y 9
+end
+arch woodfloor
+x 19
 y 10
 end
 arch bed_save
-x 16
+x 19
 y 10
 end
 arch woodfloor
-x 16
+x 19
+y 11
+end
+arch wwall_2_1_2
+x 19
 y 11
 end
 arch woodfloor
-x 16
+x 19
 y 12
 end
-arch wwall_2_1_2
-x 16
+arch bed_save
+x 19
 y 12
 end
 arch woodfloor
-x 17
+x 19
+y 13
+end
+arch light2
+x 19
+y 14
+end
+arch woodfloor
+x 19
+y 14
+end
+arch wwall_win2
+x 19
+y 14
+end
+arch grass_only
+x 19
+y 15
+end
+arch cobblestones2
+x 19
+y 16
+end
+arch cobblestones2
+x 20
+end
+arch grass_only
+x 20
+y 1
+end
+arch woodfloor
+x 20
+y 2
 end
 arch wwall_3_3
-x 17
-end
-arch woodfloor
-x 17
-y 1
-end
-arch wwall_2_1_1
-x 17
-y 1
-end
-arch woodfloor
-x 17
-y 2
-end
-arch wwall_2_1_1
-x 17
+x 20
 y 2
 end
 arch woodfloor
-x 17
+x 20
 y 3
 end
 arch wwall_2_1_1
-x 17
+x 20
 y 3
 end
 arch woodfloor
-x 17
+x 20
 y 4
 end
-arch wwall_3_1
-x 17
+arch wwall_2_1_1
+x 20
 y 4
 end
 arch woodfloor
-x 17
+x 20
+y 5
+end
+arch wwall_2_1_1
+x 20
 y 5
 end
 arch woodfloor
-x 17
+x 20
 y 6
+end
+arch wwall_3_1
+x 20
+y 6
+end
+arch woodfloor
+x 20
+y 7
+end
+arch woodfloor
+x 20
+y 8
 end
 arch wwall_3_3
-x 17
-y 6
-end
-arch woodfloor
-x 17
-y 7
-end
-arch wwall_2_1_1
-x 17
-y 7
-end
-arch woodfloor
-x 17
-y 8
-end
-arch wwall_2_1_1
-x 17
+x 20
 y 8
 end
 arch woodfloor
-x 17
+x 20
 y 9
+end
+arch wwall_2_1_1
+x 20
+y 9
+end
+arch woodfloor
+x 20
+y 10
+end
+arch wwall_2_1_1
+x 20
+y 10
+end
+arch woodfloor
+x 20
+y 11
 end
 arch wwall_4
-x 17
-y 9
-end
-arch woodfloor
-x 17
-y 10
-end
-arch wwall_2_1_1
-x 17
-y 10
-end
-arch woodfloor
-x 17
-y 11
-end
-arch wwall_2_1_1
-x 17
+x 20
 y 11
 end
 arch woodfloor
-x 17
+x 20
 y 12
+end
+arch wwall_2_1_1
+x 20
+y 12
+end
+arch woodfloor
+x 20
+y 13
+end
+arch wwall_2_1_1
+x 20
+y 13
+end
+arch woodfloor
+x 20
+y 14
 end
 arch wwall_3_1
-x 17
-y 12
+x 20
+y 14
+end
+arch grass_only
+x 20
+y 15
+end
+arch cobblestones2
+x 20
+y 16
+end
+arch cobblestones2
+x 21
+end
+arch grass_only
+x 21
+y 1
 end
 arch woodfloor
-x 18
+x 21
+y 2
 end
 arch wwall_2_1_2
-x 18
-end
-arch woodfloor
-x 18
-y 1
-end
-arch bed_save
-x 18
-y 1
-end
-arch woodfloor
-x 18
+x 21
 y 2
 end
 arch woodfloor
-x 18
+x 21
 y 3
 end
-arch woodfloor
-x 18
+arch bed_save
+x 21
+y 3
+end
+arch light4
+x 21
 y 4
 end
-arch wwall_1_3
-x 18
+arch woodfloor
+x 21
 y 4
 end
 arch woodfloor
-x 18
+x 21
 y 5
 end
 arch woodfloor
-x 18
+x 21
 y 6
 end
 arch wwall_1_3
-x 18
+x 21
 y 6
 end
 arch woodfloor
-x 18
+x 21
 y 7
+end
+arch woodfloor
+x 21
+y 8
+end
+arch wwall_1_3
+x 21
+y 8
+end
+arch woodfloor
+x 21
+y 9
 end
 arch pirate
 name Drunken Smuggler
@@ -1684,65 +2358,82 @@ Go away shilly...weave me awone...
 endmsg
 hp 50
 maxhp 50
-x 18
-y 7
+x 21
+y 9
 unaggressive 1
 end
 arch woodfloor
-x 18
-y 8
+x 21
+y 10
 end
 arch bed_save
-x 18
-y 8
+x 21
+y 10
 end
 arch woodfloor
-x 18
-y 9
+x 21
+y 11
 end
 arch wwall_2_1_2
-x 18
-y 9
+x 21
+y 11
 end
 arch woodfloor
-x 18
-y 10
+x 21
+y 12
 end
 arch random_food
-x 18
-y 10
+x 21
+y 12
 end
 arch woodfloor
-x 18
-y 11
+x 21
+y 13
 end
 arch stair_3_down
 slaying navarwiz
 hp 5
 sp 5
-x 18
-y 11
+x 21
+y 13
 arch quest_advance_apply
 name scorn/Rhyz 10>20
 end
 end
 arch woodfloor
-x 18
-y 12
+x 21
+y 14
 end
 arch wwall_2_1_2
-x 18
-y 12
+x 21
+y 14
 end
-arch woodfloor
-x 19
+arch grass_only
+x 21
+y 15
 end
-arch wwall_2_1_2
-x 19
+arch cobblestones2
+x 21
+y 16
 end
-arch woodfloor
-x 19
+arch cobblestones2
+x 22
+end
+arch grass_only
+x 22
 y 1
+end
+arch woodfloor
+x 22
+y 2
+end
+arch wwall_2_1_2
+x 22
+y 2
+end
+arch woodfloor
+x 22
+y 3
 end
 arch pirate
 name Drunken Smuggler
@@ -1754,8 +2445,8 @@ I gotta get back to see the boss...
 endmsg
 hp 50
 maxhp 50
-x 19
-y 1
+x 22
+y 3
 carrying 100
 unaggressive 1
 arch key2
@@ -1764,172 +2455,343 @@ slaying set_individual_value smugdoor
 end
 end
 arch woodfloor
-x 19
-y 2
-end
-arch woodfloor
-x 19
-y 3
-end
-arch woodfloor
-x 19
+x 22
 y 4
 end
-arch door_look_1
-x 19
-y 4
-move_block 0
-blocksview 1
-end
 arch woodfloor
-x 19
+x 22
 y 5
 end
 arch woodfloor
-x 19
+x 22
 y 6
 end
 arch door_look_1
-x 19
+x 22
 y 6
 move_block 0
 blocksview 1
 end
 arch woodfloor
-x 19
+x 22
 y 7
 end
 arch woodfloor
-x 19
+x 22
 y 8
 end
-arch woodfloor
-x 19
+arch door_look_1
+x 22
+y 8
+move_block 0
+blocksview 1
+end
+arch light4
+x 22
 y 9
+end
+arch woodfloor
+x 22
+y 9
+end
+arch woodfloor
+x 22
+y 10
+end
+arch woodfloor
+x 22
+y 11
 end
 arch wwall_weak_2
-x 19
-y 9
-end
-arch woodfloor
-x 19
-y 10
-end
-arch woodfloor
-x 19
+x 22
 y 11
+end
+arch woodfloor
+x 22
+y 12
+end
+arch woodfloor
+x 22
+y 13
 end
 arch random_shield
-x 19
-y 11
+x 22
+y 13
 end
 arch woodfloor
-x 19
-y 12
+x 22
+y 14
 end
 arch wwall_2_1_2
-x 19
-y 12
+x 22
+y 14
+end
+arch grass_only
+x 22
+y 15
+end
+arch cobblestones2
+x 22
+y 16
+end
+arch cobblestones2
+x 23
+end
+arch grass_only
+x 23
+y 1
 end
 arch woodfloor
-x 20
+x 23
+y 2
 end
 arch wwall_2_2_3
-x 20
-end
-arch woodfloor
-x 20
-y 1
-end
-arch wwall_2_1_1
-x 20
-y 1
-end
-arch woodfloor
-x 20
-y 2
-end
-arch wwall_2_1_1
-x 20
+x 23
 y 2
 end
 arch woodfloor
-x 20
+x 23
 y 3
 end
 arch wwall_2_1_1
-x 20
+x 23
 y 3
 end
 arch woodfloor
-x 20
+x 23
 y 4
 end
 arch wwall_2_1_1
-x 20
+x 23
 y 4
 end
-arch woodfloor
-x 20
-y 5
-end
-arch wwall_2_1_1
-x 20
+arch light2
+x 23
 y 5
 end
 arch woodfloor
-x 20
+x 23
+y 5
+end
+arch wwall_win1
+x 23
+y 5
+end
+arch woodfloor
+x 23
 y 6
 end
 arch wwall_2_1_1
-x 20
+x 23
 y 6
 end
 arch woodfloor
-x 20
+x 23
 y 7
 end
 arch wwall_2_1_1
-x 20
+x 23
 y 7
 end
 arch woodfloor
-x 20
+x 23
 y 8
 end
 arch wwall_2_1_1
-x 20
+x 23
 y 8
 end
-arch woodfloor
-x 20
+arch light2
+x 23
 y 9
+end
+arch woodfloor
+x 23
+y 9
+end
+arch wwall_win1
+x 23
+y 9
+end
+arch woodfloor
+x 23
+y 10
+end
+arch wwall_2_1_1
+x 23
+y 10
+end
+arch woodfloor
+x 23
+y 11
 end
 arch wwall_3_4
-x 20
-y 9
-end
-arch woodfloor
-x 20
-y 10
-end
-arch wwall_2_1_1
-x 20
-y 10
-end
-arch woodfloor
-x 20
-y 11
-end
-arch wwall_2_1_1
-x 20
+x 23
 y 11
 end
 arch woodfloor
-x 20
+x 23
 y 12
+end
+arch wwall_2_1_1
+x 23
+y 12
+end
+arch woodfloor
+x 23
+y 13
+end
+arch wwall_2_1_1
+x 23
+y 13
+end
+arch woodfloor
+x 23
+y 14
 end
 arch wwall_2_2_4
-x 20
+x 23
+y 14
+end
+arch grass_only
+x 23
+y 15
+end
+arch cobblestones2
+x 23
+y 16
+end
+arch cobblestones2
+x 24
+end
+arch grass_only
+x 24
+y 1
+end
+arch grass_only
+x 24
+y 2
+end
+arch grass_only
+x 24
+y 3
+end
+arch grass_only
+x 24
+y 4
+end
+arch grass_only
+x 24
+y 5
+end
+arch grass_only
+x 24
+y 6
+end
+arch grass_only
+x 24
+y 7
+end
+arch grass_only
+x 24
+y 8
+end
+arch grass_only
+x 24
+y 9
+end
+arch grass_only
+x 24
+y 10
+end
+arch grass_only
+x 24
+y 11
+end
+arch grass_only
+x 24
 y 12
+end
+arch grass_only
+x 24
+y 13
+end
+arch grass_only
+x 24
+y 14
+end
+arch grass_only
+x 24
+y 15
+end
+arch cobblestones2
+x 24
+y 16
+end
+arch cobblestones2
+x 25
+end
+arch grass_only
+x 25
+y 1
+end
+arch grass_only
+x 25
+y 2
+end
+arch grass_only
+x 25
+y 3
+end
+arch grass_only
+x 25
+y 4
+end
+arch grass_only
+x 25
+y 5
+end
+arch grass_only
+x 25
+y 6
+end
+arch grass_only
+x 25
+y 7
+end
+arch grass_only
+x 25
+y 8
+end
+arch grass_only
+x 25
+y 9
+end
+arch grass_only
+x 25
+y 10
+end
+arch grass_only
+x 25
+y 11
+end
+arch grass_only
+x 25
+y 12
+end
+arch grass_only
+x 25
+y 13
+end
+arch grass_only
+x 25
+y 14
+end
+arch grass_only
+x 25
+y 15
+end
+arch cobblestones2
+x 25
+y 16
 end
