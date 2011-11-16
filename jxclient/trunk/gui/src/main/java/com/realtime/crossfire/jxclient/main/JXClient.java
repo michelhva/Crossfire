@@ -66,6 +66,7 @@ import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.DefaultCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.Model;
+import com.realtime.crossfire.jxclient.settings.CommandHistoryFactory;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.settings.Settings;
@@ -215,6 +216,7 @@ public class JXClient {
                                         final ScreenshotFiles screenshotFiles = new ScreenshotFiles();
                                         final Commands commands = new Commands();
                                         final CommandExecutor commandExecutor = new CommandExecutorImpl(commandQueue, commands);
+                                        final CommandHistoryFactory commandHistoryFactory = new CommandHistoryFactory();
                                         final GUICommandFactory guiCommandFactory = new GUICommandFactoryImpl(commandCallback, commandExecutor, macros);
                                         commands.addCommand(new BindCommand(server, commandCallback, guiCommandFactory));
                                         commands.addCommand(new UnbindCommand(commandCallback, server));
@@ -242,7 +244,7 @@ public class JXClient {
                                         final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                         commandCallback.init(guiManager);
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
-                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(model.getItemSet(), inventoryView, floorView, spellsView, model.getSpellsManager(), facesManager, model.getStats(), mapUpdaterState, defaultKeyBindings, optionManager, model.getExperienceTable(), model.getSkillSet(), options.getTileSize(), keybindingsManager, model.getQuestsManager(), questsView);
+                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(model.getItemSet(), inventoryView, floorView, spellsView, model.getSpellsManager(), facesManager, model.getStats(), mapUpdaterState, defaultKeyBindings, optionManager, model.getExperienceTable(), model.getSkillSet(), options.getTileSize(), keybindingsManager, model.getQuestsManager(), questsView, commandHistoryFactory);
                                         final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, model.getGuiStateManager(), tooltipManager, commandQueue, jxcSkinLoader, commandExecutor, shortcuts, characterModel, model.getSmoothFaces(), guiCommandFactory);
                                         new FacesTracker(model.getGuiStateManager(), facesManager);
                                         new PlayerNameTracker(model.getGuiStateManager(), connection, model.getItemSet());

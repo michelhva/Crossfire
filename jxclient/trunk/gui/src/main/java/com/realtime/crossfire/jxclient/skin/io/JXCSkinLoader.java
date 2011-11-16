@@ -108,6 +108,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
+import com.realtime.crossfire.jxclient.settings.CommandHistoryFactory;
 import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
@@ -251,6 +252,12 @@ public class JXCSkinLoader {
      * The default tile size for the map view.
      */
     private final int defaultTileSize;
+
+    /**
+     * The {@link CommandHistoryFactory} to use.
+     */
+    @NotNull
+    private final CommandHistoryFactory commandHistoryFactory;
 
     /**
      * The {@link FacesProviderFactory} instance for creating faces provider
@@ -407,9 +414,10 @@ public class JXCSkinLoader {
      * @param defaultTileSize the default tile size for the map view
      * @param keybindingsManager the keybindings manager to use
      * @param questView the quests view to use
+     * @param commandHistoryFactory the command history factory to us
      * @param questsManager the quests manager instance to use
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
@@ -417,6 +425,7 @@ public class JXCSkinLoader {
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         this.defaultTileSize = defaultTileSize;
+        this.commandHistoryFactory = commandHistoryFactory;
         facesProviderFactory = new FacesProviderFactory(facesManager);
         this.stats = stats;
         this.mapUpdaterState = mapUpdaterState;
@@ -898,7 +907,7 @@ public class JXCSkinLoader {
         final Color activeColor = ParseUtils.parseColor(args.get());
         final int margin = ExpressionParser.parseInt(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
-        final CommandHistory commandHistory = enableHistory ? new CommandHistory(name) : null;
+        final CommandHistory commandHistory = enableHistory ? commandHistoryFactory.getCommandHistory(name) : null;
         insertGuiElement(new GUICommandText(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandExecutor));
     }
 
@@ -1790,7 +1799,7 @@ public class JXCSkinLoader {
         final Color activeColor = ParseUtils.parseColor(args.get());
         final int margin = ExpressionParser.parseInt(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
-        final CommandHistory commandHistory = enableHistory ? new CommandHistory(name) : null;
+        final CommandHistory commandHistory = enableHistory ? commandHistoryFactory.getCommandHistory(name) : null;
         insertGuiElement(new GUIQueryText(server, commandHistory, commandCallback, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, ""));
     }
 
@@ -1925,7 +1934,7 @@ public class JXCSkinLoader {
         final int margin = ExpressionParser.parseInt(args.get());
         final CommandList commandList = skin.getCommandList(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
-        final CommandHistory commandHistory = enableHistory ? new CommandHistory(name) : null;
+        final CommandHistory commandHistory = enableHistory ? commandHistoryFactory.getCommandHistory(name) : null;
         insertGuiElement(new GUITextField(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList));
     }
 
