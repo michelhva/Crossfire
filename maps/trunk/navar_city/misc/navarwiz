@@ -9,7 +9,7 @@ enter_x 5
 enter_y 5
 msg
 Created:  2006-08-11 Alex Schultz
-Modified: 2011-08-13 Nicolas Weeger
+Modified: 2011-11-16 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -467,8 +467,8 @@ smoothface woodfloor.111 empty_S.111
 end
 arch stair2_up
 slaying city1mermaid
-hp 18
-sp 11
+hp 21
+sp 13
 x 5
 y 5
 end
