@@ -226,7 +226,8 @@ public class JXCSkinLoader {
     /**
      * The {@link QuestsView} to use.
      */
-    @NotNull final QuestsView questView;
+    @NotNull
+    private final QuestsView questView;
 
     /**
      * The {@link SpellsManager} instance to use.
