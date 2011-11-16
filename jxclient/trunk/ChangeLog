@@ -1,3 +1,8 @@
+2011-11-16  Andreas Kirschbaum
+
+	* Properly disable command history access if "enable-history"
+	parameter is unset in skin file.
+
 2011-09-21  Andreas Kirschbaum
 
 	* Add missing keybindings for numpad movement.

@@ -107,6 +107,7 @@ import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
+import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
@@ -896,7 +897,8 @@ public class JXCSkinLoader {
         final Color activeColor = ParseUtils.parseColor(args.get());
         final int margin = ExpressionParser.parseInt(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
-        insertGuiElement(new GUICommandText(commandCallback, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandExecutor, enableHistory));
+        final CommandHistory commandHistory = enableHistory ? new CommandHistory(name) : null;
+        insertGuiElement(new GUICommandText(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandExecutor));
     }
 
     /**
@@ -1786,7 +1788,8 @@ public class JXCSkinLoader {
         final Color activeColor = ParseUtils.parseColor(args.get());
         final int margin = ExpressionParser.parseInt(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
-        insertGuiElement(new GUIQueryText(server, commandCallback, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", enableHistory));
+        final CommandHistory commandHistory = enableHistory ? new CommandHistory(name) : null;
+        insertGuiElement(new GUIQueryText(server, commandHistory, commandCallback, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, ""));
     }
 
     /**
@@ -1920,7 +1923,8 @@ public class JXCSkinLoader {
         final int margin = ExpressionParser.parseInt(args.get());
         final CommandList commandList = skin.getCommandList(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
-        insertGuiElement(new GUITextField(commandCallback, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, enableHistory));
+        final CommandHistory commandHistory = enableHistory ? new CommandHistory(name) : null;
+        insertGuiElement(new GUITextField(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList));
     }
 
     /**

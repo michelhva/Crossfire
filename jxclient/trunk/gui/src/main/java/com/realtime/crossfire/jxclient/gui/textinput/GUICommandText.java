@@ -23,10 +23,12 @@ package com.realtime.crossfire.jxclient.gui.textinput;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIText} element that executes the entered text as a command.
@@ -48,6 +50,8 @@ public class GUICommandText extends GUIText {
     /**
      * Creates a new instance.
      * @param commandCallback the command callback to use
+     * @param commandHistory the command history to use or <code>null</code> to
+     * disable command history access
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
@@ -62,10 +66,9 @@ public class GUICommandText extends GUIText {
      * @param text the initially entered text
      * @param commandExecutor the command executor for executing entered
      * commands
-     * @param enableHistory if set, enable access to command history
      */
-    public GUICommandText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandExecutor commandExecutor, final boolean enableHistory) {
-        super(commandCallback, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, enableHistory);
+    public GUICommandText(@NotNull final CommandCallback commandCallback, @Nullable final CommandHistory commandHistory, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandExecutor commandExecutor) {
+        super(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text);
         this.commandExecutor = commandExecutor;
     }
 
