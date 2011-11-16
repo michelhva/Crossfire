@@ -74,9 +74,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private final CommandCallback commandCallback;
 
     /**
-     * The command history for this text field.
+     * The {@link CommandHistory} for this text field. Set to <code>null</code>
+     * is no command history is used.
      */
-    @NotNull
+    @Nullable
     private final CommandHistory commandHistory;
 
     /**
@@ -135,12 +136,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private final StringBuilder text;
 
     /**
-     * Whether UP and DOWN keys should be checked. If set, these keys cycle
-     * through the history.
-     */
-    private final boolean enableHistory;
-
-    /**
      * The size of this component.
      */
     private final Dimension preferredSize;
@@ -170,6 +165,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * Creates a new instance.
      * @param commandCallback the command callback to use
+     * @param commandHistory the command history to use or <code>null</code> to
+     * disable command history access
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
@@ -182,12 +179,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * element is active
      * @param margin the left margin in pixels
      * @param text the initially entered text
-     * @param enableHistory if set, enable access to command history
      */
-    protected GUIText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean enableHistory) {
+    protected GUIText(@NotNull final CommandCallback commandCallback, @Nullable final CommandHistory commandHistory, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         this.commandCallback = commandCallback;
-        commandHistory = new CommandHistory(name);
+        this.commandHistory = commandHistory;
         this.activeImage = activeImage;
         this.inactiveImage = inactiveImage;
         this.font = font;
@@ -195,7 +191,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         this.activeColor = activeColor;
         this.margin = margin;
         this.text = new StringBuilder(text);
-        this.enableHistory = enableHistory;
         preferredSize = new Dimension(activeImage.getWidth(null), activeImage.getHeight(null));
         if (!preferredSize.equals(new Dimension(inactiveImage.getWidth(null), inactiveImage.getHeight(null)))) {
             throw new IllegalArgumentException("active image size differs from inactive image size");
@@ -344,7 +339,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             final String command = text.toString();
             commandCallback.updatePlayerName(command);
             execute(command);
-            if (!hideInput) {
+            if (!hideInput && commandHistory != null) {
                 commandHistory.addCommand(command);
             }
             setActive(false);
@@ -388,16 +383,14 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         case KeyEvent.VK_KP_UP:
         case KeyEvent.VK_UP:
-            if (enableHistory) {
-                historyPrev();
+            if (historyPrev()) {
                 return true;
             }
             break;
 
         case KeyEvent.VK_KP_DOWN:
         case KeyEvent.VK_DOWN:
-            if (enableHistory) {
-                historyNext();
+            if (historyNext()) {
                 return true;
             }
             break;
@@ -419,15 +412,13 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             return true;
 
         case KeyEvent.VK_N:              // CTRL-N
-            if ((e.getModifiers()&InputEvent.CTRL_MASK) == InputEvent.CTRL_MASK) {
-                historyNext();
+            if ((e.getModifiers()&InputEvent.CTRL_MASK) == InputEvent.CTRL_MASK && historyNext()) {
                 return true;
             }
             break;
 
         case KeyEvent.VK_P:              // CTRL-P
-            if ((e.getModifiers()&InputEvent.CTRL_MASK) == InputEvent.CTRL_MASK) {
-                historyPrev();
+            if ((e.getModifiers()&InputEvent.CTRL_MASK) == InputEvent.CTRL_MASK && historyPrev()) {
                 return true;
             }
             break;
@@ -451,20 +442,30 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
     /**
      * Activates the previous command from the command history.
+     * @return whether command history access is enabled
      */
-    private void historyPrev() {
+    private boolean historyPrev() {
+        if (commandHistory == null) {
+            return false;
+        }
         final String commandUp = commandHistory.up();
         if (commandUp != null) {
             setText(commandUp);
         }
+        return true;
     }
 
     /**
      * Activates the next command from the command history.
+     * @return whether command history access is enabled
      */
-    private void historyNext() {
+    private boolean historyNext() {
+        if (commandHistory == null) {
+            return false;
+        }
         final String commandDown = commandHistory.down();
         setText(commandDown != null ? commandDown : "");
+        return true;
     }
 
     /**
