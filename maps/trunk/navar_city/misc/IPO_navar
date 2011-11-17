@@ -2,114 +2,270 @@ arch map
 name Navar Imperial Post Office
 difficulty 2
 region navar
-width 10
-height 10
+width 14
+height 14
 enter_x 5
 enter_y 8
 msg
 Created:  2001-09-05 Commander Gros (yann.chachkoff@mailandnews.com)
 Following a Lord MiDS idea
-Modified: 2011-11-09 Rick Tanner
+Modified: 2011-11-16 Rick Tanner
 endmsg
+outdoor 1
+end
+arch cobblestones2
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch grass_only
+y 8
+end
+arch grass_only
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch grass_only
+y 12
+end
+arch cobblestones2
+y 13
+end
+arch cobblestones2
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch cobblestones2
+x 1
+y 13
+end
+arch cobblestones2
+x 2
+end
+arch grass_only
+x 2
+y 1
 end
 arch tile_tan_floor
+x 2
+y 2
 end
 arch bwall_2_2_2
-end
-arch tile_tan_floor
-y 1
-end
-arch bwall_2_1_1
-y 1
-end
-arch tile_tan_floor
-y 2
-end
-arch bwall_2_1_1
+x 2
 y 2
 end
 arch tile_tan_floor
+x 2
 y 3
+end
+arch bwall_2_1_1
+x 2
+y 3
+end
+arch tile_tan_floor
+x 2
+y 4
+end
+arch bwall_2_1_1
+x 2
+y 4
+end
+arch tile_tan_floor
+x 2
+y 5
 end
 arch dungeon_magic
-y 3
+x 2
+y 5
 end
 arch bwall_3_2
-y 3
-end
-arch tile_tan_floor
-y 4
-end
-arch bwall_2_1_1
-y 4
-end
-arch tile_tan_floor
-y 5
-end
-arch bwall_2_1_1
+x 2
 y 5
 end
 arch tile_tan_floor
+x 2
 y 6
 end
-arch bwall_2_1_1
+arch wall_2_1_1
+x 2
 y 6
 end
-arch tile_tan_floor
+arch bwall_1_2
+x 2
+y 6
+end
+arch light2
+x 2
 y 7
 end
-arch bwall_2_1_1
+arch tile_tan_floor
+x 2
+y 7
+end
+arch window_win1
+x 2
 y 7
 end
 arch tile_tan_floor
+x 2
 y 8
 end
-arch bwall_2_1_1
+arch wall_2_1_1
+x 2
+y 8
+end
+arch bwall_1_1
+x 2
 y 8
 end
 arch tile_tan_floor
+x 2
 y 9
+end
+arch bwall_2_1_1
+x 2
+y 9
+end
+arch tile_tan_floor
+x 2
+y 10
+end
+arch bwall_2_1_1
+x 2
+y 10
+end
+arch tile_tan_floor
+x 2
+y 11
 end
 arch bwall_2_2_1
-y 9
+x 2
+y 11
+end
+arch grass_only
+x 2
+y 12
+end
+arch cobblestones2
+x 2
+y 13
+end
+arch cobblestones2
+x 3
+end
+arch grass_only
+x 3
+y 1
 end
 arch tile_tan_floor
-x 1
+x 3
+y 2
 end
 arch bwall_2_1_2
-x 1
-end
-arch tile_tan_floor
-x 1
-y 1
-end
-arch bookshelf
-x 1
-y 1
-end
-arch tile_tan_floor
-x 1
+x 3
 y 2
 end
 arch tile_tan_floor
-x 1
+x 3
 y 3
 end
-arch wall_2_1_2
-x 1
-y 3
-end
-arch dungeon_magic
-x 1
-y 3
-end
-arch bwall_1_3
-x 1
+arch bookshelf
+x 3
 y 3
 end
 arch tile_tan_floor
-x 1
+x 3
 y 4
+end
+arch tile_tan_floor
+x 3
+y 5
+end
+arch wall_2_1_2
+x 3
+y 5
+end
+arch dungeon_magic
+x 3
+y 5
+end
+arch bwall_1_3
+x 3
+y 5
+end
+arch tile_tan_floor
+x 3
+y 6
 end
 arch greater_dwarven_guard
 msg
@@ -119,197 +275,301 @@ Greetings.  Have a pleasant day.
 We donna tolerate no shenanigans around these parts.
 endmsg
 exp 0
-x 1
-y 4
+x 3
+y 6
 friendly 1
 unaggressive 1
 stand_still 1
 end
 arch tile_tan_floor
-x 1
-y 5
-end
-arch tile_tan_floor
-x 1
-y 6
-end
-arch tile_tan_floor
-x 1
+x 3
 y 7
 end
 arch tile_tan_floor
-x 1
+x 3
 y 8
 end
-arch sign
-name Navar Message Board
-msg
-I am a talking board, please say something to me. If you don't know what to say, try help.
-endmsg
-x 1
-y 8
-arch event_say
-name Navar board
-title Python
-slaying /python/IPO/board.py
-end
-end
 arch tile_tan_floor
-x 1
+x 3
 y 9
 end
-arch bwall_2_1_2
-x 1
-y 9
+arch button_small
+x 3
+y 10
+connected 1
 end
 arch tile_tan_floor
-x 2
-end
-arch bwall_2_1_2
-x 2
+x 3
+y 10
 end
 arch tile_tan_floor
-x 2
+x 3
+y 11
+end
+arch bwall_1_3
+x 3
+y 11
+end
+arch dungeon_magic
+x 3
+y 12
+end
+arch invis_exit
+slaying /world/world_122_117
+hp 1
+sp 7
+x 3
+y 12
+end
+arch grass_only
+x 3
+y 12
+end
+arch cobblestones2
+x 3
+y 13
+end
+arch cobblestones2
+x 4
+end
+arch grass_only
+x 4
 y 1
+end
+arch tile_tan_floor
+x 4
+y 2
+end
+arch bwall_2_1_2
+x 4
+y 2
+end
+arch tile_tan_floor
+x 4
+y 3
 end
 arch halfling2
 name Gofer
-x 2
-y 1
+x 4
+y 3
 friendly 1
 end
-arch tile_tan_floor
-x 2
-y 2
-end
-arch tile_tan_floor
-x 2
-y 3
-end
-arch window_win2
-x 2
-y 3
-end
-arch dungeon_magic
-x 2
-y 3
-end
-arch tile_tan_floor
-x 2
+arch light4
+x 4
 y 4
 end
 arch tile_tan_floor
-x 2
+x 4
+y 4
+end
+arch tile_tan_floor
+x 4
+y 5
+end
+arch window_win2
+x 4
+y 5
+end
+arch dungeon_magic
+x 4
 y 5
 end
 arch tile_tan_floor
-x 2
+x 4
 y 6
 end
-arch tile_tan_floor
-x 2
+arch light4
+x 4
 y 7
 end
 arch tile_tan_floor
-x 2
+x 4
+y 7
+end
+arch tile_tan_floor
+x 4
 y 8
 end
-arch tile_tan_floor
-x 2
-y 9
-end
-arch bwall_2_1_2
-x 2
+arch light4
+x 4
 y 9
 end
 arch tile_tan_floor
-x 3
+x 4
+y 9
 end
-arch bwall_2_1_2
-x 3
+arch button_small
+x 4
+y 10
+connected 1
 end
 arch tile_tan_floor
-x 3
+x 4
+y 10
+end
+arch button_small
+x 4
+y 11
+connected 1
+end
+arch tile_tan_floor
+x 4
+y 11
+end
+arch odoorn2_closed_1
+x 4
+y 11
+connected 1
+end
+arch dungeon_magic
+x 4
+y 12
+end
+arch invis_exit
+slaying /world/world_122_117
+hp 1
+sp 7
+x 4
+y 12
+end
+arch grass_only
+x 4
+y 12
+end
+arch cobblestones2
+x 4
+y 13
+end
+arch cobblestones2
+x 5
+end
+arch grass_only
+x 5
 y 1
+end
+arch tile_tan_floor
+x 5
+y 2
+end
+arch bwall_2_1_2
+x 5
+y 2
+end
+arch tile_tan_floor
+x 5
+y 3
 end
 arch bookshelf
-x 3
-y 1
+x 5
+y 3
 end
 arch tile_tan_floor
-x 3
-y 2
+x 5
+y 4
 end
 arch table_2
-x 3
-y 2
+x 5
+y 4
 end
 arch cauldron
 name Coffee supplies
-x 3
-y 2
-end
-arch tile_tan_floor
-x 3
-y 3
-end
-arch wall_2_1_2
-x 3
-y 3
-end
-arch dungeon_magic
-x 3
-y 3
-end
-arch bwall_0
-x 3
-y 3
-end
-arch tile_tan_floor
-x 3
+x 5
 y 4
 end
 arch tile_tan_floor
-x 3
+x 5
+y 5
+end
+arch wall_2_1_2
+x 5
+y 5
+end
+arch dungeon_magic
+x 5
+y 5
+end
+arch bwall_0
+x 5
 y 5
 end
 arch tile_tan_floor
-x 3
+x 5
 y 6
 end
 arch tile_tan_floor
-x 3
+x 5
 y 7
 end
 arch tile_tan_floor
-x 3
+x 5
 y 8
 end
 arch tile_tan_floor
-x 3
+x 5
 y 9
 end
-arch bwall_2_1_2
-x 3
-y 9
+arch button_small
+x 5
+y 10
+connected 1
 end
 arch tile_tan_floor
-x 4
-end
-arch bwall_2_1_2
-x 4
+x 5
+y 10
 end
 arch tile_tan_floor
-x 4
+x 5
+y 11
+end
+arch bwall_1_4
+x 5
+y 11
+end
+arch dungeon_magic
+x 5
+y 12
+end
+arch invis_exit
+slaying /world/world_122_117
+hp 1
+sp 7
+x 5
+y 12
+end
+arch grass_only
+x 5
+y 12
+end
+arch cobblestones2
+x 5
+y 13
+end
+arch cobblestones2
+x 6
+end
+arch grass_only
+x 6
 y 1
 end
 arch tile_tan_floor
-x 4
+x 6
 y 2
 end
-arch chair_2.1
-x 4
+arch bwall_2_1_2
+x 6
 y 2
+end
+arch tile_tan_floor
+x 6
+y 3
+end
+arch tile_tan_floor
+x 6
+y 4
+end
+arch chair_2.1
+x 6
+y 4
 end
 arch c_woman
 name Babs
@@ -317,8 +577,8 @@ msg
 @match *
 I'm on a break.
 endmsg
-x 4
-y 2
+x 6
+y 4
 monster 0
 stand_still 1
 arch event_say
@@ -327,221 +587,314 @@ slaying /python/IPO/say.py
 end
 end
 arch tile_tan_floor
-x 4
-y 3
+x 6
+y 5
 end
 arch window_win2
-x 4
-y 3
+x 6
+y 5
 end
 arch dungeon_magic
-x 4
-y 3
-end
-arch tile_tan_floor
-x 4
-y 4
-end
-arch tile_tan_floor
-x 4
+x 6
 y 5
 end
 arch tile_tan_floor
-x 4
+x 6
 y 6
 end
 arch tile_tan_floor
-x 4
+x 6
 y 7
 end
 arch tile_tan_floor
-x 4
+x 6
 y 8
 end
-arch tile_tan_floor
-x 4
-y 9
-end
-arch bwall_1_3
-x 4
+arch light4
+x 6
 y 9
 end
 arch tile_tan_floor
-x 5
+x 6
+y 9
+end
+arch tile_tan_floor
+x 6
+y 10
+end
+arch sign
+name Navar Message Board
+msg
+I am a talking board, please say something to me. If you don't know what to say, try help.
+endmsg
+x 6
+y 10
+arch event_say
+name Navar board
+title Python
+slaying /python/IPO/board.py
+end
+end
+arch tile_tan_floor
+x 6
+y 11
 end
 arch bwall_2_1_2
-x 5
+x 6
+y 11
 end
-arch tile_tan_floor
-x 5
+arch grass_only
+x 6
+y 12
+end
+arch cobblestones2
+x 6
+y 13
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
 y 1
 end
 arch tile_tan_floor
-x 5
+x 7
 y 2
+end
+arch bwall_2_1_2
+x 7
+y 2
+end
+arch tile_tan_floor
+x 7
+y 3
+end
+arch light4
+x 7
+y 4
+end
+arch tile_tan_floor
+x 7
+y 4
 end
 arch table_2
-x 5
-y 2
+x 7
+y 4
 end
 arch tile_tan_floor
-x 5
-y 3
+x 7
+y 5
 end
 arch wall_2_1_2
-x 5
-y 3
+x 7
+y 5
 end
 arch dungeon_magic
-x 5
-y 3
+x 7
+y 5
 end
 arch bwall_0
-x 5
-y 3
-end
-arch tile_tan_floor
-x 5
-y 4
-end
-arch tile_tan_floor
-x 5
+x 7
 y 5
 end
 arch tile_tan_floor
-x 5
+x 7
 y 6
 end
-arch tile_tan_floor
-x 5
+arch light4
+x 7
 y 7
 end
 arch tile_tan_floor
-x 5
-y 8
-end
-arch invis_exit
-slaying /world/world_122_117
-hp 1
-sp 7
-x 5
-y 9
-end
-arch tile_tan_floor
-x 5
-y 9
-end
-arch tile_tan_floor
-x 6
-end
-arch bwall_2_1_2
-x 6
-end
-arch tile_tan_floor
-x 6
-y 1
-end
-arch bookshelf
-x 6
-y 1
-end
-arch tile_tan_floor
-x 6
-y 2
-end
-arch tile_tan_floor
-x 6
-y 3
-end
-arch window_win2
-x 6
-y 3
-end
-arch dungeon_magic
-x 6
-y 3
-end
-arch tile_tan_floor
-x 6
-y 4
-end
-arch tile_tan_floor
-x 6
-y 5
-end
-arch tile_tan_floor
-x 6
-y 6
-end
-arch tile_tan_floor
-x 6
-y 7
-end
-arch chair_2.4
-x 6
+x 7
 y 7
 end
 arch tile_tan_floor
-x 6
+x 7
 y 8
 end
 arch tile_tan_floor
-x 6
-y 9
-end
-arch bwall_1_4
-x 6
+x 7
 y 9
 end
 arch tile_tan_floor
 x 7
-end
-arch bwall_2_1_2
-x 7
+y 10
 end
 arch tile_tan_floor
 x 7
-y 1
-end
-arch tile_tan_floor
-x 7
-y 2
-end
-arch tile_tan_floor
-x 7
-y 3
+y 11
 end
 arch wall_2_1_2
 x 7
+y 11
+end
+arch bwall_1_3
+x 7
+y 11
+end
+arch grass_only
+x 7
+y 12
+end
+arch cobblestones2
+x 7
+y 13
+end
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
+y 1
+end
+arch tile_tan_floor
+x 8
+y 2
+end
+arch bwall_2_1_2
+x 8
+y 2
+end
+arch tile_tan_floor
+x 8
 y 3
 end
-arch dungeon_magic
-x 7
-y 3
-end
-arch bwall_1_4
-x 7
+arch bookshelf
+x 8
 y 3
 end
 arch tile_tan_floor
-x 7
+x 8
 y 4
 end
 arch tile_tan_floor
-x 7
+x 8
+y 5
+end
+arch window_win2
+x 8
+y 5
+end
+arch dungeon_magic
+x 8
 y 5
 end
 arch tile_tan_floor
-x 7
+x 8
 y 6
 end
 arch tile_tan_floor
-x 7
+x 8
 y 7
 end
-arch table_3
-x 7
+arch tile_tan_floor
+x 8
+y 8
+end
+arch tile_tan_floor
+x 8
+y 9
+end
+arch chair_2.4
+x 8
+y 9
+end
+arch tile_tan_floor
+x 8
+y 10
+end
+arch light2
+x 8
+y 11
+end
+arch tile_tan_floor
+x 8
+y 11
+end
+arch window_win2
+x 8
+y 11
+end
+arch grass_only
+x 8
+y 12
+end
+arch cobblestones2
+x 8
+y 13
+end
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch tile_tan_floor
+x 9
+y 2
+end
+arch bwall_2_1_2
+x 9
+y 2
+end
+arch tile_tan_floor
+x 9
+y 3
+end
+arch light4
+x 9
+y 4
+end
+arch tile_tan_floor
+x 9
+y 4
+end
+arch tile_tan_floor
+x 9
+y 5
+end
+arch wall_2_1_2
+x 9
+y 5
+end
+arch dungeon_magic
+x 9
+y 5
+end
+arch bwall_1_4
+x 9
+y 5
+end
+arch tile_tan_floor
+x 9
+y 6
+end
+arch light4
+x 9
 y 7
+end
+arch tile_tan_floor
+x 9
+y 7
+end
+arch tile_tan_floor
+x 9
+y 8
+end
+arch light4
+x 9
+y 9
+end
+arch tile_tan_floor
+x 9
+y 9
+end
+arch table_3
+x 9
+y 9
 end
 arch scroll
 name Prospectus
@@ -551,8 +904,8 @@ Imperial Post Services
 -----------------------
 Thank you for choosing the IPS to take care of your messages. Want to get more? We have a wide range of products and services to offer to anyone. Pirate? Try our TalkParrots(tm)! Beholder? Enjoy our fabulous non-stereoscopical cards! And don't forget: The Empire Is Everywhere For You!
 endmsg
-x 7
-y 7
+x 9
+y 9
 end
 arch book_read
 name Manual
@@ -572,62 +925,83 @@ Multiple lines of text may be written.
 ...
 When done, drop the scroll in the mailbox and it will be sent.
 endmsg
-x 7
-y 7
+x 9
+y 9
 end
 arch tile_tan_floor
-x 7
-y 8
+x 9
+y 10
 end
 arch chair_2.3
-x 7
-y 8
+x 9
+y 10
 end
 arch tile_tan_floor
-x 7
-y 9
+x 9
+y 11
 end
-arch bwall_2_1_2
-x 7
-y 9
+arch wall_2_1_2
+x 9
+y 11
 end
-arch tile_tan_floor
-x 8
+arch bwall_1_4
+x 9
+y 11
 end
-arch bwall_2_1_2
-x 8
+arch grass_only
+x 9
+y 12
 end
-arch tile_tan_floor
-x 8
+arch cobblestones2
+x 9
+y 13
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
 y 1
 end
-arch bookshelf
-x 8
-y 1
-end
 arch tile_tan_floor
-x 8
+x 10
+y 2
+end
+arch bwall_2_1_2
+x 10
 y 2
 end
 arch tile_tan_floor
-x 8
+x 10
 y 3
 end
-arch dungeon_magic
-x 8
-y 3
-end
-arch bwall_2_1_2
-x 8
+arch bookshelf
+x 10
 y 3
 end
 arch tile_tan_floor
-x 8
+x 10
 y 4
 end
+arch tile_tan_floor
+x 10
+y 5
+end
+arch dungeon_magic
+x 10
+y 5
+end
+arch bwall_2_1_2
+x 10
+y 5
+end
+arch tile_tan_floor
+x 10
+y 6
+end
 arch mailbox
-x 8
-y 4
+x 10
+y 6
 material 0
 weight 0
 arch event_apply
@@ -640,112 +1014,259 @@ slaying /python/IPO/send.py
 end
 end
 arch tile_tan_floor
-x 8
-y 5
-end
-arch tile_tan_floor
-x 8
-y 6
-end
-arch tile_tan_floor
-x 8
+x 10
 y 7
+end
+arch tile_tan_floor
+x 10
+y 8
+end
+arch tile_tan_floor
+x 10
+y 9
 end
 arch chair_2.2
-x 8
-y 7
-end
-arch tile_tan_floor
-x 8
-y 8
-end
-arch tile_tan_floor
-x 8
+x 10
 y 9
+end
+arch tile_tan_floor
+x 10
+y 10
+end
+arch tile_tan_floor
+x 10
+y 11
 end
 arch bwall_2_1_2
-x 8
-y 9
+x 10
+y 11
+end
+arch grass_only
+x 10
+y 12
+end
+arch cobblestones2
+x 10
+y 13
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
+y 1
 end
 arch tile_tan_floor
-x 9
+x 11
+y 2
 end
 arch bwall_2_2_3
-x 9
-end
-arch tile_tan_floor
-x 9
-y 1
-end
-arch bwall_2_1_1
-x 9
-y 1
-end
-arch tile_tan_floor
-x 9
-y 2
-end
-arch bwall_2_1_1
-x 9
+x 11
 y 2
 end
 arch tile_tan_floor
-x 9
+x 11
 y 3
+end
+arch bwall_2_1_1
+x 11
+y 3
+end
+arch tile_tan_floor
+x 11
+y 4
+end
+arch bwall_2_1_1
+x 11
+y 4
+end
+arch tile_tan_floor
+x 11
+y 5
 end
 arch dungeon_magic
-x 9
-y 3
+x 11
+y 5
 end
 arch bwall_3_4
-x 9
-y 3
-end
-arch tile_tan_floor
-x 9
-y 4
-end
-arch bwall_2_1_1
-x 9
-y 4
-end
-arch tile_tan_floor
-x 9
-y 5
-end
-arch bwall_2_1_1
-x 9
+x 11
 y 5
 end
 arch tile_tan_floor
-x 9
+x 11
 y 6
 end
-arch bwall_2_1_1
-x 9
+arch wall_2_1_1
+x 11
 y 6
 end
-arch tile_tan_floor
-x 9
+arch bwall_1_2
+x 11
+y 6
+end
+arch light2
+x 11
 y 7
 end
-arch bwall_2_1_1
-x 9
+arch tile_tan_floor
+x 11
+y 7
+end
+arch window_win1
+x 11
 y 7
 end
 arch tile_tan_floor
-x 9
+x 11
 y 8
 end
-arch bwall_2_1_1
-x 9
+arch wall_2_1_1
+x 11
+y 8
+end
+arch bwall_1_1
+x 11
 y 8
 end
 arch tile_tan_floor
-x 9
+x 11
 y 9
+end
+arch bwall_2_1_1
+x 11
+y 9
+end
+arch tile_tan_floor
+x 11
+y 10
+end
+arch bwall_2_1_1
+x 11
+y 10
+end
+arch tile_tan_floor
+x 11
+y 11
 end
 arch bwall_2_2_4
-x 9
+x 11
+y 11
+end
+arch grass_only
+x 11
+y 12
+end
+arch cobblestones2
+x 11
+y 13
+end
+arch cobblestones2
+x 12
+end
+arch grass_only
+x 12
+y 1
+end
+arch grass_only
+x 12
+y 2
+end
+arch grass_only
+x 12
+y 3
+end
+arch grass_only
+x 12
+y 4
+end
+arch grass_only
+x 12
+y 5
+end
+arch grass_only
+x 12
+y 6
+end
+arch grass_only
+x 12
+y 7
+end
+arch grass_only
+x 12
+y 8
+end
+arch grass_only
+x 12
 y 9
+end
+arch grass_only
+x 12
+y 10
+end
+arch grass_only
+x 12
+y 11
+end
+arch grass_only
+x 12
+y 12
+end
+arch cobblestones2
+x 12
+y 13
+end
+arch cobblestones2
+x 13
+end
+arch grass_only
+x 13
+y 1
+end
+arch grass_only
+x 13
+y 2
+end
+arch grass_only
+x 13
+y 3
+end
+arch grass_only
+x 13
+y 4
+end
+arch grass_only
+x 13
+y 5
+end
+arch grass_only
+x 13
+y 6
+end
+arch grass_only
+x 13
+y 7
+end
+arch grass_only
+x 13
+y 8
+end
+arch grass_only
+x 13
+y 9
+end
+arch grass_only
+x 13
+y 10
+end
+arch grass_only
+x 13
+y 11
+end
+arch grass_only
+x 13
+y 12
+end
+arch cobblestones2
+x 13
+y 13
 end
