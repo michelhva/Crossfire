@@ -590,14 +590,14 @@ arch marble
 x 3
 y 7
 end
-arch swall_1_1
-x 3
-y 7
-end
 arch westcwall_1_2
 x 3
 y 7
 end
+arch swall_1_1_half
+x 3
+y 7
+end
 arch light1
 x 3
 y 8
@@ -626,7 +626,7 @@ arch marble
 x 3
 y 9
 end
-arch swall_1_2
+arch swall_1_2_half
 x 3
 y 9
 end
@@ -678,11 +678,11 @@ arch marble
 x 3
 y 12
 end
-arch swall_1_1
+arch westcwall_1_2
 x 3
 y 12
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 3
 y 12
 end
@@ -714,7 +714,7 @@ arch marble
 x 3
 y 14
 end
-arch swall_1_2
+arch swall_1_2_half
 x 3
 y 14
 end
@@ -766,11 +766,11 @@ arch marble
 x 3
 y 17
 end
-arch swall_1_1
+arch westcwall_1_2
 x 3
 y 17
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 3
 y 17
 end
@@ -802,7 +802,7 @@ arch marble
 x 3
 y 19
 end
-arch swall_1_2
+arch swall_1_2_half
 x 3
 y 19
 end
@@ -854,11 +854,11 @@ arch marble
 x 3
 y 22
 end
-arch swall_1_1
+arch westcwall_1_2
 x 3
 y 22
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 3
 y 22
 end
@@ -890,7 +890,7 @@ arch marble
 x 3
 y 24
 end
-arch swall_1_2
+arch swall_1_2_half
 x 3
 y 24
 end
@@ -1768,7 +1768,7 @@ arch marble
 x 7
 y 3
 end
-arch swall_1_4
+arch swall_1_4_half
 x 7
 y 3
 end
@@ -2438,7 +2438,7 @@ arch marble
 x 9
 y 3
 end
-arch swall_1_3
+arch swall_1_3_half
 x 9
 y 3
 end
@@ -3047,7 +3047,7 @@ arch marble
 x 10
 y 29
 end
-arch swall_1_4
+arch swall_1_4_half
 x 10
 y 29
 end
@@ -3398,7 +3398,7 @@ arch marble
 x 12
 y 3
 end
-arch swall_1_4
+arch swall_1_4_half
 x 12
 y 3
 end
@@ -3662,7 +3662,7 @@ arch marble
 x 12
 y 29
 end
-arch swall_1_3
+arch swall_1_3_half
 x 12
 y 29
 end
@@ -4015,7 +4015,7 @@ arch marble
 x 14
 y 3
 end
-arch swall_1_3
+arch swall_1_3_half
 x 14
 y 3
 end
@@ -4962,7 +4962,7 @@ arch marble
 x 17
 y 3
 end
-arch swall_1_4
+arch swall_1_4_half
 x 17
 y 3
 end
@@ -5595,7 +5595,7 @@ arch marble
 x 19
 y 3
 end
-arch swall_1_3
+arch swall_1_3_half
 x 19
 y 3
 end
@@ -5859,7 +5859,7 @@ arch marble
 x 19
 y 29
 end
-arch swall_1_4
+arch swall_1_4_half
 x 19
 y 29
 end
@@ -6473,7 +6473,7 @@ arch marble
 x 21
 y 29
 end
-arch swall_1_3
+arch swall_1_3_half
 x 21
 y 29
 end
@@ -6512,7 +6512,7 @@ arch marble
 x 22
 y 3
 end
-arch swall_1_4
+arch swall_1_4_half
 x 22
 y 3
 end
@@ -7186,7 +7186,7 @@ arch marble
 x 24
 y 3
 end
-arch swall_1_3
+arch swall_1_3_half
 x 24
 y 3
 end
@@ -8330,14 +8330,14 @@ arch marble
 x 28
 y 7
 end
-arch swall_1_1
-x 28
-y 7
-end
 arch westcwall_1_2
 x 28
 y 7
 end
+arch swall_1_1_half
+x 28
+y 7
+end
 arch light1
 x 28
 y 8
@@ -8366,7 +8366,7 @@ arch marble
 x 28
 y 9
 end
-arch swall_1_2
+arch swall_1_2_half
 x 28
 y 9
 end
@@ -8418,11 +8418,11 @@ arch marble
 x 28
 y 12
 end
-arch swall_1_1
+arch westcwall_1_2
 x 28
 y 12
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 28
 y 12
 end
@@ -8454,7 +8454,7 @@ arch marble
 x 28
 y 14
 end
-arch swall_1_2
+arch swall_1_2_half
 x 28
 y 14
 end
@@ -8506,11 +8506,11 @@ arch marble
 x 28
 y 17
 end
-arch swall_1_1
+arch westcwall_1_2
 x 28
 y 17
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 28
 y 17
 end
@@ -8542,7 +8542,7 @@ arch marble
 x 28
 y 19
 end
-arch swall_1_2
+arch swall_1_2_half
 x 28
 y 19
 end
@@ -8594,11 +8594,11 @@ arch marble
 x 28
 y 22
 end
-arch swall_1_1
+arch westcwall_1_2
 x 28
 y 22
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 28
 y 22
 end
@@ -8630,7 +8630,7 @@ arch marble
 x 28
 y 24
 end
-arch swall_1_2
+arch swall_1_2_half
 x 28
 y 24
 end
