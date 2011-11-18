@@ -10,7 +10,7 @@ enter_x 22
 enter_y 27
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-10 Rick Tanner
+Modified: 2011-11-17 Rick Tanner
 endmsg
 tile_path_4 /navar_city/misc/theaterb4
 end
@@ -106,7 +106,7 @@ end
 arch marble
 y 27
 end
-arch cave18
+arch cave24
 y 27
 end
 arch marble
@@ -118,7 +118,7 @@ end
 arch marble
 y 29
 end
-arch cave17
+arch cave23
 y 29
 end
 arch cave_15
@@ -133,7 +133,7 @@ end
 arch marble
 y 33
 end
-arch cave18
+arch cave24
 y 33
 end
 arch marble
@@ -169,7 +169,7 @@ end
 arch marble
 y 39
 end
-arch cave17
+arch cave23
 y 39
 end
 arch cave_15
@@ -196,7 +196,7 @@ end
 arch marble
 y 47
 end
-arch cave18
+arch cave24
 y 47
 end
 arch marble
@@ -232,7 +232,7 @@ end
 arch marble
 y 53
 end
-arch cave17
+arch cave23
 y 53
 end
 arch cave_15
@@ -277,7 +277,7 @@ end
 arch marble
 y 67
 end
-arch cave18
+arch cave24
 y 67
 end
 arch marble
@@ -325,7 +325,7 @@ end
 arch oil_sea
 y 74
 end
-arch cave17
+arch cave23
 y 74
 end
 arch cave_15
@@ -349,7 +349,7 @@ end
 arch oil_sea
 y 81
 end
-arch cave18
+arch cave24
 y 81
 end
 arch oil_sea
@@ -385,7 +385,7 @@ end
 arch oil_sea
 y 87
 end
-arch cave17
+arch cave23
 y 87
 end
 arch cave_15
@@ -400,7 +400,7 @@ end
 arch oil_sea
 y 91
 end
-arch cave18
+arch cave24
 y 91
 end
 arch oil_sea
@@ -436,7 +436,7 @@ end
 arch oil_sea
 y 97
 end
-arch cave17
+arch cave23
 y 97
 end
 arch cave_15
@@ -620,7 +620,7 @@ arch marble
 x 1
 y 25
 end
-arch cave18
+arch cave24
 x 1
 y 25
 end
@@ -724,7 +724,7 @@ arch marble
 x 1
 y 42
 end
-arch cave18
+arch cave24
 x 1
 y 42
 end
@@ -748,7 +748,7 @@ arch marble
 x 1
 y 45
 end
-arch cave17
+arch cave23
 x 1
 y 45
 end
@@ -812,7 +812,7 @@ arch marble
 x 1
 y 56
 end
-arch cave17
+arch cave23
 x 1
 y 56
 end
@@ -848,7 +848,7 @@ arch marble
 x 1
 y 64
 end
-arch cave18
+arch cave24
 x 1
 y 64
 end
@@ -1084,7 +1084,7 @@ arch oil_sea
 x 1
 y 100
 end
-arch cave17
+arch cave23
 x 1
 y 100
 end
@@ -1257,7 +1257,7 @@ arch marble
 x 2
 y 23
 end
-arch cave18
+arch cave24
 x 2
 y 23
 end
@@ -1461,7 +1461,7 @@ arch marble
 x 2
 y 58
 end
-arch cave17
+arch cave23
 x 2
 y 58
 end
@@ -1477,7 +1477,7 @@ arch marble
 x 2
 y 61
 end
-arch cave18
+arch cave24
 x 2
 y 61
 end
@@ -1717,7 +1717,7 @@ arch oil_sea
 x 2
 y 106
 end
-arch cave17
+arch cave23
 x 2
 y 106
 end
@@ -1856,7 +1856,7 @@ arch marble
 x 3
 y 22
 end
-arch cave18
+arch cave24
 x 3
 y 22
 end
@@ -2296,7 +2296,7 @@ arch oil_sea
 x 3
 y 109
 end
-arch cave17
+arch cave23
 x 3
 y 109
 end
@@ -2899,7 +2899,7 @@ arch oil_sea
 x 4
 y 113
 end
-arch cave17
+arch cave23
 x 4
 y 113
 end
@@ -3537,7 +3537,7 @@ arch marble
 x 6
 y 19
 end
-arch cave18
+arch cave24
 x 6
 y 19
 end
@@ -4076,7 +4076,7 @@ arch marble
 x 7
 y 17
 end
-arch cave18
+arch cave24
 x 7
 y 17
 end
@@ -4560,7 +4560,7 @@ arch oil_sea
 x 7
 y 114
 end
-arch cave20
+arch cave22
 x 7
 y 114
 end
@@ -4647,7 +4647,7 @@ arch marble
 x 8
 y 17
 end
-arch cave19
+arch cave25
 x 8
 y 17
 end
@@ -5127,7 +5127,7 @@ arch oil_sea
 x 8
 y 110
 end
-arch cave20
+arch cave22
 x 8
 y 110
 end
@@ -5678,7 +5678,7 @@ arch oil_sea
 x 9
 y 112
 end
-arch cave17
+arch cave23
 x 9
 y 112
 end
@@ -5781,7 +5781,7 @@ arch marble
 x 10
 y 19
 end
-arch cave19
+arch cave25
 x 10
 y 19
 end
@@ -6361,7 +6361,7 @@ arch oil_sea
 x 10
 y 116
 end
-arch cave17
+arch cave23
 x 10
 y 116
 end
@@ -6464,7 +6464,7 @@ arch marble
 x 11
 y 23
 end
-arch cave19
+arch cave25
 x 11
 y 23
 end
@@ -8608,7 +8608,7 @@ arch oil_sea
 x 13
 y 114
 end
-arch cave20
+arch cave22
 x 13
 y 114
 end
@@ -8727,7 +8727,7 @@ arch marble
 x 14
 y 25
 end
-arch cave19
+arch cave25
 x 14
 y 25
 end
@@ -9329,7 +9329,7 @@ arch oil_sea
 x 14
 y 112
 end
-arch cave17
+arch cave23
 x 14
 y 112
 end
@@ -9428,7 +9428,7 @@ arch marble
 x 15
 y 17
 end
-arch cave18
+arch cave24
 x 15
 y 17
 end
@@ -9444,7 +9444,7 @@ arch marble
 x 15
 y 19
 end
-arch cave17
+arch cave23
 x 15
 y 19
 end
@@ -10066,7 +10066,7 @@ arch oil_sea
 x 15
 y 116
 end
-arch cave17
+arch cave23
 x 15
 y 116
 end
@@ -10145,7 +10145,7 @@ arch marble
 x 16
 y 16
 end
-arch cave18
+arch cave24
 x 16
 y 16
 end
@@ -10173,7 +10173,7 @@ arch marble
 x 16
 y 20
 end
-arch cave17
+arch cave23
 x 16
 y 20
 end
@@ -10906,7 +10906,7 @@ arch marble
 x 17
 y 23
 end
-arch cave18
+arch cave24
 x 17
 y 23
 end
@@ -11643,7 +11643,7 @@ arch marble
 x 18
 y 23
 end
-arch cave19
+arch cave25
 x 18
 y 23
 end
@@ -12265,7 +12265,7 @@ arch oil_sea
 x 18
 y 115
 end
-arch cave20
+arch cave22
 x 18
 y 115
 end
@@ -12970,7 +12970,7 @@ arch oil_sea
 x 19
 y 110
 end
-arch cave20
+arch cave22
 x 19
 y 110
 end
@@ -13069,7 +13069,7 @@ arch marble
 x 20
 y 16
 end
-arch cave19
+arch cave25
 x 20
 y 16
 end
@@ -13105,7 +13105,7 @@ arch marble
 x 20
 y 21
 end
-arch cave18
+arch cave24
 x 20
 y 21
 end
@@ -13851,7 +13851,7 @@ arch oil_sea
 x 20
 y 112
 end
-arch cave17
+arch cave23
 x 20
 y 112
 end
@@ -13942,7 +13942,7 @@ arch marble
 x 21
 y 16
 end
-arch cave18
+arch cave24
 x 21
 y 16
 end
@@ -14597,7 +14597,7 @@ arch marble
 x 22
 y 16
 end
-arch cave19
+arch cave25
 x 22
 y 16
 end
@@ -15167,7 +15167,7 @@ arch marble
 x 23
 y 17
 end
-arch cave19
+arch cave25
 x 23
 y 17
 end
@@ -15655,7 +15655,7 @@ arch oil_sea
 x 23
 y 115
 end
-arch cave20
+arch cave22
 x 23
 y 115
 end
@@ -16190,7 +16190,7 @@ arch oil_sea
 x 24
 y 111
 end
-arch cave20
+arch cave22
 x 24
 y 111
 end
@@ -16289,7 +16289,7 @@ arch marble
 x 25
 y 17
 end
-arch cave18
+arch cave24
 x 25
 y 17
 end
@@ -16745,7 +16745,7 @@ arch oil_sea
 x 25
 y 112
 end
-arch cave17
+arch cave23
 x 25
 y 112
 end
@@ -16836,7 +16836,7 @@ arch marble
 x 26
 y 16
 end
-arch cave18
+arch cave24
 x 26
 y 16
 end
@@ -17403,7 +17403,7 @@ arch marble
 x 27
 y 16
 end
-arch cave19
+arch cave25
 x 27
 y 16
 end
@@ -18474,7 +18474,7 @@ arch oil_sea
 x 28
 y 113
 end
-arch cave20
+arch cave22
 x 28
 y 113
 end
@@ -18569,7 +18569,7 @@ arch marble
 x 29
 y 18
 end
-arch cave19
+arch cave25
 x 29
 y 18
 end
@@ -18637,7 +18637,7 @@ arch marble
 x 29
 y 28
 end
-arch cave19
+arch cave25
 x 29
 y 28
 end
@@ -19085,7 +19085,7 @@ arch oil_sea
 x 29
 y 109
 end
-arch cave20
+arch cave22
 x 29
 y 109
 end
@@ -19208,7 +19208,7 @@ arch marble
 x 30
 y 21
 end
-arch cave19
+arch cave25
 x 30
 y 21
 end
@@ -19224,7 +19224,7 @@ arch marble
 x 30
 y 23
 end
-arch cave20
+arch cave22
 x 30
 y 23
 end
@@ -19256,7 +19256,7 @@ arch marble
 x 30
 y 30
 end
-arch cave19
+arch cave25
 x 30
 y 30
 end
@@ -19356,7 +19356,7 @@ arch marble
 x 30
 y 45
 end
-arch cave20
+arch cave22
 x 30
 y 45
 end
@@ -19384,7 +19384,7 @@ arch marble
 x 30
 y 51
 end
-arch cave19
+arch cave25
 x 30
 y 51
 end
@@ -19496,7 +19496,7 @@ arch marble
 x 30
 y 67
 end
-arch cave20
+arch cave22
 x 30
 y 67
 end
@@ -19555,7 +19555,7 @@ arch oil_sea
 x 30
 y 77
 end
-arch cave19
+arch cave25
 x 30
 y 77
 end
@@ -19735,7 +19735,7 @@ arch oil_sea
 x 30
 y 106
 end
-arch cave20
+arch cave22
 x 30
 y 106
 end
@@ -19922,7 +19922,7 @@ arch marble
 x 31
 y 34
 end
-arch cave19
+arch cave25
 x 31
 y 34
 end
@@ -19978,7 +19978,7 @@ arch marble
 x 31
 y 41
 end
-arch cave20
+arch cave22
 x 31
 y 41
 end
@@ -20042,7 +20042,7 @@ arch marble
 x 31
 y 56
 end
-arch cave19
+arch cave25
 x 31
 y 56
 end
@@ -20082,7 +20082,7 @@ arch marble
 x 31
 y 61
 end
-arch cave20
+arch cave22
 x 31
 y 61
 end
@@ -20130,7 +20130,7 @@ arch oil_sea
 x 31
 y 72
 end
-arch cave19
+arch cave25
 x 31
 y 72
 end
@@ -20146,7 +20146,7 @@ arch oil_sea
 x 31
 y 74
 end
-arch cave20
+arch cave22
 x 31
 y 74
 end
@@ -20190,7 +20190,7 @@ arch cave_15
 x 31
 y 84
 end
-arch cave_15
+arch cave25
 x 31
 y 85
 end
@@ -20302,7 +20302,7 @@ arch oil_sea
 x 31
 y 99
 end
-arch cave20
+arch cave22
 x 31
 y 99
 end
