@@ -10,23 +10,18 @@ enter_x 10
 enter_y 1
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-21 Rick Tanner
+Modified: 2011-11-17 Rick Tanner
 endmsg
 end
-arch marble
+arch cave_15
 end
-arch blocked
-end
-arch marble
-y 1
-end
-arch blocked
+arch cave_15
 y 1
 end
 arch marble
 y 2
 end
-arch cave18
+arch cave24
 y 2
 end
 arch marble
@@ -188,25 +183,16 @@ end
 arch marble
 y 29
 end
-arch cave17
+arch cave23
 y 29
 end
-arch marble
+arch cave_15
 y 30
 end
-arch blocked
-y 30
-end
-arch marble
+arch cave_15
 y 31
 end
-arch blocked
-y 31
-end
-arch marble
-x 1
-end
-arch blocked
+arch cave_15
 x 1
 end
 arch marble
@@ -381,18 +367,14 @@ arch cave17
 x 1
 y 30
 end
-arch marble
-x 1
-y 31
-end
-arch blocked
+arch cave_15
 x 1
 y 31
 end
 arch marble
 x 2
 end
-arch cave18
+arch cave24
 x 2
 end
 arch marble
@@ -579,7 +561,7 @@ arch marble
 x 2
 y 31
 end
-arch cave17
+arch cave23
 x 2
 y 31
 end
@@ -5847,7 +5829,7 @@ end
 arch marble
 x 29
 end
-arch cave19
+arch cave25
 x 29
 end
 arch marble
@@ -6037,14 +6019,11 @@ arch marble
 x 29
 y 31
 end
-arch cave20
+arch cave22
 x 29
 y 31
 end
-arch marble
-x 30
-end
-arch blocked
+arch cave_15
 x 30
 end
 arch marble
@@ -6213,25 +6192,14 @@ arch cave20
 x 30
 y 30
 end
-arch marble
+arch cave_15
 x 30
 y 31
 end
-arch blocked
-x 30
-y 31
-end
-arch marble
+arch cave_15
 x 31
 end
-arch blocked
-x 31
-end
-arch marble
-x 31
-y 1
-end
-arch blocked
+arch cave_15
 x 31
 y 1
 end
@@ -6239,7 +6207,7 @@ arch marble
 x 31
 y 2
 end
-arch cave19
+arch cave25
 x 31
 y 2
 end
@@ -6455,23 +6423,15 @@ arch marble
 x 31
 y 29
 end
-arch cave20
+arch cave22
 x 31
 y 29
 end
-arch marble
+arch cave_15
 x 31
 y 30
 end
-arch blocked
-x 31
-y 30
-end
-arch marble
-x 31
-y 31
-end
-arch blocked
+arch cave_15
 x 31
 y 31
 end
