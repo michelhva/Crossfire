@@ -9,7 +9,7 @@ enter_x 15
 enter_y 28
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-10 Rick Tanner
+Modified: 2011-11-17 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -3150,7 +3150,7 @@ arch woodfloor2
 x 11
 y 10
 end
-arch westcwall_2_2_2
+arch westcwall_1_4
 x 11
 y 10
 end
@@ -3175,7 +3175,7 @@ arch woodfloor2
 x 11
 y 12
 end
-arch westcwall_2_2_4
+arch westcwall_1_3
 x 11
 y 12
 end
@@ -5938,6 +5938,10 @@ arch westcwall_2_1_2
 x 20
 y 7
 end
+arch westcwall_0
+x 20
+y 7
+end
 arch light2
 x 20
 y 8
@@ -5959,7 +5963,7 @@ arch woodfloor2
 x 20
 y 9
 end
-arch westcwall_2_1_1
+arch westcwall_1_1
 x 20
 y 9
 end
