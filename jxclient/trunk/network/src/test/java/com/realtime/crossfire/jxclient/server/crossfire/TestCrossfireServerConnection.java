@@ -61,6 +61,14 @@ public class TestCrossfireServerConnection extends AbstractCrossfireServerConnec
      * {@inheritDoc}
      */
     @Override
+    public void setCrossfireUpdateMapListener(@Nullable final CrossfireUpdateMapListener listener) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void sendAddme() {
         Assert.fail();
     }
