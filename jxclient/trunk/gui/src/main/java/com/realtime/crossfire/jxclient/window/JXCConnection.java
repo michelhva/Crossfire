@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.window;
 
+import com.realtime.crossfire.jxclient.Logger;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeybindingsManager;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
@@ -84,6 +85,12 @@ public class JXCConnection {
      */
     @NotNull
     private final CrossfireServerConnection server;
+
+    /**
+     * The {@link Logger} that is notified about changed server names.
+     */
+    @NotNull
+    private final Logger logger;
 
     /**
      * The currently connected server. Set to <code>null</code> if unconnected.
@@ -168,13 +175,15 @@ public class JXCConnection {
      * @param characterPickup the character pickup instance to update
      * @param server the crossfire server connection instance used to connect
      * @param guiStateManager the gui state manager to watch
+     * @param logger the logger to notify about changed server names
      */
-    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final Shortcuts shortcuts, @NotNull final Settings settings, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager) {
+    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final Shortcuts shortcuts, @NotNull final Settings settings, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final Logger logger) {
         this.keybindingsManager = keybindingsManager;
         this.shortcuts = shortcuts;
         this.settings = settings;
         this.characterPickup = characterPickup;
         this.server = server;
+        this.logger = logger;
         guiStateManager.addGuiStateListener(guiStateListener);
     }
 
@@ -282,6 +291,7 @@ public class JXCConnection {
         hostname = newHostname;
         port = newPort;
         updateTitle();
+        logger.setHostname(newHostname);
     }
 
     /**

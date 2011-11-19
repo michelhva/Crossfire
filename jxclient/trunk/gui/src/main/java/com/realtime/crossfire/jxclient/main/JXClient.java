@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.main;
 
+import com.realtime.crossfire.jxclient.Logger;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.commands.AgainCommand;
 import com.realtime.crossfire.jxclient.commands.BindCommand;
@@ -199,6 +200,7 @@ public class JXClient {
                                 final CommandQueue commandQueue = new CommandQueue(server, model.getGuiStateManager());
                                 final ScriptManager scriptManager = new ScriptManager(commandQueue, server, model.getStats(), floorView, model.getItemSet(), model.getSpellsManager(), mapUpdaterState, model.getSkillSet());
                                 final Shortcuts shortcuts = new Shortcuts(commandQueue, model.getSpellsManager());
+                                final Logger logger = new Logger(server, null, settings.getBoolean("messagelog", false));
 
                                 final Exiter exiter = new Exiter();
                                 final JXCWindow[] window = new JXCWindow[1];
@@ -241,7 +243,7 @@ public class JXClient {
                                             return;
                                         }
                                         final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
-                                        final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager());
+                                        final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager(), logger);
                                         final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
                                         final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                         commandCallback.init(guiManager);
