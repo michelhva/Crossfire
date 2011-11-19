@@ -73,29 +73,7 @@ public class ShortcutsLoader {
                     try {
                         final BufferedReader br = new BufferedReader(isr);
                         try {
-                            int index = 0;
-                            while (true) {
-                                final String line = br.readLine();
-                                if (line == null) {
-                                    break;
-                                }
-
-                                if (line.equals("empty")) {
-                                    shortcuts.setShortcut(index, null);
-                                    index++;
-                                } else if (line.startsWith("spell cast ")) {
-                                    shortcuts.setSpellShortcut(index, line.substring(11).trim(), true);
-                                    index++;
-                                } else if (line.startsWith("spell invoke ")) {
-                                    shortcuts.setSpellShortcut(index, line.substring(13).trim(), false);
-                                    index++;
-                                } else if (line.startsWith("command ")) {
-                                    shortcuts.setCommandShortcut(index, line.substring(8).trim());
-                                    index++;
-                                } else {
-                                    System.err.println("shortcut: ignoring undefined entry '"+line+"'");
-                                }
-                            }
+                            loadShortcuts(shortcuts, br);
                         } finally {
                             br.close();
                         }
@@ -120,6 +98,38 @@ public class ShortcutsLoader {
             System.err.println("Cannot read shortcuts file "+file+": "+ex.getMessage());
             //noinspection UnnecessaryReturnStatement
             return;
+        }
+    }
+
+    /**
+     * Load shortcut info.
+     * @param shortcuts the shortcuts instance to update
+     * @param br the buffered reader to read from
+     * @throws IOException if an I/O error occurs
+     */
+    private static void loadShortcuts(@NotNull final Shortcuts shortcuts, @NotNull final BufferedReader br) throws IOException {
+        int index = 0;
+        while (true) {
+            final String line = br.readLine();
+            if (line == null) {
+                break;
+            }
+
+            if (line.equals("empty")) {
+                shortcuts.setShortcut(index, null);
+                index++;
+            } else if (line.startsWith("spell cast ")) {
+                shortcuts.setSpellShortcut(index, line.substring(11).trim(), true);
+                index++;
+            } else if (line.startsWith("spell invoke ")) {
+                shortcuts.setSpellShortcut(index, line.substring(13).trim(), false);
+                index++;
+            } else if (line.startsWith("command ")) {
+                shortcuts.setCommandShortcut(index, line.substring(8).trim());
+                index++;
+            } else {
+                System.err.println("shortcut: ignoring undefined entry '"+line+"'");
+            }
         }
     }
 
