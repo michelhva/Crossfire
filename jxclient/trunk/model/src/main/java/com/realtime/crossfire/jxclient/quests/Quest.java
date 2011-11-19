@@ -98,7 +98,7 @@ public class Quest {
      * @return code.
      */
     public int getCode() {
-        return this.code;
+        return code;
     }
 
     /**
@@ -107,7 +107,7 @@ public class Quest {
      */
     @NotNull
     public String getTitle() {
-        return this.title;
+        return title;
     }
 
     /**
@@ -115,7 +115,7 @@ public class Quest {
      * @return face index.
      */
     public int getFace() {
-        return this.face;
+        return face;
     }
 
     /**
