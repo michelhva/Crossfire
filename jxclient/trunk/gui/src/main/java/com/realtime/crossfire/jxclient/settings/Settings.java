@@ -209,26 +209,7 @@ public class Settings {
                 try {
                     final LineNumberReader lnr = new LineNumberReader(isr);
                     try {
-                        while (true) {
-                            final String line2 = lnr.readLine();
-                            if (line2 == null) {
-                                break;
-                            }
-                            final String line = Codec.decode(line2.trim());
-                            if (line == null || line.startsWith("#") || line.length() == 0) {
-                                continue;
-                            }
-
-                            final String[] tmp = line.split("=", 2);
-                            if (tmp.length != 2) {
-                                System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
-                                continue;
-                            }
-                            final String key = tmp[0];
-                            final String value = tmp[1];
-
-                            putString(key, value, null);
-                        }
+                        loadValues(lnr);
                     } finally {
                         lnr.close();
                     }
@@ -242,6 +223,34 @@ public class Settings {
             // ignore
         } catch (final IOException ex) {
             System.err.println(file+": "+ex.getMessage());
+        }
+    }
+
+    /**
+     * Loads the values.
+     * @param lnr the line number reader from
+     * @throws IOException if an I/O error occurs
+     */
+    private void loadValues(@NotNull final LineNumberReader lnr) throws IOException {
+        while (true) {
+            final String line2 = lnr.readLine();
+            if (line2 == null) {
+                break;
+            }
+            final String line = Codec.decode(line2.trim());
+            if (line == null || line.startsWith("#") || line.length() == 0) {
+                continue;
+            }
+
+            final String[] tmp = line.split("=", 2);
+            if (tmp.length != 2) {
+                System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
+                continue;
+            }
+            final String key = tmp[0];
+            final String value = tmp[1];
+
+            putString(key, value, null);
         }
     }
 
