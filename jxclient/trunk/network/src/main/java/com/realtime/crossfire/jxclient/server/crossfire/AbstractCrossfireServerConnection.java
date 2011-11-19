@@ -21,13 +21,11 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
-import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Abstract base class for {@link CrossfireServerConnection} implementing
@@ -83,13 +81,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      */
     @NotNull
     private final EventListenerList2<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new EventListenerList2<CrossfireUpdateItemListener>(CrossfireUpdateItemListener.class);
-
-    /**
-     * The {@link CrossfireUpdateMapListener} to be notified. Set to
-     * <code>null</code> if unset.
-     */
-    @Nullable
-    protected CrossfireUpdateMapListener crossfireUpdateMapListener;
 
     /**
      * The {@link CrossfireTickListener CrossfireTickListeners} to be notified.
@@ -249,17 +240,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * {@inheritDoc}
      */
     @Override
-    public void setCrossfireUpdateMapListener(@Nullable final CrossfireUpdateMapListener listener) {
-        if (listener != null && crossfireUpdateMapListener != null) {
-            throw new IllegalStateException();
-        }
-        crossfireUpdateMapListener = listener;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void addCrossfireTickListener(@NotNull final CrossfireTickListener listener) {
         crossfireTickListeners.add(listener);
     }
@@ -376,36 +356,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         crossfireFailureListeners.remove(listener);
     }
 
-    protected void fireMapClear(final int x, final int y) {
-        assert crossfireUpdateMapListener != null;
-        crossfireUpdateMapListener.mapClear(x, y);
-    }
-
-    protected void fireMapDarkness(final int x, final int y, final int darkness) {
-        assert crossfireUpdateMapListener != null;
-        crossfireUpdateMapListener.mapDarkness(x, y, darkness);
-    }
-
-    protected void fireMapFace(@NotNull final Location location, final int face) {
-        assert crossfireUpdateMapListener != null;
-        crossfireUpdateMapListener.mapFace(location, face);
-    }
-
-    protected void fireMapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
-        assert crossfireUpdateMapListener != null;
-        crossfireUpdateMapListener.mapAnimation(location, animationNum, animationType);
-    }
-
-    protected void fireMapSmooth(@NotNull final Location location, final int smooth) {
-        assert crossfireUpdateMapListener != null;
-        crossfireUpdateMapListener.mapSmooth(location, smooth);
-    }
-
-    protected void fireMapAnimationSpeed(@NotNull final Location location, final int animSpeed) {
-        assert crossfireUpdateMapListener != null;
-        crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
-    }
-
     protected void fireManageAccount() {
         for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
             crossfireAccountListener.manageAccount();
@@ -433,12 +383,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     protected void fireStartPlaying() {
         for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
             crossfireAccountListener.startPlaying();
-        }
-    }
-
-    protected void fireAddAnimation(final int animation, final int flags, @NotNull final int[] faces) {
-        if (crossfireUpdateMapListener != null) {
-            crossfireUpdateMapListener.addAnimation(animation, flags, faces);
         }
     }
 
@@ -492,15 +436,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         }
     }
 
-    protected void fireMagicMap(final int x, final int y, @NotNull final byte[][] data) {
-        if (crossfireUpdateMapListener != null) {
-            synchronized (crossfireUpdateMapListener.mapBegin()) {
-                assert crossfireUpdateMapListener != null;
-                crossfireUpdateMapListener.magicMap(x, y, data);
-                assert crossfireUpdateMapListener != null;
-                crossfireUpdateMapListener.mapEnd();
-            }
-        }
+    protected void fireMagicMap() {
         for (final CrossfireMagicmapListener listener : magicmapListeners.getListeners()) {
             listener.commandMagicmapReceived();
         }

@@ -539,6 +539,13 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private String accountName = null;
 
     /**
+     * The {@link CrossfireUpdateMapListener} to be notified. Set to
+     * <code>null</code> if unset.
+     */
+    @Nullable
+    private CrossfireUpdateMapListener crossfireUpdateMapListener;
+
+    /**
      * The {@link ClientSocketListener} attached to the server socket.
      */
     @NotNull
@@ -598,6 +605,17 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
         addClientSocketListener(clientSocketListener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setCrossfireUpdateMapListener(@Nullable final CrossfireUpdateMapListener listener) {
+        if (listener != null && crossfireUpdateMapListener != null) {
+            throw new IllegalStateException();
+        }
+        crossfireUpdateMapListener = listener;
     }
 
     /**
@@ -3811,6 +3829,54 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      */
     public int getCurrentNumLookObjects() {
         return currentNumLookObjects;
+    }
+
+    protected void fireMapClear(final int x, final int y) {
+        assert crossfireUpdateMapListener != null;
+        crossfireUpdateMapListener.mapClear(x, y);
+    }
+
+    protected void fireMapDarkness(final int x, final int y, final int darkness) {
+        assert crossfireUpdateMapListener != null;
+        crossfireUpdateMapListener.mapDarkness(x, y, darkness);
+    }
+
+    protected void fireMapFace(@NotNull final Location location, final int face) {
+        assert crossfireUpdateMapListener != null;
+        crossfireUpdateMapListener.mapFace(location, face);
+    }
+
+    protected void fireMapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
+        assert crossfireUpdateMapListener != null;
+        crossfireUpdateMapListener.mapAnimation(location, animationNum, animationType);
+    }
+
+    protected void fireMapSmooth(@NotNull final Location location, final int smooth) {
+        assert crossfireUpdateMapListener != null;
+        crossfireUpdateMapListener.mapSmooth(location, smooth);
+    }
+
+    protected void fireMapAnimationSpeed(@NotNull final Location location, final int animSpeed) {
+        assert crossfireUpdateMapListener != null;
+        crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
+    }
+
+    protected void fireAddAnimation(final int animation, final int flags, @NotNull final int[] faces) {
+        if (crossfireUpdateMapListener != null) {
+            crossfireUpdateMapListener.addAnimation(animation, flags, faces);
+        }
+    }
+
+    protected void fireMagicMap(final int x, final int y, @NotNull final byte[][] data) {
+        if (crossfireUpdateMapListener != null) {
+            synchronized (crossfireUpdateMapListener.mapBegin()) {
+                assert crossfireUpdateMapListener != null;
+                crossfireUpdateMapListener.magicMap(x, y, data);
+                assert crossfireUpdateMapListener != null;
+                crossfireUpdateMapListener.mapEnd();
+            }
+        }
+        fireMagicMap();
     }
 
 }
