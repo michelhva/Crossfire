@@ -83,7 +83,7 @@ public class Quest {
      * @param end if 1 the quest is completed.
      * @param step current quest's step.
      */
-    public Quest(final int code, @NotNull final String title, final int face, final boolean replay, final int parent, final boolean end, @NotNull String step) {
+    public Quest(final int code, @NotNull final String title, final int face, final boolean replay, final int parent, final boolean end, @NotNull final String step) {
         this.code = code;
         this.title = title;
         this.face = face;
@@ -123,7 +123,7 @@ public class Quest {
      * @param end if true the quest is completed.
      * @param step step description.
      */
-    public void setStep(boolean end, @NotNull final String step) {
+    public void setStep(final boolean end, @NotNull final String step) {
         boolean changed = false;
 
         if (this.end != end) {
