@@ -274,8 +274,8 @@
 
 <p>syntax:</p>
 <pre>
-    button &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;up&gt; &lt;down&gt; &lt;auto-repeat&gt; &lt;command-list&gt;
-    button &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;up&gt; &lt;down&gt; &lt;auto-repeat&gt; &lt;command-list&gt; &lt;font&gt; &lt;color&gt; &lt;label-x&gt; &lt;label-y&gt; &lt;text...&gt;
+    button &lt;name&gt; &lt;up&gt; &lt;down&gt; &lt;auto-repeat&gt; &lt;command-list&gt;
+    button &lt;name&gt; &lt;up&gt; &lt;down&gt; &lt;auto-repeat&gt; &lt;command-list&gt; &lt;font&gt; &lt;color&gt; &lt;label-x&gt; &lt;label-y&gt; &lt;text...&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -288,9 +288,6 @@
 
 <ul>
     <li>&lt;name&gt; is the name of the button.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the button. The
-        location is relative to the dialog.
-    </li>
     <li>&lt;up&gt; &lt;down&gt; are the pictures shown in the &quot;up&quot;
         (normal, inactive) and &quot;down&quot; (armed) state.
     </li>
@@ -316,7 +313,7 @@
 
 <p>syntax:</p>
 <pre>
-    checkbox &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;option&gt; &lt;text...&gt;
+    checkbox &lt;name&gt; &lt;option&gt; &lt;text...&gt;
 </pre>
 
 <p>precondition: dialog, <a href="#def_checkbox"><code>def checkbox</code></a>
@@ -331,9 +328,6 @@
 
 <ul>
     <li>&lt;name&gt; is the name of the checkbox.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the checkbox.
-        The location is relative to the dialog.
-    </li>
     <li>&lt;option&gt; is the name of the option to affect.</li>
     <li>&lt;text...&gt; is the text to display.</li>
 </ul>
@@ -383,9 +377,9 @@
 
 <p>syntax:</p>
 <pre>
-    text &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;active-pic&gt; &lt;inactive-pic&gt; &lt;font&gt; &lt;active-color&gt; &lt;inactive-color&gt; &lt;margin&gt; &lt;command-list&gt; &lt;enable-history&gt;
-    command_text &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;active-pic&gt; &lt;inactive-pic&gt; &lt;font&gt; &lt;active-color&gt; &lt;inactive-color&gt; &lt;margin&gt; &lt;enable-history&gt;
-    query_text &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;active-pic&gt; &lt;inactive-pic&gt; &lt;font&gt; &lt;active-color&gt; &lt;inactive-color&gt; &lt;margin&gt; &lt;enable-history&gt;
+    text &lt;name&gt; &lt;active-pic&gt; &lt;inactive-pic&gt; &lt;font&gt; &lt;active-color&gt; &lt;inactive-color&gt; &lt;margin&gt; &lt;command-list&gt; &lt;enable-history&gt;
+    command_text &lt;name&gt; &lt;active-pic&gt; &lt;inactive-pic&gt; &lt;font&gt; &lt;active-color&gt; &lt;inactive-color&gt; &lt;margin&gt; &lt;enable-history&gt;
+    query_text &lt;name&gt; &lt;active-pic&gt; &lt;inactive-pic&gt; &lt;font&gt; &lt;active-color&gt; &lt;inactive-color&gt; &lt;margin&gt; &lt;enable-history&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -397,9 +391,6 @@
 
 <ul>
     <li>&lt;name&gt; is the name of the text field.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the text field.
-        The location is relative to the dialog.
-    </li>
     <li>&lt;active-pic&gt; &lt;inactive-pic&gt; define the background images of
         the input field. &lt;active-pic&gt; is used while the input field has
         the focus, &lt;inactive-pic&gt; otherwise. The picture size should match
@@ -625,10 +616,10 @@
 
 <p>syntax:</p>
 <pre>
-    gauge &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;orientation&gt; &lt;tooltip...&gt;
-    textgauge &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;orientation&gt; &lt;color&gt; &lt;font&gt; &lt;tooltip&gt;
-    dupgauge &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;pos-div-pic&gt; &lt;pos-mod-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; &lt;tooltip...&gt;
-    duptextgauge &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;pos-div-pic&gt; &lt;pos-mod-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; &lt;color&gt; &lt;font&gt; &lt;tooltip...&gt;
+    gauge &lt;name&gt; &lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;orientation&gt; &lt;tooltip...&gt;
+    textgauge &lt;name&gt; &lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;orientation&gt; &lt;color&gt; &lt;font&gt; &lt;tooltip&gt;
+    dupgauge &lt;name&gt; &lt;pos-div-pic&gt; &lt;pos-mod-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; &lt;tooltip...&gt;
+    duptextgauge &lt;name&gt; &lt;pos-div-pic&gt; &lt;pos-mod-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; &lt;color&gt; &lt;font&gt; &lt;tooltip...&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -652,9 +643,6 @@
 
 <ul>
     <li>&lt;name&gt; is the name of the gauge</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the gauge. The
-        location is relative to the dialog.
-    </li>
     <li>&lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; are the pictures to
         show: an empty gauge shows &lt;empty-pic&gt;, a full gauge (stat is at
         100%) shows &lt;pos-pic&gt;, and a fully depleted gauge (stat is at
@@ -874,13 +862,16 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 <p>Ignores the named GUI element for mouse interaction. The GUI element is
     painted but otherwise ignored.</p>
 
-<h3><a name="floor_list">floor_list, inventory_list: display list of items</a>
+<h3><a name="floor_list">floor_list, inventory_list, spells_list, quests_list:
+    display list of items</a>
 </h3>
 
 <p>syntax:</p>
 <pre>
-    floor_list &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;cell-size&gt; &lt;selected-item-name&gt;
-    inventory_list &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;cell-size&gt; &lt;selected-item-name&gt;
+    floor_list &lt;name&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;selected-item-name&gt;
+    inventory_list &lt;name&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;selected-item-name&gt;
+    spells_list &lt;name&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;selected-item-name&gt;
+    quests_list &lt;name&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;selected-item-name&gt;
 </pre>
 
 <p>precondition: dialog, <a href="#def_item"><code>def item</code></a></p>
@@ -894,12 +885,9 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the list box.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the list box.
-        The location is relative to the dialog.
-    </li>
-    <li>&lt;cell-size&gt; is the size in pixels for rendering items. This value
-        is typically 32; other values are allowed but might not be useful as
-        icons will not be not scaled.
+    <li>&lt;cell-width&gt;, &lt;cell-height&gt; is the size in pixels for
+        rendering items. This value is typically 32; other values are allowed
+        but might not be useful as icons will not be not scaled.
     </li>
     <li>&lt;selected-item-name&gt; the name of a label to display information
         about the selected item. Can be set to <code>null</code> if no
@@ -923,7 +911,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    item &lt;type&gt; &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;index&gt; &lt;args&gt;
+    item &lt;type&gt; &lt;name&gt; &lt;index&gt; &lt;args&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -933,9 +921,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 <ul>
     <li>&lt;type&gt; the item type.</li>
     <li>&lt;name&gt; is the name of the GUI element.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the GUI
-        element. The location is relative to the dialog.
-    </li>
     <li>&lt;index&gt; is the item's index. The meaning depends on &lt;type&gt;.
         The left-most index is <code>0</code>.
     </li>
@@ -946,7 +931,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    item floor &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;index&gt;
+    item floor &lt;name&gt; &lt;index&gt;
 </pre>
 
 <p>precondition: <a href="#def_item"><code>def item</code></a></p>
@@ -959,7 +944,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    item inventory &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;index&gt;
+    item inventory &lt;name&gt; &lt;index&gt;
 </pre>
 
 <p>precondition: <a href="#def_item"><code>def item</code></a></p>
@@ -972,7 +957,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    item shortcut &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;index&gt; &lt;cast&gt; &lt;invoke&gt; &lt;font&gt;
+    item shortcut &lt;name&gt; &lt;index&gt; &lt;cast&gt; &lt;invoke&gt; &lt;font&gt;
 </pre>
 
 <p>Displays a shortcut command. Shortcut commands can be activated by pressing
@@ -993,7 +978,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    item spelllist &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;index&gt; &lt;selected&gt;
+    item spelllist &lt;name&gt; &lt;index&gt; &lt;selected&gt;
 </pre>
 
 <p>Displays a spell known by the character.</p>
@@ -1065,15 +1050,15 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    label_html &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
-    label_multi &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
-    label_query &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt;
-    label_failure &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt;
-    label_message &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt;
-    label_text &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
-    label_stat &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;stat&gt; &lt;alignment&gt;
-    label_stat2 &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;normal&gt; &lt;upgradable&gt; &lt;depleted&gt; &lt;boosted&gt; &lt;boosted+upgradable&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &lt;stat-applied&gt; &lt;alignment&gt;
-    label_spell &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;type&gt;
+    label_html &lt;name&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
+    label_multi &lt;name&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
+    label_query &lt;name&gt; &lt;font&gt; &lt;color&gt;
+    label_failure &lt;name&gt; &lt;font&gt; &lt;color&gt;
+    label_message &lt;name&gt; &lt;font&gt; &lt;color&gt;
+    label_text &lt;name&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
+    label_stat &lt;name&gt; &lt;font&gt; &lt;color&gt; &lt;stat&gt; &lt;alignment&gt;
+    label_stat2 &lt;name&gt; &lt;font&gt; &lt;normal&gt; &lt;upgradable&gt; &lt;depleted&gt; &lt;boosted&gt; &lt;boosted+upgradable&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &lt;stat-applied&gt; &lt;alignment&gt;
+    label_spell &lt;name&gt; &lt;font&gt; &lt;type&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -1105,9 +1090,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the label.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the label. The
-        location is relative to the dialog.
-    </li>
     <li>&lt;font&gt; and &lt;color&gt; is the font and color of the text.</li>
     <li>&lt;text...&gt; is the text to display.</li>
     <li>&lt;stat&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &lt;stat-applied&gt;
@@ -1158,7 +1140,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    log_label &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;background-pic&gt; &lt;font-print&gt; &lt;font-fixed&gt; &lt;font-fixed+bold&gt; &lt;font-arcane&gt; &lt;default-color&gt;
+    log_label &lt;name&gt; &lt;background-pic&gt; &lt;font-print&gt; &lt;font-fixed&gt; &lt;font-fixed+bold&gt; &lt;font-arcane&gt; &lt;default-color&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -1168,9 +1150,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the label.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the label. The
-        location is relative to the dialog.
-    </li>
     <li>&lt;background-pic&gt; defines a background image which is drawn below
         the text. May be set to <code>null</code> when not used.
     </li>
@@ -1184,7 +1163,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    log_message &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;background-pic&gt; &lt;font-print&gt; &lt;font-fixed&gt; &lt;font-fixed+bold&gt; &lt;font-arcane&gt; &lt;default-color&gt;
+    log_message &lt;name&gt; &lt;background-pic&gt; &lt;font-print&gt; &lt;font-fixed&gt; &lt;font-fixed+bold&gt; &lt;font-arcane&gt; &lt;default-color&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -1194,9 +1173,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the message box.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the message
-        box. The location is relative to the dialog.
-    </li>
     <li>&lt;background-pic&gt; defines a background image which is drawn below
         the text. May be set to <code>null</code> when not used.
     </li>
@@ -1279,9 +1255,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the map view.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the map view.
-        The location is relative to the dialog.
-    </li>
 </ul>
 
 <h3>map: display map view</h3>
@@ -1297,16 +1270,13 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the map view.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the map view.
-        The location is relative to the dialog.
-    </li>
 </ul>
 
 <h3><a name="meta_list">meta_list: display Crossfire server list</a></h3>
 
 <p>syntax:</p>
 <pre>
-    meta_list &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;picture&gt; &lt;font&gt; &lt;text&gt; &lt;label&gt; &lt;connect&gt; &lt;format&gt; &lt;tooltip&gt;
+    meta_list &lt;name&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;picture&gt; &lt;font&gt; &lt;text&gt; &lt;label&gt; &lt;connect&gt; &lt;format&gt; &lt;tooltip&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -1315,9 +1285,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the list.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the list. The
-        location is relative to the dialog.
-    </li>
     <li>&lt;cell-width&gt; &lt;cell-height&gt; is the size of each cell
         displaying a Crossfire server.
     </li>
@@ -1366,7 +1333,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    character_list &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;font&gt;
+    character_list &lt;name&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;font&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -1375,9 +1342,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the list.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the list. The
-        location is relative to the dialog.
-    </li>
     <li>&lt;cell-width&gt; &lt;cell-height&gt; is the size of each cell
         displaying a character name.
     </li>
@@ -1388,7 +1352,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    picture &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;picture&gt; &lt;alpha&gt;
+    picture &lt;name&gt; &lt;picture&gt; &lt;alpha&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -1397,9 +1361,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the picture.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the picture.
-        The location is relative to the dialog.
-    </li>
     <li>&lt;picture&gt; the base file name of the picture.</li>
     <li>&lt;alpha&gt; the transparency of the picture between 0 and 1.
         0=completely transparent (not useful as nothing is shown); 1=completely
@@ -1491,7 +1452,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    scrollbar &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;proportional-slider&gt; &lt;element&gt; &lt;foreground&gt; &lt;background&gt;
+    scrollbar &lt;name&gt; &lt;proportional-slider&gt; &lt;element&gt; &lt;foreground&gt; &lt;background&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -1500,9 +1461,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the scrollbar.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the scrollbar.
-        The location is relative to the dialog.
-    </li>
     <li>&lt;proportional-slider&gt; specifies the slider's size:
         <code>true</code> makes the slider's size reflect the size of the
         visible area of &lt;element&gt;. <code>false</code> displays a square
@@ -1545,7 +1503,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <p>syntax:</p>
 <pre>
-    textbutton &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;auto-repeat&gt; &lt;command-list&gt; &lt;text...&gt;
+    textbutton &lt;name&gt; &lt;auto-repeat&gt; &lt;command-list&gt; &lt;text...&gt;
 </pre>
 
 <p>precondition: dialog, <a href="#def_textbutton"><code>def
@@ -1555,9 +1513,6 @@ Otherwise a GUI element is expected, optionally followed by it's size.
 
 <ul>
     <li>&lt;name&gt; is the name of the button.</li>
-    <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the button. The
-        location is relative to the dialog.
-    </li>
     <li>&lt;auto-repeat&gt; specifies whether the button should keep executing
         its action as long as the mouse is pressed (<code>true</code>) or fire
         once (<code>false</code>) per click.
