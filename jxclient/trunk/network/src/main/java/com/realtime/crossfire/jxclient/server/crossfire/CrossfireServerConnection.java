@@ -283,13 +283,6 @@ public interface CrossfireServerConnection extends AskfaceQueue, ServerConnectio
     void sendApply(int tag);
 
     /**
-     * Sends an "askface" command to the server.
-     * @param num the face to query
-     */
-    @Override
-    void sendAskface(int num);
-
-    /**
      * Sends an "examine" command to the server.
      * @param tag the item to examine
      */
