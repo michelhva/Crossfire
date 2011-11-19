@@ -219,7 +219,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         assert Thread.holdsLock(sync);
         visibleAnimations.remove(x, y);
         outOfViewMultiFaces.clear();
-        //noinspection SynchronizeOnNonFinalField
         synchronized (map) {
             map.clearSquare(x, y);
         }
@@ -254,7 +253,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
                 outOfViewMultiFaces.add(location);
             }
         }
-        //noinspection SynchronizeOnNonFinalField
         synchronized (map) {
             map.setFace(x, y, location.getLayer(), face);
         }
@@ -272,7 +270,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
             return;
         }
 
-        //noinspection SynchronizeOnNonFinalField
         synchronized (map) {
             map.setFace(location.getX(), location.getY(), location.getLayer(), null);
         }
@@ -294,7 +291,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     @Override
     public void mapSmooth(@NotNull final Location location, final int smooth) {
         assert Thread.holdsLock(sync);
-        //noinspection SynchronizeOnNonFinalField
         synchronized (map) {
             map.setSmooth(location.getX(), location.getY(), location.getLayer(), smooth);
         }
@@ -306,7 +302,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     @Override
     public void mapDarkness(final int x, final int y, final int darkness) {
         assert Thread.holdsLock(sync);
-        //noinspection SynchronizeOnNonFinalField
         synchronized (map) {
             map.setDarkness(x, y, darkness);
         }
@@ -318,7 +313,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     @Override
     public void magicMap(final int x, final int y, final byte[][] data) {
         assert Thread.holdsLock(sync);
-        //noinspection SynchronizeOnNonFinalField
         synchronized (map) {
             map.setMagicMap(x, y, data);
         }
@@ -340,7 +334,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      */
     public void mapEnd(final boolean alwaysProcess) {
         assert Thread.holdsLock(sync);
-        //noinspection SynchronizeOnNonFinalField
         synchronized (map) {
             final Set<CfMapSquare> squares = map.getDirtyMapSquares();
             if (!alwaysProcess && squares.isEmpty()) {
@@ -359,7 +352,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     @Override
     public void mapScroll(final int dx, final int dy) {
         assert Thread.holdsLock(sync);
-        //noinspection SynchronizeOnNonFinalField
         synchronized (map) {
             for (final Location location : outOfViewMultiFaces) {
                 visibleAnimations.remove(location);
@@ -385,7 +377,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     @Override
     public void faceUpdated(@NotNull final Face face) {
         synchronized (mapBegin()) {
-            //noinspection SynchronizeOnNonFinalField,NestedSynchronizedStatement
+            //noinspection NestedSynchronizedStatement
             synchronized (map) {
                 map.updateFace(face.getFaceNum(), mapWidth, mapHeight);
             }
