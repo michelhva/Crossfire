@@ -200,4 +200,15 @@ public class Filenames {
         return sb.toString();
     }
 
+    /**
+     * Returns the log file for text message logging.
+     * @param hostname the server hostname or <code>null</code>
+     * @return the log file
+     * @throws IOException if the log file cannot be determined
+     */
+    @NotNull
+    public static File getMessageLogFile(@Nullable final String hostname) throws IOException {
+        return getSettingsFile(hostname == null ? "jxclient.txt" : "jxclient-"+hostname+".txt");
+    }
+
 }
