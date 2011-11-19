@@ -361,9 +361,7 @@ public class Spell {
         if (unknown) {
             sb.append(" (unknown)");
         }
-        if ((path&stats.getStat(Stats.CS_STAT_SPELL_DENY)) != 0) {
-            sb.append("<br><b>Denied</b>");
-        } else {
+        if ((path&stats.getStat(Stats.CS_STAT_SPELL_DENY)) == 0) {
             final Skill sk = skillSet.getSkill(skill);
             if (sk != null) {
                 sb.append("<br>Skill: ").append(sk.toString());
@@ -397,6 +395,8 @@ public class Spell {
             if (damage > 0) {
                 sb.append("<br>Damage: ").append(damage);
             }
+        } else {
+            sb.append("<br><b>Denied</b>");
         }
         if (message.length() > 0) {
             sb.append("<br>");
