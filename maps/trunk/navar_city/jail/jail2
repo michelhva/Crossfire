@@ -9,7 +9,7 @@ enter_x 13
 enter_y 3
 msg
 Created:  2001-10-17
-Modified: 2008-10-25 Rick Tanner
+Modified: 2011-11-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -20,10 +20,10 @@ end
 arch flagstone
 y 1
 end
-arch swall_1_1
+arch westcwall_1_2
 y 1
 end
-arch westcwall_1_2
+arch swall_1_1_half
 y 1
 end
 arch flagstone
@@ -35,7 +35,7 @@ end
 arch flagstone
 y 3
 end
-arch swall_1_2
+arch swall_1_2_half
 y 3
 end
 arch westcwall_1_1
@@ -107,10 +107,10 @@ end
 arch flagstone
 y 11
 end
-arch swall_1_1
+arch westcwall_1_2
 y 11
 end
-arch westcwall_1_2
+arch swall_1_1_half
 y 11
 end
 arch flagstone
@@ -122,7 +122,7 @@ end
 arch flagstone
 y 13
 end
-arch swall_1_2
+arch swall_1_2_half
 y 13
 end
 arch westcwall_1_1
@@ -140,7 +140,7 @@ end
 arch flagstone
 x 1
 end
-arch swall_1_4
+arch swall_1_4_half
 x 1
 end
 arch westcwall_1_3
@@ -222,7 +222,7 @@ arch flagstone
 x 1
 y 14
 end
-arch swall_1_4
+arch swall_1_4_half
 x 1
 y 14
 end
@@ -333,7 +333,7 @@ end
 arch flagstone
 x 3
 end
-arch swall_1_3
+arch swall_1_3_half
 x 3
 end
 arch westcwall_1_4
@@ -403,7 +403,7 @@ arch flagstone
 x 3
 y 14
 end
-arch swall_1_3
+arch swall_1_3_half
 x 3
 y 14
 end
@@ -1013,7 +1013,7 @@ end
 arch flagstone
 x 11
 end
-arch swall_1_4
+arch swall_1_4_half
 x 11
 end
 arch westcwall_1_3
@@ -1083,7 +1083,7 @@ arch flagstone
 x 11
 y 14
 end
-arch swall_1_4
+arch swall_1_4_half
 x 11
 y 14
 end
@@ -1194,7 +1194,7 @@ end
 arch flagstone
 x 13
 end
-arch swall_1_3
+arch swall_1_3_half
 x 13
 end
 arch westcwall_1_4
@@ -1283,7 +1283,7 @@ arch flagstone
 x 13
 y 14
 end
-arch swall_1_3
+arch swall_1_3_half
 x 13
 y 14
 end
@@ -1308,11 +1308,11 @@ arch flagstone
 x 14
 y 1
 end
-arch swall_1_1
+arch westcwall_1_2
 x 14
 y 1
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 14
 y 1
 end
@@ -1336,7 +1336,7 @@ arch flagstone
 x 14
 y 3
 end
-arch swall_1_2
+arch swall_1_2_half
 x 14
 y 3
 end
@@ -1464,11 +1464,11 @@ arch flagstone
 x 14
 y 11
 end
-arch swall_1_1
+arch westcwall_1_2
 x 14
 y 11
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 14
 y 11
 end
@@ -1492,7 +1492,7 @@ arch flagstone
 x 14
 y 13
 end
-arch swall_1_2
+arch swall_1_2_half
 x 14
 y 13
 end
