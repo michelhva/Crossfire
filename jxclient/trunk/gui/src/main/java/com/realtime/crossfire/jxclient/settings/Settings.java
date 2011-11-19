@@ -238,7 +238,7 @@ public class Settings {
                 break;
             }
             final String line = Codec.decode(line2.trim());
-            if (line == null || line.startsWith("#") || line.length() == 0) {
+            if (line.startsWith("#") || line.length() == 0) {
                 continue;
             }
 
