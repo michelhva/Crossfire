@@ -32,14 +32,6 @@ import org.jetbrains.annotations.NotNull;
 public interface KeyListener extends KeyPressedHandler {
 
     /**
-     * Invoked when a key has been pressed.
-     * @param e the key event for the key
-     * @return whether the key event has been consumed
-     */
-    @Override
-    boolean keyPressed(@NotNull KeyEvent e);
-
-    /**
      * Invoked when a key has been released.
      * @param e the key event for the key
      * @return whether the key event has been consumed
