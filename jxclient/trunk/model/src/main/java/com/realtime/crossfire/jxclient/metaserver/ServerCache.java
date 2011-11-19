@@ -204,29 +204,38 @@ public class ServerCache {
         }
 
         try {
-            final FileOutputStream fos = new FileOutputStream(file);
-            try {
-                final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
-                try {
-                    final BufferedWriter bw = new BufferedWriter(osw);
-                    try {
-                        for (final Info info : entries.values()) {
-                            bw.write(Long.toString(info.getTimestamp()));
-                            bw.write(' ');
-                            bw.write(MetaserverEntryParser.format(info.getMetaserverEntry()));
-                            bw.write('\n');
-                        }
-                    } finally {
-                        bw.close();
-                    }
-                } finally {
-                    osw.close();
-                }
-            } finally {
-                fos.close();
-            }
+            saveInternal(file);
         } catch (final IOException ex) {
             System.err.println(file+": "+ex.getMessage());
+        }
+    }
+
+    /**
+     * Saves all entries to the backing file.
+     * @param file the file to write
+     * @throws IOException if an I/O error occurs
+     */
+    private void saveInternal(@NotNull final File file) throws IOException {
+        final FileOutputStream fos = new FileOutputStream(file);
+        try {
+            final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
+            try {
+                final BufferedWriter bw = new BufferedWriter(osw);
+                try {
+                    for (final Info info : entries.values()) {
+                        bw.write(Long.toString(info.getTimestamp()));
+                        bw.write(' ');
+                        bw.write(MetaserverEntryParser.format(info.getMetaserverEntry()));
+                        bw.write('\n');
+                    }
+                } finally {
+                    bw.close();
+                }
+            } finally {
+                osw.close();
+            }
+        } finally {
+            fos.close();
         }
     }
 
