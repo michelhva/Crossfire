@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import com.realtime.crossfire.jxclient.util.StringSplitter;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Describes a Crossfire spell.
@@ -367,16 +368,18 @@ public class Spell {
                 sb.append("<br>Skill: ").append(sk.toString());
             }
             if (level > 0) {
-                String supp = null;
                 sb.append("<br>Level: ");
                 if (sk != null && level <= sk.getLevel()) {
                     int effective = sk.getLevel()-level;
+                    @Nullable final String supp;
                     if ((path&stats.getStat(Stats.CS_STAT_SPELL_ATTUNE)) != 0) {
                         effective += 2;
                         supp = " (attuned)";
                     } else if ((path&stats.getStat(Stats.CS_STAT_SPELL_REPEL)) != 0) {
                         effective -= 2;
                         supp = " (repelled)";
+                    } else {
+                        supp = null;
                     }
                     sb.append(effective);
                     if (supp != null) {
