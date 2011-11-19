@@ -85,7 +85,7 @@ public class TestCrossfireServerConnection extends AbstractCrossfireServerConnec
      * {@inheritDoc}
      */
     @Override
-    public void sendAskface(final int num) {
+    public void sendAskface(final int faceNum) {
         Assert.fail();
     }
 

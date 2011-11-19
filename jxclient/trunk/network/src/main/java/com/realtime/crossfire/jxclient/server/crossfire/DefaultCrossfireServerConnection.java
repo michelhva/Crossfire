@@ -3275,14 +3275,14 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * {@inheritDoc}
      */
     @Override
-    public void sendAskface(final int num) {
+    public void sendAskface(final int faceNum) {
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("send askface face="+num);
+            debugProtocol.debugProtocolWrite("send askface face="+faceNum);
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
             byteBuffer.put(ASKFACE_PREFIX);
-            putDecimal(num);
+            putDecimal(faceNum);
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }
