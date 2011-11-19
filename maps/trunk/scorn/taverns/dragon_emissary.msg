@@ -2,8 +2,8 @@
   "rules"    : [
   {
   "match" : ["emerald", "yes"],
-  "pre" : [["quest", "scorn/DragonWhisker", "30"], ["token", "question", "emeralds"], ["item", "emerald of great value", "7"]],
-  "post" : [["settoken", "question", "0"], ["quest", "scorn/DragonWhisker", "40"],  ["takeitem", "emerald of great value", "7"]],
+  "pre" : [["quest", "scorn/DragonWhisker", "30"], ["token", "question", "emeralds"], ["item", "emeralds of great value", "7"]],
+  "post" : [["settoken", "question", "0"], ["quest", "scorn/DragonWhisker", "40"],  ["takeitem", "emeralds of great value", "7"]],
   "msg" : ["The Dragonlords fear to keep the weapon too far from themselves, yet don't trust each other enough to keep it too close at hand, either.\n\n They have hidden it in a mountain eyrie near their lair: you must search the high mountains nearby.\n The Dragonlords' lair is in the mountains south of the road to the town you call Navar, there is an inn nearby run by the human known as Hermes"]
   },{
   "match" : ["emerald", "yes"],
