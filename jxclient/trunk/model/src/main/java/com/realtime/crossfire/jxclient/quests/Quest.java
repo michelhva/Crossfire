@@ -157,10 +157,8 @@ public class Quest {
             }
             sb.append(")");
         }
-        if (step != null) {
-            sb.append("<br>");
-            sb.append(step);
-        }
+        sb.append("<br>");
+        sb.append(step);
         return sb.toString();
     }
 
