@@ -130,7 +130,7 @@ public class CommandHistory {
      *         invalid
      */
     @Nullable
-    public String last(final int index) {
+    public CharSequence last(final int index) {
         return index >= commands.size() ? null : commands.get(commands.size()-index-1);
     }
 

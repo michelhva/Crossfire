@@ -27,7 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.list.GUIQuestList;
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.items.QuestsView;
+import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.quests.Quest;
 import com.realtime.crossfire.jxclient.quests.QuestListener;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
@@ -92,7 +92,7 @@ public class GUIItemQuest extends GUIItemItem {
      * The spells view to use.
      */
     @NotNull
-    private final QuestsView questsView;
+    private final ItemView questsView;
 
     /**
      * The {@link QuestsManagerListener} used to detect spell changes.
@@ -148,7 +148,7 @@ public class GUIItemQuest extends GUIItemItem {
      * @param questsManager the quests manager instance to watch
      * @param questsView the quests view to use
      */
-    public GUIItemQuest(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questsView) {
+    public GUIItemQuest(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final QuestsManager questsManager, @NotNull final ItemView questsView) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;

@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 import java.util.regex.Pattern;
 import org.jetbrains.annotations.NotNull;
 
@@ -58,8 +58,8 @@ public class CommandExpander {
      * @param commands the commands to use
      * @return the list of commands
      */
-    public static List<CommandExec> expand(@NotNull final CharSequence commandList, @NotNull final Commands commands) {
-        final List<CommandExec> list = new ArrayList<CommandExec>();
+    public static Collection<CommandExec> expand(@NotNull final CharSequence commandList, @NotNull final Commands commands) {
+        final Collection<CommandExec> list = new ArrayList<CommandExec>();
         CharSequence remainingCommandList = commandList;
         while (true) {
             final String[] tmp = PATTERN_SEPARATOR.split(remainingCommandList, 2);
