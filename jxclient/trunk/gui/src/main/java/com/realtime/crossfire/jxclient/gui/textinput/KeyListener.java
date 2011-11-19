@@ -36,6 +36,7 @@ public interface KeyListener extends KeyPressedHandler {
      * @param e the key event for the key
      * @return whether the key event has been consumed
      */
+    @Override
     boolean keyPressed(@NotNull KeyEvent e);
 
     /**
