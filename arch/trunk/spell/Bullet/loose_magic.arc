@@ -4,7 +4,7 @@ Object loose_magic
 name uncontrolled mana
 type 102
 subtype 6
-face manabolt.111
+face loose_magic.111
 animation loose_magic
 speed 1
 range 3
