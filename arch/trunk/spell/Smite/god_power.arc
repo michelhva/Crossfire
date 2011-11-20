@@ -5,7 +5,7 @@ Object god_power
 name godly retribution
 type 102
 subtype 6
-face manabolt.111
+face god_power.111
 animation god_power
 speed 1
 range 4
