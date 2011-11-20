@@ -3,7 +3,7 @@ type 102
 subtype 6
 name holy power
 slaying undead,demon
-face turnundead.111
+face holy_effect.111
 animation holy_effect
 wc -30
 speed 0.2
