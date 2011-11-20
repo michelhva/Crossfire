@@ -5,7 +5,7 @@ slaying goldcoin
 food 40
 type 103
 no_pick 1
-face conv.111
+face diamond_converter.111
 move_on walk
 end
 Object pearl_converter
@@ -15,7 +15,7 @@ slaying goldcoin
 type 103
 food 5
 no_pick 1
-face conv.111
+face pearl_converter.111
 move_on walk
 end
 Object ruby_converter
@@ -25,7 +25,7 @@ slaying goldcoin
 food 20
 type 103
 no_pick 1
-face conv.111
+face ruby_converter.111
 move_on walk
 end
 Object silver_converter
@@ -45,7 +45,7 @@ slaying goldcoin
 food 5
 type 103
 no_pick 1
-face conv.111
+face gold_converter.111
 move_on walk
 end
 Object platinum_converter
@@ -56,7 +56,7 @@ food 1
 sp 5
 type 103
 no_pick 1
-face conv.111
+face platinum_converter.111
 move_on walk
 end
 Object platinum_converter2
@@ -66,7 +66,7 @@ slaying platinacoin
 food 100
 type 103
 no_pick 1
-face conv.111
+face platinum_converter2.111
 move_on walk
 end
 Object jade_converter
@@ -76,6 +76,6 @@ slaying jadecoin
 food 100
 type 103
 no_pick 1
-face conv.111
+face jade_converter.111
 move_on walk
 end
