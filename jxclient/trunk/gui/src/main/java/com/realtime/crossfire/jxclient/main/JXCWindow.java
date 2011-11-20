@@ -54,6 +54,7 @@ import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
 import java.io.IOException;
 import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 import javax.swing.WindowConstants;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -175,7 +176,15 @@ public class JXCWindow {
 
         @Override
         public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
-            guiManager.playerReceived();
+            //noinspection AnonymousInnerClassMayBeStatic
+            SwingUtilities.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
+                    guiManager.playerReceived();
+                }
+
+            });
         }
 
         @Override
@@ -243,9 +252,14 @@ public class JXCWindow {
 
         @Override
         public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
-            synchronized (semaphoreDrawing) {
-                guiManager.openQueryDialog(prompt, queryType);
-            }
+            SwingUtilities.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
+                    guiManager.openQueryDialog(prompt, queryType);
+                }
+
+            });
         }
 
     };
@@ -322,35 +336,80 @@ public class JXCWindow {
 
         @Override
         public void manageAccount() {
-            guiManager.manageAccount();
+            //noinspection AnonymousInnerClassMayBeStatic
+            SwingUtilities.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
+                    guiManager.manageAccount();
+                }
+
+            });
         }
 
         @Override
         public void addAccount(@NotNull final String name, @NotNull final String characterClass, @NotNull final String race, @NotNull final String face, @NotNull final String party, @NotNull final String map, final int level, final int faceNumber) {
-            final CharacterInformation information = new CharacterInformation(name, characterClass, race, face, party, map, level, faceNumber);
-            characterModel.add(information);
+            SwingUtilities.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
+                    final CharacterInformation information = new CharacterInformation(name, characterClass, race, face, party, map, level, faceNumber);
+                    characterModel.add(information);
+                }
+
+            });
         }
 
         @Override
         public void startAccountList(@NotNull final String accountName) {
-            characterModel.begin();
-            guiManager.setAccountName(accountName);
+            SwingUtilities.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
+                    characterModel.begin();
+                    guiManager.setAccountName(accountName);
+                }
+
+            });
         }
 
         @Override
         public void endAccountList() {
-            characterModel.commit();
-            guiManager.showCharacters();
+            //noinspection AnonymousInnerClassMayBeStatic
+            SwingUtilities.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
+                    characterModel.commit();
+                    guiManager.showCharacters();
+                }
+
+            });
         }
 
         @Override
         public void startPlaying() {
-            guiManager.hideAccountWindows();
+            //noinspection AnonymousInnerClassMayBeStatic
+            SwingUtilities.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
+                    guiManager.hideAccountWindows();
+                }
+
+            });
         }
 
         @Override
         public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
-            guiManager.selectCharacter(accountName, characterName);
+            SwingUtilities.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
+                    guiManager.selectCharacter(accountName, characterName);
+                }
+
+            });
         }
 
     };
