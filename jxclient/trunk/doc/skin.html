@@ -616,10 +616,10 @@
 
 <p>syntax:</p>
 <pre>
-    gauge &lt;name&gt; &lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;orientation&gt; &lt;tooltip...&gt;
-    textgauge &lt;name&gt; &lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;orientation&gt; &lt;color&gt; &lt;font&gt; &lt;tooltip&gt;
-    dupgauge &lt;name&gt; &lt;pos-div-pic&gt; &lt;pos-mod-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; &lt;tooltip...&gt;
-    duptextgauge &lt;name&gt; &lt;pos-div-pic&gt; &lt;pos-mod-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; &lt;color&gt; &lt;font&gt; &lt;tooltip...&gt;
+    gauge &lt;name&gt; &lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;orientation&gt; &lt;command-list&gt; &lt;tooltip...&gt;
+    textgauge &lt;name&gt; &lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;orientation&gt; &lt;color&gt; &lt;font&gt; &lt;command-list&gt; &lt;tooltip&gt;
+    dupgauge &lt;name&gt; &lt;pos-div-pic&gt; &lt;pos-mod-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; &lt;command-list&gt; &lt;tooltip...&gt;
+    duptextgauge &lt;name&gt; &lt;pos-div-pic&gt; &lt;pos-mod-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; &lt;color&gt; &lt;font&gt; &lt;command-list&gt; &lt;tooltip...&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -687,6 +687,8 @@
     <li>&lt;color&gt; &lt;font&gt; specify the color and font for the overlay
         text.
     </li>
+    <li>&lt;command-list&gt; specifies the command-list to execute when
+        clicked. Can be set to <code>null</code>.</li>
     <li>&lt;tooltip...&gt; is included as a prefix in the tooltip text.</li>
 </ul>
 

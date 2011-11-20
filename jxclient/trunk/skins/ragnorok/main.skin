@@ -5,19 +5,19 @@ map map_view
 
 # Stat Group
 picture gauge_hp_back         gauge_frame 0.9
-textgauge gauge_hp            gauge_hp null gauge_empty HP WE BLACK font_label Hitpoints:
+textgauge gauge_hp            gauge_hp null gauge_empty HP WE BLACK font_label null Hitpoints:
 
 picture gauge_sp_back         gauge_frame 0.9
-textgauge gauge_sp            gauge_sp null gauge_empty SP WE BLACK font_label Mana:
+textgauge gauge_sp            gauge_sp null gauge_empty SP WE BLACK font_label null Mana:
 
 picture gauge_gp_back         gauge_frame 0.9
-textgauge gauge_gp            gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label Grace:
+textgauge gauge_gp            gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label null Grace:
 
 picture gauge_fp_back         gauge_frame 0.9
-textgauge gauge_fp            gauge_fp null gauge_empty FOOD WE BLACK font_label Food:
+textgauge gauge_fp            gauge_fp null gauge_empty FOOD WE BLACK font_label null Food:
 
 picture gauge_xp_back         gauge_xp_frame 0.9
-duptextgauge gauge_xp         gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Level:
+duptextgauge gauge_xp         gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label null Level:
 
 # Button Group
 textbutton button_help        false command_help Help
@@ -32,20 +32,20 @@ textbutton button_pickup      false command_pickup Pickup
 textbutton button_setup       false command_setup Setup
 
 # Hp/Sp/Gr bars in map view
-gauge lowfood lowfood  null null LOWFOOD WE
+gauge lowfood lowfood  null null LOWFOOD WE null
 
-gauge poisoned poisoned null null POISONED WE
+gauge poisoned poisoned null null POISONED WE null
 
 picture hpbar_back hpbar_frame 0.9
-gauge hpbar hpbar_full null hpbar_empty HP WE
+gauge hpbar hpbar_full null hpbar_empty HP WE null
 
 picture spbar_back hpbar_frame 0.9
-gauge spbar spbar_full null hpbar_empty SP WE
+gauge spbar spbar_full null hpbar_empty SP WE null
 
 picture grbar_back hpbar_frame 0.9
-gauge grbar grbar_full null hpbar_empty GRACE WE
+gauge grbar grbar_full null hpbar_empty GRACE WE null
 
-gauge hpbar_golem hpbar_golem_full null hpbar_golem_empty GOLEM_HP WE
+gauge hpbar_golem hpbar_golem_full null hpbar_golem_empty GOLEM_HP WE null
 set_invisible hpbar_golem
 
 commandlist_add command_hitpoints_on hpbar_back SHOW

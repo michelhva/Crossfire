@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gauge;
 
+import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -30,6 +31,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
+import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -52,6 +54,12 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      */
     @Nullable
     private final String tooltipPrefix;
+
+    /**
+     * The {@link CommandList} that is executed on button 2.
+     */
+    @Nullable
+    private final CommandList commandList;
 
     /**
      * The tooltip suffix. It is appended to {@link #tooltipPrefix} to form the
@@ -102,12 +110,14 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      * @param alpha alpha value of the gauge to use
+     * @param commandList the command list that is executed on button 2
      */
-    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image fullImage, @Nullable final Image negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, final float alpha) {
+    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image fullImage, @Nullable final Image negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, final float alpha, @Nullable final CommandList commandList) {
         super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.emptyImage = emptyImage;
         this.orientation = orientation;
         this.tooltipPrefix = tooltipPrefix;
+        this.commandList = commandList;
         gaugeState = new GaugeState(fullImage, negativeImage, 0, 0);
         this.alpha = alpha;
         tooltipText = "-";      // make sure the following setValues() does not short-cut
@@ -235,4 +245,26 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
     public void setHidden(final boolean hidden) {
         this.hidden = hidden;
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void mouseClicked(@NotNull final MouseEvent e) {
+        super.mouseClicked(e);
+        switch (e.getButton()) {
+        case MouseEvent.BUTTON1:
+            break;
+
+        case MouseEvent.BUTTON2:
+            if (commandList != null) {
+                commandList.execute();
+            }
+            break;
+
+        case MouseEvent.BUTTON3:
+            break;
+        }
+    }
+
 }

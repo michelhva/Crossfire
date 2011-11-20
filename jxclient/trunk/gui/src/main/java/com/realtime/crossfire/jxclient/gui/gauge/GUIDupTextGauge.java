@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gauge;
 
+import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
@@ -75,9 +76,10 @@ public class GUIDupTextGauge extends GUIDupGauge {
      * @param tooltipPrefix the prefix for generating a tooltip
      * @param color the text color
      * @param font the text font
+     * @param commandList the command list that is executed on button 2
      */
-    public GUIDupTextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image pictureFullDiv, final Image pictureFullMod, @NotNull final Image pictureEmpty, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font) {
-        super(tooltipManager, elementListener, name, pictureFullDiv, pictureFullMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix);
+    public GUIDupTextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image pictureFullDiv, final Image pictureFullMod, @NotNull final Image pictureEmpty, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font, @Nullable final CommandList commandList) {
+        super(tooltipManager, elementListener, name, pictureFullDiv, pictureFullMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix, commandList);
         this.color = color;
         this.font = font;
     }

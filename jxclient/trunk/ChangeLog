@@ -1,5 +1,8 @@
 2011-11-19  Andreas Kirschbaum
 
+	* Middle-click in skills dialogs uses the skill (sends /use_skill
+	command to server).
+
 	* Add text message logger. See doc/features.html for details.
 
 2011-11-16  Andreas Kirschbaum
