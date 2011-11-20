@@ -1,7 +1,7 @@
 Object scroll_thaumaturgy
 name scroll of thaumaturgy
 skill thaumaturgy
-face scrollr.111
+face scroll_thaumaturgy.111
 race scrolls
 nrof 1
 type 130

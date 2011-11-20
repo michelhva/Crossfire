@@ -2,7 +2,7 @@ Object scroll_pyromancy
 name scroll of pyromancy
 name_pl scrolls of pyromancy
 skill pyromancy
-face scrollr.111
+face scroll_pyromancy.111
 race scrolls
 nrof 1
 type 130

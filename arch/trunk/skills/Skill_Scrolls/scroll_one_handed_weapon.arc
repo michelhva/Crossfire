@@ -2,7 +2,7 @@ Object scroll_one_handed_weapons
 name scroll of one handed weapons
 name_pl scrolls of one handed weapons
 skill one handed weapons
-face scrollr.111
+face scroll_one_handed_weapon.111
 race scrolls
 nrof 1
 type 130

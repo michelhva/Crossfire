@@ -1,7 +1,7 @@
 Object scroll_set_traps
 name scroll of snares
 skill set traps
-face scrollr.111
+face scroll_set_traps.111
 race scrolls
 nrof 1
 type 130

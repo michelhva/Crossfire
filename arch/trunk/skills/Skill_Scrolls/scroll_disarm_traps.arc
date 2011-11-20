@@ -2,7 +2,7 @@ Object scroll_disarm_traps
 name scroll of disarming traps
 name_pl scrolls of disarming traps
 skill disarm traps
-face scrollr.111
+face scroll_disarm_traps.111
 race scrolls
 nrof 1
 type 130

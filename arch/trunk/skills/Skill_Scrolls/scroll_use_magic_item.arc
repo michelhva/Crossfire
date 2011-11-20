@@ -2,7 +2,7 @@ Object scroll_use_magic_item
 name scroll of use magic item
 name_pl scrolls of use magic item
 skill use magic item
-face scrollr.111
+face scroll_use_magic_item.111
 race scrolls
 nrof 1
 type 130

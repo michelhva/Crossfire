@@ -1,7 +1,7 @@
 Object scroll_bowyer
 name scroll of bowyery
 skill bowyer
-face scrollr.111
+face scroll_bowyer.111
 race scrolls
 nrof 1
 type 130

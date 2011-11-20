@@ -2,7 +2,7 @@ Object scroll_jumping
 name scroll of jumping
 name_pl scrolls of jumping
 skill jumping
-face scrollr.111
+face scroll_jumping.111
 race scrolls
 nrof 1
 type 130

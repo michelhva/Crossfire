@@ -1,7 +1,7 @@
 Object scroll_missile_weap
 name scroll of missile weapons
 skill missile weapons
-face scrollr.111
+face scroll_missile_weapon.111
 race scrolls
 nrof 1
 type 130

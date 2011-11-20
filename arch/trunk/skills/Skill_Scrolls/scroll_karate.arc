@@ -1,7 +1,7 @@
 Object scroll_karate
 name scroll of karate
 skill karate
-face scrollr.111
+face scroll_karate.111
 race scrolls
 nrof 1
 type 130

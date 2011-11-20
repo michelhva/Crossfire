@@ -2,7 +2,7 @@ Object scroll_hiding
 name scroll of hiding
 name_pl scrolls of hiding
 skill hiding
-face scrollr.111
+face scroll_hiding.111
 race scrolls
 nrof 1
 type 130

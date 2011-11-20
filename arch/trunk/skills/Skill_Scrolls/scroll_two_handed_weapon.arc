@@ -2,7 +2,7 @@ Object scroll_two_handed_weapons
 name scroll of two handed weapons
 name_pl scrolls of two handed weapons
 skill two handed weapons
-face scrollr.111
+face scroll_two_handed_weapon.111
 race scrolls
 nrof 1
 type 130

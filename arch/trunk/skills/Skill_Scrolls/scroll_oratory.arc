@@ -1,7 +1,7 @@
 Object scroll_oratory
 name scroll of oratory
 skill oratory
-face scrollr.111
+face scroll_oratory.111
 race scrolls
 nrof 1
 type 130

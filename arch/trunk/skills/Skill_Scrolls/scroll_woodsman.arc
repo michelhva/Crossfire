@@ -1,7 +1,7 @@
 Object scroll_woodsman
 name scroll of wood lore
 skill woodsman
-face scrollr.111
+face scroll_woodsman.111
 race scrolls
 nrof 1
 type 130

@@ -1,7 +1,7 @@
 Object scroll_punching
 name scroll of punching
 skill punching
-face scrollr.111
+face scroll_punching.111
 race scrolls
 nrof 1
 type 130
