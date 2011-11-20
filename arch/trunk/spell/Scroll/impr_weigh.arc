@@ -1,6 +1,6 @@
 Object improve_weight
 name Lower Weapon Weight
-face scroll.111
+face improve_weight.111
 race scrolls
 nrof 1
 type 124

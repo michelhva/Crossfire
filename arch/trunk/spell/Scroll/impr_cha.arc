@@ -1,6 +1,6 @@
 Object improve_cha
 name Improve Charisma Bonus
-face scroll.111
+face improve_cha.111
 race scrolls
 nrof 1
 type 124

@@ -1,6 +1,6 @@
 Object improve_dex
 name Improve Dexterity Bonus
-face scroll.111
+face improve_dex.111
 race scrolls
 nrof 1
 type 124

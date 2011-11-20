@@ -1,6 +1,6 @@
 Object improve_str
 name Improve Strength Bonus
-face scroll.111
+face improve_str.111
 race scrolls
 nrof 1
 type 124

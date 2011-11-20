@@ -1,6 +1,6 @@
 Object improve_con
 name Improve Constitution Bonus
-face scroll.111
+face improve_con.111
 race scrolls
 nrof 1
 type 124
