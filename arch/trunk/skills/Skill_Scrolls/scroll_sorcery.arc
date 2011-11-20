@@ -2,7 +2,7 @@ Object scroll_sorcery
 name scroll of sorcery
 name_pl scrolls of sorcery
 skill sorcery
-face scrollr.111
+face scroll_sorcery.111
 race scrolls
 nrof 1
 type 130

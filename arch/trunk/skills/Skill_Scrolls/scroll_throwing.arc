@@ -2,7 +2,7 @@ Object scroll_throwing
 name scroll of throwing
 name_pl scrolls of throwing
 skill throwing
-face scrollr.111
+face scroll_throwing.111
 race scrolls
 nrof 1
 type 130

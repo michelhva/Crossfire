@@ -2,7 +2,7 @@ Object scroll_evocation
 name scroll of evocation
 name_pl scrolls of evocation
 skill evocation
-face scrollr.111
+face scroll_evocation.111
 race scrolls
 nrof 1
 type 130

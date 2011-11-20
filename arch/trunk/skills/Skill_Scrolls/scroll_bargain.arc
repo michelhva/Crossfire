@@ -2,7 +2,7 @@ Object scroll_bargaining
 name scroll of bargaining
 name_pl scrolls of bargaining
 skill bargaining
-face scrollr.111
+face scroll_bargaining.111
 race scrolls
 nrof 1
 type 130

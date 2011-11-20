@@ -1,7 +1,7 @@
 Object scroll_smithing
 name scroll of smithing
 skill smithery
-face scrollr.111
+face scroll_smithing.111
 race scrolls
 nrof 1
 type 130

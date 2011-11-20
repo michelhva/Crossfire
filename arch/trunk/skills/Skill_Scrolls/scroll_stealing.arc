@@ -1,7 +1,7 @@
 Object scroll_stealing
 name scroll of stealing
 skill stealing
-face scrollr.111
+face scroll_stealing.111
 race scrolls
 nrof 1
 type 130

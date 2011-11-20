@@ -1,7 +1,7 @@
 Object scroll_alchemy
 name scroll of alchemistry
 skill alchemy
-face scrollr.111
+face scroll_alchemy.111
 race scrolls
 nrof 1
 type 130

@@ -1,7 +1,7 @@
 Object scroll_literacy
 name scroll of literacy
 skill literacy
-face scrollr.111
+face scroll_literacy.111
 race scrolls
 nrof 1
 type 130

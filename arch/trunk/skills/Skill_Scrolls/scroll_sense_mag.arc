@@ -1,7 +1,7 @@
 Object scroll_sense_mag
 name scroll of sense magic
 skill sense magic
-face scrollr.111
+face scroll_sense_magic.111
 race scrolls
 nrof 1
 type 130

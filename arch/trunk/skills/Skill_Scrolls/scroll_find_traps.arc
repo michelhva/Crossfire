@@ -2,7 +2,7 @@ Object scroll_find_traps
 name scroll of finding traps
 name_pl scrolls of finding traps
 skill find traps
-face scrollr.111
+face scroll_find_traps.111
 race scrolls
 nrof 1
 type 130

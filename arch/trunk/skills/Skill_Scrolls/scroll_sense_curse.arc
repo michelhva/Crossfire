@@ -1,7 +1,7 @@
 Object scroll_sense_curse
 name scroll of sense curse
 skill sense curse
-face scrollr.111
+face scroll_sense_curse.111
 race scrolls
 nrof 1
 type 130

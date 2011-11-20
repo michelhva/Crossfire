@@ -2,7 +2,7 @@ Object scroll_summoning
 name scroll of summoning
 name_pl scrolls of summoning
 skill summoning
-face scrollr.111
+face scroll_summoning.111
 race scrolls
 nrof 1
 type 130

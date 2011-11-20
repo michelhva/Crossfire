@@ -1,7 +1,7 @@
 Object scroll_singing
 name scroll of singing
 skill singing
-face scrollr.111
+face scroll_singing.111
 race scrolls
 nrof 1
 type 130

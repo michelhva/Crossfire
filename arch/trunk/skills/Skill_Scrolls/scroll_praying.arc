@@ -2,7 +2,7 @@ Object scroll_praying
 name scroll of praying
 name_pl scrolls of praying
 skill praying
-face scrollr.111
+face scroll_praying.111
 race scrolls
 nrof 1
 type 130
