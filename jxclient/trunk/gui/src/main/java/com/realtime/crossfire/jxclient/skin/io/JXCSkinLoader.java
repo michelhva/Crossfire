@@ -1049,8 +1049,9 @@ public class JXCSkinLoader {
         final GaugeUpdater gaugeUpdater = newGaugeUpdater(args.get());
         final Orientation orientationDiv = ParseUtils.parseOrientation(args.get());
         final Orientation orientationMod = ParseUtils.parseOrientation(args.get());
+        final CommandList commandList = args.get().equals("null") ? null : skin.getCommandList(args.getPrev());
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
-        final GUIDupGauge element = new GUIDupGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
+        final GUIDupGauge element = new GUIDupGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, commandList);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1074,8 +1075,9 @@ public class JXCSkinLoader {
         final Orientation orientationMod = ParseUtils.parseOrientation(args.get());
         final Color color = ParseUtils.parseColor(args.get());
         final Font font = definedFonts.lookup(args.get());
+        final CommandList commandList = args.get().equals("null") ? null : skin.getCommandList(args.getPrev());
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
-        final GUIDupTextGauge element = new GUIDupTextGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+        final GUIDupTextGauge element = new GUIDupTextGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font, commandList);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1168,10 +1170,11 @@ public class JXCSkinLoader {
         final Image emptyImage = args.get().equals("null") ? null : imageParser.getImage(args.getPrev());
         final GaugeUpdater gaugeUpdater = newGaugeUpdater(args.get());
         final Orientation orientation = ParseUtils.parseOrientation(args.get());
+        final CommandList commandList = args.get().equals("null") ? null : skin.getCommandList(args.getPrev());
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
         assert dialogFactory != null;
         final float alpha = dialogFactory.getFrameAlpha();
-        final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, alpha);
+        final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, alpha, commandList);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1982,10 +1985,11 @@ public class JXCSkinLoader {
         final Orientation orientation = ParseUtils.parseOrientation(args.get());
         final Color color = ParseUtils.parseColor(args.get());
         final Font font = definedFonts.lookup(args.get());
+        final CommandList commandList = args.get().equals("null") ? null : skin.getCommandList(args.getPrev());
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
         assert dialogFactory != null;
         final float alpha = dialogFactory.getFrameAlpha();
-        final GUITextGauge element = new GUITextGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font, alpha);
+        final GUITextGauge element = new GUITextGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font, alpha, commandList);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
