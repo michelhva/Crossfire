@@ -1,6 +1,6 @@
 Object improve_pow
 name Improve Power Bonus
-face scroll.111
+face improve_pow.111
 race scrolls
 nrof 1
 type 124

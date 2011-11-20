@@ -1,6 +1,6 @@
 Object improve_wis
 name Improve Wisdom Bonus
-face scroll.111
+face improve_wis.111
 race scrolls
 nrof 1
 type 124

@@ -1,7 +1,7 @@
 Object ench_armour
 name Enchant Armour
 race scrolls
-face scroll.111
+face ench_armour.111
 nrof 1
 type 123
 material 1

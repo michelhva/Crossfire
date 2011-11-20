@@ -1,6 +1,6 @@
 Object improve_damage
 name Improve Weapon Damage
-face scroll.111
+face improve_damage.111
 race scrolls
 nrof 1
 type 124
