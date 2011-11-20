@@ -9,7 +9,7 @@ enter_x 13
 enter_y 1
 msg
 Created:  2003-04-10 Avion
-Modified: 2008-12-13 Rick Tanner
+Modified: 2011-11-20 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -864,9 +864,7 @@ end
 arch book_clasp
 name Smugglers Guilde
 msg
-This be the  word of the Smugglers Guilde
-There be six Masters in the Guilde who shall
-be the whole of the law.
+This be the  word of the Smugglers Guilde. There be six Masters in the Guilde who shall be the whole of the law.
 endmsg
 x 6
 y 17
@@ -941,9 +939,7 @@ arch dwarf_priest
 name Poe
 msg
 @match monsters
-Although I only saw them briefly once,
-when they were feeding them a behemoth
-they were giant rodents I believe.
+Although I only saw them briefly once, when they were feeding them a behemoth they were giant rodents I believe.
 @match *
 Thank you for saving me.
 endmsg
