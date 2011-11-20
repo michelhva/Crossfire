@@ -3,7 +3,7 @@ name mana blast
 type 102
 subtype 7
 move_on walk fly_low
-face manabolt.111
+face manablast.111
 animation manablast
 speed 1
 wc -50
