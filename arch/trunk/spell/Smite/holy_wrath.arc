@@ -3,7 +3,7 @@ type 102
 subtype 6
 name holy wrath
 slaying undead,demon
-face turnundead.111
+face holy_wrath.111
 animation holy_wrath
 wc -40
 speed 0.2
