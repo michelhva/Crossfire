@@ -102,12 +102,6 @@ public class JXCWindow {
     private final JXCWindowRenderer windowRenderer;
 
     /**
-     * The semaphore for drawing the window contents.
-     */
-    @NotNull
-    private final Object semaphoreDrawing = new Object();
-
-    /**
      * The {@link KeyHandler} for processing keyboard input.
      */
     @NotNull
@@ -229,16 +223,12 @@ public class JXCWindow {
 
         @Override
         public void keyPressed(@NotNull final KeyEvent e) {
-            synchronized (semaphoreDrawing) {
-                keyHandler.keyPressed(e);
-            }
+            keyHandler.keyPressed(e);
         }
 
         @Override
         public void keyReleased(@NotNull final KeyEvent e) {
-            synchronized (semaphoreDrawing) {
-                keyHandler.keyReleased(e);
-            }
+            keyHandler.keyReleased(e);
         }
 
     };
