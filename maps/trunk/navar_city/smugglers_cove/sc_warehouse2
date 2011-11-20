@@ -244,12 +244,12 @@ randomitems serp_priest
 pick_up 30
 unaggressive 0
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 can_see_in_dark 1
 end
 arch dirtfloor
@@ -1708,7 +1708,7 @@ arch dirtfloor
 x 13
 y 9
 end
-arch swall_1_2
+arch swall_2_2_1
 x 13
 y 9
 end
@@ -1728,11 +1728,15 @@ arch rubble
 x 13
 y 12
 end
+arch swall_2_2_2
+x 13
+y 12
+end
 arch dirtfloor
 x 13
 y 13
 end
-arch swall_1_1
+arch swall_2_1_1
 x 13
 y 13
 end
@@ -1863,6 +1867,10 @@ arch roughwall_1_2
 x 14
 y 9
 end
+arch swall_1_3_half
+x 14
+y 9
+end
 arch dirtfloor
 x 14
 y 10
@@ -1884,6 +1892,10 @@ x 14
 y 12
 end
 arch roughwall_1_1
+x 14
+y 12
+end
+arch swall_1_3_half
 x 14
 y 12
 end
