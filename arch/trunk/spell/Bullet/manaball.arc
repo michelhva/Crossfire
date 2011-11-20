@@ -1,7 +1,7 @@
 Object manaball
 type 102
 subtype 6
-face manabolt.111
+face manaball.111
 animation manaball
 hp 4
 wc -50
