@@ -4,7 +4,7 @@ slaying undead
 type 102
 subtype 7
 move_on walk fly_low
-face turnundead.111
+face banishment.111
 animation banishment
 speed 1
 wc -40
