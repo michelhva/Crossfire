@@ -4,7 +4,7 @@ type 102
 subtype 7
 move_on walk fly_low
 slaying undead,demon
-face turnundead.111
+face holy_word.111
 animation holy_word
 speed 1
 wc -30
