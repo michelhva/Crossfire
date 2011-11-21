@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.guistate;
 
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
+import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -61,33 +62,40 @@ public class GuiStateManager {
             }
 
             this.guiState = guiState;
-
-            switch (guiState) {
-            case START:
-                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
-                    listener.start();
-                }
-                break;
-
-            case METASERVER:
-                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
-                    listener.metaserver();
-                }
-                break;
-
-            case CONNECTING:
-                throw new IllegalArgumentException();
-
-            case CONNECTED:
-                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
-                    listener.connected();
-                }
-                break;
-
-            case CONNECT_FAILED:
-                throw new IllegalArgumentException();
-            }
         }
+
+        SwingUtilities2.invokeAndWait(new Runnable() {
+
+            @Override
+            public void run() {
+                switch (guiState) {
+                case START:
+                    for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+                        listener.start();
+                    }
+                    break;
+
+                case METASERVER:
+                    for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+                        listener.metaserver();
+                    }
+                    break;
+
+                case CONNECTING:
+                    throw new IllegalArgumentException();
+
+                case CONNECTED:
+                    for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+                        listener.connected();
+                    }
+                    break;
+
+                case CONNECT_FAILED:
+                    throw new IllegalArgumentException();
+                }
+            }
+
+        });
     }
 
     /**
