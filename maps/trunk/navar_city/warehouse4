@@ -8,7 +8,7 @@ enter_x 27
 enter_y 15
 msg
 Created:  1993-11-12
-Modified: 2008-12-02 Rick Tanner
+Modified: 2011-11-21 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -188,18 +188,11 @@ end
 arch magic_ear
 msg
 @match smugglers
-Yes, the smugglers, they locked me in
-here to die of starvation since
-overheard where their secret entrance
-to the city is
+Yes, the smugglers, they locked me in here to die of starvation since overheard where their secret entrance to the city is.
 @match entrance
-Yes, the entrance, it is in the lower
-levels of the Lighthouse, but you have
-to get to the top level to go down to
-it
+Yes, the entrance, it is in the lower levels of the Lighthouse, but you have to get to the top level to go down to it.
 @match *
-Praise God you have come to let me
-out...those damned smugglers.
+Praise God you have come to let me out...those damned smugglers.
 endmsg
 x 1
 y 13
