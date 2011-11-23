@@ -9,7 +9,7 @@ enter_x 13
 enter_y 12
 msg
 Created:  1994-09-03 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-10-23 Rick Tanner
+Modified: 2011-11-22 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1996,13 +1996,7 @@ arch altar
 msg
 A voice says:
 
-The first word shall be spoken in
-the north west.  The second word
-shall be spoke in the north east.
-Cross then to the sourth west where
-you shall speak the third word of
-power.  Then seek the final place
-to speak the final word.
+The first word shall be spoken in the north west.  The second word shall be spoke in the north east. Cross then to the sourth west where you shall speak the third word of power.  Then seek the final place to speak the final word.
 endmsg
 food 1
 x 13
@@ -2685,8 +2679,7 @@ arch locked_door1
 name mysterious door
 slaying lmagic
 msg
-This door requires a special key
-to open.
+This door requires a special key to open.
 endmsg
 x 17
 y 16
