@@ -1734,17 +1734,11 @@ arch chinese_dragon
 name Nyerival
 msg
 @match treasure
-Content yourself with your shiny
-rocks.
+Content yourself with your shiny rocks.
 @match temple|dragon king
-Heh, heh, you seek aid upon
-your quest.  Well my pretty insect,
-Know this:  You must speak the fifth
-verse at the table of gold, and
-leave its body there as well.
+Heh, heh, you seek aid upon your quest.  Well my pretty insect, Know this:  You must speak the fifth verse at the table of gold, and leave its body there as well.
 @match *
->Yawn<  Yes little creature? Why
-do you disturb me?
+>Yawn<  Yes little creature? Why do you disturb me?
 endmsg
 hp 1200
 x 11
