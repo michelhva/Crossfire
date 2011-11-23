@@ -1,3 +1,4106 @@
+2011-11-23 05:35  rjtanner
+
+	* port_joseph/pirates/fortvsship: Removed line breaks in NPC
+	  dialogue text to Pirate Beach in Port Joseph.
+
+2011-11-23 05:32  rjtanner
+
+	* port_joseph/goblin/setower: Removed line breaks in NPC dialogue
+	  text to Goblin Fortress, Southeast Tower in Port Joseph.
+
+2011-11-23 05:30  rjtanner
+
+	* port_joseph/goblin/nwtower: Removed line breaks in scroll message
+	  text to Goblin Fortress, Northwest Tower in Port Joseph.
+
+2011-11-23 05:26  rjtanner
+
+	* port_joseph/goblin/hut: Removed line breaks in scroll message
+	  text to Orc Hut in Port Joseph.
+
+2011-11-23 05:24  rjtanner
+
+	* port_joseph/goblin/hole: Removed line breaks in scroll message
+	  text to Hole on Goblin Isle in Port Joseph.
+
+2011-11-23 05:20  rjtanner
+
+	* port_joseph/goblin/fortress: Removed line breaks in NPC dialogue
+	  text to Goblin Fortress, Entrance.
+
+2011-11-23 05:17  rjtanner
+
+	* port_joseph/goblin/dungeon2: Name capilization update, buggle ->
+	  Buggle in Goblin Fortress Dungeon, Level 2 in Port Joseph.
+
+2011-11-23 05:15  rjtanner
+
+	* port_joseph/goblin/dungeon3: Removed line breaks in message text
+	  to Goblin Fortress Dungeon, Level 3 in Port Joseph.
+
+2011-11-23 05:13  rjtanner
+
+	* port_joseph/goblin/dungeon2: Cosmetic change to add a small
+	  section of fence (swall) for nicer merging in Goblin Fortress
+	  Dungeon, Level 2 in Port Joseph.
+
+2011-11-23 05:10  rjtanner
+
+	* port_joseph/goblin/dungeon2: Removed line breaks in NPC dialogue
+	  text to Goblin Fortress Dungeon, Level 2 in Port Joseph.
+
+2011-11-23 05:08  rjtanner
+
+	* port_joseph/goblin/dungeon1: Removed line breaks, spelling and
+	  puncuation corrections in NPC dialogue text to Goblin Island
+	  Dungeons, Level 1 in Port Joseph.
+
+2011-11-23 05:03  rjtanner
+
+	* port_joseph/goblin/caves: Cosmetic change for nicer cave wall
+	  merging to Caves on Goblin Island in Port Joseph.
+
+2011-11-23 04:59  rjtanner
+
+	* port_joseph/goblin/caves: Removed line breaks in NPC dialogue
+	  text to Caves on Goblin Island in Port Joseph.
+
+2011-11-22 06:07  rjtanner
+
+	* navar_city/warehouse7: Correct map title to Warehouse 7 in Navar,
+	  warehouse7 map is now Warehouse 7 (not 8).
+
+2011-11-22 06:04  rjtanner
+
+	* navar_city/warehouse5: Remove misplaced character (iend -> end)
+	  of text which broke an archetype in Warehouse #5 in Navar.
+
+2011-11-22 06:01  rjtanner
+
+	* navar_city/warehouse5: Typo correction to Warehouse #5 in Navar,
+	  transpor -> transport.
+
+2011-11-22 05:57  rjtanner
+
+	* navar_city/warehouse4: Lore reference change and punctuation
+	  correction to NPC dialogue in Warehouse #4 in Navar.
+
+2011-11-22 05:55  rjtanner
+
+	* navar_city/warehouse4: Move dialogue text from a magic_ear (under
+	  the floor) to the actual NPC in Warehouse #4 in Navar.
+
+2011-11-22 05:52  rjtanner
+
+	* navar_city/warehouse4: Removed line breaks in NPC dialogue text
+	  to Warehouse #4 in Navar.
+
+2011-11-22 05:50  rjtanner
+
+	* navar_city/warehouse3: Removed line breaks in NPC dialogue text
+	  to Warehouse #3 in Navar.
+
+2011-11-22 04:42  rjtanner
+
+	* pup_land/guilds/purple_butterfly/guild_thaum: Map title
+	  correction to the Guild of Purple Butterfly, Guild Thaumaturgy
+	  Lab in Pup Land.
+
+2011-11-22 04:28  rjtanner
+
+	* pup_land/nurnberg/city: Correct and reformat map header content
+	  to pup_land/nurnberg/city. Technical change, no functional
+	  changes.
+
+2011-11-22 04:26  rjtanner
+
+	* pup_land/nurnberg/city: Correct the map path to the Laughing
+	  Skull guild in Nurnberg - link to the python based guild map
+	  instead of the old guild content.
+
+2011-11-21 06:48  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.12: Cosmetic change for
+	  nicer cave wall merging to Troll Canyon Cavern (troll_canyon.12)
+	  in Navar.
+
+2011-11-21 06:48  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.11: Cosmetic change for
+	  nicer cave wall merging to Troll Canyon Cavern (troll_canyon.11)
+	  in Navar.
+
+2011-11-21 06:47  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.10: Cosmetic change for
+	  nicer cave wall merging to Troll Canyon Cavern (troll_canyon.10)
+	  in Navar.
+
+2011-11-21 06:45  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.9: Cosmetic change for nicer
+	  cave wall merging to Troll Canyon Cavern (troll_canyon.9) in
+	  Navar.
+
+2011-11-21 06:44  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.8: Cosmetic change for nicer
+	  cave wall merging to Troll Canyon Cavern (troll_canyon.8) in
+	  Navar.
+
+2011-11-21 06:43  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.7: Cosmetic change for nicer
+	  cave wall merging to Troll Canyon Cavern (troll_canyon.7) in
+	  Navar.
+
+2011-11-21 06:41  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.6: Cosmetic change for nicer
+	  cave wall merging to Troll Canyon Cavern (troll_canyon.6) in
+	  Navar.
+
+2011-11-21 06:38  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.5: Cosmetic change for nicer
+	  cave wall merging to Troll Canyon Cavern (troll_canyon.5) in
+	  Navar.
+
+2011-11-21 06:37  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.4: Cosmetic change for nicer
+	  cave wall merging to Troll Canyon Cavern (troll_canyon.4) in
+	  Navar.
+
+2011-11-21 06:35  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.3: Cosmetic change for nicer
+	  cave wall merging to Troll Canyon Cavern (troll_canyon.3) in
+	  Navar.
+
+2011-11-21 06:33  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.2: Cosmetic change for nicer
+	  cave wall merging to Troll Canyon Cavern in Navar.
+
+2011-11-21 06:31  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.1: Removed line breaks in
+	  magic_mouth dialogue text to Troll Canyon (troll_canyon.1) in
+	  Navar.
+
+2011-11-21 06:27  rjtanner
+
+	* navar_city/tower/magetowfinal: Removed line breaks in magic_mouth
+	  dialogue text to Spiral Tower, Finale in Navar.
+
+2011-11-21 06:23  rjtanner
+
+	* navar_city/tower/magetower4: Removed line breaks in magic_mouth
+	  dialogue text to Spiral Tower, Level 4 in Navar.
+
+2011-11-21 06:20  rjtanner
+
+	* navar_city/tower/magetower1: Removed line breaks in magic_mouth
+	  dialogue text to Spiral Tower, Level 1 in Navar.
+
+2011-11-20 07:29  rjtanner
+
+	* navar_city/temples/gorokh: Removed line breaks in NPC dialogue
+	  text to Temple of Gorokh in Navar.
+
+2011-11-20 07:12  rjtanner
+
+	* navar_city/smugglers_cove/sc_warehouse3: Cosmetic change for
+	  nicer cave wall merging to The Old Warehouse, Cavern in Navar.
+
+2011-11-20 07:10  rjtanner
+
+	* navar_city/smugglers_cove/sc_warehouse2: Added more fence
+	  sections to complete the cage or prison in The Old Warehouse,
+	  Cellar in Navar. Cosmetic change, no functional changes.
+
+2011-11-20 06:21  rjtanner
+
+	* navar_city/smugglers_cove/sc_warehouse2: Removed line breaks in
+	  NPC dialogue text to The Old Warehouse, Cellar in Navar.
+
+2011-11-20 06:15  rjtanner
+
+	* navar_city/slums/rockgardens: Removed line breaks in sign text to
+	  Rock Gardens in Navar.
+
+2011-11-20 06:08  rjtanner
+
+	* navar_city/magara/houses/museum: Removed line breaks in sign text
+	  to Museum of Arms in Navar.
+
+2011-11-19 17:05  ryo_saeba
+
+	* scorn/taverns/dragon_emissary.msg: Fix plural form. Bug #3438520:
+	  dragon lord quest.
+
+2011-11-19 04:40  rjtanner
+
+	* navar_city/light/light4: Remove line breaks in magic_mouth text
+	  to Navar Lighthouse, Level 4.
+
+2011-11-19 04:35  rjtanner
+
+	* navar_city/light/light1: Remove line break in door text to Navar
+	  Lighthouse, Entrance.
+
+2011-11-19 04:31  rjtanner
+
+	* navar_city/jail/jail2: Cosmetic changes with fence sections for
+	  nicer merging to Navar Jail, Level 2 in Navar.
+
+2011-11-19 04:14  rjtanner
+
+	* navar_city/jail/jail: Remove unnecessary name_pl reference to the
+	  instructional sign found in Navar Jail, Entrance.
+
+2011-11-19 04:13  rjtanner
+
+	* navar_city/jail/jail: Cosmetic changes with cave wall sections
+	  for nicer merging to Navar Jail, Entrance in Navar.
+
+2011-11-18 05:24  rjtanner
+
+	* navar_city/illusion/illtow6: Replace the stairway to Tower of
+	  Illusion, 6th level in Navar. The next level is up, the original
+	  stairway went down.
+
+2011-11-18 05:18  rjtanner
+
+	* navar_city/illusion/illtow5: Remove line break in sign text to
+	  Tower of Illusion, 5th Level in Navar.
+
+2011-11-18 05:01  rjtanner
+
+	* navar_city/misc/theaterb3: Cosmetic changes with cave wall
+	  sections for nicer merging to Civic Theater, Lower Level 3 in
+	  Navar.
+
+2011-11-18 04:56  rjtanner
+
+	* navar_city/misc/theaterb2: Cosmetic changes with cave wall
+	  sections for nicer merging to Civic Theater, Lower Level 2 in
+	  Navar.
+
+2011-11-18 04:54  rjtanner
+
+	* navar_city/misc/theaterb1: Cosmetic changes with cave wall
+	  sections for nicer merging to Civic Theater, Lower Level 1 in
+	  Navar.
+
+2011-11-18 04:49  rjtanner
+
+	* navar_city/misc/theater: Cosmetic change with how fence (swall)
+	  sections merge with nearby walls to Civic Theater, Ground Floor
+	  in Navar.
+
+2011-11-18 04:45  rjtanner
+
+	* navar_city/misc/theater: Cosmetic change with wall sections
+	  surrounding doorways to Civic Theater, Ground Floor in Navar.
+
+2011-11-18 04:43  rjtanner
+
+	* navar_city/misc/theater2: Cosmetic change with wall sections
+	  surrounding doorways to Civic Theater, 2nd Floor in Navar.
+
+2011-11-18 04:42  rjtanner
+
+	* navar_city/misc/theater2: Cosmetic change with how fence (swall)
+	  sections merge with nearby walls to Civic Theater, 2nd Floor in
+	  Navar.
+
+2011-11-17 06:33  rjtanner
+
+	* navar_city/misc/thamshop, world/world_121_117: Update and layout
+	  changes to Strange Little Store (/thamshop) of Navar. Exapnded
+	  the map to include ground outside the shop walls. Door or
+	  entrance now opens when a player approaches. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Updated world map for new map entrance
+	  destination.
+
+2011-11-17 06:20  rjtanner
+
+	* world/world_121_117: Cosmetic change with how fence (swall)
+	  sections merge with nearby walls in SW corner of Navar.
+
+2011-11-17 06:17  rjtanner
+
+	* navar_city/misc/tannery, world/world_122_116: Update and layout
+	  changes to Tannery of Navar. Exapnded the map to include ground
+	  outside the shop walls. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world
+	  map for new map entrance destination.
+
+2011-11-17 05:57  rjtanner
+
+	* navar_city/misc/IPO_navar, world/world_122_117: Update and layout
+	  changes to Navar Imperial Post Office. Exapnded the map to
+	  include ground outside the shop walls. Door or entrance now opens
+	  when a player approaches. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination.
+
+2011-11-17 05:40  rjtanner
+
+	* navar_city/misc/jeweler: Added more light sources to Jeweler's
+	  Workshop of Navar. More light fills the map now.
+
+2011-11-16 06:43  rjtanner
+
+	* navar_city/misc/kitchen, world/world_122_117: Layout changes to
+	  Rosco's Kitchen in Navar. Exapnded the map to include ground
+	  outside the shop walls. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world
+	  map for new map entrance destination.
+
+2011-11-16 06:24  rjtanner
+
+	* navar_city/misc/jeweler, world/world_122_117: Update and layout
+	  changes to the Jeweler's Workshop of Navar. Exapnded the map to
+	  include ground outside the shop walls. Door or entrance now opens
+	  when a player approaches. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination.
+
+2011-11-16 06:06  rjtanner
+
+	* navar_city/misc/city1mermaid, navar_city/misc/navarwiz,
+	  world/world_122_117: Layout changes to The Frolicing Mermaid in
+	  Navar. Added surrounding terrain to the outside of the map so it
+	  matches placement in the world map. Updated world map destination
+	  coordinates due to internal map changes. Map is now considered an
+	  outdoor map so darkness at night is visible, added light sources.
+	  Updated Wizard's Eastern Hideout stairway up.
+
+2011-11-16 04:59  rjtanner
+
+	* wolfsburg/shops/transport.shoppe: Remove unnecessary name_pl
+	  references to Wolfsburg's Ye Olde Shoppe of Transport.
+
+2011-11-16 04:56  rjtanner
+
+	* whalingoutpost/underwaterdungeon/level1: Remove unnecessary
+	  name_pl references to Underwater Dungeon Level 1 in Whaling
+	  Outpost.
+
+2011-11-15 07:03  rjtanner
+
+	* whalingoutpost/taverns/storehouse1: Cosmetic changes for nicer
+	  merging with cave wall sections to Storehouse in Whaling Outpost.
+
+2011-11-15 07:02  rjtanner
+
+	* whalingoutpost/taverns/storehouse1: Remove unnecessary name_pl
+	  references to Storehouse in Whaling Outpost.
+
+2011-11-15 07:00  rjtanner
+
+	* whalingoutpost/taverns/fishershallb1: Remove unnecessary name_pl
+	  references to Fisher's Hall, Cellar in Whaling Outpost.
+
+2011-11-15 06:41  rjtanner
+
+	* whalingoutpost/taverns/fishershall1: Remove unnecessary name_pl
+	  references to Fisher's Hall in Whaling Outpost.
+
+2011-11-15 06:39  rjtanner
+
+	* whalingoutpost/misc/trollcave1: Cosmetic changes for nicer
+	  merging with cave wall sections to Wretched Cave in Whaling
+	  Outpost.
+
+2011-11-15 06:34  rjtanner
+
+	* whalingoutpost/misc/polarbearcave3: Cosmetic changes for nicer
+	  merging with cave wall sections to Polar Bear Cavern in Whaling
+	  Outpost.
+
+2011-11-15 06:33  rjtanner
+
+	* whalingoutpost/misc/polarbearcave3: Removed extra snow tiles from
+	  under wall sections to Polar Bear Cavern in Whaling Outpost.
+
+2011-11-15 06:30  rjtanner
+
+	* whalingoutpost/misc/polarbearcave2: Cosmetic changes for nicer
+	  merging with cave wall sections to Polar Bear Lair in Whaling
+	  Outpost.
+
+2011-11-15 06:24  rjtanner
+
+	* whalingoutpost/misc/polarbearcave1: Cosmetic changes for nicer
+	  merging with cave wall sections to Polar Bear Cave in Whaling
+	  Outpost.
+
+2011-11-15 06:23  rjtanner
+
+	* whalingoutpost/misc/polarbearcave1: Removed extra snow tiles from
+	  under wall sections to Polar Bear Cave.
+
+2011-11-15 06:20  rjtanner
+
+	* whalingoutpost/misc/icehole1: More cosmetic changes for nicer
+	  merging with cave wall sections to Ice Cave in Whaling Outpost.
+
+2011-11-15 06:10  rjtanner
+
+	* whalingoutpost/misc/icecavern2: More cosmetic changes for nicer
+	  merging with cave wall sections to Ice Cavern, Dragon Chmaber in
+	  Whaling Outpost.
+
+2011-11-15 06:01  rjtanner
+
+	* whalingoutpost/misc/icecavern1: Cosmetic changes for nicer
+	  merging with cave wall sections to Ice Cavern, Level 1 in Whaling
+	  Outpost.
+
+2011-11-15 05:45  rjtanner
+
+	* whalingoutpost/misc/holeinice1: Cosmetic changes for nicer
+	  merging with cave wall sections to Snow Cavern in Whaling
+	  Outpost.
+
+2011-11-15 05:43  rjtanner
+
+	* whalingoutpost/misc/frostcavern1: Cosmetic changes for nicer
+	  merging with cave wall sections to Frost Cavern in Whaling
+	  Outpost.
+
+2011-11-15 05:30  rjtanner
+
+	* whalingoutpost/misc/fisherswell1: Cosmetic changes for nicer
+	  merging with cave wall sections to Fisher's Well in Whaling
+	  Outpost.
+
+2011-11-15 05:28  rjtanner
+
+	* whalingoutpost/misc/castleb3: Cosmetic changes for nicer merging
+	  with cave wall sections in Glacier Keep, Frost Lair in Whaling
+	  Outpost.
+
+2011-11-15 05:23  rjtanner
+
+	* whalingoutpost/misc/castleb2: Cosmetic changes for nicer merging
+	  with cave wall sections in Glacier Keep, Crawlway in Whaling
+	  Outpost.
+
+2011-11-15 05:17  rjtanner
+
+	* whalingoutpost/misc/castleb1keep: Cosmetic changes to replace
+	  nothing tiles with solid cave wall sections in Glacier Keep,
+	  Foundation in Whaling Outpost.
+
+2011-11-15 05:12  rjtanner
+
+	* whalingoutpost/misc/castle3: Cosmetic change with how fence
+	  (swall) sections merge with nearby castle walls to Glacier Keep,
+	  Level 3 in Whaling Outpost.
+
+2011-11-14 07:16  rjtanner
+
+	* whalingoutpost/misc/castle2: Map title correction to Glacier Keep
+	  maps in Whaling Outpost. Level 1 is castle1, Level 2 is castle2.
+
+2011-11-14 07:14  rjtanner
+
+	* whalingoutpost/misc/castle2: Cosmetic change with how fence
+	  (swall) sections merge with nearby castle walls to Glacier Keep,
+	  Level 2 in Whaling Outpost.
+
+2011-11-14 06:48  rjtanner
+
+	* whalingoutpost/misc/castle1: Cosmetic change with how fence
+	  (swall) sections merge with nearby castle walls to Glacier Keep,
+	  Level 1 in Whaling Outpost.
+
+2011-11-14 06:46  rjtanner
+
+	* whalingoutpost/misc/polarbearcave3: Remove unnecessary name_pl
+	  reference to Polar Bear Cavern in Whaling Outpost.
+
+2011-11-14 06:45  rjtanner
+
+	* whalingoutpost/misc/polarbearcave2: Remove unnecessary name_pl
+	  references to Polar Bear Lair in Whaling Outpost.
+
+2011-11-14 06:43  rjtanner
+
+	* whalingoutpost/misc/icehole1: Remove unnecessary name_pl
+	  references to Ice Cave in Whaling Outpost.
+
+2011-11-14 06:41  rjtanner
+
+	* whalingoutpost/misc/icecavern1: Remove unnecessary name_pl
+	  references to Ice Cavern, Level 1 in Whaling Outpost.
+
+2011-11-14 06:39  rjtanner
+
+	* whalingoutpost/misc/holeinice1: Remove unnecessary name_pl
+	  references to Snow Cave in Whaling Outpost.
+
+2011-11-14 06:38  rjtanner
+
+	* whalingoutpost/misc/frostcavern1: Remove unnecessary name_pl
+	  references to Frost Cavern in Whaling Outpost.
+
+2011-11-14 06:36  rjtanner
+
+	* whalingoutpost/misc/castleb3: Remove unnecessary name_pl
+	  references to Glacier Keep, Frost Lair in Whaling Outpost.
+
+2011-11-14 06:32  rjtanner
+
+	* whalingoutpost/misc/castleb1keep: Remove unnecessary name_pl
+	  references to Glacier Keep, Foundation in Whaling Outpost.
+
+2011-11-14 06:31  rjtanner
+
+	* whalingoutpost/misc/castleb1: Remove unnecessary name_pl
+	  reference and updated another reference (key -> keys) to Glacier
+	  Keep, Dungeon Level 1 in Whaling Outpost.
+
+2011-11-14 06:28  rjtanner
+
+	* whalingoutpost/misc/castle4: Remove unnecessary name_pl
+	  references to Glacier Keep, Level 4 in Whaling Outpost.
+
+2011-11-14 06:27  rjtanner
+
+	* whalingoutpost/misc/castle3: Remove unnecessary name_pl
+	  references to Glacier Keep, Level 3 in Whaling Outpost.
+
+2011-11-14 06:26  rjtanner
+
+	* whalingoutpost/misc/castle2: Remove unnecessary name_pl
+	  references to Glacier Keep, Level 2 in Whaling Outpost.
+
+2011-11-14 06:24  rjtanner
+
+	* whalingoutpost/misc/castle1: Remove unnecessary name_pl
+	  references to Glacier Keep, Level 1 in Whaling Outpost.
+
+2011-11-14 06:22  rjtanner
+
+	* whalingoutpost/lightkeepershouseb1: Remove unnecessary name_pl
+	  references to Lightkeeper's Cavern in Whaling Outpost.
+
+2011-11-14 06:20  rjtanner
+
+	* whalingoutpost/lightkeepershouse1: Remove unnecessary name_pl
+	  references to Lightkeeper's House in Whaling Outpost.
+
+2011-11-14 06:19  rjtanner
+
+	* whalingoutpost/lighthouse6attic: Remove unnecessary name_pl
+	  references to Frozen Lighthouse, Level 6 - Attic in Whaling
+	  Outpost.
+
+2011-11-14 06:17  rjtanner
+
+	* whalingoutpost/lighthouse6: Remove unnecessary name_pl references
+	  to Frozen Lighthouse, Level 6 in Whaling Outpost.
+
+2011-11-14 06:15  rjtanner
+
+	* whalingoutpost/lighthouse5: Remove unnecessary name_pl references
+	  to Frozen Lighthouse, Level 5 in Whaling Outpost.
+
+2011-11-14 06:15  rjtanner
+
+	* whalingoutpost/lighthouse4: Remove unnecessary name_pl references
+	  to Frozen Lighthouse, Level 4 in Whaling Outpost.
+
+2011-11-14 06:14  rjtanner
+
+	* whalingoutpost/lighthouse3: Remove unnecessary name_pl references
+	  to Frozen Lighthouse, Level 3 in Whaling Outpost.
+
+2011-11-14 06:13  rjtanner
+
+	* whalingoutpost/lighthouse2: Remove unnecessary name_pl references
+	  to Frozen Lighthouse, Level 2 in Whaling Outpost.
+
+2011-11-14 06:10  rjtanner
+
+	* whalingoutpost/houses/infestedhouse1: Remove unnecessary name_pl
+	  references to Fisherman's Cabin in Whaling Outpost.
+
+2011-11-14 06:09  rjtanner
+
+	* whalingoutpost/houses/fisherhouseswest: Map header correction to
+	  Fisherhouse West in Whaling Outpost - wrong credit listed to the
+	  map's creation.
+
+2011-11-14 06:07  rjtanner
+
+	* whalingoutpost/houses/fisherhousesouthwest: Remove unnecessary
+	  name_pl references to Fisherhouse Southwest in Whaling Outpost.
+
+2011-11-14 06:05  rjtanner
+
+	* whalingoutpost/houses/fisherhousesouth: Removed line breaks in
+	  message text to Fisherhouse South in Whaling Outpost.
+
+2011-11-14 06:05  rjtanner
+
+	* whalingoutpost/houses/fisherhousesouth: Remove unnecessary
+	  name_pl references to Fisherhouse South in Whaling Outpost.
+
+2011-11-14 06:03  rjtanner
+
+	* whalingoutpost/houses/fisherhousenorth: Removed line breaks in
+	  message text to Fisherhouse North in Whaling Outpost.
+
+2011-11-14 06:03  rjtanner
+
+	* whalingoutpost/houses/fisherhousenorth: Remove unnecessary
+	  name_pl references to Fisherhouse North in Whaling Outpost.
+
+2011-11-14 06:02  rjtanner
+
+	* whalingoutpost/houses/fisherhouseeast: Remove unnecessary name_pl
+	  references to Fisherhouse East in Whaling Outpost.
+
+2011-11-13 05:16  rjtanner
+
+	* start/HallsOfSelection/wraith_player: Remove unnecessary name_pl
+	  reference to Hall Of Selection, Wraith.
+
+2011-11-13 05:06  rjtanner
+
+	* scorn/houses/tannery: Remove unnecessary name_pl reference to
+	  Scorn Tannery.
+
+2011-11-13 05:05  rjtanner
+
+	* scorn/houses/smithery: Remove unnecessary name_pl reference to
+	  Metal Smith's Workshop in Scorn.
+
+2011-11-13 05:00  rjtanner
+
+	* scorn/houses/resir: Removed line breaks in message text to
+	  Resier's House in Scorn.
+
+2011-11-13 04:59  rjtanner
+
+	* scorn/houses/riverside_manor: Remove unnecessary name_pl
+	  reference to Riverside Manor in Scorn.
+
+2011-11-13 04:56  rjtanner
+
+	* scorn/houses/resir: Remove unnecessary name_pl references to
+	  Resier's House in Scorn.
+
+2011-11-13 04:53  rjtanner
+
+	* scorn/houses/jeweler: Remove unnecessary name_pl references to
+	  Jeweler's Workshop in Scorn.
+
+2011-11-13 04:52  rjtanner
+
+	* scorn/houses/bowyer: Remove unnecessary name_pl references to
+	  Bowyer's Workshop in Scorn.
+
+2011-11-13 04:50  rjtanner
+
+	* scorn/shops/foodshop: Remove unnecessary name_pl references to
+	  Food Shop Warehouse in Scorn.
+
+2011-11-13 04:42  rjtanner
+
+	* scorn/temples/valkyrie: Correct pluralization to various monster
+	  parts in the Chapel of Valkyrie in Scorn.
+
+2011-11-13 04:40  rjtanner
+
+	* scorn/temples/valkyrie: Updated the map header formating to the
+	  Chapel of Valkyrie in Scorn.
+
+2011-11-13 04:35  rjtanner
+
+	* planes/purpleworm: Remove unnecessary name_pl references in
+	  Purple Worm's Stomach (planes/purpleworm).
+
+2011-11-13 04:34  rjtanner
+
+	* planes/purpleworm: Correct map header formatting in regards to
+	  creation date and author information to Purple Worm's Stomach
+	  (planes/purpleworm).
+
+2011-11-13 04:27  rjtanner
+
+	* navar_city/spyhouse: Removed line breaks in message text to Small
+	  House (navar/spyhouse).
+
+2011-11-13 04:24  rjtanner
+
+	* navar_city/mlab/zealothouseb1, navar_city/spyhouse: Removed
+	  unnecessary references to name_pl and corrected one reference
+	  (keys) in Small House (navar/spyhouse). Technical change, no
+	  functional changes.
+
+2011-11-13 04:16  rjtanner
+
+	* navar_city/mlab/zealothouse2: Remove unnecessary name_pl
+	  references to Zealot House (zealothouse2). Technical change, no
+	  functional changes.
+
+2011-11-13 04:07  rjtanner
+
+	* navar_city/mlab/ttower40, navar_city/mlab/ttower45: Remove
+	  unnecessary name_pl references to Western Navar Tavern, Level 40
+	  and 45. Technical change, no functional changes.
+
+2011-11-13 03:58  rjtanner
+
+	* navar_city/mlab/ttower32: Correct pluralization on the shining
+	  amulets of repulsion in Western Navar Tavern, Level 32.
+
+2011-11-13 03:54  rjtanner
+
+	* navar_city/mlab/ttower32: Remove unnecessary name_pl references
+	  to Western Navar Tavern, Level 32. Technical change, no
+	  functional changes.
+
+2011-11-13 03:53  rjtanner
+
+	* navar_city/mlab/ttower17, navar_city/mlab/ttower26,
+	  navar_city/mlab/ttower28, navar_city/mlab/ttower33,
+	  navar_city/mlab/ttower34: Correct pluralization on various
+	  objects on multiple maps in Western Navar Tavern tower.
+
+2011-11-12 04:34  rjtanner
+
+	* navar_city/mlab/ttower16, navar_city/mlab/ttower17,
+	  navar_city/mlab/ttower18, navar_city/mlab/ttower19,
+	  navar_city/mlab/ttower20, navar_city/mlab/ttower21,
+	  navar_city/mlab/ttower22, navar_city/mlab/ttower23,
+	  navar_city/mlab/ttower24, navar_city/mlab/ttower25,
+	  navar_city/mlab/ttower26, navar_city/mlab/ttower27,
+	  navar_city/mlab/ttower28, navar_city/mlab/ttower29,
+	  navar_city/mlab/ttower30, navar_city/mlab/ttower31,
+	  navar_city/mlab/ttower32, navar_city/mlab/ttower33,
+	  navar_city/mlab/ttower34, navar_city/mlab/ttower35,
+	  navar_city/mlab/ttower36, navar_city/mlab/ttower37,
+	  navar_city/mlab/ttower38, navar_city/mlab/ttower39,
+	  navar_city/mlab/ttower40, navar_city/mlab/ttower41,
+	  navar_city/mlab/ttower42, navar_city/mlab/ttower43,
+	  navar_city/mlab/ttower44, navar_city/mlab/ttower45,
+	  navar_city/mlab/ttower8, navar_city/mlab/ttower9,
+	  navar_city/mlab/ttowerchoswld1, navar_city/mlab/zealothouse2:
+	  Remove unnecessary name_pl references to Western Navar Tavern,
+	  multiple levels. Technical change, no functional changes.
+
+2011-11-12 03:41  rjtanner
+
+	* navar_city/mlab/ttower15: Cosmetic change with how the fence
+	  sections merge with nearby walls in Western Navar Tavern, Level
+	  15.
+
+2011-11-12 03:34  rjtanner
+
+	* navar_city/mlab/ttower15: Change stacking order to move no
+	  spells, no magic and unholy ground tiles beneath the floor tiles
+	  in Western Navar Tavern, Level 15.
+
+2011-11-12 03:25  rjtanner
+
+	* navar_city/mlab/ttower15: Removed line breaks in message text to
+	  Western Navar Tavern, Level 15.
+
+2011-11-12 03:24  rjtanner
+
+	* navar_city/mlab/ttower15: Remove unnecessary name_pl references
+	  to Western Navar Tavern, Level 15. Technical change, no
+	  functional changes.
+
+2011-11-12 03:15  rjtanner
+
+	* navar_city/mlab/ttower14: Removed line breaks in message text to
+	  Western Navar Tavern, Level 14.
+
+2011-11-12 03:13  rjtanner
+
+	* navar_city/mlab/ttower14: Remove unnecessary name_pl references
+	  to Western Navar Tavern, Level 14. Technical change, no
+	  functional changes.
+
+2011-11-12 03:01  rjtanner
+
+	* navar_city/mlab/ttower13: Removed line breaks in message text to
+	  Western Navar Tavern, Level 13.
+
+2011-11-12 02:58  rjtanner
+
+	* navar_city/mlab/ttower13: Remove unnecessary name_pl references
+	  to Western Navar Tavern, Level 13. Technical change, no
+	  functional changes.
+
+2011-11-12 02:34  rjtanner
+
+	* navar_city/mlab/ttower12: Removed line breaks in message text and
+	  spelling mistake (enter, was entr) to Western Navar Tavern, Level
+	  12.
+
+2011-11-12 02:31  rjtanner
+
+	* navar_city/mlab/ttower11: Add short wall section between wood
+	  wall and castle wall for cosmetic purposes in Western Navar
+	  Tavern, Level 11.
+
+2011-11-12 02:29  rjtanner
+
+	* navar_city/mlab/ttower11: Removed line breaks in message text to
+	  Western Navar Tavern, Level 11.
+
+2011-11-12 02:27  rjtanner
+
+	* navar_city/mlab/ttower11: Remove unnecessary name_pl references
+	  to Western Navar Tavern, Level 11. Technical change, no
+	  functional changes.
+
+2011-11-12 02:26  rjtanner
+
+	* navar_city/mlab/ttower12: Remove unnecessary name_pl references
+	  to Western Navar Tavern, Level 12. Technical change, no
+	  functional changes.
+
+2011-11-11 23:48  rjtanner
+
+	* santo_dominion/sdgatehouse: Region correction for Santo Dominion
+	  Gatehouse (was santo dominion, now santodominion)
+
+2011-11-11 20:32  akirschbaum
+
+	* lake_country/Butakis/Rlib2, lake_country/Butakis/church-1,
+	  lake_country/Butakis/luck1, lake_country/Butakis/luck2,
+	  lake_country/Butakis/luck3, lake_country/Butakis/p_ghouse_w,
+	  lake_country/DA, lake_country/RETower/tower2,
+	  lake_country/RETower/tower3, lake_country/RETower/tower4,
+	  lake_country/ebony/entrance1, lake_country/ebony/entrance2,
+	  lake_country/ebony/masterlev,
+	  lake_country/small_buildings/portal,
+	  lake_country/small_buildings/sentrio_house,
+	  lake_country/snake_pit/Chaos_lair2,
+	  lake_country/snake_pit/Takuse_lair: Remove explicit linebreaks;
+	  fix typos.
+
+2011-11-11 10:05  ryo_saeba
+
+	* scorn/anthony/milton.msg: Format using CRE.
+
+2011-11-11 10:04  ryo_saeba
+
+	* scorn/shops/eswald.msg: Fix dialog.
+
+2011-11-11 09:52  ryo_saeba
+
+	* scorn/shops/oled.msg: Reformat with CRE.
+
+2011-11-11 09:52  ryo_saeba
+
+	* scorn/shops/eswald.msg: Take Esmeralda when completing the quest.
+
+2011-11-11 05:20  rjtanner
+
+	* navar_city/mlab/ttower10: Removed line breaks in message text to
+	  Western Navar Tavern, Level 10.
+
+2011-11-11 05:19  rjtanner
+
+	* navar_city/mlab/ttower10: Remove unnecessary name_pl references
+	  to Western Navar Tavern, Level 10. Technical change, no
+	  functional changes.
+
+2011-11-11 05:16  rjtanner
+
+	* navar_city/mlab/thehole: Cosmetic change to The Hole (navar.)
+	  Replaced some corner sections for nicer merging with nearby
+	  walls.
+
+2011-11-11 05:13  rjtanner
+
+	* navar_city/mlab/thehole: Change the stacking order of floor tiles
+	  in The Hole (navar) - no spells, no magic and unholy ground tiles
+	  are now under the ground and wall tiles.
+
+2011-11-11 04:57  rjtanner
+
+	* navar_city/mlab/tavernb4: Removed connection settings to prison
+	  gates that have no connected source in Wester Navar Tavern,
+	  Basement Level 4. Technical correction.
+
+2011-11-11 04:54  rjtanner
+
+	* navar_city/mlab/tavernb4: Cosmetic change to Western Navar
+	  Tavern, Basement Level 4. Replaced some corner sections for nicer
+	  merging with nearby walls.
+
+2011-11-11 04:47  rjtanner
+
+	* navar_city/mlab/tavernb4: Spelling correction on a sign in
+	  Western Navar Tavern, Basement Level 4 - was hol, is now hole.
+
+2011-11-11 04:46  rjtanner
+
+	* navar_city/mlab/tavernb4: Remove unnecessary name_pl references
+	  to Western Navar Tavern, Basement Level 4. Technical change, no
+	  functional changes.
+
+2011-11-11 04:44  rjtanner
+
+	* navar_city/mlab/tavernb3: Cosmetic change to Western Navar
+	  Tavern, Basement Level 3. Filled in empty areas with cave wall
+	  sections.
+
+2011-11-11 04:43  rjtanner
+
+	* navar_city/mlab/tavernb3: Cosmetic change to Western Navar
+	  Tavern, Basement Level 3. Replaced some corner sections for nicer
+	  merging with nearby walls.
+
+2011-11-11 04:42  rjtanner
+
+	* navar_city/mlab/tavernb3: Remove unnecessary name_pl references
+	  to Western Navar Tavern, Basement Level 3. Technical change, no
+	  functional changes.
+
+2011-11-11 04:36  rjtanner
+
+	* navar_city/mlab/tavernb1: Cosmetic change to Western Navar
+	  Tavern, Basement Level 1. Replaced some corner sections for nicer
+	  merging with nearby walls.
+
+2011-11-11 04:25  rjtanner
+
+	* navar_city/mlab/tavernb1: Cosmetic change to Western Navar
+	  Tavern, Basement Level 1. Filled in empty areas with cave wall
+	  sections.
+
+2011-11-11 04:24  rjtanner
+
+	* navar_city/mlab/tavernb2: Cosmetic change to Western Navar
+	  Tavern, Basement Level 2. Replaced some corner sections for nicer
+	  merging with nearby walls.
+
+2011-11-11 04:21  rjtanner
+
+	* navar_city/mlab/tavernb2: Cosmetic change to Western Navar
+	  Tavern, Basement Level 2. Replaced nothing tiles with cave wall
+	  tiles.
+
+2011-11-11 04:17  rjtanner
+
+	* navar_city/mlab/tavernb2: Remove unnecessary name_pl references
+	  to Western Navar Tavern, Basement Level 2. Technical change, no
+	  functional changes.
+
+2011-11-10 07:44  rjtanner
+
+	* navar_city/mlab/tavernb1: Removed line breaks in message text to
+	  Western Navar Tavern, Basement Level 1.
+
+2011-11-10 07:37  rjtanner
+
+	* navar_city/mlab/tavernb1: Correct and remove unnecessary name_pl
+	  references to Western Navar Tavern, Basement Level 1. Technical
+	  change, no functional changes.
+
+2011-11-10 07:31  rjtanner
+
+	* navar_city/mlab/tavern7: Removed line breaks in message text to
+	  Western Navar Tavern, Level 7.
+
+2011-11-10 07:29  rjtanner
+
+	* navar_city/mlab/tavern7: Remove unnecessary name_pl references to
+	  Western Navar Tavern, Level 7. Technical change, no functional
+	  changes.
+
+2011-11-10 07:26  rjtanner
+
+	* navar_city/mlab/tavern6: Remove unnecessary name_pl references to
+	  Western Navar Tavern, Level 6. Technical change, no functional
+	  changes.
+
+2011-11-10 07:23  rjtanner
+
+	* navar_city/mlab/tavern5: Remove more unnecessary name_pl
+	  references to Western Navar Tavern, Level 5. Technical change, no
+	  functional changes.
+
+2011-11-10 07:21  rjtanner
+
+	* navar_city/mlab/tavern5: Remove unnecessary name_pl references to
+	  Western Navar Tavern, Level 5. Technical change, no functional
+	  changes.
+
+2011-11-10 07:19  rjtanner
+
+	* navar_city/mlab/tavern4: Removed line breaks in message text to
+	  Western Navar Tavern, Level 4.
+
+2011-11-10 07:17  rjtanner
+
+	* navar_city/mlab/tavern4: Remove unnecessary name_pl references to
+	  Western Navar Tavern, Level 4. Technical change, no functional
+	  changes.
+
+2011-11-10 07:09  rjtanner
+
+	* navar_city/mlab/tavern3: Remove unnecessary name_pl references to
+	  Western Navar Tavern, Level 3. Technical change, no functional
+	  changes.
+
+2011-11-10 07:04  rjtanner
+
+	* navar_city/mlab/tavern: Remove real world(tm) reference to NPC in
+	  Western Navar Tavern, Mainfloor. Technical change, no functional
+	  changes.
+
+2011-11-10 07:02  rjtanner
+
+	* navar_city/mlab/tavern: Remove more unnecessary name_pl
+	  references to Western Navar Tavern, Mainfloor. Technical change,
+	  no functional changes.
+
+2011-11-10 06:58  rjtanner
+
+	* navar_city/mlab/tavern2: Removed line break in message text to
+	  Western Navar Tavern, Level 2.
+
+2011-11-10 06:53  rjtanner
+
+	* navar_city/mlab/tavern2: Correct and remove unnecessary name_pl
+	  references to Western Navar Tavern, Level 2. Technical change, no
+	  functional changes.
+
+2011-11-10 06:44  rjtanner
+
+	* navar_city/mlab/tavern: Removed line break in message text to
+	  Western Navar Tavern, Mainfloor in Navar.
+
+2011-11-10 06:34  rjtanner
+
+	* navar_city/mlab/tavern: Correct and remove unnecessary name_pl
+	  references to Western Navar Tavern, Mainfloor. Technical change,
+	  no functional changes.
+
+2011-11-10 06:23  rjtanner
+
+	* navar_city/mlab/tadobebuild3: Removed line break in message text
+	  to Adobe Building, Level 3 in Navar.
+
+2011-11-10 06:21  rjtanner
+
+	* navar_city/mlab/tadobebuild3: Remove unnecessary name_pl
+	  references to Adobe Building, Level 3 in Navar. Technical change,
+	  no functional changes.
+
+2011-11-10 06:19  rjtanner
+
+	* navar_city/mlab/tadobebuild2: Remove unnecessary name_pl
+	  references to Adobe Building, Level 2 in Navar. Technical change,
+	  no functional changes.
+
+2011-11-10 06:18  rjtanner
+
+	* navar_city/mlab/dream: Remove unnecessary name_pl references to
+	  Dream in Navar. Technical change, no functional changes.
+
+2011-11-10 06:13  rjtanner
+
+	* navar_city/misc/theaterb3: Remove unnecessary name_pl references
+	  to the Civic Theater, Lower Level 3 in Navar. Technical change,
+	  no functional changes.
+
+2011-11-10 06:11  rjtanner
+
+	* navar_city/misc/theater4: Remove unnecessary name_pl references
+	  to the Civic Theater, rooftop in Navar. Technical change, no
+	  functional changes.
+
+2011-11-10 06:09  rjtanner
+
+	* navar_city/misc/theater3: Remove unnecessary name_pl references
+	  to the Civic Theater, 3rd Floor in Navar. Technical change, no
+	  functional changes.
+
+2011-11-10 06:06  rjtanner
+
+	* navar_city/misc/theater2: Remove unnecessary name_pl references
+	  to the Civic Theater, 2nd Floor in Navar. Technical change, no
+	  functional changes.
+
+2011-11-10 06:03  rjtanner
+
+	* navar_city/misc/theater: Remove unnecessary name_pl reference to
+	  the Civic Theater, Ground Floor in Navar. Technical change, no
+	  functional changes.
+
+2011-11-10 05:46  rjtanner
+
+	* navar_city/misc/thamshop: Remove unnecessary name_pl references
+	  in Strange Little Store (thamshop) in Navar. Technical change, no
+	  functional changes.
+
+2011-11-10 05:44  rjtanner
+
+	* navar_city/misc/tannery: Remove unnecessary name_pl references in
+	  Tannery of Navar. Technical change, no functional changes.
+
+2011-11-10 05:40  rjtanner
+
+	* navar_city/misc/jeweler: Remove unnecessary name_pl references in
+	  Jeweler's Workshop of Navar. Technical change, no functional
+	  changes.
+
+2011-11-10 05:38  rjtanner
+
+	* navar_city/misc/IPO_navar: Removed line breaks in message text to
+	  Navar Imperial Post Office.
+
+2011-11-10 05:36  rjtanner
+
+	* navar_city/misc/IPO_navar: Correct and remove unnecessary name_pl
+	  references to Navar Imperial Post Office.
+
+2011-11-10 05:32  rjtanner
+
+	* navar_city/misc/city1smith: Removed line breaks in message text
+	  to Gunther's Smithy in Navar.
+
+2011-11-10 05:31  rjtanner
+
+	* navar_city/misc/city1smith: Remove unnecessary name_pl references
+	  in Gunther's Smithy. Technical change, no functional changes.
+
+2011-11-10 05:29  rjtanner
+
+	* navar_city/misc/city1bank: Spelling correction for the account
+	  manager NPC (was acount) in Bank of Skud, Navar Branch.
+
+2011-11-10 05:24  rjtanner
+
+	* navar_city/misc/city1bank: Remove unnecessary name_pl references
+	  in Bank of Skud, Navar Branch. Technical change, no functional
+	  changes.
+
+2011-11-09 06:32  rjtanner
+
+	* navar_city/misc/aliscave: Changes with the cave walls to make
+	  nicer merging in Ali's Cave in Navar. Comsetic change, no
+	  functional changes.
+
+2011-11-09 06:20  rjtanner
+
+	* navar_city/misc/aliswell: Corrected name_pl reference (was plug,
+	  now plugs) to Ali's Well in Navar.
+
+2011-11-09 06:16  rjtanner
+
+	* navar_city/misc/aliscave: Removed line breaks in message text to
+	  Ali's Cave in Navar.
+
+2011-11-09 06:14  rjtanner
+
+	* navar_city/misc/aliscave: Correct name_pl reference (turbans, was
+	  turban) in Ali's Cave in Navar.
+
+2011-11-09 06:12  rjtanner
+
+	* navar_city/jail/jail: Correct and remove unnecessary name_pl
+	  references to Navar Jail, Entrance. Technical change, no
+	  functional changes.
+
+2011-11-09 06:08  rjtanner
+
+	* navar_city/illusion/illexit: Removed references to name_pl in
+	  Tower of Illusion, Exit in Navar. Technical change, no functional
+	  changes.
+
+2011-11-09 06:05  rjtanner
+
+	* navar_city/city1houses: Removed line breaks in message text to
+	  Navar City Houses (city1houses)
+
+2011-11-09 06:04  rjtanner
+
+	* navar_city/city1houses: Removed references to name_pl in Navar
+	  City Houses (city1houses.) Technical change, no functional
+	  changes.
+
+2011-11-09 06:02  rjtanner
+
+	* navar_city/city1enter: Update name_pl reference to Strange Book
+	  (now Books) in the Navar Gatehouse.
+
+2011-11-09 05:56  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillaC3: Removed references
+	  to name_pl in City de Clouds Villa, 4th Floor
+	  (citydecloudsvillaC3.) Technical change, no functional changes.
+
+2011-11-09 05:44  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillaC2: Removed references
+	  to name_pl in City de Clouds Villa, 3rd Floor
+	  (citydecloudsvillaC2.) Technical change, no functional changes.
+
+2011-11-09 05:38  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillaC1: Removed references
+	  to name_pl in City de Clouds Villa, 2nd Floor
+	  (citydecloudsvillaC1), update plural names where it was needed.
+	  Technical change, no functional changes.
+
+2011-11-09 05:28  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillab3: Remove a small
+	  button that had no connection on the map in City de Clouds Villa,
+	  Basement Level 3 (citydecloudsvillab3.) Technical change, no
+	  functional changes.
+
+2011-11-09 05:27  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillab3: Removed grass tiles
+	  that were under floor tiles in the upper left of the map in City
+	  de Clouds Villa, Basement Level 3 (citydecloudsvillab3.)
+	  Technical change, no functional changes.
+
+2011-11-09 05:26  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillab3: Fix castle wall
+	  (cwall) merging issue in the lower right corner of the map in
+	  City de Clouds Villa, Basement Level 3 (citydecloudsvillab3.)
+	  Technical change, no functional changes.
+
+2011-11-09 05:23  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillab3: Removed references
+	  to name_pl in City de Clouds Villa, Basement Level 3
+	  (citydecloudsvillab3.) Technical change, no functional changes.
+
+2011-11-09 05:14  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillab1: Cosmetic change with
+	  how fence (swall) sections merge with nearby walls in City de
+	  Clouds Villa, Basement Level 1 (citydeclouds)
+
+2011-11-08 05:54  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillab2: Removed references
+	  to name_pl in City de Clouds Villa, Basement Level 2
+	  (citydecloudsvillab2.) Technical change, no functional changes.
+
+2011-11-08 05:51  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillab1: Removed references
+	  to name_pl in City de Clouds Villa, Basement Level 1
+	  (citydecloudsvillab1.) Technical change, no functional changes.
+
+2011-11-08 05:47  rjtanner
+
+	* mlab/citydeclouds/temples/valriel: Cosmetic change with how fence
+	  (swall) sections merge with nearby walls in Shrine to Valriel
+	  (citydeclouds)
+
+2011-11-08 05:44  rjtanner
+
+	* mlab/citydeclouds/temples/valriel: Removed references to name_pl
+	  to the Shrine of Valriel, update plural names where it was
+	  needed. Technical change, no functional changes.
+
+2011-11-08 05:42  rjtanner
+
+	* mlab/citydeclouds/shops/cwdctrademarket: Removed line breaks in
+	  message text to Trader Joe's Trademarket (cwdctrademarket)
+
+2011-11-08 05:39  rjtanner
+
+	* mlab/citydeclouds/shops/cwdcgenshop1: Removed fence sections from
+	  under the tables in City de Clouds General Shop, set the tables
+	  to block all movement. Technical change, no functional changes.
+
+2011-11-08 05:32  rjtanner
+
+	* mlab/citydeclouds/shops/cwdckitchen: Removed line breaks in
+	  message text to City de Clouds Kitchen (cwdckitchen)
+
+2011-11-08 05:30  rjtanner
+
+	* mlab/citydeclouds/shops/cwdckitchen: Removed references to
+	  name_pl in City de Clouds Kitchen (cwdckitchen), update plural
+	  names where it was needed. Technical change, no functional
+	  changes.
+
+2011-11-08 05:28  rjtanner
+
+	* mlab/citydeclouds/shops/cwdcgenshop1: Removed references to
+	  name_pl to the City de Clouds General Shop (cwdcgenshop1.)
+	  Technical change, no functional changes.
+
+2011-11-08 05:26  rjtanner
+
+	* mlab/citydeclouds/shops/cdcwcafe1: Removed references to name_pl
+	  to the Snow Cloud Cafe (cdcwcafe1.) Technical change, no
+	  functional changes.
+
+2011-11-08 05:23  rjtanner
+
+	* mlab/citydeclouds/shops/cwdcpotionshop1: Removed references to
+	  name_pl to the Potion Shop (cwdcpotionshop1.) Technical change,
+	  no functional changes.
+
+2011-11-08 01:40  rjtanner
+
+	* wolfsburg/magara/tower1/floor_3: Correct typo in the map title to
+	  Old Tower, Cellar Level 2 (was Level2) in Wolfsburg.
+
+2011-11-07 07:17  rjtanner
+
+	* mlab/citydeclouds/misc/cwdcchessarenab2: Removed references to
+	  name_pl in Chess Collesium, Balcony (cwdcchessarenab2.) Technical
+	  change, no functional changes.
+
+2011-11-07 07:14  rjtanner
+
+	* mlab/citydeclouds/misc/cwdcchessarenaa2: Removed references to
+	  name_pl in Chess Collesium, Entrance (cwdcchessarenaa2.)
+	  Technical change, no functional changes.
+
+2011-11-07 07:08  rjtanner
+
+	* mlab/citydeclouds/misc/cwdcchessarenaa1: Removed references to
+	  name_pl in Chess Collesium (cwdcchessarenaa1.) Technical change,
+	  no functional changes.
+
+2011-11-07 06:59  rjtanner
+
+	* mlab/citydeclouds/IPO_citydeclouds: Removed line breaks in
+	  message text to City de Clouds IPO.
+
+2011-11-07 06:51  rjtanner
+
+	* mlab/citydeclouds/IPO_citydeclouds: Removed references to name_pl
+	  in City de Clouds IPO, update plural names where it was needed.
+	  Technical change, no functional changes.
+
+2011-11-07 06:30  rjtanner
+
+	* mlab/citydeclouds/cwdcguestofmarquis1: Removed line breaks in
+	  message text to Guest of the Marquis.
+
+2011-11-07 06:26  rjtanner
+
+	* mlab/citydeclouds/cwdcguestofmarquis1: Removed references to
+	  name_pl in Guest of the Marquis, update plural names where it was
+	  needed. Technical change, no functional changes.
+
+2011-11-07 06:10  rjtanner
+
+	* mlab/citydeclouds/cloudworlddecity: Removed line breaks in
+	  message text Cloud World de City.
+
+2011-11-07 06:01  rjtanner
+
+	* mlab/citydeclouds/cloudworlddecity: Removed references to name_pl
+	  in Cloud World de City. Technical change, no functional changes.
+
+2011-11-07 05:57  rjtanner
+
+	* mlab/citydeclouds/citydecloudsC: Cosmetic change with how fence
+	  (swall) sections merge with nearby walls in City de Clouds
+	  (citydecloudsC).
+
+2011-11-07 05:52  rjtanner
+
+	* mlab/citydeclouds/citydecloudsC: Removed references to name_pl in
+	  City de Clouds (citydecloudsC). Technical change, no functional
+	  changes.
+
+2011-11-06 21:28  ryo_saeba
+
+	* python/guilds/bigchest.py: Clean script.
+
+2011-11-06 19:57  ryo_saeba
+
+	* lake_country/small_buildings/burial_ground: Replace floor
+	  blocking view and making the tile black with a statue.
+
+2011-11-06 18:15  akirschbaum
+
+	* world/world_109_126: Fix transition rule for Undead Catacomb
+	  quest.
+
+2011-11-06 18:13  akirschbaum
+
+	* lake_country/lake_country.quests,
+	  lake_country/small_buildings/hut_Galmorus, world.quests,
+	  world/world_109_126: Add quest for Undead Catacomb in Lake
+	  Country.
+
+2011-11-06 16:33  ryo_saeba
+
+	* pup_land/lone_town/town, pup_land/nurnberg/castle: Fix archetype.
+
+2011-11-06 04:02  rjtanner
+
+	* mlab/citydeclouds/citydecloudsB: Removed references to name_pl in
+	  City de Clouds (citydecloudsB). Technical change, no functional
+	  changes.
+
+2011-11-06 03:59  rjtanner
+
+	* mlab/citydeclouds/citydecloudsA: Removed references to name_pl in
+	  City de Clouds (citydecloudsA). Technical change, no functional
+	  changes.
+
+2011-11-06 03:54  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2I: Removed line breaks in message
+	  text in City de Clouds (citydeclouds2I)
+
+2011-11-06 03:50  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2I: Removed references to name_pl
+	  in City de Clouds (citydeclouds2I). Technical change, no
+	  functional changes.
+
+2011-11-06 03:43  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2G: Removed references to name_pl
+	  in City de Clouds (citydeclouds2G). Technical change, no
+	  functional changes.
+
+2011-11-06 01:25  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2H: Removed line breaks in message
+	  text in City de Clouds (citydeclouds2H)
+
+2011-11-06 01:24  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2H: Removed references to name_pl
+	  in City de Clouds (citydeclouds2H). Technical change, no
+	  functional changes.
+
+2011-11-06 01:16  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2F: Removed line breaks in message
+	  text in City de Clouds (citydeclouds2F)
+
+2011-11-06 01:15  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2F: Removed references to name_pl
+	  in City de Clouds (citydeclouds2F). Technical change, no
+	  functional changes.
+
+2011-11-06 01:12  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2E: Removed line breaks in message
+	  text in City de Clouds (citydeclouds2E)
+
+2011-11-06 01:11  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2E: Removed references to name_pl
+	  in City de Clouds (citydeclouds2E), update plural names where it
+	  was needed. Technical change, no functional changes.
+
+2011-11-06 01:06  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2D: Removed references to name_pl
+	  in City de Clouds (citydeclouds2D). Technical change, no
+	  functional changes.
+
+2011-11-06 01:03  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2B: Removed line breaks in message
+	  text in City de Clouds.
+
+2011-11-06 01:01  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2C: Removed line breaks in message
+	  text in City de Clouds.
+
+2011-11-06 00:58  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2C: Removed references to name_pl
+	  in City de Clouds, update plural names where it was needed.
+	  Technical change, no functional changes.
+
+2011-11-06 00:54  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2B: Removed references to name_pl
+	  in City de Clouds, update plural names where it was needed.
+	  Technical change, no functional changes.
+
+2011-11-06 00:49  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2A: Removed line breaks in message
+	  text and npc dialogue in City de Clouds.
+
+2011-11-06 00:45  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2A: Removed references to name_pl
+	  in City de Clouds, update plural names where it was needed.
+	  Technical change, no functional changes.
+
+2011-11-06 00:36  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  brest/black_shield/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  euthville/green_goblin/secondfloor,
+	  lake_country/Butakis/mockers/secondfloor,
+	  navar_city/dreaming_sage/secondfloor,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  scorn/guilds/mailed_fist/secondfloor,
+	  wolfsburg/guilds/damned_heretics/secondfloor: Merge in changes
+	  from the guild template (r14506) to fix the connection to the
+	  inventory check for the Guild Tannery Token and the gate. Update
+	  applied to all guild maps secondfloor.
+
+2011-11-06 00:05  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  brest/black_shield/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  euthville/green_goblin/secondfloor,
+	  lake_country/Butakis/mockers/secondfloor,
+	  navar_city/dreaming_sage/secondfloor,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  wolfsburg/guilds/damned_heretics/secondfloor: Merge in changes
+	  from the guild template (r15443) to fix infinite pedestal
+	  stacking in all guild maps.
+
+2011-11-05 22:54  rjtanner
+
+	* pup_land/guilds/purple_butterfly/secondfloor: Merge in guild
+	  secondfloor changes originally from r15455, but missed on r15449.
+	  Removed redundant floor tiles under some of the gates.
+
+2011-11-05 22:37  akirschbaum
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_toolshed,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_toolshed,
+	  azumauindo/suno-yamatoshi/nenshou_youso/mainfloor,
+	  azumauindo/zaseki_dzuki_ryoku/guild_toolshed,
+	  azumauindo/zaseki_dzuki_ryoku/mainfloor,
+	  brest/black_shield/ground, brest/black_shield/guild_toolshed,
+	  brest/black_shield/mainfloor, brest/pshops/ugriver1,
+	  darcap/darcap/circus/illusions,
+	  darcap/darcap/guilds/poisoned_dagger/ground,
+	  darcap/darcap/guilds/poisoned_dagger/guild_toolshed,
+	  darcap/darcap/guilds/poisoned_dagger/mainfloor,
+	  darcap/darcap/guilds/smoking_cauldron/ground,
+	  darcap/darcap/guilds/smoking_cauldron/guild_toolshed,
+	  darcap/darcap/guilds/smoking_cauldron/mainfloor,
+	  darcap/pygmy_forest/pygmy_forest_a, dragonisland/housebrxzl,
+	  editor/pickmaps/river, euthville/green_goblin/guild_toolshed,
+	  euthville/green_goblin/mainfloor,
+	  lake_country/Butakis/mockers/guild_toolshed,
+	  lake_country/Butakis/mockers/mainfloor,
+	  navar_city/dreaming_sage/ground,
+	  navar_city/dreaming_sage/guild_toolshed,
+	  navar_city/dreaming_sage/mainfloor, navar_city/misc/buildshop,
+	  navar_city/mlab/tavernb4, port_joseph/pirates/fortvsship,
+	  pup_land/ancient/world, pup_land/guilds/laughing_skull/ground,
+	  pup_land/guilds/laughing_skull/guild_toolshed,
+	  pup_land/guilds/laughing_skull/mainfloor,
+	  pup_land/guilds/purple_butterfly/ground,
+	  pup_land/guilds/purple_butterfly/guild_toolshed,
+	  pup_land/guilds/purple_butterfly/mainfloor,
+	  pup_land/lone_town/town, pup_land/nurnberg/castle,
+	  pup_land/nurnberg/city,
+	  santo_dominion/guilds/drunken_barbarian/ground,
+	  santo_dominion/guilds/drunken_barbarian/guild_toolshed,
+	  santo_dominion/guilds/drunken_barbarian/mainfloor,
+	  santo_dominion/magara/well/cave, santo_dominion/magara/well/top,
+	  santo_dominion/mudman/mudman.1, santo_dominion/mudman/mudman.2,
+	  santo_dominion/mudman/mudman.3, scorn/guilds/mailed_fist/ground,
+	  scorn/guilds/mailed_fist/guild_toolshed,
+	  scorn/guilds/mailed_fist/mainfloor,
+	  scorn/guilds/mailed_fist/storage_hall, scorn/houses/house3.bas2,
+	  scorn/temples/gaea, templates/guild/guild_toolshed,
+	  templates/guild/mainfloor, templates/guild/storage_hall,
+	  unlinked/Fogs, unlinked/forgotten_town/city,
+	  unlinked/kandora/cave/m_inn, unlinked/kandora/cave/mithril,
+	  unlinked/kandora/circus/mp_world,
+	  unlinked/kandora/elcyon/old_temple, unlinked/kandora/kandora,
+	  wolfsburg/dungeons/piratedung, wolfsburg/dungeons/underworld,
+	  wolfsburg/guilds/damned_heretics/ground,
+	  wolfsburg/guilds/damned_heretics/guild_toolshed,
+	  wolfsburg/guilds/damned_heretics/mainfloor, world/world_100_114,
+	  world/world_100_116, world/world_103_110, world/world_104_115,
+	  world/world_104_116, world/world_107_123, world/world_109_111,
+	  world/world_109_112, world/world_109_115, world/world_109_126,
+	  world/world_110_113, world/world_110_114, world/world_110_115,
+	  world/world_111_113, world/world_120_109, world/world_121_117,
+	  world/world_122_117: Adapt to renamed archetype names.
+
+2011-11-05 22:34  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  brest/black_shield/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  euthville/green_goblin/secondfloor,
+	  lake_country/Butakis/mockers/secondfloor,
+	  navar_city/dreaming_sage/secondfloor,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  templates/guild/secondfloor,
+	  wolfsburg/guilds/damned_heretics/secondfloor: Removed redundant
+	  floor tiles to all guild maps as found in the template (r15445),
+	  plus removal of newly found redundant floor tiles under some of
+	  the gates to all guild maps and template.
+
+2011-11-05 19:35  ryo_saeba
+
+	* templates/guild/secondfloor: Remove redundant tiles.
+
+2011-11-05 19:19  ryo_saeba
+
+	* templates/guild/GuildLocations, templates/guild/convert.py: Add
+	  guild names so it can be set.
+
+2011-11-05 19:04  ryo_saeba
+
+	* templates/guild/secondfloor: Fix infinite pedestal stacking.
+
+2011-11-05 03:44  rjtanner
+
+	* mlab/citydeclouds/cdcwgrotto1: Cosmetic change with how fence
+	  (swall) sections merge with nearby walls in Crill's Projectile
+	  Store.
+
+2011-11-05 03:43  rjtanner
+
+	* mlab/citydeclouds/cdcwgrotto1: Removed line breaks in Crill's
+	  message text in Crill's Projectile Store.
+
+2011-11-05 03:38  rjtanner
+
+	* mlab/citydeclouds/cdcwgrotto1: Removed references to name_pl in
+	  Crill's Projectile Store. Technical change, no functional
+	  changes.
+
+2011-11-05 03:31  rjtanner
+
+	* mlab/citydeclouds/cdcspire/cdcspireexit1: Removed references to
+	  name_pl in City de Clouds Spire, Apex. Technical change, no
+	  functional changes.
+
+2011-11-05 03:12  rjtanner
+
+	* mlab/citydeclouds/cdcscasino: Removed references to name_pl in
+	  City de Clouds Casino. Technical change, no functional changes.
+
+2011-11-05 03:08  rjtanner
+
+	* mlab/citydeclouds/cdcnwgateuprlv1: Removed references to name_pl
+	  in City de Clouds Northwest Gate. Technical change, no functional
+	  changes.
+
+2011-11-05 02:42  rjtanner
+
+	* mlab/citydeclouds/cdcgatea2: Removed references to name_pl in
+	  City de Clouds Gate, Rooftop. Technical change, no functional
+	  changes.
+
+2011-11-05 02:27  rjtanner
+
+	* mlab/citydeclouds/cdccourthsuplvl1: Cosmetic change with how
+	  fence (swall) sections merge with nearby walls in City de Clouds
+	  Court House.
+
+2011-11-05 02:10  rjtanner
+
+	* mlab/citydeclouds/cdccourthsuplvl1: Removed references to name_pl
+	  in City de Clouds Court House. Technical change, no functional
+	  changes.
+
+2011-11-05 02:06  rjtanner
+
+	* mlab/citydeclouds/cdccloudre1: Update key value for the locked
+	  door to something unique (vs the default value - which map editor
+	  warned about) in City de Clouds Real Estate INC. Technical
+	  change, no functional changes.
+
+2011-11-05 01:58  rjtanner
+
+	* mlab/citydeclouds/cdccloudre1: Removed line break in the Real
+	  Estake Broker's dialogue text in City de Clouds Real Estate INC.
+
+2011-11-05 01:55  rjtanner
+
+	* mlab/citydeclouds/cdccloudre1: Removed references to name_pl in
+	  City de Clouds Real Estate INC. Technical change, no functional
+	  changes.
+
+2011-11-04 05:30  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeepb1: Cosmetic change
+	  with how fence (swall) sections merge with nearby walls in City
+	  de Clouds Castle Keep, Prison.
+
+2011-11-04 05:28  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeepb1: Removed
+	  references to name_pl in City de Clouds Castle Keep, Prison.
+	  Technical change, no functional changes.
+
+2011-11-04 05:26  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep4: Cosmetic change
+	  with how fence (swall) sections merge with nearby walls in City
+	  de Clouds Castle Keep, Level 4.
+
+2011-11-04 05:25  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep4: Removed line
+	  break in dwarf envoy msg text in City de Clouds Castle Keep,
+	  Level 4.
+
+2011-11-04 05:23  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep4: Removed
+	  references to name_pl in City de Clouds Castle Keep, Level 4.
+	  Technical change, no functional changes.
+
+2011-11-04 05:21  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep2: Removed
+	  unconnected/orphaned pedestal trigeger from under the stairs
+	  going up in City de Clouds Castle Keep, Level 2.
+
+2011-11-04 05:20  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep3: Removed
+	  unconnected/orphaned pedestal trigeger from under the stairs
+	  going up in City de Clouds Castle Keep, Level 3.
+
+2011-11-04 05:19  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep3: Cosmetic change
+	  with how fence (swall) sections merge with nearby walls in City
+	  de Clouds Castle Keep, Level 3.
+
+2011-11-04 05:16  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep3: Removed
+	  references to name_pl in City de Clouds Castle Keep, Level 3.
+	  Technical change, no functional changes.
+
+2011-11-04 05:15  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep2: Removed more
+	  fence (swall) sections from underneath the mine wall sections in
+	  in City de Clouds Castle Keep, Level 2. Technical change, no
+	  functional changes.
+
+2011-11-04 05:13  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep2: Removed fence
+	  (swall) sections from underneath the woodwalls and mine0 sections
+	  in in City de Clouds Castle Keep, Level 2. Technical change, no
+	  functional changes.
+
+2011-11-04 05:11  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep2: Removed
+	  references to name_pl in City de Clouds Castle Keep, Level 2.
+	  Technical change, no functional changes.
+
+2011-11-04 05:08  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep1: Cosmetic change
+	  with how fence (swall) sections merge with nearby walls in City
+	  de Clouds Castle Keep, Level 1.
+
+2011-11-04 05:07  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep1: Removed
+	  references to name_pl in City de Clouds Castle Keep, Level 1.
+	  Technical change, no functional changes.
+
+2011-11-04 05:03  rjtanner
+
+	* mlab/citydeclouds/cdcbigstore/cdcbigstore2f: Remove line break in
+	  the Jeweler msg text in the City de Clouds Big Store.
+
+2011-11-04 05:02  rjtanner
+
+	* mlab/citydeclouds/cdcbigstore/cdcbigstore2f: Add a missing floor
+	  tile under a shop patron to City de Clouds Big Store.
+
+2011-11-04 05:01  rjtanner
+
+	* mlab/citydeclouds/cdcbigstore/cdcbigstore2f: Remove some of the
+	  name_pl (floor, Jeweler) references in the City de Clouds Big
+	  Store.
+
+2011-11-04 04:54  rjtanner
+
+	* mlab/citydeclouds/cdcapart2: Removed references to name_pl in
+	  Ctiy de Clouds Apartment, 2nd Floor. Technical change, no
+	  functional changes.
+
+2011-11-04 04:37  rjtanner
+
+	* mlab/citydeclouds/cdcapart1: Update with how fence sections merge
+	  with nearby walls in Ctiy de Clouds Apartment, 1st Floor.
+
+2011-11-04 04:36  rjtanner
+
+	* mlab/citydeclouds/cdcapart1: Removed references to name_pl in
+	  Ctiy de Clouds Apartment, 1st Floor. Technical change, no
+	  functional changes.
+
+2011-11-04 04:32  rjtanner
+
+	* scorn/shops/scorn.sale1: Update Scorn Sale Shop name (was shop) -
+	  world map already matched the name.
+
+2011-11-04 04:26  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleofmarquisb1: Removed
+	  references to name_pl in Castle of the Marquis, Basement.
+	  Technical change, no functional changes.
+
+2011-11-04 04:25  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleofmarquis5: Removed references
+	  to name_pl in Castle of the Marquis, Level 5. Technical change,
+	  no functional changes.
+
+2011-11-04 04:24  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleofmarquis4: Removed references
+	  to name_pl in Castle of the Marquis, Level 4. Technical change,
+	  no functional changes.
+
+2011-11-04 04:22  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleofmarquis3: Removed references
+	  to name_pl in Castle of the Marquis, Level 3. Technical change,
+	  no functional changes.
+
+2011-11-04 00:36  rjtanner
+
+	* world/world_105_116: Update Scorn General Store name (was store,
+	  now Store) in the world map - missed in previous commit.
+
+2011-11-04 00:34  rjtanner
+
+	* scorn/shops/generalshop: Name update to the Scorn General Store
+	  (was store, now Store.)
+
+2011-11-03 03:36  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleofmarquis2: Removed references
+	  to name_pl in Castle of the Marquis, Level 2. Technical change,
+	  no functional changes.
+
+2011-11-03 03:35  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleofmarquis1: Removed references
+	  to name_pl in Castle of the Marquis, Entrance. Technical change,
+	  no functional changes.
+
+2011-11-03 03:32  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef5: Removed line breaks and
+	  irrelevant content in NPC msg txt to Cloud World Castle, Level 5.
+
+2011-11-03 03:27  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef5: Removed references to
+	  name_pl in Cloud World Castle, Level 5. Technical change, no
+	  functional changes.
+
+2011-11-03 03:25  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef4: Removed references to
+	  name_pl in Cloud World Castle, Level 4. Technical change, no
+	  functional changes.
+
+2011-11-03 03:22  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef2: Update with how fence
+	  (swall) sections merge with nearby walls in Cloud World Castle,
+	  Level 2. Cosmetic change, no functional changes.
+
+2011-11-03 03:20  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef3: Update with how fence
+	  (swall) sections merge with nearby walls in Cloud World Castle,
+	  Level 3. Cosmetic change, no functional changes.
+
+2011-11-03 03:15  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef3: Removed references to
+	  name_pl in Cloud World Castle, Level 3. Technical change, no
+	  functional changes.
+
+2011-11-03 03:13  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef2: Fill in portion of an
+	  empty row of nothing (upper right) with more blocked archetypes
+	  in Cloud World Castle, Level 2.
+
+2011-11-03 03:11  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef2: Removed references to
+	  name_pl in Cloud World Castle, Level 2. Technical change, no
+	  functional changes.
+
+2011-11-02 05:53  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef1: Removed references to
+	  name_pl in Cloud World Castle. Technical change, no functional
+	  changes.
+
+2011-11-02 05:42  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlechoswld1: Removed references
+	  to name_pl in Cloud World Castle -- Chaos World. Technical
+	  change, no functional changes.
+
+2011-11-02 05:40  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb8: Replaced some of the
+	  blocked archetypes with solid stone (cave wall) in Cloud World
+	  Castle, Dungeon Level 8. Cosmetic change only, no functional
+	  changes.
+
+2011-11-02 05:14  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb8: Removed references to
+	  name_pl in Castle de Clouds, Dungeon Level 8. Technical change,
+	  no functional changes.
+
+2011-11-02 05:13  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb7: Replaced some of the
+	  blocked archetypes with solid stone (cave wall) in Cloud World
+	  Castle, Dungeon Level 7. Cosmetic change only, no functional
+	  changes.
+
+2011-11-02 04:16  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb7: Removed references to
+	  name_pl in Castle de Clouds, Dungeon Level 7. Technical change,
+	  no functional changes.
+
+2011-11-02 04:14  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb6: Replaced some of the
+	  blocked archetypes with solid stone (cave wall) in Cloud World
+	  Castle, Dungeon Level 6. Cosmetic change only, no functional
+	  changes.
+
+2011-11-02 03:58  rjtanner
+
+	* scorn/shops/BasicSpells: Added the sorcery grimoire Sparkshower
+	  as one of the books for sale at Mosely's Magic Books in Scorn.
+
+2011-11-01 16:40  ryo_saeba
+
+	* test/python.py: Test for the 'NoSave' property.
+
+2011-11-01 06:27  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb6: Removed references to
+	  name_pl in Castle de Clouds, Dungeon Level 6. Technical change,
+	  no functional changes.
+
+2011-11-01 06:26  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb5: Replaced some of the
+	  blocked archetypes with solid stone (cave wall) in Cloud World
+	  Castle, Dungeon Level 5. Cosmetic change only, no functional
+	  changes.
+
+2011-11-01 06:18  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb5: Removed references to
+	  name_pl in Castle de Clouds, Dungeon Level 5. Technical change,
+	  no functional changes.
+
+2011-11-01 06:17  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb4: Replaced some of the
+	  blocked archetypes with solid stone (cave wall) in Cloud World
+	  Castle, Dungeon Level 4. Cosmetic change only, no functional
+	  changes.
+
+2011-11-01 05:57  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb4: Removed references to
+	  name_pl in Castle de Clouds, Dungeon Level 4. Technical change,
+	  no functional changes.
+
+2011-11-01 05:52  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb3: Replaced some of the
+	  blocked archetypes with solid stone (cave wall) in Cloud World
+	  Castle, Dungeon Level 3. Cosmetic change only, no functional
+	  changes.
+
+2011-11-01 05:34  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb3: Removed references to
+	  name_pl in Castle de Clouds, Dungeon Level 3. Technical change,
+	  no functional changes.
+
+2011-11-01 05:31  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb1: Replaced some of the
+	  blocked archetypes with solid stone (cave wall) in Cloud World
+	  Castle, Dungeon. Cosmetic change only, no functional changes.
+
+2011-11-01 05:24  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb2: Replaced some of the
+	  blocked archetypes with solid stone (cave wall) in Cloud World
+	  Castle, Dungeon Level 2. Cosmetic change only, no functional
+	  changes.
+
+2011-11-01 05:03  rjtanner
+
+	* pup_land/raffle/raffle2_u3: Replaced some of the blocked
+	  archetypes with solid stone (cave wall) in Pupland Raffle 2,
+	  Level 3. Cosmetic change only, no functional changes.
+
+2011-11-01 04:57  rjtanner
+
+	* pup_land/raffle/raffle2_u3a: Replaced some of the blocked
+	  archetypes with solid stone (cave wall) in Pupland Raffle 2,
+	  Level 3a. Cosmetic change only, no functional changes.
+
+2011-11-01 04:53  rjtanner
+
+	* pup_land/raffle/raffle2_u4: Use cave wall sections to hide
+	  boulder and button mechanics to Pupland Raffle 2, Level 4.
+	  Cosmetic change only, no functional changes.
+
+2011-11-01 04:49  rjtanner
+
+	* pup_land/raffle/raffle2_u4: Replaced some of the blocked
+	  archetypes with solid stone (cave wall) in Pupland Raffle 2,
+	  Level 4. Cosmetic change only, no functional changes.
+
+2011-11-01 04:48  rjtanner
+
+	* pup_land/raffle/raffle2_u4: Replace renamed blake floor tiles
+	  with actual sky graphic & archetype in Pupland Raffle 2, Level 4.
+
+2011-11-01 04:39  rjtanner
+
+	* pup_land/raffle/raffle3_u2: Replaced some of the blocked
+	  archetypes with solid stone (cave wall) in Pupland Raffle 3,
+	  Level 2. Cosmetic change only, no functional changes.
+
+2011-10-31 06:09  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb1: Removed references to
+	  name_pl in Castle de Clouds, Dungeon. Technical change, no
+	  functional changes.
+
+2011-10-31 06:08  rjtanner
+
+	* mlab/citydeclouds/bank/vaulte5: Removed references to name_pl in
+	  City de Clouds Vault E5. Technical change, no functional changes.
+
+2011-10-31 06:07  rjtanner
+
+	* mlab/citydeclouds/bank/vaultd4: Removed references to name_pl in
+	  City de Clouds Vault D4. Technical change, no functional changes.
+
+2011-10-31 06:06  rjtanner
+
+	* mlab/citydeclouds/bank/vaultc3: Removed references to name_pl in
+	  City de Clouds Vault C3. Technical change, no functional changes.
+
+2011-10-31 06:06  rjtanner
+
+	* mlab/citydeclouds/bank/vaultb2: Removed references to name_pl in
+	  City de Clouds Vault B2. Technical change, no functional changes.
+
+2011-10-31 06:05  rjtanner
+
+	* mlab/citydeclouds/bank/vaulta1: Removed references to name_pl in
+	  City de Clouds Vault A1. Technical change, no functional changes.
+
+2011-10-31 06:04  rjtanner
+
+	* mlab/citydeclouds/bank/bank5: Removed references to name_pl in
+	  City de Clouds Bank, 5th Floor. Technical change, no functional
+	  changes.
+
+2011-10-31 06:03  rjtanner
+
+	* mlab/citydeclouds/bank/bank4: Removed references to name_pl in
+	  City de Clouds Bank, 4th Floor. Technical change, no functional
+	  changes.
+
+2011-10-31 06:02  rjtanner
+
+	* mlab/citydeclouds/bank/bank3: Removed references to name_pl in
+	  City de Clouds Bank, 3rd Floor. Technical change, no functional
+	  changes.
+
+2011-10-31 06:02  rjtanner
+
+	* mlab/citydeclouds/bank/bank2: Removed references to name_pl in
+	  City de Clouds Bank, 2nd Floor. Technical change, no functional
+	  changes.
+
+2011-10-31 06:01  rjtanner
+
+	* mlab/citydeclouds/bank/bank1: Removed references to name_pl in
+	  City de Clouds Bank, Lobby. Technical change, no functional
+	  changes.
+
+2011-10-31 05:59  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus4lvl2: Removed references
+	  to name_pl in Cloud World Town Haus Four, Level 2. Technical
+	  change, no functional changes.
+
+2011-10-31 05:58  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus4lvl1: Removed references
+	  to name_pl in Cloud World Town Haus Four, Level 1. Technical
+	  change, no functional changes.
+
+2011-10-31 05:57  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus3lvl2: Removed references
+	  to name_pl in Cloud World Town Haus Three, Level 2. Technical
+	  change, no functional changes.
+
+2011-10-31 05:56  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus3lvl1: Removed references
+	  to name_pl in Cloud World Town Haus Three, Level 1. Technical
+	  change, no functional changes.
+
+2011-10-31 05:55  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus2lvl2: Removed references
+	  to name_pl in Cloud World Town Haus Two, Level 2. Technical
+	  change, no functional changes.
+
+2011-10-31 05:54  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus2lvl1: Removed references
+	  to name_pl in Cloud World Town Haus Two, Level 1. Technical
+	  change, no functional changes.
+
+2011-10-31 05:53  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus1lvl2: Removed references
+	  to name_pl in Cloud World Town Haus One, Level 2. Technical
+	  change, no functional changes.
+
+2011-10-31 05:53  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus1lvl1: Removed references
+	  to name_pl in Cloud World Town Haus One, Level 1. Technical
+	  change, no functional changes.
+
+2011-10-31 05:51  rjtanner
+
+	* mlab/mlabscrntrdb3: Removed references to name_pl in West Scorn
+	  Trade Market, Vault Level 3. Technical change, no functional
+	  changes.
+
+2011-10-31 05:50  rjtanner
+
+	* mlab/mlabscrntrdb2: Removed references to name_pl in West Scorn
+	  Trade Market, Vault Level 2. Technical change, no functional
+	  changes.
+
+2011-10-31 05:49  rjtanner
+
+	* mlab/mlabscrntrdb1: Removed references to name_pl in West Scorn
+	  Trade Market, Vault Level 1. Technical change, no functional
+	  changes.
+
+2011-10-31 05:43  rjtanner
+
+	* mlab/mlabscrntrd2: Removed references to name_pl in West Scorn
+	  Trade Market, Upstairs. Technical change, no functional changes.
+
+2011-10-31 01:26  rjtanner
+
+	* mlab/mlabscrntrd1: Changes to the West Scorn Trade Market,
+	  Entrance. Removed the fence from under the long table (and floor
+	  tiles)that surround the trade area. Set move_block all to the
+	  longtables to block player access - just like what the fence was
+	  originally doing. Technical change, not a functional change.
+
+2011-10-30 23:27  rjtanner
+
+	* mlab/mlabscrntrd1: Removed line breaks to instructional sign,
+	  corrected sign information in regards to the traders in West
+	  Scorn Trade Market, Entrance. No functional changes.
+
+2011-10-30 23:24  rjtanner
+
+	* mlab/mlabscrntrd1: Removed references to name_pl in West Scorn
+	  Trade Market, Entrance. Technical change, no functional changes.
+
+2011-10-30 23:19  rjtanner
+
+	* lake_country/sentrio_farmhouse: Update plural form of invoice
+	  (invoices) to Sentrio's farmhouse in Lake Country.
+
+2011-10-30 23:12  rjtanner
+
+	* brest/underground: Removed references to name_pl in Underground,
+	  Level 1 in Brest. Technical change, no functional changes.
+
+2011-10-30 23:06  rjtanner
+
+	* brest/brest.trademarket: Removed line breaks to sign instructions
+	  in the Brest Trade Market.
+
+2011-10-30 23:01  rjtanner
+
+	* brest/brest.trademarket: Cosmetic change with Best Trade Market -
+	  make fence sections merge nicer with nearby walls.
+
+2011-10-30 22:58  rjtanner
+
+	* brest/brest.trademarket: Removed references to name_pl in Brest
+	  Trademarket. Technical change, no functional changes.
+
+2011-10-30 22:50  rjtanner
+
+	* brest/brest.IPO: Added some decor and furniture behind the desk
+	  area of the Best Imperial Post Office. Cosmetic change only.
+
+2011-10-30 22:44  rjtanner
+
+	* brest/brest.IPO, world/world_107_123: Changes to Brest Imperial
+	  Post Office. Door or entrance now opens when a player approaches.
+	  Map considered an outdoor map so darkness or time of day is
+	  visible when inside; added light sources. Updated world map for
+	  new map entrance destination.
+
+2011-10-30 22:06  rjtanner
+
+	* brest/brest.IPO: Updates to the Brest Imperial Post Office.
+	  Removed line breaks in NPC dialogue and updated IPO mail
+	  instructions to match what is in place in the Scorn IPO.
+
+2011-10-30 21:59  rjtanner
+
+	* brest/brest.IPO: Removed references to name_pl in Brest IPO.
+	  Technical change, no functional changes.
+
+2011-10-30 21:18  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/mainfloor,
+	  azumauindo/zaseki_dzuki_ryoku/mainfloor,
+	  brest/black_shield/mainfloor,
+	  darcap/darcap/guilds/poisoned_dagger/mainfloor,
+	  darcap/darcap/guilds/smoking_cauldron/mainfloor,
+	  euthville/green_goblin/mainfloor,
+	  lake_country/Butakis/mockers/mainfloor,
+	  navar_city/dreaming_sage/mainfloor,
+	  pup_land/guilds/laughing_skull/mainfloor,
+	  pup_land/guilds/purple_butterfly/mainfloor,
+	  santo_dominion/guilds/drunken_barbarian/mainfloor,
+	  templates/guild/mainfloor,
+	  wolfsburg/guilds/damned_heretics/mainfloor: Removed duplicate
+	  ground and no_spell tiles and fence sections outside the entrance
+	  for all Guild Main Floor maps.
+
+2011-10-30 20:56  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_toolshed,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_toolshed,
+	  azumauindo/zaseki_dzuki_ryoku/guild_toolshed,
+	  brest/black_shield/guild_toolshed,
+	  darcap/darcap/guilds/poisoned_dagger/guild_toolshed,
+	  darcap/darcap/guilds/smoking_cauldron/guild_toolshed,
+	  euthville/green_goblin/guild_toolshed,
+	  lake_country/Butakis/mockers/guild_toolshed,
+	  navar_city/dreaming_sage/guild_toolshed,
+	  pup_land/guilds/laughing_skull/guild_toolshed,
+	  pup_land/guilds/purple_butterfly/guild_toolshed,
+	  santo_dominion/guilds/drunken_barbarian/guild_toolshed,
+	  templates/guild/guild_toolshed,
+	  wolfsburg/guilds/damned_heretics/guild_toolshed: Removed
+	  duplicate floor tiles and wall sections to all Guild Tool Shed
+	  maps.
+
+2011-10-30 20:42  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_hq,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_hq,
+	  azumauindo/zaseki_dzuki_ryoku/guild_hq,
+	  brest/black_shield/guild_hq,
+	  darcap/darcap/guilds/poisoned_dagger/guild_hq,
+	  darcap/darcap/guilds/smoking_cauldron/guild_hq,
+	  euthville/green_goblin/guild_hq,
+	  lake_country/Butakis/mockers/guild_hq,
+	  navar_city/dreaming_sage/guild_hq,
+	  pup_land/guilds/laughing_skull/guild_hq,
+	  pup_land/guilds/purple_butterfly/guild_hq,
+	  santo_dominion/guilds/drunken_barbarian/guild_hq,
+	  scorn/guilds/mailed_fist/guild_hq, templates/guild/guild_hq,
+	  wolfsburg/guilds/damned_heretics/guild_hq: Removed duplicate
+	  floor tiles and also corrected wall sections around some of the
+	  gates to all Guild HeadQuarters maps.
+
+2011-10-30 19:40  rjtanner
+
+	* templates/guild/basement, templates/guild/guild_alchemy,
+	  templates/guild/guild_bbq, templates/guild/guild_hq,
+	  templates/guild/guild_jeweler, templates/guild/guild_tan,
+	  templates/guild/guild_thaum, templates/guild/guild_toolshed,
+	  templates/guild/guildman_lounge,
+	  templates/guild/guildmaster_lounge,
+	  templates/guild/hallofjoining, templates/guild/journeyman_lounge,
+	  templates/guild/mainfloor, templates/guild/master_lounge,
+	  templates/guild/masters_lounge, templates/guild/novice_lounge,
+	  templates/guild/secondfloor, templates/guild/storage_hall,
+	  templates/guild/storage_hall.0, templates/guild/storage_room:
+	  Setup unique and descriptive names to the Template Guild maps in
+	  template directory.
+
+2011-10-30 19:34  rjtanner
+
+	* lake_country/Butakis/mockers/basement,
+	  lake_country/Butakis/mockers/guild_alchemy,
+	  lake_country/Butakis/mockers/guild_bbq,
+	  lake_country/Butakis/mockers/guild_hq,
+	  lake_country/Butakis/mockers/guild_jeweler,
+	  lake_country/Butakis/mockers/guild_tan,
+	  lake_country/Butakis/mockers/guild_thaum,
+	  lake_country/Butakis/mockers/guild_toolshed,
+	  lake_country/Butakis/mockers/guildman_lounge,
+	  lake_country/Butakis/mockers/guildmaster_lounge,
+	  lake_country/Butakis/mockers/hallofjoining,
+	  lake_country/Butakis/mockers/journeyman_lounge,
+	  lake_country/Butakis/mockers/mainfloor,
+	  lake_country/Butakis/mockers/master_lounge,
+	  lake_country/Butakis/mockers/novice_lounge,
+	  lake_country/Butakis/mockers/secondfloor,
+	  lake_country/Butakis/mockers/storage_room: Give unique and
+	  descriptive names to the Mockers Guild maps in fortress of lord
+	  butakis.
+
+2011-10-30 06:33  rjtanner
+
+	* wolfsburg/guilds/damned_heretics/basement,
+	  wolfsburg/guilds/damned_heretics/guild_alchemy,
+	  wolfsburg/guilds/damned_heretics/guild_bbq,
+	  wolfsburg/guilds/damned_heretics/guild_hq,
+	  wolfsburg/guilds/damned_heretics/guild_jeweler,
+	  wolfsburg/guilds/damned_heretics/guild_tan,
+	  wolfsburg/guilds/damned_heretics/guild_thaum,
+	  wolfsburg/guilds/damned_heretics/guild_toolshed,
+	  wolfsburg/guilds/damned_heretics/guildman_lounge,
+	  wolfsburg/guilds/damned_heretics/guildmaster_lounge,
+	  wolfsburg/guilds/damned_heretics/hallofjoining,
+	  wolfsburg/guilds/damned_heretics/journeyman_lounge,
+	  wolfsburg/guilds/damned_heretics/mainfloor,
+	  wolfsburg/guilds/damned_heretics/master_lounge,
+	  wolfsburg/guilds/damned_heretics/novice_lounge,
+	  wolfsburg/guilds/damned_heretics/secondfloor,
+	  wolfsburg/guilds/damned_heretics/storage_room: Give unique and
+	  descriptive names to the Damned Heretics Guild maps in wolfsburg.
+
+2011-10-29 11:36  ryo_saeba
+
+	* darcap/cave/level4: Replace handler with specific one. Requires
+	  arch revision 15308.
+
+2011-10-29 11:34  ryo_saeba
+
+	* scorn/towers/tower.mad0, scorn/towers/tower.mad1,
+	  scorn/towers/tower.mad2: Replace handler with specific one.
+	  Requires arch revision 15306.
+
+2011-10-29 10:56  ryo_saeba
+
+	* darcap/cave/level4, darcap/darcap/quest, darcap/quest/fire,
+	  darcap/quest/water, darcap/town2/tower2, darcap/town2/tower4,
+	  euthville/demon_quest, navar_city/misc/city1mermaid,
+	  quests/peterm/quests/dragonquest2,
+	  quests/peterm/quests/goblin_chief,
+	  quests/peterm/quests/mushroom_quest,
+	  quests/peterm/quests/ogre_chief,
+	  quests/peterm/quests/titan_quest,
+	  quests/peterm/quests/wyvern_quest,
+	  santo_dominion/mudman/mudman.3, scorn/anthony/portgate,
+	  scorn/houses/alfalfa_basement, scorn/houses/alfalfa_upstairs,
+	  scorn/houses/cornerbrook, scorn/houses/farmhouse,
+	  scorn/houses/riverside_manor, scorn/houses/wizz.entry,
+	  scorn/kar/gorks1, scorn/kar/gorks3, scorn/misc/church,
+	  scorn/misc/gatehouse, scorn/peterm/undead_quest,
+	  scorn/shops/coffeeshop, scorn/taverns/barking_mule,
+	  scorn/taverns/goths, scorn/taverns/goths2,
+	  scorn/towers/lighthouse.3, start/newbieshouse,
+	  styles/monsterstyles/undead_quest/undead_quest_21,
+	  test/quest_handling/quest_map, world/world_102_108,
+	  world/world_102_115, world/world_105_113, world/world_105_115,
+	  world/world_105_118, world/world_106_115, world/world_111_117,
+	  world/world_125_124, world/world_127_108: Replace handler with
+	  specific one. Requires arch revision 15303.
+
+2011-10-29 10:25  ryo_saeba
+
+	* darcap/cave/level4, darcap/darcap/potionshop,
+	  darcap/darcap/shop_g, euthville/demon_quest,
+	  navar_city/misc/navarwiz, quests/peterm/quests/dragonquest2,
+	  quests/peterm/quests/goblin_chief,
+	  quests/peterm/quests/mushroom_quest,
+	  quests/peterm/quests/ogre_chief,
+	  quests/peterm/quests/titan_quest,
+	  quests/peterm/quests/wyvern_quest,
+	  santo_dominion/mudman/mudman.3, scorn/houses/farmhouse,
+	  scorn/houses/riverside_manor, scorn/kar/somehouse3,
+	  scorn/peterm/undead_quest, scorn/taverns/barking_mule,
+	  start/newbieshouse,
+	  styles/monsterstyles/undead_quest/undead_quest_21,
+	  test/quest_handling/quest_map: Replace handler with specific one.
+	  Requires arch revision 15300.
+
+2011-10-29 10:11  ryo_saeba
+
+	* navar_city/misc/navarwiz, quests/peterm/quests/TitanGate,
+	  santo_dominion/tavern, scorn/anthony/passoffice,
+	  scorn/anthony/portgate, scorn/houses/cornerbrook,
+	  scorn/houses/farmhouse, scorn/houses/riverside_manor,
+	  scorn/kar/gorks3, scorn/kar/somehouse3, scorn/misc/castle,
+	  scorn/misc/castle2, scorn/misc/gatehouse, scorn/misc/prison.1,
+	  scorn/misc/wizhide, scorn/shops/armourshop,
+	  scorn/shops/coffeeshop, scorn/shops/oleds_cafe,
+	  scorn/taverns/barking_mule, scorn/taverns/goths,
+	  scorn/temples/gaea, scorn/towers/tower.mad0,
+	  scorn/towers/tower.mad1, scorn/towers/tower.mad2: Replace handler
+	  with specific one. Requires arch revision 15294.
+
+2011-10-29 09:55  ryo_saeba
+
+	* test/quest_handling/quest_map: Remove redundant lines.
+
+2011-10-29 09:54  ryo_saeba
+
+	* start/newbieshouse: Replace handler with specific one. Requires
+	  arch revision 15294.
+
+2011-10-29 09:52  ryo_saeba
+
+	* darcap/darcap/grape_farm, darcap/darcap/potionshop,
+	  darcap/darcap/scartis, darcap/darcap/shop_g,
+	  darcap/darcap/shop_w, darcap/darcap/tavern: Replace handler with
+	  specific one. Requires arch revision 15294.
+
+2011-10-29 09:48  ryo_saeba
+
+	* test/dialog, test/quest_handling/quest_map: Replace handler with
+	  specific one. Requires arch revision 15294.
+
+2011-10-29 03:46  rjtanner
+
+	* brest/brest.inn: Removed line breaks in NPC dialogue in the Brest
+	  Inn.
+
+2011-10-29 03:41  rjtanner
+
+	* brest/brest.inn: Removed reference to name_pl in the Best Inn.
+	  Technical change, no functional changes.
+
+2011-10-29 03:39  rjtanner
+
+	* brest/sow/sow: Removed reference to name_pl in the Strange Old
+	  Wizard map in Brest. Technical change, no functional changes.
+
+2011-10-29 03:35  rjtanner
+
+	* scorn/guilds/mailed_fist/masters_lounge: Add missing region
+	  (scorn) to the Guild of Mailed Fist, Master's Lounge.
+
+2011-10-29 03:34  rjtanner
+
+	* scorn/guilds/mailed_fist/basement,
+	  scorn/guilds/mailed_fist/guild_alchemy,
+	  scorn/guilds/mailed_fist/guild_bbq,
+	  scorn/guilds/mailed_fist/guild_hq,
+	  scorn/guilds/mailed_fist/guild_jeweler,
+	  scorn/guilds/mailed_fist/guild_tan,
+	  scorn/guilds/mailed_fist/guild_thaum,
+	  scorn/guilds/mailed_fist/guild_toolshed,
+	  scorn/guilds/mailed_fist/guildman_lounge,
+	  scorn/guilds/mailed_fist/guildmaster_lounge,
+	  scorn/guilds/mailed_fist/hallofjoining,
+	  scorn/guilds/mailed_fist/journeyman_lounge,
+	  scorn/guilds/mailed_fist/mainfloor,
+	  scorn/guilds/mailed_fist/master_lounge,
+	  scorn/guilds/mailed_fist/masters_lounge,
+	  scorn/guilds/mailed_fist/novice_lounge,
+	  scorn/guilds/mailed_fist/secondfloor,
+	  scorn/guilds/mailed_fist/storage_room: Give unique and
+	  descriptive names to the Mailed Fist Guild maps in scorn.
+
+2011-10-29 03:26  rjtanner
+
+	* santo_dominion/guilds/drunken_barbarian/basement,
+	  santo_dominion/guilds/drunken_barbarian/guild_alchemy,
+	  santo_dominion/guilds/drunken_barbarian/guild_bbq,
+	  santo_dominion/guilds/drunken_barbarian/guild_hq,
+	  santo_dominion/guilds/drunken_barbarian/guild_jeweler,
+	  santo_dominion/guilds/drunken_barbarian/guild_tan,
+	  santo_dominion/guilds/drunken_barbarian/guild_thaum,
+	  santo_dominion/guilds/drunken_barbarian/guild_toolshed,
+	  santo_dominion/guilds/drunken_barbarian/guildman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/guildmaster_lounge,
+	  santo_dominion/guilds/drunken_barbarian/hallofjoining,
+	  santo_dominion/guilds/drunken_barbarian/journeyman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/mainfloor,
+	  santo_dominion/guilds/drunken_barbarian/master_lounge,
+	  santo_dominion/guilds/drunken_barbarian/novice_lounge,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/storage_room: Give unique
+	  and descriptive names to the Drunken Barbarian Guild maps in
+	  santo dominion.
+
+2011-10-28 04:02  rjtanner
+
+	* brest/black_shield/guild_hq: Removed references to name_pl to
+	  guild maps Black Shield Guild, Guild HeadQuarters in Brest. The
+	  entries are no longer used. Technical change, no functional
+	  changes.
+
+2011-10-28 04:00  rjtanner
+
+	* brest/apartments/brest_town_house: Removed references to name_pl
+	  to guild maps in Best Town House. The entries are no longer used.
+	  Technical change, no functional changes.
+
+2011-10-28 03:57  rjtanner
+
+	* azumauindo/zaseki_dzuki_ryoku/ground,
+	  azumauindo/zaseki_dzuki_ryoku/guild_hq,
+	  azumauindo/zaseki_dzuki_ryoku/upper: Removed references to
+	  name_pl to guild maps in Zaseki Dzuki Ryoku (region Azumauindo.)
+	  The entries are no longer used. Technical change, no functional
+	  changes.
+
+2011-10-28 03:54  rjtanner
+
+	* azumauindo/suno-yamatoshi/towers/tou4,
+	  azumauindo/suno-yamatoshi/towers/tou5: Removed references to
+	  name_pl to tower maps in Suno-yamatoshi (region Azumauindo.) The
+	  entries are no longer used. Technical change, no functional
+	  changes.
+
+2011-10-28 03:51  rjtanner
+
+	* pup_land/guilds/purple_butterfly/basement,
+	  pup_land/guilds/purple_butterfly/guild_alchemy,
+	  pup_land/guilds/purple_butterfly/guild_bbq,
+	  pup_land/guilds/purple_butterfly/guild_hq,
+	  pup_land/guilds/purple_butterfly/guild_jeweler,
+	  pup_land/guilds/purple_butterfly/guild_tan,
+	  pup_land/guilds/purple_butterfly/guild_toolshed,
+	  pup_land/guilds/purple_butterfly/guildman_lounge,
+	  pup_land/guilds/purple_butterfly/guildmaster_lounge,
+	  pup_land/guilds/purple_butterfly/hallofjoining,
+	  pup_land/guilds/purple_butterfly/journeyman_lounge,
+	  pup_land/guilds/purple_butterfly/mainfloor,
+	  pup_land/guilds/purple_butterfly/master_lounge,
+	  pup_land/guilds/purple_butterfly/novice_lounge,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  pup_land/guilds/purple_butterfly/storage_room: Give unique and
+	  descriptive names to the Purple Butterfly Guild maps in (pupland)
+	  lonetown.
+
+2011-10-28 03:45  rjtanner
+
+	* pup_land/guilds/laughing_skull/basement,
+	  pup_land/guilds/laughing_skull/guild_alchemy,
+	  pup_land/guilds/laughing_skull/guild_bbq,
+	  pup_land/guilds/laughing_skull/guild_hq,
+	  pup_land/guilds/laughing_skull/guild_jeweler,
+	  pup_land/guilds/laughing_skull/guild_tan,
+	  pup_land/guilds/laughing_skull/guild_thaum,
+	  pup_land/guilds/laughing_skull/guild_toolshed,
+	  pup_land/guilds/laughing_skull/guildman_lounge,
+	  pup_land/guilds/laughing_skull/guildmaster_lounge,
+	  pup_land/guilds/laughing_skull/hallofjoining,
+	  pup_land/guilds/laughing_skull/journeyman_lounge,
+	  pup_land/guilds/laughing_skull/mainfloor,
+	  pup_land/guilds/laughing_skull/master_lounge,
+	  pup_land/guilds/laughing_skull/novice_lounge,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/laughing_skull/storage_room: Give unique and
+	  descriptive names to the Laughing Skull Guild maps in (pupland)
+	  nurnberg.
+
+2011-10-28 03:39  rjtanner
+
+	* navar_city/dreaming_sage/basement,
+	  navar_city/dreaming_sage/guild_alchemy,
+	  navar_city/dreaming_sage/guild_bbq,
+	  navar_city/dreaming_sage/guild_hq,
+	  navar_city/dreaming_sage/guild_jeweler,
+	  navar_city/dreaming_sage/guild_tan,
+	  navar_city/dreaming_sage/guild_thaum,
+	  navar_city/dreaming_sage/guild_toolshed,
+	  navar_city/dreaming_sage/guildman_lounge,
+	  navar_city/dreaming_sage/guildmaster_lounge,
+	  navar_city/dreaming_sage/hallofjoining,
+	  navar_city/dreaming_sage/journeyman_lounge,
+	  navar_city/dreaming_sage/mainfloor,
+	  navar_city/dreaming_sage/master_lounge,
+	  navar_city/dreaming_sage/novice_lounge,
+	  navar_city/dreaming_sage/secondfloor,
+	  navar_city/dreaming_sage/storage_room: Give unique and
+	  descriptive names to the Dreaming Sage Guild maps in navar.
+
+2011-10-27 04:38  rjtanner
+
+	* azumauindo/suno-yamatoshi/tou/tou4,
+	  azumauindo/suno-yamatoshi/tou/tou5: Removed references to name_pl
+	  to tou maps in Suno-yamatoshi (region Azumauindo.) The entries
+	  are no longer used. Technical change, no functional changes.
+
+2011-10-27 04:34  rjtanner
+
+	* azumauindo/suno-yamatoshi/temples/ruggilli2: Removed references
+	  to name_pl to temple maps in Suno-yamatoshi (region Azumauindo.)
+	  The entries are no longer used. Technical change, no functional
+	  changes.
+
+2011-10-27 04:33  rjtanner
+
+	* azumauindo/suno-yamatoshi/shops/armourshop1,
+	  azumauindo/suno-yamatoshi/shops/bank1,
+	  azumauindo/suno-yamatoshi/shops/magicshop1,
+	  azumauindo/suno-yamatoshi/shops/magicshop2,
+	  azumauindo/suno-yamatoshi/shops/pawn1,
+	  azumauindo/suno-yamatoshi/shops/weaponshop1: Removed references
+	  to name_pl to shop maps in Suno-yamatoshi (region Azumauindo.)
+	  The entries are no longer used. Technical change, no functional
+	  changes.
+
+2011-10-27 04:28  rjtanner
+
+	* azumauindo/suno-yamatoshi/nenshou_youso/ground,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_hq,
+	  azumauindo/suno-yamatoshi/nenshou_youso/upper: Removed references
+	  to name_pl to Nenshou Youso maps in Suno-yamatoshi (region
+	  Azumauindo.) The entries are no longer used. Technical change, no
+	  functional changes.
+
+2011-10-27 04:24  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/dojoA1,
+	  azumauindo/suno-yamatoshi/buildings/dojoA2,
+	  azumauindo/suno-yamatoshi/buildings/dojoB1,
+	  azumauindo/suno-yamatoshi/buildings/jadechesthouse1,
+	  azumauindo/suno-yamatoshi/buildings/ninjadojoA1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA2: Removed
+	  references to name_pl to buildings maps in Suno-yamatoshi (region
+	  Azumauindo.) The entries are no longer used. Technical change, no
+	  functional changes.
+
+2011-10-27 04:18  rjtanner
+
+	* azumauindo/suno-yamatoshi/apartments/lapartment1: Removed
+	  references to name_pl to the apartment map in Suno-yamatoshi
+	  (region Azumauindo.) The entries are no longer used. Technical
+	  change, no functional changes.
+
+2011-10-27 04:16  rjtanner
+
+	* azumauindo/ranbounagisatoshi/towers/tou4,
+	  azumauindo/ranbounagisatoshi/towers/tou5: Removed references to
+	  name_pl to tower maps in Ranbounagisatoshi (region Azumauindo.)
+	  The entries are no longer used. Technical change, no functional
+	  changes.
+
+2011-10-27 04:13  rjtanner
+
+	* euthville/green_goblin/basement,
+	  euthville/green_goblin/guild_alchemy,
+	  euthville/green_goblin/guild_bbq,
+	  euthville/green_goblin/guild_hq,
+	  euthville/green_goblin/guild_jeweler,
+	  euthville/green_goblin/guild_tan,
+	  euthville/green_goblin/guild_thaum,
+	  euthville/green_goblin/guild_toolshed,
+	  euthville/green_goblin/guildman_lounge,
+	  euthville/green_goblin/guildmaster_lounge,
+	  euthville/green_goblin/hallofjoining,
+	  euthville/green_goblin/journeyman_lounge,
+	  euthville/green_goblin/mainfloor,
+	  euthville/green_goblin/master_lounge,
+	  euthville/green_goblin/novice_lounge,
+	  euthville/green_goblin/secondfloor,
+	  euthville/green_goblin/storage_room: Give unique and descriptive
+	  names to the Green Goblin Guild maps in euthville.
+
+2011-10-27 04:06  rjtanner
+
+	* darcap/darcap/guilds/smoking_cauldron/basement,
+	  darcap/darcap/guilds/smoking_cauldron/guild_alchemy,
+	  darcap/darcap/guilds/smoking_cauldron/guild_bbq,
+	  darcap/darcap/guilds/smoking_cauldron/guild_hq,
+	  darcap/darcap/guilds/smoking_cauldron/guild_jeweler,
+	  darcap/darcap/guilds/smoking_cauldron/guild_tan,
+	  darcap/darcap/guilds/smoking_cauldron/guild_thaum,
+	  darcap/darcap/guilds/smoking_cauldron/guild_toolshed,
+	  darcap/darcap/guilds/smoking_cauldron/guildman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/guildmaster_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/hallofjoining,
+	  darcap/darcap/guilds/smoking_cauldron/journeyman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/mainfloor,
+	  darcap/darcap/guilds/smoking_cauldron/master_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/novice_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room: Give unique
+	  and descriptive names to the Smoking Cauldron Guild maps in
+	  darcap.
+
+2011-10-26 05:51  rjtanner
+
+	* darcap/darcap/guilds/poisoned_dagger/basement,
+	  darcap/darcap/guilds/poisoned_dagger/guild_alchemy,
+	  darcap/darcap/guilds/poisoned_dagger/guild_bbq,
+	  darcap/darcap/guilds/poisoned_dagger/guild_hq,
+	  darcap/darcap/guilds/poisoned_dagger/guild_jeweler,
+	  darcap/darcap/guilds/poisoned_dagger/guild_tan,
+	  darcap/darcap/guilds/poisoned_dagger/guild_thaum,
+	  darcap/darcap/guilds/poisoned_dagger/guild_toolshed,
+	  darcap/darcap/guilds/poisoned_dagger/guildman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/guildmaster_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/hallofjoining,
+	  darcap/darcap/guilds/poisoned_dagger/journeyman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/mainfloor,
+	  darcap/darcap/guilds/poisoned_dagger/master_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/novice_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room: Give unique
+	  and descriptive names to the Poisoned Dagger Guild maps in
+	  darcap.
+
+2011-10-26 05:35  rjtanner
+
+	* brest/black_shield/basement, brest/black_shield/guild_alchemy,
+	  brest/black_shield/guild_bbq, brest/black_shield/guild_hq,
+	  brest/black_shield/guild_jeweler, brest/black_shield/guild_tan,
+	  brest/black_shield/guild_thaum,
+	  brest/black_shield/guild_toolshed,
+	  brest/black_shield/guildman_lounge,
+	  brest/black_shield/guildmaster_lounge,
+	  brest/black_shield/hallofjoining,
+	  brest/black_shield/journeyman_lounge,
+	  brest/black_shield/mainfloor, brest/black_shield/master_lounge,
+	  brest/black_shield/novice_lounge, brest/black_shield/secondfloor,
+	  brest/black_shield/storage_room: Give unique and descriptive
+	  names to the Black Shield Guild maps in brest.
+
+2011-10-26 05:21  rjtanner
+
+	* azumauindo/ranbounagisatoshi/temples/rruggilli1,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli2: Removed
+	  references to name_pl to temple maps in Ranbounagisatoshi (region
+	  Azumauindo.) The entries are no longer used. Technical change, no
+	  functional changes.
+
+2011-10-26 05:15  rjtanner
+
+	* azumauindo/ranbounagisatoshi/shops/groupshop,
+	  azumauindo/ranbounagisatoshi/shops/groupshop2,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb1,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb2,
+	  azumauindo/ranbounagisatoshi/shops/potionshop1,
+	  azumauindo/ranbounagisatoshi/shops/tradecenter: Removed
+	  references to name_pl to shop maps in Ranbounagisatoshi (region
+	  Azumauindo.) The entries are no longer used. Technical change, no
+	  functional changes.
+
+2011-10-26 05:09  rjtanner
+
+	* azumauindo/ranbounagisatoshi/apartments/sapartment: Removed
+	  references to name_pl to sapartment map in Ranbounagisatoshi
+	  (region Azumauindo.) The entries are no longer used. Technical
+	  change, no functional changes.
+
+2011-10-26 05:03  rjtanner
+
+	* azumauindo/misc/entrance1, azumauindo/misc/shrine1,
+	  azumauindo/misc/shrine3: Removed references to name_pl to misc
+	  maps in Azumauindo. The entries are no longer used. Technical
+	  change, no functional changes.
+
+2011-10-26 04:59  rjtanner
+
+	* azumauindo/minatomachi/temples/templeruggilli1,
+	  azumauindo/minatomachi/temples/templeruggilli2: Removed
+	  references to name_pl to the Rugulli temples in Minatomachi
+	  (region Azumauindo.) The entries are no longer used. Technical
+	  change, no functional changes.
+
+2011-10-26 04:55  rjtanner
+
+	* azumauindo/zaseki_dzuki_ryoku/basement,
+	  azumauindo/zaseki_dzuki_ryoku/guild_alchemy,
+	  azumauindo/zaseki_dzuki_ryoku/guild_bbq,
+	  azumauindo/zaseki_dzuki_ryoku/guild_hq,
+	  azumauindo/zaseki_dzuki_ryoku/guild_jeweler,
+	  azumauindo/zaseki_dzuki_ryoku/guild_tan,
+	  azumauindo/zaseki_dzuki_ryoku/guild_thaum,
+	  azumauindo/zaseki_dzuki_ryoku/guild_toolshed,
+	  azumauindo/zaseki_dzuki_ryoku/guildman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/guildmaster_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/hallofjoining,
+	  azumauindo/zaseki_dzuki_ryoku/journeyman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/mainfloor,
+	  azumauindo/zaseki_dzuki_ryoku/master_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/novice_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room: Give unique and
+	  descriptive names to the Zaseki Dzuki Ryoku Guild maps in
+	  Azumauindo.
+
+2011-10-25 05:39  rjtanner
+
+	* azumauindo/minatomachi/stores/buildshop,
+	  azumauindo/minatomachi/stores/diamondex1,
+	  azumauindo/minatomachi/stores/generalstore,
+	  azumauindo/minatomachi/stores/postoffice: Removed references to
+	  name_pl to the Minatomachi stores in Azumauindo. The entries are
+	  no longer used. Technical change, no functional changes.
+
+2011-10-25 05:28  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/ground,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_hq,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/upper: Removed
+	  references to name_pl to the Ketsueki Itsuryuu Guild in
+	  Azumauindo. The entries are no longer used. Technical change, no
+	  functional changes.
+
+2011-10-25 05:22  rjtanner
+
+	* azumauindo/minatomachi/buildings/guildkeybuilding1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2a,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2b,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2c: Removed
+	  references to name_pl to the Guild buildings in Azumauindo. The
+	  entries are no longer used. Technical change, no functional
+	  changes.
+
+2011-10-25 05:07  rjtanner
+
+	* azumauindo/suno-yamatoshi/nenshou_youso/basement,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_alchemy,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_bbq,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_hq,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_jeweler,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_tan,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_thaum,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_toolshed,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildmaster_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/hallofjoining,
+	  azumauindo/suno-yamatoshi/nenshou_youso/journeyman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/mainfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/master_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/novice_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room: Give unique
+	  and descriptive names to the Nenshou Youso Guild maps in
+	  Azumauindo.
+
+2011-10-25 04:48  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/basement,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_alchemy,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_bbq,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_hq,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_jeweler,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_tan,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_thaum,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_toolshed,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildmaster_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/hallofjoining,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/journeyman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/master_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/novice_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/storage_room: Give
+	  unique and descriptive names to the Ketsueki Itsuryuu Guild maps
+	  in Azumauindo.
+
+2011-10-24 05:04  rjtanner
+
+	* scorn/houses/wizardw: Moved no_spell tiles to the bottom of the
+	  stack order to Wizard's Workshop in Scorn. Technical change, no
+	  functional changes.
+
+2011-10-24 05:01  rjtanner
+
+	* scorn/houses/wizardw: Removed references to name_pl Ice Illusion
+	  and name_pl Fractured Obsidian to the Wizard's Workshop in Scorn.
+	  The entries are no longer used. Technical change, no functional
+	  changes.
+
+2011-10-24 04:56  rjtanner
+
+	* scorn/houses/wizardw: Changes to Wizard's Workshop in Scorn.
+	  Update map title to match reference in the world map (Wizard's
+	  Workshop instead of Wizards Workshop.) Removed double stacked
+	  wall sections.
+
+2011-10-24 04:54  rjtanner
+
+	* scorn/houses/wizardw, world/world_105_115: Cosmetic changes to
+	  Wizard's Workshop in Scorn. Added outer perimeter to the original
+	  map to match the building exterior. Updated entrance/exit
+	  coordinates in world map back to the workshop.
+
+2011-10-23 04:59  rjtanner
+
+	* scorn/houses/wizardw: Remove line breaks in book text located in
+	  the Wizads Workshop in Scorn.
+
+2011-10-23 04:40  rjtanner
+
+	* pup_land/kurte/eureca_road1: Cosmetic changes with how fence
+	  sections merge with nearby walls for Eureca Road, 1 in Pup Land.
+	  No functional changes.
+
+2011-10-22 18:48  ryo_saeba
+
+	* whalingoutpost/misc/frostcavern1, whalingoutpost/misc/icecavern1:
+	  Fix bug #1864412: endless loop of being pushed by directors in
+	  the artic, by adding some spots without any movers.
+
+2011-10-22 04:03  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  brest/black_shield/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  euthville/green_goblin/secondfloor,
+	  lake_country/Butakis/mockers/secondfloor,
+	  navar_city/dreaming_sage/secondfloor,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  scorn/guilds/mailed_fist/secondfloor,
+	  templates/guild/secondfloor,
+	  wolfsburg/guilds/damned_heretics/secondfloor: Update walls
+	  surrounding Tannery entrance gate to Guild Hall and template
+	  second floor maps. Additional stone wall section on nearby fence.
+	  Cosmetic change only.
+
+2011-10-22 03:39  rjtanner
+
+	* pup_land/castle_eureca/cave_pass4: Replaced blocked (black)
+	  sections of the cave with grey cave walls to Cave Passageway,
+	  Level 4 in Pup Land. Cosmetic change only, no functional changes.
+
+2011-10-22 03:24  rjtanner
+
+	* pup_land/castle_eureca/castle_eureca8: Cosmetic changes with how
+	  fence sections merge with nearby walls for Castle of Eureca, 8th
+	  Level in Pup Land. No functional changes.
+
+2011-10-22 03:20  rjtanner
+
+	* pup_land/castle_eureca/castle_eureca6: Cosmetic changes with how
+	  fence sections merge with nearby walls for Castle of Eureca, 6th
+	  Level in Pup Land. No functional changes.
+
+2011-10-22 03:18  rjtanner
+
+	* pup_land/castle_eureca/castle_eureca3: Cosmetic changes with how
+	  fence sections merge with nearby walls for Castle of Eureca, 3rd
+	  Level in Pup Land. No functional changes.
+
+2011-10-22 03:17  rjtanner
+
+	* pup_land/castle_eureca/castle_eureca2: Cosmetic changes with how
+	  fence sections merge with nearby walls for Castle of Eureca, 2nd
+	  Level in Pup Land. No functional changes.
+
+2011-10-22 03:15  rjtanner
+
+	* pup_land/castle_eureca/castle_eureca1: Cosmetic changes with how
+	  fence sections merge with nearby walls for Castle of Eureca,
+	  Entrance in Pup Land. No functional changes.
+
+2011-10-22 03:07  rjtanner
+
+	* pup_land/pplant/pplant_ud3: Cosmetic changes with how fence
+	  sections merge with nearby walls for Power Plant, Dungeon Level 3
+	  in Pup Land. No functional changes.
+
+2011-10-22 03:03  rjtanner
+
+	* pup_land/pplant/pplant_ud2: Replaced blocked (black) sections of
+	  the cave with grey cave walls to Power Plant, Dungeon Level 2.
+	  Cosmetic change only, no functional changes.
+
+2011-10-22 02:59  rjtanner
+
+	* pup_land/pplant/pplant_ud2: Cosmetic changes with how fence
+	  sections merge with nearby walls for Power Plant, Dungeon Level 2
+	  in Ancient Pup Land. No functional changes.
+
+2011-10-22 02:57  rjtanner
+
+	* pup_land/pplant/pplant_ud1: Cosmetic changes with how fence
+	  sections merge with nearby walls for Power Plant, Dungeon Level 1
+	  in Ancient Pup Land. No functional changes.
+
+2011-10-22 02:54  rjtanner
+
+	* pup_land/pplant/pplant3: Cosmetic changes with how fence sections
+	  merge with nearby walls for Power Plant, Level 3 in Ancient Pup
+	  Land. No functional changes.
+
+2011-10-22 02:44  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room,
+	  brest/black_shield/storage_room,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room,
+	  euthville/green_goblin/storage_room,
+	  lake_country/Butakis/mockers/storage_room,
+	  navar_city/dreaming_sage/storage_room,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  santo_dominion/guilds/drunken_barbarian/storage_room,
+	  scorn/guilds/mailed_fist/storage_room,
+	  templates/guild/storage_room,
+	  wolfsburg/guilds/damned_heretics/storage_room: Update walls
+	  surrounding door entrances to Guild Storage Maps. Cosmetic change
+	  only.
+
+2011-10-21 04:32  rjtanner
+
+	* pup_land/ancient/castle/gothwolte.2: Cosmetic changes with how
+	  fence sections merge with nearby walls for Gothwalte, Collection
+	  in Ancient Pup Land. No functional changes.
+
+2011-10-21 04:27  rjtanner
+
+	* pup_land/ancient/castle/castle.ud1: Cosmetic changes to replaced
+	  blocked wall sections with solid stone wall sections in
+	  Gothwalte's Castle, Dungeon in Ancient Pup Land. Looks nicer in
+	  Mapper. No functional changes.
+
+2011-10-21 04:23  rjtanner
+
+	* pup_land/ancient/castle/castle.6: Cosmetic changes with how fence
+	  sections merge with nearby walls for Gothwalte's Castle, Level 6
+	  in Ancient Pup Land. No functional changes.
+
+2011-10-21 04:21  rjtanner
+
+	* pup_land/ancient/castle/castle.5: Cosmetic changes with how fence
+	  sections merge with nearby walls for Gothwalte's Castle, Level 5
+	  in Ancient Pup Land. No functional changes.
+
+2011-10-21 04:20  rjtanner
+
+	* pup_land/ancient/castle/castle.4: Cosmetic changes with how fence
+	  sections merge with nearby walls for Gothwalte's Castle, Level 4
+	  in Ancient Pup Land. No functional changes.
+
+2011-10-21 04:19  rjtanner
+
+	* pup_land/ancient/castle/castle.2: Cosmetic changes with how fence
+	  sections merge with nearby walls for Gothwalte's Castle, Level 2
+	  in Ancient Pup Land. No functional changes.
+
+2011-10-21 04:14  rjtanner
+
+	* darcap/darcap/fishing: Upate to Sargas's fine fishing supplies in
+	  Darcap. Replaced two existing fishing poles with recently added
+	  poles. Requires archetype update r15213 or later.
+
+2011-10-20 23:28  rjtanner
+
+	* scorn/guilds/guildhousesinc: Map name correction for Guild Houses
+	  Inc in Scorn, should be Inc and not Iinc.
+
+2011-10-20 05:10  rjtanner
+
+	* pup_land/ancient/mountain/tower.2: Minor change with wall merges
+	  for the Tower of the Necromancer, Level 2 in Pupland. Cosmetic
+	  change, no functional changes.
+
+2011-10-20 03:24  rjtanner
+
+	* pup_land/ancient/mountain/atelir2: Replace cave wall sections
+	  with dungeon wall to Atelir of Artifact (Prison), Level 2 in
+	  Pupland. Cosmetic change only, no functional changes.
+
+2011-10-19 05:16  mwedel
+
+	* HallOfSelection, editor/pickmaps/NPC,
+	  start/HallsOfSelection/wraith_player: Change face from priestnew
+	  to priest - the class animation uses
+	  the priest name, and not priestnew, and best I can tell, the
+	  priestnew
+	  images are now the same as the priest images, so may go away.
+	  MSW 2011-10-18
+
+2011-10-19 00:39  rjtanner
+
+	* pup_land/s_f/floor2: Map name typo correction for Ancient Ruins,
+	  Upper Level in Pupland (Ancient instead of Anclient.)
+
+2011-10-18 03:20  rjtanner
+
+	* pup_land/cave_weapon/cave2, pup_land/cave_weapon/cave3,
+	  pup_land/cave_weapon/cave4: Replace mines wall section with newly
+	  created cave wall sections in the Cave Weapon maps in Pupland.
+	  Cosmetic change, no functional changes. Requires archetypes
+	  update r15201.
+
+2011-10-17 04:50  rjtanner
+
+	* pup_land/cave_weapon/cave1: Replace mines wall section with newly
+	  created cave wall sections in the Cave Weapon, Entrance map in
+	  Pupland. Cosmetic change, no functional changes. Requires
+	  archetypes update r15199.
+
+2011-10-16 12:44  ryo_saeba
+
+	* scorn/houses/tyl: Make the books harder to get at.
+
+2011-10-15 23:34  rjtanner
+
+	* pup_land/cave_weapon/cave5: Changes with how fence (swall)
+	  sections merge with nearby walls to Cave Weapon, Genome-Project
+	  Testing Room map in Ancient Pupland. Cosmetic change only, no
+	  functional changes.
+
+2011-10-15 23:31  rjtanner
+
+	* pup_land/cave_weapon/cave4: More changes to Cave Weapon, Research
+	  Group map in Ancient Pupland. Removed line breaks in NPC
+	  dialogue. Quotation change to the hint so it appears as one
+	  statement.
+
+2011-10-15 23:29  rjtanner
+
+	* pup_land/cave_weapon/cave4: Place no_spells floor tiles under
+	  actual floor tiles instead of on top in Cave Weapon, Research
+	  Group map in Ancient Pupland.
+
+2011-10-15 23:24  rjtanner
+
+	* pup_land/cave_weapon/cave4: Changes with how fence (swall)
+	  sections merge with nearby walls to Cave Weapon, Research Group
+	  map in Ancient Pupland. Cosmetic change only, no functional
+	  changes.
+
+2011-10-15 23:21  rjtanner
+
+	* pup_land/cave_weapon/cave3: Place no_spells floor tiles under
+	  actual floor tiles instead of on top in Cave Weapon, Biological
+	  Organisms Research Group map in Ancient Pupland.
+
+2011-10-15 23:20  rjtanner
+
+	* pup_land/cave_weapon/cave3: Changes with how fence (swall)
+	  sections merge with nearby walls to Cave Weapon, Biological
+	  Organisms Research Group in Ancient Pupland. Cosmetic change
+	  only, no functional changes.
+
+2011-10-15 23:11  rjtanner
+
+	* pup_land/cave_weapon/cave2: Replaced blocked (black) sections of
+	  the cave with grey cave walls to Cave Weapon, Antechamber map in
+	  Ancient Pupland. Cosmetic change only, no functional changes.
+
+2011-10-15 23:04  rjtanner
+
+	* pup_land/cave_weapon/cave1: Replaced blocked (black) sections of
+	  the cave with grey cave walls to Cave Weapon, Entrance map in
+	  Ancient Pupland. Cosmetic change only, no functional changes.
+
+2011-10-15 15:26  akirschbaum
+
+	* lake_country/ebony/masterlev: Fix typos.
+
+2011-10-15 03:32  rjtanner
+
+	* port_joseph/pirates/torttemple: Cosmetic wall changes with
+	  merging sections to the (pirates) Temple map in Port Joseph.
+
+2011-10-15 03:26  rjtanner
+
+	* navar_city/misc/dragon_guild, scorn/misc/dragon_guild: Removed
+	  line breaks in the signs for the Dragon Guilds in Scorn and
+	  Navar. Capilization changes on the sign (dragon guild -> Dragon
+	  Guild.)
+
+2011-10-14 03:49  rjtanner
+
+	* scorn/misc/dragon_guild: Added windows to the Dragon Guild of
+	  Scorn. Also placed radius 2 light sources beneath the windows to
+	  give the windows a glowing effect at night. Cosmetic change only.
+
+2011-10-14 03:46  rjtanner
+
+	* navar_city/misc/dragon_guild, world/world_122_117: Cosmetic
+	  change to Navar Dragon Guild. Added outer perimeter to the
+	  original map to match the building exterior. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  light sources were added. Updated entrance/exit coordinates in
+	  world map back to the guild map.
+
+2011-10-13 05:44  rjtanner
+
+	* marksel/church: Made the holy symbol and one of the roses
+	  non-pickable (nearby items - flowers and lockbox already are
+	  non-pickable) in the Church to Valriel in Marksel.
+
+2011-10-13 04:58  rjtanner
+
+	* marksel/church: (Forgot to again..) Update entrance x & y
+	  coordinates in map header for Church to Valriel in Marksel.
+
+2011-10-13 04:54  rjtanner
+
+	* marksel/church: NPC dial changes in the Church to Valrien in
+	  Marksel. Removed line breaks and small punctuation update.
+
+2011-10-13 04:47  rjtanner
+
+	* marksel/church, world/world_120_109: Cosmetic update to Church to
+	  Valriel in Marksel. Added outer perimeter to the original map to
+	  match the building exterior. Rearanged the floor plan to match
+	  building exterior. Map considered an outdoor map so darkness or
+	  time of day is visible when inside; additional light sources were
+	  added. Updated entrance/exit coordinates in world map back to the
+	  church.
+
+2011-10-11 04:29  rjtanner
+
+	* wolfsburg/volcano/heimser_hut_2: Update entrance x & y
+	  coordinates in map header to Heimser's Lab.
+
+2011-10-11 04:25  rjtanner
+
+	* wolfsburg/volcano/heimser_hut_1, wolfsburg/volcano/heimser_hut_2:
+	  Removed empty and unused row to Heimser's Lab located outside of
+	  Wolfsburg. Adjusted entrance/exit coordinates from Heimser's
+	  Cellar to reflect this change.
+
+2011-10-11 04:20  rjtanner
+
+	* wolfsburg/volcano/heimser_hut_0, wolfsburg/volcano/heimser_hut_1,
+	  world/world_129_108: Cosmetic update to Heimser's Hut outside of
+	  Wolfsburg. Added outer perimeter to the original map to match the
+	  building exterior. Rearanged the floor plan to match building
+	  exterior. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; light sources were added. Updated
+	  entrance/exit coordinates in world map and Heimser's Cellar due
+	  to layout changes.
+
+2011-10-10 05:16  rjtanner
+
+	* lake_country/Butakis/B_gshop, lake_country/shops/Olds_jewel,
+	  lake_country/shops/clems_archery,
+	  lake_country/shops/klondors_wands, marksel/shop, marksel/wizard,
+	  navar_city/bow_shop, port_joseph/town/generalstore,
+	  port_joseph/town/inn, scorn/misc/PowerHouse,
+	  scorn/shops/BasicSpells, scorn/shops/armourshop,
+	  scorn/shops/bowshop, scorn/shops/foodshop, scorn/shops/gemshop,
+	  scorn/shops/generalshop, scorn/shops/magicshop,
+	  scorn/shops/potionshop, scorn/shops/weaponshop,
+	  scorn/taverns/inn: Update or correct entrance x and y coordinates
+	  in the map headers.
+
+2011-10-10 01:16  rjtanner
+
+	* darcap/darcap/gshop, darcap/darcap/potionshop,
+	  darcap/darcap/shop_a, darcap/darcap/shop_g, darcap/darcap/shop_m,
+	  darcap/darcap/shop_w, darcap/town2/shop_b, darcap/town2/shop_f,
+	  navar_city/misc/buildshop, navar_city/misc/city1armour,
+	  navar_city/misc/city1gen, navar_city/misc/city1weapon,
+	  pup_land/lone_town/shops/transport.shoppe,
+	  santo_dominion/shops/armour, santo_dominion/shops/eliks,
+	  santo_dominion/shops/erash, santo_dominion/shops/nosferatu,
+	  santo_dominion/shops/rings, wolfsburg/shops/buildshop: Update or
+	  correct entrance x and y coordinates in the map headers.
+
+2011-10-09 20:07  rjtanner
+
+	* navar_city/southgatehouse: Place light sources and exits beneath
+	  floor tiles in the Port of Navar, South Gate House.
+
+2011-10-09 20:04  rjtanner
+
+	* navar_city/southgatehouse, navar_city/westgatehouse: Give West
+	  and South Gatehouse maps in Navar a default difficulty level.
+
+2011-10-09 20:02  rjtanner
+
+	* brest/brest.inn: Provide additional invis_exits from the Brest
+	  Inn to the world map - allows players to leave the map easier and
+	  quicker. Placed no_spells tiles beneath the exits.
+
+2011-10-09 19:56  rjtanner
+
+	* brest/privateshops/privateshop_1,
+	  brest/privateshops/privateshop_10,
+	  brest/privateshops/privateshop_11,
+	  brest/privateshops/privateshop_12,
+	  brest/privateshops/privateshop_13,
+	  brest/privateshops/privateshop_14,
+	  brest/privateshops/privateshop_15,
+	  brest/privateshops/privateshop_16,
+	  brest/privateshops/privateshop_17,
+	  brest/privateshops/privateshop_18,
+	  brest/privateshops/privateshop_19,
+	  brest/privateshops/privateshop_2,
+	  brest/privateshops/privateshop_20,
+	  brest/privateshops/privateshop_21,
+	  brest/privateshops/privateshop_22,
+	  brest/privateshops/privateshop_23,
+	  brest/privateshops/privateshop_24,
+	  brest/privateshops/privateshop_25,
+	  brest/privateshops/privateshop_26,
+	  brest/privateshops/privateshop_27,
+	  brest/privateshops/privateshop_28,
+	  brest/privateshops/privateshop_3,
+	  brest/privateshops/privateshop_4,
+	  brest/privateshops/privateshop_5,
+	  brest/privateshops/privateshop_6,
+	  brest/privateshops/privateshop_7,
+	  brest/privateshops/privateshop_8,
+	  brest/privateshops/privateshop_9, brest/shops/brest.weapon,
+	  darcap/darcap/petshop, lake_country/Butakis/B_gshop,
+	  lake_country/Butakis/B_wshop, navar_city/city1church1,
+	  navar_city/southgatehouse, navar_city/temples/ruggilli,
+	  navar_city/westgatehouse, scorn/houses/bowyer,
+	  scorn/houses/jeweler, scorn/houses/kitchen,
+	  scorn/houses/smithery, scorn/houses/tannery, scorn/kar/somehouse,
+	  scorn/misc/beginners_entry, scorn/misc/dragon_guild,
+	  scorn/misc/kboldtemp1, scorn/misc/training_center,
+	  scorn/misc/zoo2, scorn/shops/IPO_scorn, scorn/shops/bank,
+	  scorn/shops/light_shop, scorn/shops/magicshop,
+	  scorn/shops/privateshop, scorn/shops/privateshop_43_36,
+	  scorn/shops/privateshop_43_37, scorn/shops/privateshop_48_34,
+	  scorn/shops/privateshop_48_35, scorn/taverns/goths: Update or
+	  correct entrance x and y coordinates in the map headers.
+
+2011-10-09 07:44  rjtanner
+
+	* darcap/darcap/fishing, santo_dominion/sdgatehouse: Give Sargas's
+	  fine fishing supplies and Santo Dominion Gatehouse maps a default
+	  difficulty level.
+
+2011-10-09 07:36  rjtanner
+
+	* darcap/darcap/fishing, euthville/magic.shop,
+	  quests/cd/cd.inn.752, quests/cd/cd.store.753,
+	  santo_dominion/noble_rest, santo_dominion/sdgatehouse,
+	  wolfsburg/piratechurch: Update or correct entrance x and y
+	  coordinates in the map headers.
+
+2011-10-08 01:20  rjtanner
+
+	* lake_country/Butakis/luck1: Small changes with Tower of Luck, 1st
+	  Floor in Lake Country. Added no_spells tile beneath a section of
+	  fence, changed how fence sections merge with nearby walls. No
+	  functional changes.
+
+2011-10-07 05:28  rjtanner
+
+	* wolfsburg/taverns/dolphinsdelight, world/world_128_109: Major
+	  update to Dolphin's Delight inn located in Wolfsburg. Added outer
+	  perimeter to the original map to match the building exterior.
+	  Rearanged the floor plan to match building exterior. Map
+	  considered an outdoor map so darkness or time of day is visible
+	  when inside; light sources were added. Door opens when a player
+	  approaches it. Updated world map for new map entrance
+	  destination.
+
+2011-10-06 05:39  rjtanner
+
+	* world/world_128_109: Update Wolfsburg world map for new entrance
+	  destination of The Bloody Cutlass inn. Missed in earlier commit.
+
+2011-10-06 05:38  rjtanner
+
+	* wolfsburg/taverns/thebloodycutlass: Major update to The Bloody
+	  Cutlass inn located in Wolfsburg. Added outer perimeter to the
+	  original map to match the building exterior. Rearanged the floor
+	  plan to match building exterior. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; light sources
+	  were added. Door opens when a player approaches it. Updated world
+	  map for new map entrance destination.
+
+2011-10-05 22:20  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus3lvl2: Correct typo in
+	  map title, should be Cloud - not Clowd.
+
+2011-10-05 05:38  rjtanner
+
+	* wolfsburg/inns: Removed the wolfsburg/inns file. See r15158.
+
+2011-10-05 05:36  rjtanner
+
+	* world/world_128_109: Update the world map for Wolfsburg so the
+	  entrance for The Bloody Cutlass and Dolphin's Delight link to the
+	  stand alone map files. Requires r15158.
+
+2011-10-05 05:35  rjtanner
+
+	* wolfsburg/taverns, wolfsburg/taverns/dolphinsdelight,
+	  wolfsburg/taverns/thebloodycutlass: New map files - made the
+	  Wolfsburg Inns (The Blood Cutlass and Dolphin's Delight)
+	  individual maps and placed them in the wolfsburg/tavern
+	  directory.
+
+2011-10-04 05:00  rjtanner
+
+	* wolfsburg/piratechurch, world/world_128_109: Cosmetic updates to
+	  the Run-down Church in Wolfsburg. Added outer perimeter to the
+	  original map to match the building exterior. Rearanged the floor
+	  plan to match building exterior. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; light sources
+	  were added. Updated world map for new map entrance destination.
+
+2011-10-03 02:25  rjtanner
+
+	* quests/cd/cd.inn.752: Relocate light sources under neath floor
+	  tiles for the Inn located in Fortress Ang.
+
+2011-10-02 03:03  rjtanner
+
+	* quests/cd/cd.castle.750, quests/cd/cd.inn.752: Redesigned the Inn
+	  to Fortress Ang. Added outer perimeter to the original map to
+	  match the building exterior. Rearanged the floor plan to match
+	  building exterior. Map considered an outdoor map so darkness or
+	  time of day is visible when inside; light sources were added.
+	  Updated Fortress Ang Castle for entrance coordinate changes in
+	  the Inn.
+
+2011-10-01 02:35  rjtanner
+
+	* quests/cd/cd.castle.750, quests/cd/cd.store.753: Redesigned the
+	  shop in Fortress Ang. Added outer perimeter to the original map
+	  to match the building exterior. Rearanged the floor plan to match
+	  building exterior. Map considered an outdoor map so darkness or
+	  time of day is visible when inside; light sources were added.
+	  Updated Fortress Ang Castle for entrance coordinate changes in
+	  the shop.
+
+2011-10-01 01:43  rjtanner
+
+	* euthville/magic.shop: Remove extra or double stacked floor tile
+	  in the Euthville Magic Shop.
+
+2011-09-30 03:41  rjtanner
+
+	* dungeons/liomal_treasure: Cosmetic changes with how swall merges
+	  with westcwall perimeter and around the garden gates.
+
+2011-09-30 03:35  rjtanner
+
+	* santo_dominion/noble_rest_2nd: Removed some of the columns around
+	  the stairs, they were causing display and merging issues with the
+	  walls and railing (swall).
+
+2011-09-29 04:54  rjtanner
+
+	* darcap/darcap/fishing: Made the Darcap fishing store have the the
+	  same name it is referenced by in the world map, Sargas's fine
+	  fishing supplies.
+
+2011-09-29 04:48  rjtanner
+
+	* darcap/darcap/thilgar_top: Minor cosmetic change to Thilgar's
+	  house, top in Navar. Changed how the fence (swall) merges with
+	  nearby walls.
+
+2011-09-29 04:46  rjtanner
+
+	* darcap/darcap/thilgar: Small cosmetic change to Thilgar's house
+	  in Navar. Changed a wall section next to the doors.
+
+2011-09-29 04:39  rjtanner
+
+	* santo_dominion/noble_rest, santo_dominion/noble_rest_2nd: New
+	  map, second floor to The Noble Resting in Santo Dominion. Stair
+	  updates on the first floor and inkeeper dialog updates in regards
+	  to the second floor.
+
+2011-09-28 04:15  rjtanner
+
+	* santo_dominion/noble_rest: Removed line breaks to NPC dialog in
+	  The Noble Resting located in Santo Dominion.
+
+2011-09-28 04:13  rjtanner
+
+	* santo_dominion/noble_rest, world/world_102_108: Major cosmetic
+	  updates to The Noble Resting in Santo Dominion. Added outer
+	  perimeter to the original map to match the building exterior.
+	  Rearanged the floor plan to match building exterior. Added an
+	  Innkeeper NPC. Map considered an outdoor map so darkness or time
+	  of day is visible when inside; light sources were added. Updated
+	  world map for new map entrance destination.
+
+2011-09-27 04:53  rjtanner
+
+	* santo_dominion/sdgatehouse, world/world_102_108: New map, Santo
+	  Dominion Gatehouse. More of a visual change - but can be modified
+	  for gates with relative ease. World map changes to access the new
+	  map and visual changes to add the Gate House as well.
+
+2011-09-26 06:04  rjtanner
+
+	* santo_dominion/guilds/drunken_barbarian/mainfloor,
+	  world/world_102_108: Layout changes to Santo Dominion world map
+	  in order to make room for a Gatehouse entrance. Reduced the
+	  graveyard size around the New Cthulhu Church, moved the Drunken
+	  Barbarian Guild south one tile. Updated Guild exit back to the
+	  world map.
+
+2011-09-26 05:14  rjtanner
+
+	* world/world_102_108: Cosmetic changes with wall merges on the
+	  Darcap world map.
+
+2011-09-26 02:44  rjtanner
+
+	* scorn/shops/privateshop, scorn/shops/privateshop_43_36,
+	  scorn/shops/privateshop_43_37, scorn/shops/privateshop_48_34,
+	  scorn/shops/privateshop_48_35: Update the Private Shop maps in
+	  Scorn so that each map has a unique name and added region setting
+	  (scorn) for each map.
+
+2011-09-26 02:36  rjtanner
+
+	* darcap/darcap/petshop: Made the Darcap petshop map have the same
+	  name it is referenced by in the world map which is, Fernicious
+	  Fenx Family Pet Emporium.
+
+2011-09-26 02:33  rjtanner
+
+	* darcap/darcap/manor.brown, darcap/darcap/petshop: Added region
+	  'darcap' to Darcap Petshop and Darcap's Manor - brown zone.
+
+2011-09-25 05:28  rjtanner
+
+	* scorn/misc/beginners2: Added 'blessed 1' setting to the random
+	  food items in Beginners2 of Scorn so new players do not encounter
+	  poisonous food.
+
+2011-09-25 01:55  rjtanner
+
+	* brest/privateshops/privateshop_1,
+	  brest/privateshops/privateshop_10,
+	  brest/privateshops/privateshop_11,
+	  brest/privateshops/privateshop_12,
+	  brest/privateshops/privateshop_13,
+	  brest/privateshops/privateshop_14,
+	  brest/privateshops/privateshop_15,
+	  brest/privateshops/privateshop_16,
+	  brest/privateshops/privateshop_17,
+	  brest/privateshops/privateshop_18,
+	  brest/privateshops/privateshop_19,
+	  brest/privateshops/privateshop_2,
+	  brest/privateshops/privateshop_20,
+	  brest/privateshops/privateshop_21,
+	  brest/privateshops/privateshop_22,
+	  brest/privateshops/privateshop_23,
+	  brest/privateshops/privateshop_24,
+	  brest/privateshops/privateshop_25,
+	  brest/privateshops/privateshop_26,
+	  brest/privateshops/privateshop_27,
+	  brest/privateshops/privateshop_28,
+	  brest/privateshops/privateshop_3,
+	  brest/privateshops/privateshop_4,
+	  brest/privateshops/privateshop_5,
+	  brest/privateshops/privateshop_6,
+	  brest/privateshops/privateshop_7,
+	  brest/privateshops/privateshop_8,
+	  brest/privateshops/privateshop_9: Update the Private Shop maps in
+	  Brest so that each map has a unique name (i.e., Private Shop #)
+	  and added region setting (brest) for each map.
+
+2011-09-24 04:14  rjtanner
+
+	* pup_land/raffle/raffle1: Added 'blessed 1' setting to the
+	  random_talisman treasure in the Pupland Raffle 1 reward area so
+	  that the treasure reward is not cursed.
+
+2011-09-24 04:06  rjtanner
+
+	* brest/brest.inn: Removed double stack fence and floor tiles -
+	  probably result of a paste mistake.
+
+2011-09-23 04:43  rjtanner
+
+	* navar_city/temples/ruggilli, navar_city/temples/ruggilli2,
+	  world/world_121_117: Significant update to Temple of Ruggilli in
+	  Navar. Added outer perimeter to the original map to match the
+	  column and layout of the building exterior. Map considered an
+	  outdoor map so darkness or time of day is visible when inside;
+	  light sources already in place. Updated world map for new map
+	  entrance destination. Ruggilli Testing Grounds updated because
+	  staircase location changed.
+
+2011-09-22 05:58  rjtanner
+
+	* navar_city/city1church1: Changes to the Mostrai Cathedral in
+	  Navar. Placed the invis exits beneath the floor tile and also
+	  added no spells tiles beneath them.
+
+2011-09-22 05:17  rjtanner
+
+	* navar_city/city1church1, world/world_121_117: Major cosmetic
+	  update to the Mostrai Cathedral in Navar. Added outer perimeter
+	  to the original map to match the column and archways of the
+	  building exterior. Map considered an outdoor map so darkness or
+	  time of day is visible when inside; light sources already in
+	  place. Updated world map for new map entrance destination.
+
+2011-09-21 04:19  rjtanner
+
+	* navar_city/southgatehouse, world/world_122_117: New map - Port of
+	  Navar, South Gate House. More of a visual change - but can be
+	  modified for gates with relative ease. World map changes to
+	  access the new map and visual changes to add the Gate House as
+	  well.
+
+2011-09-20 03:50  rjtanner
+
+	* navar_city/city1enter: Cosmetic changes with the Navar Gatehouse.
+	  Make the fence (swall) merge nicer with nearby walls.
+
+2011-09-20 03:38  rjtanner
+
+	* navar_city/westgatehouse, world/world_122_116: New map - Port of
+	  Navar, West Gate House. More of a visual change - but can be
+	  modified for gates with relative ease. World map changes to
+	  access the new map and visual changes to add the Gate House as
+	  well.
+
+2011-09-18 07:19  rjtanner
+
+	* scorn/houses/kitchen: Place light sources under floor tiles in
+	  Medieval Kitchen in Scorn.
+
+2011-09-18 07:03  rjtanner
+
+	* scorn/houses/bowyer, scorn/houses/jeweler, scorn/houses/kitchen,
+	  scorn/houses/smithery, scorn/houses/tannery: Remove line breaks
+	  in npc dialog and instruction books for the crafting shops
+	  (bowyer, smithery, tannery, kitchen, jeweler) in Scorn.
+
+2011-09-18 02:28  rjtanner
+
+	* scorn/houses/smithery: Changes to the Metal Smith's Workshop.
+	  Added some windows. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources.
+
+2011-09-18 02:19  rjtanner
+
+	* scorn/houses/smithery, world/world_105_115: Changes to the Metal
+	  Smith's Workshop in Scorn. Enlarged the shop so the hallways
+	  allow for multiple players to pass by each other. Expanded
+	  outside the shop to add grass tiles and cobblestone to visually
+	  match the shop's placement in the world map. Updated world map
+	  for new map entrance destination.
+
+2011-09-18 02:01  rjtanner
+
+	* scorn/houses/smithery: Another update to Metal Smith's Workshop
+	  in Scorn. Changed the stacking order of the columns so they are
+	  above the fence (swall) corners for cosmetic purposes and to make
+	  it consistent with other maps.
+
+2011-09-18 01:59  rjtanner
+
+	* scorn/houses/smithery: Moved no_spell tiles beneath the floor
+	  tiles to the Metal Smith's Workshop in Scorn.
+
+2011-09-18 01:55  rjtanner
+
+	* scorn/houses/tannery: Cosmetic changes to Scorn Tannery. Wall
+	  columns no longer block player line of sight. Additional fence
+	  (swall) sections for nicer merging with nearby walls.
+
+2011-09-18 01:49  rjtanner
+
+	* scorn/houses/tannery: Changes to the Scorn Tannery. Moved
+	  no_spell tiles under the floor tiles for the fenced area. Placed
+	  no_spell tiles under the invis exits outside the door - forgot to
+	  add them.
+
+2011-09-18 01:47  rjtanner
+
+	* scorn/houses/tannery, world/world_105_115: Cosmetic update to the
+	  Scorn Tannery. Door or entrance now opens when a player
+	  approaches. Map considered an outdoor map so darkness or time of
+	  day is visible when inside; added light sources. Updated world
+	  map for new map entrance destination.
+
+2011-09-18 01:20  rjtanner
+
+	* scorn/houses/tannery: Layout changes to the Scorn Tannery house.
+	  Removed the empty (blocked) rows on the right side of the map,
+	  expanded the size of the entrance area by another row of tiles.
+
+2011-09-17 03:06  rjtanner
+
+	* scorn/houses/bowyer, world/world_105_115: Cosmetic update to the
+	  Bowyer's Workshop of Scorn. Door or entrance now opens when a
+	  player approaches. Map considered an outdoor map so darkness or
+	  time of day is visible when inside; added light sources. Updated
+	  world map for new map entrance destination.
+
+2011-09-16 04:21  rjtanner
+
+	* scorn/houses/jeweler, world/world_105_115: Cosmetic update to the
+	  Jeweler's Workshop of Scorn. Door or entrance now opens when a
+	  player approaches. Map considered an outdoor map so darkness or
+	  time of day is visible when inside; light sources already in
+	  place. Entrance area fence (swall*) re-arranged to make that area
+	  larger. Updated world map for new map entrance destination.
+
+2011-09-16 04:07  rjtanner
+
+	* scorn/houses/jeweler: Place no_spells tiles under the floor tiles
+	  in the Jeweler's Workshop of Scorn.
+
+2011-09-15 06:02  rjtanner
+
+	* scorn/houses/kitchen: Make the pillars in the kitchen area no
+	  longer block character line of sight. Moved no_spell tiles
+	  beneath the floor tiles.
+
+2011-09-15 06:00  rjtanner
+
+	* scorn/houses/kitchen, world/world_105_115: Updates to the
+	  Medieval Kitchen in Scorn. Door or entrance now opens when a
+	  player approaches. Map considered an outdoor map so darkness or
+	  time of day is visible when inside; added light sources. Updated
+	  world map for new map entrance destination.
+
+2011-09-14 20:23  alestan
+
+	* python/Moving_Fog.py: Decreased the number of fogs per seed fog
+
+2011-09-14 05:42  rjtanner
+
+	* scorn/shops/light_shop, world/world_105_115: Updates to Jacob's
+	  Lighting Emporium in Scorn. Floor plan now similar to building
+	  exterior. Door or entrance now opens when a player approaches.
+	  Map considered an outdoor map so darkness or time of day is
+	  visible when inside; added light sources. Updated world map for
+	  new map entrance destination.
+
+2011-09-13 04:41  rjtanner
+
+	* scorn/taverns/goths, scorn/taverns/goths0, scorn/taverns/goths2,
+	  world/world_105_115: Updated Goth's Taven in Scorn so that the
+	  map exterior matches it's placement in the world map. Updated
+	  world map for new entrance destination to the Tavern. Updated
+	  stair coordiantes on the upper and lower level of the Tavern so
+	  that they line up with the other levels.
+
+2011-09-13 04:23  rjtanner
+
+	* scorn/taverns/goths, world/world_105_115: Floor layout changes to
+	  Goth's Tavern in Scorn. Door moved to left side of the map and
+	  added windows to match the building exterior. Added a cloak room
+	  near the entrance. Moved the gate password hint so players should
+	  stumble upon it more easily. Updated world map for new entrance
+	  coordinates.
+
+2011-09-13 03:56  rjtanner
+
+	* scorn/taverns/goths: Removed NPC from the floor tile inventory
+	  and placed them on top of the tile.
+
+2011-09-10 16:39  alestan
+
+	* darcap/darcap/petshop: Changed puddle arch in map to rain1 so
+	  that it isn't a rain cloud.
+
+2011-09-10 16:38  alestan
+
+	* scorn/houses/house3.bas2: Changed puddle arch in map to rain1 so
+	  that it isn't a rain cloud.
+
+2011-09-10 10:21  ryo_saeba
+
+	* scorn/misc/beginners_entry: Add dialog hints.
+
+2011-09-08 04:46  rjtanner
+
+	* scorn/misc/beginners: Added creator information to the map
+	  header, removed the Created by sign from within the map (which
+	  also had out of date contact and bug report information)
+
+2011-09-08 04:43  rjtanner
+
+	* scorn/misc/beginners, scorn/misc/beginners_entry,
+	  world/world_105_116: New entrance map for Beginners map in Scorn.
+	  Modifications to Beginners map to tie in to the entrance map such
+	  as exit changes and special quest key. World map changes to use
+	  the Beginners Entrance map.
+
+2011-09-04 09:37  ryo_saeba
+
+	* brest/shops/brest.weapon, lake_country/Butakis/B_wshop,
+	  lake_country/shops/Mopoon_wshop: Fix shop item type to use
+	  singular form.
+
+2011-09-04 08:27  ryo_saeba
+
+	* scorn/kar/somehouse3: Replace stairs up with stairs down, since
+	  it's a higher level.
+
+2011-08-31 05:23  rjtanner
+
+	* scorn/misc/kboldtemp1, scorn/misc/kboldtemp1b1,
+	  world/world_104_115: Updates to the Abandoned Temple, Entrance in
+	  Scorn. Map is now surrounded by grass and cobblestone so it
+	  matches it's placement in Scorn. Added invis exits on the other
+	  side of the weak walls as a result of this. Updated world map
+	  destination coordinates due to layout changes of the temple map.
+	  Updated Dungeon Level 1 stairway due to changes on the first
+	  level.
+
+2011-08-27 19:44  rjtanner
+
+	* scorn/shops/bank, world/world_105_115: Cosmetic updates to the
+	  Bank of Skud in Scorn. Walls are now all stone and no longer
+	  using the blocked archetype. Exapnded the footprint to make it
+	  symetrical. Added book shelves in the office area. Surrounded the
+	  map with grass and cobblestone so it matches it's placement in
+	  Scorn. Updated world map for new map entrance coordinates.
+
+2011-08-27 18:39  akirschbaum
+
+	* lake_country/snake_pit/Chaos_lair2: Remove redundant pits.
+
+2011-08-27 18:36  akirschbaum
+
+	* lake_country/snake_pit/Chaos_lair1: Remove unneeded floor
+	  objects.
+
+2011-08-27 18:32  akirschbaum
+
+	* lake_country/snake_pit/Chaos_lair1: Remove redundant pits.
+
+2011-08-27 16:41  akirschbaum
+
+	* lake_country/elven_moon/elvenmoon.1: Remove duplicate floors to
+	  fix display issues.
+
+2011-08-27 16:32  akirschbaum
+
+	* lake_country/ebony/entrance2: Unify maps.
+
+2011-08-27 16:31  akirschbaum
+
+	* lake_country/ebony/entrance2: Fix misspelled attribute names.
+
+2011-08-27 16:28  akirschbaum
+
+	* lake_country/ebony/entrance1, lake_country/ebony/entrance2: Unify
+	  maps.
+
+2011-08-27 16:19  akirschbaum
+
+	* lake_country/ebony/entrance1, lake_country/ebony/entrance2: Move
+	  boulder logic hidden under fake walls into empty space.
+
+2011-08-27 15:55  akirschbaum
+
+	* lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/James_house,
+	  lake_country/Butakis/houses/Seans_house: Connect formerly unused
+	  connections to burglar protection.
+
+2011-08-27 14:11  akirschbaum
+
+	* lake_country/Butakis/Butakis0, lake_country/Butakis/Rlib2,
+	  lake_country/Butakis/Wist_portal,
+	  lake_country/Butakis/Wist_study, lake_country/Butakis/arena,
+	  lake_country/Butakis/church-1, lake_country/Butakis/gate_inner,
+	  lake_country/Butakis/gate_outer,
+	  lake_country/Butakis/houses/Bobs_house,
+	  lake_country/Butakis/houses/Jacks_house,
+	  lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/James_house,
+	  lake_country/Butakis/houses/Sams_house,
+	  lake_country/Butakis/houses/Seans_house,
+	  lake_country/Butakis/inn, lake_country/Butakis/luck2,
+	  lake_country/Butakis/luck3, lake_country/Butakis/p_ghouse_s,
+	  lake_country/Butakis/prison-1, lake_country/Butakis/prison_s,
+	  lake_country/Butakis/prison_w, lake_country/DA,
+	  lake_country/Mwizard/Mwizard0, lake_country/Mwizard/Mwizard1,
+	  lake_country/Mwizard/Mwizard3, lake_country/Mwizard/Mwizard5,
+	  lake_country/Mwizard/MwizardD, lake_country/Mwizard/MwizardT,
+	  lake_country/RETower/tower0, lake_country/RETower/tower1,
+	  lake_country/RETower/tower2, lake_country/RETower/tower3,
+	  lake_country/RETower/tower5, lake_country/dragon_hangar/hangar,
+	  lake_country/ebony/entrance1, lake_country/ebony/entrance2,
+	  lake_country/ebony/masterlev,
+	  lake_country/elven_moon/elvenmoon.1,
+	  lake_country/elven_moon/elvenmoon.5, lake_country/marsh/marsh1_1,
+	  lake_country/marsh/marsh1_2, lake_country/marsh/marsh2_1,
+	  lake_country/marsh/marsh2_2, lake_country/shops/Mopoon_wshop,
+	  lake_country/shops/Olds_jewel, lake_country/shops/clems_archery,
+	  lake_country/shops/klondors_wands,
+	  lake_country/small_buildings/LC_inn1,
+	  lake_country/small_buildings/burial_ground,
+	  lake_country/small_buildings/hut_Galmorus,
+	  lake_country/snake_pit/Chaos_lair1,
+	  lake_country/snake_pit/Chaos_lair2,
+	  lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4,
+	  lake_country/snake_pit/Takuse_lair, lake_country/snake_pit/pit,
+	  lake_country/snake_pit/snakepit_1,
+	  lake_country/snake_pit/snakepit_2,
+	  lake_country/snake_pit/snakepit_3,
+	  lake_country/snake_pit/snakepit_4: Reformat/fix msg...endmsg
+	  attributes in Lake Country.
+
+2011-08-27 08:02  rjtanner
+
+	* scorn/misc/dragon_guild, world/world_105_115: Cosmetic updates to
+	  the Dragon Guild of Scorn. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Door now opens when a player tries to leave the map.
+	  Added ground outside the map so. Updated world map for the new
+	  entrance to the guild map.
+
+2011-08-26 17:58  meflin2
+
+	* dungeons/train/goblin, dungeons/train/ogre,
+	  dungeons/train/skeleton, dungeons/train/zombie: Khalehs updates
+	  to the training centers from the tracker for dragonbreath
+
+2011-08-26 04:21  rjtanner
+
+	* scorn/misc/zoo2: Additional cages and monsters to the Scorn Zoo,
+	  Lower Level. Monsters include sheep, geese, horses, awful rats,
+	  ice warrior, shadow monsters, bear and polar bears, sorcerer,
+	  wolves and dire wolves, elemental witches, para-elemetnals.
+
+2011-08-25 06:05  rjtanner
+
+	* scorn/misc/zoo, scorn/misc/zoo2: Cosmetic update to Scorn Zoo,
+	  Lower Level. Walls and flooring similar to the first level. Added
+	  decor and non working gates to the cages, similar again to the
+	  upper level. Adjust stairs destination of the Scorn Zoo due to
+	  changes made onthe Lower Level.
+
+2011-08-24 14:58  meflin2
+
+	* styles/monsterstyles/humanoid/humanoid_19: fix grand titans level
+	  being lower then a base titan
+
+2011-08-24 14:50  meflin2
+
+	* dungeons/train/goblin, dungeons/train/ogre,
+	  dungeons/train/skeleton, dungeons/train/zombie: Khalehs updates
+	  to the training centers from the tracker
+
+2011-08-24 04:36  rjtanner
+
+	* scorn/kar/somehouse, scorn/kar/somehouse2, world/world_104_115:
+	  Redesigned the entrance level to Friendly Giant's Tower in Scorn.
+	  Map now reflects a tower (aka round.) Map considered an outdoor
+	  map so darkness or time of day is visible when inside; added
+	  light sources. Updated world map for new map entrance
+	  destination. Updated level 2 since the stairs on level 1 have
+	  moved.
+
+2011-08-24 04:03  rjtanner
+
+	* scorn/shops/IPO_scorn, world/world_104_115: Cosmetic and some
+	  layout updates to the Scorn Imperial Post Office. Map considered
+	  an outdoor map so darkness or time of day is visible when inside;
+	  added light sources. Removed forced line breaks in the Manual and
+	  Prospectus along with formatting changes to hopefully make
+	  reading easier. Updated world map for new map entrance
+	  destination.
+
+2011-08-23 06:00  rjtanner
+
+	* scorn/misc/training_center, world/world_104_115: Cosmetic updates
+	  to the Training Center in Scorn. Map considered an outdoor map so
+	  darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination.
+
+2011-08-23 05:45  rjtanner
+
+	* scorn/misc/training_center: Removed line breaks in NPC dialogue,
+	  sign and crumpled note.
+
+2011-08-23 05:35  rjtanner
+
+	* scorn/misc/prison: Removed line breaks in NPC dialogue.
+
+2011-08-22 06:14  rjtanner
+
+	* ChangeLog: Updated ChangeLog generated using svn2cl
+
 2011-08-22 05:53  rjtanner
 
 	* scorn/misc/prison.1: Cosmetic change with how spiked wall merges
