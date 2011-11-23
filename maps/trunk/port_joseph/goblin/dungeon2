@@ -9,7 +9,7 @@ enter_x 4
 enter_y 1
 msg
 Created:  1994-08-27 langley (langley@fermat.dartmouth.edu)
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2011-11-22 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1388,15 +1388,11 @@ arch ogre
 name buggle
 msg
 @match key
-Key?  You must be thinking of
-my cousin upstairs.  He keeps
-all the keys.
+Key?  You must be thinking of my cousin upstairs.  He keeps all the keys.
 @match buggle
 That's me name.  Whats it to ya?
 @match *
-Yeah, so you killed all my gang.
-You don't want to mess we me.
-Or my dogs.  You are free to go.
+Yeah, so you killed all my gang. You don't want to mess we me. Or my dogs.  You are free to go.
 endmsg
 hp 100
 x 12
