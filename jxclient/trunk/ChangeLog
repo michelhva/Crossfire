@@ -1,3 +1,7 @@
+2011-11-23  Andreas Kirschbaum
+
+	* Reorder code to prevent crash on Solaris.
+
 2011-11-19  Andreas Kirschbaum
 
 	* Middle-click in skills dialogs uses the skill (sends /use_skill

@@ -161,6 +161,12 @@ public class JXCWindowRenderer {
     private final DisplayMode defaultDisplayMode;
 
     /**
+     * The maximal size of a window.
+     */
+    @NotNull
+    private final Rectangle maximumWindowBounds = GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds(); // This call hangs on Solaris when called from the EDT.
+
+    /**
      * A {@link MouseInputListener} that forwards to {@link #mouseTracker}.
      */
     @NotNull
@@ -339,6 +345,7 @@ public class JXCWindowRenderer {
         graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
         graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
         defaultDisplayMode = graphicsDevice.getDisplayMode();
+        debugScreenWrite("getMaxWindowDimension: maximum window bounds="+maximumWindowBounds);
     }
 
     /**
@@ -586,9 +593,6 @@ public class JXCWindowRenderer {
      */
     @NotNull
     private Dimension getMaxWindowDimension(@NotNull final Insets frameInsets) {
-        final Rectangle maximumWindowBounds = graphicsEnvironment.getMaximumWindowBounds();
-        debugScreenWrite("getMaxWindowDimension: maximum window bounds="+maximumWindowBounds);
-
         final GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
         final Insets screenInsets = Toolkit.getDefaultToolkit().getScreenInsets(graphicsConfiguration);
         debugScreenWrite("getMaxWindowDimension: screen insets="+screenInsets);
