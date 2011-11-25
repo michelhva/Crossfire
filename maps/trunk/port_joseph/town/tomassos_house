@@ -3,13 +3,14 @@ name Tomasso's house
 difficulty 1
 region portjoseph
 width 25
-height 20
+height 22
 enter_x 17
 enter_y 18
 msg
 Created:  2003-07-21
 Modified: 2011-11-24 Rick Tanner
 endmsg
+outdoor 1
 end
 arch sea
 end
@@ -166,6 +167,24 @@ end
 arch grass
 y 19
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+y 20
+end
+arch grass
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+y 21
+end
+arch grass
+y 21
+end
 arch sea
 x 1
 end
@@ -251,6 +270,21 @@ end
 arch brush
 x 1
 y 19
+end
+arch grass
+x 1
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 1
+y 21
+end
+arch brush
+x 1
+y 21
 end
 arch sea
 x 2
@@ -347,6 +381,21 @@ end
 arch grass
 x 2
 y 19
+end
+arch grass
+x 2
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 2
+y 21
+end
+arch grass
+x 2
+y 21
 end
 arch sea
 x 3
@@ -443,6 +492,21 @@ arch brush
 x 3
 y 19
 end
+arch grass
+x 3
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 3
+y 21
+end
+arch brush
+x 3
+y 21
+end
 arch sea
 x 4
 end
@@ -534,6 +598,21 @@ arch grass
 x 4
 y 19
 end
+arch brush
+x 4
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 4
+y 21
+end
+arch grass
+x 4
+y 21
+end
 arch sea
 x 5
 end
@@ -615,6 +694,10 @@ arch wall_3_2
 x 5
 y 13
 end
+arch light2
+x 5
+y 14
+end
 arch woodfloor2
 x 5
 y 14
@@ -638,6 +721,10 @@ end
 arch wall_2_1_1
 x 5
 y 16
+end
+arch light2
+x 5
+y 17
 end
 arch woodfloor2
 x 5
@@ -662,6 +749,28 @@ end
 arch wall_2_2_1
 x 5
 y 19
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 5
+y 20
+end
+arch grass
+x 5
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 5
+y 21
+end
+arch grass
+x 5
+y 21
 end
 arch sea
 x 6
@@ -766,6 +875,21 @@ arch wall_2_1_2
 x 6
 y 19
 end
+arch grass
+x 6
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 6
+y 21
+end
+arch brush
+x 6
+y 21
+end
 arch sea
 x 7
 end
@@ -801,6 +925,10 @@ arch pstone_1
 x 7
 y 8
 end
+arch light2
+x 7
+y 9
+end
 arch woodfloor2
 x 7
 y 9
@@ -814,6 +942,10 @@ x 7
 y 10
 end
 arch woodfloor2
+x 7
+y 11
+end
+arch light4
 x 7
 y 11
 end
@@ -833,6 +965,10 @@ arch woodfloor2
 x 7
 y 14
 end
+arch light4
+x 7
+y 14
+end
 arch woodfloor2
 x 7
 y 15
@@ -842,6 +978,10 @@ x 7
 y 16
 end
 arch woodfloor2
+x 7
+y 17
+end
+arch light4
 x 7
 y 17
 end
@@ -860,6 +1000,21 @@ end
 arch wall_2_1_2
 x 7
 y 19
+end
+arch grass
+x 7
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 7
+y 21
+end
+arch grass
+x 7
+y 21
 end
 arch sea
 x 8
@@ -895,6 +1050,10 @@ end
 arch pstone_1
 x 8
 y 8
+end
+arch light2
+x 8
+y 9
 end
 arch woodfloor2
 x 8
@@ -952,6 +1111,21 @@ end
 arch wall_2_1_2
 x 8
 y 19
+end
+arch grass
+x 8
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 8
+y 21
+end
+arch brush
+x 8
+y 21
 end
 arch sea
 x 9
@@ -1051,6 +1225,21 @@ end
 arch wall_2_1_2
 x 9
 y 19
+end
+arch brush
+x 9
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 9
+y 21
+end
+arch grass
+x 9
+y 21
 end
 arch sea
 x 10
@@ -1176,6 +1365,28 @@ arch wall_3_1
 x 10
 y 19
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 10
+y 20
+end
+arch grass
+x 10
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 10
+y 21
+end
+arch grass
+x 10
+y 21
+end
 arch sea
 x 11
 end
@@ -1282,6 +1493,28 @@ arch wall_2_1_2
 x 11
 y 19
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 11
+y 20
+end
+arch brush
+x 11
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 11
+y 21
+end
+arch brush
+x 11
+y 21
+end
 arch sea
 x 12
 end
@@ -1316,6 +1549,10 @@ end
 arch pstone_1
 x 12
 y 8
+end
+arch light2
+x 12
+y 9
 end
 arch woodfloor2
 x 12
@@ -1341,6 +1578,10 @@ arch table_3
 x 12
 y 12
 end
+arch light4
+x 12
+y 12
+end
 arch woodfloor2
 x 12
 y 13
@@ -1361,6 +1602,10 @@ arch woodfloor2
 x 12
 y 16
 end
+arch light4
+x 12
+y 16
+end
 arch woodfloor2
 x 12
 y 17
@@ -1376,6 +1621,28 @@ end
 arch wall_2_1_2
 x 12
 y 19
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 12
+y 20
+end
+arch grass
+x 12
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 12
+y 21
+end
+arch grass
+x 12
+y 21
 end
 arch sea
 x 13
@@ -1411,6 +1678,10 @@ end
 arch pstone_1
 x 13
 y 8
+end
+arch light2
+x 13
+y 9
 end
 arch woodfloor2
 x 13
@@ -1464,6 +1735,28 @@ arch wall_2_1_2
 x 13
 y 19
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 13
+y 20
+end
+arch brush
+x 13
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 13
+y 21
+end
+arch brush
+x 13
+y 21
+end
 arch sea
 x 14
 end
@@ -1498,6 +1791,10 @@ end
 arch pstone_1
 x 14
 y 8
+end
+arch light2
+x 14
+y 9
 end
 arch woodfloor2
 x 14
@@ -1560,6 +1857,28 @@ arch wall_2_1_2
 x 14
 y 19
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 14
+y 20
+end
+arch grass
+x 14
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 14
+y 21
+end
+arch grass
+x 14
+y 21
+end
 arch sea
 x 15
 end
@@ -1619,6 +1938,10 @@ arch woodfloor2
 x 15
 y 12
 end
+arch light4
+x 15
+y 12
+end
 arch woodfloor2
 x 15
 y 13
@@ -1650,6 +1973,30 @@ end
 arch wall_2_1_2
 x 15
 y 19
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 15
+y 20
+end
+arch brush
+x 15
+y 20
+move_block all
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 15
+y 21
+end
+arch grass
+x 15
+y 21
+move_block all
 end
 arch sea
 x 16
@@ -1742,9 +2089,18 @@ arch woodfloor2
 x 16
 y 16
 end
+arch light4
+x 16
+y 16
+end
 arch woodfloor2
 x 16
 y 17
+end
+arch button_small
+x 16
+y 18
+connected 1
 end
 arch woodfloor2
 x 16
@@ -1757,6 +2113,33 @@ end
 arch wall_1_3
 x 16
 y 19
+end
+arch dungeon_magic
+x 16
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 16
+y 20
+end
+arch brush
+x 16
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 16
+y 21
+end
+arch brush
+x 16
+y 21
+move_block all
 end
 arch shallow_sea
 x 17
@@ -1827,6 +2210,10 @@ arch woodfloor2
 x 17
 y 13
 end
+arch light4
+x 17
+y 13
+end
 arch woodfloor2
 x 17
 y 14
@@ -1847,25 +2234,48 @@ arch woodfloor2
 x 17
 y 17
 end
+arch button_small
+x 17
+y 18
+connected 1
+end
 arch woodfloor2
 x 17
 y 18
+end
+arch button_small
+x 17
+y 19
+connected 1
+end
+arch woodfloor2
+x 17
+y 19
+end
+arch odoorn2_closed_1
+x 17
+y 19
+connected 1
+end
+arch dungeon_magic
+x 17
+y 20
 end
 arch invis_exit
 slaying /world/world_101_114
 hp 15
 sp 27
 x 17
-y 19
+y 20
 end
-arch woodfloor2
+arch grass
 x 17
-y 19
+y 20
 end
-arch door_2
+arch brush
 x 17
-y 19
-move_block 0
+y 21
+move_block all
 end
 arch sea
 x 18
@@ -1902,6 +2312,10 @@ arch pstone_1
 x 18
 y 8
 end
+arch light2
+x 18
+y 9
+end
 arch woodfloor2
 x 18
 y 9
@@ -1915,6 +2329,10 @@ x 18
 y 10
 end
 arch woodfloor2
+x 18
+y 11
+end
+arch light4
 x 18
 y 11
 end
@@ -1946,7 +2364,16 @@ arch woodfloor2
 x 18
 y 17
 end
+arch button_small
+x 18
+y 18
+connected 1
+end
 arch woodfloor2
+x 18
+y 18
+end
+arch light4
 x 18
 y 18
 end
@@ -1957,6 +2384,26 @@ end
 arch wall_1_4
 x 18
 y 19
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 18
+y 20
+end
+arch dungeon_magic
+x 18
+y 20
+end
+arch grass
+x 18
+y 20
+end
+arch grass
+x 18
+y 21
+move_block all
 end
 arch sea
 x 19
@@ -2033,6 +2480,10 @@ arch woodfloor2
 x 19
 y 15
 end
+arch light4
+x 19
+y 15
+end
 arch woodfloor2
 x 19
 y 16
@@ -2056,6 +2507,16 @@ end
 arch wall_2_1_2
 x 19
 y 19
+end
+arch brush
+x 19
+y 20
+move_block all
+end
+arch grass
+x 19
+y 21
+move_block all
 end
 arch sea
 x 20
@@ -2116,6 +2577,10 @@ arch wall_2_1_1
 x 20
 y 11
 end
+arch light2
+x 20
+y 12
+end
 arch woodfloor2
 x 20
 y 12
@@ -2148,6 +2613,10 @@ arch wall_2_1_1
 x 20
 y 15
 end
+arch light2
+x 20
+y 16
+end
 arch woodfloor2
 x 20
 y 16
@@ -2179,6 +2648,21 @@ end
 arch wall_2_2_4
 x 20
 y 19
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 20
+y 20
+end
+arch brush
+x 20
+y 20
+end
+arch brush
+x 20
+y 21
 end
 arch sea
 x 21
@@ -2265,6 +2749,21 @@ end
 arch brush
 x 21
 y 19
+end
+arch brush
+x 21
+y 20
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 21
+y 21
+end
+arch brush
+x 21
+y 21
 end
 arch sea
 x 22
@@ -2357,6 +2856,14 @@ arch brush
 x 22
 y 19
 end
+arch grass
+x 22
+y 20
+end
+arch brush
+x 22
+y 21
+end
 arch sea
 x 23
 end
@@ -2442,6 +2949,14 @@ end
 arch brush
 x 23
 y 19
+end
+arch grass
+x 23
+y 20
+end
+arch grass
+x 23
+y 21
 end
 arch sea
 x 24
@@ -2619,4 +3134,12 @@ end
 arch brush
 x 24
 y 19
+end
+arch brush
+x 24
+y 20
+end
+arch grass
+x 24
+y 21
 end
