@@ -8,7 +8,7 @@ enter_x 16
 enter_y 6
 msg
 Created:  1994-05-17 langley (langley@fermat.dartmouth.edu)
-Modified: 2009-04-29 Kevin Bulgrien
+Modified: 2011-11-24 Rick Tanner
 endmsg
 end
 arch brush
@@ -578,8 +578,7 @@ end
 arch pirate
 msg
 @match redeye
-Heh, he's me mate oer in the
-corner.
+Heh, he's me mate oer in the corner.
 @match *
 Arrr!  Get him ye landlubber!
 endmsg
@@ -1084,12 +1083,11 @@ arch thief_1
 name thief
 msg
 @match treasure
-Hah, you want in our treasure, well you might have better luck than us.
-Its old Moogly Bill's treasure we be chattin' about.
+Hah, you want in our treasure, well you might have better luck than us. Its old Moogly Bill's treasure we be chattin' about.
 @match grave|secret
-Yes, he was buried with his treasure map.  Only Pegleg Percival knows where.
+Yes, he was buried with his treasure map. Only Pegleg Percival knows where.
 @match redeye
-Redeye is in the back room watching the fight.  He's the ugly one.
+Redeye is in the back room watching the fight. He's the ugly one.
 endmsg
 x 10
 y 12
