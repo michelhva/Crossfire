@@ -8,7 +8,7 @@ enter_x 3
 enter_y 3
 msg
 Created:  Andreas Vogl (red.blaze@gmx.net)
-Modified: 2011-10-20 Rick Tanner
+Modified: 2011-11-26 Rick Tanner
 endmsg
 end
 arch marble
@@ -936,21 +936,11 @@ arch woman2
 name Lara
 msg
 @match marr[iy]
-My husband's name is Romeo. If you
-ever see him, tell him that I love him
-and that I'll wait for him in
-afterlife!
-There's no way for you to set me free,
-I'm heavily chained... *crying*
+My husband's name is Romeo. If you ever see him, tell him that I love him and that I'll wait for him in afterlife! There's no way for you to set me free, I'm heavily chained... *crying*
 @match romeo
-He is working on the translation
-of ancient scripts. The Evil Masters
-don't want them to be translated...
-And now they captured me to punish him!
+He is working on the translation of ancient scripts. The Evil Masters don't want them to be translated... And now they captured me to punish him!
 @match *
-... They captured me...
-the night after I got married...
-*crying*
+... They captured me... the night after I got married... *crying*
 endmsg
 hp 300
 x 4
@@ -1023,9 +1013,7 @@ end
 arch a_townsman
 msg
 @match *
-We are all doomed to die. And you will
-die too. Nobody is strong enough to
-defeat the Evil Masters...
+We are all doomed to die. And you will die too. Nobody is strong enough to defeat the Evil Masters...
 endmsg
 hp 150
 maxhp 150
@@ -4065,9 +4053,7 @@ end
 arch veiled_woman3
 msg
 @match *
-I got captured during the fight for
-Shining Village. All of my friends
-have died.
+I got captured during the fight for Shining Village. All of my friends have died.
 endmsg
 hp 150
 maxhp 150
@@ -4843,9 +4829,7 @@ y 14
 end
 arch magic_mouth
 msg
-You are very proud that you have
-finally discovered the secret passage
-into the castle.
+You are very proud that you have finally discovered the secret passage into the castle.
 endmsg
 x 23
 y 15
@@ -4860,9 +4844,7 @@ y 15
 end
 arch magic_mouth
 msg
-You are very proud that you have
-finally discovered the secret passage
-into the castle.
+You are very proud that you have finally discovered the secret passage into the castle.
 endmsg
 x 23
 y 16
