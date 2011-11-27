@@ -8,7 +8,7 @@ enter_x 10
 enter_y 19
 msg
 Created:  1996-04-02
-Modified: 2008-10-07 Rick Tanner
+Modified: 2011-11-26 Rick Tanner
 endmsg
 end
 arch grass
@@ -1014,38 +1014,21 @@ arch unicorn
 name Kurte
 msg
 @match jacob
-I didn't see who murdered him. The
-only way to find out is to ask Jacob
-himself. I know this is cruel, but you
-must summon him from the grave - as a
-zombie.
+I didn't see who murdered him. The only way to find out is to ask Jacob himself. I know this is cruel, but you must summon him from the grave - as a zombie.
 @match zombie
-The importance of your mission shall
-justify the usage of necromantic magic.
+The importance of your mission shall justify the usage of necromantic magic.
 @match necro
-You dare to ask ME about necromantic
-spells? By the bounds of honour, I
-cannot teach it to you.
+You dare to ask ME about necromantic spells? By the bounds of honour, I cannot teach it to you.
 @match evil master
-The Evil Masters pose a threat to this
-world. But don't forget that you
-came here to save Eureca.
+The Evil Masters pose a threat to this world. But don't forget that you came here to save Eureca.
 @match gothwolte
-Gothwolte is older than I expected
-first. He is even older than us. You
-must be very careful...
+Gothwolte is older than I expected first. He is even older than us. You must be very careful...
 @match sword
-I forgot the name of Gothwolte's
-sword. Ask Timothey, my scholar. He
-lives in lone village.
+I forgot the name of Gothwolte's sword. Ask Timothey, my scholar. He lives in lone village.
 @match eureca
-I cannot see him. But still, I feel
-that he is alive. Hurry to find him,
-he must be in serious trouble.
+I cannot see him. But still, I feel that he is alive. Hurry to find him, he must be in serious trouble.
 @match *
-You have rude manners...
-If you want to ask us anything,
-you should speak more precisely.
+You have rude manners... If you want to ask us anything, you should speak more precisely.
 endmsg
 Con 100
 hp 20000
@@ -1325,8 +1308,7 @@ arch sign
 name Kurtes' house
 msg
 Kurtes' house:
-   Kurte likes all people with good
-   manners...
+   Kurte likes all people with good manners...
 endmsg
 x 12
 y 18
