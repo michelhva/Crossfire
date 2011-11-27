@@ -4,7 +4,7 @@ region portjoseph
 width 50
 height 50
 msg
-Modified: 2011-11-24 Rick Tanner
+Modified: 2011-11-26 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_101_113
@@ -3192,7 +3192,8 @@ end
 arch inn
 name Portia's house
 slaying /port_joseph/town/portia
-hp 2
+hp 16
+sp 26
 x 13
 y 35
 end
