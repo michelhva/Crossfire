@@ -9,7 +9,7 @@ enter_x 3
 enter_y 15
 msg
 Created:  1996-06-08
-Modified: 2008-10-07 Rick Tanner
+Modified: 2011-11-29 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1136,8 +1136,7 @@ end
 arch magic_mouth
 name 3 - no symbol
 msg
-This teleporter seems to require a
-certain item to activate.
+This teleporter seems to require a certain item to activate.
 endmsg
 x 8
 y 10
@@ -1285,31 +1284,15 @@ arch thief
 name Andersen, boss of the gang
 msg
 @match siegfried
-Haha, he is the hero of this land.
-He would never kill anybody!
-I don't believe you.
+Haha, he is the hero of this land. He would never kill anybody! I don't believe you.
 @match cordish
-Siegfried and Cordish are one and the
-same person? Now I begin to
-understand...
-I will kill him! And you may pass
-friend. But be careful...
-I hear frightening noises from the
-castle every night!
+Siegfried and Cordish are one and the same person? Now I begin to understand... I will kill him! And you may pass friend. But be careful... I hear frightening noises from the castle every night!
 @match path|gate
-If you want to pass,
-please tell me "who killed Jacob, my
-follower".
+If you want to pass, please tell me "who killed Jacob, my follower".
 @match boss|gang
-Yeah!
-We Robbed the mysterious cristal from
-the castle by using the secret Path!
-And now my hometown has been destroyed
-due to our actions. I feel SO sad...
+Yeah! We Robbed the mysterious cristal from the castle by using the secret Path! And now my hometown has been destroyed due to our actions. I feel SO sad...
 @match *
-I'm the Boss of the gang. I am the
-only person who survived the
-destruction of Shining Village.
+I'm the Boss of the gang. I am the only person who survived the destruction of Shining Village.
 endmsg
 face thief.111
 hp 1000
