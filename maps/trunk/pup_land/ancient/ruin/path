@@ -9,7 +9,7 @@ enter_x 3
 enter_y 3
 msg
 Created:  1996-12-08
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2011-11-29 Rick Tanner
 endmsg
 end
 arch blocked
@@ -4715,9 +4715,7 @@ y 12
 end
 arch magic_mouth
 msg
-You can feel the presence of powerful
-earth-spirits. It might be dangerous
-to jump down this hole...
+You can feel the presence of powerful earth-spirits. It might be dangerous to jump down this hole...
 endmsg
 x 22
 y 13
@@ -4900,9 +4898,7 @@ y 29
 end
 arch magic_mouth
 msg
-Dammit! The tunnel must have collapsed
-recently. Huge rocks are blocking the
-way now.
+Dammit! The tunnel must have collapsed recently. Huge rocks are blocking the way now.
 endmsg
 x 23
 resist_physical 30
@@ -5207,12 +5203,8 @@ y 22
 end
 arch magic_mouth
 msg
-The spirit of the mountain touches
-your mind:
-"I wanted to prevent mortals from
-entering the evil castle again. You
-defeated my minions  but you are still
-a child yet."
+The spirit of the mountain touches your mind:
+"I wanted to prevent mortals from entering the evil castle again. You defeated my minions but you are still a child yet."
 endmsg
 x 24
 y 23
