@@ -253,6 +253,13 @@ public class GUIItemShortcut extends GUIItem {
                 shortcut.execute();
             }
             break;
+
+        case Modifiers.CTRL:
+            if (shortcut != null && shortcut instanceof ShortcutSpell) {
+                final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
+                shortcutSpell.setCast(!shortcutSpell.isCast());
+            }
+            break;
         }
     }
 

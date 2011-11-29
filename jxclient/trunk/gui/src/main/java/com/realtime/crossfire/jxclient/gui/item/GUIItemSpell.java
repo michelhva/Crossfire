@@ -247,6 +247,11 @@ public class GUIItemSpell extends GUIItemItem {
             commandQueue.sendNcom(false, "cast "+spell.getName());
             currentSpellManager.setCurrentSpell(spell);
             break;
+
+        case Modifiers.CTRL:
+            commandQueue.sendNcom(false, "invoke "+spell.getName());
+            currentSpellManager.setCurrentSpell(spell);
+            break;
         }
     }
 

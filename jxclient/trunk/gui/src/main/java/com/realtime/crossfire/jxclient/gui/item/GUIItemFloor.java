@@ -198,6 +198,10 @@ public class GUIItemFloor extends GUIItemItem {
                 crossfireServerConnection.sendExamine(item.getTag());
             }
             break;
+
+        case Modifiers.CTRL:
+            crossfireServerConnection.sendApply(item.getTag());
+            break;
         }
     }
 
