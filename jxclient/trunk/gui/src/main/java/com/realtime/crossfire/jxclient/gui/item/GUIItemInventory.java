@@ -201,6 +201,14 @@ public class GUIItemInventory extends GUIItemItem {
         case Modifiers.SHIFT:
             crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
             break;
+
+        case Modifiers.CTRL:
+            crossfireServerConnection.sendApply(item.getTag());
+            break;
+
+        case Modifiers.CTRL|Modifiers.SHIFT:
+            crossfireServerConnection.sendMark(item.getTag());
+            return;
         }
     }
 
