@@ -8,7 +8,7 @@ enter_x 7
 enter_y 1
 msg
 Created:  1996-05-18
-Modified: 2008-10-09 Rick Tanner
+Modified: 2011-11-29 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -440,24 +440,13 @@ end
 arch sage
 msg
 @match robber
-The castle was locked by Siegfried.
-How could they enter the castle?
-Isn't that remarkable?
+The castle was locked by Siegfried. How could they enter the castle? Isn't that remarkable?
 @match mysterious|crystal
-The monsters loved it.
-So, when they noticed that the crystal
-had been stolen they got very angry and
-destroyed the village.
+The monsters loved it. So, when they noticed that the crystal had been stolen they got very angry and destroyed the village.
 @match destroy
-Because of the Mysterious Crystal.
-Three robbers from that village
-robbed the crystal from evil masters'
-castle.
+Because of the Mysterious Crystal. Three robbers from that village robbed the crystal from evil masters' castle.
 @match yes|no
-Shining Village was the biggest
-village in our country.
-But two months ago, the village was
-Destroyed by the Evil Masters.
+Shining Village was the biggest village in our country. But two months ago, the village was destroyed by the Evil Masters.
 @match *
 Do you know shining village?
 endmsg
