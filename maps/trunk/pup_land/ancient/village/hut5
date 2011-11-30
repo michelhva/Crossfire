@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1996-05-21
-Modified: 2008-10-09 Rick Tanner
+Modified: 2011-11-29 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -378,8 +378,7 @@ arch man
 name Joseph's brother
 msg
 @match *
-Hello, adventurer!
-It's fine today.
+Hello, adventurer! It's fine today.
 endmsg
 face man.131
 hp 180
@@ -546,13 +545,9 @@ arch man
 name Joseph
 msg
 @match yes
-Thanks.
-When success is ours, I'll give you
-some money.
+Thanks. When success is ours, I'll give you some money.
 @match *
-I love Miss Margaret.
-But I cann't speak my mind to her.
-Will you ask her if she loves me?
+I love Miss Margaret. But I cann't speak my mind to her. Will you ask her if she loves me?
 endmsg
 face man.131
 hp 180
