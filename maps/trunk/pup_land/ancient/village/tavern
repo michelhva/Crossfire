@@ -8,7 +8,7 @@ enter_x 1
 enter_y 16
 msg
 Created:  1996-05-21
-Modified: 2008-12-03 Rick Tanner
+Modified: 2011-11-29 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -455,10 +455,7 @@ arch sailor
 name lonely man
 msg
 @match *
-Look at those fools. They believe in
-Siegfried, their `hero'. They are so
-scared, they would believe in anything
-as long as it makes them feel better!
+Look at those fools. They believe in Siegfried, their `hero'. They are so scared, they would believe in anything as long as it makes them feel better!
 endmsg
 hp 180
 maxhp 180
@@ -537,17 +534,11 @@ end
 arch priest
 msg
 @match necromancer
-He is very nasty because he dislikes
-Siegfried. He lives in the mountains.
-But Siegfried is kind enough to let
-him live for another weak or two.
+He is very nasty because he dislikes Siegfried. He lives in the mountains. But Siegfried is kind enough to let him live for another weak or two.
 @match hole
-Monsters manage to come out.
-I guess they are Necromancer's work.
+Monsters manage to come out. I guess they are Necromancer's work.
 @match *
-There is a Hole in this village.
-Many monsters live in that hole.
-Siegfried prevents them from coming out.
+There is a Hole in this village. Many monsters live in that hole. Siegfried prevents them from coming out.
 endmsg
 face priest.131
 hp 100
@@ -1242,21 +1233,11 @@ end
 arch siegfried
 msg
 @match cordish
-Psst! You know my old name, don't you?
-I want to have a talk with you.
-There is a switch in the tree of my
-house.
+Psst! You know my old name, don't you? I want to have a talk with you. There is a switch in the tree of my house.
 @match you killed jacob
-Hahaha!
-I love such kind of joke.
-BTW, I wanna invite you to dinner.
-There is a switch in the tree of my
-house.
-I'll be waiting for you :)
+Hahaha! I love such kind of joke. BTW, I wanna invite you to dinner. There is a switch in the tree of my house. I'll be waiting for you :)
 @match no
-You refuse to fetch my beer? Don't
-forget that you all owe me for my
-heroic deeds!
+You refuse to fetch my beer? Don't forget that you all owe me for my heroic deeds!
 @match *
 Hello. Please, fetch me some beer.
 endmsg
@@ -1955,16 +1936,9 @@ end
 arch sage
 msg
 @match servant
-Siegfried's servant got killed during
-the battle. He obviously wasn't much
-of help.
+Siegfried's servant got killed during the battle. He obviously wasn't much of help.
 @match siegfried
-We have been suffering from evil
-monsters for a long time.
-Six months ago, he and his servant
-defeated their leader, and locked the
-rest of them into the castle. Siegfried
-saved us!
+We have been suffering from evil monsters for a long time. Six months ago, he and his servant defeated their leader, and locked the rest of them into the castle. Siegfried saved us!
 @match *
 Siegfried is the hero!
 endmsg
@@ -2777,8 +2751,7 @@ arch man
 name barkeeper
 msg
 @match *
-Siegfried is so brave. We don't have to
-be scared anymore.
+Siegfried is so brave. We don't have to be scared anymore.
 endmsg
 face man.171
 hp 180
@@ -2807,8 +2780,7 @@ arch man
 name barkeeper
 msg
 @match *
-Want some beer? It's for free today
-because Siegfried said so.
+Want some beer? It's for free today because Siegfried said so.
 endmsg
 face man.171
 hp 180
