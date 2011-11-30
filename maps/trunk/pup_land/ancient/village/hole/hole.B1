@@ -9,7 +9,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  1996-06-07
-Modified: 2008-10-27 Rick Tanner
+Modified: 2011-11-30 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -1403,15 +1403,9 @@ arch beggar
 name crazy old man
 msg
 @match castle|evil
-Oh yes I can feel it! They must have
-opened a gate to another dimension...
-We will surely perish...
-ahaha *hysterical laughter*
+Oh yes I can feel it! They must have opened a gate to another dimension... We will surely perish... ahaha *hysterical laughter*
 @match *
-Bad things are happening those
-days... Siegfried locked that castle,
-but I can feel that something
-evil is going on inside!
+Bad things are happening those days... Siegfried locked that castle, but I can feel that something evil is going on inside!
 endmsg
 hp 500
 maxhp 500
