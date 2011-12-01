@@ -99,13 +99,13 @@ class GuildDues:
 
         # This lists all items that can be bought, extensions or new desks
         Items = {
-            'Stove':200*30000,
-            'Cauldron':200*30000,
-            "TanningDesk":200*30000,
-            "ThaumaturgyRoom":200*30000,
-            "JewelersBench":400*30000,
-            "BowyerBench":200*25000,
-            "Forge":200*25000,
+            'Stove':5000*12,
+            'Cauldron':5000*12,
+            "TanningDesk":5000*12,
+            "ThaumaturgyRoom":5000*12,
+            "JewelersBench":5000*24,
+            "BowyerBench":5000*10,
+            "Forge":5000*10,
 
             'BBQ':200*30000,
             'AlchemyLab':400*30000,
