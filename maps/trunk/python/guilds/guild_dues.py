@@ -99,21 +99,22 @@ class GuildDues:
 
         # This lists all items that can be bought, extensions or new desks
         Items = {
-            'BBQ':200*30000,
             'Stove':200*30000,
-            'AlchemyLab':400*30000,
             'Cauldron':200*30000,
+            "TanningDesk":200*30000,
+            "ThaumaturgyRoom":200*30000,
+            "JewelersBench":400*30000,
+            "BowyerBench":200*25000,
+            "Forge":200*25000,
+
+            'BBQ':200*30000,
+            'AlchemyLab':400*30000,
             "CrystalRoom":100,
             "Tannery":200*30000,
-            "ThaumaturgyRoom":200*30000,
             "JewelersRoom":400*30000,
             "ThaumaturgyDesk":200*30000,
-            "TanningDesk":200*30000,
-            "JewelersBench":400*30000,
             "Bowyer":200*30000,
-            "BowyerBench":200*25000,
-            "Smithy":200*30000,
-            "Forge":200*25000}
+            "Smithy":200*30000}
 
         # This is the list of cards to buy new desks
         Cards = ["Stove", "Cauldron", "TanningDesk", "ThaumaturgyDesk", "JewelersBench", "BowyerBench", "Forge"]
