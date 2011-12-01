@@ -102,19 +102,19 @@ class GuildDues:
             'Stove':5000*12,
             'Cauldron':5000*12,
             "TanningDesk":5000*12,
-            "ThaumaturgyRoom":5000*12,
+            "ThaumaturgyDesk":5000*12,
             "JewelersBench":5000*24,
             "BowyerBench":5000*10,
             "Forge":5000*10,
 
-            'BBQ':200*30000,
-            'AlchemyLab':400*30000,
+            'BBQ':500000*12,
+            'AlchemyLab':500000*24,
             "CrystalRoom":100,
-            "Tannery":200*30000,
-            "JewelersRoom":400*30000,
-            "ThaumaturgyDesk":200*30000,
-            "Bowyer":200*30000,
-            "Smithy":200*30000}
+            "Tannery":500000*12,
+            "JewelersRoom":500000*24,
+            "ThaumaturgyRoom":500000*12,
+            "Bowyer":500000*12,
+            "Smithy":500000*12}
 
         # This is the list of cards to buy new desks
         Cards = ["Stove", "Cauldron", "TanningDesk", "ThaumaturgyDesk", "JewelersBench", "BowyerBench", "Forge"]
