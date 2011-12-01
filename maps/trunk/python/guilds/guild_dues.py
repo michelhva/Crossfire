@@ -109,7 +109,7 @@ class GuildDues:
 
             'BBQ':500000*12,
             'AlchemyLab':500000*24,
-            "CrystalRoom":100,
+            "CrystalRoom":500000*12,
             "Tannery":500000*12,
             "JewelersRoom":500000*24,
             "ThaumaturgyRoom":500000*12,
