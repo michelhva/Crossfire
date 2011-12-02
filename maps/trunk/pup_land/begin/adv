@@ -8,7 +8,7 @@ enter_x 3
 enter_y 12
 msg
 Created:  1996-02-13
-Modified: 2010-04-04 krb
+Modified: 2011-012-01 Rick Tanner
 endmsg
 end
 arch marble
@@ -890,12 +890,7 @@ end
 arch note
 name hint from the semi-gods 1
 msg
-Bombs are very useful to boost magic
-experience.
-To create bombs, you must learn the
-spell "create bomb".
-There are rumours about a rod of create
-bomb somewhere in the world.
+Bombs are very useful to boost magic experience. To create bombs, you must learn the spell "create bomb". There are rumours about a rod of create bomb somewhere in the world.
 endmsg
 x 9
 y 8
@@ -912,16 +907,13 @@ end
 arch note
 name hint from the semi-gods 4
 msg
-You can get lots of useful information
-by examining all kinds of objects in
-your surrounding. for example:
+You can get lots of useful information by examining all kinds of objects in your surrounding. For example: 
 o Names of unreachable items.
 o Equipment of monsters/NPCs.
 ------
 To examine an object...
 ...with cfclient: left-click on it!
-...with winclient: right-click on it,
-   then select "look at"!
+...with winclient: right-click on it, then select "look at"!
 endmsg
 x 9
 y 9
@@ -1018,15 +1010,7 @@ end
 arch note
 name hint from the semi-gods 2
 msg
-When you die - and that will happen -
-you loose some experience and one Stat
-(like Str -1 or Wis -1). The exp. is
-gone, but the Stats can be recovered
-by drinking a potion of life!
-For skilled priests there is yet an
-easier way: Pray over an altar of your
-deity... The gods won't ignore the
-bidding of a worthy disciple.
+When you die - and that will happen - you loose some experience and one Stat (like Str -1 or Wis -1). The exp. is gone, but the Stats can be recovered by drinking a potion of life! For skilled priests there is yet an easier way: Pray over an altar of your deity... The gods won't ignore the bidding of a worthy disciple.
 endmsg
 x 10
 y 8
@@ -1043,13 +1027,7 @@ end
 arch note
 name hint from the semi-gods 5
 msg
-Raising your Stats (Str/Dex/Con/...)
-by drinking potions of Strength/
-Dexterity/..etc is the best way to
-level up quickly. Those cannot be found
-in shops. Hence, in the beginning, you
-should try to find places (in dungeons)
-where to obtain random potions.
+Raising your Stats (Str/Dex/Con/...) by drinking potions of Strength/Dexterity/..etc is the best way to level up quickly. Those cannot be found in shops. Hence, in the beginning, you should try to find places (in dungeons) where to obtain random potions.
 endmsg
 x 10
 y 9
@@ -1066,11 +1044,7 @@ end
 arch note
 name hint from the semi-gods 8
 msg
-Be careful when collecting food in
-dungeons. Poisoned food can kill
-players of low level very quick!
-Check if the food stacks with the
-pieces you're already carrying.
+Be careful when collecting food in dungeons. Poisoned food can kill players of low level very quick! Check if the food stacks with the pieces you're already carrying.
 endmsg
 x 10
 y 10
@@ -1139,12 +1113,9 @@ name hint from the semi-gods 3
 msg
 Guide to weapon-enchanting:
 - mark (and wield) a non-magical weapon
-- drop a bunch of diamonds, then apply
-  a "scroll of Prepare Weapon".
+- drop a bunch of diamonds, then apply a "scroll of Prepare Weapon"
 - apply a "scroll of Improve <Stat>"
-- drop the type and amount of potions
-  you are prompted for, then apply
-  the scroll again
+- drop the type and amount of potions you are prompted for, then apply the scroll again
 endmsg
 x 11
 y 8
@@ -1161,9 +1132,7 @@ end
 arch note
 name hint from the semi-gods 6
 msg
-You can jump through certain kinds of
-gates and fences by using the spell
-"dimension door".
+You can jump through certain kinds of gates and fences by using the spell "dimension door".
 endmsg
 x 11
 y 9
