@@ -8,7 +8,7 @@ enter_x 19
 enter_y 1
 msg
 Created:  1996-03-07
-Modified: 2008-10-20 Rick Tanner
+Modified: 2011-12-01 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -3916,9 +3916,7 @@ connected 21
 end
 arch scroll
 msg
-You are very clever!
-So I'll give you a special hint to
-treasure!
+You are very clever! So I'll give you a special hint to treasure!
 *:wall
 O:pit
 o:hidden pit
