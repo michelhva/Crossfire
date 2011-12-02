@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-01-28
-Modified: 2008-10-13 Rick Tanner
+Modified: 2011-12-01 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -365,8 +365,7 @@ msg
 @match liberation
 Oops!
 @match *
-I cannot pass. Members of Liberation
-Army are not allowed to.
+I cannot pass. Members of Liberation Army are not allowed to.
 endmsg
 face viking.131
 hp 100
@@ -432,8 +431,7 @@ end
 arch swashbuckler
 msg
 @match regular|resistance|pass
-I have an official Regular Army -
-passport. So, I can pass. Hehe!
+I have an official Regular Army - passport. So, I can pass. Hehe!
 @match *
 I'm a member of Regular Army.
 endmsg
@@ -448,8 +446,7 @@ unaggressive 1
 arch card
 name shredded Passport
 msg
-   This passport is *not* usable
-   anymore!
+   This passport is *not* usable anymore!
 endmsg
 end
 end
@@ -572,9 +569,7 @@ end
 arch priest
 msg
 @match pass
-I said "I am not a member of
-resistance." But they didn't allow me
-to pass...
+I said "I am not a member of resistance." But they didn't allow me to pass...
 @match *
 Hello.
 endmsg
@@ -605,8 +600,7 @@ y 6
 end
 arch magic_mouth
 msg
-This is the barrier station.
-Please bring up your passports.
+This is the barrier station. Please bring up your passports.
 endmsg
 x 6
 y 7
@@ -658,8 +652,7 @@ You may pass :-).
 @match yes
 Please bring up it.
 @match no
-.. Are you a member of resistance,
-aren't you?
+.. Are you a member of resistance, aren't you?
 @match *
 Do you have passport?
 endmsg
@@ -1077,8 +1070,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance,
-aren't you?
+.. So you're a member of resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1262,8 +1254,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance,
-aren't you?
+.. So you're a member of resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1409,8 +1400,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance,
-aren't you?
+.. So you're a member of resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1501,8 +1491,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance,
-aren't you?
+.. So you're a member of resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1530,8 +1519,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance,
-aren't you?
+.. So you're a member of resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1565,8 +1553,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance,
-aren't you?
+.. So you're a member of resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1982,8 +1969,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance,
-aren't you?
+.. So you're a member of resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -2350,8 +2336,7 @@ y 6
 end
 arch magic_mouth
 msg
-This is the barrier station.
-Please bring up your passports.
+This is the barrier station. Please bring up your passports.
 endmsg
 x 23
 y 7
@@ -2507,8 +2492,7 @@ end
 arch woman
 msg
 @match *
-Ahh... I like the strong men from
-Regular Army  ^_^
+Ahh... I like the strong men from Regular Army  ^_^
 endmsg
 face woman.171
 hp 180
@@ -2721,8 +2705,7 @@ arch a_townsman
 name merchant
 msg
 @match *
-How did YOU get a member of Regular
-Army? Go away.
+How did YOU get a member of Regular Army? Go away.
 endmsg
 hp 150
 maxhp 150
