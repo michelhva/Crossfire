@@ -548,6 +548,10 @@ arch cobblestones2
 x 5
 y 15
 end
+arch swall_1_2_half
+x 5
+y 15
+end
 arch dwall_2_1_2
 x 5
 y 15
@@ -1089,6 +1093,9 @@ arch cobblestones2
 x 12
 end
 arch dwall_2_1_2
+x 12
+end
+arch swall_1_1_half
 x 12
 end
 arch dungeon_magic
@@ -1666,6 +1673,9 @@ arch cobblestones2
 x 16
 end
 arch dwall_2_1_2
+x 16
+end
+arch swall_1_1_half
 x 16
 end
 arch dungeon_magic
@@ -2390,6 +2400,10 @@ x 23
 y 14
 end
 arch cobblestones2
+x 23
+y 15
+end
+arch swall_1_2_half
 x 23
 y 15
 end
