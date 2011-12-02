@@ -8,7 +8,7 @@ enter_x 10
 enter_y 34
 msg
 Created:  1996-02-14
-Modified: 2008-10-13 Rick Tanner
+Modified: 2011-12-01 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -279,9 +279,7 @@ arch viking
 name viking chief
 msg
 @match *
-I trained them hardly.
-They are very strong!
-We cannot be overcome by the enemy!!
+I trained them hardly. They are very strong! We cannot be overcome by the enemy!!
 endmsg
 face viking.131
 hp 100
@@ -1309,14 +1307,9 @@ arch thief
 name councillor
 msg
 @match calvin
-What! He is a spy!?
-I see. We'll put him to torture.
-Thanks, this is your reward.
+What! He is a spy!? I see. We'll put him to torture. Thanks, this is your reward.
 @match *
-I've heard that spys of the goverment
-have entered secretly.
-If you discover one of them, please
-let me know!
+I've heard that spys of the goverment have entered secretly. If you discover one of them, please let me know!
 endmsg
 face thief.131
 hp 100
@@ -2222,9 +2215,7 @@ arch medium_guard
 name guard
 msg
 @match hi|hello
-Here is the headquarter of Liberation
-Army. Are you our member?
-If you are, please prove it
+Here is the headquarter of Liberation Army. Are you our member? If you are, please prove it.
 endmsg
 hp 1200
 x 8
@@ -2248,19 +2239,11 @@ y 35
 end
 arch magic_mouth
 msg
-You hear voices from the other side
-of the wall...
-"Voice A : They entered the castle of
-           Eureca. Damn it!!
- Voice B : We must prevent them from
-           getting Eureca's treasure.
- Voice C : ... I thought we should be
-           more concerned about
-           Eureca's safety... ???
- Voice A : What!? Do you think we are
-           a welfare-company, idiot?!
-           Forget Eureca, we need to
-           get the treasure.
+You hear voices from the other side of the wall...
+"Voice A : They entered the castle of Eureca. Damn it!!
+ Voice B : We must prevent them from getting Eureca's treasure.
+ Voice C : ... I thought we should be more concerned about Eureca's safety... ???
+ Voice A : What!? Do you think we are a welfare-company, idiot?! Forget Eureca, we need to get the treasure.
  Voice C : Forgive me, general... "
 endmsg
 x 9
@@ -2284,14 +2267,9 @@ arch warrior_1
 name Alex, the general
 msg
 @match contributor
-The guildmaster of lone town
-contributes us lots of money.
+The guildmaster of lone town contributes us lots of money.
 @match *
-Bauer looks down on our funds.
-He thinks that we have little money to
-continue the war.
-But due to the great Contributor,
-we are rich!
+Bauer looks down on our funds. He thinks that we have little money to continue the war. But due to the great Contributor, we are rich!
 endmsg
 face warrior_lblue.171
 Con 100
@@ -2367,20 +2345,15 @@ arch swashbuckler
 name councillor
 msg
 @match eureca
-He is our lord. But we don't know
-where he is.
+He is our lord. But we don't know where he is.
 @match bauer
 He is the leader of Regular Army.
 @match castle
-They surely want to steal Eureca's
-money. I'm afraid that Bauer plans to
-become the new emperor of pupland!
-But we won't let this happen!!
+They surely want to steal Eureca's money. I'm afraid that Bauer plans to become the new emperor of pupland! But we won't let this happen!!
 @match regular|army
 We will kill them all!
 @match *
-I've heard rumors that the Regular
-Army has entered Eureca's Castle!
+I've heard rumors that the Regular Army has entered Eureca's Castle!
 endmsg
 face swashbuckl.111
 hp 100
@@ -2966,14 +2939,11 @@ arch fighter
 name councillor
 msg
 @match eureca
-He is the lord of this country.
-He was kidnapped by the government!!
+He is the lord of this country. He was kidnapped by the government!!
 @match barrier|house
-To the south from here. We must rapidly
-rescue our lord, Eureca!
+To the south from here. We must rapidly rescue our lord, Eureca!
 @match *
-The Barrier House prevents us from
-invading Nurnberg.
+The Barrier House prevents us from invading Nurnberg.
 endmsg
 hp 500
 x 12
@@ -3306,9 +3276,7 @@ arch medium_guard
 name guard
 msg
 @match hi|hello
-Here is the headquarter of Liberation
-Army. Are you our member?
-If you are, please prove it
+Here is the headquarter of Liberation Army. Are you our member? If you are, please prove it.
 endmsg
 hp 1200
 x 12
@@ -3383,30 +3351,13 @@ end
 arch human
 msg
 @match escape|passage
-If you don't know about escape passage,
-please go to the tavern in lown town
-and talk with a thief.
-If you don't know how to open the
-doors in the escape passage, then
-go to the tavern in lown town,
-and talk with the learned man.
+If you don't know about escape passage, please go to the tavern in lown town and talk with a thief. If you don't know how to open the doors in the escape passage, then go to the tavern in lown town, and talk with the learned man.
 @match hidden|exit
-You can see the hidden exit by using
-the spell of show invisible.
+You can see the hidden exit by using the spell of show invisible.
 @match yes
-I have been invited by Eureca once.
-So I know his castle. To reach the
-upper floor of the castle,
-You need to find the Hidden Exit in
-the Escape Passage of the castle.
-Regular Army doesn't seems to know
-this information.
-Please go there to find Eureca's family!
+I have been invited by Eureca once. So I know his castle. To reach the upper floor of the castle, You need to find the Hidden Exit in the Escape Passage of the castle. Regular Army doesn't seems to know this information. Please go there to find Eureca's family!
 @match *
-You are the spy of our army, right?
-I have an information concerning
-Eureca's castle.
-Do you want to hear it?
+You are the spy of our army, right? I have an information concerning Eureca's castle. Do you want to hear it?
 endmsg
 hp 100
 x 13
@@ -3754,15 +3705,9 @@ arch elf
 name elf soldier
 msg
 @match yes|prison
-I dug the hole to the prison secretly.
-So, push me. I think the lord of
-Eureca is held in captivity down there.
-You must save him!
+I dug the hole to the prison secretly. So, push me. I think the lord of Eureca is held in captivity down there. You must save him!
 @match calvin
-How could you know my name?
-Oh, I see. You are a spy of Regular
-Army, aren't you? Do you want to enter
-the prison below?
+How could you know my name? Oh, I see. You are a spy of Regular Army, aren't you? Do you want to enter the prison below?
 @match *
 Hey, what's the matter?
 endmsg
