@@ -8,7 +8,7 @@ enter_x 9
 enter_y 3
 msg
 Created:  1996-03-13
-Modified: 2011-10-21 Rick Tanner
+Modified: 2011-12-03 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1039,10 +1039,8 @@ end
 arch sign
 name notice
 msg
-Protect the torch from impudent
-adventurers. It's better to have it
-destroyed than having it stolen.
-                     - Gothwolte
+Protect the torch from impudent adventurers. It's better to have it destroyed than having it stolen.
+ - Gothwolte
 endmsg
 x 8
 y 5
