@@ -8,7 +8,7 @@ enter_x 10
 enter_y 19
 msg
 Created:  1996-03-07
-Modified: 2008-10-20 Rick Tanner
+Modified: 2011-12-02 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -3396,9 +3396,7 @@ arch key2
 name broken blue key
 slaying this_key_is_broken
 msg
-The key got broken during combat.
-Too bad, Gothwoltes treasure would
-have been interesting for sure!
+The key got broken during combat. Too bad, Gothwoltes treasure would have been interesting for sure!
 endmsg
 face key_blue.111
 x 8
@@ -3796,9 +3794,7 @@ connected 10
 end
 arch magic_mouth
 msg
-Lord Eureca is dying!
-But his lips are moving, he is trying
-to say something...
+Lord Eureca is dying! But his lips are moving, he is trying to say something...
 endmsg
 x 9
 y 30
@@ -3807,15 +3803,9 @@ arch corpse1
 name Lord Eureca
 msg
 @match disperse
-Good.. now kill.. that.. son of a..
-bitch...
-*Eureca is coughing blood*
+Good.. now kill.. that.. son of a.. bitch... *Eureca is coughing blood*
 @match *
-Don't.. touch ..the sword...
-Ple..ase say.. "dis..perse" and..
-kill that.. crea..ture... Let
-my.. death have.. some mea..ning
-at.. least..
+Don't.. touch ..the sword... Ple..ase say.. "dis..perse" and.. kill that.. crea..ture... Let my.. death have.. some mea..ning at.. least..
 endmsg
 face magicmouth.111
 x 9
@@ -3830,8 +3820,7 @@ end
 arch corpse1
 name Lord Eureca
 msg
-Lord Eureca is bleeding to death.
-You feel very sorry for him.
+Lord Eureca is bleeding to death. You feel very sorry for him.
 endmsg
 x 9
 y 30
@@ -3986,8 +3975,7 @@ end
 arch sign
 name training arena
 msg
-If you enter, you'll be treated like a
-punching bag.
+If you enter, you'll be treated like a punching bag.
 Gothwolte
 endmsg
 x 9
@@ -4071,23 +4059,13 @@ arch sailor
 name Gothwolte
 msg
 @match family
-Eureca's family? I don't care, bua ha
-ha...
+Eureca's family? I don't care, bua ha ha...
 @match eureca
-Eureca is the perfect body. He fled
-from my attack and I have to find him
-soon. I'll let you live if you help me
-find Eureca.
+Eureca is the perfect body. He fled from my attack and I have to find him soon. I'll let you live if you help me find Eureca.
 @match body
-My body... that is the guy who found
-me recently, after horrible decades of
-waiting. But you don't understand my
-being...
+My body... that is the guy who found me recently, after horrible decades of waiting. But you don't understand my being...
 @match *
-I am Gothwolte, the lord of the world.
-I am invulnerable, but my body is damn
-weak! I want Eureca, but I have to
-find him before he travels to the past.
+I am Gothwolte, the lord of the world. I am invulnerable, but my body is damn weak! I want Eureca, but I have to find him before he travels to the past.
 endmsg
 Str 40
 Dex 40
@@ -4343,9 +4321,7 @@ end
 arch masamune
 name whirlwind
 msg
-The sword flashes mysteriously. You
-would love to touch it, but you won't
-make the same mistake like Eureca!
+The sword flashes mysteriously. You would love to touch it, but you won't make the same mistake like Eureca!
 endmsg
 Str 0
 Dex 0
@@ -6956,9 +6932,7 @@ x 17
 end
 arch magic_mouth
 msg
-Wow, you've never seen such a huge
-gold nugget before! Too bad you can't
-pick it up...
+Wow, you've never seen such a huge gold nugget before! Too bad you can't pick it up...
 endmsg
 x 17
 y 1
@@ -7955,8 +7929,7 @@ arch key2
 name blue key
 slaying gothwolte_key
 msg
-This is the key to Gothwolte's
-treasure hoard. Don't drop it!
+This is the key to Gothwolte's treasure hoard. Don't drop it!
 endmsg
 face key_blue.111
 x 20
@@ -7998,11 +7971,7 @@ arch magic_mouth
 name 11
 msg
 You hear an angry voice:
-Mortal! Who are you to challenge the
-likes of me? I have watched the
-creation of earth - I have seen birth
-and implosion of many galaxies!
-And you? - A baby, a pile of dust!
+Mortal! Who are you to challenge the likes of me? I have watched the creation of earth - I have seen birth and implosion of many galaxies! And you? - A baby, a pile of dust!
 endmsg
 x 20
 y 26
@@ -8187,9 +8156,7 @@ end
 arch magic_mouth
 msg
 Gothwolte cries:
-Nooo, this can't be happening! I will
-return and then... Guuuuuhh!!!
-GWAAAAAAHHH!!!!!!
+Nooo, this can't be happening! I will return and then... Guuuuuhh!!! GWAAAAAAHHH!!!!!!
 endmsg
 x 20
 y 35
