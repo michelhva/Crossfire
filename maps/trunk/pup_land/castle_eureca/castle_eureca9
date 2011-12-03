@@ -8,7 +8,7 @@ enter_x 7
 enter_y 2
 msg
 Created:  1996-03-13
-Modified: 2008-10-20 Rick Tanner
+Modified: 2011-12-03 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -624,31 +624,15 @@ arch woman
 name Lauretta
 msg
 @match gothwolte
-Gothwolte is the "perfect being".
-Even Eureca couldn't defeat him...
+Gothwolte is the "perfect being". Even Eureca couldn't defeat him...
 @match eureca
-Eureca and Cordish went to consult
-with Kurte.
+Eureca and Cordish went to consult with Kurte.
 @match cordish
-Cordish is our servant. He is a
-coward... I don't like him.
+Cordish is our servant. He is a coward... I don't like him.
 @match kurte
-Kurte are the elders of pupland.
-They know everything about pupland.
-So they'll solve this disaster.
-I don't know where to find Kurte,
-Go to the two huts, located north of
-this castle. There are two persons
-inside. They must know it.
-Please say
- "fireflies live on a clear river"
-This is the keyword to meet Kurte...
+Kurte are the elders of pupland. They know everything about pupland. So they'll solve this disaster. I don't know where to find Kurte, Go to the two huts, located north of this castle. There are two persons inside. They must know it. Please say  "fireflies live on a clear river" This is the keyword to meet Kurte...
 @match *
-Thank you for saving us. We were
-suddenly attacked by Gothwolte and his
-devils. He occupied our castle and he
-plans to conquer the world.
-My husband, Eureca, is not here.
+Thank you for saving us. We were suddenly attacked by Gothwolte and his devils. He occupied our castle and he plans to conquer the world. My husband, Eureca, is not here.
 endmsg
 Con 100
 hp 18000
