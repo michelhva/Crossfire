@@ -8,7 +8,7 @@ enter_x 6
 enter_y 7
 msg
 Created:  2001-02-20
-Modified: 2008-10-09 Rick Tanner
+Modified: 2011-12-03 Rick Tanner
 endmsg
 end
 arch unholy_ground
@@ -692,18 +692,11 @@ arch ghost
 name ghost of the chest
 msg
 @match yes
-Good boy! I can tell you: The first
-hundred years are hard, but then you
-get used to it...
+Good boy! I can tell you: The first hundred years are hard, but then you get used to it...
 @match no
-I knew you wouldn't agree. That means
-we have to fight! The winner can leave.
+I knew you wouldn't agree. That means we have to fight! The winner can leave.
 @match *
-I've been trapped in this chest for
-ages. Now, finally, I will be free!!
-Only one soul can be trapped in here.
-You stay and I leave - that is fair,
-you agree?
+I've been trapped in this chest for ages. Now, finally, I will be free!! Only one soul can be trapped in here. You stay and I leave - that is fair, you agree?
 endmsg
 Str 20
 Dex 20
@@ -738,8 +731,7 @@ arch ectoplasm
 name ghost of the chest's ectoplasm
 slaying cave_pass4
 msg
-You defeat the ghost and regain your
-freedom!
+You defeat the ghost and regain your freedom!
 endmsg
 hp 23
 sp 16
