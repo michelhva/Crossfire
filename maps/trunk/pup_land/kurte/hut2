@@ -8,7 +8,7 @@ enter_x 28
 enter_y 8
 msg
 Created:  1996-04-01
-Modified: 2008-10-10 Rick Tanner
+Modified: 2011-12-04 Rick Tanner
 endmsg
 end
 arch sea
@@ -1279,27 +1279,20 @@ end
 arch woman
 msg
 @match fireflies live on a clear river
-You deserve to meet Kurte.
-To summon the entrance to Kurte's house
-in the jungle, you have to move the
-statue near the castle of Eureca:
+You deserve to meet Kurte. To summon the entrance to Kurte's house in the jungle, you have to move the statue near the castle of Eureca:
   NW -> E -> S -> (appear)
-Eureca probably got into trouble.
-Please meet Kurte for "saving eureca".
+Eureca probably got into trouble. Please meet Kurte for "saving eureca".
 @match kurte
-I'm a scholar of Kurte...
-You are not worthy to meet him yet.
+I'm a scholar of Kurte... You are not worthy to meet him yet.
 @match eureca
-I don't know where he is. Kurte is the
-only one who might know it...
+I don't know where he is. Kurte is the only one who might know it...
 @match person|high position
 Alex and Bauer...
 @match lord
 Eureca...
 @match war|pupland
 The truth about this war:
-The persons of high positions don't
-seek for the lord, but his money...
+The persons of high positions don't seek for the lord, but his money...
 @match bauer
 He's the leader of Regular Army.
 @match alex
@@ -1310,8 +1303,7 @@ Each wave a desperate syllable
 Each salty drop a symbol for
 My lonely thirst
 @match *
-I'm listening to the voice of the
-waves...
+I'm listening to the voice of the waves...
 endmsg
 face woman.171
 hp 1800
