@@ -8,7 +8,7 @@ enter_x 6
 enter_y 8
 msg
 Created:  1996-04-03
-Modified: 2008-10-27 Rick Tanner
+Modified: 2011-12-04 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1260,9 +1260,7 @@ end
 arch magic_mouth
 msg
 The hall echoes with loud voice:
-  "I'll test your knowledge about
-   shining kingdom. Don't mistake..
-   You will see many illusions..."
+  "I'll test your knowledge about shining kingdom. Don't mistake.. You will see many illusions..."
 endmsg
 x 6
 y 6
@@ -1980,12 +1978,11 @@ connected 1000
 end
 arch magic_mouth
 msg
-To join the Liberation Army, where did
-you go?
+To join the Liberation Army, where did you go?
  1. Tower of Ordeal
  2. Power Plant
  3. Tower of Pupuly
-Answer one,two or three.
+Answer one, two or three.
 endmsg
 x 9
 y 12
@@ -2099,8 +2096,7 @@ y 25
 end
 arch magic_mouth
 msg
-There was a scroll in the Tower of
-Ordeal. What was written in it?
+There was a scroll in the Tower of Ordeal. What was written in it?
  1. Bird week
  2. Natural food is healthy
  3. Let's protect nature
@@ -2768,12 +2764,11 @@ y 8
 end
 arch magic_mouth
 msg
-To join the Regular Army, where did
-you go?
+To join the Regular Army, where did you go?
  1. Cave of Ordeal
  2. Tower of Ordeal
  3. Tower of Pupuly
-Answer one,two or three.
+Answer one, two or three.
 endmsg
 x 12
 y 9
@@ -2817,7 +2812,7 @@ end
 arch magic_mouth
 msg
 Who are servants of Eureca?
- 1. Pupuly ,only
+ 1. Pupuly, only
  2. Pupuly & Cordish
  3. Pupuly & Bauer
 endmsg
@@ -2908,9 +2903,7 @@ y 29
 end
 arch magic_mouth
 msg
-To go to the "agito" of liberation
-army,
-you tell password to ...
+To go to the "agito" of liberatio army, you tell password to ...
 endmsg
 x 12
 y 30
@@ -4042,8 +4035,7 @@ y 25
 end
 arch magic_mouth
 msg
-There is the "agito" of the liberation
-army under the ...
+There is the "agito" of the liberation army under the ...
 endmsg
 x 16
 y 26
@@ -4381,8 +4373,7 @@ arch man
 name Tom
 msg
 @match hi|hello
-Go to the rear of the hotel,
-and say the password to evergreen tree.
+Go to the rear of the hotel, and say the password to evergreen tree.
 endmsg
 hp 180
 x 17
@@ -5910,9 +5901,7 @@ y 18
 end
 arch magic_mouth
 msg
-To go to the underground of the guild
-of law,
-you enter the ... near the guild.
+To go to the underground of the guild of law, you enter the ... near the guild.
 endmsg
 x 23
 y 19
@@ -5969,10 +5958,7 @@ y 25
 end
 arch magic_mouth
 msg
-To find Eureca,
-the spy of regular army ... to the
-underground of headquarter of
-liberation army
+To find Eureca, the spy of regular army ... to the underground of headquarter of liberation army
 endmsg
 x 23
 y 26
@@ -6239,8 +6225,7 @@ end
 arch elf
 msg
 @match hi|hello
-If you want to join us, go to the
-Reception Office.
+If you want to join us, go to the Reception Office.
 endmsg
 face elf.151
 hp 100
@@ -6695,8 +6680,7 @@ y 15
 end
 arch magic_mouth
 msg
-What do you need to pass the barrier
-station?
+What do you need to pass the barrier station?
 endmsg
 x 26
 y 16
@@ -6782,8 +6766,7 @@ y 29
 end
 arch magic_mouth
 msg
-To see Eureca's family,
-you need three ...
+To see Eureca's family, you need three ...
 endmsg
 x 26
 y 30
@@ -7790,8 +7773,7 @@ y 11
 end
 arch magic_mouth
 msg
-What is the password of the Liberation
-Army?
+What is the password of the Liberation Army?
 endmsg
 x 30
 y 12
@@ -7846,8 +7828,7 @@ y 18
 end
 arch magic_mouth
 msg
-To enter the prison in the castle of
-Bauer, you must go through an ...
+To enter the prison in the castle of Bauer, you must go through an ...
 endmsg
 x 30
 y 19
@@ -7902,9 +7883,7 @@ y 25
 end
 arch magic_mouth
 msg
-The entrance to the upper level
-of Eureca's Castle is at the end of
-the ...
+The entrance to the upper level of Eureca's Castle is at the end of the ...
 endmsg
 x 30
 y 26
@@ -8135,9 +8114,7 @@ arch guildmaster
 name Guildmaster, Dean
 msg
 @match hi|hello
-Siegfried killed evil masters, and
-saved the world in the legend.
-He is our Hero!!!
+Siegfried killed evil masters, and saved the world in the legend. He is our Hero!!!
 endmsg
 x 31
 y 17
@@ -8931,8 +8908,7 @@ end
 arch marker
 slaying scholar of kurte
 msg
-Congratulations, you passed the test!
-You are now a scholar of Kurte.
+Congratulations, you passed the test! You are now a scholar of Kurte.
 endmsg
 hp 1
 food 0
@@ -9344,8 +9320,7 @@ end
 arch marker
 slaying scholar of kurte
 msg
-Congratulations, you passed the test!
-You are now a scholar of Kurte.
+Congratulations, you passed the test! You are now a scholar of Kurte.
 endmsg
 hp 1
 food 0
@@ -9359,9 +9334,7 @@ y 31
 end
 arch scroll
 msg
-Pass on the five pentagrams quickly,
-then go to the center.
-Please burn me after reading!
+Pass on the five pentagrams quickly, then go to the center. Please burn me after reading!
 endmsg
 x 36
 y 31
@@ -9543,18 +9516,11 @@ arch beholder
 name Fool
 msg
 @match kurte
-Kurte is the beginning and the end.
-He is part of the land, and the
-land is *him*. The real question is:
-Who are you?
+Kurte is the beginning and the end. He is part of the land, and the land is *him*. The real question is: Who are you?
 @match scholar
-Yes, you are a now scholar of kurte.
-<clap>, <clap>, <clap>...
+Yes, you are a now scholar of kurte. <clap>, <clap>, <clap>...
 @match *
-For being so honest <chuckle>.. you
-are a scholar of Kurte. You should
-buy an apartment and live in Nurnberg
-now!
+For being so honest <chuckle>.. you are a scholar of Kurte. You should buy an apartment and live in Nurnberg now!
 endmsg
 hp 200
 exp 1
