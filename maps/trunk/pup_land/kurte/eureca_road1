@@ -8,7 +8,7 @@ enter_x 15
 enter_y 17
 msg
 Created:  1996-04-02
-Modified: 2011-10-21 Rick Tanner
+Modified: 2011-12-04 Rick Tanner
 endmsg
 end
 arch blocked
@@ -2689,12 +2689,7 @@ end
 arch magic_mouth
 msg
 The hall echoes with loud voice:
-  "I'll test your power and wisdom.
-   The next lever is to the south
-   of here.
-   If you feel that you are not ready
-   for this test yet, go back by word
-   of recall."
+  "I'll test your power and wisdom. The next lever is to the south of here. If you feel that you are not ready for this test yet, go back by word of recall."
 endmsg
 x 15
 y 15
