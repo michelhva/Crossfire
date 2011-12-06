@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1996-12-18
-Modified: 2008-10-27 Rick Tanner
+Modified: 2011-12-05 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -4521,9 +4521,7 @@ y 19
 end
 arch scroll
 msg
-Say
-   "unusual"
-to the reception guy.
+Say "unusual" to the reception guy.
 endmsg
 x 16
 y 19
