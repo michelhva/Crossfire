@@ -8,7 +8,7 @@ enter_x 9
 enter_y 19
 msg
 Created:  2005-11-07 Gene Alexander
-Modified: 2008-10-28 Rick Tanner
+Modified: 2011-12-05 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1096,17 +1096,9 @@ arch magic_mouth
 msg
 WARNING! DANGER!
 -=-
-You are entering an Acme Incinerator.
-Be sure to close the incinerator grate
-before triggering the incinerator. If
-you do not then your death is on your
-own head not the heads of the
-Acme Incinerator Company.
+You are entering an Acme Incinerator. Be sure to close the incinerator grate before triggering the incinerator. If you do not then your death is on your own head not the heads of the Acme Incinerator Company.
 -=-
-If you kill bystanders by not closing
-the grate before triggering the Acme
-incinerator you will have to answer to
-the authorities for your manslaughter.
+If you kill bystanders by not closing the grate before triggering the Acme incinerator you will have to answer to the authorities for your manslaughter.
 -=-
 WARNING! DANGER!
 endmsg
