@@ -8,7 +8,7 @@ enter_x 9
 enter_y 18
 msg
 Created:  1996-01-29
-Modified: 2010-02-28 perkins
+Modified: 2011-12-05 Rick Tanner
 endmsg
 end
 arch afloor_right
@@ -102,7 +102,7 @@ end
 arch afloor_right
 y 15
 end
-arch swall_3_2
+arch swall_1_4_half
 y 15
 end
 arch cwall_2_1_1
@@ -3223,11 +3223,11 @@ arch afloor_right
 x 18
 y 15
 end
-arch swall_3_4
+arch cwall_2_1_1
 x 18
 y 15
 end
-arch cwall_2_1_1
+arch swall_1_3_half
 x 18
 y 15
 end
