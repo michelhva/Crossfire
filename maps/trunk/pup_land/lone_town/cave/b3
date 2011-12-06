@@ -294,11 +294,11 @@ arch dungeon_floor
 x 1
 y 7
 end
-arch swall_1_4
+arch dungeon_magic
 x 1
 y 7
 end
-arch dungeon_magic
+arch swall_2_1_2
 x 1
 y 7
 end
@@ -380,7 +380,7 @@ arch dungeon_magic
 x 1
 y 22
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 22
 end
@@ -472,15 +472,18 @@ end
 arch dun2
 x 2
 end
+arch swall_1_1_half
+x 2
+end
 arch dungeon_floor
 x 2
 y 1
 end
-arch swall_1_1
+arch dungeon_magic
 x 2
 y 1
 end
-arch dungeon_magic
+arch swall_2_1_1
 x 2
 y 1
 end
@@ -713,7 +716,7 @@ arch dungeon_floor
 x 2
 y 38
 end
-arch swall_1_2
+arch swall_2_1_1
 x 2
 y 38
 end
@@ -1008,15 +1011,18 @@ end
 arch dun2
 x 4
 end
+arch swall_1_1_half
+x 4
+end
 arch dungeon_floor
 x 4
 y 1
 end
-arch swall_1_1
+arch dungeon_magic
 x 4
 y 1
 end
-arch dungeon_magic
+arch swall_2_1_1
 x 4
 y 1
 end
@@ -2214,6 +2220,10 @@ x 8
 y 2
 end
 arch dungeon_floor
+x 8
+y 3
+end
+arch swall_1_4_half
 x 8
 y 3
 end
@@ -4074,7 +4084,7 @@ arch dungeon_magic
 x 14
 y 22
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 22
 end
@@ -4094,7 +4104,7 @@ arch dungeon_magic
 x 14
 y 25
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 25
 end
