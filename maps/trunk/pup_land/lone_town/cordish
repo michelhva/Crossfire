@@ -128,7 +128,10 @@ end
 arch woodfloor
 y 12
 end
-arch wwall_3_2
+arch swall_1_4_half
+y 12
+end
+arch wwall_2_1_1
 y 12
 end
 arch woodfloor
@@ -446,7 +449,11 @@ arch woodfloor
 x 3
 y 12
 end
-arch wwall_3_3
+arch wwall_2_2_2
+x 3
+y 12
+end
+arch swall_1_3_half
 x 3
 y 12
 end
@@ -558,7 +565,7 @@ arch woodfloor
 x 4
 y 12
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 4
 y 12
 end
@@ -784,7 +791,7 @@ arch woodfloor
 x 6
 y 12
 end
-arch wwall_2_2_4
+arch wwall_1_2
 x 6
 y 12
 end
@@ -1322,11 +1329,11 @@ level 10
 friendly 1
 unaggressive 0
 can_cast_spell 0
+can_use_range 0
 can_use_bow 0
 can_use_armour 0
 can_use_ring 0
 can_use_skill 0
-can_use_range 0
 end
 arch woodfloor
 x 11
