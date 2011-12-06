@@ -8,7 +8,7 @@ enter_x 7
 enter_y 30
 msg
 Created:  1996-01-27
-Modified: 2008-10-21 Rick Tanner
+Modified: 2011-12-05 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1605,8 +1605,7 @@ end
 arch locked_door1
 slaying mleader_chamber
 msg
-You need the chamber key to open
-this door.
+You need the chamber key to open this door.
 endmsg
 x 6
 y 10
@@ -1938,8 +1937,7 @@ end
 arch locked_door1
 slaying mleader_chamber
 msg
-You need the chamber key to open
-this door.
+You need the chamber key to open this door.
 endmsg
 x 7
 y 10
@@ -2336,8 +2334,7 @@ end
 arch locked_door1
 slaying mleader_chamber
 msg
-You need the chamber key to open
-this door.
+You need the chamber key to open this door.
 endmsg
 x 8
 y 10
