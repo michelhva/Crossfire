@@ -8,7 +8,7 @@ enter_x 8
 enter_y 4
 msg
 Created:  1996-02-31
-Modified: 2008-10-28 Rick Tanner
+Modified: 2011-12-05 Rick Tanner
 endmsg
 end
 arch blocked
@@ -734,18 +734,11 @@ end
 arch thief
 msg
 @match boss
-To meet our boss, you have to say
-the password:
- "racoon's head".
+To meet our boss, you have to say the password: "racoon's head".
 @match fox|tails
-We steal money and gems.
-But we never commit murder.
-By the way, you look quite strong...
-I want you to see our Boss.
+We steal money and gems. But we never commit murder. By the way, you look quite strong... I want you to see our Boss.
 @match *
-Thank you for saving me.
-I'm a member of Fox Tails, the gang of
-bandits.
+Thank you for saving me. I'm a member of Fox Tails, the gang of bandits.
 endmsg
 face thief.111
 Con 100
