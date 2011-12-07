@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1997-01-25
-Modified: 2008-10-11 Rick Tanner
+Modified: 2011-12-06 Rick Tanner
 endmsg
 end
 arch grass
@@ -346,7 +346,7 @@ arch afloor_right
 x 3
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 3
 y 8
 end
@@ -467,6 +467,10 @@ x 4
 y 8
 end
 arch wwall_2_1_1
+x 4
+y 8
+end
+arch swall_1_3_half
 x 4
 y 8
 end
@@ -763,7 +767,11 @@ arch woodfloor
 x 7
 y 4
 end
-arch wwall_3_1
+arch swall_1_4_half
+x 7
+y 4
+end
+arch wwall_2_2_4
 x 7
 y 4
 end
@@ -1152,7 +1160,11 @@ arch woodfloor
 x 11
 y 4
 end
-arch wwall_3_4
+arch wwall_2_1_1
+x 11
+y 4
+end
+arch swall_1_3_half
 x 11
 y 4
 end
