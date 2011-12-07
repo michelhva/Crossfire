@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-12-18
-Modified: 2008-10-11 Rick Tanner
+Modified: 2012-12-06 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -215,15 +215,11 @@ arch ninja
 name Slik, the ninja
 msg
 @match task
-I will assassinate Bauer, the leader of
-Regular Army. It's the only way to win
-that war.
+I will assassinate Bauer, the leader of Regular Army. It's the only way to win that war.
 @match training
-I'm training for my great task.
-It will be difficult.
+I'm training for my great task. It will be difficult.
 @match *
-Hello. Don't disturb me, I'm doing
-ninja-training.
+Hello. Don't disturb me, I'm doing ninja-training.
 endmsg
 Dex -19
 hp 100
@@ -1063,11 +1059,9 @@ msg
 @match resistance
 We are not the "resistance"!
 @match regular
-They call us "Resistance". In fact,
-we want nothing but freedom.
+They call us "Resistance". In fact, we want nothing but freedom.
 @match liberation
-We'll win the war against Regular Army.
-There's no doubt about that.
+We'll win the war against Regular Army. There's no doubt about that.
 @match *
 This is the guild of Liberation Army.
 endmsg
@@ -1924,21 +1918,9 @@ arch guildmaster
 name Dean, the guildmaster
 msg
 @match siegfried
-Siegfried is a famous hero from the
-legends about pupland's history. It is
-said that he killed the Evil Masters
-and saved the world.
-He is our IDOL!
+Siegfried is a famous hero from the legends about pupland's history. It is said that he killed the Evil Masters and saved the world. He is our IDOL!
 @match *
-Congratulations! The Liberation Army
-welcomes you as a new member.
-The common password of Liberation Army
-is "siegfried". Don't forget it!
-Okay, it's time for your first mission:
-Since you're a stranger, you'll be a
-formidable spy. Leave lone town and
-head east. There is a hidden port in
-the jungle. Take a ship to Nurnberg.
+Congratulations! The Liberation Army welcomes you as a new member. The common password of Liberation Army is "siegfried". Don't forget it! Okay, it's time for your first mission: Since you're a stranger, you'll be a formidable spy. Leave lone town and head east. There is a hidden port in the jungle. Take a ship to Nurnberg.
 endmsg
 hp 5000
 maxhp 5000
