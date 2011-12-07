@@ -8,7 +8,7 @@ enter_x 7
 enter_y 10
 msg
 Created:  1997-11-26
-Modified: 2008-12-03 Rick Tanner
+Modified: 20011-12-06 Rick Tanner
 endmsg
 end
 arch blocked
@@ -284,17 +284,13 @@ arch beholder
 name Fool
 msg
 @match I don't know
-At least you are an honest person.
-I decide to give you the token, but I can't stand your ugly face any more! GO AWAY!!
+At least you are an honest person. I decide to give you the token, but I can't stand your ugly face any more! GO AWAY!!
 @match token
-You do want the token don't you?
-So...  If you can answer my query, I'll give you the token.  Ok?
+You do want the token don't you? So...  If you can answer my query, I'll give you the token.  Ok?
 @match yes|ok
 My query for you is .. "Where is the Belzebub's sword?".
 @match here|there
-Are you sure!?
-You think the Belzebub's sword would be here!?
-You are stupid and annoying.  Go away!!
+Are you sure!? You think the Belzebub's sword would be here!? You are stupid and annoying.  Go away!!
 @match *
 I hate your face!  I won't sell you anything!!
 endmsg
@@ -915,8 +911,7 @@ end
 arch uw_sword
 name Belzepub's sword
 msg
-  This is not the true Belzebub's Sword.
-  It's a fake, made of paper.
+  This is not the true Belzebub's Sword.  It's a fake, made of paper.
 endmsg
 Con 0
 Int 0
@@ -1532,9 +1527,7 @@ end
 arch locked_door1
 slaying the_magic_show
 msg
-Ladies and Gentlemen, Welcome to our phantastic MAGIC SHOW.
-Enjoy our most famous illusion:  The teleportation of the Belzebub's Sword!
-To see it, please buy a Token.  Ask "Fool", the beholder salesman.
+Ladies and Gentlemen, Welcome to our phantastic MAGIC SHOW. Enjoy our most famous illusion:  The teleportation of the Belzebub's Sword! To see it, please buy a Token.  Ask "Fool", the beholder salesman.
 endmsg
 x 7
 y 7
@@ -2562,8 +2555,7 @@ arch conjurer
 name Magician
 msg
 @match token|fool
-I'm afraid that crazy beholder-Fool will provide you with a query instead of the token.
-His queries usually are quite difficult, so, if you cannot answer his query, just say honestly "I don't know".
+I'm afraid that crazy beholder-Fool will provide you with a query instead of the token. His queries usually are quite difficult, so, if you cannot answer his query, just say honestly "I don't know".
 @match no
 Then go ahead and buy a token.
 @match yes
