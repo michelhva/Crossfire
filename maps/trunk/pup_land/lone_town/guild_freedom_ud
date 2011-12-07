@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1996-12-18
-Modified: 2008-10-11 Rick Tanner
+Modified: 2012-12-06 Rick Tanner
 endmsg
 end
 arch mine10
@@ -239,22 +239,9 @@ arch guildmaster
 name Guildmaster, Dean
 msg
 @match siegfried
-siegfried is famous in legend.
-He killed evil masters, and saved the
-world.
-He is our Hero!!!
+siegfried is famous in legend. He killed evil masters, and saved the world. He is our Hero!!!
 @match *
-Conglaturation!.
-We allow you to join us.
-
-Common Password of Liberation Army
-is "siegfried".
-Don't you forget.
-
-I'll give you a mission.
-Your mission is spying.
-Go to the east of lone town.
-there is a hidden port in the jungle.
+Conglaturation!. We allow you to join us. Common Password of Liberation Army is "siegfried". Don't you forget. I'll give you a mission. Your mission is spying. Go to the east of lone town. There is a hidden port in the jungle.
 endmsg
 x 5
 y 2
