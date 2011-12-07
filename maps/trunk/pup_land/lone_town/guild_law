@@ -8,7 +8,7 @@ enter_x 16
 enter_y 7
 msg
 Created:  1996-12-18
-Modified: 2008-10-11 Rick Tanner
+Modified: 2011-12-06 Rick Tanner
 endmsg
 end
 arch grass
@@ -483,8 +483,7 @@ msg
 @match yes
 Sorry, but I have to test your combat abilities first: Enter the Cave of Ordeal and search for a scroll. I have opened the gate for you...
 @match *
-Sssh! Please lower your voice...
-Do you want to join the Regular Army?
+Sssh! Please lower your voice... Do you want to join the Regular Army?
 endmsg
 face elf.131
 hp 1000
@@ -1449,11 +1448,7 @@ msg
 @match resistance
 We fight against them.
 @match barrier|station
-There is a barrior station to the
-south-east from this town.
-We prevent Liberation Army from
-entering the eastern part of the
-country that way.
+There is a barrior station to the south-east from this town. We prevent Liberation Army from entering the eastern part of the country that way.
 @match *
 We built the Barrier Station.
 endmsg
@@ -2167,8 +2162,7 @@ arch card
 name Passport
 slaying regular_army
 msg
-This passport identifies you as
-member of the Regular Army.
+This passport identifies you as member of the Regular Army.
 endmsg
 x 21
 type 21
@@ -2178,11 +2172,7 @@ arch magic_mouth
 name 3
 msg
 The Reception of ??? says:
-Excellent. You've been accepted as
-member of Regular Army. Here is your
-passport.
-Talk to the guildmaster for further
-instructions.
+Excellent. You've been accepted as member of Regular Army. Here is your passport. Talk to the guildmaster for further instructions.
 endmsg
 x 21
 y 1
@@ -2373,9 +2363,7 @@ level 5
 end
 arch scroll
 msg
-Say
-"unusual"
-to the reception guy.
+Say "unusual" to the reception guy.
 endmsg
 x 22
 y 5
@@ -2396,8 +2384,7 @@ y 7
 end
 arch sign
 msg
-Keep pushing the button.
-And proceed with *caution*...
+Keep pushing the button. And proceed with *caution*...
 endmsg
 x 22
 y 7
