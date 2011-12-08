@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1996-01-28
-Modified: 2008-10-11 Rick Tanner
+Modified: 2011-12-07 Rick Tanner
 endmsg
 end
 arch grass
@@ -5700,29 +5700,21 @@ msg
 @match tree
 I l.. love laurels very much.
 @match laurel
-Laurel, laurel,...
-Oh! N.. Now I remember, Eureca's wife is called "Lauretta"!
+Laurel, laurel,... Oh! N.. Now I remember, Eureca's wife is called "Lauretta"!
 @match pupuly
 Y.. Y.. Yes, I.. I'm.. I am Pupuly.
 @match wife
 I know her, but I c.. can.. cannot remember her name right now.
 @match eureca
-He is the l.. lord of this country.
-I.. I served him for about 20 years. And now I live in retirement.
+He is the l.. lord of this country. I.. I served him for about 20 years. And now I live in retirement.
 @match ring
-Y.. you may take the r.. ring as reward for k.. kicking Nazgul's butt.
-It's on the 5-th floor.
+Y.. you may take the r.. ring as reward for k.. kicking Nazgul's butt. It's on the 5-th floor.
 @match thieves|nazgul
-They w.. wanted to steal my ring.
-Th.. thought they could cheat on ol' Pupuly!
+They w.. wanted to steal my ring. Th.. thought they could cheat on ol' Pupuly!
 @match key
-The "Guard Room Key"?
-I f.. forgot it's purpose.
-I th.. think it had s.. something to do with E.. Eureca.
+The "Guard Room Key"? I f.. forgot it's purpose. I th.. think it had s.. something to do with E.. Eureca.
 @match *
-Th.. Thank you for saving me.
-We were a.. attacked by the Thieves.
-My servant tried to open the escape pits, b.. but ... I'm afraid that he got k.. killed.
+Th.. Thank you for saving me. We were a.. attacked by the Thieves. My servant tried to open the escape pits, b.. but ... I'm afraid that he got k.. killed.
 endmsg
 hp 500
 ac -10
@@ -6049,8 +6041,7 @@ arch magic_mouth
 name 10
 msg
 The old man says:
-That l.. lever doesn't work; this gate is l.. locked.
-P.. Please go upstairs and t.. try to open the escape pit for me.
+That l.. lever doesn't work; this gate is l.. locked. P.. Please go upstairs and t.. try to open the escape pit for me.
 endmsg
 x 26
 y 10
@@ -9552,8 +9543,7 @@ end
 arch note
 name servant's notes
 msg
-Tomorrow I'll have to plant trees again. That crazy old man...
-I should try to make him lose count.
+Tomorrow I'll have to plant trees again. That crazy old man... I should try to make him lose count.
 endmsg
 x 41
 y 14
@@ -11269,8 +11259,7 @@ end
 end
 arch magic_mouth
 msg
-Uh, oh, Nazgul doesn't seem to be
-a *nice* fellow... He looks dangerous!
+Uh, oh, Nazgul doesn't seem to be a *nice* fellow... He looks dangerous!
 endmsg
 x 50
 y 11
