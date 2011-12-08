@@ -8,7 +8,7 @@ enter_x 7
 enter_y 10
 msg
 Created:  1997-11-26
-Modified: 20011-12-06 Rick Tanner
+Modified: 2011-12-07 Rick Tanner
 endmsg
 end
 arch blocked
@@ -92,6 +92,9 @@ arch flagstone
 y 7
 end
 arch dungeon_magic
+y 7
+end
+arch swall_1_4_half
 y 7
 end
 arch wall_2_1_1
@@ -268,7 +271,7 @@ arch flagstone
 x 1
 y 7
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 7
 end
