@@ -11,7 +11,7 @@ enter_x 1
 enter_y 13
 msg
 Created:  1996-01-31
-Modified: 2010-03-01 Nicolas Weeger
+Modified: 2011-12-07 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -323,9 +323,8 @@ y 13
 end
 arch magic_mouth
 msg
-Black Market
-Please drop one hundred diamonds of
-exceptional beauty.
+Black Market:
+Please drop one hundred diamonds of exceptional beauty.
 endmsg
 x 2
 y 14
