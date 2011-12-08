@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1996-01-29
-Modified: 2010-07-16 Nicolas Weeger
+Modified: 2011-12-08 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -579,13 +579,10 @@ end
 arch mage
 msg
 @match yes
-He is such a coward. He always ran away
-from the kobolds in Room 1.
+He is such a coward. He always ran away from the kobolds in Room 1.
 hahaha!
 @match no|cordish
-He used to live in the south-east of
-lone town.
-But now he his missing.
+He used to live in the south-east of lone town. But now he his missing.
 @match *
 1,2,1,2..
 Do you know Cordish?
@@ -2355,8 +2352,7 @@ Room2
 Level:          middle
 Contents:       orcs
 Comments:       We test your guts
-Note:           Please try this room
-                AFTER the Room 1.
+Note:           Please try this room AFTER the Room 1.
 endmsg
 x 13
 y 14
@@ -4044,10 +4040,8 @@ y 13
 end
 arch sign
 msg
-If you are locked into the room,
-shout, or tell someone "SOS",
-or cast word of recall at some spot.
-                          ^^^^
+If you are locked into the room, shout, or tell someone "SOS", or cast word of recall at some spot.
+                                                                                         ^^^^
 endmsg
 x 21
 y 13
