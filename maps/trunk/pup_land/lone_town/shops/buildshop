@@ -10,7 +10,7 @@ enter_x 19
 enter_y 21
 msg
 Created:  2005-12-23 Gene Alexander
-Modified: 2011-05-25 Rick Tanner
+Modified: 2011-12-07 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2848,9 +2848,7 @@ end
 arch book_read
 name Building other items
 msg
-All items not requiring any special handling are built simply by marking the appropriate material and firing the builder.
-Note that, to avoid any issue, those items can not be picked up.
-Note also that you can build an item on another.
+All items not requiring any special handling are built simply by marking the appropriate material and firing the builder. Note that, to avoid any issue, those items can not be picked up. Note also that you can build an item on another.
 endmsg
 x 18
 y 18
@@ -2865,8 +2863,7 @@ end
 arch book_read
 name Building gates and buttons/pedestals
 msg
-Some items, like gates, require buttons, pedestals, ..., something to be opened and closed.
-To build a gate with its associated button:
+Some items, like gates, require buttons, pedestals, ..., something to be opened and closed. To build a gate with its associated button:
 * put a marking rune at the spot where you wish to build the door. The text can be whatever you want, make sure to remember it.
 * build the gate on this spot
 * put a marking rune at the spot where you with to put the button. Use the same text as for the door.
