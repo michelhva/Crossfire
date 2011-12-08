@@ -8,7 +8,7 @@ enter_x 12
 enter_y 23
 msg
 Created:  1997-01-22
-Modified: 2008-12-04 Rick Tanner
+Modified: 2011-12-08 Rick Tanner
 endmsg
 end
 arch afloor_left
@@ -3291,8 +3291,7 @@ arch create_dragon_mail
 name table
 slaying naz_report
 msg
-Thank you very much.
-I'll give you my paraphernalia
+Thank you very much. I'll give you my paraphernalia.
 endmsg
 other_arch magnifier
 face table_4.111
