@@ -493,7 +493,7 @@ arch shop_empty
 x 4
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 4
 y 18
 end
@@ -892,11 +892,15 @@ arch dun6
 x 7
 y 13
 end
+arch swall_1_1_half
+x 7
+y 13
+end
 arch shop_empty
 x 7
 y 14
 end
-arch swall_1_1
+arch swall_2_1_1
 x 7
 y 14
 end
