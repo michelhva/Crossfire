@@ -6793,11 +6793,15 @@ arch dwall_2_1_2
 x 28
 y 27
 end
+arch swall_1_1_half
+x 28
+y 27
+end
 arch dungeon_floor
 x 28
 y 28
 end
-arch swall_1_1
+arch swall_2_1_1
 x 28
 y 28
 end
@@ -7635,11 +7639,15 @@ arch dwall_1_4
 x 31
 y 27
 end
+arch swall_1_1_half
+x 31
+y 27
+end
 arch dungeon_floor
 x 31
 y 28
 end
-arch swall_1_1
+arch swall_2_1_1
 x 31
 y 28
 end
