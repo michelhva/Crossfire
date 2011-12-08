@@ -11,7 +11,7 @@ enter_x 5
 enter_y 5
 msg
 Created:  1996-03-14
-Modified: 2008-10-11 Rick Tanner
+Modified: 2011-12-08 Rick Tanner
 endmsg
 end
 arch blocked
@@ -349,13 +349,9 @@ arch guildmaster
 name Boss of the gang
 msg
 @match nazgul
-Nazgul is attacking Pupuly's tower.
-We cannot save Pupuly, Nazgul is too
-strong... Please look after Pupuly!
+Nazgul is attacking Pupuly's tower. We cannot save Pupuly, Nazgul is too strong... Please look after Pupuly!
 @match *
-We are thieves. But we would never
-kill or harm anybody. We are not
-like Nazgul and his minions!
+We are thieves. But we would never kill or harm anybody. We are not like Nazgul and his minions!
 endmsg
 hp 500
 x 3
