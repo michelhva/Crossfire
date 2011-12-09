@@ -1603,11 +1603,15 @@ arch dungeon_floor
 x 13
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 13
 y 18
 end
 arch dungeon_floor
+x 13
+y 19
+end
+arch swall_1_2_half
 x 13
 y 19
 end
@@ -2096,7 +2100,7 @@ arch dungeon_floor
 x 17
 y 13
 end
-arch swall_1_3
+arch swall_2_1_2
 x 17
 y 13
 end
@@ -2236,6 +2240,10 @@ x 18
 y 13
 end
 arch cave10
+x 18
+y 13
+end
+arch swall_1_3_half
 x 18
 y 13
 end
