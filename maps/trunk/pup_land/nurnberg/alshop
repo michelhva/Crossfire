@@ -12,7 +12,7 @@ enter_x 25
 enter_y 3
 msg
 Created:  1997-11-05 Xtreme
-Modified: 2010-11-05 Andreas Kirschbaum
+Modified: 2011-12-08 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -1076,8 +1076,7 @@ y 2
 end
 arch sign
 msg
-Pupland Alchemy Society
-Research Lab.
+Pupland Alchemy Society Research Lab.
 endmsg
 x 7
 y 2
@@ -1762,8 +1761,7 @@ y 24
 end
 arch sign
 msg
-The quest of Pupland Alchemy Society
-Membership is not available now.
+The quest of Pupland Alchemy Society Membership is not available now.
 endmsg
 x 11
 y 24
@@ -2055,8 +2053,7 @@ arch key2
 name PAS Member's card
 slaying PAS_Members_card
 msg
-Pupland Alchemy Society
-Member's card.
+Pupland Alchemy Society Member's card.
 endmsg
 face card.111
 x 13
@@ -2301,8 +2298,7 @@ end
 arch swashbuckler
 msg
 @match *
-Welcome to the ingredients store,
-Cauldron!
+Welcome to the ingredients store, Cauldron!
 endmsg
 hp 100
 x 15
