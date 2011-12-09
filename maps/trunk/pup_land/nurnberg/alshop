@@ -147,7 +147,11 @@ arch cobblestones2
 x 1
 y 3
 end
-arch dwall_2_2_1
+arch dwall_1_2
+x 1
+y 3
+end
+arch dwall_0
 x 1
 y 3
 end
@@ -444,7 +448,11 @@ arch cobblestones2
 x 3
 y 3
 end
-arch dwall_2_2_4
+arch dwall_1_2
+x 3
+y 3
+end
+arch dwall_0
 x 3
 y 3
 end
@@ -496,7 +504,11 @@ arch dungeon_floor
 x 3
 y 13
 end
-arch wwall_3_4
+arch wwall_2_2_4
+x 3
+y 13
+end
+arch swall_1_1_half
 x 3
 y 13
 end
@@ -512,7 +524,11 @@ arch dungeon_floor
 x 3
 y 15
 end
-arch wwall_3_4
+arch swall_1_2_half
+x 3
+y 15
+end
+arch wwall_2_2_3
 x 3
 y 15
 end
@@ -784,7 +800,11 @@ arch dungeon_floor
 x 5
 y 11
 end
-arch wwall_3_1
+arch wwall_2_2_4
+x 5
+y 11
+end
+arch swall_1_4_half
 x 5
 y 11
 end
@@ -1027,7 +1047,11 @@ arch dungeon_floor
 x 6
 y 22
 end
-arch wwall_3_1
+arch wwall_2_2_4
+x 6
+y 22
+end
+arch swall_1_4_half
 x 6
 y 22
 end
@@ -1191,7 +1215,11 @@ arch dungeon_floor
 x 7
 y 23
 end
-arch wwall_3_2
+arch swall_1_2_half
+x 7
+y 23
+end
+arch wwall_2_2_2
 x 7
 y 23
 end
@@ -1808,7 +1836,7 @@ arch dungeon_floor
 x 12
 y 6
 end
-arch wwall_2_2_2
+arch wwall_1_1
 x 12
 y 6
 end
@@ -1892,7 +1920,11 @@ arch dungeon_floor
 x 12
 y 23
 end
-arch wwall_3_3
+arch swall_1_4_half
+x 12
+y 23
+end
+arch wwall_2_2_3
 x 12
 y 23
 end
@@ -2106,7 +2138,7 @@ arch dungeon_floor
 x 14
 y 6
 end
-arch wwall_2_2_3
+arch wwall_1_1
 x 14
 y 6
 end
@@ -2190,7 +2222,11 @@ arch dungeon_floor
 x 14
 y 23
 end
-arch wwall_3_3
+arch wwall_2_2_2
+x 14
+y 23
+end
+arch swall_1_3_half
 x 14
 y 23
 end
@@ -2912,7 +2948,11 @@ arch dungeon_floor
 x 19
 y 23
 end
-arch wwall_3_4
+arch swall_1_2_half
+x 19
+y 23
+end
+arch wwall_2_2_3
 x 19
 y 23
 end
@@ -3050,7 +3090,11 @@ arch dungeon_floor
 x 20
 y 22
 end
-arch wwall_3_1
+arch wwall_2_2_1
+x 20
+y 22
+end
+arch swall_1_3_half
 x 20
 y 22
 end
@@ -3137,7 +3181,11 @@ arch dungeon_floor
 x 21
 y 11
 end
-arch wwall_3_1
+arch wwall_2_2_1
+x 21
+y 11
+end
+arch swall_1_3_half
 x 21
 y 11
 end
@@ -3421,7 +3469,11 @@ arch dungeon_floor
 x 23
 y 13
 end
-arch wwall_3_2
+arch wwall_2_2_1
+x 23
+y 13
+end
+arch swall_1_1_half
 x 23
 y 13
 end
@@ -3437,7 +3489,11 @@ arch dungeon_floor
 x 23
 y 15
 end
-arch wwall_3_2
+arch swall_1_2_half
+x 23
+y 15
+end
+arch wwall_2_2_2
 x 23
 y 15
 end
