@@ -8,7 +8,7 @@ enter_x 4
 enter_y 9
 msg
 Created:  1996-02-12
-Modified: 2008-11-02 Rick Tanner
+Modified: 2011-12-09 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -319,8 +319,7 @@ arch sage
 name old priest
 msg
 @match *
-Our church is very poor.
-Please give us some money.
+Our church is very poor. Please give us some money.
 endmsg
 hp 180
 x 4
