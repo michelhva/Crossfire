@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-03-04
-Modified: 2008-10-20 Rick Tanner
+Modified: 2011-12-09 Rick Tanner
 endmsg
 end
 arch blocked
@@ -121,15 +121,9 @@ end
 arch cleric
 msg
 @match eureca|war
-Eureca is not here. Our expectations
-were wrong! The war with Nurnberg
-must be stopped!! What the hell is
-going on in pupland?
+Eureca is not here. Our expectations were wrong! The war with Nurnberg must be stopped!! What the hell is going on in pupland?
 @match *
-I'm a spy of Liberation Army..
-We've made a terrible mistake...
-Eureca... this war...
-But I'm too weak to escape from here.
+I'm a spy of Liberation Army.. We've made a terrible mistake... Eureca... this war... But I'm too weak to escape from here.
 endmsg
 face cleric.131
 hp 100
@@ -290,8 +284,7 @@ msg
 @match eureca
 No, he is not here...
 @match *
-Who are you? How did you manage
-to enter this place?
+Who are you? How did you manage to enter this place?
 endmsg
 hp 100
 x 2
@@ -1572,8 +1565,7 @@ msg
 @match eureca
 I don't know where he is...
 @match *
-You are a spy of Liberation Army,
-aren't you? Help me!!
+You are a spy of Liberation Army, aren't you? Help me!!
 endmsg
 hp 100
 x 15
@@ -1608,8 +1600,7 @@ end
 arch fighter
 msg
 @match eureca
-Who is Eureca? I don't know
-anything about him...
+Who is Eureca? I don't know anything about him...
 @match *
 Who are you? How did you get here?
 endmsg
