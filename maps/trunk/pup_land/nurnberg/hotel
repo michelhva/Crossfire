@@ -8,7 +8,7 @@ enter_x 16
 enter_y 19
 msg
 Created:  1996-02-07
-Modified: 2008-11-04 Rick Tanner
+Modified: 2011-12-09 Rick Tanner
 endmsg
 end
 arch woods_2
@@ -1515,11 +1515,7 @@ end
 arch magic_ear
 msg
 @match siegfried
-A man appears and leads you into the
-woods, to the secret agito of the
-Liberation Army:
-"Welcome fellow! We accept you as
-our spy."
+A man appears and leads you into the woods, to the secret agito of the Liberation Army: "Welcome fellow! We accept you as our spy."
 endmsg
 x 13
 y 2
@@ -1580,8 +1576,7 @@ end
 arch rune_restoration
 name Restoration
 msg
-Ahh, this is living in the lap of
-luxury! You feel great.
+Ahh, this is living in the lap of luxury! You feel great.
 endmsg
 x 13
 y 7
@@ -2053,15 +2048,9 @@ arch a_townsman3
 name Tom
 msg
 @match siegfried
-Pssht, not so loud! Go to the back side
-of the hotel and speak the password
-again, to the evergreen tree.
+Pssht, not so loud! Go to the back side of the hotel and speak the password again, to the evergreen tree.
 @match *
-Welcome to my sweet hotel.
-Prices are very cheap here:
-1 silver to stay in the rest room,
-5 gold to stay in the single room,
-and 10 platinum for the royal suite.
+Welcome to my sweet hotel. Prices are very cheap here: 1 silver to stay in the rest room, 5 gold to stay in the single room, and 10 platinum for the royal suite.
 endmsg
 hp 150
 maxhp 150
