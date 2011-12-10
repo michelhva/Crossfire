@@ -8,7 +8,7 @@ enter_x 9
 enter_y 17
 msg
 Created:  1996-04-03
-Modified: 2008-12-04 Rick Tanner
+Modified: 2011-12-09 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -351,8 +351,7 @@ end
 arch locked_door1
 slaying lickmond_hq_key
 msg
-You need the general's key to open
-this door.
+You need the general's key to open this door.
 endmsg
 x 2
 y 14
@@ -538,11 +537,9 @@ arch knight
 name Imperial Guard
 msg
 @match member|join|regular
-If you want to join Regular Army,
-enter the Reception Towers.
+If you want to join Regular Army, enter the Reception Towers.
 @match *
-The elite training center is free for
-all members of Regular Army.
+The elite training center is free for all members of Regular Army.
 endmsg
 hp 2500
 x 4
@@ -568,11 +565,9 @@ arch knight
 name Imperial Guard
 msg
 @match member|join|regular
-If you want to join Regular Army,
-enter the Reception Towers.
+If you want to join Regular Army, enter the Reception Towers.
 @match *
-The elite training center is free for
-all members of Regular Army.
+The elite training center is free for all members of Regular Army.
 endmsg
 hp 2500
 x 4
@@ -1192,8 +1187,7 @@ msg
 @match eureca
 We must save him!
 @match *
-Most of our soldiers stay at the castle
-of Eureca.
+Most of our soldiers stay at the castle of Eureca.
 endmsg
 face warrior_red.151
 animation warrior_red
@@ -1886,12 +1880,9 @@ arch knight
 name Imperial Guard
 msg
 @match member|join|regular
-If you want to join Regular Army,
-enter the Reception Towers.
+If you want to join Regular Army, enter the Reception Towers.
 @match *
-What you see behind the gate, that is
-free equipment, available for all
-members of Regular Army.
+What you see behind the gate, that is free equipment, available for all members of Regular Army.
 endmsg
 hp 2500
 x 14
@@ -1917,12 +1908,9 @@ arch knight
 name Imperial Guard
 msg
 @match member|join|regular
-If you want to join Regular Army,
-enter the Reception Towers.
+If you want to join Regular Army, enter the Reception Towers.
 @match *
-What you see behind the gate, that is
-free equipment, available for all
-members of Regular Army.
+What you see behind the gate, that is free equipment, available for all members of Regular Army.
 endmsg
 hp 2500
 x 14
@@ -2283,8 +2271,7 @@ end
 arch locked_door1
 slaying lickmond_hq_key
 msg
-You need the general's key to open
-this door.
+You need the general's key to open this door.
 endmsg
 x 16
 y 14
@@ -2671,9 +2658,7 @@ arch magic_mouth
 name 4
 msg
 Lickmond, the general says:
-What?!! You killed my sparring partner!
-Now YOU must do his job! C'mon...
-let's fight!
+What?!! You killed my sparring partner! Now YOU must do his job! C'mon... let's fight!
 endmsg
 x 20
 y 1
