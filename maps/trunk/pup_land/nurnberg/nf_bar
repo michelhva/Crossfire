@@ -11,7 +11,7 @@ enter_x 12
 enter_y 1
 msg
 Created:  1996-02-10
-Modified: 2008-10-12 Rick Tanner
+Modified: 2011-12-11 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -302,8 +302,7 @@ arch cleric
 name Masa-O
 msg
 @match *
-Baby, I love you.
-I can't control myself any more.
+Baby, I love you. I can't control myself any more.
 endmsg
 face cleric.131
 hp 100
@@ -494,8 +493,7 @@ arch woman2
 name Ef
 msg
 @match *
-If you do something to me,
-I'll kill you!
+If you do something to me, I'll kill you!
 endmsg
 hp 200
 maxhp 200
@@ -729,16 +727,11 @@ arch elf
 name elf soldier
 msg
 @match kurte
-"Kurte" - I don't have the slightest
-idea what or who that might be.
+"Kurte" - I don't have the slightest idea what or who that might be.
 @match yes|beer|war|senseless
-Did you ever meet the scholars of Kurte
-in their huts next to the sea?
-They are so wise, ask them about the
-war...
+Did you ever meet the scholars of Kurte in their huts next to the sea? They are so wise, ask them about the war...
 @match *
-The war in pupland is so senseless.
-Come on, have a beer with me.
+The war in pupland is so senseless. Come on, have a beer with me.
 endmsg
 hp 100
 x 4
@@ -778,15 +771,9 @@ arch human
 name Sumson
 msg
 @match siegfried
-Oh! Youarea fellow of *hicks*
-Liberation Army, aren't you.
-Our ago..agi.. no.. agitating point
-is under the hotel. *hicks*
-Please sayour passss..word to the
-owner of the ho..hotel.
+Oh! Youarea fellow of *hicks* Liberation Army, aren't you. Our ago..agi.. no.. agitating point is under the hotel. *hicks* Please sayour passss..word to the owner of the ho..hotel.
 @match *
-I`mm... *hicks* ve..veeery busy.
-Sooo.. waddaya want? *hicks*
+I`mm... *hicks* ve..veeery busy. Sooo.. waddaya want? *hicks*
 endmsg
 hp 100
 x 4
@@ -825,11 +812,9 @@ arch dancing_girl
 name beautiful girl
 msg
 @match yes
-Idiot! Crossfire is not some kinda
-smut software, you know.
+Idiot! Crossfire is not some kinda smut software, you know.
 @match *
-Hey sweety! Do you need some
-companionship?
+Hey sweety! Do you need some companionship?
 endmsg
 hp 100
 maxhp 100
@@ -1156,9 +1141,7 @@ arch dog
 name Mimimi
 msg
 @match *
-Did you ever meet Poppy?
-Where is he?
-He knows a lot of information.
+Did you ever meet Poppy? Where is he? He knows a lot of information.
 endmsg
 Con 50
 hp 10000
@@ -1207,8 +1190,7 @@ arch sign
 msg
 Welcome to Night Flower Bar
 ---------------------------
-You must be over 18 to enter,
-ENJOY your immoral night.
+You must be over 18 to enter, ENJOY your immoral night.
 endmsg
 x 8
 y 2
@@ -1580,8 +1562,7 @@ y 18
 end
 arch sign
 msg
-Presenting the Lucky Lady Slots
-courtesy of Casino Infernal
+Presenting the Lucky Lady Slots courtesy of Casino Infernal.
 Pull the handle and try your luck.
 
 Please visit our Casino in Navar!
@@ -1861,13 +1842,9 @@ arch sage
 name soldier
 msg
 @match money|would
-If I had more money I would do the
-same as Eureca: Grab it and disappear!
-But I would take one of those two
-bunnies with me...
+If I had more money I would do the same as Eureca: Grab it and disappear! But I would take one of those two bunnies with me...
 @match *
-Yeah, look at those beautiful girls!
-If I had more money I would...
+Yeah, look at those beautiful girls! If I had more money I would...
 endmsg
 face warrior_grey.111
 hp 180
@@ -2407,8 +2384,7 @@ arch sign
 msg
 Welcome to Night Flower Bar
 ---------------------------
-You must be over 18 to enter,
-ENJOY your immoral night.
+You must be over 18 to enter, ENJOY your immoral night.
 endmsg
 x 16
 y 2
@@ -3247,25 +3223,17 @@ end
 arch conjurer
 msg
 @match bauer
-Bauer is a greedy and selfish person.
-After Dick built the castle for him,
-Bauer didn't pay enough money.
-Dick is still very angry about that.
+Bauer is a greedy and selfish person. After Dick built the castle for him, Bauer didn't pay enough money. Dick is still very angry about that.
 @match castle
 It's to the north of this town.
 @match dick
-He is a carpenter. He built many
-buildings in this city, even the castle
-of Bauer.
+He is a carpenter. He built many buildings in this city, even the castle of Bauer.
 @match dungeon
-Dick is kinda sadistic sometimes.
-His dungeons are very tricky and
-dangerous. Be careful!
+Dick is kinda sadistic sometimes. His dungeons are very tricky and dangerous. Be careful!
 @match yes
 You should try Dick's dungeons.
 @match *
-Hello!
-Are you an adventurer?
+Hello! Are you an adventurer?
 endmsg
 hp 400
 x 22
@@ -3300,8 +3268,7 @@ arch man
 name wealthy man
 msg
 @match *
-Can't you see that I'm with a princess
-tonight?! Leave us alone!
+Can't you see that I'm with a princess tonight?! Leave us alone!
 endmsg
 face man.131
 hp 180
@@ -3658,8 +3625,7 @@ end
 arch princess
 msg
 @match *
-I don't like him, but his money is
-good enough for me.
+I don't like him, but his money is good enough for me.
 endmsg
 hp 300
 x 24
