@@ -35,7 +35,7 @@ slaying silvercoin
 food 10
 type 103
 no_pick 1
-face conv.111
+face silver_converter.111
 move_on walk
 end
 Object gold_converter
@@ -77,5 +77,27 @@ food 100
 type 103
 no_pick 1
 face jade_converter.111
+move_on walk
+end
+Object jade_converter2
+name convert jade into platinum
+other_arch platinacoin
+slaying jadecoin
+food 1
+sp 100
+type 103
+no_pick 1
+face jade_converter2.111
+move_on walk
+end
+Object amberium_converter
+name convert amberium into jade
+other_arch jadecoin
+slaying ambercoin
+food 100
+sp 1
+type 103
+no_pick 1
+face amberium_converter.111
 move_on walk
 end
