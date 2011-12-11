@@ -8,7 +8,7 @@ enter_x 4
 enter_y 6
 msg
 Created:  2000-12-24
-Modified: 2008-10-21 Rick Tanner
+Modified: 2011-12-11 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -630,10 +630,7 @@ end
 arch sign
 name hints
 msg
-Hillgiants can easily be killed with
-fire, cold, or holy word of Mostrai.
-Trolls are vulnerable to fire and
-holy word of Lythander.
+Hillgiants can easily be killed with fire, cold, or holy word of Mostrai. Trolls are vulnerable to fire and holy word of Lythander.
 endmsg
 x 2
 y 22
@@ -1020,11 +1017,9 @@ end
 arch sign
 name info
 msg
-Welcome to the Regular Army's elite
-training center!
+Welcome to the Regular Army's elite training center!
 -----------------------------------
-Choose one of the difficulty levels
-and enjoy your training.
+Choose one of the difficulty levels and enjoy your training.
 - General Lickmond
 endmsg
 x 4
@@ -1506,18 +1501,13 @@ arch ninja
 name Slik, the ninja
 msg
 @match partner|sparring
-Lickmond's sparring partner can be
-found in the "hard" training section.
+Lickmond's sparring partner can be found in the "hard" training section.
 @match yes
-Okay, my plan is to kill Lickmond's
-sparring partner, take his head and
-show it to Lickmond. That should upset
-him so much that he might attack us.
+Okay, my plan is to kill Lickmond's sparring partner, take his head and show it to Lickmond. That should upset him so much that he might attack us.
 @match no
 Hm... What a coward!
 @match *
-I came here to challenge Lickmond.
-You wanna join me?
+I came here to challenge Lickmond. You wanna join me?
 endmsg
 Dex -19
 hp 100
@@ -6006,9 +5996,7 @@ end
 arch sign
 name hints
 msg
-Dreads, beholders and skulls are
-immune to magic. But they greatly fear
-sharp blades...
+Dreads, beholders and skulls are immune to magic. But they greatly fear sharp blades...
 endmsg
 x 25
 y 2
