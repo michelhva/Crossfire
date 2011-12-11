@@ -5649,16 +5649,10 @@ x 18
 y 14
 end
 arch creator
+other_arch jade_converter2
 x 18
 y 14
 connected 702
-arch platinum_converter2
-name convert jade into platinum
-slaying jadecoin
-other_arch platinacoin
-sp 100
-food 1
-end
 end
 arch goldfloor
 name drop 1000 platinum coins for a jade to platinum
@@ -5699,17 +5693,10 @@ y 16
 unique 1
 end
 arch creator
-other_arch platinum_converter
+other_arch amberium_converter
 x 18
 y 16
 connected 704
-arch jade_converter
-name convert amberium into jade
-slaying ambercoin
-other_arch jadecoin
-sp 100
-food 1
-end
 end
 arch dungeon_magic
 x 18
