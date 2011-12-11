@@ -10,7 +10,7 @@ enter_x 23
 enter_y 1
 msg
 Created:  1996-02-13
-Modified: 2008-10-12 Rick Tanner
+Modified: 2011-12-11 Rick Tanner
 endmsg
 end
 arch grass
@@ -1785,8 +1785,7 @@ end
 arch swashbuckler
 msg
 @match *
-Welcome to the potion drugstore,
-Invulnerable!
+Welcome to the potion drugstore, Invulnerable!
 endmsg
 hp 100
 x 13
@@ -3030,8 +3029,7 @@ y 3
 end
 arch sign
 msg
-Dragstore, Invulnerable is here!
-Please Live a healthy life :)
+Dragstore, Invulnerable is here! Please Live a healthy life :)
 endmsg
 x 23
 y 3
