@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2011-12-11 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -5500,8 +5500,6 @@ other_arch pearl_converter
 x 18
 y 7
 connected 707
-arch pearl_converter
-end
 end
 arch goldfloor
 name drop 1000 platinum coins for a pearl converter
@@ -5598,8 +5596,6 @@ other_arch ruby_converter
 x 18
 y 11
 connected 706
-arch ruby_converter
-end
 end
 arch goldfloor
 name drop 1000 platinum coins for a ruby  converter
@@ -5628,8 +5624,6 @@ other_arch platinum_converter2
 x 18
 y 13
 connected 701
-arch platinum_converter2
-end
 end
 arch woodfloor
 x 18
@@ -5680,12 +5674,10 @@ x 18
 y 15
 end
 arch creator
-other_arch platinum_converter
+other_arch jade_converter
 x 18
 y 15
 connected 703
-arch jade_converter
-end
 end
 arch woodfloor
 x 18
@@ -5733,12 +5725,10 @@ connected 704
 unique 1
 end
 arch creator
-other_arch platinum_converter
+other_arch diamond_converter
 x 18
 y 17
 connected 705
-arch diamond_converter
-end
 end
 arch dungeon_magic
 x 18
