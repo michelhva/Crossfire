@@ -1846,7 +1846,7 @@ If I had more money I would do the same as Eureca: Grab it and disappear! But I 
 @match *
 Yeah, look at those beautiful girls! If I had more money I would...
 endmsg
-face warrior_grey.111
+face warrior.111
 hp 180
 maxhp 180
 x 12
@@ -2171,11 +2171,11 @@ monster 0
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
+can_use_range 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
-can_use_range 0
 end
 arch woodfloor
 x 14
