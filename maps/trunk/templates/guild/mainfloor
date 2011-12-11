@@ -5615,6 +5615,11 @@ arch dwall_2_1_2
 x 18
 y 12
 end
+arch woodfloor
+x 18
+y 13
+unique 1
+end
 arch dungeon_magic
 x 18
 y 13
@@ -5625,11 +5630,6 @@ x 18
 y 13
 connected 701
 end
-arch woodfloor
-x 18
-y 13
-unique 1
-end
 arch goldfloor
 name drop 1000 platinum coins for a platinum to jade converter
 slaying platinacoin
@@ -5637,6 +5637,11 @@ food 1000
 x 18
 y 13
 connected 701
+unique 1
+end
+arch woodfloor
+x 18
+y 14
 unique 1
 end
 arch dungeon_magic
@@ -5655,11 +5660,6 @@ sp 100
 food 1
 end
 end
-arch woodfloor
-x 18
-y 14
-unique 1
-end
 arch goldfloor
 name drop 1000 platinum coins for a jade to platinum
 slaying platinacoin
@@ -5667,6 +5667,11 @@ food 1000
 x 18
 y 14
 connected 702
+unique 1
+end
+arch woodfloor
+x 18
+y 15
 unique 1
 end
 arch dungeon_magic
@@ -5679,11 +5684,6 @@ x 18
 y 15
 connected 703
 end
-arch woodfloor
-x 18
-y 15
-unique 1
-end
 arch goldfloor
 name drop 1000 platinum coins for a jade to amberium
 slaying platinacoin
@@ -5691,6 +5691,11 @@ food 1000
 x 18
 y 15
 connected 703
+unique 1
+end
+arch woodfloor
+x 18
+y 16
 unique 1
 end
 arch creator
@@ -5710,11 +5715,6 @@ arch dungeon_magic
 x 18
 y 16
 end
-arch woodfloor
-x 18
-y 16
-unique 1
-end
 arch goldfloor
 name drop 1000 platinum coins for an amberium to jade converter
 slaying platinacoin
@@ -5722,6 +5722,11 @@ food 1000
 x 18
 y 16
 connected 704
+unique 1
+end
+arch woodfloor
+x 18
+y 17
 unique 1
 end
 arch creator
@@ -5733,11 +5738,6 @@ end
 arch dungeon_magic
 x 18
 y 17
-end
-arch woodfloor
-x 18
-y 17
-unique 1
 end
 arch goldfloor
 name drop 1000 platinum coins for a diamond converter
