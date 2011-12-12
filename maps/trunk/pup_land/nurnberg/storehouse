@@ -8,7 +8,7 @@ enter_x 14
 enter_y 32
 msg
 Created:  2000-12-25 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-12-04 Rick Tanner
+Modified: 2011-12-11 Rick Tanner
 endmsg
 end
 arch grass
@@ -2910,10 +2910,7 @@ arch magic_mouth
 name 1
 msg
 The Farmer Ted says:
-Now I can finally deliver those
-potatoes to the "orcchop". Thank you so
-much! I have opened the northern room
-for you. Take whatever you want.
+Now I can finally deliver those potatoes to the "orcchop". Thank you so much! I have opened the northern room for you. Take whatever you want.
 endmsg
 x 14
 y 29
@@ -2935,15 +2932,11 @@ arch broo
 name Farmer Ted
 msg
 @match yes|favour
-I need 16 sacks of my good potatoes.
-Please fetch them from upstairs and put
-them on the table to the right.
+I need 16 sacks of my good potatoes. Please fetch them from upstairs and put them on the table to the right.
 @match no
 You are so egoistic!
 @match *
-Oh no! The food in my storehouse has
-attracted lots of hungry, nasty
-creatures. Would you do me a favour?
+Oh no! The food in my storehouse has attracted lots of hungry, nasty creatures. Would you do me a favour?
 endmsg
 x 14
 y 30
@@ -3453,11 +3446,7 @@ arch tome
 name the Siegfried-Saga
 msg
 ...
-By defeating the Evil Masters,
-Siegfried saved the world.
-We are the heirs of his bravery,
-upholding his spirit is our fait,
-our humble mission.
+By defeating the Evil Masters, Siegfried saved the world. We are the heirs of his bravery, upholding his spirit is our fait, our humble mission.
 ...
 endmsg
 x 17
