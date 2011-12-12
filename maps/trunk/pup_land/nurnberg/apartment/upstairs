@@ -8,7 +8,7 @@ enter_x 3
 enter_y 2
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-12-21 Rick Tanner
+Modified: 2011-12-11 Rick Tanner
 endmsg
 end
 arch blocked
@@ -277,8 +277,7 @@ arch oakdoor
 name dragon transport
 slaying /pup_land/rainbow/red_town/town
 msg
-The dragon flies high up into the sky,
-heading towards Red Town...
+The dragon flies high up into the sky, heading towards Red Town...
 endmsg
 face fire_drag.171
 hp 7
