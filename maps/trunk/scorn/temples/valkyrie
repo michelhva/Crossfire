@@ -10,7 +10,7 @@ enter_x 7
 enter_y 17
 msg
 Created: 2003-08-17 Lalo Martins
-Modified: 2011-11-12 Rick Tanner
+Modified: 2011-12-13 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1324,7 +1324,7 @@ end
 arch knight
 name Priest of Valkyrie
 msg
-@match alkyrie
+@match valkyrie
 Valkyrie is the warrior goddess.  She
 abhors all magic, unnatural creatures
 and other similar abominations.
@@ -1337,7 +1337,7 @@ grants us with protection from filthy
 magic, and blesses our weapons if
 we're faithful enough.
 @match *
-Belhold the glory of Valkyrie, the
+Behold the glory of Valkyrie, the
 Deathbringer.
 endmsg
 x 6
