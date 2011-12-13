@@ -8,7 +8,7 @@ enter_x 16
 enter_y 23
 msg
 Created:  1996-02-10
-Modified: 2011-12-11 Rick Tanner
+Modified: 2011-12-12 Rick Tanner
 endmsg
 end
 arch igate_open_1
@@ -986,6 +986,10 @@ arch dungeon_floor
 x 6
 y 17
 end
+arch swall_1_4_half
+x 6
+y 17
+end
 arch wall_2_2_4
 x 6
 y 17
@@ -1388,6 +1392,10 @@ x 8
 y 17
 end
 arch wall_1_1
+x 8
+y 17
+end
+arch swall_1_3_half
 x 8
 y 17
 end
