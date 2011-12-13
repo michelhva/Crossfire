@@ -8,7 +8,7 @@ enter_x 18
 enter_y 2
 msg
 Created:  1996-02-12
-Modified: 2008-12-04 Rick Tanner
+Modified: 2011-12-12 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1962,9 +1962,7 @@ end
 arch sign
 msg
 Room of Comet:
- Password to escape from the room is
- "kasdjuFkuGngauG"
-
+ Password to escape from the room is  "kasdjuFkuGngauG"
 endmsg
 x 6
 y 17
@@ -5226,8 +5224,7 @@ end
 arch locked_door1
 slaying treasure_death
 msg
-You need the Treasure Key to open this
-door.
+You need the Treasure Key to open this door.
 endmsg
 x 15
 y 25
@@ -5523,9 +5520,7 @@ y 15
 end
 arch sign
 msg
-This door waste the Treasure Key.
-If you open the door, you cannot open
-treasure room!
+This door waste the Treasure Key. If you open the door, you cannot open treasure room!
 endmsg
 x 16
 y 15
@@ -5922,8 +5917,7 @@ y 15
 end
 arch scroll
 msg
-Don't become greedy.
-You should be unselfish man.
+Don't become greedy. You should be unselfish man.
 endmsg
 x 17
 y 15
@@ -6151,8 +6145,7 @@ y 1
 end
 arch sign
 msg
-In this dungeon, you cannot cast magic.
-Fight with your physical ability!
+In this dungeon, you cannot cast magic. Fight with your physical ability!
 endmsg
 x 18
 y 1
@@ -6232,12 +6225,7 @@ y 7
 end
 arch sign
 msg
-That Dave is very strong.
-So, you'd better to activate the
-Monster Transfer System ,
-lead the monster to the pentagram,
-and transfer monster to bomb area.
-You should not enter the pentagram.
+That Dave is very strong. So, you'd better to activate the Monster Transfer System, lead the monster to the pentagram, and transfer monster to bomb area. You should not enter the pentagram.
 
 Be careful to the mover.
 
@@ -8035,8 +8023,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-hahaha,
-go to hell.
+hahaha, go to hell.
 endmsg
 x 23
 y 5
@@ -8492,8 +8479,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-hahaha,
-go to hell.
+hahaha, go to hell.
 endmsg
 x 24
 y 16
@@ -9007,8 +8993,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-You are very greedy,
-hahaha!
+You are very greedy, hahaha!
 endmsg
 x 26
 y 6
@@ -9071,8 +9056,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-hahaha,
-go to hell.
+hahaha, go to hell.
 endmsg
 x 26
 y 10
@@ -9163,8 +9147,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-You are very greedy,
-hahaha!
+You are very greedy, hahaha!
 endmsg
 x 26
 y 16
