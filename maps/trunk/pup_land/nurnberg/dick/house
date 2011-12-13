@@ -1647,11 +1647,15 @@ arch woodfloor
 x 12
 y 18
 end
-arch swall_0
+arch swall_1_1
 x 12
 y 18
 end
 arch woodfloor
+x 12
+y 19
+end
+arch swall_1_2_half
 x 12
 y 19
 end
@@ -2987,7 +2991,7 @@ arch woodfloor
 x 20
 y 7
 end
-arch swall_1_3
+arch swall_2_1_2
 x 20
 y 7
 end
@@ -3019,7 +3023,7 @@ arch woodfloor
 x 20
 y 10
 end
-arch swall_1_3
+arch swall_2_1_2
 x 20
 y 10
 end
@@ -3063,7 +3067,7 @@ arch woodfloor
 x 20
 y 14
 end
-arch swall_1_3
+arch swall_2_1_2
 x 20
 y 14
 end
@@ -3170,6 +3174,10 @@ arch wall_2_1_1
 x 21
 y 7
 end
+arch swall_1_3_half
+x 21
+y 7
+end
 arch woodfloor
 x 21
 y 8
@@ -3191,6 +3199,10 @@ x 21
 y 10
 end
 arch wall_2_1_1
+x 21
+y 10
+end
+arch swall_1_3_half
 x 21
 y 10
 end
@@ -3223,6 +3235,10 @@ x 21
 y 14
 end
 arch wall_2_1_1
+x 21
+y 14
+end
+arch swall_1_3_half
 x 21
 y 14
 end
