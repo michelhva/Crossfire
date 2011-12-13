@@ -107,6 +107,9 @@ end
 arch dungeon_floor
 y 22
 end
+arch swall_1_4_half
+y 22
+end
 arch wall_2_1_1
 y 22
 end
@@ -240,7 +243,7 @@ arch dungeon_magic
 x 1
 y 22
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 22
 end
@@ -405,11 +408,15 @@ arch dungeon_floor
 x 2
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 2
 y 26
 end
 arch dungeon_floor
+x 2
+y 27
+end
+arch swall_1_2_half
 x 2
 y 27
 end
@@ -593,6 +600,10 @@ arch dungeon_floor
 x 4
 y 2
 end
+arch swall_1_4_half
+x 4
+y 2
+end
 arch wall_2_1_1
 x 4
 y 2
@@ -769,7 +780,7 @@ arch dungeon_floor
 x 5
 y 2
 end
-arch swall_1_4
+arch swall_2_1_2
 x 5
 y 2
 end
@@ -985,7 +996,11 @@ arch dungeon_floor
 x 6
 y 7
 end
-arch wall_2_1_2
+arch swall_1_4_half
+x 6
+y 7
+end
+arch wall_1_3
 x 6
 y 7
 end
@@ -1234,11 +1249,11 @@ arch dungeon_floor
 x 7
 y 23
 end
-arch wall_1_1
+arch swall_1_2_half
 x 7
 y 23
 end
-arch swall_1_2
+arch wall_1_1
 x 7
 y 23
 end
@@ -1948,7 +1963,7 @@ arch dungeon_floor
 x 10
 y 22
 end
-arch swall_1_3
+arch swall_2_1_2
 x 10
 y 22
 end
@@ -2096,7 +2111,11 @@ arch dungeon_magic
 x 11
 y 16
 end
-arch swall_2_2_3
+arch swall_1_3_half
+x 11
+y 16
+end
+arch wall_1_1
 x 11
 y 16
 end
@@ -2145,6 +2164,10 @@ x 11
 y 22
 end
 arch wall_2_1_1
+x 11
+y 22
+end
+arch swall_1_3_half
 x 11
 y 22
 end
@@ -3166,6 +3189,10 @@ arch wall_2_2_4
 x 17
 y 17
 end
+arch swall_1_1_half
+x 17
+y 17
+end
 arch dungeon_floor
 x 17
 y 18
@@ -3174,7 +3201,7 @@ arch dungeon_magic
 x 17
 y 18
 end
-arch swall_1_1
+arch swall_2_1_1
 x 17
 y 18
 end
@@ -3551,7 +3578,11 @@ arch dungeon_floor
 x 19
 y 4
 end
-arch wall_2_2_3
+arch swall_1_3_half
+x 19
+y 4
+end
+arch wall_1_1
 x 19
 y 4
 end
