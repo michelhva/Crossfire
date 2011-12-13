@@ -8,7 +8,7 @@ enter_x 1
 enter_y 3
 msg
 Created:  1996-02-09
-Modified: 2008-11-02 Rick Tanner
+Modified: 2011-12-12 Rick Tanner
 endmsg
 end
 arch grass
@@ -521,32 +521,21 @@ arch human
 name Dick, the carpenter
 msg
 @match castle
-Bauer is very stingy.
-So, I did jerry-building in the
-underground of castle :).
-Go there and look into one of the
-pillars.
+Bauer is very stingy. So, I did jerry-building in the underground of castle :). Go there and look into one of the pillars.
 @match bauer
-I hate him!
-He is very stingy!
-I built his Castle, but he didn't pay
-enough money!!!
+I hate him! He is very stingy! I built his Castle, but he didn't pay enough money!!!
 @match dot
 Ok!
 @match tod
 Really,you want to get a death?
 @match extra
-Oh, You want to try a extra dungeon,
-don't you?
-Then please say the keyword that is
-obtained by Proof Scrolls.
+Oh, You want to try a extra dungeon, don't you? Then please say the keyword that is obtained by Proof Scrolls.
 @match yes
-Ok. Please drop 5 platina on the alter,
-and go to next room.
+Ok. Please drop 5 platina on the alter, and go to next room.
 @match *
 Welcome to my house!
 I'm Dick, a Carpenter.
-Would you like to conquer my dungeons
+Would you like to conquer my dungeons?
 endmsg
 face human.111
 hp 100
@@ -1236,10 +1225,7 @@ There are three dungeons.
  2.ShowInv de Pon (medium level)
  3.Bomb de Pon (high level)
 
-There are special items in each
-dungeon: one is a key, another is the
-Proof Scroll.
-Go to dungeon and pick them
+There are special items in each dungeon: one is a key, another is the Proof Scroll. Go to dungeon and pick them.
 endmsg
 x 10
 y 6
@@ -1334,8 +1320,7 @@ y 17
 end
 arch sign_e
 msg
-If you want to enter this room,
-go and ask Dick about "extra"
+If you want to enter this room, go and ask Dick about "extra"
 endmsg
 x 10
 y 17
@@ -1541,8 +1526,7 @@ end
 arch locked_door2
 slaying 43658709
 msg
-You need the Silver Key to open this
-door.
+You need the Silver Key to open this door.
 endmsg
 x 12
 y 6
@@ -1606,8 +1590,7 @@ end
 arch locked_door2
 slaying 532106
 msg
-You need the Platina Key to open this
-door.
+You need the Platina Key to open this door.
 endmsg
 x 12
 y 12
