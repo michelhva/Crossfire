@@ -8,7 +8,7 @@ enter_x 16
 enter_y 19
 msg
 Created:  1996-12-25
-Modified: 2008-12-04 Rick Tanner
+Modified: 2011-12-12 Rick Tanner
 endmsg
 end
 arch blocked
@@ -895,7 +895,7 @@ y 24
 end
 arch sign
 msg
-Bombs Transfer System(in trouble):
+Bombs Transfer System (in trouble):
 1. Put bombs on the teleporter
 2. Pull the lever.
 Don't enter the teleporter.
@@ -3004,12 +3004,9 @@ arch sign
 name Instruction
 msg
 Bomb is very powerful in this game.
-1. Move to on the marking rune and
-   invoke create earth wall to
-   the north.
+1. Move to on the marking rune and invoke create earth wall to the north.
 2. Pull the lever to open the gate.
-3. Move on to the marking rune and
-   invoke create bomb to the north.
+3. Move on to the marking rune and invoke create bomb to the north.
 4. Escape from explosion.
 endmsg
 x 16
@@ -4582,8 +4579,7 @@ msg
 Wait!
 Don't turn left carelessly,
 or you'll catch cold breath.
-Move on to the marking rune quickly,
-and invoke create earth wall.
+Move on to the marking rune quickly, and invoke create earth wall.
 endmsg
 x 24
 y 20
@@ -4988,9 +4984,7 @@ y 25
 end
 arch sign
 msg
-On this corridor,
-you cannot use magic except marking
-rune spot.
+On this corridor, you cannot use magic except marking rune spot.
 endmsg
 x 26
 y 25
