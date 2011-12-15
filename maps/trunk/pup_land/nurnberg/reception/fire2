@@ -8,7 +8,7 @@ enter_x 14
 enter_y 1
 msg
 Created:  1996-02-18
-Modified: 2008-10-27 Rick Tanner
+Modified: 2011-12-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -507,6 +507,10 @@ arch woodfloor
 x 5
 y 4
 end
+arch swall_1_4_half
+x 5
+y 4
+end
 arch cwall_2_1_1
 x 5
 y 4
@@ -538,6 +542,10 @@ x 5
 y 7
 end
 arch woodfloor
+x 5
+y 8
+end
+arch swall_1_4_half
 x 5
 y 8
 end
@@ -631,7 +639,7 @@ arch dungeon_magic
 x 6
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 6
 y 4
 end
@@ -673,7 +681,7 @@ arch dungeon_magic
 x 6
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 6
 y 8
 end
@@ -1172,7 +1180,11 @@ arch woodfloor
 x 11
 y 2
 end
-arch cwall_3_3
+arch cwall_2_1_2
+x 11
+y 2
+end
+arch swall_1_1_half
 x 11
 y 2
 end
@@ -1236,7 +1248,11 @@ arch woodfloor
 x 11
 y 10
 end
-arch cwall_2_2_4
+arch swall_1_2_half
+x 11
+y 10
+end
+arch cwall_1_3
 x 11
 y 10
 end
