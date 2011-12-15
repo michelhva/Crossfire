@@ -8,7 +8,7 @@ enter_x 10
 enter_y 34
 msg
 Created:  1996-02-14
-Modified: 2011-12-01 Rick Tanner
+Modified: 2011-12-14 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -3351,7 +3351,7 @@ end
 arch human
 msg
 @match escape|passage
-If you don't know about escape passage, please go to the tavern in lown town and talk with a thief. If you don't know how to open the doors in the escape passage, then go to the tavern in lown town, and talk with the learned man.
+If you don't know about escape passage, please go to the tavern in lone town and talk with a thief. If you don't know how to open the doors in the escape passage, then go to the tavern in lone town, and talk with the learned man.
 @match hidden|exit
 You can see the hidden exit by using the spell of show invisible.
 @match yes
