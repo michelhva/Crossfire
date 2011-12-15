@@ -8,7 +8,7 @@ enter_x 16
 enter_y 7
 msg
 Created:  1996-12-18
-Modified: 2011-12-06 Rick Tanner
+Modified: 2011-12-14 Rick Tanner
 endmsg
 end
 arch grass
@@ -1448,7 +1448,7 @@ msg
 @match resistance
 We fight against them.
 @match barrier|station
-There is a barrior station to the south-east from this town. We prevent Liberation Army from entering the eastern part of the country that way.
+There is a barrier station to the south-east from this town. We prevent Liberation Army from entering the eastern part of the country that way.
 @match *
 We built the Barrier Station.
 endmsg
