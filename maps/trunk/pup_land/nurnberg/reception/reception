@@ -2603,11 +2603,15 @@ arch cwall_2_1_2
 x 11
 y 18
 end
+arch swall_1_1_half
+x 11
+y 18
+end
 arch woodfloor
 x 11
 y 19
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 19
 end
@@ -3092,11 +3096,15 @@ arch cwall_1_4
 x 13
 y 20
 end
+arch swall_1_1_half
+x 13
+y 20
+end
 arch woodfloor
 x 13
 y 21
 end
-arch swall_1_1
+arch swall_2_1_1
 x 13
 y 21
 end
@@ -3866,7 +3874,11 @@ arch woodfloor
 x 16
 y 20
 end
-arch cwall_4
+arch swall_1_4_half
+x 16
+y 20
+end
+arch cwall_3_4
 x 16
 y 20
 end
@@ -4340,7 +4352,11 @@ arch marble
 x 18
 y 20
 end
-arch cwall_4
+arch swall_1_3_half
+x 18
+y 20
+end
+arch cwall_3_2
 x 18
 y 20
 end
@@ -5188,7 +5204,7 @@ arch flagstone
 x 22
 y 9
 end
-arch swall_2_1_1
+arch swall_1_1
 x 22
 y 9
 end
@@ -5755,12 +5771,9 @@ arch marble
 x 24
 y 31
 end
-arch grate_closed_2
-face swall_5.111
+arch swall_1_2
 x 24
 y 31
-speed 0.500000
-connected 20
 end
 arch marble
 x 24
@@ -6581,12 +6594,9 @@ arch marble
 x 28
 y 31
 end
-arch grate_closed_2
-face swall_5.111
+arch swall_1_2
 x 28
 y 31
-speed 0.500000
-connected 20
 end
 arch marble
 x 28
@@ -7440,7 +7450,11 @@ arch flagstone
 x 33
 y 1
 end
-arch cwall_2_2_3
+arch cwall_1_3
+x 33
+y 1
+end
+arch swall_1_1_half
 x 33
 y 1
 end
@@ -7456,7 +7470,15 @@ arch flagstone
 x 33
 y 3
 end
-arch dwall_3_4
+arch swall_1_2_half
+x 33
+y 3
+end
+arch swall_1_3_half
+x 33
+y 3
+end
+arch cwall_1_1
 x 33
 y 3
 end
