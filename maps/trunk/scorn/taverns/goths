@@ -9,7 +9,7 @@ enter_x 5
 enter_y 32
 msg
 Created:  1993-10-15
-Modified: 2011-10-09 Rick Tanner
+Modified: 2011-12-14 Rick Tanner
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -2946,7 +2946,7 @@ Greetings.  Just having a drink after my visit to the Valley of the Sisters.
 @match valley|sisters
 Yes - a very nasty place.  You should be at least 20th tier before you wander in, maybe a bit less if you have some friends.
 Do you want to know where it is located?
-@match locat
+@match locate|location|located
 It is in the mountain range south of Darcap.  The mountains flatten out some to reveal a small lake.
 endmsg
 hp 300
