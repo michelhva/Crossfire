@@ -650,7 +650,10 @@ end
 arch woodfloor
 x 7
 end
-arch cwall_3_3
+arch dwall_2_1_2
+x 7
+end
+arch swall_1_1_half
 x 7
 end
 arch woodfloor
@@ -1485,7 +1488,11 @@ arch woodfloor
 x 15
 y 4
 end
-arch cwall_3_4
+arch dwall_2_1_1
+x 15
+y 4
+end
+arch swall_1_3_half
 x 15
 y 4
 end
