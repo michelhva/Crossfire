@@ -36,6 +36,9 @@ end
 arch dungeon_floor
 y 4
 end
+arch swall_1_4_half
+y 4
+end
 arch cwall_2_1_1
 y 4
 end
@@ -134,7 +137,7 @@ arch dungeon_magic
 x 1
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 4
 end
@@ -1426,6 +1429,9 @@ end
 arch cwall_2_1_2
 x 13
 end
+arch swall_1_1_half
+x 13
+end
 arch dungeon_floor
 x 13
 y 1
@@ -1434,7 +1440,7 @@ arch dungeon_magic
 x 13
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 13
 y 1
 end
