@@ -9,7 +9,7 @@ enter_x 11
 enter_y 5
 msg
 Created:  1996-02-21
-Modified: 2008-10-27 Rick Tanner
+Modified: 2011-12-15 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -37,7 +37,10 @@ end
 arch dungeon_floor
 y 4
 end
-arch cwall_3_2
+arch swall_1_4_half
+y 4
+end
+arch cwall_2_1_1
 y 4
 end
 arch dungeon_floor
@@ -61,7 +64,10 @@ end
 arch dungeon_floor
 y 8
 end
-arch cwall_3_2
+arch swall_1_4_half
+y 8
+end
+arch cwall_2_1_1
 y 8
 end
 arch dungeon_floor
@@ -436,7 +442,7 @@ arch dungeon_floor
 x 3
 y 8
 end
-arch cwall_3_3
+arch swall_3_3
 x 3
 y 8
 end
@@ -456,7 +462,11 @@ arch dungeon_floor
 x 3
 y 10
 end
-arch cwall_3_1
+arch swall_1_2_half
+x 3
+y 10
+end
+arch cwall_2_1_2
 x 3
 y 10
 end
@@ -575,11 +585,11 @@ arch dungeon_floor
 x 4
 y 8
 end
-arch dungeon_magic
+arch swall_1_3_half
 x 4
 y 8
 end
-arch swall_2_1_2
+arch cwall_1_4
 x 4
 y 8
 end
@@ -663,7 +673,7 @@ arch dungeon_magic
 x 5
 y 4
 end
-arch swall_2_2_3
+arch swall_3_3
 x 5
 y 4
 end
@@ -687,7 +697,7 @@ arch dungeon_magic
 x 5
 y 6
 end
-arch swall_2_2_4
+arch swall_3_1
 x 5
 y 6
 end
@@ -776,7 +786,10 @@ end
 arch dungeon_floor
 x 6
 end
-arch cwall_3_3
+arch cwall_2_1_2
+x 6
+end
+arch swall_1_1_half
 x 6
 end
 arch dungeon_magic
@@ -811,7 +824,11 @@ arch dungeon_floor
 x 6
 y 4
 end
-arch cwall_2_2_1
+arch swall_1_3_half
+x 6
+y 4
+end
+arch cwall_1_4
 x 6
 y 4
 end
@@ -825,6 +842,10 @@ y 5
 connected 10
 end
 arch dungeon_floor
+x 6
+y 6
+end
+arch swall_1_3_half
 x 6
 y 6
 end
