@@ -8,7 +8,7 @@ enter_x 8
 enter_y 16
 msg
 Created:  1996-02-28
-Modified: 2008-10-27 Rick Tanner
+Modified: 2011-12-15 Rick Tanner
 endmsg
 end
 arch grass
@@ -3142,8 +3142,7 @@ end
 arch locked_door2
 slaying 7775237749
 msg
-You need the special key to open this door.
-You'll find the key on the third floor!
+You need the special key to open this door. You'll find the key on the third floor!
 endmsg
 x 15
 y 7
