@@ -9,7 +9,7 @@ enter_x 2
 enter_y 1
 msg
 Created:  1996-02-23
-Modified: 2008-10-27 Rick Tanner
+Modified: 2011-12-15 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1390,8 +1390,7 @@ end
 arch scroll
 name instructions
 msg
-Bring this gem to the Guild of Law
-and drop it on the desk there.
+Bring this gem to the Guild of Law and drop it on the desk there.
 endmsg
 x 12
 y 14
@@ -1551,9 +1550,7 @@ y 3
 end
 arch wds
 msg
-The fearful White Dragon Shield,
-woe betide any who oppose the
-wielder of this in battle
+The fearful White Dragon Shield, woe betide any who oppose the wielder of this in battle
 endmsg
 ac 3
 x 14
