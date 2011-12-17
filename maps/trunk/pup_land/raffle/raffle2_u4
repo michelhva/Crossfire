@@ -10,7 +10,7 @@ enter_x 23
 enter_y 21
 msg
 Created:  1997-04-05
-Modified: 2011-10-31 Rick Tanner
+Modified: 2011-12-16 Rick Tanner
 endmsg
 end
 arch sky
@@ -764,8 +764,7 @@ end
 arch locked_door2
 slaying raffle2_warrior_door
 msg
-You need the Warrior's key to open
-this door.
+You need the Warrior's key to open this door.
 endmsg
 x 4
 y 20
@@ -2228,12 +2227,9 @@ arch dog
 name Pip the administrator
 msg
 @match password
-Huh? You ought to find it
-on the undead's floor.
+Huh? You ought to find it on the undead's floor.
 @match *
-Congratulation!!!
-You've obtained the right to draw
-raffle #2!
+Congratulation!!! You've obtained the right to draw raffle #2!
 endmsg
 Con 100
 hp 10000
@@ -3818,8 +3814,7 @@ end
 arch locked_door2
 slaying raffle2_wizard_door
 msg
-You need the Wizard's key to open
-this door.
+You need the Wizard's key to open this door.
 endmsg
 x 20
 y 20
