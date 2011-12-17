@@ -11,7 +11,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-12-29
-Modified: 2008-12-04 Rick Tanner
+Modified: 2011-12-16 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1001,10 +1001,7 @@ end
 arch sign_w
 name Dungeon No.2
 msg
-The raffle dungeon for trained heroes
-(~lvl 15-25). To solve the dungeon
-entirely, a team of two players is
-required.
+The raffle dungeon for trained heroes (~lvl 15-25). To solve the dungeon entirely, a team of two players is required.
 endmsg
 x 3
 y 16
@@ -1823,8 +1820,7 @@ end
 arch potion_restoration
 name Bonsai tree
 msg
-It expresses a transience of this
-world.
+It expresses a transience of this world.
 endmsg
 face tree_3.111
 x 6
@@ -2135,8 +2131,7 @@ arch locked_door2
 name barrier
 slaying raffle2_first_chance
 msg
-You need the raffle ticket No.2 to pull
-this lever.
+You need the raffle ticket No.2 to pull this lever.
 endmsg
 face enchantment.111
 x 6
@@ -2721,12 +2716,9 @@ arch sign
 name instruction
 msg
 You can draw the raffle here!!
- 1. Go to Dungeon No.2 (downstairs)
-    and retreive the raffle ticket.
- 2. Go upstairs and pull lever 1
-    on the 2nd floor.
- 2. Come back here,  pull lever 2
-    right in front of you.
+ 1. Go to Dungeon No.2 (downstairs) and retreive the raffle ticket.
+ 2. Go upstairs and pull lever 1 on the 2nd floor.
+ 2. Come back here,  pull lever 2 right in front of you.
  3. Then pull lever 3.
  4. At last pull lever 2 again.
 endmsg
