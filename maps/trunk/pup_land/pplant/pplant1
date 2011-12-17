@@ -8,7 +8,7 @@ enter_x 10
 enter_y 21
 msg
 Created:  1996-02-04
-Modified: 2008-12-04 Rick Tanner
+Modified: 2011-12-16 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1901,8 +1901,7 @@ y 4
 end
 arch sign_w
 msg
-Fuel Section:
-Caution! It can be flamed.
+Fuel Section: Caution! It can be flamed.
 endmsg
 x 12
 y 4
