@@ -10,7 +10,7 @@ enter_x 1
 enter_y 10
 msg
 Created:  1997-04-01
-Modified: 2011-11-01 Rick Tanner
+Modified: 2011-12-16 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -219,8 +219,7 @@ arch magic_mouth
 name 1203
 msg
 Rufus says:
-Arrgh! You murdered Raffy, my friend.
-Now I'll kill you!
+Arrgh! You murdered Raffy, my friend. Now I'll kill you!
 endmsg
 x 1
 y 5
@@ -3177,10 +3176,7 @@ end
 arch sign
 name Instructions
 msg
-With this transport mechanism you can
-send items to the other side (where
-your teammate is).
-To use it, follow the instructions:
+With this transport mechanism you can send items to the other side (where your teammate is). To use it, follow the instructions:
 o Put an item into the left cage.
 o Set lever to "on".
 o After transport, set lever to "off".
@@ -3802,10 +3798,7 @@ end
 arch sign
 name Instructions
 msg
-With this transport mechanism you can
-send items to the other side (where
-your teammate is).
-To use it, follow the instructions:
+With this transport mechanism you can send items to the other side (where your teammate is). To use it, follow the instructions:
 To use it, follow the instructions:
 o Put an item into the left cage.
 o Set lever to "on".
@@ -3943,9 +3936,7 @@ y 27
 end
 arch magic_mouth
 msg
-You have the feeling that something
-is going to happen when you keep
-standing here...
+You have the feeling that something is going to happen when you keep standing here...
 endmsg
 x 13
 y 28
