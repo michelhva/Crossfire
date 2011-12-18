@@ -2153,26 +2153,26 @@ treasure avatar
   chance 50
   nrof 3
   end
-treasure suprise
-  arch firechest
-  chance 30
-  no
-    arch ghost
-    chance 20
-    no
-      arch gauntlets_str
-      chance 2
-      no
-        arch elvenboots
-        chance 2
-        no
-          arch black_pudding
-          chance 10
-          end
-        end
-      end
-    end
-  end
+#treasure suprise
+#  arch firechest
+#  chance 30
+#  no
+#    arch ghost
+#    chance 20
+#    no
+#      arch gauntlets_str
+#      chance 2
+#      no
+#        arch elvenboots
+#        chance 2
+#        no
+#          arch black_pudding
+#          chance 10
+#          end
+#        end
+#      end
+#    end
+#  end
 treasure spark
   arch spell_sm_lightning
     nrof 6
