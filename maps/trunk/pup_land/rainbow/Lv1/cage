@@ -8,7 +8,7 @@ enter_x 2
 enter_y 6
 msg
 Created:  1996-06-10
-Modified: 2009-02-09 Arvid Norlander
+Modified: 2011-12-18 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -822,14 +822,11 @@ arch magic_mouth
 name Bizuzu
 msg
 @match yes|no
-You have no choice idiot...
-Now go to hell!
+You have no choice idiot... Now go to hell!
 @match help|please|mercy
 Uuurgh! Can't you die with honor?
 @match *
-Hahaha, stupid guy! We're bored so
-we'll kill you for a change... haha!
-Is that okay for you?
+Hahaha, stupid guy! We're bored so we'll kill you for a change... haha! Is that okay for you?
 endmsg
 x 8
 y 6
