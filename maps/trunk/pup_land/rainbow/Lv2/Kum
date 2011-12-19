@@ -8,7 +8,7 @@ enter_x 3
 enter_y 3
 msg
 Created:  1996-06-14
-Modified: 2008-10-12 Rick Tanner
+Modified: 2011-12-18 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -79,21 +79,9 @@ arch dwarf
 name Kum
 msg
 @match room
-I know a password that (I think) leads
-me to treasure room:
-
-ururdd
-
+I know a password that (I think) leads me to treasure room: ururdd
 @match *
-I am Kum the dwarf. I am looking for
- a treasure of this ruin. I discover
-a ROOM in which I think treasures are.
-But I can't pass the maze. Then I made
-a door to prevent others to pass
-the maze.
-
-
-
+I am Kum the dwarf. I am looking for  a treasure of this ruin. I discover a ROOM in which I think treasures are. But I can't pass the maze. Then I made a door to prevent others to pass the maze.
 endmsg
 hp 700
 x 1
