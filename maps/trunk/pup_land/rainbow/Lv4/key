@@ -8,7 +8,7 @@ enter_x 1
 enter_y 14
 msg
 Created:  1996-07-16
-Modified: 2008-10-12 Rick Tanner
+Modified: 2011-12-20 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1403,14 +1403,10 @@ name M. Frozen
 msg
 @match word
 I don't know.
-
 @match yes|key
 O.K.
-
 @match *
-Oops! This is big mistake!
-O.K. You have won. If you want,
-I'll give you the key. Do you want?
+Oops! This is big mistake! O.K. You have won. If you want, I'll give you the key. Do you want?
 endmsg
 face thief.131
 hp 100
