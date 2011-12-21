@@ -9,7 +9,7 @@ enter_x 28
 enter_y 14
 msg
 Created:  2008-10-10 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2011-10-26 Rick Tanner
+Modified: 2011-10-30 Rick Tanner
 endmsg
 end
 arch blocked
@@ -10601,6 +10601,10 @@ x 40
 y 26
 move_block fly_low
 no_damage 1
+end
+arch dungeon_magic
+x 40
+y 26
 end
 arch stonefloor2
 x 40

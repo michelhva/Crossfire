@@ -12,7 +12,7 @@ Creator: majorwoo josh@woosworld.net
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-10-28 Rick Tanner
+Modified: 2011-11-05 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2280,15 +2280,6 @@ x 4
 y 13
 unique 1
 end
-arch dungeon_magic
-x 4
-y 13
-end
-arch woodfloor
-x 4
-y 13
-unique 1
-end
 arch grate_closed_1
 x 4
 y 13
@@ -2801,24 +2792,6 @@ end
 arch dwall_2_2_4
 x 6
 y 4
-end
-arch dungeon_magic
-x 6
-y 5
-end
-arch woodfloor
-x 6
-y 5
-unique 1
-end
-arch dungeon_magic
-x 6
-y 5
-end
-arch woodfloor
-x 6
-y 5
-unique 1
 end
 arch dungeon_magic
 x 6
@@ -4042,15 +4015,6 @@ x 10
 y 14
 unique 1
 end
-arch dungeon_magic
-x 10
-y 14
-end
-arch woodfloor
-x 10
-y 14
-unique 1
-end
 arch grate_closed_2
 x 10
 y 14
@@ -4179,6 +4143,12 @@ end
 arch ggate_closed
 x 11
 y 4
+connected 81
+end
+arch pedestal
+x 11
+y 5
+invisible 1
 connected 81
 end
 arch dungeon_magic
@@ -6379,20 +6349,6 @@ name MailedFist
 title Python
 slaying /python/guilds/guild_dues.py
 end
-end
-arch teleporter
-hp 11
-sp 5
-x 20
-y 13
-connected 80
-end
-arch pedestal_trigger
-x 20
-y 13
-type 17
-invisible 1
-connected 81
 end
 arch creator
 other_arch jadecoin
