@@ -419,6 +419,7 @@ connected 16
 end
 arch card
 name Kennel Token
+name_pl Kennel Tokens
 slaying KetsuekiItsuryuu_Kennel_Token
 msg
 The holder of this card is allowed free
@@ -450,6 +451,7 @@ connected 36
 end
 arch card
 name Alchemy Token
+name_pl Alchemy Tokens
 slaying KetsuekiItsuryuu_Alch_Token
 msg
 The holder of this card is allowed free
@@ -900,6 +902,7 @@ connected 16
 end
 arch card
 name Kennel Token
+name_pl Kennel Tokens
 slaying KetsuekiItsuryuu_Kennel_Token
 msg
 The holder of this card is allowed free
@@ -945,6 +948,7 @@ connected 36
 end
 arch card
 name Alchemy Token
+name_pl Alchemy Tokens
 slaying KetsuekiItsuryuu_Alch_Token
 msg
 The holder of this card is allowed free
@@ -1339,6 +1343,7 @@ unique 1
 end
 arch crystalball
 name Guild Oracle
+name_pl Guild Oracle
 x 8
 y 8
 resist_physical 100
@@ -1455,6 +1460,7 @@ connected 16
 end
 arch card
 name Kennel Token
+name_pl Kennel Tokens
 slaying KetsuekiItsuryuu_Kennel_Token
 msg
 The holder of this card is allowed free
@@ -1482,6 +1488,7 @@ connected 36
 end
 arch card
 name Alchemy Token
+name_pl Alchemy Tokens
 slaying KetsuekiItsuryuu_Alch_Token
 msg
 The holder of this card is allowed free
@@ -1509,6 +1516,7 @@ connected 46
 end
 arch card
 name Garden Token
+name_pl Garden Tokens
 slaying KetsuekiItsuryuu_Gard_Token
 msg
 The holder of this card is allowed free
@@ -1972,6 +1980,7 @@ connected 16
 end
 arch card
 name Kennel Token
+name_pl Kennel Tokens
 slaying KetsuekiItsuryuu_Kennel_Token
 msg
 The holder of this card is allowed free
@@ -2000,6 +2009,7 @@ connected 36
 end
 arch card
 name Alchemy Token
+name_pl Alchemy Tokens
 slaying KetsuekiItsuryuu_Alch_Token
 msg
 The holder of this card is allowed free
@@ -2023,6 +2033,7 @@ connected 46
 end
 arch card
 name Garden Token
+name_pl Garden Tokens
 slaying KetsuekiItsuryuu_Gard_Token
 msg
 The holder of this card is allowed free
@@ -2559,6 +2570,7 @@ connected 46
 end
 arch card
 name Garden Token
+name_pl Garden Tokens
 slaying KetsuekiItsuryuu_Gard_Token
 msg
 The holder of this card is allowed free
@@ -2840,6 +2852,7 @@ connected 26
 end
 arch card
 name Toolshed Token
+name_pl Toolshed Tokens
 slaying KetsuekiItsuryuu_Tool_Token
 msg
 The holder of this card is allowed free
@@ -2893,11 +2906,6 @@ arch grate_closed_2
 x 16
 y 1
 connected 1
-end
-arch flagstone
-x 16
-y 2
-unique 1
 end
 arch flagstone
 x 16
@@ -3084,6 +3092,7 @@ connected 56
 end
 arch card
 name Thaumaturgy Token
+name_pl Thaumaturgy Tokens
 slaying KetsuekiItsuryuu_Thau_Token
 msg
 The holder of this card is allowed free
@@ -3321,6 +3330,7 @@ connected 46
 end
 arch card
 name Garden Token
+name_pl Garden Tokens
 slaying KetsuekiItsuryuu_Gard_Token
 msg
 The holder of this card is allowed free
@@ -3355,6 +3365,7 @@ unique 1
 end
 arch card
 name Kennel Token
+name_pl Kennel Tokens
 slaying KetsuekiItsuryuu_Kennel_Token
 msg
 The holder of this card is allowed free
@@ -3382,6 +3393,7 @@ unique 1
 end
 arch card
 name Tannery Token
+name_pl Tannery Tokens
 slaying KetsuekiItsuryuu_Tan_Token
 msg
 The holder of this card is allowed free
@@ -3392,11 +3404,6 @@ x 18
 y 3
 value 800
 identified 1
-end
-arch flagstone
-x 18
-y 4
-unique 1
 end
 arch flagstone
 x 18
@@ -3414,6 +3421,7 @@ unique 1
 end
 arch card
 name Toolshed Token
+name_pl Toolshed Tokens
 slaying KetsuekiItsuryuu_Tool_Token
 msg
 The holder of this card is allowed free
@@ -3441,6 +3449,7 @@ unique 1
 end
 arch card
 name Alchemy Token
+name_pl Alchemy Tokens
 slaying KetsuekiItsuryuu_Alch_Token
 msg
 The holder of this card is allowed free
@@ -3468,6 +3477,7 @@ unique 1
 end
 arch card
 name Garden Token
+name_pl Garden Tokens
 slaying KetsuekiItsuryuu_Gard_Token
 msg
 The holder of this card is allowed free
@@ -3495,6 +3505,7 @@ unique 1
 end
 arch card
 name Thaumaturgy Token
+name_pl Thaumaturgy Tokens
 slaying KetsuekiItsuryuu_Thau_Token
 msg
 The holder of this card is allowed free
@@ -3521,6 +3532,7 @@ unique 1
 end
 arch card
 name Glowing Crystal Token
+name_pl Glowing Crystal Tokens
 slaying KetsuekiItsuryuu_GC_Token
 msg
 The holder of this card is allowed free
@@ -3548,6 +3560,7 @@ unique 1
 end
 arch card
 name Jeweler Token
+name_pl Jeweler Tokens
 slaying KetsuekiItsuryuu_Jewe_Token
 msg
 The holder of this card is allowed free
@@ -3606,6 +3619,7 @@ connected 26
 end
 arch card
 name Toolshed Token
+name_pl Toolshed Tokens
 slaying KetsuekiItsuryuu_Tool_Token
 msg
 The holder of this card is allowed free
@@ -3865,6 +3879,7 @@ connected 56
 end
 arch card
 name Thaumaturgy Token
+name_pl Thaumaturgy Tokens
 slaying KetsuekiItsuryuu_Thau_Token
 msg
 The holder of this card is allowed free
@@ -4310,6 +4325,7 @@ connected 26
 end
 arch card
 name Toolshed Token
+name_pl Toolshed Tokens
 slaying KetsuekiItsuryuu_Tool_Token
 msg
 The holder of this card is allowed free
@@ -4467,6 +4483,7 @@ connected 86
 end
 arch card
 name Tannery Token
+name_pl Tannery Tokens
 slaying KetsuekiItsuryuu_Tan_Token
 msg
 The holder of this card is allowed free
@@ -4498,6 +4515,7 @@ connected 86
 end
 arch card
 name Tannery Token
+name_pl Tannery Tokens
 slaying KetsuekiItsuryuu_Tan_Token
 msg
 The holder of this card is allowed free
@@ -4533,6 +4551,7 @@ connected 86
 end
 arch card
 name Tannery Token
+name_pl Tannery Tokens
 slaying KetsuekiItsuryuu_Tan_Token
 msg
 The holder of this card is allowed free
@@ -4577,6 +4596,7 @@ connected 86
 end
 arch card
 name Tannery Token
+name_pl Tannery Tokens
 slaying KetsuekiItsuryuu_Tan_Token
 msg
 The holder of this card is allowed free
@@ -4756,6 +4776,7 @@ connected 56
 end
 arch card
 name Thaumaturgy Token
+name_pl Thaumaturgy Tokens
 slaying KetsuekiItsuryuu_Thau_Token
 msg
 The holder of this card is allowed free
@@ -5099,6 +5120,7 @@ connected 76
 end
 arch card
 name Jeweler Token
+name_pl Jeweler Tokens
 slaying KetsuekiItsuryuu_Jewe_Token
 msg
 The holder of this card is allowed free
@@ -5130,6 +5152,7 @@ connected 76
 end
 arch card
 name Jeweler Token
+name_pl Jeweler Tokens
 slaying KetsuekiItsuryuu_Jewe_Token
 msg
 The holder of this card is allowed free
@@ -5165,6 +5188,7 @@ connected 76
 end
 arch card
 name Jeweler Token
+name_pl Jeweler Tokens
 slaying KetsuekiItsuryuu_Jewe_Token
 msg
 The holder of this card is allowed free
@@ -5209,6 +5233,7 @@ connected 76
 end
 arch card
 name Jeweler Token
+name_pl Jeweler Tokens
 slaying KetsuekiItsuryuu_Jewe_Token
 msg
 The holder of this card is allowed free
@@ -5257,6 +5282,7 @@ connected 26
 end
 arch card
 name Toolshed Token
+name_pl Toolshed Tokens
 slaying KetsuekiItsuryuu_Tool_Token
 msg
 The holder of this card is allowed free
@@ -5440,6 +5466,7 @@ connected 56
 end
 arch card
 name Thaumaturgy Token
+name_pl Thaumaturgy Tokens
 slaying KetsuekiItsuryuu_Thau_Token
 msg
 The holder of this card is allowed free
@@ -5525,6 +5552,7 @@ connected 66
 end
 arch card
 name Glowing Crystal Token
+name_pl Glowing Crystal Tokens
 slaying KetsuekiItsuryuu_GC_Token
 msg
 The holder of this card is allowed free
@@ -5556,6 +5584,7 @@ connected 66
 end
 arch card
 name Glowing Crystal Token
+name_pl Glowing Crystal Tokens
 slaying KetsuekiItsuryuu_GC_Token
 msg
 The holder of this card is allowed free
@@ -5591,6 +5620,7 @@ connected 66
 end
 arch card
 name Glowing Crystal Token
+name_pl Glowing Crystal Tokens
 slaying KetsuekiItsuryuu_GC_Token
 msg
 The holder of this card is allowed free
@@ -5635,6 +5665,7 @@ connected 66
 end
 arch card
 name Glowing Crystal Token
+name_pl Glowing Crystal Tokens
 slaying KetsuekiItsuryuu_GC_Token
 msg
 The holder of this card is allowed free

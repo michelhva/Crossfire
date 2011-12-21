@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2011-12-11 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -5023,15 +5023,7 @@ arch grass
 x 16
 y 22
 end
-arch dungeon_magic
-x 16
-y 22
-end
-arch grass
-x 16
-y 22
-end
-arch swall_2_1_2
+arch swall_1_4
 x 16
 y 22
 end
@@ -5347,14 +5339,6 @@ arch grass
 x 17
 y 22
 end
-arch dungeon_magic
-x 17
-y 22
-end
-arch grass
-x 17
-y 22
-end
 arch swall_2_1_2
 x 17
 y 22
@@ -5516,8 +5500,6 @@ other_arch pearl_converter
 x 18
 y 7
 connected 707
-arch pearl_converter
-end
 end
 arch goldfloor
 name drop 1000 platinum coins for a pearl converter
@@ -5614,8 +5596,6 @@ other_arch ruby_converter
 x 18
 y 11
 connected 706
-arch ruby_converter
-end
 end
 arch goldfloor
 name drop 1000 platinum coins for a ruby  converter
@@ -5635,6 +5615,11 @@ arch dwall_2_1_2
 x 18
 y 12
 end
+arch woodfloor
+x 18
+y 13
+unique 1
+end
 arch dungeon_magic
 x 18
 y 13
@@ -5644,13 +5629,6 @@ other_arch platinum_converter2
 x 18
 y 13
 connected 701
-arch platinum_converter2
-end
-end
-arch woodfloor
-x 18
-y 13
-unique 1
 end
 arch goldfloor
 name drop 1000 platinum coins for a platinum to jade converter
@@ -5661,26 +5639,20 @@ y 13
 connected 701
 unique 1
 end
+arch woodfloor
+x 18
+y 14
+unique 1
+end
 arch dungeon_magic
 x 18
 y 14
 end
 arch creator
+other_arch jade_converter2
 x 18
 y 14
 connected 702
-arch platinum_converter2
-name convert jade into platinum
-slaying jadecoin
-other_arch platinacoin
-sp 100
-food 1
-end
-end
-arch woodfloor
-x 18
-y 14
-unique 1
 end
 arch goldfloor
 name drop 1000 platinum coins for a jade to platinum
@@ -5691,22 +5663,20 @@ y 14
 connected 702
 unique 1
 end
+arch woodfloor
+x 18
+y 15
+unique 1
+end
 arch dungeon_magic
 x 18
 y 15
 end
 arch creator
-other_arch platinum_converter
+other_arch jade_converter
 x 18
 y 15
 connected 703
-arch jade_converter
-end
-end
-arch woodfloor
-x 18
-y 15
-unique 1
 end
 arch goldfloor
 name drop 1000 platinum coins for a jade to amberium
@@ -5717,27 +5687,20 @@ y 15
 connected 703
 unique 1
 end
-arch creator
-other_arch platinum_converter
-x 18
-y 16
-connected 704
-arch jade_converter
-name convert amberium into jade
-slaying ambercoin
-other_arch jadecoin
-sp 100
-food 1
-end
-end
-arch dungeon_magic
-x 18
-y 16
-end
 arch woodfloor
 x 18
 y 16
 unique 1
+end
+arch creator
+other_arch amberium_converter
+x 18
+y 16
+connected 704
+end
+arch dungeon_magic
+x 18
+y 16
 end
 arch goldfloor
 name drop 1000 platinum coins for an amberium to jade converter
@@ -5748,22 +5711,20 @@ y 16
 connected 704
 unique 1
 end
-arch creator
-other_arch platinum_converter
-x 18
-y 17
-connected 705
-arch diamond_converter
-end
-end
-arch dungeon_magic
-x 18
-y 17
-end
 arch woodfloor
 x 18
 y 17
 unique 1
+end
+arch creator
+other_arch diamond_converter
+x 18
+y 17
+connected 705
+end
+arch dungeon_magic
+x 18
+y 17
 end
 arch goldfloor
 name drop 1000 platinum coins for a diamond converter
@@ -5825,14 +5786,6 @@ name MailedFist Initiate A
 title Python
 slaying /python/guilds/arrest.py
 end
-end
-arch dungeon_magic
-x 18
-y 22
-end
-arch grass
-x 18
-y 22
 end
 arch dungeon_magic
 x 18
@@ -6138,18 +6091,6 @@ end
 arch swall_2_1_1
 x 19
 y 21
-end
-arch dungeon_magic
-x 19
-y 22
-end
-arch grass
-x 19
-y 22
-end
-arch swall_2_1_1
-x 19
-y 22
 end
 arch dungeon_magic
 x 19
