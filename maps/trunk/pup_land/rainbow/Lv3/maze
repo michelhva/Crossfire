@@ -8,12 +8,12 @@ enter_x 7
 enter_y 1
 msg
 Created:  1996-06-27
-Modified: 2008-10-12 Rick Tanner
+Modified: 2011-12-20 Rick Tanner
 endmsg
 end
 arch pstone_4
 end
-arch cave18
+arch cave24
 end
 arch pstone_4
 y 1
@@ -102,7 +102,7 @@ end
 arch pstone_4
 y 15
 end
-arch cave17
+arch cave23
 y 15
 end
 arch pstone_4
@@ -1505,7 +1505,7 @@ end
 arch pstone_4
 x 15
 end
-arch cave19
+arch cave25
 x 15
 end
 arch pstone_4
@@ -1624,7 +1624,7 @@ arch pstone_4
 x 15
 y 15
 end
-arch cave20
+arch cave22
 x 15
 y 15
 end
