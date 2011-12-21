@@ -7,7 +7,7 @@ height 11
 enter_x 1
 msg
 Created:  1996-06-27
-Modified: 2008-10-13 Rick Tanner
+Modified: 2011-12-20 Rick Tanner
 endmsg
 end
 arch pstone_4
@@ -71,7 +71,7 @@ end
 arch pstone_4
 y 10
 end
-arch cave17
+arch cave23
 y 10
 end
 arch invis_exit
@@ -435,9 +435,8 @@ end
 arch pstone_4
 x 8
 end
-arch cave19
+arch cave25
 x 8
-move_block 0
 end
 arch pstone_4
 x 8
@@ -515,7 +514,7 @@ arch pstone_4
 x 8
 y 10
 end
-arch cave20
+arch cave22
 x 8
 y 10
 end
