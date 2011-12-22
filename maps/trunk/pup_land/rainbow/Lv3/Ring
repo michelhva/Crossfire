@@ -8,35 +8,35 @@ enter_x 7
 enter_y 1
 msg
 Created:  1996-06-27
-Modified: 2008-10-13 Rick Tanner
+Modified: 2011-12-21 Rick Tanner
 endmsg
 end
 arch pstone_4
 end
-arch blocked
+arch cave_15
 end
 arch pstone_4
 y 1
 end
-arch blocked
+arch cave_15
 y 1
 end
 arch pstone_4
 y 2
 end
-arch blocked
+arch cave_15
 y 2
 end
 arch pstone_4
 y 3
 end
-arch blocked
+arch cave_15
 y 3
 end
 arch pstone_4
 y 4
 end
-arch cave18
+arch cave24
 y 4
 end
 arch pstone_4
@@ -102,20 +102,20 @@ end
 arch pstone_4
 y 15
 end
-arch cave17
+arch cave23
 y 15
 end
 arch pstone_4
 x 1
 end
-arch blocked
+arch cave_15
 x 1
 end
 arch pstone_4
 x 1
 y 1
 end
-arch blocked
+arch cave_15
 x 1
 y 1
 end
@@ -123,7 +123,7 @@ arch pstone_4
 x 1
 y 2
 end
-arch blocked
+arch cave_15
 x 1
 y 2
 end
@@ -131,7 +131,7 @@ arch pstone_4
 x 1
 y 3
 end
-arch blocked
+arch cave_15
 x 1
 y 3
 end
@@ -194,14 +194,14 @@ end
 arch pstone_4
 x 2
 end
-arch blocked
+arch cave_15
 x 2
 end
 arch pstone_4
 x 2
 y 1
 end
-arch blocked
+arch cave_15
 x 2
 y 1
 end
@@ -209,7 +209,7 @@ arch pstone_4
 x 2
 y 2
 end
-arch blocked
+arch cave_15
 x 2
 y 2
 end
@@ -217,7 +217,7 @@ arch pstone_4
 x 2
 y 3
 end
-arch blocked
+arch cave_15
 x 2
 y 3
 end
@@ -292,14 +292,14 @@ end
 arch pstone_4
 x 3
 end
-arch blocked
+arch cave_15
 x 3
 end
 arch pstone_4
 x 3
 y 1
 end
-arch blocked
+arch cave_15
 x 3
 y 1
 end
@@ -307,7 +307,7 @@ arch pstone_4
 x 3
 y 2
 end
-arch blocked
+arch cave_15
 x 3
 y 2
 end
@@ -315,7 +315,7 @@ arch pstone_4
 x 3
 y 3
 end
-arch blocked
+arch cave_15
 x 3
 y 3
 end
@@ -378,14 +378,14 @@ end
 arch pstone_4
 x 4
 end
-arch blocked
+arch cave_15
 x 4
 end
 arch pstone_4
 x 4
 y 1
 end
-arch blocked
+arch cave_15
 x 4
 y 1
 end
@@ -393,7 +393,7 @@ arch pstone_4
 x 4
 y 2
 end
-arch blocked
+arch cave_15
 x 4
 y 2
 end
@@ -401,7 +401,7 @@ arch pstone_4
 x 4
 y 3
 end
-arch blocked
+arch cave_15
 x 4
 y 3
 end
@@ -464,14 +464,14 @@ end
 arch pstone_4
 x 5
 end
-arch blocked
+arch cave_15
 x 5
 end
 arch pstone_4
 x 5
 y 1
 end
-arch blocked
+arch cave_15
 x 5
 y 1
 end
@@ -479,7 +479,7 @@ arch pstone_4
 x 5
 y 2
 end
-arch blocked
+arch cave_15
 x 5
 y 2
 end
@@ -487,7 +487,7 @@ arch pstone_4
 x 5
 y 3
 end
-arch blocked
+arch cave_15
 x 5
 y 3
 end
@@ -550,7 +550,7 @@ end
 arch pstone_4
 x 6
 end
-arch cave18
+arch cave24
 x 6
 end
 arch pstone_4
@@ -769,7 +769,7 @@ end
 arch pstone_4
 x 8
 end
-arch cave19
+arch cave25
 x 8
 end
 arch pstone_4
@@ -879,14 +879,14 @@ end
 arch pstone_4
 x 9
 end
-arch blocked
+arch cave_15
 x 9
 end
 arch pstone_4
 x 9
 y 1
 end
-arch blocked
+arch cave_15
 x 9
 y 1
 end
@@ -894,7 +894,7 @@ arch pstone_4
 x 9
 y 2
 end
-arch blocked
+arch cave_15
 x 9
 y 2
 end
@@ -902,7 +902,7 @@ arch pstone_4
 x 9
 y 3
 end
-arch blocked
+arch cave_15
 x 9
 y 3
 end
@@ -989,14 +989,14 @@ end
 arch pstone_4
 x 10
 end
-arch blocked
+arch cave_15
 x 10
 end
 arch pstone_4
 x 10
 y 1
 end
-arch blocked
+arch cave_15
 x 10
 y 1
 end
@@ -1004,7 +1004,7 @@ arch pstone_4
 x 10
 y 2
 end
-arch blocked
+arch cave_15
 x 10
 y 2
 end
@@ -1012,7 +1012,7 @@ arch pstone_4
 x 10
 y 3
 end
-arch blocked
+arch cave_15
 x 10
 y 3
 end
@@ -1099,14 +1099,14 @@ end
 arch pstone_4
 x 11
 end
-arch blocked
+arch cave_15
 x 11
 end
 arch pstone_4
 x 11
 y 1
 end
-arch blocked
+arch cave_15
 x 11
 y 1
 end
@@ -1114,7 +1114,7 @@ arch pstone_4
 x 11
 y 2
 end
-arch blocked
+arch cave_15
 x 11
 y 2
 end
@@ -1122,7 +1122,7 @@ arch pstone_4
 x 11
 y 3
 end
-arch blocked
+arch cave_15
 x 11
 y 3
 end
@@ -1130,7 +1130,7 @@ arch pstone_4
 x 11
 y 4
 end
-arch cave19
+arch cave25
 x 11
 y 4
 end
@@ -1218,7 +1218,7 @@ arch pstone_4
 x 11
 y 15
 end
-arch cave20
+arch cave22
 x 11
 y 15
 end
