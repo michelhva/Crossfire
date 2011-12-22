@@ -8,8 +8,13 @@ enter_x 10
 enter_y 1
 msg
 Created:  1996-07-05
-Modified: 2011-12-20 Rick Tanner
+Modified: 2011-12-21 Rick Tanner
 endmsg
+end
+arch blocked
+end
+arch blocked
+y 1
 end
 arch blocked
 y 2
@@ -61,6 +66,9 @@ y 17
 end
 arch blocked
 y 18
+end
+arch blocked
+y 19
 end
 arch blocked
 x 1
