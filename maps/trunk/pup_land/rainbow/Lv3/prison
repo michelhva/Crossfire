@@ -7,35 +7,35 @@ height 16
 enter_x 4
 msg
 Created:  1996-06-27
-Modified: 2011-12-20 Rick Tanner
+Modified: 2011-12-21 Rick Tanner
 endmsg
 end
 arch permanent_lava
 end
-arch blocked
+arch cave_15
 end
 arch permanent_lava
 y 1
 end
-arch blocked
+arch cave_15
 y 1
 end
 arch permanent_lava
 y 2
 end
-arch blocked
+arch cave_15
 y 2
 end
 arch permanent_lava
 y 3
 end
-arch blocked
+arch cave_15
 y 3
 end
 arch permanent_lava
 y 4
 end
-arch cave18
+arch cave24
 y 4
 end
 arch permanent_lava
@@ -95,26 +95,26 @@ end
 arch permanent_lava
 y 14
 end
-arch cave17
+arch cave23
 y 14
 end
 arch permanent_lava
 y 15
 end
-arch blocked
+arch cave_15
 y 15
 end
 arch permanent_lava
 x 1
 end
-arch blocked
+arch cave_15
 x 1
 end
 arch permanent_lava
 x 1
 y 1
 end
-arch cave18
+arch cave24
 x 1
 y 1
 end
@@ -226,14 +226,14 @@ arch permanent_lava
 x 1
 y 15
 end
-arch cave17
+arch cave23
 x 1
 y 15
 end
 arch permanent_lava
 x 2
 end
-arch blocked
+arch cave24
 x 2
 end
 arch permanent_lava
@@ -543,7 +543,7 @@ arch permanent_lava
 x 4
 y 15
 end
-arch blocked
+arch cave22
 x 4
 y 15
 end
@@ -657,7 +657,7 @@ arch permanent_lava
 x 5
 y 13
 end
-arch cave20
+arch cave22
 x 5
 y 13
 end
@@ -665,7 +665,7 @@ arch permanent_lava
 x 5
 y 14
 end
-arch blocked
+arch cave_15
 x 5
 y 14
 end
@@ -673,21 +673,21 @@ arch permanent_lava
 x 5
 y 15
 end
-arch blocked
+arch cave_15
 x 5
 y 15
 end
 arch permanent_lava
 x 6
 end
-arch blocked
+arch cave_15
 x 6
 end
 arch permanent_lava
 x 6
 y 1
 end
-arch blocked
+arch cave_15
 x 6
 y 1
 end
@@ -695,7 +695,7 @@ arch permanent_lava
 x 6
 y 2
 end
-arch cave18
+arch cave24
 x 6
 y 2
 end
@@ -743,6 +743,10 @@ arch permanent_lava
 x 6
 y 8
 end
+arch swall_1_4_half
+x 6
+y 8
+end
 arch cave3
 x 6
 y 8
@@ -787,7 +791,7 @@ arch permanent_lava
 x 6
 y 13
 end
-arch cave17
+arch cave23
 x 6
 y 13
 end
@@ -795,7 +799,7 @@ arch permanent_lava
 x 6
 y 14
 end
-arch blocked
+arch cave_15
 x 6
 y 14
 end
@@ -803,14 +807,14 @@ arch permanent_lava
 x 6
 y 15
 end
-arch blocked
+arch cave_15
 x 6
 y 15
 end
 arch permanent_lava
 x 7
 end
-arch cave18
+arch cave24
 x 7
 end
 arch permanent_lava
@@ -857,7 +861,7 @@ arch pstone_4
 x 7
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 7
 y 8
 end
@@ -889,7 +893,7 @@ arch permanent_lava
 x 7
 y 14
 end
-arch cave17
+arch cave23
 x 7
 y 14
 end
@@ -897,7 +901,7 @@ arch permanent_lava
 x 7
 y 15
 end
-arch blocked
+arch cave_15
 x 7
 y 15
 end
@@ -987,7 +991,7 @@ arch permanent_lava
 x 8
 y 15
 end
-arch blocked
+arch cave_15
 x 8
 y 15
 end
@@ -1069,7 +1073,7 @@ arch permanent_lava
 x 9
 y 15
 end
-arch blocked
+arch cave_15
 x 9
 y 15
 end
@@ -1164,14 +1168,14 @@ arch permanent_lava
 x 10
 y 15
 end
-arch blocked
+arch cave_15
 x 10
 y 15
 end
 arch permanent_lava
 x 11
 end
-arch cave19
+arch cave25
 x 11
 end
 arch permanent_lava
@@ -1288,21 +1292,21 @@ arch permanent_lava
 x 11
 y 15
 end
-arch blocked
+arch cave_15
 x 11
 y 15
 end
 arch permanent_lava
 x 12
 end
-arch blocked
+arch cave_15
 x 12
 end
 arch permanent_lava
 x 12
 y 1
 end
-arch blocked
+arch cave_15
 x 12
 y 1
 end
@@ -1310,7 +1314,7 @@ arch permanent_lava
 x 12
 y 2
 end
-arch cave19
+arch cave25
 x 12
 y 2
 end
@@ -1390,7 +1394,7 @@ arch permanent_lava
 x 12
 y 14
 end
-arch cave20
+arch cave22
 x 12
 y 14
 end
@@ -1398,21 +1402,21 @@ arch permanent_lava
 x 12
 y 15
 end
-arch blocked
+arch cave_15
 x 12
 y 15
 end
 arch permanent_lava
 x 13
 end
-arch blocked
+arch cave_15
 x 13
 end
 arch permanent_lava
 x 13
 y 1
 end
-arch blocked
+arch cave_15
 x 13
 y 1
 end
@@ -1420,7 +1424,7 @@ arch permanent_lava
 x 13
 y 2
 end
-arch blocked
+arch cave_15
 x 13
 y 2
 end
@@ -1428,7 +1432,7 @@ arch permanent_lava
 x 13
 y 3
 end
-arch cave19
+arch cave25
 x 13
 y 3
 end
@@ -1488,7 +1492,7 @@ arch permanent_lava
 x 13
 y 13
 end
-arch cave20
+arch cave22
 x 13
 y 13
 end
@@ -1496,7 +1500,7 @@ arch permanent_lava
 x 13
 y 14
 end
-arch blocked
+arch cave_15
 x 13
 y 14
 end
@@ -1504,21 +1508,21 @@ arch permanent_lava
 x 13
 y 15
 end
-arch blocked
+arch cave_15
 x 13
 y 15
 end
 arch permanent_lava
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch permanent_lava
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
@@ -1526,7 +1530,7 @@ arch permanent_lava
 x 14
 y 2
 end
-arch blocked
+arch cave_15
 x 14
 y 2
 end
@@ -1534,7 +1538,7 @@ arch permanent_lava
 x 14
 y 3
 end
-arch blocked
+arch cave_15
 x 14
 y 3
 end
@@ -1542,7 +1546,7 @@ arch permanent_lava
 x 14
 y 4
 end
-arch cave19
+arch cave25
 x 14
 y 4
 end
@@ -1578,7 +1582,7 @@ arch permanent_lava
 x 14
 y 10
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 10
 end
@@ -1602,7 +1606,7 @@ arch permanent_lava
 x 14
 y 13
 end
-arch blocked
+arch cave_15
 x 14
 y 13
 end
@@ -1610,7 +1614,7 @@ arch permanent_lava
 x 14
 y 14
 end
-arch blocked
+arch cave_15
 x 14
 y 14
 end
@@ -1618,21 +1622,21 @@ arch permanent_lava
 x 14
 y 15
 end
-arch blocked
+arch cave_15
 x 14
 y 15
 end
 arch permanent_lava
 x 15
 end
-arch blocked
+arch cave_15
 x 15
 end
 arch permanent_lava
 x 15
 y 1
 end
-arch blocked
+arch cave_15
 x 15
 y 1
 end
@@ -1640,7 +1644,7 @@ arch permanent_lava
 x 15
 y 2
 end
-arch blocked
+arch cave_15
 x 15
 y 2
 end
@@ -1648,7 +1652,7 @@ arch permanent_lava
 x 15
 y 3
 end
-arch blocked
+arch cave_15
 x 15
 y 3
 end
@@ -1656,7 +1660,7 @@ arch permanent_lava
 x 15
 y 4
 end
-arch blocked
+arch cave_15
 x 15
 y 4
 end
@@ -1664,7 +1668,7 @@ arch permanent_lava
 x 15
 y 5
 end
-arch cave19
+arch cave25
 x 15
 y 5
 end
@@ -1708,6 +1712,10 @@ arch cave1
 x 15
 y 10
 end
+arch swall_1_3_half
+x 15
+y 10
+end
 arch permanent_lava
 x 15
 y 11
@@ -1720,7 +1728,7 @@ arch permanent_lava
 x 15
 y 12
 end
-arch cave20
+arch cave22
 x 15
 y 12
 end
@@ -1728,7 +1736,7 @@ arch permanent_lava
 x 15
 y 13
 end
-arch blocked
+arch cave_15
 x 15
 y 13
 end
@@ -1736,7 +1744,7 @@ arch permanent_lava
 x 15
 y 14
 end
-arch blocked
+arch cave_15
 x 15
 y 14
 end
@@ -1744,7 +1752,7 @@ arch permanent_lava
 x 15
 y 15
 end
-arch blocked
+arch cave_15
 x 15
 y 15
 end
