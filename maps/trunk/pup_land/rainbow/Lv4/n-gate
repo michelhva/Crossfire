@@ -8,7 +8,7 @@ enter_x 5
 enter_y 9
 msg
 Created:  1996-07-16
-Modified: 2008-10-28 Rick Tanner
+Modified: 2011-12-21 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -403,6 +403,10 @@ arch pstone_1
 x 4
 y 1
 end
+arch swall_1_1_half
+x 4
+y 1
+end
 arch rough_wall_1_2
 x 4
 y 1
@@ -415,7 +419,7 @@ arch pstone_1
 x 4
 y 2
 end
-arch swall_1_1
+arch swall_2_1_1
 x 4
 y 2
 end
@@ -487,7 +491,7 @@ arch pstone_1
 x 4
 y 8
 end
-arch swall_1_2
+arch swall_2_1_1
 x 4
 y 8
 end
@@ -496,6 +500,10 @@ x 4
 y 9
 end
 arch pstone_1
+x 4
+y 9
+end
+arch swall_1_2_half
 x 4
 y 9
 end
@@ -662,6 +670,10 @@ arch pstone_1
 x 6
 y 1
 end
+arch swall_1_1_half
+x 6
+y 1
+end
 arch rough_wall_1_2
 x 6
 y 1
@@ -674,7 +686,7 @@ arch pstone_1
 x 6
 y 2
 end
-arch swall_1_1
+arch swall_2_1_1
 x 6
 y 2
 end
@@ -746,7 +758,7 @@ arch pstone_1
 x 6
 y 8
 end
-arch swall_1_2
+arch swall_2_1_1
 x 6
 y 8
 end
@@ -755,6 +767,10 @@ x 6
 y 9
 end
 arch pstone_1
+x 6
+y 9
+end
+arch swall_1_2_half
 x 6
 y 9
 end
