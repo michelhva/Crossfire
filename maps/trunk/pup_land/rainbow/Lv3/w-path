@@ -8,23 +8,23 @@ enter_x 19
 enter_y 1
 msg
 Created:  1996-06-27
-Modified: 2008-10-12 Rick Tanner
+Modified: 2011-12-21 Rick Tanner
 endmsg
 end
 arch permanent_lava
 end
-arch blocked
+arch cave_15
 end
 arch permanent_lava
 y 1
 end
-arch blocked
+arch cave_15
 y 1
 end
 arch permanent_lava
 y 2
 end
-arch cave18
+arch cave24
 y 2
 end
 arch permanent_lava
@@ -72,7 +72,7 @@ end
 arch permanent_lava
 x 1
 end
-arch blocked
+arch cave_15
 x 1
 end
 arch permanent_lava
@@ -144,7 +144,7 @@ end
 arch permanent_lava
 x 2
 end
-arch cave18
+arch cave24
 x 2
 end
 arch permanent_lava
@@ -563,7 +563,7 @@ arch permanent_lava
 x 8
 y 9
 end
-arch cave20
+arch cave22
 x 8
 y 9
 end
@@ -629,7 +629,7 @@ arch permanent_lava
 x 9
 y 9
 end
-arch blocked
+arch cave_15
 x 9
 y 9
 end
@@ -695,14 +695,14 @@ arch permanent_lava
 x 10
 y 9
 end
-arch blocked
+arch cave_15
 x 10
 y 9
 end
 arch permanent_lava
 x 11
 end
-arch cave19
+arch cave25
 x 11
 end
 arch permanent_lava
@@ -761,14 +761,14 @@ arch permanent_lava
 x 11
 y 9
 end
-arch cave17
+arch cave23
 x 11
 y 9
 end
 arch permanent_lava
 x 12
 end
-arch blocked
+arch cave_15
 x 12
 end
 arch permanent_lava
@@ -822,14 +822,14 @@ end
 arch permanent_lava
 x 13
 end
-arch blocked
+arch cave_15
 x 13
 end
 arch permanent_lava
 x 13
 y 1
 end
-arch cave19
+arch cave25
 x 13
 y 1
 end
@@ -880,14 +880,14 @@ end
 arch permanent_lava
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch permanent_lava
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
@@ -895,7 +895,7 @@ arch permanent_lava
 x 14
 y 2
 end
-arch cave19
+arch cave25
 x 14
 y 2
 end
@@ -954,7 +954,7 @@ end
 arch permanent_lava
 x 15
 end
-arch cave18
+arch cave24
 x 15
 end
 arch permanent_lava
@@ -993,7 +993,7 @@ arch permanent_lava
 x 15
 y 5
 end
-arch cave17
+arch cave23
 x 15
 y 5
 end
@@ -1223,7 +1223,7 @@ arch permanent_lava
 x 19
 y 3
 end
-arch blocked
+arch cave_15
 x 19
 y 3
 end
@@ -1231,7 +1231,7 @@ arch permanent_lava
 x 19
 y 4
 end
-arch cave19
+arch cave25
 x 19
 y 4
 end
@@ -1271,7 +1271,7 @@ arch permanent_lava
 x 19
 y 9
 end
-arch cave20
+arch cave22
 x 19
 y 9
 end
