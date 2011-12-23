@@ -8,7 +8,7 @@ enter_x 7
 enter_y 2
 msg
 Created:  1996-05-30
-Modified: 2008-11-02 Rick Tanner
+Modified: 2011-12-22 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -52,6 +52,9 @@ arch swall_3_2
 y 6
 end
 arch woodfloor
+y 7
+end
+arch swall_1_2_half
 y 7
 end
 arch wwall_1_1
@@ -1414,6 +1417,10 @@ x 15
 y 6
 end
 arch woodfloor
+x 15
+y 7
+end
+arch swall_1_2_half
 x 15
 y 7
 end
