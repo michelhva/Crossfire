@@ -8,7 +8,7 @@ enter_x 1
 enter_y 3
 msg
 Created:  1996-06-03
-Modified: 2008-10-13 Rick Tanner
+Modified: 2011-12-22 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -368,11 +368,9 @@ arch a_guard_h
 name Cain, the guard
 msg
 @match T.K.
-He is my master.  In his days of youth, no monster or quest was too hard for him!
-He collected lots of treasure... But now, he is an old man.
+He is my master.  In his days of youth, no monster or quest was too hard for him! He collected lots of treasure... But now, he is an old man.
 @match *
-T.K., an old treasure hunter, lives in this tower.
-Please do not disturb him.
+T.K., an old treasure hunter, lives in this tower. Please do not disturb him.
 endmsg
 x 3
 y 3
@@ -1174,8 +1172,7 @@ end
 arch woman
 msg
 @match *
-Hey! I'm not a statue!
-Don't push me.
+Hey! I'm not a statue! Don't push me.
 endmsg
 hp 180
 x 9
@@ -1225,10 +1222,8 @@ y 15
 end
 arch note
 msg
-You have the talent to be a good
-treasure hunter. Find me. Then I'll
-tell you a secret.
-                            T.K.
+You have the talent to be a good treasure hunter. Find me. Then I'll tell you a secret.
+   T.K.
 endmsg
 x 9
 y 15
@@ -2285,12 +2280,9 @@ msg
 @match underground|ruin
 I don't know the entrance to the ruin.  But it must be somewhere on this "Red Island". According to my research, the password for the entrance is "IN".
 @match legend|hero|four
-The legends say:  "In former times, the islands were ruled by an evil lord. Then four heroes appeared: EarthGate, Rain, BlueSonic and FireTail. They fought hard and finally defeated the evil lord."
-The buildings that now lie beneath the ground were meant to honour the heroes.
+The legends say:  "In former times, the islands were ruled by an evil lord. Then four heroes appeared: EarthGate, Rain, BlueSonic and FireTail. They fought hard and finally defeated the evil lord." The buildings that now lie beneath the ground were meant to honour the heroes.
 @match yes|adventurer
-Finally. You are the kind of guy I've waited for.
-I'll tell you a secret about these islands: Deep underground there is a big RUIN. At the bottom of this ruin there is an incredible artifact called "God Finger".
-This quest is all about the LEGEND of four heroes...
+Finally. You are the kind of guy I've waited for. I'll tell you a secret about these islands: Deep underground there is a big RUIN. At the bottom of this ruin there is an incredible artifact called "God Finger". This quest is all about the LEGEND of four heroes...
 @match *
 Hello. Are you an adventurer?
 endmsg
