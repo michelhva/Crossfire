@@ -8,7 +8,7 @@ enter_x 5
 enter_y 7
 msg
 Created:  1996-06-08
-Modified: 2008-10-13 Rick Tanner
+Modified: 2011-12-22 Rick Tanner
 endmsg
 end
 arch blocked
@@ -326,11 +326,19 @@ arch flagstone
 x 4
 y 5
 end
+arch swall_1_4_half
+x 4
+y 5
+end
 arch cwall_0
 x 4
 y 5
 blocksview 0
 end
+arch swall_1_1_half
+x 4
+y 5
+end
 arch flagstone
 x 4
 y 6
@@ -348,6 +356,14 @@ x 4
 y 7
 end
 arch flagstone
+x 4
+y 8
+end
+arch swall_1_4_half
+x 4
+y 8
+end
+arch swall_1_2_half
 x 4
 y 8
 end
@@ -530,11 +546,19 @@ x 6
 y 5
 smoothlevel 1
 end
+arch swall_1_3_half
+x 6
+y 5
+end
 arch cwall_0
 x 6
 y 5
 blocksview 0
 end
+arch swall_1_1_half
+x 6
+y 5
+end
 arch flagstone
 x 6
 y 6
@@ -552,6 +576,14 @@ x 6
 y 7
 end
 arch flagstone
+x 6
+y 8
+end
+arch swall_1_3_half
+x 6
+y 8
+end
+arch swall_1_2_half
 x 6
 y 8
 end
