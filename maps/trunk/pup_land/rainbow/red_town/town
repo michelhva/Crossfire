@@ -6,7 +6,7 @@ width 15
 height 15
 msg
 Created:  1997-02-11
-Modified: 2008-10-13 Rick Tanner
+Modified: 2011-12-22 Rick Tanner
 endmsg
 end
 arch woods
@@ -899,11 +899,14 @@ end
 arch dwall_2_1_2
 x 11
 end
+arch swall_1_1_half
+x 11
+end
 arch grass
 x 11
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 11
 y 1
 end
