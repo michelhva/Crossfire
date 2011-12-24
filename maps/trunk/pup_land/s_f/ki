@@ -8,7 +8,7 @@ enter_x 2
 enter_y 10
 msg
 Created:  1996-02-08
-Modified: 2008-10-24 Rick Tanner
+Modified: 2011-12-23 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -394,16 +394,13 @@ So...?
 @match no
 If you can't even find out about my first name, this is the wrong place for you! Go fight some Orcs...
 @match jake
-Oh! You are quite okay. I'll tell you a secret: On one of the islands close to this beloved "Red Island", there's an ancient ruin. There you can find some very old and powerful artifacts.
-Now go upstairs to get some more information.
+Oh! You are quite okay. I'll tell you a secret: On one of the islands close to this beloved "Red Island", there's an ancient ruin. There you can find some very old and powerful artifacts. Now go upstairs to get some more information.
 @match ken
 Who is that?
 @match odo
-Well... I don't know much.
-My friend To-jyo is more familiar with stories about the ancient gods.
+Well... I don't know much. My friend To-jyo is more familiar with stories about the ancient gods.
 @match To-jyo
-He is an archeologist. He lives to the east of here on an island.
-The local sailors are friendly, so it should be easy to find a ship to take you there.
+He is an archeologist. He lives to the east of here on an island. The local sailors are friendly, so it should be easy to find a ship to take you there.
 @match key
 O.K. Try the game.
 @match *
