@@ -8,7 +8,7 @@ enter_x 8
 enter_y 14
 msg
 Created:  1996-02-07
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2011-12-23 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -850,8 +850,7 @@ arch goblin
 name goblin red
 msg
 @match *
-kill goblin, kill goblin, kill more
-goblin
+kill goblin, kill goblin, kill more goblin
 endmsg
 exp 40
 dam 10
