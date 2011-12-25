@@ -7,7 +7,7 @@ height 16
 enter_y 7
 msg
 Created:  1996-02-09
-Modified: 2011-12-23 Rick Tanner
+Modified: 2011-12-24 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -1148,7 +1148,11 @@ arch pstone_1
 x 9
 y 11
 end
-arch rough_wall_3_4
+arch rough_wall_2_2_4
+x 9
+y 11
+end
+arch swall_1_1_half
 x 9
 y 11
 end
@@ -1164,7 +1168,11 @@ arch pstone_1
 x 9
 y 13
 end
-arch rough_wall_3_4
+arch swall_1_2_half
+x 9
+y 13
+end
+arch rough_wall_2_2_3
 x 9
 y 13
 end
