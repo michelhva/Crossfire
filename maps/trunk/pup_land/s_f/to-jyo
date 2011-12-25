@@ -8,7 +8,7 @@ enter_x 9
 enter_y 13
 msg
 Created:  1996-02-09
-Modified: 2008-10-13 Rick Tanner
+Modified: 2011-12-24 Rick Tanner
 endmsg
 end
 arch sea
@@ -302,14 +302,11 @@ msg
 @match jake|griffin
 My old friend... Say hello to him.
 @match treasure
-You may read my research note upstairs, but keep off the CRYSTAL, okay?!
-It would tempt your soul.
+You may read my research note upstairs, but keep off the CRYSTAL, okay?! It would tempt your soul.
 @match crystal
 If you are tempted, call me for "help".
 @match odo
-Odo was a mighty god in the ancient world. Odo helped and protected the early civilization on these islands...
-The people were ungrateful, so Odo took away the artifacts he had made for his disciples, locked them up in an underground tower and left this world.
-Soon the people forgot about Odo...
+Odo was a mighty god in the ancient world. Odo helped and protected the early civilization on these islands... The people were ungrateful, so Odo took away the artifacts he had made for his disciples, locked them up in an underground tower and left this world. Soon the people forgot about Odo...
 @match *
 Hello, boy.
 endmsg
@@ -2251,9 +2248,7 @@ arch sage
 name To-jyo
 msg
 @match odo
-Odo was a mighty god in the ancient world. Odo helped and protected the early civilization on these islands...
-The people were ungrateful, so Odo took away the artifacts he had made for his disciples, locked them up in an underground tower and left this world.
-Soon the people forgot about Odo...
+Odo was a mighty god in the ancient world. Odo helped and protected the early civilization on these islands... The people were ungrateful, so Odo took away the artifacts he had made for his disciples, locked them up in an underground tower and left this world. Soon the people forgot about Odo...
 @match *
 Ouch! My waist is broken!
 endmsg
@@ -2626,8 +2621,7 @@ arch magic_ear
 msg
 @match help|to-jyo
 To-jyo says:
-Stupid adventurer - stupid crystal!
-Okay, okay, I'm coming...
+Stupid adventurer - stupid crystal! Okay, okay, I'm coming...
 endmsg
 x 30
 y 7
@@ -2839,8 +2833,7 @@ end
 arch note
 name To-jyo's research note
 msg
-The key to the ancient ruins...
-I suspect it's Odo's legendary equipment:
+The key to the ancient ruins... I suspect it's Odo's legendary equipment:
 1. crown
 2. sword
 3. armour
