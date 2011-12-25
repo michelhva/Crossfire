@@ -8,7 +8,7 @@ enter_x 8
 enter_y 15
 msg
 Created:  1996-02-10
-Modified: 2008-12-04 Rick Tanner
+Modified: 2011-12-24 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -717,11 +717,9 @@ msg
 @match hello
 ..h.hello..m.mortal...
 @match shining
-...You must die...bec....
-........
+...You must die...bec.... ........
 @match *
-..be. C..care.ful.. abo ut
-..shin.ing...
+..be. C..care.ful.. abo ut ..shin.ing...
 endmsg
 x 8
 y 12
