@@ -8,7 +8,7 @@ enter_x 8
 enter_y 6
 msg
 Created:  1996-02-12
-Modified: 2008-10-25 Rick Tanner
+Modified: 2011-12-24 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1056,9 +1056,7 @@ end
 arch sign
 msg
 Floor6.
-Only one of these gates will open when
-the lever is pulled.
-Chance is only once.
+Only one of these gates will open when the lever is pulled. Chance is only once.
 endmsg
 x 8
 y 8
@@ -2374,8 +2372,7 @@ connected 5
 end
 arch note
 msg
-Where is Floor4?
-Floor4 is next to Floor3?
+Where is Floor4? Floor4 is next to Floor3?
 endmsg
 x 19
 y 14
