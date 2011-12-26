@@ -1,5 +1,5 @@
 arch map
-name Shining Tower, Level 3
+name Shining Tower, Floor 3
 difficulty 24
 region pupland
 width 17
@@ -8,7 +8,7 @@ enter_x 8
 enter_y 10
 msg
 Created:  1996-02-12
-Modified: 2011-12-24 Rick Tanner
+Modified: 2011-12-25 Rick Tanner
 endmsg
 end
 arch blocked
@@ -278,7 +278,7 @@ y 13
 end
 arch sign
 msg
-Floor3.
+Floo r3.
 Something is upon the button.
 endmsg
 x 1
