@@ -8,7 +8,7 @@ enter_x 2
 enter_y 10
 msg
 Created:  1996-02-12
-Modified: 2011-12-24 Rick Tanner
+Modified: 2011-12-25 Rick Tanner
 endmsg
 end
 arch blocked
@@ -37,7 +37,10 @@ end
 arch flagstone
 y 5
 end
-arch awall_3_2
+arch swall_1_4_half
+y 5
+end
+arch awall_2_1_1
 y 5
 end
 arch flagstone
@@ -49,7 +52,10 @@ end
 arch flagstone
 y 7
 end
-arch awall_3_2
+arch swall_1_4_half
+y 7
+end
+arch awall_2_1_1
 y 7
 end
 arch flagstone
@@ -394,7 +400,10 @@ end
 arch flagstone
 x 5
 end
-arch awall_3_3
+arch awall_2_1_2
+x 5
+end
+arch swall_1_1_half
 x 5
 end
 arch flagstone
@@ -635,7 +644,10 @@ end
 arch flagstone
 x 7
 end
-arch awall_3_3
+arch awall_2_1_2
+x 7
+end
+arch swall_1_1_half
 x 7
 end
 arch flagstone
@@ -1070,7 +1082,11 @@ arch flagstone
 x 12
 y 5
 end
-arch awall_3_4
+arch awall_2_1_1
+x 12
+y 5
+end
+arch swall_1_3_half
 x 12
 y 5
 end
@@ -1086,7 +1102,11 @@ arch flagstone
 x 12
 y 7
 end
-arch awall_3_4
+arch awall_2_1_1
+x 12
+y 7
+end
+arch swall_1_3_half
 x 12
 y 7
 end
