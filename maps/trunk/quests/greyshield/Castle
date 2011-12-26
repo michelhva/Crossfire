@@ -8,7 +8,7 @@ enter_x 15
 enter_y 30
 msg
 Created:  1996-09-16 Chris Jeske
-Modified: 2008-12-21 Rick Tanner
+Modified: 2011-12-25 Rick Tanner
 endmsg
 end
 arch woods_3
@@ -1479,8 +1479,7 @@ end
 arch woman
 msg
 @match *
-Get lost, pervert! Can't you
-see we are busy?
+Get lost, pervert! Can't you see we are busy?
 endmsg
 x 9
 y 8
@@ -1562,11 +1561,9 @@ msg
 @match hi|hello
 Hi there.
 @match king|rey|hief|advisor|staff
-That advisor is good for nothing.
-If you want to see the Grey King, you must get the ring with his seal on it, and tell him the Chief of Staff sent you...
+That advisor is good for nothing. If you want to see the Grey King, you must get the ring with his seal on it, and tell him the Chief of Staff sent you...
 @match seal|ring|see|sent
-The Ring of Seal is kept in the chamber behind the throne room. You
-need the iron chalice from the factory to open the door.
+The Ring of Seal is kept in the chamber behind the throne room. You need the iron chalice from the factory to open the door.
 @match *
 I'm too busy to answer your queries.
 endmsg
@@ -2545,7 +2542,6 @@ Why should I let you in?
 Ok! Here you go...
 @match *
 What would you like?
-
 endmsg
 x 14
 y 24
@@ -2748,8 +2744,7 @@ end
 arch magic_ear
 msg
 @match Lothar
-The guard seems to flinch beneath
-his armour...
+The guard seems to flinch beneath his armour...
 endmsg
 x 15
 y 24
@@ -2878,8 +2873,7 @@ arch guildmaster
 name Chief of Staff
 msg
 @match king|grey
-The king does not see visitors.
-Give me your request, and I will relay it to him.
+The king does not see visitors. Give me your request, and I will relay it to him. 
 @match treasure|shield|secret
 I don't know what you are talking about.
 @match *
@@ -4123,8 +4117,7 @@ end
 arch mage
 msg
 @match *
-Go try some other room. I am trying
-to sleep.
+Go try some other room. I am trying to sleep.
 endmsg
 x 22
 y 20
