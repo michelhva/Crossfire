@@ -8,7 +8,7 @@ enter_x 2
 enter_y 27
 msg
 Created:  1996-09-16 Chris Jeske
-Modified: 2008-12-21 Rick Tanner
+Modified: 20011-12-25 Rick Tanner
 endmsg
 end
 arch medium_stones
@@ -6516,10 +6516,7 @@ arch smith
 name Factory worker
 msg
 @match *
-I don't have authority for that. See my boss at the next desk...
-As a matter of fact, I don't have authority for anything around here!
-Employee empowerment? Hah!
-<grumble...>
+I don't have authority for that. See my boss at the next desk... As a matter of fact, I don't have authority for anything around here! Employee empowerment? Hah! <grumble...>
 endmsg
 x 23
 y 14
