@@ -9,7 +9,7 @@ enter_x 14
 enter_y 7
 msg
 Created:  1996-09-24 Chris Jeske
-Modified: 2008-12-21 Rick Tanner
+Modified: 2011-12-26 Rick Tanner
 endmsg
 end
 arch marble
@@ -2011,9 +2011,7 @@ end
 arch sphinx
 msg
 @match king|crown|grey
-Here is a riddle that you will know
-the answer to if you have ever read
-'The Hobbit':
+Here is a riddle that you will know the answer to if you have ever read 'The Hobbit':
 _____________________
 Thirty white horses
 On a red hill.
@@ -2024,8 +2022,7 @@ Then they stand still!
 @match teeth
 You got it!
 @match *
-I don't have any riddles for the likes
-of you... GO AWAY!!!
+I don't have any riddles for the likes of you... GO AWAY!!!
 endmsg
 x 22
 end
@@ -2045,9 +2042,7 @@ end
 arch sphinx
 msg
 @match king|crown|grey
-Here is a riddle that you will know
-the answer to if you have ever read
-'The Hobbit':
+Here is a riddle that you will know the answer to if you have ever read 'The Hobbit':
 _____________________
 Alive without breath,
 As cold as death;
@@ -2057,8 +2052,7 @@ All in mail never clinking.
 @match fish
 You got it!
 @match *
-I don't have any riddles for the likes
-of you... GO AWAY!!!
+I don't have any riddles for the likes of you... GO AWAY!!!
 endmsg
 x 22
 y 2
@@ -2079,9 +2073,7 @@ end
 arch sphinx
 msg
 @match king|crown|grey
-Here is a riddle that you will know
-the answer to if you have ever read
-'The Hobbit':
+Here is a riddle that you will know the answer to if you have ever read 'The Hobbit':
 _____________________
 This thing all things devours;
 Birds, beasts, trees, flowers;
@@ -2093,8 +2085,7 @@ And beats high mountain down.
 @match time
 You got it!
 @match *
-I don't have any riddles for the likes
-of you... GO AWAY!!!
+I don't have any riddles for the likesi of you... GO AWAY!!!
 endmsg
 x 22
 y 4
@@ -2115,9 +2106,7 @@ end
 arch sphinx
 msg
 @match king|crown|grey
-Here is a riddle that you will know
-the answer to if you have ever read
-'The Hobbit':
+Here is a riddle that you will know the answer to if you have ever read 'The Hobbit':
 _____________________
 What has roots as nobody sees,
 Is taller than trees,
@@ -2127,8 +2116,7 @@ and yet never grows?
 @match mountain
 You got it!
 @match *
-I don't have any riddles for the likes
-of you... GO AWAY!!!
+I don't have any riddles for the likes of you... GO AWAY!!!
 endmsg
 x 22
 y 6
