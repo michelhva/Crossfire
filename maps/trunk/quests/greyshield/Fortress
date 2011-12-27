@@ -8,7 +8,7 @@ enter_x 15
 enter_y 30
 msg
 Created:  1996-09-24 Chris Jeske
-Modified: 2008-12-21 Rick Tanner
+Modified: 2011-12-26 Rick Tanner
 endmsg
 end
 arch marble
@@ -3109,23 +3109,15 @@ msg
 @match altar|trigger
 <mumble> <sigh>
 @match king|grey
-You better get the king's permission
-first, and then I will let you in!
-Unfortunately, the king is inside...
-<chortle>
+You better get the king's permission first, and then I will let you in! Unfortunately, the king is inside... <chortle>
 @match princess
-Princess? mmm.... princess...
-I collect princess scalps, did you
-know?
+Princess? mmm.... princess... I collect princess scalps, did you know?
 @match scalp|hair
-Bring me all the hair of a princess,
-and I will let you in!
+Bring me all the hair of a princess, and I will let you in!
 @match in|open|enter
-Ha! NONE MAY ENTER! Didn't you read
-the sign? <snort>
+Ha! NONE MAY ENTER! Didn't you read the sign? <snort>
 @match *
-Watch it, moron! You are trying my
-patience...<rumble>
+Watch it, moron! You are trying my patience...<rumble>
 endmsg
 x 15
 y 24
@@ -3149,8 +3141,7 @@ end
 arch magic_ear
 msg
 @match altar|trigger
-The dragon appears to be daydreaming
-about a princess...
+The dragon appears to be daydreaming about a princess...
 endmsg
 x 15
 y 26
@@ -3173,8 +3164,7 @@ y 29
 end
 arch sign
 msg
-None may enter except by the
-Grey King's request!
+None may enter except by the Grey King's request!
 endmsg
 x 15
 y 29
@@ -3216,33 +3206,17 @@ arch sage
 name Grey King
 msg
 @match seal
-Ahh, whats-his-face must have sent you.
-You may go upstairs and talk to the
-sphinx.
+Ahh, whats-his-face must have sent you. You may go upstairs and talk to the sphinx.
 @match upstairs|sphinx
-Use my seal to open the door. Bring me
-my crown, and I will let you go
-downstairs.
+Use my seal to open the door. Bring me my crown, and I will let you go downstairs.
 @match door|open
-Do you have my seal? You need my seal
-to open the door.
+Do you have my seal? You need my seal to open the door.
 @match crown
-It's very simple, moron!
-Go upstairs, get my crown, and place
-it on the altar. THEN you may continue
-on your quest.
-<Geez, some people are so stupid...>
+It's very simple, moron! Go upstairs, get my crown, and place it on the altar. THEN you may continue on your quest. <Geez, some people are so stupid...>
 @match Grey|shield|sword|quest|treasure
-Ahh, you are looking for the
-Greyshield are you? If you get my
-sword (the Greysword), then I will
-let you into the treasure room...
-You must be worthy to gain the
-Greyshield!
+Ahh, you are looking for the Greyshield are you? If you get my sword (the Greysword), then I will let you into the treasure room... You must be worthy to gain the Greyshield!
 @match *
-<That stupid whats-his-face! He can
-never take care of anything himself!>
-What do you want? <sigh>
+<That stupid whats-his-face! He can never take care of anything himself!> What do you want? <sigh>
 endmsg
 hp 5000
 maxhp 5000
