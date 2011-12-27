@@ -9,7 +9,7 @@ enter_x 4
 enter_y 1
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2011-12-26 Rick Tanner
 endmsg
 maplore
 @quest Lorkas
@@ -4949,10 +4949,7 @@ end
 arch magic_mouth
 name 2 - has dshield
 msg
-As the tree monster attacks you,
-the Demonspawn Shield vibrates!
-You struggle to remain control over
-yourself.
+As the tree monster attacks you, the Demonspawn Shield vibrates! You struggle to remain control over yourself.
 endmsg
 food 1
 x 18
@@ -4962,9 +4959,7 @@ move_on 0
 end
 arch magic_mouth
 msg
-A big tree monster attacks you!
-It seems to hurt you without even
-touching.
+A big tree monster attacks you! It seems to hurt you without even touching.
 endmsg
 food 1
 x 18
