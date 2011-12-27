@@ -7,7 +7,7 @@ enter_x 2
 enter_y 30
 msg
 Created:  1996-09-13 Chris Jeske
-Modified: 2011-12-25 Rick Tanner
+Modified: 2011-12-26 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -81,7 +81,7 @@ end
 arch blackrock
 y 23
 end
-arch cave18
+arch cave24
 y 23
 end
 arch blackrock
@@ -123,7 +123,7 @@ end
 arch blackrock
 y 30
 end
-arch cave17
+arch cave23
 y 30
 end
 arch cave_15
@@ -220,7 +220,7 @@ arch blackrock
 x 1
 y 22
 end
-arch cave18
+arch cave24
 x 1
 y 22
 end
@@ -272,7 +272,7 @@ arch blackrock
 x 1
 y 31
 end
-arch cave17
+arch cave23
 x 1
 y 31
 end
@@ -509,7 +509,7 @@ arch blackrock
 x 3
 y 21
 end
-arch cave18
+arch cave24
 x 3
 y 21
 end
@@ -807,7 +807,7 @@ arch blackrock
 x 5
 y 21
 end
-arch cave19
+arch cave25
 x 5
 y 21
 end
@@ -954,7 +954,7 @@ arch blackrock
 x 6
 y 21
 end
-arch cave18
+arch cave24
 x 6
 y 21
 end
@@ -1022,7 +1022,7 @@ arch blackrock
 x 6
 y 31
 end
-arch cave20
+arch cave22
 x 6
 y 31
 end
@@ -1155,7 +1155,7 @@ arch blackrock
 x 7
 y 27
 end
-arch cave19
+arch cave25
 x 7
 y 27
 end
@@ -1179,7 +1179,7 @@ arch blackrock
 x 7
 y 30
 end
-arch cave20
+arch cave22
 x 7
 y 30
 end
@@ -1302,7 +1302,7 @@ arch blackrock
 x 8
 y 25
 end
-arch cave20
+arch cave22
 x 8
 y 25
 end
@@ -1377,7 +1377,7 @@ arch blackrock
 x 9
 y 11
 end
-arch cave18
+arch cave24
 x 9
 y 11
 end
@@ -1401,7 +1401,7 @@ arch blackrock
 x 9
 y 14
 end
-arch cave17
+arch cave23
 x 9
 y 14
 end
@@ -1433,7 +1433,7 @@ arch blackrock
 x 9
 y 21
 end
-arch cave19
+arch cave25
 x 9
 y 21
 end
@@ -1457,7 +1457,7 @@ arch blackrock
 x 9
 y 24
 end
-arch cave20
+arch cave22
 x 9
 y 24
 end
@@ -1532,7 +1532,7 @@ arch blackrock
 x 10
 y 10
 end
-arch cave18
+arch cave24
 x 10
 y 10
 end
@@ -1564,7 +1564,7 @@ arch blackrock
 x 10
 y 15
 end
-arch cave17
+arch cave23
 x 10
 y 15
 end
@@ -1870,7 +1870,7 @@ arch blackrock
 x 12
 y 17
 end
-arch cave17
+arch cave23
 x 12
 y 17
 end
@@ -1973,7 +1973,7 @@ arch blackrock
 x 13
 y 10
 end
-arch cave19
+arch cave25
 x 13
 y 10
 end
@@ -2120,7 +2120,7 @@ arch blackrock
 x 14
 y 11
 end
-arch cave19
+arch cave25
 x 14
 y 11
 end
@@ -2410,7 +2410,7 @@ arch blackrock
 x 16
 y 13
 end
-arch cave19
+arch cave25
 x 16
 y 13
 end
@@ -2442,7 +2442,7 @@ arch blackrock
 x 16
 y 18
 end
-arch cave17
+arch cave23
 x 16
 y 18
 end
@@ -2617,7 +2617,7 @@ arch blackrock
 x 17
 y 24
 end
-arch cave17
+arch cave23
 x 17
 y 24
 end
@@ -2625,7 +2625,7 @@ arch blackrock
 x 17
 y 25
 end
-arch cave18
+arch cave24
 x 17
 y 25
 end
@@ -2649,7 +2649,7 @@ arch blackrock
 x 17
 y 28
 end
-arch cave17
+arch cave23
 x 17
 y 28
 end
@@ -2820,7 +2820,7 @@ arch blackrock
 x 18
 y 30
 end
-arch cave17
+arch cave23
 x 18
 y 30
 end
@@ -2987,7 +2987,7 @@ arch blackrock
 x 19
 y 31
 end
-arch cave17
+arch cave23
 x 19
 y 31
 end
@@ -3018,7 +3018,7 @@ arch blackrock
 x 20
 y 6
 end
-arch cave18
+arch cave24
 x 20
 y 6
 end
@@ -3050,7 +3050,7 @@ arch blackrock
 x 20
 y 10
 end
-arch cave17
+arch cave23
 x 20
 y 10
 end
@@ -3106,7 +3106,7 @@ arch blackrock
 x 20
 y 20
 end
-arch cave17
+arch cave23
 x 20
 y 20
 end
@@ -3209,7 +3209,7 @@ arch blackrock
 x 21
 y 5
 end
-arch cave18
+arch cave24
 x 21
 y 5
 end
@@ -3268,7 +3268,7 @@ arch blackrock
 x 21
 y 15
 end
-arch cave18
+arch cave24
 x 21
 y 15
 end
@@ -3442,7 +3442,7 @@ arch blackrock
 x 22
 y 10
 end
-arch cave20
+arch cave22
 x 22
 y 10
 end
@@ -3620,7 +3620,7 @@ arch blackrock
 x 23
 y 9
 end
-arch cave20
+arch cave22
 x 23
 y 9
 end
@@ -3648,7 +3648,7 @@ arch blackrock
 x 23
 y 15
 end
-arch cave19
+arch cave25
 x 23
 y 15
 end
@@ -3755,7 +3755,7 @@ arch blackrock
 x 24
 y 3
 end
-arch cave18
+arch cave24
 x 24
 y 3
 end
@@ -3791,7 +3791,7 @@ arch blackrock
 x 24
 y 8
 end
-arch cave20
+arch cave22
 x 24
 y 8
 end
@@ -3827,7 +3827,7 @@ arch blackrock
 x 24
 y 16
 end
-arch cave19
+arch cave25
 x 24
 y 16
 end
@@ -4279,7 +4279,7 @@ end
 arch blackrock
 x 27
 end
-arch cave18
+arch cave24
 x 27
 end
 arch blackrock
@@ -4442,7 +4442,7 @@ arch blackrock
 x 27
 y 29
 end
-arch cave20
+arch cave22
 x 27
 y 29
 end
@@ -4556,7 +4556,7 @@ arch blackrock
 x 28
 y 21
 end
-arch cave19
+arch cave25
 x 28
 y 21
 end
@@ -4734,7 +4734,7 @@ arch blackrock
 x 29
 y 22
 end
-arch cave19
+arch cave25
 x 29
 y 22
 end
@@ -4742,7 +4742,7 @@ arch blackrock
 x 29
 y 23
 end
-arch cave20
+arch cave22
 x 29
 y 23
 end
@@ -4750,7 +4750,7 @@ arch blackrock
 x 29
 y 24
 end
-arch cave19
+arch cave25
 x 29
 y 24
 end
@@ -4766,7 +4766,7 @@ arch blackrock
 x 29
 y 26
 end
-arch cave20
+arch cave22
 x 29
 y 26
 end
@@ -4793,7 +4793,7 @@ end
 arch blackrock
 x 30
 end
-arch cave19
+arch cave25
 x 30
 end
 arch blackrock
@@ -4958,7 +4958,7 @@ arch blackrock
 x 31
 y 1
 end
-arch cave19
+arch cave25
 x 31
 y 1
 end
@@ -4982,7 +4982,7 @@ arch blackrock
 x 31
 y 4
 end
-arch cave20
+arch cave22
 x 31
 y 4
 end
@@ -4990,7 +4990,7 @@ arch blackrock
 x 31
 y 5
 end
-arch cave19
+arch cave25
 x 31
 y 5
 end
