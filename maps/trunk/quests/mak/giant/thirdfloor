@@ -9,7 +9,7 @@ enter_x 1
 enter_y 17
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2011-12-27 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -229,8 +229,7 @@ end
 arch prisoner
 msg
 @match *
-NO! Go away, don't touch me! We
-are all... doomed.
+NO! Go away, don't touch me! We are all... doomed.
 endmsg
 hp 100
 maxhp 100
@@ -291,8 +290,7 @@ end
 arch prisoner
 msg
 @match *
-NO! Go away, don't touch me! We
-are all... doomed.
+NO! Go away, don't touch me! We are all... doomed.
 endmsg
 hp 100
 maxhp 100
@@ -1043,10 +1041,7 @@ arch bracers_ac
 name ancient bracers
 title of dexterity
 msg
-These bracers have been imbued with
-powerful magics to make the wearer
-more agile and to better protect
-from acid.
+These bracers have been imbued with powerful magics to make the wearer more agile and to better protect from acid.
 endmsg
 Dex 1
 Cha 1
@@ -1735,8 +1730,7 @@ end
 arch prisoner
 msg
 @match *
-NO! Go away, don't touch me! We
-are all... doomed.
+NO! Go away, don't touch me! We are all... doomed.
 endmsg
 hp 100
 maxhp 100
@@ -1797,8 +1791,7 @@ end
 arch prisoner
 msg
 @match *
-NO! Go away, don't touch me! We
-are all... doomed.
+NO! Go away, don't touch me! We are all... doomed.
 endmsg
 hp 100
 maxhp 100
@@ -4367,8 +4360,7 @@ end
 arch magic_mouth
 name 14
 msg
-You hear a thundering voice:
-"Ah finally! Food has arrived..."
+You hear a thundering voice: "Ah finally! Food has arrived..."
 endmsg
 x 30
 y 5
