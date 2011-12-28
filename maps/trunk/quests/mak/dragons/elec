@@ -8,7 +8,7 @@ enter_x 15
 enter_y 13
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2011-12-27 Rick Tanner
 endmsg
 end
 arch grate_open_1
@@ -2700,8 +2700,7 @@ y 12
 end
 arch magic_mouth
 msg
-Pull the lever to start the trial
-or say 'help' to chicken out
+Pull the lever to start the trial or say 'help' to chicken out
 endmsg
 x 15
 y 13
