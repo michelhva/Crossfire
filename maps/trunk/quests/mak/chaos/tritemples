@@ -9,7 +9,7 @@ enter_x 17
 enter_y 23
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2011-12-27 Rick Tanner
 endmsg
 maplore
 @def Lorkas
@@ -383,9 +383,7 @@ arch holy_priest
 name Priest
 msg
 @match *
-This is the one true path, give
-yourself to the devourers and the
-way shall open.
+This is the one true path, give yourself to the devourers and the way shall open.
 endmsg
 Con 15
 Wis 9
@@ -683,8 +681,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power
 endmsg
 Con 11
 Wis 7
@@ -802,8 +799,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power
 endmsg
 Con 11
 Wis 7
@@ -1065,8 +1061,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power
 endmsg
 Con 11
 Pow 30
@@ -1183,8 +1178,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power
 endmsg
 Con 11
 Pow 30
@@ -1449,8 +1443,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power
 endmsg
 Con 11
 Wis 3
@@ -1568,8 +1561,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power
 endmsg
 Con 11
 Wis 3
@@ -4796,8 +4788,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power
 endmsg
 Con 11
 Wis 2
@@ -4915,8 +4906,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power
 endmsg
 Con 11
 Wis 2
@@ -5182,8 +5172,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power
 endmsg
 Con 11
 Wis 4
@@ -5301,8 +5290,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power
 endmsg
 Con 11
 Wis 4
@@ -5568,8 +5556,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power
 endmsg
 Con 11
 Wis 6
@@ -5687,8 +5674,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power
 endmsg
 Con 11
 Wis 6
@@ -8298,8 +8284,7 @@ y 19
 end
 arch magic_mouth
 msg
-Hm... three gates here... three rooms
-upstairs... Maybe there is a relation?
+Hm... three gates here... three rooms upstairs... Maybe there is a relation?
 endmsg
 x 47
 y 19
