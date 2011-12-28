@@ -9,7 +9,7 @@ enter_x 2
 enter_y 31
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2011-12-27 Rick Tanner
 endmsg
 maplore
 @quest Lorkas
@@ -718,8 +718,7 @@ y 30
 end
 arch magic_mouth
 msg
-You have a really bad feeling about
-this place.
+You have a really bad feeling about this place.
 endmsg
 x 3
 y 31
@@ -1450,10 +1449,7 @@ end
 arch magic_mouth
 name 50
 msg
-Only half of the gates have opened...
-Could this mean there is a second
-lever, yet to be found?
-Could this mean you're only half done?
+Only half of the gates have opened... Could this mean there is a second lever, yet to be found? Could this mean you're only half done?
 endmsg
 x 7
 y 27
@@ -5712,8 +5708,7 @@ y 30
 end
 arch magic_mouth
 msg
-You have a really bad feeling about
-this place.
+You have a really bad feeling about this place.
 endmsg
 x 28
 y 31
@@ -5765,8 +5760,7 @@ end
 arch sorcerer_book
 name rainbow colored spellbook
 msg
-This spellbook ripples with the
-colors of the rainbow
+This spellbook ripples with the colors of the rainbow
 endmsg
 x 29
 y 3
