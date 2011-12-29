@@ -8,7 +8,7 @@ enter_x 9
 enter_y 25
 msg
 Created:  1993-10-18
-Modified: 2008-12-21 Rick Tanner
+Modified: 2011-12-28 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -2120,8 +2120,7 @@ arch locked_door2
 name Earth Door
 slaying ra-gar-earth
 msg
-You need the Earth Key to open this
-door
+You need the Earth Key to open this door
 endmsg
 x 13
 y 6
@@ -2433,7 +2432,7 @@ arch locked_door2
 name Fire Door
 slaying ra-gar-fire
 msg
-You need the Fire Key to open this doo
+You need the Fire Key to open this door
 endmsg
 x 15
 y 6
@@ -2613,8 +2612,7 @@ arch locked_door2
 name Water Door
 slaying ra-gar-water
 msg
-You need the Water Key to open this
-doo
+You need the Water Key to open this door
 endmsg
 x 16
 y 6
