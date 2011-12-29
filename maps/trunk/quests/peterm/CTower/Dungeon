@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1994-02-11 peter mardahl (peterm@soda.berkeley.edu)
-Modified: 2011-08-07 Nicolas Weeger
+Modified: 2011-12-28 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -146,13 +146,9 @@ Set me free.  It's true I betrayed my master, but he's a monster.  There is wors
 @match traitor|betray
 Yes, I betrayed my master.  Who wouldnt if they knew his evil scheme?
 @match scheme
-He tries to make himself immortal, but he's lost his soul in his blindness.  He seeks to become a lich.
-
-He hasn't fully succeeded yet, but I'm sure he will.
+He tries to make himself immortal, but he's lost his soul in his blindness.  He seeks to become a lich. He hasn't fully succeeded yet, but I'm sure he will.
 @match password
-Gladly will I tell you the password.
-
-It is starwatch -- at least, it was when I was Yqreth's advisor...... Perhaps he has changed it.
+Gladly will I tell you the password. It is starwatch -- at least, it was when I was Yqreth's advisor...... Perhaps he has changed it.
 endmsg
 x 1
 y 4
@@ -482,8 +478,7 @@ y 3
 end
 arch magic_mouth
 msg
-This cell door has 'traitor' written
-on it....
+This cell door has 'traitor' written on it....
 endmsg
 x 4
 y 4
