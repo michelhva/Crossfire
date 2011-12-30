@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2011-12-29 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -328,15 +328,9 @@ msg
 @match master
 You are NOT my master!
 @match name
-I will not tell you my name nor will i
-tell you the name of my master, i am
-not stupid.
+I will not tell you my name nor will I tell you the name of my master, I am not stupid.
 @match Griknaldamandarakar
-Aaaagh, stop torturing me.  My master's
-name is Ycronrcldeth, why don't you
-summon him from the grave and make him
-suffer?  Please Banish me back to my
-prison, it is at least dark there.
+Aaaagh, stop torturing me. My master's name is Ycronrcldeth, why don't you summon him from the grave and make him suffer? Please Banish me back to my prison, it is at least dark there.
 endmsg
 hp 6000
 exp 5000
@@ -665,17 +659,7 @@ end
 arch book_read
 name Earth Master's Book of Names
 msg
-This is the Earth Master's book of
-names. You open the pages and flip
-through.
-Inside are the names of many
-earth elementals.
-One page in particular is very
-dog-eared.  The Earth Master apparently
-had many uses for this particular
-elemental.
-The name is written as
-Griknaldamandarakar
+This is the Earth Master's book of names. You open the pages and flip through. Inside are the names of many earth elementals. One page in particular is very dog-eared. The Earth Master apparently had many uses for this particular elemental. The name is written as Griknaldamandarakar.
 endmsg
 x 7
 y 2
