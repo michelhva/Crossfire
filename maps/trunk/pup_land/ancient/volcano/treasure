@@ -9,7 +9,7 @@ enter_x 4
 enter_y 24
 msg
 Created:  2004-06-09 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2011-12-01 Rick Tanner
+Modified: 2011-12-30 Nicolas Weeger
 endmsg
 end
 arch cave_15
@@ -4370,6 +4370,14 @@ x 17
 y 22
 resist_physical 30
 connected 1
+arch event_apply
+name pupland
+title Python
+slaying /python/misc/hall_of_fame.py
+msg
+Your name will from now on be written in Pupland's hall of fame!
+endmsg
+end
 end
 arch dungeon_magic
 x 17
