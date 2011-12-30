@@ -944,6 +944,9 @@ treasureone containers
   arch quiver
     chance 10
   more
+  arch quiver_throwing
+    chance 10
+  more
   arch scrollcase
     chance 5
   end
@@ -1009,6 +1012,9 @@ treasureone throw_weapons
   arch trident
     magic 3
     nrof 3
+    chance 5
+  more
+  arch quiver_throwing
     chance 5
 end
 # melee_weapons combines old list 11 and list 12 together.  List 26
