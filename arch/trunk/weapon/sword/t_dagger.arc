@@ -1,6 +1,7 @@
 Object t_dagger
 nrof 1
 name throwing dagger
+race throwing
 last_sp 4
 type 15
 face t_dagger.131

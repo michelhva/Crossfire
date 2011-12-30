@@ -1,6 +1,7 @@
 Object brdaxe1
 nrof 1
 name bearded axe
+race throwing
 last_sp 9
 type 15
 face brdaxe_1.111

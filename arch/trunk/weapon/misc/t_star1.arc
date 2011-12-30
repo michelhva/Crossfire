@@ -1,6 +1,7 @@
 Object t_star1
 nrof 1
 name throwing star
+race throwing
 last_sp 2
 type 15
 face t_star1.111

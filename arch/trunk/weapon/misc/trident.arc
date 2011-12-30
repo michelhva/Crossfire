@@ -1,4 +1,6 @@
 Object trident
+name trident
+race throwing
 type 15
 nrof 1
 last_sp 8
