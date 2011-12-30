@@ -8,7 +8,7 @@ enter_x 6
 enter_y 26
 msg
 Created:  1997-07-02
-Modified: 2011-12-14 Rick Tanner
+Modified: 2011-12-30 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -835,17 +835,14 @@ arch monument
 msg
 The greatest Heroes of Pupland:
 ------------------------------
-
-   Allarounder, the Murderer
-   BugMaster, the Dorobou
-   POL, the Ninja Master
-   Seventh, the Fighter
-   simon, the dwarf
-   SlimeIV, the High Priest
-   red_blaze, the Gargoyle
 endmsg
 x 6
 y 2
+arch event_apply
+name pupland
+title Python
+slaying /python/misc/hall_of_fame.py
+end
 end
 arch flagstone
 x 6
