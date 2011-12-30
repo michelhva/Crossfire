@@ -1,6 +1,7 @@
 Object axe_2
 nrof 1
 name axe
+race throwing
 last_sp 10
 type 15
 face axe_2.111

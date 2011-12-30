@@ -1,4 +1,6 @@
 Object spear
+name spear
+race throwing
 nrof 1
 last_sp 9
 type 15

@@ -1,6 +1,7 @@
 Object hammer_2
 nrof 1
 name throwing hammer
+race throwing
 last_sp 9
 weapontype 7
 type 15
