@@ -8,7 +8,7 @@ enter_x 7
 enter_y 7
 msg
 Created:  1994-05-30 peterm (peterm@soda.berkeley.edu)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2011-12-29 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -396,12 +396,9 @@ msg
 @match word
 HAHAHAHAHAHAHAHAHAHAHA!!!!!!!
 @match Ycronrcldeth
-AAAAAAARRRRRGGGGGGHHHHH.......
-I'll tell you what you want to
-know, do you want to know my part
-of the Word?
+AAAAAAARRRRRGGGGGGHHHHH....... I'll tell you what you want to know, do you want to know my part of the Word?
 @match yes
-My part of the word is 'rumleden'
+My part of the word is 'rumleden'.
 endmsg
 x 2
 y 19
@@ -414,15 +411,9 @@ arch lich
 name Dead Master of Air
 msg
 @match word
-You think I'm going to tell you the
-word?  Well, why should I?  You can't
-do anything to me, I'm already dead.
+You think I'm going to tell you the word?  Well, why should I?  You can't do anything to me, I'm already dead.
 @match Thessalrudin
-owwwwwwwwwwwwwwwwwww.........
-I only know part of the word.
-You're going to have to get the rest
-of it out of the other three Masters.
-My part is 'Hleafna'.
+owwwwwwwwwwwwwwwwwww......... I only know part of the word. You're going to have to get the rest of it out of the other three Masters. My part is 'Hleafna'.
 endmsg
 x 2
 y 23
@@ -903,8 +894,7 @@ speed 0.500000
 end
 arch magic_mouth
 msg
-You notice that throwing this lever
-will open 4 gates.
+You notice that throwing this lever will open 4 gates.
 endmsg
 x 6
 y 6
@@ -921,9 +911,7 @@ connected 1
 end
 arch magic_mouth
 msg
-You get the feeling that this
-teleporter requires you to say
-something in order to activate.
+You get the feeling that this teleporter requires you to say something in order to activate.
 endmsg
 x 6
 y 7
@@ -948,8 +936,7 @@ arch locked_door1
 name stone
 slaying Earth_up
 msg
-An invisible stone wall forces you
-back.
+An invisible stone wall forces you back.
 endmsg
 x 6
 y 7
@@ -976,8 +963,7 @@ end
 arch locked_door1
 slaying Fire_up
 msg
-A hot force prevents you from
-stepping here.
+A hot force prevents you from stepping here.
 endmsg
 x 6
 y 7
@@ -1034,34 +1020,13 @@ arch charwoman
 name even more gossipy cleaning woman
 msg
 @match hello|hi|boo
-You're not planning on opening those
-doors are you????
-If you are, let me run downstairs.
-Opening the gates summons the
-Guardians!
+You're not planning on opening those doors are you???? If you are, let me run downstairs. Opening the gates summons the Guardians!
 @match guardian|guardians
-yes, two visible, and two invisible.
-They guard the Portals in the corners
-of the rooms.  The Dead can be
-summoned by means of those portals.
-The Masters used the portals to
-question those who have passed on.
+Yes, two visible, and two invisible. They guard the Portals in the corners of the rooms. The Dead can be summoned by means of those portals. The Masters used the portals to question those who have passed on.
 @match word|password|teleport
-The teleporters lead to the levels
-above.  Each of the Masters had a
-syllable of the Word.  They had to
-speak the word in succession.
-Actually, they whispered it:  they
-didn't trust each other enough to
-share the Word.  They spoke the
-Word in the order of their power,
-Air, Earth, Water, Fire.  But
-the Word died with them.
+The teleporters lead to the levels above. Each of the Masters had a syllable of the Word. They had to speak the word in succession. Actually, they whispered it: They didn't trust each other enough to share the Word. They spoke the Word in the order of their power, Air, Earth, Water, Fire. But the Word died with them.
 @match portal
-Yes, you can summon the dead
-with those portals if you know
-their names.  Getting them to
-cooperate is quite another matter.
+Yes, you can summon the dead with those portals if you know their names. Getting them to cooperate is quite another matter.
 endmsg
 x 6
 y 15
@@ -1076,9 +1041,7 @@ msg
 @match word
 I will not tell you.
 @match Brenlorien
-huunnnnnhhh....
-Okay, maybe I WILL tell you.
-MY part of the word is 'karanth'.
+huunnnnnhhh.... Okay, maybe I WILL tell you. MY part of the word is 'karanth'.
 endmsg
 x 6
 y 19
@@ -1133,9 +1096,7 @@ connected 1
 end
 arch magic_mouth
 msg
-You get the feeling that this
-teleporter requires you to say
-something in order to activate
+You get the feeling that this teleporter requires you to say something in order to activate.
 endmsg
 x 7
 y 6
@@ -1160,8 +1121,7 @@ arch locked_door1
 name stone
 slaying Earth_up
 msg
-An invisible stone wall forces you
-back.
+An invisible stone wall forces you back.
 endmsg
 x 7
 y 6
@@ -1188,8 +1148,7 @@ end
 arch locked_door1
 slaying Fire_up
 msg
-A hot force prevents you from
-stepping here.
+A hot force prevents you from stepping here.
 endmsg
 x 7
 y 6
@@ -1220,9 +1179,7 @@ y 7
 end
 arch magic_mouth
 msg
-You get the feeling that this
-teleporter requires you to say
-something.
+You get the feeling that this teleporter requires you to say something.
 endmsg
 x 7
 y 8
@@ -1247,8 +1204,7 @@ arch locked_door1
 name stone
 slaying Earth_up
 msg
-An invisible stone wall forces you
-back.
+An invisible stone wall forces you back.
 endmsg
 x 7
 y 8
@@ -1275,8 +1231,7 @@ end
 arch locked_door1
 slaying Fire_up
 msg
-A hot force prevents you from
-stepping here.
+A hot force prevents you from stepping here.
 endmsg
 x 7
 y 8
@@ -1364,43 +1319,20 @@ arch charwoman
 name even more gossipy cleaning woman
 msg
 @match hello|hi|boo
-You're not planning on opening those
-doors are you????
-If you are, let me run downstairs.
-Opening the gates summons the
-Guardians!
+You're not planning on opening those doors are you???? If you are, let me run downstairs. Opening the gates summons the Guardians!
 @match guardian|guardians
-yes, two visible, and two invisibile.
-They guard the Portals in the corners
-of the rooms.  The Dead can be
-summoned by means of those portals.
-The Masters used the portals to
-question those who have passed on.
+Yes, two visible, and two invisibile. They guard the Portals in the corners of the rooms. The Dead can be summoned by means of those portals. The Masters used the portals to question those who have passed on.
 @match word|password|teleport
-The teleporters lead to the levels
-above.  Each of the Masters had a
-syllable of the Word.  They had to
-speak the word in succession.
-Actually, they whispered it:  they
-didn't trust each other enough to
-share the Word.  They spoke the
-Word in the order of their power,
-Air, Earth, Water, Fire.  But
-the Word died with them.
+The teleporters lead to the levels above. Each of the Masters had a syllable of the Word. They had to speak the word in succession. Actually, they whispered it: They didn't trust each other enough to share the Word. They spoke the Word in the order of their power, Air, Earth, Water, Fire. But the Word died with them.
 @match portal
-Yes, you can summon the dead
-with those portals if you know
-their names.  Getting them to
-cooperate is quite another matter.
+Yes, you can summon the dead with those portals if you know their names. Getting them to cooperate is quite another matter.
 endmsg
 x 8
 y 6
 end
 arch magic_mouth
 msg
-You get the feeling that this
-teleporter requires you to say
-something in order to activate
+You get the feeling that this teleporter requires you to say something in order to activate.
 endmsg
 x 8
 y 7
@@ -1425,8 +1357,7 @@ arch locked_door1
 name stone
 slaying Earth_up
 msg
-An invisible stone wall forces you
-back.
+An invisible stone wall forces you back.
 endmsg
 x 8
 y 7
@@ -1453,8 +1384,7 @@ end
 arch locked_door1
 slaying Fire_up
 msg
-A hot force prevents you from
-stepping here.
+A hot force prevents you from stepping here.
 endmsg
 x 8
 y 7
@@ -1626,8 +1556,7 @@ arch locked_door1
 name stone
 slaying Earth_up
 msg
-An invisible stone wall forces you
-back.
+An invisible stone wall forces you back.
 endmsg
 x 9
 y 15
@@ -1654,8 +1583,7 @@ end
 arch locked_door1
 slaying Fire_up
 msg
-A hot force prevents you from
-stepping here.
+A hot force prevents you from stepping here.
 endmsg
 x 9
 y 15
