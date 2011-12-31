@@ -8,7 +8,7 @@ enter_x 13
 enter_y 10
 msg
 Created:  1997-05-23 PeterM (peterm@soda.csua.berkeley.edu)
-Modified: 2011-06-28 Andreas Kirschbaum
+Modified: 2011-12-30 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -506,22 +506,12 @@ end
 arch scroll
 name ingredients
 msg
-This scroll describes a large research
-project run by the demons which is
-intended to discover the physical
-means by which demons get their
-immunity to fire. From the text,
-you glean that
+This scroll describes a large research project run by the demons which is intended to discover the physical means by which demons get their immunity to fire. From the text, you glean that
 - fire para-elemental's residue
 - 7 water of ruby
 - dragon's steak
 - 3 balm of asbestos
-are the ingredients necessary to
-produce an alchemical preparation
-capable of granting a temporary
-immunity to fire similar to a demon's.
-However, this scroll does not describe
-the alchemical methods.
+are the ingredients necessary to produce an alchemical preparation capable of granting a temporary immunity to fire similar to a demon's. However, this scroll does not describe the alchemical methods.
 endmsg
 x 1
 y 33
@@ -8484,9 +8474,7 @@ y 32
 end
 arch sign
 msg
-Clean suits  and boots
-are required past this
-point.
+Clean suits and boots are required past this point.
 endmsg
 x 29
 y 32
