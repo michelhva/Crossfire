@@ -8,7 +8,7 @@ enter_x 12
 enter_y 9
 msg
 Created:  1997-05-23 PeterM (peterm@soda.csua.berkeley.edu)
-Modified: 2011-06-28 Andreas Kirschbaum
+Modified: 2011-12-30 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -9524,12 +9524,7 @@ end
 arch marker
 slaying fire alchemist
 msg
-While reading through the scroll,
-you discover the secret methods
-of demonic fire alchemy! Now you are
-able to mix potions of fire resistance
-on your own, when you have the proper
-ingredients.
+While reading through the scroll, you discover the secret methods of demonic fire alchemy! Now you are able to mix potions of fire resistance on your own, when you have the proper ingredients.
 endmsg
 hp 1
 food 0
@@ -9538,11 +9533,7 @@ y 1
 end
 arch scroll
 msg
-This scroll contains the final secrets
-for the alchemical preparation which
-grants temporary immunity to fire.
-It's pre-publication, so you're getting
-a scoop on the rest of the world.
+This scroll contains the final secrets for the alchemical preparation which grants temporary immunity to fire. It's pre-publication, so you're getting a scoop on the rest of the world.
 endmsg
 x 35
 y 1
