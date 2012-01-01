@@ -8,7 +8,7 @@ enter_x 6
 enter_y 10
 msg
 Created:  2007-02-03 Brad Reilly
-Modified: 2008-10-26 Rick Tanner
+Modified: 2012-01-01 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -67,6 +67,9 @@ slaying temple_justice.14
 hp 5
 sp 1
 y 9
+arch quest_advance_apply
+name darcap/TempleJustice 20>30
+end
 end
 arch blocked
 y 10
@@ -428,6 +431,7 @@ match@ *
 You shall not pass!
 endmsg
 face guard_ligh.111
+animation NONE
 hp 10000
 maxhp 10000
 sp 100
@@ -459,6 +463,7 @@ resist_electricity 0
 value 175000
 weight 30500
 item_power 15
+identified 1
 reflect_spell 1
 end
 arch skill_pyromancy
@@ -888,6 +893,9 @@ hp 7
 sp 1
 x 12
 y 9
+arch quest_advance_apply
+name darcap/TempleJustice 20>30
+end
 end
 arch blocked
 x 12
