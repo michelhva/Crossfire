@@ -2076,7 +2076,8 @@ end
 arch dwarf_priest
 name High Priest
 msg
-
+@match *
+Curse you!
 endmsg
 hp 300
 dam 24
