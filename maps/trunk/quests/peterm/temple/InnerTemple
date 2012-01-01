@@ -8,7 +8,7 @@ enter_x 7
 enter_y 39
 msg
 Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
-Modified: 2010-08-15 Nicolas Weeger
+Modified: 2012-01-01 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -405,7 +405,7 @@ y 24
 end
 arch magic_mouth
 msg
-Something smells yummy up ahead
+Something smells yummy up ahead.
 endmsg
 x 1
 y 25
@@ -3241,9 +3241,7 @@ y 6
 end
 arch magic_mouth
 msg
-Diabolical!  They've stored the food
-just out of the reach of the starving
-prisoners.
+Diabolical!  They've stored the food just out of the reach of the starving prisoners.
 endmsg
 x 11
 y 7
@@ -3798,8 +3796,7 @@ x 13
 end
 arch magic_mouth
 msg
-A foul reek emanates from the hole.
-Somehow, the hole seems like a huge maw, ready to swallow you up
+A foul reek emanates from the hole. Somehow, the hole seems like a huge maw, ready to swallow you up.
 endmsg
 x 13
 y 1
@@ -3876,8 +3873,7 @@ arch prisoner
 name starving prisoner
 msg
 @match altar|sacrifice
-Please set me free!
-I don't want to be sacrificed on the altar!
+Please set me free! I don't want to be sacrificed on the altar!
 endmsg
 hp 100
 maxhp 100
@@ -4145,7 +4141,7 @@ y 1
 end
 arch magic_mouth
 msg
-You peer down the hole into the smelly torchlit depths....  It goes down, and down, and down...  Somehow, you don't look forward to seeing the end of it
+You peer down the hole into the smelly torchlit depths....  It goes down, and down, and down...  Somehow, you don't look forward to seeing the end of it.
 endmsg
 x 14
 y 2
@@ -4293,7 +4289,7 @@ y 24
 end
 arch magic_mouth
 msg
-Something smells yummy up ahead
+Something smells yummy up ahead.
 endmsg
 x 14
 y 25
