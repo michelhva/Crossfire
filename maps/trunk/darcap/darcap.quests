@@ -1,4 +1,6 @@
 include darcap/cameron.quests
+
+
 quest darcap/Spike
 title Spike's aching back
 description
@@ -29,6 +31,29 @@ step 50
 finishes_quest
 description
 You brought the potion back to Spike.
+end_description
+end_step
+end_quest
+
+quest darcap/TempleJustice
+title Temple Justice
+description
+Find the legendary Temple of Justice.
+end_description
+step 10
+description
+You've heard there is a temple, named "Temple of Justice", somewhere west of Darcap. Reaching it implies to go around some lakes.
+end_description
+end_step
+step 20
+description
+You've found the Temple of Justice, but didn't yet reach its top.
+end_description
+end_step
+step 30
+finishes_quest
+description
+You've reached the top of the Temple of Justice.
 end_description
 end_step
 end_quest

@@ -3,7 +3,7 @@ name world_114_102
 width 50
 height 50
 msg
-Modified: 2008-12-17 Rick Tanner
+Modified: 2012-01-01 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_114_101
@@ -8253,6 +8253,9 @@ sp 31
 x 27
 y 36
 glow_radius 3
+arch quest_advance_apply
+name darcap/TempleJustice 10>20
+end
 end
 arch cobblestones2
 x 27
