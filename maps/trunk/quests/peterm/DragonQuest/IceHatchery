@@ -9,7 +9,7 @@ enter_x 4
 enter_y 5
 msg
 Created:  1994-08-19 peterm (peterm@soda.csua.berkeley.edu)
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-01-01 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -50,7 +50,7 @@ end
 arch pstone_2
 y 12
 end
-arch cave18
+arch cave24
 y 12
 end
 arch pstone_2
@@ -247,7 +247,7 @@ arch pstone_2
 x 1
 y 21
 end
-arch cave18
+arch cave24
 x 1
 y 21
 end
@@ -353,7 +353,7 @@ arch pstone_2
 x 2
 y 6
 end
-arch cave17
+arch cave23
 x 2
 y 6
 end
@@ -361,7 +361,7 @@ arch pstone_2
 x 2
 y 7
 end
-arch cave18
+arch cave24
 x 2
 y 7
 end
@@ -377,7 +377,7 @@ arch pstone_2
 x 2
 y 9
 end
-arch cave17
+arch cave23
 x 2
 y 9
 end
@@ -481,7 +481,7 @@ arch pstone_2
 x 2
 y 24
 end
-arch cave17
+arch cave23
 x 2
 y 24
 end
@@ -1310,7 +1310,7 @@ arch pstone_2
 x 7
 y 9
 end
-arch cave20
+arch cave22
 x 7
 y 9
 end
@@ -1433,7 +1433,7 @@ end
 arch pstone_2
 x 8
 end
-arch cave_15
+arch cave25
 x 8
 end
 arch pstone_2
@@ -1452,7 +1452,7 @@ arch pstone_2
 x 8
 y 2
 end
-arch cave20
+arch cave22
 x 8
 y 2
 end
@@ -1956,7 +1956,7 @@ arch pstone_2
 x 11
 y 12
 end
-arch cave19
+arch cave25
 x 11
 y 12
 end
@@ -2484,7 +2484,7 @@ arch pstone_2
 x 14
 y 19
 end
-arch cave19
+arch cave25
 x 14
 y 19
 end
