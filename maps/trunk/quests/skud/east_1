@@ -7,7 +7,7 @@ height 30
 enter_y 5
 msg
 Created:  1993-11-18 Skud the Great (tvangod@ecst.csuchico.edu)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2012-01-02 Rick Tanner
 endmsg
 end
 arch marble
@@ -6010,7 +6010,11 @@ arch marble
 x 30
 y 8
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 30
+y 8
+end
+arch dwall_1_3
 x 30
 y 8
 end
@@ -6472,7 +6476,11 @@ arch marble
 x 32
 y 8
 end
-arch cwall_2_1_2
+arch swall_1_3_half
+x 32
+y 8
+end
+arch dwall_1_4
 x 32
 y 8
 end
@@ -7150,7 +7158,11 @@ arch marble
 x 35
 y 10
 end
-arch cwall_2_1_1
+arch swall_1_1_half
+x 35
+y 10
+end
+arch dwall_1_2
 x 35
 y 10
 end
@@ -7166,7 +7178,11 @@ arch marble
 x 35
 y 12
 end
-arch cwall_2_1_1
+arch swall_1_2_half
+x 35
+y 12
+end
+arch dwall_1_1
 x 35
 y 12
 end
@@ -7432,7 +7448,11 @@ arch marble
 x 36
 y 18
 end
-arch cwall_2_1_1
+arch swall_1_1_half
+x 36
+y 18
+end
+arch dwall_1_2
 x 36
 y 18
 end
@@ -7448,7 +7468,11 @@ arch marble
 x 36
 y 20
 end
-arch cwall_2_1_1
+arch swall_1_2_half
+x 36
+y 20
+end
+arch dwall_1_1
 x 36
 y 20
 end
@@ -7472,7 +7496,11 @@ arch marble
 x 36
 y 23
 end
-arch cwall_2_1_1
+arch swall_1_1_half
+x 36
+y 23
+end
+arch dwall_1_2
 x 36
 y 23
 end
@@ -7488,7 +7516,11 @@ arch marble
 x 36
 y 25
 end
-arch cwall_2_1_1
+arch swall_1_2_half
+x 36
+y 25
+end
+arch dwall_1_1
 x 36
 y 25
 end
