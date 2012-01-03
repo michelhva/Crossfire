@@ -8,7 +8,7 @@ enter_x 15
 enter_y 38
 msg
 Created:  1993-11-16 Skud the Great (tvangod@ecst.csuchico.edu)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2012-01-02 Rick Tanner
 endmsg
 end
 arch snow3
@@ -408,6 +408,10 @@ arch cwall_1_2
 x 1
 y 8
 end
+arch swall_1_1_half
+x 1
+y 8
+end
 arch marble
 x 1
 y 9
@@ -417,6 +421,10 @@ x 1
 y 9
 end
 arch marble
+x 1
+y 10
+end
+arch swall_1_2_half
 x 1
 y 10
 end
@@ -1174,6 +1182,10 @@ arch cwall_2_2_1
 x 3
 y 15
 end
+arch swall_1_1_half
+x 3
+y 15
+end
 arch marble
 x 3
 y 16
@@ -1183,6 +1195,10 @@ x 3
 y 16
 end
 arch marble
+x 3
+y 17
+end
+arch swall_1_2_half
 x 3
 y 17
 end
@@ -1222,6 +1238,10 @@ arch cwall_2_2_1
 x 3
 y 21
 end
+arch swall_1_1_half
+x 3
+y 21
+end
 arch marble
 x 3
 y 22
@@ -1231,6 +1251,10 @@ x 3
 y 22
 end
 arch marble
+x 3
+y 23
+end
+arch swall_1_2_half
 x 3
 y 23
 end
@@ -1270,6 +1294,10 @@ arch cwall_1_2
 x 3
 y 27
 end
+arch swall_1_1_half
+x 3
+y 27
+end
 arch marble
 x 3
 y 28
@@ -1279,6 +1307,10 @@ x 3
 y 28
 end
 arch marble
+x 3
+y 29
+end
+arch swall_1_2_half
 x 3
 y 29
 end
@@ -2102,7 +2134,11 @@ arch marble
 x 6
 y 5
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 6
+y 5
+end
+arch dwall_1_3
 x 6
 y 5
 end
@@ -2642,7 +2678,11 @@ arch marble
 x 7
 y 31
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 7
+y 31
+end
+arch dwall_1_3
 x 7
 y 31
 end
@@ -2758,7 +2798,11 @@ arch marble
 x 8
 y 5
 end
-arch cwall_2_1_2
+arch swall_1_3_half
+x 8
+y 5
+end
+arch dwall_1_4
 x 8
 y 5
 end
@@ -3123,7 +3167,7 @@ arch marble
 x 9
 y 5
 end
-arch cwall_3_4
+arch dwall_2_2_4
 x 9
 y 5
 end
@@ -3144,7 +3188,7 @@ arch marble
 x 9
 y 7
 end
-arch cwall_2_1_1
+arch dwall_1_1
 x 9
 y 7
 end
@@ -3318,7 +3362,11 @@ arch marble
 x 9
 y 31
 end
-arch dwall_2_1_2
+arch swall_1_3_half
+x 9
+y 31
+end
+arch dwall_1_4
 x 9
 y 31
 end
@@ -4307,7 +4355,11 @@ arch marble
 x 12
 y 34
 end
-arch cwall_2_1_1
+arch swall_1_1_half
+x 12
+y 34
+end
+arch dwall_1_2
 x 12
 y 34
 end
@@ -4323,7 +4375,11 @@ arch marble
 x 12
 y 36
 end
-arch cwall_2_1_1
+arch swall_1_2_half
+x 12
+y 36
+end
+arch dwall_1_1
 x 12
 y 36
 end
@@ -6224,7 +6280,11 @@ arch marble
 x 18
 y 34
 end
-arch cwall_2_1_1
+arch swall_1_1_half
+x 18
+y 34
+end
+arch dwall_1_2
 x 18
 y 34
 end
@@ -6240,7 +6300,11 @@ arch marble
 x 18
 y 36
 end
-arch cwall_2_1_1
+arch swall_1_2_half
+x 18
+y 36
+end
+arch dwall_1_1
 x 18
 y 36
 end
@@ -6990,7 +7054,7 @@ arch marble
 x 21
 y 19
 end
-arch cwall_3_3
+arch dwall_2_1_2
 x 21
 y 19
 end
@@ -7603,7 +7667,7 @@ arch marble
 x 23
 y 25
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 23
 y 25
 end
@@ -8220,7 +8284,7 @@ arch marble
 x 25
 y 19
 end
-arch cwall_3_3
+arch dwall_2_1_2
 x 25
 y 19
 end
@@ -8236,7 +8300,7 @@ arch marble
 x 25
 y 21
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 25
 y 21
 end
