@@ -8,7 +8,7 @@ enter_x 7
 enter_y 8
 msg
 Created:  1997-04-20 Peter Mardahl (peterm@soda.csua.berkeley.edu)
-Modified: 2011-12-30 Rick Tanner
+Modified: 2012-01-02 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -1961,6 +1961,10 @@ arch mine5
 x 9
 y 11
 end
+arch swall_1_1_half
+x 9
+y 11
+end
 arch cobblestones
 x 9
 y 12
@@ -1982,6 +1986,10 @@ x 9
 y 14
 end
 arch mine12
+x 9
+y 14
+end
+arch swall_1_1_half
 x 9
 y 14
 end
@@ -2014,6 +2022,10 @@ x 9
 y 18
 end
 arch mine5
+x 9
+y 18
+end
+arch swall_1_1_half
 x 9
 y 18
 end
@@ -2188,6 +2200,10 @@ arch cobblestones
 x 10
 y 10
 end
+arch swall_1_4_half
+x 10
+y 10
+end
 arch mine7
 x 10
 y 10
@@ -2337,6 +2353,10 @@ x 11
 y 10
 end
 arch cobblestones
+x 11
+y 21
+end
+arch swall_1_4_half
 x 11
 y 21
 end
@@ -2618,6 +2638,10 @@ arch cobblestones
 x 13
 y 10
 end
+arch swall_1_4_half
+x 13
+y 10
+end
 arch mine7
 x 13
 y 10
@@ -2750,6 +2774,10 @@ x 14
 y 10
 end
 arch cobblestones
+x 14
+y 21
+end
+arch swall_1_4_half
 x 14
 y 21
 end
@@ -3044,6 +3072,10 @@ arch cobblestones
 x 16
 y 10
 end
+arch swall_1_4_half
+x 16
+y 10
+end
 arch mine7
 x 16
 y 10
@@ -3203,6 +3235,10 @@ x 17
 y 10
 end
 arch cobblestones
+x 17
+y 21
+end
+arch swall_1_4_half
 x 17
 y 21
 end
@@ -3674,6 +3710,10 @@ arch mine5
 x 20
 y 11
 end
+arch swall_1_1_half
+x 20
+y 11
+end
 arch cobblestones
 x 20
 y 12
@@ -3695,6 +3735,10 @@ x 20
 y 14
 end
 arch mine4
+x 20
+y 14
+end
+arch swall_1_1_half
 x 20
 y 14
 end
@@ -3719,6 +3763,10 @@ x 20
 y 17
 end
 arch mine4
+x 20
+y 17
+end
+arch swall_1_1_half
 x 20
 y 17
 end
