@@ -8,7 +8,7 @@ enter_x 5
 enter_y 16
 msg
 Created:  1993-10-20 Skud the Great (tvangod@ecst.csuchico.edu)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2012-01-03 Rick Tanner
 endmsg
 end
 arch marble
@@ -699,24 +699,13 @@ arch lich
 name Guardian
 msg
 @match skud|great
-Yes, he was one of the greatest wizards
-to walk this land. But he is no longer
-of this earth.
+Yes, he was one of the greatest wizards to walk this land. But he is no longer of this earth.
 @match Magic|wizard
-He summoned many creatures from the
-depths of the Abyss. I guard this
-entrance now, to insure that none of
-those apparitions ever walk our lands.
+He summoned many creatures from the depths of the Abyss. I guard this entrance now, to insure that none of those apparitions ever walk our lands.
 @match land|long|earth
-Yes, he began to use his magic in the
-ways of evil. The board of wizards
-exiled him to this tower, where he was
-consumed by his own magic.
+Yes, he began to use his magic in the ways of evil. The board of wizards exiled him to this tower, where he was consumed by his own magic.
 @match *
-This is the tower of Skud the Great,
-long has it been since I have seen
-mortals walk these halls. I guard this
-entrance, you shall not pass
+This is the tower of Skud the Great, long has it been since I have seen mortals walk these halls. I guard this entrance, you shall not pass.
 endmsg
 maxhp 10000
 wc -20
