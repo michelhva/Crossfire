@@ -8,7 +8,7 @@ height 24
 enter_x 9
 enter_y 23
 msg
-Modified: 2008-12-02 Rick Tanner
+Modified: 2012-01-04 Rick Tanner
 endmsg
 end
 arch grass
@@ -1562,8 +1562,7 @@ Gaea is the mother of nature.
 @match cabbage
 Don't dare to touch my cabbages!
 @match *
-Ah, what a wonderful day today.
-I can almost hear my cabbages growing.
+Ah, what a wonderful day today.  I can almost hear my cabbages growing.
 endmsg
 hp 200
 maxhp 200
@@ -3663,8 +3662,7 @@ arch magic_mouth
 name 2
 msg
 The worshipper of Gaea says:
-Arrgh! My cabbages!!
-Gaea, help me...
+Arrgh! My cabbages!! Gaea, help me...
 endmsg
 x 25
 y 2
