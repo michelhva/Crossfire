@@ -8,7 +8,7 @@ enter_x 14
 enter_y 18
 msg
 Created:  1994-04-05 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2011-07-17 Nicolas Weeger
+Modified: 2012-01-04 Rick Tanner
 endmsg
 end
 arch grass
@@ -772,8 +772,7 @@ name TCI Representative
 msg
 @match tci
 @question location location And what are those locations?
-Training Centers Incorporated is the best dang training you'll ever get. We have locations all over the world in
-exotic settings. Come fight with us! (heh, they tell us we have to say all that)
+Training Centers Incorporated is the best dang training you'll ever get. We have locations all over the world in exotic settings. Come fight with us! (heh, they tell us we have to say all that)
 @match location
 Well, I don't know about all of them. But our local TCI is off the road south of here. Just look for one of our signs!
 @match hello|hi
@@ -1231,8 +1230,7 @@ Sure, it's just a matter of having enough money. I made some sailing, and the pa
 Huh... Mudman? What's that?
 @match *
 @question apartment You can buy a apartment around here?
-St. Dominion is a nice little town.
-I bought one of the apartments and now I'm staying here for the weekends.
+St. Dominion is a nice little town. I bought one of the apartments and now I'm staying here for the weekends.
 endmsg
 hp 100
 maxhp 100
@@ -2050,7 +2048,7 @@ Shhh! You must not speak HIS name! It's not healthy to be that curious.
 Maybe you should look after him?
 @match *
 @question warrior A warrior, really?
-There's a wounded warrior in one of the rooms upstairs. That guy is in real bad shape. I wonder what happened to him?
+There's a wounded warrior in one of the rooms upstairs.  That guy is in real bad shape.  I wonder what happened to him?
 endmsg
 x 14
 y 8
@@ -2845,11 +2843,10 @@ arch wizard
 name blue wizard
 msg
 @match mudman|hero|yes|gate
-The Mudman is a vile creature lurking in swamps just west of this town.
-The inhabitants of St. Dominion are scared of the Mudman. Kill him and put his residue on my table. Then I will open the gate for you.
+The Mudman is a vile creature lurking in swamps just west of this town.  The inhabitants of St. Dominion are scared of the Mudman.  Kill him and put his residue on my table.  Then I will open the gate for you.
 @match *
 @question mudman What is the mudman?
-Do you see this room behind me? It's the "hero's room". You may enter if you prove yourself worthy by killing the Mudman.
+Do you see this room behind me? It's the "hero's room".  You may enter if you prove yourself worthy by killing the Mudman.
 endmsg
 face wizard_blue.151
 Str 10
@@ -3235,7 +3232,7 @@ arch lesser_dwarven_guard
 name dwarf
 msg
 @match *
-Damn! Those chairs are too high for me. I hate this world...
+Damn! Those chairs are too high for me.  I hate this world...
 endmsg
 x 21
 y 16
