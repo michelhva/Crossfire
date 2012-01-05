@@ -8,7 +8,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  1993-11-01 (john_cater@yahoo.com)
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-01-04 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -807,8 +807,7 @@ end
 arch sign
 name Santo Dominion Message Board
 msg
-I am a talking board, please say something to me.
-If you don't know what to say, try help.
+I am a talking board, please say something to me. If you don't know what to say, try help.
 endmsg
 x 6
 y 13
@@ -1624,20 +1623,14 @@ name Manual
 msg
 Receiving Mail
 -----------------------
-Open the mailbox and get the scrolls,
-read them by applying.
+Open the mailbox and get the scrolls, read them by applying.
 Sending Mail
 -----------------------
-Get a pencil and be sure that you are
-able to use the literacy skill. You can
-get both at the office; ask Betina for
-help.
-Get a pre-addressed mailscroll, mark it
-and write on it with the command:
+Get a pencil and be sure that you are able to use the literacy skill.  You can get both at the office; ask Betina for help.
+Get a pre-addressed mailscroll, mark it and write on it with the command:
 use_skill inscription <text>
 Multiple lines of text may be written.
-When done, drop the scroll in the
-mailbox and it will be sent.
+When done, drop the scroll in the mailbox and it will be sent.
 endmsg
 x 14
 y 1
@@ -1719,8 +1712,7 @@ end
 arch sign
 name Petitions for the DMs
 msg
-I am a talking board, designed for leaving messages for the DMs.
-If you don't know what to say, try help.
+I am a talking board, designed for leaving messages for the DMs.  If you don't know what to say, try help.
 endmsg
 x 14
 y 13
