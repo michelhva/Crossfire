@@ -9,7 +9,7 @@ enter_x 28
 enter_y 14
 msg
 Created:  2002-04-20 Todd Mitchell
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-01-04 Rick Tanner
 endmsg
 end
 arch dun_2_2_2
@@ -2916,9 +2916,8 @@ end
 arch letter
 msg
 Dear Renn,
-I am looking forward to your return home.
-I know it was a great opportunity for you to be a foreman on this construction job, but we miss you all the same.
-Your mom.
+I am looking forward to your return home. I know it was a great opportunity for you to be a foreman on this construction job, but we miss you all the same.
+ - Your mom.
 endmsg
 x 14
 y 27
@@ -3766,10 +3765,7 @@ x 18
 y 26
 arch note
 msg
-Today we finished building the crypt Jazeer has only to
-design the final traps which we are not to know of.
-The master has promised us a grand reward for this evening.
-I can hardly wait...
+Today we finished building the crypt Jazeer has only to design the final traps which we are not to know of.  The master has promised us a grand reward for this evening.  I can hardly wait...
 endmsg
 level 2
 material 0
