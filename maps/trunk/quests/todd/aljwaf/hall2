@@ -20,6 +20,9 @@ end
 arch dun_2_1_1
 y 2
 end
+arch swall_1_4_half
+y 3
+end
 arch dun_2_1_1
 y 3
 end
@@ -176,7 +179,7 @@ arch blackmarble
 x 1
 y 3
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 3
 end
@@ -533,11 +536,14 @@ end
 arch dun_2_1_2
 x 3
 end
+arch swall_1_1_half
+x 3
+end
 arch blackmarble
 x 3
 y 1
 end
-arch swall_0
+arch swall_1_2
 x 3
 y 1
 end
@@ -2097,11 +2103,14 @@ end
 arch dun_2_1_2
 x 11
 end
+arch swall_1_1_half
+x 11
+end
 arch blackmarble
 x 11
 y 1
 end
-arch swall_0
+arch swall_1_2
 x 11
 y 1
 end
@@ -2524,7 +2533,7 @@ arch blackmarble
 x 13
 y 3
 end
-arch swall_1_3
+arch swall_2_1_2
 x 13
 y 3
 end
@@ -2722,6 +2731,10 @@ x 14
 y 3
 end
 arch dun_2_1_1
+x 14
+y 3
+end
+arch swall_1_3_half
 x 14
 y 3
 end
