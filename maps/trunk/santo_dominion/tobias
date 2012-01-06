@@ -8,7 +8,7 @@ enter_x 5
 enter_y 22
 msg
 Created:  Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-12-02 Rick Tanner
+Modified: 2012-01-06 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1088,13 +1088,9 @@ arch sage
 name Tobias
 msg
 @match potion|reward
-Clean my tower and you'll
-get the potion.
+Clean my tower and you'll get the potion.
 @match *
-My sweet little tower has been infested
-by mice. They are everywhere. If you
-can get rid of this nuisance, I'll give
-you a magic power potions as reward.
+My sweet little tower has been infested by mice.  They are everywhere.  If you can get rid of this nuisance, I'll give you a magic power potions as reward.
 endmsg
 hp 200
 maxhp 200
@@ -4906,8 +4902,7 @@ arch magic_mouth
 name 4
 msg
 The Tobias says:
-Thank you very much for cleaning my
-tower! Here is your reward.
+Thank you very much for cleaning my tower! Here is your reward.
 endmsg
 x 25
 y 11
