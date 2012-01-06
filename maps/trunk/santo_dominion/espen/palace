@@ -8,7 +8,7 @@ enter_x 1
 enter_y 15
 msg
 Created:  1994-11-14
-Modified: 2009-07-07 Kevin Bulgrien
+Modified: 2012-01-06 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -6128,9 +6128,9 @@ arch woman
 name Lady Ramsdre
 msg
 @match block|stone
-It used to be opened, but closed when the clock was moved to the corner
+It used to be opened, but closed when the clock was moved to the corner.
 @match *
-How may I help you
+How may I help you?
 endmsg
 x 20
 y 27
