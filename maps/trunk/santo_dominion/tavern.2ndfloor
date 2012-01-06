@@ -6,7 +6,7 @@ width 33
 height 31
 msg
 Created:  Andreas Vogl (red.blaze@gmx.net)
-Modified: 2011-07-17 Nicolas Weeger
+Modified: 2012-01-06 Rick Tanner
 endmsg
 end
 arch grass
@@ -1035,9 +1035,7 @@ msg
 I'd like to sneak in there and steal Bonzo's money. But the guard never moves out. Damn it.
 @match *
 @question money And why is money important?
-Bonzo the Banker's room is on the opposite side of the corridor.
-
-I'm sure he wouldn't employ guards if there wasn't good money in there.
+Bonzo the Banker's room is on the opposite side of the corridor.  I'm sure he wouldn't employ guards if there wasn't good money in there.
 endmsg
 hp 500
 maxhp 500
@@ -1318,8 +1316,7 @@ end
 arch magic_mouth
 msg
 Bonzo the Banker says:
-Hey stranger - Stop right there!
-This money is mine. Don't touch it! Get out!!!
+Hey stranger - Stop right there! This money is mine. Don't touch it! Get out!!!
 endmsg
 food 1
 x 8
@@ -3197,8 +3194,7 @@ end
 arch locked_door2
 slaying no_key_available
 msg
-There's a note on the door:
-I am ill. Please do not disturb.
+There's a note on the door: I am ill.  Please do not disturb.
 endmsg
 face ldoor_white2.111
 x 18
@@ -3504,11 +3500,7 @@ arch book_clasp
 name history book
 msg
 ...
-After the great famine in the second year of
-Lord Byron's reign, the plan for a permanent
-mass food storage place was developed.
-The big barns were constructed east of
-St. Dominion.
+After the great famine in the second year of Lord Byron's reign, the plan for a permanent mass food storage place was developed.  The big barns were constructed east of St. Dominion.
 ...
 endmsg
 end
@@ -3691,15 +3683,7 @@ arch book_clasp
 name history book
 msg
 ...
-In the fifth year of Lord Byron's reign, St.
-Dominion fell to a surprise attack of wild and
-cruel monsters from the north. It turned out that
-the attackers were driven simply by lack of food
-in their homeland. So the farmers opened the
-barns which were filled to the roof with grain
-and dried meat. The lives of the townsmen were
-spared. Unfortunately, some monsters never
-returned to their homeland but stayed in the barns.
+In the fifth year of Lord Byron's reign, St. Dominion fell to a surprise attack of wild and cruel monsters from the north.  It turned out that the attackers were driven simply by lack of food in their homeland.  So the farmers opened the barns which were filled to the roof with grain and dried meat.  The lives of the townsmen were spared. Unfortunately, some monsters never returned to their homeland but stayed in the barns.
 ...
 endmsg
 end
@@ -3828,9 +3812,7 @@ You greedy... rascal... get me the cure first. *cough, cough*
 Shadow... vipers? Ask my friend about it. He might... know... *cough*
 @match *
 @question plate Your best plate mail, really?
-I got... poisoned by the... *cough* mudman. Please... help my friend... to mix a... cure... *cough*.
-
-If you do... I would... give you my... best plate mail.
+I got... poisoned by the... *cough* mudman. Please... help my friend... to mix a... cure... *cough*. If you do... I would... give you my... best plate mail.
 endmsg
 face corpse.111
 animation NONE
@@ -3872,10 +3854,7 @@ y 22
 end
 arch magic_mouth
 msg
-In the other room you see a warrior
-lying on the floor. His face is pale and
-gaunt, he is coughing. The poor guy
-seems to be very ill.
+In the other room you see a warrior lying on the floor.  His face is pale and gaunt, he is coughing.  The poor guy seems to be very ill.
 endmsg
 food 1
 x 21
@@ -3905,31 +3884,23 @@ arch mage
 name Warloc Druid
 msg
 @match viper
-A brood of shadow vipers exists somewhere down the well of St. Dominion.
-
-We've got only one well here in town, so you can't miss it. Anyways, be careful down there!
+A brood of shadow vipers exists somewhere down the well of St. Dominion.  We've got only one well here in town, so you can't miss it.  Anyways, be careful down there!
 @match mudman
-The mudman is a vile creature. He lurks in the marshes south-west of this town.
-
-It is said that in very dark nights, when no moon is shining, he leaves the swamp to sneak around our houses.
+The mudman is a vile creature.  He lurks in the marshes south-west of this town.  It is said that in very dark nights, when no moon is shining, he leaves the swamp to sneak around our houses.
 @match yes|cure|okay
 @question viper Where can I find a shadow viper?
 I'm still lacking three essential ingredients to mix a cure for my friend:
 - a beholder's tongue
 - a scorpion's stinger
 - skin of the shadow viper
-When you have the ingredients, put them into the cauldron here. As a reminder you can take the list of ingredients from the bookshelf with you.
+When you have the ingredients, put them into the cauldron here.  As a reminder you can take the list of ingredients from the bookshelf with you.
 @match help|gorgon|poison
 @question mudman What is the mudman?
 @reply yes Ok, I'll help.
-Gorgon is a mighty warrior. A week ago he went into the marshes looking for the mudman who dwells there.
-
-During battle, the mudman infected Gorgon with deadly poison. Gorgon fled, but his life is fading.
-
-Would you help me to create a cure for him?
+Gorgon is a mighty warrior.  A week ago he went into the marshes looking for the mudman who dwells there.  During battle, the mudman infected Gorgon with deadly poison.  Gorgon fled, but his life is fading.  Would you help me to create a cure for him?
 @match *
 @question help How can I help?
-Do you see my friend Gorgon in the other room? He got poisoned. We need your help!
+Do you see my friend Gorgon in the other room? He got poisoned.  We need your help!
 endmsg
 face mage.131
 hp 500
@@ -4040,11 +4011,7 @@ arch c_man
 name Sorcerer
 msg
 @match yes|story
-North of St. Dominion there is a huge tower, called the "Tower of Demonology".
-
-It has been a school for summoning wizards long ago. Someday, an evil shadow crept in there.
-
-Rumors tell that a group of wizards had abused their power to summon demons.
+North of St. Dominion there is a huge tower, called the "Tower of Demonology".  It has been a school for summoning wizards long ago. Someday, an evil shadow crept in there.  Rumors tell that a group of wizards had abused their power to summon demons.
 @match *
 @reply yes Sure, I always enjoy adventure stories.
 You look like you are seeking adventures. Care to hear a story?
@@ -4300,7 +4267,7 @@ y 17
 arch plate_mail
 title of dominion
 msg
-This plate mail is forged of high quality steel. It is lighter than usual but just as strong. It even seems to protect a little against fire.
+This plate mail is forged of high quality steel.  It is lighter than usual but just as strong.  It even seems to protect a little against fire.
 endmsg
 resist_fire 20
 value 5000
@@ -4854,8 +4821,7 @@ end
 arch northman
 msg
 @match *
-Come have a bite with me.
-This food is real good.
+Come have a bite with me.  This food is real good.
 endmsg
 x 26
 y 9
@@ -5488,11 +5454,7 @@ arch magic_mouth
 name 14 - done
 msg
 The Warlock Druid says:
-Hooray! The potion is completed. Now my friend Gorgon can be cured!
-
-Thank you very much!
-
-I'm sure Gorgon will reward you, go see him.
+Hooray! The potion is completed. Now my friend Gorgon can be cured! Thank you very much! I'm sure Gorgon will reward you, go see him.
 endmsg
 x 29
 y 26
@@ -5740,7 +5702,7 @@ arch fighter
 name Gorgon the Warrior
 msg
 @match *
-Thank you for saving me. You shall have my famous plate mail as reward. It's in the chest right there.
+Thank you for saving me.  You shall have my famous plate mail as reward.  It's in the chest right there.
 endmsg
 x 30
 y 28
