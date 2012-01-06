@@ -7,7 +7,7 @@ height 40
 enter_x 8
 enter_y 1
 msg
-Modified: 2008-10-25 Rick Tanner
+Modified: 2012-01-06 Rick Tanner
 endmsg
 end
 arch afloor_left
@@ -24,7 +24,7 @@ y 1
 end
 arch afloor_left
 name floor
-y 2
+iy 2
 end
 arch bwall_2_1_1
 y 2
@@ -2697,7 +2697,7 @@ y 20
 end
 arch sign_e
 msg
-Hello, nice day is it not
+Hello, nice day is it not?
 endmsg
 x 10
 y 20
