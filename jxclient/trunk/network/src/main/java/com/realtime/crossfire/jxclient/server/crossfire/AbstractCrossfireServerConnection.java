@@ -109,12 +109,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     private final EventListenerList2<CrossfireComcListener> crossfireComcListeners = new EventListenerList2<CrossfireComcListener>(CrossfireComcListener.class);
 
     /**
-     * The {@link CrossfireFaceListener CrossfireFaceListeners} to be notified.
-     */
-    @NotNull
-    private final EventListenerList2<CrossfireFaceListener> crossfireFaceListeners = new EventListenerList2<CrossfireFaceListener>(CrossfireFaceListener.class);
-
-    /**
      * The {@link ReceivedPacketListener ReceivedPacketListeners} to be
      * notified.
      */
@@ -272,14 +266,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * {@inheritDoc}
      */
     @Override
-    public void addCrossfireFaceListener(@NotNull final CrossfireFaceListener listener) {
-        crossfireFaceListeners.add(listener);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void addPacketWatcherListener(@NotNull final ReceivedPacketListener listener) {
         receivedPacketListeners.add(listener);
     }
@@ -408,9 +394,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
 
     protected void fireFaceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, @NotNull final String faceName) {
         model.getFaceCache().addFace(faceNum, faceSetNum, faceChecksum, faceName);
-        for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners.getListeners()) {
-            crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
-        }
     }
 
     protected void fireFailure(@NotNull final String command, @NotNull final String arguments) {
