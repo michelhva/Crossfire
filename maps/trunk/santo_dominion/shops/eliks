@@ -10,7 +10,7 @@ enter_x 20
 enter_y 12
 msg
 Created:  1994-05-12
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-01-07 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1509,8 +1509,7 @@ msg
 @match yes|no
 Elik has tasted everything. *burp*
 @match *
-The food here is the best!
-You know why Elik is so sure?
+The food here is the best! You know why Elik is so sure?
 endmsg
 hp 100
 maxhp 100
