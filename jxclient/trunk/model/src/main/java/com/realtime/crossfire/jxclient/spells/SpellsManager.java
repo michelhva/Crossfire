@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  * Copyright (C) 2005-2008 Yann Chachkoff.
- * Copyright (C) 2006-2011 Andreas Kirschbaum.
+ * Copyright (C) 2006-2012 Andreas Kirschbaum.
  */
 
 package com.realtime.crossfire.jxclient.spells;
@@ -24,9 +24,11 @@ package com.realtime.crossfire.jxclient.spells;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
+import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -38,7 +40,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Manages all known spells.
+ * Manages all known spells. Spells are filtered by skill through the function filterSkill().
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
@@ -64,6 +66,11 @@ public class SpellsManager implements Iterable<Spell> {
      */
     @NotNull
     private final List<Spell> spells = new CopyOnWriteArrayList<Spell>();
+
+    @NotNull
+    private final List<Spell> filteredSpells = new CopyOnWriteArrayList<Spell>();
+
+    private int skillFilter = -1;
 
     /**
      * All unknown spells that have been referenced before. Maps spell name to
@@ -111,6 +118,8 @@ public class SpellsManager implements Iterable<Spell> {
         @Override
         public void connecting(@NotNull final String serverInfo) {
             spells.clear();
+            spellSkills.clear();
+            filteredSpells.clear();
         }
 
         @Override
@@ -139,6 +148,26 @@ public class SpellsManager implements Iterable<Spell> {
      * The {@link Stats} for the player.
      */
     private final Stats stats;
+
+    /**
+     * Dummy skill for "all skills".
+     */
+    private final Skill skillAll = new Skill("All skills");
+
+    /**
+     * Skills used by the spell, including the "all" skill.
+     */
+    private final List<Skill> spellSkills = new ArrayList<Skill>();
+
+    /**
+     * Compare 2 skills.
+     */
+    private final Comparator<Skill> skillComparator = new Comparator<Skill>() {
+
+        public int compare(Skill o1, Skill o2) {
+            return o1.toString().compareTo(o2.toString());
+        }
+    };
 
     /**
      * Creates a new instance.
@@ -207,6 +236,9 @@ public class SpellsManager implements Iterable<Spell> {
             spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
         }
 
+        rebuildSkills();
+        filterSpells();
+
         for (final SpellsManagerListener listener : listeners.getListeners()) {
             listener.spellAdded(index);
         }
@@ -242,6 +274,8 @@ public class SpellsManager implements Iterable<Spell> {
             }
             index++;
         }
+        rebuildSkills();
+        filterSpells();
     }
 
     /**
@@ -259,6 +293,8 @@ public class SpellsManager implements Iterable<Spell> {
         }
 
         spell.setUnknown(true);
+
+        rebuildSkills();
     }
 
     /**
@@ -288,7 +324,7 @@ public class SpellsManager implements Iterable<Spell> {
      */
     @Override
     public Iterator<Spell> iterator() {
-        return Collections.unmodifiableList(spells).iterator();
+        return Collections.unmodifiableList(filteredSpells).iterator();
     }
 
     /**
@@ -296,7 +332,7 @@ public class SpellsManager implements Iterable<Spell> {
      * @return the number of spells
      */
     public int getSpells() {
-        return spells.size();
+        return filteredSpells.size();
     }
 
     /**
@@ -306,7 +342,7 @@ public class SpellsManager implements Iterable<Spell> {
      */
     @Nullable
     public Spell getSpell(final int index) {
-        return 0 <= index && index < spells.size() ? spells.get(index) : null;
+        return 0 <= index && index < filteredSpells.size() ? filteredSpells.get(index) : null;
     }
 
     /**
@@ -329,6 +365,74 @@ public class SpellsManager implements Iterable<Spell> {
      */
     public void selectCharacter() {
         spells.clear();
+        filteredSpells.clear();
     }
 
+    /**
+     * Filter spells to display by the specified skill index.
+     * @param index skill index, should be less than getSpellSkills().
+     */
+    public void filterSkill(int index) {
+
+        if (index < 0 || index >= spellSkills.size()) {
+            index = 0;
+        }
+
+        final int id = skillSet.getSkillId(spellSkills.get(index).toString());
+
+        if (skillFilter == id) {
+            return;
+        }
+
+        skillFilter = id;
+        filterSpells();
+        
+        for (final SpellsManagerListener listener : listeners.getListeners()) {
+            listener.spellAdded(0);
+        }
+    }
+
+    /**
+     * Rebuild the list of spells to display.
+     */
+    protected void filterSpells() {
+        filteredSpells.clear();
+        for (final Spell spell : spells) {
+            if (skillFilter == -1 || spell.getSkill() == skillFilter) {
+                filteredSpells.add(spell);
+            }
+        }
+    }
+
+    /**
+     * Rebuild the list of skills from the spells.
+     */
+    protected void rebuildSkills() {
+        spellSkills.clear();
+        for (final Spell spell : spells) {
+            final Skill skill = skillSet.getSkill(spell.getSkill());
+            if (skill != null && !spellSkills.contains(skill))
+                spellSkills.add(skill);
+        }
+        Collections.sort(spellSkills, skillComparator);
+        spellSkills.add(0, skillAll);
+    }
+
+    /**
+     * Return the number of spell skills.
+     * @return number of skills.
+     */
+    public int getSpellSkills() {
+        return spellSkills.size();
+    }
+
+    /**
+     * Get the specified spell skill.
+     * @param index skill index, from 0 to getSpellSkills().
+     * @return specified skill, null if index is invalid.
+     */
+    @Nullable
+    public Skill getSpellSkill(int index) {
+        return 0 <= index && index < spellSkills.size() ? spellSkills.get(index) : null;
+    }
 }

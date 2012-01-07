@@ -22,6 +22,8 @@
 package com.realtime.crossfire.jxclient.skin.io;
 
 import com.realtime.crossfire.jxclient.account.CharacterModel;
+import com.realtime.crossfire.jxclient.faces.FaceImages;
+import com.realtime.crossfire.jxclient.faces.FaceImagesUtils;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.faces.FacesProviderFactory;
@@ -55,6 +57,7 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemQuestListFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpell;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpellListFactory;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemSpellSkillFactory;
 import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
@@ -76,6 +79,7 @@ import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.list.GUIQuestList;
 import com.realtime.crossfire.jxclient.gui.list.GUISpellList;
+import com.realtime.crossfire.jxclient.gui.list.GUISpellSkillList;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
@@ -99,6 +103,7 @@ import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.QuestsView;
+import com.realtime.crossfire.jxclient.items.SpellSkillView;
 import com.realtime.crossfire.jxclient.items.SpellsView;
 import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
@@ -192,7 +197,11 @@ public class JXCSkinLoader {
         /**
          * Create a {@link GUIQuestList} instance.
          */
-        QUEST
+        QUEST,
+        /**
+         * Create a {@link GUISpellSkillList} instance
+         */
+        SPELL_SKILLS
     }
 
     /**
@@ -223,6 +232,12 @@ public class JXCSkinLoader {
      */
     @NotNull
     private final SpellsView spellView;
+
+    /**
+     * The {@link SpellSkillView} to use.
+     */
+    @NotNull
+    private final SpellSkillView spellSkillsView;
 
     /**
      * The {@link QuestsView} to use.
@@ -417,11 +432,12 @@ public class JXCSkinLoader {
      * @param commandHistoryFactory the command history factory to us
      * @param questsManager the quests manager instance to use
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
         this.spellView = spellView;
+        this.spellSkillsView = spellSkillsView;
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         this.defaultTileSize = defaultTileSize;
@@ -669,6 +685,8 @@ public class JXCSkinLoader {
                             parseList(args, ListType.GROUND, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("spells_list")) {
                             parseList(args, ListType.SPELL, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                        } else if (gui != null && cmd.equals("spell_skills")) {
+                            parseList(args, ListType.SPELL_SKILLS, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("quests_list")) {
                             parseList(args, ListType.QUEST, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("horizontal")) {
@@ -1237,6 +1255,12 @@ public class JXCSkinLoader {
         case QUEST:
             final GUIItemItemFactory questItemFactory = new GUIItemQuestListFactory(tooltipManager, elementListener, name, itemPainter, facesManager, questsManager, questView);
             element = new GUIQuestList(tooltipManager, elementListener, name, cellWidth, cellHeight, questView, selectedItem, questItemFactory, questsManager);
+            break;
+
+        case SPELL_SKILLS:
+            final FaceImages defaultSkillIcon = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(ResourceUtils.ALL_SPELL_SKILLS_ICON));
+            final GUIItemItemFactory spellSkillItemFactory = new GUIItemSpellSkillFactory(tooltipManager, elementListener, name, itemPainter, facesManager, spellsManager, spellSkillsView, defaultSkillIcon);
+            element = new GUISpellSkillList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellSkillsView, selectedItem, spellSkillItemFactory, spellsManager);
             break;
 
         default:

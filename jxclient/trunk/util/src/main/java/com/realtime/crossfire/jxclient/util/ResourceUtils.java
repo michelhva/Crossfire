@@ -57,6 +57,11 @@ public class ResourceUtils {
     public static final String APPLICATION_ICON = "application_icon.png";
 
     /**
+     * The resource name for the default skill face.
+     */
+    @NotNull
+    public static final String ALL_SPELL_SKILLS_ICON = "all_spell_skills_icon.png";
+    /**
      * Private constructor to prevent instantiation.
      */
     private ResourceUtils() {
