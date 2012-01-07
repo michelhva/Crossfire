@@ -142,12 +142,6 @@ public interface CrossfireServerConnection extends AskfaceQueue, ServerConnectio
     void addCrossfireComcListener(@NotNull CrossfireComcListener listener);
 
     /**
-     * Adds a listener to be notified about received face commands.
-     * @param listener the listener to add
-     */
-    void addCrossfireFaceListener(@NotNull CrossfireFaceListener listener);
-
-    /**
      * Adds a listener to be notified about received "pickup" messages.
      * @param listener the listener to add
      */
