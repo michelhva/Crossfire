@@ -1123,7 +1123,7 @@ public class JXCSkinLoader {
             skin.addSkinEvent(new MapScrollSkinEvent(commandList, mapUpdaterState));
         } else if (type.equals("skill")) {
             final String subtype = args.get();
-            final Skill skill = skillSet.getNamedSkill(args.get().replaceAll("_", " "));
+            final Skill skill = skillSet.getNamedSkill(args.get().replaceAll("_", " "), -1);
             final CommandList commandList = skin.getCommandList(args.get());
             if (subtype.equals("add")) {
                 skin.addSkinEvent(new SkillAddedSkinEvent(commandList, skill));

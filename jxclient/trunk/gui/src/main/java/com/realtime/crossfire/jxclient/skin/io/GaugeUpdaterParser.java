@@ -85,7 +85,7 @@ public class GaugeUpdaterParser {
         }
 
         if (name.startsWith("SKILL_")) {
-            return new SkillGaugeUpdater(experienceTable, skillSet.getNamedSkill(name.substring(6).replaceAll("_", " ")));
+            return new SkillGaugeUpdater(experienceTable, skillSet.getNamedSkill(name.substring(6).replaceAll("_", " "), -1));
         }
 
         if (name.startsWith("ACTIVE_SKILL_")) {

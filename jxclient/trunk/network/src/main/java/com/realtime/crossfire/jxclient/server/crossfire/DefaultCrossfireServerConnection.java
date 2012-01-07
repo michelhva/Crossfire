@@ -1860,8 +1860,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                             break;
                         }
 
-                        final String[] sk = PATTERN_DOT.split(r, 2);
-                        if (sk.length != 2) {
+                        final String[] sk = PATTERN_DOT.split(r, 3);
+                        if (sk.length < 2 || sk.length > 3) {
                             System.err.println("Ignoring skill definition for invalid skill: "+r+".");
                             continue;
                         }
@@ -1879,7 +1879,16 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                             continue;
                         }
 
-                        model.getSkillSet().addSkill(skillId, sk[1]);
+                        int face = -1;
+                        if (sk.length > 2) {
+                            try {
+                                face = Integer.parseInt(sk[2]);
+                            } catch (final NumberFormatException ignored) {
+                                System.err.println("Ignoring skill definition for invalid face: "+r+".");
+                                continue;
+                            }
+                        }
+                        model.getSkillSet().addSkill(skillId, sk[1], face);
                     }
                 } finally {
                     d.close();
@@ -2892,7 +2901,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (options.size() != 2 || !options.get(0).equals("mapsize") && !options.get(0).equals("num_look_objects")) {
             setClientSocketState(ClientSocketState.SETUP, ClientSocketState.REQUESTINFO);
             sendRequestinfo("image_info");
-            sendRequestinfo("skill_info");
+            sendRequestinfo("skill_info 1");
             sendRequestinfo("exp_table");
             sendToggleextendedtext(MessageTypes.getAllTypes());
         }

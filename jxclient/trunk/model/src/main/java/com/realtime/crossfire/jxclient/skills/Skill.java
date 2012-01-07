@@ -44,6 +44,11 @@ public class Skill {
     private final String name;
 
     /**
+     * The skill's face number.
+     */
+    private int face = -1;
+
+    /**
      * The skill experience.
      */
     private long experience = 0;
@@ -91,6 +96,22 @@ public class Skill {
      */
     public int getLevel() {
         return level;
+    }
+
+    /**
+     * Returns the skill's face.
+     * @return face number, -1 if no face defined.
+     */
+    public int getFace() {
+        return face;
+    }
+
+    /**
+     * Defines the skill's face.
+     * @param face new face index.
+     */
+    public void setFace(int face) {
+        this.face = face;
     }
 
     /**
