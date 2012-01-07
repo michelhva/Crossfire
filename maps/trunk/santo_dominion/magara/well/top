@@ -9,7 +9,7 @@ enter_x 15
 enter_y 14
 msg
 Created:  2002-08-23 Andreas Vogl
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2012-01-06 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -2844,9 +2844,7 @@ move_block 0
 end
 arch magic_mouth
 msg
-The way is flooded with water ahead.
-You'll have to walk against the stream to
-get to the other side.
+The way is flooded with water ahead.  You'll have to walk against the stream to get to the other side.
 endmsg
 x 20
 y 12
