@@ -114,11 +114,12 @@ public class SkillSet {
      * Adds a new skill to the list of known skills.
      * @param id the numerical identifier for the new skill
      * @param skillName the skill name
+     * @param face the skill's face
      */
-    public void addSkill(final int id, @NotNull final String skillName) {
+    public void addSkill(final int id, @NotNull final String skillName, final int face) {
         final int index = id-Stats.CS_STAT_SKILLINFO;
         final Skill oldSkill = numberedSkills[index];
-        final Skill newSkill = getNamedSkill(skillName);
+        final Skill newSkill = getNamedSkill(skillName, face);
         if (oldSkill == newSkill) {
             return;
         }
@@ -132,15 +133,18 @@ public class SkillSet {
     /**
      * Returns the skill instance for a given skill name.
      * @param skillName the skill name to look up
+     * @param face the skill face to set.
      * @return the skill instance
      */
-    public Skill getNamedSkill(final String skillName) {
+    public Skill getNamedSkill(final String skillName, final int face) {
         final Skill oldSkill = namedSkills.get(skillName);
         if (oldSkill != null) {
+            oldSkill.setFace(face);
             return oldSkill;
         }
 
         final Skill newSkill = new Skill(skillName);
+        newSkill.setFace(face);
         namedSkills.put(skillName, newSkill);
         return newSkill;
     }
