@@ -26,7 +26,7 @@ maxsp 75
 exp 20000
 dam 20
 wc -10
-ac -8
+ac -4
 y 2
 speed 0.200000
 level 13
@@ -56,7 +56,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 y 4
 speed -0.7
 level 20
@@ -87,7 +87,7 @@ maxhp 2000
 exp 35000
 dam 20
 wc -20
-ac -15
+ac -7
 y 7
 speed -0.800000
 level 20
@@ -127,7 +127,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 1
 y 2
 speed 0.4
@@ -155,7 +155,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 1
 y 4
 speed -0.4
@@ -183,7 +183,7 @@ maxsp 100
 exp 50000
 dam 20
 wc -10
-ac -8
+ac -4
 x 1
 y 7
 speed -0.400000
@@ -223,7 +223,7 @@ maxsp 30
 exp 20000
 dam 20
 wc -10
-ac -8
+ac -4
 x 2
 speed 0.200000
 level 13
@@ -260,7 +260,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 2
 y 1
 speed 0.400000
@@ -292,7 +292,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 2
 y 4
 speed -0.400000
@@ -326,7 +326,7 @@ maxsp 150
 exp 100000
 dam 25
 wc -20
-ac -12
+ac -6
 x 2
 y 7
 speed -0.400000
@@ -364,7 +364,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 3
 y 2
 speed 0.400000
@@ -406,7 +406,7 @@ maxsp 30
 exp 20000
 dam 20
 wc -10
-ac -8
+ac -4
 x 4
 y 2
 speed 0.200000
@@ -450,7 +450,7 @@ maxsp 20
 exp 100000
 dam 40
 wc -15
-ac -10
+ac -5
 x 5
 y 4
 speed -0.350000
@@ -479,7 +479,7 @@ maxhp 8000
 exp 150000
 dam 50
 wc -15
-ac -10
+ac -5
 x 5
 y 7
 speed -0.400000
@@ -500,7 +500,7 @@ maxsp 150
 exp 50000
 dam 25
 wc -15
-ac -13
+ac -6
 x 6
 level 25
 resist_magic 100
@@ -535,7 +535,7 @@ maxsp 100
 exp 35000
 dam 20
 wc -10
-ac -8
+ac -4
 x 6
 y 2
 speed -0.4
@@ -563,7 +563,7 @@ maxsp 300
 exp 200000
 dam 25
 wc -20
-ac -15
+ac -7
 x 6
 y 4
 speed -0.400000
@@ -594,7 +594,7 @@ maxsp 200
 exp 200000
 dam 25
 wc -20
-ac -15
+ac -7
 x 6
 y 7
 speed -0.600000
@@ -629,7 +629,7 @@ maxsp 200
 exp 300000
 dam 40
 wc -35
-ac -30
+ac -15
 x 7
 y 4
 speed -0.4
@@ -658,7 +658,7 @@ maxsp 300
 exp 300000
 dam 25
 wc -30
-ac -25
+ac -18
 x 7
 y 7
 speed -0.400000
@@ -698,7 +698,7 @@ maxsp 200
 exp 700000
 dam 60
 wc -50
-ac -40
+ac -17
 x 8
 y 4
 speed -0.7
@@ -731,7 +731,7 @@ maxsp 500
 exp 750000
 dam 40
 wc -45
-ac -60
+ac -19
 x 8
 y 6
 speed 0.900000
@@ -779,7 +779,7 @@ sp 500
 maxsp 500
 exp 1000000
 dam 80
-ac -40
+ac -17
 x 10
 y 4
 speed -0.600000
@@ -844,7 +844,7 @@ maxsp 250
 exp 1000000
 dam 85
 wc -50
-ac -40
+ac -17
 x 10
 y 7
 speed -0.5
@@ -907,7 +907,7 @@ maxsp 1000
 exp 3000000
 dam 80
 wc -70
-ac -60
+ac -19
 x 12
 y 5
 speed 1.0
