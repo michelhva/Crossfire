@@ -4316,12 +4316,13 @@ maxhp 14000
 exp 1500000
 dam 60
 wc -40
-ac -10
+ac -5
 x 12
 y 12
 speed 0.4
 level 120
 randomitems high_angel
+will_apply 14
 end
 arch marble
 x 12
@@ -4464,12 +4465,13 @@ maxhp 14000
 exp 1500000
 dam 60
 wc -40
-ac -10
+ac -5
 x 12
 y 44
 speed 0.4
 level 120
 randomitems high_angel
+will_apply 14
 end
 arch marble
 x 12
@@ -8965,7 +8967,7 @@ hp 26000
 sp 1000
 maxsp 500
 exp 5000000
-ac -40
+ac -15
 x 28
 y 25
 speed 0.7
@@ -8986,6 +8988,7 @@ resist_godpower 50
 resist_holyword 100
 path_attuned 8
 randomitems prayer_book_high
+will_apply 14
 run_away 20
 arch skill_two_handed_weapon
 end
@@ -14053,12 +14056,13 @@ maxhp 14000
 exp 1500000
 dam 60
 wc -40
-ac -10
+ac -5
 x 45
 y 12
 speed 0.4
 level 120
 randomitems high_angel
+will_apply 14
 end
 arch blackmarble
 x 45
@@ -14208,12 +14212,13 @@ maxhp 14000
 exp 1500000
 dam 60
 wc -40
-ac -10
+ac -5
 x 45
 y 44
 speed 0.4
 level 120
 randomitems high_angel
+will_apply 14
 end
 arch blackmarble
 x 45
