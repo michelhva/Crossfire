@@ -1,7 +1,7 @@
 arch map
 name Scrolls Galore
 reset_timeout 3600
-difficulty 50
+difficulty 18
 region brest
 shopitems scroll:95;armour improver:95;weapon improver:95;skillscroll:95;spellbook:50;*:-100
 shopgreed 1.00000
@@ -4929,7 +4929,7 @@ maxsp 500
 exp 2000000
 dam 85
 wc -100
-ac -120
+ac -30
 x 17
 y 32
 speed 1.5
