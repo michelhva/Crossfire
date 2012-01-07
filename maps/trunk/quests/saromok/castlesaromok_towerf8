@@ -698,7 +698,7 @@ maxsp 5000
 exp 800000
 dam 0
 wc 0
-ac -20
+ac -5
 x 7
 y 4
 speed -0.5
@@ -796,7 +796,7 @@ maxsp 0
 exp 800000
 dam 1
 wc 0
-ac -20
+ac -5
 x 7
 y 10
 speed -0.5
@@ -844,7 +844,7 @@ maxhp 30000
 exp 1
 dam 20
 wc -35
-ac -35
+ac -9
 speed -0.5
 level 200
 attacktype 256
