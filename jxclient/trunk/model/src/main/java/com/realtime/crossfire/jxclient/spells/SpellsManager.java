@@ -375,7 +375,7 @@ public class SpellsManager implements Iterable<Spell> {
     public void filterSkill(int index) {
 
         if (index < 0 || index >= spellSkills.size()) {
-            index = 0;
+            return;
         }
 
         final int id = skillSet.getSkillId(spellSkills.get(index).toString());
