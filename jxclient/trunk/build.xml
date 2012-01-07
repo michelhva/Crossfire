@@ -74,6 +74,7 @@
             <fileset dir="." includes="resource/spells/*.png"/>
             <fileset dir="." includes="resource/splashscreen.png"/>
             <fileset dir="." includes="resource/unknown.png"/>
+            <fileset dir="." includes="resource/all_spell_skills_icon.png"/>
             <fileset dir="${build}/skins"/>
             <fileset dir="${build.properties.dir}" includes="build.properties"/>
             <manifest>
