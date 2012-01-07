@@ -167,4 +167,11 @@ public class SkillSet {
         return numberedSkills[id-Stats.CS_STAT_SKILLINFO];
     }
 
+    public int getSkillId(final String name) {
+        for (int i = 0; i < numberedSkills.length; i++) {
+            if (numberedSkills[i] != null && numberedSkills[i].toString().equals(name))
+                return i + Stats.CS_STAT_SKILLINFO;
+        }
+        return -1;
+    }
 }

@@ -16,7 +16,9 @@ commandlist command_spells_next AND
 #label_text label_weight_sep   font_label BLACK /
 #label_stat label_weight_limit font_label BLACK WEIGHT_LIMIT LEFT
 label_text spell_item          font_label BLACK
+label_text spell_skills_label  font_label BLACK Skills:_
 
+spell_skills skills 32 32 null
 spells_list spells 32 32 spell_item
 
 button     slider_up     slider_up_up slider_up_down true command_spells_scroll_up
@@ -65,6 +67,10 @@ event connect command_spells_reset
 
 horizontal begin par
   begin seq
+    spell_skills_label 40
+    skills
+  end
+  begin seq
     spells 480
     begin par
       slider_up
@@ -78,7 +84,11 @@ end
 
 vertical begin seq
   begin par
-    spells 128
+    spell_skills_label 32
+    skills 32
+  end
+  begin par
+    spells 96
     begin seq
       slider_up
       gap
