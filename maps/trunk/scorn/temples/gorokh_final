@@ -320,7 +320,7 @@ hp 20000
 maxhp 200000
 dam 50
 wc -50
-ac -90
+ac -23
 y 59
 speed 0.95
 level 200
@@ -1144,7 +1144,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 2
 y 59
 speed 0.95
@@ -1255,7 +1255,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 2
 y 60
 speed 0.95
@@ -1718,7 +1718,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 3
 y 59
 speed 0.95
@@ -1829,7 +1829,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 3
 y 60
 speed 0.95
@@ -2291,7 +2291,7 @@ hp 20000
 maxhp 200000
 dam 50
 wc -50
-ac -90
+ac -23
 x 4
 y 59
 speed 0.95
@@ -3038,7 +3038,7 @@ arch generate_devil
 hp 4000
 maxhp 4000
 exp 1800
-ac -50
+ac -13
 x 6
 y 46
 level 50
@@ -3052,7 +3052,7 @@ sp 500
 maxsp 500
 exp 1000
 wc -30
-ac -35
+ac -18
 speed 0.2
 level 80
 attacktype 1064961
@@ -3128,7 +3128,7 @@ arch generate_devil
 hp 4000
 maxhp 4000
 exp 1800
-ac -50
+ac -13
 x 6
 y 52
 level 50
@@ -3142,7 +3142,7 @@ sp 500
 maxsp 500
 exp 1000
 wc -30
-ac -35
+ac -18
 speed 0.2
 level 80
 attacktype 1064961
@@ -3225,7 +3225,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 6
 y 59
 speed 0.95
@@ -3336,7 +3336,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 6
 y 60
 speed 0.95
@@ -3516,7 +3516,7 @@ end
 arch Greater_Demon
 name Quargh, cousin of Gorokh
 exp 700000
-ac -30
+ac -9
 x 7
 y 13
 speed 0.5
@@ -3808,7 +3808,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 7
 y 59
 speed 0.95
@@ -3919,7 +3919,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 7
 y 60
 speed 0.95
@@ -4412,7 +4412,7 @@ hp 20000
 maxhp 200000
 dam 50
 wc -50
-ac -90
+ac -23
 x 8
 y 59
 speed 0.95
@@ -5301,7 +5301,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 10
 y 59
 speed 0.95
@@ -5412,7 +5412,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 10
 y 60
 speed 0.95
@@ -5893,7 +5893,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 11
 y 59
 speed 0.95
@@ -6004,7 +6004,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 11
 y 60
 speed 0.95
@@ -6388,7 +6388,7 @@ arch generate_devil
 hp 4000
 maxhp 4000
 exp 1800
-ac -50
+ac -13
 x 12
 y 46
 level 50
@@ -6402,7 +6402,7 @@ sp 500
 maxsp 500
 exp 1000
 wc -30
-ac -35
+ac -18
 speed 0.2
 level 80
 attacktype 1064961
@@ -6478,7 +6478,7 @@ arch generate_devil
 hp 4000
 maxhp 4000
 exp 1800
-ac -50
+ac -23
 x 12
 y 52
 level 50
@@ -6492,7 +6492,7 @@ sp 500
 maxsp 500
 exp 1000
 wc -30
-ac -35
+ac -18
 speed 0.2
 level 80
 attacktype 1064961
@@ -6936,7 +6936,7 @@ hp 20000
 maxhp 200000
 dam 50
 wc -50
-ac -90
+ac -23
 x 13
 y 59
 speed 0.95
@@ -7752,7 +7752,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 15
 y 59
 speed 0.95
@@ -7863,7 +7863,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 15
 y 60
 speed 0.95
@@ -8316,7 +8316,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 16
 y 59
 speed 0.95
@@ -8427,7 +8427,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 16
 y 60
 speed 0.95
@@ -8877,7 +8877,7 @@ hp 20000
 maxhp 200000
 dam 50
 wc -50
-ac -90
+ac -23
 x 17
 y 59
 speed 0.95
@@ -9675,7 +9675,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 19
 y 59
 speed 0.95
@@ -9786,7 +9786,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 19
 y 60
 speed 0.95
@@ -10108,7 +10108,7 @@ end
 arch Greater_Demon
 name Snargh, cousin of Gorokh
 exp 700000
-ac -30
+ac -9
 x 20
 y 40
 speed 0.5
@@ -10238,7 +10238,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 20
 y 59
 speed 0.95
@@ -10349,7 +10349,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 20
 y 60
 speed 0.95
@@ -10793,7 +10793,7 @@ hp 20000
 maxhp 200000
 dam 50
 wc -50
-ac -90
+ac -23
 x 21
 y 59
 speed 0.95
@@ -11444,7 +11444,7 @@ sp 900
 maxsp 900
 exp 5000000
 wc -40
-ac -40
+ac -10
 x 23
 y 31
 speed 0.7
@@ -11758,7 +11758,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 23
 y 59
 speed 0.95
@@ -11869,7 +11869,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 23
 y 60
 speed 0.95
@@ -12319,7 +12319,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 24
 y 59
 speed 0.95
@@ -12430,7 +12430,7 @@ maxhp 200000
 exp 600000
 dam 50
 wc -50
-ac -90
+ac -23
 x 24
 y 60
 speed 0.95
@@ -18169,7 +18169,7 @@ end
 arch Greater_Demon
 name Tlargh, cousin of Gorokh
 exp 700000
-ac -30
+ac -9
 x 41
 y 36
 speed 0.5
