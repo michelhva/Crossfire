@@ -111,7 +111,7 @@ print("Done.");]]></code>
   <parameter>
     <name>baseDirectory</name>
     <description>Base Directory</description>
-    <type>java.lang.String</type>
+    <type>MapPathParameter</type>
     <value>/</value>
   </parameter>
 </script>
