@@ -9,7 +9,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2006-05-26 Bort
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-01-08 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -653,8 +653,7 @@ y 3
 end
 arch magic_mouth
 msg
-There seems to be a lot of smoke.
-Was something burning?
+There seems to be a lot of smoke.  Was something burning?
 endmsg
 food 1
 x 6
@@ -674,8 +673,7 @@ y 5
 end
 arch magic_mouth
 msg
-There seems to be a lot of smoke.
-Was something burning?
+There seems to be a lot of smoke.  Was something burning?
 endmsg
 food 1
 x 6
