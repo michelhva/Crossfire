@@ -8,7 +8,7 @@ enter_x 11
 enter_y 1
 msg
 Created:  2003-04-27 Avion
-Modified: 2010-04-01 Cavesomething
+Modified: 2012-01-08 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -575,9 +575,7 @@ msg
 @match landlord|Witherspoon
 Yes old man Witherspoon is a real slum lord.
 @match move|leave|Move
-Bugs aren't so bad,
-you should see the other
-slums around here
+Bugs aren't so bad, you should see the other slums around here.
 @match *
 I told the landlord about the bugs, but he's a tightwad.
 endmsg
@@ -2181,8 +2179,7 @@ end
 arch sign_w
 msg
 **CornerBrook Estates**
-Highly Desirable Condominimums at
-Afordable Rates.
+Highly Desirable Condominimums at Afordable Rates.
 endmsg
 x 14
 end
@@ -2711,20 +2708,13 @@ arch sailor
 name Swabbie
 msg
 @match mark
-Ya I know him,
-he told me not to tell anyone he was
-at Goth..Oh you said 'Mark'...
-I never heard of him.
+Ya I know him, he told me not to tell anyone he was at Goth..Oh you said 'Mark'... I never heard of him.
 @match wife|married
-Can't cook, can't clean and keeps
-stabbin me alla time.
-Never marry a pirate lass...
+Can't cook, can't clean and keeps stabbin me alla time.  Never marry a pirate lass...
 @match sheep|Chancy
-Chancy is my pet sheep, and don't you make any
-wise cracks about it.
+Chancy is my pet sheep, and don't you make any wise cracks about it.
 @match *
-I never should have married her.
-I should have stayed at sea.
+I never should have married her.  I should have stayed at sea.
 endmsg
 x 17
 y 8
@@ -3052,13 +3042,9 @@ msg
 @match ahoy
 Hey sailor, want some treasure?
 @match old|pirate|Swabbie
-I shouldn't have married him,
-I should have stuck with Tomasso the Pirate.
-I hear he found a treasure map.
+I shouldn't have married him, I should have stuck with Tomasso the Pirate.  I hear he found a treasure map.
 @match tomasso|map
-There was a real pirate,
-he set sail for Port Joseph.
-Said he found a treasure map.
+There was a real pirate, he set sail for Port Joseph.  Said he found a treasure map.
 @match *
 Never marry an old pirate..
 endmsg
@@ -3546,8 +3532,7 @@ end
 arch magic_ear
 msg
 @match mumblypeg
-Bah!  Baaah!
-(I think he wants you to follow him...)
+Bah!  Baaah! (I think he wants you to follow him...)
 endmsg
 x 22
 y 9
@@ -3619,12 +3604,9 @@ msg
 @match staff|walking
 Yup lost my walking stick - have ya seen it?
 @match stick
-Ya say yer sick?  That's a darn shame!
-I get a touch of the wind myself sometimes...
+Ya say yer sick?  That's a darn shame! I get a touch of the wind myself sometimes...
 @match ear
-You looking for deer?
-Used to be a woodsman myself.
-Try the woods to the east - lots of game there...
+You looking for deer? Used to be a woodsman myself.  Try the woods to the east - lots of game there...
 match woods|east
 Don't mumble - out with it now...
 @match *
