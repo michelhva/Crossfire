@@ -8,7 +8,7 @@ enter_x 19
 enter_y 1
 msg
 Created:  2000-11-11 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-08 Rick Tanner
 endmsg
 end
 arch exit
@@ -3415,9 +3415,7 @@ arch sailor
 name rookie
 msg
 @match *
-I used to be an adventurer. But then I
-got bored and started playing chess
-instead. This is way more fun!
+I used to be an adventurer.  But then I got bored and started playing chess instead.  This is way more fun!
 endmsg
 hp 100
 maxhp 100
@@ -4155,8 +4153,7 @@ arch sage
 name club owner
 msg
 @match yes
-Very well then. Get a gaming-partner,
-pay 100 gold coins and start playing.
+Very well then.  Get a gaming-partner, pay 100 gold coins and start playing.
 @match no
 Idiot! Chess is such a beautiful game...
 @match *
@@ -4484,8 +4481,7 @@ arch conjurer2
 name average player
 msg
 @match *
-Scorn chess club is the best!
-Come join us.
+Scorn chess club is the best! Come join us.
 endmsg
 x 21
 y 10
@@ -4634,8 +4630,7 @@ y 5
 end
 arch sign
 msg
-Please don't take away the chess-
-figures! They're worthless anyways.
+Please don't take away the chess-figures! They're worthless anyways.
 endmsg
 x 22
 y 5
