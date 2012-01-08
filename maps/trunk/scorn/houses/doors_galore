@@ -8,7 +8,7 @@ enter_x 14
 enter_y 16
 msg
 Created:  2010-08-22 Khaleh (map) and  Nicolas Weeger (script)
-Modified: 2010-09-03 Khaleh
+Modified: 2012-01-08 Rick Tanner
 endmsg
 end
 arch hills_rocky
@@ -1111,9 +1111,7 @@ end
 arch sign
 name Dungeon is closed for maintenance
 msg
-Unfortunately the last player collapsed the dungeon.
-It will remain closed until the repairs are done.
-We will be open soon.
+Unfortunately the last player collapsed the dungeon.  It will remain closed until the repairs are done.  We will be open soon.
      - The Management
 endmsg
 x 2
@@ -2513,10 +2511,7 @@ damned 1
 end
 arch altar
 msg
-A part of the dungeon collapses as you open the door, leaving a large hole in the Floor.
-A strong wind is blowing down into the pit.
-You get the feeling that it wouldn't be wise to try to pass the hole even using levitation.
-But maybe you find something to fill the hole?
+A part of the dungeon collapses as you open the door, leaving a large hole in the Floor.  A strong wind is blowing down into the pit.  You get the feeling that it wouldn't be wise to try to pass the hole even using levitation.  But maybe you find something to fill the hole?
 endmsg
 food 1
 x 6
@@ -3592,8 +3587,7 @@ y 18
 end
 arch magic_mouth
 msg
-A Thief moves out of hiding.
-"Welcome to the House of Doors".
+A Thief moves out of hiding.  "Welcome to the House of Doors".
 endmsg
 food 1
 x 8
@@ -3611,9 +3605,7 @@ damned 1
 end
 arch magic_mouth
 msg
-You hear some noises from the west.
-It sounds like a door was opened.
-
+You hear some noises from the west.  It sounds like a door was opened.
 endmsg
 food 1
 x 8
@@ -3631,9 +3623,7 @@ damned 1
 end
 arch magic_mouth
 msg
-A second door opens.
-It seems you are not alone seeking treasure here...
-
+A second door opens.  It seems you are not alone seeking treasure here...
 endmsg
 food 1
 x 8
@@ -3724,7 +3714,7 @@ arch locked_door1
 name door
 slaying no_key
 msg
-You fail to pick the lock
+You fail to pick the lock.
 endmsg
 face odoor_1.111
 x 9
@@ -3947,10 +3937,9 @@ y 18
 end
 arch magic_mouth
 msg
-As a third door opens you hear a loud voice from the far northeast:
+As a third door opens you hear a loud voice from the far northeast: 
 "Did you finally find that trigger that opens the door to the treasure?"
 Answer from the west: "Not yet Chief, i'm still searching!"
-
 OGRES !!!
 endmsg
 food 1
@@ -3969,8 +3958,7 @@ damned 1
 end
 arch magic_mouth
 msg
-An ogre is working on the last door.
-Fight or Leave now?
+An ogre is working on the last door.  Fight or Leave now?
 endmsg
 food 1
 x 9
@@ -4274,8 +4262,7 @@ y 18
 end
 arch magic_mouth
 msg
-The ogre chief still is waiting behind the closed door, shouting
-"Don't dare to tough the treasure, it's MINE!"
+The ogre chief still is waiting behind the closed door, shouting "Don't dare to tough the treasure, it's MINE!"
 endmsg
 food 1
 x 10
@@ -4294,8 +4281,7 @@ end
 arch magic_mouth
 msg
 You hear a door open to the northeast and a voice:
-"Finally you found the trigger.
-The door opened and i can get my treasure"
+"Finally you found the trigger.  The door opened and i can get my treasure"
 You notice that the ogre chief is talking about YOUR treasure.
 endmsg
 food 1
@@ -4673,8 +4659,7 @@ y 18
 end
 arch magic_mouth
 msg
-Looks like there was an ogre camp here.......
-but tired waiting for the ogre chief his friends left it.
+Looks like there was an ogre camp here....... but tired waiting for the ogre chief his friends left it.
 endmsg
 food 1
 x 11
@@ -4692,8 +4677,7 @@ damned 1
 end
 arch magic_mouth
 msg
-You find the ogre chief surrounded by some friends,
-.......and the chief still has your treasure.
+You find the ogre chief surrounded by some friends, ....... and the chief still has your treasure.
 endmsg
 food 1
 x 11
@@ -4711,8 +4695,7 @@ damned 1
 end
 arch magic_mouth
 msg
-Fortunately you are found and rescued by the Team that is repairing the dungeon now.
-It didn't want to be disturbed in the repairs and moved you out.
+Fortunately you are found and rescued by the Team that is repairing the dungeon now.  It didn't want to be disturbed in the repairs and moved you out.
 endmsg
 food 1
 x 11
@@ -5062,8 +5045,7 @@ y 18
 end
 arch magic_mouth
 msg
-It seems the ogre chief ran into a trap and died here
-........and you finally get your treasure
+It seems the ogre chief ran into a trap and died here ........and you finally get your treasure.
 endmsg
 food 1
 x 12
@@ -6164,9 +6146,7 @@ end
 arch sign
 name Instructions
 msg
-No spells and no prayers are allowed in this dungeon.
-Use keys or lockpicks to open doors, melee won't work well.
-.......and always search for traps.......
+No spells and no prayers are allowed in this dungeon.  Use keys or lockpicks to open doors, melee won't work well.  .......and always search for traps.......
 endmsg
 x 15
 y 16
