@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1998-03-27 Christian Stieber (stieber@informatik.tu-muenchen.de)
-Modified: 2008-09-27 Rick Tanner
+Modified: 2012-01-08 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -168,7 +168,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 1
@@ -290,7 +290,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 2
@@ -378,7 +378,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 3
@@ -455,7 +455,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 4
@@ -532,7 +532,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 5
@@ -609,7 +609,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 6
@@ -676,7 +676,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 7
@@ -743,7 +743,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 8
@@ -810,7 +810,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 9
@@ -877,7 +877,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 10
@@ -944,7 +944,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 11
@@ -1024,7 +1024,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 12
