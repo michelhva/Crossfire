@@ -9,7 +9,7 @@ enter_x 14
 enter_y 8
 msg
 Created:  2003-05-11 Avion
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-08 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -3774,8 +3774,7 @@ y 25
 end
 arch sign
 msg
-Pull the handle to fire the device.
-This is powerful magic - beware.
+Pull the handle to fire the device.  This is powerful magic - beware.
 endmsg
 x 21
 y 25
