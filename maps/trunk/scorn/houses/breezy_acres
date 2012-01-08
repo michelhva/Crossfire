@@ -8,7 +8,7 @@ enter_x 12
 enter_y 1
 msg
 Created:  2003-04-27 Avion
-Modified: 2008-12-21 Rick Tanner
+Modified: 2012-01-08 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -480,16 +480,7 @@ arch book_clasp
 name White's Study
 title of ancient cult religions
 msg
-Read now of the superstitious animal cults
-which were commonly worshiped before
-the age of enlightenment, and still today
-in remoter areas and wildlands.
-Of particular note were the cult of the Bear,
-the cult of the Spider, the cult of the Serpent,
-and the cult of the <page is torn here>
-Great nations were formed based on the
-worship of these creatures.
-Nations now mostly fallen and forgotten.
+Read now of the superstitious animal cults which were commonly worshiped before the age of enlightenment, and still today in remoter areas and wildlands.  Of particular note were the cult of the Bear, the cult of the Spider, the cult of the Serpent, and the cult of the <page is torn here> Great nations were formed based on the worship of these creatures.  Nations now mostly fallen and forgotten.
 - B.Z.White
 endmsg
 x 2
@@ -764,12 +755,8 @@ x 4
 y 2
 arch note
 msg
-I told Hermes to watch his step.
-He laughed and said no one would ever know.
-I thought I should tell you this
-If you tell the old man then it's not my concern.
-We never spoke of this...
-Aza
+I told Hermes to watch his step.  He laughed and said no one would ever know.  I thought I should tell you this If you tell the old man then it's not my concern.  We never spoke of this...
+  Aza
 endmsg
 level 2
 end
@@ -1213,9 +1200,7 @@ arch fatman
 name Fred
 msg
 @match *
-She's a loony,
-we don't have a
-basement.
+She's a loony, we don't have a basement.
 endmsg
 x 6
 y 20
@@ -1838,8 +1823,7 @@ end
 arch sign
 msg
 **Breezy Acres**
-Very Ventilated Condominimums at
-Afordable Rates.
+Very Ventilated Condominimums at Afordable Rates.
 endmsg
 x 10
 y 2
@@ -2071,9 +2055,7 @@ arch c_woman
 name Ethil
 msg
 @match *
-I hear something in
-the basement.
-Don't you hear it?
+I hear something in the basement.  Don't you hear it?
 endmsg
 x 11
 y 21
