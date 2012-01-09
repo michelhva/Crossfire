@@ -831,8 +831,7 @@ arch farmer
 name Terry the farmer
 msg
 @match *
-They are killing our chickens and stealing our potatoes.
-Please stop them! The key's on the table.
+They are killing our chickens and stealing our potatoes.  Please stop them! The key's on the table.
 endmsg
 x 8
 y 7
@@ -1227,8 +1226,7 @@ end
 arch locked_door2
 slaying scornfarmkey
 msg
-You hear a lot of squawking noises behind the door.
-Better ask the farmer what's going on.
+You hear a lot of squawking noises behind the door.  Better ask the farmer what's going on.
 endmsg
 x 13
 y 2
@@ -1240,8 +1238,7 @@ end
 arch locked_door2
 slaying scornfarmkey
 msg
-You hear a lot of squawking noises behind the door.
-Better ask the farmer what's going on.
+You hear a lot of squawking noises behind the door.  Better ask the farmer what's going on.
 endmsg
 x 13
 y 3
@@ -2158,8 +2155,7 @@ arch small_troll
 name Guuh the Bandit
 msg
 @match *
-Guuh hungry!
-Go away, this food all belongs Guuh!
+Guuh hungry! Go away, this food all belongs Guuh!
 endmsg
 Wis 2
 hp 120
@@ -2179,7 +2175,7 @@ name Guuh's head
 name_pl Guuh's heads
 slaying scornfarmbandithead
 msg
-Blood-stained troll head, still drooling from greed
+Blood-stained troll head, still drooling from greed. 
 endmsg
 face head.111
 arch quest_prevent_drop
