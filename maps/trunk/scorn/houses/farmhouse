@@ -9,7 +9,7 @@ enter_x 11
 enter_y 9
 msg
 Created:  2003-05-03
-Modified: 2010-03-31 Cavesomething
+Modified: 2012-01-09 Rick Tanner
 endmsg
 end
 arch grass
@@ -1575,11 +1575,15 @@ arch wwall_2_1_2
 x 17
 y 1
 end
+arch swall_1_1_half
+x 17
+y 1
+end
 arch pstone_1
 x 17
 y 2
 end
-arch swall_1_1
+arch swall_2_1_1
 x 17
 y 2
 end
@@ -1848,11 +1852,15 @@ arch wwall_2_1_2
 x 20
 y 1
 end
+arch swall_1_1_half
+x 20
+y 1
+end
 arch pstone_1
 x 20
 y 2
 end
-arch swall_1_1
+arch swall_2_1_1
 x 20
 y 2
 end
@@ -1975,8 +1983,7 @@ arch pstone_2
 x 21
 y 4
 end
-arch swall_2_1_2
-name broken wall
+arch swall_1_3
 x 21
 y 4
 end
