@@ -8,7 +8,7 @@ enter_x 11
 enter_y 1
 msg
 Created:  2003-04-27 Avion
-Modified: 2011-11-12 Rick Tanner
+Modified: 2012-01-09 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1123,19 +1123,13 @@ arch fatman
 name J.C.
 msg
 @match mark
-Ya good guy lets me beat him at cards all the time.
-Guy loves to gamble.
-Otherwise he's a bum.
+Ya good guy lets me beat him at cards all the time.  Guy loves to gamble.  Otherwise he's a bum.
 @match amy
 She runs the place for that rat Witherspoon.
 @match Witherspoon|rat
 Witherspoon owns all these slum..er 'condos'.
 @match gramps|Malone|staff
-Ya ol Gramps Malone is right duffer.
-Plays a good game of orc knuckles.
-I think he left his walking stick here
-last time he came round.
-Think it's under the table...
+Ya ol Gramps Malone is right duffer.  Plays a good game of orc knuckles.  I think he left his walking stick here last time he came round.  Think it's under the table...
 @match *
 Darn bird keeps me awake all night...
 endmsg
@@ -2294,8 +2288,7 @@ end
 arch sign
 msg
 **Riverside Manor**
-Lucksury Condominimums at
-Afredable Rates.
+Lucksury Condominimums at Afredable Rates.
 endmsg
 x 14
 y 2
@@ -2389,14 +2382,9 @@ arch woman
 name Amy
 msg
 @match rent|house
-Ya, it's available.  100 gold a week.
-Three weeks advance.
-I ain't fixin' nuthin so take it or leave it.
-Key's on the table if you want to check it out.
+Ya, it's available.  100 gold a week.  Three weeks advance.  I ain't fixin' nuthin so take it or leave it.  Key's on the table if you want to check it out.
 @match mark
-That bum...
-Sick friend, my foot...
-If I catch him around here anymore I'll chop him a new smile.
+That bum... Sick friend, my foot... If I catch him around here anymore I'll chop him a new smile.
 @match door|locked
 Mark always keeps the key to that door with him.
 @match where
@@ -2512,9 +2500,7 @@ end
 arch locked_door2
 slaying hovel_key
 msg
-You'll need the key to open this door.
-Although, judging by the smell,
-why you'd want to go in is a mystery...
+You'll need the key to open this door.  Although, judging by the smell, why you'd want to go in is a mystery...
 endmsg
 x 15
 y 6
@@ -2882,19 +2868,14 @@ y 14
 arch letter
 name letter2
 msg
-Amy, you have to let me come back
-and get my stuff...it's important.
-At least feed the thing eh, I'm telling you
-it's worth a bundle.
+Amy, you have to let me come back and get my stuff...it's important.  At least feed the thing eh, I'm telling you it's worth a bundle.
 -M
 endmsg
 level 1
 arch letter
 name letter1
 msg
-Amy let me come home...
-Honest, I was just visiting Oled and I never
-saw her there before.
+Amy let me come home... Honest, I was just visiting Oled and I never saw her there before.
 -M
 endmsg
 level 1
