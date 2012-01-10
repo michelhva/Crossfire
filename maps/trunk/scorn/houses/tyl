@@ -7,7 +7,7 @@ enter_x 4
 enter_y 8
 msg
 Created:  2009-12-05 Nicolas Weeger
-Modified: 2011-10-16 Nicolas Weeger
+Modified: 2012-01-09 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -199,9 +199,7 @@ arch guildmaster
 name Tyl
 msg
 @match amudrias
-Great, you really know the history of the world!
-
-Feel free to go look at my books all your heart, but don't pick any please.
+Great, you really know the history of the world! Feel free to go look at my books all your heart, but don't pick any please.
 @match please
 Ha well, you seem like a decent follow, so I will let you look if you can reply to this question: where did Lorkas the fallen come from?
 @match see
@@ -210,8 +208,7 @@ Well, I'm not sure, they are precious ones...
 @question see Could I see them?
 I store them in this house, in the attic.
 @match job
-@question store Where do you store all those books?
-I collect stories, books, whatever I can find.
+@question store Where do you store all those books? I collect stories, books, whatever I can find.
 @match hello
 @question job What is your job?
 Hello there!
