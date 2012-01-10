@@ -9,7 +9,7 @@ enter_x 8
 enter_y 8
 msg
 Created:  2007-05-27 Nicolas Weeger
-Modified: 2011-04-03 Nicolas Weeger
+Modified: 2012-01-09 Nicolas Weeger
 endmsg
 maplore
 @quest Lursendis
@@ -436,21 +436,12 @@ msg
 Oh, sure, you can visit our factory.
 @match yes|offerings|products
 @question visit Can I visit the shop?
-Scorn's Trappers has been founded many hundred years ago.
-
-We specialize in orcs and goblins, but only their noble parts: hearts, livers, brains.
-
+Scorn's Trappers has been founded many hundred years ago.  We specialize in orcs and goblins, but only their noble parts: hearts, livers, brains.
 @match hello
 @reply yes Yes please.
-Hello, welcome to Scorn's Trappers!
-
-Do you wish to know more about our offerings?
+Hello, welcome to Scorn's Trappers! Do you wish to know more about our offerings?
 @match *
-...
-
-*sigh*
-
-People just aren't polite nowadays...
+... *sigh* People just aren't polite nowadays...
 endmsg
 x 5
 y 7
