@@ -9,7 +9,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  1996-01-05 Bjoern Helfesrieder (helfesri@igd.fhg.de)
-Modified: 2008-10-27 Rick Tanner
+Modified: 2012-01-10 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -727,8 +727,7 @@ y 19
 end
 arch sign
 msg
-That was just warming up...turn the
-handle if you are ready. Good luck!
+That was just warming up...turn the handle if you are ready. Good luck!
 endmsg
 x 2
 y 19
@@ -989,8 +988,7 @@ y 7
 end
 arch magic_mouth
 msg
-A writing on the wall: "Danger! Trap
-ahead!"
+A writing on the wall: "Danger! Trap ahead!"
 endmsg
 x 3
 y 8
@@ -3575,11 +3573,7 @@ end
 arch book_read
 name dead adventurer's book
 msg
-"Yarid's key! Yarid's key! That
-damned door is driving me crazy! I
-think the giant in the dark tunnel has
-the key that fits!
-Will now turn the handle!"
+"Yarid's key! Yarid's key! That damned door is driving me crazy! I think the giant in the dark tunnel has the key that fits! Will now turn the handle!"
 endmsg
 x 11
 y 43
@@ -3710,8 +3704,7 @@ y 12
 end
 arch note
 msg
-"Examined the wall near the twin doors
-and found treasure!"
+"Examined the wall near the twin doors and found treasure!"
 endmsg
 x 12
 y 12
@@ -4252,8 +4245,7 @@ y 42
 end
 arch magic_mouth
 msg
-There are some bloodstains on the
-wall
+There are some bloodstains on the wall.
 endmsg
 x 13
 y 43
@@ -5115,9 +5107,7 @@ y 23
 end
 arch magic_mouth
 msg
-There are some smaller cracks in the
-walls here.
-
+There are some smaller cracks in the walls here.
 endmsg
 x 16
 y 24
@@ -5290,9 +5280,7 @@ end
 arch letter
 name bloodstained letter
 msg
-"It has something to do with the walls
-in the dark tunnel! Must go back and
-examine!"
+"It has something to do with the walls in the dark tunnel! Must go back and examine!"
 endmsg
 end
 end
@@ -6834,8 +6822,7 @@ end
 arch magic_mouth
 msg
 You notice a writing on the wall:
-"Teleporter Experiment: Might only work
-one-way!!!"
+"Teleporter Experiment: Might only work one-way!!!"
 endmsg
 x 22
 y 9
@@ -6847,8 +6834,7 @@ end
 arch magic_mouth
 msg
 You notice a writing on the wall:
-"Teleporter Experiment: Might only work
-one-way!!!"
+"Teleporter Experiment: Might only work one-way!!!"
 endmsg
 x 22
 y 10
@@ -8992,9 +8978,7 @@ end
 arch locked_door2
 slaying 66
 msg
-A deep voice says "You are not
-master Yarid and you don't have his
-key so you stay out!"
+A deep voice says "You are not master Yarid and you don't have his key so you stay out!"
 endmsg
 x 28
 y 42
@@ -9299,8 +9283,7 @@ end
 arch locked_door1
 slaying 77
 msg
-A voice says: "Master, you need your
-sacrifice key to open!"
+A voice says: "Master, you need your sacrifice key to open!"
 endmsg
 x 29
 y 36
@@ -9330,7 +9313,7 @@ y 38
 end
 arch magic_mouth
 msg
-A sign: "Room of Sacrifice
+A sign: "Room of Sacrifice"
 endmsg
 x 29
 y 39
@@ -9976,7 +9959,7 @@ y 41
 end
 arch magic_mouth
 msg
-A sign: "Beware! New experiments!
+A sign: "Beware! New experiments!"
 endmsg
 x 31
 y 42
@@ -10247,8 +10230,7 @@ y 34
 end
 arch altar
 msg
-"Now go and look what your God Lyssos
-gave you, Yarid!"
+"Now go and look what your God Lyssos gave you, Yarid!"
 endmsg
 food 25
 x 32
@@ -11438,8 +11420,7 @@ y 34
 end
 arch magic_mouth
 msg
-A sign: "Danger! Unsuccessful
-experiment!"
+A sign: "Danger! Unsuccessful experiment!"
 endmsg
 x 36
 y 35
@@ -13703,10 +13684,7 @@ slaying 77
 end
 arch book_read
 msg
-"I know that I have to put food on the
-sacrifice table...however 10 portions
-do not seem to be enough and I did not
-find more!
+"I know that I have to put food on the sacrifice table...however 10 portions do not seem to be enough and I did not find more!
 endmsg
 end
 end
