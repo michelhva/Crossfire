@@ -9,7 +9,7 @@ enter_x 14
 enter_y 7
 msg
 Created:  1996-01-06 Bjoern Helfesrieder (helfesri@igd.fhg.de)
-Modified: 2011-04-03 Nicolas Weeger
+Modified: 2012-01-09 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -252,9 +252,7 @@ y 11
 end
 arch sign
 msg
-Creator's note:
-This dungeon is approx. level 8 or
-more
+Creator's note: This dungeon is approx. level 8 or more.
 endmsg
 x 2
 y 11
@@ -325,11 +323,8 @@ connected 1001
 end
 arch magic_mouth
 msg
-A magic mouth starts talking as
-you touch the door:
-"If the door is closed, I'm either
-out or at work. You can talk to
-Charles, my servant."
+A magic mouth starts talking as you touch the door:
+"If the door is closed, I'm either out or at work.  You can talk to Charles, my servant."
 endmsg
 x 3
 y 6
@@ -368,8 +363,7 @@ end
 arch magic_ear
 msg
 @match chair
-A deep voice says "OK sonny, you know
-the word, I open the gate!"
+A deep voice says "OK sonny, you know the word, I open the gate!"
 endmsg
 x 3
 y 11
@@ -377,8 +371,7 @@ connected 2
 end
 arch magic_mouth
 msg
-You see a mouth of stone on the wall
-next to you.
+You see a mouth of stone on the wall next to you.
 endmsg
 x 3
 y 11
@@ -644,9 +637,7 @@ y 4
 end
 arch note
 msg
-I changed the password for the dungeon from "wall" to "chair".
-
-I must tell Charles before I leave.
+I changed the password for the dungeon from "wall" to "chair".  I must tell Charles before I leave.
 endmsg
 x 6
 y 4
@@ -872,10 +863,7 @@ arch card
 name Port Pass
 slaying port_pass
 msg
-This is a merchants pass allowing paid access between the City of Scorn and the Port of Scorn, for the purposes of trade
-and commerce.
-
-Animal or plants entering the city of scorn must be quarantined in the Quarantine Warehouse in the port area
+This is a merchants pass allowing paid access between the City of Scorn and the Port of Scorn, for the purposes of trade and commerce.  Animal or plants entering the city of scorn must be quarantined in the Quarantine Warehouse in the port area.
 endmsg
 value 2500
 identified 1
@@ -898,7 +886,7 @@ y 6
 end
 arch dungeon_floor
 msg
-you feel better
+you feel better.
 endmsg
 hp 22
 x 8
@@ -1123,25 +1111,15 @@ arch charwoman
 name House Keeper
 msg
 @match hello|hi|job|name
-Oh good evening Zir, I am Charles, zee old wizzard's houze keeper!
-
-Can I HELP you, Zir?
-
-A bed prehapzz?
+Oh good evening Zir, I am Charles, zee old wizzard's houze keeper!  Can I HELP you, Zir?  A bed prehapzz?
 @match wiffard|dunzeon|zeletonz
 Ztrange aczent you have, zonny!
 @match wizzard
-Oh, mazzter Yarid waz a great wizzard!
-
-Always working away down in zee dunzeon he waz. Zoo bad he izz DEAD now!
+Oh, mazzter Yarid waz a great wizzard!  Always working away down in zee dunzeon he waz. Zoo bad he izz DEAD now!
 @match mouth|dungeon|gate|word
-Ah, zee dunzeon, I woulzz not go zown zair if I waz you, but I am not you. Mazzter Yarid don't tell me pazzword for gatz az he leavzz. You muzzt searzz for it. Good Luck!
-
-Charles pulls out a PAPER, looks at it, marks an X and puts it away again.
+Ah, zee dunzeon, I woulzz not go zown zair if I waz you, but I am not you.  Mazzter Yarid don't tell me pazzword for gatz az he leavzz.  You muzzt searzz for it. Good Luck! Charles pulls out a PAPER, looks at it, marks an X and puts it away again.
 @match paper
-Oh nothing... I juzt write zown how many adventurerz entered zee DUNZEON zinze mazzter Yarid died.
-
-Zee number be now 6.
+Oh nothing... I juzt write zown how many adventurerz entered zee DUNZEON zinze mazzter Yarid died.  Zee number be now 6.
 @match help|bed|skeltons
 If you want a rezt put zoom food for zee dogz on zee table here.
 @match dead
@@ -1164,12 +1142,10 @@ end
 arch note
 msg
 To do...
-Remember me to tell you the new
-password for the dungeon.
-I had wrote it down in my room.
+Remember me to tell you the new password for the dungeon.  I had wrote it down in my room.
 Dogs: 2 portions of food a day.
-Don't let children down in the dungeon
-Clean Floor, Make Beds, Dust skeltons
+Don't let children down in the dungeon.
+Clean Floor, Make Beds, Dust skeltons.
  XX XXX X
 endmsg
 end
@@ -1447,9 +1423,7 @@ end
 arch rune_ball_lightning
 name Yarid's wrath
 msg
-A deep voice laughs: "You challenge
-me? This is the wrath of Yarid, you
-fool!"
+A deep voice laughs: "You challenge me? This is the wrath of Yarid, you fool!"
 endmsg
 Cha 100
 x 12
