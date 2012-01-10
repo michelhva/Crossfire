@@ -394,20 +394,14 @@ arch random_wealth
 end
 arch note
 msg
-Congratulations.
-If you are reading this, my monsters have
-killed me. Don't make the mistake of
-holding pets that are too strong. They
-might overrun you. You may have my potion
-of life because I won't need it anymore,
-but mark my words.
+Congratulations.  If you are reading this, my monsters have killed me.  Don't make the mistake of holding pets that are too strong.  They might overrun you.  You may have my potion of life because I won't need it anymore, but mark my words.
 endmsg
 end
 arch minor_potion_restoration
 end
 end
 arch dirtfloor
-x 2
+ x 2
 y 16
 end
 arch mouse
@@ -776,9 +770,7 @@ y 4
 end
 arch note
 msg
-Drats my house has been over run!!!
-It seem my pets are stronger than I first thought.
-I will attempt to escape to my basement.  Hope to see you soon!!!
+Drats my house has been over run!!! It seem my pets are stronger than I first thought.  I will attempt to escape to my basement.  Hope to see you soon!!!
 endmsg
 x 5
 y 4
