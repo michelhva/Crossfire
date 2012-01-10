@@ -8,7 +8,7 @@ enter_x 6
 enter_y 11
 msg
 Created:  2002-12-29
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-01-09 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1181,12 +1181,7 @@ end
 arch a_townsman3
 msg
 @match *
-Don't bother talking to the monk. I think he has taken a vow of silence. I wish my wife would take a vow of silence.
-Have you seen the state of the town lately?
-I think we should petition the King?
-You should try cooking.
-For a 100 platinum they teach you how... if you have woodlore that is.
-My this coffee is strong...
+Don't bother talking to the monk.  I think he has taken a vow of silence.  I wish my wife would take a vow of silence.  Have you seen the state of the town lately?  I think we should petition the King? You should try cooking.  For a 100 platinum they teach you how... if you have woodlore that is.  My this coffee is strong...
 endmsg
 exp 1
 x 8
