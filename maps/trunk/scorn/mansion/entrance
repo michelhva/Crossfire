@@ -6,7 +6,7 @@ width 30
 height 50
 enter_x 14
 msg
-Created:  1994-12-27
+Created:  1994-12-27 Morten Hanshaugen
 Modified: 2012-01-10 Rick Tanner
 endmsg
 end
@@ -4533,19 +4533,6 @@ x 18
 y 5
 end
 arch woodfloor
-x 18
-y 6
-end
-arch sign
-name Creator
-msg
-Created by Morten Hanshaugen
-University of Oslo, Norway
-Comments and bugreports can
-be mailed to:
-<meh@ifi.uio.no> or
-<meh@usit.uio.no>
-endmsg
 x 18
 y 6
 end
