@@ -7,8 +7,8 @@ height 59
 enter_x 29
 enter_y 29
 msg
-Created:  1994-12-28
-Modified: 2008-09-28 Rick Tanner
+Created:  1994-12-28 Morten Hanshaugen
+Modified: 2012-01-11 Rick Tanner
 endmsg
 end
 arch grass
@@ -13193,19 +13193,6 @@ x 35
 y 25
 end
 arch small_stones
-x 35
-y 26
-end
-arch sign
-name Creator
-msg
-Created by Morten Hanshaugen
-University of Oslo, Norway
-Comments and bugreports can
-be mailed to:
-<meh@ifi.uio.no> or
-<meh@usit.uio.no>
-endmsg
 x 35
 y 26
 end
