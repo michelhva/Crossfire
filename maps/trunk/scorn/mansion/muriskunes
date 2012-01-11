@@ -7,7 +7,8 @@ height 22
 enter_x 15
 enter_y 20
 msg
-Modified: 2008-09-28 Rick Tanner
+Created: Morten Hanshaugen
+Modified: 2012-01-11 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -1846,20 +1847,6 @@ x 12
 y 19
 end
 arch dirtfloor
-x 12
-y 20
-end
-arch sign
-name Creator
-msg
-Created by Morten Hanshaugen
-University of Oslo, Norway
-
-Comments and bugreports can
-be mailed to:
-<meh@ifi.uio.no> or
-<meh@usit.uio.no>
-endmsg
 x 12
 y 20
 end
