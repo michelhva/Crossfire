@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1993-12-07
-Modified: 2012-01-09 Rick Tanner
+Modified: 2012-01-10 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -320,8 +320,7 @@ x 2
 end
 arch magic_mouth
 msg
-WHO DARES ENTER THE CREEPY CRYPT?
-YOU WILL PERISH!
+WHO DARES ENTER THE CREEPY CRYPT? YOU WILL PERISH!
 endmsg
 x 2
 y 1
@@ -747,8 +746,7 @@ y 1
 end
 arch gravestone
 msg
-Here lies Ender,
-What a troubled soul.
+Here lies Ender, What a troubled soul.
 endmsg
 x 5
 y 1
@@ -1416,9 +1414,7 @@ y 4
 end
 arch magic_mouth
 msg
-Heh, Heh Heh, you thought you beat my
-haunted house, but you have only yet to
-begin!  You shall perish...
+Heh, Heh Heh, you thought you beat my haunted house, but you have only yet to begin!  You shall perish...
 endmsg
 x 9
 y 5
@@ -3048,7 +3044,7 @@ y 19
 end
 arch letter
 msg
-The house is being over run with all types of monsters, help me. Arrghh! They are at the door! Help me, come quick
+The house is being over run with all types of monsters, help me.  Arrghh! They are at the door! Help me, come quick.
 endmsg
 x 20
 y 19
