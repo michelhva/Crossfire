@@ -8,7 +8,7 @@ enter_x 19
 enter_y 36
 msg
 Created:  1993-10-15
-Modified: 2008-12-21 Rick Tanner
+Modified: 2012-01-11 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -2349,7 +2349,7 @@ end
 arch locked_door1
 slaying fhfh
 msg
-DO NOT OPEN
+DO NOT OPEN!
 endmsg
 x 10
 y 34
@@ -3947,7 +3947,7 @@ y 37
 end
 arch sign
 msg
-Warning! higher level characters only
+Warning! Higher level characters only!!
 endmsg
 x 17
 y 37
@@ -4563,9 +4563,7 @@ y 36
 end
 arch magic_mouth
 msg
-A cowering worker cringes in terror.
-HELP!!@#$@# The Animals!!
-They've TAKE OVER~!@@$
+A cowering worker cringes in terror.  HELP!!@#$@# The Animals!!  They've TAKE OVER~!@@$
 endmsg
 x 20
 y 37
