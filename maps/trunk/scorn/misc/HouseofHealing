@@ -11,7 +11,7 @@ enter_x 10
 enter_y 33
 msg
 Created:  1999-04-02
-Modified: 2010-02-28 Nicolas Weeger
+Modified: 2012-01-12 Rick Tanner
 endmsg
 end
 arch grass
@@ -542,7 +542,7 @@ arch rune_heal
 name Rune of Cure Poison
 slaying cure poison
 msg
-You set off a Rune of Cure Poison
+You set off a Rune of Cure Poison.
 endmsg
 x 2
 y 15
@@ -563,7 +563,7 @@ arch rune_heal
 name Rune of Cure Poison
 slaying cure poison
 msg
-You set off a Rune of Cure Poison
+You set off a Rune of Cure Poison.
 endmsg
 x 2
 y 17
@@ -584,7 +584,7 @@ arch rune_restoration
 name Rune of Cure Disease
 slaying cure disease
 msg
-You set off a rune of Curing Disease
+You set off a rune of Curing Disease.
 endmsg
 x 2
 y 19
@@ -606,7 +606,7 @@ arch rune_restoration
 name Rune of Cure Disease
 slaying cure disease
 msg
-You set off a rune of Curing Disease
+You set off a rune of Curing Disease.
 endmsg
 x 2
 y 21
@@ -2864,31 +2864,7 @@ end
 arch tome
 name On the Cure of Disease
 msg
-You find a lengthy treatise on disease
-and its cure.  Some diseases,
-apparently, are more difficult to cure
-than others, and require a higher
-level of skill.  Other diseases can be
-expected to run their course and go
-away without causing serious harm,
-unless  of course, one is in a
-situation in which temporary
-incapacity is fatal.  The cure
-disease spell is effective against
-disease, except as remarked above.
-Restoration also works well against
-disease.
-Cure wounds spells won't cure disease,
-but they will reduce symptoms.  Cure
-wounds spells therefore can be used to
-keep a person alive until the disease
-may be cured.  Also, they may keep him
-alive until the disease naturally goes
-away.
-There are also claims of herbal,
-alchemical, animal, or other magical
-cures for disease, but these belong in
-another treatise.
+You find a lengthy treatise on disease and its cure.  Some diseases, apparently, are more difficult to cure than others, and require a higher level of skill.  Other diseases can be expected to run their course and go away without causing serious harm, unless of course, one is in a situation in which temporary incapacity is fatal.  The cure disease spell is effective against disease, except as remarked above.  Restoration also works well against disease.  Cure wounds spells won't cure disease, but they will reduce symptoms.  Cure wounds spells therefore can be used to keep a person alive until the disease may be cured.  Also, they may keep him alive until the disease naturally goes away.  There are also claims of herbal, alchemical, animal, or other magical cures for disease, but these belong in another treatise.
 endmsg
 x 10
 y 26
@@ -2900,18 +2876,13 @@ end
 arch tome
 name On the Healing of Wounds
 msg
-Many spells are effective for speeding
-the recovery of a wounded person.
-Some potions are also efficacious.  In
-increasing order of effectiveness:
+Many spells are effective for speeding the recovery of a wounded person.  Some potions are also efficacious.  In increasing order of effectiveness:
 minor healing
 medium healing
 major healing
 heal
 restoration
-The healing potion is equivalent
-to the heal spell. The Restoration
-spell does NOT restore depleted stats.
+The healing potion is equivalent to the heal spell. The Restoration spell does NOT restore depleted stats.
 endmsg
 x 10
 y 27
@@ -3230,8 +3201,7 @@ y 22
 end
 arch magic_mouth
 msg
-A sign on the door says "Healing
-for Travelers."
+A sign on the door says "Healing for Travelers."
 endmsg
 x 11
 y 23
@@ -3266,16 +3236,7 @@ end
 arch tome
 name Cures for Miscellaneous Problems
 msg
-Poison may be cured via the "cure
-poison" prayer.
-Madness or confusion may be cured via
-the "cure confusion" prayer.
-Blindness may be cured via the "cure
-blindness" prayer.
-The "restoration" spell cures all
-hazards mentioned above.
-Note that these spells are also
-available on scrolls.
+Poison may be cured via the "cure poison" prayer.  Madness or confusion may be cured via the "cure confusion" prayer.  Blindness may be cured via the "cure blindness" prayer.  The "restoration" spell cures all hazards mentioned above.  Note that these spells are also available on scrolls.
 endmsg
 x 11
 y 27
@@ -3300,10 +3261,7 @@ arch conjurer
 name priest of healing
 msg
 @match *
-Welcome to the house of healing!
-This is the place where injured and
-ill people get cured of their
-torments.
+Welcome to the house of healing! This is the place where injured and ill people get cured of their torments.
 endmsg
 x 11
 y 29
@@ -3635,15 +3593,7 @@ end
 arch tome
 name How to Restore Drained Abilities
 msg
-Drained abilities (stats), lost by
-fighting undead, or dying, may be
-restored via drinking a "potion of
-life".
-The ones who are experienced in the
-skill of priesthood, they can pray
-over an altar and eventually get
-restored by their diety. However,
-this does not work for all cults.
+Drained abilities (stats), lost by fighting undead, or dying, may be restored via drinking a "potion of life".  The ones who are experienced in the skill of priesthood, they can pray over an altar and eventually get restored by their diety.  However, this does not work for all cults.
 endmsg
 x 12
 y 26
@@ -5741,7 +5691,7 @@ arch rune_heal
 name Rune of Cure Poison
 slaying cure poison
 msg
-You set off a Rune of Cure Poison
+You set off a Rune of Cure Poison.
 endmsg
 x 20
 y 15
@@ -5762,7 +5712,7 @@ arch rune_heal
 name Rune of Cure Poison
 slaying cure poison
 msg
-You set off a Rune of Cure Poison
+You set off a Rune of Cure Poison.
 endmsg
 x 20
 y 17
@@ -5783,7 +5733,7 @@ arch rune_restoration
 name Rune of Cure Disease
 slaying cure disease
 msg
-You set off a rune of Curing Disease
+You set off a rune of Curing Disease.
 endmsg
 x 20
 y 19
@@ -5805,7 +5755,7 @@ arch rune_restoration
 name Rune of Cure Disease
 slaying cure disease
 msg
-You set off a rune of Curing Disease
+You set off a rune of Curing Disease.
 endmsg
 x 20
 y 21
@@ -5827,7 +5777,7 @@ arch rune_restoration
 name Rune of Cure Disease
 slaying cure disease
 msg
-You set off a rune of Curing Disease
+You set off a rune of Curing Disease.
 endmsg
 x 20
 y 23
