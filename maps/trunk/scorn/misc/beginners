@@ -9,7 +9,7 @@ enter_x 14
 enter_y 28
 msg
 Created:  1993-10-15 Morten Hanshaugen
-Modified: 2011-09-07 Rick Tanner
+Modified: 2012-01-11 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1825,9 +1825,7 @@ y 4
 end
 arch sign_w
 msg
-Go get the wand, apply it, open the gate, fire
-at the monsters and RUN!
-CAREFUL: YOU MAY HURT YOURSELF ...
+Go get the wand, apply it, open the gate, fire at the monsters and RUN! CAREFUL: YOU MAY HURT YOURSELF ...
 endmsg
 x 9
 y 4
@@ -2619,15 +2617,7 @@ y 1
 end
 arch sign_w
 msg
-Here you can test your shooting weapons or
-spells if you possess any. If you have readied a
-bow and have some arrows handy, you can fire by
-holding the SHIFT-key down while pressing a
-direction.  Your arrows fly for ever if they do
-not hit anything. Make sure you pick up your
-arrows. Arrows easily burn ...
-You apply a bow by clicking on it with the
-middle mouse button.
+Here you can test your shooting weapons or spells if you possess any.  If you have readied a bow and have some arrows handy, you can fire by holding the SHIFT-key down while pressing a direction.  Your arrows fly for ever if they do not hit anything.  Make sure you pick up your arrows. Arrows easily burn ... You apply a bow by clicking on it with the middle mouse button.
 endmsg
 x 14
 y 1
@@ -2646,15 +2636,9 @@ y 4
 end
 arch sign_w
 msg
-Spell training area.
-To cast a spell e.g. small fireball type:
-'cast small fire
-When you have done this you will notice that the
-Range line changes to: "spell (small fireball)"
-You now do the same as you do when you fire
-arrows. Hold down the SHIFT-key and press a
-direction key.
-But beware. Spells can and often do hurt you...
+Spell training area.  To cast a spell e.g. small fireball type: 'cast small fire
+When you have done this you will notice that the Range line changes to: "spell (small fireball)"
+You now do the same as you do when you fire arrows.  Hold down the SHIFT-key and press a direction key.  But beware. Spells can and often do hurt you...
 endmsg
 x 14
 y 4
@@ -2677,8 +2661,7 @@ y 8
 end
 arch sign_w
 msg
-Now let us see how well you do in _real_
-combat.
+Now let us see how well you do in _real_ combat.
 Good luck!
 endmsg
 x 14
@@ -2853,13 +2836,7 @@ y 13
 end
 arch sign_e
 msg
-All doors are not the same.
-Some need keys and some need strange button
-mechanisms :)
-If you don't have a key, you can try to hack
-the door to pieces.
-Beware of standing on a gate when it starts to
-go up.
+All doors are not the same.  Some need keys and some need strange button mechanisms :)  If you don't have a key, you can try to hack the door to pieces.  Beware of standing on a gate when it starts to go up.
 endmsg
 x 15
 y 13
@@ -2878,15 +2855,7 @@ y 16
 end
 arch sign_e
 msg
-Not all monsters have generators and not all
-monsters need a generator to reproduce.
-Sometimes you get a reward for winning a hard
-battle.
-By the way: Chests are opened by pressing the
-key 'A' while standing on top of them or by
-pressing 'a' if you have it in your inventory.
-The middle mouse button can also be used.
-Try it out.
+Not all monsters have generators and not all monsters need a generator to reproduce.  Sometimes you get a reward for winning a hard battle.  By the way: Chests are opened by pressing the key 'A' while standing on top of them or by pressing 'a' if you have it in your inventory.  The middle mouse button can also be used.  Try it out.
 endmsg
 x 15
 y 16
@@ -2906,14 +2875,7 @@ end
 arch sign_e
 name A A A A A ....
 msg
-It is time to get to know some other monsters.
-Monsters generate from monster generators and
-you should try to destroy the generators as
-early as possible, to limit the number of
-monsters being produced.
-So, open the gate at your right and destroy the
-face-shaped generator right away. Do not waste
-time reading this ;-)
+It is time to get to know some other monsters.  Monsters generate from monster generators and you should try to destroy the generators as early as possible, to limit the number of monsters being produced.  So, open the gate at your right and destroy the face-shaped generator right away.  Do not waste time reading this ;-)
 endmsg
 x 15
 y 19
@@ -2933,13 +2895,7 @@ end
 arch sign_e
 name Read by typing an A
 msg
-Practice to run with the Control-key down once
-more. Speed is very important in this game.
-Another thing that you should know is that to
-fight many beasts at once can be dangerous.
-You may be badly injured before you manage to
-kill them all off.
-Well, go practice now!
+Practice to run with the Control-key down once more.  Speed is very important in this game.  Another thing that you should know is that to fight many beasts at once can be dangerous.  You may be badly injured before you manage to kill them all off.  Well, go practice now!
 endmsg
 x 15
 y 22
@@ -2959,14 +2915,7 @@ end
 arch sign_e
 name Type an A to read
 msg
-You survived. That is promising ;->
-As mentioned it is better the sooner you kill off
-the beasts. That way they do not get so much time
-to hurt you. To go really fast you can hold down
-the Control-key to run in a direction.
-Try opening the gate at your right and run in by
-holding down the control-key and just pressing
-the direction key _once_.
+You survived. That is promising ;->  As mentioned it is better the sooner you kill off the beasts.  That way they do not get so much time to hurt you.  To go really fast you can hold down the Control-key to run in a direction.  Try opening the gate at your right and run in by holding down the control-key and just pressing the direction key _once_.
 endmsg
 x 15
 y 25
@@ -2986,16 +2935,7 @@ end
 arch sign_e
 name Type an A to read
 msg
-This is the beginning of a guided tour into
-crossfire. To fight monsters you run directly
-at them. The sooner you kill them off the
-better.
-Try standing on top of the handle at your right
-and press the 'A'-key. The gate will then open
-and a monster will try to attack you. Run
-directly toward it to knock it down. Remember
-to put on your armour...
-Good luck!
+This is the beginning of a guided tour into crossfire.  To fight monsters you run directly at them.  The sooner you kill them off the better.  Try standing on top of the handle at your right and press the 'A'-key.  The gate will then open and a monster will try to attack you.  Run directly toward it to knock it down.  Remember to put on your armour... Good luck!
 endmsg
 x 15
 y 28
