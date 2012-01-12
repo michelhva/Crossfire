@@ -9,7 +9,7 @@ enter_x 25
 enter_y 1
 msg
 Created:  1994-12-28
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-11 Rick Tanner
 endmsg
 end
 arch medium_stones
@@ -89,8 +89,7 @@ end
 arch stair_3_up
 slaying stronghold
 msg
-Ah! You have entered the
-small stronghold of Scorn.
+Ah! You have entered the small stronghold of Scorn.
 endmsg
 hp 6
 sp 28
@@ -2362,8 +2361,7 @@ end
 arch magic_mouth
 msg
 A grumpy voice shouts:
-Whoever challenges Filur to fight,
-will end up in Filur's stew tonight!
+Whoever challenges Filur to fight, will end up in Filur's stew tonight!
 endmsg
 x 28
 y 9
