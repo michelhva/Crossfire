@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1993-10-15
-Modified: 2011-03-17 Nicolas Weeger
+Modified: 2012-01-12 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -939,13 +939,9 @@ arch fighter
 name Off duty Guard
 msg
 @match monsters
-Yeah! Its like they were coming out of
-the walls, one got into the gatehouse
-and killed Lodus while he was sleeping,
-poor chap.
+Yeah! Its like they were coming out of the walls, one got into the gatehouse and killed Lodus while he was sleeping, poor chap.
 @match *
-I can't understand where those monsters are
-coming from
+I can't understand where those monsters are coming from.
 endmsg
 x 9
 y 11
@@ -1316,8 +1312,7 @@ end
 arch magic_mouth
 name magic_mouth (gate pass)
 msg
-On seeing you have a gate pass the guard turns the handle nearby and says...
-Arrhh, a merchant off on trade.. Pass..
+On seeing you have a gate pass the guard turns the handle nearby and says... Arrhh, a merchant off on trade.. Pass..
 endmsg
 x 13
 connected 13
@@ -1417,8 +1412,7 @@ end
 arch magic_mouth
 name magic_mouth (hero of scorn)
 msg
-A guard yells.. The Hero of Scorn!
-Open the gates, open, we can't keep the Hero waiting. Hurry Hurry.
+A guard yells.. The Hero of Scorn! Open the gates, open, we can't keep the Hero waiting.  Hurry Hurry.
 endmsg
 x 14
 connected 14
@@ -1502,10 +1496,7 @@ end
 arch magic_mouth
 name magic_mouth (hero of scorn)
 msg
-The guard shouts....
-The brave hero of Scorn returns to us!
-Open the gates, prepare the way!
-You think you hear muffled laughing from somewhere...
+The guard shouts.... The brave hero of Scorn returns to us! Open the gates, prepare the way! You think you hear muffled laughing from somewhere...
 endmsg
 x 14
 y 13
@@ -1587,9 +1578,7 @@ msg
 @match monster|Monsters
 What about them!
 @match *
-And where do you think your GOING?
-Not downstairs!....
-You'll have to kill me first!
+And where do you think your GOING? Not downstairs!.... You'll have to kill me first!
 endmsg
 x 15
 y 11
@@ -1613,9 +1602,7 @@ end
 arch magic_mouth
 name magic_mouth (gate pass)
 msg
-Halt! Who wishes to enter?
-You show your gate pass...
-Oh a merchant, Pass Friend.
+Halt! Who wishes to enter? You show your gate pass... Oh a merchant, Pass Friend.
 endmsg
 x 15
 y 13
@@ -2432,8 +2419,7 @@ arch guard
 name gatehouse guard
 msg
 @match monster
-They keep trying to sneak in, but we
-always kill them.
+They keep trying to sneak in, but we always kill them.
 @match open|gate
 The gate opens only for certain people.
 @match who|people
@@ -2443,11 +2429,9 @@ Only those who are
 * Or knighted ``Hero'' by the king
 may pass through these gates.
 @match gate|pass
-See the ``Office of Gate Passes''
-next to the Port Gate.
+See the ``Office of Gate Passes'' next to the Port Gate.
 @match secret|door|wall|password
-I can't tell you that!
-Do you want to be thrown in JAIL?
+I can't tell you that! Do you want to be thrown in JAIL?
 @match *
 Good to see a friend!
 Have you seen any monsters lately?
@@ -2747,8 +2731,7 @@ end
 arch sign
 name WARNING...
 msg
-WARNING: Once beyond the city walls,
-you are on your OWN!
+WARNING: Once beyond the city walls, you are on your OWN!
 endmsg
 x 26
 y 9
