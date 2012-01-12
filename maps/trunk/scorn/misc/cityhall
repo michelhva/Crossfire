@@ -9,7 +9,7 @@ enter_x 13
 enter_y 25
 msg
 Created:  1993-10-15
-Modified: 2008-12-16 Rick Tanner
+Modified: 2012-01-12 Rick Tanner
 endmsg
 end
 arch woods_2
@@ -2054,13 +2054,7 @@ name Proverbs
 name_pl Proverbs
 title of the Good Citizen
 msg
-A feast fit for a king gains a valued prize.
-Royal service begets honor, title, and gifts.
-A royal title profers respect and freedom.
-A noble citizen neither hungers nor thirsts.
-Generous supplication yields bountiful grace.
-Lifelong and diligent veneration is greatly rewarded.
-The heretic is to be pitied for holy chastisement is harsh.
+A feast fit for a king gains a valued prize.  Royal service begets honor, title, and gifts.  A royal title profers respect and freedom.  A noble citizen neither hungers nor thirsts.  Generous supplication yields bountiful grace.  Lifelong and diligent veneration is greatly rewarded.  The heretic is to be pitied for holy chastisement is harsh.
 endmsg
 level 1
 value 10
@@ -2769,7 +2763,7 @@ y 14
 end
 arch sign
 msg
-City Hall services are available between 8 am and 6pm
+City Hall services are available between 8am and 6pm.
 endmsg
 x 12
 y 14
@@ -3411,8 +3405,7 @@ end
 arch sign
 name Petitions for the DMs
 msg
-I am a talking board, designed for leaving messages for the DM.
-If you don't know what to say, say help.
+I am a talking board, designed for leaving messages for the DM.  If you don't know what to say, say help.
 endmsg
 x 15
 y 14
@@ -3797,11 +3790,7 @@ end
 arch book_read
 name History of Crossfire
 msg
-Frank Tore Johansen started writing Crossfire in March, 1992.
-Since then, many people throughout the world have contributed source code, maps, graphics, and other forms of support.
-Early versions of Crossfire looked much like early renditions of the game Gauntlet.  Since then, features like that of Nethack and Moria were adopted.
-Presently development is moving in the direction of producing a more complex game similar to Ultima.
-Throughout the years though, Crossfire continues to maintain it's very own distinctive style.
+Frank Tore Johansen started writing Crossfire in March, 1992.  Since then, many people throughout the world have contributed source code, maps, graphics, and other forms of support.  Early versions of Crossfire looked much like early renditions of the game Gauntlet.  Since then, features like that of Nethack and Moria were adopted.  Presently development is moving in the direction of producing a more complex game similar to Ultima.  Throughout the years though, Crossfire continues to maintain it's very own distinctive style.
 endmsg
 x 17
 y 8
@@ -3817,18 +3806,7 @@ end
 arch book_read
 name Manual part I
 msg
-CrossFire is a multiplayer graphical  arcade  and
-adventure game made for the X-Window environment.
-It has certain flavours from other games,
-especially Gauntlet (TM) and Nethack/Moria.
-Any number of players can move around in their own
-window, picking up / using items and battle
-monsters.
-The players all do battle in the same world, and
-can communicate with each other (even fight
-with each other).
-The goal of the game is to survive and to
-have FUN.
+CrossFire is a multiplayer graphical arcade and adventure game made for the X-Window environment.  It has certain flavours from other games, especially Gauntlet (TM) and Nethack/Moria.  Any number of players can move around in their own window, picking up / using items and battle monsters.  The players all do battle in the same world, and can communicate with each other (even fight with each other).  The goal of the game is to survive and to have FUN.
 endmsg
 x 17
 y 9
@@ -3844,20 +3822,7 @@ end
 arch book_read
 name Manual part II
 msg
-When you have rolled your stats and chosen a
-profession, you can type `?' at any time to get
-information about the different keys.
-The apply command (bound to key `a') is used for
-several things, like wearing, removing, wielding,
-unwielding, drinking, eating, etc.
-If you hold down Shift while pressing `A', you
-will apply the object below you. This is the only
-way to enter a house.
-In addition to the direct commands which are
-bound to different keys, you can also type more
-complex commands by pressing the '-key first.
-To get more information about these, try
-typing "'help".
+When you have rolled your stats and chosen a profession, you can type `?' at any time to get information about the different keys.  The apply command (bound to key `a') is used for several things, like wearing, removing, wielding, unwielding, drinking, eating, etc.  If you hold down Shift while pressing `A', you will apply the object below you.  This is the only way to enter a house.  In addition to the direct commands which are bound to different keys, you can also type more complex commands by pressing the '-key first.  To get more information about these, try typing "'help".
 endmsg
 x 17
 y 10
@@ -3873,20 +3838,7 @@ end
 arch book_read
 name Manual part III
 msg
-You can do several things by using only the
-mouse. In the inventory-window, you can examine,
-apply and drop things by clicking the different
-mouse-buttons. In the look-window you can do
-mostly the same, except you pick up items instead
-of dropping them when you click the right mouse
-button. In both windows you can move the scrollbar
-in different ways by clicking the different
-mouse-button on it (but only if there are more
-items than can be displayed in the window). In
-the graphical window, you can click at places
-with the left button to find out what is there,
-or with the right button to move in that general
-direction.
+You can do several things by using only the mouse.  In the inventory-window, you can examine, apply and drop things by clicking the different mouse-buttons.  In the look-window you can do mostly the same, except you pick up items instead of dropping them when you click the right mouse button.  In both windows you can move the scrollbar in different ways by clicking the different mouse-button on it (but only if there are more items than can be displayed in the window).  In the graphical window, you can click at places with the left button to find out what is there, or with the right button to move in that general direction.
 endmsg
 x 17
 y 11
@@ -3910,13 +3862,7 @@ end
 arch book_read
 name Updating Crossfire
 msg
-The development of Crossfire never stops.
-Keep your server and client up-to-date
-so you can always enjoy the latest
-features and bugfixes.
-For a detailed list of valid download sites,
-look at:
-http://crossfire.real-time.com/download/
+The development of Crossfire never stops.  Keep your server and client up-to-date so you can always enjoy the latest features and bugfixes.  For a detailed list of valid download sites, look at: http://crossfire.real-time.com/download/
 endmsg
 x 17
 y 13
