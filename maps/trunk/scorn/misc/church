@@ -9,7 +9,7 @@ enter_x 10
 enter_y 15
 msg
 Created:  1993-10-15
-Modified: 2010-05-05 Cavesomething
+Modified: 2012-01-01 Rick Tanner
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -896,8 +896,7 @@ y 13
 end
 arch magic_mouth
 msg
-HELP!
-This church has been overrun with zombies
+HELP! This church has been overrun with zombies!!
 endmsg
 x 7
 y 14
@@ -1150,11 +1149,7 @@ end
 arch book_read
 name Binary Bible
 msg
-In the beginning, the Giver of Data
-(GOD) generated silicon and carbon, and
-the system without architecture, and
-un-initialized, randomness was upon
-the arrangement of the matrix.......
+In the beginning, the Giver of Data (GOD) generated silicon and carbon, and the system without architecture, and un-initialized, randomness was upon the arrangement of the matrix.......
 endmsg
 x 10
 y 4
@@ -1551,8 +1546,7 @@ y 13
 end
 arch magic_mouth
 msg
-HELP!
-This church has been overrun with zombies
+HELP! This church has been overrun with zombies!!
 endmsg
 x 13
 y 14
