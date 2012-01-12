@@ -10,7 +10,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  2000-06-16
-Modified: 2010-05-05 Cavesomething
+Modified: 2012-01-12 Rick Tanner
 endmsg
 end
 arch woodfloor2
@@ -428,9 +428,7 @@ y 3
 end
 arch magic_mouth
 msg
-Welcome, Sir Knight.
-We have laid out some refreshments for
-you.
+Welcome, Sir Knight.  We have laid out some refreshments for you.
 endmsg
 x 3
 y 4
@@ -523,9 +521,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Welcome, My Lord Baronet.
-We have laid out some refreshments for
-you.
+Welcome, My Lord Baronet.  We have laid out some refreshments for you.
 endmsg
 x 3
 y 11
@@ -1282,9 +1278,7 @@ y 3
 end
 arch magic_mouth
 msg
-Welcome, My Lord Baron.
-We have laid out some refreshments for
-you.
+Welcome, My Lord Baron.  We have laid out some refreshments for you.
 endmsg
 x 9
 y 4
@@ -1377,9 +1371,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Welcome, Your Honor.
-We have laid out some refreshments for
-you.
+Welcome, Your Honor.  We have laid out some refreshments for you.
 endmsg
 x 9
 y 11
@@ -2142,9 +2134,7 @@ y 3
 end
 arch magic_mouth
 msg
-Welcome, Your Lordship.
-We have laid out some refreshments for
-you.
+Welcome, Your Lordship.  We have laid out some refreshments for you.
 endmsg
 x 15
 y 4
@@ -2237,9 +2227,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Welcome, Your Excellency.
-We have laid out a feast for
-you.
+Welcome, Your Excellency.  We have laid out a feast for you.
 endmsg
 x 15
 y 11
@@ -3132,9 +3120,7 @@ y 3
 end
 arch magic_mouth
 msg
-Welcome, Your Grace.
-We have laid out a feast for
-you.
+Welcome, Your Grace.  We have laid out a feast for you.
 endmsg
 x 22
 y 4
@@ -3227,9 +3213,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Welcome, Your Grace.
-We have laid out a feast for
-you.
+Welcome, Your Grace.  We have laid out a feast for you.
 endmsg
 x 22
 y 11
@@ -3944,9 +3928,7 @@ connected 80
 end
 arch magic_mouth
 msg
-Welcome, Your Highness.
-We have prepared a feast in your
-honor.
+Welcome, Your Highness.  We have prepared a feast in your honor.
 endmsg
 x 27
 y 7
@@ -3967,9 +3949,7 @@ end
 end
 arch magic_mouth
 msg
-Welcome, Your Highness.
-We have prepared a feast in your
-honor.
+Welcome, Your Highness.  We have prepared a feast in your honor.
 endmsg
 x 27
 y 8
