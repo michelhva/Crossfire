@@ -12,7 +12,7 @@ enter_x 40
 enter_y 21
 msg
 Created:  1999-04-02
-Modified: 2011-10-10 Rick Tanner
+Modified: 2012-01-01 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -6561,19 +6561,7 @@ y 11
 end
 arch sign
 msg
-The Glowing Crystal exhibited here is one
-of the rare gemstones that are able to store
-mana.
-Touching it when your mana is at maximum
-capacity will transfer half your mana
-into it. Touching it when you are below
-maximum capacity will retrieve any stored
-mana, up to your capacity.
-This particular crystal can only store
-up to 200 mana. Crystals with capacities
-for 1000 mana and beyond are known to
-exist; and are very much sought after by
-all spellcasters.
+The Glowing Crystal exhibited here is one of the rare gemstones that are able to store mana.  Touching it when your mana is at maximum capacity will transfer half your mana into it.  Touching it when you are below maximum capacity will retrieve any stored mana, up to your capacity.  This particular crystal can only store up to 200 mana.  Crystals with capacities for 1000 mana and beyond are known to exist; and are very much sought after by all spellcasters.
 endmsg
 x 35
 y 11
@@ -6844,9 +6832,7 @@ arch wizard
 name master of transferrence
 msg
 @match *
-Welcome to the House of Power!
-Here, you will find an abundant supply of
-fresh mana at a fee.
+Welcome to the House of Power! Here, you will find an abundant supply of fresh mana at a fee.
 endmsg
 face wizard.151
 hp 100
@@ -7057,11 +7043,7 @@ arch tome
 name exposition
 title of magical powers
 msg
-There are two factors controlling one's magical powers: mana capacity, and mana regeneration rate. Mana is the force that drives magical spells; mana capacity is how much mana one can naturally have. Mana regeneration rate is how fast this mana is replenished.
-Mana capacity is controlled mainly by one's power (Pow) and level of magic experience.
-One's intelligence (Int) also affects this capacity, to a lesser degree.
-Some magical equipment grant Pow bonuses, which will increase this capacity while worn. Improvement potions may also permanently increase one's mana capacity.
-There are also very rare gemstones that have capacity to store mana. Mana stored in these crystals can be retrieved at a single touch. High-level wizards use these stones to increase the total amount of mana they have at their disposal.
+There are two factors controlling one's magical powers: mana capacity, and mana regeneration rate.  Mana is the force that drives magical spells; mana capacity is how much mana one can naturally have. Mana regeneration rate is how fast this mana is replenished.  Mana capacity is controlled mainly by one's power (Pow) and level of magic experience.  One's intelligence (Int) also affects this capacity, to a lesser degree.  Some magical equipment grant Pow bonuses, which will increase this capacity while worn.  Improvement potions may also permanently increase one's mana capacity.  There are also very rare gemstones that have capacity to store mana.  Mana stored in these crystals can be retrieved at a single touch.  High-level wizards use these stones to increase the total amount of mana they have at their disposal.
 endmsg
 x 37
 y 10
@@ -7081,25 +7063,10 @@ end
 arch tome
 title of Mana Regeneration
 msg
-Mana regeneration rate controls how fast
-one's mana is replenished. Some races,
-such as elves, have an innately fast mana
-regeneration. Spell-casting classes also
-regenerate mana at a faster rate.
-Besides this, the equipment one uses may
-also affect mana regeneration rate:
-o  some magical rings or amulets are
-resonant to the patterns of the aether,
-and cause mana to flow into the wearer
-faster. These items show a (magic+N)
-when identified.
-o  although some armour specially crafted
-for mages may increase mana regeneration,
-in general most heavy armour will impede
-the flow of mana into the wearer and
-slow down mana regeneration rates.
-o  Special weapons crafted for mages may
-also have mana regeneration bonuses.
+Mana regeneration rate controls how fast one's mana is replenished.  Some races, such as elves, have an innately fast mana regeneration.  Spell-casting classes also regenerate mana at a faster rate.  Besides this, the equipment one uses may also affect mana regeneration rate:
+o  Some magical rings or amulets are resonant to the patterns of the aether, and cause mana to flow into the wearer faster.  These items show a (magic+N) when identified.
+o  Although some armour specially crafted for mages may increase mana regeneration, in general most heavy armour will impede the flow of mana into the wearer and slow down mana regeneration rates.
+o  Special weapons crafted for mages may also have mana regeneration bonuses.
 endmsg
 x 37
 y 11
