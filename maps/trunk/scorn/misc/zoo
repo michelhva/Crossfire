@@ -8,7 +8,7 @@ enter_x 11
 enter_y 15
 msg
 Created:  1993-10-15
-Modified: 2011-08-24 Rick Tanner
+Modified: 2011-01-12 Rick Tanner
 endmsg
 end
 arch large_stones
@@ -360,8 +360,7 @@ end
 arch sign_w
 name How to get out!
 msg
-To get out, stand on one of the doors
-and press key 'a' to apply.
+To get out, stand on one of the doors and press key 'a' to apply.
 endmsg
 x 1
 y 17
@@ -13322,8 +13321,7 @@ y 2
 end
 arch sign_e
 msg
-You can also commit suicide by
-using the "quit" command, you know...
+You can also commit suicide by using the "quit" command, you know...
 endmsg
 x 45
 y 2
