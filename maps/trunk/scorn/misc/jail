@@ -8,7 +8,7 @@ height 15
 enter_y 7
 msg
 Created:  2001-10-17
-Modified: 2008-12-02 Rick Tanner
+Modified: 2012-01-12 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2902,7 +2902,7 @@ y 1
 end
 arch magic_mouth
 msg
-15 minutes
+15 minutes.
 endmsg
 x 14
 y 1
@@ -2934,7 +2934,7 @@ y 3
 end
 arch magic_mouth
 msg
-30 minutes
+30 minutes.
 endmsg
 x 14
 y 3
@@ -2966,7 +2966,7 @@ y 5
 end
 arch magic_mouth
 msg
-1 hour
+1 hour.
 endmsg
 x 14
 y 5
@@ -3031,7 +3031,7 @@ y 9
 end
 arch magic_mouth
 msg
-2 hours
+2 hours.
 endmsg
 x 14
 y 9
@@ -3063,7 +3063,7 @@ y 11
 end
 arch magic_mouth
 msg
-4 hours
+4 hours.
 endmsg
 x 14
 y 11
@@ -3095,8 +3095,7 @@ y 13
 end
 arch magic_mouth
 msg
-Get comfortable.. you're here for
-life
+Get comfortable.. you're here for life.
 endmsg
 x 14
 y 13
@@ -3133,8 +3132,7 @@ x 15
 end
 arch magic_mouth
 msg
-You have been jailed for 15 minutes
-for your actions
+You have been jailed for 15 minutes for your actions.
 endmsg
 x 15
 y 1
@@ -3178,8 +3176,7 @@ y 2
 end
 arch magic_mouth
 msg
-You have been jailed for 30 minutes
-for your actions
+You have been jailed for 30 minutes for your actions.
 endmsg
 x 15
 y 3
@@ -3223,8 +3220,7 @@ y 4
 end
 arch magic_mouth
 msg
-You have been jailed for 1 hour
-for your actions
+You have been jailed for 1 hour for your actions.
 endmsg
 x 15
 y 5
@@ -3294,8 +3290,7 @@ y 8
 end
 arch magic_mouth
 msg
-You have been jailed for 2 hours
-for your actions
+You have been jailed for 2 hours for your actions.
 endmsg
 x 15
 y 9
@@ -3339,8 +3334,7 @@ y 10
 end
 arch magic_mouth
 msg
-You have been jailed for 4 hours
-for your actions
+You have been jailed for 4 hours for your actions.
 endmsg
 x 15
 y 11
@@ -3383,8 +3377,7 @@ y 12
 end
 arch magic_mouth
 msg
-You have been jailed for life
-for your actions
+You have been jailed for life for your actions.
 endmsg
 x 15
 y 13
