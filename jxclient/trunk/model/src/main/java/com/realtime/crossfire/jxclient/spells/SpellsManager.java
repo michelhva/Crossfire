@@ -67,9 +67,16 @@ public class SpellsManager implements Iterable<Spell> {
     @NotNull
     private final List<Spell> spells = new CopyOnWriteArrayList<Spell>();
 
+    /**
+     * Spells currently exposed, based on the filter.
+     */
     @NotNull
     private final List<Spell> filteredSpells = new CopyOnWriteArrayList<Spell>();
 
+    /**
+     * Skill to filter spells by, as a skill id in {@link SkillSet}.
+     * -1 means to not filter.
+     */
     private int skillFilter = -1;
 
     /**
