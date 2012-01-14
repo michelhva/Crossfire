@@ -104,7 +104,7 @@ public class KnowledgeItem {
     @NotNull
     @Override
     public String toString() {
-        return "Tag:"+knowledgeIndex+" Type:"+getType()+" Title:"+title+" Face:"+faceNum;
+        return "Tag:"+knowledgeIndex+" Type:"+type+" Title:"+title+" Face:"+faceNum;
     }
 
     /**
