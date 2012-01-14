@@ -32,7 +32,7 @@ public class KnowledgeManager {
     private final Comparator<KnowledgeItem> knowledgeComparator = new Comparator<KnowledgeItem>() {
 
         @Override
-        public int compare(KnowledgeItem o1, KnowledgeItem o2) {
+        public int compare(final KnowledgeItem o1, final KnowledgeItem o2) {
             return o1.getKnowledgeTitle().compareTo(o2.getKnowledgeTitle());
         }
     };
@@ -152,14 +152,14 @@ public class KnowledgeManager {
         return types.size();
     }
 
-    public String getTypeName(int index) {
+    public String getTypeName(final int index) {
         if (index < 0 || index >= faces.size()) {
             return "";
         }
         return names.get(index);
     }
 
-    public int getTypeFace(int index) {
+    public int getTypeFace(final int index) {
         if (index < 0 || index >= faces.size()) {
             return 0;
         }

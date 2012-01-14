@@ -173,7 +173,7 @@ public class SpellsManager implements Iterable<Spell> {
     private final Comparator<Skill> skillComparator = new Comparator<Skill>() {
 
         @Override
-        public int compare(Skill o1, Skill o2) {
+        public int compare(final Skill o1, final Skill o2) {
             return o1.toString().compareTo(o2.toString());
         }
     };
@@ -381,7 +381,7 @@ public class SpellsManager implements Iterable<Spell> {
      * Filter spells to display by the specified skill index.
      * @param index skill index, should be less than getSpellSkills().
      */
-    public void filterSkill(int index) {
+    public void filterSkill(final int index) {
 
         if (index < 0 || index >= spellSkills.size()) {
             return;
@@ -442,7 +442,7 @@ public class SpellsManager implements Iterable<Spell> {
      * @return specified skill, null if index is invalid.
      */
     @Nullable
-    public Skill getSpellSkill(int index) {
+    public Skill getSpellSkill(final int index) {
         return 0 <= index && index < spellSkills.size() ? spellSkills.get(index) : null;
     }
 }
