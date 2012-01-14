@@ -15,11 +15,12 @@ text account_password input_active input_inactive font_label GRAY BLACK 1 comman
 label_failure account_login_error font_label BLACK
 
 commandlist command_account_do_login AND account_login ACCOUNT_LOGIN
-commandlist command_account_cancel_login AND null DIALOG_CLOSE account_login
-commandlist_add command_account_cancel_login null DIALOG_OPEN account_main
+commandlist command_account_create AND null DIALOG_OPEN account_create
+commandlist_add command_account_create null DIALOG_CLOSE account_login
 
 textbutton account_do_login false command_account_do_login Login
-textbutton account_cancel_login false command_account_cancel_login Cancel
+textbutton account_create false command_account_create Create
+textbutton account_quit false command_disconnect Disconnect
 
 hide_input account_password
 set_default account_login
@@ -54,7 +55,9 @@ horizontal begin par
     gap
     account_do_login
     gap 8
-    account_cancel_login
+    account_create
+    gap 8
+    account_quit
     gap
   end
 end
@@ -77,8 +80,9 @@ vertical begin seq
   gap 8
   begin par
     account_do_login
-    account_cancel_login
+    account_create
+    account_quit
   end
 end
 
-link_size horizontal account_do_login account_cancel_login
+link_size horizontal account_do_login account_create account_quit
