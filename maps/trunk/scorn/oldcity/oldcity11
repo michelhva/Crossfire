@@ -8,7 +8,7 @@ enter_x 4
 enter_y 15
 msg
 Created:  1993-10-05 skud the great (tvangod@ecst.csuchico.edu)
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-13 Rick Tanner
 endmsg
 tile_path_1 oldcity14
 tile_path_3 oldcity10
@@ -1220,14 +1220,14 @@ arch locked_door1
 name Temple Door
 slaying temple
 msg
-Locked
+Locked.
 endmsg
 x 4
 y 31
 end
 arch magic_mouth
 msg
-You enter a very old temple
+You enter a very old temple.
 endmsg
 x 4
 y 32
@@ -1530,9 +1530,7 @@ end
 arch scroll
 name Temple Scroll
 msg
-Bring forth the Cup.
-Bring forth the Crown.
-This will open your way down
+Bring forth the Cup.  Bring forth the Crown.  This will open your way down.
 endmsg
 x 5
 y 36
