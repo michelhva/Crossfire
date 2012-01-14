@@ -5,6 +5,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * @author nicolas
@@ -44,6 +45,7 @@ public class KnowledgeTypeView extends AbstractItemView {
         return knowledgeManager.getTypes();
     }
 
+    @Nullable
     @Override
     public CfItem getItem(final int index) {
         final Face face = facesManager.getFace(knowledgeManager.getTypeFace(index));
