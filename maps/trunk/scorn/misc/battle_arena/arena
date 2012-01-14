@@ -9,7 +9,7 @@ enter_x 3
 enter_y 3
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-10-20 Rick Tanner
+Modified: 2012-01-13 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -1328,8 +1328,7 @@ arch sailor
 name ARENA freak
 msg
 @match *
-Yeah, bash his brains in... bash them
-right the hell in!
+Yeah, bash his brains in... bash them right the hell in!
 endmsg
 hp 180
 maxhp 180
@@ -1586,8 +1585,7 @@ arch a_townsman
 name abraham
 msg
 @match *
-Why do people always have to fight?
-Is it really so much fun?
+Why do people always have to fight? Is it really so much fun?
 endmsg
 hp 150
 maxhp 150
@@ -1968,9 +1966,7 @@ end
 arch magic_mouth
 name 11
 msg
-Ladieees aaand Gentelmeeen!!
-The Gladiators are ready for
-Cooombaaat!
+Ladieees aaand Gentelmeeen!! The Gladiators are ready for Cooombaaat!
 endmsg
 x 4
 y 43
@@ -2090,8 +2086,7 @@ arch a_priest
 name medic
 msg
 @match *
-When a combatant gets badly injured,
-we save his life.
+When a combatant gets badly injured, we save his life.
 endmsg
 x 5
 y 10
@@ -2235,8 +2230,7 @@ arch a_priest
 name medic
 msg
 @match *
-When a combatant gets badly injured,
-we save his life.
+When a combatant gets badly injured, we save his life.
 endmsg
 x 5
 y 24
@@ -4004,8 +3998,7 @@ arch a_priest
 name medic
 msg
 @match *
-When a combatant gets badly injured,
-we save his life.
+When a combatant gets badly injured, we save his life.
 endmsg
 x 9
 y 5
@@ -4307,8 +4300,7 @@ arch a_priest
 name medic
 msg
 @match *
-When a combatant gets badly injured,
-we save his life.
+When a combatant gets badly injured, we save his life.
 endmsg
 x 9
 y 29
@@ -5413,8 +5405,7 @@ end
 arch wizard
 msg
 @match *
-Most gladiators don't know how to use
-magic efficiently!
+Most gladiators don't know how to use magic efficiently!
 endmsg
 face wizard.111
 hp 100
@@ -5490,8 +5481,7 @@ y 38
 end
 arch sign
 msg
-Use these handles to add obstacles of your choice to the arena.
-You have to agree with your opponent on the selection of obstacles.
+Use these handles to add obstacles of your choice to the arena.  You have to agree with your opponent on the selection of obstacles.
 endmsg
 x 11
 y 38
@@ -7592,10 +7582,7 @@ end
 arch sign
 name info
 msg
-Place your winning-bets on the red
-squares each. When you're both
-satisfied, pull the levers and step on
-the teleporters.
+Place your winning-bets on the red squares each. When you're both satisfied, pull the levers and step on the teleporters.
 endmsg
 x 15
 y 41
@@ -8750,9 +8737,7 @@ y 29
 end
 arch magic_mouth
 msg
-A cheering crowd is waiting for you
-upstairs... You are the hero of
-the day!
+A cheering crowd is waiting for you upstairs... You are the hero of the day!
 endmsg
 x 17
 y 29
@@ -10174,10 +10159,7 @@ end
 arch sign
 name info
 msg
-Place your winning-bets on the red
-squares each. When you're both
-satisfied, pull the levers and step on
-the teleporters.
+Place your winning-bets on the red squares each.  When you're both satisfied, pull the levers and step on the teleporters.
 endmsg
 x 19
 y 41
@@ -11903,9 +11885,7 @@ end
 arch fatman
 msg
 @match *
-*munch*, *munch*... Did you visit the
-snack-shop yet? It's on the other
-side... *munch*
+*munch*, *munch*... Did you visit the snack-shop yet? It's on the other side... *munch*
 endmsg
 hp 100
 maxhp 100
@@ -12409,8 +12389,7 @@ y 38
 end
 arch sign
 msg
-Use these handles to add obstacles of your choice to the arena.
-You have to agree with your opponent on the selection of obstacles.
+Use these handles to add obstacles of your choice to the arena.  You have to agree with your opponent on the selection of obstacles.
 endmsg
 x 23
 y 38
@@ -13031,8 +13010,7 @@ arch a_priest
 name medic
 msg
 @match *
-When a combatant gets badly injured,
-we save his life.
+When a combatant gets badly injured, we save his life.
 endmsg
 x 25
 y 5
@@ -13426,8 +13404,7 @@ arch a_priest
 name medic
 msg
 @match *
-When a combatant gets badly injured,
-we save his life.
+When a combatant gets badly injured, we save his life.
 endmsg
 x 25
 y 29
@@ -15203,8 +15180,7 @@ arch a_priest
 name medic
 msg
 @match *
-When a combatant gets badly injured,
-we save his life.
+When a combatant gets badly injured, we save his life.
 endmsg
 x 29
 y 10
@@ -15348,8 +15324,7 @@ arch a_priest
 name medic
 msg
 @match *
-When a combatant gets badly injured,
-we save his life.
+When a combatant gets badly injured, we save his life.
 endmsg
 x 29
 y 24
@@ -15988,8 +15963,7 @@ arch a_priest
 name medic
 msg
 @match *
-At the first-aide station we bring all
-the gladiators back to perfect health.
+At the first-aide station we bring all the gladiators back to perfect health.
 endmsg
 x 31
 y 4
@@ -16661,8 +16635,7 @@ arch courier
 name man
 msg
 @match *
-You can learn a lot by watching other
-people fight. Come, sit down.
+You can learn a lot by watching other people fight.  Come, sit down.
 endmsg
 x 32
 y 22
