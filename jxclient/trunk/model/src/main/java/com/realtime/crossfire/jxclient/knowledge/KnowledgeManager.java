@@ -5,6 +5,7 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.EventListener;
@@ -44,7 +45,7 @@ public class KnowledgeManager {
     private final List<String> names = new ArrayList<String>();
     private final List<Integer> faces = new ArrayList<Integer>();
     private final List<Boolean> attempt = new ArrayList<Boolean>();
-    private final List<KnowledgeItem> items = new ArrayList<KnowledgeItem>();
+    private final Collection<KnowledgeItem> items = new ArrayList<KnowledgeItem>();
     private final List<KnowledgeItem> filteredItems = new ArrayList<KnowledgeItem>();
     private String typeFilter = "";
 
