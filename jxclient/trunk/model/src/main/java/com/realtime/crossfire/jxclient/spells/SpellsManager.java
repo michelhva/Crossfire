@@ -40,7 +40,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Manages all known spells. Spells are filtered by skill through the function filterSkill().
+ * Manages all known spells. Spells are filtered by skill through the function
+ * filterSkill().
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
@@ -74,8 +75,8 @@ public class SpellsManager implements Iterable<Spell> {
     private final List<Spell> filteredSpells = new CopyOnWriteArrayList<Spell>();
 
     /**
-     * Skill to filter spells by, as a skill id in {@link SkillSet}.
-     * -1 means to not filter.
+     * Skill to filter spells by, as a skill id in {@link SkillSet}. -1 means to
+     * not filter.
      */
     private int skillFilter = -1;
 
@@ -393,7 +394,7 @@ public class SpellsManager implements Iterable<Spell> {
 
         skillFilter = id;
         filterSpells();
-        
+
         for (final SpellsManagerListener listener : listeners.getListeners()) {
             listener.spellAdded(0);
         }
@@ -418,8 +419,9 @@ public class SpellsManager implements Iterable<Spell> {
         spellSkills.clear();
         for (final Spell spell : spells) {
             final Skill skill = skillSet.getSkill(spell.getSkill());
-            if (skill != null && !spellSkills.contains(skill))
+            if (skill != null && !spellSkills.contains(skill)) {
                 spellSkills.add(skill);
+            }
         }
         Collections.sort(spellSkills, skillComparator);
         spellSkills.add(0, skillAll);

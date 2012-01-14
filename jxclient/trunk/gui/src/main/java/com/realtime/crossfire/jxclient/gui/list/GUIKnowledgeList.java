@@ -35,7 +35,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- *
  * @author nicolas
  */
 public class GUIKnowledgeList extends GUIItemList {
@@ -63,6 +62,7 @@ public class GUIKnowledgeList extends GUIItemList {
      */
     @NotNull
     private final ItemView itemView;
+
     /**
      * The {@link ItemPainter} for painting the icon.
      */

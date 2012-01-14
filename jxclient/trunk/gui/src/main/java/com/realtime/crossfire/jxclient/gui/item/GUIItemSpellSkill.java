@@ -39,7 +39,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- *
  * @author Nicolas Weeger
  */
 public class GUIItemSpellSkill extends GUIItemItem {
@@ -145,7 +144,8 @@ public class GUIItemSpellSkill extends GUIItemItem {
      * @param facesManager the faces manager for looking up faces
      * @param spellsManager the spells manager instance to watch
      * @param spellsView the spells view to use
-     * @param defaultSkillIcon the default icon to use the skills if not defined
+     * @param defaultSkillIcon the default icon to use the skills if not
+     * defined
      * @param size the size of the component or <code>0</code> for undefined
      */
     public GUIItemSpellSkill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final ItemView spellsView, @NotNull final FaceImages defaultSkillIcon, final int size) {

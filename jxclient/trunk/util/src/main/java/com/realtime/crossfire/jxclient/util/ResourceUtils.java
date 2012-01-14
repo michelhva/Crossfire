@@ -61,6 +61,7 @@ public class ResourceUtils {
      */
     @NotNull
     public static final String ALL_SPELL_SKILLS_ICON = "all_spell_skills_icon.png";
+
     /**
      * Private constructor to prevent instantiation.
      */

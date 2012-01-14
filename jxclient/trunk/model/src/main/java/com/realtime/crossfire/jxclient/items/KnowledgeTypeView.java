@@ -7,14 +7,15 @@ import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
  * @author nicolas
  */
 public class KnowledgeTypeView extends AbstractItemView {
 
     @NotNull
     private final KnowledgeManager knowledgeManager;
-    @NotNull final FacesManager facesManager;
+
+    @NotNull
+    final FacesManager facesManager;
 
     public KnowledgeTypeView(@NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager) {
         this.facesManager = facesManager;

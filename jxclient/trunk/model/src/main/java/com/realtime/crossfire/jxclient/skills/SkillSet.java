@@ -172,15 +172,16 @@ public class SkillSet {
     }
 
     /**
-     * Get a skill identifier from the skill name.
-     * This identifier can be used through {@link #getSkill}.
+     * Get a skill identifier from the skill name. This identifier can be used
+     * through {@link #getSkill}.
      * @param name skill's name
      * @return skill's identifier, -1 if invalid skill
      */
     public int getSkillId(final String name) {
         for (int i = 0; i < numberedSkills.length; i++) {
-            if (numberedSkills[i] != null && numberedSkills[i].toString().equals(name))
-                return i + Stats.CS_STAT_SKILLINFO;
+            if (numberedSkills[i] != null && numberedSkills[i].toString().equals(name)) {
+                return i+Stats.CS_STAT_SKILLINFO;
+            }
         }
         return -1;
     }
