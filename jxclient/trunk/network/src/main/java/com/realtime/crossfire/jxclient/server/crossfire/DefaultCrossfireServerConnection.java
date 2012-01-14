@@ -1986,7 +1986,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                             continue;
                         }
 
-                        int face = -1;
+                        int face;
                         try {
                             face = Integer.parseInt(sk[2]);
                         } catch (final NumberFormatException ignored) {
