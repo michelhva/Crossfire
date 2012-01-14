@@ -40,6 +40,11 @@ import org.jetbrains.annotations.Nullable;
 public class GUIKnowledgeList extends GUIItemList {
 
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1L;
+
+    /**
      * The {@link TooltipManager} to update.
      */
     @NotNull
