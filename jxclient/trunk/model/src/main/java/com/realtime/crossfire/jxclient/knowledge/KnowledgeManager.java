@@ -7,8 +7,8 @@ import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
 import java.util.EventListener;
+import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
