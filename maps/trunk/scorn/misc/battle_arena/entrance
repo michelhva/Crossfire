@@ -9,7 +9,7 @@ enter_x 11
 enter_y 24
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-11-03 Rick Tanner
+Modified: 2012-01-13 Rick Tanner
 endmsg
 end
 arch pstone_2
@@ -339,8 +339,7 @@ arch veiled_woman3
 name veiled woman
 msg
 @match *
-I want to get in! Could you buy me
-a ticket please?
+I want to get in! Could you buy me a ticket please?
 endmsg
 x 1
 y 10
@@ -684,10 +683,7 @@ arch man
 name ticket-vendor
 msg
 @match *
-Buy an arena ticket. Watching the
-gladiator's duels is so much fun...
-It costs only 500 diamonds, and you
-get one bag of popcorn for free.
+Buy an arena ticket.  Watching the gladiator's duels is so much fun... It costs only 500 diamonds, and you get one bag of popcorn for free.
 endmsg
 hp 180
 maxhp 180
@@ -1062,9 +1058,7 @@ arch knight
 name Arena Guard
 msg
 @match *
-To enter the terraces of the arena,
-drop 50 platinum on the desk or buy
-a ticket.
+To enter the terraces of the arena, drop 50 platinum on the desk or buy a ticket.
 endmsg
 x 5
 y 7
@@ -1129,10 +1123,7 @@ end
 arch magic_mouth
 name 5
 msg
-The ticket-vendor says:
-Here is your ARENA ticket. Now you
-can enter the terraces of the arena
-whenever you want.
+The ticket-vendor says: Here is your ARENA ticket.  Now you can enter the terraces of the arena whenever you want.
 endmsg
 x 5
 y 15
@@ -1614,9 +1605,7 @@ end
 arch sign_w
 name permanent tickets
 msg
-Two ways of entering the terraces of the
-area: Pay 50 plat to the guards each
-time, or buy a permanent ticket once!
+Two ways of entering the terraces of the area: Pay 50 plat to the guards each time, or buy a permanent ticket once!
 endmsg
 x 8
 y 15
@@ -2000,10 +1989,7 @@ arch lesser_dwarven_guard
 name ARENA director
 msg
 @match *
-Welcome, gladiators! Drop 100 platinum
-on the desk and step onto the
-teleporters. Obviously two players are
-required to enter.
+Welcome, gladiators! Drop 100 platinum on the desk and step onto the teleporters.  Obviously two players are required to enter.
 endmsg
 sp 0
 maxsp 0
@@ -2086,12 +2072,7 @@ arch sign
 msg
 All payments are final. No refunds.
 -=-=-=-=-=-=-=-=-=-
-Items placed up for betting are
-forfeit if one or both players quit
-the arena before a final decision
-(kill) is made. Items will be sold
-to defray the cost of refunding
-the spectator fees.
+Items placed up for betting are forfeit if one or both players quit the arena before a final decision (kill) is made.  Items will be sold to defray the cost of refunding the spectator fees.
 endmsg
 x 11
 y 6
@@ -2125,10 +2106,7 @@ end
 arch sign
 name gladiator's registry office
 msg
-Ever wanted to battle your friends
-without having to fear death?
-- Then step ahead. (If the spikes are
-closed the ARENA is already occupied.)
+Ever wanted to battle your friends without having to fear death? - Then step ahead. (If the spikes are closed the ARENA is already occupied.)
 endmsg
 x 11
 y 10
@@ -2180,14 +2158,9 @@ end
 arch sign
 name welcome
 msg
-Welcome to the famous battle-ARENA!
-If you don't know how it works, visit
-the info point to the right.
+Welcome to the famous battle-ARENA! If you don't know how it works, visit the info point to the right.
 ----------------------------
-This map (as well as the whole arena
-concept) was created by Andreas Vogl.
-Please send impressions, ideas and
-bug reports to <red.blaze@gmx.net>.
+This map (as well as the whole arena concept) was created by Andreas Vogl.  Please send impressions, ideas and bug reports to <red.blaze@gmx.net>.
 endmsg
 x 11
 y 21
@@ -2483,9 +2456,7 @@ msg
 @match sword|arena
 "there can only be ONE"...
 @match *
-Man those souvenirs are SO cool.
-If I had any money left I would buy
-that sword...
+Man those souvenirs are SO cool.  If I had any money left I would buy that sword...
 endmsg
 x 13
 y 17
@@ -2680,8 +2651,7 @@ end
 arch sign_e
 name ARENA info point
 msg
-Here you'll find everything what you
-need to know about the ARENA.
+Here you'll find everything what you need to know about the ARENA.
 endmsg
 x 14
 y 21
@@ -3009,9 +2979,7 @@ end
 arch sage
 msg
 @match *
-I'm doomed to stand here just because
-the map-maker thought that books can't
-exist without a sage gambling around.
+I'm doomed to stand here just because the map-maker thought that books can't exist without a sage gambling around.
 endmsg
 x 16
 y 19
@@ -3120,9 +3088,7 @@ arch knight
 name Arena Guard
 msg
 @match *
-To enter the terraces of the arena,
-drop 50 platinum on the desk or buy
-a ticket.
+To enter the terraces of the arena, drop 50 platinum on the desk or buy a ticket.
 endmsg
 x 17
 y 7
@@ -3234,10 +3200,7 @@ end
 arch book_clasp
 name instructions, part 4
 msg
-In the ARENA, peaceful mode will
-automatically be ignored. That means
-by running into your opponent you will
-hit instead of just pushing him.
+In the ARENA, peaceful mode will automatically be ignored.  That means by running into your opponent you will hit instead of just pushing him.
 endmsg
 x 17
 y 19
@@ -3434,12 +3397,7 @@ end
 arch book_clasp
 name instructions, part 3
 msg
-The looser will find himself in the
-first-aide station. No loss of exp nor
-stats. Moreover, inside the ARENA
-draining attacks don't take effect and
-acid doesn't harm equipment.
-So there is NOTHING to be afraid of ;-)
+The looser will find himself in the first-aide station.  No loss of exp nor stats.  Moreover, inside the ARENA draining attacks don't take effect and acid doesn't harm equipment.  So there is NOTHING to be afraid of ;-)
 endmsg
 x 18
 y 19
@@ -3457,14 +3415,7 @@ end
 arch book_clasp
 name instructions, part 2
 msg
-Before combat, both players have the
-option of placing winning-bets. The one
-who is victorious on battleground
-will gain all of that treasure. And
-he will also get one finger of the
-defeated foe - the trophy for his
-heroic victory.
-But he will definitely NOT gain his exp!
+Before combat, both players have the option of placing winning-bets.  The one who is victorious on battleground will gain all of that treasure.  And he will also get one finger of the defeated foe - the trophy for his heroic victory.  But he will definitely NOT gain his exp!
 endmsg
 x 18
 y 20
@@ -3482,11 +3433,7 @@ end
 arch book_clasp
 name instructions, part 1
 msg
-The ARENA is a place where friends
-can fight each other without facing
-death penalties. Two players and
-1000 platinum are needed to enter.
-(go to the registration office north)
+The ARENA is a place where friends can fight each other without facing death penalties.  Two players and 1000 platinum are needed to enter. (Go to the registration office north.)
 endmsg
 x 18
 y 21
