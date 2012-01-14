@@ -302,10 +302,11 @@ public class GUIItemKnowledge extends GUIItemItem {
      */
     @Override
     public void button2Clicked(final int modifiers) {
-        if (!knowledgeManager.canAttemptType(item.getType())) {
+        if (item == null || !knowledgeManager.canAttemptType(item.getType())) {
             return;
         }
 
+        assert item != null;
         commandQueue.sendNcom(false, "knowledge attempt "+item.getKnowledgeIndex());
     }
 
