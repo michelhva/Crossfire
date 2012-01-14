@@ -93,7 +93,7 @@ public class GUIItemSpellSkill extends GUIItemItem {
      * The spells view to use.
      */
     @NotNull
-    private final ItemView skillSpellsView;
+    private final ItemView itemView;
 
     /**
      * The {@link SpellsManagerListener} used to detect spell changes.
@@ -143,12 +143,12 @@ public class GUIItemSpellSkill extends GUIItemItem {
      * @param defaultIndex the default scroll index
      * @param facesManager the faces manager for looking up faces
      * @param spellsManager the spells manager instance to watch
-     * @param spellsView the spells view to use
+     * @param itemView the spells view to use
      * @param defaultSkillIcon the default icon to use the skills if not
      * defined
      * @param size the size of the component or <code>0</code> for undefined
      */
-    public GUIItemSpellSkill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final ItemView spellsView, @NotNull final FaceImages defaultSkillIcon, final int size) {
+    public GUIItemSpellSkill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final ItemView itemView, @NotNull final FaceImages defaultSkillIcon, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
@@ -156,7 +156,7 @@ public class GUIItemSpellSkill extends GUIItemItem {
         setIndex(defaultIndex);
         this.spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
         this.facesManager.addFacesManagerListener(facesManagerListener);
-        this.skillSpellsView = spellsView;
+        this.itemView = itemView;
         this.defaultSkillIcon = defaultSkillIcon;
         if (size != 0) {
             setSize(size, size);
@@ -313,7 +313,7 @@ public class GUIItemSpellSkill extends GUIItemItem {
             this.index = index;
         }
 
-        setItemNoListeners(skillSpellsView.getItem(this.index));
+        setItemNoListeners(itemView.getItem(this.index));
     }
 
     /**

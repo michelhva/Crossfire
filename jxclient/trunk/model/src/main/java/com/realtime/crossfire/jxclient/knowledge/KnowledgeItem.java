@@ -63,11 +63,11 @@ public class KnowledgeItem {
      * @param name the spell name
      * @param skillSet the skills
      */
-    public KnowledgeItem(final int index, @NotNull final String type, @NotNull final String title, final int face) {
-        this.knowledgeIndex = index;
+    public KnowledgeItem(final int knowledgeIndex, @NotNull final String type, @NotNull final String title, final int faceNum) {
+        this.knowledgeIndex = knowledgeIndex;
         this.type = type;
         this.title = title;
-        this.faceNum = face;
+        this.faceNum = faceNum;
     }
 
     /**

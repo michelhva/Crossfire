@@ -449,9 +449,9 @@ public class JXCSkinLoader {
      * @param commandHistoryFactory the command history factory to us
      * @param questsManager the quests manager instance to use
      * @param knowledgeView the knowledge view to use
-     * @param knowledgeTypes the knowledge types view to use
+     * @param knowledgeTypeView the knowledge type view to use
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull final KnowledgeManager knowledgeManager, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypes) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull final KnowledgeManager knowledgeManager, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypeView) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
@@ -473,7 +473,7 @@ public class JXCSkinLoader {
         this.questView = questView;
         this.knowledgeManager = knowledgeManager;
         this.knowledgeView = knowledgeView;
-        this.knowledgeTypeView = knowledgeTypes;
+        this.knowledgeTypeView = knowledgeTypeView;
     }
 
     /**
