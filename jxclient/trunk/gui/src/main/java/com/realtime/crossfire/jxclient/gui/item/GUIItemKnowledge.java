@@ -126,11 +126,11 @@ public class GUIItemKnowledge extends GUIItemItem {
 
         knowledgeManager.addKnowledgeListener(new KnowledgeManager.KnowledgeListener() {
             @Override
-            public void typeAdded(int index) {
+            public void typeAdded(final int index) {
             }
 
             @Override
-            public void knowledgeAdded(int index) {
+            public void knowledgeAdded(final int index) {
                 if (GUIItemKnowledge.this.index >= index) {
                     setKnowledgeItem();
                 }
@@ -288,7 +288,7 @@ public class GUIItemKnowledge extends GUIItemItem {
      * {@inheritDoc}
      */
     @Override
-    public void button1Clicked(int modifiers) {
+    public void button1Clicked(final int modifiers) {
         if (item == null) {
             return;
         }
@@ -300,7 +300,7 @@ public class GUIItemKnowledge extends GUIItemItem {
      * {@inheritDoc}
      */
     @Override
-    public void button2Clicked(int modifiers) {
+    public void button2Clicked(final int modifiers) {
         if (!knowledgeManager.canAttemptType(item.getType())) {
             return;
         }
@@ -312,6 +312,6 @@ public class GUIItemKnowledge extends GUIItemItem {
      * {@inheritDoc}
      */
     @Override
-    public void button3Clicked(int modifiers) {
+    public void button3Clicked(final int modifiers) {
     }
 }

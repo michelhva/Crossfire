@@ -110,7 +110,7 @@ public class Skill {
      * Defines the skill's face.
      * @param face new face index.
      */
-    public void setFace(int face) {
+    public void setFace(final int face) {
         this.face = face;
     }
 

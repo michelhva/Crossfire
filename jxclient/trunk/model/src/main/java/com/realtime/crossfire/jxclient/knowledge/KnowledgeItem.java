@@ -39,13 +39,13 @@ public class KnowledgeItem {
     /**
      * The knowledge identifier.
      */
-    private int knowledgeIndex;
+    private final int knowledgeIndex;
 
     /**
      * The knowledge's type.
      */
     @NotNull
-    private String type;
+    private final String type;
 
     /**
      * The description.
@@ -56,7 +56,7 @@ public class KnowledgeItem {
     /**
      * The face number.
      */
-    private int faceNum;
+    private final int faceNum;
 
     /**
      * Creates a new instance.

@@ -152,7 +152,7 @@ public class GUISpellSkillList extends GUIItemList {
      * {@inheritDoc}
      */
     @Override
-    protected void selectionChanged(int selectedIndex) {
+    protected void selectionChanged(final int selectedIndex) {
         if (spellsManager == null) {
             return;
         }

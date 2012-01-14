@@ -118,14 +118,14 @@ public class GUIItemKnowledgeType extends GUIItemItem {
 
         knowledgeManager.addKnowledgeListener(new KnowledgeManager.KnowledgeListener() {
             @Override
-            public void typeAdded(int index) {
+            public void typeAdded(final int index) {
                 if (GUIItemKnowledgeType.this.index >= index) {
                     setSkill();
                 }
             }
 
             @Override
-            public void knowledgeAdded(int index) {
+            public void knowledgeAdded(final int index) {
             }
         });
         facesManager.addFacesManagerListener(facesManagerListener);
@@ -275,20 +275,20 @@ public class GUIItemKnowledgeType extends GUIItemItem {
      * {@inheritDoc}
      */
     @Override
-    public void button1Clicked(int modifiers) {
+    public void button1Clicked(final int modifiers) {
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public void button2Clicked(int modifiers) {
+    public void button2Clicked(final int modifiers) {
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public void button3Clicked(int modifiers) {
+    public void button3Clicked(final int modifiers) {
     }
 }

@@ -320,20 +320,20 @@ public class GUIItemSpellSkill extends GUIItemItem {
      * {@inheritDoc}
      */
     @Override
-    public void button1Clicked(int modifiers) {
+    public void button1Clicked(final int modifiers) {
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public void button2Clicked(int modifiers) {
+    public void button2Clicked(final int modifiers) {
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public void button3Clicked(int modifiers) {
+    public void button3Clicked(final int modifiers) {
     }
 }

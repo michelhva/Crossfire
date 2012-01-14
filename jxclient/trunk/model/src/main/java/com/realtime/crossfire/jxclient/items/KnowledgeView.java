@@ -24,11 +24,11 @@ public class KnowledgeView extends AbstractItemView {
         this.knowledgeManager = knowledgeManager;
         knowledgeManager.addKnowledgeListener(new KnowledgeManager.KnowledgeListener() {
             @Override
-            public void typeAdded(int index) {
+            public void typeAdded(final int index) {
             }
 
             @Override
-            public void knowledgeAdded(int index) {
+            public void knowledgeAdded(final int index) {
                 addModifiedRange(0, knowledgeManager.getKnowledgeCount());
             }
         });
@@ -46,7 +46,7 @@ public class KnowledgeView extends AbstractItemView {
     }
 
     @Override
-    public CfItem getItem(int index) {
+    public CfItem getItem(final int index) {
         final KnowledgeItem item = knowledgeManager.getKnowledge(index);
         if (item == null) {
             return null;

@@ -110,7 +110,7 @@ public class GUIKnowledgeTypeList extends GUIItemList {
      * {@inheritDoc}
      */
     @Override
-    protected void selectionChanged(int selectedIndex) {
+    protected void selectionChanged(final int selectedIndex) {
         if (knowledgeManager == null) {
             return;
         }

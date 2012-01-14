@@ -22,12 +22,12 @@ public class KnowledgeTypeView extends AbstractItemView {
         this.knowledgeManager = knowledgeManager;
         knowledgeManager.addKnowledgeListener(new KnowledgeManager.KnowledgeListener() {
             @Override
-            public void typeAdded(int index) {
+            public void typeAdded(final int index) {
                 addModifiedRange(0, knowledgeManager.getTypes());
             }
 
             @Override
-            public void knowledgeAdded(int index) {
+            public void knowledgeAdded(final int index) {
             }
         });
         facesManager.addFacesManagerListener(new FacesManagerListener() {
@@ -45,7 +45,7 @@ public class KnowledgeTypeView extends AbstractItemView {
     }
 
     @Override
-    public CfItem getItem(int index) {
+    public CfItem getItem(final int index) {
         final Face face = facesManager.getFace(knowledgeManager.getTypeFace(index));
         return new CfItem(0, 0, 0, 0, face, knowledgeManager.getTypeName(index), knowledgeManager.getTypeName(index), 0, 0, 0, 0);
     }
