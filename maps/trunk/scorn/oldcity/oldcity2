@@ -8,7 +8,7 @@ enter_x 7
 enter_y 1
 msg
 Created:  1999-01-03
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-13 Rick Tanner
 endmsg
 tile_path_1 oldcity1
 tile_path_3 oldcity3
@@ -1397,9 +1397,7 @@ y 10
 end
 arch magic_mouth
 msg
-You notice as you continue that the old
-streets seem to be in better shape. Perhaps
-this was the richer end of Old City.
+You notice as you continue that the old streets seem to be in better shape.  Perhaps this was the richer end of Old City.
 endmsg
 x 6
 y 11
@@ -2457,8 +2455,7 @@ end
 arch sign
 name old sign
 msg
-The Swift Sword Inn
-Lady's Night every Wednesday
+The Swift Sword Inn .. Lady's Night every Wednesday.
 endmsg
 x 11
 y 6
@@ -2702,7 +2699,7 @@ y 4
 end
 arch magic_mouth
 msg
-It smells bad in here.....kinda like goblins
+It smells bad in here.....kinda like goblins.
 endmsg
 x 12
 y 5
