@@ -31,6 +31,7 @@ public class KnowledgeManager {
      */
     private final Comparator<KnowledgeItem> knowledgeComparator = new Comparator<KnowledgeItem>() {
 
+        @Override
         public int compare(KnowledgeItem o1, KnowledgeItem o2) {
             return o1.getKnowledgeTitle().compareTo(o2.getKnowledgeTitle());
         }
