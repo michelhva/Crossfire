@@ -8,7 +8,7 @@ enter_x 18
 enter_y 11
 msg
 Created:  1993-10-16
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-13 Rick Tanner
 endmsg
 tile_path_1 oldcity10
 tile_path_3 oldcity2
@@ -771,11 +771,7 @@ y 5
 end
 arch magic_mouth
 msg
-You see a small stream, is winds its way
-through the rubble of the old city. You see
-several pipes running upwards and you realize
-that this stream provides water to the city
-streets above
+You see a small stream, is winds its way through the rubble of the old city.  You see several pipes running upwards and you realize that this stream provides water to the city streets above.
 endmsg
 x 7
 y 6
@@ -1396,8 +1392,7 @@ y 17
 end
 arch magic_mouth
 msg
-You see a hole in the south wall beyond the
-rubble
+You see a hole in the south wall beyond the rubble.
 endmsg
 x 12
 y 18
@@ -1452,8 +1447,7 @@ arch small_troll
 name Gnad
 msg
 @match *
-MY TREASURE!!!! MY TREASURE!!!!
-Stay away!!!
+MY TREASURE!!!! MY TREASURE!!!! Stay away!!!
 endmsg
 hp 20
 maxhp 20
@@ -2127,9 +2121,7 @@ end
 arch letter
 name blood smeared letter
 msg
-t h eee old city is infested with be asts!!
-The....monsters have been coming throu....
-through....a......a.......
+t h eee old city is infested with be asts!! The....monsters have been coming throu.... through....a......a.......
 endmsg
 x 18
 y 10
