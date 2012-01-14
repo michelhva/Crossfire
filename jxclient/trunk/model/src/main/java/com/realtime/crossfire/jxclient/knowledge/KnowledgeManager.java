@@ -129,7 +129,7 @@ public class KnowledgeManager {
 
     public void addKnowledgeType(final String type, final String name, final int face, final boolean canAttempt) {
         types.add(type);
-        if (type.equals("")) {
+        if (type.isEmpty()) {
             names.add("All types");
         } else {
             names.add(name);
