@@ -266,13 +266,13 @@ public class JXCSkinLoader {
     private final QuestsManager questsManager;
 
     @NotNull
-    final KnowledgeManager knowledgeManager;
+    private final KnowledgeManager knowledgeManager;
 
     @NotNull
-    final KnowledgeTypeView knowledgeTypeView;
+    private final KnowledgeTypeView knowledgeTypeView;
 
     @NotNull
-    final KnowledgeView knowledgeView;
+    private final KnowledgeView knowledgeView;
 
     /**
      * The {@link FacesManager} instance to use.

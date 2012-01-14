@@ -17,7 +17,7 @@ public class KnowledgeView extends AbstractItemView {
     private final KnowledgeManager knowledgeManager;
 
     @NotNull
-    final FacesManager facesManager;
+    private final FacesManager facesManager;
 
     public KnowledgeView(@NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager) {
         this.facesManager = facesManager;
