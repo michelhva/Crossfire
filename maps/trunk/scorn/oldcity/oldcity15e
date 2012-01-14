@@ -8,7 +8,7 @@ enter_x 39
 enter_y 6
 msg
 Created:  1993-10-07 skud the great (tvangod@ecst.csuchico.edu)
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-13 Rick Tanner
 endmsg
 tile_path_4 oldcity15
 end
@@ -404,9 +404,7 @@ y 2
 end
 arch magic_mouth
 msg
-This water is salty, probably
-connected to the ocean port outside of
-Scorn
+This water is salty, probably connected to the ocean port outside of Scorn.
 endmsg
 x 2
 y 3
@@ -849,11 +847,7 @@ end
 arch scroll
 name Warn scroll
 msg
-Open to the ocean, from the docks I
-cast the crown of our king. Strangely,
-it made no splash in the darkness. I
-wonder to this day if the crown rests
-at the bottom of the sea
+Open to the ocean, from the docks I cast the crown of our king.  Strangely, it made no splash in the darkness.  I wonder to this day if the crown rests at the bottom of the sea.
 endmsg
 x 3
 y 27
@@ -2366,14 +2360,7 @@ end
 arch book_read
 name Book of Rituals
 msg
-Written by Per-ta-loche, high Priest of
-the black order.
-*Most of the book is*
-*unreadable*
-In order to cast open the portal the
-left must contain the crown, the right
-must contain the chalice. Only then
-will the portal open...and...
+Written by Per-ta-loche, high Priest of the black order.  *Most of the book is unreadable* In order to cast open the portal the left must contain the crown, the right must contain the chalice.  Only then will the portal open...and...
 endmsg
 x 9
 y 35
@@ -2581,8 +2568,7 @@ y 29
 end
 arch magic_mouth
 msg
-You enter the tiger pit and see
-something in the corner of the room.
+You enter the tiger pit and see something in the corner of the room.
 endmsg
 x 10
 y 30
