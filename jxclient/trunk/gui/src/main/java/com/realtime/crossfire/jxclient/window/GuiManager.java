@@ -377,7 +377,7 @@ public class GuiManager {
         }
         windowRenderer.setGuiState(RendererGuiState.ACCOUNT);
         hideAccountWindows();
-        openDialogByName("account_main");
+        openDialogByName("account_login");
     }
 
     /**
@@ -398,7 +398,6 @@ public class GuiManager {
         closeDialogByName("account_login");
         closeDialogByName("account_create");
         closeDialogByName("account_characters");
-        closeDialogByName("account_main");
         closeDialogByName("account_link");
         closeDialogByName("account_character_new");
         closeDialogByName("account_password");

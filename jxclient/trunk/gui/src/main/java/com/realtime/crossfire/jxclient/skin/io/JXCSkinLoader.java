@@ -534,7 +534,7 @@ public class JXCSkinLoader {
             skin.addDialog("disconnect");
             skin.addDialog("connect");
             skin.addDialog("start");
-            skin.addDialog("account_main");
+            skin.addDialog("account_login");
             skin.addDialog("account_characters");
             definedFonts.clear();
             textButtonFactory = null;
