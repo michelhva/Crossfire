@@ -117,12 +117,14 @@ public class GUIItemKnowledgeType extends GUIItemItem {
         setIndex(defaultIndex);
 
         knowledgeManager.addKnowledgeListener(new KnowledgeManager.KnowledgeListener() {
+            @Override
             public void typeAdded(int index) {
                 if (GUIItemKnowledgeType.this.index >= index) {
                     setSkill();
                 }
             }
 
+            @Override
             public void knowledgeAdded(int index) {
             }
         });

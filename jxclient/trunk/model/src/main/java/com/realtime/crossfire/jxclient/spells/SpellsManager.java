@@ -172,6 +172,7 @@ public class SpellsManager implements Iterable<Spell> {
      */
     private final Comparator<Skill> skillComparator = new Comparator<Skill>() {
 
+        @Override
         public int compare(Skill o1, Skill o2) {
             return o1.toString().compareTo(o2.toString());
         }
