@@ -1,3 +1,24 @@
+/*
+ * This file is part of JXClient, the Fullscreen Java Crossfire Client.
+ *
+ * JXClient is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * JXClient is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with JXClient; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ *
+ * Copyright (C) 2005-2008 Yann Chachkoff.
+ * Copyright (C) 2006-2011 Andreas Kirschbaum.
+ */
+
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.Face;
@@ -93,8 +114,9 @@ public class GUIItemKnowledge extends GUIItemItem {
      * @param defaultIndex the default scroll index
      * @param facesManager the faces manager for looking up faces
      * @param knowledgeManager the knowledge manager instance to watch
+     * @param size the size of the component or <code>0</code> for undefined
      */
-    public GUIItemKnowledge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemView view, @NotNull final CommandQueue commandQueue) {
+    public GUIItemKnowledge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemView view, @NotNull final CommandQueue commandQueue, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.defaultIndex = defaultIndex;
         this.facesManager = facesManager;
@@ -114,6 +136,9 @@ public class GUIItemKnowledge extends GUIItemItem {
             }
         });
         facesManager.addFacesManagerListener(facesManagerListener);
+        if (size != 0) {
+            setSize(size, size);
+        }
     }
 
     /**

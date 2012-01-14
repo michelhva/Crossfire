@@ -127,8 +127,9 @@ public class GUIItemFloor extends GUIItemItem {
      * @param facesManager the faces manager instance to use
      * @param nextGroupFace the image for "prev group of items"
      * @param prevGroupFace the image for "next group of items"
+     * @param size the size of the component or <code>0</code> for undefined
      */
-    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView floorView, @NotNull final ItemSet itemSet, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) {
+    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView floorView, @NotNull final ItemSet itemSet, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
@@ -139,6 +140,9 @@ public class GUIItemFloor extends GUIItemItem {
         this.prevGroupFace = prevGroupFace;
         defaultIndex = index;
         setIndex(index, false);
+        if (size != 0) {
+            setSize(size, size);
+        }
     }
 
     /**

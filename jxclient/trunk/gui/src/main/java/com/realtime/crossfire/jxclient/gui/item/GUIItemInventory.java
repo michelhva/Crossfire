@@ -124,8 +124,9 @@ public class GUIItemInventory extends GUIItemItem {
      * @param facesManager the faces manager instance to use
      * @param floorView the floor view to use
      * @param inventoryView the inventory view to watch
+     * @param size the size of the component or <code>0</code> for undefined
      */
-    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView) {
+    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
@@ -134,6 +135,9 @@ public class GUIItemInventory extends GUIItemItem {
         defaultIndex = index;
         this.inventoryView = inventoryView;
         setIndex(index);
+        if (size != 0) {
+            setSize(size, size);
+        }
     }
 
     /**

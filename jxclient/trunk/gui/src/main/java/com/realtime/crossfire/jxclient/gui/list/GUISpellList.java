@@ -21,13 +21,18 @@
 
 package com.realtime.crossfire.jxclient.gui.list;
 
+import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemSpell;
+import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeybindingsManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.ItemView;
+import com.realtime.crossfire.jxclient.queue.CommandQueue;
+import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import org.jetbrains.annotations.NotNull;
@@ -45,6 +50,30 @@ public class GUISpellList extends GUIItemList {
     private static final long serialVersionUID = 1L;
 
     /**
+     * The {@link TooltipManager} to update.
+     */
+    @NotNull
+    private final TooltipManager tooltipManager;
+
+    /**
+     * The {@link GUIElementListener} to notify.
+     */
+    @NotNull
+    private final GUIElementListener elementListener;
+
+    /**
+     * The base name for created elements.
+     */
+    @NotNull
+    private final String name;
+
+    /**
+     * The {@link ItemView} to use.
+     */
+    @NotNull
+    private final ItemView itemView;
+
+    /**
      * The spells to display.
      */
     @NotNull
@@ -57,6 +86,30 @@ public class GUISpellList extends GUIItemList {
     private final KeybindingsManager keybindingsManager;
 
     /**
+     * The {@link CommandQueue} for sending commands.
+     */
+    @NotNull
+    private final CommandQueue commandQueue;
+
+    /**
+     * The {@link ItemPainter} for painting the icon.
+     */
+    @NotNull
+    private final ItemPainter itemPainter;
+
+    /**
+     * The {@link FacesManager} to use.
+     */
+    @NotNull
+    private final FacesManager facesManager;
+
+    /**
+     * The {@link CurrentSpellManager} to update when a spell is selected.
+     */
+    @NotNull
+    private final CurrentSpellManager currentSpellManager;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -66,14 +119,26 @@ public class GUISpellList extends GUIItemList {
      * @param itemView the item view to monitor
      * @param currentItem the label to update with information about the
      * selected item.
-     * @param itemItemFactory the factory for creating item instances
      * @param spellsManager the spells to display
      * @param keybindingsManager the bindings for displaying shortcuts
+     * @param commandQueue the command queue for sending commands
+     * @param itemPainter the item painter for painting the icon
+     * @param facesManager the faces manager to use
+     * @param currentSpellManager the current spell manager to update when a
+     * spell is selected
      */
-    public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory, @NotNull final SpellsManager spellsManager, @NotNull final KeybindingsManager keybindingsManager) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, itemItemFactory);
+    public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final SpellsManager spellsManager, @NotNull final KeybindingsManager keybindingsManager, @NotNull final CommandQueue commandQueue, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final CurrentSpellManager currentSpellManager) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemSpell(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, itemView, cellHeight));
+        this.tooltipManager = tooltipManager;
+        this.elementListener = elementListener;
+        this.name = name;
+        this.itemView = itemView;
         this.spellsManager = spellsManager;
         this.keybindingsManager = keybindingsManager;
+        this.commandQueue = commandQueue;
+        this.itemPainter = itemPainter;
+        this.facesManager = facesManager;
+        this.currentSpellManager = currentSpellManager;
     }
 
     /**
@@ -128,4 +193,14 @@ public class GUISpellList extends GUIItemList {
 
         setTooltipText(sb.toString(), x, y, w, h);
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    protected GUIElement newItem(final int index) {
+        return new GUIItemSpell(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, itemView, 0);
+    }
+
 }

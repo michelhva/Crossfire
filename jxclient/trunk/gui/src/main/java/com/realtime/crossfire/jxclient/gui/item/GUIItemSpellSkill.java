@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  * Copyright (C) 2005-2008 Yann Chachkoff.
- * Copyright (C) 2006-2012 Andreas Kirschbaum.
+ * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
 package com.realtime.crossfire.jxclient.gui.item;
@@ -146,8 +146,9 @@ public class GUIItemSpellSkill extends GUIItemItem {
      * @param spellsManager the spells manager instance to watch
      * @param spellsView the spells view to use
      * @param defaultSkillIcon the default icon to use the skills if not defined
+     * @param size the size of the component or <code>0</code> for undefined
      */
-    public GUIItemSpellSkill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final ItemView spellsView, @NotNull final FaceImages defaultSkillIcon) {
+    public GUIItemSpellSkill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final ItemView spellsView, @NotNull final FaceImages defaultSkillIcon, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
@@ -157,6 +158,9 @@ public class GUIItemSpellSkill extends GUIItemItem {
         this.facesManager.addFacesManagerListener(facesManagerListener);
         this.skillSpellsView = spellsView;
         this.defaultSkillIcon = defaultSkillIcon;
+        if (size != 0) {
+            setSize(size, size);
+        }
     }
 
     /**

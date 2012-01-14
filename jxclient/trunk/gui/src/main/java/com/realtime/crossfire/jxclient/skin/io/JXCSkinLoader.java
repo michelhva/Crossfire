@@ -49,17 +49,9 @@ import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemFloor;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemFloorFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemKnowldgeFactory;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemKnowledgeTypeFactory;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemQuestListFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpell;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemSpellListFactory;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemSpellSkillFactory;
 import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
@@ -77,6 +69,7 @@ import com.realtime.crossfire.jxclient.gui.label.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.label.Type;
 import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.list.GUIFloorList;
+import com.realtime.crossfire.jxclient.gui.list.GUIInventoryList;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIKnowledgeList;
 import com.realtime.crossfire.jxclient.gui.list.GUIKnowledgeTypeList;
@@ -1266,39 +1259,32 @@ public class JXCSkinLoader {
         final AbstractGUIElement element;
         switch (type) {
         case INVENTORY:
-            final GUIItemItemFactory inventoryItemFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
-            element = new GUIItemList(tooltipManager, elementListener, name, cellWidth, cellHeight, inventoryView, selectedItem, inventoryItemFactory);
+            element = new GUIInventoryList(tooltipManager, elementListener, name, cellWidth, cellHeight, inventoryView, selectedItem, commandQueue, itemPainter, server, facesManager, floorView);
             break;
 
         case GROUND:
-            final GUIItemItemFactory groundItemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
-            element = new GUIFloorList(tooltipManager, elementListener, name, cellWidth, cellHeight, floorView, selectedItem, groundItemFactory);
+            element = new GUIFloorList(tooltipManager, elementListener, name, cellWidth, cellHeight, floorView, selectedItem, commandQueue, itemPainter, server, facesManager, itemSet, nextGroupFace, prevGroupFace);
             break;
 
         case SPELL:
-            final GUIItemItemFactory spellItemFactory = new GUIItemSpellListFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, facesManager, spellsManager, currentSpellManager, spellView);
-            element = new GUISpellList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellView, selectedItem, spellItemFactory, spellsManager, keybindingsManager);
+            element = new GUISpellList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellView, selectedItem, spellsManager, keybindingsManager, commandQueue, itemPainter, facesManager, currentSpellManager);
             break;
 
         case QUEST:
-            final GUIItemItemFactory questItemFactory = new GUIItemQuestListFactory(tooltipManager, elementListener, name, itemPainter, facesManager, questsManager, questView);
-            element = new GUIQuestList(tooltipManager, elementListener, name, cellWidth, cellHeight, questView, selectedItem, questItemFactory, questsManager);
+            element = new GUIQuestList(tooltipManager, elementListener, name, cellWidth, cellHeight, questView, selectedItem, questsManager, itemPainter, facesManager);
             break;
 
         case SPELL_SKILLS:
             final FaceImages defaultSkillIcon = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(ResourceUtils.ALL_SPELL_SKILLS_ICON));
-            final GUIItemItemFactory spellSkillItemFactory = new GUIItemSpellSkillFactory(tooltipManager, elementListener, name, itemPainter, facesManager, spellsManager, spellSkillsView, defaultSkillIcon);
-            element = new GUISpellSkillList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellSkillsView, selectedItem, spellSkillItemFactory, spellsManager);
+            element = new GUISpellSkillList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellSkillsView, selectedItem, spellsManager, itemPainter, facesManager, defaultSkillIcon);
             break;
 
         case KNOWLEDGE_TYPES:
-            final GUIItemKnowledgeTypeFactory ktFactory = new GUIItemKnowledgeTypeFactory(tooltipManager, elementListener, name, itemPainter, facesManager, knowledgeManager, knowledgeTypeView);
-            element = new GUIKnowledgeTypeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeTypeView, selectedItem, ktFactory, knowledgeManager);
+            element = new GUIKnowledgeTypeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeTypeView, selectedItem, knowledgeManager, itemPainter, facesManager);
             break;
 
         case KNOWLEDGE_LIST:
-            final GUIItemKnowldgeFactory kFactory = new GUIItemKnowldgeFactory(tooltipManager, elementListener, name, itemPainter, facesManager, knowledgeManager, knowledgeView, commandQueue);
-            element = new GUIKnowledgeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeView, selectedItem, kFactory);
+            element = new GUIKnowledgeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeView, selectedItem, itemPainter, facesManager, knowledgeManager, commandQueue);
             break;
 
         default:
@@ -1423,14 +1409,14 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
+            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace, 0);
         } else if (type.equals("inventory")) {
             if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item inventory' without 'def item' command");
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, facesManager, floorView, inventoryView);
+            element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, facesManager, floorView, inventoryView, 0);
         } else if (type.equals("shortcut")) {
             final Color castColor = ParseUtils.parseColorNull(args.get());
             final Image castImage = imageParser.getImage(castColor, args.getPrev());
@@ -1444,7 +1430,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView);
+            element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView, 0);
         } else {
             throw new IOException("undefined item type: "+type);
         }
