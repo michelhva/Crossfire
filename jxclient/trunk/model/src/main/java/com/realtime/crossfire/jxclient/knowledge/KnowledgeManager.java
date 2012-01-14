@@ -38,7 +38,7 @@ public class KnowledgeManager {
     };
 
     /**
-     * The {@link SpellsManagerListener SpellsManagerListeners} to notify about
+     * The {@link KnowledgeListener KnowledgeListeners} to notify about
      * changes.
      */
     @NotNull

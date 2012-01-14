@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.list.GUIKnowledgeList;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeItem;
@@ -68,12 +69,12 @@ public class GUIItemKnowledge extends GUIItemItem {
 
     /**
      * The currently selected spell or <code>-1</code> if none is selected.
-     * Corresponds to {@link #skill}.
+     * Corresponds to {@link #item}.
      */
     private int index = -1;
 
     /**
-     * Whether this element is selected in its {@link GUISpellSkillList}.
+     * Whether this element is selected in its {@link GUIKnowledgeList}.
      */
     private boolean selected;
 
@@ -201,7 +202,7 @@ public class GUIItemKnowledge extends GUIItemItem {
     }
 
     /**
-     * Sets the currently selected {@link Skill}.
+     * Sets the currently selected {@link KnowledgeItem}.
      */
     private void setKnowledgeItem() {
         final KnowledgeItem newItem = knowledgeManager.getKnowledge(index);
@@ -215,7 +216,7 @@ public class GUIItemKnowledge extends GUIItemItem {
     }
 
     /**
-     * Sets the {@link #index} of the currently selected {@link #skill}. Updates
+     * Sets the {@link #index} of the currently selected {@link #item}. Updates
      * the currently selected spell.
      * @param index the index to set
      */
