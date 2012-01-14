@@ -6,6 +6,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeItem;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Displays knowledge items the player knows.
@@ -45,6 +46,7 @@ public class KnowledgeView extends AbstractItemView {
         return knowledgeManager.getKnowledgeCount();
     }
 
+    @Nullable
     @Override
     public CfItem getItem(final int index) {
         final KnowledgeItem item = knowledgeManager.getKnowledge(index);
