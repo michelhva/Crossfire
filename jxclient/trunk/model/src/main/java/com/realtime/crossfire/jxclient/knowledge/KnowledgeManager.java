@@ -29,7 +29,7 @@ public class KnowledgeManager {
     /**
      * Compare two knowledge items.
      */
-    private final Comparator<KnowledgeItem> knowledgeComparator = new Comparator<KnowledgeItem>() {
+    private static final Comparator<KnowledgeItem> knowledgeComparator = new Comparator<KnowledgeItem>() {
 
         @Override
         public int compare(final KnowledgeItem o1, final KnowledgeItem o2) {

@@ -170,7 +170,7 @@ public class SpellsManager implements Iterable<Spell> {
     /**
      * Compare 2 skills.
      */
-    private final Comparator<Skill> skillComparator = new Comparator<Skill>() {
+    private static final Comparator<Skill> skillComparator = new Comparator<Skill>() {
 
         @Override
         public int compare(final Skill o1, final Skill o2) {
