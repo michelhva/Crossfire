@@ -34,7 +34,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- *
  * @author nicolas
  */
 public class GUIKnowledgeTypeList extends GUIItemList {
@@ -97,7 +96,7 @@ public class GUIKnowledgeTypeList extends GUIItemList {
      * @param facesManager the faces manager to use
      */
     public GUIKnowledgeTypeList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemKnowledgeType(tooltipManager, elementListener, name + "_template", itemPainter, -1, facesManager, knowledgeManager, itemView, cellHeight));
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemKnowledgeType(tooltipManager, elementListener, name+"_template", itemPainter, -1, facesManager, knowledgeManager, itemView, cellHeight));
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.name = name;
@@ -125,7 +124,7 @@ public class GUIKnowledgeTypeList extends GUIItemList {
     @NotNull
     @Override
     protected GUIElement newItem(final int index) {
-        return new GUIItemKnowledgeType(tooltipManager, elementListener, name + index, itemPainter, index, facesManager, knowledgeManager, itemView, 0);
+        return new GUIItemKnowledgeType(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, knowledgeManager, itemView, 0);
     }
 
 }

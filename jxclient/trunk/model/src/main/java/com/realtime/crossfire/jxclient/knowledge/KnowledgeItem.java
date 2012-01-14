@@ -95,7 +95,6 @@ public class KnowledgeItem {
         return faceNum;
     }
 
-
     /**
      * {@inheritDoc}
      */

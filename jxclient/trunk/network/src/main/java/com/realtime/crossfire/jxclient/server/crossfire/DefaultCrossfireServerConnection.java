@@ -1965,7 +1965,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet to process
      */
     private void processKnowledgeTypeReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
-    model.getKnowledgeManager().clearTypes();
+        model.getKnowledgeManager().clearTypes();
         final byte[] data = new byte[packet.remaining()];
         packet.get(data);
         final ByteArrayInputStream is = new ByteArrayInputStream(data);

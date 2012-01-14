@@ -20,7 +20,9 @@ import org.jetbrains.annotations.Nullable;
 public class KnowledgeManager {
 
     public interface KnowledgeListener extends EventListener {
+
         void typeAdded(int index);
+
         void knowledgeAdded(int index);
     }
 
@@ -42,11 +44,17 @@ public class KnowledgeManager {
     private final EventListenerList2<KnowledgeListener> listeners = new EventListenerList2<KnowledgeListener>(KnowledgeListener.class);
 
     private final List<String> types = new ArrayList<String>();
+
     private final List<String> names = new ArrayList<String>();
+
     private final List<Integer> faces = new ArrayList<Integer>();
+
     private final List<Boolean> attempt = new ArrayList<Boolean>();
+
     private final Collection<KnowledgeItem> items = new ArrayList<KnowledgeItem>();
+
     private final List<KnowledgeItem> filteredItems = new ArrayList<KnowledgeItem>();
+
     private String typeFilter = "";
 
     /**
@@ -120,10 +128,11 @@ public class KnowledgeManager {
 
     public void addKnowledgeType(final String type, final String name, final int face, final boolean canAttempt) {
         types.add(type);
-        if (type.equals(""))
+        if (type.equals("")) {
             names.add("All types");
-        else
+        } else {
             names.add(name);
+        }
         faces.add(face);
         attempt.add(canAttempt);
         for (final KnowledgeListener listener : listeners.getListeners()) {
@@ -143,21 +152,24 @@ public class KnowledgeManager {
     }
 
     public String getTypeName(int index) {
-        if (index < 0 || index >= faces.size())
+        if (index < 0 || index >= faces.size()) {
             return "";
+        }
         return names.get(index);
     }
 
     public int getTypeFace(int index) {
-        if (index < 0 || index >= faces.size())
+        if (index < 0 || index >= faces.size()) {
             return 0;
+        }
         return faces.get(index);
     }
 
     public boolean canAttemptType(@NotNull final String type) {
         for (int i = 0; i < types.size(); i++) {
-            if (type.equals(types.get(i)))
+            if (type.equals(types.get(i))) {
                 return attempt.get(i);
+            }
         }
 
         return false;

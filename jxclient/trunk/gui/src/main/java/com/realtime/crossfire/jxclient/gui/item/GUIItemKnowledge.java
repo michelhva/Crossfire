@@ -37,7 +37,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- *
  * @author nicolas
  */
 public class GUIItemKnowledge extends GUIItemItem {
@@ -130,8 +129,8 @@ public class GUIItemKnowledge extends GUIItemItem {
             }
 
             public void knowledgeAdded(int index) {
-               if (GUIItemKnowledge.this.index >= index) {
-                setKnowledgeItem();
+                if (GUIItemKnowledge.this.index >= index) {
+                    setKnowledgeItem();
                 }
             }
         });
@@ -205,8 +204,9 @@ public class GUIItemKnowledge extends GUIItemItem {
     private void setKnowledgeItem() {
         final KnowledgeItem newItem = knowledgeManager.getKnowledge(index);
 
-        if (newItem == item)
+        if (newItem == item) {
             return;
+        }
 
         item = newItem;
         setChanged();
@@ -232,9 +232,9 @@ public class GUIItemKnowledge extends GUIItemItem {
     @NotNull
     @Override
     protected Image getFace(@NotNull final CfItem item) {
- //      if (item.getFace() == null) {
-    //        return defaultSkillIcon.getOriginalImageIcon().getImage();
-      //  }
+        //      if (item.getFace() == null) {
+        //        return defaultSkillIcon.getOriginalImageIcon().getImage();
+        //  }
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum(), null).getImage();
     }
 
@@ -287,8 +287,9 @@ public class GUIItemKnowledge extends GUIItemItem {
      */
     @Override
     public void button1Clicked(int modifiers) {
-        if (item == null)
+        if (item == null) {
             return;
+        }
 
         commandQueue.sendNcom(false, "knowledge show "+item.getKnowledgeIndex());
     }

@@ -34,7 +34,6 @@ import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
  * @author nicolas
  */
 public class GUIItemKnowledgeType extends GUIItemItem {
@@ -74,7 +73,9 @@ public class GUIItemKnowledgeType extends GUIItemItem {
      * Whether this element is selected in its {@link GUISpellSkillList}.
      */
     private boolean selected;
+
     private int currentFace = -1;
+
     @NotNull
     private final ItemView view;
 
@@ -103,7 +104,8 @@ public class GUIItemKnowledgeType extends GUIItemItem {
      * @param facesManager the faces manager for looking up faces
      * @param spellsManager the spells manager instance to watch
      * @param spellsView the spells view to use
-     * @param defaultSkillIcon the default icon to use the skills if not defined
+     * @param defaultSkillIcon the default icon to use the skills if not
+     * defined
      * @param size the size of the component or <code>0</code> for undefined
      */
     public GUIItemKnowledgeType(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemView view, final int size) {
@@ -116,8 +118,8 @@ public class GUIItemKnowledgeType extends GUIItemItem {
 
         knowledgeManager.addKnowledgeListener(new KnowledgeManager.KnowledgeListener() {
             public void typeAdded(int index) {
-               if (GUIItemKnowledgeType.this.index >= index) {
-                setSkill();
+                if (GUIItemKnowledgeType.this.index >= index) {
+                    setSkill();
                 }
             }
 
@@ -194,8 +196,8 @@ public class GUIItemKnowledgeType extends GUIItemItem {
     private void setSkill() {
         currentFace = knowledgeManager.getTypeFace(index);
         setChanged();
-/*
-        setTooltipText(newSkill == null ? null : newSkill.toString());*/
+        /*
+  setTooltipText(newSkill == null ? null : newSkill.toString());*/
     }
 
     /**
@@ -218,9 +220,9 @@ public class GUIItemKnowledgeType extends GUIItemItem {
     @NotNull
     @Override
     protected Image getFace(@NotNull final CfItem item) {
- //      if (item.getFace() == null) {
-    //        return defaultSkillIcon.getOriginalImageIcon().getImage();
-      //  }
+        //      if (item.getFace() == null) {
+        //        return defaultSkillIcon.getOriginalImageIcon().getImage();
+        //  }
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum(), null).getImage();
     }
 

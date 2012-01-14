@@ -108,8 +108,8 @@ public class GUIInventoryList extends GUIItemList {
      * @param cellWidth the width of cells
      * @param cellHeight the height of cells
      * @param itemView the item view to monitor
-     * @param currentItem the label to update with information about the selected
-     * item.
+     * @param currentItem the label to update with information about the
+     * selected item.
      * @param commandQueue the command queue for sending commands
      * @param itemPainter the item painter for painting the icon
      * @param crossfireServerConnection the connection instance
