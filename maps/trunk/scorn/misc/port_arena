@@ -8,7 +8,7 @@ enter_x 38
 enter_y 6
 msg
 Created:  1993-10-07 skud the great (tvangod@ecst.csuchico.edu)
-Modified: 2012-01-12 Rick Tanner
+Modified: 2012-01-13 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -3404,6 +3404,10 @@ arch cobblestones2
 x 12
 y 5
 end
+arch swall_1_1_half
+x 12
+y 5
+end
 arch bwall_1_3
 x 12
 y 5
@@ -3412,7 +3416,7 @@ arch cobblestones2
 x 12
 y 6
 end
-arch swall_1_1
+arch swall_2_1_1
 x 12
 y 6
 end
@@ -4149,6 +4153,10 @@ arch cobblestones2
 x 14
 y 5
 end
+arch swall_1_1_half
+x 14
+y 5
+end
 arch bwall_1_4
 x 14
 y 5
@@ -4157,7 +4165,7 @@ arch cobblestones2
 x 14
 y 6
 end
-arch swall_1_1
+arch swall_2_1_1
 x 14
 y 6
 end
