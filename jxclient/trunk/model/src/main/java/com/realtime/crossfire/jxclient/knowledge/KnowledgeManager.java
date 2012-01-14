@@ -176,7 +176,7 @@ public class KnowledgeManager {
         return false;
     }
 
-    public void addKnowledge(final int index, final @NotNull String type, final @NotNull String title, final int face) {
+    public void addKnowledge(final int index, @NotNull final String type, @NotNull final String title, final int face) {
         items.add(new KnowledgeItem(index, type, title, face));
         filterKnowledge();
         for (final KnowledgeListener listener : listeners.getListeners()) {
