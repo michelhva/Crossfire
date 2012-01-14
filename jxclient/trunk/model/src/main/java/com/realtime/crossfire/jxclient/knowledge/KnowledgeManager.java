@@ -5,6 +5,8 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
@@ -20,6 +22,16 @@ public class KnowledgeManager {
         void typeAdded(int index);
         void knowledgeAdded(int index);
     }
+
+    /**
+     * Compare two knowledge items.
+     */
+    private final Comparator<KnowledgeItem> knowledgeComparator = new Comparator<KnowledgeItem>() {
+
+        public int compare(KnowledgeItem o1, KnowledgeItem o2) {
+            return o1.getKnowledgeTitle().compareTo(o2.getKnowledgeTitle());
+        }
+    };
 
     /**
      * The {@link SpellsManagerListener SpellsManagerListeners} to notify about
@@ -196,6 +208,6 @@ public class KnowledgeManager {
                 filteredItems.add(item);
             }
         }
-        
+        Collections.sort(filteredItems, knowledgeComparator);
     }
 }
