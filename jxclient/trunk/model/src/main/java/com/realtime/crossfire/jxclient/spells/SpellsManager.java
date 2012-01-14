@@ -170,7 +170,7 @@ public class SpellsManager implements Iterable<Spell> {
     /**
      * Compare 2 skills.
      */
-    private static final Comparator<Skill> skillComparator = new Comparator<Skill>() {
+    private static final Comparator<Skill> SKILL_COMPARATOR = new Comparator<Skill>() {
 
         @Override
         public int compare(final Skill o1, final Skill o2) {
@@ -424,7 +424,7 @@ public class SpellsManager implements Iterable<Spell> {
                 spellSkills.add(skill);
             }
         }
-        Collections.sort(spellSkills, skillComparator);
+        Collections.sort(spellSkills, SKILL_COMPARATOR);
         spellSkills.add(0, skillAll);
     }
 

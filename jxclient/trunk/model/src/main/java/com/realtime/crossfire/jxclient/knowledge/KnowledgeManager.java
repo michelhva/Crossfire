@@ -29,7 +29,7 @@ public class KnowledgeManager {
     /**
      * Compare two knowledge items.
      */
-    private static final Comparator<KnowledgeItem> knowledgeComparator = new Comparator<KnowledgeItem>() {
+    private static final Comparator<KnowledgeItem> KNOWLEDGE_COMPARATOR = new Comparator<KnowledgeItem>() {
 
         @Override
         public int compare(final KnowledgeItem o1, final KnowledgeItem o2) {
@@ -222,6 +222,6 @@ public class KnowledgeManager {
                 filteredItems.add(item);
             }
         }
-        Collections.sort(filteredItems, knowledgeComparator);
+        Collections.sort(filteredItems, KNOWLEDGE_COMPARATOR);
     }
 }
