@@ -31,7 +31,8 @@ import org.jetbrains.annotations.NotNull;
 public class KnowledgeItem {
 
     /**
-     * The {@link SpellListener SpellListeners} to be notified of changes.
+     * The {@link KnowledgeListener KnowledgeListeners} to be notified of
+     * changes.
      */
     @NotNull
     private final EventListenerList2<KnowledgeListener> listeners = new EventListenerList2<KnowledgeListener>(KnowledgeListener.class);
@@ -60,8 +61,10 @@ public class KnowledgeItem {
 
     /**
      * Creates a new instance.
-     * @param name the spell name
-     * @param skillSet the skills
+     * @param knowledgeIndex the knowledge identifier
+     * @param type the knowledge's type
+     * @param title the description
+     * @param faceNum the face number
      */
     public KnowledgeItem(final int knowledgeIndex, @NotNull final String type, @NotNull final String title, final int faceNum) {
         this.knowledgeIndex = knowledgeIndex;
@@ -139,6 +142,7 @@ public class KnowledgeItem {
     }
 
     /**
+     * Returns the knowledge's type.
      * @return the type
      */
     public String getType() {

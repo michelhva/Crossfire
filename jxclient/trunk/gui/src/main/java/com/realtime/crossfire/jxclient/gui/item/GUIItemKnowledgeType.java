@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.list.GUIKnowledgeTypeList;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
@@ -55,6 +56,9 @@ public class GUIItemKnowledgeType extends GUIItemItem {
     @NotNull
     private final FacesManager facesManager;
 
+    /**
+     * The {@link KnowledgeManager} instance being watched.
+     */
     @NotNull
     private final KnowledgeManager knowledgeManager;
 
@@ -65,19 +69,22 @@ public class GUIItemKnowledgeType extends GUIItemItem {
 
     /**
      * The currently selected spell or <code>-1</code> if none is selected.
-     * Corresponds to {@link #skill}.
+     * Corresponds to {@link #currentFace}.
      */
     private int index = -1;
 
     /**
-     * Whether this element is selected in its {@link GUISpellSkillList}.
+     * Whether this element is selected in its {@link GUIKnowledgeTypeList}.
      */
     private boolean selected;
 
     private int currentFace = -1;
 
+    /**
+     * The {@link ItemView} to use.
+     */
     @NotNull
-    private final ItemView view;
+    private final ItemView itemView;
 
     /**
      * The {@link FacesManagerListener} registered to detect updated faces.
@@ -102,18 +109,16 @@ public class GUIItemKnowledgeType extends GUIItemItem {
      * @param itemPainter the item painter for painting the icon
      * @param defaultIndex the default scroll index
      * @param facesManager the faces manager for looking up faces
-     * @param spellsManager the spells manager instance to watch
-     * @param spellsView the spells view to use
-     * @param defaultSkillIcon the default icon to use the skills if not
-     * defined
+     * @param knowledgeManager the knowledge manager instance to watch
+     * @param itemView the item view to use
      * @param size the size of the component or <code>0</code> for undefined
      */
-    public GUIItemKnowledgeType(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemView view, final int size) {
+    public GUIItemKnowledgeType(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemView itemView, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.defaultIndex = defaultIndex;
         this.facesManager = facesManager;
         this.knowledgeManager = knowledgeManager;
-        this.view = view;
+        this.itemView = itemView;
         setIndex(defaultIndex);
 
         knowledgeManager.addKnowledgeListener(new KnowledgeManager.KnowledgeListener() {
@@ -193,7 +198,7 @@ public class GUIItemKnowledgeType extends GUIItemItem {
     }
 
     /**
-     * Sets the currently selected {@link Skill}.
+     * Sets the currently selected knowledge type.
      */
     private void setSkill() {
         currentFace = knowledgeManager.getTypeFace(index);
@@ -203,8 +208,8 @@ public class GUIItemKnowledgeType extends GUIItemItem {
     }
 
     /**
-     * Sets the {@link #index} of the currently selected {@link #skill}. Updates
-     * the currently selected spell.
+     * Sets the {@link #index} of the currently selected {@link #currentFace}.
+     * Updates the currently selected spell.
      * @param index the index to set
      */
     private void setIndex(final int index) {
@@ -268,7 +273,7 @@ public class GUIItemKnowledgeType extends GUIItemItem {
             this.index = index;
         }
 
-        setItemNoListeners(view.getItem(this.index));
+        setItemNoListeners(itemView.getItem(this.index));
     }
 
     /**
