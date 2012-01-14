@@ -57,6 +57,9 @@ commandlist command_spells_close AND null DIALOG_CLOSE spells
 commandlist command_quests AND null DIALOG_TOGGLE quests
 commandlist command_quests_open AND null DIALOG_OPEN quests
 commandlist command_quests_close AND null DIALOG_CLOSE quests
+commandlist command_knowledge AND null DIALOG_TOGGLE knowledge
+commandlist command_knowledge_open AND null DIALOG_OPEN knowledge
+commandlist command_knowledge_close AND null DIALOG_CLOSE knowledge
 
 commandlist command_help_close AND null DIALOG_CLOSE help
 

@@ -721,6 +721,38 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                         break;
                     }
                     switch (packet.get()) {
+                    case 'k':
+                        if (packet.get() != 'n') {
+                            break;
+                        }
+                        if (packet.get() != 'o') {
+                            break;
+                        }
+                        if (packet.get() != 'w') {
+                            break;
+                        }
+                        if (packet.get() != 'l') {
+                            break;
+                        }
+                        if (packet.get() != 'e') {
+                            break;
+                        }
+                        if (packet.get() != 'd') {
+                            break;
+                        }
+                        if (packet.get() != 'g') {
+                            break;
+                        }
+                        if (packet.get() != 'e') {
+                            break;
+                        }
+                        if (packet.get() != ' ') {
+                            break;
+                        }
+
+                        processAddKnowledge(packet);
+                        return;
+
                     case 'm':
                         if (packet.get() != 'e') {
                             break;
@@ -1802,6 +1834,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             processSkillInfoReplyinfo(packet);
         } else if (infoType.equals("exp_table")) {
             processExpTableReplyinfo(packet);
+        } else if (infoType.equals("knowledge_info")) {
+            processKnowledgeTypeReplyinfo(packet);
         } else {
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
         }
@@ -1923,6 +1957,53 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         } else {
             setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ACCOUNT_INFO);
             fireManageAccount();
+        }
+    }
+
+    /**
+     * Processes a "replyinfo knowledge_info" block.
+     * @param packet the packet to process
+     */
+    private void processKnowledgeTypeReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
+    model.getKnowledgeManager().clearTypes();
+        final byte[] data = new byte[packet.remaining()];
+        packet.get(data);
+        final ByteArrayInputStream is = new ByteArrayInputStream(data);
+        try {
+            final InputStreamReader isr = new InputStreamReader(is);
+            try {
+                final BufferedReader d = new BufferedReader(isr);
+                try {
+                    while (true) {
+                        final String r = d.readLine();
+                        if (r == null) {
+                            break;
+                        }
+
+                        final String[] sk = PATTERN_DOT.split(r);
+                        if (sk.length != 4) {
+                            System.err.println("Ignoring knowledge definition for invalid knowledge: "+r+".");
+                            continue;
+                        }
+
+                        int face = -1;
+                        try {
+                            face = Integer.parseInt(sk[2]);
+                        } catch (final NumberFormatException ignored) {
+                            System.err.println("Ignoring knowledge definition for invalid face: "+r+".");
+                            continue;
+                        }
+
+                        model.getKnowledgeManager().addKnowledgeType(sk[0], sk[1], face, sk[3].equals("1"));
+                    }
+                } finally {
+                    d.close();
+                }
+            } finally {
+                isr.close();
+            }
+        } finally {
+            is.close();
         }
     }
 
@@ -2093,6 +2174,24 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 debugProtocol.debugProtocolWrite("recv addquest code="+code+" title="+title+" face="+face+"replay="+replay+" end="+end+" desc="+step);
             }
             model.getQuestsManager().addQuest(code, title, face, replay == 1, parent, end == 1, step);
+        }
+        notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    private void processAddKnowledge(@NotNull final ByteBuffer packet) {
+        final int args = packet.position();
+        while (packet.hasRemaining()) {
+            final int code = getInt4(packet);
+            final int typeLength = getInt2(packet);
+            final String type = getString(packet, typeLength);
+            final int titleLength = getInt2(packet);
+            final String title = getString(packet, titleLength);
+            final int face = getInt4(packet);
+
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("recv addknowledge code="+code+"type="+type+"title="+title+" face="+face);
+            }
+            model.getKnowledgeManager().addKnowledge(code, type, title, face);
         }
         notifyPacketWatcherListenersMixed(packet, args);
     }
@@ -2903,6 +3002,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             sendRequestinfo("image_info");
             sendRequestinfo("skill_info 1");
             sendRequestinfo("exp_table");
+            sendRequestinfo("knowledge_info");
             sendToggleextendedtext(MessageTypes.getAllTypes());
         }
         notifyPacketWatcherListenersAscii(packet, args);
@@ -3223,7 +3323,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
 
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
-        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1", "notifications 1");
+        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1", "notifications 2");
         model.getStats().setSimpleWeaponSpeed(scval >= 1029);
 
         notifyPacketWatcherListenersAscii(packet, args);

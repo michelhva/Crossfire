@@ -53,6 +53,8 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemFloorFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemKnowldgeFactory;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemKnowledgeTypeFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemQuestListFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpell;
@@ -76,6 +78,8 @@ import com.realtime.crossfire.jxclient.gui.label.Type;
 import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.list.GUIFloorList;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
+import com.realtime.crossfire.jxclient.gui.list.GUIKnowledgeList;
+import com.realtime.crossfire.jxclient.gui.list.GUIKnowledgeTypeList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.list.GUIQuestList;
 import com.realtime.crossfire.jxclient.gui.list.GUISpellList;
@@ -102,9 +106,12 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemView;
+import com.realtime.crossfire.jxclient.items.KnowledgeTypeView;
+import com.realtime.crossfire.jxclient.items.KnowledgeView;
 import com.realtime.crossfire.jxclient.items.QuestsView;
 import com.realtime.crossfire.jxclient.items.SpellSkillView;
 import com.realtime.crossfire.jxclient.items.SpellsView;
+import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
 import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
@@ -201,7 +208,15 @@ public class JXCSkinLoader {
         /**
          * Create a {@link GUISpellSkillList} instance
          */
-        SPELL_SKILLS
+        SPELL_SKILLS,
+        /**
+         * Create a {@link GUIKnowledgeTypeList} instance
+         */
+        KNOWLEDGE_TYPES,
+        /**
+         * Create a {@link GUIKnowledgeList} instance
+         */
+        KNOWLEDGE_LIST
     }
 
     /**
@@ -256,6 +271,10 @@ public class JXCSkinLoader {
      */
     @NotNull
     private final QuestsManager questsManager;
+
+    @NotNull final KnowledgeManager knowledgeManager;
+    @NotNull final KnowledgeTypeView knowledgeTypeView;
+    @NotNull final KnowledgeView knowledgeView;
 
     /**
      * The {@link FacesManager} instance to use.
@@ -431,8 +450,10 @@ public class JXCSkinLoader {
      * @param questView the quests view to use
      * @param commandHistoryFactory the command history factory to us
      * @param questsManager the quests manager instance to use
+     * @param knowledgeView the knowledge view to use
+     * @param knowledgeTypes the knowledge types view to use
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull KnowledgeManager knowledgeManager, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypes) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
@@ -452,6 +473,9 @@ public class JXCSkinLoader {
         this.keybindingsManager = keybindingsManager;
         this.questsManager = questsManager;
         this.questView = questView;
+        this.knowledgeManager = knowledgeManager;
+        this.knowledgeView = knowledgeView;
+        this.knowledgeTypeView = knowledgeTypes;
     }
 
     /**
@@ -689,6 +713,10 @@ public class JXCSkinLoader {
                             parseList(args, ListType.SPELL_SKILLS, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("quests_list")) {
                             parseList(args, ListType.QUEST, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                        } else if (gui != null && cmd.equals("knowledge_types")) {
+                            parseList(args, ListType.KNOWLEDGE_TYPES, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                        } else if (gui != null && cmd.equals("knowledge_list")) {
+                            parseList(args, ListType.KNOWLEDGE_LIST, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (gui != null && cmd.equals("horizontal")) {
                             parseHorizontal(args, gui, lnr, isDialog);
                         } else if (gui != null && cmd.equals("item")) {
@@ -1261,6 +1289,16 @@ public class JXCSkinLoader {
             final FaceImages defaultSkillIcon = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(ResourceUtils.ALL_SPELL_SKILLS_ICON));
             final GUIItemItemFactory spellSkillItemFactory = new GUIItemSpellSkillFactory(tooltipManager, elementListener, name, itemPainter, facesManager, spellsManager, spellSkillsView, defaultSkillIcon);
             element = new GUISpellSkillList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellSkillsView, selectedItem, spellSkillItemFactory, spellsManager);
+            break;
+
+        case KNOWLEDGE_TYPES:
+            final GUIItemKnowledgeTypeFactory ktFactory = new GUIItemKnowledgeTypeFactory(tooltipManager, elementListener, name, itemPainter, facesManager, knowledgeManager, knowledgeTypeView);
+            element = new GUIKnowledgeTypeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeTypeView, selectedItem, ktFactory, knowledgeManager);
+            break;
+
+        case KNOWLEDGE_LIST:
+            final GUIItemKnowldgeFactory kFactory = new GUIItemKnowldgeFactory(tooltipManager, elementListener, name, itemPainter, facesManager, knowledgeManager, knowledgeView, commandQueue);
+            element = new GUIKnowledgeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeView, selectedItem, kFactory);
             break;
 
         default:

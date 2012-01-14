@@ -1,0 +1,69 @@
+dialog WIDTH/2 HEIGHT/2 true Knowledge
+dialog_hide START META LOGIN NEW_CHAR ACCOUNT
+button dialog_close close_up close_down false command_knowledge_close
+
+commandlist command_knowledge_scroll_up AND
+commandlist command_knowledge_scroll_down AND
+commandlist command_knowledge_page_up AND
+commandlist command_knowledge_page_down AND
+commandlist command_knowledge_up AND
+commandlist command_knowledge_down AND
+commandlist command_knowledge_prev AND
+commandlist command_knowledge_next AND
+
+label_text knowledge_item          font_label BLACK
+label_text types_label  font_label BLACK Types:_
+
+knowledge_types ktypes 32 32 null
+knowledge_list knowledge 32 32 knowledge_item
+
+button     slider_up     slider_up_up slider_up_down true command_knowledge_scroll_up
+button     slider_down   slider_down_up slider_down_down true command_knowledge_scroll_down
+
+commandlist_add command_knowledge_scroll_up knowledge SCROLL_LIST -1
+commandlist_add command_knowledge_scroll_down knowledge SCROLL_LIST 1
+commandlist_add command_knowledge_page_up knowledge SCROLL_LIST -4
+commandlist_add command_knowledge_page_down knowledge SCROLL_LIST 4
+
+commandlist_add command_knowledge_up knowledge MOVE_SELECTION -1 0
+commandlist_add command_knowledge_down knowledge MOVE_SELECTION 1 0
+commandlist_add command_knowledge_prev knowledge MOVE_SELECTION 0 -1
+commandlist_add command_knowledge_next knowledge MOVE_SELECTION 0 1
+
+#commandlist command_knowledge_reset OR knowledge SCROLL_RESET
+#event connect command_knowledge_reset
+
+horizontal begin par
+  begin seq
+    types_label 45
+    ktypes
+  end
+  begin seq
+    knowledge 480
+    begin par
+      slider_up
+      slider_down
+    end
+  end
+  begin seq
+    knowledge_item 1 -2 32767
+  end
+end
+
+vertical begin seq
+  begin par
+    types_label 32
+    ktypes 32
+  end
+  begin par
+    knowledge 96
+    begin seq
+      slider_up
+      gap
+      slider_down
+    end
+  end
+  begin par
+    knowledge_item
+  end
+end
