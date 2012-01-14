@@ -132,7 +132,7 @@ public class GUISpellSkillList extends GUIItemList {
         if (skill == null) {
             text = "";
         } else if (skill.getLevel() > 0) {
-            text = skill.toString()+" (level "+skill.getLevel()+")";
+            text = skill+" (level "+skill.getLevel()+")";
         } else {
             text = skill.toString();
         }
