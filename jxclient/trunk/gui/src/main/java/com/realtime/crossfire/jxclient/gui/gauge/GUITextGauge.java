@@ -76,6 +76,7 @@ public class GUITextGauge extends GUIGauge {
      * @param color the text color
      * @param font the text font
      * @param alpha transparency to draw with
+     * @param commandList the command list that is executed on button 2
      */
     public GUITextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image pictureFull, @Nullable final Image pictureNegative, @NotNull final Image pictureEmpty, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font, final float alpha, @Nullable final CommandList commandList) {
         super(tooltipManager, elementListener, name, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix, alpha, commandList);
