@@ -6,7 +6,7 @@ width 40
 height 40
 msg
 Created:  1993-10-05 skud the great (tvangod@ecst.csuchico.edu)
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-13 Rick Tanner
 endmsg
 tile_path_1 oldcity13
 tile_path_2 oldcity10
@@ -1521,29 +1521,15 @@ end
 arch skeleton
 msg
 @match earthquake|buried
-Yes, the great earthquake destroyed
-the city of Scorn, we were rebuilding
-the city when i was trapped.
+Yes, the great earthquake destroyed the city of Scorn, we were rebuilding the city when I was trapped.
 @match Scorn|city|trapped
-But I learned of something down here,
-as I heard monsters scratching at the
-walls...as the worms ate my flesh. I
-heard an evil voice.
+But I learned of something down here, as I heard monsters scratching at the walls...as the worms ate my flesh.  I heard an evil voice.
 @match evil|voice|monster|flesh
-Yes, It was commanding others around
-to build a secret chamber.
+Yes, It was commanding others around to build a secret chamber.
 @match chamber|secret
-All I heard was something about build
-it there, and move the cup and the
-crown away from here!
+All I heard was something about build it there, and move the cup and the crown away from here!
 @match *
-Oh! It is great to look upon the face
-of the living! I've been buried here
-for two centuries. We were rebuilding
-Scorn after the big earthquake,
-building right over the ruins! Alas, I
-was trapped in a landslide and buried
-alive. I've been here ever since
+Oh! It is great to look upon the face of the living! I've been buried here for two centuries.  We were rebuilding Scorn after the big earthquake, building right over the ruins! Alas, I was trapped in a landslide and buried alive.  I've been here ever since.
 endmsg
 exp 1000
 x 5
@@ -4016,8 +4002,7 @@ y 3
 end
 arch sign_e
 msg
-Push at OWN risk!
-Really!
+Push at OWN risk! Really!
 I mean it
 endmsg
 x 15
@@ -4927,8 +4912,7 @@ end
 arch knight
 msg
 @match *
-Place objects on the white squares to
-enter the inner sanctium, Sir
+Place objects on the white squares to enter the inner sanctium, Sir.
 endmsg
 x 19
 y 8
@@ -5003,7 +4987,7 @@ end
 arch knight
 msg
 @match *
-No one can find all three objects
+No one can find all three objects.
 endmsg
 x 19
 y 24
@@ -8378,8 +8362,7 @@ end
 arch knight
 msg
 @match *
-I hate this post, the scratching from
-behind this wall is driving me nuts!
+I hate this post, the scratching from behind this wall is driving me nuts!
 endmsg
 x 33
 y 8
@@ -8454,8 +8437,7 @@ end
 arch knight
 msg
 @match *
-Infidel, this is a place of evil!
-Not for the likes of you
+Infidel, this is a place of evil! Not for the likes of you!!
 endmsg
 x 33
 y 24
