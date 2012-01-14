@@ -19,23 +19,32 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.gui.item;
+package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
+import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
+import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
- * A factory for creating {@link GUIItemInventory} instances.
+ * A {@link GUIItemList} for inventory views.
  * @author Andreas Kirschbaum
  */
-public class GUIItemInventoryFactory implements GUIItemItemFactory {
+public class GUIInventoryList extends GUIItemList {
+
+    /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1L;
 
     /**
      * The tooltip manager to update.
@@ -50,16 +59,22 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
     private final GUIElementListener elementListener;
 
     /**
-     * The {@link CommandQueue command queue} for sending commands.
-     */
-    @NotNull
-    private final CommandQueue commandQueue;
-
-    /**
      * The base name for created elements.
      */
     @NotNull
     private final String name;
+
+    /**
+     * The {@link ItemView} to use.
+     */
+    @NotNull
+    private final ItemView itemView;
+
+    /**
+     * The {@link CommandQueue command queue} for sending commands.
+     */
+    @NotNull
+    private final CommandQueue commandQueue;
 
     /**
      * The {@link ItemPainter item painter} for painting the icon.
@@ -86,33 +101,32 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
     private final FloorView floorView;
 
     /**
-     * The inventory view to use.
-     */
-    @NotNull
-    private final ItemView inventoryView;
-
-    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
+     * @param name the name of this element
+     * @param cellWidth the width of cells
+     * @param cellHeight the height of cells
+     * @param itemView the item view to monitor
+     * @param currentItem the label to update with information about the selected
+     * item.
      * @param commandQueue the command queue for sending commands
-     * @param name the base name for created elements
      * @param itemPainter the item painter for painting the icon
      * @param crossfireServerConnection the connection instance
      * @param facesManager the faces manager instance to use
      * @param floorView the floor view to use
-     * @param inventoryView the inventory view to use
      */
-    public GUIItemInventoryFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView) {
+    public GUIInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final CommandQueue commandQueue, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, crossfireServerConnection, facesManager, floorView, itemView, cellHeight));
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
-        this.commandQueue = commandQueue;
         this.name = name;
+        this.itemView = itemView;
+        this.commandQueue = commandQueue;
         this.itemPainter = itemPainter;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.floorView = floorView;
-        this.inventoryView = inventoryView;
     }
 
     /**
@@ -120,20 +134,8 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
      */
     @Override
     @NotNull
-    public GUIElement newItem(final int index) {
-        return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, facesManager, floorView, inventoryView);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    @NotNull
-    public GUIItemItem newTemplateItem(final int cellHeight) {
-        final GUIItemItem result = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, crossfireServerConnection, facesManager, floorView, inventoryView);
-        //noinspection SuspiciousNameCombination
-        result.setSize(cellHeight, cellHeight);
-        return result;
+    protected GUIElement newItem(final int index) {
+        return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, facesManager, floorView, itemView, 0);
     }
 
 }

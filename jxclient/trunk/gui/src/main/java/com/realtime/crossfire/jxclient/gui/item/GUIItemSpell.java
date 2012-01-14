@@ -175,8 +175,9 @@ public class GUIItemSpell extends GUIItemItem {
      * @param currentSpellManager the current spell manager to update when a
      * spell is selected
      * @param spellsView the spells view to use
+     * @param size the size of the component or <code>0</code> for undefined
      */
-    public GUIItemSpell(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView) {
+    public GUIItemSpell(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.facesManager = facesManager;
@@ -187,6 +188,9 @@ public class GUIItemSpell extends GUIItemItem {
         this.spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
         this.facesManager.addFacesManagerListener(facesManagerListener);
         this.spellsView = spellsView;
+        if (size != 0) {
+            setSize(size, size);
+        }
     }
 
     /**

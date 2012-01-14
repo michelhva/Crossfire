@@ -20,9 +20,12 @@
 
 package com.realtime.crossfire.jxclient.gui.list;
 
+import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemQuest;
+import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.quests.Quest;
@@ -42,10 +45,46 @@ public class GUIQuestList extends GUIItemList {
     private static final long serialVersionUID = 1L;
 
     /**
+     * The {@link TooltipManager} to update.
+     */
+    @NotNull
+    private final TooltipManager tooltipManager;
+
+    /**
+     * The {@link GUIElementListener} to notify.
+     */
+    @NotNull
+    private final GUIElementListener elementListener;
+
+    /**
+     * The base name for created elements.
+     */
+    @NotNull
+    private final String name;
+
+    /**
+     * The {@link ItemView} to use.
+     */
+    @NotNull
+    private final ItemView itemView;
+
+    /**
      * The quests to display.
      */
     @NotNull
     private final QuestsManager questsManager;
+
+    /**
+     * The {@link ItemPainter} for painting the icon.
+     */
+    @NotNull
+    private final ItemPainter itemPainter;
+
+    /**
+     * The {@link FacesManager} to use.
+     */
+    @NotNull
+    private final FacesManager facesManager;
 
     /**
      * Creates a new instance.
@@ -57,12 +96,19 @@ public class GUIQuestList extends GUIItemList {
      * @param itemView the item view to monitor
      * @param currentItem the label to update with information about the
      * selected item.
-     * @param itemItemFactory the factory for creating item instances
      * @param questsManager the quests to display
+     * @param itemPainter the item painter for painting the icon
+     * @param facesManager the faces manager to use
      */
-    public GUIQuestList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory, @NotNull final QuestsManager questsManager) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, itemItemFactory);
+    public GUIQuestList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final QuestsManager questsManager, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemQuest(tooltipManager, elementListener, name+"_template", itemPainter, -1, facesManager, questsManager, itemView, cellHeight));
+        this.tooltipManager = tooltipManager;
+        this.elementListener = elementListener;
+        this.name = name;
+        this.itemView = itemView;
         this.questsManager = questsManager;
+        this.itemPainter = itemPainter;
+        this.facesManager = facesManager;
     }
 
     /**
@@ -77,6 +123,15 @@ public class GUIQuestList extends GUIItemList {
         }
 
         setTooltipText(quest.getTooltipText());
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    protected GUIElement newItem(final int index) {
+        return new GUIItemQuest(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, questsManager, itemView, 0);
     }
 
 }

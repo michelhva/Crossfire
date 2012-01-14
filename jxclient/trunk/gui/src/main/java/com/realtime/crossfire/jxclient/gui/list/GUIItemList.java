@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementChangedListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
@@ -40,19 +39,12 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIList} instance that displays {@link GUIItemItem} instances.
  * @author Andreas Kirschbaum
  */
-public class GUIItemList extends GUIList {
+public abstract class GUIItemList extends GUIList {
 
     /**
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
-
-    /**
-     * The {@link GUIItemItemFactory} for creating new {@link GUIItemItem}
-     * instances.
-     */
-    @NotNull
-    private final GUIItemItemFactory itemItemFactory;
 
     /**
      * The {@link ItemView} to monitor.
@@ -104,12 +96,11 @@ public class GUIItemList extends GUIList {
      * @param itemView the item view to monitor
      * @param currentItem the label to update with information about the
      * selected item.
-     * @param itemItemFactory the factory for creating item instances
+     * @param templateItem the template item for painting the list
      */
-    public GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItem(cellHeight)), null);
+    protected GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItem templateItem) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new ItemItemCellRenderer(templateItem), null);
         this.itemView = itemView;
-        this.itemItemFactory = itemItemFactory;
         this.currentItem = currentItem;
         setLayoutOrientation(JList.HORIZONTAL_WRAP, -1);
         this.itemView.addLocationsListener(locationsListener);
@@ -135,7 +126,7 @@ public class GUIItemList extends GUIList {
             final int oldSize = resizeElements(newSize);
             if (oldSize < newSize) {
                 for (int i = oldSize; i < newSize; i++) {
-                    final GUIElement item = itemItemFactory.newItem(i);
+                    final GUIElement item = newItem(i);
                     addElement(item);
                     item.setChangedListener(itemChangedListener);
                 }
@@ -284,5 +275,13 @@ public class GUIItemList extends GUIList {
     public GUIItemItem getSelectedItem() {
         return (GUIItemItem)getSelectedObject();
     }
+
+    /**
+     * Creates a new {@link GUIElement} instance.
+     * @param index the item inventory's index
+     * @return the new instance
+     */
+    @NotNull
+    protected abstract GUIElement newItem(final int index);
 
 }
