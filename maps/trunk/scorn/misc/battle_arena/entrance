@@ -852,11 +852,11 @@ arch pstone_2
 x 4
 y 6
 end
-arch swall_1_1
+arch cwall_2_2_1
 x 4
 y 6
 end
-arch cwall_2_2_1
+arch swall_1_1_half
 x 4
 y 6
 end
@@ -3306,11 +3306,11 @@ arch pstone_2
 x 18
 y 6
 end
-arch swall_1_1
+arch cwall_2_2_4
 x 18
 y 6
 end
-arch cwall_2_2_4
+arch swall_1_1_half
 x 18
 y 6
 end
@@ -3974,7 +3974,7 @@ arch pstone_2
 x 21
 y 14
 end
-arch swall_1_3
+arch swall_2_1_2
 x 21
 y 14
 end
@@ -3997,7 +3997,7 @@ arch pstone_2
 x 21
 y 16
 end
-arch swall_1_3
+arch swall_2_1_2
 x 21
 y 16
 end
@@ -4243,6 +4243,10 @@ arch cwall_2_1_1
 x 22
 y 14
 end
+arch swall_1_3_half
+x 22
+y 14
+end
 arch pstone_2
 x 22
 y 15
@@ -4256,6 +4260,10 @@ x 22
 y 16
 end
 arch cwall_2_1_1
+x 22
+y 16
+end
+arch swall_1_3_half
 x 22
 y 16
 end
