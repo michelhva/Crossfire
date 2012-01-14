@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.faces.SmoothFaces;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
@@ -58,6 +59,9 @@ public class Model {
 
     @NotNull
     private final QuestsManager questsManager = new QuestsManager(guiStateManager);
+
+    @NotNull
+    private final KnowledgeManager knowledgeManager = new KnowledgeManager(guiStateManager);
 
     @NotNull
     private final FaceCache faceCache = new FaceCache();
@@ -112,6 +116,11 @@ public class Model {
     @NotNull
     public QuestsManager getQuestsManager() {
         return questsManager;
+    }
+
+    @NotNull
+    public KnowledgeManager getKnowledgeManager() {
+        return knowledgeManager;
     }
 
     @NotNull

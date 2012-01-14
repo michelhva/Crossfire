@@ -27,7 +27,8 @@ textbutton button_messages    false command_messages Messages
 textbutton button_protections false command_protections Protections
 textbutton button_skills      false command_skills Skills
 textbutton button_spells      false command_spells Spells
-textbutton button_quests      false command_quests Quests
+textbutton button_quests      false command_quests Q
+textbutton button_knowledge   false command_knowledge K
 textbutton button_pickup      false command_pickup Pickup
 textbutton button_setup       false command_setup Setup
 
@@ -141,6 +142,8 @@ horizontal begin par
     gap 4
     button_quests
     gap 4
+    button_knowledge
+    gap 4
     button_pickup
     gap 4
     button_setup
@@ -216,6 +219,7 @@ vertical begin par
       button_setup
       button_spells
       button_quests
+      button_knowledge
     end
     gap
   end
