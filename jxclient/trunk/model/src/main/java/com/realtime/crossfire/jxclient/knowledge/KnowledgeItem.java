@@ -145,6 +145,7 @@ public class KnowledgeItem {
      * Returns the knowledge's type.
      * @return the type
      */
+    @NotNull
     public String getType() {
         return type;
     }
