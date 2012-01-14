@@ -12,7 +12,7 @@ enter_x 10
 enter_y 5
 msg
 Created:  2000-10-28
-Modified: 2008-12-02 Rick Tanner
+Modified: 2012-01-13 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -582,8 +582,7 @@ arch man
 name vendor
 msg
 @match *
-Drop gold on the tables to buy popcorn
-and beer.
+Drop gold on the tables to buy popcorn and beer.
 endmsg
 x 8
 y 1
@@ -660,8 +659,7 @@ arch man
 name vendor
 msg
 @match *
-Drop gold on the tables to buy popcorn
-and beer.
+Drop gold on the tables to buy popcorn and beer.
 endmsg
 x 8
 y 9
