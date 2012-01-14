@@ -84,6 +84,7 @@ public class GUISpellList extends GUIItemList {
      * @return empty string if no matching bindings, else text in the form
      *         "legend (binding 1) ; (binding 2) ; ..."
      */
+    @NotNull
     private String getBindings(@NotNull final Spell spell, @NotNull final String prefix, @NotNull final String legend) {
         final String search = prefix+spell.getName().charAt(0);
         final String match = prefix+spell.getName();
