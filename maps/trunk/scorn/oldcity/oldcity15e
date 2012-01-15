@@ -8,7 +8,7 @@ enter_x 39
 enter_y 6
 msg
 Created:  1993-10-07 skud the great (tvangod@ecst.csuchico.edu)
-Modified: 2012-01-13 Rick Tanner
+Modified: 2012-01-15 Rick Tanner
 endmsg
 tile_path_4 oldcity15
 end
@@ -489,7 +489,7 @@ arch pstone_2
 x 2
 y 16
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 2
 y 16
 end
@@ -501,7 +501,7 @@ arch pstone_2
 x 2
 y 18
 end
-arch wwall_2_2_4
+arch wwall_1_3
 x 2
 y 18
 end
@@ -2562,7 +2562,7 @@ arch cobblestones2
 x 10
 y 29
 end
-arch awall_2_1_1
+arch awall_1_2
 x 10
 y 29
 end
@@ -2585,7 +2585,7 @@ arch cobblestones2
 x 10
 y 31
 end
-arch awall_2_2_4
+arch awall_1_3
 x 10
 y 31
 end
@@ -4461,11 +4461,15 @@ arch wwall_1_2
 x 19
 y 10
 end
+arch swall_1_1_half
+x 19
+y 10
+end
 arch medium_stones
 x 19
 y 11
 end
-arch swall_2_2_2
+arch swall_3_2
 x 19
 y 11
 end
@@ -4681,11 +4685,15 @@ arch medium_stones
 x 19
 y 38
 end
-arch swall_1_2
+arch swall_2_1_1
 x 19
 y 38
 end
 arch medium_stones
+x 19
+y 39
+end
+arch swall_1_2_half
 x 19
 y 39
 end
