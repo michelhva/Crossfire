@@ -5305,7 +5305,7 @@ y 25
 end
 arch magic_mouth
 msg
-The Demlick laughs evilly at you.
+The Demlich laughs evilly at you.
 endmsg
 x 22
 y 26
@@ -5313,9 +5313,9 @@ end
 arch magic_ear
 msg
 @match subject|summon
-Why yes, I am going to take over your precious little city.  I have built a way in for my hords! *The Demlick says evilly*
+Why yes, I am going to take over your precious little city.  I have built a way in for my hordes! *The Demlich says evilly*
 @match hords|way|Hords|Way
-Nod, the entrance is nearer then you think! Of course, you'll never Find IT!
+Nod, the entrance is nearer then you think! Of course, you'll never find IT!
 @match *
 You have killed many of my subjects, but I will summon more and the ones you have yet to face will surely kill you, so give up now foolish human.
 endmsg
