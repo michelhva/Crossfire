@@ -8,7 +8,7 @@ enter_x 5
 enter_y 38
 msg
 Created:  1994-05-28
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-01-14 Rick Tanner
 endmsg
 tile_path_2 oldcity54
 tile_path_4 oldcity8
@@ -2351,8 +2351,7 @@ arch pixie
 name Lone Pixie
 msg
 match *
-Beware of Thalik Norois, he is king of the Old
-City
+Beware of Thalik Norois, he is king of the Old City.
 endmsg
 x 9
 y 25
@@ -4192,27 +4191,13 @@ y 1
 carrying 702
 arch scroll
 msg
-Golick, my good friend, I entered the
-city of Scorn some days ago, it is an
-amazing town. Its port is like none I
-have ever seen, with dragon transports
-and huge galleons. The southern part
-of the city is the wealthy area, with
-large mansions and even a castle. The
-north side, is a little bit wild with
-the docks in this area, pirates seem
-to be everywhere
+Golick, my good friend, I entered the city of Scorn some days ago, it is an amazing town.  Its port is like none I have ever seen, with dragon transports and huge galleons.  The southern part of the city is the wealthy area, with large mansions and even a castle.  The north side, is a little bit wild with the docks in this area, pirates seem to be everywhere.
 endmsg
 end
 arch scroll
 msg
 Page 2.
-Today, I talked with a man in a tavern
-called Goth's. He told me about the
-oldcity, which lies underneath Scorn.
-He spoke of many treasures in the
-depths of oldcity and I believe I will
-search for it Tomorrow.
+Today, I talked with a man in a tavern called Goth's.  He told me about the oldcity, which lies underneath Scorn.  He spoke of many treasures in the depths of Old City and I believe I will search for it tomorrow.
 Your friend,
 Maggot
 endmsg
@@ -4456,7 +4441,7 @@ y 4
 end
 arch magic_mouth
 msg
-You see the Gnome's treasure
+You see the Gnome's treasure.
 endmsg
 x 18
 y 5
