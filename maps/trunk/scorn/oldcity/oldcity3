@@ -6,7 +6,7 @@ width 20
 height 40
 msg
 Created:  1998-05-03
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-14 Rick Tanner
 endmsg
 tile_path_1 oldcity2
 tile_path_2 end
@@ -1164,8 +1164,7 @@ arch pyromaniac
 name Groll
 msg
 @match fire|burn|Fire|Burn
-I like to watch them burn.
-*Grolls says evilly*
+I like to watch them burn. *Grolls says evilly*
 @match *
 Fire!!! Burn!!!!! BURN!!!
 endmsg
@@ -2484,7 +2483,7 @@ end
 arch sign_w
 name Firing Range
 msg
-WARNING: fire hazard, explosives in us
+WARNING: fire hazard, explosives in us.
 endmsg
 x 11
 y 25
@@ -3855,18 +3854,15 @@ That is not important.
 @match job
 I dabble in the black arts.
 @match art|black
-I've killed many who have tried to test my
-power. Do you think you can kill me?
+I've killed many who have tried to test my power. Do you think you can kill me?
 @match yes
-I doubt it.
-*The dark elf grins evilly.*
+I doubt it. *The dark elf grins evilly.*
 @match no
 Smart, you are.
 @match pass
-I guard this passage and I will kill any who try
-to pass. The Black Art will stop you.
+I guard this passage and I will kill any who try to pass.  The Black Art will stop you.
 @match *
-You may not pass
+You may not pass.
 endmsg
 hp 200
 maxhp 200
