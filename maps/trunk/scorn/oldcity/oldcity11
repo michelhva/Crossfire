@@ -8,7 +8,7 @@ enter_x 4
 enter_y 15
 msg
 Created:  1993-10-05 skud the great (tvangod@ecst.csuchico.edu)
-Modified: 2012-01-13 Rick Tanner
+Modified: 2012-01-15 Rick Tanner
 endmsg
 tile_path_1 oldcity14
 tile_path_3 oldcity10
@@ -1451,7 +1451,7 @@ arch pstone_1
 x 5
 y 27
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 5
 y 27
 end
@@ -3432,7 +3432,7 @@ arch medium_stones
 x 14
 y 3
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 14
 y 3
 end
@@ -3855,7 +3855,7 @@ arch medium_stones
 x 16
 y 3
 end
-arch wwall_2_2_4
+arch wwall_1_2
 x 16
 y 3
 end
