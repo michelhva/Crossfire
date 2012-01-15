@@ -8,7 +8,7 @@ enter_x 12
 enter_y 16
 msg
 Created:  1993-10-10 skud the great (tvangod@ecst.csuchico.edu)
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-01-15 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -1799,10 +1799,7 @@ y 14
 end
 arch magic_mouth
 msg
-Welcome to Skud's Currency Exchange.
-Please form a single file line.
-Have a nice day.
-(idea credited to Eric Mehlhaff)
+Welcome to Skud's Currency Exchange.  Please form a single file line.  Have a nice day. (idea credited to Eric Mehlhaff)
 endmsg
 x 11
 y 14
@@ -1987,10 +1984,7 @@ y 14
 end
 arch magic_mouth
 msg
-Welcome to Skud's Currency Exchange.
-Please form a single file line.
-Have a nice day.
-(idea credited to Eric Mehlhaff)
+Welcome to Skud's Currency Exchange.  Please form a single file line.  Have a nice day.  (idea credited to Eric Mehlhaff)
 endmsg
 x 12
 y 14
@@ -2185,10 +2179,7 @@ y 14
 end
 arch magic_mouth
 msg
-Welcome to Skud's Currency Exchange.
-Please form a single file line.
-Have a nice day.
-(idea credited to Eric Mehlhaff)
+Welcome to Skud's Currency Exchange.  Please form a single file line.  Have a nice day.  (idea credited to Eric Mehlhaff)
 endmsg
 x 13
 y 14
@@ -2331,8 +2322,7 @@ arch man
 name Ralph
 msg
 @match *
-Please drop your change on the
-appropriate table.
+Please drop your change on the appropriate table.
 endmsg
 x 14
 y 10
