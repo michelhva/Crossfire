@@ -5,7 +5,7 @@ region scornoldcity
 width 40
 height 40
 msg
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-14 Rick Tanner
 endmsg
 tile_path_1 oldcity54
 tile_path_2 oldcity3
@@ -2828,7 +2828,7 @@ x 12
 end
 arch magic_mouth
 msg
-You get a very uneasy feeling
+You get a very uneasy feeling.
 endmsg
 x 12
 y 1
@@ -5305,7 +5305,7 @@ y 25
 end
 arch magic_mouth
 msg
-The Demlick laughs evilly at you
+The Demlick laughs evilly at you.
 endmsg
 x 22
 y 26
@@ -5313,18 +5313,11 @@ end
 arch magic_ear
 msg
 @match subject|summon
-Why yes, I am going to take over your
-precious little city. I have built a way in for
-my hords!
-*The Demlick says evilly*
+Why yes, I am going to take over your precious little city.  I have built a way in for my hords! *The Demlick says evilly*
 @match hords|way|Hords|Way
-Nod, the entrance is nearer then you think!
-Of course, you'll never Find IT!
+Nod, the entrance is nearer then you think! Of course, you'll never Find IT!
 @match *
-You have killed many of my subjects, but I
-will summon more and the ones you have yet
-to face will surely kill you, so give up now
-foolish human.
+You have killed many of my subjects, but I will summon more and the ones you have yet to face will surely kill you, so give up now foolish human.
 endmsg
 x 22
 y 26
@@ -5518,8 +5511,7 @@ y 17
 end
 arch magic_mouth
 msg
-You hear a low voice to the south say :
-"Hey you, come here!
+You hear a low voice to the south say: "Hey you, come here!"
 endmsg
 x 23
 y 18
