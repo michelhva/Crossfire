@@ -5,7 +5,7 @@ region scornoldcity
 width 20
 height 40
 msg
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-15 Rick Tanner
 endmsg
 tile_path_1 oldcity11
 tile_path_3 oldcity1
@@ -1298,7 +1298,7 @@ arch dungeon_floor
 x 4
 y 16
 end
-arch awall_2_2_4
+arch awall_1_3
 x 4
 y 16
 end
@@ -2314,7 +2314,7 @@ arch dungeon_floor
 x 9
 y 15
 end
-arch awall_2_2_1
+arch awall_1_4
 x 9
 y 15
 end
@@ -2322,7 +2322,7 @@ arch woodfloor
 x 9
 y 16
 end
-arch wwall_2_2_2
+arch wwall_1_4
 x 9
 y 16
 end
@@ -2382,7 +2382,11 @@ arch woodfloor
 x 9
 y 24
 end
-arch wwall_3_2
+arch wwall_1_4
+x 9
+y 24
+end
+arch swall_1_1_half
 x 9
 y 24
 end
@@ -3206,6 +3210,10 @@ y 29
 end
 arch sea
 name stream
+x 12
+y 30
+end
+arch swall_1_3_half
 x 12
 y 30
 end
