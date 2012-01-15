@@ -8,7 +8,7 @@ enter_x 9
 enter_y 15
 msg
 Created:  1993-10-07 skud the great (tvangod@ecst.csuchico.edu)
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-15 Rick Tanner
 endmsg
 tile_path_2 oldcity15e
 tile_path_3 oldcity14
@@ -1915,6 +1915,10 @@ arch awall_2_2_1
 x 8
 y 16
 end
+arch wwall_1_3
+x 8
+y 16
+end
 arch pstone_3
 x 8
 y 17
@@ -2110,6 +2114,10 @@ x 9
 y 13
 end
 arch dungeon_floor
+x 9
+y 14
+end
+arch wwall_1_2
 x 9
 y 14
 end
@@ -2881,7 +2889,7 @@ arch pstone_1
 x 12
 y 23
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 12
 y 23
 end
@@ -3307,7 +3315,7 @@ arch pstone_1
 x 14
 y 23
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 14
 y 23
 end
