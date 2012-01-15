@@ -6,7 +6,7 @@ width 40
 height 40
 msg
 Created:  1993-10-05 skud the great (tvangod@ecst.csuchico.edu)
-Modified: 2012-01-13 Rick Tanner
+Modified: 2012-01-15 Rick Tanner
 endmsg
 tile_path_1 oldcity13
 tile_path_2 oldcity10
@@ -6318,7 +6318,7 @@ arch dungeon_floor
 x 25
 y 7
 end
-arch awall_3_1
+arch awall_2_2_4
 x 25
 y 7
 end
@@ -6821,7 +6821,7 @@ arch dungeon_floor
 x 27
 y 7
 end
-arch awall_3_1
+arch awall_2_2_1
 x 27
 y 7
 end
@@ -9427,7 +9427,7 @@ arch medium_stones
 x 37
 y 39
 end
-arch awall_2_1_2
+arch awall_1_3
 x 37
 y 39
 end
@@ -9820,7 +9820,7 @@ arch pstone_1
 x 39
 y 39
 end
-arch awall_2_1_2
+arch awall_1_4
 x 39
 y 39
 end
