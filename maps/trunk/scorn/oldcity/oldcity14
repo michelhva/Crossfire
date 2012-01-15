@@ -7,7 +7,7 @@ height 40
 enter_x 9
 enter_y 39
 msg
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-15 Rick Tanner
 endmsg
 tile_path_1 oldcity15
 tile_path_3 oldcity11
@@ -860,7 +860,7 @@ arch pstone_3
 x 3
 y 19
 end
-arch wwall_2_2_2
+arch wwall_1_4
 x 3
 y 19
 end
@@ -872,7 +872,7 @@ arch pstone_1
 x 3
 y 21
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 3
 y 21
 end
@@ -1043,7 +1043,7 @@ arch large_stones
 x 4
 y 6
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 4
 y 6
 end
@@ -1055,7 +1055,7 @@ arch pstone_3
 x 4
 y 8
 end
-arch wwall_2_2_4
+arch wwall_1_3
 x 4
 y 8
 end
@@ -2058,7 +2058,7 @@ arch pstone_3
 x 8
 y 16
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 8
 y 16
 end
@@ -2508,7 +2508,7 @@ arch pstone_3
 x 10
 y 16
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 10
 y 16
 end
@@ -3171,7 +3171,7 @@ arch pstone_3
 x 12
 y 37
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 12
 y 37
 end
@@ -3183,7 +3183,7 @@ arch pstone_3
 x 12
 y 39
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 12
 y 39
 end
@@ -3862,7 +3862,7 @@ arch pstone_3
 x 15
 y 19
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 15
 y 19
 end
@@ -3874,7 +3874,7 @@ arch small_stones
 x 15
 y 21
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 15
 y 21
 end
@@ -4538,7 +4538,7 @@ arch pstone_3
 x 17
 y 36
 end
-arch wwall_2_2_3
+arch wwall_1_3
 x 17
 y 36
 end
@@ -4550,7 +4550,7 @@ arch pstone_3
 x 17
 y 38
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 17
 y 38
 end
