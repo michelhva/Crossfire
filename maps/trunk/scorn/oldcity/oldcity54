@@ -6,7 +6,7 @@ width 40
 height 40
 msg
 Created:  1993-10-19
-Modified: 2008-09-28 Rick Tanner
+Modified: 2012-01-14 Rick Tanner
 endmsg
 tile_path_1 oldcity9
 tile_path_2 oldcity2
@@ -859,22 +859,15 @@ end
 arch skeleton
 msg
 @match riddle
-Oh yes!, and if you best me, I may let you see
-what lies beyond for THeeee....Do you accept
-my challenge??
+Oh yes!, and if you best me, I may let you see what lies beyond for THeeee....Do you accept my challenge??
 @match challenge
 Yes or no will do.
 @match yes
-Very well, White as a ghost, Faster then thee,
-Taller then a mountain, Louder then me,
-Bright as the brightest star, Silent as the best
-thief, what is it that thou doest see?
+Very well, White as a ghost, Faster then thee, Taller then a mountain, Louder then me, Bright as the brightest star, Silent as the best thief, what is it that thou doest see?
 @match no
-Very well, bother me no more....Or tomorrow
-you will be Painfully sore
+Very well, bother me no more....Or tomorrow you will be Painfully sore.
 @match *
-I have a riddle for Theeeee!!!
-*The skeleton squeals
+I have a riddle for Theeeee!!! *The skeleton squeals*
 endmsg
 x 3
 y 5
@@ -884,10 +877,7 @@ end
 arch magic_ear
 msg
 @match cloud
-Very good Adventurer! You have are indeed
-as cunning as me! but of course I will not
-FLEE!
-*The gnome smiles smoothly.*
+Very good Adventurer! You have are indeed as cunning as me! But of course I will not FLEE! *The gnome smiles smoothly.*
 endmsg
 x 3
 y 6
@@ -1160,8 +1150,7 @@ y 4
 end
 arch magic_mouth
 msg
-The skeleton grins at you, expecting you
-to say something.
+The skeleton grins at you, expecting you to say something.
 endmsg
 x 4
 y 5
@@ -2317,8 +2306,7 @@ y 26
 end
 arch sign
 msg
-WARNING!
-Do not open door without assistance!
+WARNING! Do not open door without assistance!
 endmsg
 x 8
 y 26
