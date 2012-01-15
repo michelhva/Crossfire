@@ -7,7 +7,7 @@ height 40
 enter_x 14
 enter_y 39
 msg
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-01-15 Rick Tanner
 endmsg
 tile_path_2 oldcity11
 tile_path_3 oldcity12
@@ -2498,7 +2498,7 @@ end
 arch pstone_2
 x 10
 end
-arch swall_1_3
+arch swall_2_1_2
 x 10
 end
 arch pstone_2
@@ -2716,6 +2716,9 @@ x 10
 y 39
 end
 arch small_stones
+x 11
+end
+arch swall_1_3_half
 x 11
 end
 arch bwall_1_4
@@ -5166,7 +5169,11 @@ arch pstone_1
 x 21
 y 9
 end
-arch wwall_2_2_1
+arch swall_1_4_half
+x 21
+y 9
+end
+arch wwall_1_2
 x 21
 y 9
 end
