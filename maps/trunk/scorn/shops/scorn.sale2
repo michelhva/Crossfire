@@ -8,7 +8,7 @@ enter_x 10
 enter_y 1
 msg
 Created:  2004-07-01 Gene Alexander (gene@eracc.com)
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-01-16 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -1127,10 +1127,7 @@ y 8
 end
 arch sign
 msg
-This area is set aside for
-Dungeon Masters to be able
-to reset the Scorn Sale Shop
-if necessary.
+This area is set aside for Dungeon Masters to be able to reset the Scorn Sale Shop if necessary.
 endmsg
 x 5
 y 8
@@ -1730,11 +1727,7 @@ end
 arch sign_w
 name Pawn
 msg
-Items sold in these booths will be moved
-to the pawn shop floor. Note if one picks
-up an item after dropping it in a booth
-one has to pay the purchase price to get
-the item back.
+Items sold in these booths will be moved to the pawn shop floor.  Note if one picks up an item after dropping it in a booth one has to pay the purchase price to get the item back.
 endmsg
 x 8
 y 4
@@ -1760,14 +1753,7 @@ name info
 msg
 Scorn Pawn Shop
 ---
-Items you sell here will stay roughly
-"forever" unless someone buys the
-item. If the shop gets too crowded
-with items a Proprietor will clear
-out the excess.
-You can sell items in the pawn booths
-or you can go and browse our inventory
-of items for a small fee.
+Items you sell here will stay roughly "forever" unless someone buys the item.  If the shop gets too crowded with items a Proprietor will clear out the excess.  You can sell items in the pawn booths or you can go and browse our inventory of items for a small fee.
 endmsg
 x 8
 y 6
@@ -2654,11 +2640,7 @@ end
 arch sign_e
 name Pawn
 msg
-Items sold in these booths will be moved
-to the pawn shop floor. Note if one picks
-up an item after dropping it in a booth
-one has to pay the purchase price to get
-the item back.
+Items sold in these booths will be moved to the pawn shop floor.  Note if one picks up an item after dropping it in a booth one has to pay the purchase price to get the item back.
 endmsg
 x 12
 y 4
@@ -2684,9 +2666,7 @@ name charity
 msg
 Charity - Help keep Scorn clean
 -----
-Please use this shop entry area
-for dropping free items to be used
-by other citizens in need.
+Please use this shop entry area for dropping free items to be used by other citizens in need.
 endmsg
 x 12
 y 6
@@ -2959,12 +2939,11 @@ end
 arch magic_ear
 msg
 @match price
-Stuff not much. Buy lot!
+Stuff not much.  Buy lot!
 @match key
-Manager office for employee only.
-You not go there.
+Manager office for employee only.  You not go there.
 @match oorgh
-That my name. Not wear out.
+That my name.  Not wear out.
 @match *
 Oorgh welcome you to shop!
 endmsg
