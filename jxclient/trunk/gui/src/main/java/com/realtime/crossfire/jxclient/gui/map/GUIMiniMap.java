@@ -91,6 +91,8 @@ public class GUIMiniMap extends AbstractGUIMap {
 
     /**
      * Creates a new instance.
+     * @param avoidCopyArea whether map scrolling is done by copying pixel
+     * areas; if unset, always repaint all map squares
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
@@ -99,8 +101,8 @@ public class GUIMiniMap extends AbstractGUIMap {
      * @param width the map width in squares
      * @param height the map height in squares
      */
-    public GUIMiniMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, final int width, final int height) {
-        super(tooltipManager, elementListener, name, mapUpdaterState, facesProvider, null);
+    public GUIMiniMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, final int width, final int height) {
+        super(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, null);
         this.mapUpdaterState = mapUpdaterState;
         this.width = width;
         this.height = height;

@@ -68,6 +68,12 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private static final long serialVersionUID = 1;
 
     /**
+     * Whether map scrolling is done by copying pixel areas. If unset, always
+     * repaint all map squares.
+     */
+    private final boolean avoidCopyArea;
+
+    /**
      * The {@link MapUpdaterState} instance to display.
      */
     @NotNull
@@ -294,6 +300,8 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
 
     /**
      * Creates a new instance.
+     * @param avoidCopyArea whether map scrolling is done by copying pixel
+     * areas; if unset, always repaint all map squares
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
@@ -302,8 +310,9 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * @param smoothingRenderer the smoothing renderer to use or
      * <code>null</code> to not draw smoothed faces
      */
-    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @Nullable final SmoothingRenderer smoothingRenderer) {
+    protected AbstractGUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @Nullable final SmoothingRenderer smoothingRenderer) {
         super(tooltipManager, elementListener, name, Transparency.OPAQUE);
+        this.avoidCopyArea = avoidCopyArea;
         this.smoothingRenderer = smoothingRenderer;
         tileSize = facesProvider.getSize();
         assert tileSize > 0;
@@ -620,7 +629,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * @param dy the y-distance
      */
     private void updateScrolledMap(@NotNull final Graphics g, @NotNull final CfMap map, final int dx, final int dy) {
-        if (Math.abs(dx)*tileSize >= getWidth() || Math.abs(dy)*tileSize >= getHeight()) {
+        if (avoidCopyArea || Math.abs(dx)*tileSize >= getWidth() || Math.abs(dy)*tileSize >= getHeight()) {
             redrawAllUnlessDirty(g, map);
         } else {
             final int x = dx > 0 ? dx : 0;
