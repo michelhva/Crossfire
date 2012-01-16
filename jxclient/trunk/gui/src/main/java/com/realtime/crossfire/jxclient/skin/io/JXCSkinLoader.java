@@ -275,6 +275,12 @@ public class JXCSkinLoader {
     private final KnowledgeView knowledgeView;
 
     /**
+     * Whether map scrolling is done by copying pixel areas. If unset, always
+     * repaint all map squares.
+     */
+    private final boolean avoidCopyArea;
+
+    /**
      * The {@link FacesManager} instance to use.
      */
     @NotNull
@@ -450,8 +456,10 @@ public class JXCSkinLoader {
      * @param questsManager the quests manager instance to use
      * @param knowledgeView the knowledge view to use
      * @param knowledgeTypeView the knowledge type view to use
+     * @param avoidCopyArea whether map scrolling is done by copying pixel
+     * areas; if unset, always repaint all map squares
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull final KnowledgeManager knowledgeManager, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypeView) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull final KnowledgeManager knowledgeManager, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypeView, final boolean avoidCopyArea) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
@@ -474,6 +482,7 @@ public class JXCSkinLoader {
         this.knowledgeManager = knowledgeManager;
         this.knowledgeView = knowledgeView;
         this.knowledgeTypeView = knowledgeTypeView;
+        this.avoidCopyArea = avoidCopyArea;
     }
 
     /**
@@ -1770,7 +1779,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        final AbstractGUIElement element = new GUIMiniMap(tooltipManager, elementListener, name, mapUpdaterState, facesProvider, w, h);
+        final AbstractGUIElement element = new GUIMiniMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, w, h);
         insertGuiElement(element);
     }
 
@@ -1790,7 +1799,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size "+defaultTileSize);
         }
-        insertGuiElement(new GUIMap(tooltipManager, elementListener, name, mapUpdaterState, facesProvider, server, smoothFaces));
+        insertGuiElement(new GUIMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, server, smoothFaces));
     }
 
     /**

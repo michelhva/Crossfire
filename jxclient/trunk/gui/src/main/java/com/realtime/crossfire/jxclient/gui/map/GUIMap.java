@@ -62,6 +62,8 @@ public class GUIMap extends AbstractGUIMap {
 
     /**
      * Creates a new instance.
+     * @param avoidCopyArea whether map scrolling is done by copying pixel
+     * areas; if unset, always repaint all map squares
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
@@ -70,8 +72,8 @@ public class GUIMap extends AbstractGUIMap {
      * @param crossfireServerConnection the server connection to monitor
      * @param smoothFaces the smooth faces to use
      */
-    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SmoothFaces smoothFaces) {
-        super(tooltipManager, elementListener, name, mapUpdaterState, facesProvider, new SmoothingRenderer(smoothFaces, facesProvider));
+    public GUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SmoothFaces smoothFaces) {
+        super(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, new SmoothingRenderer(smoothFaces, facesProvider));
         this.crossfireServerConnection = crossfireServerConnection;
         tileSize = facesProvider.getSize();
     }

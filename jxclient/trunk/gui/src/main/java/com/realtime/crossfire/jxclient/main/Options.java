@@ -111,6 +111,12 @@ public class Options {
     public static final String DEFAULT_SKIN = "ragnorok";
 
     /**
+     * Whether map scrolling is done by copying pixel areas. If unset, always
+     * repaint all map squares.
+     */
+    private boolean avoidCopyArea;
+
+    /**
      * Parse command line arguments.
      * @param args the command line arguments
      */
@@ -165,6 +171,8 @@ public class Options {
                     System.err.println("Invalid tile size: "+tileSize);
                     System.exit(1);
                 }
+            } else if (args[i].equals("--avoid-copy-area")) {
+                avoidCopyArea = true;
             } else {
                 System.out.println("");
                 System.out.println("Available options:");
@@ -178,6 +186,8 @@ public class Options {
                 //System.out.println(" -S <skin>"); // not advertised as it is considered deprecated
                 System.out.println(" -s <skin>      : Skin name to use.");
                 System.out.println(" --tile-size <n>: The size of map view tiles in pixels.");
+                System.out.println(" --avoid-copy-area: Do not copy pixel areas when scrolling the map view.");
+                System.out.println("                  Instead always repaint all map squares.");
                 System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
                 System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
                 System.out.println("                  windows.");
@@ -290,6 +300,15 @@ public class Options {
     @Nullable
     public String getServer() {
         return server;
+    }
+
+    /**
+     * Returns whether map scrolling is done by copying pixel areas. If unset,
+     * always repaint all map squares.
+     * @return whether copying pixel areas is disallowed
+     */
+    public boolean isAvoidCopyArea() {
+        return avoidCopyArea;
     }
 
 }
