@@ -11,7 +11,7 @@ enter_x 38
 enter_y 21
 msg
 Created:  1993-10-15
-Modified: 2011-10-10 Rick Tanner
+Modified: 2012-01-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -4812,9 +4812,7 @@ end
 arch sign
 name potion of dexterity
 msg
-Potions of dexterity cannot bought from shops.
-You don't want to steal this one.
-You want to go and fight for real loot in the dungeons.
+Potions of dexterity cannot bought from shops.  You don't want to steal this one.  You want to go and fight for real loot in the dungeons.
 endmsg
 face potiondex.111
 x 32
@@ -4843,8 +4841,7 @@ end
 arch sign
 name potion of cold resistance
 msg
-Potions of cold resistance can be obtained in the shop area.
-Don't steal this one.
+Potions of cold resistance can be obtained in the shop area.  Don't steal this one.
 endmsg
 face potioncol.111
 x 32
@@ -4988,9 +4985,7 @@ end
 arch sign
 name potion of intelligence
 msg
-Potions of intelligence can't be obtained from shops.
-This one isn't an exception, so go and fight in the dungeons to get these potions.
-Don't steal this one.
+Potions of intelligence can't be obtained from shops.  This one isn't an exception, so go and fight in the dungeons to get these potions.  Don't steal this one.
 endmsg
 face potionint.111
 x 33
@@ -5007,8 +5002,7 @@ end
 arch sign
 name strange ring
 msg
-Strange rings can be found in the shop area.
-Don't steal this one.
+Strange rings can be found in the shop area.  Don't steal this one.
 endmsg
 face ring_drain.111
 x 33
@@ -5025,8 +5019,7 @@ end
 arch sign
 name magic power potion
 msg
-Magic power potions can be obtained in the shop area.
-Don't steal this one.
+Magic power potions can be obtained in the shop area.  Don't steal this one.
 endmsg
 face potionmag.111
 x 33
@@ -5460,8 +5453,7 @@ end
 arch sign
 name supreme potion of life
 msg
-You can buy potions of life from the shops.
-It's not necessary to steal this one.
+You can buy potions of life from the shops.  It's not necessary to steal this one.
 endmsg
 face potiongen.111
 x 36
@@ -5494,8 +5486,7 @@ end
 arch sign
 name magic power potion
 msg
-Magic power potions can be obtained in the shop area.
-Don't steal this one.
+Magic power potions can be obtained in the shop area.  Don't steal this one.
 endmsg
 face potionmag.111
 x 36
@@ -5631,9 +5622,7 @@ end
 arch sign
 name improvement potion
 msg
-Improvement potions can be bought in the shop area.
-This particular one isn't supposed to be sold.
-Don't steal it and visit my shop instead.
+Improvement potions can be bought in the shop area.  This particular one isn't supposed to be sold.  Don't steal it and visit my shop instead.
 endmsg
 face potionimp.111
 x 37
@@ -5650,8 +5639,7 @@ end
 arch sign
 name amethyst
 msg
-Amethysts are nice to look at, they can be obtained from shops.
-Don't steal this one.
+Amethysts are nice to look at, they can be obtained from shops.  Don't steal this one.
 endmsg
 face amethyst.111
 x 37
@@ -5664,8 +5652,7 @@ end
 arch sign
 name healing potion
 msg
-Healing potions can be obtained in the shop area.
-Don't steal this one.
+Healing potions can be obtained in the shop area.  Don't steal this one.
 endmsg
 face potionhea.111
 x 37
@@ -5693,10 +5680,7 @@ msg
 @match hello|hi|greetings
 Welcome to my shop.
 @match *
-Feel free to examine the merchandise
-but remember:
-You break it you bought it.
-No testing out the wands either...
+Feel free to examine the merchandise but remember: You break it you bought it.  No testing out the wands either...
 endmsg
 x 37
 y 13
