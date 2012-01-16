@@ -13,7 +13,7 @@ enter_x 16
 enter_y 17
 msg
 Created:  1993-10-15
-Modified: 2011-10-10 Rick Tanner
+Modified: 2012-01-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -465,10 +465,7 @@ arch merchant
 name Rich jeweler
 msg
 @match *
-Hullo, feel free to peruse through my
-finest quality jewels and jewelery.
-You won't find a better price and a
-more attractive item in Scorn.
+Hullo, feel free to peruse through my finest quality jewels and jewelery.  You won't find a better price and a more attractive item in Scorn.
 endmsg
 x 4
 y 4
