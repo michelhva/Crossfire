@@ -93,6 +93,7 @@ public class AccountCreateCommand implements GUICommand {
             if (error != null) {
                 error.setText("Can't have an empty login!");
             }
+            loginField.setActive(true);
             return;
         }
 
@@ -101,6 +102,12 @@ public class AccountCreateCommand implements GUICommand {
             if (error != null) {
                 error.setText("Can't have an empty password!");
             }
+            confirmField.setText("");
+            passwordField.setActive(true);
+            return;
+        }
+        if (confirm.isEmpty()) {
+            confirmField.setActive(true);
             return;
         }
         if (!confirm.equals(password)) {
@@ -108,6 +115,9 @@ public class AccountCreateCommand implements GUICommand {
             if (error != null) {
                 error.setText("Passwords don't match!");
             }
+            passwordField.setText("");
+            confirmField.setText("");
+            passwordField.setActive(true);
             return;
         }
 
