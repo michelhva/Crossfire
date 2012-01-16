@@ -9,7 +9,7 @@ enter_y 9
 msg
 Created:  2001-09-05 Commander Gros (yann.chachkoff@mailandnews.com)
 Following a Lord MiDS idea
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-01-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -679,7 +679,7 @@ end
 arch sign
 name Scorn Message Board
 msg
-I am a talking board, please say something to me. If you don't know what to say, try help.
+I am a talking board, please say something to me.  If you don't know what to say, try help.
 endmsg
 x 7
 y 8
@@ -880,8 +880,7 @@ msg
 @match *
 I'm busy right now - come back later or ask Colette for help.
 @match coffee
-The Coffee Controls The Post
-Whoever Controls The Post Controls The Empire
+The Coffee Controls The Post.  Whoever Controls The Post Controls The Empire.
 endmsg
 x 9
 y 4
@@ -1018,8 +1017,7 @@ y 6
 end
 arch clock
 msg
-No matter when you look at it, it is
-always too slow
+No matter when you look at it, it is always too slow.
 endmsg
 x 10
 y 6
