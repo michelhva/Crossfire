@@ -252,6 +252,16 @@ public class GuiManager {
                 } catch (final JXCSkinException ignored) {
                     // ignore if dialog doesn't exist
                 }
+            } else if (command.equals("createplayer") && skin != null) {
+                try {
+                    final Gui dialog = skin.getDialog("account_character_new");
+                    final GUIText loginField = dialog.getFirstElement(GUIText.class, "character_login");
+                    if (loginField != null) {
+                        loginField.setActive(true);
+                    }
+                } catch (final JXCSkinException ignored) {
+                    // ignore if dialog doesn't exist
+                }
             }
         }
 

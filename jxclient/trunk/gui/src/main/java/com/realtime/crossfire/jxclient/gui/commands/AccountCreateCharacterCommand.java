@@ -82,6 +82,10 @@ public class AccountCreateCharacterCommand implements GUICommand {
         }
 
         final String login = loginField.getText();
+        if (login.isEmpty()) {
+            loginField.setActive(true);
+            return;
+        }
 
         commandCallback.accountCreateCharacter(login);
     }
