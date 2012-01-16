@@ -10,7 +10,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  2004-07-01 Gene Alexander
-Modified: 2011-11-03 Rick Tanner
+Modified: 2012-01-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1252,12 +1252,7 @@ arch magic_mouth
 name A tiny fairy voice
 msg
 A tiny fairy appears and says in a tiny voice:
-"The first floor is for selling your less desirables
-for money. The second floor is for trading,
-charity and pawn shop. There is an "identify
-items" table on the second floor. Items dropped
-in the pawn shop will stay ... oh, Peter's calling
-me. Bye!"
+"The first floor is for selling your less desirables for money.  The second floor is for trading, charity and pawn shop.  There is an "identify items" table on the second floor.  Items dropped in the pawn shop will stay ... oh, Peter's calling me. Bye!"
 The tiny fairy disappears.
 endmsg
 x 9
@@ -1335,13 +1330,9 @@ end
 arch magic_ear
 msg
 @match plants
-Yeah! I like plants. So what? I also like smashing
-the heads of bothersome pipsqueaks like you.
-Quit bothering me.
+Yeah! I like plants. So what? I also like smashing the heads of bothersome pipsqueaks like you.  Quit bothering me.
 @match *
-Are you blind? Can you not see I am busy!
-Go talk to Oorgh on the second floor! I'm sure
-that lazy troll has nothing better to do.
+Are you blind? Can you not see I am busy!  Go talk to Oorgh on the second floor! I'm sure that lazy troll has nothing better to do.
 endmsg
 x 10
 y 4
@@ -1471,12 +1462,7 @@ arch magic_mouth
 name A tiny fairy voice
 msg
 A tiny fairy appears and says in a tiny voice:
-"The first floor is for selling your less desirables
-for money. The second floor is for trading,
-charity and pawn shop. There is an "identify
-items" table on the second floor. Items dropped
-in the pawn shop will stay ... oh, Peter's calling
-me. Bye!"
+"The first floor is for selling your less desirables for money.  The second floor is for trading, charity and pawn shop.  There is an "identify items" table on the second floor.  Items dropped in the pawn shop will stay ... oh, Peter's calling me. Bye!"
 The tiny fairy disappears.
 endmsg
 x 10
@@ -1632,12 +1618,7 @@ arch magic_mouth
 name A tiny fairy voice
 msg
 A tiny fairy appears and says in a tiny voice:
-"The first floor is for selling your less desirables
-for money. The second floor is for trading,
-charity and pawn shop. There is an "identify
-items" table on the second floor. Items dropped
-in the pawn shop will stay ... oh, Peter's calling
-me. Bye!"
+"The first floor is for selling your less desirables for money.  The second floor is for trading, charity and pawn shop.  There is an "identify items" table on the second floor.  Items dropped in the pawn shop will stay ... oh, Peter's calling me. Bye!"
 The tiny fairy disappears.
 endmsg
 x 11
@@ -1766,9 +1747,7 @@ arch sign
 msg
 NOTICE!
 -=<>=-
-The No Sale Area floor will NOT pay you for items
-dropped there. Use the white tiles for dropping
-items for which you wish to be paid.
+The No Sale Area floor will NOT pay you for items dropped there.  Use the white tiles for dropping items for which you wish to be paid.
 -=<>=-
 The Management
 endmsg
