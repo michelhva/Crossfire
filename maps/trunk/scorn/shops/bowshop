@@ -1118,7 +1118,7 @@ Trying to be funny? Try local inn, maybe someone offers free beer!
 @match yes
 OK! Remember what you promised!
 @match ^no$
-I guessed it, you try rob me! GUARDS!
+I guessed it, you're trying to rob me! GUARDS!
 Guard shouts: "Where is that thief?"
 @match promise|open
 Do you promise not to steal anything?  Please, respond yes or no!
@@ -1419,7 +1419,7 @@ arch key2
 name a brass key
 slaying bow_shop_key
 msg
-There is some elven text in it.
+There is some elven text on it.
 endmsg
 unpaid 1
 end
