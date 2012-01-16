@@ -10,7 +10,7 @@ enter_x 17
 enter_y 17
 msg
 Created:  2002-12-28
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-01-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -832,8 +832,7 @@ y 17
 end
 arch sign_e
 msg
-Keep the shop tidy...
-Sell your items in Jacob's Pawn!
+Keep the shop tidy... Sell your items in Jacob's Pawn!
 endmsg
 x 7
 y 17
@@ -844,8 +843,7 @@ y 18
 end
 arch sign_e
 msg
-Keep the shop tidy...
-Sell your items in Jacob's Pawn!
+Keep the shop tidy... Sell your items in Jacob's Pawn!
 endmsg
 x 7
 y 18
@@ -1649,9 +1647,7 @@ arch fatman
 name Jacob
 msg
 @match *
-Feel free to look around my small shop...
-All goods are little used.  Need cash?
-I buy almost anything.
+Feel free to look around my small shop... All goods are little used.  Need cash?  I buy almost anything.
 endmsg
 x 14
 y 17
