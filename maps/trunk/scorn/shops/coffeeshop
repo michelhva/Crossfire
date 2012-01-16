@@ -8,7 +8,7 @@ enter_x 4
 enter_y 8
 msg
 Created:  2003-04-27 Avion
-Modified: 2010-03-27 Cavesomething
+Modified: 2012-01-16 Rick Tanner
 endmsg
 end
 arch woodfloor2
@@ -397,8 +397,7 @@ msg
 @match hello|hi
 Hello stranger.
 @match job|work
-I'm looking for someone to do a job for me.
-You interested?
+I'm looking for someone to do a job for me.  You interested?
 @match interested|what|yes
 Pay ya 500 gold to find my goose.
 @match goose
