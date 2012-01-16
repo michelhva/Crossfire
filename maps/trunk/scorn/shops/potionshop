@@ -10,7 +10,7 @@ enter_x 6
 enter_y 16
 msg
 Created:  1996-05-02 bt (thomas@astro.psu.edu)
-Modified: 2011-10-10 Rick Tanner
+Modified: 2012-01-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -518,13 +518,9 @@ arch dwarf_wiz
 name Izchucio the Alchemist
 msg
 @match formula|recipe|alchemy
-To find alchemical recipes you should
-read old books. They often appear in
-magic shops.
+To find alchemical recipes you should read old books.  They often appear in magic shops.
 @match *
-If you're really interested in alchemy
-you'd better buy a day pass and get
-going.
+If you're really interested in alchemy you'd better buy a day pass and get going.
 endmsg
 x 4
 y 16
@@ -2644,11 +2640,7 @@ end
 arch book_read
 name basic instructions
 msg
-To make an alchemical product, assemble
-your ingredients in the cauldron.
-Then perform the skill of alchemy on it.
-If your recipe is true and your skill is sufficient,
-then you will have made what you hoped for.
+To make an alchemical product, assemble your ingredients in the cauldron.  Then perform the skill of alchemy on it.  If your recipe is true and your skill is sufficient, then you will have made what you hoped for.
 endmsg
 x 21
 y 12
