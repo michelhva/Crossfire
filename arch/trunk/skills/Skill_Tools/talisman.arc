@@ -14,7 +14,7 @@ end
 Object talisman_sorcery
 name talisman
 title of sorcery
-face talisman.111
+face talisman_sorcery.111
 type 74
 weight 1000
 value 3000
@@ -29,7 +29,7 @@ end
 Object talisman_summoning
 name talisman
 title of summoning
-face talisman.111
+face talisman_summoning.111
 type 74
 weight 1000
 value 3000
@@ -44,7 +44,7 @@ end
 Object talisman_evocation
 name talisman
 title of evocation
-face talisman.111
+face talisman_evocation.111
 type 74
 weight 1000
 value 3000
@@ -59,7 +59,7 @@ end
 Object talisman_pyromancy
 name talisman
 title of pyromancy
-face talisman.111
+face talisman_pyromancy.111
 type 74
 weight 1000
 value 3000
