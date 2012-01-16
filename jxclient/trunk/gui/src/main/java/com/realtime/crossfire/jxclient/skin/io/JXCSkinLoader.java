@@ -198,16 +198,19 @@ public class JXCSkinLoader {
          * Create a {@link GUIQuestList} instance.
          */
         QUEST,
+
         /**
-         * Create a {@link GUISpellSkillList} instance
+         * Create a {@link GUISpellSkillList} instance.
          */
         SPELL_SKILLS,
+
         /**
-         * Create a {@link GUIKnowledgeTypeList} instance
+         * Create a {@link GUIKnowledgeTypeList} instance.
          */
         KNOWLEDGE_TYPES,
+
         /**
-         * Create a {@link GUIKnowledgeList} instance
+         * Create a {@link GUIKnowledgeList} instance.
          */
         KNOWLEDGE_LIST
     }
