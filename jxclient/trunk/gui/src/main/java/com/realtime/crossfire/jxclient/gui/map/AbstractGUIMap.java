@@ -264,8 +264,8 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private void clearMap(@NotNull final Graphics2D g) {
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, getWidth(), getHeight());
-        g.setBackground(DarknessColors.FOG_OF_WAR_COLOR);
-        g.clearRect(0, 0, getWidth(), getHeight());
+        g.setColor(DarknessColors.FOG_OF_WAR_COLOR);
+        g.fillRect(0, 0, getWidth(), getHeight());
     }
 
     /**
@@ -311,7 +311,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * <code>null</code> to not draw smoothed faces
      */
     protected AbstractGUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @Nullable final SmoothingRenderer smoothingRenderer) {
-        super(tooltipManager, elementListener, name, Transparency.OPAQUE);
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         this.avoidCopyArea = avoidCopyArea;
         this.smoothingRenderer = smoothingRenderer;
         tileSize = facesProvider.getSize();
@@ -573,7 +573,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
         final GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
-        bufferedImage = graphicsConfiguration.createCompatibleImage(Math.max(1, getWidth()), Math.max(1, getHeight()), Transparency.OPAQUE);
+        bufferedImage = graphicsConfiguration.createCompatibleImage(Math.max(1, getWidth()), Math.max(1, getHeight()), Transparency.TRANSLUCENT);
         redrawAll();
     }
 
