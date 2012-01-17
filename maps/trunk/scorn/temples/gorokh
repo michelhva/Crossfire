@@ -8,7 +8,7 @@ enter_x 6
 enter_y 15
 msg
 Created:  1999-01-22 Raphaël Quinet (raphael@gimp.org)
-Modified: 2010-07-10 Nicolas Weeger
+Modified: 2012-01-17 Rick Tanner
 endmsg
 end
 arch grass
@@ -1073,8 +1073,7 @@ arch sage
 name old priest
 msg
 @match gorokh
-We worship Gorokh, our master, and we
-seek redemption in Hell.
+We worship Gorokh, our master, and we seek redemption in Hell.
 @match *
 Welcome to the temple of Gorokh!
 endmsg
