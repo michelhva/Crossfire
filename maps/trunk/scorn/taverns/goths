@@ -9,7 +9,7 @@ enter_x 5
 enter_y 32
 msg
 Created:  1993-10-15
-Modified: 2011-12-14 Rick Tanner
+Modified: 2012-01-17 Rick Tanner
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -612,8 +612,7 @@ Yeah...  I watch the *belch*...  I don't feel well.
 @match hello|hi
 (hic) Hey buddy, buy me a round??? (hic)
 @match beer|booze|buy|round
-Yeah, if you get me some, I'll do you a favor.
-*Dilek looks at the empty bottle on his TABLE.*
+Yeah, if you get me some, I'll do you a favor. *Dilek looks at the empty bottle on his TABLE.*
 @match *
 Beer helps me on the job...
 endmsg
@@ -677,8 +676,7 @@ Aye.  I were the owner of the TRAININ' CENTER.  I tol' the bloody Bank I'd gi' '
 The consortamum ... constortanum ... BLAST!  I dinno who they be.  I just hears they broke up and MOVED me TRAININ' CENTER to other parts o' the world.  The slime!  (hic)
 I also hears they ha' repr'sentatives tha' hang out in taverns to recruit people inta their centers.
 @match move
-Well, young'un, I dinna know the details, but I hears the high-level TRAININ' CENTERs are in the wilderness near Santo Dominion, Darcap, Brest 'n Navar, but th' term "near" is used a bit loosely here - ye unnershtan'? (hic)  I dinna know what the bloody fools did wit' me low-level TRAININ' CENTERs.
-Anyway, ask around in the taverns in them towns.  Some'n there will be able to ansher ye questions.
+Well, young'un, I dinna know the details, but I hears the high-level TRAININ' CENTERs are in the wilderness near Santo Dominion, Darcap, Brest 'n Navar, but th' term "near" is used a bit loosely here - ye unnershtan'? (hic)  I dinna know what the bloody fools did wit' me low-level TRAININ' CENTERs.  Anyway, ask around in the taverns in them towns.  Some'n there will be able to ansher ye questions.
 @match *
 (hic) Leave me be.  Kin ye no see I be drinkin'!?
 endmsg
@@ -705,10 +703,7 @@ end
 arch magic_ear
 msg
 @match hard
-If you're 12th rank or better, you might want to seek the Temple of Darkness.
-You need a strong fighter along on the quest:  their god has granted their prayer to ban magic in his temple proper.
-I battled one of their adepts for a time.  He had such incredible reserves of power that I had to withdraw from the fight.  I'm sure that he must have had a Power Crystal.
-The Temple is in a Dark Forest just north of the Great East Road.
+If you're 12th rank or better, you might want to seek the Temple of Darkness.  You need a strong fighter along on the quest:  their god has granted their prayer to ban magic in his temple proper.  I battled one of their adepts for a time.  He had such incredible reserves of power that I had to withdraw from the fight.  I'm sure that he must have had a Power Crystal.  The Temple is in a Dark Forest just north of the Great East Road.
 endmsg
 x 3
 y 16
@@ -716,9 +711,7 @@ end
 arch magic_ear
 msg
 @match middle
-Well, if you're past the 9th Tier in your guilds, and you have some strong friends, you might want to stop Yqreth from desolating more land than he already has.
-'e got his hands on a new spell, he does, and he's abusing it.  Turned to evil for sure, he has.  I've heard what some of his former servants have said about him.  If his soul doesn't belong to the Dark already, it will soon.
-He resides in the Tower of the Stars, which is south of Scorn.  It's hard going to get there.
+Well, if you're past the 9th Tier in your guilds, and you have some strong friends, you might want to stop Yqreth from desolating more land than he already has.  He got his hands on a new spell, he does, and he's abusing it.  Turned to evil for sure, he has.  I've heard what some of his former servants have said about him.  If his soul doesn't belong to the Dark already, it will soon.  He resides in the Tower of the Stars, which is south of Scorn.  It's hard going to get there.
 endmsg
 x 3
 y 16
@@ -726,9 +719,7 @@ end
 arch magic_ear
 msg
 @match easy
-Okay, if you're not past the 5th rank, then you'll probably be very happy to do a bit of community service.
-The pirates are getting uppity:  this used to be a respectable town, and they're getting out of hand.  Go look around in some of the buildings near the docks, there are unsavory sorts running amok up there who should be taught good behavior!
-There's also supposed to be a pirate treasure on some islands you can get to if you take passage on a pirate ship, but they seem to have moved their base over near Wolfsburg.
+Okay, if you're not past the 5th rank, then you'll probably be very happy to do a bit of community service.  The pirates are getting uppity:  this used to be a respectable town, and they're getting out of hand.  Go look around in some of the buildings near the docks, there are unsavory sorts running amok up there who should be taught good behavior!  There's also supposed to be a pirate treasure on some islands you can get to if you take passage on a pirate ship, but they seem to have moved their base over near Wolfsburg.
 endmsg
 x 3
 y 16
@@ -742,9 +733,7 @@ You'd think I was running an information booth the way some people act...
 @match hi|hello
 Yes?  Adventurers eh?  Well what do you want?  Information?
 @match yes|info
-Yeah, that is what everyone does.  They walk in here, and just because I'm sitting all alone they think they can pump me for information.
-Well, you're lucky, I'm actually in a talkative mood.
-So, what type of adventure are you looking for?  An easy adventure?  A hard one?  Or something in the middle?
+Yeah, that is what everyone does.  They walk in here, and just because I'm sitting all alone they think they can pump me for information.  Well, you're lucky, I'm actually in a talkative mood.  So, what type of adventure are you looking for?  An easy adventure?  A hard one?  Or something in the middle?
 endmsg
 face wizard.151
 Str 15
@@ -780,8 +769,7 @@ end
 arch magic_ear
 msg
 @match mountain
-I'll never forget that mountain.  I fought a battle atop it with a dark spirit.  His evil had begun to poison the land around his lair, so I challenged him to battle.
-When he issued forth from his cave to do battle with me, I rose up into the air above him, and blasted him with fire.  He somehow survived that first blast, so I threw yet a greater at him.  He survived that one too, so I stretched myself.  The next blast of fire scorched the mountain black (it remains so to this day).  Yet still he stood against me, so I thought he must somehow be immune.  Using the last of my strength, I blasted him with lightning.  He was destroyed, but I never looked into his cave.
+I'll never forget that mountain.  I fought a battle atop it with a dark spirit.  His evil had begun to poison the land around his lair, so I challenged him to battle. When he issued forth from his cave to do battle with me, I rose up into the air above him, and blasted him with fire.  He somehow survived that first blast, so I threw yet a greater at him.  He survived that one too, so I stretched myself.  The next blast of fire scorched the mountain black (it remains so to this day).  Yet still he stood against me, so I thought he must somehow be immune.  Using the last of my strength, I blasted him with lightning.  He was destroyed, but I never looked into his cave.
 endmsg
 x 3
 y 20
@@ -799,9 +787,7 @@ arch magic_ear
 msg
 @match sword
 You've heard the rumors about the goings on in Navar, at the end of the Great East Road?
-Well, Morkov, the former Wizard there, has turned to darkness.  He's out-and-out sold his soul.
-Kill him and take his Sword.  He got it when he betrayed Navar and opened a gate for Evil to come through.  The flood of undead has taken over his Tower already.
-The idiot city council there hasn't taken action yet.  Perhaps they're waiting for someone of the 13th or 14th Tier in their guilds to go kick Morkov out.
+Well, Morkov, the former Wizard there, has turned to darkness.  He's out-and-out sold his soul.  Kill him and take his Sword.  He got it when he betrayed Navar and opened a gate for Evil to come through.  The flood of undead has taken over his Tower already.  The idiot city council there hasn't taken action yet.  Perhaps they're waiting for someone of the 13th or 14th Tier in their guilds to go kick Morkov out.
 endmsg
 x 3
 y 21
@@ -818,12 +804,9 @@ msg
 You suddenly feel you weren't worthy enough to ask...
 @match hi|hello
 Yes?  What do you want?
-All you adventurers are all alike.  Greedy as hell.
-You probably want me to tell you how to get your hands on some powerful magic, don't you?
-Well, that can be hard and dangerous.  Got a deathwish?  Eh?
+All you adventurers are all alike.  Greedy as hell.  You probably want me to tell you how to get your hands on some powerful magic, don't you?  Well, that can be hard and dangerous.  Got a deathwish?  Eh?
 @match yes|yup|aye
-Well, maybe your greed will keep you alive, then.  I've known some people who have dragged their bones out of the grave for greed.  Smelly, and grumpy, every one!  Never underestimate the power of greed!
-Well, I know of two places where you can get your hands on a powerful item.  One I know for sure:  a powerful magical Sword.  The other I'm not sure of, but it's inside a mountain, I bet.
+Well, maybe your greed will keep you alive, then.  I've known some people who have dragged their bones out of the grave for greed.  Smelly, and grumpy, every one!  Never underestimate the power of greed!  Well, I know of two places where you can get your hands on a powerful item.  One I know for sure:  a powerful magical Sword.  The other I'm not sure of, but it's inside a mountain, I bet.  
 Which do you want to hear about?
 endmsg
 face wizard_blue.131
@@ -1076,10 +1059,7 @@ end
 arch magic_ear
 msg
 @match cave
-I never explored his cave.  If you can get past his pets and into his Chamber, you'll probably find something interesting.
-After the battle, the mountain was far too hot to be near, and I've had better things to do since then.
-I don't think you'll be able to pass his vicious pets unless you're at least 15th Tier in your guild.
-The mountain can be found north of the bend in the Great East Road.
+I never explored his cave.  If you can get past his pets and into his Chamber, you'll probably find something interesting.  After the battle, the mountain was far too hot to be near, and I've had better things to do since then.  I don't think you'll be able to pass his vicious pets unless you're at least 15th Tier in your guild.  The mountain can be found north of the bend in the Great East Road.
 endmsg
 x 4
 y 20
@@ -2215,8 +2195,7 @@ end
 end
 arch magic_mouth
 msg
-You see some graffiti on the wall.
-It says : The Gate Password is "Chain"
+You see some graffiti on the wall.  It says : The Gate Password is "Chain"
 endmsg
 x 10
 y 21
@@ -2689,13 +2668,9 @@ arch priest
 name Drachnak the Priest
 msg
 @match hi|hello
-You seem surprised to see a priest here drowning his sorrows in drink.
-Well, my friends, I'm near despair.  Evil has taken my church from me; what was once holy is now perverted to evil.
-Are you going to help me or are you here to just laugh at me?
+You seem surprised to see a priest here drowning his sorrows in drink.  Well, my friends, I'm near despair.  Evil has taken my church from me; what was once holy is now perverted to evil.  Are you going to help me or are you here to just laugh at me?
 @match help
-Well, thank you.  I hope you have passed the Third Tier in your guilds otherwise helping me will be the death of you.
-My church is overrun by zombies.  If you can get rid of them, you may take anything of value you find there as a reward.
-It's on the south side of town.
+Well, thank you.  I hope you have passed the Third Tier in your guilds otherwise helping me will be the death of you. My church is overrun by zombies.  If you can get rid of them, you may take anything of value you find there as a reward.  It's on the south side of town.
 endmsg
 Str 10
 Con 5
@@ -2758,9 +2733,7 @@ msg
 @match mark
 Mark loves to gamble... owes me a bunch.  Always first in line to the bingo.
 @match joke|yes
-I never wanted to be a scribe, I always wanted to do stand-up.
-Did you hear the one about the Zombie and the princess?
-She always had a headache because he kept eating her brains!
+I never wanted to be a scribe, I always wanted to do stand-up.  Did you hear the one about the Zombie and the princess? She always had a headache because he kept eating her brains!
 ...
 ...
 Hey, that's quality material buddy!
@@ -2944,8 +2917,7 @@ msg
 @match hi|hello
 Greetings.  Just having a drink after my visit to the Valley of the Sisters.
 @match valley|sisters
-Yes - a very nasty place.  You should be at least 20th tier before you wander in, maybe a bit less if you have some friends.
-Do you want to know where it is located?
+Yes - a very nasty place.  You should be at least 20th tier before you wander in, maybe a bit less if you have some friends. Do you want to know where it is located?
 @match locate|location|located
 It is in the mountain range south of Darcap.  The mountains flatten out some to reveal a small lake.
 endmsg
@@ -3634,12 +3606,7 @@ Palidor.  Pleased to meet you.
 @match hi|hello
 Ho, travelers.  Seek ye the blood of foul monsters?
 @match yes|blood|monster
-Plenty of monsters here.  Who'd have thought that the city government would put up with it?  But yet, this town has many havens for goblins and the like.
-The giant's tower to the east, the uncouthly named 'newbie' tower just southwest of the lake.
-The Mad Mage's tower to the south of the lake, and even some undead in the church and house near there.
-That should do for a start.
-If you desire a harder challenge, try the wizards over there.  They might have information.
-I wouldn't talk to the one in the corner unless you're 15th Tier or better in your guilds.  He'll get you killed taking on things that could snuff you out with a sneeze!!!  HAr har har!!!
+Plenty of monsters here.  Who'd have thought that the city government would put up with it?  But yet, this town has many havens for goblins and the like.  The giant's tower to the east, the uncouthly named 'newbie' tower just southwest of the lake.  The Mad Mage's tower to the south of the lake, and even some undead in the church and house near there.  That should do for a start.  If you desire a harder challenge, try the wizards over there.  They might have information.  I wouldn't talk to the one in the corner unless you're 15th Tier or better in your guilds.  He'll get you killed taking on things that could snuff you out with a sneeze!!!  HAr har har!!!
 endmsg
 x 16
 y 13
@@ -4865,8 +4832,7 @@ Have you nothing better to do than molest an old dwarf who's been driven from hi
 @match no
 Well, may your beard grow patchy then!
 @match mine
-Yes, well, I got kicked out from my mine.  I dug a little too deep, and out they came.  I fled.  Now I am here, drinking to forget.
-Wish I could remember where my mines were.  Then I could tell some helpful fighters to go clean the place out for me.
+Yes, well, I got kicked out from my mine.  I dug a little too deep, and out they came.  I fled.  Now I am here, drinking to forget.  Wish I could remember where my mines were.  Then I could tell some helpful fighters to go clean the place out for me.
 @match job
 Still looking for one...
 endmsg
@@ -5170,9 +5136,7 @@ I got injured trying to kill the monsters in Castle Aaaarg.
 @match castle|aaaarg
 Its full of a lot of nasty monsters - wyverns, giants, beholders.  Do you want to go there?
 @match yes
-It's almost directly to the northeast of Scorn - about 400 chains.
-Easiest way to get there is to take the north road outside of Scorn.  Once you get past the lake, start heading east/northeast - you will need to climb over some mountains.  If you run across a river, just start going north - keep going north past the like it flows from - about 75 chains.
-The castle is in a valley with some hills and woods.
+It's almost directly to the northeast of Scorn - about 400 chains.  Easiest way to get there is to take the north road outside of Scorn.  Once you get past the lake, start heading east/northeast - you will need to climb over some mountains.  If you run across a river, just start going north - keep going north past the like it flows from - about 75 chains.  The castle is in a valley with some hills and woods.
 @match *
 Buzz off.  Can't you see I am in pain!
 endmsg
@@ -5749,14 +5713,11 @@ msg
 Ya that's me.  Bugger off, I'm on a roll here.
 O 47
 @match amy
-Ya my old lady, she's kind of mad at me right now...
-When I hit it big she'll sing a different tune though.
+Ya my old lady, she's kind of mad at me right now... When I hit it big she'll sing a different tune though.
 @match goose|esmeralda
-Ok, ok, don't hurt me.  I took her.  Don't turn me in.  If you did they'd take the goose for evidence, and then you wouldn't get the reward.
-I hid the that bird at Amy's place.
+Ok, ok, don't hurt me.  I took her.  Don't turn me in.  If you did they'd take the goose for evidence, and then you wouldn't get the reward.  I hid the that bird at Amy's place.
 @match key|door
-Ok, ok, the key's hidden at Swabbie's house.
-Tell Chancy 'mumblypeg' and he'll fetch it for you.
+Ok, ok, the key's hidden at Swabbie's house.  Tell Chancy 'mumblypeg' and he'll fetch it for you.
 @match name
 (mumble) ...tell my... name... (grumble)  Scat!
 @match job
@@ -5862,8 +5823,7 @@ Atxtoc... (smile)
 @match who|here|what
 I am a beholder.  I came here because I was tired of being cooped up in Barad Dur with all the other beholders.
 @match barad|dur
-It is a fortress to the north of here, in the small range of mountains.
-Between all the skulls, other beholders, and other nasty monsters, I just had to get out of there.
+It is a fortress to the north of here, in the small range of mountains.  Between all the skulls, other beholders, and other nasty monsters, I just had to get out of there.
 @match job
 Psionic reader...  Why do you ask?
 @match *
@@ -6110,15 +6070,13 @@ msg
 @match name
 Maurycy.  Arrrrh.
 @match seen|things|voyage
-I've seen a tower at the south west edge of the continent, south of Navar City.
-I've also seen an island nearby.
+I've seen a tower at the south west edge of the continent, south of Navar City. I've also seen an island nearby.
 @match tower
 Yes, Grukk's tower.  I wouldn't want to mess with him.
 @match grukk|him
 It's said that he is a giant beholder.
 @match island
-There is an old hut on the island.
-I have no idea how you would to the island from shore - there are no boats nearby.
+There is an old hut on the island.  I have no idea how you would to the island from shore - there are no boats nearby.
 @match job
 You must be jokin' laddy?
 @match *
@@ -6396,13 +6354,11 @@ She's a sight for sore eyes, eh?
 @match yes
 Oh, do you have news about the war?
 @match no|where
-You can go there by using the dragon transport found at the west end of the Scorn port area.
-It really is worth a trip - even if a war is going on!
+You can go there by using the dragon transport found at the west end of the Scorn port area.  It really is worth a trip - even if a war is going on!
 @match pupland|war
 There is a war going on in pupland, but rumors say that the one who solves the mysteries of the lands is rewarded with unsurpassable power, so all sorts of people still go there on a quest for glory.
 @match glory|mysteries|quest
-I hear that pupland's quests are a TOUGH challenge, but there are also newbie areas:  The raffles, Lone Town, and Red Town are all good places to start.
-For further information, ask around once you get there.
+I hear that pupland's quests are a TOUGH challenge, but there are also newbie areas:  The raffles, Lone Town, and Red Town are all good places to start.  For further information, ask around once you get there.
 @match power|reward
 I don't know any more than that.  If you ask me, unsurpassable power sounds good enough of a reward for most adventurers.
 @match *
@@ -7191,15 +7147,11 @@ msg
 @match name
 Awiergan Cynricson at your service!
 @match hello|hi
-Hi!  I'm studying Summoning at the Tower of Demonology and Summoning up north.
-Are you interested in studying Summoning also?
+Hi!  I'm studying Summoning at the Tower of Demonology and Summoning up north.  Are you interested in studying Summoning also?
 @match yes
-Well, you'll need the entrance fees.  They're pretty extortionate.
-Ask about "admissions", they'll let you know how much it is these days.
+Well, you'll need the entrance fees.  They're pretty extortionate.  Ask about "admissions", they'll let you know how much it is these days.
 @match stories
-Well, it's rumored that each of the Summoning Masters has powerful items which are the trappings of their office.  Four of them together guard still greater treasures.
-The Summoning Masters are rather powerful.  I bet it'd take someone at least 15th rank in their guilds to kill one.
-If you want to go try your luck, the Tower is North of Santo Dominion, by the Sea.
+Well, it's rumored that each of the Summoning Masters has powerful items which are the trappings of their office.  Four of them together guard still greater treasures.  The Summoning Masters are rather powerful.  I bet it'd take someone at least 15th rank in their guilds to kill one.  If you want to go try your luck, the Tower is North of Santo Dominion, by the Sea. 
 @match job
 Are you kidding... My studies consume me entirely...
 @match *
@@ -7900,21 +7852,13 @@ The Dragonlords demand in tribute:
 and 100000 pieces of gold
 Such tribute would help them express kindness by refraining from destroying your squalid little city.
 @match dragonlord|master
-My masters, the Dragonlords, are most puissant.  Few mortals may hope to overcome them in combat, for they wield such magics as would snuff the life of a mortal in seconds.
-No mortal can deal blows, arcane or otherwise, quickly enough to destroy the Lords, before they themselves are destroyed.
-The only way a mortal could destroy one of the Dragonlords is by some clever device, for none may face one in straight combat to the death and live.
-To even challenge a Dragonlord to combat, you would have to pass all their draconic guards.
-The last of these are Ancient Dragons, whose teeth are spears, whose claws are swords, and whose breath is death!
-Would you know where the dragonlords dwell, so that you might behold their magnificence?
+My masters, the Dragonlords, are most puissant.  Few mortals may hope to overcome them in combat, for they wield such magics as would snuff the life of a mortal in seconds.  No mortal can deal blows, arcane or otherwise, quickly enough to destroy the Lords, before they themselves are destroyed.  The only way a mortal could destroy one of the Dragonlords is by some clever device, for none may face one in straight combat to the death and live.  To even challenge a Dragonlord to combat, you would have to pass all their draconic guards.  The last of these are Ancient Dragons, whose teeth are spears, whose claws are swords, and whose breath is death!  Would you know where the dragonlords dwell, so that you might behold their magnificence?
 @match yes
 Their dwelling is on the western edge of the mountains southwest of Navar.
 @match weapon
-What?  Where did you hear about that?
-Well, why would I tell you anything about this mythical 'weapon'?
+What?  Where did you hear about that?  Well, why would I tell you anything about this mythical 'weapon'?
 @match bribe
-You're beginning to interest me.  I have a weakness for emeralds of great value.
-Bring me seven, and I shall tell you what you want to know.
-Drop them right above me and I shall reveal the location of the weapon's hiding place.
+You're beginning to interest me.  I have a weakness for emeralds of great value.  Bring me seven, and I shall tell you what you want to know.  Drop them right above me and I shall reveal the location of the weapon's hiding place.
 endmsg
 hp 900
 maxhp 900
