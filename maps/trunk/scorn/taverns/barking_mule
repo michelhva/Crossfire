@@ -8,7 +8,7 @@ enter_x 22
 enter_y 14
 msg
 Created:  2003-04-27 Avion
-Modified: 2010-05-14 Cavesomething
+Modified: 2012-01-17 Rick Tanner
 endmsg
 end
 arch grass
@@ -193,8 +193,7 @@ arch horn2
 name Gramps' earhorn
 slaying Gramp's earhorn
 msg
-Property of Gramps Malone
-Git yer paws offa it!
+Property of Gramps Malone.  Git yer paws offa it!
 endmsg
 type 21
 value 1
@@ -692,8 +691,7 @@ arch red_dragon2
 name Cindy Loo
 msg
 @match hi|hello
-Hello, welcome to the Barking Mule,
-I'm Cindy Loo. Do you want a drink?
+Hello, welcome to the Barking Mule, I'm Cindy Loo.  Do you want a drink?
 @match yes|drink
 Drinks are 3 gold sweety pie.
 @match *
@@ -1346,8 +1344,7 @@ arch warrior_1
 name Chad
 msg
 @match *
-Chad likes his drinky winky, yes he do.
-Hello drinky winky.
+Chad likes his drinky winky, yes he do.  Hello drinky winky.
 endmsg
 x 12
 y 3
@@ -1580,9 +1577,7 @@ arch c_man
 name Milt
 msg
 @match work|job
-I hear the fellow at the
-coffee shop is looking for
-someone to do a job.
+I hear the fellow at the coffee shop is looking for someone to do a job.
 @match *
 Nother day, nother ale...
 endmsg
@@ -2071,9 +2066,7 @@ arch farmer
 name Ole
 msg
 @match *
-Sure I had a bit too much,
-but at least I'm not seeing things....
-Hey what was that?
+Sure I had a bit too much, but at least I'm not seeing things....  Hey what was that?
 endmsg
 x 19
 y 4
@@ -2335,9 +2328,7 @@ arch elf_man
 name Celebrity lookalike
 msg
 @match *
-Some guy named Avion paid
-me 30 gold to stand here
-and look busy...
+Some guy named Avion paid me 30 gold to stand here and look busy...
 endmsg
 face spock.111
 animation spock
@@ -2407,8 +2398,7 @@ Looking for adventure?
 @match adventure
 Well I did hear about some dangerous caves nearby.
 @match caves
-If you go south road, past a large rock there are some dangerous
-caves in the mountains to the west of there.
+If you go south road, past a large rock there are some dangerous caves in the mountains to the west of there.
 @match *
 Me, I like beer too much to go adventuring.
 endmsg
