@@ -18,6 +18,10 @@ commandlist_add command_account_cancel_create_char null DIALOG_OPEN account_char
 textbutton account_do_login false command_account_do_create_char Create
 textbutton account_cancel_login false command_account_cancel_create_char Cancel
 
+set_default character_login
+
+commandlist_add command_null_new_char character_login MOVE_FOCUS account_do_login 1
+
 horizontal begin par
   begin seq
     gap 8
