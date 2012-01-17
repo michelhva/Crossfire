@@ -4,468 +4,381 @@ difficulty 3
 region scorn
 shopitems building material:95;item builder:95;*:-100
 shopmax 2000
-width 20
-height 20
+width 25
+height 24
 enter_x 17
 enter_y 18
 msg
 Created:  2004-01-25 Ryo Saeba
-Modified: 2012-01-16 Rick Tanner
+Modified: 2012-01-17 Rick Tanner
 endmsg
+outdoor 1
+end
+arch cobblestones2
+end
+arch cobblestones2
+y 1
+end
+arch cobblestones2
+y 2
+end
+arch cobblestones2
+y 3
+end
+arch cobblestones2
+y 4
+end
+arch cobblestones2
+y 5
+end
+arch cobblestones2
+y 6
+end
+arch cobblestones2
+y 7
+end
+arch cobblestones2
+y 8
+end
+arch cobblestones2
+y 9
+end
+arch cobblestones2
+y 10
+end
+arch cobblestones2
+y 11
+end
+arch cobblestones2
+y 12
+end
+arch cobblestones2
+y 13
+end
+arch cobblestones2
+y 14
+end
+arch cobblestones2
+y 15
+end
+arch cobblestones2
+y 16
+end
+arch cobblestones2
+y 17
+end
+arch cobblestones2
+y 18
+end
+arch cobblestones2
+y 19
+end
+arch cobblestones2
+y 20
+end
+arch cobblestones2
+y 21
+end
+arch cobblestones2
+y 22
+end
+arch cobblestones2
+y 23
+end
+arch cobblestones2
+x 1
+end
+arch cobblestones2
+x 1
+y 1
+end
+arch cobblestones2
+x 1
+y 2
+end
+arch cobblestones2
+x 1
+y 3
+end
+arch cobblestones2
+x 1
+y 4
+end
+arch cobblestones2
+x 1
+y 5
+end
+arch cobblestones2
+x 1
+y 6
+end
+arch cobblestones2
+x 1
+y 7
+end
+arch cobblestones2
+x 1
+y 8
+end
+arch cobblestones2
+x 1
+y 9
+end
+arch cobblestones2
+x 1
+y 10
+end
+arch cobblestones2
+x 1
+y 11
+end
+arch cobblestones2
+x 1
+y 12
+end
+arch cobblestones2
+x 1
+y 13
+end
+arch cobblestones2
+x 1
+y 14
+end
+arch cobblestones2
+x 1
+y 15
+end
+arch cobblestones2
+x 1
+y 16
+end
+arch cobblestones2
+x 1
+y 17
+end
+arch cobblestones2
+x 1
+y 18
+end
+arch cobblestones2
+x 1
+y 19
+end
+arch cobblestones2
+x 1
+y 20
+end
+arch cobblestones2
+x 1
+y 21
+end
+arch cobblestones2
+x 1
+y 22
+end
+arch cobblestones2
+x 1
+y 23
+end
+arch cobblestones2
+x 2
+end
+arch cobblestones2
+x 2
+y 1
 end
 arch tile_white_floor
+x 2
+y 2
 end
 arch wwall_2_2_2
-end
-arch tile_white_floor
-y 1
-end
-arch wwall_2_1_1
-y 1
-end
-arch tile_white_floor
-y 2
-end
-arch wwall_2_1_1
+x 2
 y 2
 end
 arch tile_white_floor
+x 2
 y 3
 end
 arch wwall_2_1_1
+x 2
 y 3
 end
 arch tile_white_floor
+x 2
 y 4
 end
 arch wwall_2_1_1
+x 2
 y 4
 end
 arch tile_white_floor
+x 2
 y 5
 end
 arch wwall_2_1_1
+x 2
 y 5
 end
-arch tile_white_floor
-y 6
-end
-arch wwall_2_1_1
+arch light2
+x 2
 y 6
 end
 arch tile_white_floor
+x 2
+y 6
+end
+arch wwall_win1
+x 2
+y 6
+end
+arch tile_white_floor
+x 2
 y 7
 end
 arch wwall_2_1_1
+x 2
 y 7
 end
 arch tile_white_floor
+x 2
 y 8
 end
 arch wwall_2_1_1
+x 2
 y 8
 end
 arch tile_white_floor
+x 2
 y 9
 end
 arch wwall_2_1_1
+x 2
 y 9
 end
 arch tile_white_floor
+x 2
 y 10
 end
 arch wwall_2_1_1
+x 2
 y 10
 end
-arch tile_white_floor
-y 11
-end
-arch wwall_2_1_1
+arch light2
+x 2
 y 11
 end
 arch tile_white_floor
+x 2
+y 11
+end
+arch wwall_win1
+x 2
+y 11
+end
+arch tile_white_floor
+x 2
 y 12
 end
 arch wwall_2_1_1
+x 2
 y 12
 end
 arch tile_white_floor
+x 2
 y 13
 end
 arch wwall_2_1_1
+x 2
 y 13
 end
 arch tile_white_floor
+x 2
 y 14
 end
 arch wwall_2_1_1
+x 2
 y 14
 end
 arch tile_white_floor
+x 2
 y 15
 end
 arch wwall_2_1_1
+x 2
 y 15
 end
-arch tile_white_floor
-y 16
-end
-arch wwall_2_1_1
+arch light2
+x 2
 y 16
 end
 arch tile_white_floor
+x 2
+y 16
+end
+arch wwall_win1
+x 2
+y 16
+end
+arch tile_white_floor
+x 2
 y 17
 end
 arch wwall_2_1_1
+x 2
 y 17
 end
 arch tile_white_floor
+x 2
 y 18
 end
 arch wwall_2_1_1
+x 2
 y 18
 end
 arch tile_white_floor
+x 2
 y 19
+end
+arch wwall_2_1_1
+x 2
+y 19
+end
+arch tile_white_floor
+x 2
+y 20
+end
+arch wwall_2_1_1
+x 2
+y 20
+end
+arch tile_white_floor
+x 2
+y 21
 end
 arch wwall_2_2_1
-y 19
-end
-arch tile_white_floor
-x 1
-end
-arch wwall_2_1_2
-x 1
-end
-arch dungeon_magic
-x 1
-y 1
-end
-arch shop_building
-x 1
-y 1
-end
-arch dungeon_magic
-x 1
-y 2
-end
-arch shop_building
-x 1
-y 2
-end
-arch dungeon_magic
-x 1
-y 3
-end
-arch shop_building
-x 1
-y 3
-end
-arch dungeon_magic
-x 1
-y 4
-end
-arch shop_building
-x 1
-y 4
-end
-arch dungeon_magic
-x 1
-y 5
-end
-arch shop_building
-x 1
-y 5
-end
-arch dungeon_magic
-x 1
-y 6
-end
-arch shop_building
-x 1
-y 6
-end
-arch dungeon_magic
-x 1
-y 7
-end
-arch shop_building
-x 1
-y 7
-end
-arch dungeon_magic
-x 1
-y 8
-end
-arch shop_building
-x 1
-y 8
-end
-arch dungeon_magic
-x 1
-y 9
-end
-arch shop_building
-x 1
-y 9
-end
-arch dungeon_magic
-x 1
-y 10
-end
-arch shop_building
-x 1
-y 10
-end
-arch dungeon_magic
-x 1
-y 11
-end
-arch shop_building
-x 1
-y 11
-end
-arch dungeon_magic
-x 1
-y 12
-end
-arch shop_building
-x 1
-y 12
-end
-arch dungeon_magic
-x 1
-y 13
-end
-arch shop_building
-x 1
-y 13
-end
-arch dungeon_magic
-x 1
-y 14
-end
-arch shop_building
-x 1
-y 14
-end
-arch dungeon_magic
-x 1
-y 15
-end
-arch shop_building
-x 1
-y 15
-end
-arch dungeon_magic
-x 1
-y 16
-end
-arch shop_building
-x 1
-y 16
-end
-arch dungeon_magic
-x 1
-y 17
-end
-arch shop_building
-x 1
-y 17
-end
-arch dungeon_magic
-x 1
-y 18
-end
-arch shop_building
-x 1
-y 18
-end
-arch tile_white_floor
-x 1
-y 19
-end
-arch wwall_2_1_2
-x 1
-y 19
-end
-arch tile_white_floor
 x 2
+y 21
 end
-arch wwall_2_1_2
+arch cobblestones2
 x 2
+y 22
 end
-arch dungeon_magic
+arch cobblestones2
 x 2
-y 1
+y 23
 end
-arch shop_building
-x 2
-y 1
-end
-arch dungeon_magic
-x 2
-y 2
-end
-arch shop_empty
-x 2
-y 2
-end
-arch dungeon_magic
-x 2
-y 3
-end
-arch shop_empty
-x 2
-y 3
-end
-arch dungeon_magic
-x 2
-y 4
-end
-arch shop_empty
-x 2
-y 4
-end
-arch dungeon_magic
-x 2
-y 5
-end
-arch shop_empty
-x 2
-y 5
-end
-arch dungeon_magic
-x 2
-y 6
-end
-arch shop_empty
-x 2
-y 6
-end
-arch dungeon_magic
-x 2
-y 7
-end
-arch shop_empty
-x 2
-y 7
-end
-arch dungeon_magic
-x 2
-y 8
-end
-arch shop_empty
-x 2
-y 8
-end
-arch dungeon_magic
-x 2
-y 9
-end
-arch shop_empty
-x 2
-y 9
-end
-arch dungeon_magic
-x 2
-y 10
-end
-arch shop_empty
-x 2
-y 10
-end
-arch dungeon_magic
-x 2
-y 11
-end
-arch shop_empty
-x 2
-y 11
-end
-arch dungeon_magic
-x 2
-y 12
-end
-arch shop_empty
-x 2
-y 12
-end
-arch dungeon_magic
-x 2
-y 13
-end
-arch shop_empty
-x 2
-y 13
-end
-arch dungeon_magic
-x 2
-y 14
-end
-arch shop_empty
-x 2
-y 14
-end
-arch dungeon_magic
-x 2
-y 15
-end
-arch shop_empty
-x 2
-y 15
-end
-arch dungeon_magic
-x 2
-y 16
-end
-arch shop_empty
-x 2
-y 16
-end
-arch dungeon_magic
-x 2
-y 17
-end
-arch shop_empty
-x 2
-y 17
-end
-arch dungeon_magic
-x 2
-y 18
-end
-arch shop_building
-x 2
-y 18
-end
-arch tile_white_floor
-x 2
-y 19
-end
-arch wwall_2_1_2
-x 2
-y 19
-end
-arch tile_white_floor
+arch cobblestones2
 x 3
 end
-arch wwall_2_1_2
-x 3
-end
-arch dungeon_magic
+arch cobblestones2
 x 3
 y 1
 end
-arch shop_building
-x 3
-y 1
-end
-arch dungeon_magic
+arch tile_white_floor
 x 3
 y 2
 end
-arch shop_empty
+arch wwall_2_1_2
 x 3
 y 2
 end
@@ -521,7 +434,7 @@ arch dungeon_magic
 x 3
 y 9
 end
-arch shop_empty
+arch shop_building
 x 3
 y 9
 end
@@ -585,45 +498,66 @@ arch dungeon_magic
 x 3
 y 17
 end
-arch shop_empty
+arch shop_building
 x 3
 y 17
 end
 arch dungeon_magic
-x 3
-y 18
-end
-arch shop_building
 x 3
 y 18
 end
-arch tile_white_floor
+arch shop_building
+x 3
+y 18
+end
+arch dungeon_magic
 x 3
 y 19
 end
-arch wwall_2_1_2
+arch shop_building
 x 3
 y 19
 end
-arch tile_white_floor
-x 4
-end
-arch wwall_2_1_2
-x 4
-end
 arch dungeon_magic
-x 4
-y 1
+x 3
+y 20
 end
 arch shop_building
+x 3
+y 20
+end
+arch tile_white_floor
+x 3
+y 21
+end
+arch wwall_2_1_2
+x 3
+y 21
+end
+arch cobblestones2
+x 3
+y 22
+end
+arch cobblestones2
+x 3
+y 23
+end
+arch cobblestones2
+x 4
+end
+arch cobblestones2
 x 4
 y 1
 end
-arch dungeon_magic
+arch light2
 x 4
 y 2
 end
-arch shop_empty
+arch tile_white_floor
+x 4
+y 2
+end
+arch wwall_win2
 x 4
 y 2
 end
@@ -639,7 +573,7 @@ arch dungeon_magic
 x 4
 y 4
 end
-arch shop_building
+arch shop_empty
 x 4
 y 4
 end
@@ -647,7 +581,7 @@ arch dungeon_magic
 x 4
 y 5
 end
-arch shop_building
+arch shop_empty
 x 4
 y 5
 end
@@ -655,7 +589,7 @@ arch dungeon_magic
 x 4
 y 6
 end
-arch shop_building
+arch shop_empty
 x 4
 y 6
 end
@@ -663,7 +597,7 @@ arch dungeon_magic
 x 4
 y 7
 end
-arch shop_building
+arch shop_empty
 x 4
 y 7
 end
@@ -671,7 +605,7 @@ arch dungeon_magic
 x 4
 y 8
 end
-arch shop_building
+arch shop_empty
 x 4
 y 8
 end
@@ -687,7 +621,7 @@ arch dungeon_magic
 x 4
 y 10
 end
-arch shop_building
+arch shop_empty
 x 4
 y 10
 end
@@ -695,7 +629,7 @@ arch dungeon_magic
 x 4
 y 11
 end
-arch shop_building
+arch shop_empty
 x 4
 y 11
 end
@@ -703,7 +637,7 @@ arch dungeon_magic
 x 4
 y 12
 end
-arch shop_building
+arch shop_empty
 x 4
 y 12
 end
@@ -711,7 +645,7 @@ arch dungeon_magic
 x 4
 y 13
 end
-arch shop_building
+arch shop_empty
 x 4
 y 13
 end
@@ -719,7 +653,7 @@ arch dungeon_magic
 x 4
 y 14
 end
-arch shop_building
+arch shop_empty
 x 4
 y 14
 end
@@ -727,7 +661,7 @@ arch dungeon_magic
 x 4
 y 15
 end
-arch shop_building
+arch shop_empty
 x 4
 y 15
 end
@@ -735,7 +669,7 @@ arch dungeon_magic
 x 4
 y 16
 end
-arch shop_building
+arch shop_empty
 x 4
 y 16
 end
@@ -751,46 +685,67 @@ arch dungeon_magic
 x 4
 y 18
 end
-arch shop_building
+arch shop_empty
 x 4
 y 18
 end
-arch tile_white_floor
+arch dungeon_magic
 x 4
 y 19
 end
-arch wwall_2_1_2
+arch shop_empty
 x 4
 y 19
 end
+arch dungeon_magic
+x 4
+y 20
+end
+arch shop_building
+x 4
+y 20
+end
+arch light2
+x 4
+y 21
+end
+arch tile_white_floor
+x 4
+y 21
+end
+arch wwall_win2
+x 4
+y 21
+end
+arch cobblestones2
+x 4
+y 22
+end
+arch cobblestones2
+x 4
+y 23
+end
+arch cobblestones2
+x 5
+end
+arch cobblestones2
+x 5
+y 1
+end
 arch tile_white_floor
 x 5
+y 2
 end
 arch wwall_2_1_2
 x 5
+y 2
 end
 arch dungeon_magic
 x 5
-y 1
+y 3
 end
 arch shop_building
 x 5
-y 1
-end
-arch dungeon_magic
-x 5
-y 2
-end
-arch shop_empty
-x 5
-y 2
-end
-arch dungeon_magic
-x 5
-y 3
-end
-arch shop_empty
-x 5
 y 3
 end
 arch dungeon_magic
@@ -801,11 +756,15 @@ arch shop_empty
 x 5
 y 4
 end
+arch light4
+x 5
+y 5
+end
 arch dungeon_magic
 x 5
 y 5
 end
-arch shop_empty
+arch shop_building
 x 5
 y 5
 end
@@ -813,7 +772,7 @@ arch dungeon_magic
 x 5
 y 6
 end
-arch shop_empty
+arch shop_building
 x 5
 y 6
 end
@@ -821,15 +780,19 @@ arch dungeon_magic
 x 5
 y 7
 end
-arch shop_empty
+arch shop_building
 x 5
 y 7
 end
+arch light4
+x 5
+y 8
+end
 arch dungeon_magic
 x 5
 y 8
 end
-arch shop_empty
+arch shop_building
 x 5
 y 8
 end
@@ -837,7 +800,7 @@ arch dungeon_magic
 x 5
 y 9
 end
-arch shop_empty
+arch shop_building
 x 5
 y 9
 end
@@ -845,9 +808,13 @@ arch dungeon_magic
 x 5
 y 10
 end
-arch shop_empty
+arch shop_building
 x 5
 y 10
+end
+arch light4
+x 5
+y 11
 end
 arch dungeon_magic
 x 5
@@ -861,7 +828,7 @@ arch dungeon_magic
 x 5
 y 12
 end
-arch shop_empty
+arch shop_building
 x 5
 y 12
 end
@@ -869,7 +836,7 @@ arch dungeon_magic
 x 5
 y 13
 end
-arch shop_empty
+arch shop_building
 x 5
 y 13
 end
@@ -877,23 +844,27 @@ arch dungeon_magic
 x 5
 y 14
 end
-arch shop_empty
+arch shop_building
 x 5
 y 14
 end
-arch dungeon_magic
-x 5
-y 15
-end
-arch shop_empty
+arch light4
 x 5
 y 15
 end
 arch dungeon_magic
 x 5
+y 15
+end
+arch shop_building
+x 5
+y 15
+end
+arch dungeon_magic
+x 5
 y 16
 end
-arch shop_empty
+arch shop_building
 x 5
 y 16
 end
@@ -901,45 +872,66 @@ arch dungeon_magic
 x 5
 y 17
 end
-arch shop_empty
+arch shop_building
 x 5
 y 17
 end
-arch dungeon_magic
-x 5
-y 18
-end
-arch shop_building
+arch light4
 x 5
 y 18
 end
-arch tile_white_floor
+arch dungeon_magic
+x 5
+y 18
+end
+arch shop_building
+x 5
+y 18
+end
+arch dungeon_magic
 x 5
 y 19
 end
-arch wwall_2_1_2
+arch shop_empty
 x 5
 y 19
 end
-arch tile_white_floor
-x 6
-end
-arch wwall_2_1_2
-x 6
-end
 arch dungeon_magic
-x 6
-y 1
+x 5
+y 20
 end
 arch shop_building
+x 5
+y 20
+end
+arch tile_white_floor
+x 5
+y 21
+end
+arch wwall_2_1_2
+x 5
+y 21
+end
+arch cobblestones2
+x 5
+y 22
+end
+arch cobblestones2
+x 5
+y 23
+end
+arch cobblestones2
+x 6
+end
+arch cobblestones2
 x 6
 y 1
 end
-arch dungeon_magic
+arch tile_white_floor
 x 6
 y 2
 end
-arch shop_empty
+arch wwall_2_1_2
 x 6
 y 2
 end
@@ -955,7 +947,7 @@ arch dungeon_magic
 x 6
 y 4
 end
-arch shop_building
+arch shop_empty
 x 6
 y 4
 end
@@ -995,7 +987,7 @@ arch dungeon_magic
 x 6
 y 9
 end
-arch shop_empty
+arch shop_building
 x 6
 y 9
 end
@@ -1011,7 +1003,7 @@ arch dungeon_magic
 x 6
 y 11
 end
-arch shop_building
+arch shop_empty
 x 6
 y 11
 end
@@ -1059,46 +1051,63 @@ arch dungeon_magic
 x 6
 y 17
 end
-arch shop_empty
+arch shop_building
 x 6
 y 17
 end
 arch dungeon_magic
-x 6
-y 18
-end
-arch shop_building
 x 6
 y 18
 end
-arch tile_white_floor
+arch shop_building
+x 6
+y 18
+end
+arch dungeon_magic
 x 6
 y 19
 end
-arch wwall_2_1_2
+arch shop_empty
 x 6
 y 19
 end
+arch dungeon_magic
+x 6
+y 20
+end
+arch shop_building
+x 6
+y 20
+end
+arch tile_white_floor
+x 6
+y 21
+end
+arch wwall_2_1_2
+x 6
+y 21
+end
+arch cobblestones2
+x 6
+y 22
+end
+arch cobblestones2
+x 6
+y 23
+end
+arch cobblestones2
+x 7
+end
+arch cobblestones2
+x 7
+y 1
+end
 arch tile_white_floor
 x 7
+y 2
 end
 arch wwall_2_1_2
 x 7
-end
-arch dungeon_magic
-x 7
-y 1
-end
-arch shop_building
-x 7
-y 1
-end
-arch dungeon_magic
-x 7
-y 2
-end
-arch shop_empty
-x 7
 y 2
 end
 arch dungeon_magic
@@ -1113,7 +1122,7 @@ arch dungeon_magic
 x 7
 y 4
 end
-arch shop_building
+arch shop_empty
 x 7
 y 4
 end
@@ -1121,7 +1130,7 @@ arch dungeon_magic
 x 7
 y 5
 end
-arch shop_building
+arch shop_empty
 x 7
 y 5
 end
@@ -1129,7 +1138,7 @@ arch dungeon_magic
 x 7
 y 6
 end
-arch shop_building
+arch shop_empty
 x 7
 y 6
 end
@@ -1137,7 +1146,7 @@ arch dungeon_magic
 x 7
 y 7
 end
-arch shop_building
+arch shop_empty
 x 7
 y 7
 end
@@ -1145,7 +1154,7 @@ arch dungeon_magic
 x 7
 y 8
 end
-arch shop_building
+arch shop_empty
 x 7
 y 8
 end
@@ -1161,7 +1170,7 @@ arch dungeon_magic
 x 7
 y 10
 end
-arch shop_building
+arch shop_empty
 x 7
 y 10
 end
@@ -1169,7 +1178,7 @@ arch dungeon_magic
 x 7
 y 11
 end
-arch shop_building
+arch shop_empty
 x 7
 y 11
 end
@@ -1177,15 +1186,19 @@ arch dungeon_magic
 x 7
 y 12
 end
-arch shop_building
+arch shop_empty
 x 7
 y 12
+end
+arch light4
+x 7
+y 13
 end
 arch dungeon_magic
 x 7
 y 13
 end
-arch shop_building
+arch shop_empty
 x 7
 y 13
 end
@@ -1193,7 +1206,7 @@ arch dungeon_magic
 x 7
 y 14
 end
-arch shop_building
+arch shop_empty
 x 7
 y 14
 end
@@ -1201,7 +1214,7 @@ arch dungeon_magic
 x 7
 y 15
 end
-arch shop_building
+arch shop_empty
 x 7
 y 15
 end
@@ -1209,7 +1222,7 @@ arch dungeon_magic
 x 7
 y 16
 end
-arch shop_building
+arch shop_empty
 x 7
 y 16
 end
@@ -1225,46 +1238,71 @@ arch dungeon_magic
 x 7
 y 18
 end
-arch shop_building
+arch shop_empty
 x 7
 y 18
 end
-arch tile_white_floor
+arch light4
 x 7
 y 19
 end
-arch wwall_2_1_2
+arch dungeon_magic
 x 7
 y 19
 end
+arch shop_empty
+x 7
+y 19
+end
+arch dungeon_magic
+x 7
+y 20
+end
+arch shop_building
+x 7
+y 20
+end
 arch tile_white_floor
-x 8
+x 7
+y 21
 end
 arch wwall_2_1_2
+x 7
+y 21
+end
+arch cobblestones2
+x 7
+y 22
+end
+arch cobblestones2
+x 7
+y 23
+end
+arch cobblestones2
 x 8
+end
+arch cobblestones2
+x 8
+y 1
+end
+arch light2
+x 8
+y 2
+end
+arch tile_white_floor
+x 8
+y 2
+end
+arch wwall_win2
+x 8
+y 2
 end
 arch dungeon_magic
 x 8
-y 1
+y 3
 end
 arch shop_building
 x 8
-y 1
-end
-arch dungeon_magic
-x 8
-y 2
-end
-arch shop_empty
-x 8
-y 2
-end
-arch dungeon_magic
-x 8
-y 3
-end
-arch shop_empty
-x 8
 y 3
 end
 arch dungeon_magic
@@ -1275,11 +1313,15 @@ arch shop_empty
 x 8
 y 4
 end
+arch light4
+x 8
+y 5
+end
 arch dungeon_magic
 x 8
 y 5
 end
-arch shop_empty
+arch shop_building
 x 8
 y 5
 end
@@ -1287,7 +1329,7 @@ arch dungeon_magic
 x 8
 y 6
 end
-arch shop_empty
+arch shop_building
 x 8
 y 6
 end
@@ -1295,15 +1337,19 @@ arch dungeon_magic
 x 8
 y 7
 end
-arch shop_empty
+arch shop_building
 x 8
 y 7
 end
+arch light4
+x 8
+y 8
+end
 arch dungeon_magic
 x 8
 y 8
 end
-arch shop_empty
+arch shop_building
 x 8
 y 8
 end
@@ -1311,7 +1357,7 @@ arch dungeon_magic
 x 8
 y 9
 end
-arch shop_empty
+arch shop_building
 x 8
 y 9
 end
@@ -1319,9 +1365,13 @@ arch dungeon_magic
 x 8
 y 10
 end
-arch shop_empty
+arch shop_building
 x 8
 y 10
+end
+arch light4
+x 8
+y 11
 end
 arch dungeon_magic
 x 8
@@ -1335,7 +1385,7 @@ arch dungeon_magic
 x 8
 y 12
 end
-arch shop_empty
+arch shop_building
 x 8
 y 12
 end
@@ -1343,7 +1393,7 @@ arch dungeon_magic
 x 8
 y 13
 end
-arch shop_empty
+arch shop_building
 x 8
 y 13
 end
@@ -1351,15 +1401,19 @@ arch dungeon_magic
 x 8
 y 14
 end
-arch shop_empty
+arch shop_building
 x 8
 y 14
 end
+arch light4
+x 8
+y 15
+end
 arch dungeon_magic
 x 8
 y 15
 end
-arch shop_empty
+arch shop_building
 x 8
 y 15
 end
@@ -1367,7 +1421,7 @@ arch dungeon_magic
 x 8
 y 16
 end
-arch shop_empty
+arch shop_building
 x 8
 y 16
 end
@@ -1375,7 +1429,7 @@ arch dungeon_magic
 x 8
 y 17
 end
-arch shop_empty
+arch shop_building
 x 8
 y 17
 end
@@ -1387,33 +1441,54 @@ arch shop_building
 x 8
 y 18
 end
-arch tile_white_floor
+arch dungeon_magic
 x 8
 y 19
 end
-arch wwall_2_1_2
+arch shop_empty
 x 8
 y 19
-end
-arch tile_white_floor
-x 9
-end
-arch wwall_2_1_2
-x 9
 end
 arch dungeon_magic
-x 9
-y 1
+x 8
+y 20
 end
 arch shop_building
+x 8
+y 20
+end
+arch light2
+x 8
+y 21
+end
+arch tile_white_floor
+x 8
+y 21
+end
+arch wwall_win2
+x 8
+y 21
+end
+arch cobblestones2
+x 8
+y 22
+end
+arch cobblestones2
+x 8
+y 23
+end
+arch cobblestones2
+x 9
+end
+arch cobblestones2
 x 9
 y 1
 end
-arch dungeon_magic
+arch tile_white_floor
 x 9
 y 2
 end
-arch shop_empty
+arch wwall_2_1_2
 x 9
 y 2
 end
@@ -1429,7 +1504,7 @@ arch dungeon_magic
 x 9
 y 4
 end
-arch shop_building
+arch shop_empty
 x 9
 y 4
 end
@@ -1469,7 +1544,7 @@ arch dungeon_magic
 x 9
 y 9
 end
-arch shop_empty
+arch shop_building
 x 9
 y 9
 end
@@ -1485,7 +1560,7 @@ arch dungeon_magic
 x 9
 y 11
 end
-arch shop_building
+arch shop_empty
 x 9
 y 11
 end
@@ -1533,45 +1608,66 @@ arch dungeon_magic
 x 9
 y 17
 end
-arch shop_empty
+arch shop_building
 x 9
 y 17
 end
-arch dungeon_magic
-x 9
-y 18
-end
-arch shop_building
+arch light4
 x 9
 y 18
 end
-arch tile_white_floor
+arch dungeon_magic
+x 9
+y 18
+end
+arch shop_building
+x 9
+y 18
+end
+arch dungeon_magic
 x 9
 y 19
 end
-arch wwall_2_1_2
+arch shop_empty
 x 9
 y 19
 end
-arch tile_white_floor
-x 10
-end
-arch wwall_2_1_2
-x 10
-end
 arch dungeon_magic
-x 10
-y 1
+x 9
+y 20
 end
 arch shop_building
+x 9
+y 20
+end
+arch tile_white_floor
+x 9
+y 21
+end
+arch wwall_2_1_2
+x 9
+y 21
+end
+arch cobblestones2
+x 9
+y 22
+end
+arch cobblestones2
+x 9
+y 23
+end
+arch cobblestones2
+x 10
+end
+arch cobblestones2
 x 10
 y 1
 end
-arch dungeon_magic
+arch tile_white_floor
 x 10
 y 2
 end
-arch shop_empty
+arch wwall_2_1_2
 x 10
 y 2
 end
@@ -1587,7 +1683,7 @@ arch dungeon_magic
 x 10
 y 4
 end
-arch shop_building
+arch shop_empty
 x 10
 y 4
 end
@@ -1595,7 +1691,7 @@ arch dungeon_magic
 x 10
 y 5
 end
-arch shop_building
+arch shop_empty
 x 10
 y 5
 end
@@ -1603,7 +1699,7 @@ arch dungeon_magic
 x 10
 y 6
 end
-arch shop_building
+arch shop_empty
 x 10
 y 6
 end
@@ -1611,7 +1707,7 @@ arch dungeon_magic
 x 10
 y 7
 end
-arch shop_building
+arch shop_empty
 x 10
 y 7
 end
@@ -1619,7 +1715,7 @@ arch dungeon_magic
 x 10
 y 8
 end
-arch shop_building
+arch shop_empty
 x 10
 y 8
 end
@@ -1635,7 +1731,7 @@ arch dungeon_magic
 x 10
 y 10
 end
-arch shop_building
+arch shop_empty
 x 10
 y 10
 end
@@ -1643,1236 +1739,584 @@ arch dungeon_magic
 x 10
 y 11
 end
-arch shop_building
+arch shop_empty
 x 10
 y 11
 end
-arch dungeon_magic
+arch tile_white_floor
 x 10
 y 12
-end
-arch shop_building
-x 10
-y 12
-end
-arch dungeon_magic
-x 10
-y 13
-end
-arch shop_building
-x 10
-y 13
-end
-arch dungeon_magic
-x 10
-y 14
-end
-arch shop_building
-x 10
-y 14
-end
-arch dungeon_magic
-x 10
-y 15
-end
-arch shop_building
-x 10
-y 15
-end
-arch dungeon_magic
-x 10
-y 16
-end
-arch shop_building
-x 10
-y 16
-end
-arch dungeon_magic
-x 10
-y 17
-end
-arch shop_empty
-x 10
-y 17
-end
-arch dungeon_magic
-x 10
-y 18
-end
-arch shop_building
-x 10
-y 18
-end
-arch tile_white_floor
-x 10
-y 19
-end
-arch wwall_2_1_2
-x 10
-y 19
-end
-arch tile_white_floor
-x 11
-end
-arch wwall_2_1_2
-x 11
-end
-arch dungeon_magic
-x 11
-y 1
-end
-arch shop_building
-x 11
-y 1
-end
-arch dungeon_magic
-x 11
-y 2
-end
-arch shop_empty
-x 11
-y 2
-end
-arch dungeon_magic
-x 11
-y 3
-end
-arch shop_empty
-x 11
-y 3
-end
-arch dungeon_magic
-x 11
-y 4
-end
-arch shop_empty
-x 11
-y 4
-end
-arch dungeon_magic
-x 11
-y 5
-end
-arch shop_empty
-x 11
-y 5
-end
-arch dungeon_magic
-x 11
-y 6
-end
-arch shop_empty
-x 11
-y 6
-end
-arch dungeon_magic
-x 11
-y 7
-end
-arch shop_empty
-x 11
-y 7
-end
-arch dungeon_magic
-x 11
-y 8
-end
-arch shop_empty
-x 11
-y 8
-end
-arch dungeon_magic
-x 11
-y 9
-end
-arch shop_empty
-x 11
-y 9
-end
-arch dungeon_magic
-x 11
-y 10
-end
-arch shop_empty
-x 11
-y 10
-end
-arch dungeon_magic
-x 11
-y 11
-end
-arch shop_empty
-x 11
-y 11
-end
-arch dungeon_magic
-x 11
-y 12
-end
-arch shop_empty
-x 11
-y 12
-end
-arch dungeon_magic
-x 11
-y 13
-end
-arch shop_empty
-x 11
-y 13
-end
-arch dungeon_magic
-x 11
-y 14
-end
-arch shop_empty
-x 11
-y 14
-end
-arch dungeon_magic
-x 11
-y 15
-end
-arch shop_empty
-x 11
-y 15
-end
-arch dungeon_magic
-x 11
-y 16
-end
-arch shop_empty
-x 11
-y 16
-end
-arch dungeon_magic
-x 11
-y 17
-end
-arch shop_empty
-x 11
-y 17
-end
-arch dungeon_magic
-x 11
-y 18
-end
-arch shop_building
-x 11
-y 18
-end
-arch tile_white_floor
-x 11
-y 19
-end
-arch wwall_2_1_2
-x 11
-y 19
-end
-arch tile_white_floor
-x 12
-end
-arch wwall_2_1_2
-x 12
-end
-arch dungeon_magic
-x 12
-y 1
-end
-arch shop_building
-x 12
-y 1
-end
-arch dungeon_magic
-x 12
-y 2
-end
-arch shop_empty
-x 12
-y 2
-end
-arch dungeon_magic
-x 12
-y 3
-end
-arch shop_building
-x 12
-y 3
-end
-arch dungeon_magic
-x 12
-y 4
-end
-arch shop_building
-x 12
-y 4
-end
-arch dungeon_magic
-x 12
-y 5
-end
-arch shop_building
-x 12
-y 5
-end
-arch dungeon_magic
-x 12
-y 6
-end
-arch shop_building
-x 12
-y 6
-end
-arch dungeon_magic
-x 12
-y 7
-end
-arch shop_building
-x 12
-y 7
-end
-arch dungeon_magic
-x 12
-y 8
-end
-arch shop_building
-x 12
-y 8
-end
-arch dungeon_magic
-x 12
-y 9
-end
-arch shop_empty
-x 12
-y 9
-end
-arch dungeon_magic
-x 12
-y 10
-end
-arch shop_building
-x 12
-y 10
-end
-arch dungeon_magic
-x 12
-y 11
-end
-arch shop_building
-x 12
-y 11
-end
-arch dungeon_magic
-x 12
-y 12
-end
-arch shop_building
-x 12
-y 12
-end
-arch dungeon_magic
-x 12
-y 13
-end
-arch shop_building
-x 12
-y 13
-end
-arch dungeon_magic
-x 12
-y 14
-end
-arch dungeon_magic
-x 12
-y 14
-end
-arch shop_building
-x 12
-y 14
-end
-arch dungeon_magic
-x 12
-y 15
-end
-arch shop_building
-x 12
-y 15
-end
-arch dungeon_magic
-x 12
-y 16
-end
-arch shop_building
-x 12
-y 16
-end
-arch dungeon_magic
-x 12
-y 17
-end
-arch shop_empty
-x 12
-y 17
-end
-arch dungeon_magic
-x 12
-y 18
-end
-arch shop_building
-x 12
-y 18
-end
-arch tile_white_floor
-x 12
-y 19
-end
-arch wwall_2_1_2
-x 12
-y 19
-end
-arch tile_white_floor
-x 13
-end
-arch wwall_2_1_2
-x 13
-end
-arch dungeon_magic
-x 13
-y 1
-end
-arch shop_building
-x 13
-y 1
-end
-arch dungeon_magic
-x 13
-y 2
-end
-arch shop_empty
-x 13
-y 2
-end
-arch dungeon_magic
-x 13
-y 3
-end
-arch shop_building
-x 13
-y 3
-end
-arch dungeon_magic
-x 13
-y 4
-end
-arch shop_building
-x 13
-y 4
-end
-arch dungeon_magic
-x 13
-y 5
-end
-arch shop_building
-x 13
-y 5
-end
-arch dungeon_magic
-x 13
-y 6
-end
-arch shop_building
-x 13
-y 6
-end
-arch dungeon_magic
-x 13
-y 7
-end
-arch shop_building
-x 13
-y 7
-end
-arch dungeon_magic
-x 13
-y 8
-end
-arch shop_empty
-x 13
-y 8
-end
-arch dungeon_magic
-x 13
-y 9
-end
-arch shop_empty
-x 13
-y 9
-end
-arch dungeon_magic
-x 13
-y 10
-end
-arch shop_empty
-x 13
-y 10
-end
-arch dungeon_magic
-x 13
-y 11
-end
-arch shop_empty
-x 13
-y 11
-end
-arch dungeon_magic
-x 13
-y 12
-end
-arch shop_empty
-x 13
-y 12
-end
-arch dungeon_magic
-x 13
-y 13
-end
-arch shop_empty
-x 13
-y 13
-end
-arch dungeon_magic
-x 13
-y 14
-end
-arch shop_empty
-x 13
-y 14
-end
-arch dungeon_magic
-x 13
-y 15
-end
-arch shop_empty
-x 13
-y 15
-end
-arch dungeon_magic
-x 13
-y 16
-end
-arch shop_empty
-x 13
-y 16
-end
-arch dungeon_magic
-x 13
-y 17
-end
-arch shop_empty
-x 13
-y 17
-end
-arch dungeon_magic
-x 13
-y 18
-end
-arch shop_building
-x 13
-y 18
-end
-arch tile_white_floor
-x 13
-y 19
-end
-arch wwall_2_1_2
-x 13
-y 19
-end
-arch tile_white_floor
-x 14
-end
-arch wwall_2_1_2
-x 14
-end
-arch dungeon_magic
-x 14
-y 1
-end
-arch shop_building
-x 14
-y 1
-end
-arch dungeon_magic
-x 14
-y 2
-end
-arch shop_empty
-x 14
-y 2
-end
-arch dungeon_magic
-x 14
-y 3
-end
-arch shop_empty
-x 14
-y 3
-end
-arch dungeon_magic
-x 14
-y 4
-end
-arch shop_empty
-x 14
-y 4
-end
-arch dungeon_magic
-x 14
-y 5
-end
-arch shop_empty
-x 14
-y 5
-end
-arch dungeon_magic
-x 14
-y 6
-end
-arch shop_empty
-x 14
-y 6
-end
-arch dungeon_magic
-x 14
-y 7
-end
-arch shop_empty
-x 14
-y 7
-end
-arch dungeon_magic
-x 14
-y 8
-end
-arch shop_empty
-x 14
-y 8
-end
-arch dungeon_magic
-x 14
-y 9
-end
-arch shop_empty
-x 14
-y 9
-end
-arch dungeon_magic
-x 14
-y 10
-end
-arch shop_building
-x 14
-y 10
-end
-arch dungeon_magic
-x 14
-y 11
-end
-arch shop_building
-x 14
-y 11
-end
-arch dungeon_magic
-x 14
-y 12
-end
-arch shop_building
-x 14
-y 12
-end
-arch dungeon_magic
-x 14
-y 13
-end
-arch shop_building
-x 14
-y 13
-end
-arch dungeon_magic
-x 14
-y 14
-end
-arch shop_building
-x 14
-y 14
-end
-arch dungeon_magic
-x 14
-y 15
-end
-arch shop_building
-x 14
-y 15
-end
-arch dungeon_magic
-x 14
-y 16
-end
-arch shop_building
-x 14
-y 16
-end
-arch dungeon_magic
-x 14
-y 17
-end
-arch shop_building
-x 14
-y 17
-end
-arch dungeon_magic
-x 14
-y 18
-end
-arch shop_building
-x 14
-y 18
-end
-arch tile_white_floor
-x 14
-y 19
-end
-arch wwall_2_1_2
-x 14
-y 19
-end
-arch tile_white_floor
-x 15
-end
-arch wwall_2_1_2
-x 15
-end
-arch dungeon_magic
-x 15
-y 1
-end
-arch shop_building
-x 15
-y 1
-end
-arch dungeon_magic
-x 15
-y 2
-end
-arch shop_empty
-x 15
-y 2
-end
-arch dungeon_magic
-x 15
-y 3
-end
-arch shop_building
-x 15
-y 3
-end
-arch dungeon_magic
-x 15
-y 4
-end
-arch shop_building
-x 15
-y 4
-end
-arch dungeon_magic
-x 15
-y 5
-end
-arch shop_building
-x 15
-y 5
-end
-arch dungeon_magic
-x 15
-y 6
-end
-arch shop_building
-x 15
-y 6
-end
-arch dungeon_magic
-x 15
-y 7
-end
-arch shop_building
-x 15
-y 7
-end
-arch dungeon_magic
-x 15
-y 8
-end
-arch shop_empty
-x 15
-y 8
-end
-arch dungeon_magic
-x 15
-y 9
-end
-arch shop_empty
-x 15
-y 9
-end
-arch tile_white_floor
-x 15
-y 10
 end
 arch wwall_2_2_2
-x 15
-y 10
-end
-arch tile_white_floor
-x 15
-y 11
-end
-arch wwall_2_1_1
-x 15
-y 11
-end
-arch tile_white_floor
-x 15
-y 12
-end
-arch wwall_win1
-x 15
+x 10
 y 12
 end
 arch tile_white_floor
-x 15
+x 10
 y 13
 end
 arch wwall_2_1_1
-x 15
+x 10
 y 13
 end
 arch tile_white_floor
-x 15
+x 10
 y 14
 end
 arch wwall_win1
-x 15
+x 10
 y 14
 end
 arch tile_white_floor
-x 15
+x 10
 y 15
 end
 arch wwall_2_1_1
-x 15
+x 10
 y 15
 end
 arch tile_white_floor
-x 15
+x 10
 y 16
 end
 arch wwall_win1
-x 15
+x 10
 y 16
 end
 arch tile_white_floor
-x 15
+x 10
 y 17
 end
 arch wwall_2_1_1
-x 15
+x 10
 y 17
 end
 arch tile_white_floor
-x 15
+x 10
 y 18
 end
-arch wwall_2_1_1
-x 15
+arch wwall_win1
+x 10
 y 18
 end
 arch tile_white_floor
-x 15
+x 10
 y 19
+end
+arch wwall_2_1_1
+x 10
+y 19
+end
+arch tile_white_floor
+x 10
+y 20
+end
+arch wwall_2_1_1
+x 10
+y 20
+end
+arch tile_white_floor
+x 10
+y 21
 end
 arch wwall_3_1
-x 15
-y 19
+x 10
+y 21
+end
+arch cobblestones2
+x 10
+y 22
+end
+arch cobblestones2
+x 10
+y 23
+end
+arch cobblestones2
+x 11
+end
+arch cobblestones2
+x 11
+y 1
 end
 arch tile_white_floor
-x 16
+x 11
+y 2
 end
 arch wwall_2_1_2
-x 16
-end
-arch dungeon_magic
-x 16
-y 1
-end
-arch shop_building
-x 16
-y 1
-end
-arch dungeon_magic
-x 16
-y 2
-end
-arch shop_empty
-x 16
+x 11
 y 2
 end
 arch dungeon_magic
-x 16
+x 11
 y 3
 end
 arch shop_building
-x 16
+x 11
 y 3
 end
 arch dungeon_magic
-x 16
+x 11
 y 4
 end
-arch shop_building
-x 16
+arch shop_empty
+x 11
 y 4
 end
-arch dungeon_magic
-x 16
-y 5
-end
-arch shop_building
-x 16
+arch light4
+x 11
 y 5
 end
 arch dungeon_magic
-x 16
+x 11
+y 5
+end
+arch shop_building
+x 11
+y 5
+end
+arch dungeon_magic
+x 11
 y 6
 end
 arch shop_building
-x 16
+x 11
 y 6
 end
 arch dungeon_magic
-x 16
+x 11
 y 7
 end
 arch shop_building
-x 16
+x 11
 y 7
 end
 arch dungeon_magic
-x 16
+x 11
 y 8
 end
-arch shop_empty
-x 16
+arch shop_building
+x 11
 y 8
+end
+arch light4
+x 11
+y 9
 end
 arch dungeon_magic
-x 16
+x 11
 y 9
+end
+arch shop_building
+x 11
+y 9
+end
+arch dungeon_magic
+x 11
+y 10
 end
 arch shop_empty
-x 16
-y 9
-end
-arch tile_white_floor
-x 16
+x 11
 y 10
 end
-arch swall_1_4
-x 16
-y 10
+arch dungeon_magic
+x 11
+y 11
 end
-arch wwall_1_3
-x 16
-y 10
-end
-arch tile_white_floor
-x 16
+arch shop_empty
+x 11
 y 11
 end
 arch tile_white_floor
-x 16
+x 11
 y 12
 end
-arch tile_white_floor
-x 16
+arch swall_1_4
+x 11
+y 12
+end
+arch wwall_1_3
+x 11
+y 12
+end
+arch light4
+x 11
 y 13
 end
 arch tile_white_floor
-x 16
+x 11
+y 13
+end
+arch tile_white_floor
+x 11
 y 14
 end
 arch tile_white_floor
-x 16
+x 11
 y 15
 end
-arch tile_white_floor
-x 16
+arch light4
+x 11
 y 16
 end
 arch tile_white_floor
-x 16
+x 11
+y 16
+end
+arch tile_white_floor
+x 11
 y 17
+end
+arch tile_white_floor
+x 11
+y 18
+end
+arch light4
+x 11
+y 19
+end
+arch tile_white_floor
+x 11
+y 19
 end
 arch sign
 msg
 Welcome to Acme. Inc construction shop!
 You will find here everything you need to build your own customized home, sweet home.  Make sure to read our documentation on how to build nice maps.
 endmsg
-x 16
-y 17
-end
-arch tile_white_floor
-x 16
-y 18
-end
-arch tile_white_floor
-x 16
+x 11
 y 19
+end
+arch button_small
+x 11
+y 20
+connected 1
+end
+arch tile_white_floor
+x 11
+y 20
+end
+arch tile_white_floor
+x 11
+y 21
 end
 arch wwall_1_3
-x 16
-y 19
-end
-arch tile_white_floor
-x 17
-end
-arch wwall_2_1_2
-x 17
+x 11
+y 21
 end
 arch dungeon_magic
-x 17
-y 1
+x 11
+y 22
 end
-arch shop_building
-x 17
-y 1
-end
-arch dungeon_magic
-x 17
-y 2
-end
-arch shop_empty
-x 17
-y 2
-end
-arch dungeon_magic
-x 17
-y 3
-end
-arch shop_empty
-x 17
-y 3
-end
-arch dungeon_magic
-x 17
-y 4
-end
-arch shop_empty
-x 17
-y 4
-end
-arch dungeon_magic
-x 17
-y 5
-end
-arch shop_empty
-x 17
-y 5
-end
-arch dungeon_magic
-x 17
-y 6
-end
-arch shop_empty
-x 17
-y 6
-end
-arch dungeon_magic
-x 17
-y 7
-end
-arch shop_empty
-x 17
-y 7
-end
-arch dungeon_magic
-x 17
-y 8
-end
-arch shop_empty
-x 17
-y 8
-end
-arch dungeon_magic
-x 17
-y 9
-end
-arch shop_empty
-x 17
-y 9
-end
-arch shop_mat
-x 17
-y 9
-end
-arch tile_white_floor
-x 17
-y 10
-end
-arch swall_2_1_2
-x 17
-y 10
-end
-arch tile_white_floor
-x 17
-y 11
-end
-arch shop_mat
-x 17
-y 11
-end
-arch tile_white_floor
-x 17
-y 12
-end
-arch tile_white_floor
-x 17
-y 13
-end
-arch tile_white_floor
-x 17
-y 14
-end
-arch tile_white_floor
-x 17
-y 15
-end
-arch tile_white_floor
-x 17
-y 16
-end
-arch tile_white_floor
-x 17
-y 17
-end
-arch tile_white_floor
-x 17
-y 18
-end
-arch tile_white_floor
-x 17
-y 19
-end
-arch oakdoor_2
+arch invis_exit
 slaying /world/world_105_115
 hp 10
 sp 29
-x 17
+x 11
+y 22
+end
+arch cobblestones2
+x 11
+y 22
+end
+arch cobblestones2
+x 11
+y 23
+end
+arch cobblestones2
+x 12
+end
+arch cobblestones2
+x 12
+y 1
+end
+arch light2
+x 12
+y 2
+end
+arch tile_white_floor
+x 12
+y 2
+end
+arch wwall_win2
+x 12
+y 2
+end
+arch dungeon_magic
+x 12
+y 3
+end
+arch shop_building
+x 12
+y 3
+end
+arch dungeon_magic
+x 12
+y 4
+end
+arch shop_empty
+x 12
+y 4
+end
+arch dungeon_magic
+x 12
+y 5
+end
+arch shop_building
+x 12
+y 5
+end
+arch dungeon_magic
+x 12
+y 6
+end
+arch shop_building
+x 12
+y 6
+end
+arch light4
+x 12
+y 7
+end
+arch dungeon_magic
+x 12
+y 7
+end
+arch shop_building
+x 12
+y 7
+end
+arch dungeon_magic
+x 12
+y 8
+end
+arch shop_building
+x 12
+y 8
+end
+arch dungeon_magic
+x 12
+y 9
+end
+arch shop_building
+x 12
+y 9
+end
+arch dungeon_magic
+x 12
+y 10
+end
+arch shop_empty
+x 12
+y 10
+end
+arch dungeon_magic
+x 12
+y 11
+end
+arch shop_empty
+x 12
+y 11
+end
+arch shop_mat
+x 12
+y 11
+end
+arch tile_white_floor
+x 12
+y 12
+end
+arch swall_2_1_2
+x 12
+y 12
+end
+arch tile_white_floor
+x 12
+y 13
+end
+arch shop_mat
+x 12
+y 13
+end
+arch tile_white_floor
+x 12
+y 14
+end
+arch tile_white_floor
+x 12
+y 15
+end
+arch tile_white_floor
+x 12
+y 16
+end
+arch tile_white_floor
+x 12
+y 17
+end
+arch tile_white_floor
+x 12
+y 18
+end
+arch tile_white_floor
+x 12
 y 19
 end
+arch button_small
+x 12
+y 20
+connected 1
+end
 arch tile_white_floor
-x 18
+x 12
+y 20
+end
+arch button_small
+x 12
+y 21
+connected 1
+end
+arch tile_white_floor
+x 12
+y 21
+end
+arch odoorn2_closed_1
+x 12
+y 21
+connected 1
+end
+arch dungeon_magic
+x 12
+y 22
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 10
+sp 29
+x 12
+y 22
+end
+arch cobblestones2
+x 12
+y 22
+end
+arch cobblestones2
+x 12
+y 23
+end
+arch cobblestones2
+x 13
+end
+arch cobblestones2
+x 13
+y 1
+end
+arch tile_white_floor
+x 13
+y 2
 end
 arch wwall_2_1_2
-x 18
-end
-arch dungeon_magic
-x 18
-y 1
-end
-arch shop_building
-x 18
-y 1
-end
-arch dungeon_magic
-x 18
-y 2
-end
-arch shop_building
-x 18
+x 13
 y 2
 end
 arch dungeon_magic
-x 18
+x 13
 y 3
 end
 arch shop_building
-x 18
+x 13
 y 3
 end
 arch dungeon_magic
-x 18
+x 13
 y 4
 end
-arch shop_building
-x 18
+arch shop_empty
+x 13
 y 4
 end
-arch dungeon_magic
-x 18
-y 5
-end
-arch shop_building
-x 18
+arch light4
+x 13
 y 5
 end
 arch dungeon_magic
-x 18
+x 13
+y 5
+end
+arch shop_building
+x 13
+y 5
+end
+arch dungeon_magic
+x 13
 y 6
 end
 arch shop_building
-x 18
+x 13
 y 6
 end
 arch dungeon_magic
-x 18
+x 13
 y 7
 end
 arch shop_building
-x 18
+x 13
 y 7
 end
 arch dungeon_magic
-x 18
+x 13
 y 8
 end
 arch shop_building
-x 18
+x 13
 y 8
+end
+arch light4
+x 13
+y 9
 end
 arch dungeon_magic
-x 18
+x 13
 y 9
 end
 arch shop_building
-x 18
+x 13
 y 9
+end
+arch dungeon_magic
+x 13
+y 10
+end
+arch shop_empty
+x 13
+y 10
+end
+arch dungeon_magic
+x 13
+y 11
+end
+arch shop_empty
+x 13
+y 11
 end
 arch tile_white_floor
-x 18
-y 10
+x 13
+y 12
 end
 arch swall_1_3
-x 18
-y 10
+x 13
+y 12
 end
 arch wwall_1_4
-x 18
-y 10
+x 13
+y 12
+end
+arch light4
+x 13
+y 13
 end
 arch tile_white_floor
-x 18
-y 11
+x 13
+y 13
 end
 arch book_read
 name Signs and talking books
@@ -2887,15 +2331,15 @@ Click.
 
 Which will make it activate upon the somebody within two squares saying "blah", and will additionally say "Click." upon activation.
 endmsg
-x 18
-y 11
+x 13
+y 13
 material 0
 no_pick 1
 identified 1
 end
 arch tile_white_floor
-x 18
-y 12
+x 13
+y 14
 end
 arch book_read
 name Building restrictions
@@ -2904,15 +2348,15 @@ To build on a spot, all items on this spot must be 'buildable'.
 Buildable items will display 'this is a buildable item' when examined.
 There are several exceptions though. In all cases you can build on marking runes as they are used for making gates and buttons work together. Also you can build signs and talking books on of books and or scrolls, because they are needed for specifying the message. Also, buttons, levers and pedestals can be build underneath gates. Don't worry, you should have some clear messages on why you can't build.
 endmsg
-x 18
-y 12
+x 13
+y 14
 material 0
 no_pick 1
 identified 1
 end
 arch tile_white_floor
-x 18
-y 13
+x 13
+y 15
 end
 arch book_read
 name Removing items
@@ -2922,15 +2366,15 @@ Simply apply it, and fire in the desired direction. It will remove the first bui
 Warning: a destroyer will remove items starting from the lowest order on the spot. Basically, this means the first removed item will be a pedestal (underground), then items on floor.
 Note that the destroyer will not remove walls or floors.
 endmsg
-x 18
-y 13
+x 13
+y 15
 material 0
 no_pick 1
 identified 1
 end
 arch tile_white_floor
-x 18
-y 14
+x 13
+y 16
 end
 arch book_read
 name Building other items
@@ -2939,15 +2383,15 @@ All items not requiring any special handling are built simply by marking the app
 Note that, to avoid any issue, those items can not be picked up.
 Note also that you can build an item on another.
 endmsg
-x 18
-y 14
+x 13
+y 16
 material 0
 no_pick 1
 identified 1
 end
 arch tile_white_floor
-x 18
-y 15
+x 13
+y 17
 end
 arch book_read
 name Building gates and buttons/pedestals
@@ -2969,15 +2413,19 @@ Also, it is possible to make buttons, levers, and pedestals underneath gates, ho
 * then build the button underneath it
 This is useful for making a gate avoid crushing people underneath it. Also, you can use this same technique with inverted gates in order to make a square that pushes objects placed on it off of it.
 endmsg
-x 18
-y 15
+x 13
+y 17
 material 0
 no_pick 1
 identified 1
 end
+arch light4
+x 13
+y 18
+end
 arch tile_white_floor
-x 18
-y 16
+x 13
+y 18
 end
 arch book_read
 name Building floor and walls
@@ -2988,15 +2436,15 @@ You can change an existing floor by building another on top. Same goes for walls
 All created floors are magic, and will preserve items you put on them.
 You can add a window in some walls. To remove the window, build a new wall.
 endmsg
-x 18
-y 16
+x 13
+y 18
 material 0
 no_pick 1
 identified 1
 end
 arch tile_white_floor
-x 18
-y 17
+x 13
+y 19
 end
 arch book_read
 name Basic building instructions
@@ -3011,179 +2459,1898 @@ To build an item:
 * fire the builder in the desired direction
 Of course, the material is used when you build, so you need to buy quite a few.
 endmsg
-x 18
-y 17
+x 13
+y 19
 material 0
 no_pick 1
 identified 1
 end
-arch tile_white_floor
-x 18
-y 18
+arch light4
+x 13
+y 20
+end
+arch button_small
+x 13
+y 20
+connected 1
 end
 arch tile_white_floor
-x 18
-y 19
+x 13
+y 20
+end
+arch tile_white_floor
+x 13
+y 21
 end
 arch wwall_1_4
+x 13
+y 21
+end
+arch dungeon_magic
+x 13
+y 22
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 10
+sp 29
+x 13
+y 22
+end
+arch cobblestones2
+x 13
+y 22
+end
+arch cobblestones2
+x 13
+y 23
+end
+arch cobblestones2
+x 14
+end
+arch cobblestones2
+x 14
+y 1
+end
+arch tile_white_floor
+x 14
+y 2
+end
+arch wwall_2_1_2
+x 14
+y 2
+end
+arch dungeon_magic
+x 14
+y 3
+end
+arch shop_building
+x 14
+y 3
+end
+arch dungeon_magic
+x 14
+y 4
+end
+arch shop_empty
+x 14
+y 4
+end
+arch dungeon_magic
+x 14
+y 5
+end
+arch shop_empty
+x 14
+y 5
+end
+arch dungeon_magic
+x 14
+y 6
+end
+arch shop_empty
+x 14
+y 6
+end
+arch dungeon_magic
+x 14
+y 7
+end
+arch shop_empty
+x 14
+y 7
+end
+arch dungeon_magic
+x 14
+y 8
+end
+arch shop_empty
+x 14
+y 8
+end
+arch dungeon_magic
+x 14
+y 9
+end
+arch shop_empty
+x 14
+y 9
+end
+arch dungeon_magic
+x 14
+y 10
+end
+arch shop_empty
+x 14
+y 10
+end
+arch dungeon_magic
+x 14
+y 11
+end
+arch shop_empty
+x 14
+y 11
+end
+arch tile_white_floor
+x 14
+y 12
+end
+arch wwall_2_2_3
+x 14
+y 12
+end
+arch tile_white_floor
+x 14
+y 13
+end
+arch wwall_2_1_1
+x 14
+y 13
+end
+arch tile_white_floor
+x 14
+y 14
+end
+arch wwall_win1
+x 14
+y 14
+end
+arch tile_white_floor
+x 14
+y 15
+end
+arch wwall_2_1_1
+x 14
+y 15
+end
+arch tile_white_floor
+x 14
+y 16
+end
+arch wwall_win1
+x 14
+y 16
+end
+arch tile_white_floor
+x 14
+y 17
+end
+arch wwall_2_1_1
+x 14
+y 17
+end
+arch tile_white_floor
+x 14
+y 18
+end
+arch wwall_win1
+x 14
+y 18
+end
+arch tile_white_floor
+x 14
+y 19
+end
+arch wwall_2_1_1
+x 14
+y 19
+end
+arch tile_white_floor
+x 14
+y 20
+end
+arch wwall_2_1_1
+x 14
+y 20
+end
+arch tile_white_floor
+x 14
+y 21
+end
+arch wwall_3_1
+x 14
+y 21
+end
+arch cobblestones2
+x 14
+y 22
+end
+arch cobblestones2
+x 14
+y 23
+end
+arch cobblestones2
+x 15
+end
+arch cobblestones2
+x 15
+y 1
+end
+arch tile_white_floor
+x 15
+y 2
+end
+arch wwall_2_1_2
+x 15
+y 2
+end
+arch dungeon_magic
+x 15
+y 3
+end
+arch shop_building
+x 15
+y 3
+end
+arch dungeon_magic
+x 15
+y 4
+end
+arch shop_empty
+x 15
+y 4
+end
+arch dungeon_magic
+x 15
+y 5
+end
+arch shop_building
+x 15
+y 5
+end
+arch dungeon_magic
+x 15
+y 6
+end
+arch shop_building
+x 15
+y 6
+end
+arch dungeon_magic
+x 15
+y 7
+end
+arch shop_building
+x 15
+y 7
+end
+arch dungeon_magic
+x 15
+y 8
+end
+arch shop_building
+x 15
+y 8
+end
+arch dungeon_magic
+x 15
+y 9
+end
+arch shop_building
+x 15
+y 9
+end
+arch dungeon_magic
+x 15
+y 10
+end
+arch shop_building
+x 15
+y 10
+end
+arch light4
+x 15
+y 11
+end
+arch dungeon_magic
+x 15
+y 11
+end
+arch shop_empty
+x 15
+y 11
+end
+arch dungeon_magic
+x 15
+y 12
+end
+arch shop_building
+x 15
+y 12
+end
+arch dungeon_magic
+x 15
+y 13
+end
+arch shop_building
+x 15
+y 13
+end
+arch dungeon_magic
+x 15
+y 14
+end
+arch shop_building
+x 15
+y 14
+end
+arch light4
+x 15
+y 15
+end
+arch dungeon_magic
+x 15
+y 15
+end
+arch shop_building
+x 15
+y 15
+end
+arch dungeon_magic
+x 15
+y 16
+end
+arch dungeon_magic
+x 15
+y 16
+end
+arch shop_building
+x 15
+y 16
+end
+arch dungeon_magic
+x 15
+y 17
+end
+arch shop_building
+x 15
+y 17
+end
+arch light4
+x 15
+y 18
+end
+arch dungeon_magic
+x 15
+y 18
+end
+arch shop_building
+x 15
+y 18
+end
+arch dungeon_magic
+x 15
+y 19
+end
+arch shop_empty
+x 15
+y 19
+end
+arch dungeon_magic
+x 15
+y 20
+end
+arch shop_building
+x 15
+y 20
+end
+arch tile_white_floor
+x 15
+y 21
+end
+arch wwall_2_1_2
+x 15
+y 21
+end
+arch cobblestones2
+x 15
+y 22
+end
+arch cobblestones2
+x 15
+y 23
+end
+arch cobblestones2
+x 16
+end
+arch cobblestones2
+x 16
+y 1
+end
+arch light2
+x 16
+y 2
+end
+arch tile_white_floor
+x 16
+y 2
+end
+arch wwall_win2
+x 16
+y 2
+end
+arch dungeon_magic
+x 16
+y 3
+end
+arch shop_building
+x 16
+y 3
+end
+arch dungeon_magic
+x 16
+y 4
+end
+arch shop_empty
+x 16
+y 4
+end
+arch light4
+x 16
+y 5
+end
+arch dungeon_magic
+x 16
+y 5
+end
+arch shop_building
+x 16
+y 5
+end
+arch dungeon_magic
+x 16
+y 6
+end
+arch shop_building
+x 16
+y 6
+end
+arch dungeon_magic
+x 16
+y 7
+end
+arch shop_building
+x 16
+y 7
+end
+arch light4
+x 16
+y 8
+end
+arch dungeon_magic
+x 16
+y 8
+end
+arch shop_building
+x 16
+y 8
+end
+arch dungeon_magic
+x 16
+y 9
+end
+arch shop_building
+x 16
+y 9
+end
+arch dungeon_magic
+x 16
+y 10
+end
+arch shop_building
+x 16
+y 10
+end
+arch dungeon_magic
+x 16
+y 11
+end
+arch shop_empty
+x 16
+y 11
+end
+arch dungeon_magic
+x 16
+y 12
+end
+arch shop_building
+x 16
+y 12
+end
+arch dungeon_magic
+x 16
+y 13
+end
+arch shop_building
+x 16
+y 13
+end
+arch dungeon_magic
+x 16
+y 14
+end
+arch shop_building
+x 16
+y 14
+end
+arch dungeon_magic
+x 16
+y 15
+end
+arch shop_building
+x 16
+y 15
+end
+arch dungeon_magic
+x 16
+y 16
+end
+arch shop_building
+x 16
+y 16
+end
+arch dungeon_magic
+x 16
+y 17
+end
+arch shop_building
+x 16
+y 17
+end
+arch dungeon_magic
+x 16
+y 18
+end
+arch shop_building
+x 16
+y 18
+end
+arch dungeon_magic
+x 16
+y 19
+end
+arch shop_empty
+x 16
+y 19
+end
+arch dungeon_magic
+x 16
+y 20
+end
+arch shop_building
+x 16
+y 20
+end
+arch light2
+x 16
+y 21
+end
+arch tile_white_floor
+x 16
+y 21
+end
+arch wwall_win2
+x 16
+y 21
+end
+arch cobblestones2
+x 16
+y 22
+end
+arch cobblestones2
+x 16
+y 23
+end
+arch cobblestones2
+x 17
+end
+arch cobblestones2
+x 17
+y 1
+end
+arch tile_white_floor
+x 17
+y 2
+end
+arch wwall_2_1_2
+x 17
+y 2
+end
+arch dungeon_magic
+x 17
+y 3
+end
+arch shop_building
+x 17
+y 3
+end
+arch dungeon_magic
+x 17
+y 4
+end
+arch shop_empty
+x 17
+y 4
+end
+arch dungeon_magic
+x 17
+y 5
+end
+arch shop_empty
+x 17
+y 5
+end
+arch light4
+x 17
+y 6
+end
+arch dungeon_magic
+x 17
+y 6
+end
+arch shop_empty
+x 17
+y 6
+end
+arch dungeon_magic
+x 17
+y 7
+end
+arch shop_empty
+x 17
+y 7
+end
+arch dungeon_magic
+x 17
+y 8
+end
+arch shop_empty
+x 17
+y 8
+end
+arch dungeon_magic
+x 17
+y 9
+end
+arch shop_empty
+x 17
+y 9
+end
+arch dungeon_magic
+x 17
+y 10
+end
+arch shop_empty
+x 17
+y 10
+end
+arch dungeon_magic
+x 17
+y 11
+end
+arch shop_empty
+x 17
+y 11
+end
+arch dungeon_magic
+x 17
+y 12
+end
+arch shop_empty
+x 17
+y 12
+end
+arch light4
+x 17
+y 13
+end
+arch dungeon_magic
+x 17
+y 13
+end
+arch shop_empty
+x 17
+y 13
+end
+arch dungeon_magic
+x 17
+y 14
+end
+arch shop_empty
+x 17
+y 14
+end
+arch dungeon_magic
+x 17
+y 15
+end
+arch shop_empty
+x 17
+y 15
+end
+arch dungeon_magic
+x 17
+y 16
+end
+arch shop_empty
+x 17
+y 16
+end
+arch dungeon_magic
+x 17
+y 17
+end
+arch shop_empty
+x 17
+y 17
+end
+arch dungeon_magic
+x 17
+y 18
+end
+arch shop_empty
+x 17
+y 18
+end
+arch light4
+x 17
+y 19
+end
+arch dungeon_magic
+x 17
+y 19
+end
+arch shop_empty
+x 17
+y 19
+end
+arch dungeon_magic
+x 17
+y 20
+end
+arch shop_building
+x 17
+y 20
+end
+arch tile_white_floor
+x 17
+y 21
+end
+arch wwall_2_1_2
+x 17
+y 21
+end
+arch cobblestones2
+x 17
+y 22
+end
+arch cobblestones2
+x 17
+y 23
+end
+arch cobblestones2
+x 18
+end
+arch cobblestones2
+x 18
+y 1
+end
+arch tile_white_floor
+x 18
+y 2
+end
+arch wwall_2_1_2
+x 18
+y 2
+end
+arch dungeon_magic
+x 18
+y 3
+end
+arch shop_building
+x 18
+y 3
+end
+arch dungeon_magic
+x 18
+y 4
+end
+arch shop_empty
+x 18
+y 4
+end
+arch dungeon_magic
+x 18
+y 5
+end
+arch shop_building
+x 18
+y 5
+end
+arch dungeon_magic
+x 18
+y 6
+end
+arch shop_building
+x 18
+y 6
+end
+arch dungeon_magic
+x 18
+y 7
+end
+arch shop_building
+x 18
+y 7
+end
+arch dungeon_magic
+x 18
+y 8
+end
+arch shop_building
+x 18
+y 8
+end
+arch dungeon_magic
+x 18
+y 9
+end
+arch shop_building
+x 18
+y 9
+end
+arch dungeon_magic
+x 18
+y 10
+end
+arch shop_building
+x 18
+y 10
+end
+arch dungeon_magic
+x 18
+y 11
+end
+arch shop_empty
+x 18
+y 11
+end
+arch dungeon_magic
+x 18
+y 12
+end
+arch shop_building
+x 18
+y 12
+end
+arch dungeon_magic
+x 18
+y 13
+end
+arch shop_building
+x 18
+y 13
+end
+arch dungeon_magic
+x 18
+y 14
+end
+arch shop_building
+x 18
+y 14
+end
+arch dungeon_magic
+x 18
+y 15
+end
+arch shop_building
+x 18
+y 15
+end
+arch dungeon_magic
+x 18
+y 16
+end
+arch shop_building
+x 18
+y 16
+end
+arch dungeon_magic
+x 18
+y 17
+end
+arch shop_building
+x 18
+y 17
+end
+arch dungeon_magic
+x 18
+y 18
+end
+arch shop_building
+x 18
+y 18
+end
+arch dungeon_magic
 x 18
 y 19
 end
+arch shop_empty
+x 18
+y 19
+end
+arch dungeon_magic
+x 18
+y 20
+end
+arch shop_building
+x 18
+y 20
+end
+arch tile_white_floor
+x 18
+y 21
+end
+arch wwall_2_1_2
+x 18
+y 21
+end
+arch cobblestones2
+x 18
+y 22
+end
+arch cobblestones2
+x 18
+y 23
+end
+arch cobblestones2
+x 19
+end
+arch cobblestones2
+x 19
+y 1
+end
 arch tile_white_floor
 x 19
+y 2
+end
+arch wwall_2_1_2
+x 19
+y 2
+end
+arch dungeon_magic
+x 19
+y 3
+end
+arch shop_building
+x 19
+y 3
+end
+arch dungeon_magic
+x 19
+y 4
+end
+arch shop_empty
+x 19
+y 4
+end
+arch light4
+x 19
+y 5
+end
+arch dungeon_magic
+x 19
+y 5
+end
+arch shop_building
+x 19
+y 5
+end
+arch dungeon_magic
+x 19
+y 6
+end
+arch shop_building
+x 19
+y 6
+end
+arch dungeon_magic
+x 19
+y 7
+end
+arch shop_building
+x 19
+y 7
+end
+arch light4
+x 19
+y 8
+end
+arch dungeon_magic
+x 19
+y 8
+end
+arch shop_building
+x 19
+y 8
+end
+arch dungeon_magic
+x 19
+y 9
+end
+arch shop_building
+x 19
+y 9
+end
+arch dungeon_magic
+x 19
+y 10
+end
+arch shop_building
+x 19
+y 10
+end
+arch light4
+x 19
+y 11
+end
+arch dungeon_magic
+x 19
+y 11
+end
+arch shop_empty
+x 19
+y 11
+end
+arch dungeon_magic
+x 19
+y 12
+end
+arch shop_building
+x 19
+y 12
+end
+arch dungeon_magic
+x 19
+y 13
+end
+arch shop_building
+x 19
+y 13
+end
+arch dungeon_magic
+x 19
+y 14
+end
+arch shop_building
+x 19
+y 14
+end
+arch light4
+x 19
+y 15
+end
+arch dungeon_magic
+x 19
+y 15
+end
+arch shop_building
+x 19
+y 15
+end
+arch dungeon_magic
+x 19
+y 16
+end
+arch shop_building
+x 19
+y 16
+end
+arch dungeon_magic
+x 19
+y 17
+end
+arch shop_building
+x 19
+y 17
+end
+arch light4
+x 19
+y 18
+end
+arch dungeon_magic
+x 19
+y 18
+end
+arch shop_building
+x 19
+y 18
+end
+arch dungeon_magic
+x 19
+y 19
+end
+arch shop_empty
+x 19
+y 19
+end
+arch dungeon_magic
+x 19
+y 20
+end
+arch shop_building
+x 19
+y 20
+end
+arch tile_white_floor
+x 19
+y 21
+end
+arch wwall_2_1_2
+x 19
+y 21
+end
+arch cobblestones2
+x 19
+y 22
+end
+arch cobblestones2
+x 19
+y 23
+end
+arch cobblestones2
+x 20
+end
+arch cobblestones2
+x 20
+y 1
+end
+arch light2
+x 20
+y 2
+end
+arch tile_white_floor
+x 20
+y 2
+end
+arch wwall_win2
+x 20
+y 2
+end
+arch dungeon_magic
+x 20
+y 3
+end
+arch shop_building
+x 20
+y 3
+end
+arch dungeon_magic
+x 20
+y 4
+end
+arch shop_empty
+x 20
+y 4
+end
+arch dungeon_magic
+x 20
+y 5
+end
+arch shop_empty
+x 20
+y 5
+end
+arch dungeon_magic
+x 20
+y 6
+end
+arch shop_empty
+x 20
+y 6
+end
+arch dungeon_magic
+x 20
+y 7
+end
+arch shop_empty
+x 20
+y 7
+end
+arch dungeon_magic
+x 20
+y 8
+end
+arch shop_empty
+x 20
+y 8
+end
+arch dungeon_magic
+x 20
+y 9
+end
+arch shop_empty
+x 20
+y 9
+end
+arch dungeon_magic
+x 20
+y 10
+end
+arch shop_empty
+x 20
+y 10
+end
+arch dungeon_magic
+x 20
+y 11
+end
+arch shop_empty
+x 20
+y 11
+end
+arch dungeon_magic
+x 20
+y 12
+end
+arch shop_empty
+x 20
+y 12
+end
+arch dungeon_magic
+x 20
+y 13
+end
+arch shop_empty
+x 20
+y 13
+end
+arch dungeon_magic
+x 20
+y 14
+end
+arch shop_empty
+x 20
+y 14
+end
+arch dungeon_magic
+x 20
+y 15
+end
+arch shop_empty
+x 20
+y 15
+end
+arch dungeon_magic
+x 20
+y 16
+end
+arch shop_empty
+x 20
+y 16
+end
+arch dungeon_magic
+x 20
+y 17
+end
+arch shop_empty
+x 20
+y 17
+end
+arch dungeon_magic
+x 20
+y 18
+end
+arch shop_empty
+x 20
+y 18
+end
+arch dungeon_magic
+x 20
+y 19
+end
+arch shop_empty
+x 20
+y 19
+end
+arch dungeon_magic
+x 20
+y 20
+end
+arch shop_building
+x 20
+y 20
+end
+arch light2
+x 20
+y 21
+end
+arch tile_white_floor
+x 20
+y 21
+end
+arch wwall_win2
+x 20
+y 21
+end
+arch cobblestones2
+x 20
+y 22
+end
+arch cobblestones2
+x 20
+y 23
+end
+arch cobblestones2
+x 21
+end
+arch cobblestones2
+x 21
+y 1
+end
+arch tile_white_floor
+x 21
+y 2
+end
+arch wwall_2_1_2
+x 21
+y 2
+end
+arch dungeon_magic
+x 21
+y 3
+end
+arch shop_building
+x 21
+y 3
+end
+arch dungeon_magic
+x 21
+y 4
+end
+arch shop_building
+x 21
+y 4
+end
+arch dungeon_magic
+x 21
+y 5
+end
+arch shop_building
+x 21
+y 5
+end
+arch dungeon_magic
+x 21
+y 6
+end
+arch shop_building
+x 21
+y 6
+end
+arch dungeon_magic
+x 21
+y 7
+end
+arch shop_building
+x 21
+y 7
+end
+arch dungeon_magic
+x 21
+y 8
+end
+arch shop_building
+x 21
+y 8
+end
+arch dungeon_magic
+x 21
+y 9
+end
+arch shop_building
+x 21
+y 9
+end
+arch dungeon_magic
+x 21
+y 10
+end
+arch shop_building
+x 21
+y 10
+end
+arch dungeon_magic
+x 21
+y 11
+end
+arch shop_building
+x 21
+y 11
+end
+arch dungeon_magic
+x 21
+y 12
+end
+arch shop_building
+x 21
+y 12
+end
+arch dungeon_magic
+x 21
+y 13
+end
+arch shop_building
+x 21
+y 13
+end
+arch dungeon_magic
+x 21
+y 14
+end
+arch shop_building
+x 21
+y 14
+end
+arch dungeon_magic
+x 21
+y 15
+end
+arch shop_building
+x 21
+y 15
+end
+arch dungeon_magic
+x 21
+y 16
+end
+arch shop_building
+x 21
+y 16
+end
+arch dungeon_magic
+x 21
+y 17
+end
+arch shop_building
+x 21
+y 17
+end
+arch dungeon_magic
+x 21
+y 18
+end
+arch shop_building
+x 21
+y 18
+end
+arch dungeon_magic
+x 21
+y 19
+end
+arch shop_building
+x 21
+y 19
+end
+arch dungeon_magic
+x 21
+y 20
+end
+arch shop_building
+x 21
+y 20
+end
+arch tile_white_floor
+x 21
+y 21
+end
+arch wwall_2_1_2
+x 21
+y 21
+end
+arch cobblestones2
+x 21
+y 22
+end
+arch cobblestones2
+x 21
+y 23
+end
+arch cobblestones2
+x 22
+end
+arch cobblestones2
+x 22
+y 1
+end
+arch tile_white_floor
+x 22
+y 2
 end
 arch wwall_2_2_3
-x 19
-end
-arch tile_white_floor
-x 19
-y 1
-end
-arch wwall_2_1_1
-x 19
-y 1
-end
-arch tile_white_floor
-x 19
-y 2
-end
-arch wwall_2_1_1
-x 19
+x 22
 y 2
 end
 arch tile_white_floor
-x 19
+x 22
 y 3
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 3
 end
 arch tile_white_floor
-x 19
+x 22
 y 4
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 4
 end
 arch tile_white_floor
-x 19
+x 22
 y 5
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 5
 end
-arch tile_white_floor
-x 19
-y 6
-end
-arch wwall_2_1_1
-x 19
+arch light2
+x 22
 y 6
 end
 arch tile_white_floor
-x 19
+x 22
+y 6
+end
+arch wwall_win1
+x 22
+y 6
+end
+arch tile_white_floor
+x 22
 y 7
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 7
 end
 arch tile_white_floor
-x 19
+x 22
 y 8
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 8
 end
 arch tile_white_floor
-x 19
+x 22
 y 9
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 9
 end
 arch tile_white_floor
-x 19
+x 22
 y 10
-end
-arch wwall_3_4
-x 19
-y 10
-end
-arch tile_white_floor
-x 19
-y 11
 end
 arch wwall_2_1_1
-x 19
+x 22
+y 10
+end
+arch light2
+x 22
 y 11
 end
 arch tile_white_floor
-x 19
+x 22
+y 11
+end
+arch wwall_win1
+x 22
+y 11
+end
+arch tile_white_floor
+x 22
 y 12
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 12
 end
 arch tile_white_floor
-x 19
+x 22
 y 13
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 13
 end
 arch tile_white_floor
-x 19
+x 22
 y 14
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 14
 end
 arch tile_white_floor
-x 19
+x 22
 y 15
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 15
 end
-arch tile_white_floor
-x 19
-y 16
-end
-arch wwall_2_1_1
-x 19
+arch light2
+x 22
 y 16
 end
 arch tile_white_floor
-x 19
+x 22
+y 16
+end
+arch wwall_win1
+x 22
+y 16
+end
+arch tile_white_floor
+x 22
 y 17
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 17
 end
 arch tile_white_floor
-x 19
+x 22
 y 18
 end
 arch wwall_2_1_1
-x 19
+x 22
 y 18
 end
 arch tile_white_floor
-x 19
+x 22
 y 19
+end
+arch wwall_2_1_1
+x 22
+y 19
+end
+arch tile_white_floor
+x 22
+y 20
+end
+arch wwall_2_1_1
+x 22
+y 20
+end
+arch tile_white_floor
+x 22
+y 21
 end
 arch wwall_2_2_4
-x 19
+x 22
+y 21
+end
+arch cobblestones2
+x 22
+y 22
+end
+arch cobblestones2
+x 22
+y 23
+end
+arch cobblestones2
+x 23
+end
+arch cobblestones2
+x 23
+y 1
+end
+arch cobblestones2
+x 23
+y 2
+end
+arch cobblestones2
+x 23
+y 3
+end
+arch cobblestones2
+x 23
+y 4
+end
+arch cobblestones2
+x 23
+y 5
+end
+arch cobblestones2
+x 23
+y 6
+end
+arch cobblestones2
+x 23
+y 7
+end
+arch cobblestones2
+x 23
+y 8
+end
+arch cobblestones2
+x 23
+y 9
+end
+arch cobblestones2
+x 23
+y 10
+end
+arch cobblestones2
+x 23
+y 11
+end
+arch cobblestones2
+x 23
+y 12
+end
+arch cobblestones2
+x 23
+y 13
+end
+arch cobblestones2
+x 23
+y 14
+end
+arch cobblestones2
+x 23
+y 15
+end
+arch cobblestones2
+x 23
+y 16
+end
+arch cobblestones2
+x 23
+y 17
+end
+arch cobblestones2
+x 23
+y 18
+end
+arch cobblestones2
+x 23
 y 19
+end
+arch cobblestones2
+x 23
+y 20
+end
+arch cobblestones2
+x 23
+y 21
+end
+arch cobblestones2
+x 23
+y 22
+end
+arch cobblestones2
+x 23
+y 23
+end
+arch cobblestones2
+x 24
+end
+arch cobblestones2
+x 24
+y 1
+end
+arch cobblestones2
+x 24
+y 2
+end
+arch cobblestones2
+x 24
+y 3
+end
+arch cobblestones2
+x 24
+y 4
+end
+arch cobblestones2
+x 24
+y 5
+end
+arch cobblestones2
+x 24
+y 6
+end
+arch cobblestones2
+x 24
+y 7
+end
+arch cobblestones2
+x 24
+y 8
+end
+arch cobblestones2
+x 24
+y 9
+end
+arch cobblestones2
+x 24
+y 10
+end
+arch cobblestones2
+x 24
+y 11
+end
+arch cobblestones2
+x 24
+y 12
+end
+arch cobblestones2
+x 24
+y 13
+end
+arch cobblestones2
+x 24
+y 14
+end
+arch cobblestones2
+x 24
+y 15
+end
+arch cobblestones2
+x 24
+y 16
+end
+arch cobblestones2
+x 24
+y 17
+end
+arch cobblestones2
+x 24
+y 18
+end
+arch cobblestones2
+x 24
+y 19
+end
+arch cobblestones2
+x 24
+y 20
+end
+arch cobblestones2
+x 24
+y 21
+end
+arch cobblestones2
+x 24
+y 22
+end
+arch cobblestones2
+x 24
+y 23
 end
