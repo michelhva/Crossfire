@@ -7,13 +7,10 @@ height 30
 enter_x 31
 enter_y 1
 msg
-Modified: 2011-09-12 Rick Tanner
+Modified: 2012-01-17 Rick Tanner
 endmsg
 maplore
-The nightman down the hall spots you and
-shouts "HALT! THIEF!!!"
-It seems they have mistaken you with
-somebody else.
+The nightman down the hall spots you and shouts "HALT! THIEF!!!"  It seems they have mistaken you with somebody else.
 endmaplore
 end
 arch cobblestones2
@@ -1908,12 +1905,7 @@ arch card
 name Port Pass
 slaying port_pass
 msg
-This is a merchants pass allowing paid
-access between the City of Scorn and the
-Port of Scorn, for the purposes of trade
-and commerce. Animal or plants entering
-the city of scorn must be quarantined in
-the Quarantine Warehouse in the port area
+This is a merchants pass allowing paid access between the City of Scorn and the Port of Scorn, for the purposes of trade and commerce.  Animal or plants entering the city of scorn must be quarantined in the Quarantine Warehouse in the port area.
 endmsg
 value 2500
 identified 1
@@ -3806,19 +3798,15 @@ arch thief_1
 name a sly thief
 msg
 @match apprentice
-ok ok...it figures...be quiet and lets
-open this chest.
+ok ok...it figures...be quiet and lets open this chest.
 @match chest
-Yeah, under the bed.....geez did you
-study your rogue book?
+Yeah, under the bed.....geez did you study your rogue book?
 @match name
 Just call me Toad...shhhh
 @match job
 ohhhhh...newbies! I hate them!
 @match *
-shhhhhhhhhhhhhhhh...hey man..he'll hear
-you. Are you that apprentice they
-promised me
+shhhhhhhhhhhhhhhh...hey man..he'll hear you. Are you that apprentice they promised me?
 endmsg
 x 19
 y 19
