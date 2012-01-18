@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1999-01-24 Raphaël Quinet (raphael@gimp.org)
-Modified: 2008-10-26 Rick Tanner
+Modified: 2011-01-18 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -294,8 +294,7 @@ end
 arch sign
 name warning sign
 msg
-Be careful when making ritual sacrifices:
-high voltages can be dangerous.
+Be careful when making ritual sacrifices: high voltages can be dangerous.
 endmsg
 x 4
 y 1
