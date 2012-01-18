@@ -9,7 +9,7 @@ enter_x 3
 enter_y 14
 msg
 Created:  2001-01-03 dnh (dnh@hawthorn.csse.monash.edu.au)
-Modified: 2008-10-26 Rick Tanner
+Modified: 2012-01-17 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -188,27 +188,17 @@ arch faerie_dragon
 name Devotee of Ruggilli
 msg
 @match ruggilli
-Ruggilli, God of Destruction and
-Chaos! His Followers are feared among
-all living!
+Ruggilli, God of Destruction and Chaos! His Followers are feared among all living!
 @match flame
-Ruggilli will lend the immolating
-fires to any who choose to follow!
+Ruggilli will lend the immolating fires to any who choose to follow!
 @match immolating|fires
-Yes! A Flame which will consume your
-enemies!
+Yes! A Flame which will consume your enemies!
 @match follow|worship|door|gate|stair
-The Consuming worm Ruggilli will only
-accept followers who can pass his
-test. Descend down these stairs and
-destroy all the of His enemies and a
-pass shall be granted.
+The Consuming worm Ruggilli will only accept followers who can pass his test.  Descend down these stairs and destroy all the of His enemies and a pass shall be granted.
 @match quest
-When you are ready, your quest shall
-be given!
+When you are ready, your quest shall be given!
 @match *
-The eternal flame of Ruggilli will
-prevail
+The eternal flame of Ruggilli will prevail!
 endmsg
 hp 80
 x 2
@@ -443,11 +433,9 @@ arch fire_elemental
 name Knight of Ruggilli
 msg
 @match ruggilli
-....Massster...We...Live...In...His...
-rath....
+....Massster...We...Live...In...His... rath....
 @match *
-....Do...Not...Attempt...To...Pervent.
-.This...Place...
+....Do...Not...Attempt...To...Pervent...This...Place...
 endmsg
 hp 4000
 x 5
@@ -774,9 +762,7 @@ connected 10
 end
 arch magic_mouth
 msg
-Proceed down those stairs and defeat
-The Servant. Ruggilli will then permit
-entrance
+Proceed down those stairs and defeat The Servant.  Ruggilli will then permit entrance.
 endmsg
 x 8
 y 7
@@ -1032,11 +1018,9 @@ arch fire_elemental
 name Knight of Ruggilli
 msg
 @match ruggilli
-....Massster...We...Live...In...His...
-rath....
+....Massster...We...Live...In...His... rath....
 @match *
-....Do...Not...Attempt...To...Pervent.
-.This...Place...
+....Do...Not...Attempt...To...Pervent...This...Place...
 endmsg
 hp 4000
 x 11
@@ -1177,11 +1161,9 @@ arch fire_elemental
 name Knight of Ruggilli
 msg
 @match ruggilli
-....Massster...We...Live...In...His...
-rath....
+....Massster...We...Live...In...His... rath....
 @match *
-....Do...Not...Attempt...To...Pervent.
-.This...Place...
+....Do...Not...Attempt...To...Pervent...This...Place...
 endmsg
 hp 4000
 x 12
