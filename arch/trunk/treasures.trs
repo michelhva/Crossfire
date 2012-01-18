@@ -945,7 +945,7 @@ treasureone containers
     chance 10
   more
   arch quiver_throwing
-    chance 10
+    chance 5
   more
   arch scrollcase
     chance 5
@@ -1007,6 +1007,7 @@ treasureone throw_weapons
   more
   arch t_star1
     magic 4
+    nrof 12
     chance 5
   more
   arch trident
