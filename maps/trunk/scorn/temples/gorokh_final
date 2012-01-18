@@ -8,7 +8,7 @@ enter_x 51
 enter_y 6
 msg
 Created:  2006-12-10 Gene Alexander (poof@eracc.com)
-Modified: 2011-05-30 Nicolas Weeger
+Modified: 2012-01-17 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -5803,8 +5803,7 @@ y 48
 end
 arch magic_mouth
 msg
-When crossing over this spot you hear a sepulchral voice say :
-"Only the Advocate may enter"
+When crossing over this spot you hear a sepulchral voice say: "Only the Advocate may enter"
 endmsg
 x 11
 y 49
@@ -11519,7 +11518,7 @@ end
 arch DShieldms
 title of Gorokh
 msg
-There is an incredibly powerful evil spirit in the shield controlling your mind. You find it nearly impossible to regain control of yourself.
+There is an incredibly powerful evil spirit in the shield controlling your mind.  You find it nearly impossible to regain control of yourself.
 endmsg
 Wis -5
 Pow -5
@@ -21641,9 +21640,7 @@ activate_on_release 0
 end
 arch magic_mouth
 msg
-You have a strong feeling you should pray to your cult gods before venturing beyond this gate.
-
-Perhaps that altar over there is here for a reason.
+You have a strong feeling you should pray to your cult gods before venturing beyond this gate.  Perhaps that altar over there is here for a reason.
 endmsg
 x 50
 y 8
@@ -24553,7 +24550,7 @@ end
 arch magic_mouth
 name hideous evil laughter
 msg
-Gorokh has noticed you. You feel the regard of Gorokh to the depths of your soul. You hear hideous, evil laughter ...
+Gorokh has noticed you.  You feel the regard of Gorokh to the depths of your soul.  You hear hideous, evil laughter ...
 endmsg
 x 56
 y 59
@@ -25301,7 +25298,7 @@ arch magic_mouth
 name limited time
 msg
 .
-Gorokh has not yet become aware of you. You feel as though you should get this quest finished.That you should get out of here quickly.
+Gorokh has not yet become aware of you.  You feel as though you should get this quest finished.  That you should get out of here quickly.
 .
 You know once Gorokh knows you are here you will die ...
 .
