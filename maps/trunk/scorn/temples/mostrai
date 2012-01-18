@@ -8,7 +8,7 @@ enter_x 13
 enter_y 16
 msg
 Created:  1999-01-22 Raphaël Quinet (raphael@gimp.org)
-Modified: 2008-09-29 Rick Tanner
+Modified: 2012-01-17 Rick Tanner
 endmsg
 end
 arch brush
@@ -477,15 +477,9 @@ msg
 @match goblin
 I hate these beasts!
 @match mines
-Aye, the mines. The entrance is
-somewhere around this temple.
+Aye, the mines.  The entrance is somewhere around this temple.
 @match *
-I am guarding our priest, because I
-have heard that some Goblins are
-sneaking into the city during the
-night and try to capture some of us.
-They are trying to learn how to get
-into our mines.
+I am guarding our priest, because I have heard that some Goblins are sneaking into the city during the night and try to capture some of us.  They are trying to learn how to get in to our mines.
 endmsg
 x 4
 y 7
@@ -711,7 +705,7 @@ msg
 @match mostrai
 Mostrai is our god.
 @match *
-Welcome to the temple of Mostrai!
+Welcome to the Temple of Mostrai!
 endmsg
 x 6
 y 11
