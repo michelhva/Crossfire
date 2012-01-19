@@ -336,13 +336,14 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     public boolean keyPressed(@NotNull final KeyEvent e) {
         switch (e.getKeyCode()) {
         case KeyEvent.VK_ENTER:
+            markInactivePending();
             final String command = text.toString();
             commandCallback.updatePlayerName(command);
             execute(command);
             if (!hideInput && commandHistory != null) {
                 commandHistory.addCommand(command);
             }
-            setActive(false);
+            setInactiveIfPending();
             return true;
 
         case KeyEvent.VK_BACK_SPACE:

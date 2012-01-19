@@ -26,7 +26,11 @@ textbutton account_cancel_login false command_account_cancel_create Cancel
 
 hide_input account_password
 hide_input account_password_confirm
-set_default account_do_login
+set_default account_login
+
+commandlist_add command_null_new account_login MOVE_FOCUS account_password
+commandlist_add command_null_new account_password MOVE_FOCUS account_password_confirm
+commandlist_add command_null_new account_password_confirm MOVE_FOCUS account_do_login 1
 
 horizontal begin par
   begin seq

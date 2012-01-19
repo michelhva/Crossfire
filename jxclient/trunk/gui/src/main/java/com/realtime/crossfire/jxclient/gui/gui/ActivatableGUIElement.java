@@ -42,6 +42,13 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
     private final GUIElementListener elementListener;
 
     /**
+     * Set if the next call to {@link #setInactiveIfPending()} will deactivate
+     * this GUI element. It is set by calling {@link #markInactivePending()} and
+     * reset by calling {@link #setActive(boolean)}.
+     */
+    private boolean pendingInactive;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -68,10 +75,27 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
     }
 
     /**
+     * Marks this GUI element as pending inactive.
+     */
+    protected void markInactivePending() {
+        pendingInactive = true;
+    }
+
+    /**
+     * Unsets the active state of this GUI element if is is pending.
+     */
+    protected void setInactiveIfPending() {
+        if (pendingInactive) {
+            setActive(false);
+        }
+    }
+
+    /**
      * Sets the active state of a GUI element.
      * @param active the active state
      */
     public void setActive(final boolean active) {
+        pendingInactive = false;
         elementListener.activeChanged(this, active);
     }
 
