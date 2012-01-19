@@ -252,6 +252,33 @@ public class GuiManager {
                 } catch (final JXCSkinException ignored) {
                     // ignore if dialog doesn't exist
                 }
+            } else if (command.equals("accountnew") && skin != null) {
+                try {
+                    final Gui dialog = skin.getDialog("account_create");
+                    final GUIText loginField = dialog.getFirstElement(GUIText.class, "account_login");
+                    final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                    final GUIText passwordConfirmField = dialog.getFirstElement(GUIText.class, "account_password_confirm");
+                    final String argumentsLower = arguments.toLowerCase();
+                    if (argumentsLower.contains("password")) {
+                        if (passwordField != null) {
+                            passwordField.setText("");
+                            passwordField.setActive(true);
+                        }
+                        if (passwordConfirmField != null) {
+                            passwordConfirmField.setText("");
+                        }
+                    } else if (argumentsLower.contains("account")) {
+                        if (loginField != null) {
+                            loginField.setActive(true);
+                        }
+                    } else {
+                        if (passwordField != null) {
+                            passwordField.setActive(true);
+                        }
+                    }
+                } catch (final JXCSkinException ignored) {
+                    // ignore if dialog doesn't exist
+                }
             } else if (command.equals("createplayer") && skin != null) {
                 try {
                     final Gui dialog = skin.getDialog("account_character_new");
