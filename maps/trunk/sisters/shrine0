@@ -9,7 +9,7 @@ enter_x 17
 enter_y 33
 msg
 Created:  1994-12-20 bt (thomas@Nomad.astro.psu.edu)
-Modified: 2008-10-28 Rick Tanner
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1801,10 +1801,7 @@ y 7
 end
 arch magic_mouth
 msg
-You see here a mural of a figure
-walking along a ribbon of black
-into the open maw of a large
-snake being.
+You see here a mural of a figure walking along a ribbon of black into the open maw of a large snake being.
 endmsg
 x 16
 y 8
@@ -2243,7 +2240,7 @@ move_block 0
 end
 arch magic_mouth
 msg
-You see here a rune covered wall
+You see here a rune covered wall.
 endmsg
 x 17
 y 7
@@ -2286,10 +2283,7 @@ connected 20
 end
 arch magic_mouth
 msg
-Sacrilege! Your kind is not
-tolerated here! The Snake god
-becomes very angry! Snakes
-pour from the pits!
+Sacrilege! Your kind is not tolerated here! The Snake god becomes very angry! Snakes pour from the pits!
 endmsg
 x 17
 y 13
@@ -2423,7 +2417,7 @@ end
 arch pit_open
 slaying /sisters/shrine0
 msg
-You fall into a snake pit
+You fall into a snake pit!
 endmsg
 hp 16
 sp 45
@@ -2837,7 +2831,7 @@ end
 arch pit_open
 slaying /sisters/shrine0
 msg
-You fall into a snake pit
+You fall into a snake pit!
 endmsg
 hp 17
 sp 45
@@ -3089,9 +3083,7 @@ y 7
 end
 arch magic_mouth
 msg
-You see here a mural of several
-priests gathered near a rune covered
-wall.
+You see here a mural of several priests gathered near a rune covered wall.
 endmsg
 x 19
 y 8
