@@ -7,7 +7,7 @@ height 16
 enter_x 11
 enter_y 10
 msg
-Modified: 2010-06-12 Nicolas Weeger
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch grass
@@ -872,14 +872,10 @@ arch guildmaster
 name Kelthior
 msg
 @match farnass
-Ha, my young brother.
-
-He's working for the King of Scorn, now, somewhere in the castle, I think.
+Ha, my young brother.  He's working for the King of Scorn, now, somewhere in the castle, I think.
 @match *
 Hello, and welcome to my tower!
-
-Since you're a knowledgeable person, if you encounter a strange object, just show it to me with the "give" command.
-Who knows? I may be able to tell you more about it. I'm a wizard, after all.
+Since you're a knowledgeable person, if you encounter a strange object, just show it to me with the "give" command.  Who knows? I may be able to tell you more about it.  I'm a wizard, after all.
 endmsg
 hp 500
 maxhp 500
