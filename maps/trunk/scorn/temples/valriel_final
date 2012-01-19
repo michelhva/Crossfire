@@ -8,7 +8,7 @@ enter_x 29
 enter_y 50
 msg
 Created:  2006-06-11 Gene Alexander (poof@eracc.com)
-Modified: 2011-07-02 Nicolas Weeger
+Modified: 2012-01-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -9014,7 +9014,7 @@ name_pl Glowing Holy Avengers
 title of Valriel
 slaying demon
 msg
-The glowing, holy sword granted to ascended followers of Valriel
+The glowing, holy sword granted to ascended followers of Valriel.
 endmsg
 Str 2
 Wis 3
@@ -9062,7 +9062,7 @@ name girdle of Valriel
 name_pl girdles of Valriel
 title of the Crusade
 msg
-A glowing girdle that grants the wearer some benefits compliments of Valriel
+A glowing girdle that grants the wearer some benefits compliments of Valriel.
 endmsg
 Str 3
 Dex 3
@@ -9082,7 +9082,7 @@ name Valriel's Treasure Key
 name_pl Valriel's Treasure Keys
 slaying valriels_treasure_key
 msg
-A glowing key given to the guardian of Valriel's Treasure
+A glowing key given to the guardian of Valriel's Treasure.
 endmsg
 glow_radius 5
 end
