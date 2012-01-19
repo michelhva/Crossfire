@@ -9,7 +9,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1994-12-29 bt (thomas@Nomad.astro.psu.edu)
-Modified: 2008-10-28 Rick Tanner
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1545,16 +1545,9 @@ arch vampire
 name Farvaled the old vampire
 msg
 @match city|gax
-It is true, this was once my city.
-Long ago jealous gods came
-to destroy the three sisters who
-lived amongst us by the lake.
-Many died, a few like myself
-were cursed and buried. Only
-a handful of the citizens escaped.
+It is true, this was once my city.  Long ago jealous gods came to destroy the three sisters who lived amongst us by the lake.  Many died, a few like myself were cursed and buried.  Only a handful of the citizens escaped.
 @match *
-Ah, thank you for freeing me!
-Long have I lain here.
+Ah, thank you for freeing me! Long have I lain here.
 endmsg
 hp 50
 exp 1000
@@ -6575,8 +6568,7 @@ end
 arch ladder_up
 slaying /sisters/necro_hole1
 msg
-You crawl up a ladder and
-push through the dirt floor!
+You crawl up a ladder and push through the dirt floor!
 endmsg
 hp 29
 sp 32
