@@ -25,8 +25,8 @@ textbutton account_quit false command_disconnect Disconnect
 hide_input account_password
 set_default account_login
 
-commandlist_add command_null account_password MOVE_FOCUS account_do_login 1
 commandlist_add command_null account_login MOVE_FOCUS account_password
+commandlist_add command_null account_password MOVE_FOCUS account_do_login 1
 
 horizontal begin par
   begin seq
