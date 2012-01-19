@@ -55,7 +55,7 @@ public class GUILabelFailure extends GUIMultiLineLabel {
 
         @Override
         public void failure(@NotNull final String command, @NotNull final String arguments) {
-            setText(arguments);
+            setText(arguments.replaceFirst("^([0-9]+ )?", ""));
         }
 
         @Override
