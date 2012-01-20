@@ -9,7 +9,7 @@ enter_x 9
 enter_y 33
 msg
 Created:  1995-01-03 bt (thomas@nomad.astro.psu.edu)
-Modified: 2008-10-28 Rick Tanner
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch blocked
@@ -236,26 +236,13 @@ arch prisoner
 name harried prisoner
 msg
 @match shrine|help
-This shrine is old.. older than the
-snakemen that you just slew. I think
-they have only recently come back
-to worship the snake god here.
-One snake priest spoke a little of my
-tongue and questioned me about
-a key to a door and 'eyes of the goddess'.
+This shrine is old.. older than the snakemen that you just slew.  I think they have only recently come back to worship the snake god here.  One snake priest spoke a little of my tongue and questioned me about a key to a door and 'eyes of the goddess'.
 @match eyes|goddess|door|key
-I did'nt know what the snake-priest was
-asking about. I pretended to know so he
-would keep me alive. I saw what those
-evil beings were doing to my friends (sob).
+I did'nt know what the snake-priest was asking about.  I pretended to know so he would keep me alive.  I saw what those evil beings were doing to my friends (sob).
 @match friend
-The snake men were taking his blood
-for a sacrifice to the Snake goddess.
+The snake men were taking his blood for a sacrifice to the Snake goddess.
 @match *
-By the Gods! It is good to see a friendly
-face. I had given up hope of ever returning
-home! Let me help you if I can, for I know
-a few things about this shrine.
+By the Gods! It is good to see a friendly face.  I had given up hope of ever returning home! Let me help you if I can, for I know a few things about this shrine.
 endmsg
 x 3
 y 17
@@ -1378,8 +1365,7 @@ y 32
 end
 arch magic_mouth
 msg
-You hear something large slither
-nearby.
+You hear something large slither nearby.
 endmsg
 x 9
 y 32
@@ -1564,8 +1550,7 @@ y 32
 end
 arch magic_mouth
 msg
-You hear something large slither
-nearby.
+You hear something large slither nearby.
 endmsg
 x 10
 y 32
