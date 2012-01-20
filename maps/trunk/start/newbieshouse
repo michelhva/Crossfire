@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2010-03-26 Cavesomething
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -697,8 +697,7 @@ y 13
 end
 arch sign
 msg
-Food is good stuff you need to keep healthy.
-You eat food by applying it.
+Food is good stuff you need to keep healthy.  You eat food by applying it.
 endmsg
 x 2
 y 13
@@ -1247,8 +1246,7 @@ end
 arch sign
 name Gates and doors
 msg
-Some doors and gates automatically swing open by triggering a (sometimes hidden) button or switch.
-Be careful not to stand in the way when they are swinging open or closed...  Ouch.
+Some doors and gates automatically swing open by triggering a (sometimes hidden) button or switch.  Be careful not to stand in the way when they are swinging open or closed...  Ouch.
 endmsg
 x 4
 y 7
@@ -3716,8 +3714,7 @@ y 13
 end
 arch sign
 msg
-Apply one of those 2 levers
-to open one door.
+Apply one of those 2 levers to open one door.
 endmsg
 x 12
 y 13
@@ -3807,7 +3804,7 @@ end
 arch magic_ear
 msg
 @match food
-Food for you
+Food for you.
 endmsg
 x 12
 y 21
@@ -3876,8 +3873,7 @@ end
 arch magic_ear
 msg
 @match hello world
-Have a nice trip and don't die too
-quickly.
+Have a nice trip and don't die too quickly.
 endmsg
 x 12
 y 26
@@ -4187,8 +4183,7 @@ y 26
 end
 arch magic_mouth
 msg
-say hello world
-if you want the door to open
+say 'hello world' if you want the door to open.
 endmsg
 x 13
 y 26
