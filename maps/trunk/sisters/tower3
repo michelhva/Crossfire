@@ -8,7 +8,7 @@ enter_x 7
 enter_y 1
 msg
 Created:  1994-12-18 bt (thomas@nomad.astro.psu.edu)
-Modified: 2008-11-29 Rick Tanner
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch sea
@@ -124,10 +124,7 @@ end
 arch lapron
 name Carrillium apron of great protection
 msg
-This apron surrounds the user with
-a protective force which unfortunately
-deadens the magical powers of the
-wearer.
+This apron surrounds the user with a protective force which unfortunately deadens the magical powers of the wearer.
 endmsg
 sp -2
 x 1
@@ -1793,11 +1790,7 @@ end
 arch cloak
 name Many-colored cloak
 msg
-Once completely wrapped in this
-cloak (making the user blind) the
-wearer is rendered invisible. Forces
-which power this cloak more closely
-attune the wearer to magical damage.
+Once completely wrapped in this cloak (making the user blind) the wearer is rendered invisible.  Forces which power this cloak more closely attune the wearer to magical damage.
 endmsg
 Dex -15
 x 19
