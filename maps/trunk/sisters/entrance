@@ -9,7 +9,7 @@ enter_x 19
 enter_y 1
 msg
 Created:  1994-12-18 bt (thomas@nomad.astro.psu.edu)
-Modified: 2008-10-28 Rick Tanner
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch sea
@@ -1742,42 +1742,17 @@ arch troll
 name Cryax the sad hill troll
 msg
 @match sorrow|hi|hello
-Beware little one. These hills contain
-powerful evil magic. Know that my
-two older brothers lie further in and that
-the curse that has been laid upon
-us has affected them more strongly.
+Beware little one.  These hills contain powerful evil magic.  Know that my two older brothers lie further in and that the curse that has been laid upon us has affected them more strongly.
 @match curse
-Yes, long ago we were elven princes.
-For our love of the 3 sisters we each
-were cursed by jealous gods. We are
-to stand guard here for eternity. I alone
-repent my fate, for both my brothers
-are quite mad and are beyond reason.
+Yes, long ago we were elven princes.  For our love of the 3 sisters we each were cursed by jealous gods.  We are to stand guard here for eternity.  I alone repent my fate, for both my brothers are quite mad and are beyond reason.
 @match sister
-They were the 3 most beautiful creatures
-to walk the earth once. Together they
-had great magical powers of weaving-
-for they are the daughters of Aniu, god
-of making. As they are half-goddesses each,
-no curse of any god may transmute them,
-but instead they have been mutilated.
-They live now in sorrow in the tower my
-brothers protect.
+They were the 3 most beautiful creatures to walk the earth once.  Together they had great magical powers of weaving - for they are the daughters of Aniu, god of making.  As they are half-goddesses each, no curse of any god may transmute them, but instead they have been mutilated.  They live now in sorrow in the tower my brothers protect.
 @match tower|guard
-We guard the tower of the sisters
-which lies within a maze of deadly
-creatures and false paths. The ultimate
-true path is hidden. Be careful if you
-choose to seek the tower!
+We guard the tower of the sisters which lies within a maze of deadly creatures and false paths.  The ultimate true path is hidden.  Be careful if you choose to seek the tower!
 @match password
-Ah.. the entrance into the inner tower
-is protected by a password. I used to
-know it when I was young but its been
-so many years that I have forgotten it.
+Ah.. the entrance into the inner tower is protected by a password.  I used to know it when I was young but its been so many years that I have forgotten it.
 @match *
-Go away from here and leave me to
-my sorrow.
+Go away from here and leave me to my sorrow.
 endmsg
 hp 4000
 exp 12000
@@ -2456,9 +2431,7 @@ end
 arch dark_elf
 msg
 @match *
-Flee now striplings! Know that you
-have reached the mazes of chaos wherein
-eternal night rules! Hahahahahahaha!
+Flee now striplings! Know that you have reached the mazes of chaos wherein eternal night rules! Hahahahahahaha!
 endmsg
 x 18
 y 4
