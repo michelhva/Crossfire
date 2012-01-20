@@ -9,7 +9,7 @@ enter_x 9
 enter_y 1
 msg
 Created:  1994-12-18 bt (thomas@astro.psu.edu)
-Modified: 2008-11-29 Rick Tanner
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch blocked
@@ -46,8 +46,7 @@ y 7
 end
 arch magic_mouth
 msg
-You hear the sound of rock sliding on
-rock.
+You hear the sound of rock sliding on rock.
 endmsg
 y 7
 connected 10
@@ -994,10 +993,7 @@ level 14
 end
 arch magic_mouth
 msg
-You hear something large breathing
-just on the other side of the wall.
-Peeping through a crack you spy
-a large troll!
+You hear something large breathing just on the other side of the wall.  Peeping through a crack you spy a large troll!
 endmsg
 hp 1
 x 8
