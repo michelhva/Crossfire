@@ -11,10 +11,6 @@ commandlist command_spells_down AND
 commandlist command_spells_prev AND
 commandlist command_spells_next AND
 
-#label_text label_weight_label font_label BLACK Weight:_
-#label_stat label_weight       font_label BLACK WEIGHT RIGHT
-#label_text label_weight_sep   font_label BLACK /
-#label_stat label_weight_limit font_label BLACK WEIGHT_LIMIT LEFT
 label_text spell_item          font_label BLACK
 label_text spell_skills_label  font_label BLACK Skills:_
 
@@ -33,34 +29,6 @@ commandlist_add command_spells_up spells MOVE_SELECTION -1 0
 commandlist_add command_spells_down spells MOVE_SELECTION 1 0
 commandlist_add command_spells_prev spells MOVE_SELECTION 0 -1
 commandlist_add command_spells_next spells MOVE_SELECTION 0 1
-
-#commandlist command_inventory_apply AND spells EXEC_SELECTION APPLY
-#commandlist command_inventory_drop AND spells EXEC_SELECTION DROP
-#commandlist command_inventory_examine AND spells EXEC_SELECTION EXAMINE
-#commandlist command_inventory_lock AND spells EXEC_SELECTION LOCK
-#commandlist command_inventory_mark AND spells EXEC_SELECTION MARK
-#commandlist command_inventory_unlock AND spells EXEC_SELECTION UNLOCK
-
-# Cursor keys disabled for now because players want to move around while
-# inventory is open.
-#key code UP        0 exec command_inventory_up
-#key code KP_UP     0 exec command_inventory_up
-#key code DOWN      0 exec command_inventory_down
-#key code KP_DOWN   0 exec command_inventory_down
-#key code LEFT      0 exec command_inventory_prev
-#key code KP_LEFT   0 exec command_inventory_prev
-#key code RIGHT     0 exec command_inventory_next
-#key code KP_RIGHT  0 exec command_inventory_next
-#key code PAGE_UP   0 exec command_inventory_page_up
-#key code PAGE_DOWN 0 exec command_inventory_page_down
-#key code ENTER     0 exec command_inventory_apply
-#key code A         0 exec command_inventory_apply
-#key code D         0 exec command_inventory_drop
-#key code E         0 exec command_inventory_examine
-#key code L         0 exec command_inventory_lock
-#key code L         1 exec command_inventory_unlock
-#key code M         0 exec command_inventory_mark
-#key code U         0 exec command_inventory_unlock
 
 commandlist command_spells_reset OR spells SCROLL_RESET
 event connect command_spells_reset
