@@ -351,7 +351,11 @@ public class SpellsManager implements Iterable<Spell> {
      */
     @Nullable
     public Spell getSpell(final int index) {
-        return 0 <= index && index < filteredSpells.size() ? filteredSpells.get(index) : null;
+        try {
+            return filteredSpells.get(index);
+        } catch (final IndexOutOfBoundsException ignored) {
+            return null;
+        }
     }
 
     /**
