@@ -4,7 +4,7 @@ Object spell_small_bullet
 anim_suffix spellcasting
 name small bullet
 name_pl small bullet
-face spell_evocation.111
+face spell_sm_bullet.111
 level 1
 sp 1
 casting_time 2
