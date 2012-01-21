@@ -2,7 +2,7 @@ Object spell_asteroid
 anim_suffix spellcasting
 name asteroid
 name_pl asteroid
-face spell_evocation.111
+face spell_asteroid.111
 level 16
 value 80
 sp 15
