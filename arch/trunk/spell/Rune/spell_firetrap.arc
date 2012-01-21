@@ -12,7 +12,7 @@ sp 5
 casting_time 15
 skill pyromancy
 path_attuned 2048
-face penta.111
+face spell_firetrap.111
 msg
 Firetrap is a special rune that may be used to encapsulate another spell that is not necessarily fire based.  When casting the spell, the caster specifies the spell that should be encapsulated in the firetrap.  When the firetrap is triggered, the specified spell is cast on the target.
 endmsg
