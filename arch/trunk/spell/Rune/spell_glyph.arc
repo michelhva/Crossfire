@@ -2,7 +2,7 @@ Object spell_glyph
 anim_suffix spellcasting
 name glyph
 name_pl glyph
-face glyph.111
+face spell_glyph.111
 type 101
 subtype 2
 no_drop 1
