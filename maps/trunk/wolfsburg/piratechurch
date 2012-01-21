@@ -7,7 +7,7 @@ height 21
 enter_x 7
 enter_y 16
 msg
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-01-20 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -342,8 +342,7 @@ arch fighter
 name highlander
 msg
 @match *
-This is Holy Ground.  You cannot defile
-it with combat!
+This is Holy Ground.  You cannot defile it with combat!
 endmsg
 hp 100
 x 3
@@ -1121,8 +1120,7 @@ arch sage
 name bored priest
 msg
 @match *
-Mass starts in a few hours, I'll talk
-to you then.
+Mass starts in a few hours, I'll talk to you then.
 endmsg
 x 9
 y 3
