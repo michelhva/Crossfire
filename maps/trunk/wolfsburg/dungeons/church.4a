@@ -8,7 +8,7 @@ enter_x 7
 enter_y 16
 msg
 Created:  1994-11-15
-Modified: 2008-12-13 Rick Tanner
+Modified: 2012-01-20 Rick Tanner
 endmsg
 end
 arch blocked
@@ -155,7 +155,7 @@ y 7
 end
 arch magic_mouth
 msg
-A great sadness sweeps over you
+A great sadness sweeps over you.
 endmsg
 x 1
 y 8
@@ -736,7 +736,7 @@ y 6
 end
 arch magic_mouth
 msg
-You feel uneasy as you enter this room
+You feel uneasy as you enter this room.
 endmsg
 x 6
 y 7
@@ -1001,9 +1001,7 @@ y 6
 end
 arch magic_mouth
 msg
-This room has the mustiness of a place that
-once saw death a long time ago. The furniture
-is sturdy but finely made
+This room has the mustiness of a place that once saw death a long time ago.  The furniture is sturdy but finely made.
 endmsg
 x 8
 y 7
@@ -2074,8 +2072,7 @@ y 10
 end
 arch magic_mouth
 msg
-The smell of death is sharp like a knife blade
-in this room
+The smell of death is sharp like a knife blade in this room.
 endmsg
 x 16
 y 11
