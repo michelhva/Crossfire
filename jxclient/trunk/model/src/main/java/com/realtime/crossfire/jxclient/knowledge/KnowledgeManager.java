@@ -188,12 +188,18 @@ public class KnowledgeManager {
         return filteredItems.size();
     }
 
+    /**
+     * Returns a {@link KnowledgeItem} instance by index.
+     * @param index the index
+     * @return the item or <code>null</code> if the index is invalid
+     */
     @Nullable
     public KnowledgeItem getKnowledge(final int index) {
-        if (index < 0 || index >= filteredItems.size()) {
+        try {
+            return filteredItems.get(index);
+        } catch (IndexOutOfBoundsException ignored) {
             return null;
         }
-        return filteredItems.get(index);
     }
 
     public void filterType(final int index) {
