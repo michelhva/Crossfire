@@ -123,6 +123,7 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.skin.events.ConnectionStateSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.CrossfireMagicmapSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.MapScrollSkinEvent;
+import com.realtime.crossfire.jxclient.skin.events.PlayerLoginSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.SkillAddedSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.SkillRemovedSkinEvent;
 import com.realtime.crossfire.jxclient.skin.factory.CheckBoxFactory;
@@ -1153,6 +1154,12 @@ public class JXCSkinLoader {
             skin.addSkinEvent(new ConnectionStateSkinEvent(commandList, guiStateManager));
         } else if (type.equals("init")) {
             skin.addInitEvent(skin.getCommandList(args.get()));
+        } else if (type.equals("login")) {
+            final CommandList commandList = skin.getCommandList(args.get());
+            skin.addSkinEvent(new PlayerLoginSkinEvent(true, commandList, itemSet));
+        } else if (type.equals("logout")) {
+            final CommandList commandList = skin.getCommandList(args.get());
+            skin.addSkinEvent(new PlayerLoginSkinEvent(false, commandList, itemSet));
         } else if (type.equals("magicmap")) {
             final CommandList commandList = skin.getCommandList(args.get());
             skin.addSkinEvent(new CrossfireMagicmapSkinEvent(commandList, server));
