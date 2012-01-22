@@ -8,7 +8,7 @@ enter_x 6
 enter_y 15
 msg
 Created:  1999-01-22 Raphaël Quinet (raphael@gimp.org)
-Modified: 2012-01-17 Rick Tanner
+Modified: 2012-01-22 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -903,6 +903,19 @@ end
 arch marble
 x 10
 y 5
+end
+arch sign
+msg
+Here is the list of heroes who discovered Gorokh's secret treasure:
+-------------------------------------------------------
+endmsg
+x 10
+y 5
+arch event_apply
+name scorn-gorokh-church
+title Python
+slaying /python/misc/hall_of_fame.py
+end
 end
 arch marble
 x 10
