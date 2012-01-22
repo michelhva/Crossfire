@@ -8,7 +8,7 @@ enter_x 7
 enter_y 5
 msg
 You have entered the Underworld.
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2012-01-22 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1170,8 +1170,7 @@ y 7
 end
 arch magic_mouth
 msg
-Speak The Name Of The Lord Of the Land
-Below and You May Enter
+Speak The Name Of The Lord Of the Land Below and You May Enter.
 endmsg
 x 7
 y 8
@@ -2420,8 +2419,7 @@ y 34
 end
 arch sign
 msg
-Standing in the center of the gatehouse,
-speak the Underlord's name in reverse.
+Standing in the center of the gatehouse, speak the Underlord's name in reverse.
 endmsg
 x 11
 y 34
@@ -3194,16 +3192,13 @@ Morgan Queen of the Underlings.
 @match underlings
 Those who tend the Underworld.
 @match underworld
-The Underworld is where you are now.  This
-is a minor garden in the Underworld.
+The Underworld is where you are now.  This is a minor garden in the Underworld.
 @match garden
-There are many rooms in the
-underworld, in order to enter you must
-first pass the gates.
+There are many rooms in the underworld, in order to enter you must first pass the gates.
 @match gates
-Ask kelly for help, he knows something
+Ask kelly for help, he knows something.
 @match hello
-Hello, child
+Hello, child.
 endmsg
 hp 100
 x 14
@@ -6264,7 +6259,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 32
 y 24
@@ -6539,7 +6534,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 33
 y 28
@@ -7210,7 +7205,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 36
 y 34
@@ -7223,7 +7218,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 36
 y 35
@@ -7398,7 +7393,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 37
 y 22
@@ -7415,7 +7410,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 37
 y 24
@@ -7432,7 +7427,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 37
 y 26
@@ -7449,7 +7444,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 37
 y 28
@@ -7462,7 +7457,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 37
 y 29
@@ -7475,7 +7470,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 37
 y 30
@@ -7626,7 +7621,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 38
 y 23
@@ -7643,7 +7638,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 38
 y 25
@@ -7660,7 +7655,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 38
 y 27
@@ -7918,7 +7913,7 @@ arch northman
 name Thor
 msg
 @match *
-Hey you, go get me some more mead
+Hey you, go get me some more mead!
 endmsg
 hp 150
 x 40
@@ -8075,7 +8070,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 40
 y 22
@@ -8092,7 +8087,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 40
 y 24
@@ -8109,7 +8104,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 40
 y 26
@@ -8126,7 +8121,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 40
 y 28
@@ -8139,7 +8134,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 40
 y 29
@@ -8152,7 +8147,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 40
 y 30
@@ -8173,7 +8168,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 40
 y 33
@@ -8229,7 +8224,7 @@ arch northman
 name Odin, The All-Father
 msg
 @match *
-Come back later, after the feasting
+Come back later, after the feasting.
 endmsg
 hp 500
 x 41
@@ -8374,7 +8369,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 41
 y 23
@@ -8391,7 +8386,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 41
 y 25
@@ -8408,7 +8403,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 41
 y 27
@@ -8441,7 +8436,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 41
 y 33
@@ -8505,7 +8500,7 @@ arch northman
 name Frey
 msg
 @match *
-After the Feast we wil go out to do battl
+After the Feast we wil go out to do battle.
 endmsg
 hp 150
 x 42
@@ -9070,7 +9065,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 44
 y 34
@@ -9277,7 +9272,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 45
 y 29
@@ -9352,8 +9347,7 @@ end
 arch northman
 msg
 @match *
-Feasting and eternal war, could anything be
-more glorious
+Feasting and eternal war, could anything be more glorious?
 endmsg
 x 46
 y 2
@@ -9522,7 +9516,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 46
 y 31
@@ -9535,7 +9529,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 46
 y 32
@@ -9758,7 +9752,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 47
 y 25
@@ -9775,7 +9769,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 47
 y 27
@@ -9962,7 +9956,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 48
 y 26
@@ -10217,7 +10211,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 49
 y 27
@@ -10230,7 +10224,7 @@ end
 arch northman
 msg
 @match *
-If we die in battle Odin will bring us back later
+If we die in battle Odin will bring us back later.
 endmsg
 x 49
 y 28
