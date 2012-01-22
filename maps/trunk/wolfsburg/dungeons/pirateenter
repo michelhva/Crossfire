@@ -8,7 +8,7 @@ enter_x 12
 enter_y 2
 msg
 Created:  1993-10-19
-Modified: 2008-10-02 Rick Tanner
+Modified: 2012-01-22 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -739,10 +739,7 @@ end
 arch book_read
 name Scurvy Dog's Of the Sea
 msg
-This is the story of Bucaneer Bodingo,
-Lord of the Isle of Dread, Scourge of the
-Seven Seas, and the single most blood-thirsty
-pirate in history.
+This is the story of Bucaneer Bodingo, Lord of the Isle of Dread, Scourge of the Seven Seas, and the single most blood-thirsty pirate in history.
 endmsg
 x 5
 y 15
@@ -1241,7 +1238,7 @@ end
 arch sign_w
 name A sign on the wall
 msg
-Treasure
+Treasure.
 endmsg
 x 9
 y 6
