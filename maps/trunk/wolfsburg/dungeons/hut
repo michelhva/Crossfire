@@ -7,7 +7,7 @@ height 16
 enter_x 2
 enter_y 3
 msg
-Modified: 2008-12-01 Rick Tanner
+Modified: 2012-01-22 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -488,17 +488,17 @@ end
 arch sage
 msg
 @match name
-I am Undling
+I am Undling.
 @match job
-I am a scholar
+I am a scholar.
 @match scholar
-I study the Underworld
+I study the underworld.
 @match underworld
-Pwill is the master of the underworld
+Pwill is the master of the underworld.
 @match hello|hi
 Hello sonny!
 @match *
-I enjoy reading
+I enjoy reading.
 endmsg
 x 5
 y 6
