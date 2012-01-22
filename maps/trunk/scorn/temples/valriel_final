@@ -8,7 +8,7 @@ enter_x 29
 enter_y 50
 msg
 Created:  2006-06-11 Gene Alexander (poof@eracc.com)
-Modified: 2012-01-18 Rick Tanner
+Modified: 2012-01-22 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -9486,6 +9486,16 @@ sp 45
 x 29
 y 29
 glow_radius 5
+arch event_apply
+name scorn-valriel-church
+title Python
+slaying /python/misc/hall_of_fame.py
+msg
+Congratulations, you've reached the top of Valriel's church!
+
+Here are rewards that should make your trip worth it.
+endmsg
+end
 end
 arch marble
 x 29
