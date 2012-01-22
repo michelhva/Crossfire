@@ -166,7 +166,7 @@ public class ItemsManager {
     public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
         stats.setActiveSkill("");
         skillSet.clearNumberedSkills();
-        itemSet.setPlayer(new CfPlayer(tag, weight, facesManager.getFace(faceNum), name));
+        itemSet.setPlayer(tag == 0 ? null : new CfPlayer(tag, weight, facesManager.getFace(faceNum), name));
         stats.setStat(Stats.C_STAT_WEIGHT, weight);
     }
 

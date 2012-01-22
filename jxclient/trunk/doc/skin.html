@@ -707,7 +707,7 @@
     <li>&lt;args&gt; arguments depending on event type.</li>
 </ul>
 
-<h4>Ordering of init/connect/login events</h4>
+<h4>Ordering of init/connect/login/logout events</h4>
 
 <p>The ordering of some events is: <code>init</code> (<code>connect</code>
     (<code>login</code> <code>logout</code>)* <code>disconnect</code>)*. This
@@ -745,6 +745,24 @@
     been established.</p>
 
 <h4>event init: one-time initialization</h4>
+
+<p>syntax:</p>
+<pre>
+    event init &lt;command-list&gt;
+</pre>
+
+<p>Executes &lt;command-list&gt; once after the skin has been loaded.</p>
+
+<h4>event login: one-time initialization each time a character has logged in</h4>
+
+<p>syntax:</p>
+<pre>
+    event login &lt;command-list&gt;
+</pre>
+
+<p>Executes &lt;command-list&gt; once after a character has logged in.</p>
+
+<h4>event logout: one-time de-initialization each time a character has logged out</h4>
 
 <p>syntax:</p>
 <pre>
