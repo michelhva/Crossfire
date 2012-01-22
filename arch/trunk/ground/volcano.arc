@@ -27,6 +27,5 @@ no_pick 1
 move_slow walk
 move_slow_penalty 15
 is_hilly 1
-speed -0.02
 move_block boat swim
 end
