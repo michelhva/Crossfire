@@ -52,7 +52,7 @@ public class DefaultCrossfireServerConnectionTest {
      * @throws InterruptedException if the test fails
      * @throws IOException if the test fails
      */
-    @Test
+    @Test(timeout = 30000)
     public void testNegotiateNumLookObjects1() throws InterruptedException, IOException {
         sem = new Semaphore(0);
         final Model model = new Model();
