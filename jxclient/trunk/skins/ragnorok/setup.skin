@@ -12,12 +12,6 @@ button dialog_close close_up close_down false command_setup_close
 #textbutton setup_unbind      false command_setup_unbind Delete key binding
 #textbutton setup_restore     false command_setup_restore Restore key bindings to defaults
 
-# Status indicators group
-label_text label_preferences  font_title BLACK Status indicators:
-checkbox checkbox_low_food    lowfood Low food warning
-checkbox checkbox_poisoned    poisoned Poisoned indicator
-checkbox checkbox_hitpoints   hitpoints Stats indicators
-
 # Sound group
 label_text label_sound        font_title BLACK Sound:
 checkbox checkbox_sound       sound_enabled Enable sound
@@ -28,20 +22,11 @@ checkbox checkbox_sound       sound_enabled Enable sound
 #checkbox checkbox_book        16 popup_book Books
 
 horizontal begin par
-  label_preferences
-  checkbox_low_food
-  checkbox_poisoned
-  checkbox_hitpoints
   label_sound
   checkbox_sound
 end
 
 vertical begin seq
-  label_preferences
-  checkbox_low_food
-  checkbox_poisoned
-  checkbox_hitpoints
-  gap 8
   label_sound
   checkbox_sound
 end
