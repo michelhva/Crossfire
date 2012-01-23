@@ -191,18 +191,3 @@ key code BEGIN 1 stay f
 key code NUMPAD5 1 stay f
 key code BEGIN 0 stay
 key code NUMPAD5 0 stay
-
-# checkbox option "lowfood"
-commandlist command_lowfood_on AND
-commandlist command_lowfood_off AND
-def checkbox_option lowfood command_lowfood_on command_lowfood_off Whether the low food indicator is visible.
-
-# checkbox option "poisoned"
-commandlist command_poisoned_on AND
-commandlist command_poisoned_off AND
-def checkbox_option poisoned command_poisoned_on command_poisoned_off Whether the poisoned indicator is visible.
-
-# checkbox option "hitpoints"
-commandlist command_hitpoints_on AND
-commandlist command_hitpoints_off AND
-def checkbox_option hitpoints command_hitpoints_on command_hitpoints_off Whether the hp indicator is visible.

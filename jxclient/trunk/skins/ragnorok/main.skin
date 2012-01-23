@@ -49,24 +49,30 @@ gauge grbar grbar_full null hpbar_empty GRACE WE null
 gauge hpbar_golem hpbar_golem_full null hpbar_golem_empty GOLEM_HP WE null
 set_invisible hpbar_golem
 
-commandlist_add command_hitpoints_on hpbar_back SHOW
-commandlist_add command_hitpoints_on hpbar SHOW
-commandlist_add command_hitpoints_on spbar_back SHOW
-commandlist_add command_hitpoints_on spbar SHOW
-commandlist_add command_hitpoints_on grbar_back SHOW
-commandlist_add command_hitpoints_on grbar SHOW
-commandlist_add command_hitpoints_on hpbar_golem SHOW
-commandlist_add command_hitpoints_off hpbar_back HIDE
-commandlist_add command_hitpoints_off hpbar HIDE
-commandlist_add command_hitpoints_off spbar_back HIDE
-commandlist_add command_hitpoints_off spbar HIDE
-commandlist_add command_hitpoints_off grbar_back HIDE
-commandlist_add command_hitpoints_off grbar HIDE
-commandlist_add command_hitpoints_off hpbar_golem HIDE
-commandlist_add command_lowfood_on lowfood SHOW
-commandlist_add command_lowfood_off lowfood HIDE
-commandlist_add command_poisoned_on poisoned SHOW
-commandlist_add command_poisoned_off poisoned HIDE
+commandlist command_headup_on AND
+commandlist command_headup_off AND
+commandlist_add command_headup_on hpbar_back SHOW
+commandlist_add command_headup_on hpbar SHOW
+commandlist_add command_headup_on spbar_back SHOW
+commandlist_add command_headup_on spbar SHOW
+commandlist_add command_headup_on grbar_back SHOW
+commandlist_add command_headup_on grbar SHOW
+commandlist_add command_headup_on hpbar_golem SHOW
+commandlist_add command_headup_on lowfood SHOW
+commandlist_add command_headup_on poisoned SHOW
+commandlist_add command_headup_off hpbar_back HIDE
+commandlist_add command_headup_off hpbar HIDE
+commandlist_add command_headup_off spbar_back HIDE
+commandlist_add command_headup_off spbar HIDE
+commandlist_add command_headup_off grbar_back HIDE
+commandlist_add command_headup_off grbar HIDE
+commandlist_add command_headup_off hpbar_golem HIDE
+commandlist_add command_headup_off lowfood HIDE
+commandlist_add command_headup_off poisoned HIDE
+
+event connect command_headup_off
+event login command_headup_on
+event logout command_headup_off
 
 ignore hpbar_back
 ignore hpbar
