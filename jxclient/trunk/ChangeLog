@@ -1,3 +1,8 @@
+2012-01-23  Andreas Kirschbaum
+
+	* Execute "connect" skin events right after connection, not after
+	character selection.
+
 2012-01-22  Andreas Kirschbaum
 
 	* Add "login" and "logout" skin events.
