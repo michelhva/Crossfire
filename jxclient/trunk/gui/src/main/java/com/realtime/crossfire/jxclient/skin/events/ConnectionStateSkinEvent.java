@@ -68,7 +68,7 @@ public class ConnectionStateSkinEvent implements SkinEvent {
 
         @Override
         public void connecting(@NotNull final String serverInfo) {
-            // ignore
+            commandList.execute();
         }
 
         @Override
@@ -78,7 +78,7 @@ public class ConnectionStateSkinEvent implements SkinEvent {
 
         @Override
         public void connected() {
-            commandList.execute();
+            // ignore
         }
 
         @Override
