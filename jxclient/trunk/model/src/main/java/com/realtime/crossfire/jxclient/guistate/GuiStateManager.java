@@ -55,7 +55,7 @@ public class GuiStateManager {
      * Sets a new {@link GuiState}.
      * @param guiState the new gui state
      */
-    public void changeGUI(final GuiState guiState) {
+    public void changeGUI(@NotNull final GuiState guiState) {
         synchronized (sync) {
             if (this.guiState == guiState) {
                 return;
