@@ -12,7 +12,7 @@ enter_x 17
 enter_y 22
 msg
 Created:  2007-04-08 Gene Alexander
-Modified: 2011-11-15 Rick Tanner
+Modified: 2012-01-23 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2377,9 +2377,7 @@ Information on using our teleporters
 ------------------------------
 1. Supply the proper payment.
 2. Step forward *quickly*.
-3. Apply the teleporter or wait a
-moment for the teleporter to
-activate.
+3. Apply the teleporter or wait a moment for the teleporter to activate.
 endmsg
 x 12
 y 8
@@ -4005,7 +4003,7 @@ msg
 @match pirate
 I knows nothin' 'bout no pirates! Nothin' I says!
 @match *
-Welcome traveler. Teleports 're in th' rear. Travelin' spells and such as that 're in th' shop.
+Welcome traveler.  Teleports 're in th' rear.  Travelin' spells and such as that 're in th' shop.
 endmsg
 x 20
 y 18
