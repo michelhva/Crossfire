@@ -7,7 +7,7 @@ height 37
 enter_x 1
 enter_y 1
 msg
-Modified: 2008-10-25 Rick Tanner
+Modified: 2012-01-23 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -7162,7 +7162,7 @@ Hello,  You should talk to Arborius.
 @match arborius
 He is the ent king.
 @match *
-I'm on guard go away
+I'm on guard, go away.
 endmsg
 x 31
 y 28
@@ -7203,7 +7203,7 @@ Hello,  You should talk to Arborius.
 @match arborius
 He is the ent king.
 @match *
-I'm on guard go away
+I'm on guard, go away.
 endmsg
 x 31
 y 35
@@ -8030,7 +8030,7 @@ Hello,  You should talk to Arborius.
 @match arborius
 He is the ent king.
 @match *
-I'm on guard go away
+I'm on guard, go away.
 endmsg
 x 35
 y 28
@@ -8071,7 +8071,7 @@ Hello,  You should talk to Arborius.
 @match arborius
 He is the ent king.
 @match *
-I'm on guard go away
+I'm on guard, go away.
 endmsg
 x 35
 y 35
@@ -8902,7 +8902,7 @@ Hello,  You should talk to Arborius.
 @match arborius
 He is the ent king.
 @match *
-I'm on guard go away
+I'm on guard, go away.
 endmsg
 x 39
 y 28
@@ -8943,7 +8943,7 @@ Hello,  You should talk to Arborius.
 @match arborius
 He is the ent king.
 @match *
-I'm on guard go away
+I'm on guard, go away.
 endmsg
 x 39
 y 35
@@ -9675,10 +9675,7 @@ msg
    waiting for an opening.
 What is it?
 @match key
-You have guessed correctly.
-The first object you seek is in the
-Volcano.  The first word you seek is
-TIMELESSNESS
+You have guessed correctly.  The first object you seek is in the Volcano.  The first word you seek is TIMELESSNESS.
 @match name
 I am the Sphinx
 @match *
@@ -9779,7 +9776,7 @@ Hello,  You should talk to Arborius.
 @match arborius
 He is the ent king.
 @match *
-I'm on guard go away
+I'm on guard, go away.
 endmsg
 x 43
 y 28
@@ -9799,19 +9796,15 @@ end
 arch ent
 msg
 @match hi|hello
-Hello, Sapling
+Hello, Sapling.
 @match name
-I am Arborius the King of the Ents
+I am Arborius the King of the Ents.
 @match king|ents
-I rule the Ents, the living trees.
-We live in a forrest which is on a
-distant island.
+I rule the Ents, the living trees.  We live in a forrest which is on a distant island.
 @match island
-There is a longboat in Wolfsburg that
-goes there regularly.
+There is a longboat in Wolfsburg that goes there regularly.
 @match autumn
-The second object is in my forest
-kingdom.  The second word is TWILIGHT
+The second object is in my forest kingdom.  The second word is TWILIGHT.
 @match *
 Be careful of my roots, sapling.
 endmsg
@@ -9842,7 +9835,7 @@ Hello,  You should talk to Arborius.
 @match arborius
 He is the ent king.
 @match *
-I'm on guard go away
+I'm on guard, go away.
 endmsg
 x 43
 y 35
