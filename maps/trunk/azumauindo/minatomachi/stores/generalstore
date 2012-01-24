@@ -14,7 +14,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  2005-03-19 MikeeUSA
-Modified: 2011-10-25 Rick Tanner
+Modified: 2012-01-24 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -967,8 +967,7 @@ arch sage
 name shop keeper
 msg
 @match *
-I am contemplating what to stock my
-store with next month.
+I am contemplating what to stock my store with next month.
 endmsg
 x 5
 y 14
