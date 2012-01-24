@@ -7,7 +7,7 @@ height 25
 enter_x 16
 enter_y 1
 msg
-Modified: 2008-10-04 Rick Tanner
+Modified: 2012-01-24 Rick Tanner
 endmsg
 end
 arch grass
@@ -4815,15 +4815,13 @@ end
 arch prisoner
 msg
 @match job
-I am a prisoner.   Release me.
+I am a prisoner.  Release me.
 @match release
 Death is the only release.  Save Me!!!
 @match prisoner
-I am going to be eaten by the goblins!  Save
-me!
+I am going to be eaten by the goblins!  Save me!
 @match save
-I won't survive much longer!  End my
-suffering!
+I won't survive much longer!  End my suffering!
 endmsg
 x 32
 y 5
