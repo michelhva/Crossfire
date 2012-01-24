@@ -9,7 +9,7 @@ enter_y 7
 msg
 Created:  2008-01-12 lauwenmark
 Based on an original map of Tero Haatanen.
-Modified: 2011-10-10 Rick Tanner
+Modified: 2012-01-24 Rick Tanner
 endmsg
 maplore
 This map is part of the Quest of the Two Heimser Brothers.
@@ -332,18 +332,13 @@ end
 arch c_sage
 msg
 @match clock
-A pretty nice clock, he ? It is really a rare antiquity. It was built in Euthville, during the golden age of that city. Can you imagine ? That clock is hundreds of years old !
-We found it in the ruins of the city long ago, and my brother fixed it. My brother was a genius...
-*sigh*
+A pretty nice clock, he? It is really a rare antiquity.  It was built in Euthville, during the golden age of that city.  Can you imagine? That clock is hundreds of years old!  We found it in the ruins of the city long ago, and my brother fixed it.  My brother was a genius... *sigh*
 @match Euthville
-It was an city located at the north of Scorn, where people could build wonderful machines one can only dream of nowadays. But their thirst for power killed them; today, only ruins remain from Euthville.
+It was an city located at the north of Scorn, where people could build wonderful machines one can only dream of nowadays.  But their thirst for power killed them; today, only ruins remain from Euthville.
 @match brother
-My brother Keiran and I always were pretty close. When the armies of Kurthan the Bloody took Wolfsburg, I managed to escape, but my brother didn't, and was put into slavery.
-I really don't know if he's still alive or not. That clock is the only souvenir I have from the happy times of our youth...
-*sigh*
+My brother Keiran and I always were pretty close. When the armies of Kurthan the Bloody took Wolfsburg, I managed to escape, but my brother didn't, and was put into slavery.  I really don't know if he's still alive or not.  That clock is the only souvenir I have from the happy times of our youth... *sigh*
 @match *
-I'm Heinkel Heimser. What do you want from an old man like me ?
-*sigh*
+I'm Heinkel Heimser.  What do you want from an old man like me? *sigh*
 endmsg
 x 5
 y 4
