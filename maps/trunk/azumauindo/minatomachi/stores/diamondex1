@@ -9,7 +9,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-10-25 Rick Tanner
+Modified: 2012-01-24 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -593,8 +593,7 @@ name FWB 2000 Diamond Note
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
-Redeemable for 2000 diamonds at any
-First World Bank diamond exchange
+Redeemable for 2000 diamonds at any First World Bank diamond exchange
 endmsg
 face card.111
 x 2
@@ -663,8 +662,7 @@ name FWB 2000 Diamond Note
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
-Redeemable for 2000 diamonds at any
-First World Bank diamond exchange
+Redeemable for 2000 diamonds at any First World Bank diamond exchange
 endmsg
 face card.111
 x 2
@@ -733,8 +731,7 @@ name FWB 2000 Diamond Note
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
-Redeemable for 2000 diamonds at any
-First World Bank diamond exchange
+Redeemable for 2000 diamonds at any First World Bank diamond exchange
 endmsg
 face card.111
 x 2
@@ -1258,8 +1255,7 @@ name FWB 2000 Diamond Note
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
-Redeemable for 2000 diamonds at any
-First World Bank diamond exchange
+Redeemable for 2000 diamonds at any First World Bank diamond exchange
 endmsg
 face card.111
 x 4
@@ -1328,8 +1324,7 @@ name FWB 2000 Diamond Note
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
-Redeemable for 2000 diamonds at any
-First World Bank diamond exchange
+Redeemable for 2000 diamonds at any First World Bank diamond exchange
 endmsg
 face card.111
 x 4
@@ -1398,8 +1393,7 @@ name FWB 2000 Diamond Note
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
-Redeemable for 2000 diamonds at any
-First World Bank diamond exchange
+Redeemable for 2000 diamonds at any First World Bank diamond exchange
 endmsg
 face card.111
 x 4
@@ -1895,8 +1889,7 @@ name FWB 2000 Diamond Note
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
-Redeemable for 2000 diamonds at any
-First World Bank diamond exchange
+Redeemable for 2000 diamonds at any First World Bank diamond exchange
 endmsg
 face card.111
 x 6
@@ -1965,8 +1958,7 @@ name FWB 2000 Diamond Note
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
-Redeemable for 2000 diamonds at any
-First World Bank diamond exchange
+Redeemable for 2000 diamonds at any First World Bank diamond exchange
 endmsg
 face card.111
 x 6
@@ -2035,8 +2027,7 @@ name FWB 2000 Diamond Note
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
-Redeemable for 2000 diamonds at any
-First World Bank diamond exchange
+Redeemable for 2000 diamonds at any First World Bank diamond exchange
 endmsg
 face card.111
 x 6
@@ -2910,8 +2901,7 @@ arch guildmaster
 name Diamond Broker
 msg
 @match *
-You can buy First World Bank 2000
-Diamond Notes or Redeem your notes
+You can buy First World Bank 2000 Diamond Notes or Redeem your notes.
 here.
 endmsg
 x 9
@@ -3015,13 +3005,7 @@ end
 arch sign
 name First World Bank Diamond Exchange
 msg
-Welcome the Minatomachi branch of the
-First World Bank Diamond Exchange.
-Here First World Bank 2000 Diamond
-Notes can be redeemed or purchased.
-Also accounts are accessable through
-our Bank of Skud affiliate accountant.
-
+Welcome the Minatomachi branch of the First World Bank Diamond Exchange.  Here First World Bank 2000 Diamond Notes can be redeemed or purchased.  Also accounts are accessable through our Bank of Skud affiliate accountant.
 endmsg
 x 9
 y 14
@@ -3442,10 +3426,7 @@ arch sign_w
 name Partnership Accounts
 msg
 Partnership Accounts
-The First World Bank has partnered
-with the Bank of Skud to bring you
-fast transaction account access
-anywhere in the world.
+The First World Bank has partnered with the Bank of Skud to bring you fast transaction account access anywhere in the world.
 endmsg
 x 11
 y 7
@@ -3627,8 +3608,7 @@ end
 arch locked_door1
 slaying fwb_2000_dia_note_1
 msg
-You need a First World Bank 2000
-Diamond Note to open this door.
+You need a First World Bank 2000 Diamond Note to open this door.
 endmsg
 face ldoor_white1.111
 x 12
@@ -3873,8 +3853,7 @@ end
 arch locked_door2
 slaying fwb_2000_dia_note_1
 msg
-You need a First World Bank 2000
-Diamond Note to open this door.
+You need a First World Bank 2000 Diamond Note to open this door.
 endmsg
 face ldoor_white2.111
 x 13
@@ -3911,8 +3890,7 @@ end
 arch locked_door2
 slaying fwb_2000_dia_note_1
 msg
-You need a First World Bank 2000
-Diamond Note to open this door.
+You need a First World Bank 2000 Diamond Note to open this door.
 endmsg
 face ldoor_white2.111
 x 13
@@ -3949,8 +3927,7 @@ end
 arch locked_door2
 slaying fwb_2000_dia_note_1
 msg
-You need a First World Bank 2000
-Diamond Note to open this door.
+You need a First World Bank 2000 Diamond Note to open this door.
 endmsg
 face ldoor_white2.111
 x 13
@@ -3987,8 +3964,7 @@ end
 arch locked_door2
 slaying fwb_2000_dia_note_1
 msg
-You need a First World Bank 2000
-Diamond Note to open this door.
+You need a First World Bank 2000 Diamond Note to open this door.
 endmsg
 face ldoor_white2.111
 x 13
@@ -4025,8 +4001,7 @@ end
 arch locked_door2
 slaying fwb_2000_dia_note_1
 msg
-You need a First World Bank 2000
-Diamond Note to open this door.
+You need a First World Bank 2000 Diamond Note to open this door.
 endmsg
 face ldoor_white2.111
 x 13
@@ -4063,8 +4038,7 @@ end
 arch locked_door2
 slaying fwb_2000_dia_note_1
 msg
-You need a First World Bank 2000
-Diamond Note to open this door.
+You need a First World Bank 2000 Diamond Note to open this door.
 endmsg
 face ldoor_white2.111
 x 13
@@ -4101,8 +4075,7 @@ end
 arch locked_door2
 slaying fwb_2000_dia_note_1
 msg
-You need a First World Bank 2000
-Diamond Note to open this door.
+You need a First World Bank 2000 Diamond Note to open this door.
 endmsg
 face ldoor_white2.111
 x 13
