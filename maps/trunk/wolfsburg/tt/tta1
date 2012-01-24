@@ -7,7 +7,7 @@ height 38
 enter_x 1
 enter_y 18
 msg
-Modified: 2010-07-24 Nicolas Weeger
+Modified: 2012-01-23 Rick Tanner
 endmsg
 end
 arch grass
@@ -920,9 +920,7 @@ arch knight
 name wounded knight
 msg
 @match *
-escape while you can, creatures
-appeared throughout the tower, and
-they captured the princess...
+Escape while you can, creatures appeared throughout the tower, and they captured the princess...
 endmsg
 hp 50
 exp 100
@@ -1120,9 +1118,7 @@ arch knight
 name wounded knight
 msg
 @match *
-escape while you can, creatures
-appeared throughout the tower, and
-they captured the princess...
+Escape while you can, creatures appeared throughout the tower, and they captured the princess...
 endmsg
 hp 50
 exp 100
@@ -1343,9 +1339,7 @@ arch knight
 name wounded knight
 msg
 @match *
-escape while you can, creatures
-appeared throughout the tower, and
-they captured the princess...
+Escape while you can, creatures appeared throughout the tower, and they captured the princess...
 endmsg
 hp 50
 exp 100
@@ -1380,9 +1374,7 @@ arch knight
 name wounded knight
 msg
 @match *
-escape while you can, creatures
-appeared throughout the tower, and
-they captured the princess...
+Escape while you can, creatures appeared throughout the tower, and they captured the princess...
 endmsg
 hp 50
 exp 100
@@ -4286,16 +4278,13 @@ end
 arch princess
 msg
 @match hello
-Oh,  thank you for saving me from the
-monsters.
+Oh, thank you for saving me from the monsters.
 @match name
-I am the princess Corriann-Tremall
+I am the princess Corriann-Tremall.
 @match monsters
-They were acctually after the magic
-items in the top of the other tower...
+They were acctually after the magic items in the top of the other tower...
 @match items|magic
-There is a large store of magic items
-in the other tower
+There is a large store of magic items in the other tower.
 endmsg
 x 20
 y 18
