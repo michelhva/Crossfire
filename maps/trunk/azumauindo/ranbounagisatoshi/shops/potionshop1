@@ -13,7 +13,7 @@ enter_x 16
 enter_y 26
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-10-26 Rick Tanner
+Modified: 2012-01-24 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -5850,8 +5850,7 @@ arch sage
 name shop keeper
 msg
 @match *
-If you would like to buy something do
-so.
+If you would like to buy something do so.
 endmsg
 x 25
 y 5
