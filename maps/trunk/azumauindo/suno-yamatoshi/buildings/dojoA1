@@ -9,7 +9,7 @@ enter_x 38
 enter_y 57
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-10-26 Rick Tanner
+Modified: 2012-01-24 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -19756,9 +19756,7 @@ end
 arch stair3_ystone_do
 slaying dojoB1
 msg
-You feel a tinge of magic energy
-return... and great mortal danger.
-
+You feel a tinge of magic energy return... and great mortal danger.
 endmsg
 hp 23
 sp 55
@@ -36144,15 +36142,10 @@ msg
 Welcome to the Suno-yamatoshi Dojo.
 *You may fight as if in an arena.
 *Spells are prohibited.
-*Dojo weapons and equipment stay
-in the dojo.
-*Personal weapons and equipment
-stay out;
-*To exit the dojo place the dojo
-weapons and equipment on the
-respawn mats.
-*You may leave your weapons and
-equipment here.
+*Dojo weapons and equipment stay in the dojo.
+*Personal weapons and equipment stay out;
+*To exit the dojo place the dojo weapons and equipment on the respawn mats.
+*You may leave your weapons and equipment here.
 endmsg
 x 39
 y 57
@@ -49655,9 +49648,7 @@ end
 arch stair3_ystone_do
 slaying dojoB1
 msg
-You feel a tinge of magic energy
-return... and great mortal danger.
-
+You feel a tinge of magic energy return... and great mortal danger.
 endmsg
 hp 52
 sp 55
