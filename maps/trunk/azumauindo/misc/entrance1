@@ -9,7 +9,7 @@ enter_x 6
 enter_y 13
 msg
 Created:  2005-04-26 Mikeeusa
-Modified: 2011-10-26 Rick Tanner
+Modified: 2012-01-24 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -690,8 +690,7 @@ arch key2
 name Gaijin Pass
 slaying azumauindolvl0pass
 msg
-You are thus allowed enterance to the
-Shogunate of Azumauindo.
+You are thus allowed enterance to the Shogunate of Azumauindo.
 endmsg
 face card.111
 x 3
@@ -1182,8 +1181,7 @@ arch key2
 name Gaijin Pass
 slaying azumauindolvl0pass
 msg
-You are thus allowed enterance to the
-Shogunate of Azumauindo.
+You are thus allowed enterance to the Shogunate of Azumauindo.
 endmsg
 face card.111
 nrof 2
@@ -1198,9 +1196,7 @@ y 5
 end
 arch sign
 msg
-Retrieve for us the Kabuto of Geisya
-and you, with a friend, can enter the
-lands of the Shogunate.
+Retrieve for us the Kabuto of Geisya and you, with a friend, can enter the lands of the Shogunate.
 endmsg
 x 5
 y 5
