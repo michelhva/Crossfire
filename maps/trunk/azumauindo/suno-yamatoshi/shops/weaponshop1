@@ -14,7 +14,7 @@ enter_x 8
 enter_y 14
 msg
 Created:  2005-03-12 MikeeUSA
-Modified: 2011-10-26 Rick Tanner
+Modified: 2012-01-24 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2450,8 +2450,7 @@ arch guildmaster
 name master swordsmith
 msg
 @match *
-I have made many blades for the sons
-of the eastern wind.
+I have made many blades for the sons of the eastern wind.
 endmsg
 hp 500
 maxhp 500
