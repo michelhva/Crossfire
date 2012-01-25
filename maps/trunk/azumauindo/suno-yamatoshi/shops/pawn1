@@ -14,7 +14,7 @@ enter_x 8
 enter_y 14
 msg
 Created:  2005-03-18 MikeeUSA
-Modified: 2011-10-26 Rick Tanner
+Modified: 2012-01-24 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1388,8 +1388,7 @@ arch sage
 name shop keeper
 msg
 @match *
-The eastern wind is rich in treasures
-found amongs the lowest places.
+The eastern wind is rich in treasures found amongs the lowest places.
 endmsg
 x 8
 y 10
