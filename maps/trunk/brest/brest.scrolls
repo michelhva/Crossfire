@@ -14,7 +14,7 @@ enter_x 3
 enter_y 37
 msg
 Created:  2005-05-23 Gene Alexander
-Modified: 2008-12-07 Rick Tanner
+Modified: 2012-01-25 Rick Tanner
 endmsg
 outdoor 1
 tile_path_2 brest.scrolls.right
@@ -2748,8 +2748,7 @@ arch magic_mouth
 msg
 A mouth appears in the air and says ...
 ---
-DANGER! Floor two is protected by specially trained
-basilisks. Try not to bother them.
+DANGER! Floor two is protected by specially trained basilisks.  Try not to bother them.
 ---
 The mouth disappears.
 endmsg
@@ -2851,11 +2850,9 @@ end
 arch sign
 name Read Me
 msg
-This section of the shop is for
-high level inscription scrolls.
+This section of the shop is for high level inscription scrolls.
 -=-=-=-=-=-=-=-=-=-=-
-Warning Orville and Wilbur are
-NOT friendly.
+Warning Orville and Wilbur are NOT friendly.
 endmsg
 x 10
 y 33
@@ -3392,8 +3389,7 @@ y 31
 end
 arch sign
 msg
-Entrance to the second floor is at the other end of the
-room. Think you can make it? Luck to ya ...
+Entrance to the second floor is at the other end of the room.  Think you can make it? Luck to ya ...
 endmsg
 x 12
 y 31
@@ -3617,8 +3613,7 @@ arch magic_mouth
 msg
 A mouth appears in the air and says ...
 ---
-DANGER! Floor two is protected by specially trained
-basilisks. Try not to bother them.
+DANGER! Floor two is protected by specially trained basilisks.  Try not to bother them.
 ---
 The mouth disappears.
 endmsg
