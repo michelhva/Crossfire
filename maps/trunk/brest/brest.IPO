@@ -8,7 +8,7 @@ enter_x 7
 enter_y 10
 msg
 Created:  2001-09-05 Commander Gros (yann.chachkoff@mailandnews.com)
-Modified: 2011-10-30 Rick Tanner
+Modified: 2012-01-25 Rick Tanner
 Following a Lord MiDS idea
 endmsg
 outdoor 1
@@ -856,8 +856,7 @@ end
 arch sign
 name Brest Message Board
 msg
-I am a talking board, please say something to me.
-If you don't know what to say, try help.
+I am a talking board, please say something to me.  If you don't know what to say, try help.
 endmsg
 x 9
 y 6
@@ -892,15 +891,7 @@ name Prospectus
 msg
 Imperial Post Services
 -----------------------
-Thank you for choosing the IPS to
-take care of your messages. Want to
-get more? We have a wide range of
-products and services to offer to
-anyone. Pirate? Try our
-TalkParrots(tm)! Beholder? Enjoy
-our fabulous non-stereoscopical
-cards! And don't forget:
-The Empire Is Everywhere For You!
+Thank you for choosing the IPS to take care of your messages. Want to get more? We have a wide range of products and services to offer to anyone. Pirate? Try our TalkParrots(tm)! Beholder? Enjoy our fabulous non-stereoscopical cards! And don't forget: The Empire Is Everywhere For You!
 endmsg
 x 9
 y 9
@@ -998,8 +989,7 @@ y 6
 end
 arch clock
 msg
-No matter when you look at it, it is
-always too slow
+No matter when you look at it, it is always too slow.
 endmsg
 x 10
 y 6
