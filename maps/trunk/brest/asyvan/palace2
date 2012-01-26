@@ -8,7 +8,7 @@ enter_x 8
 enter_y 8
 msg
 Created:  1994-09-20
-Modified: 2008-12-07 Rick Tanner
+Modified: 2012-01-25 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1275,10 +1275,7 @@ y 1
 end
 arch note
 msg
-Congatulations! The biggest reward is
-not the treasure that you have gotten,
-it is the work you have done to get
-here..
+Congatulations! The biggest reward is not the treasure that you have gotten, it is the work you have done to get here..
 endmsg
 x 7
 y 1
@@ -1567,9 +1564,7 @@ end
 arch locked_door1
 slaying treasure
 msg
-Go through all nine gates of hell and
-you will have the special key that
-opens this door.
+Go through all nine gates of hell and you will have the special key that opens this door.
 endmsg
 x 8
 y 14
