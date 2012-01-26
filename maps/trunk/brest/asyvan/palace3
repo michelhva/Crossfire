@@ -8,7 +8,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  1994-09-20
-Modified: 2008-12-07 Rick Tanner
+Modified: 2012-01-25 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -662,9 +662,7 @@ end
 arch locked_door1
 slaying gate-9
 msg
-This is gate 9, the final assault.
-You need a special key and a good
-portion of courage to open this door.
+This is gate 9, the final assault.  You need a special key and a good portion of courage to open this door.
 endmsg
 x 6
 y 5
