@@ -8,7 +8,7 @@ enter_x 14
 enter_y 23
 msg
 Created:  1994-09-24 Gene Alexander
-Modified: 2011-10-28 Rick Tanner
+Modified: 2012-01-25 Rick Tanner
 endmsg
 end
 arch brush
@@ -1181,7 +1181,7 @@ arch altar
 name pay 4 gold coins
 slaying money
 msg
-Enjoy your stay
+Enjoy your stay.
 endmsg
 food 40
 x 6
@@ -1192,8 +1192,7 @@ end
 arch magic_mouth
 msg
 You see on the door:
-This room costs 4 gold coins.
-Please drop coins to enter.
+This room costs 4 gold coins.  Please drop coins to enter.
 endmsg
 x 6
 y 16
@@ -1374,7 +1373,7 @@ arch altar
 name pay 4 gold coins
 slaying money
 msg
-Enjoy your stay
+Enjoy your stay.
 endmsg
 food 40
 x 7
@@ -1385,8 +1384,7 @@ end
 arch magic_mouth
 msg
 You see on the door:
-This room costs 4 gold coins.
-Please drop coins to enter.
+This room costs 4 gold coins.  Please drop coins to enter.
 endmsg
 x 7
 y 13
@@ -1515,7 +1513,7 @@ arch altar
 name pay 4 gold coins
 slaying money
 msg
-Enjoy your stay
+Enjoy your stay.
 endmsg
 food 40
 x 8
@@ -1526,8 +1524,7 @@ end
 arch magic_mouth
 msg
 You see on the door:
-This room costs 4 gold coins.
-Please drop coins to enter.
+This room costs 4 gold coins.  Please drop coins to enter.
 endmsg
 x 8
 y 6
@@ -1552,7 +1549,7 @@ arch altar
 name pay 5 gold coins
 slaying money
 msg
-Enjoy your stay
+Enjoy your stay.
 endmsg
 food 50
 x 8
@@ -1563,8 +1560,7 @@ end
 arch magic_mouth
 msg
 You see on the door:
-This room costs 5 gold coins.
-Please drop coins to enter.
+This room costs 5 gold coins.  Please drop coins to enter.
 endmsg
 x 8
 y 10
@@ -1808,8 +1804,7 @@ end
 arch magic_mouth
 msg
 You see on the door:
-This room costs 5 gold coins.
-Please drop coins to enter.
+This room costs 5 gold coins.  Please drop coins to enter.
 endmsg
 x 9
 y 16
@@ -2301,7 +2296,7 @@ arch altar
 name pay 7 gold coins
 slaying money
 msg
-Enjoy your stay
+Enjoy your stay!
 endmsg
 food 70
 x 12
@@ -2312,8 +2307,7 @@ end
 arch magic_mouth
 msg
 You see on the door:
-This room costs 7 gold coins.
-Please drop coins to enter.
+This room costs 7 gold coins.  Please drop coins to enter.
 endmsg
 x 12
 y 7
@@ -2560,9 +2554,7 @@ end
 arch sign_w
 msg
 To the bedrooms...
-Don't forget to pay your room
-before entering. It's about 5 gold
-coins per night.
+Don't forget to pay your room before entering.  It's about 5 gold coins per night.
 endmsg
 x 13
 y 18
@@ -3462,7 +3454,7 @@ arch altar
 name pay 10 gold coins
 slaying money
 msg
-Enjoy your stay
+Enjoy your stay!
 endmsg
 food 100
 x 18
@@ -3473,8 +3465,7 @@ end
 arch magic_mouth
 msg
 You see on the door:
-This room costs 10 gold coins.
-Please drop coins to enter.
+This room costs 10 gold coins.  Please drop coins to enter.
 endmsg
 x 18
 y 7
@@ -3510,8 +3501,7 @@ end
 arch fighter
 msg
 @match yes|no|palace
-There are nine gates in the palace. They are often referred to as the "Nine Gates of Hell".
-I managed to enter the first two of them, yet the monsters behind the third gate are too hard for me. *sigh*
+There are nine gates in the palace.  They are often referred to as the "Nine Gates of Hell".  I managed to enter the first two of them, yet the monsters behind the third gate are too hard for me. *sigh*
 @match *
 @reply no No, I didn't.
 @reply yes Yes... what about it?
@@ -3722,8 +3712,7 @@ end
 arch magic_mouth
 msg
 You see on the door:
-This dining room costs 3 gold to reserve.
-Please drop coins for your reservation.
+This dining room costs 3 gold to reserve.  Please drop coins for your reservation.
 endmsg
 x 19
 y 19
@@ -3824,8 +3813,7 @@ end
 arch magic_mouth
 msg
 You see on the door:
-This dining room costs 1 gold to reserve.
-Please drop coin for your reservation.
+This dining room costs 1 gold to reserve.  Please drop coin for your reservation.
 endmsg
 x 20
 y 7
@@ -4497,14 +4485,14 @@ arch sage
 msg
 @match irritable|zorn
 @question secretive How are they secretive?
-Ah, yes. I do not know much about the Zorn family. They are quite a secretive bunch.
+Ah, yes.  I do not know much about the Zorn family.  They are quite a secretive bunch.
 @match secretive
 @question dangerous So they are dangerous too?
-Yes, secretive and dangerous. I do not want to be the subject of the Zorn family wrath.
+Yes, secretive and dangerous.  I do not want to be the subject of the Zorn family wrath.
 @match dangerous
-I mean dangerous as in those that bother or upset the Zorns end up dead. Haemon, the owner of the Brest Seaside Tavern, used to work for the Zorns. Go ask him your questions.
+I mean dangerous as in those that bother or upset the Zorns end up dead.  Haemon, the owner of the Brest Seaside Tavern, used to work for the Zorns.  Go ask him your questions.
 @match *
-You must be strong to survive in the dungeons of Brest. Look at me, I have grown too old.
+You must be strong to survive in the dungeons of Brest.  Look at me, I have grown too old.
 endmsg
 x 24
 y 7
@@ -4743,15 +4731,15 @@ name TCI Representative
 msg
 @match tci
 @question location Where are these locations?
-Training Centers Incorporated is the best dang training you'll ever get. We have locations all over the world in exotic settings. Come fight with us! (heh, they tell us we have to say all that)
+Training Centers Incorporated is the best dang training you'll ever get.  We have locations all over the world in exotic settings.  Come fight with us! (heh, they tell us we have to say all that)
 @match location
-Well, I don't know about all of them. But our local TCI is off the road south of here just the other side of the mountain pass. The road may be easier to reach from the Lake Country side. Just look for one of our signs!
+Well, I don't know about all of them.  But our local TCI is off the road south of here just the other side of the mountain pass.  The road may be easier to reach from the Lake Country side.  Just look for one of our signs!
 @match hello|hi
 @question tci What is TCI?
-Well, hello there! Sit down and chat with me a bit. I am always looking for new people to tell about TCI.
+Well, hello there! Sit down and chat with me a bit.  I am always looking for new people to tell about TCI.
 @match *
 @question tci What is TCI?
-Hi there young'un. Wanna join TCI?
+Hi there young'un.  Wanna join TCI?
 endmsg
 x 25
 y 14
