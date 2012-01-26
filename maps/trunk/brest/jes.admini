@@ -8,7 +8,7 @@ enter_x 21
 enter_y 2
 msg
 Created:  1994-05-31
-Modified: 2008-12-01 Rick Tanner
+Modified: 2012-01-25 Rick Tanner
 endmsg
 end
 arch grass
@@ -4052,8 +4052,7 @@ y 17
 end
 arch magic_mouth
 msg
-You are not allowed in this office.
-Please take an appointment with the Secretary.
+You are not allowed in this office.  Please take an appointment with the Secretary.
 endmsg
 x 24
 y 18
@@ -4870,9 +4869,7 @@ y 17
 end
 arch magic_mouth
 msg
-Mr Bacal is very busy.
-You can't meet him now.
-Please come later.
+Mr. Bacal is very busy.  You can't meet him now.  Please come later.
 endmsg
 x 29
 y 18
