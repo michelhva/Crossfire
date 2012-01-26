@@ -13,7 +13,7 @@ height 40
 enter_y 37
 msg
 Created:  2005-05-23 Gene Alexander
-Modified: 2009-02-06 Arvid Norlander
+Modified: 2012-01-25 Rick Tanner
 endmsg
 outdoor 1
 tile_path_4 brest.scrolls
@@ -2233,8 +2233,7 @@ y 34
 end
 arch magic_mouth
 msg
-No magic or prayers will work between these walls.
-You have been warned.
+No magic or prayers will work between these walls.  You have been warned.
 endmsg
 food 1
 x 8
@@ -2250,8 +2249,7 @@ y 35
 end
 arch magic_mouth
 msg
-No magic or prayers will work between these walls.
-You have been warned.
+No magic or prayers will work between these walls.  You have been warned.
 endmsg
 food 1
 x 8
@@ -2267,8 +2265,7 @@ y 36
 end
 arch magic_mouth
 msg
-No magic or prayers will work between these walls.
-You have been warned.
+No magic or prayers will work between these walls.  You have been warned.
 endmsg
 food 1
 x 8
@@ -2284,8 +2281,7 @@ y 37
 end
 arch magic_mouth
 msg
-No magic or prayers will work between these walls.
-You have been warned.
+No magic or prayers will work between these walls.  You have been warned.
 endmsg
 food 1
 x 8
@@ -2301,8 +2297,7 @@ y 38
 end
 arch magic_mouth
 msg
-No magic or prayers will work between these walls.
-You have been warned.
+No magic or prayers will work between these walls.  You have been warned.
 endmsg
 food 1
 x 8
@@ -3688,8 +3683,7 @@ end
 arch sign
 name Read Me
 msg
-This section of the shop is for
-low level inscription scrolls.
+This section of the shop is for low level inscription scrolls.
 -=-=-=-=-=-=-=-=-=-=-
 Warning: Do not irritate Zorn.
 endmsg
@@ -4896,29 +4890,17 @@ name Irritable Zorn
 title Scroll Maker
 msg
 @match key
-You want my key? You'll have to kill me to get it you
-punk adventurer! Now leave me alone.
+You want my key? You'll have to kill me to get it you punk adventurer! Now leave me alone.
 @match pet
-My pet is a beautiful animal. Don't mess with it if
-you know what is good for you. But knowing you
-dumb adventurer types you will not heed my
-advice. Leave me alone.
+My pet is a beautiful animal.  Don't mess with it if you know what is good for you.  But knowing you dumb adventurer types you will not heed my advice.  Leave me alone.
 @match quest
-So, you want a quest do you? If you can enter my
-home you may just find one. But you need a key to
-enter my home. Now quit bothering me, moron.
+So, you want a quest do you? If you can enter my home you may just find one.  But you need a key to enter my home.  Now quit bothering me, moron.
 @match given name|name
-Why do you want to know my given name? I am
-content to be called by my family name. Go away.
+Why do you want to know my given name?  I am content to be called by my family name.  Go away.
 @match zacharus
-Why hello old friend! I don't recall your face but
-only my closest friends know my given name. I
-am sure you have my castle key as I give one to
-all my friends. Remember to carry my pet in with
-you to get past the invisible barrier at the front
-doors. It is good to see you!
+Why hello old friend! I don't recall your face but only my closest friends know my given name.  I am sure you have my castle key as I give one to all my friends.  Remember to carry my pet in with you to get past the invisible barrier at the front doors.  It is good to see you!
 @match *
-Don't bother me. Just do your shopping and get out.
+Don't bother me.  Just do your shopping and get out.
 endmsg
 Con 85
 Pow 15
