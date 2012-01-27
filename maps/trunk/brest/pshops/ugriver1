@@ -8,7 +8,7 @@ width 20
 height 14
 msg
 Created:  2005-10-22 majorwoo (josh@woosworld.net)
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2012-01-27 Rick Tanner
 endmsg
 end
 arch earth
@@ -190,8 +190,7 @@ x 2
 end
 arch magic_mouth
 msg
-You seem to be stuck in some sort of an underground river...
-The water is moving to fast to go back up,  I guess you'll have to find another way out.
+You seem to be stuck in some sort of an underground river... The water is moving to fast to go back up, I guess you'll have to find another way out.
 endmsg
 x 2
 y 1
@@ -1682,8 +1681,7 @@ y 5
 end
 arch magic_mouth
 msg
-The river is deep here where the two meet.
-To your east you can see a crack of daylight, maybe it's a way out?
+The river is deep here where the two meet.  To your east you can see a crack of daylight, maybe it's a way out?
 endmsg
 x 13
 y 5
@@ -2107,8 +2105,7 @@ end
 arch invis_exit
 slaying ../../world/world_107_123
 msg
-You see a ray of light poking through a small opening and wiggle yourself back to the surface, the rocks collapsing behind you.
-Maybe next time you should be more careful in the water!
+You see a ray of light poking through a small opening and wiggle yourself back to the surface, the rocks collapsing behind you.  Maybe next time you should be more careful in the water!
 endmsg
 hp 22
 sp 24
@@ -2149,8 +2146,7 @@ speed 0.0010
 end
 arch sign
 msg
-Goblin holding area.
-Send one down the river every once in awhile...
+Goblin holding area.  Send one down the river every once in awhile...
 endmsg
 x 18
 y 9
