@@ -6,7 +6,7 @@ width 36
 height 14
 msg
 Created:  2004-10-17 majorwoo (josh@woosworld.net)
-Modified: 2008-12-10 Rick Tanner
+Modified: 2012-01-27 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2187,9 +2187,7 @@ arch oakdoor_2
 slaying pshops_main
 msg
 REMEMBER:
-If you do not login to your account for
-6 months or more your shop will be
-RESOLD and all items inside LOST.
+If you do not login to your account for 6 months or more your shop will be RESOLD and all items inside LOST.
 --management
 endmsg
 hp 2
@@ -4546,8 +4544,7 @@ arch magic_mouth
 name Manager
 msg
 @match hi|hello
-Well as long as you are here, make yourself useful and take these flowers to my wife.
-Put them on her vanity so she will see them.
+Well as long as you are here, make yourself useful and take these flowers to my wife.  Put them on her vanity so she will see them.
 @match date
 *Sigh* She's starting to forget a lot of things.  Our date is at 7!
 @match contract
