@@ -15,6 +15,7 @@ textbutton account_do_login false command_account_character_play Play
 textbutton account_do_link  false command_account_character_link Link
 textbutton account_do_new   false command_account_character_new  New
 textbutton account_do_password   false command_account_character_password  Password
+textbutton account_do_disconnect false command_disconnect Disconnect
 
 label_failure account_login_error font_label BLACK
 
@@ -53,6 +54,8 @@ horizontal begin par
     account_do_new
     gap 8
     account_do_password
+    gap 8
+    account_do_disconnect
     gap
   end
 end
@@ -68,6 +71,7 @@ vertical begin seq
     account_do_link
     account_do_new
     account_do_password
+    account_do_disconnect
   end
 end
 
