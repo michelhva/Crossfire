@@ -7,7 +7,7 @@ enter_x 12
 enter_y 7
 msg
 Created:  2004-10-19 majorwoo josh@woosworld.net
-Modified: 2009-02-15 Arvid Norlander
+Modified: 2012-01-27 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -385,8 +385,7 @@ unique 1
 end
 arch sign
 msg
-The basement seems to have flooded some due to an underground river...
-We are NOT responsible for items left in the water that are washed away...
+The basement seems to have flooded some due to an underground river... We are NOT responsible for items left in the water that are washed away...
 --Management
 endmsg
 x 2
@@ -1462,8 +1461,7 @@ y 6
 end
 arch sign
 msg
-This thief was caught trying to steal from my museum.
-Let that be a lesson to you.
+This thief was caught trying to steal from my museum.  Let that be a lesson to you.
 endmsg
 x 9
 y 6
@@ -2442,8 +2440,7 @@ end
 arch sign
 name Monkey Notice
 msg
-Careful!
-If they get out, you might not ever get them back in...
+Careful! If they get out, you might not ever get them back in...
 endmsg
 x 16
 y 1
