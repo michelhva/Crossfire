@@ -8,7 +8,7 @@ enter_x 12
 enter_y 30
 msg
 Created:  2006-07-22 Bort
-Modified: 2011-10-28 Rick Tanner
+Modified: 2012-01-27 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1336,12 +1336,7 @@ no_pick 1
 arch tome
 title of Temple Naive
 msg
-Temple Naive is located North West of
-Santo Dominion. There is a dagger
-of much power, but needs the negative
-qualities removed.  The temple requires
-an offering of diamonds to communicate
-with the dead.
+Temple Naive is located North West of Santo Dominion.  There is a dagger of much power, but needs the negative qualities removed.  The temple requires an offering of diamonds to communicate with the dead.
 endmsg
 level 5
 end
@@ -1588,13 +1583,7 @@ no_pick 1
 arch tome
 title of Elven Moon
 msg
-The Elven Moon is a place located
-North East of Lake Country. It is
-said the Bow of Elven Moon is ripe
-with magic.  The entrance has a
-protective magical barrier that
-requires one to solve a riddle to
-dispell the magic.
+The Elven Moon is a place located North East of Lake Country.  It is said the Bow of Elven Moon is ripe with magic.  The entrance has a protective magical barrier that requires one to solve a riddle to dispell the magic.
 endmsg
 level 7
 end
@@ -1826,10 +1815,7 @@ no_pick 1
 arch tome
 title of Temple Justice
 msg
-Temple Justice is located West of Darcap.
-There is a mighty hammer at the top.  A
-broad sword and a high shield raise the
-gate to the tower.
+Temple Justice is located West of Darcap.  There is a mighty hammer at the top.  A broad sword and a high shield raise the gate to the tower.
 endmsg
 level 6
 end
@@ -2063,10 +2049,7 @@ no_pick 1
 arch tome
 title of Troll Canyon
 msg
-Troll Canyon is located South West of Narar, by
-the training center.
-The club of Troll Canyon is legendary, if a bit heavy.
-The trolls in that region are heartier then normal.
+Troll Canyon is located South West of Narar, by the training center.  The club of Troll Canyon is legendary, if a bit heavy.  The trolls in that region are heartier then normal.
 endmsg
 level 2
 end
@@ -2293,15 +2276,7 @@ no_pick 1
 arch tome
 title of Xoonuf the Warlock
 msg
-The immortal Xoonuf was once
-a great warlock and will be again.
-An unjust group of spell casters
-trapped Xoonuf in a body of a old
-feeble wizard.  One day it is foretold
-that the spell the will be broken.
-Xoonuf the mighty, feared,
-unmatched, ..., master warlock...
-<the text goes on like this for some time>
+The immortal Xoonuf was once a great warlock and will be again.  An unjust group of spell casters trapped Xoonuf in a body of a old feeble wizard.  One day it is foretold that the spell the will be broken.  Xoonuf the mighty, feared, unmatched, ..., master warlock... <the text goes on like this for some time>
 endmsg
 level 10
 end
@@ -2630,28 +2605,21 @@ arch guildmaster
 name wizard
 msg
 @match objects
-The dager from Temple Naive,
-the bow from Elven Moon,
-the hammer from Temple Justice,
-and the club from Troll Canyon.
-When you have all of them,
-place them in the cauldren.
+The dager from Temple Naive, the bow from Elven Moon, the hammer from Temple Justice, and the club from Troll Canyon.  When you have all of them, place them in the cauldren.
 @match reward
 You will be presented with a gift.
 @match gift
 A useful item...
 [Strange Old Wizard Grins...]
 @match where
-Only the brave, clever adventure is worthy.
-I can't do everything for you.
+Only the brave, clever adventure is worthy.  I can't do everything for you.
 [Strange Old Wizard Chuckles...]
 @match xoonuf
 Never heard of anyone by that name.
 @match vim
 Vim was once a great empire in the East.
 @match *
-Find the objects that I require and you will
-be given a great reward.
+Find the objects that I require and you will be given a great reward.
 endmsg
 face wizard.151
 hp 100
