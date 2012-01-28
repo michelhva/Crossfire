@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeybindingsManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.label.GUILabelFailure;
 import com.realtime.crossfire.jxclient.gui.label.TooltipManagerImpl;
 import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
@@ -580,6 +581,11 @@ public class GuiManager {
                 if (dialog == queryDialog) {
                     setHideInput(false);
                 } else {
+                    final AbstractLabel labelFailure = dialog.getFirstElement(GUILabelFailure.class);
+                    if (labelFailure != null) {
+                        labelFailure.setText("");
+                    }
+
                     final String name = dialog.getName();
                     if (name != null) {
                         if (name.equals("account_login")) {
@@ -619,11 +625,6 @@ public class GuiManager {
                                         characterList.setCharacter(characterName);
                                     }
                                 }
-                            }
-
-                            final AbstractLabel loginError = dialog.getFirstElement(AbstractLabel.class, "account_login_error");
-                            if (loginError != null) {
-                                loginError.setText("");
                             }
                         }
                     }
