@@ -1,6 +1,9 @@
 Object improve_damage
-name Improve Weapon Damage
-face improve_damage.111
+name scroll
+name_pl scrolls
+face scroll.111
+identified_name Improve Weapon Damage
+identified_face improve_damage.111
 race scrolls
 nrof 1
 type 124
@@ -9,7 +12,6 @@ value 10000
 weight 200
 sp 2
 slaying ruby
-identified 1
-name_pl Improve Weapon Damage
+identified_name_pl Improve Weapon Damage
 client_type 1016
 end

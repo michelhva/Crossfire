@@ -1,6 +1,9 @@
 Object improve_weight
-name Lower Weapon Weight
-face improve_weight.111
+name scroll
+name_pl scrolls
+face scroll.111
+identified_name Lower Weapon Weight
+identified_face improve_weight.111
 race scrolls
 nrof 1
 type 124
@@ -9,7 +12,6 @@ value 10000
 weight 200
 sp 3
 slaying pearl
-identified 1
-name_pl Lower Weapon Weights
+identified_name_pl Lower Weapon Weights
 client_type 1016
 end
