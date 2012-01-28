@@ -626,6 +626,12 @@ public class GuiManager {
                                     }
                                 }
                             }
+                        } else if (name.equals("account_character_new")) {
+                            final GUIText characterField = dialog.getFirstElement(GUIText.class, "character_login");
+                            if (characterField != null) {
+                                characterField.setText("");
+                                characterField.setActive(true);
+                            }
                         }
                     }
                 }
