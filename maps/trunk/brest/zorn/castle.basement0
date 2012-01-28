@@ -8,7 +8,7 @@ enter_x 30
 enter_y 5
 msg
 Created:  2006-04-10 Gene Alexander
-Modified: 2008-12-13 Rick Tanner
+Modified: 2012-01-27 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -10762,10 +10762,7 @@ arch card
 name DM card
 name_pl DM cards
 msg
-This is the DM entry spot when using 'goto to get
-to the map. The majority of the map is below this
-point. An exit ladder is through the cave wall to
-the left.
+This is the DM entry spot when using 'goto to get to the map.  The majority of the map is below this point.  An exit ladder is through the cave wall to the left.
 endmsg
 x 30
 y 5
@@ -15187,10 +15184,7 @@ y 9
 end
 arch magic_mouth
 msg
-These stairs leading into the bowels of the earth
-give you a sense of great danger. You now must
-decide if your sense of adventure outweighs your
-innate sense of danger.
+These stairs leading into the bowels of the earth give you a sense of great danger.  You now must decide if your sense of adventure outweighs your innate sense of danger.
 endmsg
 food 1
 x 42
@@ -17477,8 +17471,7 @@ y 7
 end
 arch trap_rocks
 msg
-You set off a falling rocks trap that causes rubble to
-block the hole you see ahead.
+You set off a falling rocks trap that causes rubble to block the hole you see ahead.
 endmsg
 Cha 100
 x 48
@@ -17882,8 +17875,7 @@ y 7
 end
 arch trap_rocks
 msg
-You set off a falling rocks trap that causes rubble to
-block the hole you see ahead.
+You set off a falling rocks trap that causes rubble to block the hole you see ahead.
 endmsg
 Cha 100
 x 49
@@ -18379,8 +18371,7 @@ y 7
 end
 arch trap_rocks
 msg
-You set off a falling rocks trap that causes rubble to
-block the hole you see ahead.
+You set off a falling rocks trap that causes rubble to block the hole you see ahead.
 endmsg
 Cha 100
 x 50
@@ -18887,8 +18878,7 @@ y 7
 end
 arch trap_rocks
 msg
-You set off a falling rocks trap that causes rubble to
-block the hole you see ahead.
+You set off a falling rocks trap that causes rubble to block the hole you see ahead.
 endmsg
 Cha 100
 x 51
