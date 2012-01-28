@@ -620,6 +620,11 @@ public class GuiManager {
                                     }
                                 }
                             }
+
+                            final AbstractLabel loginError = dialog.getFirstElement(AbstractLabel.class, "account_login_error");
+                            if (loginError != null) {
+                                loginError.setText("");
+                            }
                         }
                     }
                 }
