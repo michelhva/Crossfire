@@ -7,8 +7,8 @@ height 20
 enter_x 9
 enter_y 9
 msg
-Created:  1994-12-28
-Modified: 2008-09-12 Rick Tanner
+Created:  1994-12-28 Morten Hanshaugen
+Modified: 2012-01-27 Rick Tanner
 endmsg
 end
 arch pstone_2
@@ -282,18 +282,6 @@ arch bwall_2_1_2
 x 2
 end
 arch medium_stones
-x 2
-y 1
-end
-arch sign
-msg
-Created by Morten Hanshaugen
-University of Oslo, Norway
-Comments and bugreports can
-be mailed to:
-<meh@ifi.uio.no> or
-<meh@usit.uio.no>
-endmsg
 x 2
 y 1
 end
