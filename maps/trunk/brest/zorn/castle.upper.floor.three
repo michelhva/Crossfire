@@ -9,7 +9,7 @@ enter_y 3
 msg
 Created:  2007-03-06 Gene Alexander
 Info: Zorn Castle, third upper floor
-Modified: 2007-11-24 Gene Alexander
+Modified: 2012-01-27 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -9959,10 +9959,7 @@ name Zorn cloak
 name_pl Zorn cloaks
 title of Invisibility
 msg
-A cloak created for the Zorn family
-by the great Wizards of Brest. The
-cloak works by tapping into the
-powers of the mind of the wearer.
+A cloak created for the Zorn family by the great Wizards of Brest.  The cloak works by tapping into the powers of the mind of the wearer.
 endmsg
 face cloak_black.111
 Wis -5
@@ -9990,9 +9987,7 @@ arch bracers_dex
 name Zorn bracers
 title of paralyzing attack
 msg
-The wearer of these bracers gains
-a paralyzing attack against any
-enemy susceptible to paralyzation
+The wearer of these bracers gains a paralyzing attack against any enemy susceptible to paralyzation
 endmsg
 Str 2
 Dex 3
@@ -10065,9 +10060,7 @@ end
 arch magic_mouth
 name eight doors
 msg
-There are eight locked doors here.
-To open them requires the correct
-key for each door.
+There are eight locked doors here.  To open them requires the correct key for each door.
 endmsg
 x 29
 y 13
