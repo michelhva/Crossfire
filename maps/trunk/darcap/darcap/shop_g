@@ -10,7 +10,7 @@ height 20
 enter_x 16
 enter_y 15
 msg
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-01-29 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1815,19 +1815,17 @@ msg
 @match hello
 Hello. Would you like to buy some fish?
 @match order|tower
-To open the Tower, you must uses each part
-in order of the sage's names.  Good Luck.
+To open the Tower, you must uses each part in order of the sage's names.  Good Luck.
 @match sage
 I don't know.  Go ask them!
 @match name
 My name is Bob.  I own this place.
 @match bakery|food
-yep, I get fresh fish every day.
+Yep, I get fresh fish every day.
 @match day
-Yes, every day. Now either buy
-something or leave. I'm busy.
+Yes, every day. Now either buy something or leave.  I'm busy.
 @match *
-Sorry, I don't understand you
+Sorry, I don't understand you.
 endmsg
 x 17
 y 13
