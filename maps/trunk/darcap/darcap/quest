@@ -8,7 +8,7 @@ enter_x 17
 enter_y 7
 msg
 Created:  1998-12-21
-Modified: 2010-06-06 Nicolas Weeger
+Modified: 2011-01-29 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -729,8 +729,7 @@ y 1
 end
 arch magic_mouth
 msg
-You have been magically transported
-somewhere vaguely familiar ...
+You have been magically transported somewhere vaguely familiar ...
 endmsg
 x 5
 y 1
@@ -2874,11 +2873,8 @@ y 2
 end
 arch magic_mouth
 msg
-Congratulations - Hope you're not too
-wet ...
-Ask in the magic shop for clues about
-the next stage
-p.s. Pull the handle before you exit
+Congratulations - Hope you're not too wet... Ask in the magic shop for clues about the next stage.
+p.s. Pull the handle before you exit.
 endmsg
 x 17
 y 2
