@@ -5,7 +5,7 @@ width 30
 height 30
 msg
 Created:  2010-10-17 Nicolas Weeger
-Modified: 2011-09-25 Rick Tanner
+Modified: 2012-01-29 Rick Tanner
 endmsg
 end
 arch afloor_left
@@ -6647,7 +6647,7 @@ connected 11
 end
 arch sign
 msg
-Note to mapmakers: the connection 11 will be activated by the death script of Kaptel. The button on this spot is here to clear Gridarta's warning, and ensure that if you change the number for any reason, you'll check this spot.
+Note to mapmakers: the connection 11 will be activated by the death script of Kaptel.  The button on this spot is here to clear Gridarta's warning, and ensure that if you change the number for any reason, you'll check this spot.
 endmsg
 x 23
 y 9
@@ -7087,7 +7087,7 @@ y 24
 end
 arch magic_mouth
 msg
-Defeated, you have no choice but leave this place. Maybe come back when you're stronger?
+Defeated, you have no choice but leave this place.  Maybe come back when you're stronger?
 endmsg
 x 25
 y 25
