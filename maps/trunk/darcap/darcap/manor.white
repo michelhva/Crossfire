@@ -6,7 +6,7 @@ width 40
 height 30
 msg
 Created:  2010-10-17 Nicolas Weeger
-Modified: 2010-10-23 Nicolas Weeger
+Modified: 2012-01-29 Rick Tanner
 endmsg
 end
 arch tile_shop
@@ -4688,9 +4688,9 @@ Welcome to the white zone.
 
 To get the white key, just explore the map.
 
-Caveat: be curious.
+Caveat: Be curious.
 
-Warning: this is a one-way zone, you can't go back once you enter.
+Warning: This is a one-way zone, you can't go back once you enter.
 endmsg
 x 26
 y 25
@@ -5362,7 +5362,7 @@ end
 arch sign
 name note to map makers
 msg
-Note to mapmakers: this button is here to ensure you don't change the 60 connection value for the final gate. This value is used in the Pyhon script of this map.
+Note to mapmakers: This button is here to ensure you don't change the 60 connection value for the final gate.  This value is used in the Pyhon script of this map.
 
 So if you really want to change the value, change the final grate, the button AND the value in the script, please!
 endmsg
