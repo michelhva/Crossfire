@@ -8,6 +8,7 @@ enter_x 5
 enter_y 8
 msg
 Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
+Modified: 2012-01-29 Rick Tanner
 endmsg
 end
 arch sea
@@ -821,8 +822,7 @@ end
 arch sign
 name Help
 msg
-To save, go into a room
-and press <A>pply on the bed.
+To save, go into a room and press <A>pply on the bed.
 endmsg
 x 6
 y 12
@@ -1998,9 +1998,7 @@ arch guildmaster
 name Old Man
 msg
 @match *
-I'm too busy to help you.
-My friend Rufus might help - he's in
-here somewhere ...
+I'm too busy to help you.  My friend Rufus might help - he's in here somewhere ...
 endmsg
 x 15
 y 13
@@ -3092,10 +3090,8 @@ end
 arch sign
 name Info
 msg
-Tourists : Visit the courthouse
-Adventurers : Apparently the well
-on the south side of town is a good
-place to start
+Tourists: Visit the courthouse.
+Adventurersi: Apparently the well on the south side of town is a good place to start.
 endmsg
 x 23
 y 16
@@ -3107,9 +3103,7 @@ end
 arch sign
 name More Info
 msg
-To claim the rewards in the courthouse
-all four parts of the quest must be
-tackled :
+To claim the rewards in the courthouse all four parts of the quest must be tackled:
    Water
    Earth
    Air
@@ -3441,11 +3435,9 @@ arch guildmaster
 name Rufus
 msg
 @match quest|help
-You need to "open" the gate into the
-closed room here ...
+You need to "open" the gate into the closed room here ...
 @match *
-I can help you with the elemental
-quest...
+I can help you with the elemental quest...
 endmsg
 x 26
 y 10
@@ -3494,11 +3486,7 @@ end
 arch letter
 msg
 My friend,
-I write to tell you of our trials in
-the land of Dtabb. We went south - to
-a volcano where all manner of firey
-creatures attacked us. We were forced
-to retreat ..
+I write to tell you of our trials in the land of Dtabb.  We went south - to a volcano where all manner of firey creatures attacked us.  We were forced to retreat ..
 endmsg
 x 26
 y 16
