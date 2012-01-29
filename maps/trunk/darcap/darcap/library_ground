@@ -7,7 +7,7 @@ enter_x 18
 enter_y 9
 msg
 Created:  2010-03-07 Nicolas Weeger
-Modified: 2010-03-07 Nicolas Weeger
+Modified: 2012-01-29 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -1445,16 +1445,10 @@ arch halfling3
 name Lovast
 msg
 @match card
-Well, I'm not totally sure, but you could probably check with universities in Navar or Scorn, maybe they would know.
-
-I only know how to recognize a card, not how you get them *blush*
-
+Well, I'm not totally sure, but you could probably check with universities in Navar or Scorn, maybe they would know.  I only know how to recognize a card, not how you get them. *blush*
 @match access
 @question card How can I get a research card?
-You can access the upper floor whenever you wish, freely.
-
-To access the research area, you need to get a research card.
-
+You can access the upper floor whenever you wish, freely.  To access the research area, you need to get a research card.
 @match organisation
 @question access What parts can I access?
 The library has two floors.
