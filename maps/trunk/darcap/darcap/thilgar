@@ -5,7 +5,7 @@ width 20
 height 20
 msg
 Created:  2010-02-14 Nicolas Weeger
-Modified: 2011-09-28 Rick Tanner
+Modified: 2012-01-30 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -907,9 +907,8 @@ arch merchant
 name Thilgar
 msg
 @match armors
-Isn't it? Those are all very rare and valuable armors, it took me years and much effort to manage to collect them.
-
-Be my guest, feel free to look at them.
+Isn't it?
+Those are all very rare and valuable armors, it took me years and much effort to manage to collect them.  Be my guest, feel free to look at them.
 @match *
 @question armors You got a really impressive armor collection.
 Hello, stranger, what are you doing in my house?
