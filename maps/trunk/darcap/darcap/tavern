@@ -8,7 +8,7 @@ enter_x 19
 enter_y 13
 msg
 Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
-Modified: 2011-12-13 Rick Tanner
+Modified: 2012-01-30 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -872,8 +872,7 @@ msg
 @match hello
 Well....
 @match well
-I'm not deaf you know
-Visit the well !!
+I'm not deaf you know.  Visit the well!!
 @match *
 I'm too busy to answer your queries.
 endmsg
@@ -1407,19 +1406,13 @@ arch fighter
 name TCI Representative
 msg
 @match tci
-Training Centers Incorporated is the best dang training
-you'll ever get. We have locations all over the world in
-exotic settings. Come fight with us! (heh, they tell us we
-have to say all that)
+Training Centers Incorporated is the best dang training you'll ever get.  We have locations all over the world in exotic settings.  Come fight with us! (Heh, they tell us we have to say all that.)
 @match location
-Well, I don't know about all of them. But our local TCI
-is off the road south of here. Just look for one of our
-signs!
+Well, I don't know about all of them.  But our local TCI is off the road south of here.  Just look for one of our signs!
 @match hello|hi
-Well, hello there! Sit down and chat with me a bit. I am
-always looking for new people to tell about TCI.
+Well, hello there! Sit down and chat with me a bit.  I am always looking for new people to tell about TCI.
 @match *
-Hi there young'un. Wanna join TCI?
+Hi there young'un.  Wanna join TCI?
 endmsg
 x 11
 y 13
@@ -1694,20 +1687,11 @@ arch warrior_1
 name well-trained warrior
 msg
 @match artifact|hear
-A friend told me something about very
-powerful bracers... But he died at
-the attempt to get those. I believe
-he was killed by the... BELZEBUB!
+A friend told me something about very powerful bracers... But he died at the attempt to get those.  I believe he was killed by the... BELZEBUB!
 @match proving|tower|yes
-There's an ancient temple in the
-underground, beneath that tower.
-It is said that the most deadly
-creatures are lurking down there!
+There's an ancient temple in the underground, beneath that tower.  It is said that the most deadly creatures are lurking down there!
 @match *
-Go to the Warrior Proving Tower. It's
-on the northeast edge of the continent.
-I've heard about incredible artifacts
-in there.
+Go to the Warrior Proving Tower.  It's on the northeast edge of the continent.  I've heard about incredible artifacts in there.
 endmsg
 x 13
 y 10
@@ -1817,17 +1801,9 @@ end
 arch fighter
 msg
 @match element|quest
-Water, earth, air and fire... It's a
-big task but the rewards are great!
-Enter the courthouse and you will
-understand me.
-The major difficulty is finding the
-places that are involved in this
-quest. E.g. I suspect the high volcano
-poses the fire-part...
+Water, earth, air and fire... It's a big task but the rewards are great! Enter the courthouse and you will understand me.  The major difficulty is finding the places that are involved in this quest.  E.g. I suspect the high volcano poses the fire-part...
 @match *
-I've devoted myself to the elemental
-quest.
+I've devoted myself to the elemental quest.
 endmsg
 x 14
 y 7
@@ -2177,9 +2153,7 @@ arch guildmaster
 name Old Man
 msg
 @match apartment
-Yes, you should buy an apartment.
-There you can store some food and
-equipment.
+Yes, you should buy an apartment.  There you can store some food and equipment.
 @match caterham
 Ha sorry, that's the old name of the town, I sometimes use it without paying attention.
 
@@ -2188,10 +2162,7 @@ Ha sorry, that's the old name of the town, I sometimes use it without paying att
 That's old age for you...
 
 @match *
-If you plan to explore our nice
-continent, you should buy yourself a
-permanent apartment in Caterham
-first.
+If you plan to explore our nice continent, you should buy yourself a permanent apartment in Caterham first.
 endmsg
 x 16
 y 12
@@ -2265,9 +2236,7 @@ end
 arch ninja2
 msg
 @match land|exiled
-I lived north-east from here, until I took a
-boat out to talk to a foreigner like you.
-They didn't let me go back.
+I lived north-east from here, until I took a boat out to talk to a foreigner like you.  They didn't let me go back.
 @match *
 I've been exiled from my land.
 endmsg
@@ -2667,13 +2636,9 @@ arch wizard
 name old wizard
 msg
 @match no|library|spell
-It's located in a mountain village,
-not far from here. Take a few
-gold coins with you, I believe they
-charge for a small entrance fee.
+It's located in a mountain village, not far from here.  Take a few gold coins with you, I believe they charge for a small entrance fee.
 @match *
-Did you know that there is a huge
-spellbook library on dtabb?
+Did you know that there is a huge spellbook library on dtabb?
 endmsg
 face wizard_yellow.151
 hp 100
