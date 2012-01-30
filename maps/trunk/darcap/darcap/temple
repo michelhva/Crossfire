@@ -8,7 +8,7 @@ enter_x 12
 enter_y 22
 msg
 Created:  1999-01-21 Cater & Wade (john_cater@yahoo.com)
-Modified: 2008-09-14 Rick Tanner
+Modified: 2012-01-30 Rick Tanner
 endmsg
 end
 arch grassmedium
@@ -2110,17 +2110,13 @@ arch holy_priest
 name Holy Man of Gaea
 msg
 @match gaea
-Gaea is the mother of Nature and all
-the Elements
+Gaea is the mother of Nature and all the Elements.
 @match nature
-Nature is the world around us - the
-air we breath the things that grow and
-live
+Nature is the world around us - the air we breath the things that grow and live.
 @match elements
-All things come from the four elements
-- Earth, Fire, Air and Water
+All things come from the four elements - Earth, Fire, Air and Water.
 @match *
-Welcome to the place of Gaea
+Welcome to the place of Gaea.
 endmsg
 x 12
 y 13
