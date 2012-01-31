@@ -11,7 +11,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  1997-02-22
-Modified: 2008-12-21 Rick Tanner
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -608,11 +608,7 @@ end
 arch sign
 msg
 Welcome to the adventurours shop!
-In order to gain access to a shop
-level, you will first have to win
-against the monsters guarding it.
-Please take care, they get more
-dangerous the more you advance upwards!
+In order to gain access to a shop level, you will first have to win against the monsters guarding it.  Please take care, they get more dangerous the more you advance upwards!
 endmsg
 x 6
 y 11
@@ -877,13 +873,9 @@ arch madman
 name shopkeeper
 msg
 @match h[ae]llo|hi
-Hello there! Welcome to this fantastic
-shop! It is full of monsters, so
-please be careful!
+Hello there! Welcome to this fantastic shop! It is full of monsters, so please be careful!
 @match monster|monsters|careful
-Well, there's even a nice collection
-of demiliches on the upper floor, just
-above the skulls.
+Well, there's even a nice collection of demiliches on the upper floor, just above the skulls.
 endmsg
 x 9
 y 11
