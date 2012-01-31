@@ -10,7 +10,7 @@ enter_x 15
 enter_y 31
 msg
 Created:  1997-07-10 Viola Krings
-Modified: 2011-06-28 Andreas Kirschbaum
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -2009,9 +2009,7 @@ end
 arch sign
 name Guild Room
 msg
-In this room you may place items you
-want to give to other guild members.
-The items will not vanish from there.
+In this room you may place items you want to give to other guild members.  The items will not vanish from there.
 endmsg
 x 9
 y 22
@@ -2481,12 +2479,9 @@ arch woman2
 name landlady
 msg
 @match hallo|hello|hi
-Hello, noble adventurer! You can take
-a room here if that is your wish.
+Hello, noble adventurer! You can take a room here if that is your wish.
 @match room|apartment
-Our apartments are small, with just a
-bed, but you can use the guild's
-cauldron if that is what you desire.
+Our apartments are small, with just a bed, but you can use the guild's cauldron if that is what you desire.
 @match *
 Have a nice day!
 endmsg
@@ -3580,8 +3575,7 @@ end
 arch sign_e
 name arms and armour museum
 msg
-Don't even think of taking anything
-away..
+Don't even think of taking anything away..
 endmsg
 x 18
 y 9
@@ -3599,8 +3593,7 @@ name Creature Museum
 msg
 Please do not destroy the exhibits!
 And take care not to anger them!
-It is recommended to put up the
-security spikes to avoid accidents.
+It is recommended to put up the security spikes to avoid accidents.
 endmsg
 x 18
 y 11
@@ -3699,17 +3692,11 @@ arch guildmaster
 name admission clerk
 msg
 @match admission|yes
-To join the guild, you must pay at the
-alter over there, and then pass a
-dangerous test. Only hardened
-adventurers may join!
+To join the guild, you must pay at the alter over there, and then pass a dangerous test.  Only hardened adventurers may join!
 @match test
-The test is dangerous: We've tied the
-key to this guild to the eye of a
-Dread.
+The test is dangerous: We've tied the key to this guild to the eye of a Dread.
 @match Hallo|Hello|Hi
-Hi! Do you want do know something
-about admission to the guild?
+Hi! Do you want do know something about admission to the guild?
 endmsg
 x 18
 y 28
@@ -4543,11 +4530,7 @@ end
 arch sign
 name alchemy room
 msg
-In this room you may use the cauldron
-to test your alchemy recipes. Take
-care if entering while someone else is
-experimenting, it might be dangerous
-to your health.
+In this room you may use the cauldron to test your alchemy recipes.  Take care if entering while someone else is experimenting, it might be dangerous to your health.
 endmsg
 x 22
 y 26
@@ -4880,11 +4863,7 @@ end
 arch tome
 name library tome
 msg
-This door leeds to the guild library.
-Feel free to browse through the books,
-but do not take anything away. Take
-care not to anger the librarians, they
-are so nice!
+This door leeds to the guild library.  Feel free to browse through the books, but do not take anything away.  Take care not to anger the librarians, they are so nice!
 endmsg
 x 24
 y 21
@@ -5348,8 +5327,7 @@ msg
 @match Hello
 Hello! Please don't talk in here.
 @match *
-I don't know any riddles right now.
-Please leave me alone.
+I don't know any riddles right now.  Please leave me alone.
 endmsg
 x 26
 y 26
