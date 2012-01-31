@@ -10,7 +10,7 @@ enter_x 2
 enter_y 16
 msg
 Date: 2008-02-29
-Modified: 2010-10-17 Nicolas Weeger
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch blocked
@@ -294,7 +294,7 @@ end
 arch locked_door1
 slaying darcap_raffle_u1_door2
 msg
-You need the Orc key to open this door.
+You need the Ghost key to open this door.
 endmsg
 x 2
 y 5
@@ -338,7 +338,7 @@ end
 arch locked_door1
 slaying darcap_raffle_u1_door1
 msg
-You need the orc key to open this door.
+You need the ghost key to open this door.
 endmsg
 x 2
 y 13
