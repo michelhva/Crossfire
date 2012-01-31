@@ -8,7 +8,7 @@ enter_x 6
 enter_y 10
 msg
 Created:  2008-11-23 Rick Tanner
-Modified: 2008-12-20 Rick Tanner
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch medium_stones
@@ -472,13 +472,13 @@ arch guildmaster
 name Sage
 msg
 @match hello|hi
-Hello. I'm busy studying.
+Hello.  I'm busy studying.
 @match name
-Joe the Sage
+I go by the name, Joe the Sage.
 @match job|study
-I'm studying the tower
+I'm studying the tower.
 @match tower
-I have discovered part of the rune of opening
+I have discovered part of the rune of opening.
 @match rune|open
 My part is 'Ra'
 @match order
