@@ -8,7 +8,7 @@ enter_x 8
 enter_y 8
 msg
 Created:  1997-09-12
-Modified: 2008-12-01 Rick Tanner
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch afloor_left
@@ -157,10 +157,7 @@ arch courier
 name Timothius
 msg
 @match h[ae]llo|hi|greet
-My Greetigs to you! Welcome to my
-humble home. Have you heard of my
-friend, Carthon? He was heading of to
-dragon mountain.
+My Greetigs to you! Welcome to my humble home.  Have you heard of my friend, Carthon? He was heading of to dragon mountain.
 @match no
 What a pity! I hope he's all right.
 @match dead|corpse|killed
@@ -170,15 +167,11 @@ Please leave me alone for a while.
 @match yes
 Well, where have you seen him?
 @match carthon
-Carthon is a friend of mine. He's an
-adventurer and dragon hunter.
+Carthon is a friend of mine.  He's an adventurer and dragon hunter.
 @match mountain
-I wish Carthon had never gone to that
-accursed dragon mountain!
+I wish Carthon had never gone to that accursed dragon mountain!
 @match dragon
-Oh, I don't know anything about
-dragons, except that they are
-dangerous, of course!
+Oh, I don't know anything about dragons, except that they are dangerous, of course!
 endmsg
 x 2
 y 2
@@ -372,9 +365,7 @@ no_pick 1
 arch book_read
 name interesting book
 msg
-This book is very interesting, but you
-decide not to spend your hours
-reading, but go adventuring instead.
+This book is very interesting, but you decide not to spend your hours reading, but go adventuring instead.
 endmsg
 end
 end
@@ -443,13 +434,8 @@ carrying 200
 arch letter
 msg
 Dear Timothius,
-I have finally been able to locate the
-famous dragon mountain. It is, as I of
-course suspected, here on dragon
-island. I will enter it today and slay
-the arrogant dragon there. See you
-soon!
-Yours
+I have finally been able to locate the famous dragon mountain.  It is, as I of course suspected, here on dragon island.  I will enter it today and slay the arrogant dragon there.  See you soon!
+Yours,
 Carthon
 endmsg
 end
