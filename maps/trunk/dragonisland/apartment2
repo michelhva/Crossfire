@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1997-07-09
-Modified: 2008-09-14 Rick Tanner
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch grass
@@ -233,7 +233,7 @@ Hello! Nice to see you!
 @match hurt
 Most people just want to kill me on sight, sniff!
 @match *
-Don't hurt me, please
+Don't hurt me, please.
 endmsg
 x 2
 y 1
@@ -950,7 +950,7 @@ arch altar
 name key costs 3000 gp
 slaying money
 msg
-Here you can get a key for 3000 g
+Here you can get a key for 3000 gold.
 endmsg
 food 3000
 x 8
@@ -1057,8 +1057,7 @@ msg
 @match Hello|Hallo|Hi
 Hello there! To the left is a private apartment, to your right is a room you may enter if you pay a fee.
 @match apartment
-This apartment is very comfortable, trust me!
-And it's got a cauldron, too!
+This apartment is very comfortable, trust me! And it's got a cauldron, too!
 endmsg
 x 9
 y 7
