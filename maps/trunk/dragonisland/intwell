@@ -8,7 +8,7 @@ enter_x 1
 enter_y 21
 msg
 Created:  1997-06-17 Viola Krings
-Modified: 2008-12-13 Rick Tanner
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -356,8 +356,7 @@ end
 arch sign
 name Welcome sign
 msg
-Welcome to the Well of Intelligence.
-Brave the dangers and learn!
+Welcome to the Well of Intelligence.  Brave the dangers and learn!
 endmsg
 x 1
 y 23
@@ -385,7 +384,7 @@ end
 arch note
 name creator note
 msg
-Dungeon by Damaris
+Dungeon by Damaris.
 endmsg
 x 1
 y 28
@@ -1503,7 +1502,7 @@ end
 arch sign_e
 name This Way
 msg
-Can you open the door
+Can you open the door?
 endmsg
 x 8
 y 25
@@ -4474,7 +4473,7 @@ y 9
 end
 arch sign_w
 msg
-Do you like your equipment ?
+Do you like your equipment?
 endmsg
 x 24
 y 9
