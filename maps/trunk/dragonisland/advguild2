@@ -8,7 +8,7 @@ enter_x 9
 enter_y 26
 msg
 Created:  1997-07-15 Viola Krings
-Modified: 2008-10-20 Rick Tanner
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -2240,9 +2240,7 @@ connected 4
 end
 arch magic_mouth
 msg
-Practicing against floating,
-spellcasting monsters - please don't
-damage the generators.
+Practicing against floating, spellcasting monsters - please don't damage the generators.
 endmsg
 x 11
 y 15
@@ -2593,8 +2591,7 @@ arch lich
 name Tarsham, the Lich
 msg
 @match *
-Die, fool! I'm not a practicing
-target, I'm your doom
+Die, fool! I'm not a practicing target, I'm your doom!!
 endmsg
 x 13
 y 5
@@ -2641,9 +2638,7 @@ connected 3
 end
 arch magic_mouth
 msg
-Undead practicing room - please leave
-generators intact to allow some
-practice to those who come after you.
+Undead practicing room - please leave generators intact to allow some practice to those who come after you.
 endmsg
 x 13
 y 11
@@ -3839,10 +3834,8 @@ end
 arch sign
 name challenge with reward
 msg
-We hope to provide you with a
-challange with this practicing
-compartment.
-              The Guild
+We hope to provide you with a challange with this practicing compartment.
+ - The Guild
 endmsg
 x 19
 y 19
@@ -5319,9 +5312,7 @@ arch elf
 name Nathirel, the elf priest
 msg
 @match *
-Come to Lythanders altar and pray. Of
-you are accepted, you can call
-yourself lucky.
+Come to Lythanders altar and pray.  Of you are accepted, you can call yourself lucky.
 endmsg
 face elf.151
 x 26
@@ -5714,9 +5705,7 @@ arch dwarf_priest
 name Bordak, the dwarf priest
 msg
 @match *
-Pray at this altar, my son! It will
-give you strength and protect you from
-fire.
+Pray at this altar, my son! It will give you strength and protect you from fire.
 endmsg
 x 28
 y 24
@@ -6113,9 +6102,7 @@ arch dwarf_priest
 name Lorik, the dwarf priest
 msg
 @match *
-Pray at this altar, my son! It will
-give you strength and protect you from
-fire.
+Pray at this altar, my son! It will give you strength and protect you from fire.
 endmsg
 x 30
 y 24
