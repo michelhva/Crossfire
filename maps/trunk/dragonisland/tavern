@@ -8,7 +8,7 @@ enter_x 8
 enter_y 15
 msg
 Created:  1997-07-18
-Modified: 2008-12-21 Rick Tanner
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch afloor_right
@@ -432,15 +432,9 @@ So, you're an adventurer, aren't you?
 @match no
 Oh well.
 @match yes|adventurer
-Well, that this is probably the right
-place for you to live. The guild is
-famous. That's what I came here for,
-but I was not prepared for that
-terrible test.
+Well, that this is probably the right place for you to live.  The guild is famous.  That's what I came here for, but I was not prepared for that terrible test.
 @match test|guild
-Well, the adventurers guild ties the
-guild key to the eye of a dread. Nice
-test, that is.
+Well, the adventurers guild ties the guild key to the eye of a dread.  Nice test, that is.
 endmsg
 x 3
 y 7
@@ -574,8 +568,7 @@ arch fatwoman
 name Janny
 msg
 @match *
-Hmpf, leave me alone. I've got to
-forget this day.
+Hmpf, leave me alone.  I've got to forget this day.
 endmsg
 x 4
 y 6
@@ -618,18 +611,11 @@ arch veiled_woman
 name Jalishea
 msg
 @match h[ae]llo|hi|greet
-Hello !
+Hello!
 @match day
-Oh, a beautiful day indeed! Just don't
-go into any house, like the dreadful
-house, or you may well get yourself
-killed!
+Oh, a beautiful day indeed! Just don't go into any house, like the dreadful house, or you may well get yourself killed!
 @match dreadful|house
-Oh, the dreadful house.... If you want
-to go there, and you never heard of
-sesame, you may have a difficult time
-with the password - and that is just
-as well, because you can enjoy the day
+Oh, the dreadful house.... If you want to go there, and you never heard of sesame, you may have a difficult time with the password - and that is just as well, because you can enjoy the day
 instead of getting yourself killed!
 @match *
 Nice day, isn't it?
@@ -728,8 +714,7 @@ end
 arch child
 msg
 @match *
-My mummy says a shall not speak to
-strangers, so I will not! Go away!
+My mummy says a shall not speak to strangers, so I will not! Go away!
 endmsg
 x 5
 y 5
@@ -1585,9 +1570,7 @@ end
 arch dancing_girl
 msg
 @match *
-Isn't the world wonderful? Yes, of
-course it is! All dancing and
-happiness!
+Isn't the world wonderful? Yes, of course it is! All dancing and happiness!
 endmsg
 x 12
 y 7
@@ -1931,12 +1914,7 @@ arch dark_elf
 name Kharazzad Do'Bredin
 msg
 @match h[ae]llo|hi
-Hello !
-You seem to be a nice person. Maybe
-you would like to visit my friends in
-the dark elf house, they are really
-nice people, and very open to
-adventurers like you seem to be.
+Hello! You seem to be a nice person.  Maybe you would like to visit my friends in the dark elf house, they are really nice people, and very open to adventurers like you seem to be.
 @match traitor|treason|liar
 Sh! What a harsh word to use!
 endmsg
@@ -1978,20 +1956,11 @@ end
 arch sailor
 msg
 @match h[ae]llo|hi
-Hello, landrat! I'm so happy I can
-leave Stoneville with the next ship.
-You cannot imagine what kind of
-people live here!
+Hello, landrat! I'm so happy I can leave Stoneville with the next ship.  You cannot imagine what kind of people live here!
 @match people|live|stoneville
-The people who live here are
-adventurers, and they got all their
-pet monsters with them! They have a
-cellar full of undead and think
-there's nothing wrong about it!
+The people who live here are adventurers, and they got all their pet monsters with them! They have a cellar full of undead and think there's nothing wrong about it!
 @match cellar|undead
-Yes, just have a look at Damaris'
-house, that cellar is crawling with
-skeletons and the gods know what else.
+Yes, just have a look at Damaris' house, that cellar is crawling with skeletons and the gods know what else.
 endmsg
 x 15
 y 7
@@ -2128,12 +2097,9 @@ arch elec_dragon
 name electric dragon child
 msg
 @match h[ae]llo|hi
-Hello! This is a nice tavern the
-humans have build here! I wish my
-parents could see it!
+Hello! This is a nice tavern the humans have build here! I wish my parents could see it!
 @match parent|parents
-Unfortunately my parents are too large
-to fit into this tavern!
+Unfortunately my parents are too large to fit into this tavern!
 endmsg
 x 16
 y 13
