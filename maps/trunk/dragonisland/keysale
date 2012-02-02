@@ -8,7 +8,7 @@ enter_x 4
 enter_y 4
 msg
 Created:  1997-07-09
-Modified: 2008-12-21 Rick Tanner
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -708,7 +708,7 @@ end
 arch sign
 name explanation sign
 msg
-In this house, you can buy keys. These key are unique and will open the special doors to which others will have no access.
+In this house, you can buy keys.  These key are unique and will open the special doors to which others will have no access.
 endmsg
 x 6
 y 13
@@ -1002,7 +1002,7 @@ msg
 @match Hello|Hallo|Hi|greet|Greetings
 My Greetings to you!
 @match *
-Get yourself a key here. They are for different houses and rooms here in Stoneville.
+Get yourself a key here.  They are for different houses and rooms here in Stoneville.
 endmsg
 x 9
 y 11
