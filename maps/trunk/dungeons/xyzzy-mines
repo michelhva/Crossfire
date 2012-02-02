@@ -8,7 +8,7 @@ height 77
 enter_x 9
 enter_y 10
 msg
-Created:  1994-12-28
+Created:  1994-12-28 Morten Hanshaugen
 Modified: 2012-02-01 Rick Tanner
 endmsg
 end
@@ -2881,19 +2881,6 @@ x 6
 y 9
 end
 arch medium_stones
-x 6
-y 10
-end
-arch sign
-name Creator
-msg
-Created by Morten Hanshaugen
-University of Oslo, Norway
-Comments and bugreports can
-be mailed to:
-<meh@ifi.uio.no> or
-<meh@usit.uio.no>
-endmsg
 x 6
 y 10
 end
