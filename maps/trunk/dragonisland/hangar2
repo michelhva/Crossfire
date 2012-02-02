@@ -8,7 +8,7 @@ enter_x 15
 enter_y 30
 msg
 Created:  2001-03-06 Philipp Currlin (philipp.currlin@epost.de)
-Modified: 2008-10-21 Rick Tanner
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1342,13 +1342,9 @@ arch dwarf
 name Dragon Dompteur
 msg
 @match dompteur|yes
-You're the new dompteur? Tame the
-dragons in there to show me your
-qualities.
+You're the new dompteur? Tame the dragons in there to show me your qualities.
 @match *
-A dragon will be delivered any minute
-now, can you help me to get him into the
-large room?
+A dragon will be delivered any minute now, can you help me to get him into the large room?
 endmsg
 sp 0
 maxsp 0
