@@ -8,7 +8,7 @@ enter_x 8
 enter_y 30
 msg
 Created:  1997-07-15 Viola Krings
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1172,27 +1172,13 @@ arch dark_elf
 name Shalathar
 msg
 @match h[ea]llo|hi
-Hi there! I'm here to watch the
-dragons. They are beautiful, don't you
-think? Oh yes, if you want a
-refreshment, I can tell you how to get
-more if all has been eaten up.
+Hi there! I'm here to watch the dragons.  They are beautiful, don't you think? Oh yes, if you want a refreshment, I can tell you how to get more if all has been eaten up.
 @match yes|dragon
-One of the dragons will take you to
-the adventurous shop, directly to its
-more aggressive brethren.
+One of the dragons will take you to the adventurous shop, directly to its more aggressive brethren.
 @match refreshment|eat|tell|food|waybread|booze
-For refreshments, place 7 gp on the
-northernmost of those three tables on the left,
-or place 25 gp for a waybread on the
-middle one. For a booze, place 3 gp on
-the southernmost table. The tables are
-magical, so you will be served even if
-I should not be here.
+For refreshments, place 7 gp on the northernmost of those three tables on the left, or place 25 gp for a waybread on the middle one.  For a booze, place 3 gp on the southernmost table.  The tables are magical, so you will be served even if I should not be here.
 @match deposit|box
-If you put something into the deposit
-box it will certainly stay there
-until someone else takes it out.
+If you put something into the deposit box it will certainly stay there until someone else takes it out.
 endmsg
 x 6
 y 10
@@ -1771,7 +1757,7 @@ y 28
 end
 arch rune_mark
 msg
-Friendly Rune
+Friendly Rune.
 endmsg
 x 8
 y 28
@@ -2142,9 +2128,7 @@ end
 arch sign
 name coffee area
 msg
-Come here to have a coffe, wine or
-fruit, and a nice chat with your fellow
-adventurers.
+Come here to have a coffe, wine or fruit, and a nice chat with your fellow adventurers.
 endmsg
 x 10
 y 21
@@ -4388,8 +4372,7 @@ end
 arch sign
 name training hall - warning
 msg
-Take care, this one might be dangerous!
-There are a few unfairnesses around...
+Take care, this one might be dangerous! There are a few unfairnesses around...
 endmsg
 x 22
 y 24
