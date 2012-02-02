@@ -8,7 +8,7 @@ enter_x 4
 enter_y 4
 msg
 Created:  1997-06-17
-Modified: 2011-07-22 Nicolas Weeger
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch grass
@@ -919,7 +919,7 @@ msg
 @match hello|hi
 Hello! I'm sorry Myrnek is not here right now, perhaps I can give you an appointment?
 @match appointment
-Well, how about next thursday evening? Perhaps he's back by then
+Well, how about next Thursday evening? Perhaps he's back by then.
 endmsg
 Pow 20
 hp 100
