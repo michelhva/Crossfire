@@ -8,7 +8,7 @@ enter_x 6
 enter_y 1
 msg
 Created:  1997-09-17
-Modified: 2008-12-01 Rick Tanner
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -599,9 +599,7 @@ end
 arch sign
 name house sign
 msg
-This is a private home for
-adventurers, kept in typical dungeon
-style to make you feel at home.
+This is a private home for adventurers, kept in typical dungeon style to make you feel at home.
 endmsg
 x 5
 y 1
@@ -1267,8 +1265,7 @@ unique 1
 end
 arch magic_mouth
 msg
-You feel a strange tingling running
-down your spine!
+You feel a strange tingling running down your spine!
 endmsg
 x 10
 y 9
