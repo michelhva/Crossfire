@@ -8,7 +8,7 @@ enter_x 1
 enter_y 18
 msg
 Created:  1997-06-28 Viola Krings
-Modified: 2008-11-27 Rick Tanner
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -1155,8 +1155,7 @@ msg
 @match h[ae]llo|hi
 Hello, fool!
 @match fool
-All who enter here are fools! Else
-they would not risk their life here.
+All who enter here are fools! Else they would not risk their life here.
 endmsg
 x 6
 y 18
@@ -3347,8 +3346,7 @@ arch guard
 name gate guard
 msg
 @match *
-You know what one always says when
-wanting to enter somewhere, do you?
+You know what one always says when wanting to enter somewhere, do you?
 endmsg
 x 19
 y 15
