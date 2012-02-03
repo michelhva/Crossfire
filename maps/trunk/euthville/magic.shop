@@ -12,7 +12,7 @@ enter_x 38
 enter_y 21
 msg
 Created:  1993-11-09
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-02-02 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -4957,9 +4957,8 @@ y 20
 end
 arch magic_mouth
 msg
-Unnng,
-Boy, I quite enjoy it when
-someone steps on my head!
+Unnng!
+Boy, I quite enjoy it when someone steps on my head!!
 endmsg
 food 1
 x 36
@@ -4975,7 +4974,7 @@ arch corpse
 name kurt, smart ass corpse
 msg
 @match *
-uuuuggggghhhh, I haven't seen anyone alive in years.  If you eat me I'll give you a discount.
+Uuuuggggghhhh, I haven't seen anyone alive in years.  If you eat me I'll give you a discount.
 endmsg
 x 36
 y 21
