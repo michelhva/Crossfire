@@ -8,7 +8,7 @@ enter_x 15
 enter_y 12
 msg
 Created:  2002-10-27 Todd Mitchell
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-02-03 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -697,14 +697,11 @@ arch pixie
 name Sweet
 msg
 @match hi|hello
-Greetings, I am Sweet
-Please take advantage of my services.
+Greetings, I am Sweet.  Please take advantage of my services.
 @match Sweet
 My mother was a real barrel of laughs...
 @match services
-I have food and drink available at the bar,
-I can also  identify items
-I sell healing potions and do simple money conversion.
+I have food and drink aviailable at the bar, I can also identify items.  I sell healing potions and do simple money conversion.
 @match *
 How may I help you?
 endmsg
@@ -1655,12 +1652,9 @@ end
 arch elf_man
 msg
 @match Sweet
-No, I'm not Sweet
-Sweet is the big pixie over in the corner.
+No, I'm not Sweet.  Sweet is the big pixie over in the corner.
 @match hi|hello
-Hello, welcome to Sweets.
-Food and drink available at a reasonable rate.
-Rooms are 50 gold.
+Hello, welcome to Sweets.  Food and drink available at a reasonable rate.  Rooms are 50 gold.
 @match *
 What can I do for you?
 endmsg
@@ -2416,9 +2410,7 @@ end
 arch elf_guard
 msg
 @match rough
-Ya, we just spent a week northwest of the forest
-keeping an eye on the ogre caves.
-What a job...
+Ya, we just spent a week northwest of the forest keeping an eye on the ogre caves.  What a job...
 @match *
 Whew, what a rough week.
 endmsg
