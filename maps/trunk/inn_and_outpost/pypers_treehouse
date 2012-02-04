@@ -8,7 +8,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  2004-08-13 Avion
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-02-03 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1160,8 +1160,7 @@ msg
 @match name|who
 I am Pyper, a jewler of some small reputation.
 @match jewelery|sell
-Yes, I make some fancy trinkets now and again.
-Only one of a kind stuff - no retail I'm afraid.
+Yes, I make some fancy trinkets now and again.  Only one of a kind stuff - no retail I'm afraid.
 @match portal|greenway
 The three trees point the way to the heart of the forest.
 @match darkforest
@@ -3041,11 +3040,7 @@ x 14
 y 21
 arch note
 msg
-Yes this is all my treasure
-years of making high class jewelry
-for the weathiest patrons and this is
-all I have to show for it.
-I sure hope no-one finds this and takes it...
+Yes this is all my treasure years of making high class jewelry for the weathiest patrons and this is all I have to show for it.  I sure hope no-one finds this and takes it...
 endmsg
 end
 arch random_gem
