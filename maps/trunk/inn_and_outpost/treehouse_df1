@@ -8,7 +8,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  2004-05-30 Avion
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-02-03 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -236,8 +236,7 @@ msg
 @match who|what|job|guard|duty
 We are on watch.
 @match watch
-The princess has said we
-must keep watch on this part of the  forest.
+The princess has said we must keep watch on this part of the forest.
 @match forest
 The Dark forest is a chaotic and dangerous place.
 @match princess
