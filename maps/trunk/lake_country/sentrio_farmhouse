@@ -8,7 +8,7 @@ enter_x 4
 enter_y 18
 msg
 Created:  2007-05-23 Nicolas Weeger
-Modified: 2011-10-30 Rick Tanner
+Modified: 2012-02-03 Rick Tanner
 endmsg
 maplore
 @quest Lursendis
@@ -1478,11 +1478,11 @@ That is...
 
 I forgot exactly what they eat...
 @match egg|eggs
-Of course they lay eggs. But they require special food, mind you, since they are special chicken!
+Of course they lay eggs.  But they require special food, mind you, since they are special chicken!
 @match chicken|chickens
-Yes, those are special chicken, trained for combat. Trust me, you don't want to bother them!
+Yes, those are special chicken, trained for combat.  Trust me, you don't want to bother them!
 @match *
-Hello, I don't often see visitors. Please feel free to look around, but don't bother the chickens, please.
+Hello, I don't often see visitors.  Please feel free to look around, but don't bother the chickens, please.
 endmsg
 x 13
 y 5
