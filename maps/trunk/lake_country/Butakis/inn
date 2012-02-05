@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2012-02-05 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -677,9 +677,9 @@ msg
 @match what|hear
 I have heard nothing interesting yet.
 @match why|who|you|money|bribe
-Oh, my boss bid me to do this job. I have to do it, since now I am in the guild.
+Oh, my boss bid me to do this job.  I have to do it, since now I am in the guild.
 @match guild|boss
-It's the guild of ebony tiger, thieves' guild. My boss is one of the low guildmasters. He's in the room left. If you want to join the guild, talk to him.
+It's the guild of ebony tiger, thieves' guild.  My boss is one of the low guildmasters.  He's in the room left.  If you want to join the guild, talk to him.
 @match they
 Those sitting near the main door.
 @match *
@@ -1500,8 +1500,7 @@ name Sneaky, the thief
 msg
 @match join
 What?! *YOU* want to join the 'Guild'?
-Hahahaha, ok you can join *IF* you can find it.
-Hope you have better eyesight than that other chump - hahaha.
+Hahahaha, ok you can join *IF* you can find it.  Hope you have better eyesight than that other chump - hahaha.
 @match *
 Get out of here! This is my room.
 endmsg
