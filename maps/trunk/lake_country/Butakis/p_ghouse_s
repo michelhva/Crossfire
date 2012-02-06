@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1995-04-13
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2012-02-06 Rick Tanner
 endmsg
 end
 arch dun10
@@ -468,13 +468,11 @@ arch guard
 msg
 @match visit|meet|see|talk
 Who are you visiting?
-Let me guess. Wist? or Twis? Duan? Fiery? Joey?
+Let me guess.  Wist? or Twis? Duan? Fiery? Joey?
 @match Wist|Twis|Duan|Fiery|Joey
-Okay. But be careful.
-OPEN THE GATE!!! ...
+Okay. But be careful.  OPEN THE GATE!!! ...
 @match monster|treasure
-There is no monsters or treasure here.
-This is prison. Only the most dangerous criminals of the lands are imprisoned here.
+There is no monsters or treasure here.  This is prison. Only the most dangerous criminals of the lands are imprisoned here.
 @match *
 Stranger! What are you doing here?
 No loitering here! Go to the bar and get a drink if you have nothing to do.
@@ -1155,13 +1153,11 @@ arch guard
 msg
 @match visit|meet|see|talk
 Who are you visiting?
-Let me guess. Wist? or Twis? Duan? Fiery? Joey?
+Let me guess.  Wist? or Twis? Duan? Fiery? Joey?
 @match Wist|Twis|Duan|Fiery|Joey
-Okay. But be careful.
-OPEN THE GATE!!! ...
+Okay. But be careful.  OPEN THE GATE!!! ...
 @match monster|treasure
-There is no monsters or treasure here.
-This is prison. Only the most dangerous criminals of the lands are imprisoned here.
+There is no monsters or treasure here.  This is prison. Only the most dangerous criminals of the lands are imprisoned here.
 @match *
 Stranger! What are you doing here?
 No loitering here! Go to the bar and get a drink if you have nothing to do.
