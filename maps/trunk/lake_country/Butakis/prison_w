@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  1995-03-28
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2012-02-07 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1471,7 +1471,7 @@ arch knight
 name Executioner
 msg
 @match yes
-Finally. Here it goes.
+Finally.  Here it goes.
 @match *
 Do you have the order to terminate these vermins?  I can't wait anymore!
 endmsg
