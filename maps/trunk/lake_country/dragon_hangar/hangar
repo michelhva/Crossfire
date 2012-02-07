@@ -7,7 +7,7 @@ height 32
 enter_x 15
 msg
 Created:  2005-10-20 Gene Alexander
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2012-02-07 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -4002,8 +4002,7 @@ end
 arch sign
 name Dragon express
 msg
-Please take your litter with you.
-No alcohol allowed in the terminal!
+Please take your litter with you.  No alcohol allowed in the terminal!
 endmsg
 x 12
 y 1
@@ -4036,8 +4035,7 @@ arch guildmaster
 name old man
 msg
 @match *
-You can pay your ticket either with
-platinum, gold or silver.
+You can pay your ticket either with platinum, gold or silver.
 endmsg
 x 12
 y 4
@@ -6365,8 +6363,7 @@ end
 arch sign
 name Dragon express
 msg
-Please take your litter with you.
-No alcohol allowed in the terminal!
+Please take your litter with you.  No alcohol allowed in the terminal!
 endmsg
 x 19
 y 1
@@ -10852,8 +10849,7 @@ arch invis_exit
 name navar
 slaying /world/world_121_116
 msg
-The random ride is heading for
-Navar City today.
+The random ride is heading for Navar City today.
 endmsg
 hp 37
 sp 46
@@ -10872,8 +10868,7 @@ arch invis_exit
 name port joseph
 slaying /world/world_101_114
 msg
-The random ride is heading for
-Port Joseph today.
+The random ride is heading for Port Joseph today.
 endmsg
 hp 16
 sp 39
@@ -10892,8 +10887,7 @@ arch invis_exit
 name brest
 slaying /world/world_107_123
 msg
-The random ride is heading for
-Brest today.
+The random ride is heading for Brest today.
 endmsg
 hp 32
 sp 30
@@ -10973,8 +10967,7 @@ arch invis_exit
 name nurnberg
 slaying /pup_land/nurnberg/city
 msg
-The random ride is heading for
-Nurnberg today.
+The random ride is heading for Nurnberg today.
 endmsg
 hp 25
 sp 15
@@ -10992,8 +10985,7 @@ end
 arch invis_exit
 slaying /world/world_109_126
 msg
-The random ride is heading for
-Lake Country today.
+The random ride is heading for Lake Country today.
 endmsg
 hp 16
 sp 20
