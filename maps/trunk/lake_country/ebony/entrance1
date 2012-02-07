@@ -8,7 +8,7 @@ enter_x 13
 enter_y 14
 msg
 Created:  1995-04-22
-Modified: 2011-11-11 Andreas Kirschbaum
+Modified: 2012-02-07 Rick Tanner
 endmsg
 end
 arch marble
@@ -1736,8 +1736,7 @@ x 11
 end
 arch magic_mouth
 msg
-You step into a dark eerie corridor.
-Smell of death lies beyond.
+You step into a dark eerie corridor.  Smell of death lies beyond.
 endmsg
 x 11
 y 1
@@ -1756,8 +1755,7 @@ y 1
 end
 arch magic_mouth
 msg
-You step into a dark eerie corridor.
-Smell of death lies beyond.
+You step into a dark eerie corridor.  Smell of death lies beyond.
 endmsg
 x 11
 y 2
@@ -2225,18 +2223,13 @@ arch thief
 name low guildguard
 msg
 @match test
-You will find out ... hee ..
-Well I can give you few lucky numbers if you want.
+You will find out ... hee .. Well I can give you few lucky numbers if you want.
 @match lucky|number
-I will tell you the first three. You have to find out the rest yourself.
-Now listen: 10, 5 and 2.
-Now do you intend to take the test?
+I will tell you the first three.  You have to find out the rest yourself. Now listen: 10, 5 and 2.  Now do you intend to take the test?
 @match yes
 So be it!
 @match *
-Hello, we don't welcome strangers.
-Now be warned and go back.
-If you intend to go in. You must have pass the test.
+Hello, we don't welcome strangers.  Now be warned and go back.  If you intend to go in.  You must have pass the test.
 endmsg
 hp 500
 x 14
@@ -2383,7 +2376,7 @@ end
 arch lake
 name small pond
 msg
-You find nothing interesting here
+You find nothing interesting here.
 endmsg
 x 14
 y 13
