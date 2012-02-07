@@ -9,7 +9,7 @@ width 25
 height 25
 msg
 Created:  1995-04-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2011-11-11 Andreas Kirschbaum
+Modified: 2012-02-07 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1957,11 +1957,9 @@ msg
 @match door|exit
 Do you deserve to be a guild member if you can't even find the door by yourself!!??
 @match *
-Hello stranger! So you want to be a member of the guild!? Well, since you passed the test, I will let you in the guild. There are many things that the guild provide you.
-Make your contributions on time, remember! And be a good fellow.
-Okay you may go now. You have to search the rooms for the master keys of thievery, which you may have and use as symbol of this guild.
+Hello stranger! So you want to be a member of the guild!? Well, since you passed the test, I will let you in the guild.  There are many things that the guild provide you.  Make your contributions on time, remember! And be a good fellow.  Okay you may go now.  You have to search the rooms for the master keys of thievery, which you may have and use as symbol of this guild.
 @match symbol|thivery
-You may use the master key for many uses. Keep them safe and you will find it useful.
+You may use the master key for many uses.  Keep them safe and you will find it useful.
 endmsg
 face guildmaste.111
 hp 3000
@@ -2598,8 +2596,7 @@ arch smith
 name blackmarket master
 msg
 @match *
-You have to find out where to get the goodies for trading.
-I have no other helpful information to give you.
+You have to find out where to get the goodies for trading.  I have no other helpful information to give you.
 endmsg
 x 14
 y 22
@@ -2878,7 +2875,7 @@ arch bracers_dex
 name Essence of Flame
 name_pl Essences of Flame
 msg
-It's said to be from the spirit of an efreet. It burns with red hot fury.
+It's said to be from the spirit of an efreet.  It burns with red hot fury.
 endmsg
 face burnout.111
 Cha 1
@@ -3250,11 +3247,11 @@ arch viking
 name viking guildguard
 msg
 @match door|secret|door
-The door is between two of us. Go straight.
+The door is between two of us.  Go straight.
 @match key
-Oh yeah. You need to have the Master key of thievery to enter next room. The keys are hidden under the table.
+Oh yeah.  You need to have the Master key of thievery to enter next room.  The keys are hidden under the table.
 @match thievery
-The master key of thievery is a symbol of the guild, besides being a key. It has many uses and opens many doors that open guildmembers are allowed.
+The master key of thievery is a symbol of the guild, besides being a key.  It has many uses and opens many doors that open guildmembers are allowed.
 @match *
 Hello fellow guild members.
 endmsg
@@ -3496,7 +3493,7 @@ arch mithril_chainmail
 name mithril chainmail of Winter
 name_pl mithril chainmails of Winter
 msg
-This special chainmail is covered with patterns of snow flake. It was created by ancient high elves.
+This special chainmail is covered with patterns of snow flake.  It was created by ancient high elves.
 endmsg
 Cha 3
 x 20
@@ -3760,9 +3757,7 @@ end
 arch altar
 slaying fragment-of-chaos
 msg
-A magical hand appears, grabing your
-offering and gesturing you to take
-your price.
+A magical hand appears, grabing your offering and gesturing you to take your price.
 endmsg
 food 1
 x 22
@@ -3778,7 +3773,7 @@ y 19
 end
 arch sign_e
 msg
-You need a fragment of chaos to trade for it. The Gauntlets are an ingenious artifact that were made from the lost knowledge of the element of electricity. It tunes the wearer in every espect to the element. However it has some undesirable effects, as the most powerful artifacts usually do.
+You need a fragment of chaos to trade for it.  The Gauntlets are an ingenious artifact that were made from the lost knowledge of the element of electricity.  It tunes the wearer in every espect to the element.  However it has some undesirable effects, as the most powerful artifacts usually do.
 endmsg
 x 22
 y 19
@@ -3799,7 +3794,7 @@ y 20
 end
 arch sign_e
 msg
-You need 30,000 diamonds to trade for this item. Think of a way to transport the diamonds here. The ring turns the wearer into a super-hero with incredible fighting power.
+You need 30,000 diamonds to trade for this item.  Think of a way to transport the diamonds here.  The ring turns the wearer into a super-hero with incredible fighting power.
 endmsg
 x 22
 y 20
@@ -3821,7 +3816,7 @@ y 21
 end
 arch sign_e
 msg
-You need a Thunderfist to trade for this item. These pair of bracers have the power to turn the wearer semi-ethereal and protect it from physical attacks. However it weakens the wearer both mentally and physically.
+You need a Thunderfist to trade for this item.  These pair of bracers have the power to turn the wearer semi-ethereal and protect it from physical attacks.  However it weakens the wearer both mentally and physically.
 endmsg
 x 22
 y 21
