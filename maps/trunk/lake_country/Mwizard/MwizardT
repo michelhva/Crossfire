@@ -9,7 +9,7 @@ enter_x 10
 enter_y 10
 msg
 Created:  1995-04-26
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2012-02-07 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -1688,7 +1688,7 @@ end
 arch dragon_shield
 name Dragon Shield
 msg
-This Dragon Shield has both red and green scales carefully smithed in. It will protect you well from fire and cold alike.
+This Dragon Shield has both red and green scales carefully smithed in.  It will protect you well from fire and cold alike.
 endmsg
 x 10
 y 2
@@ -1713,7 +1713,7 @@ y 4
 end
 arch magic_mouth
 msg
-The floor here is missing something made of gold
+The floor here is missing something made of gold.
 endmsg
 x 10
 y 5
@@ -1802,8 +1802,7 @@ y 13
 end
 arch uw_shield
 msg
-This shield is renowned throughout time, a fairy tale item for the wizard and warrior alike.
-The last time this was seen was on the mighty demon Belzebub.
+This shield is renowned throughout time, a fairy tale item for the wizard and warrior alike.  The last time this was seen was on the mighty demon Belzebub.
 endmsg
 x 10
 y 13
