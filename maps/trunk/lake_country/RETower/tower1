@@ -8,7 +8,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  1995-04-03 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2012-02-07 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1824,7 +1824,7 @@ y 23
 end
 arch sign
 msg
-This room is quit a bit harder than the room to the north. Monsters move in a pattern. You will get a bit more than regular experience out of them.
+This room is quit a bit harder than the room to the north.  Monsters move in a pattern.  You will get a bit more than regular experience out of them.
 endmsg
 x 8
 y 23
@@ -2156,7 +2156,7 @@ end
 arch sign
 msg
 <<Hard room>>
-When you are ready, step on the teleporter to the right, and say the word, 'Charge'. You will be teleported within the fences. The exit it located at the other end of the room, a teleporter. Test you courage and strength.
+When you are ready, step on the teleporter to the right, and say the word, 'Charge'.  You will be teleported within the fences.  The exit it located at the other end of the room, a teleporter.  Test you courage and strength.
 endmsg
 x 10
 y 23
@@ -3564,7 +3564,7 @@ x 18
 end
 arch magic_mouth
 msg
-If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction. Clear it up and it will function again.
+If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction.  Clear it up and it will function again.
 endmsg
 x 18
 y 1
@@ -3860,7 +3860,7 @@ y 5
 end
 arch magic_mouth
 msg
-If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction. Clear it up and it will function again.
+If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction.  Clear it up and it will function again.
 endmsg
 x 19
 y 6
@@ -4203,7 +4203,7 @@ y 14
 end
 arch sign
 msg
-One dark elf at the end of the room holds the key to the treasure room. Kill him, get the key and take your rewards.
+One dark elf at the end of the room holds the key to the treasure room.  Kill him, get the key and take your rewards.
 endmsg
 x 20
 y 14
@@ -4300,7 +4300,7 @@ x 21
 end
 arch magic_mouth
 msg
-If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction. Clear it up and it will function again.
+If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction.  Clear it up and it will function again.
 endmsg
 x 21
 y 1
@@ -4345,7 +4345,7 @@ y 3
 end
 arch magic_mouth
 msg
-If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction. Clear it up and it will function again.
+If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction.  Clear it up and it will function again.
 endmsg
 x 21
 y 4
@@ -4817,7 +4817,7 @@ y 3
 end
 arch magic_mouth
 msg
-If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction. Clear it up and it will function again.
+If you can't teleport out with the right activation word, it is only because someone litter here and made the teleporter malfunction.  Clear it up and it will function again.
 endmsg
 x 23
 y 4
