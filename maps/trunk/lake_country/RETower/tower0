@@ -8,7 +8,7 @@ enter_x 8
 enter_y 25
 msg
 Created:  1995-04-03
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2012-02-07 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -326,10 +326,9 @@ arch smith
 name Ninja Master, Galla
 msg
 @match yes
-Okay. You may go in. On each level you have to pay admission fee. Now I have opened the doors for you.
-Read the warnings in the lobby!
+Okay.  You may go in.  On each level you have to pay admission fee.  Now I have opened the doors for you.  Read the warnings in the lobby!
 @match *
-Hello adventurer. Do you intend to use the training facilities upstairs?
+Hello adventurer.  Do you intend to use the training facilities upstairs?
 endmsg
 face ninja.111
 x 2
@@ -913,7 +912,7 @@ end
 arch sign
 msg
 Warning 1:
-Do not litter on teleporters, or other transporters; or have it littered. That will stop it from properly functioning.
+Do not litter on teleporters, or other transporters; or have it littered.  That will stop it from properly functioning.
 endmsg
 x 8
 y 8
@@ -1032,7 +1031,7 @@ end
 arch sign
 msg
 Warning 2:
-Specially named monsters maybe a lot harder than others of its kind. They selected out of its kind to perform certain functions.
+Specially named monsters maybe a lot harder than others of its kind.  They selected out of its kind to perform certain functions.
 endmsg
 x 9
 y 8
