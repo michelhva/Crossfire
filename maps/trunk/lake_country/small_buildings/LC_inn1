@@ -7,7 +7,7 @@ height 15
 enter_y 3
 msg
 Created:  1995-03-23
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2012-02-09 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -144,7 +144,7 @@ y 7
 end
 arch magic_mouth
 msg
-The bartender says, "Drop 10 platinums and you can enjoy the food; while sit at my right and chat. You may find some useful information, only if you buy my food, that is."
+The bartender says, "Drop 10 platinums and you can enjoy the food; while sit at my right and chat.  You may find some useful information, only if you buy my food, that is."
 endmsg
 x 1
 y 8
@@ -226,7 +226,7 @@ y 1
 end
 arch magic_mouth
 msg
-Bartender says, "Welcome traveler, want some food or drink? Ask me about rooms if you want some rest between your adventures.
+Bartender says, "Welcome traveler, want some food or drink? Ask me about rooms if you want some rest between your adventures."
 endmsg
 x 2
 y 2
@@ -237,7 +237,7 @@ y 2
 end
 arch magic_mouth
 msg
-Bartender says, "Welcome traveler, want some food or drink? Ask me about rooms if you want some rest between your adventures.
+Bartender says, "Welcome traveler, want some food or drink? Ask me about rooms if you want some rest between your adventures."
 endmsg
 x 2
 y 3
@@ -264,7 +264,7 @@ y 7
 end
 arch magic_mouth
 msg
-The bartender says, "Drop 10 platinums and you can enjoy the food; while sit at my right and chat. You may find some useful information, only if you buy my food, that is."
+The bartender says, "Drop 10 platinums and you can enjoy the food; while sit at my right and chat.  You may find some useful information, only if you buy my food, that is."
 endmsg
 x 2
 y 8
@@ -374,7 +374,7 @@ y 7
 end
 arch magic_mouth
 msg
-The bartender says, "Drop 10 platinums and you can enjoy the food; while sit at my right and chat. You may find some useful information, only if you buy my food, that is."
+The bartender says, "Drop 10 platinums and you can enjoy the food; while sit at my right and chat.  You may find some useful information, only if you buy my food, that is."
 endmsg
 x 3
 y 8
@@ -485,7 +485,7 @@ y 7
 end
 arch magic_mouth
 msg
-The bartender says, "Drop 10 platinums and you can enjoy the food; while sit at my right and chat. You may find some useful information, only if you buy my food, that is."
+The bartender says, "Drop 10 platinums and you can enjoy the food; while sit at my right and chat.  You may find some useful information, only if you buy my food, that is."
 endmsg
 x 4
 y 8
@@ -583,7 +583,7 @@ arch guildmaster
 name story teller
 msg
 @match *
-"Sit down by the fire and listen.".
+"Sit down by the fire and listen."
 endmsg
 x 5
 y 2
@@ -605,8 +605,7 @@ end
 arch sign_e
 name Rooms
 msg
-Rooms are available for 100 gp. This gives you a day access to the facilities.
-There is a dining room available for guests for an additional small fee.
+Rooms are available for 100 gp.  This gives you a day access to the facilities.  There is a dining room available for guests for an additional small fee.
 endmsg
 x 5
 y 5
