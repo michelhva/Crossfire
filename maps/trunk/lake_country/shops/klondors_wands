@@ -11,7 +11,7 @@ enter_x 15
 enter_y 15
 msg
 Created:  1995-03-23
-Modified: 2011-10-10 Rick Tanner
+Modified: 2012-02-08 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1274,8 +1274,7 @@ y 15
 end
 arch magic_mouth
 msg
-Klondor says, "Take your time to check my fine collection of wands, the gems are bonus collection.
-If you have anything to identify, I can help you. Just drop 20 gold coins for each item."
+Klondor says, "Take your time to check my fine collection of wands, the gems are bonus collection.  If you have anything to identify, I can help you.  Just drop 20 gold coins for each item."
 endmsg
 x 12
 y 16
@@ -1831,8 +1830,8 @@ y 15
 end
 arch scroll
 msg
-Hello my friend. Take the beers if you'd like. It's my hospitality.
-                       -Klondo
+Hello my friend.  Take the beers if you'd like.  It's my hospitality.
+ -Klondo
 endmsg
 x 17
 y 15
