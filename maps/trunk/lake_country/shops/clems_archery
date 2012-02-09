@@ -12,7 +12,7 @@ enter_x 15
 enter_y 14
 msg
 Created:  1995-03-23
-Modified: 2011-10-10 Rick Tanner
+Modified: 2012-02-08 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -964,13 +964,13 @@ arch warrior_1
 name warrior, Clem
 msg
 @match Butakis|fortress
-You need to know the password to enter the fortress. Otherwise it's going to be very dangerous.
+You need to know the password to enter the fortress.  Otherwise it's going to be very dangerous.
 @match password
-Oh, Well. You don't seem to me like a bad person; so I will tell you the password. It's "windwalk". But don't tell anyone else. There is already enough trouble these days. Especially some thieves start to cause them in the fortress.
+Oh, Well.  You don't seem to me like a bad person; so I will tell you the password.  It's "windwalk". But don't tell anyone else.  There is already enough trouble these days.  Especially some thieves start to cause them in the fortress.
 @match thief|thieves
-Yes. I heard there is a new found thief guild called the ebony tiger. They have infiltrated into the fortress. Lord Butakis is trying to root them out. The guildmaster and guild itself is unknown to me or anyone I know.
+Yes.  I heard there is a new found thief guild called the ebony tiger.  They have infiltrated into the fortress.  Lord Butakis is trying to root them out.  The guildmaster and guild itself is unknown to me or anyone I know.
 @match *
-Hello, you are welcome! Please take a look at my fine collections. In the display box are some of the equipment I used..
+Hello, you are welcome! Please take a look at my fine collections.  In the display box are some of the equipment I used..
 endmsg
 face warrior.131
 hp 500
