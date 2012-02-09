@@ -11,7 +11,7 @@ enter_x 16
 enter_y 21
 msg
 Created:  1995-03-23
-Modified: 2011-10-10 Rick Tanner
+Modified: 2012-02-08 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -666,7 +666,7 @@ end
 arch block_door_closed
 name trophy stand
 msg
-You can take your prize now
+You can take your prize now.
 endmsg
 face flagstone.111
 x 3
@@ -1089,7 +1089,7 @@ Crown of Might(Con+1, Str+1, Dex+1)
 Your quested items are three Glowing Crystals from the GemTunnel.
 Drop your quested items and you may take the crown..
 ***Special***
-Put one crystal on each of the three altars up there. Oldie Moldie has bad memory, so bring all three together
+Put one crystal on each of the three altars up there.  Oldie Moldie has bad memory, so bring all three together
 endmsg
 x 5
 y 18
@@ -1120,7 +1120,7 @@ end
 arch block_door_closed
 name trophy stand
 msg
-You can take your prize now
+You can take your prize now.
 endmsg
 face flagstone.111
 x 5
@@ -1951,7 +1951,7 @@ arch smith
 name Oldie Moldie
 msg
 @match *
-Inside are my collection of fine gems. Out at both wings are my collections of rare crowns of the lands. I don't use them any more. So I will give them to worthy adventurers.
+Inside are my collection of fine gems.  Out at both wings are my collections of rare crowns of the lands.  I don't use them any more.  So I will give them to worthy adventurers.
 endmsg
 x 11
 y 13
@@ -2854,7 +2854,7 @@ arch sign
 msg
 Crown of Ice (Protected: cold, Attuned: cold, Repelled: fire)
 Your quested item is the heart of Takuse, the fiery dragon.
-Drop your quested items and you may take the crown.
+Drop your quested items and you may take the crown..
 endmsg
 x 16
 y 18
@@ -3099,7 +3099,7 @@ arch sign
 msg
 Crown the Elements(Protected: fire, cold, electricity, Attuned: electricity)
 Your quested item is the Winterblade owned by the Ice dragon highlord.
-Drop your quested items and you may take the crown.
+Drop your quested items and you may take the crown..
 endmsg
 x 17
 y 18
@@ -3131,7 +3131,7 @@ end
 arch block_door_closed
 name trophy stand
 msg
-You can take your prize now
+You can take your prize now.
 endmsg
 face flagstone.111
 x 17
