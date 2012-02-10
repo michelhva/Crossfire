@@ -8,7 +8,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2002-10-27 Todd Mitchell
-Modified: 2009-07-18 Kevin Bulgrien
+Modified: 2012-02-10 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -327,8 +327,7 @@ arch dwarf_priest
 name Ingo
 msg
 @match *
-I would be happy to assist you.
-You will find my prices quite reasonable.
+I would be happy to assist you.  You will find my prices quite reasonable.
 endmsg
 x 3
 y 1
@@ -377,18 +376,13 @@ arch thief_1
 name quiet man in corner
 msg
 @match signal|tower|bandits
-Aye, those scum make rotten robbers.
-I had a good life until they chased
-off those merchants.
+Aye, those scum make rotten robbers.  I had a good life until they chased off those merchants.
 @match merchants
-I hope someone kills those bastards so
-that the caravans will come here again
+I hope someone kills those bastards so that the caravans will come here again.
 @match yes
-Well & good then.  I think some strong
-mead may help take my mind off those
-stupid bandits.
+Well & good then.  I think some strong mead may help take my mind off those stupid bandits.
 @match *
-Are you buying this round
+Are you buying this round?
 endmsg
 hp 35
 x 3
@@ -513,12 +507,9 @@ Bless you my son.  Join us at our next service.
 @match no
 Then I pray your soul is not eaten by the old ones.
 @match eaten|old|ones
-The dark gods that haunt the wilds.
-They feed upon the unfortunate souls not protected by the covenent of God.
+The dark gods that haunt the wilds.  They feed upon the unfortunate souls not protected by the covenent of God.
 @match *
-I'm retrieving Father Veratin's chickens.
-I fear Grumm will be angered, and we so wish him to attend one of our services.
-He is a good man, but not a man of God. Are you a man of God?
+I'm retrieving Father Veratin's chickens.  I fear Grumm will be angered, and we so wish him to attend one of our services.  He is a good man, but not a man of God. Are you a man of God?
 endmsg
 x 4
 y 11
@@ -601,10 +592,7 @@ Good day for it eh?
 @match it?
 Kicking up and having a pint.
 @match dwarves|mine
-Ya, I hired on to guard the mine.
-Good work if you get along with dwarves.
-Funny, they don't let on where they really live.
-They surely don't live in that dingy mine.
+Ya, I hired on to guard the mine.  Good work if you get along with dwarves.  Funny, they don't let on where they really live.  They surely don't live in that dingy mine.
 endmsg
 x 5
 y 6
@@ -1161,9 +1149,7 @@ His chickens are always in my garden!
 @match priest
 Veratin, the priest of the small church next door.
 @match *
-Greetings I am Grumm, welcome to my inn.
-Rooms and worship facilities for Mostrai are available upstairs for a modest price of 50 gold.
-You get a full 28 hours for that by the way.
+Greetings I am Grumm, welcome to my inn.  Rooms and worship facilities for Mostrai are available upstairs for a modest price of 50 gold.  You get a full 28 hours for that by the way.
 endmsg
 x 11
 y 2
@@ -1900,8 +1886,7 @@ arch c_man
 name Riakus
 msg
 @match *
-Hello stranger.  Please tell us news from other lands.
-We get so few visitors..
+Hello stranger.  Please tell us news from other lands.  We get so few visitors..
 endmsg
 x 18
 y 6
