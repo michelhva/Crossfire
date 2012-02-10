@@ -8,7 +8,7 @@ enter_x 4
 enter_y 1
 msg
 Created:  2007-05-26 Nicolas Weeger
-Modified: 2011-11-11 Andreas Kirschbaum
+Modified: 2012-02-10 Rick Tanner
 endmsg
 maplore
 @quest Lursendis
@@ -394,8 +394,7 @@ arch lich
 name Sentrio
 msg
 @match chicken|egg|eggs
-Oh, you want some eggs from my farm? Just go there, and ask the farmer.
-The farm is somewhere on the road to, hum, how is it called? Trainer Central? Something like that.
+Oh, you want some eggs from my farm? Just go there, and ask the farmer.  The farm is somewhere on the road to, hum, how is it called? Trainer Central? Something like that.
 @match experiments
 Yes, I'm researching the source of magic.
 @match *
