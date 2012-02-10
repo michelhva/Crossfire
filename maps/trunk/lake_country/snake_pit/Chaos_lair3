@@ -9,7 +9,7 @@ enter_x 7
 enter_y 35
 msg
 Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
 arch large_stones
@@ -601,7 +601,7 @@ arch bracers_dex
 name Essence of Flame
 name_pl Essences of Flame
 msg
-It's said to be from the spirit of an efreet. It burns with red hot fury.
+It's said to be from the spirit of an efreet.  It burns with red hot fury.
 endmsg
 face burnout.111
 Cha 1
@@ -1854,7 +1854,7 @@ y 35
 end
 arch magic_mouth
 msg
-You feel the vibrating and burning air. Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
+You feel the vibrating and burning air.  Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 5
 y 35
@@ -1935,7 +1935,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-You sense that the Chaos Lord is very near. Victory in the last battle makes you feel very lucky. But how long will your luck last?
+You sense that the Chaos Lord is very near.  Victory in the last battle makes you feel very lucky.  But how long will your luck last?
 endmsg
 x 6
 y 5
@@ -2108,7 +2108,7 @@ y 34
 end
 arch magic_mouth
 msg
-You feel the vibrating and burning air around you. Though you have experienced thousands of battles, this feeling makes you suffocate in your own adrenaline.
+You feel the vibrating and burning air around you.  Though you have experienced thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 6
 y 34
@@ -2197,7 +2197,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-You sense that the Chaos Lord is very near. Victory in the last battle makes you feel very lucky. But how long will your luck last?
+You sense that the Chaos Lord is very near.  Victory in the last battle makes you feel very lucky.  But how long will your luck last?
 endmsg
 x 7
 y 5
@@ -2406,7 +2406,7 @@ y 35
 end
 arch magic_mouth
 msg
-You feel the vibrating and burning air. Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
+You feel the vibrating and burning air.  Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 7
 y 35
@@ -2487,7 +2487,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-You sense that the Chaos Lord is very near. Victory in the last battle makes you feel very lucky. But how long will your luck last?
+You sense that the Chaos Lord is very near.  Victory in the last battle makes you feel very lucky.  But how long will your luck last?
 endmsg
 x 8
 y 5
@@ -2660,7 +2660,7 @@ y 34
 end
 arch magic_mouth
 msg
-You feel the vibrating and burning air around you. Though you have experienced thousands of battles, this feeling makes you suffocate in your own adrenaline.
+You feel the vibrating and burning air around you.  Though you have experienced thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 8
 y 34
@@ -2749,7 +2749,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-You sense that the Chaos Lord is very near. Victory in the last battle makes you feel very lucky. But how long will your luck last?
+You sense that the Chaos Lord is very near.  Victory in the last battle makes you feel very lucky.  But how long will your luck last?
 endmsg
 x 9
 y 5
@@ -2948,7 +2948,7 @@ y 35
 end
 arch magic_mouth
 msg
-You feel the vibrating and burning air. Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
+You feel the vibrating and burning air.  Though you have experience thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 9
 y 35
@@ -3227,7 +3227,7 @@ y 34
 end
 arch magic_mouth
 msg
-You feel the vibrating and burning air around you. Though you have experienced thousands of battles, this feeling makes you suffocate in your own adrenaline.
+You feel the vibrating and burning air around you.  Though you have experienced thousands of battles, this feeling makes you suffocate in your own adrenaline.
 endmsg
 x 10
 y 34
@@ -4034,8 +4034,7 @@ y 12
 end
 arch sign
 msg
-Place where the pillars get teleported.
-The pillars that are teleported need to be on top. I put them at the bottom of the file to be safe. Same with walls in Chaos_lair4.
+Place where the pillars get teleported.  The pillars that are teleported need to be on top.  I put them at the bottom of the file to be safe.  Same with walls in Chaos_lair4.
 endmsg
 x 14
 y 14
@@ -4224,7 +4223,7 @@ y 8
 end
 arch sign
 msg
-One third chance the altar is activate
+One third chance the altar is activate.
 endmsg
 x 15
 y 10
