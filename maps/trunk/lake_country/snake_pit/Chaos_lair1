@@ -9,7 +9,7 @@ enter_x 16
 enter_y 30
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2012-02-10 Rick Tanner
 endmsg
 maplore
 @def ChaosLair
@@ -3190,7 +3190,7 @@ end
 arch magic_ear
 msg
 @match Orcus|Balrog|Asmodeus|Jessy
-A parade of guards and guardians appeared to greet. You hope no one discovers you.
+A parade of guards and guardians appeared to greet.  You hope no one discovers you.
 endmsg
 x 14
 y 23
@@ -3227,10 +3227,9 @@ Gatekeeper! OPEN!!.
 @match kill
 Great! We all need some excercises!
 @match sacrifice
-Aha, the more fresh flesh the better.
-Put the sacrifice away!!
+Aha, the more fresh flesh the better.  Put the sacrifice away!!
 @match *
-You'd better leave before I throw you out or summon more guards
+You'd better leave before I throw you out or summon more guards!
 endmsg
 Wis 30
 hp 5500
@@ -3397,7 +3396,7 @@ y 12
 end
 arch magic_mouth
 msg
-A feeling of being discovered creeps up your spine
+A feeling of being discovered creeps up your spine.
 endmsg
 x 15
 y 13
@@ -3412,7 +3411,7 @@ y 14
 end
 arch magic_mouth
 msg
-You hope nobody will discover will discover you, not too soon
+You hope nobody will discover will discover you, not too soon.
 endmsg
 x 15
 y 15
@@ -4631,7 +4630,7 @@ end
 arch magic_ear
 msg
 @match Orcus|Balrog|Asmodeus|Jessy
-A parade of guards and guardians appeared to greet. You hope no one discovers you.
+A parade of guards and guardians appeared to greet.  You hope no one discovers you.
 endmsg
 x 19
 y 23
@@ -4668,10 +4667,9 @@ Gatekeeper! OPEN!!.
 @match kill
 Great! We all need some excercises!
 @match sacrifice
-Aha, the more fresh flesh the better.
-Put the sacrifice away!!
+Aha, the more fresh flesh the better.  Put the sacrifice away!!
 @match *
-You'd better leave before I throw you out or summon more guards
+You'd better leave before I throw you out or summon more guards!
 endmsg
 Wis 30
 hp 5500
