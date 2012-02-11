@@ -11,7 +11,7 @@ enter_x 10
 enter_y 16
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -1194,9 +1194,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-I help supply this guild. Usually, I
-only let members have access... but I
-see you are in need of help.
+I help supply this guild.  Usually, I only let members have access... but I see you are in need of help.
 endmsg
 x 9
 y 6
@@ -1934,17 +1932,12 @@ name Garlock the Great
 msg
 @match land
 @reply scorn I'm from Scorn.
-You do not come from here, I can tell
-by your strange accent. Where are you from?
+You do not come from here, I can tell by your strange accent.  Where are you from?
 @match scorn
-I have heard of that city. Far away it is, and in
-this age, many people do not travel far from
-their birthplace. You would do well to ask
-one of the elders about our magic lore.
+I have heard of that city.  Far away it is, and in this age, many people do not travel far from their birthplace.  You would do well to ask one of the elders about our magic lore.
 @match *
 @question land Why do you think I'm a stranger?
-You seem a wise and honorable one. A
-stranger in a strange land.
+You seem a wise and honorable one.  A stranger in a strange land.
 endmsg
 x 14
 y 12
@@ -2249,27 +2242,11 @@ arch guildmaster
 name Kaladon
 msg
 @match ETHERIC PLANE!
-Ah, you wish to know the balm of
-travelling. Very dangerous it is.
-Reminds me of a story. blah blah blah
+Ah, you wish to know the balm of travelling.  Very dangerous it is.  Reminds me of a story. blah blah blah
 @match balm of travelling
-You youngsters, always in a hurry with
-no time to hear my stories. If my
-memory serves me, you need the wing of
-a faerie dragon, freshy killed. Sing
-the rites of passage while adding in
-triplicate the water of sapphire, xan
-wing, & pixie wings. Stamp thrice upon
-the ground to bind the powers
-together. Apply the balm under a new
-moon and stamp thrice to invoke the
-portal. Do not wear metal, or the
-portal shall close!
+You youngsters, always in a hurry with no time to hear my stories.  If my memory serves me, you need the wing of a faerie dragon, freshy killed.  Sing the rites of passage while adding in triplicate the water of sapphire, xan wing, & pixie wings.  Stamp thrice upon the ground to bind the powers together.  Apply the balm under a new moon and stamp thrice to invoke the portal.  Do not wear metal, or the portal shall close!
 @match whispering
-TALK LOUDER! you young dolt, always
-waking old men from their naps...
-mutter... mutter... go study the world
-as I once did... mutter...
+TALK LOUDER! you young dolt, always waking old men from their naps... mutter... mutter... go study the world as I once did... mutter...
 @match *
 eh? What's that? stop whispering.
 endmsg
@@ -2321,28 +2298,16 @@ msg
 @match scorn
 @question wizard What wizard?
 @question etheric What is this "etheric" of which you speak?
-That city to the west? Yes, it is said a great
-wizard founded that place. He was a
-master of the etheric.
+That city to the west?  Yes, it is said a great wizard founded that place.  He was a master of the etheric.
 @match wizard
-Skud the Great. He is long since
-departed from our plane of existence.
+Skud the Great.  He is long since departed from our plane of existence.
 @match land
 @question ship Why wouldn't there be a ship to Scorn?
-You wish to return to yours? A more
-powerful mage could perform a word of
-recall, but I am too frail. I doubt it possible
-to charter a ship from that great city of Navar to
-sail to your distant city.
+You wish to return to yours? A more powerful mage could perform a word of recall, but I am too frail.  I doubt it possible to charter a ship from that great city of Navar to sail to your distant city.
 @match ship
-Few captains long to explore, and it
-is expensive to form an expedition. In this
-age they fear far waters, Navar, most of all
-fears.
+Few captains long to explore, and it is expensive to form an expedition.  In this age they fear far waters, Navar, most of all fears.
 @match etheric
-Kaladon, the wise, has dabbled in the
-etheric plane. If he's not alseep, he
-may answer your question.
+Kaladon, the wise, has dabbled in the etheric plane.  If he's not alseep, he may answer your question.
 endmsg
 x 16
 y 13
@@ -2436,31 +2401,19 @@ y 6
 carrying 10497
 arch book_clasp
 msg
-Go ye into the shady groves and summon
-the shadows there.  The elves in the
-wood know many magiks lost to us. A
-wise man understands we are brothers.
--- Caladon the Druid
+Go ye into the shady groves and summon the shadows there.  The elves in the wood know many magiks lost to us.  A wise man understands we are brothers.
+ - Caladon the Druid
 endmsg
 end
 arch scroll_2
 msg
-a balm of first aid may be alchemized
-through the careful application of the
-water of the wise and some mandrake
+A balm of first aid may be alchemized through the careful application of the water of the wise and some mandrake.
 root
 endmsg
 end
 arch tome
 msg
-I found these strange plants growing
-up north near the mystic pond.  I hope
-the will make my potions more potent.
-An old dwarf sold me this strange
-talisman. I must get the guildmaster
-to help me identify it.
-I need to ask Kaladon how to travel
-across the etheric plane
+I found these strange plants growing up north near the mystic pond.  I hope the will make my potions more potent.  An old dwarf sold me this strange talisman.  I must get the guildmaster to help me identify it.  I need to ask Kaladon how to travel across the etheric plane.
 endmsg
 end
 arch random_plant
