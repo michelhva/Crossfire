@@ -13,7 +13,7 @@ enter_x 1
 enter_y 10
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-10-30 Rick Tanner
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1288,7 +1288,6 @@ arch sign_e
 name Warning
 msg
 High level.
-
 endmsg
 x 5
 y 7
@@ -1517,11 +1516,7 @@ arch stair_3_up
 name high level
 slaying mlabscrntrd2
 msg
-You suddenly become greatly full of
-dread.
-
-
-
+You suddenly become greatly full of dread.
 endmsg
 hp 6
 sp 7
