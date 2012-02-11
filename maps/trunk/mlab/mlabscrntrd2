@@ -9,7 +9,7 @@ enter_x 6
 enter_y 7
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-10-31 Rick Tanner
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
 arch woodfloor2
@@ -868,8 +868,7 @@ y 17
 end
 arch magic_mouth
 msg
-You have a bad feeling about plundering that which is behind this door.
-You think about turning back and remember that few are compassionate towards thieves.
+You have a bad feeling about plundering that which is behind this door.  You think about turning back and remember that few are compassionate towards thieves.
 endmsg
 food 1
 x 6
@@ -3591,8 +3590,7 @@ end
 arch dragon_exit
 slaying /mlab/citydeclouds/cloudworlddecity
 msg
-You feel very tired.
-You dream of dragons and the sky...
+You feel very tired.  You dream of dragons and the sky...
 endmsg
 hp 29
 sp 112
