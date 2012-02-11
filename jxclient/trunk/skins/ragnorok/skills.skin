@@ -44,164 +44,164 @@ commandlist commandlist_use_skill_sorcery AND null GUI_EXECUTE_COMMAND use_skill
 
 # skills group
 gauge      act_lockpicking    skill_active null skill_inactive ACTIVE_SKILL_lockpicking WE commandlist_use_skill_lockpicking
-textgauge  res_lockpicking    gauge_gp gauge_gp_negative gauge_empty SKILL_lockpicking WE BLACK font_label commandlist_use_skill_lockpicking Lockpicking:
+textgauge  res_lockpicking    gauge_gp gauge_gp_negative gauge_empty SKILL_lockpicking WE BLACK font_label commandlist_use_skill_lockpicking Lockpicking: %T
 label_text label_lockpicking  font_label BLACK Lockpicking:
 
 gauge      act_hiding         skill_active null skill_inactive ACTIVE_SKILL_hiding WE commandlist_use_skill_hiding
-textgauge  res_hiding         gauge_gp gauge_gp_negative gauge_empty SKILL_hiding WE BLACK font_label commandlist_use_skill_hiding Hiding:
+textgauge  res_hiding         gauge_gp gauge_gp_negative gauge_empty SKILL_hiding WE BLACK font_label commandlist_use_skill_hiding Hiding: %T
 label_text label_hiding       font_label BLACK Hiding:
 
 gauge      act_stealing       skill_active null skill_inactive ACTIVE_SKILL_stealing WE commandlist_use_skill_stealing
-textgauge  res_stealing       gauge_gp gauge_gp_negative gauge_empty SKILL_stealing WE BLACK font_label commandlist_use_skill_stealing Stealing:
+textgauge  res_stealing       gauge_gp gauge_gp_negative gauge_empty SKILL_stealing WE BLACK font_label commandlist_use_skill_stealing Stealing: %T
 label_text label_stealing     font_label BLACK Stealing:
 
 gauge      act_bargaining     skill_active null skill_inactive ACTIVE_SKILL_bargaining WE commandlist_use_skill_bargaining
-textgauge  res_bargaining     gauge_gp gauge_gp_negative gauge_empty SKILL_bargaining WE BLACK font_label commandlist_use_skill_bargaining Bargaining:
+textgauge  res_bargaining     gauge_gp gauge_gp_negative gauge_empty SKILL_bargaining WE BLACK font_label commandlist_use_skill_bargaining Bargaining: %T
 label_text label_bargaining   font_label BLACK Bargaining:
 
 gauge      act_oratory        skill_active null skill_inactive ACTIVE_SKILL_oratory WE commandlist_use_skill_oratory
-textgauge  res_oratory        gauge_gp gauge_gp_negative gauge_empty SKILL_oratory WE BLACK font_label commandlist_use_skill_oratory Oratory:
+textgauge  res_oratory        gauge_gp gauge_gp_negative gauge_empty SKILL_oratory WE BLACK font_label commandlist_use_skill_oratory Oratory: %T
 label_text label_oratory      font_label BLACK Oratory:
 
 gauge      act_singing        skill_active null skill_inactive ACTIVE_SKILL_singing WE commandlist_use_skill_singing
-textgauge  res_singing        gauge_gp gauge_gp_negative gauge_empty SKILL_singing WE BLACK font_label commandlist_use_skill_singing Singing:
+textgauge  res_singing        gauge_gp gauge_gp_negative gauge_empty SKILL_singing WE BLACK font_label commandlist_use_skill_singing Singing: %T
 label_text label_singing      font_label BLACK Singing:
 
 gauge      act_inscription    skill_active null skill_inactive ACTIVE_SKILL_inscription WE commandlist_use_skill_inscription
-textgauge  res_inscription    gauge_gp gauge_gp_negative gauge_empty SKILL_inscription WE BLACK font_label commandlist_use_skill_inscription Inscription:
+textgauge  res_inscription    gauge_gp gauge_gp_negative gauge_empty SKILL_inscription WE BLACK font_label commandlist_use_skill_inscription Inscription: %T
 label_text label_inscription  font_label BLACK Inscription:
 
 gauge      act_fishing        skill_active null skill_inactive ACTIVE_SKILL_fishing WE commandlist_use_skill_fishing
-textgauge  res_fishing        gauge_gp gauge_gp_negative gauge_empty SKILL_fishing WE BLACK font_label commandlist_use_skill_fishing Fishing:
+textgauge  res_fishing        gauge_gp gauge_gp_negative gauge_empty SKILL_fishing WE BLACK font_label commandlist_use_skill_fishing Fishing: %T
 label_text label_fishing      font_label BLACK Fishing:
 
 # skills "yes/no" group
 gauge      act_jumping        skill_active null skill_inactive ACTIVE_SKILL_jumping WE commandlist_use_skill_jumping
-textgauge  res_jumping        gauge_gp gauge_gp_negative gauge_empty SKILL_jumping WE BLACK font_label commandlist_use_skill_jumping Jumping:
+textgauge  res_jumping        gauge_gp gauge_gp_negative gauge_empty SKILL_jumping WE BLACK font_label commandlist_use_skill_jumping Jumping: %T
 label_text label_jumping      font_label BLACK Jumping:
 
 gauge      act_climbing       skill_active null skill_inactive ACTIVE_SKILL_climbing WE commandlist_use_skill_climbing
-textgauge  res_climbing       gauge_gp gauge_gp_negative gauge_empty SKILL_climbing WE BLACK font_label commandlist_use_skill_climbing Climbing:
+textgauge  res_climbing       gauge_gp gauge_gp_negative gauge_empty SKILL_climbing WE BLACK font_label commandlist_use_skill_climbing Climbing: %T
 label_text label_climbing     font_label BLACK Climbing:
 
 gauge      act_levitation     skill_active null skill_inactive ACTIVE_SKILL_levitation WE commandlist_use_skill_levitation
-textgauge  res_levitation     gauge_gp gauge_gp_negative gauge_empty SKILL_levitation WE BLACK font_label commandlist_use_skill_levitation Levitation:
+textgauge  res_levitation     gauge_gp gauge_gp_negative gauge_empty SKILL_levitation WE BLACK font_label commandlist_use_skill_levitation Levitation: %T
 label_text label_levitation   font_label BLACK Levitation:
 
 gauge      act_meditation     skill_active null skill_inactive ACTIVE_SKILL_meditation WE commandlist_use_skill_meditation
-textgauge  res_meditation     gauge_gp gauge_gp_negative gauge_empty SKILL_meditation WE BLACK font_label commandlist_use_skill_meditation Meditation:
+textgauge  res_meditation     gauge_gp gauge_gp_negative gauge_empty SKILL_meditation WE BLACK font_label commandlist_use_skill_meditation Meditation: %T
 label_text label_meditation   font_label BLACK Meditation:
 
 gauge      act_set_traps      skill_active null skill_inactive ACTIVE_SKILL_set_traps WE commandlist_use_skill_set_traps
-textgauge  res_set_traps      gauge_gp gauge_gp_negative gauge_empty SKILL_set_traps WE BLACK font_label commandlist_use_skill_set_traps Set traps:
+textgauge  res_set_traps      gauge_gp gauge_gp_negative gauge_empty SKILL_set_traps WE BLACK font_label commandlist_use_skill_set_traps Set traps: %T
 label_text label_set_traps    font_label BLACK Set traps:
 
 # identify/creation group
 gauge      act_smithery       skill_active null skill_inactive ACTIVE_SKILL_smithery WE commandlist_use_skill_smithery
-textgauge  res_smithery       gauge_gp gauge_gp_negative gauge_empty SKILL_smithery WE BLACK font_label commandlist_use_skill_smithery Smithery:
+textgauge  res_smithery       gauge_gp gauge_gp_negative gauge_empty SKILL_smithery WE BLACK font_label commandlist_use_skill_smithery Smithery: %T
 label_text label_smithery     font_label BLACK Smithery:
 
 gauge      act_bowyer         skill_active null skill_inactive ACTIVE_SKILL_bowyer WE commandlist_use_skill_bowyer
-textgauge  res_bowyer         gauge_gp gauge_gp_negative gauge_empty SKILL_bowyer WE BLACK font_label commandlist_use_skill_bowyer Bowyer:
+textgauge  res_bowyer         gauge_gp gauge_gp_negative gauge_empty SKILL_bowyer WE BLACK font_label commandlist_use_skill_bowyer Bowyer: %T
 label_text label_bowyer       font_label BLACK Bowyer:
 
 gauge      act_jeweler        skill_active null skill_inactive ACTIVE_SKILL_jeweler WE commandlist_use_skill_jeweler
-textgauge  res_jeweler        gauge_gp gauge_gp_negative gauge_empty SKILL_jeweler WE BLACK font_label commandlist_use_skill_jeweler Jeweler:
+textgauge  res_jeweler        gauge_gp gauge_gp_negative gauge_empty SKILL_jeweler WE BLACK font_label commandlist_use_skill_jeweler Jeweler: %T
 label_text label_jeweler      font_label BLACK Jeweler:
 
 gauge      act_woodsman       skill_active null skill_inactive ACTIVE_SKILL_woodsman WE commandlist_use_skill_woodsman
-textgauge  res_woodsman       gauge_gp gauge_gp_negative gauge_empty SKILL_woodsman WE BLACK font_label commandlist_use_skill_woodsman Woodsman:
+textgauge  res_woodsman       gauge_gp gauge_gp_negative gauge_empty SKILL_woodsman WE BLACK font_label commandlist_use_skill_woodsman Woodsman: %T
 label_text label_woodsman     font_label BLACK Woodsman:
 
 gauge      act_thaumaturgy    skill_active null skill_inactive ACTIVE_SKILL_thaumaturgy WE commandlist_use_skill_thaumaturgy
-textgauge  res_thaumaturgy    gauge_gp gauge_gp_negative gauge_empty SKILL_thaumaturgy WE BLACK font_label commandlist_use_skill_thaumaturgy Thaumaturgy:
+textgauge  res_thaumaturgy    gauge_gp gauge_gp_negative gauge_empty SKILL_thaumaturgy WE BLACK font_label commandlist_use_skill_thaumaturgy Thaumaturgy: %T
 label_text label_thaumaturgy  font_label BLACK Thaumaturgy:
 
 gauge      act_literacy       skill_active null skill_inactive ACTIVE_SKILL_literacy WE commandlist_use_skill_literacy
-textgauge  res_literacy       gauge_gp gauge_gp_negative gauge_empty SKILL_literacy WE BLACK font_label commandlist_use_skill_literacy Literacy:
+textgauge  res_literacy       gauge_gp gauge_gp_negative gauge_empty SKILL_literacy WE BLACK font_label commandlist_use_skill_literacy Literacy: %T
 label_text label_literacy     font_label BLACK Literacy:
 
 gauge      act_alchemy        skill_active null skill_inactive ACTIVE_SKILL_alchemy WE commandlist_use_skill_alchemy
-textgauge  res_alchemy        gauge_gp gauge_gp_negative gauge_empty SKILL_alchemy WE BLACK font_label commandlist_use_skill_alchemy Alchemy:
+textgauge  res_alchemy        gauge_gp gauge_gp_negative gauge_empty SKILL_alchemy WE BLACK font_label commandlist_use_skill_alchemy Alchemy: %T
 label_text label_alchemy      font_label BLACK Alchemy:
 
 # identify/detection group
 gauge      act_sense_magic    skill_active null skill_inactive ACTIVE_SKILL_sense_magic WE commandlist_use_skill_sense_magic
-textgauge  res_sense_magic    gauge_gp gauge_gp_negative gauge_empty SKILL_sense_magic WE BLACK font_label commandlist_use_skill_sense_magic Sense magic:
+textgauge  res_sense_magic    gauge_gp gauge_gp_negative gauge_empty SKILL_sense_magic WE BLACK font_label commandlist_use_skill_sense_magic Sense magic: %T
 label_text label_sense_magic  font_label BLACK Sense magic:
 
 gauge      act_sense_curse    skill_active null skill_inactive ACTIVE_SKILL_sense_curse WE commandlist_use_skill_sense_curse
-textgauge  res_sense_curse    gauge_gp gauge_gp_negative gauge_empty SKILL_sense_curse WE BLACK font_label commandlist_use_skill_sense_curse Sense curse:
+textgauge  res_sense_curse    gauge_gp gauge_gp_negative gauge_empty SKILL_sense_curse WE BLACK font_label commandlist_use_skill_sense_curse Sense curse: %T
 label_text label_sense_curse  font_label BLACK Sense curse:
 
 gauge      act_find_traps     skill_active null skill_inactive ACTIVE_SKILL_find_traps WE commandlist_use_skill_find_traps
-textgauge  res_find_traps     gauge_gp gauge_gp_negative gauge_empty SKILL_find_traps WE BLACK font_label commandlist_use_skill_find_traps Find traps:
+textgauge  res_find_traps     gauge_gp gauge_gp_negative gauge_empty SKILL_find_traps WE BLACK font_label commandlist_use_skill_find_traps Find traps: %T
 label_text label_find_traps   font_label BLACK Find traps:
 
 gauge      act_disarm_traps   skill_active null skill_inactive ACTIVE_SKILL_disarm_traps WE commandlist_use_skill_disarm_traps
-textgauge  res_disarm_traps   gauge_gp gauge_gp_negative gauge_empty SKILL_disarm_traps WE BLACK font_label commandlist_use_skill_disarm_traps Disarm traps:
+textgauge  res_disarm_traps   gauge_gp gauge_gp_negative gauge_empty SKILL_disarm_traps WE BLACK font_label commandlist_use_skill_disarm_traps Disarm traps: %T
 label_text label_disarm_traps font_label BLACK Disarm traps:
 
 # combat group
 gauge      act_punching       skill_active null skill_inactive ACTIVE_SKILL_punching WE commandlist_use_skill_punching
-textgauge  res_punching       gauge_gp gauge_gp_negative gauge_empty SKILL_punching WE BLACK font_label commandlist_use_skill_punching Punching:
+textgauge  res_punching       gauge_gp gauge_gp_negative gauge_empty SKILL_punching WE BLACK font_label commandlist_use_skill_punching Punching: %T
 label_text label_punching     font_label BLACK Punching:
 
 gauge      act_karate         skill_active null skill_inactive ACTIVE_SKILL_karate WE commandlist_use_skill_karate
-textgauge  res_karate         gauge_gp gauge_gp_negative gauge_empty SKILL_karate WE BLACK font_label commandlist_use_skill_karate Karate:
+textgauge  res_karate         gauge_gp gauge_gp_negative gauge_empty SKILL_karate WE BLACK font_label commandlist_use_skill_karate Karate: %T
 label_text label_karate       font_label BLACK Karate:
 
 gauge      act_one_handed_weapons skill_active null skill_inactive ACTIVE_SKILL_one_handed_weapons WE commandlist_use_skill_one_handed_weapons
-textgauge  res_one_handed_weapons gauge_gp gauge_gp_negative gauge_empty SKILL_one_handed_weapons WE BLACK font_label commandlist_use_skill_one_handed_weapons One handed weapons:
+textgauge  res_one_handed_weapons gauge_gp gauge_gp_negative gauge_empty SKILL_one_handed_weapons WE BLACK font_label commandlist_use_skill_one_handed_weapons One handed weapons: %T
 label_text label_one_handed_weapons font_label BLACK One handed:
 
 gauge      act_two_handed_weapons skill_active null skill_inactive ACTIVE_SKILL_two_handed_weapons WE commandlist_use_skill_two_handed_weapons
-textgauge  res_two_handed_weapons gauge_gp gauge_gp_negative gauge_empty SKILL_two_handed_weapons WE BLACK font_label commandlist_use_skill_two_handed_weapons Two handed weapons:
+textgauge  res_two_handed_weapons gauge_gp gauge_gp_negative gauge_empty SKILL_two_handed_weapons WE BLACK font_label commandlist_use_skill_two_handed_weapons Two handed weapons: %T
 label_text label_two_handed_weapons font_label BLACK Two handed:
 
 gauge      act_missile_weapons skill_active null skill_inactive ACTIVE_SKILL_missile_weapons WE commandlist_use_skill_missile_weapons
-textgauge  res_missile_weapons gauge_gp gauge_gp_negative gauge_empty SKILL_missile_weapons WE BLACK font_label commandlist_use_skill_missile_weapons Missile weapons:
+textgauge  res_missile_weapons gauge_gp gauge_gp_negative gauge_empty SKILL_missile_weapons WE BLACK font_label commandlist_use_skill_missile_weapons Missile weapons: %T
 label_text label_missile_weapons font_label BLACK Missiles:
 
 gauge      act_throwing       skill_active null skill_inactive ACTIVE_SKILL_throwing WE commandlist_use_skill_throwing
-textgauge  res_throwing       gauge_gp gauge_gp_negative gauge_empty SKILL_throwing WE BLACK font_label commandlist_use_skill_throwing Throwing:
+textgauge  res_throwing       gauge_gp gauge_gp_negative gauge_empty SKILL_throwing WE BLACK font_label commandlist_use_skill_throwing Throwing: %T
 label_text label_throwing     font_label BLACK Throwing:
 
 gauge      act_use_magic_item skill_active null skill_inactive ACTIVE_SKILL_use_magic_item WE commandlist_use_skill_use_magic_item
-textgauge  res_use_magic_item gauge_gp gauge_gp_negative gauge_empty SKILL_use_magic_item WE BLACK font_label commandlist_use_skill_use_magic_item Use magic item:
+textgauge  res_use_magic_item gauge_gp gauge_gp_negative gauge_empty SKILL_use_magic_item WE BLACK font_label commandlist_use_skill_use_magic_item Use magic item: %T
 label_text label_use_magic_item font_label BLACK Magic item:
 
 gauge      act_flame_touch    skill_active null skill_inactive ACTIVE_SKILL_flame_touch WE commandlist_use_skill_flame_touch
-textgauge  res_flame_touch    gauge_gp gauge_gp_negative gauge_empty SKILL_flame_touch WE BLACK font_label commandlist_use_skill_flame_touch Flame touch:
+textgauge  res_flame_touch    gauge_gp gauge_gp_negative gauge_empty SKILL_flame_touch WE BLACK font_label commandlist_use_skill_flame_touch Flame touch: %T
 label_text label_flame_touch  font_label BLACK Flame touch:
 
 gauge      act_clawing        skill_active null skill_inactive ACTIVE_SKILL_clawing WE commandlist_use_skill_clawing
-textgauge  res_clawing        gauge_gp gauge_gp_negative gauge_empty SKILL_clawing WE BLACK font_label commandlist_use_skill_clawing Clawing:
+textgauge  res_clawing        gauge_gp gauge_gp_negative gauge_empty SKILL_clawing WE BLACK font_label commandlist_use_skill_clawing Clawing: %T
 label_text label_clawing      font_label BLACK Clawing:
 
 gauge      act_wraith_feed    skill_active null skill_inactive ACTIVE_SKILL_wraith_feed WE commandlist_use_skill_wraith_feed
-textgauge  res_wraith_feed    gauge_gp gauge_gp_negative gauge_empty SKILL_wraith_feed WE BLACK font_label commandlist_use_skill_wraith_feed Wraith feed:
+textgauge  res_wraith_feed    gauge_gp gauge_gp_negative gauge_empty SKILL_wraith_feed WE BLACK font_label commandlist_use_skill_wraith_feed Wraith feed: %T
 label_text label_wraith_feed  font_label BLACK Wraith feed:
 
 # spells/prayers group
 gauge      act_praying        skill_active null skill_inactive ACTIVE_SKILL_praying WE commandlist_use_skill_praying
-textgauge  res_praying        gauge_gp gauge_gp_negative gauge_empty SKILL_praying WE BLACK font_label commandlist_use_skill_praying Praying:
+textgauge  res_praying        gauge_gp gauge_gp_negative gauge_empty SKILL_praying WE BLACK font_label commandlist_use_skill_praying Praying: %T
 label_text label_praying      font_label BLACK Praying:
 
 gauge      act_summoning      skill_active null skill_inactive ACTIVE_SKILL_summoning WE commandlist_use_skill_summoning
-textgauge  res_summoning      gauge_gp gauge_gp_negative gauge_empty SKILL_summoning WE BLACK font_label commandlist_use_skill_summoning Summoning:
+textgauge  res_summoning      gauge_gp gauge_gp_negative gauge_empty SKILL_summoning WE BLACK font_label commandlist_use_skill_summoning Summoning: %T
 label_text label_summoning    font_label BLACK Summoning:
 
 gauge      act_pyromancy      skill_active null skill_inactive ACTIVE_SKILL_pyromancy WE commandlist_use_skill_pyromancy
-textgauge  res_pyromancy      gauge_gp gauge_gp_negative gauge_empty SKILL_pyromancy WE BLACK font_label commandlist_use_skill_pyromancy Pyromancy:
+textgauge  res_pyromancy      gauge_gp gauge_gp_negative gauge_empty SKILL_pyromancy WE BLACK font_label commandlist_use_skill_pyromancy Pyromancy: %T
 label_text label_pyromancy    font_label BLACK Pyromancy:
 
 gauge      act_evocation      skill_active null skill_inactive ACTIVE_SKILL_evocation WE commandlist_use_skill_evocation
-textgauge  res_evocation      gauge_gp gauge_gp_negative gauge_empty SKILL_evocation WE BLACK font_label commandlist_use_skill_evocation Evocation:
+textgauge  res_evocation      gauge_gp gauge_gp_negative gauge_empty SKILL_evocation WE BLACK font_label commandlist_use_skill_evocation Evocation: %T
 label_text label_evocation    font_label BLACK Evocation:
 
 gauge      act_sorcery        skill_active null skill_inactive ACTIVE_SKILL_sorcery WE commandlist_use_skill_sorcery
-textgauge  res_sorcery        gauge_gp gauge_gp_negative gauge_empty SKILL_sorcery WE BLACK font_label commandlist_use_skill_sorcery Sorcery:
+textgauge  res_sorcery        gauge_gp gauge_gp_negative gauge_empty SKILL_sorcery WE BLACK font_label commandlist_use_skill_sorcery Sorcery: %T
 label_text label_sorcery      font_label BLACK Sorcery:
 
 horizontal begin seq

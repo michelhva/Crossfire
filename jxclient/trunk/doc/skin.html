@@ -690,7 +690,11 @@
     <li>&lt;command-list&gt; specifies the command-list to execute when
         clicked. Can be set to <code>null</code>.
     </li>
-    <li>&lt;tooltip...&gt; is included as a prefix in the tooltip text.</li>
+    <li>&lt;tooltip...&gt; is the tooltip text to display. If empty, a default
+        tooltip text is generated. In the text <code>%T</code> is replaced with
+        the default tooltip text and <code>%%</code> with a <code>%</code>
+        character.
+    </li>
 </ul>
 
 <h3><a name="event">event: execute actions for events</a></h3>
@@ -753,7 +757,8 @@
 
 <p>Executes &lt;command-list&gt; once after the skin has been loaded.</p>
 
-<h4>event login: one-time initialization each time a character has logged in</h4>
+<h4>event login: one-time initialization each time a character has logged
+    in</h4>
 
 <p>syntax:</p>
 <pre>
@@ -762,7 +767,8 @@
 
 <p>Executes &lt;command-list&gt; once after a character has logged in.</p>
 
-<h4>event logout: one-time de-initialization each time a character has logged out</h4>
+<h4>event logout: one-time de-initialization each time a character has logged
+    out</h4>
 
 <p>syntax:</p>
 <pre>

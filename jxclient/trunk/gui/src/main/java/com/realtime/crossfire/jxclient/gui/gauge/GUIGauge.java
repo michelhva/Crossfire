@@ -49,11 +49,11 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
     private static final long serialVersionUID = 1;
 
     /**
-     * The tooltip prefix. It is prepended to {@link #tooltipText} to form the
-     * tooltip.
+     * The tooltip format. If supports the parameters describes in {@link
+     * #formatTooltip()}.
      */
     @Nullable
-    private final String tooltipPrefix;
+    private final String tooltipFormat;
 
     /**
      * The {@link CommandList} that is executed on button 2.
@@ -62,8 +62,7 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
     private final CommandList commandList;
 
     /**
-     * The tooltip suffix. It is appended to {@link #tooltipPrefix} to form the
-     * tooltip.
+     * The default tooltip text.
      */
     @NotNull
     private String tooltipText = "";
@@ -107,16 +106,16 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      * @param emptyImage the image representing an empty gauge; if set to
      * <code>null</code> an empty background is used instead
      * @param orientation the gauge's orientation
-     * @param tooltipPrefix the prefix for displaying tooltips; if set to
+     * @param tooltipFormat the format for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      * @param alpha alpha value of the gauge to use
      * @param commandList the command list that is executed on button 2
      */
-    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image fullImage, @Nullable final Image negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, final float alpha, @Nullable final CommandList commandList) {
+    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image fullImage, @Nullable final Image negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipFormat, final float alpha, @Nullable final CommandList commandList) {
         super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.emptyImage = emptyImage;
         this.orientation = orientation;
-        this.tooltipPrefix = tooltipPrefix;
+        this.tooltipFormat = tooltipFormat;
         this.commandList = commandList;
         gaugeState = new GaugeState(fullImage, negativeImage, 0, 0);
         this.alpha = alpha;
@@ -204,11 +203,11 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
     }
 
     /**
-     * Updates the tooltip's text from {@link #tooltipPrefix} ad {@link
+     * Updates the tooltip's text from {@link #tooltipFormat} ad {@link
      * #tooltipText}.
      */
     private void updateTooltipText() {
-        setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
+        setTooltipText(formatTooltip());
     }
 
     /**
@@ -265,6 +264,45 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         case MouseEvent.BUTTON3:
             break;
         }
+    }
+
+    /**
+     * Returns a formatted string using the given format.
+     * <p/>
+     * Supported format strings: <ul> <li>%% - a literal % character <li>%T -
+     * the default tooltip text </ul>
+     * @return the formatted string or <code>null</code> to not show a tooltip
+     */
+    @Nullable
+    private String formatTooltip() {
+        if (tooltipFormat == null) {
+            return null;
+        }
+        final StringBuilder sb = new StringBuilder();
+        final char[] formatChars = tooltipFormat.toCharArray();
+        int i = 0;
+        while (i < formatChars.length) {
+            final char ch = formatChars[i++];
+            if (ch != '%' || i >= formatChars.length) {
+                sb.append(ch);
+            } else {
+                switch (formatChars[i++]) {
+                case '%':
+                    sb.append('%');
+                    break;
+
+                case 'T':
+                    sb.append(tooltipText);
+                    break;
+
+                default:
+                    sb.append('%');
+                    sb.append(formatChars[i-1]);
+                    break;
+                }
+            }
+        }
+        return sb.toString();
     }
 
 }
