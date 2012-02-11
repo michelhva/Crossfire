@@ -2,47 +2,60 @@ dialog WIDTH/2 HEIGHT/2 true Protections
 dialog_hide START META LOGIN NEW_CHAR ACCOUNT
 button dialog_close close_up close_down false command_protections_close
 
+commandlist commandlist_use_protection_attack AND null GUI_EXECUTE_COMMAND invoke protection from attack
+commandlist commandlist_use_protection_cancellation AND null GUI_EXECUTE_COMMAND invoke protection from cancellation
+commandlist commandlist_use_protection_cold AND null GUI_EXECUTE_COMMAND invoke protection from cold
+commandlist commandlist_use_protection_confusion AND null GUI_EXECUTE_COMMAND invoke protection from confusion
+commandlist commandlist_use_protection_depletion AND null GUI_EXECUTE_COMMAND invoke protection from depletion
+commandlist commandlist_use_protection_draining AND null GUI_EXECUTE_COMMAND invoke protection from draining
+commandlist commandlist_use_protection_electricity AND null GUI_EXECUTE_COMMAND invoke protection from electricity
+commandlist commandlist_use_protection_fire AND null GUI_EXECUTE_COMMAND invoke protection from fire
+commandlist commandlist_use_protection_magic AND null GUI_EXECUTE_COMMAND invoke protection from magic
+commandlist commandlist_use_protection_paralysis AND null GUI_EXECUTE_COMMAND invoke protection from paralysis
+commandlist commandlist_use_protection_poison AND null GUI_EXECUTE_COMMAND invoke protection from poison
+commandlist commandlist_use_protection_slow AND null GUI_EXECUTE_COMMAND invoke protection from slow
+
 label_text label_phys         font_label BLACK Physical:
-textgauge res_phys            gauge_gp gauge_gp_negative gauge_empty RES_PHYS WE BLACK font_label null Physical:
+textgauge res_phys            gauge_gp gauge_gp_negative gauge_empty RES_PHYS WE BLACK font_label commandlist_use_protection_attack Physical:
 
 label_text label_fire         font_label BLACK Fire:
-textgauge res_fire            gauge_gp gauge_gp_negative gauge_empty RES_FIRE WE BLACK font_label null Fire:
+textgauge res_fire            gauge_gp gauge_gp_negative gauge_empty RES_FIRE WE BLACK font_label commandlist_use_protection_fire Fire:
 
 label_text label_cold         font_label BLACK Cold:
-textgauge res_cold            gauge_gp gauge_gp_negative gauge_empty RES_COLD WE BLACK font_label null Cold:
+textgauge res_cold            gauge_gp gauge_gp_negative gauge_empty RES_COLD WE BLACK font_label commandlist_use_protection_cold Cold:
 
 label_text label_elec         font_label BLACK Electricity:
-textgauge res_elec            gauge_gp gauge_gp_negative gauge_empty RES_ELEC WE BLACK font_label null Electricity:
+textgauge res_elec            gauge_gp gauge_gp_negative gauge_empty RES_ELEC WE BLACK font_label commandlist_use_protection_electricity Electricity:
 
 label_text label_acid         font_label BLACK Acid:
 textgauge res_acid            gauge_gp gauge_gp_negative gauge_empty RES_ACID WE BLACK font_label null Acid:
 
 label_text label_magic        font_label BLACK Magic:
-textgauge res_magic           gauge_gp gauge_gp_negative gauge_empty RES_MAG WE BLACK font_label null Magic:
+textgauge res_magic           gauge_gp gauge_gp_negative gauge_empty RES_MAG WE BLACK font_label commandlist_use_protection_magic Magic:
 
 label_text label_conf         font_label BLACK Confusion:
-textgauge res_conf            gauge_gp gauge_gp_negative gauge_empty RES_CONF WE BLACK font_label null Confusion:
+textgauge res_conf            gauge_gp gauge_gp_negative gauge_empty RES_CONF WE BLACK font_label commandlist_use_protection_confusion Confusion:
 
 label_text label_fear         font_label BLACK Fear:
 textgauge res_fear            gauge_gp gauge_gp_negative gauge_empty RES_FEAR WE BLACK font_label null Fear:
 
 label_text label_slow         font_label BLACK Slow:
-textgauge res_slow            gauge_gp gauge_gp_negative gauge_empty RES_SLOW WE BLACK font_label null Slow:
+textgauge res_slow            gauge_gp gauge_gp_negative gauge_empty RES_SLOW WE BLACK font_label commandlist_use_protection_slow Slow:
 
 label_text label_para         font_label BLACK Paralyzation:
-textgauge res_para            gauge_gp gauge_gp_negative gauge_empty RES_PARA WE BLACK font_label null Paralyzation:
+textgauge res_para            gauge_gp gauge_gp_negative gauge_empty RES_PARA WE BLACK font_label commandlist_use_protection_paralysis Paralyzation:
 
 label_text label_poison       font_label BLACK Poison:
-textgauge res_poison          gauge_gp gauge_gp_negative gauge_empty RES_POISON WE BLACK font_label null Poison:
+textgauge res_poison          gauge_gp gauge_gp_negative gauge_empty RES_POISON WE BLACK font_label commandlist_use_protection_poison Poison:
 
 label_text label_blind        font_label BLACK Blindness:
 textgauge res_blind           gauge_gp gauge_gp_negative gauge_empty RES_BLIND WE BLACK font_label null Blindness:
 
 label_text label_drain        font_label BLACK Draining:
-textgauge res_drain           gauge_gp gauge_gp_negative gauge_empty RES_DRAIN WE BLACK font_label null Draining:
+textgauge res_drain           gauge_gp gauge_gp_negative gauge_empty RES_DRAIN WE BLACK font_label commandlist_use_protection_draining Draining:
 
 label_text label_deplete      font_label BLACK Depletion:
-textgauge res_deplete         gauge_gp gauge_gp_negative gauge_empty RES_DEPLETE WE BLACK font_label null Depletion:
+textgauge res_deplete         gauge_gp gauge_gp_negative gauge_empty RES_DEPLETE WE BLACK font_label commandlist_use_protection_depletion Depletion:
 
 label_text label_death        font_label BLACK Death:
 textgauge res_death           gauge_gp gauge_gp_negative gauge_empty RES_DEATH WE BLACK font_label null Death:
