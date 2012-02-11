@@ -6,7 +6,7 @@ face mithril_ar_ele.111
 animation mithril_ar_ele
 anim_speed 3
 client_anim_random 1
-ac 4
+ac 6
 resist_physical 40
 resist_electricity 40
 msg
