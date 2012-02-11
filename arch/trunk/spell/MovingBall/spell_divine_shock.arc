@@ -13,9 +13,9 @@ skill praying
 path_attuned 131072
 path_repelled 8
 other_arch divine_shock
-dam 1
+dam 4
 dam_modifier 3
-duration 30
+duration 35
 duration_modifier 2
 maxgrace 10
 attacktype 1048584
