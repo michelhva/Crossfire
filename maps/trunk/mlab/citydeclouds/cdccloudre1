@@ -9,7 +9,7 @@ enter_x 17
 enter_y 3
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-04 Rick Tanner
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1772,7 +1772,7 @@ arch goldfloor
 name Lot 1: 1500 Diamonds
 slaying gem
 msg
-Cha Ching
+Cha Ching!
 endmsg
 food 1500
 x 7
@@ -3362,7 +3362,7 @@ arch woman
 name Al's Daughter
 msg
 @match *
-I love flower
+I love flowers.
 endmsg
 x 14
 y 7
@@ -3554,10 +3554,7 @@ end
 arch sign
 name CDC Cloud Real Estate INC.
 msg
-Welcome to the office of
-CDC Cloud Real Estate INC.
-Here we will help you find
-the place for your home.
+Welcome to the office of CDC Cloud Real Estate INC. Here we will help you find the place for your home.
 endmsg
 x 15
 y 4
