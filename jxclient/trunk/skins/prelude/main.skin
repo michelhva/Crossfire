@@ -8,8 +8,8 @@ map map_view -32 -32 1024 768 64
 picture sword_back     16+80  0+574 64 256 background_sword 0.9
 picture gauge_hp_back   0+80 14+574 19 144 life_gauge_empty 0.9
 picture gauge_fp_back  75+80 15+574 21 143 food_gauge_empty 0.9
-gauge   gauge_hp        0+80 14+574 19 144 life_gauge_full null life_gauge_empty HP SN HP:
-gauge   gauge_fp       75+80 15+574 21 143 food_gauge_full null food_gauge_empty FOOD SN Food:
+gauge   gauge_hp        0+80 14+574 19 144 life_gauge_full null life_gauge_empty HP SN HP: %T
+gauge   gauge_fp       75+80 15+574 21 143 food_gauge_full null food_gauge_empty FOOD SN Food: %T
 label_stat label_hp     4+72 3+732 32  32 font_types WHITE HP CENTER
 label_stat label_fp    80+72 3+732 32  32 font_types WHITE FOOD CENTER
 
@@ -17,8 +17,8 @@ label_stat label_fp    80+72 3+732 32  32 font_types WHITE FOOD CENTER
 picture staff_back    40+820  0+552 64 256 background_staff 0.9
 picture gauge_gp_back  0+820 30+552 50 150 grace_gauge_empty 0.9
 picture gauge_sp_back 80+820 30+552 50 150 magic_gauge_empty 0.9
-gauge gauge_gp         0+820 30+552 50 150 grace_gauge_full null grace_gauge_empty GRACE SN Grace:
-gauge gauge_sp        80+820 30+552 50 150 magic_gauge_full null magic_gauge_empty SP SN Mana:
+gauge gauge_gp         0+820 30+552 50 150 grace_gauge_full null grace_gauge_empty GRACE SN Grace: %T
+gauge gauge_sp        80+820 30+552 50 150 magic_gauge_full null magic_gauge_empty SP SN Mana: %T
 label_stat label_gp  768+72   3+732 32  32 font_types WHITE GRACE CENTER
 label_stat label_sp  844+72   3+732 32  32 font_types WHITE SP CENTER
 
@@ -324,24 +324,24 @@ picture grG_back  76+630 105+628 29 11 res_gauge_empty 0.9
 picture grH_back 152+630 105+628 29 11 res_gauge_empty 0.9
 
 
-gauge gr0   0+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_PHYS WE Physical:
-gauge gr1  76+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_MAG WE Magic:
-gauge gr2 152+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_FIRE WE Fire:
-gauge gr3   0+630  21+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_ELEC WE Electricity:
-gauge gr4  76+630  21+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_COLD WE Cold:
-gauge gr5 152+630  21+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_CONF WE Confusion:
-gauge gr6   0+630  42+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_ACID WE Acid:
-gauge gr7  76+630  42+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DRAIN WE Drain:
-gauge gr8 152+630  42+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_GHOSTHIT WE Ghosthit:
-gauge gr9   0+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_POISON WE Poison:
-gauge grA  76+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_SLOW WE Slow:
-gauge grB 152+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_PARA WE Paralyze:
-gauge grC   0+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_TURN_UNDEAD WE Turn Undead:
-gauge grD  76+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_FEAR WE Fear:
-gauge grE 152+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DEPLETE WE Depletion:
-gauge grF   0+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DEATH WE Death:
-gauge grG  76+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_HOLYWORD WE Holy Word:
-gauge grH 152+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_BLIND WE Blind:
+gauge gr0   0+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_PHYS WE Physical: %T
+gauge gr1  76+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_MAG WE Magic: %T
+gauge gr2 152+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_FIRE WE Fire: %T
+gauge gr3   0+630  21+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_ELEC WE Electricity: %T
+gauge gr4  76+630  21+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_COLD WE Cold: %T
+gauge gr5 152+630  21+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_CONF WE Confusion: %T
+gauge gr6   0+630  42+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_ACID WE Acid: %T
+gauge gr7  76+630  42+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DRAIN WE Drain: %T
+gauge gr8 152+630  42+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_GHOSTHIT WE Ghosthit: %T
+gauge gr9   0+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_POISON WE Poison: %T
+gauge grA  76+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_SLOW WE Slow: %T
+gauge grB 152+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_PARA WE Paralyze: %T
+gauge grC   0+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_TURN_UNDEAD WE Turn Undead: %T
+gauge grD  76+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_FEAR WE Fear: %T
+gauge grE 152+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DEPLETE WE Depletion: %T
+gauge grF   0+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DEATH WE Death: %T
+gauge grG  76+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_HOLYWORD WE Holy Word: %T
+gauge grH 152+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_BLIND WE Blind: %T
 
 # LowerBar (72, 732)
 picture lower_bar 0+72 0+732 880 36 lower_bar 0.9

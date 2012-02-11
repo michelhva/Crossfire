@@ -5,19 +5,19 @@ map map_view
 
 # Stat Group
 picture gauge_hp_back         gauge_frame 0.9
-textgauge gauge_hp            gauge_hp null gauge_empty HP WE BLACK font_label null Hitpoints:
+textgauge gauge_hp            gauge_hp null gauge_empty HP WE BLACK font_label null Hitpoints: %T
 
 picture gauge_sp_back         gauge_frame 0.9
-textgauge gauge_sp            gauge_sp null gauge_empty SP WE BLACK font_label null Mana:
+textgauge gauge_sp            gauge_sp null gauge_empty SP WE BLACK font_label null Mana: %T
 
 picture gauge_gp_back         gauge_frame 0.9
-textgauge gauge_gp            gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label null Grace:
+textgauge gauge_gp            gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label null Grace: %T
 
 picture gauge_fp_back         gauge_frame 0.9
-textgauge gauge_fp            gauge_fp null gauge_empty FOOD WE BLACK font_label null Food:
+textgauge gauge_fp            gauge_fp null gauge_empty FOOD WE BLACK font_label null Food: %T
 
 picture gauge_xp_back         gauge_xp_frame 0.9
-duptextgauge gauge_xp         gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label null Level:
+duptextgauge gauge_xp         gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label null Level: %T
 
 # Button Group
 textbutton button_help        false command_help Help
