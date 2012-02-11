@@ -9,7 +9,7 @@ enter_x 13
 enter_y 10
 msg
 Created:  2004-06-27 mikeeusa
-Modified: 2011-11-03 Rick Tanner
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
 arch blocked
@@ -4868,8 +4868,7 @@ arch c_woman
 name tenant
 msg
 @match *
-I'm washing my clothes tehehe
-
+I'm washing my clothes. *tehehe*
 endmsg
 x 21
 y 11
