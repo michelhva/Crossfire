@@ -8,7 +8,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  2000-06-17
-Modified: 2012-01-01 Rick Tanner
+Modified: 2012-02-11 Nicolas Weeger
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -3053,10 +3053,7 @@ end
 arch bow
 end
 arch arrow
-title of inaccuracy
-wc -6
-value 0
-cursed 1
+artifact inaccuracy
 end
 arch club
 end
@@ -4040,9 +4037,7 @@ y 11
 speed_left -0.300000
 carrying 19000
 arch club
-title of Gnarg
-dam 7
-value 100
+artifact Gnarg
 end
 arch small_shield
 end
@@ -4997,12 +4992,7 @@ magic 1
 last_sp 11
 end
 arch scimitar
-title of Gnarg
-dam 9
-value 420
-weight 13500
-magic -1
-cursed 1
+artifact Gnarg
 end
 arch goldcoin
 nrof 13
@@ -6001,10 +5991,7 @@ y 2
 speed_left -0.300000
 carrying 1600
 arch dagger
-title of Madness
-attacktype 33
-value 200
-weight 1600
+artifact Madness
 end
 end
 arch large_stones
@@ -6206,10 +6193,8 @@ end
 arch bow
 end
 arch arrow
-title of Frost
 nrof 6
-attacktype 17
-value 5
+artifact Frost
 end
 arch dagger
 end
@@ -6654,17 +6639,7 @@ end
 arch dagger
 end
 arch high_shield
-title of Woe
-Str -1
-Dex -1
-Con -1
-Wis -1
-Pow -1
-Cha -1
-Int -1
-luck -1
-value 120
-cursed 1
+artifact Woe
 end
 end
 arch large_stones
@@ -6957,10 +6932,7 @@ end
 arch quarterstaff
 end
 arch high_shield
-title of Mass
-value 120
-weight 80000
-cursed 1
+artifact Mass
 end
 end
 arch large_stones
@@ -7103,18 +7075,7 @@ end
 arch skill_throwing
 end
 arch t_dagger
-title of Woe
-Str -1
-Dex -1
-Con -1
-Wis -1
-Pow -1
-Cha -1
-Int -1
-luck -1
-nrof 2
-value 175
-cursed 1
+artifact Woe
 end
 arch dagger
 end
@@ -7678,10 +7639,7 @@ end
 arch small_shield
 end
 arch helmet
-title of Mass
-value 70
-weight 20000
-cursed 1
+artifact Mass
 end
 arch fl_corpse
 name madman's corpse
@@ -7729,11 +7687,8 @@ end
 arch bow
 end
 arch arrow
-title of inaccuracy
-wc -6
 nrof 3
-value 0
-cursed 1
+artifact inaccuracy
 end
 arch quarterstaff
 end
