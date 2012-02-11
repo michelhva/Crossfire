@@ -9,7 +9,7 @@ enter_x 13
 enter_y 18
 msg
 Created:  2002-12-20 Joel Southall
-Modified: 2008-12-13 Rick Tanner
+Modified: 2012-02-20 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -237,10 +237,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-*grumble*  Why'd I have to get this worthless
-shaft, while my brother finds gold in
-abundance. How, by the beard of my father,
-am I going to move this blasted rock!?
+*grumble*  Why'd I have to get this worthless shaft, while my brother finds gold in abundance.  How, by the beard of my father, am I going to move this blasted rock!?
 endmsg
 face dwarf_p.111
 hp 100
@@ -596,8 +593,7 @@ y 13
 end
 arch magic_mouth
 msg
-You hear mumbled curses in dwarvish
-tongue.
+You hear mumbled curses in dwarvish tongue.
 endmsg
 food 1
 x 5
@@ -639,8 +635,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-*grunt* This rock is hard... *grunt* but there's
-a clump of gold every few feet.
+*grunt* This rock is hard... *grunt* but there's a clump of gold every few feet.
 endmsg
 face dwarf_p.111
 hp 100
@@ -1070,10 +1065,7 @@ arch guildmaster
 name guard
 msg
 @match *
-I wonder where these dwarves live. They come
-here from the mines a bit further in the
-mountains. But no one I know has actually
-been in their dwellings.
+I wonder where these dwarves live.  They come here from the mines a bit further in the mountains.  But no one I know has actually been in their dwellings.
 endmsg
 face warrior.151
 hp 100
@@ -1382,11 +1374,7 @@ arch fighter
 name guard
 msg
 @match *
-We're here to guard the valuable stones these
-good dwarves dig up. This is a new mine,
-we have a feeling it will yield mithril in
-abundance.  One of the dwarves found a
-sample of it, yesterday.
+We're here to guard the valuable stones these good dwarves dig up.  This is a new mine, we have a feeling it will yield mithril in abundance.  One of the dwarves found a sample of it, yesterday.
 endmsg
 x 12
 y 14
@@ -1483,8 +1471,7 @@ y 10
 end
 arch magic_mouth
 msg
-You hear the dwarves singing an old mining
-song...
+You hear the dwarves singing an old mining song...
 endmsg
 food 1
 x 13
@@ -1581,9 +1568,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-Think this is hard work, laddy? The work is
-its own reward...  and some of the good
-stones we bring up... heheheh....
+Think this is hard work, laddy? The work is its own reward... and some of the good stones we bring up... heheheh....
 endmsg
 face dwarf_p.111
 hp 100
@@ -1671,14 +1656,9 @@ arch guildmaster
 name guard
 msg
 @match *
-This is a boring post. Sitting here in this dark
-hole. I wish I was posted in the other mine.
+This is a boring post.  Sitting here in this dark hole.  I wish I was posted in the other mine.
 @match mine
-Bit more exciting, I think. If you get the area
-near the spider's lair. I've heard that undead
-prowl somewhere deep in those mines. A
-dwarf told me that it was even more exciting,
-before they completely drove the goblins
+Bit more exciting, I think.  If you get the area near the spider's lair.  I've heard that undead prowl somewhere deep in those mines.  A dwarf told me that it was even more exciting, before they completely drove the goblins
 away.
 endmsg
 face warrior.151
@@ -1768,8 +1748,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-Sorry, lad! Can't talk now, we have work to
-do!
+Sorry, lad! Can't talk now, we have work to do!
 endmsg
 face dwarf_p.111
 hp 100
@@ -1899,8 +1878,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-Look at that crystal, boy. Such things bring
-joy to the heart of a dwarf!
+Look at that crystal, boy.  Such things bring joy to the heart of a dwarf!
 endmsg
 face dwarf_p.111
 hp 100
@@ -1980,8 +1958,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-Begone! We are busy digging up treasures
-from the wonderous earth!
+Begone! We are busy digging up treasures from the wonderous earth!
 endmsg
 face dwarf_p.111
 hp 100
@@ -2097,9 +2074,7 @@ y 7
 end
 arch magic_mouth
 msg
-A dwarf shouts excitedly, "By the anvil of
-Mostrai!  I found me one! Look at that baby
-sparkle, lad!"
+A dwarf shouts excitedly, "By the anvil of Mostrai!  I found me one! Look at that baby sparkle, lad!"
 endmsg
 food 1
 x 17
@@ -2226,9 +2201,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-This mine has good treasures to be found!
-The mithril! I can smell it beneath the rocks!
-Dig harder, boys!
+This mine has good treasures to be found!  The mithril!  I can smell it beneath the rocks!  Dig harder, boys!
 endmsg
 face dwarf_p.111
 hp 100
@@ -2280,9 +2253,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-Sonny, pick up a shovel and join in, by all
-means.  But, if not, let us dwarves do our
-work as only we know how!
+Sonny, pick up a shovel and join in, by all means.  But, if not, let us dwarves do our work as only we know how!
 endmsg
 face dwarf_p.111
 hp 100
