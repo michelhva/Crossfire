@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-08-28 mikeeusa
-Modified: 2011-11-05 Rick Tanner
+Modified: 2012-02-13 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2B
@@ -12734,7 +12734,7 @@ arch c_woman
 name receptionist
 msg
 @match *
-We have many nice rooms. Please don't hurt me.
+We have many nice rooms.  Please don't hurt me.
 endmsg
 x 34
 y 13
@@ -13715,7 +13715,7 @@ arch altar_trigger
 name 150pp - Area Dragon Port Pass
 slaying money
 msg
-Your pass will arrive soon. Thank you for your buisness sir.
+Your pass will arrive soon.  Thank you for your buisness sir.
 endmsg
 face teleporter.111
 animation teleporter
@@ -14877,7 +14877,7 @@ end
 arch quarto
 name The Joys of Travel
 msg
-Travel can help your sanity stay intact. Getting away from the dull monotony of daily trade is a must for any sucessfull merchant. To have good business one must have sound mind and travel can help in that aspect of the trade.
+Travel can help your sanity stay intact.  Getting away from the dull monotony of daily trade is a must for any sucessfull merchant.  To have good business one must have sound mind and travel can help in that aspect of the trade.
 endmsg
 x 39
 y 27
