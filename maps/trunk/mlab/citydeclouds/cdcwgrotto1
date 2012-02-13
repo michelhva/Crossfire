@@ -11,7 +11,7 @@ enter_x 28
 enter_y 26
 msg
 Created:  2004-07-29 Mikeeusa
-Modified: 2011-11-04 Rick Tanner
+Modified: 2012-02-13 Rick Tanner
 endmsg
 end
 arch blocked
@@ -8309,7 +8309,6 @@ name Crill
 msg
 @match *
 Here is the finest projectile weaponry you'll find in the entire hemisphere!
-
 endmsg
 x 20
 y 29
@@ -11914,9 +11913,7 @@ end
 arch sign
 name Crill's Projectile Store
 msg
-Welcome to Crill's Projectile Store
-
-
+Welcome to Crill's Projectile Store.
 endmsg
 x 29
 y 24
