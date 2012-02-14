@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2012-01-01 Nicolas Weeger
+Modified: 2012-02-14 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -10409,7 +10409,7 @@ hp 32
 sp 16
 x 34
 y 16
-move_on walk
+move_on all
 end
 arch blocked
 x 34
