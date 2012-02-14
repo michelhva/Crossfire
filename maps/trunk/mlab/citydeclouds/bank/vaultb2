@@ -9,7 +9,7 @@ enter_x 36
 enter_y 65
 msg
 Created:  2004-08-04 Mikeeusa
-Modified: 2011-10-31 Rick Tanner
+Modified: 2012-02-13 Rick Tanner
 endmsg
 end
 arch blocked
@@ -18047,28 +18047,7 @@ end
 arch sign
 name Notice
 msg
-At the entrance to the vault is a
-circular marble area. Parts of the
-white marble are marked as 1, 2, 3,
-4, 5, and 6. These correspond to the
-first number on your combo-cards (ie:
-the 1 in 1:4). The fruit here correspond
-to the second number of your
-combo-cards (ie: the 4 in 1:4). If
-you had a combo card that said 1:4
-you would place a clover on the
-marble tile that said 1. You do this
-for each of the combinations on your
-combo-cards. Once all is entered the
-vault will open if it was done in the
-correct sequence (tile 1 then 2 then 3...).
-Don't loose your combo-cards.
-Don't enter the combo too fast.
-To lock the vault once you're done
-enter an incorrect digit on one of the
-number floors, the vault will
-lockdown
--Mikeeusa-
+At the entrance to the vault is a circular marble area.  Parts of the white marble are marked as 1, 2, 3, 4, 5, and 6.  These correspond to the first number on your combo-cards (ie: the 1 in 1:4).  The fruit here correspond to the second number of your combo-cards (ie: the 4 in 1:4).  If you had a combo card that said 1:4 you would place a clover on the marble tile that said 1.  You do this for each of the combinations on your combo-cards.  Once all is entered the vault will open if it was done in the correct sequence (tile 1 then 2 then 3...).  Don't loose your combo-cards.  Don't enter the combo too fast.  To lock the vault once you're done enter an incorrect digit on one of the number floors, the vault will lockdown.
 endmsg
 x 33
 y 59
@@ -19344,8 +19323,7 @@ end
 arch locked_door1
 slaying cdcvaultb2key
 msg
-You need to buy the B2 vault key to open
-this door.
+You need to buy the B2 vault key to open this door.
 endmsg
 face ldoor_white1.111
 x 36
