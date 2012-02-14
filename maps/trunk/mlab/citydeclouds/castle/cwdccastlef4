@@ -9,7 +9,7 @@ enter_x 9
 enter_y 17
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-02 Rick Tanner
+Modified: 2012-02-14 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -33782,10 +33782,7 @@ arch elf_lass
 name elf lady, wife of Valdak
 msg
 @match *
-Oh please don't kill me. My husband
-has turned mad with the coming of
-a... a... not a witch.. but... please
-help him!
+Oh please don't kill me.  My husband has turned mad with the coming of a... a... not a witch.. but... please help him!
 endmsg
 hp 100
 maxhp 100
@@ -33892,9 +33889,7 @@ y 52
 end
 arch magic_mouth
 msg
-You see some... other place...
-throught the portal, dark,
-unnerving..... without structure....
+You see some... other place... throught the portal, dark, unnerving..... without structure....
 endmsg
 x 46
 y 52
@@ -36328,8 +36323,7 @@ y 55
 end
 arch magic_mouth
 msg
-A mere witch could not have caused
-such strife...
+A mere witch could not have caused such strife...
 endmsg
 x 49
 y 55
@@ -36341,9 +36335,7 @@ end
 arch locked_door2
 slaying cofegdf4ng
 msg
-A golden key is needed for this door.
-The kind very old dragons like. It
-must be close ... the door hums.
+A golden key is needed for this door.  The kind very old dragons like.  It must be close ... the door hums.
 endmsg
 face ldoor_white2.111
 x 49
