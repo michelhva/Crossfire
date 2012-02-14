@@ -10,7 +10,7 @@ enter_x 54
 enter_y 48
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-01 Rick Tanner
+Modified: 2012-02-14 Rick Tanner
 endmsg
 end
 arch light4
@@ -43407,10 +43407,7 @@ end
 arch prisoner
 msg
 @match *
-They've gouged out my eyes! I'm next
-inline for the operating room, kill
-me with your sword please now...
-before they ... ...
+They've gouged out my eyes! I'm next inline for the operating room, kill me with your sword please now... before they ... ...
 endmsg
 x 58
 y 46
@@ -43514,9 +43511,7 @@ arch woman
 name defiled woman
 msg
 @match *
-*crys* Tell my husband I'm sorry. I
-had no choice. I tried to stop them
-*sob* *crys*
+*crys* Tell my husband I'm sorry.  I had no choice.  I tried to stop them *sob* *crys*
 endmsg
 x 58
 y 61
@@ -48189,7 +48184,7 @@ end
 arch woman
 msg
 @match *
-Please help me
+Please help me...
 endmsg
 x 64
 y 41
@@ -48284,9 +48279,7 @@ end
 arch man
 msg
 @match *
-They have allready killed my wife.
-Why we ever made a treaty with these
-damnable elves is no knowledge to me!
+They have allready killed my wife.  Why we ever made a treaty with these damnable elves is no knowledge to me!
 endmsg
 x 64
 y 56
