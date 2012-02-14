@@ -9,7 +9,7 @@ enter_x 56
 enter_y 56
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-03 Rick Tanner
+Modified: 2012-02-14 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -9028,9 +9028,7 @@ arch vampire
 name The Marquis
 msg
 @match *
-Why have you invaded my house! Begone
-now or FOREVER!
-
+Why have you invaded my house! Begone now or FOREVER!
 endmsg
 Con 18
 Wis 20
@@ -12811,9 +12809,7 @@ y 34
 end
 arch magic_mouth
 msg
-This is a new area unknown to you...
-somehow you feel the Marquis is here.
-
+This is a new area unknown to you... somehow you feel the Marquis is here.
 endmsg
 x 28
 y 35
