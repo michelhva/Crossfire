@@ -9,7 +9,7 @@ enter_x 10
 enter_y 20
 msg
 Created:  2004-07-29 Mikeeusa
-Modified: 2011-11-07 Rick Tanner
+Modified: 2012-02-12 Rick Tanner
 endmsg
 end
 arch blocked
@@ -3494,7 +3494,7 @@ end
 arch sign
 name CityDeClouds Message Board
 msg
-I am a talking board, please say something to me. If you don't know what to say, say help.
+I am a talking board, please say something to me.  If you don't know what to say, say help.
 endmsg
 x 12
 y 18
@@ -4960,7 +4960,7 @@ name Prospectus
 msg
 Imperial Post Services
 -----------------------
-Thank you for choosing the IPS to take care of your messages. Want to get more ? We have a wide range of products and services to offer to anyone. Pirate ? Try  our TalkParrots(tm) ! Beholder ? Enjoy our fabulous non-stereoscopical cards! And don't forget: The Empire Is Everywhere For You
+Thank you for choosing the IPS to take care of your messages.  Want to get more? We have a wide range of products and services to offer to anyone.  Pirate? Try  our TalkParrots(tm)! Beholder? Enjoy our fabulous non-stereoscopical cards! And don't forget: The Empire Is Everywhere For You.
 endmsg
 x 19
 y 17
@@ -5169,7 +5169,7 @@ Open the mailbox and get the scrolls, read them by applying.
 ...
 Sending Mail
 -----------------------
-Get a pencil and be sure that you are able to use the literacy skill. You can get both at the office, ask Colette for help.
+Get a pencil and be sure that you are able to use the literacy skill.  You can get both at the office, ask Colette for help.
 ...
 Get a preadressed mailscroll, mark it and write on it with:
 use_skill inscription <text>
