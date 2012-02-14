@@ -9,7 +9,7 @@ enter_x 30
 enter_y 25
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-03 Rick Tanner
+Modified: 2012-02-14 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1618,13 +1618,10 @@ I have deepend my devotion to the cult of the Devowerers, I have begun to truely
 
 
 Entry 3:
-By some mystical energy I have been visited, through constant incantation of dead verse have I been granted this honor... I feel as if one with
-those who are gone. There is terror inside me, terror that rivals all else, terror that is true unbound power.
+By some mystical energy I have been visited, through constant incantation of dead verse have I been granted this honor... I feel as if one with those who are gone.  There is terror inside me, terror that rivals all else, terror that is true unbound power.
 
 Entry 4:
-I have befriended a Nazgul of great knowledge, he was attracted by my deep devotion to the cult of the unliving. He too has found and been
-taken by the power of the lost... he has agreed to show me the path.
-
+I have befriended a Nazgul of great knowledge, he was attracted by my deep devotion to the cult of the unliving.  He too has found and been taken by the power of the lost... he has agreed to show me the path.
 endmsg
 face book_clasp.111
 x 7
@@ -3820,9 +3817,7 @@ arch nazgul
 name nazgul Dar^Mentho
 msg
 @match *
-Hhhe I broughhh to the side of thhhe
-unliving. YOU I will deposit in thhhe
-forever dead.
+Hhhe I broughhh to the side of thhhe unliving.  YOU I will deposit in thhhe forever dead.
 endmsg
 hp 10000
 maxhp 20000
@@ -20051,9 +20046,7 @@ arch demilich
 name SechNen the demilich
 msg
 @match *
-You come to slay my master? The
-Marquis has rejected the reign of
-your kind as do I!
+You come to slay my master? The Marquis has rejected the reign of your kind as do I!
 endmsg
 hp 15000
 maxhp 25000
