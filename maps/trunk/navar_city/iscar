@@ -8,7 +8,7 @@ enter_x 2
 enter_y 9
 msg
 Created:  2008-02-09 Nicolas Weeger
-Modified: 2008-12-02 Rick Tanner
+Modified: 2012-02-14 Rick Tanner
 endmsg
 end
 arch whiteslate
@@ -229,9 +229,7 @@ msg
 I lost my pen somewhere, and I don't have any spare one.
 @match what|job
 @question why Why can't you write?
-I'm a writer, I write books for children.
-
-But I can't write now...
+I'm a writer, I write books for children.  But I can't write now...
 @match *
 @question job What are you doing?
 Hello.
