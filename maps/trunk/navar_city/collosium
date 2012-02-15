@@ -8,7 +8,7 @@ enter_x 17
 enter_y 22
 msg
 Created:  1999-01-22 Cater & Wade (john_cater@yahoo.com)
-Modified: 2008-11-02 Rick Tanner
+Modified: 2012-02-14 Rick Tanner
 endmsg
 end
 arch grassmedium
@@ -183,8 +183,7 @@ end
 arch sign
 name Competitors Only!
 msg
-Competitors Only Beyond this Point.
-200 gp to try your luck...
+Competitors Only Beyond this Point.  200 gp to try your luck...
 endmsg
 x 1
 y 3
@@ -775,8 +774,7 @@ end
 arch sign_w
 name Members' Stand
 msg
-Shhh....
-Please don't cause a disturbance here
+Shhh.... Please don't cause a disturbance here.
 endmsg
 x 4
 y 19
@@ -4481,7 +4479,7 @@ arch beggar
 name Elderly man
 msg
 @match *
-Can you spare a coin for an old man - sire
+Can you spare a coin for an old man - sire?
 endmsg
 x 31
 y 14
@@ -4845,8 +4843,7 @@ arch fatman
 name Fat Mac
 msg
 @match *
-Let me help you put some meat on those
-bones...
+Let me help you put some meat on those bones...
 endmsg
 x 33
 y 17
@@ -4986,7 +4983,7 @@ end
 arch slave
 msg
 @match *
-Leave me alone, it's my day off
+Leave me alone, it's my day off.
 endmsg
 x 34
 y 11
