@@ -6,6 +6,7 @@ width 30
 height 29
 msg
 Created:  1993-11-17
+Modified: 2012-02-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -363,9 +364,7 @@ y 25
 end
 arch magic_mouth
 msg
-Oh no...you have intereupted a meeting
-of 'FED UP WITH ELVES' they look
-pretty pissed.
+Oh no...you have intereupted a meeting of 'FED UP WITH ELVES' they look pretty pissed.
 endmsg
 x 1
 y 26
@@ -410,11 +409,7 @@ end
 arch raas
 msg
 @match *
-Izzzz gooood raazzzzz...no kill
-noonezzz...you leavezzzz me
-alone.....pleazzzze take pity on a
-poor monster who wantzzzz to life a
-life of prozzzzparity.
+Izzzz gooood raazzzzz...no kill noonezzz...you leavezzzz me alone.....pleazzzze take pity on a poor monster who wantzzzz to life a life of prozzzzparity.
 endmsg
 x 2
 y 2
@@ -526,7 +521,7 @@ y 18
 end
 arch corpse
 msg
-Yep...its dea
+Yep...its dead.
 endmsg
 x 2
 y 18
@@ -581,9 +576,7 @@ y 25
 end
 arch magic_mouth
 msg
-Oh no...you have intereupted a meeting
-of 'FED UP WITH ELVES' they look
-pretty pissed.
+Oh no...you have intereupted a meeting of 'FED UP WITH ELVES' they look pretty pissed.
 endmsg
 x 2
 y 26
@@ -594,9 +587,7 @@ y 26
 end
 arch magic_mouth
 msg
-Oh no...you have intereupted a meeting
-of 'FED UP WITH ELVES' they look
-pretty pissed.
+Oh no...you have intereupted a meeting of 'FED UP WITH ELVES' they look pretty pissed.
 endmsg
 x 2
 y 27
@@ -3846,8 +3837,7 @@ arch small_troll
 name Freddy the Troll
 msg
 @match *
-Go away from me house.  Me no like
-you.  Leave now Scummer
+Go away from me house.  Me no like you.  Leave now Scummer!
 endmsg
 x 19
 y 9
@@ -5113,8 +5103,7 @@ arch madman
 name MadMan
 msg
 @match *
-They're coming to take me away....
-HO HO HA HA HE HE HO HO HA HA HE HE
+They're coming to take me away.... HO HO HA HA HE HE HO HO HA HA HE HE!
 endmsg
 x 26
 y 8
@@ -5134,8 +5123,7 @@ arch madman
 name MadMan
 msg
 @match *
-They're coming to take me away....
-HO HO HA HA HE HE HO HO HA HA HE HE
+They're coming to take me away.... HO HO HA HA HE HE HO HO HA HA HE HE!
 endmsg
 x 26
 y 9
@@ -5175,8 +5163,7 @@ arch madman
 name MadMan
 msg
 @match *
-They're coming to take me away....
-HO HO HA HA HE HE HO HO HA HA HE HE
+They're coming to take me away.... HO HO HA HA HE HE HO HO HA HA HE HE!
 endmsg
 x 26
 y 12
@@ -5220,8 +5207,7 @@ arch madman
 name MadMan
 msg
 @match *
-They're coming to take me away....
-HO HO HA HA HE HE HO HO HA HA HE HE
+They're coming to take me away.... HO HO HA HA HE HE HO HO HA HA HE HE!
 endmsg
 x 26
 y 15
@@ -5338,13 +5324,8 @@ y 2
 end
 arch magic_mouth
 msg
-You see an Angel appear before you
-The Angle says:
-"Stop brave adventurer...do not
-take what is not your from this lonely
-hovel.  The owners have gone through
-great hardships.  So if you do feel
-the need to take anything YOU WILL DIE!
+You see an Angel appear before you The Angle says:
+"Stop brave adventurer...do not take what is not your from this lonely hovel.  The owners have gone through great hardships.  So if you do feel the need to take anything YOU WILL DIE!"
 endmsg
 x 27
 y 3
@@ -5462,8 +5443,7 @@ arch madman
 name MadMan
 msg
 @match *
-They're coming to take me away....
-HO HO HA HA HE HE HO HO HA HA HE HE
+They're coming to take me away.... HO HO HA HA HE HE HO HO HA HA HE HE!
 endmsg
 x 27
 y 14
@@ -5517,8 +5497,7 @@ arch madman
 name MadMan
 msg
 @match *
-They're coming to take me away....
-HO HO HA HA HE HE HO HO HA HA HE HE
+They're coming to take me away.... HO HO HA HA HE HE HO HO HA HA HE HE!
 endmsg
 x 27
 y 18
@@ -5689,8 +5668,7 @@ arch madman
 name MadMan
 msg
 @match *
-They're coming to take me away....
-HO HO HA HA HE HE HO HO HA HA HE HE
+They're coming to take me away.... HO HO HA HA HE HE HO HO HA HA HE HE!
 endmsg
 x 28
 y 11
@@ -5744,8 +5722,7 @@ arch madman
 name MadMan
 msg
 @match *
-They're coming to take me away....
-HO HO HA HA HE HE HO HO HA HA HE HE
+They're coming to take me away.... HO HO HA HA HE HE HO HO HA HA HE HE!
 endmsg
 x 28
 y 15
