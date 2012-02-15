@@ -8,7 +8,7 @@ enter_x 4
 enter_y 27
 msg
 Created:  1993-11-15
-Modified: 2008-12-02 Rick Tanner
+Modified: 2012-02-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -927,7 +927,7 @@ end
 arch skeleton
 msg
 @match *
-LEAVE NOW MORTAL, OR YE SHALL DIE
+LEAVE NOW MORTAL, OR YE SHALL DIE!
 endmsg
 hp 200
 maxhp 200
