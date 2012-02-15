@@ -8,7 +8,7 @@ enter_x 27
 enter_y 15
 msg
 Created:  1993-11-12
-Modified: 2011-11-21 Rick Tanner
+Modified: 2012-02-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -174,7 +174,7 @@ end
 arch locked_door1
 slaying set_individual_value ware
 msg
-For some reason this door is locked
+For some reason this door is locked.
 endmsg
 face ldoor_brown1.111
 x 1
