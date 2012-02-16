@@ -14,7 +14,7 @@ enter_x 12
 enter_y 18
 msg
 Created:  1993-10-27
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-02-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1295,11 +1295,9 @@ arch smith
 name Red
 msg
 @match weapons
-Well what you see is what you get, so
-I don't wanna hear no complainin
+Well what you see is what you get, so I don't wanna hear no complaining.
 @match *
-Hello adventure, welcome to my shop, I
-do have some weapons around
+Hello adventure, welcome to my shop, I do have some weapons around.
 endmsg
 x 11
 y 18
