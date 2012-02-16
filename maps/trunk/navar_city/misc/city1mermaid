@@ -8,7 +8,7 @@ enter_x 10
 enter_y 12
 msg
 Created:  1993-10-27
-Modified: 2011-11-16 Rick Tanner
+Modified: 2012-02-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -493,9 +493,7 @@ y 12
 end
 arch magic_mouth
 msg
-Ah, thank ye.
-The Smuggler's Cove is a tiny inlet just southwest of Navar where the top smugglers like to work.
-The Smugglers have been conducting a lot of business these past days but a honest bloke like me wouldn't know what that was about.
+Ah, thank ye.  The Smuggler's Cove is a tiny inlet just southwest of Navar where the top smugglers like to work.  The Smugglers have been conducting a lot of business these past days but a honest bloke like me wouldn't know what that was about.
 endmsg
 food 1
 x 4
@@ -520,7 +518,7 @@ You try being a pirate named Bradley...
 @match cove
 Well maybe if you drop a hundred gold on this table here I'd tell ya about that...
 @match *
-This chick's seen it all. She knows everyone.
+This chick's seen it all.  She knows everyone.
 endmsg
 x 4
 y 12
@@ -1064,14 +1062,14 @@ name TCI Representative
 msg
 @match tci
 @question location Where are the centers located?
-TCI, or Training Centers Incorporated, is the best dang training you'll ever get. We have locations all over the world in exotic settings. Come fight with us! (heh, they tell us we have to say all that)
+TCI, or Training Centers Incorporated, is the best dang training you'll ever get.  We have locations all over the world in exotic settings.  Come fight with us! (Heh, they tell us we have to say all that!)
 @match location
-Well, I don't know about all of them. But our local TCI is off the road north of here. Just head north for Darcap and look for one of our signs!
+Well, I don't know about all of them.  But our local TCI is off the road north of here.  Just head north for Darcap and look for one of our signs!
 @match hello|hi
 @question tci what is TCI?
-Well, hello there! Sit down and chat with me a bit. I am always looking for new people to tell about TCI.
+Well, hello there! Sit down and chat with me a bit.  I am always looking for new people to tell about TCI.
 @match *
-Hi there young'un. Wanna join TCI?
+Hi there young'un.  Wanna join TCI?
 endmsg
 x 9
 y 13
@@ -1983,8 +1981,7 @@ arch pirate
 name Drunken Smuggler
 msg
 @match *
-Go away shilly...weave me awone...
-*slobber* *stagger* *retch*.
+Go away shilly...weave me awone... *slobber* *stagger* *retch*.
 endmsg
 hp 50
 maxhp 50
@@ -2353,8 +2350,7 @@ arch pirate
 name Drunken Smuggler
 msg
 @match *
-Go away shilly...weave me awone...
-*slobber* *stagger* *retch*.
+Go away shilly...weave me awone... *slobber* *stagger* *retch*.
 endmsg
 hp 50
 maxhp 50
@@ -2439,9 +2435,7 @@ arch pirate
 name Drunken Smuggler
 msg
 @match *
-Go away shilly...weave me awone...
-I gotta get back to see the boss...
-*slobber* *stagger* *retch*.
+Go away shilly...weave me awone... I gotta get back to see the boss... *slobber* *stagger* *retch*.
 endmsg
 hp 50
 maxhp 50
