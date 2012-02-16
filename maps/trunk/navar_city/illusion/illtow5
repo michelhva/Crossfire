@@ -8,7 +8,7 @@ enter_x 1
 enter_y 9
 msg
 Created:  1993-11-15
-Modified: 2011-11-17 Rick Tanner
+Modified: 2012-02-15 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -3430,8 +3430,7 @@ end
 arch ent
 msg
 @match *
-RED LEADS TO DEATH
-BLACK LEADS TO LIFE
+RED LEADS TO DEATH, BLACK LEADS TO LIFE.
 endmsg
 x 33
 y 1
@@ -3534,8 +3533,7 @@ end
 arch ent
 msg
 @match *
-RED LEADS TO DEATH
-BLACK LEADS TO LIFE
+RED LEADS TO DEATH, BLACK LEADS TO LIFE.
 endmsg
 sp 50
 maxsp 50
