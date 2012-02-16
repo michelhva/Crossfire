@@ -14,7 +14,7 @@ enter_x 4
 enter_y 15
 msg
 Created:  1993-10-27
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-02-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -879,18 +879,11 @@ end
 arch magic_ear
 msg
 @match armour
-Yea, we have armour, look...see armor,
-go get it, pay for it if you want it,
-otherwise get out
+Yea, we have armour, look...see armor, go get it, pay for it if you want it, otherwise get out.
 @match blacksmith|smith|Blacksmith|Smith
-Yea, we have a Smith around, down by
-the Weapons shop, my brother Gunther
-owns the place
+Yea, we have a Smith around, down by the Weapons shop, my brother Gunther owns the place.
 @match *
-Yea, what ya want? I do have a few
-things around, but armour is my
-specialty, so buy something or get
-out, no loitering here
+Yea, what ya want? I do have a few things around, but armour is my specialty, so buy something or get out, no loitering here.
 endmsg
 x 7
 y 16
