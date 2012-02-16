@@ -10,7 +10,7 @@ enter_x 9
 enter_y 8
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-09 Rick Tanner
+Modified: 2012-02-16 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -2005,8 +2005,7 @@ name clay well plug
 name_pl clay well plugs
 slaying rodofalitheaterb4
 msg
-Only the rod of ali can remove this
-block.
+Only the rod of ali can remove this block.
 endmsg
 face earthwall.111
 x 10
@@ -2608,15 +2607,8 @@ y 34
 end
 arch note
 msg
-Here lies the treasure which I have
-taken from countless enemies and
-foreign ships. If anyone takes from
-this number I will cut off from their
-body a hand and foot from opposite
-sides.
-
--Ali
-
+Here lies the treasure which I have taken from countless enemies and foreign ships.  If anyone takes from this number I will cut off from their body a hand and foot from opposite sides.
+ -Ali
 endmsg
 x 12
 y 34
