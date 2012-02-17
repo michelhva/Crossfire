@@ -9,7 +9,7 @@ enter_x 25
 enter_y 1
 msg
 Created:  2002-02-18 Mikeeusa
-Modified: 2011-11-10 Rick Tanner
+Modified: 2012-02-16 Rick Tanner
 endmsg
 end
 arch invis_exit
@@ -834,7 +834,7 @@ connected 3
 end
 arch magic_mouth
 msg
-speak the word
+Speak the word.
 endmsg
 x 1
 y 19
@@ -854,7 +854,7 @@ connected 3
 end
 arch magic_mouth
 msg
-speak the word
+Speak the word.
 endmsg
 x 1
 y 20
@@ -874,7 +874,7 @@ connected 3
 end
 arch magic_mouth
 msg
-speak the word
+Speak the word.
 endmsg
 x 1
 y 21
@@ -4274,7 +4274,7 @@ msg
 Uggg it's filled with .... terrible... the folks before us... so they say there is a wizard with... something.... passage... clouds....
 *passes out*
 @match hi|hello
-*groan*... uhhhh I still feel ... ug... shouldent of went up the tower
+*Groan*... uhhhh I still feel ... ug... shouldent of went up the tower.
 endmsg
 x 8
 y 22
@@ -4903,7 +4903,7 @@ end
 arch sign
 name Private Party
 msg
-Private Party NO ENTRY
+Private Party, NO ENTRY!
 endmsg
 x 9
 y 28
@@ -6343,7 +6343,7 @@ end
 arch sage
 msg
 @match *
-mumble... I seen more laws broken in this place in one week then I have seen im my life... no wonder they require a pass word... mumble
+Mumble... I seen more laws broken in this place in one week then I have seen im my life... no wonder they require a pass word... mumble.
 endmsg
 hp 20
 x 12
@@ -7565,7 +7565,7 @@ arch quarto
 name Easy Explosives Volume 2
 name_pl Easy Explosives Volume 2
 msg
-You do not know the language written on the pages of this book
+You do not know the language written on the pages of this book.
 endmsg
 end
 end
@@ -9534,7 +9534,7 @@ arch northman
 name northman
 msg
 @match *
-*burp* Get away from me weakling
+*burp* Get away from me weakling.
 endmsg
 hp 360
 x 18
@@ -10439,7 +10439,7 @@ arch quarto
 name Prayer book of Valriel
 name_pl Prayer books of Valriel
 msg
-You cannot decypher the language this book was written in
+You cannot decypher the language this book was written in.
 endmsg
 x 19
 y 61
@@ -10607,17 +10607,17 @@ arch scroll_2
 name The Imperial Tribune
 msg
 HEADLINE: EXPLOSION ROCKS TAVERN
-A bomber detonated a high povered explosive device in the popular Goth's Tavern in Scorn. The blast killed two and injured 5. The bomber is reported to have screamed "Die booze ridden devil worshipers! Viva Valriel!" before throwing the bomb and then fleeing on foot. He is belived to have be a popular priest at the 'Traveling Ministry Of The Most Holy Power'. 
+A bomber detonated a high povered explosive device in the popular Goth's Tavern in Scorn.  The blast killed two and injured 5.  The bomber is reported to have screamed "Die booze ridden devil worshipers! Viva Valriel!" before throwing the bomb and then fleeing on foot.  He is belived to have be a popular priest at the 'Traveling Ministry Of The Most Holy Power'. 
 CRIME ON THE RISE:
-The Ministry of Peace has released a report saying that crime in Scorn is skyrocketing. The Ministry blames "piracy". The Guild of Showmen supports the study.
+The Ministry of Peace has released a report saying that crime in Scorn is skyrocketing.  The Ministry blames "piracy".  The Guild of Showmen supports the study.
 CHURCH OF VALRIEL TIES TO VIOLENCE:
-An undercover investigation into the 'Holy Church of Valriel' has discovered monetary ties to a militant group opreating under the 'Traveling Ministry Of The Most Holy Power'. When asked about this situation the High Priest of Valriel said "Ask God".
+An undercover investigation into the 'Holy Church of Valriel' has discovered monetary ties to a militant group opreating under the 'Traveling Ministry Of The Most Holy Power.'  When asked about this situation the High Priest of Valriel said, "Ask God."
 THREE KILLED IN POISON GAS ATTACK:
-Three women were killed when trying to enter a tavern near the western wall of Navar. Before they could give the password for entry into the tavern a figure unleashed a nerve agent into the air killing the women. It is believed this was an attack by a right wing religious organazation who worship valriel
+Three women were killed when trying to enter a tavern near the western wall of Navar.  Before they could give the password for entry into the tavern a figure unleashed a nerve agent into the air killing the women.  It is believed this was an attack by a right wing religious organazation who worship Valriel.
 CHILD STABS SELF - KNIVES BANNED
-A child killed himself by stabbing himself. All knivesover one foot are now banned by order of the high court of Navar, swords are unaffected.
+A child killed himself by stabbing himself.  All knives over one foot are now banned by order of the high court of Navar, swords are unaffected.
 SCORN NOW LARGEST WESTERN CITY
-The census of last year has now confirmed that Scorn is now the largest western city by population. Taxes are expected to rise, Navar unaffected.
+The census of last year has now confirmed that Scorn is now the largest western city by population.  Taxes are expected to rise, Navar unaffected.
 endmsg
 x 20
 y 6
@@ -11262,7 +11262,7 @@ end
 arch dwarf_priest
 msg
 @match *
-I hear there is an unholy wizard ...somewhere
+I hear there is an unholy wizard ...somewhere.
 endmsg
 x 21
 y 22
@@ -11609,7 +11609,7 @@ arch guildmaster
 name wealthy old man
 msg
 @match *
-I'ma gunna do something 'bout that there tavern. There's gad dang so much crime 'n murda here now since it opened. It's a cesspool of slime gamblin,booze, and sex! There all going straight to hell! Ah hear theres devil worshopers in there too!! Damn them!
+I'ma gunna do something 'bout that there tavern.  There's gad dang so much crime 'n murda here now since it opened.  It's a cesspool of slime gamblin, booze, and sex! There all going straight to hell! Ah hear theres devil worshopers in there too!! Damn them!
 endmsg
 x 21
 y 67
@@ -13321,7 +13321,7 @@ connected 3
 end
 arch magic_mouth
 msg
-speak the word
+Speak the word.
 endmsg
 x 25
 y 3
@@ -13801,7 +13801,7 @@ connected 3
 end
 arch magic_mouth
 msg
-speak the word
+Speak the word.
 endmsg
 x 26
 y 3
@@ -14011,7 +14011,7 @@ end
 arch sign_w
 name store room
 msg
-store roo
+Store Room
 endmsg
 x 26
 y 36
@@ -14379,7 +14379,7 @@ connected 3
 end
 arch magic_mouth
 msg
-speak the word
+Speak the word.
 endmsg
 x 27
 y 3
@@ -17601,7 +17601,7 @@ arch viking
 name drunk viking
 msg
 @match *
-*hicup
+*hiccup*
 endmsg
 x 33
 y 5
@@ -18722,7 +18722,7 @@ end
 arch sign_w
 name goblin army
 msg
-goblin arm
+Goblin Army
 endmsg
 x 35
 y 34
@@ -23549,17 +23549,17 @@ arch scroll_2
 name The Imperial Tribune
 msg
 HEADLINE: EXPLOSION ROCKS TAVERN
-A bomber detonated a high povered explosive device in the popular Goth's Tavern in Scorn. The blast killed two and injured 5. The bomber is reported to have screamed "Die booze ridden devil worshipers! Viva Valriel!" before throwing the bomb and then fleeing on foot. He is belived to have be a popular priest at the 'Traveling Ministry Of The Most Holy Power'.
+A bomber detonated a high povered explosive device in the popular Goth's Tavern in Scorn.  The blast killed two and injured 5.  The bomber is reported to have screamed "Die booze ridden devil worshipers! Viva Valriel!" before throwing the bomb and then fleeing on foot.  He is belived to have be a popular priest at the 'Traveling Ministry Of The Most Holy Power.'
 CRIME ON THE RISE:
-The Ministry of Peace has released a report saying that crime in Scorn is skyrocketing. The Ministry blames "piracy". The Guild of Showmen supports the study. 
+The Ministry of Peace has released a report saying that crime in Scorn is skyrocketing.  The Ministry blames "piracy."  The Guild of Showmen supports the study. 
 CHURCH OF VALRIEL TIES TO VIOLENCE:
-An undercover investigation into the 'Holy Church of Valriel' has discovered monetary ties to a militant group opreating under the 'Traveling Ministry Of The Most Holy Power'. When asked about this situation the High Priest of Valriel said "Ask God".
+An undercover investigation into the 'Holy Church of Valriel' has discovered monetary ties to a militant group opreating under the 'Traveling Ministry Of The Most Holy Power.' When asked about this situation the High Priest of Valriel said, "Ask God."
 THREE KILLED IN POISON GAS ATTACK:
-Three women were killed when trying to enter a tavern near the western wall of Navar. Before they could give the password for entry into the tavern a figure unleashed a nerve agent into the air killing the women. It is believed this was an attack by a right wing religious organazation who worship valriel
+Three women were killed when trying to enter a tavern near the western wall of Navar.  Before they could give the password for entry into the tavern a figure unleashed a nerve agent into the air killing the women.  It is believed this was an attack by a right wing religious organazation who worship Valriel.
 CHILD STABS SELF - KNIVES BANNED
-A child killed himself by stabbing himself. All knivesover one foot are now banned by order of the high court of Navar, swords are unaffected.
+A child killed himself by stabbing himself.  All knives over one foot are now banned by order of the high court of Navar, swords are unaffected.
 SCORN NOW LARGEST WESTERN CITY
-The census of last year has now confirmed that Scorn is now the largest western city by population. Taxes are expected to rise, Navar unaffected.
+The census of last year has now confirmed that Scorn is now the largest western city by population.  Taxes are expected to rise, Navar unaffected.
 endmsg
 x 45
 y 10
@@ -24226,9 +24226,9 @@ end
 arch elf_1
 msg
 @match yes|pupland
-There is a war going on in pupland. Rumors tell that the one who solves the mysteries of the lands is rewarded with unsurpassable power. I also heard that pupland's quests are a TOUGH challenge. But there are newbie areas too: The raffles, lone town and red town are good places to start with. Ask around there for furhter infos. 
+There is a war going on in pupland.  Rumors tell that the one who solves the mysteries of the lands is rewarded with unsurpassable power.  I also heard that pupland's quests are a TOUGH challenge.  But there are newbie areas too: The raffles, lone town and red town are good places to start with.  Ask around there for further infos. 
 @match no|where
-You can go there by using the dragon transport, west of Scorn port area. It really is worth a trip!
+You can go there by using the dragon transport, west of Scorn port area.  It really is worth a trip!
 @match *
 Have you ever been to pupland?
 endmsg
@@ -25221,7 +25221,7 @@ arch man
 name bartender
 msg
 @match yes
-Well you look supicious... there was a murder here a little while ago you know... of some old man, clamied to have magical powers but... I dunno hehehe
+Well you look supicious... there was a murder here a little while ago you know... of some old man, clamied to have magical powers but... I dunno hehehe.
 @match who|murder|man|old
 Yea someone named sarnatch or something
 @match no
@@ -25551,7 +25551,7 @@ arch book_clasp
 name contract
 name_pl contracts
 msg
-You can not decipher the encoded text
+You can not decipher the encoded text.
 endmsg
 x 49
 y 3
@@ -28824,7 +28824,7 @@ arch dwarf_wiz
 name high roller wizard
 msg
 @match *
-This is a private poker game. GET OUT!!
+This is a private poker game.  GET OUT!!
 endmsg
 hp 52
 x 55
@@ -35070,7 +35070,7 @@ unique 1
 end
 arch sign
 msg
-20,000 Diamonds are required to purchase this property. Navar Prop Inc: Part of Guild Houses Inc.
+20,000 Diamonds are required to purchase this property.  Navar Prop Inc: Part of Guild Houses Inc.
 endmsg
 x 68
 y 51
