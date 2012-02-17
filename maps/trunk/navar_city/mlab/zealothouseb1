@@ -10,7 +10,7 @@ enter_x 6
 enter_y 12
 msg
 Created:  2004-02-26 mikeeusa
-Modified: 2011-11-12 Rick Tanner
+Modified: 2012-02-17 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1811,7 +1811,7 @@ y 6
 end
 arch sign_w
 msg
-Testing Roo
+Testing Room.
 endmsg
 x 19
 y 6
@@ -2069,11 +2069,8 @@ carrying 67
 arch note
 msg
 To Do:
-1)Need one more noble gas.
-Used as password for tavern.
-Will inquire within.
+1)Need one more noble gas.  Used as password for tavern.  Will inquire within.
 2)Accure more nerve agents.
-
 endmsg
 end
 end
