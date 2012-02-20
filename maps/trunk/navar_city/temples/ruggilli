@@ -9,7 +9,7 @@ enter_x 11
 enter_y 22
 msg
 Created:  2003-11 Avion
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-02-19 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -834,27 +834,17 @@ arch faerie_dragon
 name Devotee of Ruggilli
 msg
 @match ruggilli
-Ruggilli, God of Destruction and
-Chaos! His Followers are feared among
-all living!
+Ruggilli, God of Destruction and Chaos! His Followers are feared among all living!
 @match flame
-Ruggilli will lend the immolating
-fires to any who choose to follow!
+Ruggilli will lend the immolating fires to any who choose to follow!
 @match immolating|fires
-Yes! A Flame which will consume your
-enemies!
+Yes! A Flame which will consume your enemies!
 @match follow|worship|door|gate|stair
-The Consuming worm Ruggilli will only
-accept followers who can pass his
-test. Descend down these stairs
-destroy His enemies and pass the tests
-and a pass shall be granted.
+The Consuming worm Ruggilli will only accept followers who can pass his test.  Descend down these stairs destroy His enemies and pass the tests and a pass shall be granted.
 @match quest
-When you are ready, your quest shall
-be given!
+When you are ready, your quest shall be given!
 @match *
-The eternal flame of Ruggilli will
-prevail
+The eternal flame of Ruggilli will prevail.
 endmsg
 hp 80
 x 6
@@ -1248,8 +1238,7 @@ msg
 ....Massster...We...Live...In...His...
 rath....
 @match *
-....Do...Not...Attempt...To...Pervent.
-.This...Place...
+....Do...Not...Attempt...To...Pervent...This...Place...
 endmsg
 hp 4000
 x 9
@@ -1812,9 +1801,7 @@ connected 10
 end
 arch magic_mouth
 msg
-Proceed down those stairs and defeat
-The Servant. Ruggilli will then permit
-entrance
+Proceed down those stairs and defeat The Servant. Ruggilli will then permit entrance.
 endmsg
 x 12
 y 11
@@ -2332,8 +2319,7 @@ msg
 ....Massster...We...Live...In...His...
 rath....
 @match *
-....Do...Not...Attempt...To...Pervent.
-.This...Place...
+....Do...Not...Attempt...To...Pervent...This...Place...
 endmsg
 hp 4000
 x 15
@@ -2525,8 +2511,7 @@ msg
 ....Massster...We...Live...In...His...
 rath....
 @match *
-....Do...Not...Attempt...To...Pervent.
-.This...Place...
+....Do...Not...Attempt...To...Pervent...This...Place...
 endmsg
 hp 4000
 x 16
