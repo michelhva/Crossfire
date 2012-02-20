@@ -9,7 +9,7 @@ enter_x 13
 enter_y 1
 msg
 Created:  2003-04-10 Avion
-Modified: 2011-11-20 Rick Tanner
+Modified: 2012-02-19 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -704,9 +704,8 @@ end
 arch letter
 msg
 How are those beasts I sent you working out Master Nim?
-I trust your payment will be prompt.
-If not I can always send some more of my pets your way - this time without restraints...
-- Aza
+I trust your payment will be prompt.  If not I can always send some more of my pets your way - this time without restraints...
+ - Aza
 endmsg
 x 5
 y 17
@@ -864,7 +863,7 @@ end
 arch book_clasp
 name Smugglers Guilde
 msg
-This be the  word of the Smugglers Guilde. There be six Masters in the Guilde who shall be the whole of the law.
+This be the  word of the Smugglers Guilde.  There be six Masters in the Guilde who shall be the whole of the law.
 endmsg
 x 6
 y 17
@@ -960,8 +959,7 @@ arch man
 name Barny
 msg
 @match *
-You saved us!
-They were going to feed us to those monsters!
+You saved us! They were going to feed us to those monsters!
 endmsg
 x 7
 y 11
