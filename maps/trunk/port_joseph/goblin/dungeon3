@@ -9,7 +9,7 @@ enter_x 13
 enter_y 12
 msg
 Created:  1994-09-03 langley (langley@fermat.dartmouth.edu)
-Modified: 2011-11-22 Rick Tanner
+Modified: 2012-02-20 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1995,7 +1995,6 @@ end
 arch altar
 msg
 A voice says:
-
 The first word shall be spoken in the north west.  The second word shall be spoke in the north east. Cross then to the sourth west where you shall speak the third word of power.  Then seek the final place to speak the final word.
 endmsg
 food 1
@@ -2558,7 +2557,7 @@ end
 arch magic_ear
 msg
 @match avarice
-You hear a grinding noise
+You hear a grinding noise.
 endmsg
 x 17
 y 1
