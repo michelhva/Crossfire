@@ -9,7 +9,7 @@ enter_x 10
 enter_y 30
 msg
 Created:  1994-06-02 langley (langley@fermat.dartmouth.edu)
-Modified: 2011-11-23 Rick Tanner
+Modified: 2012-02-20 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -711,7 +711,7 @@ y 27
 end
 arch magic_mouth
 msg
-On the wall is a painting. The painting depicts the sun setting behind a marble statue surrounded by lush plantlife. The statue has its arm out and is pointing behind you and to your right.
+On the wall is a painting.  The painting depicts the sun setting behind a marble statue surrounded by lush plantlife.  The statue has its arm out and is pointing behind you and to your right.
 endmsg
 x 3
 y 28
@@ -1199,7 +1199,7 @@ y 19
 end
 arch magic_mouth
 msg
-Some of this water seems shallow
+Some of this water seems shallow.
 endmsg
 x 6
 y 20
@@ -1926,7 +1926,7 @@ y 29
 end
 arch magic_mouth
 msg
-A briney scent fills the cavern
+A briney scent fills the cavern.
 endmsg
 x 10
 y 30
@@ -2022,7 +2022,7 @@ y 11
 end
 arch magic_mouth
 msg
-You sense dangerous magic nearby
+You sense dangerous magic nearby.
 endmsg
 x 11
 y 12
