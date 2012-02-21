@@ -8,7 +8,7 @@ enter_x 5
 enter_y 5
 msg
 Created:  1994-07-23 langley (langley@fermat.dartmouth.edu)
-Modified: 2011-11-22 Rick Tanner
+Modified: 2012-02-20 Rick Tanner
 endmsg
 end
 arch afloor_right
@@ -419,11 +419,11 @@ arch kobold
 name little kobold
 msg
 @match everything|tell|know
-Everyone picks on me. But I know there is great treasure behind these doors!
+Everyone picks on me.  But I know there is great treasure behind these doors!
 @match door|treasure
-You need special keys to get in. The gold key was downstairs but the silver key was stolen by the dirt hole gang.
+You need special keys to get in.  The gold key was downstairs but the silver key was stolen by the dirt hole gang.
 @match dirt|hole|gang
-Yeah, yeah, the dirt hole gang hangs out in the dirt hole outside the fort. No one likes them. They stole the silver key!
+Yeah, yeah, the dirt hole gang hangs out in the dirt hole outside the fort.  No one likes them.  They stole the silver key!
 @match *
 Please don't kill me! Please, I'll tell you everything I know!
 endmsg
