@@ -9,7 +9,7 @@ enter_x 1
 enter_y 5
 msg
 Created:  1994-08-27 langley (langley@fermat.dartmouth.edu)
-Modified: 2011-11-22 Rick Tanner
+Modified: 2012-02-20 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1185,14 +1185,11 @@ arch kobold
 name cowardly kobold
 msg
 @match why
-I hurt nobody!
-I steal nothing!
+I hurt nobody!  I steal nothing!
 @match steal|nothing
-I just want to look at it, thats all!
-It so pretty and shiny!
+I just want to look at it, thats all!  It so pretty and shiny!
 @match shiny|it|pretty|look at
-Buggle's key thats what!
-Don't hurt me!
+Buggle's key thats what!  Don't hurt me!
 @match buggle
 Buggle the big and mean guy!
 @match *
@@ -1409,7 +1406,6 @@ end
 arch magic_mouth
 msg
 What a stench!
-
 endmsg
 x 12
 y 8
@@ -1876,9 +1872,9 @@ msg
 @match help|knowledge|quest|what
 The goblins caught me as I was searching these dungeons, but I found a word of power.
 @match word|power
-Yes, the word of power is `ogsnog'. There are four words of power. Speak these in the shrine below. I do not know the other three words. Beware for the shrine has been overrun with ooze.
+Yes, the word of power is `ogsnog'.  There are four words of power.  Speak these in the shrine below.  I do not know the other three words.  Beware for the shrine has been overrun with ooze.
 @match *
-Ah me, thank you good adventurer. I have a little knowledge that can help you on your quest.
+Ah me, thank you good adventurer.  I have a little knowledge that can help you on your quest.
 endmsg
 x 16
 y 8
