@@ -9,7 +9,7 @@ enter_x 5
 enter_y 7
 msg
 Created:  1994-06-11 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-09-21 Rick Tanner
+Modified: 2012-02-21 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -416,7 +416,7 @@ y 7
 end
 arch rune_mark
 msg
-One, Two
+One, Two.
 endmsg
 x 3
 y 7
@@ -1399,7 +1399,7 @@ end
 arch magic_ear
 msg
 @match moogly|bill|Moogly|Bill
-You are transported elsewhere
+You are transported elsewhere.
 endmsg
 x 11
 y 3
