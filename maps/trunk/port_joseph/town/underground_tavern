@@ -11,7 +11,7 @@ msg
 This tavern seems quite old, but is apparently much used.
 
 Created:  2007-05-26 Nicolas Weeger
-Modified: 2011-11-24 Rick Tanner
+Modified: 2012-02-21 Rick Tanner
 endmsg
 maplore
 @quest Lursendis
@@ -596,18 +596,11 @@ msg
 Yes, his brother is nicknamed the Mad Mage, famous in all Scorn.
 @match exploded
 @question brother Ha, he has a brother?
-Yes, apparently from a magical experiment gone weird.
-
-Though he did survived, it is said he works for some king.
-
+Yes, apparently from a magical experiment gone weird.  Though he did survived, it is said he works for some king.  
 Maybe his brother knows more, you should ask him directly.
 @match farnass
 @question exploded His house exploded, really?
-Haa, Farnass, now that's a name I haven't heard in a while.
-
-He was one of the best cook chiefs of the whole world. Brother of the Mad Mage of Scorn, he shared with him passion for wizardry; yet his center of interest was much more focused on making tasty things and brewing nice beers.
-
-Fifteen years ago his house just exploded.
+Haa, Farnass, now that's a name I haven't heard in a while.  He was one of the best cook chiefs of the whole world.  Brother of the Mad Mage of Scorn, he shared with him passion for wizardry; yet his center of interest was much more focused on making tasty things and brewing nice beers.  Fifteen years ago his house just exploded.
 @match *
 Hello, youngster.
 endmsg
