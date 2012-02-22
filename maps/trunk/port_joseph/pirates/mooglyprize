@@ -9,7 +9,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1994-06-11 langley (langley@fermat.dartmouth.edu)
-Modified: 2011-11-23 Rick Tanner
+Modified: 2012-02-21 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -758,7 +758,7 @@ arch locked_door1
 name pirate's door
 slaying mooglybill
 msg
-The keyhole has a skull shape. On the door is written `Moogly Bill's. Leave now or death will find ye.'
+The keyhole has a skull shape.  On the door is written `Moogly Bill's.  Leave now or death will find ye.'
 endmsg
 x 6
 y 10
