@@ -8,7 +8,7 @@ enter_x 10
 enter_y 2
 msg
 Created:  1996-04-05
-Modified: 2011-12-01 Rick Tanner
+Modified: 2012-02-22 Rick Tanner
 endmsg
 end
 arch sky
@@ -1362,7 +1362,7 @@ end
 arch sign
 name Creators
 msg
-To solve quests, information is very important. Talking to the NPCs is inevitable in Pupland.
+To solve quests, information is very important.  Talking to the NPCs is inevitable in Pupland.
 -------------------------
 These maps are created by
 kawamoto@ics.es.osaka-u.ac.jp
@@ -1975,7 +1975,7 @@ end
 arch magic_mouth
 name No passport message
 msg
-You must have a Regular Army Passport to enter this gate. Please present your passport.
+You must have a Regular Army Passport to enter this gate.  Please present your passport.
 endmsg
 food 1
 x 14
@@ -1991,7 +1991,7 @@ connected 1001
 end
 arch magic_mouth
 msg
-Ah! Army personnel. Please enter.
+Ah! Army personnel.  Please enter.
 endmsg
 food 1
 x 14
