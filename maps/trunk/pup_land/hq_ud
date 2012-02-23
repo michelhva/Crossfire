@@ -8,7 +8,7 @@ enter_x 10
 enter_y 4
 msg
 Created:  1996-02-15
-Modified: 2011-12-01 Rick Tanner
+Modified: 2012-02-22 Rick Tanner
 endmsg
 end
 arch marble
@@ -366,7 +366,7 @@ arch ninja2
 name prison guard
 msg
 @match *
-Invader is here. Catch it!
+Invader is here.  Catch it!
 endmsg
 Wis 100
 hp 300
@@ -479,7 +479,7 @@ arch ninja2
 name prison guard
 msg
 @match *
-Invader is here. Catch it!
+Invader is here.  Catch it!
 endmsg
 Wis 100
 hp 300
@@ -513,7 +513,7 @@ end
 arch fighter
 msg
 @match eureca
-I'm not Eureca. But I'm willing to change my name if you rescue me then.
+I'm not Eureca.  But I'm willing to change my name if you rescue me then.
 @match *
 Help me!
 endmsg
@@ -898,7 +898,7 @@ arch ninja2
 name prison guard
 msg
 @match *
-Invader is here. Catch it!
+Invader is here.  Catch it!
 endmsg
 Wis 100
 hp 300
@@ -999,7 +999,7 @@ arch ninja2
 name prison guard
 msg
 @match *
-Invader is here. Catch it!
+Invader is here.  Catch it!
 endmsg
 Wis 100
 hp 300
@@ -1036,8 +1036,7 @@ msg
 @match eureca
 He is not in here!
 @match *
-Help me.
-I don't want to die!
+Help me.  I don't want to die!
 endmsg
 face elf.151
 hp 100
@@ -1576,7 +1575,7 @@ arch ninja2
 name prison guard
 msg
 @match *
-Invader is here. Catch it!
+Invader is here.  Catch it!
 endmsg
 Wis 100
 hp 300
@@ -1677,7 +1676,7 @@ arch ninja2
 name prison guard
 msg
 @match *
-Invader is here. Catch it!
+Invader is here.  Catch it!
 endmsg
 Wis 100
 hp 300
@@ -1859,7 +1858,7 @@ msg
 @match eureca
 What is Eureca? Is it some kind of food?
 @match *
-I'm very hungry. Give me something to eat!!
+I'm very hungry.  Give me something to eat!!
 endmsg
 hp 100
 x 11
@@ -2221,7 +2220,7 @@ arch ninja2
 name prison guard
 msg
 @match *
-Invader is here. Catch it!
+Invader is here.  Catch it!
 endmsg
 Wis 100
 hp 300
@@ -2256,7 +2255,7 @@ arch ninja2
 name prison guard
 msg
 @match *
-Invader is here. Catch it!
+Invader is here.  Catch it!
 endmsg
 Wis 100
 hp 300
@@ -2401,7 +2400,7 @@ arch ninja2
 name prison guard
 msg
 @match *
-Invader is here. Catch it!
+Invader is here.  Catch it!
 endmsg
 Wis 100
 hp 300
