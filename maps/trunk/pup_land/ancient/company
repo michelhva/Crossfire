@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1996-05-21
-Modified: 2011-11-26 Rick Tanner
+Modified: 2012-02-22 Rick Tanner
 endmsg
 end
 arch grass
@@ -586,13 +586,13 @@ arch conjurer
 name telepathist
 msg
 @match margaret
-I see Joseph's brother in the fire. Margaret loves Joseph's brother.
+I see Joseph's brother in the fire.  Margaret loves Joseph's brother.
 @match joseph
-I see Margaret in the fire. Joseph loves Margaret. 
+I see Margaret in the fire.  Joseph loves Margaret. 
 @match evil master
 Haha you would like to defeat the evil masters? You cannot defeat evil itself! I see your grave in the fire, you fool!
 @match me|myself
-I see your computer in the fire. You love your computer.
+I see your computer in the fire.  You love your computer.
 @match you|telepathist
 <another man appears in the fire>
 ...
@@ -600,7 +600,7 @@ I see your computer in the fire. You love your computer.
 ...
 Hey! That is none of your business! Leave my house, NOW!!!
 @match *
-Hello, adventurer. Do you do one-sided love? I can read his (or her) thought. Please say his/her name.
+Hello, adventurer.  Do you do one-sided love? I can read his (or her) thought.  Please say his/her name.
 endmsg
 hp 4000
 x 7
