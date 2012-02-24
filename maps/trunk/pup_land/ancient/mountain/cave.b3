@@ -8,7 +8,7 @@ enter_x 1
 enter_y 5
 msg
 Created:  1996-05-30
-Modified: 2011-11-28 Rick Tanner
+Modified: 2012-02-23 Rick Tanner
 endmsg
 end
 arch medium_stones
@@ -1378,7 +1378,7 @@ msg
 @match ladder
 You entered this cave by using a ladder, didn't you?
 @match *
-You should have taken more time to investigate this cave. Especially near the ladder...
+You should have taken more time to investigate this cave.  Especially near the ladder...
 endmsg
 hp 180
 x 10
