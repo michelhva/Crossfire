@@ -9,7 +9,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1996-05-21
-Modified: 2008-10-27 Rick Tanner
+Modified: 2012-02-23 Rick Tanner
 endmsg
 end
 arch grass
@@ -588,9 +588,9 @@ end
 arch man
 msg
 @match special offer
-Sometimes I have special offers. Check back often.
+Sometimes I have special offers.  Check back often.
 @match *
-Welcome to Kurte's shop. I'll exchange my items for your gold nuggets.
+Welcome to Kurte's shop.  I'll exchange my items for your gold nuggets.
 endmsg
 hp 180
 x 7
