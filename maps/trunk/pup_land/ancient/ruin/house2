@@ -8,7 +8,7 @@ enter_x 7
 enter_y 1
 msg
 Created:  1996-05-07
-Modified: 2011-11-29 Rick Tanner
+Modified: 2012-02-24 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -336,7 +336,7 @@ y 12
 end
 arch table
 msg
-   There are crumbles of bread on this table. Just like if someone ate at this table recently.
+   There are crumbles of bread on this table.  Just like if someone ate at this table recently.
 endmsg
 x 3
 y 12
@@ -1241,7 +1241,7 @@ end
 arch table
 msg
    Someone scribbled a message on it:
-   "pull first lever (west) - wait ten seconds - pull second lever (east) - wait one second - pull  second lever (east) again."
+   "Pull first lever (west) - wait ten seconds - pull second lever (east) - wait one second - pull second lever (east) again."
 endmsg
 x 13
 y 6
@@ -1856,7 +1856,7 @@ end
 arch magic_mouth
 name blocked
 msg
-You hear the sound of bursting metal. (Looks like you had bad luck - Try again later.)
+You hear the sound of bursting metal.  (Looks like you had bad luck - Try again later.)
 endmsg
 x 18
 y 15
