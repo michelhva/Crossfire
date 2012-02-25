@@ -8,7 +8,7 @@ enter_x 7
 enter_y 1
 msg
 Created:  1996-05-07
-Modified: 2008-12-03 Rick Tanner
+Modified: 2012-02-24 Rick Tanner
 endmsg
 end
 arch invis_exit
@@ -408,7 +408,7 @@ end
 arch scroll
 name trap!
 msg
-This is a demontrap. Run away!
+This is a demontrap.  Run away!
 endmsg
 x 3
 y 4
