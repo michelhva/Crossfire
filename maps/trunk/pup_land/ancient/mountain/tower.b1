@@ -8,7 +8,7 @@ enter_x 4
 enter_y 4
 msg
 Created:  1996-06-01
-Modified: 2011-11-29 Rick Tanner
+Modified: 2012-02-24 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1045,9 +1045,8 @@ end
 arch magic_mouth
 name 2
 msg
-the Necromancer say:
-Stranger, what a bad idea to come here!
-Golems: kill him. But don't make such a mess again like yesterday. I need his corpse in one piece.
+the Necromancer says: Stranger, what a bad idea to come here!
+Golems: kill him.  But don't make such a mess again like yesterday.  I need his corpse in one piece.
 endmsg
 x 14
 y 4
