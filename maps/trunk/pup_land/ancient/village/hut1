@@ -8,7 +8,7 @@ enter_x 8
 enter_y 14
 msg
 Created:  1996-05-17
-Modified: 2011-11-29 Rick Tanner
+Modified: 2012-02-24 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -346,9 +346,9 @@ arch a_townsman2
 name father
 msg
 @match siegfried
-This country is in serious need of a hero. Siegfried will save us!
+This country is in serious need of a hero.  Siegfried will save us!
 @match gothwolte
-Shhh! You should only whisper that name. It can be dangerous to speak it loud.
+Shhh! You should only whisper that name.  It can be dangerous to speak it loud.
 @match *
 Damn, we are into real big trouble these days! The Evil Masters, the Necromancer and then this mysterious creature called `Gothwolte'...
 endmsg
