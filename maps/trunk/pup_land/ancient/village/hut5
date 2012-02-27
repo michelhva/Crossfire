@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1996-05-21
-Modified: 2011-12-14 Rick Tanner
+Modified: 2012-02-26 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -545,9 +545,9 @@ arch man
 name Joseph
 msg
 @match yes
-Thanks. When success is ours, I'll give you some money.
+Thanks.  When success is ours, I'll give you some money.
 @match *
-I love Miss Margaret. But I can't speak my mind to her. Will you ask her if she loves me?
+I love Miss Margaret.  But I can't speak my mind to her.  Will you ask her if she loves me?
 endmsg
 face man.131
 hp 180
@@ -1044,8 +1044,7 @@ arch woman
 name Margaret
 msg
 @match love|joseph
-... It's secret.
-** She blushed fiery red. **
+... It's secret.  ** She blushed fiery red. **
 @match *
 Hello, adventurer?
 endmsg
