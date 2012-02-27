@@ -11,7 +11,7 @@ enter_x 7
 enter_y 8
 msg
 Created:  1996-05-21
-Modified: 2011-11-29 Rick Tanner
+Modified: 2012-02-26 Rick Tanner
 endmsg
 end
 arch blocked
@@ -414,9 +414,9 @@ arch courier
 name vendor
 msg
 @match *
-Welcome to my shop. I'll exchange my items for your nuggets.
+Welcome to my shop.  I'll exchange my items for your nuggets.
 @match job|business|money
-*sigh* Nobody is buying anything here. The people don't have any money. I used to sell my stuff in shining village - and now it's in ruins. These are bad days indeed...
+*sigh* Nobody is buying anything here.  The people don't have any money.  I used to sell my stuff in shining village - and now it's in ruins.  These are bad days indeed...
 endmsg
 hp 300
 maxhp 300
