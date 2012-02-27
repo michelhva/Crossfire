@@ -8,7 +8,7 @@ enter_x 1
 enter_y 16
 msg
 Created:  1996-05-21
-Modified: 2011-11-29 Rick Tanner
+Modified: 2012-02-26 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -342,7 +342,7 @@ end
 arch elf
 msg
 @match *
-Look at the guy standing at the bar. I believe that he is a thief.
+Look at the guy standing at the bar.  I believe that he is a thief.
 endmsg
 face elf.131
 hp 100
@@ -1031,9 +1031,9 @@ end
 arch viking
 msg
 @match person
-I have never seen him. But I expect that he lives in the house where there is the burning fireplace.
+I have never seen him.  But I expect that he lives in the house where there is the burning fireplace.
 @match yes|no
-It's a ghost town now. But I've heard that one Person still lives in the town.
+It's a ghost town now.  But I've heard that one Person still lives in the town.
 @match *
 Have you ever been to shining town?
 endmsg
@@ -1800,12 +1800,11 @@ arch swashbuckler
 name Hans
 msg
 @match yes
-Thanks.
-This symbol is needed to see him.
+Thanks.  This symbol is needed to see him.
 @match boss|find
-I can't tell you about the hiding place of the boss. There are too many people watching us.
+I can't tell you about the hiding place of the boss.  There are too many people watching us.
 @match *
-I can hardly believe that Siegfried killed Jacob, our friend - But it's an undeniable fact. Could you tell this to the boss of our gang?
+I can hardly believe that Siegfried killed Jacob, our friend - But it's an undeniable fact.  Could you tell this to the boss of our gang?
 endmsg
 face swashbuckl.131
 hp 100
@@ -2280,7 +2279,7 @@ arch man
 name barkeeper
 msg
 @match *
-I've heard that Siegfried would be a swindler. I hope this is not true.
+I've heard that Siegfried would be a swindler.  I hope this is not true.
 endmsg
 face man.171
 hp 180
