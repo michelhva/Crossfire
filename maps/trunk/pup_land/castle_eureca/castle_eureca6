@@ -8,7 +8,7 @@ enter_x 1
 enter_y 5
 msg
 Created:  1996-02-08
-Modified: 2011-12-02 Rick Tanner
+Modified: 2012-02-27 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -694,10 +694,9 @@ I forbid you to pass!
 @match prison
 Eureca's family lives in the prison.
 @match no
-Good!
-Three torches are required to go to prison. But it's not your business...
+Good!  Three torches are required to go to prison.  But it's not your business...
 @match *
-I guard the entrance to the Prison. Do you want to go to prison without permission?
+I guard the entrance to the Prison.  Do you want to go to prison without permission?
 endmsg
 x 6
 y 8
