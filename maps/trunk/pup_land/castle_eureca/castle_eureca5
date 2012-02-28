@@ -8,7 +8,7 @@ enter_x 10
 enter_y 19
 msg
 Created:  1996-03-07
-Modified: 2011-12-02 Rick Tanner
+Modified: 2012-02-27 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -3396,7 +3396,7 @@ arch key2
 name broken blue key
 slaying this_key_is_broken
 msg
-The key got broken during combat. Too bad, Gothwoltes treasure would have been interesting for sure!
+The key got broken during combat.  Too bad, Gothwolte's treasure would have been interesting for sure!
 endmsg
 face key_blue.111
 x 8
@@ -3820,7 +3820,7 @@ end
 arch corpse1
 name Lord Eureca
 msg
-Lord Eureca is bleeding to death. You feel very sorry for him.
+Lord Eureca is bleeding to death.  You feel very sorry for him.
 endmsg
 x 9
 y 30
@@ -4061,11 +4061,11 @@ msg
 @match family
 Eureca's family? I don't care, bua ha ha...
 @match eureca
-Eureca is the perfect body. He fled from my attack and I have to find him soon. I'll let you live if you help me find Eureca.
+Eureca is the perfect body.  He fled from my attack and I have to find him soon.  I'll let you live if you help me find Eureca.
 @match body
-My body... that is the guy who found me recently, after horrible decades of waiting. But you don't understand my being...
+My body... that is the guy who found me recently, after horrible decades of waiting.  But you don't understand my being...
 @match *
-I am Gothwolte, the lord of the world. I am invulnerable, but my body is damn weak! I want Eureca, but I have to find him before he travels to the past.
+I am Gothwolte, the lord of the world.  I am invulnerable, but my body is damn weak! I want Eureca, but I have to find him before he travels to the past.
 endmsg
 Str 40
 Dex 40
@@ -4321,7 +4321,7 @@ end
 arch masamune
 name whirlwind
 msg
-The sword flashes mysteriously. You would love to touch it, but you won't make the same mistake like Eureca!
+The sword flashes mysteriously.  You would love to touch it, but you won't make the same mistake like Eureca!
 endmsg
 Str 0
 Dex 0
@@ -7929,7 +7929,7 @@ arch key2
 name blue key
 slaying gothwolte_key
 msg
-This is the key to Gothwolte's treasure hoard. Don't drop it!
+This is the key to Gothwolte's treasure hoard.  Don't drop it!
 endmsg
 face key_blue.111
 x 20
