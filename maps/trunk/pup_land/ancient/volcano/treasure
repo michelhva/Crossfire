@@ -9,7 +9,7 @@ enter_x 4
 enter_y 24
 msg
 Created:  2004-06-09 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2011-12-30 Nicolas Weeger
+Modified: 2012-02-27 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -1117,7 +1117,7 @@ end
 arch monument
 name warning
 msg
-This path leads to Gothwolte's treasure hoard. Nobody is allowed to pass! Intruders will suffer horribly. (In other words: You - will - die!)
+This path leads to Gothwolte's treasure hoard.  Nobody is allowed to pass! Intruders will suffer horribly. (In other words: You - will - die!)
 endmsg
 x 4
 y 22
@@ -2990,7 +2990,7 @@ connected 11
 end
 arch wdsm
 msg
-This famous armour grants permanent immunity to fire. Even the gods watch you with envy. Once you give it away, they will surely destroy it.
+This famous armour grants permanent immunity to fire.  Even the gods watch you with envy.  Once you give it away, they will surely destroy it.
 endmsg
 x 12
 y 23
