@@ -8,7 +8,7 @@ enter_x 26
 enter_y 36
 msg
 Created:  2005-11-07 Gene Alexander
-Modified: 2011-12-05 Rick Tanner
+Modified: 2012-02-28 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -2535,7 +2535,7 @@ arch altar_trigger
 name New Stove 30000 Rubies
 slaying ruby
 msg
-Removing your old stove. Please wait.
+Removing your old stove.  Please wait.
 endmsg
 exp 60
 food 30000
@@ -3667,7 +3667,7 @@ arch altar_trigger
 name New Cauldron 30000 Rubies
 slaying ruby
 msg
-Removing your old cauldron. Please wait.
+Removing your old cauldron.  Please wait.
 endmsg
 exp 60
 food 30000
@@ -6475,7 +6475,7 @@ name_pl Apartment Owner Guides
 msg
 Welcome to your new apartment.
 -=-
-You will notice 3 windows along the West and East walls of your savebed room. In front of each window is a magical place to buy keys for extending your home. Step in front of each window to find out what to do. Extending your apartment will be expensive, but we think it's worth the cost.
+You will notice 3 windows along the West and East walls of your savebed room.  In front of each window is a magical place to buy keys for extending your home.  Step in front of each window to find out what to do.  Extending your apartment will be expensive, but we think it's worth the cost.
 -=-
 Enjoy extending and exploring your new apartment.
 endmsg
