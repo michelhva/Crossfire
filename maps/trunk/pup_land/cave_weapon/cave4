@@ -8,7 +8,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  1996-02-08
-Modified: 2011-12-03 Rick Tanner
+Modified: 2012-02-28 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -540,7 +540,7 @@ arch sage
 name mystery man
 msg
 @match key
-I'll give you a hint. "You'll never open the door which was closed first. You can open the door which was opened first"
+I'll give you a hint. "You'll never open the door which was closed first.  You can open the door which was opened first"
 @match yes
 So, you have to get a Key.
 @match *
