@@ -8,7 +8,7 @@ enter_x 6
 enter_y 8
 msg
 Created:  1996-04-03
-Modified: 2011-12-04 Rick Tanner
+Modified: 2012-02-28 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1260,7 +1260,7 @@ end
 arch magic_mouth
 msg
 The hall echoes with loud voice:
-  "I'll test your knowledge about shining kingdom. Don't be deceived.. You will see many illusions..."
+  "I'll test your knowledge about shining kingdom.  Don't be deceived.. You will see many illusions..."
 endmsg
 x 6
 y 6
@@ -2096,7 +2096,7 @@ y 25
 end
 arch magic_mouth
 msg
-There was a scroll in the Tower of Ordeal. What was written in it?
+There was a scroll in the Tower of Ordeal.  What was written in it?
  1. Bird week
  2. Natural food is healthy
  3. Let's protect nature
@@ -8114,7 +8114,7 @@ arch guildmaster
 name Guildmaster, Dean
 msg
 @match hi|hello
-Siegfried killed evil masters, and saved the world in the legend. He is our Hero!!!
+Siegfried killed evil masters, and saved the world in the legend.  He is our Hero!!!
 endmsg
 x 31
 y 17
@@ -9334,7 +9334,7 @@ y 31
 end
 arch scroll
 msg
-Pass on the five pentagrams quickly, then go to the center. Please burn me after reading!
+Pass on the five pentagrams quickly, then go to the center.  Please burn me after reading!
 endmsg
 x 36
 y 31
@@ -9516,11 +9516,11 @@ arch beholder
 name Fool
 msg
 @match kurte
-Kurte is the beginning and the end. He is part of the land, and the land is *him*. The real question is: Who are you?
+Kurte is the beginning and the end.  He is part of the land, and the land is *him*.  The real question is: Who are you?
 @match scholar
 Yes, you are a now scholar of kurte. <clap>, <clap>, <clap>...
 @match *
-For being so honest <chuckle>.. you are a scholar of Kurte. You should buy an apartment and live in Nurnberg now!
+For being so honest <chuckle>.. you are a scholar of Kurte.  You should buy an apartment and live in Nurnberg now!
 endmsg
 hp 200
 exp 1
