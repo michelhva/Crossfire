@@ -8,7 +8,7 @@ enter_x 15
 enter_y 15
 msg
 Created:  1996-02-08
-Modified: 2011-12-03 Rick Tanner
+Modified: 2012-02-28 Rick Tanner
 endmsg
 end
 arch blocked
@@ -335,7 +335,7 @@ arch guildmaster
 name prof. Gill
 msg
 @match genome|project|kobold
-After decades of reasearch I have created the invincible "hyper kobold". With this weapon in our hands, we can win the war against resistance.
+After decades of reasearch I have created the invincible "hyper kobold."  With this weapon in our hands, we can win the war against resistance.
 @match yes
 Do your best, bua ha ha! Hehehe!! <Prof. Gill seems to be the typical sort of nutty scientist>
 @match *
@@ -2942,7 +2942,7 @@ end
 arch sign
 name info
 msg
-Lab: Genome-Project Testing Room. (You cannot use magic here) Demiliches live in the hole behind you. Don't disturb them...
+Lab: Genome-Project Testing Room. (You cannot use magic here) Demiliches live in the hole behind you.  Don't disturb them...
 endmsg
 x 15
 y 14
