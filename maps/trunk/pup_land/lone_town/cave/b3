@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1996-12-18
-Modified: 2011-12-05 Rick Tanner
+Modified: 2012-02-28 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1076,10 +1076,7 @@ y 6
 end
 arch sign
 msg
-Unusual kobolds!!
-They are very dangerous!!!
-You better not engage them in melee
-combat.
+Unusual kobolds!!  They are very dangerous!!!  You better not engage them in melee combat.
 endmsg
 x 4
 y 6
@@ -3191,10 +3188,7 @@ y 2
 end
 arch sign
 msg
-Unusual kobolds!!
-They are very dangerous!!!
-You better not engage them in melee
-combat.
+Unusual kobolds!!  They are very dangerous!!!  You better not engage them in melee combat.
 endmsg
 x 11
 y 2
@@ -4551,7 +4545,7 @@ y 21
 end
 arch sign
 msg
-Keep pushing the button
+Keep pushing the button.
 endmsg
 x 16
 y 21
