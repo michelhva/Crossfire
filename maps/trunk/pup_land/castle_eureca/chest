@@ -8,7 +8,7 @@ enter_x 6
 enter_y 7
 msg
 Created:  2001-02-20
-Modified: 2011-12-03 Rick Tanner
+Modified: 2012-02-28 Rick Tanner
 endmsg
 end
 arch unholy_ground
@@ -694,9 +694,9 @@ msg
 @match yes
 Good boy! I can tell you: The first hundred years are hard, but then you get used to it...
 @match no
-I knew you wouldn't agree. That means we have to fight! The winner can leave.
+I knew you wouldn't agree.  That means we have to fight! The winner can leave.
 @match *
-I've been trapped in this chest for ages. Now, finally, I will be free!! Only one soul can be trapped in here. You stay and I leave - that is fair, you agree?
+I've been trapped in this chest for ages.  Now, finally, I will be free!! Only one soul can be trapped in here.  You stay and I leave - that is fair, you agree?
 endmsg
 Str 20
 Dex 20
