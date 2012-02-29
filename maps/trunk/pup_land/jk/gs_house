@@ -8,7 +8,7 @@ enter_x 8
 enter_y 18
 msg
 Created:  1996-02-08
-Modified: 2011-12-03 Rick Tanner
+Modified: 2012-02-12 Rick Tanner
 endmsg
 end
 arch pit_closed
@@ -1039,7 +1039,7 @@ msg
 @match both
 I wonder if you are strong enough to survive this...
 @match hi|hello|summon
-Greetings. I'm the greatest summoner of the world. I can summon monsters from other dimensions. State your preferences...
+Greetings.  I'm the greatest summoner of the world.  I can summon monsters from other dimensions.  State your preferences...
 @match dimension
 Planes you have never seen.
 @match goblin
@@ -1047,11 +1047,11 @@ That's a piece of cake!
 @match monster
 You would like to watch a summoning? What do you want: dragon, titan,... both? Or maybe just goblins?
 @match jessy
-Are you nuts? A Jessy would crush my house... But, of course, I could do it. Yes, believe me... I could!
+Are you nuts? A Jessy would crush my house... But, of course, I could do it.  Yes, believe me... I could!
 @match none|neither
 You are so CHICKEN-HEARTED!
 @match treasure|crown|jewel|gold
-Summoning jewelery is dangerous because the appropriate astral plain is inhabited by fierce creatures! If you're willing to take the risk, say "go ahead".
+Summoning jewelery is dangerous because the appropriate astral plain is inhabited by fierce creatures! If you're willing to take the risk, say "go ahead."
 @match go ahead
 Okay, let's try...
 @match *
@@ -1267,7 +1267,7 @@ end
 arch sign
 name stay off
 msg
-The owner of this house is CRAZY. Do not talk to him. DANGER! 
+The owner of this house is CRAZY.  Do not talk to him.  DANGER! 
 endmsg
 x 9
 y 16
