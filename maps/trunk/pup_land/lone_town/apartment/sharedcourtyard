@@ -8,7 +8,7 @@ enter_x 9
 enter_y 19
 msg
 Created:  2005-11-07 Gene Alexander
-Modified: 2011-12-05 Rick Tanner
+Modified: 2012-02-28 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1096,7 +1096,7 @@ arch magic_mouth
 msg
 WARNING! DANGER!
 -=-
-You are entering an Acme Incinerator. Be sure to close the incinerator grate before triggering the incinerator. If you do not then your death is on your own head not the heads of the Acme Incinerator Company.
+You are entering an Acme Incinerator.  Be sure to close the incinerator grate before triggering the incinerator.  If you do not then your death is on your own head not the heads of the Acme Incinerator Company.
 -=-
 If you kill bystanders by not closing the grate before triggering the Acme incinerator you will have to answer to the authorities for your manslaughter.
 -=-
@@ -2545,7 +2545,7 @@ arch altar_trigger
 name New Stove 30000 Rubies
 slaying ruby
 msg
-Removing your old stove. Please wait.
+Removing your old stove.  Please wait.
 endmsg
 exp 60
 food 30000
@@ -3577,7 +3577,7 @@ arch altar_trigger
 name New Cauldron 30000 Rubies
 slaying ruby
 msg
-Removing your old cauldron. Please wait.
+Removing your old cauldron.  Please wait.
 endmsg
 exp 60
 food 30000
