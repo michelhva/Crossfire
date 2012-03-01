@@ -8,7 +8,7 @@ enter_x 5
 enter_y 1
 msg
 Created:  1996-01-26
-Modified: 2011-12-05 Rick Tanner
+Modified: 2012-02-29 Rick Tanner
 endmsg
 end
 arch blocked
@@ -615,7 +615,7 @@ end
 arch altar
 slaying money
 msg
-Thanks. The gods will protect you... perhaps.
+Thanks.  The gods will protect you... perhaps.
 endmsg
 food 1000
 x 5
