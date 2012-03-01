@@ -8,7 +8,7 @@ enter_x 3
 enter_y 12
 msg
 Created:  1996-02-13
-Modified: 2012-02-27 Rick Tanner
+Modified: 2012-02-29 Rick Tanner
 endmsg
 end
 arch marble
@@ -912,8 +912,7 @@ o Names of unreachable items.
 o Equipment of monsters/NPCs.
 ------
 To examine an object...
-...with cfclient: left-click on it!
-...with winclient: right-click on it, then select "look at"!
+...with gtk client: left-click on it!
 endmsg
 x 9
 y 9
