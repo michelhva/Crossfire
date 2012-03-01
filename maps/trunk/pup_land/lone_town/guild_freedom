@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-12-18
-Modified: 2012-12-14 Rick Tanner
+Modified: 2012-02-29 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -215,11 +215,11 @@ arch ninja
 name Slik, the ninja
 msg
 @match task
-I will assassinate Bauer, the leader of Regular Army. It's the only way to win that war.
+I will assassinate Bauer, the leader of Regular Army.  It's the only way to win that war.
 @match training
-I'm training for my great task. It will be difficult.
+I'm training for my great task.  It will be difficult.
 @match *
-Hello. Don't disturb me, I'm doing ninja-training.
+Hello.  Don't disturb me, I'm doing ninja-training.
 endmsg
 Dex -19
 hp 100
@@ -260,7 +260,7 @@ We are members of Liberation Army.
 @match regular
 We fight against Regular Army.
 @match no|sumson
-Sumson is the spy of Liberation Army. He entered the city of Nurnberg, to collected information about our enemies, the Regular Army.
+Sumson is the spy of Liberation Army.  He entered the city of Nurnberg, to collected information about our enemies, the Regular Army.
 @match yes
 Really!? So, Where is he?
 @match *
@@ -592,7 +592,7 @@ He is the leader of Regular Army and he is the mayer of Nurnberg.
 @match lone|town
 Welcome to lone town!
 @match *
-Mr.Bauer and his Regular Army built the Barrier station.
+Mr. Bauer and his Regular Army built the Barrier station.
 endmsg
 hp 180
 x 5
@@ -1057,11 +1057,11 @@ end
 arch barbarian
 msg
 @match resistance
-We are not the "resistance"!
+We are not the "resistance!"
 @match regular
-They call us "Resistance". In fact, we want nothing but freedom.
+They call us "Resistance."  In fact, we want nothing but freedom.
 @match liberation
-We'll win the war against Regular Army. There's no doubt about that.
+We'll win the war against Regular Army.  There's no doubt about that.
 @match *
 This is the guild of Liberation Army.
 endmsg
@@ -1369,17 +1369,17 @@ arch human
 name Reception of Liberation Army
 msg
 @match protect nature
-Good, you passed the test! Talk to the guildmaster now. He will provide you with further instructions.
+Good, you passed the test! Talk to the guildmaster now.  He will provide you with further instructions.
 @match tower
-The Tower of Ordeal lies to the east of lone town. I'll give you the key when you are ready.
+The Tower of Ordeal lies to the east of lone town.  I'll give you the key when you are ready.
 @match key
-Here it is. The key for the Tower of Ordeal.
+Here it is.  The key for the Tower of Ordeal.
 @match scroll
 You must find the scroll by yourself.
 @match yes
-Fine, but I must test your combat ability first. Go to the Tower of Ordeal, and search for a scroll there.
+Fine, but I must test your combat ability first.  Go to the Tower of Ordeal, and search for a scroll there.
 @match *
-I am a member of Liberation Army. Do you want to join us?
+I am a member of Liberation Army.  Do you want to join us?
 endmsg
 hp 100
 x 13
@@ -1573,7 +1573,7 @@ arch guildmaster
 name Dean, the guildmaster
 msg
 @match money
-Yes, money is an important issue during war. And that's why the Liberation Army cannot be defeated :-)
+Yes, money is an important issue during war.  And that's why the Liberation Army cannot be defeated. :-)
 @match *
 We're fighting for freedom.
 endmsg
@@ -1918,9 +1918,9 @@ arch guildmaster
 name Dean, the guildmaster
 msg
 @match siegfried
-Siegfried is a famous hero from the legends about pupland's history. It is said that he killed the Evil Masters and saved the world. He is our IDOL!
+Siegfried is a famous hero from the legends about pupland's history.  It is said that he killed the Evil Masters and saved the world.  He is our IDOL!
 @match *
-Congratulations! The Liberation Army welcomes you as a new member. The common password of Liberation Army is "siegfried". Don't forget it! Okay, it's time for your first mission: Since you're a stranger, you'll be a formidable spy. Leave lone town and head east. There is a hidden port in the jungle. Take a ship to Nurnberg.
+Congratulations! The Liberation Army welcomes you as a new member.  The common password of Liberation Army is "siegfried."  Don't forget it!  Okay, it's time for your first mission: Since you're a stranger, you'll be a formidable spy.  Leave lone town and head east.  There is a hidden port in the jungle.  Take a ship to Nurnberg.
 endmsg
 hp 5000
 maxhp 5000
