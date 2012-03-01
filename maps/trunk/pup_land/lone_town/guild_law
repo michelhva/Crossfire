@@ -8,7 +8,7 @@ enter_x 16
 enter_y 7
 msg
 Created:  1996-12-18
-Modified: 2011-12-14 Rick Tanner
+Modified: 2012-02-29 Rick Tanner
 endmsg
 end
 arch grass
@@ -227,7 +227,7 @@ arch guildmaster
 name James, the guildmaster
 msg
 @match *
-We are fighting to defend the law. Our enemies the resistance, they are all rascals.
+We are fighting to defend the law.  Our enemies the resistance, they are all rascals.
 endmsg
 hp 5000
 maxhp 5000
@@ -481,7 +481,7 @@ arch elf
 name Reception of ???
 msg
 @match yes
-Sorry, but I have to test your combat abilities first: Enter the Cave of Ordeal and search for a scroll. I have opened the gate for you...
+Sorry, but I have to test your combat abilities first: Enter the Cave of Ordeal and search for a scroll.  I have opened the gate for you...
 @match *
 Sssh! Please lower your voice... Do you want to join the Regular Army?
 endmsg
@@ -914,9 +914,9 @@ arch elf
 name Regular Army
 msg
 @match siegfried|saga
-Siegfried is a great hero in the history of pupland. You *must* read it.
+Siegfried is a great hero in the history of pupland.  You *must* read it.
 @match *
-Do you know about the siegfried-saga?
+Do you know about the Siegfried-saga?
 endmsg
 hp 100
 x 8
@@ -985,7 +985,7 @@ Lone town is the origin and center of the "resistance" movement.
 @match regular
 We'll win the war against the resistance because we can outnumber them.
 @match *
-This is the guild of Regular Army. I'm working as a spy.
+This is the guild of Regular Army.  I'm working as a spy.
 endmsg
 hp 100
 x 9
@@ -1448,7 +1448,7 @@ msg
 @match resistance
 We fight against them.
 @match barrier|station
-There is a barrier station to the south-east from this town. We prevent Liberation Army from entering the eastern part of the country that way.
+There is a barrier station to the south-east from this town.  We prevent Liberation Army from entering the eastern part of the country that way.
 @match *
 We built the Barrier Station.
 endmsg
@@ -1946,7 +1946,7 @@ msg
 @match siegfried
 He is our Hero!
 @match *
-Congratulations! Now you are a member of Regular Army. Don't loose your passport, it enables you to pass the barrier station.
+Congratulations! Now you are a member of Regular Army.  Don't loose your passport, it enables you to pass the barrier station.
 endmsg
 sp 0
 maxsp 0
@@ -2172,7 +2172,7 @@ arch magic_mouth
 name 3
 msg
 The Reception of ??? says:
-Excellent. You've been accepted as member of Regular Army. Here is your passport. Talk to the guildmaster for further instructions.
+Excellent.  You've been accepted as member of Regular Army.  Here is your passport.  Talk to the guildmaster for further instructions.
 endmsg
 x 21
 y 1
@@ -2384,7 +2384,7 @@ y 7
 end
 arch sign
 msg
-Keep pushing the button. And proceed with *caution*...
+Keep pushing the button.  And proceed with *caution*...
 endmsg
 x 22
 y 7
