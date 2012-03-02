@@ -8,7 +8,7 @@ enter_x 1
 enter_y 20
 msg
 Created:  1996-01-31
-Modified: 2008-10-26 Rick Tanner
+Modified: 2012-03-01 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -2248,7 +2248,7 @@ y 11
 end
 arch sign
 msg
-Don't steal
+Don't steal.
 endmsg
 x 11
 y 11
@@ -2467,10 +2467,7 @@ y 12
 end
 arch sign
 msg
-Very high level area
-Be careful!
-
-
+Very high level area, Be careful!
 endmsg
 x 12
 y 12
