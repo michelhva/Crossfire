@@ -8,7 +8,7 @@ enter_x 7
 enter_y 10
 msg
 Created:  1997-11-26
-Modified: 2011-12-07 Rick Tanner
+Modified: 2012-03-01 Rick Tanner
 endmsg
 end
 arch blocked
@@ -247,7 +247,7 @@ y 6
 end
 arch magic_mouth
 msg
-To the underground of the magic show
+To the underground of the magic show.
 endmsg
 x 1
 y 6
@@ -287,11 +287,11 @@ arch beholder
 name Fool
 msg
 @match I don't know
-At least you are an honest person. I decide to give you the token, but I can't stand your ugly face any more! GO AWAY!!
+At least you are an honest person.  I decide to give you the token, but I can't stand your ugly face any more! GO AWAY!!
 @match token
 You do want the token don't you? So...  If you can answer my query, I'll give you the token.  Ok?
 @match yes|ok
-My query for you is .. "Where is the Belzebub's sword?".
+My query for you is .. "Where is the Belzebub's sword?"
 @match here|there
 Are you sure!? You think the Belzebub's sword would be here!? You are stupid and annoying.  Go away!!
 @match *
@@ -1530,7 +1530,7 @@ end
 arch locked_door1
 slaying the_magic_show
 msg
-Ladies and Gentlemen, Welcome to our phantastic MAGIC SHOW. Enjoy our most famous illusion:  The teleportation of the Belzebub's Sword! To see it, please buy a Token.  Ask "Fool", the beholder salesman.
+Ladies and Gentlemen, Welcome to our phantastic MAGIC SHOW.  Enjoy our most famous illusion:  The teleportation of the Belzebub's Sword! To see it, please buy a Token.  Ask "Fool", the beholder salesman.
 endmsg
 x 7
 y 7
@@ -2558,13 +2558,13 @@ arch conjurer
 name Magician
 msg
 @match token|fool
-I'm afraid that crazy beholder-Fool will provide you with a query instead of the token. His queries usually are quite difficult, so, if you cannot answer his query, just say honestly "I don't know".
+I'm afraid that crazy beholder-Fool will provide you with a query instead of the token.  His queries usually are quite difficult, so, if you cannot answer his query, just say honestly "I don't know."
 @match no
 Then go ahead and buy a token.
 @match yes
 It's phantastic, isn't it?
 @match *
-Customer! Welcome to our famous magic show. Have you seen it yet?
+Customer! Welcome to our famous magic show.  Have you seen it yet?
 endmsg
 hp 400
 x 12
