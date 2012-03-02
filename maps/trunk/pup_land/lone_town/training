@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1996-01-29
-Modified: 2011-12-08 Rick Tanner
+Modified: 2012-03-01 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -579,13 +579,12 @@ end
 arch mage
 msg
 @match yes
-He is such a coward. He always ran away from the kobolds in Room 1.
+He is such a coward.  He always ran away from the kobolds in Room 1.
 hahaha!
 @match no|cordish
-He used to live in the south-east of lone town. But now he his missing.
+He used to live in the south-east of lone town.  But now he his missing.
 @match *
-1,2,1,2..
-Do you know Cordish?
+1,2,1,2.. Do you know Cordish?
 endmsg
 face mage.111
 hp 100
@@ -1164,9 +1163,9 @@ arch fighter
 name Instructor
 msg
 @match cordish
-Cordish was my worst pupil ever. I couldn't teach him how to fight because he always ran away. Unbelievable that Eureca accepted such a person as royal servant.
+Cordish was my worst pupil ever.  I couldn't teach him how to fight because he always ran away.  Unbelievable that Eureca accepted such a person as royal servant.
 @match *
-Here is the Training Center of Liberation Army. Do you want to be my pupil?
+Here is the Training Center of Liberation Army.  Do you want to be my pupil?
 endmsg
 Con 30
 hp 5000
