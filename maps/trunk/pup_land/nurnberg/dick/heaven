@@ -8,7 +8,7 @@ enter_x 18
 enter_y 2
 msg
 Created:  1996-02-12
-Modified: 2011-12-12 Rick Tanner
+Modified: 2012-03-02 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1962,7 +1962,7 @@ end
 arch sign
 msg
 Room of Comet:
- Password to escape from the room is  "kasdjuFkuGngauG" (a success rate of 5/9)
+ Password to escape from the room is "kasdjuFkuGngauG" (a success rate of 5/9)
 endmsg
 x 6
 y 17
@@ -5123,7 +5123,7 @@ y 24
 end
 arch magic_mouth
 msg
-Treasure Room
+Treasure Room.
 endmsg
 x 15
 y 24
@@ -5442,7 +5442,7 @@ y 15
 end
 arch sign
 msg
-This door waste the Treasure Key. But there is no way to escape from this room except opening the door.
+This door waste the Treasure Key.  But there is no way to escape from this room except opening the door.
 endmsg
 x 16
 y 15
@@ -6057,7 +6057,7 @@ y 1
 end
 arch sign
 msg
-In this dungeon, you cannot cast magic. Fight with your physical ability!
+In this dungeon, you cannot cast magic.  Fight with your physical ability!
 endmsg
 x 18
 y 1
@@ -6137,7 +6137,7 @@ y 7
 end
 arch sign
 msg
-That Dave is very strong. You should activate the Monster Transfer System to defeat him. But now the system is in a breakdown. So, you'd better to go back.
+That Dave is very strong.  You should activate the Monster Transfer System to defeat him.  But now the system is in a breakdown.  So, you'd better to go back.
 
 Data:
 --- Dave ----
@@ -8433,7 +8433,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-hahaha, go to heaven!
+Hahaha, go to heaven!
 endmsg
 x 24
 y 16
@@ -8985,7 +8985,6 @@ end
 arch magic_mouth
 msg
 You are lucky!
-
 endmsg
 x 26
 y 6
@@ -9048,7 +9047,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-hahaha, go to heaven!
+Hahaha, go to heaven!
 endmsg
 x 26
 y 10
