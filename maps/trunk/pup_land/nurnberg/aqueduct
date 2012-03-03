@@ -8,7 +8,7 @@ enter_x 32
 enter_y 24
 msg
 Created:  1996-02-04
-Modified: 2011-12-08 Rick Tanner
+Modified: 2012-03-02 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -4806,7 +4806,7 @@ He is very rich..
 @match path
 Yeah!, it leads to the treasure room of the castle!
 @match *
-I hear that there is a secret Path to the castle of Bauer in this aqueduct. But I cannot find it...
+I hear that there is a secret Path to the castle of Bauer in this aqueduct.  But I cannot find it...
 endmsg
 hp 200
 x 15
