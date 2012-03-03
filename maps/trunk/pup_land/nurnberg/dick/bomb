@@ -8,7 +8,7 @@ enter_x 16
 enter_y 23
 msg
 Created:  1996-02-10
-Modified: 2011-12-12 Rick Tanner
+Modified: 2012-03-02 Rick Tanner
 endmsg
 end
 arch igate_open_1
@@ -1169,7 +1169,7 @@ y 16
 end
 arch sign
 msg
-Bombs should be used carefully
+Bombs should be used carefully.
 endmsg
 x 7
 y 16
@@ -2565,7 +2565,7 @@ end
 arch sign
 name Instruction
 msg
-Bomb is very powerful in this game. Move to on the marking rune, open next door, cast create much bomb, and escape from explosion.
+Bomb is very powerful in this game.  Move to on the marking rune, open next door, cast create much bomb, and escape from explosion.
 endmsg
 x 15
 y 19
@@ -2903,7 +2903,7 @@ y 19
 end
 arch rune_mark
 msg
-Cast create bomb from here
+Cast create bomb from here.
 endmsg
 x 17
 y 19
@@ -3219,7 +3219,7 @@ y 19
 end
 arch rune_mark
 msg
-Cast create bomb from here
+Cast create bomb from here.
 endmsg
 x 19
 y 19
