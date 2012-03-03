@@ -8,7 +8,7 @@ enter_x 1
 enter_y 13
 msg
 Created:  1996-02-07
-Modified: 2011-12-08 Rick Tanner
+Modified: 2012-03-02 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -165,7 +165,7 @@ msg
 @match site|research
 You'll find the labs in a cave south-east of Nurnberg.
 @match yes|no|weapon
-I've heard rumors about experiments with living creatures. Horrible... Please go to the research site and destroy everything.
+I've heard rumors about experiments with living creatures.  Horrible... Please go to the research site and destroy everything.
 @match *
 Did you know that the Regular Army is doing research for new weaponry?
 endmsg
@@ -407,7 +407,7 @@ arch conjurer
 name mystic man
 msg
 @match reception|tower|weapon
-They call it a "lava slasher". But I'm not sure if this whole story is true!
+They call it a "lava slasher."  But I'm not sure if this whole story is true!
 @match *
 Some people say there would be a powerful weapon inside the reception tower...
 endmsg
@@ -787,11 +787,11 @@ end
 arch woman
 msg
 @match castle
-In the underground of Bauer's castle there is a prison. We all believe that Eureca is captured there. Bauer plans to become the new lord of pupland!
+In the underground of Bauer's castle there is a prison.  We all believe that Eureca is captured there.  Bauer plans to become the new lord of pupland!
 @match bauer
-He is the mayor of Nurnberg. I'm sure that Eureca is held in captivity in Bauer's castle. Bauer deserves to DIE!
+He is the mayor of Nurnberg.  I'm sure that Eureca is held in captivity in Bauer's castle.  Bauer deserves to DIE!
 @match eureca
-Eureca is the lord of this country. I mean, he used to be - before he disappeared.
+Eureca is the lord of this country.  I mean, he used to be - before he disappeared.
 @match *
 Bauer has kidnapped Eureca! He caused the war... bauer is responsible for EVERYTHING!
 endmsg
@@ -1038,13 +1038,13 @@ arch sage
 name old man
 msg
 @match castle
-Dick the carpenter has built it. But Bauer didn't even want to pay for it! So he threatened Dick's life and forced him to lower the price.
+Dick the carpenter has built it.  But Bauer didn't even want to pay for it! So he threatened Dick's life and forced him to lower the price.
 @match profit
 He is eagerly hoarding treasures in his castle.
 @match bauer
 He is the mayor of this Nurnberg, living in the big castle to the north.
 @match *
-Bauer is greedy and selfish. His only concern is his profit.
+Bauer is greedy and selfish.  His only concern is his profit.
 endmsg
 hp 180
 x 8
@@ -1228,7 +1228,7 @@ end
 arch cleric
 msg
 @match bobbie|no
-Bobbie is the spy of Liberation Army. He has entered the guild of Law to collect information. To meet him, ask for "Bobbie" in the guild.
+Bobbie is the spy of Liberation Army.  He has entered the guild of Law to collect information.  To meet him, ask for "Bobbie" in the guild.
 @match yes
 You two should work together!
 @match *
@@ -1452,7 +1452,7 @@ end
 arch viking
 msg
 @match weapon
-I hear there are two weapons. One is a living thing. The other is an artifact.
+I hear there are two weapons.  One is a living thing.  The other is an artifact.
 @match regular|army
 We fight against it.
 @match bauer
@@ -1539,9 +1539,9 @@ end
 arch thief
 msg
 @match eureca
-I don't know for sure if Eureca is held in that prison. I've been temporarily blinded when I was captured.
+I don't know for sure if Eureca is held in that prison.  I've been temporarily blinded when I was captured.
 @match prison|bauer
-There is a prison under the castle of Bauer. I found out that the prison is connected to the aqueduct. I escaped from the prison that way. Then I climbed up a well.
+There is a prison under the castle of Bauer.  I found out that the prison is connected to the aqueduct.  I escaped from the prison that way.  Then I climbed up a well.
 @match *
 I've just escaped from Bauer's prison!
 endmsg
