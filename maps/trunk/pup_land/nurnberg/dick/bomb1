@@ -8,7 +8,7 @@ enter_x 16
 enter_y 19
 msg
 Created:  1996-12-25
-Modified: 2011-12-12 Rick Tanner
+Modified: 2012-03-02 Rick Tanner
 endmsg
 end
 arch blocked
@@ -907,7 +907,7 @@ end
 arch sign
 msg
 Bombs Transfer System (in trouble):
-1. Put bombs on the teleporter
+1. Put bombs on the teleporter.
 2. Pull the lever.
 Don't enter the teleporter.
 endmsg
@@ -1910,7 +1910,7 @@ end
 arch sign
 name Do you have a invulnerable potion?
 msg
-Bombs should be used carefully
+Bombs should be used carefully.
 endmsg
 x 10
 y 17
@@ -3704,7 +3704,7 @@ y 22
 end
 arch rune_mark
 msg
-Cast create bomb from here
+Cast create bomb from here.
 endmsg
 x 19
 y 22
@@ -4257,7 +4257,7 @@ y 22
 end
 arch rune_mark
 msg
-Cast create bomb from here
+Cast create bomb from here.
 endmsg
 x 22
 y 22
@@ -4608,8 +4608,7 @@ arch sign
 name Instruction2
 msg
 Wait!
-Don't turn left carelessly,
-or you'll catch cold breath.
+Don't turn left carelessly, or you'll catch cold breath.
 Move on to the marking rune quickly, and invoke create earth wall.
 endmsg
 x 24
