@@ -11,7 +11,7 @@ enter_x 12
 enter_y 1
 msg
 Created:  1996-02-10
-Modified: 2011-12-11 Rick Tanner
+Modified: 2012-03-02 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -302,7 +302,7 @@ arch cleric
 name Masa-O
 msg
 @match *
-Baby, I love you. I can't control myself any more.
+Baby, I love you.  I can't control myself any more.
 endmsg
 face cleric.131
 hp 100
@@ -731,7 +731,7 @@ msg
 @match yes|beer|war|senseless
 Did you ever meet the scholars of Kurte in their huts next to the sea? They are so wise, ask them about the war...
 @match *
-The war in pupland is so senseless. Come on, have a beer with me.
+The war in pupland is so senseless.  Come on, have a beer with me.
 endmsg
 hp 100
 x 4
@@ -1562,10 +1562,7 @@ y 18
 end
 arch sign
 msg
-Presenting the Lucky Lady Slots courtesy of Casino Infernal.
-Pull the handle and try your luck.
-
-Please visit our Casino in Navar!
+Presenting the Lucky Lady Slots courtesy of Casino Infernal.  Pull the handle and try your luck.  Please visit our Casino in Navar!
 endmsg
 x 10
 y 18
@@ -3223,13 +3220,13 @@ end
 arch conjurer
 msg
 @match bauer
-Bauer is a greedy and selfish person. After Dick built the castle for him, Bauer didn't pay enough money. Dick is still very angry about that.
+Bauer is a greedy and selfish person.  After Dick built the castle for him, Bauer didn't pay enough money.  Dick is still very angry about that.
 @match castle
 It's to the north of this town.
 @match dick
-He is a carpenter. He built many buildings in this city, even the castle of Bauer.
+He is a carpenter.  He built many buildings in this city, even the castle of Bauer.
 @match dungeon
-Dick is kinda sadistic sometimes. His dungeons are very tricky and dangerous. Be careful!
+Dick is kinda sadistic sometimes.  His dungeons are very tricky and dangerous.  Be careful!
 @match yes
 You should try Dick's dungeons.
 @match *
