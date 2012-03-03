@@ -8,7 +8,7 @@ enter_x 12
 enter_y 15
 msg
 Created:  1996-03-02
-Modified: 2011-12-09 Rick Tanner
+Modified: 2012-03-02 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -736,8 +736,7 @@ arch locked_door2
 name castle guard
 slaying no_way_to_pass_123
 msg
-The castle guards says:
-You cannot pass!
+The castle guards says:  You cannot pass!
 endmsg
 face guard_hard.111
 x 5
@@ -1143,7 +1142,7 @@ arch cleric
 name secretary 1
 msg
 @match eureca
-The Resistance has kidnapped him. We must rescue Eureca!
+The Resistance has kidnapped him.  We must rescue Eureca!
 @match army|regular|castle
 We have entered the castle to search for Eureca's family and, of course, for the lord himself.
 @match *
@@ -1178,7 +1177,7 @@ msg
 @match head
 It's here in this city.
 @match lickmond
-He is the general of Regular Army. Usually he can be found in the Headquarter.
+He is the general of Regular Army.  Usually he can be found in the Headquarter.
 @match *
 Lickmond will save Eureca from the Resistance.
 endmsg
@@ -1208,7 +1207,7 @@ arch human
 name secretary 5
 msg
 @match dick
-Dick is the carpenter of Nurnberg. He was very greedy at first, but then he lowered the price for this castle.
+Dick is the carpenter of Nurnberg.  He was very greedy at first, but then he lowered the price for this castle.
 @match *
 Dick built this castle.
 endmsg
@@ -1482,7 +1481,7 @@ arch magic_mouth
 msg
 You hear voices from the other side of the wall:
 "voice A: Have you found the path to Eureca's treasure rooms yet?
- voice B: Not yet.. I'm sorry. There must be a well-hidden passage somewhere. But sooner or later we'll find it.
+ voice B: Not yet.. I'm sorry. There must be a well-hidden passage somewhere.  But sooner or later we'll find it.
  voice A: Tell your team of losers and idiots they shall HURRY UP!! I need Eureca's treasure, so that I can conquer the whole of pupland!
  voice C: ...And what about Eureca?
  voice A: Do I look like Eureca's babysitter?! He is gone, so this country needs a new king... pupland needs ME! Bua hua ha ha!
@@ -1519,11 +1518,11 @@ arch sage
 name Bauer
 msg
 @match yes
-Are you a member of Regular Army? If not, you should go to the Guild of Law in this city. Times are rough and we need smart guys like you.
+Are you a member of Regular Army? If not, you should go to the Guild of Law in this city.  Times are rough and we need smart guys like you.
 @match no
 Watch your mouth, punk!
 @match mayor|city
-Yes, I'm the mayor of Nurnberg. Do you like my city?
+Yes, I'm the mayor of Nurnberg.  Do you like my city?
 @match *
 I'm Bauer, the mayor of this city.
 endmsg
@@ -1774,7 +1773,7 @@ The headquarter of resistance can be found to the north-west of Eureca's castle.
 @match eureca
 He was the lord of this country.
 @match *
-We will soon rescue lord Eureca from the hands of Resistance. Already, our spy is sneaking into their Headquarter.
+We will soon rescue lord Eureca from the hands of Resistance.  Already, our spy is sneaking into their Headquarter.
 endmsg
 hp 100
 x 14
@@ -1801,13 +1800,13 @@ arch ninja
 name secretary 4
 msg
 @match yes
-The personal chambers of Bauer are Upstairs. And downstairs there is the Prison.
+The personal chambers of Bauer are Upstairs.  And downstairs there is the Prison.
 @match prison
-Some bad guys are held in captivity there. Nobody special.
+Some bad guys are held in captivity there.  Nobody special.
 @match no
 ...
 @match *
-In this castle, strangers are not allowed to use the stairways. Do you wanna know why?
+In this castle, strangers are not allowed to use the stairways.  Do you wanna know why?
 endmsg
 hp 100
 x 14
@@ -1836,7 +1835,7 @@ msg
 @match liberation|army
 Maybe someone supports them financially?
 @match *
-Liberation Army is much smaller than us. But still they can resist our attacks. Why?
+Liberation Army is much smaller than us.  But still they can resist our attacks.  Why?
 endmsg
 hp 1000
 x 14
@@ -2260,8 +2259,7 @@ arch locked_door2
 name castle guard
 slaying no_way_to_pass_123
 msg
-The castle guards says:
-You cannot pass!
+The castle guards says:  You cannot pass!
 endmsg
 face guard_hard.111
 x 18
