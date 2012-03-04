@@ -8,7 +8,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  1996-02-22
-Modified: 2011-12-15 Rick Tanner
+Modified: 2012-03-04 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1100,7 +1100,7 @@ y 5
 end
 arch sign
 msg
-Amazing Crown. Don't touch it!
+Amazing Crown.  Don't touch it!
 endmsg
 x 10
 y 5
@@ -1240,7 +1240,7 @@ end
 arch crown
 name Feather Crown
 msg
-This crown has a lot of feathers. Feathers move cooperatively like bird wings.
+This crown has a lot of feathers.  Feathers move cooperatively like bird wings.
 endmsg
 x 11
 y 7
