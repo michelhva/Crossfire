@@ -8,7 +8,7 @@ enter_x 17
 enter_y 34
 msg
 Created:  1996-02-17
-Modified: 2011-12-15 Rick Tanner
+Modified: 2012-03-04 Rick Tanner
 endmsg
 end
 arch evergreens
@@ -3515,7 +3515,7 @@ connected 1
 end
 arch magic_mouth
 msg
-Tower of Water
+Tower of Water.
 endmsg
 x 15
 y 15
@@ -3555,7 +3555,7 @@ connected 8
 end
 arch magic_mouth
 msg
-Tower of Fire
+Tower of Fire.
 endmsg
 x 15
 y 19
@@ -4556,7 +4556,7 @@ connected 2
 end
 arch magic_mouth
 msg
-Tower of Wind
+Tower of Wind.
 endmsg
 x 19
 y 15
@@ -4596,7 +4596,7 @@ connected 9
 end
 arch magic_mouth
 msg
-Tower of Electricity
+Tower of Electricity.
 endmsg
 x 19
 y 19
@@ -8273,7 +8273,7 @@ end
 arch woman
 msg
 @match *
-I'm sorry, someone has already entered the tower. Please come again when this map is reset by the server.
+I'm sorry, someone has already entered the tower.  Please come again when this map is reset by the server.
 endmsg
 hp 180
 x 37
