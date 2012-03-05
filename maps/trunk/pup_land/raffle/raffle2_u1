@@ -10,7 +10,7 @@ enter_x 2
 enter_y 16
 msg
 Created:  1996-12-29
-Modified: 2011-12-16 Rick Tanner
+Modified: 2012-03-05 Rick Tanner
 endmsg
 end
 arch furious_floor
@@ -576,7 +576,7 @@ end
 arch magic_mouth
 msg
 An inscription on the wall:
-Apply the teleporter to enter the hall of trolls. Don't do it when you feel afraid.
+Apply the teleporter to enter the hall of trolls.  Don't do it when you feel afraid.
 endmsg
 x 3
 y 15
@@ -1582,7 +1582,7 @@ y 3
 end
 arch magic_mouth
 msg
-You see two parting ways. Obviously there are two players required to continue.
+You see two parting ways.  Obviously there are two players required to continue.
 endmsg
 x 12
 y 3
