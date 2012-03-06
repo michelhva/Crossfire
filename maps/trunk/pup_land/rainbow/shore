@@ -8,7 +8,7 @@ enter_x 7
 enter_y 1
 msg
 Created:  1996-06-08
-Modified: 2011-12-22 Rick Tanner
+Modified: 2012-03-06 Rick Tanner
 endmsg
 end
 arch invis_exit
@@ -1080,7 +1080,7 @@ end
 arch dwarf
 msg
 @match *
-I can't swim because of my heavy armour. Grmbl, that sucks!
+I can't swim because of my heavy armour.  Grmbl, that sucks!
 endmsg
 hp 700
 x 9
@@ -1191,7 +1191,7 @@ msg
 @match bay-watch
 Yeah, I'm looking at the women's... err... no, I mean... forget it!
 @match *
-I'm doing bay-watch. Don't distract me.
+I'm doing bay-watch.  Don't distract me.
 endmsg
 hp 500
 x 10
@@ -1588,7 +1588,7 @@ arch man
 name swimmer
 msg
 @match *
-Oh! What a fast stream. I can't move...
+Oh! What a fast stream.  I can't move...
 endmsg
 face man.131
 hp 180
