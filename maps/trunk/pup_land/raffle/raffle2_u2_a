@@ -10,7 +10,7 @@ enter_x 2
 enter_y 16
 msg
 Created:  1996-12-29
-Modified: 2011-12-16 Rick Tanner
+Modified: 2012-03-06 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -2209,7 +2209,7 @@ y 15
 end
 arch sign
 msg
-Try your luck and strength. You have two chances.
+Try your luck and strength.  You have two chances.
 endmsg
 x 14
 y 15
@@ -2474,7 +2474,7 @@ y 12
 end
 arch magic_mouth
 msg
-a boulder of 100 tons
+A boulder of 100 tons.
 endmsg
 x 16
 y 13
@@ -2493,7 +2493,7 @@ y 14
 end
 arch magic_mouth
 msg
-a boulder of 200 tons
+A boulder of 200 tons.
 endmsg
 x 16
 y 15
@@ -2512,7 +2512,7 @@ y 16
 end
 arch magic_mouth
 msg
-a boulder of 400 tons
+A boulder of 400 tons.
 endmsg
 x 16
 y 17
