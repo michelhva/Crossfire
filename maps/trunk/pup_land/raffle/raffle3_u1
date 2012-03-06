@@ -10,7 +10,7 @@ enter_x 18
 enter_y 16
 msg
 Created:  1997-02-24
-Modified: 2008-10-25 Rick Tanner
+Modified: 2012-03-06 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -853,7 +853,7 @@ y 9
 end
 arch magic_mouth
 msg
-Say "fire" !!
+Say, "fire"!!
 endmsg
 x 5
 y 9
@@ -1383,7 +1383,7 @@ y 6
 end
 arch magic_mouth
 msg
-Say "fire" !!
+Say, "fire"!!
 endmsg
 x 8
 y 6
@@ -1477,7 +1477,7 @@ y 12
 end
 arch magic_mouth
 msg
-Say "fire" !!
+Say, "fire"!!
 endmsg
 x 8
 y 12
@@ -1997,7 +1997,7 @@ y 9
 end
 arch magic_mouth
 msg
-Say "fire" !!
+Say, "fire"!!
 endmsg
 x 11
 y 9
