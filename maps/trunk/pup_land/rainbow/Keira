@@ -8,7 +8,7 @@ enter_x 5
 enter_y 9
 msg
 Created:  1996-06-08
-Modified: 2011-12-22 Rick Tanner
+Modified: 2012-03-06 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -526,7 +526,7 @@ end
 arch thief
 msg
 @match *
-Be careful. Nobody can swim against the water stream at this beach. Never go out of the safety fence.
+Be careful.  Nobody can swim against the water stream at this beach.  Never go out of the safety fence.
 endmsg
 face thief.151
 hp 100
