@@ -11,7 +11,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-12-29
-Modified: 2008-12-04 Rick Tanner
+Modified: 2012-03-06 Rick Tanner
 endmsg
 end
 arch blocked
@@ -891,14 +891,13 @@ name kitty
 msg
 @match mew
 Mew mew mew?!
-(You can understand our language,
- can't you?!)
+(You can understand our language, can't you?!)
 @match hello
 Mew mew.
-(Hello. I'm a Kitty.)
+(Hello.  I'm a Kitty.)
 @match hi
 Mew.
-(Hi. I'm a Kitty.)
+(Hi.  I'm a Kitty.)
 @match kitty
 Mew mew!
 (I'm Hungry!)
@@ -1145,8 +1144,7 @@ end
 arch sign_w
 name Dungeon No.3
 msg
-The raffledungeon for the most
-advanced heroes (~lvl 40-60).
+The raffledungeon for the most advanced heroes (~lvl 40-60).
 endmsg
 x 3
 y 16
@@ -2273,7 +2271,7 @@ arch locked_door2
 name barrier
 slaying raffle3_first_chance
 msg
-You need the raffle ticket No.3 to pull
+You need the raffle ticket No.3 to pull.
 this lever.
 endmsg
 face enchantment.111
@@ -2854,12 +2852,9 @@ arch sign
 name instruction
 msg
 You can draw the raffle here!!
- 1. Go to Dungeon No.3 (downstairs)
-    and retreive the raffle ticket.
- 2. Go upstairs and pull lever 1
-    on the 2nd floor.
- 2. Come back here,  pull lever 2
-    right in front of you.
+ 1. Go to Dungeon No.3 (downstairs) and retreive the raffle ticket.
+ 2. Go upstairs and pull lever 1 on the 2nd floor.
+ 2. Come back here,  pull lever 2 right in front of you.
  3. Then pull lever 3.
  4. At last pull lever 2 again.
 endmsg
