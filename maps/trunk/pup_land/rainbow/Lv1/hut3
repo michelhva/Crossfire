@@ -8,7 +8,7 @@ enter_x 3
 enter_y 5
 msg
 Created:  1996-06-11
-Modified: 2011-12-18 Rick Tanner
+Modified: 2012-03-07 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -184,7 +184,7 @@ arch sage
 name old man
 msg
 @match *
-They provide us with food to keep us alive. But it's a mystery to me how that works... Or is there a secret entrance to this prison?
+They provide us with food to keep us alive.  But it's a mystery to me how that works... Or is there a secret entrance to this prison?
 endmsg
 hp 180
 x 2
