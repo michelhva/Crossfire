@@ -8,7 +8,7 @@ enter_x 6
 enter_y 4
 msg
 Created:  1996-06-12
-Modified: 2011-12-16 Rick Tanner
+Modified: 2012-03-06 Rick Tanner
 endmsg
 end
 arch blocked
@@ -478,11 +478,9 @@ arch serp_priest
 name Bizuzu
 msg
 @match word
-The word is "ARRANGE".
-Please let me live!
+The word is "ARRANGE."  Please let me live!
 @match *
-Ahh!! Please don't kill me!
-I can teach you the holy WORD!
+Ahh!! Please don't kill me! I can teach you the holy WORD!
 endmsg
 x 6
 y 6
