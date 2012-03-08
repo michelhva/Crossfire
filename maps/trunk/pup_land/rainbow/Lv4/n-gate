@@ -8,7 +8,7 @@ enter_x 5
 enter_y 9
 msg
 Created:  1996-07-16
-Modified: 2011-12-21 Rick Tanner
+Modified: 2012-03-08 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -596,8 +596,7 @@ connected 1
 end
 arch magic_mouth
 msg
-say WORDS
-
+Say, "WORDS"
 endmsg
 x 5
 y 6
