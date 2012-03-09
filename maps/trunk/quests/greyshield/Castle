@@ -8,7 +8,7 @@ enter_x 15
 enter_y 30
 msg
 Created:  1996-09-16 Chris Jeske
-Modified: 2011-12-25 Rick Tanner
+Modified: 2012-03-09 Rick Tanner
 endmsg
 end
 arch woods_3
@@ -1561,9 +1561,9 @@ msg
 @match hi|hello
 Hi there.
 @match king|rey|hief|advisor|staff
-That advisor is good for nothing. If you want to see the Grey King, you must get the ring with his seal on it, and tell him the Chief of Staff sent you...
+That advisor is good for nothing.  If you want to see the Grey King, you must get the ring with his seal on it, and tell him the Chief of Staff sent you...
 @match seal|ring|see|sent
-The Ring of Seal is kept in the chamber behind the throne room. You need the iron chalice from the factory to open the door.
+The Ring of Seal is kept in the chamber behind the throne room.  You need the iron chalice from the factory to open the door.
 @match *
 I'm too busy to answer your queries.
 endmsg
@@ -2873,7 +2873,7 @@ arch guildmaster
 name Chief of Staff
 msg
 @match king|grey
-The king does not see visitors. Give me your request, and I will relay it to him. 
+The king does not see visitors.  Give me your request, and I will relay it to him. 
 @match treasure|shield|secret
 I don't know what you are talking about.
 @match *
@@ -4011,7 +4011,7 @@ Hey there... How are you doing?
 @match fine|good|great|ok
 That's good.
 @match bad|awful|tty|crappy|lousy
-Too bad. Tomorrow will be better...
+Too bad.  Tomorrow will be better...
 @match quest|shield|grey
 Ahh... I have heard the Grey King keeps his treasure in a secret underground fortress.
 @match underground|fortress|dungeon
@@ -4117,7 +4117,7 @@ end
 arch mage
 msg
 @match *
-Go try some other room. I am trying to sleep.
+Go try some other room.  I am trying to sleep.
 endmsg
 x 22
 y 20
