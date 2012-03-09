@@ -8,7 +8,7 @@ enter_x 9
 enter_y 13
 msg
 Created:  1996-02-09
-Modified: 2011-12-25 Rick Tanner
+Modified: 2012-03-12 Rick Tanner
 endmsg
 end
 arch sea
@@ -304,9 +304,9 @@ My old friend... Say hello to him.
 @match treasure
 You may read my research note upstairs, but keep off the CRYSTAL, okay?! It would tempt your soul.
 @match crystal
-If you are tempted, call me for "help".
+If you are tempted, call me for "help."
 @match odo
-Odo was a mighty god in the ancient world. Odo helped and protected the early civilization on these islands... The people were ungrateful, so Odo took away the artifacts he had made for his disciples, locked them up in an underground tower and left this world. Soon the people forgot about Odo...
+Odo was a mighty god in the ancient world.  Odo helped and protected the early civilization on these islands... The people were ungrateful, so Odo took away the artifacts he had made for his disciples, locked them up in an underground tower and left this world.  Soon the people forgot about Odo...
 @match *
 Hello, boy.
 endmsg
@@ -1724,7 +1724,7 @@ end
 arch crown
 name crown of Odo (replica)
 msg
-This is a well made replica
+This is a well made replica.
 endmsg
 x 21
 y 2
@@ -1738,7 +1738,7 @@ end
 arch mithril_chainmail
 name mithril chainmail of Odo (replica)
 msg
-This is a well made replica
+This is a well made replica.
 endmsg
 ac 1
 x 21
@@ -1754,7 +1754,7 @@ end
 arch cloak
 name cloak of Odo (replica)
 msg
-This is a well made replica
+This is a well made replica.
 endmsg
 x 21
 y 4
@@ -1851,7 +1851,7 @@ end
 arch uw_shield
 name shield of Odo (replica)
 msg
-This is a well made replica
+This is a well made replica.
 endmsg
 ac 0
 x 22
@@ -1952,7 +1952,7 @@ y 6
 end
 arch sign
 msg
-Do NOT steal
+Do NOT steal!
 endmsg
 x 23
 y 6
@@ -2256,7 +2256,7 @@ arch sage
 name To-jyo
 msg
 @match odo
-Odo was a mighty god in the ancient world. Odo helped and protected the early civilization on these islands... The people were ungrateful, so Odo took away the artifacts he had made for his disciples, locked them up in an underground tower and left this world. Soon the people forgot about Odo...
+Odo was a mighty god in the ancient world.  Odo helped and protected the early civilization on these islands... The people were ungrateful, so Odo took away the artifacts he had made for his disciples, locked them up in an underground tower and left this world.  Soon the people forgot about Odo...
 @match *
 Ouch! My waist is broken!
 endmsg
