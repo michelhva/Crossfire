@@ -8,7 +8,7 @@ enter_x 2
 enter_y 10
 msg
 Created:  1996-02-12
-Modified: 2011-12-25 Rick Tanner
+Modified: 2012-03-09 Rick Tanner
 endmsg
 end
 arch blocked
@@ -557,7 +557,7 @@ end
 arch magic_ear
 msg
 @match gold
-Good. You are honest.
+Good.  You are honest.
 endmsg
 x 6
 y 6
