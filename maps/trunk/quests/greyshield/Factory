@@ -8,7 +8,7 @@ enter_x 2
 enter_y 27
 msg
 Created:  1996-09-16 Chris Jeske
-Modified: 20011-12-25 Rick Tanner
+Modified: 2012-03-09 Rick Tanner
 endmsg
 end
 arch medium_stones
@@ -1825,7 +1825,7 @@ y 29
 end
 arch magic_mouth
 msg
-You hear machines moving. It seems this factory is still active.
+You hear machines moving.  It seems this factory is still active.
 endmsg
 x 4
 y 30
@@ -6516,7 +6516,7 @@ arch smith
 name Factory worker
 msg
 @match *
-I don't have authority for that. See my boss at the next desk... As a matter of fact, I don't have authority for anything around here! Employee empowerment? Hah! <grumble...>
+I don't have authority for that.  See my boss at the next desk... As a matter of fact, I don't have authority for anything around here! Employee empowerment? Hah! <grumble...>
 endmsg
 x 23
 y 14
@@ -6551,8 +6551,7 @@ y 19
 end
 arch sign
 msg
-Factory Office
-
+Factory Office.
 endmsg
 x 23
 y 19
