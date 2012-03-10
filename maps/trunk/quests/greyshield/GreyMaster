@@ -9,7 +9,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  1996-11-06 Chris Jeske
-Modified: 2011-12-26 Rick Tanner
+Modified: 2012-03-09 Rick Tanner
 endmsg
 end
 arch marble
@@ -593,7 +593,7 @@ y 8
 end
 arch sign
 msg
-These 3 dragons get teleported to entrance; one with each trigger press. The fourth trigger press opens the wall up... (I used teleporters to move foods to an altar to trigger the movements. I had to use altars because large buttons trigger once when the map is loaded, causing the dragons to teleport :< )
+These 3 dragons get teleported to entrance; one with each trigger press.  The fourth trigger press opens the wall up... (I used teleporters to move foods to an altar to trigger the movements. I had to use altars because large buttons trigger once when the map is loaded, causing the dragons to teleport :< )
 endmsg
 x 4
 y 9
@@ -3889,11 +3889,11 @@ y 22
 carrying 75
 arch note
 msg
-I have concealed the Greysword, one of my greatest works, in a secret chamber. The entrance to the chamber is under the altars...
+I have concealed the Greysword, one of my greatest works, in a secret chamber.  The entrance to the chamber is under the altars...
 
 You may access this room by speaking the word "GreyDancer" near the entrance to the secret chamber!
 
-I have given other adventurers access to this secret room. All of them, lured by their greed, have been locked into an eternal dance, servants of some unknown god! Don't come to close to these dancers, lest you should be swept along with them forever...
+I have given other adventurers access to this secret room.  All of them, lured by their greed, have been locked into an eternal dance, servants of some unknown god! Don't come to close to these dancers, lest you should be swept along with them forever...
 endmsg
 end
 end
