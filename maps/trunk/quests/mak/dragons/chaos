@@ -8,7 +8,7 @@ enter_x 6
 enter_y 33
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2011-12-27 Rick Tanner
+Modified: 2012-03-09 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -255,7 +255,7 @@ y 12
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 1
 y 13
@@ -377,7 +377,7 @@ y 1
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 2
 y 2
@@ -601,7 +601,7 @@ connected 3
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 2
 y 24
@@ -2605,7 +2605,7 @@ x 14
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 14
 y 1
@@ -2937,7 +2937,7 @@ connected 96
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 15
 y 25
@@ -5176,7 +5176,7 @@ y 1
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 28
 y 2
@@ -5400,7 +5400,7 @@ connected 3
 end
 arch magic_mouth
 msg
-Wonder which lever might be best to pull
+Wonder which lever might be best to pull?
 endmsg
 x 28
 y 24
