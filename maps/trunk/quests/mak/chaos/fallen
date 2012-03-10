@@ -9,7 +9,7 @@ enter_x 2
 enter_y 31
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2011-12-27 Rick Tanner
+Modified: 2012-03-09 Rick Tanner
 endmsg
 maplore
 @quest Lorkas
@@ -249,7 +249,7 @@ end
 arch sign
 name shortcut
 msg
-This way leads outside
+This way leads outside.
 endmsg
 x 1
 y 18
@@ -5760,7 +5760,7 @@ end
 arch sorcerer_book
 name rainbow colored spellbook
 msg
-This spellbook ripples with the colors of the rainbow
+This spellbook ripples with the colors of the rainbow.
 endmsg
 x 29
 y 3
