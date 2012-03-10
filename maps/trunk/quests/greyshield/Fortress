@@ -8,7 +8,7 @@ enter_x 15
 enter_y 30
 msg
 Created:  1996-09-24 Chris Jeske
-Modified: 2011-12-26 Rick Tanner
+Modified: 2012-03-09 Rick Tanner
 endmsg
 end
 arch marble
@@ -2413,7 +2413,7 @@ end
 arch altar
 slaying Princess' Hair
 msg
-Thank you very much
+Thank you very much.
 endmsg
 food 1
 x 12
@@ -3206,13 +3206,13 @@ arch sage
 name Grey King
 msg
 @match seal
-Ahh, whats-his-face must have sent you. You may go upstairs and talk to the sphinx.
+Ahh, whats-his-face must have sent you.  You may go upstairs and talk to the sphinx.
 @match upstairs|sphinx
-Use my seal to open the door. Bring me my crown, and I will let you go downstairs.
+Use my seal to open the door.  Bring me my crown, and I will let you go downstairs.
 @match door|open
 Do you have my seal? You need my seal to open the door.
 @match crown
-It's very simple, moron! Go upstairs, get my crown, and place it on the altar. THEN you may continue on your quest. <Geez, some people are so stupid...>
+It's very simple, moron! Go upstairs, get my crown, and place it on the altar.  THEN you may continue on your quest. <Geez, some people are so stupid...>
 @match Grey|shield|sword|quest|treasure
 Ahh, you are looking for the Greyshield are you? If you get my sword (the Greysword), then I will let you into the treasure room... You must be worthy to gain the Greyshield!
 @match *
