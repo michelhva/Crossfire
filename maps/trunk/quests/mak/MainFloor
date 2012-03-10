@@ -9,7 +9,7 @@ enter_x 15
 enter_y 48
 msg
 Created:  2000-04-06 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2012-03-09 Rick Tanner
 endmsg
 maplore
 @def Warriors' Tower
@@ -583,8 +583,7 @@ end
 arch invis_exit
 slaying chaos/tritemples
 msg
-You've entered the underground temple.
-This is a mystique place...
+You've entered the underground temple.  This is a mystique place...
 endmsg
 hp 17
 sp 23
@@ -653,8 +652,7 @@ y 11
 end
 arch magic_mouth
 msg
-Pull the lever to start the trial
-or say 'help' to chicken out
+Pull the lever to start the trial or say 'help' to chicken out.
 endmsg
 x 2
 y 11
@@ -952,17 +950,9 @@ end
 arch a_townsman
 msg
 @match stories|story|tell
-Did you see the altars in the northern
-room? When you drop the appropriate
-item, a gate will open.
-Once I've been told that something
-strange happens when you drop a second
-item of the same kind...
+Did you see the altars in the northern room? When you drop the appropriate item, a gate will open.  Once I've been told that something strange happens when you drop a second item of the same kind...
 @match *
-I know I wouldn't get far in this
-place, I just like to hang out and
-listen to the warriors tell their
-stories.
+I know I wouldn't get far in this place, I just like to hang out and listen to the warriors tell their stories.
 endmsg
 x 2
 y 38
@@ -1035,9 +1025,7 @@ arch pirate
 name wounded warrior
 msg
 @match *
-I only have the last test to go, but as
-you can see my last attempt didn't go
-to well and I might have to give up.
+I only have the last test to go, but as you can see my last attempt didn't go to well and I might have to give up.
 endmsg
 x 2
 y 43
@@ -1444,7 +1432,7 @@ end
 arch fatman
 msg
 @match *
-I'm in charge of the food around her
+I'm in charge of the food around here.
 endmsg
 dam 0
 x 3
@@ -1961,9 +1949,7 @@ arch northman
 name seasoned warrior
 msg
 @match *
-I'm just about ready for another try.
-I still have a few tricks up my sleave
-that might get me through.
+I'm just about ready for another try.  I still have a few tricks up my sleave that might get me through.
 endmsg
 x 4
 y 39
@@ -2426,9 +2412,7 @@ end
 arch fatwoman
 msg
 @match *
-My husband is the big one over there.
-He's the one in charge here, I just
-try to help him out as good as I can.
+My husband is the big one over there.  He's the one in charge here, I just try to help him out as good as I can.
 endmsg
 x 5
 y 41
@@ -2655,9 +2639,7 @@ end
 arch sign
 name CHAOS
 msg
-You will need to finish the three
-other dragontests before you can
-enter her.
+You will need to finish the three other dragontests before you can enter here.
 endmsg
 x 6
 y 15
@@ -2673,8 +2655,7 @@ end
 arch locked_door1
 slaying mdragkey1
 msg
-You will need to defeat the cold
-dragons before you can enter here
+You will need to defeat the cold dragons before you can enter here.
 endmsg
 face glue.111
 x 6
@@ -2683,8 +2664,7 @@ end
 arch locked_door2
 slaying mdragkey2
 msg
-You will need to defeat the electric
-dragons before you can enter here
+You will need to defeat the electric dragons before you can enter here.
 endmsg
 face glue.111
 x 6
@@ -2693,8 +2673,7 @@ end
 arch locked_door1
 slaying mdragkey3
 msg
-You will need to defeat the fire
-dragons before you can enter here
+You will need to defeat the fire dragons before you can enter here.
 endmsg
 face glue.111
 x 6
@@ -2736,9 +2715,7 @@ arch woman2
 name a middle-aged woman
 msg
 @match *
-To pass this test you must go to the
-trollcave and bring back Herman's
-bearskin belt
+To pass this test you must go to the trollcave and bring back Herman's bearskin belt.
 endmsg
 x 6
 y 18
@@ -2992,8 +2969,7 @@ arch warrior_1
 name fighter
 msg
 @match *
-I just arrived today, but I
-will show you how it's done!
+I just arrived today, but I will show you how it's done!
 endmsg
 x 6
 y 43
@@ -3321,11 +3297,7 @@ end
 arch c_man
 msg
 @match *
-This first test should be an easy one
-for you. An ogre calling himself Gorak
-the mighty has set up camp with his
-band of ruffians in a nearby mansion.
-They must be eradicated at all costs.
+This first test should be an easy one for you.  An ogre calling himself Gorak the mighty has set up camp with his band of ruffians in a nearby mansion.  They must be eradicated at all costs.
 endmsg
 x 7
 y 27
@@ -3653,13 +3625,7 @@ arch lesser_dwarven_guard
 name a powerful dwarf
 msg
 @match *
-Dragons have become an all to common
-problem these days, so every fighter
-must know how to defeat them.
-First you will have to take on some
-of the standard varietees before we
-will let you go up against the
-big guys
+Dragons have become an all to common problem these days, so every fighter must know how to defeat them.  First you will have to take on some of the standard varietees before we will let you go up against the big guys.
 endmsg
 x 8
 y 9
@@ -3952,9 +3918,7 @@ arch c_man
 name scrawny man
 msg
 @match *
-I'm almost ashamed to admit it but I
-have still to pass the first test.
-That statue is just to heavy for me.
+I'm almost ashamed to admit it but I have still to pass the first test.  That statue is just to heavy for me.
 endmsg
 x 8
 y 38
@@ -5282,7 +5246,7 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
 x 11
 y 9
@@ -5365,7 +5329,7 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
 x 11
 y 17
@@ -5399,8 +5363,7 @@ end
 arch sign_w
 name Troll cave
 msg
-Trolls of varying sizes,
-a tad bit tougher
+Trolls of varying sizes, a tad bit tougher.
 endmsg
 x 11
 y 20
@@ -5457,7 +5420,7 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
 x 11
 y 26
@@ -5491,7 +5454,7 @@ end
 arch sign_w
 name A good place to start
 msg
-To the mansion - really easy
+To the mansion - really easy.
 endmsg
 x 11
 y 29
@@ -5564,7 +5527,7 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
 x 11
 y 37
@@ -5637,8 +5600,7 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
 x 11
 y 43
@@ -5657,8 +5619,7 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
 x 11
 y 44
@@ -5677,8 +5638,7 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
 x 11
 y 45
@@ -5697,8 +5657,7 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
 x 11
 y 46
@@ -5717,8 +5676,7 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
 x 11
 y 47
@@ -6605,8 +6563,7 @@ arch knight
 name High Guard
 msg
 @match *
-Don't even think about disturbing the
-other student
+Don't even think about disturbing the other student.
 endmsg
 x 13
 y 39
@@ -6835,11 +6792,7 @@ end
 arch sign
 name temple of the fallen
 msg
-There is an anchient temple beneath
-this tower. Only the bravest warriors
-are allowed to go there. You must
-pass all the test in here to prove
-yourself worthy!
+There is an anchient temple beneath this tower.  Only the bravest warriors are allowed to go there.  You must pass all the test in here to prove yourself worthy!
 endmsg
 x 14
 y 9
@@ -7563,15 +7516,9 @@ msg
 @match ultimate|challenge
 Ha ha! You will find out soon enough.
 @match test
-We have several tests of varying
-difficulty to match your progressing
-abilities. When you have mastered all
-of our tests, you will face the
-ultimate challenge.
+We have several tests of varying difficulty to match your progressing abilities.  When you have mastered all of our tests, you will face the ultimate challenge.
 @match *
-Welcome to the "Tower of Warrior
-Proving". All may enter but only a few
-will manage to pass our famous tests.
+Welcome to the "Tower of Warrior Proving."  All may enter but only a few will manage to pass our famous tests.
 endmsg
 hp 5000
 x 15
@@ -8529,8 +8476,7 @@ arch knight
 name High Guard
 msg
 @match *
-Don't even think about disturbing the
-other student
+Don't even think about disturbing the other student.
 endmsg
 x 17
 y 39
@@ -8743,24 +8689,11 @@ msg
 *sigh*...
 Nobody returns from the temple.
 @match task|temple|final
-When the archangel Lorkas fell, he
-managed to steal some of the most
-highly valued artifacts. Now he lurks
-in his underground temple... killing
-anyone who dares to oppose him.
+When the archangel Lorkas fell, he managed to steal some of the most highly valued artifacts.  Now he lurks in his underground temple... killing anyone who dares to oppose him.
 @match fragment
-To get a fragment-of-chaos, you must
-seek for the legendary Chaoswyrm
-in lake country.
+To get a fragment-of-chaos, you must seek for the legendary Chaoswyrm in lake country.
 @match *
-This will be your final Task. We've
-build this tower to prepare the
-warriors for their walk into the
-underground temple. You must prove that
-you have passed all the other quests
-before we let you go.
-Just drop the items you obtained on
-the altars and the passage will open.
+This will be your final Task.  We've build this tower to prepare the warriors for their walk into the underground temple.  You must prove that you have passed all the other quests before we let you go.  Just drop the items you obtained on the altars and the passage will open.
 endmsg
 x 18
 y 7
@@ -9221,7 +9154,7 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
 x 19
 y 9
@@ -9303,8 +9236,7 @@ end
 arch sign_e
 name Unnatural moshpot
 msg
-spellcasters, now it starts to
-get intersting =)
+Spellcasters, now it starts to get intersting. =)
 endmsg
 x 19
 y 17
@@ -9345,7 +9277,7 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
 x 19
 y 21
@@ -9395,7 +9327,7 @@ end
 arch sign_e
 name The mausoleum
 msg
-Undeads, zombies etc, slightly harder
+Undeads, zombies etc, slightly harder.
 endmsg
 x 19
 y 26
@@ -9510,7 +9442,7 @@ arch light_guard
 name hall guard
 msg
 @match *
-Don't loiter
+Don't loiter.
 endmsg
 x 19
 y 37
@@ -9583,8 +9515,7 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
 x 19
 y 43
@@ -9603,8 +9534,7 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
 x 19
 y 44
@@ -9623,8 +9553,7 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
 x 19
 y 45
@@ -9643,8 +9572,7 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
 x 19
 y 46
@@ -9663,8 +9591,7 @@ arch guard
 name guard
 msg
 @match *
-We're here to keep the peace, you will
-have enough mayhem in the test
+We're here to keep the peace, you will have enough mayhem in the test.
 endmsg
 x 19
 y 47
@@ -11126,11 +11053,7 @@ arch merchant
 name welldressed man
 msg
 @match *
-This test includes some really big
-problems, literally.
-A band of giants have been plagueing
-the countryside and your job will be
-to seek them out and end this threat.
+This test includes some really big problems, literally.  A band of giants have been plagueing the countryside and your job will be to seek them out and end this threat.
 endmsg
 x 23
 y 13
@@ -11162,10 +11085,7 @@ end
 arch conjurer
 msg
 @match *
-This will be your first run against
-spellcasting monsters, and we have
-managed to find some really nice
-specimens for you.
+This will be your first run against spellcasting monsters, and we have managed to find some really nice specimens for you.
 endmsg
 x 23
 y 15
@@ -11253,13 +11173,7 @@ end
 arch c_sage
 msg
 @match *
-The old king of the nearby kingdom
-Lorania has been burried for quite
-some time. But now an evil necromancer
-has put a curse on the land making
-the dead rise from their graves.
-You will have to go there and put
-them back to rest.
+The old king of the nearby kingdom Lorania has been burried for quite some time.  But now an evil necromancer has put a curse on the land making the dead rise from their graves.  You will have to go there and put them back to rest.
 endmsg
 x 23
 y 24
@@ -11527,8 +11441,7 @@ end
 arch marker
 slaying wptower_shortcut
 msg
-You feel energy course through your
-body.
+You feel energy course through your body.
 endmsg
 food 0
 x 24
@@ -13138,12 +13051,7 @@ end
 arch magic_mouth
 msg
 The watcher says:
-Welcome to the first test.
-A simple show of strength is needed to
-continue. Just push the weights all
-the way to the plates to show us that
-you at least have some strength in that
-scrawny body.
+Welcome to the first test.  A simple show of strength is needed to continue.  Just push the weights all the way to the plates to show us that you at least have some strength in that scrawny body.
 endmsg
 x 27
 y 40
@@ -13184,8 +13092,7 @@ end
 arch diploma
 name strongman diploma
 msg
-Diploma
-I managed to move the heavy statue
+Diploma - I managed to move the heavy statue.
 endmsg
 x 27
 y 44
