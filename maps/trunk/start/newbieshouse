@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2012-01-19 Rick Tanner
+Modified: 2012-03-11 Nicolas Weeger
 endmsg
 end
 arch dungeon_magic
@@ -3449,6 +3449,10 @@ You will find a lot of books in the Crossfire world.
 Some are so difficult your character may not understand them.
 Not everyone finds all books interesting, but one important fact is: Reading them often yields experience.
 Simply apply a book to read it.
+
+Reading is important for two reasons:
+- learning high-level spells requires a high literacy level, gained by reading a lot
+- texts contain various information about the world, including places that may be interesting to visit
 -------------------
 endmsg
 x 11
