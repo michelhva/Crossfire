@@ -15,4 +15,5 @@ name_pl hunter's bows
 client_type 150
 body_arm -2
 skill missile weapons
+anim_suffix bow
 end

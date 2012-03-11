@@ -17,4 +17,5 @@ name_pl elven bows
 client_type 150
 body_arm -2
 skill missile weapons
+anim_suffix bow
 end
