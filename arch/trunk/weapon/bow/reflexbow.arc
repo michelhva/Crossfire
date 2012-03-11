@@ -15,6 +15,7 @@ name_pl reflex bows
 client_type 151
 body_arm -2
 skill missile weapons
+anim_suffix bow
 end
 
 Object reflexbow_ivory
@@ -35,6 +36,7 @@ name_pl reflex bows
 client_type 151
 body_arm -2
 skill missile weapons
+anim_suffix bow
 end
 
 
@@ -57,5 +59,6 @@ name_pl reflex bows
 client_type 151
 body_arm -2
 skill missile weapons
+anim_suffix bow
 end
 

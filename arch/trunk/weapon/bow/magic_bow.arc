@@ -20,4 +20,5 @@ name_pl Energy Bows
 client_type 151
 body_arm -2
 skill missile weapons
+anim_suffix bow
 end
