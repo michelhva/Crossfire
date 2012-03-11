@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
-Modified: 2011-12-28 Rick Tanner
+Modified: 2012-03-11 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -332,7 +332,7 @@ You are NOT my master!
 @match name
 I will not tell you my name nor will I tell you the name of my master, I am not stupid.
 @match Akhalgenyaldandamarshkulat
-Aaaagh, stop torturing me. My master's name is Thessalrudin, why don't you summon him from the grave and make him suffer? Please Banish me back to my prison, it is at least warm there.
+Aaaagh, stop torturing me.  My master's name is Thessalrudin, why don't you summon him from the grave and make him suffer? Please Banish me back to my prison, it is at least warm there.
 endmsg
 hp 3000
 dam 20
@@ -681,7 +681,7 @@ end
 arch book_read
 name Air Master's Book of Names
 msg
-This is the Air Master's book of names. You open the pages and flip through. Inside are the names of many air elementals. One page in particular is very dog-eared. The Air Master apparently had many uses for this particular elemental. The name is written as Akhalgenyaldandamarshkulat.
+This is the Air Master's book of names.  You open the pages and flip through.  Inside are the names of many air elementals.  One page in particular is very dog-eared.  The Air Master apparently had many uses for this particular elemental.  The name is written as Akhalgenyaldandamarshkulat.
 endmsg
 x 7
 y 2
