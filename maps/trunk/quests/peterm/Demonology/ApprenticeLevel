@@ -8,7 +8,7 @@ enter_x 17
 enter_y 11
 msg
 Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
-Modified: 2011-12-28 Rick Tanner
+Modified: 2012-03-11 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -707,7 +707,7 @@ y 9
 end
 arch magic_mouth
 msg
-Lecture room
+Lecture room.
 endmsg
 x 4
 y 10
@@ -1517,7 +1517,7 @@ y 15
 end
 arch magic_mouth
 msg
-Fifteen Hundred gold, please.... That is the price of admission to the journeyman's level
+Fifteen Hundred gold, please.... That is the price of admission to the journeyman's level.
 endmsg
 x 9
 y 16
@@ -1665,7 +1665,7 @@ end
 arch locked_door1
 slaying Journeyman
 msg
-You need the apprentice-master's key to get to the Journeyman's level
+You need the apprentice-master's key to get to the Journeyman's level.
 endmsg
 x 10
 y 15
@@ -2427,7 +2427,7 @@ y 9
 end
 arch magic_mouth
 msg
-Demonstration room
+Demonstration room.
 endmsg
 x 15
 y 10
