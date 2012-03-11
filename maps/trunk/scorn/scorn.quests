@@ -5,6 +5,7 @@ include citygate.quests
 include kar/gork.quests
 include misc/rhyz.quests
 
+
 quest scorn/smith/customarmour
 title Custom Armour
 restart 1
@@ -125,6 +126,32 @@ step 40
 finishes_quest
 description
 I have gained access to the top of the Mad Mage's tower.
+end_description
+end_step
+end_quest
+
+quest scorn/DarkForest
+title The Dark Forest
+face power_crystal.111
+description
+East of Scorn is a Temple with, it is said, a Glowing Crystal.
+
+The temple is at the heard of the Dark Forest, which is said to be located approximately 15 chains north of the Scorn-Navar road, 50 chains west of Hermes's Inn.
+end_description
+step 10
+description
+You have heard a temple in the Dark Forest holds a Glowing Crystal.
+end_description
+end_step
+step 20
+description
+You have reached the entrance of the Temple.
+end_description
+end_step
+step 30
+finishes_quest
+description
+You have found the Glowing Crystal.
 end_description
 end_step
 end_quest

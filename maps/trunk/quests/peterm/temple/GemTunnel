@@ -9,7 +9,7 @@ enter_x 3
 enter_y 39
 msg
 Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
-Modified: 2010-08-12 Nicolas Weeger
+Modified: 2012-03-11 Nicolas Weeger
 endmsg
 end
 arch cobblestones
@@ -1046,6 +1046,10 @@ maxsp 500
 x 3
 y 1
 value 100000
+arch quest_advance_pickup
+name scorn/DarkForest 20>30
+unique 1
+end
 end
 arch unholy_ground
 x 3

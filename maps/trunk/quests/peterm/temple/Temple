@@ -9,7 +9,7 @@ enter_x 17
 enter_y 32
 msg
 Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
-Modified: 2012-01-01 Rick Tanner
+Modified: 2012-03-11 Nicolas Weeger
 endmsg
 end
 arch medium_stones
@@ -4317,6 +4317,9 @@ hp 7
 sp 29
 x 15
 y 15
+arch quest_advance_apply
+name scorn/DarkForest 10>20
+end
 end
 arch medium_stones
 x 15
