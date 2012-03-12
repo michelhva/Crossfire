@@ -9,7 +9,7 @@ enter_x 1
 enter_y 14
 msg
 Created:  1997-06-07 PeterM (peterm@soda.csua.berkeley.edu)
-Modified: 2011-12-30 Rick Tanner
+Modified: 2012-03-12 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -3579,7 +3579,7 @@ arch altar
 name Altar dedicated to the Fire God
 slaying ice para-elemental's residue
 msg
-The fire god demands sacrifice of an enemy elemental's residue. Somehow you get the feeling that this will not be the last time the Fire God requires an appropriate sacrifice of an enemy in order to proceed.
+The fire god demands sacrifice of an enemy elemental's residue.  Somehow you get the feeling that this will not be the last time the Fire God requires an appropriate sacrifice of an enemy in order to proceed.
 endmsg
 food 1
 x 16
