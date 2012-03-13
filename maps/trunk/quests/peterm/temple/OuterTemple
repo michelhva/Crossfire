@@ -8,7 +8,7 @@ enter_x 7
 enter_y 29
 msg
 Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
-Modified: 2012-01-02 Rick Tanner
+Modified: 2012-03-13 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -197,8 +197,7 @@ x 1
 end
 arch magic_mouth
 msg
-This Taifu seems to be
-an excellent weapon.
+This Taifu seems to be an excellent weapon.
 endmsg
 food 1
 x 1
@@ -2017,7 +2016,7 @@ end
 arch oakdoor_2
 slaying InnerTemple
 msg
-The Chamber of the Acolytes
+The Chamber of the Acolytes.
 endmsg
 hp 7
 sp 39
@@ -2299,7 +2298,7 @@ end
 arch oakdoor_2
 slaying InnerTemple
 msg
-The Chamber of the Acolytes
+The Chamber of the Acolytes.
 endmsg
 hp 8
 sp 39
