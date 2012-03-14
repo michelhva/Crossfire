@@ -2329,7 +2329,7 @@ For the listening books, the message must be in this format:
 @match blah
 Click.
 
-Which will make it activate upon the somebody within two squares saying "blah", and will additionally say "Click." upon activation.
+Which will make it activate when somebody within two squares says "blah", and will additionally say "Click." upon activation.
 endmsg
 x 13
 y 13
