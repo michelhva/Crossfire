@@ -9,7 +9,7 @@ enter_x 10
 enter_y 20
 msg
 Created:  2004-07-29 Mikeeusa
-Modified: 2012-02-12 Rick Tanner
+Modified: 2012-03-14 Rick Tanner
 endmsg
 end
 arch blocked
@@ -5171,7 +5171,7 @@ Sending Mail
 -----------------------
 Get a pencil and be sure that you are able to use the literacy skill.  You can get both at the office, ask Colette for help.
 ...
-Get a preadressed mailscroll, mark it and write on it with:
+Get a preaddressed mailscroll, mark it and write on it with:
 use_skill inscription <text>
 ...
 You can write multiple lines, when done drop the scoll in the mailbox and it will be send.
