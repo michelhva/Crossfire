@@ -8,7 +8,7 @@ enter_x 8
 enter_y 18
 msg
 Created:  1996-02-08
-Modified: 2012-02-12 Rick Tanner
+Modified: 2012-03-15 Rick Tanner
 endmsg
 end
 arch pit_closed
@@ -1051,7 +1051,7 @@ Are you nuts? A Jessy would crush my house... But, of course, I could do it.  Ye
 @match none|neither
 You are so CHICKEN-HEARTED!
 @match treasure|crown|jewel|gold
-Summoning jewelery is dangerous because the appropriate astral plain is inhabited by fierce creatures! If you're willing to take the risk, say "go ahead."
+Summoning jewelry is dangerous because the appropriate astral plain is inhabited by fierce creatures! If you're willing to take the risk, say "go ahead."
 @match go ahead
 Okay, let's try...
 @match *
