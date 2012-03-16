@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2012-02-14 Rick Tanner
+Modified: 2012-03-15 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -3620,11 +3620,11 @@ name Owners Guide
 msg
 Welcome to your new Guild House!
 A few things to note, bugs should be reported to alestan@meflin.com.
-In the upper left corner, there are two levers, the left one pays out fees and dues, fees are dropped onto the floor and dues go straight into your inventory.  The one on the right sets what happens if a non member tries to enter.  In the left position, they are held in a prison and must wait for the guild master, get a DM to help, or step into chaos long enough to word of recall out.  In the right position, it simply throws them out of the entry portal.  The work rooms are not player unique maps, so multiple people can enter the same work room.  The maps also do not reset, there is a small fee for using the maps, that the guild masters collect, use the funds from it to replace broken equipment.  To control who has access to the rooms, in the basement there are tokens, one of each kind is free, further ones must be purchased at ten gold apeice.  Once in a while the mechanish malfunctions and eats your money, just like a real vending machine, if this happns, sorry, just put more in and it should work.  You may buy four aditional tokens per map reset, if you buy a fifth, it will refund your money and tell you it is sold out, putting more money in is simply eaten by the machine.  Questions or comments, please send them to alestan@meflin.com
+In the upper left corner, there are two levers, the left one pays out fees and dues, fees are dropped onto the floor and dues go straight into your inventory.  The one on the right sets what happens if a non member tries to enter.  In the left position, they are held in a prison and must wait for the guild master, get a DM to help, or step into chaos long enough to word of recall out.  In the right position, it simply throws them out of the entry portal.  The work rooms are not player unique maps, so multiple people can enter the same work room.  The maps also do not reset, there is a small fee for using the maps, that the guild masters collect, use the funds from it to replace broken equipment.  To control who has access to the rooms, in the basement there are tokens, one of each kind is free, further ones must be purchased at ten gold apiece.  Once in a while the mechanism malfunctions and eats your money, just like a real vending machine, if this happens, sorry, just put more in and it should work.  You may buy four additional tokens per map reset, if you buy a fifth, it will refund your money and tell you it is sold out, putting more money in is simply eaten by the machine.  Questions or comments, please send them to alestan@meflin.com
 
-New in this update:  Security system for the guild.  It's not perfect yet, but it catches most people trying to sneak into the guild.  Guild Storage room, the old storage hall is set up, thanks to Chad, to be a sorting/staging room.  It is not secure, so it is suggested that valueable items are not left unattended in it.  Also, if the gates are up in front of the stairs and you jump down one of the holes, a guildmaster will have to come rescue you because there is no way out.  New guild storage area is added under the guild.  The entrance is through the basement to the north.  This one splits up whos allowed to enter by guild rank.  Play around with it, most of the bugs should have been fixed already.
+New in this update:  Security system for the guild.  It's not perfect yet, but it catches most people trying to sneak into the guild.  Guild Storage room, the old storage hall is set up, thanks to Chad, to be a sorting/staging room.  It is not secure, so it is suggested that valuable items are not left unattended in it.  Also, if the gates are up in front of the stairs and you jump down one of the holes, a guildmaster will have to come rescue you because there is no way out.  New guild storage area is added under the guild.  The entrance is through the basement to the north.  This one splits up whose allowed to enter by guild rank.  Play around with it, most of the bugs should have been fixed already.
 
-Known bugs:  Some areas may be accessible by dimension door that should not be accessable.  Some of the floor in the storage rooms beneath the guild hall may not be buildable.  Those are the major ones.
+Known bugs:  Some areas may be accessible by dimension door that should not be accessible.  Some of the floor in the storage rooms beneath the guild hall may not be buildable.  Those are the major ones.
 
 P.S.  This latest version now includes a security system.  Anyone caught on the mainfloor who does not belong is jailed for a random length of time between 15 minutes and four hours, or life.  Anyone caught entering the GM only area in the guild_hq, will be given one of 9 random curses.  At present, they must see a DM to have it removed.
 
@@ -4421,7 +4421,7 @@ arch sign
 name Posted:  No Tresspassing
 msg
 Violators will be jailed, if they live that long.
-In all seriousness, permenant character damage can result from trying to break into the guild.
+In all seriousness, permanant character damage can result from trying to break into the guild.
 endmsg
 x 14
 y 26
