@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2012-03-15 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -5460,13 +5460,7 @@ end
 arch sign
 name Tower of  Ludo
 msg
-Lord Ludo invites to step in
-And discover his treasures
-Please deposit 500 gold coins
-at the Payment Booth.
-Special fees for groups of
-adventurers.
-Please don't touch the artefacts.
+Lord Ludo invites to step in And discover his treasures.   Please deposit 500 gold coins at the Payment Booth.  Special fees for groups of adventurers.  Please don't touch the artifacts.
 endmsg
 x 20
 y 39
@@ -5651,9 +5645,7 @@ arch market3
 name Private Shop - East
 slaying /brest/privateshops/privateshop_main
 msg
-As you enter the street you can sense the enormous
-treasure hordes contained within the walls of the
-nearby buildings.
+As you enter the street you can sense the enormous treasure hordes contained within the walls of the nearby buildings.
 endmsg
 hp 41
 sp 4
@@ -5674,9 +5666,7 @@ arch market3
 name Private Museum - East
 slaying ../brest/pshops/pshops_main
 msg
-As you enter the street you can sense the enormous
-treasure hordes contained within the walls of the
-nearby buildings.
+As you enter the street you can sense the enormous treasure hordes contained within the walls of the nearby buildings.
 endmsg
 hp 41
 sp 4
@@ -5691,7 +5681,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 21
 y 25
@@ -5772,7 +5762,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 21
 y 36
@@ -6290,7 +6280,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 23
 y 20
@@ -6369,7 +6359,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 23
 y 29
@@ -7389,7 +7379,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 26
 y 34
@@ -7416,7 +7406,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 26
 y 38
@@ -7900,7 +7890,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 28
 y 20
@@ -8249,7 +8239,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 29
 y 29
@@ -8947,7 +8937,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 31
 y 39
@@ -9448,7 +9438,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 33
 y 20
@@ -9522,7 +9512,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 33
 y 32
@@ -9921,7 +9911,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 34
 y 37
@@ -10791,7 +10781,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 37
 y 24
@@ -10823,7 +10813,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 37
 y 29
@@ -11164,7 +11154,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 38
 y 38
@@ -11370,7 +11360,7 @@ end
 arch lamppost
 name Street Lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 39
 y 20
@@ -13529,7 +13519,7 @@ arch barrack_long
 name Brest Seaside Tavern
 slaying /brest/taverns/brest.seaside.tavern
 msg
-You enter the tavern. The air is smoky and the guests are raucous.
+You enter the tavern.  The air is smoky and the guests are raucous.
 endmsg
 hp 6
 sp 4
