@@ -7,7 +7,7 @@ enter_x 15
 enter_y 11
 msg
 Created:  2004-11-24 Selenium (benjamin@telemuse.net)
-Modified: 2008-11-05 Rick Tanner
+Modified: 2012-03-15 Rick Tanner
 endmsg
 end
 arch blocked
@@ -7585,13 +7585,7 @@ end
 arch sign
 name For DMS
 msg
-Teleport these into place,
-dont let the buyer see it until
-he/she buys
-This is a unique floored map. to reset it,
-you will have to remove
-$crossfirehome/var/unique-items
-and mkdir it again
+Teleport these into place, don't let the buyer see it until he/she buys.  This is a unique floored map.  To reset it, use 'reset full-reset .' to fully reset the map.
 endmsg
 x 28
 y 23
