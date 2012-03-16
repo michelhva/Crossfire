@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2011-11-16 Rick Tanner
+Modified: 2012-03-15 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -409,7 +409,7 @@ arch s_shop1
 name Navar Imperial Post Office
 slaying /navar_city/misc/IPO_navar
 msg
-!Ding
+Ding!
 endmsg
 hp 4
 sp 9
@@ -4686,7 +4686,7 @@ arch sign_w
 name Smith St.
 msg
 Blacksmith
-Visit Gunther for Special Service
+Visit Gunther for Special Service.
 endmsg
 x 13
 y 7
@@ -4933,7 +4933,7 @@ end
 arch sign_w
 name Tavern St.
 msg
-Convivial Times for Scurvey Knaves!
+Convivial Times for Scurvy Knaves!
 endmsg
 x 14
 end
@@ -6589,8 +6589,7 @@ elevation 4319
 end
 arch magic_mouth
 msg
-Hmmm...what is that ship doing so far
-out in the bay??
+Hmmm...what is that ship doing so far out in the bay??
 endmsg
 x 19
 end
