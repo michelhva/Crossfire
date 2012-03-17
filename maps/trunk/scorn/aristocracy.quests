@@ -1,5 +1,6 @@
 quest scorn/Aristocracy
 title The Scorn Nobility
+face quest_scorn_aristocracy.111
 description
 Rise through the ranks of the scorn nobility to gain favour in the king's court
 end_description
@@ -228,6 +229,7 @@ end_quest
 
 quest scorn/WyvernWing
 title Slithselest for Supper
+face dragon_wing.111
 description
 The King of Scorn wishes to dine upon the wing of his enemy, Slithselest, the self-styled Lord of Wyverns.
 Slithselest has his eyrie (it is said) in the high mountains south of the road to Brest.
@@ -263,6 +265,7 @@ end_quest
 
 quest scorn/DemonPit
 title Demons in Euthville
+face pentagram.x11
 description
 There has been a recent influx of demons in the ruins of the town north of Scorn.
 Reports have it that the demons are issuing from a filthy pit in the ground.
