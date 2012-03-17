@@ -1,9 +1,9 @@
 quest scorn/Earhorn
 title Gramps Malone's Earhorn
+face horn2.111
 description
 Return an Earhorn to its rightful owner
 end_description
-restart 0
 step 10
 description
 I have found an earhorn which is marked as belonging to Gramps Malone, maybe I should find him and return it
@@ -37,7 +37,6 @@ title Gramps Malone's Walking Stick
 description
 Recover a walking stick on behalf of its owner.
 end_description
-restart 0
 step 10
 description
 I have found a walking stick which is marked as belonging to Gramps Malone, he might want it back
@@ -70,3 +69,4 @@ I have returned Gramps Malone's walking stick.
 end_description
 end_step
 end_quest
+
