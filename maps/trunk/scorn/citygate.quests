@@ -3,7 +3,6 @@ title Getting out of Scorn
 description
 The main gates of the city of Scorn are locked, and the guards will not let you pass.
 end_description
-restart 0
 step 5
 description
 I need to find a way to get permission to pass through the gates of Scorn.
@@ -24,10 +23,10 @@ end_quest
 
 quest scorn/PortGate
 title Down to the docks
+face grate_1.118
 description
 There is a gate separating the main part of Scorn from the docks. It is closed and the guards will not let me pass.
 end_description
-restart 0
 step 5
 description
 I need to find a way to be permitted beyond the gate.
@@ -48,11 +47,10 @@ end_quest
 
 quest scorn/GatePass
 title Gate Pass
-parent scorn/CityGate
 description
 Acquire a gate pass to be allowed out of the main gate of Scorn.
 end_description
-restart 0
+parent scorn/CityGate
 step 10
 description
 The guards told me that I could acquire a gate pass from the Office for Gate Passes, near the port gates. I should try asking there.
@@ -84,11 +82,11 @@ end_quest
 
 quest scorn/PortPass
 title Port Pass
-parent scorn/PortGate
+face card.111
 description
 Acquire a port pass to be allowed into Scorn's docks.
 end_description
-restart 0
+parent scorn/PortGate
 step 10
 description
 The guards told me that I could acquire a port pass from the Office for Gate Passes. I should try asking there.
@@ -123,7 +121,6 @@ title Scorn Password
 description
 Discover the password that will permit passage through the gates in Scorn.
 end_description
-restart 0
 step 10
 description
 The guards have told me that there is a password, just not what it is, I should keep alert for any clues as to what it might be.
@@ -158,7 +155,6 @@ title The Grumpy Office Clerk
 description
 The clerk at the office of passes is very grumpy, and not serving anyone.
 end_description
-restart 0
 step 10
 description
 I have spoken to the clerk at the office of passes, he was in a foul mood and not prepared to help me, maybe one of the guards nearby will know what is wrong with him.
@@ -198,7 +194,6 @@ title Alfalfa's Attire
 description
 Alfalfa was arrested for streaking, and wants some clothes.
 end_description
-restart 0
 step 10
 description
 I have spoken with Alfalfa in Scorn jail, she was arrested for streaking and now the guards won't give her any clothes. She asked me to fetch something for her to wear from her house. Fran at the Barking Mule keeps a spare key for her house.
@@ -226,3 +221,4 @@ I found Alfalfa's secret hiding place.
 end_description
 end_step
 end_quest
+

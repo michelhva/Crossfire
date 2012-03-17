@@ -1,9 +1,9 @@
 quest tutorial/keys
 title Getting Past Locked Doors
+face lockpicks.111
 description
 Using either the keys, your weapon or your lockpicking skills, open all three doors and claim the treasure in the chest at the end.
 end_description
-restart 0
 step 10
 description
 I must open the first door, which uses a standard key, I can either use one of the keys beside the door, or I can attempt to break it down or I can use my lockpicking skill do open it. The sign beside the door will tell me how to do this.
@@ -31,3 +31,4 @@ I have opened the final door, I should open the chest and claim my reward.
 end_description
 end_step
 end_quest
+
