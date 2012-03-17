@@ -1,5 +1,6 @@
 quest darcap/Elemental
 title Darcap's Elemental quest
+face quest_darcap_elemental.111
 description
 Solve the four elemental quests, and get some equipment as a reward.
 end_description
@@ -31,6 +32,7 @@ end_quest
 
 quest darcap/Elemental-Fire
 title Darcap's Fire Elemental quest
+face elem_fire.111
 description
 I must solve the fire elemental quest.
 end_description
@@ -50,10 +52,10 @@ I have solved the fire elemental quest, and need to solve the others.
 end_description
 end_step
 step 30
+finishes_quest
 description
 I have solved the fire elemental quest.
 end_description
-finishes_quest
 setwhen
 darcap/Elemental 0
 darcap/Elemental-Fire 20
@@ -63,6 +65,7 @@ end_quest
 
 quest darcap/Elemental-Air
 title Darcap's Air Elemental quest
+face elem_air.111
 description
 I must solve the air elemental quest.
 end_description
@@ -82,10 +85,10 @@ I have solved the air elemental quest, and need to solve the others.
 end_description
 end_step
 step 30
+finishes_quest
 description
 I have solved the air elemental quest.
 end_description
-finishes_quest
 setwhen
 darcap/Elemental 0
 darcap/Elemental-Air 20
@@ -95,6 +98,7 @@ end_quest
 
 quest darcap/Elemental-Earth
 title Darcap's Earth Elemental quest
+face elem_earth.111
 description
 I must solve the earth elemental quest.
 end_description
@@ -114,10 +118,10 @@ I have solved the earth elemental quest, and need to solve the others.
 end_description
 end_step
 step 30
+finishes_quest
 description
 I have solved the earth elemental quest.
 end_description
-finishes_quest
 setwhen
 darcap/Elemental 0
 darcap/Elemental-Earth 20
@@ -127,6 +131,7 @@ end_quest
 
 quest darcap/Elemental-Water
 title Darcap's Water Elemental quest
+face elem_water.111
 description
 I must solve the water elemental quest.
 end_description
@@ -146,13 +151,14 @@ I have solved the water elemental quest, and need to solve the others.
 end_description
 end_step
 step 30
+finishes_quest
 description
 I have solved the water elemental quest.
 end_description
-finishes_quest
 setwhen
 darcap/Elemental 0
 darcap/Elemental-Water 20
 end_setwhen
 end_step
 end_quest
+
