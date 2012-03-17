@@ -1,5 +1,6 @@
 quest scorn/CityGate
 title Getting out of Scorn
+face quest_scorn_gates.111
 description
 The main gates of the city of Scorn are locked, and the guards will not let you pass.
 end_description
@@ -47,6 +48,7 @@ end_quest
 
 quest scorn/GatePass
 title Gate Pass
+face quest_scorn_gates.111
 description
 Acquire a gate pass to be allowed out of the main gate of Scorn.
 end_description
@@ -118,6 +120,7 @@ end_quest
 
 quest scorn/GatePassword
 title Scorn Password
+face quest_scorn_gates.111
 description
 Discover the password that will permit passage through the gates in Scorn.
 end_description
