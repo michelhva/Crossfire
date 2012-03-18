@@ -1,0 +1,398 @@
+arch map
+name quest
+width 10
+height 10
+msg
+Created:  2010-01-24 Nicolas Weeger
+endmsg
+end
+arch pstone_4
+end
+arch pstone_4
+y 1
+end
+arch pstone_4
+y 2
+end
+arch pstone_4
+y 3
+end
+arch pstone_4
+y 4
+end
+arch pstone_4
+y 5
+end
+arch pstone_4
+y 6
+end
+arch pstone_4
+y 7
+end
+arch pstone_4
+y 8
+end
+arch pstone_4
+y 9
+end
+arch pstone_4
+x 1
+end
+arch pstone_4
+x 1
+y 1
+end
+arch pstone_4
+x 1
+y 2
+end
+arch pstone_4
+x 1
+y 3
+end
+arch pstone_4
+x 1
+y 4
+end
+arch pstone_4
+x 1
+y 5
+end
+arch pstone_4
+x 1
+y 6
+end
+arch pstone_4
+x 1
+y 7
+end
+arch pstone_4
+x 1
+y 8
+end
+arch pstone_4
+x 1
+y 9
+end
+arch pstone_4
+x 2
+end
+arch pstone_4
+x 2
+y 1
+end
+arch pstone_4
+x 2
+y 2
+end
+arch pstone_4
+x 2
+y 3
+end
+arch pstone_4
+x 2
+y 4
+end
+arch pstone_4
+x 2
+y 5
+end
+arch pstone_4
+x 2
+y 6
+end
+arch pstone_4
+x 2
+y 7
+end
+arch pstone_4
+x 2
+y 8
+end
+arch pstone_4
+x 2
+y 9
+end
+arch pstone_4
+x 3
+end
+arch pstone_4
+x 3
+y 1
+end
+arch pstone_4
+x 3
+y 2
+end
+arch pstone_4
+x 3
+y 3
+end
+arch pstone_4
+x 3
+y 4
+end
+arch pstone_4
+x 3
+y 5
+end
+arch pstone_4
+x 3
+y 6
+end
+arch pstone_4
+x 3
+y 7
+end
+arch pstone_4
+x 3
+y 8
+end
+arch pstone_4
+x 3
+y 9
+end
+arch pstone_4
+x 4
+end
+arch pstone_4
+x 4
+y 1
+end
+arch pstone_4
+x 4
+y 2
+end
+arch pstone_4
+x 4
+y 3
+end
+arch pstone_4
+x 4
+y 4
+end
+arch conjurer
+x 4
+y 4
+type 0
+stand_still 1
+arch event_say
+title Python
+slaying test/quest.py
+end
+end
+arch pstone_4
+x 4
+y 5
+end
+arch pstone_4
+x 4
+y 6
+end
+arch pstone_4
+x 4
+y 7
+end
+arch pstone_4
+x 4
+y 8
+end
+arch pstone_4
+x 4
+y 9
+end
+arch pstone_4
+x 5
+end
+arch pstone_4
+x 5
+y 1
+end
+arch pstone_4
+x 5
+y 2
+end
+arch pstone_4
+x 5
+y 3
+end
+arch pstone_4
+x 5
+y 4
+end
+arch pstone_4
+x 5
+y 5
+end
+arch pstone_4
+x 5
+y 6
+end
+arch pstone_4
+x 5
+y 7
+end
+arch pstone_4
+x 5
+y 8
+end
+arch pstone_4
+x 5
+y 9
+end
+arch pstone_4
+x 6
+end
+arch pstone_4
+x 6
+y 1
+end
+arch pstone_4
+x 6
+y 2
+end
+arch pstone_4
+x 6
+y 3
+end
+arch pstone_4
+x 6
+y 4
+end
+arch pstone_4
+x 6
+y 5
+end
+arch pstone_4
+x 6
+y 6
+end
+arch pstone_4
+x 6
+y 7
+end
+arch pstone_4
+x 6
+y 8
+end
+arch pstone_4
+x 6
+y 9
+end
+arch pstone_4
+x 7
+end
+arch pstone_4
+x 7
+y 1
+end
+arch pstone_4
+x 7
+y 2
+end
+arch pstone_4
+x 7
+y 3
+end
+arch pstone_4
+x 7
+y 4
+end
+arch pstone_4
+x 7
+y 5
+end
+arch pstone_4
+x 7
+y 6
+end
+arch pstone_4
+x 7
+y 7
+end
+arch pstone_4
+x 7
+y 8
+end
+arch pstone_4
+x 7
+y 9
+end
+arch pstone_4
+x 8
+end
+arch pstone_4
+x 8
+y 1
+end
+arch pstone_4
+x 8
+y 2
+end
+arch pstone_4
+x 8
+y 3
+end
+arch pstone_4
+x 8
+y 4
+end
+arch pstone_4
+x 8
+y 5
+end
+arch pstone_4
+x 8
+y 6
+end
+arch pstone_4
+x 8
+y 7
+end
+arch pstone_4
+x 8
+y 8
+end
+arch pstone_4
+x 8
+y 9
+end
+arch pstone_4
+x 9
+end
+arch pstone_4
+x 9
+y 1
+end
+arch pstone_4
+x 9
+y 2
+end
+arch pstone_4
+x 9
+y 3
+end
+arch pstone_4
+x 9
+y 4
+end
+arch pstone_4
+x 9
+y 5
+end
+arch pstone_4
+x 9
+y 6
+end
+arch pstone_4
+x 9
+y 7
+end
+arch pstone_4
+x 9
+y 8
+end
+arch pstone_4
+x 9
+y 9
+end

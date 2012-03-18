@@ -1,0 +1,408 @@
+arch map
+name throw-test
+width 10
+height 10
+msg
+Created:  2009-04-07 mwedel@sonic.net
+This map is just to check that pickup of objects within thrown objects work properly.
+The code is supposed to strip out the thrown object wrapper and just pick up the object in that wrappers inventory.
+endmsg
+end
+arch woodfloor
+end
+arch woodfloor
+y 1
+end
+arch woodfloor
+y 2
+end
+arch woodfloor
+y 3
+end
+arch woodfloor
+y 4
+end
+arch woodfloor
+y 5
+end
+arch woodfloor
+y 6
+end
+arch woodfloor
+y 7
+end
+arch woodfloor
+y 8
+end
+arch woodfloor
+y 9
+end
+arch woodfloor
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch woodfloor
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch woodfloor
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch axe
+name axe container
+name_pl axes container
+x 3
+y 1
+type 48
+arch axe
+end
+end
+arch woodfloor
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch woodfloor
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch woodfloor
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch battle_axe
+name Battle Axe Container
+x 5
+y 7
+type 48
+arch battle_axe
+weight 1000000
+end
+end
+arch woodfloor
+x 5
+y 8
+end
+arch woodfloor
+x 5
+y 9
+end
+arch woodfloor
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch woodfloor
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch woodfloor
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
