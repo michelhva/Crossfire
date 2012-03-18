@@ -1,0 +1,25 @@
+[Config]
+name= CFAnim test
+victimtype= byname
+victim= who
+unique= no
+always_delete= no
+delete_end= yes
+paralyzed= no
+time_representation= second
+errors_allowed= yes
+verbose= yes
+animation= Animation
+invisible= no
+wizard= no
+[Animation]
+1 say Yes, the animation system works!
+1 say please wait a few seconds...
+1 moveto 3 17
+1 moveto 0 14
+1 say ok, I'm done...
+[Another]
+1 say If you insist, I should do something else, then!
+1 moveto 10 5
+1 moveto 0 14
+1 say This time, I hope that's enough...
