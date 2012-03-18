@@ -1351,8 +1351,7 @@ end
 arch trigger_marker
 slaying fun_zone
 msg
-The guard puts a stamp on your arm.
-You can enjoy the fun zone for a day.
+The guard puts a stamp on your arm.  You can enjoy the fun zone for a day.
 endmsg
 food 504
 x 11
@@ -1840,7 +1839,7 @@ name Fun Zone Perma-Pass
 name_pl Fun Zone Perma-Passes
 slaying fun_zone
 msg
-A card with the Fun Zone clown logo on the front, and this message on the back: "you are hereby granted access whenever you wish".
+A card with the Fun Zone clown logo on the front, and this message on the back: "You are hereby granted access whenever you wish."
 endmsg
 type 21
 end
@@ -2844,8 +2843,7 @@ x 23
 end
 arch magic_mouth
 msg
-You hear angry muttering coming from inside this slot machine.
-Perhaps it is broken.
+You hear angry muttering coming from inside this slot machine.  Perhaps it is broken.
 endmsg
 food 1
 x 23
@@ -2858,8 +2856,7 @@ end
 arch slotmachine2
 name Moria
 msg
-You hear angry muttering coming from inside this slot machine.
-Perhaps it is broken.
+You hear angry muttering coming from inside this slot machine.  Perhaps it is broken.
 endmsg
 face slotmachine1.111
 food 0
