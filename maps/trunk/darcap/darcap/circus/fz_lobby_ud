@@ -11,7 +11,7 @@ enter_x 11
 enter_y 12
 msg
 Created: 2008-07-31 Raphaël Quinet & Chad Opperman
-Modified: 2008-11-02 Rick Tanner
+Modified: 2012-03-18 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2844,7 +2844,7 @@ x 23
 end
 arch magic_mouth
 msg
-You hear angry muttering coming from inside this slotmachine.
+You hear angry muttering coming from inside this slot machine.
 Perhaps it is broken.
 endmsg
 food 1
@@ -2858,7 +2858,7 @@ end
 arch slotmachine2
 name Moria
 msg
-You hear angry muttering coming from inside this slotmachine.
+You hear angry muttering coming from inside this slot machine.
 Perhaps it is broken.
 endmsg
 face slotmachine1.111
