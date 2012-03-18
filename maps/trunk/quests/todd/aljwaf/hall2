@@ -9,7 +9,7 @@ enter_x 28
 enter_y 14
 msg
 Created:  2002-04-20 Todd Mitchell
-Modified: 2012-01-04 Rick Tanner
+Modified: 2012-03-18 Nicolas Weeger
 endmsg
 end
 arch dun_2_2_2
@@ -5586,6 +5586,9 @@ endmsg
 hp 5
 sp 5
 x 29
+arch quest_advance_apply
+name quests/Narcopin 20>30
+end
 end
 arch dun_1_3
 x 29

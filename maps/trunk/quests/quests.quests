@@ -1,0 +1,24 @@
+quest quests/Narcopin
+title The Ruins of Narcopin
+face ruins.111
+description
+Find the devasted kingdom of Narcopin, and claim its treasures for yourself.
+end_description
+step 10
+description
+You've heard of a kingdom which was destroyed, west of Navar.
+end_description
+end_step
+step 20
+description
+Explore the ruins of Narcopin.
+end_description
+end_step
+step 30
+finishes_quest
+description
+You've found the treasure of Aljwaf.
+end_description
+end_step
+end_quest
+

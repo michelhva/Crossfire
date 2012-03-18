@@ -4,7 +4,7 @@ region narcopin
 width 50
 height 50
 msg
-Modified: 2008-10-30 Rick Tanner
+Modified: 2012-03-18 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_119_115
@@ -5634,6 +5634,9 @@ hp 6
 sp 12
 x 21
 y 26
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch desert
 x 21
@@ -8041,6 +8044,9 @@ hp 6
 sp 12
 x 29
 y 25
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch pstone_3
 x 29
@@ -8705,6 +8711,9 @@ hp 1
 sp 1
 x 31
 y 24
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch pstone_1
 x 31
@@ -8801,6 +8810,9 @@ hp 6
 sp 12
 x 31
 y 36
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch pstone_1
 x 31
@@ -10551,6 +10563,9 @@ hp 6
 sp 12
 x 37
 y 6
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch pstone_1
 x 37
@@ -11212,6 +11227,9 @@ hp 1
 sp 1
 x 39
 y 12
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch desert
 x 39
@@ -11258,6 +11276,9 @@ hp 8
 sp 3
 x 39
 y 18
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch desert
 x 39
@@ -13454,6 +13475,9 @@ hp 1
 sp 1
 x 47
 y 18
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch desert
 x 47
