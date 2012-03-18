@@ -10,7 +10,7 @@ enter_x 15
 enter_y 31
 msg
 Created:  1997-07-10 Viola Krings
-Modified: 2012-01-31 Rick Tanner
+Modified: 2012-03-17 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -2811,7 +2811,7 @@ x 14
 y 4
 end
 arch altar
-name drop 5 beholdereyes to get a key
+name drop 5 beholder eyes to get a key
 slaying beholdereye
 food 5
 x 14
