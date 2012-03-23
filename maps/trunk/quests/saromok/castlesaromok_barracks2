@@ -8,7 +8,7 @@ enter_x 7
 enter_y 29
 msg
 Created:  2008-08-12 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-12-04 Rick Tanner
+Modified: 2012-03-22 Rick Tanner
 endmsg
 end
 arch stonefloor2
@@ -703,7 +703,7 @@ arch merchant
 name Gandulf the wizard
 msg
 @match *
-It was all my beards fault...it kept getting in my eyes and I couldn't see well enough to fight...
+It was all my beards fault... it kept getting in my eyes and I couldn't see well enough to fight...
 endmsg
 face sage.151
 animation sage
@@ -853,7 +853,7 @@ arch merchant
 name Gambli the dwarf
 msg
 @match *
-Ugh...my axe failed me and now here I am banging my head on these bars trying to escape!
+Ugh... my axe failed me and now here I am banging my head on these bars trying to escape!
 endmsg
 face dwarf.111
 animation dwarf
@@ -2852,7 +2852,7 @@ arch merchant
 name Lagoless the elf
 msg
 @match *
-That was a great idea Gandulf...get us all trapped here...
+That was a great idea Gandulf... get us all trapped here...
 endmsg
 face elf.171
 animation elf
