@@ -8,7 +8,7 @@ enter_x 13
 enter_y 7
 msg
 Created:  2008-08-13 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-03-22 Rick Tanner
 endmsg
 end
 arch stonefloor2
@@ -836,7 +836,7 @@ use_content_on_gen 1
 arch zombie
 name Summoned Zombie
 msg
-Uhnnn...musst...eat...
+Uhnnn... musst... eat...
 endmsg
 Int 100
 hp 30000
