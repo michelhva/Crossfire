@@ -8,7 +8,7 @@ enter_x 19
 enter_y 39
 msg
 Created:  1993-11-13
-Modified: 2012-01-03 Rick Tanner
+Modified: 2012-03-24 Rick Tanner
 endmsg
 end
 arch marble
@@ -2021,7 +2021,7 @@ arch grimreaper
 name Evil Spirit
 msg
 @match *
-Begone from here or I feed off your flesh. Have you ever Danced with Death? *The spirit holds out his hand to you.*
+Begone from here or I feed off your flesh.i  Have you ever Danced with Death? *The spirit holds out his hand to you.*
 endmsg
 hp 600
 maxhp 200
@@ -6454,7 +6454,7 @@ arch grimreaper
 name Evil Spirit
 msg
 @match *
-Begone from here or I feed off your flesh. Have you ever Danced with Death? *The spirit holds out his hand to you.*
+Begone from here or I feed off your flesh.  Have you ever Danced with Death? *The spirit holds out his hand to you.*
 endmsg
 hp 200
 maxhp 200
