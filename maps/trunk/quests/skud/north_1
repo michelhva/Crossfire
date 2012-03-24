@@ -8,7 +8,7 @@ enter_x 15
 enter_y 38
 msg
 Created:  1993-11-16 Skud the Great (tvangod@ecst.csuchico.edu)
-Modified: 2012-03-19 Rick Tanner
+Modified: 2012-03-24 Rick Tanner
 endmsg
 end
 arch snow3
@@ -2980,9 +2980,9 @@ arch devil
 name Guat' hdolamar
 msg
 @match throat|pleasure|claws
-I was summonned here by the one! I despise what he has done to me. If ever I meet him on my own plane, I shall crush him, make him feel the true meaning of pain.
+I was summonned here by the one! I despise what he has done to me.  If ever I meet him on my own plane, I shall crush him, make him feel the true meaning of pain.
 @match one
-He who does not live, but does die. He has trapped me here and I cannot leave this room until I have tasted mortal blood.
+He who does not live, but does die.  He has trapped me here and I cannot leave this room until I have tasted mortal blood.
 @match blood|mortal|leave|kill
 My curse is that the mortal must attack me first, long HAVE I waited for Thee to come.
 @match *
@@ -6986,7 +6986,7 @@ end
 arch book_read
 name How to summon
 msg
-Summoning greater monsters is an artform. If done correctly, creatures far more powerful then the caster can be summoned to do thy master's bidding. But should the caster show weakness or fear these monsters will turn on thee and crush you to little bits.
+Summoning greater monsters is an artform.  If done correctly, creatures far more powerful then the caster can be summoned to do thy master's bidding.  But should the caster show weakness or fear these monsters will turn on thee and crush you to little bits.
 endmsg
 x 21
 y 11
@@ -7854,7 +7854,7 @@ y 10
 end
 arch magic_mouth
 msg
-This appears to be what used to be Skud's laboratory. You see books, potions, and other strange things.
+This appears to be what used to be Skud's laboratory.  You see books, potions, and other strange things.
 endmsg
 x 24
 y 11
@@ -7901,7 +7901,7 @@ y 16
 end
 arch scroll
 msg
-Guat' hdolamar, a greater demon from the sixth plane of hell, is the gatekeeper to that dimension. To kill Guat would give me access to the planes of hell and the terrors within.
+Guat' hdolamar, a greater demon from the sixth plane of hell, is the gatekeeper to that dimension.  To kill Guat would give me access to the planes of hell and the terrors within.
 endmsg
 x 24
 y 16
