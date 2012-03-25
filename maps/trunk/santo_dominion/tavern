@@ -8,7 +8,7 @@ enter_x 14
 enter_y 18
 msg
 Created:  1994-04-05 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2012-01-04 Rick Tanner
+Modified: 2012-03-25 Rick Tanner
 endmsg
 end
 arch grass
@@ -402,11 +402,11 @@ end
 arch man
 msg
 @match mudman
-He lives in the swamp to the west of the town. You should avoid that place!
+He lives in the swamp to the west of the town.  You should avoid that place!
 @match yes
 Grmbl... Leave me alone!
 @match no|stig
-He lives north of this town. There's one big mess in his house, but you might find some useful stuff too.
+He lives north of this town.  There's one big mess in his house, but you might find some useful stuff too.
 @match *
 Do you know Stig?
 endmsg
@@ -772,14 +772,14 @@ name TCI Representative
 msg
 @match tci
 @question location location And what are those locations?
-Training Centers Incorporated is the best dang training you'll ever get. We have locations all over the world in exotic settings. Come fight with us! (heh, they tell us we have to say all that)
+Training Centers Incorporated is the best dang training you'll ever get.  We have locations all over the world in exotic settings.  Come fight with us! (heh, they tell us we have to say all that)
 @match location
-Well, I don't know about all of them. But our local TCI is off the road south of here. Just look for one of our signs!
+Well, I don't know about all of them. But our local TCI is off the road south of here.  Just look for one of our signs!
 @match hello|hi
 @question tci What is TCI?
-Well, hello there! Sit down and chat with me a bit. I am always looking for new people to tell about TCI.
+Well, hello there! Sit down and chat with me a bit.  I am always looking for new people to tell about TCI.
 @match *
-Hi there young'un. Wanna join TCI?
+Hi there young'un.  Wanna join TCI?
 endmsg
 x 5
 y 17
@@ -1225,12 +1225,12 @@ end
 arch sailor
 msg
 @match apartment
-Sure, it's just a matter of having enough money. I made some sailing, and the pay was good, so here I am.
+Sure, it's just a matter of having enough money.  I made some sailing, and the pay was good, so here I am.
 @match mudman
 Huh... Mudman? What's that?
 @match *
 @question apartment You can buy a apartment around here?
-St. Dominion is a nice little town. I bought one of the apartments and now I'm staying here for the weekends.
+St. Dominion is a nice little town.  I bought one of the apartments and now I'm staying here for the weekends.
 endmsg
 hp 100
 maxhp 100
@@ -2846,7 +2846,7 @@ msg
 The Mudman is a vile creature lurking in swamps just west of this town.  The inhabitants of St. Dominion are scared of the Mudman.  Kill him and put his residue on my table.  Then I will open the gate for you.
 @match *
 @question mudman What is the mudman?
-Do you see this room behind me? It's the "hero's room".  You may enter if you prove yourself worthy by killing the Mudman.
+Do you see this room behind me? It's the "hero's room."  You may enter if you prove yourself worthy by killing the Mudman.
 endmsg
 face wizard_blue.151
 Str 10
