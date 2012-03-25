@@ -7,7 +7,7 @@ height 22
 enter_x 10
 enter_y 18
 msg
-Modified: 202-01-06 Rick Tanner
+Modified: 2012-03-25 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2098,13 +2098,13 @@ arch c_woman
 name Noble Resting Innkeeper
 msg
 @match hi|hello
-Welcome to The Noble Resting. A fine place to sleep and dine.
+Welcome to The Noble Resting.  A fine place to sleep and dine.
 @match room|rest|inn|sleep
 We have rooms available up ahead and around the corner.  Stay as long as you like.
 @match food|meal|eat|dine
-You just missed our serving hour. Perhaps there is a small meal still available.
+You just missed our serving hour.  Perhaps there is a small meal still available.
 @match stairs|upstairs
-Our second floor has addition guest rooms and two rooftop decks for relaxing.
+Our second floor has additional guest rooms and two rooftop decks for relaxing.
 @match *
 Well good day to you!
 endmsg
@@ -2899,7 +2899,7 @@ msg
 @match ring
 No, I don't want to speak to you anymore... Go away!
 @match mudman
-The Mudman is living in the mud southwest, outside the city walls. He is very dangerous, because of his magic ring.
+The Mudman is living in the mud southwest, outside the city walls.  He is very dangerous, because of his magic ring.
 @match *
 Beware of the Mudman!
 endmsg
