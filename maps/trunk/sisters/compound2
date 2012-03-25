@@ -8,7 +8,7 @@ enter_x 1
 enter_y 6
 msg
 Created:  1994-12-26 bt (thomas@Nomad.astro.psu.edu)
-Modified: 2008-10-28 Rick Tanner
+Modified: 2012-03-25 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -458,11 +458,6 @@ exp 2000
 x 4
 y 10
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 4
@@ -478,11 +473,6 @@ exp 2000
 x 4
 y 12
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 4
@@ -591,11 +581,6 @@ exp 2000
 x 5
 y 9
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 5
@@ -619,11 +604,6 @@ exp 2000
 x 5
 y 13
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 5
@@ -709,11 +689,6 @@ exp 2000
 x 6
 y 11
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 6
@@ -795,11 +770,6 @@ exp 2000
 x 7
 y 6
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 7
@@ -899,11 +869,6 @@ exp 2000
 x 8
 y 2
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 8
@@ -1024,11 +989,6 @@ exp 2000
 x 9
 y 2
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 9
@@ -1056,11 +1016,6 @@ exp 2000
 x 9
 y 6
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 9
@@ -1175,11 +1130,6 @@ exp 2000
 x 10
 y 2
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 10
@@ -1285,11 +1235,6 @@ exp 2000
 x 11
 y 1
 carrying 21000000
-arch ability_stone_throw
-end
-arch t_lboulder
-nrof 21
-end
 end
 arch woodfloor
 x 11
