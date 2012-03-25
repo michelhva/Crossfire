@@ -22,3 +22,22 @@ end_description
 end_step
 end_quest
 
+quest quests/BaradDur
+title Fortress of Barad-Dur
+face tower_a.x11
+description
+Find the legendary fortress of Barad-Dur. Beware, evil monsters lurk in it.
+end_description
+step 10
+description
+You've heard of the fortress of Barad-Dur, located north-west of the great city.
+end_description
+end_step
+step 20
+finishes_quest
+description
+You've found the legendary fortress of Barad-Dur.
+end_description
+end_step
+end_quest
+
