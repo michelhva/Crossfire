@@ -49,4 +49,11 @@ maxhp 30
 maxsp 30
 maxgrace 30
 end
-
+Object quetzalcoatl_player_force
+name quetzalcoatl_force
+invisible 1
+speed 0
+type 114
+applied 1
+no_drop 1
+end

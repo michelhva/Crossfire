@@ -54,3 +54,9 @@ maxhp 30
 maxsp 30
 maxgrace 30
 end
+Object dwarf_player_force
+name dwarf_force
+invisible 1
+type 114
+speed 0
+end
