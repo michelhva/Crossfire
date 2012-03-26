@@ -8,7 +8,7 @@ enter_x 11
 enter_y 1
 msg
 Created:  2003-04-27 Avion
-Modified: 2012-01-09 Rick Tanner
+Modified: 2012-03-26 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -601,7 +601,7 @@ end
 arch woman
 msg
 @match *
-eeeek!  I think I saw a mouse.
+Eeeek!  I think I saw a mouse.
 endmsg
 x 3
 y 7
@@ -3150,7 +3150,7 @@ y 11
 end
 arch sheep
 msg
-baaa!
+Baaa!
 endmsg
 x 19
 y 11
@@ -3391,7 +3391,7 @@ type 122
 no_pick 1
 arch card
 msg
-special delivery for Mr. White...
+Special delivery for Mr. White...
 endmsg
 face card_skull.111
 end
