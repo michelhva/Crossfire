@@ -8,7 +8,7 @@ enter_x 5
 enter_y 9
 msg
 Created:  2005-03-23 Huhanhi
-Modified: 2008-10-28 Rick Tanner
+Modified: 2012-03-26 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -846,8 +846,8 @@ x 6
 end
 arch magic_mouth
 msg
-A voice booms :
-NOW CHOOSE YOUR PATH
+A voice booms:
+NOW CHOOSE YOUR PATH...
 endmsg
 food 1
 x 6
