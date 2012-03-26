@@ -9,7 +9,7 @@ enter_x 14
 enter_y 7
 msg
 Created:  1996-01-06 Bjoern Helfesrieder (helfesri@igd.fhg.de)
-Modified: 2012-01-09 Rick Tanner
+Modified: 2012-03-26 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -363,7 +363,7 @@ end
 arch magic_ear
 msg
 @match chair
-A deep voice says "OK sonny, you know the word, I open the gate!"
+A deep voice says, "OK sonny, you know the word, I open the gate!"
 endmsg
 x 3
 y 11
@@ -637,7 +637,7 @@ y 4
 end
 arch note
 msg
-I changed the password for the dungeon from "wall" to "chair".  I must tell Charles before I leave.
+I changed the password for the dungeon from "wall" to "chair."  I must tell Charles before I leave.
 endmsg
 x 6
 y 4
@@ -664,7 +664,7 @@ y 7
 end
 arch magic_mouth
 msg
-A sign says "Do not enter"
+A sign says "Do not enter!"
 endmsg
 x 6
 y 8
@@ -886,7 +886,7 @@ y 6
 end
 arch dungeon_floor
 msg
-you feel better.
+You feel better.
 endmsg
 hp 22
 x 8
