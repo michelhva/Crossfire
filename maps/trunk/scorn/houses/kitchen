@@ -8,7 +8,7 @@ enter_x 6
 enter_y 11
 msg
 Created:  2002-12-29
-Modified: 2012-01-09 Rick Tanner
+Modified: 2012-03-26 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -346,7 +346,7 @@ end
 arch woman
 msg
 @match *
-Look at you...covered in mud and monster blood... You think that is supposed to turn a girl on? Go away before I call the guards!
+Look at you... covered in mud and monster blood... You think that is supposed to turn a girl on? Go away before I call the guards!
 endmsg
 exp 1
 x 3
@@ -380,7 +380,7 @@ end
 arch charwoman
 msg
 @match *
-You adventures... always making a mess of our town. Go find adventure elsewhere!
+You adventures... always making a mess of our town.  Go find adventure elsewhere!
 endmsg
 exp 1
 x 3
@@ -1013,7 +1013,7 @@ end
 arch fatman
 msg
 @match feeling
-Better...better get a bucket!
+Better... better get a bucket!
 endmsg
 exp 1
 x 7
