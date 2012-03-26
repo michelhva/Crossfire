@@ -8,7 +8,7 @@ enter_x 14
 enter_y 16
 msg
 Created:  2010-08-22 Khaleh (map) and  Nicolas Weeger (script)
-Modified: 2012-03-16 Rick Tanner
+Modified: 2012-03-26 Rick Tanner
 endmsg
 end
 arch hills_rocky
@@ -3587,7 +3587,7 @@ y 18
 end
 arch magic_mouth
 msg
-A Thief moves out of hiding.  "Welcome to the House of Doors".
+A Thief moves out of hiding.  "Welcome to the House of Doors."
 endmsg
 food 1
 x 8
@@ -5045,7 +5045,7 @@ y 18
 end
 arch magic_mouth
 msg
-It seems the ogre chief ran into a trap and died here ........and you finally get your treasure.
+It seems the ogre chief ran into a trap and died here........ and you finally get your treasure.
 endmsg
 food 1
 x 12
@@ -5067,7 +5067,7 @@ y 19
 end
 arch magic_mouth
 msg
-"aaaarrrrrgggghhhh......"
+"Aaaarrrrrgggghhhh......"
 What might have happened?
 endmsg
 food 1
