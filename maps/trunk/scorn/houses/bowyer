@@ -9,7 +9,7 @@ enter_x 7
 enter_y 12
 msg
 Created:  2002-12-28
-Modified: 2011-11-12 Rick Tanner
+Modified: 2012-03-25 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -404,7 +404,7 @@ msg
 @match dust|sawdust|glue
 Please pardon our dust, we're remodeling.
 @match bowyer|missile|arrow|bolt|skill|help
-Here you can use your skill bowyer to create new items.  Simply place the appropriate ingredients in the workbench, and use_skill bowyer. If things go well, you will have created a new item.
+Here you can use your skill bowyer to create new items.  Simply place the appropriate ingredients in the workbench, and use_skill bowyer.  If things go well, you will have created a new item.
 @match *
 Welcome, feel free to use my workbench, I'm not using it right now.  Just ask me about using your bowyer skill.
 endmsg
