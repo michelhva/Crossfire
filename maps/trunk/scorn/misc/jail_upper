@@ -9,7 +9,7 @@ enter_x 3
 enter_y 7
 msg
 Created:  2004-11-09 Casper and Salathar (salathar@hotmail.com)
-Modified: 2012-01-12 Rick Tanner
+Modified: 2012-03-27 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2311,7 +2311,7 @@ end
 arch sign
 name Instructions
 msg
-Step into a waiting cell. Summon a character there.
+Step into a waiting cell.  Summon a character there.
 Saying 'I understand' near a waiting cell door will open it.
 The Warden's key will allow you to open waiting cell doors when you are not flying (dm).
 When the door is open the character will be able to leave.
