@@ -9,7 +9,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  1996-01-05 Bjoern Helfesrieder (helfesri@igd.fhg.de)
-Modified: 2012-01-10 Rick Tanner
+Modified: 2012-03-26 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -727,7 +727,7 @@ y 19
 end
 arch sign
 msg
-That was just warming up...turn the handle if you are ready. Good luck!
+That was just warming up... turn the handle if you are ready.  Good luck!
 endmsg
 x 2
 y 19
@@ -8978,7 +8978,7 @@ end
 arch locked_door2
 slaying 66
 msg
-A deep voice says "You are not master Yarid and you don't have his key so you stay out!"
+A deep voice says, "You are not master Yarid and you don't have his key so you stay out!"
 endmsg
 x 28
 y 42
@@ -10472,7 +10472,7 @@ y 25
 end
 arch button_small
 msg
-Clic
+Click.
 endmsg
 x 33
 y 25
@@ -13684,7 +13684,7 @@ slaying 77
 end
 arch book_read
 msg
-"I know that I have to put food on the sacrifice table...however 10 portions do not seem to be enough and I did not find more!
+"I know that I have to put food on the sacrifice table... however 10 portions do not seem to be enough and I did not find more!
 endmsg
 end
 end
