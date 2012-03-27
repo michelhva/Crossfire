@@ -8,7 +8,7 @@ height 15
 enter_y 7
 msg
 Created:  2001-10-17
-Modified: 2012-01-12 Rick Tanner
+Modified: 2012-03-27 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -3003,12 +3003,12 @@ end
 arch sign
 name Instructions
 msg
-Step into a box and stand next to the teleporter. Summon a character there and they will be teleported into a cell and will not be able to leave until their time has expired.
+Step into a box and stand next to the teleporter.  Summon a character there and they will be teleported into a cell and will not be able to leave until their time has expired.
 Alternatively one may use the 'arrest' command to give a player a 15 minute jail sentence without having to be in the jail yourself.
 Times are actual playing time, so a character has to be logged in in order for their time to expire.
 Saying 'sorry' in a cell will deliver bread and water to a character.
-Teleporters are damned, so the characters save bed will be changed to the center of their cell. They will not be able to suicide and get out early.
-The Warden's key will allow you to open cell doors when you are not flying (dm). Prisoners will not be able to leave even if the door is open.
+Teleporters are damned, so the characters save bed will be changed to the center of their cell.  They will not be able to suicide and get out early.
+The Warden's key will allow you to open cell doors when you are not flying (dm).  Prisoners will not be able to leave even if the door is open.
 endmsg
 x 14
 y 7
