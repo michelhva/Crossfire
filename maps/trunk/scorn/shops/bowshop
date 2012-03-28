@@ -12,7 +12,7 @@ enter_x 11
 enter_y 16
 msg
 Created:  1993-10-15 Tero Haatanen (Tero.Haatanen@tel.vtt.fi)
-Modified: 2012-01-16 Rick Tanner
+Modified: 2012-03-28 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1133,7 +1133,7 @@ I buy almost everything that people are selling to me.
 @match shop|help
 This shop is specialized to missile weapons such as bows and crossbows.  I have two rooms of them.  The first room contains miscellaneous items that other adventurers have sold to me.
 @match *
-Welcome my little shop. How can I help you?
+Welcome my little shop.  How can I help you?
 endmsg
 face elf.131
 hp 100
