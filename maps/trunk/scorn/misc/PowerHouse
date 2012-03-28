@@ -12,7 +12,7 @@ enter_x 40
 enter_y 21
 msg
 Created:  1999-04-02
-Modified: 2012-01-01 Rick Tanner
+Modified: 2012-03-27 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -3319,7 +3319,7 @@ x 18
 y 16
 end
 arch goldfloor
-name drop 400 gold coins for 400 mana
+name Drop 400 gold coins for 400 Spell Points.
 food 400
 x 18
 y 16
@@ -3346,7 +3346,7 @@ x 18
 y 20
 end
 arch goldfloor
-name drop 400 gold coins for 400 mana
+name Drop 400 gold coins for 400 Spell Points.
 food 400
 x 18
 y 20
@@ -3679,7 +3679,7 @@ x 20
 y 16
 end
 arch goldfloor
-name drop 400 gold coins for 400 mana
+name Drop 400 gold coins for 400 Spell Points.
 food 400
 x 20
 y 16
@@ -3702,7 +3702,7 @@ x 20
 y 20
 end
 arch goldfloor
-name drop 400 gold coins for 400 mana
+name Drop 400 gold coins for 400 Spell Points.
 food 400
 x 20
 y 20
@@ -4015,7 +4015,7 @@ x 22
 y 16
 end
 arch goldfloor
-name drop 300 gold coins for 300 mana
+name Drop 300 gold coins for 300 Spell Points.
 food 300
 x 22
 y 16
@@ -4042,7 +4042,7 @@ x 22
 y 20
 end
 arch goldfloor
-name drop 300 gold coins for 300 mana
+name Drop 300 gold coins for 300 Spell Points.
 food 300
 x 22
 y 20
@@ -4371,7 +4371,7 @@ x 24
 y 16
 end
 arch goldfloor
-name drop 300 gold coins for 300 mana
+name Drop 300 gold coins for 300 Spell Points.
 food 300
 x 24
 y 16
@@ -4394,7 +4394,7 @@ x 24
 y 20
 end
 arch goldfloor
-name drop 300 gold coins for 300 mana
+name Drop 300 gold coins for 300 Spell Spoints.
 food 300
 x 24
 y 20
@@ -4731,7 +4731,7 @@ x 26
 y 16
 end
 arch goldfloor
-name drop 200 gold coins for 200 mana
+name Drop 200 gold coins for 200 Spell Points.
 food 200
 x 26
 y 16
@@ -4754,7 +4754,7 @@ x 26
 y 20
 end
 arch goldfloor
-name drop 200 gold coins for 200 mana
+name Drop 200 gold coins for 200 Spell Points.
 food 200
 x 26
 y 20
@@ -5067,7 +5067,7 @@ x 28
 y 16
 end
 arch goldfloor
-name drop 150 gold coins for 150 mana
+name Drop 150 gold coins for 150 Spell Points.
 food 150
 x 28
 y 16
@@ -5094,7 +5094,7 @@ x 28
 y 20
 end
 arch goldfloor
-name drop 200 gold coins for 200 mana
+name Drop 200 gold coins for 200 Spell Points.
 food 200
 x 28
 y 20
@@ -5407,7 +5407,7 @@ x 30
 y 5
 end
 arch goldfloor
-name Mana in bulk.  Up to 2000 mana, for 1500 gold.
+name Spell Points in bulk.  Up to 2000 Spell Points, for 1500 gold.
 food 1500
 x 30
 y 5
@@ -5550,7 +5550,7 @@ x 30
 y 20
 end
 arch goldfloor
-name drop 200 gold coins for 200 mana
+name Drop 200 gold coins for 200 Spell Points.
 food 200
 x 30
 y 20
@@ -5875,7 +5875,7 @@ x 32
 y 5
 end
 arch goldfloor
-name Mana in bulk.  2000 gold for 3000 mana.
+name Spell Points in bulk.  2000 gold for 3000 Spell Points.
 food 2000
 x 32
 y 5
@@ -5898,7 +5898,7 @@ x 32
 y 8
 end
 arch goldfloor
-name 500 gold for all the mana you can hold..
+name 500 gold for all the Spell Points you can hold..
 food 500
 x 32
 y 8
@@ -5917,7 +5917,7 @@ x 32
 y 10
 end
 arch goldfloor
-name drop 500 gold coins for all-you-can-take mana
+name Drop 500 gold coins for all-you-can-take Spell Points.
 food 500
 x 32
 y 10
@@ -5936,7 +5936,7 @@ x 32
 y 12
 end
 arch goldfloor
-name drop 500 gold coins for all-you-can-take mana
+name Drop 500 gold coins for all-you-can-take Spell Points.
 food 500
 x 32
 y 12
@@ -5955,7 +5955,7 @@ x 32
 y 14
 end
 arch goldfloor
-name drop 500 gold coins for all-you-can-take mana
+name Drop 500 gold coins for all-you-can-take Spell Points.
 food 500
 x 32
 y 14
@@ -5994,7 +5994,7 @@ x 32
 y 20
 end
 arch goldfloor
-name drop 200 gold coins for 200 mana
+name Drop 200 gold coins for 200 Spell Points.
 food 200
 x 32
 y 20
@@ -6263,7 +6263,7 @@ x 34
 y 5
 end
 arch goldfloor
-name Super volume discount!  3000 gold for 5000 mana.
+name Super volume discount!  3000 gold for 5000 Spell Points.
 food 3000
 x 34
 y 5
@@ -6412,7 +6412,7 @@ x 34
 y 20
 end
 arch goldfloor
-name drop 150 gold coins for 150 mana
+name Drop 150 gold coins for 150 Spell Points.
 food 150
 x 34
 y 20
@@ -6561,7 +6561,7 @@ y 11
 end
 arch sign
 msg
-The Glowing Crystal exhibited here is one of the rare gemstones that are able to store mana.  Touching it when your mana is at maximum capacity will transfer half your mana into it.  Touching it when you are below maximum capacity will retrieve any stored mana, up to your capacity.  This particular crystal can only store up to 200 mana.  Crystals with capacities for 1000 mana and beyond are known to exist; and are very much sought after by all spellcasters.
+The Glowing Crystal exhibited here is one of the rare gemstones that are able to store Spell Points.  Touching it when your Spell Points is at maximum capacity will transfer half your Spell Points into it.  Touching it when you are below maximum capacity will retrieve any stored Spell Points, up to your capacity.  This particular crystal can only store up to 200 Spell Points.  Crystals with capacities for 1000 Spell Points and beyond are known to exist; and are very much sought after by all spellcasters.
 endmsg
 x 35
 y 11
@@ -6749,7 +6749,7 @@ x 36
 y 5
 end
 arch goldfloor
-name Awesome blockbuster deal!  10000 mana for 5000 gold.
+name Awesome blockbuster deal!  10000 Spell Points for 5000 gold.
 food 5000
 x 36
 y 5
@@ -6832,7 +6832,7 @@ arch wizard
 name master of transferrence
 msg
 @match *
-Welcome to the House of Power! Here, you will find an abundant supply of fresh mana at a fee.
+Welcome to the House of Power! Here, you will find an abundant supply of fresh Spell Points at a fee.
 endmsg
 face wizard.151
 hp 100
@@ -6871,7 +6871,7 @@ x 36
 y 16
 end
 arch altar
-name restore full mana (550 gold)
+name restore full Spell Points (550 gold)
 slaying money
 food 5500
 x 36
@@ -6896,7 +6896,7 @@ x 36
 y 20
 end
 arch goldfloor
-name drop 100 gold coins for 100 mana
+name Drop 100 gold coins for 100 Spell Points.
 food 100
 x 36
 y 20
@@ -7043,7 +7043,7 @@ arch tome
 name exposition
 title of magical powers
 msg
-There are two factors controlling one's magical powers: mana capacity, and mana regeneration rate.  Mana is the force that drives magical spells; mana capacity is how much mana one can naturally have. Mana regeneration rate is how fast this mana is replenished.  Mana capacity is controlled mainly by one's power (Pow) and level of magic experience.  One's intelligence (Int) also affects this capacity, to a lesser degree.  Some magical equipment grant Pow bonuses, which will increase this capacity while worn.  Improvement potions may also permanently increase one's mana capacity.  There are also very rare gemstones that have capacity to store mana.  Mana stored in these crystals can be retrieved at a single touch.  High-level wizards use these stones to increase the total amount of mana they have at their disposal.
+There are two factors controlling one's magical powers: Spell Point capacity, and Spell Point regeneration rate.  Spell Points is the force that drives magical spells; Spell Point capacity is how much Spell Points one can naturally have.  Spell Point regeneration rate is how fast the Spell Points are replenished.  Spell Point capacity is controlled mainly by one's power (Pow) and level of magic experience.  One's intelligence (Int) also affects this capacity, to a lesser degree.  Some magical equipment grant Pow bonuses, which will increase this capacity while worn.  Improvement potions may also permanently increase one's Spell Point capacity.  There are also very rare gemstones that have capacity to store Spell Points.  Spell Points stored in these crystals can be retrieved at a single touch.  High-level wizards use these stones to increase the total amount of Spell Points they have at their disposal.
 endmsg
 x 37
 y 10
@@ -7061,12 +7061,12 @@ x 37
 y 11
 end
 arch tome
-title of Mana Regeneration
+title of Spell Points Regeneration
 msg
-Mana regeneration rate controls how fast one's mana is replenished.  Some races, such as elves, have an innately fast mana regeneration.  Spell-casting classes also regenerate mana at a faster rate.  Besides this, the equipment one uses may also affect mana regeneration rate:
-o  Some magical rings or amulets are resonant to the patterns of the aether, and cause mana to flow into the wearer faster.  These items show a (magic+N) when identified.
-o  Although some armour specially crafted for mages may increase mana regeneration, in general most heavy armour will impede the flow of mana into the wearer and slow down mana regeneration rates.
-o  Special weapons crafted for mages may also have mana regeneration bonuses.
+Spell Point regeneration rate controls how fast one's Spell Points are replenished.  Some races, such as elves, have an innately fast spell point regeneration.  Spell-casting classes also regenerate Spell Points at a faster rate.  Besides this, the equipment one uses may also affect spell point regeneration rate:
+o  Some magical rings or amulets are resonant to the patterns of the aether, and cause Spell Points to flow into the wearer faster.  These items show a (magic+N) when identified.
+o  Although some armour specially crafted for mages may increase spell point regeneration, in general most heavy armour will impede the flow of Spell Points into the wearer and slow down Spell Point regeneration rates.
+o  Special weapons crafted for mages may also have Spell Point regeneration bonuses.
 endmsg
 x 37
 y 11
@@ -7250,7 +7250,7 @@ x 38
 y 5
 end
 arch goldfloor
-name Super volume discount!  5000 mana for 3000 gold.
+name Super volume discount!  5000 Spell Points for 3000 gold.
 food 3000
 x 38
 y 5
@@ -7639,7 +7639,7 @@ x 40
 y 5
 end
 arch goldfloor
-name Mana in bulk. 3000 mana for 2000 gold.
+name Spell Points in bulk.  3000 Spell Points for 2000 gold.
 food 2000
 x 40
 y 5
@@ -7662,7 +7662,7 @@ x 40
 y 8
 end
 arch goldfloor
-name 500 gold for all the mana you can hold.
+name 500 gold for all the Spell Points you can hold.
 food 500
 x 40
 y 8
@@ -7681,7 +7681,7 @@ x 40
 y 10
 end
 arch goldfloor
-name drop 500 gold coins for all-you-can-take mana
+name Drop 500 gold coins for all-you-can-take Spell Points.
 food 500
 x 40
 y 10
@@ -7700,7 +7700,7 @@ x 40
 y 12
 end
 arch goldfloor
-name drop 500 gold coins for all-you-can-take mana
+name Drop 500 gold coins for all-you-can-take Spell Points.
 food 500
 x 40
 y 12
@@ -7719,7 +7719,7 @@ x 40
 y 14
 end
 arch goldfloor
-name drop 500 gold coins for all-you-can-take mana
+name Drop 500 gold coins for all-you-can-take Spell Points.
 food 500
 x 40
 y 14
@@ -8090,7 +8090,7 @@ x 42
 y 5
 end
 arch goldfloor
-name Mana in bulk.  1500 gold for 2000 mana.
+name Spell Points in bulk.  1500 gold for 2000 Spell Points.
 food 1500
 x 42
 y 5
