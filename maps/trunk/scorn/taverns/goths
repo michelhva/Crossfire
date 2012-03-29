@@ -9,7 +9,7 @@ enter_x 5
 enter_y 32
 msg
 Created:  1993-10-15
-Modified: 2012-01-17 Rick Tanner
+Modified: 2012-03-28 Rick Tanner
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -806,8 +806,7 @@ You suddenly feel you weren't worthy enough to ask...
 Yes?  What do you want?
 All you adventurers are all alike.  Greedy as hell.  You probably want me to tell you how to get your hands on some powerful magic, don't you?  Well, that can be hard and dangerous.  Got a deathwish?  Eh?
 @match yes|yup|aye
-Well, maybe your greed will keep you alive, then.  I've known some people who have dragged their bones out of the grave for greed.  Smelly, and grumpy, every one!  Never underestimate the power of greed!  Well, I know of two places where you can get your hands on a powerful item.  One I know for sure:  a powerful magical Sword.  The other I'm not sure of, but it's inside a mountain, I bet.  
-Which do you want to hear about?
+Well, maybe your greed will keep you alive, then.  I've known some people who have dragged their bones out of the grave for greed.  Smelly, and grumpy, every one!  Never underestimate the power of greed!  Well, I know of two places where you can get your hands on a powerful item.  One I know for sure:  a powerful magical Sword.  The other I'm not sure of, but it's inside a mountain, I bet.  Which do you want to hear about?
 endmsg
 face wizard_blue.131
 Str 20
@@ -1321,7 +1320,7 @@ end
 arch man
 msg
 @match *
-Howdy
+Howdy.
 endmsg
 x 5
 y 29
@@ -2195,7 +2194,7 @@ end
 end
 arch magic_mouth
 msg
-You see some graffiti on the wall.  It says : The Gate Password is "Chain"
+You see some graffiti on the wall.  It says: The Gate Password is "Chain."
 endmsg
 x 10
 y 21
@@ -7149,7 +7148,7 @@ Awiergan Cynricson at your service!
 @match hello|hi
 Hi!  I'm studying Summoning at the Tower of Demonology and Summoning up north.  Are you interested in studying Summoning also?
 @match yes
-Well, you'll need the entrance fees.  They're pretty extortionate.  Ask about "admissions", they'll let you know how much it is these days.
+Well, you'll need the entrance fees.  They're pretty extortionate.  Ask about "admissions," they'll let you know how much it is these days.
 @match stories
 Well, it's rumored that each of the Summoning Masters has powerful items which are the trappings of their office.  Four of them together guard still greater treasures.  The Summoning Masters are rather powerful.  I bet it'd take someone at least 15th rank in their guilds to kill one.  If you want to go try your luck, the Tower is North of Santo Dominion, by the Sea. 
 @match job
@@ -7258,7 +7257,7 @@ end
 arch guard
 msg
 @match *
-Closed GAME, move on
+Closed GAME, move on.
 endmsg
 x 31
 y 22
