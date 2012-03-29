@@ -7,7 +7,7 @@ height 40
 enter_x 4
 enter_y 1
 msg
-Modified: 2011-09-12 Rick Tanner
+Modified: 2012-03-29 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -280,15 +280,13 @@ arch man
 name Chris
 msg
 @match hello|hi
-Hello. Watch your step.
+Hello.  Watch your step.
 @match name|job
-My name is Chris. I'm pest control.
+My name is Chris.  I'm pest control.
 @match step
-Yes. We have a bunch of pests down here.
+Yes.  We have a bunch of pests down here.
 @match pest
-Goth's has been over run with pests.  I don't
-know where they are all coming from.
-
+Goth's has been over run with pests.  I don't know where they are all coming from.
 endmsg
 x 1
 y 1
