@@ -8,7 +8,7 @@ enter_x 13
 enter_y 3
 msg
 Created:  1996-11-27 Mark Wedel (mark@pyramid.com)
-Modified: 2012-01-16 Rick Tanner
+Modified: 2012-03-28 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -1489,9 +1489,7 @@ end
 arch sign
 name README
 msg
-This is an experimental map, and is only meant to be used with unique item codes.
-
-Idea is you can buy keys to the various rooms, in which you can store stuff.
+With this map you can buy keys to the various rooms, in which you can store stuff.
 
 The stuff you drop off will stick around indefinitely (will not be reset with map resets).  This gives a place to permanently store stuff.
 endmsg
