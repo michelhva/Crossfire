@@ -10,7 +10,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  2004-07-01 Gene Alexander
-Modified: 2012-01-16 Rick Tanner
+Modified: 2012-03-28 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1330,7 +1330,7 @@ end
 arch magic_ear
 msg
 @match plants
-Yeah! I like plants. So what? I also like smashing the heads of bothersome pipsqueaks like you.  Quit bothering me.
+Yeah! I like plants.  So what? I also like smashing the heads of bothersome pipsqueaks like you.  Quit bothering me.
 @match *
 Are you blind? Can you not see I am busy!  Go talk to Oorgh on the second floor! I'm sure that lazy troll has nothing better to do.
 endmsg
