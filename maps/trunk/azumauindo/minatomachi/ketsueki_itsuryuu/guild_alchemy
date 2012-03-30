@@ -12,7 +12,7 @@ Creator: CF Java Map Editor
 Date:    4/8/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-10-30 Rick Tanner
+Modified: 2012-03-30 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -470,8 +470,7 @@ unique 1
 end
 arch magic_mouth
 msg
-Be sure to pick up after yourself,
-otherwise the cleaning staff will.
+Be sure to pick up after yourself, otherwise the cleaning staff will.
 endmsg
 x 4
 y 7
@@ -694,7 +693,7 @@ arch altar_trigger
 name New Cauldron
 slaying Cauldron
 msg
-Removing your old cauldron. Please wait.
+Removing your old cauldron.  Please wait.
 endmsg
 exp 60
 food 1
