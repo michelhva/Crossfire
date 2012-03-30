@@ -13,7 +13,7 @@ Editor: CrossfireEditor
 Date:    3/19/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-10-30 Rick Tanner
+Modified: 2012-03-30 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -311,8 +311,7 @@ y 3
 end
 arch magic_mouth
 msg
-Be sure to pick up after yourself,
-otherwise the cleaning staff will.
+Be sure to pick up after yourself, otherwise the cleaning staff will.
 endmsg
 x 3
 y 4
@@ -573,7 +572,7 @@ arch altar_trigger
 name New Jeweler's Workbench
 slaying JewelersBench
 msg
-Removing your old cauldron. Please wait.
+Removing your old workbench.  Please wait.
 endmsg
 exp 60
 food 1
