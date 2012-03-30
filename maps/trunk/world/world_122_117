@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-03-15 Rick Tanner
+Modified: 2012-03-30 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -872,7 +872,7 @@ arch grass
 x 2
 y 16
 end
-arch westcwall_2_1_2
+arch westcwall_2_2_3
 x 2
 y 16
 end
@@ -880,6 +880,10 @@ arch steppe
 x 2
 y 17
 elevation 3750
+end
+arch westcwall_2_2_1
+x 2
+y 17
 end
 arch hills_rocky
 x 2
@@ -1248,28 +1252,37 @@ arch grass
 x 3
 y 15
 end
+arch dungeon_magic
+x 3
+y 16
+end
+arch cobblestones2
+x 3
+y 16
+end
 arch grass
 x 3
-y 16
+y 17
 end
-arch westcwall_2_1_2
-x 3
-y 16
-end
-arch hills_rocky
+arch westcwall_2_2_3
 x 3
 y 17
-elevation 3173
 end
-arch steppe
+arch grass
 x 3
 y 18
-elevation 3347
 end
-arch hills
+arch westcwall_2_1_1
+x 3
+y 18
+end
+arch grass
 x 3
 y 19
-elevation 3266
+end
+arch westcwall_2_2_1
+x 3
+y 19
 end
 arch steppe
 x 3
@@ -1589,28 +1602,37 @@ arch cobblestones2
 x 4
 y 15
 end
-arch grass
+arch dungeon_magic
 x 4
 y 16
+end
+arch cobblestones2
+x 4
+y 16
+end
+arch dungeon_magic
+x 4
+y 17
+end
+arch cobblestones2
+x 4
+y 17
+end
+arch dungeon_magic
+x 4
+y 18
+end
+arch cobblestones2
+x 4
+y 18
+end
+arch grass
+x 4
+y 19
 end
 arch westcwall_2_1_2
 x 4
-y 16
-end
-arch steppe
-x 4
-y 17
-elevation 3318
-end
-arch hills
-x 4
-y 18
-elevation 2705
-end
-arch woods_2
-x 4
 y 19
-elevation 1011
 end
 arch brush
 x 4
@@ -1966,48 +1988,57 @@ arch dungeon_magic
 x 5
 y 15
 end
-arch grass
+arch cobblestones2
 x 5
 y 15
 end
+arch dungeon_magic
+x 5
+y 16
+end
 arch grass
 x 5
 y 16
 end
-arch westcwall_2_1_2
+arch store_magic_west
 x 5
 y 16
 end
-arch hills_rocky
+arch dungeon_magic
 x 5
 y 17
-elevation 3188
 end
-arch woods_2
+arch grass
+x 5
+y 17
+end
+arch dungeon_magic
 x 5
 y 18
-elevation 2046
 end
-arch brush
+arch cobblestones2
+x 5
+y 18
+end
+arch grass
 x 5
 y 19
-elevation 275
+end
+arch westcwall_2_1_2
+x 5
+y 19
 end
 arch brush
 x 5
 y 20
 elevation 169
 end
-arch river_sw-ne_u
-x 5
-y 20
-end
 arch desert
 x 5
 y 21
 elevation 639
 end
-arch river_sw-ne
+arch river_sw-e
 x 5
 y 21
 end
@@ -2324,52 +2355,52 @@ arch dungeon_magic
 x 6
 y 15
 end
-arch grass
+arch cobblestones2
 x 6
 y 15
 end
+arch dungeon_magic
+x 6
+y 16
+end
 arch grass
 x 6
 y 16
 end
-arch westcwall_2_1_2
-x 6
-y 16
-end
-arch hills
+arch dungeon_magic
 x 6
 y 17
-elevation 2290
 end
-arch hills
+arch grass
+x 6
+y 17
+end
+arch dungeon_magic
 x 6
 y 18
-elevation 2219
 end
-arch woods_2
+arch cobblestones2
+x 6
+y 18
+end
+arch grass
 x 6
 y 19
-elevation 1309
 end
-arch river_sw-ne_u
+arch westcwall_2_1_2
 x 6
 y 19
 end
 arch brush
 x 6
 y 20
-elevation 479
+elevation 169
 end
-arch river_sw-ne
-x 6
-y 20
-end
-arch jungle_1
+arch brush
 x 6
 y 21
-elevation 2020
 end
-arch river_sw-ne_l
+arch river_w-e
 x 6
 y 21
 end
@@ -2643,50 +2674,54 @@ arch cobblestones2
 x 7
 y 15
 end
-arch grass
+arch dungeon_magic
 x 7
 y 16
 end
-arch westcwall_2_1_2
+arch cobblestones2
 x 7
 y 16
 end
-arch hills
+arch dungeon_magic
 x 7
 y 17
-elevation 2197
 end
-arch hills
+arch cobblestones2
+x 7
+y 17
+end
+arch dungeon_magic
 x 7
 y 18
-elevation 2048
 end
-arch river_sw-ne_u
+arch cobblestones2
 x 7
 y 18
 end
-arch woods_2
+arch grass
 x 7
 y 19
 elevation 1766
 end
-arch river_sw-ne
+arch westcwall_2_1_2
 x 7
 y 19
 end
 arch brush
 x 7
 y 20
-elevation 665
 end
-arch river_sw-ne_l
+arch river_sw-ne_u
 x 7
 y 20
 end
-arch steppe
+arch brush
 x 7
 y 21
-elevation 3025
+end
+arch river_ne-w
+x 7
+y 21
 end
 arch steppe
 x 7
@@ -3006,6 +3041,10 @@ arch river_n-s
 x 8
 y 15
 end
+arch dungeon_magic
+x 8
+y 16
+end
 arch grass
 x 8
 y 16
@@ -3014,9 +3053,9 @@ arch river_n-s
 x 8
 y 16
 end
-arch westcityport_a
+arch dungeon_magic
 x 8
-y 16
+y 17
 end
 arch brush
 x 8
@@ -3026,21 +3065,29 @@ arch river_n-s
 x 8
 y 17
 end
-arch woods_2
+arch dungeon_magic
 x 8
 y 18
 elevation 1762
 end
-arch river_sw-n
+arch cobblestones2
 x 8
 y 18
 end
-arch jungle_1
+arch river_bridge_we
+x 8
+y 18
+end
+arch grass
 x 8
 y 19
 elevation 1639
 end
-arch river_sw-ne_l
+arch river_n-s
+x 8
+y 19
+end
+arch westcityport_a
 x 8
 y 19
 end
@@ -3049,10 +3096,17 @@ x 8
 y 20
 elevation 2422
 end
-arch steppe
+arch river_sw-n
+x 8
+y 20
+end
+arch brush
 x 8
 y 21
-elevation 3560
+end
+arch river_sw-ne_l
+x 8
+y 21
 end
 arch steppe
 x 8
@@ -3387,28 +3441,41 @@ arch brush
 x 9
 y 15
 end
+arch dungeon_magic
+x 9
+y 16
+end
 arch grass
 x 9
 y 16
 end
-arch westcwall_2_1_2
-x 9
-y 16
-end
-arch woods_2
+arch dungeon_magic
 x 9
 y 17
-elevation 1943
 end
-arch jungle_1
+arch grass
+x 9
+y 17
+end
+arch lamppost
+x 9
+y 17
+end
+arch dungeon_magic
 x 9
 y 18
-elevation 1495
 end
-arch hills_rocky
+arch cobblestones2
+x 9
+y 18
+end
+arch grass
 x 9
 y 19
-elevation 1743
+end
+arch westcwall_2_1_2
+x 9
+y 19
 end
 arch woods_2
 x 9
@@ -3713,29 +3780,29 @@ arch cobblestones2
 x 10
 y 15
 end
-arch grass
+arch dungeon_magic
 x 10
 y 16
 end
-arch westcwall_2_1_2
+arch cobblestones2
 x 10
 y 16
 end
-arch grass_only
+arch dungeon_magic
 x 10
 y 17
 elevation 2691
 end
-arch evergreens2
+arch cobblestones2
 x 10
 y 17
 end
-arch grass_only
+arch dungeon_magic
 x 10
 y 18
 elevation 2136
 end
-arch evergreens2
+arch cobblestones2
 x 10
 y 18
 end
@@ -3744,7 +3811,7 @@ x 10
 y 19
 elevation 2112
 end
-arch evergreens2
+arch westcwall_2_1_2
 x 10
 y 19
 end
@@ -4060,32 +4127,46 @@ arch cobblestones2
 x 11
 y 15
 end
+arch dungeon_magic
+x 11
+y 16
+end
 arch grass
 x 11
 y 16
 end
-arch westcwall_2_1_2
+arch church
+name Temple of Healing
+slaying ../navar_city/misc/templeofhealing
+hp 11
+sp 34
 x 11
 y 16
 end
-arch woods
+arch dungeon_magic
 x 11
 y 17
-elevation 2596
 end
-arch grass_only
+arch grass
+x 11
+y 17
+end
+arch dungeon_magic
 x 11
 y 18
 elevation 1298
 end
-arch evergreens2
+arch cobblestones2
 x 11
 y 18
 end
-arch woods_3
+arch grass
 x 11
 y 19
-elevation 1939
+end
+arch westcwall_2_1_2
+x 11
+y 19
 end
 arch woods_2
 x 11
@@ -4426,28 +4507,37 @@ arch cobblestones2
 x 12
 y 15
 end
+arch dungeon_magic
+x 12
+y 16
+end
 arch grass
 x 12
 y 16
+end
+arch dungeon_magic
+x 12
+y 17
+end
+arch grass
+x 12
+y 17
+end
+arch dungeon_magic
+x 12
+y 18
+end
+arch cobblestones2
+x 12
+y 18
+end
+arch grass
+x 12
+y 19
 end
 arch westcwall_2_1_2
 x 12
-y 16
-end
-arch jungle_1
-x 12
-y 17
-elevation 2141
-end
-arch grass
-x 12
-y 18
-elevation 46
-end
-arch jungle_1
-x 12
 y 19
-elevation 1775
 end
 arch jungle_1
 x 12
@@ -4755,28 +4845,39 @@ arch cobblestones2
 x 13
 y 15
 end
-arch grass
+arch dungeon_magic
 x 13
 y 16
 end
-arch westcwall_2_1_2
+arch cobblestones2
 x 13
 y 16
 end
-arch jungle_1
+arch dungeon_magic
 x 13
 y 17
-elevation 1766
 end
-arch woods_2
+arch cobblestones2
+x 13
+y 17
+end
+arch dungeon_magic
+x 13
+y 18
+end
+arch cobblestones2
 x 13
 y 18
 elevation 1212
 end
-arch woods
+arch grass
 x 13
 y 19
 elevation 1281
+end
+arch westcwall_2_1_2
+x 13
+y 19
 end
 arch jungle_1
 x 13
@@ -5075,28 +5176,40 @@ arch cobblestones2
 x 14
 y 15
 end
+arch dungeon_magic
+x 14
+y 16
+end
 arch grass
 x 14
 y 16
 end
-arch westcwall_2_1_2
-x 14
-y 16
-end
-arch desert
+arch grass
 x 14
 y 17
 elevation 253
 end
-arch desert
+arch westcwall_2_2_2
+x 14
+y 17
+end
+arch grass
 x 14
 y 18
 elevation 435
 end
-arch desert
+arch westcwall_2_1_1
+x 14
+y 18
+end
+arch grass
 x 14
 y 19
 elevation 846
+end
+arch westcwall_2_2_4
+x 14
+y 19
 end
 arch desert
 x 14
@@ -5393,7 +5506,7 @@ arch grass
 x 15
 y 16
 end
-arch westcwall_2_1_2
+arch westcwall_2_2_2
 x 15
 y 16
 end
@@ -5402,7 +5515,7 @@ x 15
 y 17
 elevation 2147
 end
-arch evergreens2
+arch westcwall_2_2_4
 x 15
 y 17
 end
@@ -5760,10 +5873,9 @@ arch westcwall_2_1_2
 x 16
 y 16
 end
-arch hills
+arch grass
 x 16
 y 17
-elevation 2931
 end
 arch grass_only
 x 16
@@ -6095,7 +6207,7 @@ arch westcwall_2_1_2
 x 17
 y 16
 end
-arch hills
+arch grass
 x 17
 y 17
 elevation 2535
