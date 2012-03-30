@@ -13,7 +13,7 @@ Creator: Avion
 Date:    6/14/2003
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-12-22 Rick Tanner
+Modified: 2012-03-30 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -422,8 +422,7 @@ name Kennel Token
 name_pl Kennel Tokens
 slaying DreamingSage_Kennel_Token
 msg
-The holder of this card is allowed free
-access into and out of the Kennel
+The holder of this card is allowed free access into and out of the Kennel.
 endmsg
 face diploma.111
 x 2
@@ -454,8 +453,7 @@ name Alchemy Token
 name_pl Alchemy Tokens
 slaying DreamingSage_Alch_Token
 msg
-The holder of this card is allowed free
-access into and out of the Alchemy Room.
+The holder of this card is allowed free access into and out of the Alchemy Room.
 endmsg
 face diploma.111
 x 2
@@ -905,8 +903,7 @@ name Kennel Token
 name_pl Kennel Tokens
 slaying DreamingSage_Kennel_Token
 msg
-The holder of this card is allowed free
-access into and out of the Kennel
+The holder of this card is allowed free access into and out of the Kennel.
 endmsg
 face diploma.111
 x 5
@@ -951,8 +948,7 @@ name Alchemy Token
 name_pl Alchemy Tokens
 slaying DreamingSage_Alch_Token
 msg
-The holder of this card is allowed free
-access into and out of the Alchemy Room.
+The holder of this card is allowed free access into and out of the Alchemy Room.
 endmsg
 face diploma.111
 x 5
@@ -1281,8 +1277,7 @@ end
 arch sign
 name GuildMaster Message Board
 msg
-I am a talking board, please say something to me.
-If you don't know what to say, say help.
+I am a talking board, please say something to me.  If you don't know what to say, say help.
 endmsg
 x 8
 y 1
@@ -1462,8 +1457,7 @@ name Kennel Token
 name_pl Kennel Tokens
 slaying DreamingSage_Kennel_Token
 msg
-The holder of this card is allowed free
-access into and out of the Kennel
+The holder of this card is allowed free access into and out of the Kennel.
 endmsg
 face diploma.111
 x 8
@@ -1490,8 +1484,7 @@ name Alchemy Token
 name_pl Alchemy Tokens
 slaying DreamingSage_Alch_Token
 msg
-The holder of this card is allowed free
-access into and out of the Alchemy Room.
+The holder of this card is allowed free access into and out of the Alchemy Room.
 endmsg
 face diploma.111
 x 8
@@ -1518,8 +1511,7 @@ name Garden Token
 name_pl Garden Tokens
 slaying DreamingSage_Gard_Token
 msg
-The holder of this card is allowed free
-access into and out of the Garden.
+The holder of this card is allowed free access into and out of the Garden.
 endmsg
 face diploma.111
 x 8
@@ -1982,8 +1974,7 @@ name Kennel Token
 name_pl Kennel Tokens
 slaying DreamingSage_Kennel_Token
 msg
-The holder of this card is allowed free
-access into and out of the Kennel
+The holder of this card is allowed free access into and out of the Kennel.
 endmsg
 face diploma.111
 x 11
@@ -2011,8 +2002,7 @@ name Alchemy Token
 name_pl Alchemy Tokens
 slaying DreamingSage_Alch_Token
 msg
-The holder of this card is allowed free
-access into and out of the Alchemy Room.
+The holder of this card is allowed free access into and out of the Alchemy Room.
 endmsg
 face diploma.111
 x 11
@@ -2035,8 +2025,7 @@ name Garden Token
 name_pl Garden Tokens
 slaying DreamingSage_Gard_Token
 msg
-The holder of this card is allowed free
-access into and out of the Garden.
+The holder of this card is allowed free access into and out of the Garden.
 endmsg
 face diploma.111
 x 11
@@ -2572,8 +2561,7 @@ name Garden Token
 name_pl Garden Tokens
 slaying DreamingSage_Gard_Token
 msg
-The holder of this card is allowed free
-access into and out of the Garden.
+The holder of this card is allowed free access into and out of the Garden.
 endmsg
 face diploma.111
 x 14
@@ -2611,7 +2599,7 @@ arch altar_trigger
 name Kennel Pass 20 Gold Coins
 slaying money
 msg
-You hear the sound of stone grinding on stone
+You hear the sound of stone grinding on stone.
 endmsg
 food 200
 x 15
@@ -2637,7 +2625,7 @@ arch altar_trigger
 name Tannery Pass 20 Gold Coins
 slaying money
 msg
-You hear the sound of stone grinding on stone
+You hear the sound of stone grinding on stone.
 endmsg
 food 200
 x 15
@@ -2663,7 +2651,7 @@ arch altar_trigger
 name Toolshed Pass 20 Gold Coins
 slaying money
 msg
-You hear the sound of stone grinding on stone
+You hear the sound of stone grinding on stone.
 endmsg
 food 200
 x 15
@@ -2689,7 +2677,7 @@ arch altar_trigger
 name Alchemy Pass 20 Gold Coins
 slaying money
 msg
-You hear the sound of stone grinding on stone
+You hear the sound of stone grinding on stone.
 endmsg
 food 200
 x 15
@@ -2715,7 +2703,7 @@ arch altar_trigger
 name Garden Pass 20 Gold Coins
 slaying money
 msg
-You hear the sound of stone grinding on stone
+You hear the sound of stone grinding on stone.
 endmsg
 food 200
 x 15
@@ -2741,7 +2729,7 @@ arch altar_trigger
 name Thaumaturgy Pass 20 Gold Coins
 slaying money
 msg
-You hear the sound of stone grinding on stone
+You hear the sound of stone grinding on stone.
 endmsg
 food 200
 x 15
@@ -2767,7 +2755,7 @@ arch altar_trigger
 name Glowing Crystal Pass 20 Gold Coins
 slaying money
 msg
-You hear the sound of stone grinding on stone
+You hear the sound of stone grinding on stone.
 endmsg
 food 200
 x 15
@@ -2793,7 +2781,7 @@ arch altar_trigger
 name Jeweler's Pass 20 Gold Coins
 slaying money
 msg
-You hear the sound of stone grinding on stone
+You hear the sound of stone grinding on stone.
 endmsg
 food 200
 x 15
@@ -2854,8 +2842,7 @@ name Toolshed Token
 name_pl Toolshed Tokens
 slaying DreamingSage_Tool_Token
 msg
-The holder of this card is allowed free
-access into and out of the Tool Shed
+The holder of this card is allowed free access into and out of the Tool Shed.
 endmsg
 face diploma.111
 x 15
@@ -3094,8 +3081,7 @@ name Thaumaturgy Token
 name_pl Thaumaturgy Tokens
 slaying DreamingSage_Thau_Token
 msg
-The holder of this card is allowed free
-access into and out of the Thaumaturgy Room
+The holder of this card is allowed free access into and out of the Thaumaturgy Room.
 endmsg
 x 16
 y 26
@@ -3332,8 +3318,7 @@ name Garden Token
 name_pl Garden Tokens
 slaying DreamingSage_Gard_Token
 msg
-The holder of this card is allowed free
-access into and out of the Garden.
+The holder of this card is allowed free access into and out of the Garden.
 endmsg
 face diploma.111
 x 17
@@ -3367,8 +3352,7 @@ name Kennel Token
 name_pl Kennel Tokens
 slaying DreamingSage_Kennel_Token
 msg
-The holder of this card is allowed free
-access into and out of the Kennel
+The holder of this card is allowed free access into and out of the Kennel.
 endmsg
 face diploma.111
 x 18
@@ -3395,8 +3379,7 @@ name Tannery Token
 name_pl Tannery Tokens
 slaying DreamingSage_Tan_Token
 msg
-The holder of this card is allowed free
-access into and out of the Tannery
+The holder of this card is allowed free access into and out of the Tannery.
 endmsg
 face diploma.111
 x 18
@@ -3423,8 +3406,7 @@ name Toolshed Token
 name_pl Toolshed Tokens
 slaying DreamingSage_Tool_Token
 msg
-The holder of this card is allowed free
-access into and out of the Tool Shed
+The holder of this card is allowed free access into and out of the Tool Shed.
 endmsg
 face diploma.111
 x 18
@@ -3451,8 +3433,7 @@ name Alchemy Token
 name_pl Alchemy Tokens
 slaying DreamingSage_Alch_Token
 msg
-The holder of this card is allowed free
-access into and out of the Alchemy Room.
+The holder of this card is allowed free access into and out of the Alchemy Room.
 endmsg
 face diploma.111
 x 18
@@ -3479,8 +3460,7 @@ name Garden Token
 name_pl Garden Tokens
 slaying DreamingSage_Gard_Token
 msg
-The holder of this card is allowed free
-access into and out of the Garden.
+The holder of this card is allowed free access into and out of the Garden.
 endmsg
 face diploma.111
 x 18
@@ -3507,8 +3487,7 @@ name Thaumaturgy Token
 name_pl Thaumaturgy Tokens
 slaying DreamingSage_Thau_Token
 msg
-The holder of this card is allowed free
-access into and out of the Thaumaturgy Room
+The holder of this card is allowed free access into and out of the Thaumaturgy Room.
 endmsg
 x 18
 y 11
@@ -3534,8 +3513,7 @@ name Glowing Crystal Token
 name_pl Glowing Crystal Tokens
 slaying DreamingSage_GC_Token
 msg
-The holder of this card is allowed free
-access into and out of the Crystal Room
+The holder of this card is allowed free access into and out of the Crystal Room.
 endmsg
 face diploma.111
 x 18
@@ -3562,8 +3540,7 @@ name Jeweler Token
 name_pl Jeweler Tokens
 slaying DreamingSage_Jewe_Token
 msg
-The holder of this card is allowed free
-access into and out of the Jeweler's Workshop.
+The holder of this card is allowed free access into and out of the Jeweler's Workshop.
 endmsg
 face diploma.111
 x 18
@@ -3621,8 +3598,7 @@ name Toolshed Token
 name_pl Toolshed Tokens
 slaying DreamingSage_Tool_Token
 msg
-The holder of this card is allowed free
-access into and out of the Tool Shed
+The holder of this card is allowed free access into and out of the Tool Shed.
 endmsg
 face diploma.111
 x 18
@@ -3881,8 +3857,7 @@ name Thaumaturgy Token
 name_pl Thaumaturgy Tokens
 slaying DreamingSage_Thau_Token
 msg
-The holder of this card is allowed free
-access into and out of the Thaumaturgy Room
+The holder of this card is allowed free access into and out of the Thaumaturgy Room.
 endmsg
 x 19
 y 26
@@ -4327,8 +4302,7 @@ name Toolshed Token
 name_pl Toolshed Tokens
 slaying DreamingSage_Tool_Token
 msg
-The holder of this card is allowed free
-access into and out of the Tool Shed
+The holder of this card is allowed free access into and out of the Tool Shed.
 endmsg
 face diploma.111
 x 21
@@ -4485,8 +4459,7 @@ name Tannery Token
 name_pl Tannery Tokens
 slaying DreamingSage_Tan_Token
 msg
-The holder of this card is allowed free
-access into and out of the Tannery
+The holder of this card is allowed free access into and out of the Tannery.
 endmsg
 face diploma.111
 x 22
@@ -4517,8 +4490,7 @@ name Tannery Token
 name_pl Tannery Tokens
 slaying DreamingSage_Tan_Token
 msg
-The holder of this card is allowed free
-access into and out of the Tannery
+The holder of this card is allowed free access into and out of the Tannery.
 endmsg
 face diploma.111
 x 22
@@ -4553,8 +4525,7 @@ name Tannery Token
 name_pl Tannery Tokens
 slaying DreamingSage_Tan_Token
 msg
-The holder of this card is allowed free
-access into and out of the Tannery
+The holder of this card is allowed free access into and out of the Tannery.
 endmsg
 face diploma.111
 x 22
@@ -4598,8 +4569,7 @@ name Tannery Token
 name_pl Tannery Tokens
 slaying DreamingSage_Tan_Token
 msg
-The holder of this card is allowed free
-access into and out of the Tannery
+The holder of this card is allowed free access into and out of the Tannery.
 endmsg
 face diploma.111
 x 22
@@ -4778,8 +4748,7 @@ name Thaumaturgy Token
 name_pl Thaumaturgy Tokens
 slaying DreamingSage_Thau_Token
 msg
-The holder of this card is allowed free
-access into and out of the Thaumaturgy Room
+The holder of this card is allowed free access into and out of the Thaumaturgy Room.
 endmsg
 x 22
 y 26
@@ -5122,8 +5091,7 @@ name Jeweler Token
 name_pl Jeweler Tokens
 slaying DreamingSage_Jewe_Token
 msg
-The holder of this card is allowed free
-access into and out of the Jeweler's Workshop.
+The holder of this card is allowed free access into and out of the Jeweler's Workshop.
 endmsg
 face diploma.111
 x 24
@@ -5154,8 +5122,7 @@ name Jeweler Token
 name_pl Jeweler Tokens
 slaying DreamingSage_Jewe_Token
 msg
-The holder of this card is allowed free
-access into and out of the Jeweler's Workshop.
+The holder of this card is allowed free access into and out of the Jeweler's Workshop.
 endmsg
 face diploma.111
 x 24
@@ -5190,8 +5157,7 @@ name Jeweler Token
 name_pl Jeweler Tokens
 slaying DreamingSage_Jewe_Token
 msg
-The holder of this card is allowed free
-access into and out of the Jeweler's Workshop.
+The holder of this card is allowed free access into and out of the Jeweler's Workshop.
 endmsg
 face diploma.111
 x 24
@@ -5235,8 +5201,7 @@ name Jeweler Token
 name_pl Jeweler Tokens
 slaying DreamingSage_Jewe_Token
 msg
-The holder of this card is allowed free
-access into and out of the Jeweler's Workshop.
+The holder of this card is allowed free access into and out of the Jeweler's Workshop.
 endmsg
 face diploma.111
 x 24
@@ -5284,8 +5249,7 @@ name Toolshed Token
 name_pl Toolshed Tokens
 slaying DreamingSage_Tool_Token
 msg
-The holder of this card is allowed free
-access into and out of the Tool Shed
+The holder of this card is allowed free access into and out of the Tool Shed.
 endmsg
 face diploma.111
 x 24
@@ -5468,8 +5432,7 @@ name Thaumaturgy Token
 name_pl Thaumaturgy Tokens
 slaying DreamingSage_Thau_Token
 msg
-The holder of this card is allowed free
-access into and out of the Thaumaturgy Room
+The holder of this card is allowed free access into and out of the Thaumaturgy Room.
 endmsg
 x 25
 y 26
@@ -5554,8 +5517,7 @@ name Glowing Crystal Token
 name_pl Glowing Crystal Tokens
 slaying DreamingSage_GC_Token
 msg
-The holder of this card is allowed free
-access into and out of the Crystal Room
+The holder of this card is allowed free access into and out of the Crystal Room.
 endmsg
 face diploma.111
 x 26
@@ -5586,8 +5548,7 @@ name Glowing Crystal Token
 name_pl Glowing Crystal Tokens
 slaying DreamingSage_GC_Token
 msg
-The holder of this card is allowed free
-access into and out of the Crystal Room
+The holder of this card is allowed free access into and out of the Crystal Room.
 endmsg
 face diploma.111
 x 26
@@ -5622,8 +5583,7 @@ name Glowing Crystal Token
 name_pl Glowing Crystal Tokens
 slaying DreamingSage_GC_Token
 msg
-The holder of this card is allowed free
-access into and out of the Crystal Room
+The holder of this card is allowed free access into and out of the Crystal Room.
 endmsg
 face diploma.111
 x 26
@@ -5667,8 +5627,7 @@ name Glowing Crystal Token
 name_pl Glowing Crystal Tokens
 slaying DreamingSage_GC_Token
 msg
-The holder of this card is allowed free
-access into and out of the Crystal Room
+The holder of this card is allowed free access into and out of the Crystal Room.
 endmsg
 face diploma.111
 x 26
