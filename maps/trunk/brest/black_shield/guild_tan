@@ -7,7 +7,7 @@ height 11
 msg
 Creator: Default
 Date:    2008-06-24
-Modified: 2011-10-30 Rick Tanner
+Modified: 2012-03-30 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -187,7 +187,7 @@ arch altar_trigger
 name New Tanning Bench
 slaying TanningDesk
 msg
-Removing your old cauldron. Please wait.
+Removing your old tanning bench.  Please wait.
 endmsg
 exp 60
 food 1
