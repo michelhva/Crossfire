@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2012-03-11 Nicolas Weeger
+Modified: 2012-03-29 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -4187,7 +4187,7 @@ y 26
 end
 arch magic_mouth
 msg
-say 'hello world' if you want the door to open.
+Say 'hello world' if you want the door to open.
 endmsg
 x 13
 y 26
@@ -4592,7 +4592,7 @@ end
 arch sign
 msg
 Keys can also be used to open locked chests, but not all chests are locked.
-Beware, though, as some doors and chests are trapped. Use caution.
+Beware, though, as some doors and chests are trapped.  Use caution.
 This chest is locked by chance the key to open it is right here.
 endmsg
 x 15
