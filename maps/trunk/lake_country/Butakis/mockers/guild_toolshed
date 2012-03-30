@@ -13,7 +13,7 @@ Editor: CrossfireEditor
 Date:    3/17/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2012-03-30 Rick Tanner
 endmsg
 end
 arch grass
@@ -524,7 +524,7 @@ arch altar_trigger
 name New Forge
 slaying Forge
 msg
-Removing your old cauldron. Please wait.
+Removing your old forge.  Please wait.
 endmsg
 exp 60
 food 1
@@ -1835,16 +1835,14 @@ unique 1
 end
 arch magic_mouth
 msg
-Did you clean up after yourself?
-If not, the cleaning staff will.
+Did you clean up after yourself? If not, the cleaning staff will.
 endmsg
 x 14
 y 6
 end
 arch flagstone
 msg
-Be sure to leave no items behind;
-the cleaning service is very, very thorough!
+Be sure to leave no items behind; the cleaning service is very, very thorough!
 endmsg
 x 14
 y 6
@@ -2133,7 +2131,7 @@ arch altar_trigger
 name New Workbench
 slaying BowyerBench
 msg
-Removing your old cauldron. Please wait.
+Removing your old bowyer bench.  Please wait.
 endmsg
 exp 60
 food 1
