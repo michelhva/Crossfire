@@ -13,7 +13,7 @@ Editor: CrossfireEditor
 Date:    3/15/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2011-10-30 Rick Tanner
+Modified: 2012-03-30 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -293,7 +293,7 @@ arch altar_trigger
 name New Stove
 slaying Stove
 msg
-Removing your old stove. Please wait.
+Removing your old stove.  Please wait.
 endmsg
 exp 60
 food 1
