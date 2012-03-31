@@ -6,14 +6,14 @@ enter_x 9
 enter_y 28
 msg
 Created:  2002-03-09 Avion
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2012-03-30 Rick Tanner
 endmsg
 outdoor 1
 end
 arch dungeon_magic
 end
 arch goldfloor
-name drop 100000 diamonds for Basement
+name Drop 100000 diamonds for Basement.
 slaying gem
 face button_sma.111
 food 100000
@@ -34,9 +34,9 @@ arch man
 name gardener
 msg
 @match hello|hi|good day
-good day for it eh?
+Good day for it eh?
 @match bugger off
-Well, I never...hmmph
+Well, I never... hmmph.
 @match *
 Hmmm, looks like that hedge needs a good trim...
 endmsg
