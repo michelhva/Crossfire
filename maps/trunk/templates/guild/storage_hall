@@ -10,7 +10,7 @@ msg
 Creator: Chad Opperman
 cromagic@sbcglobal.net
 Date:    2007-12-18
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2012-03-20 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -3024,8 +3024,7 @@ end
 arch sign
 name GuildMaster Message Board
 msg
-I am a talking board, please say something to me.
-If you don't know what to say, say help.
+I am a talking board, please say something to me.  If you don't know what to say, say help.
 endmsg
 x 9
 y 3
@@ -3653,7 +3652,7 @@ end
 arch book_read
 name Owner's Guide
 msg
-These keys are intended for the Guildmasters (/First 3 people here, who should be the Guildmasters). Inside the storage is an altar for making duplicates, the idea being that only the Guildmasters can initially decide who gains access into here, not just anyone thats a member of the guild (Of course, once they give keys to other members, they new members can make keys too). The whole storage building is a no magic/prayer zone, in order to protect your items, however the basement is mostly magic allowed. Also, no part of this building is buildable.
+These keys are intended for the Guildmasters (/First 3 people here, who should be the Guildmasters).  Inside the storage is an altar for making duplicates, the idea being that only the Guildmasters can initially decide who gains access into here, not just anyone thats a member of the guild (Of course, once they give keys to other members, they new members can make keys too).  The whole storage building is a no magic/prayer zone, in order to protect your items, however the basement is mostly magic allowed.  Also, no part of this building is buildable.
 endmsg
 x 10
 y 19
