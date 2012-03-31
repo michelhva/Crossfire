@@ -8,7 +8,7 @@ enter_x 3
 enter_y 12
 msg
 Created:  1994-09-21
-Modified: 2008-11-26 Rick Tanner
+Modified: 2012-03-31 Nicolas Weeger
 endmsg
 end
 arch sea
@@ -2387,6 +2387,9 @@ name Key marked: Gate 9
 slaying gate-9
 x 17
 y 13
+arch quest_advance_pickup
+name brest/9gates 80>90
+end
 end
 arch grass
 x 17

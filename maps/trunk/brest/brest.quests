@@ -1,0 +1,64 @@
+quest brest/9gates
+title Gates of Hell
+face palace.x11
+description
+There are treasures waiting, provided I can get through the 9 gates of Hell.
+end_description
+step 10
+description
+I have the key for gate 1, and I should get the one for gate 2.
+end_description
+end_step
+step 20
+description
+I have the key for gate 2, and I should get the one for gate 3.
+end_description
+end_step
+step 30
+description
+I have the key for gate 3, and I should get the one for gate 4.
+end_description
+end_step
+step 40
+description
+I have the key for gate 4, and I should get the one for gate 5.
+end_description
+end_step
+step 50
+description
+I have the key for gate 5, and I should get the one for gate 6.
+end_description
+end_step
+step 60
+description
+I have the key for gate 6, and I should get the one for gate 7.
+end_description
+end_step
+step 70
+description
+I have the key for gate 7, and I should get the one for gate 8.
+end_description
+end_step
+step 80
+description
+I have the key for gate 8, and I should get the one for gate 9.
+end_description
+end_step
+step 90
+description
+I have the key for gate 9, and I should get the treasure key.
+end_description
+end_step
+step 100
+description
+I have the final key, I should claim my treasure.
+end_description
+end_step
+step 110
+finishes_quest
+description
+I have claimed my treasure.
+end_description
+end_step
+end_quest
+

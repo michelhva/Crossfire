@@ -8,7 +8,7 @@ enter_x 19
 enter_y 20
 msg
 Created:  1994-09-20
-Modified: 2008-11-26 Rick Tanner
+Modified: 2012-03-31 Nicolas Weeger
 endmsg
 end
 arch sea
@@ -1265,6 +1265,9 @@ name Key marked: Gate 8
 slaying gate-8
 x 9
 y 20
+arch quest_advance_pickup
+name brest/9gates 70>80
+end
 end
 arch dirtfloor
 x 9

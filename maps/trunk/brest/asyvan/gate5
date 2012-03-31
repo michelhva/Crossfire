@@ -8,7 +8,7 @@ enter_x 1
 enter_y 4
 msg
 Created:  1994-09-20
-Modified: 2012-01-25 Rick Tanner
+Modified: 2012-03-31 Nicolas Weeger
 endmsg
 end
 arch dirtfloor
@@ -193,6 +193,9 @@ name Key marked: Gate 6
 slaying gate-6
 x 1
 y 6
+arch quest_advance_pickup
+name brest/9gates 50>60
+end
 end
 arch dirtfloor
 x 1
