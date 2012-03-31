@@ -10,7 +10,7 @@ enter_x 9
 enter_y 7
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2012-01-20 Rick Tanner
+Modified: 2012-03-30 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -661,8 +661,8 @@ msg
 Step into a box and stand next to the teleporter. Summon a character there and they will be teleported into a cell and will not be able to leave until their time has expired.
 Times are actual playing time, so a character has to be logged in in order for their time to expire.
 Saying 'sorry' in a cell will deliver bread and water to a character.
-Teleporters are damned, so the characters save bed will be changed to the center of their cell. They will not be able to suicide and get out early.
-The Warden's key will allow you to open cell doors when you are not flying (dm). Prisoners will not be able to leave even if the door is open.
+Teleporters are damned, so the characters save bed will be changed to the center of their cell.  They will not be able to suicide and get out early.
+The Warden's key will allow you to open cell doors when you are not flying (dm).  Prisoners will not be able to leave even if the door is open.
 endmsg
 x 4
 y 1
