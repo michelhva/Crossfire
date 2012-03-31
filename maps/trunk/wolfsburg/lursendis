@@ -8,7 +8,7 @@ enter_x 8
 enter_y 4
 msg
 Created:  2007-05-23 ryo
-Modified: 2010-05-15 Nicolas Weeger
+Modified: 2012-03-30 Rick Tanner
 endmsg
 maplore
 @quest Lursendis
@@ -164,14 +164,14 @@ arch fatman
 name Lursendis
 msg
 @match farnass
-Ha yes, Farnass 'The Recipe Spellcrafter'. Good friend, haven't seen him in 15 years...
+Ha yes, Farnass 'The Recipe Spellcrafter.'  Good friend, haven't seen him in 15 years...
 
 I think he lived in Scorn, or some island around.
 
 @match caramel
 Yes, but I would only eat a caramel made by my friend Farnass.
 @match hungry|food|cook
-Yes, I'm always hungry. And I eat all the time!
+Yes, I'm always hungry.  And I eat all the time!
 
 Right now, I'd like to eat a caramel.
 @match *
