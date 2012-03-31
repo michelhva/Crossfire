@@ -36,7 +36,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * A {@link GUIItemList} displaying spell skills.
+ * A {@link GUIItemList} displaying spell skills.
  * @author Nicolas Weeger
  */
 public class GUISpellSkillList extends GUIItemList {
