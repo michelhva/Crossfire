@@ -8,7 +8,7 @@ enter_x 8
 enter_y 8
 msg
 Created:  1994-09-20
-Modified: 2012-03-17 Rick Tanner
+Modified: 2012-03-31 Nicolas Weeger
 endmsg
 end
 arch dungeon_magic
@@ -1581,6 +1581,9 @@ arch button_handle
 x 8
 y 15
 connected 99
+arch quest_advance_apply
+name brest/9gates 100>110
+end
 end
 arch dungeon_magic
 x 8
