@@ -7,6 +7,7 @@ enter_x 1
 enter_y 4
 msg
 Created:  2002-09-18 Avion
+Modified: 2012-03-30 Rick Tanner
 endmsg
 end
 arch teleporter
@@ -34,11 +35,8 @@ name Pet Storage
 msg
 Coax pet onto magic circle and pull lever.
 Pet is now in storage for use at a future time.
-To retrieve your pet pull the lever again,
-your pet will be transfered to the retrevial pen.
-Notice: Infernal Castles Inc is not responsible for
-damages incurred through the use of the
-Pet Storage Device.
+To retrieve your pet pull the lever again, your pet will be transfered to the retrevial pen.
+Notice: Infernal Castles Inc is not responsible for damages incurred through the use of the Pet Storage Device.
 endmsg
 y 1
 level 3
