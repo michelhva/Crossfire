@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-03-30 Rick Tanner
+Modified: 2012-04-01 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -2001,6 +2001,10 @@ x 5
 y 16
 end
 arch store_magic_west
+name Emporium of Power
+slaying ../navar_city/misc/emporiumofpower
+hp 40
+sp 21
 x 5
 y 16
 end
