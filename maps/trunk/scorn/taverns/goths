@@ -9,7 +9,7 @@ enter_x 5
 enter_y 32
 msg
 Created:  1993-10-15
-Modified: 2012-03-28 Rick Tanner
+Modified: 2012-04-02 Rick Tanner
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -2740,7 +2740,7 @@ Hey, that's quality material buddy!
 Ya I just rowed in from Lake Country and boy are my arms tired...
 Badaboom....
 No?
-That one killed them in Pupland...
+That one killed them in Pup Land...
 Take my wight... please.
 @match *
 Want to hear a joke?
@@ -6354,14 +6354,14 @@ She's a sight for sore eyes, eh?
 Oh, do you have news about the war?
 @match no|where
 You can go there by using the dragon transport found at the west end of the Scorn port area.  It really is worth a trip - even if a war is going on!
-@match pupland|war
-There is a war going on in pupland, but rumors say that the one who solves the mysteries of the lands is rewarded with unsurpassable power, so all sorts of people still go there on a quest for glory.
+@match pupland|war|pup land
+There is a war going on in Pup Land, but rumors say that the one who solves the mysteries of the lands is rewarded with unsurpassable power, so all sorts of people still go there on a quest for glory.
 @match glory|mysteries|quest
-I hear that pupland's quests are a TOUGH challenge, but there are also newbie areas:  The raffles, Lone Town, and Red Town are all good places to start.  For further information, ask around once you get there.
+I hear that Pup Land's quests are a TOUGH challenge, but there are also newbie areas:  The raffles, Lone Town, and Red Town are all good places to start.  For further information, ask around once you get there.
 @match power|reward
 I don't know any more than that.  If you ask me, unsurpassable power sounds good enough of a reward for most adventurers.
 @match *
-Have you ever been to pupland?
+Have you ever been to Pup Land?
 endmsg
 face elf.151
 x 27
