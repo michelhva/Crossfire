@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2012-03-30 Rick Tanner
+Modified: 2012-04-02 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2054,7 +2054,7 @@ x 7
 y 13
 end
 arch goldfloor
-name drop an Unholy Bow for a portal to Ancient Pupland
+name drop an Unholy Bow for a portal to Ancient Pup Land
 slaying magic_bow
 food 1
 x 7
@@ -2090,7 +2090,7 @@ x 7
 y 15
 end
 arch goldfloor
-name drop 5 tissue paper for a portal to the Pupland Terminal
+name drop 5 tissue paper for a portal to the Pup Land Terminal
 slaying tissue paper
 food 5
 x 7
@@ -8885,7 +8885,7 @@ speed 0.000000
 connected 26
 end
 arch perm_magic_portal
-name Pupland Terminal
+name Pup Land Terminal
 slaying /pup_land/terminal
 x 29
 y 5
@@ -8936,7 +8936,7 @@ y 7
 connected 28
 end
 arch teleporter
-name ancient pupland portal
+name ancient pup land portal
 hp 6
 sp 13
 x 29
@@ -8945,7 +8945,7 @@ speed 0.000000
 connected 28
 end
 arch perm_magic_portal
-name Ancient Pupland
+name Ancient Pup Land
 slaying /pup_land/ancient/world
 hp 28
 sp 24
@@ -11412,7 +11412,7 @@ x 39
 y 13
 end
 arch teleporter
-name ancient pupland portal
+name ancient pup land portal
 hp 4
 sp 3
 x 39
@@ -11424,7 +11424,7 @@ x 39
 y 14
 end
 arch teleporter
-name ancient pupland portal
+name ancient pup land portal
 hp 4
 sp 4
 x 39
@@ -11436,7 +11436,7 @@ x 39
 y 15
 end
 arch teleporter
-name ancient pupland portal
+name ancient pup land portal
 hp 4
 sp 5
 x 39
@@ -11561,7 +11561,7 @@ x 40
 y 13
 end
 arch teleporter
-name ancient pupland portal
+name ancient pup land portal
 hp 5
 sp 5
 x 40
@@ -11573,7 +11573,7 @@ x 40
 y 14
 end
 arch teleporter
-name ancient pupland portal
+name ancient pup land portal
 hp 5
 sp 4
 x 40
@@ -11585,7 +11585,7 @@ x 40
 y 15
 end
 arch teleporter
-name ancient pupland portal
+name ancient pup land portal
 hp 5
 sp 3
 x 40
