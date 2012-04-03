@@ -8,7 +8,7 @@ enter_x 1
 enter_y 13
 msg
 Created:  1996-02-07
-Modified: 2012-03-02 Rick Tanner
+Modified: 2012-04-03 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -787,13 +787,13 @@ end
 arch woman
 msg
 @match castle
-In the underground of Bauer's castle there is a prison.  We all believe that Eureca is captured there.  Bauer plans to become the new lord of pupland!
+In the underground of Bauer's castle there is a prison.  We all believe that Eureca is captured there.  Bauer plans to become the new lord of Pup Land!
 @match bauer
 He is the mayor of Nurnberg.  I'm sure that Eureca is held in captivity in Bauer's castle.  Bauer deserves to DIE!
 @match eureca
 Eureca is the lord of this country.  I mean, he used to be - before he disappeared.
 @match *
-Bauer has kidnapped Eureca! He caused the war... bauer is responsible for EVERYTHING!
+Bauer has kidnapped Eureca! He caused the war... Bauer is responsible for EVERYTHING!
 endmsg
 face woman.131
 hp 180
