@@ -360,9 +360,9 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         }
     }
 
-    protected void fireEndAccountList() {
+    protected void fireEndAccountList(final int count) {
         for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
-            crossfireAccountListener.endAccountList();
+            crossfireAccountListener.endAccountList(count);
         }
     }
 
