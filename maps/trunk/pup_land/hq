@@ -8,7 +8,7 @@ enter_x 10
 enter_y 34
 msg
 Created:  1996-02-14
-Modified: 2012-02-22 Rick Tanner
+Modified: 2012-04-05 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -2215,7 +2215,7 @@ arch medium_guard
 name guard
 msg
 @match hi|hello
-Here is the headquarter of Liberation Army.  Are you our member? If you are, please prove it.
+Here is the Liberation Army Headquarters.  Are you our member? If you are, please prove it.
 endmsg
 hp 1200
 x 8
@@ -2240,7 +2240,7 @@ end
 arch magic_mouth
 msg
 You hear voices from the other side of the wall...
-"Voice A : They entered the castle of Eureca. Damn it!!
+"Voice A : They entered the Castle of Eureca. Damn it!!
  Voice B : We must prevent them from getting Eureca's treasure.
  Voice C : ... I thought we should be more concerned about Eureca's safety... ???
  Voice A : What!? Do you think we are a welfare-company, idiot?! Forget Eureca, we need to get the treasure.
@@ -2267,7 +2267,7 @@ arch warrior_1
 name Alex, the general
 msg
 @match contributor
-The guildmaster of lone town contributes us lots of money.
+The guildmaster of Lone Town contributes us lots of money.
 @match *
 Bauer looks down on our funds.  He thinks that we have little money to continue the war.  But due to the great Contributor, we are rich!
 endmsg
@@ -2349,7 +2349,7 @@ He is our lord.  But we don't know where he is.
 @match bauer
 He is the leader of Regular Army.
 @match castle
-They surely want to steal Eureca's money.  I'm afraid that Bauer plans to become the new emperor of pupland! But we won't let this happen!!
+They surely want to steal Eureca's money.  I'm afraid that Bauer plans to become the new emperor of Pup Land! But we won't let this happen!!
 @match regular|army
 We will kill them all!
 @match *
@@ -3276,7 +3276,7 @@ arch medium_guard
 name guard
 msg
 @match hi|hello
-Here is the headquarter of Liberation Army.  Are you our member? If you are, please prove it.
+Here is the Liberation Army Headquarters.  Are you our member? If you are, please prove it.
 endmsg
 hp 1200
 x 12
@@ -3351,11 +3351,11 @@ end
 arch human
 msg
 @match escape|passage
-If you don't know about escape passage, please go to the tavern in lone town and talk with a thief.  If you don't know how to open the doors in the escape passage, then go to the tavern in lone town, and talk with the learned man.
+If you don't know about escape passage, please go to the tavern in lone town and talk with a thief.  If you don't know how to open the doors in the escape passage, then go to the tavern in Lone Town, and talk with the learned man.
 @match hidden|exit
 You can see the hidden exit by using the spell of show invisible.
 @match yes
-I have been invited by Eureca once.  So I know his castle.  To reach the upper floor of the castle, You need to find the Hidden Exit in the Escape Passage of the castle.  Regular Army doesn't seems to know this information.  Please go there to find Eureca's family!
+I have been invited by Eureca once.  So I know his castle.  To reach the upper floor of the castle, you need to find the Hidden Exit in the Escape Passage of the castle.  Regular Army doesn't seem to know this information.  Please go there to find Eureca's family!
 @match *
 You are the spy of our army, right? I have an information concerning Eureca's castle.  Do you want to hear it?
 endmsg
