@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-01-28
-Modified: 2012-02-21 Rick Tanner
+Modified: 2012-04-04 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -573,7 +573,7 @@ end
 arch priest
 msg
 @match pass
-I said "I am not a member of resistance."  But they didn't allow me to pass...
+I said, "I am not a member of resistance."  But they didn't allow me to pass...
 @match *
 Hello.
 endmsg
@@ -604,7 +604,7 @@ y 6
 end
 arch magic_mouth
 msg
-This is the barrier station.  Please bring up your passports.
+This is the Barrier Station.  Please bring up your passports.
 endmsg
 x 6
 y 7
@@ -2346,7 +2346,7 @@ y 6
 end
 arch magic_mouth
 msg
-This is the barrier station.  Please bring up your passports.
+This is the Barrier Station.  Please bring up your passports.
 endmsg
 x 23
 y 7
