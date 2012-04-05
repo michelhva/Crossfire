@@ -573,7 +573,7 @@ end
 arch priest
 msg
 @match pass
-I said, "I am not a member of resistance."  But they didn't allow me to pass...
+I said, "I am not a member of Resistance."  But they didn't allow me to pass...
 @match *
 Hello.
 endmsg
@@ -656,7 +656,7 @@ You may pass :-).
 @match yes
 Please bring up it.
 @match no
-.. Are you a member of resistance, aren't you?
+.. Are you a member of Resistance, aren't you?
 @match *
 Do you have passport?
 endmsg
@@ -1074,7 +1074,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance, aren't you?
+.. So you're a member of Resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1261,7 +1261,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance, aren't you?
+.. So you're a member of Resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1407,7 +1407,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance, aren't you?
+.. So you're a member of Resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1498,7 +1498,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance, aren't you?
+.. So you're a member of Resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1526,7 +1526,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance, aren't you?
+.. So you're a member of Resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1560,7 +1560,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance, aren't you?
+.. So you're a member of Resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -1979,7 +1979,7 @@ msg
 @match yes|passport
 Please bring it up.
 @match no
-.. So you're a member of resistance, aren't you?
+.. So you're a member of Resistance, aren't you?
 @match *
 Do you have a Passport?
 endmsg
@@ -2719,7 +2719,7 @@ arch a_townsman
 name merchant
 msg
 @match *
-How did YOU get a member of Regular Army? Go away.
+How did YOU get to be a member of Regular Army? Go away.
 endmsg
 hp 150
 maxhp 150
