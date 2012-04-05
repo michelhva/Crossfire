@@ -57,8 +57,9 @@ public interface CrossfireAccountListener extends EventListener {
 
     /**
      * End of character information for an account.
+     * @param count how many characters the account has.
      */
-    void endAccountList();
+    void endAccountList(final int count);
 
     /**
      * The client should switch to playing mode.

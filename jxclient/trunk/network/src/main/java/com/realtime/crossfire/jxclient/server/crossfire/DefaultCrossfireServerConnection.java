@@ -2018,6 +2018,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
         // number of characters
         int count = getInt1(packet);
+        final int total = count;
         while (count > 0) {
             String name = "";
             String cClass = "";
@@ -2115,7 +2116,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             throw new UnknownCommandException("invalid accountplayers reply, pos="+packet.position());
         }
 
-        fireEndAccountList();
+        fireEndAccountList(total);
 
         packet.reset();
         notifyPacketWatcherListenersMixed(packet, args);

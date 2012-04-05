@@ -443,13 +443,18 @@ public class GuiManager {
 
     /**
      * Displays the window with the characters for an account.
+     * @param count how many characters the account has.
      */
-    public void showCharacters() {
+    public void showCharacters(final int count) {
         if (windowRenderer.getGuiState() != RendererGuiState.ACCOUNT) {
             windowRenderer.setGuiState(RendererGuiState.ACCOUNT);
         }
         hideAccountWindows();
-        openDialogByName("account_characters");
+        if (count == 0) {
+            openDialogByName("account_character_new");
+        } else {
+            openDialogByName("account_characters");
+        }
     }
 
     /**

@@ -364,14 +364,14 @@ public class JXCWindow {
         }
 
         @Override
-        public void endAccountList() {
+        public void endAccountList(final int count) {
             //noinspection AnonymousInnerClassMayBeStatic
             SwingUtilities.invokeLater(new Runnable() {
 
                 @Override
                 public void run() {
                     characterModel.commit();
-                    guiManager.showCharacters();
+                    guiManager.showCharacters(count);
                 }
 
             });
