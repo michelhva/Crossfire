@@ -8,7 +8,7 @@ enter_x 16
 enter_y 1
 msg
 Created:  1997-06-19
-Modified: 2012-04-03 Rick Tanner
+Modified: 2012-04-06 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -4036,7 +4036,7 @@ arch guildmaster
 name old man
 msg
 @match *
-You can pay for your ticket either with any coin type.
+You can pay for your ticket with any coin type.
 endmsg
 x 12
 y 4
