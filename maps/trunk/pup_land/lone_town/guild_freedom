@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-12-18
-Modified: 2012-04-03 Rick Tanner
+Modified: 2012-04-06 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -260,7 +260,7 @@ We are members of Liberation Army.
 @match regular
 We fight against Regular Army.
 @match no|sumson
-Sumson is the spy of Liberation Army.  He entered the city of Nurnberg, to collected information about our enemies, the Regular Army.
+Sumson is the spy for Liberation Army.  He entered the city of Nurnberg, to collect information about our enemies, the Regular Army.
 @match yes
 Really!? So, Where is he?
 @match *
@@ -584,13 +584,13 @@ end
 arch sage
 msg
 @match barrier
-There is the barrier station to the south-east from Lone Town.
+There is the Barrier Station to the south-east from Lone Town.
 @match regular
 We fight against Regular Army.
 @match bauer
 He is the leader of Regular Army and he is the mayer of Nurnberg.
 @match lone|town
-Welcome to lone town!
+Welcome to Lone Town!
 @match *
 Mr. Bauer and his Regular Army built the Barrier station.
 endmsg
@@ -1057,7 +1057,7 @@ end
 arch barbarian
 msg
 @match resistance
-We are not the "resistance!"
+We are not the "Resistance!"
 @match regular
 They call us "Resistance."  In fact, we want nothing but freedom.
 @match liberation
@@ -1371,7 +1371,7 @@ msg
 @match protect nature
 Good, you passed the test! Talk to the guildmaster now.  He will provide you with further instructions.
 @match tower
-The Tower of Ordeal lies to the east of lone town.  I'll give you the key when you are ready.
+The Tower of Ordeal lies to the east of Lone Town.  I'll give you the key when you are ready.
 @match key
 Here it is.  The key for the Tower of Ordeal.
 @match scroll
@@ -1920,7 +1920,7 @@ msg
 @match siegfried
 Siegfried is a famous hero from the legends about Pup Land's history.  It is said that he killed the Evil Masters and saved the world.  He is our IDOL!
 @match *
-Congratulations! The Liberation Army welcomes you as a new member.  The common password of Liberation Army is "siegfried."  Don't forget it!  Okay, it's time for your first mission: Since you're a stranger, you'll be a formidable spy.  Leave lone town and head east.  There is a hidden port in the jungle.  Take a ship to Nurnberg.
+Congratulations! The Liberation Army welcomes you as a new member.  The common password of Liberation Army is "siegfried."  Don't forget it!  Okay, it's time for your first mission: Since you're a stranger, you'll be a formidable spy.  Leave Lone Town and head east.  There is a hidden port in the jungle.  Take a ship to Nurnberg.
 endmsg
 hp 5000
 maxhp 5000
