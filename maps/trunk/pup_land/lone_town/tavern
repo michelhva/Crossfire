@@ -685,7 +685,7 @@ end
 arch thief
 msg
 @match no|castle
-There are two ways into the castle.  Eureca was very smart.  Don't you know the cave to the north of castle?  A secret passage from that cave leads into the castle.
+There are two ways into the castle.  Eureca was very smart.  Don't you know the cave to the north of the castle?  A secret passage from that cave leads into the castle.
 @match Yes
 ...
 @match *
@@ -2145,7 +2145,7 @@ msg
 @match heinrich
 We live in sourth-eastern part of Lone Town.
 @match yes
-So you have traveled to many places yet, I guess?  Have you ever seen the pre-historical site?  My brother, Heinrich has searched for that pre-historical site for many years now.  If you know anything about it, please go and talk to Heinrich.
+So, I suspect you have traveled to many places?  Have you ever seen the pre-historical site?  My brother, Heinrich has searched for that pre-historical site for many years now.  If you know anything about it, please go and talk to Heinrich.
 @match *
 Are you an adventurer?
 endmsg
@@ -2995,7 +2995,7 @@ end
 arch sage
 msg
 @match hello|hi
-Hello stranger! Do you buy a booze for me?
+Hello stranger! Will you buy some booze for me?
 @match no|nope
 Then go away!
 @match yes
@@ -3271,7 +3271,7 @@ Their aggitating point (agito) is the Electric Power Plant.
 @match nazgul
 He is the boss of those Thieves.
 @match note
-It is the Nazgul Report.  We must know him - to defeat him.  Now he stole it!
+It is the Nazgul Report.  We must know and understand him - to defeat him.  Now he stole it!
 @match yes
 Thanks.  If you get the Report, please put it on this table.  I'll give you my special tool.  But be careful! Nazgul is an odd creature.  And his bodyguard, Ologhi is very strong.
 @match *
