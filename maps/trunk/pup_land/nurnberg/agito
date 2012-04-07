@@ -8,7 +8,7 @@ enter_x 1
 enter_y 13
 msg
 Created:  1996-02-07
-Modified: 2012-04-03 Rick Tanner
+Modified: 2012-04-07 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -1539,7 +1539,7 @@ end
 arch thief
 msg
 @match eureca
-I don't know for sure if Eureca is held in that prison.  I've been temporarily blinded when I was captured.
+I don't know for sure if Eureca is held in that prison.  I was temporarily blinded when I was captured.
 @match prison|bauer
 There is a prison under the castle of Bauer.  I found out that the prison is connected to the aqueduct.  I escaped from the prison that way.  Then I climbed up a well.
 @match *
