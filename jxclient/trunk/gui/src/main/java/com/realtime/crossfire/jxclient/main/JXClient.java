@@ -123,7 +123,8 @@ public class JXClient {
         Thread.currentThread().setName("JXClient:Main");
         final String buildNumber = getBuildNumber();
         System.out.println("JXClient "+buildNumber+" - Crossfire Java Client");
-        System.out.println("(C)2005 by Lauwenmark.");
+        System.out.println("(C)2005-2008 by Yann \"Lauwenmark\" Chachkoff.");
+        System.out.println("(C)2006-2012 Andreas Kirschbaum.");
         System.out.println("This software is placed under the GPL License");
         final Options options = new Options();
         options.parse(args);
