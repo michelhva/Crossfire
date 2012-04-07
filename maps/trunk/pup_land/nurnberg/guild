@@ -8,7 +8,7 @@ enter_x 10
 enter_y 20
 msg
 Created:  1996-02-15
-Modified: 2012-03-02 Rick Tanner
+Modified: 2012-04-07 Rick Tanner
 endmsg
 end
 arch grass
@@ -1368,7 +1368,7 @@ Siegfried is our hero! He defeated the Evil Masters and saved the ancient world.
 @match stair|down|gate
 Nope, sorry.  Nobody is allowed to enter my pet room.
 @match *
-We are fighting to defend the law.  Our enemies the resistance, they are all rascals.
+We are fighting to defend the law.  Our enemies, the Resistance, they are all rascals.
 endmsg
 hp 5000
 maxhp 5000
@@ -1471,9 +1471,9 @@ arch elf
 name Regular Army
 msg
 @match reception|office
-Didn't you notice the four towers in the westside of this city? That's the Reception Office.
+Did you notice the four towers in the westside of this city? That's the Reception Office.
 @match yes
-Great! go to the Reception Office and enter one of the four towers.  Bring me what you find in the top-level.
+Great! Go to the Reception Office and enter one of the four towers.  Bring me what you find in the top-level.
 @match no
 You are too weak anyways.
 @match *
@@ -3255,7 +3255,7 @@ arch magic_mouth
 name 3 - elec
 msg
 The Regular Army says:
-Well done, you made it through the tower of electricity! Speak to the guildmaster now.
+Well done, you made it through the Tower of Electricity! Speak to the guildmaster now.
 endmsg
 x 23
 y 2
@@ -3265,7 +3265,7 @@ arch magic_mouth
 name 2 - water
 msg
 The Regular Army says:
-Well done, you made it through the tower of water! Speak to the guildmaster now.
+Well done, you made it through the Tower of Water! Speak to the guildmaster now.
 endmsg
 x 23
 y 2
@@ -3275,7 +3275,7 @@ arch magic_mouth
 name 1 - fire
 msg
 The Regular Army says:
-Well done, you made it through the tower of fire! Speak to the guildmaster now.
+Well done, you made it through the Tower of Fire! Speak to the guildmaster now.
 endmsg
 x 23
 y 2
@@ -3300,7 +3300,7 @@ msg
 @match stair|down|gate
 Nope, sorry.  Nobody is allowed to enter my pet room.
 @match *
-Congratulations! Now you are a member of Regular Army.  Don't loose your passport, it enables you to pass the barrier station.
+Congratulations! Now you are a member of Regular Army.  Don't loose your passport, it enables you to pass the Barrier Station.
 endmsg
 sp 0
 maxsp 0
