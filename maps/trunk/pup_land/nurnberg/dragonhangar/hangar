@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  1997-02-19
-Modified: 2012-04-03 Rick Tanner
+Modified: 2012-04-07 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -4003,7 +4003,7 @@ end
 arch sign
 name Dragon express
 msg
-Please take your litter with you. No alcohol allowed in the terminal!
+Please take your litter with you.  No alcohol allowed in the terminal!
 endmsg
 x 12
 y 1
@@ -4036,7 +4036,7 @@ arch guildmaster
 name old man
 msg
 @match *
-You can pay your ticket either with platinum, gold or silver.
+You can pay for your ticket either with platinum, gold or silver.
 endmsg
 x 12
 y 4
@@ -6361,7 +6361,7 @@ end
 arch sign
 name Dragon express
 msg
-Please take your litter with you. No alcohol allowed in the terminal!
+Please take your litter with you.  No alcohol allowed in the terminal!
 endmsg
 x 19
 y 1
