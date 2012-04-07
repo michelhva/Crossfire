@@ -8,7 +8,7 @@ enter_x 12
 enter_y 23
 msg
 Created:  1997-01-22
-Modified: 2012-03-01 Rick Tanner
+Modified: 2012-04-06 Rick Tanner
 endmsg
 end
 arch afloor_left
@@ -224,9 +224,9 @@ end
 arch dwarf
 msg
 @match fox|tail
-Fox Tails live in the forest, somewhere in the center of lone town.  But we don't know how to get there.
+Fox Tails live in the forest, somewhere in the center of Lone Town.  But we don't know how to get there.
 @match nazgul
-Nazgul's crew lives in the power plant, to the west of lone town.
+Nazgul's crew lives in the power plant, to the west of Lone Town.
 @match gang|bandit
 One is Nazgul and his devils, the other one is "Fox Tails."  The former are very cruel, Nazgul kills anyone on sight.  The latter don't murder people.
 @match rob
@@ -2143,7 +2143,7 @@ arch viking
 name Frederick
 msg
 @match heinrich
-We live in sourth-eastern part of lone town.
+We live in sourth-eastern part of Lone Town.
 @match yes
 So you have traveled to many places yet, I guess?  Have you ever seen the pre-historical site?  My brother, Heinrich has searched for that pre-historical site for many years now.  If you know anything about it, please go and talk to Heinrich.
 @match *
@@ -2483,7 +2483,7 @@ arch swashbuckler
 name Canvasser
 msg
 @match yes
-Great, go to the guild of freedom, our guild.
+Great, go to the Guild of Freedom, our guild.
 @match liberation|army
 Do you wanna join us? :-)
 @match no
@@ -3516,7 +3516,7 @@ Oops! Sure... I'm a spy of Regular Army.  Please, don't tell anybody.
 @match regular
 Would you like to join us? :-)
 @match yes
-So, go to the guild of law, our guild.  The password of the guild is "blackbird."  Don't forget that...
+So, go to the Guild of Law, our guild.  The password of the guild is "blackbird."  Don't forget that...
 @match *
 Be quiet!
 endmsg
