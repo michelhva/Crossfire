@@ -8,7 +8,7 @@ enter_x 19
 enter_y 5
 msg
 Created:  1996-02-04
-Modified: 2012-03-04 Rick Tanner
+Modified: 2012-04-09 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1758,13 +1758,13 @@ end
 arch prisoner
 msg
 @match ologhi
-Maybe he stayes at here.
+He might live here.  I don't know for certain.
 @match ring
-I don't know details.
-@match tower
-In Lone Town.
+I don't know any details on the ring.
+@match tower|pupuly
+The Tower, in Lone Town.
 @match Nazgul
-I hear he goes to pupuly's tower to rob special ring.
+I heard he went to Pupuly's Tower to steal a special ring.
 @match *
 Nazgul is not in this plant.  Please help me!
 endmsg
