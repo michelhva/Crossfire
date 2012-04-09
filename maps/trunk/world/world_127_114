@@ -3,7 +3,7 @@ name world_127_114
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2012-04-09 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_127_113
@@ -10467,6 +10467,9 @@ hp 47
 sp 48
 x 40
 y 32
+arch quest_advance_apply
+name quests/FortressAng 0-10>20
+end
 end
 arch grass_only
 x 40

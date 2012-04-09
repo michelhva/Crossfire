@@ -8,7 +8,7 @@ enter_x 6
 enter_y 9
 msg
 Created:  1993-12-01
-Modified: 2008-12-21 Rick Tanner
+Modified: 2012-04-09 Nicolas Weeger
 endmsg
 end
 arch cobblestones2
@@ -6831,6 +6831,10 @@ end
 arch dragon_mail
 x 38
 y 33
+arch quest_advance_pickup
+name quests/FortressAng 20>30
+unique 1
+end
 end
 arch cobblestones2
 x 38
