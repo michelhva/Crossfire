@@ -10,7 +10,7 @@ enter_x 1
 enter_y 10
 msg
 Created:  1997-04-01
-Modified: 2012-03-06 Rick Tanner
+Modified: 2012-04-09 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -3177,7 +3177,7 @@ arch sign
 name Instructions
 msg
 With this transport mechanism you can send items to the other side (where your teammate is).  To use it, follow the instructions:
-o Put an item into the left cage.
+o Put an item into the cage on your left.
 o Set lever to "on."
 o After transport, set lever to "off."
 endmsg
@@ -3799,7 +3799,7 @@ arch sign
 name Instructions
 msg
 With this transport mechanism you can send items to the other side (where your teammate is).  To use it, follow the instructions:
-o Put an item into the left cage.
+o Put an item into the cage on your right.
 o Set lever to "on."
 o After transport, set lever to "off."
 endmsg
