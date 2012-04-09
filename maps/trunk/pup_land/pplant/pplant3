@@ -8,7 +8,7 @@ enter_x 2
 enter_y 16
 msg
 Created:  1996-02-04
-Modified: 2011-10-21 Rick Tanner
+Modified: 2012-04-09 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -2282,7 +2282,6 @@ end
 arch sign_w
 msg
 Electric Section:
-
 Don't Pull Lever.
 It causes a short circuit.
 endmsg
