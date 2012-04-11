@@ -8,7 +8,7 @@ enter_x 6
 enter_y 11
 msg
 Created:  1996-02-07
-Modified: 2012-03-08 Rick Tanner
+Modified: 2012-04-11 Rick Tanner
 endmsg
 end
 arch invis_exit
@@ -774,12 +774,12 @@ msg
 This ruin is very old.  No one knows who made this.
 @match treasure
 I don't know.
-@match leader
-Red and black goblin.
+@match leader|leaders
+Red goblin and black goblin.
 @match goblin
-They are in command of two leaders.
+They are commanded by two leaders.
 @match *
-This ruin was occupied by goblins.
+This ruin is occupied by goblins.
 endmsg
 x 9
 y 10
