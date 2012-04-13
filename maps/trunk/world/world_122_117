@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-04-01 Rick Tanner
+Modified: 2012-04-12 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -3453,6 +3453,10 @@ arch grass
 x 9
 y 16
 end
+arch tree5
+x 9
+y 16
+end
 arch dungeon_magic
 x 9
 y 17
@@ -4119,7 +4123,11 @@ arch grass_only
 x 11
 y 14
 end
-arch tree5
+arch small_temple
+name Church of Valkyrie
+slaying ../navar_city/temples/valkyrie
+hp 12
+sp 21
 x 11
 y 14
 end
