@@ -9,7 +9,7 @@ enter_x 11
 enter_y 13
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2012-04-14 Nicolas Weeger
 endmsg
 maplore
 @quest Lorkas
@@ -544,40 +544,9 @@ arch flagstone
 x 2
 y 23
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 2
 y 23
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 2
@@ -706,40 +675,9 @@ arch flagstone
 x 3
 y 13
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 3
 y 13
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 3
@@ -868,40 +806,9 @@ arch flagstone
 x 4
 y 3
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 4
 y 3
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 4
@@ -1016,40 +923,9 @@ arch flagstone
 x 4
 y 20
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 4
 y 20
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 4
@@ -1321,40 +1197,9 @@ arch flagstone
 x 6
 y 4
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 6
 y 4
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 6
@@ -1384,40 +1229,9 @@ arch flagstone
 x 6
 y 10
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 6
 y 10
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 6
@@ -1427,40 +1241,9 @@ arch flagstone
 x 6
 y 12
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 6
 y 12
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 6
@@ -1555,40 +1338,9 @@ arch flagstone
 x 6
 y 25
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 6
 y 25
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 6
@@ -1712,40 +1464,9 @@ arch flagstone
 x 7
 y 22
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 7
 y 22
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 7
@@ -2236,79 +1957,17 @@ arch flagstone
 x 10
 y 1
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 10
 y 1
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 10
 y 2
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 10
 y 2
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 10
@@ -2496,40 +2155,9 @@ arch flagstone
 x 11
 y 8
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 11
 y 8
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 11
@@ -3216,40 +2844,9 @@ arch flagstone
 x 15
 y 7
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 15
 y 7
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 15
@@ -3454,40 +3051,9 @@ arch flagstone
 x 16
 y 9
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 16
 y 9
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 16
@@ -3989,40 +3555,9 @@ arch flagstone
 x 19
 y 1
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 19
 y 1
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 19
@@ -4244,40 +3779,9 @@ arch flagstone
 x 20
 y 7
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 20
 y 7
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 20
@@ -4407,40 +3911,9 @@ arch flagstone
 x 21
 y 3
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 21
 y 3
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 21
@@ -4591,40 +4064,9 @@ arch flagstone
 x 22
 y 1
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 22
 y 1
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 22
@@ -4650,40 +4092,9 @@ arch flagstone
 x 22
 y 6
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 22
 y 6
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 22
@@ -4837,40 +4248,9 @@ arch flagstone
 x 23
 y 7
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 23
 y 7
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 23
@@ -5405,40 +4785,9 @@ arch flagstone
 x 26
 y 3
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 26
 y 3
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 26
@@ -5460,40 +4809,9 @@ arch flagstone
 x 26
 y 7
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 26
 y 7
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 26
@@ -5503,40 +4821,9 @@ arch flagstone
 x 26
 y 9
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 26
 y 9
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 26
@@ -6079,40 +5366,9 @@ arch flagstone
 x 29
 y 8
 end
-arch pixie
-name twisted sprite
-Str 20
-Con 20
-Pow 80
-hp 5500
-maxhp 4000
-sp 200
-maxsp 200
-exp 200000
-dam 25
-wc -20
-ac -7
+arch twisted_sprite
 x 29
 y 8
-speed -0.600000
-level 35
-attacktype 2
-resist_physical 30
-resist_magic 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-resist_godpower 90
-arch spell_small_speedball
-end
-arch spell_magic_rune
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch spell_major_healing
-end
 end
 arch flagstone
 x 29
