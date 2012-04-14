@@ -393,33 +393,9 @@ end
 arch spell_create_pool_of_chaos
 end
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 6
 y 2
-speed -0.4
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch ability_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch lokanth
 name likanth

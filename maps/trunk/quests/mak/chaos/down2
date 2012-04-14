@@ -563,34 +563,9 @@ arch dungeon_floor
 x 3
 y 9
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 3
 y 9
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 3
@@ -742,34 +717,9 @@ arch dungeon_floor
 x 4
 y 12
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 4
 y 12
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 4
@@ -795,34 +745,9 @@ arch dungeon_floor
 x 4
 y 17
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 4
 y 17
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 4
@@ -1210,34 +1135,9 @@ arch dungeon_floor
 x 7
 y 8
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 7
 y 8
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 7
@@ -1295,34 +1195,9 @@ arch dungeon_floor
 x 7
 y 21
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 7
 y 21
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 7
@@ -1378,34 +1253,9 @@ arch dungeon_floor
 x 8
 y 3
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 8
 y 3
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 8
@@ -1515,34 +1365,9 @@ arch dungeon_floor
 x 8
 y 26
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 8
 y 26
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 8
@@ -2339,34 +2164,9 @@ arch dungeon_floor
 x 13
 y 6
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 13
 y 6
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 13
@@ -2842,34 +2642,9 @@ arch dungeon_floor
 x 15
 y 26
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 15
 y 26
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 15
@@ -2905,34 +2680,9 @@ arch dungeon_floor
 x 16
 y 4
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 16
 y 4
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 16
@@ -3519,34 +3269,9 @@ arch dungeon_floor
 x 19
 y 17
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 19
 y 17
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 19
@@ -3860,34 +3585,9 @@ arch dungeon_floor
 x 21
 y 25
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 21
 y 25
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 21
@@ -3995,34 +3695,9 @@ arch dungeon_floor
 x 22
 y 17
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 22
 y 17
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 22
@@ -4036,34 +3711,9 @@ arch dungeon_floor
 x 22
 y 20
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 22
 y 20
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 22
@@ -4151,34 +3801,9 @@ arch dungeon_floor
 x 23
 y 9
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 23
 y 9
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 23
@@ -4192,34 +3817,9 @@ arch dungeon_floor
 x 23
 y 12
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 23
 y 12
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 23
@@ -4497,34 +4097,9 @@ arch dungeon_floor
 x 25
 y 3
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 25
 y 3
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 25
@@ -4834,34 +4409,9 @@ arch dungeon_floor
 x 27
 y 10
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 27
 y 10
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 27
@@ -4915,34 +4465,9 @@ arch dungeon_floor
 x 27
 y 22
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 27
 y 22
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 27
@@ -5132,34 +4657,9 @@ arch dungeon_floor
 x 29
 y 2
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 29
 y 2
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 29
@@ -5275,34 +4775,9 @@ arch dungeon_floor
 x 29
 y 19
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -4
+arch master_chaos_priest
 x 29
 y 19
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-arch spell_dragonbreath
-end
-arch spell_hellfire
-end
 end
 arch dungeon_floor
 x 29
