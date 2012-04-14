@@ -2235,40 +2235,9 @@ arch cobblestones
 x 14
 y 11
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 14
 y 11
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
 end
 arch cobblestones
 x 14
@@ -2725,40 +2694,9 @@ arch cobblestones
 x 17
 y 8
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 17
 y 8
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
 end
 arch cobblestones
 x 17
