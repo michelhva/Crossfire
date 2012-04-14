@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2011-12-26 Rick Tanner
+Modified: 2012-04-14 Nicolas Weeger
 endmsg
 maplore
 @quest Lorkas
@@ -392,38 +392,9 @@ arch medium_stones
 x 2
 y 5
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 2
 y 5
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
 end
 arch medium_stones
 x 2
@@ -612,34 +583,9 @@ arch medium_stones
 x 3
 y 13
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 3
 y 13
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 3
@@ -657,38 +603,9 @@ arch medium_stones
 x 3
 y 17
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 3
 y 17
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
 end
 arch medium_stones
 x 3
@@ -726,38 +643,9 @@ arch medium_stones
 x 3
 y 25
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 3
 y 25
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
 end
 arch medium_stones
 x 3
@@ -868,34 +756,9 @@ arch medium_stones
 x 4
 y 19
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 4
 y 19
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 4
@@ -1011,38 +874,9 @@ arch medium_stones
 x 5
 y 15
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 5
 y 15
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
 end
 arch medium_stones
 x 5
@@ -1218,34 +1052,9 @@ arch medium_stones
 x 6
 y 24
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 6
 y 24
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_create_pool_of_chaos
-end
-arch abil_fear
-end
-arch abil_fear
-end
 end
 arch medium_stones
 x 6
@@ -1285,38 +1094,9 @@ arch medium_stones
 x 7
 y 3
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 7
 y 3
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
 end
 arch medium_stones
 x 7
@@ -1338,38 +1118,9 @@ arch medium_stones
 x 7
 y 8
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 7
 y 8
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
 end
 arch medium_stones
 x 7
@@ -1395,34 +1146,9 @@ arch medium_stones
 x 7
 y 13
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 7
 y 13
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 7
@@ -1440,34 +1166,9 @@ arch medium_stones
 x 7
 y 17
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 7
 y 17
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 7
@@ -1517,34 +1218,9 @@ arch medium_stones
 x 7
 y 27
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 7
 y 27
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_create_pool_of_chaos
-end
-arch abil_fear
-end
-arch abil_fear
-end
 end
 arch medium_stones
 x 7
@@ -1631,38 +1307,9 @@ arch medium_stones
 x 8
 y 15
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 8
 y 15
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
 end
 arch medium_stones
 x 8
@@ -1769,38 +1416,9 @@ arch medium_stones
 x 9
 y 7
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 9
 y 7
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
 end
 arch medium_stones
 x 9
@@ -1874,38 +1492,9 @@ arch medium_stones
 x 9
 y 23
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 9
 y 23
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
 end
 arch medium_stones
 x 9
@@ -1915,34 +1504,9 @@ arch medium_stones
 x 9
 y 25
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 9
 y 25
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 9
@@ -2075,38 +1639,9 @@ arch medium_stones
 x 10
 y 17
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 10
 y 17
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
 end
 arch medium_stones
 x 10
@@ -2482,34 +2017,9 @@ arch medium_stones
 x 12
 y 22
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 12
 y 22
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 12
@@ -2527,38 +2037,9 @@ arch medium_stones
 x 12
 y 26
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -7
+arch likanth
 x 12
 y 26
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
-arch abil_fear
-end
 end
 arch medium_stones
 x 12
@@ -2597,34 +2078,9 @@ arch medium_stones
 x 13
 y 3
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 13
 y 3
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 13
@@ -2654,34 +2110,9 @@ arch medium_stones
 x 13
 y 8
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 13
 y 8
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_create_pool_of_chaos
-end
-arch abil_fear
-end
-arch abil_fear
-end
 end
 arch medium_stones
 x 13
@@ -2863,34 +2294,9 @@ arch medium_stones
 x 14
 y 12
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 14
 y 12
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_create_pool_of_chaos
-end
-arch abil_fear
-end
-arch abil_fear
-end
 end
 arch medium_stones
 x 14
@@ -3013,40 +2419,9 @@ arch medium_stones
 x 15
 y 2
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 15
 y 2
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 15
@@ -3080,38 +2455,9 @@ arch medium_stones
 x 15
 y 9
 end
-arch lokanth
-name likanth
-Str 35
-Dex 0
-Con 20
-Wis 15
-Pow 80
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-exp 200000
-dam 25
-wc -20
-ac -a7
+arch likanth
 x 15
 y 9
-speed -0.400000
-level 35
-resist_physical 70
-resist_confusion 100
-resist_weaponmagic -50
-resist_paralyze 100
-see_invisible 1
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
-arch abil_fear
-end
 end
 arch medium_stones
 x 15
@@ -3357,40 +2703,9 @@ arch medium_stones
 x 17
 y 2
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 17
 y 2
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 17
@@ -3400,34 +2715,9 @@ arch medium_stones
 x 17
 y 4
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 17
 y 4
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_create_pool_of_chaos
-end
-arch abil_fear
-end
-arch abil_fear
-end
 end
 arch medium_stones
 x 17
@@ -3461,34 +2751,9 @@ arch medium_stones
 x 17
 y 11
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 17
 y 11
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_create_pool_of_chaos
-end
-arch abil_fear
-end
-arch abil_fear
-end
 end
 arch medium_stones
 x 17
@@ -3502,34 +2767,9 @@ arch medium_stones
 x 17
 y 14
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 17
 y 14
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 17
@@ -3900,34 +3140,9 @@ arch medium_stones
 x 20
 y 2
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 20
 y 2
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 20
@@ -3937,40 +3152,9 @@ arch medium_stones
 x 20
 y 4
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 20
 y 4
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 20
@@ -4515,34 +3699,9 @@ arch medium_stones
 x 23
 y 8
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 23
 y 8
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 23
@@ -4556,40 +3715,9 @@ arch medium_stones
 x 23
 y 11
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 23
 y 11
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 23
@@ -4603,40 +3731,9 @@ arch medium_stones
 x 23
 y 14
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 23
 y 14
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 23
@@ -4830,34 +3927,9 @@ arch medium_stones
 x 24
 y 17
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 24
 y 17
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 24
@@ -4977,40 +4049,9 @@ arch medium_stones
 x 25
 y 16
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 25
 y 16
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 25
@@ -5103,34 +4144,9 @@ arch medium_stones
 x 26
 y 3
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 26
 y 3
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 26
@@ -5212,40 +4228,9 @@ arch medium_stones
 x 26
 y 23
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 26
 y 23
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 26
@@ -5319,40 +4304,9 @@ arch medium_stones
 x 27
 y 7
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 27
 y 7
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 27
@@ -5374,34 +4328,9 @@ arch medium_stones
 x 27
 y 12
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 27
 y 12
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_fear
-end
-arch spell_create_pool_of_chaos
-end
 end
 arch medium_stones
 x 27
@@ -5514,40 +4443,9 @@ arch medium_stones
 x 28
 y 4
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 28
 y 4
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 28
@@ -5617,40 +4515,9 @@ arch medium_stones
 x 28
 y 21
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 28
 y 21
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 28
@@ -5766,40 +4633,9 @@ arch medium_stones
 x 29
 y 12
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 29
 y 12
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 29
@@ -5821,40 +4657,9 @@ arch medium_stones
 x 29
 y 17
 end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -17
+arch cave_byakie
 x 29
 y 17
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end
 arch medium_stones
 x 29
@@ -5884,34 +4689,9 @@ arch medium_stones
 x 29
 y 24
 end
-arch crawling_chaos
-name creeping chaos
-Con 20
-Wis 15
-Pow 50
-hp 8000
-maxhp 8000
-sp 200
-maxsp 200
-exp 300000
-dam 40
-wc -35
-ac -15
+arch creeping_chaos
 x 29
 y 24
-speed -0.400000
-level 40
-attacktype 283648
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_create_pool_of_chaos
-end
-arch abil_fear
-end
-arch abil_fear
-end
 end
 arch medium_stones
 x 29
