@@ -272,39 +272,9 @@ arch dungeon_floor
 x 1
 y 17
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 1
 y 17
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 1
@@ -440,39 +410,9 @@ arch dungeon_floor
 x 2
 y 13
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 2
 y 13
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 2
@@ -518,39 +458,9 @@ arch dungeon_floor
 x 2
 y 23
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 2
 y 23
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 2
@@ -580,39 +490,9 @@ arch dungeon_floor
 x 2
 y 27
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 2
 y 27
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 2
@@ -676,39 +556,9 @@ arch dungeon_floor
 x 3
 y 9
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 3
 y 9
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 3
@@ -758,39 +608,9 @@ arch dungeon_floor
 x 3
 y 20
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 3
 y 20
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 3
@@ -828,39 +648,9 @@ arch dungeon_floor
 x 3
 y 26
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 3
 y 26
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 3
@@ -939,39 +729,9 @@ arch dungeon_floor
 x 4
 y 11
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 4
 y 11
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 4
@@ -1001,39 +761,9 @@ arch dungeon_floor
 x 4
 y 17
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 4
 y 17
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 4
@@ -1079,39 +809,9 @@ arch dungeon_floor
 x 4
 y 25
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 4
 y 25
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 4
@@ -1267,39 +967,9 @@ arch dungeon_floor
 x 5
 y 24
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 5
 y 24
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 5
@@ -1376,39 +1046,9 @@ arch dungeon_floor
 x 6
 y 9
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 6
 y 9
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 6
@@ -1422,39 +1062,9 @@ arch dungeon_floor
 x 6
 y 12
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 6
 y 12
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 6
@@ -1516,39 +1126,9 @@ arch dungeon_floor
 x 6
 y 23
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 6
 y 23
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 6
@@ -1701,39 +1281,9 @@ arch dungeon_floor
 x 7
 y 22
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 7
 y 22
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 7
@@ -1954,39 +1504,9 @@ arch dungeon_floor
 x 8
 y 21
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -5
+arch hulking_beast
 x 8
 y 21
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 8
@@ -2146,39 +1666,9 @@ arch dungeon_floor
 x 9
 y 20
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -5
+arch hulking_beast
 x 9
 y 20
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 9
@@ -2200,39 +1690,9 @@ arch dungeon_floor
 x 9
 y 23
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -5
+arch hulking_beast
 x 9
 y 23
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 9
@@ -2268,39 +1728,9 @@ arch dungeon_floor
 x 10
 y 1
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 10
 y 1
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 10
@@ -2342,39 +1772,9 @@ arch dungeon_floor
 x 10
 y 10
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 10
 y 10
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 10
@@ -2384,39 +1784,9 @@ arch dungeon_floor
 x 10
 y 12
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 10
 y 12
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 10
@@ -2458,39 +1828,9 @@ arch dungeon_floor
 x 10
 y 19
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 10
 y 19
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 10
@@ -2586,39 +1926,9 @@ arch dungeon_floor
 x 11
 y 5
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 11
 y 5
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 11
@@ -2688,39 +1998,9 @@ arch dungeon_floor
 x 11
 y 18
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 11
 y 18
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 11
@@ -2746,39 +2026,9 @@ arch dungeon_floor
 x 11
 y 22
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 11
 y 22
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 11
@@ -2866,39 +2116,9 @@ arch dungeon_floor
 x 12
 y 10
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 12
 y 10
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 12
@@ -2908,39 +2128,9 @@ arch dungeon_floor
 x 12
 y 12
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 12
 y 12
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 12
@@ -2974,39 +2164,9 @@ arch dungeon_floor
 x 12
 y 17
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 12
 y 17
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 12
@@ -3090,39 +2250,9 @@ arch dungeon_floor
 x 13
 y 3
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 13
 y 3
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 13
@@ -3192,39 +2322,9 @@ arch dungeon_floor
 x 13
 y 16
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 13
 y 16
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 13
@@ -3392,39 +2492,9 @@ arch dungeon_floor
 x 14
 y 15
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 14
 y 15
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 14
@@ -3540,39 +2610,9 @@ arch dungeon_floor
 x 15
 y 6
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 15
 y 6
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 15
@@ -3622,39 +2662,9 @@ arch dungeon_floor
 x 15
 y 14
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 15
 y 14
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 15
@@ -3766,39 +2776,9 @@ arch dungeon_floor
 x 16
 y 2
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 16
 y 2
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 16
@@ -3864,39 +2844,9 @@ arch dungeon_floor
 x 16
 y 13
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 16
 y 13
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 16
@@ -3970,39 +2920,9 @@ arch dungeon_floor
 x 16
 y 24
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 16
 y 24
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 16
@@ -4102,39 +3022,9 @@ arch dungeon_floor
 x 17
 y 12
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 17
 y 12
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 17
@@ -4208,39 +3098,9 @@ arch dungeon_floor
 x 17
 y 22
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 17
 y 22
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 17
@@ -4408,39 +3268,9 @@ arch dungeon_floor
 x 18
 y 11
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 18
 y 11
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 18
@@ -4639,39 +3469,9 @@ arch dungeon_floor
 x 19
 y 10
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 19
 y 10
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 19
@@ -4851,39 +3651,9 @@ arch dungeon_floor
 x 20
 y 9
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 20
 y 9
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 20
@@ -5059,39 +3829,9 @@ arch dungeon_floor
 x 21
 y 8
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 21
 y 8
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 21
@@ -5251,39 +3991,9 @@ arch dungeon_floor
 x 22
 y 7
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 22
 y 7
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 22
@@ -5479,39 +4189,9 @@ arch dungeon_floor
 x 23
 y 6
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 23
 y 6
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 23
@@ -5690,39 +4370,9 @@ arch dungeon_floor
 x 24
 y 5
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 24
 y 5
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 24
@@ -5890,39 +4540,9 @@ arch dungeon_floor
 x 25
 y 4
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 25
 y 4
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 25
@@ -6074,39 +4694,9 @@ arch dungeon_floor
 x 26
 y 3
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 26
 y 3
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 26
@@ -6266,39 +4856,9 @@ arch dungeon_floor
 x 27
 y 2
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 27
 y 2
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 27
@@ -6450,39 +5010,9 @@ arch dungeon_floor
 x 28
 y 1
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch hulking_beast
 x 28
 y 1
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 28
