@@ -320,38 +320,9 @@ x 4
 y 4
 speed -1.200000
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -5
+arch wandering_terror
 x 5
 y 4
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch large_gargolye
 x 5
