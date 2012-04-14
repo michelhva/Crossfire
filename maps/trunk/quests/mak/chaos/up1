@@ -9,7 +9,7 @@ enter_x 10
 enter_y 12
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2012-04-14 Nicolas Weeger
 endmsg
 maplore
 @quest Lorkas
@@ -279,39 +279,9 @@ arch chair_1.4
 x 1
 y 16
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 1
 y 16
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 1
@@ -423,39 +393,9 @@ arch cobblestones
 x 2
 y 2
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 2
 y 2
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 2
@@ -481,39 +421,9 @@ arch cobblestones
 x 2
 y 8
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 2
 y 8
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 2
@@ -665,39 +575,9 @@ arch cobblestones
 x 3
 y 5
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 3
 y 5
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 3
@@ -767,39 +647,9 @@ arch chair_1.2
 x 3
 y 17
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 3
 y 17
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 3
@@ -817,39 +667,9 @@ arch chair_1.2
 x 3
 y 19
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 3
 y 19
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 3
@@ -941,39 +761,9 @@ arch cobblestones
 x 4
 y 7
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 4
 y 7
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 4
@@ -1011,39 +801,9 @@ arch cobblestones
 x 4
 y 15
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 4
 y 15
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 4
@@ -1097,39 +857,9 @@ arch cobblestones
 x 4
 y 27
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 4
 y 27
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 4
@@ -1169,39 +899,9 @@ arch cobblestones
 x 5
 y 4
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 5
 y 4
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 5
@@ -1291,39 +991,9 @@ arch chair_1.4
 x 5
 y 19
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 5
 y 19
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 5
@@ -1357,39 +1027,9 @@ arch cobblestones
 x 5
 y 25
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 5
 y 25
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 5
@@ -1603,39 +1243,9 @@ arch cobblestones
 x 7
 y 3
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 7
 y 3
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 7
@@ -1649,39 +1259,9 @@ arch cobblestones
 x 7
 y 6
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 7
 y 6
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 7
@@ -1691,39 +1271,9 @@ arch cobblestones
 x 7
 y 8
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 7
 y 8
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 7
@@ -1773,39 +1323,9 @@ arch chair_1.2
 x 7
 y 16
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 7
 y 16
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 7
@@ -1867,39 +1387,9 @@ arch cobblestones
 x 7
 y 25
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 7
 y 25
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 7
@@ -2051,39 +1541,9 @@ arch cobblestones
 x 8
 y 27
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 8
 y 27
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 8
@@ -2349,39 +1809,9 @@ arch cobblestones
 x 10
 y 4
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 10
 y 4
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 10
@@ -2552,39 +1982,9 @@ arch cobblestones
 x 11
 y 9
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 11
 y 9
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 11
@@ -2666,39 +2066,9 @@ arch cobblestones
 x 11
 y 25
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 11
 y 25
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 11
@@ -2708,39 +2078,9 @@ arch cobblestones
 x 11
 y 27
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 11
 y 27
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 11
@@ -2914,39 +2254,9 @@ arch cobblestones
 x 13
 y 2
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 13
 y 2
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 13
@@ -2968,39 +2278,9 @@ arch cobblestones
 x 13
 y 7
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 13
 y 7
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 13
@@ -3142,39 +2422,9 @@ arch cobblestones
 x 14
 y 4
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 14
 y 4
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 14
@@ -3204,39 +2454,9 @@ arch cobblestones
 x 14
 y 11
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 14
 y 11
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 14
@@ -3364,39 +2584,9 @@ arch cobblestones
 x 15
 y 7
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 15
 y 7
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 15
@@ -3542,39 +2732,9 @@ arch cobblestones
 x 16
 y 2
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 16
 y 2
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 16
@@ -3604,39 +2764,9 @@ arch cobblestones
 x 16
 y 9
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 16
 y 9
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 16
@@ -3794,39 +2924,9 @@ arch cobblestones
 x 17
 y 6
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 17
 y 6
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 17
@@ -3836,39 +2936,9 @@ arch cobblestones
 x 17
 y 8
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 17
 y 8
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 17
@@ -4193,39 +3263,9 @@ arch cobblestones
 x 19
 y 4
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 19
 y 4
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 19
@@ -4247,39 +3287,9 @@ arch cobblestones
 x 19
 y 9
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 19
 y 9
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 19
@@ -4357,39 +3367,9 @@ arch cobblestones
 x 19
 y 25
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 19
 y 25
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 19
@@ -4686,39 +3666,9 @@ arch cobblestones
 x 21
 y 25
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 21
 y 25
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 21
@@ -4728,39 +3678,9 @@ arch cobblestones
 x 21
 y 27
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 21
 y 27
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 21
@@ -5130,39 +4050,9 @@ arch cobblestones
 x 23
 y 27
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 23
 y 27
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 23
@@ -5198,39 +4088,9 @@ arch cobblestones
 x 24
 y 3
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 24
 y 3
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 24
@@ -5240,39 +4100,9 @@ arch cobblestones
 x 24
 y 5
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 24
 y 5
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 24
@@ -5286,39 +4116,9 @@ arch cobblestones
 x 24
 y 8
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 24
 y 8
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 24
@@ -5368,39 +4168,9 @@ arch chair_1.4
 x 24
 y 16
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 24
 y 16
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 24
@@ -5426,39 +4196,9 @@ arch chair_1.4
 x 24
 y 19
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 24
 y 19
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 24
@@ -5666,39 +4406,9 @@ arch cobblestones
 x 25
 y 25
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 25
 y 25
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 25
@@ -5742,39 +4452,9 @@ arch cobblestones
 x 26
 y 3
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 26
 y 3
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 26
@@ -5788,39 +4468,9 @@ arch cobblestones
 x 26
 y 6
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 26
 y 6
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 26
@@ -5830,39 +4480,9 @@ arch cobblestones
 x 26
 y 8
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 26
 y 8
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 26
@@ -5896,39 +4516,9 @@ arch chair_1.2
 x 26
 y 14
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 26
 y 14
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 26
@@ -5962,39 +4552,9 @@ arch chair_1.2
 x 26
 y 18
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 26
 y 18
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 26
@@ -6074,39 +4634,9 @@ arch cobblestones
 x 27
 y 2
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 27
 y 2
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 27
@@ -6132,39 +4662,9 @@ arch cobblestones
 x 27
 y 8
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 27
 y 8
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 27
@@ -6242,39 +4742,9 @@ arch cobblestones
 x 27
 y 25
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 27
 y 25
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 27
@@ -6284,39 +4754,9 @@ arch cobblestones
 x 27
 y 27
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 27
 y 27
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 27
@@ -6356,39 +4796,9 @@ arch cobblestones
 x 28
 y 4
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 28
 y 4
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 28
@@ -6446,39 +4856,9 @@ arch chair_1.4
 x 28
 y 15
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 28
 y 15
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 28
@@ -6496,39 +4876,9 @@ arch chair_1.4
 x 28
 y 17
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 28
 y 17
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 28
@@ -6554,39 +4904,9 @@ arch chair_1.4
 x 28
 y 20
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 28
 y 20
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 28
@@ -6666,39 +4986,9 @@ arch cobblestones
 x 29
 y 6
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 29
 y 6
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 29
@@ -6922,39 +5212,9 @@ arch chair_1.2
 x 30
 y 16
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 30
 y 16
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 30
@@ -6980,39 +5240,9 @@ arch chair_1.2
 x 30
 y 19
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 15
-Con 25
-Wis 13
-Int 8
-hp 2000
-maxhp 2000
-exp 8000
-dam 20
-wc -20
-ac -7
+arch blade_dancer
 x 30
 y 19
-speed -0.200000
-level 20
-attacktype 256
-resist_physical 30
-carrying 40000
-see_invisible 1
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-value 1000
-weight 10000
-magic 3
-last_sp 3
-end
 end
 arch cobblestones
 x 30
