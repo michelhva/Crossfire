@@ -9,7 +9,7 @@ enter_x 17
 enter_y 13
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2012-04-14 Nicolas Weeger
 endmsg
 maplore
 @quest Lorkas
@@ -353,40 +353,9 @@ arch woodfloor
 x 2
 y 5
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 2
 y 5
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 2
@@ -440,40 +409,9 @@ arch woodfloor
 x 2
 y 17
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 2
 y 17
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 2
@@ -653,40 +591,9 @@ arch woodfloor
 x 3
 y 15
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 3
 y 15
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 3
@@ -914,40 +821,9 @@ arch woodfloor
 x 4
 y 24
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 4
 y 24
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 4
@@ -991,40 +867,9 @@ arch woodfloor
 x 5
 y 3
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 5
 y 3
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 5
@@ -1034,40 +879,9 @@ arch woodfloor
 x 5
 y 5
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 5
 y 5
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 5
@@ -1085,40 +899,9 @@ arch woodfloor
 x 5
 y 9
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 5
 y 9
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 5
@@ -1370,40 +1153,9 @@ arch woodfloor
 x 6
 y 23
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 6
 y 23
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 6
@@ -1447,40 +1199,9 @@ arch woodfloor
 x 6
 y 27
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 6
 y 27
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 6
@@ -1516,40 +1237,9 @@ arch woodfloor
 x 7
 y 4
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 7
 y 4
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 7
@@ -1591,40 +1281,9 @@ arch woodfloor
 x 7
 y 13
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 7
 y 13
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 7
@@ -1646,40 +1305,9 @@ arch woodfloor
 x 7
 y 18
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 7
 y 18
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 7
@@ -1721,40 +1349,9 @@ arch woodfloor
 x 7
 y 27
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 7
 y 27
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 7
@@ -1838,40 +1435,9 @@ arch woodfloor
 x 8
 y 15
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 8
 y 15
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 8
@@ -1913,40 +1479,9 @@ arch woodfloor
 x 8
 y 24
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 8
 y 24
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 8
@@ -2681,40 +2216,9 @@ arch woodfloor
 x 12
 y 23
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 12
 y 23
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 12
@@ -2895,40 +2399,9 @@ arch woodfloor
 x 13
 y 18
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 13
 y 18
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 13
@@ -3148,40 +2621,9 @@ arch woodfloor
 x 14
 y 25
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 14
 y 25
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 14
@@ -3520,40 +2962,9 @@ arch woodfloor
 x 16
 y 23
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 16
 y 23
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 16
@@ -3571,40 +2982,9 @@ arch woodfloor
 x 16
 y 27
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 16
 y 27
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 16
@@ -3632,40 +3012,9 @@ arch woodfloor
 x 17
 y 2
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 17
 y 2
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 17
@@ -3780,40 +3129,9 @@ arch woodfloor
 x 17
 y 19
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 17
 y 19
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 17
@@ -4005,40 +3323,9 @@ arch woodfloor
 x 18
 y 24
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 18
 y 24
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 18
@@ -4078,40 +3365,9 @@ arch woodfloor
 x 19
 y 2
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 19
 y 2
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 19
@@ -4181,40 +3437,9 @@ arch woodfloor
 x 19
 y 17
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 19
 y 17
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 19
@@ -4294,40 +3519,9 @@ arch woodfloor
 x 20
 y 4
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 20
 y 4
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 20
@@ -4729,40 +3923,9 @@ arch woodfloor
 x 22
 y 8
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 22
 y 8
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 22
@@ -5074,40 +4237,9 @@ arch woodfloor
 x 24
 y 10
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 24
 y 10
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 24
@@ -5163,40 +4295,9 @@ arch woodfloor
 x 24
 y 16
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 24
 y 16
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 24
@@ -5206,40 +4307,9 @@ arch woodfloor
 x 24
 y 18
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 24
 y 18
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 24
@@ -5265,40 +4335,9 @@ arch woodfloor
 x 24
 y 23
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 24
 y 23
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 24
@@ -5532,40 +4571,9 @@ arch woodfloor
 x 26
 y 2
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 26
 y 2
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 26
@@ -5695,40 +4703,9 @@ arch woodfloor
 x 26
 y 19
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 26
 y 19
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 26
@@ -5788,40 +4765,9 @@ arch woodfloor
 x 26
 y 26
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 26
 y 26
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 26
@@ -5893,40 +4839,9 @@ arch woodfloor
 x 27
 y 11
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 27
 y 11
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 27
@@ -5956,40 +4871,9 @@ arch woodfloor
 x 27
 y 17
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 27
 y 17
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 27
@@ -6065,40 +4949,9 @@ arch woodfloor
 x 28
 y 3
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 28
 y 3
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 28
@@ -6120,40 +4973,9 @@ arch woodfloor
 x 28
 y 7
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 28
 y 7
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 28
@@ -6269,40 +5091,9 @@ arch woodfloor
 x 28
 y 27
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -6
+arch shadow_elf
 x 28
 y 27
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch spell_mass_confusion
-end
-arch abil_icestorm
-end
-arch spell_icestorm
-end
-arch abil_fear
-end
 end
 arch woodfloor
 x 28
