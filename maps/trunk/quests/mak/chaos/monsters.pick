@@ -45,35 +45,8 @@ end
 arch abil_fear
 end
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -7
+arch high_chaos_knight
 y 4
-speed -0.7
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch blade_dancer
 y 7
