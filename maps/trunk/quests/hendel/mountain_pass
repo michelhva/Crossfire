@@ -8,7 +8,7 @@ enter_x 28
 enter_y 12
 msg
 Created:  1993-12-07 Chris Hendelberg
-Modified: 2008-12-22 Rick Tanner
+Modified: 2012-04-14 Nicolas Weeger
 endmsg
 end
 arch mountain2
@@ -2789,6 +2789,9 @@ hp 14
 sp 12
 x 22
 y 6
+arch quest_advance_apply
+name quests/Nilplur 10>20
+end
 end
 arch dungeon_magic
 x 22

@@ -65,3 +65,27 @@ end_description
 end_step
 end_quest
 
+quest quests/Nilplur
+title The hunt for Nilplur
+face dragon.x71
+description
+Nilplur the dragon is said to hide in a cave in the mountain range east of the lake between Scorn and Euthville. According to reports, he accumulated some decent treasure, including powerful spells.
+end_description
+step 10
+description
+I've heard rumors of a dragon hiding in a cave in the mountain range east of the lake between Scorn and Euthville.
+end_description
+end_step
+step 20
+description
+I've found Nilplur's lair.
+end_description
+end_step
+step 30
+finishes_quest
+description
+I've killed Nilplur and can now claim his treasure.
+end_description
+end_step
+end_quest
+
