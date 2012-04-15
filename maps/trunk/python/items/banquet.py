@@ -120,36 +120,26 @@ def do_banquet():
 	# Put walls.
 	wall = get_one(walls)
 	# top left
-	w = Crossfire.CreateObjectByName(wall + '_2_2_2')
-	w.Teleport(m, 0, 0)
+	m.CreateObject(wall + '_2_2_2', 0, 0)
 	# top right
-	w = Crossfire.CreateObjectByName(wall + '_2_2_3')
-	w.Teleport(m, size_x - 1, 0)
+	m.CreateObject(wall + '_2_2_3', size_x - 1, 0)
 	# bottom left
-	w = Crossfire.CreateObjectByName(wall + '_2_2_1')
-	w.Teleport(m, 0, size_y - 1)
+	m.CreateObject(wall + '_2_2_1', 0, size_y - 1)
 	# bottom right
-	w = Crossfire.CreateObjectByName(wall + '_2_2_4')
-	w.Teleport(m, size_x - 1, size_y - 1)
+	m.CreateObject(wall + '_2_2_4', size_x - 1, size_y - 1)
 	# top and bottom parts
 	for x in range(size_x - 2):
-		w = Crossfire.CreateObjectByName(wall + '_2_1_2')
-		w.Teleport(m, x + 1, 0)
-		w = Crossfire.CreateObjectByName(wall + '_2_1_2')
-		w.Teleport(m, x + 1, size_y - 1)
+		m.CreateObject(wall + '_2_1_2', x + 1, 0)
+		m.CreateObject(wall + '_2_1_2', x + 1, size_y - 1)
 	# left and right parts
 	for y in range(size_y - 2):
-		w = Crossfire.CreateObjectByName(wall + '_2_1_1')
-		w.Teleport(m, 0, y + 1)
-		w = Crossfire.CreateObjectByName(wall + '_2_1_1')
-		w.Teleport(m, size_x - 1, y + 1)
+		m.CreateObject(wall + '_2_1_1', 0, y + 1)
+		m.CreateObject(wall + '_2_1_1', size_x - 1, y + 1)
 
 	# Food itself
 	for x in range(size_x-2):
 		for y in range(size_y-2):
-			fo = Crossfire.CreateObjectByName(get_one(foods))
-			fo.GodGiven = 1
-			fo.Teleport(m, x + 1, y + 1)
+			m.CreateObject(get_one(foods), x + 1, y + 1).GodGiven = 1
 
 	# Store player's current location
 	x = act.X
