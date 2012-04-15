@@ -77,6 +77,10 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     private final GUIElementListener elementListener;
 
     /**
+     * Used to avoid refreshing items all the time.
+     */
+    private boolean pendingChange = false;
+    /**
      * The {@link Runnable} that implements the code of {@link #setChanged()}
      * which must run on the EDT.
      */
@@ -85,6 +89,9 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
 
         @Override
         public void run() {
+            synchronized(setChangedRunnable) {
+                pendingChange = false;
+            }
             repaint();
             if (isVisible()) {
                 if (changedListener != null) {
@@ -226,7 +233,12 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      */
     @Override
     public void setChanged() {
-        SwingUtilities2.invokeLater(setChangedRunnable);
+        synchronized(setChangedRunnable) {
+            if (!pendingChange) {
+                pendingChange = true;
+                SwingUtilities2.invokeLater(setChangedRunnable);
+            }
+        }
     }
 
     /**
