@@ -1,3 +1,276 @@
+2012-04-15 06:02  rjtanner
+
+	* navar_city/magara/houses/museum, world/world_122_117: Design
+	  overhaul to Museum of Arms (navar_city/magara/houses/museum) in
+	  Navar. Expanded the map to include ground outside the shop walls.
+	  Floor plan matches the physical building shape. Added more items,
+	  used magic_mouth instead of signs to label the items. Updated
+	  world map for new map entrance destination.
+
+2012-04-14 17:24  ryo_saeba
+
+	* quests/mak/chaos/down4, quests/mak/chaos/monsters.pick: Use
+	  archetypes.
+
+2012-04-14 17:08  ryo_saeba
+
+	* quests/mak/chaos/down1, quests/mak/chaos/down2,
+	  quests/mak/chaos/down3, quests/mak/chaos/monsters.pick: Use
+	  'hulking_beast' archetype.
+
+2012-04-14 17:01  ryo_saeba
+
+	* quests/mak/chaos/down3, quests/mak/chaos/monsters.pick: Use
+	  'wandering_terror' archetype.
+
+2012-04-14 16:55  ryo_saeba
+
+	* quests/mak/chaos/down2, quests/mak/chaos/monsters.pick,
+	  quests/mak/chaos/tritemples: Use 'master_chaos_priest' archetype.
+
+2012-04-14 16:46  ryo_saeba
+
+	* quests/mak/chaos/down1, quests/mak/chaos/down2,
+	  quests/mak/chaos/down3, quests/mak/chaos/monsters.pick,
+	  quests/mak/chaos/tritemples: Use 'high_chaos_knight' archetype.
+
+2012-04-14 15:48  ryo_saeba
+
+	* quests/mak/chaos/monsters.pick: Use archetypes.
+
+2012-04-14 15:30  ryo_saeba
+
+	* quests/mak/chaos/up4: Use 'renegade_wizard' archetype.
+
+2012-04-14 15:23  ryo_saeba
+
+	* quests/mak/chaos/up3, quests/mak/chaos/up4: Use 'twisted_sprite'
+	  archetype.
+
+2012-04-14 15:18  ryo_saeba
+
+	* quests/mak/chaos/up3: Use 'large_gargoyle' archetype.
+
+2012-04-14 15:13  ryo_saeba
+
+	* quests/mak/chaos/up2, quests/mak/chaos/up3: Use 'shadow_elf'
+	  archetype.
+
+2012-04-14 15:06  ryo_saeba
+
+	* quests/mak/chaos/up1, quests/mak/chaos/up2: Use 'renegade_priest'
+	  archetype.
+
+2012-04-14 14:58  ryo_saeba
+
+	* quests/mak/chaos/up2: Use 'blade_dancer_master' archetype.
+
+2012-04-14 14:52  ryo_saeba
+
+	* quests/mak/chaos/up1: Use archetype.
+
+2012-04-14 13:26  ryo_saeba
+
+	* quests/hendel/acid_room, quests/hendel/mountain_pass,
+	  quests/quests.quests: Questify some maps.
+
+2012-04-14 05:14  rjtanner
+
+	* navar_city/misc/city1smith, world/world_122_117: Cosmetic
+	  overhaul to Gunther's Smithy (navar_city/misc/city1smith) in
+	  Navar. Expanded the map to include ground outside the shop walls.
+	  Floor plan matches the physical building shape. Door or entrance
+	  now opens when a player approaches. Map considered an outdoor map
+	  so darkness or time of day is visible when inside; added light
+	  sources. Updated world map for new map entrance destination.
+
+2012-04-13 06:46  rjtanner
+
+	* navar_city/temples/valkyrie2: Update map entrance x,y coordinates
+	  in Church of Valkyrie, Path of Faith
+	  (navar_city/temples/valkyrie2). No functional changes.
+
+2012-04-13 06:43  rjtanner
+
+	* navar_city/temples/valkyrie, navar_city/temples/valkyrie2,
+	  world/world_122_117: New maps in Navar. Church of Valkyrie
+	  (navar_city/temples/valkyrie) and Church of Valkyrie, Path of
+	  Faith (navar_city/temples/valkyrie2). Somewhat based on the
+	  Ruggilli maps, and since Navar is a possible new player
+	  destination - players have a small tutorial and test to go
+	  through before being able to worship Valkyrie. World map
+	  (world/world_122_117) updated to include the temple map in south
+	  eastern Navar.
+
+2012-04-13 06:25  rjtanner
+
+	* navar_city/temples/ruggilli: Word spacing update in message text
+	  to Temple of Ruggilli (navar_city/temples/ruggilli) in Navar. No
+	  functional changes.
+
+2012-04-11 19:28  ryo_saeba
+
+	* navar_city/misc/library, scorn/misc/library: Make the literacy
+	  scrolls identified.
+
+2012-04-11 05:55  rjtanner
+
+	* pup_land/s_f/to-jyo: Dialogue update for To-Jyo dialogue (waist
+	  is broken -> hip is broken) to To-jyo's Hut (pup_land/s_f/to-jyo)
+	  in Pup Land.
+
+2012-04-11 05:51  rjtanner
+
+	* pup_land/s_f/special: Typo correction in message text to Shining
+	  Tower Special (pup_land/s_f/special) in Pup Land. No functional
+	  changes.
+
+2012-04-11 05:49  rjtanner
+
+	* pup_land/s_f/secret: Give NPC woman a name (instead of ???) in
+	  Shining Tower Secret (pup_land/s_f/secret).
+
+2012-04-11 05:46  rjtanner
+
+	* pup_land/s_f/ruin: Content updates to ruin keeper's dialogue in
+	  Ancient Ruins (pup_land/s_f/ruin).
+
+2012-04-11 05:42  rjtanner
+
+	* pup_land/s_f/floor2: Punctuation and pluralization correction in
+	  message text to Ancient Ruins, Upper Level (pup_land/s_f/floor2)
+	  in Pup Land. No functional changes.
+
+2012-04-11 05:40  rjtanner
+
+	* pup_land/s_f/cave1: Grammar changes to sign text in Ancient
+	  Ruins, Cave (pup_land/s_f/cave1) in Pup Land. No functional
+	  changes.
+
+2012-04-11 05:37  rjtanner
+
+	* pup_land/rainbow/w-tower: Typ correction (Fingeri -> Finger) in
+	  message text to Watch Tower (pup_land/rainbow/w-tower) in Pup
+	  Land. No functional changes.
+
+2012-04-11 05:32  rjtanner
+
+	* pup_land/rainbow/station: Grammar update (10 platinum coin -> 10
+	  platinum coins) in message text to Station
+	  (pup_land/rainbow/station) in Pup Land. No functional changes.
+
+2012-04-11 05:15  rjtanner
+
+	* pup_land/rainbow/Lv4/key: Minor dialogue update to Key
+	  (pup_land/rainbow/Lv4/key) in Pup Land. No functional changes.
+
+2012-04-11 05:11  rjtanner
+
+	* pup_land/rainbow/Lv3/Rufto: Dialogue updates to what Rufto has to
+	  say in Rufto (pup_land/rainbow/Lv3/Rufto). No functional changes.
+
+2012-04-10 04:25  rjtanner
+
+	* pup_land/rainbow/Lv2/Kum: Wording updates and changes to Kum's
+	  dialogue in Kum (pup_land/rainbow/Lv2/Kum) in Pup Land.
+
+2012-04-10 04:16  rjtanner
+
+	* pup_land/rainbow/Lv1/t_room: Proper name capitalization in sign
+	  text to Bizuzu's Treasure Room (pup_land/rainbow/Lv1/t_room) in
+	  Pup Land. No functional changes.
+
+2012-04-10 04:14  rjtanner
+
+	* pup_land/rainbow/Lv1/orc_f: Proper name capitalization in sign
+	  text to Orc Farm (pup_land/rainbow/Lv1/orc_f) in Pup Land. No
+	  functional changes.
+
+2012-04-10 04:11  rjtanner
+
+	* pup_land/rainbow/Lv1/hut4: Wording and punctuation update in
+	  message text to Hut (pup_land/rainbow/Lv1/hut4) in Pup Land. No
+	  functional changes.
+
+2012-04-10 04:09  rjtanner
+
+	* pup_land/rainbow/Lv1/hut2: Wording update (captured -> locked up)
+	  in message text to Hut (pup_land/rainbow/Lv1/hut2) in Pup Land.
+	  No functional changes.
+
+2012-04-10 04:05  rjtanner
+
+	* pup_land/rainbow/Lv1/g_road: Wording update (has been lost -> was
+	  lost) in message text to G Road (pup_land/rainbow/Lv1/g_road) in
+	  Pup Land. No functional changes.
+
+2012-04-09 08:13  ryo_saeba
+
+	* quests/cd/cd.tower2.755, quests/quests.quests,
+	  world/world_127_114: Quest: fortress of Ang.
+
+2012-04-09 06:12  rjtanner
+
+	* pup_land/raffle/raffle3_u1: Punctuation and capitalization
+	  correction in message text to Raffle 3, Level 1
+	  (pup_land/raffle/raffle3_u1) in Pup Land. No functional changes.
+
+2012-04-09 06:08  rjtanner
+
+	* pup_land/raffle/raffle2_u3: Update sign text with wording
+	  clarification and direction correction (signed used left for both
+	  - should be right for one) to Raffle 2, Level 3
+	  (pup_land/raffle/raffle2_u3) in Pup Land. No functional changes.
+
+2012-04-09 05:59  rjtanner
+
+	* pup_land/raffle/raffle2_u2_a: Grammar change (has been received
+	  -> has been recognized) in message text to Raffle 2, Level 2a
+	  (pup_land/raffle/raffle2_u2_a) in Pup Land. No functional
+	  changes.
+
+2012-04-09 05:54  rjtanner
+
+	* pup_land/raffle/raffle1_u3: Grammar change (Be aware -> Beware
+	  and use caution) in message text to Raffle 1, Level 3
+	  (pup_land/raffle/raffle1_u3) in Pup Land. No functional changes.
+
+2012-04-09 05:50  rjtanner
+
+	* pup_land/pplant/pplant_ud3: Typo correction (You here a -> You
+	  hear a) in message text to Power Plant, Dungeon Level 3
+	  (pup_land/pplant/pplant_ud3) in Pup Land. No functional changes.
+
+2012-04-09 05:48  rjtanner
+
+	* pup_land/pplant/pplant3: Removed empty line of text to a sign to
+	  Power Plant, Level 3 (pup_land/pplant/pplant3) in Pup Land. No
+	  functional changes.
+
+2012-04-09 05:47  rjtanner
+
+	* pup_land/pplant/pplant2: Wording tweaks and more information
+	  added to NPC dialogue in regards to Nazgul, special ring and
+	  Pupuly's tower in Power Plant, Level 2 (pup_land/pplant/pplant2).
+
+2012-04-09 05:41  rjtanner
+
+	* pup_land/pplant/pplant1: Wording update (It can be flamed -> Fire
+	  hazard) in Power Plant, Level 1 (pup_land/pplant/pplant1) in Pup
+	  Land. No functional changes.
+
+2012-04-09 05:35  rjtanner
+
+	* pup_land/ordeal/tower_ordeal1: Wording update to instructional
+	  text (Please ask for people concerned. -> Please ask the relevant
+	  people for it.) for the Ordeal Key to Tower of Ordeal, Entrance
+	  (pup_land/ordeal/tower_ordeal1) in Pup Land. No functional
+	  changes.
+
+2012-04-08 05:44  rjtanner
+
+	* ChangeLog: Ran svn2cl to update the ChangeLog.
+
 2012-04-08 05:33  rjtanner
 
 	* pup_land/nurnberg/washop: Removed extra spacing in message text
