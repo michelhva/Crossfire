@@ -2,8 +2,9 @@ Object lockable_hdoor
 name unlocked door
 move_block none
 face unlocked_hwooddoor.111
+randomitems lockable_door
 hp 400
-exp 1
+exp 100
 ac 20
 type 20
 material 2
@@ -18,8 +19,9 @@ end
 Object lockable_hdoor_locked
 name locked door
 face locked_hwooddoor.111
+randomitems lockable_door
 hp 400
-exp 1
+exp 100
 ac 20
 move_block all
 alive 1
