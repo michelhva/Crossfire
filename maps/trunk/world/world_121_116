@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-04-17 Rick Tanner
+Modified: 2012-04-19 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_121_115
@@ -4904,10 +4904,17 @@ x 18
 y 34
 elevation 4298
 end
-arch hills_rocky
+arch magic_mouth
+msg
+Fromt he south, a flicker of light catches your attention.
+endmsg
 x 18
 y 35
 elevation 4244
+end
+arch hills_rocky
+x 18
+y 35
 end
 arch steppe
 x 18
@@ -5205,6 +5212,13 @@ arch grass_only
 x 19
 y 34
 elevation 2629
+end
+arch magic_mouth
+msg
+A strip of cloth is tied to a branch on a tree.
+endmsg
+x 19
+y 34
 end
 arch evergreens2
 x 19
@@ -5786,10 +5800,17 @@ x 21
 y 30
 elevation 4790
 end
-arch hills_rocky
+arch magic_mouth
+msg
+The tracks continue south.
+endmsg
 x 21
 y 31
 elevation 4808
+end
+arch hills_rocky
+x 21
+y 31
 end
 arch steppe
 x 21
@@ -6054,10 +6075,17 @@ x 22
 y 29
 elevation 4683
 end
-arch steppe
+arch magic_mouth
+msg
+Someone has removed rocks and dirt here to make the opening wider.
+endmsg
 x 22
 y 30
 elevation 4082
+end
+arch steppe
+x 22
+y 30
 end
 arch mountain
 x 22
@@ -6323,6 +6351,13 @@ arch grass_only
 x 23
 y 30
 elevation 2585
+end
+arch magic_mouth
+msg
+A strip of cloth is tied to a branch on a tree.
+endmsg
+x 23
+y 30
 end
 arch evergreens2
 x 23
@@ -8006,20 +8041,34 @@ x 29
 y 29
 elevation 3589
 end
-arch hills_rocky
+arch magic_mouth
+msg
+More tracks again.  Now turning towards the west.
+endmsg
 x 29
 y 30
 elevation 3876
 end
 arch hills_rocky
 x 29
+y 30
+end
+arch hills_rocky
+x 29
 y 31
 elevation 4059
+end
+arch magic_mouth
+msg
+Footprints now head north, around the cliff face.
+endmsg
+x 29
+y 32
+elevation 4447
 end
 arch hills_rocky
 x 29
 y 32
-elevation 4447
 end
 arch steppe
 x 29
@@ -8282,10 +8331,17 @@ x 30
 y 28
 elevation 2813
 end
-arch grass_only
+arch magic_mouth
+msg
+A strip of cloth is tied to a branch on a tree.
+endmsg
 x 30
 y 29
 elevation 1839
+end
+arch grass_only
+x 30
+y 29
 end
 arch tree3
 x 30
@@ -8872,10 +8928,17 @@ x 32
 y 27
 elevation 2462
 end
-arch grass_only
+arch magic_mouth
+msg
+A strip of cloth is tied to a branch on a tree.
+endmsg
 x 32
 y 28
 elevation 2909
+end
+arch grass_only
+x 32
+y 28
 end
 arch tree3
 x 32
@@ -8886,24 +8949,48 @@ x 32
 y 29
 elevation 3218
 end
-arch hills_rocky
+arch magic_mouth
+msg
+Footprints turn off the road and heads towards the mountains.
+endmsg
 x 32
 y 30
 elevation 3212
 end
-arch grass_only
+arch hills_rocky
+msg
+
+endmsg
+x 32
+y 30
+end
+arch magic_mouth
+msg
+A strip of cloth is tied to a branch on a tree.
+endmsg
 x 32
 y 31
 elevation 2360
+end
+arch grass_only
+x 32
+y 31
 end
 arch tree3
 x 32
 y 31
 end
-arch hills_rocky
+arch magic_mouth
+msg
+Someone tried to cover up their tracks, but has done a poor job.  The tracks head west.
+endmsg
 x 32
 y 32
 elevation 3402
+end
+arch hills_rocky
+x 32
+y 32
 end
 arch steppe
 x 32
