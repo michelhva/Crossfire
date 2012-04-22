@@ -50,10 +50,10 @@ hour = Crossfire.GetTime()[3]
 if not 'init' in dict.keys():
     dict['init'] = 1
     dict['last'] = hour
-    Crossfire.Log(Crossfire.LogDebug, "Bell init")
+    #Crossfire.Log(Crossfire.LogDebug, "Bell init")
 else:
     last = dict['last']
     if (hour != last):
         dict['last'] = hour
-        Crossfire.Log(Crossfire.LogDebug, "Bell ringing")
+        #Crossfire.Log(Crossfire.LogDebug, "Bell ringing")
         ring_bell()
