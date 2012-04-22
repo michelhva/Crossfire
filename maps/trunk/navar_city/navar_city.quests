@@ -22,3 +22,32 @@ end_description
 end_step
 end_quest
 
+quest quests/TrollCanyon
+title Troll Canyon
+face gaelotroll.x31
+description
+I've agreed to go fight some trolls who are building some den in the mountains for Sgt. MacDonald who doesn't have enough troops.
+end_description
+step 10
+description
+I'm searching the entrance of the troll's den. It is situated south-west of Navar, close to the mountains. From the Navar-Scorn road, I should take the dirt road leading to the Training Center, and search the valley south of it.
+end_description
+end_step
+step 20
+description
+I've found the entrance of the troll canyon.
+end_description
+end_step
+step 30
+description
+I've killed the chief, now I should claim the treasure he surely has.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I've found the treasure of the troll canyon.
+end_description
+end_step
+end_quest
+

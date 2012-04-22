@@ -8,7 +8,7 @@ enter_x 19
 enter_y 2
 msg
 Created:  2007-02-03 Brad Reilly
-Modified: 2011-11-21 Rick Tanner
+Modified: 2012-04-22 Nicolas Weeger
 endmsg
 tile_path_1 troll_canyon.8
 tile_path_2 troll_canyon.6
@@ -1049,6 +1049,9 @@ wc -4
 level 14
 attacktype 65
 end
+arch quest_advance_death
+name quests/TrollCanyon 0-20>30
+end
 end
 arch pstone_2
 x 10
@@ -1102,6 +1105,10 @@ material 2064
 value 200
 weight 45000
 magic 2
+arch quest_advance_pickup
+name quests/TrollCanyon 0-30>40
+unique 1
+end
 end
 arch pstone_2
 x 10
