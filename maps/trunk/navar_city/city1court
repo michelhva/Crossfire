@@ -8,7 +8,7 @@ enter_x 10
 enter_y 16
 msg
 Created:  1993-11-01 (john_cater@yahoo.com)
-Modified: 2012-03-14 Rick Tanner
+Modified: 2012-04-22 Nicolas Weeger
 endmsg
 end
 arch cobblestones2
@@ -1672,6 +1672,9 @@ arch warrior_1
 name Staff Sgt. MacDonald
 x 14
 y 11
+arch npc_dialog
+name /navar_city/city1court.msg
+end
 end
 arch cobblestones2
 x 14
