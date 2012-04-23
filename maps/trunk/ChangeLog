@@ -1,3 +1,57 @@
+2012-04-22 14:10  ryo_saeba
+
+	* python/events/clock/bell.py: Don't log the bell, it works.
+
+2012-04-22 13:05  ryo_saeba
+
+	* navar_city/city1court, navar_city/city1court.msg,
+	  navar_city/navar_city.quests,
+	  navar_city/troll_canyon/troll_canyon.1,
+	  navar_city/troll_canyon/troll_canyon.7: Quest: troll canyon,
+	  given by an NPC in the High Court Building.
+
+2012-04-19 05:30  rjtanner
+
+	* world/world_121_116: Add some hints to the world map outside of
+	  Navar (world/world_121_116) to help people find Sanctum of
+	  Devourers.
+
+2012-04-17 06:06  rjtanner
+
+	* navar_city/temples/devourers, world/world_121_116: New map,
+	  Sanctum of Devourers (navar_city/temples/devourers) located in a
+	  somewhat obscure area outside of Navar. Hints to find the map
+	  while keeping with the lore of Navar to be added next. Updated
+	  world map (world/world_121_116) for (cave) entrance to the
+	  Sanctum.
+
+2012-04-15 16:06  ryo_saeba
+
+	* python/items/banquet.py: Simplify script.
+
+2012-04-15 12:50  ryo_saeba
+
+	* python/items/lockable_doors.py: Enable the doors to be
+	  lockpicked.
+
+2012-04-15 10:19  ryo_saeba
+
+	* python/items/lockable_doors.py: Script for lockable doors.
+
+2012-04-15 06:41  rjtanner
+
+	* navar_city/city1houses: Second attempt to revert accidental
+	  checkin of changes to Navar Houses (navar_city/city1houses).
+
+2012-04-15 06:36  rjtanner
+
+	* navar_city/city1houses: Revert accidental check of changes to
+	  Navar Houses (navar_city/city1houses).
+
+2012-04-15 06:24  rjtanner
+
+	* ChangeLog, navar_city/city1houses: Update ChangeLog using svn2cl.
+
 2012-04-15 06:02  rjtanner
 
 	* navar_city/magara/houses/museum, world/world_122_117: Design
