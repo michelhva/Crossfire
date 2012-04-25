@@ -9,7 +9,7 @@ enter_x 1
 enter_y 5
 msg
 Created:  1993-10-28
-Modified: 2012-02-14 Rick Tanner
+Modified: 2012-04-25 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -159,6 +159,14 @@ x 1
 y 11
 end
 arch guard
+msg
+@match *
+Sheesh!  The smell of death when the wind comes over the mountains to the west make standing at this post unbearable!!
+@match death|smell
+Can't you smell it?  Must be a couple hundred corpses up in the mountains all rotting and decaying to make a stench like that.
+@match corpses|dead
+Of course.. nothing, and I meaning nothing.. could smell that bad.
+endmsg
 x 1
 y 11
 end
@@ -761,6 +769,9 @@ y 7
 connected 100
 end
 arch guard
+msg
+
+endmsg
 x 9
 y 7
 end
@@ -885,6 +896,16 @@ x 11
 y 3
 end
 arch c_man
+msg
+@match *
+We were heading north with some trade goods when some monsters ambushed us!
+@match monsters|monster
+They came down from the mountains and attacked, dozens of them and we barely escaped with our lives.
+@match attack|ambush
+The monsters were in some sort of frenzy when they attacked, they were so vicious and ruthless - like nothing we have seen before.
+@match mountains|mountain
+There must be some huge battle happening in the mountain peaks and surrounding valleys.  Stench of rotting flesh is overwhelming.
+endmsg
 x 11
 y 3
 end
@@ -939,7 +960,7 @@ end
 arch magic_ear
 msg
 @match yes
-Please enter, and talk to the next guard
+Please enter, and talk to the next guard.
 Click
 endmsg
 x 11
