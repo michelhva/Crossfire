@@ -1,3 +1,48 @@
+2012-04-29 07:22  rjtanner
+
+	* world/world_104_115: Replace generic church face with Church of
+	  Valriel face in Scorn (world/world_104_115). Requires archetype
+	  update r18206 or newer.
+
+2012-04-27 05:01  rjtanner
+
+	* world/world_104_115: Replace generic temple face with Temple of
+	  Lythander face in Scorn (world/world_104_115).
+
+2012-04-27 04:54  rjtanner
+
+	* world/world_121_117: Replace generic cathedral face with
+	  Cathederal of Mostrai face in Navar (world/world_121_117).
+	  Requires archetype update r18023 or newer.
+
+2012-04-25 18:55  rjtanner
+
+	* world/world_121_117: Spelling correction (yello -> yellow) in
+	  message text to Navar (world/world_121_117).
+
+2012-04-25 05:30  rjtanner
+
+	* world/world_121_117: Added npc dialogue to Navar
+	  (world/world_121_117) with some hints about Spiral Tower lore
+	  (navar_city/tower/*).
+
+2012-04-25 05:12  rjtanner
+
+	* navar_city/city1enter: Added some lore to the Navar Gatehouse
+	  (navar_city/city1enter) as to some changes in the mountains west
+	  of Navar. Give players a warning about wandering mountains north
+	  west of Navar in the mountains. Punctuation in message text.
+
+2012-04-23 06:21  rjtanner
+
+	* world/world_102_108: Correct accidental checkin in r18004 to
+	  world map (world/world_102_108).
+
+2012-04-23 06:17  rjtanner
+
+	* ChangeLog, world/world_102_108: Updated ChangeLog file using
+	  svn2cl.
+
 2012-04-22 14:10  ryo_saeba
 
 	* python/events/clock/bell.py: Don't log the bell, it works.
