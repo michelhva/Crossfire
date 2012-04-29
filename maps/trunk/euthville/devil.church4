@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1993-12-10
-Modified: 2008-10-26 Rick Tanner
+Modified: 2012-04-29 Nicolas Weeger
 endmsg
 end
 arch pstone_1
@@ -165,7 +165,11 @@ end
 arch bwall_2_1_2
 x 1
 end
-arch hole
+arch pstone_1
+x 1
+y 1
+end
+arch stair2_down
 slaying devil.church3
 hp 1
 sp 1
@@ -3710,8 +3714,11 @@ arch pstone_1
 x 28
 y 1
 end
-arch stair_3_down
+arch chole_1
 slaying devil.church5
+msg
+You have a feeling of intense evil magic.
+endmsg
 hp 16
 sp 17
 x 28
