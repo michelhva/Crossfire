@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2012-04-26 Rick Tanner
+Modified: 2012-04-29 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -12551,8 +12551,7 @@ arch brush
 x 43
 y 39
 end
-arch church
-name Church of Valriel
+arch valriel_church
 slaying /scorn/temples/valriel
 hp 9
 sp 28
