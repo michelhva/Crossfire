@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-04-15 Rick Tanner
+Modified: 2012-04-30 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -55,7 +55,7 @@ end
 arch grass
 y 4
 end
-arch church
+arch valriel_church
 name Temple of Valriel
 slaying /navar_city/temples/valriel
 hp 9
