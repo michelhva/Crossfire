@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1996-01-28
-Modified: 2012-04-06 Rick Tanner
+Modified: 2012-05-06 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -8636,7 +8636,7 @@ end
 arch spikes_open
 name 11
 dam 0
-wc 15
+wc 9
 x 36
 y 18
 speed 2.000000
@@ -8838,7 +8838,7 @@ end
 arch spikes_closed
 name 11
 dam 0
-wc 15
+wc 9
 ac 0
 x 37
 y 18
