@@ -8,7 +8,7 @@ enter_x 13
 enter_y 13
 msg
 Created:  1993-10-27
-Modified: 2012-05-06 Rick Tanner
+Modified: 2012-05-07 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -491,17 +491,6 @@ arch light4
 x 4
 y 12
 end
-arch magic_mouth
-msg
-Ah, thank ye.  The Smuggler's Cove is a tiny inlet just southwest of Navar where the top smugglers like to work.  The Smugglers have been conducting a lot of business these past days but a honest bloke like me wouldn't know what that was about.
-endmsg
-food 1
-x 4
-y 12
-connected 5
-move_on 0
-activate_on_release 0
-end
 arch woodfloor
 x 4
 y 12
@@ -523,13 +512,9 @@ endmsg
 x 4
 y 12
 unaggressive 1
+arch npc_dialog
+name /navar_city/bradley.msg
 end
-arch altar
-slaying money
-food 1000
-x 4
-y 13
-connected 5
 end
 arch woodfloor
 x 4
