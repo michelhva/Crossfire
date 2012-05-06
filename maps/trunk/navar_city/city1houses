@@ -6,7 +6,7 @@ width 35
 height 27
 msg
 Created:  1993-11-10
-Modified: 2012-04-15 Rick Tanner
+Modified: 2012-05-06 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -871,6 +871,15 @@ Please can you help me find my daughters?
 endmsg
 x 4
 y 23
+arch NPCGift
+name reward
+arch amethyst
+nrof 15
+end
+end
+arch npc_dialog
+name /navar_city/ben.msg
+end
 end
 arch woodfloor
 x 4

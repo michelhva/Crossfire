@@ -9,7 +9,7 @@ enter_x 2
 enter_y 7
 msg
 Created:  2003-06-10 Avion
-Modified: 2011-11-20 Rick Tanner
+Modified: 2012-05-07 Nicolas Weeger
 endmsg
 end
 arch cave_15
@@ -807,6 +807,11 @@ x 5
 y 20
 see_invisible 1
 can_see_in_dark 1
+no_mood_change 1
+arch bones2
+name giant rat's skull
+material 0
+end
 end
 arch dirtfloor
 x 5
@@ -1416,6 +1421,11 @@ x 10
 y 15
 see_invisible 1
 can_see_in_dark 1
+no_mood_change 1
+arch bones2
+name giant rat's skull
+material 0
+end
 end
 arch dirtfloor
 x 10
@@ -1722,6 +1732,16 @@ end
 arch dirtfloor
 x 12
 y 23
+end
+arch woman
+name Susan
+x 12
+y 23
+stand_still 1
+no_mood_change 1
+arch npc_dialog
+name /navar_city/smugglers_cove/susan.msg
+end
 end
 arch dirtfloor
 x 12
@@ -3952,6 +3972,11 @@ x 29
 y 10
 see_invisible 1
 can_see_in_dark 1
+no_mood_change 1
+arch bones2
+name giant rat's skull
+material 0
+end
 end
 arch dirtfloor
 x 29
@@ -4443,6 +4468,11 @@ x 33
 y 5
 see_invisible 1
 can_see_in_dark 1
+no_mood_change 1
+arch bones2
+name giant rat's skull
+material 0
+end
 end
 arch dirtfloor
 x 33

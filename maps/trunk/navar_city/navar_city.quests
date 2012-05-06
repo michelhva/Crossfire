@@ -51,3 +51,42 @@ end_description
 end_step
 end_quest
 
+quest navar/rescue-daughters
+title Rescue Ben's daughters
+face man.151
+description
+I have been tasked to save Ben's daughters.
+end_description
+step 10
+description
+Ben asked me to save his daughters who were kidnapped by pirates. Someone in the Frolicking Mermaid may know where that cove is.
+end_description
+end_step
+step 20
+description
+The pirates's cove is located in an old warehouse just south of Navar, 
+end_description
+end_step
+step 30
+description
+I've found the cove, I should search the daughters.
+end_description
+end_step
+step 40
+description
+I've rescued Nancy, but Susan was sent to the monsters just east, I should save her.
+end_description
+end_step
+step 50
+description
+I've rescued both daughters, I can claim my reward.
+end_description
+end_step
+step 60
+finishes_quest
+description
+Ben rewarded me.
+end_description
+end_step
+end_quest
+
