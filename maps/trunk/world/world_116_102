@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2012-05-08 Rick Tanner
+Modified: 2012-05-10 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -6445,7 +6445,7 @@ x 23
 y 19
 elevation 2272
 end
-arch tree3
+arch cwall_2_2_2
 x 23
 y 19
 end
@@ -6454,7 +6454,7 @@ x 23
 y 20
 elevation 2424
 end
-arch tree3
+arch cwall_2_1_1
 x 23
 y 20
 end
@@ -6463,7 +6463,7 @@ x 23
 y 21
 elevation 2562
 end
-arch tree3
+arch cwall_2_1_1
 x 23
 y 21
 end
@@ -6472,7 +6472,7 @@ x 23
 y 22
 elevation 2665
 end
-arch tree3
+arch cwall_2_1_1
 x 23
 y 22
 end
@@ -6481,7 +6481,7 @@ x 23
 y 23
 elevation 0
 end
-arch cwall_2_1_2
+arch cwall_2_2_4
 x 23
 y 23
 end
@@ -6802,7 +6802,7 @@ x 24
 y 19
 elevation 2036
 end
-arch tree3
+arch cwall_2_1_2
 x 24
 y 19
 end
@@ -6838,7 +6838,7 @@ x 24
 y 23
 elevation 0
 end
-arch cwall_2_1_2
+arch tree5
 x 24
 y 23
 end
@@ -7135,7 +7135,7 @@ x 25
 y 19
 elevation 1902
 end
-arch tree3
+arch cwall_2_1_2
 x 25
 y 19
 end
@@ -7144,30 +7144,21 @@ x 25
 y 20
 elevation 638
 end
-arch grass_only
+arch tree3
+x 25
+y 20
+end
+arch cobblestones2
 x 25
 y 21
 elevation 1905
 end
-arch tree3
-x 25
-y 21
-end
-arch grass_only
+arch cobblestones2
 x 25
 y 22
 elevation 1684
 end
-arch tree3
-x 25
-y 22
-end
-arch grass
-x 25
-y 23
-elevation 0
-end
-arch cwall_2_1_2
+arch cobblestones2
 x 25
 y 23
 end
@@ -7457,7 +7448,7 @@ x 26
 y 19
 elevation 2111
 end
-arch tree3
+arch cwall_2_1_2
 x 26
 y 19
 end
@@ -7470,14 +7461,10 @@ arch tree3
 x 26
 y 20
 end
-arch grass_only
+arch cobblestones2
 x 26
 y 21
 elevation 1500
-end
-arch tree3
-x 26
-y 21
 end
 arch grass_only
 x 26
@@ -7493,7 +7480,7 @@ x 26
 y 23
 elevation 0
 end
-arch cwall_2_1_2
+arch tree3
 x 26
 y 23
 end
@@ -7812,7 +7799,7 @@ x 27
 y 19
 elevation 2114
 end
-arch tree3
+arch cwall_2_1_2
 x 27
 y 19
 end
@@ -7821,11 +7808,11 @@ x 27
 y 20
 elevation 1815
 end
-arch tree5
+arch tree3
 x 27
 y 20
 end
-arch jungle_1
+arch cobblestones2
 x 27
 y 21
 elevation 1232
@@ -7835,12 +7822,16 @@ x 27
 y 22
 elevation 318
 end
+arch tree5
+x 27
+y 22
+end
 arch grass
 x 27
 y 23
 elevation 0
 end
-arch cwall_2_1_2
+arch tree3
 x 27
 y 23
 end
@@ -8126,7 +8117,7 @@ x 28
 y 19
 elevation 1600
 end
-arch tree3
+arch cwall_2_1_2
 x 28
 y 19
 end
@@ -8135,30 +8126,17 @@ x 28
 y 20
 elevation 1533
 end
-arch tree3
-x 28
-y 20
-end
-arch grass_only
+arch cobblestones2
 x 28
 y 21
 elevation 1307
 end
-arch tree3
-x 28
-y 21
-end
-arch brush
+arch cobblestones2
 x 28
 y 22
 elevation 829
 end
-arch grass
-x 28
-y 23
-elevation 0
-end
-arch cwall_2_1_2
+arch cobblestones2
 x 28
 y 23
 end
@@ -8493,30 +8471,33 @@ x 29
 y 19
 elevation 626
 end
-arch grass_only
+arch cwall_2_1_2
+x 29
+y 19
+end
+arch cobblestones2
 x 29
 y 20
 elevation 1257
 end
-arch tree3
+arch valkyrie_temple
+slaying ../darcap/darcap/temples/valkyrie
+hp 13
+sp 21
 x 29
 y 20
 end
-arch grass_only
+arch cobblestones2
 x 29
 y 21
 elevation 1283
-end
-arch tree3
-x 29
-y 21
 end
 arch grass_only
 x 29
 y 22
 elevation 1051
 end
-arch tree3
+arch lamppost
 x 29
 y 22
 end
@@ -8524,10 +8505,6 @@ arch grass
 x 29
 y 23
 elevation 0
-end
-arch cwall_2_1_2
-x 29
-y 23
 end
 arch cobblestones2
 x 29
@@ -8845,7 +8822,7 @@ x 30
 y 19
 elevation 0
 end
-arch cwall_2_1_1
+arch cwall_3_4
 x 30
 y 19
 end
@@ -8881,7 +8858,7 @@ x 30
 y 23
 elevation 0
 end
-arch cwall_3_1
+arch cwall_2_2_1
 x 30
 y 23
 end
