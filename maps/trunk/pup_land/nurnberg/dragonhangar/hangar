@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  1997-02-19
-Modified: 2012-04-07 Rick Tanner
+Modified: 2012-05-11 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -10931,6 +10931,7 @@ y 3
 connected 94
 end
 arch invis_exit
+name lake country
 slaying /world/world_109_126
 msg
 The random ride is heading for Lake Country today.
