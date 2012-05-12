@@ -1,6 +1,13 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Convert Castle Wall Marble column and Castle Wall Gray Marble column to Indexed
+(was gray scale) images.  Now they appear with transparent backgrounds in the
+map editor and are in the same format as the other images.
+wall/cwall/cwall_marble.base.111.png
+wall/cwall/cwall_graymarble.base.111.png
+RJT 2012-05-12
+
 Very minor pixel touch up and color replacement on the sign to Fantasy
 Store graphic.
 shop/store_gene_fant.base.x11.png
