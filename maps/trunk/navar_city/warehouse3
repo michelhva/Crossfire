@@ -8,7 +8,7 @@ enter_x 2
 enter_y 34
 msg
 Created:  1993-11-10
-Modified: 2012-02-14 Rick Tanner
+Modified: 2012-05-12 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -641,7 +641,7 @@ x 2
 y 32
 end
 arch locked_door1
-slaying set_individual_value smuggle
+slaying navar_smuggle
 face ldoor_brown1.111
 x 2
 y 32
@@ -1567,8 +1567,12 @@ level 6
 carrying 65600
 arch key2
 name Key
-slaying set_individual_value ware
+slaying navar_ware
 face key_brown.111
+arch quest_advance_pickup
+name navar/smugglers 20>30
+unique 1
+end
 end
 arch sword_4
 end
@@ -3830,9 +3834,9 @@ y 9
 end
 arch locked_door1
 name wall
-slaying set_individual_value smugdoor
+slaying navar_smugdoor
 msg
-This wall sounds hollow, but you cannot get in, but there is a keyhole.
+This wall sounds hollow, but you cannot get in. There is a stained keyhole.
 endmsg
 face wwall_A.111
 x 17

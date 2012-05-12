@@ -8,7 +8,7 @@ enter_x 13
 enter_y 13
 msg
 Created:  1993-10-27
-Modified: 2012-05-07 Nicolas Weeger
+Modified: 2012-05-12 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -2429,8 +2429,8 @@ y 3
 carrying 100
 unaggressive 1
 arch key2
-name A Key
-slaying set_individual_value smugdoor
+name stained key
+slaying navar_smugdoor
 end
 end
 arch woodfloor

@@ -8,7 +8,7 @@ enter_x 10
 enter_y 16
 msg
 Created:  1993-11-01 (john_cater@yahoo.com)
-Modified: 2012-04-22 Nicolas Weeger
+Modified: 2012-05-12 Nicolas Weeger
 endmsg
 end
 arch cobblestones2
@@ -1631,22 +1631,6 @@ arch cobblestones2
 x 14
 y 8
 end
-arch magic_ear
-msg
-@match quest
-So you are the ones who think they can get rid of these smugglers...well we have tried and they keep coming back.  Well you might want to talk to the Dwarven priests in the church, they do know something that they won't tell us, something about being worthy.
-@match smugglers
-What a vile bunch they are those smugglers, with many allies.
-@match allies
-Aye, some say they are in league with Devils.
-@match priests
-Well if ya want ta know about them...go ask them yourself.
-@match *
-I'm Staff Sgt. MacDonald, what can I do for ya.
-endmsg
-x 14
-y 9
-end
 arch cobblestones2
 x 14
 y 9
@@ -2230,6 +2214,20 @@ end
 arch chair_3.2
 x 19
 y 5
+end
+arch fighter
+name Lt. Piltro
+x 19
+y 5
+direction 6
+arch npc_dialog
+name /navar_city/piltro.msg
+end
+arch NPCGift
+arch amethyst
+nrof 10
+end
+end
 end
 arch cobblestones2
 x 19
