@@ -2727,15 +2727,9 @@ x 6
 y 19
 elevation -2256
 end
-arch galleon
-name sailing galleon
+arch sailing_galleon
 x 6
 y 19
-speed 0.5
-type 2
-container 10000000
-move_type boat
-passenger_limit 2
 end
 arch dungeon_magic
 x 6
