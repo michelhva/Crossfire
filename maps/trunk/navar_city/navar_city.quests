@@ -90,3 +90,47 @@ end_description
 end_step
 end_quest
 
+quest navar/smugglers
+title Navar's smugglers
+face northman.111
+description
+I've been tasked to fight Navar's smugglers.
+end_description
+step 10
+description
+According to Lt. Piltro, I should talk to the Dwarven priests in Mostrai's cathedral.
+end_description
+end_step
+step 20
+description
+I have the key to one of the warehouses which the smugglers use.
+end_description
+end_step
+step 30
+description
+I found another key, and should try to figure which warehouse it corresponds to.
+end_description
+end_step
+step 40
+description
+According to the man I rescued, the entrance is in the lighthouse, I need to go to the top and then down.
+end_description
+end_step
+step 50
+description
+I have found the smuggler's ship, I should find and kill their boss.
+end_description
+end_step
+step 60
+description
+I have killed the smuggler's boss, I should go talk to Lt. Piltro.
+end_description
+end_step
+step 70
+finishes_quest
+description
+Lt. Piltro gave me a reward.
+end_description
+end_step
+end_quest
+

@@ -8,7 +8,7 @@ enter_x 27
 enter_y 15
 msg
 Created:  1993-11-12
-Modified: 2012-05-06 Nicolas Weeger
+Modified: 2012-05-12 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -172,7 +172,7 @@ x 1
 y 11
 end
 arch locked_door1
-slaying set_individual_value ware
+slaying navar_ware
 msg
 For some reason this door is locked.
 endmsg
@@ -186,13 +186,6 @@ x 1
 y 12
 end
 arch woodfloor
-x 1
-y 13
-end
-arch key2
-name Lighthouse Key
-slaying set_individual_value lightkey
-face key_blue.111
 x 1
 y 13
 end
@@ -212,6 +205,15 @@ endmsg
 x 1
 y 14
 stand_still 1
+arch NPCGift
+arch blue_key
+name Navar lighthouse key
+slaying navar_lightkey
+end
+end
+arch npc_dialog
+name /navar_city/warehouse4.msg
+end
 end
 arch woodfloor
 x 1

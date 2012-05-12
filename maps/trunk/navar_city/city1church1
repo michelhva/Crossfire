@@ -8,7 +8,7 @@ enter_x 14
 enter_y 33
 msg
 Created:  1993-11-10 Cater & Wade (john_cater@yahoo.com)
-Modified: 2012-02-14 Rick Tanner
+Modified: 2012-05-12 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -2137,6 +2137,25 @@ arch flagstone
 x 9
 y 8
 end
+arch dwarf_priest
+msg
+@match smugglers
+Then I can help you....the smugglers are headquartered in one of the warehouses.  Which one I do not know, but it may lead to their enterance to the city.  Here is the key to their front door.
+@match *
+Are you here about the smugglers??
+endmsg
+x 9
+y 8
+arch NPCGift
+arch brown_key
+name Key to a Navar warehouse
+slaying navar_smuggle
+end
+end
+arch npc_dialog
+name /navar_city/mostrai_priest.msg
+end
+end
 arch flagstone
 x 9
 y 9
@@ -2375,24 +2394,7 @@ arch flagstone
 x 10
 y 8
 end
-arch dwarf_priest
-msg
-@match smugglers
-Then I can help you....the smugglers are headquartered in one of the warehouses.  Which one I do not know, but it may lead to their enterance to the city.  Here is the key to their front door.
-@match *
-Are you here about the smugglers??
-endmsg
-x 10
-y 8
-end
 arch flagstone
-x 10
-y 9
-end
-arch key2
-name A Key to a Door
-slaying set_individual_value smuggle
-face key_brown.111
 x 10
 y 9
 end
@@ -4444,28 +4446,15 @@ arch flagstone
 x 19
 y 7
 end
-arch flagstone
-x 19
-y 8
-end
-arch dwarf_priest
-msg
-@match smugglers
-Then I can help you....the smugglers are headquartered in one of the warehouses.  Which one I do not know, but it may lead to their enterance to the city.  Here is a key to their front door
-@match *
-Are you here about the smugglers??
-endmsg
+arch light4
 x 19
 y 8
 end
 arch flagstone
 x 19
-y 9
+y 8
 end
-arch key2
-name A Key to a Door
-slaying set_individual_value smuggle
-face key_brown.111
+arch flagstone
 x 19
 y 9
 end
@@ -4695,6 +4684,25 @@ end
 arch flagstone
 x 20
 y 8
+end
+arch dwarf_priest
+msg
+@match smugglers
+Then I can help you....the smugglers are headquartered in one of the warehouses.  Which one I do not know, but it may lead to their enterance to the city.  Here is the key to their front door.
+@match *
+Are you here about the smugglers??
+endmsg
+x 20
+y 8
+arch NPCGift
+arch brown_key
+name Key to a Navar warehouse
+slaying navar_smuggle
+end
+end
+arch npc_dialog
+name /navar_city/mostrai_priest.msg
+end
 end
 arch flagstone
 x 20
