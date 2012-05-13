@@ -1,3 +1,102 @@
+2012-05-12 16:36  ryo_saeba
+
+	* world/world_103_127: Use archetype.
+
+2012-05-12 16:34  ryo_saeba
+
+	* world/world_105_115: Use archetype.
+
+2012-05-12 16:31  ryo_saeba
+
+	* world/world_105_115: Use archetype.
+
+2012-05-12 12:19  ryo_saeba
+
+	* navar_city/temples/valkyrie2: Fix god's name.
+
+2012-05-12 12:17  ryo_saeba
+
+	* navar_city/city1church1, navar_city/city1court,
+	  navar_city/light/light0, navar_city/light/light1,
+	  navar_city/light/smugship1, navar_city/misc/city1mermaid,
+	  navar_city/mostrai_priest.msg, navar_city/navar_city.quests,
+	  navar_city/piltro.msg, navar_city/warehouse3,
+	  navar_city/warehouse4, navar_city/warehouse4.msg: Quest: Navar
+	  smugglers.
+
+2012-05-12 12:13  ryo_saeba
+
+	* navar_city/ben.msg: Missing message file.
+
+2012-05-12 12:13  ryo_saeba
+
+	* navar_city/bradley.msg: Missing message file.
+
+2012-05-11 05:14  rjtanner
+
+	* dragonisland/hangar, lake_country/dragon_hangar/hangar,
+	  navar_city/dragon_hangar/hangar,
+	  pup_land/lone_town/dragonhangar/hangar,
+	  pup_land/nurnberg/dragonhangar/hangar: Rename invis_exit in
+	  random destinations to lake country (/world/world_109_126) in all
+	  five Dragon Hanger maps. Technical change, no functional changes.
+
+2012-05-10 06:05  rjtanner
+
+	* darcap/darcap/temples, darcap/darcap/temples/valkyrie,
+	  world/world_116_102: New map in Darcap, Temple of Valkyrie
+	  (darcap/darcap/temples/valkyrie). World map in Darcap
+	  (world/world_116_102) updated to make room for the temple.
+
+2012-05-09 05:42  rjtanner
+
+	* scorn/shops/bank: Moved map idea credit to the map header in Bank
+	  of Skud (scorn/shops/bank) in Scorn. Technical change only, no
+	  functional changes.
+
+2012-05-08 06:51  rjtanner
+
+	* world/world_116_102: Stacking change so that fence (swall)
+	  section merges nicer with nearby wall near Darcap Circus in
+	  Darcap (world/world_116_102). Cosmetic change only, no functional
+	  changes.
+
+2012-05-08 06:33  rjtanner
+
+	* world/world_116_102: Replace generic chruch graphic with Church
+	  of Devourers face for St Andreas the Ravenous in Navar
+	  (world/world_116_102).
+
+2012-05-08 06:22  rjtanner
+
+	* scorn/shops/foodshop, world/world_104_115: Enlarged the lobby
+	  area of Food Shop Warehouse (scorn/shops/foodshop) in Scorn to
+	  give players more room to move around each other. Updated world
+	  map to reflect changes in entrance coordinates.
+
+2012-05-06 22:50  ryo_saeba
+
+	* navar_city/city1houses, navar_city/misc/city1mermaid,
+	  navar_city/navar_city.quests,
+	  navar_city/smugglers_cove/nancy.msg,
+	  navar_city/smugglers_cove/sc_warehouse2,
+	  navar_city/smugglers_cove/sc_warehouse3,
+	  navar_city/smugglers_cove/susan.msg, world/world_122_117: Quest:
+	  rescue Ben's daughters.
+
+2012-05-06 21:02  ryo_saeba
+
+	* navar_city/warehouse4: Expand locked zone to not be able to talk
+	  without opening the room. Force to stay still.
+
+2012-05-06 16:04  ryo_saeba
+
+	* pup_land/lone_town/pupuly: Fix out of bounds opened state.
+
+2012-05-06 06:21  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
 2012-05-06 06:02  rjtanner
 
 	* navar_city/misc/city1mermaid: Update entrance x,y coordinates to
