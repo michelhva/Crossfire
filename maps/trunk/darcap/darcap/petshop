@@ -11,7 +11,7 @@ enter_x 7
 enter_y 23
 msg
 Created:  2010-09-28 neodeno
-Modified: 2012-01-29 Rick Tanner
+Modified: 2012-05-15 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -640,6 +640,10 @@ move_block swim boat
 no_magic 1
 damned 1
 end
+arch swall_1_4_half
+x 3
+y 22
+end
 arch hedge_1_3
 x 3
 y 22
@@ -781,11 +785,9 @@ move_block swim boat
 no_magic 1
 damned 1
 end
-arch swall_1_4
+arch swall_2_1_2
 x 4
 y 22
-no_magic 1
-damned 1
 end
 arch grass
 x 4
@@ -873,12 +875,13 @@ move_block swim boat
 no_magic 1
 damned 1
 end
-arch hedge_2_2_3
+arch hedge_1_3
 x 5
 y 18
-move_block all
-no_magic 1
-damned 1
+end
+arch swall_1_1_half
+x 5
+y 18
 end
 arch grass
 x 5
@@ -887,11 +890,9 @@ move_block swim boat
 no_magic 1
 damned 1
 end
-arch swall_1_1
+arch swall_1_2_half
 x 5
 y 19
-no_magic 1
-damned 1
 end
 arch footpath_2_1_2
 x 5
@@ -913,11 +914,9 @@ move_block swim boat
 no_magic 1
 damned 1
 end
-arch swall_2_1_1
+arch swall_1_1
 x 5
 y 21
-no_magic 1
-damned 1
 end
 arch grass
 x 5
@@ -1485,7 +1484,7 @@ arch dirtfloor
 x 9
 y 4
 end
-arch wall_3_3
+arch wall_2_1_2
 x 9
 y 4
 end
@@ -1511,7 +1510,7 @@ arch dirtfloor
 x 9
 y 7
 end
-arch wall_3_4
+arch wall_1_3
 x 9
 y 7
 end
@@ -1528,7 +1527,7 @@ arch dirtfloor
 x 9
 y 9
 end
-arch wall_3_1
+arch wall_2_1_2
 x 9
 y 9
 end
@@ -1599,7 +1598,7 @@ arch dirtfloor
 x 10
 y 1
 end
-arch wall_3_3
+arch wall_2_1_2
 x 10
 y 1
 end
@@ -1625,7 +1624,7 @@ arch dirtfloor
 x 10
 y 4
 end
-arch wall_2_2_4
+arch wall_1_3
 x 10
 y 4
 end
@@ -2305,7 +2304,7 @@ arch dirtfloor
 x 15
 y 1
 end
-arch wall_3_3
+arch wall_2_1_2
 x 15
 y 1
 end
@@ -2331,7 +2330,7 @@ arch dirtfloor
 x 15
 y 4
 end
-arch wall_2_2_1
+arch wall_1_4
 x 15
 y 4
 end
@@ -2343,7 +2342,7 @@ arch dirtfloor
 x 15
 y 6
 end
-arch wall_2_2_2
+arch wall_1_4
 x 15
 y 6
 end
@@ -2369,7 +2368,7 @@ arch dirtfloor
 x 15
 y 9
 end
-arch wall_3_1
+arch wall_2_1_2
 x 15
 y 9
 end
@@ -2770,7 +2769,11 @@ arch dirtfloor
 x 18
 y 4
 end
-arch wall_4
+arch wall_2_2_4
+x 18
+y 4
+end
+arch swall_1_4_half
 x 18
 y 4
 end
@@ -2786,7 +2789,7 @@ arch dirtfloor
 x 18
 y 6
 end
-arch wall_3_4
+arch wall_2_2_3
 x 18
 y 6
 end
@@ -2925,7 +2928,7 @@ arch woodfloor2
 x 19
 y 4
 end
-arch swall_2_1_2
+arch swall_1_3
 x 19
 y 4
 end
@@ -3376,7 +3379,11 @@ arch woodfloor2
 x 21
 y 1
 end
-arch wall_3_3
+arch wall_2_1_2
+x 21
+y 1
+end
+arch swall_1_1_half
 x 21
 y 1
 end
@@ -3400,7 +3407,7 @@ arch woodfloor2
 x 21
 y 4
 end
-arch swall_3_1
+arch swall_2_2_1
 x 21
 y 4
 end
@@ -3428,11 +3435,13 @@ arch woodfloor2
 x 21
 y 7
 end
-arch wall_2_1_2
+arch swall_1_4_half
 x 21
 y 7
-no_magic 1
-damned 1
+end
+arch wall_1_3
+x 21
+y 7
 end
 arch shop_empty
 face woodfloor2.111
@@ -3579,7 +3588,7 @@ arch woodfloor2
 x 22
 y 4
 end
-arch swall_2_1_2
+arch swall_1_3
 x 22
 y 4
 end
@@ -4039,7 +4048,11 @@ arch woodfloor2
 x 24
 y 1
 end
-arch wall_3_3
+arch wall_2_1_2
+x 24
+y 1
+end
+arch swall_1_1_half
 x 24
 y 1
 end
@@ -4319,7 +4332,7 @@ arch woodfloor2
 x 25
 y 4
 end
-arch swall_2_1_2
+arch swall_1_3
 x 25
 y 4
 end
@@ -4701,7 +4714,7 @@ arch woodfloor2
 x 27
 y 4
 end
-arch wall_4
+arch wall_2_2_1
 x 27
 y 4
 end
@@ -4717,7 +4730,7 @@ arch woodfloor2
 x 27
 y 6
 end
-arch wall_2_1_1
+arch wall_1_1
 x 27
 y 6
 end
@@ -4725,7 +4738,11 @@ arch woodfloor2
 x 27
 y 7
 end
-arch wall_4
+arch wall_3_2
+x 27
+y 7
+end
+arch swall_1_3_half
 x 27
 y 7
 end
@@ -4860,7 +4877,7 @@ arch woodfloor2
 x 28
 y 4
 end
-arch wall_2_1_2
+arch wall_1_3
 x 28
 y 4
 end
@@ -4876,7 +4893,7 @@ arch woodfloor2
 x 28
 y 7
 end
-arch wall_2_1_2
+arch wall_1_3
 x 28
 y 7
 end
@@ -5011,19 +5028,19 @@ arch woodfloor2
 x 29
 y 6
 end
-arch woodfloor2
-x 29
-y 7
-end
-arch door_2
-x 29
-y 7
-end
 arch magic_mouth
 msg
 Above the door is a sign carved in wood that reads "DUTY".  You notice on the other side of the door there is a sign above it that reads "RESPECT".
 endmsg
 food 1
+x 29
+y 7
+end
+arch woodfloor2
+x 29
+y 7
+end
+arch door_2
 x 29
 y 7
 end
@@ -5163,7 +5180,7 @@ arch woodfloor2
 x 30
 y 4
 end
-arch wall_2_1_2
+arch wall_1_4
 x 30
 y 4
 end
@@ -5179,7 +5196,7 @@ arch woodfloor2
 x 30
 y 7
 end
-arch wall_2_1_2
+arch wall_1_4
 x 30
 y 7
 end
@@ -5521,7 +5538,7 @@ arch woodfloor2
 x 32
 y 13
 end
-arch wall_2_1_2
+arch wall_3_1
 x 32
 y 13
 end
@@ -5598,7 +5615,7 @@ arch woodfloor2
 x 33
 y 1
 end
-arch wall_2_1_2
+arch wall_1_3
 x 33
 y 1
 end
@@ -5654,7 +5671,7 @@ arch woodfloor2
 x 33
 y 13
 end
-arch wall_2_1_2
+arch wall_1_3
 x 33
 y 13
 end
@@ -5844,7 +5861,7 @@ arch woodfloor2
 x 35
 y 1
 end
-arch wall_2_1_2
+arch wall_1_4
 x 35
 y 1
 end
@@ -5900,7 +5917,7 @@ arch woodfloor2
 x 35
 y 13
 end
-arch wall_2_1_2
+arch wall_1_4
 x 35
 y 13
 end
@@ -6098,7 +6115,7 @@ arch woodfloor2
 x 37
 y 4
 end
-arch woodwall_win1
+arch window_win1
 x 37
 y 4
 end
@@ -6146,7 +6163,7 @@ arch woodfloor2
 x 37
 y 10
 end
-arch woodwall_win1
+arch window_win1
 x 37
 y 10
 end
