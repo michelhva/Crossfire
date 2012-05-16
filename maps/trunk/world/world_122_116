@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-04-30 Rick Tanner
+Modified: 2012-05-16 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -3721,6 +3721,10 @@ x 10
 y 42
 end
 arch hovels
+name Ava's House
+slaying ../navar_city/houses/avashouse
+hp 4
+sp 6
 x 10
 y 42
 end
@@ -3733,6 +3737,10 @@ x 10
 y 43
 end
 arch hovels
+name Rudy's Cottage
+slaying ../navar_city/houses/rudyscottage
+hp 5
+sp 4
 x 10
 y 43
 end
@@ -3745,6 +3753,10 @@ x 10
 y 44
 end
 arch hovels
+name Dorgan's House
+slaying ../navar_city/houses/dorganshouse
+hp 6
+sp 4
 x 10
 y 44
 end
@@ -4408,6 +4420,10 @@ x 12
 y 42
 end
 arch house_small
+name Han's Hut
+slaying ../navar_city/houses/hanshut
+hp 7
+sp 4
 x 12
 y 42
 end
@@ -4420,6 +4436,10 @@ x 12
 y 43
 end
 arch house_small
+name Jeb's House
+slaying ../navar_city/houses/jebshouse
+hp 2
+sp 7
 x 12
 y 43
 end
@@ -4440,9 +4460,10 @@ x 12
 y 45
 end
 arch house_1
-slaying /navar_city/city1houses
-hp 13
-sp 25
+name Ian's House
+slaying ../navar_city/houses/ianshouse
+hp 5
+sp 4
 x 12
 y 45
 end
@@ -4463,9 +4484,10 @@ x 12
 y 47
 end
 arch house_small
-slaying /navar_city/city1houses
-hp 25
-sp 25
+name Little Rumble House
+slaying ../navar_city/houses/small_house5
+hp 2
+sp 7
 x 12
 y 47
 end
@@ -5148,9 +5170,10 @@ x 14
 y 41
 end
 arch house_1
-slaying /navar_city/city1houses
-hp 5
-sp 25
+name Ben's Cottage
+slaying ../navar_city/houses/benscottage
+hp 6
+sp 4
 x 14
 y 41
 end
@@ -5195,9 +5218,10 @@ x 14
 y 45
 end
 arch house_1
-slaying /navar_city/city1houses
-hp 21
-sp 25
+name Eli's House
+slaying ../navar_city/houses/elishouse
+hp 6
+sp 4
 x 14
 y 45
 end

@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-05-14 Rick Tanner
+Modified: 2012-05-16 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_121_115
@@ -11793,9 +11793,10 @@ x 40
 y 45
 end
 arch house_long
-slaying /navar_city/city1houses
-hp 7
-sp 19
+name Todd's Cabin
+slaying ../navar_city/houses/toddscabin
+hp 2
+sp 5
 x 40
 y 45
 end
@@ -12177,10 +12178,10 @@ x 41
 y 44
 end
 arch s_shop2
-name small house
-slaying /navar_city/city1houses
-hp 3
-sp 19
+name Berl's Small House
+slaying ../navar_city/houses/berlssmallhouse
+hp 4
+sp 5
 x 41
 y 44
 end
@@ -12893,9 +12894,10 @@ x 43
 y 42
 end
 arch minihouse
-slaying /navar_city/city1houses
-hp 23
-sp 7
+name Kara's Small House
+slaying ../navar_city/houses/karassmallhouse
+hp 5
+sp 2
 x 43
 y 42
 end
@@ -13249,10 +13251,10 @@ x 44
 y 42
 end
 arch s_shop1
-name small house
-slaying /navar_city/city1houses
-hp 32
-sp 7
+name Turl's Small House
+slaying ../navar_city/houses/turlssmallhouse
+hp 7
+sp 2
 x 44
 y 42
 end
@@ -13635,9 +13637,9 @@ x 45
 y 42
 end
 arch house_long
-slaying /navar_city/city1houses
-hp 16
-sp 7
+slaying ../navar_city/houses/jordanshouse
+hp 11
+sp 2
 x 45
 y 42
 end
@@ -14717,7 +14719,8 @@ x 48
 y 42
 end
 arch minihouse
-slaying /navar_city/city1houses
+name Strom's Small House
+slaying ../navar_city/houses/stromssmallhouse
 hp 3
 sp 4
 x 48
@@ -15118,8 +15121,9 @@ x 49
 y 42
 end
 arch house_1
-slaying /navar_city/city1houses
-hp 9
+name Mason's House
+slaying ../navar_city/houses/masonshouse
+hp 3
 sp 3
 x 49
 y 42
