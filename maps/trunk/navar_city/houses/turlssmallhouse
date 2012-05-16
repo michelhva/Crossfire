@@ -1,0 +1,478 @@
+arch map
+name Turl's Small House
+difficulty 1
+region navar
+width 10
+height 8
+enter_x 7
+enter_y 2
+msg
+Created:  2012-03-20 Rick Tanner
+Modified: 2012-05-16 Rick Tanner
+endmsg
+end
+arch blocked
+end
+arch blocked
+y 1
+end
+arch blocked
+y 2
+end
+arch blocked
+y 3
+end
+arch blocked
+y 4
+end
+arch blocked
+y 5
+end
+arch blocked
+y 6
+end
+arch blocked
+y 7
+end
+arch blocked
+x 1
+end
+arch dungeon_floor
+x 1
+y 1
+end
+arch bwall_2_2_2
+x 1
+y 1
+end
+arch dungeon_floor
+x 1
+y 2
+end
+arch bwall_2_1_1
+x 1
+y 2
+end
+arch dungeon_floor
+x 1
+y 3
+end
+arch bwall_2_1_1
+x 1
+y 3
+end
+arch dungeon_floor
+x 1
+y 4
+end
+arch bwall_2_1_1
+x 1
+y 4
+end
+arch dungeon_floor
+x 1
+y 5
+end
+arch bwall_2_1_1
+x 1
+y 5
+end
+arch dungeon_floor
+x 1
+y 6
+end
+arch bwall_2_2_1
+x 1
+y 6
+end
+arch blocked
+x 1
+y 7
+end
+arch blocked
+x 2
+end
+arch dungeon_floor
+x 2
+y 1
+end
+arch bwall_2_1_2
+x 2
+y 1
+end
+arch dungeon_floor
+x 2
+y 2
+end
+arch dungeon_floor
+x 2
+y 3
+end
+arch dungeon_floor
+x 2
+y 4
+end
+arch dungeon_floor
+x 2
+y 5
+end
+arch bed_1
+x 2
+y 5
+end
+arch dungeon_floor
+x 2
+y 6
+end
+arch bwall_2_1_2
+x 2
+y 6
+end
+arch blocked
+x 2
+y 7
+end
+arch blocked
+x 3
+end
+arch dungeon_floor
+x 3
+y 1
+end
+arch bwall_2_1_2
+x 3
+y 1
+end
+arch dungeon_floor
+x 3
+y 2
+end
+arch dungeon_floor
+x 3
+y 3
+end
+arch dungeon_floor
+x 3
+y 4
+end
+arch table_4
+x 3
+y 4
+end
+arch dungeon_floor
+x 3
+y 5
+end
+arch dungeon_floor
+x 3
+y 6
+end
+arch bwall_2_1_2
+x 3
+y 6
+end
+arch blocked
+x 3
+y 7
+end
+arch blocked
+x 4
+end
+arch dungeon_floor
+x 4
+y 1
+end
+arch bwall_2_1_2
+x 4
+y 1
+end
+arch creator
+other_arch angry_floor
+x 4
+y 2
+connected 6
+end
+arch dungeon_floor
+x 4
+y 2
+end
+arch dwarf
+name Turl
+dam 30
+x 4
+y 2
+end
+arch dungeon_floor
+x 4
+y 3
+end
+arch chair_1.1
+x 4
+y 3
+end
+arch dungeon_floor
+x 4
+y 4
+end
+arch chair_1.1
+x 4
+y 4
+end
+arch dungeon_floor
+x 4
+y 5
+end
+arch dungeon_floor
+x 4
+y 6
+end
+arch bwall_2_1_2
+x 4
+y 6
+end
+arch blocked
+x 4
+y 7
+end
+arch blocked
+x 5
+end
+arch dungeon_floor
+x 5
+y 1
+end
+arch bwall_2_1_2
+x 5
+y 1
+end
+arch dungeon_floor
+x 5
+y 2
+end
+arch dungeon_floor
+x 5
+y 3
+end
+arch dungeon_floor
+x 5
+y 4
+end
+arch table_4
+x 5
+y 4
+end
+arch dungeon_floor
+x 5
+y 5
+end
+arch dungeon_floor
+x 5
+y 6
+end
+arch bwall_2_1_2
+x 5
+y 6
+end
+arch blocked
+x 5
+y 7
+end
+arch blocked
+x 6
+end
+arch dungeon_floor
+x 6
+y 1
+end
+arch bwall_2_1_2
+x 6
+y 1
+end
+arch dungeon_floor
+x 6
+y 2
+end
+arch dungeon_floor
+x 6
+y 3
+end
+arch creator
+other_arch angry_floor
+x 6
+y 4
+connected 6
+end
+arch dungeon_floor
+x 6
+y 4
+end
+arch dwarf
+name Morg
+dam 30
+x 6
+y 4
+end
+arch dungeon_floor
+x 6
+y 5
+end
+arch dungeon_floor
+x 6
+y 6
+end
+arch bwall_2_1_2
+x 6
+y 6
+end
+arch blocked
+x 6
+y 7
+end
+arch blocked
+x 7
+end
+arch dungeon_floor
+x 7
+y 1
+end
+arch bwall_2_1_2
+x 7
+y 1
+end
+arch dungeon_floor
+x 7
+y 2
+end
+arch oakdoor
+slaying /world/world_121_116
+hp 44
+sp 42
+x 7
+y 2
+end
+arch dungeon_floor
+x 7
+y 3
+end
+arch dungeon_floor
+x 7
+y 4
+end
+arch pedestal
+x 7
+y 5
+invisible 1
+connected 6
+end
+arch dungeon_floor
+x 7
+y 5
+end
+arch chest
+x 7
+y 5
+carrying 75
+arch note
+msg
+We hid th. st.len bank l.ot i. the cav. . The p.ss .s ali b.rb.a ..
+endmsg
+end
+end
+arch dungeon_floor
+x 7
+y 6
+end
+arch bwall_2_1_2
+x 7
+y 6
+end
+arch blocked
+x 7
+y 7
+end
+arch blocked
+x 8
+end
+arch dungeon_floor
+x 8
+y 1
+end
+arch bwall_2_2_3
+x 8
+y 1
+end
+arch dungeon_floor
+x 8
+y 2
+end
+arch bwall_2_1_1
+x 8
+y 2
+end
+arch dungeon_floor
+x 8
+y 3
+end
+arch bwall_2_1_1
+x 8
+y 3
+end
+arch dungeon_floor
+x 8
+y 4
+end
+arch bwall_2_1_1
+x 8
+y 4
+end
+arch dungeon_floor
+x 8
+y 5
+end
+arch bwall_2_1_1
+x 8
+y 5
+end
+arch dungeon_floor
+x 8
+y 6
+end
+arch bwall_2_2_4
+x 8
+y 6
+end
+arch blocked
+x 8
+y 7
+end
+arch blocked
+x 9
+end
+arch blocked
+x 9
+y 1
+end
+arch blocked
+x 9
+y 2
+end
+arch blocked
+x 9
+y 3
+end
+arch blocked
+x 9
+y 4
+end
+arch blocked
+x 9
+y 5
+end
+arch blocked
+x 9
+y 6
+end
+arch blocked
+x 9
+y 7
+end

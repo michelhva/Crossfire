@@ -1,0 +1,241 @@
+arch map
+name Strom's Small House
+region navar
+width 6
+height 6
+enter_x 3
+enter_y 4
+msg
+Created:  2012-03-19 Rick Tanner
+Modified: 2012-03-20 Rick Tanner
+endmsg
+end
+arch woodfloor
+end
+arch wwall_2_2_2
+end
+arch woodfloor
+y 1
+end
+arch wwall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch wwall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch wwall_2_1_1
+y 3
+end
+arch woodfloor
+y 4
+end
+arch wwall_2_1_1
+y 4
+end
+arch woodfloor
+y 5
+end
+arch wwall_2_2_1
+y 5
+end
+arch woodfloor
+x 1
+end
+arch wwall_2_1_2
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch table_4
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch pedestal
+x 1
+y 4
+invisible 1
+connected 9
+end
+arch chest
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch wwall_2_1_2
+x 1
+y 5
+end
+arch woodfloor
+x 2
+end
+arch wwall_2_1_2
+x 2
+end
+arch creator
+other_arch angry_floor
+x 2
+y 1
+connected 9
+end
+arch woodfloor
+x 2
+y 1
+end
+arch dwarf
+name Strom
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch wwall_2_1_2
+x 2
+y 5
+end
+arch woodfloor
+x 3
+end
+arch wwall_2_1_2
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch bed_1
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch oakdoor
+slaying /world/world_121_116
+hp 48
+sp 42
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch wwall_2_1_2
+x 3
+y 5
+end
+arch woodfloor
+x 4
+end
+arch wwall_2_2_3
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch wwall_2_1_1
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch wwall_2_1_1
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch wwall_2_1_1
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch wwall_2_1_1
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch wwall_2_2_4
+x 4
+y 5
+end
+arch blocked
+x 5
+end
+arch blocked
+x 5
+y 1
+end
+arch blocked
+x 5
+y 2
+end
+arch blocked
+x 5
+y 3
+end
+arch blocked
+x 5
+y 4
+end
+arch blocked
+x 5
+y 5
+end
