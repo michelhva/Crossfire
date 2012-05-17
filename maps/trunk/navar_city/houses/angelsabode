@@ -1,0 +1,713 @@
+arch map
+name Angel's Abode
+difficulty 5
+region navar
+width 15
+height 8
+enter_x 12
+enter_y 5
+msg
+Created:  2012-05-17 Rick Tanner
+Modified: 2012-05-17 Rick Tanner
+endmsg
+end
+arch blocked
+end
+arch blocked
+y 1
+end
+arch blocked
+y 2
+end
+arch blocked
+y 3
+end
+arch blocked
+y 4
+end
+arch blocked
+y 5
+end
+arch blocked
+y 6
+end
+arch blocked
+y 7
+end
+arch blocked
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch wall_2_2_2
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch wall_2_1_1
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch wall_2_1_1
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch wall_2_2_1
+x 1
+y 4
+end
+arch blocked
+x 1
+y 5
+end
+arch blocked
+x 1
+y 6
+end
+arch blocked
+x 1
+y 7
+end
+arch blocked
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch wall_2_1_2
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch random_scroll
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch pedestal
+x 2
+y 3
+invisible 1
+connected 11
+end
+arch chest
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch wall_2_1_2
+x 2
+y 4
+end
+arch blocked
+x 2
+y 5
+end
+arch blocked
+x 2
+y 6
+end
+arch blocked
+x 2
+y 7
+end
+arch blocked
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch wall_2_1_2
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch random_wealth
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch pedestal
+x 3
+y 3
+invisible 1
+connected 11
+end
+arch random_treasure
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch wall_2_1_2
+x 3
+y 4
+end
+arch blocked
+x 3
+y 5
+end
+arch blocked
+x 3
+y 6
+end
+arch blocked
+x 3
+y 7
+end
+arch blocked
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch wall_2_1_2
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch wall_2_1_2
+x 4
+y 4
+end
+arch blocked
+x 4
+y 5
+end
+arch blocked
+x 4
+y 6
+end
+arch blocked
+x 4
+y 7
+end
+arch blocked
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch wall_2_1_2
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch chair_1.1
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch wall_2_1_2
+x 5
+y 4
+end
+arch blocked
+x 5
+y 5
+end
+arch blocked
+x 5
+y 6
+end
+arch blocked
+x 5
+y 7
+end
+arch blocked
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch wall_2_1_2
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch chair_1.1
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch table_4
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch wall_2_1_2
+x 6
+y 4
+end
+arch blocked
+x 6
+y 5
+end
+arch blocked
+x 6
+y 6
+end
+arch blocked
+x 6
+y 7
+end
+arch blocked
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch wall_2_1_2
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch chair_1.1
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch wall_3_3
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch wall_2_1_1
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch wall_2_2_1
+x 7
+y 6
+end
+arch blocked
+x 7
+y 7
+end
+arch blocked
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch wall_2_1_2
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch wall_2_1_2
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch random_food
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch wall_2_1_2
+x 8
+y 6
+end
+arch blocked
+x 8
+y 7
+end
+arch blocked
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch wall_2_1_2
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch creator
+other_arch angry_floor
+x 9
+y 3
+connected 11
+end
+arch angel
+name Angel
+x 9
+y 3
+unaggressive 1
+end
+arch woodfloor
+x 9
+y 4
+end
+arch wall_2_1_2
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch wall_2_1_2
+x 9
+y 6
+end
+arch blocked
+x 9
+y 7
+end
+arch blocked
+x 10
+end
+arch woodfloor
+x 10
+y 1
+end
+arch wall_2_1_2
+x 10
+y 1
+end
+arch woodfloor
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 3
+end
+arch woodfloor
+x 10
+y 4
+end
+arch wall_2_1_2
+x 10
+y 4
+move_block 0
+end
+arch woodfloor
+x 10
+y 5
+end
+arch creator
+other_arch angry_floor
+x 10
+y 5
+connected 11
+end
+arch black_pudding
+x 10
+y 5
+unaggressive 1
+end
+arch woodfloor
+x 10
+y 6
+end
+arch wall_2_1_2
+x 10
+y 6
+end
+arch blocked
+x 10
+y 7
+end
+arch blocked
+x 11
+end
+arch woodfloor
+x 11
+y 1
+end
+arch wall_2_1_2
+x 11
+y 1
+end
+arch woodfloor
+x 11
+y 2
+end
+arch woodfloor
+x 11
+y 3
+end
+arch woodfloor
+x 11
+y 4
+end
+arch wall_2_2_3
+x 11
+y 4
+end
+arch woodfloor
+x 11
+y 5
+end
+arch wall_2_1_1
+x 11
+y 5
+end
+arch woodfloor
+x 11
+y 6
+end
+arch wall_3_1
+x 11
+y 6
+end
+arch blocked
+x 11
+y 7
+end
+arch blocked
+x 12
+end
+arch woodfloor
+x 12
+y 1
+end
+arch wall_2_1_2
+x 12
+y 1
+end
+arch woodfloor
+x 12
+y 2
+end
+arch woodfloor
+x 12
+y 3
+end
+arch magic_mouth
+msg
+You see an Angel appear before you The Angle says:
+"Stop brave adventurer...do not take what is not your from this lonely hovel.  The owners have gone through great hardships.  So if you do feel the need to take anything YOU WILL DIE!"
+endmsg
+x 12
+y 4
+end
+arch woodfloor
+x 12
+y 4
+end
+arch woodfloor
+x 12
+y 5
+end
+arch oakdoor
+slaying /world/world_121_116
+hp 45
+sp 48
+x 12
+y 5
+end
+arch woodfloor
+x 12
+y 6
+end
+arch wall_2_1_2
+x 12
+y 6
+end
+arch blocked
+x 12
+y 7
+end
+arch blocked
+x 13
+end
+arch woodfloor
+x 13
+y 1
+end
+arch wall_2_2_3
+x 13
+y 1
+end
+arch woodfloor
+x 13
+y 2
+end
+arch wall_2_1_1
+x 13
+y 2
+end
+arch woodfloor
+x 13
+y 3
+end
+arch wall_2_1_1
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 4
+end
+arch wall_2_1_1
+x 13
+y 4
+end
+arch woodfloor
+x 13
+y 5
+end
+arch wall_2_1_1
+x 13
+y 5
+end
+arch woodfloor
+x 13
+y 6
+end
+arch wall_2_2_4
+x 13
+y 6
+end
+arch blocked
+x 13
+y 7
+end
+arch blocked
+x 14
+end
+arch blocked
+x 14
+y 1
+end
+arch blocked
+x 14
+y 2
+end
+arch blocked
+x 14
+y 3
+end
+arch blocked
+x 14
+y 4
+end
+arch blocked
+x 14
+y 5
+end
+arch blocked
+x 14
+y 6
+end
+arch blocked
+x 14
+y 7
+end
