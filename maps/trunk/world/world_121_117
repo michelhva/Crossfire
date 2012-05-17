@@ -10740,9 +10740,9 @@ x 39
 end
 arch house_up
 name Crazy house
-slaying /navar_city/city1houses2
-hp 28
-sp 8
+slaying ../navar_city/houses/crazyhouse
+hp 4
+sp 2
 x 39
 end
 arch dungeon_magic
@@ -12822,10 +12822,10 @@ arch grass
 x 45
 end
 arch house_small
-name Freddy's house
-slaying /navar_city/city1houses2
-hp 22
-sp 9
+name Freddy's House
+slaying ../navar_city/houses/freddyshouse
+hp 12
+sp 5
 x 45
 end
 arch dungeon_magic

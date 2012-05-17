@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-05-16 Rick Tanner
+Modified: 2012-05-17 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_121_115
@@ -12946,9 +12946,10 @@ x 43
 y 47
 end
 arch house_small
-slaying /navar_city/city1houses2
-hp 6
-sp 11
+name Crowded House
+slaying ../navar_city/houses/crowdedhouse
+hp 7
+sp 6
 x 43
 y 47
 end
@@ -13307,9 +13308,10 @@ x 44
 y 47
 end
 arch minihouse
-slaying /navar_city/city1houses2
-hp 5
-sp 1
+name Raazle's Small House
+slaying ../navar_city/houses/raazlessmallhouse
+hp 6
+sp 2
 x 44
 y 47
 end
@@ -13693,9 +13695,9 @@ y 47
 end
 arch house_1
 name No. 4 Main St.
-slaying /navar_city/city1houses2
-hp 13
-sp 1
+slaying ../navar_city/houses/no4mainst
+hp 6
+sp 2
 x 45
 y 47
 end
@@ -13708,9 +13710,10 @@ x 45
 y 48
 end
 arch minihouse
-slaying /navar_city/city1houses2
-hp 27
-sp 4
+name Angel's Abode
+slaying ../navar_city/houses/angelsabode
+hp 12
+sp 5
 x 45
 y 48
 end
