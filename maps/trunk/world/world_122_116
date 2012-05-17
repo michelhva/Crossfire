@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-05-16 Rick Tanner
+Modified: 2012-05-17 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -4485,7 +4485,7 @@ y 47
 end
 arch house_small
 name Little Rumble House
-slaying ../navar_city/houses/small_house5
+slaying ../navar_city/houses/littlerumblehouse
 hp 2
 sp 7
 x 12
@@ -4500,9 +4500,10 @@ x 12
 y 48
 end
 arch house_1
-slaying /navar_city/city1houses2
-hp 1
-sp 27
+name Meeting House
+slaying ../navar_city/houses/meetinghouse
+hp 2
+sp 7
 x 12
 y 48
 end
