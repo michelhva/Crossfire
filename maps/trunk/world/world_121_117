@@ -10762,9 +10762,10 @@ x 39
 y 2
 end
 arch house_long
-slaying /navar_city/city1houses2
+name Bone House
+slaying ../navar_city/houses/bonehouse
 hp 10
-sp 12
+sp 2
 x 39
 y 2
 end
@@ -11499,10 +11500,10 @@ x 41
 y 2
 end
 arch minihouse
-name destitute house
-slaying /navar_city/city1houses2
-hp 22
-sp 16
+name Destitute House
+slaying ../navar_city/houses/destitutehouse
+hp 10
+sp 2
 x 41
 y 2
 end

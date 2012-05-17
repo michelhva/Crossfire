@@ -12210,9 +12210,10 @@ x 41
 y 47
 end
 arch house_long
-slaying /navar_city/city1houses2
-hp 28
-sp 22
+name Occupied Cabin
+slaying ../navar_city/houses/occupiedcabin
+hp 16
+sp 2
 x 41
 y 47
 end
