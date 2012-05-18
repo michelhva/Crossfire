@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-05-07 Nicolas Weeger
+Modified: 2012-05-18 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -1093,7 +1093,7 @@ x 3
 end
 arch a_civic
 name High Court Building
-slaying /navar_city/city1court
+slaying ../navar_city/misc/city1court
 hp 10
 sp 15
 x 3
