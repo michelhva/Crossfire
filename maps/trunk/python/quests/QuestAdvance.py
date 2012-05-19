@@ -34,28 +34,40 @@
 
 import Crossfire
 
-player = Crossfire.WhoIsActivator()
+def handle():
+  player = Crossfire.WhoIsActivator()
+  event = Crossfire.WhatIsEvent()
+  who = Crossfire.WhoAmI()
 
-# if a spell was used, then the killer is the spell object, find the owner
-if player.Type != Crossfire.Type.PLAYER:
-  player = player.Owner
+  if event.Subtype == Crossfire.EventType.APPLY and who.Type == Crossfire.Type.BOOK:
+    # when reading something, ensure the level is high enough before starting the quest
+    skill = player.CheckArchInventory("skill_literacy")
+    if skill == None:
+      return
+    if who.Level > skill.Level + 5:
+      return
 
-event = Crossfire.WhatIsEvent()
-params = Crossfire.ScriptParameters()
-args = params.split()
-questname = args[0]
-currentstep = player.QuestGetState(questname)    
-for rule in args[1:]:
-    condition, target = rule.split(">")
-    if condition.find("-") == -1:
-        startstep = int(condition)
-        endstep = startstep
-    else:
-        startstep = int(condition.split("-")[0])
-        endstep= int(condition.split("-")[1])
-    if currentstep >= startstep and currentstep <= endstep:
-    # update this quest
-        if currentstep == 0:
-            player.QuestStart(questname, int(target))
-        else:
-            player.QuestSetState(questname, int(target))
+  # if a spell was used, then the killer is the spell object, find the owner
+  if player.Type != Crossfire.Type.PLAYER:
+    player = player.Owner
+
+  params = Crossfire.ScriptParameters()
+  args = params.split()
+  questname = args[0]
+  currentstep = player.QuestGetState(questname)
+  for rule in args[1:]:
+      condition, target = rule.split(">")
+      if condition.find("-") == -1:
+          startstep = int(condition)
+          endstep = startstep
+      else:
+          startstep = int(condition.split("-")[0])
+          endstep= int(condition.split("-")[1])
+      if currentstep >= startstep and currentstep <= endstep:
+      # update this quest
+          if currentstep == 0:
+              player.QuestStart(questname, int(target))
+          else:
+              player.QuestSetState(questname, int(target))
+
+handle()
