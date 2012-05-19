@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-05-18 Rick Tanner
+Modified: 2012-05-19 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -351,9 +351,9 @@ y 1
 end
 arch house_up
 name House of Gossip
-slaying /navar_city/city1houses3
-hp 28
-sp 8
+slaying ../navar_city/houses/houseofgossip
+hp 4
+sp 2
 x 1
 y 1
 end
@@ -4369,9 +4369,9 @@ y 2
 end
 arch farmhouse
 name Traveller's Wayhouse
-slaying /navar_city/city1houses3
-hp 28
-sp 22
+slaying ../navar_city/houses/travellorswayhouse
+hp 16
+sp 2
 x 12
 y 2
 end
