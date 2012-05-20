@@ -9,7 +9,7 @@ enter_x 2
 enter_y 1
 msg
 Created:  2008-01-12 lauwenmark
-Modified: 2011-10-10 Rick Tanner
+Modified: 2012-05-20 Nicolas Weeger
 endmsg
 maplore
 This map is part of the Quest of the Two Heimser Brothers.
@@ -217,6 +217,9 @@ hp 9
 sp 1
 x 4
 y 5
+arch quest_advance_apply
+name wolfsburg/Heimser 0>10
+end
 end
 arch dirtfloor
 x 4

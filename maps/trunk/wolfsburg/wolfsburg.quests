@@ -32,3 +32,37 @@ end_description
 end_step
 end_quest
 
+quest wolfsburg/Heimser
+title Heimser's experiments
+face cauldron.111
+description
+Heimser is making experiments related to magical crystals.
+end_description
+step 10
+description
+Heimser seems to have a laboratory hidden in his hut, I should ask him what this is about.
+end_description
+end_step
+step 20
+description
+Heimser needs 10 mithril crystals for some recipe.
+end_description
+end_step
+step 30
+description
+I brought back the crystals, but Heimser doesn't remember if they should be melted or broken, and asked me to go check with his friend Lordil in Navar's university.
+end_description
+end_step
+step 40
+description
+I have Lordil's reply, I should tell it to Heimser.
+end_description
+end_step
+step 50
+finishes_quest
+description
+Heimser rewarded me.
+end_description
+end_step
+end_quest
+
