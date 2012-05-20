@@ -8,7 +8,7 @@ enter_x 24
 enter_y 37
 msg
 Created:  2008-05-17 Nicolas Weeger
-Modified: 2008-05-20 Nicolas Weeger
+Modified: 2012-05-20 Nicolas Weeger
 endmsg
 maplore
 The university features:
@@ -1539,6 +1539,15 @@ arch marble
 x 7
 y 13
 end
+arch gnome2
+name Professor Lordil
+x 7
+y 13
+unaggressive 1
+arch npc_dialog
+name /navar_city/university_lordil.msg
+end
+end
 arch marble
 x 7
 y 14
@@ -2241,6 +2250,13 @@ end
 arch white_wall_1_2
 x 10
 y 11
+end
+arch magic_mouth
+msg
+A sign on the door reads: professor Lordil
+endmsg
+x 10
+y 12
 end
 arch marble
 x 10

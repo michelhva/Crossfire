@@ -9,7 +9,7 @@ enter_y 7
 msg
 Created:  2008-01-12 lauwenmark
 Based on an original map of Tero Haatanen.
-Modified: 2012-01-24 Rick Tanner
+Modified: 2012-05-20 Nicolas Weeger
 endmsg
 maplore
 This map is part of the Quest of the Two Heimser Brothers.
@@ -342,6 +342,9 @@ I'm Heinkel Heimser.  What do you want from an old man like me? *sigh*
 endmsg
 x 5
 y 4
+arch npc_dialog
+name /wolfsburg/volcano/heimser.msg
+end
 end
 arch dirtfloor
 x 5
