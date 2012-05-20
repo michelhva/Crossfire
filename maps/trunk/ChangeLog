@@ -1,3 +1,149 @@
+2012-05-20 05:40  rjtanner
+
+	* navar_city/misc/buildshop, navar_city/misc/city1armour,
+	  navar_city/misc/city1gen, navar_city/misc/city1magic,
+	  navar_city/misc/city1weapon, navar_city/shops,
+	  navar_city/shops/buildshop, navar_city/shops/city1armour,
+	  navar_city/shops/city1gen, navar_city/shops/city1magic,
+	  navar_city/shops/city1weapon, world/world_122_117: Moved the
+	  basic shop maps out of navar_city/misc and in to navar_city/shops
+	  for Navar. Exit and entrance file path updates for the shop maps
+	  and world maps.
+
+2012-05-19 15:43  ryo_saeba
+
+	* python/quests/QuestAdvance.py: Don't start a quest if the player
+	  can't read a book.
+
+2012-05-19 13:58  ryo_saeba
+
+	* navar_city/ben.msg, navar_city/houses/ben.msg,
+	  navar_city/houses/benscottage: Add missing dialog handler to Ben.
+
+2012-05-19 05:36  rjtanner
+
+	* navar_city/city1houses3: Remove the no longer used city1houses3
+	  (navar_city/city1houses3) map.
+
+2012-05-19 05:35  rjtanner
+
+	* navar_city/city1houses3, navar_city/houses/bingohall,
+	  navar_city/houses/bonehouse, navar_city/houses/charliesplace,
+	  navar_city/houses/dancinglessons, navar_city/houses/demonichouse,
+	  navar_city/houses/destitutehouse,
+	  navar_city/houses/herbertsundertakers,
+	  navar_city/houses/houseofgossip, navar_city/houses/meetinghouse,
+	  navar_city/houses/occupiedcabin, navar_city/houses/rundownhouse,
+	  navar_city/houses/smokeyhouse,
+	  navar_city/houses/travellorswayhouse,
+	  navar_city/houses/wisehouse, world/world_121_117,
+	  world/world_122_117: Dividing up /navar_city/city1houses3 in to
+	  individual maps (/navar_city/houses/*) with some modifications
+	  for unique names. Updated Navar world map (world/world_121_117,
+	  world/world_122_117) to link to the house maps.
+
+2012-05-18 06:46  rjtanner
+
+	* navar_city/misc/city1court, navar_city/misc/highcourt,
+	  world/world_122_117: File rename for High Court Building in
+	  Navar, was city1court and is now highcourt. World map updated to
+	  reflect file rename.
+
+2012-05-18 06:43  rjtanner
+
+	* navar_city/city1court, navar_city/city1houses3,
+	  navar_city/misc/city1court, world/world_122_117: Moved High Court
+	  Building (navar_city/city1court) to the /misc directory for
+	  Navar. Updated world map (world/world_122_117) to link to the
+	  map's new location.
+
+2012-05-17 07:07  rjtanner
+
+	* navar_city/city1houses2: Remove the no longer used city1houses2
+	  (navar_city/city1houses2) map.
+
+2012-05-17 06:44  rjtanner
+
+	* navar_city/city1houses2, navar_city/houses/dorganshouse,
+	  navar_city/houses/no4mainst, navar_city/houses/stromssmallhouse,
+	  world/world_121_116, world/world_121_117, world/world_122_116:
+	  Finished dividing up /navar_city/city1houses2 in to individual
+	  maps (/navar_city/houses/*) with some modifications for unique
+	  names. Updated Navar world map (world/world_121_116,
+	  world/world_121_117, world/world_122_116) to link to the house
+	  maps.
+
+2012-05-17 05:58  rjtanner
+
+	* navar_city/city1houses2, navar_city/houses/angelsabode,
+	  navar_city/houses/crazyhouse, navar_city/houses/crowdedhouse,
+	  navar_city/houses/freddyshouse, navar_city/houses/no4mainst,
+	  navar_city/houses/raazlessmallhouse, world/world_121_116,
+	  world/world_121_117: Started to divide up
+	  /navar_city/city1houses2 in to individual maps
+	  (/navar_city/houses/*) with some modifications for unique names.
+	  Updated Navar world map (world/world_121_116,
+	  world/world_121_117) to link to the house maps.
+
+2012-05-17 05:19  rjtanner
+
+	* navar_city/temples/city1church1, navar_city/temples/mostrai,
+	  world/world_121_117: File rename for the Mostrai Cathedral in
+	  Navar, was city1church1 and is now mostrai. World map update to
+	  reflect file rename.
+
+2012-05-17 05:15  rjtanner
+
+	* navar_city/city1church1, navar_city/temples/city1church1: Moved
+	  Mostrai Cathedral (navar_city/city1church1) to the /temples
+	  directory for Navar. Updated world map (world/world_121_117) to
+	  link to the cathedral's new location.
+
+2012-05-16 06:07  rjtanner
+
+	* navar_city/city1houses: Remove the no longer used city1houses
+	  (navar_city/city1houses) map.
+
+2012-05-16 06:05  rjtanner
+
+	* navar_city/houses, navar_city/houses/avashouse,
+	  navar_city/houses/benscottage, navar_city/houses/berlssmallhouse,
+	  navar_city/houses/dorganshouse, navar_city/houses/elishouse,
+	  navar_city/houses/hanshut, navar_city/houses/ianshouse,
+	  navar_city/houses/jebshouse, navar_city/houses/jordanshouse,
+	  navar_city/houses/karassmallhouse,
+	  navar_city/houses/littlerumblehouse,
+	  navar_city/houses/masonshouse, navar_city/houses/rudyscottage,
+	  navar_city/houses/stromssmallhouse, navar_city/houses/toddscabin,
+	  navar_city/houses/turlssmallhouse, world/world_121_116,
+	  world/world_122_116: Divided up /navar_city/city1houses in to
+	  individual maps (/navar_city/houses/*) with some modications for
+	  unique names. Updated Navar world map (world/world_121_116,
+	  world/world_122_116) to link to the house maps.
+
+2012-05-15 06:05  rjtanner
+
+	* darcap/darcap/petshop: Cosmetic changes to Fernicious Fenx Family
+	  Pet Emporium (darcap/darcap/petshop) in regards to wall sections
+	  for nicer merging. No functional changes.
+
+2012-05-15 05:55  rjtanner
+
+	* wolfsburg/etern_rew, world/world_128_109: Cosmetic changes to
+	  Eternal Reward (wolfsburg/etern_rew) in Wolfsburg. Expanded the
+	  map to show outside landscape features. Map layout matches
+	  external features. Updated world map (world/world_128_109) for
+	  changes in map entrance coordinates.
+
+2012-05-14 05:56  rjtanner
+
+	* world/world_121_116: Spelling correction (Fromt he -> From the)
+	  in world map (world/world_121_116) near Navar.
+
+2012-05-13 07:36  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
 2012-05-12 16:36  ryo_saeba
 
 	* world/world_103_127: Use archetype.
