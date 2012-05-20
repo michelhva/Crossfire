@@ -15,7 +15,7 @@ enter_x 38
 enter_y 22
 msg
 Created:  1993-11-02
-Modified: 2011-05-06 Rick Tanner
+Modified: 2012-05-20 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1507,7 +1507,7 @@ x 9
 y 28
 end
 arch invis_exit
-slaying /world/world_122_117
+slaying ../../world/world_122_117
 hp 16
 sp 11
 x 9
@@ -1684,7 +1684,7 @@ x 10
 y 28
 end
 arch invis_exit
-slaying /world/world_122_117
+slaying ../../world/world_122_117
 hp 16
 sp 11
 x 10
@@ -1835,7 +1835,7 @@ x 11
 y 28
 end
 arch invis_exit
-slaying /world/world_122_117
+slaying ../../world/world_122_117
 hp 16
 sp 11
 x 11
