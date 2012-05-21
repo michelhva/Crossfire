@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2012-05-10 Rick Tanner
+Modified: 2012-05-21 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -6497,7 +6497,7 @@ elevation 0
 end
 arch store_general
 name Darcap General Store
-slaying /darcap/darcap/gshop
+slaying ../darcap/darcap/shops/gshop
 hp 18
 sp 16
 x 23

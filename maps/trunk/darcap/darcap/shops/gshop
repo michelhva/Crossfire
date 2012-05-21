@@ -11,7 +11,7 @@ enter_x 18
 enter_y 16
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2011-10-09 Rick Tanner
+Modified: 2012-05-21 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1954,7 +1954,7 @@ x 17
 y 19
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 24
 sp 26
 x 17
@@ -2099,7 +2099,7 @@ x 18
 y 19
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 24
 sp 26
 x 18
@@ -2210,7 +2210,7 @@ x 19
 y 19
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 24
 sp 26
 x 19
