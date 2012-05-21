@@ -11,7 +11,7 @@ enter_x 4
 enter_y 17
 msg
 Created:  1996-05-02 bt (thomas@astro.psu.edu)
-Modified: 2012-01-29 Rick Tanner
+Modified: 2012-05-21 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -500,7 +500,7 @@ x 3
 y 20
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 28
 sp 26
 x 3
@@ -654,7 +654,7 @@ x 4
 y 20
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 28
 sp 26
 x 4
@@ -797,7 +797,7 @@ x 5
 y 20
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 28
 sp 26
 x 5
