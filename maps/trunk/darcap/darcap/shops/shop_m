@@ -9,7 +9,7 @@ height 30
 enter_x 10
 enter_y 25
 msg
-Modified: 2012-01-29 Rick Tanner
+Modified: 2012-05-22 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1504,7 +1504,7 @@ x 9
 y 28
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 19
 sp 44
 x 9
@@ -1691,7 +1691,7 @@ x 10
 y 28
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 19
 sp 44
 x 10
@@ -1846,7 +1846,7 @@ x 11
 y 28
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 19
 sp 44
 x 11
