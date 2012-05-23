@@ -4,7 +4,7 @@ region marksel
 width 50
 height 50
 msg
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2012-05-23 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_120_108
@@ -11347,7 +11347,7 @@ y 45
 elevation 1791
 end
 arch s_shop2
-slaying /marksel/shop
+slaying /marksel/shops/shop
 hp 10
 sp 11
 x 43

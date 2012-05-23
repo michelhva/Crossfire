@@ -12,7 +12,7 @@ enter_x 10
 enter_y 11
 msg
 Created:  1999-01-27 King Zoobus
-Modified: 2012-02-10 Rick Tanner
+Modified: 2012-05-23 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1057,7 +1057,7 @@ x 9
 y 14
 end
 arch invis_exit
-slaying /world/world_120_109
+slaying ../../world/world_120_109
 hp 43
 sp 45
 x 9
@@ -1170,7 +1170,7 @@ x 10
 y 14
 end
 arch invis_exit
-slaying /world/world_120_109
+slaying ../../world/world_120_109
 hp 43
 sp 45
 x 10
@@ -1252,7 +1252,7 @@ msg
 @match magic
 The sages tower next door may be willing to sell... check with them.
 @match *
-Greetings! Welcome to my shop.  I'm sorry we don't have more for sale, but this is such a remote town we have little metal for trade.  The master in the corner will identify magical items, for a small fee.  You do belive in magic, don't you? 
+Greetings! Welcome to my shop.  I'm sorry we don't have more for sale, but this is such a remote town we have little metal for trade.  The master in the corner will identify magical items, for a small fee.  You do belive in magic, don't you?
 endmsg
 x 11
 y 10
@@ -1287,7 +1287,7 @@ x 11
 y 14
 end
 arch invis_exit
-slaying /world/world_120_109
+slaying ../../world/world_120_109
 hp 43
 sp 45
 x 11
