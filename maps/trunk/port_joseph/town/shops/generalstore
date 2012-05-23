@@ -10,7 +10,7 @@ enter_x 18
 enter_y 15
 msg
 Created:  1994-05-06 langley (langley@fermat.dartmouth.edu)
-Modified: 2011-10-10 Rick Tanner
+Modified: 2012-05-23 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1947,7 +1947,7 @@ x 17
 y 17
 end
 arch invis_exit
-slaying /world/world_101_114
+slaying ../../../world/world_101_114
 hp 14
 sp 39
 x 17
@@ -2060,7 +2060,7 @@ y 17
 connected 1
 end
 arch invis_exit
-slaying /world/world_101_114
+slaying ../../../world/world_101_114
 hp 14
 sp 39
 x 18
@@ -2187,7 +2187,7 @@ x 19
 y 17
 end
 arch invis_exit
-slaying /world/world_101_114
+slaying ../../../world/world_101_114
 hp 14
 sp 39
 x 19
