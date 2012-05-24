@@ -12,13 +12,13 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-09-18
-Modified: 2008-10-26 Rick Tanner
+Modified: 2012-05-24 Rick Tanner
 endmsg
 tile_path_3 dept_store_misc
 tile_path_4 dept_store_armour
 end
 arch exit
-slaying /world/world_128_109
+slaying ../../world/world_128_109
 hp 30
 sp 8
 invisible 1
@@ -65,7 +65,7 @@ arch woodfloor
 y 13
 end
 arch exit
-slaying /world/world_128_109
+slaying ../../world/world_128_109
 hp 30
 sp 8
 x 1
