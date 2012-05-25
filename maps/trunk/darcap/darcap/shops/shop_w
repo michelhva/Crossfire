@@ -11,7 +11,7 @@ enter_x 10
 enter_y 15
 msg
 Created:  1994-10-11
-Modified: 2012-05-22 Rick Tanner
+Modified: 2012-05-25 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1227,7 +1227,7 @@ y 14
 randomitems throw_stnd
 pick_up 0
 arch npc_dialog
-name /darcap/darcap/spike.msg
+name /darcap/darcap/shops/spike.msg
 end
 arch NPCGift
 arch pouch
