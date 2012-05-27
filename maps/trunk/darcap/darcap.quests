@@ -60,3 +60,32 @@ end_description
 end_step
 end_quest
 
+quest darcap/pygmy-forest
+title The pygmy forest
+face unusual_kobold.111
+description
+I've heard of a dangerous pygmy forest which certainly contains nice treasures.
+end_description
+step 10
+description
+I've heard the pygmy forest is on an island north and slightly east of Darcap, and I need to use dimension door to get there.
+end_description
+end_step
+step 20
+description
+I've found the pygmy forest, I should explore it.
+end_description
+end_step
+step 30
+description
+I've found the Pygmy's chief, I can probably get some treasure after defeating it.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I've claimed the treasure of the pygmy forest.
+end_description
+end_step
+end_quest
+

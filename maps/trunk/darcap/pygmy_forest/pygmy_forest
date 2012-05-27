@@ -7,8 +7,8 @@ height 50
 enter_x 27
 enter_y 27
 msg
-Created: 2007-12-18 Chad Opperman   
-Modified: 2012-01-31 Rick Tanner
+Created: 2007-12-18 Chad Opperman
+Modified: 2012-05-27 Nicolas Weeger
 endmsg
 end
 arch grassdark
@@ -13858,6 +13858,9 @@ hp 10
 sp 18
 x 27
 y 1
+arch quest_advance_apply
+name darcap/pygmy-forest 20>30
+end
 end
 arch grassdark
 name Thick Forest Terrain
