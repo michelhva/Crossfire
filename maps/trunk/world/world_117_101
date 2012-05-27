@@ -3,7 +3,7 @@ name world_117_101
 width 50
 height 50
 msg
-Modified: 2008-12-17 Rick Tanner
+Modified: 2012-05-27 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_117_100
@@ -2437,6 +2437,9 @@ hp 27
 sp 48
 x 9
 y 31
+arch quest_advance_apply
+name darcap/pygmy-forest 10>20
+end
 end
 arch grass
 x 9
