@@ -431,52 +431,9 @@ y 2
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 1
 y 2
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -744,40 +701,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -845,52 +769,9 @@ y 36
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 1
 y 36
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 1
@@ -979,52 +860,9 @@ y 47
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 1
 y 47
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -1173,52 +1011,9 @@ y 14
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 2
 y 14
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -1264,52 +1059,9 @@ y 19
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 2
 y 19
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 2
@@ -1362,52 +1114,9 @@ y 25
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 2
 y 25
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -2051,40 +1760,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -2183,51 +1859,8 @@ x 4
 move_block all
 blocksview 1
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 4
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 4
@@ -2977,52 +2610,9 @@ y 39
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 5
 y 39
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -3305,52 +2895,9 @@ y 22
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 6
 y 22
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 6
@@ -3616,40 +3163,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -3709,40 +3223,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -3769,52 +3250,9 @@ y 4
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 7
 y 4
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 7
@@ -4034,52 +3472,9 @@ y 30
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 7
 y 30
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -4476,52 +3871,9 @@ y 24
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 8
 y 24
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 8
@@ -4715,52 +4067,9 @@ y 48
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 8
 y 48
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 8
@@ -4951,40 +4260,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -5004,52 +4280,9 @@ y 18
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 9
 y 18
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -5192,52 +4425,9 @@ y 35
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 9
 y 35
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 9
@@ -5443,52 +4633,9 @@ y 10
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 10
 y 10
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 10
@@ -5896,52 +5043,9 @@ y 8
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 11
 y 8
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 11
@@ -6121,52 +5225,9 @@ y 28
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 11
 y 28
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 11
@@ -6747,52 +5808,9 @@ y 46
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 12
 y 46
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -6837,52 +5855,9 @@ y 1
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 13
 y 1
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 13
@@ -7442,52 +6417,9 @@ y 16
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 14
 y 16
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 14
@@ -7768,52 +6700,9 @@ y 48
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 14
 y 48
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 14
@@ -7892,40 +6781,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -8686,40 +7542,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -8938,52 +7761,9 @@ y 13
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 17
 y 13
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 17
@@ -9121,40 +7901,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -9226,52 +7973,9 @@ arch evergreens2
 x 17
 y 33
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 17
 y 33
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 17
@@ -9786,52 +8490,9 @@ y 43
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 18
 y 43
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -10264,52 +8925,9 @@ y 45
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 19
 y 45
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -10803,52 +9421,9 @@ y 4
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 21
 y 4
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -11143,52 +9718,9 @@ y 36
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 21
 y 36
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -11446,52 +9978,9 @@ y 17
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 22
 y 17
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 22
@@ -11619,52 +10108,9 @@ y 30
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 22
 y 30
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 22
@@ -12087,52 +10533,9 @@ y 30
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 23
 y 30
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -12256,40 +10659,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -12532,40 +10902,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -12623,52 +10960,9 @@ y 23
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 24
 y 23
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -13026,40 +11320,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -13979,52 +12240,9 @@ y 11
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 27
 y 11
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -14157,52 +12375,9 @@ y 26
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 27
 y 26
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 27
@@ -15028,40 +13203,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -15187,52 +13329,9 @@ y 37
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 29
 y 37
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -15614,52 +13713,9 @@ y 30
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 30
 y 30
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -16272,40 +14328,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -16697,52 +14720,9 @@ y 45
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 32
 y 45
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 32
@@ -16837,52 +14817,9 @@ y 6
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 33
 y 6
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 33
@@ -17370,52 +15307,9 @@ y 12
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 34
 y 12
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -17461,52 +15355,9 @@ y 17
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 34
 y 17
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 34
@@ -17563,52 +15414,9 @@ y 23
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 34
 y 23
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -17821,40 +15629,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -18769,52 +16544,9 @@ y 1
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 37
 y 1
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -19946,52 +17678,9 @@ y 32
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 39
 y 32
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 39
@@ -20101,52 +17790,9 @@ y 46
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 39
 y 46
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -20349,40 +17995,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -20406,52 +18019,9 @@ y 19
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 40
 y 19
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 40
@@ -20512,52 +18082,9 @@ y 26
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 40
 y 26
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 40
@@ -20768,52 +18295,9 @@ y 1
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 41
 y 1
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -21164,40 +18648,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -21571,52 +19022,9 @@ y 31
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 42
 y 31
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -21703,52 +19111,9 @@ y 41
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 42
 y 41
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -21808,52 +19173,9 @@ y 48
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 42
 y 48
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 42
@@ -21912,40 +19234,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -22018,40 +19307,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -22523,52 +19779,9 @@ y 10
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 44
 y 10
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -22678,52 +19891,9 @@ y 23
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 44
 y 23
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -23550,52 +20720,9 @@ y 17
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 46
 y 17
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 46
@@ -23697,40 +20824,7 @@ alive 1
 generator 1
 no_damage 1
 use_content_on_gen 1
-arch unusual_kobold
-name Pygmy Assassin
-race Pygmy
-Wis 10
-Int 100
-exp 1000
-dam 150
-wc -100
-speed 5.0
-level 120
-attacktype 1280
-resist_magic 25
-resist_fire 50
-resist_electricity 75
-resist_cold 75
-resist_confusion 100
-resist_acid 25
-resist_drain 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 25
-resist_godpower 25
-resist_holyword 100
-resist_blind 100
-glow_radius 4
-see_invisible 1
-can_use_skill 1
-can_see_in_dark 1
-one_hit 1
+arch pygmy_assassin
 end
 end
 arch grassdark
@@ -24257,52 +21351,9 @@ y 36
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 47
 y 36
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
@@ -24450,52 +21501,9 @@ y 2
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 48
 y 2
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 x 48
@@ -24850,52 +21858,9 @@ y 42
 move_block fly_high swim boat
 slow_move 3
 end
-arch unusual_kobold
-name Pygmy of the Forest
-race Pygmy
-msg
-@match *
-The Pygmy doesn't answer back...instead it gives you the evil eye.
-endmsg
-Con 25
-Wis 7
-Int 100
-hp 15000
-maxhp 15000
-exp 400000
-dam 15
-wc -35
-ac -13
+arch pygmy
 x 48
 y 42
-speed 2.0
-level 120
-attacktype 1280
-resist_magic 80
-resist_fire 80
-resist_electricity 80
-resist_cold 80
-resist_confusion 100
-resist_acid 80
-resist_drain 100
-resist_weaponmagic 80
-resist_ghosthit 80
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 80
-resist_godpower 80
-resist_holyword 100
-resist_blind 100
-randomitems goblin_parts
-see_invisible 1
-undead 1
-can_use_skill 1
-can_see_in_dark 1
 end
 arch grassdark
 name Thick Forest Terrain
