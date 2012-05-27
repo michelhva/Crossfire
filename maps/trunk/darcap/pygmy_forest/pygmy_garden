@@ -545,13 +545,6 @@ x 5
 move_block all
 blocksview 1
 end
-arch bulletwall
-face jungle_2.111
-dam 160
-x 5
-level 110
-invisible 1
-end
 arch grassdark
 name Thick Forest Terrain
 x 5

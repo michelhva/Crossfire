@@ -7,8 +7,8 @@ height 20
 enter_x 10
 enter_y 18
 msg
-Created: 2007-12-27 Chad Opperman  
-Modified: 2012-01-31 Rick Tanner
+Created: 2007-12-27 Chad Opperman
+Modified: 2012-05-27 Nicolas Weeger
 endmsg
 end
 arch grassdark
@@ -2377,13 +2377,6 @@ arch tree5
 x 10
 move_block all
 blocksview 1
-end
-arch bulletwall
-face jungle_2.111
-dam 160
-x 10
-level 110
-invisible 1
 end
 arch grassdark
 name Thick Forest Terrain
