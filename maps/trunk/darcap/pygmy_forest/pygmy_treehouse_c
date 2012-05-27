@@ -7,8 +7,8 @@ height 11
 enter_x 11
 enter_y 5
 msg
-Creator:  2007-12-24 Chad Opperman   
-Modified: 2012-01-31 Rick Tanner
+Creator:  2007-12-24 Chad Opperman
+Modified: 2012-05-27 Nicolas Weeger
 endmsg
 end
 arch jungle_1
@@ -2185,14 +2185,6 @@ y 5
 move_block swim boat
 no_magic 1
 damned 1
-end
-arch bulletwall
-face jungle_2.111
-dam 160
-x 24
-y 5
-level 110
-invisible 1
 end
 arch jungle_1
 name Forest Below
