@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-26
-Modified: 2008-11-23 Rick Tanner
+Modified: 2012-05-30 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_123_122
@@ -1227,8 +1227,8 @@ end
 arch bungalow
 name Fisherman's House
 slaying ../whalingoutpost/houses/fisherhousenorth
-hp 2
-sp 6
+hp 1
+sp 7
 x 4
 y 36
 end
