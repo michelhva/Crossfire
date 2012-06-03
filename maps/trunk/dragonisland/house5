@@ -8,12 +8,10 @@ enter_x 1
 enter_y 13
 msg
 Created:  1997-06-17 Viola Krings
-Modified: 2012-01-31 Rick Tanner
+Modified: 2012-06-03 Rick Tanner
 endmsg
 end
 arch dungeon_floor
-end
-arch awall_2_1_1
 end
 arch awall_2_2_2
 end
@@ -102,9 +100,6 @@ arch awall_2_1_1
 y 14
 end
 arch dungeon_floor
-y 15
-end
-arch awall_2_1_1
 y 15
 end
 arch awall_2_2_1
@@ -1688,9 +1683,6 @@ x 14
 y 15
 end
 arch dungeon_floor
-x 15
-end
-arch awall_2_1_1
 x 15
 end
 arch awall_2_2_3
