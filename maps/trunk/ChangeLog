@@ -1,3 +1,259 @@
+2012-06-03 07:14  rjtanner
+
+	* dragonisland/house5, world/world_103_127: Expand and show outer
+	  area of the house used for Enter at Own Risk
+	  (dragonisland/house5) in Stoneville. Entrance/exit is now a door
+	  instead of stairs. Cosmetic changes to add windows to the map.
+	  Layout changes to move monster generators further way from the
+	  entrance since the entrance has also moved to a different
+	  location.
+
+2012-06-03 06:57  rjtanner
+
+	* dragonisland/house5: Removed double stacked wall sections in
+	  Enter at Own Risk (dragonisland/house5) in Stoneville. Technical
+	  change, no function changes.
+
+2012-06-02 05:33  rjtanner
+
+	* whalingoutpost/taverns/fishershallb1: Replaced the yellow block
+	  walls with cave walls in Fisher's Hall, Cellar
+	  (whalingoutpost/taverns/fishershallb1) in Whaling Outpost.
+	  Cosmetic changes, no functional changes.
+
+2012-06-01 05:31  rjtanner
+
+	* whalingoutpost/houses/fisherhouseswest, world/world_123_123:
+	  Updates to Fisherhouse West
+	  (whalingoutpost/houses/fisherhousewest) in Whaling Outpost.
+	  Enlarged map perimeter so players enter the map just outside the
+	  door and still have ability to explore outside the house and
+	  easily go back to the world map. Updated world map
+	  (world/world_123_123) with updated map entrance coordinates.
+
+2012-05-31 06:30  rjtanner
+
+	* whalingoutpost/houses/fisherhousesouthwest, world/world_123_123:
+	  Updates to Fisherhouse Southwest
+	  (whalingoutpost/houses/fisherhousesouthwest) in Whaling Outpost.
+	  Enlarged map perimeter so players enter the map just outside the
+	  door and still have ability to explore outside the house and
+	  easily go back to the world map. Updated world map
+	  (world/world_123_123) with updated map entrance coordinates.
+
+2012-05-31 06:26  rjtanner
+
+	* whalingoutpost/houses/fisherhousesouth, world/world_123_123:
+	  Updates to Fisherhouse South
+	  (whalingoutpost/houses/fisherhousesouth) in Whaling Outpost.
+	  Enlarged map perimeter so players enter the map just outside the
+	  door and still have ability to explore outside the house and
+	  easily go back to the world map. Updated world map
+	  (world/world_123_123) with updated map entrance coordinates.
+
+2012-05-31 06:22  rjtanner
+
+	* whalingoutpost/houses/fisherhouseeast, world/world_123_123:
+	  Updates to Fisherhouse East
+	  (whalingoutpost/houses/fisherhouseeast) in Whaling Outpost.
+	  Enlarged map perimeter so players enter the map just outside the
+	  door and still have ability to explore outside the house and
+	  easily go back to the world map. Updated world map
+	  (world/world_123_123) with updated map entrance coordinates.
+
+2012-05-30 05:33  rjtanner
+
+	* whalingoutpost/houses/fisherhousenorth, world/world_123_123:
+	  Updates to Fisherhouse North
+	  (whalingoutpost/houses/fisherhousenorth) in Whaling Outpost.
+	  Enlarged map perimeter so players enter the map just outside the
+	  door and still have ability to explore outside the house and
+	  easily go back to the world map. Updated world map
+	  (world/world_123_123) with updated map entrance coordinates.
+
+2012-05-30 05:22  rjtanner
+
+	* wolfsburg/volcano/vvhuts: Remove the no longer used vvhuts
+	  (wolfsburg/volcano/vvhuts) map.
+
+2012-05-30 05:21  rjtanner
+
+	* wolfsburg/volcano/huts, wolfsburg/volcano/huts/hut-01,
+	  wolfsburg/volcano/huts/hut-02, wolfsburg/volcano/huts/hut-03,
+	  wolfsburg/volcano/huts/hut-04, wolfsburg/volcano/huts/hut-05,
+	  wolfsburg/volcano/huts/hut-06, wolfsburg/volcano/huts/hut-07,
+	  wolfsburg/volcano/huts/hut-08, wolfsburg/volcano/huts/hut-09,
+	  wolfsburg/volcano/huts/hut-10, wolfsburg/volcano/huts/hut-11,
+	  wolfsburg/volcano/huts/hut-12, wolfsburg/volcano/huts/hut-13,
+	  wolfsburg/volcano/huts/hut-14, world/world_129_108: Divided up
+	  /wolfsburg/volcano/vvhuts in to individual maps
+	  (wolfsburg/volcano/huts/hut-*) with some layout changes. Updated
+	  Wolfsburg world map (/world/world_129_108) to link to the hut
+	  maps.
+
+2012-05-29 04:37  rjtanner
+
+	* wolfsburg/temple/enterance, wolfsburg/temple/temple: Cosmetic
+	  changes to Reticent Temple (wolfsburg/temple/temple) to show
+	  surrounding area outside of the temple and to wall sections
+	  surrounding gates. Updated world map (wolfsburg/temple/enterance)
+	  for new entrance coordinates in to the temple.
+
+2012-05-29 04:17  rjtanner
+
+	* wolfsburg/shops/dept_store_armour,
+	  wolfsburg/shops/dept_store_magic,
+	  wolfsburg/shops/dept_store_misc,
+	  wolfsburg/shops/dept_store_weapon, world/world_128_109: Cosmetic
+	  update to One-Eyed Mike's Department Store
+	  (wolfsburg/shops/dept_store_*) to show surrounding area outside
+	  of the shop. Updated world map (world/world_128_109) for new
+	  entrance coordinates in to the store.
+
+2012-05-27 15:09  ryo_saeba
+
+	* world/world_117_101: Start the quest if not started.
+
+2012-05-27 12:24  ryo_saeba
+
+	* darcap/pygmy_forest/pygmy_forest: Remove redundant resistances,
+	  'no_damage' is set.
+
+2012-05-27 12:20  ryo_saeba
+
+	* darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d,
+	  darcap/pygmy_forest/pygmy_holes,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d: Use pygmy and pygmy
+	  assassin archetypes.
+
+2012-05-27 11:14  ryo_saeba
+
+	* darcap/pygmy_forest/pygmy_boss, darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_holes,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d: Remove invalid
+	  bulletwalls.
+
+2012-05-27 11:09  ryo_saeba
+
+	* darcap/darcap.quests, darcap/darcap/frightened_elf.msg,
+	  darcap/darcap/tavern, darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_garden, world/world_117_101: Quest:
+	  pygmy forest.
+
+2012-05-25 06:34  rjtanner
+
+	* darcap/darcap/shops/shop_w, darcap/darcap/shops/spike.msg,
+	  darcap/darcap/spike.msg: Moved .msg file related to Spike's
+	  Weapons (darcap/darcap/shops/shop_w) to /darcap/darcap/shops/
+	  directory. Updated file path for spike.msg text within the map.
+
+2012-05-24 07:09  rjtanner
+
+	* wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc, wolfsburg/dept_store_weapon,
+	  wolfsburg/shops/dept_store_armour,
+	  wolfsburg/shops/dept_store_magic,
+	  wolfsburg/shops/dept_store_misc,
+	  wolfsburg/shops/dept_store_weapon, world/world_128_109: Moved
+	  One-Eyed Mike's Department Store map in to /wolfsburg/shops/
+	  directory. Updated world map (world/world_128_109) due to file
+	  path changes.
+
+2012-05-23 07:09  rjtanner
+
+	* port_joseph/town/generalstore, port_joseph/town/shops,
+	  port_joseph/town/shops/generalstore, world/world_101_114: Moved
+	  Port Joseph General Store map in to /port_joseph/town/shops/
+	  directory. Updated world map (world/world_101_114) due to file
+	  path changes.
+
+2012-05-23 07:03  rjtanner
+
+	* marksel/shop, marksel/shops, marksel/shops/shop,
+	  world/world_120_109: Moved Marksel Shoppe map in to
+	  /marksel/shops directory. Updated world map (world/world_120_109)
+	  due to file path changes.
+
+2012-05-23 07:01  rjtanner
+
+	* euthville/magic.shop, euthville/shops,
+	  euthville/shops/magic.shop, world/world_105_113: Moved Euthville
+	  Magic Shop map in to /euthville/shops directory. Updated world
+	  map (world/world_105_113) due to file path changes.
+
+2012-05-22 05:16  rjtanner
+
+	* darcap/darcap/shop_w, darcap/darcap/shops/shop_w,
+	  world/world_116_102: Moved Spike's Weapons store map in to
+	  /darcap/darcap/shops directory. Updated world map
+	  (world/world_116_102) due to file patch changes.
+
+2012-05-22 05:11  rjtanner
+
+	* darcap/darcap/shop_m, darcap/darcap/shops/shop_m,
+	  world/world_116_102: Moved Mirkland's Magic magic store map in to
+	  /darcap/darcap/shops directory. Updated world map
+	  (world/world_116_102) due to file patch changes.
+
+2012-05-22 05:06  rjtanner
+
+	* darcap/darcap/shop_g, darcap/darcap/shops/shop_g,
+	  world/world_116_102: Moved Bob's Fish & Chips general store map
+	  in to /darcap/darcap/shops directory. Updated world map
+	  (world/world_116_102) due to file patch changes.
+
+2012-05-21 05:25  rjtanner
+
+	* darcap/darcap/shop_a, darcap/darcap/shops/shop_a,
+	  world/world_116_102: Moved Smiths's Armour in to
+	  /darcap/darcap/shops directory. Updated world map
+	  (world/world_116_102) due to file patch changes.
+
+2012-05-21 05:21  rjtanner
+
+	* darcap/darcap/potionshop, darcap/darcap/shops/potionshop,
+	  world/world_116_102: Moved Molthir's Potion Shop in to
+	  /darcap/darcap/shops directory. Updated world map
+	  (world/world_116_102) due to file patch changes.
+
+2012-05-21 05:18  rjtanner
+
+	* darcap/darcap/gshop, darcap/darcap/shops,
+	  darcap/darcap/shops/gshop, world/world_116_102: Moved Darcap
+	  General Store in to /darcap/darcap/shops directory. Updated world
+	  map (world/world_116_102) due to file patch changes.
+
+2012-05-20 17:51  ryo_saeba
+
+	* navar_city/university, navar_city/university_lordil.msg,
+	  wolfsburg/volcano/heimser.msg, wolfsburg/volcano/heimser_hut_0,
+	  wolfsburg/volcano/heimser_hut_1, wolfsburg/wolfsburg.quests:
+	  Quest: Heimser's experiments.
+
+2012-05-20 17:50  ryo_saeba
+
+	* python/dialog/post/giveknowledge.py: Post-dialog script to give a
+	  knowledge item.
+
+2012-05-20 05:53  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
 2012-05-20 05:40  rjtanner
 
 	* navar_city/misc/buildshop, navar_city/misc/city1armour,
