@@ -6,7 +6,7 @@ width 33
 height 31
 msg
 Created:  Andreas Vogl (red.blaze@gmx.net)
-Modified: 2012-03-25 Rick Tanner
+Modified: 2012-06-03 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -3181,15 +3181,15 @@ arch wwall_1_2
 x 18
 y 18
 end
-arch woodfloor
-hp 30
-sp 26
+arch duplicator
+other_arch locked_door2
 x 18
 y 19
-type 41
 connected 14
-activate_on_push 1
-activate_on_release 1
+end
+arch woodfloor
+x 18
+y 19
 end
 arch locked_door2
 slaying no_key_available
@@ -3435,16 +3435,6 @@ arch bookshelf
 x 19
 y 23
 no_pick 1
-arch note
-name list of ingredients
-msg
-Three ingredients are needed for the cure:
-- a beholder's tongue
-- a scorpion's stinger
-- skin of the shadow viper
-When you have them, put them into the cauldron.
-endmsg
-end
 end
 arch woodfloor
 x 19
@@ -3793,15 +3783,15 @@ arch woodfloor
 x 21
 y 20
 end
-arch woodfloor
-hp 28
-sp 28
+arch duplicator
+other_arch sage
 x 21
 y 21
-type 41
-connected 14
-activate_on_push 1
-activate_on_release 1
+connected 15
+end
+arch woodfloor
+x 21
+y 21
 end
 arch sage
 name Gorgon the Warrior
@@ -3820,25 +3810,9 @@ hp 500
 maxhp 500
 x 21
 y 21
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_poison 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_godpower 100
-resist_holyword 100
-resist_blind 100
+randomitems none
 monster 0
+no_damage 1
 end
 arch dungeon_magic
 x 21
@@ -3907,26 +3881,13 @@ hp 500
 maxhp 500
 x 21
 y 27
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_poison 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_godpower 100
-resist_holyword 100
-resist_blind 100
 randomitems none
+move_type walk
 stand_still 1
+no_damage 1
+arch npc_dialog
+name /santo_dominion/warloc_druid.msg
+end
 end
 arch woodfloor
 x 21
@@ -4272,6 +4233,13 @@ endmsg
 resist_fire 20
 value 5000
 weight 60000
+arch quest_advance_pickup
+name santo_dominion/Gordon 30>40
+unique 1
+end
+end
+arch quest_apply_if
+name santo_dominion/Gordon 30
 end
 end
 arch woodfloor
@@ -4314,49 +4282,22 @@ arch afloor_right
 x 23
 y 24
 end
-arch altar
-name 13
-slaying shadow viper's skin
-food 1
-x 23
-y 25
-connected 13
-end
-arch altar
-name 12
-slaying scorpion's stinger
-food 1
-x 23
-y 25
-connected 12
-end
-arch altar
-name 11
-slaying beholder's tongue
-food 1
-x 23
-y 25
-connected 11
-end
-arch permanent_lava
+arch woodfloor
 name fireplace
-hp 0
-dam 0
-wc 0
+face lava.111
+animation permanent_lava
 x 23
 y 25
-type 0
-attacktype 0
-move_on 0
-lifesave 0
+speed 0.2
+is_animated 1
+anim_speed 0.2
 end
-arch boulder
-name cauldron
-face cauldron_open.111
+arch cauldron
 x 23
 y 25
-move_block 0
-can_roll 0
+no_pick 1
+identified 1
+is_cauldron 0
 end
 arch afloor_right
 x 23
@@ -5247,37 +5188,9 @@ arch blocked
 x 28
 y 25
 end
-arch woodfloor
+arch blocked
 x 28
 y 26
-end
-arch button_small
-name 14
-x 28
-y 26
-weight 25000
-connected 14
-end
-arch creator
-name 13
-other_arch ten_kilo
-x 28
-y 26
-connected 13
-end
-arch creator
-name 12
-other_arch ten_kilo
-x 28
-y 26
-connected 12
-end
-arch creator
-name 11
-other_arch ten_kilo
-x 28
-y 26
-connected 11
 end
 arch blocked
 x 28
@@ -5446,50 +5359,9 @@ arch blocked
 x 29
 y 25
 end
-arch woodfloor
+arch blocked
 x 29
 y 26
-end
-arch magic_mouth
-name 14 - done
-msg
-The Warlock Druid says:
-Hooray! The potion is completed.  Now my friend Gorgon can be cured! Thank you very much! I'm sure Gorgon will reward you, go see him.
-endmsg
-x 29
-y 26
-connected 14
-move_on 0
-end
-arch magic_mouth
-name 13
-msg
-You put the shadow viper's skin into the cauldron.
-endmsg
-x 29
-y 26
-connected 13
-move_on 0
-end
-arch magic_mouth
-name 12
-msg
-You put the scorpion's stinger into the cauldron.
-endmsg
-x 29
-y 26
-connected 12
-move_on 0
-end
-arch magic_mouth
-name 11
-msg
-You put the beholder's tongue into the cauldron.
-endmsg
-x 29
-y 26
-connected 11
-move_on 0
 end
 arch blocked
 x 29
@@ -5696,7 +5568,7 @@ sp 20
 x 30
 y 28
 speed 0.0
-connected 14
+connected 15
 end
 arch fighter
 name Gorgon the Warrior
@@ -5711,6 +5583,9 @@ resist_magic 100
 resist_fire 100
 resist_electricity 100
 resist_cold 100
+arch npc_dialog
+name /santo_dominion/gordon.msg
+end
 end
 arch blocked
 x 30
@@ -6028,13 +5903,31 @@ arch blocked
 x 32
 y 27
 end
+arch sign
+name readme
+msg
+The buttons are merely here to please Gridarta, the connections 14 and 15 will be called by the animation
+endmsg
+x 32
+y 27
+end
 arch blocked
 x 32
 y 28
 end
+arch button_trigger
+x 32
+y 28
+connected 15
+end
 arch blocked
 x 32
 y 29
+end
+arch button_trigger
+x 32
+y 29
+connected 14
 end
 arch blocked
 x 32

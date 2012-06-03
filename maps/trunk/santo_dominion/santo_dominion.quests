@@ -28,3 +28,36 @@ end_description
 end_step
 end_quest
 
+quest santo_dominion/Gordon
+title The cure for Gordon the Warrior
+face fighter.111
+description
+I've been tasked to find ingredients to cure Gordon the Warrior.
+end_description
+restart 1
+step 10
+description
+I must find the three ingredients needed for the cure:
+- a beholder's tongue
+- a scorpion's stinger
+- a skin of a shadow viper
+end_description
+end_step
+step 20
+description
+I have found the ingredients, I should talk to Gordon once he's cured.
+end_description
+end_step
+step 30
+description
+Gordon gave me the combination for his chest so I can get his armor.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I've claimed my reward.
+end_description
+end_step
+end_quest
+

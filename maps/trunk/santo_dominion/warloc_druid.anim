@@ -1,0 +1,26 @@
+[Config]
+victimtype= object
+victim= who
+unique= no
+always_delete= no
+time_representation= second
+#animation=MakePotion
+[MakePotion]
+1 moveto 23 25
+0 message The Warloc makes the fire hotter.
+2 stop
+0 message The Warloc mixes the ingredients in the cauldron.
+2 stop
+0 message You see red smoke pouring from the cauldron.
+1 stop
+1 say The potion is complete, finally!
+1 moveto 17 20
+0 message The Warloc opens the door.
+0 trigger 14
+1 moveto 20 20
+1 stop
+0 message With some effort, the Warloc helps Gordon drink.
+1 stop
+0 trigger 15
+1 say The potion worked, Gordon is cured!
+1 moveto 21 27
