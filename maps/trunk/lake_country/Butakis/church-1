@@ -8,7 +8,7 @@ enter_x 1
 enter_y 15
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2012-02-05 Rick Tanner
+Modified: 2012-06-08 Rick Tanner
 endmsg
 end
 arch dun10
@@ -227,8 +227,8 @@ y 15
 end
 arch stair_3_up
 slaying church0
-hp 1
-sp 15
+hp 3
+sp 17
 x 1
 y 15
 end
@@ -3531,8 +3531,8 @@ y 15
 end
 arch stair_3_up
 slaying church0
-hp 18
-sp 15
+hp 20
+sp 17
 x 18
 y 15
 end
