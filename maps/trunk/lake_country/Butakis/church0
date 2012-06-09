@@ -8,7 +8,7 @@ enter_x 11
 enter_y 30
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2012-06-08 Rick Tanner
+Modified: 2012-06-09 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -1847,7 +1847,6 @@ end
 arch grass_only
 x 9
 y 33
-move_block all
 end
 arch grass_only
 x 10
@@ -2025,11 +2024,11 @@ end
 arch grass_only
 x 10
 y 32
+move_block all
 end
 arch grass_only
 x 10
 y 33
-move_block all
 end
 arch grass_only
 x 11
@@ -2211,6 +2210,7 @@ end
 arch grass_only
 x 11
 y 32
+move_block all
 end
 arch grass_only
 x 11
@@ -2397,11 +2397,11 @@ end
 arch grass_only
 x 12
 y 32
+move_block all
 end
 arch cobblestones
 x 12
 y 33
-move_block all
 end
 arch grass_only
 x 13
@@ -2579,11 +2579,11 @@ end
 arch grass_only
 x 13
 y 32
+move_block all
 end
 arch cobblestones
 x 13
 y 33
-move_block all
 end
 arch grass_only
 x 14
@@ -2793,7 +2793,6 @@ end
 arch cobblestones
 x 14
 y 33
-move_block all
 end
 arch grass_only
 x 15
@@ -3009,7 +3008,6 @@ end
 arch cobblestones
 x 15
 y 33
-move_block all
 end
 arch grass_only
 x 16
