@@ -8,7 +8,7 @@ enter_x 3
 enter_y 5
 msg
 Created:  1995-03-27
-Modified: 2012-06-08 Rick Tanner
+Modified: 2012-06-10 Rick Tanner
 endmsg
 end
 arch grass
@@ -719,8 +719,8 @@ end
 arch tavern
 name Royal Blacksmith
 slaying blacksmith
-hp 7
-sp 5
+hp 8
+sp 9
 x 2
 y 33
 end
