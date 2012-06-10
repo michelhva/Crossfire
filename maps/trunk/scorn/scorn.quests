@@ -158,3 +158,49 @@ end_description
 end_step
 end_quest
 
+quest scorn/Witherspoon-ghost
+title Witherspoon's ghost
+face ghost.111
+description
+I'm helping a ghost rest in peace.
+end_description
+restart 1
+step 10
+description
+The ghost in Witherspoon asked me to fetch his body, which is somewhere on the shore of the lake west of Scorn.
+end_description
+end_step
+step 20
+description
+I've found the body, and also a strange dagger.
+end_description
+end_step
+step 30
+description
+I should talk to a priest to figure what the runes on the dagger mean.
+end_description
+end_step
+step 40
+description
+The priest of Devourers suggested I go see a witch living south of Scorn.
+end_description
+end_step
+step 50
+description
+Rolanda explained me the situation, I should go see the ghost in Witherspoon.
+end_description
+end_step
+step 60
+finishes_quest
+description
+I've brought back his body to the ghost, who went in peace.
+end_description
+end_step
+step 70
+finishes_quest
+description
+I've angered the ghost.
+end_description
+end_step
+end_quest
+

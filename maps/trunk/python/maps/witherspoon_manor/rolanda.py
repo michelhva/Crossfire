@@ -83,6 +83,8 @@ def explain():
 	whoami.Say('So I... I hide the body, hoping to forget him.')
 	whoami.Say('But now I can\'t forget him! Ever!')
 	pl.Write('You wonder what the ghost (Alfred, according to %s) will make of that...'%whoami.Name, color)
+	if pl.QuestGetState("scorn/Witherspoon-ghost") <= 40:
+		pl.QuestSetState("scorn/Witherspoon-ghost", 50)
 
 if event.Subtype == Crossfire.EventType.USER and command == 'give':
 	do_give()
