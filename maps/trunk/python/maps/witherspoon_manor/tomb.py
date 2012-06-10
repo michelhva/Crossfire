@@ -67,5 +67,7 @@ def main():
 	dagger.InsertInto(pl)
 
 	pl.Write('You find a body with a dagger in it!')
+	if pl.QuestGetState("scorn/Witherspoon-ghost") <= 10:
+		pl.QuestSetState("scorn/Witherspoon-ghost", 20)
 
 main()

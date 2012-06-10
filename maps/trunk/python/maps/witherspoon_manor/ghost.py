@@ -35,6 +35,8 @@ def start_disappear(ghost, player):
 	ghost.CreateTimer(5, 1)
 	ghost.StandStill = True
 	player.Write('The %s starts fading...'%ghost.Name)
+	if player.QuestGetState("scorn/Witherspoon-ghost") <= 50:
+		player.QuestSetState("scorn/Witherspoon-ghost", 60)
 
 def found_body(player, rule):
 	'''Does the player have the body?'''
@@ -61,9 +63,10 @@ def found_body(player, rule):
 	ghost.CreateTimer(10, 1)
 	ghost.Say('You fool! You lost my body!\nPrepare to feel my wrath!')
 	warn_player(player, ghost)
-	return False
+	if player.QuestGetState("scorn/Witherspoon-ghost") <= 60:
+		player.QuestSetState("scorn/Witherspoon-ghost", 70)
 
-	return has_body(player)
+	return False
 
 def can_talk(player, rule):
 	'''Is the ghost angry or disappearing?
@@ -80,6 +83,9 @@ def do_dialog():
 	pl = Crossfire.WhoIsActivator()
 	if pl.ReadKey('witherspoon_know_all') == '1':
 		# player found the real story, through Rolanda.
+		pl.WriteKey('witherspoon_know_all', '')
+		pl.WriteKey('witherspoon_know_dagger', '')
+		pl.WriteKey('witherspoon_ghost', '')
 		whoami.Say('Oh...')
 		whoami.Map.Print('The %s manages to blush.'%whoami.Name)
 		whoami.Say('Now I remember. I\'m so stupid. Poor Rolanda, will she ever forgive me...')
@@ -107,7 +113,7 @@ def do_dialog():
 	speech.addRule(DialogRule(["help","yes","how"], prer, rmsg, postr),0)
 
 	prer = [["token","witherspoon_ghost","explain"]]
-	postr = [["settoken","witherspoon_ghost", "wait"]]
+	postr = [["settoken","witherspoon_ghost", "wait"], ["quest", "scorn/Witherspoon-ghost", 10]]
 	rmsg = ["I was walking near a lake west of Scorn, so maybe my body is buried here."]
 	speech.addRule(DialogRule(["where","location"], prer, rmsg, postr),1)
 

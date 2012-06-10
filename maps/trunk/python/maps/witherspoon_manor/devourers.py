@@ -82,6 +82,9 @@ def do_timer():
 	whoami.Say('I think there is a witch, Olandi or something, who lives south of Scorn and specializes in Devourers magic.')
 	whoami.Say('Maybe she could help you?')
 
+	if pl.QuestGetState("scorn/Witherspoon-ghost") <= 30:
+		pl.QuestSetState("scorn/Witherspoon-ghost", 40)
+
 if command == 'give':
 	if whoami.ReadKey('examining_item') == '1':
 		pl.Message('The priest is busy.', color)
