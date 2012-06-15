@@ -8,7 +8,7 @@ enter_x 3
 enter_y 27
 msg
 Created:  1994-05-27 langley (langley@fermat.dartmouth.edu)
-Modified: 2012-02-20 Rick Tanner
+Modified: 2012-06-15 Nicolas Weeger
 endmsg
 end
 arch cobblestones2
@@ -729,6 +729,9 @@ type 41
 connected 7
 activate_on_push 1
 activate_on_release 1
+arch npc_dialog
+name /port_joseph/pirates/rowboat.msg
+end
 end
 arch sea
 x 3
@@ -737,6 +740,15 @@ end
 arch sea
 x 3
 y 29
+end
+arch magic_ear
+msg
+@match tortola
+Aye!  Tortola it is!
+endmsg
+x 3
+y 29
+connected 7
 end
 arch cobblestones2
 x 4
@@ -918,15 +930,6 @@ end
 arch pstone_1
 x 4
 y 26
-end
-arch magic_ear
-msg
-@match tortola
-Aye!  Tortola it is!
-endmsg
-x 4
-y 27
-connected 7
 end
 arch magic_mouth
 msg

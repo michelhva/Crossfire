@@ -1,0 +1,44 @@
+quest port_joseph/MooglyBill
+title Moogly Bill's treasure
+face pirate.111
+description
+I've heard of Moogly Bill, a pirate, who hide his treasure somewhere.
+end_description
+step 10
+description
+I should talk to Redeye, who has more information.
+end_description
+end_step
+step 20
+description
+Percival knows things about Moogly Bill, but I should talk to Portia first.
+end_description
+end_step
+step 30
+description
+I should talk to Percival, and mention 'violet'.
+end_description
+end_step
+step 40
+description
+I must find Moogly Bill's grave, and the name of the treasure island.
+end_description
+end_step
+step 50
+description
+I should explore the island.
+end_description
+end_step
+step 60
+description
+I've reached the entrance to Moogly Bill's treasure.
+end_description
+end_step
+step 70
+finishes_quest
+description
+I've claimed Moogly Bill's treasure.
+end_description
+end_step
+end_quest
+

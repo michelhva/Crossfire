@@ -9,7 +9,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  1994-06-11 larry langley (langley@fermat.dartmouth.edu)
-Modified: 2012-02-21 Rick Tanner
+Modified: 2012-06-15 Nicolas Weeger
 endmsg
 end
 arch dun33
@@ -183,6 +183,9 @@ hp 5
 sp 7
 x 3
 y 1
+arch quest_advance_apply
+name port_joseph/MooglyBill 0-50>60
+end
 end
 arch dungeon_floor
 x 3
