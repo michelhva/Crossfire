@@ -8,7 +8,7 @@ enter_x 16
 enter_y 6
 msg
 Created:  1994-05-17 langley (langley@fermat.dartmouth.edu)
-Modified: 2012-02-21 Rick Tanner
+Modified: 2012-06-15 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -1644,6 +1644,9 @@ endmsg
 x 14
 y 6
 unaggressive 1
+arch npc_dialog
+name /port_joseph/town/dshark_redeye.msg
+end
 end
 arch woodfloor
 x 14
@@ -2080,6 +2083,9 @@ endmsg
 x 17
 y 15
 unaggressive 1
+arch npc_dialog
+name /port_joseph/town/dshark_thief.msg
+end
 end
 arch woodfloor
 x 17

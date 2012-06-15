@@ -8,7 +8,7 @@ enter_x 13
 enter_y 5
 msg
 Created:  1994-05-26 langley
-Modified: 2012-02-21 Rick Tanner
+Modified: 2012-06-15 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -2137,6 +2137,9 @@ arch wand
 randomitems none
 arch spell_magic_bullet
 end
+end
+arch npc_dialog
+name /port_joseph/town/portia.msg
 end
 end
 arch woodfloor
