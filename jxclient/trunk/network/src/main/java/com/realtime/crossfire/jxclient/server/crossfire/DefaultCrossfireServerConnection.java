@@ -1835,7 +1835,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         } else if (infoType.equals("exp_table")) {
             processExpTableReplyinfo(packet);
         } else if (infoType.equals("knowledge_info")) {
-            processKnowledgeTypeReplyinfo(packet);
+            processKnowledgeInfoReplyinfo(packet);
         } else {
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
         }
@@ -1964,7 +1964,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * Processes a "replyinfo knowledge_info" block.
      * @param packet the packet to process
      */
-    private void processKnowledgeTypeReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
+    private void processKnowledgeInfoReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
         model.getKnowledgeManager().clearTypes();
         final byte[] data = new byte[packet.remaining()];
         packet.get(data);
