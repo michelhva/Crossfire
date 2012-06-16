@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.character.StartingMap;
 import com.realtime.crossfire.jxclient.faces.AskfaceFaceQueue;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -34,6 +35,10 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -77,6 +82,12 @@ public class Model {
 
     @NotNull
     private AskfaceFaceQueue askfaceFaceQueue;
+
+    /**
+     * The {@link StartingMap} entries available for character creation.
+     */
+    @NotNull
+    private final List<StartingMap> startingMaps = new ArrayList<StartingMap>();
 
     @Deprecated
     public void setItemsManager(@NotNull final FacesManager facesManager) {
@@ -146,6 +157,25 @@ public class Model {
     @NotNull
     public AskfaceFaceQueue getAskfaceFaceQueue() {
         return askfaceFaceQueue;
+    }
+
+    /**
+     * Sets the {@link StartingMap} entries available for character creation.
+     * @param startingMaps the starting map entries
+     */
+    public void setStartingmaps(@NotNull final Collection<StartingMap> startingMaps) {
+        this.startingMaps.clear();
+        this.startingMaps.addAll(startingMaps);
+    }
+
+    /**
+     * Returns all defined {@link StartingMap} entries available for character
+     * creation.
+     * @return the starting map entries
+     */
+    @NotNull
+    public List<StartingMap> getStartingmaps() {
+        return Collections.unmodifiableList(startingMaps);
     }
 
 }

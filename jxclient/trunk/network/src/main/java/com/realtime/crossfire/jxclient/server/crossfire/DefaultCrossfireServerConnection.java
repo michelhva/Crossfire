@@ -116,6 +116,21 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private static final int ACL_FACE_NUM = 8;
 
     /**
+     * Archetype name of a "replyinfo startingmap" entry.
+     */
+    private static final int INFO_MAP_ARCH_NAME = 1;
+
+    /**
+     * Proper name of a "replyinfo startingmap" entry.
+     */
+    private static final int INFO_MAP_NAME = 2;
+
+    /**
+     * Description of a "replyinfo startingmap" entry.
+     */
+    private static final int INFO_MAP_DESCRIPTION = 3;
+
+    /**
      * The {@link Model} instance that is updated.
      */
     @NotNull
@@ -1836,6 +1851,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             processExpTableReplyinfo(packet);
         } else if (infoType.equals("knowledge_info")) {
             processKnowledgeInfoReplyinfo(packet);
+        } else if (infoType.equals("startingmap")) {
+            processStartingMapReplyinfo(packet);
         } else {
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
         }
@@ -2005,6 +2022,40 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         } finally {
             is.close();
         }
+    }
+
+    /**
+     * Processes a "replyinfo startingmap" block.
+     * @param packet the packet to process
+     * @throws IOException if the block cannot be parsed
+     */
+    private void processStartingMapReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
+        model.getKnowledgeManager().clearTypes();
+        final StartingMapBuilder sb = new StartingMapBuilder();
+        while (packet.hasRemaining()) {
+            final int type = getInt1(packet);
+            final int length = getInt2(packet);
+            switch (type) {
+            case INFO_MAP_ARCH_NAME:
+                final byte[] archName = new byte[length];
+                packet.get(archName);
+                sb.setArchName(archName);
+                break;
+
+            case INFO_MAP_NAME:
+                sb.setName(getString(packet, length));
+                break;
+
+            case INFO_MAP_DESCRIPTION:
+                sb.setDescription(getString(packet, length));
+                break;
+
+            default:
+                System.err.println("Ignoring startingmap type "+type);
+                break;
+            }
+        }
+        model.setStartingmaps(sb.finish());
     }
 
     /**
@@ -3004,6 +3055,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             sendRequestinfo("skill_info 1");
             sendRequestinfo("exp_table");
             sendRequestinfo("knowledge_info");
+            sendRequestinfo("startingmap");
             sendToggleextendedtext(MessageTypes.getAllTypes());
         }
         notifyPacketWatcherListenersAscii(packet, args);
