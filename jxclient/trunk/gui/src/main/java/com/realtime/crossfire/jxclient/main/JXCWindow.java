@@ -365,7 +365,6 @@ public class JXCWindow {
 
         @Override
         public void endAccountList(final int count) {
-            //noinspection AnonymousInnerClassMayBeStatic
             SwingUtilities.invokeLater(new Runnable() {
 
                 @Override
