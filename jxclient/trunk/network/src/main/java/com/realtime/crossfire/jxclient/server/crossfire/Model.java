@@ -254,7 +254,7 @@ public class Model {
      * @param classRaceInfo the race info to set
      */
     public void addRaceInfo(@NotNull final ClassRaceInfo classRaceInfo) {
-        this.raceInfo.put(classRaceInfo.getArchName(), classRaceInfo);
+        raceInfo.put(classRaceInfo.getArchName(), classRaceInfo);
     }
 
     /**
