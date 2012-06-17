@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
-import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
@@ -2106,16 +2105,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         // number of characters
         int count = getInt1(packet);
         final int total = count;
+        final AccountPlayerBuilder accountPlayerBuilder = new AccountPlayerBuilder(debugProtocol);
         while (count > 0) {
-            String name = "";
-            String cClass = "";
-            String race = "";
-            String face = "";
-            String party = "";
-            String map = "";
-            int level = 0;
-            int faceNumber = 0;
-
             while (packet.hasRemaining()) {
                 final int len = getInt1(packet);
 
@@ -2126,7 +2117,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     // got all information on a character
                     count--;
 
-                    fireAddAccount(new CharacterInformation(name, cClass, race, face, party, map, level, faceNumber));
+                    fireAddAccount(accountPlayerBuilder.finish());
                     break;
                 }
 
@@ -2134,59 +2125,35 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
                 switch (type) {
                 case ACL_NAME:
-                    name = getString(packet, len-1);
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers name="+name);
-                    }
+                    accountPlayerBuilder.setName(getString(packet, len-1));
                     break;
 
                 case ACL_CLASS:
-                    cClass = getString(packet, len-1);
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers class="+cClass);
-                    }
+                    accountPlayerBuilder.setClass(getString(packet, len-1));
                     break;
 
                 case ACL_RACE:
-                    race = getString(packet, len-1);
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers race="+race);
-                    }
+                    accountPlayerBuilder.setRace(getString(packet, len-1));
                     break;
 
                 case ACL_LEVEL:
-                    level = getInt2(packet);
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers level="+level);
-                    }
+                    accountPlayerBuilder.setLevel(getInt2(packet));
                     break;
 
                 case ACL_FACE:
-                    face = getString(packet, len-1);
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers face="+face);
-                    }
+                    accountPlayerBuilder.setFace(getString(packet, len-1));
                     break;
 
                 case ACL_PARTY:
-                    party = getString(packet, len-1);
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers party="+party);
-                    }
+                    accountPlayerBuilder.setParty(getString(packet, len-1));
                     break;
 
                 case ACL_MAP:
-                    map = getString(packet, len-1);
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers map="+map);
-                    }
+                    accountPlayerBuilder.setMap(getString(packet, len-1));
                     break;
 
                 case ACL_FACE_NUM:
-                    faceNumber = getInt2(packet);
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers face="+faceNumber);
-                    }
+                    accountPlayerBuilder.setFaceNumber(getInt2(packet));
                     break;
 
                 default:
