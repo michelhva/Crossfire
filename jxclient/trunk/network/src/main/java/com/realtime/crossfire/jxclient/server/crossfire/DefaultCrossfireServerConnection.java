@@ -2139,7 +2139,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param rb the class race info builder to update
      * @throws UnknownCommandException if the packet cannot be parsed
      */
-    private void parseClassRaceInfoStats(@NotNull final ByteBuffer packet, @NotNull final ClassRaceInfoBuilder rb) throws UnknownCommandException {
+    private static void parseClassRaceInfoStats(@NotNull final ByteBuffer packet, @NotNull final ClassRaceInfoBuilder rb) throws UnknownCommandException {
         while (packet.hasRemaining()) {
             final int statNo = getInt1(packet);
             switch (statNo) {
