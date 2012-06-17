@@ -1988,6 +1988,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     /**
      * Processes a "replyinfo knowledge_info" block.
      * @param packet the packet to process
+     * @throws IOException if the packet cannot be parsed
      */
     private void processKnowledgeInfoReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
         model.getKnowledgeManager().clearTypes();
@@ -2251,6 +2252,10 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         notifyPacketWatcherListenersMixed(packet, args);
     }
 
+    /**
+     * Processes an "addacknowledge" block.
+     * @param packet the packet to process
+     */
     private void processAddKnowledge(@NotNull final ByteBuffer packet) {
         final int args = packet.position();
         while (packet.hasRemaining()) {
