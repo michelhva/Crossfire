@@ -2107,62 +2107,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         final int total = getInt1(packet);
         final AccountPlayerBuilder accountPlayerBuilder = new AccountPlayerBuilder();
         for (int count = 0; count < total; count++) {
-            while (true) {
-                if (!packet.hasRemaining()) {
-                    throw new UnknownCommandException("truncated accountplayers reply");
-                }
-                final int len = getInt1(packet);
-
-                if (len == 0) {
-                    break;
-                }
-
-                final int type = getInt1(packet);
-
-                switch (type) {
-                case ACL_NAME:
-                    accountPlayerBuilder.setName(getString(packet, len-1));
-                    break;
-
-                case ACL_CLASS:
-                    accountPlayerBuilder.setClass(getString(packet, len-1));
-                    break;
-
-                case ACL_RACE:
-                    accountPlayerBuilder.setRace(getString(packet, len-1));
-                    break;
-
-                case ACL_LEVEL:
-                    accountPlayerBuilder.setLevel(getInt2(packet));
-                    break;
-
-                case ACL_FACE:
-                    accountPlayerBuilder.setFace(getString(packet, len-1));
-                    break;
-
-                case ACL_PARTY:
-                    accountPlayerBuilder.setParty(getString(packet, len-1));
-                    break;
-
-                case ACL_MAP:
-                    accountPlayerBuilder.setMap(getString(packet, len-1));
-                    break;
-
-                case ACL_FACE_NUM:
-                    accountPlayerBuilder.setFaceNumber(getInt2(packet));
-                    break;
-
-                default:
-                    // ignore those values we don't understand
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers unknown="+type);
-                    }
-                    packet.position(packet.position()+len-1);
-                    break;
-                }
-            }
-
-            final CharacterInformation characterInformation = accountPlayerBuilder.finish();
+            final CharacterInformation characterInformation = parseAccountPlayer(packet, accountPlayerBuilder);
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv accountplayers entry: "+characterInformation);
             }
@@ -2176,6 +2121,72 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
         packet.reset();
         notifyPacketWatcherListenersMixed(packet, args);
+    }
+
+    /**
+     * Processes one account entry of an 'accountplayers' server command.
+     * @param packet the packet's payload
+     * @param accountPlayerBuilder the account player builder to use
+     * @return the parsed account entry
+     * @throws UnknownCommandException if the account entry cannot be parsed
+     */
+    @NotNull
+    private CharacterInformation parseAccountPlayer(@NotNull final ByteBuffer packet, @NotNull final AccountPlayerBuilder accountPlayerBuilder) throws UnknownCommandException {
+        while (true) {
+            if (!packet.hasRemaining()) {
+                throw new UnknownCommandException("truncated accountplayers reply");
+            }
+
+            final int len = getInt1(packet);
+            if (len == 0) {
+                break;
+            }
+
+            final int type = getInt1(packet);
+            switch (type) {
+            case ACL_NAME:
+                accountPlayerBuilder.setName(getString(packet, len-1));
+                break;
+
+            case ACL_CLASS:
+                accountPlayerBuilder.setClass(getString(packet, len-1));
+                break;
+
+            case ACL_RACE:
+                accountPlayerBuilder.setRace(getString(packet, len-1));
+                break;
+
+            case ACL_LEVEL:
+                accountPlayerBuilder.setLevel(getInt2(packet));
+                break;
+
+            case ACL_FACE:
+                accountPlayerBuilder.setFace(getString(packet, len-1));
+                break;
+
+            case ACL_PARTY:
+                accountPlayerBuilder.setParty(getString(packet, len-1));
+                break;
+
+            case ACL_MAP:
+                accountPlayerBuilder.setMap(getString(packet, len-1));
+                break;
+
+            case ACL_FACE_NUM:
+                accountPlayerBuilder.setFaceNumber(getInt2(packet));
+                break;
+
+            default:
+                // ignore those values we don't understand
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv accountplayers unknown="+type);
+                }
+                packet.position(packet.position()+len-1);
+                break;
+            }
+        }
+
+        return accountPlayerBuilder.finish();
     }
 
     /**
