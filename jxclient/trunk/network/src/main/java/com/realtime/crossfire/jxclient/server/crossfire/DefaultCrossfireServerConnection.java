@@ -572,6 +572,11 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private String accountName = null;
 
     /**
+     * The login method version supported by the server we're connected to.
+     */
+    private int loginMethod = 0;
+
+    /**
      * The {@link CrossfireUpdateMapListener} to be notified. Set to
      * <code>null</code> if unset.
      */
@@ -615,11 +620,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
 
     };
-
-    /**
-     * The login method version supported by the server we're connected to.
-     */
-    private int loginMethod = 0;
 
     /**
      * Creates a new instance.
