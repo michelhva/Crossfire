@@ -584,6 +584,20 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private CrossfireUpdateMapListener crossfireUpdateMapListener;
 
     /**
+     * If non-<code>null</code>: the last sent "requestinfo" command for which
+     * no "replyinfo" response has been received yet.
+     */
+    @Nullable
+    private String sendingRequestInfo;
+
+    /**
+     * Pending "requestinfo" commands that will be sent as soon {@link
+     * #sendingRequestInfo} is unset.
+     */
+    @NotNull
+    private final List<String> pendingRequestInfos = new ArrayList<String>();
+
+    /**
      * The {@link ClientSocketListener} attached to the server socket.
      */
     @NotNull
@@ -1862,6 +1876,13 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet cannot be parsed
      */
     private void cmdReplyinfo(@NotNull final String infoType, final ByteBuffer packet) throws IOException, UnknownCommandException {
+        synchronized (writeBuffer) {
+            if (sendingRequestInfo != null && sendingRequestInfo.equals(infoType)) {
+                sendingRequestInfo = null;
+            }
+        }
+        sendPendingRequestInfo();
+
         if (infoType.equals("image_info")) {
             processImageInfoReplyinfo(packet);
         } else if (infoType.equals("skill_info")) {
@@ -2099,7 +2120,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         model.setRaceList(races);
 
         for (final String race : races) {
-            sendRequestinfo("race_info "+race);
+            sendQueuedRequestinfo("race_info "+race);
         }
     }
 
@@ -2116,7 +2137,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         model.setClassList(classes);
 
         for (final String class_ : classes) {
-            sendRequestinfo("class_info "+class_);
+            sendQueuedRequestinfo("class_info "+class_);
         }
     }
 
@@ -3381,14 +3402,14 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
         if (options.size() != 2 || !options.get(0).equals("mapsize") && !options.get(0).equals("num_look_objects")) {
             setClientSocketState(ClientSocketState.SETUP, ClientSocketState.REQUESTINFO);
-            sendRequestinfo("image_info");
             sendRequestinfo("skill_info 1");
             sendRequestinfo("exp_table");
             sendRequestinfo("knowledge_info");
-            sendRequestinfo("startingmap");
-            sendRequestinfo("race_list");
-            sendRequestinfo("class_list");
-            sendRequestinfo("newcharinfo");
+            sendQueuedRequestinfo("image_info");
+            sendQueuedRequestinfo("startingmap");
+            sendQueuedRequestinfo("race_list");
+            sendQueuedRequestinfo("class_list");
+            sendQueuedRequestinfo("newcharinfo");
             sendToggleextendedtext(MessageTypes.getAllTypes());
         }
         notifyPacketWatcherListenersAscii(packet, args);
@@ -3920,6 +3941,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             byteBuffer.put(REQUESTINFO_PREFIX);
             byteBuffer.put(infoType.getBytes(UTF8));
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            sendingRequestInfo = PATTERN_SPACE.split(infoType, 2)[0];
         }
     }
 
@@ -4398,6 +4420,34 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             }
         }
         fireMagicMap();
+    }
+
+    /**
+     * Sends a "requestinfo" packet asynchronously.
+     * @param infoType the packet's payload
+     */
+    private void sendQueuedRequestinfo(@NotNull final String infoType) {
+        synchronized (writeBuffer) {
+            pendingRequestInfos.add(infoType);
+        }
+        sendPendingRequestInfo();
+    }
+
+    /**
+     * Sends the next asynchronous "requestinfo" packet if possible.
+     */
+    private void sendPendingRequestInfo() {
+        final String infoType;
+        synchronized (writeBuffer) {
+            if (sendingRequestInfo != null) {
+                return;
+            }
+            if (pendingRequestInfos.isEmpty()) {
+                return;
+            }
+            infoType = pendingRequestInfos.remove(0);
+        }
+        sendRequestinfo(infoType);
     }
 
 }
