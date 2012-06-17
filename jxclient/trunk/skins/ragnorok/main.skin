@@ -17,7 +17,7 @@ picture gauge_fp_back         gauge_frame 0.9
 textgauge gauge_fp            gauge_fp null gauge_empty FOOD WE BLACK font_label null Food: %T
 
 picture gauge_xp_back         gauge_xp_frame 0.9
-duptextgauge gauge_xp         gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label null Level: %T
+duptextgauge gauge_xp         gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label null
 
 # Button Group
 textbutton button_help        false command_help Help
