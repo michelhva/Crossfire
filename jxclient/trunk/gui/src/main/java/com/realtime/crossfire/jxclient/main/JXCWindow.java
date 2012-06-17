@@ -338,12 +338,12 @@ public class JXCWindow {
         }
 
         @Override
-        public void addAccount(@NotNull final String name, @NotNull final String characterClass, @NotNull final String race, @NotNull final String face, @NotNull final String party, @NotNull final String map, final int level, final int faceNumber) {
+        public void addAccount(@NotNull final CharacterInformation characterInformation) {
             SwingUtilities.invokeLater(new Runnable() {
 
                 @Override
                 public void run() {
-                    final CharacterInformation information = new CharacterInformation(name, characterClass, race, face, party, map, level, faceNumber);
+                    final CharacterInformation information = characterInformation;
                     characterModel.add(information);
                 }
 

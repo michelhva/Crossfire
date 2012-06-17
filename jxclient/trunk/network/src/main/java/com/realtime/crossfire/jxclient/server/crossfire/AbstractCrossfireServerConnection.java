@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.nio.ByteBuffer;
@@ -354,9 +355,9 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         }
     }
 
-    protected void fireAddAccount(@NotNull final String name, @NotNull final String characterClass, @NotNull final String race, @NotNull final String face, @NotNull final String party, @NotNull final String map, final int level, final int faceNumber) {
+    protected void fireAddAccount(@NotNull final CharacterInformation characterInformation) {
         for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
-            crossfireAccountListener.addAccount(name, characterClass, race, face, party, map, level, faceNumber);
+            crossfireAccountListener.addAccount(characterInformation);
         }
     }
 
