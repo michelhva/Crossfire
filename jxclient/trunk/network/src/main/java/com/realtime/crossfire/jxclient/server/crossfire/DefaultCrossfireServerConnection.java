@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.character.Choice;
-import com.realtime.crossfire.jxclient.character.RaceInfo;
+import com.realtime.crossfire.jxclient.character.ClassRaceInfo;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
@@ -1869,7 +1869,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         } else if (infoType.equals("class_list")) {
             processClassListReplyinfo(packet);
         } else if (infoType.equals("race_info")) {
-            processRaceInfoReplyinfo(packet);
+            processClassRaceInfoReplyinfo(packet);
         } else {
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
         }
@@ -2108,9 +2108,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet to process
      * @throws UnknownCommandException if the packet cannot be parsed
      */
-    private void processRaceInfoReplyinfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+    private void processClassRaceInfoReplyinfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final String raceName = getStringDelimiter(packet, '\n');
-        final RaceInfoBuilder rb = new RaceInfoBuilder(raceName);
+        final ClassRaceInfoBuilder rb = new ClassRaceInfoBuilder(raceName);
         while (packet.hasRemaining()) {
             final String type = getStringDelimiter(packet, ' ');
             if (type.equals("name")) {
@@ -2118,27 +2118,27 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             } else if (type.equals("msg")) {
                 rb.setMsg(getString(packet, getInt2(packet)));
             } else if (type.equals("stats")) {
-                parseRaceInfoStats(packet, rb);
+                parseClassRaceInfoStats(packet, rb);
             } else if (type.equals("choice")) {
-                parseRaceInfoChoice(packet, rb);
+                parseClassRaceInfoChoice(packet, rb);
             } else {
                 System.err.println("Ignoring race_info type "+type);
             }
         }
-        final RaceInfo raceInfo = rb.finish();
+        final ClassRaceInfo classRaceInfo = rb.finish();
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv replyinfo race_info "+raceInfo);
+            debugProtocol.debugProtocolWrite("recv replyinfo race_info "+classRaceInfo);
         }
-        model.addRaceInfo(raceInfo);
+        model.addRaceInfo(classRaceInfo);
     }
 
     /**
      * Parses a "stats" entry of a "replyinfo race_info" packet.
      * @param packet the packet's contents
-     * @param rb the race info builder to update
+     * @param rb the class race info builder to update
      * @throws UnknownCommandException if the packet cannot be parsed
      */
-    private void parseRaceInfoStats(@NotNull final ByteBuffer packet, @NotNull final RaceInfoBuilder rb) throws UnknownCommandException {
+    private void parseClassRaceInfoStats(@NotNull final ByteBuffer packet, @NotNull final ClassRaceInfoBuilder rb) throws UnknownCommandException {
         while (packet.hasRemaining()) {
             final int statNo = getInt1(packet);
             switch (statNo) {
@@ -2236,9 +2236,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     /**
      * Parses a "choice" entry of a "replyinfo race_info" packet.
      * @param packet the packet's contents
-     * @param rb the race info builder to update
+     * @param rb the class race info builder to update
      */
-    private static void parseRaceInfoChoice(@NotNull final ByteBuffer packet, @NotNull final RaceInfoBuilder rb) {
+    private static void parseClassRaceInfoChoice(@NotNull final ByteBuffer packet, @NotNull final ClassRaceInfoBuilder rb) {
         final String choiceName = getString(packet, getInt1(packet));
         final String choiceDescription = getString(packet, getInt1(packet));
         final String archName = getString(packet, getInt1(packet));
