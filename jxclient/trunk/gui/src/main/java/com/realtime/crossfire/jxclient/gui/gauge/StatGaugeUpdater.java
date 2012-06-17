@@ -243,7 +243,6 @@ public class StatGaugeUpdater extends GaugeUpdater {
         final int level = stats.getStat(Stats.CS_STAT_LEVEL);
         final long experience = stats.getExperience();
         final int percents = getPercentsToNextLevel(level, experience);
-        setValues(percents, 0, 99, percents+"%", level+"<br>Experience:"+Formatter.formatLong(experience)+"<br>Next level:"+Formatter.formatLong(getExperienceToNextLevel(level, experience)));
+        setValues(percents, 0, 99, percents+"%", "Level: "+level+"<br>Experience:"+Formatter.formatLong(experience)+"<br>Next level:"+Formatter.formatLong(getExperienceToNextLevel(level, experience)));
     }
-
 }
