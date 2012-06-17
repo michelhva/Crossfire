@@ -170,7 +170,7 @@ public class Model {
      * Sets the {@link StartingMap} entries available for character creation.
      * @param startingMaps the starting map entries
      */
-    public void setStartingmaps(@NotNull final Collection<StartingMap> startingMaps) {
+    public void setStartingMaps(@NotNull final Collection<StartingMap> startingMaps) {
         this.startingMaps.clear();
         this.startingMaps.addAll(startingMaps);
     }
@@ -181,7 +181,7 @@ public class Model {
      * @return the starting map entries
      */
     @NotNull
-    public List<StartingMap> getStartingmaps() {
+    public List<StartingMap> getStartingMaps() {
         return Collections.unmodifiableList(startingMaps);
     }
 
