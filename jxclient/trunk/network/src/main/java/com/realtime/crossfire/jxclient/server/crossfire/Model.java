@@ -36,6 +36,7 @@ import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -88,6 +89,12 @@ public class Model {
      */
     @NotNull
     private final List<StartingMap> startingMaps = new ArrayList<StartingMap>();
+
+    /**
+     * The races available for character creation.
+     */
+    @NotNull
+    private final List<String> raceList = new ArrayList<String>();
 
     @Deprecated
     public void setItemsManager(@NotNull final FacesManager facesManager) {
@@ -176,6 +183,24 @@ public class Model {
     @NotNull
     public List<StartingMap> getStartingmaps() {
         return Collections.unmodifiableList(startingMaps);
+    }
+
+    /**
+     * Sets the races available for character creation.
+     * @param raceList the races
+     */
+    public void setRaceList(@NotNull final String[] raceList) {
+        this.raceList.clear();
+        this.raceList.addAll(Arrays.asList(raceList));
+    }
+
+    /**
+     * Returns all defined races available for character creation.
+     * @return the races
+     */
+    @NotNull
+    public List<String> getRaceList() {
+        return Collections.unmodifiableList(raceList);
     }
 
 }

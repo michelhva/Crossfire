@@ -76,6 +76,12 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private static final Pattern PATTERN_DOT = Pattern.compile(":");
 
     /**
+     * Pattern to split a string by "|".
+     */
+    @NotNull
+    private static final Pattern PATTERN_BAR = Pattern.compile("\\|");
+
+    /**
      * Parameter type in the "accountplayers" command.
      */
     private static final int ACL_NAME = 1;
@@ -1853,6 +1859,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             processKnowledgeInfoReplyinfo(packet);
         } else if (infoType.equals("startingmap")) {
             processStartingMapReplyinfo(packet);
+        } else if (infoType.equals("race_list")) {
+            processRaceListReplyinfo(packet);
         } else {
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
         }
@@ -2055,6 +2063,20 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             }
         }
         model.setStartingmaps(sb.finish());
+    }
+
+    /**
+     * Processes a "replyinfo race_list" block.
+     * @param packet the packet to process
+     * @throws IOException if the block cannot be parsed
+     */
+    private void processRaceListReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
+        final int ch = getInt1(packet);
+        if (ch != '|') {
+            throw new IOException("invalid replyinfo reace_list: response does not start with '|' but '"+ch+"'");
+        }
+        final CharSequence raceList = getString(packet, packet.remaining());
+        model.setRaceList(PATTERN_BAR.split(raceList, -1));
     }
 
     /**
@@ -3055,6 +3077,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             sendRequestinfo("exp_table");
             sendRequestinfo("knowledge_info");
             sendRequestinfo("startingmap");
+            sendRequestinfo("race_list");
             sendToggleextendedtext(MessageTypes.getAllTypes());
         }
         notifyPacketWatcherListenersAscii(packet, args);
