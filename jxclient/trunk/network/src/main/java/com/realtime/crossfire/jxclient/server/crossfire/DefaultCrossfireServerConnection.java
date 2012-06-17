@@ -2103,21 +2103,16 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         fireStartAccountList(accountName);
 
         // number of characters
-        int count = getInt1(packet);
-        final int total = count;
+        final int total = getInt1(packet);
         final AccountPlayerBuilder accountPlayerBuilder = new AccountPlayerBuilder(debugProtocol);
-        while (count > 0) {
-            while (packet.hasRemaining()) {
+        for (int count = 0; count < total; count++) {
+            while (true) {
+                if (!packet.hasRemaining()) {
+                    throw new UnknownCommandException("truncated accountplayers reply");
+                }
                 final int len = getInt1(packet);
 
                 if (len == 0) {
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers entry");
-                    }
-                    // got all information on a character
-                    count--;
-
-                    fireAddAccount(accountPlayerBuilder.finish());
                     break;
                 }
 
@@ -2165,6 +2160,11 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     break;
                 }
             }
+
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("recv accountplayers entry");
+            }
+            fireAddAccount(accountPlayerBuilder.finish());
         }
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("invalid accountplayers reply, pos="+packet.position());
