@@ -8,7 +8,7 @@ enter_x 11
 enter_y 20
 msg
 Created:  1997-04-27
-Modified: 2012-01-12 Rick Tanner
+Modified: 2012-06-17 Nicolas Weeger
 endmsg
 maplore
 @quest Lursendis
@@ -1874,6 +1874,14 @@ end
 arch marker
 slaying Noble Rank Knight
 food 0
+end
+end
+arch carton_box_1
+name balm of return home
+arch balm_generic
+nrof 3
+identified 1
+artifact return home
 end
 end
 end
