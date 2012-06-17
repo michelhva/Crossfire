@@ -2071,9 +2071,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     /**
      * Processes a "replyinfo race_list" block.
      * @param packet the packet to process
-     * @throws IOException if the block cannot be parsed
      */
-    private void processRaceListReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
+    private void processRaceListReplyinfo(@NotNull final ByteBuffer packet) {
         while(packet.remaining() > 0 && packet.get(packet.position()) == '|') {
             packet.get();
         }
@@ -2084,9 +2083,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     /**
      * Processes a "replyinfo class_list" block.
      * @param packet the packet to process
-     * @throws IOException if the block cannot be parsed
      */
-    private void processClassListReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
+    private void processClassListReplyinfo(@NotNull final ByteBuffer packet) {
         while(packet.remaining() > 0 && packet.get(packet.position()) == '|') {
             packet.get();
         }
