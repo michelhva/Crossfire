@@ -34,8 +34,6 @@ Skuds="Imperial-Bank-Of-Skud"+str("Imperial-Bank-Of-Skud".__hash__()) #account t
 activator = Crossfire.WhoIsActivator()
 activatorname = activator.Name
 whoami = Crossfire.WhoAmI()
-import sys
-sys.stdout=sys.stderr=open('/tmp/checks.log','w')
 x = activator.X
 y = activator.Y
 CoinTypes={"SILVER":1,"GOLD":10,"PLATINUM":50,"JADE":5000,"AMBERIUM":500000, "IMPERIAL NOTE":10000,"10 IMPERIAL NOTE":100000,"100 IMPERIAL NOTE":1000000}
@@ -233,8 +231,6 @@ if (whoami.Name != "Deposit Box"):
 		message="The Imperial Bank of Skud has made "+str(bank.getbalance(Skuds)*0.029394968)+" pounds sterling in profit to date."
 
 	elif text[0] == 'deposit':
-		import sys
-		sys.stderr=open('/tmp/output.log','w')
 		if len(text)==2:
 			if text[1]=='check':
 				whoami.Say('x')

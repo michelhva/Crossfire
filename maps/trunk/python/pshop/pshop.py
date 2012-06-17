@@ -4,8 +4,6 @@ import Crossfire,sys,datetime
 whoami=Crossfire.WhoAmI()
 activator=Crossfire.WhoIsActivator()
 import CFDataBase,CFBank
-#sys.stderr=open("/tmp/output.log",'a')
-sys.stderr=sys.stdout=open("/tmp/output.log2",'a')
 #for i in dir(CFDataBase):
 	#print i
 #print CFDataBase.__file__
@@ -19,7 +17,6 @@ pshop=whoami.Map.Path.replace("/","_")
 
 print CFDB.get(pshop)
 print pshop
-sys.stdout.flush()
 
 
 
@@ -173,7 +170,6 @@ if whoami.Name.find("Store")>-1:
 		t.Title="Python"
 		t.Slaying="/python/pshop/Ice.py"
 		GlassReplica.Speed=0.0010000000475
-		sys.stderr=open('/tmp/output.log', 'w')
 		
 		GlassReplica.Face=(str(Item.Face))
 		#GlassReplica.Material=(96,'ice')
