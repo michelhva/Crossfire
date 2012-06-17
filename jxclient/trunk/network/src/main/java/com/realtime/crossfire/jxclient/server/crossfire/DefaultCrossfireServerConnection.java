@@ -3986,7 +3986,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param len the length of the string
      * @return the string
      */
-    private static String getString(final ByteBuffer byteBuffer, final int len) {
+    @NotNull
+    private static String getString(@NotNull final ByteBuffer byteBuffer, final int len) {
         final byte[] tmp = new byte[len];
         byteBuffer.get(tmp);
         return new String(tmp, UTF8);
