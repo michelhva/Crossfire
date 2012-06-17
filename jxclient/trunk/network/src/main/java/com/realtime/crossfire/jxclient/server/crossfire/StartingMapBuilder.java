@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.character.StartingMap;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -59,7 +59,7 @@ public class StartingMapBuilder {
      * The {@link StartingMap} entries parsed so far.
      */
     @NotNull
-    private final List<StartingMap> startingMaps = new ArrayList<StartingMap>();
+    private final Collection<StartingMap> startingMaps = new ArrayList<StartingMap>();
 
     /**
      * Starts a new starting map entry.
@@ -112,7 +112,7 @@ public class StartingMapBuilder {
      * @return all starting map entries
      */
     @NotNull
-    public List<StartingMap> finish() {
+    public Collection<StartingMap> finish() {
         addStartingMap();
         return startingMaps;
     }
