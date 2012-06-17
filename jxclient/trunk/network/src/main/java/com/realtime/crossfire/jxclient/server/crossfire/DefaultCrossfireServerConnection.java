@@ -2101,6 +2101,10 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      */
     private void processAccountPlayers(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
+
+        if (accountName == null) {
+            throw new UnknownCommandException("accountplayers without account");
+        }
         fireStartAccountList(accountName);
 
         // number of characters
