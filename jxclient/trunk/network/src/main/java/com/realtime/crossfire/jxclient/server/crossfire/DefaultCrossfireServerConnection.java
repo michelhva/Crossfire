@@ -2036,9 +2036,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     /**
      * Processes a "replyinfo startingmap" block.
      * @param packet the packet to process
-     * @throws IOException if the block cannot be parsed
      */
-    private void processStartingMapReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
+    private void processStartingMapReplyinfo(@NotNull final ByteBuffer packet) {
         final StartingMapBuilder sb = new StartingMapBuilder();
         while (packet.hasRemaining()) {
             final int type = getInt1(packet);
