@@ -40,12 +40,12 @@ public class ExperienceTable {
     /**
      * The minimum level value in {@link #info}.
      */
-    private int minLevel = 0;
+    private int minLevel;
 
     /**
      * The maximum level value in {@link #info}.
      */
-    private int maxLevel = 0;
+    private int maxLevel;
 
     /**
      * Forgets about all level-$&gt; mappings.

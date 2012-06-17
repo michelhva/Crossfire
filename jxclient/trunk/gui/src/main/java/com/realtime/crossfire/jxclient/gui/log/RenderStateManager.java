@@ -62,13 +62,13 @@ public class RenderStateManager {
      * The last known result of {@link RenderState#canScrollDown} for {@link
      * #renderState}. Used to detect changes.
      */
-    private boolean lastCanScrollDown = false;
+    private boolean lastCanScrollDown;
 
     /**
      * The last known result of {@link RenderState#canScrollUp} for {@link
      * #renderState}. Used to detect changes.
      */
-    private boolean lastCanScrollUp = false;
+    private boolean lastCanScrollUp;
 
     /**
      * The underlying {@link RenderState} instance.

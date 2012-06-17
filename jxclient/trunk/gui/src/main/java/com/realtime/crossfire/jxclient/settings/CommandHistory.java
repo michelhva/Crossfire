@@ -47,7 +47,7 @@ public class CommandHistory {
     /**
      * The current command index.
      */
-    private int commandIndex = 0;
+    private int commandIndex;
 
     /**
      * Creates a new instance.

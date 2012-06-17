@@ -76,7 +76,7 @@ public class GUIItemSpellSkill extends GUIItemItem {
      * Corresponds to index {@link #index}.
      */
     @Nullable
-    private Skill skill = null;
+    private Skill skill;
 
     /**
      * The currently selected spell or <code>-1</code> if none is selected.

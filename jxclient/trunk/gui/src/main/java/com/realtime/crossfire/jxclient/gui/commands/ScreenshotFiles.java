@@ -42,7 +42,7 @@ public class ScreenshotFiles {
      * A number for creating screenshot file names. It is incremented for each
      * screenshot.
      */
-    private int screenshotId = 0;
+    private int screenshotId;
 
     /**
      * Returns a {@link File} for the next screenshot file.

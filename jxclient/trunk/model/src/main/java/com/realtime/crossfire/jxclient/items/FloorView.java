@@ -44,7 +44,7 @@ public class FloorView extends AbstractItemView {
      * The tag of the currently shown container or <code>0</code> if no
      * container is open.
      */
-    private int currentFloor = 0;
+    private int currentFloor;
 
     /**
      * The {@link ItemSetListener} for detecting opened or closed containers.

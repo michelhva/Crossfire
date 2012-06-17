@@ -78,7 +78,7 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
      * requests. Therefore the thread checks if this ID matches the ID value at
      * creation time. If the IDs do not match it exits.
      */
-    private int id = 0;
+    private int id;
 
     /**
      * Creates a new instance.

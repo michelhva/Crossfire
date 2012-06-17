@@ -72,7 +72,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     /**
      * The minimum scroll value.
      */
-    private int valueMin = 0;
+    private int valueMin;
 
     /**
      * The size of the scroll values.
@@ -87,18 +87,18 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     /**
      * The scroll location; it need not be within the scroll range.
      */
-    private int sliderPos = 0;
+    private int sliderPos;
 
     /**
      * The offset between the mouse and the top border of the slider while
      * dragging.
      */
-    private int offset = 0;
+    private int offset;
 
     /**
      * Set while dragging is active.
      */
-    private boolean scrolling = false;
+    private boolean scrolling;
 
     /**
      * Creates a new instance.

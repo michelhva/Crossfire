@@ -69,12 +69,12 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     /**
      * The width of the visible map area.
      */
-    private int mapWidth = 0;
+    private int mapWidth;
 
     /**
      * The height of the visible map area.
      */
-    private int mapHeight = 0;
+    private int mapHeight;
 
     /**
      * The current {@link CfMap} instance.

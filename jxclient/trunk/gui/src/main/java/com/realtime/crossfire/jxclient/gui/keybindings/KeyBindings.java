@@ -61,7 +61,7 @@ public class KeyBindings {
      * Whether the contents of {@link #keybindings} have been modified from the
      * last saved state.
      */
-    private boolean modified = false;
+    private boolean modified;
 
     /**
      * The file for saving the bindings; <code>null</code> to not save.
@@ -73,7 +73,7 @@ public class KeyBindings {
      * The key code map to use. Set to <code>null</code> until first use.
      */
     @Nullable
-    private KeyCodeMap keyCodeMap = null;
+    private KeyCodeMap keyCodeMap;
 
     /**
      * Creates a new instance.

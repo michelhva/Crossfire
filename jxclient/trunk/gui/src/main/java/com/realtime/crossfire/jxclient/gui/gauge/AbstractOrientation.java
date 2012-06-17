@@ -30,54 +30,54 @@ public abstract class AbstractOrientation implements Orientation {
     /**
      * The total width of the image.
      */
-    private int width = 0;
+    private int width;
 
     /**
      * The total height of the image.
      */
-    private int height = 0;
+    private int height;
 
     /**
      * The current value.
      */
-    private int cur = 0;
+    private int cur;
 
     /**
      * The minimum value; the gauge is displayed as empty if <code>{@link #cur}
      * &gt;= min</code>.
      */
-    private int min = 0;
+    private int min;
 
     /**
      * The maximum value; the gauge is displayed as full if <code>{@link #cur}
      * &gt;= max</code>.
      */
-    private int max = 0;
+    private int max;
 
     /**
      * The x-coordinate of the highlighted part of the image.
      */
-    private int x = 0;
+    private int x;
 
     /**
      * The y-coordinate of the highlighted part of the image.
      */
-    private int y = 0;
+    private int y;
 
     /**
      * The width of the highlighted part of the image.
      */
-    private int w = 0;
+    private int w;
 
     /**
      * The height of the highlighted part of the image.
      */
-    private int h = 0;
+    private int h;
 
     /**
      * Whether the gauge can display negative images.
      */
-    private boolean hasNegativeImage = false;
+    private boolean hasNegativeImage;
 
     /**
      * Creates a new instance.

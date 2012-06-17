@@ -70,7 +70,7 @@ public class EventScheduler {
      * The timestamp for the next notification. Set to <code>0</code> when not
      * active.
      */
-    private long nextAction = 0;
+    private long nextAction;
 
     /**
      * The minimum timestamp for the next notification.

@@ -39,7 +39,7 @@ public abstract class CheckBoxOption extends Option {
     /**
      * The current state.
      */
-    private boolean checked = false;
+    private boolean checked;
 
     /**
      * Creates a new instance.

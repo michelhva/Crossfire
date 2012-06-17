@@ -48,7 +48,7 @@ public class RenderState {
      * The first line to display in the viewable area. It is shifted by {@link
      * #topOffset} pixels.
      */
-    private int topIndex = 0;
+    private int topIndex;
 
     /**
      * The number of pixels to shift the first displayed line ({@link
@@ -62,17 +62,17 @@ public class RenderState {
     /**
      * The location of the view area relative to the buffer's total height.
      */
-    private int scrollPos = 0;
+    private int scrollPos;
 
     /**
      * Whether scrolling up is possible.
      */
-    private boolean canScrollUp = false;
+    private boolean canScrollUp;
 
     /**
      * Whether scrolling down is possible.
      */
-    private boolean canScrollDown = false;
+    private boolean canScrollDown;
 
     /**
      * Whether the view has to be repainted even if no other value has changed.

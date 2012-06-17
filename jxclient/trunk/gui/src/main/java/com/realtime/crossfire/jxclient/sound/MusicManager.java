@@ -50,19 +50,19 @@ public class MusicManager {
      * or if music is disabled.
      */
     @Nullable
-    private Processor processor = null;
+    private Processor processor;
 
     /**
      * The {@link Thread} executing {@link #processor}. Set to <code>null</code>
      * if none is executing.
      */
     @Nullable
-    private Thread thread = null;
+    private Thread thread;
 
     /**
      * Whether background music is enabled. (User setting)
      */
-    private boolean enabled = false;
+    private boolean enabled;
 
     /**
      * Whether background music is muted. (Depends on connection state)
@@ -74,7 +74,7 @@ public class MusicManager {
      * playing.
      */
     @Nullable
-    private String name = null;
+    private String name;
 
     /**
      * Creates a new instance.

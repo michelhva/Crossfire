@@ -174,13 +174,13 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * The map width that is being negotiated with the server. Set to
      * <code>0</code> when not negotiating.
      */
-    private int pendingMapWidth = 0;
+    private int pendingMapWidth;
 
     /**
      * The map height that is being negotiated with the server. Set to
      * <code>0</code> when not negotiating.
      */
-    private int pendingMapHeight = 0;
+    private int pendingMapHeight;
 
     /**
      * The currently active map width.
@@ -201,12 +201,12 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * The number of ground view objects being negotiated with the server. Set
      * to <code>0</code> when not negotiating.
      */
-    private int pendingNumLookObjects = 0;
+    private int pendingNumLookObjects;
 
     /**
      * The currently active number of ground view objects.
      */
-    private int currentNumLookObjects = 0;
+    private int currentNumLookObjects;
 
     /**
      * Buffer to build commands to send. It is shared between all sendXxx()
@@ -569,12 +569,12 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * The account name. Set to <code>null</code> if no account name is known.
      */
     @Nullable
-    private String accountName = null;
+    private String accountName;
 
     /**
      * The login method version supported by the server we're connected to.
      */
-    private int loginMethod = 0;
+    private int loginMethod;
 
     /**
      * The {@link CrossfireUpdateMapListener} to be notified. Set to

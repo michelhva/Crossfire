@@ -63,7 +63,7 @@ public abstract class GUIItemItem extends GUIItem {
      * The current item instance.
      */
     @Nullable
-    private CfItem item = null;
+    private CfItem item;
 
     /**
      * The {@link CfItemListener} used to detect attribute changes of the

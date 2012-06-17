@@ -55,14 +55,14 @@ public class KeybindingsManager {
      * user is logged in.
      */
     @Nullable
-    private KeyBindings characterKeyBindings = null;
+    private KeyBindings characterKeyBindings;
 
     /**
      * The current key binding state. Set to <code>null</code> if no key binding
      * dialog is active.
      */
     @Nullable
-    private KeyBindingState keyBindingState = null;
+    private KeyBindingState keyBindingState;
 
     /**
      * Creates a new instance.

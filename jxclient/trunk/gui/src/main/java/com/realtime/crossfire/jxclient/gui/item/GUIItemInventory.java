@@ -95,7 +95,7 @@ public class GUIItemInventory extends GUIItemItem {
     /**
      * If set, paint the element in "selected" state.
      */
-    private boolean selected = false;
+    private boolean selected;
 
     /**
      * The {@link ItemListener} used to detect items added to or removed from

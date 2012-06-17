@@ -103,23 +103,23 @@ public class ClientSocket {
     /**
      * Only valid if {@link #reconnect} is set.
      */
-    private boolean reconnectIsError = false;
+    private boolean reconnectIsError;
 
     /**
      * The host to connect to. Set to <code>null</code> for disconnect.
      */
     @Nullable
-    private String host = null;
+    private String host;
 
     /**
      * The port to connect to.
      */
-    private int port = 0;
+    private int port;
 
     /**
      * If set, notify listeners.
      */
-    private boolean disconnectPending = false;
+    private boolean disconnectPending;
 
     /**
      * A buffer for sending packets.
@@ -131,19 +131,19 @@ public class ClientSocket {
      * The {@link SelectableChannel} of {@link #socketChannel}.
      */
     @Nullable
-    private SelectableChannel selectableChannel = null;
+    private SelectableChannel selectableChannel;
 
     /**
      * The {@link SelectionKey} registered to {@link #selectableChannel}. It's
      * interesting ops are {@link #interestOps}.
      */
     @Nullable
-    private SelectionKey selectionKey = null;
+    private SelectionKey selectionKey;
 
     /**
      * The currently set interest ops for {@link #selectionKey}.
      */
-    private int interestOps = 0;
+    private int interestOps;
 
     /**
      * The receive buffer. It is wrapped into {@link #inputBuffer}.
@@ -182,12 +182,12 @@ public class ClientSocket {
      * not connected.
      */
     @Nullable
-    private SocketChannel socketChannel = null;
+    private SocketChannel socketChannel;
 
     /**
      * Whether {@link #socketChannel} is connected.
      */
-    private boolean isConnected = false;
+    private boolean isConnected;
 
     /**
      * The {@link Thread} used to operate the socket.

@@ -39,7 +39,7 @@ public class Args {
     /**
      * The current index into {@link #args}.
      */
-    private int index = 0;
+    private int index;
 
     /**
      * Creates a new instance.

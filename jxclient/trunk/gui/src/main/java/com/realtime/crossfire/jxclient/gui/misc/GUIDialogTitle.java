@@ -57,7 +57,7 @@ public class GUIDialogTitle extends GUIOneLineLabel {
      * position while dragging start. Else set to <code>null</code>.
      */
     @Nullable
-    private Point offset = null;
+    private Point offset;
 
     /**
      * Creates a new instance.

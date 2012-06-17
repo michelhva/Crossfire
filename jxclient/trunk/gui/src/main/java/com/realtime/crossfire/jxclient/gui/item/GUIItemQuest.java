@@ -75,7 +75,7 @@ public class GUIItemQuest extends GUIItemItem {
      * The currently selected {@link Quest}, null if none.
      */
     @Nullable
-    private Quest quest = null;
+    private Quest quest;
 
     /**
      * The currently selected quest or <code>-1</code> if none is selected.

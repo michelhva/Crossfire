@@ -74,7 +74,7 @@ public class TextSegment extends AbstractSegment {
      * The distance of the underline to the base line. Set to <code>0</code> if
      * unknown.
      */
-    private int underlineOffset = 0;
+    private int underlineOffset;
 
     /**
      * Creates a new segment.

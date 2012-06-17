@@ -93,7 +93,7 @@ public class GUIItemSpell extends GUIItemItem {
      * #index}.
      */
     @Nullable
-    private Spell spell = null;
+    private Spell spell;
 
     /**
      * The currently selected spell or <code>-1</code> if none is selected.

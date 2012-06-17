@@ -47,7 +47,7 @@ public class CfMap {
     /**
      * The left edge of the defined tiles.
      */
-    private int minX = 0;
+    private int minX;
 
     /**
      * The right edge of the defined tiles.
@@ -57,7 +57,7 @@ public class CfMap {
     /**
      * The top edge of the defined tiles.
      */
-    private int minY = 0;
+    private int minY;
 
     /**
      * The bottom edge of the defined tiles.
@@ -67,7 +67,7 @@ public class CfMap {
     /**
      * The left edge of the defined patches in {@link #patch}.
      */
-    private int minPx = 0;
+    private int minPx;
 
     /**
      * The right edge of the defined patches in {@link #patch}.
@@ -77,7 +77,7 @@ public class CfMap {
     /**
      * The top edge of the defined patches in {@link #patch}.
      */
-    private int minPy = 0;
+    private int minPy;
 
     /**
      * The bottom edge of the defined patches in {@link #patch}.
@@ -99,18 +99,18 @@ public class CfMap {
     /**
      * Left edge of viewable area.
      */
-    private int patchX = 0;
+    private int patchX;
 
     /**
      * Top edge of viewable area.
      */
-    private int patchY = 0;
+    private int patchY;
 
     /**
      * Array of (possibly) defined squares.
      */
     @Nullable
-    private CfMapPatch[][] patch = null;
+    private CfMapPatch[][] patch;
 
     /**
      * The "dirty" map squares that have been modified.

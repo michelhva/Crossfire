@@ -143,7 +143,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * If set, hide input; else show input.
      */
-    private boolean hideInput = false;
+    private boolean hideInput;
 
     /**
      * The cursor location.
@@ -153,7 +153,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * The display offset: this many characters are hidden.
      */
-    private int offset = 0;
+    private int offset;
 
     /**
      * Object used to synchronize on access to {@link #text}, {@link #cursor},

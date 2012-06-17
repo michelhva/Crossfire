@@ -45,18 +45,18 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      * element has changed.
      */
     @Nullable
-    private GUIElementChangedListener changedListener = null;
+    private GUIElementChangedListener changedListener;
 
     /**
      * Whether this element is the default element. The default element is
      * selected with the ENTER key.
      */
-    private boolean isDefault = false;
+    private boolean isDefault;
 
     /**
      * Whether this gui element should be ignored for user interaction.
      */
-    private boolean ignore = false;
+    private boolean ignore;
 
     /**
      * The name of this element.
@@ -79,7 +79,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     /**
      * Used to avoid refreshing items all the time.
      */
-    private boolean pendingChange = false;
+    private boolean pendingChange;
     /**
      * The {@link Runnable} that implements the code of {@link #setChanged()}
      * which must run on the EDT.

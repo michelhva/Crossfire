@@ -41,7 +41,7 @@ public class CurrentSpellManager {
      * The currently selected spell, or <code>null</code>.
      */
     @Nullable
-    private Spell currentSpell = null;
+    private Spell currentSpell;
 
     /**
      * Sets the currently selected spell.

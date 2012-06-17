@@ -71,7 +71,7 @@ public class JXCConnection {
      * The {@link Frame} for updating the title or <code>null</code>.
      */
     @Nullable
-    private Frame frame = null;
+    private Frame frame;
 
     /**
      * The {@link Pickup} instance to update.
@@ -96,19 +96,19 @@ public class JXCConnection {
      * The currently connected server. Set to <code>null</code> if unconnected.
      */
     @Nullable
-    private String hostname = null;
+    private String hostname;
 
     /**
      * The currently connected port. Only valid if {@link #hostname} is set.
      */
-    private int port = 0;
+    private int port;
 
     /**
      * The currently logged in character. Set to <code>null</code> if not logged
      * in.
      */
     @Nullable
-    private String character = null;
+    private String character;
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped

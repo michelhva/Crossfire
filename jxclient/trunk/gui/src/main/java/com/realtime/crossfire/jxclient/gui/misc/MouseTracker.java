@@ -50,23 +50,23 @@ public class MouseTracker {
      * The gui element in which the mouse is.
      */
     @Nullable
-    private GUIElement mouseElement = null;
+    private GUIElement mouseElement;
 
     /**
      * The active component.
      */
     @Nullable
-    private AbstractGUIElement activeComponent = null;
+    private AbstractGUIElement activeComponent;
 
     /**
      * Whether a dragging operation is in progress.
      */
-    private boolean isDragging = false;
+    private boolean isDragging;
 
     /**
      * Whether a button release event is considered a "click".
      */
-    private boolean isClicked = false;
+    private boolean isClicked;
 
     /**
      * Creates a new instance.

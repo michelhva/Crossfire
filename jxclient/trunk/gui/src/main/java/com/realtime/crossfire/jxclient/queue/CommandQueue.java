@@ -59,13 +59,13 @@ public class CommandQueue {
     /**
      * The default repeat counter for ncom commands.
      */
-    private int repeatCount = 0;
+    private int repeatCount;
 
     /**
      * Whether a "run" command has been sent without a following "run_stop"
      * command.
      */
-    private boolean isRunning = false;
+    private boolean isRunning;
 
     /**
      * The listener to track comc commands.

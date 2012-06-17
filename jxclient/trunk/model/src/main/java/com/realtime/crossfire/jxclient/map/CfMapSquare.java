@@ -85,7 +85,7 @@ public class CfMapSquare {
      * is cleared, the old values remain valid until at least one field is
      * re-set.
      */
-    private boolean fogOfWar = false;
+    private boolean fogOfWar;
 
     /**
      * The darkness value of the square in the range [0..255]. 0=dark, 255=full

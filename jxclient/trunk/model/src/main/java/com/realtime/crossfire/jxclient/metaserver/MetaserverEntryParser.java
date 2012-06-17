@@ -54,23 +54,23 @@ public class MetaserverEntryParser {
     /**
      * Whether response parsing is withing a server entry.
      */
-    private boolean inSection = false;
+    private boolean inSection;
 
     /**
      * The "update seconds" value for the current server entry.
      */
-    private int updateSeconds = 0;
+    private int updateSeconds;
 
     /**
      * The "hostname" value for the current server entry.
      */
     @Nullable
-    private String hostname = null;
+    private String hostname;
 
     /**
      * The "players" value for the current server entry.
      */
-    private int players = 0;
+    private int players;
 
     /**
      * The "server version" value for the current server entry.
@@ -88,17 +88,17 @@ public class MetaserverEntryParser {
     /**
      * The "bytes in" value for the current server entry.
      */
-    private long bytesIn = 0;
+    private long bytesIn;
 
     /**
      * The "bytes out" value for the current server entry.
      */
-    private long bytesOut = 0;
+    private long bytesOut;
 
     /**
      * The "uptime seconds" value for the current server entry.
      */
-    private int uptimeSeconds = 0;
+    private int uptimeSeconds;
 
     /**
      * The "archetype base" value for the current server entry.

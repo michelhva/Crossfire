@@ -49,13 +49,13 @@ public class Shortcuts implements Iterable<Shortcut> {
      * Whether the contents of {@link #shortcuts} have been modified from the
      * last saved state.
      */
-    private boolean modified = false;
+    private boolean modified;
 
     /**
      * The backing file.
      */
     @Nullable
-    private File file = null;
+    private File file;
 
     /**
      * The listeners to be notified.

@@ -65,12 +65,12 @@ public class ItemSet {
      * The current player object this client controls.
      */
     @Nullable
-    private CfItem player = null;
+    private CfItem player;
 
     /**
      * The currently opened container or <code>0</code>.
      */
-    private int openContainerFloor = 0;
+    private int openContainerFloor;
 
     /**
      * The list of {@link ItemSetListener ItemSetListeners} to be notified about
