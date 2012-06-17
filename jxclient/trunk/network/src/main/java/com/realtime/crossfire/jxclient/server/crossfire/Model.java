@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
-import com.realtime.crossfire.jxclient.character.RaceInfo;
+import com.realtime.crossfire.jxclient.character.ClassRaceInfo;
 import com.realtime.crossfire.jxclient.character.StartingMap;
 import com.realtime.crossfire.jxclient.faces.AskfaceFaceQueue;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
@@ -109,7 +109,7 @@ public class Model {
      * The defined races for character creation.
      */
     @NotNull
-    private final Map<String, RaceInfo> raceInfo = new HashMap<String, RaceInfo>();
+    private final Map<String, ClassRaceInfo> raceInfo = new HashMap<String, ClassRaceInfo>();
 
     @Deprecated
     public void setItemsManager(@NotNull final FacesManager facesManager) {
@@ -237,20 +237,20 @@ public class Model {
     }
 
     /**
-     * Sets or updates a {@link RaceInfo}.
-     * @param raceInfo the race info to set
+     * Sets or updates a {@link ClassRaceInfo}.
+     * @param classRaceInfo the race info to set
      */
-    public void addRaceInfo(@NotNull final RaceInfo raceInfo) {
-        this.raceInfo.put(raceInfo.getRace(), raceInfo);
+    public void addRaceInfo(@NotNull final ClassRaceInfo classRaceInfo) {
+        this.raceInfo.put(classRaceInfo.getArchName(), classRaceInfo);
     }
 
     /**
-     * Returns a {@link RaceInfo} by race name.
+     * Returns a {@link ClassRaceInfo} by race name.
      * @param race the race name
      * @return the race info or <code>null</code> if no race info is defined
      */
     @NotNull
-    public RaceInfo getRaceInfo(@NotNull final String race) {
+    public ClassRaceInfo getRaceInfo(@NotNull final String race) {
         return raceInfo.get(race);
     }
 

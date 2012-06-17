@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.character.Choice;
-import com.realtime.crossfire.jxclient.character.RaceInfo;
+import com.realtime.crossfire.jxclient.character.ClassRaceInfo;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -30,17 +30,17 @@ import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Builder for {@link RaceInfo} instances while parsing an "replyinfo race_info"
- * packet.
+ * Builder for {@link ClassRaceInfo} instances while parsing an "replyinfo
+ * race_info" packet.
  * @author Andreas Kirschbaum
  */
-public class RaceInfoBuilder {
+public class ClassRaceInfoBuilder {
 
     /**
      * The name of the race being parsed.
      */
     @NotNull
-    private final String race;
+    private final String archName;
 
     /**
      * The human readable race name.
@@ -68,19 +68,20 @@ public class RaceInfoBuilder {
 
     /**
      * Creates a new instance.
-     * @param race the name of the race being parsed
+     * @param archName the archetype name of the race being parsed
      */
-    public RaceInfoBuilder(@NotNull final String race) {
-        this.race = race;
+    public ClassRaceInfoBuilder(@NotNull final String archName) {
+        this.archName = archName;
     }
 
     /**
-     * Finishes parsing an entry an returns the {@link RaceInfo} for the entry.
-     * @return the race info for the parsed entry
+     * Finishes parsing an entry an returns the {@link ClassRaceInfo} for the
+     * entry.
+     * @return the class race info for the parsed entry
      */
     @NotNull
-    public RaceInfo finish() {
-        return new RaceInfo(race, name, msg, stats, choices);
+    public ClassRaceInfo finish() {
+        return new ClassRaceInfo(archName, name, msg, stats, choices);
     }
 
     /**

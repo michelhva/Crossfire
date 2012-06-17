@@ -30,16 +30,16 @@ import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * One possible race for character creation.
+ * One possible class or race for character creation.
  * @author Andreas Kirschbaum
  */
-public class RaceInfo {
+public class ClassRaceInfo {
 
     /**
-     * The race name.
+     * The archetype name.
      */
     @NotNull
-    private final String race;
+    private final String archName;
 
     /**
      * The human readable race name.
@@ -67,14 +67,14 @@ public class RaceInfo {
 
     /**
      * Creates a new instance.
-     * @param race the race name
+     * @param archName the archetype name
      * @param name the human readable race name
      * @param msg the long description
      * @param stats the stat adjustments
      * @param choices the available choices
      */
-    public RaceInfo(@NotNull final String race, @NotNull final String name, @NotNull final String msg, @NotNull final Map<Integer, Long> stats, @NotNull final Collection<Choice> choices) {
-        this.race = race;
+    public ClassRaceInfo(@NotNull final String archName, @NotNull final String name, @NotNull final String msg, @NotNull final Map<Integer, Long> stats, @NotNull final Collection<Choice> choices) {
+        this.archName = archName;
         this.name = name;
         this.msg = msg;
         this.stats.putAll(stats);
@@ -82,12 +82,12 @@ public class RaceInfo {
     }
 
     /**
-     * Returns the race name.
-     * @return the race name
+     * Returns the archetype name.
+     * @return the archetype name
      */
     @NotNull
-    public String getRace() {
-        return race;
+    public String getArchName() {
+        return archName;
     }
 
     /**
@@ -136,7 +136,7 @@ public class RaceInfo {
     @NotNull
     @Override
     public String toString() {
-        return "race="+race+", name="+name+", stats="+stats+", choices="+choices;
+        return "arch="+archName+", name="+name+", stats="+stats+", choices="+choices;
     }
 
 }
