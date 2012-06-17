@@ -1852,6 +1852,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param infoType the info_type parameter
      * @param packet the packet payload data
      * @throws IOException if an I/O error occurs
+     * @throws UnknownCommandException if the packet cannot be parsed
      */
     private void cmdReplyinfo(@NotNull final String infoType, final ByteBuffer packet) throws IOException, UnknownCommandException {
         if (infoType.equals("image_info")) {
