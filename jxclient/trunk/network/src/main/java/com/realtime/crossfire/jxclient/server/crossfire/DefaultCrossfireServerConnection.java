@@ -1861,6 +1861,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             processStartingMapReplyinfo(packet);
         } else if (infoType.equals("race_list")) {
             processRaceListReplyinfo(packet);
+        } else if (infoType.equals("class_list")) {
+            processClassListReplyinfo(packet);
         } else {
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
         }
@@ -2076,6 +2078,19 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         final CharSequence raceList = getString(packet, packet.remaining());
         model.setRaceList(PATTERN_BAR.split(raceList));
+    }
+
+    /**
+     * Processes a "replyinfo class_list" block.
+     * @param packet the packet to process
+     * @throws IOException if the block cannot be parsed
+     */
+    private void processClassListReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
+        while(packet.remaining() > 0 && packet.get(packet.position()) == '|') {
+            packet.get();
+        }
+        final CharSequence classList = getString(packet, packet.remaining());
+        model.setClassList(PATTERN_BAR.split(classList));
     }
 
     /**
@@ -3081,6 +3096,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             sendRequestinfo("knowledge_info");
             sendRequestinfo("startingmap");
             sendRequestinfo("race_list");
+            sendRequestinfo("class_list");
             sendToggleextendedtext(MessageTypes.getAllTypes());
         }
         notifyPacketWatcherListenersAscii(packet, args);
