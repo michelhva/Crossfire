@@ -1,3 +1,91 @@
+2012-06-17 07:40  ryo_saeba
+
+	* scorn/misc/castle, scorn/misc/magistrate.msg,
+	  scorn/misc/magistrate_baron.msg,
+	  scorn/misc/magistrate_baronet.msg,
+	  scorn/misc/magistrate_civilian.msg,
+	  scorn/misc/magistrate_earl.msg, scorn/misc/magistrate_knight.msg,
+	  scorn/misc/magistrate_marquis.msg: Give balms of recall for
+	  low-level Scorn nobility quests.
+
+2012-06-17 07:07  rjtanner
+
+	* navar_city/spyhouse, world/world_122_117: Cosmetic and layout
+	  changes to Small House (navar_city/spyhouse) in Navar. Expanded
+	  to show outer area of the house. World map (world/world_122_117)
+	  updated for new entrance coordinates.
+
+2012-06-16 07:12  rjtanner
+
+	* marksel/keep, world/world_120_109: Cosmetic and layout changes to
+	  Marksel Keep (marksel/keep) in Marksel. Expanded to show outer
+	  area of the keep. World map (world/world_120_109) updated for new
+	  entrance coordinates.
+
+2012-06-15 21:41  ryo_saeba
+
+	* port_joseph/pirates/fortvsship, port_joseph/pirates/mooglyprize,
+	  port_joseph/pirates/rowboat.msg, port_joseph/pirates/tortcave,
+	  port_joseph/port_joseph.quests, port_joseph/town/dshark,
+	  port_joseph/town/dshark_redeye.msg,
+	  port_joseph/town/dshark_thief.msg, port_joseph/town/percival.msg,
+	  port_joseph/town/portia.msg, port_joseph/town/portia2,
+	  world.quests, world/world_101_114: Quest: Moogly Bill's treasure.
+
+2012-06-15 07:07  rjtanner
+
+	* marksel/grumms_inn, world/world_120_109: Cosmetic and layout
+	  changes to Grumm's Inn (marksel/grumms_inn) in Marksel. Expanded
+	  to show outer area of the inn, aded some windows. World map
+	  (world/world_120_109) updated for new entrance coordinates.
+
+2012-06-14 06:54  rjtanner
+
+	* lake_country/Sunset_Lake/fortress, lake_country/Sunset_Lake/inn:
+	  Cosmetic and layout changes to Sunset Inn
+	  (lake_country/Sunset_Lake/inn) in Lake Country. Expand and show
+	  outer area of the inn. Sunset Castle
+	  (lake_country/Sunset_Lake/fortress) updated for new entrance
+	  coordinates.
+
+2012-06-13 07:29  rjtanner
+
+	* lake_country/small_buildings/LC_inn1, world/world_109_126:
+	  Cosmetic and layout changes to Small Inn
+	  (lake_country/small_buildings/LC_inn1) in Lake Country. Expand
+	  and show outer area of the inn. World map (world/world_109_126)
+	  updated for new entrance coordinates.
+
+2012-06-12 06:30  rjtanner
+
+	* lake_country/Butakis/Butakis0, lake_country/Butakis/inn: Cosmetic
+	  changes to White Pigeon Inn (lake_country/Butakis/inn) in Lake
+	  Country. Expand and show outer area of the inn, added windows.
+	  Fortress map (lake_country/Butakis/Butakis0) updated for new
+	  entrance coordinates.
+
+2012-06-11 06:15  rjtanner
+
+	* lake_country/Butakis/Butakis0, lake_country/Butakis/alchemist:
+	  Cosmetic and layout changes to Gemstone Alchemist
+	  (lake_country/Butakis/alchemist) in Lake Country. Expand and show
+	  outer area of the shop, added windows and moved the door.
+	  Fortress map (lake_country/Butakis/Butakis0) updated for new
+	  entrance coordinates.
+
+2012-06-10 15:47  ryo_saeba
+
+	* python/maps/witherspoon_manor/devourers.py,
+	  python/maps/witherspoon_manor/ghost.py,
+	  python/maps/witherspoon_manor/rolanda.py,
+	  python/maps/witherspoon_manor/tomb.py,
+	  python/maps/witherspoon_manor/weapon_shop.py, scorn/scorn.quests:
+	  Quest: Witherspoon's ghost.
+
+2012-06-10 07:15  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
 2012-06-10 06:27  rjtanner
 
 	* lake_country/Butakis/Butakis0, lake_country/Butakis/blacksmith:
