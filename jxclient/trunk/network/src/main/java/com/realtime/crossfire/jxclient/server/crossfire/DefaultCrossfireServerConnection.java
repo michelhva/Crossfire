@@ -79,7 +79,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * Pattern to split a string by "|".
      */
     @NotNull
-    private static final Pattern PATTERN_BAR = Pattern.compile("\\|");
+    private static final Pattern PATTERN_BAR = Pattern.compile("\\|+");
 
     /**
      * Parameter type in the "accountplayers" command.
@@ -2071,12 +2071,11 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws IOException if the block cannot be parsed
      */
     private void processRaceListReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
-        final int ch = getInt1(packet);
-        if (ch != '|') {
-            throw new IOException("invalid replyinfo reace_list: response does not start with '|' but '"+ch+"'");
+        while(packet.remaining() > 0 && packet.get(packet.position()) == '|') {
+            packet.get();
         }
         final CharSequence raceList = getString(packet, packet.remaining());
-        model.setRaceList(PATTERN_BAR.split(raceList, -1));
+        model.setRaceList(PATTERN_BAR.split(raceList));
     }
 
     /**
