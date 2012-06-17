@@ -22,6 +22,8 @@
 package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
+import com.realtime.crossfire.jxclient.character.Choice;
+import com.realtime.crossfire.jxclient.character.RaceInfo;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
@@ -43,7 +45,9 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -1849,7 +1853,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet payload data
      * @throws IOException if an I/O error occurs
      */
-    private void cmdReplyinfo(@NotNull final String infoType, final ByteBuffer packet) throws IOException {
+    private void cmdReplyinfo(@NotNull final String infoType, final ByteBuffer packet) throws IOException, UnknownCommandException {
         if (infoType.equals("image_info")) {
             processImageInfoReplyinfo(packet);
         } else if (infoType.equals("skill_info")) {
@@ -1864,6 +1868,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             processRaceListReplyinfo(packet);
         } else if (infoType.equals("class_list")) {
             processClassListReplyinfo(packet);
+        } else if (infoType.equals("race_info")) {
+            processRaceInfoReplyinfo(packet);
         } else {
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
         }
@@ -2077,7 +2083,12 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             packet.get();
         }
         final CharSequence raceList = getString(packet, packet.remaining());
-        model.setRaceList(PATTERN_BAR.split(raceList));
+        final String[] races = PATTERN_BAR.split(raceList);
+        model.setRaceList(races);
+
+        for (final String race : races) {
+            sendRequestinfo("race_info "+race);
+        }
     }
 
     /**
@@ -2090,6 +2101,160 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         final CharSequence classList = getString(packet, packet.remaining());
         model.setClassList(PATTERN_BAR.split(classList));
+    }
+
+    /**
+     * Processes a "replyinfo race_info" block.
+     * @param packet the packet to process
+     * @throws UnknownCommandException if the packet cannot be parsed
+     */
+    private void processRaceInfoReplyinfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final String raceName = getStringDelimiter(packet, '\n');
+        final RaceInfoBuilder rb = new RaceInfoBuilder(raceName);
+        while (packet.hasRemaining()) {
+            final String type = getStringDelimiter(packet, ' ');
+            if (type.equals("name")) {
+                rb.setName(getString(packet, getInt1(packet)));
+            } else if (type.equals("msg")) {
+                rb.setMsg(getString(packet, getInt2(packet)));
+            } else if (type.equals("stats")) {
+                parseRaceInfoStats(packet, rb);
+            } else if (type.equals("choice")) {
+                parseRaceInfoChoice(packet, rb);
+            } else {
+                System.err.println("Ignoring race_info type "+type);
+            }
+        }
+        final RaceInfo raceInfo = rb.finish();
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv replyinfo race_info "+raceInfo);
+        }
+        model.addRaceInfo(raceInfo);
+    }
+
+    /**
+     * Parses a "stats" entry of a "replyinfo race_info" packet.
+     * @param packet the packet's contents
+     * @param rb the race info builder to update
+     * @throws UnknownCommandException if the packet cannot be parsed
+     */
+    private void parseRaceInfoStats(@NotNull final ByteBuffer packet, @NotNull final RaceInfoBuilder rb) throws UnknownCommandException {
+        while (packet.hasRemaining()) {
+            final int statNo = getInt1(packet);
+            switch (statNo) {
+            case 0:
+                return;
+
+            case Stats.CS_STAT_HP:
+            case Stats.CS_STAT_MAXHP:
+            case Stats.CS_STAT_SP:
+            case Stats.CS_STAT_MAXSP:
+            case Stats.CS_STAT_STR:
+            case Stats.CS_STAT_INT:
+            case Stats.CS_STAT_WIS:
+            case Stats.CS_STAT_DEX:
+            case Stats.CS_STAT_CON:
+            case Stats.CS_STAT_CHA:
+            case Stats.CS_STAT_LEVEL:
+            case Stats.CS_STAT_WC:
+            case Stats.CS_STAT_AC:
+            case Stats.CS_STAT_DAM:
+            case Stats.CS_STAT_ARMOUR:
+            case Stats.CS_STAT_FOOD:
+            case Stats.CS_STAT_POW:
+            case Stats.CS_STAT_GRACE:
+            case Stats.CS_STAT_MAXGRACE:
+            case Stats.CS_STAT_FLAGS:
+            case Stats.CS_STAT_RACE_STR:
+            case Stats.CS_STAT_RACE_INT:
+            case Stats.CS_STAT_RACE_WIS:
+            case Stats.CS_STAT_RACE_DEX:
+            case Stats.CS_STAT_RACE_CON:
+            case Stats.CS_STAT_RACE_CHA:
+            case Stats.CS_STAT_RACE_POW:
+            case Stats.CS_STAT_BASE_STR:
+            case Stats.CS_STAT_BASE_INT:
+            case Stats.CS_STAT_BASE_WIS:
+            case Stats.CS_STAT_BASE_DEX:
+            case Stats.CS_STAT_BASE_CON:
+            case Stats.CS_STAT_BASE_CHA:
+            case Stats.CS_STAT_BASE_POW:
+            case Stats.CS_STAT_APPLIED_STR:
+            case Stats.CS_STAT_APPLIED_INT:
+            case Stats.CS_STAT_APPLIED_WIS:
+            case Stats.CS_STAT_APPLIED_DEX:
+            case Stats.CS_STAT_APPLIED_CON:
+            case Stats.CS_STAT_APPLIED_CHA:
+            case Stats.CS_STAT_APPLIED_POW:
+            case Stats.CS_STAT_GOLEM_HP:
+            case Stats.CS_STAT_GOLEM_MAXHP:
+                final short int2Param = (short)getInt2(packet);
+                rb.setStatAdjustment(statNo, int2Param);
+                break;
+
+            case Stats.CS_STAT_EXP:
+            case Stats.CS_STAT_SPEED:
+            case Stats.CS_STAT_WEAP_SP:
+            case Stats.CS_STAT_WEIGHT_LIM:
+            case Stats.CS_STAT_SPELL_ATTUNE:
+            case Stats.CS_STAT_SPELL_REPEL:
+            case Stats.CS_STAT_SPELL_DENY:
+                final int int4Param = getInt4(packet);
+                rb.setStatAdjustment(statNo, int4Param);
+                break;
+
+            case Stats.CS_STAT_EXP64:
+                final long int8Param = getInt8(packet);
+                rb.setStatAdjustment(statNo, int8Param);
+                break;
+
+            case Stats.CS_STAT_RANGE:
+            case Stats.CS_STAT_TITLE:
+                final int length = getInt1(packet);
+                final String strParam = getString(packet, length);
+                System.err.println("replyinfo race_info: string stat "+statNo+" not implemented");
+                break;
+
+            default:
+                if (Stats.CS_STAT_RESIST_START <= statNo && statNo < Stats.CS_STAT_RESIST_START+Stats.RESIST_TYPES) {
+                    final short int2Param2 = (short)getInt2(packet);
+                    rb.setStatAdjustment(statNo, int2Param2);
+                } else if (Stats.CS_STAT_SKILLINFO <= statNo && statNo < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS) {
+                    final int level = getInt1(packet);
+                    final long experience = getInt8(packet);
+                    System.err.println("replyinfo race_info: skill stat "+statNo+" not implemented");
+                } else {
+                    throw new UnknownCommandException("unknown stat value: "+statNo);
+                }
+                break;
+            }
+        }
+
+        throw new UnknownCommandException("truncated stats entry in replyinfo race_info");
+    }
+
+    /**
+     * Parses a "choice" entry of a "replyinfo race_info" packet.
+     * @param packet the packet's contents
+     * @param rb the race info builder to update
+     */
+    private static void parseRaceInfoChoice(@NotNull final ByteBuffer packet, @NotNull final RaceInfoBuilder rb) {
+        final String choiceName = getString(packet, getInt1(packet));
+        final String choiceDescription = getString(packet, getInt1(packet));
+        final String archName = getString(packet, getInt1(packet));
+        final String archDesc = getString(packet, getInt1(packet));
+        final Map<String, String> choices = new LinkedHashMap<String, String>();
+        choices.put(archName, archDesc);
+        while (true) {
+            final int archNameLength = getInt1(packet);
+            if (archNameLength == 0) {
+                break;
+            }
+            final String archName2 = getString(packet, archNameLength);
+            final String archDesc2 = getString(packet, getInt1(packet));
+            choices.put(archName2, archDesc2);
+        }
+        rb.addChoice(new Choice(choiceName, choiceDescription, choices));
     }
 
     /**
@@ -3992,6 +4157,29 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private static String getString(@NotNull final ByteBuffer byteBuffer, final int len) {
         final byte[] tmp = new byte[len];
         byteBuffer.get(tmp);
+        return new String(tmp, UTF8);
+    }
+
+    /**
+     * Extracts and removes a string from a {@link ByteBuffer} at it's current
+     * position.
+     * @param byteBuffer the byte buffer
+     * @param delimiter the delimiter that ends the string
+     * @return the string
+     */
+    @NotNull
+    private static String getStringDelimiter(@NotNull final ByteBuffer byteBuffer, final char delimiter) {
+        final int position = byteBuffer.position();
+        final int remaining = byteBuffer.remaining();
+        int len;
+        for (len = 0; len < remaining; len++) {
+            if (byteBuffer.get(position+len) == delimiter) {
+                break;
+            }
+        }
+        final byte[] tmp = new byte[len];
+        byteBuffer.get(tmp);
+        byteBuffer.get(); // skip delimiter
         return new String(tmp, UTF8);
     }
 
