@@ -2030,7 +2030,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws IOException if the block cannot be parsed
      */
     private void processStartingMapReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
-        model.getKnowledgeManager().clearTypes();
         final StartingMapBuilder sb = new StartingMapBuilder();
         while (packet.hasRemaining()) {
             final int type = getInt1(packet);
