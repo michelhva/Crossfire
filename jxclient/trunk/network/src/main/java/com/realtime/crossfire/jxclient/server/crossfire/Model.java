@@ -96,6 +96,12 @@ public class Model {
     @NotNull
     private final List<String> raceList = new ArrayList<String>();
 
+    /**
+     * The classes available for character creation.
+     */
+    @NotNull
+    private final List<String> classList = new ArrayList<String>();
+
     @Deprecated
     public void setItemsManager(@NotNull final FacesManager facesManager) {
         itemsManager = new ItemsManager(facesManager, stats, skillSet, guiStateManager, itemSet);
@@ -201,6 +207,24 @@ public class Model {
     @NotNull
     public List<String> getRaceList() {
         return Collections.unmodifiableList(raceList);
+    }
+
+    /**
+     * Sets the classes available for character creation.
+     * @param classList the classes
+     */
+    public void setClassList(@NotNull final String[] classList) {
+        this.classList.clear();
+        this.classList.addAll(Arrays.asList(classList));
+    }
+
+    /**
+     * Returns all defined classes available for character creation.
+     * @return the classes
+     */
+    @NotNull
+    public List<String> getClassesList() {
+        return Collections.unmodifiableList(classList);
     }
 
 }
