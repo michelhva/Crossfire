@@ -4323,7 +4323,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         final byte[] tmp = new byte[len];
         byteBuffer.get(tmp);
-        byteBuffer.get(); // skip delimiter
+        if (len < remaining) {
+            byteBuffer.get(); // skip delimiter
+        }
         return new String(tmp, UTF8);
     }
 
