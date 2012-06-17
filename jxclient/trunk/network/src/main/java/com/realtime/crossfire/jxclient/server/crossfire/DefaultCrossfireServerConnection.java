@@ -2073,7 +2073,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet to process
      */
     private void processRaceListReplyinfo(@NotNull final ByteBuffer packet) {
-        while(packet.remaining() > 0 && packet.get(packet.position()) == '|') {
+        while (packet.remaining() > 0 && packet.get(packet.position()) == '|') {
             packet.get();
         }
         final CharSequence raceList = getString(packet, packet.remaining());
@@ -2085,7 +2085,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet to process
      */
     private void processClassListReplyinfo(@NotNull final ByteBuffer packet) {
-        while(packet.remaining() > 0 && packet.get(packet.position()) == '|') {
+        while (packet.remaining() > 0 && packet.get(packet.position()) == '|') {
             packet.get();
         }
         final CharSequence classList = getString(packet, packet.remaining());
