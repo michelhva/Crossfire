@@ -3368,6 +3368,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 } catch (final NumberFormatException ignored) {
                     throw new UnknownCommandException("the server returned 'setup loginmethod "+value+"'.");
                 }
+                if (method < 0 || method > 2) {
+                    throw new UnknownCommandException("the server returned 'setup loginmethod "+value+"'.");
+                }
                 loginMethod = method;
             } else if (option.equals("notifications")) {
                 // ignore: we do not care whether this option has been ignored
@@ -3706,7 +3709,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
 
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
-        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1", "notifications 2");
+        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 2", "notifications 2");
         model.getStats().setSimpleWeaponSpeed(scval >= 1029);
 
         notifyPacketWatcherListenersAscii(packet, args);
