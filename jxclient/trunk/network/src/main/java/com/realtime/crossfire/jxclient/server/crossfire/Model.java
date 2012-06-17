@@ -111,6 +111,12 @@ public class Model {
     @NotNull
     private final Map<String, ClassRaceInfo> raceInfo = new HashMap<String, ClassRaceInfo>();
 
+    /**
+     * The defined classes for character creation.
+     */
+    @NotNull
+    private final Map<String, ClassRaceInfo> classInfo = new HashMap<String, ClassRaceInfo>();
+
     @Deprecated
     public void setItemsManager(@NotNull final FacesManager facesManager) {
         itemsManager = new ItemsManager(facesManager, stats, skillSet, guiStateManager, itemSet);
@@ -252,6 +258,25 @@ public class Model {
     @NotNull
     public ClassRaceInfo getRaceInfo(@NotNull final String race) {
         return raceInfo.get(race);
+    }
+
+    /**
+     * Sets or updates a {@link ClassRaceInfo class info}.
+     * @param classInfo the class info to set
+     */
+    public void addClassInfo(@NotNull final ClassRaceInfo classInfo) {
+        this.classInfo.put(classInfo.getArchName(), classInfo);
+    }
+
+    /**
+     * Returns a {@link ClassRaceInfo class info} by class name.
+     * @param className the class name
+     * @return the class race info or <code>null</code> if no such class info is
+     *         defined
+     */
+    @NotNull
+    public ClassRaceInfo getClassInfo(@NotNull final String className) {
+        return classInfo.get(className);
     }
 
 }

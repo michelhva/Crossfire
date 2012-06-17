@@ -1870,7 +1870,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         } else if (infoType.equals("class_list")) {
             processClassListReplyinfo(packet);
         } else if (infoType.equals("race_info")) {
-            processClassRaceInfoReplyinfo(packet);
+            processClassRaceInfoReplyinfo(packet, true);
+        } else if (infoType.equals("class_info")) {
+            processClassRaceInfoReplyinfo(packet, false);
         } else {
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
         }
@@ -2101,15 +2103,22 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             packet.get();
         }
         final CharSequence classList = getString(packet, packet.remaining());
-        model.setClassList(PATTERN_BAR.split(classList));
+        final String[] classes = PATTERN_BAR.split(classList);
+        model.setClassList(classes);
+
+        for (final String class_ : classes) {
+            sendRequestinfo("class_info "+class_);
+        }
     }
 
     /**
-     * Processes a "replyinfo race_info" block.
+     * Processes a "replyinfo race_info" or "replyinfo class_info" block.
      * @param packet the packet to process
+     * @param raceInfo if set, a "race_info" packet is parsed; if unset, a
+     * "class_info" packet is parsed
      * @throws UnknownCommandException if the packet cannot be parsed
      */
-    private void processClassRaceInfoReplyinfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+    private void processClassRaceInfoReplyinfo(@NotNull final ByteBuffer packet, final boolean raceInfo) throws UnknownCommandException {
         final String raceName = getStringDelimiter(packet, '\n');
         final ClassRaceInfoBuilder rb = new ClassRaceInfoBuilder(raceName);
         while (packet.hasRemaining()) {
@@ -2128,13 +2137,18 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         final ClassRaceInfo classRaceInfo = rb.finish();
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv replyinfo race_info "+classRaceInfo);
+            debugProtocol.debugProtocolWrite("recv replyinfo "+(raceInfo ? "race_info" : "class_info")+" "+classRaceInfo);
         }
-        model.addRaceInfo(classRaceInfo);
+        if (raceInfo) {
+            model.addRaceInfo(classRaceInfo);
+        } else {
+            model.addClassInfo(classRaceInfo);
+        }
     }
 
     /**
-     * Parses a "stats" entry of a "replyinfo race_info" packet.
+     * Parses a "stats" entry of a "replyinfo race_info" or "replyinfo
+     * class_info" packet.
      * @param packet the packet's contents
      * @param rb the class race info builder to update
      * @throws UnknownCommandException if the packet cannot be parsed
@@ -2213,7 +2227,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             case Stats.CS_STAT_TITLE:
                 final int length = getInt1(packet);
                 final String strParam = getString(packet, length);
-                System.err.println("replyinfo race_info: string stat "+statNo+" not implemented");
+                System.err.println("replyinfo race/class_info: string stat "+statNo+" not implemented");
                 break;
 
             default:
@@ -2223,7 +2237,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 } else if (Stats.CS_STAT_SKILLINFO <= statNo && statNo < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS) {
                     final int level = getInt1(packet);
                     final long experience = getInt8(packet);
-                    System.err.println("replyinfo race_info: skill stat "+statNo+" not implemented");
+                    System.err.println("replyinfo race/class_info: skill stat "+statNo+" not implemented");
                 } else {
                     throw new UnknownCommandException("unknown stat value: "+statNo);
                 }
@@ -2231,13 +2245,14 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             }
         }
 
-        throw new UnknownCommandException("truncated stats entry in replyinfo race_info");
+        throw new UnknownCommandException("truncated stats entry in replyinfo race/class_info");
     }
 
     /**
-     * Parses a "choice" entry of a "replyinfo race_info" packet.
+     * Parses a "choice" entry of a "replyinfo race_info" or "replyinfo
+     * class_info" packet.
      * @param packet the packet's contents
-     * @param rb the class race info builder to update
+     * @param rb the race class race info builder to update
      */
     private static void parseClassRaceInfoChoice(@NotNull final ByteBuffer packet, @NotNull final ClassRaceInfoBuilder rb) {
         final String choiceName = getString(packet, getInt1(packet));
