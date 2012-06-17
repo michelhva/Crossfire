@@ -20,6 +20,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
@@ -44,16 +45,9 @@ public interface CrossfireAccountListener extends EventListener {
 
     /**
      * Information about a character in an account was received.
-     * @param name the character name
-     * @param characterClass the character's class
-     * @param race the character's race
-     * @param face the character's face name
-     * @param party the last party the character was in
-     * @param map where the player was in when she logged out
-     * @param level the last character level
-     * @param faceNumber the identifier of the face
+     * @param characterInformation the account information
      */
-    void addAccount(@NotNull String name, @NotNull String characterClass, @NotNull String race, @NotNull String face, @NotNull String party, @NotNull String map, int level, int faceNumber);
+    void addAccount(@NotNull CharacterInformation characterInformation);
 
     /**
      * End of character information for an account.

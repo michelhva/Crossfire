@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
@@ -2125,7 +2126,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     // got all information on a character
                     count--;
 
-                    fireAddAccount(name, cClass, race, face, party, map, level, faceNumber);
+                    fireAddAccount(new CharacterInformation(name, cClass, race, face, party, map, level, faceNumber));
                     break;
                 }
 
