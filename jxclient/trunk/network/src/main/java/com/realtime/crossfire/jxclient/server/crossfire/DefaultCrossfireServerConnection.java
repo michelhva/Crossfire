@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.character.Choice;
 import com.realtime.crossfire.jxclient.character.ClassRaceInfo;
+import com.realtime.crossfire.jxclient.character.NewCharInfo;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
@@ -85,6 +86,12 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      */
     @NotNull
     private static final Pattern PATTERN_BAR = Pattern.compile("\\|+");
+
+    /**
+     * Pattern to split a string by spaces.
+     */
+    @NotNull
+    private static final Pattern PATTERN_SPACE = Pattern.compile(" ");
 
     /**
      * Parameter type in the "accountplayers" command.
@@ -1873,6 +1880,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             processClassRaceInfoReplyinfo(packet, true);
         } else if (infoType.equals("class_info")) {
             processClassRaceInfoReplyinfo(packet, false);
+        } else if (infoType.equals("newcharinfo")) {
+            processNewCharInfoReplyinfo(packet);
         } else {
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
         }
@@ -2144,6 +2153,121 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         } else {
             model.addClassInfo(classRaceInfo);
         }
+    }
+
+    /**
+     * Processes a "replyinfo newcharinfo" block.
+     * @param packet the packet to process
+     * @throws UnknownCommandException if the packet cannot be parsed
+     */
+    private void processNewCharInfoReplyinfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
+        final NewCharInfoBuilder newCharInfoBuilder = new NewCharInfoBuilder();
+        while (packet.hasRemaining()) {
+            final int len = getInt1(packet)-1;
+            final String line = getString(packet, len);
+            getInt1(packet); // skip trailing \0 byte
+
+            final String[] tokens = PATTERN_SPACE.split(line, 3);
+            if (tokens.length != 3) {
+                throw new UnknownCommandException("syntax error in replyinfo newcharinfo: "+line);
+            }
+            final String typeString = tokens[0];
+            final String variableName = tokens[1];
+            final String values = tokens[2];
+            if (typeString.equals("R")) {
+                parseNewCharInfoValue(newCharInfoBuilder, true, variableName, values);
+            } else if (typeString.equals("O")) {
+                parseNewCharInfoValue(newCharInfoBuilder, false, variableName, values);
+            } else if (typeString.equals("V")) {
+                parseNewCharInfoValues(newCharInfoBuilder, variableName, values);
+            } else if (typeString.equals("I")) {
+                parseNewCharInfoInformational(variableName, values);
+            } else {
+                throw new UnknownCommandException("unknown type '"+typeString+"' in replyinfo newcharinfo: "+line);
+            }
+        }
+        final NewCharInfo newCharInfo = newCharInfoBuilder.finish();
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv replyinfo newcharinfo "+newCharInfo);
+        }
+        model.setNewCharInfo(newCharInfo);
+    }
+
+    /**
+     * Parses an 'R' or 'O' entry of a "replyinfo newcharinfo" packet.
+     * @param newCharInfoBuilder the new char info builder instance to update
+     * @param required whether the entry is required or optional
+     * @param variableName the variable name of the entry
+     * @param values the values of the variable
+     * @throws UnknownCommandException if the entry cannot be parsed
+     */
+    private static void parseNewCharInfoValue(@NotNull final NewCharInfoBuilder newCharInfoBuilder, final boolean required, @NotNull final String variableName, @NotNull final String values) throws UnknownCommandException {
+        if (variableName.equals("race")) {
+            if (!values.equals("requestinfo")) {
+                throw new UnknownCommandException(variableName+"="+values+" is not supported in replyinfo newcharinfo");
+            }
+            newCharInfoBuilder.setRaceChoice();
+        } else if (variableName.equals("class")) {
+            if (!values.equals("requestinfo")) {
+                throw new UnknownCommandException(variableName+"="+values+" is not supported in replyinfo newcharinfo");
+            }
+            newCharInfoBuilder.setClassChoice();
+        } else if (variableName.equals("startingmap")) {
+            if (!values.equals("requestinfo")) {
+                throw new UnknownCommandException(variableName+"="+values+" is not supported in replyinfo newcharinfo");
+            }
+            newCharInfoBuilder.setStartingMapChoice();
+        } else if (!required) {
+            System.err.println("unknown variable name '"+variableName+"' in replyinfo newcharinfo");
+        } else {
+            throw new UnknownCommandException("unknown variable name '"+variableName+"' in replyinfo newcharinfo");
+        }
+    }
+
+    /**
+     * Parses a 'V' entry of a "replyinfo newcharinfo" packet.
+     * @param newCharInfoBuilder the new char info builder instance to update
+     * @param variableName the variable name of the entry
+     * @param values the values of the variable
+     * @throws UnknownCommandException if the entry cannot be parsed
+     */
+    private static void parseNewCharInfoValues(@NotNull final NewCharInfoBuilder newCharInfoBuilder, @NotNull final String variableName, @NotNull final String values) throws UnknownCommandException {
+        if (variableName.equals("points")) {
+            final int points;
+            try {
+                points = Integer.parseInt(values);
+            } catch (final NumberFormatException ignored) {
+                throw new UnknownCommandException("'"+variableName+"' variable in replyinfo newcharinfo has invalid value '"+values+"'.");
+            }
+            newCharInfoBuilder.setPoints(points);
+        } else if (variableName.equals("statrange")) {
+            final String[] tmp = PATTERN_SPACE.split(values, 2);
+            if (tmp.length != 2) {
+                throw new UnknownCommandException("'"+variableName+"' variable in replyinfo newcharinfo has invalid value '"+values+"'.");
+            }
+            final int minValue;
+            final int maxValue;
+            try {
+                minValue = Integer.parseInt(tmp[0]);
+                maxValue = Integer.parseInt(tmp[1]);
+            } catch (final NumberFormatException ignored) {
+                throw new UnknownCommandException("'"+variableName+"' variable in replyinfo newcharinfo has invalid value '"+values+"'.");
+            }
+            newCharInfoBuilder.setStatRange(minValue, maxValue);
+        } else if (variableName.equals("statname")) {
+            newCharInfoBuilder.setStatNames(PATTERN_SPACE.split(values));
+        } else {
+            throw new UnknownCommandException("unknown variable name '"+variableName+"' in replyinfo newcharinfo");
+        }
+    }
+
+    /**
+     * Parses an 'I' entry of a "replyinfo newcharinfo" packet.
+     * @param variableName the variable name of the entry
+     * @param values the values of the variable
+     */
+    private static void parseNewCharInfoInformational(@NotNull final String variableName, @NotNull final String values) {
+        System.err.println("ignoring informational "+variableName+"="+values+" in replyinfo newcharinfo");
     }
 
     /**
@@ -3261,6 +3385,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             sendRequestinfo("startingmap");
             sendRequestinfo("race_list");
             sendRequestinfo("class_list");
+            sendRequestinfo("newcharinfo");
             sendToggleextendedtext(MessageTypes.getAllTypes());
         }
         notifyPacketWatcherListenersAscii(packet, args);

@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.character.ClassRaceInfo;
+import com.realtime.crossfire.jxclient.character.NewCharInfo;
 import com.realtime.crossfire.jxclient.character.StartingMap;
 import com.realtime.crossfire.jxclient.faces.AskfaceFaceQueue;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
@@ -116,6 +117,12 @@ public class Model {
      */
     @NotNull
     private final Map<String, ClassRaceInfo> classInfo = new HashMap<String, ClassRaceInfo>();
+
+    /**
+     * The {@link NewCharInfo} for creating new characters.
+     */
+    @NotNull
+    private NewCharInfo newCharInfo = new NewCharInfo(0, 0, 0, Collections.<String>emptyList(), false, false, false);
 
     @Deprecated
     public void setItemsManager(@NotNull final FacesManager facesManager) {
@@ -277,6 +284,23 @@ public class Model {
     @NotNull
     public ClassRaceInfo getClassInfo(@NotNull final String className) {
         return classInfo.get(className);
+    }
+
+    /**
+     * Returns the {@link NewCharInfo} instance for character creation.
+     * @return the new char info instance
+     */
+    @NotNull
+    public NewCharInfo getNewCharInfo() {
+        return newCharInfo;
+    }
+
+    /**
+     * Sets the {@link NewCharInfo} instance for character creation.
+     * @param newCharInfo the new char info instance
+     */
+    public void setNewCharInfo(@NotNull final NewCharInfo newCharInfo) {
+        this.newCharInfo = newCharInfo;
     }
 
 }
