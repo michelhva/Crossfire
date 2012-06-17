@@ -125,7 +125,7 @@ public class MessageBufferUpdater {
     /**
      * Whether message types are included in the buffer output.
      */
-    private boolean printMessageTypes = false;
+    private boolean printMessageTypes;
 
     /**
      * The {@link CrossfireQueryListener} registered to receive query commands.

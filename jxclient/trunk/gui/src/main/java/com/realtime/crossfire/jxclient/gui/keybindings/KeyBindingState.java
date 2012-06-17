@@ -52,7 +52,7 @@ public class KeyBindingState {
      * The dialog state: 0=waiting for initial key press, 1=waiting for key
      * release.
      */
-    private int state = 0;
+    private int state;
 
     /**
      * The type of key binding: -1=invalid, 0=key code ({@link #keyCode} and
@@ -63,12 +63,12 @@ public class KeyBindingState {
     /**
      * The key code. Only valid if <code>{@link #type} == 0</code>.
      */
-    private int keyCode = 0;
+    private int keyCode;
 
     /**
      * The modifiers. Only valid if <code>{@link #type} == 0</code>.
      */
-    private int modifiers = 0;
+    private int modifiers;
 
     /**
      * Creates a new instance.

@@ -41,7 +41,7 @@ public abstract class GaugeUpdater {
      * Set the gauge to update.
      */
     @Nullable
-    private GUIGaugeListener gauge = null;
+    private GUIGaugeListener gauge;
 
     /**
      * If true then the gauge should be hidden if all values are 0.

@@ -59,7 +59,7 @@ public class PacketWatcher {
      * <code>null</code> when not watching for commands.
      */
     @Nullable
-    private Pattern pattern = null;
+    private Pattern pattern;
 
     /**
      * The {@link ReceivedPacketListener} attached to {@link

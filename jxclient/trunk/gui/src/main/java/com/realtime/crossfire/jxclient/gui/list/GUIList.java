@@ -111,7 +111,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * shown.
      */
     @Nullable
-    private Rectangle tooltipRectangle = null;
+    private Rectangle tooltipRectangle;
 
     /**
      * The {@link ListSelectionListener} attached to {@link #list}.

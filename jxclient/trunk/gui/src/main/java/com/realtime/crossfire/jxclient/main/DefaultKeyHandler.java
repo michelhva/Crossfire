@@ -64,7 +64,7 @@ public class DefaultKeyHandler implements KeyHandlerListener {
     /**
      * Whether a server connection is active.
      */
-    private boolean connected = false;
+    private boolean connected;
 
     /**
      * The {@link ClientSocketListener} used to detect connection state

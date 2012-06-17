@@ -93,7 +93,7 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
     /**
      * If true, the gauge will not paint itself, whatever its visibility.
      */
-    private boolean hidden = false;
+    private boolean hidden;
 
     /**
      * Creates a new instance.

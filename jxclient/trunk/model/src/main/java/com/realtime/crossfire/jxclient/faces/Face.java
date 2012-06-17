@@ -70,7 +70,7 @@ public class Face {
      * The images for this face. Set to <code>null</code> if unknown.
      */
     @Nullable
-    private FaceImages faceImages = null;
+    private FaceImages faceImages;
 
     /**
      * Creates a new instance.

@@ -117,7 +117,7 @@ public class KeyHandler {
      * bindings are active.
      */
     @Nullable
-    private KeyBindings keyBindings = null;
+    private KeyBindings keyBindings;
 
     /**
      * Creates a new instance.

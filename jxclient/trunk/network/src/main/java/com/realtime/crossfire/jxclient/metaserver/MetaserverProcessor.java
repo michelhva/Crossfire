@@ -61,7 +61,7 @@ public class MetaserverProcessor {
     /**
      * Whether the query {@link #runnable} has been started.
      */
-    private boolean running = false;
+    private boolean running;
 
     /**
      * Counter used by the query {@link #runnable}. If positive, the value will

@@ -96,7 +96,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     /**
      * If set, paint the element in "selected" state.
      */
-    private boolean selected = false;
+    private boolean selected;
 
     /**
      * The metaserver entry listener attached for the current {@link #index}.

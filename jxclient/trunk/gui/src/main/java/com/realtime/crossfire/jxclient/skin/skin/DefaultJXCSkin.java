@@ -67,12 +67,12 @@ public class DefaultJXCSkin implements JXCSkin {
     /**
      * The current screen width.
      */
-    private int currentScreenWidth = 0;
+    private int currentScreenWidth;
 
     /**
      * The current screen height.
      */
-    private int currentScreenHeight = 0;
+    private int currentScreenHeight;
 
     /**
      * All "event init" commands in execution order.
@@ -126,14 +126,14 @@ public class DefaultJXCSkin implements JXCSkin {
      * The tooltip label or <code>null</code>.
      */
     @Nullable
-    private AbstractLabel tooltipLabel = null;
+    private AbstractLabel tooltipLabel;
 
     /**
      * The {@link TooltipManagerImpl} currently attached to or <code>null</code>
      * if not attached.
      */
     @Nullable
-    private TooltipManagerImpl tooltipManager = null;
+    private TooltipManagerImpl tooltipManager;
 
     /**
      * Creates a new instance.

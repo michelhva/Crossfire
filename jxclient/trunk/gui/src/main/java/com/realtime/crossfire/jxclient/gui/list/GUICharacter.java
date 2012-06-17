@@ -73,7 +73,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
     /**
      * If set, paint the element in "selected" state.
      */
-    private boolean selected = false;
+    private boolean selected;
 
     /**
      * All listeners to the entry itself.

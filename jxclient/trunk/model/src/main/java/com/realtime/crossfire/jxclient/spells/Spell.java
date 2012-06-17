@@ -101,7 +101,7 @@ public class Spell {
     /**
      * Whether this spell is unknown to the character.
      */
-    private boolean unknown = false;
+    private boolean unknown;
 
     /**
      * To get the skill's name, see {@link SkillSet}.

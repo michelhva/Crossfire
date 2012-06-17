@@ -102,7 +102,7 @@ public class JXCWindowRenderer {
      * visible.
      */
     @Nullable
-    private JFrame frame = null;
+    private JFrame frame;
 
     /**
      * The {@link JLayeredPane} added as the top-level component to {@link
@@ -215,17 +215,17 @@ public class JXCWindowRenderer {
      * Resolution, Resolution, boolean)} has been called.
      */
     @Nullable
-    private BufferStrategy bufferStrategy = null;
+    private BufferStrategy bufferStrategy;
 
     /**
      * The width of the client area in pixels.
      */
-    private int windowWidth = 0;
+    private int windowWidth;
 
     /**
      * The height of the client area in pixels.
      */
-    private int windowHeight = 0;
+    private int windowHeight;
 
     /**
      * Currently opened dialogs. The ordering is the painting order: the topmost
@@ -244,7 +244,7 @@ public class JXCWindowRenderer {
      * The currently displayed {@link Gui}.
      */
     @Nullable
-    private Gui currentGui = null;
+    private Gui currentGui;
 
     /**
      * All {@link GUIMap} instances that {@link #currentGui} and {@link
@@ -264,27 +264,27 @@ public class JXCWindowRenderer {
      * The tooltip to use, or <code>null</code> if no tooltips should be shown.
      */
     @Nullable
-    private Component tooltip = null;
+    private Component tooltip;
 
     /**
      * The x-offset of the visible window.
      */
-    private int offsetX = 0;
+    private int offsetX;
 
     /**
      * The y-offset of the visible window.
      */
-    private int offsetY = 0;
+    private int offsetY;
 
     /**
      * Records whether full-screen mode is active.
      */
-    private boolean isFullScreen = false;
+    private boolean isFullScreen;
 
     /**
      * Records whether the {@link #frame} has been displayed before.
      */
-    private boolean wasDisplayed = false;
+    private boolean wasDisplayed;
 
     /**
      * The current gui state.

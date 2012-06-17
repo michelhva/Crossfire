@@ -83,7 +83,7 @@ public class Buffer {
     /**
      * The total height of all {@link #lines}.
      */
-    private int totalHeight = 0;
+    private int totalHeight;
 
     /**
      * Object to synchronized access to {@link #lines} and {@link
@@ -95,13 +95,13 @@ public class Buffer {
     /**
      * The number of repetitions of the previously added line of text.
      */
-    private int lastCount = 0;
+    private int lastCount;
 
     /**
      * The color of the previously added line of text.
      */
     @Nullable
-    private Color lastColor = null;
+    private Color lastColor;
 
     /**
      * The contents of the previously added line of text.

@@ -63,7 +63,7 @@ public class StatGaugeUpdater extends GaugeUpdater {
     /**
      * Whether the low food event should be generated.
      */
-    private boolean active = false;
+    private boolean active;
 
     /**
      * The {@link StatsListener} registered to be notified about stat changes.

@@ -360,26 +360,26 @@ public class JXCSkinLoader {
      * The text button factory. Set to <code>null</code> until defined.
      */
     @Nullable
-    private TextButtonFactory textButtonFactory = null;
+    private TextButtonFactory textButtonFactory;
 
     /**
      * The dialog factory. Set to <code>null</code> until defined.
      */
     @Nullable
-    private DialogFactory dialogFactory = null;
+    private DialogFactory dialogFactory;
 
     /**
      * The checkbox factory. Set to <code>null</code> until defined.
      */
     @Nullable
-    private CheckBoxFactory checkBoxFactory = null;
+    private CheckBoxFactory checkBoxFactory;
 
     /**
      * The {@link ItemPainter} for default item parameters. Set to
      * <code>null</code> until defined.
      */
     @Nullable
-    private ItemPainter defaultItemPainter = null;
+    private ItemPainter defaultItemPainter;
 
     /**
      * The {@link CommandParser} for parsing commands.

@@ -63,7 +63,7 @@ public class Processor implements Runnable {
      * The current state: 0=fade in, 1=playing, 2=fade out, 3=terminate,
      * 4=terminate immediately.
      */
-    private int state = 0;
+    private int state;
 
     /**
      * The current volume. It is a factor that is multiplied to all sample

@@ -126,7 +126,7 @@ public class GUIItemShortcut extends GUIItem {
      * <code>null</code> if not active.
      */
     @Nullable
-    private Shortcut shortcut = null;
+    private Shortcut shortcut;
 
     /**
      * The {@link ShortcutsListener} attached to {@link #shortcuts}.

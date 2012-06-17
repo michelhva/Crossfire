@@ -104,7 +104,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * the rendered map contents.
      */
     @Nullable
-    private transient BufferedImage bufferedImage = null;
+    private transient BufferedImage bufferedImage;
 
     /**
      * Whether the map area should be blanked.
@@ -120,12 +120,12 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     /**
      * The map width in squares.
      */
-    private int mapWidth = 0;
+    private int mapWidth;
 
     /**
      * The map height in squares.
      */
-    private int mapHeight = 0;
+    private int mapHeight;
 
     /**
      * The size of one tile.
@@ -135,70 +135,70 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     /**
      * The x offset of the tile representing the player.
      */
-    private int playerX = 0;
+    private int playerX;
 
     /**
      * The y offset of the tile representing the player.
      */
-    private int playerY = 0;
+    private int playerY;
 
     /**
      * The x offset for drawing the square at coordinate 0 of the map.
      */
-    private int offsetX = 0;
+    private int offsetX;
 
     /**
      * The y offset for drawing the square at coordinate 0 of the map.
      */
-    private int offsetY = 0;
+    private int offsetY;
 
     /**
      * The tile x coordinate where map drawing starts. May be positive if the
      * map view is larger than the gui's area.
      */
-    private int displayMinX = 0;
+    private int displayMinX;
 
     /**
      * The tile x coordinate where map drawing ends. May be less than {@link
      * #mapWidth} if the map view is larger than the gui's area.
      */
-    private int displayMaxX = 0;
+    private int displayMaxX;
 
     /**
      * The tile y coordinate where map drawing starts. May be positive if the
      * map view is larger than the gui's area.
      */
-    private int displayMinY = 0;
+    private int displayMinY;
 
     /**
      * The tile y coordinate where map drawing ends. May be less than {@link
      * #mapWidth} if the map view is larger than the gui's area.
      */
-    private int displayMaxY = 0;
+    private int displayMaxY;
 
     /**
      * The distance the leftmost visible tile reaches outside the map window.
      * <code>-{@link #tileSize}<displayMinOffsetX<=0</code>.
      */
-    private int displayMinOffsetX = 0;
+    private int displayMinOffsetX;
 
     /**
      * The number of pixels that are visible in the rightmost visible tile.
      * <code>0<=displayMaxOffsetX<{@link #tileSize}</code>.
      */
-    private int displayMaxOffsetX = 0;
+    private int displayMaxOffsetX;
 
     /**
      * The distance the topmost visible tile reaches outside the map window.
      * <code>-{@link #tileSize}<displayMinOffsetX<=0</code>.
      */
-    private int displayMinOffsetY = 0;
+    private int displayMinOffsetY;
 
     /**
      * The number of pixels that are visible in the bottommost visible tile.
      * <code>0<=displayMaxOffsetY<{@link #tileSize}</code>.
      */
-    private int displayMaxOffsetY = 0;
+    private int displayMaxOffsetY;
 
     /**
      * Maps {@link Color} to an image filled with this color with a size of one

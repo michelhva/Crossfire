@@ -57,17 +57,17 @@ public class Gui extends JComponent {
      * otherwise. Auto-sizing dialogs cannot be moved or resized manually.
      */
     @Nullable
-    private Extent autoSize = null;
+    private Extent autoSize;
 
     /**
      * Whether this dialog retains its position across restarts.
      */
-    private boolean saveDialog = false;
+    private boolean saveDialog;
 
     /**
      * Whether this dialog is modal. Modal dialogs consume all key presses.
      */
-    private boolean modal = false;
+    private boolean modal;
 
     /**
      * The gui states that do not show this dialog.
@@ -80,40 +80,40 @@ public class Gui extends JComponent {
      * can become active.
      */
     @Nullable
-    private ActivatableGUIElement forcedActive = null;
+    private ActivatableGUIElement forcedActive;
 
     /**
      * The gui element which has the focus. Set to <code>null</code> if no such
      * element exists.
      */
     @Nullable
-    private ActivatableGUIElement activeElement = null;
+    private ActivatableGUIElement activeElement;
 
     /**
      * Whether an initial position has been set.
      */
-    private boolean initialPositionSet = false;
+    private boolean initialPositionSet;
 
     /**
      * If set, the auto-close listener to notify if this dialog looses the
      * active gui element.
      */
     @Nullable
-    private GuiAutoCloseListener guiAutoCloseListener = null;
+    private GuiAutoCloseListener guiAutoCloseListener;
 
     /**
      * The default x-coordinate for this dialog. Set to <code>null</code> for
      * default.
      */
     @Nullable
-    private Expression defaultX = null;
+    private Expression defaultX;
 
     /**
      * The default y-coordinate for this dialog. Set to <code>null</code> for
      * default.
      */
     @Nullable
-    private Expression defaultY = null;
+    private Expression defaultY;
 
     /**
      * Creates a new instance.

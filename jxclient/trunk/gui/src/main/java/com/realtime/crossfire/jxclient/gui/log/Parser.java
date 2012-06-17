@@ -78,17 +78,17 @@ public class Parser {
     /**
      * Whether bold face is enabled.
      */
-    private boolean bold = false;
+    private boolean bold;
 
     /**
      * Whether italic face is enabled.
      */
-    private boolean italic = false;
+    private boolean italic;
 
     /**
      * Whether underlining is enabled.
      */
-    private boolean underline = false;
+    private boolean underline;
 
     /**
      * The font to use.
@@ -99,7 +99,7 @@ public class Parser {
      * The color to use. <code>null</code> means default color.
      */
     @Nullable
-    private Color color = null;
+    private Color color;
 
     /**
      * Parses a text message.

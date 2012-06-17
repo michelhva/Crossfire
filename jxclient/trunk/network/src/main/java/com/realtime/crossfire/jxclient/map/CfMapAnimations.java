@@ -47,12 +47,12 @@ public class CfMapAnimations {
     /**
      * The width of the visible map area.
      */
-    private int width = 0;
+    private int width;
 
     /**
      * The height of the visible map area.
      */
-    private int height = 0;
+    private int height;
 
     /**
      * The animations in the visible map area.

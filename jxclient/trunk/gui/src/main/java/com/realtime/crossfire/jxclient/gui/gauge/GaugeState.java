@@ -64,28 +64,28 @@ public class GaugeState {
     /**
      * The width of the "filled" area.
      */
-    private int filledW = 0;
+    private int filledW;
 
     /**
      * The height of the "filled" area.
      */
-    private int filledH = 0;
+    private int filledH;
 
     /**
      * The x-coordinate of the "filled" area.
      */
-    private int filledX = 0;
+    private int filledX;
 
     /**
      * The y-coordinate of the "filled" area.
      */
-    private int filledY = 0;
+    private int filledY;
 
     /**
      * The image for painting the "filled" area.
      */
     @Nullable
-    private Image filledPicture = null;
+    private Image filledPicture;
 
     /**
      * Creates a new instance.

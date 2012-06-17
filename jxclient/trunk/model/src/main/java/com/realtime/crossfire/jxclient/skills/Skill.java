@@ -51,12 +51,12 @@ public class Skill {
     /**
      * The skill experience.
      */
-    private long experience = 0;
+    private long experience;
 
     /**
      * The skill level.
      */
-    private int level = 0;
+    private int level;
 
     /**
      * Creates a new instance.

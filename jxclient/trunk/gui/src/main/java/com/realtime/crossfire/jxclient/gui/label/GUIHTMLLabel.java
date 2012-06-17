@@ -64,7 +64,7 @@ public class GUIHTMLLabel extends AbstractLabel {
     /**
      * If set, auto-resize this element to the extent of {@link #text}.
      */
-    private boolean autoResize = false;
+    private boolean autoResize;
 
     /**
      * Creates a new instance.

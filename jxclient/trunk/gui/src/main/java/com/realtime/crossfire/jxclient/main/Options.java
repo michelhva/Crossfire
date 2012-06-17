@@ -52,52 +52,52 @@ public class Options {
      * server selections screen.
      */
     @Nullable
-    private String server = null;
+    private String server;
 
     /**
      * Enable debugging of GUI elements.
      */
-    private boolean debugGui = false;
+    private boolean debugGui;
 
     /**
      * The filename for Crossfire protocol message logs or <code>null</code> to
      * not log protocol messages.
      */
     @Nullable
-    private String debugProtocolFilename = null;
+    private String debugProtocolFilename;
 
     /**
      * The filename for keyboard debug logs or <code>null</code> to not log
      * keyboard input.
      */
     @Nullable
-    private String debugKeyboardFilename = null;
+    private String debugKeyboardFilename;
 
     /**
      * The filename for screen debug logs or <code>null</code> to not log screen
      * logs.
      */
     @Nullable
-    private String debugScreenFilename = null;
+    private String debugScreenFilename;
 
     /**
      * The filename for sound debug logs or <code>null</code> to not log sound
      * logs.
      */
     @Nullable
-    private String debugSoundFilename = null;
+    private String debugSoundFilename;
 
     /**
      * The resolution to use or <code>null</code> for default.
      */
     @Nullable
-    private Resolution resolution = null;
+    private Resolution resolution;
 
     /**
      * The skin name to load or <code>null</code> for the default skin.
      */
     @Nullable
-    private String skin = null;
+    private String skin;
 
     /**
      * The size of tiles in the map view in pixels.

@@ -45,9 +45,9 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback {
     @NotNull
     private final Graphics gc;
 
-    private int x = 0;
+    private int x;
 
-    private int y = 0;
+    private int y;
 
     private final int origX;
 

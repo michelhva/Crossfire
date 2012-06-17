@@ -47,26 +47,26 @@ public class TooltipManagerImpl implements TooltipManager {
     /**
      * The current window width.
      */
-    private int windowWidth = 0;
+    private int windowWidth;
 
     /**
      * The current window height.
      */
-    private int windowHeight = 0;
+    private int windowHeight;
 
     /**
      * The tooltip label. Set to <code>null</code> if the skin does not use
      * tooltips.
      */
     @Nullable
-    private AbstractLabel tooltip = null;
+    private AbstractLabel tooltip;
 
     /**
      * The last known active gui element. It is used to suppress unnecessary
      * change events to the tooltip label.
      */
     @Nullable
-    private GUIElement activeGuiElement = null;
+    private GUIElement activeGuiElement;
 
     /**
      * Synchronizes accesses to {@link #activeGuiElement}.

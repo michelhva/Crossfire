@@ -60,7 +60,7 @@ public class GuiManager {
      * The currently active skin. Set to <code>null</code> if no skin is set.
      */
     @Nullable
-    private JXCSkin skin = null;
+    private JXCSkin skin;
 
     /**
      * The {@link JXCWindowRenderer} used to paint the gui.
@@ -97,33 +97,33 @@ public class GuiManager {
      * define this dialog.
      */
     @Nullable
-    private Gui dialogQuit = null;
+    private Gui dialogQuit;
 
     /**
      * The "really disconnect?" dialog. Set to <code>null</code> if the skin
      * does not define this dialog.
      */
     @Nullable
-    private Gui dialogDisconnect = null;
+    private Gui dialogDisconnect;
 
     /**
      * The "connect in progress" dialog. Set to <code>null</code> if the skin
      * does not define this dialog.
      */
     @Nullable
-    private Gui dialogConnect = null;
+    private Gui dialogConnect;
 
     /**
      * The "message" field within {@link #dialogConnect}. Set to
      * <code>null</code> if the dialog does not define a "message" label.
      */
     @Nullable
-    private AbstractLabel dialogConnectLabel = null;
+    private AbstractLabel dialogConnectLabel;
 
     /**
      * Whether the currently shown query dialog is the character name prompt.
      */
-    private boolean currentQueryDialogIsNamePrompt = false;
+    private boolean currentQueryDialogIsNamePrompt;
 
     /**
      * The {@link TooltipManager} for this window.

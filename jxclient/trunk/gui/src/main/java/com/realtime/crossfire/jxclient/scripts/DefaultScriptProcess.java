@@ -147,12 +147,12 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
     /**
      * Whether a "monitor" command is active.
      */
-    private boolean isMonitoring = false;
+    private boolean isMonitoring;
 
     /**
      * Whether this script has been killed.
      */
-    private boolean killed = false;
+    private boolean killed;
 
     /**
      * The {@link ClientSocketListener} attached to {@link

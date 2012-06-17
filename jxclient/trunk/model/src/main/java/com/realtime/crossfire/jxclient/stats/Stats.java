@@ -457,7 +457,7 @@ public class Stats {
      * Whether the {@link #CS_STAT_WEAP_SP} value contains the weapon speed
      * directly.
      */
-    private boolean simpleWeaponSpeed = false;
+    private boolean simpleWeaponSpeed;
 
     /**
      * The listeners to inform of stat changes.
@@ -486,12 +486,12 @@ public class Stats {
     /**
      * The total experience.
      */
-    private long exp = 0;
+    private long exp;
 
     /**
      * The experience needed to reach the next level.
      */
-    private long expNextLevel = 0;
+    private long expNextLevel;
 
     /**
      * The current value of the range stat.

@@ -37,7 +37,7 @@ public class GuiStateManager {
      * The current GUI state.
      */
     @Nullable
-    private GuiState guiState = null;
+    private GuiState guiState;
 
     /**
      * The synchronization object for accessing {@link #guiState}.

@@ -49,7 +49,7 @@ public class AnimationState implements Iterable<Location> {
     /**
      * The face was updated last in this tick number.
      */
-    private int tickNo = 0;
+    private int tickNo;
 
     /**
      * The face index currently shown. May contain values between 0 and {@link
