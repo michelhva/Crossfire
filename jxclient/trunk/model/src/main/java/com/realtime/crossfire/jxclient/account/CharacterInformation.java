@@ -196,4 +196,13 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
         return characterInformation.getName().equals(name);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public String toString() {
+        return "name="+name+", class="+characterClass+", race="+race+", face="+faceNumber+"/"+face+", party="+party+", map="+map+", level="+level;
+    }
+
 }

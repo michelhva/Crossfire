@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
@@ -2104,7 +2105,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
         // number of characters
         final int total = getInt1(packet);
-        final AccountPlayerBuilder accountPlayerBuilder = new AccountPlayerBuilder(debugProtocol);
+        final AccountPlayerBuilder accountPlayerBuilder = new AccountPlayerBuilder();
         for (int count = 0; count < total; count++) {
             while (true) {
                 if (!packet.hasRemaining()) {
@@ -2161,10 +2162,11 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 }
             }
 
+            final CharacterInformation characterInformation = accountPlayerBuilder.finish();
             if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv accountplayers entry");
+                debugProtocol.debugProtocolWrite("recv accountplayers entry: "+characterInformation);
             }
-            fireAddAccount(accountPlayerBuilder.finish());
+            fireAddAccount(characterInformation);
         }
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("invalid accountplayers reply, pos="+packet.position());

@@ -22,9 +22,7 @@
 package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
-import com.realtime.crossfire.jxclient.util.DebugWriter;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Builder for {@link CharacterInformation} instances while parsing an
@@ -33,13 +31,6 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class AccountPlayerBuilder {
-
-    /**
-     * The appender to write protocol commands to. May be <code>null</code> to
-     * not write anything.
-     */
-    @Nullable
-    private final DebugWriter debugProtocol;
 
     /**
      * The character's name.
@@ -88,15 +79,6 @@ public class AccountPlayerBuilder {
     private int faceNumber;
 
     /**
-     * Creates a new instance.
-     * @param debugProtocol the appender to write protocol commands to or
-     * <code>null</code> to not write anything
-     */
-    public AccountPlayerBuilder(@Nullable final DebugWriter debugProtocol) {
-        this.debugProtocol = debugProtocol;
-    }
-
-    /**
      * Finishes parsing an entry an returns the {@link CharacterInformation} for the entry.
      * @return the character information for the parsed entry
      */
@@ -119,9 +101,6 @@ public class AccountPlayerBuilder {
      * @param name the character's name
      */
     public void setName(@NotNull final String name) {
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv accountplayers name="+name);
-        }
         this.name = name;
     }
 
@@ -130,9 +109,6 @@ public class AccountPlayerBuilder {
      * @param cClass the character's class
      */
     public void setClass(@NotNull final String cClass) {
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv accountplayers class="+cClass);
-        }
         this.cClass = cClass;
     }
 
@@ -141,9 +117,6 @@ public class AccountPlayerBuilder {
      * @param race the character's race
      */
     public void setRace(@NotNull final String race) {
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv accountplayers race="+race);
-        }
         this.race = race;
     }
 
@@ -152,9 +125,6 @@ public class AccountPlayerBuilder {
      * @param level the character's level
      */
     public void setLevel(final int level) {
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv accountplayers level="+this.level);
-        }
         this.level = level;
     }
 
@@ -163,9 +133,6 @@ public class AccountPlayerBuilder {
      * @param face the character's face
      */
     public void setFace(@NotNull final String face) {
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv accountplayers face="+face);
-        }
         this.face = face;
     }
 
@@ -174,9 +141,6 @@ public class AccountPlayerBuilder {
      * @param party the character's party
      */
     public void setParty(@NotNull final String party) {
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv accountplayers party="+party);
-        }
         this.party = party;
     }
 
@@ -185,9 +149,6 @@ public class AccountPlayerBuilder {
      * @param map the character's map
      */
     public void setMap(@NotNull final String map) {
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv accountplayers map="+map);
-        }
         this.map = map;
     }
 
@@ -196,9 +157,6 @@ public class AccountPlayerBuilder {
      * @param faceNumber the character's face number
      */
     public void setFaceNumber(final int faceNumber) {
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv accountplayers face="+faceNumber);
-        }
         this.faceNumber = faceNumber;
     }
 
