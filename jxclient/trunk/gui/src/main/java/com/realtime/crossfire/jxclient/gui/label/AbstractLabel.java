@@ -166,12 +166,4 @@ public abstract class AbstractLabel extends AbstractGUIElement {
         setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void execute() {
-        // ignore
-    }
-
 }

@@ -148,14 +148,6 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
      * {@inheritDoc}
      */
     @Override
-    public void execute() {
-        // ignore
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
 
