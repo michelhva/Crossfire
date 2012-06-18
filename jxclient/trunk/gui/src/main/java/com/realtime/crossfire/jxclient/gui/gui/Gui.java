@@ -180,12 +180,12 @@ public class Gui extends JComponent {
      * @return the default gui element, or <code>null</code>
      */
     @Nullable
-    private GUIElement getDefaultElement() {
+    private ActivatableGUIElement getDefaultElement() {
         final int count = getComponentCount();
         for (int i = 0; i < count; i++) {
             final Component component = getComponent(i);
-            if (component.isVisible() && component instanceof GUIElement) {
-                final GUIElement element = (GUIElement)component;
+            if (component.isVisible() && component instanceof ActivatableGUIElement) {
+                final ActivatableGUIElement element = (ActivatableGUIElement)component;
                 if (element.isDefault()) {
                     return element;
                 }
@@ -199,10 +199,9 @@ public class Gui extends JComponent {
      * Activates the first default gui element of this gui.
      */
     public void activateDefaultElement() {
-        final Object defaultElement = getDefaultElement();
-        if (defaultElement != null && defaultElement instanceof ActivatableGUIElement) {
-            final ActivatableGUIElement activatableDefaultElement = (ActivatableGUIElement)defaultElement;
-            activatableDefaultElement.setActive(true);
+        final ActivatableGUIElement defaultElement = getDefaultElement();
+        if (defaultElement != null) {
+            defaultElement.setActive(true);
         }
     }
 
@@ -374,7 +373,7 @@ public class Gui extends JComponent {
         switch (e.getKeyCode()) {
         case KeyEvent.VK_ENTER:
         case KeyEvent.VK_SPACE:
-            final GUIElement defaultElement = getDefaultElement();
+            final ActivatableGUIElement defaultElement = getDefaultElement();
             if (defaultElement != null) {
                 defaultElement.execute();
                 return true;
