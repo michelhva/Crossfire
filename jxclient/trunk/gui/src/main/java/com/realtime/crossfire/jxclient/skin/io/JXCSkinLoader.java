@@ -97,20 +97,18 @@ import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.GUITextField;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
-import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.KnowledgeTypeView;
 import com.realtime.crossfire.jxclient.items.KnowledgeView;
 import com.realtime.crossfire.jxclient.items.QuestsView;
 import com.realtime.crossfire.jxclient.items.SpellSkillView;
 import com.realtime.crossfire.jxclient.items.SpellsView;
-import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
 import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
-import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
+import com.realtime.crossfire.jxclient.server.crossfire.Model;
 import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import com.realtime.crossfire.jxclient.settings.CommandHistoryFactory;
@@ -119,7 +117,6 @@ import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.Skill;
-import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.skin.events.ConnectionStateSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.CrossfireMagicmapSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.MapScrollSkinEvent;
@@ -137,9 +134,6 @@ import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.skin.source.JXCSkinSource;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
-import com.realtime.crossfire.jxclient.spells.SpellsManager;
-import com.realtime.crossfire.jxclient.stats.ExperienceTable;
-import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
@@ -222,10 +216,10 @@ public class JXCSkinLoader {
     private static final int DIALOG_BORDER_WIDTH = 5;
 
     /**
-     * The {@link ItemSet} instance to use.
+     * The {@link Model} instance to use.
      */
     @NotNull
-    private final ItemSet itemSet;
+    private final Model model;
 
     /**
      * The inventory {@link ItemView} to use.
@@ -256,21 +250,6 @@ public class JXCSkinLoader {
      */
     @NotNull
     private final QuestsView questView;
-
-    /**
-     * The {@link SpellsManager} instance to use.
-     */
-    @NotNull
-    private final SpellsManager spellsManager;
-
-    /**
-     * The {@link QuestsManager} instance to use.
-     */
-    @NotNull
-    private final QuestsManager questsManager;
-
-    @NotNull
-    private final KnowledgeManager knowledgeManager;
 
     @NotNull
     private final KnowledgeTypeView knowledgeTypeView;
@@ -309,12 +288,6 @@ public class JXCSkinLoader {
     private final FacesProviderFactory facesProviderFactory;
 
     /**
-     * The {@link Stats} instance to use.
-     */
-    @NotNull
-    private final Stats stats;
-
-    /**
      * The {@link MapUpdaterState} instance to use.
      */
     @NotNull
@@ -333,22 +306,10 @@ public class JXCSkinLoader {
     private final OptionManager optionManager;
 
     /**
-     * The {@link ExperienceTable} to use.
-     */
-    @NotNull
-    private final ExperienceTable experienceTable;
-
-    /**
      * The {@link GaugeUpdaterParser} for parsing gauge specifications.
      */
     @NotNull
     private GaugeUpdaterParser gaugeUpdaterParser;
-
-    /**
-     * The {@link SkillSet} instance to use.
-     */
-    @NotNull
-    private final SkillSet skillSet;
 
     /**
      * All defined fonts.
@@ -441,49 +402,38 @@ public class JXCSkinLoader {
 
     /**
      * Creates a new instance.
-     * @param itemSet the item set instance to use
+     * @param model the model instance to use
      * @param inventoryView the inventory item view to use
      * @param floorView the floor view to use
      * @param spellView the spells view to use
-     * @param spellsManager the spells manager instance to use
      * @param facesManager the faces manager instance to use
-     * @param stats the stats instance to use
      * @param mapUpdaterState the map updater state instance to use
      * @param defaultKeyBindings the default key bindings
      * @param optionManager the option manager to use
-     * @param experienceTable the experience table to use
-     * @param skillSet the skill set to use
      * @param defaultTileSize the default tile size for the map view
      * @param keybindingsManager the keybindings manager to use
      * @param questView the quests view to use
      * @param commandHistoryFactory the command history factory to us
-     * @param questsManager the quests manager instance to use
      * @param knowledgeView the knowledge view to use
      * @param knowledgeTypeView the knowledge type view to use
      * @param avoidCopyArea whether map scrolling is done by copying pixel
      * areas; if unset, always repaint all map squares
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsManager questsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull final KnowledgeManager knowledgeManager, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypeView, final boolean avoidCopyArea) {
-        this.itemSet = itemSet;
+    public JXCSkinLoader(@NotNull final Model model, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final FacesManager facesManager, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypeView, final boolean avoidCopyArea) {
+        this.model = model;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
         this.spellView = spellView;
         this.spellSkillsView = spellSkillsView;
-        this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         this.defaultTileSize = defaultTileSize;
         this.commandHistoryFactory = commandHistoryFactory;
         facesProviderFactory = new FacesProviderFactory(facesManager);
-        this.stats = stats;
         this.mapUpdaterState = mapUpdaterState;
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
-        this.experienceTable = experienceTable;
-        this.skillSet = skillSet;
         this.keybindingsManager = keybindingsManager;
-        this.questsManager = questsManager;
         this.questView = questView;
-        this.knowledgeManager = knowledgeManager;
         this.knowledgeView = knowledgeView;
         this.knowledgeTypeView = knowledgeTypeView;
         this.avoidCopyArea = avoidCopyArea;
@@ -529,7 +479,7 @@ public class JXCSkinLoader {
         }
 
         final Dialogs dialogs = new Dialogs(guiFactory);
-        gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemSet, skillSet);
+        gaugeUpdaterParser = new GaugeUpdaterParser(model.getStats(), model.getItemSet(), model.getSkillSet());
         commandParser = new CommandParser(dialogs, floorView, definedGUIElements);
         skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
@@ -1156,10 +1106,10 @@ public class JXCSkinLoader {
             skin.addInitEvent(skin.getCommandList(args.get()));
         } else if (type.equals("login")) {
             final CommandList commandList = skin.getCommandList(args.get());
-            skin.addSkinEvent(new PlayerLoginSkinEvent(true, commandList, itemSet));
+            skin.addSkinEvent(new PlayerLoginSkinEvent(true, commandList, model.getItemSet()));
         } else if (type.equals("logout")) {
             final CommandList commandList = skin.getCommandList(args.get());
-            skin.addSkinEvent(new PlayerLoginSkinEvent(false, commandList, itemSet));
+            skin.addSkinEvent(new PlayerLoginSkinEvent(false, commandList, model.getItemSet()));
         } else if (type.equals("magicmap")) {
             final CommandList commandList = skin.getCommandList(args.get());
             skin.addSkinEvent(new CrossfireMagicmapSkinEvent(commandList, server));
@@ -1168,7 +1118,7 @@ public class JXCSkinLoader {
             skin.addSkinEvent(new MapScrollSkinEvent(commandList, mapUpdaterState));
         } else if (type.equals("skill")) {
             final String subtype = args.get();
-            final Skill skill = skillSet.getNamedSkill(args.get().replaceAll("_", " "), -1);
+            final Skill skill = model.getSkillSet().getNamedSkill(args.get().replaceAll("_", " "), -1);
             final CommandList commandList = skin.getCommandList(args.get());
             if (subtype.equals("add")) {
                 skin.addSkinEvent(new SkillAddedSkinEvent(commandList, skill));
@@ -1287,28 +1237,28 @@ public class JXCSkinLoader {
             break;
 
         case GROUND:
-            element = new GUIFloorList(tooltipManager, elementListener, name, cellWidth, cellHeight, floorView, selectedItem, commandQueue, itemPainter, server, facesManager, itemSet, nextGroupFace, prevGroupFace);
+            element = new GUIFloorList(tooltipManager, elementListener, name, cellWidth, cellHeight, floorView, selectedItem, commandQueue, itemPainter, server, facesManager, model.getItemSet(), nextGroupFace, prevGroupFace);
             break;
 
         case SPELL:
-            element = new GUISpellList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellView, selectedItem, spellsManager, keybindingsManager, commandQueue, itemPainter, facesManager, currentSpellManager);
+            element = new GUISpellList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellView, selectedItem, model.getSpellsManager(), keybindingsManager, commandQueue, itemPainter, facesManager, currentSpellManager);
             break;
 
         case QUEST:
-            element = new GUIQuestList(tooltipManager, elementListener, name, cellWidth, cellHeight, questView, selectedItem, questsManager, itemPainter, facesManager);
+            element = new GUIQuestList(tooltipManager, elementListener, name, cellWidth, cellHeight, questView, selectedItem, model.getQuestsManager(), itemPainter, facesManager);
             break;
 
         case SPELL_SKILLS:
             final FaceImages defaultSkillIcon = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(ResourceUtils.ALL_SPELL_SKILLS_ICON));
-            element = new GUISpellSkillList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellSkillsView, selectedItem, spellsManager, itemPainter, facesManager, defaultSkillIcon);
+            element = new GUISpellSkillList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellSkillsView, selectedItem, model.getSpellsManager(), itemPainter, facesManager, defaultSkillIcon);
             break;
 
         case KNOWLEDGE_TYPES:
-            element = new GUIKnowledgeTypeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeTypeView, selectedItem, knowledgeManager, itemPainter, facesManager);
+            element = new GUIKnowledgeTypeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeTypeView, selectedItem, model.getKnowledgeManager(), itemPainter, facesManager);
             break;
 
         case KNOWLEDGE_LIST:
-            element = new GUIKnowledgeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeView, selectedItem, itemPainter, facesManager, knowledgeManager, commandQueue);
+            element = new GUIKnowledgeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeView, selectedItem, itemPainter, facesManager, model.getKnowledgeManager(), commandQueue);
             break;
 
         default:
@@ -1433,7 +1383,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace, 0);
+            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, floorView, model.getItemSet(), facesManager, nextGroupFace, prevGroupFace, 0);
         } else if (type.equals("inventory")) {
             if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item inventory' without 'def item' command");
@@ -1454,7 +1404,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, name, itemPainter, index, facesManager, spellsManager, currentSpellManager, spellView, 0);
+            element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, name, itemPainter, index, facesManager, model.getSpellsManager(), currentSpellManager, spellView, 0);
         } else {
             throw new IOException("undefined item type: "+type);
         }
@@ -1599,7 +1549,7 @@ public class JXCSkinLoader {
         final Color color = ParseUtils.parseColor(args.get());
         final int stat = ParseUtils.parseStat(args.get());
         final Alignment alignment = NumberParser.parseEnum(Alignment.class, args.get(), "text alignment");
-        final AbstractGUIElement element = new GUILabelStats(tooltipManager, elementListener, name, font, color, null, stat, alignment, stats);
+        final AbstractGUIElement element = new GUILabelStats(tooltipManager, elementListener, name, font, color, null, stat, alignment, model.getStats());
         insertGuiElement(element);
     }
 
@@ -1624,7 +1574,7 @@ public class JXCSkinLoader {
         final int statRace = ParseUtils.parseStat(args.get());
         final int statApplied = ParseUtils.parseStat(args.get());
         final Alignment alignment = NumberParser.parseEnum(Alignment.class, args.get(), "text alignment");
-        final AbstractGUIElement element = new GUILabelStats2(tooltipManager, elementListener, name, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, null, statCurrent, statBase, statRace, statApplied, alignment, stats);
+        final AbstractGUIElement element = new GUILabelStats2(tooltipManager, elementListener, name, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, null, statCurrent, statBase, statRace, statApplied, alignment, model.getStats());
         insertGuiElement(element);
     }
 
@@ -2227,7 +2177,7 @@ public class JXCSkinLoader {
      */
     @NotNull
     private GaugeUpdater newGaugeUpdater(@NotNull final String name) throws IOException {
-        return gaugeUpdaterParser.parseGaugeUpdater(name, experienceTable);
+        return gaugeUpdaterParser.parseGaugeUpdater(name, model.getExperienceTable());
     }
 
     /**
