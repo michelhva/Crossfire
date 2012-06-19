@@ -48,6 +48,7 @@ body_waist 1
 maxhp 30
 maxsp 30
 maxgrace 30
+sound_chance 100
 end
 Object quetzalcoatl_player_force
 name quetzalcoatl_force
