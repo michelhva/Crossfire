@@ -30,6 +30,8 @@ import com.realtime.crossfire.jxclient.faces.FacesProviderFactory;
 import com.realtime.crossfire.jxclient.faces.SmoothFaces;
 import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
 import com.realtime.crossfire.jxclient.gui.button.GUIButton;
+import com.realtime.crossfire.jxclient.gui.combobox.GUIClassesComboBox;
+import com.realtime.crossfire.jxclient.gui.combobox.GUIRacesComboBox;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandListType;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCheckBoxOption;
@@ -634,6 +636,8 @@ public class JXCSkinLoader {
                             parseButton(args, tooltipManager, elementListener, lnr);
                         } else if (gui != null && cmd.equals("checkbox")) {
                             parseCheckbox(args, tooltipManager, elementListener, lnr);
+                        } else if (gui != null && cmd.equals("combobox")) {
+                            parseComboBox(args, tooltipManager, elementListener);
                         } else if (cmd.equals("commandlist")) {
                             parseCommandList(args, guiStateManager, lnr, commandExecutor, commandQueue, server, commandCallback, macros);
                         } else if (cmd.equals("commandlist_add")) {
@@ -851,6 +855,29 @@ public class JXCSkinLoader {
         final String text = ParseUtils.parseText(args, lnr);
         assert checkBoxFactory != null;
         insertGuiElement(checkBoxFactory.newCheckBox(tooltipManager, elementListener, name, option, text));
+    }
+
+    /**
+     * Parses a "combobox" command.
+     * @param args the command arguments
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @throws IOException if the command cannot be parsed
+     * @throws JXCSkinException if the command cannot be parsed
+     */
+    private void parseComboBox(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        final String name = args.get();
+        final String type = args.get();
+        final GUILabelLog label = args.get().equals("null") ? null : guiElementParser.lookupLabelLogElement(args.getPrev());
+        final AbstractGUIElement element;
+        if (type.equals("classes")) {
+            element = new GUIClassesComboBox(tooltipManager, elementListener, name, model, label);
+        } else if (type.equals("races")) {
+            element = new GUIRacesComboBox(tooltipManager, elementListener, name, model, label);
+        } else {
+            throw new IOException("undefined 'combobox' type '"+type+"'");
+        }
+        insertGuiElement(element);
     }
 
     /**
