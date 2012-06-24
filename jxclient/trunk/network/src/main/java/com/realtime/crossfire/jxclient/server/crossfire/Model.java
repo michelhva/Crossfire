@@ -21,9 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
-import com.realtime.crossfire.jxclient.character.ClassRaceInfo;
-import com.realtime.crossfire.jxclient.character.NewCharInfo;
-import com.realtime.crossfire.jxclient.character.StartingMap;
+import com.realtime.crossfire.jxclient.character.NewCharacterInformation;
 import com.realtime.crossfire.jxclient.faces.AskfaceFaceQueue;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -37,13 +35,6 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -89,40 +80,10 @@ public class Model {
     private AskfaceFaceQueue askfaceFaceQueue;
 
     /**
-     * The {@link StartingMap} entries available for character creation.
+     * The {@link NewCharacterInformation} for creating new characters.
      */
     @NotNull
-    private final List<StartingMap> startingMaps = new ArrayList<StartingMap>();
-
-    /**
-     * The races available for character creation.
-     */
-    @NotNull
-    private final List<String> raceList = new ArrayList<String>();
-
-    /**
-     * The classes available for character creation.
-     */
-    @NotNull
-    private final List<String> classList = new ArrayList<String>();
-
-    /**
-     * The defined races for character creation.
-     */
-    @NotNull
-    private final Map<String, ClassRaceInfo> raceInfo = new HashMap<String, ClassRaceInfo>();
-
-    /**
-     * The defined classes for character creation.
-     */
-    @NotNull
-    private final Map<String, ClassRaceInfo> classInfo = new HashMap<String, ClassRaceInfo>();
-
-    /**
-     * The {@link NewCharInfo} for creating new characters.
-     */
-    @NotNull
-    private NewCharInfo newCharInfo = new NewCharInfo(0, 0, 0, Collections.<String>emptyList(), false, false, false);
+    private final NewCharacterInformation newCharacterInformation = new NewCharacterInformation();
 
     @Deprecated
     public void setItemsManager(@NotNull final FacesManager facesManager) {
@@ -195,112 +156,12 @@ public class Model {
     }
 
     /**
-     * Sets the {@link StartingMap} entries available for character creation.
-     * @param startingMaps the starting map entries
-     */
-    public void setStartingMaps(@NotNull final Collection<StartingMap> startingMaps) {
-        this.startingMaps.clear();
-        this.startingMaps.addAll(startingMaps);
-    }
-
-    /**
-     * Returns all defined {@link StartingMap} entries available for character
-     * creation.
-     * @return the starting map entries
+     * Returns the {@link NewCharacterInformation} for creating new characters.
+     * @return the new character information
      */
     @NotNull
-    public List<StartingMap> getStartingMaps() {
-        return Collections.unmodifiableList(startingMaps);
-    }
-
-    /**
-     * Sets the races available for character creation.
-     * @param raceList the races
-     */
-    public void setRaceList(@NotNull final String[] raceList) {
-        this.raceList.clear();
-        this.raceList.addAll(Arrays.asList(raceList));
-    }
-
-    /**
-     * Returns all defined races available for character creation.
-     * @return the races
-     */
-    @NotNull
-    public List<String> getRaceList() {
-        return Collections.unmodifiableList(raceList);
-    }
-
-    /**
-     * Sets the classes available for character creation.
-     * @param classList the classes
-     */
-    public void setClassList(@NotNull final String[] classList) {
-        this.classList.clear();
-        this.classList.addAll(Arrays.asList(classList));
-    }
-
-    /**
-     * Returns all defined classes available for character creation.
-     * @return the classes
-     */
-    @NotNull
-    public List<String> getClassesList() {
-        return Collections.unmodifiableList(classList);
-    }
-
-    /**
-     * Sets or updates a {@link ClassRaceInfo}.
-     * @param classRaceInfo the race info to set
-     */
-    public void addRaceInfo(@NotNull final ClassRaceInfo classRaceInfo) {
-        raceInfo.put(classRaceInfo.getArchName(), classRaceInfo);
-    }
-
-    /**
-     * Returns a {@link ClassRaceInfo} by race name.
-     * @param race the race name
-     * @return the race info or <code>null</code> if no race info is defined
-     */
-    @NotNull
-    public ClassRaceInfo getRaceInfo(@NotNull final String race) {
-        return raceInfo.get(race);
-    }
-
-    /**
-     * Sets or updates a {@link ClassRaceInfo class info}.
-     * @param classInfo the class info to set
-     */
-    public void addClassInfo(@NotNull final ClassRaceInfo classInfo) {
-        this.classInfo.put(classInfo.getArchName(), classInfo);
-    }
-
-    /**
-     * Returns a {@link ClassRaceInfo class info} by class name.
-     * @param className the class name
-     * @return the class race info or <code>null</code> if no such class info is
-     *         defined
-     */
-    @NotNull
-    public ClassRaceInfo getClassInfo(@NotNull final String className) {
-        return classInfo.get(className);
-    }
-
-    /**
-     * Returns the {@link NewCharInfo} instance for character creation.
-     * @return the new char info instance
-     */
-    @NotNull
-    public NewCharInfo getNewCharInfo() {
-        return newCharInfo;
-    }
-
-    /**
-     * Sets the {@link NewCharInfo} instance for character creation.
-     * @param newCharInfo the new char info instance
-     */
-    public void setNewCharInfo(@NotNull final NewCharInfo newCharInfo) {
-        this.newCharInfo = newCharInfo;
+    public NewCharacterInformation getNewCharacterInformation() {
+        return newCharacterInformation;
     }
 
 }

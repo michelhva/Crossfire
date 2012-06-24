@@ -2104,7 +2104,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 break;
             }
         }
-        model.setStartingMaps(sb.finish());
+        model.getNewCharacterInformation().setStartingMaps(sb.finish());
     }
 
     /**
@@ -2117,7 +2117,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         final CharSequence raceList = getString(packet, packet.remaining());
         final String[] races = PATTERN_BAR.split(raceList);
-        model.setRaceList(races);
+        model.getNewCharacterInformation().setRaceList(races);
 
         for (final String race : races) {
             sendQueuedRequestinfo("race_info "+race);
@@ -2134,7 +2134,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         final CharSequence classList = getString(packet, packet.remaining());
         final String[] classes = PATTERN_BAR.split(classList);
-        model.setClassList(classes);
+        model.getNewCharacterInformation().setClassList(classes);
 
         for (final String class_ : classes) {
             sendQueuedRequestinfo("class_info "+class_);
@@ -2170,9 +2170,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv replyinfo "+(raceInfo ? "race_info" : "class_info")+" "+classRaceInfo);
         }
         if (raceInfo) {
-            model.addRaceInfo(classRaceInfo);
+            model.getNewCharacterInformation().addRaceInfo(classRaceInfo);
         } else {
-            model.addClassInfo(classRaceInfo);
+            model.getNewCharacterInformation().addClassInfo(classRaceInfo);
         }
     }
 
@@ -2211,7 +2211,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv replyinfo newcharinfo "+newCharInfo);
         }
-        model.setNewCharInfo(newCharInfo);
+        model.getNewCharacterInformation().setNewCharInfo(newCharInfo);
     }
 
     /**
