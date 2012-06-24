@@ -165,6 +165,9 @@ public class NewCharacterInformation {
      */
     public void addRaceInfo(@NotNull final ClassRaceInfo classRaceInfo) {
         raceInfo.put(classRaceInfo.getArchName(), classRaceInfo);
+        for (final NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners.getListeners()) {
+            newCharacterInformationListener.raceInfoChanged(classRaceInfo.getArchName());
+        }
     }
 
     /**
@@ -183,6 +186,9 @@ public class NewCharacterInformation {
      */
     public void addClassInfo(@NotNull final ClassRaceInfo classInfo) {
         this.classInfo.put(classInfo.getArchName(), classInfo);
+        for (final NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners.getListeners()) {
+            newCharacterInformationListener.classInfoChanged(classInfo.getArchName());
+        }
     }
 
     /**

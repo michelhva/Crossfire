@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.character;
 
 import java.util.EventListener;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in {@link NewCharacterInformation} related
@@ -36,8 +37,20 @@ public interface NewCharacterInformationListener extends EventListener {
     void classListChanged();
 
     /**
+     * Called whenever information of a class may have changed.
+     * @param className the name of the class that may have changed
+     */
+    void classInfoChanged(@NotNull String className);
+
+    /**
      * Called whenever the race list may have changed.
      */
     void raceListChanged();
+
+    /**
+     * Called whenever information of a race may have changed.
+     * @param raceName the name of the race that may have changed
+     */
+    void raceInfoChanged(@NotNull String raceName);
 
 }

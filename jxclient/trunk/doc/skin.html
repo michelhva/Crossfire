@@ -332,6 +332,33 @@
     <li>&lt;text...&gt; is the text to display.</li>
 </ul>
 
+<h3><a name="combobox">combobox: display a list of choices</a></h3>
+
+<p>syntax:</p>
+<pre>
+    combobox &lt;name&gt; &lt;type&gt; &lt;label&gt;
+</pre>
+
+<p>precondition: dialog
+</p>
+
+<p>Defines a combobox element which displays a list of classes or races
+    available for character creation. Optionally displays the class or race
+    description corresponding to the current selection in a label.</p>
+
+<ul>
+    <li>&lt;name&gt; is the name of the combobox.</li>
+    <li>&lt;type&gt; is the type: <code>classes</code> for classes available for
+        character creation, or <code>races</code> for races available for
+        character creation.
+    </li>
+    <li>&lt;label&gt; the name of a <a href="#log_label"><code>log_label</code></a>
+        to display information
+        about the selected item. Can be set to <code>null</code> if no
+        information should be displayed.
+    </li>
+</ul>
+
 <h3><a name="commandlist">commandlist: define executable commands</a></h3>
 
 <p>syntax:</p>

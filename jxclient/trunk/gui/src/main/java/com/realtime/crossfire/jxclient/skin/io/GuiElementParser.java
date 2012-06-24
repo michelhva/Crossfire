@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.skin.io;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
@@ -79,6 +80,22 @@ public class GuiElementParser {
         }
 
         return (AbstractLabel)element;
+    }
+
+    /**
+     * Returns a {@link AbstractLabel} by element name.
+     * @param name the element name
+     * @return the <code>AbstractLabel</code> element
+     * @throws JXCSkinException if the element name is undefined
+     */
+    @NotNull
+    public GUILabelLog lookupLabelLogElement(@NotNull final String name) throws JXCSkinException {
+        final Object element = definedGUIElements.lookup(name);
+        if (!(element instanceof GUILabelLog)) {
+            throw new JXCSkinException("element "+name+" is not a log_label");
+        }
+
+        return (GUILabelLog)element;
     }
 
 }
