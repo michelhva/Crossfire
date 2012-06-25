@@ -1,3 +1,8 @@
+2012-06-25  Andreas Kirschbaum
+
+	* Do not request "loginmethod 2" from server as it is not yet
+	fully implemented and thus makes character creation fail.
+
 2012-02-11  Andreas Kirschbaum
 
 	* Invoke protection spell on middle-click in protections dialog.
