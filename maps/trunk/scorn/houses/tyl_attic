@@ -5,7 +5,7 @@ width 10
 height 10
 msg
 Created:  2009-12-05 Nicolas Weeger
-Modified: 2010-04-08 Nicolas Weeger
+Modified: 2012-06-27 Rick Tanner
 endmsg
 end
 arch afloor_left
@@ -680,8 +680,8 @@ y 1
 end
 arch stair_3_down
 slaying tyl
-hp 8
-sp 1
+hp 10
+sp 3
 x 8
 y 1
 end

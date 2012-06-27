@@ -1,199 +1,393 @@
 arch map
 name Tyl's house
 region scorn
-width 10
-height 10
-enter_x 4
-enter_y 8
+width 14
+height 14
+enter_x 3
+enter_y 9
 msg
 Created:  2009-12-05 Nicolas Weeger
-Modified: 2012-01-09 Rick Tanner
+Modified: 2012-06-27 Rick Tanner
 endmsg
 end
+arch cobblestones2
+end
+arch cobblestones2
+y 1
+end
+arch cobblestones2
+y 2
+end
+arch cobblestones2
+y 3
+end
+arch cobblestones2
+y 4
+end
+arch cobblestones2
+y 5
+end
+arch cobblestones2
+y 6
+end
+arch cobblestones2
+y 7
+end
+arch cobblestones2
+y 8
+end
+arch cobblestones2
+y 9
+end
+arch cobblestones2
+y 10
+end
+arch cobblestones2
+y 11
+end
+arch cobblestones2
+y 12
+end
+arch cobblestones2
+y 13
+end
+arch cobblestones2
+x 1
+end
+arch cobblestones2
+x 1
+y 1
+end
+arch cobblestones2
+x 1
+y 2
+end
+arch cobblestones2
+x 1
+y 3
+end
+arch cobblestones2
+x 1
+y 4
+end
+arch cobblestones2
+x 1
+y 5
+end
+arch cobblestones2
+x 1
+y 6
+end
+arch cobblestones2
+x 1
+y 7
+end
+arch dungeon_magic
+x 1
+y 8
+end
+arch cobblestones2
+x 1
+y 8
+move_block all
+end
+arch dungeon_magic
+x 1
+y 9
+end
+arch cobblestones2
+x 1
+y 9
+move_block all
+end
+arch dungeon_magic
+x 1
+y 10
+end
+arch cobblestones2
+x 1
+y 10
+move_block all
+end
+arch cobblestones2
+x 1
+y 11
+end
+arch cobblestones2
+x 1
+y 12
+end
+arch cobblestones2
+x 1
+y 13
+end
+arch cobblestones2
+x 2
+end
+arch cobblestones2
+x 2
+y 1
+end
 arch woodfloor
+x 2
+y 2
 end
 arch wall_2_2_2
-end
-arch woodfloor
-y 1
-end
-arch wall_2_1_1
-y 1
-end
-arch woodfloor
-y 2
-end
-arch wall_2_1_1
+x 2
 y 2
 end
 arch woodfloor
+x 2
 y 3
 end
 arch wall_2_1_1
+x 2
 y 3
 end
 arch woodfloor
+x 2
 y 4
 end
-arch wall_2_1_1
+arch window_win1
+x 2
 y 4
 end
 arch woodfloor
+x 2
 y 5
 end
 arch wall_2_1_1
+x 2
 y 5
 end
 arch woodfloor
+x 2
 y 6
 end
 arch wall_2_1_1
+x 2
 y 6
 end
 arch woodfloor
+x 2
 y 7
 end
 arch wall_2_1_1
+x 2
 y 7
 end
 arch woodfloor
+x 2
 y 8
 end
-arch wall_2_1_1
+arch wall_1_2
+x 2
 y 8
 end
 arch woodfloor
+x 2
 y 9
+end
+arch oakdoor_1
+slaying /world/world_105_115
+hp 13
+sp 29
+x 2
+y 9
+end
+arch woodfloor
+x 2
+y 10
+end
+arch wall_1_1
+x 2
+y 10
+end
+arch woodfloor
+x 2
+y 11
 end
 arch wall_2_2_1
-y 9
+x 2
+y 11
 end
-arch woodfloor
-x 1
+arch cobblestones2
+x 2
+y 12
 end
-arch wall_2_1_2
-x 1
+arch cobblestones2
+x 2
+y 13
 end
-arch woodfloor
-x 1
+arch cobblestones2
+x 3
+end
+arch cobblestones2
+x 3
 y 1
 end
 arch woodfloor
-x 1
+x 3
+y 2
+end
+arch wall_2_1_2
+x 3
 y 2
 end
 arch woodfloor
-x 1
+x 3
 y 3
 end
 arch woodfloor
-x 1
+x 3
 y 4
 end
 arch woodfloor
-x 1
+x 3
 y 5
 end
 arch woodfloor
-x 1
+x 3
 y 6
 end
 arch woodfloor
-x 1
+x 3
 y 7
 end
 arch woodfloor
-x 1
+x 3
 y 8
 end
 arch woodfloor
-x 1
-y 9
-end
-arch wall_2_1_2
-x 1
+x 3
 y 9
 end
 arch woodfloor
-x 2
-end
-arch wall_2_1_2
-x 2
+x 3
+y 10
 end
 arch woodfloor
-x 2
+x 3
+y 11
+end
+arch wall_2_1_2
+x 3
+y 11
+end
+arch cobblestones2
+x 3
+y 12
+end
+arch cobblestones2
+x 3
+y 13
+end
+arch cobblestones2
+x 4
+end
+arch cobblestones2
+x 4
 y 1
 end
 arch woodfloor
-x 2
+x 4
+y 2
+end
+arch wall_2_1_2
+x 4
 y 2
 end
 arch woodfloor
-x 2
+x 4
 y 3
 end
 arch woodfloor
-x 2
+x 4
 y 4
 end
 arch woodfloor
-x 2
+x 4
 y 5
 end
 arch woodfloor
-x 2
+x 4
 y 6
 end
 arch woodfloor
-x 2
+x 4
 y 7
 end
 arch woodfloor
-x 2
+x 4
 y 8
 end
 arch woodfloor
-x 2
-y 9
-end
-arch wall_2_1_2
-x 2
+x 4
 y 9
 end
 arch woodfloor
-x 3
-end
-arch wall_2_1_2
-x 3
+x 4
+y 10
 end
 arch woodfloor
-x 3
+x 4
+y 11
+end
+arch wall_2_1_2
+x 4
+y 11
+end
+arch cobblestones2
+x 4
+y 12
+end
+arch cobblestones2
+x 4
+y 13
+end
+arch cobblestones2
+x 5
+end
+arch cobblestones2
+x 5
 y 1
 end
 arch woodfloor
-x 3
+x 5
+y 2
+end
+arch wall_2_1_2
+x 5
 y 2
 end
 arch woodfloor
-x 3
+x 5
 y 3
 end
 arch woodfloor
-x 3
+x 5
 y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
 end
 arch magic_ear
 msg
 @match amudrias
 Click.
 endmsg
-x 3
-y 5
+x 5
+y 7
 connected 1
 end
 arch woodfloor
-x 3
-y 5
+x 5
+y 7
 end
 arch guildmaster
 name Tyl
@@ -215,137 +409,51 @@ Hello there!
 @match *
 *grumble*
 endmsg
-x 3
-y 5
+x 5
+y 7
 speed 0.1
 type 0
 end
 arch woodfloor
-x 3
-y 6
-end
-arch woodfloor
-x 3
-y 7
-end
-arch woodfloor
-x 3
+x 5
 y 8
 end
 arch woodfloor
-x 3
-y 9
-end
-arch wall_1_3
-x 3
+x 5
 y 9
 end
 arch woodfloor
-x 4
+x 5
+y 10
+end
+arch woodfloor
+x 5
+y 11
 end
 arch wall_2_1_2
-x 4
+x 5
+y 11
 end
-arch woodfloor
-x 4
+arch cobblestones2
+x 5
+y 12
+end
+arch cobblestones2
+x 5
+y 13
+end
+arch cobblestones2
+x 6
+end
+arch cobblestones2
+x 6
 y 1
 end
 arch woodfloor
-x 4
+x 6
 y 2
 end
-arch woodfloor
-x 4
-y 3
-end
-arch woodfloor
-x 4
-y 4
-end
-arch woodfloor
-x 4
-y 5
-end
-arch woodfloor
-x 4
-y 6
-end
-arch woodfloor
-x 4
-y 7
-end
-arch woodfloor
-x 4
-y 8
-end
-arch woodfloor
-x 4
-y 9
-end
-arch oakdoor_2
-slaying /world/world_105_115
-hp 13
-sp 29
-x 4
-y 9
-end
-arch woodfloor
-x 5
-end
-arch wall_2_1_2
-x 5
-end
-arch woodfloor
-x 5
-y 1
-end
-arch woodfloor
-x 5
-y 2
-end
-arch woodfloor
-x 5
-y 3
-end
-arch woodfloor
-x 5
-y 4
-end
-arch woodfloor
-x 5
-y 5
-end
-arch woodfloor
-x 5
-y 6
-end
-arch woodfloor
-x 5
-y 7
-end
-arch woodfloor
-x 5
-y 8
-end
-arch woodfloor
-x 5
-y 9
-end
-arch wall_1_4
-x 5
-y 9
-end
-arch woodfloor
-x 6
-end
-arch wall_2_1_2
-x 6
-end
-arch woodfloor
-x 6
-y 1
-end
-arch woodfloor
+arch window_win2
 x 6
 y 2
 end
@@ -377,197 +485,500 @@ arch woodfloor
 x 6
 y 9
 end
-arch wall_2_1_2
+arch woodfloor
 x 6
+y 10
+end
+arch woodfloor
+x 6
+y 11
+end
+arch window_win2
+x 6
+y 11
+end
+arch cobblestones2
+x 6
+y 12
+end
+arch cobblestones2
+x 6
+y 13
+end
+arch cobblestones2
+x 7
+end
+arch cobblestones2
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch wall_2_1_2
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
 y 9
 end
 arch woodfloor
 x 7
+y 10
+end
+arch woodfloor
+x 7
+y 11
+end
+arch wall_2_1_2
+x 7
+y 11
+end
+arch cobblestones2
+x 7
+y 12
+end
+arch cobblestones2
+x 7
+y 13
+end
+arch cobblestones2
+x 8
+end
+arch cobblestones2
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch wall_2_1_2
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch woodfloor
+x 8
+y 11
+end
+arch wall_2_1_2
+x 8
+y 11
+end
+arch cobblestones2
+x 8
+y 12
+end
+arch cobblestones2
+x 8
+y 13
+end
+arch cobblestones2
+x 9
+end
+arch cobblestones2
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
 end
 arch wall_3_3
-x 7
+x 9
+y 2
 end
 arch woodfloor
-x 7
-y 1
+x 9
+y 3
 end
 arch wall_2_1_1
-x 7
-y 1
-end
-arch woodfloor
-x 7
-y 2
-end
-arch wall_1_2
-x 7
-y 2
-end
-arch woodfloor
-x 7
+x 9
 y 3
 end
 arch woodfloor
-x 7
+x 9
+y 4
+end
+arch wall_1_2
+x 9
 y 4
 end
 arch woodfloor
-x 7
+x 9
 y 5
 end
 arch woodfloor
-x 7
+x 9
 y 6
 end
 arch woodfloor
-x 7
+x 9
 y 7
 end
 arch woodfloor
-x 7
+x 9
 y 8
 end
 arch woodfloor
-x 7
-y 9
-end
-arch wall_2_1_2
-x 7
+x 9
 y 9
 end
 arch woodfloor
-x 8
-end
-arch wall_2_1_2
-x 8
+x 9
+y 10
 end
 arch woodfloor
-x 8
+x 9
+y 11
+end
+arch wall_2_1_2
+x 9
+y 11
+end
+arch cobblestones2
+x 9
+y 12
+end
+arch cobblestones2
+x 9
+y 13
+end
+arch cobblestones2
+x 10
+end
+arch cobblestones2
+x 10
 y 1
+end
+arch woodfloor
+x 10
+y 2
+end
+arch wall_2_1_2
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 3
 end
 arch stair_3_up
 slaying tyl_attic
 hp 8
 sp 1
-x 8
-y 1
+x 10
+y 3
 end
 arch woodfloor
-x 8
-y 2
+x 10
+y 4
 end
 arch odoorn2_closed_1
-x 8
-y 2
+x 10
+y 4
 connected 1
 end
 arch woodfloor
-x 8
-y 3
-end
-arch woodfloor
-x 8
-y 4
-end
-arch woodfloor
-x 8
+x 10
 y 5
 end
 arch woodfloor
-x 8
+x 10
 y 6
 end
 arch woodfloor
-x 8
+x 10
 y 7
 end
 arch woodfloor
-x 8
+x 10
 y 8
 end
 arch woodfloor
-x 8
+x 10
 y 9
+end
+arch woodfloor
+x 10
+y 10
+end
+arch woodfloor
+x 10
+y 11
 end
 arch wall_2_1_2
-x 8
-y 9
+x 10
+y 11
+end
+arch cobblestones2
+x 10
+y 12
+end
+arch cobblestones2
+x 10
+y 13
+end
+arch cobblestones2
+x 11
+end
+arch cobblestones2
+x 11
+y 1
 end
 arch woodfloor
-x 9
+x 11
+y 2
 end
 arch wall_2_2_3
-x 9
-end
-arch woodfloor
-x 9
-y 1
-end
-arch wall_2_1_1
-x 9
-y 1
-end
-arch woodfloor
-x 9
-y 2
-end
-arch wall_2_1_1
-x 9
+x 11
 y 2
 end
 arch woodfloor
-x 9
+x 11
 y 3
 end
 arch wall_2_1_1
-x 9
+x 11
 y 3
 end
 arch woodfloor
-x 9
+x 11
 y 4
 end
 arch wall_2_1_1
-x 9
+x 11
 y 4
 end
 arch woodfloor
-x 9
+x 11
 y 5
 end
-arch wall_2_1_1
-x 9
+arch window_win1
+x 11
 y 5
 end
 arch woodfloor
-x 9
+x 11
 y 6
 end
 arch wall_2_1_1
-x 9
+x 11
 y 6
 end
 arch woodfloor
-x 9
+x 11
 y 7
 end
 arch wall_2_1_1
-x 9
+x 11
 y 7
 end
 arch woodfloor
-x 9
+x 11
 y 8
 end
 arch wall_2_1_1
-x 9
+x 11
 y 8
 end
 arch woodfloor
-x 9
+x 11
 y 9
+end
+arch window_win1
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
+end
+arch wall_2_1_1
+x 11
+y 10
+end
+arch woodfloor
+x 11
+y 11
 end
 arch wall_2_2_4
-x 9
+x 11
+y 11
+end
+arch cobblestones2
+x 11
+y 12
+end
+arch cobblestones2
+x 11
+y 13
+end
+arch cobblestones2
+x 12
+end
+arch cobblestones2
+x 12
+y 1
+end
+arch cobblestones2
+x 12
+y 2
+end
+arch cobblestones2
+x 12
+y 3
+end
+arch cobblestones2
+x 12
+y 4
+end
+arch cobblestones2
+x 12
+y 5
+end
+arch cobblestones2
+x 12
+y 6
+end
+arch cobblestones2
+x 12
+y 7
+end
+arch cobblestones2
+x 12
+y 8
+end
+arch cobblestones2
+x 12
 y 9
+end
+arch cobblestones2
+x 12
+y 10
+end
+arch cobblestones2
+x 12
+y 11
+end
+arch cobblestones2
+x 12
+y 12
+end
+arch cobblestones2
+x 12
+y 13
+end
+arch cobblestones2
+x 13
+end
+arch cobblestones2
+x 13
+y 1
+end
+arch cobblestones2
+x 13
+y 2
+end
+arch cobblestones2
+x 13
+y 3
+end
+arch cobblestones2
+x 13
+y 4
+end
+arch cobblestones2
+x 13
+y 5
+end
+arch cobblestones2
+x 13
+y 6
+end
+arch cobblestones2
+x 13
+y 7
+end
+arch cobblestones2
+x 13
+y 8
+end
+arch cobblestones2
+x 13
+y 9
+end
+arch cobblestones2
+x 13
+y 10
+end
+arch cobblestones2
+x 13
+y 11
+end
+arch cobblestones2
+x 13
+y 12
+end
+arch cobblestones2
+x 13
+y 13
 end
