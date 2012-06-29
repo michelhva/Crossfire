@@ -9,7 +9,7 @@ enter_x 10
 enter_y 15
 msg
 Created:  1993-10-15
-Modified: 2012-01-01 Rick Tanner
+Modified: 2012-06-28 Rick Tanner
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -1665,7 +1665,7 @@ arch grass
 x 15
 y 2
 end
-arch swall_1_2
+arch swall_2_1_1
 x 15
 y 2
 end
@@ -1674,6 +1674,10 @@ x 15
 y 3
 end
 arch dwall_1_1
+x 15
+y 3
+end
+arch swall_1_2_half
 x 15
 y 3
 end
