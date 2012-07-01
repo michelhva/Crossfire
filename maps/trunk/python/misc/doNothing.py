@@ -2,5 +2,4 @@
 
 import Crossfire
 
-print "Nothing script"
 Crossfire.SetReturnValue(1)
