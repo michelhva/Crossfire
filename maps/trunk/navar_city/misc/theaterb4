@@ -10,7 +10,7 @@ enter_x 30
 enter_y 73
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-21 Rick Tanner
+Modified: 2012-07-01 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -1967,6 +1967,10 @@ slaying rodofalitheaterb4
 face rod_heavy.111
 x 29
 y 6
+arch quest_advance_pickup
+name navar/Ali-treasure 0-40>50
+unique 1
+end
 end
 arch blocked
 x 29

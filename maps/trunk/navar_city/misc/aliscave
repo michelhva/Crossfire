@@ -10,7 +10,7 @@ enter_x 53
 enter_y 54
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-09 Rick Tanner
+Modified: 2012-07-01 Nicolas Weeger
 endmsg
 end
 arch unholy_ground
@@ -2966,6 +2966,10 @@ name_pl ali's turbans
 Int 2
 x 4
 y 54
+arch quest_advance_pickup
+name navar/Ali-treasure 10>20
+unique 1
+end
 end
 arch unholy_ground
 x 4

@@ -9,7 +9,7 @@ enter_x 15
 enter_y 28
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-17 Rick Tanner
+Modified: 2012-07-01 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -492,6 +492,10 @@ hp 2
 sp 29
 x 2
 y 29
+arch quest_advance_apply
+name navar/Ali-treasure 0-20>30
+unique 1
+end
 end
 arch spikes_closed
 x 2

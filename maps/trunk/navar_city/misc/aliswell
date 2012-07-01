@@ -10,7 +10,7 @@ enter_x 9
 enter_y 8
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2012-02-16 Rick Tanner
+Modified: 2012-07-01 Nicolas Weeger
 endmsg
 end
 arch cave_15
@@ -1999,6 +1999,9 @@ hp 11
 sp 34
 x 10
 y 9
+arch quest_advance_apply
+name navar/Ali-treasure 0-50>60
+end
 end
 arch locked_door1
 name clay well plug

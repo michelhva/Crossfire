@@ -10,7 +10,7 @@ enter_x 22
 enter_y 27
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-17 Rick Tanner
+Modified: 2012-07-01 Nicolas Weeger
 endmsg
 tile_path_4 /navar_city/misc/theaterb4
 end
@@ -9102,6 +9102,10 @@ level 1
 randomitems none
 arch spell_magic_bullet
 end
+end
+arch quest_advance_death
+name navar/Ali-treasure 0-30>40
+unique 1
 end
 end
 arch detector

@@ -8,7 +8,7 @@ enter_x 7
 enter_y 2
 msg
 Created:  2012-03-20 Rick Tanner
-Modified: 2012-05-16 Rick Tanner
+Modified: 2012-07-01 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -374,8 +374,11 @@ y 5
 carrying 75
 arch note
 msg
-We hid th. st.len bank l.ot i. the cav. . The p.ss .s ali b.rb.a ..
+We hid th. st.len bank l.ot i. the cav. . The p.ss .s ali b.rb.a.
 endmsg
+arch quest_advance_apply
+name navar/Ali-treasure 0>10
+end
 end
 end
 arch dungeon_floor

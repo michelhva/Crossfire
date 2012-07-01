@@ -64,7 +64,7 @@ end_description
 end_step
 step 20
 description
-The pirates's cove is located in an old warehouse just south of Navar, 
+The pirates's cove is located in an old warehouse just south of Navar,
 end_description
 end_step
 step 30
@@ -130,6 +130,45 @@ step 70
 finishes_quest
 description
 Lt. Piltro gave me a reward.
+end_description
+end_step
+end_quest
+
+quest navar/Ali-treasure
+title Treasure quest
+face chalice_sil.111
+description
+Reclaim a treasure.
+end_description
+step 10
+description
+I've found mention of a treasure hidden in a cave, the password is corrupted but looks like 'ali b.rb.a'
+end_description
+end_step
+step 20
+description
+I've cleared the cave, and found a turban, I should find where to use it.
+end_description
+end_step
+step 30
+description
+I should explore the underground of the theatre.
+end_description
+end_step
+step 40
+description
+I killed a Djinn, I should search if he didn't leave a useful item.
+end_description
+end_step
+step 50
+description
+I've found a strange rod which seems to be a key to something, maybe the treasure mentioned in the note?
+end_description
+end_step
+step 60
+finishes_quest
+description
+I've found the treasure.
 end_description
 end_step
 end_quest
