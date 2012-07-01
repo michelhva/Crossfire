@@ -1,3 +1,125 @@
+2012-07-01 05:43  rjtanner
+
+	* scorn/misc/puddings.place, world/world_105_115: Cosmetic and
+	  layout changes to Puddings Place (scorn/misc/puddings.place) in
+	  Scorn. Enlarged the map to include area surrounding the house,
+	  reversed the layout to match the world map graphic. Updated world
+	  map (world/world_105_115) for map entrance coordinate changes.
+
+2012-06-30 06:26  rjtanner
+
+	* scorn/misc/mercenaries, world/world_104_115: Cosmetic and layout
+	  changes to Mercenaries Agency (scorn/misc/mercenaries) in Scorn.
+	  Enlarged the map to include area surrounding the building.
+	  Updated world map (world/world_104_115) for map entrance
+	  coordinate changes.
+
+2012-06-29 04:52  rjtanner
+
+	* scorn/misc/church: Minor change with how fence (swall) section
+	  merges with nearby walls to Undead Church (scorn/misc/church) in
+	  Scorn. Cosmetic change, no functional changes.
+
+2012-06-28 05:58  rjtanner
+
+	* scorn/misc/castle_kitchen, world/world_104_115: Cosmetic and
+	  layout changes to Castle Kitchen (scorn/misc/castle_kitchen) in
+	  Scorn. Added a few windows, enlarged the map to include area
+	  surrounding the kitchen. Updated world map (world/world_104_115)
+	  for map entrance coordinate changes.
+
+2012-06-27 06:36  rjtanner
+
+	* scorn/houses/tyl, scorn/houses/tyl_attic, world/world_105_115:
+	  Cosmetic and layout changes to Tyl's house (scorn/houses/tyl) in
+	  Scorn. Added a few windows, moved door location, enlarged the map
+	  to include area surrounding the house. Updated Attic of Tyl's
+	  house (scorn/houses/tyl_attic) and world map
+	  (world/world_105_115) for map entrance coordinate changes.
+
+2012-06-26 07:34  rjtanner
+
+	* scorn/houses/maze1, world/world_105_115: Cosmetic and layout
+	  changes to Fun House (scorn/houses/maze1) in Scorn. Enlarged the
+	  map to include area surrounding the house. Updated world map
+	  (world/world_105_115) for map entrance coordinate changes.
+
+2012-06-25 07:22  rjtanner
+
+	* scorn/houses/house3.1st, scorn/houses/house3.bas1,
+	  world/world_104_115: Cosmetic and layout changes to Mike Miller's
+	  house (scorn/houses/house3.1st) in Scorn. Added a couple more
+	  windows, enlarged the map to include area surrounding the house.
+	  Updated Mike Miller's cellar (scorn/houses/house3.bas1) and world
+	  map (world/world_104_115) for map entrance coordinate changes.
+
+2012-06-24 08:49  rjtanner
+
+	* scorn/dtabb/cave3, world/world_105_116: Cosmetic and layout
+	  changes to replace yellow block walls with cave wall sections to
+	  Goblin Den (scorn/dtabb/cave3) in Scorn. Updated world map
+	  (world/world_105_116) for map entrance coordinate changes.
+
+2012-06-23 08:12  rjtanner
+
+	* santo_dominion/house_of_hell, world/world_102_108: Cosmetic
+	  changes to Little House of Horrors (santo_dominion/house_of_hell)
+	  in Santo Dominion. Expanded to show outer area of the map. World
+	  map (world/world_102_108) updated for new entrance coordinates.
+
+2012-06-22 06:18  rjtanner
+
+	* santo_dominion/houses/house1, world/world_102_108: Cosmetic
+	  changes to Undead Bungalow (santo_dominion/houses/house1) in
+	  Santo Dominion. Expanded to show outer area of the map. World map
+	  (world/world_102_108) updated for new entrance coordinates.
+
+2012-06-21 04:43  rjtanner
+
+	* santo_dominion/tollpost, world/world_102_108: Cosmetic and layout
+	  changes to Santo Dominion Toll St. (santo_dominion/tollpost) in
+	  Santo Dominion. Expanded to show outer area of the map, added
+	  some windows. Reversed the layout to match the shop map world map
+	  icon. World map (world/world_102_108) updated for new entrance
+	  coordinates.
+
+2012-06-20 07:02  rjtanner
+
+	* santo_dominion/map.and.sale, world/world_102_108: Cosmetic and
+	  layout changes to St. Dominion Sale (santo_dominion/map.and.sale)
+	  in Santo Dominion. Expanded to show outer area of the shop, added
+	  some windows. Reversed the layout to match the shop map world map
+	  icon. World map (world/world_102_108) updated for new entrance
+	  coordinates.
+
+2012-06-19 05:56  rjtanner
+
+	* santo_dominion/city_hall, world/world_102_108: Cosmetic changes
+	  to Santo Dominion City Hall (santo_dominion/city_hall) in Santo
+	  Dominion. Expanded to show outer area of the map, added some
+	  windows. World map (world/world_102_108) updated for new entrance
+	  coordinates.
+
+2012-06-18 04:45  rjtanner
+
+	* navar_city/misc/city1bank, world/world_122_117: Cosmetic changes
+	  to Bank of Skud, Navar Branch (navar_city/misc/city1bank) in
+	  Navar. Expanded to show outer area of the bank. World map
+	  (world/world_122_117) updated for new entrance coordinates.
+
+2012-06-17 10:35  ryo_saeba
+
+	* python/guilds/guild_questpoints_apply.py: Use name, not object.
+
+2012-06-17 10:31  ryo_saeba
+
+	* python/IPO/banksay.py, python/pshop/pshop.py: Don't redirect
+	  output.
+
+2012-06-17 07:47  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
 2012-06-17 07:40  ryo_saeba
 
 	* scorn/misc/castle, scorn/misc/magistrate.msg,
