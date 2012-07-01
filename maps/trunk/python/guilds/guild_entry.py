@@ -47,7 +47,7 @@ guildrecord = CFGuilds.CFGuildHouses().info(guildname)
 found = 0
 if text:
         if text[0].upper() == 'ENTER':
-                print guildrecord
+                #print guildrecord
                 if guildrecord['Status'] == 'inactive':
                         message = 'This guild is currently inactive and available to be bought.'
 

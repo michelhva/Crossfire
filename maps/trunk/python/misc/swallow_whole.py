@@ -23,7 +23,7 @@ if  (r <= 0.26):
 	if map:
 	    me.Teleport(map, eat_x, eat_y)
 	else:
-	    print "There is no eat map"
+	    Crossfire.Log(Crossfire.LogError, "There is no eat map")
 
     elif isplayer == 0:
 	me.Map.Print("\nThe %s is swallowed whole by the %s!" % (me.Name, worm.Name))

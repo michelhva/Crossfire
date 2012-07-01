@@ -15,8 +15,8 @@ bank=CFBank.CFBank("ImperialBank_DB")
 pshop=whoami.Map.Path.replace("/","_")
 
 
-print CFDB.get(pshop)
-print pshop
+#print CFDB.get(pshop)
+#print pshop
 
 
 
