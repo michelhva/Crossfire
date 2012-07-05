@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2012-05-28 Rick Tanner
+Modified: 2012-07-05 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -8758,8 +8758,8 @@ end
 arch prison
 name Wolfsburg Prison
 slaying /wolfsburg/prison
-hp 13
-sp 1
+hp 4
+sp 25
 x 35
 y 1
 end
