@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2012-07-06 Rick Tanner
+Modified: 2012-07-07 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_103_126
@@ -1840,7 +1840,8 @@ msg
 You have a creepy feeling while
 entering this house.
 endmsg
-sp 8
+hp 3
+sp 10
 x 7
 y 13
 end
