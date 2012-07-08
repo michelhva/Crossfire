@@ -42,6 +42,7 @@ def do_help():
 	help += ' - hook\n'
 	help += ' - checkinventory\n'
 	help += ' - nosave\n'
+	help += ' - move_to\n'
 	
 	whoami.Say(help)
 
@@ -420,78 +421,113 @@ def do_no_save():
   item.NoSave = 1
   whoami.Say('no_save set, the food should not be saved')
 
-topic = Crossfire.WhatIsMessage().split()
-#whoami.Say('topic = %s'%topic)
-#whoami.Say('topic[0] = %s'%topic[0])
-if topic[0] == 'arch':
-	do_arch()
-elif topic[0] == 'maps':
-	do_maps()
-elif topic[0] == 'party':
-	do_party()
-elif topic[0] == 'region':
-	do_region()
-elif topic[0] == 'mark':
-	do_marker()
-elif topic[0] == 'ref':
-	do_activator()
-elif topic[0] == 'memory':
-	do_memory()
-elif topic[0] == 'resist':
-	do_resist()
-elif topic[0] == 'basics':
-	do_basics()
-elif topic[0] == 'time':
-	do_time()
-elif topic[0] == 'timer':
-	do_timer()
-elif topic[0] == 'timer_kill':
-	do_timer_kill()
-elif topic[0] == 'misc':
-	do_misc()
-elif topic[0] == 'exp':
-	do_exp()
-elif topic[0] == 'const':
-	do_const()
-elif topic[0] == 'move':
-	do_move()
-elif topic[0] == 'inv':
-	do_inventory()
-elif topic[0] == 'bed':
-	do_bed()
-elif topic[0] == 'readkey':
-	do_readkey()
-elif topic[0] == 'writekey':
-	do_writekey()
-elif topic[0] == 'speed':
-	do_speed()
-elif topic[0] == 'owner':
-	do_owner()
-elif topic[0] == 'friendlylist':
-	do_friendlylist()
-elif topic[0] == 'create':
-	do_create()
-elif topic[0] == 'directory':
-	do_directory()
-elif topic[0] == 'event':
-	do_event()
-elif topic[0] == 'light':
-	do_light()
-elif topic[0] == 'attacktype':
-	do_attacktype()
-elif topic[0] == 'players':
-	do_players()
-elif topic[0] == 'checkinv':
-	do_checkinv()
-elif topic[0] == 'anim':
-	do_anim()
-elif topic[0] == 'face':
-	do_face()
-elif topic[0] == 'hook':
-	do_hook()
-elif topic[0] == 'checkinventory':
-  do_check_inventory()
-elif topic[0] == 'nosave':
-  do_no_save()
-else:
-	do_help()
+def do_move_to():
+  if whoami.X == 2 and whoami.Y == 2:
+    whoami.WriteKey('dest_x', '0', 1)
+    whoami.WriteKey('dest_y', '4', 1)
+  else:
+    whoami.WriteKey('dest_x', '2', 1)
+    whoami.WriteKey('dest_y', '2', 1)
+
+def handle_say():
+  if whoami.ReadKey('dest_x') != '' or whoami.ReadKey('dest_y') != '':
+    return
+
+  topic = Crossfire.WhatIsMessage().split()
+  #whoami.Say('topic = %s'%topic)
+  #whoami.Say('topic[0] = %s'%topic[0])
+  if topic[0] == 'arch':
+    do_arch()
+  elif topic[0] == 'maps':
+    do_maps()
+  elif topic[0] == 'party':
+    do_party()
+  elif topic[0] == 'region':
+    do_region()
+  elif topic[0] == 'mark':
+    do_marker()
+  elif topic[0] == 'ref':
+    do_activator()
+  elif topic[0] == 'memory':
+    do_memory()
+  elif topic[0] == 'resist':
+    do_resist()
+  elif topic[0] == 'basics':
+    do_basics()
+  elif topic[0] == 'time':
+    do_time()
+  elif topic[0] == 'timer':
+    do_timer()
+  elif topic[0] == 'timer_kill':
+    do_timer_kill()
+  elif topic[0] == 'misc':
+    do_misc()
+  elif topic[0] == 'exp':
+    do_exp()
+  elif topic[0] == 'const':
+    do_const()
+  elif topic[0] == 'move':
+    do_move()
+  elif topic[0] == 'inv':
+    do_inventory()
+  elif topic[0] == 'bed':
+    do_bed()
+  elif topic[0] == 'readkey':
+    do_readkey()
+  elif topic[0] == 'writekey':
+    do_writekey()
+  elif topic[0] == 'speed':
+    do_speed()
+  elif topic[0] == 'owner':
+    do_owner()
+  elif topic[0] == 'friendlylist':
+    do_friendlylist()
+  elif topic[0] == 'create':
+    do_create()
+  elif topic[0] == 'directory':
+    do_directory()
+  elif topic[0] == 'event':
+    do_event()
+  elif topic[0] == 'light':
+    do_light()
+  elif topic[0] == 'attacktype':
+    do_attacktype()
+  elif topic[0] == 'players':
+    do_players()
+  elif topic[0] == 'checkinv':
+    do_checkinv()
+  elif topic[0] == 'anim':
+    do_anim()
+  elif topic[0] == 'face':
+    do_face()
+  elif topic[0] == 'hook':
+    do_hook()
+  elif topic[0] == 'checkinventory':
+    do_check_inventory()
+  elif topic[0] == 'nosave':
+    do_no_save()
+  elif topic[0] == 'move_to':
+    do_move_to()
+  else:
+    do_help()
+
+def handle_time():
+  x = whoami.ReadKey('dest_x')
+  y = whoami.ReadKey('dest_y')
+  if x == '' or y == '':
+    return
+  x = int(x)
+  y = int(y)
+  result = whoami.MoveTo(x, y)
+  if (result == 0):
+    whoami.WriteKey('dest_x', '', 1)
+    whoami.WriteKey('dest_y', '', 1)
+    whoami.Say("I'm there")
+  elif (result == 2):
+    whoami.Say('blocked...')
+
+event = Crossfire.WhatIsEvent()
+if event.Subtype == Crossfire.EventType.SAY:
+  handle_say()
+elif event.Subtype == Crossfire.EventType.TIME:
+  handle_time()
