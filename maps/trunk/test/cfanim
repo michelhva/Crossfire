@@ -4,7 +4,7 @@ width 20
 height 20
 msg
 Created:  2008-05-10 Nicolas Weeger
-Modified: 2010-05-30 Nicolas Weeger
+Modified: 2012-07-08 Nicolas Weeger
 endmsg
 end
 arch pstone_1
@@ -274,6 +274,7 @@ x 3
 y 5
 end
 arch a_townsman2
+name dancer
 x 3
 y 5
 arch event_time
@@ -789,6 +790,18 @@ arch pstone_1
 x 9
 y 3
 end
+arch emerald
+x 9
+y 3
+end
+arch amethyst
+x 9
+y 3
+end
+arch gem
+x 9
+y 3
+end
 arch pstone_1
 x 9
 y 4
@@ -879,6 +892,23 @@ end
 arch pstone_1
 x 10
 y 6
+end
+arch farmer
+name take and drop tester
+msg
+@match *
+Say 'take_drop'
+endmsg
+x 10
+y 6
+arch gem
+end
+arch amethyst
+end
+arch event_say
+title Animator
+slaying /test/cfanim.take.drop.animation
+end
 end
 arch pstone_1
 x 10
@@ -1214,9 +1244,222 @@ arch pstone_1
 x 14
 y 7
 end
-arch conjurer
+arch pstone_1
 x 14
+y 8
+end
+arch pstone_1
+x 14
+y 9
+end
+arch pstone_1
+x 14
+y 10
+end
+arch pstone_1
+x 14
+y 11
+end
+arch pstone_1
+x 14
+y 12
+end
+arch pstone_1
+x 14
+y 13
+end
+arch pstone_1
+x 14
+y 14
+end
+arch pstone_1
+x 14
+y 15
+end
+arch pstone_1
+x 14
+y 16
+end
+arch pstone_1
+x 14
+y 17
+end
+arch pstone_1
+x 14
+y 18
+end
+arch pstone_1
+x 14
+y 19
+end
+arch pstone_1
+x 15
+end
+arch pstone_1
+x 15
+y 1
+end
+arch pstone_1
+x 15
+y 2
+end
+arch pstone_1
+x 15
+y 3
+end
+arch pstone_1
+x 15
+y 4
+end
+arch pstone_1
+x 15
+y 5
+end
+arch pstone_1
+x 15
+y 6
+end
+arch pstone_1
+x 15
 y 7
+end
+arch pstone_1
+x 15
+y 8
+end
+arch pstone_1
+x 15
+y 9
+end
+arch pstone_1
+x 15
+y 10
+end
+arch pstone_1
+x 15
+y 11
+end
+arch pstone_1
+x 15
+y 12
+end
+arch pstone_1
+x 15
+y 13
+end
+arch pstone_1
+x 15
+y 14
+end
+arch pstone_1
+x 15
+y 15
+end
+arch pstone_1
+x 15
+y 16
+end
+arch pstone_1
+x 15
+y 17
+end
+arch pstone_1
+x 15
+y 18
+end
+arch pstone_1
+x 15
+y 19
+end
+arch pstone_1
+x 16
+end
+arch pstone_1
+x 16
+y 1
+end
+arch pstone_1
+x 16
+y 2
+end
+arch pstone_1
+x 16
+y 3
+end
+arch pstone_1
+x 16
+y 4
+end
+arch pstone_1
+x 16
+y 5
+end
+arch pstone_1
+x 16
+y 6
+end
+arch pstone_1
+x 16
+y 7
+end
+arch pstone_1
+x 16
+y 8
+end
+arch pstone_1
+x 16
+y 9
+end
+arch pstone_1
+x 16
+y 10
+end
+arch pstone_1
+x 16
+y 11
+end
+arch pstone_1
+x 16
+y 12
+end
+arch pstone_1
+x 16
+y 13
+end
+arch pstone_1
+x 16
+y 14
+end
+arch pstone_1
+x 16
+y 15
+end
+arch pstone_1
+x 16
+y 16
+end
+arch pstone_1
+x 16
+y 17
+end
+arch pstone_1
+x 16
+y 18
+end
+arch pstone_1
+x 16
+y 19
+end
+arch pstone_1
+x 17
+end
+arch pstone_1
+x 17
+y 1
+end
+arch conjurer
+x 17
+y 1
 stand_still 1
 arch event_say
 title Python
@@ -1230,219 +1473,6 @@ arch event_user
 title Animator
 slaying /test/cfanim.conjurer
 end
-end
-arch pstone_1
-x 14
-y 8
-end
-arch pstone_1
-x 14
-y 9
-end
-arch pstone_1
-x 14
-y 10
-end
-arch pstone_1
-x 14
-y 11
-end
-arch pstone_1
-x 14
-y 12
-end
-arch pstone_1
-x 14
-y 13
-end
-arch pstone_1
-x 14
-y 14
-end
-arch pstone_1
-x 14
-y 15
-end
-arch pstone_1
-x 14
-y 16
-end
-arch pstone_1
-x 14
-y 17
-end
-arch pstone_1
-x 14
-y 18
-end
-arch pstone_1
-x 14
-y 19
-end
-arch pstone_1
-x 15
-end
-arch pstone_1
-x 15
-y 1
-end
-arch pstone_1
-x 15
-y 2
-end
-arch pstone_1
-x 15
-y 3
-end
-arch pstone_1
-x 15
-y 4
-end
-arch pstone_1
-x 15
-y 5
-end
-arch pstone_1
-x 15
-y 6
-end
-arch pstone_1
-x 15
-y 7
-end
-arch pstone_1
-x 15
-y 8
-end
-arch pstone_1
-x 15
-y 9
-end
-arch pstone_1
-x 15
-y 10
-end
-arch pstone_1
-x 15
-y 11
-end
-arch pstone_1
-x 15
-y 12
-end
-arch pstone_1
-x 15
-y 13
-end
-arch pstone_1
-x 15
-y 14
-end
-arch pstone_1
-x 15
-y 15
-end
-arch pstone_1
-x 15
-y 16
-end
-arch pstone_1
-x 15
-y 17
-end
-arch pstone_1
-x 15
-y 18
-end
-arch pstone_1
-x 15
-y 19
-end
-arch pstone_1
-x 16
-end
-arch pstone_1
-x 16
-y 1
-end
-arch pstone_1
-x 16
-y 2
-end
-arch pstone_1
-x 16
-y 3
-end
-arch pstone_1
-x 16
-y 4
-end
-arch pstone_1
-x 16
-y 5
-end
-arch pstone_1
-x 16
-y 6
-end
-arch pstone_1
-x 16
-y 7
-end
-arch pstone_1
-x 16
-y 8
-end
-arch pstone_1
-x 16
-y 9
-end
-arch pstone_1
-x 16
-y 10
-end
-arch pstone_1
-x 16
-y 11
-end
-arch pstone_1
-x 16
-y 12
-end
-arch pstone_1
-x 16
-y 13
-end
-arch pstone_1
-x 16
-y 14
-end
-arch pstone_1
-x 16
-y 15
-end
-arch pstone_1
-x 16
-y 16
-end
-arch pstone_1
-x 16
-y 17
-end
-arch pstone_1
-x 16
-y 18
-end
-arch pstone_1
-x 16
-y 19
-end
-arch pstone_1
-x 17
-end
-arch pstone_1
-x 17
-y 1
 end
 arch pstone_1
 x 17
