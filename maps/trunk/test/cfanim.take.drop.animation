@@ -1,0 +1,21 @@
+[Config]
+name= CFAnim take and drop test
+victimtype= object
+victim= who
+unique= no
+always_delete= no
+paralyzed= yes
+time_representation= second
+errors_allowed= yes
+verbose= yes
+animation= take_drop
+invisible= no
+wizard= no
+[take_drop]
+0 say I'll go fetch an emerald for you.
+1 moveto 9 3
+1 pickup_object emerald
+1 moveto 10 7
+1 drop_object emerald
+1 moveto 10 6
+0 say here you go.
