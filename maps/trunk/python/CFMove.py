@@ -21,34 +21,6 @@
 dir_x = [  0, 0, 1, 1, 1, 0, -1, -1, -1 ]
 dir_y = [ 0, -1, -1, 0, 1, 1, 1, 0, -1 ]
 
-def coordinates_to_dir(x, y):
-	'''This returns, for the specified offsets, the direction to move to get there.'''
-	q = 0
-	if(y == 0):
-		q = -300 * x;
-	else:
-		q = int(x * 100 / y);
-	if(y>0):
-		if(q < -242):
-			return 3
-		if (q < -41):
-			return 2
-		if (q < 41):
-			return 1
-		if (q < 242):
-			return 8 ;
-		return 7
-
-	if (q < -242):
-		return 7
-	if (q < -41):
-		return 6
-	if (q < 41):
-		return 5
-	if (q < 242):
-		return 4
-	return 3
-
 def get_object_to(obj, x, y):
 	'''This tries to move obj to the (x, y) location.
 	Return value is:
@@ -56,7 +28,5 @@ def get_object_to(obj, x, y):
 	 * 1: object moved towards the goal
 	 * 2: object's movement was blocked.
 	 '''
-	if obj.X == x and obj.Y == y:
-		return 0
 	# Move returns 0 for couldn't move, 1 for moved.
-	return 2 - obj.Move(coordinates_to_dir(obj.X - x, obj.Y - y))
+	return obj.MoveTo(x, y)
