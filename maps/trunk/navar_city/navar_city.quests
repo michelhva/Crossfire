@@ -173,3 +173,37 @@ end_description
 end_step
 end_quest
 
+quest navar/Iscar-pen
+title The writing pen
+face stylus.111
+description
+Iscar, a writer, lost his writing pen and needs a replacement.
+end_description
+step 10
+description
+I have to get a pen from Hasphatois, a smith in the mining town north of Navar, easy to find if I follow the road.
+end_description
+end_step
+step 20
+description
+Hasphatois asks for some graphite, which I can get from Pikorme who is in the mines on the west of the town.
+end_description
+end_step
+step 30
+description
+I found some graphite, I can talk to Hasphatois again.
+end_description
+end_step
+step 40
+description
+I have Iscar's pen, I should bring it back.
+end_description
+end_step
+step 50
+finishes_quest
+description
+Iscar can again write his novel, he's happy.
+end_description
+end_step
+end_quest
+

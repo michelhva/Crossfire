@@ -8,7 +8,7 @@ enter_x 2
 enter_y 9
 msg
 Created:  2008-02-09 Nicolas Weeger
-Modified: 2012-02-14 Rick Tanner
+Modified: 2012-07-08 Nicolas Weeger
 endmsg
 end
 arch whiteslate
@@ -237,6 +237,20 @@ endmsg
 x 3
 y 5
 speed 0.1
+arch npc_dialog
+name /navar_city/iscar.msg
+end
+arch NPCGift
+name reward
+arch card
+name Iscar's autograph
+msg
+The signature is complex, but you manage to read "from Iscar, to his great fan".
+endmsg
+value 0
+identified 1
+end
+end
 end
 arch whiteslate
 x 3
