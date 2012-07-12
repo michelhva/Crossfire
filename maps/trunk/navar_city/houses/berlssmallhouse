@@ -2,329 +2,834 @@ arch map
 name Berl's Small House
 difficulty 1
 region navar
-width 7
-height 8
-enter_x 4
-enter_y 5
+width 13
+height 12
+enter_x 8
+enter_y 8
 msg
 Created:  2012-03-20 Rick Tanner
-Modified: 2012-05-16 Rick Tanner
+Modified: 2012-07-12 Rick Tanner
 endmsg
 end
-arch blocked
+arch cobblestones2
 end
-arch blocked
+arch cobblestones2
 y 1
 end
-arch blocked
+arch cobblestones2
 y 2
 end
-arch blocked
+arch cobblestones2
 y 3
 end
-arch blocked
+arch cobblestones2
 y 4
 end
-arch blocked
+arch cobblestones2
 y 5
 end
-arch blocked
+arch cobblestones2
 y 6
 end
-arch blocked
+arch cobblestones2
 y 7
 end
-arch blocked
+arch cobblestones2
+y 8
+end
+arch cobblestones2
+y 9
+end
+arch cobblestones2
+y 10
+end
+arch cobblestones2
+y 11
+end
+arch cobblestones2
 x 1
 end
-arch woodfloor
+arch grass_only
 x 1
 y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch cobblestones2
+x 2
+end
+arch grass_only
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
 end
 arch bwall_2_2_2
-x 1
-y 1
-end
-arch woodfloor
-x 1
-y 2
-end
-arch bwall_2_1_1
-x 1
+x 2
 y 2
 end
 arch woodfloor
-x 1
+x 2
 y 3
 end
 arch bwall_2_1_1
-x 1
+x 2
 y 3
 end
 arch woodfloor
-x 1
+x 2
 y 4
 end
 arch bwall_2_1_1
-x 1
+x 2
 y 4
 end
 arch woodfloor
-x 1
+x 2
 y 5
 end
 arch bwall_2_1_1
-x 1
+x 2
 y 5
 end
 arch woodfloor
-x 1
+x 2
 y 6
 end
-arch bwall_2_2_1
-x 1
+arch bwall_2_1_1
+x 2
 y 6
 end
-arch blocked
-x 1
+arch woodfloor
+x 2
 y 7
 end
-arch blocked
+arch bwall_2_1_1
 x 2
+y 7
 end
 arch woodfloor
 x 2
+y 8
+end
+arch bwall_2_1_1
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch bwall_2_2_1
+x 2
+y 9
+end
+arch grass_only
+x 2
+y 10
+end
+arch grass_only
+x 2
+y 11
+end
+arch cobblestones2
+x 3
+end
+arch grass_only
+x 3
 y 1
 end
+arch woodfloor
+x 3
+y 2
+end
 arch bwall_2_1_2
-x 2
-y 1
+x 3
+y 2
 end
 arch creator
 other_arch angry_floor
-x 2
-y 2
+x 3
+y 3
 connected 12
 end
 arch woodfloor
-x 2
-y 2
+x 3
+y 3
 end
 arch chair_1.1
-x 2
-y 2
+x 3
+y 3
 end
 arch dwarf_wiz
 name Berl the Dwarf Wizard
-x 2
-y 2
-end
-arch woodfloor
-x 2
+x 3
 y 3
 end
 arch woodfloor
-x 2
+x 3
 y 4
 end
 arch woodfloor
-x 2
+x 3
 y 5
 end
-arch pedestal
-x 2
+arch woodfloor
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch table_3
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch chair_1.3
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch bwall_2_1_2
+x 3
+y 9
+end
+arch grass_only
+x 3
+y 10
+end
+arch grass_only
+x 3
+y 11
+end
+arch cobblestones2
+x 4
+end
+arch grass_only
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch bwall_2_1_2
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch table_4
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
 y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch bwall_2_1_2
+x 4
+y 9
+end
+arch grass_only
+x 4
+y 10
+end
+arch grass_only
+x 4
+y 11
+end
+arch cobblestones2
+x 5
+end
+arch grass_only
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch bwall_2_1_2
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch pedestal
+x 5
+y 3
 invisible 1
 connected 12
 end
 arch chest
-x 2
-y 5
-end
-arch woodfloor
-x 2
-y 6
-end
-arch bwall_2_1_2
-x 2
-y 6
-end
-arch blocked
-x 2
-y 7
-end
-arch blocked
-x 3
-end
-arch woodfloor
-x 3
-y 1
-end
-arch bwall_2_1_2
-x 3
-y 1
-end
-arch woodfloor
-x 3
-y 2
-end
-arch table_4
-x 3
-y 2
-end
-arch woodfloor
-x 3
+x 5
 y 3
 end
 arch woodfloor
-x 3
+x 5
 y 4
 end
 arch woodfloor
-x 3
+x 5
 y 5
 end
 arch woodfloor
-x 3
+x 5
 y 6
 end
-arch bwall_2_1_2
-x 3
+arch barrel
+x 5
 y 6
 end
-arch blocked
-x 3
+arch woodfloor
+x 5
 y 7
 end
-arch blocked
-x 4
+arch woodfloor
+x 5
+y 8
 end
 arch woodfloor
-x 4
-y 1
+x 5
+y 9
 end
 arch bwall_2_1_2
-x 4
+x 5
+y 9
+end
+arch grass_only
+x 5
+y 10
+end
+arch grass_only
+x 5
+y 11
+end
+arch cobblestones2
+x 6
+end
+arch grass_only
+x 6
 y 1
 end
 arch woodfloor
-x 4
+x 6
+y 2
+end
+arch bwall_3_3
+x 6
 y 2
 end
 arch woodfloor
-x 4
+x 6
+y 3
+end
+arch bwall_2_1_1
+x 6
 y 3
 end
 arch woodfloor
-x 4
+x 6
+y 4
+end
+arch bwall_2_1_1
+x 6
 y 4
 end
 arch woodfloor
-x 4
+x 6
 y 5
 end
-arch oakdoor
+arch bwall_2_1_1
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch bwall_2_2_1
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch bwall_2_1_2
+x 6
+y 9
+end
+arch grass_only
+x 6
+y 10
+end
+arch grass_only
+x 6
+y 11
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch bwall_2_1_2
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch bed_1
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch table
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch bwall_2_1_2
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch bwall_1_3
+x 7
+y 9
+end
+arch dungeon_magic
+x 7
+y 10
+end
+arch grass_only
+x 7
+y 10
+move_block all
+end
+arch grass_only
+x 7
+y 11
+end
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch bwall_2_1_2
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch bwall_1_3
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch oakdoor_2
 slaying /world/world_121_116
 hp 41
 sp 44
-x 4
-y 5
+x 8
+y 9
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch grass_only
+x 8
+y 10
+move_block all
+end
+arch grass_only
+x 8
+y 11
+end
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
+y 1
 end
 arch woodfloor
-x 4
-y 6
+x 9
+y 2
 end
 arch bwall_2_1_2
-x 4
-y 6
-end
-arch blocked
-x 4
-y 7
-end
-arch blocked
-x 5
+x 9
+y 2
 end
 arch woodfloor
-x 5
+x 9
+y 3
+end
+arch desk
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch chair_1.3
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch door_2
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch bwall_1_4
+x 9
+y 9
+end
+arch dungeon_magic
+x 9
+y 10
+end
+arch grass_only
+x 9
+y 10
+move_block all
+end
+arch grass_only
+x 9
+y 11
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
 y 1
+end
+arch woodfloor
+x 10
+y 2
 end
 arch bwall_2_2_3
-x 5
-y 1
-end
-arch woodfloor
-x 5
-y 2
-end
-arch bwall_2_1_1
-x 5
+x 10
 y 2
 end
 arch woodfloor
-x 5
+x 10
 y 3
 end
 arch bwall_2_1_1
-x 5
+x 10
 y 3
 end
 arch woodfloor
-x 5
+x 10
 y 4
 end
 arch bwall_2_1_1
-x 5
+x 10
 y 4
 end
 arch woodfloor
-x 5
+x 10
 y 5
 end
 arch bwall_2_1_1
-x 5
+x 10
 y 5
 end
 arch woodfloor
-x 5
+x 10
 y 6
+end
+arch bwall_2_1_1
+x 10
+y 6
+end
+arch woodfloor
+x 10
+y 7
+end
+arch bwall_2_1_1
+x 10
+y 7
+end
+arch woodfloor
+x 10
+y 8
+end
+arch bwall_2_1_1
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 9
 end
 arch bwall_2_2_4
-x 5
-y 6
+x 10
+y 9
 end
-arch blocked
-x 5
-y 7
+arch grass_only
+x 10
+y 10
 end
-arch blocked
-x 6
+arch grass_only
+x 10
+y 11
 end
-arch blocked
-x 6
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
 y 1
 end
-arch blocked
-x 6
+arch grass_only
+x 11
 y 2
 end
-arch blocked
-x 6
+arch grass_only
+x 11
 y 3
 end
-arch blocked
-x 6
+arch grass_only
+x 11
 y 4
 end
-arch blocked
-x 6
+arch grass_only
+x 11
 y 5
 end
-arch blocked
-x 6
+arch grass_only
+x 11
 y 6
 end
-arch blocked
-x 6
+arch grass_only
+x 11
 y 7
+end
+arch grass_only
+x 11
+y 8
+end
+arch grass_only
+x 11
+y 9
+end
+arch grass_only
+x 11
+y 10
+end
+arch grass_only
+x 11
+y 11
+end
+arch cobblestones2
+x 12
+end
+arch grass_only
+x 12
+y 1
+end
+arch grass_only
+x 12
+y 2
+end
+arch grass_only
+x 12
+y 3
+end
+arch grass_only
+x 12
+y 4
+end
+arch grass_only
+x 12
+y 5
+end
+arch grass_only
+x 12
+y 6
+end
+arch grass_only
+x 12
+y 7
+end
+arch grass_only
+x 12
+y 8
+end
+arch grass_only
+x 12
+y 9
+end
+arch grass_only
+x 12
+y 10
+end
+arch grass_only
+x 12
+y 11
 end
