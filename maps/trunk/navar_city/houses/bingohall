@@ -2,728 +2,1251 @@ arch map
 name Bingo Hall
 difficulty 2
 region navar
-width 14
-height 10
-enter_x 2
-enter_y 7
+width 16
+height 20
+enter_x 11
+enter_y 16
 msg
 Created:  2012-05-19 Rick Tanner
-Modified: 2012-05-19 Rick Tanner
+Modified: 2012-07-13 Rick Tanner
 endmsg
 end
-arch blocked
+arch cobblestones2
 end
-arch blocked
+arch cobblestones2
 y 1
 end
-arch blocked
+arch cobblestones2
 y 2
 end
-arch blocked
+arch cobblestones2
 y 3
 end
-arch blocked
+arch cobblestones2
 y 4
 end
-arch blocked
+arch cobblestones2
 y 5
 end
-arch blocked
+arch cobblestones2
 y 6
 end
-arch blocked
+arch cobblestones2
 y 7
 end
-arch blocked
+arch cobblestones2
 y 8
 end
-arch blocked
+arch cobblestones2
 y 9
 end
-arch blocked
+arch cobblestones2
+y 10
+end
+arch cobblestones2
+y 11
+end
+arch cobblestones2
+y 12
+end
+arch cobblestones2
+y 13
+end
+arch cobblestones2
+y 14
+end
+arch cobblestones2
+y 15
+end
+arch cobblestones2
+y 16
+end
+arch cobblestones2
+y 17
+end
+arch cobblestones2
+y 18
+end
+arch cobblestones2
+y 19
+end
+arch cobblestones2
 x 1
 end
-arch woodfloor2
+arch grass_only
 x 1
 y 1
 end
-arch wall_2_2_2
-x 1
-y 1
-end
-arch woodfloor2
+arch grass_only
 x 1
 y 2
 end
-arch wall_2_1_1
-x 1
-y 2
-end
-arch woodfloor2
+arch grass_only
 x 1
 y 3
 end
-arch wall_2_1_1
-x 1
-y 3
-end
-arch woodfloor2
+arch grass_only
 x 1
 y 4
 end
-arch wall_2_1_1
-x 1
-y 4
-end
-arch woodfloor2
+arch grass_only
 x 1
 y 5
 end
-arch wall_2_1_1
-x 1
-y 5
-end
-arch woodfloor2
+arch grass_only
 x 1
 y 6
 end
-arch wall_2_1_1
-x 1
-y 6
-end
-arch woodfloor2
+arch grass_only
 x 1
 y 7
 end
-arch wall_2_1_1
-x 1
-y 7
-end
-arch woodfloor2
+arch grass_only
 x 1
 y 8
 end
-arch wall_2_2_1
-x 1
-y 8
-end
-arch blocked
+arch grass_only
 x 1
 y 9
 end
-arch blocked
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
+arch grass_only
+x 1
+y 14
+end
+arch grass_only
+x 1
+y 15
+end
+arch grass_only
+x 1
+y 16
+end
+arch grass_only
+x 1
+y 17
+end
+arch grass_only
+x 1
+y 18
+end
+arch grass_only
+x 1
+y 19
+end
+arch cobblestones2
 x 2
+end
+arch grass_only
+x 2
+y 1
 end
 arch woodfloor2
 x 2
+y 2
+end
+arch wwall_2_2_2
+x 2
+y 2
+end
+arch woodfloor2
+x 2
+y 3
+end
+arch wwall_2_1_1
+x 2
+y 3
+end
+arch woodfloor2
+x 2
+y 4
+end
+arch wwall_2_1_1
+x 2
+y 4
+end
+arch woodfloor2
+x 2
+y 5
+end
+arch wwall_2_1_1
+x 2
+y 5
+end
+arch woodfloor2
+x 2
+y 6
+end
+arch wwall_2_1_1
+x 2
+y 6
+end
+arch woodfloor2
+x 2
+y 7
+end
+arch wwall_2_1_1
+x 2
+y 7
+end
+arch woodfloor2
+x 2
+y 8
+end
+arch wwall_2_1_1
+x 2
+y 8
+end
+arch woodfloor2
+x 2
+y 9
+end
+arch wwall_2_1_1
+x 2
+y 9
+end
+arch woodfloor2
+x 2
+y 10
+end
+arch wwall_win1
+x 2
+y 10
+end
+arch woodfloor2
+x 2
+y 11
+end
+arch wwall_2_1_1
+x 2
+y 11
+end
+arch woodfloor2
+x 2
+y 12
+end
+arch wwall_2_1_1
+x 2
+y 12
+end
+arch woodfloor2
+x 2
+y 13
+end
+arch wwall_2_1_1
+x 2
+y 13
+end
+arch woodfloor2
+x 2
+y 14
+end
+arch wwall_2_1_1
+x 2
+y 14
+end
+arch woodfloor2
+x 2
+y 15
+end
+arch wwall_2_1_1
+x 2
+y 15
+end
+arch woodfloor2
+x 2
+y 16
+end
+arch wwall_2_1_1
+x 2
+y 16
+end
+arch woodfloor2
+x 2
+y 17
+end
+arch wwall_2_2_1
+x 2
+y 17
+end
+arch grass_only
+x 2
+y 18
+end
+arch grass_only
+x 2
+y 19
+end
+arch cobblestones2
+x 3
+end
+arch grass_only
+x 3
 y 1
 end
-arch wall_2_1_2
-x 2
-y 1
+arch woodfloor2
+x 3
+y 2
+end
+arch wwall_2_1_2
+x 3
+y 2
 end
 arch creator
 other_arch angry_floor
-x 2
-y 2
+x 3
+y 3
 connected 6
 end
 arch woodfloor2
-x 2
-y 2
+x 3
+y 3
 end
 arch chair_1.1
-x 2
-y 2
-end
-arch creator
-other_arch angry_floor
-x 2
-y 3
-connected 6
-end
-arch woodfloor2
-x 2
+x 3
 y 3
 end
 arch creator
 other_arch angry_floor
-x 2
+x 3
 y 4
 connected 6
 end
 arch woodfloor2
-x 2
-y 4
-end
-arch table_3
-x 2
+x 3
 y 4
 end
 arch creator
 other_arch angry_floor
-x 2
+x 3
 y 5
 connected 6
 end
 arch woodfloor2
-x 2
+x 3
 y 5
 end
-arch table_3
-x 2
+arch flowers_permanent
+x 3
 y 5
 end
 arch creator
 other_arch angry_floor
-x 2
+x 3
 y 6
 connected 6
 end
 arch woodfloor2
-x 2
+x 3
 y 6
+end
+arch creator
+other_arch angry_floor
+x 3
+y 7
+connected 6
+end
+arch woodfloor2
+x 3
+y 7
 end
 arch child
-x 2
-y 6
-end
-arch woodfloor2
-x 2
+x 3
 y 7
 end
-arch oakdoor
-slaying /world/world_121_117
-hp 48
-sp 4
-x 2
-y 7
+arch creator
+other_arch angry_floor
+x 3
+y 8
+connected 6
 end
 arch woodfloor2
-x 2
+x 3
 y 8
 end
-arch wall_2_1_2
-x 2
+arch chair_1.4
+x 3
 y 8
 end
-arch blocked
-x 2
+arch creator
+other_arch angry_floor
+x 3
 y 9
-end
-arch blocked
-x 3
-end
-arch woodfloor2
-x 3
-y 1
-end
-arch wall_2_1_2
-x 3
-y 1
-end
-arch creator
-other_arch angry_floor
-x 3
-y 2
 connected 6
 end
 arch woodfloor2
-x 3
-y 2
-end
-arch creator
-other_arch angry_floor
-x 3
-y 3
-connected 6
-end
-arch woodfloor2
-x 3
-y 3
-end
-arch creator
-other_arch angry_floor
-x 3
-y 4
-connected 6
-end
-arch woodfloor2
-x 3
-y 4
-end
-arch chair_1.1
-x 3
-y 4
-end
-arch a_townsman3
-x 3
-y 4
-end
-arch creator
-other_arch angry_floor
-x 3
-y 5
-connected 6
-end
-arch woodfloor2
-x 3
-y 5
-end
-arch chair_1.1
-x 3
-y 5
-end
-arch veiled_woman
-x 3
-y 5
-end
-arch creator
-other_arch angry_floor
-x 3
-y 6
-connected 6
-end
-arch woodfloor2
-x 3
-y 6
-end
-arch creator
-other_arch angry_floor
-x 3
-y 7
-connected 6
-end
-arch woodfloor2
-x 3
-y 7
-end
-arch woodfloor2
-x 3
-y 8
-end
-arch wall_2_1_2
-x 3
-y 8
-end
-arch blocked
 x 3
 y 9
 end
-arch blocked
+arch creator
+other_arch angry_floor
+x 3
+y 10
+connected 6
+end
+arch woodfloor2
+x 3
+y 10
+end
+arch chair_1.4
+x 3
+y 10
+end
+arch creator
+other_arch angry_floor
+x 3
+y 11
+connected 6
+end
+arch woodfloor2
+x 3
+y 11
+end
+arch creator
+other_arch angry_floor
+x 3
+y 12
+connected 6
+end
+arch woodfloor2
+x 3
+y 12
+end
+arch chair_1.4
+x 3
+y 12
+end
+arch creator
+other_arch angry_floor
+x 3
+y 13
+connected 6
+end
+arch woodfloor2
+x 3
+y 13
+end
+arch creator
+other_arch angry_floor
+x 3
+y 14
+connected 6
+end
+arch woodfloor2
+x 3
+y 14
+end
+arch chair_1.4
+x 3
+y 14
+end
+arch creator
+other_arch angry_floor
+x 3
+y 15
+connected 6
+end
+arch woodfloor2
+x 3
+y 15
+end
+arch creator
+other_arch angry_floor
+x 3
+y 16
+connected 6
+end
+arch woodfloor2
+x 3
+y 16
+end
+arch chair_1.4
+x 3
+y 16
+end
+arch woodfloor2
+x 3
+y 17
+end
+arch wwall_2_1_2
+x 3
+y 17
+end
+arch grass_only
+x 3
+y 18
+end
+arch grass_only
+x 3
+y 19
+end
+arch cobblestones2
 x 4
+end
+arch grass_only
+x 4
+y 1
 end
 arch woodfloor2
 x 4
-y 1
+y 2
 end
-arch wall_2_1_2
+arch wwall_win2
 x 4
-y 1
+y 2
 end
 arch creator
 other_arch angry_floor
 x 4
-y 2
+y 3
 connected 6
 end
 arch woodfloor2
 x 4
+y 3
+end
+arch creator
+other_arch angry_floor
+x 4
+y 4
+connected 6
+end
+arch woodfloor2
+x 4
+y 4
+end
+arch creator
+other_arch angry_floor
+x 4
+y 5
+connected 6
+end
+arch woodfloor2
+x 4
+y 5
+end
+arch creator
+other_arch angry_floor
+x 4
+y 6
+connected 6
+end
+arch woodfloor2
+x 4
+y 6
+end
+arch creator
+other_arch angry_floor
+x 4
+y 7
+connected 6
+end
+arch woodfloor2
+x 4
+y 7
+end
+arch creator
+other_arch angry_floor
+x 4
+y 8
+connected 6
+end
+arch woodfloor2
+x 4
+y 8
+end
+arch creator
+other_arch angry_floor
+x 4
+y 9
+connected 6
+end
+arch woodfloor2
+x 4
+y 9
+end
+arch creator
+other_arch angry_floor
+x 4
+y 10
+connected 6
+end
+arch woodfloor2
+x 4
+y 10
+end
+arch creator
+other_arch angry_floor
+x 4
+y 11
+connected 6
+end
+arch woodfloor2
+x 4
+y 11
+end
+arch creator
+other_arch angry_floor
+x 4
+y 12
+connected 6
+end
+arch woodfloor2
+x 4
+y 12
+end
+arch creator
+other_arch angry_floor
+x 4
+y 13
+connected 6
+end
+arch woodfloor2
+x 4
+y 13
+end
+arch creator
+other_arch angry_floor
+x 4
+y 14
+connected 6
+end
+arch woodfloor2
+x 4
+y 14
+end
+arch creator
+other_arch angry_floor
+x 4
+y 15
+connected 6
+end
+arch woodfloor2
+x 4
+y 15
+end
+arch creator
+other_arch angry_floor
+x 4
+y 16
+connected 6
+end
+arch woodfloor2
+x 4
+y 16
+end
+arch woodfloor2
+x 4
+y 17
+end
+arch wwall_2_1_2
+x 4
+y 17
+end
+arch grass_only
+x 4
+y 18
+end
+arch grass_only
+x 4
+y 19
+end
+arch cobblestones2
+x 5
+end
+arch grass_only
+x 5
+y 1
+end
+arch woodfloor2
+x 5
 y 2
+end
+arch wwall_2_1_2
+x 5
+y 2
+end
+arch creator
+other_arch angry_floor
+x 5
+y 3
+connected 6
+end
+arch woodfloor2
+x 5
+y 3
 end
 arch chair_1.1
-x 4
-y 2
-end
-arch creator
-other_arch angry_floor
-x 4
-y 3
-connected 6
-end
-arch woodfloor2
-x 4
+x 5
 y 3
 end
 arch creator
 other_arch angry_floor
-x 4
+x 5
 y 4
 connected 6
 end
 arch woodfloor2
-x 4
+x 5
 y 4
+end
+arch creator
+other_arch angry_floor
+x 5
+y 5
+connected 6
+end
+arch woodfloor2
+x 5
+y 5
+end
+arch creator
+other_arch angry_floor
+x 5
+y 6
+connected 6
+end
+arch woodfloor2
+x 5
+y 6
+end
+arch creator
+other_arch angry_floor
+x 5
+y 7
+connected 6
+end
+arch woodfloor2
+x 5
+y 7
+end
+arch creator
+other_arch angry_floor
+x 5
+y 8
+connected 6
+end
+arch woodfloor2
+x 5
+y 8
+end
+arch creator
+other_arch angry_floor
+x 5
+y 9
+connected 6
+end
+arch woodfloor2
+x 5
+y 9
 end
 arch table_3
-x 4
-y 4
-end
-arch creator
-other_arch angry_floor
-x 4
-y 5
-connected 6
-end
-arch woodfloor2
-x 4
-y 5
-end
-arch table_3
-x 4
-y 5
-end
-arch creator
-other_arch angry_floor
-x 4
-y 6
-connected 6
-end
-arch woodfloor2
-x 4
-y 6
-end
-arch creator
-other_arch angry_floor
-x 4
-y 7
-connected 6
-end
-arch woodfloor2
-x 4
-y 7
-end
-arch chair_1.1
-x 4
-y 7
-end
-arch woodfloor2
-x 4
-y 8
-end
-arch wall_2_1_2
-x 4
-y 8
-end
-arch blocked
-x 4
+x 5
 y 9
 end
-arch blocked
-x 5
-end
-arch woodfloor2
-x 5
-y 1
-end
-arch wall_2_1_2
-x 5
-y 1
-end
 arch creator
 other_arch angry_floor
 x 5
-y 2
+y 10
 connected 6
 end
 arch woodfloor2
 x 5
-y 2
+y 10
 end
 arch creator
 other_arch angry_floor
 x 5
+y 11
+connected 6
+end
+arch woodfloor2
+x 5
+y 11
+end
+arch table_3
+x 5
+y 11
+end
+arch creator
+other_arch angry_floor
+x 5
+y 12
+connected 6
+end
+arch woodfloor2
+x 5
+y 12
+end
+arch creator
+other_arch angry_floor
+x 5
+y 13
+connected 6
+end
+arch woodfloor2
+x 5
+y 13
+end
+arch table_3
+x 5
+y 13
+end
+arch creator
+other_arch angry_floor
+x 5
+y 14
+connected 6
+end
+arch woodfloor2
+x 5
+y 14
+end
+arch creator
+other_arch angry_floor
+x 5
+y 15
+connected 6
+end
+arch woodfloor2
+x 5
+y 15
+end
+arch table_3
+x 5
+y 15
+end
+arch creator
+other_arch angry_floor
+x 5
+y 16
+connected 6
+end
+arch woodfloor2
+x 5
+y 16
+end
+arch woodfloor2
+x 5
+y 17
+end
+arch wwall_2_1_2
+x 5
+y 17
+end
+arch grass_only
+x 5
+y 18
+end
+arch grass_only
+x 5
+y 19
+end
+arch cobblestones2
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch woodfloor2
+x 6
+y 2
+end
+arch wwall_2_1_2
+x 6
+y 2
+end
+arch creator
+other_arch angry_floor
+x 6
 y 3
 connected 6
 end
 arch woodfloor2
-x 5
+x 6
 y 3
 end
 arch creator
 other_arch angry_floor
-x 5
+x 6
 y 4
 connected 6
 end
 arch woodfloor2
-x 5
+x 6
 y 4
+end
+arch creator
+other_arch angry_floor
+x 6
+y 5
+connected 6
+end
+arch woodfloor2
+x 6
+y 5
+end
+arch creator
+other_arch angry_floor
+x 6
+y 6
+connected 6
+end
+arch woodfloor2
+x 6
+y 6
+end
+arch creator
+other_arch angry_floor
+x 6
+y 7
+connected 6
+end
+arch woodfloor2
+x 6
+y 7
+end
+arch creator
+other_arch angry_floor
+x 6
+y 8
+connected 6
+end
+arch woodfloor2
+x 6
+y 8
+end
+arch creator
+other_arch angry_floor
+x 6
+y 9
+connected 6
+end
+arch woodfloor2
+x 6
+y 9
 end
 arch chair_1.1
-x 5
-y 4
+x 6
+y 9
 end
 arch crone
-x 5
-y 4
-end
-arch creator
-other_arch angry_floor
-x 5
-y 5
-connected 6
-end
-arch woodfloor2
-x 5
-y 5
-end
-arch chair_1.1
-x 5
-y 5
-end
-arch creator
-other_arch angry_floor
-x 5
-y 6
-connected 6
-end
-arch woodfloor2
-x 5
-y 6
-end
-arch creator
-other_arch angry_floor
-x 5
-y 7
-connected 6
-end
-arch woodfloor2
-x 5
-y 7
-end
-arch woodfloor2
-x 5
-y 8
-end
-arch wall_2_1_2
-x 5
-y 8
-end
-arch blocked
-x 5
+x 6
 y 9
 end
-arch blocked
-x 6
-end
-arch woodfloor2
-x 6
-y 1
-end
-arch wall_2_1_2
-x 6
-y 1
-end
 arch creator
 other_arch angry_floor
 x 6
-y 2
+y 10
 connected 6
 end
 arch woodfloor2
 x 6
-y 2
+y 10
+end
+arch creator
+other_arch angry_floor
+x 6
+y 11
+connected 6
+end
+arch woodfloor2
+x 6
+y 11
+end
+arch creator
+other_arch angry_floor
+x 6
+y 12
+connected 6
+end
+arch woodfloor2
+x 6
+y 12
+end
+arch creator
+other_arch angry_floor
+x 6
+y 13
+connected 6
+end
+arch woodfloor2
+x 6
+y 13
 end
 arch chair_1.1
 x 6
+y 13
+end
+arch a_townsman3
+x 6
+y 13
+end
+arch creator
+other_arch angry_floor
+x 6
+y 14
+connected 6
+end
+arch woodfloor2
+x 6
+y 14
+end
+arch creator
+other_arch angry_floor
+x 6
+y 15
+connected 6
+end
+arch woodfloor2
+x 6
+y 15
+end
+arch chair_1.1
+x 6
+y 15
+end
+arch veiled_woman
+x 6
+y 15
+end
+arch creator
+other_arch angry_floor
+x 6
+y 16
+connected 6
+end
+arch woodfloor2
+x 6
+y 16
+end
+arch woodfloor2
+x 6
+y 17
+end
+arch wwall_win2
+x 6
+y 17
+end
+arch grass_only
+x 6
+y 18
+end
+arch grass_only
+x 6
+y 19
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch woodfloor2
+x 7
 y 2
+end
+arch wwall_2_1_2
+x 7
+y 2
+end
+arch creator
+other_arch angry_floor
+x 7
+y 3
+connected 6
+end
+arch woodfloor2
+x 7
+y 3
+end
+arch chair_1.1
+x 7
+y 3
 end
 arch veiled_woman3
-x 6
-y 2
-end
-arch creator
-other_arch angry_floor
-x 6
-y 3
-connected 6
-end
-arch woodfloor2
-x 6
+x 7
 y 3
 end
 arch creator
 other_arch angry_floor
-x 6
+x 7
 y 4
 connected 6
 end
 arch woodfloor2
-x 6
-y 4
-end
-arch table_3
-x 6
+x 7
 y 4
 end
 arch creator
 other_arch angry_floor
-x 6
+x 7
 y 5
 connected 6
 end
 arch woodfloor2
-x 6
+x 7
 y 5
 end
 arch table_3
-x 6
+x 7
 y 5
 end
 arch creator
 other_arch angry_floor
-x 6
+x 7
 y 6
 connected 6
 end
 arch woodfloor2
-x 6
+x 7
 y 6
 end
 arch creator
 other_arch angry_floor
-x 6
+x 7
 y 7
 connected 6
 end
 arch woodfloor2
-x 6
+x 7
 y 7
 end
-arch chair_1.1
-x 6
-y 7
+arch creator
+other_arch angry_floor
+x 7
+y 8
+connected 6
 end
 arch woodfloor2
-x 6
+x 7
 y 8
 end
-arch wall_2_1_2
-x 6
-y 8
-end
-arch blocked
-x 6
+arch creator
+other_arch angry_floor
+x 7
 y 9
-end
-arch blocked
-x 7
-end
-arch woodfloor2
-x 7
-y 1
-end
-arch wall_2_1_2
-x 7
-y 1
-end
-arch creator
-other_arch angry_floor
-x 7
-y 2
 connected 6
 end
 arch woodfloor2
-x 7
-y 2
-end
-arch creator
-other_arch angry_floor
-x 7
-y 3
-connected 6
-end
-arch woodfloor2
-x 7
-y 3
-end
-arch creator
-other_arch angry_floor
-x 7
-y 4
-connected 6
-end
-arch woodfloor2
-x 7
-y 4
-end
-arch chair_1.1
-x 7
-y 4
-end
-arch a_townsman
-x 7
-y 4
-end
-arch creator
-other_arch angry_floor
-x 7
-y 5
-connected 6
-end
-arch woodfloor2
-x 7
-y 5
-end
-arch chair_1.1
-x 7
-y 5
-end
-arch creator
-other_arch angry_floor
-x 7
-y 6
-connected 6
-end
-arch woodfloor2
-x 7
-y 6
-end
-arch creator
-other_arch angry_floor
-x 7
-y 7
-connected 6
-end
-arch woodfloor2
-x 7
-y 7
-end
-arch woodfloor2
-x 7
-y 8
-end
-arch wall_2_1_2
-x 7
-y 8
-end
-arch blocked
 x 7
 y 9
 end
-arch blocked
-x 8
-end
-arch woodfloor2
-x 8
-y 1
-end
-arch wall_2_1_2
-x 8
-y 1
-end
 arch creator
 other_arch angry_floor
-x 8
-y 2
+x 7
+y 10
 connected 6
 end
 arch woodfloor2
+x 7
+y 10
+end
+arch creator
+other_arch angry_floor
+x 7
+y 11
+connected 6
+end
+arch woodfloor2
+x 7
+y 11
+end
+arch creator
+other_arch angry_floor
+x 7
+y 12
+connected 6
+end
+arch woodfloor2
+x 7
+y 12
+end
+arch creator
+other_arch angry_floor
+x 7
+y 13
+connected 6
+end
+arch woodfloor2
+x 7
+y 13
+end
+arch creator
+other_arch angry_floor
+x 7
+y 14
+connected 6
+end
+arch woodfloor2
+x 7
+y 14
+end
+arch creator
+other_arch angry_floor
+x 7
+y 15
+connected 6
+end
+arch woodfloor2
+x 7
+y 15
+end
+arch creator
+other_arch angry_floor
+x 7
+y 16
+connected 6
+end
+arch woodfloor2
+x 7
+y 16
+end
+arch woodfloor2
+x 7
+y 17
+end
+arch wwall_2_1_2
+x 7
+y 17
+end
+arch grass_only
+x 7
+y 18
+end
+arch grass_only
+x 7
+y 19
+end
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
+y 1
+end
+arch woodfloor2
 x 8
 y 2
 end
-arch chair_1.1
+arch wwall_2_1_2
 x 8
 y 2
 end
@@ -737,286 +1260,31 @@ arch woodfloor2
 x 8
 y 3
 end
-arch creator
-other_arch angry_floor
-x 8
-y 4
-connected 6
-end
 arch woodfloor2
 x 8
 y 4
-end
-arch table_3
-x 8
-y 4
-end
-arch creator
-other_arch angry_floor
-x 8
-y 5
-connected 6
-end
-arch woodfloor2
-x 8
-y 5
-end
-arch table_3
-x 8
-y 5
-end
-arch creator
-other_arch angry_floor
-x 8
-y 6
-connected 6
-end
-arch woodfloor2
-x 8
-y 6
-end
-arch creator
-other_arch angry_floor
-x 8
-y 7
-connected 6
-end
-arch woodfloor2
-x 8
-y 7
-end
-arch chair_1.1
-x 8
-y 7
-end
-arch woodfloor2
-x 8
-y 8
-end
-arch wall_2_1_2
-x 8
-y 8
-end
-arch blocked
-x 8
-y 9
-end
-arch blocked
-x 9
-end
-arch woodfloor2
-x 9
-y 1
-end
-arch wall_2_1_2
-x 9
-y 1
-end
-arch creator
-other_arch angry_floor
-x 9
-y 2
-connected 6
-end
-arch woodfloor2
-x 9
-y 2
-end
-arch creator
-other_arch angry_floor
-x 9
-y 3
-connected 6
-end
-arch woodfloor2
-x 9
-y 3
-end
-arch creator
-other_arch angry_floor
-x 9
-y 4
-connected 6
-end
-arch woodfloor2
-x 9
-y 4
-end
-arch creator
-other_arch angry_floor
-x 9
-y 5
-connected 6
-end
-arch woodfloor2
-x 9
-y 5
-end
-arch creator
-other_arch angry_floor
-x 9
-y 6
-connected 6
-end
-arch woodfloor2
-x 9
-y 6
-end
-arch creator
-other_arch angry_floor
-x 9
-y 7
-connected 6
-end
-arch woodfloor2
-x 9
-y 7
-end
-arch woodfloor2
-x 9
-y 8
-end
-arch wall_2_1_2
-x 9
-y 8
-end
-arch blocked
-x 9
-y 9
-end
-arch blocked
-x 10
-end
-arch woodfloor2
-x 10
-y 1
-end
-arch wall_2_1_2
-x 10
-y 1
-end
-arch creator
-other_arch angry_floor
-x 10
-y 2
-connected 6
-end
-arch woodfloor2
-x 10
-y 2
-end
-arch creator
-other_arch angry_floor
-x 10
-y 3
-connected 6
-end
-arch woodfloor2
-x 10
-y 3
-end
-arch creator
-other_arch angry_floor
-x 10
-y 4
-connected 6
-end
-arch woodfloor2
-x 10
-y 4
-end
-arch table_3
-x 10
-y 4
-end
-arch creator
-other_arch angry_floor
-x 10
-y 5
-connected 6
-end
-arch woodfloor2
-x 10
-y 5
-end
-arch creator
-other_arch angry_floor
-x 10
-y 6
-connected 6
-end
-arch woodfloor2
-x 10
-y 6
-end
-arch creator
-other_arch angry_floor
-x 10
-y 7
-connected 6
-end
-arch woodfloor2
-x 10
-y 7
-end
-arch woodfloor2
-x 10
-y 8
-end
-arch wall_2_1_2
-x 10
-y 8
-end
-arch blocked
-x 10
-y 9
-end
-arch blocked
-x 11
-end
-arch woodfloor2
-x 11
-y 1
-end
-arch wall_2_1_2
-x 11
-y 1
-end
-arch creator
-other_arch angry_floor
-x 11
-y 2
-connected 6
-end
-arch woodfloor2
-x 11
-y 2
-end
-arch woodfloor2
-x 11
-y 3
 end
 arch pedestal
-x 11
-y 3
+x 8
+y 4
 invisible 1
 connected 6
 end
 arch chest
-x 11
-y 3
+x 8
+y 4
 arch random_wealth
 end
 end
 arch creator
 other_arch angry_floor
-x 11
-y 4
+x 8
+y 5
 connected 6
 end
 arch woodfloor2
-x 11
-y 4
+x 8
+y 5
 end
 arch guildmaster
 name Bingo Master
@@ -1024,89 +1292,655 @@ msg
 @match *
 Two Fat Ladies - 88
 endmsg
-x 11
-y 4
-end
-arch creator
-other_arch angry_floor
-x 11
-y 5
-connected 6
-end
-arch woodfloor2
-x 11
+x 8
 y 5
 end
 arch creator
 other_arch angry_floor
-x 11
+x 8
 y 6
 connected 6
 end
 arch woodfloor2
-x 11
+x 8
 y 6
 end
 arch creator
 other_arch angry_floor
-x 11
+x 8
 y 7
 connected 6
 end
 arch woodfloor2
-x 11
+x 8
 y 7
 end
-arch flowers_permanent
-x 11
-y 7
+arch creator
+other_arch angry_floor
+x 8
+y 8
+connected 6
 end
 arch woodfloor2
-x 11
+x 8
 y 8
 end
-arch wall_2_1_2
-x 11
-y 8
+arch creator
+other_arch angry_floor
+x 8
+y 9
+connected 6
 end
-arch blocked
-x 11
+arch woodfloor2
+x 8
 y 9
 end
-arch blocked
-x 12
+arch table_3
+x 8
+y 9
+end
+arch creator
+other_arch angry_floor
+x 8
+y 10
+connected 6
 end
 arch woodfloor2
-x 12
-y 1
+x 8
+y 10
 end
-arch wall_2_2_3
-x 12
+arch creator
+other_arch angry_floor
+x 8
+y 11
+connected 6
+end
+arch woodfloor2
+x 8
+y 11
+end
+arch table_3
+x 8
+y 11
+end
+arch creator
+other_arch angry_floor
+x 8
+y 12
+connected 6
+end
+arch woodfloor2
+x 8
+y 12
+end
+arch creator
+other_arch angry_floor
+x 8
+y 13
+connected 6
+end
+arch woodfloor2
+x 8
+y 13
+end
+arch table_3
+x 8
+y 13
+end
+arch creator
+other_arch angry_floor
+x 8
+y 14
+connected 6
+end
+arch woodfloor2
+x 8
+y 14
+end
+arch creator
+other_arch angry_floor
+x 8
+y 15
+connected 6
+end
+arch woodfloor2
+x 8
+y 15
+end
+arch table_3
+x 8
+y 15
+end
+arch creator
+other_arch angry_floor
+x 8
+y 16
+connected 6
+end
+arch woodfloor2
+x 8
+y 16
+end
+arch woodfloor2
+x 8
+y 17
+end
+arch wwall_2_1_2
+x 8
+y 17
+end
+arch grass_only
+x 8
+y 18
+end
+arch grass_only
+x 8
+y 19
+end
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
 y 1
 end
 arch woodfloor2
-x 12
+x 9
 y 2
 end
-arch wall_2_1_1
-x 12
+arch wwall_2_1_2
+x 9
 y 2
+end
+arch creator
+other_arch angry_floor
+x 9
+y 3
+connected 6
+end
+arch woodfloor2
+x 9
+y 3
+end
+arch chair_1.1
+x 9
+y 3
 end
 arch magic_mouth
 msg
 Don't steal the bingo money!
 endmsg
 food 1
-x 12
-y 3
+x 9
+y 4
 connected 6
 move_on 0
 end
 arch woodfloor2
-x 12
+x 9
+y 4
+end
+arch creator
+other_arch angry_floor
+x 9
+y 5
+connected 6
+end
+arch woodfloor2
+x 9
+y 5
+end
+arch creator
+other_arch angry_floor
+x 9
+y 6
+connected 6
+end
+arch woodfloor2
+x 9
+y 6
+end
+arch creator
+other_arch angry_floor
+x 9
+y 7
+connected 6
+end
+arch woodfloor2
+x 9
+y 7
+end
+arch creator
+other_arch angry_floor
+x 9
+y 8
+connected 6
+end
+arch woodfloor2
+x 9
+y 8
+end
+arch creator
+other_arch angry_floor
+x 9
+y 9
+connected 6
+end
+arch woodfloor2
+x 9
+y 9
+end
+arch chair_1.1
+x 9
+y 9
+end
+arch a_townsman
+x 9
+y 9
+end
+arch creator
+other_arch angry_floor
+x 9
+y 10
+connected 6
+end
+arch woodfloor2
+x 9
+y 10
+end
+arch creator
+other_arch angry_floor
+x 9
+y 11
+connected 6
+end
+arch woodfloor2
+x 9
+y 11
+end
+arch chair_1.1
+x 9
+y 11
+end
+arch creator
+other_arch angry_floor
+x 9
+y 12
+connected 6
+end
+arch woodfloor2
+x 9
+y 12
+end
+arch creator
+other_arch angry_floor
+x 9
+y 13
+connected 6
+end
+arch woodfloor2
+x 9
+y 13
+end
+arch chair_1.1
+x 9
+y 13
+end
+arch creator
+other_arch angry_floor
+x 9
+y 14
+connected 6
+end
+arch woodfloor2
+x 9
+y 14
+end
+arch creator
+other_arch angry_floor
+x 9
+y 15
+connected 6
+end
+arch woodfloor2
+x 9
+y 15
+end
+arch chair_1.1
+x 9
+y 15
+end
+arch creator
+other_arch angry_floor
+x 9
+y 16
+connected 6
+end
+arch woodfloor2
+x 9
+y 16
+end
+arch woodfloor2
+x 9
+y 17
+end
+arch wwall_2_1_2
+x 9
+y 17
+end
+arch grass_only
+x 9
+y 18
+end
+arch grass_only
+x 9
+y 19
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
+y 1
+end
+arch woodfloor2
+x 10
+y 2
+end
+arch wwall_2_1_2
+x 10
+y 2
+end
+arch creator
+other_arch angry_floor
+x 10
+y 3
+connected 6
+end
+arch woodfloor2
+x 10
 y 3
 end
-arch wall_2_1_1
+arch creator
+other_arch angry_floor
+x 10
+y 4
+connected 6
+end
+arch woodfloor2
+x 10
+y 4
+end
+arch creator
+other_arch angry_floor
+x 10
+y 5
+connected 6
+end
+arch woodfloor2
+x 10
+y 5
+end
+arch creator
+other_arch angry_floor
+x 10
+y 6
+connected 6
+end
+arch woodfloor2
+x 10
+y 6
+end
+arch creator
+other_arch angry_floor
+x 10
+y 7
+connected 6
+end
+arch woodfloor2
+x 10
+y 7
+end
+arch creator
+other_arch angry_floor
+x 10
+y 8
+connected 6
+end
+arch woodfloor2
+x 10
+y 8
+end
+arch creator
+other_arch angry_floor
+x 10
+y 9
+connected 6
+end
+arch woodfloor2
+x 10
+y 9
+end
+arch creator
+other_arch angry_floor
+x 10
+y 10
+connected 6
+end
+arch woodfloor2
+x 10
+y 10
+end
+arch creator
+other_arch angry_floor
+x 10
+y 11
+connected 6
+end
+arch woodfloor2
+x 10
+y 11
+end
+arch creator
+other_arch angry_floor
+x 10
+y 12
+connected 6
+end
+arch woodfloor2
+x 10
+y 12
+end
+arch creator
+other_arch angry_floor
+x 10
+y 13
+connected 6
+end
+arch woodfloor2
+x 10
+y 13
+end
+arch creator
+other_arch angry_floor
+x 10
+y 14
+connected 6
+end
+arch woodfloor2
+x 10
+y 14
+end
+arch creator
+other_arch angry_floor
+x 10
+y 15
+connected 6
+end
+arch woodfloor2
+x 10
+y 15
+end
+arch creator
+other_arch angry_floor
+x 10
+y 16
+connected 6
+end
+arch woodfloor2
+x 10
+y 16
+end
+arch woodfloor2
+x 10
+y 17
+end
+arch wwall_1_3
+x 10
+y 17
+end
+arch dungeon_magic
+x 10
+y 18
+end
+arch grass_only
+x 10
+y 18
+move_block all
+end
+arch grass_only
+x 10
+y 19
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
+y 1
+end
+arch woodfloor2
+x 11
+y 2
+end
+arch wwall_win2
+x 11
+y 2
+end
+arch creator
+other_arch angry_floor
+x 11
+y 3
+connected 6
+end
+arch woodfloor2
+x 11
+y 3
+end
+arch woodfloor2
+x 11
+y 4
+end
+arch woodfloor2
+x 11
+y 5
+end
+arch woodfloor2
+x 11
+y 6
+end
+arch creator
+other_arch angry_floor
+x 11
+y 7
+connected 6
+end
+arch woodfloor2
+x 11
+y 7
+end
+arch creator
+other_arch angry_floor
+x 11
+y 8
+connected 6
+end
+arch woodfloor2
+x 11
+y 8
+end
+arch woodfloor2
+x 11
+y 9
+end
+arch woodfloor2
+x 11
+y 10
+end
+arch woodfloor2
+x 11
+y 11
+end
+arch woodfloor2
+x 11
+y 12
+end
+arch woodfloor2
+x 11
+y 13
+end
+arch woodfloor2
+x 11
+y 14
+end
+arch woodfloor2
+x 11
+y 15
+end
+arch woodfloor2
+x 11
+y 16
+end
+arch woodfloor2
+x 11
+y 17
+end
+arch oakdoor_2
+slaying /world/world_121_117
+hp 48
+sp 4
+x 11
+y 17
+end
+arch dungeon_magic
+x 11
+y 18
+end
+arch grass_only
+x 11
+y 18
+move_block all
+end
+arch grass_only
+x 11
+y 19
+end
+arch cobblestones2
+x 12
+end
+arch grass_only
+x 12
+y 1
+end
+arch woodfloor2
+x 12
+y 2
+end
+arch wwall_2_1_2
+x 12
+y 2
+end
+arch woodfloor2
 x 12
 y 3
 end
@@ -1114,15 +1948,7 @@ arch woodfloor2
 x 12
 y 4
 end
-arch wall_2_1_1
-x 12
-y 4
-end
 arch woodfloor2
-x 12
-y 5
-end
-arch wall_2_1_1
 x 12
 y 5
 end
@@ -1130,15 +1956,7 @@ arch woodfloor2
 x 12
 y 6
 end
-arch wall_2_1_1
-x 12
-y 6
-end
 arch woodfloor2
-x 12
-y 7
-end
-arch wall_2_1_1
 x 12
 y 7
 end
@@ -1146,50 +1964,357 @@ arch woodfloor2
 x 12
 y 8
 end
-arch wall_2_2_4
-x 12
-y 8
-end
-arch blocked
+arch woodfloor2
 x 12
 y 9
 end
-arch blocked
+arch woodfloor2
+x 12
+y 10
+end
+arch woodfloor2
+x 12
+y 11
+end
+arch woodfloor2
+x 12
+y 12
+end
+arch woodfloor2
+x 12
+y 13
+end
+arch woodfloor2
+x 12
+y 14
+end
+arch woodfloor2
+x 12
+y 15
+end
+arch woodfloor2
+x 12
+y 16
+end
+arch woodfloor2
+x 12
+y 17
+end
+arch wwall_1_4
+x 12
+y 17
+end
+arch dungeon_magic
+x 12
+y 18
+end
+arch grass_only
+x 12
+y 18
+move_block all
+end
+arch grass_only
+x 12
+y 19
+end
+arch cobblestones2
 x 13
 end
-arch blocked
+arch grass_only
 x 13
 y 1
 end
-arch blocked
+arch woodfloor2
 x 13
 y 2
 end
-arch blocked
+arch wwall_2_2_3
+x 13
+y 2
+end
+arch woodfloor2
 x 13
 y 3
 end
-arch blocked
+arch wwall_2_1_1
+x 13
+y 3
+end
+arch woodfloor2
 x 13
 y 4
 end
-arch blocked
+arch wwall_2_1_1
+x 13
+y 4
+end
+arch woodfloor2
 x 13
 y 5
 end
-arch blocked
+arch wwall_2_1_1
+x 13
+y 5
+end
+arch woodfloor2
 x 13
 y 6
 end
-arch blocked
+arch wwall_2_1_1
+x 13
+y 6
+end
+arch woodfloor2
 x 13
 y 7
 end
-arch blocked
+arch wwall_2_1_1
+x 13
+y 7
+end
+arch woodfloor2
 x 13
 y 8
 end
-arch blocked
+arch wwall_2_1_1
+x 13
+y 8
+end
+arch woodfloor2
 x 13
 y 9
+end
+arch wwall_2_1_1
+x 13
+y 9
+end
+arch woodfloor2
+x 13
+y 10
+end
+arch wwall_win1
+x 13
+y 10
+end
+arch woodfloor2
+x 13
+y 11
+end
+arch wwall_2_1_1
+x 13
+y 11
+end
+arch woodfloor2
+x 13
+y 12
+end
+arch wwall_2_1_1
+x 13
+y 12
+end
+arch woodfloor2
+x 13
+y 13
+end
+arch wwall_2_1_1
+x 13
+y 13
+end
+arch woodfloor2
+x 13
+y 14
+end
+arch wwall_2_1_1
+x 13
+y 14
+end
+arch woodfloor2
+x 13
+y 15
+end
+arch wwall_2_1_1
+x 13
+y 15
+end
+arch woodfloor2
+x 13
+y 16
+end
+arch wwall_2_1_1
+x 13
+y 16
+end
+arch woodfloor2
+x 13
+y 17
+end
+arch wwall_2_2_4
+x 13
+y 17
+end
+arch grass_only
+x 13
+y 18
+end
+arch grass_only
+x 13
+y 19
+end
+arch cobblestones2
+x 14
+end
+arch grass_only
+x 14
+y 1
+end
+arch grass_only
+x 14
+y 2
+end
+arch grass_only
+x 14
+y 3
+end
+arch grass_only
+x 14
+y 4
+end
+arch grass_only
+x 14
+y 5
+end
+arch grass_only
+x 14
+y 6
+end
+arch grass_only
+x 14
+y 7
+end
+arch grass_only
+x 14
+y 8
+end
+arch grass_only
+x 14
+y 9
+end
+arch grass_only
+x 14
+y 10
+end
+arch grass_only
+x 14
+y 11
+end
+arch grass_only
+x 14
+y 12
+end
+arch grass_only
+x 14
+y 13
+end
+arch grass_only
+x 14
+y 14
+end
+arch grass_only
+x 14
+y 15
+end
+arch grass_only
+x 14
+y 16
+end
+arch grass_only
+x 14
+y 17
+end
+arch grass_only
+x 14
+y 18
+end
+arch grass_only
+x 14
+y 19
+end
+arch cobblestones2
+x 15
+end
+arch cobblestones2
+x 15
+y 1
+end
+arch cobblestones2
+x 15
+y 2
+end
+arch cobblestones2
+x 15
+y 3
+end
+arch cobblestones2
+x 15
+y 4
+end
+arch cobblestones2
+x 15
+y 5
+end
+arch cobblestones2
+x 15
+y 6
+end
+arch cobblestones2
+x 15
+y 7
+end
+arch cobblestones2
+x 15
+y 8
+end
+arch cobblestones2
+x 15
+y 9
+end
+arch cobblestones2
+x 15
+y 10
+end
+arch cobblestones2
+x 15
+y 11
+end
+arch cobblestones2
+x 15
+y 12
+end
+arch cobblestones2
+x 15
+y 13
+end
+arch cobblestones2
+x 15
+y 14
+end
+arch cobblestones2
+x 15
+y 15
+end
+arch cobblestones2
+x 15
+y 16
+end
+arch cobblestones2
+x 15
+y 17
+end
+arch cobblestones2
+x 15
+y 18
+end
+arch cobblestones2
+x 15
+y 19
 end
