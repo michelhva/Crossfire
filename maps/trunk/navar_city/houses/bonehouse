@@ -2,419 +2,444 @@ arch map
 name Bone House
 difficulty 8
 region navar
-width 13
-height 11
-enter_x 10
-enter_y 2
+width 31
+height 13
+enter_x 15
+enter_y 9
 msg
 Created:  2012-05-17 Rick Tanner
-Modified: 2012-05-17 Rick Tanner
+Modified: 2012-07-14 Rick Tanner
 endmsg
 end
-arch blocked
+arch cobblestones2
 end
-arch blocked
+arch cobblestones2
 y 1
 end
-arch blocked
+arch cobblestones2
 y 2
 end
-arch blocked
+arch cobblestones2
 y 3
 end
-arch woodfloor
+arch cobblestones2
 y 4
 end
-arch wall_2_2_2
-y 4
-end
-arch woodfloor
+arch cobblestones2
 y 5
 end
-arch wall_2_1_1
-y 5
-end
-arch woodfloor
+arch cobblestones2
 y 6
 end
-arch wall_2_1_1
-y 6
-end
-arch woodfloor
+arch cobblestones2
 y 7
 end
-arch wall_2_1_1
-y 7
-end
-arch woodfloor
+arch cobblestones2
 y 8
 end
-arch wall_2_1_1
-y 8
-end
-arch woodfloor
+arch cobblestones2
 y 9
 end
-arch wall_2_2_1
-y 9
-end
-arch blocked
+arch cobblestones2
 y 10
 end
-arch blocked
+arch cobblestones2
+y 11
+end
+arch cobblestones2
+y 12
+end
+arch grass_only
 x 1
 end
-arch blocked
+arch grass_only
 x 1
 y 1
 end
-arch blocked
+arch grass_only
 x 1
 y 2
 end
-arch blocked
+arch grass_only
 x 1
 y 3
 end
-arch woodfloor
+arch grass_only
 x 1
 y 4
 end
-arch wall_2_1_2
-x 1
-y 4
-end
-arch woodfloor
+arch grass_only
 x 1
 y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch cobblestones2
+x 1
+y 12
+end
+arch grass_only
+x 2
+end
+arch grass_only
+x 2
+y 1
+end
+arch woodfloor2
+x 2
+y 2
+end
+arch woodwall_2_2_2
+x 2
+y 2
+end
+arch woodfloor2
+x 2
+y 3
+end
+arch woodwall_2_1_1
+x 2
+y 3
+end
+arch woodfloor2
+x 2
+y 4
+end
+arch woodwall_2_1_1
+x 2
+y 4
+end
+arch woodfloor2
+x 2
+y 5
+end
+arch woodwall_2_1_1
+x 2
+y 5
+end
+arch woodfloor2
+x 2
+y 6
+end
+arch woodwall_2_1_1
+x 2
+y 6
+end
+arch woodfloor2
+x 2
+y 7
+end
+arch woodwall_2_1_1
+x 2
+y 7
+end
+arch woodfloor2
+x 2
+y 8
+end
+arch woodwall_2_1_1
+x 2
+y 8
+end
+arch woodfloor2
+x 2
+y 9
+end
+arch woodwall_2_1_1
+x 2
+y 9
+end
+arch woodfloor2
+x 2
+y 10
+end
+arch woodwall_2_2_1
+x 2
+y 10
+end
+arch grass_only
+x 2
+y 11
+end
+arch cobblestones2
+x 2
+y 12
+end
+arch grass_only
+x 3
+end
+arch grass_only
+x 3
+y 1
+end
+arch woodfloor2
+x 3
+y 2
+end
+arch woodwall_2_1_2
+x 3
+y 2
+end
+arch woodfloor2
+x 3
+y 3
 end
 arch chest
-x 1
-y 5
+x 3
+y 3
 end
-arch woodfloor
-x 1
-y 6
+arch woodfloor2
+x 3
+y 4
 end
 arch random_treasure
-x 1
-y 6
-end
-arch woodfloor
-x 1
-y 7
-end
-arch woodfloor
-x 1
-y 8
-end
-arch generate_skeleton
-x 1
-y 8
-end
-arch woodfloor
-x 1
-y 9
-end
-arch wall_2_1_2
-x 1
-y 9
-end
-arch blocked
-x 1
-y 10
-end
-arch blocked
-x 2
-end
-arch blocked
-x 2
-y 1
-end
-arch blocked
-x 2
-y 2
-end
-arch blocked
-x 2
-y 3
-end
-arch woodfloor
-x 2
-y 4
-end
-arch wall_2_1_2
-x 2
-y 4
-end
-arch woodfloor
-x 2
-y 5
-end
-arch random_wealth
-x 2
-y 5
-end
-arch woodfloor
-x 2
-y 6
-end
-arch generate_skeleton
-x 2
-y 6
-end
-arch woodfloor
-x 2
-y 7
-end
-arch woodfloor
-x 2
-y 8
-end
-arch corpse
-msg
-Yep...its dead.
-endmsg
-x 2
-y 8
-end
-arch woodfloor
-x 2
-y 9
-end
-arch wall_2_1_2
-x 2
-y 9
-end
-arch blocked
-x 2
-y 10
-end
-arch blocked
-x 3
-end
-arch blocked
-x 3
-y 1
-end
-arch blocked
-x 3
-y 2
-end
-arch blocked
-x 3
-y 3
-end
-arch woodfloor
 x 3
 y 4
 end
-arch wall_2_1_2
-x 3
-y 4
-end
-arch woodfloor
+arch woodfloor2
 x 3
 y 5
 end
-arch woodfloor
+arch woodfloor2
 x 3
 y 6
-end
-arch woodfloor
-x 3
-y 7
 end
 arch chair
 x 3
+y 6
+end
+arch woodfloor2
+x 3
 y 7
 end
-arch woodfloor
+arch woodfloor2
 x 3
 y 8
 end
-arch woodfloor
+arch woodfloor2
 x 3
 y 9
 end
-arch wall_2_1_2
-x 3
-y 9
-end
-arch blocked
+arch woodfloor2
 x 3
 y 10
 end
-arch blocked
+arch woodwall_2_1_2
+x 3
+y 10
+end
+arch grass_only
+x 3
+y 11
+end
+arch cobblestones2
+x 3
+y 12
+end
+arch grass_only
 x 4
 end
-arch blocked
+arch grass_only
 x 4
 y 1
 end
-arch blocked
+arch woodfloor2
 x 4
 y 2
 end
-arch blocked
+arch woodwall_2_1_2
+x 4
+y 2
+end
+arch woodfloor2
 x 4
 y 3
 end
-arch woodfloor
+arch random_wealth
+x 4
+y 3
+end
+arch woodfloor2
 x 4
 y 4
-end
-arch wall_2_1_2
-x 4
-y 4
-end
-arch woodfloor
-x 4
-y 5
 end
 arch generate_skeleton
 x 4
+y 4
+end
+arch woodfloor2
+x 4
 y 5
 end
-arch woodfloor
+arch woodfloor2
 x 4
 y 6
-end
-arch woodfloor
-x 4
-y 7
 end
 arch table_4
 x 4
+y 6
+end
+arch woodfloor2
+x 4
 y 7
 end
-arch woodfloor
+arch woodfloor2
 x 4
 y 8
 end
-arch woodfloor
+arch woodfloor2
 x 4
 y 9
 end
-arch wall_2_1_2
-x 4
-y 9
-end
-arch blocked
+arch woodfloor2
 x 4
 y 10
 end
-arch blocked
+arch woodwall_2_1_2
+x 4
+y 10
+end
+arch grass_only
+x 4
+y 11
+end
+arch cobblestones2
+x 4
+y 12
+end
+arch grass_only
 x 5
 end
-arch blocked
+arch grass_only
 x 5
 y 1
 end
-arch blocked
+arch woodfloor2
 x 5
 y 2
 end
-arch blocked
+arch woodwall_win2
+x 5
+y 2
+end
+arch woodfloor2
 x 5
 y 3
 end
-arch woodfloor
+arch woodfloor2
 x 5
 y 4
 end
-arch wall_2_2_3
+arch woodwall_0
 x 5
 y 4
 end
-arch woodfloor
+arch woodfloor2
 x 5
 y 5
 end
-arch wall_2_2_1
-x 5
-y 5
-end
-arch woodfloor
+arch woodfloor2
 x 5
 y 6
 end
-arch skeleton
-x 5
-y 6
-end
-arch woodfloor
+arch woodfloor2
 x 5
 y 7
 end
-arch skeleton
-x 5
-y 7
-end
-arch woodfloor
+arch woodfloor2
 x 5
 y 8
 end
-arch skeleton
+arch woodwall_0
 x 5
 y 8
 end
-arch woodfloor
+arch woodfloor2
 x 5
 y 9
 end
-arch wall_2_1_2
-x 5
-y 9
-end
-arch blocked
+arch woodfloor2
 x 5
 y 10
 end
-arch blocked
+arch woodwall_win2
+x 5
+y 10
+end
+arch grass_only
+x 5
+y 11
+end
+arch cobblestones2
+x 5
+y 12
+end
+arch grass_only
 x 6
 end
-arch blocked
+arch grass_only
 x 6
 y 1
 end
-arch blocked
+arch woodfloor2
 x 6
 y 2
 end
-arch blocked
+arch woodwall_2_1_2
+x 6
+y 2
+end
+arch woodfloor2
 x 6
 y 3
 end
-arch blocked
+arch woodfloor2
 x 6
 y 4
 end
-arch woodfloor
+arch skeleton
+x 6
+y 4
+end
+arch woodfloor2
 x 6
 y 5
 end
-arch wall_2_1_2
-x 6
-y 5
-end
-arch woodfloor
+arch woodfloor2
 x 6
 y 6
 end
-arch skeleton
+arch generate_skeleton
 x 6
 y 6
 end
-arch woodfloor
+arch woodfloor2
 x 6
 y 7
 end
-arch skeleton
-x 6
-y 7
-end
-arch woodfloor
+arch woodfloor2
 x 6
 y 8
 end
@@ -422,395 +447,1563 @@ arch skeleton
 x 6
 y 8
 end
-arch woodfloor
+arch woodfloor2
 x 6
 y 9
 end
-arch wall_2_1_2
-x 6
-y 9
-end
-arch blocked
+arch woodfloor2
 x 6
 y 10
 end
-arch blocked
+arch woodwall_2_1_2
+x 6
+y 10
+end
+arch grass_only
+x 6
+y 11
+end
+arch cobblestones2
+x 6
+y 12
+end
+arch grass_only
 x 7
 end
-arch blocked
+arch grass_only
 x 7
 y 1
 end
-arch blocked
+arch woodfloor2
 x 7
 y 2
 end
-arch blocked
+arch woodwall_2_1_2
+x 7
+y 2
+end
+arch woodfloor2
 x 7
 y 3
 end
-arch blocked
+arch woodfloor2
 x 7
 y 4
 end
-arch woodfloor
+arch woodfloor2
 x 7
 y 5
 end
-arch wall_2_1_2
-x 7
-y 5
-end
-arch woodfloor
+arch woodfloor2
 x 7
 y 6
 end
-arch skeleton
-x 7
-y 6
-end
-arch woodfloor
+arch woodfloor2
 x 7
 y 7
 end
-arch skeleton
-x 7
-y 7
-end
-arch woodfloor
+arch woodfloor2
 x 7
 y 8
 end
-arch skeleton
-x 7
-y 8
-end
-arch woodfloor
+arch woodfloor2
 x 7
 y 9
 end
-arch wall_2_1_2
-x 7
-y 9
-end
-arch blocked
+arch woodfloor2
 x 7
 y 10
 end
-arch blocked
+arch woodwall_2_1_2
+x 7
+y 10
+end
+arch grass_only
+x 7
+y 11
+end
+arch cobblestones2
+x 7
+y 12
+end
+arch grass_only
 x 8
 end
-arch blocked
+arch grass_only
 x 8
 y 1
 end
-arch blocked
+arch woodfloor2
 x 8
 y 2
 end
-arch woodfloor
+arch woodwall_2_1_2
+x 8
+y 2
+end
+arch woodfloor2
 x 8
 y 3
 end
-arch wall_2_2_2
-x 8
-y 3
-end
-arch woodfloor
+arch woodfloor2
 x 8
 y 4
 end
-arch wall_2_1_1
-x 8
-y 4
-end
-arch woodfloor
+arch woodfloor2
 x 8
 y 5
 end
-arch wall_2_2_4
-x 8
-y 5
-end
-arch woodfloor
+arch woodfloor2
 x 8
 y 6
 end
-arch skeleton
-x 8
-y 6
-end
-arch woodfloor
+arch woodfloor2
 x 8
 y 7
 end
-arch skeleton
-x 8
-y 7
-end
-arch woodfloor
+arch woodfloor2
 x 8
 y 8
 end
-arch skeleton
-x 8
-y 8
-end
-arch woodfloor
+arch woodfloor2
 x 8
 y 9
 end
-arch wall_2_1_2
-x 8
-y 9
-end
-arch blocked
+arch woodfloor2
 x 8
 y 10
 end
-arch blocked
+arch woodwall_2_1_2
+x 8
+y 10
+end
+arch grass_only
+x 8
+y 11
+end
+arch cobblestones2
+x 8
+y 12
+end
+arch grass_only
 x 9
 end
-arch woodfloor
+arch grass_only
 x 9
 y 1
 end
-arch wall_2_2_2
-x 9
-y 1
-end
-arch woodfloor
+arch woodfloor2
 x 9
 y 2
 end
-arch wall_2_1_1
+arch woodwall_2_1_2
 x 9
 y 2
 end
-arch woodfloor
+arch woodfloor2
 x 9
 y 3
 end
-arch wall_2_2_4
-x 9
-y 3
-end
-arch woodfloor
+arch woodfloor2
 x 9
 y 4
 end
-arch woodfloor
+arch woodwall_0
+x 9
+y 4
+end
+arch woodfloor2
 x 9
 y 5
 end
-arch woodfloor
+arch woodfloor2
 x 9
 y 6
 end
-arch woodfloor
+arch woodfloor2
 x 9
 y 7
 end
-arch woodfloor
+arch woodfloor2
 x 9
 y 8
 end
-arch woodfloor
+arch woodwall_0
+x 9
+y 8
+end
+arch woodfloor2
 x 9
 y 9
 end
-arch wall_2_1_2
-x 9
-y 9
-end
-arch blocked
+arch woodfloor2
 x 9
 y 10
 end
-arch blocked
+arch woodwall_2_1_2
+x 9
+y 10
+end
+arch grass_only
+x 9
+y 11
+end
+arch cobblestones2
+x 9
+y 12
+end
+arch grass_only
 x 10
 end
-arch woodfloor
+arch grass_only
 x 10
 y 1
 end
-arch wall_2_1_2
+arch woodfloor2
 x 10
+y 2
+end
+arch woodwall_win2
+x 10
+y 2
+end
+arch woodfloor2
+x 10
+y 3
+end
+arch woodfloor2
+x 10
+y 4
+end
+arch skeleton
+x 10
+y 4
+end
+arch woodfloor2
+x 10
+y 5
+end
+arch woodfloor2
+x 10
+y 6
+end
+arch woodfloor2
+x 10
+y 7
+end
+arch woodfloor2
+x 10
+y 8
+end
+arch skeleton
+x 10
+y 8
+end
+arch woodfloor2
+x 10
+y 9
+end
+arch woodfloor2
+x 10
+y 10
+end
+arch woodwall_2_1_2
+x 10
+y 10
+end
+arch grass_only
+x 10
+y 11
+end
+arch cobblestones2
+x 10
+y 12
+end
+arch grass_only
+x 11
+end
+arch grass_only
+x 11
 y 1
 end
-arch woodfloor
-x 10
+arch woodfloor2
+x 11
 y 2
 end
-arch oakdoor
-slaying /world/world_121_117
-hp 40
-sp 2
-x 10
+arch woodwall_2_1_2
+x 11
 y 2
+end
+arch woodfloor2
+x 11
+y 3
+end
+arch woodfloor2
+x 11
+y 4
+end
+arch woodfloor2
+x 11
+y 5
+end
+arch woodfloor2
+x 11
+y 6
+end
+arch woodfloor2
+x 11
+y 7
+end
+arch woodfloor2
+x 11
+y 8
+end
+arch woodfloor2
+x 11
+y 9
+end
+arch woodfloor2
+x 11
+y 10
+end
+arch woodwall_win2
+x 11
+y 10
+end
+arch grass_only
+x 11
+y 11
+end
+arch cobblestones2
+x 11
+y 12
+end
+arch grass_only
+x 12
+end
+arch grass_only
+x 12
+y 1
+end
+arch woodfloor2
+x 12
+y 2
+end
+arch woodwall_2_1_2
+x 12
+y 2
+end
+arch woodfloor2
+x 12
+y 3
+end
+arch woodfloor2
+x 12
+y 4
+end
+arch woodfloor2
+x 12
+y 5
+end
+arch woodfloor2
+x 12
+y 6
+end
+arch woodfloor2
+x 12
+y 7
+end
+arch woodfloor2
+x 12
+y 8
+end
+arch woodfloor2
+x 12
+y 9
+end
+arch woodfloor2
+x 12
+y 10
+end
+arch woodwall_2_1_2
+x 12
+y 10
+end
+arch grass_only
+x 12
+y 11
+end
+arch cobblestones2
+x 12
+y 12
+end
+arch grass_only
+x 13
+end
+arch grass_only
+x 13
+y 1
+end
+arch woodfloor2
+x 13
+y 2
+end
+arch woodwall_2_1_2
+x 13
+y 2
+end
+arch woodfloor2
+x 13
+y 3
+end
+arch woodfloor2
+x 13
+y 4
+end
+arch woodwall_0
+x 13
+y 4
+end
+arch woodfloor2
+x 13
+y 5
+end
+arch woodfloor2
+x 13
+y 6
+end
+arch woodfloor2
+x 13
+y 7
+end
+arch woodfloor2
+x 13
+y 8
+end
+arch woodwall_0
+x 13
+y 8
+end
+arch woodfloor2
+x 13
+y 9
+end
+arch woodfloor2
+x 13
+y 10
+end
+arch woodwall_2_1_2
+x 13
+y 10
+end
+arch grass_only
+x 13
+y 11
+end
+arch cobblestones2
+x 13
+y 12
+end
+arch grass_only
+x 14
+end
+arch grass_only
+x 14
+y 1
+end
+arch woodfloor2
+x 14
+y 2
+end
+arch woodwall_2_1_2
+x 14
+y 2
+end
+arch woodfloor2
+x 14
+y 3
+end
+arch woodfloor2
+x 14
+y 4
+end
+arch skeleton
+x 14
+y 4
+end
+arch woodfloor2
+x 14
+y 5
+end
+arch woodfloor2
+x 14
+y 6
+end
+arch woodfloor2
+x 14
+y 7
+end
+arch woodfloor2
+x 14
+y 8
+end
+arch woodfloor2
+x 14
+y 9
+end
+arch woodfloor2
+x 14
+y 10
+end
+arch woodwall_1_3
+x 14
+y 10
+end
+arch dungeon_magic
+x 14
+y 11
+end
+arch grass_only
+x 14
+y 11
+move_block all
+end
+arch cobblestones2
+x 14
+y 12
+end
+arch grass_only
+x 15
+end
+arch grass_only
+x 15
+y 1
+end
+arch woodfloor2
+x 15
+y 2
+end
+arch woodwall_win2
+x 15
+y 2
+end
+arch woodfloor2
+x 15
+y 3
+end
+arch woodfloor2
+x 15
+y 4
+end
+arch woodfloor2
+x 15
+y 5
+end
+arch woodfloor2
+x 15
+y 6
+end
+arch woodfloor2
+x 15
+y 7
+end
+arch woodfloor2
+x 15
+y 8
 end
 arch magic_mouth
 msg
 ACK!!! A house of the Dead!!!!
 endmsg
-x 10
-y 3
-end
-arch woodfloor
-x 10
-y 3
-end
-arch woodfloor
-x 10
-y 4
-end
-arch woodfloor
-x 10
-y 5
-end
-arch woodfloor
-x 10
-y 6
-end
-arch woodfloor
-x 10
-y 7
-end
-arch woodfloor
-x 10
-y 8
-end
-arch woodfloor
-x 10
+x 15
 y 9
 end
-arch wall_2_1_2
-x 10
+arch woodfloor2
+x 15
 y 9
 end
-arch blocked
-x 10
+arch woodfloor2
+x 15
 y 10
 end
-arch blocked
-x 11
-end
-arch woodfloor
-x 11
-y 1
-end
-arch wall_2_2_3
-x 11
-y 1
-end
-arch woodfloor
-x 11
-y 2
-end
-arch wall_2_1_1
-x 11
-y 2
-end
-arch woodfloor
-x 11
-y 3
-end
-arch wall_2_1_1
-x 11
-y 3
-end
-arch woodfloor
-x 11
-y 4
-end
-arch wall_2_1_1
-x 11
-y 4
-end
-arch woodfloor
-x 11
-y 5
-end
-arch wall_2_1_1
-x 11
-y 5
-end
-arch woodfloor
-x 11
-y 6
-end
-arch wall_2_1_1
-x 11
-y 6
-end
-arch woodfloor
-x 11
-y 7
-end
-arch wall_2_1_1
-x 11
-y 7
-end
-arch woodfloor
-x 11
-y 8
-end
-arch wall_2_1_1
-x 11
-y 8
-end
-arch woodfloor
-x 11
-y 9
-end
-arch wall_2_2_4
-x 11
-y 9
-end
-arch blocked
-x 11
+arch oakdoor_2
+slaying /world/world_121_117
+hp 40
+sp 2
+x 15
 y 10
 end
-arch blocked
-x 12
+arch dungeon_magic
+x 15
+y 11
 end
-arch blocked
-x 12
+arch grass_only
+x 15
+y 11
+move_block all
+end
+arch cobblestones2
+x 15
+y 12
+end
+arch grass_only
+x 16
+end
+arch grass_only
+x 16
 y 1
 end
-arch blocked
-x 12
+arch woodfloor2
+x 16
 y 2
 end
-arch blocked
-x 12
+arch woodwall_2_1_2
+x 16
+y 2
+end
+arch woodfloor2
+x 16
 y 3
 end
-arch blocked
-x 12
+arch woodfloor2
+x 16
 y 4
 end
-arch blocked
-x 12
+arch woodfloor2
+x 16
 y 5
 end
-arch blocked
-x 12
+arch woodfloor2
+x 16
 y 6
 end
-arch blocked
-x 12
+arch woodfloor2
+x 16
 y 7
 end
-arch blocked
-x 12
+arch woodfloor2
+x 16
 y 8
 end
-arch blocked
-x 12
+arch woodfloor2
+x 16
 y 9
 end
-arch blocked
-x 12
+arch woodfloor2
+x 16
 y 10
+end
+arch woodwall_1_4
+x 16
+y 10
+end
+arch dungeon_magic
+x 16
+y 11
+end
+arch grass_only
+x 16
+y 11
+move_block all
+end
+arch cobblestones2
+x 16
+y 12
+end
+arch grass_only
+x 17
+end
+arch grass_only
+x 17
+y 1
+end
+arch woodfloor2
+x 17
+y 2
+end
+arch woodwall_2_1_2
+x 17
+y 2
+end
+arch woodfloor2
+x 17
+y 3
+end
+arch woodfloor2
+x 17
+y 4
+end
+arch woodwall_0
+x 17
+y 4
+end
+arch woodfloor2
+x 17
+y 5
+end
+arch woodfloor2
+x 17
+y 6
+end
+arch woodfloor2
+x 17
+y 7
+end
+arch woodfloor2
+x 17
+y 8
+end
+arch woodwall_0
+x 17
+y 8
+end
+arch woodfloor2
+x 17
+y 9
+end
+arch woodfloor2
+x 17
+y 10
+end
+arch woodwall_2_1_2
+x 17
+y 10
+end
+arch grass_only
+x 17
+y 11
+end
+arch cobblestones2
+x 17
+y 12
+end
+arch grass_only
+x 18
+end
+arch grass_only
+x 18
+y 1
+end
+arch woodfloor2
+x 18
+y 2
+end
+arch woodwall_2_1_2
+x 18
+y 2
+end
+arch woodfloor2
+x 18
+y 3
+end
+arch woodfloor2
+x 18
+y 4
+end
+arch skeleton
+x 18
+y 4
+end
+arch woodfloor2
+x 18
+y 5
+end
+arch woodfloor2
+x 18
+y 6
+end
+arch woodfloor2
+x 18
+y 7
+end
+arch woodfloor2
+x 18
+y 8
+end
+arch woodfloor2
+x 18
+y 9
+end
+arch woodfloor2
+x 18
+y 10
+end
+arch woodwall_2_1_2
+x 18
+y 10
+end
+arch grass_only
+x 18
+y 11
+end
+arch cobblestones2
+x 18
+y 12
+end
+arch grass_only
+x 19
+end
+arch grass_only
+x 19
+y 1
+end
+arch woodfloor2
+x 19
+y 2
+end
+arch woodwall_win2
+x 19
+y 2
+end
+arch woodfloor2
+x 19
+y 3
+end
+arch woodfloor2
+x 19
+y 4
+end
+arch woodfloor2
+x 19
+y 5
+end
+arch woodfloor2
+x 19
+y 6
+end
+arch woodfloor2
+x 19
+y 7
+end
+arch woodfloor2
+x 19
+y 8
+end
+arch woodfloor2
+x 19
+y 9
+end
+arch woodfloor2
+x 19
+y 10
+end
+arch woodwall_win2
+x 19
+y 10
+end
+arch grass_only
+x 19
+y 11
+end
+arch cobblestones2
+x 19
+y 12
+end
+arch grass_only
+x 20
+end
+arch grass_only
+x 20
+y 1
+end
+arch woodfloor2
+x 20
+y 2
+end
+arch woodwall_2_1_2
+x 20
+y 2
+end
+arch woodfloor2
+x 20
+y 3
+end
+arch woodfloor2
+x 20
+y 4
+end
+arch woodfloor2
+x 20
+y 5
+end
+arch woodfloor2
+x 20
+y 6
+end
+arch woodfloor2
+x 20
+y 7
+end
+arch woodfloor2
+x 20
+y 8
+end
+arch skeleton
+x 20
+y 8
+end
+arch woodfloor2
+x 20
+y 9
+end
+arch woodfloor2
+x 20
+y 10
+end
+arch woodwall_2_1_2
+x 20
+y 10
+end
+arch grass_only
+x 20
+y 11
+end
+arch cobblestones2
+x 20
+y 12
+end
+arch grass_only
+x 21
+end
+arch grass_only
+x 21
+y 1
+end
+arch woodfloor2
+x 21
+y 2
+end
+arch woodwall_2_1_2
+x 21
+y 2
+end
+arch woodfloor2
+x 21
+y 3
+end
+arch woodfloor2
+x 21
+y 4
+end
+arch woodwall_0
+x 21
+y 4
+end
+arch woodfloor2
+x 21
+y 5
+end
+arch woodfloor2
+x 21
+y 6
+end
+arch woodfloor2
+x 21
+y 7
+end
+arch woodfloor2
+x 21
+y 8
+end
+arch woodwall_0
+x 21
+y 8
+end
+arch woodfloor2
+x 21
+y 9
+end
+arch woodfloor2
+x 21
+y 10
+end
+arch woodwall_2_1_2
+x 21
+y 10
+end
+arch grass_only
+x 21
+y 11
+end
+arch cobblestones2
+x 21
+y 12
+end
+arch grass_only
+x 22
+end
+arch grass_only
+x 22
+y 1
+end
+arch woodfloor2
+x 22
+y 2
+end
+arch woodwall_2_1_2
+x 22
+y 2
+end
+arch woodfloor2
+x 22
+y 3
+end
+arch woodfloor2
+x 22
+y 4
+end
+arch skeleton
+x 22
+y 4
+end
+arch woodfloor2
+x 22
+y 5
+end
+arch woodfloor2
+x 22
+y 6
+end
+arch woodfloor2
+x 22
+y 7
+end
+arch woodfloor2
+x 22
+y 8
+end
+arch woodfloor2
+x 22
+y 9
+end
+arch woodfloor2
+x 22
+y 10
+end
+arch woodwall_2_1_2
+x 22
+y 10
+end
+arch grass_only
+x 22
+y 11
+end
+arch cobblestones2
+x 22
+y 12
+end
+arch grass_only
+x 23
+end
+arch grass_only
+x 23
+y 1
+end
+arch woodfloor2
+x 23
+y 2
+end
+arch woodwall_2_1_2
+x 23
+y 2
+end
+arch woodfloor2
+x 23
+y 3
+end
+arch woodfloor2
+x 23
+y 4
+end
+arch woodfloor2
+x 23
+y 5
+end
+arch woodfloor2
+x 23
+y 6
+end
+arch woodfloor2
+x 23
+y 7
+end
+arch woodfloor2
+x 23
+y 8
+end
+arch woodfloor2
+x 23
+y 9
+end
+arch woodfloor2
+x 23
+y 10
+end
+arch woodwall_2_1_2
+x 23
+y 10
+end
+arch grass_only
+x 23
+y 11
+end
+arch cobblestones2
+x 23
+y 12
+end
+arch grass_only
+x 24
+end
+arch grass_only
+x 24
+y 1
+end
+arch woodfloor2
+x 24
+y 2
+end
+arch woodwall_win2
+x 24
+y 2
+end
+arch woodfloor2
+x 24
+y 3
+end
+arch woodfloor2
+x 24
+y 4
+end
+arch woodfloor2
+x 24
+y 5
+end
+arch woodfloor2
+x 24
+y 6
+end
+arch woodfloor2
+x 24
+y 7
+end
+arch woodfloor2
+x 24
+y 8
+end
+arch skeleton
+x 24
+y 8
+end
+arch woodfloor2
+x 24
+y 9
+end
+arch woodfloor2
+x 24
+y 10
+end
+arch woodwall_win2
+x 24
+y 10
+end
+arch grass_only
+x 24
+y 11
+end
+arch cobblestones2
+x 24
+y 12
+end
+arch grass_only
+x 25
+end
+arch grass_only
+x 25
+y 1
+end
+arch woodfloor2
+x 25
+y 2
+end
+arch woodwall_2_1_2
+x 25
+y 2
+end
+arch woodfloor2
+x 25
+y 3
+end
+arch woodfloor2
+x 25
+y 4
+end
+arch woodwall_0
+x 25
+y 4
+end
+arch woodfloor2
+x 25
+y 5
+end
+arch woodfloor2
+x 25
+y 6
+end
+arch woodfloor2
+x 25
+y 7
+end
+arch woodfloor2
+x 25
+y 8
+end
+arch woodwall_0
+x 25
+y 8
+end
+arch woodfloor2
+x 25
+y 9
+end
+arch woodfloor2
+x 25
+y 10
+end
+arch woodwall_2_1_2
+x 25
+y 10
+end
+arch grass_only
+x 25
+y 11
+end
+arch cobblestones2
+x 25
+y 12
+end
+arch grass_only
+x 26
+end
+arch grass_only
+x 26
+y 1
+end
+arch woodfloor2
+x 26
+y 2
+end
+arch woodwall_2_1_2
+x 26
+y 2
+end
+arch woodfloor2
+x 26
+y 3
+end
+arch generate_skeleton
+x 26
+y 3
+end
+arch woodfloor2
+x 26
+y 4
+end
+arch skeleton
+x 26
+y 4
+end
+arch woodfloor2
+x 26
+y 5
+end
+arch woodfloor2
+x 26
+y 6
+end
+arch woodfloor2
+x 26
+y 7
+end
+arch woodfloor2
+x 26
+y 8
+end
+arch skeleton
+x 26
+y 8
+end
+arch woodfloor2
+x 26
+y 9
+end
+arch woodfloor2
+x 26
+y 10
+end
+arch woodwall_2_1_2
+x 26
+y 10
+end
+arch grass_only
+x 26
+y 11
+end
+arch cobblestones2
+x 26
+y 12
+end
+arch grass_only
+x 27
+end
+arch grass_only
+x 27
+y 1
+end
+arch woodfloor2
+x 27
+y 2
+end
+arch woodwall_2_1_2
+x 27
+y 2
+end
+arch woodfloor2
+x 27
+y 3
+end
+arch corpse
+msg
+Yep...its dead.
+endmsg
+x 27
+y 3
+end
+arch woodfloor2
+x 27
+y 4
+end
+arch woodfloor2
+x 27
+y 5
+end
+arch woodfloor2
+x 27
+y 6
+end
+arch woodfloor2
+x 27
+y 7
+end
+arch woodfloor2
+x 27
+y 8
+end
+arch woodfloor2
+x 27
+y 9
+end
+arch woodfloor2
+x 27
+y 10
+end
+arch woodwall_2_1_2
+x 27
+y 10
+end
+arch grass_only
+x 27
+y 11
+end
+arch cobblestones2
+x 27
+y 12
+end
+arch grass_only
+x 28
+end
+arch grass_only
+x 28
+y 1
+end
+arch woodfloor2
+x 28
+y 2
+end
+arch woodwall_2_2_3
+x 28
+y 2
+end
+arch woodfloor2
+x 28
+y 3
+end
+arch woodwall_2_1_1
+x 28
+y 3
+end
+arch woodfloor2
+x 28
+y 4
+end
+arch woodwall_win1
+x 28
+y 4
+end
+arch woodfloor2
+x 28
+y 5
+end
+arch woodwall_2_1_1
+x 28
+y 5
+end
+arch woodfloor2
+x 28
+y 6
+end
+arch woodwall_2_1_1
+x 28
+y 6
+end
+arch woodfloor2
+x 28
+y 7
+end
+arch woodwall_2_1_1
+x 28
+y 7
+end
+arch woodfloor2
+x 28
+y 8
+end
+arch woodwall_win1
+x 28
+y 8
+end
+arch woodfloor2
+x 28
+y 9
+end
+arch woodwall_2_1_1
+x 28
+y 9
+end
+arch woodfloor2
+x 28
+y 10
+end
+arch woodwall_2_2_4
+x 28
+y 10
+end
+arch grass_only
+x 28
+y 11
+end
+arch cobblestones2
+x 28
+y 12
+end
+arch grass_only
+x 29
+end
+arch grass_only
+x 29
+y 1
+end
+arch grass_only
+x 29
+y 2
+end
+arch grass_only
+x 29
+y 3
+end
+arch grass_only
+x 29
+y 4
+end
+arch grass_only
+x 29
+y 5
+end
+arch grass_only
+x 29
+y 6
+end
+arch grass_only
+x 29
+y 7
+end
+arch grass_only
+x 29
+y 8
+end
+arch grass_only
+x 29
+y 9
+end
+arch grass_only
+x 29
+y 10
+end
+arch grass_only
+x 29
+y 11
+end
+arch cobblestones2
+x 29
+y 12
+end
+arch grass_only
+x 30
+end
+arch grass_only
+x 30
+y 1
+end
+arch grass_only
+x 30
+y 2
+end
+arch grass_only
+x 30
+y 3
+end
+arch grass_only
+x 30
+y 4
+end
+arch grass_only
+x 30
+y 5
+end
+arch grass_only
+x 30
+y 6
+end
+arch grass_only
+x 30
+y 7
+end
+arch grass_only
+x 30
+y 8
+end
+arch grass_only
+x 30
+y 9
+end
+arch grass_only
+x 30
+y 10
+end
+arch grass_only
+x 30
+y 11
+end
+arch cobblestones2
+x 30
+y 12
 end
