@@ -66,3 +66,47 @@ end_description
 end_step
 end_quest
 
+quest wolfsburg/treasure-island
+title The Treasure Island
+face biggalleon.x11
+description
+Find the key to a hidden treasure on an island.
+end_description
+step 10
+description
+I found what claims to be a treasure island, but I don't know how to claim that treasure. I should investigate in Wolfsburg.
+end_description
+end_step
+step 20
+description
+I should talk to Long John Silver, in the Eternal reward taven.
+end_description
+end_step
+step 30
+description
+Long John Silver gave me the key to his den, which contains a map he needs. The den is located on some island I can reach in boat from Wolfsburg.
+end_description
+end_step
+step 40
+description
+I have Long John Silver's map, I should go talk to him.
+end_description
+end_step
+step 50
+description
+I must go find the magic shovel. Long John Silver made me a map, and a gallion from Wolfsburg should be able to transport me to that island.
+end_description
+end_step
+step 60
+description
+I have the magic shovel, I can now go claim the treasure on the island.
+end_description
+end_step
+step 70
+finishes_quest
+description
+I claimed the treasure.
+end_description
+end_step
+end_quest
+
