@@ -3,6 +3,9 @@ name world_129_107
 region wolfsburg
 width 50
 height 50
+msg
+Modified: 2012-07-15 Nicolas Weeger
+endmsg
 outdoor 1
 tile_path_1 world_129_106
 tile_path_3 world_129_108
@@ -1311,7 +1314,7 @@ x 5
 y 20
 end
 arch scroll
-name Treasure Map
+name Long John Silver's treasure map
 msg
 WWWWWWWWWWWWWWWWWWW
 WWWWW     WWWWWWWWW
@@ -1328,6 +1331,13 @@ WWWWWWWWWWWWWWWWWWW
 endmsg
 x 5
 y 20
+identified 1
+arch quest_advance_pickup
+name wolfsburg/treasure-island 30>40
+end
+arch quest_prevent_drop
+name wolfsburg/treasure-island 70
+end
 end
 arch woodfloor
 x 5
