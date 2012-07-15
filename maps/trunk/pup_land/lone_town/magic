@@ -8,7 +8,7 @@ enter_x 7
 enter_y 10
 msg
 Created:  1997-11-26
-Modified: 2012-04-06 Rick Tanner
+Modified: 2012-07-15 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -2976,13 +2976,12 @@ arch blocked
 x 15
 y 10
 end
-arch spikes_open
-name 4
+arch teleporter
+hp 10
+sp 5
 x 15
 y 11
-speed 0.500000
-resist_fire 30
-value 1
+speed 0.0
 connected 4
 end
 arch uw_sword
