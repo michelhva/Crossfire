@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-06-17 Rick Tanner
+Modified: 2012-07-26 leaf
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -352,8 +352,8 @@ end
 arch house_up
 name House of Gossip
 slaying ../navar_city/houses/houseofgossip
-hp 4
-sp 2
+hp 3
+sp 15
 x 1
 y 1
 end
