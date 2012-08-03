@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-08-01 Rick Tanner
+Modified: 2012-08-03 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -4502,8 +4502,8 @@ end
 arch house_1
 name Meeting House
 slaying ../navar_city/houses/meetinghouse
-hp 2
-sp 7
+hp 10
+sp 11
 x 12
 y 48
 end
