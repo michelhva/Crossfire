@@ -2,126 +2,125 @@ arch map
 name Meeting House
 difficulty 7
 region navar
-width 14
-height 10
-enter_x 2
-enter_y 7
+width 15
+height 15
+enter_x 10
+enter_y 11
 msg
 Created:  2012-05-17 Rick Tanner
-Modified: 2012-05-17 Rick Tanner
+Modified: 2012-08-03 Rick Tanner
 endmsg
 temp 2
 pressure 7
 humid 6
 end
-arch blocked
+arch cobblestones2
 end
-arch blocked
+arch cobblestones2
 y 1
 end
-arch blocked
+arch cobblestones2
 y 2
 end
-arch blocked
+arch cobblestones2
 y 3
 end
-arch blocked
+arch cobblestones2
 y 4
 end
-arch blocked
+arch cobblestones2
 y 5
 end
-arch blocked
+arch cobblestones2
 y 6
 end
-arch blocked
+arch cobblestones2
 y 7
 end
-arch blocked
+arch cobblestones2
 y 8
 end
-arch blocked
+arch cobblestones2
 y 9
 end
-arch blocked
+arch cobblestones2
+y 10
+end
+arch cobblestones2
+y 11
+end
+arch cobblestones2
+y 12
+end
+arch cobblestones2
+y 13
+end
+arch cobblestones2
+y 14
+end
+arch grass_only
 x 1
 end
-arch woodfloor
+arch grass_only
 x 1
 y 1
 end
-arch wall_2_2_2
-x 1
-y 1
-end
-arch woodfloor
+arch grass_only
 x 1
 y 2
 end
-arch wall_2_1_1
-x 1
-y 2
-end
-arch woodfloor
+arch grass_only
 x 1
 y 3
 end
-arch wall_2_1_1
-x 1
-y 3
-end
-arch woodfloor
+arch grass_only
 x 1
 y 4
 end
-arch wall_2_1_1
-x 1
-y 4
-end
-arch woodfloor
+arch grass_only
 x 1
 y 5
 end
-arch wall_2_1_1
-x 1
-y 5
-end
-arch woodfloor
+arch grass_only
 x 1
 y 6
 end
-arch wall_2_1_1
-x 1
-y 6
-end
-arch woodfloor
+arch grass_only
 x 1
 y 7
 end
-arch wall_2_1_1
-x 1
-y 7
-end
-arch woodfloor
+arch grass_only
 x 1
 y 8
 end
-arch wall_2_2_1
-x 1
-y 8
-end
-arch blocked
+arch grass_only
 x 1
 y 9
 end
-arch blocked
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
+arch cobblestones2
+x 1
+y 14
+end
+arch grass_only
 x 2
 end
-arch woodfloor
-x 2
-y 1
-end
-arch wall_2_1_2
+arch grass_only
 x 2
 y 1
 end
@@ -129,9 +128,132 @@ arch woodfloor
 x 2
 y 2
 end
-arch chair_1.1
+arch woodwall_2_2_2
 x 2
 y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodwall_2_1_1
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodwall_2_1_1
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodwall_win1
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch woodwall_2_1_1
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch woodwall_3_2
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch woodwall_2_1_1
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch woodwall_win1
+x 2
+y 9
+end
+arch woodfloor
+x 2
+y 10
+end
+arch woodwall_2_1_1
+x 2
+y 10
+end
+arch woodfloor
+x 2
+y 11
+end
+arch woodwall_2_1_1
+x 2
+y 11
+end
+arch woodfloor
+x 2
+y 12
+end
+arch woodwall_2_2_1
+x 2
+y 12
+end
+arch grass_only
+x 2
+y 13
+end
+arch cobblestones2
+x 2
+y 14
+end
+arch grass_only
+x 3
+end
+arch grass_only
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch woodwall_2_1_2
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch chest
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
 end
 arch gnoll
 name A Gnoll who is FED UP WITH ELVES
@@ -141,722 +263,811 @@ exp 60
 dam 10
 wc 9
 ac 9
-x 2
-y 2
+x 3
+y 6
 level 5
 end
 arch woodfloor
-x 2
+x 3
+y 7
+end
+arch woodwall_1_3
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 8
+end
+arch chair_1.1
+x 3
+y 8
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 3
+y 8
+level 5
+end
+arch woodfloor
+x 3
+y 9
+end
+arch woodfloor
+x 3
+y 10
+end
+arch woodfloor
+x 3
+y 11
+end
+arch woodfloor
+x 3
+y 12
+end
+arch woodwall_2_1_2
+x 3
+y 12
+end
+arch grass_only
+x 3
+y 13
+end
+arch cobblestones2
+x 3
+y 14
+end
+arch grass_only
+x 4
+end
+arch grass_only
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch woodwall_win2
+x 4
+y 2
+end
+arch woodfloor
+x 4
 y 3
 end
-arch table_3
-x 2
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 4
+y 3
+level 5
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodwall_0
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodwall_0
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 10
+end
+arch woodwall_0
+x 4
+y 10
+end
+arch woodfloor
+x 4
+y 11
+end
+arch woodfloor
+x 4
+y 12
+end
+arch woodwall_win2
+x 4
+y 12
+end
+arch grass_only
+x 4
+y 13
+end
+arch cobblestones2
+x 4
+y 14
+end
+arch grass_only
+x 5
+end
+arch grass_only
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodwall_2_1_2
+x 5
+y 2
+end
+arch woodfloor
+x 5
 y 3
 end
 arch woodfloor
-x 2
+x 5
 y 4
 end
+arch chair_1.1
+x 5
+y 4
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 5
+y 4
+level 5
+end
+arch woodfloor
+x 5
+y 5
+end
 arch table_3
-x 2
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch chair_1.1
+x 5
+y 6
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 5
+y 6
+level 5
+end
+arch woodfloor
+x 5
+y 7
+end
+arch table_3
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch chair_1.1
+x 5
+y 8
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 5
+y 8
+level 5
+end
+arch woodfloor
+x 5
+y 9
+end
+arch table_3
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 10
+end
+arch woodfloor
+x 5
+y 11
+end
+arch woodfloor
+x 5
+y 12
+end
+arch woodwall_2_1_2
+x 5
+y 12
+end
+arch grass_only
+x 5
+y 13
+end
+arch cobblestones2
+x 5
+y 14
+end
+arch grass_only
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch woodwall_2_1_2
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch chair_3.2
+x 6
+y 3
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 6
+y 3
+level 5
+end
+arch woodfloor
+x 6
 y 4
 end
 arch woodfloor
-x 2
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch woodfloor
+x 6
+y 10
+end
+arch woodfloor
+x 6
+y 11
+end
+arch woodfloor
+x 6
+y 12
+end
+arch woodwall_2_1_2
+x 6
+y 12
+end
+arch grass_only
+x 6
+y 13
+end
+arch cobblestones2
+x 6
+y 14
+end
+arch grass_only
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch woodwall_win2
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch chair_1.1
+x 7
+y 4
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 7
+y 4
+level 5
+end
+arch woodfloor
+x 7
 y 5
 end
 arch table_3
-x 2
+x 7
 y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch chair_1.1
+x 7
+y 6
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 7
+y 6
+level 5
+end
+arch woodfloor
+x 7
+y 7
+end
+arch table_3
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch chair_1.1
+x 7
+y 8
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 7
+y 8
+level 5
+end
+arch woodfloor
+x 7
+y 9
+end
+arch table_3
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch woodfloor
+x 7
+y 11
+end
+arch woodfloor
+x 7
+y 12
+end
+arch woodwall_win2
+x 7
+y 12
+end
+arch grass_only
+x 7
+y 13
+end
+arch cobblestones2
+x 7
+y 14
+end
+arch grass_only
+x 8
+end
+arch grass_only
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch woodwall_2_1_2
+x 8
+y 2
+end
+arch woodfloor
+x 8
+y 3
+end
+arch chair_3.2
+x 8
+y 3
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 8
+y 3
+level 5
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch woodfloor
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
+end
+arch woodwall_2_1_2
+x 8
+y 12
+end
+arch grass_only
+x 8
+y 13
+end
+arch cobblestones2
+x 8
+y 14
+end
+arch grass_only
+x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch woodwall_2_1_2
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch chair_1.1
+x 9
+y 4
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 9
+y 4
+level 5
+end
+arch woodfloor
+x 9
+y 5
+end
+arch table_3
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch chair_1.1
+x 9
+y 6
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 9
+y 6
+level 5
+end
+arch woodfloor
+x 9
+y 7
+end
+arch table_3
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch woodwall_2_2_2
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch woodwall_1_2
+x 9
+y 10
 end
 arch magic_mouth
 msg
 Oh no...you have interrupted a meeting of 'FED UP WITH ELVES' they look pretty pissed.
 endmsg
-x 2
+x 9
+y 11
+end
+arch woodfloor
+x 9
+y 11
+end
+arch woodfloor
+x 9
+y 12
+end
+arch woodwall_1_3
+x 9
+y 12
+end
+arch dungeon_magic
+x 9
+y 13
+end
+arch grass_only
+x 9
+y 13
+move_block all
+end
+arch cobblestones2
+x 9
+y 14
+end
+arch grass_only
+x 10
+end
+arch grass_only
+x 10
+y 1
+end
+arch woodfloor
+x 10
+y 2
+end
+arch woodwall_win2
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 3
+end
+arch gnoll
+name A Gnoll who is FED UP WITH ELVES
+hp 30
+maxhp 30
+exp 60
+dam 10
+wc 9
+ac 9
+x 10
+y 3
+level 5
+end
+arch woodfloor
+x 10
+y 4
+end
+arch woodwall_0
+x 10
+y 4
+end
+arch woodfloor
+x 10
+y 5
+end
+arch woodfloor
+x 10
 y 6
 end
 arch woodfloor
-x 2
-y 6
-end
-arch woodfloor
-x 2
+x 10
 y 7
 end
-arch oakdoor
+arch woodwall_0
+x 10
+y 7
+end
+arch woodfloor
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 9
+end
+arch woodwall_1_3
+x 10
+y 9
+end
+arch woodfloor
+x 10
+y 10
+end
+arch woodfloor
+x 10
+y 11
+end
+arch woodfloor
+x 10
+y 12
+end
+arch oakdoor_2
 slaying /world/world_122_116
 hp 12
 sp 48
-x 2
-y 7
-end
-arch woodfloor
-x 2
-y 8
-end
-arch wall_2_1_2
-x 2
-y 8
-end
-arch blocked
-x 2
-y 9
-end
-arch blocked
-x 3
-end
-arch woodfloor
-x 3
-y 1
-end
-arch wall_2_1_2
-x 3
-y 1
-end
-arch woodfloor
-x 3
-y 2
-end
-arch woodfloor
-x 3
-y 3
-end
-arch chair_1.1
-x 3
-y 3
-end
-arch woodfloor
-x 3
-y 4
-end
-arch chair_1.1
-x 3
-y 4
-end
-arch woodfloor
-x 3
-y 5
-end
-arch chair_1.1
-x 3
-y 5
-end
-arch magic_mouth
-msg
-Oh no...you have interrupted a meeting of 'FED UP WITH ELVES' they look pretty pissed.
-endmsg
-x 3
-y 6
-end
-arch woodfloor
-x 3
-y 6
-end
-arch magic_mouth
-msg
-Oh no...you have interrupted a meeting of 'FED UP WITH ELVES' they look pretty pissed.
-endmsg
-x 3
-y 7
-end
-arch woodfloor
-x 3
-y 7
-end
-arch woodfloor
-x 3
-y 8
-end
-arch wall_2_1_2
-x 3
-y 8
-end
-arch blocked
-x 3
-y 9
-end
-arch blocked
-x 4
-end
-arch woodfloor
-x 4
-y 1
-end
-arch wall_2_1_2
-x 4
-y 1
-end
-arch woodfloor
-x 4
-y 2
-end
-arch chair_1.1
-x 4
-y 2
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 4
-y 2
-level 5
-end
-arch woodfloor
-x 4
-y 3
-end
-arch table_3
-x 4
-y 3
-end
-arch woodfloor
-x 4
-y 4
-end
-arch table_3
-x 4
-y 4
-end
-arch woodfloor
-x 4
-y 5
-end
-arch table_3
-x 4
-y 5
-end
-arch woodfloor
-x 4
-y 6
-end
-arch table_3
-x 4
-y 6
-end
-arch woodfloor
-x 4
-y 7
-end
-arch chair_1.1
-x 4
-y 7
-end
-arch woodfloor
-x 4
-y 8
-end
-arch wall_2_1_2
-x 4
-y 8
-end
-arch blocked
-x 4
-y 9
-end
-arch blocked
-x 5
-end
-arch woodfloor
-x 5
-y 1
-end
-arch wall_2_1_2
-x 5
-y 1
-end
-arch woodfloor
-x 5
-y 2
-end
-arch woodfloor
-x 5
-y 3
-end
-arch chair_1.1
-x 5
-y 3
-end
-arch woodfloor
-x 5
-y 4
-end
-arch chair_1.1
-x 5
-y 4
-end
-arch woodfloor
-x 5
-y 5
-end
-arch chair_1.1
-x 5
-y 5
-end
-arch woodfloor
-x 5
-y 6
-end
-arch chair_1.1
-x 5
-y 6
-end
-arch woodfloor
-x 5
-y 7
-end
-arch woodfloor
-x 5
-y 8
-end
-arch wall_2_1_2
-x 5
-y 8
-end
-arch blocked
-x 5
-y 9
-end
-arch blocked
-x 6
-end
-arch woodfloor
-x 6
-y 1
-end
-arch wall_2_1_2
-x 6
-y 1
-end
-arch woodfloor
-x 6
-y 2
-end
-arch chair_1.1
-x 6
-y 2
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 6
-y 2
-level 5
-end
-arch woodfloor
-x 6
-y 3
-end
-arch table_3
-x 6
-y 3
-end
-arch woodfloor
-x 6
-y 4
-end
-arch table_3
-x 6
-y 4
-end
-arch woodfloor
-x 6
-y 5
-end
-arch table_3
-x 6
-y 5
-end
-arch woodfloor
-x 6
-y 6
-end
-arch table_3
-x 6
-y 6
-end
-arch woodfloor
-x 6
-y 7
-end
-arch chair_1.1
-x 6
-y 7
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 6
-y 7
-level 5
-end
-arch woodfloor
-x 6
-y 8
-end
-arch wall_2_1_2
-x 6
-y 8
-end
-arch blocked
-x 6
-y 9
-end
-arch blocked
-x 7
-end
-arch woodfloor
-x 7
-y 1
-end
-arch wall_2_1_2
-x 7
-y 1
-end
-arch woodfloor
-x 7
-y 2
-end
-arch woodfloor
-x 7
-y 3
-end
-arch chair_1.1
-x 7
-y 3
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 7
-y 3
-level 5
-end
-arch woodfloor
-x 7
-y 4
-end
-arch chair_1.1
-x 7
-y 4
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 7
-y 4
-level 5
-end
-arch woodfloor
-x 7
-y 5
-end
-arch chair_1.1
-x 7
-y 5
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 7
-y 5
-level 5
-end
-arch woodfloor
-x 7
-y 6
-end
-arch chair_1.1
-x 7
-y 6
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 7
-y 6
-level 5
-end
-arch woodfloor
-x 7
-y 7
-end
-arch woodfloor
-x 7
-y 8
-end
-arch wall_2_1_2
-x 7
-y 8
-end
-arch blocked
-x 7
-y 9
-end
-arch blocked
-x 8
-end
-arch woodfloor
-x 8
-y 1
-end
-arch wall_2_1_2
-x 8
-y 1
-end
-arch woodfloor
-x 8
-y 2
-end
-arch chair_1.1
-x 8
-y 2
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 8
-y 2
-level 5
-end
-arch woodfloor
-x 8
-y 3
-end
-arch table_3
-x 8
-y 3
-end
-arch woodfloor
-x 8
-y 4
-end
-arch table_3
-x 8
-y 4
-end
-arch woodfloor
-x 8
-y 5
-end
-arch table_3
-x 8
-y 5
-end
-arch woodfloor
-x 8
-y 6
-end
-arch table_3
-x 8
-y 6
-end
-arch woodfloor
-x 8
-y 7
-end
-arch chair_1.1
-x 8
-y 7
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 8
-y 7
-level 5
-end
-arch woodfloor
-x 8
-y 8
-end
-arch wall_2_1_2
-x 8
-y 8
-end
-arch blocked
-x 8
-y 9
-end
-arch blocked
-x 9
-end
-arch woodfloor
-x 9
-y 1
-end
-arch wall_2_1_2
-x 9
-y 1
-end
-arch woodfloor
-x 9
-y 2
-end
-arch woodfloor
-x 9
-y 3
-end
-arch woodfloor
-x 9
-y 4
-end
-arch woodfloor
-x 9
-y 5
-end
-arch woodfloor
-x 9
-y 6
-end
-arch woodfloor
-x 9
-y 7
-end
-arch woodfloor
-x 9
-y 8
-end
-arch wall_2_1_2
-x 9
-y 8
-end
-arch blocked
-x 9
-y 9
-end
-arch blocked
 x 10
+y 12
 end
-arch woodfloor
+arch dungeon_magic
 x 10
-y 1
+y 13
 end
-arch wall_2_1_2
+arch grass_only
 x 10
-y 1
+y 13
+move_block all
 end
-arch woodfloor
+arch cobblestones2
 x 10
-y 2
+y 14
 end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 10
-y 2
-level 5
-end
-arch woodfloor
-x 10
-y 3
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 10
-y 3
-level 5
-end
-arch woodfloor
-x 10
-y 4
-end
-arch table_3
-x 10
-y 4
-end
-arch woodfloor
-x 10
-y 5
-end
-arch table_3
-x 10
-y 5
-end
-arch woodfloor
-x 10
-y 6
-end
-arch woodfloor
-x 10
-y 7
-end
-arch woodfloor
-x 10
-y 8
-end
-arch wall_2_1_2
-x 10
-y 8
-end
-arch blocked
-x 10
-y 9
-end
-arch blocked
+arch grass_only
 x 11
 end
-arch woodfloor
-x 11
-y 1
-end
-arch wall_2_1_2
+arch grass_only
 x 11
 y 1
 end
@@ -864,7 +1075,7 @@ arch woodfloor
 x 11
 y 2
 end
-arch chest
+arch woodwall_2_1_2
 x 11
 y 2
 end
@@ -880,41 +1091,9 @@ arch woodfloor
 x 11
 y 4
 end
-arch chair_3.2
-x 11
-y 4
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 11
-y 4
-level 5
-end
 arch woodfloor
 x 11
 y 5
-end
-arch chair_3.2
-x 11
-y 5
-end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
-x 11
-y 5
-level 5
 end
 arch woodfloor
 x 11
@@ -936,38 +1115,58 @@ arch woodfloor
 x 11
 y 7
 end
-arch gnoll
-name A Gnoll who is FED UP WITH ELVES
-hp 30
-maxhp 30
-exp 60
-dam 10
-wc 9
-ac 9
+arch woodwall_1_4
 x 11
 y 7
-level 5
 end
 arch woodfloor
 x 11
 y 8
 end
-arch wall_2_1_2
-x 11
-y 8
-end
-arch blocked
+arch magic_mouth
+msg
+Oh no...you have interrupted a meeting of 'FED UP WITH ELVES' they look pretty pissed.
+endmsg
 x 11
 y 9
 end
-arch blocked
-x 12
+arch woodfloor
+x 11
+y 9
 end
 arch woodfloor
-x 12
-y 1
+x 11
+y 10
 end
-arch wall_2_2_3
+arch woodfloor
+x 11
+y 11
+end
+arch woodfloor
+x 11
+y 12
+end
+arch woodwall_1_4
+x 11
+y 12
+end
+arch dungeon_magic
+x 11
+y 13
+end
+arch grass_only
+x 11
+y 13
+move_block all
+end
+arch cobblestones2
+x 11
+y 14
+end
+arch grass_only
+x 12
+end
+arch grass_only
 x 12
 y 1
 end
@@ -975,7 +1174,7 @@ arch woodfloor
 x 12
 y 2
 end
-arch wall_2_1_1
+arch woodwall_2_2_3
 x 12
 y 2
 end
@@ -983,7 +1182,7 @@ arch woodfloor
 x 12
 y 3
 end
-arch wall_2_1_1
+arch woodwall_2_1_1
 x 12
 y 3
 end
@@ -991,7 +1190,7 @@ arch woodfloor
 x 12
 y 4
 end
-arch wall_2_1_1
+arch woodwall_2_1_1
 x 12
 y 4
 end
@@ -999,7 +1198,7 @@ arch woodfloor
 x 12
 y 5
 end
-arch wall_2_1_1
+arch woodwall_win1
 x 12
 y 5
 end
@@ -1007,7 +1206,7 @@ arch woodfloor
 x 12
 y 6
 end
-arch wall_2_1_1
+arch woodwall_2_1_1
 x 12
 y 6
 end
@@ -1015,7 +1214,7 @@ arch woodfloor
 x 12
 y 7
 end
-arch wall_2_1_1
+arch woodwall_3_4
 x 12
 y 7
 end
@@ -1023,50 +1222,165 @@ arch woodfloor
 x 12
 y 8
 end
-arch wall_2_2_4
+arch woodwall_2_1_1
 x 12
 y 8
 end
-arch blocked
+arch woodfloor
 x 12
 y 9
 end
-arch blocked
+arch woodwall_win1
+x 12
+y 9
+end
+arch woodfloor
+x 12
+y 10
+end
+arch woodwall_2_1_1
+x 12
+y 10
+end
+arch woodfloor
+x 12
+y 11
+end
+arch woodwall_2_1_1
+x 12
+y 11
+end
+arch woodfloor
+x 12
+y 12
+end
+arch woodwall_2_2_4
+x 12
+y 12
+end
+arch grass_only
+x 12
+y 13
+end
+arch cobblestones2
+x 12
+y 14
+end
+arch grass_only
 x 13
 end
-arch blocked
+arch grass_only
 x 13
 y 1
 end
-arch blocked
+arch grass_only
 x 13
 y 2
 end
-arch blocked
+arch grass_only
 x 13
 y 3
 end
-arch blocked
+arch grass_only
 x 13
 y 4
 end
-arch blocked
+arch grass_only
 x 13
 y 5
 end
-arch blocked
+arch grass_only
 x 13
 y 6
 end
-arch blocked
+arch grass_only
 x 13
 y 7
 end
-arch blocked
+arch grass_only
 x 13
 y 8
 end
-arch blocked
+arch grass_only
 x 13
 y 9
+end
+arch grass_only
+x 13
+y 10
+end
+arch grass_only
+x 13
+y 11
+end
+arch grass_only
+x 13
+y 12
+end
+arch grass_only
+x 13
+y 13
+end
+arch cobblestones2
+x 13
+y 14
+end
+arch grass_only
+x 14
+end
+arch grass_only
+x 14
+y 1
+end
+arch grass_only
+x 14
+y 2
+end
+arch grass_only
+x 14
+y 3
+end
+arch grass_only
+x 14
+y 4
+end
+arch grass_only
+x 14
+y 5
+end
+arch grass_only
+x 14
+y 6
+end
+arch grass_only
+x 14
+y 7
+end
+arch grass_only
+x 14
+y 8
+end
+arch grass_only
+x 14
+y 9
+end
+arch grass_only
+x 14
+y 10
+end
+arch grass_only
+x 14
+y 11
+end
+arch grass_only
+x 14
+y 12
+end
+arch grass_only
+x 14
+y 13
+end
+arch cobblestones2
+x 14
+y 14
 end
