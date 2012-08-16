@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2012-05-22 Rick Tanner
+Modified: 2012-08-16 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -6838,7 +6838,11 @@ x 24
 y 23
 elevation 0
 end
-arch tree5
+arch house_2
+name Darcap Imperial Post Office
+slaying ../darcap/darcap/shops/IPO_darcap
+hp 9
+sp 9
 x 24
 y 23
 end
