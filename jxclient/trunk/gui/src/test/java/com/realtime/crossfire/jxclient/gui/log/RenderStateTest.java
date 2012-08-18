@@ -29,8 +29,8 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
-import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
@@ -191,7 +191,7 @@ public class RenderStateTest {
             final Graphics2D g = image.createGraphics();
             final Font font;
             try {
-                final FileInputStream fis = new FileInputStream("skins/ragnorok/fonts/regular.ttf");
+                final InputStream fis = getClass().getClassLoader().getResourceAsStream("com/realtime/crossfire/jxclient/skins/ragnorok/fonts/regular.ttf");
                 try {
                     try {
                         font = Font.createFont(Font.TRUETYPE_FONT, fis);
