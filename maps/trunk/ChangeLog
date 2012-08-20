@@ -1,3 +1,282 @@
+2012-08-19 06:04  rjtanner
+
+	* lake_country/shops/IPO_lakecountry, world/world_109_126: New Map,
+	  Lake Country Imperial Post Office
+	  (lake_country/shops/IPO_lakecountry) with the usual features of
+	  message sending and receiving along with a message board. Updated
+	  world map (world/world_109_126) to include the IPO.
+
+2012-08-18 05:50  rjtanner
+
+	* brest/privateshops/privateshop_1,
+	  brest/privateshops/privateshop_10,
+	  brest/privateshops/privateshop_11,
+	  brest/privateshops/privateshop_12,
+	  brest/privateshops/privateshop_13,
+	  brest/privateshops/privateshop_14,
+	  brest/privateshops/privateshop_15,
+	  brest/privateshops/privateshop_16,
+	  brest/privateshops/privateshop_17,
+	  brest/privateshops/privateshop_18,
+	  brest/privateshops/privateshop_19,
+	  brest/privateshops/privateshop_2,
+	  brest/privateshops/privateshop_20,
+	  brest/privateshops/privateshop_21,
+	  brest/privateshops/privateshop_22,
+	  brest/privateshops/privateshop_23,
+	  brest/privateshops/privateshop_24,
+	  brest/privateshops/privateshop_25,
+	  brest/privateshops/privateshop_26,
+	  brest/privateshops/privateshop_27,
+	  brest/privateshops/privateshop_28,
+	  brest/privateshops/privateshop_3,
+	  brest/privateshops/privateshop_4,
+	  brest/privateshops/privateshop_5,
+	  brest/privateshops/privateshop_6,
+	  brest/privateshops/privateshop_7,
+	  brest/privateshops/privateshop_8,
+	  brest/privateshops/privateshop_9, scorn/shops/privateshop_43_36,
+	  scorn/shops/privateshop_43_37, scorn/shops/privateshop_48_34,
+	  scorn/shops/privateshop_48_35, test/newmaps/privateshop: Removed
+	  weather setting (temp 50) from map header to the private shop
+	  maps. Technical change, no functional changes.
+
+2012-08-18 05:35  rjtanner
+
+	* navar_city/houses/meetinghouse: Remove weather settings from
+	  Meeting House (navar_city/houses/meetinghouse) in Navar.
+	  Technical change - no function changes. Not even sure how those
+	  settings were activated on the map.
+
+2012-08-17 08:35  rjtanner
+
+	* darcap/darcap/shops/IPO_darcap: Map title and region correction
+	  to Darcap Imperial Post Office (darcap/darcap/shops/IPO_darcap).
+
+2012-08-17 08:32  rjtanner
+
+	* wolfsburg/shops/IPO_wolfsburg, world/world_128_109: New Map,
+	  Wolfsburg Imperial Post Office (wolfsburg/shops/IPO_wolfsburg)
+	  with the usual features of message sending and receiving along
+	  with a message board. Updated world map (world/world_128_109) to
+	  include the IPO.
+
+2012-08-16 07:51  rjtanner
+
+	* darcap/darcap/shops/IPO_darcap, world/world_116_102: New Map,
+	  Darcap Imperial Post Office (darcap/darcap/shops/IPO_darcap) with
+	  the usual features of message sending and receiving along with a
+	  message board. Updated world map (world/world_116_102) to include
+	  the IPO.
+
+2012-08-15 08:28  rjtanner
+
+	* santo_dominion/shops/IPO_santodominion, world/world_102_108: New
+	  Map, Santo Dominion Imperial Post Office
+	  (santo_dominion/shops/IPO_santodominion) with the usual features
+	  of message sending and receiving along with a message board.
+	  Updated world map (world/world_102_108) to include the IPO.
+
+2012-08-14 07:05  rjtanner
+
+	* navar_city/houses/turlssmallhouse, world/world_121_116: Cosmetic
+	  and layout changes to Turl's Small House
+	  (navar_city/houses/turlssmallhouse) in Navar. Enlarged the map to
+	  include area surrounding the house, made the house larger with a
+	  room and some windows. Updated world map (world/world_121_116)
+	  for map entrance coordinate changes.
+
+2012-08-13 06:48  rjtanner
+
+	* navar_city/houses/travellerswayhouse,
+	  navar_city/houses/travellorswayhouse, world/world_122_117: Update
+	  file name typo for Traveller's Wayhouse (travellorswayhouse ->
+	  travellerswayhouse) in Navar. Updated world map
+	  (world/world_122_117) to reflect file name change.
+
+2012-08-13 06:40  rjtanner
+
+	* navar_city/houses/travellorswayhouse, world/world_122_117:
+	  Cosmetic and layout changes to Traveller's Wayhouse
+	  (travellorswayhouse) in Navar. Enlarged the map to include the
+	  area surrounding the house, made the house larger with a couple
+	  of rooms and windows. Updated world map (world/world_122_117) for
+	  map entrance coordinate changes.
+
+2012-08-12 08:32  rjtanner
+
+	* navar_city/houses/wisehouse, world/world_121_117: Cosmetic and
+	  layout changes to Wise House (navar_city/houses/wisehouse) in
+	  Navar. Enlarged the map to include the area surrounding the
+	  cabin, made the house larger with a couple of rooms and windows.
+	  Updated world map (world/world_121_117) for map entrance
+	  coordinate changes.
+
+2012-08-11 05:12  rjtanner
+
+	* navar_city/houses/toddscabin, world/world_121_116: Cosmetic and
+	  layout changes to Todd's Cabin (navar_city/houses/toddscabin) in
+	  Navar. Enlarged the map to include the area surrounding the
+	  cabin, made the cabin larger with a couple of rooms and windows.
+	  Updated world map (world/world_121_116) for map entrance
+	  coordinate changes.
+
+2012-08-10 05:58  rjtanner
+
+	* navar_city/houses/stromssmallhouse, world/world_121_116: Cosmetic
+	  and layout changes to Strom's Small House
+	  (navar_city/houses/stromssmallhouse) in Navar. Enlarged the map
+	  to include the area surrounding the house, made the house larger
+	  with a couple of rooms and windows. Updated world map
+	  (world/world_121_116) for map entrance coordinate changes.
+
+2012-08-09 06:20  rjtanner
+
+	* navar_city/houses/smokeyhouse, world/world_121_117: Cosmetic and
+	  layout changes to Smokey House (navar_city/houses/smokeyhouse) in
+	  Navar. Enlarged the map to include the area surrounding the
+	  house, made the house larger and with windows. Updated world map
+	  (world/world_121_117) for map entrance coordinate changes.
+
+2012-08-08 06:48  rjtanner
+
+	* navar_city/houses/rundownhouse, world/world_121_117: Cosmetic and
+	  layout changes to Rundown House (navar_city/houses/rundownhouse)
+	  in Navar. Enlarged the map to include the area surrounding the
+	  house, made the house larger with a couple of rooms and windows.
+	  Updated world map (world/world_121_117) for map entrance
+	  coordinate changes.
+
+2012-08-07 04:54  rjtanner
+
+	* navar_city/houses/rudyscottage, world/world_122_116: Cosmetic and
+	  layout changes to Rudy's Cottage (navar_city/houses/rudyscottage)
+	  in Navar. Enlarged the map to include area surrounding the house,
+	  made the cottage slightly larger. Updated world map
+	  (world/world_122_116) for map entrance coordinate changes.
+
+2012-08-06 05:40  rjtanner
+
+	* navar_city/houses/raazlessmallhouse, world/world_121_116:
+	  Cosmetic and layout changes to Raazle's Small House
+	  (navar_city/houses/raazlessmallhouse) in Navar. Enlarged the map
+	  to include area surrounding the house, added more furniture, made
+	  the house larger with rooms and windows. Updated world map
+	  (world/world_121_116) for map entrance coordinate changes.
+
+2012-08-05 08:08  rjtanner
+
+	* navar_city/houses/occupiedcabin, world/world_121_116: Cosmetic
+	  and layout changes to Occupied Cabin
+	  (navar_city/houses/occupiedcabin) in Navar. Enlarged the map to
+	  include area surrounding the house, added more furniture, made
+	  the house larger with rooms and windows. Updated world map
+	  (world/world_121_116) for map entrance coordinate changes.
+
+2012-08-04 06:49  rjtanner
+
+	* navar_city/houses/no4mainst, world/world_121_116: Cosmetic and
+	  layout changes to No. 4 Main St. (navar_city/houses/no4mainst) in
+	  Navar. Enlarged the map to include area surrounding the house,
+	  added more furniture, made the house larger with rooms and
+	  windows. Updated world map (world/world_121_116) for map entrance
+	  coordinate changes.
+
+2012-08-04 05:14  rjtanner
+
+	* euthville/devil.church1: Map name update to Valriel's Church,
+	  Catacombs (was Valriel's church, catacombs) in Euthville. No
+	  functional changes.
+
+2012-08-03 06:13  rjtanner
+
+	* navar_city/houses/meetinghouse, world/world_122_116: Cosmetic and
+	  layout changes to Meeting House (navar_city/houses/meetinghouse)
+	  in Navar. Enlarged the map to include area surrounding the house,
+	  added more furniture, made the house larger with rooms and
+	  windows. Updated world map (world/world_122_116) for map entrance
+	  coordinate changes.
+
+2012-08-02 06:33  rjtanner
+
+	* navar_city/houses/masonshouse, world/world_121_116: Cosmetic and
+	  layout changes to Mason's House (navar_city/houses/masonshouse)
+	  in Navar. Enlarged the map to include area surrounding the house,
+	  added more furniture, made the house larger with rooms and
+	  windows. Updated world map (world/world_121_116) for map entrance
+	  coordinate changes.
+
+2012-08-01 08:49  rjtanner
+
+	* navar_city/houses/littlerumblehouse, world/world_122_116:
+	  Cosmetic and layout changes to Little Rumble House
+	  (navar_city/houses/littlerumblehouse) in Navar. Enlarged the map
+	  to include area surrounding the house, made the house larger with
+	  windows. Updated world map (world/world_122_116) for map entrance
+	  coordinate changes.
+
+2012-07-31 07:05  rjtanner
+
+	* navar_city/houses/karassmallhouse, world/world_121_116: Cosmetic
+	  and layout changes to Kara's Small House
+	  (navar_city/houses/karassmallhouse) in Navar. Enlarged the map to
+	  include area surrounding the house, added more furniture, made
+	  the house larger with rooms and windows. Updated world map
+	  (world/world_121_116) for map entrance coordinate changes.
+
+2012-07-30 02:34  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
+2012-07-30 02:21  rjtanner
+
+	* navar_city/houses/jordanshouse, world/world_121_116: Cosmetic and
+	  layout changes to Jordan's House (navar_city/houses/jordanshouse)
+	  in Navar. Enlarged the map to include area surrounding the house,
+	  added more furniture, made the house larger with rooms and
+	  windows. Updated world map (world/world_121_116) for map entrance
+	  coordinate changes.
+
+2012-07-30 02:03  rjtanner
+
+	* world/world_121_116: Update world map for Navar
+	  (world/world_121_116) to change house -> Jordan's House. No
+	  functional changes.
+
+2012-07-29 07:43  rjtanner
+
+	* navar_city/houses/jebshouse, world/world_122_116: Cosmetic and
+	  layout changes to Jeb's House (navar_city/houses/jebshouse) in
+	  Navar. Enlarged the map to include area surrounding the house,
+	  added more furniture, made the house larger with rooms and
+	  windows. Updated world map (world/world_122_116) for map entrance
+	  coordinate changes.
+
+2012-07-28 04:00  rjtanner
+
+	* navar_city/houses/ianshouse, world/world_122_116: Cosmetic and
+	  layout changes to Ian's House (navar_city/houses/ianshouse) in
+	  Navar. Enlarged the map to include area surrounding the house,
+	  added more furniture, made the house larger with rooms and
+	  windows. Updated world map (world/world_122_116) for map entrance
+	  coordinate changes.
+
+2012-07-27 05:20  rjtanner
+
+	* marksel/shops/smith, world/world_120_109: Map title update, was
+	  smith and now it's Marksel Blacksmith (marksel/shops/smith).
+	  Added marksel region to the map. Updated world map
+	  (world/world_120_109) for map name change.
+
+2012-07-26 08:44  rjtanner
+
+	* navar_city/houses/houseofgossip, world/world_122_117: Cosmetic
+	  and layout changes to Hpuse of Gossip
+	  (navar_city/houses/houseofgossip) in Navar. Enlarged the map to
+	  include area surrounding the house, added more furniture, made
+	  the house larger with rooms and windows. Updated world map
+	  (world/world_122_117) for map entrance coordinate changes.
+
 2012-07-25 07:30  rjtanner
 
 	* navar_city/houses/herbertsundertakers, world/world_121_117:
