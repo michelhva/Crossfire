@@ -4,7 +4,7 @@ region portjoseph
 width 50
 height 50
 msg
-Modified: 2012-06-15 Nicolas Weeger
+Modified: 2012-08-21 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_101_113
@@ -3650,6 +3650,14 @@ x 15
 y 28
 end
 arch grass
+x 15
+y 29
+end
+arch house_1
+name Port Joseph Imperial Post Office
+slaying ../port_joseph/town/shops/IPO_portjoseph
+hp 9
+sp 9
 x 15
 y 29
 end
