@@ -8,7 +8,7 @@ enter_x 5
 enter_y 18
 msg
 Created:  1996-02-25
-Modified: 2012-03-01 Rick Tanner
+Modified: 2012-08-22 Rick Tanner
 endmsg
 end
 arch grass
@@ -550,6 +550,14 @@ x 4
 y 13
 end
 arch grass
+x 4
+y 14
+end
+arch house_2
+name Lone Town Imperial Post Office
+slaying shops/IPO_lonetown
+hp 9
+sp 9
 x 4
 y 14
 end
