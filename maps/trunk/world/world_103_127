@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2012-07-07 Rick Tanner
+Modified: 2012-08-24 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_103_126
@@ -246,6 +246,14 @@ x 1
 y 8
 end
 arch grass
+x 1
+y 9
+end
+arch house_1
+name Stonville Imperial Post Office
+slaying ../dragonisland/shops/IPO_stoneville
+hp 9
+sp 9
 x 1
 y 9
 end
