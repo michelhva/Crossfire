@@ -4,7 +4,7 @@ region marksel
 width 50
 height 50
 msg
-Modified: 2012-07-27 leaf
+Modified: 2012-08-26 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_120_108
@@ -10327,10 +10327,18 @@ x 39
 y 47
 elevation 1453
 end
-arch desert
+arch hills
 x 39
 y 48
 elevation 828
+end
+arch house_1
+name Marksel Imperial Post Office
+slaying ../marksel/shops/IPO_marksel
+hp 9
+sp 9
+x 39
+y 48
 end
 arch hills
 x 39
