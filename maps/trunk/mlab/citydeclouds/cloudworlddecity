@@ -9,7 +9,7 @@ enter_x 29
 enter_y 112
 msg
 Created:  2003-11-09 mikeeusa
-Modified: 2012-02-14 Rick Tanner
+Modified: 2012-08-27 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -132956,6 +132956,11 @@ face fog.111
 x 91
 y 88
 end
+arch house_1
+name City de Clouds Imperial Post Office
+x 91
+y 88
+end
 arch blocked
 name nothing
 x 91
@@ -185000,7 +185005,7 @@ arch s_inn
 name Snow Cloud Cafe
 slaying shops/cdcwcafe1
 msg
-You enter a nice cafe upon a cold, almost frozen, cloud. 
+You enter a nice cafe upon a cold, almost frozen, cloud.
 Host: Welcome to the Snow Cloud Cafe.
 Where would you like to sit?
 endmsg
