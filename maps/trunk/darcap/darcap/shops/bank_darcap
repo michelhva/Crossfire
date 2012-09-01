@@ -9,7 +9,7 @@ enter_y 16
 msg
 Created:  1993-10-10 skud the great (tvangod@ecst.csuchico.edu)
 Idea credited to Eric Mehlhaff.
-Modified: 2012-08-31 Rick Tanner
+Modified: 2012-09-01 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -352,10 +352,6 @@ arch woodlarge
 x 3
 y 6
 end
-arch bookshelf_left
-x 3
-y 6
-end
 arch dungeon_magic
 x 3
 y 7
@@ -429,6 +425,10 @@ x 3
 y 13
 end
 arch woodlarge
+x 3
+y 13
+end
+arch table_1x2
 x 3
 y 13
 end
@@ -619,6 +619,10 @@ arch woodlarge
 x 4
 y 13
 end
+arch chair_1.2
+x 4
+y 13
+end
 arch dungeon_magic
 x 4
 y 14
@@ -786,6 +790,10 @@ arch woodlarge
 x 5
 y 10
 end
+arch table_2
+x 5
+y 10
+end
 arch dungeon_magic
 x 5
 y 11
@@ -838,11 +846,19 @@ arch woodlarge
 x 5
 y 15
 end
+arch chair_1.1
+x 5
+y 15
+end
 arch dungeon_magic
 x 5
 y 16
 end
 arch woodlarge
+x 5
+y 16
+end
+arch table_2x1
 x 5
 y 16
 end
@@ -1203,11 +1219,19 @@ arch woodlarge
 x 7
 y 15
 end
+arch chair_1.1
+x 7
+y 15
+end
 arch dungeon_magic
 x 7
 y 16
 end
 arch woodlarge
+x 7
+y 16
+end
+arch table_2x1
 x 7
 y 16
 end
