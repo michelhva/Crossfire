@@ -1,3 +1,108 @@
+2012-09-01 06:08  rjtanner
+
+	* darcap/darcap/shops/bank_darcap: Added some furniture to the Bank
+	  of Skud, Darcap Branch (darcap/darcap/shops/bank_darcap).
+	  Cosmetic change only, no functional changes.
+
+2012-08-31 08:30  rjtanner
+
+	* darcap/darcap/shops/bank_darcap, world/world_116_102: New map
+	  called Bank of Skud, Darcap Branch
+	  (darcap/darcap/shops/bank_darcap) located in Darcap. Updated the
+	  world map (world/world_116_102) for the bank.
+
+2012-08-30 05:26  rjtanner
+
+	* santo_dominion/shops/bank_santodominion, world/world_102_108: New
+	  map called Bank of Skud, Santo Dominion Branch
+	  (santo_dominion/shops/bank_santodominion) located in Santo
+	  Dominion. Updated the world map (world/world_102_108) for the
+	  bank.
+
+2012-08-30 05:17  rjtanner
+
+	* santo_dominion/magara/hut/floor_1, world/world_102_108: Moved the
+	  location of A Nice Little Hut (santo_dominion/magara/hut/floor_1)
+	  in Santo Dominion world map (world/world_102_108). Updated map
+	  entrance and exit coordinates to reflect moving the hut in the
+	  world map. Hut was moved to make room for a new Bank map.
+
+2012-08-29 05:32  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb2: Spelling correction
+	  (bucher -> butcher) in Cloud World Castle, Dungeon Level 2
+	  (mlab/citydeclouds/castle/cwdccastleb2).
+
+2012-08-28 06:15  rjtanner
+
+	* azumauindo/ranbounagisatoshi/shops/IPO_ranbounagisatoshi,
+	  world/world_127_101: New Map, Ranbounagisatoshi Imperial Post
+	  Office (azumauindo/ranbounagisatoshi/shops/IPO_ranbounagisatoshi)
+	  with the usual features of message sending and receiving mail.
+	  Updated world map (world/world_127_101) to include the IPO.
+
+2012-08-27 08:13  rjtanner
+
+	* mlab/citydeclouds/cloudworlddecity: Fix missing link from City de
+	  Clouds map to recently added IPO map.
+
+2012-08-27 07:55  rjtanner
+
+	* mlab/citydeclouds/cloudworlddecity,
+	  mlab/citydeclouds/shops/IPO_citydeclouds: New Map, City de Clouds
+	  Imperial Post Office (mlab/citydeclouds/shops/IPO_citydeclouds)
+	  with the usual features of message sending and receiving along
+	  with a message board. Updated city map
+	  (mlab/citydeclouds/cloudworlddecity) to include the IPO.
+
+2012-08-26 06:28  rjtanner
+
+	* marksel/shops/IPO_marksel, world/world_120_109: New Map, Marksel
+	  Imperial Post Office (marksel/shops/IPO_marksel) with the usual
+	  features of message sending and receiving along with a message
+	  board. Updated world map (world/world_120_109) to include the
+	  IPO.
+
+2012-08-24 17:29  rjtanner
+
+	* santo_dominion/shops/IPO_santodominion: Correct typo in region
+	  setting (santo dominion -> santodominion) to Santo Dominion
+	  Imperial Post Office (santo_dominion/shops/IPO_santodominion).
+
+2012-08-24 05:35  rjtanner
+
+	* dragonisland/shops, dragonisland/shops/IPO_stoneville,
+	  world/world_103_127: New Map, Stoneville Imperial Post Office
+	  (dragonisland/shops/IPO_stoneville) with the usual features of
+	  message sending and receiving along with a message board. Updated
+	  world map (world/world_103_127) to include the IPO.
+
+2012-08-22 22:58  rjtanner
+
+	* scorn/shops/privateshop: Remove weather setting (temp 50) from
+	  map header of Scorn Private Shop (scorn/shops/privateshop).
+	  Technical change, no functional changes.
+
+2012-08-22 06:08  rjtanner
+
+	* pup_land/lone_town/shops/IPO_lonetown, pup_land/lone_town/town:
+	  New Map, Lone Town Imperial Post Office
+	  (pup_land/lone_town/shops/IPO_lonetown) with the usual features
+	  of message sending and receiving along with a message board.
+	  Updated world map (pup_land/lone_town/town) to include the IPO.
+
+2012-08-21 06:06  rjtanner
+
+	* port_joseph/town/shops/IPO_portjoseph, world/world_101_114: New
+	  Map, Port Joseph Imperial Post Office
+	  (port_joseph/town/shops/IPO_portjoseph) that includes message
+	  sending and receiving. Updated world map (world/world_101_114) to
+	  include the IPO.
+
+2012-08-20 06:08  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
 2012-08-19 06:04  rjtanner
 
 	* lake_country/shops/IPO_lakecountry, world/world_109_126: New Map,
