@@ -9,7 +9,7 @@ enter_y 16
 msg
 Created:  1993-10-10 skud the great (tvangod@ecst.csuchico.edu)
 Idea credited to Eric Mehlhaff.
-Modified: 2012-09-01 Rick Tanner
+Modified: 2012-09-03 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -2497,10 +2497,6 @@ end
 arch goldcoin
 x 14
 y 4
-end
-arch cobblestones2
-x 14
-y 5
 end
 arch dungeon_magic
 x 14
