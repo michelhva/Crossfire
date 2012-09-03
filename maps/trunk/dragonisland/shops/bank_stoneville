@@ -1,0 +1,1869 @@
+arch map
+name Stonville Bank and Savings
+difficulty 3
+region stoneville
+width 15
+height 15
+enter_x 10
+enter_y 11
+msg
+Created:  2012-09-03 Rick Tanner
+Modified: 2012-09-03 Rick Tanner
+endmsg
+end
+arch grass_only
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch grass_only
+y 8
+end
+arch grass_only
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch grass_only
+y 12
+end
+arch grass_only
+y 13
+end
+arch grass_only
+y 14
+end
+arch grass_only
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
+arch grass_only
+x 1
+y 14
+end
+arch grass_only
+x 2
+end
+arch grass_only
+x 2
+y 1
+end
+arch dungeon_magic
+x 2
+y 2
+end
+arch woodlarge
+x 2
+y 2
+end
+arch wwall_2_2_2
+x 2
+y 2
+end
+arch dungeon_magic
+x 2
+y 3
+end
+arch woodlarge
+x 2
+y 3
+end
+arch wwall_2_1_1
+x 2
+y 3
+end
+arch dungeon_magic
+x 2
+y 4
+end
+arch woodlarge
+x 2
+y 4
+end
+arch wwall_2_1_1
+x 2
+y 4
+end
+arch dungeon_magic
+x 2
+y 5
+end
+arch woodlarge
+x 2
+y 5
+end
+arch wwall_3_2
+x 2
+y 5
+end
+arch dungeon_magic
+x 2
+y 6
+end
+arch woodlarge
+x 2
+y 6
+end
+arch wwall_2_1_1
+x 2
+y 6
+end
+arch dungeon_magic
+x 2
+y 7
+end
+arch woodlarge
+x 2
+y 7
+end
+arch wwall_win1
+x 2
+y 7
+end
+arch dungeon_magic
+x 2
+y 8
+end
+arch woodlarge
+x 2
+y 8
+end
+arch wwall_2_1_1
+x 2
+y 8
+end
+arch dungeon_magic
+x 2
+y 9
+end
+arch woodlarge
+x 2
+y 9
+end
+arch wwall_3_2
+x 2
+y 9
+end
+arch dungeon_magic
+x 2
+y 10
+end
+arch woodlarge
+x 2
+y 10
+end
+arch wwall_2_1_1
+x 2
+y 10
+end
+arch dungeon_magic
+x 2
+y 11
+end
+arch woodlarge
+x 2
+y 11
+end
+arch wwall_2_1_1
+x 2
+y 11
+end
+arch dungeon_magic
+x 2
+y 12
+end
+arch woodlarge
+x 2
+y 12
+end
+arch wwall_2_2_1
+x 2
+y 12
+end
+arch dungeon_magic
+x 2
+y 13
+end
+arch grass_only
+x 2
+y 13
+end
+arch grass_only
+x 2
+y 14
+end
+arch grass_only
+x 3
+end
+arch grass_only
+x 3
+y 1
+end
+arch dungeon_magic
+x 3
+y 2
+end
+arch woodlarge
+x 3
+y 2
+end
+arch wwall_2_1_2
+x 3
+y 2
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch woodlarge
+x 3
+y 3
+end
+arch chair_2.1
+x 3
+y 3
+end
+arch man
+name bank manager
+x 3
+y 3
+end
+arch dungeon_magic
+x 3
+y 4
+end
+arch woodlarge
+x 3
+y 4
+end
+arch dresser
+name desk
+x 3
+y 4
+end
+arch dungeon_magic
+x 3
+y 5
+end
+arch woodlarge
+x 3
+y 5
+end
+arch wwall_2_1_2
+x 3
+y 5
+end
+arch dungeon_magic
+x 3
+y 6
+end
+arch woodlarge
+x 3
+y 6
+end
+arch dungeon_magic
+x 3
+y 7
+end
+arch woodlarge
+x 3
+y 7
+end
+arch dungeon_magic
+x 3
+y 8
+end
+arch woodlarge
+x 3
+y 8
+end
+arch dungeon_magic
+x 3
+y 9
+end
+arch woodlarge
+x 3
+y 9
+end
+arch bench_1_4
+x 3
+y 9
+move_block all
+end
+arch wwall_1_3
+x 3
+y 9
+end
+arch dungeon_magic
+x 3
+y 10
+end
+arch woodlarge
+x 3
+y 10
+end
+arch platinum_converter2
+x 3
+y 10
+end
+arch dungeon_magic
+x 3
+y 11
+end
+arch woodlarge
+x 3
+y 11
+end
+arch platinum_converter2
+name convert jade into platinum
+slaying jadecoin
+other_arch platinacoin
+sp 100
+food 1
+x 3
+y 11
+end
+arch dungeon_magic
+x 3
+y 12
+end
+arch woodlarge
+x 3
+y 12
+end
+arch wwall_2_1_2
+x 3
+y 12
+end
+arch dungeon_magic
+x 3
+y 13
+end
+arch grass_only
+x 3
+y 13
+end
+arch grass_only
+x 3
+y 14
+end
+arch grass_only
+x 4
+end
+arch grass_only
+x 4
+y 1
+end
+arch dungeon_magic
+x 4
+y 2
+end
+arch woodlarge
+x 4
+y 2
+end
+arch wwall_2_1_2
+x 4
+y 2
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch woodlarge
+x 4
+y 3
+end
+arch dungeon_magic
+x 4
+y 4
+end
+arch woodlarge
+x 4
+y 4
+end
+arch dungeon_magic
+x 4
+y 5
+end
+arch woodlarge
+x 4
+y 5
+end
+arch wwall_1_3
+x 4
+y 5
+end
+arch dungeon_magic
+x 4
+y 6
+end
+arch woodlarge
+x 4
+y 6
+end
+arch dungeon_magic
+x 4
+y 7
+end
+arch woodlarge
+x 4
+y 7
+end
+arch dungeon_magic
+x 4
+y 8
+end
+arch woodlarge
+x 4
+y 8
+end
+arch table_2
+x 4
+y 8
+end
+arch dungeon_magic
+x 4
+y 9
+end
+arch woodlarge
+x 4
+y 9
+end
+arch bench_2_1_2
+x 4
+y 9
+move_block all
+end
+arch dungeon_magic
+x 4
+y 10
+end
+arch woodlarge
+x 4
+y 10
+end
+arch dungeon_magic
+x 4
+y 11
+end
+arch woodlarge
+x 4
+y 11
+end
+arch dungeon_magic
+x 4
+y 12
+end
+arch woodlarge
+x 4
+y 12
+end
+arch wwall_2_1_2
+x 4
+y 12
+end
+arch dungeon_magic
+x 4
+y 13
+end
+arch grass_only
+x 4
+y 13
+end
+arch grass_only
+x 4
+y 14
+end
+arch grass_only
+x 5
+end
+arch grass_only
+x 5
+y 1
+end
+arch dungeon_magic
+x 5
+y 2
+end
+arch woodlarge
+x 5
+y 2
+end
+arch wwall_2_1_2
+x 5
+y 2
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch woodlarge
+x 5
+y 3
+end
+arch dungeon_magic
+x 5
+y 4
+end
+arch woodlarge
+x 5
+y 4
+end
+arch dungeon_magic
+x 5
+y 5
+end
+arch woodlarge
+x 5
+y 5
+end
+arch dungeon_magic
+x 5
+y 6
+end
+arch woodlarge
+x 5
+y 6
+end
+arch dungeon_magic
+x 5
+y 7
+end
+arch woodlarge
+x 5
+y 7
+end
+arch dungeon_magic
+x 5
+y 8
+end
+arch woodlarge
+x 5
+y 8
+end
+arch chair_2.1
+x 5
+y 8
+end
+arch woman
+name Dolly
+title the teller
+msg
+@match *
+Sorry I am on break, please come back later.
+endmsg
+x 5
+y 8
+randomitems jail
+stand_still 1
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
+end
+arch dungeon_magic
+x 5
+y 9
+end
+arch woodlarge
+x 5
+y 9
+end
+arch bench_2_1_2
+x 5
+y 9
+move_block all
+end
+arch dungeon_magic
+x 5
+y 10
+end
+arch woodlarge
+x 5
+y 10
+end
+arch dungeon_magic
+x 5
+y 11
+end
+arch woodlarge
+x 5
+y 11
+end
+arch dungeon_magic
+x 5
+y 12
+end
+arch woodlarge
+x 5
+y 12
+end
+arch wwall_2_1_2
+x 5
+y 12
+end
+arch dungeon_magic
+x 5
+y 13
+end
+arch grass_only
+x 5
+y 13
+end
+arch grass_only
+x 5
+y 14
+end
+arch grass_only
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch dungeon_magic
+x 6
+y 2
+end
+arch woodlarge
+x 6
+y 2
+end
+arch wwall_2_1_2
+x 6
+y 2
+end
+arch dungeon_magic
+x 6
+y 3
+end
+arch woodlarge
+x 6
+y 3
+end
+arch chair_2.1
+x 6
+y 3
+end
+arch woman
+name busy bank clerk
+x 6
+y 3
+end
+arch dungeon_magic
+x 6
+y 4
+end
+arch woodlarge
+x 6
+y 4
+end
+arch dresser
+name desk
+x 6
+y 4
+end
+arch dungeon_magic
+x 6
+y 5
+end
+arch woodlarge
+x 6
+y 5
+end
+arch wwall_1_4
+x 6
+y 5
+end
+arch dungeon_magic
+x 6
+y 6
+end
+arch woodlarge
+x 6
+y 6
+end
+arch dungeon_magic
+x 6
+y 7
+end
+arch woodlarge
+x 6
+y 7
+end
+arch dungeon_magic
+x 6
+y 8
+end
+arch woodlarge
+x 6
+y 8
+end
+arch bench_2_2_2
+x 6
+y 8
+move_block all
+end
+arch dungeon_magic
+x 6
+y 9
+end
+arch woodlarge
+x 6
+y 9
+end
+arch bench_2_2_4
+x 6
+y 9
+move_block all
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch woodlarge
+x 6
+y 10
+end
+arch dungeon_magic
+x 6
+y 11
+end
+arch woodlarge
+x 6
+y 11
+end
+arch dungeon_magic
+x 6
+y 12
+end
+arch woodlarge
+x 6
+y 12
+end
+arch wwall_win2
+x 6
+y 12
+end
+arch dungeon_magic
+x 6
+y 13
+end
+arch grass_only
+x 6
+y 13
+end
+arch grass_only
+x 6
+y 14
+end
+arch grass_only
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch dungeon_magic
+x 7
+y 2
+end
+arch woodlarge
+x 7
+y 2
+end
+arch wwall_3_3
+x 7
+y 2
+end
+arch dungeon_magic
+x 7
+y 3
+end
+arch woodlarge
+x 7
+y 3
+end
+arch wwall_2_1_1
+x 7
+y 3
+end
+arch dungeon_magic
+x 7
+y 4
+end
+arch woodlarge
+x 7
+y 4
+end
+arch wwall_2_1_1
+x 7
+y 4
+end
+arch dungeon_magic
+x 7
+y 5
+end
+arch woodlarge
+x 7
+y 5
+end
+arch wwall_3_1
+x 7
+y 5
+end
+arch dungeon_magic
+x 7
+y 6
+end
+arch woodlarge
+x 7
+y 6
+end
+arch dungeon_magic
+x 7
+y 7
+end
+arch woodlarge
+x 7
+y 7
+end
+arch dungeon_magic
+x 7
+y 8
+end
+arch woodlarge
+x 7
+y 8
+end
+arch bench_1_3
+x 7
+y 8
+move_block all
+end
+arch wwall_1_4
+x 7
+y 8
+end
+arch dungeon_magic
+x 7
+y 9
+end
+arch woodlarge
+x 7
+y 9
+end
+arch jade_converter
+x 7
+y 9
+end
+arch dungeon_magic
+x 7
+y 10
+end
+arch woodlarge
+x 7
+y 10
+end
+arch dungeon_magic
+x 7
+y 11
+end
+arch woodlarge
+x 7
+y 11
+end
+arch dungeon_magic
+x 7
+y 12
+end
+arch woodlarge
+x 7
+y 12
+end
+arch wwall_2_1_2
+x 7
+y 12
+end
+arch dungeon_magic
+x 7
+y 13
+end
+arch grass_only
+x 7
+y 13
+end
+arch grass_only
+x 7
+y 14
+end
+arch grass_only
+x 8
+end
+arch grass_only
+x 8
+y 1
+end
+arch dungeon_magic
+x 8
+y 2
+end
+arch woodlarge
+x 8
+y 2
+end
+arch wwall_2_1_2
+x 8
+y 2
+end
+arch dungeon_magic
+x 8
+y 3
+end
+arch woodlarge
+x 8
+y 3
+end
+arch pearl
+x 8
+y 3
+end
+arch ruby
+x 8
+y 3
+end
+arch platinacoin
+x 8
+y 3
+end
+arch dungeon_magic
+x 8
+y 4
+end
+arch woodlarge
+x 8
+y 4
+end
+arch pearl
+x 8
+y 4
+end
+arch ruby
+x 8
+y 4
+end
+arch platinacoin
+x 8
+y 4
+end
+arch goldcoin
+x 8
+y 4
+end
+arch dungeon_magic
+x 8
+y 5
+end
+arch woodlarge
+x 8
+y 5
+end
+arch wwall_1_3
+x 8
+y 5
+end
+arch dungeon_magic
+x 8
+y 6
+end
+arch woodlarge
+x 8
+y 6
+end
+arch guard
+x 8
+y 6
+end
+arch dungeon_magic
+x 8
+y 7
+end
+arch woodlarge
+x 8
+y 7
+end
+arch dungeon_magic
+x 8
+y 8
+end
+arch woodlarge
+x 8
+y 8
+end
+arch wwall_2_1_2
+x 8
+y 8
+end
+arch dungeon_magic
+x 8
+y 9
+end
+arch woodlarge
+x 8
+y 9
+end
+arch jade_converter
+name convert amberium into jade
+slaying ambercoin
+other_arch jadecoin
+sp 100
+food 1
+x 8
+y 9
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch woodlarge
+x 8
+y 10
+end
+arch dungeon_magic
+x 8
+y 11
+end
+arch woodlarge
+x 8
+y 11
+end
+arch dungeon_magic
+x 8
+y 12
+end
+arch woodlarge
+x 8
+y 12
+end
+arch wwall_2_1_2
+x 8
+y 12
+end
+arch dungeon_magic
+x 8
+y 13
+end
+arch grass_only
+x 8
+y 13
+end
+arch grass_only
+x 8
+y 14
+end
+arch grass_only
+x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch dungeon_magic
+x 9
+y 2
+end
+arch woodlarge
+x 9
+y 2
+end
+arch wwall_2_1_2
+x 9
+y 2
+end
+arch dungeon_magic
+x 9
+y 3
+end
+arch woodlarge
+x 9
+y 3
+end
+arch ambercoin
+x 9
+y 3
+nrof 1000000
+end
+arch dungeon_magic
+x 9
+y 4
+end
+arch woodlarge
+x 9
+y 4
+end
+arch pearl
+x 9
+y 4
+end
+arch ruby
+x 9
+y 4
+end
+arch platinacoin
+x 9
+y 4
+end
+arch dungeon_magic
+x 9
+y 5
+end
+arch woodlarge
+x 9
+y 5
+end
+arch spikes_closed
+x 9
+y 5
+speed 0.500000
+end
+arch dungeon_magic
+x 9
+y 6
+end
+arch woodlarge
+x 9
+y 6
+end
+arch dungeon_magic
+x 9
+y 7
+end
+arch woodlarge
+x 9
+y 7
+end
+arch dungeon_magic
+x 9
+y 8
+end
+arch woodlarge
+x 9
+y 8
+end
+arch wwall_2_1_2
+x 9
+y 8
+end
+arch dungeon_magic
+x 9
+y 9
+end
+arch woodlarge
+x 9
+y 9
+end
+arch dungeon_magic
+x 9
+y 10
+end
+arch woodlarge
+x 9
+y 10
+end
+arch dungeon_magic
+x 9
+y 11
+end
+arch woodlarge
+x 9
+y 11
+end
+arch dungeon_magic
+x 9
+y 12
+end
+arch woodlarge
+x 9
+y 12
+end
+arch wwall_1_3
+x 9
+y 12
+end
+arch dungeon_magic
+x 9
+y 13
+end
+arch grass_only
+x 9
+y 13
+move_block all
+end
+arch grass_only
+x 9
+y 14
+end
+arch grass_only
+x 10
+end
+arch grass_only
+x 10
+y 1
+end
+arch dungeon_magic
+x 10
+y 2
+end
+arch woodlarge
+x 10
+y 2
+end
+arch wwall_2_1_2
+x 10
+y 2
+end
+arch dungeon_magic
+x 10
+y 3
+end
+arch woodlarge
+x 10
+y 3
+end
+arch jadecoin
+x 10
+y 3
+nrof 1000000
+end
+arch cobblestones2
+x 10
+y 4
+end
+arch dungeon_magic
+x 10
+y 4
+end
+arch woodlarge
+x 10
+y 4
+end
+arch pearl
+x 10
+y 4
+end
+arch ruby
+x 10
+y 4
+end
+arch platinacoin
+x 10
+y 4
+end
+arch goldcoin
+x 10
+y 4
+end
+arch dungeon_magic
+x 10
+y 5
+end
+arch woodlarge
+x 10
+y 5
+end
+arch spikes_closed
+x 10
+y 5
+speed 0.500000
+end
+arch dungeon_magic
+x 10
+y 6
+end
+arch woodlarge
+x 10
+y 6
+end
+arch dungeon_magic
+x 10
+y 7
+end
+arch woodlarge
+x 10
+y 7
+end
+arch dungeon_magic
+x 10
+y 8
+end
+arch woodlarge
+x 10
+y 8
+end
+arch wwall_2_1_2
+x 10
+y 8
+end
+arch dungeon_magic
+x 10
+y 9
+end
+arch woodlarge
+x 10
+y 9
+end
+arch sign_e
+name ATM
+x 10
+y 9
+end
+arch dungeon_magic
+x 10
+y 10
+end
+arch woodlarge
+x 10
+y 10
+end
+arch dungeon_magic
+x 10
+y 11
+end
+arch woodlarge
+x 10
+y 11
+end
+arch dungeon_magic
+x 10
+y 12
+end
+arch woodlarge
+x 10
+y 12
+end
+arch oakdoor_2
+slaying /world/world_103_127
+hp 12
+sp 14
+x 10
+y 12
+end
+arch dungeon_magic
+x 10
+y 13
+end
+arch grass_only
+x 10
+y 13
+move_block all
+end
+arch grass_only
+x 10
+y 14
+end
+arch grass_only
+x 11
+end
+arch grass_only
+x 11
+y 1
+end
+arch dungeon_magic
+x 11
+y 2
+end
+arch woodlarge
+x 11
+y 2
+end
+arch wwall_2_1_2
+x 11
+y 2
+end
+arch dungeon_magic
+x 11
+y 3
+end
+arch woodlarge
+x 11
+y 3
+end
+arch amethyst
+x 11
+y 3
+end
+arch gem
+x 11
+y 3
+end
+arch dungeon_magic
+x 11
+y 4
+end
+arch woodlarge
+x 11
+y 4
+end
+arch pearl
+x 11
+y 4
+end
+arch ruby
+x 11
+y 4
+end
+arch platinacoin
+x 11
+y 4
+end
+arch dungeon_magic
+x 11
+y 5
+end
+arch woodlarge
+x 11
+y 5
+end
+arch wwall_1_4
+x 11
+y 5
+end
+arch dungeon_magic
+x 11
+y 6
+end
+arch woodlarge
+x 11
+y 6
+end
+arch guard
+x 11
+y 6
+end
+arch dungeon_magic
+x 11
+y 7
+end
+arch woodlarge
+x 11
+y 7
+end
+arch dungeon_magic
+x 11
+y 8
+end
+arch woodlarge
+x 11
+y 8
+end
+arch wwall_2_1_2
+x 11
+y 8
+end
+arch dungeon_magic
+x 11
+y 9
+end
+arch woodlarge
+x 11
+y 9
+end
+arch depositbox
+name Deposit Box
+x 11
+y 9
+arch event_apply
+name Apply
+title Python
+slaying /python/IPO/banksay.py
+end
+arch event_close
+name Close
+title Python
+slaying /python/IPO/banksay.py
+end
+end
+arch dungeon_magic
+x 11
+y 10
+end
+arch woodlarge
+x 11
+y 10
+end
+arch dungeon_magic
+x 11
+y 11
+end
+arch woodlarge
+x 11
+y 11
+end
+arch dungeon_magic
+x 11
+y 12
+end
+arch woodlarge
+x 11
+y 12
+end
+arch wwall_1_4
+x 11
+y 12
+end
+arch dungeon_magic
+x 11
+y 13
+end
+arch grass_only
+x 11
+y 13
+move_block all
+end
+arch grass_only
+x 11
+y 14
+end
+arch grass_only
+x 12
+end
+arch grass_only
+x 12
+y 1
+end
+arch dungeon_magic
+x 12
+y 2
+end
+arch woodlarge
+x 12
+y 2
+end
+arch wwall_2_2_3
+x 12
+y 2
+end
+arch dungeon_magic
+x 12
+y 3
+end
+arch woodlarge
+x 12
+y 3
+end
+arch wwall_2_1_1
+x 12
+y 3
+end
+arch dungeon_magic
+x 12
+y 4
+end
+arch woodlarge
+x 12
+y 4
+end
+arch wwall_2_1_1
+x 12
+y 4
+end
+arch dungeon_magic
+x 12
+y 5
+end
+arch woodlarge
+x 12
+y 5
+end
+arch wwall_3_4
+x 12
+y 5
+end
+arch dungeon_magic
+x 12
+y 6
+end
+arch woodlarge
+x 12
+y 6
+end
+arch wwall_2_1_1
+x 12
+y 6
+end
+arch dungeon_magic
+x 12
+y 7
+end
+arch woodlarge
+x 12
+y 7
+end
+arch wwall_2_1_1
+x 12
+y 7
+end
+arch dungeon_magic
+x 12
+y 8
+end
+arch woodlarge
+x 12
+y 8
+end
+arch wwall_3_4
+x 12
+y 8
+end
+arch dungeon_magic
+x 12
+y 9
+end
+arch woodlarge
+x 12
+y 9
+end
+arch wwall_2_1_1
+x 12
+y 9
+end
+arch dungeon_magic
+x 12
+y 10
+end
+arch woodlarge
+x 12
+y 10
+end
+arch wwall_2_1_1
+x 12
+y 10
+end
+arch dungeon_magic
+x 12
+y 11
+end
+arch woodlarge
+x 12
+y 11
+end
+arch wwall_2_1_1
+x 12
+y 11
+end
+arch dungeon_magic
+x 12
+y 12
+end
+arch woodlarge
+x 12
+y 12
+end
+arch wwall_2_2_4
+x 12
+y 12
+end
+arch dungeon_magic
+x 12
+y 13
+end
+arch grass_only
+x 12
+y 13
+end
+arch grass_only
+x 12
+y 14
+end
+arch grass_only
+x 13
+end
+arch grass_only
+x 13
+y 1
+end
+arch grass_only
+x 13
+y 2
+end
+arch grass_only
+x 13
+y 3
+end
+arch grass_only
+x 13
+y 4
+end
+arch grass_only
+x 13
+y 5
+end
+arch grass_only
+x 13
+y 6
+end
+arch grass_only
+x 13
+y 7
+end
+arch grass_only
+x 13
+y 8
+end
+arch grass_only
+x 13
+y 9
+end
+arch grass_only
+x 13
+y 10
+end
+arch grass_only
+x 13
+y 11
+end
+arch grass_only
+x 13
+y 12
+end
+arch grass_only
+x 13
+y 13
+end
+arch grass_only
+x 13
+y 14
+end
+arch grass_only
+x 14
+end
+arch grass_only
+x 14
+y 1
+end
+arch grass_only
+x 14
+y 2
+end
+arch grass_only
+x 14
+y 3
+end
+arch grass_only
+x 14
+y 4
+end
+arch grass_only
+x 14
+y 5
+end
+arch grass_only
+x 14
+y 6
+end
+arch grass_only
+x 14
+y 7
+end
+arch grass_only
+x 14
+y 8
+end
+arch grass_only
+x 14
+y 9
+end
+arch grass_only
+x 14
+y 10
+end
+arch grass_only
+x 14
+y 11
+end
+arch grass_only
+x 14
+y 12
+end
+arch grass_only
+x 14
+y 13
+end
+arch grass_only
+x 14
+y 14
+end
