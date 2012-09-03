@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2012-08-24 Rick Tanner
+Modified: 2012-09-03 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_103_126
@@ -3101,6 +3101,14 @@ x 12
 y 13
 end
 arch grass
+x 12
+y 14
+end
+arch minihouse
+name Stoneville Bank and Savings
+slaying ../dragonisland/shops/bank_stoneville
+hp 10
+sp 11
 x 12
 y 14
 end
