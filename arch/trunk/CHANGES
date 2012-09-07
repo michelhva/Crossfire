@@ -1,6 +1,16 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Removed hyphen in woodlarge-vertical archetype as it was causing overlap with woodlarge
+archetype.
+floor/woodlargevertical.arc
+floor/woodlargevertical.base.111.png
+Deleted:
+floor/woodlarge-vertical.arc
+floor/woodlarge-vertical.base.111.png
+floor/woodlarge-vertical.face
+RJT 2012-09-07
+
 New woodfloor tile running in vertical pattern, based on woodfloor.arc
 floor/woodfloorvert.base.111.png
 floor/woodfloorvert.arc
