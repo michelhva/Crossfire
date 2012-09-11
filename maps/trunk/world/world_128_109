@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2012-08-17 Rick Tanner
+Modified: 2012-09-10 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -6353,7 +6353,7 @@ arch dungeon_floor
 x 25
 y 7
 end
-arch guild
+arch guildstorage
 name Damned Heretics's Storage Room
 slaying /wolfsburg/guilds/damned_heretics/storage_room
 hp 1
@@ -6883,7 +6883,7 @@ arch dungeon_floor
 x 27
 y 14
 end
-arch guild
+arch guild2
 name Guild of the Damned Heretics
 slaying /wolfsburg/guilds/damned_heretics/mainfloor
 hp 15
