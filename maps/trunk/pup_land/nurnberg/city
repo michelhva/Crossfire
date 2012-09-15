@@ -6,7 +6,7 @@ width 30
 height 30
 msg
 Created:  1996-02-07
-Modified: 2012-03-02 Rick Tanner
+Modified: 2012-09-15 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2688,7 +2688,7 @@ arch grass
 x 16
 y 9
 end
-arch guild
+arch guild2
 name Guild of the Laughing Skull
 slaying ../guilds/laughing_skull/mainfloor
 hp -1
@@ -3462,7 +3462,7 @@ arch grass
 x 21
 y 6
 end
-arch guild
+arch guildstorage
 name Laughing Skull's Storage Room
 slaying ../guilds/laughing_skull/storage_room
 hp 1
