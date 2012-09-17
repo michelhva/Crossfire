@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2012-08-31 Rick Tanner
+Modified: 2012-09-17 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -5302,7 +5302,7 @@ x 19
 y 40
 elevation 0
 end
-arch guild_northwest
+arch guild2_northwest
 name Guild of the Poisoned Dagger
 slaying /darcap/darcap/guilds/poisoned_dagger/mainfloor
 hp 15
@@ -5824,7 +5824,7 @@ x 21
 y 25
 elevation 0
 end
-arch guild_northwest
+arch guild2storage_northwest
 name Poisoned Dagger's storage room
 slaying /darcap/darcap/guilds/poisoned_dagger/storage_room
 hp 1
@@ -8164,7 +8164,7 @@ x 28
 y 27
 elevation 0
 end
-arch guild_northwest
+arch guild2storage_northwest
 name Smoking Cauldron's storage room
 slaying /darcap/darcap/guilds/smoking_cauldron/storage_room
 hp 1
@@ -9221,7 +9221,7 @@ x 31
 y 25
 elevation 0
 end
-arch guild_northwest
+arch guild2_northwest
 name Guild of the Smoking Cauldron
 slaying /darcap/darcap/guilds/smoking_cauldron/mainfloor
 hp 15
