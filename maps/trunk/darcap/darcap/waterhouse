@@ -8,7 +8,7 @@ enter_x 3
 enter_y 8
 msg
 Created:  2008-09-13 Rick Tanner
-Modified: 2010-08-14 Nicolas Weeger
+Modified: 2012-09-28 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -188,11 +188,15 @@ arch woodwall_2_1_2
 x 3
 y 1
 end
+arch swall_1_1_half
+x 3
+y 1
+end
 arch woodfloor
 x 3
 y 2
 end
-arch swall_1_1
+arch swall_2_1_1
 x 3
 y 2
 end
@@ -511,7 +515,7 @@ arch woodfloor
 x 7
 y 3
 end
-arch swall_1_3
+arch swall_2_1_2
 x 7
 y 3
 end
@@ -540,7 +544,7 @@ arch woodfloor
 x 7
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 7
 y 6
 end
@@ -601,6 +605,10 @@ arch woodwall_2_1_1
 x 8
 y 3
 end
+arch swall_1_3_half
+x 8
+y 3
+end
 arch woodfloor
 x 8
 y 4
@@ -622,6 +630,10 @@ x 8
 y 6
 end
 arch woodwall_2_1_1
+x 8
+y 6
+end
+arch swall_1_3_half
 x 8
 y 6
 end
