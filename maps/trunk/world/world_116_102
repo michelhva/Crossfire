@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2012-09-17 Rick Tanner
+Modified: 2012-09-29 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -7625,7 +7625,7 @@ elevation 0
 end
 arch shrine
 name Gaea's Garden
-slaying /darcap/darcap/temple
+slaying ../darcap/darcap/gaea
 hp 12
 sp 23
 x 26
