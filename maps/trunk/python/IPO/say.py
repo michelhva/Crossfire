@@ -62,15 +62,15 @@ text = Crossfire.WhatIsMessage().split()
 
 if text[0] == 'help' or text[0] == 'yes':
 	# split the help message in two parts to prevent the server from truncating it.
-	whoami.Say('How can I help you?\nWe are proud to sell some interesting services.\nYou can buy:')
-	whoami.Say('- pen (%s platinum)\n- literacy scroll (%s platinum)'%(priceWritingPen,priceScrollOfLiteracy))
-	whoami.Say('You can send letters to friends:\n')
-	whoami.Say('- mailscroll <friend> (%s platinum)'%(priceMailScroll))
-	whoami.Say('You can also send items, here are our fees:')
+	help = 'How can I help you?\nWe are proud to sell some interesting services.\n\nYou can buy:\n- pen (%s platinum)\n- literacy scroll (%s platinum)\n\n'%(priceWritingPen,priceScrollOfLiteracy)
+	help = help + 'You can send letters to friends:\n'
+	help = help + '- mailscroll <friend> (%s platinum)\n\n'%(priceMailScroll)
+	help = help + 'You can also send items, here are our fees:\n'
 	for pack in packages.keys():
 		# weight is in grams, so need to convert.
-		whoami.Say('- %s (max weight: %d kg, price: %d platinum)'%(pack, packages[pack][1] / 1000, packages[pack][0]))
+		help = help + '- %s (max weight: %d kg, price: %d platinum)\n'%(pack, packages[pack][1] / 1000, packages[pack][0])
 
+	whoami.Say(help)
 	whoami.Say('To send a package to a friend, say \'send <friend\'s name>\'.')
 	whoami.Say('To receive your packages, say \'receive\'.')
 
