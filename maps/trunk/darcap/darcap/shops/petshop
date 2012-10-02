@@ -11,7 +11,7 @@ enter_x 7
 enter_y 23
 msg
 Created:  2010-09-28 neodeno
-Modified: 2012-05-15 Rick Tanner
+Modified: 2012-10-01 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1112,7 +1112,7 @@ x 6
 y 24
 end
 arch invis_exit
-slaying ../../world/world_116_102
+slaying ../../../world/world_116_102
 hp 23
 sp 44
 x 6
@@ -1273,7 +1273,7 @@ x 7
 y 24
 end
 arch invis_exit
-slaying ../../world/world_116_102
+slaying ../../../world/world_116_102
 hp 23
 sp 44
 x 7
@@ -1431,7 +1431,7 @@ x 8
 y 24
 end
 arch invis_exit
-slaying ../../world/world_116_102
+slaying ../../../world/world_116_102
 hp 23
 sp 44
 x 8
