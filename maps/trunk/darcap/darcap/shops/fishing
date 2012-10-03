@@ -8,7 +8,7 @@ enter_x 2
 enter_y 1
 msg
 Created:  2010-01-14 Nicolas Weeger
-Modified: 2011-10-20 Rick Tanner
+Modified: 2012-10-03 Rick Tanner
 endmsg
 end
 arch grass
@@ -55,7 +55,7 @@ y 9
 elevation 0
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 29
 sp 44
 x 1
@@ -133,7 +133,7 @@ y 9
 elevation 0
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 29
 sp 44
 x 2
@@ -200,7 +200,7 @@ y 9
 elevation 0
 end
 arch invis_exit
-slaying /world/world_116_102
+slaying ../../../world/world_116_102
 hp 29
 sp 44
 x 3
