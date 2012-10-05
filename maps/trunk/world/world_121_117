@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2012-09-19 Rick Tanner
+Modified: 2012-10-05 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_121_116
@@ -12608,7 +12608,7 @@ y 13
 end
 arch minihouse
 name mouse infested house
-slaying /navar_city/mouse_house
+slaying ../navar_city/houses/mouse_house
 hp 14
 sp 17
 x 44
