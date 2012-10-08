@@ -1,3 +1,106 @@
+2012-10-05 06:16  rjtanner
+
+	* navar_city/houses/mouse_house, navar_city/mouse_house,
+	  world/world_121_117: Moved Mouse Infested House
+	  (navar_city/mouse_house) in to the Navar houses directory
+	  (navar_city/houses/mouse_house). Updated the world map
+	  (world/world_121_117) for file path changes in the map exits and
+	  entrances. Technical change, no functional changes.
+
+2012-10-04 05:12  rjtanner
+
+	* navar_city/bow_shop, navar_city/shops/bow_shop,
+	  world/world_122_117: Moved Pimol's Fine Bow Shop
+	  (navar_city/bow_shop) in to the Navar shops directory
+	  (navar_city/shops/bow_shop). Updated the world map
+	  (world/world_122_117) for file path changes in the map exits and
+	  entrances. Technical change, no functional changes.
+
+2012-10-03 06:21  rjtanner
+
+	* darcap/darcap/fishing, darcap/darcap/shops/fishing,
+	  world/world_116_102: Moved Sargas's fine fishing supplies
+	  (darcap/darcap/fishing) in to the Darcap shops directory
+	  (darcap/darcap/shops/fishing). Updated the world map
+	  (world/world_116_102) for file path changes in the map exits and
+	  entrances. Technical change, no functional changes.
+
+2012-10-02 04:50  rjtanner
+
+	* darcap/darcap/petshop, darcap/darcap/shops/petshop,
+	  world/world_116_102: Moved Fernicious Fenx Family Pet Emporium
+	  (darcap/darcap/petshop) in to the Darcap shops directory
+	  (darcap/darcap/shops/petshop). Updated the world map
+	  (world/world_116_102) for file path changes in the map exits and
+	  entrances. Technical change, no functional changes.
+
+2012-10-01 19:55  ryo_saeba
+
+	* python/IPO/say.py: Fix bug #3573119: IPO help truncated in
+	  client. Merge lines for output.
+
+2012-09-29 07:59  rjtanner
+
+	* darcap/darcap/gaea, darcap/darcap/temples/gaea,
+	  world/world_116_102: Moved Gaea's Garden (darcap/darcap/gaea) in
+	  to the temples directory (darcap/darcap/temples/gaea) to Darcap.
+	  Updated world map (world/world_116_102) due to file patch
+	  changes. Technical change, no functional changes.
+
+2012-09-29 07:53  rjtanner
+
+	* darcap/darcap/gaea, darcap/darcap/temple, world/world_116_102:
+	  File rename for Gaea's Garden (was darcap/darcap/temple, now
+	  darcap/darcap/gaea) and updated world map (world/world_116_102)
+	  for new file name. Technical change, no functional changes.
+
+2012-09-28 06:23  rjtanner
+
+	* darcap/darcap/waterhouse: Cosmetic change with swall sections in
+	  Water house (darcap/darcap/waterhouse) to merge nicer with nearby
+	  walls. Cosmetic change only, no functional changes.
+
+2012-09-28 06:22  rjtanner
+
+	* darcap/darcap/airhouse: Cosmetic change with swall sections in
+	  Air house (darcap/darcap/airhouse) to merge nicer with nearby
+	  walls. Cosmetic change only, no functional changes.
+
+2012-09-28 06:12  rjtanner
+
+	* darcap/darcap/firehouse: Cosmetic change with swall sections in
+	  Fire house (darcap/darcap/firehouse) to merge nicer with nearby
+	  walls. Cosmetic change only, no functional changes.
+
+2012-09-27 05:03  rjtanner
+
+	* darcap/darcap/earthhouse: Cosmetic change with swall sections in
+	  Earth house (darcap/darcap/earthhouse) to merge nicer with nearby
+	  walls. Cosmetic change only, no functional changes.
+
+2012-09-26 07:30  rjtanner
+
+	* darcap/darcap/shops/IPO_darcap: Cosmetic change with swall
+	  sections in Darcap Imperial Post Office
+	  (darcap/darcap/shops/IPO_darcap) to merge nicer with nearby
+	  walls. Cosmetic change only, no functional changes.
+
+2012-09-25 05:32  rjtanner
+
+	* brest/brest.IPO: Cosmetic change with swall sections in Brest
+	  Imperial Post Office (brest/brest.IPO) to merge nicer with nearby
+	  walls. Cosmetic change only, no functional changes.
+
+2012-09-23 03:45  rjtanner
+
+	* world/world_105_115: Update Scorn Dragon Guild to use new graphic
+	  in Scorn (world/world_105_115). Cosmetic change only, no
+	  functional changes. Requires archetype update r18450 or newer.
+
+2012-09-22 04:18  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
 2012-09-21 08:02  rjtanner
 
 	* pup_land/lone_town/town: Update Purple Butterfly guild to use new
