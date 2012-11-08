@@ -1,6 +1,14 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Removed solid black line around sign images. They look much more detailed without
+the line, despite being the exact same size. Also resized text to compensate
+for extra space on the signs.
+readable/sign_e.base.111.png
+readable/sign_w.base.111.png
+readable/sign.base.111.png
+SilverNexus 2012-11-04
+
 Redesigned ogre generator face graphic, putting it in perspective with the game view.
 monster/goblin/ogre_gen.base.111.png
 SilverNexus 2012-10-25
