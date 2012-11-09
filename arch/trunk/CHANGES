@@ -1,6 +1,22 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Animated first facing for goblin leader.
+Added three facings for the goblin leader image set.
+Changed starting image to match correct facing.
+monsters/goblin/goblin_leader_arc.arc
+monsters/goblin/goblin_leader_arc.face
+monsters/goblin/goblin_leader.face
+monsters/goblin/goblin_leader.base.111.png
+monsters/goblin/goblin_leader.base.112.png
+monsters/goblin/goblin_leader.base.131.png
+monsters/goblin/goblin_leader.base.132.png
+monsters/goblin/goblin_leader.base.151.png
+monsters/goblin/goblin_leader.base.152.png
+monsters/goblin/goblin_leader.base.171.png
+monsters/goblin/goblin_leader.base.172.png
+SilverNexus 2012-11-7
+
 Removed solid black line around sign images. They look much more detailed without
 the line, despite being the exact same size. Also resized text to compensate
 for extra space on the signs.
