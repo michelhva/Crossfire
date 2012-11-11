@@ -30,4 +30,3 @@ wc 0
 dam 6
 maxsp 1
 end
- 
