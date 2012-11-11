@@ -138,6 +138,6 @@ value 1
 attacktype 1
 weapontype 8
 client_type 611
-body arm -1
+body_arm -1
 skill one handed weapons
 end
