@@ -1,6 +1,16 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Redesigned the bag_popcorn archetype to put it
+in perspecitve. Also added a bag_empty archetype
+for when the popcorn is consumed.
+food/bag_popcorn.base.111.png
+food/bag_empty.face
+food/bag_popcorn.arc
+food/bag_empty.base.111.png
+potion/emptybottles.arc
+SilverNexus 2012-11-10
+
 Redesigned my own redesigned nondirectional sign,
 keeping borders more even on all four side. Instead
 of a third line of text, the text is expanded in a
