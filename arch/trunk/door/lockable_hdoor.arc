@@ -1,6 +1,6 @@
 Object lockable_hdoor
 name unlocked door
-move_block none
+move_block 0
 face unlocked_hwooddoor.111
 randomitems lockable_door
 hp 400
