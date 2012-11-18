@@ -1,6 +1,23 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Redesigned the face for Dave. Also added a back facing.
+Changed the dave.arc file to have the .151 image (facing
+forward) as the starting image. Added classic images for
+the new facing, as well.
+monsters/undead/dave.arc
+monsters/undead/dave.face
+monsters/undead/dave.base.111.png
+monsters/undead/dave.base.112.png
+monsters/undead/dave.base.113.png
+monsters/undead/dave.base.151.png
+monsters/undead/dave.base.152.png
+monsters/undead/dave.base.153.png
+monsters/undead/dave.clsc.151.png
+monsters/undead/dave.clsc.152.png
+monsters/undead/dave.clsc.153.png
+SilverNexus 2012-11-17
+
 Redesigned speed boots to be in perspective
 armour/boots/speedboots.base.111.png
 armour/boots/speedboots.base.112.png
