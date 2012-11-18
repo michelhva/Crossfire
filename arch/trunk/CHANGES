@@ -1,6 +1,18 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Redesigned the smallt_green image to be in perspective.
+Moved the old classic smalltroll image to the smallt_green
+image and recolored the smalltroll classic image to red
+for the classic smalltroll faceset.
+monsters/troll/smallt_green.base.111.png
+monsters/troll/smallt_green.base.112.png
+monsters/troll/smallt_green.clsc.111.png
+monsters/troll/smallt_green.clsc.112.png
+monsters/troll/smalltroll.clsc.111.png
+monsters/troll/smalltroll.clsc.112.png
+SilverNexus 2012-11-17
+
 Redesigned the face for Dave. Also added a back facing.
 Changed the dave.arc file to have the .151 image (facing
 forward) as the starting image. Added classic images for
