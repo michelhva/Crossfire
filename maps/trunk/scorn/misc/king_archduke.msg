@@ -1,12 +1,12 @@
 {
   "rules": [
   {
-  "match" : ["curse", "calamity", "spectre", "yes"],
-  "pre" : [["quest", "scorn/LordSpectre", "10"], ["item", "Calamity"], ["token", "question", "curse"]],
-  "post" : [["takeitem", "Calamity"], ["quest", "scorn/LordSpectre", "60"], ["givecontents", "Prince Reward"], ["settoken", "question", "0"]],
+  "match" : ["curse", "weapon", "spectre", "yes"],
+  "pre" : [["quest", "scorn/LordSpectre", "10"], ["item", "Lord Spectre's weapon"], ["token", "question", "curse"]],
+  "post" : [["takeitem", "Lord Spectre's weapon"], ["quest", "scorn/LordSpectre", "60"], ["givecontents", "Prince Reward"], ["settoken", "question", "0"]],
   "msg" : ["Congratulations on completing your quest. We have a new Prince of the Realm!\nPlease take this fine sword as a reward.  May it serve you well!"]
   }, {
-  "match" : ["curse", "calamity", "spectre", "yes"],
+  "match" : ["curse", "weapon", "spectre", "yes"],
   "pre" : [["quest", "scorn/LordSpectre", "10"], ["token", "question", "curse"]],
   "post" : [["settoken", "question", "0"]],
   "msg" : ["Where is it then?"]

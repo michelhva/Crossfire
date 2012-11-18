@@ -4,7 +4,7 @@ width 6
 height 30
 msg
 Created:  1998-02-26
-Modified: 2010-05-05 Cavesomething
+Modified: 2012-11-18 Nicolas Weeger
 endmsg
 end
 arch nightmare
@@ -94,7 +94,7 @@ arch spectre
 y 28
 end
 arch spectre
-name Lord Spectre
+name Master Spectre
 Pow 50
 hp 1500
 maxhp 1500
@@ -111,15 +111,6 @@ dam 25
 attacktype 69633
 value 100000
 magic 7
-arch quest_prevent_drop
-name scorn/LordSpectre 60
-end
-arch quest_advance_pickup
-name scorn/LordSpectre 30-40>50
-end
-end
-arch quest_advance_death
-name scorn/LordSpectre 30>40
 end
 end
 arch demilich
