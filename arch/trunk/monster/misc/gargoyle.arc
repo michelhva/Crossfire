@@ -1,4 +1,5 @@
 Object gargolye
+name gargoyle
 randomitems gargoyle
 face gargoyle.111
 animation gargolye
