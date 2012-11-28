@@ -1,6 +1,14 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Added seperate face for rune of icestorm. Changed rune of icestorm
+and rune of large icestorm to use the new image.
+spell/Rune/rune_frost.arc
+spell/Rune/rune_icestorm.base.111.png
+spell/Rune/rune_icestorm.face
+spell/Rune/rune_large_icestorm.face
+SilverNexus 2012-11-28
+
 Redesigned coffee cups (full & empty) to be in perspective.
 Moved old images to the classic image set
 food/coffee.base.111.png
