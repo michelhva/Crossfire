@@ -9,6 +9,126 @@ Date:    2008-01-31
 Modified: 2012-11-30 Rick Tanner
 endmsg
 end
+arch blocked
+x 1
+y 14
+end
+arch blocked
+x 1
+y 15
+end
+arch blocked
+x 1
+y 16
+end
+arch blocked
+x 1
+y 17
+end
+arch blocked
+x 1
+y 18
+end
+arch blocked
+x 1
+y 19
+end
+arch blocked
+x 1
+y 20
+end
+arch blocked
+x 1
+y 21
+end
+arch blocked
+x 1
+y 22
+end
+arch blocked
+x 1
+y 23
+end
+arch blocked
+x 1
+y 24
+end
+arch blocked
+x 1
+y 25
+end
+arch blocked
+x 1
+y 26
+end
+arch blocked
+x 1
+y 27
+end
+arch blocked
+x 2
+y 14
+end
+arch blocked
+x 2
+y 15
+end
+arch blocked
+x 2
+y 16
+end
+arch blocked
+x 2
+y 17
+end
+arch blocked
+x 2
+y 18
+end
+arch blocked
+x 2
+y 19
+end
+arch blocked
+x 2
+y 20
+end
+arch blocked
+x 2
+y 21
+end
+arch blocked
+x 2
+y 22
+end
+arch blocked
+x 2
+y 23
+end
+arch blocked
+x 2
+y 24
+end
+arch blocked
+x 2
+y 25
+end
+arch blocked
+x 2
+y 26
+end
+arch blocked
+x 2
+y 27
+end
+arch blocked
+x 3
+y 14
+end
+arch blocked
+x 3
+y 15
+end
 arch stonefloor2
 x 3
 y 16
@@ -88,6 +208,22 @@ end
 arch dwall_2_2_1
 x 3
 y 25
+end
+arch blocked
+x 3
+y 26
+end
+arch blocked
+x 3
+y 27
+end
+arch blocked
+x 4
+y 14
+end
+arch blocked
+x 4
+y 15
 end
 arch stonefloor2
 x 4
@@ -172,6 +308,22 @@ arch dwall_2_1_2
 x 4
 y 25
 end
+arch blocked
+x 4
+y 26
+end
+arch blocked
+x 4
+y 27
+end
+arch blocked
+x 5
+y 14
+end
+arch blocked
+x 5
+y 15
+end
 arch stonefloor2
 x 5
 y 16
@@ -248,6 +400,22 @@ arch dwall_2_1_2
 x 5
 y 25
 end
+arch blocked
+x 5
+y 26
+end
+arch blocked
+x 5
+y 27
+end
+arch blocked
+x 6
+y 14
+end
+arch blocked
+x 6
+y 15
+end
 arch stonefloor2
 x 6
 y 16
@@ -327,6 +495,22 @@ end
 arch dwall_2_1_2
 x 6
 y 25
+end
+arch blocked
+x 6
+y 26
+end
+arch blocked
+x 6
+y 27
+end
+arch blocked
+x 7
+y 14
+end
+arch blocked
+x 7
+y 15
 end
 arch stonefloor2
 x 7
@@ -408,6 +592,22 @@ arch dwall_2_1_2
 x 7
 y 25
 end
+arch blocked
+x 7
+y 26
+end
+arch blocked
+x 7
+y 27
+end
+arch blocked
+x 8
+y 14
+end
+arch blocked
+x 8
+y 15
+end
 arch stonefloor2
 x 8
 y 16
@@ -479,6 +679,22 @@ end
 arch dwall_2_1_2
 x 8
 y 25
+end
+arch blocked
+x 8
+y 26
+end
+arch blocked
+x 8
+y 27
+end
+arch blocked
+x 9
+y 14
+end
+arch blocked
+x 9
+y 15
 end
 arch stonefloor2
 x 9
@@ -560,6 +776,22 @@ arch dwall_2_1_2
 x 9
 y 25
 end
+arch blocked
+x 9
+y 26
+end
+arch blocked
+x 9
+y 27
+end
+arch blocked
+x 10
+y 14
+end
+arch blocked
+x 10
+y 15
+end
 arch stonefloor2
 x 10
 y 16
@@ -639,6 +871,22 @@ end
 arch dwall_2_1_2
 x 10
 y 25
+end
+arch blocked
+x 10
+y 26
+end
+arch blocked
+x 10
+y 27
+end
+arch blocked
+x 11
+y 14
+end
+arch blocked
+x 11
+y 15
 end
 arch stonefloor2
 x 11
@@ -727,6 +975,22 @@ end
 arch dwall_2_1_2
 x 11
 y 25
+end
+arch blocked
+x 11
+y 26
+end
+arch blocked
+x 11
+y 27
+end
+arch blocked
+x 12
+y 14
+end
+arch blocked
+x 12
+y 15
 end
 arch stonefloor2
 x 12
@@ -808,6 +1072,22 @@ arch dwall_3_1
 x 12
 y 25
 end
+arch blocked
+x 12
+y 26
+end
+arch blocked
+x 12
+y 27
+end
+arch blocked
+x 13
+y 14
+end
+arch blocked
+x 13
+y 15
+end
 arch stonefloor2
 x 13
 y 16
@@ -887,6 +1167,22 @@ arch dwall_2_1_2
 x 13
 y 25
 end
+arch blocked
+x 13
+y 26
+end
+arch blocked
+x 13
+y 27
+end
+arch blocked
+x 14
+y 14
+end
+arch blocked
+x 14
+y 15
+end
 arch stonefloor2
 x 14
 y 16
@@ -963,6 +1259,22 @@ arch dwall_2_1_2
 x 14
 y 25
 end
+arch blocked
+x 14
+y 26
+end
+arch blocked
+x 14
+y 27
+end
+arch blocked
+x 15
+y 14
+end
+arch blocked
+x 15
+y 15
+end
 arch stonefloor2
 x 15
 y 16
@@ -1043,6 +1355,22 @@ arch dwall_2_1_2
 x 15
 y 25
 end
+arch blocked
+x 15
+y 26
+end
+arch blocked
+x 15
+y 27
+end
+arch blocked
+x 16
+y 14
+end
+arch blocked
+x 16
+y 15
+end
 arch stonefloor2
 x 16
 y 16
@@ -1122,6 +1450,22 @@ end
 arch dwall_2_1_2
 x 16
 y 25
+end
+arch blocked
+x 16
+y 26
+end
+arch blocked
+x 16
+y 27
+end
+arch blocked
+x 17
+y 14
+end
+arch blocked
+x 17
+y 15
 end
 arch stonefloor2
 x 17
@@ -1214,6 +1558,22 @@ end
 arch dwall_2_1_2
 x 17
 y 25
+end
+arch blocked
+x 17
+y 26
+end
+arch blocked
+x 17
+y 27
+end
+arch blocked
+x 18
+y 14
+end
+arch blocked
+x 18
+y 15
 end
 arch stonefloor2
 x 18
@@ -1294,4 +1654,124 @@ end
 arch dwall_2_2_4
 x 18
 y 25
+end
+arch blocked
+x 18
+y 26
+end
+arch blocked
+x 18
+y 27
+end
+arch blocked
+x 19
+y 14
+end
+arch blocked
+x 19
+y 15
+end
+arch blocked
+x 19
+y 16
+end
+arch blocked
+x 19
+y 17
+end
+arch blocked
+x 19
+y 18
+end
+arch blocked
+x 19
+y 19
+end
+arch blocked
+x 19
+y 20
+end
+arch blocked
+x 19
+y 21
+end
+arch blocked
+x 19
+y 22
+end
+arch blocked
+x 19
+y 23
+end
+arch blocked
+x 19
+y 24
+end
+arch blocked
+x 19
+y 25
+end
+arch blocked
+x 19
+y 26
+end
+arch blocked
+x 19
+y 27
+end
+arch blocked
+x 20
+y 14
+end
+arch blocked
+x 20
+y 15
+end
+arch blocked
+x 20
+y 16
+end
+arch blocked
+x 20
+y 17
+end
+arch blocked
+x 20
+y 18
+end
+arch blocked
+x 20
+y 19
+end
+arch blocked
+x 20
+y 20
+end
+arch blocked
+x 20
+y 21
+end
+arch blocked
+x 20
+y 22
+end
+arch blocked
+x 20
+y 23
+end
+arch blocked
+x 20
+y 24
+end
+arch blocked
+x 20
+y 25
+end
+arch blocked
+x 20
+y 26
+end
+arch blocked
+x 20
+y 27
 end
