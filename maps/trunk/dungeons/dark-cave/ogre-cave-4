@@ -11,7 +11,7 @@ endmsg
 end
 arch dirtfloor
 end
-arch cave18
+arch cave24
 end
 arch dirtfloor
 y 1
@@ -39,6 +39,27 @@ y 4
 end
 arch dirtfloor
 y 5
+end
+arch cave_15
+y 5
+end
+arch cave_15
+y 6
+end
+arch cave_15
+y 7
+end
+arch cave_15
+y 8
+end
+arch cave_15
+y 9
+end
+arch cave_15
+y 10
+end
+arch cave_15
+y 11
 end
 arch dirtfloor
 x 1
@@ -85,7 +106,15 @@ arch dirtfloor
 x 1
 y 6
 end
+arch cave_15
+x 1
+y 6
+end
 arch dirtfloor
+x 1
+y 7
+end
+arch cave_15
 x 1
 y 7
 end
@@ -93,7 +122,15 @@ arch dirtfloor
 x 1
 y 8
 end
+arch cave_15
+x 1
+y 8
+end
 arch dirtfloor
+x 1
+y 9
+end
+arch cave_15
 x 1
 y 9
 end
@@ -101,10 +138,18 @@ arch dirtfloor
 x 1
 y 10
 end
+arch cave_15
+x 1
+y 10
+end
+arch cave_15
+x 1
+y 11
+end
 arch dirtfloor
 x 2
 end
-arch cave19
+arch cave25
 x 2
 end
 arch dirtfloor
@@ -171,7 +216,7 @@ arch dirtfloor
 x 2
 y 9
 end
-arch cave17
+arch cave23
 x 2
 y 9
 end
@@ -179,11 +224,22 @@ arch dirtfloor
 x 2
 y 10
 end
+arch cave_15
+x 2
+y 10
+end
+arch cave_15
+x 2
+y 11
+end
+arch cave_15
+x 3
+end
 arch dirtfloor
 x 3
 y 1
 end
-arch cave19
+arch cave25
 x 3
 y 1
 end
@@ -267,6 +323,21 @@ arch dirtfloor
 x 3
 y 10
 end
+arch cave_15
+x 3
+y 10
+end
+arch cave_15
+x 3
+y 11
+end
+arch cave_15
+x 4
+end
+arch cave_15
+x 4
+y 1
+end
 arch dirtfloor
 x 4
 y 2
@@ -338,6 +409,17 @@ end
 arch dirtfloor
 x 4
 y 10
+end
+arch cave_15
+x 4
+y 10
+end
+arch cave_15
+x 4
+y 11
+end
+arch cave_15
+x 5
 end
 arch dirtfloor
 x 5
@@ -427,6 +509,17 @@ arch dirtfloor
 x 5
 y 10
 end
+arch cave_15
+x 5
+y 10
+end
+arch cave_15
+x 5
+y 11
+end
+arch cave_15
+x 6
+end
 arch dirtfloor
 x 6
 y 1
@@ -511,11 +604,22 @@ arch dirtfloor
 x 6
 y 10
 end
+arch cave_15
+x 6
+y 10
+end
+arch cave_15
+x 6
+y 11
+end
+arch cave_15
+x 7
+end
 arch dirtfloor
 x 7
 y 1
 end
-arch cave19
+arch cave25
 x 7
 y 1
 end
@@ -591,11 +695,30 @@ arch dirtfloor
 x 7
 y 9
 end
+arch cave_15
+x 7
+y 9
+end
 arch dirtfloor
 x 7
 y 10
 end
+arch cave_15
+x 7
+y 10
+end
+arch cave_15
+x 7
+y 11
+end
+arch cave_15
+x 8
+end
 arch dirtfloor
+x 8
+y 1
+end
+arch cave_15
 x 8
 y 1
 end
@@ -647,7 +770,7 @@ arch dirtfloor
 x 8
 y 7
 end
-arch cave20
+arch cave22
 x 8
 y 7
 end
@@ -655,7 +778,15 @@ arch dirtfloor
 x 8
 y 8
 end
+arch cave_15
+x 8
+y 8
+end
 arch dirtfloor
+x 8
+y 9
+end
+arch cave_15
 x 8
 y 9
 end
@@ -663,7 +794,22 @@ arch dirtfloor
 x 8
 y 10
 end
+arch cave_15
+x 8
+y 10
+end
+arch cave_15
+x 8
+y 11
+end
+arch cave_15
+x 9
+end
 arch dirtfloor
+x 9
+y 1
+end
+arch cave_15
 x 9
 y 1
 end
@@ -671,7 +817,15 @@ arch dirtfloor
 x 9
 y 2
 end
+arch cave_15
+x 9
+y 2
+end
 arch dirtfloor
+x 9
+y 3
+end
+arch cave_15
 x 9
 y 3
 end
@@ -703,7 +857,15 @@ arch dirtfloor
 x 9
 y 7
 end
+arch cave_15
+x 9
+y 7
+end
 arch dirtfloor
+x 9
+y 8
+end
+arch cave_15
 x 9
 y 8
 end
@@ -711,7 +873,113 @@ arch dirtfloor
 x 9
 y 9
 end
+arch cave_15
+x 9
+y 9
+end
 arch dirtfloor
 x 9
 y 10
+end
+arch cave_15
+x 9
+y 10
+end
+arch cave_15
+x 9
+y 11
+end
+arch cave_15
+x 10
+end
+arch cave_15
+x 10
+y 1
+end
+arch cave_15
+x 10
+y 2
+end
+arch cave_15
+x 10
+y 3
+end
+arch cave_15
+x 10
+y 4
+end
+arch cave_15
+x 10
+y 5
+end
+arch cave_15
+x 10
+y 6
+end
+arch cave_15
+x 10
+y 7
+end
+arch cave_15
+x 10
+y 8
+end
+arch cave_15
+x 10
+y 9
+end
+arch cave_15
+x 10
+y 10
+end
+arch cave_15
+x 10
+y 11
+end
+arch cave_15
+x 11
+end
+arch cave_15
+x 11
+y 1
+end
+arch cave_15
+x 11
+y 2
+end
+arch cave_15
+x 11
+y 3
+end
+arch cave_15
+x 11
+y 4
+end
+arch cave_15
+x 11
+y 5
+end
+arch cave_15
+x 11
+y 6
+end
+arch cave_15
+x 11
+y 7
+end
+arch cave_15
+x 11
+y 8
+end
+arch cave_15
+x 11
+y 9
+end
+arch cave_15
+x 11
+y 10
+end
+arch cave_15
+x 11
+y 11
 end
