@@ -2,6 +2,7 @@ arch map
 name dark cave
 reset_timeout 2700
 difficulty 7
+region wilderness
 darkness 3
 width 40
 height 80
@@ -9,10 +10,11 @@ msg
 Creator: jesse@phiwumbda.org
 Date:    2008-01-21
 
-This dark cave looks like a Dwarven mine 
-town, fallen on very hard times indeed.  The 
-ogrish lot at the mouth of the cave seems fairly 
+This dark cave looks like a Dwarven mine
+town, fallen on very hard times indeed.  The
+ogrish lot at the mouth of the cave seems fairly
 pleased with its plunder!
+Modified: 2012-11-30 Rick Tanner
 endmsg
 end
 arch dirtfloor
