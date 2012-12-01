@@ -13353,7 +13353,10 @@ x 45
 y 26
 elevation 4971
 end
-arch mountain
+arch mountain_cave
+slaying /dungeons/dark-cave/ogre-cave
+hp 31
+sp 45
 x 45
 y 27
 elevation 5384
