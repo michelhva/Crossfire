@@ -1988,6 +1988,10 @@ arch stonefloor2
 x 6
 y 41
 end
+arch swall_1_4_half
+x 6
+y 41
+end
 arch cwall_1_3
 x 6
 y 41
@@ -2025,6 +2029,10 @@ x 6
 y 46
 end
 arch stonefloor2
+x 6
+y 47
+end
+arch swall_1_4_half
 x 6
 y 47
 end
@@ -2372,7 +2380,6 @@ arch ggate_closed
 x 7
 y 47
 connected 13
-move_block all
 no_magic 1
 damned 1
 end
@@ -2647,6 +2654,10 @@ arch stonefloor2
 x 8
 y 41
 end
+arch swall_1_3_half
+x 8
+y 41
+end
 arch cwall_1_4
 x 8
 y 41
@@ -2680,6 +2691,10 @@ x 8
 y 46
 end
 arch stonefloor2
+x 8
+y 47
+end
+arch swall_1_3_half
 x 8
 y 47
 end
