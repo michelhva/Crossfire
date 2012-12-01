@@ -1,0 +1,5015 @@
+arch map
+name dark-cave-2
+difficulty 7
+darkness 2
+width 40
+height 80
+msg
+Creator: jesse
+Date:    2008-01-22
+endmsg
+end
+arch blocked
+x 1
+y 32
+end
+arch blocked
+x 1
+y 33
+end
+arch blocked
+x 1
+y 34
+end
+arch blocked
+x 2
+y 28
+end
+arch blocked
+x 2
+y 29
+end
+arch blocked
+x 2
+y 30
+end
+arch blocked
+x 2
+y 31
+end
+arch blocked
+x 2
+y 32
+end
+arch cave24
+x 2
+y 33
+end
+arch dirtfloor
+x 2
+y 34
+end
+arch cave3
+x 2
+y 34
+end
+arch stonefloor2
+x 2
+y 35
+end
+arch cwall_2_2_2
+x 2
+y 35
+end
+arch stonefloor2
+x 2
+y 36
+end
+arch cwall_2_1_1
+x 2
+y 36
+end
+arch stonefloor2
+x 2
+y 37
+end
+arch cwall_2_1_1
+x 2
+y 37
+end
+arch stonefloor2
+x 2
+y 38
+end
+arch cwall_2_1_1
+x 2
+y 38
+end
+arch stonefloor2
+x 2
+y 39
+end
+arch cwall_2_1_1
+x 2
+y 39
+end
+arch stonefloor2
+x 2
+y 40
+end
+arch cwall_2_1_1
+x 2
+y 40
+end
+arch stonefloor2
+x 2
+y 41
+end
+arch cwall_3_2
+x 2
+y 41
+end
+arch stonefloor2
+x 2
+y 42
+end
+arch cwall_2_1_1
+x 2
+y 42
+end
+arch stonefloor2
+x 2
+y 43
+end
+arch cwall_2_1_1
+x 2
+y 43
+end
+arch stonefloor2
+x 2
+y 44
+end
+arch cwall_2_1_1
+x 2
+y 44
+end
+arch stonefloor2
+x 2
+y 45
+end
+arch cwall_2_1_1
+x 2
+y 45
+end
+arch stonefloor2
+x 2
+y 46
+end
+arch cwall_2_1_1
+x 2
+y 46
+end
+arch stonefloor2
+x 2
+y 47
+end
+arch cwall_3_2
+x 2
+y 47
+end
+arch stonefloor2
+x 2
+y 48
+end
+arch cwall_2_1_1
+x 2
+y 48
+end
+arch stonefloor2
+x 2
+y 49
+end
+arch cwall_2_1_1
+x 2
+y 49
+end
+arch stonefloor2
+x 2
+y 50
+end
+arch cwall_2_1_1
+x 2
+y 50
+end
+arch stonefloor2
+x 2
+y 51
+end
+arch cwall_2_1_1
+x 2
+y 51
+end
+arch stonefloor2
+x 2
+y 52
+end
+arch cwall_2_1_1
+x 2
+y 52
+end
+arch stonefloor2
+x 2
+y 53
+end
+arch cwall_2_1_1
+x 2
+y 53
+end
+arch stonefloor2
+x 2
+y 54
+end
+arch cwall_2_2_1
+x 2
+y 54
+end
+arch blocked
+x 3
+y 28
+end
+arch blocked
+x 3
+y 29
+end
+arch dirtfloor
+x 3
+y 30
+end
+arch cave18
+x 3
+y 30
+end
+arch dirtfloor
+x 3
+y 31
+end
+arch cave3
+x 3
+y 31
+end
+arch dirtfloor
+x 3
+y 32
+end
+arch cave3
+x 3
+y 32
+end
+arch dirtfloor
+x 3
+y 33
+end
+arch cave13
+x 3
+y 33
+end
+arch dirtfloor
+x 3
+y 34
+end
+arch stonefloor2
+x 3
+y 35
+end
+arch cwall_2_1_2
+x 3
+y 35
+end
+arch stonefloor2
+x 3
+y 36
+end
+arch mover_5
+x 3
+y 36
+move_type all
+end
+arch stonefloor2
+x 3
+y 37
+end
+arch stonefloor2
+x 3
+y 38
+end
+arch stonefloor2
+x 3
+y 39
+end
+arch sarcophagus_container
+x 3
+y 39
+arch random_treasure
+end
+end
+arch stonefloor2
+x 3
+y 40
+end
+arch stonefloor2
+x 3
+y 41
+end
+arch cwall_2_1_2
+x 3
+y 41
+end
+arch stonefloor2
+x 3
+y 42
+end
+arch stonefloor2
+x 3
+y 43
+end
+arch wight
+x 3
+y 43
+end
+arch stonefloor2
+x 3
+y 44
+end
+arch stonefloor2
+x 3
+y 45
+end
+arch generate_ghost
+other_arch wraith
+x 3
+y 45
+end
+arch stonefloor2
+x 3
+y 46
+end
+arch stonefloor2
+x 3
+y 47
+end
+arch cwall_2_1_2
+x 3
+y 47
+end
+arch dirtfloor
+x 3
+y 48
+end
+arch gravestone
+x 3
+y 48
+end
+arch wraith
+x 3
+y 48
+end
+arch dirtfloor
+x 3
+y 49
+end
+arch skeleton
+x 3
+y 49
+end
+arch dirtfloor
+x 3
+y 50
+end
+arch generate_skeleton
+x 3
+y 50
+end
+arch ghost
+x 3
+y 50
+end
+arch dirtfloor
+x 3
+y 51
+end
+arch dirtfloor
+x 3
+y 52
+end
+arch stonefloor2
+x 3
+y 53
+end
+arch ghast
+x 3
+y 53
+end
+arch stonefloor2
+x 3
+y 54
+end
+arch cwall_2_1_2
+x 3
+y 54
+end
+arch blocked
+x 4
+y 28
+end
+arch dirtfloor
+x 4
+y 29
+end
+arch cave24
+x 4
+y 29
+end
+arch dirtfloor
+x 4
+y 30
+end
+arch cave9
+x 4
+y 30
+end
+arch dirtfloor
+x 4
+y 31
+end
+arch dirtfloor
+x 4
+y 32
+end
+arch dwarf
+x 4
+y 32
+stand_still 1
+end
+arch dirtfloor
+x 4
+y 33
+end
+arch dirtfloor
+x 4
+y 34
+end
+arch stonefloor2
+x 4
+y 35
+end
+arch cwall_closed_1
+x 4
+y 35
+connected 41
+end
+arch stonefloor2
+x 4
+y 36
+end
+arch mover_5
+x 4
+y 36
+move_type all
+end
+arch stonefloor2
+x 4
+y 37
+end
+arch stonefloor2
+x 4
+y 38
+end
+arch stonefloor2
+x 4
+y 39
+end
+arch stonefloor2
+x 4
+y 40
+end
+arch stonefloor2
+x 4
+y 41
+end
+arch cwall_2_1_2
+x 4
+y 41
+end
+arch stonefloor2
+x 4
+y 42
+end
+arch sarcophagus_container
+x 4
+y 42
+arch random_talisman
+end
+arch random_treasure
+end
+end
+arch stonefloor2
+x 4
+y 43
+end
+arch stonefloor2
+x 4
+y 44
+end
+arch coffin
+x 4
+y 44
+end
+arch stonefloor2
+x 4
+y 45
+end
+arch stonefloor2
+x 4
+y 46
+end
+arch stonefloor2
+x 4
+y 47
+end
+arch cwall_2_1_2
+x 4
+y 47
+end
+arch dirtfloor
+x 4
+y 48
+end
+arch gravestone2
+x 4
+y 48
+end
+arch dirtfloor
+x 4
+y 49
+end
+arch dirtfloor
+x 4
+y 50
+end
+arch gravestone2
+x 4
+y 50
+end
+arch wraith
+x 4
+y 50
+end
+arch dirtfloor
+x 4
+y 51
+end
+arch ghost
+x 4
+y 51
+end
+arch dirtfloor
+x 4
+y 52
+end
+arch generate_skeleton
+other_arch wraith
+x 4
+y 52
+end
+arch ghost
+x 4
+y 52
+end
+arch stonefloor2
+x 4
+y 53
+end
+arch ghost
+x 4
+y 53
+end
+arch stonefloor2
+x 4
+y 54
+end
+arch cwall_2_1_2
+x 4
+y 54
+end
+arch blocked
+x 5
+y 28
+end
+arch dirtfloor
+x 5
+y 29
+end
+arch cave4
+x 5
+y 29
+end
+arch dirtfloor
+x 5
+y 30
+end
+arch dwarf
+x 5
+y 30
+stand_still 1
+end
+arch dirtfloor
+x 5
+y 31
+end
+arch dirtfloor
+x 5
+y 32
+end
+arch campfire
+x 5
+y 32
+end
+arch magic_mouth
+msg
+The appreciative dwarf priest presents
+you with a reward for your services.
+endmsg
+food 1
+x 5
+y 33
+connected 2
+move_on 0
+end
+arch magic_mouth
+msg
+Drop the letter from the dwarf captives here.
+endmsg
+x 5
+y 33
+end
+arch dirtfloor
+x 5
+y 33
+end
+arch altar_trigger
+slaying letter from dwarf captives
+food 1
+x 5
+y 33
+invisible 1
+connected 2
+end
+arch creator
+x 5
+y 33
+connected 2
+arch battle_axe
+title of Mostrai
+slaying goblin,giant
+hp 1
+dam 25
+attacktype 257
+value 50000
+magic 3
+item_power 1
+end
+end
+arch dirtfloor
+x 5
+y 34
+end
+arch button_handle
+x 5
+y 34
+connected 41
+end
+arch stonefloor2
+x 5
+y 35
+end
+arch cwall_2_1_2
+x 5
+y 35
+end
+arch stonefloor2
+x 5
+y 36
+end
+arch button_trigger
+x 5
+y 36
+weight 80001
+connected 41
+end
+arch coffin
+x 5
+y 36
+end
+arch mover_4
+x 5
+y 36
+move_type all
+end
+arch stonefloor2
+x 5
+y 37
+end
+arch stonefloor2
+x 5
+y 38
+end
+arch stonefloor2
+x 5
+y 39
+end
+arch stonefloor2
+x 5
+y 40
+end
+arch stonefloor2
+x 5
+y 41
+end
+arch cwall_2_1_2
+x 5
+y 41
+end
+arch stonefloor2
+x 5
+y 42
+end
+arch stonefloor2
+x 5
+y 43
+end
+arch nazgul
+x 5
+y 43
+end
+arch stonefloor2
+x 5
+y 44
+end
+arch wight
+x 5
+y 44
+end
+arch stonefloor2
+x 5
+y 45
+end
+arch vampire
+x 5
+y 45
+end
+arch stonefloor2
+x 5
+y 46
+end
+arch wraith
+x 5
+y 46
+end
+arch stonefloor2
+x 5
+y 47
+end
+arch cwall_2_1_2
+x 5
+y 47
+end
+arch dirtfloor
+x 5
+y 48
+end
+arch gravestone
+x 5
+y 48
+end
+arch ghost
+x 5
+y 48
+end
+arch dirtfloor
+x 5
+y 49
+end
+arch dirtfloor
+x 5
+y 50
+end
+arch gravestone
+x 5
+y 50
+end
+arch ghost
+x 5
+y 50
+end
+arch dirtfloor
+x 5
+y 51
+end
+arch ghost
+x 5
+y 51
+end
+arch dirtfloor
+x 5
+y 52
+end
+arch gravestone2
+x 5
+y 52
+end
+arch stonefloor2
+x 5
+y 53
+end
+arch ghost
+x 5
+y 53
+end
+arch stonefloor2
+x 5
+y 54
+end
+arch cwall_2_1_2
+x 5
+y 54
+end
+arch blocked
+x 6
+y 28
+end
+arch dirtfloor
+x 6
+y 29
+end
+arch cave19
+x 6
+y 29
+end
+arch dirtfloor
+x 6
+y 30
+end
+arch cave14
+x 6
+y 30
+end
+arch dirtfloor
+x 6
+y 31
+end
+arch dirtfloor
+x 6
+y 32
+end
+arch dwarf_priest
+msg
+@match yes|Yes|letter|Letter
+Have you word from our friends?  Please,
+step forward and deliver it!
+@match no|No|where|Where|giant|Giant|ogre|Ogre
+The giant army is from the Red Foot tribe.
+The Red Foots are located in the mountains
+north of the nearby inn.  If our dwarven
+brothers still live, they are likely being held
+there.
+@match wizard|Wizard|glint|Glint|necromancer|Necromancer
+Some time after the battle against the ogres,
+a wizard arrived.  We do not know much
+about him, but it appears that he has chosen
+our outpost as his home.
+
+We have heard battles raging upstairs,
+perhaps between the giants and the
+wizard's minions.  But the battles have
+been silent for some time now.
+
+We would be most appreciative if you
+can help rid us of this new threat, but
+I am afraid we have no more reward to
+offer you.
+@match *
+Welcome!  We have been in hiding here
+since the giant army invaded our mining
+outpost.  The battle was bloody and many
+dwarves were captured.  Our only protection
+is this secret room and the spirits of our
+ancestors.
+
+Have you perchance stumbled across our
+captive brethren?
+endmsg
+x 6
+y 32
+stand_still 1
+end
+arch dirtfloor
+x 6
+y 33
+end
+arch dwarf
+x 6
+y 33
+stand_still 1
+end
+arch dirtfloor
+x 6
+y 34
+end
+arch cave6
+x 6
+y 34
+end
+arch stonefloor2
+x 6
+y 35
+end
+arch cwall_2_1_2
+x 6
+y 35
+end
+arch stonefloor2
+x 6
+y 36
+end
+arch stonefloor2
+x 6
+y 37
+end
+arch stonefloor2
+x 6
+y 38
+end
+arch stonefloor2
+x 6
+y 39
+end
+arch stonefloor2
+x 6
+y 40
+end
+arch spectre
+x 6
+y 40
+end
+arch stonefloor2
+x 6
+y 41
+end
+arch cwall_1_3
+x 6
+y 41
+end
+arch stonefloor2
+x 6
+y 42
+end
+arch grimreaper
+x 6
+y 42
+end
+arch stonefloor2
+x 6
+y 43
+end
+arch stonefloor2
+x 6
+y 44
+end
+arch stonefloor2
+x 6
+y 45
+end
+arch wraith
+x 6
+y 45
+end
+arch stonefloor2
+x 6
+y 46
+end
+arch wraith
+x 6
+y 46
+end
+arch stonefloor2
+x 6
+y 47
+end
+arch cwall_1_3
+x 6
+y 47
+end
+arch dirtfloor
+x 6
+y 48
+end
+arch generate_skeleton
+other_arch ghast
+x 6
+y 48
+end
+arch dirtfloor
+x 6
+y 49
+end
+arch ghast
+x 6
+y 49
+end
+arch dirtfloor
+x 6
+y 50
+end
+arch dirtfloor
+x 6
+y 51
+end
+arch dirtfloor
+x 6
+y 52
+end
+arch gravestone2
+x 6
+y 52
+end
+arch stonefloor2
+x 6
+y 53
+end
+arch stonefloor2
+x 6
+y 54
+end
+arch cwall_2_2_3
+x 6
+y 54
+end
+arch stonefloor2
+x 6
+y 55
+end
+arch cwall_2_1_1
+x 6
+y 55
+end
+arch stonefloor2
+x 6
+y 56
+end
+arch cwall_2_1_1
+x 6
+y 56
+end
+arch stonefloor2
+x 6
+y 57
+end
+arch cwall_2_2_1
+x 6
+y 57
+end
+arch blocked
+x 7
+y 28
+end
+arch blocked
+x 7
+y 29
+end
+arch dirtfloor
+x 7
+y 30
+end
+arch cave25
+x 7
+y 30
+end
+arch dirtfloor
+x 7
+y 31
+end
+arch cave1
+x 7
+y 31
+end
+arch dirtfloor
+x 7
+y 32
+end
+arch cave1
+x 7
+y 32
+end
+arch dirtfloor
+x 7
+y 33
+end
+arch cave1
+x 7
+y 33
+end
+arch dirtfloor
+x 7
+y 34
+end
+arch cave20
+x 7
+y 34
+end
+arch stonefloor2
+x 7
+y 35
+end
+arch cwall_2_1_2
+x 7
+y 35
+end
+arch stonefloor2
+x 7
+y 36
+end
+arch stonefloor2
+x 7
+y 37
+end
+arch altar_mostrai
+x 7
+y 37
+end
+arch stonefloor2
+x 7
+y 38
+end
+arch stonefloor2
+x 7
+y 39
+end
+arch button_small
+x 7
+y 40
+connected 14
+end
+arch stonefloor2
+x 7
+y 40
+end
+arch stonefloor2
+x 7
+y 41
+end
+arch ggate_closed
+x 7
+y 41
+connected 14
+move_block all
+no_magic 1
+damned 1
+end
+arch button_small
+x 7
+y 42
+connected 14
+end
+arch stonefloor2
+x 7
+y 42
+no_magic 1
+damned 1
+end
+arch stonefloor2
+x 7
+y 43
+end
+arch sign
+name Last Warning!
+msg
+We warned you once.
+
+But good luck.  The next room
+can be deadly.
+endmsg
+x 7
+y 43
+end
+arch grimreaper
+x 7
+y 43
+end
+arch stonefloor2
+x 7
+y 44
+end
+arch stonefloor2
+x 7
+y 45
+end
+arch button_small
+x 7
+y 46
+connected 13
+end
+arch stonefloor2
+x 7
+y 46
+end
+arch stonefloor2
+x 7
+y 47
+end
+arch ggate_closed
+x 7
+y 47
+connected 13
+move_block all
+no_magic 1
+damned 1
+end
+arch button_small
+x 7
+y 48
+connected 13
+end
+arch stonefloor2
+x 7
+y 48
+no_magic 1
+damned 1
+end
+arch stonefloor2
+x 7
+y 49
+end
+arch sign
+name A warning
+msg
+Warning!
+
+Be prepared for bad things ahead!
+There is a nasty surprise or two.
+endmsg
+x 7
+y 49
+end
+arch ghost
+x 7
+y 49
+end
+arch stonefloor2
+x 7
+y 50
+end
+arch wraith
+x 7
+y 50
+end
+arch stonefloor2
+x 7
+y 51
+end
+arch stonefloor2
+x 7
+y 52
+end
+arch stonefloor2
+x 7
+y 53
+end
+arch stonefloor2
+x 7
+y 54
+end
+arch stonefloor2
+x 7
+y 55
+end
+arch magic_mouth
+msg
+This appears to be a dwarven tomb.
+endmsg
+x 7
+y 55
+end
+arch stonefloor2
+x 7
+y 56
+end
+arch stair3_gstone_up
+slaying dark-cave
+hp 7
+sp 56
+x 7
+y 56
+end
+arch stonefloor2
+x 7
+y 57
+end
+arch cwall_2_1_2
+x 7
+y 57
+end
+arch blocked
+x 8
+y 28
+end
+arch blocked
+x 8
+y 29
+end
+arch blocked
+x 8
+y 30
+end
+arch blocked
+x 8
+y 31
+end
+arch blocked
+x 8
+y 32
+end
+arch blocked
+x 8
+y 33
+end
+arch blocked
+x 8
+y 34
+end
+arch stonefloor2
+x 8
+y 35
+end
+arch cwall_2_1_2
+x 8
+y 35
+end
+arch stonefloor2
+x 8
+y 36
+end
+arch stonefloor2
+x 8
+y 37
+end
+arch spectre
+x 8
+y 37
+end
+arch stonefloor2
+x 8
+y 38
+end
+arch stonefloor2
+x 8
+y 39
+end
+arch lich
+x 8
+y 39
+end
+arch stonefloor2
+x 8
+y 40
+end
+arch stonefloor2
+x 8
+y 41
+end
+arch cwall_1_4
+x 8
+y 41
+end
+arch stonefloor2
+x 8
+y 42
+end
+arch stonefloor2
+x 8
+y 43
+end
+arch wight
+x 8
+y 43
+end
+arch stonefloor2
+x 8
+y 44
+end
+arch wight
+x 8
+y 44
+end
+arch stonefloor2
+x 8
+y 45
+end
+arch stonefloor2
+x 8
+y 46
+end
+arch stonefloor2
+x 8
+y 47
+end
+arch cwall_1_4
+x 8
+y 47
+end
+arch dirtfloor
+x 8
+y 48
+end
+arch gravestone
+x 8
+y 48
+end
+arch dirtfloor
+x 8
+y 49
+end
+arch wraith
+x 8
+y 49
+end
+arch dirtfloor
+x 8
+y 50
+end
+arch gravestone
+x 8
+y 50
+end
+arch dirtfloor
+x 8
+y 51
+end
+arch ghost
+x 8
+y 51
+end
+arch dirtfloor
+x 8
+y 52
+end
+arch gravestone2
+x 8
+y 52
+end
+arch stonefloor2
+x 8
+y 53
+end
+arch stonefloor2
+x 8
+y 54
+end
+arch cwall_2_2_2
+x 8
+y 54
+end
+arch stonefloor2
+x 8
+y 55
+end
+arch cwall_2_1_1
+x 8
+y 55
+end
+arch stonefloor2
+x 8
+y 56
+end
+arch cwall_2_1_1
+x 8
+y 56
+end
+arch stonefloor2
+x 8
+y 57
+end
+arch cwall_2_2_4
+x 8
+y 57
+end
+arch blocked
+x 9
+y 30
+end
+arch blocked
+x 9
+y 31
+end
+arch blocked
+x 9
+y 32
+end
+arch blocked
+x 9
+y 33
+end
+arch blocked
+x 9
+y 34
+end
+arch stonefloor2
+x 9
+y 35
+end
+arch cwall_2_1_2
+x 9
+y 35
+end
+arch stonefloor2
+x 9
+y 36
+end
+arch stonefloor2
+x 9
+y 37
+end
+arch stonefloor2
+x 9
+y 38
+end
+arch stonefloor2
+x 9
+y 39
+end
+arch stonefloor2
+x 9
+y 40
+end
+arch stonefloor2
+x 9
+y 41
+end
+arch cwall_2_1_2
+x 9
+y 41
+end
+arch stonefloor2
+x 9
+y 42
+end
+arch vampire
+x 9
+y 42
+end
+arch stonefloor2
+x 9
+y 43
+end
+arch stonefloor2
+x 9
+y 44
+end
+arch wight
+x 9
+y 44
+end
+arch stonefloor2
+x 9
+y 45
+end
+arch wight
+x 9
+y 45
+end
+arch stonefloor2
+x 9
+y 46
+end
+arch stonefloor2
+x 9
+y 47
+end
+arch cwall_2_1_2
+x 9
+y 47
+end
+arch dirtfloor
+x 9
+y 48
+end
+arch generate_skeleton
+x 9
+y 48
+end
+arch ghost
+x 9
+y 48
+end
+arch dirtfloor
+x 9
+y 49
+end
+arch dirtfloor
+x 9
+y 50
+end
+arch generate_skeleton
+x 9
+y 50
+end
+arch ghost
+x 9
+y 50
+end
+arch dirtfloor
+x 9
+y 51
+end
+arch skeleton_chief_arc
+x 9
+y 51
+end
+arch dirtfloor
+x 9
+y 52
+end
+arch gravestone2
+x 9
+y 52
+end
+arch stonefloor2
+x 9
+y 53
+end
+arch ghost
+x 9
+y 53
+end
+arch stonefloor2
+x 9
+y 54
+end
+arch cwall_2_1_2
+x 9
+y 54
+end
+arch stonefloor2
+x 10
+y 35
+end
+arch cwall_2_1_2
+x 10
+y 35
+end
+arch stonefloor2
+x 10
+y 36
+end
+arch stonefloor2
+x 10
+y 37
+end
+arch stonefloor2
+x 10
+y 38
+end
+arch stonefloor2
+x 10
+y 39
+end
+arch stonefloor2
+x 10
+y 40
+end
+arch stonefloor2
+x 10
+y 41
+end
+arch cwall_2_1_2
+x 10
+y 41
+end
+arch stonefloor2
+x 10
+y 42
+end
+arch generate_ghost
+other_arch wight
+x 10
+y 42
+end
+arch stonefloor2
+x 10
+y 43
+end
+arch stonefloor2
+x 10
+y 44
+end
+arch stonefloor2
+x 10
+y 45
+end
+arch stonefloor2
+x 10
+y 46
+end
+arch stonefloor2
+x 10
+y 47
+end
+arch cwall_2_1_2
+x 10
+y 47
+end
+arch dirtfloor
+x 10
+y 48
+end
+arch gravestone
+x 10
+y 48
+end
+arch ghast
+x 10
+y 48
+end
+arch dirtfloor
+x 10
+y 49
+end
+arch dirtfloor
+x 10
+y 50
+end
+arch gravestone2
+x 10
+y 50
+end
+arch dirtfloor
+x 10
+y 51
+end
+arch ghost
+x 10
+y 51
+end
+arch dirtfloor
+x 10
+y 52
+end
+arch ghast
+x 10
+y 52
+end
+arch stonefloor2
+x 10
+y 53
+end
+arch stonefloor2
+x 10
+y 54
+end
+arch cwall_2_1_2
+x 10
+y 54
+end
+arch stonefloor2
+x 11
+y 35
+end
+arch cwall_2_1_2
+x 11
+y 35
+end
+arch stonefloor2
+x 11
+y 36
+end
+arch sarcophagus_container
+x 11
+y 36
+arch random_treasure
+end
+arch random_gem
+end
+end
+arch stonefloor2
+x 11
+y 37
+end
+arch stonefloor2
+x 11
+y 38
+end
+arch stonefloor2
+x 11
+y 39
+end
+arch stonefloor2
+x 11
+y 40
+end
+arch stonefloor2
+x 11
+y 41
+end
+arch cwall_2_1_2
+x 11
+y 41
+end
+arch stonefloor2
+x 11
+y 42
+end
+arch stonefloor2
+x 11
+y 43
+end
+arch stonefloor2
+x 11
+y 44
+end
+arch vampire
+x 11
+y 44
+end
+arch stonefloor2
+x 11
+y 45
+end
+arch stonefloor2
+x 11
+y 46
+end
+arch stonefloor2
+x 11
+y 47
+end
+arch cwall_2_1_2
+x 11
+y 47
+end
+arch dirtfloor
+x 11
+y 48
+end
+arch gravestone2
+x 11
+y 48
+end
+arch dirtfloor
+x 11
+y 49
+end
+arch ghost
+x 11
+y 49
+end
+arch dirtfloor
+x 11
+y 50
+end
+arch gravestone2
+x 11
+y 50
+end
+arch dirtfloor
+x 11
+y 51
+end
+arch dirtfloor
+x 11
+y 52
+end
+arch generate_skeleton
+x 11
+y 52
+end
+arch stonefloor2
+x 11
+y 53
+end
+arch ghost
+x 11
+y 53
+end
+arch stonefloor2
+x 11
+y 54
+end
+arch cwall_2_1_2
+x 11
+y 54
+end
+arch stonefloor2
+x 12
+y 35
+end
+arch cwall_2_2_3
+x 12
+y 35
+end
+arch stonefloor2
+x 12
+y 36
+end
+arch cwall_2_1_1
+x 12
+y 36
+end
+arch stonefloor2
+x 12
+y 37
+end
+arch weak_wall_3
+x 12
+y 37
+end
+arch stonefloor2
+x 12
+y 38
+end
+arch weak_wall_3
+x 12
+y 38
+end
+arch stonefloor2
+x 12
+y 39
+end
+arch cwall_2_1_1
+x 12
+y 39
+end
+arch stonefloor2
+x 12
+y 40
+end
+arch cwall_2_1_1
+x 12
+y 40
+end
+arch stonefloor2
+x 12
+y 41
+end
+arch cwall_3_4
+x 12
+y 41
+end
+arch stonefloor2
+x 12
+y 42
+end
+arch cwall_2_1_1
+x 12
+y 42
+end
+arch stonefloor2
+x 12
+y 43
+end
+arch cwall_2_1_1
+x 12
+y 43
+end
+arch stonefloor2
+x 12
+y 44
+end
+arch cwall_2_1_1
+x 12
+y 44
+end
+arch stonefloor2
+x 12
+y 45
+end
+arch cwall_2_1_1
+x 12
+y 45
+end
+arch stonefloor2
+x 12
+y 46
+end
+arch cwall_2_1_1
+x 12
+y 46
+end
+arch stonefloor2
+x 12
+y 47
+end
+arch cwall_3_4
+x 12
+y 47
+end
+arch stonefloor2
+x 12
+y 48
+end
+arch cwall_2_1_1
+x 12
+y 48
+end
+arch stonefloor2
+x 12
+y 49
+end
+arch cwall_2_1_1
+x 12
+y 49
+end
+arch stonefloor2
+x 12
+y 50
+end
+arch cwall_2_1_1
+x 12
+y 50
+end
+arch stonefloor2
+x 12
+y 51
+end
+arch cwall_2_1_1
+x 12
+y 51
+end
+arch stonefloor2
+x 12
+y 52
+end
+arch cwall_2_1_1
+x 12
+y 52
+end
+arch stonefloor2
+x 12
+y 53
+end
+arch cwall_2_1_1
+x 12
+y 53
+end
+arch stonefloor2
+x 12
+y 54
+end
+arch cwall_2_2_4
+x 12
+y 54
+end
+arch cave18
+x 13
+y 35
+end
+arch dirtfloor
+x 13
+y 36
+end
+arch cave13
+x 13
+y 36
+end
+arch dirtfloor
+x 13
+y 37
+end
+arch dirtfloor
+x 13
+y 38
+end
+arch dirtfloor
+x 13
+y 39
+end
+arch cave2
+x 13
+y 39
+end
+arch dirtfloor
+x 14
+y 33
+end
+arch cave24
+x 14
+y 33
+end
+arch dirtfloor
+x 14
+y 34
+end
+arch cave3
+x 14
+y 34
+end
+arch dirtfloor
+x 14
+y 35
+end
+arch cave13
+x 14
+y 35
+end
+arch dirtfloor
+x 14
+y 36
+end
+arch armour_troll3
+x 14
+y 36
+end
+arch dirtfloor
+x 14
+y 37
+end
+arch small_troll
+x 14
+y 37
+end
+arch dirtfloor
+x 14
+y 38
+end
+arch armour_troll4
+x 14
+y 38
+end
+arch dirtfloor
+x 14
+y 39
+end
+arch cave2
+x 14
+y 39
+end
+arch dungeon_floor
+x 14
+y 40
+end
+arch awall_2_2_2
+x 14
+y 40
+end
+arch dungeon_floor
+x 14
+y 41
+end
+arch awall_2_1_1
+x 14
+y 41
+end
+arch dungeon_floor
+x 14
+y 42
+end
+arch awall_2_1_1
+x 14
+y 42
+end
+arch dungeon_floor
+x 14
+y 43
+end
+arch awall_2_1_1
+x 14
+y 43
+end
+arch dungeon_floor
+x 14
+y 44
+end
+arch awall_2_2_1
+x 14
+y 44
+end
+arch dungeon_floor
+x 14
+y 47
+end
+arch awall_2_2_2
+x 14
+y 47
+end
+arch dungeon_floor
+x 14
+y 48
+end
+arch awall_2_1_1
+x 14
+y 48
+end
+arch dungeon_floor
+x 14
+y 49
+end
+arch awall_2_2_1
+x 14
+y 49
+end
+arch dirtfloor
+x 15
+y 28
+end
+arch cave18
+x 15
+y 28
+end
+arch dirtfloor
+x 15
+y 29
+end
+arch cave23
+x 15
+y 29
+end
+arch dirtfloor
+x 15
+y 30
+end
+arch cave24
+x 15
+y 30
+end
+arch dirtfloor
+x 15
+y 31
+end
+arch cave3
+x 15
+y 31
+end
+arch dirtfloor
+x 15
+y 32
+end
+arch cave3
+x 15
+y 32
+end
+arch dirtfloor
+x 15
+y 33
+end
+arch cave9
+x 15
+y 33
+end
+arch dirtfloor
+x 15
+y 34
+end
+arch armour_troll4
+x 15
+y 34
+end
+arch dirtfloor
+x 15
+y 35
+end
+arch small_troll
+x 15
+y 35
+end
+arch dirtfloor
+x 15
+y 36
+end
+arch armour_troll3
+x 15
+y 36
+end
+arch dirtfloor
+x 15
+y 37
+end
+arch small_troll
+x 15
+y 37
+end
+arch dirtfloor
+x 15
+y 38
+end
+arch cave6
+x 15
+y 38
+end
+arch dirtfloor
+x 15
+y 39
+end
+arch cave20
+x 15
+y 39
+end
+arch dungeon_floor
+x 15
+y 40
+end
+arch awall_2_1_2
+x 15
+y 40
+end
+arch dungeon_floor
+x 15
+y 41
+end
+arch bed_1
+x 15
+y 41
+end
+arch dungeon_floor
+x 15
+y 42
+end
+arch dungeon_floor
+x 15
+y 43
+end
+arch chair_1.4
+x 15
+y 43
+end
+arch dungeon_floor
+x 15
+y 44
+end
+arch awall_2_1_2
+x 15
+y 44
+end
+arch dungeon_floor
+x 15
+y 47
+end
+arch awall_2_1_2
+x 15
+y 47
+end
+arch dungeon_floor
+x 15
+y 48
+end
+arch teleporter
+hp 23
+sp 41
+x 15
+y 48
+end
+arch dungeon_floor
+x 15
+y 49
+end
+arch awall_2_1_2
+x 15
+y 49
+end
+arch dirtfloor
+x 16
+y 12
+end
+arch cave24
+x 16
+y 12
+end
+arch dirtfloor
+x 16
+y 13
+end
+arch cave3
+x 16
+y 13
+end
+arch dirtfloor
+x 16
+y 14
+end
+arch cave3
+x 16
+y 14
+end
+arch dirtfloor
+x 16
+y 15
+end
+arch cave3
+x 16
+y 15
+end
+arch dirtfloor
+x 16
+y 16
+end
+arch cave3
+x 16
+y 16
+end
+arch dirtfloor
+x 16
+y 17
+end
+arch cave17
+x 16
+y 17
+end
+arch dirtfloor
+x 16
+y 24
+end
+arch cave18
+x 16
+y 24
+end
+arch dirtfloor
+x 16
+y 25
+end
+arch cave3
+x 16
+y 25
+end
+arch dirtfloor
+x 16
+y 26
+end
+arch cave3
+x 16
+y 26
+end
+arch dirtfloor
+x 16
+y 27
+end
+arch cave3
+x 16
+y 27
+end
+arch dirtfloor
+x 16
+y 28
+end
+arch cave8
+x 16
+y 28
+end
+arch armour_troll4
+x 16
+y 28
+end
+arch dirtfloor
+x 16
+y 29
+end
+arch cave16
+x 16
+y 29
+end
+arch dirtfloor
+x 16
+y 30
+end
+arch cave9
+x 16
+y 30
+end
+arch dirtfloor
+x 16
+y 31
+end
+arch dirtfloor
+x 16
+y 32
+end
+arch dirtfloor
+x 16
+y 33
+end
+arch dirtfloor
+x 16
+y 34
+end
+arch armour_troll2
+x 16
+y 34
+end
+arch dirtfloor
+x 16
+y 35
+end
+arch armour_troll3
+x 16
+y 35
+end
+arch dirtfloor
+x 16
+y 36
+end
+arch armour_troll4
+x 16
+y 36
+end
+arch dirtfloor
+x 16
+y 37
+end
+arch cave15
+x 16
+y 37
+end
+arch dirtfloor
+x 16
+y 38
+end
+arch cave20
+x 16
+y 38
+end
+arch dirtfloor
+x 16
+y 39
+end
+arch cave24
+x 16
+y 39
+end
+arch dungeon_floor
+x 16
+y 40
+end
+arch awall_2_1_2
+x 16
+y 40
+end
+arch dungeon_floor
+x 16
+y 41
+end
+arch dungeon_floor
+x 16
+y 42
+end
+arch dungeon_floor
+x 16
+y 43
+end
+arch table_2
+x 16
+y 43
+end
+arch dungeon_floor
+x 16
+y 44
+end
+arch awall_2_1_2
+x 16
+y 44
+end
+arch dungeon_floor
+x 16
+y 47
+end
+arch awall_2_1_2
+x 16
+y 47
+end
+arch dungeon_floor
+x 16
+y 48
+end
+arch mover_7
+x 16
+y 48
+move_type all
+move_on walk fly_low fly_high
+end
+arch grate_closed_2
+x 16
+y 48
+connected 23
+activate_on_release 0
+end
+arch dungeon_floor
+x 16
+y 49
+end
+arch awall_2_1_2
+x 16
+y 49
+end
+arch dirtfloor
+x 17
+y 11
+end
+arch cave18
+x 17
+y 11
+end
+arch dirtfloor
+x 17
+y 12
+end
+arch cave9
+x 17
+y 12
+end
+arch dirtfloor
+x 17
+y 13
+end
+arch dirtfloor
+x 17
+y 14
+end
+arch black_pudding
+x 17
+y 14
+end
+arch dirtfloor
+x 17
+y 15
+end
+arch dirtfloor
+x 17
+y 16
+end
+arch bones1
+x 17
+y 16
+end
+arch dirtfloor
+x 17
+y 17
+end
+arch cave7
+x 17
+y 17
+end
+arch dirtfloor
+x 17
+y 18
+end
+arch cave17
+x 17
+y 18
+end
+arch dirtfloor
+x 17
+y 23
+end
+arch cave18
+x 17
+y 23
+end
+arch dirtfloor
+x 17
+y 24
+end
+arch cave8
+x 17
+y 24
+end
+arch dirtfloor
+x 17
+y 25
+end
+arch dirtfloor
+x 17
+y 26
+end
+arch armour_troll4
+x 17
+y 26
+end
+arch dirtfloor
+x 17
+y 27
+end
+arch dirtfloor
+x 17
+y 28
+end
+arch armour_troll3
+x 17
+y 28
+end
+arch dirtfloor
+x 17
+y 29
+end
+arch armour_troll4
+x 17
+y 29
+end
+arch dirtfloor
+x 17
+y 30
+end
+arch dirtfloor
+x 17
+y 31
+end
+arch dirtfloor
+x 17
+y 32
+end
+arch cave11
+x 17
+y 32
+end
+arch dirtfloor
+x 17
+y 33
+end
+arch cave5
+x 17
+y 33
+end
+arch dirtfloor
+x 17
+y 34
+end
+arch armour_troll3
+x 17
+y 34
+end
+arch dirtfloor
+x 17
+y 35
+end
+arch small_troll
+x 17
+y 35
+end
+arch dirtfloor
+x 17
+y 36
+end
+arch cave11
+x 17
+y 36
+end
+arch cave20
+x 17
+y 37
+end
+arch cave24
+x 17
+y 38
+end
+arch cave23
+x 17
+y 39
+end
+arch dungeon_floor
+x 17
+y 40
+end
+arch awall_2_1_2
+x 17
+y 40
+end
+arch dungeon_floor
+x 17
+y 41
+end
+arch dresser
+x 17
+y 41
+arch random_treasure
+randomitems wand
+end
+end
+arch dungeon_floor
+x 17
+y 42
+end
+arch dungeon_floor
+x 17
+y 43
+end
+arch dungeon_floor
+x 17
+y 44
+end
+arch awall_2_1_2
+x 17
+y 44
+end
+arch dungeon_floor
+x 17
+y 47
+end
+arch awall_2_1_2
+x 17
+y 47
+end
+arch dungeon_floor
+x 17
+y 48
+end
+arch mover_7
+x 17
+y 48
+move_type all
+move_on walk fly_low fly_high
+end
+arch devil
+x 17
+y 48
+end
+arch dungeon_floor
+x 17
+y 49
+end
+arch awall_2_1_2
+x 17
+y 49
+end
+arch cave18
+x 18
+y 10
+end
+arch dirtfloor
+x 18
+y 11
+end
+arch cave8
+x 18
+y 11
+end
+arch dirtfloor
+x 18
+y 12
+end
+arch armour_troll4
+x 18
+y 12
+end
+arch dirtfloor
+x 18
+y 13
+end
+arch armour_troll3
+x 18
+y 13
+end
+arch dirtfloor
+x 18
+y 14
+end
+arch cave11
+x 18
+y 14
+end
+arch dirtfloor
+x 18
+y 15
+end
+arch cave10
+x 18
+y 15
+end
+arch dirtfloor
+x 18
+y 16
+end
+arch dirtfloor
+x 18
+y 17
+end
+arch dirtfloor
+x 18
+y 18
+end
+arch cave16
+x 18
+y 18
+end
+arch dirtfloor
+x 18
+y 19
+end
+arch cave3
+x 18
+y 19
+end
+arch dirtfloor
+x 18
+y 20
+end
+arch cave3
+x 18
+y 20
+end
+arch dirtfloor
+x 18
+y 21
+end
+arch cave3
+x 18
+y 21
+end
+arch dirtfloor
+x 18
+y 22
+end
+arch cave3
+x 18
+y 22
+end
+arch dirtfloor
+x 18
+y 23
+end
+arch cave13
+x 18
+y 23
+end
+arch dirtfloor
+x 18
+y 24
+end
+arch small_troll
+x 18
+y 24
+end
+arch dirtfloor
+x 18
+y 25
+end
+arch cave21
+x 18
+y 25
+end
+arch dirtfloor
+x 18
+y 26
+end
+arch dirtfloor
+x 18
+y 27
+end
+arch dirtfloor
+x 18
+y 28
+end
+arch armour_troll4
+x 18
+y 28
+end
+arch dirtfloor
+x 18
+y 29
+end
+arch armour_troll3
+x 18
+y 29
+end
+arch dirtfloor
+x 18
+y 30
+end
+arch small_troll
+x 18
+y 30
+end
+arch dirtfloor
+x 18
+y 31
+end
+arch cave6
+x 18
+y 31
+end
+arch dirtfloor
+x 18
+y 32
+end
+arch cave20
+x 18
+y 32
+end
+arch cave19
+x 18
+y 33
+end
+arch dirtfloor
+x 18
+y 34
+end
+arch cave14
+x 18
+y 34
+end
+arch dirtfloor
+x 18
+y 35
+end
+arch armour_troll3
+x 18
+y 35
+end
+arch dirtfloor
+x 18
+y 36
+end
+arch cave12
+x 18
+y 36
+end
+arch cave17
+x 18
+y 37
+end
+arch cave25
+x 18
+y 38
+end
+arch cave22
+x 18
+y 39
+end
+arch dungeon_floor
+x 18
+y 40
+end
+arch awall_2_1_2
+x 18
+y 40
+end
+arch dungeon_floor
+x 18
+y 41
+end
+arch dungeon_floor
+x 18
+y 42
+end
+arch mat
+x 18
+y 42
+end
+arch dungeon_floor
+x 18
+y 43
+end
+arch dungeon_floor
+x 18
+y 44
+end
+arch awall_2_1_2
+x 18
+y 44
+end
+arch dungeon_floor
+x 18
+y 47
+end
+arch awall_2_1_2
+x 18
+y 47
+end
+arch dungeon_floor
+x 18
+y 48
+end
+arch mover_7
+x 18
+y 48
+move_type all
+move_on walk fly_low fly_high
+end
+arch imp
+x 18
+y 48
+end
+arch dungeon_floor
+x 18
+y 49
+end
+arch awall_2_1_2
+x 18
+y 49
+end
+arch dirtfloor
+x 19
+y 9
+end
+arch cave24
+x 19
+y 9
+end
+arch dirtfloor
+x 19
+y 10
+end
+arch cave13
+x 19
+y 10
+end
+arch dirtfloor
+x 19
+y 11
+end
+arch bones2
+x 19
+y 11
+end
+arch small_troll
+x 19
+y 11
+end
+arch dirtfloor
+x 19
+y 12
+end
+arch armour_troll3
+x 19
+y 12
+end
+arch dirtfloor
+x 19
+y 13
+end
+arch small_troll
+x 19
+y 13
+end
+arch dirtfloor
+x 19
+y 14
+end
+arch cave12
+x 19
+y 14
+end
+arch dirtfloor
+x 19
+y 15
+end
+arch cave9
+x 19
+y 15
+end
+arch dirtfloor
+x 19
+y 16
+end
+arch dirtfloor
+x 19
+y 17
+end
+arch dirtfloor
+x 19
+y 18
+end
+arch dirtfloor
+x 19
+y 19
+end
+arch armour_troll4
+x 19
+y 19
+end
+arch dirtfloor
+x 19
+y 20
+end
+arch armour_troll4
+x 19
+y 20
+end
+arch dirtfloor
+x 19
+y 21
+end
+arch dirtfloor
+x 19
+y 22
+end
+arch dirtfloor
+x 19
+y 23
+end
+arch black_pudding
+x 19
+y 23
+end
+arch dirtfloor
+x 19
+y 24
+end
+arch small_troll
+x 19
+y 24
+end
+arch dirtfloor
+x 19
+y 25
+end
+arch dirtfloor
+x 19
+y 26
+end
+arch dirtfloor
+x 19
+y 27
+end
+arch cave11
+x 19
+y 27
+end
+arch dirtfloor
+x 19
+y 28
+end
+arch cave1
+x 19
+y 28
+end
+arch dirtfloor
+x 19
+y 29
+end
+arch cave1
+x 19
+y 29
+end
+arch dirtfloor
+x 19
+y 30
+end
+arch cave1
+x 19
+y 30
+end
+arch dirtfloor
+x 19
+y 31
+end
+arch cave20
+x 19
+y 31
+end
+arch dirtfloor
+x 19
+y 34
+end
+arch cave4
+x 19
+y 34
+end
+arch dirtfloor
+x 19
+y 35
+end
+arch dirtfloor
+x 19
+y 36
+end
+arch dirtfloor
+x 19
+y 37
+end
+arch cave7
+x 19
+y 37
+end
+arch dungeon_floor
+x 19
+y 38
+end
+arch awall_1_1
+x 19
+y 38
+end
+arch dungeon_floor
+x 19
+y 39
+end
+arch awall_2_1_1
+x 19
+y 39
+end
+arch dungeon_floor
+x 19
+y 40
+end
+arch awall_3_4
+x 19
+y 40
+end
+arch dungeon_floor
+x 19
+y 41
+end
+arch awall_1_2
+x 19
+y 41
+end
+arch dungeon_floor
+x 19
+y 42
+end
+arch door_look_2
+hp 100
+x 19
+y 42
+end
+arch dungeon_floor
+x 19
+y 43
+end
+arch awall_1_1
+x 19
+y 43
+end
+arch dungeon_floor
+x 19
+y 44
+end
+arch awall_3_4
+x 19
+y 44
+end
+arch dungeon_floor
+x 19
+y 45
+end
+arch awall_2_1_1
+x 19
+y 45
+end
+arch dungeon_floor
+x 19
+y 46
+end
+arch awall_2_2_1
+x 19
+y 46
+end
+arch dungeon_floor
+x 19
+y 47
+end
+arch awall_2_1_2
+x 19
+y 47
+end
+arch dungeon_floor
+x 19
+y 48
+end
+arch mover_7
+x 19
+y 48
+move_type all
+move_on walk fly_low fly_high
+end
+arch dungeon_floor
+x 19
+y 49
+end
+arch awall_2_1_2
+x 19
+y 49
+end
+arch dirtfloor
+x 20
+y 9
+end
+arch cave4
+x 20
+y 9
+end
+arch dirtfloor
+x 20
+y 10
+end
+arch armour_troll4
+x 20
+y 10
+end
+arch dirtfloor
+x 20
+y 11
+end
+arch armour_troll3
+x 20
+y 11
+end
+arch dirtfloor
+x 20
+y 12
+end
+arch bones5
+x 20
+y 12
+end
+arch armour_troll3
+x 20
+y 12
+end
+arch dirtfloor
+x 20
+y 13
+end
+arch armour_troll4
+x 20
+y 13
+end
+arch dirtfloor
+x 20
+y 14
+end
+arch small_troll
+x 20
+y 14
+end
+arch dirtfloor
+x 20
+y 15
+end
+arch armour_troll2
+x 20
+y 15
+end
+arch dirtfloor
+x 20
+y 16
+end
+arch dirtfloor
+x 20
+y 17
+end
+arch dirtfloor
+x 20
+y 18
+end
+arch cave15
+x 20
+y 18
+end
+arch dirtfloor
+x 20
+y 19
+end
+arch cave10
+x 20
+y 19
+end
+arch dirtfloor
+x 20
+y 20
+end
+arch small_troll
+x 20
+y 20
+end
+arch dirtfloor
+x 20
+y 21
+end
+arch dirtfloor
+x 20
+y 22
+end
+arch dirtfloor
+x 20
+y 23
+end
+arch dirtfloor
+x 20
+y 24
+end
+arch bones3
+x 20
+y 24
+end
+arch dirtfloor
+x 20
+y 25
+end
+arch small_troll
+x 20
+y 25
+end
+arch dirtfloor
+x 20
+y 26
+end
+arch small_troll
+x 20
+y 26
+end
+arch dirtfloor
+x 20
+y 27
+end
+arch cave2
+x 20
+y 27
+end
+arch cave25
+x 20
+y 34
+end
+arch dirtfloor
+x 20
+y 35
+end
+arch cave14
+x 20
+y 35
+end
+arch dirtfloor
+x 20
+y 36
+end
+arch dirtfloor
+x 20
+y 37
+end
+arch dungeon_floor
+x 20
+y 38
+end
+arch locked_door1
+slaying Glick's special key
+x 20
+y 38
+end
+arch dungeon_floor
+x 20
+y 39
+end
+arch dungeon_floor
+x 20
+y 40
+end
+arch dungeon_floor
+x 20
+y 41
+end
+arch dungeon_floor
+x 20
+y 42
+end
+arch dungeon_floor
+x 20
+y 43
+end
+arch dungeon_floor
+x 20
+y 44
+end
+arch dungeon_floor
+x 20
+y 45
+end
+arch dungeon_floor
+x 20
+y 46
+end
+arch awall_2_1_2
+x 20
+y 46
+end
+arch dungeon_floor
+x 20
+y 47
+end
+arch awall_2_1_2
+x 20
+y 47
+end
+arch dungeon_floor
+x 20
+y 48
+end
+arch dungeon_floor
+x 20
+y 48
+end
+arch generate_devil
+x 20
+y 48
+speed -0.01
+end
+arch dungeon_floor
+x 20
+y 49
+end
+arch awall_2_1_2
+x 20
+y 49
+end
+arch dirtfloor
+x 21
+y 9
+end
+arch cave4
+x 21
+y 9
+end
+arch dirtfloor
+x 21
+y 10
+end
+arch ladder_up
+slaying dark-cave
+hp 21
+sp 10
+x 21
+y 10
+end
+arch dirtfloor
+x 21
+y 11
+end
+arch cave11
+x 21
+y 11
+end
+arch dirtfloor
+x 21
+y 12
+end
+arch cave1
+x 21
+y 12
+end
+arch dirtfloor
+x 21
+y 13
+end
+arch cave1
+x 21
+y 13
+end
+arch dirtfloor
+x 21
+y 14
+end
+arch cave5
+x 21
+y 14
+end
+arch dirtfloor
+x 21
+y 15
+end
+arch armour_troll3
+x 21
+y 15
+end
+arch dirtfloor
+x 21
+y 16
+end
+arch dirtfloor
+x 21
+y 17
+end
+arch dirtfloor
+x 21
+y 18
+end
+arch cave2
+x 21
+y 18
+end
+arch dirtfloor
+x 21
+y 19
+end
+arch cave19
+x 21
+y 19
+end
+arch dirtfloor
+x 21
+y 20
+end
+arch cave10
+x 21
+y 20
+end
+arch dirtfloor
+x 21
+y 21
+end
+arch dirtfloor
+x 21
+y 22
+end
+arch dirtfloor
+x 21
+y 23
+end
+arch cave15
+x 21
+y 23
+end
+arch dirtfloor
+x 21
+y 24
+end
+arch cave1
+x 21
+y 24
+end
+arch dirtfloor
+x 21
+y 25
+end
+arch cave5
+x 21
+y 25
+end
+arch dirtfloor
+x 21
+y 26
+end
+arch cave15
+x 21
+y 26
+end
+arch cave20
+x 21
+y 27
+end
+arch blocked
+x 21
+y 34
+end
+arch dirtfloor
+x 21
+y 35
+end
+arch cave19
+x 21
+y 35
+end
+arch dirtfloor
+x 21
+y 36
+end
+arch cave1
+x 21
+y 36
+end
+arch dirtfloor
+x 21
+y 37
+end
+arch cave1
+x 21
+y 37
+end
+arch dungeon_floor
+x 21
+y 38
+end
+arch awall_1_4
+x 21
+y 38
+end
+arch dungeon_floor
+x 21
+y 39
+end
+arch devil
+x 21
+y 39
+end
+arch dungeon_floor
+x 21
+y 40
+end
+arch dungeon_floor
+x 21
+y 41
+end
+arch devil
+x 21
+y 41
+end
+arch dungeon_floor
+x 21
+y 42
+end
+arch dungeon_floor
+x 21
+y 43
+end
+arch dungeon_floor
+x 21
+y 44
+end
+arch dungeon_floor
+x 21
+y 45
+end
+arch dungeon_floor
+x 21
+y 45
+end
+arch stair3_gstone_up
+slaying dark-cave
+hp 21
+sp 45
+x 21
+y 45
+end
+arch dungeon_floor
+x 21
+y 46
+end
+arch dungeon_floor
+x 21
+y 46
+end
+arch awall_2_1_2
+x 21
+y 46
+end
+arch dungeon_floor
+x 21
+y 47
+end
+arch awall_2_1_2
+x 21
+y 47
+end
+arch dungeon_floor
+x 21
+y 48
+end
+arch mover_3
+x 21
+y 48
+move_type all
+move_on walk fly_low fly_high
+end
+arch imp
+x 21
+y 48
+end
+arch dungeon_floor
+x 21
+y 49
+end
+arch awall_2_1_2
+x 21
+y 49
+end
+arch dirtfloor
+x 22
+y 9
+end
+arch cave19
+x 22
+y 9
+end
+arch dirtfloor
+x 22
+y 10
+end
+arch cave1
+x 22
+y 10
+end
+arch cave20
+x 22
+y 11
+end
+arch dirtfloor
+x 22
+y 14
+end
+arch cave19
+x 22
+y 14
+end
+arch dirtfloor
+x 22
+y 15
+end
+arch cave5
+x 22
+y 15
+end
+arch dirtfloor
+x 22
+y 16
+end
+arch small_troll
+x 22
+y 16
+end
+arch dirtfloor
+x 22
+y 17
+end
+arch small_troll
+x 22
+y 17
+end
+arch dirtfloor
+x 22
+y 18
+end
+arch cave12
+x 22
+y 18
+end
+arch dirtfloor
+x 22
+y 19
+end
+arch cave17
+x 22
+y 19
+end
+arch dirtfloor
+x 22
+y 20
+end
+arch cave4
+x 22
+y 20
+end
+arch dirtfloor
+x 22
+y 21
+end
+arch dirtfloor
+x 22
+y 22
+end
+arch cave11
+x 22
+y 22
+end
+arch dirtfloor
+x 22
+y 23
+end
+arch cave20
+x 22
+y 23
+end
+arch dirtfloor
+x 22
+y 25
+end
+arch cave19
+x 22
+y 25
+end
+arch dirtfloor
+x 22
+y 26
+end
+arch cave20
+x 22
+y 26
+end
+arch blocked
+x 22
+y 34
+end
+arch blocked
+x 22
+y 35
+end
+arch blocked
+x 22
+y 36
+end
+arch blocked
+x 22
+y 37
+end
+arch dungeon_floor
+x 22
+y 38
+end
+arch awall_3_3
+x 22
+y 38
+end
+arch dungeon_floor
+x 22
+y 39
+end
+arch awall_1_2
+x 22
+y 39
+end
+arch dungeon_floor
+x 22
+y 40
+end
+arch door_look_2
+hp 100
+x 22
+y 40
+end
+arch dungeon_floor
+x 22
+y 41
+end
+arch awall_1_1
+x 22
+y 41
+end
+arch dungeon_floor
+x 22
+y 42
+end
+arch awall_2_2_1
+x 22
+y 42
+end
+arch dungeon_floor
+x 22
+y 43
+end
+arch door_look_2
+hp 1
+x 22
+y 43
+randomitems none
+end
+arch dungeon_floor
+x 22
+y 44
+end
+arch awall_1_1
+x 22
+y 44
+end
+arch dungeon_floor
+x 22
+y 45
+end
+arch awall_2_1_1
+x 22
+y 45
+end
+arch dungeon_floor
+x 22
+y 46
+end
+arch awall_3_1
+x 22
+y 46
+end
+arch dungeon_floor
+x 22
+y 47
+end
+arch awall_2_1_2
+x 22
+y 47
+end
+arch dungeon_floor
+x 22
+y 48
+end
+arch mover_3
+x 22
+y 48
+move_type all
+move_on walk fly_low fly_high
+end
+arch devil
+x 22
+y 48
+end
+arch dungeon_floor
+x 22
+y 49
+end
+arch awall_2_1_2
+x 22
+y 49
+end
+arch cave19
+x 23
+y 15
+end
+arch dirtfloor
+x 23
+y 16
+end
+arch cave1
+x 23
+y 16
+end
+arch dirtfloor
+x 23
+y 17
+end
+arch cave24
+x 23
+y 17
+end
+arch dirtfloor
+x 23
+y 17
+end
+arch cave5
+x 23
+y 17
+end
+arch dirtfloor
+x 23
+y 18
+end
+arch armour_troll3
+x 23
+y 18
+end
+arch dirtfloor
+x 23
+y 19
+end
+arch cave16
+x 23
+y 19
+end
+arch dirtfloor
+x 23
+y 20
+end
+arch cave9
+x 23
+y 20
+end
+arch dirtfloor
+x 23
+y 21
+end
+arch armour_troll3
+x 23
+y 21
+end
+arch dirtfloor
+x 23
+y 22
+end
+arch cave2
+x 23
+y 22
+end
+arch blocked
+x 23
+y 34
+end
+arch blocked
+x 23
+y 35
+end
+arch blocked
+x 23
+y 36
+end
+arch blocked
+x 23
+y 37
+end
+arch dungeon_floor
+x 23
+y 38
+end
+arch awall_2_1_2
+x 23
+y 38
+end
+arch dungeon_floor
+x 23
+y 39
+end
+arch pentagram
+x 23
+y 39
+end
+arch dungeon_floor
+x 23
+y 40
+end
+arch dungeon_floor
+x 23
+y 41
+end
+arch pentagram
+x 23
+y 41
+end
+arch dungeon_floor
+x 23
+y 42
+end
+arch awall_2_1_2
+x 23
+y 42
+end
+arch dungeon_floor
+x 23
+y 43
+end
+arch dungeon_floor
+x 23
+y 44
+end
+arch dungeon_floor
+x 23
+y 45
+end
+arch dungeon_floor
+x 23
+y 46
+end
+arch awall_2_1_2
+x 23
+y 46
+end
+arch dungeon_floor
+x 23
+y 47
+end
+arch awall_2_1_2
+x 23
+y 47
+end
+arch dungeon_floor
+x 23
+y 48
+end
+arch mover_3
+x 23
+y 48
+move_type all
+move_on walk fly_low fly_high
+end
+arch imp
+x 23
+y 48
+end
+arch dungeon_floor
+x 23
+y 49
+end
+arch awall_2_1_2
+x 23
+y 49
+end
+arch dirtfloor
+x 24
+y 16
+end
+arch cave24
+x 24
+y 16
+end
+arch dirtfloor
+x 24
+y 17
+end
+arch cave9
+x 24
+y 17
+end
+arch dirtfloor
+x 24
+y 18
+end
+arch dirtfloor
+x 24
+y 19
+end
+arch armour_troll3
+x 24
+y 19
+end
+arch dirtfloor
+x 24
+y 20
+end
+arch armour_troll4
+x 24
+y 20
+end
+arch dirtfloor
+x 24
+y 21
+end
+arch armour_troll4
+x 24
+y 21
+end
+arch dirtfloor
+x 24
+y 22
+end
+arch cave2
+x 24
+y 22
+end
+arch blocked
+x 24
+y 34
+end
+arch blocked
+x 24
+y 35
+end
+arch blocked
+x 24
+y 36
+end
+arch blocked
+x 24
+y 37
+end
+arch dungeon_floor
+x 24
+y 38
+end
+arch awall_2_1_2
+x 24
+y 38
+end
+arch dungeon_floor
+x 24
+y 39
+end
+arch dungeon_floor
+x 24
+y 40
+end
+arch dungeon_floor
+x 24
+y 41
+end
+arch dungeon_floor
+x 24
+y 42
+end
+arch awall_2_1_2
+x 24
+y 42
+end
+arch dungeon_floor
+x 24
+y 43
+end
+arch table_3
+x 24
+y 43
+end
+arch random_food
+x 24
+y 43
+end
+arch dungeon_floor
+x 24
+y 44
+end
+arch dungeon_floor
+x 24
+y 45
+end
+arch table_3
+x 24
+y 45
+end
+arch random_food
+hp 3
+x 24
+y 45
+end
+arch dungeon_floor
+x 24
+y 46
+end
+arch awall_2_1_2
+x 24
+y 46
+end
+arch dungeon_floor
+x 24
+y 47
+end
+arch awall_2_1_2
+x 24
+y 47
+end
+arch dungeon_floor
+x 24
+y 48
+end
+arch mover_3
+x 24
+y 48
+move_type all
+move_on walk fly_low fly_high
+end
+arch grate_closed_2
+x 24
+y 48
+connected 23
+activate_on_release 0
+end
+arch dungeon_floor
+x 24
+y 49
+end
+arch awall_2_1_2
+x 24
+y 49
+end
+arch dirtfloor
+x 25
+y 16
+end
+arch cave4
+x 25
+y 16
+end
+arch dirtfloor
+x 25
+y 17
+end
+arch dirtfloor
+x 25
+y 18
+end
+arch dirtfloor
+x 25
+y 19
+end
+arch black_pudding
+x 25
+y 19
+end
+arch dirtfloor
+x 25
+y 20
+end
+arch dirtfloor
+x 25
+y 21
+end
+arch armour_troll3
+x 25
+y 21
+end
+arch dirtfloor
+x 25
+y 22
+end
+arch cave2
+x 25
+y 22
+end
+arch blocked
+x 25
+y 34
+end
+arch blocked
+x 25
+y 35
+end
+arch blocked
+x 25
+y 36
+end
+arch blocked
+x 25
+y 37
+end
+arch dungeon_floor
+x 25
+y 38
+end
+arch awall_2_1_2
+x 25
+y 38
+end
+arch dungeon_floor
+x 25
+y 39
+end
+arch pedestal
+x 25
+y 39
+invisible 1
+connected 23
+end
+arch table_3
+x 25
+y 39
+end
+arch random_plant
+hp 2
+x 25
+y 39
+end
+arch random_plant
+hp 2
+x 25
+y 39
+end
+arch dungeon_floor
+x 25
+y 40
+end
+arch pedestal
+x 25
+y 40
+invisible 1
+connected 23
+end
+arch dungeon_floor
+x 25
+y 41
+end
+arch pedestal
+x 25
+y 41
+invisible 1
+connected 23
+end
+arch table_3
+x 25
+y 41
+end
+arch random_gem
+hp 2
+x 25
+y 41
+end
+arch random_wealth
+x 25
+y 41
+end
+arch dungeon_floor
+x 25
+y 42
+end
+arch awall_2_1_2
+x 25
+y 42
+end
+arch dungeon_floor
+x 25
+y 43
+end
+arch table_3
+x 25
+y 43
+end
+arch random_food
+x 25
+y 43
+end
+arch dungeon_floor
+x 25
+y 44
+end
+arch dungeon_floor
+x 25
+y 45
+end
+arch table_3
+x 25
+y 45
+end
+arch random_food
+hp 2
+x 25
+y 45
+end
+arch dungeon_floor
+x 25
+y 46
+end
+arch awall_2_1_2
+x 25
+y 46
+end
+arch dungeon_floor
+x 25
+y 47
+end
+arch awall_2_1_2
+x 25
+y 47
+end
+arch dungeon_floor
+x 25
+y 48
+end
+arch teleporter
+hp 23
+sp 39
+x 25
+y 48
+end
+arch dungeon_floor
+x 25
+y 49
+end
+arch awall_2_1_2
+x 25
+y 49
+end
+arch dirtfloor
+x 26
+y 16
+end
+arch cave19
+x 26
+y 16
+end
+arch dirtfloor
+x 26
+y 17
+end
+arch cave14
+x 26
+y 17
+end
+arch dirtfloor
+x 26
+y 18
+end
+arch dirtfloor
+x 26
+y 19
+end
+arch dirtfloor
+x 26
+y 20
+end
+arch dirtfloor
+x 26
+y 21
+end
+arch cave15
+x 26
+y 21
+end
+arch dirtfloor
+x 26
+y 22
+end
+arch cave20
+x 26
+y 22
+end
+arch blocked
+x 26
+y 34
+end
+arch blocked
+x 26
+y 35
+end
+arch blocked
+x 26
+y 36
+end
+arch blocked
+x 26
+y 37
+end
+arch dungeon_floor
+x 26
+y 38
+end
+arch awall_2_1_2
+x 26
+y 38
+end
+arch dungeon_floor
+x 26
+y 39
+end
+arch table_3
+x 26
+y 39
+end
+arch random_treasure
+x 26
+y 39
+end
+arch random_talisman
+x 26
+y 39
+end
+arch dungeon_floor
+x 26
+y 40
+end
+arch chest
+x 26
+y 40
+arch random_reading
+end
+arch random_spells
+hp 2
+end
+arch random_wealth
+exp 8
+end
+end
+arch dungeon_floor
+x 26
+y 41
+end
+arch table_3
+x 26
+y 41
+end
+arch random_gem
+hp 2
+x 26
+y 41
+end
+arch random_shield
+x 26
+y 41
+end
+arch dungeon_floor
+x 26
+y 42
+end
+arch awall_2_1_2
+x 26
+y 42
+end
+arch dungeon_floor
+x 26
+y 43
+end
+arch table_3
+x 26
+y 43
+end
+arch random_food
+hp 2
+x 26
+y 43
+end
+arch dungeon_floor
+x 26
+y 44
+end
+arch dungeon_floor
+x 26
+y 45
+end
+arch table_3
+x 26
+y 45
+end
+arch random_food
+x 26
+y 45
+end
+arch dungeon_floor
+x 26
+y 46
+end
+arch awall_2_1_2
+x 26
+y 46
+end
+arch dungeon_floor
+x 26
+y 47
+end
+arch awall_2_2_3
+x 26
+y 47
+end
+arch dungeon_floor
+x 26
+y 48
+end
+arch awall_2_1_1
+x 26
+y 48
+end
+arch dungeon_floor
+x 26
+y 49
+end
+arch awall_2_2_4
+x 26
+y 49
+end
+arch dirtfloor
+x 27
+y 17
+end
+arch cave19
+x 27
+y 17
+end
+arch dirtfloor
+x 27
+y 18
+end
+arch cave5
+x 27
+y 18
+end
+arch dirtfloor
+x 27
+y 19
+end
+arch dirtfloor
+x 27
+y 20
+end
+arch cave11
+x 27
+y 20
+end
+arch dirtfloor
+x 27
+y 21
+end
+arch cave22
+x 27
+y 21
+end
+arch blocked
+x 27
+y 34
+end
+arch blocked
+x 27
+y 35
+end
+arch blocked
+x 27
+y 36
+end
+arch blocked
+x 27
+y 37
+end
+arch dungeon_floor
+x 27
+y 38
+end
+arch awall_2_1_2
+x 27
+y 38
+end
+arch dungeon_floor
+x 27
+y 39
+end
+arch brazier
+x 27
+y 39
+end
+arch dungeon_floor
+x 27
+y 40
+end
+arch table_2
+x 27
+y 40
+end
+arch random_mineral
+x 27
+y 40
+end
+arch random_gem
+hp 2
+exp 8
+x 27
+y 40
+end
+arch dungeon_floor
+x 27
+y 41
+end
+arch brazier
+x 27
+y 41
+end
+arch dungeon_floor
+x 27
+y 42
+end
+arch awall_3_3
+x 27
+y 42
+end
+arch dungeon_floor
+x 27
+y 43
+end
+arch awall_2_1_1
+x 27
+y 43
+end
+arch dungeon_floor
+x 27
+y 44
+end
+arch awall_2_1_1
+x 27
+y 44
+end
+arch dungeon_floor
+x 27
+y 45
+end
+arch awall_2_1_1
+x 27
+y 45
+end
+arch dungeon_floor
+x 27
+y 46
+end
+arch awall_2_2_4
+x 27
+y 46
+end
+arch cave25
+x 28
+y 18
+end
+arch dirtfloor
+x 28
+y 19
+end
+arch cave1
+x 28
+y 19
+end
+arch dirtfloor
+x 28
+y 20
+end
+arch cave20
+x 28
+y 20
+end
+arch blocked
+x 28
+y 34
+end
+arch blocked
+x 28
+y 35
+end
+arch blocked
+x 28
+y 36
+end
+arch blocked
+x 28
+y 37
+end
+arch dungeon_floor
+x 28
+y 38
+end
+arch awall_2_2_3
+x 28
+y 38
+end
+arch dungeon_floor
+x 28
+y 39
+end
+arch awall_2_1_1
+x 28
+y 39
+end
+arch dungeon_floor
+x 28
+y 40
+end
+arch awall_2_1_1
+x 28
+y 40
+end
+arch dungeon_floor
+x 28
+y 41
+end
+arch awall_2_1_1
+x 28
+y 41
+end
+arch dungeon_floor
+x 28
+y 42
+end
+arch awall_2_2_4
+x 28
+y 42
+end
