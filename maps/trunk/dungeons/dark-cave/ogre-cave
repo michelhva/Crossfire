@@ -2680,11 +2680,7 @@ name letter from dwarf captives
 msg
 To our beseiged friends,
 
-The bearer of this letter has freed us from
-the Red Foot tribe.  We will gather arms and
-return to the outpost to reclaim it once and
-for all.  Our rescuer has agreed to mount an
-initial attack and establish contact with you.
+The bearer of this letter has freed us from the Red Foot tribe.  We will gather arms and return to the outpost to reclaim it once and for all.  Our rescuer has agreed to mount an initial attack and establish contact with you. 
 
 Until we return, we pray for your safety.
 
@@ -2961,36 +2957,17 @@ arch dwarf_wiz
 name Snortrider
 msg
 @match letter|Letter|outpost|Outpost
-Our mining town is not far.  Head
-east from the Inn until you find a
-footpath going south.  Our town is
-in the mountains at the end of the
-path.
+Our mining town is not far.  Head east from the Inn until you find a footpath going south.  Our town is in the mountains at the end of the path.
 
-Once in the cave, you must find the
-tombs.  Our brothers are hidden in
-a secret room near there.
-
+Once in the cave, you must find the tombs.  Our brothers are hidden in a secret room near there.
 @match yes|Yes|Yeah|yeah
 Wonderful!  Please, take this letter.
-
 @match *
-Thank Mostrai you have arrived!
-We were captured by the Red Foot
-ogres in a terrible battle in our
-mining outpost south east of here.
+Thank Mostrai you have arrived! We were captured by the Red Foot ogres in a terrible battle in our mining outpost south east of here.
 
-A small group managed to escape
-capture by hiding in the tombs of
-the outpost.  I am sure they are
-there still.  We will raise arms to
-re-take the outpost and drive the
-giants out for good.
+A small group managed to escape capture by hiding in the tombs of the outpost.  I am sure they are there still.  We will raise arms to re-take the outpost and drive the giants out for good.
 
-If you can deliver this letter to the
-outpost, we would be most grateful.
-You will be well-rewarded.  Will you
-accept this task?
+If you can deliver this letter to the outpost, we would be most grateful. You will be well-rewarded.  Will you accept this task?
 endmsg
 x 12
 y 35

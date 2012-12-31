@@ -7,8 +7,7 @@ height 10
 msg
 Creator: jesse
 Date:    2009-10-06
-A small camp of dwarven refugees, tired and
-beaten.
+A small camp of dwarven refugees, tired and beaten.
 Modified: 2012-12-31 Rick Tanner
 endmsg
 outdoor 1
@@ -247,10 +246,7 @@ y 4
 end
 arch magic_mouth
 msg
-Hail, good fellow!  You bring news?  Ah, but that is good
-to hear!  Please, take this letter to the mine town south of
-here.  Find the last band of dwarves, hidden deep in the
-tombs, and deliver your message!
+Hail, good fellow!  You bring news?  Ah, but that is good to hear!  Please, take this letter to the mine town south of here.  Find the last band of dwarves, hidden deep in the tombs, and deliver your message!
 endmsg
 x 5
 y 5
@@ -268,27 +264,11 @@ end
 arch dwarf_priest
 msg
 @match mine|Mine|town|Town|Grondell|Quest|quest
-We are from Grondell, a small mining town
-south of here.  But Grondell has fallen.
-The Red Foot tribe invaded our peaceful
-village two months ago.  They captured
-many of our brethren and occupy the
-village still.  Will you help us free our
-comrades?
-
+We are from Grondell, a small mining town south of here.  But Grondell has fallen. The Red Foot tribe invaded our peaceful village two months ago.  They captured many of our brethren and occupy the village still.  Will you help us free our comrades?
 @match dwarves|dwarfs|captured|free|yes|Yes|OK
-The Red Foot tribal cave is just north
-of the nearby inn.  Our comrades are being
-held there.
-
+The Red Foot tribal cave is just north of the nearby inn.  Our comrades are being held there.
 @match letter|Letter
-You've returned with a letter?  Wonderful!
-But it doesn't appear to be for me.  I
-understand that some dwarves escaped
-the invasion and are hidden in the mine's
-tombs.  If you find them, you can deliver
-the letter.
-
+You've returned with a letter?  Wonderful! But it doesn't appear to be for me.  I understand that some dwarves escaped the invasion and are hidden in the mine's tombs.  If you find them, you can deliver the letter.
 @match *
 Eh?  Didn't quite catch that.
 endmsg
@@ -324,14 +304,7 @@ y 2
 end
 arch magic_mouth
 msg
-A handful of dwarves sit 'round the
-campfire.  The eldest greets you.
-
-  "Welcome to our camp!  I am afraid
-we have not much to offer you.  We
-are refugees from the mining town
-of Grondell and our stores are low,
-but we will share what we can."
+A handful of dwarves sit 'round the campfire.  The eldest greets you. "Welcome to our camp!  I am afraid we have not much to offer you.  We are refugees from the mining town of Grondell and our stores are low, but we will share what we can."
 endmsg
 x 6
 y 3
