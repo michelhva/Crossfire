@@ -10,10 +10,7 @@ msg
 Creator: jesse@phiwumbda.org
 Date:    2008-01-21
 
-This dark cave looks like a Dwarven mine
-town, fallen on very hard times indeed.  The
-ogrish lot at the mouth of the cave seems fairly
-pleased with its plunder!
+This dark cave looks like a Dwarven mine town, fallen on very hard times indeed.  The ogrish lot at the mouth of the cave seems fairly pleased with its plunder!
 Modified: 2012-12-31 Rick Tanner
 endmsg
 end
@@ -578,15 +575,11 @@ arch letter
 msg
 Deer Mommy,
 
-Me do good in army.  Me won medal for goodest looting of
-hole squad.  Me destroy many dworf homes in big battle.
+Me do good in army.  Me won medal for goodest looting of hole squad.  Me destroy many dworf homes in big battle.
 
-But me a sad now.  Giant army beat dworfs.  Minetown
-ours, but mean and bad wizurd came.  Wizurd took
-minetown.
+But me a sad now.  Giant army beat dworfs.  Minetown ours, but mean and bad wizurd came.  Wizurd took minetown.
 
-Giant army will fight wizurd.  Me fight gooder and harder
-so army beat wizurd.  Army take back town.
+Giant army will fight wizurd.  Me fight gooder and harder so army beat wizurd.  Army take back town.
 
 Soon.
 
@@ -3906,9 +3899,7 @@ y 25
 end
 arch magic_mouth
 msg
-Across the bridge, you see some squat
-ruins.  In the distance, one building
-appears well-lit and in good condition.
+Across the bridge, you see some squat ruins.  In the distance, one building appears well-lit and in good condition.
 endmsg
 x 8
 y 25
@@ -4085,8 +4076,7 @@ y 55
 end
 arch magic_mouth
 msg
-It appears as if these stairs have not been
-used in some time.
+It appears as if these stairs have not been used in some time.
 endmsg
 x 8
 y 55
@@ -4663,9 +4653,7 @@ arch tooth_charm
 name A crude medal
 name_pl crude medals
 msg
-This appears to be a crudely constructed military medal.
-The inscription reads, "For exceptional Valor and Cruelty
-in the Art of Pillaging."
+This appears to be a crudely constructed military medal. The inscription reads, "For exceptional Valor and Cruelty in the Art of Pillaging."
 endmsg
 resist_confusion 0
 resist_slow 0
@@ -6095,8 +6083,7 @@ y 30
 end
 arch magic_mouth
 msg
-The ruins appear to be dwarven.  Apparently
-a mining town.
+The ruins appear to be dwarven.  Apparently a mining town.
 endmsg
 x 13
 y 30
@@ -7125,8 +7112,7 @@ arch magic_mouth
 msg
 It appears to be a wizard's study.
 
-The wizard is evidently engrossed in his
-research and has so far ignored you.
+The wizard is evidently engrossed in his research and has so far ignored you.
 endmsg
 x 15
 y 46
@@ -9037,15 +9023,11 @@ name A distracted necromancer
 title the Necromancer
 msg
 @match dwarf|Dwarf|dwarves|Dwarves
-Dwarves?  There were no dwarves when I moved here.  Just a few easily
-persuaded ogres.
+Dwarves?  There were no dwarves when I moved here.  Just a few easily persuaded ogres.
 @match ogre|Ogre|giant|Giant
-The ogre army?  They're not with me.  This cave is large enough to share and it
-took only a little persuasion before they agreed.
+The ogre army?  They're not with me.  This cave is large enough to share and it took only a little persuasion before they agreed.
 @match mine|Mine
-Yes, this area appears to be an abandoned mine town.  I've been too busy with
-my research to explore it deeply.  I'm afraid that once I put in my security, I've rarely
-ventured outside this study.
+Yes, this area appears to be an abandoned mine town.  I've been too busy with my research to explore it deeply.  I'm afraid that once I put in my security, I've rarely ventured outside this study.
 @match stairs|Stairs|down|Down
 Feel free to look around downstairs, but I warn you to leave my possessions be.
 @match key|Key

@@ -1528,8 +1528,7 @@ y 32
 end
 arch magic_mouth
 msg
-The appreciative dwarf priest presents
-you with a reward for your services.
+The appreciative dwarf priest presents you with a reward for your services.
 endmsg
 food 1
 x 5
@@ -1897,39 +1896,19 @@ end
 arch dwarf_priest
 msg
 @match yes|Yes|letter|Letter
-Have you word from our friends?  Please,
-step forward and deliver it!
+Have you word from our friends?  Please, step forward and deliver it!
 @match no|No|where|Where|giant|Giant|ogre|Ogre
-The giant army is from the Red Foot tribe.
-The Red Foots are located in the mountains
-north of the nearby inn.  If our dwarven
-brothers still live, they are likely being held
-there.
+The giant army is from the Red Foot tribe. The Red Foots are located in the mountains north of the nearby inn.  If our dwarven brothers still live, they are likely being held there.
 @match wizard|Wizard|glint|Glint|necromancer|Necromancer
-Some time after the battle against the ogres,
-a wizard arrived.  We do not know much
-about him, but it appears that he has chosen
-our outpost as his home.
+Some time after the battle against the ogres, a wizard arrived.  We do not know much about him, but it appears that he has chosen our outpost as his home.
 
-We have heard battles raging upstairs,
-perhaps between the giants and the
-wizard's minions.  But the battles have
-been silent for some time now.
+We have heard battles raging upstairs, perhaps between the giants and the wizard's minions.  But the battles have been silent for some time now.
 
-We would be most appreciative if you
-can help rid us of this new threat, but
-I am afraid we have no more reward to
-offer you.
+We would be most appreciative if you can help rid us of this new threat, but I am afraid we have no more reward to offer you.
 @match *
-Welcome!  We have been in hiding here
-since the giant army invaded our mining
-outpost.  The battle was bloody and many
-dwarves were captured.  Our only protection
-is this secret room and the spirits of our
-ancestors.
+Welcome!  We have been in hiding here since the giant army invaded our mining outpost.  The battle was bloody and many dwarves were captured.  Our only protection is this secret room and the spirits of our ancestors.
 
-Have you perchance stumbled across our
-captive brethren?
+Have you perchance stumbled across our captive brethren?
 endmsg
 x 6
 y 32
@@ -2345,8 +2324,7 @@ name Last Warning!
 msg
 We warned you once.
 
-But good luck.  The next room
-can be deadly.
+But good luck.  The next room can be deadly.
 endmsg
 x 7
 y 43
@@ -2403,8 +2381,7 @@ name A warning
 msg
 Warning!
 
-Be prepared for bad things ahead!
-There is a nasty surprise or two.
+Be prepared for bad things ahead! There is a nasty surprise or two.
 endmsg
 x 7
 y 49
