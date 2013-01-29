@@ -55,6 +55,8 @@ def parseJSON(filename, relpath):
         if filenm[0] == "/":
             filepath = os.path.join(Crossfire.DataDirectory(),
                             Crossfire.MapDirectory(), filenm[1:])
+        elif relpath != '':
+            filepath = os.path.join(relpath, filenm)
         else:
             filepath = os.path.join(Crossfire.DataDirectory(),
                             Crossfire.MapDirectory(), relpath, filenm)
