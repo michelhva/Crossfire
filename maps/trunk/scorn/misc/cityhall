@@ -3,13 +3,13 @@ name Scorn City Hall
 reset_timeout 7200
 difficulty 1
 region scorn
-width 34
+width 44
 height 32
 enter_x 13
 enter_y 25
 msg
 Created:  1993-10-15
-Modified: 2012-03-15 Rick Tanner
+Modified: 2013-02-03 Nicolas Weeger
 endmsg
 end
 arch woods_2
@@ -2762,8 +2762,9 @@ x 12
 y 14
 end
 arch sign
+name City hall information
 msg
-City Hall services are available between 8am and 6pm.
+City Hall services are available all the time, but beware zombies during the night.
 endmsg
 x 12
 y 14
@@ -2960,16 +2961,6 @@ arch pedestal
 x 13
 y 11
 connected 96
-arch event_trigger
-title Python
-slaying /python/tod/filter.py
-msg
-{
-  "when":["Morning","Noon","Evening"],
-  "match":"one"
-}
-endmsg
-end
 end
 arch cobblestones2
 x 13
@@ -3173,16 +3164,6 @@ arch pedestal
 x 14
 y 11
 connected 96
-arch event_trigger
-title Python
-slaying /python/tod/filter.py
-msg
-{
-  "when":["Morning","Noon","Evening"],
-  "match":"one"
-}
-endmsg
-end
 end
 arch cobblestones2
 x 14
@@ -6966,4 +6947,494 @@ end
 arch cobblestones
 x 33
 y 31
+end
+arch blocked
+x 34
+end
+arch blocked
+x 34
+y 1
+end
+arch blocked
+x 34
+y 2
+end
+arch blocked
+x 34
+y 3
+end
+arch blocked
+x 34
+y 4
+end
+arch blocked
+x 34
+y 5
+end
+arch blocked
+x 34
+y 6
+end
+arch blocked
+x 34
+y 7
+end
+arch blocked
+x 34
+y 8
+end
+arch blocked
+x 34
+y 9
+end
+arch blocked
+x 34
+y 10
+end
+arch blocked
+x 34
+y 11
+end
+arch blocked
+x 34
+y 12
+end
+arch blocked
+x 34
+y 13
+end
+arch blocked
+x 34
+y 14
+end
+arch blocked
+x 34
+y 15
+end
+arch blocked
+x 34
+y 16
+end
+arch blocked
+x 34
+y 17
+end
+arch blocked
+x 34
+y 18
+end
+arch blocked
+x 34
+y 19
+end
+arch blocked
+x 34
+y 20
+end
+arch blocked
+x 34
+y 21
+end
+arch blocked
+x 34
+y 22
+end
+arch blocked
+x 34
+y 23
+end
+arch blocked
+x 34
+y 24
+end
+arch blocked
+x 34
+y 25
+end
+arch blocked
+x 34
+y 26
+end
+arch blocked
+x 34
+y 27
+end
+arch blocked
+x 34
+y 28
+end
+arch blocked
+x 34
+y 29
+end
+arch blocked
+x 34
+y 30
+end
+arch blocked
+x 34
+y 31
+end
+arch brush
+x 39
+y 16
+end
+arch westcwall_2_2_2
+x 39
+y 16
+end
+arch brush
+x 39
+y 17
+end
+arch westcwall_2_1_1
+x 39
+y 17
+end
+arch grass
+x 39
+y 18
+end
+arch westcwall_3_2
+x 39
+y 18
+end
+arch grass
+x 39
+y 19
+end
+arch westcwall_2_1_1
+x 39
+y 19
+end
+arch brush
+x 39
+y 20
+end
+arch westcwall_3_2
+x 39
+y 20
+end
+arch brush
+x 39
+y 21
+end
+arch westcwall_2_1_1
+x 39
+y 21
+end
+arch brush
+x 39
+y 22
+end
+arch westcwall_3_2
+x 39
+y 22
+end
+arch brush
+x 39
+y 23
+end
+arch westcwall_2_1_1
+x 39
+y 23
+end
+arch brush
+x 39
+y 24
+end
+arch westcwall_2_2_1
+x 39
+y 24
+end
+arch brush
+x 40
+y 16
+end
+arch westcwall_2_1_2
+x 40
+y 16
+end
+arch brush
+x 40
+y 17
+end
+arch teleporter
+hp 7
+sp 19
+x 40
+y 17
+speed .1
+end
+arch brush
+x 40
+y 18
+end
+arch westcwall_2_1_2
+x 40
+y 18
+end
+arch grass
+x 40
+y 19
+end
+arch teleporter
+hp 3
+sp 24
+x 40
+y 19
+speed .3
+end
+arch brush
+x 40
+y 20
+end
+arch westcwall_2_1_2
+x 40
+y 20
+end
+arch brush
+x 40
+y 21
+end
+arch teleporter
+hp 16
+sp 23
+x 40
+y 21
+speed .8
+end
+arch brush
+x 40
+y 22
+end
+arch westcwall_2_1_2
+x 40
+y 22
+end
+arch brush
+x 40
+y 23
+end
+arch teleporter
+hp 20
+sp 17
+x 40
+y 23
+speed .9
+end
+arch brush
+x 40
+y 24
+end
+arch westcwall_2_1_2
+x 40
+y 24
+end
+arch grass
+x 41
+y 16
+end
+arch westcwall_2_1_2
+x 41
+y 16
+end
+arch grass
+x 41
+y 17
+end
+arch mover_7
+x 41
+y 17
+end
+arch brush
+x 41
+y 18
+end
+arch westcwall_2_1_2
+x 41
+y 18
+end
+arch brush
+x 41
+y 19
+end
+arch mover_7
+x 41
+y 19
+end
+arch brush
+x 41
+y 20
+end
+arch westcwall_2_1_2
+x 41
+y 20
+end
+arch brush
+x 41
+y 21
+end
+arch mover_7
+x 41
+y 21
+end
+arch brush
+x 41
+y 22
+end
+arch westcwall_2_1_2
+x 41
+y 22
+end
+arch brush
+x 41
+y 23
+end
+arch mover_7
+x 41
+y 23
+end
+arch brush
+x 41
+y 24
+end
+arch westcwall_2_1_2
+x 41
+y 24
+end
+arch grass
+x 42
+y 16
+end
+arch westcwall_1_3
+x 42
+y 16
+end
+arch grass
+x 42
+y 17
+end
+arch generate_zombie
+x 42
+y 17
+generator_limit 50000
+generator_max_map 10
+end
+arch grass
+x 42
+y 18
+end
+arch westcwall_1_3
+x 42
+y 18
+end
+arch grass
+x 42
+y 19
+end
+arch generate_zombie
+x 42
+y 19
+generator_limit 50000
+generator_max_map 10
+end
+arch grass
+x 42
+y 20
+end
+arch westcwall_1_3
+x 42
+y 20
+end
+arch grass
+x 42
+y 21
+end
+arch generate_zombie
+x 42
+y 21
+generator_limit 50000
+generator_max_map 10
+end
+arch brush
+x 42
+y 22
+end
+arch westcwall_1_3
+x 42
+y 22
+end
+arch grass
+x 42
+y 23
+end
+arch generate_zombie
+x 42
+y 23
+generator_limit 50000
+generator_max_map 10
+end
+arch grass
+x 42
+y 24
+end
+arch westcwall_1_3
+x 42
+y 24
+end
+arch blocked
+x 43
+y 16
+end
+arch blocked
+x 43
+y 17
+end
+arch blocked
+x 43
+y 18
+end
+arch blocked
+x 43
+y 19
+end
+arch blocked
+x 43
+y 20
+end
+arch blocked
+x 43
+y 21
+end
+arch blocked
+x 43
+y 22
+end
+arch blocked
+x 43
+y 23
+end
+arch blocked
+x 43
+y 24
+end
+arch sage
+x 43
+y 27
+no_damage 1
+no_mood_change 1
+arch event_time
+title Python
+slaying /python/tod/replace_in_map.py
+msg
+{
+    "key" : "graves"
+    "when" : ["Morning","Noon","Evening"]
+    "from" : ["mover"],
+    "to" : ["blocked"],
+    "match" : "one"
+}
+endmsg
+end
 end
