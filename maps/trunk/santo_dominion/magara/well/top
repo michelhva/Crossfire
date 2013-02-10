@@ -9,7 +9,7 @@ enter_x 15
 enter_y 14
 msg
 Created:  2002-08-23 Andreas Vogl
-Modified: 2012-01-06 Rick Tanner
+Modified: 2013-02-10 Nicolas Weeger
 endmsg
 end
 arch cave_15
@@ -718,6 +718,9 @@ hp 34
 sp 2
 x 4
 y 19
+arch quest_advance_apply
+name santo_dominion/well 10>20
+end
 end
 arch pstone_1
 x 4
