@@ -7,7 +7,7 @@ height 22
 enter_x 10
 enter_y 18
 msg
-Modified: 2012-03-25 Rick Tanner
+Modified: 2013-02-10 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -2111,6 +2111,9 @@ endmsg
 Wis 3
 x 12
 y 14
+arch npc_dialog
+name /santo_dominion/noble_rest.msg
+end
 end
 arch dungeon_magic
 x 12

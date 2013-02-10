@@ -8,7 +8,7 @@ enter_x 8
 enter_y 2
 msg
 Created:  2002-08-23 Andreas Vogl
-Modified: 2008-10-27 Rick Tanner
+Modified: 2013-02-10 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -1546,6 +1546,14 @@ x 8
 y 19
 connected 1
 end
+arch magic_mouth
+msg
+You see a weird bee making a really strange noise, which kind of resonates in your bones. This is probably what the innkeeper is complaining about.
+endmsg
+food 1
+x 8
+y 19
+end
 arch flagstone
 x 8
 y 19
@@ -1553,6 +1561,21 @@ end
 arch random_talisman
 x 8
 y 19
+end
+arch darkgreen_key
+name strange bee
+name_pl strange bees
+race none
+slaying quest_item_santo_dominion_well
+face bee.111
+x 8
+y 19
+arch quest_advance_pickup
+name santo_dominion/well 20>30
+end
+arch quest_prevent_drop
+name santo_dominion/well 40
+end
 end
 arch flagstone
 x 8

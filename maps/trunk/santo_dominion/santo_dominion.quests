@@ -61,3 +61,32 @@ end_description
 end_step
 end_quest
 
+quest santo_dominion/well
+title Santo Dominion's noisy well
+face well.111
+description
+The Noble Resting's innkeeper asked me to find the source of a strange noise in the well nearby.
+end_description
+step 10
+description
+I should go explore the well.
+end_description
+end_step
+step 20
+description
+I found a suspicious hole which I should explore.
+end_description
+end_step
+step 30
+description
+I found the source of the noise, and should bring it back to the innkeeper.
+end_description
+end_step
+step 40
+finishes_quest
+description
+The innkeeper is happy, the clients of the Noble Resting can now enjoy some calm.
+end_description
+end_step
+end_quest
+
