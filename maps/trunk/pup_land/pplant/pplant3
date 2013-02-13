@@ -8,7 +8,7 @@ enter_x 2
 enter_y 16
 msg
 Created:  1996-02-04
-Modified: 2012-04-09 Rick Tanner
+Modified: 2013-02-13 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -3291,6 +3291,10 @@ end
 arch wraith
 x 19
 y 17
+arch key2
+name wraith key
+slaying pplant_wraith_key
+end
 end
 arch cobblestones2
 x 19
