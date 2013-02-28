@@ -1,14 +1,247 @@
-2012-11-11 22:02  SilverNexus
+2013-02-13 10:20  rjtanner
 
-        * world/world_105_115: Updated some of the information on the
-          beginner dungeons and safe places signs, since some of it was
-          out of date. Technical change, no functional changes.
+	* pup_land/pplant/pplant3: Fill in empty areas outside the walls
+	  with blocked archetypes to Power Plant, Level 3
+	  (pup_land/pplant/pplant3) in Pup Land. Cosmetic change only, no
+	  function changes.
 
-2012-11-11 21:58  SilverNexus
+2013-02-13 10:13  rjtanner
 
-        * styles/monsterstyles/nethack/nethack_10 - nethack_21:
-          changed spelling of "gargolye" to "gargoyle" for random
-          map generation. Technical change, no functional changes.
+	* pup_land/pplant/pplant3: Added a missing special key
+	  (pplant_wraith_key) to allow players access to rooms in Power
+	  Plant, Level 3 (pup_land/pplant/pplant3) in Pup Land.
+
+2013-02-13 07:58  rjtanner
+
+	* wolfsburg/volcano/huts/hut-10, world/world_129_108: Cosmetic
+	  redesign to Hut (wolfsburg/volcano/huts/hut-10) in Wolfsburg.
+	  World map (world/world_129_108) updated for map entrance/exit
+	  changes.
+
+2013-02-10 16:01  ryo_saeba
+
+	* santo_dominion/magara/well/top,
+	  santo_dominion/magara/well/treasure, santo_dominion/noble_rest,
+	  santo_dominion/noble_rest.msg,
+	  santo_dominion/santo_dominion.quests: Small quest: the noisy
+	  well.
+
+2013-02-03 14:23  ryo_saeba
+
+	* scorn/misc/cityhall: Have the city hall opened all time, but
+	  spawn zombies during the night. Idea courtesy Lauwenmark.
+
+2013-01-31 00:38  rjtanner
+
+	* wolfsburg/volcano/huts/hut-09, world/world_129_108: Cosmetic
+	  redesign to Hut (wolfsburg/volcano/huts/hut-09) in Wolfsburg.
+	  World map (world/world_129_108) updated for map entrance/exit
+	  changes.
+
+2013-01-31 00:32  rjtanner
+
+	* wolfsburg/volcano/huts/hut-08, world/world_129_108: Cosmetic
+	  redesign to Hut (wolfsburg/volcano/huts/hut-08) in Wolfsburg.
+	  World map (world/world_129_108) updated for map entrance/exit
+	  changes.
+
+2013-01-31 00:23  rjtanner
+
+	* wolfsburg/volcano/huts/hut-07, world/world_129_108: Cosmetic
+	  redesign to Hut (wolfsburg/volcano/huts/hut-07) in Wolfsburg.
+	  World map (world/world_129_108) updated for map entrance/exit
+	  changes.
+
+2013-01-31 00:17  rjtanner
+
+	* wolfsburg/volcano/huts/hut-06, world/world_129_108: Cosmetic
+	  redesign to Hut (wolfsburg/volcano/huts/hut-06) in Wolfsburg.
+	  World map (world/world_129_108) updated for map entrance/exit
+	  changes.
+
+2013-01-29 19:39  ryo_saeba
+
+	* python/dialog/npc_dialog.py: Tentative fix for a Windows bug with
+	  'include' in dialogs.
+
+2013-01-07 04:59  rjtanner
+
+	* santo_dominion/just_preliminary: Patch 3599700. Fix incorrect
+	  coordinates for the staircase upstairs to Little House of
+	  Horrors, Just Preliminary (santo_dominion/just_preliminary) in
+	  Santo Dominion. Patch credit to Kevin Zheng.
+
+2012-12-31 08:47  rjtanner
+
+	* wolfsburg/volcano/huts/hut-03, wolfsburg/volcano/huts/hut-04:
+	  Removed accidentally added duplicate floor tiles to hut-03 and
+	  hut-04 maps in Wolfsburg ((wolfsburg/volcano/huts/hut-0*).
+	  Technical change, no functional changes.
+
+2012-12-31 08:45  rjtanner
+
+	* wolfsburg/volcano/huts/hut-05, world/world_129_108: Cosmetic
+	  redesign to Hut (wolfsburg/volcano/huts/hut-05) in Wolfsburg.
+	  World map (world/world_129_108) updated for map entrance/exit
+	  changes.
+
+2012-12-31 08:32  rjtanner
+
+	* wolfsburg/volcano/huts/hut-04, world/world_129_108: Cosmetic
+	  redesign to Hut (wolfsburg/volcano/huts/hut-04) in Wolfsburg.
+	  World map (world/world_129_108) updated for map entrance/exit
+	  changes.
+
+2012-12-31 08:09  rjtanner
+
+	* wolfsburg/volcano/huts/hut-03, world/world_129_108: Cosmetic
+	  redesign to Hut (wolfsburg/volcano/huts/hut-03) in Wolfsburg.
+	  World map (world/world_129_108) updated for map entrance/exit
+	  changes.
+
+2012-12-31 08:02  rjtanner
+
+	* wolfsburg/volcano/huts/hut-02, world/world_129_108: Cosmetic
+	  redesign to Hut (wolfsburg/volcano/huts/hut-02) in Wolfsburg.
+	  World map (world/world_129_108) updated for map entrance/exit
+	  changes.
+
+2012-12-31 07:47  rjtanner
+
+	* wolfsburg/volcano/huts/hut-01, world/world_129_108: Cosmetic
+	  redesign to Hut (wolfsburg/volcano/huts/hut-01) in Wolfsburg.
+	  World map (world/world_129_108) updated for map entrance/exit
+	  changes.
+
+2012-12-31 07:27  rjtanner
+
+	* dungeons/dark-cave/dark-cave-2: Correct typo (Tome -> Tomb) in
+	  the map name for Dark Cave, Dwarven Tomb
+	  (dungeons/dark-cave/dark-cave-2).
+
+2012-12-31 07:22  rjtanner
+
+	* dungeons/dark-cave/dark-cave, dungeons/dark-cave/dark-cave-2,
+	  dungeons/dark-cave/dwarven_camp, dungeons/dark-cave/ogre-cave:
+	  Removed forced line breaks in message text to Dark Cave
+	  (dungeons/dark-cave/*) maps.
+
+2012-12-31 07:10  rjtanner
+
+	* dungeons/dark-cave/dark-cave, dungeons/dark-cave/dark-cave-2,
+	  dungeons/dark-cave/dwarven_camp, dungeons/dark-cave/hidden-cave,
+	  dungeons/dark-cave/ogre-cave, dungeons/dark-cave/ogre-cave-2,
+	  dungeons/dark-cave/ogre-cave-3, dungeons/dark-cave/ogre-cave-4:
+	  Update Dark Cave maps (dungeons/dark-cave/*) to give them unique
+	  names. No functional changes.
+
+2012-12-01 10:12  ryo_saeba
+
+	* scorn/misc/dragon_guild: Commit patch #3588368: Spelling fix for
+	  /scorn/misc/dragon_guild, by Kevin Zheng.
+
+2012-12-01 03:30  rjtanner
+
+	* dungeons/dark-cave/dark-cave-2: Additional spike wall section
+	  between gates and castle walls to dark-cave-2
+	  (dungeons/dark-cave/dark-cave-2) map. Cosmetic change only, no
+	  functional changes.
+
+2012-12-01 03:26  rjtanner
+
+	* dungeons/dark-cave/dark-cave, dungeons/dark-cave/dark-cave-2,
+	  dungeons/dark-cave/hidden-cave, dungeons/dark-cave/ogre-cave,
+	  dungeons/dark-cave/ogre-cave-2, dungeons/dark-cave/ogre-cave-3,
+	  dungeons/dark-cave/ogre-cave-4: Cave wall touch up and changes to
+	  Dark Cave (dungeons/dark-cave/*) maps. Cosmetic change only, no
+	  functional changes.
+
+2012-12-01 02:43  rjtanner
+
+	* dungeons/dark-cave/dark-cave, dungeons/dark-cave/dark-cave-2,
+	  dungeons/dark-cave/dwarven_camp, dungeons/dark-cave/hidden-cave,
+	  dungeons/dark-cave/ogre-cave, dungeons/dark-cave/ogre-cave-2,
+	  dungeons/dark-cave/ogre-cave-3, dungeons/dark-cave/ogre-cave-4:
+	  Added wilderness region setting to Dark Cave maps.
+
+2012-12-01 02:35  rjtanner
+
+	* dungeons/dark-cave, dungeons/dark-cave/dark-cave,
+	  dungeons/dark-cave/dark-cave-2, dungeons/dark-cave/dwarven_camp,
+	  dungeons/dark-cave/hidden-cave, dungeons/dark-cave/ogre-cave,
+	  dungeons/dark-cave/ogre-cave-2, dungeons/dark-cave/ogre-cave-3,
+	  dungeons/dark-cave/ogre-cave-4, world/world_111_116,
+	  world/world_112_116, world/world_112_117: Patch# 348707, Dark
+	  Cave map set and world map changes for the new maps. Giant Leader
+	  and Giant Chief archetypes checked in with archetype r13382.
+	  Patch courtesy of Jesse F. Hughes.
+
+2012-11-18 15:58  ryo_saeba
+
+	* world/world_127_108: Use black archway for the final exit.
+
+2012-11-18 15:40  ryo_saeba
+
+	* quests/peterm/quests/undead_final: Fix Map's name and region.
+
+2012-11-18 15:30  ryo_saeba
+
+	* quests/peterm/quests/undead_final, scorn/misc/king_archduke.msg,
+	  styles/monsterstyles/undead_quest/undead_quest_21,
+	  world/world_127_108: Add a final map to the undead quest. Rename
+	  'Lord Spectre' to 'Master Spectre', add a final Lord Spectre
+	  boss.
+
+2012-11-18 12:22  ryo_saeba
+
+	* darcap/darcap/circus/ghost, editor/pickmaps/monster,
+	  quests/mak/chaos/monsters.pick, quests/mak/chaos/up3,
+	  quests/todd/aljwaf/hall2,
+	  santo_dominion/temple_naive/templenaive.1,
+	  styles/monsterstyles/nethack/nethack_10,
+	  styles/monsterstyles/nethack/nethack_11,
+	  styles/monsterstyles/nethack/nethack_12,
+	  styles/monsterstyles/nethack/nethack_13,
+	  styles/monsterstyles/nethack/nethack_14,
+	  styles/monsterstyles/nethack/nethack_15,
+	  styles/monsterstyles/nethack/nethack_16,
+	  styles/monsterstyles/nethack/nethack_17,
+	  styles/monsterstyles/nethack/nethack_18,
+	  styles/monsterstyles/nethack/nethack_19,
+	  styles/monsterstyles/nethack/nethack_20,
+	  styles/monsterstyles/nethack/nethack_21,
+	  styles/monsterstyles/nethack/nethack_7,
+	  styles/monsterstyles/nethack/nethack_8,
+	  styles/monsterstyles/nethack/nethack_9,
+	  under_world/uworld_120_109, unlinked/kandora/cave/cave1,
+	  unlinked/kandora/elcyon/temple: Replace '[large_]gargolye' arch
+	  with '[large_]gargoyle'.
+
+2012-11-18 10:34  ryo_saeba
+
+	* ChangeLog, world/world_105_115: Commit patch #3586285: Updated
+	  some sign information in Scorn, by SilverNexus.
+
+2012-11-18 10:32  ryo_saeba
+
+	* ChangeLog, styles/monsterstyles/nethack/nethack_10,
+	  styles/monsterstyles/nethack/nethack_11,
+	  styles/monsterstyles/nethack/nethack_12,
+	  styles/monsterstyles/nethack/nethack_13,
+	  styles/monsterstyles/nethack/nethack_14,
+	  styles/monsterstyles/nethack/nethack_15,
+	  styles/monsterstyles/nethack/nethack_16,
+	  styles/monsterstyles/nethack/nethack_17,
+	  styles/monsterstyles/nethack/nethack_18,
+	  styles/monsterstyles/nethack/nethack_19,
+	  styles/monsterstyles/nethack/nethack_20,
+	  styles/monsterstyles/nethack/nethack_21: Apply patch #3586284:
+	  Fixed spelling - random map generated 'winged gargolye', by
+	  SilverNexus.
+
+2012-10-08 07:47  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
 
 2012-10-05 06:16  rjtanner
 
