@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2012-07-02 Rick Tanner
+Modified: 2013-03-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_115
@@ -274,7 +274,7 @@ y 1
 elevation 14615
 end
 arch s_shop2
-name coffee shop
+name Eswald's Coffee Shop
 slaying /scorn/shops/coffeeshop
 msg
 Ding!
@@ -312,7 +312,7 @@ y 4
 elevation 15568
 end
 arch house_small
-name Beginners2
+name Beginners 2
 slaying /scorn/misc/beginners2
 hp 8
 sp 14
@@ -601,8 +601,9 @@ y 1
 elevation 13035
 end
 arch sign_w
+name Wanderer's Way
 msg
-Wanderer's Way
+Wanderer's Way...
 endmsg
 x 2
 y 1
@@ -635,7 +636,7 @@ y 4
 elevation 13597
 end
 arch tavern
-name Beginners
+name Beginners 1
 slaying ../scorn/misc/beginners_entry
 hp 6
 sp 6
@@ -652,8 +653,9 @@ y 5
 elevation 13056
 end
 arch sign_w
+name River Road
 msg
-River Road
+River Road...
 endmsg
 x 2
 y 5
@@ -2320,7 +2322,7 @@ y 1
 elevation 11305
 end
 arch inn
-name Wanderer Inn
+name Wanderers' Inn
 slaying /scorn/taverns/inn
 hp 12
 sp 18
