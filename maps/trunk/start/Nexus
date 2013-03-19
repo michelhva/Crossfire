@@ -11,7 +11,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  2003-09-25 Avion
-Modified: 2012-03-29 Rick Tanner
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch blocked
@@ -1662,12 +1662,10 @@ no_magic 1
 damned 1
 end
 arch sign_w
+name To Scorn
 msg
-To Scorn
-Scorn is the best place for new players to start when they have already completed the beginners tutorial.
-Players starting in Scorn have a lot of ready options for adventuring.
-This does however mean that many others may be adventuring in the same areas.
-The password to get past the gate is "eureka."
+Scorn is the best place for new players to start after they've completed the tutorial. Players starting in Scorn have a lot of options for adventuring. However, this does mean that there are probably other people adventuring in the same area.
+The password to get past the gate is "eureka".
 endmsg
 x 9
 y 12
@@ -2164,9 +2162,9 @@ no_magic 1
 damned 1
 end
 arch sign
-name Beginners
+name Tutorial
 msg
-Take this teleporter to the Starting House where you can learn some basic skills before journeying onward.
+Take this teleporter to the Beginners' House where you can learn some basic skills before journeying onward.
 endmsg
 x 12
 y 9
@@ -2699,14 +2697,11 @@ no_magic 1
 damned 1
 end
 arch sign_e
+name To Navar
 msg
-To Navar
-Navar is a good place for more experienced players to start.
-Adventurers starting in Navar might have to do a bit more exploring, but then it is more likely you will find things...
-
+Navar is a good place for more experienced players to start. You might have to do a bit more exploring, but it is more likely that you'll find something... interesting.
 -=> WARNING <=-
-Navar is not a "Newbie Friendly" place. True novices should start either in beginners house or Scorn.
-Consider yourself warned!
+Navar is not a "newbie friendly" place. Novices should start either in the tutorial or Scorn. Consider yourself warned!
 endmsg
 x 15
 y 12
