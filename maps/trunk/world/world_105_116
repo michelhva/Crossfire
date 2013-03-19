@@ -1308,18 +1308,18 @@ end
 arch sign
 name General Information
 msg
-Safe Places to visit...
-Wanderer Inn (Sleep to save!)
-Pirate Inn (in port area)
-Goth's tavern (near GuardHouse)
-City Hall (west of central square)
-Zoo (Old South Road) place to see many monsters
-Patch's house (Wanderer's Way)
+Safe places to visit...
 Central Library
-Prison of Scorn
-The Barking Mule Tavern
+City Hall (west of central square)
+Goth's Tavern (near guard house)
 Oled's Cafe
-...and all the stores
+Patch's House (Wanderer's Way)
+Piriate Inn (in port area)
+Prison of Scorn
+The Barking Mule
+Wanderers' Inn (sleep to save!)
+Zoo (Old South Road) place to see many monsters
+...and all the stores and temples.
 Visit the Central Square for more information (due north)
 endmsg
 x 4
@@ -1335,15 +1335,11 @@ y 5
 elevation 12659
 end
 arch sign
-name Beginners
+name Beginners' Information
 msg
-Beginners should head to the
-houses to the west,
-Beginners 1
-for valuable life lessons
-and
-Beginners 2
-for more advanced topics.
+Beginners should head towards the houses to the west:
+Beginners 1 provides valuable life lessons, and
+Beginners 2 for some more advanced topics.
 endmsg
 x 4
 y 5
