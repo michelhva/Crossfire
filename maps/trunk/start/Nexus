@@ -2146,9 +2146,9 @@ no_magic 1
 damned 1
 end
 arch exit
+name teleporter
 slaying /start/newbieshouse
 face teleporter.111
-animation teleporter
 hp 9
 sp 4
 x 12
@@ -3402,18 +3402,6 @@ x 19
 y 10
 blocksview 0
 end
-arch magic_ear
-name Navar
-msg
-@match Darcap
-*GONG*
-@match Wolfsburg
-*GONG*
-endmsg
-x 19
-y 11
-connected 666
-end
 arch tile_white_floor
 x 19
 y 11
@@ -3424,19 +3412,29 @@ arch swall_2_1_2
 x 19
 y 11
 end
-arch magic_mouth
-name Let's Play Name That City
+arch magic_ear
+name Correct Answers
 msg
-Ships in the port area of Navar can take you to two cities - name one of the cities.
+@match Darcap|Wolfsburg
+*GONG*
 endmsg
 x 19
-y 12
+y 11
+connected 666
 end
 arch tile_white_floor
 x 19
 y 12
 no_magic 1
 damned 1
+end
+arch magic_mouth
+name Let's Play Name That City
+msg
+Ships in the port area of Navar can take you to two cities - name one of them.
+endmsg
+x 19
+y 12
 end
 arch tile_white_floor
 x 19
@@ -3767,13 +3765,6 @@ end
 arch swall_2_1_2
 x 21
 y 11
-end
-arch magic_mouth
-msg
-Step into the portal to go to Navar.
-endmsg
-x 21
-y 12
 end
 arch tile_white_floor
 x 21
