@@ -2460,10 +2460,9 @@ x 11
 y 3
 end
 arch sign_w
-name An information sign
+name Court Hall
 msg
-This way leads to the Court Hall.
--Cityhall information.
+This way is the court hall.
 endmsg
 x 11
 y 3
@@ -2763,7 +2762,7 @@ x 12
 y 14
 end
 arch sign
-name City hall information
+name Hours
 msg
 City Hall services are available all the time, but beware zombies during the night.
 endmsg
@@ -3514,10 +3513,9 @@ x 16
 y 3
 end
 arch sign_e
-name An information sign
+name Library
 msg
-This way leads to the library.
-- Cityhall information
+This way is the library.
 endmsg
 x 16
 y 3
