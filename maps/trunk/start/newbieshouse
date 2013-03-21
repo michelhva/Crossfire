@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2012-03-29 Rick Tanner
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch dungeon_magic
@@ -696,8 +696,9 @@ x 2
 y 13
 end
 arch sign
+name Food
 msg
-Food is good stuff you need to keep healthy.  You eat food by applying it.
+Food is important for you to stay alive. Apply it to eat it. If your food bar runs down, you will begin to rapidly lose HP. Regenerating HP and mana also requires food, so remember to bring plenty to battles!
 endmsg
 x 2
 y 13
@@ -1244,7 +1245,7 @@ x 4
 y 7
 end
 arch sign
-name Gates and doors
+name Gates and Doors
 msg
 Some doors and gates automatically swing open by triggering a (sometimes hidden) button or switch.  Be careful not to stand in the way when they are swinging open or closed...  Ouch.
 endmsg
@@ -2178,6 +2179,7 @@ x 7
 y 10
 end
 arch sign_w
+name Beds to reality
 msg
 Beds to reality
 endmsg
@@ -2234,14 +2236,12 @@ x 7
 y 15
 end
 arch sign
+name Fighting
 msg
--------------------
-Tutorial: Fighting
 Get your first experience points!
 Ants are the easiest creatures to kill in the world of Crossfire.
 Nothing is easier than fighting.  Just run into the ants.
 Go ahead, you can kill them!
--------------------
 endmsg
 x 7
 y 15
@@ -2724,12 +2724,11 @@ x 9
 y 5
 end
 arch sign
+name sign
 msg
-Welcome to Crossfire, newbie!
-If you are new to this game, this map was made for you.
-Here you will find of information on how to play Crossfire.
-Want a quick start?  Speak with Sigmund at the entrance.
-Don't know how to speak?  Just type
+Welcome to Crossfire!
+If you are new to this game, this map was made for you! Here you will find information on how to play.
+Want a quick start? Speak to Sigmund at the entrance. Don't remember how to speak? Just type:
 -------
 say hello
 -------
@@ -3083,6 +3082,7 @@ x 10
 y 16
 end
 arch sign
+name Ranged Weapons
 msg
 If you have a ranged weapon this would be a good chance to practice firing it at the ants.
 First you ready the weapon, then hold down the fire key and press a direction key to fire a missile.
@@ -3327,8 +3327,9 @@ x 11
 y 10
 end
 arch sign_e
+name Doors and Keys
 msg
-Doors and keys.
+Doors and Keys
 endmsg
 x 11
 y 10
@@ -3355,6 +3356,7 @@ x 11
 y 12
 end
 arch sign
+name Using Items
 msg
 -------------------
 Tutorial: Using items
@@ -3442,9 +3444,8 @@ x 11
 y 18
 end
 arch sign
+name Books
 msg
--------------------
-Tutorial: Books
 You will find a lot of books in the Crossfire world.
 Some are so difficult your character may not understand them.
 Not everyone finds all books interesting, but one important fact is: Reading them often yields experience.
@@ -3453,7 +3454,6 @@ Simply apply a book to read it.
 Reading is important for two reasons:
 - learning high-level spells requires a high literacy level, gained by reading a lot
 - texts contain various information about the world, including places that may be interesting to visit
--------------------
 endmsg
 x 11
 y 18
@@ -3487,15 +3487,10 @@ x 11
 y 21
 end
 arch sign
+name Food
 msg
--------------------
-Tutorial: Food
-You need to eat in Crossfire or you'll starve.  Never forget to carry food with you.
-When you cast spells or are healing, you consume more food than usual.
-If your food level reaches zero, you begin to lose hit points very fast.
-If you carry food with you and your food level reaches zero, your character will randomly eat some of it.
-Would you like some more food now?  If so, go near the altar and say food.
--------------------
+Remember, you need to eat or you'll starve. Never forget to carry food with you. If you have food and your food level reaches zero, your character will randomly eat some of it.
+Would you like some more food now? If so, go near the altar and say 'food'.
 endmsg
 x 11
 y 21
@@ -4591,9 +4586,8 @@ y 4
 end
 arch sign
 msg
-Keys can also be used to open locked chests, but not all chests are locked.
-Beware, though, as some doors and chests are trapped.  Use caution.
-This chest is locked by chance the key to open it is right here.
+Keys can also be used to open locked chests, but not all chests are locked. Beware, though, as some doors and chests are trapped. Use caution.
+The chest is locked by chance, but the key to open it is right there.
 endmsg
 x 15
 y 4
@@ -4665,9 +4659,9 @@ x 15
 y 9
 end
 arch sign
+name sign
 msg
-Doors.
-There are many varieties of door.
+There are many different types of doors.
 The most basic type is a simple closed door.  You can open this kind of door with a generic key like the one beside this sign.
 If you have no keys you can try to break the door down by attacking it.
 If you have the lockpicking skill you can try to open the door by typing 'ready_skill lockpicking' and then 'firing' (usually pressing shift + <direction>) towards the door like you would fire an arrow or a bolt.
