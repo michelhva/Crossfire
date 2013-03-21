@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2013-03-18 Kevin Zheng
+Modified: 2013-03-21 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -102,7 +102,7 @@ end
 arch grass_only
 y 13
 end
-arch silvercoin
+arch platinacoin
 y 13
 nrof 12
 end
