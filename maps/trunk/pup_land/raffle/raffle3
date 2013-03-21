@@ -1144,7 +1144,7 @@ end
 arch sign_w
 name Dungeon No. 3
 msg
-The raffle dungeon for the most advanced heroes (~lvl 40-60).
+Raffle Dungeon for Advanced Heroes (~lvl 40-60)
 endmsg
 x 3
 y 16
@@ -2849,14 +2849,14 @@ x 8
 y 12
 end
 arch sign
-name instruction
+name Instructions
 msg
-You can draw the raffle here!!
- 1. Go to Dungeon No.3 (downstairs) and retrieve the raffle ticket.
- 2. Go upstairs and pull lever 1 on the 2nd floor.
- 2. Come back here,  pull lever 2 right in front of you.
- 3. Then pull lever 3.
- 4. At last pull lever 2 again.
+Follow these instructions to draw your raffle:
+ 1. Go to Dungeon No. 3 (downstairs) to retrieve the raffle ticket.
+ 2. Go upstairs and pull level 1 on the 2nd floor.
+ 3. Come back here and pull level 2 right in front of you.
+ 3. Pull level 3 (here as well).
+ 4. Finally, pull level 2 again and wait for your prize to appear on the table!
 endmsg
 x 8
 y 12
