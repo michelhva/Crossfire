@@ -9,7 +9,7 @@ enter_x 11
 enter_y 24
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2012-03-27 Rick Tanner
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch pstone_2
@@ -1578,7 +1578,7 @@ x 8
 y 10
 end
 arch sign_w
-name ARENA west
+name West Entrance
 x 8
 y 10
 end
@@ -1603,7 +1603,7 @@ x 8
 y 15
 end
 arch sign_w
-name permanent tickets
+name Tickets
 msg
 Two ways of entering the terraces of the area: Pay 50 plat to the guards each time, or buy a permanent ticket once!
 endmsg
@@ -2104,7 +2104,7 @@ x 11
 y 10
 end
 arch sign
-name gladiator's registry office
+name Gladiator's Registry Office
 msg
 Ever wanted to battle your friends without having to fear death? - Then step ahead. (If the spikes are closed the ARENA is already occupied.)
 endmsg
@@ -2156,10 +2156,9 @@ x 11
 y 21
 end
 arch sign
-name welcome
+name Scorn Battle Arena
 msg
-Welcome to the famous battle-ARENA! If you don't know how it works, visit the info point to the right.
-----------------------------
+Welcome to the famous Scorn Battle Arena! If you don't know how it works, visit the information booth to the right.
 endmsg
 x 11
 y 21
@@ -2591,7 +2590,7 @@ x 14
 y 10
 end
 arch sign_e
-name ARENA east
+name East Entrance
 x 14
 y 10
 end
@@ -2616,7 +2615,7 @@ x 14
 y 15
 end
 arch sign_e
-name souvenirs
+name Souvenirs
 msg
 Buy souvenirs!
 endmsg
@@ -2648,9 +2647,9 @@ x 14
 y 21
 end
 arch sign_e
-name ARENA info point
+name Information Booth
 msg
-Here you'll find everything what you need to know about the ARENA.
+Here you'll find everything you need to know about the arena.
 endmsg
 x 14
 y 21
@@ -3394,9 +3393,9 @@ x 18
 y 19
 end
 arch book_clasp
-name instructions, part 3
+name Safety
 msg
-The looser will find himself in the first-aide station.  No loss of exp nor stats.  Moreover, inside the ARENA draining attacks don't take effect and acid doesn't harm equipment.  So there is NOTHING to be afraid of ;-)
+The Arena Director takes safety very seriously. Because of this, the Arena is a very safe place. The loser will find himself in the first-aid station, with no loss of experience or stats. Moreoever, inside the arena, draining attacks don't take effect and acid doesn't harm equipment, so there is NOTHING to be afraid of.
 endmsg
 x 18
 y 19
@@ -3412,9 +3411,9 @@ x 18
 y 20
 end
 arch book_clasp
-name instructions, part 2
+name How it Works
 msg
-Before combat, both players have the option of placing winning-bets.  The one who is victorious on battleground will gain all of that treasure.  And he will also get one finger of the defeated foe - the trophy for his heroic victory.  But he will definitely NOT gain his exp!
+Before combat, both players are given the opportunity to set certain conditions, such as obstacles, for the match. They can also decide to place winning bets. Peaceful mode is automatically ignored. This means that you can attack your opponents by simply running into them. The one who is victorious will gain all of the treasure. This is not required. The winner also receives one finger of the defeated foe as a trophy for victory. Neither combatant will earn experience.
 endmsg
 x 18
 y 20
@@ -3430,9 +3429,9 @@ x 18
 y 21
 end
 arch book_clasp
-name instructions, part 1
+name About the Arena
 msg
-The ARENA is a place where friends can fight each other without facing death penalties.  Two players and 1000 platinum are needed to enter. (Go to the registration office north.)
+The Arena is a place where friends can fight each other without facing actual death penalties. Two players and 100 platinum are needed to enter; just go to the registration office to the north.
 endmsg
 x 18
 y 21
