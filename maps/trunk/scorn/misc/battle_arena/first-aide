@@ -9,7 +9,7 @@ enter_x 5
 enter_y 10
 msg
 Created:  2000-10-28
-Modified: 2012-01-13 Rick Tanner
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch magic_banned
@@ -911,6 +911,8 @@ name medic
 msg
 @match yes
 <The medic takes a big spoon and shoves heaps of bad-tasting medicine into your mouth.>
+@match no
+Then get out of my way!
 @match *
 Need some medicine?
 endmsg
