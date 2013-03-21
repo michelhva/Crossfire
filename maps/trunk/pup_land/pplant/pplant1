@@ -8,7 +8,7 @@ enter_x 10
 enter_y 21
 msg
 Created:  1996-02-04
-Modified: 2012-04-09 Rick Tanner
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch dungeon_floor
@@ -1680,7 +1680,7 @@ x 10
 y 14
 end
 arch sign_w
-name conversation room
+name Conversation Room
 x 10
 y 14
 end
@@ -1705,7 +1705,7 @@ x 10
 y 19
 end
 arch sign_w
-name bed room
+name Bedroom
 x 10
 y 19
 end
@@ -1900,6 +1900,7 @@ x 12
 y 4
 end
 arch sign_w
+name Fuel Section
 msg
 Fuel Section: Caution! Fire hazard.
 endmsg
@@ -2268,7 +2269,7 @@ x 14
 y 12
 end
 arch sign
-name office of power plant
+name Power Plant Office
 x 14
 y 12
 end
