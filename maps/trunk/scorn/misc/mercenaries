@@ -459,7 +459,10 @@ x 4
 y 6
 end
 arch orc
-Str 14
+msg
+@match *
+Grr... me help you kill all enemies!
+endmsg
 hp 7
 maxhp 7
 dam 2
@@ -958,6 +961,10 @@ x 8
 y 6
 end
 arch ninja_1
+msg
+@match
+Hehe... nobody can defeat me!
+endmsg
 x 8
 y 6
 end
