@@ -680,10 +680,10 @@ x 3
 y 15
 end
 arch man
-name ticket-vendor
+name ticket vendor
 msg
 @match *
-Buy an arena ticket.  Watching the gladiator's duels is so much fun... It costs only 500 diamonds, and you get one bag of popcorn for free.
+Buy an arena ticket! Watching the gladiators' duels is so much fun. It costs only 100 diamonds, and you get one bag of popcorn for free!
 endmsg
 hp 180
 maxhp 180
@@ -1058,7 +1058,7 @@ arch knight
 name Arena Guard
 msg
 @match *
-To enter the terraces of the arena, drop 50 platinum on the desk or buy a ticket.
+To enter the terraces of the arena, drop 20 platinum on the desk or buy a ticket.
 endmsg
 x 5
 y 7
@@ -1123,7 +1123,7 @@ end
 arch magic_mouth
 name 5
 msg
-The ticket-vendor says: Here is your ARENA ticket.  Now you can enter the terraces of the arena whenever you want.
+The ticket vendor says: Here is your arena ticket. Now you can enter the terraces of the arena whenever you want!
 endmsg
 x 5
 y 15
@@ -1137,13 +1137,11 @@ x 5
 y 15
 end
 arch altar_trigger
-name ARENA ticket (100 diamonds)
+name Buy Arena Ticket (100 diamonds)
 slaying diamond
 food 100
 x 5
 y 15
-resist_physical 30
-resist_fire 30
 connected 5
 end
 arch pstone_2
@@ -1986,10 +1984,10 @@ x 11
 y 2
 end
 arch lesser_dwarven_guard
-name ARENA director
+name Arena Director
 msg
 @match *
-Welcome, gladiators! Drop 100 platinum on the desk and step onto the teleporters.  Obviously two players are required to enter.
+Welcome, gladiators! Drop 100 platinum on the desk and step onto the teleporters. Obviously two players are required to enter.
 endmsg
 sp 0
 maxsp 0
@@ -2449,7 +2447,7 @@ x 13
 y 17
 end
 arch a_townsman2
-name ARENA-fan
+name Arena fan
 msg
 @match sword|arena
 "there can only be ONE"...
@@ -2930,6 +2928,10 @@ y 13
 end
 arch knight
 name Arena Guard
+msg
+@match *
+Go buy something or leave me alone.
+endmsg
 x 16
 y 13
 friendly 1
@@ -2975,9 +2977,13 @@ x 16
 y 19
 end
 arch sage
+name Arena librarian
 msg
+@match question
+I don't know, I'm just a librarian. Go ask other adventurers or something.
 @match *
-I'm doomed to stand here just because the map-maker thought that books can't exist without a sage gambling around.
+Arrgghh, quit bothering me! If you have a question, go read the books over there!
+@reply question What if I have a different question?
 endmsg
 x 16
 y 19
@@ -3086,7 +3092,7 @@ arch knight
 name Arena Guard
 msg
 @match *
-To enter the terraces of the arena, drop 50 platinum on the desk or buy a ticket.
+To enter the terraces of the arena, drop 20 platinum on the desk or buy a ticket.
 endmsg
 x 17
 y 7
@@ -3194,16 +3200,6 @@ end
 arch pstone_2
 x 17
 y 19
-end
-arch book_clasp
-name instructions, part 4
-msg
-In the ARENA, peaceful mode will automatically be ignored.  That means by running into your opponent you will hit instead of just pushing him.
-endmsg
-x 17
-y 19
-material 0
-no_pick 1
 end
 arch dungeon_magic
 x 17
