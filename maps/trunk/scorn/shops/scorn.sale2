@@ -8,7 +8,7 @@ enter_x 10
 enter_y 1
 msg
 Created:  2004-07-01 Gene Alexander (gene@eracc.com)
-Modified: 2012-01-16 Rick Tanner
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch shop_empty
@@ -1695,7 +1695,7 @@ x 8
 y 1
 end
 arch palm
-name House Plant
+name house plant
 x 8
 y 1
 move_block all
@@ -1783,6 +1783,7 @@ x 8
 y 9
 end
 arch palm
+name house plant
 x 8
 y 9
 end
@@ -2608,7 +2609,7 @@ x 12
 y 1
 end
 arch palm
-name House Plant
+name house plant
 x 12
 y 1
 move_block all
@@ -2706,6 +2707,7 @@ x 12
 y 9
 end
 arch palm
+name house plant
 x 12
 y 9
 end
@@ -3171,7 +3173,7 @@ x 14
 y 10
 end
 arch palm
-name House Plant
+name house plant
 x 14
 y 10
 move_block all
@@ -3375,7 +3377,7 @@ x 15
 y 7
 end
 arch palm
-name House Plant
+name house plant
 x 15
 y 7
 move_block all
@@ -3648,7 +3650,7 @@ x 16
 y 10
 end
 arch palm
-name House Plant
+name house plant
 x 16
 y 10
 move_block all
