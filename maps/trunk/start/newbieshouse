@@ -2356,16 +2356,17 @@ end
 arch farmer
 name Doorman
 msg
+@match beds
+You can find beds to reality at inns scattered all over the world.
+@match talk
+You can talk to other players by using the commands 'chat', 'shout', 'say', and 'tell'. To hear chat messages, use the command 'listen 10' (set by default). If you only want to hear shouts, use 'listen 9'.
+@help
+If you get stuck, try talking to other players. And, as a parting word to the wise, don't forget the most useful command: 'help'.
 @match *
-So you are ready for the world of Crossfire?
-To go outside, use the knowledge you have just learned in the tutorials.
-There is no way back once you pass through the passageway ahead.
-You can find beds of reality at Inns.
-If you get stuck, try speaking to other players.
-The commands 'shout', 'say', and 'tell' are very useful.
-The chat command is useful too, but you have to listen carefully to hear replies, so use the command 'listen 10' to do that.
-If you get tired of all that chat noise, use 'listen 9' to ignore it.
-And, as a parting word to the wise, don't forget the most useful command: 'help'.
+So you're ready for the world of Crossfire? To go outside, use the knowledge you've just learned in the tutorials. There is no way back once you pass through the gate ahead. Do you have any questions?
+@question beds Where can I find beds to reality?
+@question talk How do I talk to other players?
+@question help Who can I ask for more help?
 endmsg
 x 7
 y 22
