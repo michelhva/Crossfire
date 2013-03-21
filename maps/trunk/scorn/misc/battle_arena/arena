@@ -9,7 +9,7 @@ enter_x 3
 enter_y 3
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2012-03-27 Rick Tanner
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -545,7 +545,10 @@ x 1
 y 31
 end
 arch sign
-name snacks & drinks
+name Snacks & Drinks
+msg
+Snacks & Drinks
+endmsg
 x 1
 y 31
 end
@@ -1455,7 +1458,10 @@ x 3
 y 33
 end
 arch sign
-name snacks & drinks
+name Snacks & Drinks
+msg
+Snacks & Drinks
+endmsg
 x 3
 y 33
 end
@@ -15931,7 +15937,10 @@ x 31
 y 1
 end
 arch sign
-name first-aide station
+name First Aid Station
+msg
+First Aid Station
+endmsg
 x 31
 y 1
 end
@@ -16886,7 +16895,10 @@ x 33
 y 3
 end
 arch sign
-name first-aide station
+name First Aid Station
+msg
+First Aid Station
+endmsg
 x 33
 y 3
 end
