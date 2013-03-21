@@ -1298,7 +1298,7 @@ x 9
 y 8
 end
 arch tavern
-name raffle1(easy)
+name Raffle 1 (Easy)
 slaying raffle/raffle1
 hp 1
 sp 7
@@ -1428,7 +1428,7 @@ x 10
 y 8
 end
 arch house_small
-name raffle2(middle)
+name Raffle 2 (Medium)
 slaying raffle/raffle2
 hp 1
 sp 7
@@ -1444,6 +1444,7 @@ x 10
 y 10
 end
 arch sign
+name sign
 msg
 Raffles are opened!
 You should know that every item in the raffles can be obtained somewhere else in Pup Land.  So if you got a hard time winning, maybe you should go and search outside the raffles.
@@ -1570,7 +1571,7 @@ x 11
 y 8
 end
 arch minihouse
-name raffle3(hard)
+name Raffle 3 (Hard)
 slaying raffle/raffle3
 hp 1
 sp 7
