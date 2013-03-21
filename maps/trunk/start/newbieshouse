@@ -1585,22 +1585,36 @@ y 12
 end
 arch guildmaster
 name Manu
-title crazy key binder
+title the Crazy Key Binder
 msg
-@match *
-Hello,
-I will teach you how to use keybindings.
-There are two ways to bind commands to keys.
-The first is to use the keybinding window provided with your client (see the client for additional help).
-The second is to use the command 'bind <command>'. Your client will then ask you to push the key you want to associate with <command>.
-Let's try and example. type the command
+@match yes
+There are two ways to bind commands to keys. Which way you use will depend on your personal preference and client capabilites. Would you like to use the graphical keybinding menu or the command method yourself?
+@reply command I'd like to learn how to do it via commands.
+@reply graphical I prefer the graphical method, thank you.
+@match graphical
+Most clients will have a dialog in which you can list and add keybindings of your choice. You'll have to refer to your client's documentation for more information, but generally this is fairly self-explanatory.
+@match command
+Ahh, of course. To create a new keybinding, type 'bind <command>', where the command is the action you'd like to perform. Then, your client will ask you to push the key you want to associate with the command.
+@reply example Can you show me an example?
+@match example
+Let me show you how to bind the 'apply' command to your 'a' key. On most clients, this will already be done for you, but we're going to do it anyways. Type in the command:
 ---------
 bind apply
 ---------
-then push the key 'a' when your client asks for a key.
-Is it done?
-Congratulations, you have performed your first keybinding!
-Now each time you push the key 'a' you will apply an item on the ground.
+Then push the 'a' key when your client asks for it.
+@match thank
+You're welcome.
+@match no
+Suit yourself.
+@match why
+Keybindings allow you to run client commands, like casting spells or disarming traps, with the press of a button. This is extremely useful in combat situations. So, do you want to learn about keybindings?
+@reply no No, I'm alright.
+@reply yes Yes, of course!
+@match *
+Hello, would you like to learn about keybindings?
+@reply why Why would I ever need keybindings?
+@reply no No, some other time.
+@reply yes Yes, please!
 endmsg
 x 5
 y 12
