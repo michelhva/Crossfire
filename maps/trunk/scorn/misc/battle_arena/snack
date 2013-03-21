@@ -581,10 +581,13 @@ x 8
 y 1
 end
 arch man
-name vendor
+name Randy
+title the vendor
 msg
+@match hi|hello|greetings
+Hello, can I get you something?
 @match *
-Drop gold on the tables to buy popcorn and beer.
+Just drop 30 gold to get a bag of popcorn.
 endmsg
 x 8
 y 1
@@ -658,11 +661,15 @@ x 8
 y 9
 end
 arch man
-name vendor
+name Ralph
+title the vendor
 msg
+@match hi|hello|greetings
+Howdy, what can I get ya?
 @match *
-Drop gold on the tables to buy popcorn and beer.
+Just drop 10 gold to get a bottle of booze.
 endmsg
+face man2.151
 x 8
 y 9
 end
