@@ -8,7 +8,7 @@ enter_x 11
 enter_y 15
 msg
 Created:  1993-10-15
-Modified: 2011-01-12 Rick Tanner
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch large_stones
@@ -358,9 +358,9 @@ x 1
 y 17
 end
 arch sign_w
-name How to get out!
+name Exit
 msg
-To get out, stand on one of the doors and press key 'a' to apply.
+To leave, stand on one of the doors and press 'a' to apply (exit).
 endmsg
 x 1
 y 17
@@ -1774,7 +1774,7 @@ end
 arch sign
 name Warning
 msg
-Do NOT feed the monsters..
+Please do NOT feed the monsters.
 endmsg
 x 6
 y 16
@@ -10470,8 +10470,9 @@ x 35
 y 7
 end
 arch sign_e
+name Special Exhibit
 msg
-Special exhibit.
+Special Exhibit
 endmsg
 x 35
 y 7
