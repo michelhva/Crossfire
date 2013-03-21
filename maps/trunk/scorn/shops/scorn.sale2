@@ -1725,7 +1725,7 @@ x 8
 y 4
 end
 arch sign_w
-name Pawn
+name Pawn Booth
 msg
 Items sold in these booths will be moved to the pawn shop floor.  Note if one picks up an item after dropping it in a booth one has to pay the purchase price to get the item back.
 endmsg
@@ -1749,7 +1749,7 @@ x 8
 y 6
 end
 arch sign
-name info
+name Info
 msg
 Scorn Pawn Shop
 ---
@@ -2639,7 +2639,7 @@ x 12
 y 4
 end
 arch sign_e
-name Pawn
+name Pawn Booth
 msg
 Items sold in these booths will be moved to the pawn shop floor.  Note if one picks up an item after dropping it in a booth one has to pay the purchase price to get the item back.
 endmsg
@@ -2663,7 +2663,7 @@ x 12
 y 6
 end
 arch sign
-name charity
+name Charity
 msg
 Charity - Help keep Scorn clean
 -----
