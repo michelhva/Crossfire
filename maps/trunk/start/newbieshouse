@@ -72,6 +72,13 @@ arch grass_only
 y 9
 end
 arch dungeon_magic
+y 9
+end
+arch mountain
+y 9
+move_block all
+end
+arch dungeon_magic
 y 10
 end
 arch grass_only
@@ -126,13 +133,9 @@ end
 arch dungeon_magic
 y 17
 end
-arch grass_only
-y 17
-end
-arch mountain3
+arch mountain
 y 17
 move_block all
-is_floor 1
 end
 arch dungeon_magic
 y 18
@@ -319,7 +322,7 @@ arch woodfloor2
 x 1
 y 10
 end
-arch wwall_2_1_1
+arch wwall_weak_1
 x 1
 y 10
 end
@@ -3514,17 +3517,16 @@ arch dungeon_magic
 x 11
 y 22
 end
-arch creator
-slaying Magical food
-other_arch food
-x 11
-y 22
-connected 11
-lifesave 1
-end
 arch woodfloor2
 x 11
 y 22
+end
+arch creator
+other_arch food
+hp 12
+x 11
+y 22
+connected 11
 end
 arch dungeon_magic
 x 11
@@ -3815,6 +3817,10 @@ arch dungeon_magic
 x 12
 y 21
 end
+arch woodfloor2
+x 12
+y 21
+end
 arch magic_ear
 msg
 @match food
@@ -3823,10 +3829,6 @@ endmsg
 x 12
 y 21
 connected 11
-end
-arch woodfloor2
-x 12
-y 21
 end
 arch dungeon_magic
 x 12
@@ -3838,7 +3840,6 @@ y 22
 move_block all
 end
 arch altar
-food 0
 x 12
 y 22
 end
@@ -5748,12 +5749,6 @@ end
 arch grass_only
 x 18
 y 23
-end
-arch mountain3
-x 18
-y 23
-move_block all
-is_floor 1
 end
 arch dungeon_magic
 x 18
