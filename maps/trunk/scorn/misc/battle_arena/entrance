@@ -343,8 +343,10 @@ I want to get in! Could you buy me a ticket please?
 endmsg
 x 1
 y 10
+speed 0.15
 friendly 1
 unaggressive 0
+random_movement 1
 end
 arch pstone_2
 x 1
