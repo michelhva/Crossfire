@@ -3887,6 +3887,10 @@ y 7
 end
 arch skull
 name Gyro the Demilich
+msg
+@match *
+Why... what do we have here?
+endmsg
 x 14
 y 7
 end
@@ -3920,6 +3924,10 @@ y 14
 end
 arch skull
 name Xanator the Demilich
+msg
+@match *
+Why... what do we have here?
+endmsg
 x 14
 y 14
 end
@@ -6965,6 +6973,10 @@ connected 2
 end
 arch guard
 name Johannes
+msg
+@match *
+...
+endmsg
 x 23
 y 45
 end
@@ -6996,6 +7008,10 @@ y 50
 end
 arch guard
 name Andreas
+msg
+@match *
+Shhhh!
+endmsg
 x 23
 y 50
 end
@@ -7428,14 +7444,28 @@ arch flagstone
 x 25
 y 21
 end
+arch magic_mouth
+msg
+The guards shuffle nervously as you walk by.
+endmsg
+food 1
+x 25
+y 21
+end
 arch flagstone
 x 25
 y 22
 end
 arch stalker
-name the Guardian
+name The Guardian
+msg
+@match *
+Things change but stay the same...
+endmsg
 x 25
 y 22
+unaggressive 1
+sleep 0
 end
 arch flagstone
 x 25
@@ -8178,6 +8208,10 @@ connected 96
 end
 arch guard
 name Judas
+msg
+@match *
+*cough* *cough*
+endmsg
 x 27
 y 45
 end
@@ -8208,6 +8242,10 @@ connected 3
 end
 arch guard
 name Markus
+msg
+@match *
+Ooh, oh hi there!
+endmsg
 x 27
 y 50
 end
