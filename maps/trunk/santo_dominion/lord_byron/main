@@ -6880,6 +6880,11 @@ arch flagstone
 x 23
 y 31
 end
+arch sign_w
+name Weapons
+x 23
+y 31
+end
 arch flagstone
 x 23
 y 32
@@ -6905,6 +6910,11 @@ x 23
 y 37
 end
 arch flagstone
+x 23
+y 38
+end
+arch sign_w
+name Magic
 x 23
 y 38
 end
@@ -7572,6 +7582,13 @@ arch cobblestones
 x 25
 y 55
 end
+arch sign
+msg
+Note that killing guards may have... unintended consequences.
+endmsg
+x 25
+y 55
+end
 arch cobblestones
 x 25
 y 56
@@ -8077,6 +8094,11 @@ arch flagstone
 x 27
 y 31
 end
+arch sign_e
+name Armory
+x 27
+y 31
+end
 arch flagstone
 x 27
 y 32
@@ -8102,6 +8124,11 @@ x 27
 y 37
 end
 arch flagstone
+x 27
+y 38
+end
+arch sign_e
+name General
 x 27
 y 38
 end
