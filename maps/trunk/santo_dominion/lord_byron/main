@@ -8,7 +8,7 @@ height 60
 enter_x 25
 enter_y 58
 msg
-Modified: 2010-11-05 Andreas Kirschbaum
+Modified: 2013-03-26 Rick Tanner
 endmsg
 end
 arch sea
@@ -1494,7 +1494,7 @@ arch brush
 x 6
 y 5
 end
-arch woodfloor
+arch flagstone
 x 6
 y 6
 end
@@ -1502,7 +1502,7 @@ arch bwall_2_2_2
 x 6
 y 6
 end
-arch woodfloor
+arch flagstone
 x 6
 y 7
 end
@@ -1510,7 +1510,7 @@ arch bwall_2_1_1
 x 6
 y 7
 end
-arch woodfloor
+arch flagstone
 x 6
 y 8
 end
@@ -1518,7 +1518,7 @@ arch bwall_2_1_1
 x 6
 y 8
 end
-arch woodfloor
+arch flagstone
 x 6
 y 9
 end
@@ -1526,7 +1526,7 @@ arch bwall_2_1_1
 x 6
 y 9
 end
-arch woodfloor
+arch flagstone
 x 6
 y 10
 end
@@ -1534,7 +1534,7 @@ arch bwall_2_1_1
 x 6
 y 10
 end
-arch woodfloor
+arch flagstone
 x 6
 y 11
 end
@@ -1542,7 +1542,7 @@ arch bwall_2_1_1
 x 6
 y 11
 end
-arch woodfloor
+arch flagstone
 x 6
 y 12
 end
@@ -1550,7 +1550,7 @@ arch bwall_2_1_1
 x 6
 y 12
 end
-arch woodfloor
+arch flagstone
 x 6
 y 13
 end
@@ -1558,7 +1558,7 @@ arch bwall_2_1_1
 x 6
 y 13
 end
-arch woodfloor
+arch flagstone
 x 6
 y 14
 end
@@ -1566,7 +1566,7 @@ arch bwall_2_1_1
 x 6
 y 14
 end
-arch woodfloor
+arch flagstone
 x 6
 y 15
 end
@@ -1574,7 +1574,7 @@ arch bwall_3_2
 x 6
 y 15
 end
-arch woodfloor
+arch flagstone
 x 6
 y 16
 end
@@ -1582,7 +1582,7 @@ arch bwall_2_1_1
 x 6
 y 16
 end
-arch woodfloor
+arch flagstone
 x 6
 y 17
 end
@@ -1590,7 +1590,7 @@ arch bwall_2_1_1
 x 6
 y 17
 end
-arch woodfloor
+arch flagstone
 x 6
 y 18
 end
@@ -1598,7 +1598,7 @@ arch bwall_3_2
 x 6
 y 18
 end
-arch woodfloor
+arch flagstone
 x 6
 y 19
 end
@@ -1606,7 +1606,7 @@ arch bwall_2_1_1
 x 6
 y 19
 end
-arch woodfloor
+arch flagstone
 x 6
 y 20
 end
@@ -1614,7 +1614,7 @@ arch bwall_2_1_1
 x 6
 y 20
 end
-arch woodfloor
+arch flagstone
 x 6
 y 21
 end
@@ -1622,7 +1622,7 @@ arch bwall_2_1_1
 x 6
 y 21
 end
-arch woodfloor
+arch flagstone
 x 6
 y 22
 end
@@ -1630,7 +1630,7 @@ arch bwall_2_1_1
 x 6
 y 22
 end
-arch woodfloor
+arch flagstone
 x 6
 y 23
 end
@@ -1638,7 +1638,7 @@ arch bwall_2_1_1
 x 6
 y 23
 end
-arch woodfloor
+arch flagstone
 x 6
 y 24
 end
@@ -1646,7 +1646,7 @@ arch bwall_2_1_1
 x 6
 y 24
 end
-arch woodfloor
+arch flagstone
 x 6
 y 25
 end
@@ -1654,7 +1654,7 @@ arch bwall_2_1_1
 x 6
 y 25
 end
-arch woodfloor
+arch flagstone
 x 6
 y 26
 end
@@ -1662,7 +1662,7 @@ arch bwall_3_2
 x 6
 y 26
 end
-arch woodfloor
+arch flagstone
 x 6
 y 27
 end
@@ -1670,7 +1670,7 @@ arch bwall_2_1_1
 x 6
 y 27
 end
-arch woodfloor
+arch flagstone
 x 6
 y 28
 end
@@ -1678,7 +1678,7 @@ arch bwall_2_1_1
 x 6
 y 28
 end
-arch woodfloor
+arch flagstone
 x 6
 y 29
 end
@@ -1686,7 +1686,7 @@ arch bwall_2_1_1
 x 6
 y 29
 end
-arch woodfloor
+arch flagstone
 x 6
 y 30
 end
@@ -1694,7 +1694,7 @@ arch bwall_2_1_1
 x 6
 y 30
 end
-arch woodfloor
+arch flagstone
 x 6
 y 31
 end
@@ -1702,7 +1702,7 @@ arch bwall_2_1_1
 x 6
 y 31
 end
-arch woodfloor
+arch flagstone
 x 6
 y 32
 end
@@ -1710,7 +1710,7 @@ arch bwall_2_1_1
 x 6
 y 32
 end
-arch woodfloor
+arch flagstone
 x 6
 y 33
 end
@@ -1718,7 +1718,7 @@ arch bwall_2_1_1
 x 6
 y 33
 end
-arch woodfloor
+arch flagstone
 x 6
 y 34
 end
@@ -1726,7 +1726,7 @@ arch bwall_3_2
 x 6
 y 34
 end
-arch woodfloor
+arch flagstone
 x 6
 y 35
 end
@@ -1734,7 +1734,7 @@ arch bwall_2_1_1
 x 6
 y 35
 end
-arch woodfloor
+arch flagstone
 x 6
 y 36
 end
@@ -1742,7 +1742,7 @@ arch bwall_2_1_1
 x 6
 y 36
 end
-arch woodfloor
+arch flagstone
 x 6
 y 37
 end
@@ -1750,7 +1750,7 @@ arch bwall_2_1_1
 x 6
 y 37
 end
-arch woodfloor
+arch flagstone
 x 6
 y 38
 end
@@ -1758,7 +1758,7 @@ arch bwall_2_1_1
 x 6
 y 38
 end
-arch woodfloor
+arch flagstone
 x 6
 y 39
 end
@@ -1766,7 +1766,7 @@ arch bwall_2_1_1
 x 6
 y 39
 end
-arch woodfloor
+arch flagstone
 x 6
 y 40
 end
@@ -1774,7 +1774,7 @@ arch bwall_2_1_1
 x 6
 y 40
 end
-arch woodfloor
+arch flagstone
 x 6
 y 41
 end
@@ -1782,7 +1782,7 @@ arch bwall_2_1_1
 x 6
 y 41
 end
-arch woodfloor
+arch flagstone
 x 6
 y 42
 end
@@ -1790,7 +1790,7 @@ arch bwall_2_1_1
 x 6
 y 42
 end
-arch woodfloor
+arch flagstone
 x 6
 y 43
 end
@@ -1893,7 +1893,7 @@ arch brush
 x 7
 y 5
 end
-arch woodfloor
+arch flagstone
 x 7
 y 6
 end
@@ -1901,7 +1901,7 @@ arch bwall_2_1_2
 x 7
 y 6
 end
-arch woodfloor
+arch flagstone
 x 7
 y 7
 end
@@ -1909,7 +1909,7 @@ arch generate_scorpion
 x 7
 y 7
 end
-arch woodfloor
+arch flagstone
 x 7
 y 8
 end
@@ -1920,27 +1920,27 @@ sp 2
 x 7
 y 8
 end
-arch woodfloor
+arch flagstone
 x 7
 y 9
 end
-arch woodfloor
+arch flagstone
 x 7
 y 10
 end
-arch woodfloor
+arch flagstone
 x 7
 y 11
 end
-arch woodfloor
+arch flagstone
 x 7
 y 12
 end
-arch woodfloor
+arch flagstone
 x 7
 y 13
 end
-arch woodfloor
+arch flagstone
 x 7
 y 14
 end
@@ -1948,15 +1948,15 @@ arch generate_scorpion
 x 7
 y 14
 end
-arch woodfloor
+arch flagstone
 x 7
 y 15
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 7
 y 15
 end
-arch woodfloor
+arch flagstone
 x 7
 y 16
 end
@@ -1966,7 +1966,7 @@ y 16
 arch spell_small_fireball
 end
 end
-arch woodfloor
+arch flagstone
 x 7
 y 17
 end
@@ -1976,7 +1976,7 @@ y 17
 arch spell_small_fireball
 end
 end
-arch woodfloor
+arch flagstone
 x 7
 y 18
 end
@@ -1984,7 +1984,7 @@ arch bwall_2_1_2
 x 7
 y 18
 end
-arch woodfloor
+arch flagstone
 x 7
 y 19
 end
@@ -1992,11 +1992,11 @@ arch generate_dragon
 x 7
 y 19
 end
-arch woodfloor
+arch flagstone
 x 7
 y 20
 end
-arch woodfloor
+arch flagstone
 x 7
 y 21
 end
@@ -2004,19 +2004,19 @@ arch generate_beholder
 x 7
 y 21
 end
-arch woodfloor
+arch flagstone
 x 7
 y 22
 end
-arch woodfloor
+arch flagstone
 x 7
 y 23
 end
-arch woodfloor
+arch flagstone
 x 7
 y 24
 end
-arch woodfloor
+arch flagstone
 x 7
 y 25
 end
@@ -2024,7 +2024,7 @@ arch generate_dragon
 x 7
 y 25
 end
-arch woodfloor
+arch flagstone
 x 7
 y 26
 end
@@ -2060,7 +2060,7 @@ arch shop_empty
 x 7
 y 33
 end
-arch woodfloor
+arch flagstone
 x 7
 y 34
 end
@@ -2100,7 +2100,7 @@ arch shop_empty
 x 7
 y 42
 end
-arch woodfloor
+arch flagstone
 x 7
 y 43
 end
@@ -2203,7 +2203,7 @@ arch brush
 x 8
 y 5
 end
-arch woodfloor
+arch flagstone
 x 8
 y 6
 end
@@ -2211,39 +2211,39 @@ arch bwall_2_1_2
 x 8
 y 6
 end
-arch woodfloor
+arch flagstone
 x 8
 y 7
 end
-arch woodfloor
+arch flagstone
 x 8
 y 8
 end
-arch woodfloor
+arch flagstone
 x 8
 y 9
 end
-arch woodfloor
+arch flagstone
 x 8
 y 10
 end
-arch woodfloor
+arch flagstone
 x 8
 y 11
 end
-arch woodfloor
+arch flagstone
 x 8
 y 12
 end
-arch woodfloor
+arch flagstone
 x 8
 y 13
 end
-arch woodfloor
+arch flagstone
 x 8
 y 14
 end
-arch woodfloor
+arch flagstone
 x 8
 y 15
 end
@@ -2251,7 +2251,7 @@ arch bwall_2_1_2
 x 8
 y 15
 end
-arch woodfloor
+arch flagstone
 x 8
 y 16
 end
@@ -2260,7 +2260,7 @@ x 8
 y 16
 connected 9
 end
-arch woodfloor
+arch flagstone
 x 8
 y 17
 end
@@ -2269,7 +2269,7 @@ x 8
 y 17
 connected 10
 end
-arch woodfloor
+arch flagstone
 x 8
 y 18
 end
@@ -2277,23 +2277,23 @@ arch bwall_2_1_2
 x 8
 y 18
 end
-arch woodfloor
+arch flagstone
 x 8
 y 19
 end
-arch woodfloor
+arch flagstone
 x 8
 y 20
 end
-arch woodfloor
+arch flagstone
 x 8
 y 21
 end
-arch woodfloor
+arch flagstone
 x 8
 y 22
 end
-arch woodfloor
+arch flagstone
 x 8
 y 23
 end
@@ -2301,11 +2301,11 @@ arch random_treasure
 x 8
 y 23
 end
-arch woodfloor
+arch flagstone
 x 8
 y 24
 end
-arch woodfloor
+arch flagstone
 x 8
 y 25
 end
@@ -2313,7 +2313,7 @@ arch generate_dragon
 x 8
 y 25
 end
-arch woodfloor
+arch flagstone
 x 8
 y 26
 end
@@ -2349,7 +2349,7 @@ arch shop_empty
 x 8
 y 33
 end
-arch woodfloor
+arch flagstone
 x 8
 y 34
 end
@@ -2389,7 +2389,7 @@ arch shop_empty
 x 8
 y 42
 end
-arch woodfloor
+arch flagstone
 x 8
 y 43
 end
@@ -2492,7 +2492,7 @@ arch brush
 x 9
 y 5
 end
-arch woodfloor
+arch flagstone
 x 9
 y 6
 end
@@ -2500,39 +2500,39 @@ arch bwall_2_1_2
 x 9
 y 6
 end
-arch woodfloor
+arch flagstone
 x 9
 y 7
 end
-arch woodfloor
+arch flagstone
 x 9
 y 8
 end
-arch woodfloor
+arch flagstone
 x 9
 y 9
 end
-arch woodfloor
+arch flagstone
 x 9
 y 10
 end
-arch woodfloor
+arch flagstone
 x 9
 y 11
 end
-arch woodfloor
+arch flagstone
 x 9
 y 12
 end
-arch woodfloor
+arch flagstone
 x 9
 y 13
 end
-arch woodfloor
+arch flagstone
 x 9
 y 14
 end
-arch woodfloor
+arch flagstone
 x 9
 y 15
 end
@@ -2540,15 +2540,15 @@ arch bwall_2_1_2
 x 9
 y 15
 end
-arch woodfloor
+arch flagstone
 x 9
 y 16
 end
-arch woodfloor
+arch flagstone
 x 9
 y 17
 end
-arch woodfloor
+arch flagstone
 x 9
 y 18
 end
@@ -2556,11 +2556,11 @@ arch bwall_2_1_2
 x 9
 y 18
 end
-arch woodfloor
+arch flagstone
 x 9
 y 19
 end
-arch woodfloor
+arch flagstone
 x 9
 y 20
 end
@@ -2568,27 +2568,27 @@ arch random_treasure
 x 9
 y 20
 end
-arch woodfloor
+arch flagstone
 x 9
 y 21
 end
-arch woodfloor
+arch flagstone
 x 9
 y 22
 end
-arch woodfloor
+arch flagstone
 x 9
 y 23
 end
-arch woodfloor
+arch flagstone
 x 9
 y 24
 end
-arch woodfloor
+arch flagstone
 x 9
 y 25
 end
-arch woodfloor
+arch flagstone
 x 9
 y 26
 end
@@ -2624,7 +2624,7 @@ arch shop_empty
 x 9
 y 33
 end
-arch woodfloor
+arch flagstone
 x 9
 y 34
 end
@@ -2664,7 +2664,7 @@ arch shop_empty
 x 9
 y 42
 end
-arch woodfloor
+arch flagstone
 x 9
 y 43
 end
@@ -2767,7 +2767,7 @@ arch brush
 x 10
 y 5
 end
-arch woodfloor
+arch flagstone
 x 10
 y 6
 end
@@ -2775,39 +2775,39 @@ arch bwall_2_1_2
 x 10
 y 6
 end
-arch woodfloor
+arch flagstone
 x 10
 y 7
 end
-arch woodfloor
+arch flagstone
 x 10
 y 8
 end
-arch woodfloor
+arch flagstone
 x 10
 y 9
 end
-arch woodfloor
+arch flagstone
 x 10
 y 10
 end
-arch woodfloor
+arch flagstone
 x 10
 y 11
 end
-arch woodfloor
+arch flagstone
 x 10
 y 12
 end
-arch woodfloor
+arch flagstone
 x 10
 y 13
 end
-arch woodfloor
+arch flagstone
 x 10
 y 14
 end
-arch woodfloor
+arch flagstone
 x 10
 y 15
 end
@@ -2815,15 +2815,15 @@ arch bwall_2_1_2
 x 10
 y 15
 end
-arch woodfloor
+arch flagstone
 x 10
 y 16
 end
-arch woodfloor
+arch flagstone
 x 10
 y 17
 end
-arch woodfloor
+arch flagstone
 x 10
 y 18
 end
@@ -2831,27 +2831,27 @@ arch bwall_1_3
 x 10
 y 18
 end
-arch woodfloor
+arch flagstone
 x 10
 y 19
 end
-arch woodfloor
+arch flagstone
 x 10
 y 20
 end
-arch woodfloor
+arch flagstone
 x 10
 y 21
 end
-arch woodfloor
+arch flagstone
 x 10
 y 22
 end
-arch woodfloor
+arch flagstone
 x 10
 y 23
 end
-arch woodfloor
+arch flagstone
 x 10
 y 24
 end
@@ -2859,11 +2859,11 @@ arch random_treasure
 x 10
 y 24
 end
-arch woodfloor
+arch flagstone
 x 10
 y 25
 end
-arch woodfloor
+arch flagstone
 x 10
 y 26
 end
@@ -2899,7 +2899,7 @@ arch shop_empty
 x 10
 y 33
 end
-arch woodfloor
+arch flagstone
 x 10
 y 34
 end
@@ -2939,7 +2939,7 @@ arch shop_empty
 x 10
 y 42
 end
-arch woodfloor
+arch flagstone
 x 10
 y 43
 end
@@ -3042,7 +3042,7 @@ arch brush
 x 11
 y 5
 end
-arch woodfloor
+arch flagstone
 x 11
 y 6
 end
@@ -3050,39 +3050,39 @@ arch bwall_2_1_2
 x 11
 y 6
 end
-arch woodfloor
+arch flagstone
 x 11
 y 7
 end
-arch woodfloor
+arch flagstone
 x 11
 y 8
 end
-arch woodfloor
+arch flagstone
 x 11
 y 9
 end
-arch woodfloor
+arch flagstone
 x 11
 y 10
 end
-arch woodfloor
+arch flagstone
 x 11
 y 11
 end
-arch woodfloor
+arch flagstone
 x 11
 y 12
 end
-arch woodfloor
+arch flagstone
 x 11
 y 13
 end
-arch woodfloor
+arch flagstone
 x 11
 y 14
 end
-arch woodfloor
+arch flagstone
 x 11
 y 15
 end
@@ -3090,15 +3090,15 @@ arch bwall_2_1_2
 x 11
 y 15
 end
-arch woodfloor
+arch flagstone
 x 11
 y 16
 end
-arch woodfloor
+arch flagstone
 x 11
 y 17
 end
-arch woodfloor
+arch flagstone
 x 11
 y 18
 end
@@ -3108,19 +3108,19 @@ y 18
 speed 0.500000
 connected 8
 end
-arch woodfloor
+arch flagstone
 x 11
 y 19
 end
-arch woodfloor
+arch flagstone
 x 11
 y 20
 end
-arch woodfloor
+arch flagstone
 x 11
 y 21
 end
-arch woodfloor
+arch flagstone
 x 11
 y 22
 end
@@ -3128,19 +3128,19 @@ arch random_treasure
 x 11
 y 22
 end
-arch woodfloor
+arch flagstone
 x 11
 y 23
 end
-arch woodfloor
+arch flagstone
 x 11
 y 24
 end
-arch woodfloor
+arch flagstone
 x 11
 y 25
 end
-arch woodfloor
+arch flagstone
 x 11
 y 26
 end
@@ -3176,7 +3176,7 @@ arch shop_empty
 x 11
 y 33
 end
-arch woodfloor
+arch flagstone
 x 11
 y 34
 end
@@ -3216,7 +3216,7 @@ arch shop_empty
 x 11
 y 42
 end
-arch woodfloor
+arch flagstone
 x 11
 y 43
 end
@@ -3319,7 +3319,7 @@ arch brush
 x 12
 y 5
 end
-arch woodfloor
+arch flagstone
 x 12
 y 6
 end
@@ -3327,39 +3327,39 @@ arch bwall_2_1_2
 x 12
 y 6
 end
-arch woodfloor
+arch flagstone
 x 12
 y 7
 end
-arch woodfloor
+arch flagstone
 x 12
 y 8
 end
-arch woodfloor
+arch flagstone
 x 12
 y 9
 end
-arch woodfloor
+arch flagstone
 x 12
 y 10
 end
-arch woodfloor
+arch flagstone
 x 12
 y 11
 end
-arch woodfloor
+arch flagstone
 x 12
 y 12
 end
-arch woodfloor
+arch flagstone
 x 12
 y 13
 end
-arch woodfloor
+arch flagstone
 x 12
 y 14
 end
-arch woodfloor
+arch flagstone
 x 12
 y 15
 end
@@ -3367,15 +3367,15 @@ arch bwall_2_1_2
 x 12
 y 15
 end
-arch woodfloor
+arch flagstone
 x 12
 y 16
 end
-arch woodfloor
+arch flagstone
 x 12
 y 17
 end
-arch woodfloor
+arch flagstone
 x 12
 y 18
 end
@@ -3383,19 +3383,19 @@ arch bwall_1_4
 x 12
 y 18
 end
-arch woodfloor
+arch flagstone
 x 12
 y 19
 end
-arch woodfloor
+arch flagstone
 x 12
 y 20
 end
-arch woodfloor
+arch flagstone
 x 12
 y 21
 end
-arch woodfloor
+arch flagstone
 x 12
 y 22
 end
@@ -3403,19 +3403,19 @@ arch random_treasure
 x 12
 y 22
 end
-arch woodfloor
+arch flagstone
 x 12
 y 23
 end
-arch woodfloor
+arch flagstone
 x 12
 y 24
 end
-arch woodfloor
+arch flagstone
 x 12
 y 25
 end
-arch woodfloor
+arch flagstone
 x 12
 y 26
 end
@@ -3451,7 +3451,7 @@ arch shop_empty
 x 12
 y 33
 end
-arch woodfloor
+arch flagstone
 x 12
 y 34
 end
@@ -3491,7 +3491,7 @@ arch shop_empty
 x 12
 y 42
 end
-arch woodfloor
+arch flagstone
 x 12
 y 43
 end
@@ -3594,7 +3594,7 @@ arch brush
 x 13
 y 5
 end
-arch woodfloor
+arch flagstone
 x 13
 y 6
 end
@@ -3602,39 +3602,39 @@ arch bwall_2_1_2
 x 13
 y 6
 end
-arch woodfloor
+arch flagstone
 x 13
 y 7
 end
-arch woodfloor
+arch flagstone
 x 13
 y 8
 end
-arch woodfloor
+arch flagstone
 x 13
 y 9
 end
-arch woodfloor
+arch flagstone
 x 13
 y 10
 end
-arch woodfloor
+arch flagstone
 x 13
 y 11
 end
-arch woodfloor
+arch flagstone
 x 13
 y 12
 end
-arch woodfloor
+arch flagstone
 x 13
 y 13
 end
-arch woodfloor
+arch flagstone
 x 13
 y 14
 end
-arch woodfloor
+arch flagstone
 x 13
 y 15
 end
@@ -3642,15 +3642,15 @@ arch bwall_2_1_2
 x 13
 y 15
 end
-arch woodfloor
+arch flagstone
 x 13
 y 16
 end
-arch woodfloor
+arch flagstone
 x 13
 y 17
 end
-arch woodfloor
+arch flagstone
 x 13
 y 18
 end
@@ -3658,7 +3658,7 @@ arch bwall_2_1_2
 x 13
 y 18
 end
-arch woodfloor
+arch flagstone
 x 13
 y 19
 end
@@ -3666,27 +3666,27 @@ arch generate_beholder
 x 13
 y 19
 end
-arch woodfloor
+arch flagstone
 x 13
 y 20
 end
-arch woodfloor
+arch flagstone
 x 13
 y 21
 end
-arch woodfloor
+arch flagstone
 x 13
 y 22
 end
-arch woodfloor
+arch flagstone
 x 13
 y 23
 end
-arch woodfloor
+arch flagstone
 x 13
 y 24
 end
-arch woodfloor
+arch flagstone
 x 13
 y 25
 end
@@ -3694,7 +3694,7 @@ arch generate_beholder
 x 13
 y 25
 end
-arch woodfloor
+arch flagstone
 x 13
 y 26
 end
@@ -3730,7 +3730,7 @@ arch shop_empty
 x 13
 y 33
 end
-arch woodfloor
+arch flagstone
 x 13
 y 34
 end
@@ -3770,7 +3770,7 @@ arch shop_empty
 x 13
 y 42
 end
-arch woodfloor
+arch flagstone
 x 13
 y 43
 end
@@ -3873,7 +3873,7 @@ arch brush
 x 14
 y 5
 end
-arch woodfloor
+arch flagstone
 x 14
 y 6
 end
@@ -3881,7 +3881,7 @@ arch bwall_2_1_2
 x 14
 y 6
 end
-arch woodfloor
+arch flagstone
 x 14
 y 7
 end
@@ -3890,31 +3890,31 @@ name Gyro the Demilich
 x 14
 y 7
 end
-arch woodfloor
+arch flagstone
 x 14
 y 8
 end
-arch woodfloor
+arch flagstone
 x 14
 y 9
 end
-arch woodfloor
+arch flagstone
 x 14
 y 10
 end
-arch woodfloor
+arch flagstone
 x 14
 y 11
 end
-arch woodfloor
+arch flagstone
 x 14
 y 12
 end
-arch woodfloor
+arch flagstone
 x 14
 y 13
 end
-arch woodfloor
+arch flagstone
 x 14
 y 14
 end
@@ -3923,7 +3923,7 @@ name Xanator the Demilich
 x 14
 y 14
 end
-arch woodfloor
+arch flagstone
 x 14
 y 15
 end
@@ -3931,15 +3931,15 @@ arch bwall_2_1_2
 x 14
 y 15
 end
-arch woodfloor
+arch flagstone
 x 14
 y 16
 end
-arch woodfloor
+arch flagstone
 x 14
 y 17
 end
-arch woodfloor
+arch flagstone
 x 14
 y 18
 end
@@ -3947,7 +3947,7 @@ arch bwall_2_1_2
 x 14
 y 18
 end
-arch woodfloor
+arch flagstone
 x 14
 y 19
 end
@@ -3955,27 +3955,27 @@ arch generate_beholder
 x 14
 y 19
 end
-arch woodfloor
+arch flagstone
 x 14
 y 20
 end
-arch woodfloor
+arch flagstone
 x 14
 y 21
 end
-arch woodfloor
+arch flagstone
 x 14
 y 22
 end
-arch woodfloor
+arch flagstone
 x 14
 y 23
 end
-arch woodfloor
+arch flagstone
 x 14
 y 24
 end
-arch woodfloor
+arch flagstone
 x 14
 y 25
 end
@@ -3983,7 +3983,7 @@ arch generate_beholder
 x 14
 y 25
 end
-arch woodfloor
+arch flagstone
 x 14
 y 26
 end
@@ -4019,7 +4019,7 @@ arch shop_empty
 x 14
 y 33
 end
-arch woodfloor
+arch flagstone
 x 14
 y 34
 end
@@ -4059,7 +4059,7 @@ arch shop_empty
 x 14
 y 42
 end
-arch woodfloor
+arch flagstone
 x 14
 y 43
 end
@@ -4162,7 +4162,7 @@ arch brush
 x 15
 y 5
 end
-arch woodfloor
+arch flagstone
 x 15
 y 6
 end
@@ -4170,7 +4170,7 @@ arch bwall_2_1_2
 x 15
 y 6
 end
-arch woodfloor
+arch flagstone
 x 15
 y 7
 end
@@ -4179,7 +4179,7 @@ x 15
 y 7
 connected 1
 end
-arch woodfloor
+arch flagstone
 x 15
 y 8
 end
@@ -4187,7 +4187,7 @@ arch bwall_1_1
 x 15
 y 8
 end
-arch woodfloor
+arch flagstone
 x 15
 y 9
 end
@@ -4195,7 +4195,7 @@ arch bwall_2_1_1
 x 15
 y 9
 end
-arch woodfloor
+arch flagstone
 x 15
 y 10
 end
@@ -4203,7 +4203,7 @@ arch bwall_2_1_1
 x 15
 y 10
 end
-arch woodfloor
+arch flagstone
 x 15
 y 11
 end
@@ -4211,7 +4211,7 @@ arch bwall_2_1_1
 x 15
 y 11
 end
-arch woodfloor
+arch flagstone
 x 15
 y 12
 end
@@ -4219,7 +4219,7 @@ arch bwall_2_1_1
 x 15
 y 12
 end
-arch woodfloor
+arch flagstone
 x 15
 y 13
 end
@@ -4227,7 +4227,7 @@ arch bwall_1_2
 x 15
 y 13
 end
-arch woodfloor
+arch flagstone
 x 15
 y 14
 end
@@ -4236,7 +4236,7 @@ x 15
 y 14
 connected 1
 end
-arch woodfloor
+arch flagstone
 x 15
 y 15
 end
@@ -4244,15 +4244,15 @@ arch bwall_1_3
 x 15
 y 15
 end
-arch woodfloor
+arch flagstone
 x 15
 y 16
 end
-arch woodfloor
+arch flagstone
 x 15
 y 17
 end
-arch woodfloor
+arch flagstone
 x 15
 y 18
 end
@@ -4260,7 +4260,7 @@ arch bwall_2_1_2
 x 15
 y 18
 end
-arch woodfloor
+arch flagstone
 x 15
 y 19
 end
@@ -4268,15 +4268,15 @@ arch generate_beholder
 x 15
 y 19
 end
-arch woodfloor
+arch flagstone
 x 15
 y 20
 end
-arch woodfloor
+arch flagstone
 x 15
 y 21
 end
-arch woodfloor
+arch flagstone
 x 15
 y 22
 end
@@ -4284,15 +4284,15 @@ arch random_treasure
 x 15
 y 22
 end
-arch woodfloor
+arch flagstone
 x 15
 y 23
 end
-arch woodfloor
+arch flagstone
 x 15
 y 24
 end
-arch woodfloor
+arch flagstone
 x 15
 y 25
 end
@@ -4300,7 +4300,7 @@ arch generate_beholder
 x 15
 y 25
 end
-arch woodfloor
+arch flagstone
 x 15
 y 26
 end
@@ -4336,7 +4336,7 @@ arch shop_empty
 x 15
 y 33
 end
-arch woodfloor
+arch flagstone
 x 15
 y 34
 end
@@ -4376,7 +4376,7 @@ arch shop_empty
 x 15
 y 42
 end
-arch woodfloor
+arch flagstone
 x 15
 y 43
 end
@@ -4479,7 +4479,7 @@ arch brush
 x 16
 y 5
 end
-arch woodfloor
+arch flagstone
 x 16
 y 6
 end
@@ -4487,7 +4487,7 @@ arch bwall_2_1_2
 x 16
 y 6
 end
-arch woodfloor
+arch flagstone
 x 16
 y 7
 end
@@ -4495,11 +4495,11 @@ arch beholder
 x 16
 y 7
 end
-arch woodfloor
+arch flagstone
 x 16
 y 8
 end
-arch woodfloor
+arch flagstone
 x 16
 y 9
 end
@@ -4512,23 +4512,23 @@ x 16
 y 10
 connected 9
 end
-arch woodfloor
+arch flagstone
 x 16
 y 10
 end
-arch woodfloor
+arch flagstone
 x 16
 y 11
 end
-arch woodfloor
+arch flagstone
 x 16
 y 12
 end
-arch woodfloor
+arch flagstone
 x 16
 y 13
 end
-arch woodfloor
+arch flagstone
 x 16
 y 14
 end
@@ -4536,7 +4536,7 @@ arch beholder
 x 16
 y 14
 end
-arch woodfloor
+arch flagstone
 x 16
 y 15
 end
@@ -4549,15 +4549,15 @@ arch spinner_-90
 x 16
 y 16
 end
-arch woodfloor
+arch flagstone
 x 16
 y 16
 end
-arch woodfloor
+arch flagstone
 x 16
 y 17
 end
-arch woodfloor
+arch flagstone
 x 16
 y 18
 end
@@ -4565,35 +4565,35 @@ arch bwall_2_1_2
 x 16
 y 18
 end
-arch woodfloor
+arch flagstone
 x 16
 y 19
 end
-arch woodfloor
+arch flagstone
 x 16
 y 20
 end
-arch woodfloor
+arch flagstone
 x 16
 y 21
 end
-arch woodfloor
+arch flagstone
 x 16
 y 22
 end
-arch woodfloor
+arch flagstone
 x 16
 y 23
 end
-arch woodfloor
+arch flagstone
 x 16
 y 24
 end
-arch woodfloor
+arch flagstone
 x 16
 y 25
 end
-arch woodfloor
+arch flagstone
 x 16
 y 26
 end
@@ -4629,7 +4629,7 @@ arch shop_empty
 x 16
 y 33
 end
-arch woodfloor
+arch flagstone
 x 16
 y 34
 end
@@ -4669,7 +4669,7 @@ arch shop_empty
 x 16
 y 42
 end
-arch woodfloor
+arch flagstone
 x 16
 y 43
 end
@@ -4772,7 +4772,7 @@ arch brush
 x 17
 y 5
 end
-arch woodfloor
+arch flagstone
 x 17
 y 6
 end
@@ -4780,39 +4780,39 @@ arch bwall_2_1_2
 x 17
 y 6
 end
-arch woodfloor
+arch flagstone
 x 17
 y 7
 end
-arch woodfloor
+arch flagstone
 x 17
 y 8
 end
-arch woodfloor
+arch flagstone
 x 17
 y 9
 end
-arch woodfloor
+arch flagstone
 x 17
 y 10
 end
-arch woodfloor
+arch flagstone
 x 17
 y 11
 end
-arch woodfloor
+arch flagstone
 x 17
 y 12
 end
-arch woodfloor
+arch flagstone
 x 17
 y 13
 end
-arch woodfloor
+arch flagstone
 x 17
 y 14
 end
-arch woodfloor
+arch flagstone
 x 17
 y 15
 end
@@ -4820,15 +4820,15 @@ arch bwall_1_4
 x 17
 y 15
 end
-arch woodfloor
+arch flagstone
 x 17
 y 16
 end
-arch woodfloor
+arch flagstone
 x 17
 y 17
 end
-arch woodfloor
+arch flagstone
 x 17
 y 18
 end
@@ -4836,35 +4836,35 @@ arch bwall_2_1_2
 x 17
 y 18
 end
-arch woodfloor
+arch flagstone
 x 17
 y 19
 end
-arch woodfloor
+arch flagstone
 x 17
 y 20
 end
-arch woodfloor
+arch flagstone
 x 17
 y 21
 end
-arch woodfloor
+arch flagstone
 x 17
 y 22
 end
-arch woodfloor
+arch flagstone
 x 17
 y 23
 end
-arch woodfloor
+arch flagstone
 x 17
 y 24
 end
-arch woodfloor
+arch flagstone
 x 17
 y 25
 end
-arch woodfloor
+arch flagstone
 x 17
 y 26
 end
@@ -4924,7 +4924,7 @@ arch shop_empty
 x 17
 y 33
 end
-arch woodfloor
+arch flagstone
 x 17
 y 34
 end
@@ -4988,7 +4988,7 @@ arch shop_empty
 x 17
 y 42
 end
-arch woodfloor
+arch flagstone
 x 17
 y 43
 end
@@ -5091,7 +5091,7 @@ arch brush
 x 18
 y 5
 end
-arch woodfloor
+arch flagstone
 x 18
 y 6
 end
@@ -5099,39 +5099,39 @@ arch bwall_2_1_2
 x 18
 y 6
 end
-arch woodfloor
+arch flagstone
 x 18
 y 7
 end
-arch woodfloor
+arch flagstone
 x 18
 y 8
 end
-arch woodfloor
+arch flagstone
 x 18
 y 9
 end
-arch woodfloor
+arch flagstone
 x 18
 y 10
 end
-arch woodfloor
+arch flagstone
 x 18
 y 11
 end
-arch woodfloor
+arch flagstone
 x 18
 y 12
 end
-arch woodfloor
+arch flagstone
 x 18
 y 13
 end
-arch woodfloor
+arch flagstone
 x 18
 y 14
 end
-arch woodfloor
+arch flagstone
 x 18
 y 15
 end
@@ -5139,15 +5139,15 @@ arch bwall_2_1_2
 x 18
 y 15
 end
-arch woodfloor
+arch flagstone
 x 18
 y 16
 end
-arch woodfloor
+arch flagstone
 x 18
 y 17
 end
-arch woodfloor
+arch flagstone
 x 18
 y 18
 end
@@ -5155,11 +5155,11 @@ arch bwall_2_1_2
 x 18
 y 18
 end
-arch woodfloor
+arch flagstone
 x 18
 y 19
 end
-arch woodfloor
+arch flagstone
 x 18
 y 20
 end
@@ -5167,19 +5167,19 @@ arch random_treasure
 x 18
 y 20
 end
-arch woodfloor
+arch flagstone
 x 18
 y 21
 end
-arch woodfloor
+arch flagstone
 x 18
 y 22
 end
-arch woodfloor
+arch flagstone
 x 18
 y 23
 end
-arch woodfloor
+arch flagstone
 x 18
 y 24
 end
@@ -5187,11 +5187,11 @@ arch random_treasure
 x 18
 y 24
 end
-arch woodfloor
+arch flagstone
 x 18
 y 25
 end
-arch woodfloor
+arch flagstone
 x 18
 y 26
 end
@@ -5239,7 +5239,7 @@ arch shop_empty
 x 18
 y 33
 end
-arch woodfloor
+arch flagstone
 x 18
 y 34
 end
@@ -5291,7 +5291,7 @@ arch shop_empty
 x 18
 y 42
 end
-arch woodfloor
+arch flagstone
 x 18
 y 43
 end
@@ -5394,7 +5394,7 @@ arch brush
 x 19
 y 5
 end
-arch woodfloor
+arch flagstone
 x 19
 y 6
 end
@@ -5402,39 +5402,39 @@ arch bwall_2_1_2
 x 19
 y 6
 end
-arch woodfloor
+arch flagstone
 x 19
 y 7
 end
-arch woodfloor
+arch flagstone
 x 19
 y 8
 end
-arch woodfloor
+arch flagstone
 x 19
 y 9
 end
-arch woodfloor
+arch flagstone
 x 19
 y 10
 end
-arch woodfloor
+arch flagstone
 x 19
 y 11
 end
-arch woodfloor
+arch flagstone
 x 19
 y 12
 end
-arch woodfloor
+arch flagstone
 x 19
 y 13
 end
-arch woodfloor
+arch flagstone
 x 19
 y 14
 end
-arch woodfloor
+arch flagstone
 x 19
 y 15
 end
@@ -5442,15 +5442,15 @@ arch bwall_2_1_2
 x 19
 y 15
 end
-arch woodfloor
+arch flagstone
 x 19
 y 16
 end
-arch woodfloor
+arch flagstone
 x 19
 y 17
 end
-arch woodfloor
+arch flagstone
 x 19
 y 18
 end
@@ -5458,27 +5458,27 @@ arch bwall_2_1_2
 x 19
 y 18
 end
-arch woodfloor
+arch flagstone
 x 19
 y 19
 end
-arch woodfloor
+arch flagstone
 x 19
 y 20
 end
-arch woodfloor
+arch flagstone
 x 19
 y 21
 end
-arch woodfloor
+arch flagstone
 x 19
 y 22
 end
-arch woodfloor
+arch flagstone
 x 19
 y 23
 end
-arch woodfloor
+arch flagstone
 x 19
 y 24
 end
@@ -5486,11 +5486,11 @@ arch random_treasure
 x 19
 y 24
 end
-arch woodfloor
+arch flagstone
 x 19
 y 25
 end
-arch woodfloor
+arch flagstone
 x 19
 y 26
 end
@@ -5540,7 +5540,7 @@ arch shop_empty
 x 19
 y 33
 end
-arch woodfloor
+arch flagstone
 x 19
 y 34
 end
@@ -5594,7 +5594,7 @@ arch shop_empty
 x 19
 y 42
 end
-arch woodfloor
+arch flagstone
 x 19
 y 43
 end
@@ -5697,7 +5697,7 @@ arch brush
 x 20
 y 5
 end
-arch woodfloor
+arch flagstone
 x 20
 y 6
 end
@@ -5705,11 +5705,11 @@ arch bwall_2_1_2
 x 20
 y 6
 end
-arch woodfloor
+arch flagstone
 x 20
 y 7
 end
-arch woodfloor
+arch flagstone
 x 20
 y 8
 end
@@ -5717,15 +5717,15 @@ arch random_treasure
 x 20
 y 8
 end
-arch woodfloor
+arch flagstone
 x 20
 y 9
 end
-arch woodfloor
+arch flagstone
 x 20
 y 10
 end
-arch woodfloor
+arch flagstone
 x 20
 y 11
 end
@@ -5733,19 +5733,19 @@ arch random_treasure
 x 20
 y 11
 end
-arch woodfloor
+arch flagstone
 x 20
 y 12
 end
-arch woodfloor
+arch flagstone
 x 20
 y 13
 end
-arch woodfloor
+arch flagstone
 x 20
 y 14
 end
-arch woodfloor
+arch flagstone
 x 20
 y 15
 end
@@ -5753,15 +5753,15 @@ arch bwall_2_1_2
 x 20
 y 15
 end
-arch woodfloor
+arch flagstone
 x 20
 y 16
 end
-arch woodfloor
+arch flagstone
 x 20
 y 17
 end
-arch woodfloor
+arch flagstone
 x 20
 y 18
 end
@@ -5769,35 +5769,35 @@ arch bwall_2_1_2
 x 20
 y 18
 end
-arch woodfloor
+arch flagstone
 x 20
 y 19
 end
-arch woodfloor
+arch flagstone
 x 20
 y 20
 end
-arch woodfloor
+arch flagstone
 x 20
 y 21
 end
-arch woodfloor
+arch flagstone
 x 20
 y 22
 end
-arch woodfloor
+arch flagstone
 x 20
 y 23
 end
-arch woodfloor
+arch flagstone
 x 20
 y 24
 end
-arch woodfloor
+arch flagstone
 x 20
 y 25
 end
-arch woodfloor
+arch flagstone
 x 20
 y 26
 end
@@ -5805,7 +5805,7 @@ arch bwall_3_3
 x 20
 y 26
 end
-arch woodfloor
+arch flagstone
 x 20
 y 27
 end
@@ -5813,7 +5813,7 @@ arch bwall_2_1_1
 x 20
 y 27
 end
-arch woodfloor
+arch flagstone
 x 20
 y 28
 end
@@ -5821,7 +5821,7 @@ arch bwall_2_1_1
 x 20
 y 28
 end
-arch woodfloor
+arch flagstone
 x 20
 y 29
 end
@@ -5829,7 +5829,7 @@ arch bwall_2_1_1
 x 20
 y 29
 end
-arch woodfloor
+arch flagstone
 x 20
 y 30
 end
@@ -5837,7 +5837,7 @@ arch bwall_1_2
 x 20
 y 30
 end
-arch woodfloor
+arch flagstone
 x 20
 y 31
 end
@@ -5850,7 +5850,7 @@ y 31
 move_on all
 blocksview 1
 end
-arch woodfloor
+arch flagstone
 x 20
 y 32
 end
@@ -5858,7 +5858,7 @@ arch bwall_1_1
 x 20
 y 32
 end
-arch woodfloor
+arch flagstone
 x 20
 y 33
 end
@@ -5866,7 +5866,7 @@ arch bwall_2_1_1
 x 20
 y 33
 end
-arch woodfloor
+arch flagstone
 x 20
 y 34
 end
@@ -5874,7 +5874,7 @@ arch bwall_3_4
 x 20
 y 34
 end
-arch woodfloor
+arch flagstone
 x 20
 y 35
 end
@@ -5882,7 +5882,7 @@ arch bwall_2_1_1
 x 20
 y 35
 end
-arch woodfloor
+arch flagstone
 x 20
 y 36
 end
@@ -5890,7 +5890,7 @@ arch bwall_2_1_1
 x 20
 y 36
 end
-arch woodfloor
+arch flagstone
 x 20
 y 37
 end
@@ -5898,7 +5898,7 @@ arch bwall_1_2
 x 20
 y 37
 end
-arch woodfloor
+arch flagstone
 x 20
 y 38
 end
@@ -5911,7 +5911,7 @@ y 38
 move_on all
 blocksview 1
 end
-arch woodfloor
+arch flagstone
 x 20
 y 39
 end
@@ -5919,7 +5919,7 @@ arch bwall_1_1
 x 20
 y 39
 end
-arch woodfloor
+arch flagstone
 x 20
 y 40
 end
@@ -5927,7 +5927,7 @@ arch bwall_2_1_1
 x 20
 y 40
 end
-arch woodfloor
+arch flagstone
 x 20
 y 41
 end
@@ -5935,7 +5935,7 @@ arch bwall_2_1_1
 x 20
 y 41
 end
-arch woodfloor
+arch flagstone
 x 20
 y 42
 end
@@ -5943,7 +5943,7 @@ arch bwall_2_1_1
 x 20
 y 42
 end
-arch woodfloor
+arch flagstone
 x 20
 y 43
 end
@@ -6080,7 +6080,7 @@ arch brush
 x 21
 y 5
 end
-arch woodfloor
+arch flagstone
 x 21
 y 6
 end
@@ -6088,31 +6088,31 @@ arch bwall_2_1_2
 x 21
 y 6
 end
-arch woodfloor
+arch flagstone
 x 21
 y 7
 end
-arch woodfloor
+arch flagstone
 x 21
 y 8
 end
-arch woodfloor
+arch flagstone
 x 21
 y 9
 end
-arch woodfloor
+arch flagstone
 x 21
 y 10
 end
-arch woodfloor
+arch flagstone
 x 21
 y 11
 end
-arch woodfloor
+arch flagstone
 x 21
 y 12
 end
-arch woodfloor
+arch flagstone
 x 21
 y 13
 end
@@ -6125,7 +6125,7 @@ x 21
 y 14
 connected 10
 end
-arch woodfloor
+arch flagstone
 x 21
 y 14
 end
@@ -6133,7 +6133,7 @@ arch beholder
 x 21
 y 14
 end
-arch woodfloor
+arch flagstone
 x 21
 y 15
 end
@@ -6141,15 +6141,15 @@ arch bwall_2_1_2
 x 21
 y 15
 end
-arch woodfloor
+arch flagstone
 x 21
 y 16
 end
-arch woodfloor
+arch flagstone
 x 21
 y 17
 end
-arch woodfloor
+arch flagstone
 x 21
 y 18
 end
@@ -6157,7 +6157,7 @@ arch bwall_2_1_2
 x 21
 y 18
 end
-arch woodfloor
+arch flagstone
 x 21
 y 19
 end
@@ -6165,27 +6165,27 @@ arch generate_dragon
 x 21
 y 19
 end
-arch woodfloor
+arch flagstone
 x 21
 y 20
 end
-arch woodfloor
+arch flagstone
 x 21
 y 21
 end
-arch woodfloor
+arch flagstone
 x 21
 y 22
 end
-arch woodfloor
+arch flagstone
 x 21
 y 23
 end
-arch woodfloor
+arch flagstone
 x 21
 y 24
 end
-arch woodfloor
+arch flagstone
 x 21
 y 25
 end
@@ -6193,7 +6193,7 @@ arch generate_dragon
 x 21
 y 25
 end
-arch woodfloor
+arch flagstone
 x 21
 y 26
 end
@@ -6201,19 +6201,19 @@ arch bwall_2_1_2
 x 21
 y 26
 end
-arch woodfloor
+arch flagstone
 x 21
 y 27
 end
-arch woodfloor
+arch flagstone
 x 21
 y 28
 end
-arch woodfloor
+arch flagstone
 x 21
 y 29
 end
-arch woodfloor
+arch flagstone
 x 21
 y 30
 end
@@ -6222,11 +6222,11 @@ name Hanz
 x 21
 y 30
 end
-arch woodfloor
+arch flagstone
 x 21
 y 31
 end
-arch woodfloor
+arch flagstone
 x 21
 y 32
 end
@@ -6235,23 +6235,23 @@ name Franz
 x 21
 y 32
 end
-arch woodfloor
+arch flagstone
 x 21
 y 33
 end
-arch woodfloor
+arch flagstone
 x 21
 y 34
 end
-arch woodfloor
+arch flagstone
 x 21
 y 35
 end
-arch woodfloor
+arch flagstone
 x 21
 y 36
 end
-arch woodfloor
+arch flagstone
 x 21
 y 37
 end
@@ -6260,11 +6260,11 @@ name Sigfred
 x 21
 y 37
 end
-arch woodfloor
+arch flagstone
 x 21
 y 38
 end
-arch woodfloor
+arch flagstone
 x 21
 y 39
 end
@@ -6273,19 +6273,19 @@ name Jonathan
 x 21
 y 39
 end
-arch woodfloor
+arch flagstone
 x 21
 y 40
 end
-arch woodfloor
+arch flagstone
 x 21
 y 41
 end
-arch woodfloor
+arch flagstone
 x 21
 y 42
 end
-arch woodfloor
+arch flagstone
 x 21
 y 43
 end
@@ -6388,7 +6388,7 @@ arch brush
 x 22
 y 5
 end
-arch woodfloor
+arch flagstone
 x 22
 y 6
 end
@@ -6396,27 +6396,27 @@ arch bwall_2_1_2
 x 22
 y 6
 end
-arch woodfloor
+arch flagstone
 x 22
 y 7
 end
-arch woodfloor
+arch flagstone
 x 22
 y 8
 end
-arch woodfloor
+arch flagstone
 x 22
 y 9
 end
-arch woodfloor
+arch flagstone
 x 22
 y 10
 end
-arch woodfloor
+arch flagstone
 x 22
 y 11
 end
-arch woodfloor
+arch flagstone
 x 22
 y 12
 end
@@ -6424,7 +6424,7 @@ arch beholder
 x 22
 y 12
 end
-arch woodfloor
+arch flagstone
 x 22
 y 13
 end
@@ -6432,7 +6432,7 @@ arch bwall_2_2_2
 x 22
 y 13
 end
-arch woodfloor
+arch flagstone
 x 22
 y 14
 end
@@ -6440,7 +6440,7 @@ arch bwall_2_1_1
 x 22
 y 14
 end
-arch woodfloor
+arch flagstone
 x 22
 y 15
 end
@@ -6448,15 +6448,15 @@ arch bwall_3_1
 x 22
 y 15
 end
-arch woodfloor
+arch flagstone
 x 22
 y 16
 end
-arch woodfloor
+arch flagstone
 x 22
 y 17
 end
-arch woodfloor
+arch flagstone
 x 22
 y 18
 end
@@ -6464,7 +6464,7 @@ arch bwall_3_3
 x 22
 y 18
 end
-arch woodfloor
+arch flagstone
 x 22
 y 19
 end
@@ -6472,7 +6472,7 @@ arch bwall_2_1_1
 x 22
 y 19
 end
-arch woodfloor
+arch flagstone
 x 22
 y 20
 end
@@ -6480,7 +6480,7 @@ arch bwall_2_1_1
 x 22
 y 20
 end
-arch woodfloor
+arch flagstone
 x 22
 y 21
 end
@@ -6488,7 +6488,7 @@ arch bwall_2_2_1
 x 22
 y 21
 end
-arch woodfloor
+arch flagstone
 x 22
 y 22
 end
@@ -6498,7 +6498,7 @@ y 22
 speed 0.500000
 connected 8
 end
-arch woodfloor
+arch flagstone
 x 22
 y 23
 end
@@ -6506,7 +6506,7 @@ arch bwall_2_2_2
 x 22
 y 23
 end
-arch woodfloor
+arch flagstone
 x 22
 y 24
 end
@@ -6514,7 +6514,7 @@ arch bwall_2_1_1
 x 22
 y 24
 end
-arch woodfloor
+arch flagstone
 x 22
 y 25
 end
@@ -6522,7 +6522,7 @@ arch bwall_2_1_1
 x 22
 y 25
 end
-arch woodfloor
+arch flagstone
 x 22
 y 26
 end
@@ -6530,71 +6530,71 @@ arch bwall_3_1
 x 22
 y 26
 end
-arch woodfloor
+arch flagstone
 x 22
 y 27
 end
-arch woodfloor
+arch flagstone
 x 22
 y 28
 end
-arch woodfloor
+arch flagstone
 x 22
 y 29
 end
-arch woodfloor
+arch flagstone
 x 22
 y 30
 end
-arch woodfloor
+arch flagstone
 x 22
 y 31
 end
-arch woodfloor
+arch flagstone
 x 22
 y 32
 end
-arch woodfloor
+arch flagstone
 x 22
 y 33
 end
-arch woodfloor
+arch flagstone
 x 22
 y 34
 end
-arch woodfloor
+arch flagstone
 x 22
 y 35
 end
-arch woodfloor
+arch flagstone
 x 22
 y 36
 end
-arch woodfloor
+arch flagstone
 x 22
 y 37
 end
-arch woodfloor
+arch flagstone
 x 22
 y 38
 end
-arch woodfloor
+arch flagstone
 x 22
 y 39
 end
-arch woodfloor
+arch flagstone
 x 22
 y 40
 end
-arch woodfloor
+arch flagstone
 x 22
 y 41
 end
-arch woodfloor
+arch flagstone
 x 22
 y 42
 end
-arch woodfloor
+arch flagstone
 x 22
 y 43
 end
@@ -6697,7 +6697,7 @@ arch brush
 x 23
 y 5
 end
-arch woodfloor
+arch flagstone
 x 23
 y 6
 end
@@ -6705,27 +6705,27 @@ arch bwall_1_3
 x 23
 y 6
 end
-arch woodfloor
+arch flagstone
 x 23
 y 7
 end
-arch woodfloor
+arch flagstone
 x 23
 y 8
 end
-arch woodfloor
+arch flagstone
 x 23
 y 9
 end
-arch woodfloor
+arch flagstone
 x 23
 y 10
 end
-arch woodfloor
+arch flagstone
 x 23
 y 11
 end
-arch woodfloor
+arch flagstone
 x 23
 y 12
 end
@@ -6733,7 +6733,7 @@ arch bwall_2_2_2
 x 23
 y 12
 end
-arch woodfloor
+arch flagstone
 x 23
 y 13
 end
@@ -6741,7 +6741,7 @@ arch bwall_2_2_4
 x 23
 y 13
 end
-arch woodfloor
+arch flagstone
 x 23
 y 14
 end
@@ -6749,7 +6749,7 @@ arch chest
 x 23
 y 14
 end
-arch woodfloor
+arch flagstone
 x 23
 y 15
 end
@@ -6757,15 +6757,15 @@ arch bwall_1_3
 x 23
 y 15
 end
-arch woodfloor
+arch flagstone
 x 23
 y 16
 end
-arch woodfloor
+arch flagstone
 x 23
 y 17
 end
-arch woodfloor
+arch flagstone
 x 23
 y 18
 end
@@ -6773,7 +6773,7 @@ arch bwall_1_3
 x 23
 y 18
 end
-arch woodfloor
+arch flagstone
 x 23
 y 19
 end
@@ -6788,7 +6788,7 @@ name Lukas
 x 23
 y 19
 end
-arch woodfloor
+arch flagstone
 x 23
 y 20
 end
@@ -6803,7 +6803,7 @@ name Efraim
 x 23
 y 20
 end
-arch woodfloor
+arch flagstone
 x 23
 y 21
 end
@@ -6811,7 +6811,7 @@ arch bwall_1_3
 x 23
 y 21
 end
-arch woodfloor
+arch flagstone
 x 23
 y 22
 end
@@ -6821,7 +6821,7 @@ y 22
 speed 0.500000
 connected 7
 end
-arch woodfloor
+arch flagstone
 x 23
 y 23
 end
@@ -6829,7 +6829,7 @@ arch bwall_1_3
 x 23
 y 23
 end
-arch woodfloor
+arch flagstone
 x 23
 y 24
 end
@@ -6840,7 +6840,7 @@ sp 21
 x 23
 y 24
 end
-arch woodfloor
+arch flagstone
 x 23
 y 25
 end
@@ -6851,7 +6851,7 @@ sp -1
 x 23
 y 25
 end
-arch woodfloor
+arch flagstone
 x 23
 y 26
 end
@@ -6859,7 +6859,7 @@ arch bwall_1_3
 x 23
 y 26
 end
-arch woodfloor
+arch flagstone
 x 23
 y 27
 end
@@ -6868,67 +6868,67 @@ name John
 x 23
 y 27
 end
-arch woodfloor
+arch flagstone
 x 23
 y 28
 end
-arch woodfloor
+arch flagstone
 x 23
 y 29
 end
-arch woodfloor
+arch flagstone
 x 23
 y 30
 end
-arch woodfloor
+arch flagstone
 x 23
 y 31
 end
-arch woodfloor
+arch flagstone
 x 23
 y 32
 end
-arch woodfloor
+arch flagstone
 x 23
 y 33
 end
-arch woodfloor
+arch flagstone
 x 23
 y 34
 end
-arch woodfloor
+arch flagstone
 x 23
 y 35
 end
-arch woodfloor
+arch flagstone
 x 23
 y 36
 end
-arch woodfloor
+arch flagstone
 x 23
 y 37
 end
-arch woodfloor
+arch flagstone
 x 23
 y 38
 end
-arch woodfloor
+arch flagstone
 x 23
 y 39
 end
-arch woodfloor
+arch flagstone
 x 23
 y 40
 end
-arch woodfloor
+arch flagstone
 x 23
 y 41
 end
-arch woodfloor
+arch flagstone
 x 23
 y 42
 end
-arch woodfloor
+arch flagstone
 x 23
 y 43
 end
@@ -7056,7 +7056,7 @@ arch brush
 x 24
 y 5
 end
-arch woodfloor
+arch flagstone
 x 24
 y 6
 end
@@ -7065,27 +7065,27 @@ x 24
 y 6
 connected 10
 end
-arch woodfloor
+arch flagstone
 x 24
 y 7
 end
-arch woodfloor
+arch flagstone
 x 24
 y 8
 end
-arch woodfloor
+arch flagstone
 x 24
 y 9
 end
-arch woodfloor
+arch flagstone
 x 24
 y 10
 end
-arch woodfloor
+arch flagstone
 x 24
 y 11
 end
-arch woodfloor
+arch flagstone
 x 24
 y 12
 end
@@ -7093,19 +7093,19 @@ arch bwall_2_1_2
 x 24
 y 12
 end
-arch woodfloor
+arch flagstone
 x 24
 y 13
 end
-arch woodfloor
+arch flagstone
 x 24
 y 14
 end
-arch woodfloor
+arch flagstone
 x 24
 y 15
 end
-arch woodfloor
+arch flagstone
 x 24
 y 16
 end
@@ -7113,111 +7113,111 @@ arch spinner_90
 x 24
 y 17
 end
-arch woodfloor
+arch flagstone
 x 24
 y 17
 end
-arch woodfloor
+arch flagstone
 x 24
 y 18
 end
-arch woodfloor
+arch flagstone
 x 24
 y 19
 end
-arch woodfloor
+arch flagstone
 x 24
 y 20
 end
-arch woodfloor
+arch flagstone
 x 24
 y 21
 end
-arch woodfloor
+arch flagstone
 x 24
 y 22
 end
-arch woodfloor
+arch flagstone
 x 24
 y 23
 end
-arch woodfloor
+arch flagstone
 x 24
 y 24
 end
-arch woodfloor
+arch flagstone
 x 24
 y 25
 end
-arch woodfloor
+arch flagstone
 x 24
 y 26
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 27
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 28
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 29
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 30
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 31
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 32
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 33
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 34
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 35
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 36
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 37
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 38
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 39
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 40
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 41
 end
-arch woodfloor
+arch afloor_magenta_left
 x 24
 y 42
 end
-arch woodfloor
+arch flagstone
 x 24
 y 43
 end
@@ -7328,7 +7328,7 @@ arch brush
 x 25
 y 5
 end
-arch woodfloor
+arch flagstone
 x 25
 y 6
 end
@@ -7337,15 +7337,15 @@ x 25
 y 6
 connected 1
 end
-arch woodfloor
+arch flagstone
 x 25
 y 7
 end
-arch woodfloor
+arch flagstone
 x 25
 y 8
 end
-arch woodfloor
+arch flagstone
 x 25
 y 9
 end
@@ -7356,7 +7356,7 @@ sp 5
 x 25
 y 9
 end
-arch woodfloor
+arch flagstone
 x 25
 y 10
 end
@@ -7367,11 +7367,11 @@ sp -1
 x 25
 y 10
 end
-arch woodfloor
+arch flagstone
 x 25
 y 11
 end
-arch woodfloor
+arch flagstone
 x 25
 y 12
 end
@@ -7386,43 +7386,43 @@ sp 10
 x 25
 y 13
 end
-arch woodfloor
+arch flagstone
 x 25
 y 13
 end
-arch woodfloor
+arch flagstone
 x 25
 y 14
 end
-arch woodfloor
+arch flagstone
 x 25
 y 15
 end
-arch woodfloor
+arch flagstone
 x 25
 y 16
 end
-arch woodfloor
+arch flagstone
 x 25
 y 17
 end
-arch woodfloor
+arch flagstone
 x 25
 y 18
 end
-arch woodfloor
+arch flagstone
 x 25
 y 19
 end
-arch woodfloor
+arch flagstone
 x 25
 y 20
 end
-arch woodfloor
+arch flagstone
 x 25
 y 21
 end
-arch woodfloor
+arch flagstone
 x 25
 y 22
 end
@@ -7431,87 +7431,87 @@ name the Guardian
 x 25
 y 22
 end
-arch woodfloor
+arch flagstone
 x 25
 y 23
 end
-arch woodfloor
+arch flagstone
 x 25
 y 24
 end
-arch woodfloor
+arch flagstone
 x 25
 y 25
 end
-arch woodfloor
+arch flagstone
 x 25
 y 26
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 27
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 28
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 29
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 30
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 31
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 32
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 33
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 34
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 35
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 36
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 37
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 38
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 39
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 40
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 41
 end
-arch woodfloor
+arch blackmarble
 x 25
 y 42
 end
-arch woodfloor
+arch flagstone
 x 25
 y 43
 end
@@ -7622,7 +7622,7 @@ arch brush
 x 26
 y 5
 end
-arch woodfloor
+arch flagstone
 x 26
 y 6
 end
@@ -7631,27 +7631,27 @@ x 26
 y 6
 connected 9
 end
-arch woodfloor
+arch flagstone
 x 26
 y 7
 end
-arch woodfloor
+arch flagstone
 x 26
 y 8
 end
-arch woodfloor
+arch flagstone
 x 26
 y 9
 end
-arch woodfloor
+arch flagstone
 x 26
 y 10
 end
-arch woodfloor
+arch flagstone
 x 26
 y 11
 end
-arch woodfloor
+arch flagstone
 x 26
 y 12
 end
@@ -7659,19 +7659,19 @@ arch bwall_2_1_2
 x 26
 y 12
 end
-arch woodfloor
+arch flagstone
 x 26
 y 13
 end
-arch woodfloor
+arch flagstone
 x 26
 y 14
 end
-arch woodfloor
+arch flagstone
 x 26
 y 15
 end
-arch woodfloor
+arch flagstone
 x 26
 y 16
 end
@@ -7679,111 +7679,111 @@ arch spinner_-90
 x 26
 y 17
 end
-arch woodfloor
+arch flagstone
 x 26
 y 17
 end
-arch woodfloor
+arch flagstone
 x 26
 y 18
 end
-arch woodfloor
+arch flagstone
 x 26
 y 19
 end
-arch woodfloor
+arch flagstone
 x 26
 y 20
 end
-arch woodfloor
+arch flagstone
 x 26
 y 21
 end
-arch woodfloor
+arch flagstone
 x 26
 y 22
 end
-arch woodfloor
+arch flagstone
 x 26
 y 23
 end
-arch woodfloor
+arch flagstone
 x 26
 y 24
 end
-arch woodfloor
+arch flagstone
 x 26
 y 25
 end
-arch woodfloor
+arch flagstone
 x 26
 y 26
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 27
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 28
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 29
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 30
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 31
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 32
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 33
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 34
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 35
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 36
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 37
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 38
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 39
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 40
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 41
 end
-arch woodfloor
+arch afloor_magenta_right
 x 26
 y 42
 end
-arch woodfloor
+arch flagstone
 x 26
 y 43
 end
@@ -7894,7 +7894,7 @@ arch brush
 x 27
 y 5
 end
-arch woodfloor
+arch flagstone
 x 27
 y 6
 end
@@ -7902,27 +7902,27 @@ arch bwall_1_4
 x 27
 y 6
 end
-arch woodfloor
+arch flagstone
 x 27
 y 7
 end
-arch woodfloor
+arch flagstone
 x 27
 y 8
 end
-arch woodfloor
+arch flagstone
 x 27
 y 9
 end
-arch woodfloor
+arch flagstone
 x 27
 y 10
 end
-arch woodfloor
+arch flagstone
 x 27
 y 11
 end
-arch woodfloor
+arch flagstone
 x 27
 y 12
 end
@@ -7930,7 +7930,7 @@ arch bwall_2_2_3
 x 27
 y 12
 end
-arch woodfloor
+arch flagstone
 x 27
 y 13
 end
@@ -7938,7 +7938,7 @@ arch bwall_2_2_1
 x 27
 y 13
 end
-arch woodfloor
+arch flagstone
 x 27
 y 14
 end
@@ -7946,7 +7946,7 @@ arch chest
 x 27
 y 14
 end
-arch woodfloor
+arch flagstone
 x 27
 y 15
 end
@@ -7954,15 +7954,15 @@ arch bwall_1_4
 x 27
 y 15
 end
-arch woodfloor
+arch flagstone
 x 27
 y 16
 end
-arch woodfloor
+arch flagstone
 x 27
 y 17
 end
-arch woodfloor
+arch flagstone
 x 27
 y 18
 end
@@ -7970,7 +7970,7 @@ arch bwall_1_4
 x 27
 y 18
 end
-arch woodfloor
+arch flagstone
 x 27
 y 19
 end
@@ -7985,7 +7985,7 @@ name Peter
 x 27
 y 19
 end
-arch woodfloor
+arch flagstone
 x 27
 y 20
 end
@@ -8000,7 +8000,7 @@ name Matteus
 x 27
 y 20
 end
-arch woodfloor
+arch flagstone
 x 27
 y 21
 end
@@ -8008,7 +8008,7 @@ arch bwall_1_4
 x 27
 y 21
 end
-arch woodfloor
+arch flagstone
 x 27
 y 22
 end
@@ -8018,7 +8018,7 @@ y 22
 speed 0.500000
 connected 6
 end
-arch woodfloor
+arch flagstone
 x 27
 y 23
 end
@@ -8026,7 +8026,7 @@ arch bwall_1_4
 x 27
 y 23
 end
-arch woodfloor
+arch flagstone
 x 27
 y 24
 end
@@ -8037,7 +8037,7 @@ sp 21
 x 27
 y 24
 end
-arch woodfloor
+arch flagstone
 x 27
 y 25
 end
@@ -8048,7 +8048,7 @@ sp -1
 x 27
 y 25
 end
-arch woodfloor
+arch flagstone
 x 27
 y 26
 end
@@ -8056,7 +8056,7 @@ arch bwall_1_4
 x 27
 y 26
 end
-arch woodfloor
+arch flagstone
 x 27
 y 27
 end
@@ -8065,67 +8065,67 @@ name Fred
 x 27
 y 27
 end
-arch woodfloor
+arch flagstone
 x 27
 y 28
 end
-arch woodfloor
+arch flagstone
 x 27
 y 29
 end
-arch woodfloor
+arch flagstone
 x 27
 y 30
 end
-arch woodfloor
+arch flagstone
 x 27
 y 31
 end
-arch woodfloor
+arch flagstone
 x 27
 y 32
 end
-arch woodfloor
+arch flagstone
 x 27
 y 33
 end
-arch woodfloor
+arch flagstone
 x 27
 y 34
 end
-arch woodfloor
+arch flagstone
 x 27
 y 35
 end
-arch woodfloor
+arch flagstone
 x 27
 y 36
 end
-arch woodfloor
+arch flagstone
 x 27
 y 37
 end
-arch woodfloor
+arch flagstone
 x 27
 y 38
 end
-arch woodfloor
+arch flagstone
 x 27
 y 39
 end
-arch woodfloor
+arch flagstone
 x 27
 y 40
 end
-arch woodfloor
+arch flagstone
 x 27
 y 41
 end
-arch woodfloor
+arch flagstone
 x 27
 y 42
 end
-arch woodfloor
+arch flagstone
 x 27
 y 43
 end
@@ -8251,7 +8251,7 @@ arch brush
 x 28
 y 5
 end
-arch woodfloor
+arch flagstone
 x 28
 y 6
 end
@@ -8264,27 +8264,27 @@ x 28
 y 7
 connected 1
 end
-arch woodfloor
+arch flagstone
 x 28
 y 7
 end
-arch woodfloor
+arch flagstone
 x 28
 y 8
 end
-arch woodfloor
+arch flagstone
 x 28
 y 9
 end
-arch woodfloor
+arch flagstone
 x 28
 y 10
 end
-arch woodfloor
+arch flagstone
 x 28
 y 11
 end
-arch woodfloor
+arch flagstone
 x 28
 y 12
 end
@@ -8292,7 +8292,7 @@ arch beholder
 x 28
 y 12
 end
-arch woodfloor
+arch flagstone
 x 28
 y 13
 end
@@ -8300,7 +8300,7 @@ arch bwall_2_2_3
 x 28
 y 13
 end
-arch woodfloor
+arch flagstone
 x 28
 y 14
 end
@@ -8308,7 +8308,7 @@ arch bwall_2_1_1
 x 28
 y 14
 end
-arch woodfloor
+arch flagstone
 x 28
 y 15
 end
@@ -8316,15 +8316,15 @@ arch bwall_3_1
 x 28
 y 15
 end
-arch woodfloor
+arch flagstone
 x 28
 y 16
 end
-arch woodfloor
+arch flagstone
 x 28
 y 17
 end
-arch woodfloor
+arch flagstone
 x 28
 y 18
 end
@@ -8332,7 +8332,7 @@ arch bwall_3_3
 x 28
 y 18
 end
-arch woodfloor
+arch flagstone
 x 28
 y 19
 end
@@ -8340,7 +8340,7 @@ arch bwall_2_1_1
 x 28
 y 19
 end
-arch woodfloor
+arch flagstone
 x 28
 y 20
 end
@@ -8348,7 +8348,7 @@ arch bwall_2_1_1
 x 28
 y 20
 end
-arch woodfloor
+arch flagstone
 x 28
 y 21
 end
@@ -8356,7 +8356,7 @@ arch bwall_2_2_4
 x 28
 y 21
 end
-arch woodfloor
+arch flagstone
 x 28
 y 22
 end
@@ -8366,7 +8366,7 @@ y 22
 speed 0.500000
 connected 5
 end
-arch woodfloor
+arch flagstone
 x 28
 y 23
 end
@@ -8374,7 +8374,7 @@ arch bwall_2_2_3
 x 28
 y 23
 end
-arch woodfloor
+arch flagstone
 x 28
 y 24
 end
@@ -8382,7 +8382,7 @@ arch bwall_2_1_1
 x 28
 y 24
 end
-arch woodfloor
+arch flagstone
 x 28
 y 25
 end
@@ -8390,7 +8390,7 @@ arch bwall_2_1_1
 x 28
 y 25
 end
-arch woodfloor
+arch flagstone
 x 28
 y 26
 end
@@ -8398,71 +8398,71 @@ arch bwall_3_1
 x 28
 y 26
 end
-arch woodfloor
+arch flagstone
 x 28
 y 27
 end
-arch woodfloor
+arch flagstone
 x 28
 y 28
 end
-arch woodfloor
+arch flagstone
 x 28
 y 29
 end
-arch woodfloor
+arch flagstone
 x 28
 y 30
 end
-arch woodfloor
+arch flagstone
 x 28
 y 31
 end
-arch woodfloor
+arch flagstone
 x 28
 y 32
 end
-arch woodfloor
+arch flagstone
 x 28
 y 33
 end
-arch woodfloor
+arch flagstone
 x 28
 y 34
 end
-arch woodfloor
+arch flagstone
 x 28
 y 35
 end
-arch woodfloor
+arch flagstone
 x 28
 y 36
 end
-arch woodfloor
+arch flagstone
 x 28
 y 37
 end
-arch woodfloor
+arch flagstone
 x 28
 y 38
 end
-arch woodfloor
+arch flagstone
 x 28
 y 39
 end
-arch woodfloor
+arch flagstone
 x 28
 y 40
 end
-arch woodfloor
+arch flagstone
 x 28
 y 41
 end
-arch woodfloor
+arch flagstone
 x 28
 y 42
 end
-arch woodfloor
+arch flagstone
 x 28
 y 43
 end
@@ -8565,7 +8565,7 @@ arch brush
 x 29
 y 5
 end
-arch woodfloor
+arch flagstone
 x 29
 y 6
 end
@@ -8573,15 +8573,15 @@ arch bwall_2_1_2
 x 29
 y 6
 end
-arch woodfloor
+arch flagstone
 x 29
 y 7
 end
-arch woodfloor
+arch flagstone
 x 29
 y 8
 end
-arch woodfloor
+arch flagstone
 x 29
 y 9
 end
@@ -8589,23 +8589,23 @@ arch random_treasure
 x 29
 y 9
 end
-arch woodfloor
+arch flagstone
 x 29
 y 10
 end
-arch woodfloor
+arch flagstone
 x 29
 y 11
 end
-arch woodfloor
+arch flagstone
 x 29
 y 12
 end
-arch woodfloor
+arch flagstone
 x 29
 y 13
 end
-arch woodfloor
+arch flagstone
 x 29
 y 14
 end
@@ -8613,7 +8613,7 @@ arch beholder
 x 29
 y 14
 end
-arch woodfloor
+arch flagstone
 x 29
 y 15
 end
@@ -8621,15 +8621,15 @@ arch bwall_2_1_2
 x 29
 y 15
 end
-arch woodfloor
+arch flagstone
 x 29
 y 16
 end
-arch woodfloor
+arch flagstone
 x 29
 y 17
 end
-arch woodfloor
+arch flagstone
 x 29
 y 18
 end
@@ -8637,7 +8637,7 @@ arch bwall_2_1_2
 x 29
 y 18
 end
-arch woodfloor
+arch flagstone
 x 29
 y 19
 end
@@ -8645,27 +8645,27 @@ arch generate_dragon
 x 29
 y 19
 end
-arch woodfloor
+arch flagstone
 x 29
 y 20
 end
-arch woodfloor
+arch flagstone
 x 29
 y 21
 end
-arch woodfloor
+arch flagstone
 x 29
 y 22
 end
-arch woodfloor
+arch flagstone
 x 29
 y 23
 end
-arch woodfloor
+arch flagstone
 x 29
 y 24
 end
-arch woodfloor
+arch flagstone
 x 29
 y 25
 end
@@ -8673,7 +8673,7 @@ arch generate_dragon
 x 29
 y 25
 end
-arch woodfloor
+arch flagstone
 x 29
 y 26
 end
@@ -8681,19 +8681,19 @@ arch bwall_2_1_2
 x 29
 y 26
 end
-arch woodfloor
+arch flagstone
 x 29
 y 27
 end
-arch woodfloor
+arch flagstone
 x 29
 y 28
 end
-arch woodfloor
+arch flagstone
 x 29
 y 29
 end
-arch woodfloor
+arch flagstone
 x 29
 y 30
 end
@@ -8702,11 +8702,11 @@ name Merinette
 x 29
 y 30
 end
-arch woodfloor
+arch flagstone
 x 29
 y 31
 end
-arch woodfloor
+arch flagstone
 x 29
 y 32
 end
@@ -8715,23 +8715,23 @@ name Roxette
 x 29
 y 32
 end
-arch woodfloor
+arch flagstone
 x 29
 y 33
 end
-arch woodfloor
+arch flagstone
 x 29
 y 34
 end
-arch woodfloor
+arch flagstone
 x 29
 y 35
 end
-arch woodfloor
+arch flagstone
 x 29
 y 36
 end
-arch woodfloor
+arch flagstone
 x 29
 y 37
 end
@@ -8740,11 +8740,11 @@ name Julius
 x 29
 y 37
 end
-arch woodfloor
+arch flagstone
 x 29
 y 38
 end
-arch woodfloor
+arch flagstone
 x 29
 y 39
 end
@@ -8753,19 +8753,19 @@ name Manfred
 x 29
 y 39
 end
-arch woodfloor
+arch flagstone
 x 29
 y 40
 end
-arch woodfloor
+arch flagstone
 x 29
 y 41
 end
-arch woodfloor
+arch flagstone
 x 29
 y 42
 end
-arch woodfloor
+arch flagstone
 x 29
 y 43
 end
@@ -8868,7 +8868,7 @@ arch brush
 x 30
 y 5
 end
-arch woodfloor
+arch flagstone
 x 30
 y 6
 end
@@ -8876,35 +8876,35 @@ arch bwall_2_1_2
 x 30
 y 6
 end
-arch woodfloor
+arch flagstone
 x 30
 y 7
 end
-arch woodfloor
+arch flagstone
 x 30
 y 8
 end
-arch woodfloor
+arch flagstone
 x 30
 y 9
 end
-arch woodfloor
+arch flagstone
 x 30
 y 10
 end
-arch woodfloor
+arch flagstone
 x 30
 y 11
 end
-arch woodfloor
+arch flagstone
 x 30
 y 12
 end
-arch woodfloor
+arch flagstone
 x 30
 y 13
 end
-arch woodfloor
+arch flagstone
 x 30
 y 14
 end
@@ -8912,7 +8912,7 @@ arch random_treasure
 x 30
 y 14
 end
-arch woodfloor
+arch flagstone
 x 30
 y 15
 end
@@ -8920,15 +8920,15 @@ arch bwall_2_1_2
 x 30
 y 15
 end
-arch woodfloor
+arch flagstone
 x 30
 y 16
 end
-arch woodfloor
+arch flagstone
 x 30
 y 17
 end
-arch woodfloor
+arch flagstone
 x 30
 y 18
 end
@@ -8936,35 +8936,35 @@ arch bwall_2_1_2
 x 30
 y 18
 end
-arch woodfloor
+arch flagstone
 x 30
 y 19
 end
-arch woodfloor
+arch flagstone
 x 30
 y 20
 end
-arch woodfloor
+arch flagstone
 x 30
 y 21
 end
-arch woodfloor
+arch flagstone
 x 30
 y 22
 end
-arch woodfloor
+arch flagstone
 x 30
 y 23
 end
-arch woodfloor
+arch flagstone
 x 30
 y 24
 end
-arch woodfloor
+arch flagstone
 x 30
 y 25
 end
-arch woodfloor
+arch flagstone
 x 30
 y 26
 end
@@ -8972,7 +8972,7 @@ arch bwall_3_3
 x 30
 y 26
 end
-arch woodfloor
+arch flagstone
 x 30
 y 27
 end
@@ -8980,7 +8980,7 @@ arch bwall_2_1_1
 x 30
 y 27
 end
-arch woodfloor
+arch flagstone
 x 30
 y 28
 end
@@ -8988,7 +8988,7 @@ arch bwall_2_1_1
 x 30
 y 28
 end
-arch woodfloor
+arch flagstone
 x 30
 y 29
 end
@@ -8996,7 +8996,7 @@ arch bwall_2_1_1
 x 30
 y 29
 end
-arch woodfloor
+arch flagstone
 x 30
 y 30
 end
@@ -9004,7 +9004,7 @@ arch bwall_1_2
 x 30
 y 30
 end
-arch woodfloor
+arch flagstone
 x 30
 y 31
 end
@@ -9017,7 +9017,7 @@ y 31
 move_on all
 blocksview 1
 end
-arch woodfloor
+arch flagstone
 x 30
 y 32
 end
@@ -9025,7 +9025,7 @@ arch bwall_1_1
 x 30
 y 32
 end
-arch woodfloor
+arch flagstone
 x 30
 y 33
 end
@@ -9033,7 +9033,7 @@ arch bwall_2_1_1
 x 30
 y 33
 end
-arch woodfloor
+arch flagstone
 x 30
 y 34
 end
@@ -9041,7 +9041,7 @@ arch bwall_3_2
 x 30
 y 34
 end
-arch woodfloor
+arch flagstone
 x 30
 y 35
 end
@@ -9049,7 +9049,7 @@ arch bwall_2_1_1
 x 30
 y 35
 end
-arch woodfloor
+arch flagstone
 x 30
 y 36
 end
@@ -9057,7 +9057,7 @@ arch bwall_2_1_1
 x 30
 y 36
 end
-arch woodfloor
+arch flagstone
 x 30
 y 37
 end
@@ -9065,7 +9065,7 @@ arch bwall_1_2
 x 30
 y 37
 end
-arch woodfloor
+arch flagstone
 x 30
 y 38
 end
@@ -9078,7 +9078,7 @@ y 38
 move_on all
 blocksview 1
 end
-arch woodfloor
+arch flagstone
 x 30
 y 39
 end
@@ -9086,7 +9086,7 @@ arch bwall_1_1
 x 30
 y 39
 end
-arch woodfloor
+arch flagstone
 x 30
 y 40
 end
@@ -9094,7 +9094,7 @@ arch bwall_2_1_1
 x 30
 y 40
 end
-arch woodfloor
+arch flagstone
 x 30
 y 41
 end
@@ -9102,7 +9102,7 @@ arch bwall_2_1_1
 x 30
 y 41
 end
-arch woodfloor
+arch flagstone
 x 30
 y 42
 end
@@ -9110,7 +9110,7 @@ arch bwall_2_1_1
 x 30
 y 42
 end
-arch woodfloor
+arch flagstone
 x 30
 y 43
 end
@@ -9246,7 +9246,7 @@ arch brush
 x 31
 y 5
 end
-arch woodfloor
+arch flagstone
 x 31
 y 6
 end
@@ -9254,23 +9254,23 @@ arch bwall_2_1_2
 x 31
 y 6
 end
-arch woodfloor
+arch flagstone
 x 31
 y 7
 end
-arch woodfloor
+arch flagstone
 x 31
 y 8
 end
-arch woodfloor
+arch flagstone
 x 31
 y 9
 end
-arch woodfloor
+arch flagstone
 x 31
 y 10
 end
-arch woodfloor
+arch flagstone
 x 31
 y 11
 end
@@ -9278,7 +9278,7 @@ arch random_treasure
 x 31
 y 11
 end
-arch woodfloor
+arch flagstone
 x 31
 y 12
 end
@@ -9286,15 +9286,15 @@ arch random_treasure
 x 31
 y 12
 end
-arch woodfloor
+arch flagstone
 x 31
 y 13
 end
-arch woodfloor
+arch flagstone
 x 31
 y 14
 end
-arch woodfloor
+arch flagstone
 x 31
 y 15
 end
@@ -9302,15 +9302,15 @@ arch bwall_2_1_2
 x 31
 y 15
 end
-arch woodfloor
+arch flagstone
 x 31
 y 16
 end
-arch woodfloor
+arch flagstone
 x 31
 y 17
 end
-arch woodfloor
+arch flagstone
 x 31
 y 18
 end
@@ -9318,35 +9318,35 @@ arch bwall_2_1_2
 x 31
 y 18
 end
-arch woodfloor
+arch flagstone
 x 31
 y 19
 end
-arch woodfloor
+arch flagstone
 x 31
 y 20
 end
-arch woodfloor
+arch flagstone
 x 31
 y 21
 end
-arch woodfloor
+arch flagstone
 x 31
 y 22
 end
-arch woodfloor
+arch flagstone
 x 31
 y 23
 end
-arch woodfloor
+arch flagstone
 x 31
 y 24
 end
-arch woodfloor
+arch flagstone
 x 31
 y 25
 end
-arch woodfloor
+arch flagstone
 x 31
 y 26
 end
@@ -9396,7 +9396,7 @@ arch shop_empty
 x 31
 y 33
 end
-arch woodfloor
+arch flagstone
 x 31
 y 34
 end
@@ -9450,7 +9450,7 @@ arch shop_empty
 x 31
 y 42
 end
-arch woodfloor
+arch flagstone
 x 31
 y 43
 end
@@ -9553,7 +9553,7 @@ arch brush
 x 32
 y 5
 end
-arch woodfloor
+arch flagstone
 x 32
 y 6
 end
@@ -9561,11 +9561,11 @@ arch bwall_2_1_2
 x 32
 y 6
 end
-arch woodfloor
+arch flagstone
 x 32
 y 7
 end
-arch woodfloor
+arch flagstone
 x 32
 y 8
 end
@@ -9573,31 +9573,31 @@ arch random_treasure
 x 32
 y 8
 end
-arch woodfloor
+arch flagstone
 x 32
 y 9
 end
-arch woodfloor
+arch flagstone
 x 32
 y 10
 end
-arch woodfloor
+arch flagstone
 x 32
 y 11
 end
-arch woodfloor
+arch flagstone
 x 32
 y 12
 end
-arch woodfloor
+arch flagstone
 x 32
 y 13
 end
-arch woodfloor
+arch flagstone
 x 32
 y 14
 end
-arch woodfloor
+arch flagstone
 x 32
 y 15
 end
@@ -9605,15 +9605,15 @@ arch bwall_1_3
 x 32
 y 15
 end
-arch woodfloor
+arch flagstone
 x 32
 y 16
 end
-arch woodfloor
+arch flagstone
 x 32
 y 17
 end
-arch woodfloor
+arch flagstone
 x 32
 y 18
 end
@@ -9621,11 +9621,11 @@ arch bwall_2_1_2
 x 32
 y 18
 end
-arch woodfloor
+arch flagstone
 x 32
 y 19
 end
-arch woodfloor
+arch flagstone
 x 32
 y 20
 end
@@ -9633,7 +9633,7 @@ arch random_treasure
 x 32
 y 20
 end
-arch woodfloor
+arch flagstone
 x 32
 y 21
 end
@@ -9641,15 +9641,15 @@ arch random_treasure
 x 32
 y 21
 end
-arch woodfloor
+arch flagstone
 x 32
 y 22
 end
-arch woodfloor
+arch flagstone
 x 32
 y 23
 end
-arch woodfloor
+arch flagstone
 x 32
 y 24
 end
@@ -9657,11 +9657,11 @@ arch random_treasure
 x 32
 y 24
 end
-arch woodfloor
+arch flagstone
 x 32
 y 25
 end
-arch woodfloor
+arch flagstone
 x 32
 y 26
 end
@@ -9709,7 +9709,7 @@ arch shop_empty
 x 32
 y 33
 end
-arch woodfloor
+arch flagstone
 x 32
 y 34
 end
@@ -9765,7 +9765,7 @@ arch shop_empty
 x 32
 y 42
 end
-arch woodfloor
+arch flagstone
 x 32
 y 43
 end
@@ -9880,7 +9880,7 @@ arch brush
 x 33
 y 5
 end
-arch woodfloor
+arch flagstone
 x 33
 y 6
 end
@@ -9888,7 +9888,7 @@ arch bwall_2_1_2
 x 33
 y 6
 end
-arch woodfloor
+arch flagstone
 x 33
 y 7
 end
@@ -9896,11 +9896,11 @@ arch beholder
 x 33
 y 7
 end
-arch woodfloor
+arch flagstone
 x 33
 y 8
 end
-arch woodfloor
+arch flagstone
 x 33
 y 9
 end
@@ -9913,23 +9913,23 @@ x 33
 y 10
 connected 9
 end
-arch woodfloor
+arch flagstone
 x 33
 y 10
 end
-arch woodfloor
+arch flagstone
 x 33
 y 11
 end
-arch woodfloor
+arch flagstone
 x 33
 y 12
 end
-arch woodfloor
+arch flagstone
 x 33
 y 13
 end
-arch woodfloor
+arch flagstone
 x 33
 y 14
 end
@@ -9937,7 +9937,7 @@ arch beholder
 x 33
 y 14
 end
-arch woodfloor
+arch flagstone
 x 33
 y 15
 end
@@ -9950,15 +9950,15 @@ arch spinner_90
 x 33
 y 16
 end
-arch woodfloor
+arch flagstone
 x 33
 y 16
 end
-arch woodfloor
+arch flagstone
 x 33
 y 17
 end
-arch woodfloor
+arch flagstone
 x 33
 y 18
 end
@@ -9966,27 +9966,27 @@ arch bwall_2_1_2
 x 33
 y 18
 end
-arch woodfloor
+arch flagstone
 x 33
 y 19
 end
-arch woodfloor
+arch flagstone
 x 33
 y 20
 end
-arch woodfloor
+arch flagstone
 x 33
 y 21
 end
-arch woodfloor
+arch flagstone
 x 33
 y 22
 end
-arch woodfloor
+arch flagstone
 x 33
 y 23
 end
-arch woodfloor
+arch flagstone
 x 33
 y 24
 end
@@ -9994,11 +9994,11 @@ arch random_treasure
 x 33
 y 24
 end
-arch woodfloor
+arch flagstone
 x 33
 y 25
 end
-arch woodfloor
+arch flagstone
 x 33
 y 26
 end
@@ -10058,7 +10058,7 @@ arch shop_empty
 x 33
 y 33
 end
-arch woodfloor
+arch flagstone
 x 33
 y 34
 end
@@ -10122,7 +10122,7 @@ arch shop_empty
 x 33
 y 42
 end
-arch woodfloor
+arch flagstone
 x 33
 y 43
 end
@@ -10225,7 +10225,7 @@ arch brush
 x 34
 y 5
 end
-arch woodfloor
+arch flagstone
 x 34
 y 6
 end
@@ -10233,7 +10233,7 @@ arch bwall_2_1_2
 x 34
 y 6
 end
-arch woodfloor
+arch flagstone
 x 34
 y 7
 end
@@ -10242,7 +10242,7 @@ x 34
 y 7
 connected 1
 end
-arch woodfloor
+arch flagstone
 x 34
 y 8
 end
@@ -10250,7 +10250,7 @@ arch bwall_1_1
 x 34
 y 8
 end
-arch woodfloor
+arch flagstone
 x 34
 y 9
 end
@@ -10258,7 +10258,7 @@ arch bwall_2_1_1
 x 34
 y 9
 end
-arch woodfloor
+arch flagstone
 x 34
 y 10
 end
@@ -10266,7 +10266,7 @@ arch bwall_2_1_1
 x 34
 y 10
 end
-arch woodfloor
+arch flagstone
 x 34
 y 11
 end
@@ -10274,7 +10274,7 @@ arch bwall_2_1_1
 x 34
 y 11
 end
-arch woodfloor
+arch flagstone
 x 34
 y 12
 end
@@ -10282,7 +10282,7 @@ arch bwall_2_1_1
 x 34
 y 12
 end
-arch woodfloor
+arch flagstone
 x 34
 y 13
 end
@@ -10290,7 +10290,7 @@ arch bwall_1_2
 x 34
 y 13
 end
-arch woodfloor
+arch flagstone
 x 34
 y 14
 end
@@ -10299,7 +10299,7 @@ x 34
 y 14
 connected 1
 end
-arch woodfloor
+arch flagstone
 x 34
 y 15
 end
@@ -10307,15 +10307,15 @@ arch bwall_1_4
 x 34
 y 15
 end
-arch woodfloor
+arch flagstone
 x 34
 y 16
 end
-arch woodfloor
+arch flagstone
 x 34
 y 17
 end
-arch woodfloor
+arch flagstone
 x 34
 y 18
 end
@@ -10323,19 +10323,19 @@ arch bwall_2_1_2
 x 34
 y 18
 end
-arch woodfloor
+arch flagstone
 x 34
 y 19
 end
-arch woodfloor
+arch flagstone
 x 34
 y 20
 end
-arch woodfloor
+arch flagstone
 x 34
 y 21
 end
-arch woodfloor
+arch flagstone
 x 34
 y 22
 end
@@ -10343,19 +10343,19 @@ arch random_treasure
 x 34
 y 22
 end
-arch woodfloor
+arch flagstone
 x 34
 y 23
 end
-arch woodfloor
+arch flagstone
 x 34
 y 24
 end
-arch woodfloor
+arch flagstone
 x 34
 y 25
 end
-arch woodfloor
+arch flagstone
 x 34
 y 26
 end
@@ -10391,7 +10391,7 @@ arch shop_empty
 x 34
 y 33
 end
-arch woodfloor
+arch flagstone
 x 34
 y 34
 end
@@ -10431,7 +10431,7 @@ arch shop_empty
 x 34
 y 42
 end
-arch woodfloor
+arch flagstone
 x 34
 y 43
 end
@@ -10546,7 +10546,7 @@ arch brush
 x 35
 y 5
 end
-arch woodfloor
+arch flagstone
 x 35
 y 6
 end
@@ -10554,7 +10554,7 @@ arch bwall_2_1_2
 x 35
 y 6
 end
-arch woodfloor
+arch flagstone
 x 35
 y 7
 end
@@ -10563,31 +10563,31 @@ name Grax the Demilich
 x 35
 y 7
 end
-arch woodfloor
+arch flagstone
 x 35
 y 8
 end
-arch woodfloor
+arch flagstone
 x 35
 y 9
 end
-arch woodfloor
+arch flagstone
 x 35
 y 10
 end
-arch woodfloor
+arch flagstone
 x 35
 y 11
 end
-arch woodfloor
+arch flagstone
 x 35
 y 12
 end
-arch woodfloor
+arch flagstone
 x 35
 y 13
 end
-arch woodfloor
+arch flagstone
 x 35
 y 14
 end
@@ -10596,7 +10596,7 @@ name Dorg the Demilich
 x 35
 y 14
 end
-arch woodfloor
+arch flagstone
 x 35
 y 15
 end
@@ -10604,15 +10604,15 @@ arch bwall_2_1_2
 x 35
 y 15
 end
-arch woodfloor
+arch flagstone
 x 35
 y 16
 end
-arch woodfloor
+arch flagstone
 x 35
 y 17
 end
-arch woodfloor
+arch flagstone
 x 35
 y 18
 end
@@ -10620,7 +10620,7 @@ arch bwall_2_1_2
 x 35
 y 18
 end
-arch woodfloor
+arch flagstone
 x 35
 y 19
 end
@@ -10628,27 +10628,27 @@ arch generate_beholder
 x 35
 y 19
 end
-arch woodfloor
+arch flagstone
 x 35
 y 20
 end
-arch woodfloor
+arch flagstone
 x 35
 y 21
 end
-arch woodfloor
+arch flagstone
 x 35
 y 22
 end
-arch woodfloor
+arch flagstone
 x 35
 y 23
 end
-arch woodfloor
+arch flagstone
 x 35
 y 24
 end
-arch woodfloor
+arch flagstone
 x 35
 y 25
 end
@@ -10656,7 +10656,7 @@ arch generate_beholder
 x 35
 y 25
 end
-arch woodfloor
+arch flagstone
 x 35
 y 26
 end
@@ -10692,7 +10692,7 @@ arch shop_empty
 x 35
 y 33
 end
-arch woodfloor
+arch flagstone
 x 35
 y 34
 end
@@ -10732,7 +10732,7 @@ arch shop_empty
 x 35
 y 42
 end
-arch woodfloor
+arch flagstone
 x 35
 y 43
 end
@@ -10835,7 +10835,7 @@ arch brush
 x 36
 y 5
 end
-arch woodfloor
+arch flagstone
 x 36
 y 6
 end
@@ -10843,39 +10843,39 @@ arch bwall_2_1_2
 x 36
 y 6
 end
-arch woodfloor
+arch flagstone
 x 36
 y 7
 end
-arch woodfloor
+arch flagstone
 x 36
 y 8
 end
-arch woodfloor
+arch flagstone
 x 36
 y 9
 end
-arch woodfloor
+arch flagstone
 x 36
 y 10
 end
-arch woodfloor
+arch flagstone
 x 36
 y 11
 end
-arch woodfloor
+arch flagstone
 x 36
 y 12
 end
-arch woodfloor
+arch flagstone
 x 36
 y 13
 end
-arch woodfloor
+arch flagstone
 x 36
 y 14
 end
-arch woodfloor
+arch flagstone
 x 36
 y 15
 end
@@ -10883,15 +10883,15 @@ arch bwall_2_1_2
 x 36
 y 15
 end
-arch woodfloor
+arch flagstone
 x 36
 y 16
 end
-arch woodfloor
+arch flagstone
 x 36
 y 17
 end
-arch woodfloor
+arch flagstone
 x 36
 y 18
 end
@@ -10899,7 +10899,7 @@ arch bwall_2_1_2
 x 36
 y 18
 end
-arch woodfloor
+arch flagstone
 x 36
 y 19
 end
@@ -10907,27 +10907,27 @@ arch generate_beholder
 x 36
 y 19
 end
-arch woodfloor
+arch flagstone
 x 36
 y 20
 end
-arch woodfloor
+arch flagstone
 x 36
 y 21
 end
-arch woodfloor
+arch flagstone
 x 36
 y 22
 end
-arch woodfloor
+arch flagstone
 x 36
 y 23
 end
-arch woodfloor
+arch flagstone
 x 36
 y 24
 end
-arch woodfloor
+arch flagstone
 x 36
 y 25
 end
@@ -10935,7 +10935,7 @@ arch generate_beholder
 x 36
 y 25
 end
-arch woodfloor
+arch flagstone
 x 36
 y 26
 end
@@ -10971,7 +10971,7 @@ arch shop_empty
 x 36
 y 33
 end
-arch woodfloor
+arch flagstone
 x 36
 y 34
 end
@@ -11011,7 +11011,7 @@ arch shop_empty
 x 36
 y 42
 end
-arch woodfloor
+arch flagstone
 x 36
 y 43
 end
@@ -11126,7 +11126,7 @@ arch brush
 x 37
 y 5
 end
-arch woodfloor
+arch flagstone
 x 37
 y 6
 end
@@ -11134,39 +11134,39 @@ arch bwall_2_1_2
 x 37
 y 6
 end
-arch woodfloor
+arch flagstone
 x 37
 y 7
 end
-arch woodfloor
+arch flagstone
 x 37
 y 8
 end
-arch woodfloor
+arch flagstone
 x 37
 y 9
 end
-arch woodfloor
+arch flagstone
 x 37
 y 10
 end
-arch woodfloor
+arch flagstone
 x 37
 y 11
 end
-arch woodfloor
+arch flagstone
 x 37
 y 12
 end
-arch woodfloor
+arch flagstone
 x 37
 y 13
 end
-arch woodfloor
+arch flagstone
 x 37
 y 14
 end
-arch woodfloor
+arch flagstone
 x 37
 y 15
 end
@@ -11174,15 +11174,15 @@ arch bwall_2_1_2
 x 37
 y 15
 end
-arch woodfloor
+arch flagstone
 x 37
 y 16
 end
-arch woodfloor
+arch flagstone
 x 37
 y 17
 end
-arch woodfloor
+arch flagstone
 x 37
 y 18
 end
@@ -11190,35 +11190,35 @@ arch bwall_2_1_2
 x 37
 y 18
 end
-arch woodfloor
+arch flagstone
 x 37
 y 19
 end
-arch woodfloor
+arch flagstone
 x 37
 y 20
 end
-arch woodfloor
+arch flagstone
 x 37
 y 21
 end
-arch woodfloor
+arch flagstone
 x 37
 y 22
 end
-arch woodfloor
+arch flagstone
 x 37
 y 23
 end
-arch woodfloor
+arch flagstone
 x 37
 y 24
 end
-arch woodfloor
+arch flagstone
 x 37
 y 25
 end
-arch woodfloor
+arch flagstone
 x 37
 y 26
 end
@@ -11254,7 +11254,7 @@ arch shop_empty
 x 37
 y 33
 end
-arch woodfloor
+arch flagstone
 x 37
 y 34
 end
@@ -11294,7 +11294,7 @@ arch shop_empty
 x 37
 y 42
 end
-arch woodfloor
+arch flagstone
 x 37
 y 43
 end
@@ -11397,7 +11397,7 @@ arch brush
 x 38
 y 5
 end
-arch woodfloor
+arch flagstone
 x 38
 y 6
 end
@@ -11405,39 +11405,39 @@ arch bwall_2_1_2
 x 38
 y 6
 end
-arch woodfloor
+arch flagstone
 x 38
 y 7
 end
-arch woodfloor
+arch flagstone
 x 38
 y 8
 end
-arch woodfloor
+arch flagstone
 x 38
 y 9
 end
-arch woodfloor
+arch flagstone
 x 38
 y 10
 end
-arch woodfloor
+arch flagstone
 x 38
 y 11
 end
-arch woodfloor
+arch flagstone
 x 38
 y 12
 end
-arch woodfloor
+arch flagstone
 x 38
 y 13
 end
-arch woodfloor
+arch flagstone
 x 38
 y 14
 end
-arch woodfloor
+arch flagstone
 x 38
 y 15
 end
@@ -11445,15 +11445,15 @@ arch bwall_2_1_2
 x 38
 y 15
 end
-arch woodfloor
+arch flagstone
 x 38
 y 16
 end
-arch woodfloor
+arch flagstone
 x 38
 y 17
 end
-arch woodfloor
+arch flagstone
 x 38
 y 18
 end
@@ -11461,15 +11461,15 @@ arch bwall_1_3
 x 38
 y 18
 end
-arch woodfloor
+arch flagstone
 x 38
 y 19
 end
-arch woodfloor
+arch flagstone
 x 38
 y 20
 end
-arch woodfloor
+arch flagstone
 x 38
 y 21
 end
@@ -11477,15 +11477,15 @@ arch random_treasure
 x 38
 y 21
 end
-arch woodfloor
+arch flagstone
 x 38
 y 22
 end
-arch woodfloor
+arch flagstone
 x 38
 y 23
 end
-arch woodfloor
+arch flagstone
 x 38
 y 24
 end
@@ -11493,11 +11493,11 @@ arch random_treasure
 x 38
 y 24
 end
-arch woodfloor
+arch flagstone
 x 38
 y 25
 end
-arch woodfloor
+arch flagstone
 x 38
 y 26
 end
@@ -11533,7 +11533,7 @@ arch shop_empty
 x 38
 y 33
 end
-arch woodfloor
+arch flagstone
 x 38
 y 34
 end
@@ -11573,7 +11573,7 @@ arch shop_empty
 x 38
 y 42
 end
-arch woodfloor
+arch flagstone
 x 38
 y 43
 end
@@ -11688,7 +11688,7 @@ arch brush
 x 39
 y 5
 end
-arch woodfloor
+arch flagstone
 x 39
 y 6
 end
@@ -11696,39 +11696,39 @@ arch bwall_2_1_2
 x 39
 y 6
 end
-arch woodfloor
+arch flagstone
 x 39
 y 7
 end
-arch woodfloor
+arch flagstone
 x 39
 y 8
 end
-arch woodfloor
+arch flagstone
 x 39
 y 9
 end
-arch woodfloor
+arch flagstone
 x 39
 y 10
 end
-arch woodfloor
+arch flagstone
 x 39
 y 11
 end
-arch woodfloor
+arch flagstone
 x 39
 y 12
 end
-arch woodfloor
+arch flagstone
 x 39
 y 13
 end
-arch woodfloor
+arch flagstone
 x 39
 y 14
 end
-arch woodfloor
+arch flagstone
 x 39
 y 15
 end
@@ -11736,15 +11736,15 @@ arch bwall_2_1_2
 x 39
 y 15
 end
-arch woodfloor
+arch flagstone
 x 39
 y 16
 end
-arch woodfloor
+arch flagstone
 x 39
 y 17
 end
-arch woodfloor
+arch flagstone
 x 39
 y 18
 end
@@ -11754,35 +11754,35 @@ y 18
 speed 0.500000
 connected 5
 end
-arch woodfloor
+arch flagstone
 x 39
 y 19
 end
-arch woodfloor
+arch flagstone
 x 39
 y 20
 end
-arch woodfloor
+arch flagstone
 x 39
 y 21
 end
-arch woodfloor
+arch flagstone
 x 39
 y 22
 end
-arch woodfloor
+arch flagstone
 x 39
 y 23
 end
-arch woodfloor
+arch flagstone
 x 39
 y 24
 end
-arch woodfloor
+arch flagstone
 x 39
 y 25
 end
-arch woodfloor
+arch flagstone
 x 39
 y 26
 end
@@ -11818,7 +11818,7 @@ arch shop_empty
 x 39
 y 33
 end
-arch woodfloor
+arch flagstone
 x 39
 y 34
 end
@@ -11858,7 +11858,7 @@ arch shop_empty
 x 39
 y 42
 end
-arch woodfloor
+arch flagstone
 x 39
 y 43
 end
@@ -11961,7 +11961,7 @@ arch brush
 x 40
 y 5
 end
-arch woodfloor
+arch flagstone
 x 40
 y 6
 end
@@ -11969,39 +11969,39 @@ arch bwall_2_1_2
 x 40
 y 6
 end
-arch woodfloor
+arch flagstone
 x 40
 y 7
 end
-arch woodfloor
+arch flagstone
 x 40
 y 8
 end
-arch woodfloor
+arch flagstone
 x 40
 y 9
 end
-arch woodfloor
+arch flagstone
 x 40
 y 10
 end
-arch woodfloor
+arch flagstone
 x 40
 y 11
 end
-arch woodfloor
+arch flagstone
 x 40
 y 12
 end
-arch woodfloor
+arch flagstone
 x 40
 y 13
 end
-arch woodfloor
+arch flagstone
 x 40
 y 14
 end
-arch woodfloor
+arch flagstone
 x 40
 y 15
 end
@@ -12009,15 +12009,15 @@ arch bwall_2_1_2
 x 40
 y 15
 end
-arch woodfloor
+arch flagstone
 x 40
 y 16
 end
-arch woodfloor
+arch flagstone
 x 40
 y 17
 end
-arch woodfloor
+arch flagstone
 x 40
 y 18
 end
@@ -12025,35 +12025,35 @@ arch bwall_1_4
 x 40
 y 18
 end
-arch woodfloor
+arch flagstone
 x 40
 y 19
 end
-arch woodfloor
+arch flagstone
 x 40
 y 20
 end
-arch woodfloor
+arch flagstone
 x 40
 y 21
 end
-arch woodfloor
+arch flagstone
 x 40
 y 22
 end
-arch woodfloor
+arch flagstone
 x 40
 y 23
 end
-arch woodfloor
+arch flagstone
 x 40
 y 24
 end
-arch woodfloor
+arch flagstone
 x 40
 y 25
 end
-arch woodfloor
+arch flagstone
 x 40
 y 26
 end
@@ -12089,7 +12089,7 @@ arch shop_empty
 x 40
 y 33
 end
-arch woodfloor
+arch flagstone
 x 40
 y 34
 end
@@ -12129,7 +12129,7 @@ arch shop_empty
 x 40
 y 42
 end
-arch woodfloor
+arch flagstone
 x 40
 y 43
 end
@@ -12240,7 +12240,7 @@ arch brush
 x 41
 y 5
 end
-arch woodfloor
+arch flagstone
 x 41
 y 6
 end
@@ -12248,39 +12248,39 @@ arch bwall_2_1_2
 x 41
 y 6
 end
-arch woodfloor
+arch flagstone
 x 41
 y 7
 end
-arch woodfloor
+arch flagstone
 x 41
 y 8
 end
-arch woodfloor
+arch flagstone
 x 41
 y 9
 end
-arch woodfloor
+arch flagstone
 x 41
 y 10
 end
-arch woodfloor
+arch flagstone
 x 41
 y 11
 end
-arch woodfloor
+arch flagstone
 x 41
 y 12
 end
-arch woodfloor
+arch flagstone
 x 41
 y 13
 end
-arch woodfloor
+arch flagstone
 x 41
 y 14
 end
-arch woodfloor
+arch flagstone
 x 41
 y 15
 end
@@ -12288,7 +12288,7 @@ arch bwall_2_1_2
 x 41
 y 15
 end
-arch woodfloor
+arch flagstone
 x 41
 y 16
 end
@@ -12297,7 +12297,7 @@ x 41
 y 16
 connected 9
 end
-arch woodfloor
+arch flagstone
 x 41
 y 17
 end
@@ -12306,7 +12306,7 @@ x 41
 y 17
 connected 10
 end
-arch woodfloor
+arch flagstone
 x 41
 y 18
 end
@@ -12314,15 +12314,15 @@ arch bwall_2_1_2
 x 41
 y 18
 end
-arch woodfloor
+arch flagstone
 x 41
 y 19
 end
-arch woodfloor
+arch flagstone
 x 41
 y 20
 end
-arch woodfloor
+arch flagstone
 x 41
 y 21
 end
@@ -12330,7 +12330,7 @@ arch random_treasure
 x 41
 y 21
 end
-arch woodfloor
+arch flagstone
 x 41
 y 22
 end
@@ -12338,19 +12338,19 @@ arch random_treasure
 x 41
 y 22
 end
-arch woodfloor
+arch flagstone
 x 41
 y 23
 end
-arch woodfloor
+arch flagstone
 x 41
 y 24
 end
-arch woodfloor
+arch flagstone
 x 41
 y 25
 end
-arch woodfloor
+arch flagstone
 x 41
 y 26
 end
@@ -12386,7 +12386,7 @@ arch shop_empty
 x 41
 y 33
 end
-arch woodfloor
+arch flagstone
 x 41
 y 34
 end
@@ -12426,7 +12426,7 @@ arch shop_empty
 x 41
 y 42
 end
-arch woodfloor
+arch flagstone
 x 41
 y 43
 end
@@ -12529,7 +12529,7 @@ arch brush
 x 42
 y 5
 end
-arch woodfloor
+arch flagstone
 x 42
 y 6
 end
@@ -12537,7 +12537,7 @@ arch bwall_2_1_2
 x 42
 y 6
 end
-arch woodfloor
+arch flagstone
 x 42
 y 7
 end
@@ -12545,7 +12545,7 @@ arch generate_scorpion
 x 42
 y 7
 end
-arch woodfloor
+arch flagstone
 x 42
 y 8
 end
@@ -12556,27 +12556,27 @@ sp 2
 x 42
 y 8
 end
-arch woodfloor
+arch flagstone
 x 42
 y 9
 end
-arch woodfloor
+arch flagstone
 x 42
 y 10
 end
-arch woodfloor
+arch flagstone
 x 42
 y 11
 end
-arch woodfloor
+arch flagstone
 x 42
 y 12
 end
-arch woodfloor
+arch flagstone
 x 42
 y 13
 end
-arch woodfloor
+arch flagstone
 x 42
 y 14
 end
@@ -12584,7 +12584,7 @@ arch generate_scorpion
 x 42
 y 14
 end
-arch woodfloor
+arch flagstone
 x 42
 y 15
 end
@@ -12592,7 +12592,7 @@ arch bwall_2_1_2
 x 42
 y 15
 end
-arch woodfloor
+arch flagstone
 x 42
 y 16
 end
@@ -12602,7 +12602,7 @@ y 16
 arch spell_small_fireball
 end
 end
-arch woodfloor
+arch flagstone
 x 42
 y 17
 end
@@ -12612,7 +12612,7 @@ y 17
 arch spell_small_fireball
 end
 end
-arch woodfloor
+arch flagstone
 x 42
 y 18
 end
@@ -12620,7 +12620,7 @@ arch bwall_2_1_2
 x 42
 y 18
 end
-arch woodfloor
+arch flagstone
 x 42
 y 19
 end
@@ -12628,27 +12628,27 @@ arch generate_dragon
 x 42
 y 19
 end
-arch woodfloor
+arch flagstone
 x 42
 y 20
 end
-arch woodfloor
+arch flagstone
 x 42
 y 21
 end
-arch woodfloor
+arch flagstone
 x 42
 y 22
 end
-arch woodfloor
+arch flagstone
 x 42
 y 23
 end
-arch woodfloor
+arch flagstone
 x 42
 y 24
 end
-arch woodfloor
+arch flagstone
 x 42
 y 25
 end
@@ -12656,7 +12656,7 @@ arch generate_dragon
 x 42
 y 25
 end
-arch woodfloor
+arch flagstone
 x 42
 y 26
 end
@@ -12692,7 +12692,7 @@ arch shop_empty
 x 42
 y 33
 end
-arch woodfloor
+arch flagstone
 x 42
 y 34
 end
@@ -12732,7 +12732,7 @@ arch shop_empty
 x 42
 y 42
 end
-arch woodfloor
+arch flagstone
 x 42
 y 43
 end
@@ -12851,7 +12851,7 @@ arch brush
 x 43
 y 5
 end
-arch woodfloor
+arch flagstone
 x 43
 y 6
 end
@@ -12859,7 +12859,7 @@ arch bwall_2_2_3
 x 43
 y 6
 end
-arch woodfloor
+arch flagstone
 x 43
 y 7
 end
@@ -12867,7 +12867,7 @@ arch bwall_2_1_1
 x 43
 y 7
 end
-arch woodfloor
+arch flagstone
 x 43
 y 8
 end
@@ -12875,7 +12875,7 @@ arch bwall_2_1_1
 x 43
 y 8
 end
-arch woodfloor
+arch flagstone
 x 43
 y 9
 end
@@ -12883,7 +12883,7 @@ arch bwall_2_1_1
 x 43
 y 9
 end
-arch woodfloor
+arch flagstone
 x 43
 y 10
 end
@@ -12891,7 +12891,7 @@ arch bwall_2_1_1
 x 43
 y 10
 end
-arch woodfloor
+arch flagstone
 x 43
 y 11
 end
@@ -12899,7 +12899,7 @@ arch bwall_2_1_1
 x 43
 y 11
 end
-arch woodfloor
+arch flagstone
 x 43
 y 12
 end
@@ -12907,7 +12907,7 @@ arch bwall_2_1_1
 x 43
 y 12
 end
-arch woodfloor
+arch flagstone
 x 43
 y 13
 end
@@ -12915,7 +12915,7 @@ arch bwall_2_1_1
 x 43
 y 13
 end
-arch woodfloor
+arch flagstone
 x 43
 y 14
 end
@@ -12923,7 +12923,7 @@ arch bwall_2_1_1
 x 43
 y 14
 end
-arch woodfloor
+arch flagstone
 x 43
 y 15
 end
@@ -12931,7 +12931,7 @@ arch bwall_3_4
 x 43
 y 15
 end
-arch woodfloor
+arch flagstone
 x 43
 y 16
 end
@@ -12939,7 +12939,7 @@ arch bwall_2_1_1
 x 43
 y 16
 end
-arch woodfloor
+arch flagstone
 x 43
 y 17
 end
@@ -12947,7 +12947,7 @@ arch bwall_2_1_1
 x 43
 y 17
 end
-arch woodfloor
+arch flagstone
 x 43
 y 18
 end
@@ -12955,7 +12955,7 @@ arch bwall_3_4
 x 43
 y 18
 end
-arch woodfloor
+arch flagstone
 x 43
 y 19
 end
@@ -12963,7 +12963,7 @@ arch bwall_2_1_1
 x 43
 y 19
 end
-arch woodfloor
+arch flagstone
 x 43
 y 20
 end
@@ -12971,7 +12971,7 @@ arch bwall_2_1_1
 x 43
 y 20
 end
-arch woodfloor
+arch flagstone
 x 43
 y 21
 end
@@ -12979,7 +12979,7 @@ arch bwall_2_1_1
 x 43
 y 21
 end
-arch woodfloor
+arch flagstone
 x 43
 y 22
 end
@@ -12987,7 +12987,7 @@ arch bwall_2_1_1
 x 43
 y 22
 end
-arch woodfloor
+arch flagstone
 x 43
 y 23
 end
@@ -12995,7 +12995,7 @@ arch bwall_2_1_1
 x 43
 y 23
 end
-arch woodfloor
+arch flagstone
 x 43
 y 24
 end
@@ -13003,7 +13003,7 @@ arch bwall_2_1_1
 x 43
 y 24
 end
-arch woodfloor
+arch flagstone
 x 43
 y 25
 end
@@ -13011,7 +13011,7 @@ arch bwall_2_1_1
 x 43
 y 25
 end
-arch woodfloor
+arch flagstone
 x 43
 y 26
 end
@@ -13019,7 +13019,7 @@ arch bwall_3_4
 x 43
 y 26
 end
-arch woodfloor
+arch flagstone
 x 43
 y 27
 end
@@ -13027,7 +13027,7 @@ arch bwall_2_1_1
 x 43
 y 27
 end
-arch woodfloor
+arch flagstone
 x 43
 y 28
 end
@@ -13035,7 +13035,7 @@ arch bwall_2_1_1
 x 43
 y 28
 end
-arch woodfloor
+arch flagstone
 x 43
 y 29
 end
@@ -13043,7 +13043,7 @@ arch bwall_2_1_1
 x 43
 y 29
 end
-arch woodfloor
+arch flagstone
 x 43
 y 30
 end
@@ -13051,7 +13051,7 @@ arch bwall_2_1_1
 x 43
 y 30
 end
-arch woodfloor
+arch flagstone
 x 43
 y 31
 end
@@ -13059,7 +13059,7 @@ arch bwall_2_1_1
 x 43
 y 31
 end
-arch woodfloor
+arch flagstone
 x 43
 y 32
 end
@@ -13067,7 +13067,7 @@ arch bwall_2_1_1
 x 43
 y 32
 end
-arch woodfloor
+arch flagstone
 x 43
 y 33
 end
@@ -13075,7 +13075,7 @@ arch bwall_2_1_1
 x 43
 y 33
 end
-arch woodfloor
+arch flagstone
 x 43
 y 34
 end
@@ -13083,7 +13083,7 @@ arch bwall_3_4
 x 43
 y 34
 end
-arch woodfloor
+arch flagstone
 x 43
 y 35
 end
@@ -13091,7 +13091,7 @@ arch bwall_2_1_1
 x 43
 y 35
 end
-arch woodfloor
+arch flagstone
 x 43
 y 36
 end
@@ -13099,7 +13099,7 @@ arch bwall_2_1_1
 x 43
 y 36
 end
-arch woodfloor
+arch flagstone
 x 43
 y 37
 end
@@ -13107,7 +13107,7 @@ arch bwall_2_1_1
 x 43
 y 37
 end
-arch woodfloor
+arch flagstone
 x 43
 y 38
 end
@@ -13115,7 +13115,7 @@ arch bwall_2_1_1
 x 43
 y 38
 end
-arch woodfloor
+arch flagstone
 x 43
 y 39
 end
@@ -13123,7 +13123,7 @@ arch bwall_2_1_1
 x 43
 y 39
 end
-arch woodfloor
+arch flagstone
 x 43
 y 40
 end
@@ -13131,7 +13131,7 @@ arch bwall_2_1_1
 x 43
 y 40
 end
-arch woodfloor
+arch flagstone
 x 43
 y 41
 end
@@ -13139,7 +13139,7 @@ arch bwall_2_1_1
 x 43
 y 41
 end
-arch woodfloor
+arch flagstone
 x 43
 y 42
 end
@@ -13147,7 +13147,7 @@ arch bwall_2_1_1
 x 43
 y 42
 end
-arch woodfloor
+arch flagstone
 x 43
 y 43
 end
