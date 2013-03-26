@@ -6124,7 +6124,7 @@ arch flagstone
 x 21
 y 13
 end
-arch woodfloor
+arch flagstone
 x 21
 y 14
 end
@@ -7111,11 +7111,11 @@ arch flagstone
 x 24
 y 12
 end
-arch cwall_2_1_2
-x 24
-y 12
-end
 arch flagstone
+x 24
+y 13
+end
+arch cwall_2_1_2
 x 24
 y 13
 end
@@ -7397,10 +7397,6 @@ arch flagstone
 x 25
 y 12
 end
-arch cwall_2_1_2
-x 25
-y 12
-end
 arch exit
 slaying main
 hp 25
@@ -7409,6 +7405,10 @@ x 25
 y 13
 end
 arch flagstone
+x 25
+y 13
+end
+arch cwall_2_1_2
 x 25
 y 13
 end
@@ -7698,11 +7698,11 @@ arch flagstone
 x 26
 y 12
 end
-arch cwall_2_1_2
-x 26
-y 12
-end
 arch flagstone
+x 26
+y 13
+end
+arch cwall_2_1_2
 x 26
 y 13
 end
@@ -7969,15 +7969,11 @@ arch flagstone
 x 27
 y 12
 end
-arch cwall_2_2_3
-x 27
-y 12
-end
 arch flagstone
 x 27
 y 13
 end
-arch cwall_2_2_1
+arch cwall_2_1_2
 x 27
 y 13
 end
