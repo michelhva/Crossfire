@@ -8,7 +8,7 @@ enter_x 5
 enter_y 34
 msg
 Created:  1994-10-11
-Modified: 2012-05-01 Rick Tanner
+Modified: 2013-03-25 Karla Stenger
 endmsg
 end
 arch cobblestones2
@@ -660,6 +660,10 @@ arch swall_2_1_2
 x 3
 y 12
 end
+arch dungeon_magic
+x 3
+y 12
+end
 arch woodlarge
 x 3
 y 13
@@ -769,6 +773,10 @@ x 3
 y 26
 end
 arch swall_2_1_2
+x 3
+y 26
+end
+arch dungeon_magic
 x 3
 y 26
 end
@@ -895,11 +903,19 @@ arch swall_2_2_3
 x 4
 y 12
 end
+arch dungeon_magic
+x 4
+y 12
+end
 arch woodfloor
 x 4
 y 13
 end
 arch swall_2_1_1
+x 4
+y 13
+end
+arch dungeon_magic
 x 4
 y 13
 end
@@ -911,11 +927,19 @@ arch swall_2_1_1
 x 4
 y 14
 end
+arch dungeon_magic
+x 4
+y 14
+end
 arch woodfloor
 x 4
 y 15
 end
 arch swall_2_1_1
+x 4
+y 15
+end
+arch dungeon_magic
 x 4
 y 15
 end
@@ -924,6 +948,10 @@ x 4
 y 16
 end
 arch swall_2_1_1
+x 4
+y 16
+end
+arch dungeon_magic
 x 4
 y 16
 end
@@ -932,6 +960,10 @@ x 4
 y 17
 end
 arch swall_2_1_1
+x 4
+y 17
+end
+arch dungeon_magic
 x 4
 y 17
 end
@@ -940,6 +972,10 @@ x 4
 y 18
 end
 arch swall_2_1_1
+x 4
+y 18
+end
+arch dungeon_magic
 x 4
 y 18
 end
@@ -948,6 +984,10 @@ x 4
 y 19
 end
 arch swall_2_1_1
+x 4
+y 19
+end
+arch dungeon_magic
 x 4
 y 19
 end
@@ -956,6 +996,10 @@ x 4
 y 20
 end
 arch swall_2_1_1
+x 4
+y 20
+end
+arch dungeon_magic
 x 4
 y 20
 end
@@ -964,6 +1008,10 @@ x 4
 y 21
 end
 arch swall_2_1_1
+x 4
+y 21
+end
+arch dungeon_magic
 x 4
 y 21
 end
@@ -972,6 +1020,10 @@ x 4
 y 22
 end
 arch swall_2_1_1
+x 4
+y 22
+end
+arch dungeon_magic
 x 4
 y 22
 end
@@ -980,6 +1032,10 @@ x 4
 y 23
 end
 arch swall_2_1_1
+x 4
+y 23
+end
+arch dungeon_magic
 x 4
 y 23
 end
@@ -988,6 +1044,10 @@ x 4
 y 24
 end
 arch swall_2_1_1
+x 4
+y 24
+end
+arch dungeon_magic
 x 4
 y 24
 end
@@ -996,6 +1056,10 @@ x 4
 y 25
 end
 arch swall_2_1_1
+x 4
+y 25
+end
+arch dungeon_magic
 x 4
 y 25
 end
@@ -1004,6 +1068,10 @@ x 4
 y 26
 end
 arch swall_2_2_4
+x 4
+y 26
+end
+arch dungeon_magic
 x 4
 y 26
 end
@@ -1993,11 +2061,19 @@ arch swall_2_2_2
 x 9
 y 19
 end
+arch dungeon_magic
+x 9
+y 19
+end
 arch woodfloor
 x 9
 y 20
 end
 arch swall_2_1_1
+x 9
+y 20
+end
+arch dungeon_magic
 x 9
 y 20
 end
@@ -2009,11 +2085,19 @@ arch swall_2_1_1
 x 9
 y 21
 end
+arch dungeon_magic
+x 9
+y 21
+end
 arch woodfloor
 x 9
 y 22
 end
 arch swall_2_1_1
+x 9
+y 22
+end
+arch dungeon_magic
 x 9
 y 22
 end
@@ -2022,6 +2106,10 @@ x 9
 y 23
 end
 arch swall_2_1_1
+x 9
+y 23
+end
+arch dungeon_magic
 x 9
 y 23
 end
@@ -2030,6 +2118,10 @@ x 9
 y 24
 end
 arch swall_2_1_1
+x 9
+y 24
+end
+arch dungeon_magic
 x 9
 y 24
 end
@@ -2038,6 +2130,10 @@ x 9
 y 25
 end
 arch swall_2_1_1
+x 9
+y 25
+end
+arch dungeon_magic
 x 9
 y 25
 end
@@ -2046,6 +2142,10 @@ x 9
 y 26
 end
 arch swall_2_2_1
+x 9
+y 26
+end
+arch dungeon_magic
 x 9
 y 26
 end
@@ -2164,11 +2264,19 @@ arch swall_2_2_2
 x 10
 y 11
 end
+arch dungeon_magic
+x 10
+y 11
+end
 arch woodlarge
 x 10
 y 12
 end
 arch swall_2_1_1
+x 10
+y 12
+end
+arch dungeon_magic
 x 10
 y 12
 end
@@ -2180,11 +2288,19 @@ arch swall_2_1_1
 x 10
 y 13
 end
+arch dungeon_magic
+x 10
+y 13
+end
 arch woodlarge
 x 10
 y 14
 end
 arch swall_2_1_1
+x 10
+y 14
+end
+arch dungeon_magic
 x 10
 y 14
 end
@@ -2193,6 +2309,10 @@ x 10
 y 15
 end
 arch swall_2_2_1
+x 10
+y 15
+end
+arch dungeon_magic
 x 10
 y 15
 end
@@ -2213,6 +2333,10 @@ x 10
 y 19
 end
 arch swall_2_1_2
+x 10
+y 19
+end
+arch dungeon_magic
 x 10
 y 19
 end
@@ -2269,6 +2393,10 @@ x 10
 y 26
 end
 arch swall_2_1_2
+x 10
+y 26
+end
+arch dungeon_magic
 x 10
 y 26
 end
@@ -2394,6 +2522,10 @@ arch swall_2_1_2
 x 11
 y 11
 end
+arch dungeon_magic
+x 11
+y 11
+end
 arch woodfloor
 x 11
 y 12
@@ -2426,6 +2558,10 @@ arch swall_2_1_2
 x 11
 y 15
 end
+arch dungeon_magic
+x 11
+y 15
+end
 arch magic_mouth
 msg
 Broadsword
@@ -2450,6 +2586,10 @@ x 11
 y 19
 end
 arch swall_2_1_2
+x 11
+y 19
+end
+arch dungeon_magic
 x 11
 y 19
 end
@@ -2506,6 +2646,10 @@ x 11
 y 26
 end
 arch swall_2_1_2
+x 11
+y 26
+end
+arch dungeon_magic
 x 11
 y 26
 end
@@ -2600,11 +2744,19 @@ arch swall_2_2_2
 x 12
 y 6
 end
+arch dungeon_magic
+x 12
+y 6
+end
 arch woodfloor
 x 12
 y 7
 end
 arch swall_2_1_1
+x 12
+y 7
+end
+arch dungeon_magic
 x 12
 y 7
 end
@@ -2643,6 +2795,10 @@ arch swall_2_1_2
 x 12
 y 11
 end
+arch dungeon_magic
+x 12
+y 11
+end
 arch woodlarge
 x 12
 y 12
@@ -2675,6 +2831,10 @@ arch swall_2_1_2
 x 12
 y 15
 end
+arch dungeon_magic
+x 12
+y 15
+end
 arch magic_mouth
 msg
 Broadsword
@@ -2699,6 +2859,10 @@ x 12
 y 19
 end
 arch swall_2_1_2
+x 12
+y 19
+end
+arch dungeon_magic
 x 12
 y 19
 end
@@ -2758,6 +2922,10 @@ arch swall_2_1_2
 x 12
 y 26
 end
+arch dungeon_magic
+x 12
+y 26
+end
 arch woodfloor
 x 12
 y 27
@@ -2790,11 +2958,19 @@ arch swall_2_1_1
 x 12
 y 31
 end
+arch dungeon_magic
+x 12
+y 31
+end
 arch woodlarge
 x 12
 y 32
 end
 arch swall_2_2_1
+x 12
+y 32
+end
+arch dungeon_magic
 x 12
 y 32
 end
@@ -2868,6 +3044,10 @@ arch swall_2_1_2
 x 13
 y 6
 end
+arch dungeon_magic
+x 13
+y 6
+end
 arch woodlarge
 x 13
 y 7
@@ -2907,6 +3087,10 @@ arch swall_2_1_2
 x 13
 y 11
 end
+arch dungeon_magic
+x 13
+y 11
+end
 arch woodfloor
 x 13
 y 12
@@ -2939,6 +3123,10 @@ arch swall_2_1_2
 x 13
 y 15
 end
+arch dungeon_magic
+x 13
+y 15
+end
 arch magic_mouth
 msg
 Broadsword
@@ -2966,11 +3154,19 @@ arch swall_2_2_3
 x 13
 y 19
 end
+arch dungeon_magic
+x 13
+y 19
+end
 arch woodfloor
 x 13
 y 20
 end
 arch swall_2_1_1
+x 13
+y 20
+end
+arch dungeon_magic
 x 13
 y 20
 end
@@ -2982,11 +3178,19 @@ arch swall_2_1_1
 x 13
 y 21
 end
+arch dungeon_magic
+x 13
+y 21
+end
 arch woodfloor
 x 13
 y 22
 end
 arch swall_2_1_1
+x 13
+y 22
+end
+arch dungeon_magic
 x 13
 y 22
 end
@@ -2995,6 +3199,10 @@ x 13
 y 23
 end
 arch swall_2_1_1
+x 13
+y 23
+end
+arch dungeon_magic
 x 13
 y 23
 end
@@ -3003,6 +3211,10 @@ x 13
 y 24
 end
 arch swall_2_1_1
+x 13
+y 24
+end
+arch dungeon_magic
 x 13
 y 24
 end
@@ -3011,6 +3223,10 @@ x 13
 y 25
 end
 arch swall_2_1_1
+x 13
+y 25
+end
+arch dungeon_magic
 x 13
 y 25
 end
@@ -3019,6 +3235,10 @@ x 13
 y 26
 end
 arch swall_2_2_4
+x 13
+y 26
+end
+arch dungeon_magic
 x 13
 y 26
 end
@@ -3055,6 +3275,10 @@ x 13
 y 32
 end
 arch swall_2_1_2
+x 13
+y 32
+end
+arch dungeon_magic
 x 13
 y 32
 end
@@ -3135,6 +3359,10 @@ arch swall_2_1_2
 x 14
 y 6
 end
+arch dungeon_magic
+x 14
+y 6
+end
 arch woodfloor
 x 14
 y 7
@@ -3174,6 +3402,10 @@ arch swall_2_1_2
 x 14
 y 11
 end
+arch dungeon_magic
+x 14
+y 11
+end
 arch woodlarge
 x 14
 y 12
@@ -3203,6 +3435,10 @@ x 14
 y 15
 end
 arch swall_2_1_2
+x 14
+y 15
+end
+arch dungeon_magic
 x 14
 y 15
 end
@@ -3341,6 +3577,10 @@ arch swall_2_1_2
 x 14
 y 32
 end
+arch dungeon_magic
+x 14
+y 32
+end
 arch magic_mouth
 msg
 Armour
@@ -3418,6 +3658,10 @@ arch swall_2_1_2
 x 15
 y 6
 end
+arch dungeon_magic
+x 15
+y 6
+end
 arch woodlarge
 x 15
 y 7
@@ -3457,6 +3701,10 @@ arch swall_2_1_2
 x 15
 y 11
 end
+arch dungeon_magic
+x 15
+y 11
+end
 arch woodfloor
 x 15
 y 12
@@ -3486,6 +3734,10 @@ x 15
 y 15
 end
 arch swall_2_1_2
+x 15
+y 15
+end
+arch dungeon_magic
 x 15
 y 15
 end
@@ -3576,6 +3828,10 @@ arch swall_2_1_2
 x 15
 y 32
 end
+arch dungeon_magic
+x 15
+y 32
+end
 arch magic_mouth
 msg
 Blue Dragon Mail
@@ -3653,6 +3909,10 @@ arch swall_2_1_2
 x 16
 y 6
 end
+arch dungeon_magic
+x 16
+y 6
+end
 arch woodfloor
 x 16
 y 7
@@ -3692,6 +3952,10 @@ arch swall_2_1_2
 x 16
 y 11
 end
+arch dungeon_magic
+x 16
+y 11
+end
 arch woodlarge
 x 16
 y 12
@@ -3721,6 +3985,10 @@ x 16
 y 15
 end
 arch swall_2_1_2
+x 16
+y 15
+end
+arch dungeon_magic
 x 16
 y 15
 end
@@ -3853,6 +4121,10 @@ arch swall_2_1_2
 x 16
 y 32
 end
+arch dungeon_magic
+x 16
+y 32
+end
 arch magic_mouth
 msg
 Chain Mail
@@ -3930,6 +4202,10 @@ arch swall_2_1_2
 x 17
 y 6
 end
+arch dungeon_magic
+x 17
+y 6
+end
 arch woodlarge
 x 17
 y 7
@@ -3969,6 +4245,10 @@ arch swall_2_1_2
 x 17
 y 11
 end
+arch dungeon_magic
+x 17
+y 11
+end
 arch woodfloor
 x 17
 y 12
@@ -4001,6 +4281,10 @@ arch swall_2_1_2
 x 17
 y 15
 end
+arch dungeon_magic
+x 17
+y 15
+end
 arch magic_mouth
 msg
 Dagger
@@ -4024,11 +4308,19 @@ arch swall_2_2_2
 x 17
 y 18
 end
+arch dungeon_magic
+x 17
+y 18
+end
 arch woodlarge
 x 17
 y 19
 end
 arch swall_2_1_1
+x 17
+y 19
+end
+arch dungeon_magic
 x 17
 y 19
 end
@@ -4040,11 +4332,19 @@ arch swall_2_1_1
 x 17
 y 20
 end
+arch dungeon_magic
+x 17
+y 20
+end
 arch woodlarge
 x 17
 y 21
 end
 arch swall_2_1_1
+x 17
+y 21
+end
+arch dungeon_magic
 x 17
 y 21
 end
@@ -4053,6 +4353,10 @@ x 17
 y 22
 end
 arch swall_2_1_1
+x 17
+y 22
+end
+arch dungeon_magic
 x 17
 y 22
 end
@@ -4061,6 +4365,10 @@ x 17
 y 23
 end
 arch swall_2_1_1
+x 17
+y 23
+end
+arch dungeon_magic
 x 17
 y 23
 end
@@ -4069,6 +4377,10 @@ x 17
 y 24
 end
 arch swall_2_1_1
+x 17
+y 24
+end
+arch dungeon_magic
 x 17
 y 24
 end
@@ -4077,6 +4389,10 @@ x 17
 y 25
 end
 arch swall_2_1_1
+x 17
+y 25
+end
+arch dungeon_magic
 x 17
 y 25
 end
@@ -4085,6 +4401,10 @@ x 17
 y 26
 end
 arch swall_2_2_1
+x 17
+y 26
+end
+arch dungeon_magic
 x 17
 y 26
 end
@@ -4121,6 +4441,10 @@ x 17
 y 32
 end
 arch swall_2_1_2
+x 17
+y 32
+end
+arch dungeon_magic
 x 17
 y 32
 end
@@ -4201,6 +4525,10 @@ arch swall_2_1_2
 x 18
 y 6
 end
+arch dungeon_magic
+x 18
+y 6
+end
 arch woodfloor
 x 18
 y 7
@@ -4240,6 +4568,10 @@ arch swall_2_1_2
 x 18
 y 11
 end
+arch dungeon_magic
+x 18
+y 11
+end
 arch woodlarge
 x 18
 y 12
@@ -4272,6 +4604,10 @@ arch swall_2_1_2
 x 18
 y 15
 end
+arch dungeon_magic
+x 18
+y 15
+end
 arch magic_mouth
 msg
 Dagger
@@ -4292,6 +4628,10 @@ x 18
 y 18
 end
 arch swall_2_1_2
+x 18
+y 18
+end
+arch dungeon_magic
 x 18
 y 18
 end
@@ -4359,6 +4699,10 @@ arch swall_2_1_2
 x 18
 y 26
 end
+arch dungeon_magic
+x 18
+y 26
+end
 arch woodfloor
 x 18
 y 27
@@ -4395,6 +4739,10 @@ x 18
 y 32
 end
 arch swall_2_1_2
+x 18
+y 32
+end
+arch dungeon_magic
 x 18
 y 32
 end
@@ -4475,6 +4823,10 @@ arch swall_2_1_2
 x 19
 y 6
 end
+arch dungeon_magic
+x 19
+y 6
+end
 arch woodlarge
 x 19
 y 7
@@ -4514,6 +4866,10 @@ arch swall_2_1_2
 x 19
 y 11
 end
+arch dungeon_magic
+x 19
+y 11
+end
 arch woodfloor
 x 19
 y 12
@@ -4546,6 +4902,10 @@ arch swall_2_1_2
 x 19
 y 15
 end
+arch dungeon_magic
+x 19
+y 15
+end
 arch magic_mouth
 msg
 Falchion
@@ -4566,6 +4926,10 @@ x 19
 y 18
 end
 arch swall_2_1_2
+x 19
+y 18
+end
+arch dungeon_magic
 x 19
 y 18
 end
@@ -4633,6 +4997,10 @@ arch swall_2_1_2
 x 19
 y 26
 end
+arch dungeon_magic
+x 19
+y 26
+end
 arch woodlarge
 x 19
 y 27
@@ -4669,6 +5037,10 @@ x 19
 y 32
 end
 arch swall_2_1_2
+x 19
+y 32
+end
+arch dungeon_magic
 x 19
 y 32
 end
@@ -4749,6 +5121,10 @@ arch swall_2_1_2
 x 20
 y 6
 end
+arch dungeon_magic
+x 20
+y 6
+end
 arch woodfloor
 x 20
 y 7
@@ -4788,6 +5164,10 @@ arch swall_2_1_2
 x 20
 y 11
 end
+arch dungeon_magic
+x 20
+y 11
+end
 arch woodlarge
 x 20
 y 12
@@ -4820,6 +5200,10 @@ arch swall_2_1_2
 x 20
 y 15
 end
+arch dungeon_magic
+x 20
+y 15
+end
 arch magic_mouth
 msg
 Hooksword
@@ -4840,6 +5224,10 @@ x 20
 y 18
 end
 arch swall_2_1_2
+x 20
+y 18
+end
+arch dungeon_magic
 x 20
 y 18
 end
@@ -4907,6 +5295,10 @@ arch swall_2_1_2
 x 20
 y 26
 end
+arch dungeon_magic
+x 20
+y 26
+end
 arch woodfloor
 x 20
 y 27
@@ -4940,6 +5332,10 @@ x 20
 y 32
 end
 arch swall_2_1_2
+x 20
+y 32
+end
+arch dungeon_magic
 x 20
 y 32
 end
@@ -5020,6 +5416,10 @@ arch swall_2_1_2
 x 21
 y 6
 end
+arch dungeon_magic
+x 21
+y 6
+end
 arch woodlarge
 x 21
 y 7
@@ -5059,6 +5459,10 @@ arch swall_2_1_2
 x 21
 y 11
 end
+arch dungeon_magic
+x 21
+y 11
+end
 arch woodfloor
 x 21
 y 12
@@ -5091,6 +5495,10 @@ arch swall_2_1_2
 x 21
 y 15
 end
+arch dungeon_magic
+x 21
+y 15
+end
 arch magic_mouth
 msg
 Katana
@@ -5114,11 +5522,19 @@ arch swall_2_2_3
 x 21
 y 18
 end
+arch dungeon_magic
+x 21
+y 18
+end
 arch woodlarge
 x 21
 y 19
 end
 arch swall_2_1_1
+x 21
+y 19
+end
+arch dungeon_magic
 x 21
 y 19
 end
@@ -5130,11 +5546,19 @@ arch swall_2_1_1
 x 21
 y 20
 end
+arch dungeon_magic
+x 21
+y 20
+end
 arch woodlarge
 x 21
 y 21
 end
 arch swall_2_1_1
+x 21
+y 21
+end
+arch dungeon_magic
 x 21
 y 21
 end
@@ -5143,6 +5567,10 @@ x 21
 y 22
 end
 arch swall_2_1_1
+x 21
+y 22
+end
+arch dungeon_magic
 x 21
 y 22
 end
@@ -5151,6 +5579,10 @@ x 21
 y 23
 end
 arch swall_2_1_1
+x 21
+y 23
+end
+arch dungeon_magic
 x 21
 y 23
 end
@@ -5159,6 +5591,10 @@ x 21
 y 24
 end
 arch swall_2_1_1
+x 21
+y 24
+end
+arch dungeon_magic
 x 21
 y 24
 end
@@ -5167,6 +5603,10 @@ x 21
 y 25
 end
 arch swall_2_1_1
+x 21
+y 25
+end
+arch dungeon_magic
 x 21
 y 25
 end
@@ -5175,6 +5615,10 @@ x 21
 y 26
 end
 arch swall_2_2_4
+x 21
+y 26
+end
+arch dungeon_magic
 x 21
 y 26
 end
@@ -5211,6 +5655,10 @@ x 21
 y 32
 end
 arch swall_2_1_2
+x 21
+y 32
+end
+arch dungeon_magic
 x 21
 y 32
 end
@@ -5291,6 +5739,10 @@ arch swall_2_1_2
 x 22
 y 6
 end
+arch dungeon_magic
+x 22
+y 6
+end
 arch woodfloor
 x 22
 y 7
@@ -5330,6 +5782,10 @@ arch swall_2_1_2
 x 22
 y 11
 end
+arch dungeon_magic
+x 22
+y 11
+end
 arch woodlarge
 x 22
 y 12
@@ -5359,6 +5815,10 @@ x 22
 y 15
 end
 arch swall_2_1_2
+x 22
+y 15
+end
+arch dungeon_magic
 x 22
 y 15
 end
@@ -5491,6 +5951,10 @@ arch swall_2_1_2
 x 22
 y 32
 end
+arch dungeon_magic
+x 22
+y 32
+end
 arch magic_mouth
 msg
 Green Dragon Mail
@@ -5568,6 +6032,10 @@ arch swall_2_1_2
 x 23
 y 6
 end
+arch dungeon_magic
+x 23
+y 6
+end
 arch woodlarge
 x 23
 y 7
@@ -5607,6 +6075,10 @@ arch swall_2_1_2
 x 23
 y 11
 end
+arch dungeon_magic
+x 23
+y 11
+end
 arch woodfloor
 x 23
 y 12
@@ -5636,6 +6108,10 @@ x 23
 y 15
 end
 arch swall_2_1_2
+x 23
+y 15
+end
+arch dungeon_magic
 x 23
 y 15
 end
@@ -5726,6 +6202,10 @@ arch swall_2_1_2
 x 23
 y 32
 end
+arch dungeon_magic
+x 23
+y 32
+end
 arch magic_mouth
 msg
 Hauberk
@@ -5803,6 +6283,10 @@ arch swall_2_1_2
 x 24
 y 6
 end
+arch dungeon_magic
+x 24
+y 6
+end
 arch woodfloor
 x 24
 y 7
@@ -5842,6 +6326,10 @@ arch swall_2_1_2
 x 24
 y 11
 end
+arch dungeon_magic
+x 24
+y 11
+end
 arch woodlarge
 x 24
 y 12
@@ -5871,6 +6359,10 @@ x 24
 y 15
 end
 arch swall_2_1_2
+x 24
+y 15
+end
+arch dungeon_magic
 x 24
 y 15
 end
@@ -6010,6 +6502,10 @@ arch swall_2_1_2
 x 24
 y 32
 end
+arch dungeon_magic
+x 24
+y 32
+end
 arch magic_mouth
 msg
 Midnight Robe
@@ -6087,6 +6583,10 @@ arch swall_2_1_2
 x 25
 y 6
 end
+arch dungeon_magic
+x 25
+y 6
+end
 arch woodlarge
 x 25
 y 7
@@ -6126,6 +6626,10 @@ arch swall_2_1_2
 x 25
 y 11
 end
+arch dungeon_magic
+x 25
+y 11
+end
 arch woodfloor
 x 25
 y 12
@@ -6158,6 +6662,10 @@ arch swall_2_1_2
 x 25
 y 15
 end
+arch dungeon_magic
+x 25
+y 15
+end
 arch magic_mouth
 msg
 Long Sword
@@ -6181,11 +6689,19 @@ arch swall_2_2_2
 x 25
 y 18
 end
+arch dungeon_magic
+x 25
+y 18
+end
 arch woodlarge
 x 25
 y 19
 end
 arch swall_2_1_1
+x 25
+y 19
+end
+arch dungeon_magic
 x 25
 y 19
 end
@@ -6197,11 +6713,19 @@ arch swall_2_1_1
 x 25
 y 20
 end
+arch dungeon_magic
+x 25
+y 20
+end
 arch woodlarge
 x 25
 y 21
 end
 arch swall_2_1_1
+x 25
+y 21
+end
+arch dungeon_magic
 x 25
 y 21
 end
@@ -6210,6 +6734,10 @@ x 25
 y 22
 end
 arch swall_2_1_1
+x 25
+y 22
+end
+arch dungeon_magic
 x 25
 y 22
 end
@@ -6218,6 +6746,10 @@ x 25
 y 23
 end
 arch swall_2_1_1
+x 25
+y 23
+end
+arch dungeon_magic
 x 25
 y 23
 end
@@ -6226,6 +6758,10 @@ x 25
 y 24
 end
 arch swall_2_1_1
+x 25
+y 24
+end
+arch dungeon_magic
 x 25
 y 24
 end
@@ -6234,6 +6770,10 @@ x 25
 y 25
 end
 arch swall_2_1_1
+x 25
+y 25
+end
+arch dungeon_magic
 x 25
 y 25
 end
@@ -6242,6 +6782,10 @@ x 25
 y 26
 end
 arch swall_2_2_1
+x 25
+y 26
+end
+arch dungeon_magic
 x 25
 y 26
 end
@@ -6278,6 +6822,10 @@ x 25
 y 32
 end
 arch swall_2_1_2
+x 25
+y 32
+end
+arch dungeon_magic
 x 25
 y 32
 end
@@ -6358,6 +6906,10 @@ arch swall_2_1_2
 x 26
 y 6
 end
+arch dungeon_magic
+x 26
+y 6
+end
 arch woodfloor
 x 26
 y 7
@@ -6397,6 +6949,10 @@ arch swall_2_1_2
 x 26
 y 11
 end
+arch dungeon_magic
+x 26
+y 11
+end
 arch woodlarge
 x 26
 y 12
@@ -6429,6 +6985,10 @@ arch swall_2_1_2
 x 26
 y 15
 end
+arch dungeon_magic
+x 26
+y 15
+end
 arch magic_mouth
 msg
 Long Sword
@@ -6449,6 +7009,10 @@ x 26
 y 18
 end
 arch swall_2_1_2
+x 26
+y 18
+end
+arch dungeon_magic
 x 26
 y 18
 end
@@ -6516,6 +7080,10 @@ arch swall_2_1_2
 x 26
 y 26
 end
+arch dungeon_magic
+x 26
+y 26
+end
 arch woodfloor
 x 26
 y 27
@@ -6549,6 +7117,10 @@ x 26
 y 32
 end
 arch swall_2_1_2
+x 26
+y 32
+end
+arch dungeon_magic
 x 26
 y 32
 end
@@ -6629,6 +7201,10 @@ arch swall_2_1_2
 x 27
 y 6
 end
+arch dungeon_magic
+x 27
+y 6
+end
 arch woodlarge
 x 27
 y 7
@@ -6665,6 +7241,10 @@ arch swall_2_1_2
 x 27
 y 11
 end
+arch dungeon_magic
+x 27
+y 11
+end
 arch woodfloor
 x 27
 y 12
@@ -6693,6 +7273,10 @@ arch swall_2_1_2
 x 27
 y 15
 end
+arch dungeon_magic
+x 27
+y 15
+end
 arch magic_mouth
 msg
 Long Sword
@@ -6713,6 +7297,10 @@ x 27
 y 18
 end
 arch swall_2_1_2
+x 27
+y 18
+end
+arch dungeon_magic
 x 27
 y 18
 end
@@ -6780,6 +7368,10 @@ arch swall_2_1_2
 x 27
 y 26
 end
+arch dungeon_magic
+x 27
+y 26
+end
 arch woodlarge
 x 27
 y 27
@@ -6813,6 +7405,10 @@ x 27
 y 32
 end
 arch swall_2_1_2
+x 27
+y 32
+end
+arch dungeon_magic
 x 27
 y 32
 end
@@ -6896,6 +7492,10 @@ arch swall_2_1_2
 x 28
 y 6
 end
+arch dungeon_magic
+x 28
+y 6
+end
 arch woodfloor
 x 28
 y 7
@@ -6928,11 +7528,19 @@ arch swall_2_2_3
 x 28
 y 11
 end
+arch dungeon_magic
+x 28
+y 11
+end
 arch woodlarge
 x 28
 y 12
 end
 arch swall_2_1_1
+x 28
+y 12
+end
+arch dungeon_magic
 x 28
 y 12
 end
@@ -6944,11 +7552,19 @@ arch swall_2_1_1
 x 28
 y 13
 end
+arch dungeon_magic
+x 28
+y 13
+end
 arch woodlarge
 x 28
 y 14
 end
 arch swall_2_1_1
+x 28
+y 14
+end
+arch dungeon_magic
 x 28
 y 14
 end
@@ -6957,6 +7573,10 @@ x 28
 y 15
 end
 arch swall_2_2_4
+x 28
+y 15
+end
+arch dungeon_magic
 x 28
 y 15
 end
@@ -6973,6 +7593,10 @@ x 28
 y 18
 end
 arch swall_2_1_2
+x 28
+y 18
+end
+arch dungeon_magic
 x 28
 y 18
 end
@@ -7040,6 +7664,10 @@ arch swall_2_1_2
 x 28
 y 26
 end
+arch dungeon_magic
+x 28
+y 26
+end
 arch woodfloor
 x 28
 y 27
@@ -7073,6 +7701,10 @@ x 28
 y 32
 end
 arch swall_2_1_2
+x 28
+y 32
+end
+arch dungeon_magic
 x 28
 y 32
 end
@@ -7156,6 +7788,10 @@ arch swall_2_1_2
 x 29
 y 6
 end
+arch dungeon_magic
+x 29
+y 6
+end
 arch woodlarge
 x 29
 y 7
@@ -7216,11 +7852,19 @@ arch swall_2_2_3
 x 29
 y 18
 end
+arch dungeon_magic
+x 29
+y 18
+end
 arch woodlarge
 x 29
 y 19
 end
 arch swall_2_1_1
+x 29
+y 19
+end
+arch dungeon_magic
 x 29
 y 19
 end
@@ -7232,11 +7876,19 @@ arch swall_2_1_1
 x 29
 y 20
 end
+arch dungeon_magic
+x 29
+y 20
+end
 arch woodlarge
 x 29
 y 21
 end
 arch swall_2_1_1
+x 29
+y 21
+end
+arch dungeon_magic
 x 29
 y 21
 end
@@ -7245,6 +7897,10 @@ x 29
 y 22
 end
 arch swall_2_1_1
+x 29
+y 22
+end
+arch dungeon_magic
 x 29
 y 22
 end
@@ -7253,6 +7909,10 @@ x 29
 y 23
 end
 arch swall_2_1_1
+x 29
+y 23
+end
+arch dungeon_magic
 x 29
 y 23
 end
@@ -7261,6 +7921,10 @@ x 29
 y 24
 end
 arch swall_2_1_1
+x 29
+y 24
+end
+arch dungeon_magic
 x 29
 y 24
 end
@@ -7269,6 +7933,10 @@ x 29
 y 25
 end
 arch swall_2_1_1
+x 29
+y 25
+end
+arch dungeon_magic
 x 29
 y 25
 end
@@ -7277,6 +7945,10 @@ x 29
 y 26
 end
 arch swall_2_2_4
+x 29
+y 26
+end
+arch dungeon_magic
 x 29
 y 26
 end
@@ -7313,6 +7985,10 @@ x 29
 y 32
 end
 arch swall_2_1_2
+x 29
+y 32
+end
+arch dungeon_magic
 x 29
 y 32
 end
@@ -7390,6 +8066,10 @@ x 30
 y 6
 end
 arch swall_2_1_2
+x 30
+y 6
+end
+arch dungeon_magic
 x 30
 y 6
 end
@@ -7566,6 +8246,10 @@ arch swall_2_1_2
 x 30
 y 32
 end
+arch dungeon_magic
+x 30
+y 32
+end
 arch magic_mouth
 msg
 Red Dragon Mail
@@ -7640,6 +8324,10 @@ x 31
 y 6
 end
 arch swall_2_1_2
+x 31
+y 6
+end
+arch dungeon_magic
 x 31
 y 6
 end
@@ -7767,6 +8455,10 @@ arch swall_2_1_2
 x 31
 y 32
 end
+arch dungeon_magic
+x 31
+y 32
+end
 arch magic_mouth
 msg
 Ring Mail
@@ -7841,6 +8533,10 @@ x 32
 y 6
 end
 arch swall_2_1_2
+x 32
+y 6
+end
+arch dungeon_magic
 x 32
 y 6
 end
@@ -8066,6 +8762,10 @@ arch swall_2_1_2
 x 32
 y 32
 end
+arch dungeon_magic
+x 32
+y 32
+end
 arch magic_mouth
 msg
 Robe
@@ -8143,6 +8843,10 @@ arch swall_2_1_2
 x 33
 y 6
 end
+arch dungeon_magic
+x 33
+y 6
+end
 arch woodlarge
 x 33
 y 7
@@ -8175,11 +8879,19 @@ arch swall_2_2_2
 x 33
 y 11
 end
+arch dungeon_magic
+x 33
+y 11
+end
 arch woodfloor
 x 33
 y 12
 end
 arch swall_2_1_1
+x 33
+y 12
+end
+arch dungeon_magic
 x 33
 y 12
 end
@@ -8191,11 +8903,19 @@ arch swall_2_1_1
 x 33
 y 13
 end
+arch dungeon_magic
+x 33
+y 13
+end
 arch woodfloor
 x 33
 y 14
 end
 arch swall_2_1_1
+x 33
+y 14
+end
+arch dungeon_magic
 x 33
 y 14
 end
@@ -8204,6 +8924,10 @@ x 33
 y 15
 end
 arch swall_2_1_1
+x 33
+y 15
+end
+arch dungeon_magic
 x 33
 y 15
 end
@@ -8212,6 +8936,10 @@ x 33
 y 16
 end
 arch swall_2_1_1
+x 33
+y 16
+end
+arch dungeon_magic
 x 33
 y 16
 end
@@ -8220,6 +8948,10 @@ x 33
 y 17
 end
 arch swall_2_1_1
+x 33
+y 17
+end
+arch dungeon_magic
 x 33
 y 17
 end
@@ -8228,6 +8960,10 @@ x 33
 y 18
 end
 arch swall_2_1_1
+x 33
+y 18
+end
+arch dungeon_magic
 x 33
 y 18
 end
@@ -8236,6 +8972,10 @@ x 33
 y 19
 end
 arch swall_2_1_1
+x 33
+y 19
+end
+arch dungeon_magic
 x 33
 y 19
 end
@@ -8244,6 +8984,10 @@ x 33
 y 20
 end
 arch swall_2_1_1
+x 33
+y 20
+end
+arch dungeon_magic
 x 33
 y 20
 end
@@ -8252,6 +8996,10 @@ x 33
 y 21
 end
 arch swall_2_1_1
+x 33
+y 21
+end
+arch dungeon_magic
 x 33
 y 21
 end
@@ -8260,6 +9008,10 @@ x 33
 y 22
 end
 arch swall_2_1_1
+x 33
+y 22
+end
+arch dungeon_magic
 x 33
 y 22
 end
@@ -8268,6 +9020,10 @@ x 33
 y 23
 end
 arch swall_2_1_1
+x 33
+y 23
+end
+arch dungeon_magic
 x 33
 y 23
 end
@@ -8276,6 +9032,10 @@ x 33
 y 24
 end
 arch swall_2_1_1
+x 33
+y 24
+end
+arch dungeon_magic
 x 33
 y 24
 end
@@ -8284,6 +9044,10 @@ x 33
 y 25
 end
 arch swall_2_1_1
+x 33
+y 25
+end
+arch dungeon_magic
 x 33
 y 25
 end
@@ -8292,6 +9056,10 @@ x 33
 y 26
 end
 arch swall_2_2_1
+x 33
+y 26
+end
+arch dungeon_magic
 x 33
 y 26
 end
@@ -8328,6 +9096,10 @@ x 33
 y 32
 end
 arch swall_2_1_2
+x 33
+y 32
+end
+arch dungeon_magic
 x 33
 y 32
 end
@@ -8408,6 +9180,10 @@ arch swall_2_1_2
 x 34
 y 6
 end
+arch dungeon_magic
+x 34
+y 6
+end
 arch woodfloor
 x 34
 y 7
@@ -8437,6 +9213,10 @@ x 34
 y 11
 end
 arch swall_2_1_2
+x 34
+y 11
+end
+arch dungeon_magic
 x 34
 y 11
 end
@@ -8560,6 +9340,10 @@ arch swall_2_1_2
 x 34
 y 26
 end
+arch dungeon_magic
+x 34
+y 26
+end
 arch woodfloor
 x 34
 y 27
@@ -8593,6 +9377,10 @@ x 34
 y 32
 end
 arch swall_2_1_2
+x 34
+y 32
+end
+arch dungeon_magic
 x 34
 y 32
 end
@@ -8673,6 +9461,10 @@ arch swall_2_1_2
 x 35
 y 6
 end
+arch dungeon_magic
+x 35
+y 6
+end
 arch woodlarge
 x 35
 y 7
@@ -8702,6 +9494,10 @@ x 35
 y 11
 end
 arch swall_2_1_2
+x 35
+y 11
+end
+arch dungeon_magic
 x 35
 y 11
 end
@@ -8825,6 +9621,10 @@ arch swall_2_1_2
 x 35
 y 26
 end
+arch dungeon_magic
+x 35
+y 26
+end
 arch woodlarge
 x 35
 y 27
@@ -8858,6 +9658,10 @@ x 35
 y 32
 end
 arch swall_2_1_2
+x 35
+y 32
+end
+arch dungeon_magic
 x 35
 y 32
 end
@@ -8938,6 +9742,10 @@ arch swall_2_1_2
 x 36
 y 6
 end
+arch dungeon_magic
+x 36
+y 6
+end
 arch woodfloor
 x 36
 y 7
@@ -8967,6 +9775,10 @@ x 36
 y 11
 end
 arch swall_2_1_2
+x 36
+y 11
+end
+arch dungeon_magic
 x 36
 y 11
 end
@@ -9090,6 +9902,10 @@ arch swall_2_1_2
 x 36
 y 26
 end
+arch dungeon_magic
+x 36
+y 26
+end
 arch woodfloor
 x 36
 y 27
@@ -9123,6 +9939,10 @@ x 36
 y 32
 end
 arch swall_2_1_2
+x 36
+y 32
+end
+arch dungeon_magic
 x 36
 y 32
 end
@@ -9203,6 +10023,10 @@ arch swall_2_1_2
 x 37
 y 6
 end
+arch dungeon_magic
+x 37
+y 6
+end
 arch woodlarge
 x 37
 y 7
@@ -9235,11 +10059,19 @@ arch swall_2_2_3
 x 37
 y 11
 end
+arch dungeon_magic
+x 37
+y 11
+end
 arch woodfloor
 x 37
 y 12
 end
 arch swall_2_1_1
+x 37
+y 12
+end
+arch dungeon_magic
 x 37
 y 12
 end
@@ -9251,11 +10083,19 @@ arch swall_2_1_1
 x 37
 y 13
 end
+arch dungeon_magic
+x 37
+y 13
+end
 arch woodfloor
 x 37
 y 14
 end
 arch swall_2_1_1
+x 37
+y 14
+end
+arch dungeon_magic
 x 37
 y 14
 end
@@ -9264,6 +10104,10 @@ x 37
 y 15
 end
 arch swall_2_1_1
+x 37
+y 15
+end
+arch dungeon_magic
 x 37
 y 15
 end
@@ -9272,6 +10116,10 @@ x 37
 y 16
 end
 arch swall_2_1_1
+x 37
+y 16
+end
+arch dungeon_magic
 x 37
 y 16
 end
@@ -9280,6 +10128,10 @@ x 37
 y 17
 end
 arch swall_2_1_1
+x 37
+y 17
+end
+arch dungeon_magic
 x 37
 y 17
 end
@@ -9288,6 +10140,10 @@ x 37
 y 18
 end
 arch swall_2_1_1
+x 37
+y 18
+end
+arch dungeon_magic
 x 37
 y 18
 end
@@ -9296,6 +10152,10 @@ x 37
 y 19
 end
 arch swall_2_1_1
+x 37
+y 19
+end
+arch dungeon_magic
 x 37
 y 19
 end
@@ -9304,6 +10164,10 @@ x 37
 y 20
 end
 arch swall_2_1_1
+x 37
+y 20
+end
+arch dungeon_magic
 x 37
 y 20
 end
@@ -9312,6 +10176,10 @@ x 37
 y 21
 end
 arch swall_2_1_1
+x 37
+y 21
+end
+arch dungeon_magic
 x 37
 y 21
 end
@@ -9320,6 +10188,10 @@ x 37
 y 22
 end
 arch swall_2_1_1
+x 37
+y 22
+end
+arch dungeon_magic
 x 37
 y 22
 end
@@ -9328,6 +10200,10 @@ x 37
 y 23
 end
 arch swall_2_1_1
+x 37
+y 23
+end
+arch dungeon_magic
 x 37
 y 23
 end
@@ -9336,6 +10212,10 @@ x 37
 y 24
 end
 arch swall_2_1_1
+x 37
+y 24
+end
+arch dungeon_magic
 x 37
 y 24
 end
@@ -9344,6 +10224,10 @@ x 37
 y 25
 end
 arch swall_2_1_1
+x 37
+y 25
+end
+arch dungeon_magic
 x 37
 y 25
 end
@@ -9352,6 +10236,10 @@ x 37
 y 26
 end
 arch swall_2_2_4
+x 37
+y 26
+end
+arch dungeon_magic
 x 37
 y 26
 end
@@ -9388,6 +10276,10 @@ x 37
 y 32
 end
 arch swall_2_1_2
+x 37
+y 32
+end
+arch dungeon_magic
 x 37
 y 32
 end
@@ -9465,6 +10357,10 @@ x 38
 y 6
 end
 arch swall_2_1_2
+x 38
+y 6
+end
+arch dungeon_magic
 x 38
 y 6
 end
@@ -9694,6 +10590,10 @@ arch swall_2_1_2
 x 38
 y 32
 end
+arch dungeon_magic
+x 38
+y 32
+end
 arch magic_mouth
 msg
 Elven Boots
@@ -9764,11 +10664,19 @@ arch swall_2_2_3
 x 39
 y 6
 end
+arch dungeon_magic
+x 39
+y 6
+end
 arch woodlarge
 x 39
 y 7
 end
 arch swall_2_1_1
+x 39
+y 7
+end
+arch dungeon_magic
 x 39
 y 7
 end
@@ -9888,11 +10796,19 @@ arch swall_2_1_1
 x 39
 y 31
 end
+arch dungeon_magic
+x 39
+y 31
+end
 arch woodfloor
 x 39
 y 32
 end
 arch swall_2_2_4
+x 39
+y 32
+end
+arch dungeon_magic
 x 39
 y 32
 end
@@ -10238,6 +11154,10 @@ arch swall_2_1_2
 x 41
 y 8
 end
+arch dungeon_magic
+x 41
+y 8
+end
 arch woodlarge
 x 41
 y 9
@@ -10414,6 +11334,10 @@ arch swall_2_1_2
 x 41
 y 30
 end
+arch dungeon_magic
+x 41
+y 30
+end
 arch woodlarge
 x 41
 y 31
@@ -10497,11 +11421,19 @@ arch swall_2_2_3
 x 42
 y 8
 end
+arch dungeon_magic
+x 42
+y 8
+end
 arch woodfloor
 x 42
 y 9
 end
 arch swall_2_1_1
+x 42
+y 9
+end
+arch dungeon_magic
 x 42
 y 9
 end
@@ -10513,11 +11445,19 @@ arch swall_2_1_1
 x 42
 y 10
 end
+arch dungeon_magic
+x 42
+y 10
+end
 arch woodfloor
 x 42
 y 11
 end
 arch swall_2_1_1
+x 42
+y 11
+end
+arch dungeon_magic
 x 42
 y 11
 end
@@ -10526,6 +11466,10 @@ x 42
 y 12
 end
 arch swall_2_1_1
+x 42
+y 12
+end
+arch dungeon_magic
 x 42
 y 12
 end
@@ -10542,6 +11486,10 @@ x 42
 y 14
 end
 arch swall_2_1_1
+x 42
+y 14
+end
+arch dungeon_magic
 x 42
 y 14
 end
@@ -10550,6 +11498,10 @@ x 42
 y 15
 end
 arch swall_2_1_1
+x 42
+y 15
+end
+arch dungeon_magic
 x 42
 y 15
 end
@@ -10558,6 +11510,10 @@ x 42
 y 16
 end
 arch swall_2_1_1
+x 42
+y 16
+end
+arch dungeon_magic
 x 42
 y 16
 end
@@ -10566,6 +11522,10 @@ x 42
 y 17
 end
 arch swall_2_1_1
+x 42
+y 17
+end
+arch dungeon_magic
 x 42
 y 17
 end
@@ -10574,6 +11534,10 @@ x 42
 y 18
 end
 arch swall_2_1_1
+x 42
+y 18
+end
+arch dungeon_magic
 x 42
 y 18
 end
@@ -10582,6 +11546,10 @@ x 42
 y 19
 end
 arch swall_2_1_1
+x 42
+y 19
+end
+arch dungeon_magic
 x 42
 y 19
 end
@@ -10590,6 +11558,10 @@ x 42
 y 20
 end
 arch swall_2_1_1
+x 42
+y 20
+end
+arch dungeon_magic
 x 42
 y 20
 end
@@ -10598,6 +11570,10 @@ x 42
 y 21
 end
 arch swall_2_1_1
+x 42
+y 21
+end
+arch dungeon_magic
 x 42
 y 21
 end
@@ -10606,6 +11582,10 @@ x 42
 y 22
 end
 arch swall_2_1_1
+x 42
+y 22
+end
+arch dungeon_magic
 x 42
 y 22
 end
@@ -10614,6 +11594,10 @@ x 42
 y 23
 end
 arch swall_2_1_1
+x 42
+y 23
+end
+arch dungeon_magic
 x 42
 y 23
 end
@@ -10622,6 +11606,10 @@ x 42
 y 24
 end
 arch swall_2_1_1
+x 42
+y 24
+end
+arch dungeon_magic
 x 42
 y 24
 end
@@ -10630,6 +11618,10 @@ x 42
 y 25
 end
 arch swall_2_1_1
+x 42
+y 25
+end
+arch dungeon_magic
 x 42
 y 25
 end
@@ -10638,6 +11630,10 @@ x 42
 y 26
 end
 arch swall_2_1_1
+x 42
+y 26
+end
+arch dungeon_magic
 x 42
 y 26
 end
@@ -10646,6 +11642,10 @@ x 42
 y 27
 end
 arch swall_2_1_1
+x 42
+y 27
+end
+arch dungeon_magic
 x 42
 y 27
 end
@@ -10654,6 +11654,10 @@ x 42
 y 28
 end
 arch swall_2_1_1
+x 42
+y 28
+end
+arch dungeon_magic
 x 42
 y 28
 end
@@ -10662,6 +11666,10 @@ x 42
 y 29
 end
 arch swall_2_1_1
+x 42
+y 29
+end
+arch dungeon_magic
 x 42
 y 29
 end
@@ -10670,6 +11678,10 @@ x 42
 y 30
 end
 arch swall_2_2_4
+x 42
+y 30
+end
+arch dungeon_magic
 x 42
 y 30
 end
