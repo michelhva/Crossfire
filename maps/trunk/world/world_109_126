@@ -8,7 +8,7 @@ height 50
 enter_x 25
 enter_y 25
 msg
-Modified: 2012-08-19 Rick Tanner
+Modified: 2013-03-25 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_109_125
@@ -5522,6 +5522,7 @@ x 20
 y 35
 end
 arch house_small
+name Sentrio's House
 slaying /lake_country/small_buildings/sentrio_house
 hp 4
 sp 1
@@ -7167,7 +7168,7 @@ x 26
 y 42
 end
 arch hut
-name Galmorus's Hut
+name Galmorus' Hut
 slaying /lake_country/small_buildings/hut_Galmorus
 hp 9
 x 26
