@@ -11,7 +11,7 @@ enter_x 15
 enter_y 15
 msg
 Created:  1995-03-23
-Modified: 2012-03-12 Rick Tanner
+Modified: 2013-03-25 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -1143,11 +1143,20 @@ arch woodfloor
 x 11
 y 16
 end
-arch smith
-name wizard, Klondor
+arch guildmaster
+name Klondor
+title the Wizard
+msg
+@match *
+Take your time to browse through my fine collection of wands. The gems are a bonus collection. If you have anything to identify, I can help you. Just drop 20 gold coins for each item.
+endmsg
 face wizard.131
+hp 100
+maxhp 100
 x 11
 y 16
+randomitems standard
+pick_up 0
 end
 arch light2
 x 11
