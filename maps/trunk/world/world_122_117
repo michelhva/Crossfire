@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-10-04 Rick Tanner
+Modified: 2013-04-02 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -5201,25 +5201,17 @@ x 14
 y 17
 elevation 253
 end
-arch westcwall_2_2_2
-x 14
-y 17
-end
 arch grass
 x 14
 y 18
 elevation 435
-end
-arch westcwall_2_1_1
-x 14
-y 18
 end
 arch grass
 x 14
 y 19
 elevation 846
 end
-arch westcwall_2_2_4
+arch westcwall_2_1_2
 x 14
 y 19
 end
@@ -5518,28 +5510,24 @@ arch grass
 x 15
 y 16
 end
-arch westcwall_2_2_2
-x 15
-y 16
-end
 arch grass_only
 x 15
 y 17
 elevation 2147
 end
-arch westcwall_2_2_4
-x 15
-y 17
-end
-arch jungle_1
+arch grass
 x 15
 y 18
 elevation 1678
 end
-arch hills
+arch grass
 x 15
 y 19
 elevation 1241
+end
+arch westcwall_2_1_2
+x 15
+y 19
 end
 arch woods_3
 x 15
@@ -5884,27 +5872,23 @@ arch grass
 x 16
 y 16
 end
-arch westcwall_2_1_2
-x 16
-y 16
-end
 arch grass
 x 16
 y 17
 end
-arch grass_only
+arch grass
 x 16
 y 18
 elevation 2486
 end
-arch evergreens2
-x 16
-y 18
-end
-arch jungle_1
+arch grass
 x 16
 y 19
 elevation 2229
+end
+arch westcwall_2_1_2
+x 16
+y 19
 end
 arch grass_only
 x 16
@@ -6218,24 +6202,24 @@ arch grass
 x 17
 y 16
 end
-arch westcwall_2_1_2
-x 17
-y 16
-end
 arch grass
 x 17
 y 17
 elevation 2535
 end
-arch hills
+arch grass
 x 17
 y 18
 elevation 2551
 end
-arch hills
+arch grass
 x 17
 y 19
 elevation 2442
+end
+arch westcwall_2_1_2
+x 17
+y 19
 end
 arch hills
 x 17
@@ -6539,11 +6523,7 @@ arch grassdark
 x 18
 y 15
 end
-arch grass
-x 18
-y 16
-end
-arch westcwall_2_1_2
+arch grassdark
 x 18
 y 16
 end
@@ -6552,19 +6532,19 @@ x 18
 y 17
 elevation 830
 end
-arch grass_only
+arch grass
 x 18
 y 18
 elevation 2598
 end
-arch evergreens2
-x 18
-y 18
-end
-arch hills
+arch grass
 x 18
 y 19
 elevation 2063
+end
+arch westcwall_2_1_2
+x 18
+y 19
 end
 arch woods_2
 x 18
@@ -6857,24 +6837,36 @@ arch grass
 x 19
 y 16
 end
-arch westcwall_2_2_4
+arch westcwall_2_1_1
 x 19
 y 16
 end
-arch steppe
+arch grass
 x 19
 y 17
 elevation 3325
 end
-arch jungle_1
+arch westcwall_2_1_1
+x 19
+y 17
+end
+arch grass
 x 19
 y 18
 elevation 2899
 end
-arch hills
+arch westcwall_2_1_1
+x 19
+y 18
+end
+arch grass
 x 19
 y 19
 elevation 2318
+end
+arch westcwall_2_2_4
+x 19
+y 19
 end
 arch hills
 x 19
