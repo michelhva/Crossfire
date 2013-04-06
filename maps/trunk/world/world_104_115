@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2013-03-17 Kevin Zheng
+Modified: 2013-03-21 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -13960,9 +13960,9 @@ y 19
 end
 arch s_ship
 name Ship to Stoneville
-slaying /world/world_102_127
-hp 43
-sp 11
+slaying /scorn/port/ship_stoneville
+hp 9
+sp 10
 x 47
 y 19
 end
