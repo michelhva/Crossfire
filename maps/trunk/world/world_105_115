@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2013-03-17 Kevin Zheng
+Modified: 2013-04-06 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -3278,7 +3278,10 @@ y 28
 elevation 127
 end
 arch tavern
-name The Rowdy Sailor
+name Scorn Port Ticket Office
+slaying /scorn/port/ticket_office
+hp 7
+sp 8
 x 7
 y 28
 end
@@ -3623,8 +3626,8 @@ elevation -406
 end
 arch s_ship
 name Ship to Santo Dominion
-slaying /world/world_102_108
-hp 15
+slaying /scorn/port/ship_santo_dominion
+hp 9
 sp 10
 x 8
 y 21
