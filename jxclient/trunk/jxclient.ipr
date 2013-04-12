@@ -457,10 +457,6 @@
           <option name="m_minLength" value="1" />
           <option name="m_maxLength" value="99" />
         </inspection_tool>
-        <inspection_tool class="InstanceVariableUninitializedUse" enabled="true" level="WARNING" enabled_by_default="true">
-          <option name="m_ignorePrimitives" value="false" />
-          <option name="annotationNamesString" value="" />
-        </inspection_tool>
         <inspection_tool class="InstanceofCatchParameter" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="InstanceofChain" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="ignoreInstanceofOnLibraryClasses" value="false" />
