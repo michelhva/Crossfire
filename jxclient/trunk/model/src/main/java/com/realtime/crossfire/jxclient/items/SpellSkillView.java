@@ -97,14 +97,11 @@ public class SpellSkillView extends AbstractItemView {
     public CfItem getItem(final int index) {
         final Skill skill = spellsManager.getSpellSkill(index);
         if (skill == null) {
-            return new CfItem(0, 0, 0, 0, null, "All skills", "All skills", 0, 0, 0, 0);
+            return new CfItem(0, 0, 0, 0, facesManager.getFace(0), "All skills", "All skills", 0, 0, 0, 0);
         }
-        final Face face;
-        if (skill.getFace() > 0) {
-            face = facesManager.getFace(skill.getFace());
-        } else {
-            face = null;
-        }
+
+        final int faceNumber = skill.getFace();
+        final Face face = facesManager.getFace(faceNumber > 0 ? faceNumber : 0);
         return new CfItem(0, 0, 0, 0, face, skill.toString(), skill.toString(), 0, 0, 0, 0);
     }
 
