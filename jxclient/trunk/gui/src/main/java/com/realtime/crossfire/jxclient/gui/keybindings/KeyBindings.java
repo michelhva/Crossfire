@@ -397,6 +397,7 @@ public class KeyBindings {
      * @param commandStart start of the text to search for
      * @return the matching bindings
      */
+    @NotNull
     public Collection<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
         final Collection<KeyBinding> matches = new HashSet<KeyBinding>();
 
