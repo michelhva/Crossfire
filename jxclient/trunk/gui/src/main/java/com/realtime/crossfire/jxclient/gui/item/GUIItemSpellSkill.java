@@ -267,7 +267,7 @@ public class GUIItemSpellSkill extends GUIItemItem {
     @NotNull
     @Override
     protected Image getFace(@NotNull final CfItem item) {
-        if (item.getFace() == null) {
+        if (item.getFace().getFaceNum() == 0) {
             return defaultSkillIcon.getOriginalImageIcon().getImage();
         }
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum(), null).getImage();
