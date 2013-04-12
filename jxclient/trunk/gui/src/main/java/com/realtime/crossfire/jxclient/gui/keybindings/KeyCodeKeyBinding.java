@@ -112,6 +112,7 @@ public class KeyCodeKeyBinding extends KeyBinding {
     /**
      * {@inheritDoc}
      */
+    @NotNull
     @Override
     public String getBindingDescription() {
         final StringBuilder sb = new StringBuilder();

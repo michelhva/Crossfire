@@ -96,6 +96,7 @@ public class KeyCharKeyBinding extends KeyBinding {
     /**
      * {@inheritDoc}
      */
+    @NotNull
     @Override
     public String getBindingDescription() {
         if (keyChar == '\n') {
