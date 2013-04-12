@@ -408,7 +408,7 @@ public class SpellsManager implements Iterable<Spell> {
     /**
      * Rebuilds the list of spells to display.
      */
-    protected void filterSpells() {
+    private void filterSpells() {
         filteredSpells.clear();
         for (final Spell spell : spells) {
             if (skillFilter == -1 || spell.getSkill() == skillFilter) {
@@ -420,7 +420,7 @@ public class SpellsManager implements Iterable<Spell> {
     /**
      * Rebuilds the list of skills from the spells.
      */
-    protected void rebuildSkills() {
+    private void rebuildSkills() {
         spellSkills.clear();
         for (final Spell spell : spells) {
             final Skill skill = skillSet.getSkill(spell.getSkill());
