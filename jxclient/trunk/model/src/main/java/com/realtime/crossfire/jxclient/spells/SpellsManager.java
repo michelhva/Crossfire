@@ -386,7 +386,6 @@ public class SpellsManager implements Iterable<Spell> {
      * @param index the skill index, should be less than getSpellSkills()
      */
     public void filterSkill(final int index) {
-
         if (index < 0 || index >= spellSkills.size()) {
             return;
         }
