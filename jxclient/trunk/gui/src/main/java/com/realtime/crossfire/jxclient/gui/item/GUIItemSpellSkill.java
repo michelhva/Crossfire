@@ -132,6 +132,7 @@ public class GUIItemSpellSkill extends GUIItemItem {
 
     };
 
+    @NotNull
     private final FaceImages defaultSkillIcon;
 
     /**
