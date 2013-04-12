@@ -382,8 +382,8 @@ public class SpellsManager implements Iterable<Spell> {
     }
 
     /**
-     * Filter spells to display by the specified skill index.
-     * @param index skill index, should be less than getSpellSkills().
+     * Filters spells to display by the specified skill index.
+     * @param index the skill index, should be less than getSpellSkills()
      */
     public void filterSkill(final int index) {
 
@@ -406,7 +406,7 @@ public class SpellsManager implements Iterable<Spell> {
     }
 
     /**
-     * Rebuild the list of spells to display.
+     * Rebuilds the list of spells to display.
      */
     protected void filterSpells() {
         filteredSpells.clear();
@@ -418,7 +418,7 @@ public class SpellsManager implements Iterable<Spell> {
     }
 
     /**
-     * Rebuild the list of skills from the spells.
+     * Rebuilds the list of skills from the spells.
      */
     protected void rebuildSkills() {
         spellSkills.clear();
@@ -433,17 +433,17 @@ public class SpellsManager implements Iterable<Spell> {
     }
 
     /**
-     * Return the number of spell skills.
-     * @return number of skills.
+     * Returns the number of spell skills.
+     * @return the number of skills
      */
     public int getSpellSkills() {
         return spellSkills.size();
     }
 
     /**
-     * Get the specified spell skill.
-     * @param index skill index, from 0 to getSpellSkills().
-     * @return specified skill, null if index is invalid.
+     * Returns the specified spell skill.
+     * @param index the skill index, from 0 to getSpellSkills()-1
+     * @return the specified skill, {@code null} if index is invalid
      */
     @Nullable
     public Skill getSpellSkill(final int index) {
