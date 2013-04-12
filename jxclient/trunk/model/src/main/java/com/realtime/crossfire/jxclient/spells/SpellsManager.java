@@ -331,6 +331,7 @@ public class SpellsManager implements Iterable<Spell> {
     /**
      * {@inheritDoc}
      */
+    @NotNull
     @Override
     public Iterator<Spell> iterator() {
         return Collections.unmodifiableList(filteredSpells).iterator();
