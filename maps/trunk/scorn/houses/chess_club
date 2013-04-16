@@ -8,7 +8,7 @@ enter_x 19
 enter_y 1
 msg
 Created:  2000-11-11 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2012-01-08 Rick Tanner
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch exit
@@ -3351,10 +3351,9 @@ x 16
 y 3
 end
 arch sign_e
-name chess club
+name Chess Club
 msg
 Welcome to the Scorn Chess Club!
---------------------------------
 endmsg
 x 16
 y 3
@@ -3386,7 +3385,7 @@ y 5
 carrying 8000
 no_pick 1
 arch tome
-name the art of chess
+name The Art of Chess
 end
 end
 arch dungeon_magic
