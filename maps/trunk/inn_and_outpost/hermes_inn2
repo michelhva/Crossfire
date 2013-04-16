@@ -8,7 +8,7 @@ enter_x 20
 enter_y 8
 msg
 Created:  2002-10-27 Todd Mitchell
-Modified: 2008-09-18 Rick Tanner
+Modified: 2013-04-06 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -963,6 +963,7 @@ x 13
 y 1
 arch key2
 name greasy key
+name_pl greasy keys
 slaying Hermes Stash Key
 msg
 This key is slightly greasy, like it has been oiled.
