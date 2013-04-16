@@ -8,7 +8,7 @@ enter_x 6
 enter_y 3
 msg
 Created:  2007-05-26 Nicolas Weeger
-Modified: 2012-06-28 Rick Tanner
+Modified: 2013-03-19 Kevin Zheng
 endmsg
 maplore
 @quest Lursendis
@@ -238,14 +238,14 @@ arch beigemarble
 x 3
 y 3
 end
+arch table_1x2
+x 3
+y 3
+end
 arch apple
 x 3
 y 3
 no_pick 1
-end
-arch table_1x2
-x 3
-y 3
 end
 arch beigemarble
 x 3
@@ -260,14 +260,14 @@ arch beigemarble
 x 3
 y 5
 end
+arch table_1x2
+x 3
+y 5
+end
 arch cabbage
 x 3
 y 5
 no_pick 1
-end
-arch table_1x2
-x 3
-y 5
 end
 arch beigemarble
 x 3
@@ -282,14 +282,14 @@ arch beigemarble
 x 3
 y 7
 end
+arch table_1x2
+x 3
+y 7
+end
 arch tomato
 x 3
 y 7
 no_pick 1
-end
-arch table_1x2
-x 3
-y 7
 end
 arch beigemarble
 x 3
@@ -304,14 +304,14 @@ arch beigemarble
 x 3
 y 9
 end
+arch table_1x2
+x 3
+y 9
+end
 arch onion
 x 3
 y 9
 no_pick 1
-end
-arch table_1x2
-x 3
-y 9
 end
 arch beigemarble
 x 3
@@ -393,14 +393,14 @@ arch beigemarble
 x 4
 y 10
 end
+arch table_2x1
+x 4
+y 10
+end
 arch clover
 x 4
 y 10
 no_pick 1
-end
-arch table_2x1
-x 4
-y 10
 end
 arch cobblestones2
 x 4
@@ -786,14 +786,14 @@ arch beigemarble
 x 8
 y 10
 end
+arch table_2x1
+x 8
+y 10
+end
 arch mint
 x 8
 y 10
 no_pick 1
-end
-arch table_2x1
-x 8
-y 10
 end
 arch cobblestones2
 x 8
@@ -906,14 +906,14 @@ arch beigemarble
 x 10
 y 3
 end
+arch table_1x2
+x 10
+y 3
+end
 arch cheeseburger
 x 10
 y 3
 no_pick 1
-end
-arch table_1x2
-x 10
-y 3
 end
 arch beigemarble
 x 10
@@ -928,14 +928,14 @@ arch beigemarble
 x 10
 y 5
 end
+arch table_1x2
+x 10
+y 5
+end
 arch mushroom_1
 x 10
 y 5
 no_pick 1
-end
-arch table_1x2
-x 10
-y 5
 end
 arch beigemarble
 x 10
@@ -950,14 +950,14 @@ arch beigemarble
 x 10
 y 7
 end
+arch table_1x2
+x 10
+y 7
+end
 arch mushroom_3
 x 10
 y 7
 no_pick 1
-end
-arch table_1x2
-x 10
-y 7
 end
 arch beigemarble
 x 10
@@ -972,14 +972,14 @@ arch beigemarble
 x 10
 y 9
 end
+arch table_1x2
+x 10
+y 9
+end
 arch roast_bird
 x 10
 y 9
 no_pick 1
-end
-arch table_1x2
-x 10
-y 9
 end
 arch beigemarble
 x 10
