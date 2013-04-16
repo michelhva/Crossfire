@@ -8,7 +8,7 @@ enter_x 12
 enter_y 18
 msg
 Created:  1993-10-15
-Modified: 2012-01-17 Rick Tanner
+Modified: 2013-03-17 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -1483,14 +1483,14 @@ end
 arch book_read
 name Guestbook
 msg
-Guests:         From:      To:
+Guests:		From:		To:
 =====================================
-- Lord Murky    14/12-134  16/12-134
-- Sir Gwain     15/12-134  25/12-134
-- Lord Skud     19/12-134   4/ 1-135
-- Sir Gwendale  25/12-134   2/ 1-135
-- Mr Pompel      1/ 1-135
-- Sir Wse        2/ 1-135   3/ 1-135
+Lord Murky	14/12-134	16/12-134
+Sir Gwain		15/12-134	25/12-134
+Lord Skud	19/12-134	4/ 1-135
+Sir Gwendale	25/12-134	2/ 1-135
+Mr. Pompe	1/ 1-135
+Sir Wise		2/ 1-135		3/ 1-135
 endmsg
 x 11
 y 17
@@ -1804,7 +1804,7 @@ end
 arch sign
 name Help
 msg
-To save, stand over a bed and then Apply ('a' key) the bed.  If necessary, stand over a lever and Apply ('a' key) the lever to open a nearby gate.
+To save, stand over a bed to reality and then (a)pply it. If necessary, stand over a lever and (a)pply the lever to open the gate.
 endmsg
 x 13
 y 18
