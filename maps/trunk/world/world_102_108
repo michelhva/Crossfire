@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-19
-Modified: 2012-09-12 Rick Tanner
+Modified: 2013-04-23 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -4034,15 +4034,15 @@ arch grass_only
 x 17
 y 8
 end
-arch tree3
+arch draughts_house
+name Draughts House of Santo Dominion
+slaying ../santo_dominion/misc/draughts
+hp 13
+sp 19
 x 17
 y 8
 end
 arch grass_only
-x 17
-y 9
-end
-arch tree5
 x 17
 y 9
 end
@@ -4325,11 +4325,7 @@ arch grass_only
 x 18
 y 8
 end
-arch tree3
-x 18
-y 8
-end
-arch grasspond
+arch grass_only
 x 18
 y 9
 end
