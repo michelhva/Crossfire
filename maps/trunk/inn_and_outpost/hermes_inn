@@ -8,7 +8,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2002-10-27 Todd Mitchell
-Modified: 2012-02-02 Rick Tanner
+Modified: 2013-04-06 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -1108,6 +1108,7 @@ y 1
 end
 arch booze_table
 name Drop 5 gold for booze
+sp 1
 food 5
 x 11
 y 1
@@ -1122,6 +1123,7 @@ y 3
 end
 arch food_table
 name Drop 10 gold for food
+sp 1
 food 10
 x 11
 y 3
@@ -1564,6 +1566,7 @@ y 2
 end
 arch silver_converter
 name convert silver into gold (12:1)
+sp 1
 food 12
 x 16
 y 2
@@ -1574,6 +1577,7 @@ y 3
 end
 arch diamond_converter
 name drop gold to buy diamonds (42:1)
+sp 1
 food 42
 x 16
 y 3
