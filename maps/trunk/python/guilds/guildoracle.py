@@ -128,11 +128,11 @@ if (Access ==1) or (isDM == 1):
                                                 record = guild.info(text[1]) #refresh record
                                                 message = '%s now has status of %s' %(text[1], record['Status'])
                                         else:
-                                                message = '%s is not a valid status' %text[2]
+                                                message = '%s is not a valid status, valid values are "suspended", "probation" or "good"' %text[2]
                                 else:
                                         message = '%s is not a member' %text[1]
                         else:
-                                message = 'Usage "status <member_name> <status>%s\s"' %str(guild.status)
+                                message = 'Usage "status <member_name> (suspended or probation or good)"'
                 elif text[0] == 'add' and isDM:
                         if len(text)==2:
                                 if log.info(text[1]):
