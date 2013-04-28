@@ -40,6 +40,7 @@ if CheckClearance([guildname,"GuildMaster"],activator):
 else:
 	Approved = 'Access denied'
 
+Access = 0
 
 if (Approved == 'Access granted'):
 		Access = 1
