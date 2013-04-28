@@ -5,6 +5,8 @@ whoami=Crossfire.WhoAmI()
 activatorname=activator.Name
 mymap = activator.Map
 
+Crossfire.SetReturnValue(1)
+
 def find_player(object):
     while (object.Type != 1) : #1 is type 'Player'
         object = object.Above
