@@ -62,13 +62,14 @@ def find_mailbox(object):
     while (object.Name != 'mailbox'):
         object = object.Above
         if not object:
-                return 0
+            return 0
     return object
+    
 def FindCoin(object):
     while (object.Name.find('silver coin')==-1):
         object = object.Above
         if not object:
-                return 0
+            return 0
     return object
 
 class GuildDues:
@@ -94,8 +95,8 @@ class GuildDues:
         '''Handles buying a guild extension'''
 
         if (not CheckClearance([self.guildname, "GuildMaster"], activator)):
-                whoami.Say("Only guild masters and GMs can buy extensions or new desks for the guild.")
-                return
+            whoami.Say("Only guild masters and GMs can buy extensions or new desks for the guild.")
+            return
 
         # This lists all items that can be bought, extensions or new desks
         Items = {
@@ -168,14 +169,14 @@ class GuildDues:
             return
 
         if item in Cards:
-                card = activator.CreateObject('diploma')
-                card.Name = item
-                card.Message = 'This enables you to buy a new ' + item + ' for your guild.'
-                card.Value = 0
-                bank.withdraw(self.accountname, Price)
-                whoami.Say("Here is your card\nThe guild now has %s on account." %(formatted_amount(bank.getbalance(self.accountname))))
+            card = activator.CreateObject('diploma')
+            card.Name = item
+            card.Message = 'This enables you to buy a new ' + item + ' for your guild.'
+            card.Value = 0
+            bank.withdraw(self.accountname, Price)
+            whoami.Say("Here is your card\nThe guild now has %s on account." %(formatted_amount(bank.getbalance(self.accountname))))
 
-                return
+            return
 
         Loc = Rooms.get(item)
         coin = Loc[0].ObjectAt(Loc[1], Loc[2])
@@ -208,13 +209,13 @@ class GuildDues:
         priceFactor = 50	# platinum to silver conversion
 
         if activator.PayAmount(priceMailScroll*priceFactor):
-                whoami.Say('Here is your mailscroll to %s'%text[1])
-                id = activator.CreateObject('scroll')
-                id.Name = 'mailscroll T: '+text[1]+' F: '+activator.Name
-                id.NamePl = 'mailscrolls T: '+text[1]+' F: '+activator.Name
-                id.Value = 0
+            whoami.Say('Here is your mailscroll to %s'%text[1])
+            id = activator.CreateObject('scroll')
+            id.Name = 'mailscroll T: '+text[1]+' F: '+activator.Name
+            id.NamePl = 'mailscrolls T: '+text[1]+' F: '+activator.Name
+            id.Value = 0
         else:
-                whoami.Say('You need %s platinum for a mailscroll'%priceMailScroll)
+            whoami.Say('You need %s platinum for a mailscroll'%priceMailScroll)
 
     def do_balance(self):
         '''Handle the display of the guild's balance.'''
@@ -276,17 +277,17 @@ class GuildDues:
         Value = CoinTypes.get(Type.upper())
 
         if Amount*Value <= balance:
-                message = (str(Amount))
-                message +=" " + Type + " withdrawn.\nYour new present balance is "
+            message = (str(Amount))
+            message +=" " + Type + " withdrawn.\nYour new present balance is "
 
-                id = activator.CreateObject(ArchType.get(Type.upper()))
-                CFItemBroker.Item(id).add(Amount)
-                bank.withdraw(self.accountname, Amount*Value)
-                message += formatted_amount(bank.getbalance(self.accountname))+"."
-                whoami.Say(message)
+            id = activator.CreateObject(ArchType.get(Type.upper()))
+            CFItemBroker.Item(id).add(Amount)
+            bank.withdraw(self.accountname, Amount*Value)
+            message += formatted_amount(bank.getbalance(self.accountname))+"."
+            whoami.Say(message)
         else:
-                message="You only have " + formatted_amount(bank.getbalance(self.accountname))+" on your account."
-                whoami.Say(message)
+            message="You only have " + formatted_amount(bank.getbalance(self.accountname))+" on your account."
+            whoami.Say(message)
 
     def handle_jack(self):
         '''Handle Jack, the guild helper'''
