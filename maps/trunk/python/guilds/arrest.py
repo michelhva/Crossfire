@@ -29,29 +29,26 @@ if activator == None or activator.Type != Crossfire.Type.PLAYER:
 
 
 if (Approved != 'Access granted'):
-     if (ActionRequired == "A"):
+    if (ActionRequired == "A"):
         activator.Teleport(Crossfire.ReadyMap('/scorn/misc/jail'),int(15),random.choice([1,3,5,9,11]))
-     elif (ActionRequired == "D"):
-
- 	x4=random.randint(21, 23)
- 	y4=random.randint(22,24)
- 	Corpse = activator.Map.ObjectAt(int (21), int (0))
- 	Curse = activator.Map.ObjectAt(int(x4),int(y4))
- 	mymap = activator.Map
-	Corpse.Name = str("%s's body" %(activator.Name))
-	Corpse.Race = str("%s's Curse" %(activator.Name))
-	Corpse.Weight = 1
-	Curse.Name = str("%s's Curse" %(activator.Name))
-	Corpse.Teleport(mymap, activator.X, activator.Y)
-	Curse.InsertInto(activator)
-	Curse1=activator.CheckArchInventory("amulet")
-	#whoami.Say(str(Curse1))
-	#whoami.Say(str(Curse))
-	Curse1.Applied = 1
-
+    elif (ActionRequired == "D"):
+        x4=random.randint(21, 23)
+        y4=random.randint(22,24)
+        Corpse = activator.Map.ObjectAt(int (21), int (0))
+        Curse = activator.Map.ObjectAt(int(x4),int(y4))
+        mymap = activator.Map
+        Corpse.Name = str("%s's body" %(activator.Name))
+        Corpse.Race = str("%s's Curse" %(activator.Name))
+        Corpse.Weight = 1
+        Curse.Name = str("%s's Curse" %(activator.Name))
+        Corpse.Teleport(mymap, activator.X, activator.Y)
+        Curse.InsertInto(activator)
+        Curse1=activator.CheckArchInventory("amulet")
+        #whoami.Say(str(Curse1))
+        #whoami.Say(str(Curse))
+        Curse1.Applied = 1
 
         activator.Teleport(mymap,int(23),int(0))
-	
 
 
 
