@@ -225,31 +225,35 @@ class GuildDues:
 
     def do_pay(self, text):
         '''Handle player paying dues to the guild.'''
-        if len(text) < 2:
+        if len(text) < 3:
             whoami.Say("How much ya wanna pay %s?\nYou can specify amounts in "%(random.choice(buddylist)) +
             ', '.join(i.lower() for i in CoinTypes.keys()))
             return
 
         cost = text[1]
-        type = ' '.join(text[2:])
-        utype = type.upper()
-        if not utype in CoinTypes.keys():
-            whoami.Say("Sorry, I don't know what are %s"%type)
+        currency = ' '.join(text[2:])
+        ucurrency = currency.upper()
+        if not ucurrency in CoinTypes.keys():
+            whoami.Say("Sorry, I don't know what %s are" % currency)
             return
 
-        conversionfactor = CoinTypes.get(utype)
+        conversionfactor = CoinTypes.get(ucurrency)
         total = int(cost)*conversionfactor
-        if activator.PayAmount(total):
+        if total and activator.PayAmount(total):
             guild = CFGuilds.CFGuild(self.guildname)
             guild.pay_dues(activator.Name,total)
-            whoami.Say("%s, %s %s paid to the guild." %(random.choice(remarklist), cost, type))
+            whoami.Say("%s, %s %s paid to the guild." % (random.choice(remarklist), cost, currency))
             bank = CFBank.CFBank(bankdatabase)
             bank.deposit(self.accountname, total)
         else:
-            if cost > 1:
-                whoami.Say("%s, you don't have %s %ss." %(random.choice(exclaimlist), cost, type))
+            if total == 0:
+                whoami.Say("Uh? Ya wanna trick me, %s." % random.choice(buddylist))
+            elif int(cost) > 1:
+                plural=''
+                if ucurrency.endswith('NOTE'): plural = 's'
+                whoami.Say("%s, you don't have %s %s%s." % (random.choice(exclaimlist), cost, currency, plural))
             else:
-                whoami.Say("You don't have any %s, %s." %(type, random.choice(buddylist)))
+                whoami.Say("You don't have any %s, %s." % (currency, random.choice(buddylist)))
 
     def do_withdraw(self, text):
         if (not activator.DungeonMaster==1 and not CheckClearance([self.guildname,"Master"],activator)):
