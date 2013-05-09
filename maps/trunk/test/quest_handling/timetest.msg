@@ -10,7 +10,7 @@
   "match" : ["*"],
   "pre" : [["age", "tenminutes", "0", "0", "0", "0", "10"]],
   "post": [["settoken", "tenminutes", "0"], ["giveitem", "biccie"]],
-  "msg" : ["Well done, have a biccie."]  
+  "msg" : ["Well done, have a biccie."]
   },{
   "match" : ["*"],
   "pre" : [["token", "tenminutes", "0"]],
@@ -20,6 +20,6 @@
   "match" : ["*"],
   "pre" : [],
   "post": [["marktime", "tenminutes"]],
-  "msg" : ["Oh no!, you spoke to me too soon, no biccie for you. Speak to me again in 10 minutes."]    
+  "msg" : ["Oh no!, you spoke to me too soon, no biccie for you. Speak to me again in 10 minutes."]
   }
 ]}

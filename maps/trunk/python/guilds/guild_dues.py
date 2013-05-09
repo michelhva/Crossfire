@@ -55,7 +55,7 @@ def formatted_amount(amount):
     """ Format a price as a string, giving full coin descriptions. Returns 'no money' if amount is 0. """
     if amount == 0:
         return 'no money'
-    
+
     return Crossfire.CostStringFromValue(amount)
 
 def find_mailbox(object):
@@ -64,7 +64,7 @@ def find_mailbox(object):
         if not object:
             return 0
     return object
-    
+
 def FindCoin(object):
     while (object.Name.find('silver coin')==-1):
         object = object.Above

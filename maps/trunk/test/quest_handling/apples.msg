@@ -10,7 +10,7 @@
   "match" : ["yes"],
   "pre" : [["quest", "testquest2", "10"], ["item", "apple", "7"], ["token", "askapples", "yes"]],
   "post": [["settoken", "askapples", "no"], ["takeitem", "apples", "0"], ["quest", "testquest2", "40"], ["giveitem", "money", "20"]],
-  "msg" : ["Wow, you got even more apples than I wanted, thank you so much, here's a couple of gold coins for you"]  
+  "msg" : ["Wow, you got even more apples than I wanted, thank you so much, here's a couple of gold coins for you"]
   },{
   "match" : ["yes"],
   "pre" : [["quest", "testquest2", "10"], ["item", "apple", "6"], ["token", "askapples", "yes"]],

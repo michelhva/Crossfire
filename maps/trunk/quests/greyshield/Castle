@@ -2873,7 +2873,7 @@ arch guildmaster
 name Chief of Staff
 msg
 @match king|grey
-The king does not see visitors.  Give me your request, and I will relay it to him. 
+The king does not see visitors.  Give me your request, and I will relay it to him.
 @match treasure|shield|secret
 I don't know what you are talking about.
 @match *

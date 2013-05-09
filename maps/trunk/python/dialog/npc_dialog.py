@@ -19,7 +19,7 @@
 #
 #
 # This is a simple script that makes use of CFNPCDialog.py and that receives
-# parameters from a JSON inside the event message. 
+# parameters from a JSON inside the event message.
 #
 # An example of a map file entry is:
 #
@@ -37,7 +37,7 @@
 # end
 # end
 #
-# see http://wiki.metalforge.net/doku.php/user:cavesomething:guide_to_quest_dialogs 
+# see http://wiki.metalforge.net/doku.php/user:cavesomething:guide_to_quest_dialogs
 # for lots of detail on how to use this, and look at examples in test/quest_handling
 
 import Crossfire
@@ -83,7 +83,7 @@ def parseJSON(filename, relpath):
                     shouldinclude =1
                 newfiles = jsonRule["include"]
                 if shouldinclude == 1:
-                    # this isn't a 'real' rule, so we don't include it, but we do 
+                    # this isn't a 'real' rule, so we don't include it, but we do
                     # include the results of parsing it.
                     parameters.extend(parseJSON(newfiles, os.path.dirname(filepath)))
                 else:

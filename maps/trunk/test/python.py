@@ -43,7 +43,7 @@ def do_help():
 	help += ' - checkinventory\n'
 	help += ' - nosave\n'
 	help += ' - move_to\n'
-	
+
 	whoami.Say(help)
 
 def do_arch():
@@ -150,7 +150,7 @@ def do_memory():
 		whoami.Say(' new x')
 
 	dict['s'] = x
-		
+
 
 def do_resist():
 	whoami.Say('Resistance test')
@@ -203,7 +203,7 @@ def do_misc():
 		whoami.Say("Inv.Env = %s"%inv.Env.Name)
 	else:
 		whoami.Say("Empty inv??")
-	
+
 	if len(topic) > 1:
 		map = Crossfire.MapHasBeenLoaded(topic[1])
 		if map:
@@ -284,9 +284,9 @@ def do_writekey():
 	val = ''
 	if (len(topic) > 3):
 		val = topic[3]
-	
+
 	whoami.Say('writekey returned %d'%who.WriteKey(topic[1], val, int(topic[2])))
-	
+
 def do_speed():
 	whoami.Say('Your speed is %f and your speed_left %f'%(who.Speed, who.SpeedLeft))
 #	who.Speed = 0.2
@@ -366,9 +366,9 @@ def do_face():
 	if len(topic) == 1:
 		whoami.Say('Face is %s'%obj.Face)
 		return
-	
+
 	face = topic[1]
-	
+
 	try:
 		obj.Face = face
 		whoami.Say('Face changed to %s'%face)
@@ -380,7 +380,7 @@ def do_anim():
 	if len(topic) == 1:
 		whoami.Say('Animation is %s'%obj.Anim)
 		return
-	
+
 	anim = topic[1]
 	try:
 		obj.Anim = anim

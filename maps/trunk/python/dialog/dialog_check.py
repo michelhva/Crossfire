@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # dialog_check.py
-# This script is *not* intended to be used by the crossfire plugin, it is 
+# This script is *not* intended to be used by the crossfire plugin, it is
 # designed to verify the correctness of a dialog script -independantly of the crossfire server.
-# Typically you will want to run this script against a single file, the one that you specify in 
+# Typically you will want to run this script against a single file, the one that you specify in
 # the event_say, but if you want to check all of the .msg files in the map distribution, then
 # you can run something like:
 # for i in $(grep -h name.*msg ../../ -r | cut -d " " -f 2 | sort | uniq); do echo $i && python dialog_check.py "../../"$i; done
@@ -58,14 +58,14 @@ def checkactionfile(filename, condition):
                     if argnum < len(args):
                         argmatch = re.compile(actline.split()[1])
                         if not argmatch.match(args[argnum]):
-                            print "ERROR: Argument ", argnum+2, "of rule: ", condition, " doesn't match regexp ", actline.split()[1] 
+                            print "ERROR: Argument ", argnum+2, "of rule: ", condition, " doesn't match regexp ", actline.split()[1]
                             return False
                     argnum+=1
         if checkstatus != 2:
             print "Warning: No dialogcheck block for file ", filename, " Unable to check condition ", condition
             return True
     return True
-    
+
 def checkdialoguefile(msgfile, location):
 
     rulenumber = 0
@@ -77,7 +77,7 @@ def checkdialoguefile(msgfile, location):
         f = open(msgfile,"rb")
     except:
         print "ERROR: Can't open file, ", msgfile
-        errors +=1 
+        errors +=1
     else:
         try:
             params = cjson.decode(f.read())
@@ -103,18 +103,18 @@ def checkdialoguefile(msgfile, location):
         pre =0
         for action in jsonRule:
             if action == "pre":
-                pre+=1 
+                pre+=1
                 for condition in jsonRule["pre"]:
                     action = condition[0]
                     path = os.path.join("pre/", action + ".py")
                     if not checkactionfile(path, condition):
                         print "ERROR: verification of action file ", path, " failed for rule ", rulenumber, " condition ", condition
                         errors+=1
-                    
+
             elif action == "msg":
                 for line in jsonRule["msg"]:
                     if len(line) > MAX_MSG_LENGTH:
-                        # We won't print out the entire line, because it's very 
+                        # We won't print out the entire line, because it's very
                         # very long, but we'll print the first 70 characters in order to help identify it
                         print "WARNING: A Dialog Line for rule", rulenumber, "is too long. (", len(line), "characters, maximum is", MAX_MSG_LENGTH, ") \nLine begins:", line[:70]
                         warnings+=1

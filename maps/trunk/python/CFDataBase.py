@@ -34,9 +34,9 @@ class CFDataBase:
         self.bankdb = shelve.open(self.bankdb_file, writeback=True)
 
     def store(self, name, value):
-        
+
         self.bankdb[name]=value
-        
+
         self.bankdb.sync()
 
         return 1

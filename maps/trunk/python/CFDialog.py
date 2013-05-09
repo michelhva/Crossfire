@@ -26,7 +26,7 @@
 # It is made for those who do not want to bother about complex programming,
 # but just want to make a few dialogs that are better than the @match system
 # used in the server.
-# You will not normally use this directly, but will instead want to call 
+# You will not normally use this directly, but will instead want to call
 # dialog/npc_dialog.py which will handle most common uses for dialogs.
 #
 # How to use CFDialog
@@ -38,7 +38,7 @@
 #   from CFDialog import DialogRule, Dialog
 #
 # Next, build the dialog by creating a sequence of several rules made up of
-# keywords, answers, preconditions, and postconditions.  
+# keywords, answers, preconditions, and postconditions.
 #
 # - Keywords are what the rule answers to.  For example, if you want a rule to
 #   trigger when the player says "hi", then "hi" must appear in the keyword
@@ -60,11 +60,11 @@
 #
 #   NOTE:  Answers may contain line breaks.  To insert one, use "\n".
 #
-# - Preconditions are checks that must pass in order for a rule to be 
+# - Preconditions are checks that must pass in order for a rule to be
 #   triggered. The checks that can be used are to be found in dialog/pre/*.py
 #   Each file describes how to use the check in question.
 #
-# - Postconditions are changes that should be made to the player and/or the 
+# - Postconditions are changes that should be made to the player and/or the
 #   game world after the rule triggers. The effects that are available are to
 #   be found in dialog/post/*.py Each file describes how to use the effect in
 #   question.
@@ -94,11 +94,11 @@
 #
 # A ./misc/npc_dialog.py script has been written that uses CFDialog, but
 # allows the dialog data to be written in JSON format.
-# This also permits the inclusion of additional files to take in more rules 
-# (this is mostly useful when you have a character who has some specific lines 
-# of dialog but also some other lines that are shared with other characters 
-# - the character can reference their specific lines of dialog directly and 
-# include the general ones. 
+# This also permits the inclusion of additional files to take in more rules
+# (this is mostly useful when you have a character who has some specific lines
+# of dialog but also some other lines that are shared with other characters
+# - the character can reference their specific lines of dialog directly and
+# include the general ones.
 #
 # ../scorn/kar/gork.msg is an example that uses multiple keywords and multiple
 # precondition values.  Whereas the above example has a linear and predicable
@@ -174,7 +174,7 @@ class DialogRule:
     def setPreFunction(self, function):
         self.__prefunction = function
 
-# This is a subclass of the generic dialog rule that we use for determining whether to 
+# This is a subclass of the generic dialog rule that we use for determining whether to
 # 'include' additional rules.
 class IncludeRule(DialogRule):
     def __init__(self, presemaphores):
@@ -203,7 +203,7 @@ class Dialog:
     # prefunctions are checked.  If all conditions they define are met, then
     # the NPC responds, and postconditions, if any, are set.  Postfunctions
     # also execute if present.
-    # some variable substitution is done on the message here, $me and $you 
+    # some variable substitution is done on the message here, $me and $you
     # are replaced by the names of the npc and the player respectively
     def speak(self, msg):
         # query the animation system in case the NPC is playing an animation
@@ -286,7 +286,7 @@ class Dialog:
                 return 0
         return 1
 
-    
+
     # If a rule triggers, this function goes through each condition and runs the file that handles it.
     def setConditions(self, rule):
         character = self.__character

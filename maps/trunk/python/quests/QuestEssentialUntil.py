@@ -18,11 +18,11 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 #
-# This script is intended to be bound to event_drop in the inventory of quest objects. 
-# it must always be given the name of the quest as its first argument, followed by 
+# This script is intended to be bound to event_drop in the inventory of quest objects.
+# it must always be given the name of the quest as its first argument, followed by
 # the stage number it should act until.
-# Until the specified stage in the specified quest is reached, the player will not be 
-# permitted to drop the item, after the stage specified, any attempt to drop the 
+# Until the specified stage in the specified quest is reached, the player will not be
+# permitted to drop the item, after the stage specified, any attempt to drop the
 # item will have it marked as startequip, causing it to disappear.
 # This is to prevent quests being bypassed by trading keys, etc.
 

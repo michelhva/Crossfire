@@ -81,7 +81,7 @@ def check_picked(door, who):
 def handle_key():
   '''Handle applying a locking key.'''
   Crossfire.SetReturnValue(1)
-  
+
   key = Crossfire.WhoAmI()
   who = Crossfire.WhoIsActivator()
 
@@ -142,22 +142,22 @@ def get_exp(door, who):
 def handle_lockpick():
   '''Handle lockpicking a door.'''
   Crossfire.SetReturnValue(1)
-  
+
   door = Crossfire.WhoAmI()
   who = Crossfire.WhoIsActivator()
-  
+
   if who == None:
     return
-  
+
   if door.Alive == 0:
     who.Write("This %s is unlocked."%(door.Name))
     return
-  
+
   chance = get_success_chance(door, who, Crossfire.WhoIsOther().Level)
   # chance to leave traces on the lock
   if random.randint(0, 100) < 100 - chance:
     door.WriteKey('door_picked', '1', 1)
-  
+
   # attempt to unlock
   if random.randint(0, 100) < chance:
     who.Write('You successfully pick the lock.')

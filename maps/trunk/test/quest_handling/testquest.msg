@@ -10,7 +10,7 @@
   "match" : ["*"],
   "pre" : [["quest", "testquest", "40"], ["token", "pester", "1"]],
   "post": [],
-  "msg" : ["I told you already, speak to the old man"]  
+  "msg" : ["I told you already, speak to the old man"]
   },{
   "match" : ["*"],
   "pre" : [["quest", "testquest", "40"]],

@@ -32,5 +32,5 @@
   "post": [["settoken", "seenbefore", "yes"]],
   "msg" : ["Hello I'm $me."]
   }
- 
+
 ]}

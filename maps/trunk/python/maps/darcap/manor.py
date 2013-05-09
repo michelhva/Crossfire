@@ -111,7 +111,7 @@ def check_arch(map, x, y, arch):
         if below.ArchName == arch:
             return 1
         below = below.Above
-    
+
     return 0
 
 def white_challenge():

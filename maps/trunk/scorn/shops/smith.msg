@@ -7,7 +7,7 @@
   "pre" : [["age", "orderplaced", "0", "0", "1", "0", "0"]]
   },
 
-  { 
+  {
   "comment": "Player returned too soon, patience padawan.",
   "match" : ["*"],
   "pre" : [["token", "ordered", "eyeshield", "redshield", "redmail", "bluemail", "greenmail"]],
@@ -193,18 +193,18 @@
   "pre" : [["token", "orderstatus", "interest"]],
   "post": [["settoken", "orderstatus", "0"]],
   "msg" : ["Ok then, come back later if you change your mind."]
-  
+
 
 },{
   "comment" : "start of conversation, set order status to 'interest'",
   "match" : ["*"],
   "pre" : [["token", "Seen before", "yes"]],
   "post": [["settoken", "orderstatus", "interest"]],
-  "msg" : ["Hello again, $you, can I interest you in some custom armour?"]    
+  "msg" : ["Hello again, $you, can I interest you in some custom armour?"]
   },{
   "match" : ["*"],
   "pre" : [],
   "post": [["settoken", "orderstatus", "interest"],["settoken", "Seen before", "yes"]],
-  "msg" : ["Hello there, can I interest you in some custom armour?"]    
+  "msg" : ["Hello there, can I interest you in some custom armour?"]
   }
 ]}

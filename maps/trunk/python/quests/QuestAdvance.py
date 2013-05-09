@@ -19,17 +19,17 @@
 #
 #
 # This script is intended to be bound to event objects in order to speed quests along
-# it must always be given the name of the quest as its first argument, followed by 
+# it must always be given the name of the quest as its first argument, followed by
 # any number of advance rules.
 # an advance rule looks like
 # 1>2
 # or
 # 2-4>5
-# which will in the first case, move the stated quest from step 1 to step 2 
+# which will in the first case, move the stated quest from step 1 to step 2
 # in the second case, it will move the quest from step 2, 3 or 4 to step 5
 # if no advance rule applies then nothing happens.
 # something like 0>1 may be specified to start the quest.
-# each advance rule should be separated by a space, there should be 
+# each advance rule should be separated by a space, there should be
 # no space within the individual rules.
 
 import Crossfire

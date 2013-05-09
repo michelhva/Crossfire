@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 #age.py
-# This is one of the files that can be called by an npc_dialog, 
+# This is one of the files that can be called by an npc_dialog,
 # The following code runs when a dialog has a pre rule of 'age'
-# The syntax is 
+# The syntax is
 # ["age", "agetoken", "years", "months", "days", "hours", "minutes"]
-# To deliver a True verdict, the agetoken must correspond to a date 
+# To deliver a True verdict, the agetoken must correspond to a date
 # that is was at least as long ago as the duration specified in the options.
 ## DIALOGCHECK
 ## MINARGS 6
@@ -25,7 +25,7 @@ class checkfailed(Exception):
 # minutes per hour is hardcoded to approximately 60
 
 try:
-    MAXTIMES = [Crossfire.Time.MONTHS_PER_YEAR, Crossfire.Time.WEEKS_PER_MONTH*Crossfire.Time.DAYS_PER_WEEK, 
+    MAXTIMES = [Crossfire.Time.MONTHS_PER_YEAR, Crossfire.Time.WEEKS_PER_MONTH*Crossfire.Time.DAYS_PER_WEEK,
                 Crossfire.Time.HOURS_PER_DAY, 60]
     # we have three times to consider, the old time, the current time, and the desired time difference.
     if len(args) != 6:
@@ -43,7 +43,7 @@ try:
 
     for i in range(5):
         actualdiff.append(currenttime[i]-oldtime[i])
-        
+
     for i in range(4,0,-1):
     # let's tidy up desireddiff first
         if desireddiff[i] > MAXTIMES[i-1]:
@@ -56,6 +56,6 @@ try:
     Crossfire.Log(Crossfire.LogDebug, "CFDialog: tidied up desired difference: %s actual difference %s" %(desireddiff, actualdiff))
     for i in range(5):
         if actualdiff[i] < desireddiff[i]:
-            raise checkfailed()     
+            raise checkfailed()
 except checkfailed:
     verdict = False
