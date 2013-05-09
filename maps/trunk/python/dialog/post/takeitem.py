@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # takeitem.py
-# This is one of the files that can be called by an npc_dialog, 
+# This is one of the files that can be called by an npc_dialog,
 # The following code runs when a dialog has a post rule of 'takeitem'
 # The syntax is ["takeitem", "itemtotake", "quantitytotake"]
 # "quantitytotake" is optional, if it is missing, then 1 is assumed.

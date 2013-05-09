@@ -46,7 +46,7 @@ def do_timer():
 		return
 
 	whoami.Say('This dagger is pretty old, and is covered with runes. Unfortunately I can\'t describe what they mean, but they sure look like religious ones. Maybe you could go ask a priest?')
-  
+
 	if pl.QuestGetState("scorn/Witherspoon-ghost") <= 20:
 		pl.QuestSetState("scorn/Witherspoon-ghost", 30)
 

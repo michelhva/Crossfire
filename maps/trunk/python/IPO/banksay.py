@@ -68,50 +68,50 @@ thanks_message = [ \
 
 mymap=activator.Map
 if whoami.Name.find("Deposit Box")>-1:
-	
+
 	ScriptParm=Crossfire.ScriptParameters()
 	if ScriptParm=="Close":
 		t=activator.CheckInventory("SkudCtrl")
-		
-		
-		
+
+
+
 		Total=float(t.Title)
 		Total=long(Total)
-		
+
 		t.Quantity=0
-		
+
 		MyInv=whoami.Inventory
 		Value=0
 		while MyInv!=None:
 			if (MyInv.Name!="Apply") and (MyInv.Name!="Close"):
-				
+
 				Value+=MyInv.Value*MyInv.Quantity
 				MyInv1=MyInv.Below
 				MyInv.Teleport(mymap, 15,3)
 				MyInv=MyInv1
 			else:
 				MyInv=MyInv.Below
-		
+
 		bank.deposit(activatorname, Value)
 		Difference=abs(Value-Total)
-		
-		
+
+
 		Fee=Difference-(Difference/fees)
 		bank.withdraw(activatorname, int(Fee))
-		
+
 		whoami.Say("A Service charge of "+str(int(Fee))+" silver coins has been charged on this transaction.")
-		
-		
-		
+
+
+
 	else:
-		
+
 		balance=bank.getbalance(activatorname)
 		Total=balance
-		
+
 		if balance >= 1000000:
-			
+
 			t=whoami.CreateObject("imperial100")
-			
+
 			bank.withdraw(activatorname,1000000)
 			balance=bank.getbalance(activatorname)
 		if balance >= 1000000/2:
@@ -122,7 +122,7 @@ if whoami.Name.find("Deposit Box")>-1:
 			t=whoami.CreateObject("ambercoin")
 			bank.withdraw(activatorname,1000000/2)
 			balance=bank.getbalance(activatorname)
-		
+
 		if balance >= 100000:
 			t=whoami.CreateObject("imperial10")
 			bank.withdraw(activatorname,100000)
@@ -143,7 +143,7 @@ if whoami.Name.find("Deposit Box")>-1:
 			t=whoami.CreateObject("imperial10")
 			bank.withdraw(activatorname,100000)
 			balance=bank.getbalance(activatorname)
-		
+
 		if balance >= 10000:
 			t=whoami.CreateObject("imperial")
 			bank.withdraw(activatorname,10000)
@@ -212,8 +212,8 @@ if whoami.Name.find("Deposit Box")>-1:
 		t=activator.CreateObject("force")
 		t.Name="SkudCtrl"
 		t.Title=str(Total)
-		
-		
+
+
 			#tnew=t.InserInto(whoami)
 if (whoami.Name != "Deposit Box"):
 	text = Crossfire.WhatIsMessage().split()
@@ -243,17 +243,17 @@ if (whoami.Name != "Deposit Box"):
 					information=inv.Message
 					information = string.split(information, "\n")
 					if (information[0] !="CANCELED"):
-						
+
 						payee = string.split(information[0], ' ')
 			#   whoami.Say(str(payee))
-						
+
 						payee=payee[5]
 						if payee != activator.Name:
 							if payee.upper() != "BEARER":
 								message = "This check is not made out to you!"
-				
+
 								mail.send(1, payee, "The-Imperial-Bank-of-Skud", 'Dear Sir or Madam:'+ "\n" + 'It has come to our attention that an attempt to cash a check made out to you by someone other than you has been made.  The check was made out by' + payer + '; and, the attempt to cash it was made by' + activator.Name + '.  We apologise for any trouble this may cause, and would like to inform you that we are always at your service.' + "\n \n" + 'Sincerly,'+ "\n"+'The Imperial Bank of Skud' )
-								mail.send(1, payer, "The-Imperial-Bank-of-Skud", 'Dear Sir or Madam:' + "\n" 'It has come to our attention that an attempt to cash a check made out by you to '+ payee + ' has been made by ' +activator.Name + '.  We apologise for any trouble this may cause; and, we would like to inform you that we are always at your service.'+"\n"+ "\n"+'Sincerly,'+"\n"+' The Imperial Bank of Skud') 
+								mail.send(1, payer, "The-Imperial-Bank-of-Skud", 'Dear Sir or Madam:' + "\n" 'It has come to our attention that an attempt to cash a check made out by you to '+ payee + ' has been made by ' +activator.Name + '.  We apologise for any trouble this may cause; and, we would like to inform you that we are always at your service.'+"\n"+ "\n"+'Sincerly,'+"\n"+' The Imperial Bank of Skud')
 							if payee.upper() == "BEARER":
 								payee = activator.Name
 						if payee == activator.Name:
@@ -269,7 +269,7 @@ if (whoami.Name != "Deposit Box"):
 									amount=int(amount[1])
 						#print cointype
 						#print amount
-			
+
 					#	conversionfactor=1
 					#	cointype1='silvercoin'
 									if cointypecoin=="Silver":
@@ -302,7 +302,7 @@ if (whoami.Name != "Deposit Box"):
 											inv.Name = inv.Name + " (CANCELED)"
 											bank.withdraw(payer,quantity)
 											bank.deposit(payee,quantity)
-								
+
 										else:
 											message = "Okay, %s %s transfered to your account." %(str(amount), cointypecoin)
 											inv.Message="CANCELED\n"+inv.Message
@@ -319,52 +319,52 @@ if (whoami.Name != "Deposit Box"):
 				else:
 					message = "Come back when you have a check to cash."
 					whoami.Say('z')
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		if len(text) >= 3:
 			amount = int(text[1])
 			Type=''
 			for i in text[2:]:
 				Type+=i+" "
 			Type=Type[:len(Type)-1]
-			
+
 			if Type[len(Type)-1]=='s':
 				Type=Type[:len(Type)-1]
-			
+
 			try:
-				
+
 				exchange_rate=CoinTypes.get(Type.upper())
 				if amount <= 0:
 					message = 'Usage "deposit <amount> <cointype>\n or deposit <issuer>\'s check"'
-				
+
 				elif activator.PayAmount(int(amount*exchange_rate)):
 					bank.deposit(activatorname, int((amount*exchange_rate)/fees))
 					bank.deposit(Skuds, int((amount*exchange_rate)-((amount*exchange_rate)/fees)))
-					
+
 					message = '%d %s received, %d %s deposited to bank account. %s' \
 					%((amount),Type, int(amount/fees),Type, random.choice(thanks_message))
 				else:
@@ -374,7 +374,7 @@ if (whoami.Name != "Deposit Box"):
 		else:
 			#message = 'Usage "deposit <amount> <cointype>\n or deposit <issuer>\'s check"'
 			pass
- 
+
 	elif text[0] == 'withdraw':
 		if len(text) >=3:
 			amount = int(text[1])
@@ -382,31 +382,31 @@ if (whoami.Name != "Deposit Box"):
 			for i in text[2:]:
 				Type+=i+" "
 			Type=Type[:len(Type)-1]
-			
+
 			if Type[len(Type)-1]=='s':
 				Type=Type[:len(Type)-1]
 			try:
-				
+
 				exchange_rate=int(CoinTypes.get(Type.upper()))
 				if amount <= 0:
 					message = 'Usage "withdraw <amount> <cointype>"'
-				
-				
+
+
 				elif bank.withdraw(activatorname, amount*exchange_rate):
-					
+
 					message = '%d %s withdrawn from bank account. %s' \
 					%(amount,Type, random.choice(thanks_message))
-					
-					
+
+
 					id = activator.Map.CreateObject(ArchType.get(Type.upper()), x, y)
 					CFItemBroker.Item(id).add(amount)
 					activator.Take(id)
 				else:
 					message = 'Not enough silver on your account'
 			except:
-				
+
 				message="Valid CoinTypes are Silver, Gold, Platinum, Jade, Amberium, Imperial Note, 10 Imperial Note, 100 Imperial Note.  \nPlease by sure to specify one of these types."
-				
+
 		else:
 			message = 'Usage "withdraw <amount in imperials>"'
 
@@ -440,12 +440,12 @@ if (whoami.Name != "Deposit Box"):
 					message = 'Sorry, you do not have any imperials'
 		else:
 			message = 'Usage "exchange <amount>" (imperials to platinum coins)'
-	
+
 
 	elif text[0] == 'balance':
 		if len(text)>=2:
 			Type=''
-			
+
 			for i in text[1:]:
 				Type+=i+" "
 			Type=Type[:len(Type)-1]
@@ -458,11 +458,11 @@ if (whoami.Name != "Deposit Box"):
 				message+="1 "+Type+'.'
 			elif int(balance)>1:
 				message+=str(int(balance))+" "+Type
-				
+
 				if Type.find("Note")==-1:
 					message+=" Coins."
-				
-				
+
+
 			else:
 				message="Your balance is less than 1 "+Type+'.'
 		else:
@@ -474,9 +474,9 @@ if (whoami.Name != "Deposit Box"):
 			else:
 				message = 'Sorry, you have no balance.'
 	elif text[0] == 'checks':
-	
 
- 
+
+
 
 
 		balance=bank.getbalance(activatorname)
@@ -484,7 +484,7 @@ if (whoami.Name != "Deposit Box"):
 			bank.withdraw(activatorname, 100)
 
 			mailmap=Crossfire.ReadyMap('/planes/IPO_storage')
-			
+
 			if mailmap:
 				pack=activator.Map.CreateObject('package', 1, 1)
 				pack.Name = 'IPO-package F: The-Imperial-Bank-of-Skud T: ' + activator.Name
@@ -498,15 +498,15 @@ if (whoami.Name != "Deposit Box"):
 				chequenew = cheque.InsertInto(pack)
 
 
-			
-			
+
+
 		else:
 			message = "You do not have sufficient funds in your bank account."
 
 
 	elif text[0] == 'cash':
 		inv=activator.CheckInventory('bankcard')
-	 
+
 		if inv:
 			name1=string.split(inv.Name, "'")
 			payer=name1[0]
@@ -515,14 +515,14 @@ if (whoami.Name != "Deposit Box"):
 			if (information[0] !="CANCELED"):
 				payee = string.split(information[0], ' ')
 	#   whoami.Say(str(payee))
-				
+
 				payee=payee[5]
 				if payee != activator.Name:
 					if payee.upper() != "BEARER":
 						message = "This check is not made out to you!"
-		
+
 						mail.send(1, payee, "The-Imperial-Bank-of-Skud", 'Dear Sir or Madam:'+ "\n" + 'It has come to our attention that an attempt to cash a check made out to you by someone other than you has been made.  The check was made out by' + payer + '; and, the attempt to cash it was made by' + activator.Name + '.  We apologise for any trouble this may cause, and would like to inform you that we are always at your service.' + "\n \n" + 'Sincerly,'+ "\n"+'The Imperial Bank of Skud' )
-						mail.send(1, payer, "The-Imperial-Bank-of-Skud", 'Dear Sir or Madam:' + "\n" 'It has come to our attention that an attempt to cash a check made out by you to '+ payee + ' has been made by ' +activator.Name + '.  We apologise for any trouble this may cause; and, we would like to inform you that we are always at your service.'+"\n"+ "\n"+'Sincerly,'+"\n"+' The Imperial Bank of Skud') 
+						mail.send(1, payer, "The-Imperial-Bank-of-Skud", 'Dear Sir or Madam:' + "\n" 'It has come to our attention that an attempt to cash a check made out by you to '+ payee + ' has been made by ' +activator.Name + '.  We apologise for any trouble this may cause; and, we would like to inform you that we are always at your service.'+"\n"+ "\n"+'Sincerly,'+"\n"+' The Imperial Bank of Skud')
 					if payee.upper() == "BEARER":
 						payee = activator.Name
 				if payee == activator.Name:
@@ -538,7 +538,7 @@ if (whoami.Name != "Deposit Box"):
 							amount=int(amount[1])
 				#print cointype
 				#print amount
-	
+
 			#	conversionfactor=1
 			#	cointype1='silvercoin'
 							if cointypecoin=="Silver":
@@ -570,10 +570,10 @@ if (whoami.Name != "Deposit Box"):
 									inv.Message="CANCELED\n"+inv.Message
 									inv.Name = inv.Name + " (CANCELED)"
 									bank.withdraw(payer,quantity)
-							
+
 									id = activator.Map.CreateObject(cointype1, x, y)
 									activator.Take(id)
-						
+
 								else:
 									message = "Okay, here are your %s %s." %(str(amount), cointypecoin)
 									inv.Message="CANCELED\n"+inv.Message
@@ -582,7 +582,7 @@ if (whoami.Name != "Deposit Box"):
 									id = activator.Map.CreateObject(cointype1, x, y)
 									CFItemBroker.Item(id).add(int(amount))
 									activator.Take(id)
-							
+
 							else:
 								message = "I'm sorry, but it appears that %s does not have enough money in his account to cover this transaction." %(payer)
 						else:

@@ -10,7 +10,7 @@ Manage a guild (players): Use the Guild Oracle in the guild HQ.  Only GMs can en
 
 Manage a guild (DMs): use the Guild Oracle to change the status of the guild (probation, suspended, good, inactive).  DMs can also add members to the guild or use the GM guild functions but SHOULD NOT in most cases.
 
-Join a guild(players):  Player enters Hall of joining and sits in chair of peril.  a GM must pull the 'lock' lever to secure the player, then the 'load' lever to have them join the guild.  
+Join a guild(players):  Player enters Hall of joining and sits in chair of peril.  a GM must pull the 'lock' lever to secure the player, then the 'load' lever to have them join the guild.
 
 Pay Dues(players): Paying Dues and doing guild quests are the way to get noticed and promoted in your guild.  Differnet guilds have different requirements but all gain status by having members generating dues and quest points.
 

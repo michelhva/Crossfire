@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 # marktime.py
-# This is one of the files that can be called by an npc_dialog, 
+# This is one of the files that can be called by an npc_dialog,
 # The following code runs when a dialog has a post rule of 'marktime'
 # The syntax is ["marktime", "nameofmarker"]
-# this can then be checked by an age condition that looks for the age 
+# this can then be checked by an age condition that looks for the age
 # of "nameofmarker"
 
 ## DIALOGCHECK

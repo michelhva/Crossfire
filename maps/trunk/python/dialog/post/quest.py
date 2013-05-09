@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 #quest.py
-# This is one of the files that can be called by an npc_dialog, 
+# This is one of the files that can be called by an npc_dialog,
 # The following code runs when a dialog has a post rule of 'quest'
 # The syntax is ["quest", "questname", "queststage"]
-# All arguments are required, questname must be a quest that is 
-# defined by one of the .quests files queststage must be a step 
+# All arguments are required, questname must be a quest that is
+# defined by one of the .quests files queststage must be a step
 # number in that quest
 ## DIALOGCHECK
 ## MINARGS 2

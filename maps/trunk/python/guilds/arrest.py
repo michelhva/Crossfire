@@ -57,6 +57,6 @@ if (Approved != 'Access granted'):
 	#activator.Teleport(mymap,int(x1),int(Y1))
 # else:
 #	whoami.Say(Approved)
-	
+
 #else:
 #	whoami.Say('Say enter to request entry')

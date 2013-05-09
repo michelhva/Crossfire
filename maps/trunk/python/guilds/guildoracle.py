@@ -42,10 +42,10 @@ else:
 Access = 0
 
 if (Approved == 'Access granted'):
-    Access = 1		
+    Access = 1
 else:
     whoami.Say(Approved)
-    
+
 if (Access ==1) or (isDM == 1):
     if (guildname):
         guild = CFGuilds.CFGuild(guildname)
@@ -99,7 +99,7 @@ if (Access ==1) or (isDM == 1):
                 if record:
                     if guild.promote_member(text[1]):
                         record = guild.info(text[1]) #refresh record
-                        message = '%s promoted to %s' %(text[1], record['Rank'])	
+                        message = '%s promoted to %s' %(text[1], record['Rank'])
                     else:
                         message = 'You cannot promote %s' %text[1]
                 else:

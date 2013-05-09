@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # giveknowledge.py
-# This is one of the files that can be called by an npc_dialog, 
+# This is one of the files that can be called by an npc_dialog,
 # The following code runs when a dialog has a post rule of 'giveknowledge'
 # The syntax is ["giveknowledge", "knowledge code"]
 # The player will receive the specified knowledge, from its code.

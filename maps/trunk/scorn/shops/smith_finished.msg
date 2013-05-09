@@ -7,7 +7,7 @@
   "msg" : ["Ok then, I'll keep it here until you come back to collect it."]
   },
 
-  { 
+  {
   "comment": "Collecting a previous order",
   "match" : ["yes"],
   "pre" : [["token", "completed", "eyeshield"]],
@@ -36,7 +36,7 @@
   },
 
 
-  { 
+  {
   "comment": "Previous Order is ready",
   "match" : ["*"],
   "pre" : [["token", "ordered", "greenmail"]],

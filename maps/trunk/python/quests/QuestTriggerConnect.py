@@ -19,7 +19,7 @@
 #
 #
 # This script is intended to be bound to event objects in order to conditionally trigger
-# connections based on the status of a quest, used correctly it can reduce the need for 
+# connections based on the status of a quest, used correctly it can reduce the need for
 # markers to use checkinvs on.
 # it must always be given the following arguments:
 # name of the quest

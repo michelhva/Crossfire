@@ -1,5 +1,5 @@
 #This is the madness maze, created by Alestan.  Like all of crossfire, it is distributed under the GNU lisence.
-#Please report bugs to Alestan@meflin.com  
+#Please report bugs to Alestan@meflin.com
 #Created: 1 Aug 2008
 import Crossfire
 import CFGuilds

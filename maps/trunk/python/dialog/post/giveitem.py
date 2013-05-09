@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 # giveitem.py
-# This is one of the files that can be called by an npc_dialog, 
+# This is one of the files that can be called by an npc_dialog,
 # The following code runs when a dialog has a post rule of 'giveitem'
 # The syntax is ["giveitem", "itemtogive", "quantitytogive"]
 # "quantitytogive" is optional, if it is missing, then 1 is assumed.
-# The NPC must have at least one of the item being given, either in their 
+# The NPC must have at least one of the item being given, either in their
 # inventory or in their NPC_Gift_Box if they have one.
 # items are matched by item name, not arch name.
 

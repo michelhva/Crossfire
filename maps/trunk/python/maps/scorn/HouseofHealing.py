@@ -34,7 +34,7 @@ def greet():
 
 def do_say():
 	uses = player_status()
-	
+
 	if (uses < len(questions)):
 		if (message == answers[uses]):
 			who.Say('Correct! Be restored!');
@@ -44,11 +44,11 @@ def do_say():
 		greet()
 		who.Say('If you wish me to restore your stats, %s'%questions[uses])
 		return
-	
+
 	greet()
 
 if (event.Subtype == Crossfire.EventType.SAY):
 	do_say()
-	
+
 
 Crossfire.SetReturnValue(1)

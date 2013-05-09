@@ -36,7 +36,7 @@ else:
         if contents:
             nextob=inv.Inventory
             while nextob:
-                # when giving the contents of a container, always give the 
+                # when giving the contents of a container, always give the
                 # number of items in the container, not the quantity number.
                 quantity = nextob.Quantity
                 if quantity == 0:
@@ -57,5 +57,5 @@ else:
 
             newob.InsertInto(character)
     else:
-        # ok, we didn't find any 
+        # ok, we didn't find any
         Crossfire.Log(Crossfire.LogError, "Dialog script tried to give a non-existant item to a player")

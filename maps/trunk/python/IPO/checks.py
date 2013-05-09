@@ -21,7 +21,7 @@ if temp[0]!="Amount":
 	currency=message1[3]
 
 	message="Pay to the order of: " + payee + "\nAmount: " + str(quantity) + " "+currency + "\nSigned: " + activator.Name
-	
+
 whoami.Message = message
 
 conversionfactorgold=10
@@ -80,5 +80,3 @@ elif cointype == "Imperial":
 #			newcheck.Teleport(activator.Map,x,y)
 #			newcheck.Value=int((number)*(conversionfactor))
 #			activator.Say(str(int(number*conversionfactor)))
-		
-		

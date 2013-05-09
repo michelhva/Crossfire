@@ -19,15 +19,15 @@ def find_player(object):
 whoami=Crossfire.WhoAmI()
 
 def CheckClearance(lParams,oActivator):
-        
+
         ClearanceLevels={"Initiate":1,"Novice":2,"Guildman":3,"Journeyman":4,"Master":5,"GuildMaster":6}
         oGuild=CFGuilds.CFGuild(lParams[0])
-        
+
         if oActivator.DungeonMaster==1:
                 return True
         iClearanceLevel=ClearanceLevels.get(lParams[1],0)
         dGuildInfo=oGuild.info(oActivator.Name)
-        
+
         if dGuildInfo==0:
             return False
 
@@ -40,7 +40,7 @@ def CheckClearance(lParams,oActivator):
         if iClearanceLevel>iClearanceApproved:
                 return False
         return True
-        
+
 
 if __name__=='__builtin__':
 
@@ -55,7 +55,7 @@ if __name__=='__builtin__':
                 else:
                        Approved = "Access denied"
                 whoami.Say(Approved)
-                
+
 
                 if (Approved == 'Access granted'):
                         mymap.TriggerConnected(int(Params[2]),0,activator)

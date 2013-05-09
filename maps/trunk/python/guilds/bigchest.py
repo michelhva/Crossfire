@@ -23,8 +23,8 @@ if whoami.Name=="Big Chest":
 	Target=activator.CheckInventory("BigChest")
 	if Target !=None:
 		Target.Quantity=0
-	
-	
+
+
 	Card=activator.CreateObject("event_apply")
 	Card.Name="BigChest"
 
@@ -40,4 +40,3 @@ else:
 		Target.Remove()
 
 		activator.Teleport(Map, 1,9)
-	

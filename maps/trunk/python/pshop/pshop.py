@@ -22,10 +22,10 @@ pshop=whoami.Map.Path.replace("/","_")
 
 activator=Crossfire.WhoIsActivator()
 
-	
+
 def Expire():
 	global Owner
-	
+
 	Inventory=mymap.ObjectAt(43,2)
 	MailMap=Crossfire.ReadyMap("/planes/IPO_storage")
 	while Inventory!=None:
@@ -34,7 +34,7 @@ def Expire():
 			package.Name="IPO-package F: Your-Private-Shop T: "+Owner
 			Inventory.InsertInto(package)
 			package.Teleport(MailMap,2,2)
-			
+
 		Inventory=Inventory.Above
 	Inventory=mymap.ObjectAt(43,2)
 	while Inventory!=None:
@@ -43,11 +43,11 @@ def Expire():
 			package.Name="IPO-package F: Your-Private-Shop T: "+Owner
 			Inventory.InsertInto(package)
 			package.Teleport(MailMap,2,2)
-			
+
 		Inventory=Inventory.Below
-	
+
 	Dict=CFDB.get(pshop)
-	
+
 	for i in Dict:
 		This=Dict.get(i)
 		if This[1]!="PickedUp":
@@ -56,9 +56,9 @@ def Expire():
 				That=GetObjectByWeightLimit(That,int(i))
 				if That!=0:
 					That.Teleport(whoami.Map,37,0)
-	
+
 	CFDB.store(pshop,{})
-	Owner="Unowned"		
+	Owner="Unowned"
 	Chest=mymap.ObjectAt(30,8)
 	Chest=GetObjectByName(Chest, "Rent Box")
 	if Chest!=0:
@@ -69,7 +69,7 @@ def Expire():
 			b.Remove
 			b=GetObjectAt(whoami.Map,i,a,'NoSpell')
 			b.Remove()
-	
+
 	GetObjectAt(whoami.Map,30,5,"Brazier material").Remove()
 	GetObjectAt(whoami.Map,30,6,"Firepot material").Remove()
 	GetObjectAt(whoami.Map,30,7,"Bright Firepot Material").Remove()
@@ -107,12 +107,12 @@ mymap=whoami.Map
 CoinTypes={"SILVER":1,"GOLD":10,"PLATINUM":50,"JADE":5000,"AMBER":500000,"IMPERIAL":10000}
 Params=Crossfire.ScriptParameters()
 if whoami.Name.find("Store")>-1:
-	
-	
+
+
 	InvCount=GetInvCount(whoami)
 	if InvCount==0:
 		whoami.Say("Useage: Put an item in me and name a price.  For details, ask for 'help'.")
-	
+
 	else:
 		Message=Crossfire.WhatIsMessage()
 		Message=Message.split()
@@ -125,11 +125,11 @@ if whoami.Name.find("Store")>-1:
 		Package=whoami.CreateObject("dust_generic")
 		Package.Face="package.111"
 		Package.Teleport(whoami.Map,43,2)
-		
+
 		for i in range(InvCount):
 			Item=whoami.Inventory
 			Item.InsertInto(Package)
-		
+
 		Package.Name=str(whoami.Value)+" "+str(Value)
 		Package.Speed=whoami.Value
 		Package.WeightLimit=0
@@ -137,17 +137,17 @@ if whoami.Name.find("Store")>-1:
 		z.Name="Pickup"
 		z.Title="Python"
 		z.Slaying="/python/pshop/pshop.py"
-		
-		
-		
-		
+
+
+
+
 		#STRING=STRING.split("Items: ")[1]
-		
-		if Item.Name==Crossfire.ScriptParameters(): 
+
+		if Item.Name==Crossfire.ScriptParameters():
 			Item=Item.Below
-		
-		
-		
+
+
+
 		GlassReplica=whoami.CreateObject("icecube")
 		GlassReplica.WeightLimit=whoami.Value
 		GlassReplica.Weight=max(Item.Weight*Item.Quantity,1)
@@ -170,14 +170,14 @@ if whoami.Name.find("Store")>-1:
 		t.Title="Python"
 		t.Slaying="/python/pshop/Ice.py"
 		GlassReplica.Speed=0.0010000000475
-		
+
 		GlassReplica.Face=(str(Item.Face))
 		#GlassReplica.Material=(96,'ice')
-		
+
 		GlassReplica.Name=str(Item.Quantity)+" "+Item.Name+" Price: "+str(Value)
 		GlassReplica.NamePl="0"
-		
-		
+
+
 		Message="Name: "+str(Item.Name)
 		Message+="\nTitle: "+str(Item.Title)
 		#Message+="\nMaterial: "+str(Item.Material.get("MaterialName"))
@@ -185,7 +185,7 @@ if whoami.Name.find("Store")>-1:
 		if Item.Cursed==1:
 			Message+="\nCursed: True"
 		Message+="\nWeight: "+str(Item.Weight)
-		
+
 		if Item.Dam!=0:
 			Message+="\nDam: "+str(Item.Dam)
 		if Item.AC!=0:
@@ -196,7 +196,7 @@ if whoami.Name.find("Store")>-1:
 			Message+="\nWis: "+str(Item.Wis)
 		if Item.Str!=0:
 			Message+="\nStr: "+str(Item.Str)
-		
+
 		if Item.Pow!=0:
 			Message+="\nPow: "+str(Item.Pow)
 		if Item.Int!=0:
@@ -216,17 +216,17 @@ if whoami.Name.find("Store")>-1:
 		if Dict==None:
 			Dict={}
 		Dict.update({str(whoami.Value):(Value,"PickedUp",Message)})
-		
-		
+
+
 		CFDB.store(pshop,Dict)
 
 		whoami.Value+=1
 elif whoami.Name.find("Rent Box")>-1:
 	Value=0
 	Inventory=whoami.Inventory
-	
+
 	while Inventory!=None:
-		
+
 		if Inventory.ArchName=="event_close":
 			Inventory=Inventory.Above
 		else:
@@ -240,7 +240,7 @@ elif whoami.Name.find("Rent Box")>-1:
 	Owner=VariableList[0].split(": ")[1]
 	Date=VariableList[1].split(": ")[1]
 	Days=int(VariableList[2].split(": ")[1])
-	
+
 
 
 	Year, Month, Day=Date.split("-")
@@ -259,9 +259,9 @@ elif whoami.Name.find("Rent Box")>-1:
 			else:
 				Days+=int(Value/50)
 				Value-=int(Value/50)*50
-		
-			
-			
+
+
+
 		if Value>=100:
 			if Days<60:
 				DT60=60-Days
@@ -271,7 +271,7 @@ elif whoami.Name.find("Rent Box")>-1:
 				else:
 					Days+=int(Value/100)
 					Value-=int(Value/100)*100
-		
+
 		if Value>=200:
 			if Days<90:
 				DT90=90-Days
@@ -344,7 +344,7 @@ elif whoami.Name.find("Rent Box")>-1:
 				else:
 					Days+=int(Value/25600)
 					Value-=int(Value/25600)*25600
-		
+
 		if Value>=51200:
 			if Days<330:
 				DT330=330-Days
@@ -382,7 +382,7 @@ elif whoami.Name.find("Rent Box")>-1:
 		whoami.Teleport(whoami.Map,30,8)
 	else:
 		whoami.Teleport(whoami.Map,15,10)
-	Variables.Message="Owner: "+Owner+"\nDate: "+str(Today.year)+"-"+str(Today.month)+"-"+str(Today.day)+"\nDays: "+str(Days)	
+	Variables.Message="Owner: "+Owner+"\nDate: "+str(Today.year)+"-"+str(Today.month)+"-"+str(Today.day)+"\nDays: "+str(Days)
 elif Params=="Trade":
 	Message=Crossfire.WhatIsMessage().split()
 	if Message[0].upper()=='TRADE':
@@ -390,7 +390,7 @@ elif Params=="Trade":
 		Title=''
 		Quantity=0
 		for i in range(len(Message)):
-			
+
 			if Message[i].upper()=="NAME":
 				Name=Message[i+1]
 			elif Message[i].upper()=='TITLE':
@@ -400,34 +400,34 @@ elif Params=="Trade":
 elif Params=="Exchange":
 	pass
 elif Params=="InventorySay":
-	
+
 	Message=Crossfire.WhatIsMessage().split()
 	if Message[0]=="Remove":
-		
+
 		CFDB.store(pshop,None)
 	if Message[0].upper().find("DETAIL")>-1:
 		Item=' '.join(Message[1:])
-		
+
 		Dict=CFDB.get(pshop)
-		
+
 		if Dict==0:
 			Dict={}
-		
+
 		Ctrl=1
 		for i in Dict:
 			Str=Dict.get(str(i))
 			Name=Str[2].split('\n')[0].split("Name: ")[1]
-			
+
 			if Item==Name:
-				
+
 				Message="\n"+str(Dict.get(i)[2])
-				
+
 				Message+=("\nAsking Price: "+str(Dict.get(i)[0])+"\nLocation: ")
-				
+
 				if Dict.get(i)[1]=="PickedUp":
-					
+
 					Message+="Not on store floor"
-					
+
 				elif Dict.get(i)[1][1]<=9:
 					Message+="In employee only area."
 				else:
@@ -436,29 +436,29 @@ elif Params=="InventorySay":
 				whoami.Say(Message)
 				Ctrl=0
 		if Ctrl==1:
-			
-			
+
+
 			Item=int(Message[1])
-			
-				
+
+
 			Item=list(Dict)[Item-1]
-				
+
 			Item=Dict.get(str(Item))[2].split('\n')[0].split('Name: ')[1]
-		
+
 			for i in Dict:
 				Str=Dict.get(str(i))
 				Name=Str[2].split('\n')[0].split("Name: ")[1]
-				
+
 				if Item==Name:
-					
+
 					Message="\n"+str(Dict.get(i)[2])
-					
+
 					Message+=("\nAsking Price: "+str(Dict.get(i)[0])+"\nLocation: ")
-					
+
 					if Dict.get(i)[1]=="PickedUp":
-						
+
 						Message+="Not on store floor"
-						
+
 					elif Dict.get(i)[1][1]<=9:
 						Message+="In employee only area."
 					else:
@@ -473,27 +473,27 @@ elif Params=="AutoCheckout":
 	RealItems=[]
 	MissingItems=[]
 	Price=0
-	
+
 	while Inv!=None:
-		
+
 		if (Inv.Name.find("Price: ")>-1):
-			
+
 			Items=Items.__add__([Inv])
-			
+
 		Inv=Inv.Below
 	for i in Items:
 		Item=(activator.Map.ObjectAt(43,2))
-		
-		
-		
+
+
+
 		Item=GetObjectByUID(Item,str(i.WeightLimit))
-		
+
 		if Item!=0:
-			
+
 			Price+=int(Item.Name.split()[1])
 			RealItems=RealItems.__add__([Item])
 		else:
-			
+
 			whoami.Say("Item "+i.Name+" missing.")
 			MissingItems=MissingItems.__add__([i])
 	if activator.PayAmount(Price):
@@ -503,24 +503,24 @@ elif Params=="AutoCheckout":
 		for i in Items:
 			i.Teleport(activator.Map, 37,0)
 			i.Speed+=(0.00010000000475*2)
-			
+
 		for i in MissingItems:
 			i.Teleport(activator.Map,37,0)
 			i.Speed+=(0.00010000000475*2)
 			tmp=Dict.pop((str(i.WeightLimit)))
-			
-			
+
+
 		CFDB.store(pshop,Dict)
-		
+
 		Variables=GetObjectByName(mymap.ObjectAt(49,0),"Variables")
-		
+
 
 
 		VariableList= Variables.Message.split('\n')
 		Owner=VariableList[0]
 		Date=VariableList[1]
 		Days=VariableList[2]
-		
+
 		Owner=Owner.split(": ")[1]
 		Date=Date.split(": ")[1]
 
@@ -541,16 +541,16 @@ elif Params=="AutoCheckout":
 			else:
 				Days+=int(Price/50)
 				Price-=int(Price/50)
-		
+
 		if Days<=0:
 			global Owner
-	
-	
+
+
 			Expire()
 
-		Variables.Message="Owner: "+Owner+"\nDate: "+str(Today.year)+"-"+str(Today.month)+"-"+str(Today.day)+"\nDays: "+str(Days)	
+		Variables.Message="Owner: "+Owner+"\nDate: "+str(Today.year)+"-"+str(Today.month)+"-"+str(Today.day)+"\nDays: "+str(Days)
 		bank.deposit(Owner, int(Price/1.01))
-		
+
 	else:
 		whoami.Say("You do not have enough cash, "+str(Price)+" silver needed.")
 elif Params=="BankCheckout":
@@ -560,27 +560,27 @@ elif Params=="BankCheckout":
 	RealItems=[]
 	MissingItems=[]
 	Price=0
-	
+
 	while Inv!=None:
 		if (Inv.Name.find("Price: ")>-1):
-			
+
 			Items=Items.__add__([Inv])
-			
+
 		Inv=Inv.Below
-	
+
 	for i in Items:
 		Item=(activator.Map.ObjectAt(43,2))
-		
-		
-		
+
+
+
 		Item=GetObjectByUID(Item,str(i.WeightLimit))
-		
+
 		if Item!=0:
-			
+
 			Price+=int(Item.Name.split()[1])
 			RealItems=RealItems.__add__([Item])
 		else:
-			
+
 			whoami.Say("Item "+i.Name+" missing.")
 			MissingItems=MissingItems.__add__([i])
 	if bank.getbalance(activator.Name)>=Price:
@@ -591,24 +591,24 @@ elif Params=="BankCheckout":
 		for i in Items:
 			i.Teleport(activator.Map, 37,0)
 			i.Speed+=(0.00010000000475*2)
-			
+
 		for i in MissingItems:
 			i.Teleport(activator.Map,37,0)
 			i.Speed+=(0.00010000000475*2)
 			tmp=Dict.pop((str(i.WeightLimit)))
-			
-			
+
+
 		CFDB.store(pshop,Dict)
-		
+
 		Variables=GetObjectByName(mymap.ObjectAt(49,0),"Variables")
-		
+
 
 
 		VariableList= Variables.Message.split('\n')
 		Owner=VariableList[0]
 		Date=VariableList[1]
 		Days=VariableList[2]
-		
+
 		Owner=Owner.split(": ")[1]
 		Date=Date.split(": ")[1]
 
@@ -629,16 +629,16 @@ elif Params=="BankCheckout":
 			else:
 				Days+=int(Price/50)
 				Price-=int(Price/50)
-		
+
 		if Days<=0:
 			global Owner
-	
-	
+
+
 			Expire()
 
-		Variables.Message="Owner: "+Owner+"\nDate: "+str(Today.year)+"-"+str(Today.month)+"-"+str(Today.day)+"\nDays: "+str(Days)	
+		Variables.Message="Owner: "+Owner+"\nDate: "+str(Today.year)+"-"+str(Today.month)+"-"+str(Today.day)+"\nDays: "+str(Days)
 		bank.deposit(Owner, int(Price/1.01))
-		
+
 	else:
 		whoami.Say("You do not have enough funds in the bank. "+str(Price)+" needed.")
 elif Params=="TrashOpen":
@@ -654,11 +654,11 @@ elif Params=="TrashClose":
 			Trash=Trash.Above
 		else:
 			Trash.Teleport(whoami.Map,37,0)
-			
+
 			if Trash.ArchName=="icecube":
 				Trash.Speed+=(0.00010000000475*2)
 			Trash=whoami.Inventory
-			
+
 else:
 	whoami.Message="xyzzy"
 	Dict=CFDB.get(pshop)
@@ -667,6 +667,5 @@ else:
 	whoami.Message=''
 	for i in Dict:
 		Str=Dict.get(i)[2].split('\n')[0]
-		
+
 		whoami.Message+=str(Str)
-	

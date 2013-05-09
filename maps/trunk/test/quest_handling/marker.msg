@@ -10,7 +10,7 @@
   "match" : ["one", "1"],
   "pre" : [],
   "post": [["givecontents", "markers1"]],
-  "msg" : ["Here you go, this set are in the gift box."]  
+  "msg" : ["Here you go, this set are in the gift box."]
   },{
   "match" : ["*"],
   "pre" : [],
