@@ -157,3 +157,43 @@ identified 1
 name_pl raw emeralds of flawless beauty
 client_type 2011
 end
+
+Object raw_amethyst_great_value
+name raw amethyst of great value
+race gold and jewels
+type 60
+face pretty_amethyst.111
+nrof 1
+value 12
+weight 1000
+material 64
+identified 1
+name_pl raw amethysts of great value
+client_type 2011
+end
+Object raw_amethyst_exceptional_beauty
+name raw amethyst of exceptional beauty
+race gold and jewels
+type 60
+face amethyst_exceptional.111
+nrof 1
+value 126
+weight 1300
+material 64
+identified 1
+name_pl raw amethysts of exceptional beauty
+client_type 2011
+end
+Object raw_amethyst_flawless_beauty
+name raw amethyst of flawless beauty
+race gold and jewels
+type 60
+face amethyst_flawless.111
+nrof 1
+value 1260
+weight 1600
+material 64
+identified 1
+name_pl raw amethysts of flawless beauty
+client_type 2011
+end
