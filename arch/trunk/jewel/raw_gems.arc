@@ -117,3 +117,43 @@ identified 1
 name_pl raw sapphires of flawless beauty
 client_type 2011
 end
+
+Object raw_emerald_great_value
+name raw emerald of great value
+race gold and jewels
+type 60
+face pretty_emerald.111
+nrof 1
+value 16
+weight 1000
+material 64
+identified 1
+name_pl raw emeralds of great value
+client_type 2011
+end
+Object raw_emerald_exceptional_beauty
+name raw emerald of exceptional beauty
+race gold and jewels
+type 60
+face emerald_exceptional.111
+nrof 1
+value 160
+weight 1300
+material 64
+identified 1
+name_pl raw emeralds of exceptional beauty
+client_type 2011
+end
+Object raw_emerald_flawless_beauty
+name raw emerald of flawless beauty
+race gold and jewels
+type 60
+face emerald_flawless.111
+nrof 1
+value 1600
+weight 1600
+material 64
+identified 1
+name_pl raw emeralds of flawless beauty
+client_type 2011
+end
