@@ -48,7 +48,7 @@ value 20
 weight 1000
 material 64
 identified 1
-name_pl raw rubys of great value
+name_pl raw rubies of great value
 client_type 2011
 end
 Object raw_ruby_exceptional_beauty
@@ -61,7 +61,7 @@ value 200
 weight 1300
 material 64
 identified 1
-name_pl raw rubys of exceptional beauty
+name_pl raw rubies of exceptional beauty
 client_type 2011
 end
 Object raw_ruby_flawless_beauty
@@ -74,7 +74,7 @@ value 2000
 weight 1600
 material 64
 identified 1
-name_pl raw rubys of flawless beauty
+name_pl raw rubies of flawless beauty
 client_type 2011
 end
 
