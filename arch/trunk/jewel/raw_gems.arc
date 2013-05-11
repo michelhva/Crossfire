@@ -77,3 +77,43 @@ identified 1
 name_pl raw rubys of flawless beauty
 client_type 2011
 end
+
+Object raw_sapphire_great_value
+name raw sapphire of great value
+race gold and jewels
+type 60
+face pretty_sapphire.111
+nrof 1
+value 18
+weight 1000
+material 64
+identified 1
+name_pl raw sapphires of great value
+client_type 2011
+end
+Object raw_sapphire_exceptional_beauty
+name raw sapphire of exceptional beauty
+race gold and jewels
+type 60
+face sapphire_exceptional.111
+nrof 1
+value 185
+weight 1300
+material 64
+identified 1
+name_pl raw sapphires of exceptional beauty
+client_type 2011
+end
+Object raw_sapphire_flawless_beauty
+name raw sapphire of flawless beauty
+race gold and jewels
+type 60
+face sapphire_flawless.111
+nrof 1
+value 1850
+weight 1600
+material 64
+identified 1
+name_pl raw sapphires of flawless beauty
+client_type 2011
+end
