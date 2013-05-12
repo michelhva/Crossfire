@@ -12,7 +12,7 @@ Creator: majorwoo josh@woosworld.net
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2012-03-30 Rick Tanner
+Modified: 2013-05-12 Nicolas Weeger
 endmsg
 end
 arch dungeon_magic
@@ -1702,12 +1702,12 @@ hitback 1
 reflect_missile 0
 reflect_spell 0
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 can_see_in_dark 1
 arch event_say
 name LaughingSkull Guildman 8980
@@ -3479,17 +3479,17 @@ arch dungeon_magic
 x 8
 y 17
 end
-arch woodfloor
-x 8
-y 17
-unique 1
-end
 arch invis_exit
 slaying guild_thaum
 hp 6
 sp 3
 x 8
 y 17
+end
+arch woodfloor
+x 8
+y 17
+unique 1
 end
 arch grate_closed_2
 x 8
@@ -3858,12 +3858,12 @@ hitback 1
 reflect_missile 0
 reflect_spell 0
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 can_see_in_dark 1
 arch event_say
 name LaughingSkull Guildman 820
@@ -3928,12 +3928,12 @@ hitback 1
 reflect_missile 0
 reflect_spell 0
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 can_see_in_dark 1
 arch event_say
 name LaughingSkull Guildman 3350
@@ -4404,12 +4404,12 @@ hitback 1
 reflect_missile 0
 reflect_spell 0
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 can_see_in_dark 1
 arch event_say
 name LaughingSkull Guildman 8970
@@ -4745,12 +4745,12 @@ hitback 1
 reflect_missile 0
 reflect_spell 0
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 can_see_in_dark 1
 arch event_say
 name LaughingSkull GuildMaster 9991
@@ -4796,12 +4796,12 @@ hitback 1
 reflect_missile 0
 reflect_spell 0
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-can_use_range 1
 can_see_in_dark 1
 arch event_say
 name LaughingSkull Guildman 8990
