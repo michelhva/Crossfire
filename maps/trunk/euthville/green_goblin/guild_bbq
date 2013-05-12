@@ -13,7 +13,7 @@ Editor: CrossfireEditor
 Date:    3/15/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2012-03-30 Rick Tanner
+Modified: 2013-05-12 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -27,15 +27,15 @@ arch tree4
 y 1
 blocksview 1
 end
-arch grass
-y 2
-unique 1
-end
 arch invis_exit
 slaying mainfloor
 hp 23
 sp 23
 y 2
+end
+arch grass
+y 2
+unique 1
 end
 arch grass
 y 3
@@ -526,13 +526,13 @@ end
 arch dungeon_magic
 x 5
 end
-arch footpath_2_1_1
-x 5
-end
 arch invis_exit
 slaying mainfloor
 hp 23
 sp 23
+x 5
+end
+arch footpath_2_1_1
 x 5
 end
 arch dungeon_magic
@@ -544,17 +544,17 @@ x 5
 y 1
 unique 1
 end
-arch ggate_closed
-x 5
-y 1
-connected 112
-end
 arch invis_exit
 slaying mainfloor
 hp 23
 sp 23
 x 5
 y 1
+end
+arch ggate_closed
+x 5
+y 1
+connected 112
 end
 arch flagstone
 x 5

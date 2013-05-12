@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2013-03-11 Rick Tanner
+Modified: 2013-05-12 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -2178,19 +2178,19 @@ arch dungeon_magic
 x 7
 y 23
 end
+arch invis_exit
+slaying guild_toolshed
+hp 14
+sp 4
+x 7
+y 23
+end
 arch flagstone
 x 7
 y 23
 unique 1
 end
 arch light4
-x 7
-y 23
-end
-arch invis_exit
-slaying guild_toolshed
-hp 14
-sp 4
 x 7
 y 23
 end
@@ -7296,6 +7296,10 @@ x 23
 y 23
 connected 112
 end
+arch dungeon_magic
+x 23
+y 24
+end
 arch flagstone
 x 23
 y 24
@@ -7315,17 +7319,17 @@ arch dungeon_magic
 x 23
 y 25
 end
-arch flagstone
-x 23
-y 25
-unique 1
-end
 arch invis_exit
 slaying guild_bbq
 hp 5
 sp 3
 x 23
 y 25
+end
+arch flagstone
+x 23
+y 25
+unique 1
 end
 arch flagstone
 x 23

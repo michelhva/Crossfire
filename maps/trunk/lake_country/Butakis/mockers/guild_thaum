@@ -13,7 +13,7 @@ Editor: CrossfireEditor
 Date:    3/19/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2012-03-30 Rick Tanner
+Modified: 2013-05-12 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -528,6 +528,13 @@ arch dungeon_magic
 x 7
 y 3
 end
+arch invis_exit
+slaying secondfloor
+hp 9
+sp 17
+x 7
+y 3
+end
 arch woodfloor
 x 7
 y 3
@@ -540,13 +547,6 @@ connected 22
 blocksview 1
 no_magic 1
 damned 1
-end
-arch invis_exit
-slaying secondfloor
-hp 9
-sp 17
-x 7
-y 3
 end
 arch woodfloor
 x 7
@@ -576,15 +576,15 @@ arch dwall_3_1
 x 7
 y 6
 end
-arch woodfloor
-x 8
-unique 1
-end
 arch invis_exit
 slaying secondfloor
 hp 11
 sp 17
 x 8
+end
+arch woodfloor
+x 8
+unique 1
 end
 arch check_floor
 slaying GuildMaster
@@ -697,20 +697,27 @@ arch dwall_2_1_2
 x 8
 y 6
 end
-arch woodfloor
-x 9
-unique 1
-end
 arch invis_exit
 slaying secondfloor
 hp 11
 sp 17
 x 9
+end
+arch woodfloor
+x 9
+unique 1
 end
 arch woodfloor
 x 9
 y 1
 end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 9
+y 2
+end
 arch woodfloor
 x 9
 y 2
@@ -721,19 +728,12 @@ slaying secondfloor
 hp 11
 sp 17
 x 9
-y 2
+y 3
 end
 arch woodfloor
 x 9
 y 3
 unique 1
-end
-arch invis_exit
-slaying secondfloor
-hp 11
-sp 17
-x 9
-y 3
 end
 arch woodfloor
 x 9
@@ -751,10 +751,6 @@ arch dwall_2_1_2
 x 9
 y 6
 end
-arch woodfloor
-x 10
-unique 1
-end
 arch invis_exit
 slaying secondfloor
 hp 11
@@ -763,7 +759,6 @@ x 10
 end
 arch woodfloor
 x 10
-y 1
 unique 1
 end
 arch invis_exit
@@ -775,7 +770,7 @@ y 1
 end
 arch woodfloor
 x 10
-y 2
+y 1
 unique 1
 end
 arch invis_exit
@@ -784,6 +779,11 @@ hp 11
 sp 17
 x 10
 y 2
+end
+arch woodfloor
+x 10
+y 2
+unique 1
 end
 arch woodfloor
 x 10
@@ -805,10 +805,6 @@ arch dwall_2_1_2
 x 10
 y 6
 end
-arch woodfloor
-x 11
-unique 1
-end
 arch invis_exit
 slaying secondfloor
 hp 11
@@ -817,7 +813,6 @@ x 11
 end
 arch woodfloor
 x 11
-y 1
 unique 1
 end
 arch invis_exit
@@ -829,7 +824,7 @@ y 1
 end
 arch woodfloor
 x 11
-y 2
+y 1
 unique 1
 end
 arch invis_exit
@@ -838,6 +833,11 @@ hp 11
 sp 17
 x 11
 y 2
+end
+arch woodfloor
+x 11
+y 2
+unique 1
 end
 arch woodfloor
 x 11
@@ -859,10 +859,6 @@ arch dwall_2_1_2
 x 11
 y 6
 end
-arch woodfloor
-x 12
-unique 1
-end
 arch invis_exit
 slaying secondfloor
 hp 11
@@ -871,7 +867,6 @@ x 12
 end
 arch woodfloor
 x 12
-y 1
 unique 1
 end
 arch invis_exit
@@ -883,7 +878,7 @@ y 1
 end
 arch woodfloor
 x 12
-y 2
+y 1
 unique 1
 end
 arch invis_exit
@@ -892,6 +887,11 @@ hp 11
 sp 17
 x 12
 y 2
+end
+arch woodfloor
+x 12
+y 2
+unique 1
 end
 arch woodfloor
 x 12
@@ -913,10 +913,6 @@ arch dwall_2_1_2
 x 12
 y 6
 end
-arch woodfloor
-x 13
-unique 1
-end
 arch invis_exit
 slaying secondfloor
 hp 11
@@ -925,7 +921,6 @@ x 13
 end
 arch woodfloor
 x 13
-y 1
 unique 1
 end
 arch invis_exit
@@ -937,7 +932,7 @@ y 1
 end
 arch woodfloor
 x 13
-y 2
+y 1
 unique 1
 end
 arch invis_exit
@@ -946,6 +941,11 @@ hp 11
 sp 17
 x 13
 y 2
+end
+arch woodfloor
+x 13
+y 2
+unique 1
 end
 arch woodfloor
 x 13
