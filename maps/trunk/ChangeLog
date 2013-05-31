@@ -1,3 +1,503 @@
+2013-05-31 18:13  rjtanner
+
+	* brest/misc/draughts: Layout updates to Draughts House of Brest
+	  (brest/misc/draughts) which added king pieces, enlarged the
+	  no_spells areas and adjusted the room layout.
+
+2013-05-31 00:01  rjtanner
+
+	* brest/misc, brest/misc/draughts, world/world_107_123: New Map,
+	  Draughts House of Brest (brest/misc/draughts) with a 12x12
+	  playing board. Updated world map (world/world_107_123) for the
+	  entrance to the new map.
+
+2013-05-30 23:26  rjtanner
+
+	* scorn/misc/beginners2, world/world_105_116: Cosmetic and layout
+	  changes to Beginners2 (scorn/misc/beginners2) in Scorn. Enlarged
+	  the map to include the area surrounding the house, made the house
+	  larger and with windows. Updated world map (world/world_105_116)
+	  for map entrance coordinate changes.
+
+2013-05-12 09:57  ryo_saeba
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_alchemy,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_bbq,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_jeweler,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_tan,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_thaum,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guild_toolshed,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_alchemy,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_bbq,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_jeweler,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_tan,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_thaum,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_toolshed,
+	  azumauindo/suno-yamatoshi/nenshou_youso/mainfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/guild_alchemy,
+	  azumauindo/zaseki_dzuki_ryoku/guild_bbq,
+	  azumauindo/zaseki_dzuki_ryoku/guild_jeweler,
+	  azumauindo/zaseki_dzuki_ryoku/guild_tan,
+	  azumauindo/zaseki_dzuki_ryoku/guild_thaum,
+	  azumauindo/zaseki_dzuki_ryoku/guild_toolshed,
+	  azumauindo/zaseki_dzuki_ryoku/mainfloor,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  brest/black_shield/guild_alchemy, brest/black_shield/guild_bbq,
+	  brest/black_shield/guild_jeweler, brest/black_shield/guild_tan,
+	  brest/black_shield/guild_thaum,
+	  brest/black_shield/guild_toolshed, brest/black_shield/mainfloor,
+	  brest/black_shield/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/guild_alchemy,
+	  darcap/darcap/guilds/poisoned_dagger/guild_bbq,
+	  darcap/darcap/guilds/poisoned_dagger/guild_jeweler,
+	  darcap/darcap/guilds/poisoned_dagger/guild_tan,
+	  darcap/darcap/guilds/poisoned_dagger/guild_thaum,
+	  darcap/darcap/guilds/poisoned_dagger/guild_toolshed,
+	  darcap/darcap/guilds/poisoned_dagger/mainfloor,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/guild_alchemy,
+	  darcap/darcap/guilds/smoking_cauldron/guild_bbq,
+	  darcap/darcap/guilds/smoking_cauldron/guild_jeweler,
+	  darcap/darcap/guilds/smoking_cauldron/guild_tan,
+	  darcap/darcap/guilds/smoking_cauldron/guild_thaum,
+	  darcap/darcap/guilds/smoking_cauldron/guild_toolshed,
+	  darcap/darcap/guilds/smoking_cauldron/mainfloor,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  euthville/green_goblin/guild_alchemy,
+	  euthville/green_goblin/guild_bbq,
+	  euthville/green_goblin/guild_jeweler,
+	  euthville/green_goblin/guild_tan,
+	  euthville/green_goblin/guild_thaum,
+	  euthville/green_goblin/guild_toolshed,
+	  euthville/green_goblin/mainfloor,
+	  euthville/green_goblin/secondfloor,
+	  lake_country/Butakis/mockers/guild_alchemy,
+	  lake_country/Butakis/mockers/guild_bbq,
+	  lake_country/Butakis/mockers/guild_jeweler,
+	  lake_country/Butakis/mockers/guild_tan,
+	  lake_country/Butakis/mockers/guild_thaum,
+	  lake_country/Butakis/mockers/guild_toolshed,
+	  lake_country/Butakis/mockers/mainfloor,
+	  lake_country/Butakis/mockers/secondfloor,
+	  navar_city/dreaming_sage/guild_alchemy,
+	  navar_city/dreaming_sage/guild_bbq,
+	  navar_city/dreaming_sage/guild_jeweler,
+	  navar_city/dreaming_sage/guild_tan,
+	  navar_city/dreaming_sage/guild_thaum,
+	  navar_city/dreaming_sage/guild_toolshed,
+	  navar_city/dreaming_sage/mainfloor,
+	  navar_city/dreaming_sage/secondfloor,
+	  pup_land/guilds/laughing_skull/guild_alchemy,
+	  pup_land/guilds/laughing_skull/guild_bbq,
+	  pup_land/guilds/laughing_skull/guild_jeweler,
+	  pup_land/guilds/laughing_skull/guild_tan,
+	  pup_land/guilds/laughing_skull/guild_thaum,
+	  pup_land/guilds/laughing_skull/guild_toolshed,
+	  pup_land/guilds/laughing_skull/mainfloor,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/purple_butterfly/guild_alchemy,
+	  pup_land/guilds/purple_butterfly/guild_bbq,
+	  pup_land/guilds/purple_butterfly/guild_jeweler,
+	  pup_land/guilds/purple_butterfly/guild_tan,
+	  pup_land/guilds/purple_butterfly/guild_thaum,
+	  pup_land/guilds/purple_butterfly/guild_toolshed,
+	  pup_land/guilds/purple_butterfly/mainfloor,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/guild_alchemy,
+	  santo_dominion/guilds/drunken_barbarian/guild_bbq,
+	  santo_dominion/guilds/drunken_barbarian/guild_jeweler,
+	  santo_dominion/guilds/drunken_barbarian/guild_tan,
+	  santo_dominion/guilds/drunken_barbarian/guild_thaum,
+	  santo_dominion/guilds/drunken_barbarian/guild_toolshed,
+	  santo_dominion/guilds/drunken_barbarian/mainfloor,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  scorn/guilds/mailed_fist/guild_alchemy,
+	  scorn/guilds/mailed_fist/guild_bbq,
+	  scorn/guilds/mailed_fist/guild_jeweler,
+	  scorn/guilds/mailed_fist/guild_tan,
+	  scorn/guilds/mailed_fist/guild_thaum,
+	  scorn/guilds/mailed_fist/guild_toolshed,
+	  scorn/guilds/mailed_fist/mainfloor,
+	  scorn/guilds/mailed_fist/secondfloor,
+	  wolfsburg/guilds/damned_heretics/guild_alchemy,
+	  wolfsburg/guilds/damned_heretics/guild_bbq,
+	  wolfsburg/guilds/damned_heretics/guild_jeweler,
+	  wolfsburg/guilds/damned_heretics/guild_tan,
+	  wolfsburg/guilds/damned_heretics/guild_thaum,
+	  wolfsburg/guilds/damned_heretics/guild_toolshed,
+	  wolfsburg/guilds/damned_heretics/mainfloor,
+	  wolfsburg/guilds/damned_heretics/secondfloor: Propagate template
+	  changes to the guilds.
+
+2013-05-12 09:48  ryo_saeba
+
+	* templates/guild/guild_alchemy: Put exits under the floor.
+
+2013-05-12 09:48  ryo_saeba
+
+	* templates/guild/guild_bbq: Put exits under the floor.
+
+2013-05-12 09:31  ryo_saeba
+
+	* templates/guild/storage_hall: Put exit under the floor.
+
+2013-05-12 09:30  ryo_saeba
+
+	* templates/guild/guild_jeweler: Put exits under the floor. Add
+	  missing exits.
+
+2013-05-12 09:29  ryo_saeba
+
+	* templates/guild/guild_tan: Put exits under the floor.
+
+2013-05-12 09:28  ryo_saeba
+
+	* templates/guild/guild_thaum: Put exits under the floor.
+
+2013-05-12 09:27  ryo_saeba
+
+	* templates/guild/secondfloor: Put exit under the floor.
+
+2013-05-12 09:26  ryo_saeba
+
+	* templates/guild/guild_toolshed: Put exit under the floor.
+
+2013-05-12 09:23  ryo_saeba
+
+	* templates/guild/mainfloor: Put exits under floor. Add 'no_spell'
+	  under the grate.
+
+2013-05-09 11:10  akirschbaum
+
+	* dungeons/dark-cave/dark-cave, lake_country/shops/clems_archery:
+	  Remove obsolete attributes 'no_pretext' and 'walk_on'.
+
+2013-05-09 11:09  akirschbaum
+
+	* navar_city/mlab/tavern: Fix typo in attribute name.
+
+2013-05-09 11:08  akirschbaum
+
+	* Info/land.c,
+	  animations/maps/navar_city/university-dorlf.animation,
+	  brest/brittany/dol-guldur.1, dungeons/dark-cave/ogre-cave,
+	  inn_and_outpost/README, lake_country/Butakis/luck3,
+	  lake_country/snake_pit/snakepit_1,
+	  mlab/citydeclouds/IPO_citydeclouds, mlab/citydeclouds/bank/bank3,
+	  mlab/citydeclouds/castle/cwdccastleb2,
+	  mlab/citydeclouds/shops/cwdctrademarket, navar_city/mlab/tavern,
+	  navar_city/mlab/tavern2, navar_city/mlab/tavern7,
+	  port_joseph/pirates/madvillage,
+	  port_joseph/town/underground_tavern, pup_land/ancient/company,
+	  pup_land/ancient/village/inn, pup_land/begin/adv,
+	  pup_land/jk/gs_house, pup_land/nurnberg/guild,
+	  python/CFDataBase.py, python/CFDialog.py,
+	  python/CFGuildClearance.py, python/IPO/banksay.py,
+	  python/IPO/checks.py, python/Moving_Fog.py,
+	  python/dialog/commongive.py, python/dialog/dialog_check.py,
+	  python/dialog/npc_dialog.py, python/dialog/post/connection.py,
+	  python/dialog/post/givecontents.py,
+	  python/dialog/post/giveitem.py,
+	  python/dialog/post/giveknowledge.py,
+	  python/dialog/post/marktime.py, python/dialog/post/quest.py,
+	  python/dialog/post/settoken.py, python/dialog/post/takeitem.py,
+	  python/dialog/pre/README, python/dialog/pre/age.py,
+	  python/dialog/pre/item.py, python/dialog/pre/level.py,
+	  python/dialog/pre/quest.py, python/dialog/pre/token.py,
+	  python/guilds/README.txt, python/guilds/arrest.py,
+	  python/guilds/bigchest.py, python/guilds/guild_dues.py,
+	  python/guilds/guildoracle.py, python/items/lockable_doors.py,
+	  python/maps/darcap/manor.py, python/maps/scorn/HouseofHealing.py,
+	  python/maps/witherspoon_manor/weapon_shop.py,
+	  python/pshop/Floor.py, python/pshop/Ice.py,
+	  python/pshop/entry.py, python/pshop/pshop.py,
+	  python/quests/QuestAdvance.py,
+	  python/quests/QuestEssentialUntil.py,
+	  python/quests/QuestTriggerConnect.py, quests/greyshield/Castle,
+	  regions.reg, scorn/aristocracy.quests,
+	  scorn/guilds/mailed_fist/README.txt, scorn/houses/doors_galore,
+	  scorn/houses/farmhouse, scorn/shops/IPO_scorn,
+	  scorn/shops/smith.msg, scorn/shops/smith_finished.msg,
+	  scorn/taverns/dragon_emissary.msg, scorn/taverns/goths,
+	  scorn/temples/valkyrie2, scorn/towers/brewery.2,
+	  test/newmaps/madness_maze/scripts/madnessmaze1.py,
+	  test/python.py, test/quest_handling/apples.msg,
+	  test/quest_handling/bothquests.msg,
+	  test/quest_handling/cantkillme.msg,
+	  test/quest_handling/friendly.msg, test/quest_handling/girl4.msg,
+	  test/quest_handling/marker.msg,
+	  test/quest_handling/testquest.msg,
+	  test/quest_handling/timetest.msg,
+	  whalingoutpost/taverns/storehouse1, world.quests: Remove trailing
+	  whitespace.
+
+2013-05-09 10:58  akirschbaum
+
+	* darcap/darcap/tavern, pup_land/nurnberg/reception/electricity3,
+	  pup_land/nurnberg/reception/electricity5,
+	  pup_land/nurnberg/reception/electricity6,
+	  santo_dominion/magara/south_lighthouse/floor_2: Fix typos in
+	  attribute names.
+
+2013-05-09 10:41  akirschbaum
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_toolshed,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/hallofjoining,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/journeyman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/master_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/novice_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/secondfloor,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_toolshed,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/hallofjoining,
+	  azumauindo/suno-yamatoshi/nenshou_youso/journeyman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/master_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/novice_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/secondfloor,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room,
+	  azumauindo/zaseki_dzuki_ryoku/guild_toolshed,
+	  azumauindo/zaseki_dzuki_ryoku/guildman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/hallofjoining,
+	  azumauindo/zaseki_dzuki_ryoku/journeyman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/master_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/novice_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/secondfloor,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room,
+	  brest/black_shield/guild_toolshed,
+	  brest/black_shield/guildman_lounge,
+	  brest/black_shield/hallofjoining,
+	  brest/black_shield/journeyman_lounge,
+	  brest/black_shield/master_lounge,
+	  brest/black_shield/novice_lounge, brest/black_shield/secondfloor,
+	  brest/black_shield/storage_room,
+	  darcap/darcap/guilds/poisoned_dagger/guild_toolshed,
+	  darcap/darcap/guilds/poisoned_dagger/guildman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/hallofjoining,
+	  darcap/darcap/guilds/poisoned_dagger/journeyman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/master_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/novice_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/secondfloor,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room,
+	  darcap/darcap/guilds/smoking_cauldron/guild_toolshed,
+	  darcap/darcap/guilds/smoking_cauldron/guildman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/hallofjoining,
+	  darcap/darcap/guilds/smoking_cauldron/journeyman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/master_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/novice_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/secondfloor,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room,
+	  dungeons/dark-cave/dark-cave,
+	  euthville/green_goblin/guild_toolshed,
+	  euthville/green_goblin/guildman_lounge,
+	  euthville/green_goblin/hallofjoining,
+	  euthville/green_goblin/journeyman_lounge,
+	  euthville/green_goblin/master_lounge,
+	  euthville/green_goblin/novice_lounge,
+	  euthville/green_goblin/secondfloor,
+	  euthville/green_goblin/storage_room,
+	  lake_country/Butakis/mockers/guild_toolshed,
+	  lake_country/Butakis/mockers/guildman_lounge,
+	  lake_country/Butakis/mockers/hallofjoining,
+	  lake_country/Butakis/mockers/journeyman_lounge,
+	  lake_country/Butakis/mockers/master_lounge,
+	  lake_country/Butakis/mockers/novice_lounge,
+	  lake_country/Butakis/mockers/secondfloor,
+	  lake_country/Butakis/mockers/storage_room,
+	  navar_city/dreaming_sage/guild_toolshed,
+	  navar_city/dreaming_sage/guildman_lounge,
+	  navar_city/dreaming_sage/hallofjoining,
+	  navar_city/dreaming_sage/journeyman_lounge,
+	  navar_city/dreaming_sage/master_lounge,
+	  navar_city/dreaming_sage/novice_lounge,
+	  navar_city/dreaming_sage/secondfloor,
+	  navar_city/dreaming_sage/storage_room,
+	  pup_land/guilds/laughing_skull/guild_toolshed,
+	  pup_land/guilds/laughing_skull/guildman_lounge,
+	  pup_land/guilds/laughing_skull/hallofjoining,
+	  pup_land/guilds/laughing_skull/journeyman_lounge,
+	  pup_land/guilds/laughing_skull/master_lounge,
+	  pup_land/guilds/laughing_skull/novice_lounge,
+	  pup_land/guilds/laughing_skull/secondfloor,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/purple_butterfly/guild_toolshed,
+	  pup_land/guilds/purple_butterfly/guildman_lounge,
+	  pup_land/guilds/purple_butterfly/hallofjoining,
+	  pup_land/guilds/purple_butterfly/journeyman_lounge,
+	  pup_land/guilds/purple_butterfly/master_lounge,
+	  pup_land/guilds/purple_butterfly/novice_lounge,
+	  pup_land/guilds/purple_butterfly/secondfloor,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  santo_dominion/guilds/drunken_barbarian/guild_toolshed,
+	  santo_dominion/guilds/drunken_barbarian/guildman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/hallofjoining,
+	  santo_dominion/guilds/drunken_barbarian/journeyman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/master_lounge,
+	  santo_dominion/guilds/drunken_barbarian/novice_lounge,
+	  santo_dominion/guilds/drunken_barbarian/secondfloor,
+	  santo_dominion/guilds/drunken_barbarian/storage_room,
+	  scorn/guilds/mailed_fist/guild_toolshed,
+	  scorn/guilds/mailed_fist/guildman_lounge,
+	  scorn/guilds/mailed_fist/hallofjoining,
+	  scorn/guilds/mailed_fist/journeyman_lounge,
+	  scorn/guilds/mailed_fist/master_lounge,
+	  scorn/guilds/mailed_fist/novice_lounge,
+	  scorn/guilds/mailed_fist/secondfloor,
+	  scorn/guilds/mailed_fist/storage_room,
+	  templates/guild/guild_toolshed, templates/guild/guildman_lounge,
+	  templates/guild/hallofjoining, templates/guild/journeyman_lounge,
+	  templates/guild/master_lounge, templates/guild/novice_lounge,
+	  templates/guild/secondfloor, templates/guild/storage_room,
+	  wolfsburg/guilds/damned_heretics/guild_toolshed,
+	  wolfsburg/guilds/damned_heretics/guildman_lounge,
+	  wolfsburg/guilds/damned_heretics/hallofjoining,
+	  wolfsburg/guilds/damned_heretics/journeyman_lounge,
+	  wolfsburg/guilds/damned_heretics/master_lounge,
+	  wolfsburg/guilds/damned_heretics/novice_lounge,
+	  wolfsburg/guilds/damned_heretics/secondfloor,
+	  wolfsburg/guilds/damned_heretics/storage_room: Replace obsolete
+	  attributes can_use_rod, can_use_wand, and can_use_horn with
+	  can_use_range.
+
+2013-04-30 19:47  kstenger
+
+	* python/guilds/guild_dues.py: Minor fixes to do_pay(): 'type' was
+	  used as a variable name but it's a reserved word, length check
+	  was wrong, check for zero amount, plural message improved.
+
+2013-04-29 19:31  kstenger
+
+	* python/guilds/guild_entry.py: Fixing python indentation. Using
+	  elif when apropriate.
+
+2013-04-29 02:58  kstenger
+
+	* python/guilds/arrest.py: Fixing python indentation
+
+2013-04-29 01:11  kstenger
+
+	* python/guilds/guild_dues.py: Fixing python indentation
+
+2013-04-28 22:23  kstenger
+
+	* python/guilds/guildoracle.py: Fixing python indentation
+
+2013-04-28 18:27  ryo_saeba
+
+	* python/guilds/guildoracle.py: Display valid status.
+
+2013-04-28 17:45  ryo_saeba
+
+	* python/guilds/arrest.py: Try to not generate errors.
+
+2013-04-28 17:43  ryo_saeba
+
+	* python/guilds/guildoracle.py: Initialize variable, if access is
+	  denied.
+
+2013-04-28 17:17  ryo_saeba
+
+	* python/guilds/arrest.py: Prevent traps from showing.
+
+2013-04-23 11:09  rjtanner
+
+	* inn_and_outpost/hermes_inn: Part of Patch#331 Fix room prices in
+	  Hermes' Inn, courtesy of Kevin Zheng. Anvil is no prper name,
+	  change it to anvil.
+
+2013-04-23 11:05  rjtanner
+
+	* inn_and_outpost/hermes_inn: Part of patch #331 Fix room price in
+	  Hermes' Inn, courtesy of Kevin Zheng. Update pricing information
+	  and altar reset time in Hermes' Inn.
+
+2013-04-23 11:04  rjtanner
+
+	* inn_and_outpost/hermes_inn: Part of patch #331 Fix room price in
+	  Hermes' Inn, courtesy of Kevin Zheng. Add name and plural name to
+	  unique keys found in Hermes' Inn.
+
+2013-04-23 11:03  rjtanner
+
+	* inn_and_outpost/hermes_inn: Part of patch #331 Fix room price in
+	  Hermes' Inn, courtesy of Kevin Zheng. Update purchase tables to
+	  specify 1 item per purchase and avoids Map Editor warnings.
+
+2013-04-23 10:49  rjtanner
+
+	* santo_dominion/misc, santo_dominion/misc/draughts,
+	  world/world_102_108: New map, Draughts of Santo Dominion
+	  (santo_dominion/misc/draughts) - with 8x8 playing board. World
+	  map (world/world_102_108) update to add a building and make the
+	  entrance.
+
+2013-04-16 23:31  rjtanner
+
+	* inn_and_outpost/hermes_inn2: Part of patch #331 Fix room price in
+	  Hermes' Inn, courtesy of Kevin Zheng. Update plural name for
+	  greasy key to Hermes Inn Upstairs (inn_and_outpost/hermes_inn2).
+
+2013-04-16 23:11  rjtanner
+
+	* scorn/misc/castle_kitchen: Part of patch #325 More (minor)
+	  cosmetic changes, courtesy of Kevin Zheng. Update stack order so
+	  items appear on top of the tables to Castle Kitchen
+	  (scorn/misc/castle_kitchen) in Scorn.
+
+2013-04-16 23:08  rjtanner
+
+	* scorn/taverns/inn: Part of patch #325 More (minor) cosmetic
+	  changes, courtesy of Kevin Zheng. Guest book reformatting and
+	  instructional information updates to Wanderer Inn
+	  (scorn/taverns/inn) in Scorn.
+
+2013-04-16 23:06  rjtanner
+
+	* scorn/houses/chess_club: Part of patch #325 More (minor) cosmetic
+	  changes, courtesy of Kevin Zheng. Update capitalization on a sign
+	  and book to Chess Club (scorn/houses/chess_club) in Scorn.
+
+2013-04-06 10:25  ryo_saeba
+
+	* world/world_105_115: Replace the scripted wagon with a transport,
+	  patch courtesy Kevin Zheng.
+
+2013-04-06 10:23  ryo_saeba
+
+	* world/world_105_115: Fix some messages, courtesy Kevin Zheng.
+
+2013-04-06 10:21  ryo_saeba
+
+	* python/misc/ship.py, scorn/port, scorn/port/ship_santo_dominion,
+	  scorn/port/ship_stoneville, scorn/port/ticket_office,
+	  world/world_104_115, world/world_105_115: Apply (part of) patch
+	  #326: Make sailing around the world cost money, by Kevin Zheng.
+
+2013-04-06 10:19  ryo_saeba
+
+	* world/world_105_115: Fix archetype.
+
+2013-04-02 07:19  rjtanner
+
+	* navar_city/misc/draughts, world/world_122_117: New map, Draughts
+	  of Navar (navar_city/misc/draughts) using a 10x10 playing board
+	  and located in the south eastern corner of Navar
+	  (world/world_122_117). Requires archetype update r18652.
+
+2013-04-02 06:25  rjtanner
+
+	* world/world_122_117: Enlarge south eastern corner of Navar
+	  (world/world_122_117) by moving the walls out and reclaiming some
+	  of the wilderness.
+
+2013-03-29 22:10  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
 2013-03-29 21:34  rjtanner
 
 	* world/world_109_126: Part of Patch #330 Cosmetic changes to Lake
