@@ -8,7 +8,7 @@ enter_x 15
 enter_y 23
 msg
 Created:  2013-03-29 Rick Tanner
-Modified: 2013-05-30 Rick Tanner
+Modified: 2013-05-31 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -472,25 +472,49 @@ arch woodlgvertical
 x 3
 y 10
 end
-arch woodlarge
+arch dungeon_magic
 x 3
 y 11
 end
 arch woodlarge
 x 3
+y 11
+end
+arch dungeon_magic
+x 3
 y 12
+end
+arch woodlarge
+x 3
+y 12
+end
+arch dungeon_magic
+x 3
+y 13
 end
 arch woodlarge
 x 3
 y 13
 end
-arch woodlgvertical
+arch dungeon_magic
 x 3
 y 14
 end
 arch woodlgvertical
 x 3
+y 14
+end
+arch dungeon_magic
+x 3
 y 15
+end
+arch woodlgvertical
+x 3
+y 15
+end
+arch dungeon_magic
+x 3
+y 16
 end
 arch woodlgvertical
 x 3
@@ -595,17 +619,33 @@ arch woodlarge
 x 4
 y 11
 end
-arch woodlarge
+arch dungeon_magic
 x 4
 y 12
 end
 arch woodlarge
 x 4
+y 12
+end
+arch dungeon_magic
+x 4
 y 13
+end
+arch woodlarge
+x 4
+y 13
+end
+arch dungeon_magic
+x 4
+y 14
 end
 arch woodlgvertical
 x 4
 y 14
+end
+arch dungeon_magic
+x 4
+y 15
 end
 arch woodlgvertical
 x 4
@@ -690,326 +730,350 @@ arch woodlgvertical
 x 5
 y 5
 end
-arch woodlgvertical
+arch westcwall_2_2_2
 x 5
-y 6
-end
-arch woodlgvertical
-x 5
-y 7
-end
-arch woodlarge
-x 5
-y 8
-end
-arch woodlarge
-x 5
-y 9
-end
-arch woodlarge
-x 5
-y 10
-end
-arch woodlgvertical
-x 5
-y 11
-end
-arch woodlgvertical
-x 5
-y 12
-end
-arch woodlgvertical
-x 5
-y 13
-end
-arch woodlarge
-x 5
-y 14
-end
-arch woodlarge
-x 5
-y 15
-end
-arch woodlarge
-x 5
-y 16
-end
-arch woodlgvertical
-x 5
-y 17
-end
-arch woodlgvertical
-x 5
-y 18
-end
-arch woodlgvertical
-x 5
-y 19
-end
-arch woodlarge
-x 5
-y 20
-end
-arch woodlarge
-x 5
-y 21
-end
-arch woodlarge
-x 5
-y 22
-end
-arch woodlgvertical
-x 5
-y 23
-end
-arch woodlgvertical
-x 5
-y 24
-end
-arch light2
-x 5
-y 25
-end
-arch flagstone
-x 5
-y 25
-end
-arch westcwall_win2
-x 5
-y 25
-end
-arch grass_only
-x 5
-y 26
-end
-arch grass_only
-x 5
-y 27
-end
-arch grass_only
-x 6
-end
-arch grass_only
-x 6
-y 1
-end
-arch light2
-x 6
-y 2
-end
-arch flagstone
-x 6
-y 2
-end
-arch westcwall_win2
-x 6
-y 2
-end
-arch woodlarge
-x 6
-y 3
-end
-arch woodlarge
-x 6
-y 4
-end
-arch woodlgvertical
-x 6
 y 5
 end
-arch dungeon_magic
-x 6
+arch woodlgvertical
+x 5
+y 6
+end
+arch westcwall_win1
+x 5
 y 6
 end
 arch woodlgvertical
-x 6
-y 6
-end
-arch westcwall_2_2_1
-x 6
-y 6
-end
-arch dungeon_magic
-x 6
-y 7
-end
-arch light4
-x 6
-y 7
-end
-arch woodlgvertical
-x 6
+x 5
 y 7
 end
 arch westcwall_win1
-x 6
+x 5
 y 7
 end
-arch dungeon_magic
-x 6
-y 8
-end
 arch woodlarge
-x 6
+x 5
 y 8
 end
 arch westcwall_win1
-x 6
+x 5
 y 8
 end
-arch dungeon_magic
-x 6
+arch woodlarge
+x 5
+y 9
+end
+arch westcwall_win1
+x 5
 y 9
 end
 arch woodlarge
-x 6
-y 9
-end
-arch westcwall_win1
-x 6
-y 9
-end
-arch dungeon_magic
-x 6
-y 10
-end
-arch woodlarge
-x 6
+x 5
 y 10
 end
 arch westcwall_win1
-x 6
+x 5
 y 10
 end
-arch dungeon_magic
-x 6
+arch woodlgvertical
+x 5
+y 11
+end
+arch westcwall_win1
+x 5
 y 11
 end
 arch woodlgvertical
-x 6
-y 11
-end
-arch westcwall_win1
-x 6
-y 11
-end
-arch dungeon_magic
-x 6
-y 12
-end
-arch woodlgvertical
-x 6
+x 5
 y 12
 end
 arch westcwall_1_2
-x 6
+x 5
 y 12
 end
 arch dungeon_magic
-x 6
+x 5
 y 13
 end
 arch woodlgvertical
-x 6
+x 5
 y 13
 end
 arch dungeon_magic
-x 6
+x 5
 y 14
 end
 arch woodlarge
-x 6
+x 5
 y 14
 end
-arch dungeon_magic
-x 6
-y 15
-end
-arch light4
-x 6
-y 15
-end
 arch woodlarge
-x 6
+x 5
 y 15
 end
 arch westcwall_1_1
-x 6
+x 5
 y 15
 end
-arch dungeon_magic
-x 6
+arch woodlarge
+x 5
 y 16
+end
+arch westcwall_win1
+x 5
+y 16
+end
+arch woodlgvertical
+x 5
+y 17
+end
+arch westcwall_win1
+x 5
+y 17
+end
+arch woodlgvertical
+x 5
+y 18
+end
+arch westcwall_win1
+x 5
+y 18
+end
+arch woodlgvertical
+x 5
+y 19
+end
+arch westcwall_win1
+x 5
+y 19
 end
 arch woodlarge
-x 6
-y 16
+x 5
+y 20
 end
 arch westcwall_win1
-x 6
-y 16
-end
-arch dungeon_magic
-x 6
-y 17
-end
-arch woodlgvertical
-x 6
-y 17
-end
-arch westcwall_win1
-x 6
-y 17
-end
-arch dungeon_magic
-x 6
-y 18
-end
-arch woodlgvertical
-x 6
-y 18
-end
-arch westcwall_win1
-x 6
-y 18
-end
-arch dungeon_magic
-x 6
-y 19
-end
-arch woodlgvertical
-x 6
-y 19
-end
-arch westcwall_win1
-x 6
-y 19
-end
-arch dungeon_magic
-x 6
+x 5
 y 20
 end
 arch woodlarge
-x 6
-y 20
+x 5
+y 21
 end
 arch westcwall_win1
-x 6
-y 20
-end
-arch dungeon_magic
-x 6
+x 5
 y 21
 end
 arch woodlarge
-x 6
-y 21
+x 5
+y 22
 end
 arch westcwall_2_2_1
+x 5
+y 22
+end
+arch woodlgvertical
+x 5
+y 23
+end
+arch woodlgvertical
+x 5
+y 24
+end
+arch light2
+x 5
+y 25
+end
+arch flagstone
+x 5
+y 25
+end
+arch westcwall_win2
+x 5
+y 25
+end
+arch grass_only
+x 5
+y 26
+end
+arch grass_only
+x 5
+y 27
+end
+arch grass_only
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch light2
+x 6
+y 2
+end
+arch flagstone
+x 6
+y 2
+end
+arch westcwall_win2
+x 6
+y 2
+end
+arch woodlarge
+x 6
+y 3
+end
+arch woodlarge
+x 6
+y 4
+end
+arch woodlgvertical
+x 6
+y 5
+end
+arch westcwall_win2
+x 6
+y 5
+end
+arch dungeon_magic
+x 6
+y 6
+end
+arch woodlgvertical
+x 6
+y 6
+end
+arch dungeon_magic
+x 6
+y 7
+end
+arch light4
+x 6
+y 7
+end
+arch woodlgvertical
+x 6
+y 7
+end
+arch dungeon_magic
+x 6
+y 8
+end
+arch woodlarge
+x 6
+y 8
+end
+arch dungeon_magic
+x 6
+y 9
+end
+arch woodlarge
+x 6
+y 9
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch woodlarge
+x 6
+y 10
+end
+arch dungeon_magic
+x 6
+y 11
+end
+arch woodlgvertical
+x 6
+y 11
+end
+arch dungeon_magic
+x 6
+y 12
+end
+arch woodlgvertical
+x 6
+y 12
+end
+arch dungeon_magic
+x 6
+y 13
+end
+arch woodlgvertical
+x 6
+y 13
+end
+arch dungeon_magic
+x 6
+y 14
+end
+arch woodlarge
+x 6
+y 14
+end
+arch dungeon_magic
+x 6
+y 15
+end
+arch light4
+x 6
+y 15
+end
+arch woodlarge
+x 6
+y 15
+end
+arch dungeon_magic
+x 6
+y 16
+end
+arch woodlarge
+x 6
+y 16
+end
+arch dungeon_magic
+x 6
+y 17
+end
+arch woodlgvertical
+x 6
+y 17
+end
+arch dungeon_magic
+x 6
+y 18
+end
+arch woodlgvertical
+x 6
+y 18
+end
+arch dungeon_magic
+x 6
+y 19
+end
+arch woodlgvertical
+x 6
+y 19
+end
+arch dungeon_magic
+x 6
+y 20
+end
+arch woodlarge
+x 6
+y 20
+end
+arch dungeon_magic
 x 6
 y 21
 end
 arch woodlarge
+x 6
+y 21
+end
+arch woodlarge
+x 6
+y 22
+end
+arch westcwall_win2
 x 6
 y 22
 end
@@ -1064,15 +1128,15 @@ arch woodlgvertical
 x 7
 y 5
 end
+arch westcwall_win2
+x 7
+y 5
+end
 arch dungeon_magic
 x 7
 y 6
 end
 arch woodlgvertical
-x 7
-y 6
-end
-arch westcwall_win2
 x 7
 y 6
 end
@@ -1097,6 +1161,10 @@ x 7
 y 9
 end
 arch woodfloor2
+x 7
+y 9
+end
+arch black_draught_king
 x 7
 y 9
 end
@@ -1113,6 +1181,10 @@ x 7
 y 11
 end
 arch woodfloor2
+x 7
+y 11
+end
+arch black_draught_king
 x 7
 y 11
 end
@@ -1145,6 +1217,10 @@ x 7
 y 15
 end
 arch woodfloor2
+x 7
+y 15
+end
+arch red_draught_king
 x 7
 y 15
 end
@@ -1161,6 +1237,10 @@ x 7
 y 17
 end
 arch woodfloor2
+x 7
+y 17
+end
+arch red_draught_king
 x 7
 y 17
 end
@@ -1200,11 +1280,11 @@ arch woodlarge
 x 7
 y 21
 end
-arch westcwall_win2
-x 7
-y 21
-end
 arch woodlarge
+x 7
+y 22
+end
+arch westcwall_win2
 x 7
 y 22
 end
@@ -1259,6 +1339,10 @@ arch woodlarge
 x 8
 y 5
 end
+arch westcwall_win2
+x 8
+y 5
+end
 arch dungeon_magic
 x 8
 y 6
@@ -1267,10 +1351,6 @@ arch woodlarge
 x 8
 y 6
 end
-arch westcwall_win2
-x 8
-y 6
-end
 arch dungeon_magic
 x 8
 y 7
@@ -1403,6 +1483,10 @@ arch woodfloor2
 x 8
 y 20
 end
+arch red_draught_king
+x 8
+y 20
+end
 arch dungeon_magic
 x 8
 y 21
@@ -1411,11 +1495,11 @@ arch woodlgvertical
 x 8
 y 21
 end
-arch westcwall_win2
-x 8
-y 21
-end
 arch woodlgvertical
+x 8
+y 22
+end
+arch westcwall_win2
 x 8
 y 22
 end
@@ -1478,6 +1562,10 @@ arch woodlarge
 x 9
 y 5
 end
+arch westcwall_win2
+x 9
+y 5
+end
 arch dungeon_magic
 x 9
 y 6
@@ -1486,15 +1574,15 @@ arch woodlarge
 x 9
 y 6
 end
-arch westcwall_win2
-x 9
-y 6
-end
 arch dungeon_magic
 x 9
 y 7
 end
 arch woodfloor2
+x 9
+y 7
+end
+arch black_draught_king
 x 9
 y 7
 end
@@ -1630,11 +1718,11 @@ arch woodlgvertical
 x 9
 y 21
 end
-arch westcwall_win2
-x 9
-y 21
-end
 arch woodlgvertical
+x 9
+y 22
+end
+arch westcwall_win2
 x 9
 y 22
 end
@@ -1689,6 +1777,10 @@ arch woodlarge
 x 10
 y 5
 end
+arch westcwall_win2
+x 10
+y 5
+end
 arch dungeon_magic
 x 10
 y 6
@@ -1697,10 +1789,6 @@ arch woodlarge
 x 10
 y 6
 end
-arch westcwall_win2
-x 10
-y 6
-end
 arch dungeon_magic
 x 10
 y 7
@@ -1833,6 +1921,10 @@ arch woodfloor2
 x 10
 y 20
 end
+arch red_draught_king
+x 10
+y 20
+end
 arch dungeon_magic
 x 10
 y 21
@@ -1841,11 +1933,11 @@ arch woodlgvertical
 x 10
 y 21
 end
-arch westcwall_win2
-x 10
-y 21
-end
 arch woodlgvertical
+x 10
+y 22
+end
+arch westcwall_win2
 x 10
 y 22
 end
@@ -1900,6 +1992,10 @@ arch woodlgvertical
 x 11
 y 5
 end
+arch westcwall_win2
+x 11
+y 5
+end
 arch dungeon_magic
 x 11
 y 6
@@ -1908,15 +2004,15 @@ arch woodlgvertical
 x 11
 y 6
 end
-arch westcwall_win2
-x 11
-y 6
-end
 arch dungeon_magic
 x 11
 y 7
 end
 arch woodfloor2
+x 11
+y 7
+end
+arch black_draught_king
 x 11
 y 7
 end
@@ -2052,11 +2148,11 @@ arch woodlarge
 x 11
 y 21
 end
-arch westcwall_win2
-x 11
-y 21
-end
 arch woodlarge
+x 11
+y 22
+end
+arch westcwall_win2
 x 11
 y 22
 end
@@ -2119,6 +2215,10 @@ arch woodlgvertical
 x 12
 y 5
 end
+arch westcwall_win2
+x 12
+y 5
+end
 arch dungeon_magic
 x 12
 y 6
@@ -2127,10 +2227,6 @@ arch woodlgvertical
 x 12
 y 6
 end
-arch westcwall_win2
-x 12
-y 6
-end
 arch dungeon_magic
 x 12
 y 7
@@ -2263,6 +2359,10 @@ arch woodfloor2
 x 12
 y 20
 end
+arch red_draught_king
+x 12
+y 20
+end
 arch dungeon_magic
 x 12
 y 21
@@ -2271,11 +2371,11 @@ arch woodlarge
 x 12
 y 21
 end
-arch westcwall_win2
-x 12
-y 21
-end
 arch woodlarge
+x 12
+y 22
+end
+arch westcwall_win2
 x 12
 y 22
 end
@@ -2330,6 +2430,10 @@ arch woodlgvertical
 x 13
 y 5
 end
+arch westcwall_win2
+x 13
+y 5
+end
 arch dungeon_magic
 x 13
 y 6
@@ -2342,15 +2446,15 @@ arch woodlgvertical
 x 13
 y 6
 end
-arch westcwall_win2
-x 13
-y 6
-end
 arch dungeon_magic
 x 13
 y 7
 end
 arch woodfloor2
+x 13
+y 7
+end
+arch black_draught_king
 x 13
 y 7
 end
@@ -2487,10 +2591,6 @@ x 13
 y 21
 end
 arch woodlarge
-x 13
-y 21
-end
-arch westcwall_win2
 x 13
 y 21
 end
@@ -2499,6 +2599,10 @@ x 13
 y 22
 end
 arch woodlarge
+x 13
+y 22
+end
+arch westcwall_win2
 x 13
 y 22
 end
@@ -2563,6 +2667,10 @@ arch woodlarge
 x 14
 y 5
 end
+arch westcwall_win2
+x 14
+y 5
+end
 arch dungeon_magic
 x 14
 y 6
@@ -2571,10 +2679,6 @@ arch woodlarge
 x 14
 y 6
 end
-arch westcwall_win2
-x 14
-y 6
-end
 arch dungeon_magic
 x 14
 y 7
@@ -2707,6 +2811,10 @@ arch woodfloor2
 x 14
 y 20
 end
+arch red_draught_king
+x 14
+y 20
+end
 arch dungeon_magic
 x 14
 y 21
@@ -2715,11 +2823,11 @@ arch woodlgvertical
 x 14
 y 21
 end
-arch westcwall_win2
-x 14
-y 21
-end
 arch woodlgvertical
+x 14
+y 22
+end
+arch westcwall_win2
 x 14
 y 22
 end
@@ -2795,6 +2903,10 @@ arch woodlarge
 x 15
 y 5
 end
+arch westcwall_win2
+x 15
+y 5
+end
 arch dungeon_magic
 x 15
 y 6
@@ -2803,15 +2915,15 @@ arch woodlarge
 x 15
 y 6
 end
-arch westcwall_win2
-x 15
-y 6
-end
 arch dungeon_magic
 x 15
 y 7
 end
 arch woodfloor2
+x 15
+y 7
+end
+arch black_draught_king
 x 15
 y 7
 end
@@ -2947,11 +3059,11 @@ arch woodlgvertical
 x 15
 y 21
 end
-arch westcwall_win2
-x 15
-y 21
-end
 arch woodlgvertical
+x 15
+y 22
+end
+arch westcwall_win2
 x 15
 y 22
 end
@@ -3028,6 +3140,10 @@ arch woodlarge
 x 16
 y 5
 end
+arch westcwall_win2
+x 16
+y 5
+end
 arch dungeon_magic
 x 16
 y 6
@@ -3036,10 +3152,6 @@ arch woodlarge
 x 16
 y 6
 end
-arch westcwall_win2
-x 16
-y 6
-end
 arch dungeon_magic
 x 16
 y 7
@@ -3172,6 +3284,10 @@ arch woodfloor2
 x 16
 y 20
 end
+arch red_draught_king
+x 16
+y 20
+end
 arch dungeon_magic
 x 16
 y 21
@@ -3180,11 +3296,11 @@ arch woodlgvertical
 x 16
 y 21
 end
-arch westcwall_win2
-x 16
-y 21
-end
 arch woodlgvertical
+x 16
+y 22
+end
+arch westcwall_win2
 x 16
 y 22
 end
@@ -3256,6 +3372,10 @@ arch woodlgvertical
 x 17
 y 5
 end
+arch westcwall_win2
+x 17
+y 5
+end
 arch dungeon_magic
 x 17
 y 6
@@ -3264,15 +3384,15 @@ arch woodlgvertical
 x 17
 y 6
 end
-arch westcwall_win2
-x 17
-y 6
-end
 arch dungeon_magic
 x 17
 y 7
 end
 arch woodfloor2
+x 17
+y 7
+end
+arch black_draught_king
 x 17
 y 7
 end
@@ -3408,11 +3528,11 @@ arch woodlarge
 x 17
 y 21
 end
-arch westcwall_win2
-x 17
-y 21
-end
 arch woodlarge
+x 17
+y 22
+end
+arch westcwall_win2
 x 17
 y 22
 end
@@ -3481,6 +3601,10 @@ arch woodlgvertical
 x 18
 y 5
 end
+arch westcwall_win2
+x 18
+y 5
+end
 arch dungeon_magic
 x 18
 y 6
@@ -3489,10 +3613,6 @@ arch woodlgvertical
 x 18
 y 6
 end
-arch westcwall_win2
-x 18
-y 6
-end
 arch dungeon_magic
 x 18
 y 7
@@ -3625,6 +3745,10 @@ arch woodfloor2
 x 18
 y 20
 end
+arch red_draught_king
+x 18
+y 20
+end
 arch dungeon_magic
 x 18
 y 21
@@ -3633,11 +3757,11 @@ arch woodlarge
 x 18
 y 21
 end
-arch westcwall_win2
-x 18
-y 21
-end
 arch woodlarge
+x 18
+y 22
+end
+arch westcwall_win2
 x 18
 y 22
 end
@@ -3692,6 +3816,10 @@ arch woodlgvertical
 x 19
 y 5
 end
+arch westcwall_win2
+x 19
+y 5
+end
 arch dungeon_magic
 x 19
 y 6
@@ -3700,15 +3828,15 @@ arch woodlgvertical
 x 19
 y 6
 end
-arch westcwall_win2
-x 19
-y 6
-end
 arch dungeon_magic
 x 19
 y 7
 end
 arch woodfloor2
+x 19
+y 7
+end
+arch black_draught_king
 x 19
 y 7
 end
@@ -3848,11 +3976,11 @@ arch woodlarge
 x 19
 y 21
 end
-arch westcwall_win2
-x 19
-y 21
-end
 arch woodlarge
+x 19
+y 22
+end
+arch westcwall_win2
 x 19
 y 22
 end
@@ -3911,6 +4039,10 @@ arch woodlarge
 x 20
 y 5
 end
+arch westcwall_win2
+x 20
+y 5
+end
 arch dungeon_magic
 x 20
 y 6
@@ -3919,10 +4051,6 @@ arch woodlarge
 x 20
 y 6
 end
-arch westcwall_win2
-x 20
-y 6
-end
 arch dungeon_magic
 x 20
 y 7
@@ -3952,6 +4080,10 @@ x 20
 y 10
 end
 arch woodfloor2
+x 20
+y 10
+end
+arch black_draught_king
 x 20
 y 10
 end
@@ -3968,6 +4100,10 @@ x 20
 y 12
 end
 arch woodfloor2
+x 20
+y 12
+end
+arch black_draught_king
 x 20
 y 12
 end
@@ -4003,6 +4139,10 @@ arch woodfloor2
 x 20
 y 16
 end
+arch red_draught_king
+x 20
+y 16
+end
 arch dungeon_magic
 x 20
 y 17
@@ -4016,6 +4156,10 @@ x 20
 y 18
 end
 arch woodfloor2
+x 20
+y 18
+end
+arch red_draught_king
 x 20
 y 18
 end
@@ -4042,12 +4186,12 @@ end
 arch woodlgvertical
 x 20
 y 21
+end
+arch woodlgvertical
+x 20
+y 22
 end
 arch westcwall_win2
-x 20
-y 21
-end
-arch woodlgvertical
 x 20
 y 22
 end
@@ -4106,6 +4250,10 @@ arch woodlarge
 x 21
 y 5
 end
+arch westcwall_win2
+x 21
+y 5
+end
 arch dungeon_magic
 x 21
 y 6
@@ -4113,315 +4261,335 @@ end
 arch woodlarge
 x 21
 y 6
+end
+arch dungeon_magic
+x 21
+y 7
+end
+arch light4
+x 21
+y 7
+end
+arch woodlarge
+x 21
+y 7
+end
+arch dungeon_magic
+x 21
+y 8
+end
+arch woodlgvertical
+x 21
+y 8
+end
+arch dungeon_magic
+x 21
+y 9
+end
+arch woodlgvertical
+x 21
+y 9
+end
+arch dungeon_magic
+x 21
+y 10
+end
+arch woodlgvertical
+x 21
+y 10
+end
+arch dungeon_magic
+x 21
+y 11
+end
+arch woodlarge
+x 21
+y 11
+end
+arch dungeon_magic
+x 21
+y 12
+end
+arch woodlarge
+x 21
+y 12
+end
+arch dungeon_magic
+x 21
+y 13
+end
+arch woodlarge
+x 21
+y 13
+end
+arch dungeon_magic
+x 21
+y 14
+end
+arch woodlgvertical
+x 21
+y 14
+end
+arch dungeon_magic
+x 21
+y 15
+end
+arch woodlgvertical
+x 21
+y 15
+end
+arch dungeon_magic
+x 21
+y 16
+end
+arch light4
+x 21
+y 16
+end
+arch woodlgvertical
+x 21
+y 16
+end
+arch dungeon_magic
+x 21
+y 17
+end
+arch woodlarge
+x 21
+y 17
+end
+arch dungeon_magic
+x 21
+y 18
+end
+arch woodlarge
+x 21
+y 18
+end
+arch dungeon_magic
+x 21
+y 19
+end
+arch woodlarge
+x 21
+y 19
+end
+arch dungeon_magic
+x 21
+y 20
+end
+arch woodlgvertical
+x 21
+y 20
+end
+arch dungeon_magic
+x 21
+y 21
+end
+arch woodlgvertical
+x 21
+y 21
+end
+arch woodlgvertical
+x 21
+y 22
+end
+arch westcwall_win2
+x 21
+y 22
+end
+arch woodlarge
+x 21
+y 23
+end
+arch woodlarge
+x 21
+y 24
+end
+arch flagstone
+x 21
+y 25
+end
+arch westcwall_2_1_2
+x 21
+y 25
+end
+arch grass_only
+x 21
+y 26
+end
+arch grass_only
+x 21
+y 27
+end
+arch grass_only
+x 22
+end
+arch grass_only
+x 22
+y 1
+end
+arch flagstone
+x 22
+y 2
+end
+arch westcwall_2_1_2
+x 22
+y 2
+end
+arch woodlgvertical
+x 22
+y 3
+end
+arch woodlgvertical
+x 22
+y 4
+end
+arch woodlarge
+x 22
+y 5
 end
 arch westcwall_2_2_3
-x 21
+x 22
+y 5
+end
+arch woodlarge
+x 22
 y 6
 end
-arch dungeon_magic
-x 21
-y 7
-end
-arch light4
-x 21
-y 7
+arch westcwall_win1
+x 22
+y 6
 end
 arch woodlarge
-x 21
+x 22
 y 7
 end
 arch westcwall_win1
-x 21
+x 22
 y 7
 end
-arch dungeon_magic
-x 21
-y 8
-end
 arch woodlgvertical
-x 21
+x 22
 y 8
 end
 arch westcwall_win1
-x 21
+x 22
 y 8
 end
-arch dungeon_magic
-x 21
+arch woodlgvertical
+x 22
+y 9
+end
+arch westcwall_win1
+x 22
 y 9
 end
 arch woodlgvertical
-x 21
-y 9
-end
-arch westcwall_win1
-x 21
-y 9
-end
-arch dungeon_magic
-x 21
-y 10
-end
-arch woodlgvertical
-x 21
+x 22
 y 10
 end
 arch westcwall_win1
-x 21
+x 22
 y 10
 end
-arch dungeon_magic
-x 21
+arch woodlarge
+x 22
+y 11
+end
+arch westcwall_win1
+x 22
 y 11
 end
 arch woodlarge
-x 21
-y 11
-end
-arch westcwall_win1
-x 21
-y 11
-end
-arch dungeon_magic
-x 21
-y 12
-end
-arch woodlarge
-x 21
-y 12
-end
-arch westcwall_win1
-x 21
+x 22
 y 12
 end
 arch westcwall_1_2
-x 21
+x 22
 y 12
 end
 arch dungeon_magic
-x 21
+x 22
 y 13
 end
 arch woodlarge
-x 21
+x 22
 y 13
 end
 arch dungeon_magic
-x 21
+x 22
 y 14
 end
 arch woodlgvertical
-x 21
+x 22
 y 14
 end
-arch dungeon_magic
-x 21
+arch woodlgvertical
+x 22
 y 15
 end
-arch woodlgvertical
-x 21
+arch westcwall_win1
+x 22
 y 15
 end
 arch westcwall_1_1
-x 21
+x 22
 y 15
 end
-arch dungeon_magic
-x 21
-y 16
-end
-arch light4
-x 21
-y 16
-end
 arch woodlgvertical
-x 21
+x 22
 y 16
 end
 arch westcwall_win1
-x 21
+x 22
 y 16
 end
-arch dungeon_magic
-x 21
-y 17
-end
 arch woodlarge
-x 21
+x 22
 y 17
 end
 arch westcwall_win1
-x 21
+x 22
 y 17
 end
-arch dungeon_magic
-x 21
+arch woodlarge
+x 22
+y 18
+end
+arch westcwall_win1
+x 22
 y 18
 end
 arch woodlarge
-x 21
-y 18
-end
-arch westcwall_win1
-x 21
-y 18
-end
-arch dungeon_magic
-x 21
-y 19
-end
-arch woodlarge
-x 21
+x 22
 y 19
 end
 arch westcwall_win1
-x 21
+x 22
 y 19
 end
-arch dungeon_magic
-x 21
-y 20
-end
 arch woodlgvertical
-x 21
+x 22
 y 20
 end
 arch westcwall_win1
-x 21
+x 22
 y 20
 end
-arch dungeon_magic
-x 21
+arch woodlgvertical
+x 22
+y 21
+end
+arch westcwall_win1
+x 22
 y 21
 end
 arch woodlgvertical
-x 21
-y 21
-end
-arch westcwall_2_2_4
-x 21
-y 21
-end
-arch woodlgvertical
-x 21
+x 22
 y 22
 end
-arch woodlarge
-x 21
-y 23
-end
-arch woodlarge
-x 21
-y 24
-end
-arch flagstone
-x 21
-y 25
-end
-arch westcwall_2_1_2
-x 21
-y 25
-end
-arch grass_only
-x 21
-y 26
-end
-arch grass_only
-x 21
-y 27
-end
-arch grass_only
-x 22
-end
-arch grass_only
-x 22
-y 1
-end
-arch flagstone
-x 22
-y 2
-end
-arch westcwall_2_1_2
-x 22
-y 2
-end
-arch woodlgvertical
-x 22
-y 3
-end
-arch woodlgvertical
-x 22
-y 4
-end
-arch woodlarge
-x 22
-y 5
-end
-arch woodlarge
-x 22
-y 6
-end
-arch woodlarge
-x 22
-y 7
-end
-arch woodlgvertical
-x 22
-y 8
-end
-arch woodlgvertical
-x 22
-y 9
-end
-arch woodlgvertical
-x 22
-y 10
-end
-arch woodlarge
-x 22
-y 11
-end
-arch woodlarge
-x 22
-y 12
-end
-arch woodlarge
-x 22
-y 13
-end
-arch woodlgvertical
-x 22
-y 14
-end
-arch woodlgvertical
-x 22
-y 15
-end
-arch woodlgvertical
-x 22
-y 16
-end
-arch woodlarge
-x 22
-y 17
-end
-arch woodlarge
-x 22
-y 18
-end
-arch woodlarge
-x 22
-y 19
-end
-arch woodlgvertical
-x 22
-y 20
-end
-arch woodlgvertical
-x 22
-y 21
-end
-arch woodlgvertical
+arch westcwall_2_2_4
 x 22
 y 22
 end
@@ -4504,17 +4672,33 @@ arch woodlgvertical
 x 23
 y 11
 end
-arch woodlgvertical
+arch dungeon_magic
 x 23
 y 12
 end
 arch woodlgvertical
 x 23
+y 12
+end
+arch dungeon_magic
+x 23
 y 13
+end
+arch woodlgvertical
+x 23
+y 13
+end
+arch dungeon_magic
+x 23
+y 14
 end
 arch woodlarge
 x 23
 y 14
+end
+arch dungeon_magic
+x 23
+y 15
 end
 arch woodlarge
 x 23
@@ -4619,25 +4803,49 @@ arch woodlarge
 x 24
 y 10
 end
-arch woodlgvertical
+arch dungeon_magic
 x 24
 y 11
 end
 arch woodlgvertical
 x 24
+y 11
+end
+arch dungeon_magic
+x 24
 y 12
+end
+arch woodlgvertical
+x 24
+y 12
+end
+arch dungeon_magic
+x 24
+y 13
 end
 arch woodlgvertical
 x 24
 y 13
 end
-arch woodlarge
+arch dungeon_magic
 x 24
 y 14
 end
 arch woodlarge
 x 24
+y 14
+end
+arch dungeon_magic
+x 24
 y 15
+end
+arch woodlarge
+x 24
+y 15
+end
+arch dungeon_magic
+x 24
+y 16
 end
 arch woodlarge
 x 24
