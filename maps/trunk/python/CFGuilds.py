@@ -32,7 +32,7 @@ def GuildUpdate():
             guildfile.close()
             guildlisting.pop()
     except:
-        Crossfire.Log(Crossfire.LogError,'No GuidList file.  Please check %s' %GuildList)
+        Crossfire.Log(Crossfire.LogError,'No GuildList file.  Please check %s' %GuildList)
     if (guildlisting):
         Crossfire.Log(Crossfire.LogDebug, '%s' %guildlisting)
         for guild in guildlisting:
