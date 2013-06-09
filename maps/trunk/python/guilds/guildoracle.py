@@ -120,18 +120,20 @@ if (Access ==1) or (isDM == 1):
             else:
                 message = 'Usage "demote <member_name>"'
         elif text[0] == 'status':
-            if len(text)==3:
-                record = guild.info(text[1])
-                if record:
+            record = guild.info(text[1])
+            if record:
+                if len(text)==3:
                     if guild.change_status(text[1],text[2]):
                         record = guild.info(text[1]) #refresh record
                         message = '%s now has status of %s' %(text[1], record['Status'])
                     else:
-                        message = '%s is not a valid status, valid values are "suspended", "probation" or "good"' %text[2]
+                        status = ', '.join(guild.status)
+                        message = '%s is not a valid status, valid values are %s.' %(text[2],status)
                 else:
-                    message = '%s is not a member' %text[1]
+                    status = ', '.join(guild.status)
+                    message = 'Current status for %s is %s.\nTo change use "status %s <status>" where status is one of %s.' %(text[1],record['Status'],text[1],status)
             else:
-                message = 'Usage "status <member_name> (suspended or probation or good)"'
+                message = '%s is not a member' %text[1]
         elif text[0] == 'add' and isDM:
             if len(text)==2:
                 if log.info(text[1]):
@@ -146,8 +148,8 @@ if (Access ==1) or (isDM == 1):
             else:
                 message = 'Usage "add <membername>"'
         elif text[0] == 'guildstatus' and isDM:
+            record = guildhouse.info(guildname)
             if len(text)==2:
-                record = guildhouse.info(guildname)
                 if record:
                     if guildhouse.change_status(guildname,text[1]):
                         record = guildhouse.info(text[1]) #refresh record
@@ -157,7 +159,8 @@ if (Access ==1) or (isDM == 1):
                 else:
                     message = '%s is not a guild' %guildname
             else:
-                message = 'Usage "guildstatus <status>\n%s"' %str(guildhouse.status)
+                status = ", ".join(guildhouse.status)
+                message = 'Current guild status is %s.\nTo change it use "guildstatus <status>" where status is one of %s' %(str(record['Status']),status)
         else:
             message = 'What did you need?'
     else:
