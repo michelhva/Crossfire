@@ -8,8 +8,9 @@ enter_x 5
 enter_y 8
 msg
 Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
-Modified: 2012-03-15 Rick Tanner
+Modified: 2013-03-22 Kevin Zheng
 endmsg
+outdoor 1
 end
 arch sea
 end
@@ -855,6 +856,10 @@ arch chair_1.2
 x 6
 y 17
 end
+arch light3
+x 6
+y 17
+end
 arch woodfloor
 x 6
 y 18
@@ -949,6 +954,11 @@ end
 arch woodfloor
 x 7
 y 13
+end
+arch light4
+x 7
+y 13
+glow_radius 6
 end
 arch woodfloor
 x 7
@@ -1232,6 +1242,10 @@ arch chair_1.2
 x 9
 y 17
 end
+arch light3
+x 9
+y 17
+end
 arch woodfloor
 x 9
 y 18
@@ -1308,6 +1322,10 @@ x 10
 y 8
 end
 arch woodfloor
+x 10
+y 9
+end
+arch light3
 x 10
 y 9
 end
@@ -1601,6 +1619,11 @@ arch woodfloor
 x 12
 y 13
 end
+arch light4
+x 12
+y 13
+glow_radius 6
+end
 arch woodfloor
 x 12
 y 14
@@ -1622,6 +1645,10 @@ x 12
 y 17
 end
 arch chair_1.2
+x 12
+y 17
+end
+arch light3
 x 12
 y 17
 end
@@ -1701,6 +1728,10 @@ x 13
 y 8
 end
 arch woodfloor
+x 13
+y 9
+end
+arch light3
 x 13
 y 9
 end
@@ -2028,6 +2059,10 @@ arch chair_1.2
 x 15
 y 17
 end
+arch light3
+x 15
+y 17
+end
 arch woodfloor
 x 15
 y 18
@@ -2129,6 +2164,11 @@ arch woodfloor
 x 16
 y 13
 end
+arch light4
+x 16
+y 13
+glow_radius 6
+end
 arch woodfloor
 x 16
 y 14
@@ -2229,6 +2269,10 @@ x 17
 y 8
 end
 arch woodfloor
+x 17
+y 9
+end
+arch light3
 x 17
 y 9
 end
@@ -2418,6 +2462,10 @@ x 18
 y 17
 end
 arch chair_1.2
+x 18
+y 17
+end
+arch light3
 x 18
 y 17
 end
@@ -2657,6 +2705,11 @@ arch woodfloor
 x 20
 y 13
 end
+arch light4
+x 20
+y 13
+glow_radius 6
+end
 arch woodfloor
 x 20
 y 14
@@ -2758,6 +2811,10 @@ arch woodfloor
 x 21
 y 9
 end
+arch light3
+x 21
+y 9
+end
 arch woodfloor
 x 21
 y 10
@@ -2803,6 +2860,10 @@ x 21
 y 17
 end
 arch chair_1.2
+x 21
+y 17
+end
+arch light3
 x 21
 y 17
 end
@@ -3209,6 +3270,11 @@ arch wwall_2_1_2
 x 24
 y 13
 end
+arch light4
+x 24
+y 13
+glow_radius 6
+end
 arch woodfloor
 x 24
 y 14
@@ -3297,6 +3363,10 @@ x 25
 y 8
 end
 arch woodfloor
+x 25
+y 9
+end
+arch light3
 x 25
 y 9
 end
