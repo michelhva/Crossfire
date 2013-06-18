@@ -670,9 +670,10 @@ x 5
 y 9
 end
 arch sign_e
-name Vacancy
+name Waterfront Inn
 msg
-Vacancy
+Waterfront Inn
+We have plenty of vaccant rooms, so come on in!
 endmsg
 x 5
 y 9
@@ -694,10 +695,12 @@ x 5
 y 12
 end
 arch man
-name Inn Keeper
+name innkeeper
 msg
+@match gate|close
+Oh, I don't know much about that. Maybe you should ask around.
 @match *
-Welcome.  I have many empty rooms tonight
+Welcome, I have plenty of empty rooms today. Help yourself.
 endmsg
 x 5
 y 12
@@ -2030,10 +2033,10 @@ x 15
 y 13
 end
 arch guildmaster
-name Old Man
+name old man
 msg
 @match *
-I'm too busy to help you.  My friend Rufus might help - he's in here somewhere ...
+I'm too busy to help you. My friend Rufus might help - he's in here somewhere...
 endmsg
 x 15
 y 13
@@ -3509,9 +3512,9 @@ arch guildmaster
 name Rufus
 msg
 @match quest|help
-You need to "open" the gate into the closed room here ...
+You should "open" the gate to the closed room here.
 @match *
-I can help you with the elemental quest...
+I can help you with the Elemental Quest.
 endmsg
 x 26
 y 10
@@ -3560,7 +3563,7 @@ end
 arch letter
 msg
 My friend,
-I write to tell you of our trials in the land of Dtabb.  We went south - to a volcano where all manner of firey creatures attacked us.  We were forced to retreat ..
+I write to tell you of our trials in the land of Darcap. We went south, to a volcano where all manners of firey creatures attacked us. We were forced to retreat...
 endmsg
 x 26
 y 16
