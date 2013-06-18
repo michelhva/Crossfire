@@ -2989,20 +2989,19 @@ arch woodfloor
 x 22
 y 14
 end
-arch magic_ear
-msg
-@match open
-Sssshhhh.
-endmsg
-x 22
-y 14
-connected 1
-move_off walk
-end
 arch gate_closed_2
 x 22
 y 14
 speed 0.500000
+connected 1
+end
+arch magic_ear
+msg
+@match open
+Ssshhh!
+endmsg
+x 22
+y 14
 connected 1
 end
 arch woodfloor
