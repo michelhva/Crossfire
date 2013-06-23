@@ -29,7 +29,7 @@
 # Constant price values (all prices in platinum coins)
 priceWritingPen = 100
 priceScrollOfLiteracy = 5000
-priceMailScroll = 5
+priceMailScroll = 2
 priceFactor = 50	# platinum to silver conversion
 
 # package information
