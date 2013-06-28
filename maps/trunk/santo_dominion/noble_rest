@@ -7,7 +7,7 @@ height 22
 enter_x 10
 enter_y 18
 msg
-Modified: 2013-02-10 Nicolas Weeger
+Modified: 2013-03-20 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -3870,10 +3870,6 @@ arch loaf
 x 21
 y 8
 end
-arch loaf
-x 21
-y 8
-end
 arch dungeon_magic
 x 21
 y 9
@@ -3892,10 +3888,6 @@ arch haggis
 x 21
 y 9
 end
-arch haggis
-x 21
-y 9
-end
 arch dungeon_magic
 x 21
 y 10
@@ -3909,10 +3901,6 @@ name prep area
 x 21
 y 10
 move_block all
-end
-arch onion
-x 21
-y 10
 end
 arch onion
 x 21
