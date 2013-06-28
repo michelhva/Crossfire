@@ -2194,20 +2194,54 @@ arch grass
 x 14
 y 24
 end
-arch grass
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
 x 15
 end
 arch grass
+x 15
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
 x 15
 y 1
 end
 arch grass
 x 15
+y 1
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 15
 y 2
 end
 arch grass
 x 15
+y 2
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 15
 y 3
+end
+arch grass
+x 15
+y 3
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 15
+y 4
 end
 arch grass
 x 15
@@ -2659,12 +2693,32 @@ arch grass
 x 17
 y 24
 end
-arch grass
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
 x 18
 end
 arch grass
 x 18
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 18
 y 1
+end
+arch grass
+x 18
+y 1
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 18
+y 2
 end
 arch grass
 x 18
@@ -2825,6 +2879,13 @@ arch grass
 x 19
 y 1
 end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 19
+y 2
+end
 arch grass
 x 19
 y 2
@@ -2976,6 +3037,13 @@ arch grass
 x 20
 y 1
 end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 20
+y 2
+end
 arch grass
 x 20
 y 2
@@ -3118,6 +3186,13 @@ end
 arch grass
 x 21
 y 1
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 21
+y 2
 end
 arch grass
 x 21
@@ -3290,6 +3365,13 @@ arch grass
 x 22
 y 1
 end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 22
+y 2
+end
 arch grass
 x 22
 y 2
@@ -3435,6 +3517,13 @@ arch grass
 x 23
 y 1
 end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 23
+y 2
+end
 arch grass
 x 23
 y 2
@@ -3581,6 +3670,13 @@ end
 arch grass
 x 24
 y 1
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 24
+y 2
 end
 arch grass
 x 24
@@ -3741,6 +3837,13 @@ arch grass
 x 25
 y 1
 end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 25
+y 2
+end
 arch grass
 x 25
 y 2
@@ -3883,6 +3986,13 @@ end
 arch grass
 x 26
 y 1
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 26
+y 2
 end
 arch grass
 x 26
@@ -4030,6 +4140,13 @@ end
 arch grass
 x 27
 y 1
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 27
+y 2
 end
 arch grass
 x 27
@@ -4170,9 +4287,23 @@ arch grass
 x 28
 y 1
 end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 28
+y 2
+end
 arch grass
 x 28
 y 2
+end
+arch exit
+slaying /world/world_129_108
+hp 6
+sp 30
+x 28
+y 3
 end
 arch grass
 x 28
