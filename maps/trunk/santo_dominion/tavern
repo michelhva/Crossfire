@@ -1925,11 +1925,14 @@ arch wwall_1_3
 x 13
 y 19
 end
-arch dungeon_magic
+arch cobblestones
 x 13
 y 20
 end
-arch cobblestones
+arch invis_exit
+slaying /world/world_102_108
+hp 16
+sp 7
 x 13
 y 20
 end
@@ -2055,13 +2058,6 @@ arch woodfloor
 x 14
 y 18
 end
-arch invis_exit
-slaying /world/world_102_108
-hp 16
-sp 7
-x 14
-y 19
-end
 arch woodfloor
 x 14
 y 19
@@ -2079,11 +2075,14 @@ move_block 0
 alive 0
 pass_thru 0
 end
-arch dungeon_magic
+arch cobblestones
 x 14
 y 20
 end
-arch cobblestones
+arch invis_exit
+slaying /world/world_102_108
+hp 16
+sp 7
 x 14
 y 20
 end
@@ -2235,11 +2234,14 @@ arch wwall_1_4
 x 15
 y 19
 end
-arch dungeon_magic
+arch cobblestones
 x 15
 y 20
 end
-arch cobblestones
+arch invis_exit
+slaying /world/world_102_108
+hp 16
+sp 7
 x 15
 y 20
 end
