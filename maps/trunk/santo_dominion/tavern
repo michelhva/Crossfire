@@ -8,12 +8,10 @@ enter_x 14
 enter_y 18
 msg
 Created:  1994-04-05 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2012-03-25 Rick Tanner
+Modified: 2013-03-20 Kevin Zheng
 endmsg
 end
 arch grass
-end
-arch mine2
 end
 arch grass
 y 1
@@ -82,9 +80,6 @@ arch cobblestones
 y 22
 end
 arch grass
-x 1
-end
-arch mine2
 x 1
 end
 arch grass
@@ -230,9 +225,6 @@ end
 arch grass
 x 2
 end
-arch mine2
-x 2
-end
 arch grass
 x 2
 y 1
@@ -346,9 +338,6 @@ x 2
 y 22
 end
 arch grass
-x 3
-end
-arch mine2
 x 3
 end
 arch grass
@@ -500,9 +489,6 @@ x 3
 y 22
 end
 arch grass
-x 4
-end
-arch mine2
 x 4
 end
 arch woodfloor
@@ -658,9 +644,6 @@ x 4
 y 22
 end
 arch grass
-x 5
-end
-arch mine2
 x 5
 end
 arch woodfloor
@@ -835,9 +818,6 @@ end
 arch grass
 x 6
 end
-arch mine2
-x 6
-end
 arch woodfloor
 x 6
 y 1
@@ -993,9 +973,6 @@ end
 arch grass
 x 7
 end
-arch mine2
-x 7
-end
 arch woodfloor
 x 7
 y 1
@@ -1118,9 +1095,6 @@ x 7
 y 22
 end
 arch grass
-x 8
-end
-arch mine2
 x 8
 end
 arch woodfloor
@@ -1291,9 +1265,6 @@ end
 arch grass
 x 9
 end
-arch mine2
-x 9
-end
 arch woodfloor
 x 9
 y 1
@@ -1450,9 +1421,6 @@ end
 arch grass
 x 10
 end
-arch mine2
-x 10
-end
 arch woodfloor
 x 10
 y 1
@@ -1575,9 +1543,6 @@ x 10
 y 22
 end
 arch grass
-x 11
-end
-arch mine2
 x 11
 end
 arch woodfloor
@@ -1705,9 +1670,6 @@ x 11
 y 22
 end
 arch grass
-x 12
-end
-arch mine2
 x 12
 end
 arch woodfloor
@@ -1859,9 +1821,6 @@ end
 arch grass
 x 13
 end
-arch mine2
-x 13
-end
 arch woodfloor
 x 13
 y 1
@@ -1983,9 +1942,6 @@ x 13
 y 22
 end
 arch grass
-x 14
-end
-arch mine2
 x 14
 end
 arch woodfloor
@@ -2140,9 +2096,6 @@ x 14
 y 22
 end
 arch grass
-x 15
-end
-arch mine2
 x 15
 end
 arch woodfloor
@@ -2301,9 +2254,6 @@ end
 arch grass
 x 16
 end
-arch mine2
-x 16
-end
 arch woodfloor
 x 16
 y 1
@@ -2458,9 +2408,6 @@ x 16
 y 22
 end
 arch grass
-x 17
-end
-arch mine2
 x 17
 end
 arch woodfloor
@@ -2622,9 +2569,6 @@ end
 arch grass
 x 18
 end
-arch mine2
-x 18
-end
 arch woodfloor
 x 18
 y 1
@@ -2765,9 +2709,6 @@ x 18
 y 22
 end
 arch grass
-x 19
-end
-arch mine2
 x 19
 end
 arch woodfloor
@@ -2965,9 +2906,6 @@ end
 arch grass
 x 20
 end
-arch mine2
-x 20
-end
 arch woodfloor
 x 20
 y 1
@@ -3112,9 +3050,6 @@ x 20
 y 22
 end
 arch grass
-x 21
-end
-arch mine2
 x 21
 end
 arch woodfloor
@@ -3271,9 +3206,6 @@ x 21
 y 22
 end
 arch grass
-x 22
-end
-arch mine2
 x 22
 end
 arch woodfloor
@@ -3448,9 +3380,6 @@ end
 arch grass
 x 23
 end
-arch mine2
-x 23
-end
 arch woodfloor
 x 23
 y 1
@@ -3584,9 +3513,6 @@ x 23
 y 22
 end
 arch grass
-x 24
-end
-arch mine2
 x 24
 end
 arch woodfloor
@@ -3772,9 +3698,6 @@ end
 arch grass
 x 25
 end
-arch mine2
-x 25
-end
 arch grass
 x 25
 y 1
@@ -3876,9 +3799,6 @@ x 25
 y 22
 end
 arch grass
-x 26
-end
-arch mine2
 x 26
 end
 arch grass
