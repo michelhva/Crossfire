@@ -946,10 +946,10 @@ x 8
 y 6
 end
 arch altar
-name key costs 3000 gp
+name drop 3000 gold for keys
 slaying money
 msg
-Here you can get a key for 3000 gold.
+Click.
 endmsg
 food 3000
 x 8
@@ -1067,10 +1067,16 @@ arch woodfloor
 x 9
 y 8
 end
-arch goldfloor
+arch woodfloor
+x 9
+y 9
+end
+arch altar_trigger
 name drop 10 gold to enter
 slaying money
-face woodfloor.111
+msg
+Click.
+endmsg
 food 100
 x 9
 y 9
