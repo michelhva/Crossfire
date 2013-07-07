@@ -8,8 +8,9 @@ enter_x 12
 enter_y 19
 msg
 Created:  1993-11-01 (john_cater@yahoo.com)
-Modified: 2012-06-19 Rick Tanner
+Modified: 2013-07-07 Kevin Zheng
 endmsg
+outdoor 1
 end
 arch cobblestones
 end
@@ -233,10 +234,6 @@ arch cwall_3_2
 x 2
 y 8
 end
-arch dungeon_magic
-x 2
-y 8
-end
 arch cobblestones2
 x 2
 y 9
@@ -249,13 +246,19 @@ arch cobblestones2
 x 2
 y 10
 end
-arch cwall_2_1_1
+arch cwall_3_2
 x 2
 y 10
 end
 arch cobblestones2
 x 2
 y 11
+end
+arch cwall_2_1_1
+x 2
+y 11
+invisible 1
+blocksview 0
 end
 arch dwall_win1
 x 2
@@ -356,39 +359,49 @@ arch cwall_2_1_2
 x 3
 y 2
 end
-arch cobblestones2
+arch tile_white_floor
 x 3
 y 3
 end
-arch chest
+arch bookshelf
 x 3
 y 3
 end
-arch cobblestones2
+arch tile_white_floor
 x 3
 y 4
 end
-arch chest
+arch conjurer
+name Dr. Eliza
+Con 5
+hp 80
+maxhp 80
+exp 100
+dam 20
+wc 10
+ac 0
 x 3
 y 4
+speed 0.5
+level 10
+attacktype 1
+pick_up 1
+no_pick 1
+unaggressive 1
+arch event_say
+title Python
+slaying /python/dialog/eliza.py
 end
-arch cobblestones2
+end
+arch tile_white_floor
 x 3
 y 5
 end
-arch cobblestones2
+arch tile_white_floor
 x 3
 y 6
 end
-arch chest
-x 3
-y 6
-end
-arch cobblestones2
-x 3
-y 7
-end
-arch chest
+arch tile_white_floor
 x 3
 y 7
 end
@@ -400,15 +413,23 @@ arch cwall_2_1_2
 x 3
 y 8
 end
-arch dungeon_magic
-x 3
-y 8
-end
 arch cobblestones2
 x 3
 y 9
 end
+arch creator
+slaying Boarding Pass to Scorn
+other_arch card
+x 3
+y 9
+connected 2
+lifesave 1
+end
 arch cobblestones2
+x 3
+y 10
+end
+arch cwall_2_1_2
 x 3
 y 10
 end
@@ -416,11 +437,28 @@ arch cobblestones2
 x 3
 y 11
 end
+arch chair_1.1
+x 3
+y 11
+end
 arch cobblestones2
 x 3
 y 12
 end
+arch table_3
+x 3
+y 12
+no_pick 1
+end
+arch random_food
+x 3
+y 12
+end
 arch cobblestones2
+x 3
+y 13
+end
+arch chair_1.3
 x 3
 y 13
 end
@@ -503,49 +541,29 @@ arch cwall_2_1_2
 x 4
 y 2
 end
-arch cobblestones2
+arch tile_white_floor
 x 4
 y 3
 end
-arch longtable_1_4
+arch fireplace
 x 4
 y 3
-move_block all
 end
-arch cobblestones2
+arch tile_white_floor
 x 4
 y 4
 end
-arch blue_dragon2
-name Edwardo
-msg
-@match *
-Sorry I am on break, please come back later.
-endmsg
-x 4
-y 4
-stand_still 1
-arch event_say
-title Python
-slaying /python/IPO/banksay.py
-end
-end
-arch cobblestones2
+arch tile_white_floor
 x 4
 y 5
 end
-arch cobblestones2
+arch tile_white_floor
 x 4
 y 6
 end
-arch cobblestones2
+arch tile_white_floor
 x 4
 y 7
-end
-arch longtable_1_4
-x 4
-y 7
-move_block all
 end
 arch cobblestones2
 x 4
@@ -555,20 +573,27 @@ arch cwall_2_1_2
 x 4
 y 8
 end
-arch dungeon_magic
-x 4
-y 8
-end
 arch cobblestones2
 x 4
 y 9
 end
-arch longtable_1_4
+arch altar_trigger
+name Scorn (5 platinum)
+slaying money
+msg
+Here's your ticket, enjoy your trip!
+endmsg
+food 250
 x 4
 y 9
-move_block all
+last_sp 1
+connected 2
 end
 arch cobblestones2
+x 4
+y 10
+end
+arch cwall_1_3
 x 4
 y 10
 end
@@ -580,14 +605,13 @@ arch cobblestones2
 x 4
 y 12
 end
+arch chair_1.2
+x 4
+y 12
+end
 arch cobblestones2
 x 4
 y 13
-end
-arch longtable_1_4
-x 4
-y 13
-move_block all
 end
 arch cobblestones2
 x 4
@@ -648,72 +672,33 @@ arch cwall_2_1_2
 x 5
 y 2
 end
-arch dungeon_magic
-x 5
-y 2
-end
-arch cobblestones2
+arch tile_white_floor
 x 5
 y 3
 end
-arch longtable_2_2_3
-x 5
-y 3
-move_block all
-end
-arch dungeon_magic
+arch bookshelf
 x 5
 y 3
 end
-arch cobblestones2
+arch tile_white_floor
 x 5
 y 4
 end
-arch longtable_2_1_1
-x 5
-y 4
-move_block all
-end
-arch dungeon_magic
-x 5
-y 4
-end
-arch cobblestones2
+arch tile_white_floor
 x 5
 y 5
 end
-arch longtable_2_1_1
+arch button_trigger
 x 5
 y 5
-move_block all
+invisible 1
+connected 5
 end
-arch dungeon_magic
-x 5
-y 5
-end
-arch cobblestones2
+arch tile_white_floor
 x 5
 y 6
 end
-arch longtable_2_1_1
-x 5
-y 6
-move_block all
-end
-arch dungeon_magic
-x 5
-y 6
-end
-arch cobblestones2
-x 5
-y 7
-end
-arch longtable_2_2_4
-x 5
-y 7
-move_block all
-end
-arch dungeon_magic
+arch tile_white_floor
 x 5
 y 7
 end
@@ -725,42 +710,28 @@ arch cwall_2_1_2
 x 5
 y 8
 end
-arch dungeon_magic
-x 5
-y 8
-end
 arch cobblestones2
 x 5
 y 9
 end
-arch longtable_2_2_3
+arch sign_w
+name Scorn
 x 5
 y 9
-move_block all
 end
 arch cobblestones2
 x 5
 y 10
 end
-arch longtable_2_1_1
-x 5
-y 10
-move_block all
-end
 arch cobblestones2
 x 5
 y 11
-end
-arch longtable_2_1_1
-x 5
-y 11
-move_block all
 end
 arch cobblestones2
 x 5
 y 12
 end
-arch longtable_2_1_1
+arch longtable_2_2_2
 x 5
 y 12
 move_block all
@@ -769,7 +740,7 @@ arch cobblestones2
 x 5
 y 13
 end
-arch longtable_2_2_4
+arch longtable_1_2
 x 5
 y 13
 move_block all
@@ -836,27 +807,53 @@ arch cobblestones2
 x 6
 y 2
 end
-arch dwall_win2
+arch cwall_3_3
 x 6
 y 2
 end
-arch cobblestones2
+arch tile_white_floor
 x 6
 y 3
 end
-arch cobblestones2
+arch cwall_2_1_1
+x 6
+y 3
+end
+arch tile_white_floor
 x 6
 y 4
 end
-arch cobblestones2
+arch cwall_1_2
+x 6
+y 4
+end
+arch tile_white_floor
 x 6
 y 5
 end
-arch cobblestones2
+arch mvwdoor_closed_1
+x 6
+y 5
+connected 5
+end
+arch light4
+x 6
+y 5
+glow_radius 8
+end
+arch tile_white_floor
 x 6
 y 6
 end
-arch cobblestones2
+arch cwall_1_1
+x 6
+y 6
+end
+arch tile_white_floor
+x 6
+y 7
+end
+arch cwall_2_1_1
 x 6
 y 7
 end
@@ -864,7 +861,7 @@ arch cobblestones2
 x 6
 y 8
 end
-arch cwall_2_1_2
+arch cwall_3_1
 x 6
 y 8
 end
@@ -880,9 +877,19 @@ arch cobblestones2
 x 6
 y 11
 end
+arch light4
+x 6
+y 11
+glow_radius 8
+end
 arch cobblestones2
 x 6
 y 12
+end
+arch longtable_2_1_2
+x 6
+y 12
+move_block all
 end
 arch cobblestones2
 x 6
@@ -907,6 +914,11 @@ end
 arch cobblestones2
 x 6
 y 17
+end
+arch light4
+x 6
+y 17
+glow_radius 8
 end
 arch cobblestones2
 x 6
@@ -947,25 +959,51 @@ arch cwall_2_1_2
 x 7
 y 2
 end
-arch cobblestones2
+arch tile_white_floor
 x 7
 y 3
 end
-arch cobblestones2
+arch chair_1.1
+x 7
+y 3
+end
+arch tile_white_floor
 x 7
 y 4
 end
-arch cobblestones2
+arch table
+x 7
+y 4
+end
+arch tile_white_floor
 x 7
 y 5
 end
-arch cobblestones2
+arch magic_ear
+msg
+@match no
+endmsg
+x 7
+y 5
+connected 5
+end
+arch tile_white_floor
 x 7
 y 6
 end
-arch cobblestones2
+arch longtable_2_2_2
+x 7
+y 6
+move_block all
+end
+arch tile_white_floor
 x 7
 y 7
+end
+arch longtable_1_2
+x 7
+y 7
+move_block all
 end
 arch cobblestones2
 x 7
@@ -991,7 +1029,27 @@ arch cobblestones2
 x 7
 y 12
 end
+arch longtable_2_1_2
+x 7
+y 12
+move_block all
+end
 arch cobblestones2
+x 7
+y 13
+end
+arch courier
+name shipping officer
+msg
+@match ticket
+Of course! Just head towards the correct booth and pay for your ticket there.
+@match free
+Well...
+@match *
+Welcome to the ticket office! How can I help you?
+@reply free Why isn't shipping free anymore?
+@reply ticket I'd like to buy a ticket, please.
+endmsg
 x 7
 y 13
 end
@@ -1054,23 +1112,61 @@ arch cwall_2_1_2
 x 8
 y 2
 end
-arch cobblestones2
+arch tile_white_floor
 x 8
 y 3
 end
-arch cobblestones2
+arch clock
+x 8
+y 3
+end
+arch tile_white_floor
 x 8
 y 4
 end
-arch cobblestones2
+arch chair_1.2
+x 8
+y 4
+end
+arch tile_white_floor
 x 8
 y 5
 end
-arch cobblestones2
+arch mat
+x 8
+y 5
+end
+arch tile_white_floor
 x 8
 y 6
 end
-arch cobblestones2
+arch longtable_1_3
+x 8
+y 6
+move_block all
+end
+arch book_clasp
+name patient list
+x 8
+y 6
+end
+arch tile_white_floor
+x 8
+y 7
+end
+arch woman
+name receptionist
+msg
+@match yes
+I'm sorry, I don't see your name in the patient list. Are you sure?
+@reply no No, I forgot to make an appointment.
+@match no
+That's fine. Dr. Eliza is free right now, so you can go in.
+@match *
+Good day, do you have an appointment?
+@reply no No, I don't.
+@reply yes Actually, yes.
+endmsg
 x 8
 y 7
 end
@@ -1086,6 +1182,11 @@ arch cobblestones2
 x 8
 y 9
 end
+arch clock
+x 8
+y 9
+no_pick 1
+end
 arch cobblestones2
 x 8
 y 10
@@ -1097,6 +1198,11 @@ end
 arch cobblestones2
 x 8
 y 12
+end
+arch longtable_1_3
+x 8
+y 12
+move_block all
 end
 arch cobblestones2
 x 8
@@ -1246,6 +1352,7 @@ end
 arch door_1
 x 9
 y 11
+move_block 0
 end
 arch cobblestones2
 x 9
@@ -1311,10 +1418,6 @@ arch cwall_2_1_2
 x 9
 y 20
 end
-arch dungeon_magic
-x 9
-y 21
-end
 arch grass_only
 x 9
 y 21
@@ -1359,9 +1462,10 @@ x 10
 y 6
 end
 arch sign_w
-name Imperial Bank
+name Psychotherapist
 msg
-Imperial Bank
+Dr. Eliza's Office
+Walk-in visits are welcome. Please speak to receptionist.
 endmsg
 x 10
 y 6
@@ -1395,8 +1499,10 @@ x 10
 y 12
 end
 arch sign_w
+name Santo Dominion Ticket Office
 msg
-Office Space For Rent
+Santo Dominion Ticket Office
+Boarding passes are on sale here!
 endmsg
 x 10
 y 12
@@ -1441,18 +1547,21 @@ arch cwall_1_3
 x 10
 y 20
 end
-arch dungeon_magic
+arch grass
 x 10
 y 21
 end
-arch grass_only
+arch invis_exit
+slaying /world/world_102_108
+hp 21
+sp 16
 x 10
 y 21
-move_block all
 end
 arch grass_only
 x 10
 y 22
+move_block swim boat
 end
 arch grass_only
 x 11
@@ -1541,21 +1650,21 @@ arch cobblestones2
 x 11
 y 20
 end
-arch oakdoor_2
+arch door_2
+x 11
+y 20
+move_block 0
+end
+arch grass
+x 11
+y 21
+end
+arch invis_exit
 slaying /world/world_102_108
 hp 21
 sp 16
 x 11
-y 20
-end
-arch dungeon_magic
-x 11
 y 21
-end
-arch grass_only
-x 11
-y 21
-move_block all
 end
 arch grass_only
 x 11
@@ -1592,6 +1701,11 @@ arch cobblestones2
 x 12
 y 5
 end
+arch light4
+x 12
+y 5
+glow_radius 8
+end
 arch cobblestones2
 x 12
 y 6
@@ -1615,6 +1729,11 @@ end
 arch cobblestones2
 x 12
 y 11
+end
+arch light4
+x 12
+y 11
+glow_radius 8
 end
 arch cobblestones2
 x 12
@@ -1640,6 +1759,11 @@ arch cobblestones2
 x 12
 y 17
 end
+arch light4
+x 12
+y 17
+glow_radius 8
+end
 arch cobblestones2
 x 12
 y 18
@@ -1652,21 +1776,21 @@ arch cobblestones2
 x 12
 y 20
 end
-arch oakdoor_2
+arch door_2
+x 12
+y 20
+move_block 0
+end
+arch grass
+x 12
+y 21
+end
+arch invis_exit
 slaying /world/world_102_108
 hp 21
 sp 16
 x 12
-y 20
-end
-arch dungeon_magic
-x 12
 y 21
-end
-arch grass_only
-x 12
-y 21
-move_block all
 end
 arch grass_only
 x 12
@@ -1759,21 +1883,21 @@ arch cobblestones2
 x 13
 y 20
 end
-arch oakdoor_2
-slaying /world/world_102_108
-hp 21
-sp 16
+arch door_2
 x 13
 y 20
+move_block 0
 end
-arch dungeon_magic
+arch grass
 x 13
 y 21
 end
-arch grass_only
+arch invis_exit
+slaying /world/world_102_108
+hp 22
+sp 16
 x 13
 y 21
-move_block all
 end
 arch grass_only
 x 13
@@ -1815,9 +1939,9 @@ x 14
 y 6
 end
 arch sign_e
-name Imperial Post Office
+name Vacant
 msg
-Imperial Post Office
+Office Space for Rent
 endmsg
 x 14
 y 6
@@ -1851,8 +1975,9 @@ x 14
 y 12
 end
 arch sign_e
+name Vacant
 msg
-Office Space For Rent
+Office Space for Rent
 endmsg
 x 14
 y 12
@@ -1897,14 +2022,16 @@ arch cwall_1_4
 x 14
 y 20
 end
-arch dungeon_magic
+arch grass
 x 14
 y 21
 end
-arch grass_only
+arch invis_exit
+slaying /world/world_102_108
+hp 22
+sp 16
 x 14
 y 21
-move_block all
 end
 arch grass_only
 x 14
@@ -1948,7 +2075,6 @@ end
 arch door_1
 x 15
 y 5
-move_block 0
 end
 arch cobblestones2
 x 15
@@ -2089,32 +2215,7 @@ arch cobblestones2
 x 16
 y 3
 end
-arch table_3
-x 16
-y 3
-end
-arch book_read
-name Manual
-msg
-Receiving Mail
------------------------
-Open the mailbox and get the scrolls, read them by applying.
-Sending Mail
------------------------
-Get a pencil and be sure that you are able to use the literacy skill.  You can get both at the office; ask Betina for help.
-Get a pre-addressed mailscroll, mark it and write on it with the command:
-use_skill inscription <text>
-Multiple lines of text may be written.
-When done, drop the scroll in the mailbox and it will be sent.
-endmsg
-x 16
-y 3
-end
 arch cobblestones2
-x 16
-y 4
-end
-arch chair_1.3
 x 16
 y 4
 end
@@ -2129,20 +2230,6 @@ end
 arch cobblestones2
 x 16
 y 7
-end
-arch mailbox
-x 16
-y 7
-material 0
-weight 0
-arch event_close
-title Python
-slaying /python/IPO/send.py
-end
-arch event_apply
-title Python
-slaying /python/IPO/receive.py
-end
 end
 arch cobblestones2
 x 16
@@ -2248,10 +2335,6 @@ arch cobblestones2
 x 17
 y 3
 end
-arch chair_1.2
-x 17
-y 3
-end
 arch cobblestones2
 x 17
 y 4
@@ -2423,6 +2506,11 @@ arch cobblestones2
 x 18
 y 17
 end
+arch light4
+x 18
+y 17
+glow_radius 8
+end
 arch cobblestones2
 x 18
 y 18
@@ -2459,10 +2547,6 @@ x 19
 y 2
 end
 arch cwall_2_1_2
-x 19
-y 2
-end
-arch dungeon_magic
 x 19
 y 2
 end
@@ -2475,10 +2559,6 @@ x 19
 y 3
 move_block all
 end
-arch dungeon_magic
-x 19
-y 3
-end
 arch cobblestones2
 x 19
 y 4
@@ -2487,10 +2567,6 @@ arch longtable_2_1_1
 x 19
 y 4
 move_block all
-end
-arch dungeon_magic
-x 19
-y 4
 end
 arch cobblestones2
 x 19
@@ -2501,10 +2577,6 @@ x 19
 y 5
 move_block all
 end
-arch dungeon_magic
-x 19
-y 5
-end
 arch cobblestones2
 x 19
 y 6
@@ -2513,10 +2585,6 @@ arch longtable_2_1_1
 x 19
 y 6
 move_block all
-end
-arch dungeon_magic
-x 19
-y 6
 end
 arch cobblestones2
 x 19
@@ -2527,19 +2595,11 @@ x 19
 y 7
 move_block all
 end
-arch dungeon_magic
-x 19
-y 7
-end
 arch cobblestones2
 x 19
 y 8
 end
 arch cwall_2_1_2
-x 19
-y 8
-end
-arch dungeon_magic
 x 19
 y 8
 end
@@ -2671,16 +2731,6 @@ arch cobblestones2
 x 20
 y 5
 end
-arch fatwoman
-name Betina
-x 20
-y 5
-stand_still 1
-arch event_say
-title Python
-slaying /python/IPO/say.py
-end
-end
 arch cobblestones2
 x 20
 y 6
@@ -2699,10 +2749,6 @@ x 20
 y 8
 end
 arch cwall_2_1_2
-x 20
-y 8
-end
-arch dungeon_magic
 x 20
 y 8
 end
@@ -2799,10 +2845,6 @@ arch cobblestones2
 x 21
 y 3
 end
-arch bookshelf
-x 21
-y 3
-end
 arch cobblestones2
 x 21
 y 4
@@ -2824,10 +2866,6 @@ x 21
 y 8
 end
 arch cwall_2_1_2
-x 21
-y 8
-end
-arch dungeon_magic
 x 21
 y 8
 end
@@ -2975,10 +3013,6 @@ x 22
 y 8
 end
 arch cwall_3_4
-x 22
-y 8
-end
-arch dungeon_magic
 x 22
 y 8
 end
