@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  1997-06-19
-Modified: 2012-05-11 Rick Tanner
+Modified: 2013-03-30 Kevin Zheng
 endmsg
 end
 arch magic_banned
@@ -2364,7 +2364,7 @@ x 7
 y 1
 end
 arch creator
-slaying Ticket To Dtabb
+slaying Ticket to Darcap
 other_arch card
 x 7
 y 1
@@ -2381,7 +2381,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 1250 gold coins to buy a ticket to Dtabb.
+Drop 1250 gold coins to buy a ticket to Darcap.
 endmsg
 x 7
 y 2
@@ -2823,8 +2823,11 @@ end
 arch princess
 name waiting princess
 msg
+@match brother
+He's a brave adventurer.
 @match *
 I'm waiting for my brother.
+@reply brother Who is your brother?
 endmsg
 x 8
 y 11
@@ -3455,8 +3458,8 @@ x 10
 y 14
 end
 arch altar_trigger
-name To Dtabb
-slaying Ticket To Dtabb
+name To Darcap
+slaying Ticket to Darcap
 food 1
 x 10
 y 14
@@ -4022,9 +4025,10 @@ x 12
 y 1
 end
 arch sign
-name Dragon express
+name Dragon Express
 msg
-Please take your litter with you.  No alcohol allowed in the terminal!
+Purchase your ticket at these booths and board the correct dragon in the terminal.
+Please take your litter with you. No alcohol is allowed in the terminal!
 endmsg
 x 12
 y 1
@@ -4057,7 +4061,7 @@ arch guildmaster
 name old man
 msg
 @match *
-You can pay your ticket either with platinum, gold or silver.
+You can pay your ticket with either platinum, gold, or silver coins.
 endmsg
 x 12
 y 4
@@ -5353,7 +5357,7 @@ arch light_guard
 name security guard
 msg
 @match *
-Nobody is allowed beyond this point.
+Authorized personnel only beyond this point.
 endmsg
 x 15
 y 30
@@ -5715,7 +5719,7 @@ arch light_guard
 name security guard
 msg
 @match *
-Nobody is allowed beyond this point.
+Authorized personnel only beyond this point.
 endmsg
 x 16
 y 30
@@ -6224,7 +6228,11 @@ x 18
 y 11
 end
 arch sage
-name old traveller
+name old traveler
+msg
+@match *
+I have travelled all around the world.
+endmsg
 x 18
 y 11
 friendly 1
@@ -6435,9 +6443,10 @@ x 19
 y 1
 end
 arch sign
-name Dragon express
+name Dragon Express
 msg
-Please take your litter with you.  No alcohol allowed in the terminal!
+Purchase your ticket at these booths and board the correct dragon in the terminal.
+Please take your litter with you. No alcohol is allowed in the terminal!
 endmsg
 x 19
 y 1
@@ -7944,8 +7953,12 @@ y 24
 end
 arch dog
 msg
+@match good
+Bow-wow!
+@match bad
+Snarl...
 @match *
-grrr
+Grrr...
 endmsg
 x 23
 y 24
