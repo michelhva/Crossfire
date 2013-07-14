@@ -4,8 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
-Modified: 2008-08-01 Raphaël Quinet
+Modified: 2013-07-14 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_102_126
@@ -11248,6 +11247,14 @@ x 45
 y 11
 end
 arch grass
+x 45
+y 12
+end
+arch house_small
+name Stoneville Ticket Office
+slaying /dragonisland/ticket_office
+hp 7
+sp 8
 x 45
 y 12
 end
