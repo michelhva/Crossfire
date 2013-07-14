@@ -8,7 +8,7 @@ enter_x 7
 enter_y 8
 msg
 Created:  2013-03-19 Kevin Zheng
-Modified: 2013-04-06 Nicolas Weeger
+Modified: 2013-07-14 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -188,10 +188,6 @@ arch wwall_1_3
 x 2
 y 4
 end
-arch light3
-x 2
-y 4
-end
 arch woodfloor
 x 2
 y 5
@@ -229,10 +225,6 @@ x 2
 y 8
 end
 arch wwall_1_3
-x 2
-y 8
-end
-arch light3
 x 2
 y 8
 end
@@ -318,7 +310,7 @@ end
 arch sign_w
 name Stoneville
 msg
-Buy here tickets for Stoneville for 5 platinum.
+Buy tickets to Stoneville here for 5 platinum.
 endmsg
 x 3
 y 7
@@ -334,7 +326,7 @@ end
 arch sign_w
 name Santo Dominion
 msg
-But here tickets for Santo Dominion for 1 platinum.
+Buy tickets to Santo Dominion here for 1 platinum.
 endmsg
 x 3
 y 9
@@ -453,6 +445,7 @@ end
 arch light4
 x 5
 y 6
+glow_radius 8
 end
 arch woodfloor
 x 5
@@ -769,10 +762,6 @@ arch bench_1_3
 x 9
 y 6
 move_block all
-end
-arch light3
-x 9
-y 6
 end
 arch woodfloor
 x 9
