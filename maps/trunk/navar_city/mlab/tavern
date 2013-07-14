@@ -9,7 +9,7 @@ enter_x 25
 enter_y 1
 msg
 Created:  2002-02-18 Mikeeusa
-Modified: 2012-04-02 Rick Tanner
+Modified: 2013-03-23 Kevin Zheng
 endmsg
 end
 arch invis_exit
@@ -4106,10 +4106,13 @@ x 7
 y 77
 end
 arch sage
-name hick
+name Hick
 msg
+@match hate
+Just because! Now go away!
 @match *
-Ah hate you!
+Arrghh, I hate you!
+@reply hate Why do you hate me?
 endmsg
 hp 22
 x 7
@@ -9921,10 +9924,6 @@ y 62
 carrying 500
 arch diploma
 value 0
-end
-arch fog
-end
-arch fog
 end
 end
 arch woodfloor2
@@ -18168,10 +18167,6 @@ y 16
 no_pick 1
 end
 arch cobblestones2
-x 34
-y 17
-end
-arch well
 x 34
 y 17
 end
@@ -28859,6 +28854,7 @@ name_pl playing cards
 x 55
 y 12
 value 10
+iname_pl playing cards
 end
 arch woodfloor
 x 55
