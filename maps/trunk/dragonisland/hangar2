@@ -8,7 +8,7 @@ enter_x 15
 enter_y 30
 msg
 Created:  2001-03-06 Philipp Currlin (philipp.currlin@epost.de)
-Modified: 2012-02-01 Rick Tanner
+Modified: 2013-07-14 kevinz
 endmsg
 end
 arch dungeon_floor
@@ -150,7 +150,7 @@ end
 arch dungeon_floor
 y 23
 end
-arch awall_1_2
+arch awall_2_2_1
 y 23
 end
 arch dungeon_floor
@@ -308,11 +308,9 @@ arch dungeon_floor
 x 1
 y 23
 end
-arch igate_closed_1
+arch awall_2_1_2
 x 1
 y 23
-speed 0.500000
-connected 2
 end
 arch dungeon_floor
 x 1
@@ -468,15 +466,19 @@ arch dungeon_floor
 x 2
 y 23
 end
-arch igate_closed_1
+arch awall_2_1_2
 x 2
 y 23
-speed 0.500000
-connected 2
 end
 arch dungeon_floor
 x 2
 y 24
+end
+arch button_lever
+name To Dragon Room
+x 2
+y 24
+connected 15
 end
 arch dungeon_floor
 x 2
@@ -499,170 +501,166 @@ x 2
 y 28
 end
 arch button_handle
-name Gate to Dragonroom
+name Front Gate
 x 2
-y 28
-connected 2
-end
-arch dungeon_floor
-x 2
-y 29
-end
-arch dungeon_floor
-x 2
-y 30
-end
-arch food
-x 2
-y 30
-end
-arch dungeon_floor
-x 2
-y 31
-end
-arch awall_2_1_2
-x 2
-y 31
-end
-arch dungeon_floor
-x 3
-end
-arch awall_2_1_2
-x 3
-end
-arch dungeon_floor
-x 3
-y 1
-end
-arch dungeon_floor
-x 3
-y 2
-end
-arch dungeon_floor
-x 3
-y 3
-end
-arch dungeon_floor
-x 3
-y 4
-end
-arch dungeon_floor
-x 3
-y 5
-end
-arch dungeon_floor
-x 3
-y 6
-end
-arch dungeon_floor
-x 3
-y 7
-end
-arch dungeon_floor
-x 3
-y 8
-end
-arch dungeon_floor
-x 3
-y 9
-end
-arch dungeon_floor
-x 3
-y 10
-end
-arch dungeon_floor
-x 3
-y 11
-end
-arch dungeon_floor
-x 3
-y 12
-end
-arch dungeon_floor
-x 3
-y 13
-end
-arch dungeon_floor
-x 3
-y 14
-end
-arch dungeon_floor
-x 3
-y 15
-end
-arch dungeon_floor
-x 3
-y 16
-end
-arch chinese_dragon
-x 3
-y 16
-end
-arch dungeon_floor
-x 3
-y 17
-end
-arch dungeon_floor
-x 3
-y 18
-end
-arch dungeon_floor
-x 3
-y 19
-end
-arch dungeon_floor
-x 3
-y 20
-end
-arch dungeon_floor
-x 3
-y 21
-end
-arch dungeon_floor
-x 3
-y 22
-end
-arch dungeon_floor
-x 3
-y 23
-end
-arch igate_closed_1
-x 3
-y 23
-speed 0.500000
-connected 2
-end
-arch dungeon_floor
-x 3
-y 24
-end
-arch dungeon_floor
-x 3
-y 25
-end
-arch dungeon_floor
-x 3
-y 26
-end
-arch dungeon_floor
-x 3
-y 27
-end
-arch awall_2_1_2
-x 3
-y 27
-end
-arch dungeon_floor
-x 3
-y 28
-end
-arch button_handle
-name Frontgate
-x 3
 y 28
 connected 1
 end
 arch dungeon_floor
+x 2
+y 29
+end
+arch dungeon_floor
+x 2
+y 30
+end
+arch barrel
+x 2
+y 30
+end
+arch dungeon_floor
+x 2
+y 31
+end
+arch awall_2_1_2
+x 2
+y 31
+end
+arch dungeon_floor
+x 3
+end
+arch awall_2_1_2
+x 3
+end
+arch dungeon_floor
+x 3
+y 1
+end
+arch dungeon_floor
+x 3
+y 2
+end
+arch dungeon_floor
+x 3
+y 3
+end
+arch dungeon_floor
+x 3
+y 4
+end
+arch dungeon_floor
+x 3
+y 5
+end
+arch dungeon_floor
+x 3
+y 6
+end
+arch dungeon_floor
+x 3
+y 7
+end
+arch dungeon_floor
+x 3
+y 8
+end
+arch dungeon_floor
+x 3
+y 9
+end
+arch dungeon_floor
+x 3
+y 10
+end
+arch dungeon_floor
+x 3
+y 11
+end
+arch dungeon_floor
+x 3
+y 12
+end
+arch dungeon_floor
+x 3
+y 13
+end
+arch dungeon_floor
+x 3
+y 14
+end
+arch dungeon_floor
+x 3
+y 15
+end
+arch dungeon_floor
+x 3
+y 16
+end
+arch chinese_dragon
+x 3
+y 16
+end
+arch dungeon_floor
+x 3
+y 17
+end
+arch dungeon_floor
+x 3
+y 18
+end
+arch dungeon_floor
+x 3
+y 19
+end
+arch dungeon_floor
+x 3
+y 20
+end
+arch dungeon_floor
+x 3
+y 21
+end
+arch dungeon_floor
+x 3
+y 22
+end
+arch dungeon_floor
+x 3
+y 23
+end
+arch awall_2_1_2
+x 3
+y 23
+end
+arch dungeon_floor
+x 3
+y 24
+end
+arch dungeon_floor
+x 3
+y 25
+end
+arch dungeon_floor
+x 3
+y 26
+end
+arch dungeon_floor
+x 3
+y 27
+end
+arch awall_2_1_2
+x 3
+y 27
+end
+arch dungeon_floor
+x 3
+y 28
+end
+arch dungeon_floor
+x 3
+y 29
+end
+arch awall_2_2_2
 x 3
 y 29
 end
@@ -670,7 +668,7 @@ arch dungeon_floor
 x 3
 y 30
 end
-arch food
+arch awall_2_1_1
 x 3
 y 30
 end
@@ -678,7 +676,7 @@ arch dungeon_floor
 x 3
 y 31
 end
-arch awall_2_1_2
+arch awall_2_2_4
 x 3
 y 31
 end
@@ -784,7 +782,7 @@ arch dungeon_floor
 x 4
 y 23
 end
-arch awall_1_4
+arch awall_2_1_2
 x 4
 y 23
 end
@@ -831,11 +829,15 @@ arch dungeon_floor
 x 4
 y 29
 end
+arch awall_2_1_2
+x 4
+y 29
+end
 arch dungeon_floor
 x 4
 y 30
 end
-arch food
+arch blocked
 x 4
 y 30
 end
@@ -843,7 +845,7 @@ arch dungeon_floor
 x 4
 y 31
 end
-arch awall_2_1_2
+arch blocked
 x 4
 y 31
 end
@@ -945,7 +947,7 @@ arch dungeon_floor
 x 5
 y 23
 end
-arch awall_2_1_2
+arch awall_1_3
 x 5
 y 23
 end
@@ -973,7 +975,15 @@ arch dungeon_floor
 x 5
 y 29
 end
+arch awall_2_1_2
+x 5
+y 29
+end
 arch dungeon_floor
+x 5
+y 30
+end
+arch blocked
 x 5
 y 30
 end
@@ -981,7 +991,12 @@ arch dungeon_floor
 x 5
 y 31
 end
-arch awall_2_1_2
+arch grate_open_2
+x 5
+y 31
+connected 15
+end
+arch boulder
 x 5
 y 31
 end
@@ -1111,9 +1126,10 @@ arch dungeon_floor
 x 6
 y 23
 end
-arch awall_2_1_2
+arch igate_closed_1
 x 6
 y 23
+connected 16
 end
 arch dungeon_floor
 x 6
@@ -1139,7 +1155,15 @@ arch dungeon_floor
 x 6
 y 29
 end
+arch awall_2_1_2
+x 6
+y 29
+end
 arch dungeon_floor
+x 6
+y 30
+end
+arch blocked
 x 6
 y 30
 end
@@ -1147,9 +1171,10 @@ arch dungeon_floor
 x 6
 y 31
 end
-arch awall_2_1_2
+arch button_plate
 x 6
 y 31
+connected 16
 end
 arch dungeon_floor
 x 7
@@ -1321,713 +1346,738 @@ arch dungeon_floor
 x 7
 y 23
 end
-arch awall_2_1_2
+arch igate_closed_1
 x 7
 y 23
+connected 16
 end
-arch magic_ear
+arch dungeon_floor
+x 7
+y 24
+end
+arch dungeon_floor
+x 7
+y 25
+end
+arch dungeon_floor
+x 7
+y 26
+end
+arch dungeon_floor
+x 7
+y 27
+end
+arch dungeon_floor
+x 7
+y 28
+end
+arch dungeon_floor
+x 7
+y 29
+end
+arch awall_2_1_2
+x 7
+y 29
+end
+arch dungeon_floor
+x 7
+y 30
+end
+arch blocked
+x 7
+y 30
+end
+arch dungeon_floor
+x 7
+y 31
+end
+arch blocked
+x 7
+y 31
+end
+arch dungeon_floor
+x 8
+end
+arch awall_2_1_2
+x 8
+end
+arch dungeon_floor
+x 8
+y 1
+end
+arch dungeon_floor
+x 8
+y 2
+end
+arch dungeon_floor
+x 8
+y 3
+end
+arch dungeon_floor
+x 8
+y 4
+end
+arch dungeon_floor
+x 8
+y 5
+end
+arch dungeon_floor
+x 8
+y 6
+end
+arch grate_closed_1
+x 8
+y 6
+speed 0.500000
+connected 10
+end
+arch dungeon_floor
+x 8
+y 7
+end
+arch dungeon_floor
+x 8
+y 8
+end
+arch dungeon_floor
+x 8
+y 9
+end
+arch dungeon_floor
+x 8
+y 10
+end
+arch dungeon_floor
+x 8
+y 11
+end
+arch dungeon_floor
+x 8
+y 12
+end
+arch dungeon_floor
+x 8
+y 13
+end
+arch dungeon_floor
+x 8
+y 14
+end
+arch dungeon_floor
+x 8
+y 15
+end
+arch dungeon_floor
+x 8
+y 16
+end
+arch dungeon_floor
+x 8
+y 17
+end
+arch grate_closed_1
+x 8
+y 17
+speed 0.500000
+connected 10
+end
+arch dungeon_floor
+x 8
+y 18
+end
+arch dungeon_floor
+x 8
+y 19
+end
+arch dungeon_floor
+x 8
+y 20
+end
+arch big_elec
+x 8
+y 20
+end
+arch dungeon_floor
+x 8
+y 21
+end
+arch dungeon_floor
+x 8
+y 22
+end
+arch dungeon_floor
+x 8
+y 23
+end
+arch igate_closed_1
+x 8
+y 23
+connected 16
+end
+arch dungeon_floor
+x 8
+y 24
+end
+arch dungeon_floor
+x 8
+y 25
+end
+arch dungeon_floor
+x 8
+y 26
+end
+arch dungeon_floor
+x 8
+y 27
+end
+arch dungeon_floor
+x 8
+y 28
+end
+arch dungeon_floor
+x 8
+y 29
+end
+arch awall_3_3
+x 8
+y 29
+end
+arch dungeon_floor
+x 8
+y 30
+end
+arch awall_2_1_1
+x 8
+y 30
+end
+arch dungeon_floor
+x 8
+y 31
+end
+arch awall_2_2_1
+x 8
+y 31
+end
+arch dungeon_floor
+x 9
+end
+arch awall_2_1_2
+x 9
+end
+arch dungeon_floor
+x 9
+y 1
+end
+arch dungeon_floor
+x 9
+y 2
+end
+arch dungeon_floor
+x 9
+y 3
+end
+arch dungeon_floor
+x 9
+y 4
+end
+arch dungeon_floor
+x 9
+y 5
+end
+arch dungeon_floor
+x 9
+y 6
+end
+arch grate_closed_1
+x 9
+y 6
+speed 0.500000
+connected 10
+end
+arch dungeon_floor
+x 9
+y 7
+end
+arch dungeon_floor
+x 9
+y 8
+end
+arch big_dragon
+x 9
+y 8
+end
+arch dungeon_floor
+x 9
+y 9
+end
+arch dungeon_floor
+x 9
+y 10
+end
+arch dungeon_floor
+x 9
+y 11
+end
+arch dungeon_floor
+x 9
+y 12
+end
+arch dragon
+x 9
+y 12
+end
+arch dungeon_floor
+x 9
+y 13
+end
+arch dungeon_floor
+x 9
+y 14
+end
+arch dungeon_floor
+x 9
+y 15
+end
+arch dungeon_floor
+x 9
+y 16
+end
+arch dragon
+x 9
+y 16
+end
+arch dungeon_floor
+x 9
+y 17
+end
+arch grate_closed_1
+x 9
+y 17
+speed 0.500000
+connected 10
+end
+arch dungeon_floor
+x 9
+y 18
+end
+arch dungeon_floor
+x 9
+y 19
+end
+arch dungeon_floor
+x 9
+y 20
+end
+arch dungeon_floor
+x 9
+y 21
+end
+arch dungeon_floor
+x 9
+y 22
+end
+arch dungeon_floor
+x 9
+y 23
+end
+arch igate_closed_1
+x 9
+y 23
+connected 16
+end
+arch dungeon_floor
+x 9
+y 24
+end
+arch dungeon_floor
+x 9
+y 25
+end
+arch dungeon_floor
+x 9
+y 26
+end
+arch dungeon_floor
+x 9
+y 27
+end
+arch dungeon_floor
+x 9
+y 28
+end
+arch dungeon_floor
+x 9
+y 29
+end
+arch awall_2_1_2
+x 9
+y 29
+end
+arch dungeon_floor
+x 9
+y 30
+end
+arch card
+name dompteur pass
 msg
-@match dompteur|yes
+This pass entitles the owner (and his/her friends) to enter the Dragon Room.
+endmsg
+x 9
+y 30
+end
+arch dungeon_floor
+x 9
+y 31
+end
+arch awall_2_1_2
+x 9
+y 31
+end
+arch dungeon_floor
+x 10
+end
+arch awall_2_1_2
+x 10
+end
+arch dungeon_floor
+x 10
+y 1
+end
+arch dungeon_floor
+x 10
+y 2
+end
+arch dungeon_floor
+x 10
+y 3
+end
+arch dungeon_floor
+x 10
+y 4
+end
+arch dungeon_floor
+x 10
+y 5
+end
+arch dungeon_floor
+x 10
+y 6
+end
+arch grate_closed_1
+x 10
+y 6
+speed 0.500000
+connected 10
+end
+arch dungeon_floor
+x 10
+y 7
+end
+arch dungeon_floor
+x 10
+y 8
+end
+arch dungeon_floor
+x 10
+y 9
+end
+arch dungeon_floor
+x 10
+y 10
+end
+arch dungeon_floor
+x 10
+y 11
+end
+arch dungeon_floor
+x 10
+y 12
+end
+arch dungeon_floor
+x 10
+y 13
+end
+arch dungeon_floor
+x 10
+y 14
+end
+arch big_dragon
+x 10
+y 14
+end
+arch dungeon_floor
+x 10
+y 15
+end
+arch dungeon_floor
+x 10
+y 16
+end
+arch dungeon_floor
+x 10
+y 17
+end
+arch grate_closed_1
+x 10
+y 17
+speed 0.500000
+connected 10
+end
+arch dungeon_floor
+x 10
+y 18
+end
+arch dungeon_floor
+x 10
+y 19
+end
+arch dungeon_floor
+x 10
+y 20
+end
+arch dungeon_floor
+x 10
+y 21
+end
+arch dungeon_floor
+x 10
+y 22
+end
+arch dungeon_floor
+x 10
+y 23
+end
+arch awall_1_4
+x 10
+y 23
+end
+arch dungeon_floor
+x 10
+y 24
+end
+arch dungeon_floor
+x 10
+y 25
+end
+arch dungeon_floor
+x 10
+y 26
+end
+arch dungeon_floor
+x 10
+y 27
+end
+arch dungeon_floor
+x 10
+y 28
+end
+arch dungeon_floor
+x 10
+y 29
+end
+arch awall_2_1_2
+x 10
+y 29
+end
+arch dungeon_floor
+x 10
+y 30
+end
+arch grate_closed_2
+x 10
+y 30
+connected 31
+end
+arch dungeon_floor
+x 10
+y 31
+end
+arch awall_2_1_2
+x 10
+y 31
+end
+arch dungeon_floor
+x 11
+end
+arch awall_2_1_2
+x 11
+end
+arch dungeon_floor
+x 11
+y 1
+end
+arch dungeon_floor
+x 11
+y 2
+end
+arch dungeon_floor
+x 11
+y 3
+end
+arch dungeon_floor
+x 11
+y 4
+end
+arch dungeon_floor
+x 11
+y 5
+end
+arch dungeon_floor
+x 11
+y 6
+end
+arch grate_closed_1
+x 11
+y 6
+speed 0.500000
+connected 10
+end
+arch dungeon_floor
+x 11
+y 7
+end
+arch dungeon_floor
+x 11
+y 8
+end
+arch dungeon_floor
+x 11
+y 9
+end
+arch dungeon_floor
+x 11
+y 10
+end
+arch dungeon_floor
+x 11
+y 11
+end
+arch big_dragon
+x 11
+y 11
+end
+arch dungeon_floor
+x 11
+y 12
+end
+arch dungeon_floor
+x 11
+y 13
+end
+arch dungeon_floor
+x 11
+y 14
+end
+arch dungeon_floor
+x 11
+y 15
+end
+arch dungeon_floor
+x 11
+y 16
+end
+arch dungeon_floor
+x 11
+y 17
+end
+arch grate_closed_1
+x 11
+y 17
+speed 0.500000
+connected 10
+end
+arch dungeon_floor
+x 11
+y 18
+end
+arch dungeon_floor
+x 11
+y 19
+end
+arch dungeon_floor
+x 11
+y 20
+end
+arch dungeon_floor
+x 11
+y 21
+end
+arch dungeon_floor
+x 11
+y 22
+end
+arch dungeon_floor
+x 11
+y 23
+end
+arch awall_3_3
+x 11
+y 23
+end
+arch dungeon_floor
+x 11
+y 24
+end
+arch awall_2_2_1
+x 11
+y 24
+end
+arch dungeon_floor
+x 11
+y 25
+end
+arch dungeon_floor
+x 11
+y 26
+end
+arch awall_1_1
+x 11
+y 26
+end
+arch dungeon_floor
+x 11
+y 27
+end
+arch awall_2_1_1
+x 11
+y 27
+end
+arch dungeon_floor
+x 11
+y 28
+end
+arch awall_2_1_1
+x 11
+y 28
+end
+arch dungeon_floor
+x 11
+y 29
+end
+arch awall_3_1
+x 11
+y 29
+end
+arch dungeon_floor
+x 11
+y 30
+end
+arch altar
+name drop 250 platinum for a third pass
+slaying money
+msg
 Click.
 endmsg
-x 7
-y 24
-connected 4
+food 12500
+x 11
+y 30
+connected 31
 end
-arch dungeon_floor
-x 7
-y 24
-end
-arch dwarf
-name Dragon Dompteur
+arch card
+name dompteur pass
 msg
-@match dompteur|yes
-You're the new dompteur? Tame the dragons in there to show me your qualities.
-@match *
-A dragon will be delivered any minute now, can you help me to get him into the large room?
+This pass entitles the owner (and his/her friends) to enter the Dragon Room.
 endmsg
-sp 0
-maxsp 0
-x 7
-y 24
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_turn_undead 100
-resist_fear 100
-resist_cancellation 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_counterspell 100
-resist_godpower 100
-resist_holyword 100
-resist_blind 100
-pick_up 0
-will_apply 0
-friendly 1
-unaggressive 0
-can_cast_spell 0
-can_use_armour 0
-can_use_weapon 0
-stand_still 1
-can_use_skill 0
-end
-arch dungeon_floor
-x 7
-y 25
-end
-arch dungeon_floor
-x 7
-y 26
-end
-arch dungeon_floor
-x 7
-y 27
-end
-arch dungeon_floor
-x 7
-y 28
-end
-arch dungeon_floor
-x 7
-y 29
-end
-arch dungeon_floor
-x 7
-y 30
-end
-arch dungeon_floor
-x 7
-y 31
-end
-arch awall_2_1_2
-x 7
-y 31
-end
-arch dungeon_floor
-x 8
-end
-arch awall_2_1_2
-x 8
-end
-arch dungeon_floor
-x 8
-y 1
-end
-arch dungeon_floor
-x 8
-y 2
-end
-arch dungeon_floor
-x 8
-y 3
-end
-arch dungeon_floor
-x 8
-y 4
-end
-arch dungeon_floor
-x 8
-y 5
-end
-arch dungeon_floor
-x 8
-y 6
-end
-arch grate_closed_1
-x 8
-y 6
-speed 0.500000
-connected 10
-end
-arch dungeon_floor
-x 8
-y 7
-end
-arch dungeon_floor
-x 8
-y 8
-end
-arch dungeon_floor
-x 8
-y 9
-end
-arch dungeon_floor
-x 8
-y 10
-end
-arch dungeon_floor
-x 8
-y 11
-end
-arch dungeon_floor
-x 8
-y 12
-end
-arch dungeon_floor
-x 8
-y 13
-end
-arch dungeon_floor
-x 8
-y 14
-end
-arch dungeon_floor
-x 8
-y 15
-end
-arch dungeon_floor
-x 8
-y 16
-end
-arch dungeon_floor
-x 8
-y 17
-end
-arch grate_closed_1
-x 8
-y 17
-speed 0.500000
-connected 10
-end
-arch dungeon_floor
-x 8
-y 18
-end
-arch dungeon_floor
-x 8
-y 19
-end
-arch dungeon_floor
-x 8
-y 20
-end
-arch big_elec
-x 8
-y 20
-end
-arch dungeon_floor
-x 8
-y 21
-end
-arch dungeon_floor
-x 8
-y 22
-end
-arch dungeon_floor
-x 8
-y 23
-end
-arch awall_2_1_2
-x 8
-y 23
-end
-arch dungeon_floor
-x 8
-y 24
-end
-arch dungeon_floor
-x 8
-y 25
-end
-arch dungeon_floor
-x 8
-y 26
-end
-arch dungeon_floor
-x 8
-y 27
-end
-arch dungeon_floor
-x 8
-y 28
-end
-arch dungeon_floor
-x 8
-y 29
-end
-arch dungeon_floor
-x 8
-y 30
-end
-arch dungeon_floor
-x 8
-y 31
-end
-arch awall_2_1_2
-x 8
-y 31
-end
-arch dungeon_floor
-x 9
-end
-arch awall_2_1_2
-x 9
-end
-arch dungeon_floor
-x 9
-y 1
-end
-arch dungeon_floor
-x 9
-y 2
-end
-arch dungeon_floor
-x 9
-y 3
-end
-arch dungeon_floor
-x 9
-y 4
-end
-arch dungeon_floor
-x 9
-y 5
-end
-arch dungeon_floor
-x 9
-y 6
-end
-arch grate_closed_1
-x 9
-y 6
-speed 0.500000
-connected 10
-end
-arch dungeon_floor
-x 9
-y 7
-end
-arch dungeon_floor
-x 9
-y 8
-end
-arch big_dragon
-x 9
-y 8
-end
-arch dungeon_floor
-x 9
-y 9
-end
-arch dungeon_floor
-x 9
-y 10
-end
-arch dungeon_floor
-x 9
-y 11
-end
-arch dungeon_floor
-x 9
-y 12
-end
-arch dragon
-x 9
-y 12
-end
-arch dungeon_floor
-x 9
-y 13
-end
-arch dungeon_floor
-x 9
-y 14
-end
-arch dungeon_floor
-x 9
-y 15
-end
-arch dungeon_floor
-x 9
-y 16
-end
-arch dragon
-x 9
-y 16
-end
-arch dungeon_floor
-x 9
-y 17
-end
-arch grate_closed_1
-x 9
-y 17
-speed 0.500000
-connected 10
-end
-arch dungeon_floor
-x 9
-y 18
-end
-arch dungeon_floor
-x 9
-y 19
-end
-arch dungeon_floor
-x 9
-y 20
-end
-arch dungeon_floor
-x 9
-y 21
-end
-arch dungeon_floor
-x 9
-y 22
-end
-arch dungeon_floor
-x 9
-y 23
-end
-arch awall_2_1_2
-x 9
-y 23
-end
-arch dungeon_floor
-x 9
-y 24
-end
-arch dungeon_floor
-x 9
-y 25
-end
-arch dungeon_floor
-x 9
-y 26
-end
-arch dungeon_floor
-x 9
-y 27
-end
-arch dungeon_floor
-x 9
-y 28
-end
-arch dungeon_floor
-x 9
-y 29
-end
-arch dungeon_floor
-x 9
-y 30
-end
-arch dungeon_floor
-x 9
-y 31
-end
-arch awall_2_1_2
-x 9
-y 31
-end
-arch dungeon_floor
-x 10
-end
-arch awall_2_1_2
-x 10
-end
-arch dungeon_floor
-x 10
-y 1
-end
-arch dungeon_floor
-x 10
-y 2
-end
-arch dungeon_floor
-x 10
-y 3
-end
-arch dungeon_floor
-x 10
-y 4
-end
-arch dungeon_floor
-x 10
-y 5
-end
-arch dungeon_floor
-x 10
-y 6
-end
-arch grate_closed_1
-x 10
-y 6
-speed 0.500000
-connected 10
-end
-arch dungeon_floor
-x 10
-y 7
-end
-arch dungeon_floor
-x 10
-y 8
-end
-arch dungeon_floor
-x 10
-y 9
-end
-arch dungeon_floor
-x 10
-y 10
-end
-arch dungeon_floor
-x 10
-y 11
-end
-arch dungeon_floor
-x 10
-y 12
-end
-arch dungeon_floor
-x 10
-y 13
-end
-arch dungeon_floor
-x 10
-y 14
-end
-arch big_dragon
-x 10
-y 14
-end
-arch dungeon_floor
-x 10
-y 15
-end
-arch dungeon_floor
-x 10
-y 16
-end
-arch dungeon_floor
-x 10
-y 17
-end
-arch grate_closed_1
-x 10
-y 17
-speed 0.500000
-connected 10
-end
-arch dungeon_floor
-x 10
-y 18
-end
-arch dungeon_floor
-x 10
-y 19
-end
-arch dungeon_floor
-x 10
-y 20
-end
-arch dungeon_floor
-x 10
-y 21
-end
-arch dungeon_floor
-x 10
-y 22
-end
-arch dungeon_floor
-x 10
-y 23
-end
-arch awall_2_1_2
-x 10
-y 23
-end
-arch dungeon_floor
-x 10
-y 24
-end
-arch dungeon_floor
-x 10
-y 25
-end
-arch dungeon_floor
-x 10
-y 26
-end
-arch dungeon_floor
-x 10
-y 27
-end
-arch dungeon_floor
-x 10
-y 28
-end
-arch dungeon_floor
-x 10
-y 29
-end
-arch dungeon_floor
-x 10
-y 30
-end
-arch dungeon_floor
-x 10
-y 31
-end
-arch awall_2_1_2
-x 10
-y 31
-end
-arch dungeon_floor
-x 11
-end
-arch awall_2_1_2
-x 11
-end
-arch dungeon_floor
-x 11
-y 1
-end
-arch dungeon_floor
-x 11
-y 2
-end
-arch dungeon_floor
-x 11
-y 3
-end
-arch dungeon_floor
-x 11
-y 4
-end
-arch dungeon_floor
-x 11
-y 5
-end
-arch dungeon_floor
-x 11
-y 6
-end
-arch grate_closed_1
-x 11
-y 6
-speed 0.500000
-connected 10
-end
-arch dungeon_floor
-x 11
-y 7
-end
-arch dungeon_floor
-x 11
-y 8
-end
-arch dungeon_floor
-x 11
-y 9
-end
-arch dungeon_floor
-x 11
-y 10
-end
-arch dungeon_floor
-x 11
-y 11
-end
-arch big_dragon
-x 11
-y 11
-end
-arch dungeon_floor
-x 11
-y 12
-end
-arch dungeon_floor
-x 11
-y 13
-end
-arch dungeon_floor
-x 11
-y 14
-end
-arch dungeon_floor
-x 11
-y 15
-end
-arch dungeon_floor
-x 11
-y 16
-end
-arch dungeon_floor
-x 11
-y 17
-end
-arch grate_closed_1
-x 11
-y 17
-speed 0.500000
-connected 10
-end
-arch dungeon_floor
-x 11
-y 18
-end
-arch dungeon_floor
-x 11
-y 19
-end
-arch dungeon_floor
-x 11
-y 20
-end
-arch dungeon_floor
-x 11
-y 21
-end
-arch dungeon_floor
-x 11
-y 22
-end
-arch dungeon_floor
-x 11
-y 23
-end
-arch awall_2_1_2
-x 11
-y 23
-end
-arch dungeon_floor
-x 11
-y 24
-end
-arch dungeon_floor
-x 11
-y 25
-end
-arch dungeon_floor
-x 11
-y 26
-end
-arch dungeon_floor
-x 11
-y 27
-end
-arch dungeon_floor
-x 11
-y 28
-end
-arch dungeon_floor
-x 11
-y 29
-end
-arch dungeon_floor
 x 11
 y 30
 end
@@ -2157,7 +2207,7 @@ arch dungeon_floor
 x 12
 y 23
 end
-arch awall_2_1_2
+arch awall_3_3
 x 12
 y 23
 end
@@ -2165,29 +2215,70 @@ arch dungeon_floor
 x 12
 y 24
 end
+arch awall_3_1
+x 12
+y 24
+end
 arch dungeon_floor
 x 12
 y 25
+end
+arch pedestal
+x 12
+y 25
+invisible 1
+connected 5
 end
 arch dungeon_floor
 x 12
 y 26
 end
+arch igate_closed_1
+x 12
+y 26
+connected 5
+end
 arch dungeon_floor
 x 12
 y 27
+end
+arch button_lever
+name entrance
+x 12
+y 27
+connected 6
 end
 arch dungeon_floor
 x 12
 y 28
 end
+arch altar_trigger
+name drop dompteur pass to enter
+slaying dompteur pass
+msg
+Be careful out there!
+endmsg
+food 1
+x 12
+y 28
+connected 5
+end
 arch dungeon_floor
+x 12
+y 29
+end
+arch awall_2_1_2
 x 12
 y 29
 end
 arch dungeon_floor
 x 12
 y 30
+end
+arch grate_closed_2
+x 12
+y 30
+connected 30
 end
 arch dungeon_floor
 x 12
@@ -2319,7 +2410,7 @@ arch dungeon_floor
 x 13
 y 23
 end
-arch awall_2_1_2
+arch awall_3_3
 x 13
 y 23
 end
@@ -2327,7 +2418,15 @@ arch dungeon_floor
 x 13
 y 24
 end
+arch awall_3_4
+x 13
+y 24
+end
 arch dungeon_floor
+x 13
+y 25
+end
+arch awall_2_1_1
 x 13
 y 25
 end
@@ -2335,7 +2434,15 @@ arch dungeon_floor
 x 13
 y 26
 end
+arch awall_2_1_1
+x 13
+y 26
+end
 arch dungeon_floor
+x 13
+y 27
+end
+arch awall_1_2
 x 13
 y 27
 end
@@ -2343,11 +2450,39 @@ arch dungeon_floor
 x 13
 y 28
 end
+arch igate_open_2
+x 13
+y 28
+connected 6
+end
 arch dungeon_floor
 x 13
 y 29
 end
+arch awall_1_3
+x 13
+y 29
+end
 arch dungeon_floor
+x 13
+y 30
+end
+arch altar
+name drop 50 platinum for a second pass
+slaying money
+msg
+Click.
+endmsg
+food 2500
+x 13
+y 30
+connected 30
+end
+arch card
+name dompteur pass
+msg
+This pass entitles the owner (and his/her friends) to enter the Dragon Room.
+endmsg
 x 13
 y 30
 end
@@ -2486,6 +2621,14 @@ arch dungeon_floor
 x 14
 y 24
 end
+arch sign
+name Exit Only
+msg
+To enter the dragon room, obtain a dompteur pass and enter through the entrance.
+endmsg
+x 14
+y 24
+end
 arch dungeon_floor
 x 14
 y 25
@@ -2502,19 +2645,27 @@ arch dungeon_floor
 x 14
 y 28
 end
-arch dungeon_floor
-x 14
-y 29
-end
-arch sign
-name danger! - untamed dragons
+arch sign_w
+name Entrance
 msg
-Restricted area, Dragon Dompteurs only!
+If the entrance is closed, then another player is already inside.
 endmsg
 x 14
+y 28
+end
+arch dungeon_floor
+x 14
 y 29
 end
 arch dungeon_floor
+x 14
+y 30
+end
+arch sign_w
+name Admission
+msg
+The first dompteur pass is free and entitles you and your friends admission to the dragon room. If you leave and decide to return, you will have to buy another pass.
+endmsg
 x 14
 y 30
 end
@@ -2651,7 +2802,6 @@ end
 arch igate_closed_1
 x 15
 y 23
-speed 0.500000
 connected 4
 end
 arch dungeon_floor
@@ -2818,7 +2968,6 @@ end
 arch igate_closed_1
 x 16
 y 23
-speed 0.500000
 connected 4
 end
 arch dungeon_floor
@@ -2832,6 +2981,51 @@ end
 arch dungeon_floor
 x 16
 y 26
+end
+arch dwarf
+name dragon dompteur
+msg
+@match yes|dragon|dompteur
+Then you must demonstrate your skills! Enter the dragon room and fetch me the key!
+@reply rewards What rewards are there?
+@match rewards
+Look for yourself!
+@match *
+Would you like to become a dragon dompteur?
+@reply yes Sure, why not?
+endmsg
+sp 0
+maxsp 0
+x 16
+y 26
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
+pick_up 0
+will_apply 0
+can_cast_spell 0
+can_use_armour 0
+can_use_weapon 0
+stand_still 1
+can_use_skill 0
 end
 arch dungeon_floor
 x 16
@@ -2974,7 +3168,8 @@ arch dungeon_floor
 x 17
 y 22
 end
-arch button_handle
+arch trigger
+name exit
 x 17
 y 22
 connected 4
