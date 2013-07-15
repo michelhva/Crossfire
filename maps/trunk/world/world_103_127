@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2012-09-03 Rick Tanner
+Modified: 2013-07-15 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_103_126
@@ -814,10 +814,10 @@ x 3
 y 13
 end
 arch house_2
-name Key Sale House
+name Stoneville Estates
 slaying /dragonisland/keysale
 hp 7
-sp 15
+sp 14
 x 3
 y 13
 end
@@ -1331,7 +1331,7 @@ x 5
 y 15
 end
 arch sign
-name Newest Additions to this City
+name Newest Additions
 msg
 Myrnek's House
 Damaris' House
@@ -1343,7 +1343,6 @@ Hangar
 Pixie's Delight
 Dreadful House
 Adventurers Guild
-key sale house + some apartments
 Note: most of these additions are
 dangerous!
 endmsg
@@ -2375,7 +2374,7 @@ x 9
 y 18
 end
 arch barrack_small
-name Little house
+name Little House
 slaying /dragonisland/house1
 hp 1
 sp 2
@@ -3061,7 +3060,7 @@ x 12
 y 9
 end
 arch darkhold_sym
-name Brxzl's home
+name Brxzl's House
 slaying /dragonisland/housebrxzl
 hp 10
 sp 18
