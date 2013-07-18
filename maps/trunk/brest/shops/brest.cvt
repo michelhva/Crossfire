@@ -12,7 +12,7 @@ height 24
 enter_x 13
 enter_y 20
 msg
-Modified: 2010-11-05 Andreas Kirschbaum
+Modified: 2013-07-18 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -2537,6 +2537,10 @@ y 7
 type 68
 no_magic 1
 damned 1
+end
+arch create_black_dragon_mail
+x 18
+y 7
 end
 arch blackslate
 x 18
