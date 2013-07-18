@@ -10,7 +10,7 @@ enter_x 7
 enter_y 6
 msg
 Created:  2002-02-20 mikeeusa
-Modified: 2011-11-10 Rick Tanner
+Modified: 2013-07-18 Kevin Zheng
 endmsg
 end
 arch cave_15
@@ -722,10 +722,8 @@ y 9
 end
 arch chest
 name old chest
-name_pl Grandpas old chest
 x 9
 y 9
-carrying 45000
 arch skeleton
 end
 arch skeleton
