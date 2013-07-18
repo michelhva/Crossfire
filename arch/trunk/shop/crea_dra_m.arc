@@ -28,3 +28,13 @@ food 5
 no_pick 1
 move_on walk
 end
+Object create_black_dragon_mail
+name black dragon mail: five black dragon scales
+face ambolt.111
+type 103
+other_arch black_dragon_mail
+slaying black_dragon_scale
+food 5
+no_pick 1
+move_on walk
+end
