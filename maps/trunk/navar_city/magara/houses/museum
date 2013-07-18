@@ -8,7 +8,7 @@ enter_x 5
 enter_y 34
 msg
 Created:  1994-10-11
-Modified: 2013-03-25 Karla Stenger
+Modified: 2013-07-18 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -3816,7 +3816,7 @@ arch woodlarge
 x 15
 y 31
 end
-arch blue_dragon_mail
+arch black_dragon_mail
 x 15
 y 31
 end
@@ -4109,7 +4109,7 @@ arch woodfloor
 x 16
 y 31
 end
-arch chain_mail
+arch blue_dragon_mail
 x 16
 y 31
 end
@@ -4432,7 +4432,7 @@ arch woodlarge
 x 17
 y 31
 end
-arch dress1
+arch chain_mail
 x 17
 y 31
 end
@@ -4727,10 +4727,7 @@ arch woodfloor
 x 18
 y 31
 end
-arch dress2
-msg
-Dress
-endmsg
+arch dress1
 x 18
 y 31
 end
@@ -5025,10 +5022,7 @@ arch woodlarge
 x 19
 y 31
 end
-arch dress3
-msg
-Dress
-endmsg
+arch dress2
 x 19
 y 31
 end
@@ -5323,7 +5317,7 @@ arch woodfloor
 x 20
 y 31
 end
-arch elven_robe
+arch dress3
 x 20
 y 31
 end
@@ -5646,7 +5640,7 @@ arch woodlarge
 x 21
 y 31
 end
-arch gale
+arch elven_robe
 x 21
 y 31
 end
@@ -5939,7 +5933,7 @@ arch woodfloor
 x 22
 y 31
 end
-arch green_dragon_mail
+arch gale
 x 22
 y 31
 end
@@ -6190,7 +6184,7 @@ arch woodlarge
 x 23
 y 31
 end
-arch ring_mail
+arch green_dragon_mail
 x 23
 y 31
 end
@@ -6490,7 +6484,7 @@ arch woodfloor
 x 24
 y 31
 end
-arch robe_midnight
+arch ring_mail
 x 24
 y 31
 end
@@ -6813,7 +6807,7 @@ arch woodlarge
 x 25
 y 31
 end
-arch mithril_chainmail
+arch robe_midnight
 x 25
 y 31
 end
@@ -7108,7 +7102,7 @@ arch woodfloor
 x 26
 y 31
 end
-arch mithril_ar_ele
+arch mithril_chainmail
 x 26
 y 31
 end
@@ -7396,7 +7390,7 @@ arch woodlarge
 x 27
 y 31
 end
-arch b_plate_mail
+arch mithril_ar_ele
 x 27
 y 31
 end
@@ -7692,7 +7686,7 @@ arch woodfloor
 x 28
 y 31
 end
-arch plate_mail
+arch b_plate_mail
 x 28
 y 31
 end
@@ -7976,7 +7970,7 @@ arch woodlarge
 x 29
 y 31
 end
-arch Pdragon_mail
+arch plate_mail
 x 29
 y 31
 end
@@ -8234,7 +8228,7 @@ arch woodfloor
 x 30
 y 31
 end
-arch dragon_mail
+arch Pdragon_mail
 x 30
 y 31
 end
@@ -8443,7 +8437,7 @@ arch woodlarge
 x 31
 y 31
 end
-arch ring_mail2
+arch dragon_mail
 x 31
 y 31
 end
@@ -8750,7 +8744,7 @@ arch woodfloor
 x 32
 y 31
 end
-arch robe
+arch ring_mail2
 x 32
 y 31
 end
@@ -9087,7 +9081,7 @@ arch woodlarge
 x 33
 y 31
 end
-arch robe2
+arch robe
 x 33
 y 31
 end
@@ -9368,7 +9362,7 @@ arch woodfloor
 x 34
 y 31
 end
-arch b_scale_mail
+arch robe2
 x 34
 y 31
 end
@@ -9649,7 +9643,7 @@ arch woodlarge
 x 35
 y 31
 end
-arch scale_mail
+arch b_scale_mail
 x 35
 y 31
 end
@@ -9930,7 +9924,7 @@ arch woodfloor
 x 36
 y 31
 end
-arch tunic
+arch scale_mail
 x 36
 y 31
 end
@@ -10267,7 +10261,7 @@ arch woodlarge
 x 37
 y 31
 end
-arch wdsm
+arch tunic
 x 37
 y 31
 end
@@ -10578,7 +10572,7 @@ arch woodfloor
 x 38
 y 31
 end
-arch elvenboots
+arch wdsm
 x 38
 y 31
 end
@@ -10784,19 +10778,11 @@ arch wall_2_1_2
 x 39
 y 30
 end
-arch swall_1_1_half
-x 39
-y 30
-end
 arch woodlarge
 x 39
 y 31
 end
-arch swall_2_1_1
-x 39
-y 31
-end
-arch dungeon_magic
+arch elvenboots
 x 39
 y 31
 end
@@ -10804,11 +10790,11 @@ arch woodfloor
 x 39
 y 32
 end
-arch swall_2_2_4
+arch dungeon_magic
 x 39
 y 32
 end
-arch dungeon_magic
+arch swall_2_1_2
 x 39
 y 32
 end
@@ -11067,11 +11053,35 @@ arch swall_1_4_half
 x 40
 y 30
 end
+arch swall_1_1_half
+x 40
+y 30
+end
+arch dungeon_magic
+x 40
+y 30
+end
 arch woodfloor
 x 40
 y 31
 end
+arch swall_2_1_1
+x 40
+y 31
+end
+arch dungeon_magic
+x 40
+y 31
+end
 arch woodlarge
+x 40
+y 32
+end
+arch swall_2_2_4
+x 40
+y 32
+end
+arch dungeon_magic
 x 40
 y 32
 end
