@@ -9,7 +9,7 @@ enter_x 28
 enter_y 16
 msg
 Created:  2002-02-19 mikeeusa
-Modified: 2013-07-14 kevinz
+Modified: 2013-07-18 Kevin Zheng
 endmsg
 end
 arch grass_only
@@ -8626,7 +8626,6 @@ arch grate_closed_1
 name security grate
 x 32
 y 8
-speed 0.500000
 connected 575757
 end
 arch dungeon_magic
@@ -9042,9 +9041,6 @@ y 15
 end
 arch guard
 name Elite Mikhovian Guard
-msg
-@match *
-endmsg
 hp 350
 x 33
 y 15
@@ -10439,9 +10435,6 @@ y 11
 end
 arch guard
 name Elite Mikhovian Guard
-msg
-@match *
-endmsg
 hp 350
 x 37
 y 11
@@ -12497,9 +12490,6 @@ y 15
 end
 arch guard
 name Elite Mikhovian Guard
-msg
-@match *
-endmsg
 hp 350
 x 43
 y 15
@@ -14305,7 +14295,6 @@ end
 arch stwall_closed_1
 x 50
 y 9
-speed 0.500000
 connected 5
 end
 arch magic_ear
@@ -14552,9 +14541,6 @@ y 10
 end
 arch guard
 name Elite Mikhovian Guard
-msg
-@match *
-endmsg
 hp 350
 x 51
 y 10
