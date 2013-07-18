@@ -9,12 +9,12 @@ shopmax 5000000
 shoprace dwarf
 darkness 1
 width 24
-height 17
+height 18
 enter_x 10
 enter_y 10
 msg
 Created:  1993-10-27
-Modified: 2012-04-14 Rick Tanner
+Modified: 2013-07-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -65,8 +65,11 @@ end
 arch grass_only
 y 15
 end
-arch cobblestones2
+arch grass_only
 y 16
+end
+arch cobblestones2
+y 17
 end
 arch grass_only
 x 1
@@ -131,9 +134,13 @@ arch grass_only
 x 1
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 1
 y 16
+end
+arch cobblestones2
+x 1
+y 17
 end
 arch grass_only
 x 2
@@ -182,32 +189,32 @@ arch wwall_2_1_1
 x 2
 y 6
 end
-arch light2
-x 2
-y 7
-end
 arch stonefloor2
 x 2
 y 7
+end
+arch wwall_2_1_1
+x 2
+y 7
+end
+arch light2
+x 2
+y 8
+end
+arch stonefloor2
+x 2
+y 8
 end
 arch wwall_win1
 x 2
-y 7
+y 8
 end
 arch stonefloor2
 x 2
-y 8
+y 9
 end
 arch wwall_3_2
 x 2
-y 8
-end
-arch stonefloor2
-x 2
-y 9
-end
-arch wwall_2_1_1
-x 2
 y 9
 end
 arch stonefloor2
@@ -229,12 +236,16 @@ end
 arch stonefloor2
 x 2
 y 12
+end
+arch wwall_2_1_1
+x 2
+y 12
+end
+arch stonefloor2
+x 2
+y 13
 end
 arch wwall_2_2_1
-x 2
-y 12
-end
-arch grass_only
 x 2
 y 13
 end
@@ -246,9 +257,13 @@ arch grass_only
 x 2
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 2
 y 16
+end
+arch cobblestones2
+x 2
+y 17
 end
 arch grass_only
 x 3
@@ -273,7 +288,11 @@ arch shop_armour
 x 3
 y 3
 end
-arch shop_weapon
+arch light4
+x 3
+y 4
+end
+arch shop_armour
 x 3
 y 4
 end
@@ -281,7 +300,7 @@ arch shop_weapon
 x 3
 y 5
 end
-arch shop_empty
+arch shop_weapon
 x 3
 y 6
 end
@@ -289,24 +308,20 @@ arch shop_empty
 x 3
 y 7
 end
-arch magic_banned
+arch shop_empty
 x 3
 y 8
 end
+arch magic_banned
+x 3
+y 9
+end
 arch stonefloor2
 x 3
-y 8
+y 9
 end
 arch wwall_2_1_2
 x 3
-y 8
-end
-arch stonefloor2
-x 3
-y 9
-end
-arch stonefloor2
-x 3
 y 9
 end
 arch stonefloor2
@@ -324,20 +339,24 @@ end
 arch stonefloor2
 x 3
 y 11
+end
+arch stonefloor2
+x 3
+y 12
+end
+arch stonefloor2
+x 3
+y 12
 end
 arch firepot
 x 3
-y 11
+y 12
 end
 arch stonefloor2
 x 3
-y 12
+y 13
 end
 arch wwall_2_1_2
-x 3
-y 12
-end
-arch grass_only
 x 3
 y 13
 end
@@ -349,9 +368,13 @@ arch grass_only
 x 3
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 3
 y 16
+end
+arch cobblestones2
+x 3
+y 17
 end
 arch grass_only
 x 4
@@ -388,31 +411,31 @@ arch shop_empty
 x 4
 y 7
 end
+arch shop_empty
+x 4
+y 8
+end
 arch shop_mat
 x 4
-y 7
+y 8
 end
 arch magic_banned
 x 4
-y 8
+y 9
 end
 arch stonefloor2
 x 4
-y 8
+y 9
 end
 arch wwall_2_1_2
 x 4
-y 8
+y 9
 end
 arch stonefloor2
 x 4
-y 9
+y 10
 end
 arch shop_mat
-x 4
-y 9
-end
-arch stonefloor2
 x 4
 y 10
 end
@@ -424,11 +447,11 @@ arch stonefloor2
 x 4
 y 12
 end
-arch wwall_2_1_2
+arch stonefloor2
 x 4
-y 12
+y 13
 end
-arch grass_only
+arch wwall_2_1_2
 x 4
 y 13
 end
@@ -440,9 +463,13 @@ arch grass_only
 x 4
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 4
 y 16
+end
+arch cobblestones2
+x 4
+y 17
 end
 arch grass_only
 x 5
@@ -475,31 +502,31 @@ arch shop_empty
 x 5
 y 5
 end
-arch light4
-x 5
-y 6
-end
 arch shop_empty
 x 5
 y 6
+end
+arch light4
+x 5
+y 7
 end
 arch shop_empty
 x 5
 y 7
 end
+arch shop_empty
+x 5
+y 8
+end
 arch magic_banned
 x 5
-y 8
+y 9
 end
 arch stonefloor2
 x 5
-y 8
+y 9
 end
 arch wwall_2_1_2
-x 5
-y 8
-end
-arch stonefloor2
 x 5
 y 9
 end
@@ -515,11 +542,11 @@ arch stonefloor2
 x 5
 y 12
 end
-arch wwall_2_1_2
+arch stonefloor2
 x 5
-y 12
+y 13
 end
-arch grass_only
+arch wwall_2_1_2
 x 5
 y 13
 end
@@ -531,9 +558,13 @@ arch grass_only
 x 5
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 5
 y 16
+end
+arch cobblestones2
+x 5
+y 17
 end
 arch grass_only
 x 6
@@ -554,9 +585,13 @@ arch shop_empty
 x 6
 y 3
 end
+arch shop_empty
+x 6
+y 4
+end
 arch firepot
 x 6
-y 3
+y 4
 end
 arch magic_ear
 msg
@@ -564,11 +599,7 @@ msg
 Hello, I am Gunther, if you have items to make, just put them on the anvils and I will make them for you.
 endmsg
 x 6
-y 4
-end
-arch shop_empty
-x 6
-y 4
+y 5
 end
 arch shop_empty
 x 6
@@ -581,44 +612,44 @@ end
 arch shop_empty
 x 6
 y 7
+end
+arch shop_empty
+x 6
+y 8
 end
 arch magic_banned
 x 6
-y 8
+y 9
 end
 arch stonefloor2
 x 6
-y 8
+y 9
 end
 arch wwall_win2
 x 6
-y 8
-end
-arch stonefloor2
-x 6
 y 9
 end
 arch stonefloor2
 x 6
 y 10
+end
+arch stonefloor2
+x 6
+y 11
 end
 arch light4
 x 6
-y 11
-end
-arch stonefloor2
-x 6
-y 11
+y 12
 end
 arch stonefloor2
 x 6
 y 12
+end
+arch stonefloor2
+x 6
+y 13
 end
 arch wwall_2_1_2
-x 6
-y 12
-end
-arch grass_only
 x 6
 y 13
 end
@@ -630,9 +661,13 @@ arch grass_only
 x 6
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 6
 y 16
+end
+arch cobblestones2
+x 6
+y 17
 end
 arch grass_only
 x 7
@@ -653,67 +688,67 @@ arch shop_empty
 x 7
 y 3
 end
-arch create_dragon_mail
-x 7
-y 3
-end
 arch shop_empty
 x 7
 y 4
+end
+arch create_dragon_mail
+x 7
+y 4
+end
+arch shop_empty
+x 7
+y 5
 end
 arch create_dragon_shield
 x 7
-y 4
+y 5
 end
 arch shop_empty
 x 7
-y 5
+y 6
 end
 arch create_eyeshield
 x 7
-y 5
+y 6
 end
 arch shop_empty
 x 7
-y 6
+y 7
 end
 arch swall_1_1
 x 7
-y 6
+y 7
 end
 arch shop_empty
 x 7
-y 7
+y 8
 end
 arch swall_2_1_1
 x 7
-y 7
+y 8
 end
 arch stonefloor2
 x 7
-y 8
+y 9
 end
 arch swall_1_2_half
 x 7
-y 8
+y 9
 end
 arch wwall_2_1_2
 x 7
-y 8
-end
-arch stonefloor2
-x 7
 y 9
 end
 arch stonefloor2
 x 7
-y 9
+y 10
+end
+arch stonefloor2
+x 7
+y 10
 end
 arch firepot
-x 7
-y 9
-end
-arch stonefloor2
 x 7
 y 10
 end
@@ -725,11 +760,11 @@ arch stonefloor2
 x 7
 y 12
 end
-arch wwall_2_1_2
+arch stonefloor2
 x 7
-y 12
+y 13
 end
-arch grass_only
+arch wwall_2_1_2
 x 7
 y 13
 end
@@ -741,9 +776,13 @@ arch grass_only
 x 7
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 7
 y 16
+end
+arch cobblestones2
+x 7
+y 17
 end
 arch grass_only
 x 8
@@ -767,22 +806,18 @@ end
 arch shop_empty
 x 8
 y 4
+end
+arch shop_empty
+x 8
+y 5
 end
 arch dwarf
 name Gunther
 x 8
-y 4
+y 5
 end
 arch shop_empty
 x 8
-y 5
-end
-arch permanent_lava
-x 8
-y 6
-end
-arch dungeon_magic
-x 8
 y 6
 end
 arch permanent_lava
@@ -792,16 +827,20 @@ end
 arch dungeon_magic
 x 8
 y 7
+end
+arch permanent_lava
+x 8
+y 8
+end
+arch dungeon_magic
+x 8
+y 8
 end
 arch stonefloor2
 x 8
-y 8
+y 9
 end
 arch wwall_2_1_2
-x 8
-y 8
-end
-arch stonefloor2
 x 8
 y 9
 end
@@ -817,11 +856,11 @@ arch stonefloor2
 x 8
 y 12
 end
-arch wwall_2_1_2
+arch stonefloor2
 x 8
-y 12
+y 13
 end
-arch grass_only
+arch wwall_2_1_2
 x 8
 y 13
 end
@@ -833,9 +872,13 @@ arch grass_only
 x 8
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 8
 y 16
+end
+arch cobblestones2
+x 8
+y 17
 end
 arch grass_only
 x 9
@@ -880,7 +923,7 @@ arch stonefloor2
 x 9
 y 6
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 9
 y 6
 end
@@ -896,7 +939,7 @@ arch stonefloor2
 x 9
 y 8
 end
-arch wwall_2_2_4
+arch wwall_2_1_1
 x 9
 y 8
 end
@@ -904,48 +947,52 @@ arch stonefloor2
 x 9
 y 9
 end
+arch wwall_2_2_4
+x 9
+y 9
+end
 arch stonefloor2
 x 9
 y 10
+end
+arch stonefloor2
+x 9
+y 11
 end
 arch sign_w
 name shop
 x 9
-y 10
+y 11
 end
 arch button_small
 x 9
-y 11
+y 12
 connected 12
 end
 arch stonefloor2
 x 9
-y 11
+y 12
 end
 arch stonefloor2
 x 9
-y 12
+y 13
 end
 arch wwall_1_3
 x 9
-y 12
+y 13
 end
 arch dungeon_magic
 x 9
-y 13
+y 14
 end
 arch invis_exit
 slaying /world/world_122_117
 hp 11
 sp 7
 x 9
-y 13
+y 14
 end
 arch cobblestones2
-x 9
-y 13
-end
-arch grass_only
 x 9
 y 14
 end
@@ -953,9 +1000,13 @@ arch grass_only
 x 9
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 9
 y 16
+end
+arch cobblestones2
+x 9
+y 17
 end
 arch grass_only
 x 10
@@ -976,11 +1027,11 @@ arch stonefloor2
 x 10
 y 3
 end
-arch firepot
-x 10
-y 3
-end
 arch stonefloor2
+x 10
+y 4
+end
+arch firepot
 x 10
 y 4
 end
@@ -991,6 +1042,10 @@ end
 arch stonefloor2
 x 10
 y 6
+end
+arch stonefloor2
+x 10
+y 7
 end
 arch platinum_converter
 name Buy Small Shield (7pp)
@@ -998,21 +1053,9 @@ other_arch small_shield
 sp 1
 food 7
 x 10
-y 6
-end
-arch stonefloor2
-x 10
 y 7
 end
 arch stonefloor2
-x 10
-y 8
-end
-arch platinum_converter
-name Buy Gauntlets (8pp)
-other_arch gauntlets
-sp 1
-food 8
 x 10
 y 8
 end
@@ -1020,18 +1063,21 @@ arch stonefloor2
 x 10
 y 9
 end
+arch platinum_converter
+name Buy Gauntlets (8pp)
+other_arch gauntlets
+sp 1
+food 8
+x 10
+y 9
+end
+arch stonefloor2
+x 10
+y 10
+end
 arch light4
 x 10
-y 10
-end
-arch stonefloor2
-x 10
-y 10
-end
-arch button_small
-x 10
 y 11
-connected 12
 end
 arch stonefloor2
 x 10
@@ -1045,26 +1091,31 @@ end
 arch stonefloor2
 x 10
 y 12
+end
+arch button_small
+x 10
+y 13
+connected 12
+end
+arch stonefloor2
+x 10
+y 13
 end
 arch odoorn2_closed_1
 x 10
-y 12
+y 13
 connected 12
 end
 arch dungeon_magic
 x 10
-y 13
+y 14
 end
 arch invis_exit
 slaying /world/world_122_117
 hp 11
 sp 7
 x 10
-y 13
-end
-arch cobblestones2
-x 10
-y 13
+y 14
 end
 arch cobblestones2
 x 10
@@ -1077,6 +1128,10 @@ end
 arch cobblestones2
 x 10
 y 16
+end
+arch cobblestones2
+x 10
+y 17
 end
 arch grass_only
 x 11
@@ -1109,13 +1164,13 @@ arch stonefloor2
 x 11
 y 6
 end
-arch light4
-x 11
-y 7
-end
 arch stonefloor2
 x 11
 y 7
+end
+arch light4
+x 11
+y 8
 end
 arch stonefloor2
 x 11
@@ -1129,44 +1184,44 @@ arch stonefloor2
 x 11
 y 10
 end
+arch stonefloor2
+x 11
+y 11
+end
 arch sign_e
 name forging facilities
 x 11
-y 10
+y 11
 end
 arch button_small
 x 11
-y 11
+y 12
 connected 12
 end
 arch stonefloor2
 x 11
-y 11
+y 12
 end
 arch stonefloor2
 x 11
-y 12
+y 13
 end
 arch wwall_1_4
 x 11
-y 12
+y 13
 end
 arch dungeon_magic
 x 11
-y 13
+y 14
 end
 arch invis_exit
 slaying /world/world_122_117
 hp 11
 sp 7
 x 11
-y 13
+y 14
 end
 arch cobblestones2
-x 11
-y 13
-end
-arch grass_only
 x 11
 y 14
 end
@@ -1174,9 +1229,13 @@ arch grass_only
 x 11
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 11
 y 16
+end
+arch cobblestones2
+x 11
+y 17
 end
 arch grass_only
 x 12
@@ -1237,33 +1296,37 @@ arch stonefloor2
 x 12
 y 12
 end
-arch wwall_2_2_3
-x 12
-y 12
-end
 arch stonefloor2
 x 12
 y 13
+end
+arch wwall_2_2_3
+x 12
+y 13
+end
+arch stonefloor2
+x 12
+y 14
 end
 arch wwall_2_1_1
 x 12
-y 13
+y 14
 end
 arch stonefloor2
 x 12
-y 14
+y 15
 end
 arch wwall_2_2_1
 x 12
-y 14
+y 15
 end
 arch grass_only
 x 12
-y 15
+y 16
 end
 arch cobblestones2
 x 12
-y 16
+y 17
 end
 arch grass_only
 x 13
@@ -1284,24 +1347,16 @@ arch stonefloor2
 x 13
 y 3
 end
+arch stonefloor2
+x 13
+y 4
+end
 arch awall_0
 x 13
-y 3
+y 4
 end
 arch swall_2_2_2
 x 13
-y 3
-end
-arch dungeon_magic
-x 13
-y 3
-end
-arch stonefloor2
-x 13
-y 4
-end
-arch swall_2_1_1
-x 13
 y 4
 end
 arch dungeon_magic
@@ -1335,20 +1390,28 @@ end
 arch stonefloor2
 x 13
 y 7
+end
+arch swall_2_1_1
+x 13
+y 7
+end
+arch dungeon_magic
+x 13
+y 7
+end
+arch stonefloor2
+x 13
+y 8
 end
 arch swall_2_2_1
 x 13
-y 7
+y 8
 end
 arch awall_0
 x 13
-y 7
+y 8
 end
 arch dungeon_magic
-x 13
-y 7
-end
-arch stonefloor2
 x 13
 y 8
 end
@@ -1364,13 +1427,13 @@ arch stonefloor2
 x 13
 y 11
 end
-arch light4
-x 13
-y 12
-end
 arch stonefloor2
 x 13
 y 12
+end
+arch light4
+x 13
+y 13
 end
 arch stonefloor2
 x 13
@@ -1380,17 +1443,21 @@ arch stonefloor2
 x 13
 y 14
 end
-arch wwall_2_1_2
-x 13
-y 14
-end
-arch grass_only
+arch stonefloor2
 x 13
 y 15
 end
-arch cobblestones2
+arch wwall_2_1_2
+x 13
+y 15
+end
+arch grass_only
 x 13
 y 16
+end
+arch cobblestones2
+x 13
+y 17
 end
 arch grass_only
 x 14
@@ -1411,21 +1478,21 @@ arch stonefloor2
 x 14
 y 3
 end
+arch stonefloor2
+x 14
+y 4
+end
 arch swall_2_1_2
 x 14
-y 3
+y 4
 end
 arch dungeon_magic
 x 14
-y 3
+y 4
 end
 arch light4
 x 14
-y 4
-end
-arch afloor_left
-x 14
-y 4
+y 5
 end
 arch afloor_left
 x 14
@@ -1435,31 +1502,31 @@ arch afloor_left
 x 14
 y 6
 end
+arch afloor_left
+x 14
+y 7
+end
 arch firepot
 x 14
-y 6
+y 7
 end
 arch stonefloor2
 x 14
-y 7
+y 8
 end
 arch swall_2_1_2
 x 14
-y 7
+y 8
 end
 arch dungeon_magic
 x 14
-y 7
+y 8
 end
 arch stonefloor2
 x 14
-y 8
+y 9
 end
 arch firepot
-x 14
-y 8
-end
-arch stonefloor2
 x 14
 y 9
 end
@@ -1483,17 +1550,21 @@ arch stonefloor2
 x 14
 y 14
 end
-arch wwall_2_1_2
-x 14
-y 14
-end
-arch grass_only
+arch stonefloor2
 x 14
 y 15
 end
-arch cobblestones2
+arch wwall_2_1_2
+x 14
+y 15
+end
+arch grass_only
 x 14
 y 16
+end
+arch cobblestones2
+x 14
+y 17
 end
 arch grass_only
 x 15
@@ -1514,60 +1585,64 @@ arch stonefloor2
 x 15
 y 3
 end
+arch stonefloor2
+x 15
+y 4
+end
 arch swall_2_1_2
 x 15
-y 3
+y 4
 end
 arch dungeon_magic
 x 15
-y 3
+y 4
 end
 arch afloor_left
 x 15
-y 4
+y 5
 end
 arch forge
 x 15
-y 4
-end
-arch afloor_left
-x 15
 y 5
 end
 arch afloor_left
 x 15
 y 6
 end
+arch afloor_left
+x 15
+y 7
+end
 arch pedestal
 x 15
-y 6
+y 7
 invisible 1
 connected 11
 end
 arch stonefloor2
 x 15
-y 7
+y 8
 end
 arch ggate_closed
 x 15
-y 7
+y 8
 connected 11
 no_magic 1
 damned 1
 end
 arch stonefloor2
 x 15
-y 8
+y 9
 end
 arch check_floor
 slaying gunthers
 x 15
-y 8
+y 9
 connected 11
 end
 arch stonefloor2
 x 15
-y 9
+y 10
 end
 arch trigger_marker
 slaying gunthers
@@ -1576,7 +1651,7 @@ You have one day's use of these facilities.
 endmsg
 food 504
 x 15
-y 9
+y 10
 speed 1.0
 connected 10
 end
@@ -1585,15 +1660,11 @@ name Drop 160 platinum to enter
 slaying money
 food 8000
 x 15
-y 9
+y 10
 connected 10
 end
 arch stonefloor2
 x 15
-y 10
-end
-arch stonefloor2
-x 15
 y 11
 end
 arch stonefloor2
@@ -1604,25 +1675,29 @@ arch stonefloor2
 x 15
 y 13
 end
-arch light2
-x 15
-y 14
-end
 arch stonefloor2
 x 15
 y 14
 end
-arch wwall_win2
-x 15
-y 14
-end
-arch grass_only
+arch light2
 x 15
 y 15
 end
-arch cobblestones2
+arch stonefloor2
+x 15
+y 15
+end
+arch wwall_win2
+x 15
+y 15
+end
+arch grass_only
 x 15
 y 16
+end
+arch cobblestones2
+x 15
+y 17
 end
 arch grass_only
 x 16
@@ -1643,15 +1718,15 @@ arch stonefloor2
 x 16
 y 3
 end
+arch stonefloor2
+x 16
+y 4
+end
 arch swall_2_1_2
 x 16
-y 3
+y 4
 end
 arch dungeon_magic
-x 16
-y 3
-end
-arch afloor_left
 x 16
 y 4
 end
@@ -1663,19 +1738,11 @@ arch afloor_left
 x 16
 y 6
 end
+arch afloor_left
+x 16
+y 7
+end
 arch firepot
-x 16
-y 6
-end
-arch stonefloor2
-x 16
-y 7
-end
-arch swall_2_1_2
-x 16
-y 7
-end
-arch dungeon_magic
 x 16
 y 7
 end
@@ -1683,7 +1750,11 @@ arch stonefloor2
 x 16
 y 8
 end
-arch firepot
+arch swall_2_1_2
+x 16
+y 8
+end
+arch dungeon_magic
 x 16
 y 8
 end
@@ -1691,17 +1762,21 @@ arch stonefloor2
 x 16
 y 9
 end
+arch firepot
+x 16
+y 9
+end
 arch stonefloor2
 x 16
 y 10
 end
-arch light4
-x 16
-y 11
-end
 arch stonefloor2
 x 16
 y 11
+end
+arch light4
+x 16
+y 12
 end
 arch stonefloor2
 x 16
@@ -1711,25 +1786,29 @@ arch stonefloor2
 x 16
 y 13
 end
-arch light2
-x 16
-y 14
-end
 arch stonefloor2
 x 16
 y 14
 end
-arch wwall_win2
-x 16
-y 14
-end
-arch grass_only
+arch light2
 x 16
 y 15
 end
-arch cobblestones2
+arch stonefloor2
+x 16
+y 15
+end
+arch wwall_win2
+x 16
+y 15
+end
+arch grass_only
 x 16
 y 16
+end
+arch cobblestones2
+x 16
+y 17
 end
 arch grass_only
 x 17
@@ -1750,24 +1829,16 @@ arch stonefloor2
 x 17
 y 3
 end
+arch stonefloor2
+x 17
+y 4
+end
 arch awall_0
 x 17
-y 3
+y 4
 end
 arch swall_2_2_3
 x 17
-y 3
-end
-arch dungeon_magic
-x 17
-y 3
-end
-arch stonefloor2
-x 17
-y 4
-end
-arch swall_2_1_1
-x 17
 y 4
 end
 arch dungeon_magic
@@ -1801,20 +1872,28 @@ end
 arch stonefloor2
 x 17
 y 7
+end
+arch swall_2_1_1
+x 17
+y 7
+end
+arch dungeon_magic
+x 17
+y 7
+end
+arch stonefloor2
+x 17
+y 8
 end
 arch swall_2_2_4
 x 17
-y 7
+y 8
 end
 arch awall_0
 x 17
-y 7
+y 8
 end
 arch dungeon_magic
-x 17
-y 7
-end
-arch stonefloor2
 x 17
 y 8
 end
@@ -1842,17 +1921,21 @@ arch stonefloor2
 x 17
 y 14
 end
-arch wwall_2_1_2
-x 17
-y 14
-end
-arch grass_only
+arch stonefloor2
 x 17
 y 15
 end
-arch cobblestones2
+arch wwall_2_1_2
+x 17
+y 15
+end
+arch grass_only
 x 17
 y 16
+end
+arch cobblestones2
+x 17
+y 17
 end
 arch grass_only
 x 18
@@ -1889,13 +1972,13 @@ arch stonefloor2
 x 18
 y 6
 end
-arch light4
-x 18
-y 7
-end
 arch stonefloor2
 x 18
 y 7
+end
+arch light4
+x 18
+y 8
 end
 arch stonefloor2
 x 18
@@ -1913,13 +1996,13 @@ arch stonefloor2
 x 18
 y 11
 end
-arch light4
-x 18
-y 12
-end
 arch stonefloor2
 x 18
 y 12
+end
+arch light4
+x 18
+y 13
 end
 arch stonefloor2
 x 18
@@ -1929,17 +2012,21 @@ arch stonefloor2
 x 18
 y 14
 end
-arch wwall_2_1_2
-x 18
-y 14
-end
-arch grass_only
+arch stonefloor2
 x 18
 y 15
 end
-arch cobblestones2
+arch wwall_2_1_2
+x 18
+y 15
+end
+arch grass_only
 x 18
 y 16
+end
+arch cobblestones2
+x 18
+y 17
 end
 arch grass_only
 x 19
@@ -1995,34 +2082,38 @@ end
 arch stonefloor2
 x 19
 y 12
+end
+arch stonefloor2
+x 19
+y 13
 end
 arch wwall_2_2_2
 x 19
-y 12
+y 13
 end
 arch stonefloor2
 x 19
-y 13
+y 14
 end
 arch wwall_2_1_1
 x 19
-y 13
+y 14
 end
 arch stonefloor2
 x 19
-y 14
+y 15
 end
 arch wwall_2_2_4
 x 19
-y 14
+y 15
 end
 arch grass_only
 x 19
-y 15
+y 16
 end
 arch cobblestones2
 x 19
-y 16
+y 17
 end
 arch grass_only
 x 20
@@ -2043,11 +2134,11 @@ arch stonefloor2
 x 20
 y 3
 end
-arch firepot
-x 20
-y 3
-end
 arch stonefloor2
+x 20
+y 4
+end
+arch firepot
 x 20
 y 4
 end
@@ -2058,6 +2149,10 @@ end
 arch stonefloor2
 x 20
 y 6
+end
+arch stonefloor2
+x 20
+y 7
 end
 arch platinum_converter
 name Buy Helmets (10pp)
@@ -2065,25 +2160,21 @@ other_arch helmet
 sp 1
 food 10
 x 20
-y 6
-end
-arch stonefloor2
-x 20
 y 7
 end
 arch stonefloor2
 x 20
 y 8
 end
+arch stonefloor2
+x 20
+y 9
+end
 arch platinum_converter
 name Buy shoes (5pp)
 other_arch low_boots
 sp 1
 food 5
-x 20
-y 8
-end
-arch stonefloor2
 x 20
 y 9
 end
@@ -2095,19 +2186,19 @@ arch stonefloor2
 x 20
 y 11
 end
-arch firepot
-x 20
-y 11
-end
 arch stonefloor2
 x 20
 y 12
 end
-arch wwall_2_1_2
+arch firepot
 x 20
 y 12
 end
-arch grass_only
+arch stonefloor2
+x 20
+y 13
+end
+arch wwall_2_1_2
 x 20
 y 13
 end
@@ -2119,9 +2210,13 @@ arch grass_only
 x 20
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 20
 y 16
+end
+arch cobblestones2
+x 20
+y 17
 end
 arch grass_only
 x 21
@@ -2170,24 +2265,24 @@ arch wwall_2_1_1
 x 21
 y 6
 end
-arch light2
-x 21
-y 7
-end
 arch stonefloor2
 x 21
 y 7
+end
+arch wwall_2_1_1
+x 21
+y 7
+end
+arch light2
+x 21
+y 8
+end
+arch stonefloor2
+x 21
+y 8
 end
 arch wwall_win1
 x 21
-y 7
-end
-arch stonefloor2
-x 21
-y 8
-end
-arch wwall_2_1_1
-x 21
 y 8
 end
 arch stonefloor2
@@ -2217,13 +2312,17 @@ end
 arch stonefloor2
 x 21
 y 12
+end
+arch wwall_2_1_1
+x 21
+y 12
+end
+arch stonefloor2
+x 21
+y 13
 end
 arch wwall_2_2_4
 x 21
-y 12
-end
-arch grass_only
-x 21
 y 13
 end
 arch grass_only
@@ -2234,9 +2333,13 @@ arch grass_only
 x 21
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 21
 y 16
+end
+arch cobblestones2
+x 21
+y 17
 end
 arch grass_only
 x 22
@@ -2301,9 +2404,13 @@ arch grass_only
 x 22
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 22
 y 16
+end
+arch cobblestones2
+x 22
+y 17
 end
 arch grass_only
 x 23
@@ -2368,7 +2475,11 @@ arch grass_only
 x 23
 y 15
 end
-arch cobblestones2
+arch grass_only
 x 23
 y 16
+end
+arch cobblestones2
+x 23
+y 17
 end
