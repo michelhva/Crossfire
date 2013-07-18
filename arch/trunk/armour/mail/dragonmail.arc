@@ -61,3 +61,27 @@ body_torso -1
 gen_sp_armour 9
 item_power 5
 end
+# Chaos dragons are harder to beat, so why not have a little better armour from their scales?
+Object black_dragon_mail
+name black dragon mail
+name_pl black dragon mails
+client_type 251
+nrof 1
+type 16
+face blackdragonmail.111
+last_sp 13
+ac 7
+resist_physical 60
+material 2048
+materialname dragonscale
+weight 60000
+value 50000
+resist_cold 25
+resist_fire 25
+resist_electricity 15
+magic 4
+identified 1
+body_torso -1
+gen_sp_armour 9
+item_power 8
+end
