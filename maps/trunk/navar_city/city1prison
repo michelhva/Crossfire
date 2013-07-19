@@ -7,7 +7,7 @@ height 23
 enter_y 1
 msg
 Created:  1993-10-27
-Modified: 2012-03-17 Rick Tanner
+Modified: 2013-07-18 Kevin Zheng
 endmsg
 end
 arch dungeon_floor
@@ -3130,7 +3130,7 @@ end
 arch prisoner
 msg
 @match wizard
-Oh yes....I was imprisoned with the wizard, he tried to hex me every day, good thing he was bound with silver otherwise it would have worked.  But he escaped long ago.  Out of this very cell, he dug his way out, and covered the hole back up.
+Oh yes... I was imprisoned with the wizard, he tried to hex me every day, good thing he was bound with silver otherwise it would have worked.  But he escaped long ago.  Out of this very cell, he dug his way out, and covered the hole back up.
 @match *
 Please help me, I cannot escape like the old wizard, I have no strength left to dig.
 endmsg
