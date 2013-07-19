@@ -8,7 +8,7 @@ enter_x 8
 enter_y 18
 msg
 Created:  2005-03-23 Huhanhi
-Modified: 2012-01-09 Rick Tanner
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -1467,7 +1467,6 @@ resist_chaos 20
 resist_holyword 40
 resist_blind 20
 can_use_scroll 1
-can_use_range 1
 arch wand
 title of Firebolt of Plenty
 food 50

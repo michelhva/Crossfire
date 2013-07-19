@@ -8,7 +8,7 @@ enter_x 30
 enter_y 17
 msg
 Created:  1995-05-01 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2012-02-06 Rick Tanner
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 end
 arch button_plate
@@ -232,7 +232,6 @@ end
 arch wizard
 name Mad wizard
 Str 10
-Dex 10
 Con 6
 Wis 30
 Pow 20
