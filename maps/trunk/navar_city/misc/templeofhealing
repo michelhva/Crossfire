@@ -11,7 +11,7 @@ enter_x 11
 enter_y 34
 msg
 Created:  2012-03-30
-Modified: 2012-04-01 Rick Tanner
+Modified: 2013-07-18 Kevin Zheng
 endmsg
 end
 arch grass
@@ -3287,10 +3287,6 @@ endmsg
 x 11
 y 29
 friendly 1
-arch event_say
-title Python
-slaying /python/maps/scorn/HouseofHealing.py
-end
 end
 arch dungeon_magic
 x 11
