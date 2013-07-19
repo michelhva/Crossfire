@@ -8,7 +8,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  2004-08-13 Avion
-Modified: 2012-03-15 Rick Tanner
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -869,7 +869,6 @@ attacktype 3
 weight 1000
 pick_up 6
 unaggressive 1
-can_use_range 1
 can_use_ring 1
 sleep 0
 arch spell_curse

@@ -8,7 +8,7 @@ enter_x 15
 enter_y 12
 msg
 Created:  2002-10-27 Todd Mitchell
-Modified: 2012-02-03 Rick Tanner
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -720,7 +720,6 @@ level 8
 attacktype 3
 weight 1000
 unaggressive 1
-can_use_range 1
 can_use_ring 1
 sleep 0
 stand_still 1

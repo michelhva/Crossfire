@@ -8,7 +8,7 @@ enter_x 10
 enter_y 16
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2012-06-12 Rick Tanner
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 end
 arch grass_only
@@ -1018,7 +1018,6 @@ end
 arch wizard
 name Blacktooth the wizard
 Pow 10
-hp 50
 maxhp 100
 sp 100
 maxsp 100

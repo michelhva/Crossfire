@@ -4,7 +4,7 @@ width 13
 height 26
 msg
 Created:  2001-05-05
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 end
 arch Balrog
@@ -323,7 +323,6 @@ name stone golem
 Con 15
 hp 5000
 maxhp 5000
-ac -20
 x 6
 y 12
 resist_physical 40
