@@ -9,7 +9,7 @@ enter_x 6
 enter_y 14
 msg
 Created:  2002-12-28
-Modified: 2012-02-15 Rick Tanner
+Modified: 2013-07-18 Kevin Zheng
 endmsg
 end
 arch grass
@@ -659,7 +659,7 @@ end
 arch sign
 name Tim the Bowyer
 msg
-Fell free to rent the facilities but stay out of my house!  I'm sick of you people pestering me!
+Feel free to rent the facilities but stay out of my house! I'm sick of you people pestering me!
 endmsg
 x 6
 y 12
@@ -872,7 +872,6 @@ endmsg
 food 504
 x 8
 y 13
-speed 1.0
 connected 10
 end
 arch altar_trigger
@@ -1002,6 +1001,10 @@ y 1
 end
 arch pixie
 name Tim
+msg
+@match *
+Get out of my house!
+endmsg
 x 10
 y 1
 sleep 0
