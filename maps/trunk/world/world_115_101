@@ -3,7 +3,7 @@ name world_115_101
 width 50
 height 50
 msg
-Modified: 2008-12-17 Rick Tanner
+Modified: 2013-07-22 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_115_100
@@ -11,10 +11,10 @@ tile_path_2 world_116_101
 tile_path_3 world_115_102
 tile_path_4 world_114_101
 end
-arch brush
+arch beach
 elevation 131
 end
-arch brush
+arch beach
 y 1
 elevation 803
 end
@@ -216,11 +216,11 @@ arch woods_2
 y 49
 elevation 581
 end
-arch brush
+arch beach
 x 1
 elevation 29
 end
-arch brush
+arch beach
 x 1
 y 1
 elevation 829
@@ -473,7 +473,7 @@ x 1
 y 49
 elevation 26
 end
-arch brush
+arch beach
 x 2
 elevation 65
 end
@@ -759,7 +759,7 @@ x 2
 y 49
 elevation -10
 end
-arch brush
+arch beach
 x 3
 elevation 27
 end
@@ -1028,7 +1028,7 @@ x 3
 y 49
 elevation -10
 end
-arch brush
+arch beach
 x 4
 elevation 58
 end
@@ -1297,7 +1297,7 @@ x 4
 y 49
 elevation -10
 end
-arch brush
+arch beach
 x 5
 elevation 40
 end
@@ -1574,7 +1574,7 @@ x 5
 y 49
 elevation -10
 end
-arch brush
+arch beach
 x 6
 elevation 318
 end
@@ -2698,7 +2698,7 @@ x 9
 y 49
 elevation -10
 end
-arch grass
+arch grassmedium
 x 10
 elevation 491
 end
@@ -2991,7 +2991,7 @@ x 10
 y 49
 elevation -10
 end
-arch brush
+arch beach
 x 11
 elevation 375
 end
@@ -3288,7 +3288,7 @@ x 11
 y 49
 elevation -10
 end
-arch grass
+arch beach
 x 12
 elevation 49
 end
@@ -4183,11 +4183,11 @@ x 14
 y 49
 elevation -10
 end
-arch grass
+arch beach
 x 15
 elevation 165
 end
-arch brush
+arch beach
 x 15
 y 1
 elevation 82
@@ -5883,7 +5883,7 @@ x 20
 y 49
 elevation 3276
 end
-arch grass
+arch beach
 x 21
 elevation 175
 end
@@ -6140,7 +6140,7 @@ arch tree3
 x 21
 y 49
 end
-arch woods_2
+arch beach
 x 22
 elevation 172
 end
@@ -6397,7 +6397,7 @@ x 22
 y 49
 elevation 1649
 end
-arch grass
+arch beach
 x 23
 elevation 281
 end
@@ -6430,7 +6430,7 @@ x 23
 y 5
 elevation 1483
 end
-arch grass
+arch brush
 x 23
 y 6
 elevation 894
@@ -6650,7 +6650,7 @@ x 23
 y 49
 elevation 92
 end
-arch woods_2
+arch beach
 x 24
 elevation 406
 end
@@ -6928,7 +6928,7 @@ x 24
 y 49
 elevation -7
 end
-arch woods_2
+arch grassmedium
 x 25
 elevation 416
 end
@@ -8038,7 +8038,7 @@ x 28
 y 49
 elevation -10
 end
-arch grass
+arch grassmedium
 x 29
 elevation 855
 end
@@ -9403,7 +9403,7 @@ x 33
 y 49
 elevation -31
 end
-arch grass
+arch grassmedium
 x 34
 elevation 83
 end
@@ -9683,7 +9683,7 @@ x 34
 y 49
 elevation -29
 end
-arch grass
+arch grassmedium
 x 35
 elevation 97
 end
@@ -9932,7 +9932,7 @@ x 35
 y 49
 elevation -25
 end
-arch brush
+arch grassmedium
 x 36
 elevation 238
 end
@@ -10214,9 +10214,12 @@ x 36
 y 49
 elevation -20
 end
-arch grass
+arch grassmedium
 x 37
 elevation 315
+end
+arch woods4
+x 37
 end
 arch woods_2
 x 37
@@ -10817,7 +10820,7 @@ x 38
 y 49
 elevation -10
 end
-arch brush
+arch grassmedium
 x 39
 elevation 408
 end
@@ -11366,7 +11369,7 @@ arch woods_2
 x 41
 elevation 605
 end
-arch grass
+arch grassmedium
 x 41
 y 1
 elevation 681
@@ -11934,7 +11937,7 @@ x 42
 y 49
 elevation 1080
 end
-arch brush
+arch beach
 x 43
 elevation 153
 end
@@ -12233,11 +12236,11 @@ x 43
 y 49
 elevation 338
 end
-arch grass
+arch beach
 x 44
 elevation 16
 end
-arch grass
+arch beach
 x 44
 y 1
 elevation 12

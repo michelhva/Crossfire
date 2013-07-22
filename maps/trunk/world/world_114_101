@@ -3,7 +3,7 @@ name world_114_101
 width 50
 height 50
 msg
-Modified: 2008-12-17 Rick Tanner
+Modified: 2013-07-22 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_114_100
@@ -13057,11 +13057,11 @@ x 44
 y 49
 elevation -10
 end
-arch brush
+arch beach
 x 45
 elevation 14
 end
-arch brush
+arch beach
 x 45
 y 1
 elevation 112
@@ -13306,7 +13306,7 @@ x 45
 y 49
 elevation -10
 end
-arch brush
+arch beach
 x 46
 elevation 161
 end
@@ -13314,10 +13314,6 @@ arch grass_only
 x 46
 y 1
 elevation 1337
-end
-arch tree3
-x 46
-y 1
 end
 arch grass_only
 x 46
@@ -13563,12 +13559,9 @@ x 46
 y 49
 elevation -10
 end
-arch grass_only
+arch beach
 x 47
 elevation 1255
-end
-arch tree3
-x 47
 end
 arch grass_only
 x 47
@@ -13835,12 +13828,9 @@ x 47
 y 49
 elevation 22
 end
-arch grass_only
+arch beach
 x 48
 elevation 1327
-end
-arch tree3
-x 48
 end
 arch grass_only
 x 48
@@ -14099,18 +14089,14 @@ x 48
 y 49
 elevation 884
 end
-arch brush
+arch beach
 x 49
 elevation 155
 end
-arch grass_only
+arch beach
 x 49
 y 1
 elevation 1737
-end
-arch tree3
-x 49
-y 1
 end
 arch grass_only
 x 49
