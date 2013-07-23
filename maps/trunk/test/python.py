@@ -238,11 +238,14 @@ def do_exp():
 		whoami.Say("ok, added %d exp to %s"%(value,skill))
 
 def do_const():
-	whoami.Say("%s => %d"%(Crossfire.DirectionName[Crossfire.Direction.NORTH],Crossfire.Direction.NORTH))
-	whoami.Say("Player type => %d"%Crossfire.Type.PLAYER)
-	whoami.Say("Move Fly High => %d"%Crossfire.Move.FLY_HIGH)
-	whoami.Say("MessageFlag NDI_BLUE => %d"%Crossfire.MessageFlag.NDI_BLUE)
-	whoami.Say("CostFlag F_NO_BARGAIN => %d"%Crossfire.CostFlag.NOBARGAIN)
+	ret = '\n'
+	ret += "%s => %d\n"%(Crossfire.DirectionName[Crossfire.Direction.NORTH],Crossfire.Direction.NORTH)
+	ret += "Player type => %d\n"%Crossfire.Type.PLAYER
+	ret += "Move Fly High => %d\n"%Crossfire.Move.FLY_HIGH
+	ret += "MessageFlag NDI_BLUE => %d\n"%Crossfire.MessageFlag.NDI_BLUE
+	ret += "CostFlag F_NO_BARGAIN => %d\n"%Crossfire.CostFlag.NOBARGAIN
+	ret += "AttackMovement PETMOVE => %d\n"%Crossfire.AttackMovement.PETMOVE
+	whoami.Say(ret)
 
 def dump_move(title, move):
 	moves = [
