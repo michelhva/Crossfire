@@ -10,9 +10,7 @@ def tame_angry_pets():
     Others also have the wrong value for attack_movement which should be PETMOVE for pets.
     """
     
-    #Didn't find a way to access this constant from the Crossfire library. Is there?
-    PETMOVE = 16 
-    
+    PETMOVE = Crossfire.AttackMovement.PETMOVE
     player = Crossfire.WhoIsActivator()
     if player.Type != Crossfire.Type.PLAYER:
         return
@@ -24,8 +22,12 @@ def tame_angry_pets():
     #those pets who are *not* in that list. So check for the monsters in the same map
     #as the player, owned by it, and yet not friendly.
     #Is there a better way than checking all _items_ in the map?
-    for w in range(player.Map.Width):
-        for h in range(player.Map.Height):
+    for w in range(player.X-5, player.X+5):
+        if w<1 or w>range(player.Map.Width):
+            continue
+        for h in range(player.Y-5, player.Y+5):
+            if h<1 or h>range(player.Map.Height):
+                continue
             obj = player.Map.ObjectAt(w,h) 
             while obj != None:
                 if obj.Monster and obj.Owner == player and not obj.Friendly: #angry pet
