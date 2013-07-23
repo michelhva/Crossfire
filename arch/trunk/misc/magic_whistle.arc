@@ -10,5 +10,5 @@ Object magic_whistle_event
 type 116
 subtype 1
 title Python
-slaying /python/items/magic_pets_whistle.py
+slaying /python/items/magic_whistle.py
 end
