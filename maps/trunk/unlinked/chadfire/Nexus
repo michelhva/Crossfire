@@ -4,11 +4,13 @@ region creation
 darkness 3
 width 25
 height 25
+enter_x 12
+enter_y 12
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    9/25/2003
-Modified: 2008-11-16 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2013-07-25 Kevin Zheng
 endmsg
 end
 arch blocked
@@ -2015,7 +2017,7 @@ no_magic 1
 damned 1
 end
 arch teleporter
-slaying /world/wilderness_115_110
+slaying world/wilderness_115_110
 hp 25
 sp 25
 x 12

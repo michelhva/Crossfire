@@ -7,7 +7,7 @@ enter_x 11
 enter_y 9
 msg
 Created:  2010-08-26 Chad
-Modified: 2010-10-01 Chad
+Modified: 2013-07-25 Kevin Zheng
 endmsg
 outdoor 1
 background_music song7
@@ -3620,6 +3620,9 @@ y 35
 end
 arch big_galleon
 name Boat to the Mainland
+slaying /world/world_105_115
+hp 5
+sp 34
 x 9
 y 35
 end
@@ -4282,7 +4285,7 @@ y 26
 end
 arch perm_magic_portal
 name Back to Scorn/Standard Maps
-slaying ../../../../../../world/world_105_115
+slaying /world/world_105_115
 msg
 You return to the standard mapset.
 endmsg
