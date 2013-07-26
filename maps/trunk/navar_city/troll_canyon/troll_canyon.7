@@ -1087,6 +1087,14 @@ arch pstone_2
 x 10
 y 12
 end
+arch magic_mouth
+msg
+Hmm, the treasure seems to be right across the river. But how to get across?
+endmsg
+food 1
+x 10
+y 13
+end
 arch pstone_2
 x 10
 y 13
@@ -1119,7 +1127,8 @@ y 18
 level 120
 end
 arch big_club
-name Large Club
+name strange club
+name_pl Large Clubs
 title of Troll Canyon
 sp -1
 dam 25
@@ -1131,6 +1140,7 @@ material 2064
 value 200
 weight 45000
 magic 2
+identified_name Large Club
 arch quest_advance_pickup
 name quests/TrollCanyon 0-30>40
 unique 1
@@ -1416,6 +1426,7 @@ end
 arch cave5
 x 13
 y 17
+move_block 0
 end
 arch pstone_1
 x 13
@@ -1483,6 +1494,13 @@ end
 arch cave14
 x 14
 y 10
+end
+arch magic_mouth
+msg
+This wall doesn't seem to look right...
+endmsg
+x 14
+y 11
 end
 arch pstone_1
 x 14
@@ -1527,6 +1545,7 @@ end
 arch cave19
 x 14
 y 17
+move_block 0
 end
 arch pstone_2
 x 14
@@ -1599,6 +1618,14 @@ arch cave25
 x 15
 y 10
 end
+arch magic_mouth
+msg
+Ah ha! A secret passage!
+endmsg
+food 1
+x 15
+y 11
+end
 arch pstone_2
 x 15
 y 11
@@ -1606,6 +1633,7 @@ end
 arch cave1
 x 15
 y 11
+move_block 0
 end
 arch cave22
 x 15
@@ -1635,7 +1663,7 @@ arch cave2
 x 15
 y 16
 end
-arch cave_15
+arch pstone_2
 x 15
 y 17
 end
@@ -1698,7 +1726,7 @@ arch cave_15
 x 16
 y 10
 end
-arch cave_15
+arch pstone_2
 x 16
 y 11
 end
@@ -1730,7 +1758,7 @@ arch cave2
 x 16
 y 16
 end
-arch cave_15
+arch pstone_2
 x 16
 y 17
 end
@@ -1793,7 +1821,7 @@ arch cave_15
 x 17
 y 10
 end
-arch cave_15
+arch pstone_2
 x 17
 y 11
 end
@@ -1829,7 +1857,7 @@ arch cave22
 x 17
 y 16
 end
-arch cave_15
+arch pstone_2
 x 17
 y 17
 end
@@ -1891,31 +1919,31 @@ arch cave_15
 x 18
 y 10
 end
-arch cave_15
+arch pstone_2
 x 18
 y 11
 end
-arch cave_15
+arch pstone_2
 x 18
 y 12
 end
-arch cave_15
+arch pstone_2
 x 18
 y 13
 end
-arch cave_15
+arch pstone_2
 x 18
 y 14
 end
-arch cave_15
+arch pstone_2
 x 18
 y 15
 end
-arch cave_15
+arch pstone_2
 x 18
 y 16
 end
-arch cave_15
+arch pstone_2
 x 18
 y 17
 end
