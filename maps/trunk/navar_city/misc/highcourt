@@ -8,7 +8,7 @@ enter_x 10
 enter_y 16
 msg
 Created:  1993-11-01 (john_cater@yahoo.com)
-Modified: 2012-05-12 Nicolas Weeger
+Modified: 2013-07-26 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -780,7 +780,6 @@ end
 arch guildmaster
 name Court Master Kurte
 msg
-
 endmsg
 x 6
 y 11
@@ -891,7 +890,7 @@ arch cobblestones2
 x 7
 y 12
 end
-arch westcwall_3_4
+arch westcwall_2_2_4
 x 7
 y 12
 end
@@ -899,23 +898,11 @@ arch cobblestones2
 x 7
 y 13
 end
-arch westcwall_2_1_1
-x 7
-y 13
-end
 arch cobblestones2
 x 7
 y 14
 end
-arch westcwall_2_1_1
-x 7
-y 14
-end
 arch cobblestones2
-x 7
-y 15
-end
-arch westcwall_1_2
 x 7
 y 15
 end
@@ -1055,9 +1042,7 @@ x 9
 y 2
 end
 arch sign_w
-msg
-Civil Affairs.
-endmsg
+name Civil Affairs
 x 9
 y 2
 end
@@ -1117,10 +1102,6 @@ arch cobblestones2
 x 9
 y 12
 end
-arch westcwall_0
-x 9
-y 12
-end
 arch cobblestones2
 x 9
 y 13
@@ -1172,8 +1153,7 @@ y 2
 end
 arch magic_mouth
 msg
-The High Court must not be in session.  There does not seem to be many people.
-around
+The High Court must not be in session. There does not seem to be many people around.
 endmsg
 x 10
 y 3
@@ -1277,9 +1257,7 @@ x 11
 y 2
 end
 arch sign_e
-msg
-Military Affairs.
-endmsg
+name Military Affairs
 x 11
 y 2
 end
@@ -1336,10 +1314,6 @@ x 11
 y 11
 end
 arch cobblestones2
-x 11
-y 12
-end
-arch westcwall_0
 x 11
 y 12
 end
@@ -1542,7 +1516,7 @@ arch cobblestones2
 x 13
 y 12
 end
-arch westcwall_3_2
+arch westcwall_2_2_1
 x 13
 y 12
 end
@@ -1550,23 +1524,11 @@ arch cobblestones2
 x 13
 y 13
 end
-arch westcwall_2_1_1
-x 13
-y 13
-end
 arch cobblestones2
 x 13
 y 14
 end
-arch westcwall_2_1_1
-x 13
-y 14
-end
 arch cobblestones2
-x 13
-y 15
-end
-arch westcwall_1_2
 x 13
 y 15
 end
