@@ -3,7 +3,7 @@ name world_119_119
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2013-07-26 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_119_118
@@ -8690,8 +8690,7 @@ x 34
 y 36
 end
 arch exit
-slaying /navar_city/troll_canyon/troll_canyon.0
-hp 0
+slaying ../navar_city/troll_canyon/entrance
 sp 21
 x 34
 y 37
@@ -8957,7 +8956,6 @@ x 35
 y 37
 end
 arch mountain_cave
-slaying /navar_city/troll_canyon/troll_canyon.1
 hp 25
 sp 15
 x 35
