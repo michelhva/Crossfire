@@ -8,7 +8,7 @@ enter_x 19
 enter_y 9
 msg
 Created:  2007-02-03 Brad Reilly
-Modified: 2011-11-21 Rick Tanner
+Modified: 2013-07-26 Kevin Zheng
 endmsg
 tile_path_2 troll_canyon.11
 tile_path_3 troll_canyon.9
@@ -840,6 +840,14 @@ arch pstone_2
 x 8
 y 2
 end
+arch sign_e
+msg
+trol den
+we liv here
+endmsg
+x 8
+y 2
+end
 arch pstone_2
 x 8
 y 3
@@ -926,12 +934,18 @@ arch pstone_2
 x 9
 y 1
 end
+arch magic_mouth
+msg
+You get the feeling that you won't find the troll chief down here...
+endmsg
+x 9
+y 2
+end
 arch pstone_2
 x 9
 y 2
 end
-arch chole_1
-name Troll Den
+arch stair_3_down
 slaying /!
 msg
 layoutstyle rogue

@@ -7,7 +7,7 @@ height 20
 enter_y 10
 msg
 Created:  2007-02-03 Brad Reilly
-Modified: 2011-11-21 Rick Tanner
+Modified: 2013-07-26 Kevin Zheng
 endmsg
 tile_path_1 troll_canyon.11
 tile_path_4 troll_canyon.9
@@ -62,16 +62,28 @@ end
 arch cave17
 y 13
 end
-arch cave_15
+arch shallow_sea
 y 14
 end
-arch cave_15
+arch cave25
+y 14
+end
+arch shallow_sea
 y 15
 end
-arch cave_15
+arch cave1
+y 15
+end
+arch shallow_sea
 y 16
 end
-arch cave_15
+arch cave1
+y 16
+end
+arch shallow_sea
+y 17
+end
+arch cave22
 y 17
 end
 arch cave_15
