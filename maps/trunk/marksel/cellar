@@ -8,7 +8,7 @@ enter_x 1
 enter_y 2
 msg
 Created:  1999-01-28 King Zoobus
-Modified: 2012-02-10 Rick Tanner
+Modified: 2013-07-28 Kevin Zheng
 endmsg
 end
 arch dungeon_floor
@@ -170,7 +170,7 @@ y 2
 end
 arch magic_mouth
 msg
-Yuck.  Don't they clean this place out?  Something smells rotten..
+Yuck. Don't they clean this place out? Something smells rotten...
 endmsg
 x 2
 y 3
@@ -204,10 +204,6 @@ x 2
 y 7
 end
 arch dungeon_floor
-x 2
-y 8
-end
-arch liver
 x 2
 y 8
 end
@@ -531,11 +527,11 @@ name corpse, stabbed in back
 x 6
 y 8
 end
-arch loaf
+arch dagger
 x 6
 y 8
 end
-arch dagger
+arch loaf
 x 6
 y 8
 end
