@@ -4,7 +4,7 @@ region marksel
 width 50
 height 50
 msg
-Modified: 2012-08-26 Rick Tanner
+Modified: 2013-07-28 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_120_108
@@ -9209,7 +9209,7 @@ y 39
 elevation 2244
 end
 arch city_tower
-name Sages Tower
+name Sages' Tower
 slaying /marksel/wizard
 hp 10
 sp 16
@@ -9977,14 +9977,10 @@ x 38
 y 37
 elevation 3207
 end
-arch dirtroad_1_1
-x 38
-y 37
-end
 arch keep_sym
 slaying /marksel/keep
-hp 9
-sp 15
+hp 7
+sp 13
 x 38
 y 37
 end
@@ -9993,7 +9989,7 @@ x 38
 y 38
 elevation 4177
 end
-arch dirtroad_2_2_1
+arch dirtroad_1_1
 x 38
 y 38
 end
@@ -10001,6 +9997,10 @@ arch hills
 x 38
 y 39
 elevation 4008
+end
+arch dirtroad_2_2_1
+x 38
+y 39
 end
 arch hills
 x 38
@@ -10258,16 +10258,12 @@ x 39
 y 38
 elevation 4104
 end
-arch dirtroad_2_2_3
-x 39
-y 38
-end
 arch steppe
 x 39
 y 39
 elevation 3609
 end
-arch dirtroad_2_1_1
+arch dirtroad_2_2_3
 x 39
 y 39
 end
@@ -10802,7 +10798,6 @@ hp 24
 sp 58
 x 41
 y 37
-is_floor 0
 end
 arch cobblestones
 x 41
