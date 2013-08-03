@@ -283,7 +283,7 @@ def cmd_balance(argv):
 
         if balance != 0:
             balance /= exchange_rate * 1.0;
-            message = "You have %2f %s in the bank." % (balance, coinName)
+            message = "You have %s %s in the bank." % (str(balance), coinName)
         else:
             message = "Sorry, you have no balance."
 
