@@ -242,12 +242,11 @@ def depositBoxClose():
 
 # ----------------------------------------------------------------------------
 # Print a help message for the player.
-# TODO: Update this to reflect new implementations.
 def cmd_help():
-    message = "You can check your 'balance', 'deposit' or 'withdraw' money, 'exchange' your currency, 'cash' a check, 'transfer' funds, buy 'checks', or find out how much 'profits' this bank has made.\n\nAll transactions are in imperial notes (1 note = 1000 gold). A service charge of %d percent will be placed on all deposits." % service_charge
+    message = "You can check your 'balance', 'deposit' or 'withdraw' your money, 'exchange' currency, 'cash' or buy 'checks', and find out the bank's 'profits'.\n\nAll transactions will be in imperial notes (1 note = 1000 gold) unless otherwise specified. A service charge of %d percent will be placed on all deposits." % service_charge
 
     if activator.DungeonMaster:
-        message += "\n\nAs the DM, you can also 'reset-profits' the profit that the bank has made."
+        message += "\n\nAs the DM, you can also clear the bank's profits by using 'reset-profits'."
 
     whoami.Say(message)
 
@@ -295,7 +294,7 @@ def cmd_balance(argv):
 
 # ----------------------------------------------------------------------------
 # Deposit a certain amount of money or the value of a check.
-# TODO: Reimplement checking.
+# TODO: Look over checking code to make sure everything's okay.
 def cmd_deposit(text):
     if len(text) >= 3:
         coinName = getCoinNameFromArgs(text[2:])
@@ -321,7 +320,7 @@ def cmd_deposit(text):
                     % (amount, coinName, str(amount / fees), coinName,
                             random.choice(thanks_message))
         else:
-            message = "But you don't have enough cash!"
+            message = "But you don't have that much in your inventory!"
 
     elif len(text) == 2:
         if text[1] == 'check':
@@ -514,7 +513,7 @@ def cmd_withdraw(argv):
 
 # ----------------------------------------------------------------------------
 # Exchange money.
-# TODO: Reimplement this.
+# TODO: Clean up code here.
 def cmd_exchange(text):
     if len(text) == 2:
         amount = int(text[1])
@@ -599,7 +598,7 @@ def cmd_checks():
 
 # ----------------------------------------------------------------------------
 # Cash checks.
-# TODO: Reimplement this.
+# TODO: Make sure this works as expected.
 def cmd_cash(text):
     inv = activator.CheckInventory('bankcard')
 
