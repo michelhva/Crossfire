@@ -294,9 +294,35 @@ def cmd_balance(argv):
         cmd_balance(["balance", "silver"])
 
 # ----------------------------------------------------------------------------
-# Deposit money or checks.
-# TODO: Reimplement this.
+# Deposit a certain amount of money or the value of a check.
+# TODO: Reimplement checking.
 def cmd_deposit(text):
+    if len(text) >= 3:
+        coinName = getCoinNameFromArgs(text[2:])
+        exchange_rate = getExchangeRate(coinName)
+        amount = int(text[1])
+
+        if exchange_rate is None:
+            whoami.Say("Hmm... I've never seen that kind of money.")
+            return
+
+        # Don't let the player deposit negative money.
+        if amount <= 0:
+            whoami.Say("Regulations prohibit negative deposits.")
+            return
+
+        # Make sure the player has enough cash on hand.
+        if activator.PayAmount(amount * exchange_rate):
+            bank.deposit(activatorname, int(amount * exchange_rate / fees))
+            bank.deposit(Skuds, int(amount * exchange_rate
+                - amount * exchange_rate / fees))
+
+            message = "%d %s received, %d %s deposited to your account. %s" \
+                    % (amount, coinName, int(amount / fees), coinName,
+                            random.choice(thanks_message))
+        else:
+            message = "But you don't have enough cash!"
+
     if len(text) == 2:
         if text[1] == 'check':
             whoami.Say('x')
@@ -436,39 +462,6 @@ def cmd_deposit(text):
                 message = 'Come back when you have a check to cash.'
                 whoami.Say('z')
 
-    if len(text) >= 3:
-        amount = int(text[1])
-        Type = ''
-        for i in text[2:]:
-            Type += i + ' '
-        Type = Type[:len(Type) - 1]
-
-        if Type[len(Type) - 1] == 's':
-            Type = Type[:len(Type) - 1]
-
-        try:
-
-            exchange_rate = CoinTypes.get(Type.upper())
-            if amount <= 0:
-                message = \
-                    'Usage "deposit <amount> <cointype>\n or deposit <issuer>\'s check"'
-            elif activator.PayAmount(int(amount * exchange_rate)):
-
-                bank.deposit(activatorname, int(amount
-                             * exchange_rate / fees))
-                bank.deposit(Skuds, int(amount * exchange_rate
-                             - amount * exchange_rate / fees))
-
-                message = \
-                    '%d %s received, %d %s deposited to bank account. %s' \
-                    % (amount, Type, int(amount / fees), Type,
-                       random.choice(thanks_message))
-            else:
-                message = 'You would need %d gold' % (amount
-                        * (exchange_rate / 10))
-        except:
-            message = \
-                'Valid CoinTypes are Silver, Gold, Platinum, Jade, Amberium, Imperial Note, 10 Imperial Note, 100 Imperial Note.  \nPlease by sure to specify one of these types.'
     else:
 
         # message = 'Usage "deposit <amount> <cointype>\n or deposit <issuer>\'s check"'
