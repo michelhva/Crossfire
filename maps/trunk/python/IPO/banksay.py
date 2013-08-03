@@ -105,7 +105,12 @@ def strAmount(amount):
     for coinName in commonCoinNames[::-1]:
         value = CoinTypes[coinName]
         if amount >= value:
-            return "%.3f %s" % (float(amount) / value, coinName.lower())
+            # Do not display the decimal point if it is not necessary.
+            realValue = float(amount) / value
+            if realValue != int(realValue):
+                return "%.3f %s" % (realValue, coinName.lower())
+            else:
+                return "%d %s" % (int(realValue), coinName.lower())
 
     # If no suitable coin was found, use the base value (silver).
     return "%d %s" % (amount, "silver")
