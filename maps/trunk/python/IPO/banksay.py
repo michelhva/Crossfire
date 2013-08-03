@@ -211,6 +211,16 @@ def depositBoxClose():
                )
 
 # ----------------------------------------------------------------------------
+# Print a help message for the player.
+def printHelp():
+    message = "You can check your 'balance', 'deposit' or 'withdraw' money, 'exchange' your currency, 'cash' a check, 'transfer' funds, buy 'checks', or find out how much 'profits' this bank has made.\n\nAll transactions are in imperial notes (1 note = 1000 gold). A service charge of %d percent will be placed on all deposits." % service_charge
+
+    if activator.DungeonMaster:
+        message += "\n\nAs the DM, you can also 'zero-balance' the profit that the bank has made."
+
+    whoami.Say(message)
+
+# ----------------------------------------------------------------------------
 # Script execution begins here.
 
 # Find out if the script is being run by a deposit box or an employee.
@@ -223,19 +233,10 @@ if whoami.Name.find('Deposit Box') > -1:
         depositBoxOpen()
 else:
     text = Crossfire.WhatIsMessage().split()
+    message = ""
+
     if text[0] == 'help' or text[0] == 'yes':
-        message = \
-            '''You can:
--deposit,-withdraw,-balance,-exchange, -cash, -transfer, -checks, -profits\
-		
-All transactions are in imperial notes
-(1 : 1000 gold coins). \
-		
-A service charge of %d percent will be placed on all deposits.''' \
-            % service_charge
-        if activator.DungeonMaster == 1:
-            message += \
-                "\nYou can also zero the balance for the bank of skud's profit with the zero-balance command."
+        printHelp()
     elif text[0] == 'zero-balance':
         bank.withdraw(Skuds, bank.getbalance(Skuds))
         message = 'Balance zeroed.'
