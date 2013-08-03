@@ -742,10 +742,15 @@ def cmd_cash(text):
 if whoami.Name.find('Deposit Box') > -1:
     ScriptParm = Crossfire.ScriptParameters()
 
+    # At the moment, the ATMs seem buggy and steal the players' money.
+    # Temporarily disable ATMs until we fix the issue.
+
     if ScriptParm == 'Close':
-        depositBoxClose()
+        #depositBoxClose()
+        pass
     else:
-        depositBoxOpen()
+        whoami.Say("We're sorry, ATMs are out of order.")
+        #depositBoxOpen()
 else:
     text = Crossfire.WhatIsMessage().split()
 
