@@ -317,13 +317,13 @@ def cmd_deposit(text):
             bank.deposit(Skuds, int(amount * exchange_rate
                 - amount * exchange_rate / fees))
 
-            message = "%d %s received, %d %s deposited to your account. %s" \
-                    % (amount, coinName, int(amount / fees), coinName,
+            message = "%d %s received, %s %s deposited to your account. %s" \
+                    % (amount, coinName, str(amount / fees), coinName,
                             random.choice(thanks_message))
         else:
             message = "But you don't have enough cash!"
 
-    if len(text) == 2:
+    elif len(text) == 2:
         if text[1] == 'check':
             whoami.Say('x')
             inv = activator.CheckInventory('bankcard')
@@ -461,12 +461,12 @@ def cmd_deposit(text):
             else:
                 message = 'Come back when you have a check to cash.'
                 whoami.Say('z')
-
+        else:
+            message = "What type of money would you like to deposit?"
     else:
-
-        # message = 'Usage "deposit <amount> <cointype>\n or deposit <issuer>\'s check"'
-
-        pass
+        message = "Usage:\n" \
+                "\tdeposit <amount> <coin type>\n" \
+                "\tdeposit check"
 
     whoami.Say(message)
 
