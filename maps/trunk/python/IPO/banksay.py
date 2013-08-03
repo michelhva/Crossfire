@@ -242,11 +242,12 @@ def depositBoxClose():
 
 # ----------------------------------------------------------------------------
 # Print a help message for the player.
+# TODO: Update this to reflect new implementations.
 def cmd_help():
     message = "You can check your 'balance', 'deposit' or 'withdraw' money, 'exchange' your currency, 'cash' a check, 'transfer' funds, buy 'checks', or find out how much 'profits' this bank has made.\n\nAll transactions are in imperial notes (1 note = 1000 gold). A service charge of %d percent will be placed on all deposits." % service_charge
 
     if activator.DungeonMaster:
-        message += "\n\nAs the DM, you can also 'zero-balance' the profit that the bank has made."
+        message += "\n\nAs the DM, you can also 'reset-profits' the profit that the bank has made."
 
     whoami.Say(message)
 
@@ -259,7 +260,7 @@ def cmd_show_profits():
 
 # ----------------------------------------------------------------------------
 # Erase the profits made by the bank.
-def cmd_zero_balance():
+def cmd_reset_profit():
     if activator.DungeonMaster:
         bank.withdraw(Skuds, bank.getbalance(Skuds))
         message = "Profits erased!"
@@ -747,8 +748,8 @@ else:
         cmd_help()
     elif text[0] == 'profits':
         cmd_show_profits()
-    elif text[0] == 'zero-balance':
-        cmd_zero_balance()
+    elif text[0] == 'reset-profits':
+        cmd_reset_profit()
     elif text[0] == 'balance':
         cmd_balance(text)
     elif text[0] == 'deposit':
