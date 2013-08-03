@@ -40,6 +40,10 @@ CoinTypes = {
     '100 IMPERIAL NOTE': 1000000,
     }
 
+# The names of the most common coin types (must be least to greatest value).
+# Do not include the least valuable coin (currently "SILVER").
+commonCoinNames = ["GOLD", "PLATINUM", "JADE", "AMBERIUM"]
+
 # Associate coin names with their corresponding archetypes.
 ArchType = {
     'SILVER': 'silvercoin',
@@ -92,6 +96,19 @@ def getExchangeRate(coinName):
         return int(CoinTypes.get(coinName.upper()))
     else:
         return None
+
+# ----------------------------------------------------------------------------
+# Return a string representing the given amount in silver.
+def strAmount(amount):
+    # Find the most valuable coin type we can use (amount / value >= 1).
+    # The [::-1] syntax is a hack to reverse 'commonCoinNames'.
+    for coinName in commonCoinNames[::-1]:
+        value = CoinTypes[coinName]
+        if amount >= value:
+            return "%.3f %s" % (float(amount) / value, coinName.lower())
+
+    # If no suitable coin was found, use the base value (silver).
+    return "%d %s" % (amount, "silver")
 
 # ----------------------------------------------------------------------------
 # Called when the deposit box (ATM) is opened.
@@ -253,8 +270,8 @@ def cmd_help():
 # ----------------------------------------------------------------------------
 # Show the profits made by the bank.
 def cmd_show_profits():
-    message = "To date, the Imperial Bank of Skud has made %s " \
-            "platinum in profit." % str(bank.getbalance(Skuds) / 50.0)
+    message = "To date, the Imperial Bank of Skud has made %s in profit." \
+            % strAmount(bank.getbalance(Skuds))
     whoami.Say(message)
 
 # ----------------------------------------------------------------------------
@@ -283,14 +300,13 @@ def cmd_balance(argv):
 
         if balance != 0:
             balance /= exchange_rate * 1.0;
-            message = "You have %s %s in the bank." % (str(balance), coinName)
+            message = "You have %.3f %s in the bank." % (balance, coinName)
         else:
             message = "Sorry, you have no balance."
 
         whoami.Say(message);
     else:
-        # No need to reimplement this command; just recurse.
-        cmd_balance(["balance", "silver"])
+        whoami.Say("You have " + strAmount(balance) + " in the bank.")
 
 # ----------------------------------------------------------------------------
 # Deposit a certain amount of money or the value of a check.
@@ -311,13 +327,13 @@ def cmd_deposit(text):
             return
 
         # Make sure the player has enough cash on hand.
-        if activator.PayAmount(amount * exchange_rate):
-            bank.deposit(activatorname, int(amount * exchange_rate / fees))
-            bank.deposit(Skuds, int(amount * exchange_rate
-                - amount * exchange_rate / fees))
+        actualAmount = amount * exchange_rate
+        if activator.PayAmount(actualAmount):
+            bank.deposit(activatorname, int(actualAmount / fees))
+            bank.deposit(Skuds, actualAmount - int(actualAmount / fees))
 
-            message = "%d %s received, %s %s deposited to your account. %s" \
-                    % (amount, coinName, str(amount / fees), coinName,
+            message = "%d %s received, %s deposited to your account. %s" \
+                    % (amount, coinName, strAmount(int(actualAmount / fees)),
                             random.choice(thanks_message))
         else:
             message = "But you don't have that much in your inventory!"
