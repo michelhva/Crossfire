@@ -228,8 +228,7 @@ def cmd_help():
 # Show the profits made by the bank.
 def cmd_show_profits():
     message = "To date, the Imperial Bank of Skud has made %s " \
-            "pounds sterling in profit." % \
-            str(bank.getbalance(Skuds))
+            "platinum in profit." % str(bank.getbalance(Skuds) / 50.0)
     whoami.Say(message)
 
 # ----------------------------------------------------------------------------
@@ -735,3 +734,5 @@ else:
 
     whoami.Say(message)
     Crossfire.SetReturnValue(1)
+
+    bank.close()
