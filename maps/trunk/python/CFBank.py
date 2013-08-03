@@ -1,16 +1,14 @@
 # CFBank.py -- CFBank class
 # Created by: Joris Bontje <jbontje@suespammers.org>
 
-# CFBank uses the 'shelve' Python library to store persistent data. The shelve
-# is opened for R/W operations by default, but cannot be read from and written
-# to simultaneously (so no 'append' or '+=' operations).
+# CFBank uses the 'shelve' Python library to store persistent data. The
+# shelved dictionary cannot be read and written to concurrently (so no '+=' or
+# 'append' operations).
 #
-# In a past implementation, the bank database was opened with 'writeback' set
-# to 'True' and called sync() after each write operation, but still suffered
-# from strange bank problems.
-#
-# In its current implementation, close() MUST be called to preserve data
-# across runs. This fixed the aforementioned bug for me.
+# The original implementation opened the database with 'writeback' set and
+# called 'sync()' after each write operation. The current implementation does
+# not set 'writeback' and instead requires 'close()' to be called before data
+# is saved. This is the method recommended by the Python reference manual.
 
 import os.path
 import shelve
