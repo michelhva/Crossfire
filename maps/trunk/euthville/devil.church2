@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1993-11-24
-Modified: 2008-10-26 Rick Tanner
+Modified: 2013-08-02 Kevin Zheng
 endmsg
 end
 arch dungeon_floor
@@ -30,7 +30,7 @@ end
 arch dungeon_floor
 y 3
 end
-arch bwall_0
+arch rough_wall_2_1_1
 y 3
 end
 arch dungeon_floor
@@ -475,7 +475,7 @@ end
 arch dungeon_floor
 x 3
 end
-arch bwall_0
+arch rough_wall_2_1_2
 x 3
 end
 arch dungeon_floor

@@ -9,7 +9,7 @@ enter_x 16
 enter_y 17
 msg
 Created:  1993-12-10
-Modified: 2012-04-29 Nicolas Weeger
+Modified: 2013-08-02 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -43,7 +43,7 @@ end
 arch cobblestones2
 y 5
 end
-arch awall_2_1_1
+arch awall_3_2
 y 5
 end
 arch cobblestones2
@@ -141,9 +141,9 @@ x 1
 y 1
 end
 arch ladder_bi_up
-slaying valriel
-hp 12
-sp 6
+slaying devil.church1
+hp 1
+sp 1
 x 1
 y 1
 end
@@ -163,15 +163,11 @@ arch cobblestones2
 x 1
 y 5
 end
-arch dwall_2_2_2
+arch awall_2_1_2
 x 1
 y 5
 end
 arch cobblestones2
-x 1
-y 6
-end
-arch dwall_2_2_1
 x 1
 y 6
 end
@@ -261,15 +257,11 @@ arch cobblestones2
 x 2
 y 5
 end
-arch dwall_3_3
+arch awall_2_1_2
 x 2
 y 5
 end
 arch cobblestones2
-x 2
-y 6
-end
-arch dwall_3_1
 x 2
 y 6
 end
@@ -305,15 +297,7 @@ arch cobblestones2
 x 2
 y 13
 end
-arch dwall_2_2_2
-x 2
-y 13
-end
 arch cobblestones2
-x 2
-y 14
-end
-arch dwall_3_2
 x 2
 y 14
 end
@@ -321,7 +305,7 @@ arch cobblestones2
 x 2
 y 15
 end
-arch dwall_3_2
+arch awall_2_2_2
 x 2
 y 15
 end
@@ -329,7 +313,7 @@ arch cobblestones2
 x 2
 y 16
 end
-arch dwall_2_2_1
+arch awall_1_2
 x 2
 y 16
 end
@@ -346,7 +330,7 @@ arch cobblestones2
 x 2
 y 18
 end
-arch dwall_1_4
+arch awall_1_1
 x 2
 y 18
 end
@@ -354,7 +338,7 @@ arch cobblestones2
 x 2
 y 19
 end
-arch awall_2_1_2
+arch awall_3_1
 x 2
 y 19
 end
@@ -384,7 +368,7 @@ arch cobblestones2
 x 3
 y 5
 end
-arch dwall_3_3
+arch awall_3_3
 x 3
 y 5
 end
@@ -392,7 +376,7 @@ arch cobblestones2
 x 3
 y 6
 end
-arch dwall_4
+arch awall_2_1_1
 x 3
 y 6
 end
@@ -400,7 +384,7 @@ arch cobblestones2
 x 3
 y 7
 end
-arch dwall_2_1_1
+arch awall_2_1_1
 x 3
 y 7
 end
@@ -408,7 +392,7 @@ arch cobblestones2
 x 3
 y 8
 end
-arch dwall_2_1_1
+arch awall_2_1_1
 x 3
 y 8
 end
@@ -416,15 +400,11 @@ arch cobblestones2
 x 3
 y 9
 end
-arch dwall_2_1_1
+arch awall_2_2_1
 x 3
 y 9
 end
 arch cobblestones2
-x 3
-y 10
-end
-arch dwall_2_2_1
 x 3
 y 10
 end
@@ -440,15 +420,7 @@ arch cobblestones2
 x 3
 y 13
 end
-arch dwall_3_3
-x 3
-y 13
-end
 arch cobblestones2
-x 3
-y 14
-end
-arch dwall_4
 x 3
 y 14
 end
@@ -456,7 +428,7 @@ arch cobblestones2
 x 3
 y 15
 end
-arch dwall_3_4
+arch awall_2_1_2
 x 3
 y 15
 end
@@ -464,23 +436,11 @@ arch cobblestones2
 x 3
 y 16
 end
-arch dwall_2_2_4
-x 3
-y 16
-end
 arch cobblestones2
 x 3
 y 17
 end
-arch door_look_2
-x 3
-y 17
-end
 arch cobblestones2
-x 3
-y 18
-end
-arch dwall_2_1_2
 x 3
 y 18
 end
@@ -518,15 +478,11 @@ arch cobblestones2
 x 4
 y 5
 end
-arch dwall_3_3
+arch awall_2_1_2
 x 4
 y 5
 end
 arch cobblestones2
-x 4
-y 6
-end
-arch dwall_3_1
 x 4
 y 6
 end
@@ -542,11 +498,11 @@ arch cobblestones2
 x 4
 y 9
 end
-arch cobblestones2
+arch awall_2_1_2
 x 4
-y 10
+y 9
 end
-arch dwall_2_1_2
+arch cobblestones2
 x 4
 y 10
 end
@@ -562,19 +518,15 @@ arch cobblestones2
 x 4
 y 13
 end
-arch dwall_3_3
-x 4
-y 13
-end
 arch cobblestones2
 x 4
 y 14
 end
-arch dwall_3_1
-x 4
-y 14
-end
 arch cobblestones2
+x 4
+y 15
+end
+arch awall_2_1_2
 x 4
 y 15
 end
@@ -587,10 +539,6 @@ x 4
 y 17
 end
 arch cobblestones2
-x 4
-y 18
-end
-arch dwall_2_1_2
 x 4
 y 18
 end
@@ -628,15 +576,11 @@ arch cobblestones2
 x 5
 y 5
 end
-arch dwall_3_3
+arch awall_2_1_2
 x 5
 y 5
 end
 arch cobblestones2
-x 5
-y 6
-end
-arch dwall_3_1
 x 5
 y 6
 end
@@ -652,11 +596,11 @@ arch cobblestones2
 x 5
 y 9
 end
-arch cobblestones2
+arch awall_2_1_2
 x 5
-y 10
+y 9
 end
-arch dwall_2_1_2
+arch cobblestones2
 x 5
 y 10
 end
@@ -672,19 +616,15 @@ arch cobblestones2
 x 5
 y 13
 end
-arch dwall_3_3
-x 5
-y 13
-end
 arch cobblestones2
 x 5
 y 14
 end
-arch dwall_3_1
-x 5
-y 14
-end
 arch cobblestones2
+x 5
+y 15
+end
+arch awall_2_1_2
 x 5
 y 15
 end
@@ -697,10 +637,6 @@ x 5
 y 17
 end
 arch cobblestones2
-x 5
-y 18
-end
-arch dwall_2_1_2
 x 5
 y 18
 end
@@ -738,15 +674,11 @@ arch cobblestones2
 x 6
 y 5
 end
-arch dwall_3_3
+arch awall_2_1_2
 x 6
 y 5
 end
 arch cobblestones2
-x 6
-y 6
-end
-arch dwall_3_1
 x 6
 y 6
 end
@@ -762,11 +694,11 @@ arch cobblestones2
 x 6
 y 9
 end
-arch cobblestones2
+arch awall_2_1_2
 x 6
-y 10
+y 9
 end
-arch dwall_2_1_2
+arch cobblestones2
 x 6
 y 10
 end
@@ -782,19 +714,15 @@ arch cobblestones2
 x 6
 y 13
 end
-arch dwall_3_3
-x 6
-y 13
-end
 arch cobblestones2
 x 6
 y 14
 end
-arch dwall_3_1
-x 6
-y 14
-end
 arch cobblestones2
+x 6
+y 15
+end
+arch awall_2_1_2
 x 6
 y 15
 end
@@ -810,14 +738,12 @@ arch lich
 x 6
 y 17
 arch blue_key
+name blue key
+name_pl blue keys
 slaying euthville_valriel_key
 end
 end
 arch cobblestones2
-x 6
-y 18
-end
-arch dwall_2_1_2
 x 6
 y 18
 end
@@ -876,15 +802,11 @@ arch cobblestones2
 x 7
 y 5
 end
-arch dwall_3_3
+arch awall_2_1_2
 x 7
 y 5
 end
 arch cobblestones2
-x 7
-y 6
-end
-arch dwall_3_1
 x 7
 y 6
 end
@@ -900,11 +822,11 @@ arch cobblestones2
 x 7
 y 9
 end
-arch cobblestones2
+arch awall_2_1_2
 x 7
-y 10
+y 9
 end
-arch dwall_2_1_2
+arch cobblestones2
 x 7
 y 10
 end
@@ -924,19 +846,15 @@ arch cobblestones2
 x 7
 y 13
 end
-arch dwall_3_3
-x 7
-y 13
-end
 arch cobblestones2
 x 7
 y 14
 end
-arch dwall_3_1
-x 7
-y 14
-end
 arch cobblestones2
+x 7
+y 15
+end
+arch awall_2_1_2
 x 7
 y 15
 end
@@ -949,10 +867,6 @@ x 7
 y 17
 end
 arch cobblestones2
-x 7
-y 18
-end
-arch dwall_2_1_2
 x 7
 y 18
 end
@@ -990,15 +904,11 @@ arch cobblestones2
 x 8
 y 5
 end
-arch dwall_3_3
+arch awall_2_1_2
 x 8
 y 5
 end
 arch cobblestones2
-x 8
-y 6
-end
-arch dwall_3_1
 x 8
 y 6
 end
@@ -1014,11 +924,11 @@ arch cobblestones2
 x 8
 y 9
 end
-arch cobblestones2
+arch awall_2_1_2
 x 8
-y 10
+y 9
 end
-arch dwall_2_1_2
+arch cobblestones2
 x 8
 y 10
 end
@@ -1034,19 +944,15 @@ arch cobblestones2
 x 8
 y 13
 end
-arch dwall_3_3
-x 8
-y 13
-end
 arch cobblestones2
 x 8
 y 14
 end
-arch dwall_3_1
-x 8
-y 14
-end
 arch cobblestones2
+x 8
+y 15
+end
+arch awall_2_1_2
 x 8
 y 15
 end
@@ -1059,10 +965,6 @@ x 8
 y 17
 end
 arch cobblestones2
-x 8
-y 18
-end
-arch dwall_2_1_2
 x 8
 y 18
 end
@@ -1100,15 +1002,11 @@ arch cobblestones2
 x 9
 y 5
 end
-arch dwall_3_3
+arch awall_2_1_2
 x 9
 y 5
 end
 arch cobblestones2
-x 9
-y 6
-end
-arch dwall_3_1
 x 9
 y 6
 end
@@ -1124,11 +1022,11 @@ arch cobblestones2
 x 9
 y 9
 end
-arch cobblestones2
+arch awall_2_1_2
 x 9
-y 10
+y 9
 end
-arch dwall_2_1_2
+arch cobblestones2
 x 9
 y 10
 end
@@ -1144,15 +1042,7 @@ arch cobblestones2
 x 9
 y 13
 end
-arch dwall_3_3
-x 9
-y 13
-end
 arch cobblestones2
-x 9
-y 14
-end
-arch dwall_4
 x 9
 y 14
 end
@@ -1160,7 +1050,7 @@ arch cobblestones2
 x 9
 y 15
 end
-arch dwall_3_2
+arch awall_2_1_2
 x 9
 y 15
 end
@@ -1168,23 +1058,11 @@ arch cobblestones2
 x 9
 y 16
 end
-arch dwall_3_2
-x 9
-y 16
-end
 arch cobblestones2
 x 9
 y 17
 end
-arch dwall_3_2
-x 9
-y 17
-end
 arch cobblestones2
-x 9
-y 18
-end
-arch dwall_3_1
 x 9
 y 18
 end
@@ -1222,7 +1100,7 @@ arch cobblestones2
 x 10
 y 5
 end
-arch dwall_3_3
+arch awall_3_3
 x 10
 y 5
 end
@@ -1230,7 +1108,7 @@ arch cobblestones2
 x 10
 y 6
 end
-arch dwall_2_2_4
+arch awall_1_2
 x 10
 y 6
 end
@@ -1247,7 +1125,7 @@ arch cobblestones2
 x 10
 y 8
 end
-arch dwall_1_1
+arch awall_1_1
 x 10
 y 8
 end
@@ -1255,15 +1133,11 @@ arch cobblestones2
 x 10
 y 9
 end
-arch dwall_2_1_1
+arch awall_2_2_4
 x 10
 y 9
 end
 arch cobblestones2
-x 10
-y 10
-end
-arch dwall_2_2_4
 x 10
 y 10
 end
@@ -1279,15 +1153,7 @@ arch cobblestones2
 x 10
 y 13
 end
-arch dwall_2_2_3
-x 10
-y 13
-end
 arch cobblestones2
-x 10
-y 14
-end
-arch dwall_3_4
 x 10
 y 14
 end
@@ -1295,7 +1161,7 @@ arch cobblestones2
 x 10
 y 15
 end
-arch dwall_3_4
+arch awall_2_2_3
 x 10
 y 15
 end
@@ -1303,7 +1169,7 @@ arch cobblestones2
 x 10
 y 16
 end
-arch dwall_3_4
+arch awall_2_1_1
 x 10
 y 16
 end
@@ -1311,7 +1177,7 @@ arch cobblestones2
 x 10
 y 17
 end
-arch dwall_3_4
+arch awall_2_1_1
 x 10
 y 17
 end
@@ -1319,7 +1185,7 @@ arch cobblestones2
 x 10
 y 18
 end
-arch dwall_2_2_4
+arch awall_2_1_1
 x 10
 y 18
 end
@@ -1327,7 +1193,7 @@ arch cobblestones2
 x 10
 y 19
 end
-arch awall_2_1_2
+arch awall_3_1
 x 10
 y 19
 end
@@ -1353,15 +1219,11 @@ arch cobblestones2
 x 11
 y 4
 end
-arch dwall_2_2_2
-x 11
-y 4
-end
 arch cobblestones2
 x 11
 y 5
 end
-arch dwall_3_1
+arch awall_2_1_2
 x 11
 y 5
 end
@@ -1466,15 +1328,16 @@ arch cobblestones2
 x 12
 y 4
 end
-arch dwall_3_3
+arch gate_closed_2
 x 12
 y 4
+connected 1
 end
 arch cobblestones2
 x 12
 y 5
 end
-arch dwall_3_1
+arch awall_2_1_2
 x 12
 y 5
 end
@@ -1579,15 +1442,16 @@ arch cobblestones2
 x 13
 y 4
 end
-arch dwall_3_3
+arch gate_closed_2
 x 13
 y 4
+connected 1
 end
 arch cobblestones2
 x 13
 y 5
 end
-arch dwall_3_1
+arch awall_2_1_2
 x 13
 y 5
 end
@@ -1615,7 +1479,7 @@ arch cobblestones2
 x 13
 y 10
 end
-arch dwall_2_2_2
+arch awall_2_2_2
 x 13
 y 10
 end
@@ -1623,7 +1487,7 @@ arch cobblestones2
 x 13
 y 11
 end
-arch dwall_2_1_1
+arch awall_2_1_1
 x 13
 y 11
 end
@@ -1631,7 +1495,7 @@ arch cobblestones2
 x 13
 y 12
 end
-arch dwall_2_1_1
+arch awall_2_1_1
 x 13
 y 12
 end
@@ -1639,7 +1503,7 @@ arch cobblestones2
 x 13
 y 13
 end
-arch dwall_2_1_1
+arch awall_2_1_1
 x 13
 y 13
 end
@@ -1647,7 +1511,7 @@ arch cobblestones2
 x 13
 y 14
 end
-arch dwall_2_1_1
+arch awall_2_1_1
 x 13
 y 14
 end
@@ -1655,7 +1519,7 @@ arch cobblestones2
 x 13
 y 15
 end
-arch dwall_2_2_1
+arch awall_2_2_1
 x 13
 y 15
 end
@@ -1697,17 +1561,7 @@ arch cobblestones2
 x 14
 y 3
 end
-arch button_handle
-name Even more FUN!
-x 14
-y 3
-connected 1
-end
 arch cobblestones2
-x 14
-y 4
-end
-arch dwall_2_2_3
 x 14
 y 4
 end
@@ -1715,248 +1569,232 @@ arch cobblestones2
 x 14
 y 5
 end
-arch dwall_2_2_4
+arch awall_2_1_2
 x 14
 y 5
 end
 arch cobblestones2
 x 14
 y 6
+end
+arch cobblestones2
+x 14
+y 7
+end
+arch cobblestones2
+x 14
+y 8
+end
+arch cobblestones2
+x 14
+y 9
+end
+arch cobblestones2
+x 14
+y 10
+end
+arch awall_2_1_2
+x 14
+y 10
+end
+arch cobblestones2
+x 14
+y 11
+end
+arch beholder
+x 14
+y 11
+end
+arch cobblestones2
+x 14
+y 12
+end
+arch cobblestones2
+x 14
+y 13
+end
+arch cobblestones2
+x 14
+y 14
+end
+arch beholder
+x 14
+y 14
+end
+arch cobblestones2
+x 14
+y 15
+end
+arch awall_2_1_2
+x 14
+y 15
+end
+arch cobblestones2
+x 14
+y 16
+end
+arch cobblestones2
+x 14
+y 17
+end
+arch cobblestones2
+x 14
+y 18
+end
+arch cobblestones2
+x 14
+y 19
+end
+arch awall_2_1_2
+x 14
+y 19
+end
+arch cobblestones2
+x 15
+end
+arch awall_2_1_2
+x 15
+end
+arch cobblestones2
+x 15
+y 1
+end
+arch cobblestones2
+x 15
+y 2
+end
+arch cobblestones2
+x 15
+y 3
+end
+arch cobblestones2
+x 15
+y 4
+end
+arch cobblestones2
+x 15
+y 5
+end
+arch awall_1_3
+x 15
+y 5
+end
+arch cobblestones2
+x 15
+y 6
+end
+arch cobblestones2
+x 15
+y 7
+end
+arch cobblestones2
+x 15
+y 8
+end
+arch cobblestones2
+x 15
+y 9
+end
+arch cobblestones2
+x 15
+y 10
+end
+arch awall_1_3
+x 15
+y 10
+end
+arch cobblestones2
+x 15
+y 11
+end
+arch cobblestones2
+x 15
+y 12
+end
+arch beholder
+x 15
+y 12
+end
+arch cobblestones2
+x 15
+y 13
+end
+arch beholder
+x 15
+y 13
+end
+arch cobblestones2
+x 15
+y 14
+end
+arch cobblestones2
+x 15
+y 15
+end
+arch awall_2_1_2
+x 15
+y 15
+end
+arch cobblestones2
+x 15
+y 16
+end
+arch cobblestones2
+x 15
+y 17
+end
+arch cobblestones2
+x 15
+y 18
+end
+arch cobblestones2
+x 15
+y 19
+end
+arch awall_2_1_2
+x 15
+y 19
+end
+arch cobblestones2
+x 16
+end
+arch awall_2_1_2
+x 16
+end
+arch cobblestones2
+x 16
+y 1
+end
+arch cobblestones2
+x 16
+y 2
+end
+arch cobblestones2
+x 16
+y 3
+end
+arch cobblestones2
+x 16
+y 4
+end
+arch cobblestones2
+x 16
+y 5
+end
+arch igate_open_1
+x 16
+y 5
+connected 1
 end
 arch locked_blue_door1
 slaying euthville_valriel_key
-x 14
-y 6
-end
-arch cobblestones2
-x 14
-y 7
-end
-arch cobblestones2
-x 14
-y 8
-end
-arch cobblestones2
-x 14
-y 9
-end
-arch cobblestones2
-x 14
-y 10
-end
-arch dwall_2_1_2
-x 14
-y 10
-end
-arch cobblestones2
-x 14
-y 11
-end
-arch beholder
-x 14
-y 11
-end
-arch cobblestones2
-x 14
-y 12
-end
-arch cobblestones2
-x 14
-y 13
-end
-arch cobblestones2
-x 14
-y 14
-end
-arch beholder
-x 14
-y 14
-end
-arch cobblestones2
-x 14
-y 15
-end
-arch dwall_2_1_2
-x 14
-y 15
-end
-arch cobblestones2
-x 14
-y 16
-end
-arch cobblestones2
-x 14
-y 17
-end
-arch cobblestones2
-x 14
-y 18
-end
-arch cobblestones2
-x 14
-y 19
-end
-arch awall_2_1_2
-x 14
-y 19
-end
-arch cobblestones2
-x 15
-end
-arch awall_2_1_2
-x 15
-end
-arch cobblestones2
-x 15
-y 1
-end
-arch cobblestones2
-x 15
-y 2
-end
-arch cobblestones2
-x 15
-y 3
-end
-arch cobblestones2
-x 15
-y 4
-end
-arch gate_open_1
-x 15
-y 4
-speed 0.500000
-value 1
-connected 1
-end
-arch cobblestones2
-x 15
-y 5
-end
-arch cobblestones2
-x 15
-y 6
-end
-arch locked_blue_door1
-slaying euthville_valriel_key
-x 15
-y 6
-end
-arch cobblestones2
-x 15
-y 7
-end
-arch cobblestones2
-x 15
-y 8
-end
-arch cobblestones2
-x 15
-y 9
-end
-arch cobblestones2
-x 15
-y 10
-end
-arch dwall_1_3
-x 15
-y 10
-end
-arch cobblestones2
-x 15
-y 11
-end
-arch cobblestones2
-x 15
-y 12
-end
-arch beholder
-x 15
-y 12
-end
-arch cobblestones2
-x 15
-y 13
-end
-arch beholder
-x 15
-y 13
-end
-arch cobblestones2
-x 15
-y 14
-end
-arch cobblestones2
-x 15
-y 15
-end
-arch dwall_2_1_2
-x 15
-y 15
-end
-arch cobblestones2
-x 15
-y 16
-end
-arch cobblestones2
-x 15
-y 17
-end
-arch cobblestones2
-x 15
-y 18
-end
-arch cobblestones2
-x 15
-y 19
-end
-arch awall_2_1_2
-x 15
-y 19
-end
-arch cobblestones2
-x 16
-end
-arch awall_2_1_2
-x 16
-end
-arch cobblestones2
-x 16
-y 1
-end
-arch cobblestones2
-x 16
-y 2
-end
-arch cobblestones2
-x 16
-y 3
-end
-arch cobblestones2
-x 16
-y 4
-end
-arch gate_open_1
-x 16
-y 4
-speed 0.500000
-value 1
-connected 1
-end
-arch cobblestones2
-x 16
-y 5
-end
-arch skull
+msg
+There is a blue keyhole on this door. Perhaps you should look around for a key?
+endmsg
 x 16
 y 5
 end
 arch cobblestones2
-x 16
-y 6
-end
-arch locked_blue_door1
-slaying euthville_valriel_key
 x 16
 y 6
 end
@@ -2016,7 +1854,7 @@ arch cobblestones2
 x 16
 y 15
 end
-arch dwall_2_1_2
+arch awall_2_1_2
 x 16
 y 15
 end
@@ -2062,23 +1900,15 @@ arch cobblestones2
 x 17
 y 4
 end
-arch gate_open_1
-x 17
-y 4
-speed 0.500000
-value 1
-connected 1
-end
 arch cobblestones2
 x 17
 y 5
 end
-arch cobblestones2
+arch awall_1_4
 x 17
-y 6
+y 5
 end
-arch locked_blue_door1
-slaying euthville_valriel_key
+arch cobblestones2
 x 17
 y 6
 end
@@ -2102,7 +1932,7 @@ arch cobblestones2
 x 17
 y 10
 end
-arch dwall_1_4
+arch awall_1_4
 x 17
 y 10
 end
@@ -2126,7 +1956,7 @@ arch cobblestones2
 x 17
 y 15
 end
-arch dwall_2_1_2
+arch awall_2_1_2
 x 17
 y 15
 end
@@ -2159,42 +1989,34 @@ end
 arch cobblestones2
 x 18
 y 1
-end
-arch cobblestones2
-x 18
-y 2
-end
-arch cobblestones2
-x 18
-y 3
-end
-arch cobblestones2
-x 18
-y 4
-end
-arch gate_open_1
-x 18
-y 4
-speed 0.500000
-value 1
-connected 1
-end
-arch cobblestones2
-x 18
-y 5
 end
 arch button_handle
-name Gat Control
+name Even more FUN!
 x 18
-y 5
+y 1
 connected 1
 end
 arch cobblestones2
 x 18
-y 6
+y 2
 end
-arch locked_blue_door1
-slaying euthville_valriel_key
+arch cobblestones2
+x 18
+y 3
+end
+arch cobblestones2
+x 18
+y 4
+end
+arch cobblestones2
+x 18
+y 5
+end
+arch awall_2_1_2
+x 18
+y 5
+end
+arch cobblestones2
 x 18
 y 6
 end
@@ -2218,7 +2040,7 @@ arch cobblestones2
 x 18
 y 10
 end
-arch dwall_1_3
+arch awall_2_1_2
 x 18
 y 10
 end
@@ -2254,7 +2076,7 @@ arch cobblestones2
 x 18
 y 15
 end
-arch dwall_1_3
+arch awall_2_1_2
 x 18
 y 15
 end
@@ -2320,7 +2142,7 @@ arch cobblestones2
 x 19
 y 5
 end
-arch awall_2_1_1
+arch awall_3_4
 x 19
 y 5
 end
@@ -2360,7 +2182,7 @@ arch cobblestones2
 x 19
 y 10
 end
-arch awall_2_1_1
+arch awall_3_4
 x 19
 y 10
 end
@@ -2400,7 +2222,7 @@ arch cobblestones2
 x 19
 y 15
 end
-arch awall_2_1_1
+arch awall_3_4
 x 19
 y 15
 end

@@ -1,632 +1,602 @@
 arch map
 name Valriel's Church
 region euthville
-width 20
-height 20
+width 18
+height 17
 msg
 Created:  2012-04-29 Nicolas Weeger
-Modified: 2012-05-04 Rick Tanner
+Modified: 2013-08-02 Kevin Zheng
 endmsg
 end
-arch desert
-end
-arch desert
-y 1
-end
-arch desert
-y 2
-end
-arch desert
-y 3
-end
-arch desert
-y 4
-end
-arch desert
-y 5
-end
-arch desert
-y 6
-end
-arch desert
-y 7
-end
-arch desert
-y 8
-end
-arch desert
-y 9
-end
-arch desert
-y 10
-end
-arch desert
-y 11
-end
-arch desert
-y 12
-end
-arch desert
-y 13
-end
-arch desert
-y 14
-end
-arch desert
-y 15
-end
-arch pstone_2
-y 16
-end
-arch pstone_2
-y 17
-end
-arch pstone_2
-y 18
-end
-arch pstone_2
-y 19
-end
-arch desert
-x 1
-end
 arch flagstone
-x 1
-y 1
 end
 arch dwall_2_2_2
-x 1
+end
+arch flagstone
+y 1
+end
+arch dwall_2_1_1
 y 1
 end
 arch flagstone
-x 1
 y 2
 end
 arch dwall_2_1_1
-x 1
 y 2
 end
 arch flagstone
-x 1
 y 3
 end
 arch dwall_2_1_1
-x 1
 y 3
 end
 arch flagstone
-x 1
 y 4
-end
-arch dwall_2_1_1
-x 1
-y 4
-end
-arch flagstone
-x 1
-y 5
-end
-arch dwall_2_1_1
-x 1
-y 5
-end
-arch flagstone
-x 1
-y 6
 end
 arch dwall_3_2
-x 1
+y 4
+end
+arch flagstone
+y 5
+end
+arch dwall_2_1_1
+y 5
+end
+arch flagstone
+y 6
+end
+arch dwall_2_1_1
 y 6
 end
 arch flagstone
-x 1
 y 7
 end
 arch dwall_2_1_1
-x 1
 y 7
 end
 arch flagstone
-x 1
 y 8
 end
 arch dwall_2_1_1
-x 1
 y 8
 end
 arch flagstone
-x 1
 y 9
 end
 arch dwall_2_1_1
-x 1
 y 9
 end
 arch flagstone
-x 1
 y 10
 end
 arch dwall_2_1_1
-x 1
 y 10
 end
 arch flagstone
-x 1
 y 11
 end
 arch dwall_2_1_1
-x 1
 y 11
 end
 arch flagstone
-x 1
 y 12
 end
 arch dwall_2_1_1
-x 1
 y 12
 end
 arch flagstone
-x 1
 y 13
 end
 arch dwall_2_1_1
-x 1
 y 13
 end
 arch flagstone
-x 1
 y 14
 end
 arch dwall_2_1_1
-x 1
 y 14
 end
 arch flagstone
-x 1
 y 15
 end
 arch dwall_2_1_1
-x 1
 y 15
 end
 arch flagstone
-x 1
 y 16
-end
-arch dwall_2_1_1
-x 1
-y 16
-end
-arch flagstone
-x 1
-y 17
 end
 arch dwall_2_2_1
-x 1
-y 17
-end
-arch grass
-x 1
-y 18
-end
-arch pstone_2
-x 1
-y 19
-end
-arch desert
-x 2
+y 16
 end
 arch flagstone
-x 2
-y 1
+x 1
 end
 arch dwall_2_1_2
-x 2
-y 1
+x 1
 end
 arch flagstone
-x 2
-y 2
+x 1
+y 1
 end
 arch stair2_down
-name Valriel's church, catacombs
 slaying devil.church1
 hp 1
 sp 14
-x 2
-y 2
-end
-arch flagstone
-x 2
-y 3
-end
-arch flagstone
-x 2
-y 4
-end
-arch flagstone
-x 2
-y 5
-end
-arch flagstone
-x 2
-y 6
-end
-arch dwall_2_1_2
-x 2
-y 6
-end
-arch flagstone
-x 2
-y 7
-end
-arch flagstone
-x 2
-y 8
-end
-arch flagstone
-x 2
-y 9
-end
-arch flagstone
-x 2
-y 10
-end
-arch flagstone
-x 2
-y 11
-end
-arch flagstone
-x 2
-y 12
-end
-arch flagstone
-x 2
-y 13
-end
-arch flagstone
-x 2
-y 14
-end
-arch flagstone
-x 2
-y 15
-end
-arch flagstone
-x 2
-y 16
-end
-arch flagstone
-x 2
-y 17
-end
-arch dwall_2_1_2
-x 2
-y 17
-end
-arch grass
-x 2
-y 18
-end
-arch pstone_2
-x 2
-y 19
-end
-arch desert
-x 3
-end
-arch flagstone
-x 3
-y 1
-end
-arch dwall_2_1_2
-x 3
+x 1
 y 1
 end
 arch flagstone
-x 3
+x 1
 y 2
 end
 arch flagstone
-x 3
+x 1
 y 3
 end
 arch flagstone
-x 3
+x 1
+y 4
+end
+arch dwall_2_1_2
+x 1
 y 4
 end
 arch flagstone
-x 3
+x 1
 y 5
-end
-arch flagstone
-x 3
-y 6
-end
-arch dwall_2_1_2
-x 3
-y 6
-end
-arch flagstone
-x 3
-y 7
-end
-arch flagstone
-x 3
-y 8
 end
 arch brazier
-x 3
-y 8
-end
-arch flagstone
-x 3
-y 9
-end
-arch flagstone
-x 3
-y 10
-end
-arch flagstone
-x 3
-y 11
-end
-arch flagstone
-x 3
-y 12
-end
-arch flagstone
-x 3
-y 13
-end
-arch flagstone
-x 3
-y 14
-end
-arch flagstone
-x 3
-y 15
-end
-arch flagstone
-x 3
-y 16
-end
-arch flagstone
-x 3
-y 17
-end
-arch dwall_2_1_2
-x 3
-y 17
-end
-arch grass
-x 3
-y 18
-end
-arch pstone_2
-x 3
-y 19
-end
-arch desert
-x 4
-end
-arch flagstone
-x 4
-y 1
-end
-arch dwall_2_1_2
-x 4
-y 1
-end
-arch flagstone
-x 4
-y 2
-end
-arch flagstone
-x 4
-y 3
-end
-arch flagstone
-x 4
-y 4
-end
-arch flagstone
-x 4
+x 1
 y 5
 end
 arch flagstone
-x 4
-y 6
-end
-arch dwall_2_1_2
-x 4
+x 1
 y 6
 end
 arch flagstone
-x 4
+x 1
 y 7
 end
 arch flagstone
-x 4
+x 1
 y 8
 end
 arch flagstone
-x 4
+x 1
 y 9
 end
 arch flagstone
-x 4
+x 1
 y 10
-end
-arch flagstone
-x 4
-y 11
-end
-arch flagstone
-x 4
-y 12
 end
 arch brazier
-x 4
-y 12
-end
-arch flagstone
-x 4
-y 13
-end
-arch flagstone
-x 4
-y 14
-end
-arch flagstone
-x 4
-y 15
-end
-arch flagstone
-x 4
-y 16
-end
-arch flagstone
-x 4
-y 17
-end
-arch dwall_2_1_2
-x 4
-y 17
-end
-arch grass
-x 4
-y 18
-end
-arch pstone_2
-x 4
-y 19
-end
-arch desert
-x 5
-end
-arch flagstone
-x 5
-y 1
-end
-arch dwall_2_1_2
-x 5
-y 1
-end
-arch flagstone
-x 5
-y 2
-end
-arch flagstone
-x 5
-y 3
-end
-arch flagstone
-x 5
-y 4
-end
-arch flagstone
-x 5
-y 5
-end
-arch flagstone
-x 5
-y 6
-end
-arch dwall_2_1_2
-x 5
-y 6
-end
-arch flagstone
-x 5
-y 7
-end
-arch flagstone
-x 5
-y 8
-end
-arch flagstone
-x 5
-y 9
-end
-arch flagstone
-x 5
+x 1
 y 10
 end
 arch flagstone
-x 5
+x 1
 y 11
 end
 arch flagstone
-x 5
+x 1
 y 12
 end
 arch flagstone
-x 5
+x 1
 y 13
 end
 arch flagstone
-x 5
+x 1
 y 14
 end
 arch flagstone
-x 5
+x 1
+y 15
+end
+arch brazier
+x 1
 y 15
 end
 arch flagstone
-x 5
+x 1
+y 16
+end
+arch dwall_2_1_2
+x 1
+y 16
+end
+arch flagstone
+x 2
+end
+arch dwall_2_1_2
+x 2
+end
+arch flagstone
+x 2
+y 1
+end
+arch flagstone
+x 2
+y 2
+end
+arch flagstone
+x 2
+y 3
+end
+arch flagstone
+x 2
+y 4
+end
+arch dwall_2_1_2
+x 2
+y 4
+end
+arch flagstone
+x 2
+y 5
+end
+arch flagstone
+x 2
+y 6
+end
+arch chair_1.3
+x 2
+y 6
+end
+arch flagstone
+x 2
+y 7
+end
+arch flagstone
+x 2
+y 8
+end
+arch chair_1.3
+x 2
+y 8
+end
+arch flagstone
+x 2
+y 9
+end
+arch flagstone
+x 2
+y 10
+end
+arch chair_1.3
+x 2
+y 10
+end
+arch flagstone
+x 2
+y 11
+end
+arch flagstone
+x 2
+y 12
+end
+arch chair_1.3
+x 2
+y 12
+end
+arch flagstone
+x 2
+y 13
+end
+arch flagstone
+x 2
+y 14
+end
+arch flagstone
+x 2
+y 15
+end
+arch flagstone
+x 2
+y 16
+end
+arch dwall_2_1_2
+x 2
+y 16
+end
+arch flagstone
+x 3
+end
+arch dwall_2_1_2
+x 3
+end
+arch flagstone
+x 3
+y 1
+end
+arch flagstone
+x 3
+y 2
+end
+arch flagstone
+x 3
+y 3
+end
+arch flagstone
+x 3
+y 4
+end
+arch dwall_2_1_2
+x 3
+y 4
+end
+arch flagstone
+x 3
+y 5
+end
+arch flagstone
+x 3
+y 6
+end
+arch chair_1.3
+x 3
+y 6
+end
+arch flagstone
+x 3
+y 7
+end
+arch flagstone
+x 3
+y 8
+end
+arch chair_1.3
+x 3
+y 8
+end
+arch flagstone
+x 3
+y 9
+end
+arch flagstone
+x 3
+y 10
+end
+arch chair_1.3
+x 3
+y 10
+end
+arch flagstone
+x 3
+y 11
+end
+arch flagstone
+x 3
+y 12
+end
+arch chair_1.3
+x 3
+y 12
+end
+arch flagstone
+x 3
+y 13
+end
+arch flagstone
+x 3
+y 14
+end
+arch flagstone
+x 3
+y 15
+end
+arch flagstone
+x 3
+y 16
+end
+arch dwall_2_1_2
+x 3
+y 16
+end
+arch flagstone
+x 4
+end
+arch dwall_2_1_2
+x 4
+end
+arch flagstone
+x 4
+y 1
+end
+arch flagstone
+x 4
+y 2
+end
+arch flagstone
+x 4
+y 3
+end
+arch flagstone
+x 4
+y 4
+end
+arch dwall_2_1_2
+x 4
+y 4
+end
+arch flagstone
+x 4
+y 5
+end
+arch flagstone
+x 4
+y 6
+end
+arch chair_1.3
+x 4
+y 6
+end
+arch flagstone
+x 4
+y 7
+end
+arch flagstone
+x 4
+y 8
+end
+arch chair_1.3
+x 4
+y 8
+end
+arch flagstone
+x 4
+y 9
+end
+arch flagstone
+x 4
+y 10
+end
+arch chair_1.3
+x 4
+y 10
+end
+arch flagstone
+x 4
+y 11
+end
+arch flagstone
+x 4
+y 12
+end
+arch chair_1.3
+x 4
+y 12
+end
+arch flagstone
+x 4
+y 13
+end
+arch flagstone
+x 4
+y 14
+end
+arch flagstone
+x 4
+y 15
+end
+arch flagstone
+x 4
+y 16
+end
+arch dwall_2_1_2
+x 4
 y 16
 end
 arch flagstone
 x 5
-y 17
-end
-arch dwall_2_1_2
-x 5
-y 17
-end
-arch grass
-x 5
-y 18
-end
-arch pstone_2
-x 5
-y 19
-end
-arch desert
-x 6
-end
-arch flagstone
-x 6
-y 1
 end
 arch dwall_3_3
-x 6
+x 5
+end
+arch flagstone
+x 5
+y 1
+end
+arch dwall_1_2
+x 5
 y 1
 end
 arch flagstone
-x 6
+x 5
 y 2
-end
-arch dwall_2_1_1
-x 6
-y 2
-end
-arch flagstone
-x 6
-y 3
-end
-arch dwall_1_2
-x 6
-y 3
-end
-arch flagstone
-x 6
-y 4
 end
 arch locked_white_door2
 slaying euthville_valriel
+x 5
+y 2
+end
+arch flagstone
+x 5
+y 3
+end
+arch dwall_1_1
+x 5
+y 3
+end
+arch flagstone
+x 5
+y 4
+end
+arch dwall_2_2_4
+x 5
+y 4
+end
+arch flagstone
+x 5
+y 5
+end
+arch flagstone
+x 5
+y 6
+end
+arch flagstone
+x 5
+y 7
+end
+arch flagstone
+x 5
+y 8
+end
+arch flagstone
+x 5
+y 9
+end
+arch flagstone
+x 5
+y 10
+end
+arch flagstone
+x 5
+y 11
+end
+arch flagstone
+x 5
+y 12
+end
+arch flagstone
+x 5
+y 13
+end
+arch flagstone
+x 5
+y 14
+end
+arch flagstone
+x 5
+y 15
+end
+arch flagstone
+x 5
+y 16
+end
+arch dwall_2_1_2
+x 5
+y 16
+end
+arch flagstone
+x 6
+end
+arch dwall_2_1_2
+x 6
+end
+arch flagstone
+x 6
+y 1
+end
+arch flagstone
+x 6
+y 2
+end
+arch flagstone
+x 6
+y 3
+end
+arch flagstone
 x 6
 y 4
 end
@@ -634,15 +604,11 @@ arch flagstone
 x 6
 y 5
 end
-arch dwall_1_1
-x 6
-y 5
-end
 arch flagstone
 x 6
 y 6
 end
-arch dwall_2_2_4
+arch chair_1.3
 x 6
 y 6
 end
@@ -654,6 +620,10 @@ arch flagstone
 x 6
 y 8
 end
+arch chair_1.3
+x 6
+y 8
+end
 arch flagstone
 x 6
 y 9
@@ -662,15 +632,19 @@ arch flagstone
 x 6
 y 10
 end
+arch chair_1.3
+x 6
+y 10
+end
 arch flagstone
 x 6
 y 11
 end
-arch chair_wv_1.3
-x 6
-y 11
-end
 arch flagstone
+x 6
+y 12
+end
+arch chair_1.3
 x 6
 y 12
 end
@@ -690,30 +664,20 @@ arch flagstone
 x 6
 y 16
 end
-arch flagstone
-x 6
-y 17
-end
 arch dwall_2_1_2
 x 6
-y 17
-end
-arch grass
-x 6
-y 18
-end
-arch pstone_2
-x 6
-y 19
-end
-arch desert
-x 7
+y 16
 end
 arch flagstone
 x 7
-y 1
 end
 arch dwall_2_1_2
+x 7
+end
+arch cwall_mural_end_1_1
+x 7
+end
+arch flagstone
 x 7
 y 1
 end
@@ -722,10 +686,6 @@ x 7
 y 2
 end
 arch flagstone
-x 7
-y 3
-end
-arch brazier
 x 7
 y 3
 end
@@ -740,241 +700,97 @@ end
 arch flagstone
 x 7
 y 6
-end
-arch flagstone
-x 7
-y 7
-end
-arch chair_wv_1.3
-x 7
-y 7
-end
-arch flagstone
-x 7
-y 8
-end
-arch flagstone
-x 7
-y 9
 end
 arch chair_1.3
 x 7
-y 9
-end
-arch flagstone
-x 7
-y 10
-end
-arch flagstone
-x 7
-y 11
-end
-arch flagstone
-x 7
-y 12
-end
-arch flagstone
-x 7
-y 13
-end
-arch chair_wv_1.3
-x 7
-y 13
-end
-arch flagstone
-x 7
-y 14
-end
-arch flagstone
-x 7
-y 15
-end
-arch brazier
-x 7
-y 15
-end
-arch flagstone
-x 7
-y 16
-end
-arch flagstone
-x 7
-y 17
-end
-arch dwall_2_1_2
-x 7
-y 17
-end
-arch grass
-x 7
-y 18
-end
-arch pstone_2
-x 7
-y 19
-end
-arch desert
-x 8
-end
-arch flagstone
-x 8
-y 1
-end
-arch dwall_2_1_2
-x 8
-y 1
-end
-arch cwall_mural_end_1_1
-x 8
-y 1
-end
-arch flagstone
-x 8
-y 2
-end
-arch flagstone
-x 8
-y 3
-end
-arch flagstone
-x 8
-y 4
-end
-arch flagstone
-x 8
-y 5
-end
-arch flagstone
-x 8
 y 6
 end
 arch flagstone
-x 8
+x 7
 y 7
 end
 arch flagstone
-x 8
+x 7
 y 8
 end
-arch dwall_0
-x 8
-y 8
-end
-arch light4
-x 8
+arch chair_1.3
+x 7
 y 8
 end
 arch flagstone
-x 8
+x 7
 y 9
 end
 arch flagstone
-x 8
+x 7
+y 10
+end
+arch chair_1.3
+x 7
 y 10
 end
 arch flagstone
-x 8
-y 11
-end
-arch dwall_0
-x 8
-y 11
-end
-arch light4
-x 8
+x 7
 y 11
 end
 arch flagstone
-x 8
+x 7
+y 12
+end
+arch chair_1.3
+x 7
 y 12
 end
 arch flagstone
-x 8
+x 7
 y 13
 end
 arch flagstone
-x 8
-y 14
-end
-arch dwall_0
-x 8
-y 14
-end
-arch light4
-x 8
+x 7
 y 14
 end
 arch flagstone
-x 8
+x 7
 y 15
 end
 arch flagstone
-x 8
+x 7
+y 16
+end
+arch dwall_1_3
+x 7
 y 16
 end
 arch flagstone
 x 8
-y 17
-end
-arch dwall_1_3
-x 8
-y 17
-end
-arch exit
-slaying ../world/world_105_113
-hp 7
-sp 21
-x 8
-y 18
-end
-arch grass
-x 8
-y 18
-end
-arch pstone_2
-x 8
-y 19
-end
-arch desert
-x 9
-end
-arch flagstone
-x 9
-y 1
 end
 arch dwall_2_1_2
-x 9
-y 1
+x 8
 end
 arch cwall_mural_1_2
-x 9
+x 8
+end
+arch flagstone
+x 8
 y 1
 end
 arch flagstone
-x 9
+x 8
 y 2
 end
-arch flagstone
-x 9
-y 3
-end
-arch flagstone
-x 9
-y 4
-end
 arch altar_valriel
-x 9
-y 4
+x 8
+y 2
 level 120
 end
 arch flagstone
-x 9
-y 5
+x 8
+y 3
 end
 arch a_priest
 name Priest of Valriel
-x 9
-y 5
+x 8
+y 3
 stand_still 1
 arch npc_dialog
 name /euthville/valriel.msg
@@ -996,449 +812,512 @@ end
 end
 end
 arch flagstone
-x 9
+x 8
+y 4
+end
+arch flagstone
+x 8
+y 5
+end
+arch flagstone
+x 8
+y 6
+end
+arch chair_1.3
+x 8
 y 6
 end
 arch flagstone
-x 9
+x 8
 y 7
 end
 arch flagstone
-x 9
+x 8
+y 8
+end
+arch chair_1.3
+x 8
 y 8
 end
 arch flagstone
-x 9
+x 8
 y 9
 end
 arch flagstone
-x 9
+x 8
+y 10
+end
+arch chair_1.3
+x 8
 y 10
 end
 arch flagstone
-x 9
-y 11
-end
-arch chair_1.3
-x 9
+x 8
 y 11
 end
 arch flagstone
-x 9
+x 8
+y 12
+end
+arch chair_1.3
+x 8
 y 12
 end
 arch flagstone
-x 9
+x 8
 y 13
 end
 arch flagstone
-x 9
+x 8
 y 14
 end
-arch flagstone
-x 9
+arch pedestal
+x 8
 y 15
+invisible 1
+connected 10
 end
 arch flagstone
-x 9
-y 16
-end
-arch flagstone
-x 9
-y 17
+x 8
+y 15
 end
 arch exit
 slaying ../world/world_105_113
 hp 7
 sp 21
-x 9
-y 18
-end
-arch grass
-x 9
-y 18
-end
-arch grass
-x 9
-y 19
-end
-arch desert
-x 10
+x 8
+y 16
 end
 arch flagstone
-x 10
-y 1
+x 8
+y 16
+end
+arch odoorn2_closed_1
+x 8
+y 16
+connected 10
+end
+arch flagstone
+x 9
 end
 arch dwall_2_1_2
-x 10
-y 1
+x 9
 end
 arch cwall_mural_1_3
-x 10
+x 9
+end
+arch flagstone
+x 9
 y 1
 end
 arch flagstone
-x 10
+x 9
 y 2
 end
-arch flagstone
-x 10
-y 3
-end
-arch flagstone
-x 10
-y 4
-end
 arch altar_valriel
-x 10
-y 4
+x 9
+y 2
 level 120
 end
 arch flagstone
-x 10
+x 9
+y 3
+end
+arch flagstone
+x 9
+y 4
+end
+arch flagstone
+x 9
 y 5
 end
 arch flagstone
-x 10
+x 9
+y 6
+end
+arch chair_1.3
+x 9
 y 6
 end
 arch flagstone
-x 10
+x 9
 y 7
 end
 arch flagstone
-x 10
+x 9
+y 8
+end
+arch chair_1.3
+x 9
 y 8
 end
 arch flagstone
-x 10
+x 9
 y 9
 end
 arch flagstone
-x 10
+x 9
+y 10
+end
+arch chair_1.3
+x 9
 y 10
 end
 arch flagstone
-x 10
+x 9
 y 11
 end
 arch flagstone
-x 10
+x 9
+y 12
+end
+arch chair_1.3
+x 9
 y 12
 end
 arch flagstone
-x 10
+x 9
 y 13
 end
 arch flagstone
-x 10
+x 9
 y 14
 end
-arch flagstone
-x 10
+arch pedestal
+x 9
 y 15
+invisible 1
+connected 10
 end
 arch flagstone
-x 10
-y 16
-end
-arch flagstone
-x 10
-y 17
+x 9
+y 15
 end
 arch exit
 slaying ../world/world_105_113
 hp 7
 sp 21
-x 10
-y 18
-end
-arch grass
-x 10
-y 18
-end
-arch grass
-x 10
-y 19
-end
-arch desert
-x 11
+x 9
+y 16
 end
 arch flagstone
-x 11
-y 1
+x 9
+y 16
+end
+arch odoorn2_closed_1
+x 9
+y 16
+connected 10
+end
+arch flagstone
+x 10
 end
 arch dwall_2_1_2
-x 11
-y 1
+x 10
 end
 arch cwall_mural_end_1_2
-x 11
+x 10
+end
+arch flagstone
+x 10
 y 1
 end
 arch flagstone
-x 11
+x 10
 y 2
 end
 arch flagstone
-x 11
+x 10
 y 3
 end
 arch flagstone
-x 11
+x 10
 y 4
 end
 arch flagstone
-x 11
+x 10
 y 5
 end
 arch flagstone
-x 11
+x 10
+y 6
+end
+arch chair_1.3
+x 10
 y 6
 end
 arch flagstone
-x 11
+x 10
 y 7
 end
 arch flagstone
-x 11
+x 10
 y 8
 end
-arch dwall_0
-x 11
-y 8
-end
-arch light4
-x 11
+arch chair_1.3
+x 10
 y 8
 end
 arch flagstone
-x 11
+x 10
 y 9
 end
 arch flagstone
-x 11
+x 10
+y 10
+end
+arch chair_1.3
+x 10
 y 10
 end
 arch flagstone
-x 11
-y 11
-end
-arch dwall_0
-x 11
-y 11
-end
-arch light4
-x 11
+x 10
 y 11
 end
 arch flagstone
-x 11
+x 10
+y 12
+end
+arch chair_1.3
+x 10
 y 12
 end
 arch flagstone
-x 11
+x 10
 y 13
 end
 arch flagstone
-x 11
-y 14
-end
-arch dwall_0
-x 11
-y 14
-end
-arch light4
-x 11
+x 10
 y 14
 end
 arch flagstone
-x 11
+x 10
 y 15
 end
 arch flagstone
-x 11
+x 10
 y 16
-end
-arch flagstone
-x 11
-y 17
 end
 arch dwall_1_4
-x 11
-y 17
-end
-arch exit
-slaying ../world/world_105_113
-hp 7
-sp 21
-x 11
-y 18
-end
-arch grass
-x 11
-y 18
-end
-arch desert
-x 11
-y 19
-end
-arch desert
-x 12
+x 10
+y 16
 end
 arch flagstone
-x 12
-y 1
+x 11
 end
 arch dwall_2_1_2
-x 12
+x 11
+end
+arch flagstone
+x 11
 y 1
 end
 arch flagstone
-x 12
+x 11
 y 2
 end
 arch flagstone
-x 12
-y 3
-end
-arch brazier
-x 12
+x 11
 y 3
 end
 arch flagstone
-x 12
+x 11
 y 4
 end
 arch flagstone
-x 12
+x 11
 y 5
 end
 arch flagstone
-x 12
+x 11
+y 6
+end
+arch chair_1.3
+x 11
 y 6
 end
 arch flagstone
-x 12
-y 7
-end
-arch chair_1.3
-x 12
+x 11
 y 7
 end
 arch flagstone
-x 12
+x 11
+y 8
+end
+arch chair_1.3
+x 11
 y 8
 end
 arch flagstone
-x 12
-y 9
-end
-arch chair_1.3
-x 12
+x 11
 y 9
 end
 arch flagstone
-x 12
+x 11
+y 10
+end
+arch chair_1.3
+x 11
 y 10
 end
 arch flagstone
-x 12
+x 11
 y 11
 end
 arch flagstone
-x 12
+x 11
+y 12
+end
+arch chair_1.3
+x 11
 y 12
 end
 arch flagstone
-x 12
-y 13
-end
-arch chair_1.3
-x 12
+x 11
 y 13
 end
 arch flagstone
-x 12
+x 11
 y 14
 end
 arch flagstone
-x 12
-y 15
-end
-arch brazier
-x 12
+x 11
 y 15
 end
 arch flagstone
-x 12
+x 11
+y 16
+end
+arch dwall_2_1_2
+x 11
 y 16
 end
 arch flagstone
 x 12
-y 17
-end
-arch dwall_2_1_2
-x 12
-y 17
-end
-arch grass
-x 12
-y 18
-end
-arch desert
-x 12
-y 19
-end
-arch desert
-x 13
-end
-arch flagstone
-x 13
-y 1
 end
 arch dwall_3_3
-x 13
+x 12
+end
+arch flagstone
+x 12
+y 1
+end
+arch dwall_1_2
+x 12
 y 1
 end
 arch flagstone
-x 13
+x 12
 y 2
-end
-arch dwall_2_1_1
-x 13
-y 2
-end
-arch flagstone
-x 13
-y 3
-end
-arch dwall_1_2
-x 13
-y 3
-end
-arch flagstone
-x 13
-y 4
 end
 arch locked_white_door2
 slaying euthville_valriel
-x 13
-y 4
+x 12
+y 2
 end
 arch flagstone
-x 13
-y 5
+x 12
+y 3
 end
 arch dwall_1_1
-x 13
-y 5
+x 12
+y 3
 end
 arch flagstone
-x 13
-y 6
+x 12
+y 4
 end
 arch dwall_2_2_1
+x 12
+y 4
+end
+arch flagstone
+x 12
+y 5
+end
+arch flagstone
+x 12
+y 6
+end
+arch flagstone
+x 12
+y 7
+end
+arch flagstone
+x 12
+y 8
+end
+arch flagstone
+x 12
+y 9
+end
+arch flagstone
+x 12
+y 10
+end
+arch flagstone
+x 12
+y 11
+end
+arch flagstone
+x 12
+y 12
+end
+arch flagstone
+x 12
+y 13
+end
+arch flagstone
+x 12
+y 14
+end
+arch flagstone
+x 12
+y 15
+end
+arch flagstone
+x 12
+y 16
+end
+arch dwall_2_1_2
+x 12
+y 16
+end
+arch flagstone
+x 13
+end
+arch dwall_2_1_2
+x 13
+end
+arch flagstone
+x 13
+y 1
+end
+arch flagstone
+x 13
+y 2
+end
+arch flagstone
+x 13
+y 3
+end
+arch flagstone
+x 13
+y 4
+end
+arch dwall_2_1_2
+x 13
+y 4
+end
+arch flagstone
+x 13
+y 5
+end
+arch flagstone
+x 13
+y 6
+end
+arch chair_1.3
 x 13
 y 6
 end
@@ -1450,6 +1329,10 @@ arch flagstone
 x 13
 y 8
 end
+arch chair_1.3
+x 13
+y 8
+end
 arch flagstone
 x 13
 y 9
@@ -1458,11 +1341,19 @@ arch flagstone
 x 13
 y 10
 end
+arch chair_1.3
+x 13
+y 10
+end
 arch flagstone
 x 13
 y 11
 end
 arch flagstone
+x 13
+y 12
+end
+arch chair_1.3
 x 13
 y 12
 end
@@ -1482,30 +1373,17 @@ arch flagstone
 x 13
 y 16
 end
-arch flagstone
-x 13
-y 17
-end
 arch dwall_2_1_2
 x 13
-y 17
-end
-arch grass
-x 13
-y 18
-end
-arch desert
-x 13
-y 19
-end
-arch desert
-x 14
+y 16
 end
 arch flagstone
 x 14
-y 1
 end
 arch dwall_2_1_2
+x 14
+end
+arch flagstone
 x 14
 y 1
 end
@@ -1521,6 +1399,10 @@ arch flagstone
 x 14
 y 4
 end
+arch dwall_2_1_2
+x 14
+y 4
+end
 arch flagstone
 x 14
 y 5
@@ -1529,7 +1411,7 @@ arch flagstone
 x 14
 y 6
 end
-arch dwall_2_1_2
+arch chair_1.3
 x 14
 y 6
 end
@@ -1541,6 +1423,10 @@ arch flagstone
 x 14
 y 8
 end
+arch chair_1.3
+x 14
+y 8
+end
 arch flagstone
 x 14
 y 9
@@ -1549,7 +1435,7 @@ arch flagstone
 x 14
 y 10
 end
-arch chair_wv_1.3
+arch chair_1.3
 x 14
 y 10
 end
@@ -1558,6 +1444,10 @@ x 14
 y 11
 end
 arch flagstone
+x 14
+y 12
+end
+arch chair_1.3
 x 14
 y 12
 end
@@ -1577,30 +1467,17 @@ arch flagstone
 x 14
 y 16
 end
-arch flagstone
-x 14
-y 17
-end
 arch dwall_2_1_2
 x 14
-y 17
-end
-arch grass
-x 14
-y 18
-end
-arch desert
-x 14
-y 19
-end
-arch desert
-x 15
+y 16
 end
 arch flagstone
 x 15
-y 1
 end
 arch dwall_2_1_2
+x 15
+end
+arch flagstone
 x 15
 y 1
 end
@@ -1616,495 +1493,306 @@ arch flagstone
 x 15
 y 4
 end
-arch flagstone
-x 15
-y 5
-end
-arch flagstone
-x 15
-y 6
-end
 arch dwall_2_1_2
 x 15
-y 6
-end
-arch flagstone
-x 15
-y 7
-end
-arch flagstone
-x 15
-y 8
-end
-arch flagstone
-x 15
-y 9
-end
-arch flagstone
-x 15
-y 10
-end
-arch flagstone
-x 15
-y 11
-end
-arch flagstone
-x 15
-y 12
-end
-arch brazier
-x 15
-y 12
-end
-arch flagstone
-x 15
-y 13
-end
-arch flagstone
-x 15
-y 14
-end
-arch flagstone
-x 15
-y 15
-end
-arch flagstone
-x 15
-y 16
-end
-arch flagstone
-x 15
-y 17
-end
-arch dwall_2_1_2
-x 15
-y 17
-end
-arch grass
-x 15
-y 18
-end
-arch desert
-x 15
-y 19
-end
-arch desert
-x 16
-end
-arch flagstone
-x 16
-y 1
-end
-arch dwall_2_1_2
-x 16
-y 1
-end
-arch flagstone
-x 16
-y 2
-end
-arch flagstone
-x 16
-y 3
-end
-arch flagstone
-x 16
 y 4
 end
 arch flagstone
-x 16
+x 15
 y 5
 end
 arch flagstone
-x 16
+x 15
 y 6
 end
-arch dwall_2_1_2
-x 16
+arch chair_1.3
+x 15
 y 6
 end
 arch flagstone
-x 16
+x 15
 y 7
 end
 arch flagstone
-x 16
+x 15
 y 8
 end
-arch brazier
-x 16
+arch chair_1.3
+x 15
 y 8
 end
 arch flagstone
-x 16
+x 15
 y 9
 end
 arch flagstone
-x 16
+x 15
+y 10
+end
+arch chair_1.3
+x 15
 y 10
 end
 arch flagstone
-x 16
+x 15
 y 11
 end
 arch flagstone
-x 16
+x 15
+y 12
+end
+arch chair_1.3
+x 15
 y 12
 end
 arch flagstone
-x 16
+x 15
 y 13
 end
 arch flagstone
-x 16
+x 15
 y 14
 end
 arch flagstone
-x 16
+x 15
 y 15
 end
 arch flagstone
-x 16
+x 15
+y 16
+end
+arch dwall_2_1_2
+x 15
 y 16
 end
 arch flagstone
 x 16
-y 17
 end
 arch dwall_2_1_2
 x 16
-y 17
-end
-arch grass
-x 16
-y 18
-end
-arch desert
-x 16
-y 19
-end
-arch desert
-x 17
 end
 arch flagstone
-x 17
+x 16
 y 1
-end
-arch dwall_2_1_2
-x 17
-y 1
-end
-arch flagstone
-x 17
-y 2
 end
 arch stair2_down
-name Valriel's church, catacombs
 slaying devil.church1
 hp 14
 sp 14
-x 17
+x 16
+y 1
+end
+arch flagstone
+x 16
 y 2
 end
 arch flagstone
-x 17
+x 16
 y 3
 end
 arch flagstone
-x 17
+x 16
+y 4
+end
+arch dwall_2_1_2
+x 16
 y 4
 end
 arch flagstone
-x 17
+x 16
+y 5
+end
+arch brazier
+x 16
 y 5
 end
 arch flagstone
-x 17
-y 6
-end
-arch dwall_2_1_2
-x 17
+x 16
 y 6
 end
 arch flagstone
-x 17
+x 16
 y 7
 end
 arch flagstone
-x 17
+x 16
 y 8
 end
 arch flagstone
-x 17
+x 16
 y 9
 end
 arch flagstone
-x 17
+x 16
+y 10
+end
+arch brazier
+x 16
 y 10
 end
 arch flagstone
-x 17
+x 16
 y 11
 end
 arch flagstone
-x 17
+x 16
 y 12
 end
 arch flagstone
-x 17
+x 16
 y 13
 end
 arch flagstone
-x 17
+x 16
 y 14
 end
 arch flagstone
-x 17
+x 16
+y 15
+end
+arch brazier
+x 16
 y 15
 end
 arch flagstone
-x 17
+x 16
+y 16
+end
+arch dwall_2_1_2
+x 16
 y 16
 end
 arch flagstone
 x 17
-y 17
-end
-arch dwall_2_1_2
-x 17
-y 17
-end
-arch grass
-x 17
-y 18
-end
-arch desert
-x 17
-y 19
-end
-arch desert
-x 18
-end
-arch flagstone
-x 18
-y 1
 end
 arch dwall_2_2_3
-x 18
+x 17
+end
+arch flagstone
+x 17
+y 1
+end
+arch dwall_2_1_1
+x 17
 y 1
 end
 arch flagstone
-x 18
+x 17
 y 2
 end
 arch dwall_2_1_1
-x 18
+x 17
 y 2
 end
 arch flagstone
-x 18
+x 17
 y 3
 end
 arch dwall_2_1_1
-x 18
+x 17
 y 3
 end
 arch flagstone
-x 18
+x 17
 y 4
-end
-arch dwall_2_1_1
-x 18
-y 4
-end
-arch flagstone
-x 18
-y 5
-end
-arch dwall_2_1_1
-x 18
-y 5
-end
-arch flagstone
-x 18
-y 6
 end
 arch dwall_3_4
-x 18
-y 6
-end
-arch flagstone
-x 18
-y 7
-end
-arch dwall_2_1_1
-x 18
-y 7
-end
-arch flagstone
-x 18
-y 8
-end
-arch dwall_2_1_1
-x 18
-y 8
-end
-arch flagstone
-x 18
-y 9
-end
-arch dwall_2_1_1
-x 18
-y 9
-end
-arch flagstone
-x 18
-y 10
-end
-arch dwall_2_1_1
-x 18
-y 10
-end
-arch flagstone
-x 18
-y 11
-end
-arch dwall_2_1_1
-x 18
-y 11
-end
-arch flagstone
-x 18
-y 12
-end
-arch dwall_2_1_1
-x 18
-y 12
-end
-arch flagstone
-x 18
-y 13
-end
-arch dwall_2_1_1
-x 18
-y 13
-end
-arch flagstone
-x 18
-y 14
-end
-arch dwall_2_1_1
-x 18
-y 14
-end
-arch flagstone
-x 18
-y 15
-end
-arch dwall_2_1_1
-x 18
-y 15
-end
-arch flagstone
-x 18
-y 16
-end
-arch dwall_2_1_1
-x 18
-y 16
-end
-arch flagstone
-x 18
-y 17
-end
-arch dwall_2_2_4
-x 18
-y 17
-end
-arch grass
-x 18
-y 18
-end
-arch desert
-x 18
-y 19
-end
-arch desert
-x 19
-end
-arch desert
-x 19
-y 1
-end
-arch desert
-x 19
-y 2
-end
-arch desert
-x 19
-y 3
-end
-arch desert
-x 19
+x 17
 y 4
 end
-arch desert
-x 19
+arch flagstone
+x 17
 y 5
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 5
+end
+arch flagstone
+x 17
 y 6
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 6
+end
+arch flagstone
+x 17
 y 7
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 7
+end
+arch flagstone
+x 17
 y 8
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 8
+end
+arch flagstone
+x 17
 y 9
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 9
+end
+arch flagstone
+x 17
 y 10
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 10
+end
+arch flagstone
+x 17
 y 11
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 11
+end
+arch flagstone
+x 17
 y 12
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 12
+end
+arch flagstone
+x 17
 y 13
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 13
+end
+arch flagstone
+x 17
 y 14
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 14
+end
+arch flagstone
+x 17
 y 15
 end
-arch desert
-x 19
+arch dwall_2_1_1
+x 17
+y 15
+end
+arch flagstone
+x 17
 y 16
 end
-arch desert
-x 19
-y 17
-end
-arch desert
-x 19
-y 18
-end
-arch desert
-x 19
-y 19
+arch dwall_2_2_4
+x 17
+y 16
 end
