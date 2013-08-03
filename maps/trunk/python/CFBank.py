@@ -20,15 +20,15 @@ class CFBank:
         if not user in self.bankdb:
             self.bankdb[user] = amount
         else:
-            temp = self.bankdb[user]
-            self.bankdb[user] = temp + amount
+            balance = self.bankdb[user]
+            self.bankdb[user] = balance + amount
         self.bankdb.sync()
 
     def withdraw(self, user, amount):
         if user in self.bankdb:
             if self.bankdb[user] >= amount:
-                temp = self.bankdb[user]
-                self.bankdb[user] = temp - amount
+                balance = self.bankdb[user]
+                self.bankdb[user] = balance - amount
                 self.bankdb.sync()
                 return 1
         return 0
