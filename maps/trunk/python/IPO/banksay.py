@@ -294,6 +294,7 @@ def cmd_balance(argv):
 
 # ----------------------------------------------------------------------------
 # Deposit money or checks.
+# TODO: Reimplement this.
 def cmd_deposit(text):
     if len(text) == 2:
         if text[1] == 'check':
@@ -519,6 +520,7 @@ def cmd_withdraw(argv):
 
 # ----------------------------------------------------------------------------
 # Exchange money.
+# TODO: Reimplement this.
 def cmd_exchange(text):
     if len(text) == 2:
         amount = int(text[1])
@@ -560,6 +562,7 @@ def cmd_exchange(text):
 
 # ----------------------------------------------------------------------------
 # Send checks.
+# TODO: Reimplement this.
 def cmd_checks(text):
     balance = bank.getbalance(activatorname)
     if balance >= 100:
@@ -590,6 +593,7 @@ def cmd_checks(text):
 
 # ----------------------------------------------------------------------------
 # Cash checks.
+# TODO: Reimplement this.
 def cmd_cash(text):
     inv = activator.CheckInventory('bankcard')
 
