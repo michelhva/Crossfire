@@ -212,11 +212,30 @@ def depositBoxClose():
 
 # ----------------------------------------------------------------------------
 # Print a help message for the player.
-def printHelp():
+def cmd_help():
     message = "You can check your 'balance', 'deposit' or 'withdraw' money, 'exchange' your currency, 'cash' a check, 'transfer' funds, buy 'checks', or find out how much 'profits' this bank has made.\n\nAll transactions are in imperial notes (1 note = 1000 gold). A service charge of %d percent will be placed on all deposits." % service_charge
 
     if activator.DungeonMaster:
         message += "\n\nAs the DM, you can also 'zero-balance' the profit that the bank has made."
+
+    whoami.Say(message)
+
+# ----------------------------------------------------------------------------
+# Show the profits made by the bank.
+def cmd_show_profits():
+    message = "To date, the Imperial Bank of Skud has made %s " \
+            "pounds sterling in profit." % \
+            str(bank.getbalance(Skuds))
+    whoami.Say(message)
+
+# ----------------------------------------------------------------------------
+# Erase the profits made by the bank.
+def cmd_zero_balance():
+    if activator.DungeonMaster:
+        bank.withdraw(Skuds, bank.getbalance(Skuds))
+        message = "Profits erased!"
+    else:
+        message = "Only the dungeon master can wipe our profits!"
 
     whoami.Say(message)
 
@@ -236,14 +255,11 @@ else:
     message = ""
 
     if text[0] == 'help' or text[0] == 'yes':
-        printHelp()
+        cmd_help()
     elif text[0] == 'zero-balance':
-        bank.withdraw(Skuds, bank.getbalance(Skuds))
-        message = 'Balance zeroed.'
+        cmd_zero_balance()
     elif text[0] == 'profits':
-        message = 'The Imperial Bank of Skud has made ' \
-            + str(bank.getbalance(Skuds) * 0.029394968) \
-            + ' pounds sterling in profit to date.'
+        cmd_show_profits()
     elif text[0] == 'deposit':
 
         if len(text) == 2:
