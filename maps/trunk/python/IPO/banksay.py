@@ -22,6 +22,8 @@ mail = CFMail.CFMail()
 activator = Crossfire.WhoIsActivator()
 activatorname = activator.Name
 whoami = Crossfire.WhoAmI()
+x = activator.X
+y = activator.Y
 
 # Account to record bank fees. Let's see how much the bank is being used.
 Skuds = 'Imperial-Bank-Of-Skud' + str('Imperial-Bank-Of-Skud'.__hash__())
@@ -67,6 +69,7 @@ thanks_message = [
 
 # ----------------------------------------------------------------------------
 # Called when the deposit box (ATM) is opened.
+# TODO: Fix the ATM.
 def depositBoxOpen():
     balance = bank.getbalance(activatorname)
     Total = balance
@@ -180,6 +183,7 @@ def depositBoxOpen():
 
 # ----------------------------------------------------------------------------
 # Called when the deposit box (ATM) is closed.
+# TODO: Fix the ATM.
 def depositBoxClose():
     t = activator.CheckInventory('SkudCtrl')
 
@@ -236,6 +240,61 @@ def cmd_zero_balance():
         message = "Profits erased!"
     else:
         message = "Only the dungeon master can wipe our profits!"
+
+    whoami.Say(message)
+
+# ----------------------------------------------------------------------------
+# Withdraw money from the player's account.
+def cmd_withdraw(argv):
+    argc = len(argv)
+
+    # Withdraw a certain number of imperial notes.
+    if argc == 2:
+        message = "Sorry, I don't know how to do that yet."
+    # Withdraw a certain number of a certain coin.
+    elif argc >= 3:
+        amount = int(argv[1])
+        coinName = ""
+
+        # Take the arguments and piece together the full coin name.
+        for argument in argv[2:]:
+            coinName += argument + ' '
+
+        # Remove the trailing space and 's' from the coin name.
+        coinName = coinName[:len(coinName) - 1]
+
+        if coinName[len(coinName) - 1] == 's':
+            coinName = coinName[:len(coinName) - 1]
+
+        # Try to find exchange rate, set to None if we can't.
+        if coinName.upper() in CoinTypes:
+            exchange_rate = int(CoinTypes.get(coinName.upper()))
+        else:
+            exchange_rate = None
+
+        # Warn the player if no such coin type exists.
+        if exchange_rate is None:
+            message = "I'm sorry, I don't know what type of money that is. " \
+                    "Valid types of money are silver, gold, platinum, jade, amberium, Imperial Note, 10 Imperial Note, and 100 Imperial Note."
+        # Don't let the player withdraw negative money.
+        elif amount <= 0:
+            message = "Hey, you can't withdraw a negative amount!"
+        # Make sure the player has sufficient funds.
+        elif bank.withdraw(activatorname, amount * exchange_rate):
+            message = "%d %s withdrawn from your account. %s" \
+                    % (amount, coinName, random.choice(thanks_message))
+
+            # Drop the money and have the player pick it up.
+            withdrawal = activator.Map.CreateObject(ArchType.get( \
+                coinName.upper()), x, y)
+            CFItemBroker.Item(withdrawal).add(amount)
+            activator.Take(withdrawal)
+        else:
+            message = "I'm sorry, you don't have enough money."
+    else:
+        message = "Usage:\n" \
+                "\twithdraw <amount in imperials>\n" \
+                "\twithdraw <amount> <coin type>"
 
     whoami.Say(message)
 
@@ -440,41 +499,7 @@ else:
 
             pass
     elif text[0] == 'withdraw':
-
-        if len(text) >= 3:
-            amount = int(text[1])
-            Type = ''
-            for i in text[2:]:
-                Type += i + ' '
-            Type = Type[:len(Type) - 1]
-
-            if Type[len(Type) - 1] == 's':
-                Type = Type[:len(Type) - 1]
-            try:
-
-                exchange_rate = int(CoinTypes.get(Type.upper()))
-                if amount <= 0:
-                    message = 'Usage "withdraw <amount> <cointype>"'
-                elif bank.withdraw(activatorname, amount
-                                   * exchange_rate):
-
-                    message = '%d %s withdrawn from bank account. %s' \
-                        % (amount, Type, random.choice(thanks_message))
-
-                    id = \
-                        activator.Map.CreateObject(ArchType.get(Type.upper()),
-                            x, y)
-                    CFItemBroker.Item(id).add(amount)
-                    activator.Take(id)
-                else:
-                    message = 'Not enough silver on your account'
-            except:
-
-                message = \
-                    'Valid CoinTypes are Silver, Gold, Platinum, Jade, Amberium, Imperial Note, 10 Imperial Note, 100 Imperial Note.  \nPlease by sure to specify one of these types.'
-        else:
-
-            message = 'Usage "withdraw <amount in imperials>"'
+        cmd_withdraw(text)
     elif text[0] == 'exchange':
 
         if len(text) == 2:
