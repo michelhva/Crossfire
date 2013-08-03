@@ -555,33 +555,45 @@ def cmd_exchange(text):
     whoami.Say(message)
 
 # ----------------------------------------------------------------------------
-# Send checks.
-# TODO: Reimplement this.
-def cmd_checks(text):
-    balance = bank.getbalance(activatorname)
-    if balance >= 100:
-        bank.withdraw(activatorname, 100)
-
+# Send a checkbook to the player via the IPS.
+# TODO: Make this work (check the maps!).
+def cmd_checks():
+    if bank.withdraw(activatorname, 100):
         mailmap = Crossfire.ReadyMap('/planes/IPO_storage')
 
-        if mailmap:
-            pack = activator.Map.CreateObject('package', 1, 1)
-            pack.Name = \
-                'IPO-package F: The-Imperial-Bank-of-Skud T: ' \
-                + activator.Name
-            pack.Teleport(mailmap, 2, 2)
-            cheque = mailmap.ObjectAt(int(5), int(0))
-            message = \
-                'Your checks will be mailed to you shortly.  Thank you for your patronage.'
-            cheque.Name = str(activator.Name + "'s Checkbook")
-            cheques = cheque.CheckArchInventory('bankcard')
-            cheques.Name = str(activator.Name + "'s Check")
-            cheques.NamePl = str(activator.Name + "'s Checks")
-            chequenew = cheque.InsertInto(pack)
-    else:
+        if not mailmap:
+            whoami.Say("It seems that the IPO is on strike. " \
+                    "Your payment has been refunded.")
+            bank.deposit(activatorname, 100)
+            return
 
-        message = \
-            'You do not have sufficient funds in your bank account.'
+        # Create an IPO package but don't mail it until we're ready.
+        package = activator.Map.CreateObject('package', 1, 1)
+        package.Name = "IPO-package F: The-Imperial-Bank-of-Skud T: %s" \
+                % activator.Name
+
+        # Create a check based on a template in the bank map.
+        check = mailmap.ObjectAt(int(5), int(0))
+
+        if check is None:
+            whoami.Say("Hmm... I can't seem find my checkbook press... " \
+                    "Your payment has been refunded.")
+            bank.deposit(activatorname, 100)
+            return
+
+        # Mail the package.
+        package.Teleport(mailmap, 2, 2)
+
+        check.Name = str(activator.Name + "'s Checkbook")
+        cheques = check.CheckArchInventory('bankcard')
+        cheques.Name = str(activator.Name + "'s Check")
+        cheques.NamePl = str(activator.Name + "'s Checks")
+        chequenew = check.InsertInto(package)
+
+        message = "Your checks have been mailed. Thank you!"
+    else:
+        message = "Checks cost 100 silver (2 platinum). " \
+                "You do not have enough money in your bank account."
 
     whoami.Say(message)
 
@@ -752,7 +764,7 @@ else:
     elif text[0] == 'exchange':
         cmd_exchange(text)
     elif text[0] == 'checks':
-        cmd_checks(text)
+        cmd_checks()
     elif text[0] == 'cash':
         cmd_cash(text)
     else:
