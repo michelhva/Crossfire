@@ -68,6 +68,32 @@ thanks_message = [
     ]
 
 # ----------------------------------------------------------------------------
+# Piece together several arguments to form a coin name.
+def getCoinNameFromArgs(argv):
+    coinName = ""
+
+    # Take the arguments and piece together the full coin name.
+    for argument in argv:
+        coinName += argument + ' '
+
+    # Remove the trailing space and 's' from the coin name.
+    coinName = coinName[:len(coinName) - 1]
+
+    if coinName[len(coinName) - 1] == 's':
+        coinName = coinName[:len(coinName) - 1]
+
+    return coinName
+
+# ----------------------------------------------------------------------------
+# Return the exchange rate for the given type of coin.
+def getExchangeRate(coinName):
+    # Try to find exchange rate, set to None if we can't.
+    if coinName.upper() in CoinTypes:
+        return int(CoinTypes.get(coinName.upper()))
+    else:
+        return None
+
+# ----------------------------------------------------------------------------
 # Called when the deposit box (ATM) is opened.
 # TODO: Fix the ATM.
 def depositBoxOpen():
@@ -243,6 +269,213 @@ def cmd_zero_balance():
     whoami.Say(message)
 
 # ----------------------------------------------------------------------------
+# Find out how much money the player has in his/her account.
+def cmd_balance(argv):
+    balance = bank.getbalance(activatorname)
+
+    if len(argv) >= 2:
+        coinName = getCoinNameFromArgs(argv[1:])
+        exchange_rate = getExchangeRate(coinName)
+
+        if exchange_rate is None:
+            whoami.Say("Hmm... I've never seen that kind of money.")
+            return
+
+        if balance != 0:
+            balance /= exchange_rate * 1.0;
+            message = "You have %2f %s in the bank." % (balance, coinName)
+        else:
+            message = "Sorry, you have no balance."
+
+        whoami.Say(message);
+    else:
+        # No need to reimplement this command; just recurse.
+        cmd_balance(["balance", "silver"])
+
+# ----------------------------------------------------------------------------
+# Deposit money or checks.
+def cmd_deposit(text):
+    if len(text) == 2:
+        if text[1] == 'check':
+            whoami.Say('x')
+            inv = activator.CheckInventory('bankcard')
+            whoami.Say('x')
+            if inv:
+                whoami.Say('y')
+                name1 = string.split(inv.Name, "'")
+                payer = name1[0]
+                information = inv.Message
+                information = string.split(information, '\n')
+                if information[0] != 'CANCELED':
+
+                    payee = string.split(information[0], ' ')
+
+        #   whoami.Say(str(payee))
+
+                    payee = payee[5]
+                    if payee != activator.Name:
+                        if payee.upper() != 'BEARER':
+                            message = \
+                                'This check is not made out to you!'
+
+                            mail.send(1, payee,
+                                    'The-Imperial-Bank-of-Skud',
+                                    'Dear Sir or Madam:' + '\n'
+                                    + 'It has come to our attention that an attempt to cash a check made out to you by someone other than you has been made.  The check was made out by'
+                                     + payer
+                                    + '; and, the attempt to cash it was made by'
+                                     + activator.Name
+                                    + '.  We apologise for any trouble this may cause, and would like to inform you that we are always at your service.'
+                                     + '''
+
+''' + 'Sincerly,'
+                                    + '\n'
+                                    + 'The Imperial Bank of Skud')
+                            mail.send(1, payer,
+                                    'The-Imperial-Bank-of-Skud',
+                                    'Dear Sir or Madam:'
+                                    + '\nIt has come to our attention that an attempt to cash a check made out by you to '
+                                     + payee + ' has been made by '
+                                    + activator.Name
+                                    + '.  We apologise for any trouble this may cause; and, we would like to inform you that we are always at your service.'
+                                     + '\n' + '\n' + 'Sincerly,'
+                                    + '\n'
+                                    + ' The Imperial Bank of Skud')
+                        if payee.upper() == 'BEARER':
+                            payee = activator.Name
+                    if payee == activator.Name:
+                        balanceavailable = bank.getbalance(payer)
+                        amount = string.split(information[1], ' ')
+                        signer = string.split(information[2])
+                        signer = signer[1]
+                        if payer == signer:
+                            cointype = amount[1]
+
+                    # print amount
+            # ........whoami.Say(str(amount))
+
+                            cointypecoin = amount[2]
+                            amount = int(amount[1])
+
+                    # print cointype
+                    # print amount
+
+                # ....conversionfactor=1
+                # ....cointype1='silvercoin'
+
+                            if cointypecoin == 'Silver':
+                                conversionfactor = 1
+                                cointype1 = 'silvercoin'
+                            elif cointypecoin == "'Gold'":
+                                conversionfactor = 10
+                                cointype1 = 'goldcoin'
+                            elif cointypecoin == "'Platinum'":
+                                conversionfactor = 50
+                                cointype1 = 'platinacoin'
+                            elif cointypecoin == 'Jade':
+                                conversionfactor = 5000
+                                cointype1 = 'jadecoin'
+                            elif cointypecoin == "'Amberium'":
+
+                                conversionfactor = 500000
+                                cointype1 = 'amberiumcoin'
+                            elif cointypecoin == "'Imperial'":
+                                conversionfactor = 10000
+                                cointype1 = 'imperial'
+                            cashonhand = balanceavailable
+                            quantity = amount * conversionfactor
+                            if cashonhand >= quantity:
+                                if amount <= 0:
+                                    message = \
+"I'm sorry, We do not accept checks with a zero balance."
+                                elif amount == 1:
+                                    message = \
+'Okay, %s %s transfered to your account.' % (cointype, cointypecoin)
+                                    inv.Message = 'CANCELED\n' \
++ inv.Message
+                                    inv.Name = inv.Name \
++ ' (CANCELED)'
+                                    bank.withdraw(payer, quantity)
+                                    bank.deposit(payee, quantity)
+                                else:
+
+                                    message = \
+'Okay, %s %s transfered to your account.' % (str(amount),
+    cointypecoin)
+                                    inv.Message = 'CANCELED\n' \
++ inv.Message
+                                    inv.Name = inv.Name \
++ ' (CANCELED)'
+                                    bank.withdraw(payer, quantity)
+                                    bank.deposit(payee, quantity)
+                            else:
+                                message = \
+"I'm sorry, but it appears that %s does not have enough money in his account to cover this transaction." \
+% payer
+                        else:
+                            message = \
+                                'The signature on this check is invalid.'
+                            mail.send(1, payer,
+                                    'The-Imperial-Bank-Of-Skud',
+                                    'Dear Sir or Madam:\nIt has come to our attention that an attempt to cash an improperly signed check was made.  The check was made out to '
+                                     + payee
+                                    + 'and the attempt was made by '
+                                     + activator.Name
+                                    + '.  The value of the check was '
+                                     + str(amount[1]) + ' '
+                                    + str(amount[2]) + ' '
+                                    + str(amount[3])
+                                    + '.  We apologise for any trouble this may cause and would like to inform you that we are always at your service.'
+                                     + '\n' + 'Sincerly,' + '\n'
+                                    + 'The Imperial Bank of Skud')
+                else:
+                    message = 'This check has already been cashed!'
+            else:
+                message = 'Come back when you have a check to cash.'
+                whoami.Say('z')
+
+    if len(text) >= 3:
+        amount = int(text[1])
+        Type = ''
+        for i in text[2:]:
+            Type += i + ' '
+        Type = Type[:len(Type) - 1]
+
+        if Type[len(Type) - 1] == 's':
+            Type = Type[:len(Type) - 1]
+
+        try:
+
+            exchange_rate = CoinTypes.get(Type.upper())
+            if amount <= 0:
+                message = \
+                    'Usage "deposit <amount> <cointype>\n or deposit <issuer>\'s check"'
+            elif activator.PayAmount(int(amount * exchange_rate)):
+
+                bank.deposit(activatorname, int(amount
+                             * exchange_rate / fees))
+                bank.deposit(Skuds, int(amount * exchange_rate
+                             - amount * exchange_rate / fees))
+
+                message = \
+                    '%d %s received, %d %s deposited to bank account. %s' \
+                    % (amount, Type, int(amount / fees), Type,
+                       random.choice(thanks_message))
+            else:
+                message = 'You would need %d gold' % (amount
+                        * (exchange_rate / 10))
+        except:
+            message = \
+                'Valid CoinTypes are Silver, Gold, Platinum, Jade, Amberium, Imperial Note, 10 Imperial Note, 100 Imperial Note.  \nPlease by sure to specify one of these types.'
+    else:
+
+        # message = 'Usage "deposit <amount> <cointype>\n or deposit <issuer>\'s check"'
+
+        pass
+
+    whoami.Say(message)
+
+# ----------------------------------------------------------------------------
 # Withdraw money from the player's account.
 def cmd_withdraw(argv):
     argc = len(argv)
@@ -252,34 +485,21 @@ def cmd_withdraw(argv):
         message = "Sorry, I don't know how to do that yet."
     # Withdraw a certain number of a certain coin.
     elif argc >= 3:
+        coinName = getCoinNameFromArgs(argv[2:])
+        exchange_rate = getExchangeRate(coinName)
         amount = int(argv[1])
-        coinName = ""
 
-        # Take the arguments and piece together the full coin name.
-        for argument in argv[2:]:
-            coinName += argument + ' '
-
-        # Remove the trailing space and 's' from the coin name.
-        coinName = coinName[:len(coinName) - 1]
-
-        if coinName[len(coinName) - 1] == 's':
-            coinName = coinName[:len(coinName) - 1]
-
-        # Try to find exchange rate, set to None if we can't.
-        if coinName.upper() in CoinTypes:
-            exchange_rate = int(CoinTypes.get(coinName.upper()))
-        else:
-            exchange_rate = None
-
-        # Warn the player if no such coin type exists.
         if exchange_rate is None:
-            message = "I'm sorry, I don't know what type of money that is. " \
-                    "Valid types of money are silver, gold, platinum, jade, amberium, Imperial Note, 10 Imperial Note, and 100 Imperial Note."
+            whoami.Say("Hmm... I've never seen that kind of money.")
+            return
+
         # Don't let the player withdraw negative money.
-        elif amount <= 0:
-            message = "Hey, you can't withdraw a negative amount!"
+        if amount <= 0:
+            whoami.Say("Hey, you can't withdraw a negative amount!")
+            return
+
         # Make sure the player has sufficient funds.
-        elif bank.withdraw(activatorname, amount * exchange_rate):
+        if bank.withdraw(activatorname, amount * exchange_rate):
             message = "%d %s withdrawn from your account. %s" \
                     % (amount, coinName, random.choice(thanks_message))
 
@@ -319,184 +539,7 @@ else:
     elif text[0] == 'profits':
         cmd_show_profits()
     elif text[0] == 'deposit':
-
-        if len(text) == 2:
-            if text[1] == 'check':
-                whoami.Say('x')
-                inv = activator.CheckInventory('bankcard')
-                whoami.Say('x')
-                if inv:
-                    whoami.Say('y')
-                    name1 = string.split(inv.Name, "'")
-                    payer = name1[0]
-                    information = inv.Message
-                    information = string.split(information, '\n')
-                    if information[0] != 'CANCELED':
-
-                        payee = string.split(information[0], ' ')
-
-            #   whoami.Say(str(payee))
-
-                        payee = payee[5]
-                        if payee != activator.Name:
-                            if payee.upper() != 'BEARER':
-                                message = \
-                                    'This check is not made out to you!'
-
-                                mail.send(1, payee,
-                                        'The-Imperial-Bank-of-Skud',
-                                        'Dear Sir or Madam:' + '\n'
-                                        + 'It has come to our attention that an attempt to cash a check made out to you by someone other than you has been made.  The check was made out by'
-                                         + payer
-                                        + '; and, the attempt to cash it was made by'
-                                         + activator.Name
-                                        + '.  We apologise for any trouble this may cause, and would like to inform you that we are always at your service.'
-                                         + '''
- 
-''' + 'Sincerly,'
-                                        + '\n'
-                                        + 'The Imperial Bank of Skud')
-                                mail.send(1, payer,
-                                        'The-Imperial-Bank-of-Skud',
-                                        'Dear Sir or Madam:'
-                                        + '\nIt has come to our attention that an attempt to cash a check made out by you to '
-                                         + payee + ' has been made by '
-                                        + activator.Name
-                                        + '.  We apologise for any trouble this may cause; and, we would like to inform you that we are always at your service.'
-                                         + '\n' + '\n' + 'Sincerly,'
-                                        + '\n'
-                                        + ' The Imperial Bank of Skud')
-                            if payee.upper() == 'BEARER':
-                                payee = activator.Name
-                        if payee == activator.Name:
-                            balanceavailable = bank.getbalance(payer)
-                            amount = string.split(information[1], ' ')
-                            signer = string.split(information[2])
-                            signer = signer[1]
-                            if payer == signer:
-                                cointype = amount[1]
-
-                        # print amount
-                # ........whoami.Say(str(amount))
-
-                                cointypecoin = amount[2]
-                                amount = int(amount[1])
-
-                        # print cointype
-                        # print amount
-
-                    # ....conversionfactor=1
-                    # ....cointype1='silvercoin'
-
-                                if cointypecoin == 'Silver':
-                                    conversionfactor = 1
-                                    cointype1 = 'silvercoin'
-                                elif cointypecoin == "'Gold'":
-                                    conversionfactor = 10
-                                    cointype1 = 'goldcoin'
-                                elif cointypecoin == "'Platinum'":
-                                    conversionfactor = 50
-                                    cointype1 = 'platinacoin'
-                                elif cointypecoin == 'Jade':
-                                    conversionfactor = 5000
-                                    cointype1 = 'jadecoin'
-                                elif cointypecoin == "'Amberium'":
-
-                                    conversionfactor = 500000
-                                    cointype1 = 'amberiumcoin'
-                                elif cointypecoin == "'Imperial'":
-                                    conversionfactor = 10000
-                                    cointype1 = 'imperial'
-                                cashonhand = balanceavailable
-                                quantity = amount * conversionfactor
-                                if cashonhand >= quantity:
-                                    if amount <= 0:
-                                        message = \
-    "I'm sorry, We do not accept checks with a zero balance."
-                                    elif amount == 1:
-                                        message = \
-    'Okay, %s %s transfered to your account.' % (cointype, cointypecoin)
-                                        inv.Message = 'CANCELED\n' \
-    + inv.Message
-                                        inv.Name = inv.Name \
-    + ' (CANCELED)'
-                                        bank.withdraw(payer, quantity)
-                                        bank.deposit(payee, quantity)
-                                    else:
-
-                                        message = \
-    'Okay, %s %s transfered to your account.' % (str(amount),
-        cointypecoin)
-                                        inv.Message = 'CANCELED\n' \
-    + inv.Message
-                                        inv.Name = inv.Name \
-    + ' (CANCELED)'
-                                        bank.withdraw(payer, quantity)
-                                        bank.deposit(payee, quantity)
-                                else:
-                                    message = \
-    "I'm sorry, but it appears that %s does not have enough money in his account to cover this transaction." \
-    % payer
-                            else:
-                                message = \
-                                    'The signature on this check is invalid.'
-                                mail.send(1, payer,
-                                        'The-Imperial-Bank-Of-Skud',
-                                        'Dear Sir or Madam:\nIt has come to our attention that an attempt to cash an improperly signed check was made.  The check was made out to '
-                                         + payee
-                                        + 'and the attempt was made by '
-                                         + activator.Name
-                                        + '.  The value of the check was '
-                                         + str(amount[1]) + ' '
-                                        + str(amount[2]) + ' '
-                                        + str(amount[3])
-                                        + '.  We apologise for any trouble this may cause and would like to inform you that we are always at your service.'
-                                         + '\n' + 'Sincerly,' + '\n'
-                                        + 'The Imperial Bank of Skud')
-                    else:
-                        message = 'This check has already been cashed!'
-                else:
-                    message = 'Come back when you have a check to cash.'
-                    whoami.Say('z')
-
-        if len(text) >= 3:
-            amount = int(text[1])
-            Type = ''
-            for i in text[2:]:
-                Type += i + ' '
-            Type = Type[:len(Type) - 1]
-
-            if Type[len(Type) - 1] == 's':
-                Type = Type[:len(Type) - 1]
-
-            try:
-
-                exchange_rate = CoinTypes.get(Type.upper())
-                if amount <= 0:
-                    message = \
-                        'Usage "deposit <amount> <cointype>\n or deposit <issuer>\'s check"'
-                elif activator.PayAmount(int(amount * exchange_rate)):
-
-                    bank.deposit(activatorname, int(amount
-                                 * exchange_rate / fees))
-                    bank.deposit(Skuds, int(amount * exchange_rate
-                                 - amount * exchange_rate / fees))
-
-                    message = \
-                        '%d %s received, %d %s deposited to bank account. %s' \
-                        % (amount, Type, int(amount / fees), Type,
-                           random.choice(thanks_message))
-                else:
-                    message = 'You would need %d gold' % (amount
-                            * (exchange_rate / 10))
-            except:
-                message = \
-                    'Valid CoinTypes are Silver, Gold, Platinum, Jade, Amberium, Imperial Note, 10 Imperial Note, 100 Imperial Note.  \nPlease by sure to specify one of these types.'
-        else:
-
-            # message = 'Usage "deposit <amount> <cointype>\n or deposit <issuer>\'s check"'
-
-            pass
+        cmd_deposit(text)
     elif text[0] == 'withdraw':
         cmd_withdraw(text)
     elif text[0] == 'exchange':
@@ -537,38 +580,7 @@ else:
             message = \
                 'Usage "exchange <amount>" (imperials to platinum coins)'
     elif text[0] == 'balance':
-
-        if len(text) >= 2:
-            Type = ''
-
-            for i in text[1:]:
-                Type += i + ' '
-            Type = Type[:len(Type) - 1]
-            if Type[len(Type) - 1] == 's':
-                Type = Type[:len(Type) - 1]
-            exchange_rate = CoinTypes.get(Type.upper())
-            balance = bank.getbalance(activatorname) / exchange_rate
-            message = 'Amount in bank: '
-            if int(balance) == 1:
-                message += '1 ' + Type + '.'
-            elif int(balance) > 1:
-                message += str(int(balance)) + ' ' + Type
-
-                if Type.find('Note') == -1:
-                    message += ' Coins.'
-            else:
-
-                message = 'Your balance is less than 1 ' + Type + '.'
-        else:
-            balance = bank.getbalance(activatorname)
-            if balance == 1:
-                message = 'Amount in bank: 1 silver coin'
-            elif balance:
-                message = \
-                    'Amount in bank: %d pounds sterling or %d silver coins.' \
-                    % (balance * 0.029394968, balance)
-            else:
-                message = 'Sorry, you have no balance.'
+        cmd_balance(text)
     elif text[0] == 'checks':
 
         balance = bank.getbalance(activatorname)
