@@ -793,7 +793,7 @@ x 8
 y 3
 stand_still 1
 arch npc_dialog
-name /euthville/valriel.msg
+name /euthville/church/valriel.msg
 end
 arch NPCGift
 arch darkgreen_key
@@ -882,7 +882,7 @@ x 8
 y 15
 end
 arch exit
-slaying ../world/world_105_113
+slaying /world/world_105_113
 hp 7
 sp 21
 x 8
@@ -994,7 +994,7 @@ x 9
 y 15
 end
 arch exit
-slaying ../world/world_105_113
+slaying /world/world_105_113
 hp 7
 sp 21
 x 9
