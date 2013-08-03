@@ -12,14 +12,21 @@ import CFBank
 import CFItemBroker
 import CFMail
 
+# Set up a few easily-settable configuration variables.
+bank = CFBank.CFBank('ImperialBank_DB')
+service_charge = 1  # Service charge for transactions (as a percentage)
+fees = service_charge / 100.0 + 1
+
+# Set up variables for a few commonly-accessed objects.
 mail = CFMail.CFMail()
-Skuds = 'Imperial-Bank-Of-Skud' \
-    + str('Imperial-Bank-Of-Skud'.__hash__())  # account to put fees into.  Let's everyone see how much the bank is actually being used.
 activator = Crossfire.WhoIsActivator()
 activatorname = activator.Name
 whoami = Crossfire.WhoAmI()
-x = activator.X
-y = activator.Y
+
+# Account to record bank fees. Let's see how much the bank is being used.
+Skuds = 'Imperial-Bank-Of-Skud' + str('Imperial-Bank-Of-Skud'.__hash__())
+
+# Associate coin names with their corresponding values in silver.
 CoinTypes = {
     'SILVER': 1,
     'GOLD': 10,
@@ -30,6 +37,8 @@ CoinTypes = {
     '10 IMPERIAL NOTE': 100000,
     '100 IMPERIAL NOTE': 1000000,
     }
+
+# Associate coin names with their corresponding archetypes.
 ArchType = {
     'SILVER': 'silvercoin',
     'GOLD': 'goldcoin',
@@ -41,20 +50,7 @@ ArchType = {
     '100 IMPERIAL NOTE': 'imperial100',
     }
 
-conversionfactorgold = 10
-conversionfactorplat = 50
-conversionfactorjade = 5000
-conversionfactoramber = 50 * 10000
-
-# EASILY SETTABLE PARAMETERS
-
-service_charge = 1  # service charges for transactions as a percent
-
-bankdatabase = 'ImperialBank_DB'
-
-fees = service_charge / 100.0 + 1
-bank = CFBank.CFBank(bankdatabase)
-
+# Define several 'thank-you' messages which are chosen at random.
 thanks_message = [
     'Thank you for banking the Imperial Way.',
     'Thank you for banking the Imperial Way.',
@@ -69,7 +65,6 @@ thanks_message = [
     'Thank you. Hows about a big slobbery kiss?',
     ]
 
-mymap = activator.Map
 if whoami.Name.find('Deposit Box') > -1:
 
     ScriptParm = Crossfire.ScriptParameters()
@@ -88,7 +83,7 @@ if whoami.Name.find('Deposit Box') > -1:
 
                 Value += MyInv.Value * MyInv.Quantity
                 MyInv1 = MyInv.Below
-                MyInv.Teleport(mymap, 15, 3)
+                MyInv.Teleport(activator.Map, 15, 3)
                 MyInv = MyInv1
             else:
                 MyInv = MyInv.Below
