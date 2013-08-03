@@ -3,13 +3,14 @@ name Hall of Bones
 reset_timeout 7200
 difficulty 12
 region euthville
-width 18
+darkness 1
+width 17
 height 35
 enter_x 3
 enter_y 33
 msg
 Created:  1993-10-25
-Modified: 2012-02-02 Rick Tanner
+Modified: 2013-08-02 Kevin Zheng
 endmsg
 end
 arch cobblestones
@@ -1076,7 +1077,7 @@ y 34
 end
 arch oakdoor_2
 slaying /world/world_105_113
-hp 14
+hp 15
 sp 24
 x 4
 y 34
@@ -1811,58 +1812,58 @@ arch rough_wall_2_2_4
 x 7
 y 34
 end
-arch cave_15
+arch blocked
 x 8
 end
-arch cave_15
+arch blocked
 x 8
 y 1
 end
-arch cave_15
+arch blocked
 x 8
 y 2
 end
-arch cave_15
+arch blocked
 x 8
 y 3
 end
-arch cave_15
+arch blocked
 x 8
 y 4
 end
-arch cave_15
+arch blocked
 x 8
 y 5
 end
-arch cave_15
+arch blocked
 x 8
 y 6
 end
-arch cave_15
+arch blocked
 x 8
 y 7
 end
-arch cave_15
+arch blocked
 x 8
 y 8
 end
-arch cave_15
+arch blocked
 x 8
 y 9
 end
-arch cave_15
+arch blocked
 x 8
 y 10
 end
-arch cave_15
+arch blocked
 x 8
 y 11
 end
-arch cave_15
+arch blocked
 x 8
 y 12
 end
-arch cave_15
+arch blocked
 x 8
 y 13
 end
@@ -2021,97 +2022,9 @@ arch cave_15
 x 9
 y 11
 end
-arch cave_15
+arch blocked
 x 9
 y 12
-end
-arch cave_15
-x 9
-y 13
-end
-arch blocked
-x 9
-y 14
-end
-arch blocked
-x 9
-y 15
-end
-arch blocked
-x 9
-y 16
-end
-arch blocked
-x 9
-y 17
-end
-arch blocked
-x 9
-y 18
-end
-arch blocked
-x 9
-y 19
-end
-arch blocked
-x 9
-y 20
-end
-arch blocked
-x 9
-y 21
-end
-arch blocked
-x 9
-y 22
-end
-arch blocked
-x 9
-y 23
-end
-arch blocked
-x 9
-y 24
-end
-arch blocked
-x 9
-y 25
-end
-arch blocked
-x 9
-y 26
-end
-arch blocked
-x 9
-y 27
-end
-arch blocked
-x 9
-y 28
-end
-arch blocked
-x 9
-y 29
-end
-arch blocked
-x 9
-y 30
-end
-arch blocked
-x 9
-y 31
-end
-arch blocked
-x 9
-y 32
-end
-arch blocked
-x 9
-y 33
-end
-arch blocked
-x 9
-y 34
 end
 arch dirtfloor
 x 10
@@ -2191,97 +2104,9 @@ arch cave_15
 x 10
 y 11
 end
-arch cave_15
+arch blocked
 x 10
 y 12
-end
-arch cave_15
-x 10
-y 13
-end
-arch blocked
-x 10
-y 14
-end
-arch blocked
-x 10
-y 15
-end
-arch blocked
-x 10
-y 16
-end
-arch blocked
-x 10
-y 17
-end
-arch blocked
-x 10
-y 18
-end
-arch blocked
-x 10
-y 19
-end
-arch blocked
-x 10
-y 20
-end
-arch blocked
-x 10
-y 21
-end
-arch blocked
-x 10
-y 22
-end
-arch blocked
-x 10
-y 23
-end
-arch blocked
-x 10
-y 24
-end
-arch blocked
-x 10
-y 25
-end
-arch blocked
-x 10
-y 26
-end
-arch blocked
-x 10
-y 27
-end
-arch blocked
-x 10
-y 28
-end
-arch blocked
-x 10
-y 29
-end
-arch blocked
-x 10
-y 30
-end
-arch blocked
-x 10
-y 31
-end
-arch blocked
-x 10
-y 32
-end
-arch blocked
-x 10
-y 33
-end
-arch blocked
-x 10
-y 34
 end
 arch dirtfloor
 x 11
@@ -2376,97 +2201,9 @@ arch cave23
 x 11
 y 11
 end
-arch cave_15
+arch blocked
 x 11
 y 12
-end
-arch cave_15
-x 11
-y 13
-end
-arch blocked
-x 11
-y 14
-end
-arch blocked
-x 11
-y 15
-end
-arch blocked
-x 11
-y 16
-end
-arch blocked
-x 11
-y 17
-end
-arch blocked
-x 11
-y 18
-end
-arch blocked
-x 11
-y 19
-end
-arch blocked
-x 11
-y 20
-end
-arch blocked
-x 11
-y 21
-end
-arch blocked
-x 11
-y 22
-end
-arch blocked
-x 11
-y 23
-end
-arch blocked
-x 11
-y 24
-end
-arch blocked
-x 11
-y 25
-end
-arch blocked
-x 11
-y 26
-end
-arch blocked
-x 11
-y 27
-end
-arch blocked
-x 11
-y 28
-end
-arch blocked
-x 11
-y 29
-end
-arch blocked
-x 11
-y 30
-end
-arch blocked
-x 11
-y 31
-end
-arch blocked
-x 11
-y 32
-end
-arch blocked
-x 11
-y 33
-end
-arch blocked
-x 11
-y 34
 end
 arch dirtfloor
 x 12
@@ -2571,97 +2308,9 @@ arch cave2
 x 12
 y 11
 end
-arch cave_15
+arch blocked
 x 12
 y 12
-end
-arch cave_15
-x 12
-y 13
-end
-arch blocked
-x 12
-y 14
-end
-arch blocked
-x 12
-y 15
-end
-arch blocked
-x 12
-y 16
-end
-arch blocked
-x 12
-y 17
-end
-arch blocked
-x 12
-y 18
-end
-arch blocked
-x 12
-y 19
-end
-arch blocked
-x 12
-y 20
-end
-arch blocked
-x 12
-y 21
-end
-arch blocked
-x 12
-y 22
-end
-arch blocked
-x 12
-y 23
-end
-arch blocked
-x 12
-y 24
-end
-arch blocked
-x 12
-y 25
-end
-arch blocked
-x 12
-y 26
-end
-arch blocked
-x 12
-y 27
-end
-arch blocked
-x 12
-y 28
-end
-arch blocked
-x 12
-y 29
-end
-arch blocked
-x 12
-y 30
-end
-arch blocked
-x 12
-y 31
-end
-arch blocked
-x 12
-y 32
-end
-arch blocked
-x 12
-y 33
-end
-arch blocked
-x 12
-y 34
 end
 arch dirtfloor
 x 13
@@ -2773,97 +2422,9 @@ arch cave22
 x 13
 y 11
 end
-arch cave_15
+arch blocked
 x 13
 y 12
-end
-arch cave_15
-x 13
-y 13
-end
-arch blocked
-x 13
-y 14
-end
-arch blocked
-x 13
-y 15
-end
-arch blocked
-x 13
-y 16
-end
-arch blocked
-x 13
-y 17
-end
-arch blocked
-x 13
-y 18
-end
-arch blocked
-x 13
-y 19
-end
-arch blocked
-x 13
-y 20
-end
-arch blocked
-x 13
-y 21
-end
-arch blocked
-x 13
-y 22
-end
-arch blocked
-x 13
-y 23
-end
-arch blocked
-x 13
-y 24
-end
-arch blocked
-x 13
-y 25
-end
-arch blocked
-x 13
-y 26
-end
-arch blocked
-x 13
-y 27
-end
-arch blocked
-x 13
-y 28
-end
-arch blocked
-x 13
-y 29
-end
-arch blocked
-x 13
-y 30
-end
-arch blocked
-x 13
-y 31
-end
-arch blocked
-x 13
-y 32
-end
-arch blocked
-x 13
-y 33
-end
-arch blocked
-x 13
-y 34
 end
 arch dirtfloor
 x 14
@@ -2951,97 +2512,9 @@ arch cave_15
 x 14
 y 11
 end
-arch cave_15
+arch blocked
 x 14
 y 12
-end
-arch cave_15
-x 14
-y 13
-end
-arch blocked
-x 14
-y 14
-end
-arch blocked
-x 14
-y 15
-end
-arch blocked
-x 14
-y 16
-end
-arch blocked
-x 14
-y 17
-end
-arch blocked
-x 14
-y 18
-end
-arch blocked
-x 14
-y 19
-end
-arch blocked
-x 14
-y 20
-end
-arch blocked
-x 14
-y 21
-end
-arch blocked
-x 14
-y 22
-end
-arch blocked
-x 14
-y 23
-end
-arch blocked
-x 14
-y 24
-end
-arch blocked
-x 14
-y 25
-end
-arch blocked
-x 14
-y 26
-end
-arch blocked
-x 14
-y 27
-end
-arch blocked
-x 14
-y 28
-end
-arch blocked
-x 14
-y 29
-end
-arch blocked
-x 14
-y 30
-end
-arch blocked
-x 14
-y 31
-end
-arch blocked
-x 14
-y 32
-end
-arch blocked
-x 14
-y 33
-end
-arch blocked
-x 14
-y 34
 end
 arch dirtfloor
 x 15
@@ -3121,97 +2594,9 @@ arch cave_15
 x 15
 y 11
 end
-arch cave_15
+arch blocked
 x 15
 y 12
-end
-arch cave_15
-x 15
-y 13
-end
-arch blocked
-x 15
-y 14
-end
-arch blocked
-x 15
-y 15
-end
-arch blocked
-x 15
-y 16
-end
-arch blocked
-x 15
-y 17
-end
-arch blocked
-x 15
-y 18
-end
-arch blocked
-x 15
-y 19
-end
-arch blocked
-x 15
-y 20
-end
-arch blocked
-x 15
-y 21
-end
-arch blocked
-x 15
-y 22
-end
-arch blocked
-x 15
-y 23
-end
-arch blocked
-x 15
-y 24
-end
-arch blocked
-x 15
-y 25
-end
-arch blocked
-x 15
-y 26
-end
-arch blocked
-x 15
-y 27
-end
-arch blocked
-x 15
-y 28
-end
-arch blocked
-x 15
-y 29
-end
-arch blocked
-x 15
-y 30
-end
-arch blocked
-x 15
-y 31
-end
-arch blocked
-x 15
-y 32
-end
-arch blocked
-x 15
-y 33
-end
-arch blocked
-x 15
-y 34
 end
 arch cave_15
 x 16
@@ -3260,234 +2645,7 @@ arch cave_15
 x 16
 y 11
 end
-arch cave_15
+arch blocked
 x 16
 y 12
-end
-arch cave_15
-x 16
-y 13
-end
-arch blocked
-x 16
-y 14
-end
-arch blocked
-x 16
-y 15
-end
-arch blocked
-x 16
-y 16
-end
-arch blocked
-x 16
-y 17
-end
-arch blocked
-x 16
-y 18
-end
-arch blocked
-x 16
-y 19
-end
-arch blocked
-x 16
-y 20
-end
-arch blocked
-x 16
-y 21
-end
-arch blocked
-x 16
-y 22
-end
-arch blocked
-x 16
-y 23
-end
-arch blocked
-x 16
-y 24
-end
-arch blocked
-x 16
-y 25
-end
-arch blocked
-x 16
-y 26
-end
-arch blocked
-x 16
-y 27
-end
-arch blocked
-x 16
-y 28
-end
-arch blocked
-x 16
-y 29
-end
-arch blocked
-x 16
-y 30
-end
-arch blocked
-x 16
-y 31
-end
-arch blocked
-x 16
-y 32
-end
-arch blocked
-x 16
-y 33
-end
-arch blocked
-x 16
-y 34
-end
-arch cave_15
-x 17
-end
-arch cave_15
-x 17
-y 1
-end
-arch cave_15
-x 17
-y 2
-end
-arch cave_15
-x 17
-y 3
-end
-arch cave_15
-x 17
-y 4
-end
-arch cave_15
-x 17
-y 5
-end
-arch cave_15
-x 17
-y 6
-end
-arch cave_15
-x 17
-y 7
-end
-arch cave_15
-x 17
-y 8
-end
-arch cave_15
-x 17
-y 9
-end
-arch cave_15
-x 17
-y 10
-end
-arch cave_15
-x 17
-y 11
-end
-arch cave_15
-x 17
-y 12
-end
-arch cave_15
-x 17
-y 13
-end
-arch blocked
-x 17
-y 14
-end
-arch blocked
-x 17
-y 15
-end
-arch blocked
-x 17
-y 16
-end
-arch blocked
-x 17
-y 17
-end
-arch blocked
-x 17
-y 18
-end
-arch blocked
-x 17
-y 19
-end
-arch blocked
-x 17
-y 20
-end
-arch blocked
-x 17
-y 21
-end
-arch blocked
-x 17
-y 22
-end
-arch blocked
-x 17
-y 23
-end
-arch blocked
-x 17
-y 24
-end
-arch blocked
-x 17
-y 25
-end
-arch blocked
-x 17
-y 26
-end
-arch blocked
-x 17
-y 27
-end
-arch blocked
-x 17
-y 28
-end
-arch blocked
-x 17
-y 29
-end
-arch blocked
-x 17
-y 30
-end
-arch blocked
-x 17
-y 31
-end
-arch blocked
-x 17
-y 32
-end
-arch blocked
-x 17
-y 33
-end
-arch blocked
-x 17
-y 34
 end
