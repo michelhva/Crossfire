@@ -5,7 +5,7 @@ type 8
 subtype 12
 material 1
 skill literacy
-value 8
+value 0
 identified 1
 weight 1
 name_pl checks
