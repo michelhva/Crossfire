@@ -570,28 +570,27 @@ def cmd_checks():
             bank.deposit(activatorname, 100)
             return
 
-        # Create an IPO package but don't mail it until we're ready.
-        package = activator.Map.CreateObject('package', 1, 1)
-        package.Name = "IPO-package F: The-Imperial-Bank-of-Skud T: %s" \
-                % activator.Name
+        # Create a check based on a template in the IPO storage map.
+        checkbook = mailmap.ObjectAt(5, 0)
 
-        # Create a check based on a template in the bank map.
-        check = mailmap.ObjectAt(int(5), int(0))
-
-        if check is None:
+        if checkbook is None:
             whoami.Say("Hmm... I can't seem find my checkbook press... " \
                     "Your payment has been refunded.")
             bank.deposit(activatorname, 100)
             return
 
-        # Mail the package.
+        # Create and mail an IPO package to the player.
+        package = activator.Map.CreateObject('package', 1, 1)
+        package.Name = "IPO-package F: The-Imperial-Bank-of-Skud T: %s" \
+                % activator.Name
+
         package.Teleport(mailmap, 2, 2)
 
-        check.Name = str(activator.Name + "'s Checkbook")
-        cheques = check.CheckArchInventory('bankcard')
-        cheques.Name = str(activator.Name + "'s Check")
-        cheques.NamePl = str(activator.Name + "'s Checks")
-        chequenew = check.InsertInto(package)
+        checkbook.Name = activator.Name + "'s Checkbook"
+        checks = checkbook.CheckArchInventory('bankcard')
+        checks.Name = activator.Name + "'s Check"
+        checks.NamePl = activator.Name + "'s Checks"
+        chequenew = checkbook.InsertInto(package)
 
         message = "Your checks have been mailed. Thank you!"
     else:
