@@ -32,10 +32,10 @@ color = Crossfire.MessageFlag.NDI_GREEN	# color to display messages
 recipe_arch = 'caramel'			# archetype generated when recipe is complete
 eggs_count = 4
 failure_chance = 15
-recipient_x = 3				# position of the recipient to drop ingredients into
-recipient_y = 8
-stove_x = 4				# position of the stove the cook will use
-stove_y = 8
+recipient_x = 5				# position of the recipient to drop ingredients into
+recipient_y = 10
+stove_x = 6				# position of the stove the cook will use
+stove_y = 10
 
 def check_ingredients():
 	''' Finds the ingredients in the recipient. Used when recipient is closed, and when Farnass
@@ -104,11 +104,11 @@ def end_cooking(success):
 		omelet.Slaying = 'Farnass\'s Special Caramel'
 		omelet.Quantity = 1
 
-        # quest advancer
-        event = omelet.CreateObject("event_pickup")
-        event.Name = "wolfsburg/Lursendis 40>70"
-        event.Title = "Python"
-        event.Slaying = "/python/quests/QuestAdvance.py"
+		# quest advancer
+		event = omelet.CreateObject("event_pickup")
+		event.Name = "wolfsburg/Lursendis 40>70"
+		event.Title = "Python"
+		event.Slaying = "/python/quests/QuestAdvance.py"
 
 def close_boiler():
 	'''Just tell the cook to check next time.'''
