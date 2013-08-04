@@ -40,10 +40,6 @@ CoinTypes = {
     '100 IMPERIAL NOTE': 1000000,
     }
 
-# The names of the most common coin types (must be least to greatest value).
-# Do not include the least valuable coin (currently "SILVER").
-commonCoinNames = ["GOLD", "PLATINUM", "JADE", "AMBERIUM"]
-
 # Associate coin names with their corresponding archetypes.
 ArchType = {
     'SILVER': 'silvercoin',
@@ -100,20 +96,7 @@ def getExchangeRate(coinName):
 # ----------------------------------------------------------------------------
 # Return a string representing the given amount in silver.
 def strAmount(amount):
-    # Find the most valuable coin type we can use (amount / value >= 1).
-    # The [::-1] syntax is a hack to reverse 'commonCoinNames'.
-    for coinName in commonCoinNames[::-1]:
-        value = CoinTypes[coinName]
-        if amount >= value:
-            # Do not display the decimal point if it is not necessary.
-            realValue = float(amount) / value
-            if realValue != int(realValue):
-                return "%.3f %s" % (realValue, coinName.lower())
-            else:
-                return "%d %s" % (int(realValue), coinName.lower())
-
-    # If no suitable coin was found, use the base value (silver).
-    return "%d %s" % (amount, "silver")
+    return Crossfire.CostStringFromValue(amount)
 
 # ----------------------------------------------------------------------------
 # Called when the deposit box (ATM) is opened.
