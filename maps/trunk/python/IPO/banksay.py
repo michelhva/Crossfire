@@ -558,43 +558,33 @@ def cmd_exchange(text):
     whoami.Say(message)
 
 # ----------------------------------------------------------------------------
-# Send a checkbook to the player via the IPS.
-# TODO: Make this work (check the maps!).
+# Sell the player a personalized check book with checks.
 def cmd_checks():
     if bank.withdraw(activatorname, 100):
-        mailmap = Crossfire.ReadyMap('/planes/IPO_storage')
+        # Create a new checkbook and perform sanity checking.
+        checkbook = Crossfire.CreateObjectByName("checkbook")
+        checks = Crossfire.CreateObjectByName("check")
 
-        if not mailmap:
-            whoami.Say("It seems that the IPO is on strike. " \
-                    "Your payment has been refunded.")
+        if checkbook is None or checks is None:
+            whoami.Say("Hmm... I seem to have run out of checks today. Please come back some other time.")
+            Crossfire.Log(Crossfire.LogError, "Failed to create checks.")
             bank.deposit(activatorname, 100)
             return
 
-        # Create a check based on a template in the IPO storage map.
-        checkbook = mailmap.ObjectAt(5, 0)
-
-        if checkbook is None:
-            whoami.Say("Hmm... I can't seem find my checkbook press... " \
-                    "Your payment has been refunded.")
-            bank.deposit(activatorname, 100)
-            return
-
-        # Create and mail an IPO package to the player.
-        package = activator.Map.CreateObject('package', 1, 1)
-        package.Name = "IPO-package F: The-Imperial-Bank-of-Skud T: %s" \
-                % activator.Name
-
-        package.Teleport(mailmap, 2, 2)
-
+        # Set various properties on the newly created checks.
         checkbook.Name = activator.Name + "'s Checkbook"
-        checks = checkbook.CheckArchInventory('bankcard')
+        checkbook.NamePl = activator.Name + "'s Checkbooks"
         checks.Name = activator.Name + "'s Check"
         checks.NamePl = activator.Name + "'s Checks"
-        chequenew = checkbook.InsertInto(package)
+        checks.Message = "Pay to the Order Of:"
+        checks.Quantity = 100
+        checks.InsertInto(checkbook)
 
-        message = "Your checks have been mailed. Thank you!"
+        # Give the new check book to the player.
+        checkbook.Teleport(activator.Map, x, y)
+        message = "Here is your new checkbook, enjoy!"
     else:
-        message = "Checks cost 100 silver (2 platinum). " \
+        message = "Each check book (100 checks) costs two platinum." \
                 "You do not have enough money in your bank account."
 
     whoami.Say(message)

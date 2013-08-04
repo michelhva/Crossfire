@@ -2,7 +2,7 @@ arch map
 name IPO Storage Room
 difficulty 1
 region creation
-width 6
+width 5
 height 5
 enter_x 2
 enter_y 2
@@ -133,30 +133,4 @@ end
 arch grass
 x 4
 y 4
-end
-arch checkbook
-name check book
-race gold and jewels
-msg
-This is your check book. Don't let your identity be stolen!
-endmsg
-x 5
-type 122
-value 0
-identified 1
-arch bankcard
-name blank check
-name_pl blank checks
-msg
-Pay to the order of:
-endmsg
-nrof 100
-value 0
-weight 1
-identified 1
-arch event_drop
-title Python
-slaying /python/IPO/checks.py
-end
-end
 end
