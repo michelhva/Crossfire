@@ -316,11 +316,23 @@ def depositBoxClose():
 # ----------------------------------------------------------------------------
 # Print a help message for the player.
 def cmd_help():
-    message = "You can check your 'balance', 'deposit' or 'withdraw' your money, 'exchange' currency, 'cash' or buy 'checks', and find out the bank's 'profits'.\n\nAll transactions will be in imperial notes (1 note = 1000 gold) unless otherwise specified. A service charge of %d percent will be placed on all deposits." % service_charge
+    message = "The Bank of Skud can help you keep your money safe. In addition, you will be able to access your money from any bank in the world! A small service charge of %d percent will be placed on all deposits, though. What would you like to do?" % service_charge
 
     if activator.DungeonMaster:
         message += "\n\nAs the DM, you can also clear the bank's profits by using 'reset-profits'."
 
+    Crossfire.AddReply("balance", "I want to check my balance.")
+    Crossfire.AddReply("deposit", "I'd like to deposit some money.")
+    Crossfire.AddReply("withdraw", "I'd like to withdraw some money.")
+    Crossfire.AddReply("profits", "How much money has the Bank of Skud made?")
+
+    whoami.Say(message)
+
+# ----------------------------------------------------------------------------
+# Teach the player how to use checks.
+def cmd_help_checks():
+    message = "You'll need to order a checkbook if you haven't already. On the first line, write who you want to pay. On the next line, write the amount you want to pay. Finally, sign the check with your name on the last line."
+    Crossfire.AddReply("order", "I want to order 100 checks (2 platinum).")
     whoami.Say(message)
 
 # ----------------------------------------------------------------------------
@@ -393,7 +405,6 @@ def cmd_deposit(text):
                             random.choice(thanks_message))
         else:
             message = "But you don't have that much in your inventory!"
-
     elif len(text) == 2:
         if text[1] == 'check':
             transaction = processCheck()
@@ -405,11 +416,11 @@ def cmd_deposit(text):
             else:
                 message = "Here's your check back."
         else:
-            message = "What type of money would you like to deposit?"
+            message = "What kind of money would you like to deposit?"
     else:
-        message = "Usage:\n" \
-                "\tdeposit <amount> <coin type>\n" \
-                "\tdeposit check"
+        message = "What would you like to deposit?"
+        Crossfire.AddReply("deposit <amount> <coin type>", "Some money.")
+        Crossfire.AddReply("deposit check", "A check, please.")
 
     whoami.Say(message)
 
@@ -418,11 +429,8 @@ def cmd_deposit(text):
 def cmd_withdraw(argv):
     argc = len(argv)
 
-    # Withdraw a certain number of imperial notes.
-    if argc == 2:
-        message = "Sorry, I don't know how to do that yet."
     # Withdraw a certain number of a certain coin.
-    elif argc >= 3:
+    if argc >= 3:
         coinName = getCoinNameFromArgs(argv[2:])
         exchange_rate = getExchangeRate(coinName)
         amount = int(argv[1])
@@ -449,9 +457,8 @@ def cmd_withdraw(argv):
         else:
             message = "I'm sorry, you don't have enough money."
     else:
-        message = "Usage:\n" \
-                "\twithdraw <amount in imperials>\n" \
-                "\twithdraw <amount> <coin type>"
+        message = "How much money would you like to withdraw?"
+        Crossfire.AddReply("withdraw <amount> <coin name>", "")
 
     whoami.Say(message)
 
@@ -499,7 +506,7 @@ def cmd_exchange(text):
 
 # ----------------------------------------------------------------------------
 # Sell the player a personalized check book with checks.
-def cmd_checks():
+def cmd_order_checks():
     if bank.withdraw(activatorname, 100):
         # Create a new checkbook and perform sanity checking.
         checkbook = Crossfire.CreateObjectByName("checkbook")
@@ -522,7 +529,7 @@ def cmd_checks():
 
         # Give the new check book to the player.
         checkbook.Teleport(activator.Map, x, y)
-        message = "Here is your new checkbook, enjoy!"
+        message = "Here you go, 2 platinum withdrawn, enjoy!"
     else:
         message = "Each check book (100 checks) costs two platinum." \
                 "You do not have enough money in your bank account."
@@ -554,26 +561,26 @@ if whoami.Name.find('Deposit Box') > -1:
 else:
     text = Crossfire.WhatIsMessage().split()
 
-    if text[0] == 'help' or text[0] == 'yes':
+    if text[0] == "learn":
         cmd_help()
-    elif text[0] == 'profits':
+    elif text[0] == "checks":
+        cmd_help_checks()
+    elif text[0] == "profits":
         cmd_show_profits()
-    elif text[0] == 'reset-profits':
+    elif text[0] == "reset-profits":
         cmd_reset_profit()
-    elif text[0] == 'balance':
+    elif text[0] == "balance":
         cmd_balance(text)
-    elif text[0] == 'deposit':
+    elif text[0] == "deposit":
         cmd_deposit(text)
-    elif text[0] == 'withdraw':
+    elif text[0] == "withdraw":
         cmd_withdraw(text)
-    elif text[0] == 'exchange':
-        cmd_exchange(text)
-    elif text[0] == 'checks':
-        cmd_checks()
-    elif text[0] == 'cash':
-        cmd_cash(text)
+    elif text[0] == "order":
+        cmd_order_checks()
     else:
-        whoami.Say("Do you need help?")
+        whoami.Say("Hello, what can I help you with today?")
+        Crossfire.AddReply("learn", "I want to learn how to use the bank.")
+        Crossfire.AddReply("checks", "Can you teach me about checks?")
 
     # Close bank database (required) and return.
     bank.close()
