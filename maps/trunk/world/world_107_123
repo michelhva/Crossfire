@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2013-05-30 Rick Tanner
+Modified: 2013-08-06 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -5723,7 +5723,7 @@ y 31
 elevation 1566
 end
 arch l_shop1
-name Acme Inc.
+name Acme Inc. Building Shop
 slaying /brest/shops/buildshop
 hp 6
 sp 24
@@ -7094,7 +7094,7 @@ x 25
 y 35
 end
 arch t_house2_fant
-name Brest town house
+name Brest Private Apartment
 slaying /brest/apartments/brest_town_house
 hp 8
 sp 32
@@ -8858,10 +8858,10 @@ y 29
 elevation 2520
 end
 arch inn_fant
-name Brest inn
+name Brest Inn
 slaying /brest/brest.inn
 hp 14
-sp 23
+sp 19
 x 31
 y 29
 end
@@ -9418,10 +9418,6 @@ x 33
 y 17
 elevation 2081
 end
-arch evergreens2
-x 33
-y 17
-end
 arch fort
 name Nasty Hallway
 slaying /brest/pantheon
@@ -9785,10 +9781,6 @@ arch grass_only
 x 34
 y 17
 elevation 2408
-end
-arch evergreens2
-x 34
-y 17
 end
 arch brush
 x 34
@@ -10499,7 +10491,7 @@ y 29
 elevation 1283
 end
 arch house_1
-name trademarket
+name Trade Market
 slaying /brest/brest.trademarket
 hp 7
 sp 15
