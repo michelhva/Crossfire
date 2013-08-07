@@ -7092,7 +7092,7 @@ x 25
 y 35
 end
 arch t_house2_fant
-name Brest Private Apartment
+name Permenant Apartments
 slaying /brest/apartments/brest_town_house
 hp 8
 sp 32
@@ -7636,8 +7636,8 @@ x 27
 y 28
 elevation 2182
 end
-arch guild_fant
-name Black Shield's storage room
+arch guildstorage
+name Black Shield's Storage Room
 slaying /brest/black_shield/storage_room
 hp 1
 sp 10
@@ -10173,7 +10173,7 @@ x 35
 y 29
 elevation 1509
 end
-arch house_1
+arch s_shop2
 name Brest Imperial Post Office
 slaying /brest/brest.IPO
 hp 7
@@ -10488,7 +10488,7 @@ x 36
 y 29
 elevation 1283
 end
-arch house_1
+arch bungalow
 name Trade Market
 slaying /brest/brest.trademarket
 hp 7
@@ -10563,7 +10563,7 @@ x 36
 y 38
 elevation 100
 end
-arch guild_fant
+arch store_general_fant
 name Brest CVT
 slaying /brest/shops/brest.cvt
 hp 11
@@ -11451,14 +11451,13 @@ x 39
 y 31
 elevation 1072
 end
-arch house_1
-x 39
-y 32
-end
 arch brush
 x 39
 y 32
-elevation 1397
+end
+arch house_1
+x 39
+y 32
 end
 arch brush
 x 39
@@ -11520,7 +11519,7 @@ x 39
 y 40
 elevation 485
 end
-arch guild_fant
+arch guild2
 name Guild of the Black Shield
 slaying /brest/black_shield/mainfloor
 hp 15
@@ -11784,14 +11783,9 @@ x 40
 y 36
 elevation 1311
 end
-arch brush
-x 40
-y 37
-end
 arch grass_only
 x 40
 y 37
-elevation 1416
 end
 arch tree3
 x 40
