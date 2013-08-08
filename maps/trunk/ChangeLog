@@ -1,3 +1,1541 @@
+2013-08-08 18:19  rjtanner
+
+	* unlinked/chadfire/towns/castle/inn,
+	  unlinked/chadfire/towns/port/general_shop,
+	  unlinked/chadfire/towns/port/inn,
+	  unlinked/chadfire/world/wilderness_102_104,
+	  unlinked/chadfire/world/wilderness_103_102,
+	  unlinked/chadfire/world/wilderness_103_103,
+	  unlinked/chadfire/world/wilderness_103_104,
+	  unlinked/chadfire/world/wilderness_103_105,
+	  unlinked/chadfire/world/wilderness_103_106,
+	  unlinked/chadfire/world/wilderness_104_102,
+	  unlinked/chadfire/world/wilderness_104_103,
+	  unlinked/chadfire/world/wilderness_104_104,
+	  unlinked/chadfire/world/wilderness_104_106,
+	  unlinked/chadfire/world/wilderness_104_107,
+	  unlinked/chadfire/world/wilderness_104_108,
+	  unlinked/chadfire/world/wilderness_104_109,
+	  unlinked/chadfire/world/wilderness_104_111,
+	  unlinked/chadfire/world/wilderness_104_112,
+	  unlinked/chadfire/world/wilderness_105_103,
+	  unlinked/chadfire/world/wilderness_105_105,
+	  unlinked/chadfire/world/wilderness_105_106,
+	  unlinked/chadfire/world/wilderness_105_107,
+	  unlinked/chadfire/world/wilderness_105_108,
+	  unlinked/chadfire/world/wilderness_105_109,
+	  unlinked/chadfire/world/wilderness_105_110,
+	  unlinked/chadfire/world/wilderness_105_111,
+	  unlinked/chadfire/world/wilderness_105_112,
+	  unlinked/chadfire/world/wilderness_105_113,
+	  unlinked/chadfire/world/wilderness_105_114,
+	  unlinked/chadfire/world/wilderness_106_103,
+	  unlinked/chadfire/world/wilderness_106_104,
+	  unlinked/chadfire/world/wilderness_106_105,
+	  unlinked/chadfire/world/wilderness_106_106,
+	  unlinked/chadfire/world/wilderness_106_109,
+	  unlinked/chadfire/world/wilderness_106_110,
+	  unlinked/chadfire/world/wilderness_106_111,
+	  unlinked/chadfire/world/wilderness_106_112,
+	  unlinked/chadfire/world/wilderness_106_113,
+	  unlinked/chadfire/world/wilderness_106_114,
+	  unlinked/chadfire/world/wilderness_106_115,
+	  unlinked/chadfire/world/wilderness_107_103,
+	  unlinked/chadfire/world/wilderness_107_104,
+	  unlinked/chadfire/world/wilderness_107_105,
+	  unlinked/chadfire/world/wilderness_107_106,
+	  unlinked/chadfire/world/wilderness_107_107,
+	  unlinked/chadfire/world/wilderness_107_108,
+	  unlinked/chadfire/world/wilderness_107_109,
+	  unlinked/chadfire/world/wilderness_107_110,
+	  unlinked/chadfire/world/wilderness_107_111,
+	  unlinked/chadfire/world/wilderness_107_113,
+	  unlinked/chadfire/world/wilderness_107_114,
+	  unlinked/chadfire/world/wilderness_107_115,
+	  unlinked/chadfire/world/wilderness_107_116,
+	  unlinked/chadfire/world/wilderness_108_103,
+	  unlinked/chadfire/world/wilderness_108_104,
+	  unlinked/chadfire/world/wilderness_108_106,
+	  unlinked/chadfire/world/wilderness_108_107,
+	  unlinked/chadfire/world/wilderness_108_108,
+	  unlinked/chadfire/world/wilderness_108_109,
+	  unlinked/chadfire/world/wilderness_108_110,
+	  unlinked/chadfire/world/wilderness_108_112,
+	  unlinked/chadfire/world/wilderness_108_114,
+	  unlinked/chadfire/world/wilderness_108_115,
+	  unlinked/chadfire/world/wilderness_108_117,
+	  unlinked/chadfire/world/wilderness_109_103,
+	  unlinked/chadfire/world/wilderness_109_104,
+	  unlinked/chadfire/world/wilderness_109_105,
+	  unlinked/chadfire/world/wilderness_109_107,
+	  unlinked/chadfire/world/wilderness_109_109,
+	  unlinked/chadfire/world/wilderness_109_110,
+	  unlinked/chadfire/world/wilderness_109_111,
+	  unlinked/chadfire/world/wilderness_109_112,
+	  unlinked/chadfire/world/wilderness_109_113,
+	  unlinked/chadfire/world/wilderness_109_114,
+	  unlinked/chadfire/world/wilderness_109_115,
+	  unlinked/chadfire/world/wilderness_109_117,
+	  unlinked/chadfire/world/wilderness_109_118,
+	  unlinked/chadfire/world/wilderness_110_104,
+	  unlinked/chadfire/world/wilderness_110_105,
+	  unlinked/chadfire/world/wilderness_110_106,
+	  unlinked/chadfire/world/wilderness_110_108,
+	  unlinked/chadfire/world/wilderness_110_109,
+	  unlinked/chadfire/world/wilderness_110_110,
+	  unlinked/chadfire/world/wilderness_110_111,
+	  unlinked/chadfire/world/wilderness_110_112,
+	  unlinked/chadfire/world/wilderness_110_113,
+	  unlinked/chadfire/world/wilderness_110_114,
+	  unlinked/chadfire/world/wilderness_110_115,
+	  unlinked/chadfire/world/wilderness_110_116,
+	  unlinked/chadfire/world/wilderness_110_117,
+	  unlinked/chadfire/world/wilderness_110_118,
+	  unlinked/chadfire/world/wilderness_111_104,
+	  unlinked/chadfire/world/wilderness_111_105,
+	  unlinked/chadfire/world/wilderness_111_106,
+	  unlinked/chadfire/world/wilderness_111_107,
+	  unlinked/chadfire/world/wilderness_111_108,
+	  unlinked/chadfire/world/wilderness_111_109,
+	  unlinked/chadfire/world/wilderness_111_110,
+	  unlinked/chadfire/world/wilderness_111_111,
+	  unlinked/chadfire/world/wilderness_111_112,
+	  unlinked/chadfire/world/wilderness_111_113,
+	  unlinked/chadfire/world/wilderness_111_114,
+	  unlinked/chadfire/world/wilderness_111_115,
+	  unlinked/chadfire/world/wilderness_111_116,
+	  unlinked/chadfire/world/wilderness_111_117,
+	  unlinked/chadfire/world/wilderness_112_104,
+	  unlinked/chadfire/world/wilderness_112_105,
+	  unlinked/chadfire/world/wilderness_112_106,
+	  unlinked/chadfire/world/wilderness_112_107,
+	  unlinked/chadfire/world/wilderness_112_108,
+	  unlinked/chadfire/world/wilderness_112_109,
+	  unlinked/chadfire/world/wilderness_112_111,
+	  unlinked/chadfire/world/wilderness_112_112,
+	  unlinked/chadfire/world/wilderness_112_113,
+	  unlinked/chadfire/world/wilderness_112_114,
+	  unlinked/chadfire/world/wilderness_112_115,
+	  unlinked/chadfire/world/wilderness_112_117,
+	  unlinked/chadfire/world/wilderness_113_104,
+	  unlinked/chadfire/world/wilderness_113_105,
+	  unlinked/chadfire/world/wilderness_113_107,
+	  unlinked/chadfire/world/wilderness_113_108,
+	  unlinked/chadfire/world/wilderness_113_109,
+	  unlinked/chadfire/world/wilderness_113_110,
+	  unlinked/chadfire/world/wilderness_113_111,
+	  unlinked/chadfire/world/wilderness_113_112,
+	  unlinked/chadfire/world/wilderness_113_113,
+	  unlinked/chadfire/world/wilderness_113_114,
+	  unlinked/chadfire/world/wilderness_113_115,
+	  unlinked/chadfire/world/wilderness_114_106,
+	  unlinked/chadfire/world/wilderness_114_107,
+	  unlinked/chadfire/world/wilderness_114_109,
+	  unlinked/chadfire/world/wilderness_114_111,
+	  unlinked/chadfire/world/wilderness_114_112,
+	  unlinked/chadfire/world/wilderness_114_113,
+	  unlinked/chadfire/world/wilderness_114_115,
+	  unlinked/chadfire/world/wilderness_115_106,
+	  unlinked/chadfire/world/wilderness_115_107,
+	  unlinked/chadfire/world/wilderness_115_108,
+	  unlinked/chadfire/world/wilderness_115_109,
+	  unlinked/chadfire/world/wilderness_115_110,
+	  unlinked/chadfire/world/wilderness_115_111,
+	  unlinked/chadfire/world/wilderness_115_112,
+	  unlinked/chadfire/world/wilderness_115_113,
+	  unlinked/chadfire/world/wilderness_115_114,
+	  unlinked/chadfire/world/wilderness_116_106,
+	  unlinked/chadfire/world/wilderness_116_107,
+	  unlinked/chadfire/world/wilderness_116_108,
+	  unlinked/chadfire/world/wilderness_116_110,
+	  unlinked/chadfire/world/wilderness_116_111,
+	  unlinked/chadfire/world/wilderness_116_112,
+	  unlinked/chadfire/world/wilderness_116_113,
+	  unlinked/chadfire/world/wilderness_117_109,
+	  unlinked/chadfire/world/wilderness_117_110,
+	  unlinked/chadfire/world/wilderness_117_111,
+	  unlinked/chadfire/world/wilderness_117_113,
+	  unlinked/chadfire/world/wilderness_117_114: Run MapNormalizer
+	  editor script on all unlinked/chadfire map files.
+
+2013-08-07 02:06  partmedia
+
+	* brest/shops/brest.cvt: Revamp Brest CVT; fix bank and smith shop.
+
+2013-08-07 02:06  partmedia
+
+	* world/world_107_123: Give enterable buildings special pixmaps.
+
+2013-08-07 02:05  partmedia
+
+	* brest/black_shield/bigchest, brest/black_shield/ground,
+	  brest/black_shield/upper: Remove obsolete guild files.
+
+2013-08-07 02:05  partmedia
+
+	* world/world_107_123: Fix Tower of Ludo entrance.
+
+2013-08-07 02:05  partmedia
+
+	* brest/brest.inn, world/world_107_123: Revamp Brest Inn.
+
+2013-08-05 03:10  partmedia
+
+	* pup_land/rainbow/station, pup_land/world: Minor map fixes.
+
+2013-08-05 03:10  partmedia
+
+	* pup_land/begin/adv: Supreme potions of life shouldn't be so easy
+	  to get.
+
+2013-08-05 03:10  partmedia
+
+	* python/IPO/banksay.py: Attitude change from bank employees.
+
+2013-08-05 03:09  partmedia
+
+	* python/IPO/banksay.py: Implement check depositing.
+
+2013-08-04 18:36  kstenger
+
+	* planes/greenway1, planes/greenway3, planes/greenway4,
+	  planes/greenway6, planes/greenway7, planes/greenway8,
+	  planes/greenway9: Fix map's tiling to avoid server crash.
+	  (related to bug #756)
+
+2013-08-04 12:56  partmedia
+
+	* planes/IPO_storage, python/IPO/banksay.py: Create checks instead
+	  of template-making them.
+
+2013-08-04 12:56  partmedia
+
+	* planes/IPO_storage, python/IPO/banksay.py: Fix checking by adding
+	  template to IPO storage.
+
+2013-08-04 11:10  ryo_saeba
+
+	* python/monsters/farnass.py: Fix script, frypan and stove had
+	  changed positions.
+
+2013-08-04 10:35  partmedia
+
+	* python/IPO/banksay.py: Re-implement strAmount() as a wrapper to
+	  standard function.
+	  
+	  Thanks to Nicholas for pointing this out!
+
+2013-08-04 10:34  partmedia
+
+	* inn_and_outpost/hermes_inn2: Don't mark as outdoor map.
+
+2013-08-03 00:29  partmedia
+
+	* scorn/guilds/mailed_fist/bigchest,
+	  scorn/guilds/mailed_fist/ground, scorn/guilds/mailed_fist/upper:
+	  Remove obsolete guild files.
+
+2013-08-03 00:29  partmedia
+
+	* euthville/church, euthville/church/devil.church1,
+	  euthville/church/devil.church2, euthville/church/devil.church3,
+	  euthville/church/devil.church4, euthville/church/devil.church5,
+	  euthville/church/valriel, euthville/church/valriel.msg,
+	  euthville/devil.church1, euthville/devil.church2,
+	  euthville/devil.church3, euthville/devil.church4,
+	  euthville/devil.church5, euthville/valriel,
+	  euthville/valriel.msg, world/world_105_113: Put Valriel church
+	  and quest in separate folder.
+
+2013-08-03 00:29  partmedia
+
+	* euthville/devil.church1, euthville/devil.church2,
+	  euthville/devil.church4, euthville/devil.church5,
+	  euthville/valriel, world/world_105_113: Various improvements to
+	  Valriel's Church.
+
+2013-08-03 00:29  partmedia
+
+	* world/world_105_113: Remove extra trees.
+
+2013-08-03 00:29  partmedia
+
+	* euthville/hallofbones: Add darkness and correctly block lower
+	  level.
+
+2013-08-03 00:28  partmedia
+
+	* python/IPO/banksay.py: Do not display the decimal point if it is
+	  not necessary.
+
+2013-08-03 00:28  partmedia
+
+	* python/IPO/banksay.py: Implement and use new silver-to-string
+	  function.
+	  
+	  Also take this opportunity to fix the bank profit calculations.
+
+2013-08-03 00:28  partmedia
+
+	* python/IPO/banksay.py: Update messages and TODOs.
+
+2013-08-03 00:28  partmedia
+
+	* python/CFBank.py: Update explanatory comment in CFBank.py.
+
+2013-08-03 00:28  partmedia
+
+	* python/IPO/banksay.py: Temporarily disable the broken ATMs.
+
+2013-08-03 00:28  partmedia
+
+	* python/IPO/banksay.py: Attempt to fix 'checks' command.
+
+2013-08-03 00:27  partmedia
+
+	* python/IPO/banksay.py: Improve deposit command.
+
+2013-08-03 00:27  partmedia
+
+	* python/IPO/banksay.py: Reimplement depositing money.
+
+2013-08-03 00:27  partmedia
+
+	* python/IPO/banksay.py: Rename profit resetting command to make
+	  more sense.
+
+2013-08-03 00:27  partmedia
+
+	* python/IPO/banksay.py: Add TODOs.
+
+2013-08-03 00:27  partmedia
+
+	* python/IPO/banksay.py: Improve 'balance' output.
+
+2013-08-03 00:27  partmedia
+
+	* python/IPO/banksay.py: Finish moving commands to separate
+	  functions.
+
+2013-08-03 00:26  partmedia
+
+	* python/IPO/banksay.py: Implement common utility methods.
+	  
+	  Reimplment 'balance' and 'withdraw' using the new utility
+	  methods. Move
+	  'deposit' into its own function but don't touch it yet.
+
+2013-08-03 00:26  partmedia
+
+	* python/IPO/banksay.py: Correctly close bank and fix 'profits'
+	  display.
+
+2013-08-03 00:26  partmedia
+
+	* python/CFBank.py: Correctly close bank file in CFBank.py.
+	  
+	  Open bank file with writeback set to false (default); setting it
+	  to True
+	  was not needed and caused a mysterious bug on my system. The
+	  Python
+	  reference manual recommends closing the database after writing
+	  data, so
+	  remove all sync() calls and instead force a close() in the end.
+
+2013-08-03 00:26  partmedia
+
+	* python/CFBank.py: Use more intuitive variable names.
+
+2013-08-03 00:26  partmedia
+
+	* python/CFBank.py: Trim source file header and whitespace
+	  formatting.
+
+2013-08-03 00:26  partmedia
+
+	* python/IPO/banksay.py: Implement new withdrawal command.
+
+2013-08-03 00:25  partmedia
+
+	* python/IPO/banksay.py: Offload trivial commands to their separate
+	  functions.
+
+2013-08-03 00:25  partmedia
+
+	* python/IPO/banksay.py: Stick help message in separate function.
+
+2013-08-03 00:25  partmedia
+
+	* python/IPO/banksay.py: Split deposit box code into separate
+	  functions.
+
+2013-08-03 00:25  partmedia
+
+	* python/IPO/banksay.py: Clean up unused variables and comment the
+	  rest.
+
+2013-08-03 00:24  partmedia
+
+	* python/IPO/banksay.py: Whitespace and formatting changes.
+
+2013-07-29 03:04  partmedia
+
+	* python/IPO/README, python/IPO/board.py, python/IPO/receive.py,
+	  python/IPO/say.py, python/IPO/send.py: Remove executable flag.
+
+2013-07-29 03:03  partmedia
+
+	* scorn/shops/potionshop: Remove duplicate tiles.
+
+2013-07-29 03:03  partmedia
+
+	* scorn/shops/foodshop: Remove 'race' property in Scorn Food Shop.
+	  
+	  In addition, pay somewhat well for flesh (this is a food shop,
+	  take into
+	  account races such as dragons). Also improve lighting and add a
+	  special
+	  place for players to sell stuff.
+
+2013-07-28 14:46  partmedia
+
+	* wolfsburg/tt/tta1, wolfsburg/tt/ttb1: Use map tiling for
+	  Wolfsburg Twin Towers (level 1).
+
+2013-07-28 04:53  partmedia
+
+	* marksel/wizard: Cosmetic cleanups to Sages' Tower.
+
+2013-07-28 04:53  partmedia
+
+	* marksel/cellar, marksel/keep, world/world_120_109: Fix stairs and
+	  other minor issues.
+
+2013-07-28 04:53  partmedia
+
+	* marksel/grumms_inn, marksel/grumms_inn2: Fix downstairs exit for
+	  Grumms Inn.
+	  
+	  Take this opportunity to improve the upstairs, fix the
+	  archetypes, and
+	  correct/improve NPC dialogue.
+
+2013-07-26 10:49  partmedia
+
+	* navar_city/troll_canyon/troll_canyon.2,
+	  navar_city/troll_canyon/troll_canyon.7: Don't require dimension
+	  door to win Troll Canyon.
+
+2013-07-26 10:49  partmedia
+
+	* navar_city/troll_canyon/troll_canyon.12,
+	  navar_city/troll_canyon/troll_canyon.4,
+	  navar_city/troll_canyon/troll_canyon.5,
+	  navar_city/troll_canyon/troll_canyon.6,
+	  navar_city/troll_canyon/troll_canyon.9: Fix capitalization of
+	  "Fierce Troll".
+
+2013-07-26 10:49  partmedia
+
+	* navar_city/troll_canyon/basement,
+	  navar_city/troll_canyon/troll_canyon.10,
+	  navar_city/troll_canyon/troll_canyon.12,
+	  navar_city/troll_canyon/troll_canyon.2,
+	  navar_city/troll_canyon/troll_canyon.4,
+	  navar_city/troll_canyon/troll_canyon.5,
+	  navar_city/troll_canyon/troll_canyon.7,
+	  navar_city/troll_canyon/troll_canyon.8,
+	  navar_city/troll_canyon/troll_canyon.9: Fix troll canyon map
+	  tiling.
+	  
+	  It's not a good idea to have tiles overlap each other; this tends
+	  to
+	  confuse the client. Move the tile below the other tile onto a
+	  separate
+	  map to solve this problem. Also fix tiles for entire map.
+	  
+	  Take this opportunity to better connect elements of the map.
+
+2013-07-26 07:50  partmedia
+
+	* navar_city/troll_canyon/entrance,
+	  navar_city/troll_canyon/troll_canyon.0,
+	  navar_city/troll_canyon/troll_canyon.1,
+	  navar_city/troll_canyon/troll_canyon.2, world/world_119_119: Do
+	  not tile Troll Canyon entrance.
+	  
+	  The entrance (32x64) is less than a single world map tile
+	  (50x50).
+	  Tiling does not have an advantage, and trolls only attack when a
+	  player
+	  is nearby anyways. This makes the map less confusing for map
+	  editors and
+	  DMs trying to reset the map.
+	  
+	  Also take this opportunity to correct capitalization and make the
+	  bridge
+	  troll actually say something (was broken due to typo).
+
+2013-07-26 07:50  partmedia
+
+	* navar_city/misc/highcourt, world/world_122_117: Fix up text
+	  in/near Navar High Court.
+
+2013-07-25 00:51  partmedia
+
+	* unlinked/chadfire/Nexus,
+	  unlinked/chadfire/towns/castle/apartments_upper,
+	  unlinked/chadfire/towns/port/Port: Fix several exit paths in
+	  Chadfire.
+
+2013-07-24 23:43  rjtanner
+
+	* unlinked/chadfire/TODO.txt: Assembled task list for working on
+	  and updating the chadfire maps found in this directory.
+
+2013-07-24 23:35  rjtanner
+
+	* unlinked/chadfire, unlinked/chadfire/HallOfSelection,
+	  unlinked/chadfire/Nexus, unlinked/chadfire/README.txt,
+	  unlinked/chadfire/lore.txt, unlinked/chadfire/misc,
+	  unlinked/chadfire/misc/ant_tunnel, unlinked/chadfire/misc/farm,
+	  unlinked/chadfire/misc/fisherman_shack,
+	  unlinked/chadfire/misc/graphic_shop,
+	  unlinked/chadfire/misc/graphic_shop/dragon_room,
+	  unlinked/chadfire/misc/graphic_shop/dwarf_room,
+	  unlinked/chadfire/misc/graphic_shop/elf_room,
+	  unlinked/chadfire/misc/graphic_shop/fenx_room,
+	  unlinked/chadfire/misc/graphic_shop/fireborn_room,
+	  unlinked/chadfire/misc/graphic_shop/gnome_room,
+	  unlinked/chadfire/misc/graphic_shop/gshop,
+	  unlinked/chadfire/misc/graphic_shop/halfling_room,
+	  unlinked/chadfire/misc/graphic_shop/halforc_room,
+	  unlinked/chadfire/misc/graphic_shop/human_room,
+	  unlinked/chadfire/misc/graphic_shop/northman_room,
+	  unlinked/chadfire/misc/graphic_shop/quetzalcoatl_room,
+	  unlinked/chadfire/misc/graphic_shop/serpentman_room,
+	  unlinked/chadfire/misc/graphic_shop/troll_room,
+	  unlinked/chadfire/misc/graphic_shop/wraith_room,
+	  unlinked/chadfire/misc/house1, unlinked/chadfire/misc/house10,
+	  unlinked/chadfire/misc/house2,
+	  unlinked/chadfire/misc/house2_basement,
+	  unlinked/chadfire/misc/house3, unlinked/chadfire/misc/house4,
+	  unlinked/chadfire/misc/house5, unlinked/chadfire/misc/house6,
+	  unlinked/chadfire/misc/house7, unlinked/chadfire/misc/house8,
+	  unlinked/chadfire/misc/house9,
+	  unlinked/chadfire/misc/house9_attic,
+	  unlinked/chadfire/misc/lighthouse1,
+	  unlinked/chadfire/misc/lighthouse2, unlinked/chadfire/misc/signs,
+	  unlinked/chadfire/misc/tower1, unlinked/chadfire/misc/tower2,
+	  unlinked/chadfire/misc/tower3, unlinked/chadfire/misc/tower4,
+	  unlinked/chadfire/misc/town1, unlinked/chadfire/misc/town2,
+	  unlinked/chadfire/misc/training, unlinked/chadfire/pictures,
+	  unlinked/chadfire/pictures/Castle.png,
+	  unlinked/chadfire/pictures/Port.png,
+	  unlinked/chadfire/pictures/wilderness.png,
+	  unlinked/chadfire/scaling.txt, unlinked/chadfire/town_needs.txt,
+	  unlinked/chadfire/towns, unlinked/chadfire/towns/castle,
+	  unlinked/chadfire/towns/castle/Castle,
+	  unlinked/chadfire/towns/castle/alchemy,
+	  unlinked/chadfire/towns/castle/alchemy_shop,
+	  unlinked/chadfire/towns/castle/apartments,
+	  unlinked/chadfire/towns/castle/apartments_upper,
+	  unlinked/chadfire/towns/castle/armory_shop,
+	  unlinked/chadfire/towns/castle/bank,
+	  unlinked/chadfire/towns/castle/barracks1,
+	  unlinked/chadfire/towns/castle/barracks2,
+	  unlinked/chadfire/towns/castle/boulderball1,
+	  unlinked/chadfire/towns/castle/boulderball_lobby,
+	  unlinked/chadfire/towns/castle/bowyer,
+	  unlinked/chadfire/towns/castle/cathedral,
+	  unlinked/chadfire/towns/castle/colliseum_entrance,
+	  unlinked/chadfire/towns/castle/dueling1,
+	  unlinked/chadfire/towns/castle/dueling_lobby,
+	  unlinked/chadfire/towns/castle/food_shop,
+	  unlinked/chadfire/towns/castle/inn,
+	  unlinked/chadfire/towns/castle/inn_basement,
+	  unlinked/chadfire/towns/castle/jeweler,
+	  unlinked/chadfire/towns/castle/jewelry_shop,
+	  unlinked/chadfire/towns/castle/keep,
+	  unlinked/chadfire/towns/castle/library,
+	  unlinked/chadfire/towns/castle/lighting_shop,
+	  unlinked/chadfire/towns/castle/magic_shop,
+	  unlinked/chadfire/towns/castle/medical_room,
+	  unlinked/chadfire/towns/castle/mess_hall1,
+	  unlinked/chadfire/towns/castle/mess_hall2,
+	  unlinked/chadfire/towns/castle/obstacle_course1,
+	  unlinked/chadfire/towns/castle/obstacle_course_lobby,
+	  unlinked/chadfire/towns/castle/post_office,
+	  unlinked/chadfire/towns/castle/prison,
+	  unlinked/chadfire/towns/castle/smithery,
+	  unlinked/chadfire/towns/castle/thaumaturgy,
+	  unlinked/chadfire/towns/castle/woodsman,
+	  unlinked/chadfire/towns/castle/wrestling1,
+	  unlinked/chadfire/towns/castle/wrestling_lobby,
+	  unlinked/chadfire/towns/port, unlinked/chadfire/towns/port/Port,
+	  unlinked/chadfire/towns/port/apartment,
+	  unlinked/chadfire/towns/port/apartment_lobby,
+	  unlinked/chadfire/towns/port/barracks,
+	  unlinked/chadfire/towns/port/city_hall,
+	  unlinked/chadfire/towns/port/general_shop,
+	  unlinked/chadfire/towns/port/inn,
+	  unlinked/chadfire/towns/port/mess_hall,
+	  unlinked/chadfire/towns/port/warehouse1,
+	  unlinked/chadfire/towns/port/warehouse2,
+	  unlinked/chadfire/towns/port/warehouse3,
+	  unlinked/chadfire/towns/port/warehouse4,
+	  unlinked/chadfire/towns/port/well,
+	  unlinked/chadfire/towns/port/well_caves, unlinked/chadfire/world,
+	  unlinked/chadfire/world/creator.zip,
+	  unlinked/chadfire/world/wilderness_100_100,
+	  unlinked/chadfire/world/wilderness_100_101,
+	  unlinked/chadfire/world/wilderness_100_102,
+	  unlinked/chadfire/world/wilderness_100_103,
+	  unlinked/chadfire/world/wilderness_100_104,
+	  unlinked/chadfire/world/wilderness_100_105,
+	  unlinked/chadfire/world/wilderness_100_106,
+	  unlinked/chadfire/world/wilderness_100_107,
+	  unlinked/chadfire/world/wilderness_100_108,
+	  unlinked/chadfire/world/wilderness_100_109,
+	  unlinked/chadfire/world/wilderness_100_110,
+	  unlinked/chadfire/world/wilderness_100_111,
+	  unlinked/chadfire/world/wilderness_100_112,
+	  unlinked/chadfire/world/wilderness_100_113,
+	  unlinked/chadfire/world/wilderness_100_114,
+	  unlinked/chadfire/world/wilderness_100_115,
+	  unlinked/chadfire/world/wilderness_100_116,
+	  unlinked/chadfire/world/wilderness_100_117,
+	  unlinked/chadfire/world/wilderness_100_118,
+	  unlinked/chadfire/world/wilderness_100_119,
+	  unlinked/chadfire/world/wilderness_100_120,
+	  unlinked/chadfire/world/wilderness_101_100,
+	  unlinked/chadfire/world/wilderness_101_101,
+	  unlinked/chadfire/world/wilderness_101_102,
+	  unlinked/chadfire/world/wilderness_101_103,
+	  unlinked/chadfire/world/wilderness_101_104,
+	  unlinked/chadfire/world/wilderness_101_105,
+	  unlinked/chadfire/world/wilderness_101_106,
+	  unlinked/chadfire/world/wilderness_101_107,
+	  unlinked/chadfire/world/wilderness_101_108,
+	  unlinked/chadfire/world/wilderness_101_109,
+	  unlinked/chadfire/world/wilderness_101_110,
+	  unlinked/chadfire/world/wilderness_101_111,
+	  unlinked/chadfire/world/wilderness_101_112,
+	  unlinked/chadfire/world/wilderness_101_113,
+	  unlinked/chadfire/world/wilderness_101_114,
+	  unlinked/chadfire/world/wilderness_101_115,
+	  unlinked/chadfire/world/wilderness_101_116,
+	  unlinked/chadfire/world/wilderness_101_117,
+	  unlinked/chadfire/world/wilderness_101_118,
+	  unlinked/chadfire/world/wilderness_101_119,
+	  unlinked/chadfire/world/wilderness_101_120,
+	  unlinked/chadfire/world/wilderness_102_100,
+	  unlinked/chadfire/world/wilderness_102_101,
+	  unlinked/chadfire/world/wilderness_102_102,
+	  unlinked/chadfire/world/wilderness_102_103,
+	  unlinked/chadfire/world/wilderness_102_104,
+	  unlinked/chadfire/world/wilderness_102_105,
+	  unlinked/chadfire/world/wilderness_102_106,
+	  unlinked/chadfire/world/wilderness_102_107,
+	  unlinked/chadfire/world/wilderness_102_108,
+	  unlinked/chadfire/world/wilderness_102_109,
+	  unlinked/chadfire/world/wilderness_102_110,
+	  unlinked/chadfire/world/wilderness_102_111,
+	  unlinked/chadfire/world/wilderness_102_112,
+	  unlinked/chadfire/world/wilderness_102_113,
+	  unlinked/chadfire/world/wilderness_102_114,
+	  unlinked/chadfire/world/wilderness_102_115,
+	  unlinked/chadfire/world/wilderness_102_116,
+	  unlinked/chadfire/world/wilderness_102_117,
+	  unlinked/chadfire/world/wilderness_102_118,
+	  unlinked/chadfire/world/wilderness_102_119,
+	  unlinked/chadfire/world/wilderness_102_120,
+	  unlinked/chadfire/world/wilderness_103_100,
+	  unlinked/chadfire/world/wilderness_103_101,
+	  unlinked/chadfire/world/wilderness_103_102,
+	  unlinked/chadfire/world/wilderness_103_103,
+	  unlinked/chadfire/world/wilderness_103_104,
+	  unlinked/chadfire/world/wilderness_103_105,
+	  unlinked/chadfire/world/wilderness_103_106,
+	  unlinked/chadfire/world/wilderness_103_107,
+	  unlinked/chadfire/world/wilderness_103_108,
+	  unlinked/chadfire/world/wilderness_103_109,
+	  unlinked/chadfire/world/wilderness_103_110,
+	  unlinked/chadfire/world/wilderness_103_111,
+	  unlinked/chadfire/world/wilderness_103_112,
+	  unlinked/chadfire/world/wilderness_103_113,
+	  unlinked/chadfire/world/wilderness_103_114,
+	  unlinked/chadfire/world/wilderness_103_115,
+	  unlinked/chadfire/world/wilderness_103_116,
+	  unlinked/chadfire/world/wilderness_103_117,
+	  unlinked/chadfire/world/wilderness_103_118,
+	  unlinked/chadfire/world/wilderness_103_119,
+	  unlinked/chadfire/world/wilderness_103_120,
+	  unlinked/chadfire/world/wilderness_104_100,
+	  unlinked/chadfire/world/wilderness_104_101,
+	  unlinked/chadfire/world/wilderness_104_102,
+	  unlinked/chadfire/world/wilderness_104_103,
+	  unlinked/chadfire/world/wilderness_104_104,
+	  unlinked/chadfire/world/wilderness_104_105,
+	  unlinked/chadfire/world/wilderness_104_106,
+	  unlinked/chadfire/world/wilderness_104_107,
+	  unlinked/chadfire/world/wilderness_104_108,
+	  unlinked/chadfire/world/wilderness_104_109,
+	  unlinked/chadfire/world/wilderness_104_110,
+	  unlinked/chadfire/world/wilderness_104_111,
+	  unlinked/chadfire/world/wilderness_104_112,
+	  unlinked/chadfire/world/wilderness_104_113,
+	  unlinked/chadfire/world/wilderness_104_114,
+	  unlinked/chadfire/world/wilderness_104_115,
+	  unlinked/chadfire/world/wilderness_104_116,
+	  unlinked/chadfire/world/wilderness_104_117,
+	  unlinked/chadfire/world/wilderness_104_118,
+	  unlinked/chadfire/world/wilderness_104_119,
+	  unlinked/chadfire/world/wilderness_104_120,
+	  unlinked/chadfire/world/wilderness_105_100,
+	  unlinked/chadfire/world/wilderness_105_101,
+	  unlinked/chadfire/world/wilderness_105_102,
+	  unlinked/chadfire/world/wilderness_105_103,
+	  unlinked/chadfire/world/wilderness_105_104,
+	  unlinked/chadfire/world/wilderness_105_105,
+	  unlinked/chadfire/world/wilderness_105_106,
+	  unlinked/chadfire/world/wilderness_105_107,
+	  unlinked/chadfire/world/wilderness_105_108,
+	  unlinked/chadfire/world/wilderness_105_109,
+	  unlinked/chadfire/world/wilderness_105_110,
+	  unlinked/chadfire/world/wilderness_105_111,
+	  unlinked/chadfire/world/wilderness_105_112,
+	  unlinked/chadfire/world/wilderness_105_113,
+	  unlinked/chadfire/world/wilderness_105_114,
+	  unlinked/chadfire/world/wilderness_105_115,
+	  unlinked/chadfire/world/wilderness_105_116,
+	  unlinked/chadfire/world/wilderness_105_117,
+	  unlinked/chadfire/world/wilderness_105_118,
+	  unlinked/chadfire/world/wilderness_105_119,
+	  unlinked/chadfire/world/wilderness_105_120,
+	  unlinked/chadfire/world/wilderness_106_100,
+	  unlinked/chadfire/world/wilderness_106_101,
+	  unlinked/chadfire/world/wilderness_106_102,
+	  unlinked/chadfire/world/wilderness_106_103,
+	  unlinked/chadfire/world/wilderness_106_104,
+	  unlinked/chadfire/world/wilderness_106_105,
+	  unlinked/chadfire/world/wilderness_106_106,
+	  unlinked/chadfire/world/wilderness_106_107,
+	  unlinked/chadfire/world/wilderness_106_108,
+	  unlinked/chadfire/world/wilderness_106_109,
+	  unlinked/chadfire/world/wilderness_106_110,
+	  unlinked/chadfire/world/wilderness_106_111,
+	  unlinked/chadfire/world/wilderness_106_112,
+	  unlinked/chadfire/world/wilderness_106_113,
+	  unlinked/chadfire/world/wilderness_106_114,
+	  unlinked/chadfire/world/wilderness_106_115,
+	  unlinked/chadfire/world/wilderness_106_116,
+	  unlinked/chadfire/world/wilderness_106_117,
+	  unlinked/chadfire/world/wilderness_106_118,
+	  unlinked/chadfire/world/wilderness_106_119,
+	  unlinked/chadfire/world/wilderness_106_120,
+	  unlinked/chadfire/world/wilderness_107_100,
+	  unlinked/chadfire/world/wilderness_107_101,
+	  unlinked/chadfire/world/wilderness_107_102,
+	  unlinked/chadfire/world/wilderness_107_103,
+	  unlinked/chadfire/world/wilderness_107_104,
+	  unlinked/chadfire/world/wilderness_107_105,
+	  unlinked/chadfire/world/wilderness_107_106,
+	  unlinked/chadfire/world/wilderness_107_107,
+	  unlinked/chadfire/world/wilderness_107_108,
+	  unlinked/chadfire/world/wilderness_107_109,
+	  unlinked/chadfire/world/wilderness_107_110,
+	  unlinked/chadfire/world/wilderness_107_111,
+	  unlinked/chadfire/world/wilderness_107_112,
+	  unlinked/chadfire/world/wilderness_107_113,
+	  unlinked/chadfire/world/wilderness_107_114,
+	  unlinked/chadfire/world/wilderness_107_115,
+	  unlinked/chadfire/world/wilderness_107_116,
+	  unlinked/chadfire/world/wilderness_107_117,
+	  unlinked/chadfire/world/wilderness_107_118,
+	  unlinked/chadfire/world/wilderness_107_119,
+	  unlinked/chadfire/world/wilderness_107_120,
+	  unlinked/chadfire/world/wilderness_108_100,
+	  unlinked/chadfire/world/wilderness_108_101,
+	  unlinked/chadfire/world/wilderness_108_102,
+	  unlinked/chadfire/world/wilderness_108_103,
+	  unlinked/chadfire/world/wilderness_108_104,
+	  unlinked/chadfire/world/wilderness_108_105,
+	  unlinked/chadfire/world/wilderness_108_106,
+	  unlinked/chadfire/world/wilderness_108_107,
+	  unlinked/chadfire/world/wilderness_108_108,
+	  unlinked/chadfire/world/wilderness_108_109,
+	  unlinked/chadfire/world/wilderness_108_110,
+	  unlinked/chadfire/world/wilderness_108_111,
+	  unlinked/chadfire/world/wilderness_108_112,
+	  unlinked/chadfire/world/wilderness_108_113,
+	  unlinked/chadfire/world/wilderness_108_114,
+	  unlinked/chadfire/world/wilderness_108_115,
+	  unlinked/chadfire/world/wilderness_108_116,
+	  unlinked/chadfire/world/wilderness_108_117,
+	  unlinked/chadfire/world/wilderness_108_118,
+	  unlinked/chadfire/world/wilderness_108_119,
+	  unlinked/chadfire/world/wilderness_108_120,
+	  unlinked/chadfire/world/wilderness_109_100,
+	  unlinked/chadfire/world/wilderness_109_101,
+	  unlinked/chadfire/world/wilderness_109_102,
+	  unlinked/chadfire/world/wilderness_109_103,
+	  unlinked/chadfire/world/wilderness_109_104,
+	  unlinked/chadfire/world/wilderness_109_105,
+	  unlinked/chadfire/world/wilderness_109_106,
+	  unlinked/chadfire/world/wilderness_109_107,
+	  unlinked/chadfire/world/wilderness_109_108,
+	  unlinked/chadfire/world/wilderness_109_109,
+	  unlinked/chadfire/world/wilderness_109_110,
+	  unlinked/chadfire/world/wilderness_109_111,
+	  unlinked/chadfire/world/wilderness_109_112,
+	  unlinked/chadfire/world/wilderness_109_113,
+	  unlinked/chadfire/world/wilderness_109_114,
+	  unlinked/chadfire/world/wilderness_109_115,
+	  unlinked/chadfire/world/wilderness_109_116,
+	  unlinked/chadfire/world/wilderness_109_117,
+	  unlinked/chadfire/world/wilderness_109_118,
+	  unlinked/chadfire/world/wilderness_109_119,
+	  unlinked/chadfire/world/wilderness_109_120,
+	  unlinked/chadfire/world/wilderness_110_100,
+	  unlinked/chadfire/world/wilderness_110_101,
+	  unlinked/chadfire/world/wilderness_110_102,
+	  unlinked/chadfire/world/wilderness_110_103,
+	  unlinked/chadfire/world/wilderness_110_104,
+	  unlinked/chadfire/world/wilderness_110_105,
+	  unlinked/chadfire/world/wilderness_110_106,
+	  unlinked/chadfire/world/wilderness_110_107,
+	  unlinked/chadfire/world/wilderness_110_108,
+	  unlinked/chadfire/world/wilderness_110_109,
+	  unlinked/chadfire/world/wilderness_110_110,
+	  unlinked/chadfire/world/wilderness_110_111,
+	  unlinked/chadfire/world/wilderness_110_112,
+	  unlinked/chadfire/world/wilderness_110_113,
+	  unlinked/chadfire/world/wilderness_110_114,
+	  unlinked/chadfire/world/wilderness_110_115,
+	  unlinked/chadfire/world/wilderness_110_116,
+	  unlinked/chadfire/world/wilderness_110_117,
+	  unlinked/chadfire/world/wilderness_110_118,
+	  unlinked/chadfire/world/wilderness_110_119,
+	  unlinked/chadfire/world/wilderness_110_120,
+	  unlinked/chadfire/world/wilderness_111_100,
+	  unlinked/chadfire/world/wilderness_111_101,
+	  unlinked/chadfire/world/wilderness_111_102,
+	  unlinked/chadfire/world/wilderness_111_103,
+	  unlinked/chadfire/world/wilderness_111_104,
+	  unlinked/chadfire/world/wilderness_111_105,
+	  unlinked/chadfire/world/wilderness_111_106,
+	  unlinked/chadfire/world/wilderness_111_107,
+	  unlinked/chadfire/world/wilderness_111_108,
+	  unlinked/chadfire/world/wilderness_111_109,
+	  unlinked/chadfire/world/wilderness_111_110,
+	  unlinked/chadfire/world/wilderness_111_111,
+	  unlinked/chadfire/world/wilderness_111_112,
+	  unlinked/chadfire/world/wilderness_111_113,
+	  unlinked/chadfire/world/wilderness_111_114,
+	  unlinked/chadfire/world/wilderness_111_115,
+	  unlinked/chadfire/world/wilderness_111_116,
+	  unlinked/chadfire/world/wilderness_111_117,
+	  unlinked/chadfire/world/wilderness_111_118,
+	  unlinked/chadfire/world/wilderness_111_119,
+	  unlinked/chadfire/world/wilderness_111_120,
+	  unlinked/chadfire/world/wilderness_112_100,
+	  unlinked/chadfire/world/wilderness_112_101,
+	  unlinked/chadfire/world/wilderness_112_102,
+	  unlinked/chadfire/world/wilderness_112_103,
+	  unlinked/chadfire/world/wilderness_112_104,
+	  unlinked/chadfire/world/wilderness_112_105,
+	  unlinked/chadfire/world/wilderness_112_106,
+	  unlinked/chadfire/world/wilderness_112_107,
+	  unlinked/chadfire/world/wilderness_112_108,
+	  unlinked/chadfire/world/wilderness_112_109,
+	  unlinked/chadfire/world/wilderness_112_110,
+	  unlinked/chadfire/world/wilderness_112_111,
+	  unlinked/chadfire/world/wilderness_112_112,
+	  unlinked/chadfire/world/wilderness_112_113,
+	  unlinked/chadfire/world/wilderness_112_114,
+	  unlinked/chadfire/world/wilderness_112_115,
+	  unlinked/chadfire/world/wilderness_112_116,
+	  unlinked/chadfire/world/wilderness_112_117,
+	  unlinked/chadfire/world/wilderness_112_118,
+	  unlinked/chadfire/world/wilderness_112_119,
+	  unlinked/chadfire/world/wilderness_112_120,
+	  unlinked/chadfire/world/wilderness_113_100,
+	  unlinked/chadfire/world/wilderness_113_101,
+	  unlinked/chadfire/world/wilderness_113_102,
+	  unlinked/chadfire/world/wilderness_113_103,
+	  unlinked/chadfire/world/wilderness_113_104,
+	  unlinked/chadfire/world/wilderness_113_105,
+	  unlinked/chadfire/world/wilderness_113_106,
+	  unlinked/chadfire/world/wilderness_113_107,
+	  unlinked/chadfire/world/wilderness_113_108,
+	  unlinked/chadfire/world/wilderness_113_109,
+	  unlinked/chadfire/world/wilderness_113_110,
+	  unlinked/chadfire/world/wilderness_113_111,
+	  unlinked/chadfire/world/wilderness_113_112,
+	  unlinked/chadfire/world/wilderness_113_113,
+	  unlinked/chadfire/world/wilderness_113_114,
+	  unlinked/chadfire/world/wilderness_113_115,
+	  unlinked/chadfire/world/wilderness_113_116,
+	  unlinked/chadfire/world/wilderness_113_117,
+	  unlinked/chadfire/world/wilderness_113_118,
+	  unlinked/chadfire/world/wilderness_113_119,
+	  unlinked/chadfire/world/wilderness_113_120,
+	  unlinked/chadfire/world/wilderness_114_100,
+	  unlinked/chadfire/world/wilderness_114_101,
+	  unlinked/chadfire/world/wilderness_114_102,
+	  unlinked/chadfire/world/wilderness_114_103,
+	  unlinked/chadfire/world/wilderness_114_104,
+	  unlinked/chadfire/world/wilderness_114_105,
+	  unlinked/chadfire/world/wilderness_114_106,
+	  unlinked/chadfire/world/wilderness_114_107,
+	  unlinked/chadfire/world/wilderness_114_108,
+	  unlinked/chadfire/world/wilderness_114_109,
+	  unlinked/chadfire/world/wilderness_114_110,
+	  unlinked/chadfire/world/wilderness_114_111,
+	  unlinked/chadfire/world/wilderness_114_112,
+	  unlinked/chadfire/world/wilderness_114_113,
+	  unlinked/chadfire/world/wilderness_114_114,
+	  unlinked/chadfire/world/wilderness_114_115,
+	  unlinked/chadfire/world/wilderness_114_116,
+	  unlinked/chadfire/world/wilderness_114_117,
+	  unlinked/chadfire/world/wilderness_114_118,
+	  unlinked/chadfire/world/wilderness_114_119,
+	  unlinked/chadfire/world/wilderness_114_120,
+	  unlinked/chadfire/world/wilderness_115_100,
+	  unlinked/chadfire/world/wilderness_115_101,
+	  unlinked/chadfire/world/wilderness_115_102,
+	  unlinked/chadfire/world/wilderness_115_103,
+	  unlinked/chadfire/world/wilderness_115_104,
+	  unlinked/chadfire/world/wilderness_115_105,
+	  unlinked/chadfire/world/wilderness_115_106,
+	  unlinked/chadfire/world/wilderness_115_107,
+	  unlinked/chadfire/world/wilderness_115_108,
+	  unlinked/chadfire/world/wilderness_115_109,
+	  unlinked/chadfire/world/wilderness_115_110,
+	  unlinked/chadfire/world/wilderness_115_111,
+	  unlinked/chadfire/world/wilderness_115_112,
+	  unlinked/chadfire/world/wilderness_115_113,
+	  unlinked/chadfire/world/wilderness_115_114,
+	  unlinked/chadfire/world/wilderness_115_115,
+	  unlinked/chadfire/world/wilderness_115_116,
+	  unlinked/chadfire/world/wilderness_115_117,
+	  unlinked/chadfire/world/wilderness_115_118,
+	  unlinked/chadfire/world/wilderness_115_119,
+	  unlinked/chadfire/world/wilderness_115_120,
+	  unlinked/chadfire/world/wilderness_116_100,
+	  unlinked/chadfire/world/wilderness_116_101,
+	  unlinked/chadfire/world/wilderness_116_102,
+	  unlinked/chadfire/world/wilderness_116_103,
+	  unlinked/chadfire/world/wilderness_116_104,
+	  unlinked/chadfire/world/wilderness_116_105,
+	  unlinked/chadfire/world/wilderness_116_106,
+	  unlinked/chadfire/world/wilderness_116_107,
+	  unlinked/chadfire/world/wilderness_116_108,
+	  unlinked/chadfire/world/wilderness_116_109,
+	  unlinked/chadfire/world/wilderness_116_110,
+	  unlinked/chadfire/world/wilderness_116_111,
+	  unlinked/chadfire/world/wilderness_116_112,
+	  unlinked/chadfire/world/wilderness_116_113,
+	  unlinked/chadfire/world/wilderness_116_114,
+	  unlinked/chadfire/world/wilderness_116_115,
+	  unlinked/chadfire/world/wilderness_116_116,
+	  unlinked/chadfire/world/wilderness_116_117,
+	  unlinked/chadfire/world/wilderness_116_118,
+	  unlinked/chadfire/world/wilderness_116_119,
+	  unlinked/chadfire/world/wilderness_116_120,
+	  unlinked/chadfire/world/wilderness_117_100,
+	  unlinked/chadfire/world/wilderness_117_101,
+	  unlinked/chadfire/world/wilderness_117_102,
+	  unlinked/chadfire/world/wilderness_117_103,
+	  unlinked/chadfire/world/wilderness_117_104,
+	  unlinked/chadfire/world/wilderness_117_105,
+	  unlinked/chadfire/world/wilderness_117_106,
+	  unlinked/chadfire/world/wilderness_117_107,
+	  unlinked/chadfire/world/wilderness_117_108,
+	  unlinked/chadfire/world/wilderness_117_109,
+	  unlinked/chadfire/world/wilderness_117_110,
+	  unlinked/chadfire/world/wilderness_117_111,
+	  unlinked/chadfire/world/wilderness_117_112,
+	  unlinked/chadfire/world/wilderness_117_113,
+	  unlinked/chadfire/world/wilderness_117_114,
+	  unlinked/chadfire/world/wilderness_117_115,
+	  unlinked/chadfire/world/wilderness_117_116,
+	  unlinked/chadfire/world/wilderness_117_117,
+	  unlinked/chadfire/world/wilderness_117_118,
+	  unlinked/chadfire/world/wilderness_117_119,
+	  unlinked/chadfire/world/wilderness_117_120,
+	  unlinked/chadfire/world/wilderness_118_100,
+	  unlinked/chadfire/world/wilderness_118_101,
+	  unlinked/chadfire/world/wilderness_118_102,
+	  unlinked/chadfire/world/wilderness_118_103,
+	  unlinked/chadfire/world/wilderness_118_104,
+	  unlinked/chadfire/world/wilderness_118_105,
+	  unlinked/chadfire/world/wilderness_118_106,
+	  unlinked/chadfire/world/wilderness_118_107,
+	  unlinked/chadfire/world/wilderness_118_108,
+	  unlinked/chadfire/world/wilderness_118_109,
+	  unlinked/chadfire/world/wilderness_118_110,
+	  unlinked/chadfire/world/wilderness_118_111,
+	  unlinked/chadfire/world/wilderness_118_112,
+	  unlinked/chadfire/world/wilderness_118_113,
+	  unlinked/chadfire/world/wilderness_118_114,
+	  unlinked/chadfire/world/wilderness_118_115,
+	  unlinked/chadfire/world/wilderness_118_116,
+	  unlinked/chadfire/world/wilderness_118_117,
+	  unlinked/chadfire/world/wilderness_118_118,
+	  unlinked/chadfire/world/wilderness_118_119,
+	  unlinked/chadfire/world/wilderness_118_120,
+	  unlinked/chadfire/world/wilderness_119_100,
+	  unlinked/chadfire/world/wilderness_119_101,
+	  unlinked/chadfire/world/wilderness_119_102,
+	  unlinked/chadfire/world/wilderness_119_103,
+	  unlinked/chadfire/world/wilderness_119_104,
+	  unlinked/chadfire/world/wilderness_119_105,
+	  unlinked/chadfire/world/wilderness_119_106,
+	  unlinked/chadfire/world/wilderness_119_107,
+	  unlinked/chadfire/world/wilderness_119_108,
+	  unlinked/chadfire/world/wilderness_119_109,
+	  unlinked/chadfire/world/wilderness_119_110,
+	  unlinked/chadfire/world/wilderness_119_111,
+	  unlinked/chadfire/world/wilderness_119_112,
+	  unlinked/chadfire/world/wilderness_119_113,
+	  unlinked/chadfire/world/wilderness_119_114,
+	  unlinked/chadfire/world/wilderness_119_115,
+	  unlinked/chadfire/world/wilderness_119_116,
+	  unlinked/chadfire/world/wilderness_119_117,
+	  unlinked/chadfire/world/wilderness_119_118,
+	  unlinked/chadfire/world/wilderness_119_119,
+	  unlinked/chadfire/world/wilderness_119_120,
+	  unlinked/chadfire/world/wilderness_120_100,
+	  unlinked/chadfire/world/wilderness_120_101,
+	  unlinked/chadfire/world/wilderness_120_102,
+	  unlinked/chadfire/world/wilderness_120_103,
+	  unlinked/chadfire/world/wilderness_120_104,
+	  unlinked/chadfire/world/wilderness_120_105,
+	  unlinked/chadfire/world/wilderness_120_106,
+	  unlinked/chadfire/world/wilderness_120_107,
+	  unlinked/chadfire/world/wilderness_120_108,
+	  unlinked/chadfire/world/wilderness_120_109,
+	  unlinked/chadfire/world/wilderness_120_110,
+	  unlinked/chadfire/world/wilderness_120_111,
+	  unlinked/chadfire/world/wilderness_120_112,
+	  unlinked/chadfire/world/wilderness_120_113,
+	  unlinked/chadfire/world/wilderness_120_114,
+	  unlinked/chadfire/world/wilderness_120_115,
+	  unlinked/chadfire/world/wilderness_120_116,
+	  unlinked/chadfire/world/wilderness_120_117,
+	  unlinked/chadfire/world/wilderness_120_118,
+	  unlinked/chadfire/world/wilderness_120_119,
+	  unlinked/chadfire/world/wilderness_120_120,
+	  unlinked/chadfire/world/world.suo: Patch #281 chad's unfinished
+	  island maps. Initial import of the map set available from the
+	  patch.
+
+2013-07-23 19:53  kstenger
+
+	* python/items/magic_whistle.py: Using the new
+	  Crossfire.AttackMovement.PETMOVE constants.
+	  
+	  Reduce the affected area to the surrounding 10x10 square.
+
+2013-07-23 19:25  ryo_saeba
+
+	* test/python.py: Add AttackMovement test.
+
+2013-07-23 18:56  kstenger
+
+	* python/items/magic_whistle.py: New item: magic pet's whistle.
+	  
+	  Why this item:
+	  In some cases pets may get angry at their owner and attack him.
+	  This whistle intends to give the player a chance to make his pets
+	  friendly again.
+	  This won't prevent the pet from getting angry again for whatever
+	  reason, which
+	  is ok.
+	  
+	  Including: archetype, image, treasure list (for the whistle
+	  inventory to work
+	  properly), python script which makes the "real work".
+	  
+	  Hope to add a map soon to make this available to the players.
+	  
+	  A maps/trunk/python/items/magic_whistle.py
+	  A arch/trunk/misc/magic_whistle.trs
+	  A arch/trunk/misc/magic_whistle.arc
+	  AM arch/trunk/misc/magic_whistle.base.111.png
+
+2013-07-22 13:06  partmedia
+
+	* world/world_123_123, world/world_124_124, world/world_126_124,
+	  world/world_127_125, world/world_128_128: Unwrap text to let the
+	  client do it instead.
+
+2013-07-22 13:06  partmedia
+
+	* unlinked/casino/README, unlinked/casino/casino_infernal: Casino
+	  Infernal is no longer unlinked.
+
+2013-07-22 02:18  partmedia
+
+	* world/world_114_101, world/world_115_100, world/world_115_101:
+	  Terrain fixes near world_115_100 (patch #292).
+
+2013-07-19 13:26  akirschbaum
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/guild_toolshed,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/guildman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/hallofjoining,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/journeyman_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/master_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/novice_lounge,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guild_toolshed,
+	  azumauindo/suno-yamatoshi/nenshou_youso/guildman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/hallofjoining,
+	  azumauindo/suno-yamatoshi/nenshou_youso/journeyman_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/master_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/novice_lounge,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room,
+	  azumauindo/zaseki_dzuki_ryoku/guild_toolshed,
+	  azumauindo/zaseki_dzuki_ryoku/guildman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/hallofjoining,
+	  azumauindo/zaseki_dzuki_ryoku/journeyman_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/master_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/novice_lounge,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room,
+	  brest/black_shield/guild_toolshed,
+	  brest/black_shield/guildman_lounge,
+	  brest/black_shield/hallofjoining,
+	  brest/black_shield/journeyman_lounge,
+	  brest/black_shield/master_lounge,
+	  brest/black_shield/novice_lounge,
+	  brest/black_shield/storage_room,
+	  brest/zorn/castle.upper.floor.one, darcap/darcap/circus/roller3,
+	  darcap/darcap/guilds/poisoned_dagger/guild_toolshed,
+	  darcap/darcap/guilds/poisoned_dagger/guildman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/hallofjoining,
+	  darcap/darcap/guilds/poisoned_dagger/journeyman_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/master_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/novice_lounge,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room,
+	  darcap/darcap/guilds/smoking_cauldron/guild_toolshed,
+	  darcap/darcap/guilds/smoking_cauldron/guildman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/hallofjoining,
+	  darcap/darcap/guilds/smoking_cauldron/journeyman_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/master_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/novice_lounge,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room,
+	  euthville/green_goblin/guild_toolshed,
+	  euthville/green_goblin/guildman_lounge,
+	  euthville/green_goblin/hallofjoining,
+	  euthville/green_goblin/journeyman_lounge,
+	  euthville/green_goblin/master_lounge,
+	  euthville/green_goblin/novice_lounge,
+	  euthville/green_goblin/storage_room,
+	  lake_country/Butakis/mockers/guild_toolshed,
+	  lake_country/Butakis/mockers/guildman_lounge,
+	  lake_country/Butakis/mockers/hallofjoining,
+	  lake_country/Butakis/mockers/journeyman_lounge,
+	  lake_country/Butakis/mockers/master_lounge,
+	  lake_country/Butakis/mockers/novice_lounge,
+	  lake_country/Butakis/mockers/storage_room,
+	  lake_country/snake_pit/snakepit_1,
+	  mlab/citydeclouds/IPO_citydeclouds, mlab/citydeclouds/bank/bank3,
+	  mlab/citydeclouds/castle/cwdccastleb2,
+	  mlab/citydeclouds/shops/cwdctrademarket,
+	  navar_city/casino_infernal/casino_infernal1,
+	  navar_city/dreaming_sage/guild_toolshed,
+	  navar_city/dreaming_sage/guildman_lounge,
+	  navar_city/dreaming_sage/hallofjoining,
+	  navar_city/dreaming_sage/journeyman_lounge,
+	  navar_city/dreaming_sage/master_lounge,
+	  navar_city/dreaming_sage/novice_lounge,
+	  navar_city/dreaming_sage/storage_room, navar_city/mlab/tavern7,
+	  port_joseph/pirates/madvillage,
+	  port_joseph/town/underground_tavern,
+	  pup_land/ancient/castle/gothwolte.3, pup_land/ancient/company,
+	  pup_land/ancient/village/inn, pup_land/ancient/village/library,
+	  pup_land/begin/adv, pup_land/castle_eureca/castle_eureca9,
+	  pup_land/guilds/laughing_skull/guild_toolshed,
+	  pup_land/guilds/laughing_skull/guildman_lounge,
+	  pup_land/guilds/laughing_skull/hallofjoining,
+	  pup_land/guilds/laughing_skull/journeyman_lounge,
+	  pup_land/guilds/laughing_skull/master_lounge,
+	  pup_land/guilds/laughing_skull/novice_lounge,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/purple_butterfly/guild_toolshed,
+	  pup_land/guilds/purple_butterfly/guildman_lounge,
+	  pup_land/guilds/purple_butterfly/hallofjoining,
+	  pup_land/guilds/purple_butterfly/journeyman_lounge,
+	  pup_land/guilds/purple_butterfly/master_lounge,
+	  pup_land/guilds/purple_butterfly/novice_lounge,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  pup_land/jk/gs_house, pup_land/lone_town/church_ud,
+	  pup_land/nurnberg/guild,
+	  pup_land/nurnberg/reception/electricity3,
+	  pup_land/nurnberg/reception/electricity6,
+	  pup_land/ordeal/tower_ordealB3, quests/greyshield/Castle,
+	  quests/peterm/Demonology/Demon1,
+	  quests/saromok/castlesaromok_towerf11,
+	  santo_dominion/guilds/drunken_barbarian/guild_toolshed,
+	  santo_dominion/guilds/drunken_barbarian/guildman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/hallofjoining,
+	  santo_dominion/guilds/drunken_barbarian/journeyman_lounge,
+	  santo_dominion/guilds/drunken_barbarian/master_lounge,
+	  santo_dominion/guilds/drunken_barbarian/novice_lounge,
+	  santo_dominion/guilds/drunken_barbarian/storage_room,
+	  santo_dominion/temple_naive/templenaive.2,
+	  scorn/guilds/mailed_fist/guild_toolshed,
+	  scorn/guilds/mailed_fist/guildman_lounge,
+	  scorn/guilds/mailed_fist/hallofjoining,
+	  scorn/guilds/mailed_fist/journeyman_lounge,
+	  scorn/guilds/mailed_fist/master_lounge,
+	  scorn/guilds/mailed_fist/novice_lounge,
+	  scorn/guilds/mailed_fist/storage_room, scorn/houses/doors_galore,
+	  scorn/houses/farmhouse, scorn/houses/resir,
+	  scorn/mansion/witherspoon_manor_attic, scorn/shops/IPO_scorn,
+	  scorn/taverns/goths, scorn/temples/valkyrie2,
+	  templates/guild/guild_toolshed, templates/guild/guildman_lounge,
+	  templates/guild/hallofjoining, templates/guild/journeyman_lounge,
+	  templates/guild/master_lounge, templates/guild/novice_lounge,
+	  templates/guild/storage_room, unlinked/forgotten_town/palace,
+	  unlinked/zornstuff/zornstuff.NOT.a.map,
+	  whalingoutpost/taverns/storehouse1,
+	  wolfsburg/guilds/damned_heretics/guild_toolshed,
+	  wolfsburg/guilds/damned_heretics/guildman_lounge,
+	  wolfsburg/guilds/damned_heretics/hallofjoining,
+	  wolfsburg/guilds/damned_heretics/journeyman_lounge,
+	  wolfsburg/guilds/damned_heretics/master_lounge,
+	  wolfsburg/guilds/damned_heretics/novice_lounge,
+	  wolfsburg/guilds/damned_heretics/storage_room: Run MapNormalizer
+	  editor script on all map files.
+
+2013-07-19 10:23  akirschbaum
+
+	* brest/privateshops/privateshop_1,
+	  brest/privateshops/privateshop_10,
+	  brest/privateshops/privateshop_11,
+	  brest/privateshops/privateshop_12,
+	  brest/privateshops/privateshop_13,
+	  brest/privateshops/privateshop_14,
+	  brest/privateshops/privateshop_15,
+	  brest/privateshops/privateshop_16,
+	  brest/privateshops/privateshop_17,
+	  brest/privateshops/privateshop_18,
+	  brest/privateshops/privateshop_19,
+	  brest/privateshops/privateshop_2,
+	  brest/privateshops/privateshop_20,
+	  brest/privateshops/privateshop_21,
+	  brest/privateshops/privateshop_22,
+	  brest/privateshops/privateshop_23,
+	  brest/privateshops/privateshop_24,
+	  brest/privateshops/privateshop_25,
+	  brest/privateshops/privateshop_26,
+	  brest/privateshops/privateshop_27,
+	  brest/privateshops/privateshop_28,
+	  brest/privateshops/privateshop_3,
+	  brest/privateshops/privateshop_4,
+	  brest/privateshops/privateshop_5,
+	  brest/privateshops/privateshop_6,
+	  brest/privateshops/privateshop_7,
+	  brest/privateshops/privateshop_8,
+	  brest/privateshops/privateshop_9,
+	  darcap/pygmy_forest/pygmy_holes, dungeons/dark-cave/dark-cave,
+	  dungeons/dark-cave/dark-cave-2, dungeons/dark-cave/hidden-cave,
+	  dungeons/dark-cave/ogre-cave, dungeons/dark-cave/ogre-cave-2,
+	  dungeons/dark-cave/ogre-cave-3, dungeons/dark-cave/ogre-cave-4,
+	  dungeons/liomal_upper, inn_and_outpost/pypers_treehouse,
+	  inn_and_outpost/sweets_inn, lake_country/Butakis/inn,
+	  lake_country/Butakis/luck3, lake_country/Butakis/prison_e,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore2f,
+	  navar_city/mlab/tavern, navar_city/mlab/tavernb1,
+	  planes/greenway1, planes/greenway2, planes/greenway5,
+	  planes/greenway6, planes/greenway8, planes/greenway9,
+	  pup_land/lone_town/dress1, pup_land/lone_town/dress2,
+	  scorn/houses/house3.bas2, scorn/shops/privateshop,
+	  scorn/shops/privateshop_43_36, scorn/shops/privateshop_43_37,
+	  scorn/shops/privateshop_48_34, scorn/shops/privateshop_48_35,
+	  scorn/towers/tower.mad1, scorn/towers/tower.mad2,
+	  styles/monsterstyles/nethack/nethack_15,
+	  styles/monsterstyles/nethack/nethack_16,
+	  styles/monsterstyles/nethack/nethack_17,
+	  styles/monsterstyles/nethack/nethack_18,
+	  styles/monsterstyles/nethack/nethack_19,
+	  styles/monsterstyles/nethack/nethack_20,
+	  styles/monsterstyles/nethack/nethack_21,
+	  styles/monsterstyles/sylvan/sylvan_10,
+	  styles/monsterstyles/sylvan/sylvan_6,
+	  styles/monsterstyles/sylvan/sylvan_7,
+	  styles/monsterstyles/sylvan/sylvan_8,
+	  styles/monsterstyles/sylvan/sylvan_9, test/newmaps/privateshop:
+	  Run MapNormalizer editor script on all map files.
+
+2013-07-19 09:54  akirschbaum
+
+	* editor/scripts/MapNormalizer: Adapt MapNormalizer editor script
+	  to changed Gridarta.
+
+2013-07-19 03:55  partmedia
+
+	* navar_city/city1prison, navar_city/tower/magetowfinal: Fix
+	  spelling and punctuation.
+
+2013-07-19 03:55  partmedia
+
+	* navar_city/misc/templeofhealing: Remove House of Healing script
+	  from Navar Temple of Healing.
+
+2013-07-19 03:54  partmedia
+
+	* navar_city/misc/bowyer: Correct spelling and remove invalid
+	  attributes.
+
+2013-07-18 23:03  rjtanner
+
+	* pup_land/lone_town/tavern: Cosmetic update to Lone Town Tavern
+	  (pup_land/lone_town/tavern) by replacing afloor_left tiles with
+	  woodfloor2 tiles. No functional changes.
+
+2013-07-18 21:35  rjtanner
+
+	* navar_city/misc/city1smith: Added a black dragon mail
+	  anvil/creator to Gunther's Smith (navar_city/misc/city1smith) in
+	  Navar. Requires archetype update r18803 or newer.
+
+2013-07-18 21:22  rjtanner
+
+	* navar_city/misc/city1smith, world/world_122_117: Enlarged the
+	  floor plan to Gunther's Smith (navar_city/misc/city1smith) in
+	  Navarby one row of tiles. Updated world map (world/world_122_117)
+	  for changes to the entrance coordinates. Cosmetic change, no
+	  functional changes.
+
+2013-07-18 20:31  rjtanner
+
+	* navar_city/magara/houses/museum: Re-arranged armour placement to
+	  make room for black dragon mail to Museum of Arms
+	  (navar_city/magara/houses/museum) in Navar. Cosmetic update, no
+	  functional changes. Requires archetype update r18803 or newer.
+
+2013-07-18 19:31  rjtanner
+
+	* quests/peterm/Nethack_in_crossfire_entrance: Anvil placement
+	  re-arrangement and added a black dragon mail anvil to Nethack in
+	  Crossfire Entrance (quests/peterm/Nethack_in_crossfire_entrance)
+	  map so players can craft black dragon mail. Requires archetype
+	  update r18803 or newer.
+
+2013-07-18 19:15  rjtanner
+
+	* brest/shops/brest.cvt: Added an anvil to Brest CVT
+	  (brest/shops/brest.cvt) so players can craft black dragon mail.
+	  Requires archetype update r18803.
+
+2013-07-18 09:07  partmedia
+
+	* darcap/darcap/circus/fz_lobby: Give more light to Darcap Fun
+	  Zone.
+
+2013-07-18 09:06  partmedia
+
+	* navar_city/mlab/tavern2: Remove empty "match *" statement.
+
+2013-07-18 09:06  partmedia
+
+	* navar_city/mlab/tavernb3: Remove invalid attributes.
+
+2013-07-16 01:46  partmedia
+
+	* world/world_105_115: Make cart indestructible as a workaround to
+	  bug.
+
+2013-07-15 20:08  kstenger
+
+	* darcap/darcap/temples/valkyrie: Added no magic under fences:
+	  maps/trunk/darcap/darcap/temples/valkyrie
+
+2013-07-15 13:09  partmedia
+
+	* regions.reg: Reformat all region descriptions on one line.
+	  
+	  This allows region descriptions to be line broken by the client
+	  instead
+	  of at inconveniently-placed spots.
+
+2013-07-15 03:09  partmedia
+
+	* dragonisland/keysale, world/world_103_127: Updates to key sale
+	  house and related places.
+
+2013-07-14 23:33  partmedia
+
+	* dragonisland/ticket_office, world/world_102_127: Add Stoneville
+	  ticket office.
+
+2013-07-14 23:33  partmedia
+
+	* scorn/port/ticket_office: Fix glaring typo in Scorn Port Ticket
+	  Office.
+
+2013-07-14 23:33  partmedia
+
+	* navar_city/mlab/tavern2: Clean up useless archetypes and improve
+	  master suite.
+
+2013-07-14 23:33  partmedia
+
+	* dragonisland/hangar2: Make dragon hangar entrance more difficult.
+	  
+	  The new entrance prevents players from camping on the stairs.
+	  Now, they
+	  have to actually fight the dragon without running away.
+
+2013-07-14 23:32  partmedia
+
+	* navar_city/mlab/tavern: Improve Hick's dialog and other minor
+	  fixes.
+
+2013-07-11 22:38  rjtanner
+
+	* scorn/shops/armourshop: Cosmetic changes with Scorn Armour Shop
+	  (scorn/shops/armourshop) to correct a stacking issue resulting in
+	  the floor tile appearing above wall sections by the blacksmith.
+	  No functional changes.
+
+2013-07-07 19:05  partmedia
+
+	* pup_land/pplant/pup_land-1.0-README: Remove $Id$ from README;
+	  this tends to confused Git clients and is the only file that uses
+	  it.
+
+2013-07-07 18:49  partmedia
+
+	* dragonisland/hangar: Minor textual changes to Stoneville Dragon
+	  Hangar.
+	  
+	  Use "Darcap" instead of "Dtabb" and improve NPC/sign dialog.
+
+2013-07-07 15:03  partmedia
+
+	* santo_dominion/ship_scorn, world/world_102_108: Patch #339: Add
+	  ship from Santo Dominion and link to world map
+
+2013-07-07 15:01  partmedia
+
+	* santo_dominion/city_hall: Patch #338: Add ticket booth and
+	  Eliza's office to Santo Dominion City Hall
+
+2013-07-07 14:57  partmedia
+
+	* python/dialog/eliza.py: Patch #332: Add Eliza chatterbot script
+	  for Crossfire
+
+2013-06-28 23:00  rjtanner
+
+	* wolfsburg/volcano/vvmansion: Added more exits back to the world
+	  map from Mansion (wolfsburg/volcano/vvmansion) in Wolfbsurg.
+
+2013-06-28 22:24  rjtanner
+
+	* wolfsburg/volcano/vvmansion: Comsetic changes to Mansion
+	  (wolfsburg/volcano/vvmansion) in Wolfbsurg. Replaced white
+	  (wwall) with woodwalls. No functional changes.
+
+2013-06-28 20:49  rjtanner
+
+	* dragonisland/apartment2: Part of Patch #337 Minor improvements to
+	  'house with apartment' courtesy of Kevin Zheng. Prevent players
+	  from walking away with the free cauldron (400+ plat each!)
+
+2013-06-28 20:49  rjtanner
+
+	* dragonisland/apartment2: Part of Patch #337 Minor improvements to
+	  'house with apartment' courtesy of Kevin Zheng. Have housekeeper
+	  respond to 'greetings' in the same way as 'hello'.
+
+2013-06-28 20:48  rjtanner
+
+	* dragonisland/apartment2: Part of Patch #337 Minor improvements to
+	  'house with apartment' courtesy of Kevin Zheng. Improved altar
+	  and payment text.
+
+2013-06-28 20:47  rjtanner
+
+	* dragonisland/apartment2: Part of Patch #337 Minor improvements to
+	  'house with apartment' courtesy of Kevin Zheng. Removed no longer
+	  used archetype attributes.
+
+2013-06-28 18:14  rjtanner
+
+	* santo_dominion/tavern: Patch #336 Archetype and exit cleanup in
+	  Santo Dominion Tavern, courtesy of Kevin Zheng. Floor archetype
+	  and exit correction and updates in The Golden Lion
+	  (santo_dominion/tavern).
+
+2013-06-28 18:07  rjtanner
+
+	* santo_dominion/tavern: Patch #336 Archetype and exit cleanup in
+	  Santo Dominion Tavern, courtesy of Kevin Zheng. Removed mine2
+	  archetypes in The Golden Lion (santo_dominion/tavern), cosmetic
+	  change - no functional changes.
+
+2013-06-28 17:35  rjtanner
+
+	* santo_dominion/noble_rest: Patch #335 Remove duplicate food items
+	  from the table in the Noble Rest, courtesy of Kevin Zheng.
+	  Removed duplicate food items on the table that don't need to be
+	  there.
+
+2013-06-23 10:01  ryo_saeba
+
+	* python/IPO/say.py: Change employee dialog. Part of patch #333:
+	  Attitude change to IPO employees, by Kevin Zheng.
+
+2013-06-23 09:54  ryo_saeba
+
+	* python/IPO/say.py: Adjust mailscroll price. Part of patch #333:
+	  Attitude change to IPO employees, by Kevin Zheng.
+
+2013-06-18 22:20  rjtanner
+
+	* darcap/darcap/inn: Part of patch #334 Lighting fixes and text
+	  cleanup for Darcap Inn, courtesy of Kevin Zheng. Gate and
+	  magic_ear updates to Darcap Inn (darcap/darcap/inn).
+
+2013-06-18 21:09  rjtanner
+
+	* darcap/darcap/inn: Part of patch #334 Lighting fixes and text
+	  cleanup for Darcap Inn, courtesy of Kevin Zheng. Clean up and
+	  improve sign and NPC text to Darcap Inn (darcap/darcap/inn).
+
+2013-06-18 20:50  rjtanner
+
+	* darcap/darcap/inn: Part of patch #334 Lighting fixes and text
+	  cleanup for Darcap Inn, courtesy of Kevin Zheng. Missed a
+	  lamppost in the previous commit.
+
+2013-06-18 20:38  rjtanner
+
+	* darcap/darcap/inn: Part of patch #334 Lighting fixes and text
+	  cleanup for Darcap Inn, courtesy of Kevin Zheng. Make the Darcap
+	  Inn (darcap/darcap/inn) as an outdoor map, and add lamp posts and
+	  light sources to adjust for this change.
+
+2013-06-09 16:54  ryo_saeba
+
+	* python/CFGuilds.py: Fix typo.
+
+2013-06-09 16:51  ryo_saeba
+
+	* python/guilds/guildoracle.py: Display the guild status and a
+	  member's status, give more information on what is valid.
+
+2013-05-31 19:40  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
 2013-05-31 18:13  rjtanner
 
 	* brest/misc/draughts: Layout updates to Draughts House of Brest
