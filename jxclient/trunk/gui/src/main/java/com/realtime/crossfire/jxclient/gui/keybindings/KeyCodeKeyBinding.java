@@ -33,43 +33,30 @@ import org.jetbrains.annotations.Nullable;
 public class KeyCodeKeyBinding extends KeyBinding {
 
     /**
-     * The key code to match.
+     * The key to match.
      */
-    private final int keyCode;
-
-    /**
-     * The modifiers to match.
-     */
-    private final int modifiers;
+    @NotNull
+    private final KeyEvent2 keyEvent;
 
     /**
      * Creates a {@link KeyBinding} that matches by key code/modifiers pair.
-     * @param keyCode the key code to match
-     * @param modifiers the modifiers to match
+     * @param keyEvent the key to match
      * @param commands the commands to associate with this binding
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    public KeyCodeKeyBinding(final int keyCode, final int modifiers, @NotNull final CommandList commands, final boolean isDefault) {
+    public KeyCodeKeyBinding(@NotNull final KeyEvent2 keyEvent, @NotNull final CommandList commands, final boolean isDefault) {
         super(commands, isDefault);
-        this.keyCode = keyCode;
-        this.modifiers = modifiers;
+        this.keyEvent = keyEvent;
     }
 
     /**
-     * Returns the key code to match.
-     * @return the key code to match
+     * Returns the key to match.
+     * @return the key to match
      */
-    public int getKeyCode() {
-        return keyCode;
-    }
-
-    /**
-     * Returns the modifiers to match.
-     * @return the modifiers to match
-     */
-    public int getModifiers() {
-        return modifiers;
+    @NotNull
+    public KeyEvent2 getKeyEvent2() {
+        return keyEvent;
     }
 
     /**
@@ -82,7 +69,7 @@ public class KeyCodeKeyBinding extends KeyBinding {
         }
 
         final KeyCodeKeyBinding keyBinding = (KeyCodeKeyBinding)obj;
-        return keyBinding.getKeyCode() == keyCode && keyBinding.getModifiers() == modifiers;
+        return keyBinding.keyEvent.equalsKeyCode(keyEvent);
     }
 
     /**
@@ -90,15 +77,15 @@ public class KeyCodeKeyBinding extends KeyBinding {
      */
     @Override
     public int hashCode() {
-        return keyCode^(modifiers<<16);
+        return keyEvent.hashCode();
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public boolean matchesKeyCode(final int keyCode, final int modifiers) {
-        return this.keyCode == keyCode && this.modifiers == modifiers;
+    public boolean matchesKeyCode(@NotNull final KeyEvent2 keyEvent) {
+        return this.keyEvent.equalsKeyCode(keyEvent);
     }
 
     /**
@@ -116,10 +103,11 @@ public class KeyCodeKeyBinding extends KeyBinding {
     @Override
     public String getBindingDescription() {
         final StringBuilder sb = new StringBuilder();
+        final int modifiers = keyEvent.getModifiers();
         if (modifiers != 0) {
             sb.append(KeyEvent.getKeyModifiersText(modifiers)).append("+");
         }
-        sb.append(KeyEvent.getKeyText(keyCode));
+        sb.append(KeyEvent.getKeyText(keyEvent.getKeyCode()));
         return sb.toString();
     }
 }

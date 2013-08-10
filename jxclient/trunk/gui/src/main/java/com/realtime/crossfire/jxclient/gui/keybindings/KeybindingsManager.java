@@ -214,16 +214,15 @@ public class KeybindingsManager {
 
     /**
      * Processes a key pressed event.
-     * @param keyCode the character code of the key event
-     * @param modifiers the modifiers of the key event
+     * @param keyEvent the key event
      * @return whether the event has been consumed
      */
-    public boolean keyPressed(final int keyCode, final int modifiers) {
+    public boolean keyPressed(@NotNull final KeyEvent2 keyEvent) {
         if (keyBindingState == null) {
             return false;
         }
 
-        keyBindingState.keyPressed(keyCode, modifiers);
+        keyBindingState.keyPressed(keyEvent);
         return true;
     }
 

@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -55,20 +56,15 @@ public class KeyBindingState {
     private int state;
 
     /**
-     * The type of key binding: -1=invalid, 0=key code ({@link #keyCode} and
-     * {@link #modifiers} are valid).
+     * The type of key binding: -1=invalid, 0=key code ({@link #keyEvent} is
+     * valid).
      */
     private int type = -1;
 
     /**
-     * The key code. Only valid if <code>{@link #type} == 0</code>.
+     * The key evnt. Only valid if <code>{@link #type} == 0</code>.
      */
-    private int keyCode;
-
-    /**
-     * The modifiers. Only valid if <code>{@link #type} == 0</code>.
-     */
-    private int modifiers;
+    private KeyEvent2 keyEvent;
 
     /**
      * Creates a new instance.
@@ -86,14 +82,12 @@ public class KeyBindingState {
 
     /**
      * Records a binding by key code.
-     * @param keyCode the key code that was pressed
-     * @param modifiers the bindings that are active
+     * @param keyEvent the key that was pressed
      */
-    public void keyPressed(final int keyCode, final int modifiers) {
+    public void keyPressed(@NotNull final KeyEvent2 keyEvent) {
         state = 1;
         type = 0;
-        this.keyCode = keyCode;
-        this.modifiers = modifiers;
+        this.keyEvent = keyEvent;
     }
 
     /**
@@ -109,15 +103,15 @@ public class KeyBindingState {
         assert type != -1;
         if (commands != null) {
             if (keyBindings != null) {
-                keyBindings.addKeyBindingAsKeyCode(keyCode, modifiers, commands, false);
+                keyBindings.addKeyBindingAsKeyCode(keyEvent, commands, false);
             }
         } else {
             if (keyBindings != null) {
-                keyBindings.deleteKeyBindingAsKeyCode(keyCode, modifiers);
+                keyBindings.deleteKeyBindingAsKeyCode(keyEvent);
             }
 
             if (keyBindings2 != null) {
-                keyBindings2.deleteKeyBindingAsKeyCode(keyCode, modifiers);
+                keyBindings2.deleteKeyBindingAsKeyCode(keyEvent);
             }
         }
 

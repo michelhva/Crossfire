@@ -81,7 +81,7 @@ public class KeyCharKeyBinding extends KeyBinding {
      * {@inheritDoc}
      */
     @Override
-    public boolean matchesKeyCode(final int keyCode, final int modifiers) {
+    public boolean matchesKeyCode(@NotNull final KeyEvent2 keyEvent) {
         return false;
     }
 
@@ -90,6 +90,9 @@ public class KeyCharKeyBinding extends KeyBinding {
      */
     @Override
     public boolean matchesKeyChar(final char keyChar) {
+        if (this.keyChar == keyChar) {
+            System.out.print("");
+        }
         return this.keyChar == keyChar;
     }
 
