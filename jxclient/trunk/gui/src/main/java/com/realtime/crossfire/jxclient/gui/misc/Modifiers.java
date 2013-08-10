@@ -37,17 +37,17 @@ public class Modifiers {
     /**
      * The mask for "shift".
      */
-    public static final int SHIFT = InputEvent.SHIFT_MASK;
+    public static final int SHIFT = InputEvent.SHIFT_DOWN_MASK;
 
     /**
      * The mask for "ctrl".
      */
-    public static final int CTRL = InputEvent.CTRL_MASK;
+    public static final int CTRL = InputEvent.CTRL_DOWN_MASK;
 
     /**
      * The mask for "alt_graph".
      */
-    public static final int ALT_GRAPH = InputEvent.ALT_GRAPH_MASK;
+    public static final int ALT_GRAPH = InputEvent.ALT_GRAPH_DOWN_MASK;
 
     /**
      * The mask for all used modifiers.

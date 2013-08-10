@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
+import java.awt.event.InputEvent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -29,6 +30,41 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class KeyEvent2 {
+
+    /**
+     * The mask for "no modifier".
+     */
+    public static final int NONE = 0;
+
+    /**
+     * The mask for "shift".
+     */
+    public static final int ALT = InputEvent.ALT_MASK;
+
+    /**
+     * The mask for "alt_graph".
+     */
+    public static final int ALT_GRAPH = InputEvent.ALT_GRAPH_MASK;
+
+    /**
+     * The mask for "ctrl".
+     */
+    public static final int CTRL = InputEvent.CTRL_MASK;
+
+    /**
+     * The mask for "meta".
+     */
+    public static final int META = InputEvent.META_MASK;
+
+    /**
+     * The mask for "shift".
+     */
+    public static final int SHIFT = InputEvent.SHIFT_MASK;
+
+    /**
+     * The mask for all used modifiers.
+     */
+    public static final int MASK = ALT|ALT_GRAPH|CTRL|META|SHIFT;
 
     /**
      * The key code. See {@link java.awt.event.KeyEvent VK_xxx} constants.
@@ -41,10 +77,8 @@ public class KeyEvent2 {
     private final char keyChar;
 
     /**
-     * The modifiers. A combination of {@link java.awt.event.InputEvent#SHIFT_MASK},
-     * {@link java.awt.event.InputEvent#CTRL_MASK}, {@link
-     * java.awt.event.InputEvent#META_MASK}, {@link java.awt.event.InputEvent#ALT_MASK},
-     * and {@link java.awt.event.InputEvent#ALT_GRAPH_MASK}.
+     * The modifiers. A combination of {@link #ALT}, {@link #ALT_GRAPH}, {@link
+     * #CTRL}, {@link #META}, and {@link #SHIFT}.
      */
     private final int modifiers;
 
@@ -78,10 +112,8 @@ public class KeyEvent2 {
     }
 
     /**
-     * Returns the modifiers. A combination of {@link java.awt.event.InputEvent#SHIFT_MASK},
-     * {@link java.awt.event.InputEvent#CTRL_MASK}, {@link
-     * java.awt.event.InputEvent#META_MASK}, {@link java.awt.event.InputEvent#ALT_MASK},
-     * and {@link java.awt.event.InputEvent#ALT_GRAPH_MASK}.
+     * Returns the modifiers. A combination of {@link #ALT}, {@link #ALT_GRAPH},
+     * {@link #CTRL}, {@link #META}, and {@link #SHIFT}.
      * @return the modifiers
      */
     public int getModifiers() {
