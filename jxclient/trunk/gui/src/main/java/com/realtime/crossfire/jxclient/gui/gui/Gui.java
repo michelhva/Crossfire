@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
 import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -358,7 +359,7 @@ public class Gui extends JComponent {
      * @param e the event to dispatch
      * @return whether a gui element did handle the event
      */
-    public boolean handleKeyPress(@NotNull final KeyEvent e) {
+    public boolean handleKeyPress(@NotNull final KeyEvent2 e) {
         if (activeElement != null && activeElement instanceof KeyPressedHandler && ((KeyPressedHandler)activeElement).keyPressed(e)) {
             return true;
         }

@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import java.awt.event.KeyEvent;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -35,6 +35,6 @@ public interface KeyPressedHandler {
      * @param e the key event for the key
      * @return whether the key event has been consumed
      */
-    boolean keyPressed(@NotNull KeyEvent e);
+    boolean keyPressed(@NotNull KeyEvent2 e);
 
 }

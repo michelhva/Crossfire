@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -333,7 +334,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     @Override
-    public boolean keyPressed(@NotNull final KeyEvent e) {
+    public boolean keyPressed(@NotNull final KeyEvent2 e) {
         switch (e.getKeyCode()) {
         case KeyEvent.VK_ENTER:
             markInactivePending();

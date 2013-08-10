@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandListType;
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommandFactory;
-import java.awt.event.KeyEvent;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
@@ -368,7 +367,7 @@ public class KeyBindings {
      * @param e the event to execute
      * @return whether a matching key binding was found
      */
-    public boolean handleKeyPress(@NotNull final KeyEvent e) {
+    public boolean handleKeyPress(@NotNull final KeyEvent2 e) {
         final KeyBinding keyBindingCode = getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
         if (keyBindingCode != null) {
             executeKeyBinding(keyBindingCode);

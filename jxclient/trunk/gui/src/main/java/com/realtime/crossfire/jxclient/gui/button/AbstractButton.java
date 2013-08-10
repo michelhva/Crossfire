@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.KeyPressedHandler;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -222,7 +223,7 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
      * {@inheritDoc}
      */
     @Override
-    public boolean keyPressed(@NotNull final KeyEvent e) {
+    public boolean keyPressed(@NotNull final KeyEvent2 e) {
         switch (e.getKeyCode()) {
         case KeyEvent.VK_SPACE:
         case KeyEvent.VK_ENTER:
