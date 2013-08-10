@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -156,7 +157,7 @@ public class KeyEvent2 {
     @NotNull
     @Override
     public String toString() {
-        return "code="+keyCode+", char="+keyChar+", modifiers="+modifiers;
+        return "code="+keyCode+", char="+(keyChar == KeyEvent.CHAR_UNDEFINED ? "undefined" : keyChar)+", modifiers="+modifiers;
     }
 
 }
