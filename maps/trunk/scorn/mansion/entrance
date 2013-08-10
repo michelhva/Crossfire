@@ -7,7 +7,7 @@ height 50
 enter_x 14
 msg
 Created:  1994-12-27 Morten Hanshaugen
-Modified: 2012-01-10 Rick Tanner
+Modified: 2013-08-09 Kevin Zheng
 endmsg
 end
 arch woodfloor
@@ -526,7 +526,6 @@ end
 arch orc
 x 1
 y 37
-speed_left -0.700000
 end
 arch woods_2
 x 1
@@ -3086,7 +3085,6 @@ end
 arch kobold
 x 11
 y 48
-speed_left -0.900000
 end
 arch brush
 x 11
@@ -6004,7 +6002,7 @@ x 23
 y 43
 end
 arch well
-name Wishing well
+name wishing well
 slaying garden
 hp 29
 sp 29
@@ -6254,7 +6252,6 @@ end
 arch goblin
 x 24
 y 37
-speed_left -0.900000
 smoothlevel 20
 end
 arch hills_rocky
