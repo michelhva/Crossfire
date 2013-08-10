@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeybindingsManager;
 import com.realtime.crossfire.jxclient.gui.misc.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
-import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.io.Writer;
@@ -229,7 +228,7 @@ public class KeyHandler {
             return;
         }
 
-        if (e.getModifiers() == 0) {
+        if (e.getModifiers() == KeyEvent2.NONE) {
             switch (e.getKeyCode()) {
             case KeyEvent.VK_0:
                 debugKeyboardWrite("keyPressed: number key");
@@ -353,10 +352,10 @@ public class KeyHandler {
      */
     private void updateModifiers(@NotNull final KeyEvent2 keyEvent) {
         final int mask = keyEvent.getModifiers();
-        setKeyShift(KEY_SHIFT_SHIFT, (mask&InputEvent.SHIFT_MASK) != 0);
-        setKeyShift(KEY_SHIFT_CTRL, (mask&InputEvent.CTRL_MASK) != 0);
-        setKeyShift(KEY_SHIFT_ALT, (mask&InputEvent.ALT_MASK) != 0);
-        setKeyShift(KEY_SHIFT_ALT_GR, (mask&InputEvent.ALT_GRAPH_MASK) != 0);
+        setKeyShift(KEY_SHIFT_ALT, (mask&KeyEvent2.ALT) != 0);
+        setKeyShift(KEY_SHIFT_ALT_GR, (mask&KeyEvent2.ALT_GRAPH) != 0);
+        setKeyShift(KEY_SHIFT_CTRL, (mask&KeyEvent2.CTRL) != 0);
+        setKeyShift(KEY_SHIFT_SHIFT, (mask&KeyEvent2.SHIFT) != 0);
         if (!getKeyShift(KEY_SHIFT_CTRL) && commandQueue.stopRunning()) {
             debugKeyboardWrite("updateModifiers: stopping run");
         }
