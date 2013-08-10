@@ -32,7 +32,6 @@ import java.io.IOException;
 import java.io.Writer;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Date;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -43,26 +42,6 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class KeyHandler {
-
-    /**
-     * The key index for SHIFT.
-     */
-    private static final int KEY_SHIFT_SHIFT = 0;
-
-    /**
-     * The key index for CTRL.
-     */
-    private static final int KEY_SHIFT_CTRL = 1;
-
-    /**
-     * The key index for ALT.
-     */
-    private static final int KEY_SHIFT_ALT = 2;
-
-    /**
-     * The key index for ALT-GR.
-     */
-    private static final int KEY_SHIFT_ALT_GR = 3;
 
     /**
      * The {@link Writer} for logging keyboard debug output. Log nothing if
@@ -102,17 +81,6 @@ public class KeyHandler {
     private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
-     * The current modifier states. Maps key index to state.
-     */
-    @NotNull
-    private final boolean[] keyShift = {
-        false,
-        false,
-        false,
-        false
-    };
-
-    /**
      * The active {@link KeyBindings}. Set to <code>null</code> when no key
      * bindings are active.
      */
@@ -136,40 +104,12 @@ public class KeyHandler {
     }
 
     /**
-     * Resets the modifier states.
-     */
-    public void reset() {
-        Arrays.fill(keyShift, false);
-    }
-
-    /**
      * Sets the active {@link KeyBindings}.
      * @param keyBindings the key bindings or <code>null</code> to unset
      */
     @SuppressWarnings("NullableProblems")
     public void setKeyBindings(@NotNull final KeyBindings keyBindings) {
         this.keyBindings = keyBindings;
-    }
-
-    /**
-     * Returns the modifier state.
-     * @param keyId the key index
-     * @return the modifier state for <code>keyId</code>
-     */
-    private boolean getKeyShift(final int keyId) {
-        return keyShift[keyId];
-    }
-
-    /**
-     * Sets the modifier state.
-     * @param keyId the key index
-     * @param state the modifier state for <code>keyId</code>
-     */
-    private void setKeyShift(final int keyId, final boolean state) {
-        if (keyShift[keyId] != state) {
-            debugKeyboardWrite("setKeyShift: "+keyId+"="+state);
-        }
-        keyShift[keyId] = state;
     }
 
     /**
@@ -351,12 +291,7 @@ public class KeyHandler {
      * @param keyEvent the key event to process
      */
     private void updateModifiers(@NotNull final KeyEvent2 keyEvent) {
-        final int mask = keyEvent.getModifiers();
-        setKeyShift(KEY_SHIFT_ALT, (mask&KeyEvent2.ALT) != 0);
-        setKeyShift(KEY_SHIFT_ALT_GR, (mask&KeyEvent2.ALT_GRAPH) != 0);
-        setKeyShift(KEY_SHIFT_CTRL, (mask&KeyEvent2.CTRL) != 0);
-        setKeyShift(KEY_SHIFT_SHIFT, (mask&KeyEvent2.SHIFT) != 0);
-        if (!getKeyShift(KEY_SHIFT_CTRL) && commandQueue.stopRunning()) {
+        if ((keyEvent.getModifiers()&KeyEvent2.CTRL) == 0 && commandQueue.stopRunning()) {
             debugKeyboardWrite("updateModifiers: stopping run");
         }
     }

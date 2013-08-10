@@ -141,7 +141,6 @@ public class JXCWindow {
 
         @Override
         public void windowLostFocus(final WindowEvent e) {
-            keyHandler.reset();
             commandQueue.stopRunning();
         }
 
