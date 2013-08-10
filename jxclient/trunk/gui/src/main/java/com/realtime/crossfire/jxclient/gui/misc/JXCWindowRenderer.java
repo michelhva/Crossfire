@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiAutoCloseListener;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiStateListener;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
 import com.realtime.crossfire.jxclient.gui.list.GUIFloorList;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
@@ -1093,7 +1094,7 @@ public class JXCWindowRenderer {
      * @param e the event to dispatch
      * @return whether a gui element did handle the event
      */
-    public boolean handleKeyPress(@NotNull final KeyEvent e) {
+    public boolean handleKeyPress(@NotNull final KeyEvent2 e) {
         assert currentGui != null;
         return currentGui.handleKeyPress(e);
     }

@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommandFactory;
 import com.realtime.crossfire.jxclient.settings.Filenames;
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.Collection;
@@ -247,7 +246,7 @@ public class KeybindingsManager {
      * @param e the key event
      * @return whether the event has been consumed
      */
-    public boolean handleKeyPress(@NotNull final KeyEvent e) {
+    public boolean handleKeyPress(@NotNull final KeyEvent2 e) {
         if (characterKeyBindings != null && characterKeyBindings.handleKeyPress(e)) {
             return true;
         }

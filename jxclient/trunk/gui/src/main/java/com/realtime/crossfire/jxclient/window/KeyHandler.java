@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeybindingsManager;
 import com.realtime.crossfire.jxclient.gui.misc.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -176,7 +177,7 @@ public class KeyHandler {
      * Handles a "key pressed" event.
      * @param e the key event to handle
      */
-    private void handleKeyPress(@NotNull final KeyEvent e) {
+    private void handleKeyPress(@NotNull final KeyEvent2 e) {
         updateModifiers(e);
 
         switch (e.getKeyCode()) {
@@ -294,7 +295,7 @@ public class KeyHandler {
      * Handles a "key released" event.
      * @param e the key event to handle
      */
-    private void handleKeyRelease(@NotNull final KeyEvent e) {
+    private void handleKeyRelease(@NotNull final KeyEvent2 e) {
         updateModifiers(e);
 
         switch (e.getKeyCode()) {
@@ -327,7 +328,7 @@ public class KeyHandler {
     public void keyPressed(@NotNull final KeyEvent e) {
         debugKeyboardWrite("pressed", e);
         try {
-            handleKeyPress(e);
+            handleKeyPress(new KeyEvent2(e.getKeyCode(), e.getKeyChar(), e.getModifiers()));
         } finally {
             debugKeyboardWrite("");
         }
@@ -340,7 +341,7 @@ public class KeyHandler {
     public void keyReleased(@NotNull final KeyEvent e) {
         debugKeyboardWrite("released", e);
         try {
-            handleKeyRelease(e);
+            handleKeyRelease(new KeyEvent2(e.getKeyCode(), e.getKeyChar(), e.getModifiers()));
         } finally {
             debugKeyboardWrite("");
         }
@@ -350,8 +351,8 @@ public class KeyHandler {
      * Updates the saved modifier state from a key event.
      * @param keyEvent the key event to process
      */
-    private void updateModifiers(@NotNull final InputEvent keyEvent) {
-        final int mask = keyEvent.getModifiersEx();
+    private void updateModifiers(@NotNull final KeyEvent2 keyEvent) {
+        final int mask = keyEvent.getModifiers();
         setKeyShift(KEY_SHIFT_SHIFT, (mask&InputEvent.SHIFT_DOWN_MASK) != 0);
         setKeyShift(KEY_SHIFT_CTRL, (mask&InputEvent.CTRL_DOWN_MASK) != 0);
         setKeyShift(KEY_SHIFT_ALT, (mask&InputEvent.ALT_DOWN_MASK) != 0);
