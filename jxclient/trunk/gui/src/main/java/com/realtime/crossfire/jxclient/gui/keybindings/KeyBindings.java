@@ -96,14 +96,13 @@ public class KeyBindings {
 
     /**
      * Adds a key binding for a key code/modifiers pair.
-     * @param keyCode the key code for the key binding
-     * @param modifiers the modifiers for the key binding
+     * @param keyEvent the key event for the key binding
      * @param cmdList the commands to associate to the key binding
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, @NotNull final CommandList cmdList, final boolean isDefault) {
-        addKeyBinding(new KeyCodeKeyBinding(keyCode, modifiers, cmdList, isDefault));
+    public void addKeyBindingAsKeyCode(@NotNull final KeyEvent2 keyEvent, @NotNull final CommandList cmdList, final boolean isDefault) {
+        addKeyBinding(new KeyCodeKeyBinding(keyEvent, cmdList, isDefault));
     }
 
     /**
@@ -134,11 +133,10 @@ public class KeyBindings {
 
     /**
      * Removes a key binding for a key code/modifiers pair.
-     * @param keyCode the key code of the key binding
-     * @param modifiers the modifiers of the key binding
+     * @param keyEvent the key of the key binding
      */
-    public void deleteKeyBindingAsKeyCode(final int keyCode, final int modifiers) {
-        deleteKeyBinding(getKeyBindingAsKeyCode(keyCode, modifiers));
+    public void deleteKeyBindingAsKeyCode(@NotNull final KeyEvent2 keyEvent) {
+        deleteKeyBinding(getKeyBindingAsKeyCode(keyEvent));
     }
 
     /**
@@ -240,9 +238,10 @@ public class KeyBindings {
 
                             final KeyCodeKeyBinding keyCodeKeyBinding = (KeyCodeKeyBinding)keyBinding;
                             bw.write("code ");
-                            bw.write(keyCodeMap.getKeyName(keyCodeKeyBinding.getKeyCode()));
+                            final KeyEvent2 keyEvent = keyCodeKeyBinding.getKeyEvent2();
+                            bw.write(keyCodeMap.getKeyName(keyEvent.getKeyCode()));
                             bw.write(' ');
-                            bw.write(Integer.toString(keyCodeKeyBinding.getModifiers()));
+                            bw.write(Integer.toString(keyEvent.getModifiers()));
                             bw.write(' ');
                             bw.write(guiCommandFactory.encode(keyCodeKeyBinding.getCommandString()));
                             bw.newLine();
@@ -263,15 +262,14 @@ public class KeyBindings {
 
     /**
      * Finds a key binding associated to a key code/modifiers pair.
-     * @param keyCode the key code to look up
-     * @param modifiers the modifiers to look up
+     * @param keyEvent the key to look up
      * @return the key binding, or <code>null</code> if no key binding is
      *         associated
      */
     @Nullable
-    private KeyBinding getKeyBindingAsKeyCode(final int keyCode, final int modifiers) {
+    private KeyBinding getKeyBindingAsKeyCode(final KeyEvent2 keyEvent) {
         for (final KeyBinding keyBinding : keybindings) {
-            if (keyBinding.matchesKeyCode(keyCode, modifiers)) {
+            if (keyBinding.matchesKeyCode(keyEvent)) {
                 return keyBinding;
             }
         }
@@ -356,7 +354,7 @@ public class KeyBindings {
 
             final CommandList commandList = new CommandList(CommandListType.AND);
             commandList.add(guiCommandFactory.createCommandDecode(tmp[2]));
-            addKeyBindingAsKeyCode(keyCode, modifiers, commandList, isDefault);
+            addKeyBindingAsKeyCode(new KeyEvent2(keyCode, (char)0, modifiers), commandList, isDefault);
         } else {
             throw new InvalidKeyBindingException("syntax error");
         }
@@ -368,7 +366,7 @@ public class KeyBindings {
      * @return whether a matching key binding was found
      */
     public boolean handleKeyPress(@NotNull final KeyEvent2 e) {
-        final KeyBinding keyBindingCode = getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
+        final KeyBinding keyBindingCode = getKeyBindingAsKeyCode(e);
         if (keyBindingCode != null) {
             executeKeyBinding(keyBindingCode);
             return true;

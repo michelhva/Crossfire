@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents a pressed or released key.
@@ -85,6 +86,36 @@ public class KeyEvent2 {
      */
     public int getModifiers() {
         return modifiers;
+    }
+
+    /**
+     * Returns whether this key event matches the same key code as another key
+     * event.
+     * @param keyEvent the other key event
+     * @return whether both instances match the same key code
+     */
+    public boolean equalsKeyCode(@NotNull final KeyEvent2 keyEvent) {
+        return keyCode == keyEvent.keyCode && modifiers == keyEvent.modifiers;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean equals(@Nullable final Object obj) {
+        if (obj == null || obj.getClass() != getClass()) {
+            return false;
+        }
+        final KeyEvent2 keyEvent = (KeyEvent2)obj;
+        return keyCode == keyEvent.keyCode && keyChar == keyEvent.keyChar && modifiers == keyEvent.modifiers;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int hashCode() {
+        return keyCode^keyChar^modifiers;
     }
 
     /**

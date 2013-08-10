@@ -79,11 +79,10 @@ public abstract class KeyBinding {
 
     /**
      * Checks whether this key binding matches a key code/modifiers pair.
-     * @param keyCode the key code to check
-     * @param modifiers the modifiers to check
+     * @param keyEvent the key to check
      * @return whether the key binding matches the parameters
      */
-    public abstract boolean matchesKeyCode(final int keyCode, final int modifiers);
+    public abstract boolean matchesKeyCode(@NotNull final KeyEvent2 keyEvent);
 
     /**
      * Check whether this key binding matches a key character.

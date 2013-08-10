@@ -195,7 +195,7 @@ public class KeyHandler {
             return;
         }
 
-        if (keybindingsManager.keyPressed(e.getKeyCode(), e.getModifiers())) {
+        if (keybindingsManager.keyPressed(e)) {
             debugKeyboardWrite("keyPressed: keybindingsManager consumed key");
             return;
         }
@@ -353,10 +353,10 @@ public class KeyHandler {
      */
     private void updateModifiers(@NotNull final KeyEvent2 keyEvent) {
         final int mask = keyEvent.getModifiers();
-        setKeyShift(KEY_SHIFT_SHIFT, (mask&InputEvent.SHIFT_DOWN_MASK) != 0);
-        setKeyShift(KEY_SHIFT_CTRL, (mask&InputEvent.CTRL_DOWN_MASK) != 0);
-        setKeyShift(KEY_SHIFT_ALT, (mask&InputEvent.ALT_DOWN_MASK) != 0);
-        setKeyShift(KEY_SHIFT_ALT_GR, (mask&InputEvent.ALT_GRAPH_DOWN_MASK) != 0);
+        setKeyShift(KEY_SHIFT_SHIFT, (mask&InputEvent.SHIFT_MASK) != 0);
+        setKeyShift(KEY_SHIFT_CTRL, (mask&InputEvent.CTRL_MASK) != 0);
+        setKeyShift(KEY_SHIFT_ALT, (mask&InputEvent.ALT_MASK) != 0);
+        setKeyShift(KEY_SHIFT_ALT_GR, (mask&InputEvent.ALT_GRAPH_MASK) != 0);
         if (!getKeyShift(KEY_SHIFT_CTRL) && commandQueue.stopRunning()) {
             debugKeyboardWrite("updateModifiers: stopping run");
         }
