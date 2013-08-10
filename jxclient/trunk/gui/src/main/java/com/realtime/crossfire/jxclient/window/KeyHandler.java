@@ -265,9 +265,10 @@ public class KeyHandler {
      * @param e the key event to handle
      */
     public void keyPressed(@NotNull final KeyEvent e) {
-        debugKeyboardWrite("pressed", e);
+        final KeyEvent2 keyEvent = new KeyEvent2(e.getKeyCode(), e.getKeyChar(), e.getModifiers());
+        debugKeyboardWrite("pressed", e, keyEvent);
         try {
-            handleKeyPress(new KeyEvent2(e.getKeyCode(), e.getKeyChar(), e.getModifiers()));
+            handleKeyPress(keyEvent);
         } finally {
             debugKeyboardWrite("");
         }
@@ -278,9 +279,10 @@ public class KeyHandler {
      * @param e the key event to handle
      */
     public void keyReleased(@NotNull final KeyEvent e) {
-        debugKeyboardWrite("released", e);
+        final KeyEvent2 keyEvent = new KeyEvent2(e.getKeyCode(), e.getKeyChar(), e.getModifiers());
+        debugKeyboardWrite("released", e, keyEvent);
         try {
-            handleKeyRelease(new KeyEvent2(e.getKeyCode(), e.getKeyChar(), e.getModifiers()));
+            handleKeyRelease(keyEvent);
         } finally {
             debugKeyboardWrite("");
         }
@@ -299,14 +301,15 @@ public class KeyHandler {
     /**
      * Writes a {@link KeyEvent} to the keyboard debug.
      * @param type the event type
-     * @param e the key event to write
+     * @param keyEvent the key event to write
+     * @param keyEvent2 the key event to write
      */
-    private void debugKeyboardWrite(@NotNull final String type, @NotNull final KeyEvent e) {
+    private void debugKeyboardWrite(@NotNull final String type, @NotNull final KeyEvent keyEvent, @NotNull final KeyEvent2 keyEvent2) {
         if (debugKeyboard == null) {
             return;
         }
 
-        debugKeyboardWrite(type+" "+e);
+        debugKeyboardWrite(type+" "+keyEvent2+" "+keyEvent);
     }
 
     /**
