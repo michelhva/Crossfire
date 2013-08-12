@@ -8,7 +8,7 @@ enter_x 11
 enter_y 1
 msg
 Created:  2003-04-27 Avion
-Modified: 2012-03-26 Rick Tanner
+Modified: 2013-08-12 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -601,7 +601,7 @@ end
 arch woman
 msg
 @match *
-Eeeek!  I think I saw a mouse.
+Eeeek! I think I saw a mouse!
 endmsg
 x 3
 y 7
@@ -923,9 +923,7 @@ x 5
 y 12
 end
 arch sign_w
-msg
-#3 Riverside Manor
-endmsg
+name #3 Riverside Manor
 x 5
 y 12
 end
@@ -1123,13 +1121,15 @@ arch fatman
 name J.C.
 msg
 @match mark
-Ya good guy lets me beat him at cards all the time.  Guy loves to gamble.  Otherwise he's a bum.
+Ya good guy lets me beat him at cards all the time. Guy loves to gamble. Otherwise he's a bum.
 @match amy
 She runs the place for that rat Witherspoon.
-@match Witherspoon|rat
-Witherspoon owns all these slum..er 'condos'.
-@match gramps|Malone|staff
-Ya ol Gramps Malone is right duffer.  Plays a good game of orc knuckles.  I think he left his walking stick here last time he came round.  Think it's under the table...
+@match witherspoon|landlord|rat
+Witherspoon owns all these slums... err... 'condos'.
+@match gramp|malone|staff
+Ya ol Gramps Malone is right duffer. Plays a good game of orc knuckles. I think he left his walking stick here last time he came round. Think it's under the table.
+@match bird
+Ya, don't ya hear it nearby?
 @match *
 Darn bird keeps me awake all night...
 endmsg
@@ -1727,9 +1727,7 @@ x 10
 y 9
 end
 arch sign_w
-msg
-#1 Riverside Manor
-endmsg
+name #1 Riverside Manor
 x 10
 y 9
 end
@@ -1951,6 +1949,9 @@ arch key2
 name apartment key
 name_pl apartment keys
 slaying hovel_key
+msg
+#2 Riverside Manor
+endmsg
 x 11
 y 19
 end
@@ -2287,8 +2288,8 @@ y 2
 end
 arch sign
 msg
-**Riverside Manor**
-Lucksury Condominimums at Afredable Rates.
+Riverside Manor
+Luxury condominimums at affordable rates!
 endmsg
 x 14
 y 2
@@ -2319,9 +2320,10 @@ x 14
 y 7
 end
 arch sign_e
+name #2 Riverside Manor
 msg
-#2 Riverside Manor
-For Rent - see Amy
+For Rent
+See Amy in #4 Riverside Manor for details.
 endmsg
 x 14
 y 7
@@ -2347,9 +2349,8 @@ x 14
 y 12
 end
 arch sign_w
+name #4 Riverside Manor
 msg
-#4 Riverside Manor
-----------------
 Amy Barrnes
 Caretaker
 Please knock
@@ -2370,9 +2371,11 @@ x 14
 y 14
 end
 arch stove
+name cooking stove
 x 14
 y 14
-type 0
+identified 1
+is_cauldron 0
 end
 arch woodfloor
 x 14
@@ -2382,13 +2385,17 @@ arch woman
 name Amy
 msg
 @match rent|house
-Ya, it's available.  100 gold a week.  Three weeks advance.  I ain't fixin' nuthin so take it or leave it.  Key's on the table if you want to check it out.
+Ya, it's available. 100 gold a week. Three weeks advance. I ain't fixin' nuthin so take it or leave it. Key's on the table if you want to check it out.
 @match mark
 That bum... Sick friend, my foot... If I catch him around here anymore I'll chop him a new smile.
 @match door|locked
 Mark always keeps the key to that door with him.
+@question where Where is the key?
 @match where
 Dunno... but if you find Joey, he'll be somewhere nearby...
+@question Joey Who's Joey?
+@match joey
+Oh, Mark's friend.
 @match *
 Whatda want?
 endmsg
@@ -2500,7 +2507,7 @@ end
 arch locked_door2
 slaying hovel_key
 msg
-You'll need the key to open this door.  Although, judging by the smell, why you'd want to go in is a mystery...
+You'll need a key to open this door. Although, judging by the smell, why youo'd want to go in is a mystery...
 endmsg
 x 15
 y 6
@@ -2802,7 +2809,7 @@ arch woodfloor
 x 17
 y 3
 end
-arch chair
+arch chair_1.2
 x 17
 y 3
 end
@@ -2866,20 +2873,20 @@ arch dresser
 x 17
 y 14
 arch letter
-name letter2
+name torn letter
 msg
-Amy, you have to let me come back and get my stuff...it's important.  At least feed the thing eh, I'm telling you it's worth a bundle.
+Amy, you have to let me come back and get my stuff... it's important. At least feed the thing eh, I'm telling you it's worth a bundle.
 -M
 endmsg
 level 1
+end
 arch letter
-name letter1
+name ripped letter
 msg
 Amy let me come home... Honest, I was just visiting Oled and I never saw her there before.
 -M
 endmsg
 level 1
-end
 end
 end
 arch woodfloor
@@ -3150,6 +3157,7 @@ y 11
 end
 arch sheep
 msg
+@match *
 Baaa!
 endmsg
 x 19
@@ -3399,7 +3407,7 @@ arch key2
 name key
 slaying BZA_whitedoor
 msg
-B.A.  #1
+B. A. #1
 endmsg
 face key_blue.111
 end
@@ -3438,7 +3446,7 @@ arch chole_2
 name hole in the floor
 slaying riverside_under
 msg
-Smells like orc.
+Smells like orcs...
 endmsg
 hp 1
 sp 1

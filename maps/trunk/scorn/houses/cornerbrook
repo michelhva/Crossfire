@@ -1,5 +1,5 @@
 arch map
-name Cornerbrook
+name Cornerbrook Estates
 difficulty 2
 region scorn
 width 25
@@ -8,7 +8,7 @@ enter_x 11
 enter_y 1
 msg
 Created:  2003-04-27 Avion
-Modified: 2012-01-08 Rick Tanner
+Modified: 2013-08-12 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -436,10 +436,10 @@ x 2
 y 11
 end
 arch phole_3
-name hole
+name small hole
 slaying cornerbrook_under
 msg
-Icky, there is a bitter smell in here.
+Ick... there is a bitter smell in here...
 endmsg
 hp 1
 sp 1
@@ -572,9 +572,9 @@ y 6
 end
 arch fatwoman
 msg
-@match landlord|Witherspoon
-Yes old man Witherspoon is a real slum lord.
-@match move|leave|Move
+@match landlord|witherspoon
+Yes, old man Witherspoon is a real slum lord.
+@match move|leave
 Bugs aren't so bad, you should see the other slums around here.
 @match *
 I told the landlord about the bugs, but he's a tightwad.
@@ -928,8 +928,13 @@ x 5
 y 14
 end
 arch woman
+msg
+@match *
+Get lost! You think you can just barge into other people's houses?
+endmsg
 x 5
 y 14
+randomitems jail
 end
 arch woodfloor
 x 5
@@ -1031,6 +1036,8 @@ y 7
 end
 arch fatman
 msg
+@match eat
+I woke up this morning to find that most of our food was gone!
 @match *
 Gods! I can't seem to find anything to eat around here!
 endmsg
@@ -2178,8 +2185,8 @@ x 14
 end
 arch sign_w
 msg
-**CornerBrook Estates**
-Highly Desirable Condominimums at Afordable Rates.
+Cornerbrook Estates
+Highly desirable condominimums at affordable rates!
 endmsg
 x 14
 end
@@ -2676,7 +2683,7 @@ arch woodfloor
 x 17
 y 3
 end
-arch chair
+arch chair_1.2
 x 17
 y 3
 end
@@ -2708,13 +2715,13 @@ arch sailor
 name Swabbie
 msg
 @match mark
-Ya I know him, he told me not to tell anyone he was at Goth..Oh you said 'Mark'... I never heard of him.
+Ya I know him, he told me not to tell anyone he was at Goth... Oh you said 'Mark'... I never heard of him.
 @match wife|married
-Can't cook, can't clean and keeps stabbin me alla time.  Never marry a pirate lass...
-@match sheep|Chancy
+Can't cook, can't clean and keeps stabbin me alla' time. Never marry a pirate lass...
+@match sheep|chancy
 Chancy is my pet sheep, and don't you make any wise cracks about it.
 @match *
-I never should have married her.  I should have stayed at sea.
+I never should have married her. I should have stayed at sea.
 endmsg
 x 17
 y 8
@@ -2759,9 +2766,11 @@ x 17
 y 14
 end
 arch stove
+name cooking stove
 x 17
 y 14
-type 0
+identified 1
+is_cauldron 0
 end
 arch woodfloor
 x 17
@@ -3039,14 +3048,14 @@ y 3
 end
 arch pirate_lass
 msg
-@match ahoy
+@match ahoy|hi|hello|greet
 Hey sailor, want some treasure?
 @match old|pirate|Swabbie
-I shouldn't have married him, I should have stuck with Tomasso the Pirate.  I hear he found a treasure map.
-@match tomasso|map
-There was a real pirate, he set sail for Port Joseph.  Said he found a treasure map.
+I shouldn't have married him, I should have stuck with Tomasso the Pirate. I hear he found a treasure map.
+@match tomasso|map|treasure
+Now he was a real pirate! He set sail for Port Joseph. Said he found a treasure map.
 @match *
-Never marry an old pirate..
+Never marry an old pirate...
 endmsg
 x 19
 y 3
@@ -3193,8 +3202,10 @@ x 20
 y 3
 end
 arch stove
+name cooking stove
 x 20
 y 3
+identified 1
 is_cauldron 0
 end
 arch woodfloor
