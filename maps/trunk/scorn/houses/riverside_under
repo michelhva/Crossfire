@@ -9,7 +9,7 @@ enter_x 23
 enter_y 4
 msg
 Created:  2003-04-27
-Modified: 2012-01-09 Rick Tanner
+Modified: 2013-08-12 Kevin Zheng
 endmsg
 end
 arch dirtfloor
@@ -2956,6 +2956,8 @@ end
 arch swall_2_1_2
 x 19
 y 3
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 19
@@ -3136,6 +3138,8 @@ end
 arch swall_2_1_2
 x 20
 y 3
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 20
@@ -3306,6 +3310,8 @@ end
 arch swall_2_1_2
 x 21
 y 3
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 21
@@ -3491,6 +3497,8 @@ end
 arch swall_2_2_3
 x 22
 y 3
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 22
@@ -3499,6 +3507,8 @@ end
 arch swall_2_1_1
 x 22
 y 4
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 22
