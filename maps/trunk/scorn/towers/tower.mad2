@@ -1,11 +1,11 @@
 arch map
-name Mad Mage's tower, level 2
+name Mad Mage's Tower, Level 2
 region scorn
 width 10
 height 14
 msg
 Created:  2010-06-12 Nicolas Weeger
-Modified: 2013-07-19 Andreas Kirschbaum
+Modified: 2013-08-12 Kevin Zheng
 endmsg
 end
 arch graymarble
@@ -109,10 +109,9 @@ x 7
 y 4
 end
 arch stair_up_1
-name to the top of the tower
 slaying tower.mad3
-hp 10
-sp 11
+hp 11
+sp 7
 x 7
 y 4
 arch quest_apply_if
@@ -147,7 +146,6 @@ arch shadow
 name Igor
 x 7
 y 10
-type 0
 unaggressive 1
 arch npc_dialog
 name /scorn/towers/igor2.msg
@@ -162,7 +160,6 @@ x 7
 y 12
 end
 arch stair_down_3
-name to the first floor
 slaying tower.mad1
 hp 7
 sp 12
@@ -190,10 +187,9 @@ x 8
 y 4
 end
 arch stair_up_1
-name to the top of the tower
 slaying tower.mad3
-hp 10
-sp 10
+hp 11
+sp 7
 x 8
 y 4
 arch quest_apply_if
@@ -233,7 +229,6 @@ x 8
 y 12
 end
 arch stair_down_3
-name to the first floor
 slaying tower.mad1
 hp 8
 sp 12
