@@ -1440,6 +1440,8 @@ end
 arch wwall_win1
 x 8
 y 17
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 8
@@ -1607,6 +1609,8 @@ arch hedge_2_1_2
 x 9
 y 13
 move_block all
+no_magic 1
+damned 1
 end
 arch grass
 x 9
