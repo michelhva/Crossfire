@@ -1,12 +1,14 @@
 arch map
-name Tower of Zoon
-difficulty 1
+name Tower of Zoon, Level 1
+difficulty 30
 region brest
 width 40
 height 80
+enter_x 37
+enter_y 66
 msg
 Created:  1994-02-31
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-01-25 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -7409,9 +7411,7 @@ y 22
 end
 arch book_read
 msg
-Don't try to kill the poor secretary.
-She has so many things to do that
-she won't open the door very quick...
+Don't try to kill the poor secretary.  She has so many things to do that she won't open the door very quick...
 endmsg
 x 15
 y 22
@@ -17110,10 +17110,7 @@ end
 arch book_read
 name Crossfire room
 msg
-This is the room where some of us
-play crossfire the whole day....
-Be careful, this department is not
-so easy to visit....
+This is the room where some of us play crossfire the whole day.... Be careful, this department is not so easy to visit....
 endmsg
 x 37
 y 68
@@ -17578,7 +17575,7 @@ arch woodfloor
 x 38
 y 66
 end
-arch oakdoor
+arch stair_down_4
 slaying /world/world_107_123
 hp 31
 sp 33

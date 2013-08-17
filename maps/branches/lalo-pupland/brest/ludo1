@@ -1,12 +1,14 @@
 arch map
 name Tower of Ludo, Level 1
-difficulty 1
+difficulty 30
 region brest
 width 42
 height 22
+enter_x 23
+enter_y 9
 msg
-Created:  1994-02-31
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1994-05-31
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -3810,7 +3812,7 @@ arch woodfloor
 x 23
 y 9
 end
-arch oakdoor
+arch stair_3_down
 slaying /world/world_107_123
 hp 22
 sp 40
@@ -3821,7 +3823,7 @@ arch woodfloor
 x 23
 y 10
 end
-arch oakdoor
+arch stair_3_down
 slaying /world/world_107_123
 hp 22
 sp 40
@@ -3987,7 +3989,7 @@ arch woodfloor
 x 24
 y 9
 end
-arch oakdoor
+arch stair_3_down
 slaying /world/world_107_123
 hp 22
 sp 40
@@ -3998,7 +4000,7 @@ arch woodfloor
 x 24
 y 10
 end
-arch oakdoor
+arch stair_3_down
 slaying /world/world_107_123
 hp 22
 sp 40

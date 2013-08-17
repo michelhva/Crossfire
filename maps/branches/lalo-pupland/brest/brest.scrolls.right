@@ -1,7 +1,7 @@
 arch map
 name Scrolls Galore
 reset_timeout 3600
-difficulty 50
+difficulty 18
 region brest
 shopitems scroll:95;armour improver:95;weapon improver:95;skillscroll:95;spellbook:50;*:-100
 shopgreed 1.00000
@@ -10,9 +10,10 @@ shopmax 150000
 shoprace human
 width 30
 height 40
+enter_y 37
 msg
 Created:  2005-05-23 Gene Alexander
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-01-25 Rick Tanner
 endmsg
 outdoor 1
 tile_path_4 brest.scrolls
@@ -85,10 +86,8 @@ end
 arch brush
 y 15
 end
-arch swall_1_3_half
+arch swall_2_1_2
 y 15
-no_magic 1
-damned 1
 end
 arch lamppost
 name Lighted fence post
@@ -264,6 +263,10 @@ x 1
 y 15
 end
 arch wwall_2_2_2
+x 1
+y 15
+end
+arch swall_1_3_half
 x 1
 y 15
 end
@@ -2230,8 +2233,7 @@ y 34
 end
 arch magic_mouth
 msg
-No magic or prayers will work between these walls.
-You have been warned.
+No magic or prayers will work between these walls.  You have been warned.
 endmsg
 food 1
 x 8
@@ -2247,8 +2249,7 @@ y 35
 end
 arch magic_mouth
 msg
-No magic or prayers will work between these walls.
-You have been warned.
+No magic or prayers will work between these walls.  You have been warned.
 endmsg
 food 1
 x 8
@@ -2264,8 +2265,7 @@ y 36
 end
 arch magic_mouth
 msg
-No magic or prayers will work between these walls.
-You have been warned.
+No magic or prayers will work between these walls.  You have been warned.
 endmsg
 food 1
 x 8
@@ -2281,8 +2281,7 @@ y 37
 end
 arch magic_mouth
 msg
-No magic or prayers will work between these walls.
-You have been warned.
+No magic or prayers will work between these walls.  You have been warned.
 endmsg
 food 1
 x 8
@@ -2298,8 +2297,7 @@ y 38
 end
 arch magic_mouth
 msg
-No magic or prayers will work between these walls.
-You have been warned.
+No magic or prayers will work between these walls.  You have been warned.
 endmsg
 food 1
 x 8
@@ -2875,6 +2873,10 @@ arch flagstone_2_1_2
 x 11
 y 1
 end
+arch dungeon_magic
+x 11
+y 2
+end
 arch tile_white_floor
 x 11
 y 2
@@ -2882,6 +2884,10 @@ end
 arch wwall_2_2_2
 x 11
 y 2
+end
+arch dungeon_magic
+x 11
+y 3
 end
 arch tile_white_floor
 x 11
@@ -2926,6 +2932,10 @@ connected 5
 no_magic 1
 damned 1
 end
+arch dungeon_magic
+x 11
+y 5
+end
 arch tile_white_floor
 x 11
 y 5
@@ -2934,6 +2944,10 @@ arch wwall_1_1
 x 11
 y 5
 end
+arch dungeon_magic
+x 11
+y 6
+end
 arch tile_white_floor
 x 11
 y 6
@@ -2941,6 +2955,10 @@ end
 arch wwall_win1
 x 11
 y 6
+end
+arch dungeon_magic
+x 11
+y 7
 end
 arch tile_white_floor
 x 11
@@ -3161,6 +3179,10 @@ arch flagstone_2_1_2
 x 12
 y 1
 end
+arch dungeon_magic
+x 12
+y 2
+end
 arch tile_white_floor
 x 12
 y 2
@@ -3169,6 +3191,10 @@ arch wwall_2_1_2
 x 12
 y 2
 end
+arch dungeon_magic
+x 12
+y 3
+end
 arch check_inv
 slaying irritable_zorn_key
 x 12
@@ -3178,6 +3204,10 @@ end
 arch tile_white_floor
 x 12
 y 3
+end
+arch dungeon_magic
+x 12
+y 4
 end
 arch check_inv
 slaying irritable_zorn_key
@@ -3189,6 +3219,10 @@ arch tile_white_floor
 x 12
 y 4
 end
+arch dungeon_magic
+x 12
+y 5
+end
 arch check_inv
 slaying irritable_zorn_key
 x 12
@@ -3198,6 +3232,10 @@ end
 arch tile_white_floor
 x 12
 y 5
+end
+arch dungeon_magic
+x 12
+y 6
 end
 arch tile_white_floor
 x 12
@@ -3210,6 +3248,8 @@ end
 arch tile_white_floor
 x 12
 y 7
+type 68
+no_magic 1
 end
 arch brazier
 x 12
@@ -3443,6 +3483,10 @@ arch flagstone_2_1_2
 x 13
 y 1
 end
+arch dungeon_magic
+x 13
+y 2
+end
 arch tile_white_floor
 x 13
 y 2
@@ -3451,17 +3495,33 @@ arch wwall_2_1_2
 x 13
 y 2
 end
-arch tile_white_floor
+arch dungeon_magic
 x 13
 y 3
 end
 arch tile_white_floor
 x 13
+y 3
+end
+arch dungeon_magic
+x 13
 y 4
 end
 arch tile_white_floor
 x 13
+y 4
+end
+arch dungeon_magic
+x 13
 y 5
+end
+arch tile_white_floor
+x 13
+y 5
+end
+arch dungeon_magic
+x 13
+y 6
 end
 arch tile_white_floor
 x 13
@@ -3474,6 +3534,8 @@ end
 arch tile_white_floor
 x 13
 y 7
+type 68
+no_magic 1
 end
 arch swall_1_4
 x 13
@@ -3621,8 +3683,7 @@ end
 arch sign
 name Read Me
 msg
-This section of the shop is for
-low level inscription scrolls.
+This section of the shop is for low level inscription scrolls.
 -=-=-=-=-=-=-=-=-=-=-
 Warning: Do not irritate Zorn.
 endmsg
@@ -3692,6 +3753,10 @@ arch flagstone_2_1_2
 x 14
 y 1
 end
+arch dungeon_magic
+x 14
+y 2
+end
 arch tile_white_floor
 x 14
 y 2
@@ -3700,17 +3765,33 @@ arch wwall_win2
 x 14
 y 2
 end
-arch tile_white_floor
+arch dungeon_magic
 x 14
 y 3
 end
 arch tile_white_floor
 x 14
+y 3
+end
+arch dungeon_magic
+x 14
 y 4
 end
 arch tile_white_floor
 x 14
+y 4
+end
+arch dungeon_magic
+x 14
 y 5
+end
+arch tile_white_floor
+x 14
+y 5
+end
+arch dungeon_magic
+x 14
+y 6
 end
 arch tile_white_floor
 x 14
@@ -3723,6 +3804,8 @@ end
 arch tile_white_floor
 x 14
 y 7
+type 68
+no_magic 1
 end
 arch swall_2_1_2
 x 14
@@ -3948,6 +4031,10 @@ arch flagstone_2_1_2
 x 15
 y 1
 end
+arch dungeon_magic
+x 15
+y 2
+end
 arch tile_white_floor
 x 15
 y 2
@@ -3956,13 +4043,25 @@ arch wwall_2_1_2
 x 15
 y 2
 end
-arch tile_white_floor
+arch dungeon_magic
 x 15
 y 3
 end
 arch tile_white_floor
 x 15
+y 3
+end
+arch dungeon_magic
+x 15
 y 4
+end
+arch tile_white_floor
+x 15
+y 4
+end
+arch dungeon_magic
+x 15
+y 5
 end
 arch tile_white_floor
 x 15
@@ -3971,6 +4070,10 @@ end
 arch shop_mat
 x 15
 y 5
+end
+arch dungeon_magic
+x 15
+y 6
 end
 arch tile_white_floor
 x 15
@@ -3983,6 +4086,8 @@ end
 arch tile_white_floor
 x 15
 y 7
+type 68
+no_magic 1
 end
 arch swall_1_3
 x 15
@@ -4263,6 +4368,10 @@ arch flagstone_2_1_2
 x 16
 y 1
 end
+arch dungeon_magic
+x 16
+y 2
+end
 arch tile_white_floor
 x 16
 y 2
@@ -4278,6 +4387,8 @@ end
 arch tile_white_floor
 x 16
 y 3
+type 68
+no_magic 1
 end
 arch brazier
 x 16
@@ -4290,6 +4401,8 @@ end
 arch tile_white_floor
 x 16
 y 4
+type 68
+no_magic 1
 end
 arch swall_1_1
 x 16
@@ -4302,6 +4415,8 @@ end
 arch tile_white_floor
 x 16
 y 5
+type 68
+no_magic 1
 end
 arch swall_2_1_1
 x 16
@@ -4314,6 +4429,8 @@ end
 arch tile_white_floor
 x 16
 y 6
+type 68
+no_magic 1
 end
 arch swall_1_2
 x 16
@@ -4326,6 +4443,8 @@ end
 arch tile_white_floor
 x 16
 y 7
+type 68
+no_magic 1
 end
 arch brazier
 x 16
@@ -4535,6 +4654,10 @@ sp 38
 x 16
 y 38
 end
+arch dungeon_magic
+x 16
+y 39
+end
 arch brush
 x 16
 y 39
@@ -4569,6 +4692,8 @@ end
 arch tile_white_floor
 x 17
 y 3
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 17
@@ -4577,6 +4702,8 @@ end
 arch tile_white_floor
 x 17
 y 4
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 17
@@ -4585,6 +4712,8 @@ end
 arch tile_white_floor
 x 17
 y 5
+type 68
+no_magic 1
 end
 arch shop_mat
 x 17
@@ -4597,6 +4726,8 @@ end
 arch tile_white_floor
 x 17
 y 6
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 17
@@ -4605,6 +4736,8 @@ end
 arch tile_white_floor
 x 17
 y 7
+type 68
+no_magic 1
 end
 arch shop_empty
 x 17
@@ -4695,6 +4828,8 @@ end
 arch tile_white_floor
 x 17
 y 26
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 17
@@ -4703,6 +4838,8 @@ end
 arch tile_white_floor
 x 17
 y 27
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 17
@@ -4752,30 +4889,18 @@ arch merchant
 name Irritable Zorn
 title Scroll Maker
 msg
-@match Key|key
-You want my key? You'll have to kill me to get it you
-punk adventurer! Now leave me alone.
-@match Pet|pet
-My pet is a beautiful animal. Don't mess with it if
-you know what is good for you. But knowing you
-dumb adventurer types you will not heed my
-advice. Leave me alone.
-@match Quest|quest
-So, you want a quest do you? If you can enter my
-home you may just find one. But you need a key to
-enter my home. Now quit bothering me, moron.
-@match Given Name|given name|Name|name
-Why do you want to know my given name? I am
-content to be called by my family name. Go away.
-@match Zacharus|zacharus
-Why hello old friend! I don't recall your face but
-only my closest friends know my given name. I
-am sure you have my castle key as I give one to
-all my friends. Remember to carry my pet in with
-you to get past the invisible barrier at the front
-doors. It is good to see you!
+@match key
+You want my key? You'll have to kill me to get it you punk adventurer! Now leave me alone.
+@match pet
+My pet is a beautiful animal.  Don't mess with it if you know what is good for you.  But knowing you dumb adventurer types you will not heed my advice.  Leave me alone.
+@match quest
+So, you want a quest do you? If you can enter my home you may just find one.  But you need a key to enter my home.  Now quit bothering me, moron.
+@match given name|name
+Why do you want to know my given name?  I am content to be called by my family name.  Go away.
+@match zacharus
+Why hello old friend! I don't recall your face but only my closest friends know my given name.  I am sure you have my castle key as I give one to all my friends.  Remember to carry my pet in with you to get past the invisible barrier at the front doors.  It is good to see you!
 @match *
-Don't bother me. Just do your shopping and get out.
+Don't bother me.  Just do your shopping and get out.
 endmsg
 Con 85
 Pow 15
@@ -4786,7 +4911,7 @@ maxsp 500
 exp 2000000
 dam 85
 wc -100
-ac -120
+ac -30
 x 17
 y 32
 speed 1.5
@@ -4987,6 +5112,10 @@ arch footpath_2_2_4
 x 17
 y 38
 end
+arch dungeon_magic
+x 17
+y 39
+end
 arch brush
 x 17
 y 39
@@ -5021,6 +5150,8 @@ end
 arch tile_white_floor
 x 18
 y 3
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 18
@@ -5029,6 +5160,8 @@ end
 arch tile_white_floor
 x 18
 y 4
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 18
@@ -5037,6 +5170,8 @@ end
 arch tile_white_floor
 x 18
 y 5
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 18
@@ -5045,6 +5180,8 @@ end
 arch tile_white_floor
 x 18
 y 6
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 18
@@ -5053,6 +5190,8 @@ end
 arch tile_white_floor
 x 18
 y 7
+type 68
+no_magic 1
 end
 arch shop_empty
 x 18
@@ -5169,6 +5308,8 @@ end
 arch tile_white_floor
 x 18
 y 26
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 18
@@ -5177,6 +5318,8 @@ end
 arch tile_white_floor
 x 18
 y 27
+type 68
+no_magic 1
 end
 arch shop_mat
 x 18
@@ -5309,6 +5452,10 @@ endmsg
 x 18
 y 38
 end
+arch dungeon_magic
+x 18
+y 39
+end
 arch brush
 x 18
 y 39
@@ -5439,6 +5586,8 @@ end
 arch tile_white_floor
 x 19
 y 26
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 19
@@ -5447,6 +5596,8 @@ end
 arch tile_white_floor
 x 19
 y 27
+type 68
+no_magic 1
 end
 arch dungeon_magic
 x 19
@@ -5561,6 +5712,10 @@ end
 arch brush
 x 19
 y 38
+end
+arch dungeon_magic
+x 19
+y 39
 end
 arch brush
 x 19
@@ -5805,6 +5960,10 @@ end
 arch brush
 x 20
 y 38
+end
+arch dungeon_magic
+x 20
+y 39
 end
 arch brush
 x 20
@@ -7425,7 +7584,7 @@ arch brush
 x 27
 y 39
 end
-arch swall_1_3_half
+arch swall_2_1_2
 x 27
 y 39
 end
@@ -7748,6 +7907,10 @@ x 28
 y 39
 end
 arch flagstone_2_1_1
+x 28
+y 39
+end
+arch swall_1_3_half
 x 28
 y 39
 end

@@ -10,8 +10,11 @@ shopmax 150000
 shoprace human
 width 20
 height 40
+enter_x 3
+enter_y 37
 msg
 Created:  2005-05-23 Gene Alexander
+Modified: 2012-01-25 Rick Tanner
 endmsg
 outdoor 1
 tile_path_2 brest.scrolls.right
@@ -24,10 +27,13 @@ end
 arch flagstone_2_1_2
 y 1
 end
+arch swall_1_1_half
+y 1
+end
 arch brush
 y 2
 end
-arch swall_1_1
+arch swall_2_1_1
 y 2
 end
 arch lamppost
@@ -321,7 +327,7 @@ maxsp 500
 exp 5000
 dam 50
 wc -50
-ac -50
+ac -13
 x 1
 y 3
 speed 1.0
@@ -1163,7 +1169,11 @@ arch stonefloor2
 x 4
 y 19
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
+x 4
+y 19
+end
+arch swall_1_1_half
 x 4
 y 19
 end
@@ -1195,7 +1205,11 @@ arch stonefloor2
 x 4
 y 22
 end
-arch flagstone_2_1_1
+arch swall_1_2_half
+x 4
+y 22
+end
+arch flagstone_1_1
 x 4
 y 22
 end
@@ -1203,7 +1217,11 @@ arch stonefloor2
 x 4
 y 23
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
+x 4
+y 23
+end
+arch swall_1_1_half
 x 4
 y 23
 end
@@ -1235,7 +1253,11 @@ arch stonefloor2
 x 4
 y 26
 end
-arch flagstone_2_1_1
+arch swall_1_2_half
+x 4
+y 26
+end
+arch flagstone_1_1
 x 4
 y 26
 end
@@ -1243,7 +1265,11 @@ arch stonefloor2
 x 4
 y 27
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
+x 4
+y 27
+end
+arch swall_1_1_half
 x 4
 y 27
 end
@@ -1275,7 +1301,11 @@ arch stonefloor2
 x 4
 y 30
 end
-arch flagstone_2_1_1
+arch swall_1_2_half
+x 4
+y 30
+end
+arch flagstone_1_1
 x 4
 y 30
 end
@@ -1405,11 +1435,9 @@ arch brush
 x 5
 y 15
 end
-arch swall_1_3_half
+arch swall_2_1_2
 x 5
 y 15
-no_magic 1
-damned 1
 end
 arch lamppost
 name Lighted fence post
@@ -1636,18 +1664,18 @@ arch brush
 x 6
 y 7
 end
+arch swall_2_2_1
+x 6
+y 7
+no_magic 1
+damned 1
+end
 arch lamppost
 name Lighted fence post
 x 6
 y 7
 glow_radius 5
 move_block all
-end
-arch swall_2_2_1
-x 6
-y 7
-no_magic 1
-damned 1
 end
 arch brush
 x 6
@@ -1686,6 +1714,10 @@ x 6
 y 15
 end
 arch flagstone_2_2_2
+x 6
+y 15
+end
+arch swall_1_3_half
 x 6
 y 15
 end
@@ -1985,7 +2017,7 @@ ROAR!
 endmsg
 dam 80
 wc -25
-ac -30
+ac -8
 x 7
 y 26
 speed 0.5
@@ -2049,7 +2081,11 @@ arch stonefloor2
 x 7
 y 35
 end
-arch flagstone_2_2_1
+arch swall_1_4_half
+x 7
+y 35
+end
+arch flagstone_1_2
 x 7
 y 35
 end
@@ -2172,7 +2208,11 @@ arch stonefloor2
 x 8
 y 14
 end
-arch flagstone_2_1_2
+arch swall_1_4_half
+x 8
+y 14
+end
+arch flagstone_1_3
 x 8
 y 14
 end
@@ -2546,7 +2586,11 @@ arch swall_2_1_1
 x 9
 y 35
 end
-arch flagstone_2_1_2
+arch swall_1_3_half
+x 9
+y 35
+end
+arch flagstone_1_4
 x 9
 y 35
 end
@@ -2669,7 +2713,11 @@ arch stonefloor2
 x 10
 y 14
 end
-arch flagstone_2_1_2
+arch swall_1_3_half
+x 10
+y 14
+end
+arch flagstone_1_4
 x 10
 y 14
 end
@@ -2700,8 +2748,7 @@ arch magic_mouth
 msg
 A mouth appears in the air and says ...
 ---
-DANGER! Floor two is protected by specially trained
-basilisks. Try not to bother them.
+DANGER! Floor two is protected by specially trained basilisks.  Try not to bother them.
 ---
 The mouth disappears.
 endmsg
@@ -2803,11 +2850,9 @@ end
 arch sign
 name Read Me
 msg
-This section of the shop is for
-high level inscription scrolls.
+This section of the shop is for high level inscription scrolls.
 -=-=-=-=-=-=-=-=-=-=-
-Warning Orville and Wilbur are
-NOT friendly.
+Warning Orville and Wilbur are NOT friendly.
 endmsg
 x 10
 y 33
@@ -2829,7 +2874,7 @@ arch stonefloor2
 x 10
 y 35
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 10
 y 35
 end
@@ -3344,8 +3389,7 @@ y 31
 end
 arch sign
 msg
-Entrance to the second floor is at the other end of the
-room. Think you can make it? Luck to ya ...
+Entrance to the second floor is at the other end of the room.  Think you can make it? Luck to ya ...
 endmsg
 x 12
 y 31
@@ -3534,7 +3578,11 @@ arch stonefloor2
 x 13
 y 14
 end
-arch flagstone_2_1_2
+arch swall_1_4_half
+x 13
+y 14
+end
+arch flagstone_1_3
 x 13
 y 14
 end
@@ -3565,8 +3613,7 @@ arch magic_mouth
 msg
 A mouth appears in the air and says ...
 ---
-DANGER! Floor two is protected by specially trained
-basilisks. Try not to bother them.
+DANGER! Floor two is protected by specially trained basilisks.  Try not to bother them.
 ---
 The mouth disappears.
 endmsg
@@ -3685,7 +3732,7 @@ arch stonefloor2
 x 13
 y 35
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 13
 y 35
 end
@@ -3963,7 +4010,11 @@ arch swall_2_1_1
 x 14
 y 35
 end
-arch flagstone_2_1_2
+arch swall_1_4_half
+x 14
+y 35
+end
+arch flagstone_1_3
 x 14
 y 35
 end
@@ -4090,7 +4141,11 @@ arch stonefloor2
 x 15
 y 14
 end
-arch flagstone_2_1_2
+arch swall_1_3_half
+x 15
+y 14
+end
+arch flagstone_1_4
 x 15
 y 14
 end
@@ -4155,7 +4210,7 @@ GRRRRRR!
 endmsg
 dam 80
 wc -25
-ac -30
+ac -8
 x 15
 y 26
 speed 0.5
@@ -4462,7 +4517,11 @@ arch stonefloor2
 x 16
 y 35
 end
-arch flagstone_2_2_4
+arch flagstone_1_2
+x 16
+y 35
+end
+arch swall_1_3_half
 x 16
 y 35
 end
@@ -4562,6 +4621,10 @@ arch brush
 x 17
 y 7
 end
+arch swall_2_2_4
+x 17
+y 7
+end
 arch lamppost
 name Lighted fence post
 x 17
@@ -4570,10 +4633,6 @@ glow_radius 5
 move_block all
 no_magic 1
 damned 1
-end
-arch swall_2_2_4
-x 17
-y 7
 end
 arch brush
 x 17
@@ -4615,7 +4674,11 @@ arch stonefloor2
 x 17
 y 15
 end
-arch flagstone_3_3
+arch swall_1_4_half
+x 17
+y 15
+end
+arch flagstone_2_2_3
 x 17
 y 15
 end
@@ -4842,11 +4905,9 @@ arch brush
 x 18
 y 15
 end
-arch swall_1_4_half
+arch swall_2_1_2
 x 18
 y 15
-no_magic 1
-damned 1
 end
 arch lamppost
 name Lighted fence post
@@ -5130,7 +5191,11 @@ arch stonefloor2
 x 19
 y 19
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
+x 19
+y 19
+end
+arch swall_1_1_half
 x 19
 y 19
 end
@@ -5162,7 +5227,11 @@ arch stonefloor2
 x 19
 y 22
 end
-arch flagstone_2_1_1
+arch swall_1_2_half
+x 19
+y 22
+end
+arch flagstone_1_1
 x 19
 y 22
 end
@@ -5170,7 +5239,11 @@ arch stonefloor2
 x 19
 y 23
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
+x 19
+y 23
+end
+arch swall_1_1_half
 x 19
 y 23
 end
@@ -5202,7 +5275,11 @@ arch stonefloor2
 x 19
 y 26
 end
-arch flagstone_2_1_1
+arch swall_1_2_half
+x 19
+y 26
+end
+arch flagstone_1_1
 x 19
 y 26
 end
@@ -5210,7 +5287,11 @@ arch stonefloor2
 x 19
 y 27
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
+x 19
+y 27
+end
+arch swall_1_1_half
 x 19
 y 27
 end
@@ -5242,7 +5323,11 @@ arch stonefloor2
 x 19
 y 30
 end
-arch flagstone_2_1_1
+arch swall_1_2_half
+x 19
+y 30
+end
+arch flagstone_1_1
 x 19
 y 30
 end

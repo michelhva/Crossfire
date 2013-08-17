@@ -1,10 +1,14 @@
 arch map
-name gate7
+name Gates of Hell, Gate 7
+difficulty 28
 region brest
 width 29
 height 29
+enter_x 19
+enter_y 20
 msg
 Created:  1994-09-20
+Modified: 2012-03-31 Nicolas Weeger
 endmsg
 end
 arch sea
@@ -1261,6 +1265,9 @@ name Key marked: Gate 8
 slaying gate-8
 x 9
 y 20
+arch quest_advance_pickup
+name brest/9gates 70>80
+end
 end
 arch dirtfloor
 x 9
@@ -2792,7 +2799,7 @@ arch dirtfloor
 x 19
 y 20
 end
-arch oakdoor
+arch exit
 slaying palace3
 hp 4
 sp 11

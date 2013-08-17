@@ -1,6 +1,6 @@
 arch map
 name Zorn Castle Upper Floor Two
-difficulty 95
+difficulty 18
 region brest
 width 59
 height 59
@@ -8,8 +8,7 @@ enter_x 29
 enter_y 3
 msg
 Created:  2006-11-11 Gene Alexander
-Info: Zorn Castle, second upper floor
-Modified: 2007-11-24 Gene Alexander
+Modified: 2012-03-19 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -3501,7 +3500,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -3617,8 +3616,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -3632,8 +3630,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -3655,8 +3652,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -3824,7 +3820,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -3940,8 +3936,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -3955,8 +3950,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -3978,8 +3972,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -4926,7 +4919,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -5042,8 +5035,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -5057,8 +5049,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -5080,8 +5071,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -5195,7 +5185,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -5311,8 +5301,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -5326,8 +5315,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -5349,8 +5337,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -7003,7 +6990,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -7119,8 +7106,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -7134,8 +7120,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -7157,8 +7142,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -7420,7 +7404,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -7536,8 +7520,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -7551,8 +7534,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -7574,8 +7556,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -8158,7 +8139,7 @@ maxsp 500
 exp 3500000
 dam 49
 wc -50
-ac -40
+ac -10
 x 20
 y 24
 level 109
@@ -8231,7 +8212,7 @@ maxsp 500
 exp 3500000
 dam 49
 wc -50
-ac -40
+ac -10
 x 20
 y 32
 level 109
@@ -8513,7 +8494,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -10
 speed 0.75
 level 120
 attacktype 1
@@ -8629,8 +8610,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -8644,8 +8624,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -8667,8 +8646,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -8898,7 +8876,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -10
 speed 0.75
 level 120
 attacktype 1
@@ -9014,8 +8992,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -9029,8 +9006,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -9052,8 +9028,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -9219,7 +9194,7 @@ maxsp 1000
 exp 350000
 dam 30
 wc -55
-ac -55
+ac -17
 x 22
 y 9
 speed 0.75
@@ -9339,8 +9314,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -9354,8 +9328,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -9377,8 +9350,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -9394,8 +9366,7 @@ name sergeant key
 name_pl sergeant keys
 slaying nw_sergeant
 msg
-This key is to the tower door.
-Guard it with yout life.
+This key is to the tower door.  Guard it with your life.
 endmsg
 end
 arch rod_heavy
@@ -9670,7 +9641,7 @@ maxsp 1000
 exp 350000
 dam 30
 wc -55
-ac -55
+ac -17
 x 22
 y 49
 speed 0.75
@@ -9790,8 +9761,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -9805,8 +9775,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -9828,8 +9797,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -9845,8 +9813,7 @@ name sergeant key
 name_pl sergeant keys
 slaying sw_sergeant
 msg
-This key is to the tower door.
-Guard it with yout life.
+This key is to the tower door.  Guard it with your life.
 endmsg
 end
 arch rod_heavy
@@ -10960,8 +10927,7 @@ end
 arch stair3_gstone_do
 slaying castle.upper.floor.one
 msg
-You feel a sense of relief when
-you leave this floor.
+You feel a sense of relief when you leave this floor.
 endmsg
 hp 25
 sp 44
@@ -10985,8 +10951,7 @@ end
 arch stair3_gstone_do
 slaying castle.upper.floor.one
 msg
-You feel a sense of relief when
-you leave this floor.
+You feel a sense of relief when you leave this floor.
 endmsg
 hp 25
 sp 45
@@ -11165,7 +11130,7 @@ y 9
 end
 arch magic_mouth
 msg
-You hear a click and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+You hear a click and a subtle ticking sound as if a timer has started.  You get the feeling that staying here for very long might be a bad idea.
 endmsg
 x 26
 y 9
@@ -11178,7 +11143,7 @@ y 10
 end
 arch magic_mouth
 msg
-You hear a click and a.subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+You hear a click and a subtle ticking sound as if a timer has started.  You get the feeling that staying here for very long might be a bad idea.
 endmsg
 x 26
 y 10
@@ -11634,7 +11599,7 @@ y 9
 end
 arch magic_mouth
 msg
-You hear.a click and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+You hear a click and a subtle ticking sound as if a timer has started.  You get the feeling that staying here for very long might be a bad idea.
 endmsg
 x 27
 y 9
@@ -11647,7 +11612,7 @@ y 10
 end
 arch magic_mouth
 msg
-You hear a click and a subtle ticking.sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+You hear a click and a subtle ticking sound as if a timer has started.  You get the feeling that staying here for very long might be a bad idea.
 endmsg
 x 27
 y 10
@@ -11660,7 +11625,7 @@ y 11
 end
 arch magic_mouth
 msg
-You hear a click and a subtle ticking sound as if a.timer has started. You get the feeling that staying here for very long might be a bad idea.
+You hear a click and a subtle ticking sound as if a timer has started.  You get the feeling that staying here for very long might be a bad idea.
 endmsg
 x 27
 y 11
@@ -12094,7 +12059,7 @@ y 9
 end
 arch magic_mouth
 msg
-You hear a click.and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+You hear a click and a subtle ticking sound as if a timer has started.  You get the feeling that staying here for very long might be a bad idea.
 endmsg
 x 28
 y 9
@@ -12107,7 +12072,7 @@ y 10
 end
 arch magic_mouth
 msg
-You hear a click and a subtle ticking sound as.if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+You hear a click and a subtle ticking sound as if a timer has started.  You get the feeling that staying here for very long might be a bad idea.
 endmsg
 x 28
 y 10
@@ -12120,7 +12085,7 @@ y 11
 end
 arch magic_mouth
 msg
-You hear a click and a subtle ticking sound as if a timer has.started. You get the feeling that staying here for very long might be a bad idea.
+You hear a click and a subtle ticking sound as if a timer has started.  You get the feeling that staying here for very long might be a bad idea.
 endmsg
 x 28
 y 11
@@ -12195,7 +12160,7 @@ maxsp 500
 exp 3500000
 dam 49
 wc -50
-ac -40
+ac -10
 x 28
 y 23
 level 109
@@ -12613,8 +12578,7 @@ name Plaque
 msg
 You look at the Plaque and see written:
 Alarm system installed by Acme Inc.
-Come to Acme Inc. for all your
-building supplies.
+Come to Acme Inc. for all your building supplies.
 endmsg
 x 29
 y 14
@@ -12627,8 +12591,7 @@ arch dwall_0
 name Plaque
 msg
 Alarm system installed by Acme Inc.
-Come to Acme Inc. for all your
-building supplies.
+Come to Acme Inc. for all your building supplies.
 endmsg
 face dwall_AA.111
 x 29
@@ -12687,8 +12650,7 @@ y 24
 end
 arch magic_mouth
 msg
-As you pass over this spot you hear
-a whispered phrase - "use the claw"
+As you pass over this spot you hear a whispered phrase - "use the claw..."
 endmsg
 x 29
 y 25
@@ -12735,9 +12697,7 @@ end
 arch magic_mouth
 name chaos dragon warning
 msg
-You hear the peculiar roar of
-a large chaos dragon wafting
-down the stairs.
+You hear the peculiar roar of a large chaos dragon wafting down the stairs.
 endmsg
 food 1
 x 29
@@ -12767,9 +12727,7 @@ end
 arch magic_mouth
 name chaos dragon warning
 msg
-You hear the peculiar roar of
-a large chaos dragon wafting
-down the stairs.
+You hear the peculiar roar of a large chaos dragon wafting down the stairs.
 endmsg
 food 1
 x 29
@@ -12799,9 +12757,7 @@ end
 arch magic_mouth
 name chaos dragon warning
 msg
-You hear the peculiar roar of
-a large chaos dragon wafting
-down the stairs.
+You hear the peculiar roar of a large chaos dragon wafting down the stairs.
 endmsg
 food 1
 x 29
@@ -13537,9 +13493,7 @@ end
 arch spikes_moving
 name alarm system randomizer
 msg
-There are 8 chances here. From near two hours
-down to the alarm goes off immediately. This
-should make things *really* fun. :)
+There are 8 chances here.  From near two hours down to the alarm goes off immediately.  This should make things *really* fun. :)
 endmsg
 x 31
 y 10
@@ -14611,8 +14565,7 @@ end
 arch stair3_gstone_do
 slaying castle.upper.floor.one
 msg
-You feel a sense of relief when
-you leave this floor.
+You feel a sense of relief when you leave this floor.
 endmsg
 hp 33
 sp 44
@@ -14636,8 +14589,7 @@ end
 arch stair3_gstone_do
 slaying castle.upper.floor.one
 msg
-You feel a sense of relief when
-you leave this floor.
+You feel a sense of relief when you leave this floor.
 endmsg
 hp 33
 sp 45
@@ -15628,7 +15580,7 @@ maxsp 1000
 exp 350000
 dam 30
 wc -55
-ac -55
+ac -17
 x 36
 y 9
 speed 0.75
@@ -15748,8 +15700,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -15763,8 +15714,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -15786,8 +15736,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -15803,8 +15752,7 @@ name sergeant key
 name_pl sergeant keys
 slaying ne_sergeant
 msg
-This key is to the tower door.
-Guard it with yout life.
+This key is to the tower door.  Guard it with your life.
 endmsg
 end
 arch rod_heavy
@@ -15930,7 +15878,7 @@ maxsp 500
 exp 3500000
 dam 49
 wc -50
-ac -40
+ac -10
 x 36
 y 24
 level 109
@@ -16003,7 +15951,7 @@ maxsp 500
 exp 3500000
 dam 49
 wc -50
-ac -40
+ac -10
 x 36
 y 32
 level 109
@@ -16161,7 +16109,7 @@ maxsp 1000
 exp 350000
 dam 30
 wc -55
-ac -55
+ac -17
 x 36
 y 49
 speed 0.75
@@ -16281,8 +16229,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -16296,8 +16243,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -16319,8 +16265,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -16336,8 +16281,7 @@ name sergeant key
 name_pl sergeant keys
 slaying se_sergeant
 msg
-This key is to the tower door.
-Guard it with yout life.
+This key is to the tower door.  Guard it with yout life.
 endmsg
 end
 arch rod_heavy
@@ -16512,7 +16456,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -16628,8 +16572,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -16643,8 +16586,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -16666,8 +16608,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -16897,7 +16838,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -17013,8 +16954,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -17028,8 +16968,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -17051,8 +16990,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -17912,7 +17850,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -18028,8 +17966,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -18043,8 +17980,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -18066,8 +18002,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -18329,7 +18264,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -18445,8 +18380,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -18460,8 +18394,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -18483,8 +18416,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -20137,7 +20069,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -20253,8 +20185,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -20268,8 +20199,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -20291,8 +20221,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -20406,7 +20335,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -20522,8 +20451,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -20537,8 +20465,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -20560,8 +20487,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -21505,7 +21431,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -21621,8 +21547,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -21636,8 +21561,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -21659,8 +21583,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -21828,7 +21751,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 speed 0.75
 level 120
 attacktype 1
@@ -21944,8 +21867,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -21959,8 +21881,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -21982,8 +21903,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2

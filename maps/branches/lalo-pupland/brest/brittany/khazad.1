@@ -1,11 +1,15 @@
 arch map
-name Khazad
+name Khazad, Entrance
+difficulty 40
 region brest
 darkness 1
 width 51
 height 35
+enter_x 1
+enter_y 20
 msg
 Created:  1994-06-06
+Modified: 2012-01-26 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -213,7 +217,7 @@ arch medium_stones
 x 1
 y 20
 end
-arch oakdoor
+arch ladder_up
 slaying /world/world_107_124
 hp 14
 sp 16
@@ -312,10 +316,7 @@ y 20
 end
 arch sign
 msg
-This dungeon was one large map that I
-split into several smaller pieces.
-This should be kept in mind when
-playing the map
+This dungeon was one large map that I split into several smaller pieces.  This should be kept in mind when playing the map.
 endmsg
 x 2
 y 20
@@ -4473,7 +4474,7 @@ arch dirtfloor
 x 33
 y 33
 end
-arch oakdoor
+arch ladder_up
 slaying khazad.2
 hp 32
 sp 1
@@ -7872,7 +7873,7 @@ arch dirtfloor
 x 49
 y 32
 end
-arch oakdoor
+arch ladder_bi_down
 slaying khazad.3
 hp 1
 sp 9

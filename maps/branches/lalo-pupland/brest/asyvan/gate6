@@ -1,11 +1,14 @@
 arch map
-name gate6
-difficulty 1
+name Gates of Hell, Gate 6
+difficulty 25
 region brest
 width 21
 height 21
+enter_x 1
+enter_y 1
 msg
 Created:  1994-09-20
+Modified: 2012-03-31 Nicolas Weeger
 endmsg
 end
 arch dirtfloor
@@ -142,7 +145,7 @@ arch dirtfloor
 x 1
 y 1
 end
-arch oakdoor
+arch exit
 slaying palace2
 hp 15
 sp 12
@@ -2927,6 +2930,9 @@ name Key marked: Gate 7
 slaying gate-7
 x 19
 y 19
+arch quest_advance_pickup
+name brest/9gates 60>70
+end
 end
 arch dirtfloor
 x 19

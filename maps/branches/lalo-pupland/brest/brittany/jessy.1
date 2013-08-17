@@ -1,10 +1,13 @@
 arch map
-name Jessy Castle
+name Jessy Castle, Entrance
+difficulty 35
 region brest
 width 45
 height 30
+enter_x 16
+enter_y 29
 msg
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-01-26 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -2425,7 +2428,7 @@ arch woodfloor
 x 12
 y 20
 end
-arch cwall_3_4
+arch cwall_2_2_4
 x 12
 y 20
 end
@@ -2441,7 +2444,7 @@ arch woodfloor
 x 12
 y 22
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 12
 y 22
 end
@@ -3202,7 +3205,7 @@ arch grass
 x 15
 y 29
 end
-arch cwall_2_1_2
+arch dwall_1_3
 x 15
 y 29
 end
@@ -3376,10 +3379,7 @@ end
 arch book_read
 name Be CAREFUL...
 msg
-If I remember well, this
-castle is famous for the
-traps where nobody has
-ever escaped from......
+If I remember well, this castle is famous for the traps where nobody has ever escaped from......
 Lao Tse
 endmsg
 x 16
@@ -3412,8 +3412,7 @@ end
 arch locked_door1
 slaying jessy
 msg
-You need the key to Jessy
-Castle to open this door.
+You need the key to Jessy Castle to open this door.
 endmsg
 x 16
 y 23
@@ -3458,11 +3457,11 @@ arch cobblestones2
 x 16
 y 28
 end
-arch grass
+arch cobblestones2
 x 16
 y 29
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_107_122
 hp 7
 sp 32
@@ -3713,7 +3712,7 @@ arch grass
 x 17
 y 29
 end
-arch cwall_2_1_2
+arch dwall_1_4
 x 17
 y 29
 end
@@ -4273,7 +4272,7 @@ arch woodfloor
 x 20
 y 13
 end
-arch cwall_4
+arch cwall_3_4
 x 20
 y 13
 end
@@ -4329,7 +4328,7 @@ arch woodfloor
 x 20
 y 20
 end
-arch cwall_3_2
+arch cwall_2_2_1
 x 20
 y 20
 end
@@ -4345,7 +4344,7 @@ arch woodfloor
 x 20
 y 22
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 20
 y 22
 end
@@ -4697,7 +4696,7 @@ arch woodfloor
 x 22
 y 13
 end
-arch cwall_3_3
+arch cwall_2_2_2
 x 22
 y 13
 end
@@ -5689,7 +5688,7 @@ arch woodfloor
 x 27
 y 6
 end
-arch cwall_3_3
+arch cwall_2_2_3
 x 27
 y 6
 end
@@ -5761,7 +5760,7 @@ arch woodfloor
 x 27
 y 15
 end
-arch cwall_3_3
+arch cwall_2_2_3
 x 27
 y 15
 end
@@ -6123,7 +6122,11 @@ arch woodfloor
 x 29
 y 6
 end
-arch cwall_3_4
+arch cwall_2_1_1
+x 29
+y 6
+end
+arch cwall_0
 x 29
 y 6
 end
@@ -6195,7 +6198,11 @@ arch woodfloor
 x 29
 y 15
 end
-arch cwall_3_4
+arch cwall_2_1_1
+x 29
+y 15
+end
+arch cwall_0
 x 29
 y 15
 end
@@ -6314,7 +6321,7 @@ end
 arch dirtfloor
 x 31
 end
-arch blocked
+arch cave24
 x 31
 end
 arch dirtfloor
@@ -6505,7 +6512,7 @@ arch dirtfloor
 x 31
 y 24
 end
-arch blocked
+arch cave23
 x 31
 y 24
 end
@@ -8002,7 +8009,7 @@ end
 arch dirtfloor
 x 44
 end
-arch blocked
+arch cave25
 x 44
 end
 arch dirtfloor
@@ -8105,7 +8112,7 @@ arch dirtfloor
 x 44
 y 13
 end
-arch cave1
+arch cave20
 x 44
 y 13
 end
@@ -8113,7 +8120,7 @@ arch dirtfloor
 x 44
 y 14
 end
-arch blocked
+arch cave_15
 x 44
 y 14
 end
@@ -8121,7 +8128,7 @@ arch dirtfloor
 x 44
 y 15
 end
-arch cave1
+arch cave25
 x 44
 y 15
 end
@@ -8193,7 +8200,7 @@ arch dirtfloor
 x 44
 y 24
 end
-arch blocked
+arch cave22
 x 44
 y 24
 end

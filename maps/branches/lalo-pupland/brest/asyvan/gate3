@@ -1,10 +1,14 @@
 arch map
-name gate3
+name Gates of Hell, Gate 3
+difficulty 10
 region brest
 width 21
 height 21
+enter_x 9
+enter_y 11
 msg
 Created:  1994-09-20
+Modified: 2012-03-31 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -146,6 +150,9 @@ name Key marked: Gate 4
 slaying gate-4
 x 1
 y 1
+arch quest_advance_pickup
+name brest/9gates 30>40
+end
 end
 arch grimreaper
 x 1
@@ -1428,7 +1435,7 @@ arch woodfloor
 x 9
 y 11
 end
-arch oakdoor
+arch exit
 slaying palace2
 hp 1
 sp 4

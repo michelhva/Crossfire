@@ -1,10 +1,14 @@
 arch map
 name Pantheon
-difficulty 1
+difficulty 20
 region brest
 width 72
 height 35
-enter_x 2
+enter_x 5
+enter_y 18
+msg
+Modified: 2008-09-11 Rick Tanner
+endmsg
 end
 arch cobblestones2
 end

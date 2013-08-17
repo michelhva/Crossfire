@@ -7,6 +7,7 @@ enter_x 16
 enter_y 13
 msg
 Created:  2006-08-19 Gene Alexander
+Modified: 2012-01-27 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1311,8 +1312,7 @@ end
 arch pirate
 msg
 @match *
-Run along, pup! Canna ye see we's wit'
-our wimmen!?
+Run along, pup! Canna ye see we's wit' our wimmen!?
 endmsg
 x 10
 y 8
@@ -1618,6 +1618,49 @@ arch chair_1.4
 x 13
 y 4
 end
+arch guildmaster
+name cleric
+msg
+@match hi|hello
+Greetings traveler.
+@match temple
+Ah yes, the temple along the northern wall.  That location is quite strange.  Almost as much as it's inhabitants.
+@match location|strange
+Why so interesting?  Because it was built on top of a grave site.
+@match inhabitants|inhabitant|residents|tenants|troll|trolls
+I can't for the life of me imagine why trolls would be so interested in a temple at that location.  They must not be followers of their typical god, Gnarg.  Maybe Devourers?
+@match grave|grave site|graveyard
+Oh yes, some of the Last Men who met their demise fleeing to here, Kingdom of Brittany before it was a kingdom, were entombed at that location.
+@match last men
+You have not hear the Lore of the Last Men?
+@match lore|lore of the last men
+Ah, well - I can share with you what I know.  The Last Men were a select group of people who fled Scorn after the Dragon Wars and the betrayel of the werebeasts.
+@match dragon war|dragon wars
+I know very little about that - just that Dragons once attacked Scorn and left it buried & ruined.
+@match buried|ruined
+As I said, I know very little - nothing more.
+@match werebeasts|werebeast
+The werebeasts hunted the Last Men as they fled Scorn to here.  The werebeasts were unable to survive the ice mountains and it's denizens.  Fortunately, most of the Last Men did.
+@match administration
+The ruling administration has a tolerance of all races here.
+@match ice mountain|ice mountains
+The legend has it - the mountains and icestorms appeared from nowhere.  As if they were summoned by mages.  How much truth bending took place for that tale?  One may never know.
+@match gnarg
+Gnarg is the god of trolls, goblins and even assassins.  You won't find too many civilized lands that accept temples of that kind.  I would flee in fear if the Administration here would allow the cult to set up here!
+@match devourers
+Devourers is the patron of the undead - mostly with wraiths who have returned to this world to finish what they could not accomplish when they were living.  Some embrace the darker side of Devourers, such as Necromancers and others in the dark arts.
+@match valkyrie
+Oh?  Valkyrie you say? She is the deity of warriors.  I know nothing more then that.
+endmsg
+hp 100
+maxhp 100
+x 13
+y 4
+randomitems throw_stnd
+pick_up 0
+friendly 1
+stand_still 1
+end
 arch dirtfloor
 x 13
 y 5
@@ -1862,8 +1905,7 @@ arch woman
 name Annie
 msg
 @match *
-Hee hee hee hee! Oh, Haemon you are
-soooooo witty!
+Hee hee hee hee! Oh, Haemon you are soooooo witty!
 endmsg
 Con 55
 hp 28000
@@ -1871,7 +1913,7 @@ maxhp 28000
 exp 60000
 dam 55
 wc 55
-ac -55
+ac -15
 x 15
 y 8
 speed 0.6
@@ -2004,29 +2046,23 @@ end
 arch man
 name Haemon
 msg
-@match Tavern|tavern
-I bought this *tavern* with part of my
-pension from *Zorn*.
-@match given name
-Do NOT tell *Zorn* I told you this. His
-given name is Zacharus Zorn.
-@match kill Zorn|defeat Zorn
-I know of no sure way to *kill Zorn*. But
-there is a rumor in Brest that *Zorn* was
-a sickly child and has a weak immune
-system.
-@match Tough|tough
-It is true that *Zorn* is *tough*. Many
-people have tried to *kill Zorn* but
-very few have been able to *defeat Zorn*.
-@match Zorn
-Yes, I used to be Zorn's manservant. He
-released me with a good pension many
-years ago. He is a *tough* but fair man.
-I am one of the few people to whom he
-entrusted his *given name*.
+@match tavern
+@question zorn You worked for Zorn?
+I bought this tavern with part of my pension from Zorn.
+@match given_name|given name
+Do NOT tell Zorn I told you this.  His given name is Zacharus Zorn.
+@match defeat_zorn|kill zorn|defeat zorn
+I know of no sure way to kill Zorn.  But there is a rumor in Brest that Zorn was a sickly child and has a weak immune system.
+@match tough
+@question defeat_zorn Do you know any way to defeat Zorn?
+It is true that Zorn is tough.  Many people have tried to kill Zorn but very few have been able to defeat Zorn.
+@match zorn
+@question tough So Zorn is tough?
+@question given_name What is Zorn's given name?
+Yes, I used to be Zorn's manservant.  He released me with a good pension many years ago.  He is a tough but fair man.  I am one of the few people to whom he entrusted his given name.
 @match *
-Hello! Welcome to my *tavern*.
+@question tavern So you are the owner of this tavern?
+Hello! Welcome to my tavern.
 endmsg
 Con 50
 hp 18000
@@ -2034,7 +2070,7 @@ maxhp 18000
 exp 50000
 dam 45
 wc 45
-ac -45
+ac -11
 x 16
 y 9
 speed 0.5
@@ -2246,7 +2282,7 @@ arch sailor
 name Guard
 msg
 @match *
-This is a private area. No admittance.
+This is a private area.  No admittance.
 endmsg
 Con 50
 hp 18000
@@ -2339,9 +2375,28 @@ x 19
 y 4
 end
 arch elf_1
+name Slightly Intoxicated Elf
 msg
+@match hi|hello
+Eh?  Can't you see I'm trying to enjoy my drink?  What do you want, small talk?
+@match drink
+You would have a drink too if the bane of your existence moved in by your home!  In a temple no less!!
+@match bane|bane of your existence
+That temple at the northern wall!  Trolls, and more trolls everywhere you look! What does the administration do about it?  Nothing!!
+@match administration
+Yes - administration.  They care nothing for it's upstanding citizens.  By Lythander's grace we will do something about it soon.
+@match trolls|trolls
+That's is what I said, trolls - the blight of the land.  Lythander's Crusade will free us!
+@match lythander|crusade|lythanders crusade|lythander's crusade
+When those who follow The Trollslayer's will decimate and make this land safe and clean from those wretched trolls!
+@match trollslayer
+You know so very little of the world!  Lythander is the Trollslayer!! (Takes a swig of his drink) To Lythander!
+@match temple
+It is obviously constructed as part of a fortress.  The trolls that live there even wear armour!
+@match armour|fortress
+I couldn't stand to look at them more then I did - their site disgusts me .  More then their stench!
 @match *
-<blank stare>
+Bleah, try another topic or leave me alone.. *grumble* blasted trolls *grumble*
 endmsg
 x 19
 y 4
@@ -2376,6 +2431,22 @@ x 19
 y 10
 end
 arch child_thief
+msg
+@match hi|hello
+I'm waiting here for my daddy to return.
+@match daddy|return
+He's playing cards or something like that.
+@match cards
+Sure, cards.  That's how he makes some money.
+@match money
+Sometimes he plays with money, sometimes it's clothing - like boots or a cloak.  Never his own, he always finds some, somwhere, and uses that.
+@match boots|cloak|clothing
+Yeah - old stuff.  Dirty and full of dust.  My daddy says since it's magical it's worth more.
+@match magic|magical
+My daddy has a special shovels that help him find the magical clothes.
+@match *
+I don't know. I'm just a little kid.
+endmsg
 Wis 1
 x 19
 y 10
@@ -2482,6 +2553,10 @@ y 6
 end
 arch beggar
 name wandering drunk
+msg
+match *
+I am celebrating my big win.  Lady luck was finally on my side of the dice! *hiccup*
+endmsg
 x 20
 y 6
 arch poison
@@ -2983,12 +3058,11 @@ end
 arch fatman
 name bartender
 msg
-@match Haemon
-He's over there in the private room
-with his wife Annie.
+@match haemon
+He's over there in the private room with his wife Annie.
 @match *
-I know nothing. Ask Haemon. He owns
-this *tavern*.
+@question haemon Where is Haemon?
+I know nothing.  Ask Haemon.  He owns this tavern.
 endmsg
 x 24
 y 6

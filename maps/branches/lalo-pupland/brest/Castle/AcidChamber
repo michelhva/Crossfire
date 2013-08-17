@@ -1,10 +1,14 @@
 arch map
-name AcidChamber
+name Castle of Brittany, Acid Chamber
+difficulty 20
 region brest
 width 28
 height 10
+enter_x 24
+enter_y 1
 msg
-Created:  1994-02-02
+Created:  1994-07-02
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -1629,7 +1633,7 @@ arch dirtfloor
 x 24
 y 1
 end
-arch oakdoor
+arch ladder_up
 slaying DragonRoom
 hp 25
 sp 20
@@ -1792,7 +1796,7 @@ arch dirtfloor
 x 26
 y 6
 end
-arch oakdoor
+arch ladder_bi_down
 slaying LargeRoom
 hp 1
 sp 54

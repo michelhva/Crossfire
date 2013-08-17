@@ -1,10 +1,12 @@
 arch map
-name gate1
+name Gates of Hell, Gate 1
+difficulty 4
 region brest
 width 21
 height 21
 msg
 Created:  1994-09-20
+Modified: 2012-03-31 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -141,7 +143,7 @@ arch woodfloor
 x 1
 y 1
 end
-arch oakdoor
+arch exit
 slaying palace2
 hp 1
 sp 12
@@ -1265,6 +1267,9 @@ name Key marked: Gate 2
 slaying gate-2
 x 7
 y 16
+arch quest_advance_pickup
+name brest/9gates 10>20
+end
 end
 arch woodfloor
 x 7
