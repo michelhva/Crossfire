@@ -1,11 +1,11 @@
 arch map
-name pshops_main
+name Playershops
+difficulty 1
 region brest
 width 43
 height 9
 msg
-Creator: majorwoo josh@woosworld.net
-Date:    10/16/2004
+Created:  2004-10-16 majorwoo (josh@woosworld.net)
 endmsg
 outdoor 1
 end
@@ -95,7 +95,7 @@ hp 12
 sp 21
 x 1
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 1
@@ -238,7 +238,7 @@ hp 12
 sp 21
 x 4
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 4
@@ -368,7 +368,7 @@ hp 12
 sp 21
 x 7
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 7
@@ -502,7 +502,7 @@ hp 12
 sp 21
 x 10
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 10
@@ -632,7 +632,7 @@ hp 12
 sp 21
 x 13
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 13
@@ -767,7 +767,7 @@ hp 12
 sp 21
 x 16
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 16
@@ -897,7 +897,7 @@ hp 12
 sp 21
 x 19
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 19
@@ -1031,7 +1031,7 @@ hp 12
 sp 21
 x 22
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 22
@@ -1161,7 +1161,7 @@ hp 12
 sp 21
 x 25
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 25
@@ -1296,7 +1296,7 @@ hp 12
 sp 21
 x 28
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 28
@@ -1426,7 +1426,7 @@ hp 12
 sp 21
 x 31
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 31
@@ -1560,7 +1560,7 @@ hp 12
 sp 21
 x 34
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 34
@@ -1695,7 +1695,7 @@ hp 12
 sp 21
 x 37
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 37
@@ -1833,7 +1833,7 @@ hp 12
 sp 21
 x 40
 y 6
-no_pass 0
+move_block 0
 end
 arch grass
 x 40

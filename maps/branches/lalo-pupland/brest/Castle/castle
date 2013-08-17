@@ -1,11 +1,14 @@
 arch map
-name Castle
+name Castle of Brittany, Entrance
+difficulty 20
 region brest
 width 28
 height 33
+enter_x 9
+enter_y 16
 msg
-Created:  1994-02-30
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1994-08-30
+Modified: 2012-01-27 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1861,8 +1864,7 @@ y 13
 end
 arch sign
 msg
-Don't kill the sages
-they are so nice!
+Don't kill the sages they are so nice!
 endmsg
 x 9
 y 13
@@ -1887,7 +1889,7 @@ arch dirtfloor
 x 9
 y 16
 end
-arch oakdoor
+arch exit
 slaying /world/world_107_123
 hp 26
 sp 41
@@ -2785,7 +2787,7 @@ arch dirtfloor
 x 12
 y 30
 end
-arch oakdoor
+arch ladder_bi_down
 slaying DragonRoom
 hp 12
 sp 1

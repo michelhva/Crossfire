@@ -1,10 +1,14 @@
 arch map
-name gate4
+name Gates of Hell, Gate 4
+difficulty 15
 region brest
 width 21
 height 21
+enter_x 7
+enter_y 4
 msg
 Created:  1994-09-20
+Modified: 2012-03-31 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -482,6 +486,9 @@ name Key marked: Gate 5
 slaying gate-5
 x 3
 y 8
+arch quest_advance_pickup
+name brest/9gates 40>50
+end
 end
 arch woodfloor
 x 3
@@ -555,7 +562,7 @@ arch woodfloor
 x 3
 y 18
 end
-arch oakdoor
+arch exit
 slaying palace2
 hp 15
 sp 4

@@ -1,13 +1,13 @@
 arch map
-name Personal Shop Basement
+name Private Shop 23, Basement
 region brest
 width 22
 height 22
 enter_x 12
 enter_y 7
 msg
-Creator: majorwoo josh@woosworld.net
-Date:    10/19/2004
+Created:  2004-10-19 majorwoo josh@woosworld.net
+Modified: 2012-01-27 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -104,7 +104,7 @@ end
 arch biglake_2_2_3
 name Flooded Basement
 y 15
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -116,7 +116,7 @@ end
 arch biglake_center
 name Flooded Basement
 y 16
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -128,7 +128,7 @@ end
 arch biglake_center
 name Flooded Basement
 y 17
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -140,7 +140,7 @@ end
 arch biglake_center
 name Flooded Basement
 y 18
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -154,7 +154,7 @@ y 19
 end
 arch blocked
 y 20
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying ../ugriver1
@@ -254,7 +254,7 @@ arch biglake_2_2_3
 name Flooded Basement
 x 1
 y 16
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -269,7 +269,7 @@ arch biglake_center
 name Flooded Basement
 x 1
 y 17
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -283,7 +283,7 @@ arch biglake_center
 name Flooded Basement
 x 1
 y 18
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -385,8 +385,7 @@ unique 1
 end
 arch sign
 msg
-The basement seems to have flooded some due to an underground river...
-We are NOT responsible for items left in the water that are washed away...
+The basement seems to have flooded some due to an underground river... We are NOT responsible for items left in the water that are washed away...
 --Management
 endmsg
 x 2
@@ -400,7 +399,7 @@ arch biglake_2_2_3
 name Flooded Basement
 x 2
 y 17
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -415,7 +414,7 @@ arch biglake_center
 name Flooded Basement
 x 2
 y 18
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -533,7 +532,7 @@ arch biglake_2_2_3
 name Flooded Basement
 x 3
 y 18
-no_pass 0
+move_block 0
 end
 arch teleporter
 name Water teleporter
@@ -562,7 +561,7 @@ slaying pshop23
 x 3
 y 20
 connected 1
-walk_off 1
+move_off walk
 end
 arch dirtfloor
 x 4
@@ -896,7 +895,7 @@ end
 arch thief_1
 name Thief
 msg
-@match hi|Hi|Hello|hello
+@match hi|hello
 *Pssst...* Get me out of here!
 endmsg
 x 6
@@ -1162,8 +1161,8 @@ arch check_floor
 slaying pshop23
 x 7
 y 13
-no_pass 1
-walk_off 1
+move_block all
+move_off walk
 end
 arch dirtfloor
 x 7
@@ -1183,7 +1182,7 @@ slaying pshop23
 x 7
 y 14
 connected 1
-walk_off 1
+move_off walk
 end
 arch dirtfloor
 x 7
@@ -1462,8 +1461,7 @@ y 6
 end
 arch sign
 msg
-This thief was caught trying to steal from my museum.
-Let that be a lesson to you.
+This thief was caught trying to steal from my museum.  Let that be a lesson to you.
 endmsg
 x 9
 y 6
@@ -2442,8 +2440,7 @@ end
 arch sign
 name Monkey Notice
 msg
-Careful!
-If they get out, you might not ever get them back in...
+Careful! If they get out, you might not ever get them back in...
 endmsg
 x 16
 y 1
@@ -2760,8 +2757,8 @@ arch check_floor
 slaying pshop23
 x 18
 y 3
-connected 1
-walk_off 1
+connected 2
+move_off walk
 end
 arch dirtfloor
 x 18
@@ -2771,14 +2768,14 @@ end
 arch pedestal
 x 18
 y 4
-connected 1
+connected 2
 end
 arch check_floor
 slaying pshop23
 x 18
 y 4
-no_pass 1
-walk_off 1
+move_block all
+move_off walk
 end
 arch dirtfloor
 x 18
@@ -2787,7 +2784,7 @@ end
 arch ggate_closed
 x 18
 y 4
-connected 1
+connected 2
 end
 arch dungeon_magic
 x 18
@@ -2797,8 +2794,8 @@ arch check_floor
 slaying pshop23
 x 18
 y 5
-connected 1
-walk_off 1
+connected 2
+move_off walk
 end
 arch dirtfloor
 x 18

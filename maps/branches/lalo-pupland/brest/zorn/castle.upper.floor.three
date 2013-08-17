@@ -1,6 +1,6 @@
 arch map
 name Zorn Castle Upper Floor Three
-difficulty 95
+difficulty 18
 region brest
 width 59
 height 59
@@ -8,8 +8,7 @@ enter_x 29
 enter_y 3
 msg
 Created:  2007-03-06 Gene Alexander
-Info: Zorn Castle, third upper floor
-Modified: 2007-11-24 Gene Alexander
+Modified: 2012-01-27 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -4684,7 +4683,7 @@ sp 250
 maxsp 250
 exp 1000000
 wc -30
-ac -25
+ac -8
 x 13
 y 15
 level 108
@@ -4886,7 +4885,7 @@ sp 250
 maxsp 250
 exp 1000000
 wc -30
-ac -25
+ac -8
 x 13
 y 42
 level 108
@@ -6006,7 +6005,7 @@ sp 250
 maxsp 250
 exp 1000000
 wc -30
-ac -25
+ac -8
 x 17
 y 15
 level 108
@@ -6175,7 +6174,7 @@ sp 250
 maxsp 250
 exp 1000000
 wc -30
-ac -25
+ac -8
 x 17
 y 42
 level 108
@@ -8682,7 +8681,7 @@ Wis 20
 Pow 50
 exp 2000000
 wc -75
-ac -75
+ac -19
 x 25
 y 12
 level 109
@@ -9658,7 +9657,7 @@ maxsp 250
 exp 4500000
 dam 50
 wc -95
-ac -95
+ac -20
 x 28
 y 13
 level 110
@@ -9959,10 +9958,7 @@ name Zorn cloak
 name_pl Zorn cloaks
 title of Invisibility
 msg
-A cloak created for the Zorn family
-by the great Wizards of Brest. The
-cloak works by tapping into the
-powers of the mind of the wearer.
+A cloak created for the Zorn family by the great Wizards of Brest.  The cloak works by tapping into the powers of the mind of the wearer.
 endmsg
 face cloak_black.111
 Wis -5
@@ -9990,9 +9986,7 @@ arch bracers_dex
 name Zorn bracers
 title of paralyzing attack
 msg
-The wearer of these bracers gains
-a paralyzing attack against any
-enemy susceptible to paralyzation
+The wearer of these bracers gains a paralyzing attack against any enemy susceptible to paralyzation
 endmsg
 Str 2
 Dex 3
@@ -10065,9 +10059,7 @@ end
 arch magic_mouth
 name eight doors
 msg
-There are eight locked doors here.
-To open them requires the correct
-key for each door.
+There are eight locked doors here.  To open them requires the correct key for each door.
 endmsg
 x 29
 y 13
@@ -11045,7 +11037,7 @@ Wis 20
 Pow 50
 exp 2000000
 wc -75
-ac -75
+ac -18
 x 32
 y 12
 level 109
@@ -13653,7 +13645,7 @@ sp 250
 maxsp 250
 exp 1000000
 wc -30
-ac -25
+ac -8
 x 40
 y 13
 level 108
@@ -13849,7 +13841,7 @@ sp 250
 maxsp 250
 exp 1000000
 wc -30
-ac -25
+ac -8
 x 40
 y 43
 level 108
@@ -14949,7 +14941,7 @@ sp 250
 maxsp 250
 exp 1000000
 wc -30
-ac -25
+ac -8
 x 44
 y 13
 level 108
@@ -15138,7 +15130,7 @@ sp 250
 maxsp 250
 exp 1000000
 wc -30
-ac -25
+ac -8
 x 44
 y 43
 level 108

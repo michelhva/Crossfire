@@ -1,5 +1,5 @@
 arch map
-name A small shop
+name A Small Shop
 difficulty 20
 region brest
 width 15
@@ -8,7 +8,7 @@ enter_x 11
 enter_y 12
 msg
 Created:  2007-03-11 Gene Alexander (poof, Galahad)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-11-20 Rick Tanner
 endmsg
 end
 arch woods
@@ -606,9 +606,9 @@ x 4
 y 5
 end
 arch altar_trigger
-slaying platinacoin
+slaying money
 exp 120
-food 500
+food 25000
 x 4
 y 6
 connected 4
@@ -907,9 +907,9 @@ x 6
 y 7
 end
 arch altar_trigger
-slaying platinacoin
+slaying money
 exp 120
-food 1500
+food 75000
 x 6
 y 8
 invisible 1
@@ -1453,9 +1453,9 @@ x 10
 y 5
 end
 arch altar_trigger
-slaying platinacoin
+slaying money
 exp 120
-food 500
+food 25000
 x 10
 y 6
 connected 5

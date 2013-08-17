@@ -1,6 +1,6 @@
 arch map
 name Zorn Castle Upper Floor One
-difficulty 75
+difficulty 18
 region brest
 width 59
 height 59
@@ -8,8 +8,7 @@ enter_x 29
 enter_y 3
 msg
 Created:  2006-08-12 Gene Alexander
-Info: Zorn Castle, first upper floor
-Modified: 2007-11-24 Gene Alexander
+Modified: 2012-01-27 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -4024,8 +4023,7 @@ activate_on_release 0
 end
 arch trap
 msg
-Oh dear! The cauldron was protected
-by the trap you just set off! It is gone.
+Oh dear! The cauldron was protected by the trap you just set off! It is gone.
 endmsg
 hp 5
 x 11
@@ -4042,8 +4040,7 @@ arch cauldron
 name Yolanda's cauldron
 name_pl Yolanda's cauldrons
 msg
-A custom cauldron designed for Yolanda Zorn
-on her 100th wedding anniversary.
+A custom cauldron designed for Yolanda Zorn on her 100th wedding anniversary.
 endmsg
 x 11
 y 11
@@ -4366,8 +4363,7 @@ arch ring
 name ring of Resist Elements
 name_pl rings of Resist Elements
 msg
-An ancient silver ring that glows
-with a protective shield
+An ancient silver ring that glows with a protective shield.
 endmsg
 face ring.117
 Con 2
@@ -6545,11 +6541,10 @@ arch fatwoman
 name Yolanda Zorn
 title wife
 msg
-@match zorn|Zorn
+@match zorn
 Yes, I am a member of the Zorn family.
-@match treasure|Treasure
-Oh, I wouldn't know anything about any
-treasure. You must be mistaken.
+@match treasure
+Oh, I wouldn't know anything about any treasure.  You must be mistaken.
 @match *
 Hello, dearie, welcome to my home.
 endmsg
@@ -6562,7 +6557,7 @@ maxsp 1000
 exp 900000
 dam 25
 wc -50
-ac -50
+ac -15
 x 15
 y 13
 speed 0.95
@@ -6925,9 +6920,7 @@ name Weinia Zorn
 title Youngest Daughter
 msg
 @match *
-My name is Weinia Zorn.
-You killed my father.
-Prepare to die.
+My name is Weinia Zorn.  You killed my father.  Prepare to die.
 endmsg
 Con 30
 Pow 50
@@ -6938,7 +6931,7 @@ maxsp 900
 exp 800000
 dam 35
 wc -50
-ac -50
+ac -15
 x 15
 y 44
 speed 0.95
@@ -6969,7 +6962,7 @@ path_attuned 14
 randomitems summoner_book_high
 see_invisible 1
 unaggressive 1
-can_use_rod 1
+can_use_range 1
 arch skill_karate
 end
 arch skill_missile_weapon
@@ -6996,20 +6989,19 @@ arch spell_magehound
 end
 arch spell_cause_many_wounds
 end
-arch dragonclaw
+arch dagger
 name dragon claw dagger
 name_pl dragon claw daggers
-skill one handed weapons
 msg
-Ancient dagger made from a claw donated to the
-Zorn family by Xxvlorf the Legendary Dragon.
+Ancient dagger made from a claw donated to the Zorn family by Xxvlorf the Legendary Dragon.
 endmsg
+face dragon_claw.111
 dam 15
 wc 5
-type 15
 attacktype 1053
 material 0
 value 55000
+weight 1
 last_sp 2
 weapontype 5
 item_power 6
@@ -7248,7 +7240,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 x 16
 y 17
 speed 0.75
@@ -7366,8 +7358,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -7381,8 +7372,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -7404,8 +7394,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -7761,7 +7750,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 x 17
 y 17
 speed 0.75
@@ -7879,8 +7868,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -7894,8 +7882,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -7917,8 +7904,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -9695,19 +9681,7 @@ name Zorn family information scroll
 name_pl Zorn family information scrolls
 msg
 Dear Descendant,
-There are some interesting treasures our
-family has collected over the centuries. We
-have hidden these treasures deep below
-the family castle and protected them as
-best we can. It would be quite bad for
-many of these items to fall into the wrong
-hands.
-However, should you find worthy citizens of
-the realm suggest they get these treasures
-for themselves. Only the bravest and most
-worthy of citizens should be able to get the
-treasures thus keeping them out of evil
-hands.
+There are some interesting treasures our family has collected over the centuries.  We have hidden these treasures deep below the family castle and protected them as best we can.  It would be quite bad for many of these items to fall into the wrong hands.  However, should you find worthy citizens of the realm suggest they get these treasures for themselves.  Only the bravest and most worthy of citizens should be able to get the treasures thus keeping them out of evil hands.
 Arcturo Zorn
 endmsg
 level 15
@@ -10890,7 +10864,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 x 22
 y 33
 speed 0.75
@@ -11008,8 +10982,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -11023,8 +10996,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -11046,8 +11018,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -11075,7 +11046,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 x 22
 y 34
 speed 0.75
@@ -11193,8 +11164,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -11208,8 +11178,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -11231,8 +11200,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -13153,12 +13121,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_rod 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -13257,7 +13225,7 @@ name Attendant key
 name_pl Attendant keys
 slaying attendant_one
 msg
-An Attendant Key
+An Attendant Key.
 endmsg
 end
 end
@@ -13556,12 +13524,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_rod 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -13660,7 +13628,7 @@ name Attendant key
 name_pl Attendant keys
 slaying attendant_three
 msg
-An Attendant Key
+An Attendant Key.
 endmsg
 end
 end
@@ -13675,9 +13643,7 @@ end
 arch stair3_gstone_up
 slaying castle.upper.floor.two
 msg
-You get a STRONG sense of danger.
-Perhaps you should not hang around
-too long on this floor.
+You get a STRONG sense of danger.  Perhaps you should not hang around too long on this floor.
 endmsg
 hp 25
 sp 44
@@ -13691,9 +13657,7 @@ end
 arch stair3_gstone_up
 slaying castle.upper.floor.two
 msg
-You get a STRONG sense of danger.
-Perhaps you should not hang around
-too long on this floor.
+You get a STRONG sense of danger.  Perhaps you should not hang around too long on this floor.
 endmsg
 hp 25
 sp 45
@@ -13708,11 +13672,7 @@ arch sign
 name Acme Inc.
 msg
 -=Warning=- -=Warning=- -=Warning=-
-The next floor is protected by an
-Acme Inc. alarm system and Zorn
-Security Guards. Interlopers that
-are caught on the next floor will
-be executed on sight.
+The next floor is protected by an Acme Inc. alarm system and Zorn Security Guards.  Interlopers that are caught on the next floor will be executed on sight.
 -=Warning=- -=Warning=- -=Warning=-
 endmsg
 x 25
@@ -14597,12 +14557,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_rod 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -20093,12 +20053,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_rod 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -21426,12 +21386,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_rod 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -21530,7 +21490,7 @@ name Attendant key
 name_pl Attendant keys
 slaying attendant_two
 msg
-An Attendant Key
+An Attendant Key.
 endmsg
 end
 end
@@ -21829,12 +21789,12 @@ resist_chaos 50
 resist_blind 50
 path_attuned 4
 unaggressive 0
+can_use_range 1
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 stand_still 0
 can_use_skill 1
-can_use_rod 1
 arch shadow
 name Attendant shadow
 sp 100
@@ -21933,7 +21893,7 @@ name Attendant key
 name_pl Attendant keys
 slaying attendant_four
 msg
-An Attendant Key
+An Attendant Key.
 endmsg
 end
 end
@@ -21948,9 +21908,7 @@ end
 arch stair3_gstone_up
 slaying castle.upper.floor.two
 msg
-You get a STRONG sense of danger.
-Perhaps you should not hang around
-too long on this floor.
+You get a STRONG sense of danger.  Perhaps you should not hang around too long on this floor.
 endmsg
 hp 33
 sp 44
@@ -21964,9 +21922,7 @@ end
 arch stair3_gstone_up
 slaying castle.upper.floor.two
 msg
-You get a STRONG sense of danger.
-Perhaps you should not hang around
-too long on this floor.
+You get a STRONG sense of danger.  Perhaps you should not hang around too long on this floor.
 endmsg
 hp 33
 sp 45
@@ -21981,11 +21937,7 @@ arch sign
 name Acme Inc.
 msg
 -=Warning=- -=Warning=- -=Warning=-
-The next floor is protected by an
-Acme Inc. alarm system and Zorn
-Security Guards. Interlopers that
-are caught on the next floor will
-be executed on sight.
+The next floor is protected by an Acme Inc. alarm system and Zorn Security Guards.  Interlopers that are caught on the next floor will be executed on sight.
 -=Warning=- -=Warning=- -=Warning=-
 endmsg
 x 33
@@ -23939,7 +23891,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 x 36
 y 33
 speed 0.75
@@ -24057,8 +24009,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -24072,8 +24023,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -24095,8 +24045,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -24124,7 +24073,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 x 36
 y 34
 speed 0.75
@@ -24242,8 +24191,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -24257,8 +24205,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -24280,8 +24227,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -26732,7 +26678,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 x 41
 y 17
 speed 0.75
@@ -26850,8 +26796,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -26865,8 +26810,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -26888,8 +26832,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -27507,7 +27450,7 @@ maxsp 1000
 exp 250000
 dam 25
 wc -50
-ac -50
+ac -15
 x 42
 y 17
 speed 0.75
@@ -27625,8 +27568,7 @@ arch crossbow
 name Custom crossbow
 name_pl Custom crossbows
 msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
+This custom crossbow was specially commissioned for Fearless personal guards in the Zorn Castle.
 endmsg
 Dex 5
 sp 50
@@ -27640,8 +27582,7 @@ arch bolt
 name weaponmagic bolt
 name_pl weaponmagic bolts
 msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
+These custom made bolts do weaponmagic damage to one's opponent.
 endmsg
 food 1
 dam 10
@@ -27663,8 +27604,7 @@ arch katana_1
 name Custom katana
 name_pl Custom katanas
 msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
+The Custom katana was commissioned for Zorn Fearless personal guards in the Zorn castle.
 endmsg
 Str 2
 Dex 2
@@ -28280,8 +28220,7 @@ name Xandra Zorn
 title Middle Daughter
 msg
 @match *
-Are you stupid? What are you doing in the private area
-of our castle?
+Are you stupid? What are you doing in the private area of our castle?
 endmsg
 Con 30
 Pow 50
@@ -28292,7 +28231,7 @@ maxsp 900
 exp 800000
 dam 35
 wc -50
-ac -50
+ac -15
 x 43
 y 44
 speed 0.95
@@ -28348,8 +28287,7 @@ name Xandra
 name_pl Xandras
 slaying human
 msg
-Inscription: To our dear daughter Xandra
-on her 16th birthday.
+Inscription: To our dear daughter Xandra on her 16th birthday.
 endmsg
 dam 11
 wc 3
@@ -28591,18 +28529,16 @@ arch princess
 name Zerina Zorn
 title Eldest Daughter
 msg
-@match zorn|Zorn
+@match zorn
 Yes, I am a member of the Zorn family.
-@match treasure|Treasure
-I have heard of this treasure but only
-my dad knows about it as far as I know.
-Have you asked him?
-@match yes|Yes
+@match treasure
+I have heard of this treasure but only my dad knows about it as far as I know.  Have you asked him?
+@match yes
 Then why are you asking me?
-@match no|No
+@match no
 Then maybe you should ask him.
 @match *
-Hi. What are you doing in my room?
+Hi.  What are you doing in my room?
 endmsg
 Con 30
 Pow 25
@@ -28614,7 +28550,7 @@ maxsp 900
 exp 800000
 dam 25
 wc -50
-ac -50
+ac -15
 x 44
 y 13
 speed 0.95
@@ -28645,8 +28581,8 @@ path_attuned 4
 randomitems pyro_book_high
 see_invisible 1
 run_away 5
+can_use_range 1
 can_use_skill 1
-can_use_rod 1
 arch skill_karate
 end
 arch skill_missile_weapon
@@ -28672,8 +28608,7 @@ name Zerina
 name_pl Zerinas
 slaying human
 msg
-Inscription: To Zerina our Eldest Daughter on her
-21st birthday.
+Inscription: To Zerina our Eldest Daughter on her 21st birthday.
 endmsg
 dam 10
 wc 5
@@ -28690,7 +28625,7 @@ arch crown_white
 name Chaos crown
 name_pl Chaos crowns
 msg
-An ancient silver crown
+An ancient silver crown.
 endmsg
 sp 2
 ac 5
@@ -28706,7 +28641,7 @@ arch cloak
 name Chaos cloak
 name_pl Chaos cloaks
 msg
-An ancient dark silk cloak
+An ancient dark silk cloak.
 endmsg
 sp 5
 ac 5
@@ -29246,9 +29181,7 @@ name Zerina's Sea Chest
 name_pl Zerina's Sea Chests
 slaying zerina_chest_key
 msg
-Custom luggage given to Zerina Zorn
-on her 25th birthday for a sea voyage
-around the world.
+Custom luggage given to Zerina Zorn on her 25th birthday for a sea voyage around the world.
 endmsg
 Str 75
 x 45
@@ -30666,9 +30599,7 @@ name Zerina's Sea Trunk
 name_pl Zerina's Sea Trunks
 slaying zerina_trunk_key
 msg
-Custom luggage given to Zerina Zorn
-on her 25th birthday for a sea voyage
-around the world.
+Custom luggage given to Zerina Zorn on her 25th birthday for a sea voyage around the world.
 endmsg
 Str 75
 x 47

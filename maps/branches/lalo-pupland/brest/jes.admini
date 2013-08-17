@@ -1,11 +1,14 @@
 arch map
 name Administration, Level 1
-difficulty 1
+difficulty 20
 region brest
 width 40
 height 30
+enter_x 21
+enter_y 2
 msg
-Created:  1994-02-31
+Created:  1994-05-31
+Modified: 2012-01-25 Rick Tanner
 endmsg
 end
 arch grass
@@ -3013,6 +3016,7 @@ y 29
 end
 arch grass
 x 18
+move_block all
 end
 arch woodfloor
 x 18
@@ -3184,8 +3188,16 @@ y 29
 end
 arch grass
 x 19
+move_block all
 end
 arch grass
+x 19
+y 1
+end
+arch invis_exit
+slaying /world/world_107_123
+hp 35
+sp 36
 x 19
 y 1
 end
@@ -3315,12 +3327,13 @@ y 29
 end
 arch cobblestones2
 x 20
+move_block all
 end
 arch cobblestones2
 x 20
 y 1
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_107_123
 hp 35
 sp 36
@@ -3453,12 +3466,13 @@ y 29
 end
 arch cobblestones2
 x 21
+move_block all
 end
 arch cobblestones2
 x 21
 y 1
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_107_123
 hp 35
 sp 36
@@ -3587,8 +3601,16 @@ y 29
 end
 arch grass
 x 22
+move_block all
 end
 arch grass
+x 22
+y 1
+end
+arch invis_exit
+slaying /world/world_107_123
+hp 35
+sp 36
 x 22
 y 1
 end
@@ -3718,6 +3740,7 @@ y 29
 end
 arch grass
 x 23
+move_block all
 end
 arch woodfloor
 x 23
@@ -4029,8 +4052,7 @@ y 17
 end
 arch magic_mouth
 msg
-You are not allowed in this office.
-Please take an appointment with the Secretary.
+You are not allowed in this office.  Please take an appointment with the Secretary.
 endmsg
 x 24
 y 18
@@ -4847,9 +4869,7 @@ y 17
 end
 arch magic_mouth
 msg
-Mr Bacal is very busy.
-You can't meet him now.
-Please come later.
+Mr. Bacal is very busy.  You can't meet him now.  Please come later.
 endmsg
 x 29
 y 18
