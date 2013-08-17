@@ -1,14 +1,15 @@
 arch map
-name IPO
+name Minatomachi IPO
 reset_timeout 7200
 difficulty 1
 region azumauindo
-width 64
-height 64
-enter_x 1
-enter_y 1
+width 22
+height 21
+enter_x 10
+enter_y 18
 msg
 Created:  2004-02-03 Mikeeusa
+Modified: 2012-03-14 Rick Tanner
 endmsg
 end
 arch blocked
@@ -313,7 +314,6 @@ y 2
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 2
 y 2
 arch random_reading
@@ -414,7 +414,6 @@ x 2
 y 18
 material 0
 weight 0
-no_pick 1
 arch event_close
 title Python
 slaying /python/IPO/send.py
@@ -465,7 +464,6 @@ y 2
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 3
 y 2
 arch random_reading
@@ -586,7 +584,6 @@ x 3
 y 18
 material 0
 weight 0
-no_pick 1
 arch event_close
 title Python
 slaying /python/IPO/send.py
@@ -637,7 +634,6 @@ y 2
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 4
 y 2
 arch random_reading
@@ -659,7 +655,6 @@ y 3
 end
 arch guildmaster
 name postmaster
-name_pl postmaster
 x 4
 y 3
 arch event_say
@@ -744,7 +739,6 @@ x 4
 y 18
 material 0
 weight 0
-no_pick 1
 arch event_close
 title Python
 slaying /python/IPO/send.py
@@ -795,7 +789,6 @@ y 2
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 5
 y 2
 arch random_reading
@@ -916,7 +909,6 @@ x 5
 y 18
 material 0
 weight 0
-no_pick 1
 arch event_close
 title Python
 slaying /python/IPO/send.py
@@ -967,7 +959,6 @@ y 2
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 6
 y 2
 arch random_reading
@@ -1100,7 +1091,6 @@ y 2
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 7
 y 2
 arch random_reading
@@ -2254,19 +2244,10 @@ y 18
 end
 arch scroll
 name Prospectus
-name_pl Prospectus
 msg
 Imperial Post Services
 -----------------------
-Thank you for choosing the IPS to
-take care of your messages. Want to
-get more? We have a wide range of
-products and services to offer to
-anyone. Pirate? Try our
-TalkParrots(tm)! Beholder? Enjoy
-our fabulous non-stereoscopical
-cards! And don't forget:
-The Empire Is Everywhere For You!
+Thank you for choosing the IPS to take care of your messages.  Want to get more? We have a wide range of products and services to offer to anyone.  Pirate? Try our TalkParrots(tm)! Beholder? Enjoy our fabulous non-stereoscopical cards! And don't forget: The Empire Is Everywhere For You!
 endmsg
 x 17
 y 18
@@ -2471,24 +2452,17 @@ y 15
 end
 arch book_read
 name Manual
-name_pl Manual
 msg
-Recieving Mail
+Receiving Mail
 -----------------------
-Open the mailbox and get the scrolls,
-read them by applying.
+Open the mailbox and get the scrolls, read them by applying.
 Sending Mail
 -----------------------
-Get a pencil and be sure that you are
-able to use the literacy skill. You can
-get both at the office; ask the postmaster
-for help.
-Get a pre-addressed mailscroll, mark it
-and write on it with the command:
+Get a pencil and be sure that you are able to use the literacy skill. You can get both at the office; ask the postmaster for help.
+Get a pre-addressed mailscroll, mark it and write on it with the command:
 use_skill inscription <text>
 Multiple lines of text may be written.
-When done, drop the scroll in the
-mailbox and it will be sent.
+When done, drop the scroll in the mailbox and it will be sent.
 endmsg
 x 19
 y 15

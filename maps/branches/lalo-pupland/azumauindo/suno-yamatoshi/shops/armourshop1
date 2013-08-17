@@ -1,7 +1,7 @@
 arch map
 name Kabuto Mise
 reset_timeout 7200
-difficulty 1
+difficulty 40
 region azumauindo
 shopitems armour:10;helmet:11;shield:5;boots:0;cloak:0;gloves:0;bracers:0;girdle:2;armour improver:4;*:-98
 shopgreed 1.20000
@@ -10,17 +10,17 @@ shopmax 100000
 shoprace human
 width 16
 height 16
-enter_x 1
-enter_y 1
+enter_x 8
+enter_y 14
 msg
-Created:  2005-02-12 MikeeUSA
+Created:  2005-03-12 MikeeUSA
+Modified: 2012-01-24 Rick Tanner
 endmsg
 end
 arch dungeon_magic
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 end
 arch ewall_2_2_2
 end
@@ -31,7 +31,6 @@ y 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 1
 end
 arch ewall_2_1_1
@@ -42,7 +41,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 2
 end
 arch ewall_2_1_1
@@ -56,7 +54,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 3
 end
 arch ewall_2_1_1
@@ -67,7 +64,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 4
 end
 arch ewall_2_1_1
@@ -81,7 +77,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 5
 end
 arch ewall_2_1_1
@@ -92,7 +87,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 6
 end
 arch ewall_2_1_1
@@ -106,7 +100,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 7
 end
 arch ewall_2_1_1
@@ -117,7 +110,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 8
 end
 arch ewall_2_1_1
@@ -128,7 +120,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 9
 end
 arch ewall_2_1_1
@@ -142,7 +133,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 10
 end
 arch ewall_2_1_1
@@ -153,7 +143,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 11
 end
 arch ewall_2_1_1
@@ -167,7 +156,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 12
 end
 arch ewall_2_1_1
@@ -178,7 +166,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 13
 end
 arch ewall_2_1_1
@@ -192,7 +179,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 14
 end
 arch ewall_2_1_1
@@ -203,7 +189,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 15
 end
 arch ewall_2_2_1
@@ -217,7 +202,6 @@ x 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 end
 arch ewall_2_1_2
@@ -238,7 +222,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 y 2
 end
@@ -257,7 +240,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 y 4
 end
@@ -276,7 +258,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 y 6
 end
@@ -304,7 +285,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 y 9
 end
@@ -323,7 +303,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 y 11
 end
@@ -342,7 +321,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 y 13
 end
@@ -361,7 +339,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 y 15
 end
@@ -374,7 +351,6 @@ x 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 end
 arch ewall_2_1_2
@@ -398,7 +374,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 2
 end
@@ -417,7 +392,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 4
 end
@@ -436,7 +410,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 6
 end
@@ -464,7 +437,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 9
 end
@@ -483,7 +455,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 11
 end
@@ -502,7 +473,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 13
 end
@@ -521,7 +491,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 15
 end
@@ -538,7 +507,6 @@ x 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 end
 arch ewall_2_1_2
@@ -559,7 +527,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 2
 end
@@ -578,7 +545,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 4
 end
@@ -597,7 +563,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 6
 end
@@ -625,7 +590,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 9
 end
@@ -644,7 +608,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 11
 end
@@ -663,7 +626,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 13
 end
@@ -682,7 +644,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 15
 end
@@ -695,7 +656,6 @@ x 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 end
 arch ewall_2_1_2
@@ -710,7 +670,6 @@ y 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 1
 end
@@ -720,7 +679,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 2
 end
@@ -730,7 +688,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 3
 end
@@ -740,7 +697,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 4
 end
@@ -750,7 +706,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 5
 end
@@ -760,7 +715,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 6
 end
@@ -770,7 +724,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 7
 end
@@ -780,7 +733,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 8
 end
@@ -790,7 +742,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 9
 end
@@ -800,7 +751,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 10
 end
@@ -810,7 +760,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 11
 end
@@ -820,7 +769,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 12
 end
@@ -830,7 +778,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 13
 end
@@ -840,7 +787,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 14
 end
@@ -850,7 +796,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 15
 end
@@ -867,7 +812,6 @@ x 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 end
 arch ewall_2_1_2
@@ -888,7 +832,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 2
 end
@@ -907,7 +850,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 4
 end
@@ -926,7 +868,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 6
 end
@@ -954,7 +895,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 9
 end
@@ -973,7 +913,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 11
 end
@@ -992,7 +931,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 13
 end
@@ -1014,7 +952,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 15
 end
@@ -1031,7 +968,6 @@ x 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 end
 arch ewall_2_1_2
@@ -1055,7 +991,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 2
 end
@@ -1077,7 +1012,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 4
 end
@@ -1100,7 +1034,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 6
 end
@@ -1128,7 +1061,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 9
 end
@@ -1147,7 +1079,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 11
 end
@@ -1181,7 +1112,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 13
 end
@@ -1207,7 +1137,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 15
 end
@@ -1228,7 +1157,6 @@ x 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 end
 arch ewall_2_1_2
@@ -1249,7 +1177,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 2
 end
@@ -1275,7 +1202,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 4
 end
@@ -1301,7 +1227,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 6
 end
@@ -1329,7 +1254,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 9
 end
@@ -1351,7 +1275,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 11
 end
@@ -1377,7 +1300,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 13
 end
@@ -1410,7 +1332,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 15
 end
@@ -1419,7 +1340,6 @@ x 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 end
 arch ewall_2_1_2
@@ -1440,7 +1360,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 2
 end
@@ -1466,7 +1385,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 4
 end
@@ -1492,7 +1410,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 6
 end
@@ -1520,7 +1437,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 9
 end
@@ -1542,7 +1458,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 11
 end
@@ -1568,7 +1483,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 13
 end
@@ -1597,7 +1511,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 15
 end
@@ -1606,7 +1519,6 @@ x 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 end
 arch ewall_2_1_2
@@ -1630,7 +1542,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 2
 end
@@ -1652,7 +1563,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 4
 end
@@ -1675,7 +1585,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 6
 end
@@ -1703,7 +1612,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 9
 end
@@ -1722,7 +1630,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 11
 end
@@ -1756,7 +1663,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 13
 end
@@ -1782,7 +1688,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 15
 end
@@ -1803,7 +1708,6 @@ x 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 end
 arch ewall_2_1_2
@@ -1824,7 +1728,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 2
 end
@@ -1843,7 +1746,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 4
 end
@@ -1862,7 +1764,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 6
 end
@@ -1890,7 +1791,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 9
 end
@@ -1909,7 +1809,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 11
 end
@@ -1928,7 +1827,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 13
 end
@@ -1947,7 +1845,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 15
 end
@@ -1964,7 +1861,6 @@ x 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 end
 arch ewall_2_1_2
@@ -1979,7 +1875,6 @@ y 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 1
 end
@@ -1989,7 +1884,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 2
 end
@@ -1999,7 +1893,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 3
 end
@@ -2009,7 +1902,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 4
 end
@@ -2019,7 +1911,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 5
 end
@@ -2029,7 +1920,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 6
 end
@@ -2039,7 +1929,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 7
 end
@@ -2049,7 +1938,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 8
 end
@@ -2059,7 +1947,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 9
 end
@@ -2069,7 +1956,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 10
 end
@@ -2079,7 +1965,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 11
 end
@@ -2089,7 +1974,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 12
 end
@@ -2099,7 +1983,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 13
 end
@@ -2109,7 +1992,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 14
 end
@@ -2119,7 +2001,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 15
 end
@@ -2136,7 +2017,6 @@ x 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 end
 arch ewall_2_1_2
@@ -2157,7 +2037,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 2
 end
@@ -2176,7 +2055,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 4
 end
@@ -2195,7 +2073,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 6
 end
@@ -2223,7 +2100,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 9
 end
@@ -2242,7 +2118,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 11
 end
@@ -2261,7 +2136,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 13
 end
@@ -2280,7 +2154,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 15
 end
@@ -2293,7 +2166,6 @@ x 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 end
 arch ewall_2_1_2
@@ -2328,7 +2200,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 2
 end
@@ -2351,7 +2222,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 4
 end
@@ -2370,7 +2240,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 6
 end
@@ -2398,7 +2267,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 9
 end
@@ -2417,7 +2285,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 11
 end
@@ -2436,7 +2303,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 13
 end
@@ -2455,7 +2321,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 15
 end
@@ -2472,7 +2337,6 @@ x 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 end
 arch ewall_2_1_2
@@ -2493,10 +2357,7 @@ end
 arch sage
 msg
 @match *
-Good armour is here for the sons of
-the eastern wind.
-
-
+Good armour is here for the sons of the eastern wind.
 endmsg
 x 14
 y 1
@@ -2511,7 +2372,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 2
 end
@@ -2534,7 +2394,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 4
 end
@@ -2553,7 +2412,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 6
 end
@@ -2581,7 +2439,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 9
 end
@@ -2600,7 +2457,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 11
 end
@@ -2619,7 +2475,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 13
 end
@@ -2638,7 +2493,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 15
 end
@@ -2651,7 +2505,6 @@ x 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 end
 arch ewall_2_2_3
@@ -2666,7 +2519,6 @@ y 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 1
 end
@@ -2680,7 +2532,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 2
 end
@@ -2698,7 +2549,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 3
 end
@@ -2712,7 +2562,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 4
 end
@@ -2730,7 +2579,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 5
 end
@@ -2744,7 +2592,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 6
 end
@@ -2762,7 +2609,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 7
 end
@@ -2776,7 +2622,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 8
 end
@@ -2790,7 +2635,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 9
 end
@@ -2808,7 +2652,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 10
 end
@@ -2822,7 +2665,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 11
 end
@@ -2840,7 +2682,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 12
 end
@@ -2854,7 +2695,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 13
 end
@@ -2872,7 +2712,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 14
 end
@@ -2886,7 +2725,6 @@ y 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 15
 end
