@@ -1,5 +1,5 @@
 arch map
-name Gurupu Mise
+name Gurupu Mise, Basement Level 1
 reset_timeout 2000
 difficulty 1
 region azumauindo
@@ -11,10 +11,11 @@ shoprace human
 darkness 3
 width 32
 height 32
-enter_x 1
-enter_y 1
+enter_x 24
+enter_y 4
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2011-10-26 Rick Tanner
 endmsg
 end
 arch blocked
@@ -843,7 +844,6 @@ y 6
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 3
 y 6
 unique 1
@@ -854,7 +854,6 @@ y 7
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 3
 y 7
 unique 1
@@ -865,7 +864,6 @@ y 8
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 3
 y 8
 unique 1
@@ -876,7 +874,6 @@ y 9
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 3
 y 9
 unique 1
@@ -887,7 +884,6 @@ y 10
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 3
 y 10
 unique 1
@@ -898,7 +894,6 @@ y 11
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 3
 y 11
 unique 1
@@ -909,7 +904,6 @@ y 12
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 3
 y 12
 unique 1
@@ -920,7 +914,6 @@ y 13
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 3
 y 13
 unique 1
@@ -1008,7 +1001,6 @@ y 21
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 3
 y 21
 unique 1
@@ -1019,7 +1011,6 @@ y 22
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 3
 y 22
 unique 1
@@ -1030,7 +1021,6 @@ y 23
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 3
 y 23
 unique 1
@@ -1041,7 +1031,6 @@ y 24
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 3
 y 24
 unique 1
@@ -1052,7 +1041,6 @@ y 25
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 3
 y 25
 unique 1
@@ -1063,7 +1051,6 @@ y 26
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 3
 y 26
 unique 1
@@ -1074,7 +1061,6 @@ y 27
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 3
 y 27
 unique 1
@@ -1085,7 +1071,6 @@ y 28
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 3
 y 28
 unique 1
@@ -1179,7 +1164,6 @@ y 5
 end
 arch key2
 name mise key 2
-name_pl mise key 2
 slaying azamauingshodos2lvl2
 x 4
 y 5
@@ -1190,7 +1174,6 @@ y 6
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 4
 y 6
 unique 1
@@ -1201,7 +1184,6 @@ y 7
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 4
 y 7
 unique 1
@@ -1212,7 +1194,6 @@ y 8
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 4
 y 8
 unique 1
@@ -1223,7 +1204,6 @@ y 9
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 4
 y 9
 unique 1
@@ -1234,7 +1214,6 @@ y 10
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 4
 y 10
 unique 1
@@ -1245,7 +1224,6 @@ y 11
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 4
 y 11
 unique 1
@@ -1256,7 +1234,6 @@ y 12
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 4
 y 12
 unique 1
@@ -1267,7 +1244,6 @@ y 13
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 4
 y 13
 unique 1
@@ -1346,7 +1322,6 @@ y 20
 end
 arch key2
 name mise key 1
-name_pl mise key 1
 slaying azamauingshodos1lvl2
 x 4
 y 20
@@ -1357,7 +1332,6 @@ y 21
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 4
 y 21
 unique 1
@@ -1368,7 +1342,6 @@ y 22
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 4
 y 22
 unique 1
@@ -1379,7 +1352,6 @@ y 23
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 4
 y 23
 unique 1
@@ -1390,7 +1362,6 @@ y 24
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 4
 y 24
 unique 1
@@ -1401,7 +1372,6 @@ y 25
 end
 arch woodfloor2
 name unique 1 woodfloor
-name_pl woodfloor
 x 4
 y 25
 unique 1
@@ -1412,7 +1382,6 @@ y 26
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 4
 y 26
 unique 1
@@ -1423,7 +1392,6 @@ y 27
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 4
 y 27
 unique 1
@@ -1434,7 +1402,6 @@ y 28
 end
 arch cobblestones2
 name unique 1 moneydrop
-name_pl unique 1 moneydrop
 x 4
 y 28
 unique 1
@@ -2508,7 +2475,6 @@ y 3
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 8
 y 3
 unique 1
@@ -2547,7 +2513,6 @@ y 5
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 8
 y 5
 unique 1
@@ -2586,7 +2551,6 @@ y 7
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 8
 y 7
 unique 1
@@ -2625,7 +2589,6 @@ y 9
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 8
 y 9
 unique 1
@@ -2664,7 +2627,6 @@ y 11
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 8
 y 11
 unique 1
@@ -2743,7 +2705,6 @@ y 18
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 8
 y 18
 unique 1
@@ -2782,7 +2743,6 @@ y 20
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 8
 y 20
 unique 1
@@ -2821,7 +2781,6 @@ y 22
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 8
 y 22
 unique 1
@@ -2860,7 +2819,6 @@ y 24
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 8
 y 24
 unique 1
@@ -2899,7 +2857,6 @@ y 26
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 8
 y 26
 unique 1
@@ -3504,7 +3461,6 @@ y 3
 end
 arch goldfloor
 name 20000 Diamonds
-name_pl 20000 Diamonds
 slaying gem
 food 20000
 x 10
@@ -3545,7 +3501,6 @@ y 5
 end
 arch goldfloor
 name 5000 Diamonds
-name_pl 5000 Diamonds
 slaying gem
 food 5000
 x 10
@@ -3586,9 +3541,8 @@ y 7
 end
 arch goldfloor
 name 5000 Platinum
-name_pl 5000 Platinum
-slaying platinacoin
-food 5000
+slaying money
+food 250000
 x 10
 y 7
 connected 50
@@ -3627,9 +3581,8 @@ y 9
 end
 arch goldfloor
 name 5000 Platinum
-name_pl 5000 Platinum
-slaying platinacoin
-food 5000
+slaying money
+food 250000
 x 10
 y 9
 connected 40
@@ -3668,9 +3621,8 @@ y 11
 end
 arch goldfloor
 name 1000 Platinum
-name_pl 1000 Platinum
-slaying platinacoin
-food 1000
+slaying money
+food 50000
 x 10
 y 11
 connected 30
@@ -3753,7 +3705,6 @@ y 18
 end
 arch goldfloor
 name 20000 Diamonds
-name_pl 20000 Diamonds
 slaying gem
 food 20000
 x 10
@@ -3794,7 +3745,6 @@ y 20
 end
 arch goldfloor
 name 5000 Diamonds
-name_pl 5000 Diamonds
 slaying gem
 food 5000
 x 10
@@ -3835,9 +3785,8 @@ y 22
 end
 arch goldfloor
 name 5000 Platinum
-name_pl 5000 Platinum
-slaying platinacoin
-food 5000
+slaying money
+food 250000
 x 10
 y 22
 connected 5
@@ -3876,9 +3825,8 @@ y 24
 end
 arch goldfloor
 name 5000 Platinum
-name_pl 5000 Platinum
-slaying platinacoin
-food 5000
+slaying money
+food 250000
 x 10
 y 24
 connected 4
@@ -3917,9 +3865,8 @@ y 26
 end
 arch goldfloor
 name 1000 Platinum
-name_pl 1000 Platinum
-slaying platinacoin
-food 1000
+slaying money
+food 50000
 x 10
 y 26
 connected 3
@@ -4009,7 +3956,6 @@ y 3
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 11
 y 3
 unique 1
@@ -4044,7 +3990,6 @@ y 5
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 11
 y 5
 unique 1
@@ -4079,7 +4024,6 @@ y 7
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 11
 y 7
 unique 1
@@ -4114,7 +4058,6 @@ y 9
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 11
 y 9
 unique 1
@@ -4149,7 +4092,6 @@ y 11
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 11
 y 11
 unique 1
@@ -4237,7 +4179,6 @@ y 18
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 11
 y 18
 unique 1
@@ -4280,7 +4221,6 @@ y 20
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 11
 y 20
 unique 1
@@ -4323,7 +4263,6 @@ y 22
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 11
 y 22
 unique 1
@@ -4366,7 +4305,6 @@ y 24
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 11
 y 24
 unique 1
@@ -4409,7 +4347,6 @@ y 26
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 11
 y 26
 unique 1
@@ -4504,7 +4441,6 @@ y 3
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 12
 y 3
 unique 1
@@ -4793,7 +4729,6 @@ y 18
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 12
 y 18
 unique 1
@@ -5085,7 +5020,6 @@ y 3
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 3
 unique 1
@@ -5128,7 +5062,6 @@ y 5
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 5
 unique 1
@@ -5147,7 +5080,6 @@ y 6
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 6
 unique 1
@@ -5166,7 +5098,6 @@ y 7
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 7
 unique 1
@@ -5185,7 +5116,6 @@ y 8
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 8
 unique 1
@@ -5204,7 +5134,6 @@ y 9
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 9
 unique 1
@@ -5223,7 +5152,6 @@ y 10
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 10
 unique 1
@@ -5242,7 +5170,6 @@ y 11
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 11
 unique 1
@@ -5261,7 +5188,6 @@ y 12
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 12
 unique 1
@@ -5285,7 +5211,6 @@ connected 20
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 13
 unique 1
@@ -5352,7 +5277,6 @@ y 18
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 18
 unique 1
@@ -5395,7 +5319,6 @@ y 20
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 20
 unique 1
@@ -5414,7 +5337,6 @@ y 21
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 21
 unique 1
@@ -5433,7 +5355,6 @@ y 22
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 22
 unique 1
@@ -5452,7 +5373,6 @@ y 23
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 23
 unique 1
@@ -5471,7 +5391,6 @@ y 24
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 24
 unique 1
@@ -5490,7 +5409,6 @@ y 25
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 25
 unique 1
@@ -5509,7 +5427,6 @@ y 26
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 26
 unique 1
@@ -5528,7 +5445,6 @@ y 27
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 27
 unique 1
@@ -5552,7 +5468,6 @@ connected 2
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 13
 y 28
 unique 1
@@ -5614,7 +5529,6 @@ y 3
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 14
 y 3
 unique 1
@@ -5793,7 +5707,6 @@ y 18
 end
 arch woodfloor
 name unique 1 woodfloor
-name_pl unique 1 woodfloor
 x 14
 y 18
 unique 1
@@ -9299,7 +9212,6 @@ y 3
 end
 arch key2
 name shop key 2
-name_pl shop key 2
 slaying azamauingshodos2lvl2
 x 27
 y 3
@@ -9376,7 +9288,6 @@ y 7
 end
 arch key2
 name mise key 2
-name_pl mise key 2
 slaying azamauingshodos2lvl2
 x 27
 y 7
@@ -9688,7 +9599,6 @@ y 26
 end
 arch key2
 name shop key 1
-name_pl shop key 1
 slaying azamauingshodos1lvl2
 x 27
 y 26
@@ -9883,7 +9793,6 @@ y 7
 end
 arch key2
 name mise key 1
-name_pl mise key 1
 slaying azamauingshodos1lvl2
 x 28
 y 7
