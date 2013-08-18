@@ -29,28 +29,16 @@
 #                     the current directory or an absolute path from the top
 #                     level maps directory
 
-include darcap/darcap.quests
-
-include scorn/scorn.quests
-
-include test/test.quests
-
-include start/start.quests
-
-include wolfsburg/wolfsburg.quests
-
-include darcap/darcap/elemental.quests
-
-include santo_dominion/santo_dominion.quests
-
-include lake_country/lake_country.quests
-
-include navar_city/navar_city.quests
-
-include quests/quests.quests
-
 include brest/brest.quests
+include darcap/darcap.quests
+include darcap/darcap/elemental.quests
 include euthville/euthville.quests
-
+include lake_country/lake_country.quests
+include navar_city/navar_city.quests
 include port_joseph/port_joseph.quests
-
+include quests/quests.quests
+include santo_dominion/santo_dominion.quests
+include scorn/scorn.quests
+include start/start.quests
+include test/test.quests
+include wolfsburg/wolfsburg.quests
