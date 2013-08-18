@@ -1,28 +1,33 @@
-# Quest definition file
-# This file describes the various quests known to the game, and used through the functions in quest.c
+# world.quests -- global quest definition file
 #
-# Format is pretty simple:
-# quest "internal code, whatever you wand but must be unique"
-# title "one-line to describe the quest"
-# description
-# "multi-line"
-# "description if you feel like it"
-# end_description
-# restart "optional integer, if non zero the quest can be done multiple times"
-# (then multiple "step/end_step" blocks)
-# step "integer value for the step"
-# description
-# "multi-line step"
-# "description"
-# end_description
-# end_step
-# (then after all steps)
-# end_quest
-# you can include other quest files by using
-# include path/to/file.quests
-# the include path can be either relative or absolute to the maps/ directory
-# (this can be done by starting the path with a /)
-# any files that are included may have other files included from them.
+# This file describes the various quests known in the game. It is used by the
+# functions in 'server/quest.c'.
+#
+# This file describes the various quests known in the game, which is used by
+# the functions in 'server/quest.c'. For the most part, this file pulls in
+# additional quest description files that are region-specific.
+#
+# Quest definition files are written much like other files in the game. Each
+# quest is defined by several keys, which are read from the file line-by-line.
+# Some keys contain fields that may span multiple lines (i.e. 'description').
+# The best way to understand the format is to look at an existing example.
+#
+# Key Reference:
+#   quest           - internal name, which must be globally unique
+#   title           - short, one-line descriptive title for the quest
+#   description     - start of a description field for the block it is in
+#   end_description - end a description field
+#   restart         - (optional) when set to a non-zero integer, the quest can
+#                     is replayable (can be completed multiple times)
+#   step            - integer value for the beginning of a step block; this
+#                     block must also contain its own description block (see
+#                     examples for details)
+#   end_step        - end a step field
+#   end_quest       - end of a quest definition
+#
+#   include         - include another quest file, either as a relative path to
+#                     the current directory or an absolute path from the top
+#                     level maps directory
 
 include darcap/darcap.quests
 
