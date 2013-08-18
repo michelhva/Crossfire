@@ -1,5 +1,5 @@
 arch map
-name Random house
+name The Random House
 fixed_resettime 1
 region darcap
 width 10
@@ -8,7 +8,7 @@ enter_x 5
 enter_y 1
 msg
 Created:  2010-03-13 Nicolas Weeger
-Modified: 2012-01-29 Rick Tanner
+Modified: 2013-08-18 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -230,6 +230,11 @@ arch tile_white_floor
 x 4
 y 4
 end
+arch light4
+x 4
+y 4
+glow_radius 5
+end
 arch tile_white_floor
 x 4
 y 5
@@ -432,12 +437,7 @@ arch guildmaster
 name Cartio
 msg
 @match *
-Hello, and welcome to Darcap's random house!
-
-Here you can visit our magic house, that changes at each visit.
-
-
-We only ask for a small 10 silver fees for entry, so we can pay the magicians who create such a nice place!
+Hello, and welcome to the Darcap Random House! You can visit our magic house here, that changes every visit. We only ask for a small entry fee of 10 silver so we can pay the magicians who create this place.
 endmsg
 face evoker.151
 hp 100
