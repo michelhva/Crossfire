@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2013-07-26 Kevin Zheng
+Modified: 2013-08-18 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -37,7 +37,7 @@ arch grass
 y 2
 end
 arch tavern
-name Kaisa's place
+name Kaisa's Place
 slaying /navar_city/magara/houses/kaisas_place
 hp 1
 sp 3
@@ -56,7 +56,6 @@ arch grass
 y 4
 end
 arch valriel_church
-name Temple of Valriel
 slaying /navar_city/temples/valriel
 hp 9
 sp 27
@@ -119,6 +118,7 @@ arch grass
 y 11
 end
 arch market1
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 2
 sp 10
@@ -146,7 +146,7 @@ arch grass
 y 14
 end
 arch s_house1
-name Iscar's house
+name Iscar's House
 slaying /navar_city/iscar
 hp 2
 sp 9
@@ -433,6 +433,7 @@ x 1
 y 9
 end
 arch market2
+name Navar Market
 slaying /navar_city/misc/market1
 hp 2
 sp 10
@@ -456,6 +457,7 @@ x 1
 y 11
 end
 arch market2
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 2
 sp 10
@@ -790,6 +792,7 @@ x 2
 y 9
 end
 arch market2
+name Navar Market
 slaying /navar_city/misc/market1
 hp 14
 sp 10
@@ -837,7 +840,7 @@ x 2
 y 13
 end
 arch hovels
-name A Large house
+name Large House
 slaying /navar_city/magara/houses/large_house
 hp 1
 sp 1
@@ -852,7 +855,7 @@ arch grass
 x 2
 y 14
 end
-arch guild_west
+arch Dragon Guild 2
 name Navar Dragon Guild
 slaying /navar_city/misc/dragon_guild
 hp 9
@@ -1162,8 +1165,7 @@ arch grass
 x 3
 y 7
 end
-arch small_temple2
-name Temple of Lythander
+arch lyth_temple
 slaying /navar_city/temples/templelyth
 hp 7
 sp 13
@@ -1187,6 +1189,7 @@ x 3
 y 9
 end
 arch market2
+name Navar Market
 slaying /navar_city/misc/market1
 hp 30
 sp 10
@@ -1210,6 +1213,7 @@ x 3
 y 11
 end
 arch market2
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 30
 sp 10
@@ -1541,6 +1545,7 @@ x 4
 y 9
 end
 arch market2
+name Navar Market
 slaying /navar_city/misc/market1
 hp 45
 sp 10
@@ -1564,6 +1569,7 @@ x 4
 y 11
 end
 arch market2
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 45
 sp 10
@@ -1923,6 +1929,7 @@ x 5
 y 9
 end
 arch market2
+name Navar Market
 slaying /navar_city/misc/market1
 hp 45
 sp 10
@@ -1946,6 +1953,7 @@ x 5
 y 11
 end
 arch market2
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 45
 sp 10
@@ -2297,6 +2305,7 @@ x 6
 y 9
 end
 arch market3
+name Navar Market
 slaying /navar_city/misc/market1
 hp 57
 sp 10
@@ -2320,6 +2329,7 @@ x 6
 y 11
 end
 arch market3
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 57
 sp 10
@@ -3320,8 +3330,8 @@ arch brush
 x 9
 y 5
 end
-arch shrine
-name Gaea's shrine
+arch gaea_temple
+name Gaea's Shrine
 slaying /navar_city/temples/gaea
 hp 14
 sp 18
@@ -4118,8 +4128,7 @@ arch grass_only
 x 11
 y 14
 end
-arch small_temple
-name Church of Valkyrie
+arch valkyrie_temple
 slaying ../navar_city/temples/valkyrie
 hp 12
 sp 21
@@ -5599,7 +5608,7 @@ y 31
 elevation 4298
 end
 arch barn2
-name The Old Warehouse
+name Old Warehouse
 slaying /navar_city/smugglers_cove/sc_warehouse
 hp 7
 sp 18
@@ -7587,7 +7596,7 @@ x 22
 y 4
 end
 arch big_galleon
-name Smugglers Boat
+name Smugglers' Boat
 x 22
 y 4
 end

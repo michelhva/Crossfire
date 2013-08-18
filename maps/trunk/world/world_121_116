@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-08-14 Rick Tanner
+Modified: 2013-08-18 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_121_115
@@ -9057,9 +9057,9 @@ arch cobblestones
 x 32
 y 46
 end
-arch sign
+arch cross_sign
 msg
-Welcome to Navar City.
+Welcome to Navar City!
 To go to Darcap, take the road north 1065 chains.
 To go to Brest or Scorn, take the road south.
 endmsg
@@ -10645,7 +10645,7 @@ y 39
 move_block all
 end
 arch collesium
-name Collesium
+name Colosseum
 slaying /navar_city/collosium
 hp 17
 sp 22
@@ -11043,8 +11043,8 @@ x 38
 y 42
 end
 arch sign
-name Showing Today:
 msg
+Showing Today:
 Clash of the Titans
 endmsg
 x 38
@@ -13607,7 +13607,7 @@ arch grass
 x 45
 y 39
 end
-arch temple1
+arch gorokh_church
 name Temple of Gorokh
 slaying /navar_city/temples/gorokh
 hp 7
@@ -14764,17 +14764,13 @@ x 48
 y 46
 end
 arch sign
-name Welcome to Navar City
 msg
-Welcome to the city of Navar!
-Magic is suppressed in public streets by order of the city council.  Please be sure to visit:
+Welcome to Navar City!
+By order of the city council, magic is suppressed in public streets. Be sure to visit:
 Frolicing Mermaid
 All Shops
 Gunther's smithy
 Lighthouse
-Bank of Skud
-If you have any problems, contact someone from site and they should get back to me....
-Maxus.
 Bank of Skud
 endmsg
 x 48
@@ -15094,7 +15090,7 @@ x 49
 y 39
 end
 arch house_up
-name Large house
+name Midane's House
 slaying /navar_city/misc/midane
 hp 6
 sp 2
