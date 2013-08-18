@@ -1,5 +1,5 @@
 arch map
-name Collosium
+name Colosseum
 difficulty 20
 region navar
 width 36
@@ -8,7 +8,7 @@ enter_x 17
 enter_y 22
 msg
 Created:  1999-01-22 Cater & Wade (john_cater@yahoo.com)
-Modified: 2012-02-14 Rick Tanner
+Modified: 2013-08-18 Kevin Zheng
 endmsg
 end
 arch grassmedium
@@ -181,9 +181,9 @@ x 1
 y 3
 end
 arch sign
-name Competitors Only!
+name sign
 msg
-Competitors Only Beyond this Point.  200 gp to try your luck...
+Competitors only beyond this point. Pay 200 gold to try your luck!
 endmsg
 x 1
 y 3
@@ -482,11 +482,8 @@ x 3
 y 3
 end
 arch altar
-name Admission Fee
+name drop 200 gold to enter
 slaying money
-msg
-Pay 200 g
-endmsg
 food 2000
 x 3
 y 3
@@ -649,7 +646,6 @@ So you think you're pretty good ey?
 endmsg
 x 4
 y 3
-speed_left -0.640000
 end
 arch woodfloor2
 x 4
@@ -786,7 +782,6 @@ end
 arch guard
 x 4
 y 20
-speed_left -0.640000
 end
 arch grassmedium
 x 4
@@ -2204,7 +2199,6 @@ end
 arch knight
 x 15
 y 2
-speed_left -0.700000
 end
 arch cobblestones2
 x 15
@@ -2360,6 +2354,11 @@ arch dirtfloor
 x 16
 y 5
 end
+arch trigger
+x 16
+y 5
+connected 2
+end
 arch dirtfloor
 x 16
 y 6
@@ -2435,7 +2434,7 @@ end
 arch knight
 msg
 @match *
-Move Along...
+Move along...
 endmsg
 x 16
 y 21
@@ -2468,10 +2467,10 @@ arch grassmedium
 x 16
 y 25
 end
-arch cobblestones2
+arch grassmedium
 x 17
 end
-arch westcityport_a
+arch westcwall_2_1_2
 x 17
 end
 arch cobblestones2
@@ -2489,6 +2488,11 @@ end
 arch dirtfloor
 x 17
 y 4
+end
+arch gate_closed_1
+x 17
+y 4
+connected 2
 end
 arch dirtfloor
 x 17
@@ -2542,17 +2546,9 @@ arch dirtfloor
 x 17
 y 17
 end
-arch dirtfloor
-x 17
-y 18
-end
 arch cobblestones2
 x 17
 y 18
-end
-arch dirtfloor
-x 17
-y 19
 end
 arch cobblestones2
 x 17
@@ -2594,10 +2590,10 @@ arch cobblestones2
 x 17
 y 25
 end
-arch cobblestones2
+arch grassmedium
 x 18
 end
-arch westcityport_a
+arch westcwall_2_1_2
 x 18
 end
 arch cobblestones2
@@ -2615,6 +2611,11 @@ end
 arch dirtfloor
 x 18
 y 4
+end
+arch gate_closed_1
+x 18
+y 4
+connected 2
 end
 arch dirtfloor
 x 18
@@ -2676,17 +2677,9 @@ arch dirtfloor
 x 18
 y 17
 end
-arch dirtfloor
-x 18
-y 18
-end
 arch cobblestones2
 x 18
 y 18
-end
-arch dirtfloor
-x 18
-y 19
 end
 arch cobblestones2
 x 18
@@ -2775,10 +2768,7 @@ x 19
 y 5
 end
 arch sign_w
-name Heroes Entrance
-msg
-This way to the Training Center
-endmsg
+name Hero's Exit
 x 19
 y 5
 end
@@ -2862,7 +2852,7 @@ end
 arch knight
 msg
 @match *
-Keep it down will ya!
+Keep it down, will 'ya?
 endmsg
 x 19
 y 21
@@ -2908,7 +2898,6 @@ end
 arch knight
 x 20
 y 2
-speed_left -0.700000
 end
 arch cobblestones2
 x 20
@@ -3161,7 +3150,6 @@ end
 arch a_townsman2
 x 22
 y 1
-speed_left -1.180000
 end
 arch grassmedium
 x 22
@@ -3422,7 +3410,6 @@ end
 arch merchant
 x 24
 y 1
-speed_left -1.900000
 end
 arch grassmedium
 x 24
@@ -3679,7 +3666,6 @@ end
 arch man
 x 26
 y 1
-speed_left -1.450000
 end
 arch grassmedium
 x 26
@@ -3957,7 +3943,6 @@ end
 arch crone
 x 28
 y 1
-speed_left -0.550000
 end
 arch grassmedium
 x 28
@@ -4104,7 +4089,6 @@ end
 arch a_townsman3
 x 29
 y 1
-speed_left -1.180000
 end
 arch grassmedium
 x 29
@@ -4483,7 +4467,6 @@ Can you spare a coin for an old man - sire?
 endmsg
 x 31
 y 14
-speed_left -0.550000
 end
 arch grassmedium
 x 31
@@ -4520,7 +4503,6 @@ end
 arch guard
 x 31
 y 20
-speed_left -0.640000
 end
 arch grassmedium
 x 31
@@ -4591,7 +4573,6 @@ end
 arch sailor
 x 32
 y 5
-speed_left -1.450000
 end
 arch grassmedium
 x 32
@@ -4604,7 +4585,6 @@ end
 arch crone
 x 32
 y 6
-speed_left -0.550000
 end
 arch grassmedium
 x 32
@@ -4625,7 +4605,6 @@ end
 arch sailor
 x 32
 y 8
-speed_left -1.450000
 end
 arch grassmedium
 x 32
@@ -4646,7 +4625,6 @@ end
 arch slave
 x 32
 y 10
-speed_left -1.000000
 end
 arch grassmedium
 x 32
@@ -4769,7 +4747,6 @@ Wanna play?
 endmsg
 x 33
 y 2
-speed_left -2.800000
 end
 arch grassmedium
 x 33
@@ -4847,7 +4824,6 @@ Let me help you put some meat on those bones...
 endmsg
 x 33
 y 17
-speed_left -0.700000
 stand_still 1
 end
 arch grassmedium
@@ -4987,7 +4963,6 @@ Leave me alone, it's my day off.
 endmsg
 x 34
 y 11
-speed_left -1.000000
 end
 arch grassmedium
 x 34
