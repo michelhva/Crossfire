@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2012-10-03 Rick Tanner
+Modified: 2013-08-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -5190,7 +5190,7 @@ y 27
 elevation 0
 end
 arch rl_house1
-name Thilgar's house
+name Thilgar's House
 slaying /darcap/darcap/thilgar
 hp 6
 sp 19
@@ -5553,7 +5553,6 @@ end
 arch gravestone
 x 20
 y 31
-move_block all
 end
 arch grass_only
 x 20
@@ -5563,7 +5562,6 @@ end
 arch gravestone
 x 20
 y 32
-move_block all
 end
 arch grass_only
 x 20
@@ -5825,7 +5823,7 @@ y 25
 elevation 0
 end
 arch guild2storage_northwest
-name Poisoned Dagger's storage room
+name Poisoned Dagger's Storage Room
 slaying /darcap/darcap/guilds/poisoned_dagger/storage_room
 hp 1
 sp 10
@@ -5867,7 +5865,7 @@ y 31
 elevation 0
 end
 arch devourers_church
-name St Andreas the Ravenous
+name St. Andreas the Ravenous
 slaying /darcap/darcap/church
 hp 17
 sp 1
@@ -6544,7 +6542,6 @@ end
 arch gravestone
 x 23
 y 31
-move_block all
 end
 arch grass_only
 x 23
@@ -6554,7 +6551,6 @@ end
 arch gravestone
 x 23
 y 32
-move_block all
 end
 arch grass_only
 x 23
@@ -6633,14 +6629,13 @@ y 44
 elevation 0
 end
 arch magic_mouth
-name Pet Chicken
+name tame chicken
 msg
-Ooh, a tame chicken!  And look, it's a new pet shop.
+Ooh, a tame chicken! And look, it's a new pet shop!
 endmsg
 face chicken.172
 x 23
 y 44
-invisible 0
 end
 arch grass
 x 23
@@ -7275,7 +7270,6 @@ Julio the Great, ?-6813 EK, benefactor of the town.
 endmsg
 x 25
 y 41
-move_block 0
 end
 arch cobblestones2
 x 25
@@ -7564,7 +7558,7 @@ y 33
 elevation 0
 end
 arch house_2
-name Fire house
+name Fire House
 slaying /darcap/darcap/firehouse
 hp 7
 sp 8
@@ -7662,8 +7656,8 @@ elevation 985
 end
 arch sign
 msg
-Welcome to Darcap
-Navar City: 1065 chains southeast.
+Welcome to Darcap!
+Navar City: 1065 chains southeast
 endmsg
 x 26
 y 46
@@ -7899,7 +7893,7 @@ y 33
 elevation 0
 end
 arch house_2
-name Water house
+name Water House
 slaying ../darcap/darcap/waterhouse
 hp 3
 sp 8
@@ -8147,7 +8141,7 @@ y 25
 elevation 0
 end
 arch store_alchemy
-name Molthir's Potionshop
+name Molthir's Potion Shop
 slaying ../darcap/darcap/shops/potionshop
 hp 4
 sp 17
@@ -8165,7 +8159,7 @@ y 27
 elevation 0
 end
 arch guild2storage_northwest
-name Smoking Cauldron's storage room
+name Smoking Cauldron's Storage Room
 slaying /darcap/darcap/guilds/smoking_cauldron/storage_room
 hp 1
 sp 10
@@ -8188,7 +8182,7 @@ y 30
 elevation 0
 end
 arch t_house2
-name Darcap town library
+name Darcap Library
 slaying /darcap/darcap/library_ground
 hp 18
 sp 9
@@ -8211,7 +8205,7 @@ y 33
 elevation 0
 end
 arch house_2
-name Air house
+name Air House
 slaying ../darcap/darcap/airhouse
 hp 6
 sp 8
@@ -8261,7 +8255,7 @@ y 39
 elevation 0
 end
 arch barn2_northwest
-name ware house
+name warehouse
 x 28
 y 39
 end
@@ -8553,7 +8547,7 @@ y 33
 elevation 0
 end
 arch house_2
-name Earth house
+name Earth House
 slaying ../darcap/darcap/earthhouse
 hp 2
 sp 8
@@ -8642,7 +8636,7 @@ y 44
 elevation 0
 end
 arch house_1
-name Sargas's fine fishing supplies
+name Sargas's Fine Fishing
 slaying ../darcap/darcap/shops/fishing
 hp 2
 sp 1
@@ -9288,9 +9282,6 @@ elevation 0
 end
 arch sign_w
 name Elemental Row
-msg
-Elemental Row
-endmsg
 x 31
 y 33
 end
@@ -9605,7 +9596,7 @@ elevation 0
 move_block all
 end
 arch big_galleon
-name to Wolfsburg
+name To Wolfsburg
 slaying /world/world_128_109
 hp 43
 sp 20
@@ -10213,7 +10204,7 @@ y 30
 elevation 0
 end
 arch house_1
-name Random house
+name The Random House
 slaying /darcap/darcap/random_house
 hp 5
 sp 1
