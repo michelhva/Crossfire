@@ -1,5 +1,5 @@
 arch map
-name Fire house
+name Fire House
 difficulty 10
 region darcap
 width 10
@@ -8,7 +8,7 @@ enter_x 7
 enter_y 8
 msg
 Created:  2008-09-13 Rick Tanner
-Modified: 2012-09-28 Rick Tanner
+Modified: 2013-08-17 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -512,13 +512,6 @@ arch woodwall_2_1_2
 x 7
 y 1
 end
-arch magic_mouth
-msg
-A sign reads: to the Water house.
-endmsg
-x 7
-y 2
-end
 arch woodfloor2
 x 7
 y 2
@@ -552,11 +545,7 @@ y 6
 end
 arch sign
 msg
-Hello, and welcome to the Fire house!
-
-This house was used by Julio the Great for various experiments.
-
-Enjoy the exhibition.
+Hello, and welcome to the Fire House! This house was used by Julio the Great for various experiments. Enjoy the exhibition!
 endmsg
 x 7
 y 6
@@ -576,6 +565,7 @@ hp 26
 sp 33
 x 7
 y 8
+move_on all
 end
 arch cobblestones2
 x 7

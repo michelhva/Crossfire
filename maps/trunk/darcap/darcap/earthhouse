@@ -1,5 +1,5 @@
 arch map
-name Earth house
+name Earth House
 difficulty 10
 region darcap
 width 10
@@ -8,7 +8,7 @@ enter_x 2
 enter_y 8
 msg
 Created:  2008-09-13 Rick Tanner
-Modified: 2012-09-27 Rick Tanner
+Modified: 2013-08-17 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -122,13 +122,6 @@ arch woodwall_2_1_2
 x 2
 y 1
 end
-arch magic_mouth
-msg
-A sign reads: to the Air house.
-endmsg
-x 2
-y 2
-end
 arch woodfloor2
 x 2
 y 2
@@ -174,6 +167,7 @@ hp 29
 sp 33
 x 2
 y 8
+move_on all
 end
 arch cobblestones2
 x 2
@@ -221,6 +215,10 @@ end
 arch woodfloor2
 x 3
 y 6
+end
+arch light4
+x 3
+y 7
 end
 arch woodfloor2
 x 3
@@ -275,11 +273,7 @@ y 4
 end
 arch sign
 msg
-Hello, and welcome to the Earth house!
-
-This house was used by Julio the Great for various experiments.
-
-Enjoy the exhibition.
+Hello, and welcome to the Earth House! This house was used by Julio the Great for various experiments. Enjoy the exhibition!
 endmsg
 x 4
 y 4
@@ -295,10 +289,6 @@ end
 arch swall_2_2_2
 x 4
 y 6
-end
-arch light4
-x 4
-y 7
 end
 arch woodfloor2
 x 4

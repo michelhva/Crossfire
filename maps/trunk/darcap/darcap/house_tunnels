@@ -1,12 +1,12 @@
 arch map
-name Tunnels under the various houses
+name Underground Tunnel
 region darcap
-darkness 5
+darkness 3
 width 8
 height 11
 msg
 Created:  2010-03-13 Nicolas Weeger
-Modified: 2010-03-13 Nicolas Weeger
+Modified: 2013-08-17 Kevin Zheng
 endmsg
 end
 arch pstone_3
@@ -78,7 +78,6 @@ x 1
 y 1
 end
 arch ladder_up
-name Fire house
 slaying firehouse
 hp 7
 sp 2
@@ -110,7 +109,6 @@ x 1
 y 5
 end
 arch ladder_up
-name Water house
 slaying waterhouse
 hp 7
 sp 7
@@ -142,7 +140,6 @@ x 1
 y 9
 end
 arch ladder_up
-name Air house
 slaying airhouse
 hp 7
 sp 2
@@ -168,9 +165,7 @@ x 2
 y 1
 end
 arch sign_w
-msg
-To the Fire house.
-endmsg
+name Fire House
 x 2
 y 1
 end
@@ -199,9 +194,7 @@ x 2
 y 5
 end
 arch sign_w
-msg
-To the Water house.
-endmsg
+name Water House
 x 2
 y 5
 end
@@ -230,9 +223,7 @@ x 2
 y 9
 end
 arch sign_w
-msg
-To the Air house.
-endmsg
+name Air House
 x 2
 y 9
 end
@@ -399,9 +390,7 @@ x 5
 y 1
 end
 arch sign_e
-msg
-To the Water house.
-endmsg
+name Water House
 x 5
 y 1
 end
@@ -430,9 +419,7 @@ x 5
 y 5
 end
 arch sign_e
-msg
-To the Air house.
-endmsg
+name Air House
 x 5
 y 5
 end
@@ -461,9 +448,7 @@ x 5
 y 9
 end
 arch sign_e
-msg
-To the Earth house.
-endmsg
+name Earth House
 x 5
 y 9
 end
@@ -483,7 +468,6 @@ x 6
 y 1
 end
 arch ladder_up
-name Water house
 slaying waterhouse
 hp 2
 sp 2
@@ -511,7 +495,6 @@ x 6
 y 5
 end
 arch ladder_up
-name Air house
 slaying airhouse
 hp 2
 sp 7
@@ -539,7 +522,6 @@ x 6
 y 9
 end
 arch ladder_up
-name Earth house
 slaying earthhouse
 hp 2
 sp 2
