@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2012-08-06 Rick Tanner
+Modified: 2013-08-18 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -938,6 +938,7 @@ y 39
 move_block all
 end
 arch university
+name Navar University
 slaying /navar_city/university
 hp 24
 sp 37
@@ -7834,7 +7835,7 @@ y 45
 move_block all
 end
 arch big_galleon
-name to Wolfsburg
+name To Wolfsburg
 slaying /world/world_128_109
 hp 43
 sp 25
