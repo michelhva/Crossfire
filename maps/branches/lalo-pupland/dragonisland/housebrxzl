@@ -4,8 +4,11 @@ difficulty 1
 region stoneville
 width 61
 height 44
+enter_x 4
+enter_y 4
 msg
 Created:  1997-07-10
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -1007,6 +1010,10 @@ arch wall_1_2
 x 4
 y 28
 end
+arch swall_1_1_half
+x 4
+y 28
+end
 arch blackmarble
 x 4
 y 29
@@ -1016,6 +1023,10 @@ x 4
 y 29
 end
 arch blackmarble
+x 4
+y 30
+end
+arch swall_1_2_half
 x 4
 y 30
 end
@@ -1059,6 +1070,10 @@ arch wall_1_2
 x 4
 y 36
 end
+arch swall_1_1_half
+x 4
+y 36
+end
 arch blackmarble
 x 4
 y 37
@@ -1068,6 +1083,10 @@ x 4
 y 37
 end
 arch blackmarble
+x 4
+y 38
+end
+arch swall_1_2_half
 x 4
 y 38
 end
@@ -1270,6 +1289,10 @@ arch blackmarble
 x 5
 y 27
 end
+arch swall_1_4_half
+x 5
+y 27
+end
 arch wall_1_3
 x 5
 y 27
@@ -1348,6 +1371,10 @@ arch blackmarble
 x 5
 y 39
 end
+arch swall_1_4_half
+x 5
+y 39
+end
 arch wall_1_3
 x 5
 y 39
@@ -1418,7 +1445,7 @@ end
 arch door_look_1
 x 6
 y 8
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 6
@@ -1439,7 +1466,7 @@ end
 arch door_look_1
 x 6
 y 12
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 6
@@ -1539,7 +1566,7 @@ end
 arch door_look_1
 x 6
 y 31
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 6
@@ -1563,7 +1590,7 @@ end
 arch door_look_1
 x 6
 y 35
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 6
@@ -1744,6 +1771,10 @@ x 7
 y 26
 end
 arch blackmarble
+x 7
+y 27
+end
+arch swall_1_3_half
 x 7
 y 27
 end
@@ -1830,6 +1861,10 @@ arch blackmarble
 x 7
 y 39
 end
+arch swall_1_3_half
+x 7
+y 39
+end
 arch wall_1_4
 x 7
 y 39
@@ -1896,7 +1931,7 @@ end
 arch door_look_2
 x 8
 y 6
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 8
@@ -1961,7 +1996,7 @@ end
 arch door_look_2
 x 8
 y 14
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 8
@@ -2050,7 +2085,7 @@ end
 arch door_look_2
 x 8
 y 29
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 8
@@ -2115,7 +2150,7 @@ end
 arch door_look_2
 x 8
 y 37
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 8
@@ -2469,7 +2504,7 @@ end
 arch door_look_1
 x 10
 y 8
-no_pass 0
+move_block 0
 end
 arch grass
 x 10
@@ -2545,7 +2580,7 @@ arch grass
 x 10
 y 18
 end
-arch bridge_ns
+arch river_bridge_ns
 x 10
 y 18
 end
@@ -2700,7 +2735,7 @@ arch grass
 x 10
 y 41
 end
-arch bridge_ns
+arch river_bridge_ns
 x 10
 y 41
 end
@@ -3042,7 +3077,7 @@ end
 arch door_look_2
 x 12
 y 6
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 12
@@ -3196,7 +3231,7 @@ end
 arch door_look_2
 x 12
 y 29
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 12
@@ -3261,7 +3296,7 @@ end
 arch door_look_2
 x 12
 y 37
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 12
@@ -3452,6 +3487,10 @@ arch blackmarble
 x 13
 y 27
 end
+arch swall_1_4_half
+x 13
+y 27
+end
 arch wall_1_3
 x 13
 y 27
@@ -3535,6 +3574,10 @@ arch blackmarble
 x 13
 y 39
 end
+arch swall_1_4_half
+x 13
+y 39
+end
 arch wall_1_3
 x 13
 y 39
@@ -3613,7 +3656,7 @@ end
 arch door_look_1
 x 14
 y 8
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 14
@@ -3739,7 +3782,7 @@ end
 arch door_look_1
 x 14
 y 31
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 14
@@ -3763,7 +3806,7 @@ end
 arch door_look_1
 x 14
 y 35
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 14
@@ -3979,6 +4022,10 @@ arch blackmarble
 x 15
 y 27
 end
+arch swall_1_3_half
+x 15
+y 27
+end
 arch wall_1_4
 x 15
 y 27
@@ -4061,6 +4108,10 @@ x 15
 y 38
 end
 arch blackmarble
+x 15
+y 39
+end
+arch swall_1_3_half
 x 15
 y 39
 end
@@ -4263,6 +4314,10 @@ arch wall_1_2
 x 16
 y 28
 end
+arch swall_1_1_half
+x 16
+y 28
+end
 arch blackmarble
 x 16
 y 29
@@ -4272,6 +4327,10 @@ x 16
 y 29
 end
 arch blackmarble
+x 16
+y 30
+end
+arch swall_1_2_half
 x 16
 y 30
 end
@@ -4315,6 +4374,10 @@ arch wall_1_2
 x 16
 y 36
 end
+arch swall_1_1_half
+x 16
+y 36
+end
 arch blackmarble
 x 16
 y 37
@@ -4324,6 +4387,10 @@ x 16
 y 37
 end
 arch blackmarble
+x 16
+y 38
+end
+arch swall_1_2_half
 x 16
 y 38
 end
@@ -5616,84 +5683,39 @@ arch cave23
 x 23
 y 4
 end
-arch blackmarble
-x 23
-y 5
-unique 1
-end
-arch blocked
+arch cave_15
 x 23
 y 5
 end
-arch blackmarble
-x 23
-y 6
-unique 1
-end
-arch blocked
+arch cave_15
 x 23
 y 6
 end
-arch blackmarble
-x 23
-y 7
-unique 1
-end
-arch blocked
+arch cave_15
 x 23
 y 7
 end
-arch blackmarble
-x 23
-y 8
-unique 1
-end
-arch blocked
+arch cave_15
 x 23
 y 8
 end
-arch blackmarble
-x 23
-y 9
-unique 1
-end
-arch blocked
+arch cave_15
 x 23
 y 9
 end
-arch blackmarble
-x 23
-y 10
-unique 1
-end
-arch blocked
+arch cave_15
 x 23
 y 10
 end
-arch blackmarble
-x 23
-y 11
-unique 1
-end
-arch blocked
+arch cave_15
 x 23
 y 11
 end
-arch blackmarble
-x 23
-y 12
-unique 1
-end
-arch blocked
+arch cave_15
 x 23
 y 12
 end
-arch blackmarble
-x 23
-y 13
-unique 1
-end
-arch blocked
+arch cave_15
 x 23
 y 13
 end
@@ -6128,7 +6150,7 @@ end
 arch door_look_1
 x 25
 y 4
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 25
@@ -6828,6 +6850,10 @@ arch wall_1_2
 x 27
 y 28
 end
+arch swall_1_1_half
+x 27
+y 28
+end
 arch blackmarble
 x 27
 y 29
@@ -6837,6 +6863,10 @@ x 27
 y 29
 end
 arch blackmarble
+x 27
+y 30
+end
+arch swall_1_2_half
 x 27
 y 30
 end
@@ -6880,6 +6910,10 @@ arch wall_1_2
 x 27
 y 36
 end
+arch swall_1_1_half
+x 27
+y 36
+end
 arch blackmarble
 x 27
 y 37
@@ -6889,6 +6923,10 @@ x 27
 y 37
 end
 arch blackmarble
+x 27
+y 38
+end
+arch swall_1_2_half
 x 27
 y 38
 end
@@ -7098,6 +7136,10 @@ arch blackmarble
 x 28
 y 27
 end
+arch swall_1_4_half
+x 28
+y 27
+end
 arch wall_1_3
 x 28
 y 27
@@ -7121,6 +7163,10 @@ arch blackmarble
 x 28
 y 31
 end
+arch swall_1_4_half
+x 28
+y 31
+end
 arch wall_1_3
 x 28
 y 31
@@ -7138,6 +7184,10 @@ x 28
 y 34
 end
 arch blackmarble
+x 28
+y 35
+end
+arch swall_1_4_half
 x 28
 y 35
 end
@@ -7161,6 +7211,10 @@ y 38
 unique 1
 end
 arch blackmarble
+x 28
+y 39
+end
+arch swall_1_4_half
 x 28
 y 39
 end
@@ -7624,6 +7678,10 @@ arch blackmarble
 x 30
 y 27
 end
+arch swall_1_3_half
+x 30
+y 27
+end
 arch wall_1_4
 x 30
 y 27
@@ -7654,6 +7712,10 @@ arch blackmarble
 x 30
 y 31
 end
+arch swall_1_3_half
+x 30
+y 31
+end
 arch wall_1_4
 x 30
 y 31
@@ -7671,6 +7733,10 @@ x 30
 y 34
 end
 arch blackmarble
+x 30
+y 35
+end
+arch swall_1_3_half
 x 30
 y 35
 end
@@ -7701,6 +7767,10 @@ y 38
 unique 1
 end
 arch blackmarble
+x 30
+y 39
+end
+arch swall_1_3_half
 x 30
 y 39
 end
@@ -7830,7 +7900,7 @@ end
 arch door_look_1
 x 31
 y 13
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 31
@@ -7915,6 +7985,10 @@ arch wall_1_2
 x 31
 y 28
 end
+arch swall_1_1_half
+x 31
+y 28
+end
 arch blackmarble
 x 31
 y 29
@@ -7924,6 +7998,10 @@ x 31
 y 29
 end
 arch blackmarble
+x 31
+y 30
+end
+arch swall_1_2_half
 x 31
 y 30
 end
@@ -7967,6 +8045,10 @@ arch wall_1_2
 x 31
 y 36
 end
+arch swall_1_1_half
+x 31
+y 36
+end
 arch blackmarble
 x 31
 y 37
@@ -7976,6 +8058,10 @@ x 31
 y 37
 end
 arch blackmarble
+x 31
+y 38
+end
+arch swall_1_2_half
 x 31
 y 38
 end
@@ -8480,7 +8566,7 @@ arch grass
 x 33
 y 41
 end
-arch bridge_ns
+arch river_bridge_ns
 x 33
 y 41
 end
@@ -8926,6 +9012,10 @@ arch wall_1_2
 x 35
 y 28
 end
+arch swall_1_1_half
+x 35
+y 28
+end
 arch blackmarble
 x 35
 y 29
@@ -8935,6 +9025,10 @@ x 35
 y 29
 end
 arch blackmarble
+x 35
+y 30
+end
+arch swall_1_2_half
 x 35
 y 30
 end
@@ -8978,6 +9072,10 @@ arch wall_1_2
 x 35
 y 36
 end
+arch swall_1_1_half
+x 35
+y 36
+end
 arch blackmarble
 x 35
 y 37
@@ -8987,6 +9085,10 @@ x 35
 y 37
 end
 arch blackmarble
+x 35
+y 38
+end
+arch swall_1_2_half
 x 35
 y 38
 end
@@ -9076,7 +9178,7 @@ end
 arch door_look_1
 x 36
 y 9
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 36
@@ -9184,6 +9286,10 @@ arch blackmarble
 x 36
 y 27
 end
+arch swall_1_4_half
+x 36
+y 27
+end
 arch wall_1_3
 x 36
 y 27
@@ -9214,6 +9320,10 @@ arch blackmarble
 x 36
 y 31
 end
+arch swall_1_4_half
+x 36
+y 31
+end
 arch wall_1_3
 x 36
 y 31
@@ -9231,6 +9341,10 @@ x 36
 y 34
 end
 arch blackmarble
+x 36
+y 35
+end
+arch swall_1_4_half
 x 36
 y 35
 end
@@ -9268,6 +9382,10 @@ arch blackmarble
 x 36
 y 39
 end
+arch swall_1_4_half
+x 36
+y 39
+end
 arch wall_1_3
 x 36
 y 39
@@ -9716,6 +9834,10 @@ arch blackmarble
 x 38
 y 27
 end
+arch swall_1_3_half
+x 38
+y 27
+end
 arch wall_1_4
 x 38
 y 27
@@ -9739,6 +9861,10 @@ arch blackmarble
 x 38
 y 31
 end
+arch swall_1_3_half
+x 38
+y 31
+end
 arch wall_1_4
 x 38
 y 31
@@ -9756,6 +9882,10 @@ x 38
 y 34
 end
 arch blackmarble
+x 38
+y 35
+end
+arch swall_1_3_half
 x 38
 y 35
 end
@@ -9779,6 +9909,10 @@ y 38
 unique 1
 end
 arch blackmarble
+x 38
+y 39
+end
+arch swall_1_3_half
 x 38
 y 39
 end
@@ -9933,6 +10067,10 @@ arch wall_1_2
 x 39
 y 28
 end
+arch swall_1_1_half
+x 39
+y 28
+end
 arch blackmarble
 x 39
 y 29
@@ -9942,6 +10080,10 @@ x 39
 y 29
 end
 arch blackmarble
+x 39
+y 30
+end
+arch swall_1_2_half
 x 39
 y 30
 end
@@ -9985,6 +10127,10 @@ arch wall_1_2
 x 39
 y 36
 end
+arch swall_1_1_half
+x 39
+y 36
+end
 arch blackmarble
 x 39
 y 37
@@ -9994,6 +10140,10 @@ x 39
 y 37
 end
 arch blackmarble
+x 39
+y 38
+end
+arch swall_1_2_half
 x 39
 y 38
 end
@@ -11386,7 +11536,7 @@ end
 arch door_look_1
 x 46
 y 8
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 46
@@ -11410,7 +11560,7 @@ end
 arch door_look_1
 x 46
 y 12
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 46
@@ -11629,7 +11779,7 @@ end
 arch door_look_2
 x 48
 y 6
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 48
@@ -11694,7 +11844,7 @@ end
 arch door_look_2
 x 48
 y 14
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 48
@@ -11985,7 +12135,7 @@ arch grass
 x 50
 y 18
 end
-arch bridge_ns
+arch river_bridge_ns
 x 50
 y 18
 end
@@ -12202,7 +12352,7 @@ end
 arch door_look_2
 x 52
 y 6
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 52
@@ -12267,7 +12417,7 @@ end
 arch door_look_2
 x 52
 y 14
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 52
@@ -12486,7 +12636,7 @@ end
 arch door_look_1
 x 54
 y 8
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 54
@@ -12510,7 +12660,7 @@ end
 arch door_look_1
 x 54
 y 12
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 54

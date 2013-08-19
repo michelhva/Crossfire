@@ -1,12 +1,14 @@
 arch map
-name Dragon Mountain
-difficulty 1
+name Dragon Mountain, Peak
+difficulty 35
 region stoneville
 width 40
 height 33
+enter_x 38
+enter_y 11
 msg
 Created:  1997-09-02 Viola Krings (krings@informatik)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-10-21 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -3511,11 +3513,10 @@ wc -25
 ac -16
 x 18
 y 12
-speed -0.500000
+speed -0.5
 level 80
 resist_physical 99
 resist_magic 30
-resist_fire 30
 resist_electricity 30
 resist_cold 30
 resist_confusion 30

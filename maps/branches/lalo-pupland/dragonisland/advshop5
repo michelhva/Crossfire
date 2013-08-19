@@ -1,14 +1,17 @@
 arch map
-name The Adventurous Shop
-difficulty 1
+name The Adventurous Shop, 5th Floor
+difficulty 45
 region stoneville
 shopitems book:61;spellbook:71;amulet:31;ring:41;*:-49
 shopmin 2500
 shopmax 35000
 width 16
 height 16
+enter_x 7
+enter_y 9
 msg
 Created:  1997-07-23
+Modified: 2008-12-21 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -245,6 +248,10 @@ x 2
 y 8
 end
 arch wall_1_1
+x 2
+y 8
+end
+arch wall_2_short
 x 2
 y 8
 end

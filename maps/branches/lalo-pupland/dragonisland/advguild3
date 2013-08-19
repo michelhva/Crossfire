@@ -1,12 +1,14 @@
 arch map
-name Adventurers Guild
-difficulty 1
+name Adventurers Guild, 3rd Floor
+difficulty 45
 region stoneville
 width 32
 height 32
+enter_x 8
+enter_y 30
 msg
 Created:  1997-07-15 Viola Krings
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-03-21 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -878,11 +880,15 @@ arch stwall_1_2
 x 4
 y 30
 end
+arch dwall_1_1
+x 4
+y 30
+end
 arch dungeon_floor
 x 4
 y 31
 end
-arch dwall_2_1_2
+arch dwall_3_1
 x 4
 y 31
 end
@@ -1165,28 +1171,14 @@ end
 arch dark_elf
 name Shalathar
 msg
-@match [Hh][ea]llo|[Hh]i
-Hi there! I'm here to watch the
-dragons. They are beautiful, don't you
-think? Oh yes, if you want a
-refreshment, I can tell you how to get
-more if all has been eaten up.
+@match h[ea]llo|hi
+Hi there! I'm here to watch the dragons.  They are beautiful, don't you think? Oh yes, if you want a refreshment, I can tell you how to get more if all has been eaten up.
 @match yes|dragon
-One of the dragons will take you to
-the adventurous shop, directly to its
-more aggressive brethren.
+One of the dragons will take you to the adventurous shop, directly to its more aggressive brethren.
 @match refreshment|eat|tell|food|waybread|booze
-For refreshments, place 7 gp on the
-northernmost of those three tables on the left,
-or place 25 gp for a waybread on the
-middle one. For a booze, place 3 gp on
-the southernmost table. The tables are
-magical, so you will be served even if
-I should not be here.
+For refreshments, place 7 gp on the northernmost of those three tables on the left, or place 25 gp for a waybread on the middle one.  For a booze, place 3 gp on the southernmost table.  The tables are magical, so you will be served even if I should not be here.
 @match deposit|box
-If you put something into the deposit
-box it will certainly stay there
-until someone else takes it out.
+If you put something into the deposit box it will certainly stay there until someone else takes it out.
 endmsg
 x 6
 y 10
@@ -1765,7 +1757,7 @@ y 28
 end
 arch rune_mark
 msg
-Friendly Rune
+Friendly Rune.
 endmsg
 x 8
 y 28
@@ -2136,9 +2128,7 @@ end
 arch sign
 name coffee area
 msg
-Come here to have a coffe, wine or
-fruit, and a nice chat with your fellow
-adventurers.
+Come here to have a coffee, wine or fruit, and a nice chat with your fellow adventurers.
 endmsg
 x 10
 y 21
@@ -2385,11 +2375,15 @@ arch stwall_1_2
 x 11
 y 30
 end
+arch dwall_1_1
+x 11
+y 30
+end
 arch dungeon_floor
 x 11
 y 31
 end
-arch dwall_2_1_2
+arch dwall_3_1
 x 11
 y 31
 end
@@ -3205,7 +3199,7 @@ end
 arch big_dragon
 name friendly dragon
 msg
-@match [Hh][ae]llo|[Hh]i|[Gg]reet
+@match h[ae]llo|hi|greet
 My greetings, proud adventurer!
 endmsg
 x 16
@@ -4378,8 +4372,7 @@ end
 arch sign
 name training hall - warning
 msg
-Take care, this one might be dangerous!
-There are a few unfairnesses around...
+Take care, this one might be dangerous! There are a few unfairnesses around...
 endmsg
 x 22
 y 24
@@ -5941,11 +5934,10 @@ maxhp 1000
 exp 8000
 dam 20
 wc -20
-ac -40
+ac -15
 x 28
 y 14
 level 20
-resist_physical 30
 carrying 26900
 arch apple
 end

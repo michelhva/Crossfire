@@ -1,11 +1,14 @@
 arch map
-name Dragon Hangar
-difficulty 1
+name Stoneville Dragon Hangar, Rookery
+difficulty 35
 region stoneville
 width 32
 height 32
+enter_x 14
+enter_y 15
 msg
 Created:  2001-03-17
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -2920,7 +2923,7 @@ end
 arch sign_w
 name To the teleporter
 msg
-To the teleporte
+To the teleporter
 endmsg
 x 17
 y 30
@@ -3507,8 +3510,7 @@ end
 arch scroll
 name note
 msg
-The teleporter is not working. An
-engineer has been called to fix it.
+The teleporter is not working.  An engineer has been called to fix it.
 endmsg
 x 20
 y 27
@@ -4007,7 +4009,7 @@ y 24
 end
 arch magic_mouth
 msg
-Stop. Where are you going?
+Stop.  Where are you going?
 endmsg
 x 23
 y 25
@@ -4038,7 +4040,7 @@ arch dwarf
 name Dragon Dompteur
 msg
 @match fix teleporter|fix the teleporter
-Ah. You're the engineer. Wait, I'll open the door for you.
+Ah.  You're the engineer.  Wait, I'll open the door for you.
 @match *
 Go back to where you came from.
 endmsg
@@ -4078,7 +4080,6 @@ can_use_armour 0
 can_use_weapon 0
 stand_still 1
 can_use_skill 0
-can_apply 0
 end
 arch dirtfloor
 x 23
@@ -4778,8 +4779,7 @@ arch dwarf
 name Dragon Dompteur
 msg
 @match *
-This is the breeding area. Only
-Dompteurs are allowed beyond this door.
+This is the breeding area.  Only Dompteurs are allowed beyond this door.
 endmsg
 sp 0
 maxsp 0
@@ -4817,7 +4817,6 @@ can_use_armour 0
 can_use_weapon 0
 stand_still 1
 can_use_skill 0
-can_apply 0
 end
 arch dirtfloor
 x 27

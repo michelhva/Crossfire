@@ -1,163 +1,322 @@
 arch map
-name Small House
+name Timothius' House
 difficulty 1
 region stoneville
-width 10
-height 10
+width 14
+height 14
+enter_x 9
+enter_y 10
 msg
 Created:  1997-09-12
+Modified: 2012-06-05 Rick Tanner
 endmsg
 end
+arch cobblestones2
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch grass_only
+y 8
+end
+arch grass_only
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch grass_only
+y 12
+end
+arch grass_only
+y 13
+end
+arch cobblestones2
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
+arch cobblestones2
+x 2
+end
+arch grass_only
+x 2
+y 1
+end
 arch afloor_left
+x 2
+y 2
 end
 arch wall_2_2_2
-end
-arch afloor_left
-y 1
-end
-arch wall_2_1_1
-y 1
-end
-arch afloor_left
-y 2
-end
-arch wall_2_1_1
+x 2
 y 2
 end
 arch afloor_left
+x 2
 y 3
 end
 arch wall_2_1_1
+x 2
 y 3
 end
 arch afloor_left
+x 2
 y 4
 end
 arch wall_2_1_1
+x 2
 y 4
 end
 arch afloor_left
+x 2
 y 5
 end
 arch wall_2_1_1
+x 2
 y 5
 end
 arch afloor_left
+x 2
 y 6
 end
-arch wall_2_1_1
+arch window_win1
+x 2
 y 6
 end
 arch afloor_left
+x 2
 y 7
+end
+arch wall_2_1_1
+x 2
+y 7
+end
+arch afloor_left
+x 2
+y 8
+end
+arch wall_2_1_1
+x 2
+y 8
+end
+arch afloor_left
+x 2
+y 9
 end
 arch wall_3_2
-y 7
+x 2
+y 9
 end
 arch afloor_left
-y 8
+x 2
+y 10
 end
 arch wall_2_1_1
-y 8
+x 2
+y 10
 end
 arch afloor_left
-y 9
+x 2
+y 11
 end
 arch wall_2_2_1
-y 9
+x 2
+y 11
+end
+arch grass_only
+x 2
+y 12
+end
+arch grass_only
+x 2
+y 13
+end
+arch cobblestones2
+x 3
+end
+arch grass_only
+x 3
+y 1
 end
 arch afloor_left
-x 1
+x 3
+y 2
 end
 arch wall_2_1_2
-x 1
-end
-arch afloor_left
-x 1
-y 1
-end
-arch clock
-x 1
-y 1
-end
-arch afloor_left
-x 1
+x 3
 y 2
 end
 arch afloor_left
-x 1
+x 3
 y 3
 end
-arch chair_2.1
-x 1
+arch clock
+x 3
 y 3
 end
 arch afloor_left
-x 1
-y 4
-end
-arch chair_2.1
-x 1
+x 3
 y 4
 end
 arch afloor_left
-x 1
+x 3
+y 5
+end
+arch chair_2.1
+x 3
 y 5
 end
 arch afloor_left
-x 1
+x 3
 y 6
+end
+arch chair_2.1
+x 3
+y 6
+end
+arch afloor_left
+x 3
+y 7
+end
+arch afloor_left
+x 3
+y 8
 end
 arch fireplace
-x 1
-y 6
+x 3
+y 8
 end
 arch afloor_left
-x 1
-y 7
+x 3
+y 9
 end
 arch wall_2_1_2
-x 1
-y 7
+x 3
+y 9
 end
 arch afloor_left
-x 1
-y 8
+x 3
+y 10
 end
 arch bad_cauldron
-x 1
-y 8
+x 3
+y 10
 end
 arch afloor_left
-x 1
-y 9
+x 3
+y 11
 end
 arch wall_2_1_2
-x 1
-y 9
+x 3
+y 11
 end
-arch afloor_left
-x 2
+arch grass_only
+x 3
+y 12
 end
-arch wall_2_1_2
-x 2
+arch grass_only
+x 3
+y 13
 end
-arch afloor_left
-x 2
+arch cobblestones2
+x 4
+end
+arch grass_only
+x 4
 y 1
 end
 arch afloor_left
-x 2
+x 4
 y 2
+end
+arch window_win2
+x 4
+y 2
+end
+arch afloor_left
+x 4
+y 3
+end
+arch afloor_left
+x 4
+y 4
 end
 arch courier
 name Timothius
 msg
-@match [Hh][ae]llo|[Hh]i|[Gg]reet
-My Greetigs to you! Welcome to my
-humble home. Have you heard of my
-friend, Carthon? He was heading of to
-dragon mountain.
+@match h[ae]llo|hi|greet
+My Greetigs to you! Welcome to my humble home.  Have you heard of my friend, Carthon? He was heading off to dragon mountain.
 @match no
 What a pity! I hope he's all right.
 @match dead|corpse|killed
@@ -166,554 +325,796 @@ Oh dear!!!
 Please leave me alone for a while.
 @match yes
 Well, where have you seen him?
-@match [Cc]arthon
-Carthon is a friend of mine. He's an
-adventurer and dragon hunter.
+@match carthon
+Carthon is a friend of mine.  He's an adventurer and dragon hunter.
 @match mountain
-I wish Carthon had never gone to that
-accursed dragon mountain!
+I wish Carthon had never gone to that accursed dragon mountain!
 @match dragon
-Oh, I don't know anything about
-dragons, except that they are
-dangerous, of course!
+Oh, I don't know anything about dragons, except that they are dangerous, of course!
 endmsg
-x 2
-y 2
+x 4
+y 4
 friendly 1
 end
 arch afloor_left
-x 2
-y 3
+x 4
+y 5
 end
 arch table_2
-x 2
-y 3
-end
-arch afloor_left
-x 2
-y 4
-end
-arch table_2
-x 2
-y 4
-end
-arch afloor_left
-x 2
+x 4
 y 5
 end
 arch afloor_left
-x 2
+x 4
+y 6
+end
+arch table_2
+x 4
 y 6
 end
 arch afloor_left
-x 2
+x 4
 y 7
+end
+arch afloor_left
+x 4
+y 8
+end
+arch afloor_left
+x 4
+y 9
 end
 arch wall_1_3
-x 2
-y 7
-end
-arch afloor_left
-x 2
-y 8
-end
-arch afloor_left
-x 2
-y 9
-end
-arch wall_2_1_2
-x 2
+x 4
 y 9
 end
 arch afloor_left
-x 3
-end
-arch wall_2_1_2
-x 3
+x 4
+y 10
 end
 arch afloor_left
-x 3
+x 4
+y 11
+end
+arch wall_2_1_2
+x 4
+y 11
+end
+arch grass_only
+x 4
+y 12
+end
+arch grass_only
+x 4
+y 13
+end
+arch cobblestones2
+x 5
+end
+arch grass_only
+x 5
 y 1
 end
 arch afloor_left
-x 3
+x 5
+y 2
+end
+arch wall_2_1_2
+x 5
 y 2
 end
 arch afloor_left
-x 3
+x 5
 y 3
 end
 arch afloor_left
-x 3
+x 5
 y 4
 end
 arch afloor_left
-x 3
+x 5
 y 5
 end
 arch afloor_left
-x 3
+x 5
 y 6
 end
 arch afloor_left
-x 3
+x 5
 y 7
+end
+arch afloor_left
+x 5
+y 8
+end
+arch afloor_left
+x 5
+y 9
 end
 arch door_look_1
-x 3
-y 7
-no_pass 0
-end
-arch afloor_left
-x 3
-y 8
-end
-arch afloor_left
-x 3
+x 5
 y 9
-end
-arch wall_2_1_2
-x 3
-y 9
+move_block 0
 end
 arch afloor_left
-x 4
+x 5
+y 10
+end
+arch afloor_left
+x 5
+y 11
+end
+arch window_win2
+x 5
+y 11
+end
+arch grass_only
+x 5
+y 12
+end
+arch grass_only
+x 5
+y 13
+end
+arch cobblestones2
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch afloor_left
+x 6
+y 2
 end
 arch wall_3_3
-x 4
+x 6
+y 2
 end
 arch afloor_left
-x 4
-y 1
+x 6
+y 3
 end
 arch wall_1_2
-x 4
-y 1
+x 6
+y 3
 end
 arch afloor_left
-x 4
-y 2
+x 6
+y 4
 end
 arch door_look_2
-x 4
-y 2
-no_pass 0
+x 6
+y 4
+move_block 0
 end
 arch afloor_left
-x 4
-y 3
+x 6
+y 5
 end
 arch wall_1_1
-x 4
-y 3
+x 6
+y 5
 end
 arch afloor_left
-x 4
-y 4
+x 6
+y 6
 end
 arch wall_3_2
-x 4
-y 4
-end
-arch afloor_left
-x 4
-y 5
-end
-arch wall_2_1_1
-x 4
-y 5
-end
-arch afloor_left
-x 4
-y 6
-end
-arch wall_2_1_1
-x 4
+x 6
 y 6
 end
 arch afloor_left
-x 4
+x 6
 y 7
 end
-arch wall_2_2_1
-x 4
+arch wall_2_1_1
+x 6
 y 7
 end
 arch afloor_left
-x 4
+x 6
+y 8
+end
+arch wall_2_1_1
+x 6
 y 8
 end
 arch afloor_left
-x 4
+x 6
 y 9
 end
-arch wall_2_1_2
-x 4
+arch wall_2_2_1
+x 6
 y 9
 end
 arch afloor_left
-x 5
-end
-arch wall_2_1_2
-x 5
+x 6
+y 10
 end
 arch afloor_left
-x 5
+x 6
+y 11
+end
+arch wall_2_1_2
+x 6
+y 11
+end
+arch grass_only
+x 6
+y 12
+end
+arch grass_only
+x 6
+y 13
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
 y 1
+end
+arch afloor_left
+x 7
+y 2
+end
+arch wall_2_1_2
+x 7
+y 2
+end
+arch afloor_left
+x 7
+y 3
 end
 arch bookshelf
-x 5
-y 1
+x 7
+y 3
 carrying 3000
 no_pick 1
 arch book_read
 name interesting book
 msg
-This book is very interesting, but you
-decide not to spend your hours
-reading, but go adventuring instead.
+This book is very interesting, but you decide not to spend your hours reading, but go adventuring instead.
 endmsg
 end
 end
 arch afloor_left
-x 5
-y 2
-end
-arch afloor_left
-x 5
-y 3
-end
-arch afloor_left
-x 5
-y 4
-end
-arch wall_1_3
-x 5
+x 7
 y 4
 end
 arch afloor_left
-x 5
+x 7
 y 5
 end
 arch afloor_left
-x 5
+x 7
 y 6
+end
+arch wall_1_3
+x 7
+y 6
+end
+arch afloor_left
+x 7
+y 7
+end
+arch afloor_left
+x 7
+y 8
 end
 arch bed_1
-x 5
-y 6
-end
-arch afloor_left
-x 5
-y 7
-end
-arch wall_2_1_2
-x 5
-y 7
-end
-arch afloor_left
-x 5
+x 7
 y 8
 end
 arch afloor_left
-x 5
+x 7
 y 9
 end
 arch wall_2_1_2
-x 5
+x 7
 y 9
 end
 arch afloor_left
-x 6
-end
-arch wall_2_1_2
-x 6
+x 7
+y 10
 end
 arch afloor_left
-x 6
+x 7
+y 11
+end
+arch wall_2_1_2
+x 7
+y 11
+end
+arch grass_only
+x 7
+y 12
+end
+arch grass_only
+x 7
+y 13
+end
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
 y 1
+end
+arch afloor_left
+x 8
+y 2
+end
+arch wall_2_1_2
+x 8
+y 2
+end
+arch afloor_left
+x 8
+y 3
 end
 arch bookshelf
-x 6
-y 1
+x 8
+y 3
 carrying 200
 arch letter
 msg
 Dear Timothius,
-I have finally been able to locate the
-famous dragon mountain. It is, as I of
-course suspected, here on dragon
-island. I will enter it today and slay
-the arrogant dragon there. See you
-soon!
-Yours
+I have finally been able to locate the famous dragon mountain.  It is, as I of course suspected, here on dragon island.  I will enter it today and slay the arrogant dragon there.  See you soon!
+Yours,
 Carthon
 endmsg
 end
 end
 arch afloor_left
-x 6
-y 2
+x 8
+y 4
 end
 arch chair_1.1
-x 6
-y 2
-end
-arch afloor_left
-x 6
-y 3
-end
-arch afloor_left
-x 6
+x 8
 y 4
+end
+arch afloor_left
+x 8
+y 5
+end
+arch afloor_left
+x 8
+y 6
 end
 arch door_look_1
-x 6
-y 4
-no_pass 0
-end
-arch afloor_left
-x 6
-y 5
-end
-arch afloor_left
-x 6
+x 8
 y 6
+move_block 0
+end
+arch afloor_left
+x 8
+y 7
+end
+arch afloor_left
+x 8
+y 8
 end
 arch bed_1
-x 6
-y 6
-end
-arch afloor_left
-x 6
-y 7
-end
-arch wall_2_1_2
-x 6
-y 7
-end
-arch afloor_left
-x 6
+x 8
 y 8
 end
 arch afloor_left
-x 6
+x 8
 y 9
 end
 arch wall_2_1_2
-x 6
+x 8
 y 9
 end
 arch afloor_left
-x 7
+x 8
+y 10
+end
+arch afloor_left
+x 8
+y 11
+end
+arch wall_1_3
+x 8
+y 11
+end
+arch dungeon_magic
+x 8
+y 12
+end
+arch grass_only
+x 8
+y 12
+move_block all
+end
+arch grass_only
+x 8
+y 13
+end
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch afloor_left
+x 9
+y 2
 end
 arch wall_2_1_2
-x 7
-end
-arch afloor_left
-x 7
-y 1
-end
-arch bookshelf
-x 7
-y 1
-end
-arch afloor_left
-x 7
+x 9
 y 2
 end
 arch afloor_left
-x 7
+x 9
 y 3
 end
-arch chair_1.1
-x 7
+arch bookshelf
+x 9
 y 3
 end
 arch afloor_left
-x 7
+x 9
 y 4
+end
+arch afloor_left
+x 9
+y 5
+end
+arch chair_1.1
+x 9
+y 5
+end
+arch afloor_left
+x 9
+y 6
 end
 arch wall_1_4
-x 7
-y 4
+x 9
+y 6
 end
 arch afloor_left
-x 7
-y 5
+x 9
+y 7
 end
 arch chair_1.1
-x 7
-y 5
-end
-arch afloor_left
-x 7
-y 6
-end
-arch afloor_left
-x 7
-y 7
-end
-arch wall_2_1_2
-x 7
+x 9
 y 7
 end
 arch afloor_left
-x 7
+x 9
 y 8
 end
 arch afloor_left
-x 7
+x 9
 y 9
 end
 arch wall_2_1_2
-x 7
+x 9
 y 9
 end
 arch afloor_left
-x 8
+x 9
+y 10
 end
-arch wall_2_1_2
-x 8
-end
-arch afloor_left
-x 8
-y 1
-end
-arch bookshelf
-x 8
-y 1
-end
-arch afloor_left
-x 8
-y 2
-end
-arch afloor_left
-x 8
-y 3
-end
-arch afloor_left
-x 8
-y 4
-end
-arch wall_2_1_2
-x 8
-y 4
-end
-arch afloor_left
-x 8
-y 5
-end
-arch table
-x 8
-y 5
-end
-arch afloor_left
-x 8
-y 6
-end
-arch afloor_left
-x 8
-y 7
-end
-arch wall_2_1_2
-x 8
-y 7
-end
-arch afloor_left
-x 8
-y 8
-end
-arch oakdoor
+arch invis_exit
 slaying /world/world_103_127
 hp 5
 sp 19
-x 8
+x 9
+y 11
+end
+arch afloor_left
+x 9
+y 11
+end
+arch door_2
+x 9
+y 11
+move_block 0
+end
+arch dungeon_magic
+x 9
+y 12
+end
+arch grass_only
+x 9
+y 12
+move_block all
+end
+arch grass_only
+x 9
+y 13
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
+y 1
+end
+arch afloor_left
+x 10
+y 2
+end
+arch wall_2_1_2
+x 10
+y 2
+end
+arch afloor_left
+x 10
+y 3
+end
+arch bookshelf
+x 10
+y 3
+end
+arch afloor_left
+x 10
+y 4
+end
+arch afloor_left
+x 10
+y 5
+end
+arch afloor_left
+x 10
+y 6
+end
+arch wall_2_1_2
+x 10
+y 6
+end
+arch afloor_left
+x 10
+y 7
+end
+arch table
+x 10
+y 7
+end
+arch afloor_left
+x 10
 y 8
 end
 arch afloor_left
-x 8
+x 10
 y 9
 end
 arch wall_2_1_2
-x 8
+x 10
 y 9
 end
 arch afloor_left
-x 9
+x 10
+y 10
+end
+arch afloor_left
+x 10
+y 11
+end
+arch wall_1_4
+x 10
+y 11
+end
+arch dungeon_magic
+x 10
+y 12
+end
+arch grass_only
+x 10
+y 12
+move_block all
+end
+arch grass_only
+x 10
+y 13
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
+y 1
+end
+arch afloor_left
+x 11
+y 2
 end
 arch wall_2_2_3
-x 9
-end
-arch afloor_left
-x 9
-y 1
-end
-arch wall_2_1_1
-x 9
-y 1
-end
-arch afloor_left
-x 9
-y 2
-end
-arch wall_2_1_1
-x 9
+x 11
 y 2
 end
 arch afloor_left
-x 9
+x 11
 y 3
 end
 arch wall_2_1_1
-x 9
+x 11
 y 3
 end
 arch afloor_left
-x 9
+x 11
 y 4
 end
-arch wall_3_4
-x 9
+arch window_win1
+x 11
 y 4
 end
 arch afloor_left
-x 9
+x 11
 y 5
 end
 arch wall_2_1_1
-x 9
+x 11
 y 5
 end
 arch afloor_left
-x 9
+x 11
 y 6
-end
-arch wall_2_1_1
-x 9
-y 6
-end
-arch afloor_left
-x 9
-y 7
 end
 arch wall_3_4
-x 9
+x 11
+y 6
+end
+arch afloor_left
+x 11
+y 7
+end
+arch window_win1
+x 11
 y 7
 end
 arch afloor_left
-x 9
+x 11
 y 8
 end
 arch wall_2_1_1
-x 9
+x 11
 y 8
 end
 arch afloor_left
-x 9
+x 11
 y 9
+end
+arch wall_3_4
+x 11
+y 9
+end
+arch afloor_left
+x 11
+y 10
+end
+arch wall_2_1_1
+x 11
+y 10
+end
+arch afloor_left
+x 11
+y 11
 end
 arch wall_2_2_4
-x 9
+x 11
+y 11
+end
+arch grass_only
+x 11
+y 12
+end
+arch grass_only
+x 11
+y 13
+end
+arch cobblestones2
+x 12
+end
+arch grass_only
+x 12
+y 1
+end
+arch grass_only
+x 12
+y 2
+end
+arch grass_only
+x 12
+y 3
+end
+arch grass_only
+x 12
+y 4
+end
+arch grass_only
+x 12
+y 5
+end
+arch grass_only
+x 12
+y 6
+end
+arch grass_only
+x 12
+y 7
+end
+arch grass_only
+x 12
+y 8
+end
+arch grass_only
+x 12
 y 9
+end
+arch grass_only
+x 12
+y 10
+end
+arch grass_only
+x 12
+y 11
+end
+arch grass_only
+x 12
+y 12
+end
+arch grass_only
+x 12
+y 13
+end
+arch cobblestones2
+x 13
+end
+arch grass_only
+x 13
+y 1
+end
+arch grass_only
+x 13
+y 2
+end
+arch grass_only
+x 13
+y 3
+end
+arch grass_only
+x 13
+y 4
+end
+arch grass_only
+x 13
+y 5
+end
+arch grass_only
+x 13
+y 6
+end
+arch grass_only
+x 13
+y 7
+end
+arch grass_only
+x 13
+y 8
+end
+arch grass_only
+x 13
+y 9
+end
+arch grass_only
+x 13
+y 10
+end
+arch grass_only
+x 13
+y 11
+end
+arch grass_only
+x 13
+y 12
+end
+arch grass_only
+x 13
+y 13
 end
