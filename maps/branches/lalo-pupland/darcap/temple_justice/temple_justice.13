@@ -1,8 +1,23 @@
 arch map
-name Temple Justice
-difficulty 1
+name Temple Justice, Level 13
+difficulty 35
+region darcap
 width 13
-height 13
+height 12
+enter_x 6
+enter_y 10
+msg
+Created:  2007-02-03 Brad Reilly
+Modified: 2012-01-01 Nicolas Weeger
+endmsg
+end
+arch blocked
+end
+arch blocked
+y 1
+end
+arch blocked
+y 2
 end
 arch flagstone
 y 3
@@ -52,6 +67,18 @@ slaying temple_justice.14
 hp 5
 sp 1
 y 9
+arch quest_advance_apply
+name darcap/TempleJustice 20>30
+end
+end
+arch blocked
+y 10
+end
+arch blocked
+y 11
+end
+arch blocked
+x 1
 end
 arch flagstone
 x 1
@@ -125,6 +152,13 @@ arch dwall_2_2_1
 x 1
 y 10
 end
+arch blocked
+x 1
+y 11
+end
+arch blocked
+x 2
+end
 arch flagstone
 x 2
 y 1
@@ -172,6 +206,10 @@ end
 arch dwall_2_1_2
 x 2
 y 10
+end
+arch blocked
+x 2
+y 11
 end
 arch flagstone
 x 3
@@ -393,6 +431,7 @@ match@ *
 You shall not pass!
 endmsg
 face guard_ligh.111
+animation NONE
 hp 10000
 maxhp 10000
 sp 100
@@ -424,6 +463,7 @@ resist_electricity 0
 value 175000
 weight 30500
 item_power 15
+identified 1
 reflect_spell 1
 end
 arch skill_pyromancy
@@ -646,6 +686,9 @@ arch dwall_2_2_4
 x 9
 y 11
 end
+arch blocked
+x 10
+end
 arch flagstone
 x 10
 y 1
@@ -693,6 +736,13 @@ end
 arch dwall_2_1_2
 x 10
 y 10
+end
+arch blocked
+x 10
+y 11
+end
+arch blocked
+x 11
 end
 arch flagstone
 x 11
@@ -766,6 +816,21 @@ arch dwall_2_2_4
 x 11
 y 10
 end
+arch blocked
+x 11
+y 11
+end
+arch blocked
+x 12
+end
+arch blocked
+x 12
+y 1
+end
+arch blocked
+x 12
+y 2
+end
 arch flagstone
 x 12
 y 3
@@ -823,6 +888,20 @@ speed 0
 connected 10
 end
 arch stair_up_1
+slaying temple_justice.14
+hp 7
+sp 1
 x 12
 y 9
+arch quest_advance_apply
+name darcap/TempleJustice 20>30
+end
+end
+arch blocked
+x 12
+y 10
+end
+arch blocked
+x 12
+y 11
 end

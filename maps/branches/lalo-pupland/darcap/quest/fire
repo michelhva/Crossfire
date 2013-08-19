@@ -1,6 +1,6 @@
 arch map
 name High Volcano
-difficulty 1
+difficulty 18
 region darcap
 width 36
 height 36
@@ -8,7 +8,7 @@ enter_x 19
 enter_y 31
 msg
 Created:  1993-10-15 dtabb (dtabb@ecst.csuchico.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -3838,9 +3838,7 @@ end
 arch sign
 name NOTE!
 msg
-NOTE: Many wyverns on level
-Multiple players required to get
-through gates.
+NOTE: Many wyverns on level.  Multiple players required to get through gates.
 endmsg
 x 17
 y 33
@@ -4528,6 +4526,9 @@ hp 18
 sp 14
 x 21
 y 5
+arch quest_advance_apply
+name darcap/Elemental 0>10
+end
 end
 arch dirtfloor
 x 21
