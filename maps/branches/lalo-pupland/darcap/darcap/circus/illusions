@@ -1,5 +1,5 @@
 arch map
-name Illusions
+name Darcap Circus Illusions
 difficulty 1
 region darcapcircus
 width 49
@@ -8,7 +8,7 @@ enter_x 18
 enter_y 11
 msg
 Created:  1999-01-28 Cater & Wade (john_cater@yahoo.com)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -1086,9 +1086,9 @@ x 4
 y 11
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 4
 y 11
 end
@@ -1099,7 +1099,7 @@ end
 arch door_look_2
 x 4
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -1107,9 +1107,9 @@ x 4
 y 12
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 4
 y 12
 end
@@ -1120,7 +1120,7 @@ end
 arch door_look_2
 x 4
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch pstone_1
@@ -6485,9 +6485,9 @@ x 19
 y 11
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 19
 y 11
 end
@@ -6498,7 +6498,7 @@ end
 arch door_look_2
 x 19
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -6506,9 +6506,9 @@ x 19
 y 12
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 19
 y 12
 end
@@ -6519,7 +6519,7 @@ end
 arch door_look_2
 x 19
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -6743,9 +6743,9 @@ x 19
 y 36
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 19
 y 36
 end
@@ -6756,7 +6756,7 @@ end
 arch door_look_2
 x 19
 y 36
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -6768,9 +6768,9 @@ x 19
 y 37
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 19
 y 37
 end
@@ -6781,7 +6781,7 @@ end
 arch door_look_2
 x 19
 y 37
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -7485,7 +7485,7 @@ arch grassmedium
 x 22
 y 22
 end
-arch bridge_ns
+arch river_bridge_ns
 x 22
 y 22
 end
@@ -7617,7 +7617,7 @@ arch grassmedium
 x 22
 y 47
 end
-arch bridge_ns
+arch river_bridge_ns
 x 22
 y 47
 end
@@ -7747,7 +7747,7 @@ arch grassmedium
 x 23
 y 20
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 23
 y 20
 end
@@ -7755,7 +7755,7 @@ arch grassmedium
 x 23
 y 21
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 23
 y 21
 end
@@ -7767,7 +7767,7 @@ arch tree4
 x 23
 y 22
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 23
 y 22
 end
@@ -7907,7 +7907,7 @@ arch grassmedium
 x 23
 y 45
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 23
 y 45
 end
@@ -7915,7 +7915,7 @@ arch grassmedium
 x 23
 y 46
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 23
 y 46
 end
@@ -7927,7 +7927,7 @@ arch tree4
 x 23
 y 47
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 23
 y 47
 end
@@ -14623,9 +14623,9 @@ x 44
 y 11
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 44
 y 11
 end
@@ -14636,7 +14636,7 @@ end
 arch door_look_2
 x 44
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -14648,9 +14648,9 @@ x 44
 y 12
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 44
 y 12
 end
@@ -14661,7 +14661,7 @@ end
 arch door_look_2
 x 44
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -14885,9 +14885,9 @@ x 44
 y 36
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 44
 y 36
 end
@@ -14898,7 +14898,7 @@ end
 arch door_look_2
 x 44
 y 36
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -14910,9 +14910,9 @@ x 44
 y 37
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 44
 y 37
 end
@@ -14923,7 +14923,7 @@ end
 arch door_look_2
 x 44
 y 37
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -15627,7 +15627,7 @@ arch grassmedium
 x 47
 y 22
 end
-arch bridge_ns
+arch river_bridge_ns
 x 47
 y 22
 end
@@ -15759,7 +15759,7 @@ arch grassmedium
 x 47
 y 47
 end
-arch bridge_ns
+arch river_bridge_ns
 x 47
 y 47
 end
@@ -15889,7 +15889,7 @@ arch grassmedium
 x 48
 y 20
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 48
 y 20
 end
@@ -15897,7 +15897,7 @@ arch grassmedium
 x 48
 y 21
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 48
 y 21
 end
@@ -15909,7 +15909,7 @@ arch tree4
 x 48
 y 22
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 48
 y 22
 end
@@ -16049,7 +16049,7 @@ arch grassmedium
 x 48
 y 45
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 48
 y 45
 end
@@ -16057,7 +16057,7 @@ arch grassmedium
 x 48
 y 46
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 48
 y 46
 end
@@ -16069,7 +16069,7 @@ arch tree4
 x 48
 y 47
 end
-arch rjunct_ns-w
+arch river_junct_ns-w
 x 48
 y 47
 end

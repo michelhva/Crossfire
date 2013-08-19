@@ -8,7 +8,9 @@ enter_x 5
 enter_y 8
 msg
 Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
+Modified: 2013-03-22 Kevin Zheng
 endmsg
+outdoor 1
 end
 arch sea
 end
@@ -655,6 +657,10 @@ arch cobblestones2
 x 5
 y 7
 end
+arch lamppost
+x 5
+y 7
+end
 arch cobblestones2
 x 5
 y 8
@@ -664,9 +670,10 @@ x 5
 y 9
 end
 arch sign_e
-name Vacancy
+name Waterfront Inn
 msg
-Vacancy
+Waterfront Inn
+We have plenty of vaccant rooms, so come on in!
 endmsg
 x 5
 y 9
@@ -688,10 +695,12 @@ x 5
 y 12
 end
 arch man
-name Inn Keeper
+name innkeeper
 msg
+@match gate|close
+Oh, I don't know much about that. Maybe you should ask around.
 @match *
-Welcome.  I have many empty rooms tonight
+Welcome, I have plenty of empty rooms today. Help yourself.
 endmsg
 x 5
 y 12
@@ -716,7 +725,7 @@ end
 arch door_look_1
 x 5
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -821,8 +830,7 @@ end
 arch sign
 name Help
 msg
-To save, go into a room
-and press <A>pply on the bed.
+To save, go into a room and press <A>pply on the bed.
 endmsg
 x 6
 y 12
@@ -852,6 +860,10 @@ x 6
 y 17
 end
 arch chair_1.2
+x 6
+y 17
+end
+arch light3
 x 6
 y 17
 end
@@ -949,6 +961,11 @@ end
 arch woodfloor
 x 7
 y 13
+end
+arch light4
+x 7
+y 13
+glow_radius 6
 end
 arch woodfloor
 x 7
@@ -1060,7 +1077,7 @@ end
 arch door_look_1
 x 8
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1082,7 +1099,7 @@ end
 arch door_look_1
 x 8
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1232,6 +1249,10 @@ arch chair_1.2
 x 9
 y 17
 end
+arch light3
+x 9
+y 17
+end
 arch woodfloor
 x 9
 y 18
@@ -1311,6 +1332,10 @@ arch woodfloor
 x 10
 y 9
 end
+arch light3
+x 10
+y 9
+end
 arch woodfloor
 x 10
 y 10
@@ -1322,7 +1347,7 @@ end
 arch door_look_1
 x 10
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1483,7 +1508,7 @@ end
 arch door_look_1
 x 11
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1601,6 +1626,11 @@ arch woodfloor
 x 12
 y 13
 end
+arch light4
+x 12
+y 13
+glow_radius 6
+end
 arch woodfloor
 x 12
 y 14
@@ -1622,6 +1652,10 @@ x 12
 y 17
 end
 arch chair_1.2
+x 12
+y 17
+end
+arch light3
 x 12
 y 17
 end
@@ -1704,6 +1738,10 @@ arch woodfloor
 x 13
 y 9
 end
+arch light3
+x 13
+y 9
+end
 arch woodfloor
 x 13
 y 10
@@ -1715,7 +1753,7 @@ end
 arch door_look_1
 x 13
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1876,7 +1914,7 @@ end
 arch door_look_1
 x 14
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1995,12 +2033,10 @@ x 15
 y 13
 end
 arch guildmaster
-name Old Man
+name old man
 msg
 @match *
-I'm too busy to help you.
-My friend Rufus might help - he's in
-here somewhere ...
+I'm too busy to help you. My friend Rufus might help - he's in here somewhere...
 endmsg
 x 15
 y 13
@@ -2027,6 +2063,10 @@ x 15
 y 17
 end
 arch chair_1.2
+x 15
+y 17
+end
+arch light3
 x 15
 y 17
 end
@@ -2120,7 +2160,7 @@ end
 arch door_look_1
 x 16
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -2130,6 +2170,11 @@ end
 arch woodfloor
 x 16
 y 13
+end
+arch light4
+x 16
+y 13
+glow_radius 6
 end
 arch woodfloor
 x 16
@@ -2234,6 +2279,10 @@ arch woodfloor
 x 17
 y 9
 end
+arch light3
+x 17
+y 9
+end
 arch woodfloor
 x 17
 y 10
@@ -2273,7 +2322,7 @@ end
 arch door_look_1
 x 17
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -2423,6 +2472,10 @@ arch chair_1.2
 x 18
 y 17
 end
+arch light3
+x 18
+y 17
+end
 arch woodfloor
 x 18
 y 18
@@ -2648,7 +2701,7 @@ end
 arch door_look_1
 x 20
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -2658,6 +2711,11 @@ end
 arch woodfloor
 x 20
 y 13
+end
+arch light4
+x 20
+y 13
+glow_radius 6
 end
 arch woodfloor
 x 20
@@ -2670,7 +2728,7 @@ end
 arch door_look_1
 x 20
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -2760,6 +2818,10 @@ arch woodfloor
 x 21
 y 9
 end
+arch light3
+x 21
+y 9
+end
 arch woodfloor
 x 21
 y 10
@@ -2805,6 +2867,10 @@ x 21
 y 17
 end
 arch chair_1.2
+x 21
+y 17
+end
+arch light3
 x 21
 y 17
 end
@@ -2923,20 +2989,19 @@ arch woodfloor
 x 22
 y 14
 end
-arch magic_ear
-msg
-@match open
-Sssshhhh.
-endmsg
-x 22
-y 14
-connected 1
-move_off walk
-end
 arch gate_closed_2
 x 22
 y 14
 speed 0.500000
+connected 1
+end
+arch magic_ear
+msg
+@match open
+Ssshhh!
+endmsg
+x 22
+y 14
 connected 1
 end
 arch woodfloor
@@ -3092,10 +3157,8 @@ end
 arch sign
 name Info
 msg
-Tourists : Visit the courthouse
-Adventurers : Apparently the well
-on the south side of town is a good
-place to start
+Tourists: Visit the courthouse.
+Adventurers: Apparently the well on the south side of town is a good place to start.
 endmsg
 x 23
 y 16
@@ -3107,9 +3170,7 @@ end
 arch sign
 name More Info
 msg
-To claim the rewards in the courthouse
-all four parts of the quest must be
-tackled :
+To claim the rewards in the courthouse all four parts of the quest must be tackled:
    Water
    Earth
    Air
@@ -3200,7 +3261,7 @@ end
 arch door_look_1
 x 24
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -3214,6 +3275,11 @@ end
 arch wwall_2_1_2
 x 24
 y 13
+end
+arch light4
+x 24
+y 13
+glow_radius 6
 end
 arch woodfloor
 x 24
@@ -3303,6 +3369,10 @@ x 25
 y 8
 end
 arch woodfloor
+x 25
+y 9
+end
+arch light3
 x 25
 y 9
 end
@@ -3441,11 +3511,9 @@ arch guildmaster
 name Rufus
 msg
 @match quest|help
-You need to "open" the gate into the
-closed room here ...
+You should "open" the gate to the closed room here.
 @match *
-I can help you with the elemental
-quest...
+I can help you with the Elemental Quest.
 endmsg
 x 26
 y 10
@@ -3494,11 +3562,7 @@ end
 arch letter
 msg
 My friend,
-I write to tell you of our trials in
-the land of Dtabb. We went south - to
-a volcano where all manner of firey
-creatures attacked us. We were forced
-to retreat ..
+I write to tell you of our trials in the land of Darcap. We went south, to a volcano where all manners of firey creatures attacked us. We were forced to retreat...
 endmsg
 x 26
 y 16

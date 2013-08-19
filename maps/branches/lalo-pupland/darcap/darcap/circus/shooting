@@ -1,5 +1,5 @@
 arch map
-name Throwing Gallery
+name Darcap Circus Shooting Gallery
 difficulty 1
 region darcapcircus
 shopitems bow:100;arrow:100;*:-100
@@ -9,6 +9,7 @@ width 20
 height 16
 msg
 Created:  1999-01-28 Cater & Wade (john_cater@yahoo.com)
+Modified: 2008-11-20 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -836,12 +837,10 @@ end
 arch pstone_1
 x 6
 y 5
-move_off walk
 end
 arch bench_1_1
 x 6
 y 5
-move_on fly_low
 end
 arch mover_3
 x 6
@@ -865,8 +864,6 @@ end
 arch bench_2_1_1
 x 6
 y 6
-move_on walk fly_low
-move_off walk
 end
 arch mover_3
 x 6
@@ -890,8 +887,6 @@ end
 arch bench_2_1_1
 x 6
 y 7
-move_on walk fly_low
-move_off walk
 end
 arch mover_3
 x 6
@@ -915,8 +910,6 @@ end
 arch bench_2_1_1
 x 6
 y 8
-move_on walk fly_low
-move_off walk
 end
 arch mover_3
 x 6
@@ -940,8 +933,6 @@ end
 arch bench_2_1_1
 x 6
 y 9
-move_on walk fly_low
-move_off walk
 end
 arch mover_3
 x 6
@@ -2482,9 +2473,9 @@ x 15
 y 7
 end
 arch exit
-slaying circus
-hp 7
-sp 9
+slaying /world/world_116_102
+hp 31
+sp 16
 x 15
 y 7
 end
@@ -2501,9 +2492,9 @@ x 15
 y 8
 end
 arch exit
-slaying circus
-hp 7
-sp 9
+slaying /world/world_116_102
+hp 31
+sp 16
 x 15
 y 8
 end

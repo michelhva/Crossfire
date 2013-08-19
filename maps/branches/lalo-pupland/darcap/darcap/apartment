@@ -1,5 +1,5 @@
 arch map
-name Permanent Apartment
+name Darcap Permanent Apartment
 difficulty 1
 region darcap
 width 13
@@ -8,16 +8,15 @@ enter_x 6
 enter_y 12
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2012-01-28 Rick Tanner
 endmsg
 end
 arch woodfloor2
-name woodfloor
 unique 1
 end
 arch woodwall_2_2_2
 end
 arch woodfloor2
-name woodfloor
 y 1
 unique 1
 end
@@ -25,7 +24,6 @@ arch woodwall_2_1_1
 y 1
 end
 arch woodfloor2
-name woodfloor
 y 2
 unique 1
 end
@@ -33,7 +31,6 @@ arch woodwall_2_1_1
 y 2
 end
 arch woodfloor2
-name woodfloor
 y 3
 unique 1
 end
@@ -44,14 +41,12 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_7.111
 y 3
 end
 arch woodfloor2
-name woodfloor
 y 4
 unique 1
 end
@@ -59,7 +54,6 @@ arch woodwall_2_1_1
 y 4
 end
 arch woodfloor2
-name woodfloor
 y 5
 unique 1
 end
@@ -67,7 +61,6 @@ arch woodwall_2_1_1
 y 5
 end
 arch woodfloor2
-name woodfloor
 y 6
 unique 1
 end
@@ -75,7 +68,6 @@ arch woodwall_2_1_1
 y 6
 end
 arch woodfloor2
-name woodfloor
 y 7
 unique 1
 end
@@ -83,7 +75,6 @@ arch woodwall_2_1_1
 y 7
 end
 arch woodfloor2
-name woodfloor
 y 8
 unique 1
 end
@@ -91,7 +82,6 @@ arch woodwall_2_1_1
 y 8
 end
 arch woodfloor2
-name woodfloor
 y 9
 unique 1
 end
@@ -99,7 +89,6 @@ arch woodwall_2_1_1
 y 9
 end
 arch woodfloor2
-name woodfloor
 y 10
 unique 1
 end
@@ -107,7 +96,6 @@ arch woodwall_2_1_1
 y 10
 end
 arch woodfloor2
-name woodfloor
 y 11
 unique 1
 end
@@ -121,7 +109,6 @@ arch blocked
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 1
 unique 1
 end
@@ -129,19 +116,16 @@ arch woodwall_2_1_2
 x 1
 end
 arch woodfloor2
-name woodfloor
 x 1
 y 1
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 1
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 1
 y 3
 unique 1
@@ -150,21 +134,14 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 1
 y 3
 blocksview 1
 end
-arch woodfloor2
-name woodfloor
-x 1
-y 4
-unique 1
-end
-arch altar
+arch goldfloor2
 name pay 7000 diamonds
 slaying diamond
 msg
@@ -176,43 +153,36 @@ y 4
 connected 2
 end
 arch woodfloor2
-name woodfloor
 x 1
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 1
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 1
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 1
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 1
 y 9
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 1
 y 10
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 1
 y 11
 unique 1
@@ -230,7 +200,6 @@ x 1
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 2
 unique 1
 end
@@ -238,7 +207,6 @@ arch woodwall_2_2_3
 x 2
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 1
 unique 1
@@ -248,13 +216,11 @@ x 2
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 3
 unique 1
@@ -263,8 +229,7 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 2
@@ -272,49 +237,41 @@ y 3
 blocksview 1
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 4
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 9
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 10
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 2
 y 11
 unique 1
@@ -335,7 +292,6 @@ arch blocked
 x 3
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 1
 unique 1
@@ -345,13 +301,11 @@ x 3
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 3
 unique 1
@@ -360,8 +314,7 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 3
@@ -369,49 +322,41 @@ y 3
 blocksview 1
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 4
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 9
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 10
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 3
 y 11
 unique 1
@@ -432,7 +377,6 @@ arch blocked
 x 4
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 1
 unique 1
@@ -442,13 +386,11 @@ x 4
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 3
 unique 1
@@ -457,8 +399,7 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 4
@@ -466,37 +407,31 @@ y 3
 blocksview 1
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 4
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 9
 unique 1
@@ -506,7 +441,6 @@ x 4
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 10
 unique 1
@@ -516,7 +450,6 @@ x 4
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 4
 y 11
 unique 1
@@ -534,7 +467,6 @@ x 4
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 5
 unique 1
 end
@@ -542,7 +474,6 @@ arch woodwall_2_2_2
 x 5
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 1
 unique 1
@@ -552,13 +483,11 @@ x 5
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 3
 unique 1
@@ -567,8 +496,7 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 5
@@ -576,37 +504,31 @@ y 3
 blocksview 1
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 4
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 9
 unique 1
@@ -616,7 +538,6 @@ x 5
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 10
 unique 1
@@ -630,7 +551,6 @@ no_pick 1
 changing 0
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 11
 unique 1
@@ -640,7 +560,6 @@ x 5
 y 11
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 12
 unique 1
@@ -650,17 +569,15 @@ x 5
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 5
 y 13
 unique 1
 end
-arch woodwall_2_2_1
+arch woodwall_1_2
 x 5
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 6
 unique 1
 end
@@ -668,7 +585,6 @@ arch woodwall_2_1_2
 x 6
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 1
 unique 1
@@ -683,13 +599,11 @@ x 6
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 3
 unique 1
@@ -698,8 +612,7 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 6
@@ -707,37 +620,31 @@ y 3
 blocksview 1
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 4
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 9
 unique 1
@@ -748,13 +655,7 @@ y 9
 speed 0.500000
 connected 1
 end
-arch woodfloor2
-name woodfloor
-x 6
-y 10
-unique 1
-end
-arch altar
+arch goldfloor2
 name apartment costs 200 pearls
 slaying pearl
 food 200
@@ -763,36 +664,28 @@ y 10
 connected 1
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 11
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 6
 y 12
 unique 1
 end
-arch oakdoor
+arch woodfloor2
+x 6
+y 13
+unique 1
+end
+arch oakdoor_2
 slaying /world/world_116_102
 hp 26
 sp 26
 x 6
-y 12
-end
-arch woodfloor2
-name woodfloor
-x 6
-y 13
-unique 1
-end
-arch woodwall_2_1_2
-x 6
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 7
 unique 1
 end
@@ -800,7 +693,6 @@ arch woodwall_2_2_3
 x 7
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 1
 unique 1
@@ -810,13 +702,11 @@ x 7
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 3
 unique 1
@@ -825,8 +715,7 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 7
@@ -834,37 +723,31 @@ y 3
 blocksview 1
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 4
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 9
 unique 1
@@ -874,7 +757,6 @@ x 7
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 10
 unique 1
@@ -888,7 +770,6 @@ no_pick 1
 changing 0
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 11
 unique 1
@@ -898,7 +779,6 @@ x 7
 y 11
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 12
 unique 1
@@ -908,12 +788,11 @@ x 7
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 7
 y 13
 unique 1
 end
-arch woodwall_2_2_4
+arch woodwall_1_2
 x 7
 y 13
 end
@@ -921,7 +800,6 @@ arch blocked
 x 8
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 1
 unique 1
@@ -931,13 +809,11 @@ x 8
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 3
 unique 1
@@ -946,8 +822,7 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 8
@@ -955,37 +830,31 @@ y 3
 blocksview 1
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 4
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 9
 unique 1
@@ -995,7 +864,6 @@ x 8
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 10
 unique 1
@@ -1005,7 +873,6 @@ x 8
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 8
 y 11
 unique 1
@@ -1026,7 +893,6 @@ arch blocked
 x 9
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 1
 unique 1
@@ -1036,13 +902,11 @@ x 9
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 3
 unique 1
@@ -1051,8 +915,7 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 9
@@ -1060,43 +923,36 @@ y 3
 blocksview 1
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 4
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 9
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 10
 unique 1
@@ -1106,7 +962,6 @@ x 9
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 9
 y 11
 unique 1
@@ -1124,7 +979,6 @@ x 9
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 10
 unique 1
 end
@@ -1132,7 +986,6 @@ arch woodwall_2_2_2
 x 10
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 1
 unique 1
@@ -1142,13 +995,11 @@ x 10
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 3
 unique 1
@@ -1157,8 +1008,7 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 10
@@ -1166,49 +1016,41 @@ y 3
 blocksview 1
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 4
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 9
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 10
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 10
 y 11
 unique 1
@@ -1226,7 +1068,6 @@ x 10
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 11
 unique 1
 end
@@ -1234,7 +1075,6 @@ arch woodwall_2_1_2
 x 11
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 1
 unique 1
@@ -1249,13 +1089,11 @@ x 11
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 2
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 3
 unique 1
@@ -1264,8 +1102,7 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_A.111
 x 11
@@ -1273,7 +1110,6 @@ y 3
 blocksview 1
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 4
 unique 1
@@ -1283,37 +1119,31 @@ x 11
 y 4
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 5
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 6
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 7
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 8
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 9
 unique 1
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 10
 unique 1
@@ -1323,7 +1153,6 @@ x 11
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 11
 unique 1
@@ -1337,7 +1166,6 @@ x 11
 y 12
 end
 arch woodfloor2
-name woodfloor
 x 11
 y 13
 unique 1
@@ -1359,7 +1187,6 @@ x 11
 y 13
 end
 arch woodfloor2
-name woodfloor
 x 12
 unique 1
 end
@@ -1367,7 +1194,6 @@ arch woodwall_2_2_3
 x 12
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 1
 unique 1
@@ -1377,7 +1203,6 @@ x 12
 y 1
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 2
 unique 1
@@ -1387,7 +1212,6 @@ x 12
 y 2
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 3
 unique 1
@@ -1400,15 +1224,13 @@ arch locked_door1
 name wall
 slaying cat_appartment_ext
 msg
-Buy an apartment extender to remove
-this wall.
+Buy an apartment extender to remove this wall.
 endmsg
 face woodwall_D.111
 x 12
 y 3
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 4
 unique 1
@@ -1418,7 +1240,6 @@ x 12
 y 4
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 5
 unique 1
@@ -1428,7 +1249,6 @@ x 12
 y 5
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 6
 unique 1
@@ -1438,7 +1258,6 @@ x 12
 y 6
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 7
 unique 1
@@ -1448,7 +1267,6 @@ x 12
 y 7
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 8
 unique 1
@@ -1458,7 +1276,6 @@ x 12
 y 8
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 9
 unique 1
@@ -1468,7 +1285,6 @@ x 12
 y 9
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 10
 unique 1
@@ -1478,7 +1294,6 @@ x 12
 y 10
 end
 arch woodfloor2
-name woodfloor
 x 12
 y 11
 unique 1
