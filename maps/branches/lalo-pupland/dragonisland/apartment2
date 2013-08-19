@@ -4,8 +4,11 @@ difficulty 1
 region stoneville
 width 16
 height 16
+enter_x 7
+enter_y 14
 msg
 Created:  1997-07-09
+Modified: 2013-03-25 Kevin Zheng
 endmsg
 end
 arch grass
@@ -230,12 +233,10 @@ Hello! Nice to see you!
 @match hurt
 Most people just want to kill me on sight, sniff!
 @match *
-Don't hurt me, please
+Don't hurt me, please.
 endmsg
-maxhp 10
 x 2
 y 1
-speed_left -2.100000
 unaggressive 1
 end
 arch woodfloor
@@ -945,10 +946,10 @@ x 8
 y 6
 end
 arch altar
-name key costs 3000 gp
+name drop 3000 gold for keys
 slaying money
 msg
-Here you can get a key for 3000 g
+Click.
 endmsg
 food 3000
 x 8
@@ -1052,11 +1053,10 @@ end
 arch guildmaster
 name housekeeper
 msg
-@match Hello|Hallo|Hi
+@match hello|hallo|hi|greeting
 Hello there! To the left is a private apartment, to your right is a room you may enter if you pay a fee.
 @match apartment
-This apartment is very comfortable, trust me!
-And it's got a cauldron, too!
+This apartment is very comfortable, trust me! And it's got a cauldron, too!
 endmsg
 x 9
 y 7
@@ -1067,14 +1067,19 @@ arch woodfloor
 x 9
 y 8
 end
-arch goldfloor
+arch woodfloor
+x 9
+y 9
+end
+arch altar_trigger
 name drop 10 gold to enter
 slaying money
-face woodfloor.111
+msg
+Click.
+endmsg
 food 100
 x 9
 y 9
-value 1
 connected 4
 end
 arch woodfloor
@@ -1378,6 +1383,7 @@ end
 arch cauldron
 x 12
 y 10
+no_pick 1
 end
 arch woodfloor
 x 12

@@ -1,14 +1,17 @@
 arch map
-name The Adventurous Shop
-difficulty 1
+name The Adventurous Shop, 3rd Floor
+difficulty 30
 region stoneville
 shopitems potion:40;rings:30;scroll:40;amulet:20;wand:40;skillscroll:20;rod:30;*:-60
 shopmin 1500
 shopmax 25000
 width 16
 height 16
+enter_x 4
+enter_y 4
 msg
 Created:  1997-07-22
+Modified: 2008-12-21 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -245,6 +248,10 @@ x 2
 y 8
 end
 arch wall_1_1
+x 2
+y 8
+end
+arch wall_2_short
 x 2
 y 8
 end

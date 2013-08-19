@@ -1,11 +1,14 @@
 arch map
-name Dragon Mountain
-difficulty 1
+name Dragon Mountain, Entry
+difficulty 35
 region stoneville
 width 40
 height 33
+enter_x 1
+enter_y 12
 msg
 Created:  1997-09-02 Viola Krings (krings@informatik.tu-muenchen.de)
+Modified: 2012-02-01 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -1498,8 +1501,7 @@ end
 arch corpse
 name corpse of Carthon
 msg
-This body looks like the person was
-killed by an arrow.
+This body looks like the person was killed by an arrow.
 endmsg
 x 6
 y 16

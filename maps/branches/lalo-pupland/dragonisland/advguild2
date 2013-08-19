@@ -1,11 +1,14 @@
 arch map
-name Adventurers Guild
-difficulty 1
+name Adventurers Guild, 2nd Floor
+difficulty 40
 region stoneville
 width 32
 height 32
+enter_x 9
+enter_y 26
 msg
 Created:  1997-07-15 Viola Krings
+Modified: 2012-07-06 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1875,8 +1878,8 @@ y 26
 end
 arch stair_3_down
 slaying advguild
-hp 9
-sp 26
+hp 11
+sp 28
 x 9
 y 26
 end
@@ -2237,9 +2240,7 @@ connected 4
 end
 arch magic_mouth
 msg
-Practicing against floating,
-spellcasting monsters - please don't
-damage the generators.
+Practicing against floating, spellcasting monsters - please don't damage the generators.
 endmsg
 x 11
 y 15
@@ -2590,8 +2591,7 @@ arch lich
 name Tarsham, the Lich
 msg
 @match *
-Die, fool! I'm not a practicing
-target, I'm your doom
+Die, fool! I'm not a practicing target, I'm your doom!!
 endmsg
 x 13
 y 5
@@ -2638,9 +2638,7 @@ connected 3
 end
 arch magic_mouth
 msg
-Undead practicing room - please leave
-generators intact to allow some
-practice to those who come after you.
+Undead practicing room - please leave generators intact to allow some practice to those who come after you.
 endmsg
 x 13
 y 11
@@ -3143,7 +3141,7 @@ arch door_look_2
 name temple door
 x 15
 y 29
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 15
@@ -3836,10 +3834,8 @@ end
 arch sign
 name challenge with reward
 msg
-We hope to provide you with a
-challange with this practicing
-compartment.
-              The Guild
+We hope to provide you with a challenge with this practicing compartment.
+ - The Guild
 endmsg
 x 19
 y 19
@@ -4707,7 +4703,7 @@ hp 500
 maxhp 500
 dam 20
 wc -20
-ac -20
+ac -10
 x 23
 y 20
 level 20
@@ -5316,14 +5312,13 @@ arch elf
 name Nathirel, the elf priest
 msg
 @match *
-Come to Lythanders altar and pray. Of
-you are accepted, you can call
-yourself lucky.
+Come to Lythanders altar and pray.  If you are accepted, you can call yourself lucky.
 endmsg
 face elf.151
 x 26
 y 24
 type 0
+move_type walk
 monster 1
 friendly 1
 unaggressive 1
@@ -5710,9 +5705,7 @@ arch dwarf_priest
 name Bordak, the dwarf priest
 msg
 @match *
-Pray at this altar, my son! It will
-give you strength and protect you from
-fire.
+Pray at this altar, my son! It will give you strength and protect you from fire.
 endmsg
 x 28
 y 24
@@ -6109,9 +6102,7 @@ arch dwarf_priest
 name Lorik, the dwarf priest
 msg
 @match *
-Pray at this altar, my son! It will
-give you strength and protect you from
-fire.
+Pray at this altar, my son! It will give you strength and protect you from fire.
 endmsg
 x 30
 y 24

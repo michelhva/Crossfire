@@ -1,11 +1,14 @@
 arch map
-name Damaris' House
-difficulty 1
+name Damaris' House, Upper Level
+difficulty 5
 region stoneville
 width 14
 height 9
+enter_x 1
+enter_y 1
 msg
 Created:  Viola Krings
+Modified: 2012-01-31 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -83,8 +86,7 @@ y 2
 end
 arch magic_mouth
 msg
-You are not allowed to walk around
-this hose!
+You are not allowed to walk around this house!
 endmsg
 x 1
 y 3
