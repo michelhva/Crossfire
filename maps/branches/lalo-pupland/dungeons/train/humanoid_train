@@ -1,5 +1,6 @@
 arch map
 name Humanoid Training
+difficulty 35
 region wilderness
 width 21
 height 21
@@ -7,7 +8,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  2005-05-30 Gene Alexander
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-02-02 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -102,7 +103,7 @@ arch mountain
 x 1
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -110,7 +111,7 @@ arch mountain
 x 1
 y 2
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -118,7 +119,7 @@ arch mountain
 x 1
 y 3
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -126,7 +127,7 @@ arch mountain
 x 1
 y 4
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -134,7 +135,7 @@ arch mountain
 x 1
 y 5
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -142,7 +143,7 @@ arch mountain
 x 1
 y 6
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -150,7 +151,7 @@ arch mountain
 x 1
 y 7
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -158,7 +159,7 @@ arch mountain
 x 1
 y 8
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -166,7 +167,7 @@ arch mountain
 x 1
 y 9
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -174,7 +175,7 @@ arch mountain
 x 1
 y 10
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -182,7 +183,7 @@ arch mountain
 x 1
 y 11
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -190,7 +191,7 @@ arch mountain
 x 1
 y 12
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -198,7 +199,7 @@ arch mountain
 x 1
 y 13
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -206,7 +207,7 @@ arch mountain
 x 1
 y 14
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -214,7 +215,7 @@ arch mountain
 x 1
 y 15
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -222,7 +223,7 @@ arch mountain
 x 1
 y 16
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -230,7 +231,7 @@ arch mountain
 x 1
 y 17
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -238,7 +239,7 @@ arch mountain
 x 1
 y 18
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -246,7 +247,7 @@ arch mountain
 x 1
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -263,16 +264,14 @@ arch mountain
 x 2
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -287,9 +286,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -304,9 +301,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -321,9 +316,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -338,9 +331,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -355,9 +346,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -372,9 +361,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -389,9 +376,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -406,9 +391,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -423,9 +406,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -440,9 +421,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -457,9 +436,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -474,9 +451,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -491,9 +466,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -508,9 +481,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -525,9 +496,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -542,9 +511,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -560,7 +527,7 @@ arch mountain
 x 2
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -577,16 +544,14 @@ arch mountain
 x 3
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -736,9 +701,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -754,7 +717,7 @@ arch mountain
 x 3
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -771,16 +734,14 @@ arch mountain
 x 4
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -930,9 +891,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -948,7 +907,7 @@ arch mountain
 x 4
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -965,16 +924,14 @@ arch mountain
 x 5
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -1115,9 +1072,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -1133,7 +1088,7 @@ arch mountain
 x 5
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1150,16 +1105,14 @@ arch mountain
 x 6
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -1327,9 +1280,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -1345,7 +1296,7 @@ arch mountain
 x 6
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1362,16 +1313,14 @@ arch mountain
 x 7
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -1531,9 +1480,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -1561,16 +1508,14 @@ arch mountain
 x 8
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -1739,9 +1684,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -1769,16 +1712,14 @@ arch mountain
 x 9
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -1805,7 +1746,7 @@ hp 10000
 maxhp 10000
 dam 70
 wc -25
-ac -20
+ac -10
 x 9
 y 3
 level 125
@@ -1969,9 +1910,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -1986,7 +1925,7 @@ arch mountain
 x 9
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2003,16 +1942,14 @@ arch mountain
 x 10
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -2188,13 +2125,9 @@ arch sign
 msg
 Training Centers Incorporated
 -=+=-
-Please pay the designated fee to enter
-the training center to train with our
-humanoid trainers.
+Please pay the designated fee to enter the training center to train with our humanoid trainers.
 -=+=-
-Cowards need not enter. Cowardly
-running about may get one ejected
-from entering this training center.
+Cowards need not enter.  Cowardly running about may get one ejected from entering this training center.
 endmsg
 x 10
 y 15
@@ -2220,9 +2153,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -2238,7 +2169,7 @@ arch mountain
 x 10
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2258,9 +2189,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -2377,13 +2306,11 @@ no_pick 1
 end
 arch magic_mouth
 msg
-The shield we seek has this message
-when one examines the shield:
+The shield we seek has this message when one examines the shield:
 -=-=-=-=-=-=-=-=-=-=-=-=-=-
 There is a evil spirit in the shield.
 -=-=-=-=-=-=-=-=-=-=-=-=-=-
-If that is not the shield you wish to offer
-then you do not have the correct one.
+If that is not the shield you wish to offer then you do not have the correct one.
 endmsg
 x 11
 y 13
@@ -2448,9 +2375,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -2466,7 +2391,7 @@ arch mountain
 x 11
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2485,9 +2410,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -2657,9 +2580,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -2675,7 +2596,7 @@ arch mountain
 x 12
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2691,16 +2612,14 @@ arch mountain
 x 13
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -2862,9 +2781,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -2880,7 +2797,7 @@ arch mountain
 x 13
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2897,16 +2814,14 @@ arch mountain
 x 14
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3074,9 +2989,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3092,7 +3005,7 @@ arch mountain
 x 14
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3109,16 +3022,14 @@ arch mountain
 x 15
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3271,9 +3182,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3289,7 +3198,7 @@ arch mountain
 x 15
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3306,16 +3215,14 @@ arch mountain
 x 16
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3463,9 +3370,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3481,7 +3386,7 @@ arch mountain
 x 16
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3498,16 +3403,14 @@ arch mountain
 x 17
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3673,9 +3576,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3691,7 +3592,7 @@ arch mountain
 x 17
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3708,16 +3609,14 @@ arch mountain
 x 18
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3732,9 +3631,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3749,9 +3646,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3766,9 +3661,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3787,9 +3680,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3804,9 +3695,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3825,9 +3714,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3842,9 +3729,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3859,9 +3744,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3876,9 +3759,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3893,9 +3774,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3910,9 +3789,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3927,9 +3804,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3944,9 +3819,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3961,9 +3834,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3978,9 +3849,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -3995,9 +3864,7 @@ end
 arch invis_exit
 slaying /world/world_102_108
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 29
 sp 11
@@ -4013,7 +3880,7 @@ arch mountain
 x 18
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4030,7 +3897,7 @@ arch mountain
 x 19
 y 1
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4038,7 +3905,7 @@ arch mountain
 x 19
 y 2
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4046,7 +3913,7 @@ arch mountain
 x 19
 y 3
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4054,7 +3921,7 @@ arch mountain
 x 19
 y 4
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4062,7 +3929,7 @@ arch mountain
 x 19
 y 5
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4074,7 +3941,7 @@ arch mountain
 x 19
 y 6
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4086,7 +3953,7 @@ arch mountain
 x 19
 y 7
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4098,7 +3965,7 @@ arch mountain
 x 19
 y 8
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4106,7 +3973,7 @@ arch mountain
 x 19
 y 9
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4114,7 +3981,7 @@ arch mountain
 x 19
 y 10
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4122,7 +3989,7 @@ arch mountain
 x 19
 y 11
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4130,7 +3997,7 @@ arch mountain
 x 19
 y 12
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4138,7 +4005,7 @@ arch mountain
 x 19
 y 13
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4146,7 +4013,7 @@ arch mountain
 x 19
 y 14
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4154,7 +4021,7 @@ arch mountain
 x 19
 y 15
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4162,7 +4029,7 @@ arch mountain
 x 19
 y 16
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4170,7 +4037,7 @@ arch mountain
 x 19
 y 17
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4178,7 +4045,7 @@ arch mountain
 x 19
 y 18
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4186,7 +4053,7 @@ arch mountain
 x 19
 y 19
 elevation 5223
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end

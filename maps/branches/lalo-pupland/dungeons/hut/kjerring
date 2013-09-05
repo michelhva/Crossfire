@@ -1,13 +1,15 @@
 arch map
 name Kjerring
 reset_timeout 7200
-difficulty 4
+difficulty 8
+region wilderness
 width 100
 height 19
-enter_x 1
+enter_x 2
 enter_y 9
 msg
-Created:  1994-02-17
+Created:  1994-05-17
+Modified: 2008-09-16 Rick Tanner
 endmsg
 end
 arch blocked
