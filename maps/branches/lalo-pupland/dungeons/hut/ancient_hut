@@ -1,12 +1,14 @@
 arch map
 name Ancient Hut
 reset_timeout 7200
-difficulty 1
+difficulty 10
+region wilderness
 width 12
 height 12
 enter_x 6
 msg
-Created:  1994-02-17
+Created:  1994-05-17
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -552,7 +554,7 @@ end
 arch cobblestones
 x 6
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_104_115
 hp 11
 sp 3

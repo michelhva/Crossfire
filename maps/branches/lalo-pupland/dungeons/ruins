@@ -1,14 +1,15 @@
 arch map
 name The Ruins
 reset_timeout 7200
-difficulty 5
+difficulty 15
+region wilderness
 width 60
 height 60
 enter_x 3
-enter_y 4
+enter_y 5
 msg
-Created:  2001-02-14
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  2001-09-14
+Modified: 2008-09-17 Rick Tanner
 endmsg
 end
 arch blocked

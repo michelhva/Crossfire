@@ -1,5 +1,6 @@
 arch map
 name Dragon Training
+difficulty 40
 region wilderness
 width 21
 height 21
@@ -7,6 +8,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  2005-05-30 Gene Alexander
+Modified: 2012-02-02 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -289,9 +291,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -305,9 +305,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -321,9 +319,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -337,9 +333,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -354,9 +348,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -371,9 +363,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -388,9 +378,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -404,9 +392,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -420,9 +406,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -436,9 +420,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -453,9 +435,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -470,9 +450,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world. You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -486,9 +464,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -502,9 +478,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -518,9 +492,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -534,9 +506,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -550,9 +520,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -593,9 +561,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -732,9 +698,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -775,9 +739,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -914,9 +876,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -957,9 +917,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -1108,9 +1066,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -1152,9 +1108,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -1300,9 +1254,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -1344,9 +1296,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -1511,9 +1461,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -1555,9 +1503,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -1634,7 +1580,7 @@ y 8
 elevation 452
 end
 arch statue
-face wyvern.171
+face wyvern.x31
 x 8
 y 8
 end
@@ -1739,9 +1685,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -1786,9 +1730,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -1856,11 +1798,6 @@ x 9
 y 8
 elevation 452
 end
-arch statue
-face wyvern.271
-x 9
-y 8
-end
 arch dungeon_magic
 x 9
 y 9
@@ -1915,7 +1852,7 @@ name Ancient dragon's steak
 face drag_steak.111
 x 9
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -1974,9 +1911,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -2011,9 +1946,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -2156,7 +2089,7 @@ name ancient red dragon's steak
 face drag_steak.111
 x 10
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2202,13 +2135,9 @@ arch sign
 msg
 Training Centers Incorporated
 -=+=-
-Please pay the designated fee to enter
-the training center to train with our
-dragon trainers.
+Please pay the designated fee to enter the training center to train with our dragon trainers.
 -=+=-
-Cowards need not enter. Cowardly
-running about may get one ejected
-from entering this training center.
+Cowards need not enter.  Cowardly running about may get one ejected from entering this training center.
 endmsg
 x 10
 y 15
@@ -2234,9 +2163,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -2271,9 +2198,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -2342,7 +2267,7 @@ y 8
 elevation 452
 end
 arch statue
-face wyvern.131
+face wyvern.x71
 x 11
 y 8
 end
@@ -2401,7 +2326,7 @@ name Ancient Blue Dragon's steak
 face drag_steak.111
 x 11
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2462,9 +2387,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -2499,9 +2422,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -2578,11 +2499,6 @@ arch grass
 x 12
 y 8
 elevation 452
-end
-arch statue
-face wyvern.231
-x 12
-y 8
 end
 arch dungeon_magic
 x 12
@@ -2686,9 +2602,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -2734,9 +2648,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -2900,9 +2812,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -2944,9 +2854,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3092,9 +3000,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3136,9 +3042,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3283,9 +3187,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3327,9 +3229,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3466,9 +3366,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3510,9 +3408,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3654,9 +3550,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3697,9 +3591,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3714,9 +3606,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3731,9 +3621,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3748,9 +3636,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3765,9 +3651,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3781,9 +3665,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3797,9 +3679,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3813,9 +3693,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3830,9 +3708,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3847,9 +3723,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3864,9 +3738,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3885,9 +3757,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3906,9 +3776,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3922,9 +3790,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3943,9 +3809,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3960,9 +3824,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
@@ -3976,9 +3838,7 @@ end
 arch invis_exit
 slaying /world/world_116_102
 msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
+An unseen force moves you across the world.  You feel as though you have moved quite a distance.
 endmsg
 hp 27
 sp 47
