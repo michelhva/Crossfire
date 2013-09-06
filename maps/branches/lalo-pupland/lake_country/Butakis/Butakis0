@@ -1,10 +1,14 @@
 arch map
-name Butakis0
-region lakecountry
+name Fortress of Lord Butakis
+difficulty 25
+region butakisfortress
 width 24
 height 36
+enter_x 3
+enter_y 5
 msg
-Created:  1995-02-27
+Created:  1995-03-27
+Modified: 2012-09-13 Rick Tanner
 endmsg
 end
 arch grass
@@ -551,7 +555,7 @@ y 4
 end
 arch magic_mouth
 msg
-Travel safely
+Travel safely.
 endmsg
 x 2
 y 5
@@ -608,7 +612,11 @@ arch grass
 x 2
 y 14
 end
-arch guild
+arch guild2
+name Abandoned Guild Hall
+slaying mockers/mainfloor
+hp 15
+sp 28
 x 2
 y 14
 end
@@ -633,6 +641,14 @@ x 2
 y 18
 end
 arch grass
+x 2
+y 19
+end
+arch guildstorage
+name Mocker's storage hall
+slaying mockers/storage_room
+hp -1
+sp -1
 x 2
 y 19
 end
@@ -703,8 +719,8 @@ end
 arch tavern
 name Royal Blacksmith
 slaying blacksmith
-hp 7
-sp 5
+hp 8
+sp 9
 x 2
 y 33
 end
@@ -805,10 +821,10 @@ x 3
 y 12
 end
 arch store_general
-name General Shop
+name Lord Butakis General Shop
 slaying B_gshop
-hp 1
-sp 1
+hp 16
+sp 15
 x 3
 y 12
 end
@@ -1535,8 +1551,8 @@ end
 arch church
 name Royal Church
 slaying church0
-hp 9
-sp 28
+hp 11
+sp 30
 x 6
 y 22
 end
@@ -2174,7 +2190,7 @@ arch tavern
 name Gemstone Alchemist
 slaying alchemist
 hp 7
-sp 5
+sp 8
 x 9
 y 14
 end
@@ -2919,16 +2935,7 @@ y 29
 end
 arch sign
 msg
-Prepare enough platinum, rubies and
-diamonds. For you need these to gamble.
-Also prepare scrolls of recall to get
-out of impasses otherwise you may die
-an agonizing death
-On the first level, each altar takes
-100 platinum coins to operate.
-On the second and first level, it
-takes a lot more. Luck are really hard
-to come by there, but rewards are huge.
+Prepare enough platinum, rubies and diamonds.  For you need these to gamble.  Also prepare scrolls of recall to get out of impasses otherwise you may die an agonizing death.  On the first level, each altar takes 100 platinum coins to operate.  On the second and third level, it takes a lot more.  Luck is really hard to come by there, but rewards are huge.
 endmsg
 x 12
 y 29
@@ -3014,8 +3021,8 @@ end
 arch store_weapons
 name Weapon Shop
 slaying B_wshop
-hp 1
-sp 8
+hp 11
+sp 19
 x 13
 y 6
 end
@@ -4430,10 +4437,10 @@ x 19
 y 8
 end
 arch inn
-name Inn, White Pigeon
+name White Pigeon Inn
 slaying inn
-hp 8
-sp 14
+hp 10
+sp 16
 x 19
 y 8
 end
@@ -4628,6 +4635,7 @@ x 20
 y 2
 end
 arch prison
+name Fortress of Lord Butakis Prison
 slaying prison0
 hp 12
 sp 20

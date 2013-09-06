@@ -1,16 +1,20 @@
 arch map
-name Snake Pit
+name Snake Pit, Level 5
+difficulty 90
 region lakecountry
 darkness 4
 width 40
 height 20
+enter_x 2
+enter_y 15
 msg
 Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
 arch medium_stones
@@ -34,16 +38,16 @@ end
 arch cave23
 y 5
 end
-arch blocked
+arch cave_15
 y 6
 end
-arch blocked
+arch cave_15
 y 7
 end
-arch blocked
+arch cave_15
 y 8
 end
-arch blocked
+arch cave_15
 y 9
 end
 arch cave24
@@ -103,7 +107,7 @@ end
 arch cave17
 y 19
 end
-arch blocked
+arch cave_15
 x 1
 end
 arch cave18
@@ -138,11 +142,11 @@ arch cave23
 x 1
 y 6
 end
-arch blocked
+arch cave_15
 x 1
 y 7
 end
-arch blocked
+arch cave_15
 x 1
 y 8
 end
@@ -233,7 +237,7 @@ arch cave2
 x 2
 y 6
 end
-arch blocked
+arch cave_15
 x 2
 y 7
 end
@@ -267,7 +271,7 @@ y 13
 end
 arch magic_mouth
 msg
-It's rather quiet down there
+It's rather quiet down there.
 endmsg
 x 2
 y 14
@@ -285,7 +289,7 @@ y 14
 end
 arch magic_mouth
 msg
-It's rather quiet down there
+It's rather quiet down there.
 endmsg
 x 2
 y 15
@@ -303,7 +307,7 @@ y 15
 end
 arch magic_mouth
 msg
-It's rather quiet down there
+It's rather quiet down there.
 endmsg
 x 2
 y 16
@@ -459,11 +463,13 @@ exp 200000
 dam 30
 x 4
 y 3
-speed 0.800000
-speed_left -1.840000
+speed 0.8
 level 30
 attacktype 29
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
 carrying 25000
 move_type walk fly_low
 arch abil_icestorm
@@ -490,8 +496,9 @@ dam 30
 x 4
 y 4
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -543,8 +550,9 @@ dam 30
 x 4
 y 12
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -708,8 +716,9 @@ dam 30
 x 6
 y 4
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -748,11 +757,11 @@ exp 25000
 dam 30
 x 6
 y 9
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -775,11 +784,11 @@ exp 25000
 dam 30
 x 6
 y 12
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -802,11 +811,11 @@ exp 25000
 dam 30
 x 6
 y 15
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -852,8 +861,9 @@ dam 30
 x 7
 y 2
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -904,11 +914,11 @@ exp 25000
 dam 30
 x 7
 y 10
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -931,11 +941,11 @@ exp 25000
 dam 30
 x 7
 y 13
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -958,11 +968,11 @@ exp 25000
 dam 30
 x 7
 y 16
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -1000,8 +1010,9 @@ dam 30
 x 8
 y 1
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -1029,8 +1040,9 @@ dam 30
 x 8
 y 4
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -1184,11 +1196,13 @@ exp 200000
 dam 30
 x 9
 y 13
-speed 0.500000
-speed_left -1.840000
+speed 0.8
 level 30
 attacktype 29
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
 carrying 25000
 move_type walk fly_low
 arch abil_icestorm
@@ -1742,11 +1756,11 @@ exp 25000
 dam 30
 x 15
 y 3
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -1847,11 +1861,11 @@ exp 25000
 dam 30
 x 16
 y 4
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -2016,11 +2030,11 @@ exp 55000
 dam 30
 x 17
 y 15
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -2123,11 +2137,11 @@ exp 55000
 dam 30
 x 18
 y 15
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -2203,8 +2217,9 @@ dam 30
 x 19
 y 9
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -2545,8 +2560,9 @@ dam 30
 x 23
 y 2
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -2692,7 +2708,7 @@ arch afloor_right
 x 24
 y 8
 end
-arch blocked
+arch cave_15
 x 24
 y 8
 end
@@ -2700,7 +2716,7 @@ arch afloor_right
 x 24
 y 9
 end
-arch blocked
+arch cave_15
 x 24
 y 9
 end
@@ -2708,7 +2724,7 @@ arch afloor_right
 x 24
 y 10
 end
-arch blocked
+arch cave_15
 x 24
 y 10
 end
@@ -2716,7 +2732,7 @@ arch afloor_right
 x 24
 y 11
 end
-arch blocked
+arch cave_15
 x 24
 y 11
 end
@@ -2806,7 +2822,7 @@ arch afloor_right
 x 25
 y 8
 end
-arch blocked
+arch cave_15
 x 25
 y 8
 end
@@ -2814,7 +2830,7 @@ arch afloor_right
 x 25
 y 9
 end
-arch blocked
+arch cave_15
 x 25
 y 9
 end
@@ -2822,7 +2838,7 @@ arch afloor_right
 x 25
 y 10
 end
-arch blocked
+arch cave_15
 x 25
 y 10
 end
@@ -2830,7 +2846,7 @@ arch afloor_right
 x 25
 y 11
 end
-arch blocked
+arch cave_15
 x 25
 y 11
 end
@@ -2838,7 +2854,7 @@ arch afloor_right
 x 25
 y 12
 end
-arch blocked
+arch cave_15
 x 25
 y 12
 end
@@ -2948,7 +2964,7 @@ arch afloor_right
 x 26
 y 11
 end
-arch blocked
+arch cave_15
 x 26
 y 11
 end
@@ -2956,7 +2972,7 @@ arch afloor_right
 x 26
 y 12
 end
-arch blocked
+arch cave_15
 x 26
 y 12
 end
@@ -2964,7 +2980,7 @@ arch afloor_right
 x 26
 y 13
 end
-arch blocked
+arch cave_15
 x 26
 y 13
 end
@@ -3058,7 +3074,7 @@ arch afloor_right
 x 27
 y 12
 end
-arch blocked
+arch cave_15
 x 27
 y 12
 end
@@ -3066,7 +3082,7 @@ arch afloor_right
 x 27
 y 13
 end
-arch blocked
+arch cave_15
 x 27
 y 13
 end
@@ -3119,11 +3135,11 @@ exp 25000
 dam 30
 x 28
 y 1
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3146,11 +3162,11 @@ exp 25000
 dam 30
 x 28
 y 4
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3177,11 +3193,11 @@ exp 25000
 dam 30
 x 28
 y 8
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3209,7 +3225,7 @@ arch afloor_right
 x 28
 y 13
 end
-arch blocked
+arch cave_15
 x 28
 y 13
 end
@@ -3266,11 +3282,11 @@ exp 25000
 dam 30
 x 29
 y 2
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3293,11 +3309,11 @@ exp 25000
 dam 30
 x 29
 y 5
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3324,11 +3340,11 @@ exp 25000
 dam 30
 x 29
 y 9
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3383,11 +3399,11 @@ exp 65000
 dam 30
 x 29
 y 17
-speed 1.000000
-speed_left -28.420000
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 arch spell_paralyze
@@ -3496,11 +3512,11 @@ exp 65000
 dam 30
 x 30
 y 17
-speed 1.000000
-speed_left -28.420000
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 arch spell_paralyze
@@ -3628,8 +3644,9 @@ dam 30
 x 32
 y 1
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3677,8 +3694,9 @@ dam 30
 x 32
 y 9
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3709,11 +3727,11 @@ exp 25000
 dam 30
 x 32
 y 14
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3771,8 +3789,9 @@ dam 30
 x 33
 y 4
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3827,11 +3846,11 @@ exp 25000
 dam 30
 x 33
 y 15
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
 resist_fire 100
 resist_electricity 100
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3877,8 +3896,9 @@ dam 30
 x 34
 y 2
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -3996,8 +4016,9 @@ dam 30
 x 35
 y 4
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -4025,8 +4046,9 @@ dam 30
 x 35
 y 8
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -4116,8 +4138,9 @@ dam 30
 x 36
 y 6
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -4228,8 +4251,9 @@ dam 30
 x 37
 y 8
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -4249,8 +4273,9 @@ dam 30
 x 37
 y 10
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -4294,7 +4319,7 @@ arch cave20
 x 37
 y 19
 end
-arch blocked
+arch cave_15
 x 38
 end
 arch cave25
@@ -4374,8 +4399,9 @@ dam 30
 x 38
 y 10
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 end
@@ -4415,14 +4441,14 @@ arch cave20
 x 38
 y 18
 end
-arch blocked
+arch cave_15
 x 38
 y 19
 end
-arch blocked
+arch cave_15
 x 39
 end
-arch blocked
+arch cave_15
 x 39
 y 1
 end
@@ -4546,11 +4572,11 @@ arch cave20
 x 39
 y 17
 end
-arch blocked
+arch cave_15
 x 39
 y 18
 end
-arch blocked
+arch cave_15
 x 39
 y 19
 end

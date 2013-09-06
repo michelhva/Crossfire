@@ -1,11 +1,14 @@
 arch map
-name Butakis' Elite Training Tower
-difficulty 1
+name Butakis' Elite Training Tower, Level 4
+difficulty 16
 region lakecountry
 width 25
 height 25
+enter_x 12
+enter_y 12
 msg
 Created:  1995-04-06 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2011-11-11 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -1816,7 +1819,7 @@ arch grass
 x 10
 y 11
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
 x 10
 y 11
 end
@@ -1848,7 +1851,7 @@ arch grass
 x 10
 y 14
 end
-arch flagstone_2_1_1
+arch flagstone_1_1
 x 10
 y 14
 end
@@ -1982,7 +1985,7 @@ arch grass
 x 11
 y 10
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 11
 y 10
 end
@@ -1999,8 +2002,7 @@ y 11
 end
 arch magic_mouth
 msg
-Drop 500 platinum coins to pay the
-training fee.
+Drop 500 platinum coins to pay the training fee.
 endmsg
 x 11
 y 12
@@ -2036,7 +2038,7 @@ arch grass
 x 11
 y 15
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 11
 y 15
 end
@@ -2537,7 +2539,7 @@ arch grass
 x 14
 y 10
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 14
 y 10
 end
@@ -2558,8 +2560,7 @@ y 12
 end
 arch magic_mouth
 msg
-Drop sixty small diamonds to pay the
-training fee.
+Drop sixty small diamonds to pay the training fee.
 endmsg
 x 14
 y 13
@@ -2591,7 +2592,7 @@ arch grass
 x 14
 y 15
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 14
 y 15
 end
@@ -2733,7 +2734,7 @@ arch grass
 x 15
 y 11
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
 x 15
 y 11
 end
@@ -2765,7 +2766,7 @@ arch grass
 x 15
 y 14
 end
-arch flagstone_2_1_1
+arch flagstone_1_1
 x 15
 y 14
 end

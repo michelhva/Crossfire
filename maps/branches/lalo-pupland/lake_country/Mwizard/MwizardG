@@ -1,11 +1,14 @@
 arch map
-name Tower of Sorcery
+name Tower of Sorcery, Wizards
+difficulty 85
 region lakecountry
 width 37
 height 20
+enter_x 10
+enter_y 10
 msg
-Created:  1995-02-26
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1995-04-26
+Modified: 2008-11-28 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -1862,7 +1865,7 @@ arch check_floor
 slaying nine
 x 17
 y 18
-no_pass 1
+move_block all
 end
 arch flagstone
 x 17
@@ -2982,7 +2985,7 @@ arch flagstone
 x 29
 y 2
 end
-arch oakdoor
+arch exit
 slaying MwizardT
 hp 10
 sp 10

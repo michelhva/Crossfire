@@ -1,12 +1,15 @@
 arch map
-name Chaos Lair
-difficulty 1
+name Chaos Lair, Finale
+difficulty 100
 region lakecountry
 darkness 4
 width 20
 height 26
+enter_x 9
+enter_y 20
 msg
 Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
 arch button_handle
@@ -17,7 +20,7 @@ speed 0.010000
 speed_left -1.340000
 randomitems none
 end
-arch blocked
+arch cave_15
 y 1
 end
 arch large_stones
@@ -104,16 +107,16 @@ end
 arch cave23
 y 15
 end
-arch blocked
+arch cave_15
 y 16
 end
-arch blocked
+arch cave_15
 y 17
 end
-arch blocked
+arch cave_15
 y 18
 end
-arch blocked
+arch cave_15
 y 19
 end
 arch pentagram_111
@@ -133,15 +136,22 @@ sp 1000
 maxsp 1000
 exp 8000000
 dam 63
-ac -25
+ac -12
 y 20
-speed 1.000000
+speed 1.0
 speed_left -0.920000
 level 99
-attacktype 351389
-resist_electricity 100
-resist_confusion 100
-resist_acid 100
+attacktype 327680
+resist_physical 100
+resist_magic 0
+resist_fire 100
+resist_electricity 30
+resist_confusion 30
+resist_acid 30
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_blind 0
 carrying 545050
 move_type walk fly_low
 can_cast_spell 1
@@ -152,12 +162,7 @@ end
 arch dragonslayer
 name Dragonbane
 msg
-Mopoon's Dragonbane. It was forged
-long long ago. The first master of the
-the sword has been forgotten, together
-with the arcane magic that forged it.
-The Dragonbane glows with hunger for
-dragon blood.
+Mopoon's Dragonbane.  It was forged long long ago.  The first master of the the sword has been forgotten, together with the arcane magic that forged it.  The Dragonbane glows with hunger for dragon blood.
 endmsg
 Str 3
 exp 3
@@ -194,10 +199,10 @@ arch gem
 nrof 9999
 end
 end
-arch blocked
+arch cave_15
 x 1
 end
-arch blocked
+arch cave_15
 x 1
 y 1
 end
@@ -294,15 +299,15 @@ arch cave23
 x 1
 y 16
 end
-arch blocked
+arch cave_15
 x 1
 y 17
 end
-arch blocked
+arch cave_15
 x 1
 y 18
 end
-arch blocked
+arch cave_15
 x 1
 y 19
 end
@@ -421,7 +426,7 @@ arch cave23
 x 2
 y 18
 end
-arch blocked
+arch cave_15
 x 2
 y 19
 end
@@ -536,31 +541,31 @@ arch cave2
 x 3
 y 18
 end
-arch blocked
+arch cave_15
 x 3
 y 19
 end
-arch blocked
+arch cave_15
 x 3
 y 20
 end
-arch blocked
+arch cave_15
 x 3
 y 21
 end
-arch blocked
+arch cave_15
 x 3
 y 22
 end
-arch blocked
+arch cave_15
 x 3
 y 23
 end
-arch blocked
+arch cave_15
 x 3
 y 24
 end
-arch blocked
+arch cave_15
 x 3
 y 25
 end
@@ -598,7 +603,7 @@ arch large_stones
 x 4
 y 5
 end
-arch blocked
+arch cave_15
 x 4
 y 5
 end
@@ -634,11 +639,13 @@ exp 400000
 dam 40
 x 4
 y 8
-speed 0.700000
-speed_left -1.840000
+speed 0.7
 level 30
 attacktype 29
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
 carrying 35000
 move_type walk fly_low
 arch abil_icestorm
@@ -729,11 +736,11 @@ arch cave23
 x 4
 y 20
 end
-arch blocked
+arch cave_15
 x 4
 y 21
 end
-arch blocked
+arch cave_15
 x 4
 y 22
 end
@@ -866,7 +873,7 @@ x 4
 y 24
 connected 3
 end
-arch blocked
+arch cave_15
 x 4
 y 25
 end
@@ -948,7 +955,7 @@ arch large_stones
 x 5
 y 12
 end
-arch blocked
+arch cave_15
 x 5
 y 12
 end
@@ -1004,19 +1011,19 @@ arch cave22
 x 5
 y 20
 end
-arch blocked
+arch cave_15
 x 5
 y 21
 end
-arch blocked
+arch cave_15
 x 5
 y 22
 end
-arch blocked
+arch cave_15
 x 5
 y 23
 end
-arch blocked
+arch cave_15
 x 5
 y 24
 end
@@ -1139,11 +1146,11 @@ arch cave23
 x 6
 y 19
 end
-arch blocked
+arch cave_15
 x 6
 y 20
 end
-arch blocked
+arch cave_15
 x 6
 y 21
 end
@@ -1256,29 +1263,26 @@ maxsp 300
 exp 300000
 x 7
 y 14
-speed 0.400000
-speed_left -1.260000
+speed 0.4
 level 30
-resist_electricity 100
-resist_cold 100
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
 carrying 35000
 move_type walk fly_low
 arch gem
 nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
 end
 arch spell_sm_lightning
 end
 arch abil_icestorm
 end
 arch spell_mass_confusion
+end
+arch spell_color_spray
 end
 end
 arch large_stones
@@ -1387,29 +1391,26 @@ maxsp 300
 exp 300000
 x 8
 y 5
-speed 0.400000
-speed_left -1.310000
+speed 0.4
 level 30
-resist_electricity 100
-resist_cold 100
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
 carrying 35000
 move_type walk fly_low
 arch gem
 nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
 end
 arch spell_sm_lightning
 end
 arch abil_icestorm
 end
 arch spell_mass_confusion
+end
+arch spell_color_spray
 end
 end
 arch large_stones
@@ -1466,8 +1467,7 @@ y 18
 end
 arch magic_mouth
 msg
-You enter the Lair of the Chaos Lord.
-Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.  Do you see him? If not, you will soon.
 endmsg
 x 8
 y 19
@@ -1505,7 +1505,7 @@ end
 arch large_stones
 x 8
 y 22
-no_pass 1
+move_block all
 end
 arch large_stones
 x 8
@@ -1644,8 +1644,7 @@ speed_left -12.100000
 end
 arch magic_mouth
 msg
-You enter the Lair of the Chaos Lord.
-Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.  Do you see him? If not, you will soon.
 endmsg
 x 9
 y 19
@@ -1683,7 +1682,7 @@ end
 arch large_stones
 x 9
 y 22
-no_pass 1
+move_block all
 end
 arch large_stones
 x 9
@@ -1801,8 +1800,7 @@ y 18
 end
 arch magic_mouth
 msg
-You enter the Lair of the Chaos Lord.
-Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.  Do you see him? If not, you will soon.
 endmsg
 x 10
 y 19
@@ -1840,7 +1838,7 @@ end
 arch large_stones
 x 10
 y 22
-no_pass 1
+move_block all
 end
 arch large_stones
 x 10
@@ -1854,7 +1852,7 @@ arch large_stones
 x 10
 y 25
 end
-arch blocked
+arch cave_15
 x 11
 end
 arch large_stones
@@ -1957,8 +1955,7 @@ y 18
 end
 arch magic_mouth
 msg
-You enter the Lair of the Chaos Lord.
-Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.  Do you see him? If not, you will soon.
 endmsg
 x 11
 y 19
@@ -2021,14 +2018,14 @@ arch cave10
 x 11
 y 25
 end
-arch blocked
+arch cave_15
 x 12
 end
-arch blocked
+arch cave_15
 x 12
 y 1
 end
-arch blocked
+arch cave_15
 x 12
 y 2
 end
@@ -2172,7 +2169,7 @@ arch cave9
 x 12
 y 25
 end
-arch blocked
+arch cave_15
 x 13
 end
 arch large_stones
@@ -2303,6 +2300,10 @@ arch cave3
 x 13
 y 21
 end
+arch medium_stones
+x 13
+y 22
+end
 arch cave23
 x 13
 y 22
@@ -2331,7 +2332,7 @@ arch cave1
 x 13
 y 25
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch large_stones
@@ -2368,29 +2369,26 @@ maxsp 300
 exp 300000
 x 14
 y 4
-speed 0.400000
-speed_left -2.590000
+speed 0.4
 level 30
-resist_electricity 100
-resist_cold 100
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
 carrying 35000
 move_type walk fly_low
 arch gem
 nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
 end
 arch spell_sm_lightning
 end
 arch abil_icestorm
 end
 arch spell_mass_confusion
+end
+arch spell_color_spray
 end
 end
 arch large_stones
@@ -2465,11 +2463,13 @@ exp 400000
 dam 40
 x 14
 y 15
-speed 0.700000
-speed_left -1.840000
+speed 0.7
 level 30
 attacktype 29
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
 carrying 35000
 move_type walk fly_low
 arch abil_icestorm
@@ -3419,7 +3419,7 @@ arch cave2
 x 18
 y 25
 end
-arch blocked
+arch cave_15
 x 19
 end
 arch large_stones
@@ -3549,6 +3549,10 @@ end
 arch cave1
 x 19
 y 16
+end
+arch medium_stones
+x 19
+y 17
 end
 arch cave1
 x 19

@@ -1,11 +1,13 @@
 arch map
-name Arena
-difficulty 1
-region lakecountry
+name Arena of Lake Country
+difficulty 25
+region butakisfortress
 width 40
 height 30
+enter_y 20
 msg
-Created:  1995-02-03
+Created:  1995-05-03
+Modified: 2012-02-06 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -129,7 +131,7 @@ end
 arch dungeon_floor
 y 20
 end
-arch oakdoor
+arch oakdoor_1
 slaying Butakis0
 hp 16
 sp 16
@@ -138,7 +140,7 @@ end
 arch dungeon_floor
 y 21
 end
-arch oakdoor
+arch oakdoor_1
 slaying Butakis0
 hp 16
 sp 16
@@ -284,11 +286,8 @@ y 21
 end
 arch sign
 msg
-This arena is used to judge if a
-prisoner should die or allowed to be
-free. If you want to try your luck go
-to the towers of luck in inner city.
-                     -Arena Management
+This arena is used to judge if a prisoner should die or allowed to be free.  If you want to try your luck go to the towers of luck in inner city.
+ -Arena Management
 endmsg
 x 1
 y 21
@@ -490,7 +489,7 @@ end
 arch locked_door2
 slaying arena
 msg
-You need arena key to open this door.
+You need the arena key to open this door.
 endmsg
 x 2
 y 14
@@ -2666,8 +2665,7 @@ end
 arch locked_door1
 slaying arena
 msg
-You need the arena key to open this
-door.
+You need the arena key to open this door.
 endmsg
 x 9
 y 2
@@ -2874,11 +2872,7 @@ y 19
 end
 arch sign
 msg
-Go to middle of the arena and say
-'start' when you are ready.
-No magic is can be casted in the
-arena and adjacent areas to prevent
-magical means of fleeing..
+Go to middle of the arena and say 'start' when you are ready.  No magic is can be casted in the arena and adjacent areas to prevent magical means of fleeing..
 endmsg
 x 9
 y 19
@@ -2985,8 +2979,7 @@ y 28
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 9
 y 28
@@ -3011,8 +3004,7 @@ y 1
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 10
 y 1
@@ -3674,8 +3666,7 @@ end
 arch locked_door1
 slaying arena
 msg
-You need the arena key to open this
-door.
+You need the arena key to open this door.
 endmsg
 x 12
 y 2
@@ -3969,8 +3960,7 @@ end
 arch locked_door1
 slaying arena
 msg
-You need the arena key to open this
-door.
+You need the arena key to open this door.
 endmsg
 x 12
 y 27
@@ -6117,7 +6107,7 @@ y 14
 end
 arch magic_ear
 msg
-@match Start|start
+@match start
 Now fight your opponent.
 endmsg
 x 19
@@ -6983,8 +6973,7 @@ end
 arch locked_door1
 slaying arena
 msg
-You need the arena key to open this
-door.
+You need the arena key to open this door.
 endmsg
 x 22
 y 2
@@ -7292,8 +7281,7 @@ end
 arch locked_door1
 slaying arena
 msg
-You need the arena key to open this
-door.
+You need the arena key to open this door.
 endmsg
 x 22
 y 27
@@ -7322,8 +7310,7 @@ y 1
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 23
 y 1
@@ -7646,8 +7633,7 @@ y 28
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 23
 y 28
@@ -8623,8 +8609,7 @@ end
 arch locked_door1
 slaying arena
 msg
-You need the arena key to open this
-door.
+You need the arena key to open this door.
 endmsg
 x 27
 y 2
@@ -8900,8 +8885,7 @@ end
 arch locked_door1
 slaying arena
 msg
-You need the arena key to open this
-door.
+You need the arena key to open this door.
 endmsg
 x 27
 y 27
@@ -9273,8 +9257,7 @@ end
 arch locked_door1
 slaying arena
 msg
-You need the arena key to open this
-door.
+You need the arena key to open this door.
 endmsg
 x 29
 y 2
@@ -9586,8 +9569,7 @@ end
 arch locked_door1
 slaying arena
 msg
-You need the arena key to open this
-door.
+You need the arena key to open this door.
 endmsg
 x 29
 y 27
@@ -12034,7 +12016,7 @@ end
 arch locked_door2
 slaying arena
 msg
-You need arena key to open this door.
+You need the arena key to open this door.
 endmsg
 x 37
 y 12
@@ -12243,8 +12225,7 @@ y 1
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 38
 y 1
@@ -12359,8 +12340,7 @@ y 28
 end
 arch sign_w
 msg
-Go left all the way and turn to find
-the exit.
+Go left all the way and turn to find the exit.
 endmsg
 x 38
 y 28

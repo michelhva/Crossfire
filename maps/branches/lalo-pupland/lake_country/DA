@@ -1,12 +1,14 @@
 arch map
 name Dark Angel
-difficulty 1
+difficulty 75
 region lakecountry
 width 17
 height 17
+enter_x 8
+enter_y 15
 msg
 Created:  1995-03-22 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-02-03 Rick tanner
 endmsg
 end
 arch permanent_lava
@@ -201,8 +203,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-Hanuk booms, "I commands you to step
-forward!".
+Hanuk booms, "I command you to step forward!"
 endmsg
 x 2
 y 2
@@ -257,8 +258,7 @@ y 13
 end
 arch magic_mouth
 msg
-Hanuk booms, "I commands you to step
-forward!"
+Hanuk booms, "I command you to step forward!"
 endmsg
 x 2
 y 14
@@ -870,7 +870,7 @@ ac -20
 x 8
 y 8
 speed 0.500000
-level 100
+level 120
 attacktype 285
 resist_physical 100
 resist_fire 100
@@ -883,14 +883,7 @@ reflect_spell 1
 arch horn
 name Golden Unicorn Horn
 msg
-A beautiful unicorn horn shines with
-golden light. You feel really soothing
-holding it.
-It sure is one of the most powerful
-healing artifact in the realm. It is
-rumored to have been created by a god of
-healing. Hanuk imprisoned the god by
-trickery and acquired the artifact.
+A beautiful unicorn horn shines with golden light.  You feel really soothing holding it.  It sure is one of the most powerful healing artifact in the realm.  It is rumored to have been created by a god of healing.  Hanuk imprisoned the god by trickery and acquired the artifact.
 endmsg
 face u_horn.114
 hp 100
@@ -944,8 +937,7 @@ y 11
 end
 arch magic_mouth
 msg
-Hanuk says, "Make your sacrifice and I
-will let you go."
+Hanuk says, "Make your sacrifice and I will let you go."
 endmsg
 x 8
 y 12
@@ -1524,8 +1516,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-Hanuk booms, "I commands you to step
-forward!".
+Hanuk booms, "I command you to step forward!"
 endmsg
 x 14
 y 2
@@ -1580,8 +1571,7 @@ y 13
 end
 arch magic_mouth
 msg
-Hanuk booms, "I commands you to step
-forward!"
+Hanuk booms, "I command you to step forward!"
 endmsg
 x 14
 y 14

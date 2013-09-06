@@ -1,12 +1,14 @@
 arch map
-name Towers of Luck
-difficulty 1
-region lakecountry
+name Towers of Luck, 2nd Floor
+difficulty 60
+region butakisfortress
 width 32
 height 32
+enter_x 30
+enter_y 17
 msg
 Created:  1995-05-01 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2005-06-03 Gene Alexander
+Modified: 2012-02-05 Rick Tanner
 Note: randomized 2 in 8 chance of
 getting figurine of xan based on chance
 of one of the other buttons being pushed.
@@ -3072,8 +3074,7 @@ y 15
 end
 arch magic_mouth
 msg
-Sacrify 99 platinum coins for your
-chance
+Sacrify 99 platinum coins for your chance.
 endmsg
 x 14
 y 16
@@ -3302,8 +3303,7 @@ y 15
 end
 arch magic_mouth
 msg
-Sacrify 666 platinum coins for a
-chance
+Sacrify 666 platinum coins for a chance.
 endmsg
 x 15
 y 16
@@ -3341,7 +3341,7 @@ connected 5
 end
 arch magic_mouth
 msg
-Sacrify 66 diamonds for a chance
+Sacrify 66 diamonds for a chance.
 endmsg
 x 15
 y 18
@@ -3365,8 +3365,7 @@ end
 arch sign
 msg
 Note:
-We reserve the right to ignore the
-request for a chance to anyone.
+We reserve the right to ignore the request for a chance to anyone.
 -nevermind.
 endmsg
 x 15
@@ -3556,7 +3555,7 @@ y 15
 end
 arch magic_mouth
 msg
-Sacrify 3333 platinum coins for a chance
+Sacrify 3333 platinum coins for a chance.
 endmsg
 x 16
 y 16
@@ -5610,8 +5609,7 @@ y 16
 end
 arch magic_mouth
 msg
-Open it and do not think of coming
-back
+Open it and do not think of coming back.
 endmsg
 x 27
 y 17
@@ -5823,12 +5821,7 @@ end
 arch sign_w
 msg
 Rules and warnings:
-This is an arena. You enter and
-cannot come out until your luck is good
-enough to find an exit.
-This arena is not for the weak. The
-winner will gain the symbol of mightiest
-of the realm.
+This is an arena.  You enter and cannot come out until your luck is good enough to find an exit.  This arena is not for the weak.  The winner will gain the symbol of mightiest of the realm.
 endmsg
 x 28
 y 16
@@ -5840,12 +5833,7 @@ end
 arch sign_w
 msg
 Rules and warnings:
-This is an arena. You enter and
-cannot come out until your luck is good
-enough to find an exit.
-This arena is not for the weak. The
-winner will gain the symbol of mightiest
-of the realm.
+This is an arena. You enter and cannot come out until your luck is good enough to find an exit.  This arena is not for the weak.  The winner will gain the symbol of mightiest of the realm.
 endmsg
 x 28
 y 17
@@ -6018,7 +6006,7 @@ end
 arch sign_e
 msg
 Try more of your luck?
-Go upstairs
+Go upstairs.
 endmsg
 x 29
 y 10
@@ -6302,8 +6290,7 @@ connected 21
 end
 arch magic_mouth
 msg
-If the entrance is blocked, it means
-it's in use. Come back later.
+If the entrance is blocked, it means it's in use.  Come back later.
 endmsg
 x 30
 y 16
@@ -6321,8 +6308,7 @@ y 16
 end
 arch magic_mouth
 msg
-If the entrance is blocked, it means
-it's in use. Come back later.
+If the entrance is blocked, it means it's in use.  Come back later.
 endmsg
 x 30
 y 17
@@ -6393,9 +6379,7 @@ y 24
 end
 arch magic_mouth
 msg
-If the inner door is closed,  you are
-out of luck. Well, still you can get
-closer to take a look of what's inside.
+If the inner door is closed, you are out of luck.  Well, still you can get closer to take a look of what's inside.
 endmsg
 x 30
 y 25

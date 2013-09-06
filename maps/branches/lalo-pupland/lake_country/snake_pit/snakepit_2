@@ -1,13 +1,15 @@
 arch map
-name Snake Pit
-difficulty 1
+name Snake Pit, Level 2
+difficulty 85
 region lakecountry
 darkness 5
 width 36
 height 36
+enter_x 32
+enter_y 27
 msg
 Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-03-18 Rick Tanner
 endmsg
 end
 arch large_stones
@@ -17,7 +19,7 @@ end
 arch cave23
 y 1
 end
-arch blocked
+arch cave_15
 y 2
 end
 arch cave24
@@ -62,7 +64,7 @@ end
 arch cave17
 y 10
 end
-arch blocked
+arch cave_15
 y 11
 end
 arch large_stones
@@ -98,7 +100,7 @@ end
 arch large_stones
 y 17
 end
-arch blocked
+arch cave_15
 y 17
 end
 arch large_stones
@@ -143,37 +145,37 @@ end
 arch cave23
 y 24
 end
-arch blocked
+arch cave_15
 y 25
 end
-arch blocked
+arch cave_15
 y 26
 end
-arch blocked
+arch cave_15
 y 27
 end
-arch blocked
+arch cave_15
 y 28
 end
-arch blocked
+arch cave_15
 y 29
 end
-arch blocked
+arch cave_15
 y 30
 end
-arch blocked
+arch cave_15
 y 31
 end
-arch blocked
+arch cave_15
 y 32
 end
-arch blocked
+arch cave_15
 y 33
 end
-arch blocked
+arch cave_15
 y 34
 end
-arch blocked
+arch cave_15
 y 35
 end
 arch large_stones
@@ -204,9 +206,7 @@ y 3
 end
 arch magic_mouth
 msg
-Wind is blowing into your face.
-This cave seems to lead outside of
-the mountain.
+Wind is blowing into your face.  This cave seems to lead outside of the mountain.
 endmsg
 x 1
 y 4
@@ -246,6 +246,10 @@ end
 arch bed_save
 x 1
 y 9
+end
+arch small_stones
+x 1
+y 10
 end
 arch cave2
 x 1
@@ -327,43 +331,43 @@ arch cave23
 x 1
 y 25
 end
-arch blocked
+arch cave_15
 x 1
 y 26
 end
-arch blocked
+arch cave_15
 x 1
 y 27
 end
-arch blocked
+arch cave_15
 x 1
 y 28
 end
-arch blocked
+arch cave_15
 x 1
 y 29
 end
-arch blocked
+arch cave_15
 x 1
 y 30
 end
-arch blocked
+arch cave_15
 x 1
 y 31
 end
-arch blocked
+arch cave_15
 x 1
 y 32
 end
-arch blocked
+arch cave_15
 x 1
 y 33
 end
-arch blocked
+arch cave_15
 x 1
 y 34
 end
-arch blocked
+arch cave_15
 x 1
 y 35
 end
@@ -375,9 +379,7 @@ x 2
 end
 arch magic_mouth
 msg
-You can't see the bottom of this
-hole. It's dark and quiet. You may not
-be able to return if you enter
+You can't see the bottom of this hole.  It's dark and quiet.  You may not be able to return if you enter.
 endmsg
 x 2
 y 1
@@ -529,39 +531,39 @@ arch cave17
 x 2
 y 26
 end
-arch blocked
+arch cave_15
 x 2
 y 27
 end
-arch blocked
+arch cave_15
 x 2
 y 28
 end
-arch blocked
+arch cave_15
 x 2
 y 29
 end
-arch blocked
+arch cave_15
 x 2
 y 30
 end
-arch blocked
+arch cave_15
 x 2
 y 31
 end
-arch blocked
+arch cave_15
 x 2
 y 32
 end
-arch blocked
+arch cave_15
 x 2
 y 33
 end
-arch blocked
+arch cave_15
 x 2
 y 34
 end
-arch blocked
+arch cave_15
 x 2
 y 35
 end
@@ -588,7 +590,7 @@ arch cave2
 x 3
 y 2
 end
-arch blocked
+arch cave_15
 x 3
 y 3
 end
@@ -761,19 +763,19 @@ arch cave23
 x 3
 y 31
 end
-arch blocked
+arch cave_15
 x 3
 y 32
 end
-arch blocked
+arch cave_15
 x 3
 y 33
 end
-arch blocked
+arch cave_15
 x 3
 y 34
 end
-arch blocked
+arch cave_15
 x 3
 y 35
 end
@@ -1012,15 +1014,15 @@ arch cave23
 x 4
 y 32
 end
-arch blocked
+arch cave_15
 x 4
 y 33
 end
-arch blocked
+arch cave_15
 x 4
 y 34
 end
-arch blocked
+arch cave_15
 x 4
 y 35
 end
@@ -1191,7 +1193,7 @@ arch large_stones
 x 5
 y 25
 end
-arch blocked
+arch cave_15
 x 5
 y 25
 end
@@ -1238,15 +1240,15 @@ arch cave2
 x 5
 y 32
 end
-arch blocked
+arch cave_15
 x 5
 y 33
 end
-arch blocked
+arch cave_15
 x 5
 y 34
 end
-arch blocked
+arch cave_15
 x 5
 y 35
 end
@@ -1328,7 +1330,7 @@ arch large_stones
 x 6
 y 13
 end
-arch blocked
+arch cave_15
 x 6
 y 13
 end
@@ -1473,15 +1475,15 @@ arch cave2
 x 6
 y 32
 end
-arch blocked
+arch cave_15
 x 6
 y 33
 end
-arch blocked
+arch cave_15
 x 6
 y 34
 end
-arch blocked
+arch cave_15
 x 6
 y 35
 end
@@ -1678,15 +1680,15 @@ arch cave2
 x 7
 y 32
 end
-arch blocked
+arch cave_15
 x 7
 y 33
 end
-arch blocked
+arch cave_15
 x 7
 y 34
 end
-arch blocked
+arch cave_15
 x 7
 y 35
 end
@@ -1901,15 +1903,15 @@ arch cave2
 x 8
 y 32
 end
-arch blocked
+arch cave_15
 x 8
 y 33
 end
-arch blocked
+arch cave_15
 x 8
 y 34
 end
-arch blocked
+arch cave_15
 x 8
 y 35
 end
@@ -1933,8 +1935,7 @@ arch key2
 name jade green figurine of a small snake
 slaying jade_snake
 msg
-It flashes a rhythm attuned to some
-unknown device
+It flashes a rhythm attuned to some unknown device.
 endmsg
 face snake.111
 value 6000
@@ -1952,17 +1953,9 @@ end
 arch scroll
 msg
 My dear Kasnuk,
-As our deal goes, please keep
-treasure safe and I will do the same
-with yours.
-                    Dusanki
-P.S. I would like to know which lord
-from underworld is staying guest of our
-Chaos Lord now? I want to discuss some
-matters with Chaos Lord. But he would
-not see anyone like me. So I plan to pose
-as his visiting guest to enter his
-chamber.
+As our deal goes, please keep treasure safe and I will do the same with yours.
+ -  Dusanki
+P.S. I would like to know which lord from underworld is staying guest of our Chaos Lord now? I want to discuss some matters with Chaos Lord.  But he would not see anyone like me.  So I plan to pose as his visiting guest to enter his chamber.
 endmsg
 end
 end
@@ -1974,7 +1967,7 @@ arch cave2
 x 9
 y 2
 end
-arch blocked
+arch cave_15
 x 9
 y 3
 end
@@ -2176,15 +2169,15 @@ arch cave22
 x 9
 y 32
 end
-arch blocked
+arch cave_15
 x 9
 y 33
 end
-arch blocked
+arch cave_15
 x 9
 y 34
 end
-arch blocked
+arch cave_15
 x 9
 y 35
 end
@@ -2262,7 +2255,7 @@ arch cave2
 x 10
 y 9
 end
-arch blocked
+arch cave_15
 x 10
 y 10
 end
@@ -2363,7 +2356,7 @@ arch cave23
 x 10
 y 25
 end
-arch blocked
+arch cave_15
 x 10
 y 26
 end
@@ -2403,15 +2396,15 @@ arch cave23
 x 10
 y 32
 end
-arch blocked
+arch cave_15
 x 10
 y 33
 end
-arch blocked
+arch cave_15
 x 10
 y 34
 end
-arch blocked
+arch cave_15
 x 10
 y 35
 end
@@ -2505,11 +2498,11 @@ arch cave22
 x 11
 y 9
 end
-arch blocked
+arch cave_15
 x 11
 y 10
 end
-arch blocked
+arch cave_15
 x 11
 y 11
 end
@@ -2642,15 +2635,15 @@ arch cave2
 x 11
 y 32
 end
-arch blocked
+arch cave_15
 x 11
 y 33
 end
-arch blocked
+arch cave_15
 x 11
 y 34
 end
-arch blocked
+arch cave_15
 x 11
 y 35
 end
@@ -2680,7 +2673,7 @@ arch cave2
 x 12
 y 4
 end
-arch blocked
+arch cave_15
 x 12
 y 5
 end
@@ -2716,7 +2709,7 @@ arch cave23
 x 12
 y 11
 end
-arch blocked
+arch cave_15
 x 12
 y 12
 end
@@ -2756,11 +2749,11 @@ arch cave22
 x 12
 y 19
 end
-arch blocked
+arch cave_15
 x 12
 y 20
 end
-arch blocked
+arch cave_15
 x 12
 y 21
 end
@@ -2849,15 +2842,15 @@ arch cave22
 x 12
 y 32
 end
-arch blocked
+arch cave_15
 x 12
 y 33
 end
-arch blocked
+arch cave_15
 x 12
 y 34
 end
-arch blocked
+arch cave_15
 x 12
 y 35
 end
@@ -2943,7 +2936,7 @@ arch cave23
 x 13
 y 12
 end
-arch blocked
+arch cave_15
 x 13
 y 13
 end
@@ -2995,7 +2988,7 @@ arch cave23
 x 13
 y 21
 end
-arch blocked
+arch cave_15
 x 13
 y 22
 end
@@ -3051,22 +3044,22 @@ arch cave23
 x 13
 y 32
 end
-arch blocked
+arch cave_15
 x 13
 y 33
 end
-arch blocked
+arch cave_15
 x 13
 y 34
 end
-arch blocked
+arch cave_15
 x 13
 y 35
 end
 arch large_stones
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch cave25
@@ -3193,7 +3186,7 @@ arch cave23
 x 14
 y 22
 end
-arch blocked
+arch cave_15
 x 14
 y 23
 end
@@ -3241,15 +3234,15 @@ arch cave2
 x 14
 y 32
 end
-arch blocked
+arch cave_15
 x 14
 y 33
 end
-arch blocked
+arch cave_15
 x 14
 y 34
 end
-arch blocked
+arch cave_15
 x 14
 y 35
 end
@@ -3295,11 +3288,11 @@ arch cave2
 x 15
 y 7
 end
-arch blocked
+arch cave_15
 x 15
 y 8
 end
-arch blocked
+arch cave_15
 x 15
 y 9
 end
@@ -3343,7 +3336,7 @@ arch large_stones
 x 15
 y 15
 end
-arch blocked
+arch cave_15
 x 15
 y 15
 end
@@ -3387,7 +3380,7 @@ arch cave23
 x 15
 y 23
 end
-arch blocked
+arch cave_15
 x 15
 y 24
 end
@@ -3447,15 +3440,15 @@ arch cave2
 x 15
 y 32
 end
-arch blocked
+arch cave_15
 x 15
 y 33
 end
-arch blocked
+arch cave_15
 x 15
 y 34
 end
-arch blocked
+arch cave_15
 x 15
 y 35
 end
@@ -3649,7 +3642,7 @@ arch cave23
 x 16
 y 24
 end
-arch blocked
+arch cave_15
 x 16
 y 25
 end
@@ -3717,7 +3710,7 @@ arch cave23
 x 16
 y 34
 end
-arch blocked
+arch cave_15
 x 16
 y 35
 end
@@ -3773,8 +3766,7 @@ connected 11
 end
 arch magic_mouth
 msg
-A low husky voice ask from behide the
-rock, "Who goes there?
+A low husky voice ask from behind the rock, "Who goes there?"
 endmsg
 x 17
 y 9
@@ -3972,7 +3964,7 @@ arch cave22
 x 17
 y 34
 end
-arch blocked
+arch cave_15
 x 17
 y 35
 end
@@ -4192,15 +4184,15 @@ arch cave2
 x 18
 y 32
 end
-arch blocked
+arch cave_15
 x 18
 y 33
 end
-arch blocked
+arch cave_15
 x 18
 y 34
 end
-arch blocked
+arch cave_15
 x 18
 y 35
 end
@@ -4258,19 +4250,19 @@ arch cave20
 x 19
 y 9
 end
-arch blocked
+arch cave_15
 x 19
 y 10
 end
-arch blocked
+arch cave_15
 x 19
 y 11
 end
-arch blocked
+arch cave_15
 x 19
 y 12
 end
-arch blocked
+arch cave_15
 x 19
 y 13
 end
@@ -4278,7 +4270,7 @@ arch large_stones
 x 19
 y 14
 end
-arch blocked
+arch cave_15
 x 19
 y 14
 end
@@ -4437,15 +4429,15 @@ arch cave2
 x 19
 y 32
 end
-arch blocked
+arch cave_15
 x 19
 y 33
 end
-arch blocked
+arch cave_15
 x 19
 y 34
 end
-arch blocked
+arch cave_15
 x 19
 y 35
 end
@@ -4528,23 +4520,23 @@ arch cave17
 x 20
 y 9
 end
-arch blocked
+arch cave_15
 x 20
 y 10
 end
-arch blocked
+arch cave_15
 x 20
 y 11
 end
-arch blocked
+arch cave_15
 x 20
 y 12
 end
-arch blocked
+arch cave_15
 x 20
 y 13
 end
-arch blocked
+arch cave_15
 x 20
 y 14
 end
@@ -4657,11 +4649,11 @@ arch cave17
 x 20
 y 33
 end
-arch blocked
+arch cave_15
 x 20
 y 34
 end
-arch blocked
+arch cave_15
 x 20
 y 35
 end
@@ -4755,7 +4747,7 @@ arch cave23
 x 21
 y 14
 end
-arch blocked
+arch cave_15
 x 21
 y 15
 end
@@ -4820,7 +4812,7 @@ arch cave14
 name illusionary wall
 x 21
 y 26
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 21
@@ -4870,7 +4862,7 @@ arch cave23
 x 21
 y 34
 end
-arch blocked
+arch cave_15
 x 21
 y 35
 end
@@ -5030,7 +5022,7 @@ y 24
 end
 arch magic_mouth
 msg
-You feel unexpected draft and heat
+You feel unexpected draft and heat.
 endmsg
 x 22
 y 25
@@ -5099,7 +5091,7 @@ arch cave23
 x 22
 y 35
 end
-arch blocked
+arch cave_15
 x 23
 end
 arch large_stones
@@ -5320,7 +5312,7 @@ arch cave2
 x 23
 y 35
 end
-arch blocked
+arch cave_15
 x 24
 end
 arch large_stones
@@ -5375,7 +5367,7 @@ arch cave2
 x 24
 y 8
 end
-arch blocked
+arch cave_15
 x 24
 y 9
 end
@@ -5395,7 +5387,7 @@ arch large_stones
 x 24
 y 12
 end
-arch blocked
+arch cave_15
 x 24
 y 12
 end
@@ -5537,7 +5529,7 @@ arch cave22
 x 24
 y 35
 end
-arch blocked
+arch cave_15
 x 25
 end
 arch cave19
@@ -5750,10 +5742,10 @@ arch cave23
 x 25
 y 35
 end
-arch blocked
+arch cave_15
 x 26
 end
-arch blocked
+arch cave_15
 x 26
 y 1
 end
@@ -5968,7 +5960,7 @@ arch cave2
 x 26
 y 35
 end
-arch blocked
+arch cave_15
 x 27
 end
 arch cave24
@@ -6169,7 +6161,7 @@ arch cave2
 x 27
 y 35
 end
-arch blocked
+arch cave_15
 x 28
 end
 arch large_stones
@@ -6401,7 +6393,7 @@ attacktype 82945
 resist_fire 30
 resist_electricity 30
 resist_poison 100
-move_type fly_low
+move_type walk fly_low
 unaggressive 0
 can_see_in_dark 1
 arch abil_fear
@@ -6643,7 +6635,7 @@ arch cave23
 x 30
 y 9
 end
-arch blocked
+arch cave_15
 x 30
 y 10
 end
@@ -6693,11 +6685,7 @@ y 16
 end
 arch magic_mouth
 msg
-Around the altar, you see scraps and
-ashes of burnt-out human corpses.
-The purple flame enveloping the blood-
-stained altar flares as you step close.
-You feel its unearthly hunger
+Around the altar, you see scraps and ashes of burnt-out human corpses.  The purple flame enveloping the blood-stained altar flares as you step close.  You feel its unearthly hunger.
 endmsg
 x 30
 y 17
@@ -6828,10 +6816,10 @@ arch cave22
 x 30
 y 35
 end
-arch blocked
+arch cave_15
 x 31
 end
-arch blocked
+arch cave_15
 x 31
 y 1
 end
@@ -6879,7 +6867,7 @@ arch cave20
 x 31
 y 9
 end
-arch blocked
+arch cave_15
 x 31
 y 10
 end
@@ -6956,7 +6944,7 @@ arch cave14
 name illusionary wall
 x 31
 y 20
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 31
@@ -7034,14 +7022,14 @@ arch cave2
 x 31
 y 34
 end
-arch blocked
+arch cave_15
 x 31
 y 35
 end
-arch blocked
+arch cave_15
 x 32
 end
-arch blocked
+arch cave_15
 x 32
 y 1
 end
@@ -7081,23 +7069,23 @@ arch cave23
 x 32
 y 8
 end
-arch blocked
+arch cave_15
 x 32
 y 9
 end
-arch blocked
+arch cave_15
 x 32
 y 10
 end
-arch blocked
+arch cave_15
 x 32
 y 11
 end
-arch blocked
+arch cave_15
 x 32
 y 12
 end
-arch blocked
+arch cave_15
 x 32
 y 13
 end
@@ -7142,7 +7130,7 @@ arch cave16
 name illusionary wall
 x 32
 y 20
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 32
@@ -7228,14 +7216,14 @@ arch cave22
 x 32
 y 34
 end
-arch blocked
+arch cave_15
 x 32
 y 35
 end
-arch blocked
+arch cave_15
 x 33
 end
-arch blocked
+arch cave_15
 x 33
 y 1
 end
@@ -7291,19 +7279,19 @@ arch cave2
 x 33
 y 8
 end
-arch blocked
+arch cave_15
 x 33
 y 9
 end
-arch blocked
+arch cave_15
 x 33
 y 10
 end
-arch blocked
+arch cave_15
 x 33
 y 11
 end
-arch blocked
+arch cave_15
 x 33
 y 12
 end
@@ -7439,15 +7427,15 @@ arch cave23
 x 33
 y 33
 end
-arch blocked
+arch cave_15
 x 33
 y 34
 end
-arch blocked
+arch cave_15
 x 33
 y 35
 end
-arch blocked
+arch cave_15
 x 34
 end
 arch large_stones
@@ -7478,11 +7466,11 @@ arch cave2
 x 34
 y 4
 end
-arch blocked
+arch cave_15
 x 34
 y 5
 end
-arch blocked
+arch cave_15
 x 34
 y 6
 end
@@ -7494,19 +7482,19 @@ arch cave22
 x 34
 y 8
 end
-arch blocked
+arch cave_15
 x 34
 y 9
 end
-arch blocked
+arch cave_15
 x 34
 y 10
 end
-arch blocked
+arch cave_15
 x 34
 y 11
 end
-arch blocked
+arch cave_15
 x 34
 y 12
 end
@@ -7542,15 +7530,7 @@ y 15
 end
 arch magic_mouth
 msg
-Echoing howling can be heard from
-below. More terrifying than anyone
-could imagine. An ominous chill creeps
-up your spine.
-Maybe it's better to leave before
-meeting your doom. Greed for something
-that you are not even sure of being
-there? Better leave now before it's too
-late
+Echoing howling can be heard from below.  More terrifying than anyone could imagine.  An ominous chill creeps up your spine.  Maybe it's better to leave before meeting your doom.  Greed for something that you are not even sure of being there? Better leave now before it's too late...
 endmsg
 x 34
 y 16
@@ -7568,9 +7548,7 @@ y 16
 end
 arch magic_mouth
 msg
-An chilly voice speaks,
-"Congratulations!! for find your way
-to doom."
+An chilly voice speaks, "Congratulations! For finding your way to your doom!!"
 endmsg
 x 34
 y 17
@@ -7597,7 +7575,7 @@ arch locked_door1
 name wall of force
 slaying blue_crystal
 msg
-The wall of force pushes you back
+The wall of force pushes you back.
 endmsg
 face enchantment.111
 x 34
@@ -7687,15 +7665,15 @@ arch cave20
 x 34
 y 33
 end
-arch blocked
+arch cave_15
 x 34
 y 34
 end
-arch blocked
+arch cave_15
 x 34
 y 35
 end
-arch blocked
+arch cave_15
 x 35
 end
 arch large_stones
@@ -7730,39 +7708,39 @@ arch cave20
 x 35
 y 4
 end
-arch blocked
+arch cave_15
 x 35
 y 5
 end
-arch blocked
+arch cave_15
 x 35
 y 6
 end
-arch blocked
+arch cave_15
 x 35
 y 7
 end
-arch blocked
+arch cave_15
 x 35
 y 8
 end
-arch blocked
+arch cave_15
 x 35
 y 9
 end
-arch blocked
+arch cave_15
 x 35
 y 10
 end
-arch blocked
+arch cave_15
 x 35
 y 11
 end
-arch blocked
+arch cave_15
 x 35
 y 12
 end
-arch blocked
+arch cave_15
 x 35
 y 13
 end
@@ -7774,7 +7752,7 @@ arch large_stones
 x 35
 y 14
 end
-arch blocked
+arch cave_15
 x 35
 y 14
 end
@@ -7786,7 +7764,7 @@ arch large_stones
 x 35
 y 15
 end
-arch blocked
+arch cave_15
 x 35
 y 15
 end
@@ -7798,7 +7776,7 @@ arch large_stones
 x 35
 y 16
 end
-arch blocked
+arch cave_15
 x 35
 y 16
 end
@@ -7810,7 +7788,7 @@ arch large_stones
 x 35
 y 17
 end
-arch blocked
+arch cave_15
 x 35
 y 17
 end
@@ -7822,7 +7800,7 @@ arch large_stones
 x 35
 y 18
 end
-arch blocked
+arch cave_15
 x 35
 y 18
 end
@@ -7858,7 +7836,7 @@ arch cave20
 x 35
 y 22
 end
-arch blocked
+arch cave_15
 x 35
 y 23
 end
@@ -7894,27 +7872,27 @@ arch cave22
 x 35
 y 29
 end
-arch blocked
+arch cave_15
 x 35
 y 30
 end
-arch blocked
+arch cave_15
 x 35
 y 31
 end
-arch blocked
+arch cave_15
 x 35
 y 32
 end
-arch blocked
+arch cave_15
 x 35
 y 33
 end
-arch blocked
+arch cave_15
 x 35
 y 34
 end
-arch blocked
+arch cave_15
 x 35
 y 35
 end

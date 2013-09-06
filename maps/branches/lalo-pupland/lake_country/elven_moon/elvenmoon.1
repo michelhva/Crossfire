@@ -1,10 +1,14 @@
 arch map
-name Elven Moon
-difficulty 1
+name Elven Moon Entrance
+difficulty 30
+region lakecountry
 width 32
 height 32
+enter_x 1
+enter_y 7
 msg
-Created:  2006-07-23
+Created:  2006-07-23 Brad Reilly
+Modified: 2012-03-25 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -396,11 +400,10 @@ y 6
 end
 arch magic_mouth
 msg
-There is a soft voice on the wind.
-It sings in a magical voice:
+There is a soft voice on the wind. It sings in a magical voice:
 The elven lords of old
 Clad in green from head to toe
-They seek  treasure not of gold
+They seek treasure not of gold
 Armed with wooden bow
 Crystals pure as the gods foretold
 Trying as time and green in glow
@@ -1084,35 +1087,28 @@ arch ent
 name Oakie the Ent
 title of Oakie
 msg
-@match elf|Elf|elves|Elves
-Elven Moon is a sacred place where
-the elves come to pray.
-@match Elven Moon|elven moon|Elvenmoon|Elven moon
+@match elf|elves
+Elven Moon is a sacred place where the elves come to pray.
+@match elven moon|Elvenmoon
 The door to Elven Moon is at the center of the lake.
 @match lake
 The lake is north east of here.  Did you need help?
-@match yes|help|Help|how*
-One must speak the magic words, then the
-bridge will appear by the flowers.
+@match yes|help|how*
+One must speak the magic words, then the bridge will appear by the flowers.
 @match magic|magic words
-The elves change the words every now
-and then.  Seek the guardian of the
-maze.
+The elves change the words every now and then.  Seek the guardian of the maze.
 @match guardian|maze
-Somewere in the maze is the guardian
-who knows the magic words.
+Somewere in the maze is the guardian who knows the magic words.
 @match clumsy|clumsy folks
 Orcs and Trolls.
-@match Orcs|orcs|Orc|orc
+@match orcs|orc
 Their axes kill many trees.
 @match tree|trees
 Ah yes... my brothers and sisters.
-@match trolls|Trolls|troll|Troll
-Trolls have no respect.  Not even for
-thier own kind.
+@match trolls|troll
+Trolls have no respect.  Not even for thier own kind.
 @match *
-Hey! Careful of my roots stranger.
-The Elves do not like clumsy folks.
+Hey! Careful of my roots stranger.  The Elves do not like clumsy folks.
 endmsg
 hp 3000
 maxhp 3000
@@ -1125,8 +1121,6 @@ level 24
 sleep 0
 stand_still 1
 can_use_skill 1
-arch skill_throwing
-end
 arch t_lboulder
 end
 arch t_lboulder
@@ -1134,8 +1128,6 @@ end
 arch t_lboulder
 end
 arch t_lboulder
-end
-arch ability_stone_throw
 end
 end
 arch grassmedium
@@ -1795,8 +1787,7 @@ move_block all
 end
 arch magic_mouth
 msg
-The large tree creaks.
-Was there a face on the tree?
+The large tree creaks.  Was there a face on the tree?
 endmsg
 food 1
 x 8
@@ -2318,34 +2309,19 @@ x 10
 y 31
 move_block all
 end
-arch grass
-x 11
-end
 arch shallow_sea
 name water
 x 11
-end
-arch grass
-x 11
-y 1
 end
 arch shallow_sea
 name water
 x 11
 y 1
 end
-arch grass
-x 11
-y 2
-end
 arch shallow_sea
 name water
 x 11
 y 2
-end
-arch grass
-x 11
-y 3
 end
 arch shallow_sea
 name water
@@ -2377,10 +2353,6 @@ arch grass
 x 11
 y 7
 end
-arch grass
-x 11
-y 8
-end
 arch shallow_sea
 name water
 x 11
@@ -2390,10 +2362,6 @@ arch shallow_sea
 name water
 x 11
 y 9
-end
-arch grass
-x 11
-y 10
 end
 arch shallow_sea
 name water
@@ -2533,9 +2501,6 @@ x 11
 y 31
 move_block all
 end
-arch grass
-x 12
-end
 arch shallow_sea
 name water
 x 12
@@ -2555,10 +2520,6 @@ end
 arch flowers_permanent
 x 12
 y 2
-end
-arch grass
-x 12
-y 3
 end
 arch shallow_sea
 name water
@@ -2594,10 +2555,6 @@ arch ytree_2
 x 12
 y 7
 end
-arch grass
-x 12
-y 8
-end
 arch shallow_sea
 name water
 x 12
@@ -2607,10 +2564,6 @@ arch shallow_sea
 name water
 x 12
 y 9
-end
-arch grass
-x 12
-y 10
 end
 arch shallow_sea
 name water
@@ -2771,18 +2724,10 @@ arch forestsparse
 x 13
 y 2
 end
-arch grass
-x 13
-y 3
-end
 arch shallow_sea
 name water
 x 13
 y 3
-end
-arch grass
-x 13
-y 4
 end
 arch shallow_sea
 name water
@@ -2990,10 +2935,6 @@ end
 arch forestsparse
 x 14
 y 3
-end
-arch grass
-x 14
-y 4
 end
 arch shallow_sea
 name water
@@ -3465,10 +3406,6 @@ name water
 x 16
 y 4
 end
-arch grass
-x 16
-y 5
-end
 arch shallow_sea
 name water
 x 16
@@ -3665,10 +3602,6 @@ arch shallow_sea
 name water
 x 17
 y 4
-end
-arch grassdark
-x 17
-y 5
 end
 arch shallow_sea
 name water
@@ -3959,10 +3892,6 @@ arch grassdark
 x 18
 y 6
 end
-arch grassdark
-x 18
-y 7
-end
 arch shallow_sea
 name water
 x 18
@@ -3977,10 +3906,6 @@ arch shallow_sea
 name water
 x 18
 y 9
-end
-arch grassdark
-x 18
-y 10
 end
 arch shallow_sea
 name water
@@ -4144,10 +4069,6 @@ end
 arch grassdark
 x 19
 y 2
-end
-arch grassdark
-x 19
-y 3
 end
 arch shallow_sea
 name water
@@ -4655,10 +4576,6 @@ name water
 x 21
 y 9
 end
-arch grassdark
-x 21
-y 10
-end
 arch shallow_sea
 name water
 x 21
@@ -4857,10 +4774,6 @@ name water
 x 22
 y 4
 end
-arch grassdark
-x 22
-y 5
-end
 arch shallow_sea
 name water
 x 22
@@ -4880,10 +4793,6 @@ hp 18
 sp 15
 x 22
 y 6
-end
-arch grassdark
-x 22
-y 7
 end
 arch shallow_sea
 name water
@@ -5093,10 +5002,6 @@ name water
 x 23
 y 8
 end
-arch grassdark
-x 23
-y 9
-end
 arch shallow_sea
 name water
 x 23
@@ -5301,10 +5206,6 @@ arch grassdark
 x 24
 y 2
 end
-arch grassdark
-x 24
-y 3
-end
 arch shallow_sea
 name water
 x 24
@@ -5329,10 +5230,6 @@ arch shallow_sea
 name water
 x 24
 y 7
-end
-arch grassdark
-x 24
-y 8
 end
 arch shallow_sea
 name water
@@ -5525,10 +5422,6 @@ arch grassdark
 x 25
 y 3
 end
-arch grassdark
-x 25
-y 4
-end
 arch shallow_sea
 name water
 x 25
@@ -5543,10 +5436,6 @@ arch shallow_sea
 name water
 x 25
 y 6
-end
-arch grassdark
-x 25
-y 7
 end
 arch shallow_sea
 name water
@@ -6236,7 +6125,7 @@ name elf lass Fey
 msg
 @match pear|pear tree|pear trees
 Did you know that pears are favored by the Queen?
-@match Queen|queen
+@match queen
 She is very beautiful.
 @match Seegin
 Seegin is wonderful.
@@ -6245,9 +6134,7 @@ Wonderful.
 @match rose|rose bush
 Some roses may act as keys.
 @match *
-I attend the pear trees and my rose bush.
-I don't have time to fetch some pipeweed for Seegin.
-Could you bring me some?  It is for a gift.
+I attend the pear trees and my rose bush.  I don't have time to fetch some pipeweed for Seegin.  Could you bring me some?  It is for a gift.
 endmsg
 x 28
 y 3
@@ -6301,11 +6188,10 @@ msg
 @match password
 Ask the Guardian.
 @match lake
-The lake helps protect the temple of Elven Moon.
-A password is required to cross.
-@match Elven Moon|elven moon|temple
+The lake helps protect the temple of Elven Moon.  A password is required to cross.
+@match elven moon|temple
 Elven Moon is a sacred place.  You best leave.
-@match Guardian|guardian
+@match guardian
 The Guardian is somewere in the labyrinth.
 @match labyrinth
 Take the south passage.

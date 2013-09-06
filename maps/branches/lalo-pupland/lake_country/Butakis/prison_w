@@ -1,12 +1,14 @@
 arch map
-name Execution Chamber
-difficulty 1
-region lakecountry
+name Fortress of Lord Butakis Prison, Execution Chamber
+difficulty 35
+region butakisfortress
 width 16
 height 16
+enter_x 15
+enter_y 1
 msg
-Created:  1995-02-28
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1995-03-28
+Modified: 2012-02-07 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -871,7 +873,7 @@ arch dungeon_floor
 x 7
 y 5
 end
-arch dun2
+arch dun_2_2_4
 x 7
 y 5
 end
@@ -1454,7 +1456,7 @@ y 3
 end
 arch magic_ear
 msg
-@match Yes|yes
+@match yes
 You hear a switch being turned.
 endmsg
 x 13
@@ -1468,11 +1470,10 @@ end
 arch knight
 name Executioner
 msg
-@match yes|Yes
-Finally. Here it goes.
+@match yes
+Finally.  Here it goes.
 @match *
-Do you have the order to terminate
-these vermins?  I can't wait anymore!
+Do you have the order to terminate these vermins?  I can't wait anymore!
 endmsg
 x 13
 y 4
@@ -1481,7 +1482,7 @@ arch dungeon_floor
 x 13
 y 5
 end
-arch dun2
+arch dun_1_4
 x 13
 y 5
 end
@@ -1722,15 +1723,15 @@ end
 arch dungeon_floor
 x 15
 end
-arch dun9
+arch dun_2_2_4
 x 15
 end
 arch dungeon_floor
 x 15
 y 1
 end
-arch oakdoor
-name oakdoor from execution chamber
+arch oakdoor_1
+name Oakdoor from Execution Chamber
 slaying prison1
 sp 4
 x 15
@@ -1740,8 +1741,8 @@ arch dungeon_floor
 x 15
 y 2
 end
-arch oakdoor
-name oakdoor from execution chamber
+arch oakdoor_1
+name Oakdoor from Execution Chamber
 slaying prison1
 sp 5
 x 15
@@ -1751,7 +1752,7 @@ arch dungeon_floor
 x 15
 y 3
 end
-arch dun3
+arch dun_1_1
 x 15
 y 3
 end

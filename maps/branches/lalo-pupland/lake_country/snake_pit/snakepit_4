@@ -1,11 +1,14 @@
 arch map
-name Snake Pit
+name Snake Pit, Level 4
 difficulty 1
 region lakecountry
 width 8
 height 8
+enter_x 1
+enter_y 5
 msg
 Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
 arch large_stones
@@ -185,8 +188,7 @@ y 3
 end
 arch magic_mouth
 msg
-You find a crude shelter from the harsh
-battles
+You find a crude shelter from the harsh battles.
 endmsg
 x 3
 y 4
@@ -199,7 +201,7 @@ arch cave21
 name fake wall
 x 3
 y 4
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 3
@@ -387,10 +389,7 @@ end
 arch scroll
 name blood stained parchment
 msg
-Don't go down! ...
-It's not for man to conquer. Only god
-can handle a monster like that!!
-Take my advise and leave
+Don't go down! ... It's not for man to conquer.  Only god can handle a monster like that!!  Take my advise and leave.
 endmsg
 x 6
 y 5
