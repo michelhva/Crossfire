@@ -1,12 +1,13 @@
 arch map
-name Wizards' Cells
-difficulty 1
-region lakecountry
+name Fortress of Lord Butakis Prison, Wizards' Cells
+difficulty 45
+region butakisfortress
 width 18
 height 16
+enter_y 14
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -91,8 +92,8 @@ end
 arch dungeon_floor
 y 13
 end
-arch oakdoor
-name oakdoor from wizards' cells
+arch oakdoor_1
+name Oakdoor from Wizards' Cells
 slaying prison1
 hp 9
 sp 4
@@ -104,8 +105,8 @@ end
 arch dungeon_floor
 y 14
 end
-arch oakdoor
-name oakdoor from wizards' cells
+arch oakdoor_1
+name Oakdoor from Wizards' Cells
 slaying prison1
 hp 9
 sp 5
@@ -996,7 +997,7 @@ move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
+can_use_range 1
 arch wand
 name stick of holding
 food 7
@@ -1349,7 +1350,7 @@ arch sea
 name antimagic fluid bath
 x 9
 y 8
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 9
@@ -1359,7 +1360,7 @@ arch sea
 name antimagic fluid bath
 x 9
 y 9
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 9
@@ -1369,7 +1370,7 @@ arch sea
 name antimagic fluid bath
 x 9
 y 10
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 9
@@ -1379,7 +1380,7 @@ arch sea
 name antimagic fluid bath
 x 9
 y 11
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 9
@@ -1389,7 +1390,7 @@ arch sea
 name antimagic fluid bath
 x 9
 y 12
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 9
@@ -1399,7 +1400,7 @@ arch sea
 name antimagic fluid bath
 x 9
 y 13
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 9
@@ -1409,7 +1410,7 @@ arch sea
 name antimagic fluid bath
 x 9
 y 14
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 9
@@ -1485,7 +1486,7 @@ arch sea
 name antimagic fluid bath
 x 10
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 10
@@ -1535,7 +1536,7 @@ arch sea
 name antimagic fluid bath
 x 10
 y 14
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 10
@@ -1624,7 +1625,7 @@ arch sea
 name antimagic fluid bath
 x 11
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 11
@@ -1695,7 +1696,7 @@ arch sea
 name antimagic fluid bath
 x 11
 y 14
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 11
@@ -1769,8 +1770,7 @@ end
 arch altar
 slaying chalice of fire
 msg
-The fluid bubbles quietly for a long
-time then subsides.
+The fluid bubbles quietly for a long time then subsides.
 endmsg
 food 1
 x 12
@@ -1781,7 +1781,7 @@ arch sea
 name antimagic fluid bath
 x 12
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 12
@@ -1828,16 +1828,15 @@ speed 0.000000
 invisible 1
 connected 37
 end
-arch button_small
-face button_sma.112
+arch detector
+slaying Twis
 x 12
 y 12
-value 1
 connected 35
 end
 arch magic_ear
 msg
-@match reward|Reward|pay|payment|repay
+@match reward|pay|payment|repay
 endmsg
 x 12
 y 12
@@ -1851,46 +1850,22 @@ arch wizard
 name Twis
 msg
 @match name|Wist
-How many time do I have to tell you
-that I am not Wist!
+How many time do I have to tell you that I am not Wist!
 @match save|help|release|escape
-Okay. Help me escape here and I will
-reward you. Here is the plan.
-Find Fiery, my apprentice and get the
-chalice of fire from him. When you get
-the chalice, I will tell you what to do
-next.
-@match chalice|Chalice
-Do you have the chalice of fire with
-you?
-@match yes|Yes
-Okay. Put it in the liquid that
-surrounds the cell. It will breach the
-antimagic power of it and restore my
-power fully.
-@match reward|Reward|pay|payment|repay
+Okay.  Help me escape here and I will reward you. Here is the plan. Find Fiery, my apprentice and get the chalice of fire from him.  When you get the chalice, I will tell you what to do next.
+@match chalice
+Do you have the chalice of fire with you?
+@match yes
+Okay.  Put it in the liquid that surrounds the cell.  It will breach the antimagic power of it and restore my power fully.
+@match reward|pay|payment|repay
 Did I promise reward?
-Ooh, okay.
-As reward, I grant you permission to my
-private study. If you have done as
-I asked, come in and I will send you
-to my study.
+Ooh, okay.  As reward, I grant you permission to my private study.  If you have done as I asked, come in and I will send you to my study.
 @match Fiery
-Fiery was my pupil. He had the chalice
-of fire. Force him to give it to you if
-you have to.
-I don't know where he is now. Search
-in the fortress and you may find him.
-... I don't care if he die.
+Fiery was my pupil.  He had the chalice of fire.  Force him to give it to you if you have to.  I don't know where he is now.  Search in the fortress and you may find him... I don't care if he dies.
 @match *
-How long do you think you can trap me
-in this place? Sooner or later I will
-get out and I will come back to crush
-you, all of you!
-Now what can you do for me?
+How long do you think you can trap me in this place? Sooner or later I will get out and I will come back to crush you, all of you! Now what can you do for me?
 endmsg
 Str 10
-Dex 10
 Con 6
 Wis 30
 Int 12
@@ -1912,7 +1887,6 @@ carrying 5000
 move_type walk
 monster 1
 unaggressive 1
-unique 1
 can_cast_spell 1
 can_use_scroll 1
 arch spell_fear
@@ -1959,7 +1933,7 @@ arch sea
 name antimagic fluid bath
 x 12
 y 14
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 12
@@ -2075,7 +2049,7 @@ arch sea
 name antimagic fluid bath
 x 13
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 13
@@ -2125,7 +2099,7 @@ arch sea
 name antimagic fluid bath
 x 13
 y 14
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 13
@@ -2189,7 +2163,7 @@ move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
+can_use_range 1
 arch wand
 name stick of holding
 food 7
@@ -2233,7 +2207,7 @@ arch sea
 name antimagic fluid bath
 x 14
 y 8
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 14
@@ -2243,7 +2217,7 @@ arch sea
 name antimagic fluid bath
 x 14
 y 9
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 14
@@ -2253,7 +2227,7 @@ arch sea
 name antimagic fluid bath
 x 14
 y 10
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 14
@@ -2263,7 +2237,7 @@ arch sea
 name antimagic fluid bath
 x 14
 y 11
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 14
@@ -2273,7 +2247,7 @@ arch sea
 name antimagic fluid bath
 x 14
 y 12
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 14
@@ -2283,7 +2257,7 @@ arch sea
 name antimagic fluid bath
 x 14
 y 13
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 14
@@ -2293,7 +2267,7 @@ arch sea
 name antimagic fluid bath
 x 14
 y 14
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 14

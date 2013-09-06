@@ -1,11 +1,14 @@
 arch map
-name Royal Church
+name Royal Church, Loft
 difficulty 1
-region lakecountry
+region butakisfortress
 width 20
 height 30
+enter_x 1
+enter_y 14
 msg
-Created:  1995-02-29
+Created:  1995-03-29
+Modified: 2012-06-08 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -278,8 +281,8 @@ y 14
 end
 arch stair_3_down
 slaying church0
-hp 1
-sp 14
+hp 3
+sp 16
 x 1
 y 14
 end
@@ -3145,8 +3148,8 @@ y 14
 end
 arch stair_3_down
 slaying church0
-hp 18
-sp 14
+hp 20
+sp 16
 x 18
 y 14
 end

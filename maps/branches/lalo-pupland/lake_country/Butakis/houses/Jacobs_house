@@ -1,12 +1,14 @@
 arch map
 name Jacob's House
-difficulty 1
-region lakecountry
+difficulty 14
+region butakisfortress
 width 20
 height 18
+enter_x 11
+enter_y 16
 msg
 Created:  1995-05-03 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-03-16 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -91,10 +93,13 @@ end
 arch wwall_2_2_1
 y 13
 end
+arch swall_1_1_half
+y 13
+end
 arch grass
 y 14
 end
-arch swall_1_1
+arch swall_2_1_1
 y 14
 end
 arch grass
@@ -560,7 +565,11 @@ arch woodfloor
 x 4
 y 13
 end
-arch wwall_2_2_4
+arch swall_1_2_half
+x 4
+y 13
+end
+arch wwall_1_3
 x 4
 y 13
 end
@@ -672,9 +681,7 @@ arch thief
 name Jacob
 msg
 @match entrance|ebony
-You find the right person.
-The entrance to ebony tiger guild is
-under the clock in the bed room.
+You found the right person.  The entrance to ebony tiger guild is under the clock in the bed room.
 endmsg
 hp 100
 dam 10
@@ -725,7 +732,7 @@ end
 arch woodfloor
 x 6
 end
-arch wwall_3_3
+arch wwall_2_1_2
 x 6
 end
 arch woodfloor
@@ -752,7 +759,7 @@ arch woodfloor
 x 6
 y 3
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 6
 y 3
 end
@@ -794,7 +801,7 @@ arch woodfloor
 x 6
 y 8
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 6
 y 8
 end
@@ -964,7 +971,11 @@ arch woodfloor
 x 7
 y 13
 end
-arch wwall_2_2_1
+arch swall_1_2_half
+x 7
+y 13
+end
+arch wwall_1_4
 x 7
 y 13
 end
@@ -1218,7 +1229,7 @@ arch woodfloor
 x 9
 y 8
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 9
 y 8
 end
@@ -1360,7 +1371,7 @@ arch woodfloor
 x 10
 y 10
 end
-arch wwall_3_2
+arch wwall_2_1_1
 x 10
 y 10
 end
@@ -1384,7 +1395,7 @@ arch woodfloor
 x 10
 y 13
 end
-arch wwall_3_1
+arch wwall_2_2_4
 x 10
 y 13
 end
@@ -1394,8 +1405,7 @@ y 14
 end
 arch sign
 msg
-Thievies are severely penalized in this
-town!!!
+Thieves are severely penalized in this town!!!
                                 -Jacob
 endmsg
 x 10
@@ -1769,7 +1779,7 @@ arch woodfloor
 x 13
 y 4
 end
-arch wwall_2_2_1
+arch wwall_1_2
 x 13
 y 4
 end
@@ -1807,7 +1817,7 @@ arch woodfloor
 x 13
 y 10
 end
-arch wwall_3_3
+arch wwall_2_2_2
 x 13
 y 10
 end
@@ -1837,7 +1847,7 @@ arch woodfloor
 x 13
 y 13
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 13
 y 13
 end
@@ -2020,7 +2030,7 @@ arch woodfloor
 x 15
 y 4
 end
-arch wwall_3_4
+arch wwall_2_1_1
 x 15
 y 4
 end
@@ -2092,7 +2102,7 @@ arch woodfloor
 x 15
 y 13
 end
-arch wwall_4
+arch wwall_3_1
 x 15
 y 13
 end
@@ -2103,13 +2113,13 @@ end
 arch door_look_2
 x 15
 y 14
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 15
 y 15
 end
-arch wwall_2_2_1
+arch wwall_1_4
 x 15
 y 15
 end
@@ -2262,10 +2272,10 @@ x 17
 y 2
 end
 arch button_plate
-name 16
+name 18
 x 17
 y 2
-connected 16
+connected 18
 end
 arch woodfloor
 x 17
@@ -2523,11 +2533,15 @@ arch wwall_2_1_2
 x 18
 y 15
 end
+arch swall_1_1_half
+x 18
+y 15
+end
 arch grass
 x 18
 y 16
 end
-arch swall_1_3
+arch swall_2_2_4
 x 18
 y 16
 end
@@ -2548,10 +2562,10 @@ x 19
 y 1
 end
 arch button_plate
-name 15
+name 18
 x 19
 y 1
-connected 15
+connected 18
 end
 arch woodfloor
 x 19

@@ -1,15 +1,15 @@
 arch map
-name Tower of Sorcery
+name Tower of Sorcery, Vault
 reset_timeout 7200
-difficulty 20
+difficulty 85
 region lakecountry
 width 21
 height 21
-enter_x 1
-enter_y 1
+enter_x 10
+enter_y 10
 msg
-Created:  1995-02-26
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1995-04-26
+Modified: 2012-03-17 Nicolas Weeger
 endmsg
 end
 arch flagstone
@@ -122,7 +122,7 @@ end
 arch cwall_2_1_1
 name fake wall
 y 17
-no_pass 0
+move_block 0
 end
 arch flagstone
 y 18
@@ -130,7 +130,7 @@ end
 arch cwall_2_1_1
 name fake wall
 y 18
-no_pass 0
+move_block 0
 end
 arch flagstone
 y 19
@@ -302,7 +302,7 @@ arch wall_2_2_1
 name fake wall
 x 1
 y 19
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 1
@@ -1126,15 +1126,9 @@ x 6
 y 16
 end
 arch amulet
-title of the Magi
-face amulet_lif.111
-Wis 2
-Int 2
-sp 5
 x 6
 y 16
-resist_magic 30
-value 1250000
+artifact the Magi
 end
 arch flagstone
 x 6
@@ -1688,10 +1682,7 @@ end
 arch dragon_shield
 name Dragon Shield
 msg
-This Dragon Shield has both red
-and green scales carefully
-smithed in. It will protect
-you well from fire and cold alike.
+This Dragon Shield has both red and green scales carefully smithed in.  It will protect you well from fire and cold alike.
 endmsg
 x 10
 y 2
@@ -1716,7 +1707,7 @@ y 4
 end
 arch magic_mouth
 msg
-The floor here is missing something made of gold
+The floor here is missing something made of gold.
 endmsg
 x 10
 y 5
@@ -1805,11 +1796,7 @@ y 13
 end
 arch uw_shield
 msg
-This shield is renowned throughout
-time, a fairy tale item for the
-wizard and warrior alike.
-The last time this was seen was
-on the mighty demon Belzebub.
+This shield is renowned throughout time, a fairy tale item for the wizard and warrior alike.  The last time this was seen was on the mighty demon Belzebub.
 endmsg
 x 10
 y 13
@@ -3391,7 +3378,7 @@ x 20
 end
 arch cwall_2_2_3
 x 20
-no_pass 0
+move_block 0
 end
 arch perm_magic_portal
 slaying Mwizard0

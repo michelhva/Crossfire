@@ -1,12 +1,14 @@
 arch map
-name Maximum Security Cells
-difficulty 1
-region lakecountry
+name Fortress of Lord Butakis Prison, Maximum Security Cells
+difficulty 45
+region butakisfortress
 width 16
 height 16
+enter_x 13
+enter_y 15
 msg
-Created:  1995-02-29
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1995-03-29
+Modified: 2012-02-06 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1101,8 +1103,7 @@ y 3
 carrying 75
 arch note
 msg
-My heart is held by Grunter. Help me
-get it back and I will reward you.
+My heart is held by Grunter.  Help me get it back and I will reward you.
 endmsg
 end
 end
@@ -1366,8 +1367,8 @@ arch dungeon_floor
 x 13
 y 15
 end
-arch oakdoor
-name oakdoor from maximum security cells
+arch oakdoor_2
+name Oakdoor from Maximum Security Cells
 slaying prison1
 hp 4
 x 13
@@ -1467,8 +1468,8 @@ arch dungeon_floor
 x 14
 y 15
 end
-arch oakdoor
-name oakdoor from maximum security cells
+arch oakdoor_2
+name Oakdoor from Maximum Security Cells
 slaying prison1
 hp 5
 x 14

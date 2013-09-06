@@ -1,12 +1,14 @@
 arch map
 name Bob's House
-difficulty 1
-region lakecountry
+difficulty 12
+region butakisfortress
 width 20
 height 18
+enter_x 11
+enter_y 16
 msg
 Created:  1995-05-03 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-03-16 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -91,10 +93,13 @@ end
 arch wwall_2_2_1
 y 13
 end
+arch swall_1_1_half
+y 13
+end
 arch grass
 y 14
 end
-arch swall_1_1
+arch swall_2_1_1
 y 14
 end
 arch grass
@@ -527,7 +532,11 @@ arch woodfloor
 x 4
 y 13
 end
-arch wwall_2_2_4
+arch swall_1_2_half
+x 4
+y 13
+end
+arch wwall_1_3
 x 4
 y 13
 end
@@ -685,7 +694,7 @@ arch woodfloor
 x 6
 y 3
 end
-arch wwall_3_3
+arch wwall_1_3
 x 6
 y 3
 end
@@ -729,7 +738,7 @@ arch woodfloor
 x 6
 y 8
 end
-arch wwall_2_2_2
+arch wwall_1_1
 x 6
 y 8
 end
@@ -893,7 +902,11 @@ arch woodfloor
 x 7
 y 13
 end
-arch wwall_2_2_1
+arch swall_1_2_half
+x 7
+y 13
+end
+arch wwall_1_4
 x 7
 y 13
 end
@@ -951,7 +964,7 @@ arch woodfloor
 x 8
 y 3
 end
-arch wwall_3_1
+arch wwall_2_2_1
 x 8
 y 3
 end
@@ -1245,7 +1258,7 @@ arch woodfloor
 x 10
 y 10
 end
-arch wwall_3_1
+arch wwall_2_2_4
 x 10
 y 10
 end
@@ -1271,10 +1284,8 @@ y 14
 end
 arch sign
 msg
-Thievies are severely penalized in this
-town!!!
-It would be nice of you not to bother
-with others' lives.
+Thieves are severely penalized in this town!!!
+It would be nice of you not to bother with others' lives.
          -Bob
 endmsg
 x 10
@@ -1922,7 +1933,7 @@ arch woodfloor
 x 15
 y 13
 end
-arch wwall_4
+arch wwall_3_1
 x 15
 y 13
 end
@@ -1933,13 +1944,13 @@ end
 arch door_look_2
 x 15
 y 14
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 15
 y 15
 end
-arch wwall_2_2_1
+arch wwall_1_4
 x 15
 y 15
 end
@@ -2353,11 +2364,15 @@ arch wwall_2_1_2
 x 18
 y 15
 end
+arch swall_1_1_half
+x 18
+y 15
+end
 arch grass
 x 18
 y 16
 end
-arch swall_1_3
+arch swall_2_2_4
 x 18
 y 16
 end

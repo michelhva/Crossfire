@@ -1,11 +1,14 @@
 arch map
-name Royal Church
-difficulty 1
-region lakecountry
+name Royal Church, Lower Level
+difficulty 45
+region butakisfortress
 width 20
 height 30
+enter_x 1
+enter_y 15
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2012-06-08 Rick Tanner
 endmsg
 end
 arch dun10
@@ -130,42 +133,20 @@ end
 arch lich
 name Lich prisoner
 msg
-@match Hello|hello
-If you want to talk to me, release me
-first. I don't feel like talking in
-here.
-@match Yes|yes
-Okay, go on turn the handle and
-release me. Then I will reward you and
-let you be one of us. Don't listen to
-whatever the others have to say about
-it.
-@match No|no
-No? NO???!! If you don't release me,
-I will suck your brain dry, when I come
-out, which is very soon. Expect that
-moment coming soon when you go to bed
-tonite; for the dark force of the swamp
-is the strongest and soon will come to
-crush this fortress.
+@match hello
+If you want to talk to me, release me first.  I don't feel like talking in here.
+@match Yes
+Okay, go on turn the handle and release me.  Then I will reward you and let you be one of us.  Don't listen to whatever the others have to say about it.
+@match no
+No? NO???!! If you don't release me, I will suck your brain dry, when I come out, which is very soon.  Expect that moment coming soon when you go to bed tonite; for the dark force of the swamp is the strongest and soon will come to crush this fortress.
 @match reward|lie
-Don't you think you have to die first
-in order to be one of us?
+Don't you think you have to die first in order to be one of us?
 Ha ha ha ...
 @match dark|force|swamp
-The dark force of the swamp, we are
-the rulers of the land. We are the
-wizards, the undeads, most powerfuls.
-Hey! Release me now or you will
-regret.
-I am not going to answer your questions
-any more.
-anymore
+The dark force of the swamp, we are the rulers of the land.  We are the wizards, the undeads, most powerfuls.  Hey! Release me now or you will regret. I am not going to answer your questions any more.
 @match *
 You must die soon, don't you think?
-Hum hum hum ... I can feel the pleasure
-of savoring over your weak soul even
-now.  Hum um ...
+Hum hum hum ... I can feel the pleasure of savoring over your weak soul even now.  Hum um ...
 endmsg
 x 1
 y 4
@@ -196,17 +177,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 1
 y 8
@@ -254,8 +227,8 @@ y 15
 end
 arch stair_3_up
 slaying church0
-hp 1
-sp 15
+hp 3
+sp 17
 x 1
 y 15
 end
@@ -331,17 +304,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 1
 y 27
@@ -355,17 +320,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 1
 y 28
@@ -386,17 +343,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 2
 y 1
@@ -452,17 +401,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 2
 y 8
@@ -584,17 +525,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 2
 y 28
@@ -615,17 +548,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 3
 y 1
@@ -663,17 +588,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 3
 y 8
@@ -795,17 +712,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 3
 y 28
@@ -826,17 +735,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 4
 y 1
@@ -874,17 +775,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 4
 y 8
@@ -1017,17 +910,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 5
 y 1
@@ -1041,17 +926,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 5
 y 2
@@ -1085,17 +962,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 5
 y 8
@@ -1217,17 +1086,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 5
 y 26
@@ -1256,17 +1117,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 6
 y 1
@@ -1280,17 +1133,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 6
 y 2
@@ -1324,17 +1169,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 6
 y 8
@@ -1452,17 +1289,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 6
 y 25
@@ -1476,17 +1305,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 6
 y 26
@@ -1515,17 +1336,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 7
 y 1
@@ -1539,17 +1352,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 7
 y 2
@@ -1675,17 +1480,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 7
 y 24
@@ -1699,17 +1496,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 7
 y 25
@@ -1723,17 +1512,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 7
 y 26
@@ -1762,17 +1543,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 8
 y 1
@@ -1786,17 +1559,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 8
 y 2
@@ -1898,17 +1663,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 8
 y 24
@@ -1922,17 +1679,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 8
 y 25
@@ -1965,17 +1714,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 9
 y 1
@@ -1989,17 +1730,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 9
 y 2
@@ -2101,17 +1834,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 9
 y 24
@@ -2125,17 +1850,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 9
 y 25
@@ -2168,17 +1885,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 10
 y 1
@@ -2192,17 +1901,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 10
 y 2
@@ -2304,17 +2005,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 10
 y 24
@@ -2328,17 +2021,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 10
 y 25
@@ -2371,17 +2056,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 11
 y 1
@@ -2395,17 +2072,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 11
 y 2
@@ -2507,17 +2176,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 11
 y 24
@@ -2531,17 +2192,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 11
 y 25
@@ -2555,17 +2208,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 11
 y 26
@@ -2594,17 +2239,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 12
 y 1
@@ -2618,17 +2255,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 12
 y 2
@@ -2762,17 +2391,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 12
 y 25
@@ -2786,17 +2407,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 12
 y 26
@@ -2825,17 +2438,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 13
 y 1
@@ -2849,17 +2454,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 13
 y 2
@@ -2893,17 +2490,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 13
 y 8
@@ -3025,17 +2614,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 13
 y 26
@@ -3064,17 +2645,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 14
 y 1
@@ -3088,17 +2661,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 14
 y 2
@@ -3132,17 +2697,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 14
 y 8
@@ -3275,17 +2832,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 15
 y 1
@@ -3323,17 +2872,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 15
 y 8
@@ -3466,17 +3007,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 16
 y 1
@@ -3538,17 +3071,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 16
 y 8
@@ -3670,17 +3195,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 16
 y 28
@@ -3701,17 +3218,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 17
 y 1
@@ -3738,33 +3247,16 @@ end
 arch dragonman
 name dragonman mercenary
 msg
-@match Hello|hello
+@match hello
 What do you want to ask me about?
-Where am i from? what's my business
-here?
-Well, I can tell you the truth as I
-have told the others wormheads, who
-doesn't seem to comprehend the power
-of the force of chaos.
+Where am I from? What's my business here?
+Well, I can tell you the truth as I have told the others wormheads, who doesn't seem to comprehend the power of the force of chaos.
 @match from|where
-I was under the command of chaos lord
-himself. Our lord is going to come soon
-to visit this land. If you don't want
-his wrath upon this fortress. You'd
-better tell lord, Butakis to release me
-and my companions.
-The pet division will be on the way
-soon to visit the fortress.
+I was under the command of chaos lord himself.  Our lord is going to come soon to visit this land.  If you don't want his wrath upon this fortress.  You'd better tell lord Butakis to release me and my companions.  The pet division will be on the way soon to visit the fortress.
 @match pet|division
-Pet division is the division of our
-metallic serpents under the command of
-lesser chaos lords in the northeast
-mountains.
+Pet division is the division of our metallic serpents under the command of lesser chaos lords in the northeast mountains.
 @match purpose|business
-I am here to deliver the notice from
-our lord to lord Butakis; as this is
-his last chance to join us to conquest
-the land cross the sea.
+I am here to deliver the notice from our lord to lord Butakis; as this is his last chance to join us to conquest the land across the sea.
 @match *
 Hmmm . another wormhead
 endmsg
@@ -3797,17 +3289,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 17
 y 8
@@ -3929,17 +3413,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 17
 y 28
@@ -4005,17 +3481,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 18
 y 8
@@ -4063,8 +3531,8 @@ y 15
 end
 arch stair_3_up
 slaying church0
-hp 18
-sp 15
+hp 20
+sp 17
 x 18
 y 15
 end
@@ -4140,17 +3608,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 18
 y 27
@@ -4164,17 +3624,9 @@ arch angel
 name guardian angel
 msg
 @match dark|force
-The dark force from the eastern swamp
-and the chaos lurks under the snake pit
-in the north-eastern mountains are all
-seeking to corrupt and conquer this
-fortress and beyond.
+The dark force from the eastern swamp and the chaos lurks under the snake pit in the north-eastern mountains are all seeking to corrupt and conquer this fortress and beyond.
 @match *
-We are here to reinforce the
-fortress; because we know soon dark
-force will be upon this place.
-Do whatever you can to protect the
-land and be responsible.
+We are here to reinforce the fortress; because we know soon dark force will be upon this place.  Do whatever you can to protect the land and be responsible.
 endmsg
 x 18
 y 28

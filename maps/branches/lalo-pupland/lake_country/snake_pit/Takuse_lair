@@ -1,10 +1,14 @@
 arch map
 name Takuse Lair
+difficulty 75
 region lakecountry
 width 36
 height 28
+enter_x 28
+enter_y 29
 msg
 Created:  1995-03-23 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-03-21 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -485,9 +489,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 2
 y 22
@@ -644,8 +646,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 3
 y 21
@@ -667,9 +668,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 3
 y 22
@@ -826,8 +825,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 4
 y 21
@@ -849,9 +847,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 4
 y 22
@@ -1004,8 +1000,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 5
 y 21
@@ -1027,9 +1022,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 5
 y 22
@@ -1186,8 +1179,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 6
 y 21
@@ -1209,9 +1201,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 6
 y 22
@@ -1385,8 +1375,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 7
 y 21
@@ -1408,9 +1397,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain. Lost your potential preys or predators.
 endmsg
 x 7
 y 22
@@ -1552,8 +1539,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 8
 y 21
@@ -1575,9 +1561,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain. Lost your potential preys or predators.
 endmsg
 x 8
 y 22
@@ -1715,8 +1699,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 9
 y 21
@@ -1738,9 +1721,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 9
 y 22
@@ -1878,8 +1859,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 10
 y 21
@@ -1901,9 +1881,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 10
 y 22
@@ -2040,8 +2018,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 11
 y 21
@@ -2063,9 +2040,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 11
 y 22
@@ -2206,8 +2181,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 12
 y 21
@@ -2229,9 +2203,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 12
 y 22
@@ -2396,8 +2368,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 13
 y 21
@@ -2419,9 +2390,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 13
 y 22
@@ -2578,8 +2547,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 14
 y 21
@@ -2601,9 +2569,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 14
 y 22
@@ -2721,8 +2687,7 @@ y 17
 end
 arch magic_mouth
 msg
-You look down the dark pit. Nothing can
-be make out. It's eeriely silent
+You look down the dark pit.  Nothing can be make out.  It's eerily silent.
 endmsg
 x 15
 y 18
@@ -2733,8 +2698,7 @@ y 18
 end
 arch magic_mouth
 msg
-You look down the dark pit. Nothing can
-be make out. It's eeriely silent
+You look down the dark pit.  Nothing can be make out.  It's eerily silent.
 endmsg
 x 15
 y 19
@@ -2745,8 +2709,7 @@ y 19
 end
 arch magic_mouth
 msg
-You look down the dark pit. Nothing can
-be make out. It's eeriely silent
+You look down the dark pit.  Nothing can be make out.  It's eerily silent.
 endmsg
 x 15
 y 20
@@ -2757,8 +2720,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 15
 y 21
@@ -2780,9 +2742,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 15
 y 22
@@ -2912,8 +2872,7 @@ y 17
 end
 arch magic_mouth
 msg
-You look down the dark pit. Nothing can
-be make out. It's eeriely silent
+You look down the dark pit.  Nothing can be make out.  It's eerily silent.
 endmsg
 x 16
 y 18
@@ -2932,8 +2891,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 16
 y 21
@@ -2955,9 +2913,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 16
 y 22
@@ -3076,8 +3032,7 @@ y 17
 end
 arch magic_mouth
 msg
-You look down the dark pit. Nothing can
-be make out. It's eeriely silent
+You look down the dark pit.  Nothing can be make out.  It's eerily silent.
 endmsg
 x 17
 y 18
@@ -3096,8 +3051,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 17
 y 21
@@ -3119,9 +3073,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 17
 y 22
@@ -3247,8 +3199,7 @@ y 17
 end
 arch magic_mouth
 msg
-You look down the dark pit. Nothing can
-be make out. It's eeriely silent
+You look down the dark pit.  Nothing can be make out.  It's eerily silent.
 endmsg
 x 18
 y 18
@@ -3259,10 +3210,7 @@ y 18
 end
 arch magic_mouth
 msg
-You enter a gigantic cavern on the
-cliff side. To the north lies the dark
-cave, south open air and a small ledge.
-Right in front is a dark pit
+You enter a gigantic cavern on the cliff side.  To the north lies the dark cave, south open air and a small ledge.  Right in front is a dark pit.
 endmsg
 x 18
 y 19
@@ -3282,7 +3230,7 @@ y 19
 end
 arch magic_mouth
 msg
-You fall to the bottom to the dark pit
+You fall to the bottom to the dark pit.
 endmsg
 x 18
 y 20
@@ -3303,8 +3251,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 18
 y 21
@@ -3326,9 +3273,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 18
 y 22
@@ -3458,7 +3403,7 @@ y 19
 end
 arch magic_mouth
 msg
-You fall to the bottom to the dark pit
+You fall to the bottom to the dark pit.
 endmsg
 x 19
 y 20
@@ -3479,8 +3424,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 19
 y 21
@@ -3502,9 +3446,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 19
 y 22
@@ -3662,8 +3604,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 20
 y 21
@@ -3685,9 +3626,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 20
 y 22
@@ -3845,8 +3784,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 21
 y 21
@@ -3868,9 +3806,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 21
 y 22
@@ -4032,8 +3968,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 22
 y 21
@@ -4055,9 +3990,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 22
 y 22
@@ -4223,8 +4156,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 23
 y 21
@@ -4246,9 +4178,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 23
 y 22
@@ -4380,7 +4310,7 @@ arch rough_wall_2_1_1
 name low wall
 x 24
 y 16
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 24
@@ -4416,8 +4346,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 24
 y 21
@@ -4439,9 +4368,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 24
 y 22
@@ -4590,8 +4517,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 25
 y 21
@@ -4613,9 +4539,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 25
 y 22
@@ -4780,8 +4704,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 26
 y 21
@@ -4803,9 +4726,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 26
 y 22
@@ -4877,7 +4798,7 @@ arch rough_wall_2_1_2
 name low wall
 x 27
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 27
@@ -4969,8 +4890,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 27
 y 21
@@ -4992,9 +4912,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 27
 y 22
@@ -5057,7 +4975,7 @@ arch rough_wall_2_1_2
 name low wall
 x 28
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -5099,7 +5017,7 @@ arch rough_wall_2_1_2
 name low wall
 x 28
 y 13
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -5143,8 +5061,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 28
 y 21
@@ -5166,9 +5083,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 28
 y 22
@@ -5231,7 +5146,7 @@ arch rough_wall_2_1_2
 name low wall
 x 29
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 29
@@ -5273,7 +5188,7 @@ arch rough_wall_2_1_2
 name low wall
 x 29
 y 13
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 29
@@ -5317,8 +5232,7 @@ y 20
 end
 arch magic_mouth
 msg
-You walks on the high ledge of a
-mountain cliff.
+You walk on the high ledge of a mountain cliff.
 endmsg
 x 29
 y 21
@@ -5340,9 +5254,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 29
 y 22
@@ -5405,7 +5317,7 @@ arch rough_wall_2_1_2
 name low wall
 x 30
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 30
@@ -5447,7 +5359,7 @@ arch rough_wall_2_1_2
 name low wall
 x 30
 y 13
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 30
@@ -5514,9 +5426,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 30
 y 22
@@ -5583,7 +5493,7 @@ arch rough_wall_2_1_2
 name low wall
 x 31
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 31
@@ -5625,7 +5535,7 @@ arch rough_wall_2_1_2
 name low wall
 x 31
 y 13
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 31
@@ -5692,9 +5602,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 31
 y 22
@@ -5757,7 +5665,7 @@ arch rough_wall_2_1_2
 name low wall
 x 32
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 32
@@ -5799,7 +5707,7 @@ arch rough_wall_2_1_2
 name low wall
 x 32
 y 13
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 32
@@ -5854,9 +5762,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 32
 y 22
@@ -5924,7 +5830,7 @@ arch rough_wall_2_1_2
 name low wall
 x 33
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 33
@@ -5966,7 +5872,7 @@ arch rough_wall_2_1_2
 name low wall
 x 33
 y 13
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 33
@@ -6029,9 +5935,7 @@ y 22
 end
 arch magic_mouth
 msg
-You fall to the bottom of the mountain.
-Lost your potential preys or
-predators.
+You fall to the bottom of the mountain.  Lost your potential preys or predators.
 endmsg
 x 33
 y 22

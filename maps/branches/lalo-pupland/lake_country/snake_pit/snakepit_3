@@ -1,29 +1,31 @@
 arch map
-name Snake Pit
-difficulty 1
+name Snake Pit, Level 3
+difficulty 85
 region lakecountry
 darkness 5
 width 40
 height 40
+enter_x 18
+enter_y 29
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2011-08-27 Andreas Kirschbaum
 endmsg
 end
 arch large_stones
 end
-arch blocked
+arch cave_15
 end
 arch large_stones
 y 1
 end
-arch blocked
+arch cave_15
 y 1
 end
 arch large_stones
 y 2
 end
-arch blocked
+arch cave_15
 y 2
 end
 arch large_stones
@@ -47,7 +49,7 @@ end
 arch large_stones
 y 6
 end
-arch blocked
+arch cave_15
 y 6
 end
 arch large_stones
@@ -104,13 +106,13 @@ end
 arch large_stones
 y 16
 end
-arch blocked
+arch cave_15
 y 16
 end
 arch large_stones
 y 17
 end
-arch blocked
+arch cave_15
 y 17
 end
 arch large_stones
@@ -230,7 +232,7 @@ end
 arch large_stones
 y 37
 end
-arch blocked
+arch cave_15
 y 37
 end
 arch large_stones
@@ -646,7 +648,7 @@ arch large_stones
 x 2
 y 20
 end
-arch blocked
+arch cave_15
 x 2
 y 20
 end
@@ -654,7 +656,7 @@ arch large_stones
 x 2
 y 21
 end
-arch blocked
+arch cave_15
 x 2
 y 21
 end
@@ -831,7 +833,7 @@ arch cave16
 name illusionary wall
 x 3
 y 10
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 3
@@ -841,7 +843,7 @@ arch cave14
 name illusionary wall
 x 3
 y 11
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 3
@@ -986,7 +988,7 @@ end
 arch large_stones
 x 4
 end
-arch blocked
+arch cave_15
 x 4
 end
 arch large_stones
@@ -1037,7 +1039,7 @@ arch cave15
 name illusionary wall
 x 4
 y 10
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 4
@@ -1047,7 +1049,7 @@ arch cave13
 name illusionary wall
 x 4
 y 11
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 4
@@ -1219,7 +1221,7 @@ arch cave16
 name illusionary wall
 x 5
 y 10
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 5
@@ -1229,7 +1231,7 @@ arch cave14
 name illusionary wall
 x 5
 y 11
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 5
@@ -1391,11 +1393,12 @@ maxsp 1000
 exp 2000000
 x 6
 y 5
-speed 0.700000
-speed_left -17.569998
+speed 0.7
 level 70
 attacktype 1167
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -1425,7 +1428,7 @@ arch cave15
 name illusionary wall
 x 6
 y 10
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 6
@@ -1435,7 +1438,7 @@ arch cave13
 name illusionary wall
 x 6
 y 11
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 6
@@ -1707,7 +1710,7 @@ arch large_stones
 x 7
 y 27
 end
-arch blocked
+arch cave_15
 x 7
 y 27
 end
@@ -1965,7 +1968,7 @@ arch large_stones
 x 8
 y 38
 end
-arch blocked
+arch cave_15
 x 8
 y 38
 end
@@ -1973,7 +1976,7 @@ arch large_stones
 x 8
 y 39
 end
-arch blocked
+arch cave_15
 x 8
 y 39
 end
@@ -2118,11 +2121,11 @@ exp 65000
 dam 30
 x 9
 y 27
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -2158,11 +2161,11 @@ exp 65000
 dam 30
 x 9
 y 32
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -2207,7 +2210,7 @@ arch large_stones
 x 9
 y 38
 end
-arch blocked
+arch cave_15
 x 9
 y 38
 end
@@ -2215,7 +2218,7 @@ arch large_stones
 x 9
 y 39
 end
-arch blocked
+arch cave_15
 x 9
 y 39
 end
@@ -2376,11 +2379,11 @@ exp 65000
 dam 30
 x 10
 y 27
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -2416,11 +2419,11 @@ exp 65000
 dam 30
 x 10
 y 32
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -2469,7 +2472,7 @@ arch large_stones
 x 10
 y 38
 end
-arch blocked
+arch cave_15
 x 10
 y 38
 end
@@ -2477,7 +2480,7 @@ arch large_stones
 x 10
 y 39
 end
-arch blocked
+arch cave_15
 x 10
 y 39
 end
@@ -2683,7 +2686,7 @@ arch large_stones
 x 11
 y 35
 end
-arch blocked
+arch cave_15
 x 11
 y 35
 end
@@ -2691,7 +2694,7 @@ arch large_stones
 x 11
 y 36
 end
-arch blocked
+arch cave_15
 x 11
 y 36
 end
@@ -2699,7 +2702,7 @@ arch large_stones
 x 11
 y 37
 end
-arch blocked
+arch cave_15
 x 11
 y 37
 end
@@ -2707,7 +2710,7 @@ arch large_stones
 x 11
 y 38
 end
-arch blocked
+arch cave_15
 x 11
 y 38
 end
@@ -2715,7 +2718,7 @@ arch large_stones
 x 11
 y 39
 end
-arch blocked
+arch cave_15
 x 11
 y 39
 end
@@ -2861,7 +2864,7 @@ arch large_stones
 x 12
 y 22
 end
-arch blocked
+arch cave_15
 x 12
 y 22
 end
@@ -2925,7 +2928,7 @@ arch large_stones
 x 12
 y 35
 end
-arch blocked
+arch cave_15
 x 12
 y 35
 end
@@ -2964,7 +2967,7 @@ end
 arch large_stones
 x 13
 end
-arch blocked
+arch cave_15
 x 13
 end
 arch large_stones
@@ -3031,7 +3034,7 @@ arch large_stones
 x 13
 y 9
 end
-arch blocked
+arch cave_15
 x 13
 y 9
 end
@@ -3107,7 +3110,7 @@ arch large_stones
 x 13
 y 22
 end
-arch blocked
+arch cave_15
 x 13
 y 22
 end
@@ -3214,14 +3217,14 @@ end
 arch large_stones
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch large_stones
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
@@ -3277,7 +3280,7 @@ arch large_stones
 x 14
 y 8
 end
-arch blocked
+arch cave_15
 x 14
 y 8
 end
@@ -3285,7 +3288,7 @@ arch large_stones
 x 14
 y 9
 end
-arch blocked
+arch cave_15
 x 14
 y 9
 end
@@ -3293,7 +3296,7 @@ arch large_stones
 x 14
 y 10
 end
-arch blocked
+arch cave_15
 x 14
 y 10
 end
@@ -3357,7 +3360,7 @@ arch large_stones
 x 14
 y 22
 end
-arch blocked
+arch cave_15
 x 14
 y 22
 end
@@ -3388,11 +3391,11 @@ exp 65000
 dam 30
 x 14
 y 25
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -3642,11 +3645,11 @@ exp 65000
 dam 30
 x 15
 y 25
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -3699,7 +3702,7 @@ arch large_stones
 x 15
 y 35
 end
-arch blocked
+arch cave_15
 x 15
 y 35
 end
@@ -3968,7 +3971,7 @@ end
 arch large_stones
 x 17
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 17
@@ -4170,7 +4173,7 @@ end
 arch large_stones
 x 18
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 18
@@ -4354,11 +4357,11 @@ exp 65000
 dam 30
 x 18
 y 34
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -4405,7 +4408,7 @@ end
 arch large_stones
 x 19
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 19
@@ -4568,11 +4571,11 @@ exp 65000
 dam 30
 x 19
 y 34
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -4623,7 +4626,7 @@ end
 arch large_stones
 x 20
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 20
@@ -4807,7 +4810,7 @@ arch large_stones
 x 20
 y 39
 end
-arch blocked
+arch cave_15
 x 20
 y 39
 end
@@ -4825,7 +4828,7 @@ end
 arch large_stones
 x 21
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 21
@@ -5045,7 +5048,7 @@ arch large_stones
 x 21
 y 38
 end
-arch blocked
+arch cave_15
 x 21
 y 38
 end
@@ -5053,7 +5056,7 @@ arch large_stones
 x 21
 y 39
 end
-arch blocked
+arch cave_15
 x 21
 y 39
 end
@@ -5071,7 +5074,7 @@ end
 arch large_stones
 x 22
 y 3
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 22
@@ -5382,7 +5385,7 @@ arch large_stones
 x 23
 y 21
 end
-arch blocked
+arch cave_15
 x 23
 y 21
 end
@@ -5390,7 +5393,7 @@ arch large_stones
 x 23
 y 22
 end
-arch blocked
+arch cave_15
 x 23
 y 22
 end
@@ -5437,11 +5440,11 @@ exp 65000
 dam 30
 x 23
 y 29
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -5477,11 +5480,11 @@ exp 65000
 dam 30
 x 23
 y 34
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -5636,7 +5639,7 @@ arch large_stones
 x 24
 y 20
 end
-arch blocked
+arch cave_15
 x 24
 y 20
 end
@@ -5644,7 +5647,7 @@ arch large_stones
 x 24
 y 21
 end
-arch blocked
+arch cave_15
 x 24
 y 21
 end
@@ -5652,7 +5655,7 @@ arch large_stones
 x 24
 y 22
 end
-arch blocked
+arch cave_15
 x 24
 y 22
 end
@@ -5660,7 +5663,7 @@ arch large_stones
 x 24
 y 23
 end
-arch blocked
+arch cave_15
 x 24
 y 23
 end
@@ -5703,11 +5706,11 @@ exp 65000
 dam 30
 x 24
 y 29
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -5743,11 +5746,11 @@ exp 65000
 dam 30
 x 24
 y 34
-speed 1.000000
-speed_left -34.419998
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -5780,21 +5783,21 @@ arch large_stones
 x 24
 y 39
 end
-arch blocked
+arch cave_15
 x 24
 y 39
 end
 arch large_stones
 x 25
 end
-arch blocked
+arch cave_15
 x 25
 end
 arch large_stones
 x 25
 y 1
 end
-arch blocked
+arch cave_15
 x 25
 y 1
 end
@@ -5902,7 +5905,7 @@ arch large_stones
 x 25
 y 19
 end
-arch blocked
+arch cave_15
 x 25
 y 19
 end
@@ -5910,7 +5913,7 @@ arch large_stones
 x 25
 y 20
 end
-arch blocked
+arch cave_15
 x 25
 y 20
 end
@@ -5918,7 +5921,7 @@ arch large_stones
 x 25
 y 21
 end
-arch blocked
+arch cave_15
 x 25
 y 21
 end
@@ -5926,7 +5929,7 @@ arch large_stones
 x 25
 y 22
 end
-arch blocked
+arch cave_15
 x 25
 y 22
 end
@@ -5934,7 +5937,7 @@ arch large_stones
 x 25
 y 23
 end
-arch blocked
+arch cave_15
 x 25
 y 23
 end
@@ -6038,21 +6041,21 @@ arch large_stones
 x 25
 y 39
 end
-arch blocked
+arch cave_15
 x 25
 y 39
 end
 arch large_stones
 x 26
 end
-arch blocked
+arch cave_15
 x 26
 end
 arch large_stones
 x 26
 y 1
 end
-arch blocked
+arch cave_15
 x 26
 y 1
 end
@@ -6076,7 +6079,7 @@ arch large_stones
 x 26
 y 4
 end
-arch blocked
+arch cave_15
 x 26
 y 4
 end
@@ -6084,7 +6087,7 @@ arch large_stones
 x 26
 y 5
 end
-arch blocked
+arch cave_15
 x 26
 y 5
 end
@@ -6092,7 +6095,7 @@ arch large_stones
 x 26
 y 6
 end
-arch blocked
+arch cave_15
 x 26
 y 6
 end
@@ -6156,7 +6159,7 @@ arch large_stones
 x 26
 y 18
 end
-arch blocked
+arch cave_15
 x 26
 y 18
 end
@@ -6164,7 +6167,7 @@ arch large_stones
 x 26
 y 19
 end
-arch blocked
+arch cave_15
 x 26
 y 19
 end
@@ -6256,7 +6259,7 @@ arch large_stones
 x 26
 y 32
 end
-arch blocked
+arch cave_15
 x 26
 y 32
 end
@@ -6300,7 +6303,7 @@ arch large_stones
 x 26
 y 39
 end
-arch blocked
+arch cave_15
 x 26
 y 39
 end
@@ -6354,7 +6357,7 @@ arch large_stones
 x 27
 y 6
 end
-arch blocked
+arch cave_15
 x 27
 y 6
 end
@@ -6362,7 +6365,7 @@ arch large_stones
 x 27
 y 7
 end
-arch blocked
+arch cave_15
 x 27
 y 7
 end
@@ -6434,7 +6437,7 @@ arch large_stones
 x 27
 y 18
 end
-arch blocked
+arch cave_15
 x 27
 y 18
 end
@@ -6442,7 +6445,7 @@ arch large_stones
 x 27
 y 19
 end
-arch blocked
+arch cave_15
 x 27
 y 19
 end
@@ -6656,7 +6659,7 @@ arch large_stones
 x 28
 y 7
 end
-arch blocked
+arch cave_15
 x 28
 y 7
 end
@@ -6664,7 +6667,7 @@ arch large_stones
 x 28
 y 8
 end
-arch blocked
+arch cave_15
 x 28
 y 8
 end
@@ -6736,7 +6739,7 @@ arch large_stones
 x 28
 y 19
 end
-arch blocked
+arch cave_15
 x 28
 y 19
 end
@@ -6902,7 +6905,7 @@ arch large_stones
 x 29
 y 8
 end
-arch blocked
+arch cave_15
 x 29
 y 8
 end
@@ -7142,7 +7145,7 @@ arch large_stones
 x 30
 y 9
 end
-arch blocked
+arch cave_15
 x 30
 y 9
 end
@@ -7564,7 +7567,7 @@ arch large_stones
 x 32
 y 11
 end
-arch blocked
+arch cave_15
 x 32
 y 11
 end
@@ -7740,8 +7743,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-This flaming red badge is a symbol of
-status and importance.
+This flaming red badge is a symbol of status and importance.
 endmsg
 face baby_drag.113
 value 10000
@@ -8067,7 +8069,7 @@ arch large_stones
 x 34
 y 23
 end
-arch blocked
+arch cave_15
 x 34
 y 23
 end
@@ -8272,7 +8274,7 @@ arch large_stones
 x 35
 y 23
 end
-arch blocked
+arch cave_15
 x 35
 y 23
 end
@@ -8368,14 +8370,14 @@ arch large_stones
 x 35
 y 39
 end
-arch blocked
+arch cave_15
 x 35
 y 39
 end
 arch large_stones
 x 36
 end
-arch blocked
+arch cave_15
 x 36
 end
 arch large_stones
@@ -8525,7 +8527,7 @@ arch large_stones
 x 36
 y 23
 end
-arch blocked
+arch cave_15
 x 36
 y 23
 end
@@ -8533,7 +8535,7 @@ arch large_stones
 x 36
 y 24
 end
-arch blocked
+arch cave_15
 x 36
 y 24
 end
@@ -8619,7 +8621,7 @@ arch large_stones
 x 36
 y 36
 end
-arch blocked
+arch cave_15
 x 36
 y 36
 end
@@ -8650,7 +8652,7 @@ end
 arch large_stones
 x 37
 end
-arch blocked
+arch cave_15
 x 37
 end
 arch large_stones
@@ -8905,7 +8907,7 @@ end
 arch large_stones
 x 38
 end
-arch blocked
+arch cave_15
 x 38
 end
 arch large_stones
@@ -9057,7 +9059,7 @@ arch large_stones
 x 38
 y 21
 end
-arch blocked
+arch cave_15
 x 38
 y 21
 end
@@ -9065,7 +9067,7 @@ arch large_stones
 x 38
 y 22
 end
-arch blocked
+arch cave_15
 x 38
 y 22
 end
@@ -9165,7 +9167,7 @@ arch large_stones
 x 38
 y 35
 end
-arch blocked
+arch cave_15
 x 38
 y 35
 end
@@ -9197,14 +9199,14 @@ arch large_stones
 x 38
 y 39
 end
-arch blocked
+arch cave_15
 x 38
 y 39
 end
 arch large_stones
 x 39
 end
-arch blocked
+arch cave_15
 x 39
 end
 arch large_stones
@@ -9227,7 +9229,7 @@ arch large_stones
 x 39
 y 3
 end
-arch blocked
+arch cave_15
 x 39
 y 3
 end
@@ -9291,7 +9293,7 @@ arch large_stones
 x 39
 y 11
 end
-arch blocked
+arch cave_15
 x 39
 y 11
 end
@@ -9355,7 +9357,7 @@ arch large_stones
 x 39
 y 19
 end
-arch blocked
+arch cave_15
 x 39
 y 19
 end
@@ -9363,7 +9365,7 @@ arch large_stones
 x 39
 y 20
 end
-arch blocked
+arch cave_15
 x 39
 y 20
 end
@@ -9371,7 +9373,7 @@ arch large_stones
 x 39
 y 21
 end
-arch blocked
+arch cave_15
 x 39
 y 21
 end
@@ -9379,7 +9381,7 @@ arch large_stones
 x 39
 y 22
 end
-arch blocked
+arch cave_15
 x 39
 y 22
 end
@@ -9387,7 +9389,7 @@ arch large_stones
 x 39
 y 23
 end
-arch blocked
+arch cave_15
 x 39
 y 23
 end
@@ -9395,7 +9397,7 @@ arch large_stones
 x 39
 y 24
 end
-arch blocked
+arch cave_15
 x 39
 y 24
 end
@@ -9467,7 +9469,7 @@ arch large_stones
 x 39
 y 33
 end
-arch blocked
+arch cave_15
 x 39
 y 33
 end
@@ -9475,7 +9477,7 @@ arch large_stones
 x 39
 y 34
 end
-arch blocked
+arch cave_15
 x 39
 y 34
 end
@@ -9483,7 +9485,7 @@ arch large_stones
 x 39
 y 35
 end
-arch blocked
+arch cave_15
 x 39
 y 35
 end
@@ -9491,7 +9493,7 @@ arch large_stones
 x 39
 y 36
 end
-arch blocked
+arch cave_15
 x 39
 y 36
 end
@@ -9499,7 +9501,7 @@ arch large_stones
 x 39
 y 37
 end
-arch blocked
+arch cave_15
 x 39
 y 37
 end
@@ -9507,7 +9509,7 @@ arch large_stones
 x 39
 y 38
 end
-arch blocked
+arch cave_15
 x 39
 y 38
 end
@@ -9515,7 +9517,7 @@ arch large_stones
 x 39
 y 39
 end
-arch blocked
+arch cave_15
 x 39
 y 39
 end

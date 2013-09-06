@@ -1,11 +1,14 @@
 arch map
 name Elven Moon
-difficulty 1
+difficulty 30
+region lakecountry
 width 32
 height 32
+enter_x 1
+enter_y 19
 msg
-Created:  2006-09-16
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  2006-09-16 Brad Reilly
+Modified: 2012-02-07 Rick Tanner
 endmsg
 tile_path_4 elvenmoon.2
 end
@@ -2137,8 +2140,8 @@ end
 arch elf_man
 msg
 @match key
-There are may keys.
-@match Vim|vim
+There are many keys.
+@match vim
 We do have a Tower of Vim key.
 @match where|show|Tower of Vim|Tower of Vim key
 You will need to find the Queen's White Rose.
@@ -2429,9 +2432,7 @@ The rose can sometimes be found in the labyrinth.
 @match labyrinth
 How else did you arrive here?
 @match bow
-The Bow of Elven Moon requires skill and wisdom
-for one to obtain.  Simply look around and the
-key to finding it will be shown to you.
+The Bow of Elven Moon requires skill and wisdom for one to obtain.  Simply look around and the key to finding it will be shown to you.
 @match *
 [you hear the murmur of elvish song]
 endmsg
@@ -2748,7 +2749,7 @@ arch elf_man
 msg
 @match key
 There are may keys.
-@match Vim|vim
+@match vim
 We do have a Tower of Vim key.
 @match where|show|Tower of Vim|Tower of Vim key
 You will need to find the Queen's White Rose.
