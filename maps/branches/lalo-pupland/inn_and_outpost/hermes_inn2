@@ -1,12 +1,15 @@
 arch map
 name Hermes Inn Upstairs
 difficulty 4
+region wilderness
 width 22
 height 10
+enter_x 20
+enter_y 8
 msg
 Created:  2002-10-27 Todd Mitchell
+Modified: 2013-08-03 Kevin Zheng
 endmsg
-outdoor 1
 end
 arch woodfloor2
 end
@@ -148,6 +151,12 @@ arch woodfloor2
 x 2
 y 2
 end
+arch button_small
+x 2
+y 3
+invisible 1
+connected 1
+end
 arch woodfloor2
 x 2
 y 3
@@ -176,6 +185,12 @@ end
 arch woodfloor2
 x 2
 y 5
+end
+arch button_small
+x 2
+y 6
+invisible 1
+connected 4
 end
 arch woodfloor2
 x 2
@@ -438,6 +453,12 @@ arch woodfloor2
 x 6
 y 2
 end
+arch button_small
+x 6
+y 3
+invisible 1
+connected 2
+end
 arch woodfloor2
 x 6
 y 3
@@ -466,6 +487,12 @@ end
 arch woodfloor2
 x 6
 y 5
+end
+arch button_small
+x 6
+y 6
+invisible 1
+connected 5
 end
 arch woodfloor2
 x 6
@@ -719,6 +746,12 @@ end
 arch woodfloor2
 x 10
 y 2
+end
+arch button_small
+x 10
+y 3
+invisible 1
+connected 3
 end
 arch woodfloor2
 x 10
@@ -748,6 +781,12 @@ end
 arch woodfloor2
 x 10
 y 5
+end
+arch button_small
+x 10
+y 6
+invisible 1
+connected 6
 end
 arch woodfloor2
 x 10
@@ -923,6 +962,7 @@ x 13
 y 1
 arch key2
 name greasy key
+name_pl greasy keys
 slaying Hermes Stash Key
 msg
 This key is slightly greasy, like it has been oiled.
@@ -1042,6 +1082,12 @@ arch woodfloor2
 x 14
 y 5
 end
+arch button_small
+x 14
+y 6
+invisible 1
+connected 7
+end
 arch woodfloor2
 x 14
 y 6
@@ -1086,7 +1132,7 @@ end
 arch woodwall_2_1_1
 x 15
 y 1
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 15

@@ -1,12 +1,14 @@
 arch map
 name Sweets Inn
 difficulty 1
+region wilderness
 width 25
 height 15
-enter_x 7
-enter_y 13
+enter_x 15
+enter_y 12
 msg
 Created:  2002-10-27 Todd Mitchell
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -17,14 +19,12 @@ sp 43
 end
 arch woods_2
 name foilage
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -34,7 +34,6 @@ end
 arch woods_2
 name foilage
 y 2
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -44,7 +43,6 @@ end
 arch woods_2
 name foilage
 y 3
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -60,7 +58,6 @@ end
 arch woods_2
 name foilage
 y 4
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -73,7 +70,6 @@ end
 arch woods_2
 name foilage
 y 5
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -86,7 +82,6 @@ end
 arch woods_2
 name foilage
 y 6
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -99,7 +94,6 @@ end
 arch woods_2
 name foilage
 y 7
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -112,7 +106,6 @@ end
 arch woods_2
 name foilage
 y 8
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -125,7 +118,6 @@ end
 arch woods_2
 name foilage
 y 9
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -138,7 +130,6 @@ end
 arch woods_2
 name foilage
 y 10
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -151,7 +142,6 @@ end
 arch woods_2
 name foilage
 y 11
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -164,7 +154,6 @@ end
 arch woods_2
 name foilage
 y 12
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -177,7 +166,6 @@ end
 arch woods_2
 name foilage
 y 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -190,7 +178,6 @@ end
 arch woods_2
 name foilage
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -203,7 +190,6 @@ end
 arch woods_2
 name foilage
 x 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -211,7 +197,6 @@ arch woods_2
 name foilage
 x 1
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -283,7 +268,6 @@ arch woods_2
 name foilage
 x 1
 y 10
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -299,7 +283,6 @@ arch woods_2
 name foilage
 x 1
 y 12
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -307,7 +290,6 @@ arch woods_2
 name foilage
 x 1
 y 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -322,7 +304,6 @@ arch woods_2
 name foilage
 x 1
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -335,7 +316,6 @@ end
 arch woods_2
 name foilage
 x 2
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -343,7 +323,6 @@ arch woods_2
 name foilage
 x 2
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -427,7 +406,6 @@ arch woods_2
 name foilage
 x 2
 y 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -442,7 +420,6 @@ arch woods_2
 name foilage
 x 2
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -455,7 +432,6 @@ end
 arch woods_2
 name foilage
 x 3
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -463,7 +439,6 @@ arch woods_2
 name foilage
 x 3
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -481,10 +456,10 @@ y 3
 end
 arch pearl_converter
 name drop 1200 platinum to buy healing potion
-slaying platinacoin
+slaying money
 other_arch potion_heal
 face cauldron.111
-food 1200
+food 60000
 x 3
 y 3
 end
@@ -544,7 +519,6 @@ arch woods_2
 name foilage
 x 3
 y 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -559,7 +533,6 @@ arch woods_2
 name foilage
 x 3
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -572,7 +545,6 @@ end
 arch woods_2
 name foilage
 x 4
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -580,7 +552,6 @@ arch woods_2
 name foilage
 x 4
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -599,7 +570,7 @@ end
 arch longtable_1_1
 x 4
 y 3
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -610,7 +581,7 @@ end
 arch longtable_2_1_1
 x 4
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -621,7 +592,7 @@ end
 arch longtable_2_2_1
 x 4
 y 5
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -684,7 +655,6 @@ arch woods_2
 name foilage
 x 4
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -697,7 +667,6 @@ end
 arch woods_2
 name foilage
 x 5
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -705,7 +674,6 @@ arch woods_2
 name foilage
 x 5
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -728,15 +696,12 @@ end
 arch pixie
 name Sweet
 msg
-@match hello
-Greetings, I am Sweet
-Please take advantage of my services.
+@match hi|hello
+Greetings, I am Sweet.  Please take advantage of my services.
 @match Sweet
 My mother was a real barrel of laughs...
 @match services
-I have food and drink available at the bar,
-I can also  identify items
-I sell healing potions and do simple money conversion.
+I have food and drink aviailable at the bar, I can also identify items.  I sell healing potions and do simple money conversion.
 @match *
 How may I help you?
 endmsg
@@ -758,7 +723,6 @@ unaggressive 1
 can_use_ring 1
 sleep 0
 stand_still 1
-can_use_rod 1
 arch spell_curse
 end
 arch spell_missile_swarm
@@ -771,7 +735,7 @@ end
 arch longtable_2_1_2
 x 5
 y 5
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -842,7 +806,6 @@ arch woods_2
 name foilage
 x 5
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -855,7 +818,6 @@ end
 arch woods_2
 name foilage
 x 6
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -863,7 +825,6 @@ arch woods_2
 name foilage
 x 6
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -894,7 +855,7 @@ end
 arch longtable_2_1_2
 x 6
 y 5
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -958,7 +919,6 @@ arch woods_2
 name foilage
 x 6
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -971,7 +931,6 @@ end
 arch woods_2
 name foilage
 x 7
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -979,7 +938,6 @@ arch woods_2
 name foilage
 x 7
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1014,7 +972,7 @@ end
 arch longtable_1_3
 x 7
 y 5
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -1040,7 +998,6 @@ arch woods_2
 name foilage
 x 7
 y 8
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1052,7 +1009,6 @@ arch woods_2
 name foilage
 x 7
 y 9
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1105,7 +1061,6 @@ arch woods_2
 name foilage
 x 7
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1118,7 +1073,6 @@ end
 arch woods_2
 name foilage
 x 8
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1126,7 +1080,6 @@ arch woods_2
 name foilage
 x 8
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1138,7 +1091,6 @@ arch woods_2
 name foilage
 x 8
 y 2
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1237,7 +1189,6 @@ arch woods_2
 name foilage
 x 8
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1250,7 +1201,6 @@ end
 arch woods_2
 name foilage
 x 9
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1258,7 +1208,6 @@ arch woods_2
 name foilage
 x 9
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1270,7 +1219,6 @@ arch woods_2
 name foilage
 x 9
 y 2
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1292,8 +1240,8 @@ y 4
 end
 arch altar
 name drop 50 gold for a room
-slaying goldcoin
-food 50
+slaying money
+food 500
 x 9
 y 4
 type 31
@@ -1314,7 +1262,7 @@ arch check_floor
 slaying sweets_inn_pass
 x 9
 y 5
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 9
@@ -1390,7 +1338,6 @@ arch woods_2
 name foilage
 x 9
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1403,7 +1350,6 @@ end
 arch woods_2
 name foilage
 x 10
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1411,7 +1357,6 @@ arch woods_2
 name foilage
 x 10
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1447,7 +1392,6 @@ arch woods_2
 name foilage
 x 10
 y 6
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1510,7 +1454,6 @@ arch woods_2
 name foilage
 x 10
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1523,7 +1466,6 @@ end
 arch woods_2
 name foilage
 x 11
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1531,7 +1473,6 @@ arch woods_2
 name foilage
 x 11
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1563,7 +1504,6 @@ arch woods_2
 name foilage
 x 11
 y 6
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1594,7 +1534,7 @@ end
 arch longtable_1_4
 x 11
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 11
@@ -1637,7 +1577,6 @@ arch woods_2
 name foilage
 x 11
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1650,7 +1589,6 @@ end
 arch woods_2
 name foilage
 x 12
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1658,7 +1596,6 @@ arch woods_2
 name foilage
 x 12
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1666,7 +1603,6 @@ arch woods_2
 name foilage
 x 12
 y 2
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1674,7 +1610,6 @@ arch woods_2
 name foilage
 x 12
 y 3
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1686,7 +1621,6 @@ arch woods_2
 name foilage
 x 12
 y 4
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1717,12 +1651,9 @@ end
 arch elf_man
 msg
 @match Sweet
-No, I'm not Sweet
-Sweet is the big pixie over in the corner.
-@match Hello
-Hello, welcome to Sweets.
-Food and drink available at a reasonable rate.
-Rooms are 50 gold.
+No, I'm not Sweet.  Sweet is the big pixie over in the corner.
+@match hi|hello
+Hello, welcome to Sweets.  Food and drink available at a reasonable rate.  Rooms are 50 gold.
 @match *
 What can I do for you?
 endmsg
@@ -1736,7 +1667,7 @@ end
 arch longtable_2_1_2
 x 12
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 12
@@ -1773,7 +1704,6 @@ arch woods_2
 name foilage
 x 12
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1786,7 +1716,6 @@ end
 arch woods_2
 name foilage
 x 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1853,7 +1782,7 @@ end
 arch longtable_2_1_2
 x 13
 y 9
-no_pass 1
+move_block all
 end
 arch light4
 x 13
@@ -1900,7 +1829,6 @@ arch woods_2
 name foilage
 x 13
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1913,7 +1841,6 @@ end
 arch woods_2
 name foilage
 x 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -1972,7 +1899,7 @@ end
 arch longtable_2_1_2
 x 14
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 14
@@ -2001,7 +1928,6 @@ arch woods_2
 name foilage
 x 14
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2014,7 +1940,6 @@ end
 arch woods_2
 name foilage
 x 15
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2085,7 +2010,7 @@ end
 arch longtable_1_3
 x 15
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 15
@@ -2127,7 +2052,6 @@ arch woods_2
 name foilage
 x 15
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2140,7 +2064,6 @@ end
 arch woods_2
 name foilage
 x 16
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2204,7 +2127,6 @@ arch woods_2
 name foilage
 x 16
 y 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2219,7 +2141,6 @@ arch woods_2
 name foilage
 x 16
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2232,7 +2153,6 @@ end
 arch woods_2
 name foilage
 x 17
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2312,7 +2232,6 @@ arch woods_2
 name foilage
 x 17
 y 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2327,7 +2246,6 @@ arch woods_2
 name foilage
 x 17
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2340,7 +2258,6 @@ end
 arch woods_2
 name foilage
 x 18
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2440,7 +2357,6 @@ arch woods_2
 name foilage
 x 18
 y 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2455,7 +2371,6 @@ arch woods_2
 name foilage
 x 18
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2468,7 +2383,6 @@ end
 arch woods_2
 name foilage
 x 19
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2495,9 +2409,7 @@ end
 arch elf_guard
 msg
 @match rough
-Ya, we just spent a week northwest of the forest
-keeping an eye on the ogre caves.
-What a job...
+Ya, we just spent a week northwest of the forest keeping an eye on the ogre caves.  What a job...
 @match *
 Whew, what a rough week.
 endmsg
@@ -2516,7 +2428,6 @@ arch woods_2
 name foilage
 x 19
 y 5
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2572,7 +2483,6 @@ arch woods_2
 name foilage
 x 19
 y 12
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2580,7 +2490,6 @@ arch woods_2
 name foilage
 x 19
 y 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2595,7 +2504,6 @@ arch woods_2
 name foilage
 x 19
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2608,7 +2516,6 @@ end
 arch woods_2
 name foilage
 x 20
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2648,7 +2555,6 @@ arch woods_2
 name foilage
 x 20
 y 5
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2696,7 +2602,6 @@ arch woods_2
 name foilage
 x 20
 y 12
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2704,7 +2609,6 @@ arch woods_2
 name foilage
 x 20
 y 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2719,7 +2623,6 @@ arch woods_2
 name foilage
 x 20
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2732,7 +2635,6 @@ end
 arch woods_2
 name foilage
 x 21
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2740,7 +2642,6 @@ arch woods_2
 name foilage
 x 21
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2748,7 +2649,6 @@ arch woods_2
 name foilage
 x 21
 y 2
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2756,7 +2656,6 @@ arch woods_2
 name foilage
 x 21
 y 3
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2764,7 +2663,6 @@ arch woods_2
 name foilage
 x 21
 y 4
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2776,7 +2674,6 @@ arch woods_2
 name foilage
 x 21
 y 5
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2851,7 +2748,6 @@ arch woods_2
 name foilage
 x 21
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2864,7 +2760,6 @@ end
 arch woods_2
 name foilage
 x 22
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2900,7 +2795,6 @@ arch woods_2
 name foilage
 x 22
 y 5
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2908,7 +2802,6 @@ arch woods_2
 name foilage
 x 22
 y 6
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2916,7 +2809,6 @@ arch woods_2
 name foilage
 x 22
 y 7
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2924,7 +2816,6 @@ arch woods_2
 name foilage
 x 22
 y 8
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2932,7 +2823,6 @@ arch woods_2
 name foilage
 x 22
 y 9
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2975,7 +2865,6 @@ arch woods_2
 name foilage
 x 22
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2988,7 +2877,6 @@ end
 arch woods_2
 name foilage
 x 23
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -2996,7 +2884,6 @@ arch woods_2
 name foilage
 x 23
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3020,7 +2907,6 @@ arch woods_2
 name foilage
 x 23
 y 4
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3032,7 +2918,6 @@ arch woods_2
 name foilage
 x 23
 y 5
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3040,7 +2925,6 @@ arch woods_2
 name foilage
 x 23
 y 6
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3048,7 +2932,6 @@ arch woods_2
 name foilage
 x 23
 y 7
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3056,7 +2939,6 @@ arch woods_2
 name foilage
 x 23
 y 8
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3064,7 +2946,6 @@ arch woods_2
 name foilage
 x 23
 y 9
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3107,7 +2988,6 @@ arch woods_2
 name foilage
 x 23
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3120,7 +3000,6 @@ end
 arch woods_2
 name foilage
 x 24
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3135,7 +3014,6 @@ arch woods_2
 name foilage
 x 24
 y 1
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3150,7 +3028,6 @@ arch woods_2
 name foilage
 x 24
 y 2
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3165,7 +3042,6 @@ arch woods_2
 name foilage
 x 24
 y 3
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3180,7 +3056,6 @@ arch woods_2
 name foilage
 x 24
 y 4
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3195,7 +3070,6 @@ arch woods_2
 name foilage
 x 24
 y 5
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3210,7 +3084,6 @@ arch woods_2
 name foilage
 x 24
 y 6
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3225,7 +3098,6 @@ arch woods_2
 name foilage
 x 24
 y 7
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3240,7 +3112,6 @@ arch woods_2
 name foilage
 x 24
 y 8
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3255,7 +3126,6 @@ arch woods_2
 name foilage
 x 24
 y 9
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3270,7 +3140,6 @@ arch woods_2
 name foilage
 x 24
 y 10
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3285,7 +3154,6 @@ arch woods_2
 name foilage
 x 24
 y 11
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3300,7 +3168,6 @@ arch woods_2
 name foilage
 x 24
 y 12
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3315,7 +3182,6 @@ arch woods_2
 name foilage
 x 24
 y 13
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
@@ -3330,7 +3196,6 @@ arch woods_2
 name foilage
 x 24
 y 14
-move_slow walk
 move_slow_penalty 3
 blocksview 1
 end
