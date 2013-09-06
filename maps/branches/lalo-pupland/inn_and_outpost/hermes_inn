@@ -1,12 +1,14 @@
 arch map
 name Hermes Inn
 difficulty 1
-width 25
+region wilderness
+width 23
 height 15
 enter_x 7
 enter_y 13
 msg
 Created:  2002-10-27 Todd Mitchell
+Modified: 2013-04-06 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -131,7 +133,7 @@ end
 arch longtable_1_4
 x 1
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 1
@@ -226,7 +228,7 @@ end
 arch longtable_2_1_2
 x 2
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 2
@@ -309,24 +311,26 @@ end
 arch fatman
 name Hermes
 msg
-@match hello|Hello
+@match hi|hello
+@question room Do you have a room for the night?
 Greetings, welcome to my inn.
 You must be cold and tired.
-@match room|Room|bed|Bed
+@match room|bed
+@question 50 Fifty goldcoins!?
 Need a room eh? Upstairs, cost ya 50 gold for one day.
-@match 50|fifty|Fifty
+@match 50|fifty
+@reply ripoff You are ripping me off!
 Not much else around friend.
 @match ripoff|cheat|robbery
 You could always go sleep with the bears...
-@match Billy|billy|giant
-Ya Billy has been with me for 10 years.
-He's a little slow on the uptake,
-but he's a good kid.
-@match Aza|aza
+@match billy|giant
+Ya Billy has been with me for 10 years.  He's a little slow on the uptake, but he's a good kid.
+@match aza
 Who?  Never heard of him.
-@match White|white
+@match white
 Look. I'm getting tired of all your questions...understand me?
 @match *
+@question room Do you have a room for the night?
 What can I gettcha?
 endmsg
 x 3
@@ -342,7 +346,7 @@ end
 arch longtable_2_1_2
 x 3
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 3
@@ -424,7 +428,7 @@ end
 arch longtable_2_1_2
 x 4
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 4
@@ -519,7 +523,7 @@ end
 arch longtable_2_1_2
 x 5
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 5
@@ -622,7 +626,7 @@ end
 arch longtable_2_1_2
 x 6
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 6
@@ -712,7 +716,7 @@ end
 arch longtable_2_1_2
 x 7
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 7
@@ -743,6 +747,12 @@ end
 arch woodfloor2
 x 7
 y 8
+end
+arch button_small
+x 7
+y 9
+invisible 1
+connected 1
 end
 arch woodfloor2
 x 7
@@ -811,7 +821,7 @@ end
 arch longtable_2_1_2
 x 8
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 8
@@ -905,7 +915,7 @@ end
 arch longtable_2_1_2
 x 9
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 9
@@ -995,7 +1005,7 @@ end
 arch longtable_1_1
 x 10
 y 1
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 10
@@ -1004,7 +1014,7 @@ end
 arch longtable_2_1_1
 x 10
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 10
@@ -1013,7 +1023,7 @@ end
 arch longtable_2_2_4
 x 10
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 10
@@ -1098,6 +1108,7 @@ y 1
 end
 arch booze_table
 name Drop 5 gold for booze
+sp 1
 food 5
 x 11
 y 1
@@ -1112,6 +1123,7 @@ y 3
 end
 arch food_table
 name Drop 10 gold for food
+sp 1
 food 10
 x 11
 y 3
@@ -1541,10 +1553,10 @@ y 1
 end
 arch pearl_converter
 name drop 1500 platinum to buy healing potion
-slaying platinacoin
+slaying money
 other_arch potion_heal
 face cauldron.111
-food 1500
+food 75000
 x 16
 y 1
 end
@@ -1554,6 +1566,7 @@ y 2
 end
 arch silver_converter
 name convert silver into gold (12:1)
+sp 1
 food 12
 x 16
 y 2
@@ -1564,6 +1577,7 @@ y 3
 end
 arch diamond_converter
 name drop gold to buy diamonds (42:1)
+sp 1
 food 42
 x 16
 y 3
@@ -1632,7 +1646,8 @@ resist_holyword 100
 randomitems none
 friendly 1
 arch key2
-name key
+name Hermes' Key
+name_pl Hermes' Keys
 slaying Hermes Key
 end
 end
@@ -1669,7 +1684,7 @@ end
 arch longtable_1_1
 x 17
 y 1
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1680,7 +1695,7 @@ end
 arch longtable_2_1_1
 x 17
 y 2
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1691,7 +1706,7 @@ end
 arch longtable_2_2_1
 x 17
 y 3
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -1749,7 +1764,7 @@ x 17
 y 11
 end
 arch awall_0
-name Anvil
+name anvil
 face ambolt.111
 x 17
 y 11
@@ -1802,7 +1817,7 @@ end
 arch longtable_2_1_2
 x 18
 y 3
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -1892,7 +1907,7 @@ end
 arch longtable_2_1_2
 x 19
 y 3
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -1981,7 +1996,7 @@ end
 arch longtable_1_3
 x 20
 y 3
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -2020,9 +2035,10 @@ x 20
 y 7
 end
 arch altar
-name drop 50 gold for a room
-slaying goldcoin
-food 50
+name drop 5 platinum for a room
+slaying money
+exp 30
+food 250
 x 20
 y 7
 type 31

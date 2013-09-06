@@ -1,11 +1,14 @@
 arch map
 name Ara Nor
+difficulty 10
+region wilderness
 width 22
 height 20
 enter_x 10
-enter_y 16
+enter_y 18
 msg
 Created:  2004-03-07 Avion
+Modified: 2012-02-03 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1162,9 +1165,7 @@ arch statue2
 msg
 Outpost Ara Nor
 -------------
-This outpost commissioned in the memory of
-Lord Ara of the sharp eye.
-Hero of the Denau Uprising.
+This outpost commissioned in the memory of Lord Ara of the sharp eye.  Hero of the Denau Uprising.
 endmsg
 x 8
 y 15
@@ -2375,13 +2376,16 @@ end
 arch merchant
 msg
 @match merchant|trade
-I mostly trade with the elves.
-Some say it's dangerous but you just have to be cautious.
+@question elves Where are the elves?
+@question dangerous What do you mean with "dangerous"?
+I mostly trade with the elves.  Some say it's dangerous but you just have to be cautious.
 @match elves
 Yes there is a elven village to the west of here.
 @match dangerous
+@question elves Where are the elves?
 Well the elves aren't really dangerous but the Dark Forest is...
 @match *
+@question merchant Who do you trade with out here in the wilderness?
 Hello, good to meet you.  I'm Zim, a merchant by trade.
 endmsg
 x 18
