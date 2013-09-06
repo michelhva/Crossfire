@@ -1,11 +1,14 @@
 arch map
-name Abyss
-difficulty 1
+name Abyss, Level 5
+difficulty 15
 region euthville
 width 20
 height 18
+enter_x 9
+enter_y 1
 msg
 Created:  1993-10-22
+Modified: 2012-02-02 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -851,8 +854,7 @@ y 2
 end
 arch magic_mouth
 msg
-You feel a deeeeeep daaaaaark chill
-that bites your soul. *chomp
+You feel a deeeeeep daaaaaark chill that bites your soul. *chomp*
 endmsg
 x 9
 y 3
@@ -950,8 +952,7 @@ y 2
 end
 arch magic_mouth
 msg
-You feel a deeeeeep daaaaaark chill
-that bites your soul. *chomp
+You feel a deeeeeep daaaaaark chill that bites your soul. *chomp*
 endmsg
 x 10
 y 3
