@@ -1,114 +1,115 @@
 arch map
-name Valriel Weeping
+name Valriel's Church, Catacombs
 reset_timeout 7200
 difficulty 6
 region euthville
 width 16
 height 16
-enter_x 1
-enter_y 1
+enter_x 9
+enter_y 15
 msg
 Created:  1993-11-02
+Modified: 2013-08-02 Kevin Zheng
 endmsg
 end
 arch dungeon_floor
 end
-arch gwall_2_2_2
+arch dwall_2_2_2
 end
 arch dungeon_floor
 y 1
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 1
 end
 arch dungeon_floor
 y 2
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 2
 end
 arch dungeon_floor
 y 3
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 3
 end
 arch dungeon_floor
 y 4
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 4
 end
 arch dungeon_floor
 y 5
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 5
 end
 arch dungeon_floor
 y 6
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 6
 end
 arch dungeon_floor
 y 7
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 7
 end
 arch dungeon_floor
 y 8
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 8
 end
 arch dungeon_floor
 y 9
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 9
 end
 arch dungeon_floor
 y 10
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 10
 end
 arch dungeon_floor
 y 11
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 11
 end
 arch dungeon_floor
 y 12
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 12
 end
 arch dungeon_floor
 y 13
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 13
 end
 arch dungeon_floor
 y 14
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 y 14
 end
 arch dungeon_floor
 y 15
 end
-arch gwall_2_2_1
+arch dwall_2_2_1
 y 15
 end
 arch dungeon_floor
 x 1
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 1
 end
 arch dungeon_floor
@@ -178,18 +179,25 @@ arch dungeon_floor
 x 1
 y 14
 end
+arch stair2_up
+slaying valriel
+hp 1
+sp 1
+x 1
+y 14
+end
 arch dungeon_floor
 x 1
 y 15
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 1
 y 15
 end
 arch dungeon_floor
 x 2
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 2
 end
 arch dungeon_floor
@@ -256,14 +264,14 @@ arch dungeon_floor
 x 2
 y 15
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 2
 y 15
 end
 arch dungeon_floor
 x 3
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 3
 end
 arch dungeon_floor
@@ -330,14 +338,14 @@ arch dungeon_floor
 x 3
 y 15
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 3
 y 15
 end
 arch dungeon_floor
 x 4
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 4
 end
 arch dungeon_floor
@@ -416,14 +424,14 @@ arch dungeon_floor
 x 4
 y 15
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 4
 y 15
 end
 arch dungeon_floor
 x 5
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 5
 end
 arch dungeon_floor
@@ -490,14 +498,14 @@ arch dungeon_floor
 x 5
 y 15
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 5
 y 15
 end
 arch dungeon_floor
 x 6
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 6
 end
 arch dungeon_floor
@@ -509,6 +517,7 @@ x 6
 y 2
 end
 arch altar
+name defiled altar
 face altar.112
 x 6
 y 2
@@ -570,14 +579,14 @@ arch dungeon_floor
 x 6
 y 15
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 6
 y 15
 end
 arch dungeon_floor
 x 7
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 7
 end
 arch dungeon_floor
@@ -589,6 +598,7 @@ x 7
 y 2
 end
 arch altar
+name defiled altar
 face altar.112
 x 7
 y 2
@@ -646,14 +656,14 @@ arch dungeon_floor
 x 7
 y 15
 end
-arch gwall_1_3
+arch dwall_2_1_2
 x 7
 y 15
 end
 arch dungeon_floor
 x 8
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 8
 end
 arch dungeon_floor
@@ -665,6 +675,7 @@ x 8
 y 2
 end
 arch altar
+name defiled altar
 face altar.112
 x 8
 y 2
@@ -734,17 +745,14 @@ arch dungeon_floor
 x 8
 y 15
 end
-arch oakdoor
-slaying /world/world_105_113
-hp 8
-sp 21
+arch dwall_2_1_2
 x 8
 y 15
 end
 arch dungeon_floor
 x 9
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 9
 end
 arch dungeon_floor
@@ -756,6 +764,7 @@ x 9
 y 2
 end
 arch altar
+name defiled altar
 face altar.112
 x 9
 y 2
@@ -813,17 +822,14 @@ arch dungeon_floor
 x 9
 y 15
 end
-arch oakdoor
-slaying /world/world_105_113
-hp 8
-sp 21
+arch dwall_2_1_2
 x 9
 y 15
 end
 arch dungeon_floor
 x 10
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 10
 end
 arch dungeon_floor
@@ -890,17 +896,14 @@ arch dungeon_floor
 x 10
 y 15
 end
-arch oakdoor
-slaying /world/world_105_113
-hp 8
-sp 21
+arch dwall_2_1_2
 x 10
 y 15
 end
 arch dungeon_floor
 x 11
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 11
 end
 arch dungeon_floor
@@ -963,14 +966,14 @@ arch dungeon_floor
 x 11
 y 15
 end
-arch gwall_1_4
+arch dwall_2_1_2
 x 11
 y 15
 end
 arch dungeon_floor
 x 12
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 12
 end
 arch dungeon_floor
@@ -1041,14 +1044,14 @@ arch dungeon_floor
 x 12
 y 15
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 12
 y 15
 end
 arch dungeon_floor
 x 13
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 13
 end
 arch dungeon_floor
@@ -1127,14 +1130,14 @@ arch dungeon_floor
 x 13
 y 15
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 13
 y 15
 end
 arch dungeon_floor
 x 14
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 14
 end
 arch dungeon_floor
@@ -1193,25 +1196,32 @@ arch dungeon_floor
 x 14
 y 14
 end
+arch stair2_up
+slaying valriel
+hp 16
+sp 1
+x 14
+y 14
+end
 arch dungeon_floor
 x 14
 y 15
 end
-arch gwall_2_1_2
+arch dwall_2_1_2
 x 14
 y 15
 end
 arch dungeon_floor
 x 15
 end
-arch gwall_2_2_3
+arch dwall_2_2_3
 x 15
 end
 arch dungeon_floor
 x 15
 y 1
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 1
 end
@@ -1219,7 +1229,7 @@ arch dungeon_floor
 x 15
 y 2
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 2
 end
@@ -1227,7 +1237,7 @@ arch dungeon_floor
 x 15
 y 3
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 3
 end
@@ -1235,7 +1245,7 @@ arch dungeon_floor
 x 15
 y 4
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 4
 end
@@ -1243,7 +1253,7 @@ arch dungeon_floor
 x 15
 y 5
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 5
 end
@@ -1251,7 +1261,7 @@ arch dungeon_floor
 x 15
 y 6
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 6
 end
@@ -1259,7 +1269,7 @@ arch dungeon_floor
 x 15
 y 7
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 7
 end
@@ -1267,7 +1277,7 @@ arch dungeon_floor
 x 15
 y 8
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 8
 end
@@ -1275,7 +1285,7 @@ arch dungeon_floor
 x 15
 y 9
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 9
 end
@@ -1283,7 +1293,7 @@ arch dungeon_floor
 x 15
 y 10
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 10
 end
@@ -1291,7 +1301,7 @@ arch dungeon_floor
 x 15
 y 11
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 11
 end
@@ -1299,7 +1309,7 @@ arch dungeon_floor
 x 15
 y 12
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 12
 end
@@ -1307,7 +1317,7 @@ arch dungeon_floor
 x 15
 y 13
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 13
 end
@@ -1315,7 +1325,7 @@ arch dungeon_floor
 x 15
 y 14
 end
-arch gwall_2_1_1
+arch dwall_2_1_1
 x 15
 y 14
 end
@@ -1323,7 +1333,7 @@ arch dungeon_floor
 x 15
 y 15
 end
-arch gwall_2_2_4
+arch dwall_2_2_4
 x 15
 y 15
 end

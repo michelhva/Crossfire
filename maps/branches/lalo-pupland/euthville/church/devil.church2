@@ -1,12 +1,14 @@
 arch map
-name Valriel Weeping
-difficulty 1
+name Valriel Weeping, Dungeon Level 2
+difficulty 15
 region euthville
 width 25
 height 25
+enter_x 1
+enter_y 1
 msg
 Created:  1993-11-24
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2013-08-02 Kevin Zheng
 endmsg
 end
 arch dungeon_floor
@@ -28,7 +30,7 @@ end
 arch dungeon_floor
 y 3
 end
-arch bwall_0
+arch rough_wall_2_1_1
 y 3
 end
 arch dungeon_floor
@@ -473,7 +475,7 @@ end
 arch dungeon_floor
 x 3
 end
-arch bwall_0
+arch rough_wall_2_1_2
 x 3
 end
 arch dungeon_floor
