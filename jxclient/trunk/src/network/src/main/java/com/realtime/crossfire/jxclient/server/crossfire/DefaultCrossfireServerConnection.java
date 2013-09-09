@@ -71,12 +71,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private static final int DEFAULT_MAP_HEIGHT = 11;
 
     /**
-     * The default number of ground objects when no "setup num_look_objects"
-     * command has been sent.
-     */
-    private static final int DEFAULT_NUM_LOOK_OBJECTS = 50;
-
-    /**
      * Pattern to split a string by ":".
      */
     @NotNull
@@ -194,20 +188,11 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private int currentMapHeight = DEFAULT_MAP_HEIGHT;
 
     /**
-     * The number of ground view objects to be negotiated with the server.
+     * The {@link NumLookObjects} instance for negotiating the size of the
+     * ground view.
      */
-    private int preferredNumLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
-
-    /**
-     * The number of ground view objects being negotiated with the server. Set
-     * to <code>0</code> when not negotiating.
-     */
-    private int pendingNumLookObjects;
-
-    /**
-     * The currently active number of ground view objects.
-     */
-    private int currentNumLookObjects;
+    @NotNull
+    private final NumLookObjects numLookObjects;
 
     /**
      * Buffer to build commands to send. It is shared between all sendXxx()
@@ -653,6 +638,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
         addClientSocketListener(clientSocketListener);
+        //noinspection ThisEscapedInObjectConstruction
+        numLookObjects = new NumLookObjects(this, debugProtocol);
     }
 
     /**
@@ -688,15 +675,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private void connected() {
         pendingMapWidth = 0;
         pendingMapHeight = 0;
-        pendingNumLookObjects = 0;
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("connected: defaulting to pending_num_look_objects="+pendingNumLookObjects);
-        }
+        numLookObjects.connected();
         setCurrentMapSize(DEFAULT_MAP_WIDTH, DEFAULT_MAP_HEIGHT);
-        currentNumLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("connected: defaulting to num_look_objects="+currentNumLookObjects);
-        }
 
         fireNewMap();
 
@@ -1836,40 +1816,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     }
 
     /**
-     * Requests a change of the number of ground objects from the server.
-     * @param numLookObjects the number of ground objects to request
-     */
-    private void negotiateNumLookObjects(final int numLookObjects) {
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("negotiateNumLookObjects: "+numLookObjects);
-        }
-
-        if (clientSocketState == ClientSocketState.CONNECTING || clientSocketState == ClientSocketState.VERSION || clientSocketState == ClientSocketState.CONNECT_FAILED) {
-            if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("negotiateNumLookObjects: clientSocketState="+clientSocketState+", ignoring");
-            }
-            return;
-        }
-        if (pendingNumLookObjects != 0) {
-            if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("negotiateNumLookObjects: already negotiating pending_num_look_objects="+pendingNumLookObjects+", ignoring");
-            }
-            return;
-        }
-        if (currentNumLookObjects == numLookObjects) {
-            if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("negotiateNumLookObjects: unchanged from num_look_objects="+currentNumLookObjects+", ignoring");
-            }
-            return;
-        }
-        pendingNumLookObjects = numLookObjects;
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("negotateNumLookObjects: pending_num_look_objects="+pendingNumLookObjects+", sending setup command");
-        }
-        sendSetup("num_look_objects "+pendingNumLookObjects);
-    }
-
-    /**
      * Handles the replyinfo server to client command.
      * @param infoType the info_type parameter
      * @param packet the packet payload data
@@ -2542,7 +2488,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             } else if (clientSocketState == ClientSocketState.ACCOUNT_INFO) {
                 fireStartPlaying();
                 setClientSocketState(ClientSocketState.ACCOUNT_INFO, ClientSocketState.CONNECTED);
-                negotiateNumLookObjects(preferredNumLookObjects);
             }
             negotiateMapSize(preferredMapWidth, preferredMapHeight);
         }
@@ -3181,7 +3126,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (clientSocketState != ClientSocketState.CONNECTED) {
             setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
             negotiateMapSize(preferredMapWidth, preferredMapHeight);
-            negotiateNumLookObjects(preferredNumLookObjects);
         }
         fireCommandQueryReceived(text, flags);
         notifyPacketWatcherListenersAscii(packet, args);
@@ -3338,40 +3282,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     throw new UnknownCommandException("the server is too old for this client since it does not support the tick=1 setup option.");
                 }
             } else if (option.equals("num_look_objects")) {
-                if (value.equals("FALSE")) {
-                    System.err.println("Warning: the server is too old for this client since it does not support the num_look_objects setup option.");
-                    System.err.println("Expect issues with the ground view display.");
-                    pendingNumLookObjects = 0;
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("processSetup: pending_num_look_objects="+pendingNumLookObjects+" [server didn't understand setup command]");
-                    }
-                } else {
-                    final int thisNumLookObjects;
-                    try {
-                        thisNumLookObjects = Integer.parseInt(value);
-                    } catch (final NumberFormatException ignored) {
-                        throw new UnknownCommandException("the server returned 'setup num_look_objects "+value+"'.");
-                    }
-                    if (pendingNumLookObjects == 0) {
-                        System.err.println("the server sent an unexpected 'setup num_look_objects "+value+"'.");
-                    } else {
-                        if (pendingNumLookObjects != thisNumLookObjects) {
-                            System.err.println("Warning: the server didn't accept the num_look_objects setup option: requested "+pendingNumLookObjects+", returned "+thisNumLookObjects+".");
-                            System.err.println("Expect issues with the ground view display.");
-                        }
-                        pendingNumLookObjects = 0;
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("processSetup: pending_num_look_objects="+pendingNumLookObjects+" [ok]");
-                        }
-                        currentNumLookObjects = thisNumLookObjects;
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("processSetup: num_look_objects="+currentNumLookObjects);
-                        }
-                        if (currentNumLookObjects != preferredNumLookObjects) {
-                            negotiateNumLookObjects(preferredNumLookObjects);
-                        }
-                    }
-                }
+                numLookObjects.processSetupNumLookObjects(value);
             } else if (option.equals("faceset")) {
                 // ignore: we do not care about the face set
             } else if (option.equals("want_pickup")) {
@@ -4090,14 +4001,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      */
     @Override
     public void setPreferredNumLookObjects(final int preferredNumLookObjects) {
-        final int preferredNumLookObjects2 = Math.max(3, preferredNumLookObjects);
-        if (this.preferredNumLookObjects == preferredNumLookObjects2) {
-            return;
-        }
-
-        this.preferredNumLookObjects = preferredNumLookObjects2;
-
-        negotiateNumLookObjects(this.preferredNumLookObjects);
+        numLookObjects.setPreferredNumLookObjects(preferredNumLookObjects);
     }
 
     /**
@@ -4159,6 +4063,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         clientSocketState = nextState;
         model.getGuiStateManager().setClientSocketState(nextState);
+        numLookObjects.setClientSocketState(clientSocketState);
     }
 
     /**
@@ -4372,7 +4277,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @return the current size of the ground view
      */
     public int getCurrentNumLookObjects() {
-        return currentNumLookObjects;
+        return numLookObjects.getCurrentNumLookObjects();
     }
 
     protected void fireMapClear(final int x, final int y) {
