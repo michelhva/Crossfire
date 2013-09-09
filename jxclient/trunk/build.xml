@@ -67,14 +67,14 @@
     <target name="jar" depends="compile-jxclient,copy-skins,update-build-properties" description="Compiles the client; creates jxclient.jar.">
         <jar destfile="jxclient.jar">
             <fileset dir="${build}/jxclient"/>
-            <fileset dir="." includes="resource/application_icon.png"/>
-            <fileset dir="." includes="resource/next_group.png"/>
-            <fileset dir="." includes="resource/prev_group.png"/>
-            <fileset dir="." includes="resource/sounds/*.wav"/>
-            <fileset dir="." includes="resource/spells/*.png"/>
-            <fileset dir="." includes="resource/splashscreen.png"/>
-            <fileset dir="." includes="resource/unknown.png"/>
-            <fileset dir="." includes="resource/all_spell_skills_icon.png"/>
+            <fileset dir="src/gui/src/main/resources" includes="resource/application_icon.png"/>
+            <fileset dir="src/gui/src/main/resources" includes="resource/next_group.png"/>
+            <fileset dir="src/gui/src/main/resources" includes="resource/prev_group.png"/>
+            <fileset dir="src/gui/src/main/resources" includes="resource/sounds/*.wav"/>
+            <fileset dir="src/gui/src/main/resources" includes="resource/spells/*.png"/>
+            <fileset dir="src/gui/src/main/resources" includes="resource/splashscreen.png"/>
+            <fileset dir="src/gui/src/main/resources" includes="resource/unknown.png"/>
+            <fileset dir="src/gui/src/main/resources" includes="resource/all_spell_skills_icon.png"/>
             <fileset dir="${build}/skins"/>
             <fileset dir="${build.properties.dir}" includes="build.properties"/>
             <manifest>
