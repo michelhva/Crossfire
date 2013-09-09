@@ -81,6 +81,11 @@ public class NumLookObjects {
     private int currentNumLookObjects;
 
     /**
+     * Whether negotiation may be pending.
+     */
+    private boolean pending;
+
+    /**
      * Creates a new instance.
      * @param crossfireServerConnection the crossfire server connection for
      * sending setup commands
@@ -106,6 +111,7 @@ public class NumLookObjects {
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("connected: defaulting to num_look_objects="+currentNumLookObjects);
             }
+            sync.notifyAll();
         }
     }
 
@@ -115,6 +121,7 @@ public class NumLookObjects {
     private void negotiateNumLookObjects() {
         final int numLookObjects;
         synchronized (sync) {
+            pending = false;
             numLookObjects = preferredNumLookObjects;
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("negotiateNumLookObjects: "+numLookObjects);
@@ -142,6 +149,7 @@ public class NumLookObjects {
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("negotateNumLookObjects: pending_num_look_objects="+pendingNumLookObjects+", sending setup command");
             }
+            sync.notifyAll();
         }
         crossfireServerConnection.sendSetup("num_look_objects "+numLookObjects);
     }
@@ -158,6 +166,7 @@ public class NumLookObjects {
             System.err.println("Expect issues with the ground view display.");
             synchronized (sync) {
                 pendingNumLookObjects = 0;
+                sync.notifyAll();
             }
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("processSetup: pending_num_look_objects=0 [server didn't understand setup command]");
@@ -188,6 +197,10 @@ public class NumLookObjects {
                         debugProtocol.debugProtocolWrite("processSetup: num_look_objects="+currentNumLookObjects);
                     }
                     negotiate = currentNumLookObjects != preferredNumLookObjects;
+                    if (negotiate) {
+                        pending = true;
+                    }
+                    sync.notifyAll();
                 }
             }
             if (negotiate) {
@@ -208,6 +221,7 @@ public class NumLookObjects {
             }
 
             this.preferredNumLookObjects = preferredNumLookObjects2;
+            pending = true;
         }
         negotiateNumLookObjects();
     }
@@ -223,15 +237,31 @@ public class NumLookObjects {
     }
 
     /**
+     * Waits until {@link #getCurrentNumLookObjects()} is stable. This function
+     * returns as soon as the negotiation with the Crossfire server is
+     * complete.
+     * @throws InterruptedException if the current thread was interrupted
+     */
+    public void waitForCurrentNumLookObjectsValid() throws InterruptedException {
+        synchronized (sync) {
+            while (!connected || pendingNumLookObjects != 0 || pending) {
+                sync.wait();
+            }
+        }
+    }
+
+    /**
      * Called whenever the client socket state has changed.
      * @param clientSocketState the new client socket state
      */
     public void setClientSocketState(@NotNull final ClientSocketState clientSocketState) {
         synchronized (sync) {
             connected = clientSocketState == ClientSocketState.CONNECTED;
+            sync.notifyAll();
             if (!connected) {
                 return;
             }
+            pending = true;
         }
         negotiateNumLookObjects();
     }

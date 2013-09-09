@@ -4280,6 +4280,16 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         return numLookObjects.getCurrentNumLookObjects();
     }
 
+    /**
+     * Waits until {@link #getCurrentNumLookObjects()} is stable. This function
+     * returns as soon as the negotiation with the Crossfire server is
+     * complete.
+     * @throws InterruptedException if the current thread was interrupted
+     */
+    public void waitForCurrentNumLookObjectsValid() throws InterruptedException {
+        numLookObjects.waitForCurrentNumLookObjectsValid();
+    }
+
     protected void fireMapClear(final int x, final int y) {
         assert crossfireUpdateMapListener != null;
         crossfireUpdateMapListener.mapClear(x, y);

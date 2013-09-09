@@ -64,13 +64,13 @@ public class DefaultCrossfireServerConnectionTest {
             connection.setPreferredNumLookObjects(10);
             assert sem != null;
             sem.acquire();
-            Thread.sleep(200);
+            connection.waitForCurrentNumLookObjectsValid();
             Assert.assertEquals(10, connection.getCurrentNumLookObjects());
             connection.setPreferredNumLookObjects(11);
             connection.setPreferredNumLookObjects(12);
             connection.setPreferredNumLookObjects(13);
             connection.setPreferredNumLookObjects(14);
-            Thread.sleep(200);
+            connection.waitForCurrentNumLookObjectsValid();
             Assert.assertEquals(14, connection.getCurrentNumLookObjects());
         } finally {
             connection.stop();
