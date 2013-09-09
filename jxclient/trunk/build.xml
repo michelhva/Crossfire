@@ -85,8 +85,8 @@
     </target>
     <target name="copy-skins">
         <delete dir="${build}/skins"/>
-        <copy todir="${build}/skins/com/realtime/crossfire/jxclient/skins">
-            <fileset dir="src/skins" excludes="prelude/**,*.iml"/>
+        <copy todir="${build}/skins">
+            <fileset dir="src/skins/src/main/resources" excludes="com/realtime/crossfire/jxclient/skins/prelude/**"/>
         </copy>
     </target>
     <target name="clean">
