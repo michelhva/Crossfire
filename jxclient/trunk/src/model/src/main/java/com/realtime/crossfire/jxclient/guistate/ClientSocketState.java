@@ -21,11 +21,9 @@
 
 package com.realtime.crossfire.jxclient.guistate;
 
-import com.realtime.crossfire.jxclient.server.socket.ClientSocket;
-
 /**
- * Connection progress states of the {@link ClientSocket}. The state transitions
- * in the declared order.
+ * Connection progress states of the Crossfire server conneciton. The state
+ * transitions in the declared order.
  * @author Andreas Kirschbaum
  */
 public enum ClientSocketState {
