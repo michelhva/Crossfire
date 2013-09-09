@@ -19,9 +19,8 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.server.crossfire;
+package com.realtime.crossfire.jxclient.protocol;
 
-import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -210,9 +209,9 @@ public class MessageTypes {
      * Parses a string into a message type.
      * @param str the string to parse
      * @return the message type
-     * @throws UnknownCommandException if the string is unknown
+     * @throws UnknownMessageTypeException if the string is unknown
      */
-    public static int parseMessageType(@NotNull final String str) throws UnknownCommandException {
+    public static int parseMessageType(@NotNull final String str) throws UnknownMessageTypeException {
         if (str.equals("BOOK")) {
             return MSG_TYPE_BOOK;
         }
@@ -273,7 +272,7 @@ public class MessageTypes {
         if (str.equals("QUERY")) {
             return MSG_TYPE_QUERY;
         }
-        throw new UnknownCommandException(str);
+        throw new UnknownMessageTypeException(str);
     }
 
     /**

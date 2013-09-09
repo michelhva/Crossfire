@@ -19,52 +19,27 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.server.crossfire.messages;
+package com.realtime.crossfire.jxclient.protocol;
+
+import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface defining constants for the "upditem" Crossfire protocol message.
+ * An exception that is thrown if an undefined message type occurs.
  * @author Andreas Kirschbaum
  */
-public interface UpdItem {
+public class UnknownMessageTypeException extends Exception {
 
     /**
-     * The update flags value for location updates.
+     * The serial version UID.
      */
-    int UPD_LOCATION = 0x01;
+    private static final long serialVersionUID = 1L;
 
     /**
-     * The update flags value for flags updates.
+     * Creates a new instance.
+     * @param messageType the undefined message type
      */
-    int UPD_FLAGS = 0x02;
-
-    /**
-     * The update flags value for weight updates.
-     */
-    int UPD_WEIGHT = 0x04;
-
-    /**
-     * The update flags value for face updates.
-     */
-    int UPD_FACE = 0x08;
-
-    /**
-     * The update flags value for name updates.
-     */
-    int UPD_NAME = 0x10;
-
-    /**
-     * The update flags value for animation updates.
-     */
-    int UPD_ANIM = 0x20;
-
-    /**
-     * The update flags value for animation speed updates.
-     */
-    int UPD_ANIMSPEED = 0x40;
-
-    /**
-     * The update flags value for nrof updates.
-     */
-    int UPD_NROF = 0x80;
+    public UnknownMessageTypeException(@NotNull final String messageType) {
+        super("unknown message type: "+messageType);
+    }
 
 }

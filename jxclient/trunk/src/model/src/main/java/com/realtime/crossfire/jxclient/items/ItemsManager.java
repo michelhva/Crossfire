@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.server.crossfire.messages.UpdItem;
+import com.realtime.crossfire.jxclient.protocol.UpdItem;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import org.jetbrains.annotations.NotNull;

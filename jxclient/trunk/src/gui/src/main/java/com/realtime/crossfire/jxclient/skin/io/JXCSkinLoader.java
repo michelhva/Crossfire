@@ -107,11 +107,11 @@ import com.realtime.crossfire.jxclient.items.SpellSkillView;
 import com.realtime.crossfire.jxclient.items.SpellsView;
 import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
+import com.realtime.crossfire.jxclient.protocol.MessageTypes;
+import com.realtime.crossfire.jxclient.protocol.UnknownMessageTypeException;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import com.realtime.crossfire.jxclient.server.crossfire.Model;
-import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import com.realtime.crossfire.jxclient.settings.CommandHistoryFactory;
 import com.realtime.crossfire.jxclient.settings.Macros;
@@ -1736,8 +1736,8 @@ public class JXCSkinLoader {
         do {
             try {
                 types |= 1<<MessageTypes.parseMessageType(args.get());
-            } catch (final UnknownCommandException ex) {
-                throw new IOException("undefined message type '"+args.getPrev()+"'", ex);
+            } catch (final UnknownMessageTypeException ex) {
+                throw new IOException(ex);
             }
         } while (args.hasMore());
         if (!add) {
