@@ -1224,12 +1224,12 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gui/gui.iml" filepath="$PROJECT_DIR$/gui/gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/gui/gui.iml" filepath="$PROJECT_DIR$/src/gui/gui.iml" />
       <module fileurl="file://$PROJECT_DIR$/jxclient.iml" filepath="$PROJECT_DIR$/jxclient.iml" />
-      <module fileurl="file://$PROJECT_DIR$/model/model.iml" filepath="$PROJECT_DIR$/model/model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/network/network.iml" filepath="$PROJECT_DIR$/network/network.iml" />
-      <module fileurl="file://$PROJECT_DIR$/skins/skins.iml" filepath="$PROJECT_DIR$/skins/skins.iml" />
-      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/model/model.iml" filepath="$PROJECT_DIR$/src/model/model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/network/network.iml" filepath="$PROJECT_DIR$/src/network/network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/skins/skins.iml" filepath="$PROJECT_DIR$/src/skins/skins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/util/util.iml" filepath="$PROJECT_DIR$/src/util/util.iml" />
     </modules>
   </component>
   <component name="ProjectResources">
@@ -1259,6 +1259,22 @@
         <list size="0" />
       </value>
     </option>
+  </component>
+  <component name="libraryTable">
+    <library name="annotations">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/annotations.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="junit">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/junit-4.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
 </project>
 
