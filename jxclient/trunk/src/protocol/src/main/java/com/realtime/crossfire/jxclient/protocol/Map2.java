@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.server.crossfire.messages;
+package com.realtime.crossfire.jxclient.protocol;
 
 /**
  * Interface defining constants for the "map2" Crossfire protocol message.

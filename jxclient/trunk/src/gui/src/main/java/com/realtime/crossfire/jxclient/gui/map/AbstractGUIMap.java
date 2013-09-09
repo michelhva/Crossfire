@@ -34,7 +34,7 @@ import com.realtime.crossfire.jxclient.map.MapScrollListener;
 import com.realtime.crossfire.jxclient.map.MapSizeListener;
 import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import com.realtime.crossfire.jxclient.map.NewmapListener;
-import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
+import com.realtime.crossfire.jxclient.protocol.Map2;
 import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
 import java.awt.Dimension;

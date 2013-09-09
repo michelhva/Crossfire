@@ -22,8 +22,8 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.gui.log.MessageBufferUpdater;
+import com.realtime.crossfire.jxclient.protocol.MessageTypes;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import org.jetbrains.annotations.NotNull;
 
 /**

@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.server.crossfire.messages.UpdItem;
+import com.realtime.crossfire.jxclient.protocol.UpdItem;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import com.realtime.crossfire.jxclient.util.HashedEventListenerList;
 import java.util.Collection;

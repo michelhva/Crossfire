@@ -31,6 +31,8 @@
     <property name="src.model.test" value="src/model/src/test/java"/>
     <property name="src.network.main" value="src/network/src/main/java"/>
     <property name="src.network.test" value="src/network/src/test/java"/>
+    <property name="src.protocol.main" value="src/protocol/src/main/java"/>
+    <property name="src.protocol.test" value="src/protocol/src/test/java"/>
     <property name="src.util.main" value="src/util/src/main/java"/>
     <property name="src.util.test" value="src/util/src/test/java"/>
     <property name="build" value="build"/>
@@ -39,8 +41,8 @@
     <target name="compile-jxclient">
         <delete dir="${build}/jxclient"/>
         <mkdir dir="${build}/jxclient"/>
-        <depend srcDir="${src.gui.main}:${src.model.main}:${src.network.main}:${src.util.main}" destDir="${build}/jxclient" cache="${build}/cache.jxclient" closure="true"/>
-        <javac srcdir="${src.gui.main}:${src.model.main}:${src.network.main}:${src.util.main}" destdir="${build}/jxclient" source="1.6" debug="yes" fork="yes" includeantruntime="false">
+        <depend srcDir="${src.gui.main}:${src.model.main}:${src.network.main}:${src.protocol.main}:${src.util.main}" destDir="${build}/jxclient" cache="${build}/cache.jxclient" closure="true"/>
+        <javac srcdir="${src.gui.main}:${src.model.main}:${src.network.main}:${src.protocol.main}:${src.util.main}" destdir="${build}/jxclient" source="1.6" debug="yes" fork="yes" includeantruntime="false">
             <classpath>
                 <pathelement location="lib/annotations.jar"/>
             </classpath>
@@ -50,12 +52,12 @@
     <target name="compile-test" depends="jar">
         <delete dir="${build}/test"/>
         <mkdir dir="${build}/test"/>
-        <depend srcDir="${src.gui.test}:${src.model.test}:${src.network.test}:${src.util.test}" destDir="${build}/test" cache="${build}/cache.test" closure="true">
+        <depend srcDir="${src.gui.test}:${src.model.test}:${src.network.test}:${src.protocol.test}:${src.util.test}" destDir="${build}/test" cache="${build}/cache.test" closure="true">
             <classpath>
                 <pathelement location="jxclient.jar"/>
             </classpath>
         </depend>
-        <javac srcdir="${src.gui.test}:${src.model.test}:${src.network.test}:${src.util.test}" destdir="${build}/test" source="1.6" debug="yes" fork="yes" includeantruntime="false">
+        <javac srcdir="${src.gui.test}:${src.model.test}:${src.network.test}:${src.protocol.test}:${src.util.test}" destdir="${build}/test" source="1.6" debug="yes" fork="yes" includeantruntime="false">
             <classpath>
                 <pathelement location="jxclient.jar"/>
                 <pathelement location="lib/annotations.jar"/>
@@ -112,6 +114,7 @@
                 <fileset dir="${src.gui.test}" includes="**/*Test.java"/>
                 <fileset dir="${src.model.test}" includes="**/*Test.java"/>
                 <fileset dir="${src.network.test}" includes="**/*Test.java"/>
+                <fileset dir="${src.protocol.test}" includes="**/*Test.java"/>
                 <fileset dir="${src.util.test}" includes="**/*Test.java"/>
             </batchtest>
         </junit>
@@ -122,6 +125,7 @@
                 <pathelement path="${src.gui.main}"/>
                 <pathelement path="${src.model.main}"/>
                 <pathelement path="${src.network.main}"/>
+                <pathelement path="${src.protocol.main}"/>
                 <pathelement path="${src.util.main}"/>
             </sourcepath>
             <classpath>

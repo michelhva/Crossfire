@@ -27,7 +27,7 @@ import com.realtime.crossfire.jxclient.faces.FaceImages;
 import com.realtime.crossfire.jxclient.faces.FaceImagesUtils;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.TestFacesManager;
-import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
+import com.realtime.crossfire.jxclient.protocol.Map2;
 import java.io.IOException;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
