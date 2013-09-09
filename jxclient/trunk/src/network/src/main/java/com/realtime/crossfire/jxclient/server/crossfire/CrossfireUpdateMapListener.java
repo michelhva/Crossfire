@@ -32,22 +32,6 @@ import org.jetbrains.annotations.NotNull;
 public interface CrossfireUpdateMapListener extends EventListener {
 
     /**
-     * Bitmask in magic map information to extract the color information of a
-     * tile.
-     */
-    int FACE_COLOR_MASK = 0x0F;
-
-    /**
-     * Bitmask in magic map information to denote a floor tile.
-     */
-    int FACE_FLOOR = 0x80;
-
-    /**
-     * Bitmask in magic map information to denote a wall tile.
-     */
-    int FACE_WALL = 0x40;
-
-    /**
      * A "newmap" command has been received.
      * @param mapWidth the map width
      * @param mapHeight the map height
