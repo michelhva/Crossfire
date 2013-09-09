@@ -53,6 +53,12 @@ public class NumLookObjects {
     private final DebugWriter debugProtocol;
 
     /**
+     * The synchronization objects for accessing mutable fields.
+     */
+    @NotNull
+    private final Object sync = new Object();
+
+    /**
      * Whether the current client socket state is {@link
      * ClientSocketState#CONNECTED}.
      */
@@ -90,14 +96,16 @@ public class NumLookObjects {
      * Called after the server connection has been established.
      */
     public void connected() {
-        connected = false;
-        pendingNumLookObjects = 0;
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("connected: defaulting to pending_num_look_objects="+pendingNumLookObjects);
-        }
-        currentNumLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("connected: defaulting to num_look_objects="+currentNumLookObjects);
+        synchronized (sync) {
+            connected = false;
+            pendingNumLookObjects = 0;
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("connected: defaulting to pending_num_look_objects="+pendingNumLookObjects);
+            }
+            currentNumLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("connected: defaulting to num_look_objects="+currentNumLookObjects);
+            }
         }
     }
 
@@ -105,34 +113,37 @@ public class NumLookObjects {
      * Requests a change of the number of ground objects from the server.
      */
     private void negotiateNumLookObjects() {
-        final int numLookObjects = preferredNumLookObjects;
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("negotiateNumLookObjects: "+numLookObjects);
-        }
+        final int numLookObjects;
+        synchronized (sync) {
+            numLookObjects = preferredNumLookObjects;
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("negotiateNumLookObjects: "+numLookObjects);
+            }
 
-        if (!connected) {
-            if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("negotiateNumLookObjects: not connected, ignoring");
+            if (!connected) {
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("negotiateNumLookObjects: not connected, ignoring");
+                }
+                return;
             }
-            return;
-        }
-        if (pendingNumLookObjects != 0) {
-            if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("negotiateNumLookObjects: already negotiating pending_num_look_objects="+pendingNumLookObjects+", ignoring");
+            if (pendingNumLookObjects != 0) {
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("negotiateNumLookObjects: already negotiating pending_num_look_objects="+pendingNumLookObjects+", ignoring");
+                }
+                return;
             }
-            return;
-        }
-        if (currentNumLookObjects == numLookObjects) {
-            if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("negotiateNumLookObjects: unchanged from num_look_objects="+currentNumLookObjects+", ignoring");
+            if (currentNumLookObjects == numLookObjects) {
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("negotiateNumLookObjects: unchanged from num_look_objects="+currentNumLookObjects+", ignoring");
+                }
+                return;
             }
-            return;
+            pendingNumLookObjects = numLookObjects;
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("negotateNumLookObjects: pending_num_look_objects="+pendingNumLookObjects+", sending setup command");
+            }
         }
-        pendingNumLookObjects = numLookObjects;
-        if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("negotateNumLookObjects: pending_num_look_objects="+pendingNumLookObjects+", sending setup command");
-        }
-        crossfireServerConnection.sendSetup("num_look_objects "+pendingNumLookObjects);
+        crossfireServerConnection.sendSetup("num_look_objects "+numLookObjects);
     }
 
     /**
@@ -145,9 +156,11 @@ public class NumLookObjects {
         if (value.equals("FALSE")) {
             System.err.println("Warning: the server is too old for this client since it does not support the num_look_objects setup option.");
             System.err.println("Expect issues with the ground view display.");
-            pendingNumLookObjects = 0;
+            synchronized (sync) {
+                pendingNumLookObjects = 0;
+            }
             if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("processSetup: pending_num_look_objects="+pendingNumLookObjects+" [server didn't understand setup command]");
+                debugProtocol.debugProtocolWrite("processSetup: pending_num_look_objects=0 [server didn't understand setup command]");
             }
         } else {
             final int thisNumLookObjects;
@@ -156,24 +169,29 @@ public class NumLookObjects {
             } catch (final NumberFormatException ignored) {
                 throw new UnknownCommandException("the server returned 'setup num_look_objects "+value+"'.");
             }
-            if (pendingNumLookObjects == 0) {
-                System.err.println("the server sent an unexpected 'setup num_look_objects "+value+"'.");
-            } else {
-                if (pendingNumLookObjects != thisNumLookObjects) {
-                    System.err.println("Warning: the server didn't accept the num_look_objects setup option: requested "+pendingNumLookObjects+", returned "+thisNumLookObjects+".");
-                    System.err.println("Expect issues with the ground view display.");
+            final boolean negotiate;
+            synchronized (sync) {
+                if (pendingNumLookObjects == 0) {
+                    System.err.println("the server sent an unexpected 'setup num_look_objects "+value+"'.");
+                    negotiate = false;
+                } else {
+                    if (pendingNumLookObjects != thisNumLookObjects) {
+                        System.err.println("Warning: the server didn't accept the num_look_objects setup option: requested "+pendingNumLookObjects+", returned "+thisNumLookObjects+".");
+                        System.err.println("Expect issues with the ground view display.");
+                    }
+                    pendingNumLookObjects = 0;
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("processSetup: pending_num_look_objects="+pendingNumLookObjects+" [ok]");
+                    }
+                    currentNumLookObjects = thisNumLookObjects;
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("processSetup: num_look_objects="+currentNumLookObjects);
+                    }
+                    negotiate = currentNumLookObjects != preferredNumLookObjects;
                 }
-                pendingNumLookObjects = 0;
-                if (debugProtocol != null) {
-                    debugProtocol.debugProtocolWrite("processSetup: pending_num_look_objects="+pendingNumLookObjects+" [ok]");
-                }
-                currentNumLookObjects = thisNumLookObjects;
-                if (debugProtocol != null) {
-                    debugProtocol.debugProtocolWrite("processSetup: num_look_objects="+currentNumLookObjects);
-                }
-                if (currentNumLookObjects != preferredNumLookObjects) {
-                    negotiateNumLookObjects();
-                }
+            }
+            if (negotiate) {
+                negotiateNumLookObjects();
             }
         }
     }
@@ -183,12 +201,14 @@ public class NumLookObjects {
      * @param preferredNumLookObjects the number of ground items
      */
     public void setPreferredNumLookObjects(final int preferredNumLookObjects) {
-        final int preferredNumLookObjects2 = Math.max(3, preferredNumLookObjects);
-        if (this.preferredNumLookObjects == preferredNumLookObjects2) {
-            return;
-        }
+        synchronized (sync) {
+            final int preferredNumLookObjects2 = Math.max(3, preferredNumLookObjects);
+            if (this.preferredNumLookObjects == preferredNumLookObjects2) {
+                return;
+            }
 
-        this.preferredNumLookObjects = preferredNumLookObjects2;
+            this.preferredNumLookObjects = preferredNumLookObjects2;
+        }
         negotiateNumLookObjects();
     }
 
@@ -197,7 +217,9 @@ public class NumLookObjects {
      * @return the number of ground items
      */
     public int getCurrentNumLookObjects() {
-        return currentNumLookObjects;
+        synchronized (sync) {
+            return currentNumLookObjects;
+        }
     }
 
     /**
@@ -205,10 +227,13 @@ public class NumLookObjects {
      * @param clientSocketState the new client socket state
      */
     public void setClientSocketState(@NotNull final ClientSocketState clientSocketState) {
-        connected = clientSocketState == ClientSocketState.CONNECTED;
-        if (connected) {
-            negotiateNumLookObjects();
+        synchronized (sync) {
+            connected = clientSocketState == ClientSocketState.CONNECTED;
+            if (!connected) {
+                return;
+            }
         }
+        negotiateNumLookObjects();
     }
 
 }
