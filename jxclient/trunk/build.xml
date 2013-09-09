@@ -25,14 +25,14 @@
         JXClient - full-screen client for Crossfire.
     </description>
     <property file="developer.properties"/>
-    <property name="src.gui.main" value="gui/src/main/java"/>
-    <property name="src.gui.test" value="gui/src/test/java"/>
-    <property name="src.model.main" value="model/src/main/java"/>
-    <property name="src.model.test" value="model/src/test/java"/>
-    <property name="src.network.main" value="network/src/main/java"/>
-    <property name="src.network.test" value="network/src/test/java"/>
-    <property name="src.util.main" value="util/src/main/java"/>
-    <property name="src.util.test" value="util/src/test/java"/>
+    <property name="src.gui.main" value="src/gui/src/main/java"/>
+    <property name="src.gui.test" value="src/gui/src/test/java"/>
+    <property name="src.model.main" value="src/model/src/main/java"/>
+    <property name="src.model.test" value="src/model/src/test/java"/>
+    <property name="src.network.main" value="src/network/src/main/java"/>
+    <property name="src.network.test" value="src/network/src/test/java"/>
+    <property name="src.util.main" value="src/util/src/main/java"/>
+    <property name="src.util.test" value="src/util/src/test/java"/>
     <property name="build" value="build"/>
     <property name="build.properties.dir" value="${build}/properties"/>
     <target name="compile" depends="compile-jxclient,compile-test"/>
@@ -86,7 +86,7 @@
     <target name="copy-skins">
         <delete dir="${build}/skins"/>
         <copy todir="${build}/skins/com/realtime/crossfire/jxclient/skins">
-            <fileset dir="skins" excludes="prelude/**,*.iml"/>
+            <fileset dir="src/skins" excludes="prelude/**,*.iml"/>
         </copy>
     </target>
     <target name="clean">
