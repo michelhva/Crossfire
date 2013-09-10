@@ -1,0 +1,11 @@
+defaultTasks 'jar'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.6
+
+repositories {
+    flatDir {
+        dirs rootProject.file('lib')
+    }
+}

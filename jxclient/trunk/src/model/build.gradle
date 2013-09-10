@@ -1,0 +1,18 @@
+defaultTasks 'jar'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.6
+
+dependencies {
+    compile name: 'annotations', version: '0.0'
+    compile name: 'junit', version: '4.2'
+    compile project(':src:protocol')
+    compile project(':src:util')
+}
+
+repositories {
+    flatDir {
+        dirs rootProject.file('lib')
+    }
+}
