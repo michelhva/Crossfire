@@ -190,10 +190,8 @@ public class JXClient {
                                 }
 
                                 final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui());
-                                final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, server, debugScreenOutputStreamWriter);
                                 new MusicWatcher(server, soundManager);
                                 new SoundWatcher(server, soundManager);
-                                new StatsWatcher(model.getStats(), windowRenderer, server, soundManager);
                                 new PoisonWatcher(model.getStats(), server);
                                 new ActiveSkillWatcher(model.getStats(), server);
                                 final Macros macros = new Macros(server);
@@ -215,6 +213,8 @@ public class JXClient {
 
                                     @Override
                                     public void run() {
+                                        final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, server, debugScreenOutputStreamWriter);
+                                        new StatsWatcher(model.getStats(), windowRenderer, server, soundManager);
                                         final TooltipManagerImpl tooltipManager = new TooltipManagerImpl();
                                         final Pickup characterPickup;
                                         try {
