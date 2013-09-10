@@ -1,0 +1,8 @@
+rootProject.name = 'jxclient'
+include 'src:gui'
+include 'src:model'
+include 'src:network'
+include 'src:protocol'
+include 'src:resources'
+include 'src:skins'
+include 'src:util'

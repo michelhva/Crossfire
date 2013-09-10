@@ -1,0 +1,99 @@
+defaultTasks 'build', 'createJar', 'javadoc'
+
+// Use 'UTF-8' encoding when compiling Java sources.
+allprojects.each { project ->
+    project.afterEvaluate { project2 ->
+        if (project2.plugins.findPlugin('java') != null) {
+            project2.compileJava.options.encoding = 'UTF-8'
+            project2.compileTestJava.options.encoding = 'UTF-8'
+            project2.compileJava.options.deprecation = true
+            project2.compileTestJava.options.deprecation = true
+            project2.compileJava.options.compilerArgs += '-Xlint:unchecked'
+            project2.compileTestJava.options.compilerArgs += '-Xlint:unchecked'
+        }
+    }
+}
+
+File createJavadocOptions(Project project) {
+    // Write -tag options to an option file as MinimalJavadocOptions neither
+    // supports -tag directly nor through addStringOption(). The latter
+    // function ignores all options except for the last one.
+    File optionFile = new File(buildDir, 'javadoc-options')
+    mkdir buildDir
+    new FileOutputStream(optionFile).withWriter('UTF-8') { w ->
+        w.write('-tag "noinspection:a:No Inspection:"\n')
+    }
+    return optionFile
+}
+
+allprojects {
+    afterEvaluate { project ->
+        if (project.plugins.findPlugin('java') != null) {
+            configure(javadoc.options) {
+                optionFiles createJavadocOptions(project)
+                quiet()
+            }
+        }
+    }
+}
+
+task doc(type: Javadoc) {
+    description = 'Runs Javadoc on all Java source files.'
+    failOnError = true
+    options.addBooleanOption("private")
+    options.author false
+    options.encoding = 'UTF-8'
+    options.noDeprecated
+    options.noHelp
+    options.noIndex
+    options.noNavBar
+    options.noTree
+    options.splitIndex false
+    options.use
+    options.version false
+    options.windowTitle 'JXClient'
+    options.optionFiles createJavadocOptions(project)
+    options.quiet()
+    allprojects {
+        afterEvaluate { project ->
+            if (project.plugins.findPlugin('java') != null) {
+                source project.sourceSets.main.allJava
+                javadoc.dependsOn project.getTasksByName('classes', false)
+            }
+        }
+    }
+    destinationDir = file('build/javadoc')
+    doFirst {
+        classpath = files(allprojects.collect { project ->
+            if (project.plugins.findPlugin('java') != null) {
+                project.sourceSets.main.compileClasspath
+            } else {
+                []
+            }
+        })
+    }
+}
+
+task clean {
+    description = 'Deletes generated files.'
+    doLast {
+        delete 'build'
+        delete 'jxclient.jar'
+    }
+}
+
+evaluationDependsOn ':src:gui'
+
+task createJar {
+    description = 'Creates the jxclient.jar application.'
+    dependsOn ':src:gui:createJar'
+    def inputFile = project(':src:gui').createJar.outputs.files
+    inputs.files inputFile
+    outputs.files 'jxclient.jar'
+    doLast {
+        copy {
+            from inputFile
+            into '.'
+        }
+    }
+}
