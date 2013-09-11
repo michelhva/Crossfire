@@ -345,7 +345,7 @@ public class JXCWindowRenderer {
         this.debugScreen = debugScreen;
         graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
         graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
-        defaultDisplayMode = graphicsDevice.getDisplayMode();
+        defaultDisplayMode = getDisplayMode();
         debugScreenWrite("getMaxWindowDimension: maximum window bounds="+maximumWindowBounds);
     }
 
@@ -360,8 +360,7 @@ public class JXCWindowRenderer {
     public boolean setFullScreenMode(@NotNull final JFrame frame, @Nullable final Resolution resolution) {
         debugScreenWrite("setFullScreenMode: resolution="+(resolution == null ? "default" : resolution));
 
-        final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
-        debugScreenWrite("setResolutionPre: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
+        final DisplayMode currentDisplayMode = getDisplayMode();
         if (frame == this.frame && isFullScreen && bufferStrategy != null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
             debugScreenWrite("setResolutionPre: no change needed");
             debugScreenWrite("setResolutionPre: success");
@@ -373,49 +372,40 @@ public class JXCWindowRenderer {
         final Dimension dimension;
         if (resolution == null) {
             dimension = new Dimension(currentDisplayMode.getWidth(), currentDisplayMode.getHeight());
+            debugScreenWrite("setFullScreenMode: full-screen requested, dimension="+dimension+" [using current display resolution]");
         } else {
             dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
+            debugScreenWrite("setFullScreenMode: full-screen requested, dimension="+dimension+" [using user-specified resolution]");
         }
-        debugScreenWrite("setFullScreenMode: full-screen requested, dimension="+dimension);
         frame.setPreferredSize(dimension);
         frame.setResizable(false);
         frame.setUndecorated(true);
 
         // full-screen switch must happen before display mode change
-        if (!graphicsDevice.isFullScreenSupported()) {
-            debugScreenWrite("setFullScreenMode: full-screen mode is not supported");
-            graphicsDevice.setFullScreenWindow(null);
-            isFullScreen = false;
+        if (!isFullScreenSupported()) {
+            setFullScreenWindow(null);
             debugScreenWrite("setFullScreenMode: failure");
             return false;
         }
 
-        debugScreenWrite("setFullScreenMode: entering full-screen mode");
-        graphicsDevice.setFullScreenWindow(frame);
-        isFullScreen = true;
+        setFullScreenWindow(frame);
 
         if (resolution == null || resolution.equalsDisplayMode(currentDisplayMode)) {
             debugScreenWrite("setFullScreenMode: requested resolution matches screen resolution");
         } else {
-            if (!graphicsDevice.isDisplayChangeSupported()) {
-                debugScreenWrite("setFullScreenMode: screen resolution change is not supported");
-                graphicsDevice.setFullScreenWindow(null);
-                isFullScreen = false;
+            if (!isDisplayChangeSupported()) {
+                setFullScreenWindow(null);
                 debugScreenWrite("setFullScreenMode: failure");
                 return false;
             }
 
             final DisplayMode newDisplayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
             try {
-                debugScreenWrite("setFullScreenMode: setting screen resolution to "+newDisplayMode.getWidth()+"x"+newDisplayMode.getHeight());
-                graphicsDevice.setDisplayMode(newDisplayMode);
+                setDisplayMode(newDisplayMode);
             } catch (final IllegalArgumentException ex) {
                 debugScreenWrite("setFullScreenMode: setting screen resolution failed: "+ex.getMessage());
-                isFullScreen = false;
-                debugScreenWrite("setFullScreenMode: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
-                graphicsDevice.setDisplayMode(defaultDisplayMode);
-                debugScreenWrite("setFullScreenMode: leaving full-screen mode");
-                graphicsDevice.setFullScreenWindow(null);
+                setDisplayMode(defaultDisplayMode);
+                setFullScreenWindow(null);
                 debugScreenWrite("setFullScreenMode: failure");
                 return false;
             }
@@ -444,8 +434,7 @@ public class JXCWindowRenderer {
     public void setWindowMode(@NotNull final JFrame frame, @Nullable final Resolution resolution, @NotNull final Resolution minResolution, final boolean fixedSize) {
         debugScreenWrite("setWindowMode: resolution="+(resolution == null ? "default" : resolution)+", fixedSize="+fixedSize);
 
-        final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
-        debugScreenWrite("setResolutionPre: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
+        final DisplayMode currentDisplayMode = getDisplayMode();
         if (frame == this.frame && !isFullScreen && bufferStrategy != null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
             debugScreenWrite("setResolutionPre: no change needed");
             debugScreenWrite("setResolutionPre: success");
@@ -457,8 +446,7 @@ public class JXCWindowRenderer {
         debugScreenWrite("setResolutionPre: windowed mode requested");
         frame.setUndecorated(false);
         frame.setResizable(!fixedSize);
-        final Point centerPoint = graphicsEnvironment.getCenterPoint();
-        debugScreenWrite("setResolutionPre: screen center point is "+centerPoint);
+        final Point centerPoint = geCenterPoint();
         final Dimension dimension;
         if (resolution == null) {
             dimension = new Dimension(currentDisplayMode.getWidth(), currentDisplayMode.getHeight());
@@ -518,12 +506,9 @@ public class JXCWindowRenderer {
         // disable full-screen since switching from full-screen to full-screen
         // does not work reliably
         if (isFullScreen) {
-            debugScreenWrite("setResolutionPre: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
-            graphicsDevice.setDisplayMode(defaultDisplayMode);
+            setDisplayMode(defaultDisplayMode);
         }
-        debugScreenWrite("setResolutionPre: leaving full-screen mode");
-        graphicsDevice.setFullScreenWindow(null);
-        isFullScreen = false;
+        setFullScreenWindow(null);
 
         debugScreenWrite("setResolutionPre: disposing frame");
         frame.dispose();
@@ -1414,6 +1399,70 @@ public class JXCWindowRenderer {
 
         textArea.setActive(true);
         return textArea;
+    }
+
+    /**
+     * Returns the {@link #graphicsDevice} supports low-level display changes.
+     * @return whether low-level display changes are supported
+     */
+    private boolean isDisplayChangeSupported() {
+        final boolean result = graphicsDevice.isDisplayChangeSupported();
+        debugScreenWrite("isDisplayChangeSupported()="+(result ? "yes" : "no"));
+        return result;
+    }
+
+    /**
+     * Sets the display mode of the {@link #graphicsDevice}.
+     * @param displayMode the new display mode
+     */
+    private void setDisplayMode(@NotNull final DisplayMode displayMode) {
+        debugScreenWrite("setDisplayMode("+displayMode.getWidth()+"x"+displayMode.getHeight()+")");
+        graphicsDevice.setDisplayMode(displayMode);
+    }
+
+    /**
+     * Returns the current display mode of the {@link #graphicsDevice}.
+     * @return the current display mode
+     */
+    @NotNull
+    private DisplayMode getDisplayMode() {
+        final DisplayMode displayMode = graphicsDevice.getDisplayMode();
+        debugScreenWrite("getDisplayMode()="+displayMode.getWidth()+"x"+displayMode.getHeight());
+        return displayMode;
+    }
+
+    /**
+     * Returns whether the {@link #graphicsDevice} supports full-screen
+     * exclusive mode.
+     * @return whether full-screen exclusive mode is supported
+     */
+    private boolean isFullScreenSupported() {
+        final boolean result = graphicsDevice.isFullScreenSupported();
+        debugScreenWrite("isFullScreenSupported()="+(result ? "yes" : "no"));
+        return result;
+    }
+
+    /**
+     * Enter full-screen mode, or return to windowed mode.
+     * @param window the window to enter full-screen mode or {@code null} to
+     * leave full-screen mode
+     */
+    private void setFullScreenWindow(@Nullable final Window window) {
+        //noinspection VariableNotUsedInsideIf
+        isFullScreen = window != null;
+        debugScreenWrite("setFullScreenWindow("+(isFullScreen ? "enter full-screen mode" : "leave full-screen mode")+")");
+        graphicsDevice.setFullScreenWindow(window);
+    }
+
+    /**
+     * Returns the {@link Point} where windows should be centered.
+     * @return the center point
+     */
+    @NotNull
+    private Point geCenterPoint() {
+        final Point result = graphicsEnvironment.getCenterPoint();
+        debugScreenWrite("getCenterPoint()="+result);
+        return result;
     }
 
 }
