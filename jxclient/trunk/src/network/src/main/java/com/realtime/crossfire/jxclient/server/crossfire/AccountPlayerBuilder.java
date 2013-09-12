@@ -79,7 +79,8 @@ public class AccountPlayerBuilder {
     private int faceNumber;
 
     /**
-     * Finishes parsing an entry an returns the {@link CharacterInformation} for the entry.
+     * Finishes parsing an entry an returns the {@link CharacterInformation} for
+     * the entry.
      * @return the character information for the parsed entry
      */
     @NotNull
