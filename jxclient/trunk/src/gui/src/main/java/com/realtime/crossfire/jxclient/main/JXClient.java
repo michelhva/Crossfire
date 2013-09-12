@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.main;
 
-import com.realtime.crossfire.jxclient.Logger;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.commands.AgainCommand;
 import com.realtime.crossfire.jxclient.commands.BindCommand;
@@ -92,6 +91,7 @@ import com.realtime.crossfire.jxclient.util.DebugWriter;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCConnection;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
+import com.realtime.crossfire.jxclient.window.Logger;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
