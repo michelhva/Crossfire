@@ -1,4 +1,4 @@
-defaultTasks 'build', 'createJar', 'javadoc'
+defaultTasks 'build', 'createJar', 'doc'
 
 // Use 'UTF-8' encoding when compiling Java sources.
 allprojects.each { project ->
