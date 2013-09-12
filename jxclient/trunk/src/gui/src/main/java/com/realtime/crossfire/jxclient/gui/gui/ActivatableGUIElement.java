@@ -107,7 +107,6 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
         return elementListener.isActive(this);
     }
 
-
     /**
      * Executes the actions associated with this GUI element. Does nothing if
      * this element has no associated actions.
