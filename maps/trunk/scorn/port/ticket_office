@@ -8,7 +8,7 @@ enter_x 7
 enter_y 8
 msg
 Created:  2013-03-19 Kevin Zheng
-Modified: 2013-07-14 Kevin Zheng
+Modified: 2013-09-13 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -118,12 +118,19 @@ x 1
 y 7
 end
 arch creator
-slaying Boarding Pass to Stoneville
-other_arch card
 x 1
 y 7
 connected 2
 lifesave 1
+arch card
+name Ticket F: Scorn T: Stoneville
+msg
+Scorn Shipping, Inc.
+From: Scorn
+To: Stoneville
+endmsg
+identified 1
+end
 end
 arch woodfloor
 x 1
@@ -138,12 +145,19 @@ x 1
 y 9
 end
 arch creator
-slaying Boarding Pass to Santo Dominion
-other_arch card
 x 1
 y 9
 connected 3
 lifesave 1
+arch card
+name Ticket F: Scorn T: Santo Dominion
+msg
+Scorn Shipping, Inc.
+From: Scorn
+To: Santo Dominion
+endmsg
+identified 1
+end
 end
 arch woodfloor
 x 1
