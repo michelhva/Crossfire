@@ -8,7 +8,7 @@ enter_x 12
 enter_y 19
 msg
 Created:  1993-11-01 (john_cater@yahoo.com)
-Modified: 2013-07-07 Kevin Zheng
+Modified: 2013-09-13 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -418,12 +418,17 @@ x 3
 y 9
 end
 arch creator
-slaying Boarding Pass to Scorn
-other_arch card
 x 3
 y 9
 connected 2
 lifesave 1
+arch card
+name Ticket F: Santo Dominion T: Scorn
+msg
+Santo Dominion Sailors, Co.
+One-way fare from Santo Dominion to Scorn.
+endmsg
+end
 end
 arch cobblestones2
 x 3
@@ -578,12 +583,12 @@ x 4
 y 9
 end
 arch altar_trigger
-name Scorn (5 platinum)
+name Scorn (1 platinum)
 slaying money
 msg
 Here's your ticket, enjoy your trip!
 endmsg
-food 250
+food 50
 x 4
 y 9
 last_sp 1
