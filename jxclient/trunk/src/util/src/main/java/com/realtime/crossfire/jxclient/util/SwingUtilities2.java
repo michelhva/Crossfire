@@ -61,7 +61,7 @@ public class SwingUtilities2 {
      * calls the {@link Runnable} directly if on the EDT.
      * @param runnable the runnable to call
      */
-    public static void invokeLater(final Runnable runnable) {
+    public static void invokeLater(@NotNull final Runnable runnable) {
         if (SwingUtilities.isEventDispatchThread()) {
             runnable.run();
         } else {
