@@ -93,7 +93,10 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
             synchronized (setChangedRunnable) {
                 pendingChange = false;
             }
-            repaint();
+            final Gui parent = GuiUtils.getGui(AbstractGUIElement.this);
+            if (parent != null) {
+                parent.repaint();
+            }
             if (isVisible()) {
                 if (changedListener != null) {
                     changedListener.notifyChanged();

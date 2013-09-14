@@ -29,6 +29,8 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
@@ -121,7 +123,10 @@ public class GUICharacterList extends GUIList {
             @Override
             public void faceUpdated(@NotNull final Face face) {
                 if (characterModel.displaysFace(face.getFaceNum())) {
-                    repaint();
+                    final Gui parent = GuiUtils.getGui(GUICharacterList.this);
+                    if (parent != null) {
+                        parent.repaint();
+                    }
                 }
             }
 
