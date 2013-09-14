@@ -1,15 +1,16 @@
 arch map
-name Darcap library, ground floor
+name Darcap Library
+fixed_resettime 1
 region darcap
+shopitems book:50;*:-50
 width 20
 height 20
 enter_x 18
 enter_y 9
 msg
 Created:  2010-03-07 Nicolas Weeger
-Modified: 2012-01-29 Nicolas Weeger
+Modified: 2013-09-13 Kevin Zheng
 endmsg
-outdoor 1
 end
 arch grass
 end
@@ -73,7 +74,7 @@ end
 arch grass
 x 1
 end
-arch marble
+arch woodlarge
 x 1
 y 1
 end
@@ -81,7 +82,7 @@ arch white_wall_2_2_2
 x 1
 y 1
 end
-arch marble
+arch woodlarge
 x 1
 y 2
 end
@@ -89,7 +90,7 @@ arch white_wall_2_1_1
 x 1
 y 2
 end
-arch marble
+arch woodlarge
 x 1
 y 3
 end
@@ -97,7 +98,7 @@ arch white_wall_2_1_1
 x 1
 y 3
 end
-arch marble
+arch woodlarge
 x 1
 y 4
 end
@@ -105,7 +106,7 @@ arch white_wall_2_1_1
 x 1
 y 4
 end
-arch marble
+arch woodlarge
 x 1
 y 5
 end
@@ -113,7 +114,7 @@ arch white_wall_2_1_1
 x 1
 y 5
 end
-arch marble
+arch woodlarge
 x 1
 y 6
 end
@@ -121,15 +122,15 @@ arch white_wall_2_1_1
 x 1
 y 6
 end
-arch marble
+arch woodlarge
 x 1
 y 7
 end
-arch white_wall_2_1_1
+arch white_wall_3_2
 x 1
 y 7
 end
-arch marble
+arch woodlarge
 x 1
 y 8
 end
@@ -137,7 +138,7 @@ arch white_wall_2_1_1
 x 1
 y 8
 end
-arch marble
+arch woodlarge
 x 1
 y 9
 end
@@ -145,7 +146,7 @@ arch white_wall_2_1_1
 x 1
 y 9
 end
-arch marble
+arch woodlarge
 x 1
 y 10
 end
@@ -153,7 +154,7 @@ arch white_wall_2_1_1
 x 1
 y 10
 end
-arch marble
+arch woodlarge
 x 1
 y 11
 end
@@ -161,15 +162,15 @@ arch white_wall_2_1_1
 x 1
 y 11
 end
-arch marble
+arch woodlarge
 x 1
 y 12
 end
-arch white_wall_2_1_1
+arch white_wall_3_2
 x 1
 y 12
 end
-arch marble
+arch woodlarge
 x 1
 y 13
 end
@@ -177,7 +178,7 @@ arch white_wall_2_1_1
 x 1
 y 13
 end
-arch marble
+arch woodlarge
 x 1
 y 14
 end
@@ -185,7 +186,7 @@ arch white_wall_2_1_1
 x 1
 y 14
 end
-arch marble
+arch woodlarge
 x 1
 y 15
 end
@@ -193,7 +194,7 @@ arch white_wall_2_1_1
 x 1
 y 15
 end
-arch marble
+arch woodlarge
 x 1
 y 16
 end
@@ -201,7 +202,7 @@ arch white_wall_2_1_1
 x 1
 y 16
 end
-arch marble
+arch woodlarge
 x 1
 y 17
 end
@@ -209,7 +210,7 @@ arch white_wall_2_1_1
 x 1
 y 17
 end
-arch marble
+arch woodlarge
 x 1
 y 18
 end
@@ -224,7 +225,7 @@ end
 arch grass
 x 2
 end
-arch marble
+arch woodlarge
 x 2
 y 1
 end
@@ -232,71 +233,124 @@ arch white_wall_2_1_2
 x 2
 y 1
 end
-arch marble
+arch woodlarge
 x 2
 y 2
 end
-arch marble
+arch bookshelf
+x 2
+y 2
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 2
 y 3
 end
-arch marble
+arch woodlarge
 x 2
 y 4
 end
-arch marble
+arch woodlarge
 x 2
 y 5
 end
-arch marble
+arch woodlarge
 x 2
 y 6
 end
-arch marble
+arch bookshelf_bottom
+x 2
+y 6
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 2
 y 7
 end
-arch marble
+arch white_wall_2_1_2
+x 2
+y 7
+end
+arch woodlarge
 x 2
 y 8
 end
-arch marble
+arch woodlarge
 x 2
 y 9
 end
-arch marble
+arch gardengnome
+name Trevor
+title the librarian
+msg
+@match hi|hello|greet
+G'day, an' welcome to the library. Anything I can help you with?
+@match *
+Shush! This is a library!
+endmsg
+x 2
+y 9
+unaggressive 1
+end
+arch woodlarge
 x 2
 y 10
 end
-arch marble
+arch woodlarge
 x 2
 y 11
 end
-arch marble
+arch woodlarge
 x 2
 y 12
 end
-arch marble
+arch white_wall_2_1_2
+x 2
+y 12
+end
+arch woodlarge
 x 2
 y 13
 end
-arch marble
+arch bookshelf
+x 2
+y 13
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 2
 y 14
 end
-arch marble
+arch woodlarge
 x 2
 y 15
 end
-arch marble
+arch woodlarge
 x 2
 y 16
 end
-arch marble
+arch woodlarge
 x 2
 y 17
 end
-arch marble
+arch bookshelf_bottom
+x 2
+y 17
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 2
 y 18
 end
@@ -311,7 +365,7 @@ end
 arch grass
 x 3
 end
-arch marble
+arch woodlarge
 x 3
 y 1
 end
@@ -319,71 +373,131 @@ arch white_wall_2_1_2
 x 3
 y 1
 end
-arch marble
+arch woodlarge
 x 3
 y 2
 end
-arch marble
+arch bookshelf
+x 3
+y 2
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 3
 y 3
 end
-arch marble
+arch woodlarge
 x 3
 y 4
 end
-arch marble
+arch woodlarge
 x 3
 y 5
 end
-arch marble
+arch woodlarge
 x 3
 y 6
 end
-arch marble
+arch bookshelf_bottom
+x 3
+y 6
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 3
 y 7
 end
-arch marble
+arch white_wall_2_1_2
+x 3
+y 7
+end
+arch woodlarge
 x 3
 y 8
 end
-arch marble
+arch longtable_2_2_2
+x 3
+y 8
+move_block all
+end
+arch woodlarge
 x 3
 y 9
 end
-arch marble
+arch longtable_2_1_1
+x 3
+y 9
+move_block all
+end
+arch woodlarge
 x 3
 y 10
 end
-arch marble
+arch longtable_2_1_1
+x 3
+y 10
+move_block all
+end
+arch woodlarge
 x 3
 y 11
 end
-arch marble
+arch longtable_2_2_1
+x 3
+y 11
+move_block all
+end
+arch woodlarge
 x 3
 y 12
 end
-arch marble
+arch white_wall_2_1_2
+x 3
+y 12
+end
+arch woodlarge
 x 3
 y 13
 end
-arch marble
+arch bookshelf
+x 3
+y 13
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 3
 y 14
 end
-arch marble
+arch woodlarge
 x 3
 y 15
 end
-arch marble
+arch woodlarge
 x 3
 y 16
 end
-arch marble
+arch woodlarge
 x 3
 y 17
 end
-arch marble
+arch bookshelf_bottom
+x 3
+y 17
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 3
 y 18
 end
@@ -398,7 +512,7 @@ end
 arch grass
 x 4
 end
-arch marble
+arch woodlarge
 x 4
 y 1
 end
@@ -406,71 +520,121 @@ arch white_wall_2_1_2
 x 4
 y 1
 end
-arch marble
+arch woodlarge
 x 4
 y 2
 end
-arch marble
+arch bookshelf
+x 4
+y 2
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 4
 y 3
 end
-arch marble
+arch woodlarge
 x 4
 y 4
 end
-arch marble
+arch woodlarge
 x 4
 y 5
 end
-arch marble
+arch woodlarge
 x 4
 y 6
 end
-arch marble
+arch bookshelf_bottom
+x 4
+y 6
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 4
 y 7
 end
-arch marble
+arch white_wall_2_1_2
+x 4
+y 7
+end
+arch woodlarge
 x 4
 y 8
 end
-arch marble
+arch longtable_1_3
+x 4
+y 8
+move_block all
+end
+arch woodlarge
 x 4
 y 9
 end
-arch marble
+arch woodlarge
 x 4
 y 10
 end
-arch marble
+arch woodlarge
 x 4
 y 11
 end
-arch marble
+arch longtable_1_3
+x 4
+y 11
+move_block all
+end
+arch woodlarge
 x 4
 y 12
 end
-arch marble
+arch white_wall_2_1_2
+x 4
+y 12
+end
+arch woodlarge
 x 4
 y 13
 end
-arch marble
+arch bookshelf
+x 4
+y 13
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 4
 y 14
 end
-arch marble
+arch woodlarge
 x 4
 y 15
 end
-arch marble
+arch woodlarge
 x 4
 y 16
 end
-arch marble
+arch woodlarge
 x 4
 y 17
 end
-arch marble
+arch bookshelf_bottom
+x 4
+y 17
+arch random_reading
+exp 10
+no_pick 1
+end
+end
+arch woodlarge
 x 4
 y 18
 end
@@ -485,838 +649,1194 @@ end
 arch grass
 x 5
 end
-arch marble
+arch woodlarge
 x 5
-y 1
-end
-arch white_wall_2_1_2
-x 5
-y 1
-end
-arch marble
-x 5
-y 2
-end
-arch marble
-x 5
-y 3
-end
-arch marble
-x 5
-y 4
-end
-arch marble
-x 5
-y 5
-end
-arch marble
-x 5
-y 6
-end
-arch marble
-x 5
-y 7
-end
-arch marble
-x 5
-y 8
-end
-arch marble
-x 5
-y 9
-end
-arch marble
-x 5
-y 10
-end
-arch marble
-x 5
-y 11
-end
-arch marble
-x 5
-y 12
-end
-arch marble
-x 5
-y 13
-end
-arch marble
-x 5
-y 14
-end
-arch marble
-x 5
-y 15
-end
-arch marble
-x 5
-y 16
-end
-arch marble
-x 5
-y 17
-end
-arch marble
-x 5
-y 18
-end
-arch white_wall_2_1_2
-x 5
-y 18
-end
-arch grass
-x 5
-y 19
-end
-arch grass
-x 6
-end
-arch marble
-x 6
-y 1
-end
-arch white_wall_2_1_2
-x 6
-y 1
-end
-arch marble
-x 6
-y 2
-end
-arch marble
-x 6
-y 3
-end
-arch marble
-x 6
-y 4
-end
-arch marble
-x 6
-y 5
-end
-arch marble
-x 6
-y 6
-end
-arch marble
-x 6
-y 7
-end
-arch marble
-x 6
-y 8
-end
-arch marble
-x 6
-y 9
-end
-arch marble
-x 6
-y 10
-end
-arch marble
-x 6
-y 11
-end
-arch marble
-x 6
-y 12
-end
-arch marble
-x 6
-y 13
-end
-arch marble
-x 6
-y 14
-end
-arch marble
-x 6
-y 15
-end
-arch marble
-x 6
-y 16
-end
-arch marble
-x 6
-y 17
-end
-arch marble
-x 6
-y 18
-end
-arch white_wall_2_1_2
-x 6
-y 18
-end
-arch grass
-x 6
-y 19
-end
-arch grass
-x 7
-end
-arch marble
-x 7
-y 1
-end
-arch white_wall_2_1_2
-x 7
-y 1
-end
-arch marble
-x 7
-y 2
-end
-arch marble
-x 7
-y 3
-end
-arch marble
-x 7
-y 4
-end
-arch marble
-x 7
-y 5
-end
-arch marble
-x 7
-y 6
-end
-arch marble
-x 7
-y 7
-end
-arch marble
-x 7
-y 8
-end
-arch marble
-x 7
-y 9
-end
-arch marble
-x 7
-y 10
-end
-arch marble
-x 7
-y 11
-end
-arch marble
-x 7
-y 12
-end
-arch marble
-x 7
-y 13
-end
-arch marble
-x 7
-y 14
-end
-arch marble
-x 7
-y 15
-end
-arch marble
-x 7
-y 16
-end
-arch marble
-x 7
-y 17
-end
-arch marble
-x 7
-y 18
-end
-arch white_wall_2_1_2
-x 7
-y 18
-end
-arch grass
-x 7
-y 19
-end
-arch grass
-x 8
-end
-arch marble
-x 8
-y 1
-end
-arch white_wall_2_1_2
-x 8
-y 1
-end
-arch marble
-x 8
-y 2
-end
-arch marble
-x 8
-y 3
-end
-arch marble
-x 8
-y 4
-end
-arch marble
-x 8
-y 5
-end
-arch marble
-x 8
-y 6
-end
-arch marble
-x 8
-y 7
-end
-arch marble
-x 8
-y 8
-end
-arch marble
-x 8
-y 9
-end
-arch marble
-x 8
-y 10
-end
-arch marble
-x 8
-y 11
-end
-arch marble
-x 8
-y 12
-end
-arch marble
-x 8
-y 13
-end
-arch marble
-x 8
-y 14
-end
-arch marble
-x 8
-y 15
-end
-arch marble
-x 8
-y 16
-end
-arch marble
-x 8
-y 17
-end
-arch marble
-x 8
-y 18
-end
-arch white_wall_2_1_2
-x 8
-y 18
-end
-arch grass
-x 8
-y 19
-end
-arch grass
-x 9
-end
-arch marble
-x 9
-y 1
-end
-arch white_wall_2_1_2
-x 9
-y 1
-end
-arch marble
-x 9
-y 2
-end
-arch marble
-x 9
-y 3
-end
-arch marble
-x 9
-y 4
-end
-arch marble
-x 9
-y 5
-end
-arch marble
-x 9
-y 6
-end
-arch marble
-x 9
-y 7
-end
-arch marble
-x 9
-y 8
-end
-arch marble
-x 9
-y 9
-end
-arch marble
-x 9
-y 10
-end
-arch marble
-x 9
-y 11
-end
-arch marble
-x 9
-y 12
-end
-arch marble
-x 9
-y 13
-end
-arch marble
-x 9
-y 14
-end
-arch marble
-x 9
-y 15
-end
-arch marble
-x 9
-y 16
-end
-arch marble
-x 9
-y 17
-end
-arch marble
-x 9
-y 18
-end
-arch white_wall_2_1_2
-x 9
-y 18
-end
-arch grass
-x 9
-y 19
-end
-arch grass
-x 10
-end
-arch marble
-x 10
-y 1
-end
-arch white_wall_2_1_2
-x 10
-y 1
-end
-arch marble
-x 10
-y 2
-end
-arch marble
-x 10
-y 3
-end
-arch marble
-x 10
-y 4
-end
-arch marble
-x 10
-y 5
-end
-arch marble
-x 10
-y 6
-end
-arch marble
-x 10
-y 7
-end
-arch marble
-x 10
-y 8
-end
-arch marble
-x 10
-y 9
-end
-arch marble
-x 10
-y 10
-end
-arch marble
-x 10
-y 11
-end
-arch marble
-x 10
-y 12
-end
-arch marble
-x 10
-y 13
-end
-arch marble
-x 10
-y 14
-end
-arch marble
-x 10
-y 15
-end
-arch marble
-x 10
-y 16
-end
-arch marble
-x 10
-y 17
-end
-arch marble
-x 10
-y 18
-end
-arch white_wall_2_1_2
-x 10
-y 18
-end
-arch grass
-x 10
-y 19
-end
-arch grass
-x 11
-end
-arch marble
-x 11
-y 1
-end
-arch white_wall_2_1_2
-x 11
-y 1
-end
-arch marble
-x 11
-y 2
-end
-arch marble
-x 11
-y 3
-end
-arch marble
-x 11
-y 4
-end
-arch marble
-x 11
-y 5
-end
-arch marble
-x 11
-y 6
-end
-arch marble
-x 11
-y 7
-end
-arch marble
-x 11
-y 8
-end
-arch marble
-x 11
-y 9
-end
-arch marble
-x 11
-y 10
-end
-arch marble
-x 11
-y 11
-end
-arch marble
-x 11
-y 12
-end
-arch marble
-x 11
-y 13
-end
-arch marble
-x 11
-y 14
-end
-arch marble
-x 11
-y 15
-end
-arch marble
-x 11
-y 16
-end
-arch marble
-x 11
-y 17
-end
-arch marble
-x 11
-y 18
-end
-arch white_wall_2_1_2
-x 11
-y 18
-end
-arch grass
-x 11
-y 19
-end
-arch grass
-x 12
-end
-arch marble
-x 12
-y 1
-end
-arch white_wall_2_1_2
-x 12
-y 1
-end
-arch marble
-x 12
-y 2
-end
-arch marble
-x 12
-y 3
-end
-arch marble
-x 12
-y 4
-end
-arch marble
-x 12
-y 5
-end
-arch marble
-x 12
-y 6
-end
-arch marble
-x 12
-y 7
-end
-arch marble
-x 12
-y 8
-end
-arch marble
-x 12
-y 9
-end
-arch marble
-x 12
-y 10
-end
-arch marble
-x 12
-y 11
-end
-arch marble
-x 12
-y 12
-end
-arch marble
-x 12
-y 13
-end
-arch marble
-x 12
-y 14
-end
-arch marble
-x 12
-y 15
-end
-arch marble
-x 12
-y 16
-end
-arch marble
-x 12
-y 17
-end
-arch marble
-x 12
-y 18
-end
-arch white_wall_2_1_2
-x 12
-y 18
-end
-arch grass
-x 12
-y 19
-end
-arch grass
-x 13
-end
-arch marble
-x 13
-y 1
-end
-arch white_wall_2_1_2
-x 13
-y 1
-end
-arch marble
-x 13
-y 2
-end
-arch marble
-x 13
-y 3
-end
-arch marble
-x 13
-y 4
-end
-arch marble
-x 13
-y 5
-end
-arch marble
-x 13
-y 6
-end
-arch marble
-x 13
-y 7
-end
-arch marble
-x 13
-y 8
-end
-arch marble
-x 13
-y 9
-end
-arch marble
-x 13
-y 10
-end
-arch marble
-x 13
-y 11
-end
-arch marble
-x 13
-y 12
-end
-arch marble
-x 13
-y 13
-end
-arch marble
-x 13
-y 14
-end
-arch marble
-x 13
-y 15
-end
-arch marble
-x 13
-y 16
-end
-arch marble
-x 13
-y 17
-end
-arch marble
-x 13
-y 18
-end
-arch white_wall_2_1_2
-x 13
-y 18
-end
-arch grass
-x 13
-y 19
-end
-arch grass
-x 14
-end
-arch marble
-x 14
 y 1
 end
 arch white_wall_3_3
-x 14
+x 5
 y 1
 end
-arch marble
-x 14
+arch woodlarge
+x 5
 y 2
 end
 arch white_wall_2_1_1
-x 14
+x 5
 y 2
 end
-arch marble
-x 14
+arch woodlarge
+x 5
 y 3
 end
 arch white_wall_1_2
-x 14
+x 5
 y 3
 end
-arch marble
-x 14
+arch woodlarge
+x 5
 y 4
 end
-arch igate_closed_2
-x 14
-y 4
-end
-arch marble
-x 14
+arch woodlarge
+x 5
 y 5
 end
-arch igate_closed_2
-x 14
+arch white_wall_1_1
+x 5
 y 5
 end
-arch marble
-x 14
+arch woodlarge
+x 5
 y 6
+end
+arch white_wall_2_1_1
+x 5
+y 6
+end
+arch woodlarge
+x 5
+y 7
+end
+arch white_wall_3_4
+x 5
+y 7
+end
+arch woodlarge
+x 5
+y 8
+end
+arch white_wall_1_2
+x 5
+y 8
+end
+arch woodlarge
+x 5
+y 9
+end
+arch woodlarge
+x 5
+y 10
+end
+arch woodlarge
+x 5
+y 11
+end
+arch white_wall_1_1
+x 5
+y 11
+end
+arch woodlarge
+x 5
+y 12
+end
+arch white_wall_3_4
+x 5
+y 12
+end
+arch woodlarge
+x 5
+y 13
+end
+arch white_wall_2_1_1
+x 5
+y 13
+end
+arch woodlarge
+x 5
+y 14
+end
+arch white_wall_1_2
+x 5
+y 14
+end
+arch woodlarge
+x 5
+y 15
+end
+arch woodlarge
+x 5
+y 16
+end
+arch white_wall_1_1
+x 5
+y 16
+end
+arch woodlarge
+x 5
+y 17
+end
+arch white_wall_2_1_1
+x 5
+y 17
+end
+arch woodlarge
+x 5
+y 18
+end
+arch white_wall_3_1
+x 5
+y 18
+end
+arch grass
+x 5
+y 19
+end
+arch grass
+x 6
+end
+arch woodlarge
+x 6
+y 1
+end
+arch white_wall_2_1_2
+x 6
+y 1
+end
+arch woodlarge
+x 6
+y 2
+end
+arch woodlarge
+x 6
+y 3
+end
+arch woodlarge
+x 6
+y 4
+end
+arch woodlarge
+x 6
+y 5
+end
+arch woodlarge
+x 6
+y 6
+end
+arch woodlarge
+x 6
+y 7
+end
+arch woodlarge
+x 6
+y 8
+end
+arch woodlarge
+x 6
+y 9
+end
+arch woodlarge
+x 6
+y 10
+end
+arch woodlarge
+x 6
+y 11
+end
+arch woodlarge
+x 6
+y 12
+end
+arch woodlarge
+x 6
+y 13
+end
+arch woodlarge
+x 6
+y 14
+end
+arch woodlarge
+x 6
+y 15
+end
+arch woodlarge
+x 6
+y 16
+end
+arch woodlarge
+x 6
+y 17
+end
+arch woodlarge
+x 6
+y 18
+end
+arch white_wall_2_1_2
+x 6
+y 18
+end
+arch grass
+x 6
+y 19
+end
+arch grass
+x 7
+end
+arch woodlarge
+x 7
+y 1
+end
+arch white_wall_2_1_2
+x 7
+y 1
+end
+arch woodlarge
+x 7
+y 2
+end
+arch woodlarge
+x 7
+y 3
+end
+arch bookshelf
+x 7
+y 3
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 7
+y 4
+end
+arch woodlarge
+x 7
+y 5
+end
+arch bookshelf
+x 7
+y 5
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 7
+y 6
+end
+arch woodlarge
+x 7
+y 7
+end
+arch bookshelf
+x 7
+y 7
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 7
+y 8
+end
+arch woodlarge
+x 7
+y 9
+end
+arch woodlarge
+x 7
+y 10
+end
+arch woodlarge
+x 7
+y 11
+end
+arch woodlarge
+x 7
+y 12
+end
+arch bookshelf
+x 7
+y 12
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 7
+y 13
+end
+arch woodlarge
+x 7
+y 14
+end
+arch bookshelf
+x 7
+y 14
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 7
+y 15
+end
+arch woodlarge
+x 7
+y 16
+end
+arch bookshelf
+x 7
+y 16
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 7
+y 17
+end
+arch woodlarge
+x 7
+y 18
+end
+arch white_wall_2_1_2
+x 7
+y 18
+end
+arch grass
+x 7
+y 19
+end
+arch grass
+x 8
+end
+arch woodlarge
+x 8
+y 1
+end
+arch white_wall_2_1_2
+x 8
+y 1
+end
+arch woodlarge
+x 8
+y 2
+end
+arch woodlarge
+x 8
+y 3
+end
+arch bookshelf
+x 8
+y 3
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 8
+y 4
+end
+arch woodlarge
+x 8
+y 5
+end
+arch bookshelf
+x 8
+y 5
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 8
+y 6
+end
+arch woodlarge
+x 8
+y 7
+end
+arch bookshelf
+x 8
+y 7
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 8
+y 8
+end
+arch woodlarge
+x 8
+y 9
+end
+arch woodlarge
+x 8
+y 10
+end
+arch woodlarge
+x 8
+y 11
+end
+arch woodlarge
+x 8
+y 12
+end
+arch bookshelf
+x 8
+y 12
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 8
+y 13
+end
+arch woodlarge
+x 8
+y 14
+end
+arch bookshelf
+x 8
+y 14
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 8
+y 15
+end
+arch woodlarge
+x 8
+y 16
+end
+arch bookshelf
+x 8
+y 16
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 8
+y 17
+end
+arch woodlarge
+x 8
+y 18
+end
+arch white_wall_2_1_2
+x 8
+y 18
+end
+arch grass
+x 8
+y 19
+end
+arch grass
+x 9
+end
+arch woodlarge
+x 9
+y 1
+end
+arch white_wall_2_1_2
+x 9
+y 1
+end
+arch woodlarge
+x 9
+y 2
+end
+arch woodlarge
+x 9
+y 3
+end
+arch bookshelf
+x 9
+y 3
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 9
+y 4
+end
+arch woodlarge
+x 9
+y 5
+end
+arch bookshelf
+x 9
+y 5
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 9
+y 6
+end
+arch woodlarge
+x 9
+y 7
+end
+arch bookshelf
+x 9
+y 7
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 9
+y 8
+end
+arch woodlarge
+x 9
+y 9
+end
+arch woodlarge
+x 9
+y 10
+end
+arch woodlarge
+x 9
+y 11
+end
+arch woodlarge
+x 9
+y 12
+end
+arch bookshelf
+x 9
+y 12
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 9
+y 13
+end
+arch woodlarge
+x 9
+y 14
+end
+arch bookshelf
+x 9
+y 14
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 9
+y 15
+end
+arch woodlarge
+x 9
+y 16
+end
+arch bookshelf
+x 9
+y 16
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 9
+y 17
+end
+arch woodlarge
+x 9
+y 18
+end
+arch white_wall_2_1_2
+x 9
+y 18
+end
+arch grass
+x 9
+y 19
+end
+arch grass
+x 10
+end
+arch woodlarge
+x 10
+y 1
+end
+arch white_wall_2_1_2
+x 10
+y 1
+end
+arch woodlarge
+x 10
+y 2
+end
+arch woodlarge
+x 10
+y 3
+end
+arch bookshelf
+x 10
+y 3
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 10
+y 4
+end
+arch woodlarge
+x 10
+y 5
+end
+arch bookshelf
+x 10
+y 5
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 10
+y 6
+end
+arch woodlarge
+x 10
+y 7
+end
+arch bookshelf
+x 10
+y 7
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 10
+y 8
+end
+arch woodlarge
+x 10
+y 9
+end
+arch woodlarge
+x 10
+y 10
+end
+arch woodlarge
+x 10
+y 11
+end
+arch woodlarge
+x 10
+y 12
+end
+arch bookshelf
+x 10
+y 12
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 10
+y 13
+end
+arch woodlarge
+x 10
+y 14
+end
+arch bookshelf
+x 10
+y 14
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 10
+y 15
+end
+arch woodlarge
+x 10
+y 16
+end
+arch bookshelf
+x 10
+y 16
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 10
+y 17
+end
+arch woodlarge
+x 10
+y 18
+end
+arch white_wall_2_1_2
+x 10
+y 18
+end
+arch grass
+x 10
+y 19
+end
+arch grass
+x 11
+end
+arch woodlarge
+x 11
+y 1
+end
+arch white_wall_2_1_2
+x 11
+y 1
+end
+arch woodlarge
+x 11
+y 2
+end
+arch woodlarge
+x 11
+y 3
+end
+arch bookshelf
+x 11
+y 3
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 11
+y 4
+end
+arch woodlarge
+x 11
+y 5
+end
+arch bookshelf
+x 11
+y 5
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 11
+y 6
+end
+arch woodlarge
+x 11
+y 7
+end
+arch bookshelf
+x 11
+y 7
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 11
+y 8
+end
+arch woodlarge
+x 11
+y 9
+end
+arch woodlarge
+x 11
+y 10
+end
+arch woodlarge
+x 11
+y 11
+end
+arch woodlarge
+x 11
+y 12
+end
+arch bookshelf
+x 11
+y 12
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 11
+y 13
+end
+arch woodlarge
+x 11
+y 14
+end
+arch bookshelf
+x 11
+y 14
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 11
+y 15
+end
+arch woodlarge
+x 11
+y 16
+end
+arch bookshelf
+x 11
+y 16
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 11
+y 17
+end
+arch woodlarge
+x 11
+y 18
+end
+arch white_wall_2_1_2
+x 11
+y 18
+end
+arch grass
+x 11
+y 19
+end
+arch grass
+x 12
+end
+arch woodlarge
+x 12
+y 1
+end
+arch white_wall_2_1_2
+x 12
+y 1
+end
+arch woodlarge
+x 12
+y 2
+end
+arch woodlarge
+x 12
+y 3
+end
+arch bookshelf
+x 12
+y 3
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 12
+y 4
+end
+arch woodlarge
+x 12
+y 5
+end
+arch bookshelf
+x 12
+y 5
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 12
+y 6
+end
+arch woodlarge
+x 12
+y 7
+end
+arch bookshelf
+x 12
+y 7
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 12
+y 8
+end
+arch woodlarge
+x 12
+y 9
+end
+arch woodlarge
+x 12
+y 10
+end
+arch woodlarge
+x 12
+y 11
+end
+arch woodlarge
+x 12
+y 12
+end
+arch bookshelf
+x 12
+y 12
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 12
+y 13
+end
+arch woodlarge
+x 12
+y 14
+end
+arch bookshelf
+x 12
+y 14
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 12
+y 15
+end
+arch woodlarge
+x 12
+y 16
+end
+arch bookshelf
+x 12
+y 16
+arch random_reading
+exp 5
+no_pick 1
+end
+end
+arch woodlarge
+x 12
+y 17
+end
+arch woodlarge
+x 12
+y 18
+end
+arch white_wall_2_1_2
+x 12
+y 18
+end
+arch grass
+x 12
+y 19
+end
+arch grass
+x 13
+end
+arch woodlarge
+x 13
+y 1
+end
+arch white_wall_2_1_2
+x 13
+y 1
+end
+arch woodlarge
+x 13
+y 2
+end
+arch sign_e
+msg
+This part of the library is under construction.
+endmsg
+x 13
+y 2
+end
+arch woodlarge
+x 13
+y 3
+end
+arch woodlarge
+x 13
+y 4
+end
+arch woodlarge
+x 13
+y 5
+end
+arch woodlarge
+x 13
+y 6
+end
+arch woodlarge
+x 13
+y 7
+end
+arch woodlarge
+x 13
+y 8
+end
+arch woodlarge
+x 13
+y 9
+end
+arch pedestal
+x 13
+y 9
+invisible 1
+connected 1
+end
+arch woodlarge
+x 13
+y 10
+end
+arch pedestal
+x 13
+y 10
+invisible 1
+connected 1
+end
+arch woodlarge
+x 13
+y 11
+end
+arch woodlarge
+x 13
+y 12
+end
+arch woodlarge
+x 13
+y 13
+end
+arch woodlarge
+x 13
+y 14
+end
+arch woodlarge
+x 13
+y 15
+end
+arch woodlarge
+x 13
+y 16
+end
+arch woodlarge
+x 13
+y 17
+end
+arch woodlarge
+x 13
+y 18
+end
+arch white_wall_2_1_2
+x 13
+y 18
+end
+arch grass
+x 13
+y 19
+end
+arch grass
+x 14
+end
+arch woodlarge
+x 14
+y 1
+end
+arch white_wall_2_1_2
+x 14
+y 1
+end
+arch woodlarge
+x 14
+y 2
+end
+arch igate_closed_2
+x 14
+y 2
+connected 2
+end
+arch woodlarge
+x 14
+y 3
 end
 arch white_wall_1_1
 x 14
+y 3
+end
+arch woodlarge
+x 14
+y 4
+end
+arch white_wall_win1
+x 14
+y 4
+end
+arch woodlarge
+x 14
+y 5
+end
+arch white_wall_3_2
+x 14
+y 5
+end
+arch woodlarge
+x 14
 y 6
 end
-arch marble
+arch white_wall_2_1_1
+x 14
+y 6
+end
+arch woodlarge
 x 14
 y 7
 end
@@ -1324,67 +1844,89 @@ arch white_wall_2_1_1
 x 14
 y 7
 end
-arch marble
+arch woodlarge
 x 14
 y 8
 end
-arch white_wall_2_1_1
+arch white_wall_1_2
 x 14
 y 8
 end
-arch marble
+arch woodlarge
 x 14
 y 9
 end
-arch white_wall_2_1_1
+arch igate_closed_2
 x 14
 y 9
+connected 1
 end
-arch marble
+arch woodlarge
 x 14
 y 10
 end
-arch white_wall_2_1_1
+arch igate_closed_2
 x 14
 y 10
+connected 1
 end
-arch marble
+arch woodlarge
 x 14
 y 11
 end
-arch white_wall_2_2_1
+arch white_wall_1_1
 x 14
 y 11
 end
-arch marble
+arch woodlarge
 x 14
 y 12
 end
-arch marble
+arch white_wall_3_2
+x 14
+y 12
+end
+arch woodlarge
 x 14
 y 13
 end
-arch marble
+arch white_wall_2_1_1
+x 14
+y 13
+end
+arch woodlarge
 x 14
 y 14
 end
-arch marble
+arch white_wall_3_2
+x 14
+y 14
+end
+arch woodlarge
 x 14
 y 15
 end
-arch marble
+arch white_wall_1_2
+x 14
+y 15
+end
+arch woodlarge
 x 14
 y 16
 end
-arch marble
+arch woodlarge
 x 14
 y 17
 end
-arch marble
+arch white_wall_1_1
+x 14
+y 17
+end
+arch woodlarge
 x 14
 y 18
 end
-arch white_wall_2_1_2
+arch white_wall_3_1
 x 14
 y 18
 end
@@ -1395,7 +1937,7 @@ end
 arch grass
 x 15
 end
-arch marble
+arch woodlarge
 x 15
 y 1
 end
@@ -1403,109 +1945,114 @@ arch white_wall_2_1_2
 x 15
 y 1
 end
-arch marble
+arch woodlarge
 x 15
 y 2
 end
-arch marble
+arch pedestal
+x 15
+y 2
+invisible 1
+connected 2
+end
+arch woodlarge
 x 15
 y 3
 end
-arch marble
+arch woodlarge
 x 15
 y 4
 end
-arch marble
+arch woodlarge
 x 15
 y 5
 end
-arch marble
+arch white_wall_2_1_2
+x 15
+y 5
+end
+arch woodlarge
 x 15
 y 6
 end
-arch marble
+arch woodlarge
 x 15
 y 7
 end
-arch bench_1_4
+arch button_lever
 x 15
 y 7
-type 0
-move_block all
+connected 1
 end
-arch marble
+arch woodlarge
 x 15
 y 8
 end
-arch marble
+arch longtable_1_4
+x 15
+y 8
+move_block all
+end
+arch woodlarge
 x 15
 y 9
 end
-arch halfling3
-name Lovast
-msg
-@match card
-Well, I'm not totally sure, but you could probably check with universities in Navar or Scorn, maybe they would know.  I only know how to recognize a card, not how you get them. *blush*
-@match access
-@question card How can I get a research card?
-You can access the upper floor whenever you wish, freely.  To access the research area, you need to get a research card.
-@match organisation
-@question access What parts can I access?
-The library has two floors.
-
-The first floor is reserved for researchers holding a research card, and who wish to study rare items.
-
-The second floor contains an extensive explanation of Darcap's story, and reference documents.
-
-@match *
-@question organisation Can you tell me how the library is organised?
-@question access What parts can I access?
-Hello, and welcome to the Darcap public library.
-
-We are very sorry, but many areas are being renovated, thus not many rooms are opened for now.
-endmsg
-x 15
-y 9
-type 0
-random_movement 1
-end
-arch marble
+arch woodlarge
 x 15
 y 10
 end
-arch marble
+arch woodlarge
 x 15
 y 11
 end
-arch white_wall_2_1_2
+arch altar_trigger
+name drop 10 platinum to enter
+slaying money
+exp 50
+food 500
 x 15
 y 11
+connected 1
 end
-arch marble
+arch woodlarge
 x 15
 y 12
 end
-arch marble
+arch white_wall_win2
+x 15
+y 12
+end
+arch shop_empty
 x 15
 y 13
 end
-arch marble
+arch scroll_literacy
+x 15
+y 13
+unpaid 1
+identified 1
+end
+arch woodlarge
 x 15
 y 14
 end
-arch marble
+arch white_wall_2_1_2
+x 15
+y 14
+end
+arch woodlarge
 x 15
 y 15
 end
-arch marble
+arch woodlarge
 x 15
 y 16
 end
-arch marble
+arch woodlarge
 x 15
 y 17
 end
-arch marble
+arch woodlarge
 x 15
 y 18
 end
@@ -1520,7 +2067,7 @@ end
 arch grass
 x 16
 end
-arch marble
+arch woodlarge
 x 16
 y 1
 end
@@ -1528,212 +2075,289 @@ arch white_wall_2_1_2
 x 16
 y 1
 end
-arch marble
+arch woodlarge
 x 16
 y 2
 end
-arch marble
+arch woodlarge
 x 16
 y 3
-end
-arch light4
-x 16
-y 3
-end
-arch marble
-x 16
-y 4
-end
-arch marble
-x 16
-y 5
-end
-arch marble
-x 16
-y 6
-end
-arch marble
-x 16
-y 7
-end
-arch bench_2_2_3
-x 16
-y 7
-type 0
-move_block all
-end
-arch marble
-x 16
-y 8
-end
-arch bench_2_1_1
-x 16
-y 8
-type 0
-move_block all
-end
-arch marble
-x 16
-y 9
-end
-arch bench_2_1_1
-x 16
-y 9
-type 0
-move_block all
-end
-arch marble
-x 16
-y 10
-end
-arch bench_1_2
-x 16
-y 10
-type 0
-move_block all
-end
-arch marble
-x 16
-y 11
-end
-arch white_wall_2_1_2
-x 16
-y 11
-end
-arch marble
-x 16
-y 12
-end
-arch marble
-x 16
-y 13
-end
-arch marble
-x 16
-y 14
-end
-arch marble
-x 16
-y 15
-end
-arch marble
-x 16
-y 16
-end
-arch marble
-x 16
-y 17
-end
-arch marble
-x 16
-y 18
-end
-arch white_wall_2_1_2
-x 16
-y 18
-end
-arch grass
-x 16
-y 19
-end
-arch grass
-x 17
-end
-arch marble
-x 17
-y 1
-end
-arch white_wall_2_1_2
-x 17
-y 1
-end
-arch magic_mouth
-msg
-Second floor: Darcap history
-endmsg
-x 17
-y 2
-end
-arch marble
-x 17
-y 2
 end
 arch stair_3_up
 slaying library_upper
 hp 17
 sp 2
-x 17
-y 2
-end
-arch marble
-x 17
+x 16
 y 3
 end
-arch marble
-x 17
+arch woodlarge
+x 16
 y 4
 end
-arch marble
-x 17
+arch woodlarge
+x 16
 y 5
 end
-arch marble
-x 17
+arch white_wall_2_1_2
+x 16
+y 5
+end
+arch woodlarge
+x 16
 y 6
 end
-arch marble
-x 17
+arch woodlarge
+x 16
 y 7
 end
-arch marble
-x 17
+arch halfling3
+name Lovast
+msg
+@match access
+The entire downstairs part of the library is open to all visitors, for a small fee. The upstairs is still under construction.
+@question fee Why is there a fee?
+@match fee
+Well, the library uses the money to aquire new books. That's why the books in the library change every so often, you know.
+@match *
+Oh, hello! Welcome to the Darcap Public Library!
+@question access What parts of the library can I access?
+endmsg
+x 16
+y 7
+stand_still 1
+random_movement 1
+end
+arch woodlarge
+x 16
 y 8
 end
-arch light4
-x 17
+arch longtable_2_1_2
+x 16
 y 8
+move_block all
 end
-arch marble
-x 17
+arch woodlarge
+x 16
 y 9
 end
-arch marble
-x 17
+arch woodlarge
+x 16
 y 10
 end
-arch marble
-x 17
+arch woodlarge
+x 16
 y 11
+end
+arch white_wall_1_1
+x 16
+y 11
+end
+arch woodlarge
+x 16
+y 12
+end
+arch white_wall_3_1
+x 16
+y 12
+end
+arch shop_empty
+x 16
+y 13
+end
+arch woodlarge
+x 16
+y 14
+end
+arch white_wall_2_1_2
+x 16
+y 14
+end
+arch woodlarge
+x 16
+y 15
+end
+arch woodlarge
+x 16
+y 16
+end
+arch woodlarge
+x 16
+y 17
+end
+arch woodlarge
+x 16
+y 18
+end
+arch white_wall_2_1_2
+x 16
+y 18
+end
+arch grass
+x 16
+y 19
+end
+arch grass
+x 17
+end
+arch woodlarge
+x 17
+y 1
 end
 arch white_wall_2_1_2
 x 17
+y 1
+end
+arch woodlarge
+x 17
+y 2
+end
+arch woodlarge
+x 17
+y 3
+end
+arch woodlarge
+x 17
+y 4
+end
+arch woodlarge
+x 17
+y 5
+end
+arch white_wall_2_1_2
+x 17
+y 5
+end
+arch woodlarge
+x 17
+y 6
+end
+arch clock
+x 17
+y 6
+end
+arch woodlarge
+x 17
+y 7
+end
+arch woodlarge
+x 17
+y 8
+end
+arch longtable_1_3
+x 17
+y 8
+move_block all
+end
+arch woodlarge
+x 17
+y 9
+end
+arch woodlarge
+x 17
+y 10
+end
+arch woodlarge
+x 17
 y 11
 end
-arch marble
+arch shop_mat
+x 17
+y 11
+end
+arch woodlarge
 x 17
 y 12
 end
-arch marble
+arch white_wall_win2
+x 17
+y 12
+end
+arch shop_empty
 x 17
 y 13
 end
-arch marble
+arch shop_mat
+x 17
+y 13
+end
+arch woodlarge
 x 17
 y 14
 end
-arch marble
+arch white_wall_2_1_2
+x 17
+y 14
+end
+arch woodlarge
 x 17
 y 15
 end
-arch marble
+arch book_clasp
+name Julio the Great, by Simpoe
+msg
+Not much is known of Julio's life before he came to Darcap. Some rumors say he was a great wizard knowing all about Elementals, working for kings or rich merchants, doing strange work for them.
+
+His arrival in Darcap, in 6796 EK according to most sources though some like Ubnief say it is some years before or later, was pretty unnoticed at the time.
+
+He purchased four houses in the center of the town (for quite a large sum it is argued), and started living there full time a few years after initially coming.
+
+Quite shortly after that, though (the consensual date is 6798 EK), strange events started to occur in his rooms. Witnesses told of weird sounds, eruptions of flame or cold wind, and other disagreements.
+
+A few years later, neighbours officially complained to the authorities for various explosions and destructions in their houses surrounding Julio's owns.
+
+Quite isolated, with no friend known at the time, Julio lived alone, and died around 6804 EK.
+
+
+It is only in 6813 EK that the sultan Marshi IV, having respected the dead wizard's wish to wait some years, published evidence showing Julio was a major element in the town's prosperity.
+For years, and even before his arrival in the town proper, he had advised the sultan and his aids on the affairs of the world, favored the expansion of commerce to and from Darcap, and used his obviously great influence to enhance Darcap's circus (a full research can be found in Tilmuo's story).
+
+As many inhabitants, including neighbours who did complain, started to tell how Julio did help them, solving many conflicts even as he was criticised, it was decided by popular consensus to make a statue of him out of gratitude.
+
+His houses, escaping planned destruction, were restored, and became a museum to his work.
+endmsg
+x 17
+y 15
+no_pick 1
+end
+arch woodlarge
 x 17
 y 16
 end
-arch marble
+arch tome
+name Short History of Darcap, by Alvanes
+msg
+Darcap was founded around 2265 EK, by the Kingdom of the Masts (on which few information is known). The colony was left isolated after the disappearance of this kingdom, and suffered for millenia afterwards.
+
+During this period many inhabitants converted to Devourers to survive.
+
+It is only in 6138 EK that the first stranger, Herghist Appelnisht, a famous explorer, set foot in the town. During his 2 years stay, he learnt the history and customs of Darcap and taught the whereabouts of the rest of the world to the inhabitants.
+
+Navar then helped build a road connecting the two towns (some wonder why it goes through a narrow tunnel), and sponsored a shrine of Gaea.
+
+To forget their awful past, and attract many visitors to not be forgotten again, Darcapians decided to build the biggest circus in the world, and a big port conducting business with the rest of the continent.
+endmsg
+x 17
+y 16
+no_pick 1
+end
+arch woodlarge
 x 17
 y 17
 end
-arch marble
+arch quarto
+name Darcap-Navar Relations, by Poltihr
+msg
+The closest to Darcap, it was only logical Navar would help build a road joining its northern neighbourg around 6150 EK.
+
+But Navar leaders were reluctant to trust the hordes of undead living in the town, so, according to Fuldar's research, they ensured the road joining the towns went through a narrow tunnel can could be destroyed easily, to sever the ties with Darcap if the need ever arised.
+
+The tension between the towns was exacerbated when, in 6170 EK, the outpost of Navar south of Zaah's castle was assaulted by undead. It took many negotiations (and some say money was exchanged too, though no one could bring a formal proof) for the Navar forces to not retaliate.
+endmsg
+x 17
+y 17
+no_pick 1
+end
+arch woodlarge
 x 17
 y 18
 end
@@ -1748,7 +2372,7 @@ end
 arch grass
 x 18
 end
-arch marble
+arch woodlarge
 x 18
 y 1
 end
@@ -1756,7 +2380,7 @@ arch white_wall_2_2_3
 x 18
 y 1
 end
-arch marble
+arch woodlarge
 x 18
 y 2
 end
@@ -1764,7 +2388,7 @@ arch white_wall_2_1_1
 x 18
 y 2
 end
-arch marble
+arch woodlarge
 x 18
 y 3
 end
@@ -1772,7 +2396,7 @@ arch white_wall_2_1_1
 x 18
 y 3
 end
-arch marble
+arch woodlarge
 x 18
 y 4
 end
@@ -1780,15 +2404,15 @@ arch white_wall_2_1_1
 x 18
 y 4
 end
-arch marble
+arch woodlarge
 x 18
 y 5
 end
-arch white_wall_2_1_1
+arch white_wall_3_4
 x 18
 y 5
 end
-arch marble
+arch woodlarge
 x 18
 y 6
 end
@@ -1796,7 +2420,7 @@ arch white_wall_2_1_1
 x 18
 y 6
 end
-arch marble
+arch woodlarge
 x 18
 y 7
 end
@@ -1804,7 +2428,7 @@ arch white_wall_2_1_1
 x 18
 y 7
 end
-arch marble
+arch woodlarge
 x 18
 y 8
 end
@@ -1812,47 +2436,49 @@ arch white_wall_1_2
 x 18
 y 8
 end
-arch marble
+arch woodlarge
 x 18
 y 9
 end
 arch oakdoor_1
-name exit
 slaying /world/world_116_102
 hp 29
 sp 31
 x 18
 y 9
+move_on all
+blocksview 1
 end
-arch marble
+arch woodlarge
 x 18
 y 10
 end
 arch oakdoor_1
-name exit
 slaying /world/world_116_102
 hp 29
 sp 31
 x 18
 y 10
+move_on all
+blocksview 1
 end
-arch marble
+arch woodlarge
 x 18
 y 11
 end
-arch white_wall_2_2_3
+arch white_wall_1_1
 x 18
 y 11
 end
-arch marble
+arch woodlarge
 x 18
 y 12
 end
-arch white_wall_2_1_1
+arch white_wall_3_4
 x 18
 y 12
 end
-arch marble
+arch woodlarge
 x 18
 y 13
 end
@@ -1860,15 +2486,15 @@ arch white_wall_2_1_1
 x 18
 y 13
 end
-arch marble
+arch woodlarge
 x 18
 y 14
 end
-arch white_wall_2_1_1
+arch white_wall_3_4
 x 18
 y 14
 end
-arch marble
+arch woodlarge
 x 18
 y 15
 end
@@ -1876,7 +2502,7 @@ arch white_wall_2_1_1
 x 18
 y 15
 end
-arch marble
+arch woodlarge
 x 18
 y 16
 end
@@ -1884,7 +2510,7 @@ arch white_wall_2_1_1
 x 18
 y 16
 end
-arch marble
+arch woodlarge
 x 18
 y 17
 end
@@ -1892,7 +2518,7 @@ arch white_wall_2_1_1
 x 18
 y 17
 end
-arch marble
+arch woodlarge
 x 18
 y 18
 end
