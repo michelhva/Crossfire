@@ -118,7 +118,7 @@ public class JXCWindowRenderer {
         private static final long serialVersionUID = 1L;
 
         @Override
-        public void paint(final Graphics g) {
+        public void paint(@NotNull final Graphics g) {
             super.paint(g);
             mouseTracker.paintActiveComponent(g);
         }
