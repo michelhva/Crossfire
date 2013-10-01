@@ -1,15 +1,15 @@
 arch map
 name Grumms Inn Upstairs
-difficulty 1
+difficulty 8
+region marksel
 width 22
 height 10
 enter_x 20
 enter_y 3
 msg
-Grumm's Inn
 Created:  2002-10-27 Todd Mitchell
+Modified: 2013-07-28 Kevin Zheng
 endmsg
-outdoor 1
 end
 arch woodfloor2
 end
@@ -99,15 +99,7 @@ arch woodfloor2
 x 1
 y 4
 end
-arch firepot
-x 1
-y 4
-end
 arch woodfloor2
-x 1
-y 5
-end
-arch firepot
 x 1
 y 5
 end
@@ -158,6 +150,11 @@ arch woodfloor2
 x 2
 y 2
 end
+arch button_small
+x 2
+y 3
+connected 1
+end
 arch woodfloor2
 x 2
 y 3
@@ -184,6 +181,11 @@ end
 arch woodfloor2
 x 2
 y 5
+end
+arch button_small
+x 2
+y 6
+connected 2
 end
 arch woodfloor2
 x 2
@@ -226,10 +228,6 @@ x 3
 y 1
 end
 arch table
-x 3
-y 1
-end
-arch light2
 x 3
 y 1
 end
@@ -270,10 +268,6 @@ x 3
 y 8
 end
 arch table
-x 3
-y 8
-end
-arch light2
 x 3
 y 8
 end
@@ -435,7 +429,7 @@ arch woodfloor2
 x 6
 y 1
 end
-arch barrel
+arch table
 x 6
 y 1
 end
@@ -443,7 +437,7 @@ arch woodfloor2
 x 6
 y 2
 end
-arch chair_1.2
+arch chair_1.3
 x 6
 y 2
 end
@@ -466,38 +460,38 @@ end
 arch woodfloor2
 x 6
 y 7
-end
-arch barrel
-x 6
-y 7
-end
-arch woodfloor2
-x 6
-y 8
-end
-arch barrel
-x 6
-y 8
-end
-arch woodfloor2
-x 6
-y 9
-end
-arch woodwall_2_1_2
-x 6
-y 9
-end
-arch woodfloor2
-x 7
-end
-arch woodwall_2_1_2
-x 7
-end
-arch woodfloor2
-x 7
-y 1
 end
 arch chair_1.1
+x 6
+y 7
+end
+arch woodfloor2
+x 6
+y 8
+end
+arch table
+x 6
+y 8
+end
+arch woodfloor2
+x 6
+y 9
+end
+arch woodwall_2_1_2
+x 6
+y 9
+end
+arch woodfloor2
+x 7
+end
+arch woodwall_2_1_2
+x 7
+end
+arch woodfloor2
+x 7
+y 1
+end
+arch chair_1.2
 x 7
 y 1
 end
@@ -505,15 +499,7 @@ arch woodfloor2
 x 7
 y 2
 end
-arch chair_1.2
-x 7
-y 2
-end
 arch woodfloor2
-x 7
-y 3
-end
-arch firepot
 x 7
 y 3
 end
@@ -529,10 +515,6 @@ arch woodfloor2
 x 7
 y 6
 end
-arch firepot
-x 7
-y 6
-end
 arch woodfloor2
 x 7
 y 7
@@ -541,7 +523,7 @@ arch woodfloor2
 x 7
 y 8
 end
-arch barrel
+arch chair_1.2
 x 7
 y 8
 end
@@ -641,10 +623,6 @@ arch woodfloor2
 x 9
 y 2
 end
-arch chair_1.4
-x 9
-y 2
-end
 arch woodfloor2
 x 9
 y 3
@@ -708,6 +686,11 @@ arch woodfloor2
 x 10
 y 2
 end
+arch button_small
+x 10
+y 3
+connected 3
+end
 arch woodfloor2
 x 10
 y 3
@@ -734,6 +717,11 @@ end
 arch woodfloor2
 x 10
 y 5
+end
+arch button_small
+x 10
+y 6
+connected 4
 end
 arch woodfloor2
 x 10
@@ -775,7 +763,7 @@ arch woodfloor2
 x 11
 y 1
 end
-arch light2
+arch table
 x 11
 y 1
 end
@@ -819,10 +807,6 @@ arch table
 x 11
 y 8
 end
-arch light2
-x 11
-y 8
-end
 arch woodfloor2
 x 11
 y 9
@@ -838,6 +822,10 @@ arch woodwall_2_1_2
 x 12
 end
 arch woodfloor2
+x 12
+y 1
+end
+arch chair_1.2
 x 12
 y 1
 end
@@ -994,10 +982,6 @@ x 14
 y 5
 end
 arch woodfloor2
-x 14
-y 6
-end
-arch firepot
 x 14
 y 6
 end
@@ -1231,6 +1215,11 @@ arch woodfloor2
 x 18
 y 5
 end
+arch button_small
+x 18
+y 6
+connected 5
+end
 arch woodfloor2
 x 18
 y 6
@@ -1254,10 +1243,6 @@ x 18
 y 8
 end
 arch table_2
-x 18
-y 8
-end
-arch light2
 x 18
 y 8
 end
@@ -1339,8 +1324,8 @@ y 3
 end
 arch stair_down_2
 slaying grumms_inn
-hp 20
-sp 3
+hp 21
+sp 5
 x 20
 y 3
 end
@@ -1349,10 +1334,6 @@ x 20
 y 4
 end
 arch woodfloor2
-x 20
-y 5
-end
-arch firepot
 x 20
 y 5
 end

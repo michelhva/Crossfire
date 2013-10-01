@@ -1,107 +1,108 @@
 arch map
 name Marksel Keep
-difficulty 1
+difficulty 8
+region marksel
 width 15
 height 15
-enter_x 7
-enter_y 14
+enter_x 9
+enter_y 15
 msg
-Created:  1999-02-28 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1999-01-28 King Zoobus
+Modified: 2013-07-28 Kevin Zheng
 endmsg
 end
 arch flagstone
 end
-arch flagstone_2_2_2
+arch cwall_2_2_2
 end
 arch flagstone
 y 1
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 1
 end
 arch flagstone
 y 2
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 2
 end
 arch flagstone
 y 3
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 3
 end
 arch flagstone
 y 4
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 4
 end
 arch flagstone
 y 5
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 5
 end
 arch flagstone
 y 6
 end
-arch flagstone_3_2
+arch cwall_3_2
 y 6
 end
 arch flagstone
 y 7
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 7
 end
 arch flagstone
 y 8
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 8
 end
 arch flagstone
 y 9
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 9
 end
 arch flagstone
 y 10
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 10
 end
 arch flagstone
 y 11
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 11
 end
 arch flagstone
 y 12
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 12
 end
 arch flagstone
 y 13
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 y 13
 end
 arch flagstone
 y 14
 end
-arch flagstone_2_2_1
+arch cwall_2_2_1
 y 14
 end
 arch flagstone
 x 1
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 1
 end
 arch flagstone
@@ -128,7 +129,7 @@ arch flagstone
 x 1
 y 6
 end
-arch flagstone_1_3
+arch cwall_1_3
 x 1
 y 6
 end
@@ -172,14 +173,14 @@ arch flagstone
 x 1
 y 14
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 1
 y 14
 end
 arch flagstone
 x 2
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 2
 end
 arch flagstone
@@ -209,8 +210,7 @@ end
 arch woman
 msg
 @match *
-The Royal Apartments are upstairs. You
-don't need to go up there
+The Royal Apartments are upstairs.  You don't need to go up there.
 endmsg
 x 2
 y 4
@@ -267,14 +267,14 @@ arch flagstone
 x 2
 y 14
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 2
 y 14
 end
 arch flagstone
 x 3
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 3
 end
 arch flagstone
@@ -305,7 +305,7 @@ arch flagstone
 x 3
 y 6
 end
-arch flagstone_1_4
+arch cwall_1_4
 x 3
 y 6
 end
@@ -333,10 +333,6 @@ arch flagstone
 x 3
 y 10
 end
-arch a_guard_m
-x 3
-y 10
-end
 arch flagstone
 x 3
 y 11
@@ -361,21 +357,21 @@ arch flagstone
 x 3
 y 14
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 3
 y 14
 end
 arch flagstone
 x 4
 end
-arch flagstone_3_3
+arch cwall_3_3
 x 4
 end
 arch flagstone
 x 4
 y 1
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 4
 y 1
 end
@@ -383,7 +379,7 @@ arch flagstone
 x 4
 y 2
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 4
 y 2
 end
@@ -391,7 +387,7 @@ arch flagstone
 x 4
 y 3
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 4
 y 3
 end
@@ -399,7 +395,7 @@ arch flagstone
 x 4
 y 4
 end
-arch flagstone_3_2
+arch cwall_3_2
 x 4
 y 4
 end
@@ -407,7 +403,7 @@ arch flagstone
 x 4
 y 5
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 4
 y 5
 end
@@ -415,7 +411,7 @@ arch flagstone
 x 4
 y 6
 end
-arch flagstone_2_2_4
+arch cwall_2_2_4
 x 4
 y 6
 end
@@ -463,14 +459,14 @@ arch flagstone
 x 4
 y 14
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 4
 y 14
 end
 arch flagstone
 x 5
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 5
 end
 arch flagstone
@@ -501,7 +497,7 @@ arch flagstone
 x 5
 y 4
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 5
 y 4
 end
@@ -557,14 +553,14 @@ arch flagstone
 x 5
 y 14
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 5
 y 14
 end
 arch flagstone
 x 6
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 6
 end
 arch flagstone
@@ -587,7 +583,7 @@ arch flagstone
 x 6
 y 4
 end
-arch flagstone_1_3
+arch cwall_1_3
 x 6
 y 4
 end
@@ -635,14 +631,14 @@ arch flagstone
 x 6
 y 14
 end
-arch flagstone_1_3
+arch cwall_1_3
 x 6
 y 14
 end
 arch flagstone
 x 7
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 7
 end
 arch flagstone
@@ -694,25 +690,15 @@ arch merchant
 name Lord Marksel
 msg
 @match no
-Alas, I could see the lure of the long
-open road in your eyes... but I had to
-ask. My band is weakened from battle.
+Alas, I could see the lure of the long open road in your eyes... but I had to ask. My band is weakened from battle.
 @match battle
-Vile bandits! They attacked our signal
-tower to the south. Aye, we lost good
-men in that fight. Now the road is
-unsafe for travel. I fear for the
-safety of the merchants.
+Vile bandits! They attacked our signal tower to the south. Aye, we lost good men in that fight. Now the road is unsafe for travel. I fear for the safety of the merchants.
 @match merchants
-Ask our guildmaster in the store. May
-your honor serve you well.
+Ask our guildmaster in the store. May your honor serve you well.
 @match yes
-We are honored!  Page Jon shall assign
-a cot in the barracks. We can talk more
-at the feast tonight.
+We are honored! Page Jon shall assign a cot in the barracks. We can talk more at the feast tonight.
 @match *
-Greetings, stranger! You seem a man of
-honor.  Would you join my warband?
+Greetings, stranger! You seem a man of honor. Would you join my warband?
 endmsg
 hp 250
 x 7
@@ -758,7 +744,7 @@ arch flagstone
 x 7
 y 14
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_120_109
 hp 38
 sp 37
@@ -768,7 +754,7 @@ end
 arch flagstone
 x 8
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 8
 end
 arch flagstone
@@ -791,7 +777,7 @@ arch mage
 name Advisor
 msg
 @match *
-You should not be in here
+You should not be in here.
 endmsg
 hp 300
 x 8
@@ -802,6 +788,7 @@ move_type walk
 monster 1
 unaggressive 1
 arch staff
+level 10
 randomitems none
 arch spell_magic_bullet
 end
@@ -811,7 +798,7 @@ arch flagstone
 x 8
 y 4
 end
-arch flagstone_1_4
+arch cwall_1_4
 x 8
 y 4
 end
@@ -856,14 +843,9 @@ end
 arch courier
 msg
 @match king | King | Navar
-His city lies to the south.  He is
-ruler of our province... or was.
-There is no suitable heir.  Who will
-be our next King? Oh, poor Queen
-Wilhema... her grief is great!
+His city lies to the south.  He is ruler of our province... or was.  There is no suitable heir.   Who will be our next King? Oh, poor Queen Wilhema... her grief is great!
 @match *
-I bear a message to my Lord.  The King
-of Navar is dead
+I bear a message to my Lord.  The King of Navar is dead.
 endmsg
 x 8
 y 11
@@ -880,14 +862,14 @@ arch flagstone
 x 8
 y 14
 end
-arch flagstone_1_4
+arch cwall_1_4
 x 8
 y 14
 end
 arch flagstone
 x 9
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 9
 end
 arch flagstone
@@ -910,7 +892,7 @@ arch flagstone
 x 9
 y 4
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 9
 y 4
 end
@@ -966,21 +948,21 @@ arch flagstone
 x 9
 y 14
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 9
 y 14
 end
 arch flagstone
 x 10
 end
-arch flagstone_3_3
+arch cwall_3_3
 x 10
 end
 arch flagstone
 x 10
 y 1
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 10
 y 1
 end
@@ -988,7 +970,7 @@ arch flagstone
 x 10
 y 2
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 10
 y 2
 end
@@ -996,7 +978,7 @@ arch flagstone
 x 10
 y 3
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 10
 y 3
 end
@@ -1004,7 +986,7 @@ arch flagstone
 x 10
 y 4
 end
-arch flagstone_3_4
+arch cwall_3_4
 x 10
 y 4
 end
@@ -1012,7 +994,7 @@ arch flagstone
 x 10
 y 5
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 10
 y 5
 end
@@ -1020,7 +1002,7 @@ arch flagstone
 x 10
 y 6
 end
-arch flagstone_2_2_1
+arch cwall_2_2_1
 x 10
 y 6
 end
@@ -1064,14 +1046,14 @@ arch flagstone
 x 10
 y 14
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 10
 y 14
 end
 arch flagstone
 x 11
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 11
 end
 arch flagstone
@@ -1089,7 +1071,7 @@ end
 arch stair_down_4
 slaying cellar
 hp 1
-sp 1
+sp 2
 x 11
 y 2
 end
@@ -1117,7 +1099,7 @@ arch flagstone
 x 11
 y 6
 end
-arch flagstone_1_3
+arch cwall_1_3
 x 11
 y 6
 end
@@ -1173,14 +1155,14 @@ arch flagstone
 x 11
 y 14
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 11
 y 14
 end
 arch flagstone
 x 12
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 12
 end
 arch flagstone
@@ -1235,10 +1217,7 @@ end
 arch warrior_1
 msg
 @match *
-The bandits have been most troublesome.
-I don't know how much more we can take, I
-wish the King of Navar would send an army
-to help us.
+The bandits have been most troublesome.  I don't know how much more we can take, I wish the King of Navar would send an army to help us.
 endmsg
 x 12
 y 8
@@ -1281,14 +1260,14 @@ arch flagstone
 x 12
 y 14
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 12
 y 14
 end
 arch flagstone
 x 13
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 13
 end
 arch flagstone
@@ -1331,7 +1310,7 @@ arch flagstone
 x 13
 y 6
 end
-arch flagstone_1_4
+arch cwall_1_4
 x 13
 y 6
 end
@@ -1375,21 +1354,21 @@ arch flagstone
 x 13
 y 14
 end
-arch flagstone_2_1_2
+arch cwall_2_1_2
 x 13
 y 14
 end
 arch flagstone
 x 14
 end
-arch flagstone_2_2_3
+arch cwall_2_2_3
 x 14
 end
 arch flagstone
 x 14
 y 1
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 1
 end
@@ -1397,7 +1376,7 @@ arch flagstone
 x 14
 y 2
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 2
 end
@@ -1405,7 +1384,7 @@ arch flagstone
 x 14
 y 3
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 3
 end
@@ -1413,7 +1392,7 @@ arch flagstone
 x 14
 y 4
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 4
 end
@@ -1421,7 +1400,7 @@ arch flagstone
 x 14
 y 5
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 5
 end
@@ -1429,7 +1408,7 @@ arch flagstone
 x 14
 y 6
 end
-arch flagstone_3_4
+arch cwall_3_4
 x 14
 y 6
 end
@@ -1437,7 +1416,7 @@ arch flagstone
 x 14
 y 7
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 7
 end
@@ -1445,7 +1424,7 @@ arch flagstone
 x 14
 y 8
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 8
 end
@@ -1453,7 +1432,7 @@ arch flagstone
 x 14
 y 9
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 9
 end
@@ -1461,7 +1440,7 @@ arch flagstone
 x 14
 y 10
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 10
 end
@@ -1469,7 +1448,7 @@ arch flagstone
 x 14
 y 11
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 11
 end
@@ -1477,7 +1456,7 @@ arch flagstone
 x 14
 y 12
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 12
 end
@@ -1485,7 +1464,7 @@ arch flagstone
 x 14
 y 13
 end
-arch flagstone_2_1_1
+arch cwall_2_1_1
 x 14
 y 13
 end
@@ -1493,7 +1472,7 @@ arch flagstone
 x 14
 y 14
 end
-arch flagstone_2_2_4
+arch cwall_2_2_4
 x 14
 y 14
 end
