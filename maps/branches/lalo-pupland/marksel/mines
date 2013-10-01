@@ -1,14 +1,36 @@
 arch map
 name Mines
-difficulty 1
+difficulty 10
+region marksel
 darkness 4
 width 20
 height 20
+enter_x 13
+enter_y 18
 msg
 Created:  2002-12-20 Joel Southall
+Modified: 2012-07-08 Nicolas Weeger
 endmsg
 end
-arch blocked
+arch cave_15
+y 1
+end
+arch cave_15
+y 2
+end
+arch cave_15
+y 3
+end
+arch cave_15
+y 4
+end
+arch cave_15
+y 5
+end
+arch cave_15
+y 6
+end
+arch cave_15
 y 7
 end
 arch medium_stones
@@ -35,13 +57,55 @@ end
 arch cave17
 y 11
 end
-arch blocked
+arch cave_15
 y 12
 end
-arch blocked
+arch cave_15
 y 13
 end
-arch blocked
+arch cave_15
+y 14
+end
+arch cave_15
+y 15
+end
+arch cave_15
+y 16
+end
+arch cave_15
+y 17
+end
+arch cave_15
+y 18
+end
+arch cave_15
+y 19
+end
+arch cave_15
+x 1
+y 1
+end
+arch cave_15
+x 1
+y 2
+end
+arch cave_15
+x 1
+y 3
+end
+arch cave_15
+x 1
+y 4
+end
+arch cave_15
+x 1
+y 5
+end
+arch cave_15
+x 1
+y 6
+end
+arch cave_15
 x 1
 y 7
 end
@@ -85,19 +149,63 @@ arch cave17
 x 1
 y 12
 end
-arch blocked
+arch cave_15
 x 1
 y 13
 end
-arch blocked
+arch cave_15
 x 1
 y 14
 end
-arch blocked
+arch cave_15
+x 1
+y 15
+end
+arch cave_15
+x 1
+y 16
+end
+arch cave_15
+x 1
+y 17
+end
+arch cave_15
+x 1
+y 18
+end
+arch cave_15
+x 1
+y 19
+end
+arch cave_15
+x 2
+y 1
+end
+arch cave_15
+x 2
+y 2
+end
+arch cave_15
+x 2
+y 3
+end
+arch cave_15
+x 2
+y 4
+end
+arch cave_15
+x 2
+y 5
+end
+arch cave_15
+x 2
+y 6
+end
+arch cave_15
 x 2
 y 7
 end
-arch blocked
+arch cave_15
 x 2
 y 8
 end
@@ -126,13 +234,10 @@ x 2
 y 11
 end
 arch guildmaster
-name dwarf
+name Pikorme
 msg
 @match *
-*grumble*  Why'd I have to get this worthless
-shaft, while my brother finds gold in
-abundance. How, by the beard of my father,
-am I going to move this blasted rock!?
+*grumble*  Why'd I have to get this worthless shaft, while my brother finds gold in abundance.  How, by the beard of my father, am I going to move this blasted rock!?
 endmsg
 face dwarf_p.111
 hp 100
@@ -144,6 +249,22 @@ pick_up 0
 arch shovel_1
 end
 arch lantern2_1
+end
+arch npc_dialog
+name /marksel/pikorme.msg
+end
+arch NPCGift
+name ore
+arch uf6pile
+name lump
+name_pl lumps
+title of graphite
+value 0
+identified 1
+arch quest_prevent_drop
+name navar/Iscar-pen 40
+end
+end
 end
 end
 arch medium_stones
@@ -162,47 +283,63 @@ arch cave17
 x 2
 y 13
 end
-arch blocked
+arch cave_15
 x 2
 y 14
 end
-arch blocked
+arch cave_15
 x 2
 y 15
 end
-arch blocked
+arch cave_15
 x 2
 y 16
 end
-arch blocked
+arch cave_15
 x 2
 y 17
 end
-arch blocked
+arch cave_15
 x 2
 y 18
 end
-arch blocked
+arch cave_15
 x 2
 y 19
 end
-arch blocked
+arch cave_15
+x 3
+y 1
+end
+arch cave_15
+x 3
+y 2
+end
+arch cave_15
+x 3
+y 3
+end
+arch cave_15
+x 3
+y 4
+end
+arch cave_15
 x 3
 y 5
 end
-arch blocked
+arch cave_15
 x 3
 y 6
 end
-arch blocked
+arch cave_15
 x 3
 y 7
 end
-arch blocked
+arch cave_15
 x 3
 y 8
 end
-arch blocked
+arch cave_15
 x 3
 y 9
 end
@@ -246,11 +383,11 @@ arch cave17
 x 3
 y 14
 end
-arch blocked
+arch cave_15
 x 3
 y 15
 end
-arch blocked
+arch cave_15
 x 3
 y 16
 end
@@ -278,11 +415,23 @@ arch cave23
 x 3
 y 19
 end
-arch blocked
+arch cave_15
+x 4
+y 1
+end
+arch cave_15
+x 4
+y 2
+end
+arch cave_15
+x 4
+y 3
+end
+arch cave_15
 x 4
 y 4
 end
-arch blocked
+arch cave_15
 x 4
 y 5
 end
@@ -302,15 +451,15 @@ arch cave17
 x 4
 y 7
 end
-arch blocked
+arch cave_15
 x 4
 y 8
 end
-arch blocked
+arch cave_15
 x 4
 y 9
 end
-arch blocked
+arch cave_15
 x 4
 y 10
 end
@@ -382,7 +531,19 @@ arch cave2
 x 4
 y 19
 end
-arch blocked
+arch cave_15
+x 5
+y 1
+end
+arch cave_15
+x 5
+y 2
+end
+arch cave_15
+x 5
+y 3
+end
+arch cave_15
 x 5
 y 4
 end
@@ -418,15 +579,15 @@ arch cave17
 x 5
 y 8
 end
-arch blocked
+arch cave_15
 x 5
 y 9
 end
-arch blocked
+arch cave_15
 x 5
 y 10
 end
-arch blocked
+arch cave_15
 x 5
 y 11
 end
@@ -448,8 +609,7 @@ y 13
 end
 arch magic_mouth
 msg
-You hear mumbled curses in dwarvish
-tongue.
+You hear mumbled curses in dwarvish tongue.
 endmsg
 food 1
 x 5
@@ -491,8 +651,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-*grunt* This rock is hard... *grunt* but there's
-a clump of gold every few feet.
+*grunt* This rock is hard... *grunt* but there's a clump of gold every few feet.
 endmsg
 face dwarf_p.111
 hp 100
@@ -514,7 +673,19 @@ arch cave2
 x 5
 y 19
 end
-arch blocked
+arch cave_15
+x 6
+y 1
+end
+arch cave_15
+x 6
+y 2
+end
+arch cave_15
+x 6
+y 3
+end
+arch cave_15
 x 6
 y 4
 end
@@ -558,15 +729,15 @@ arch cave17
 x 6
 y 9
 end
-arch blocked
+arch cave_15
 x 6
 y 10
 end
-arch blocked
+arch cave_15
 x 6
 y 11
 end
-arch blocked
+arch cave_15
 x 6
 y 12
 end
@@ -614,11 +785,23 @@ arch cave20
 x 6
 y 19
 end
-arch blocked
+arch cave_15
+x 7
+y 1
+end
+arch cave_15
+x 7
+y 2
+end
+arch cave_15
+x 7
+y 3
+end
+arch cave_15
 x 7
 y 4
 end
-arch blocked
+arch cave_15
 x 7
 y 5
 end
@@ -658,11 +841,11 @@ arch cave17
 x 7
 y 10
 end
-arch blocked
+arch cave_15
 x 7
 y 11
 end
-arch blocked
+arch cave_15
 x 7
 y 12
 end
@@ -710,15 +893,31 @@ arch cave20
 x 7
 y 18
 end
-arch blocked
+arch cave_15
 x 7
 y 19
 end
-arch blocked
+arch cave_15
+x 8
+y 1
+end
+arch cave_15
+x 8
+y 2
+end
+arch cave_15
+x 8
+y 3
+end
+arch cave_15
+x 8
+y 4
+end
+arch cave_15
 x 8
 y 5
 end
-arch blocked
+arch cave_15
 x 8
 y 6
 end
@@ -758,7 +957,7 @@ arch cave17
 x 8
 y 11
 end
-arch blocked
+arch cave_15
 x 8
 y 12
 end
@@ -790,23 +989,43 @@ arch cave17
 x 8
 y 16
 end
-arch blocked
+arch cave_15
 x 8
 y 17
 end
-arch blocked
+arch cave_15
 x 8
 y 18
 end
-arch blocked
+arch cave_15
 x 8
 y 19
 end
-arch blocked
+arch cave_15
+x 9
+y 1
+end
+arch cave_15
+x 9
+y 2
+end
+arch cave_15
+x 9
+y 3
+end
+arch cave_15
+x 9
+y 4
+end
+arch cave_15
+x 9
+y 5
+end
+arch cave_15
 x 9
 y 6
 end
-arch blocked
+arch cave_15
 x 9
 y 7
 end
@@ -862,10 +1081,7 @@ arch guildmaster
 name guard
 msg
 @match *
-I wonder where these dwarves live. They come
-here from the mines a bit further in the
-mountains. But no one I know has actually
-been in their dwellings.
+I wonder where these dwarves live.  They come here from the mines a bit further in the mountains.  But no one I know has actually been in their dwellings.
 endmsg
 face warrior.151
 hp 100
@@ -897,19 +1113,43 @@ arch cave17
 x 9
 y 17
 end
-arch blocked
+arch cave_15
 x 9
 y 18
 end
-arch blocked
+arch cave_15
 x 9
 y 19
 end
-arch blocked
+arch cave_15
+x 10
+y 1
+end
+arch cave_15
+x 10
+y 2
+end
+arch cave_15
+x 10
+y 3
+end
+arch cave_15
+x 10
+y 4
+end
+arch cave_15
+x 10
+y 5
+end
+arch cave_15
+x 10
+y 6
+end
+arch cave_15
 x 10
 y 7
 end
-arch blocked
+arch cave_15
 x 10
 y 8
 end
@@ -974,15 +1214,43 @@ arch cave17
 x 10
 y 18
 end
-arch blocked
+arch cave_15
 x 10
 y 19
 end
-arch blocked
+arch cave_15
+x 11
+y 1
+end
+arch cave_15
+x 11
+y 2
+end
+arch cave_15
+x 11
+y 3
+end
+arch cave_15
+x 11
+y 4
+end
+arch cave_15
+x 11
+y 5
+end
+arch cave_15
+x 11
+y 6
+end
+arch cave_15
+x 11
+y 7
+end
+arch cave_15
 x 11
 y 8
 end
-arch blocked
+arch cave_15
 x 11
 y 9
 end
@@ -1050,27 +1318,39 @@ arch cave17
 x 11
 y 19
 end
-arch blocked
+arch cave_15
+x 12
+y 1
+end
+arch cave_15
 x 12
 y 2
 end
-arch blocked
+arch cave_15
 x 12
 y 3
 end
-arch blocked
+arch cave_15
 x 12
 y 4
 end
-arch blocked
+arch cave_15
 x 12
 y 5
 end
-arch blocked
+arch cave_15
 x 12
 y 6
 end
-arch blocked
+arch cave_15
+x 12
+y 7
+end
+arch cave_15
+x 12
+y 8
+end
+arch cave_15
 x 12
 y 9
 end
@@ -1110,11 +1390,7 @@ arch fighter
 name guard
 msg
 @match *
-We're here to guard the valuable stones these
-good dwarves dig up. This is a new mine,
-we have a feeling it will yield mithril in
-abundance.  One of the dwarves found a
-sample of it, yesterday.
+We're here to guard the valuable stones these good dwarves dig up.  This is a new mine, we have a feeling it will yield mithril in abundance.  One of the dwarves found a sample of it, yesterday.
 endmsg
 x 12
 y 14
@@ -1153,11 +1429,11 @@ arch cave2
 x 12
 y 19
 end
-arch blocked
+arch cave_15
 x 13
 y 1
 end
-arch blocked
+arch cave_15
 x 13
 y 2
 end
@@ -1185,19 +1461,19 @@ arch cave17
 x 13
 y 5
 end
-arch blocked
+arch cave_15
 x 13
 y 6
 end
-arch blocked
+arch cave_15
 x 13
 y 7
 end
-arch blocked
+arch cave_15
 x 13
 y 8
 end
-arch blocked
+arch cave_15
 x 13
 y 9
 end
@@ -1211,8 +1487,7 @@ y 10
 end
 arch magic_mouth
 msg
-You hear the dwarves singing an old mining
-song...
+You hear the dwarves singing an old mining song...
 endmsg
 food 1
 x 13
@@ -1281,7 +1556,7 @@ arch cave2
 x 13
 y 19
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
@@ -1309,9 +1584,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-Think this is hard work, laddy? The work is
-its own reward...  and some of the good
-stones we bring up... heheheh....
+Think this is hard work, laddy? The work is its own reward... and some of the good stones we bring up... he he heh....
 endmsg
 face dwarf_p.111
 hp 100
@@ -1347,11 +1620,11 @@ arch cave17
 x 14
 y 7
 end
-arch blocked
+arch cave_15
 x 14
 y 8
 end
-arch blocked
+arch cave_15
 x 14
 y 9
 end
@@ -1399,14 +1672,9 @@ arch guildmaster
 name guard
 msg
 @match *
-This is a boring post. Sitting here in this dark
-hole. I wish I was posted in the other mine.
+This is a boring post.  Sitting here in this dark hole.  I wish I was posted in the other mine.
 @match mine
-Bit more exciting, I think. If you get the area
-near the spider's lair. I've heard that undead
-prowl somewhere deep in those mines. A
-dwarf told me that it was even more exciting,
-before they completely drove the goblins
+Bit more exciting, I think.  If you get the area near the spider's lair.  I've heard that undead prowl somewhere deep in those mines.  A dwarf told me that it was even more exciting, before they completely drove the goblins
 away.
 endmsg
 face warrior.151
@@ -1447,7 +1715,7 @@ arch cave2
 x 14
 y 19
 end
-arch blocked
+arch cave_15
 x 15
 y 1
 end
@@ -1496,8 +1764,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-Sorry, lad! Can't talk now, we have work to
-do!
+Sorry, lad! Can't talk now, we have work to do!
 endmsg
 face dwarf_p.111
 hp 100
@@ -1595,7 +1862,7 @@ arch medium_stones
 x 15
 y 18
 end
-arch blocked
+arch cave_15
 x 15
 y 18
 end
@@ -1607,7 +1874,7 @@ arch cave22
 x 15
 y 19
 end
-arch blocked
+arch cave_15
 x 16
 y 1
 end
@@ -1627,8 +1894,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-Look at that crystal, boy. Such things bring
-joy to the heart of a dwarf!
+Look at that crystal, boy.  Such things bring joy to the heart of a dwarf!
 endmsg
 face dwarf_p.111
 hp 100
@@ -1708,8 +1974,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-Begone! We are busy digging up treasures
-from the wonderous earth!
+Begone! We are busy digging up treasures from the wondrous earth!
 endmsg
 face dwarf_p.111
 hp 100
@@ -1778,7 +2043,7 @@ arch cave17
 x 16
 y 19
 end
-arch blocked
+arch cave_15
 x 17
 y 1
 end
@@ -1825,9 +2090,7 @@ y 7
 end
 arch magic_mouth
 msg
-A dwarf shouts excitedly, "By the anvil of
-Mostrai!  I found me one! Look at that baby
-sparkle, lad!"
+A dwarf shouts excitedly, "By the anvil of Mostrai!  I found me one! Look at that baby sparkle, lad!"
 endmsg
 food 1
 x 17
@@ -1882,11 +2145,11 @@ arch cave20
 x 17
 y 14
 end
-arch blocked
+arch cave_15
 x 17
 y 15
 end
-arch blocked
+arch cave_15
 x 17
 y 15
 end
@@ -1922,11 +2185,11 @@ arch cave20
 x 17
 y 19
 end
-arch blocked
+arch cave_15
 x 18
 y 1
 end
-arch blocked
+arch cave_15
 x 18
 y 2
 end
@@ -1954,9 +2217,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-This mine has good treasures to be found!
-The mithril! I can smell it beneath the rocks!
-Dig harder, boys!
+This mine has good treasures to be found!  The mithril!  I can smell it beneath the rocks!  Dig harder, boys!
 endmsg
 face dwarf_p.111
 hp 100
@@ -2008,9 +2269,7 @@ arch guildmaster
 name dwarf
 msg
 @match *
-Sonny, pick up a shovel and join in, by all
-means.  But, if not, let us dwarves do our
-work as only we know how!
+Sonny, pick up a shovel and join in, by all means.  But, if not, let us dwarves do our work as only we know how!
 endmsg
 face dwarf_p.111
 hp 100
@@ -2046,15 +2305,15 @@ arch cave20
 x 18
 y 13
 end
-arch blocked
+arch cave_15
 x 18
 y 14
 end
-arch blocked
+arch cave_15
 x 18
 y 15
 end
-arch blocked
+arch cave_15
 x 18
 y 16
 end
@@ -2074,15 +2333,19 @@ arch cave20
 x 18
 y 18
 end
-arch blocked
+arch cave_15
 x 18
 y 19
 end
-arch blocked
+arch cave_15
+x 19
+y 1
+end
+arch cave_15
 x 19
 y 2
 end
-arch blocked
+arch cave_15
 x 19
 y 3
 end
@@ -2110,11 +2373,11 @@ arch cave20
 x 19
 y 6
 end
-arch blocked
+arch cave_15
 x 19
 y 7
 end
-arch blocked
+arch cave_15
 x 19
 y 8
 end
@@ -2150,27 +2413,31 @@ arch cave20
 x 19
 y 12
 end
-arch blocked
+arch cave_15
 x 19
 y 13
 end
-arch blocked
+arch cave_15
 x 19
 y 14
 end
-arch blocked
+arch cave_15
+x 19
+y 15
+end
+arch cave_15
 x 19
 y 16
 end
-arch blocked
+arch cave_15
 x 19
 y 17
 end
-arch blocked
+arch cave_15
 x 19
 y 18
 end
-arch blocked
+arch cave_15
 x 19
 y 19
 end
