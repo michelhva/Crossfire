@@ -1,14 +1,14 @@
 arch map
-name HallOfSelection
+name Hall Of Selection
 difficulty 1
 region creation
 width 15
-height 35
+height 34
 enter_x 7
 enter_y 5
 msg
-Created:  2000-02-12
-Modified: 2007-12-24 Kevin Bulgrien
+Created:  2000-10-12
+Modified: 2012-03-14 Rick Tanner
 endmsg
 end
 arch blocked
@@ -331,7 +331,6 @@ both weaponry and magic because
 you've had to divide your time
 between them.
 endmsg
-face mage.151
 x 1
 y 16
 end
@@ -352,7 +351,6 @@ x 1
 y 18
 end
 arch evoker_class
-face evoker.151
 x 1
 y 18
 end
@@ -393,10 +391,11 @@ face shop_empty.111
 x 1
 y 22
 end
-arch wizard
+arch wizard_class
 face wizard.151
 x 1
 y 22
+direction 3
 end
 arch flagstone
 name floor
@@ -415,7 +414,6 @@ x 1
 y 24
 end
 arch alchemist_class
-face alchemist.151
 x 1
 y 24
 end
@@ -939,7 +937,7 @@ sp 12
 x 3
 y 22
 carrying 70000
-arch wizard
+arch wizard_class
 end
 end
 arch flagstone
@@ -1050,6 +1048,10 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 3
+y 32
+end
+arch dungeon_magic
 x 3
 y 32
 end
@@ -1397,7 +1399,7 @@ name floor
 face shop_empty.111
 x 5
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1410,7 +1412,7 @@ name floor
 face shop_empty.111
 x 5
 y 5
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1423,7 +1425,7 @@ name floor
 face shop_empty.111
 x 5
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1436,7 +1438,7 @@ name floor
 face shop_empty.111
 x 5
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1449,7 +1451,7 @@ name floor
 face shop_empty.111
 x 5
 y 8
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1767,7 +1769,7 @@ name floor
 face shop_empty.111
 x 6
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2090,7 +2092,7 @@ name floor
 face shop_empty.111
 x 7
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2213,7 +2215,7 @@ Crossfire players can have many skills.  Type in the command "skills" to see whi
 The primary skills are organized into groups that represent abilities to use various forms of magic, weapons, and praying, but there are also many other skills that do not fall into these broad categories.
 Some skills are used by typing in commands like this:
 use_skill alchemy
-Other skills, like praying, weapons, and magic are used automatically.  Skills may be inherent to your character, but they may also be acquired by using items like talismans, holy symbols, or other other inventory items.
+Other skills, like praying, weapons, and magic are used automatically.  Skills may be inherent to your character, but they may also be acquired by using items like talismans, holy symbols, or other inventory items.
 endmsg
 x 7
 y 11
@@ -2533,7 +2535,7 @@ name floor
 face shop_empty.111
 x 8
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2855,7 +2857,7 @@ name floor
 face shop_empty.111
 x 9
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2868,7 +2870,7 @@ name floor
 face shop_empty.111
 x 9
 y 5
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2881,7 +2883,7 @@ name floor
 face shop_empty.111
 x 9
 y 6
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2894,7 +2896,7 @@ name floor
 face shop_empty.111
 x 9
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2907,7 +2909,7 @@ name floor
 face shop_empty.111
 x 9
 y 8
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2983,7 +2985,7 @@ arch magic_mouth
 msg
 Barbarian
 Growing up in the howling wilderness, you've had no chance to pursue anything remotely intellectual, let alone learn your letters!  It's amazing you ever thought of leaving your hovel and going somewhere else, you're so ignorant.  But now you have.
-You find that you're a lot tougher and stronger than these cityfolk, and you know how to get around in rough terrain.  You've learned archery in order to fill your cookpot, and weaponry is second nature to anyone who's had to fight with the local orc-tribe over food once a month.
+You find that you're a lot tougher and stronger than these city folk, and you know how to get around in rough terrain.  You've learned archery in order to fill your cook pot, and weaponry is second nature to anyone who's had to fight with the local orc-tribe over food once a month.
 You're deeply afraid of magic, and it'll be a while before you get over that and develop any facility with it.
 You've no deep problem with the idea of gods, but you don't know much about them.
 endmsg
@@ -3013,7 +3015,7 @@ end
 arch magic_mouth
 msg
 Swashbuckler
-Shipboard most of your life, you've learned good balance and agility, and you've also become strong and hardy.  Because of occasional oarswork, you and your shipmates have an admirable command of rhythm, and you can sing well.
+Shipboard most of your life, you've learned good balance and agility, and you've also become strong and hardy.  Because of occasional oars work, you and your shipmates have an admirable command of rhythm, and you can sing well.
 You've learned to make the most of your time in port:  after passing out drunk in a bar and waking to find yourself short your pay, you've found ways to acquire new capital, or at the very least, talk someone into helping you out of your fix.
 On numerous occasions, you've taken up arms and bow in defense of your ship, so you're facile with weapons, but you've had no chance to learn magic or the ways of gods.
 endmsg
@@ -3133,7 +3135,7 @@ arch magic_mouth
 msg
 Paladin
 You are a militant priest, with an emphasis on 'priest'.
-You've been taught archery and the use of weapons, but great care has been taken that you're doctrinally correct.  Now you've been sent out in the world to convert the unrighteous and destroy the enemies of the faith.  Your churchmembers have been charged a pretty penny to equip you for the job!
+You've been taught archery and the use of weapons, but great care has been taken that you're doctrinally correct.  Now you've been sent out in the world to convert the unrighteous and destroy the enemies of the faith.  Your church members have been charged a pretty penny to equip you for the job!
 All other areas of your education have been neglected.  Perhaps aware of your deficiency, your superiors have given you some measure of protection from magic.
 endmsg
 x 9
@@ -4146,7 +4148,6 @@ x 13
 y 16
 end
 arch warrior_class
-face warrior.151
 x 13
 y 16
 end
@@ -4167,7 +4168,6 @@ x 13
 y 18
 end
 arch barbarian_class
-face barbarian.151
 x 13
 y 18
 end
@@ -4188,7 +4188,6 @@ x 13
 y 20
 end
 arch swashbuckler_class
-face swashbuckl.151
 x 13
 y 20
 end
@@ -4209,7 +4208,6 @@ x 13
 y 22
 end
 arch ninja_class
-face ninja.151
 x 13
 y 22
 end
@@ -4264,7 +4262,6 @@ inner peacefulness grants you the
 ability to regenerate faster and to
 sense auras.
 endmsg
-face monk.151
 x 13
 y 26
 end
@@ -4306,7 +4303,7 @@ x 13
 y 30
 end
 arch priest_class
-face priestnew.151
+face priest.151
 x 13
 y 30
 end
