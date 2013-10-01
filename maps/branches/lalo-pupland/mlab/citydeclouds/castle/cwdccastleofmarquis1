@@ -1,14 +1,15 @@
 arch map
-name Castle of the Marquis
+name Castle of the Marquis, Entrance
 reset_timeout 7200
-difficulty 1
+difficulty 100
 region citydeclouds
 width 64
 height 64
-enter_x 1
-enter_y 1
+enter_x 32
+enter_y 57
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2012-02-14 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2206,7 +2207,6 @@ y 7
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -2229,7 +2229,6 @@ y 9
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -2251,7 +2250,6 @@ y 11
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -2273,7 +2271,6 @@ y 13
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -2295,7 +2292,6 @@ y 15
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -2389,7 +2385,6 @@ y 27
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -2671,7 +2666,6 @@ y 7
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -3129,7 +3123,6 @@ y 7
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -3312,7 +3305,6 @@ y 29
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 9
@@ -3340,7 +3332,6 @@ y 32
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -3574,7 +3565,6 @@ y 7
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -3749,7 +3739,6 @@ y 25
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -4015,7 +4004,6 @@ y 7
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -4050,7 +4038,6 @@ y 10
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -4077,7 +4064,6 @@ y 12
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -4104,7 +4090,6 @@ y 14
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -4131,7 +4116,6 @@ y 16
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -4158,7 +4142,6 @@ y 18
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -4482,7 +4465,6 @@ y 7
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -4837,7 +4819,6 @@ y 55
 end
 arch barrel
 name wall
-name_pl wall
 face awall_5.111
 x 12
 y 55
@@ -4929,7 +4910,6 @@ y 7
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -5300,7 +5280,6 @@ y 50
 end
 arch sign
 name torch
-name_pl torch
 face torch_lit1.111
 x 13
 y 50
@@ -5372,7 +5351,6 @@ y 61
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -5422,7 +5400,6 @@ y 7
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -5581,7 +5558,6 @@ y 25
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -5652,7 +5628,6 @@ y 32
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -5683,7 +5658,6 @@ y 35
 end
 arch barrel
 name wall
-name_pl wall
 face awall_5.111
 x 14
 y 35
@@ -5907,7 +5881,6 @@ y 7
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -6131,7 +6104,6 @@ end
 arch magic_mouth
 msg
 Sacrifice is demanded!..
-
 endmsg
 x 15
 y 29
@@ -6372,7 +6344,6 @@ y 61
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -6422,7 +6393,6 @@ y 7
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -6445,7 +6415,6 @@ y 9
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -6467,7 +6436,6 @@ y 11
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -6489,7 +6457,6 @@ y 13
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -6511,7 +6478,6 @@ y 15
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -6857,7 +6823,6 @@ y 62
 end
 arch nazgul
 name capital nazgul
-name_pl capital nazgul
 hp 2000
 maxhp 2000
 exp 7000
@@ -6915,7 +6880,6 @@ y 8
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 17
@@ -7323,7 +7287,6 @@ y 62
 end
 arch barrel
 name wall
-name_pl wall
 face awall_5.111
 x 17
 y 63
@@ -7511,7 +7474,6 @@ y 25
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -7694,7 +7656,6 @@ y 50
 end
 arch sign
 name torch
-name_pl torch
 face torch_lit1.111
 x 18
 y 50
@@ -7969,7 +7930,6 @@ y 32
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -8184,7 +8144,6 @@ y 62
 end
 arch sign
 name torch
-name_pl torch
 face torch_lit1.111
 x 19
 y 63
@@ -9148,7 +9107,6 @@ y 25
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -9183,7 +9141,6 @@ y 29
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 22
@@ -9530,7 +9487,6 @@ y 16
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 23
@@ -9622,7 +9578,6 @@ y 29
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -9645,7 +9600,6 @@ y 32
 end
 arch skree
 name greater skree
-name_pl greater skree
 hp 6000
 maxhp 6000
 dam 45
@@ -9776,7 +9730,6 @@ y 50
 end
 arch sign
 name torch
-name_pl torch
 face torch_lit1.111
 x 23
 y 50
@@ -9975,7 +9928,6 @@ y 20
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -9998,7 +9950,6 @@ y 22
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -10013,7 +9964,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -10403,7 +10353,6 @@ y 21
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -10426,7 +10375,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -10816,7 +10764,6 @@ y 20
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -10839,7 +10786,6 @@ y 22
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -10854,7 +10800,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -11644,7 +11589,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 28
 y 7
 end
@@ -11658,7 +11602,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 28
 y 8
 end
@@ -11672,7 +11615,6 @@ y 8
 end
 arch afloor_left
 name floor
-name_pl floor
 x 28
 y 9
 end
@@ -11750,7 +11692,6 @@ y 21
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -11773,7 +11714,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -12131,7 +12071,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 29
 y 7
 end
@@ -12141,7 +12080,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 29
 y 8
 end
@@ -12151,7 +12089,6 @@ y 8
 end
 arch afloor_left
 name floor
-name_pl floor
 x 29
 y 9
 end
@@ -12481,7 +12418,6 @@ y 50
 end
 arch sign
 name torch
-name_pl torch
 face torch_lit1.111
 x 29
 y 50
@@ -12628,7 +12564,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 30
 y 7
 end
@@ -12638,7 +12573,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 30
 y 8
 end
@@ -12648,7 +12582,6 @@ y 8
 end
 arch afloor_left
 name floor
-name_pl floor
 x 30
 y 9
 end
@@ -12666,7 +12599,6 @@ y 9
 end
 arch afloor_left
 name floor
-name_pl floor
 x 30
 y 10
 end
@@ -12680,7 +12612,6 @@ y 10
 end
 arch afloor_left
 name floor
-name_pl floor
 x 30
 y 11
 end
@@ -12742,7 +12673,6 @@ y 20
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -12817,7 +12747,6 @@ y 29
 end
 arch nazgul
 name capital nazgul
-name_pl capital nazgul
 hp 2000
 maxhp 2000
 exp 7000
@@ -13108,13 +13037,11 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 31
 y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 31
 y 8
 end
@@ -13124,7 +13051,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 31
 y 9
 end
@@ -13134,7 +13060,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 31
 y 10
 end
@@ -13144,7 +13069,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 31
 y 11
 end
@@ -13210,7 +13134,6 @@ y 22
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -13544,19 +13467,16 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 32
 y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 32
 y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 32
 y 9
 end
@@ -13566,7 +13486,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 32
 y 10
 end
@@ -13576,7 +13495,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 32
 y 11
 end
@@ -13630,7 +13548,6 @@ y 20
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -13861,7 +13778,7 @@ y 53
 end
 arch magic_ear
 msg
-@match Nazgul|nazgul
+@match nazgul
 seeessaaammeeee
 endmsg
 x 32
@@ -13883,8 +13800,7 @@ y 54
 end
 arch magic_mouth
 msg
-A worn inscription reads:
-The enemy of all who wear rings...
+A worn inscription reads: The enemy of all who wear rings...
 endmsg
 x 32
 y 54
@@ -13994,19 +13910,16 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 33
 y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 33
 y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 33
 y 9
 end
@@ -14016,7 +13929,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 33
 y 10
 end
@@ -14026,7 +13938,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 33
 y 11
 end
@@ -14080,7 +13991,6 @@ y 20
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -14095,7 +14005,6 @@ y 21
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -14118,7 +14027,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -14169,7 +14077,6 @@ y 31
 end
 arch nazgul
 name capital nazgul
-name_pl capital nazgul
 hp 2000
 maxhp 2000
 exp 7000
@@ -14427,19 +14334,16 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 34
 y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 34
 y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 34
 y 9
 end
@@ -14449,7 +14353,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 34
 y 10
 end
@@ -14459,7 +14362,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 34
 y 11
 end
@@ -14533,7 +14435,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -14576,7 +14477,6 @@ y 28
 end
 arch nazgul
 name capital nazgul
-name_pl capital nazgul
 hp 2000
 maxhp 2000
 exp 7000
@@ -14878,7 +14778,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 35
 y 7
 end
@@ -14888,7 +14787,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 35
 y 8
 end
@@ -14898,7 +14796,6 @@ y 8
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 9
 end
@@ -14916,7 +14813,6 @@ y 9
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 10
 end
@@ -14930,7 +14826,6 @@ y 10
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 11
 end
@@ -15200,7 +15095,6 @@ y 50
 end
 arch sign
 name torch
-name_pl torch
 face torch_lit1.111
 x 35
 y 50
@@ -15337,7 +15231,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 36
 y 7
 end
@@ -15347,7 +15240,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 36
 y 8
 end
@@ -15357,7 +15249,6 @@ y 8
 end
 arch afloor_left
 name floor
-name_pl floor
 x 36
 y 9
 end
@@ -15435,7 +15326,6 @@ y 20
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -15450,7 +15340,6 @@ y 21
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -15473,7 +15362,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -15520,7 +15408,6 @@ y 28
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 36
@@ -15811,7 +15698,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 37
 y 7
 end
@@ -15821,7 +15707,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 37
 y 8
 end
@@ -15831,7 +15716,6 @@ y 8
 end
 arch afloor_left
 name floor
-name_pl floor
 x 37
 y 9
 end
@@ -15929,7 +15813,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -16225,7 +16108,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 38
 y 7
 end
@@ -16235,7 +16117,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 38
 y 8
 end
@@ -16245,7 +16126,6 @@ y 8
 end
 arch afloor_left
 name floor
-name_pl floor
 x 38
 y 9
 end
@@ -16315,7 +16195,6 @@ y 20
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -16338,7 +16217,6 @@ y 22
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -16381,7 +16259,6 @@ y 26
 end
 arch sign
 name torch
-name_pl torch
 face torch_lit1.111
 x 38
 y 26
@@ -16680,7 +16557,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 39
 y 7
 end
@@ -16690,7 +16566,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 39
 y 8
 end
@@ -16700,7 +16575,6 @@ y 8
 end
 arch afloor_left
 name floor
-name_pl floor
 x 39
 y 9
 end
@@ -16730,7 +16604,6 @@ y 11
 end
 arch clock
 name grandfather clock
-name_pl grandfather clock
 x 39
 y 11
 material 0
@@ -17105,7 +16978,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 7
 end
@@ -17115,7 +16987,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 8
 end
@@ -17125,7 +16996,6 @@ y 8
 end
 arch afloor_left
 name floor
-name_pl floor
 x 40
 y 9
 end
@@ -17528,7 +17398,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 7
 end
@@ -17538,7 +17407,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 8
 end
@@ -17548,7 +17416,6 @@ y 8
 end
 arch afloor_left
 name floor
-name_pl floor
 x 41
 y 9
 end
@@ -17642,7 +17509,6 @@ y 22
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -17657,7 +17523,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -17979,7 +17844,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 42
 y 6
 end
@@ -18000,7 +17864,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 42
 y 7
 end
@@ -18017,7 +17880,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 42
 y 8
 end
@@ -18027,7 +17889,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 42
 y 9
 end
@@ -18097,7 +17958,6 @@ y 14
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 42
@@ -18149,7 +18009,6 @@ y 20
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -18348,7 +18207,6 @@ y 45
 end
 arch barrel
 name wall
-name_pl wall
 face stwall_5.111
 x 42
 y 45
@@ -18394,7 +18252,6 @@ y 50
 end
 arch sign
 name torch
-name_pl torch
 face torch_lit1.111
 x 42
 y 50
@@ -18501,7 +18358,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 43
 y 6
 end
@@ -18516,7 +18372,6 @@ move_block all
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 43
 y 7
 end
@@ -18527,7 +18382,6 @@ move_block all
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 43
 y 8
 end
@@ -18538,7 +18392,6 @@ move_block all
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 43
 y 9
 end
@@ -18548,7 +18401,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 43
 y 10
 end
@@ -18610,7 +18462,6 @@ y 16
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -18633,7 +18484,6 @@ y 18
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -18664,7 +18514,6 @@ y 21
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -18984,7 +18833,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 44
 y 6
 end
@@ -18998,7 +18846,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 44
 y 7
 end
@@ -19008,7 +18855,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 44
 y 8
 end
@@ -19018,7 +18864,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 44
 y 9
 end
@@ -19028,7 +18873,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 44
 y 10
 end
@@ -19106,7 +18950,6 @@ y 20
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -19137,7 +18980,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -19176,7 +19018,6 @@ y 26
 end
 arch sign
 name torch
-name_pl torch
 face torch_lit1.111
 x 44
 y 26
@@ -19447,7 +19288,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 45
 y 6
 end
@@ -19461,7 +19301,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 45
 y 7
 end
@@ -19475,7 +19314,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 45
 y 8
 end
@@ -19489,7 +19327,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 45
 y 9
 end
@@ -19503,7 +19340,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 45
 y 10
 end
@@ -19573,7 +19409,6 @@ y 17
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -19592,7 +19427,6 @@ y 19
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -19627,7 +19461,6 @@ y 23
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -19718,7 +19551,6 @@ y 34
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 45
@@ -19810,7 +19642,6 @@ y 45
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 45
@@ -20069,7 +19900,6 @@ y 16
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -20092,7 +19922,6 @@ y 18
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -20123,7 +19952,6 @@ y 21
 end
 arch demilich
 name superincumbent demilich
-name_pl superincumbent demilich
 hp 4000
 maxhp 4000
 dam 40
@@ -20509,7 +20337,6 @@ y 14
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 47
@@ -20625,7 +20452,6 @@ y 28
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 47
@@ -20863,7 +20689,6 @@ move_block 0
 end
 arch bookshelf
 name wall shelf
-name_pl heavy bookshelf
 x 48
 y 6
 material 0
@@ -21063,7 +20888,6 @@ y 36
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 48
@@ -21123,7 +20947,6 @@ y 43
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 48
@@ -21167,7 +20990,6 @@ y 48
 end
 arch door_1
 name heavy door
-name_pl heavy door
 hp 5000
 maxhp 5000
 x 48
@@ -21299,7 +21121,6 @@ move_block 0
 end
 arch bookshelf
 name wall shelf
-name_pl heavy bookshelf
 x 49
 y 6
 material 0
@@ -21327,7 +21148,6 @@ y 9
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 49
 y 9
 arch random_reading
@@ -21353,7 +21173,6 @@ y 12
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 49
 y 12
 arch random_reading
@@ -21379,7 +21198,6 @@ y 15
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 49
 y 15
 arch random_reading
@@ -21481,7 +21299,6 @@ y 32
 end
 arch block_door_closed
 name wall
-name_pl wall
 face awall_A.111
 x 49
 y 32
@@ -21537,7 +21354,6 @@ y 41
 end
 arch nazgul
 name capital nazgul
-name_pl capital nazgul
 hp 2000
 maxhp 2000
 exp 7000
@@ -21720,7 +21536,6 @@ move_block 0
 end
 arch bookshelf
 name wall shelf
-name_pl heavy bookshelf
 x 50
 y 6
 material 0
@@ -21869,7 +21684,6 @@ y 32
 end
 arch block_door_closed
 name wall
-name_pl wall
 face awall_A.111
 x 50
 y 32
@@ -22089,7 +21903,6 @@ move_block 0
 end
 arch bookshelf
 name wall shelf
-name_pl heavy bookshelf
 x 51
 y 6
 material 0
@@ -22241,7 +22054,6 @@ y 32
 end
 arch block_door_closed
 name wall
-name_pl wall
 face awall_A.111
 x 51
 y 32
@@ -22273,7 +22085,6 @@ y 37
 end
 arch nazgul
 name capital nazgul
-name_pl capital nazgul
 hp 2000
 maxhp 2000
 exp 7000
@@ -22468,7 +22279,6 @@ move_block 0
 end
 arch bookshelf
 name wall shelf
-name_pl heavy bookshelf
 x 52
 y 6
 material 0
@@ -22496,7 +22306,6 @@ y 9
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 52
 y 9
 arch random_reading
@@ -22522,7 +22331,6 @@ y 12
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 52
 y 12
 arch random_reading
@@ -22548,7 +22356,6 @@ y 15
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 52
 y 15
 arch random_reading
@@ -22662,7 +22469,6 @@ y 32
 end
 arch block_door_closed
 name wall
-name_pl wall
 face awall_A.111
 x 52
 y 32
@@ -22726,7 +22532,6 @@ y 45
 end
 arch nazgul
 name capital nazgul
-name_pl capital nazgul
 hp 2000
 maxhp 2000
 exp 7000
@@ -22877,7 +22682,6 @@ move_block 0
 end
 arch bookshelf
 name wall shelf
-name_pl heavy bookshelf
 x 53
 y 6
 material 0
@@ -23013,8 +22817,7 @@ y 30
 end
 arch magic_mouth
 msg
-A worn inscription reads:
-They seek...
+A worn inscription reads: They seek...
 endmsg
 x 53
 y 31
@@ -23025,7 +22828,7 @@ y 31
 end
 arch magic_ear
 msg
-@match ring|rings|Ring|Rings
+@match ring|rings
 endmsg
 x 53
 y 32
@@ -23037,7 +22840,6 @@ y 32
 end
 arch block_door_closed
 name wall
-name_pl wall
 face awall_A.111
 x 53
 y 32
@@ -23046,10 +22848,7 @@ end
 arch magic_mouth
 msg
 A worn inscription reads:
-Leaders of death, followers to consume
-but they seek... the wraiths look to
-find... any of ... by elven hands...
-they seek...
+Leaders of death, followers to consume but they seek... the wraiths look to find... any of ... by elven hands... they seek...
 endmsg
 x 53
 y 33
@@ -23064,7 +22863,6 @@ y 34
 end
 arch nazgul
 name capital nazgul
-name_pl capital nazgul
 hp 2000
 maxhp 2000
 exp 7000
@@ -23279,7 +23077,6 @@ move_block 0
 end
 arch bookshelf
 name wall shelf
-name_pl heavy bookshelf
 x 54
 y 6
 material 0
@@ -23439,7 +23236,6 @@ y 32
 end
 arch block_door_closed
 name wall
-name_pl wall
 face awall_A.111
 x 54
 y 32
@@ -23663,7 +23459,6 @@ move_block 0
 end
 arch bookshelf
 name wall shelf
-name_pl heavy bookshelf
 x 55
 y 6
 material 0
@@ -23691,7 +23486,6 @@ y 9
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 55
 y 9
 arch random_reading
@@ -23717,7 +23511,6 @@ y 12
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 55
 y 12
 arch random_reading
@@ -23743,7 +23536,6 @@ y 15
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
 x 55
 y 15
 arch random_reading
@@ -23842,7 +23634,6 @@ y 32
 end
 arch block_door_closed
 name wall
-name_pl wall
 face awall_A.111
 x 55
 y 32
@@ -23894,7 +23685,6 @@ y 41
 end
 arch nazgul
 name capital nazgul
-name_pl capital nazgul
 hp 2000
 maxhp 2000
 exp 7000
@@ -24065,7 +23855,6 @@ move_block 0
 end
 arch bookshelf
 name wall shelf
-name_pl heavy bookshelf
 x 56
 y 6
 material 0
@@ -24261,7 +24050,6 @@ y 32
 end
 arch block_door_closed
 name wall
-name_pl wall
 face awall_A.111
 x 56
 y 32
