@@ -1,10 +1,14 @@
 arch map
-name City de Clouds Bank
+name City de Clouds Bank, 4th Floor
 difficulty 1
-width 20
-height 30
+region citydeclouds
+width 17
+height 29
+enter_x 11
+enter_y 25
 msg
-Created:  2005-05-28
+Created:  2005-05-28 mikeeusa
+Modified: 2012-02-13 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -261,7 +265,6 @@ y 27
 end
 arch key2
 name Master Key: Deposit Room 1 FWB - CDC Branch
-name_pl Master Key: Deposit Room 1 FWB - CDC Branch
 slaying mkcdcfwbdr1
 y 28
 value 550
@@ -624,7 +627,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 2
 end
@@ -638,7 +640,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 3
 end
@@ -652,7 +653,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 4
 end
@@ -666,7 +666,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 5
 end
@@ -680,7 +679,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 6
 end
@@ -694,7 +692,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 7
 end
@@ -708,7 +705,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 2
 y 8
 end
@@ -762,7 +758,6 @@ y 12
 end
 arch key2
 name Deposit Room 3 FWB - CDC Branch
-name_pl Deposit Room 3 FWB - CDC Branch
 slaying cdcfwbdr3
 x 2
 y 12
@@ -788,7 +783,6 @@ y 14
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 2
 y 14
 unique 1
@@ -799,7 +793,6 @@ y 15
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 2
 y 15
 unique 1
@@ -826,7 +819,6 @@ y 17
 end
 arch key2
 name Deposit Room 2 FWB - CDC Branch
-name_pl Deposit Room 2 FWB - CDC Branch
 slaying cdcfwbdr2
 x 2
 y 17
@@ -852,7 +844,6 @@ y 19
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 2
 y 19
 unique 1
@@ -863,7 +854,6 @@ y 20
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 2
 y 20
 unique 1
@@ -890,7 +880,6 @@ y 22
 end
 arch key2
 name Deposit Room 1 FWB - CDC Branch
-name_pl Deposit Room 1 FWB - CDC Branch
 slaying cdcfwbdr1
 x 2
 y 22
@@ -916,7 +905,6 @@ y 24
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 2
 y 24
 unique 1
@@ -927,7 +915,6 @@ y 25
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 2
 y 25
 unique 1
@@ -979,7 +966,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 2
 end
@@ -993,7 +979,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 3
 end
@@ -1007,7 +992,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 4
 end
@@ -1021,7 +1005,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 5
 end
@@ -1035,7 +1018,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 6
 end
@@ -1049,7 +1031,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 7
 end
@@ -1063,7 +1044,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 3
 y 8
 end
@@ -1144,7 +1124,6 @@ y 14
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 3
 y 14
 unique 1
@@ -1155,7 +1134,6 @@ y 15
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 3
 y 15
 unique 1
@@ -1209,7 +1187,6 @@ y 19
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 3
 y 19
 unique 1
@@ -1220,7 +1197,6 @@ y 20
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 3
 y 20
 unique 1
@@ -1274,7 +1250,6 @@ y 24
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 3
 y 24
 unique 1
@@ -1285,7 +1260,6 @@ y 25
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 3
 y 25
 unique 1
@@ -1343,7 +1317,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 2
 end
@@ -1357,7 +1330,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 3
 end
@@ -1371,7 +1343,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 4
 end
@@ -1385,7 +1356,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 5
 end
@@ -1399,7 +1369,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 6
 end
@@ -1413,7 +1382,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 7
 end
@@ -1427,7 +1395,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 4
 y 8
 end
@@ -1695,7 +1662,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 2
 end
@@ -1709,7 +1675,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 3
 end
@@ -1723,7 +1688,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 4
 end
@@ -1737,7 +1701,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 5
 end
@@ -1751,7 +1714,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 6
 end
@@ -1765,7 +1727,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 7
 end
@@ -1779,7 +1740,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 5
 y 8
 end
@@ -2002,7 +1962,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 6
 y 2
 end
@@ -2020,7 +1979,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 6
 y 3
 end
@@ -2034,7 +1992,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 6
 y 4
 end
@@ -2052,7 +2009,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 6
 y 5
 end
@@ -2363,7 +2319,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 7
 y 2
 end
@@ -2384,7 +2339,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 7
 y 3
 end
@@ -2405,7 +2359,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 7
 y 4
 end
@@ -2419,7 +2372,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 7
 y 5
 end
@@ -2449,7 +2401,6 @@ y 7
 end
 arch silver_converter
 name convert platinum coins into gold block bullion
-name_pl convert imperial notes into silver
 slaying platinacoin
 other_arch goldblock
 food 20000
@@ -2501,7 +2452,6 @@ y 11
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 7
 y 11
@@ -2509,7 +2459,6 @@ unique 1
 end
 arch key2
 name Master Key: Deposit Room 1 FWB - CDC Branch
-name_pl Master Key: Deposit Room 1 FWB - CDC Branch
 slaying mkcdcfwbdr1
 x 7
 y 11
@@ -2523,7 +2472,6 @@ y 12
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 7
 y 12
@@ -2531,7 +2479,6 @@ unique 1
 end
 arch key2
 name Master Key: Deposit Room 2 FWB - CDC Branch
-name_pl Master Key: Deposit Room 2 FWB - CDC Branch
 slaying mkcdcfwbdr2
 x 7
 y 12
@@ -2545,7 +2492,6 @@ y 13
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 7
 y 13
@@ -2553,7 +2499,6 @@ unique 1
 end
 arch key2
 name Master Key: Deposit Room 3 FWB - CDC Branch
-name_pl Master Key: Deposit Room 3 FWB - CDC Branch
 slaying mkcdcfwbdr3
 x 7
 y 13
@@ -2583,7 +2528,6 @@ y 15
 end
 arch key2
 name Deposit Room 5 FWB - CDC Branch
-name_pl Deposit Room 5 FWB - CDC Branch
 slaying windeproom5fwb
 x 7
 y 15
@@ -2680,7 +2624,6 @@ y 20
 end
 arch key2
 name Deposit Room 4 FWB - CDC Branch
-name_pl Deposit Room 4 FWB - CDC Branch
 slaying cdcfwbdr4
 x 7
 y 20
@@ -2706,7 +2649,6 @@ y 22
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 7
 y 22
 unique 1
@@ -2717,7 +2659,6 @@ y 23
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 7
 y 23
 unique 1
@@ -2789,7 +2730,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 8
 y 2
 end
@@ -2810,7 +2750,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 8
 y 3
 end
@@ -2831,7 +2770,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 8
 y 4
 end
@@ -2849,7 +2787,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 8
 y 5
 end
@@ -2922,7 +2859,6 @@ y 11
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 8
 y 11
@@ -2930,7 +2866,6 @@ unique 1
 end
 arch key2
 name Master Key: Deposit Room 7 FWB - CDC Branch
-name_pl Master Key: Deposit Room 7 FWB - CDC Branch
 slaying mkcdcfwbdr7
 x 8
 y 11
@@ -2944,7 +2879,6 @@ y 12
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 8
 y 12
@@ -2952,7 +2886,6 @@ unique 1
 end
 arch key2
 name Master Key: Deposit Room 6 FWB - CDC Branch
-name_pl Master Key: Deposit Room 6 FWB - CDC Branch
 slaying mkcdcfwbdr6
 x 8
 y 12
@@ -2966,7 +2899,6 @@ y 13
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 8
 y 13
@@ -2974,7 +2906,6 @@ unique 1
 end
 arch key2
 name Master Key: Deposit Room 4 FWB - CDC Branch
-name_pl Master Key: Deposit Room 4 FWB - CDC Branch
 slaying mkcdcfwbdr4
 x 8
 y 13
@@ -3101,7 +3032,6 @@ y 22
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 8
 y 22
 unique 1
@@ -3112,7 +3042,6 @@ y 23
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 8
 y 23
 unique 1
@@ -3184,7 +3113,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 9
 y 2
 end
@@ -3205,7 +3133,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 9
 y 3
 end
@@ -3226,7 +3153,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 9
 y 4
 end
@@ -3236,7 +3162,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 9
 y 5
 end
@@ -3266,7 +3191,6 @@ y 7
 end
 arch identify_table
 name Bank Appraisals: 5 gold
-name_pl Bank Appraisals: 5 gold
 food 50
 x 9
 y 7
@@ -3309,7 +3233,6 @@ y 11
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 9
 y 11
@@ -3325,7 +3248,6 @@ y 12
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 9
 y 12
@@ -3337,7 +3259,6 @@ y 13
 end
 arch flagstone
 name floor
-name_pl floor
 face shop_empty.111
 x 9
 y 13
@@ -3345,7 +3266,6 @@ unique 1
 end
 arch key2
 name Master Key: Deposit Room 8 FWB - CDC Branch
-name_pl Master Key: Deposit Room 8 FWB - CDC Branch
 slaying mkcdcfwbdr8
 x 9
 y 13
@@ -3549,7 +3469,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 10
 y 2
 end
@@ -3567,7 +3486,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 10
 y 3
 end
@@ -3581,7 +3499,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 10
 y 4
 end
@@ -3599,7 +3516,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 10
 y 5
 end
@@ -3645,7 +3561,6 @@ y 8
 end
 arch grate_closed_2
 name depository door
-name_pl depository door
 x 10
 y 8
 speed 0.500000
@@ -3867,7 +3782,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 2
 end
@@ -3882,7 +3796,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 3
 end
@@ -3897,7 +3810,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 4
 end
@@ -3912,7 +3824,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 5
 end
@@ -3938,7 +3849,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 6
 end
@@ -3964,7 +3874,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 7
 end
@@ -3978,7 +3887,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 11
 y 8
 end
@@ -4209,7 +4117,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 2
 end
@@ -4224,7 +4131,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 3
 end
@@ -4239,7 +4145,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 4
 end
@@ -4254,7 +4159,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 5
 end
@@ -4280,7 +4184,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 6
 end
@@ -4306,7 +4209,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 7
 end
@@ -4320,7 +4222,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 12
 y 8
 end
@@ -4584,7 +4485,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 2
 end
@@ -4599,7 +4499,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 3
 end
@@ -4614,7 +4513,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 4
 end
@@ -4629,7 +4527,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 5
 end
@@ -4644,7 +4541,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 6
 end
@@ -4659,7 +4555,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 7
 end
@@ -4673,7 +4568,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 13
 y 8
 end
@@ -4683,12 +4577,10 @@ y 8
 end
 arch key2
 name FWB 2000 Diamond Note
-name_pl FWB 2000 Diamond Notes
 slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
-Redeemable for 2000 diamonds at any
-First World Bank diamond exchange
+Redeemable for 2000 diamonds at any First World Bank diamond exchange.
 endmsg
 face card.111
 x 13
@@ -4771,7 +4663,6 @@ y 14
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 13
 y 14
 unique 1
@@ -4782,7 +4673,6 @@ y 15
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 13
 y 15
 unique 1
@@ -4836,7 +4726,6 @@ y 19
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 13
 y 19
 unique 1
@@ -4847,7 +4736,6 @@ y 20
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 13
 y 20
 unique 1
@@ -4901,7 +4789,6 @@ y 24
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 13
 y 24
 unique 1
@@ -4912,7 +4799,6 @@ y 25
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 13
 y 25
 unique 1
@@ -4964,7 +4850,6 @@ y 2
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 2
 end
@@ -4979,7 +4864,6 @@ y 3
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 3
 end
@@ -4994,7 +4878,6 @@ y 4
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 4
 end
@@ -5009,7 +4892,6 @@ y 5
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 5
 end
@@ -5024,7 +4906,6 @@ y 6
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 6
 end
@@ -5039,7 +4920,6 @@ y 7
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 7
 end
@@ -5053,7 +4933,6 @@ y 8
 end
 arch cobblestones2
 name depository floor
-name_pl depository floor
 x 14
 y 8
 end
@@ -5112,7 +4991,6 @@ y 12
 end
 arch key2
 name Deposit Room 8 FWB - CDC Branch
-name_pl Deposit Room 8 FWB - CDC Branch
 slaying cdcfwbdr8
 x 14
 y 12
@@ -5138,7 +5016,6 @@ y 14
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 14
 y 14
 unique 1
@@ -5149,7 +5026,6 @@ y 15
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 14
 y 15
 unique 1
@@ -5176,7 +5052,6 @@ y 17
 end
 arch key2
 name Deposit Room 7 FWB - CDC Branch
-name_pl Deposit Room 7 FWB - CDC Branch
 slaying cdcfwbdr7
 x 14
 y 17
@@ -5202,7 +5077,6 @@ y 19
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 14
 y 19
 unique 1
@@ -5213,7 +5087,6 @@ y 20
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 14
 y 20
 unique 1
@@ -5240,7 +5113,6 @@ y 22
 end
 arch key2
 name Deposit Room 6 FWB - CDC Branch
-name_pl Deposit Room 6 FWB - CDC Branch
 slaying cdcfwbdr6
 x 14
 y 22
@@ -5266,7 +5138,6 @@ y 24
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 14
 y 24
 unique 1
@@ -5277,7 +5148,6 @@ y 25
 end
 arch cobblestones2
 name deposit room floor
-name_pl deposit room floor
 x 14
 y 25
 unique 1

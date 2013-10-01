@@ -1,23 +1,21 @@
 arch map
 name City de Clouds Real Estate INC.
 reset_timeout 7200
-difficulty 1
+difficulty 3
 region citydeclouds
 width 25
 height 25
-enter_x 1
-enter_y 1
+enter_x 17
+enter_y 3
 msg
-Creator: Mikeeusa
-Email: gnu@foo.bar
-Date: Tue Aug  3 02:21:40 2004
+Created:  2004-08-03 Mikeeusa
+Modified: 2012-02-10 Rick Tanner
 endmsg
 end
 arch dungeon_magic
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 end
 arch woodwall_2_2_2
 end
@@ -26,7 +24,6 @@ y 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 1
 end
 arch woodwall_2_1_1
@@ -37,7 +34,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 2
 end
 arch woodwall_2_1_1
@@ -48,7 +44,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 3
 end
 arch woodwall_2_1_1
@@ -59,7 +54,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 4
 end
 arch woodwall_3_2
@@ -70,7 +64,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 5
 end
 arch woodwall_2_1_1
@@ -81,7 +74,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 6
 end
 arch swall_2_2_2
@@ -95,7 +87,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 7
 end
 arch woodwall_2_1_1
@@ -106,7 +97,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 8
 end
 arch swall_2_2_2
@@ -120,7 +110,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 9
 end
 arch woodwall_2_1_1
@@ -134,7 +123,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 10
 end
 arch swall_2_2_2
@@ -148,7 +136,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 11
 end
 arch woodwall_2_1_1
@@ -159,7 +146,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 y 12
 end
 arch woodwall_2_2_1
@@ -167,86 +153,74 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -254,7 +228,6 @@ x 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 end
 arch woodwall_2_1_2
@@ -325,7 +298,6 @@ unique 1
 end
 arch key2
 name Town Haus 1 Key
-name_pl Lot 1 Key
 slaying cwdctownhauskey1
 face key_blue.111
 x 1
@@ -355,7 +327,6 @@ unique 1
 end
 arch key2
 name Town Haus 2 Key
-name_pl Lot 1 Key
 slaying cwdctownhauskey2
 face key_blue.111
 x 1
@@ -385,7 +356,6 @@ unique 1
 end
 arch key2
 name Town Haus 3 Key
-name_pl Lot 1 Key
 slaying cwdctownhauskey3
 face key_blue.111
 x 1
@@ -415,7 +385,6 @@ unique 1
 end
 arch key2
 name Town Haus 4 Key
-name_pl Lot 1 Key
 slaying cwdctownhauskey4
 face key_blue.111
 x 1
@@ -428,7 +397,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 1
 y 12
 end
@@ -438,98 +406,86 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -537,7 +493,6 @@ x 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 end
 arch woodwall_2_1_2
@@ -603,7 +558,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 5
 end
@@ -631,7 +585,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 7
 end
@@ -659,7 +612,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 9
 end
@@ -701,7 +653,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 12
 end
@@ -711,26 +662,23 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -739,74 +687,65 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -814,7 +753,6 @@ x 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 end
 arch woodwall_2_1_2
@@ -868,7 +806,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 4
 end
@@ -886,7 +823,6 @@ y 5
 end
 arch goldfloor
 name Town Haus 1: 32000 Diamonds
-name_pl Lot 5: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -902,7 +838,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 6
 end
@@ -916,7 +851,6 @@ y 7
 end
 arch goldfloor
 name Town Haus 2: 32000 Diamonds
-name_pl Lot 5: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -932,7 +866,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 8
 end
@@ -946,7 +879,6 @@ y 9
 end
 arch goldfloor
 name Town Haus 3: 32000 Diamonds
-name_pl Lot 5: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -962,7 +894,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 10
 end
@@ -976,7 +907,6 @@ y 11
 end
 arch goldfloor
 name Town Haus 4: 32000 Diamonds
-name_pl Lot 5: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -992,7 +922,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 12
 end
@@ -1002,98 +931,86 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -1105,7 +1022,6 @@ x 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 end
 arch woodwall_2_1_2
@@ -1165,7 +1081,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 5
 end
@@ -1183,7 +1098,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 7
 end
@@ -1201,7 +1115,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 9
 end
@@ -1227,7 +1140,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 12
 end
@@ -1237,98 +1149,86 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -1336,7 +1236,6 @@ x 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 end
 arch woodwall_3_3
@@ -1355,6 +1254,7 @@ x 5
 y 1
 end
 arch locked_door2
+slaying novalue
 face ldoor_white2.111
 x 5
 y 1
@@ -1365,7 +1265,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 2
 end
@@ -1391,7 +1290,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 4
 end
@@ -1413,7 +1311,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 6
 end
@@ -1435,7 +1332,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 8
 end
@@ -1453,7 +1349,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 10
 end
@@ -1471,7 +1366,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 12
 end
@@ -1481,98 +1375,86 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 5
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -1580,7 +1462,6 @@ x 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 end
 arch woodwall_2_1_2
@@ -1605,7 +1486,7 @@ end
 arch longtable_1_4
 x 6
 y 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1613,7 +1494,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 3
 end
@@ -1631,7 +1511,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 5
 end
@@ -1649,7 +1528,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 7
 end
@@ -1667,7 +1545,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 9
 end
@@ -1701,7 +1578,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 12
 end
@@ -1715,18 +1591,16 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -1735,82 +1609,72 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 6
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -1818,7 +1682,6 @@ x 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 end
 arch woodwall_2_1_2
@@ -1838,14 +1701,13 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 2
 end
 arch longtable_2_1_2
 x 7
 y 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 7
@@ -1861,7 +1723,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 4
 end
@@ -1879,7 +1740,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 6
 end
@@ -1897,7 +1757,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 8
 end
@@ -1911,10 +1770,9 @@ y 9
 end
 arch goldfloor
 name Lot 1: 1500 Diamonds
-name_pl Lot 1: 1500 Diamonds
 slaying gem
 msg
-Cha Ching
+Cha Ching!
 endmsg
 food 1500
 x 7
@@ -1927,7 +1785,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 10
 end
@@ -1948,7 +1805,6 @@ unique 1
 end
 arch key2
 name Lot 1 Key
-name_pl Lot 1 Key
 slaying cdcwlot1key
 face key_blue.111
 x 7
@@ -1961,7 +1817,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 12
 end
@@ -1975,66 +1830,58 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -2043,34 +1890,30 @@ y 20
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2078,7 +1921,6 @@ x 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 end
 arch woodwall_2_1_2
@@ -2103,7 +1945,7 @@ end
 arch longtable_2_1_2
 x 8
 y 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 8
@@ -2111,7 +1953,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 3
 end
@@ -2129,7 +1970,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 5
 end
@@ -2147,7 +1987,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 7
 end
@@ -2165,7 +2004,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 9
 end
@@ -2199,7 +2037,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 12
 end
@@ -2213,98 +2050,86 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2312,7 +2137,6 @@ x 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 end
 arch woodwall_2_1_2
@@ -2332,14 +2156,13 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 2
 end
 arch longtable_2_1_2
 x 9
 y 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 9
@@ -2355,7 +2178,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 4
 end
@@ -2377,7 +2199,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 6
 end
@@ -2395,7 +2216,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 8
 end
@@ -2409,7 +2229,6 @@ y 9
 end
 arch goldfloor
 name Lot 2: 1500 Diamonds
-name_pl Lot 2: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -2425,7 +2244,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 10
 end
@@ -2446,7 +2264,6 @@ unique 1
 end
 arch key2
 name Lot 2 Key
-name_pl Lot 1 Key
 slaying cdcwlot2key
 face key_blue.111
 x 9
@@ -2459,7 +2276,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 12
 end
@@ -2473,34 +2289,30 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -2509,66 +2321,58 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2576,7 +2380,6 @@ x 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 end
 arch woodwall_2_1_2
@@ -2592,11 +2395,9 @@ y 1
 end
 arch pirate
 name Al the Real Estate Broker
-name_pl Al the Real Estate Broker
 msg
 @match *
-Hello, we have a wide selection of
-properties to choose from.
+Hello, we have a wide selection of properties to choose from.
 endmsg
 x 10
 y 1
@@ -2612,7 +2413,7 @@ end
 arch longtable_2_1_2
 x 10
 y 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -2620,7 +2421,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 3
 end
@@ -2638,7 +2438,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 5
 end
@@ -2656,7 +2455,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 7
 end
@@ -2674,7 +2472,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 9
 end
@@ -2708,7 +2505,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 12
 end
@@ -2722,98 +2518,86 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 10
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2821,7 +2605,6 @@ x 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 end
 arch woodwall_2_1_2
@@ -2838,7 +2621,7 @@ end
 arch longtable_1_1
 x 11
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -2846,14 +2629,13 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 2
 end
 arch longtable_2_2_4
 x 11
 y 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -2869,7 +2651,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 4
 end
@@ -2887,7 +2668,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 6
 end
@@ -2905,7 +2685,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 8
 end
@@ -2919,7 +2698,6 @@ y 9
 end
 arch goldfloor
 name Lot 3: 1500 Diamonds
-name_pl Lot 3: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -2935,7 +2713,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 10
 end
@@ -2956,7 +2733,6 @@ unique 1
 end
 arch key2
 name Lot 3 Key
-name_pl Lot 1 Key
 slaying cdcwlot3key
 face key_blue.111
 x 11
@@ -2969,7 +2745,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 12
 end
@@ -2983,82 +2758,72 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -3067,18 +2832,16 @@ y 22
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -3086,7 +2849,6 @@ x 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 end
 arch woodwall_2_1_2
@@ -3114,7 +2876,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 3
 end
@@ -3132,7 +2893,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 5
 end
@@ -3150,7 +2910,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 7
 end
@@ -3168,7 +2927,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 9
 end
@@ -3202,7 +2960,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 12
 end
@@ -3216,26 +2973,23 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -3244,74 +2998,65 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -3319,7 +3064,6 @@ x 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 end
 arch woodwall_2_1_2
@@ -3339,7 +3083,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 2
 end
@@ -3357,7 +3100,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 4
 end
@@ -3375,7 +3117,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 6
 end
@@ -3393,7 +3134,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 8
 end
@@ -3407,7 +3147,6 @@ y 9
 end
 arch goldfloor
 name Lot 4: 1500 Diamonds
-name_pl Lot 4: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -3423,7 +3162,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 10
 end
@@ -3444,7 +3182,6 @@ unique 1
 end
 arch key2
 name Lot 4 Key
-name_pl Lot 1 Key
 slaying cdcwlot4key
 face key_blue.111
 x 13
@@ -3457,7 +3194,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 12
 end
@@ -3471,98 +3207,86 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -3570,7 +3294,6 @@ x 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 end
 arch woodwall_2_1_2
@@ -3598,7 +3321,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 3
 end
@@ -3616,7 +3338,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 5
 end
@@ -3634,16 +3355,14 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 7
 end
 arch woman
 name Al's Daughter
-name_pl Al's Daughter
 msg
 @match *
-I love flower
+I love flowers.
 endmsg
 x 14
 y 7
@@ -3662,7 +3381,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 9
 end
@@ -3696,7 +3414,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 12
 end
@@ -3710,98 +3427,86 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -3809,7 +3514,6 @@ x 15
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 end
 arch woodwall_2_1_2
@@ -3849,12 +3553,8 @@ y 4
 end
 arch sign
 name CDC Cloud Real Estate INC.
-name_pl CDC Cloud Real Estate INC.
 msg
-Welcome to the office of
-CDC Cloud Real Estate INC.
-Here we will help you find
-the place for your home.
+Welcome to the office of CDC Cloud Real Estate INC. Here we will help you find the place for your home.
 endmsg
 x 15
 y 4
@@ -3901,7 +3601,6 @@ y 9
 end
 arch goldfloor
 name Lot 5: 1500 Diamonds
-name_pl Lot 5: 1500 Diamonds
 slaying gem
 msg
 Cha Ching!
@@ -3936,7 +3635,6 @@ unique 1
 end
 arch key2
 name Lot 5 Key
-name_pl Lot 1 Key
 slaying cdcwlot5key
 face key_blue.111
 x 15
@@ -3949,7 +3647,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 12
 end
@@ -3959,66 +3656,58 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -4027,34 +3716,30 @@ y 20
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4062,7 +3747,6 @@ x 16
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 end
 arch woodwall_2_2_3
@@ -4074,7 +3758,6 @@ y 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 1
 end
@@ -4092,7 +3775,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 2
 end
@@ -4110,7 +3792,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 3
 end
@@ -4120,7 +3801,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 4
 end
@@ -4130,7 +3810,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 5
 end
@@ -4140,7 +3819,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 6
 end
@@ -4158,7 +3836,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 7
 end
@@ -4176,7 +3853,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 8
 end
@@ -4190,7 +3866,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 9
 end
@@ -4204,7 +3879,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 10
 end
@@ -4218,7 +3892,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 11
 end
@@ -4232,7 +3905,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 16
 y 12
 end
@@ -4242,98 +3914,86 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4341,9 +4001,8 @@ x 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4352,10 +4011,9 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4364,7 +4022,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 2
 end
@@ -4382,7 +4039,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 3
 end
@@ -4399,7 +4055,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 4
 end
@@ -4409,7 +4064,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 5
 end
@@ -4426,7 +4080,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 17
 y 6
 end
@@ -4444,10 +4097,9 @@ y 7
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4456,10 +4108,9 @@ y 8
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4468,10 +4119,9 @@ y 9
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4480,10 +4130,9 @@ y 10
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4492,10 +4141,9 @@ y 11
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4504,106 +4152,93 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4611,9 +4246,8 @@ x 18
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4622,10 +4256,9 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4634,7 +4267,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 2
 end
@@ -4652,7 +4284,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 3
 end
@@ -4670,7 +4301,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 4
 end
@@ -4688,7 +4318,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 5
 end
@@ -4706,7 +4335,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 18
 y 6
 end
@@ -4724,10 +4352,9 @@ y 7
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4736,10 +4363,9 @@ y 8
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4748,10 +4374,9 @@ y 9
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -4764,10 +4389,9 @@ y 10
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4776,10 +4400,9 @@ y 11
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -4788,241 +4411,211 @@ y 12
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -5031,121 +4624,106 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -5154,138 +4732,121 @@ y 6
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -5294,121 +4855,106 @@ y 23
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -5417,34 +4963,30 @@ y 13
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -5453,73 +4995,64 @@ y 17
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 21
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -5528,273 +5061,239 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 22
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -5803,312 +5302,273 @@ y 10
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 23
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 21
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 22
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 23
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 24
 y 24
-no_pass 0
+move_block 0
 blocksview 0
 end
