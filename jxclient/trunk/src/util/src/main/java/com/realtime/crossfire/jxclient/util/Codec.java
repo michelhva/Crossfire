@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2011 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.settings;
+package com.realtime.crossfire.jxclient.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

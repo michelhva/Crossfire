@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.settings;
 
+import com.realtime.crossfire.jxclient.util.Codec;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.io.BufferedWriter;
 import java.io.File;
