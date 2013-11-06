@@ -5,10 +5,11 @@ region portjoseph
 darkness 5
 width 16
 height 16
+enter_x 7
+enter_y 14
 msg
-Creator: langley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Jun 11 16:47:30 1994
+Created:  1994-06-11 langley (langley@fermat.dartmouth.edu)
+Modified: 2012-06-15 Nicolas Weeger
 endmsg
 end
 arch dungeon_floor
@@ -757,10 +758,7 @@ arch locked_door1
 name pirate's door
 slaying mooglybill
 msg
-The keyhole has a skull shape.
-On the door is written
-`Moogly Bill's.  Leave now
-or death will find ye.'
+The keyhole has a skull shape.  On the door is written `Moogly Bill's.  Leave now or death will find ye.'
 endmsg
 x 6
 y 10
@@ -809,6 +807,10 @@ x 7
 y 1
 value 1000
 weight 20000
+arch quest_advance_pickup
+name port_joseph/MooglyBill 0-60>70
+unique 1
+end
 end
 arch dungeon_floor
 x 7

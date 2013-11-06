@@ -1,11 +1,14 @@
 arch map
-name Goblin Fortress
-difficulty 1
+name Goblin Fortress, Entrance
+difficulty 6
 region portjoseph
 width 24
 height 24
+enter_x 14
+enter_y 21
 msg
 Created:  1994-07-22 langley (langley@fermat.dartmouth.edu)
+Modified: 2011-11-22 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -2120,12 +2123,10 @@ end
 arch ogre
 name Big guy
 msg
-@match king|King
-Yes, king!  All the treasure is mine!
-You will never find it!
+@match king
+Yes, king!  All the treasure is mine! You will never find it!
 @match treasure
-My treasure!  It is hidden deep in the
-dungeons.  Only I have the key!
+My treasure!  It is hidden deep in the dungeons.  Only I have the key!
 @match *
 I am the king here!  Get out!
 endmsg

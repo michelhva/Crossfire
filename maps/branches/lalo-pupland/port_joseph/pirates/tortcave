@@ -1,53 +1,54 @@
 arch map
 name Treasure Cave
-difficulty 1
+difficulty 10
 region portjoseph
 darkness 5
 width 11
 height 9
+enter_x 9
+enter_y 4
 msg
-Creator: larry langley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Jun 11 15:30:02 1994
+Created:  1994-06-11 larry langley (langley@fermat.dartmouth.edu)
+Modified: 2012-06-15 Nicolas Weeger
 endmsg
 end
-arch blocked
+arch dun33
 end
-arch blocked
+arch dun33
 y 1
 end
-arch blocked
+arch dun33
 y 2
 end
-arch blocked
+arch dun33
 y 3
 end
-arch blocked
+arch dun33
 y 4
 end
-arch blocked
+arch dun33
 y 5
 end
-arch blocked
+arch dun33
 y 6
 end
-arch blocked
+arch dun33
 y 7
 end
-arch blocked
+arch dun33
 y 8
 end
 arch dungeon_floor
 x 1
 end
-arch cave_6
+arch dun24
 x 1
 end
 arch dungeon_floor
 x 1
 y 1
 end
-arch cave_2
+arch dun20
 x 1
 y 1
 end
@@ -88,10 +89,7 @@ y 6
 end
 arch magic_mouth
 msg
-The walls of this niche are smooth
-as glass.  There is a small hole cut
-in the floor, shaped for a crystal
-of some kind
+The walls of this niche are smooth as glass.  There is a small hole cut in the floor, shaped for a crystal of some kind.
 endmsg
 x 1
 y 7
@@ -107,7 +105,7 @@ arch cobblestones
 x 1
 y 7
 end
-arch blocked
+arch dun33
 x 1
 y 8
 end
@@ -125,7 +123,7 @@ arch dungeon_floor
 x 2
 y 2
 end
-arch cave_7
+arch dun25
 x 2
 y 2
 end
@@ -141,7 +139,7 @@ arch dungeon_floor
 x 2
 y 4
 end
-arch cave_11
+arch dun29
 x 2
 y 4
 end
@@ -153,15 +151,19 @@ arch dungeon_floor
 x 2
 y 6
 end
-arch cave_14
+arch dun32
 x 2
 y 6
+end
+arch cobblestones
+x 2
+y 7
 end
 arch dun3
 x 2
 y 7
 end
-arch blocked
+arch dun33
 x 2
 y 8
 end
@@ -181,6 +183,9 @@ hp 5
 sp 7
 x 3
 y 1
+arch quest_advance_apply
+name port_joseph/MooglyBill 0-50>60
+end
 end
 arch dungeon_floor
 x 3
@@ -192,9 +197,7 @@ y 2
 end
 arch magic_mouth
 msg
-This niche is decorated with an
-aquatic scene.  On the floor is carved
-a large oyster, open faced
+This niche is decorated with an aquatic scene.  On the floor is carved a large oyster, open faced.
 endmsg
 x 3
 y 3
@@ -224,10 +227,7 @@ y 6
 end
 arch magic_mouth
 msg
-This niche is decorated with firey
-inscriptions.  In the floor is a
-charcoal smeared bowl shaped
-indentation
+This niche is decorated with firey inscriptions.  In the floor is a charcoal smeared bowl shaped indentation.
 endmsg
 x 3
 y 7
@@ -243,7 +243,7 @@ arch cobblestones
 x 3
 y 7
 end
-arch blocked
+arch dun33
 x 3
 y 8
 end
@@ -281,7 +281,7 @@ arch dungeon_floor
 x 4
 y 4
 end
-arch cave_11
+arch dun29
 x 4
 y 4
 end
@@ -298,22 +298,26 @@ arch dungeon_floor
 x 4
 y 6
 end
-arch cave_7
+arch dun25
 x 4
 y 6
+end
+arch cobblestones
+x 4
+y 7
 end
 arch dun3
 x 4
 y 7
 end
-arch blocked
+arch dun33
 x 4
 y 8
 end
-arch blocked
+arch dun33
 x 5
 end
-arch blocked
+arch dun33
 x 5
 y 1
 end
@@ -350,22 +354,22 @@ arch small_troll
 x 5
 y 5
 end
-arch blocked
+arch dun33
 x 5
 y 6
 end
-arch blocked
+arch dun33
 x 5
 y 7
 end
-arch blocked
+arch dun33
 x 5
 y 8
 end
-arch blocked
+arch dun33
 x 6
 end
-arch blocked
+arch dun33
 x 6
 y 1
 end
@@ -401,22 +405,22 @@ arch pstone_2
 x 6
 y 6
 end
-arch cave_8
+arch dun26
 x 6
 y 6
 end
-arch blocked
+arch dun33
 x 6
 y 7
 end
-arch blocked
+arch dun33
 x 6
 y 8
 end
-arch blocked
+arch dun33
 x 7
 end
-arch blocked
+arch dun33
 x 7
 y 1
 end
@@ -452,18 +456,18 @@ arch random_food
 x 7
 y 6
 end
-arch blocked
+arch dun33
 x 7
 y 7
 end
-arch blocked
+arch dun33
 x 7
 y 8
 end
-arch blocked
+arch dun33
 x 8
 end
-arch blocked
+arch dun33
 x 8
 y 1
 end
@@ -496,18 +500,18 @@ x 8
 y 6
 speed_left -1.060000
 end
-arch blocked
+arch dun33
 x 8
 y 7
 end
-arch blocked
+arch dun33
 x 8
 y 8
 end
-arch blocked
+arch dun33
 x 9
 end
-arch blocked
+arch dun33
 x 9
 y 1
 end
@@ -523,7 +527,7 @@ arch pstone_2
 x 9
 y 3
 end
-arch cave_9
+arch dun27
 x 9
 y 3
 end
@@ -535,7 +539,7 @@ arch pstone_2
 x 9
 y 5
 end
-arch cave_7
+arch dun25
 x 9
 y 5
 end
@@ -547,22 +551,22 @@ arch dun3
 x 9
 y 6
 end
-arch blocked
+arch dun33
 x 9
 y 7
 end
-arch blocked
+arch dun33
 x 9
 y 8
 end
-arch blocked
+arch dun33
 x 10
 end
-arch blocked
+arch dun33
 x 10
 y 1
 end
-arch blocked
+arch dun33
 x 10
 y 2
 end
@@ -570,7 +574,7 @@ arch pstone_2
 x 10
 y 3
 end
-arch cave_13
+arch dun31
 x 10
 y 3
 end
@@ -589,19 +593,19 @@ arch pstone_2
 x 10
 y 5
 end
-arch cave_13
+arch dun31
 x 10
 y 5
 end
-arch blocked
+arch dun33
 x 10
 y 6
 end
-arch blocked
+arch dun33
 x 10
 y 7
 end
-arch blocked
+arch dun33
 x 10
 y 8
 end
