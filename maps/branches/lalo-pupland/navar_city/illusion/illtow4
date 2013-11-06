@@ -1,11 +1,14 @@
 arch map
-name Tower of Illusion
-difficulty 1
+name Tower of Illusion, 4th Level
+difficulty 12
 region navar
 width 20
 height 20
+enter_x 1
+enter_y 1
 msg
 Created:  1993-11-10
+Modified: 2012-02-15 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -173,7 +176,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -191,7 +194,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -209,7 +212,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -445,7 +448,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -506,7 +509,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -540,7 +543,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -566,7 +569,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -588,7 +591,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -681,7 +684,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -699,7 +702,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -759,7 +762,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -793,7 +796,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -819,7 +822,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -875,7 +878,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -933,7 +936,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -997,7 +1000,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1031,7 +1034,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1065,7 +1068,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1091,7 +1094,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1175,7 +1178,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1205,7 +1208,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1265,7 +1268,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1295,7 +1298,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1313,7 +1316,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1385,7 +1388,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1419,7 +1422,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1519,7 +1522,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1537,7 +1540,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1571,7 +1574,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1589,7 +1592,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1607,7 +1610,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1671,7 +1674,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1706,7 +1709,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1724,7 +1727,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1742,7 +1745,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1806,7 +1809,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1841,7 +1844,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -1945,7 +1948,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-You will die....you will die
+You will die....you will die!
 endmsg
 sp 70
 maxsp 70
@@ -2123,7 +2126,7 @@ end
 arch wall_2_1_1
 x 17
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 17
@@ -2374,8 +2377,7 @@ end
 arch dwarf_wiz
 msg
 @match *
-AHAAHAHAHAHHAAH I must kill you to
-stop you!!!!!!
+AHAAHAHAHAHHAAH I must kill you to stop you!!!!!!
 endmsg
 Wis 15
 hp 80

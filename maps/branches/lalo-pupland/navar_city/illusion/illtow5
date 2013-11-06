@@ -1,11 +1,14 @@
 arch map
-name Tower of Illusion
-difficulty 1
+name Tower of Illusion, 5th Level
+difficulty 15
 region navar
 width 36
 height 19
+enter_x 1
+enter_y 9
 msg
 Created:  1993-11-15
+Modified: 2012-02-15 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -3235,8 +3238,7 @@ arch sign
 msg
 One way leads to life...
 One way leads to death...
-Stand before the gates and say the
-color gate you want open...
+Stand before the gates and say the color gate you want open...
 The trees know the true way..
 endmsg
 x 31
@@ -3428,8 +3430,7 @@ end
 arch ent
 msg
 @match *
-RED LEADS TO DEATH
-BLACK LEADS TO LIFE
+RED LEADS TO DEATH, BLACK LEADS TO LIFE.
 endmsg
 x 33
 y 1
@@ -3532,8 +3533,7 @@ end
 arch ent
 msg
 @match *
-RED LEADS TO DEATH
-BLACK LEADS TO LIFE
+RED LEADS TO DEATH, BLACK LEADS TO LIFE.
 endmsg
 sp 50
 maxsp 50

@@ -1,17 +1,16 @@
 arch map
-name Zealot House
+name Zealot House, Downstairs
 reset_timeout 7200
-difficulty 1
+difficulty 20
 region navar
 darkness 3
-width 32
-height 32
-enter_x 1
-enter_y 1
+width 26
+height 20
+enter_x 6
+enter_y 12
 msg
-Creator: mikeeusa
-Email: gnu@foo.bar
-Date: Mon Jul 26 18:50:41 2004
+Created:  2004-02-26 mikeeusa
+Modified: 2012-02-17 Rick Tanner
 endmsg
 end
 arch blocked
@@ -947,7 +946,6 @@ y 6
 end
 arch mastif
 name weakened test mastif
-name_pl weakened test mastif
 hp 50
 x 13
 y 6
@@ -986,7 +984,6 @@ y 10
 end
 arch water
 name helium
-name_pl helium
 title of the wise
 x 13
 y 10
@@ -1038,7 +1035,6 @@ y 17
 end
 arch lightningwall_3
 name motified cannon
-name_pl motified cannon
 face cannon_0.111
 x 13
 y 17
@@ -1061,22 +1057,22 @@ arch blocked
 x 13
 y 19
 end
-arch blocked
+arch cave_15
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 2
 end
-arch blocked
+arch cave_15
 x 14
 y 3
 end
-arch blocked
+arch cave_15
 x 14
 y 4
 end
@@ -1138,7 +1134,6 @@ y 10
 end
 arch water
 name neon
-name_pl neon
 title of the wise
 x 14
 y 10
@@ -1222,7 +1217,7 @@ arch cave23
 x 15
 y 3
 end
-arch blocked
+arch cave_15
 x 15
 y 4
 end
@@ -1272,7 +1267,6 @@ y 10
 end
 arch water
 name krypton
-name_pl krypton
 title of the wise
 x 15
 y 10
@@ -1288,7 +1282,6 @@ y 11
 end
 arch water
 name xenon
-name_pl xenon
 title of the wise
 x 15
 y 11
@@ -1304,7 +1297,6 @@ y 12
 end
 arch water
 name radon
-name_pl radon
 title of the wise
 x 15
 y 12
@@ -1380,7 +1372,7 @@ arch cave2
 x 16
 y 3
 end
-arch blocked
+arch cave_15
 x 16
 y 4
 end
@@ -1398,7 +1390,6 @@ y 6
 end
 arch dog
 name test dog
-name_pl test dog
 x 16
 y 6
 end
@@ -1786,7 +1777,6 @@ y 2
 end
 arch dog
 name weakened test dog
-name_pl weakened test dog
 hp 2
 x 19
 y 2
@@ -1821,7 +1811,7 @@ y 6
 end
 arch sign_w
 msg
-Testing Roo
+Testing Room.
 endmsg
 x 19
 y 6
@@ -1832,7 +1822,6 @@ y 7
 end
 arch pup
 name test pup
-name_pl test pup
 x 19
 y 7
 end
@@ -1846,7 +1835,6 @@ y 9
 end
 arch dog
 name test dog
-name_pl test dog
 x 19
 y 9
 end
@@ -1860,7 +1848,6 @@ y 11
 end
 arch pup
 name test pup
-name_pl test pup
 x 19
 y 11
 end
@@ -1874,7 +1861,6 @@ y 13
 end
 arch dog
 name test dog
-name_pl test dog
 x 19
 y 13
 end
@@ -1932,7 +1918,7 @@ arch cave2
 x 20
 y 3
 end
-arch blocked
+arch cave_15
 x 20
 y 4
 end
@@ -1950,7 +1936,7 @@ y 6
 end
 arch bookshelf
 name heavy bookshelf
-name_pl heavy bookshelf
+name_pl heavy bookshelves
 x 20
 y 6
 arch random_reading
@@ -2060,7 +2046,7 @@ arch cave2
 x 21
 y 3
 end
-arch blocked
+arch cave_15
 x 21
 y 4
 end
@@ -2083,11 +2069,8 @@ carrying 67
 arch note
 msg
 To Do:
-1)Need one more noble gas.
-Used as password for tavern.
-Will inquire within.
+1)Need one more noble gas.  Used as password for tavern.  Will inquire within.
 2)Accure more nerve agents.
-
 endmsg
 end
 end
@@ -2117,7 +2100,6 @@ y 11
 end
 arch dog
 name test dog
-name_pl test dog
 x 21
 y 11
 end
@@ -2203,7 +2185,7 @@ arch cave22
 x 22
 y 3
 end
-arch blocked
+arch cave_15
 x 22
 y 4
 end
@@ -2257,7 +2239,6 @@ y 14
 end
 arch pup
 name test pup
-name_pl test pup
 x 22
 y 14
 end
@@ -2301,22 +2282,22 @@ arch blocked
 x 22
 y 19
 end
-arch blocked
+arch cave_15
 x 23
 end
-arch blocked
+arch cave_15
 x 23
 y 1
 end
-arch blocked
+arch cave_15
 x 23
 y 2
 end
-arch blocked
+arch cave_15
 x 23
 y 3
 end
-arch blocked
+arch cave_15
 x 23
 y 4
 end
@@ -2362,7 +2343,6 @@ y 9
 end
 arch water
 name Concentrated Nerve Agent
-name_pl Concentrated Nerve Agent
 x 23
 y 9
 value 40
@@ -2377,7 +2357,6 @@ y 10
 end
 arch water
 name Concentrated Nerve Agent
-name_pl Concentrated Nerve Agent
 x 23
 y 10
 value 40
@@ -2392,7 +2371,6 @@ y 11
 end
 arch water
 name Concentrated Nerve Agent
-name_pl Concentrated Nerve Agent
 x 23
 y 11
 value 40
@@ -2461,7 +2439,7 @@ arch blocked
 x 23
 y 19
 end
-arch blocked
+arch cave_15
 x 24
 y 4
 end

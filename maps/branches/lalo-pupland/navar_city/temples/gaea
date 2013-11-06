@@ -4,10 +4,11 @@ difficulty 1
 region navar
 width 40
 height 40
-enter_x 4
-enter_y 8
+enter_x 14
+enter_y 18
 msg
 Created:  2003-01-11 Avion
+Modified: 2012-02-19 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1138,7 +1139,7 @@ arch check_floor
 hp 1
 x 6
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1159,7 +1160,7 @@ arch check_floor
 hp 1
 x 6
 y 6
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1180,7 +1181,7 @@ arch check_floor
 hp 1
 x 6
 y 7
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1201,7 +1202,7 @@ arch check_floor
 hp 1
 x 6
 y 8
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1222,7 +1223,7 @@ arch check_floor
 hp 1
 x 6
 y 9
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1243,7 +1244,7 @@ arch check_floor
 hp 1
 x 6
 y 10
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1264,7 +1265,7 @@ arch check_floor
 hp 1
 x 6
 y 11
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1285,7 +1286,7 @@ arch check_floor
 hp 1
 x 6
 y 12
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1306,7 +1307,7 @@ arch check_floor
 hp 1
 x 6
 y 13
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1327,7 +1328,7 @@ arch check_floor
 hp 1
 x 6
 y 14
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1348,7 +1349,7 @@ arch check_floor
 hp 1
 x 6
 y 15
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1369,7 +1370,7 @@ arch check_floor
 hp 1
 x 6
 y 16
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1390,7 +1391,7 @@ arch check_floor
 hp 1
 x 6
 y 17
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1411,7 +1412,7 @@ arch check_floor
 hp 1
 x 6
 y 18
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1432,7 +1433,7 @@ arch check_floor
 hp 1
 x 6
 y 19
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1453,7 +1454,7 @@ arch check_floor
 hp 1
 x 6
 y 20
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1474,7 +1475,7 @@ arch check_floor
 hp 1
 x 6
 y 21
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1495,7 +1496,7 @@ arch check_floor
 hp 1
 x 6
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1616,7 +1617,7 @@ arch check_floor
 hp 1
 x 7
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 7
@@ -1702,7 +1703,7 @@ arch check_floor
 hp 1
 x 7
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 7
@@ -1816,7 +1817,7 @@ arch check_floor
 hp 1
 x 8
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 8
@@ -1905,7 +1906,7 @@ arch check_floor
 hp 1
 x 8
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 8
@@ -2024,7 +2025,7 @@ arch check_floor
 hp 1
 x 9
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 9
@@ -2115,7 +2116,7 @@ arch check_floor
 hp 1
 x 9
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 9
@@ -2230,7 +2231,7 @@ arch check_floor
 hp 1
 x 10
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 10
@@ -2321,7 +2322,7 @@ arch check_floor
 hp 1
 x 10
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 10
@@ -2443,7 +2444,7 @@ arch check_floor
 hp 1
 x 11
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 11
@@ -2544,7 +2545,7 @@ arch check_floor
 hp 1
 x 11
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 11
@@ -2663,7 +2664,7 @@ arch check_floor
 hp 1
 x 12
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 12
@@ -2763,7 +2764,7 @@ arch check_floor
 hp 1
 x 12
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 12
@@ -2881,7 +2882,7 @@ arch check_floor
 hp 1
 x 13
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 13
@@ -2934,9 +2935,7 @@ msg
 @match G | A
 It is a hypothetical cheer you silly...
 @match *
-I am celebrating Gaea.
-Gimme a G
-Gimme an A ...
+I am celebrating Gaea.  Gimme a G! Gimme an A ...
 endmsg
 x 13
 y 13
@@ -2990,7 +2989,7 @@ arch check_floor
 hp 1
 x 13
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 13
@@ -3106,7 +3105,7 @@ arch check_floor
 hp 1
 x 14
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 14
@@ -3197,7 +3196,7 @@ arch check_floor
 hp 1
 x 14
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 14
@@ -3313,7 +3312,7 @@ arch check_floor
 hp 1
 x 15
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 15
@@ -3404,7 +3403,7 @@ arch check_floor
 hp 1
 x 15
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 15
@@ -3518,7 +3517,7 @@ arch check_floor
 hp 1
 x 16
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 16
@@ -3610,7 +3609,7 @@ arch check_floor
 hp 1
 x 16
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 16
@@ -3723,7 +3722,7 @@ arch check_floor
 hp 1
 x 17
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 17
@@ -3819,7 +3818,7 @@ arch check_floor
 hp 1
 x 17
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 17
@@ -3939,7 +3938,7 @@ arch check_floor
 hp 1
 x 18
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 18
@@ -4033,7 +4032,7 @@ arch check_floor
 hp 1
 x 18
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 18
@@ -4146,7 +4145,7 @@ arch check_floor
 hp 1
 x 19
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 19
@@ -4252,7 +4251,7 @@ arch check_floor
 hp 1
 x 19
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 19
@@ -4368,7 +4367,7 @@ arch check_floor
 hp 1
 x 20
 y 5
-no_pass 1
+move_block all
 end
 arch brush
 x 20
@@ -4452,7 +4451,7 @@ arch check_floor
 hp 1
 x 20
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 20
@@ -4567,7 +4566,7 @@ arch check_floor
 hp 1
 x 21
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 21
@@ -4661,7 +4660,7 @@ arch check_floor
 hp 1
 x 21
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 21
@@ -4773,7 +4772,7 @@ arch check_floor
 hp 1
 x 22
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 22
@@ -4862,7 +4861,7 @@ arch check_floor
 hp 1
 x 22
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 22
@@ -4977,7 +4976,7 @@ arch check_floor
 hp 1
 x 23
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 23
@@ -5062,7 +5061,7 @@ arch check_floor
 hp 1
 x 23
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 23
@@ -5177,7 +5176,7 @@ arch check_floor
 hp 1
 x 24
 y 5
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5198,7 +5197,7 @@ arch check_floor
 hp 1
 x 24
 y 6
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5219,7 +5218,7 @@ arch check_floor
 hp 1
 x 24
 y 7
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5240,7 +5239,7 @@ arch check_floor
 hp 1
 x 24
 y 8
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5261,7 +5260,7 @@ arch check_floor
 hp 1
 x 24
 y 9
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5282,7 +5281,7 @@ arch check_floor
 hp 1
 x 24
 y 10
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5303,7 +5302,7 @@ arch check_floor
 hp 1
 x 24
 y 11
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5324,7 +5323,7 @@ arch check_floor
 hp 1
 x 24
 y 12
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5345,7 +5344,7 @@ arch check_floor
 hp 1
 x 24
 y 13
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5366,7 +5365,7 @@ arch check_floor
 hp 1
 x 24
 y 14
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5387,7 +5386,7 @@ arch check_floor
 hp 1
 x 24
 y 15
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5408,7 +5407,7 @@ arch check_floor
 hp 1
 x 24
 y 16
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5429,7 +5428,7 @@ arch check_floor
 hp 1
 x 24
 y 17
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5450,7 +5449,7 @@ arch check_floor
 hp 1
 x 24
 y 18
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5471,7 +5470,7 @@ arch check_floor
 hp 1
 x 24
 y 19
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5492,7 +5491,7 @@ arch check_floor
 hp 1
 x 24
 y 20
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5513,7 +5512,7 @@ arch check_floor
 hp 1
 x 24
 y 21
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -5534,7 +5533,7 @@ arch check_floor
 hp 1
 x 24
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 24

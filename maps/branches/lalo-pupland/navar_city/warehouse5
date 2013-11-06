@@ -1,11 +1,14 @@
 arch map
 name Warehouse #5
-difficulty 1
+difficulty 17
 region navar
 width 25
 height 21
+enter_x 24
+enter_y 9
 msg
 Created:  1993-11-15
+Modified: 2011-11-22 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -2132,7 +2135,7 @@ end
 arch sign
 msg
 DO NOT ENTER!!!
-Wyverns for transpor
+Wyverns for transport
 endmsg
 x 21
 y 8
@@ -2516,7 +2519,7 @@ arch woodfloor
 x 24
 y 9
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_122_116
 hp 17
 sp 43

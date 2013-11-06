@@ -1,15 +1,16 @@
 arch map
-name Civic Theater
+name Civic Theater, Lower Level 1
 reset_timeout 7200
-difficulty 1
+difficulty 65
 region navar
 darkness 2
 width 32
 height 32
-enter_x 1
-enter_y 1
+enter_x 2
+enter_y 29
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2011-11-17 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1594,7 +1595,7 @@ arch marble
 x 9
 y 3
 end
-arch cave19
+arch cave25
 x 9
 y 3
 end
@@ -1793,7 +1794,7 @@ arch marble
 x 10
 y 3
 end
-arch cave17
+arch cave23
 x 10
 y 3
 end
@@ -1801,7 +1802,7 @@ arch permanent_lava
 x 10
 y 4
 end
-arch cave19
+arch cave25
 x 10
 y 4
 end
@@ -2005,7 +2006,7 @@ arch marble
 x 11
 y 3
 end
-arch cave20
+arch cave22
 x 11
 y 3
 end
@@ -3359,7 +3360,7 @@ arch marble
 x 18
 y 3
 end
-arch cave17
+arch cave23
 x 18
 y 3
 end
@@ -3569,7 +3570,7 @@ arch marble
 x 19
 y 3
 end
-arch cave20
+arch cave22
 x 19
 y 3
 end
@@ -3751,7 +3752,7 @@ arch marble
 x 20
 y 3
 end
-arch cave18
+arch cave24
 x 20
 y 3
 end
@@ -4298,7 +4299,7 @@ end
 arch marble
 x 23
 end
-arch cave19
+arch cave25
 x 23
 end
 arch marble
@@ -5380,7 +5381,7 @@ arch marble
 x 28
 y 17
 end
-arch cave20
+arch cave22
 x 28
 y 17
 end

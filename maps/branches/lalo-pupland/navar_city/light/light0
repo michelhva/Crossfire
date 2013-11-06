@@ -1,12 +1,15 @@
 arch map
-name Lighthouse
-difficulty 1
+name Navar Lighthouse, Dungeon
+difficulty 10
 region navar
 darkness 4
 width 32
 height 28
+enter_x 13
+enter_y 9
 msg
 Created:  1993-11-12
+Modified: 2012-05-12 Nicolas Weeger
 endmsg
 end
 arch large_stones
@@ -1835,6 +1838,9 @@ hp 1
 sp 9
 x 7
 y 23
+arch quest_advance_trigger
+name navar/smugglers 40>50
+end
 end
 arch large_stones
 x 7

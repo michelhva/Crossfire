@@ -8,7 +8,8 @@ height 15
 enter_x 6
 enter_y 14
 msg
-Created:  2002-02-28
+Created:  2002-12-28
+Modified: 2013-07-18 Kevin Zheng
 endmsg
 end
 arch grass
@@ -628,9 +629,10 @@ y 10
 end
 arch platinum_converter
 name convert gold into bolts
-slaying goldcoin
+slaying money
 other_arch bolt
 sp 1
+food 10
 x 6
 y 10
 end
@@ -657,8 +659,7 @@ end
 arch sign
 name Tim the Bowyer
 msg
-Fell free to rent the facilities but stay out of my house!
-I'm sick of you people pestering me!
+Feel free to rent the facilities but stay out of my house! I'm sick of you people pestering me!
 endmsg
 x 6
 y 12
@@ -671,7 +672,7 @@ arch woodfloor2
 x 6
 y 14
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_116
 hp 14
 sp 43
@@ -871,13 +872,12 @@ endmsg
 food 504
 x 8
 y 13
-speed 1.0
 connected 10
 end
 arch altar_trigger
 name Drop 160 platinum to enter
-slaying platinacoin
-food 160
+slaying money
+food 8000
 x 8
 y 13
 connected 10
@@ -1001,6 +1001,10 @@ y 1
 end
 arch pixie
 name Tim
+msg
+@match *
+Get out of my house!
+endmsg
 x 10
 y 1
 sleep 0
@@ -1068,9 +1072,10 @@ y 10
 end
 arch platinum_converter
 name convert gold into arrows
-slaying goldcoin
+slaying money
 other_arch arrow
 sp 1
+food 10
 x 10
 y 10
 end

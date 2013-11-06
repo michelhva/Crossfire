@@ -1,10 +1,13 @@
 arch map
-name Prison
+name Navar Prison
+difficulty 10
 region navar
 width 26
 height 23
+enter_y 1
 msg
 Created:  1993-10-27
+Modified: 2013-07-18 Kevin Zheng
 endmsg
 end
 arch dungeon_floor
@@ -176,8 +179,7 @@ end
 arch prisoner
 msg
 @match *
-Please help me, I have no strenght
-left, I am truely innocent of my crime
+Please help me, I have no strength left, I am truely innocent of my crime.
 endmsg
 x 1
 y 5
@@ -197,8 +199,7 @@ end
 arch prisoner
 msg
 @match *
-Please help me, I have no strenght
-left, I am truely innocent of my crime
+Please help me, I have no strength left, I am truely innocent of my crime.
 endmsg
 x 1
 y 7
@@ -234,9 +235,7 @@ end
 arch prisoner
 msg
 @match *
-Please undo my bonds so that I might
-be free, I should have been let out
-long ago.
+Please undo my bonds so that I might be free, I should have been let out long ago.
 endmsg
 x 1
 y 13
@@ -453,8 +452,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 3
 y 5
@@ -484,8 +482,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 3
 y 8
@@ -523,8 +520,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 3
 y 12
@@ -562,8 +558,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 3
 y 16
@@ -729,7 +724,7 @@ y 1
 end
 arch magic_mouth
 msg
-HALT! Who goes there
+HALT! Who goes there?
 endmsg
 x 5
 y 2
@@ -737,9 +732,7 @@ end
 arch magic_ear
 msg
 @match *
-Ah, you must be here with the Prison
-inspection, come right in
-Click
+Ah, you must be here with the Prison inspection, come right in. *Click*
 endmsg
 x 5
 y 2
@@ -765,8 +758,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 5
 y 4
@@ -796,8 +788,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 5
 y 7
@@ -835,8 +826,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 5
 y 11
@@ -866,8 +856,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 5
 y 14
@@ -990,9 +979,7 @@ end
 arch prisoner
 msg
 @match *
-Please undo my bonds so that I might
-be free, I should have been let out
-long ago.
+Please undo my bonds so that I might be free, I should have been let out long ago.
 endmsg
 x 6
 y 9
@@ -1016,11 +1003,7 @@ end
 arch prisoner
 msg
 @match *
-Yea I did it, now I sit here for my
-crime...leave me be, and let me rot,
-that much I deserve for being in my
-drunken stupor and murdering that
-young lass.
+Yea I did it, now I sit here for my crime...leave me be, and let me rot, that much I deserve for being in my drunken stupor and murdering that young lass.
 endmsg
 x 6
 y 12
@@ -1316,8 +1299,7 @@ end
 arch prisoner
 msg
 @match *
-Please help me, I have no strenght
-left, I am truely innocent of my crime
+Please help me, I have no strength left, I am truely innocent of my crime.
 endmsg
 x 8
 y 8
@@ -1337,9 +1319,7 @@ end
 arch prisoner
 msg
 @match *
-Please undo my bonds so that I might
-be free, I should have been let out
-long ago.
+Please undo my bonds so that I might be free, I should have been let out long ago.
 endmsg
 x 8
 y 10
@@ -1371,8 +1351,7 @@ end
 arch prisoner
 msg
 @match *
-Please help me, I have no strenght
-left, I am truely innocent of my crime
+Please help me, I have no strength left, I am truely innocent of my crime.
 endmsg
 x 8
 y 15
@@ -1587,8 +1566,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 10
 y 7
@@ -1626,8 +1604,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 10
 y 11
@@ -1657,8 +1634,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 10
 y 14
@@ -2220,8 +2196,7 @@ end
 arch prisoner
 msg
 @match *
-Please help me, I have no strenght
-left, I am truely innocent of my crime
+Please help me, I have no strength left, I am truely innocent of my crime.
 endmsg
 x 14
 y 13
@@ -2261,9 +2236,7 @@ end
 arch prisoner
 msg
 @match *
-Please undo my bonds so that I might
-be free, I should have been let out
-long ago.
+Please undo my bonds so that I might be free, I should have been let out long ago.
 endmsg
 x 14
 y 19
@@ -2400,8 +2373,7 @@ arch locked_door1
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 15
 y 15
@@ -2423,7 +2395,7 @@ arch locked_door1
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key for this cell doo
+You will need a key for this cell door.
 endmsg
 x 15
 y 18
@@ -2728,8 +2700,7 @@ end
 arch prisoner
 msg
 @match *
-Please help me, I have no strenght
-left, I am truely innocent of my crime
+Please help me, I have no strength left, I am truely innocent of my crime.
 endmsg
 x 17
 y 19
@@ -2854,7 +2825,7 @@ arch locked_door1
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key for this cell doo
+You will need a key for this cell door.
 endmsg
 x 18
 y 15
@@ -2876,7 +2847,7 @@ arch locked_door1
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key for this cell doo
+You will need a key for this cell door.
 endmsg
 x 18
 y 18
@@ -3000,8 +2971,7 @@ arch locked_door2
 name cell door
 slaying set_individual_value cell
 msg
-You will need a key to open the cell
-door
+You will need a key to open the cell door.
 endmsg
 x 19
 y 17
@@ -3136,8 +3106,7 @@ end
 arch prisoner
 msg
 @match *
-Please help me, I have no strenght
-left, I am truely innocent of my crime
+Please help me, I have no strength left, I am truely innocent of my crime.
 endmsg
 x 20
 y 13
@@ -3160,18 +3129,10 @@ y 16
 end
 arch prisoner
 msg
-@match wizard|Wizard
-Oh yes....I was imprisoned with the
-wizard, he tried to hex me every day,
-good thing he was bound with silver
-otherwise it would have worked.  But he
-escaped long ago.  Out of this very
-cell, he dug his way out, and covered
-the hole back up.
+@match wizard
+Oh yes... I was imprisoned with the wizard, he tried to hex me every day, good thing he was bound with silver otherwise it would have worked.  But he escaped long ago.  Out of this very cell, he dug his way out, and covered the hole back up.
 @match *
-Please help me, I cannot escape like
-the old wizard, I have no strength
-left to dig
+Please help me, I cannot escape like the old wizard, I have no strength left to dig.
 endmsg
 x 20
 y 16
@@ -3570,26 +3531,14 @@ end
 arch scroll
 name Torn Scroll
 msg
-This seems to be the torn remains
-of some evil spell. You cannot make
-the words out, but symbols of Death
-permiate the reading.  You get the
-feeling some evil has been losed upon
-the world.
-Something catches your eye on the
-scroll, it looks like something written
-in blood........you will pay for all
-that you have done Kurte
+This seems to be the torn remains of some evil spell.  You cannot make the words out, but symbols of Death permeate the reading.  You get the feeling some evil has been set loose upon the world.  Something catches your eye on the scroll, it looks like something written in blood........ "You will pay for all that you have done Kurte!"
 endmsg
 x 22
 y 21
 end
 arch corpse
 msg
-This corpse must be of the wizard you
-have been told of.  But there is
-something strange about it, There are
-no bones remaining......
+This corpse must be of the wizard you have been told of.  But there is something strange about it, there are no bones remaining......
 endmsg
 x 22
 y 21

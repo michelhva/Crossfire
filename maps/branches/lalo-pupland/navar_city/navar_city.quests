@@ -1,0 +1,209 @@
+quest navar/grukk
+title Grukk's Tower
+face s_tower1.x11
+description
+Find Grukk's tower, and reclaim his treasure.
+end_description
+step 10
+description
+You've heard the story of Grukk, who fled Navar with some treasure and built a tower somewhere in the south-est, near the coast.
+end_description
+end_step
+step 20
+description
+You've found Grukk's tower.
+end_description
+end_step
+step 30
+finishes_quest
+description
+You defeated Grukk.
+end_description
+end_step
+end_quest
+
+quest quests/TrollCanyon
+title Troll Canyon
+face gaelotroll.x31
+description
+I've agreed to go fight some trolls who are building some den in the mountains for Sgt. MacDonald who doesn't have enough troops.
+end_description
+step 10
+description
+I'm searching the entrance of the troll's den. It is situated south-west of Navar, close to the mountains. From the Navar-Scorn road, I should take the dirt road leading to the Training Center, and search the valley south of it.
+end_description
+end_step
+step 20
+description
+I've found the entrance of the troll canyon.
+end_description
+end_step
+step 30
+description
+I've killed the chief, now I should claim the treasure he surely has.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I've found the treasure of the troll canyon.
+end_description
+end_step
+end_quest
+
+quest navar/rescue-daughters
+title Rescue Ben's daughters
+face man.151
+description
+I have been tasked to save Ben's daughters.
+end_description
+step 10
+description
+Ben asked me to save his daughters who were kidnapped by pirates. Someone in the Frolicking Mermaid may know where that cove is.
+end_description
+end_step
+step 20
+description
+The pirates's cove is located in an old warehouse just south of Navar,
+end_description
+end_step
+step 30
+description
+I've found the cove, I should search the daughters.
+end_description
+end_step
+step 40
+description
+I've rescued Nancy, but Susan was sent to the monsters just east, I should save her.
+end_description
+end_step
+step 50
+description
+I've rescued both daughters, I can claim my reward.
+end_description
+end_step
+step 60
+finishes_quest
+description
+Ben rewarded me.
+end_description
+end_step
+end_quest
+
+quest navar/smugglers
+title Navar's smugglers
+face northman.111
+description
+I've been tasked to fight Navar's smugglers.
+end_description
+step 10
+description
+According to Lt. Piltro, I should talk to the Dwarven priests in Mostrai's cathedral.
+end_description
+end_step
+step 20
+description
+I have the key to one of the warehouses which the smugglers use.
+end_description
+end_step
+step 30
+description
+I found another key, and should try to figure which warehouse it corresponds to.
+end_description
+end_step
+step 40
+description
+According to the man I rescued, the entrance is in the lighthouse, I need to go to the top and then down.
+end_description
+end_step
+step 50
+description
+I have found the smuggler's ship, I should find and kill their boss.
+end_description
+end_step
+step 60
+description
+I have killed the smuggler's boss, I should go talk to Lt. Piltro.
+end_description
+end_step
+step 70
+finishes_quest
+description
+Lt. Piltro gave me a reward.
+end_description
+end_step
+end_quest
+
+quest navar/Ali-treasure
+title Treasure quest
+face chalice_sil.111
+description
+Reclaim a treasure.
+end_description
+step 10
+description
+I've found mention of a treasure hidden in a cave, the password is corrupted but looks like 'ali b.rb.a'
+end_description
+end_step
+step 20
+description
+I've cleared the cave, and found a turban, I should find where to use it.
+end_description
+end_step
+step 30
+description
+I should explore the underground of the theatre.
+end_description
+end_step
+step 40
+description
+I killed a Djinn, I should search if he didn't leave a useful item.
+end_description
+end_step
+step 50
+description
+I've found a strange rod which seems to be a key to something, maybe the treasure mentioned in the note?
+end_description
+end_step
+step 60
+finishes_quest
+description
+I've found the treasure.
+end_description
+end_step
+end_quest
+
+quest navar/Iscar-pen
+title The writing pen
+face stylus.111
+description
+Iscar, a writer, lost his writing pen and needs a replacement.
+end_description
+step 10
+description
+I have to get a pen from Hasphatois, a smith in the mining town north of Navar, easy to find if I follow the road.
+end_description
+end_step
+step 20
+description
+Hasphatois asks for some graphite, which I can get from Pikorme who is in the mines on the west of the town.
+end_description
+end_step
+step 30
+description
+I found some graphite, I can talk to Hasphatois again.
+end_description
+end_step
+step 40
+description
+I have Iscar's pen, I should bring it back.
+end_description
+end_step
+step 50
+finishes_quest
+description
+Iscar can again write his novel, he's happy.
+end_description
+end_step
+end_quest
+

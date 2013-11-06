@@ -4,11 +4,11 @@ difficulty 1
 region navar
 width 15
 height 16
-enter_x 6
-enter_y 13
+enter_x 7
+enter_y 14
 msg
 Created:  2003-11 Avion
-Modified: 2005-05-25
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch grass
@@ -573,7 +573,7 @@ y 4
 end
 arch elf_1
 msg
-@match Lythander|lythander
+@match lythander
 Lythander is the elven god of luck.
 @match *
 Welcome to the temple of Lythander.

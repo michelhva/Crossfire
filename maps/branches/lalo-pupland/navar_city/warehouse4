@@ -1,11 +1,14 @@
 arch map
 name Warehouse #4
-difficulty 1
+difficulty 3
 region navar
 width 30
 height 16
+enter_x 27
+enter_y 15
 msg
 Created:  1993-11-12
+Modified: 2012-05-12 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -169,9 +172,9 @@ x 1
 y 11
 end
 arch locked_door1
-slaying set_individual_value ware
+slaying navar_ware
 msg
-For some reason this door is locked
+For some reason this door is locked.
 endmsg
 face ldoor_brown1.111
 x 1
@@ -182,33 +185,7 @@ arch woodfloor
 x 1
 y 12
 end
-arch magic_ear
-msg
-@match smugglers|Smugglers
-Yes, the smugglers, they locked me in
-here to die of starvation since
-overheard where their secret entrance
-to the city is
-@match entrance|Entrance
-Yes, the entrance, it is in the lower
-levels of the Lighthouse, but you have
-to get to the top level to go down to
-it
-@match *
-Praise God you have come to let me
-out...those damned smugglers.
-endmsg
-x 1
-y 13
-end
 arch woodfloor
-x 1
-y 13
-end
-arch key2
-name Lighthouse Key
-slaying set_individual_value lightkey
-face key_blue.111
 x 1
 y 13
 end
@@ -217,8 +194,26 @@ x 1
 y 14
 end
 arch man
+msg
+@match smugglers
+Yes, the smugglers, they locked me in here to die of starvation since overheard where their secret entrance to the city is.
+@match entrance
+Yes, the entrance, it is in the lower levels of the Lighthouse, but you have to get to the top level to go down to it.
+@match *
+Praise Valriel you have come to let me out... those damned smugglers.
+endmsg
 x 1
 y 14
+stand_still 1
+arch NPCGift
+arch blue_key
+name Navar lighthouse key
+slaying navar_lightkey
+end
+end
+arch npc_dialog
+name /navar_city/warehouse4.msg
+end
 end
 arch woodfloor
 x 1
@@ -298,7 +293,7 @@ arch woodfloor
 x 2
 y 12
 end
-arch wall_2_1_1
+arch wall_2_2_1
 x 2
 y 12
 end
@@ -306,15 +301,7 @@ arch woodfloor
 x 2
 y 13
 end
-arch wall_2_1_1
-x 2
-y 13
-end
 arch woodfloor
-x 2
-y 14
-end
-arch wall_2_1_1
 x 2
 y 14
 end
@@ -322,7 +309,7 @@ arch woodfloor
 x 2
 y 15
 end
-arch wall_3_1
+arch wall_2_1_2
 x 2
 y 15
 end
@@ -404,7 +391,15 @@ arch woodfloor
 x 3
 y 12
 end
+arch wall_2_2_3
+x 3
+y 12
+end
 arch woodfloor
+x 3
+y 13
+end
+arch wall_2_1_1
 x 3
 y 13
 end
@@ -412,11 +407,15 @@ arch woodfloor
 x 3
 y 14
 end
+arch wall_2_1_1
+x 3
+y 14
+end
 arch woodfloor
 x 3
 y 15
 end
-arch wall_2_1_2
+arch wall_3_1
 x 3
 y 15
 end
@@ -2920,7 +2919,7 @@ arch woodfloor
 x 27
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_116
 hp 17
 sp 41

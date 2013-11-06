@@ -5,11 +5,11 @@ difficulty 1
 region navar
 width 15
 height 20
-enter_x 4
-enter_y 13
+enter_x 3
+enter_y 18
 msg
 Created:  2003-11 Avion
-Modified: 2005-05-25
+Modified: 2012-02-19 Rick Tanner
 endmsg
 end
 arch grass
@@ -459,13 +459,6 @@ x 4
 y 14
 end
 arch woodfloor
-x 4
-y 15
-end
-arch sign
-msg
-Experimental - worship at your own risk
-endmsg
 x 4
 y 15
 end

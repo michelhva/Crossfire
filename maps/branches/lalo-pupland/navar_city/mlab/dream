@@ -3,12 +3,13 @@ name Dream
 reset_timeout 7200
 difficulty 1
 region dream
-width 16
-height 16
+width 11
+height 11
 enter_x 1
 enter_y 1
 msg
 Created:  2002-02-27 mikeeusa
+Modified: 2012-02-16 Rick Tanner
 endmsg
 end
 arch blocked
@@ -27,37 +28,32 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -65,17 +61,16 @@ x 1
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 1
 y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -91,17 +86,16 @@ y 1
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 1
 y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -117,17 +111,16 @@ y 2
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 1
 y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -147,18 +140,16 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -166,17 +157,16 @@ x 2
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 2
 y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -192,17 +182,16 @@ y 1
 end
 arch magic_mouth
 msg
-You fall into a deep sleep
+You fall into a deep sleep.
 endmsg
 x 2
 y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -218,17 +207,16 @@ y 3
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 2
 y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -241,18 +229,16 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -260,17 +246,16 @@ x 3
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 3
 y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -286,17 +271,16 @@ y 1
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 3
 y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -312,17 +296,16 @@ y 2
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 3
 y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -342,18 +325,16 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -377,42 +358,37 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -446,17 +422,16 @@ y 1
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 7
 y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -472,17 +447,16 @@ y 2
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 7
 y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -498,17 +472,16 @@ y 3
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 7
 y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 7
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -531,17 +504,16 @@ y 1
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 8
 y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -550,17 +522,16 @@ y 1
 end
 arch magic_mouth
 msg
-You fall into a deep sleep
+You fall into a deep sleep.
 endmsg
 x 8
 y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -576,17 +547,16 @@ y 3
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 8
 y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 8
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -609,17 +579,16 @@ y 1
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 9
 y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -635,17 +604,16 @@ y 2
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 9
 y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -661,17 +629,16 @@ y 3
 end
 arch magic_mouth
 msg
-You awake
+You awake.
 endmsg
 x 9
 y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 9
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic

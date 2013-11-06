@@ -1,14 +1,15 @@
 arch map
-name Civic Theater
+name Civic Theater, Ground Floor
 reset_timeout 7200
 difficulty 1
 region navar
 width 32
 height 32
-enter_x 1
-enter_y 1
+enter_x 15
+enter_y 28
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2012-07-01 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -491,6 +492,10 @@ hp 2
 sp 29
 x 2
 y 29
+arch quest_advance_apply
+name navar/Ali-treasure 0-20>30
+unique 1
+end
 end
 arch spikes_closed
 x 2
@@ -589,14 +594,14 @@ arch marble
 x 3
 y 7
 end
-arch swall_1_1
-x 3
-y 7
-end
 arch westcwall_1_2
 x 3
 y 7
 end
+arch swall_1_1_half
+x 3
+y 7
+end
 arch light1
 x 3
 y 8
@@ -625,7 +630,7 @@ arch marble
 x 3
 y 9
 end
-arch swall_1_2
+arch swall_1_2_half
 x 3
 y 9
 end
@@ -677,11 +682,11 @@ arch marble
 x 3
 y 12
 end
-arch swall_1_1
+arch westcwall_1_2
 x 3
 y 12
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 3
 y 12
 end
@@ -713,7 +718,7 @@ arch marble
 x 3
 y 14
 end
-arch swall_1_2
+arch swall_1_2_half
 x 3
 y 14
 end
@@ -765,11 +770,11 @@ arch marble
 x 3
 y 17
 end
-arch swall_1_1
+arch westcwall_1_2
 x 3
 y 17
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 3
 y 17
 end
@@ -801,7 +806,7 @@ arch marble
 x 3
 y 19
 end
-arch swall_1_2
+arch swall_1_2_half
 x 3
 y 19
 end
@@ -853,11 +858,11 @@ arch marble
 x 3
 y 22
 end
-arch swall_1_1
+arch westcwall_1_2
 x 3
 y 22
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 3
 y 22
 end
@@ -889,7 +894,7 @@ arch marble
 x 3
 y 24
 end
-arch swall_1_2
+arch swall_1_2_half
 x 3
 y 24
 end
@@ -947,7 +952,6 @@ y 29
 end
 arch altar
 name Place here the turban of Ali
-name_pl Place here the turban of Ali
 slaying ali's turban
 face altarnone.111
 food 1
@@ -1768,7 +1772,7 @@ arch marble
 x 7
 y 3
 end
-arch swall_1_4
+arch swall_1_4_half
 x 7
 y 3
 end
@@ -2438,7 +2442,7 @@ arch marble
 x 9
 y 3
 end
-arch swall_1_3
+arch swall_1_3_half
 x 9
 y 3
 end
@@ -3047,7 +3051,7 @@ arch marble
 x 10
 y 29
 end
-arch swall_1_4
+arch swall_1_4_half
 x 10
 y 29
 end
@@ -3147,12 +3151,10 @@ x 11
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 11
 y 10
 end
-arch westcwall_2_2_2
+arch westcwall_1_4
 x 11
 y 10
 end
@@ -3161,27 +3163,23 @@ x 11
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 11
 y 11
 end
 arch door_1
 x 11
 y 11
-no_pass 0
+move_block 0
 end
 arch light2
 x 11
 y 12
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 11
 y 12
 end
-arch westcwall_2_2_4
+arch westcwall_1_3
 x 11
 y 12
 end
@@ -3190,8 +3188,6 @@ x 11
 y 13
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 11
 y 13
 end
@@ -3204,8 +3200,6 @@ x 11
 y 14
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 11
 y 14
 end
@@ -3408,7 +3402,7 @@ arch marble
 x 12
 y 3
 end
-arch swall_1_4
+arch swall_1_4_half
 x 12
 y 3
 end
@@ -3473,8 +3467,6 @@ x 12
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 12
 y 10
 end
@@ -3487,8 +3479,6 @@ x 12
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 12
 y 11
 end
@@ -3497,8 +3487,6 @@ x 12
 y 12
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 12
 y 12
 end
@@ -3507,8 +3495,6 @@ x 12
 y 13
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 12
 y 13
 end
@@ -3517,8 +3503,6 @@ x 12
 y 14
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 12
 y 14
 end
@@ -3682,7 +3666,7 @@ arch marble
 x 12
 y 29
 end
-arch swall_1_3
+arch swall_1_3_half
 x 12
 y 29
 end
@@ -3782,8 +3766,6 @@ x 13
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 13
 y 10
 end
@@ -3796,8 +3778,6 @@ x 13
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 13
 y 11
 end
@@ -3806,8 +3786,6 @@ x 13
 y 12
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 13
 y 12
 end
@@ -3816,8 +3794,6 @@ x 13
 y 13
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 13
 y 13
 end
@@ -3826,8 +3802,6 @@ x 13
 y 14
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 13
 y 14
 end
@@ -4045,7 +4019,7 @@ arch marble
 x 14
 y 3
 end
-arch swall_1_3
+arch swall_1_3_half
 x 14
 y 3
 end
@@ -4110,8 +4084,6 @@ x 14
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 14
 y 10
 end
@@ -4124,8 +4096,6 @@ x 14
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 14
 y 11
 end
@@ -4134,8 +4104,6 @@ x 14
 y 12
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 14
 y 12
 end
@@ -4144,8 +4112,6 @@ x 14
 y 13
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 14
 y 13
 end
@@ -4154,8 +4120,6 @@ x 14
 y 14
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 14
 y 14
 end
@@ -4435,8 +4399,6 @@ x 15
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 15
 y 10
 end
@@ -4449,8 +4411,6 @@ x 15
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 15
 y 11
 end
@@ -4459,8 +4419,6 @@ x 15
 y 12
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 15
 y 12
 end
@@ -4469,8 +4427,6 @@ x 15
 y 13
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 15
 y 13
 end
@@ -4479,8 +4435,6 @@ x 15
 y 14
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 15
 y 14
 end
@@ -4759,8 +4713,6 @@ x 16
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 16
 y 10
 end
@@ -4773,8 +4725,6 @@ x 16
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 16
 y 11
 end
@@ -4783,8 +4733,6 @@ x 16
 y 12
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 16
 y 12
 end
@@ -4793,8 +4741,6 @@ x 16
 y 13
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 16
 y 13
 end
@@ -4803,8 +4749,6 @@ x 16
 y 14
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 16
 y 14
 end
@@ -5022,7 +4966,7 @@ arch marble
 x 17
 y 3
 end
-arch swall_1_4
+arch swall_1_4_half
 x 17
 y 3
 end
@@ -5087,8 +5031,6 @@ x 17
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 17
 y 10
 end
@@ -5101,8 +5043,6 @@ x 17
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 17
 y 11
 end
@@ -5111,8 +5051,6 @@ x 17
 y 12
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 17
 y 12
 end
@@ -5121,8 +5059,6 @@ x 17
 y 13
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 17
 y 13
 end
@@ -5131,8 +5067,6 @@ x 17
 y 14
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 17
 y 14
 end
@@ -5412,8 +5346,6 @@ x 18
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 18
 y 10
 end
@@ -5426,8 +5358,6 @@ x 18
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 18
 y 11
 end
@@ -5436,8 +5366,6 @@ x 18
 y 12
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 18
 y 12
 end
@@ -5446,8 +5374,6 @@ x 18
 y 13
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 18
 y 13
 end
@@ -5456,8 +5382,6 @@ x 18
 y 14
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 18
 y 14
 end
@@ -5675,7 +5599,7 @@ arch marble
 x 19
 y 3
 end
-arch swall_1_3
+arch swall_1_3_half
 x 19
 y 3
 end
@@ -5740,8 +5664,6 @@ x 19
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 19
 y 10
 end
@@ -5754,8 +5676,6 @@ x 19
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 19
 y 11
 end
@@ -5764,8 +5684,6 @@ x 19
 y 12
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 19
 y 12
 end
@@ -5774,8 +5692,6 @@ x 19
 y 13
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 19
 y 13
 end
@@ -5784,8 +5700,6 @@ x 19
 y 14
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 19
 y 14
 end
@@ -5949,7 +5863,7 @@ arch marble
 x 19
 y 29
 end
-arch swall_1_4
+arch swall_1_4_half
 x 19
 y 29
 end
@@ -6028,32 +5942,32 @@ arch westcwall_2_1_2
 x 20
 y 7
 end
+arch westcwall_0
+x 20
+y 7
+end
 arch light2
 x 20
 y 8
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 20
 y 8
 end
 arch door_look_2
 x 20
 y 8
-no_pass 0
+move_block 0
 end
 arch light2
 x 20
 y 9
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 20
 y 9
 end
-arch westcwall_2_1_1
+arch westcwall_1_1
 x 20
 y 9
 end
@@ -6062,8 +5976,6 @@ x 20
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 20
 y 10
 end
@@ -6076,8 +5988,6 @@ x 20
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 20
 y 11
 end
@@ -6086,8 +5996,6 @@ x 20
 y 12
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 20
 y 12
 end
@@ -6100,8 +6008,6 @@ x 20
 y 13
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 20
 y 13
 end
@@ -6114,8 +6020,6 @@ x 20
 y 14
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 20
 y 14
 end
@@ -6363,8 +6267,6 @@ x 21
 y 8
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 21
 y 8
 end
@@ -6373,8 +6275,6 @@ x 21
 y 9
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 21
 y 9
 end
@@ -6383,8 +6283,6 @@ x 21
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 21
 y 10
 end
@@ -6393,8 +6291,6 @@ x 21
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 21
 y 11
 end
@@ -6581,7 +6477,7 @@ arch marble
 x 21
 y 29
 end
-arch swall_1_3
+arch swall_1_3_half
 x 21
 y 29
 end
@@ -6620,7 +6516,7 @@ arch marble
 x 22
 y 3
 end
-arch swall_1_4
+arch swall_1_4_half
 x 22
 y 3
 end
@@ -6669,8 +6565,6 @@ x 22
 y 8
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 22
 y 8
 end
@@ -6679,8 +6573,6 @@ x 22
 y 9
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 22
 y 9
 end
@@ -6689,8 +6581,6 @@ x 22
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 22
 y 10
 end
@@ -6699,8 +6589,6 @@ x 22
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 22
 y 11
 end
@@ -7016,8 +6904,6 @@ x 23
 y 8
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 23
 y 8
 end
@@ -7026,8 +6912,6 @@ x 23
 y 9
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 23
 y 9
 end
@@ -7036,8 +6920,6 @@ x 23
 y 10
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 23
 y 10
 end
@@ -7046,8 +6928,6 @@ x 23
 y 11
 end
 arch woodfloor2
-name woodfloor
-name_pl woodfloor
 x 23
 y 11
 end
@@ -7310,7 +7190,7 @@ arch marble
 x 24
 y 3
 end
-arch swall_1_3
+arch swall_1_3_half
 x 24
 y 3
 end
@@ -8454,14 +8334,14 @@ arch marble
 x 28
 y 7
 end
-arch swall_1_1
-x 28
-y 7
-end
 arch westcwall_1_2
 x 28
 y 7
 end
+arch swall_1_1_half
+x 28
+y 7
+end
 arch light1
 x 28
 y 8
@@ -8490,7 +8370,7 @@ arch marble
 x 28
 y 9
 end
-arch swall_1_2
+arch swall_1_2_half
 x 28
 y 9
 end
@@ -8542,11 +8422,11 @@ arch marble
 x 28
 y 12
 end
-arch swall_1_1
+arch westcwall_1_2
 x 28
 y 12
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 28
 y 12
 end
@@ -8578,7 +8458,7 @@ arch marble
 x 28
 y 14
 end
-arch swall_1_2
+arch swall_1_2_half
 x 28
 y 14
 end
@@ -8630,11 +8510,11 @@ arch marble
 x 28
 y 17
 end
-arch swall_1_1
+arch westcwall_1_2
 x 28
 y 17
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 28
 y 17
 end
@@ -8666,7 +8546,7 @@ arch marble
 x 28
 y 19
 end
-arch swall_1_2
+arch swall_1_2_half
 x 28
 y 19
 end
@@ -8718,11 +8598,11 @@ arch marble
 x 28
 y 22
 end
-arch swall_1_1
+arch westcwall_1_2
 x 28
 y 22
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 28
 y 22
 end
@@ -8754,7 +8634,7 @@ arch marble
 x 28
 y 24
 end
-arch swall_1_2
+arch swall_1_2_half
 x 28
 y 24
 end
