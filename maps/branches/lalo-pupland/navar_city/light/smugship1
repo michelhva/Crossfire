@@ -1,12 +1,14 @@
 arch map
 name Smugglers Boat
-difficulty 1
+difficulty 10
 region navar
 width 29
 height 25
+enter_x 10
+enter_y 2
 msg
 Created:  1993-11-17
-Modified: 2008-02-03 Nicolas Weeger
+Modified: 2012-05-12 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -3057,11 +3059,15 @@ ac -7
 x 22
 y 21
 carrying 2500
+no_mood_change 1
 arch girdle_str
 end
 arch spell_mass_confusion
 end
 arch spell_icestorm
+end
+arch quest_advance_death
+name navar/smugglers 50>60
 end
 end
 arch woodfloor

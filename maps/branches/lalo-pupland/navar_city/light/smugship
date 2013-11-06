@@ -1,11 +1,14 @@
 arch map
 name Smugglers Boat
-difficulty 1
+difficulty 10
 region navar
 width 41
 height 19
+enter_x 18
+enter_y 2
 msg
 Created:  1993-11-17
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch sea
@@ -1319,7 +1322,7 @@ end
 arch door_look_2
 x 9
 y 5
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1385,7 +1388,7 @@ end
 arch door_look_2
 x 9
 y 13
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1750,8 +1753,6 @@ y 5
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -1823,8 +1824,6 @@ y 16
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -1870,8 +1869,6 @@ y 5
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -1885,8 +1882,6 @@ y 6
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -1940,8 +1935,6 @@ y 15
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -1955,8 +1948,6 @@ y 16
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2007,8 +1998,6 @@ y 6
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2022,8 +2011,6 @@ y 7
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2062,8 +2049,6 @@ y 13
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2077,8 +2062,6 @@ y 14
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2092,8 +2075,6 @@ y 15
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2154,8 +2135,6 @@ y 7
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2169,8 +2148,6 @@ y 8
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2184,8 +2161,6 @@ y 9
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2199,8 +2174,6 @@ y 10
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2214,8 +2187,6 @@ y 11
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2229,8 +2200,6 @@ y 12
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2244,8 +2213,6 @@ y 13
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -2259,8 +2226,6 @@ y 14
 end
 arch dog
 name Guard Dog
-hp 25
-maxhp 25
 exp 40
 dam 10
 ac 2
@@ -4041,7 +4006,7 @@ end
 arch door_look_1
 x 29
 y 6
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -4120,7 +4085,7 @@ end
 arch door_look_1
 x 29
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -4458,7 +4423,7 @@ end
 arch door_look_2
 x 32
 y 7
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -4492,7 +4457,7 @@ end
 arch door_look_2
 x 32
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor

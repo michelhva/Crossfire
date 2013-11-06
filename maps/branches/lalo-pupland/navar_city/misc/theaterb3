@@ -1,51 +1,34 @@
 arch map
-name Civic Theater
+name Civic Theater, Lower Level 3
 reset_timeout 7200
-difficulty 1
+difficulty 80
 region navar
 darkness 2
 width 32
 height 118
-enter_x 1
-enter_y 1
+enter_x 22
+enter_y 27
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-07-01 Nicolas Weeger
 endmsg
 tile_path_4 /navar_city/misc/theaterb4
 end
-arch marble
+arch cave_15
 end
-arch blocked
-end
-arch marble
+arch cave_15
 y 1
 end
-arch blocked
-y 1
-end
-arch marble
+arch cave_15
 y 2
 end
-arch blocked
-y 2
-end
-arch marble
+arch cave_15
 y 3
 end
-arch blocked
-y 3
-end
-arch marble
+arch cave_15
 y 4
 end
-arch blocked
-y 4
-end
-arch marble
-y 5
-end
-arch blocked
+arch cave_15
 y 5
 end
 arch marble
@@ -60,130 +43,70 @@ end
 arch boulder
 y 6
 end
-arch marble
+arch cave_15
 y 7
 end
-arch blocked
-y 7
-end
-arch marble
+arch cave_15
 y 8
 end
-arch blocked
-y 8
-end
-arch marble
+arch cave_15
 y 9
 end
-arch blocked
-y 9
-end
-arch marble
+arch cave_15
 y 10
 end
-arch blocked
-y 10
-end
-arch marble
+arch cave_15
 y 11
 end
-arch blocked
-y 11
-end
-arch marble
+arch cave_15
 y 12
 end
-arch blocked
-y 12
-end
-arch marble
+arch cave_15
 y 13
 end
-arch blocked
-y 13
-end
-arch marble
+arch cave_15
 y 14
 end
-arch blocked
-y 14
-end
-arch marble
+arch cave_15
 y 15
 end
-arch blocked
-y 15
-end
-arch marble
+arch cave_15
 y 16
 end
-arch blocked
-y 16
-end
-arch marble
+arch cave_15
 y 17
 end
-arch blocked
-y 17
-end
-arch marble
+arch cave_15
 y 18
 end
-arch blocked
-y 18
-end
-arch marble
+arch cave_15
 y 19
 end
-arch blocked
-y 19
-end
-arch marble
+arch cave_15
 y 20
 end
-arch blocked
-y 20
-end
-arch marble
+arch cave_15
 y 21
 end
-arch blocked
-y 21
-end
-arch marble
+arch cave_15
 y 22
 end
-arch blocked
-y 22
-end
-arch marble
+arch cave_15
 y 23
 end
-arch blocked
-y 23
-end
-arch marble
+arch cave_15
 y 24
 end
-arch blocked
-y 24
-end
-arch marble
+arch cave_15
 y 25
 end
-arch blocked
-y 25
-end
-arch marble
-y 26
-end
-arch blocked
+arch cave_15
 y 26
 end
 arch marble
 y 27
 end
-arch cave18
+arch cave24
 y 27
 end
 arch marble
@@ -195,31 +118,22 @@ end
 arch marble
 y 29
 end
-arch cave17
+arch cave23
 y 29
 end
-arch marble
+arch cave_15
 y 30
 end
-arch blocked
-y 30
-end
-arch marble
+arch cave_15
 y 31
 end
-arch blocked
-y 31
-end
-arch marble
-y 32
-end
-arch blocked
+arch cave_15
 y 32
 end
 arch marble
 y 33
 end
-arch cave18
+arch cave24
 y 33
 end
 arch marble
@@ -255,55 +169,34 @@ end
 arch marble
 y 39
 end
-arch cave17
+arch cave23
 y 39
 end
-arch marble
+arch cave_15
 y 40
 end
-arch blocked
-y 40
-end
-arch marble
+arch cave_15
 y 41
 end
-arch blocked
-y 41
-end
-arch marble
+arch cave_15
 y 42
 end
-arch blocked
-y 42
-end
-arch marble
+arch cave_15
 y 43
 end
-arch blocked
-y 43
-end
-arch marble
+arch cave_15
 y 44
 end
-arch blocked
-y 44
-end
-arch marble
+arch cave_15
 y 45
 end
-arch blocked
-y 45
-end
-arch marble
-y 46
-end
-arch blocked
+arch cave_15
 y 46
 end
 arch marble
 y 47
 end
-arch cave18
+arch cave24
 y 47
 end
 arch marble
@@ -339,91 +232,52 @@ end
 arch marble
 y 53
 end
-arch cave17
+arch cave23
 y 53
 end
-arch marble
+arch cave_15
 y 54
 end
-arch blocked
-y 54
-end
-arch marble
+arch cave_15
 y 55
 end
-arch blocked
-y 55
-end
-arch marble
+arch cave_15
 y 56
 end
-arch blocked
-y 56
-end
-arch marble
+arch cave_15
 y 57
 end
-arch blocked
-y 57
-end
-arch marble
+arch cave_15
 y 58
 end
-arch blocked
-y 58
-end
-arch marble
+arch cave_15
 y 59
 end
-arch blocked
-y 59
-end
-arch marble
+arch cave_15
 y 60
 end
-arch blocked
-y 60
-end
-arch marble
+arch cave_15
 y 61
 end
-arch blocked
-y 61
-end
-arch marble
+arch cave_15
 y 62
 end
-arch blocked
-y 62
-end
-arch marble
+arch cave_15
 y 63
 end
-arch blocked
-y 63
-end
-arch marble
+arch cave_15
 y 64
 end
-arch blocked
-y 64
-end
-arch marble
+arch cave_15
 y 65
 end
-arch blocked
-y 65
-end
-arch marble
-y 66
-end
-arch blocked
+arch cave_15
 y 66
 end
 arch marble
 y 67
 end
-arch cave18
+arch cave24
 y 67
 end
 arch marble
@@ -471,49 +325,31 @@ end
 arch oil_sea
 y 74
 end
-arch cave17
+arch cave23
 y 74
 end
-arch oil_sea
+arch cave_15
 y 75
 end
-arch blocked
-y 75
-end
-arch oil_sea
+arch cave_15
 y 76
 end
-arch blocked
-y 76
-end
-arch oil_sea
+arch cave_15
 y 77
 end
-arch blocked
-y 77
-end
-arch oil_sea
+arch cave_15
 y 78
 end
-arch blocked
-y 78
-end
-arch oil_sea
+arch cave_15
 y 79
 end
-arch blocked
-y 79
-end
-arch oil_sea
-y 80
-end
-arch blocked
+arch cave_15
 y 80
 end
 arch oil_sea
 y 81
 end
-arch cave18
+arch cave24
 y 81
 end
 arch oil_sea
@@ -549,31 +385,22 @@ end
 arch oil_sea
 y 87
 end
-arch cave17
+arch cave23
 y 87
 end
-arch oil_sea
+arch cave_15
 y 88
 end
-arch blocked
-y 88
-end
-arch oil_sea
+arch cave_15
 y 89
 end
-arch blocked
-y 89
-end
-arch oil_sea
-y 90
-end
-arch blocked
+arch cave_15
 y 90
 end
 arch oil_sea
 y 91
 end
-arch cave18
+arch cave24
 y 91
 end
 arch oil_sea
@@ -609,140 +436,73 @@ end
 arch oil_sea
 y 97
 end
-arch cave17
+arch cave23
 y 97
 end
-arch oil_sea
+arch cave_15
 y 98
 end
-arch blocked
-y 98
-end
-arch oil_sea
+arch cave_15
 y 99
 end
-arch blocked
-y 99
-end
-arch oil_sea
+arch cave_15
 y 100
 end
-arch blocked
-y 100
-end
-arch oil_sea
+arch cave_15
 y 101
 end
-arch blocked
-y 101
-end
-arch oil_sea
+arch cave_15
 y 102
 end
-arch blocked
-y 102
-end
-arch oil_sea
+arch cave_15
 y 103
 end
-arch blocked
-y 103
-end
-arch oil_sea
+arch cave_15
 y 104
 end
-arch blocked
-y 104
-end
-arch oil_sea
+arch cave_15
 y 105
 end
-arch blocked
-y 105
-end
-arch oil_sea
+arch cave_15
 y 106
 end
-arch blocked
-y 106
-end
-arch oil_sea
+arch cave_15
 y 107
 end
-arch blocked
-y 107
-end
-arch oil_sea
+arch cave_15
 y 108
 end
-arch blocked
-y 108
-end
-arch oil_sea
+arch cave_15
 y 109
 end
-arch blocked
-y 109
-end
-arch oil_sea
+arch cave_15
 y 110
 end
-arch blocked
-y 110
-end
-arch oil_sea
+arch cave_15
 y 111
 end
-arch blocked
-y 111
-end
-arch oil_sea
+arch cave_15
 y 112
 end
-arch blocked
-y 112
-end
-arch oil_sea
+arch cave_15
 y 113
 end
-arch blocked
-y 113
-end
-arch oil_sea
+arch cave_15
 y 114
 end
-arch blocked
-y 114
-end
-arch oil_sea
+arch cave_15
 y 115
 end
-arch blocked
-y 115
-end
-arch oil_sea
+arch cave_15
 y 116
 end
-arch blocked
-y 116
-end
-arch oil_sea
+arch cave_15
 y 117
 end
-arch blocked
-y 117
-end
-arch marble
+arch cave_15
 x 1
 end
-arch blocked
-x 1
-end
-arch marble
-x 1
-y 1
-end
-arch blocked
+arch cave_15
 x 1
 y 1
 end
@@ -757,11 +517,7 @@ speed 0.050000
 value 1
 connected 1
 end
-arch marble
-x 1
-y 3
-end
-arch blocked
+arch cave_15
 x 1
 y 3
 end
@@ -780,163 +536,83 @@ arch boulder
 x 1
 y 4
 end
-arch marble
+arch cave_15
 x 1
 y 5
 end
-arch blocked
-x 1
-y 5
-end
-arch marble
+arch cave_15
 x 1
 y 6
 end
-arch blocked
-x 1
-y 6
-end
-arch marble
+arch cave_15
 x 1
 y 7
 end
-arch blocked
-x 1
-y 7
-end
-arch marble
+arch cave_15
 x 1
 y 8
 end
-arch blocked
-x 1
-y 8
-end
-arch marble
+arch cave_15
 x 1
 y 9
 end
-arch blocked
-x 1
-y 9
-end
-arch marble
+arch cave_15
 x 1
 y 10
 end
-arch blocked
-x 1
-y 10
-end
-arch marble
+arch cave_15
 x 1
 y 11
 end
-arch blocked
-x 1
-y 11
-end
-arch marble
+arch cave_15
 x 1
 y 12
 end
-arch blocked
-x 1
-y 12
-end
-arch marble
+arch cave_15
 x 1
 y 13
 end
-arch blocked
-x 1
-y 13
-end
-arch marble
+arch cave_15
 x 1
 y 14
 end
-arch blocked
-x 1
-y 14
-end
-arch marble
+arch cave_15
 x 1
 y 15
 end
-arch blocked
-x 1
-y 15
-end
-arch marble
+arch cave_15
 x 1
 y 16
 end
-arch blocked
-x 1
-y 16
-end
-arch marble
+arch cave_15
 x 1
 y 17
 end
-arch blocked
-x 1
-y 17
-end
-arch marble
+arch cave_15
 x 1
 y 18
 end
-arch blocked
-x 1
-y 18
-end
-arch marble
+arch cave_15
 x 1
 y 19
 end
-arch blocked
-x 1
-y 19
-end
-arch marble
+arch cave_15
 x 1
 y 20
 end
-arch blocked
-x 1
-y 20
-end
-arch marble
+arch cave_15
 x 1
 y 21
 end
-arch blocked
-x 1
-y 21
-end
-arch marble
+arch cave_15
 x 1
 y 22
 end
-arch blocked
-x 1
-y 22
-end
-arch marble
+arch cave_15
 x 1
 y 23
 end
-arch blocked
-x 1
-y 23
-end
-arch marble
-x 1
-y 24
-end
-arch blocked
+arch cave_15
 x 1
 y 24
 end
@@ -944,7 +620,7 @@ arch marble
 x 1
 y 25
 end
-arch cave18
+arch cave24
 x 1
 y 25
 end
@@ -1036,19 +712,11 @@ arch cave2
 x 1
 y 39
 end
-arch marble
+arch cave_15
 x 1
 y 40
 end
-arch blocked
-x 1
-y 40
-end
-arch marble
-x 1
-y 41
-end
-arch blocked
+arch cave_15
 x 1
 y 41
 end
@@ -1056,7 +724,7 @@ arch marble
 x 1
 y 42
 end
-arch cave18
+arch cave24
 x 1
 y 42
 end
@@ -1080,15 +748,11 @@ arch marble
 x 1
 y 45
 end
-arch cave17
+arch cave23
 x 1
 y 45
 end
-arch marble
-x 1
-y 46
-end
-arch blocked
+arch cave_15
 x 1
 y 46
 end
@@ -1148,63 +812,35 @@ arch marble
 x 1
 y 56
 end
-arch cave17
+arch cave23
 x 1
 y 56
 end
-arch marble
+arch cave_15
 x 1
 y 57
 end
-arch blocked
-x 1
-y 57
-end
-arch marble
+arch cave_15
 x 1
 y 58
 end
-arch blocked
-x 1
-y 58
-end
-arch marble
+arch cave_15
 x 1
 y 59
 end
-arch blocked
-x 1
-y 59
-end
-arch marble
+arch cave_15
 x 1
 y 60
 end
-arch blocked
-x 1
-y 60
-end
-arch marble
+arch cave_15
 x 1
 y 61
 end
-arch blocked
-x 1
-y 61
-end
-arch marble
+arch cave_15
 x 1
 y 62
 end
-arch blocked
-x 1
-y 62
-end
-arch marble
-x 1
-y 63
-end
-arch blocked
+arch cave_15
 x 1
 y 63
 end
@@ -1212,7 +848,7 @@ arch marble
 x 1
 y 64
 end
-arch cave18
+arch cave24
 x 1
 y 64
 end
@@ -1448,157 +1084,82 @@ arch oil_sea
 x 1
 y 100
 end
-arch cave17
+arch cave23
 x 1
 y 100
 end
-arch oil_sea
+arch cave_15
 x 1
 y 101
 end
-arch blocked
-x 1
-y 101
-end
-arch oil_sea
+arch cave_15
 x 1
 y 102
 end
-arch blocked
-x 1
-y 102
-end
-arch oil_sea
+arch cave_15
 x 1
 y 103
 end
-arch blocked
-x 1
-y 103
-end
-arch oil_sea
+arch cave_15
 x 1
 y 104
 end
-arch blocked
-x 1
-y 104
-end
-arch oil_sea
+arch cave_15
 x 1
 y 105
 end
-arch blocked
-x 1
-y 105
-end
-arch oil_sea
+arch cave_15
 x 1
 y 106
 end
-arch blocked
-x 1
-y 106
-end
-arch oil_sea
+arch cave_15
 x 1
 y 107
 end
-arch blocked
-x 1
-y 107
-end
-arch oil_sea
+arch cave_15
 x 1
 y 108
 end
-arch blocked
-x 1
-y 108
-end
-arch oil_sea
+arch cave_15
 x 1
 y 109
 end
-arch blocked
-x 1
-y 109
-end
-arch oil_sea
+arch cave_15
 x 1
 y 110
 end
-arch blocked
-x 1
-y 110
-end
-arch oil_sea
+arch cave_15
 x 1
 y 111
 end
-arch blocked
-x 1
-y 111
-end
-arch oil_sea
+arch cave_15
 x 1
 y 112
 end
-arch blocked
-x 1
-y 112
-end
-arch oil_sea
+arch cave_15
 x 1
 y 113
 end
-arch blocked
-x 1
-y 113
-end
-arch oil_sea
+arch cave_15
 x 1
 y 114
 end
-arch blocked
-x 1
-y 114
-end
-arch oil_sea
+arch cave_15
 x 1
 y 115
 end
-arch blocked
-x 1
-y 115
-end
-arch oil_sea
+arch cave_15
 x 1
 y 116
 end
-arch blocked
-x 1
-y 116
-end
-arch oil_sea
+arch cave_15
 x 1
 y 117
 end
-arch blocked
-x 1
-y 117
-end
-arch marble
+arch cave_15
 x 2
 end
-arch blocked
-x 2
-end
-arch marble
-x 2
-y 1
-end
-arch blocked
+arch cave_15
 x 2
 y 1
 end
@@ -1612,163 +1173,83 @@ y 2
 weight 2000
 connected 3
 end
-arch marble
+arch cave_15
 x 2
 y 3
 end
-arch blocked
-x 2
-y 3
-end
-arch marble
+arch cave_15
 x 2
 y 4
 end
-arch blocked
-x 2
-y 4
-end
-arch marble
+arch cave_15
 x 2
 y 5
 end
-arch blocked
-x 2
-y 5
-end
-arch marble
+arch cave_15
 x 2
 y 6
 end
-arch blocked
-x 2
-y 6
-end
-arch marble
+arch cave_15
 x 2
 y 7
 end
-arch blocked
-x 2
-y 7
-end
-arch marble
+arch cave_15
 x 2
 y 8
 end
-arch blocked
-x 2
-y 8
-end
-arch marble
+arch cave_15
 x 2
 y 9
 end
-arch blocked
-x 2
-y 9
-end
-arch marble
+arch cave_15
 x 2
 y 10
 end
-arch blocked
-x 2
-y 10
-end
-arch marble
+arch cave_15
 x 2
 y 11
 end
-arch blocked
-x 2
-y 11
-end
-arch marble
+arch cave_15
 x 2
 y 12
 end
-arch blocked
-x 2
-y 12
-end
-arch marble
+arch cave_15
 x 2
 y 13
 end
-arch blocked
-x 2
-y 13
-end
-arch marble
+arch cave_15
 x 2
 y 14
 end
-arch blocked
-x 2
-y 14
-end
-arch marble
+arch cave_15
 x 2
 y 15
 end
-arch blocked
-x 2
-y 15
-end
-arch marble
+arch cave_15
 x 2
 y 16
 end
-arch blocked
-x 2
-y 16
-end
-arch marble
+arch cave_15
 x 2
 y 17
 end
-arch blocked
-x 2
-y 17
-end
-arch marble
+arch cave_15
 x 2
 y 18
 end
-arch blocked
-x 2
-y 18
-end
-arch marble
+arch cave_15
 x 2
 y 19
 end
-arch blocked
-x 2
-y 19
-end
-arch marble
+arch cave_15
 x 2
 y 20
 end
-arch blocked
-x 2
-y 20
-end
-arch marble
+arch cave_15
 x 2
 y 21
 end
-arch blocked
-x 2
-y 21
-end
-arch marble
-x 2
-y 22
-end
-arch blocked
+arch cave_15
 x 2
 y 22
 end
@@ -1776,7 +1257,7 @@ arch marble
 x 2
 y 23
 end
-arch cave18
+arch cave24
 x 2
 y 23
 end
@@ -1980,23 +1461,15 @@ arch marble
 x 2
 y 58
 end
-arch cave17
+arch cave23
 x 2
 y 58
 end
-arch marble
+arch cave_15
 x 2
 y 59
 end
-arch blocked
-x 2
-y 59
-end
-arch marble
-x 2
-y 60
-end
-arch blocked
+arch cave_15
 x 2
 y 60
 end
@@ -2004,7 +1477,7 @@ arch marble
 x 2
 y 61
 end
-arch cave18
+arch cave24
 x 2
 y 61
 end
@@ -2244,265 +1717,138 @@ arch oil_sea
 x 2
 y 106
 end
-arch cave17
+arch cave23
 x 2
 y 106
 end
-arch oil_sea
+arch cave_15
 x 2
 y 107
 end
-arch blocked
-x 2
-y 107
-end
-arch oil_sea
+arch cave_15
 x 2
 y 108
 end
-arch blocked
-x 2
-y 108
-end
-arch oil_sea
+arch cave_15
 x 2
 y 109
 end
-arch blocked
-x 2
-y 109
-end
-arch oil_sea
+arch cave_15
 x 2
 y 110
 end
-arch blocked
-x 2
-y 110
-end
-arch oil_sea
+arch cave_15
 x 2
 y 111
 end
-arch blocked
-x 2
-y 111
-end
-arch oil_sea
+arch cave_15
 x 2
 y 112
 end
-arch blocked
-x 2
-y 112
-end
-arch oil_sea
+arch cave_15
 x 2
 y 113
 end
-arch blocked
-x 2
-y 113
-end
-arch oil_sea
+arch cave_15
 x 2
 y 114
 end
-arch blocked
-x 2
-y 114
-end
-arch oil_sea
+arch cave_15
 x 2
 y 115
 end
-arch blocked
-x 2
-y 115
-end
-arch oil_sea
+arch cave_15
 x 2
 y 116
 end
-arch blocked
-x 2
-y 116
-end
-arch oil_sea
+arch cave_15
 x 2
 y 117
 end
-arch blocked
-x 2
-y 117
-end
-arch marble
+arch cave_15
 x 3
 end
-arch blocked
-x 3
-end
-arch marble
+arch cave_15
 x 3
 y 1
 end
-arch blocked
-x 3
-y 1
-end
-arch marble
+arch cave_15
 x 3
 y 2
 end
-arch blocked
-x 3
-y 2
-end
-arch marble
+arch cave_15
 x 3
 y 3
 end
-arch blocked
-x 3
-y 3
-end
-arch marble
+arch cave_15
 x 3
 y 4
 end
-arch blocked
-x 3
-y 4
-end
-arch marble
+arch cave_15
 x 3
 y 5
 end
-arch blocked
-x 3
-y 5
-end
-arch marble
+arch cave_15
 x 3
 y 6
 end
-arch blocked
-x 3
-y 6
-end
-arch marble
+arch cave_15
 x 3
 y 7
 end
-arch blocked
-x 3
-y 7
-end
-arch marble
+arch cave_15
 x 3
 y 8
 end
-arch blocked
-x 3
-y 8
-end
-arch marble
+arch cave_15
 x 3
 y 9
 end
-arch blocked
-x 3
-y 9
-end
-arch marble
+arch cave_15
 x 3
 y 10
 end
-arch blocked
-x 3
-y 10
-end
-arch marble
+arch cave_15
 x 3
 y 11
 end
-arch blocked
-x 3
-y 11
-end
-arch marble
+arch cave_15
 x 3
 y 12
 end
-arch blocked
-x 3
-y 12
-end
-arch marble
+arch cave_15
 x 3
 y 13
 end
-arch blocked
-x 3
-y 13
-end
-arch marble
+arch cave_15
 x 3
 y 14
 end
-arch blocked
-x 3
-y 14
-end
-arch marble
+arch cave_15
 x 3
 y 15
 end
-arch blocked
-x 3
-y 15
-end
-arch marble
+arch cave_15
 x 3
 y 16
 end
-arch blocked
-x 3
-y 16
-end
-arch marble
+arch cave_15
 x 3
 y 17
 end
-arch blocked
-x 3
-y 17
-end
-arch blocked
+arch cave_15
 x 3
 y 18
 end
-arch marble
+arch cave_15
 x 3
 y 19
 end
-arch blocked
-x 3
-y 19
-end
-arch marble
+arch cave_15
 x 3
 y 20
 end
-arch blocked
-x 3
-y 20
-end
-arch marble
-x 3
-y 21
-end
-arch blocked
+arch cave_15
 x 3
 y 21
 end
@@ -2510,7 +1856,7 @@ arch marble
 x 3
 y 22
 end
-arch cave18
+arch cave24
 x 3
 y 22
 end
@@ -2950,245 +2296,126 @@ arch oil_sea
 x 3
 y 109
 end
-arch cave17
+arch cave23
 x 3
 y 109
 end
-arch oil_sea
+arch cave_15
 x 3
 y 110
 end
-arch blocked
-x 3
-y 110
-end
-arch oil_sea
+arch cave_15
 x 3
 y 111
 end
-arch blocked
-x 3
-y 111
-end
-arch oil_sea
+arch cave_15
 x 3
 y 112
 end
-arch blocked
-x 3
-y 112
-end
-arch oil_sea
+arch cave_15
 x 3
 y 113
 end
-arch blocked
-x 3
-y 113
-end
-arch oil_sea
+arch cave_15
 x 3
 y 114
 end
-arch blocked
-x 3
-y 114
-end
-arch oil_sea
+arch cave_15
 x 3
 y 115
 end
-arch blocked
-x 3
-y 115
-end
-arch oil_sea
+arch cave_15
 x 3
 y 116
 end
-arch blocked
-x 3
-y 116
-end
-arch oil_sea
+arch cave_15
 x 3
 y 117
 end
-arch blocked
-x 3
-y 117
-end
-arch marble
+arch cave_15
 x 4
 end
-arch blocked
-x 4
-end
-arch marble
+arch cave_15
 x 4
 y 1
 end
-arch blocked
-x 4
-y 1
-end
-arch marble
+arch cave_15
 x 4
 y 2
 end
-arch blocked
-x 4
-y 2
-end
-arch marble
+arch cave_15
 x 4
 y 3
 end
-arch blocked
-x 4
-y 3
-end
-arch marble
+arch cave_15
 x 4
 y 4
 end
-arch blocked
-x 4
-y 4
-end
-arch marble
+arch cave_15
 x 4
 y 5
 end
-arch blocked
-x 4
-y 5
-end
-arch marble
+arch cave_15
 x 4
 y 6
 end
-arch blocked
-x 4
-y 6
-end
-arch marble
+arch cave_15
 x 4
 y 7
 end
-arch blocked
-x 4
-y 7
-end
-arch marble
+arch cave_15
 x 4
 y 8
 end
-arch blocked
-x 4
-y 8
-end
-arch marble
+arch cave_15
 x 4
 y 9
 end
-arch blocked
-x 4
-y 9
-end
-arch marble
+arch cave_15
 x 4
 y 10
 end
-arch blocked
-x 4
-y 10
-end
-arch marble
+arch cave_15
 x 4
 y 11
 end
-arch blocked
-x 4
-y 11
-end
-arch marble
+arch cave_15
 x 4
 y 12
 end
-arch blocked
-x 4
-y 12
-end
-arch marble
+arch cave_15
 x 4
 y 13
 end
-arch blocked
-x 4
-y 13
-end
-arch marble
+arch cave_15
 x 4
 y 14
 end
-arch blocked
-x 4
-y 14
-end
-arch marble
+arch cave_15
 x 4
 y 15
 end
-arch blocked
-x 4
-y 15
-end
-arch marble
+arch cave_15
 x 4
 y 16
 end
-arch blocked
-x 4
-y 16
-end
-arch marble
+arch cave_15
 x 4
 y 17
 end
-arch blocked
-x 4
-y 17
-end
-arch marble
+arch cave_15
 x 4
 y 18
 end
-arch blocked
-x 4
-y 18
-end
-arch marble
+arch cave_15
 x 4
 y 19
 end
-arch blocked
-x 4
-y 19
-end
-arch marble
+arch cave_15
 x 4
 y 20
 end
-arch blocked
-x 4
-y 20
-end
-arch marble
-x 4
-y 21
-end
-arch blocked
+arch cave_15
 x 4
 y 21
 end
@@ -3672,213 +2899,110 @@ arch oil_sea
 x 4
 y 113
 end
-arch cave17
+arch cave23
 x 4
 y 113
 end
-arch oil_sea
+arch cave_15
 x 4
 y 114
 end
-arch blocked
-x 4
-y 114
-end
-arch oil_sea
+arch cave_15
 x 4
 y 115
 end
-arch blocked
-x 4
-y 115
-end
-arch oil_sea
+arch cave_15
 x 4
 y 116
 end
-arch blocked
-x 4
-y 116
-end
-arch oil_sea
+arch cave_15
 x 4
 y 117
 end
-arch blocked
-x 4
-y 117
-end
-arch marble
+arch cave_15
 x 5
 end
-arch blocked
-x 5
-end
-arch marble
+arch cave_15
 x 5
 y 1
 end
-arch blocked
-x 5
-y 1
-end
-arch marble
+arch cave_15
 x 5
 y 2
 end
-arch blocked
-x 5
-y 2
-end
-arch marble
+arch cave_15
 x 5
 y 3
 end
-arch blocked
-x 5
-y 3
-end
-arch marble
+arch cave_15
 x 5
 y 4
 end
-arch blocked
-x 5
-y 4
-end
-arch marble
+arch cave_15
 x 5
 y 5
 end
-arch blocked
-x 5
-y 5
-end
-arch marble
+arch cave_15
 x 5
 y 6
 end
-arch blocked
-x 5
-y 6
-end
-arch marble
+arch cave_15
 x 5
 y 7
 end
-arch blocked
-x 5
-y 7
-end
-arch marble
+arch cave_15
 x 5
 y 8
 end
-arch blocked
-x 5
-y 8
-end
-arch marble
+arch cave_15
 x 5
 y 9
 end
-arch blocked
-x 5
-y 9
-end
-arch marble
+arch cave_15
 x 5
 y 10
 end
-arch blocked
-x 5
-y 10
-end
-arch marble
+arch cave_15
 x 5
 y 11
 end
-arch blocked
-x 5
-y 11
-end
-arch marble
+arch cave_15
 x 5
 y 12
 end
-arch blocked
-x 5
-y 12
-end
-arch marble
+arch cave_15
 x 5
 y 13
 end
-arch blocked
-x 5
-y 13
-end
-arch marble
+arch cave_15
 x 5
 y 14
 end
-arch blocked
-x 5
-y 14
-end
-arch marble
+arch cave_15
 x 5
 y 15
 end
-arch blocked
-x 5
-y 15
-end
-arch marble
+arch cave_15
 x 5
 y 16
 end
-arch blocked
-x 5
-y 16
-end
-arch marble
+arch cave_15
 x 5
 y 17
 end
-arch blocked
-x 5
-y 17
-end
-arch marble
+arch cave_15
 x 5
 y 18
 end
-arch blocked
-x 5
-y 18
-end
-arch marble
+arch cave_15
 x 5
 y 19
 end
-arch blocked
-x 5
-y 19
-end
-arch marble
+arch cave_15
 x 5
 y 20
 end
-arch blocked
-x 5
-y 20
-end
-arch marble
-x 5
-y 21
-end
-arch blocked
+arch cave_15
 x 5
 y 21
 end
@@ -4334,153 +3458,78 @@ arch cave3
 x 5
 y 117
 end
-arch marble
+arch cave_15
 x 6
 end
-arch blocked
-x 6
-end
-arch marble
+arch cave_15
 x 6
 y 1
 end
-arch blocked
-x 6
-y 1
-end
-arch marble
+arch cave_15
 x 6
 y 2
 end
-arch blocked
-x 6
-y 2
-end
-arch marble
+arch cave_15
 x 6
 y 3
 end
-arch blocked
-x 6
-y 3
-end
-arch marble
+arch cave_15
 x 6
 y 4
 end
-arch blocked
-x 6
-y 4
-end
-arch marble
+arch cave_15
 x 6
 y 5
 end
-arch blocked
-x 6
-y 5
-end
-arch marble
+arch cave_15
 x 6
 y 6
 end
-arch blocked
-x 6
-y 6
-end
-arch marble
+arch cave_15
 x 6
 y 7
 end
-arch blocked
-x 6
-y 7
-end
-arch marble
+arch cave_15
 x 6
 y 8
 end
-arch blocked
-x 6
-y 8
-end
-arch marble
+arch cave_15
 x 6
 y 9
 end
-arch blocked
-x 6
-y 9
-end
-arch marble
+arch cave_15
 x 6
 y 10
 end
-arch blocked
-x 6
-y 10
-end
-arch marble
+arch cave_15
 x 6
 y 11
 end
-arch blocked
-x 6
-y 11
-end
-arch marble
+arch cave_15
 x 6
 y 12
 end
-arch blocked
-x 6
-y 12
-end
-arch marble
+arch cave_15
 x 6
 y 13
 end
-arch blocked
-x 6
-y 13
-end
-arch marble
+arch cave_15
 x 6
 y 14
 end
-arch blocked
-x 6
-y 14
-end
-arch marble
+arch cave_15
 x 6
 y 15
 end
-arch blocked
-x 6
-y 15
-end
-arch marble
+arch cave_15
 x 6
 y 16
 end
-arch blocked
-x 6
-y 16
-end
-arch marble
+arch cave_15
 x 6
 y 17
 end
-arch blocked
-x 6
-y 17
-end
-arch marble
-x 6
-y 18
-end
-arch blocked
+arch cave_15
 x 6
 y 18
 end
@@ -4488,7 +3537,7 @@ arch marble
 x 6
 y 19
 end
-arch cave18
+arch cave24
 x 6
 y 19
 end
@@ -4956,137 +4005,70 @@ arch cave1
 x 6
 y 117
 end
-arch marble
+arch cave_15
 x 7
 end
-arch blocked
-x 7
-end
-arch marble
+arch cave_15
 x 7
 y 1
 end
-arch blocked
-x 7
-y 1
-end
-arch marble
+arch cave_15
 x 7
 y 2
 end
-arch blocked
-x 7
-y 2
-end
-arch marble
+arch cave_15
 x 7
 y 3
 end
-arch blocked
-x 7
-y 3
-end
-arch marble
+arch cave_15
 x 7
 y 4
 end
-arch blocked
-x 7
-y 4
-end
-arch marble
+arch cave_15
 x 7
 y 5
 end
-arch blocked
-x 7
-y 5
-end
-arch marble
+arch cave_15
 x 7
 y 6
 end
-arch blocked
-x 7
-y 6
-end
-arch marble
+arch cave_15
 x 7
 y 7
 end
-arch blocked
-x 7
-y 7
-end
-arch marble
+arch cave_15
 x 7
 y 8
 end
-arch blocked
-x 7
-y 8
-end
-arch marble
+arch cave_15
 x 7
 y 9
 end
-arch blocked
-x 7
-y 9
-end
-arch marble
+arch cave_15
 x 7
 y 10
 end
-arch blocked
-x 7
-y 10
-end
-arch marble
+arch cave_15
 x 7
 y 11
 end
-arch blocked
-x 7
-y 11
-end
-arch marble
+arch cave_15
 x 7
 y 12
 end
-arch blocked
-x 7
-y 12
-end
-arch marble
+arch cave_15
 x 7
 y 13
 end
-arch blocked
-x 7
-y 13
-end
-arch marble
+arch cave_15
 x 7
 y 14
 end
-arch blocked
-x 7
-y 14
-end
-arch marble
+arch cave_15
 x 7
 y 15
 end
-arch blocked
-x 7
-y 15
-end
-arch marble
-x 7
-y 16
-end
-arch blocked
+arch cave_15
 x 7
 y 16
 end
@@ -5094,7 +4076,7 @@ arch marble
 x 7
 y 17
 end
-arch cave18
+arch cave24
 x 7
 y 17
 end
@@ -5578,165 +4560,86 @@ arch oil_sea
 x 7
 y 114
 end
-arch cave20
+arch cave22
 x 7
 y 114
 end
-arch oil_sea
+arch cave_15
 x 7
 y 115
 end
-arch blocked
-x 7
-y 115
-end
-arch oil_sea
+arch cave_15
 x 7
 y 116
 end
-arch blocked
-x 7
-y 116
-end
-arch oil_sea
+arch cave_15
 x 7
 y 117
 end
-arch blocked
-x 7
-y 117
-end
-arch marble
+arch cave_15
 x 8
 end
-arch blocked
-x 8
-end
-arch marble
+arch cave_15
 x 8
 y 1
 end
-arch blocked
-x 8
-y 1
-end
-arch marble
+arch cave_15
 x 8
 y 2
 end
-arch blocked
-x 8
-y 2
-end
-arch marble
+arch cave_15
 x 8
 y 3
 end
-arch blocked
-x 8
-y 3
-end
-arch marble
+arch cave_15
 x 8
 y 4
 end
-arch blocked
-x 8
-y 4
-end
-arch marble
+arch cave_15
 x 8
 y 5
 end
-arch blocked
-x 8
-y 5
-end
-arch marble
+arch cave_15
 x 8
 y 6
 end
-arch blocked
-x 8
-y 6
-end
-arch marble
+arch cave_15
 x 8
 y 7
 end
-arch blocked
-x 8
-y 7
-end
-arch marble
+arch cave_15
 x 8
 y 8
 end
-arch blocked
-x 8
-y 8
-end
-arch marble
+arch cave_15
 x 8
 y 9
 end
-arch blocked
-x 8
-y 9
-end
-arch marble
+arch cave_15
 x 8
 y 10
 end
-arch blocked
-x 8
-y 10
-end
-arch marble
+arch cave_15
 x 8
 y 11
 end
-arch blocked
-x 8
-y 11
-end
-arch marble
+arch cave_15
 x 8
 y 12
 end
-arch blocked
-x 8
-y 12
-end
-arch marble
+arch cave_15
 x 8
 y 13
 end
-arch blocked
-x 8
-y 13
-end
-arch marble
+arch cave_15
 x 8
 y 14
 end
-arch blocked
-x 8
-y 14
-end
-arch marble
+arch cave_15
 x 8
 y 15
 end
-arch blocked
-x 8
-y 15
-end
-arch marble
-x 8
-y 16
-end
-arch blocked
+arch cave_15
 x 8
 y 16
 end
@@ -5744,7 +4647,7 @@ arch marble
 x 8
 y 17
 end
-arch cave19
+arch cave25
 x 8
 y 17
 end
@@ -6224,205 +5127,106 @@ arch oil_sea
 x 8
 y 110
 end
-arch cave20
+arch cave22
 x 8
 y 110
 end
-arch oil_sea
+arch cave_15
 x 8
 y 111
 end
-arch blocked
-x 8
-y 111
-end
-arch oil_sea
+arch cave_15
 x 8
 y 112
 end
-arch blocked
-x 8
-y 112
-end
-arch oil_sea
+arch cave_15
 x 8
 y 113
 end
-arch blocked
-x 8
-y 113
-end
-arch oil_sea
+arch cave_15
 x 8
 y 114
 end
-arch blocked
-x 8
-y 114
-end
-arch oil_sea
+arch cave_15
 x 8
 y 115
 end
-arch blocked
-x 8
-y 115
-end
-arch oil_sea
+arch cave_15
 x 8
 y 116
 end
-arch blocked
-x 8
-y 116
-end
-arch oil_sea
+arch cave_15
 x 8
 y 117
 end
-arch blocked
-x 8
-y 117
-end
-arch marble
+arch cave_15
 x 9
 end
-arch blocked
-x 9
-end
-arch marble
+arch cave_15
 x 9
 y 1
 end
-arch blocked
-x 9
-y 1
-end
-arch marble
+arch cave_15
 x 9
 y 2
 end
-arch blocked
-x 9
-y 2
-end
-arch marble
+arch cave_15
 x 9
 y 3
 end
-arch blocked
-x 9
-y 3
-end
-arch marble
+arch cave_15
 x 9
 y 4
 end
-arch blocked
-x 9
-y 4
-end
-arch marble
+arch cave_15
 x 9
 y 5
 end
-arch blocked
-x 9
-y 5
-end
-arch marble
+arch cave_15
 x 9
 y 6
 end
-arch blocked
-x 9
-y 6
-end
-arch marble
+arch cave_15
 x 9
 y 7
 end
-arch blocked
-x 9
-y 7
-end
-arch marble
+arch cave_15
 x 9
 y 8
 end
-arch blocked
-x 9
-y 8
-end
-arch marble
+arch cave_15
 x 9
 y 9
 end
-arch blocked
-x 9
-y 9
-end
-arch marble
+arch cave_15
 x 9
 y 10
 end
-arch blocked
-x 9
-y 10
-end
-arch marble
+arch cave_15
 x 9
 y 11
 end
-arch blocked
-x 9
-y 11
-end
-arch marble
+arch cave_15
 x 9
 y 12
 end
-arch blocked
-x 9
-y 12
-end
-arch marble
+arch cave_15
 x 9
 y 13
 end
-arch blocked
-x 9
-y 13
-end
-arch marble
+arch cave_15
 x 9
 y 14
 end
-arch blocked
-x 9
-y 14
-end
-arch marble
+arch cave_15
 x 9
 y 15
 end
-arch blocked
-x 9
-y 15
-end
-arch marble
+arch cave_15
 x 9
 y 16
 end
-arch blocked
-x 9
-y 16
-end
-arch marble
-x 9
-y 17
-end
-arch blocked
+arch cave_15
 x 9
 y 17
 end
@@ -6874,197 +5678,102 @@ arch oil_sea
 x 9
 y 112
 end
-arch cave17
+arch cave23
 x 9
 y 112
 end
-arch oil_sea
+arch cave_15
 x 9
 y 113
 end
-arch blocked
-x 9
-y 113
-end
-arch oil_sea
+arch cave_15
 x 9
 y 114
 end
-arch blocked
-x 9
-y 114
-end
-arch oil_sea
+arch cave_15
 x 9
 y 115
 end
-arch blocked
-x 9
-y 115
-end
-arch oil_sea
+arch cave_15
 x 9
 y 116
 end
-arch blocked
-x 9
-y 116
-end
-arch oil_sea
+arch cave_15
 x 9
 y 117
 end
-arch blocked
-x 9
-y 117
-end
-arch marble
+arch cave_15
 x 10
 end
-arch blocked
-x 10
-end
-arch marble
+arch cave_15
 x 10
 y 1
 end
-arch blocked
-x 10
-y 1
-end
-arch marble
+arch cave_15
 x 10
 y 2
 end
-arch blocked
-x 10
-y 2
-end
-arch marble
+arch cave_15
 x 10
 y 3
 end
-arch blocked
-x 10
-y 3
-end
-arch marble
+arch cave_15
 x 10
 y 4
 end
-arch blocked
-x 10
-y 4
-end
-arch marble
+arch cave_15
 x 10
 y 5
 end
-arch blocked
-x 10
-y 5
-end
-arch marble
+arch cave_15
 x 10
 y 6
 end
-arch blocked
-x 10
-y 6
-end
-arch marble
+arch cave_15
 x 10
 y 7
 end
-arch blocked
-x 10
-y 7
-end
-arch marble
+arch cave_15
 x 10
 y 8
 end
-arch blocked
-x 10
-y 8
-end
-arch marble
+arch cave_15
 x 10
 y 9
 end
-arch blocked
-x 10
-y 9
-end
-arch marble
+arch cave_15
 x 10
 y 10
 end
-arch blocked
-x 10
-y 10
-end
-arch marble
+arch cave_15
 x 10
 y 11
 end
-arch blocked
-x 10
-y 11
-end
-arch marble
+arch cave_15
 x 10
 y 12
 end
-arch blocked
-x 10
-y 12
-end
-arch marble
+arch cave_15
 x 10
 y 13
 end
-arch blocked
-x 10
-y 13
-end
-arch marble
+arch cave_15
 x 10
 y 14
 end
-arch blocked
-x 10
-y 14
-end
-arch marble
+arch cave_15
 x 10
 y 15
 end
-arch blocked
-x 10
-y 15
-end
-arch marble
+arch cave_15
 x 10
 y 16
 end
-arch blocked
-x 10
-y 16
-end
-arch marble
+arch cave_15
 x 10
 y 17
 end
-arch blocked
-x 10
-y 17
-end
-arch marble
-x 10
-y 18
-end
-arch blocked
+arch cave_15
 x 10
 y 18
 end
@@ -7072,7 +5781,7 @@ arch marble
 x 10
 y 19
 end
-arch cave19
+arch cave25
 x 10
 y 19
 end
@@ -7652,197 +6361,102 @@ arch oil_sea
 x 10
 y 116
 end
-arch cave17
+arch cave23
 x 10
 y 116
 end
-arch oil_sea
+arch cave_15
 x 10
 y 117
 end
-arch blocked
-x 10
-y 117
-end
-arch marble
+arch cave_15
 x 11
 end
-arch blocked
-x 11
-end
-arch marble
+arch cave_15
 x 11
 y 1
 end
-arch blocked
-x 11
-y 1
-end
-arch marble
+arch cave_15
 x 11
 y 2
 end
-arch blocked
-x 11
-y 2
-end
-arch marble
+arch cave_15
 x 11
 y 3
 end
-arch blocked
-x 11
-y 3
-end
-arch marble
+arch cave_15
 x 11
 y 4
 end
-arch blocked
-x 11
-y 4
-end
-arch marble
+arch cave_15
 x 11
 y 5
 end
-arch blocked
-x 11
-y 5
-end
-arch marble
+arch cave_15
 x 11
 y 6
 end
-arch blocked
-x 11
-y 6
-end
-arch marble
+arch cave_15
 x 11
 y 7
 end
-arch blocked
-x 11
-y 7
-end
-arch marble
+arch cave_15
 x 11
 y 8
 end
-arch blocked
-x 11
-y 8
-end
-arch marble
+arch cave_15
 x 11
 y 9
 end
-arch blocked
-x 11
-y 9
-end
-arch marble
+arch cave_15
 x 11
 y 10
 end
-arch blocked
-x 11
-y 10
-end
-arch marble
+arch cave_15
 x 11
 y 11
 end
-arch blocked
-x 11
-y 11
-end
-arch marble
+arch cave_15
 x 11
 y 12
 end
-arch blocked
-x 11
-y 12
-end
-arch marble
+arch cave_15
 x 11
 y 13
 end
-arch blocked
-x 11
-y 13
-end
-arch marble
+arch cave_15
 x 11
 y 14
 end
-arch blocked
-x 11
-y 14
-end
-arch marble
+arch cave_15
 x 11
 y 15
 end
-arch blocked
-x 11
-y 15
-end
-arch marble
+arch cave_15
 x 11
 y 16
 end
-arch blocked
-x 11
-y 16
-end
-arch marble
+arch cave_15
 x 11
 y 17
 end
-arch blocked
-x 11
-y 17
-end
-arch marble
+arch cave_15
 x 11
 y 18
 end
-arch blocked
-x 11
-y 18
-end
-arch marble
+arch cave_15
 x 11
 y 19
 end
-arch blocked
-x 11
-y 19
-end
-arch marble
+arch cave_15
 x 11
 y 20
 end
-arch blocked
-x 11
-y 20
-end
-arch marble
+arch cave_15
 x 11
 y 21
 end
-arch blocked
-x 11
-y 21
-end
-arch marble
-x 11
-y 22
-end
-arch blocked
+arch cave_15
 x 11
 y 22
 end
@@ -7850,7 +6464,7 @@ arch marble
 x 11
 y 23
 end
-arch cave19
+arch cave25
 x 11
 y 23
 end
@@ -8180,10 +6794,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 83
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -8214,10 +6827,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 84
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -8248,10 +6860,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 85
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -8282,10 +6893,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 86
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -8316,10 +6926,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 87
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -8350,10 +6959,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 88
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -8384,10 +6992,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 89
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -8418,10 +7025,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 90
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -8452,10 +7058,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 91
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -8486,10 +7091,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 11
 y 92
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch mover_1
@@ -8610,201 +7214,102 @@ arch cave3
 x 11
 y 117
 end
-arch marble
+arch cave_15
 x 12
 end
-arch blocked
-x 12
-end
-arch marble
+arch cave_15
 x 12
 y 1
 end
-arch blocked
-x 12
-y 1
-end
-arch marble
+arch cave_15
 x 12
 y 2
 end
-arch blocked
-x 12
-y 2
-end
-arch marble
+arch cave_15
 x 12
 y 3
 end
-arch blocked
-x 12
-y 3
-end
-arch marble
+arch cave_15
 x 12
 y 4
 end
-arch blocked
-x 12
-y 4
-end
-arch marble
+arch cave_15
 x 12
 y 5
 end
-arch blocked
-x 12
-y 5
-end
-arch marble
+arch cave_15
 x 12
 y 6
 end
-arch blocked
-x 12
-y 6
-end
-arch marble
+arch cave_15
 x 12
 y 7
 end
-arch blocked
-x 12
-y 7
-end
-arch marble
+arch cave_15
 x 12
 y 8
 end
-arch blocked
-x 12
-y 8
-end
-arch marble
+arch cave_15
 x 12
 y 9
 end
-arch blocked
-x 12
-y 9
-end
-arch marble
+arch cave_15
 x 12
 y 10
 end
-arch blocked
-x 12
-y 10
-end
-arch marble
+arch cave_15
 x 12
 y 11
 end
-arch blocked
-x 12
-y 11
-end
-arch marble
+arch cave_15
 x 12
 y 12
 end
-arch blocked
-x 12
-y 12
-end
-arch marble
+arch cave_15
 x 12
 y 13
 end
-arch blocked
-x 12
-y 13
-end
-arch marble
+arch cave_15
 x 12
 y 14
 end
-arch blocked
-x 12
-y 14
-end
-arch marble
+arch cave_15
 x 12
 y 15
 end
-arch blocked
-x 12
-y 15
-end
-arch marble
+arch cave_15
 x 12
 y 16
 end
-arch blocked
-x 12
-y 16
-end
-arch marble
+arch cave_15
 x 12
 y 17
 end
-arch blocked
-x 12
-y 17
-end
-arch marble
+arch cave_15
 x 12
 y 18
 end
-arch blocked
-x 12
-y 18
-end
-arch marble
+arch cave_15
 x 12
 y 19
 end
-arch blocked
-x 12
-y 19
-end
-arch marble
+arch cave_15
 x 12
 y 20
 end
-arch blocked
-x 12
-y 20
-end
-arch marble
+arch cave_15
 x 12
 y 21
 end
-arch blocked
-x 12
-y 21
-end
-arch marble
+arch cave_15
 x 12
 y 22
 end
-arch blocked
-x 12
-y 22
-end
-arch marble
+arch cave_15
 x 12
 y 23
 end
-arch blocked
-x 12
-y 23
-end
-arch marble
-x 12
-y 24
-end
-arch blocked
+arch cave_15
 x 12
 y 24
 end
@@ -9114,10 +7619,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 83
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9130,10 +7634,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 84
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -9150,10 +7653,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 85
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9166,10 +7668,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 86
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9182,10 +7683,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 87
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9198,10 +7698,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 88
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9214,10 +7713,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 89
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9230,10 +7728,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 90
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9246,10 +7743,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 91
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9280,10 +7776,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 92
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch mover_1
@@ -9416,201 +7911,102 @@ arch cave1
 x 12
 y 117
 end
-arch marble
+arch cave_15
 x 13
 end
-arch blocked
-x 13
-end
-arch marble
+arch cave_15
 x 13
 y 1
 end
-arch blocked
-x 13
-y 1
-end
-arch marble
+arch cave_15
 x 13
 y 2
 end
-arch blocked
-x 13
-y 2
-end
-arch marble
+arch cave_15
 x 13
 y 3
 end
-arch blocked
-x 13
-y 3
-end
-arch marble
+arch cave_15
 x 13
 y 4
 end
-arch blocked
-x 13
-y 4
-end
-arch marble
+arch cave_15
 x 13
 y 5
 end
-arch blocked
-x 13
-y 5
-end
-arch marble
+arch cave_15
 x 13
 y 6
 end
-arch blocked
-x 13
-y 6
-end
-arch marble
+arch cave_15
 x 13
 y 7
 end
-arch blocked
-x 13
-y 7
-end
-arch marble
+arch cave_15
 x 13
 y 8
 end
-arch blocked
-x 13
-y 8
-end
-arch marble
+arch cave_15
 x 13
 y 9
 end
-arch blocked
-x 13
-y 9
-end
-arch marble
+arch cave_15
 x 13
 y 10
 end
-arch blocked
-x 13
-y 10
-end
-arch marble
+arch cave_15
 x 13
 y 11
 end
-arch blocked
-x 13
-y 11
-end
-arch marble
+arch cave_15
 x 13
 y 12
 end
-arch blocked
-x 13
-y 12
-end
-arch marble
+arch cave_15
 x 13
 y 13
 end
-arch blocked
-x 13
-y 13
-end
-arch marble
+arch cave_15
 x 13
 y 14
 end
-arch blocked
-x 13
-y 14
-end
-arch marble
+arch cave_15
 x 13
 y 15
 end
-arch blocked
-x 13
-y 15
-end
-arch marble
+arch cave_15
 x 13
 y 16
 end
-arch blocked
-x 13
-y 16
-end
-arch marble
+arch cave_15
 x 13
 y 17
 end
-arch blocked
-x 13
-y 17
-end
-arch marble
+arch cave_15
 x 13
 y 18
 end
-arch blocked
-x 13
-y 18
-end
-arch marble
+arch cave_15
 x 13
 y 19
 end
-arch blocked
-x 13
-y 19
-end
-arch marble
+arch cave_15
 x 13
 y 20
 end
-arch blocked
-x 13
-y 20
-end
-arch marble
+arch cave_15
 x 13
 y 21
 end
-arch blocked
-x 13
-y 21
-end
-arch marble
+arch cave_15
 x 13
 y 22
 end
-arch blocked
-x 13
-y 22
-end
-arch marble
+arch cave_15
 x 13
 y 23
 end
-arch blocked
-x 13
-y 23
-end
-arch marble
-x 13
-y 24
-end
-arch blocked
+arch cave_15
 x 13
 y 24
 end
@@ -9936,10 +8332,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 83
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9952,10 +8347,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 84
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9968,10 +8362,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 85
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -9984,10 +8377,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 86
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10000,10 +8392,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 87
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10016,10 +8407,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 88
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10032,10 +8422,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 89
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10048,10 +8437,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 90
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10064,10 +8452,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 91
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -10102,10 +8489,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 92
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch mover_1
@@ -10222,229 +8608,118 @@ arch oil_sea
 x 13
 y 114
 end
-arch cave20
+arch cave22
 x 13
 y 114
 end
-arch oil_sea
+arch cave_15
 x 13
 y 115
 end
-arch blocked
-x 13
-y 115
-end
-arch oil_sea
+arch cave_15
 x 13
 y 116
 end
-arch blocked
-x 13
-y 116
-end
-arch oil_sea
+arch cave_15
 x 13
 y 117
 end
-arch blocked
-x 13
-y 117
-end
-arch marble
+arch cave_15
 x 14
 end
-arch blocked
-x 14
-end
-arch marble
+arch cave_15
 x 14
 y 1
 end
-arch blocked
-x 14
-y 1
-end
-arch marble
+arch cave_15
 x 14
 y 2
 end
-arch blocked
-x 14
-y 2
-end
-arch marble
+arch cave_15
 x 14
 y 3
 end
-arch blocked
-x 14
-y 3
-end
-arch marble
+arch cave_15
 x 14
 y 4
 end
-arch blocked
-x 14
-y 4
-end
-arch marble
+arch cave_15
 x 14
 y 5
 end
-arch blocked
-x 14
-y 5
-end
-arch marble
+arch cave_15
 x 14
 y 6
 end
-arch blocked
-x 14
-y 6
-end
-arch marble
+arch cave_15
 x 14
 y 7
 end
-arch blocked
-x 14
-y 7
-end
-arch marble
+arch cave_15
 x 14
 y 8
 end
-arch blocked
-x 14
-y 8
-end
-arch marble
+arch cave_15
 x 14
 y 9
 end
-arch blocked
-x 14
-y 9
-end
-arch marble
+arch cave_15
 x 14
 y 10
 end
-arch blocked
-x 14
-y 10
-end
-arch marble
+arch cave_15
 x 14
 y 11
 end
-arch blocked
-x 14
-y 11
-end
-arch marble
+arch cave_15
 x 14
 y 12
 end
-arch blocked
-x 14
-y 12
-end
-arch marble
+arch cave_15
 x 14
 y 13
 end
-arch blocked
-x 14
-y 13
-end
-arch marble
+arch cave_15
 x 14
 y 14
 end
-arch blocked
-x 14
-y 14
-end
-arch marble
+arch cave_15
 x 14
 y 15
 end
-arch blocked
-x 14
-y 15
-end
-arch marble
+arch cave_15
 x 14
 y 16
 end
-arch blocked
-x 14
-y 16
-end
-arch marble
+arch cave_15
 x 14
 y 17
 end
-arch blocked
-x 14
-y 17
-end
-arch marble
+arch cave_15
 x 14
 y 18
 end
-arch blocked
-x 14
-y 18
-end
-arch marble
+arch cave_15
 x 14
 y 19
 end
-arch blocked
-x 14
-y 19
-end
-arch marble
+arch cave_15
 x 14
 y 20
 end
-arch blocked
-x 14
-y 20
-end
-arch marble
+arch cave_15
 x 14
 y 21
 end
-arch blocked
-x 14
-y 21
-end
-arch marble
+arch cave_15
 x 14
 y 22
 end
-arch blocked
-x 14
-y 22
-end
-arch marble
+arch cave_15
 x 14
 y 23
 end
-arch blocked
-x 14
-y 23
-end
-arch marble
-x 14
-y 24
-end
-arch blocked
+arch cave_15
 x 14
 y 24
 end
@@ -10452,7 +8727,7 @@ arch marble
 x 14
 y 25
 end
-arch cave19
+arch cave25
 x 14
 y 25
 end
@@ -10782,10 +9057,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 83
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10798,10 +9072,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 84
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10814,10 +9087,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 85
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch djinn_magenta_big
@@ -10831,6 +9103,10 @@ randomitems none
 arch spell_magic_bullet
 end
 end
+arch quest_advance_death
+name navar/Ali-treasure 0-30>40
+unique 1
+end
 end
 arch detector
 slaying rod of ali
@@ -10842,10 +9118,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 86
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10858,10 +9133,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 87
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -10878,10 +9152,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 88
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10894,10 +9167,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 89
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10910,10 +9182,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 90
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10926,10 +9197,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 91
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -10960,10 +9230,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 92
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch mover_1
@@ -11064,7 +9333,7 @@ arch oil_sea
 x 14
 y 112
 end
-arch cave17
+arch cave23
 x 14
 y 112
 end
@@ -11072,173 +9341,90 @@ arch oil_sea
 x 14
 y 113
 end
-arch blocked
+arch cave_15
 x 14
 y 113
 end
-arch oil_sea
+arch cave_15
 x 14
 y 114
 end
-arch blocked
-x 14
-y 114
-end
-arch oil_sea
+arch cave_15
 x 14
 y 115
 end
-arch blocked
-x 14
-y 115
-end
-arch oil_sea
+arch cave_15
 x 14
 y 116
 end
-arch blocked
-x 14
-y 116
-end
-arch oil_sea
+arch cave_15
 x 14
 y 117
 end
-arch blocked
-x 14
-y 117
-end
-arch marble
+arch cave_15
 x 15
 end
-arch blocked
-x 15
-end
-arch marble
+arch cave_15
 x 15
 y 1
 end
-arch blocked
-x 15
-y 1
-end
-arch marble
+arch cave_15
 x 15
 y 2
 end
-arch blocked
-x 15
-y 2
-end
-arch marble
+arch cave_15
 x 15
 y 3
 end
-arch blocked
-x 15
-y 3
-end
-arch marble
+arch cave_15
 x 15
 y 4
 end
-arch blocked
-x 15
-y 4
-end
-arch marble
+arch cave_15
 x 15
 y 5
 end
-arch blocked
-x 15
-y 5
-end
-arch marble
+arch cave_15
 x 15
 y 6
 end
-arch blocked
-x 15
-y 6
-end
-arch marble
+arch cave_15
 x 15
 y 7
 end
-arch blocked
-x 15
-y 7
-end
-arch marble
+arch cave_15
 x 15
 y 8
 end
-arch blocked
-x 15
-y 8
-end
-arch marble
+arch cave_15
 x 15
 y 9
 end
-arch blocked
-x 15
-y 9
-end
-arch marble
+arch cave_15
 x 15
 y 10
 end
-arch blocked
-x 15
-y 10
-end
-arch marble
+arch cave_15
 x 15
 y 11
 end
-arch blocked
-x 15
-y 11
-end
-arch marble
+arch cave_15
 x 15
 y 12
 end
-arch blocked
-x 15
-y 12
-end
-arch marble
+arch cave_15
 x 15
 y 13
 end
-arch blocked
-x 15
-y 13
-end
-arch marble
+arch cave_15
 x 15
 y 14
 end
-arch blocked
-x 15
-y 14
-end
-arch marble
+arch cave_15
 x 15
 y 15
 end
-arch blocked
-x 15
-y 15
-end
-arch marble
-x 15
-y 16
-end
-arch blocked
+arch cave_15
 x 15
 y 16
 end
@@ -11246,7 +9432,7 @@ arch marble
 x 15
 y 17
 end
-arch cave18
+arch cave24
 x 15
 y 17
 end
@@ -11262,55 +9448,31 @@ arch marble
 x 15
 y 19
 end
-arch cave17
+arch cave23
 x 15
 y 19
 end
-arch marble
+arch cave_15
 x 15
 y 20
 end
-arch blocked
-x 15
-y 20
-end
-arch marble
+arch cave_15
 x 15
 y 21
 end
-arch blocked
-x 15
-y 21
-end
-arch marble
+arch cave_15
 x 15
 y 22
 end
-arch blocked
-x 15
-y 22
-end
-arch marble
+arch cave_15
 x 15
 y 23
 end
-arch blocked
-x 15
-y 23
-end
-arch marble
+arch cave_15
 x 15
 y 24
 end
-arch blocked
-x 15
-y 24
-end
-arch marble
-x 15
-y 25
-end
-arch blocked
+arch cave_15
 x 15
 y 25
 end
@@ -11628,10 +9790,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 83
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -11644,10 +9805,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 84
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -11660,10 +9820,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 85
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -11676,10 +9835,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 86
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -11692,10 +9850,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 87
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -11708,10 +9865,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 88
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -11724,10 +9880,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 89
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -11740,10 +9895,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 90
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -11756,10 +9910,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 91
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -11790,10 +9943,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 92
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch mover_1
@@ -11918,7 +10070,7 @@ arch oil_sea
 x 15
 y 116
 end
-arch cave17
+arch cave23
 x 15
 y 116
 end
@@ -11926,133 +10078,70 @@ arch oil_sea
 x 15
 y 117
 end
-arch blocked
+arch cave_15
 x 15
 y 117
 end
-arch marble
+arch cave_15
 x 16
 end
-arch blocked
-x 16
-end
-arch marble
+arch cave_15
 x 16
 y 1
 end
-arch blocked
-x 16
-y 1
-end
-arch marble
+arch cave_15
 x 16
 y 2
 end
-arch blocked
-x 16
-y 2
-end
-arch marble
+arch cave_15
 x 16
 y 3
 end
-arch blocked
-x 16
-y 3
-end
-arch marble
+arch cave_15
 x 16
 y 4
 end
-arch blocked
-x 16
-y 4
-end
-arch marble
+arch cave_15
 x 16
 y 5
 end
-arch blocked
-x 16
-y 5
-end
-arch marble
+arch cave_15
 x 16
 y 6
 end
-arch blocked
-x 16
-y 6
-end
-arch marble
+arch cave_15
 x 16
 y 7
 end
-arch blocked
-x 16
-y 7
-end
-arch marble
+arch cave_15
 x 16
 y 8
 end
-arch blocked
-x 16
-y 8
-end
-arch marble
+arch cave_15
 x 16
 y 9
 end
-arch blocked
-x 16
-y 9
-end
-arch marble
+arch cave_15
 x 16
 y 10
 end
-arch blocked
-x 16
-y 10
-end
-arch marble
+arch cave_15
 x 16
 y 11
 end
-arch blocked
-x 16
-y 11
-end
-arch marble
+arch cave_15
 x 16
 y 12
 end
-arch blocked
-x 16
-y 12
-end
-arch marble
+arch cave_15
 x 16
 y 13
 end
-arch blocked
-x 16
-y 13
-end
-arch marble
+arch cave_15
 x 16
 y 14
 end
-arch blocked
-x 16
-y 14
-end
-arch marble
-x 16
-y 15
-end
-arch blocked
+arch cave_15
 x 16
 y 15
 end
@@ -12060,7 +10149,7 @@ arch marble
 x 16
 y 16
 end
-arch cave18
+arch cave24
 x 16
 y 16
 end
@@ -12088,39 +10177,23 @@ arch marble
 x 16
 y 20
 end
-arch cave17
+arch cave23
 x 16
 y 20
 end
-arch marble
+arch cave_15
 x 16
 y 21
 end
-arch blocked
-x 16
-y 21
-end
-arch marble
+arch cave_15
 x 16
 y 22
 end
-arch blocked
-x 16
-y 22
-end
-arch marble
+arch cave_15
 x 16
 y 23
 end
-arch blocked
-x 16
-y 23
-end
-arch marble
-x 16
-y 24
-end
-arch blocked
+arch cave_15
 x 16
 y 24
 end
@@ -12454,10 +10527,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 83
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -12470,10 +10542,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 84
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -12486,10 +10557,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 85
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -12502,10 +10572,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 86
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -12518,10 +10587,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 87
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -12534,10 +10602,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 88
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -12550,10 +10617,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 89
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -12566,10 +10632,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 90
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -12582,10 +10647,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 91
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -12616,10 +10680,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 16
 y 92
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch mover_1
@@ -12740,129 +10803,66 @@ arch cave3
 x 16
 y 117
 end
-arch marble
+arch cave_15
 x 17
 end
-arch blocked
-x 17
-end
-arch marble
+arch cave_15
 x 17
 y 1
 end
-arch blocked
-x 17
-y 1
-end
-arch marble
+arch cave_15
 x 17
 y 2
 end
-arch blocked
-x 17
-y 2
-end
-arch marble
+arch cave_15
 x 17
 y 3
 end
-arch blocked
-x 17
-y 3
-end
-arch marble
+arch cave_15
 x 17
 y 4
 end
-arch blocked
-x 17
-y 4
-end
-arch marble
+arch cave_15
 x 17
 y 5
 end
-arch blocked
-x 17
-y 5
-end
-arch marble
+arch cave_15
 x 17
 y 6
 end
-arch blocked
-x 17
-y 6
-end
-arch marble
+arch cave_15
 x 17
 y 7
 end
-arch blocked
-x 17
-y 7
-end
-arch marble
+arch cave_15
 x 17
 y 8
 end
-arch blocked
-x 17
-y 8
-end
-arch marble
+arch cave_15
 x 17
 y 9
 end
-arch blocked
-x 17
-y 9
-end
-arch marble
+arch cave_15
 x 17
 y 10
 end
-arch blocked
-x 17
-y 10
-end
-arch marble
+arch cave_15
 x 17
 y 11
 end
-arch blocked
-x 17
-y 11
-end
-arch marble
+arch cave_15
 x 17
 y 12
 end
-arch blocked
-x 17
-y 12
-end
-arch marble
+arch cave_15
 x 17
 y 13
 end
-arch blocked
-x 17
-y 13
-end
-arch marble
+arch cave_15
 x 17
 y 14
 end
-arch blocked
-x 17
-y 14
-end
-arch marble
-x 17
-y 15
-end
-arch blocked
+arch cave_15
 x 17
 y 15
 end
@@ -12898,19 +10898,11 @@ arch cave2
 x 17
 y 20
 end
-arch marble
+arch cave_15
 x 17
 y 21
 end
-arch blocked
-x 17
-y 21
-end
-arch marble
-x 17
-y 22
-end
-arch blocked
+arch cave_15
 x 17
 y 22
 end
@@ -12918,7 +10910,7 @@ arch marble
 x 17
 y 23
 end
-arch cave18
+arch cave24
 x 17
 y 23
 end
@@ -13248,10 +11240,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 83
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -13264,10 +11255,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 84
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -13280,10 +11270,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 85
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -13296,10 +11285,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 86
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -13312,10 +11300,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 87
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -13328,10 +11315,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 88
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -13344,10 +11330,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 89
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -13364,10 +11349,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 90
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -13380,10 +11364,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 91
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -13414,10 +11397,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 17
 y 92
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch mover_1
@@ -13546,129 +11528,66 @@ arch cave1
 x 17
 y 117
 end
-arch marble
+arch cave_15
 x 18
 end
-arch blocked
-x 18
-end
-arch marble
+arch cave_15
 x 18
 y 1
 end
-arch blocked
-x 18
-y 1
-end
-arch marble
+arch cave_15
 x 18
 y 2
 end
-arch blocked
-x 18
-y 2
-end
-arch marble
+arch cave_15
 x 18
 y 3
 end
-arch blocked
-x 18
-y 3
-end
-arch marble
+arch cave_15
 x 18
 y 4
 end
-arch blocked
-x 18
-y 4
-end
-arch marble
+arch cave_15
 x 18
 y 5
 end
-arch blocked
-x 18
-y 5
-end
-arch marble
+arch cave_15
 x 18
 y 6
 end
-arch blocked
-x 18
-y 6
-end
-arch marble
+arch cave_15
 x 18
 y 7
 end
-arch blocked
-x 18
-y 7
-end
-arch marble
+arch cave_15
 x 18
 y 8
 end
-arch blocked
-x 18
-y 8
-end
-arch marble
+arch cave_15
 x 18
 y 9
 end
-arch blocked
-x 18
-y 9
-end
-arch marble
+arch cave_15
 x 18
 y 10
 end
-arch blocked
-x 18
-y 10
-end
-arch marble
+arch cave_15
 x 18
 y 11
 end
-arch blocked
-x 18
-y 11
-end
-arch marble
+arch cave_15
 x 18
 y 12
 end
-arch blocked
-x 18
-y 12
-end
-arch marble
+arch cave_15
 x 18
 y 13
 end
-arch blocked
-x 18
-y 13
-end
-arch marble
+arch cave_15
 x 18
 y 14
 end
-arch blocked
-x 18
-y 14
-end
-arch marble
-x 18
-y 15
-end
-arch blocked
+arch cave_15
 x 18
 y 15
 end
@@ -13720,11 +11639,7 @@ arch cave17
 x 18
 y 21
 end
-arch marble
-x 18
-y 22
-end
-arch blocked
+arch cave_15
 x 18
 y 22
 end
@@ -13732,7 +11647,7 @@ arch marble
 x 18
 y 23
 end
-arch cave19
+arch cave25
 x 18
 y 23
 end
@@ -13930,7 +11845,6 @@ y 63
 end
 arch earthwall
 name wall
-name_pl wall
 face cave21.111
 hp 32000
 maxhp 32000
@@ -13943,7 +11857,6 @@ y 64
 end
 arch earthwall
 name wall
-name_pl wall
 face cave21.111
 hp 32000
 maxhp 32000
@@ -14072,10 +11985,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 83
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14088,10 +12000,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 84
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -14108,10 +12019,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 85
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14124,10 +12034,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 86
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14140,10 +12049,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 87
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14156,10 +12064,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 88
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14172,10 +12079,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 89
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14188,10 +12094,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 90
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14204,10 +12109,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 91
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14238,10 +12142,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 18
 y 92
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch mover_1
@@ -14366,149 +12269,78 @@ arch oil_sea
 x 18
 y 115
 end
-arch cave20
+arch cave22
 x 18
 y 115
 end
-arch oil_sea
+arch cave_15
 x 18
 y 116
 end
-arch blocked
-x 18
-y 116
-end
-arch oil_sea
+arch cave_15
 x 18
 y 117
 end
-arch blocked
-x 18
-y 117
-end
-arch marble
+arch cave_15
 x 19
 end
-arch blocked
-x 19
-end
-arch marble
+arch cave_15
 x 19
 y 1
 end
-arch blocked
-x 19
-y 1
-end
-arch marble
+arch cave_15
 x 19
 y 2
 end
-arch blocked
-x 19
-y 2
-end
-arch marble
+arch cave_15
 x 19
 y 3
 end
-arch blocked
-x 19
-y 3
-end
-arch marble
+arch cave_15
 x 19
 y 4
 end
-arch blocked
-x 19
-y 4
-end
-arch marble
+arch cave_15
 x 19
 y 5
 end
-arch blocked
-x 19
-y 5
-end
-arch marble
+arch cave_15
 x 19
 y 6
 end
-arch blocked
-x 19
-y 6
-end
-arch marble
+arch cave_15
 x 19
 y 7
 end
-arch blocked
-x 19
-y 7
-end
-arch marble
+arch cave_15
 x 19
 y 8
 end
-arch blocked
-x 19
-y 8
-end
-arch marble
+arch cave_15
 x 19
 y 9
 end
-arch blocked
-x 19
-y 9
-end
-arch marble
+arch cave_15
 x 19
 y 10
 end
-arch blocked
-x 19
-y 10
-end
-arch marble
+arch cave_15
 x 19
 y 11
 end
-arch blocked
-x 19
-y 11
-end
-arch marble
+arch cave_15
 x 19
 y 12
 end
-arch blocked
-x 19
-y 12
-end
-arch marble
+arch cave_15
 x 19
 y 13
 end
-arch blocked
-x 19
-y 13
-end
-arch marble
+arch cave_15
 x 19
 y 14
 end
-arch blocked
-x 19
-y 14
-end
-arch marble
-x 19
-y 15
-end
-arch blocked
+arch cave_15
 x 19
 y 15
 end
@@ -14552,11 +12384,7 @@ arch cave20
 x 19
 y 21
 end
-arch marble
-x 19
-y 22
-end
-arch blocked
+arch cave_15
 x 19
 y 22
 end
@@ -14894,10 +12722,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 83
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14910,10 +12737,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 84
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14926,10 +12752,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 85
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14942,10 +12767,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 86
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14958,10 +12782,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 87
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14974,10 +12797,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 88
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -14990,10 +12812,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 89
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15006,10 +12827,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 90
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15022,10 +12842,9 @@ connected 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 91
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15056,10 +12875,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 19
 y 92
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch mover_1
@@ -15156,189 +12974,98 @@ arch oil_sea
 x 19
 y 110
 end
-arch cave20
+arch cave22
 x 19
 y 110
 end
-arch oil_sea
+arch cave_15
 x 19
 y 111
 end
-arch blocked
-x 19
-y 111
-end
-arch oil_sea
+arch cave_15
 x 19
 y 112
 end
-arch blocked
-x 19
-y 112
-end
-arch oil_sea
+arch cave_15
 x 19
 y 113
 end
-arch blocked
-x 19
-y 113
-end
-arch oil_sea
+arch cave_15
 x 19
 y 114
 end
-arch blocked
-x 19
-y 114
-end
-arch oil_sea
+arch cave_15
 x 19
 y 115
 end
-arch blocked
-x 19
-y 115
-end
-arch oil_sea
+arch cave_15
 x 19
 y 116
 end
-arch blocked
-x 19
-y 116
-end
-arch oil_sea
+arch cave_15
 x 19
 y 117
 end
-arch blocked
-x 19
-y 117
-end
-arch marble
+arch cave_15
 x 20
 end
-arch blocked
-x 20
-end
-arch marble
+arch cave_15
 x 20
 y 1
 end
-arch blocked
-x 20
-y 1
-end
-arch marble
+arch cave_15
 x 20
 y 2
 end
-arch blocked
-x 20
-y 2
-end
-arch marble
+arch cave_15
 x 20
 y 3
 end
-arch blocked
-x 20
-y 3
-end
-arch marble
+arch cave_15
 x 20
 y 4
 end
-arch blocked
-x 20
-y 4
-end
-arch marble
+arch cave_15
 x 20
 y 5
 end
-arch blocked
-x 20
-y 5
-end
-arch marble
+arch cave_15
 x 20
 y 6
 end
-arch blocked
-x 20
-y 6
-end
-arch marble
+arch cave_15
 x 20
 y 7
 end
-arch blocked
-x 20
-y 7
-end
-arch marble
+arch cave_15
 x 20
 y 8
 end
-arch blocked
-x 20
-y 8
-end
-arch marble
+arch cave_15
 x 20
 y 9
 end
-arch blocked
-x 20
-y 9
-end
-arch marble
+arch cave_15
 x 20
 y 10
 end
-arch blocked
-x 20
-y 10
-end
-arch marble
+arch cave_15
 x 20
 y 11
 end
-arch blocked
-x 20
-y 11
-end
-arch marble
+arch cave_15
 x 20
 y 12
 end
-arch blocked
-x 20
-y 12
-end
-arch marble
+arch cave_15
 x 20
 y 13
 end
-arch blocked
-x 20
-y 13
-end
-arch marble
+arch cave_15
 x 20
 y 14
 end
-arch blocked
-x 20
-y 14
-end
-arch marble
-x 20
-y 15
-end
-arch blocked
+arch cave_15
 x 20
 y 15
 end
@@ -15346,7 +13073,7 @@ arch marble
 x 20
 y 16
 end
-arch cave19
+arch cave25
 x 20
 y 16
 end
@@ -15382,7 +13109,7 @@ arch marble
 x 20
 y 21
 end
-arch cave18
+arch cave24
 x 20
 y 21
 end
@@ -15712,10 +13439,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 83
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15746,10 +13472,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 84
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15780,10 +13505,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 85
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15814,10 +13538,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 86
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15848,10 +13571,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 87
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15882,10 +13604,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 88
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15916,10 +13637,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 89
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15950,10 +13670,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 90
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -15984,10 +13703,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 91
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch detector
@@ -16018,10 +13736,9 @@ attacktype 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 20
 y 92
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch mover_1
@@ -16138,173 +13855,90 @@ arch oil_sea
 x 20
 y 112
 end
-arch cave17
+arch cave23
 x 20
 y 112
 end
-arch oil_sea
+arch cave_15
 x 20
 y 113
 end
-arch blocked
-x 20
-y 113
-end
-arch oil_sea
+arch cave_15
 x 20
 y 114
 end
-arch blocked
-x 20
-y 114
-end
-arch oil_sea
+arch cave_15
 x 20
 y 115
 end
-arch blocked
-x 20
-y 115
-end
-arch oil_sea
+arch cave_15
 x 20
 y 116
 end
-arch blocked
-x 20
-y 116
-end
-arch oil_sea
+arch cave_15
 x 20
 y 117
 end
-arch blocked
-x 20
-y 117
-end
-arch marble
+arch cave_15
 x 21
 end
-arch blocked
-x 21
-end
-arch marble
+arch cave_15
 x 21
 y 1
 end
-arch blocked
-x 21
-y 1
-end
-arch marble
+arch cave_15
 x 21
 y 2
 end
-arch blocked
-x 21
-y 2
-end
-arch marble
+arch cave_15
 x 21
 y 3
 end
-arch blocked
-x 21
-y 3
-end
-arch marble
+arch cave_15
 x 21
 y 4
 end
-arch blocked
-x 21
-y 4
-end
-arch marble
+arch cave_15
 x 21
 y 5
 end
-arch blocked
-x 21
-y 5
-end
-arch marble
+arch cave_15
 x 21
 y 6
 end
-arch blocked
-x 21
-y 6
-end
-arch marble
+arch cave_15
 x 21
 y 7
 end
-arch blocked
-x 21
-y 7
-end
-arch marble
+arch cave_15
 x 21
 y 8
 end
-arch blocked
-x 21
-y 8
-end
-arch marble
+arch cave_15
 x 21
 y 9
 end
-arch blocked
-x 21
-y 9
-end
-arch marble
+arch cave_15
 x 21
 y 10
 end
-arch blocked
-x 21
-y 10
-end
-arch marble
+arch cave_15
 x 21
 y 11
 end
-arch blocked
-x 21
-y 11
-end
-arch marble
+arch cave_15
 x 21
 y 12
 end
-arch blocked
-x 21
-y 12
-end
-arch marble
+arch cave_15
 x 21
 y 13
 end
-arch blocked
-x 21
-y 13
-end
-arch marble
+arch cave_15
 x 21
 y 14
 end
-arch blocked
-x 21
-y 14
-end
-arch marble
-x 21
-y 15
-end
-arch blocked
+arch cave_15
 x 21
 y 15
 end
@@ -16312,7 +13946,7 @@ arch marble
 x 21
 y 16
 end
-arch cave18
+arch cave24
 x 21
 y 16
 end
@@ -16900,129 +14534,66 @@ arch cave3
 x 21
 y 117
 end
-arch marble
+arch cave_15
 x 22
 end
-arch blocked
-x 22
-end
-arch marble
+arch cave_15
 x 22
 y 1
 end
-arch blocked
-x 22
-y 1
-end
-arch marble
+arch cave_15
 x 22
 y 2
 end
-arch blocked
-x 22
-y 2
-end
-arch marble
+arch cave_15
 x 22
 y 3
 end
-arch blocked
-x 22
-y 3
-end
-arch marble
+arch cave_15
 x 22
 y 4
 end
-arch blocked
-x 22
-y 4
-end
-arch marble
+arch cave_15
 x 22
 y 5
 end
-arch blocked
-x 22
-y 5
-end
-arch marble
+arch cave_15
 x 22
 y 6
 end
-arch blocked
-x 22
-y 6
-end
-arch marble
+arch cave_15
 x 22
 y 7
 end
-arch blocked
-x 22
-y 7
-end
-arch marble
+arch cave_15
 x 22
 y 8
 end
-arch blocked
-x 22
-y 8
-end
-arch marble
+arch cave_15
 x 22
 y 9
 end
-arch blocked
-x 22
-y 9
-end
-arch marble
+arch cave_15
 x 22
 y 10
 end
-arch blocked
-x 22
-y 10
-end
-arch marble
+arch cave_15
 x 22
 y 11
 end
-arch blocked
-x 22
-y 11
-end
-arch marble
+arch cave_15
 x 22
 y 12
 end
-arch blocked
-x 22
-y 12
-end
-arch marble
+arch cave_15
 x 22
 y 13
 end
-arch blocked
-x 22
-y 13
-end
-arch marble
+arch cave_15
 x 22
 y 14
 end
-arch blocked
-x 22
-y 14
-end
-arch marble
-x 22
-y 15
-end
-arch blocked
+arch cave_15
 x 22
 y 15
 end
@@ -17030,7 +14601,7 @@ arch marble
 x 22
 y 16
 end
-arch cave19
+arch cave25
 x 22
 y 16
 end
@@ -17529,137 +15100,70 @@ arch cave1
 x 22
 y 117
 end
-arch marble
+arch cave_15
 x 23
 end
-arch blocked
-x 23
-end
-arch marble
+arch cave_15
 x 23
 y 1
 end
-arch blocked
-x 23
-y 1
-end
-arch marble
+arch cave_15
 x 23
 y 2
 end
-arch blocked
-x 23
-y 2
-end
-arch marble
+arch cave_15
 x 23
 y 3
 end
-arch blocked
-x 23
-y 3
-end
-arch marble
+arch cave_15
 x 23
 y 4
 end
-arch blocked
-x 23
-y 4
-end
-arch marble
+arch cave_15
 x 23
 y 5
 end
-arch blocked
-x 23
-y 5
-end
-arch marble
+arch cave_15
 x 23
 y 6
 end
-arch blocked
-x 23
-y 6
-end
-arch marble
+arch cave_15
 x 23
 y 7
 end
-arch blocked
-x 23
-y 7
-end
-arch marble
+arch cave_15
 x 23
 y 8
 end
-arch blocked
-x 23
-y 8
-end
-arch marble
+arch cave_15
 x 23
 y 9
 end
-arch blocked
-x 23
-y 9
-end
-arch marble
+arch cave_15
 x 23
 y 10
 end
-arch blocked
-x 23
-y 10
-end
-arch marble
+arch cave_15
 x 23
 y 11
 end
-arch blocked
-x 23
-y 11
-end
-arch marble
+arch cave_15
 x 23
 y 12
 end
-arch blocked
-x 23
-y 12
-end
-arch marble
+arch cave_15
 x 23
 y 13
 end
-arch blocked
-x 23
-y 13
-end
-arch marble
+arch cave_15
 x 23
 y 14
 end
-arch blocked
-x 23
-y 14
-end
-arch marble
+arch cave_15
 x 23
 y 15
 end
-arch blocked
-x 23
-y 15
-end
-arch marble
-x 23
-y 16
-end
-arch blocked
+arch cave_15
 x 23
 y 16
 end
@@ -17667,7 +15171,7 @@ arch marble
 x 23
 y 17
 end
-arch cave19
+arch cave25
 x 23
 y 17
 end
@@ -18155,173 +15659,90 @@ arch oil_sea
 x 23
 y 115
 end
-arch cave20
+arch cave22
 x 23
 y 115
 end
-arch oil_sea
+arch cave_15
 x 23
 y 116
 end
-arch blocked
-x 23
-y 116
-end
-arch oil_sea
+arch cave_15
 x 23
 y 117
 end
-arch blocked
-x 23
-y 117
-end
-arch marble
+arch cave_15
 x 24
 end
-arch blocked
-x 24
-end
-arch marble
+arch cave_15
 x 24
 y 1
 end
-arch blocked
-x 24
-y 1
-end
-arch marble
+arch cave_15
 x 24
 y 2
 end
-arch blocked
-x 24
-y 2
-end
-arch marble
+arch cave_15
 x 24
 y 3
 end
-arch blocked
-x 24
-y 3
-end
-arch marble
+arch cave_15
 x 24
 y 4
 end
-arch blocked
-x 24
-y 4
-end
-arch marble
+arch cave_15
 x 24
 y 5
 end
-arch blocked
-x 24
-y 5
-end
-arch marble
+arch cave_15
 x 24
 y 6
 end
-arch blocked
-x 24
-y 6
-end
-arch marble
+arch cave_15
 x 24
 y 7
 end
-arch blocked
-x 24
-y 7
-end
-arch marble
+arch cave_15
 x 24
 y 8
 end
-arch blocked
-x 24
-y 8
-end
-arch marble
+arch cave_15
 x 24
 y 9
 end
-arch blocked
-x 24
-y 9
-end
-arch marble
+arch cave_15
 x 24
 y 10
 end
-arch blocked
-x 24
-y 10
-end
-arch marble
+arch cave_15
 x 24
 y 11
 end
-arch blocked
-x 24
-y 11
-end
-arch marble
+arch cave_15
 x 24
 y 12
 end
-arch blocked
-x 24
-y 12
-end
-arch marble
+arch cave_15
 x 24
 y 13
 end
-arch blocked
-x 24
-y 13
-end
-arch marble
+arch cave_15
 x 24
 y 14
 end
-arch blocked
-x 24
-y 14
-end
-arch marble
+arch cave_15
 x 24
 y 15
 end
-arch blocked
-x 24
-y 15
-end
-arch marble
+arch cave_15
 x 24
 y 16
 end
-arch blocked
-x 24
-y 16
-end
-arch marble
+arch cave_15
 x 24
 y 17
 end
-arch blocked
-x 24
-y 17
-end
-arch marble
-x 24
-y 18
-end
-arch blocked
+arch cave_15
 x 24
 y 18
 end
@@ -18773,189 +16194,98 @@ arch oil_sea
 x 24
 y 111
 end
-arch cave20
+arch cave22
 x 24
 y 111
 end
-arch oil_sea
+arch cave_15
 x 24
 y 112
 end
-arch blocked
-x 24
-y 112
-end
-arch oil_sea
+arch cave_15
 x 24
 y 113
 end
-arch blocked
-x 24
-y 113
-end
-arch oil_sea
+arch cave_15
 x 24
 y 114
 end
-arch blocked
-x 24
-y 114
-end
-arch oil_sea
+arch cave_15
 x 24
 y 115
 end
-arch blocked
-x 24
-y 115
-end
-arch oil_sea
+arch cave_15
 x 24
 y 116
 end
-arch blocked
-x 24
-y 116
-end
-arch oil_sea
+arch cave_15
 x 24
 y 117
 end
-arch blocked
-x 24
-y 117
-end
-arch marble
+arch cave_15
 x 25
 end
-arch blocked
-x 25
-end
-arch marble
+arch cave_15
 x 25
 y 1
 end
-arch blocked
-x 25
-y 1
-end
-arch marble
+arch cave_15
 x 25
 y 2
 end
-arch blocked
-x 25
-y 2
-end
-arch marble
+arch cave_15
 x 25
 y 3
 end
-arch blocked
-x 25
-y 3
-end
-arch marble
+arch cave_15
 x 25
 y 4
 end
-arch blocked
-x 25
-y 4
-end
-arch marble
+arch cave_15
 x 25
 y 5
 end
-arch blocked
-x 25
-y 5
-end
-arch marble
+arch cave_15
 x 25
 y 6
 end
-arch blocked
-x 25
-y 6
-end
-arch marble
+arch cave_15
 x 25
 y 7
 end
-arch blocked
-x 25
-y 7
-end
-arch marble
+arch cave_15
 x 25
 y 8
 end
-arch blocked
-x 25
-y 8
-end
-arch marble
+arch cave_15
 x 25
 y 9
 end
-arch blocked
-x 25
-y 9
-end
-arch marble
+arch cave_15
 x 25
 y 10
 end
-arch blocked
-x 25
-y 10
-end
-arch marble
+arch cave_15
 x 25
 y 11
 end
-arch blocked
-x 25
-y 11
-end
-arch marble
+arch cave_15
 x 25
 y 12
 end
-arch blocked
-x 25
-y 12
-end
-arch marble
+arch cave_15
 x 25
 y 13
 end
-arch blocked
-x 25
-y 13
-end
-arch marble
+arch cave_15
 x 25
 y 14
 end
-arch blocked
-x 25
-y 14
-end
-arch marble
+arch cave_15
 x 25
 y 15
 end
-arch blocked
-x 25
-y 15
-end
-arch marble
-x 25
-y 16
-end
-arch blocked
+arch cave_15
 x 25
 y 16
 end
@@ -18963,7 +16293,7 @@ arch marble
 x 25
 y 17
 end
-arch cave18
+arch cave24
 x 25
 y 17
 end
@@ -19419,173 +16749,90 @@ arch oil_sea
 x 25
 y 112
 end
-arch cave17
+arch cave23
 x 25
 y 112
 end
-arch oil_sea
+arch cave_15
 x 25
 y 113
 end
-arch blocked
-x 25
-y 113
-end
-arch oil_sea
+arch cave_15
 x 25
 y 114
 end
-arch blocked
-x 25
-y 114
-end
-arch oil_sea
+arch cave_15
 x 25
 y 115
 end
-arch blocked
-x 25
-y 115
-end
-arch oil_sea
+arch cave_15
 x 25
 y 116
 end
-arch blocked
-x 25
-y 116
-end
-arch oil_sea
+arch cave_15
 x 25
 y 117
 end
-arch blocked
-x 25
-y 117
-end
-arch marble
+arch cave_15
 x 26
 end
-arch blocked
-x 26
-end
-arch marble
+arch cave_15
 x 26
 y 1
 end
-arch blocked
-x 26
-y 1
-end
-arch marble
+arch cave_15
 x 26
 y 2
 end
-arch blocked
-x 26
-y 2
-end
-arch marble
+arch cave_15
 x 26
 y 3
 end
-arch blocked
-x 26
-y 3
-end
-arch marble
+arch cave_15
 x 26
 y 4
 end
-arch blocked
-x 26
-y 4
-end
-arch marble
+arch cave_15
 x 26
 y 5
 end
-arch blocked
-x 26
-y 5
-end
-arch marble
+arch cave_15
 x 26
 y 6
 end
-arch blocked
-x 26
-y 6
-end
-arch marble
+arch cave_15
 x 26
 y 7
 end
-arch blocked
-x 26
-y 7
-end
-arch marble
+arch cave_15
 x 26
 y 8
 end
-arch blocked
-x 26
-y 8
-end
-arch marble
+arch cave_15
 x 26
 y 9
 end
-arch blocked
-x 26
-y 9
-end
-arch marble
+arch cave_15
 x 26
 y 10
 end
-arch blocked
-x 26
-y 10
-end
-arch marble
+arch cave_15
 x 26
 y 11
 end
-arch blocked
-x 26
-y 11
-end
-arch marble
+arch cave_15
 x 26
 y 12
 end
-arch blocked
-x 26
-y 12
-end
-arch marble
+arch cave_15
 x 26
 y 13
 end
-arch blocked
-x 26
-y 13
-end
-arch marble
+arch cave_15
 x 26
 y 14
 end
-arch blocked
-x 26
-y 14
-end
-arch marble
-x 26
-y 15
-end
-arch blocked
+arch cave_15
 x 26
 y 15
 end
@@ -19593,7 +16840,7 @@ arch marble
 x 26
 y 16
 end
-arch cave18
+arch cave24
 x 26
 y 16
 end
@@ -20093,129 +17340,66 @@ arch cave3
 x 26
 y 117
 end
-arch marble
+arch cave_15
 x 27
 end
-arch blocked
-x 27
-end
-arch marble
+arch cave_15
 x 27
 y 1
 end
-arch blocked
-x 27
-y 1
-end
-arch marble
+arch cave_15
 x 27
 y 2
 end
-arch blocked
-x 27
-y 2
-end
-arch marble
+arch cave_15
 x 27
 y 3
 end
-arch blocked
-x 27
-y 3
-end
-arch marble
+arch cave_15
 x 27
 y 4
 end
-arch blocked
-x 27
-y 4
-end
-arch marble
+arch cave_15
 x 27
 y 5
 end
-arch blocked
-x 27
-y 5
-end
-arch marble
+arch cave_15
 x 27
 y 6
 end
-arch blocked
-x 27
-y 6
-end
-arch marble
+arch cave_15
 x 27
 y 7
 end
-arch blocked
-x 27
-y 7
-end
-arch marble
+arch cave_15
 x 27
 y 8
 end
-arch blocked
-x 27
-y 8
-end
-arch marble
+arch cave_15
 x 27
 y 9
 end
-arch blocked
-x 27
-y 9
-end
-arch marble
+arch cave_15
 x 27
 y 10
 end
-arch blocked
-x 27
-y 10
-end
-arch marble
+arch cave_15
 x 27
 y 11
 end
-arch blocked
-x 27
-y 11
-end
-arch marble
+arch cave_15
 x 27
 y 12
 end
-arch blocked
-x 27
-y 12
-end
-arch marble
+arch cave_15
 x 27
 y 13
 end
-arch blocked
-x 27
-y 13
-end
-arch marble
+arch cave_15
 x 27
 y 14
 end
-arch blocked
-x 27
-y 14
-end
-arch marble
-x 27
-y 15
-end
-arch blocked
+arch cave_15
 x 27
 y 15
 end
@@ -20223,7 +17407,7 @@ arch marble
 x 27
 y 16
 end
-arch cave19
+arch cave25
 x 27
 y 16
 end
@@ -20711,137 +17895,70 @@ arch cave1
 x 27
 y 117
 end
-arch marble
+arch cave_15
 x 28
 end
-arch blocked
-x 28
-end
-arch marble
+arch cave_15
 x 28
 y 1
 end
-arch blocked
-x 28
-y 1
-end
-arch marble
+arch cave_15
 x 28
 y 2
 end
-arch blocked
-x 28
-y 2
-end
-arch marble
+arch cave_15
 x 28
 y 3
 end
-arch blocked
-x 28
-y 3
-end
-arch marble
+arch cave_15
 x 28
 y 4
 end
-arch blocked
-x 28
-y 4
-end
-arch marble
+arch cave_15
 x 28
 y 5
 end
-arch blocked
-x 28
-y 5
-end
-arch marble
+arch cave_15
 x 28
 y 6
 end
-arch blocked
-x 28
-y 6
-end
-arch marble
+arch cave_15
 x 28
 y 7
 end
-arch blocked
-x 28
-y 7
-end
-arch marble
+arch cave_15
 x 28
 y 8
 end
-arch blocked
-x 28
-y 8
-end
-arch marble
+arch cave_15
 x 28
 y 9
 end
-arch blocked
-x 28
-y 9
-end
-arch marble
+arch cave_15
 x 28
 y 10
 end
-arch blocked
-x 28
-y 10
-end
-arch marble
+arch cave_15
 x 28
 y 11
 end
-arch blocked
-x 28
-y 11
-end
-arch marble
+arch cave_15
 x 28
 y 12
 end
-arch blocked
-x 28
-y 12
-end
-arch marble
+arch cave_15
 x 28
 y 13
 end
-arch blocked
-x 28
-y 13
-end
-arch marble
+arch cave_15
 x 28
 y 14
 end
-arch blocked
-x 28
-y 14
-end
-arch marble
+arch cave_15
 x 28
 y 15
 end
-arch blocked
-x 28
-y 15
-end
-arch marble
-x 28
-y 16
-end
-arch blocked
+arch cave_15
 x 28
 y 16
 end
@@ -21361,181 +18478,94 @@ arch oil_sea
 x 28
 y 113
 end
-arch cave20
+arch cave22
 x 28
 y 113
 end
-arch oil_sea
+arch cave_15
 x 28
 y 114
 end
-arch blocked
-x 28
-y 114
-end
-arch oil_sea
+arch cave_15
 x 28
 y 115
 end
-arch blocked
-x 28
-y 115
-end
-arch oil_sea
+arch cave_15
 x 28
 y 116
 end
-arch blocked
-x 28
-y 116
-end
-arch oil_sea
+arch cave_15
 x 28
 y 117
 end
-arch blocked
-x 28
-y 117
-end
-arch marble
+arch cave_15
 x 29
 end
-arch blocked
-x 29
-end
-arch marble
+arch cave_15
 x 29
 y 1
 end
-arch blocked
-x 29
-y 1
-end
-arch marble
+arch cave_15
 x 29
 y 2
 end
-arch blocked
-x 29
-y 2
-end
-arch marble
+arch cave_15
 x 29
 y 3
 end
-arch blocked
-x 29
-y 3
-end
-arch marble
+arch cave_15
 x 29
 y 4
 end
-arch blocked
-x 29
-y 4
-end
-arch marble
+arch cave_15
 x 29
 y 5
 end
-arch blocked
-x 29
-y 5
-end
-arch marble
+arch cave_15
 x 29
 y 6
 end
-arch blocked
-x 29
-y 6
-end
-arch marble
+arch cave_15
 x 29
 y 7
 end
-arch blocked
-x 29
-y 7
-end
-arch marble
+arch cave_15
 x 29
 y 8
 end
-arch blocked
-x 29
-y 8
-end
-arch marble
+arch cave_15
 x 29
 y 9
 end
-arch blocked
-x 29
-y 9
-end
-arch marble
+arch cave_15
 x 29
 y 10
 end
-arch blocked
-x 29
-y 10
-end
-arch marble
+arch cave_15
 x 29
 y 11
 end
-arch blocked
-x 29
-y 11
-end
-arch marble
+arch cave_15
 x 29
 y 12
 end
-arch blocked
-x 29
-y 12
-end
-arch marble
+arch cave_15
 x 29
 y 13
 end
-arch blocked
-x 29
-y 13
-end
-arch marble
+arch cave_15
 x 29
 y 14
 end
-arch blocked
-x 29
-y 14
-end
-arch marble
+arch cave_15
 x 29
 y 15
 end
-arch blocked
-x 29
-y 15
-end
-arch marble
+arch cave_15
 x 29
 y 16
 end
-arch blocked
-x 29
-y 16
-end
-arch marble
-x 29
-y 17
-end
-arch blocked
+arch cave_15
 x 29
 y 17
 end
@@ -21543,7 +18573,7 @@ arch marble
 x 29
 y 18
 end
-arch cave19
+arch cave25
 x 29
 y 18
 end
@@ -21595,27 +18625,15 @@ arch cave20
 x 29
 y 24
 end
-arch marble
+arch cave_15
 x 29
 y 25
 end
-arch blocked
-x 29
-y 25
-end
-arch marble
+arch cave_15
 x 29
 y 26
 end
-arch blocked
-x 29
-y 26
-end
-arch marble
-x 29
-y 27
-end
-arch blocked
+arch cave_15
 x 29
 y 27
 end
@@ -21623,7 +18641,7 @@ arch marble
 x 29
 y 28
 end
-arch cave19
+arch cave25
 x 29
 y 28
 end
@@ -22071,237 +19089,122 @@ arch oil_sea
 x 29
 y 109
 end
-arch cave20
+arch cave22
 x 29
 y 109
 end
-arch oil_sea
+arch cave_15
 x 29
 y 110
 end
-arch blocked
-x 29
-y 110
-end
-arch oil_sea
+arch cave_15
 x 29
 y 111
 end
-arch blocked
-x 29
-y 111
-end
-arch oil_sea
+arch cave_15
 x 29
 y 112
 end
-arch blocked
-x 29
-y 112
-end
-arch oil_sea
+arch cave_15
 x 29
 y 113
 end
-arch blocked
-x 29
-y 113
-end
-arch oil_sea
+arch cave_15
 x 29
 y 114
 end
-arch blocked
-x 29
-y 114
-end
-arch oil_sea
+arch cave_15
 x 29
 y 115
 end
-arch blocked
-x 29
-y 115
-end
-arch oil_sea
+arch cave_15
 x 29
 y 116
 end
-arch blocked
-x 29
-y 116
-end
-arch oil_sea
+arch cave_15
 x 29
 y 117
 end
-arch blocked
-x 29
-y 117
-end
-arch marble
+arch cave_15
 x 30
 end
-arch blocked
-x 30
-end
-arch marble
+arch cave_15
 x 30
 y 1
 end
-arch blocked
-x 30
-y 1
-end
-arch marble
+arch cave_15
 x 30
 y 2
 end
-arch blocked
-x 30
-y 2
-end
-arch marble
+arch cave_15
 x 30
 y 3
 end
-arch blocked
-x 30
-y 3
-end
-arch marble
+arch cave_15
 x 30
 y 4
 end
-arch blocked
-x 30
-y 4
-end
-arch marble
+arch cave_15
 x 30
 y 5
 end
-arch blocked
-x 30
-y 5
-end
-arch marble
+arch cave_15
 x 30
 y 6
 end
-arch blocked
-x 30
-y 6
-end
-arch marble
+arch cave_15
 x 30
 y 7
 end
-arch blocked
-x 30
-y 7
-end
-arch marble
+arch cave_15
 x 30
 y 8
 end
-arch blocked
-x 30
-y 8
-end
-arch marble
+arch cave_15
 x 30
 y 9
 end
-arch blocked
-x 30
-y 9
-end
-arch marble
+arch cave_15
 x 30
 y 10
 end
-arch blocked
-x 30
-y 10
-end
-arch marble
+arch cave_15
 x 30
 y 11
 end
-arch blocked
-x 30
-y 11
-end
-arch marble
+arch cave_15
 x 30
 y 12
 end
-arch blocked
-x 30
-y 12
-end
-arch marble
+arch cave_15
 x 30
 y 13
 end
-arch blocked
-x 30
-y 13
-end
-arch marble
+arch cave_15
 x 30
 y 14
 end
-arch blocked
-x 30
-y 14
-end
-arch marble
+arch cave_15
 x 30
 y 15
 end
-arch blocked
-x 30
-y 15
-end
-arch marble
+arch cave_15
 x 30
 y 16
 end
-arch blocked
-x 30
-y 16
-end
-arch marble
+arch cave_15
 x 30
 y 17
 end
-arch blocked
-x 30
-y 17
-end
-arch marble
+arch cave_15
 x 30
 y 18
 end
-arch blocked
-x 30
-y 18
-end
-arch marble
+arch cave_15
 x 30
 y 19
 end
-arch blocked
-x 30
-y 19
-end
-arch marble
-x 30
-y 20
-end
-arch blocked
+arch cave_15
 x 30
 y 20
 end
@@ -22309,7 +19212,7 @@ arch marble
 x 30
 y 21
 end
-arch cave19
+arch cave25
 x 30
 y 21
 end
@@ -22325,55 +19228,31 @@ arch marble
 x 30
 y 23
 end
-arch cave20
+arch cave22
 x 30
 y 23
 end
-arch marble
+arch cave_15
 x 30
 y 24
 end
-arch blocked
-x 30
-y 24
-end
-arch marble
+arch cave_15
 x 30
 y 25
 end
-arch blocked
-x 30
-y 25
-end
-arch marble
+arch cave_15
 x 30
 y 26
 end
-arch blocked
-x 30
-y 26
-end
-arch marble
+arch cave_15
 x 30
 y 27
 end
-arch blocked
-x 30
-y 27
-end
-arch marble
+arch cave_15
 x 30
 y 28
 end
-arch blocked
-x 30
-y 28
-end
-arch marble
-x 30
-y 29
-end
-arch blocked
+arch cave_15
 x 30
 y 29
 end
@@ -22381,7 +19260,7 @@ arch marble
 x 30
 y 30
 end
-arch cave19
+arch cave25
 x 30
 y 30
 end
@@ -22481,47 +19360,27 @@ arch marble
 x 30
 y 45
 end
-arch cave20
+arch cave22
 x 30
 y 45
 end
-arch marble
+arch cave_15
 x 30
 y 46
 end
-arch blocked
-x 30
-y 46
-end
-arch marble
+arch cave_15
 x 30
 y 47
 end
-arch blocked
-x 30
-y 47
-end
-arch marble
+arch cave_15
 x 30
 y 48
 end
-arch blocked
-x 30
-y 48
-end
-arch marble
+arch cave_15
 x 30
 y 49
 end
-arch blocked
-x 30
-y 49
-end
-arch marble
-x 30
-y 50
-end
-arch blocked
+arch cave_15
 x 30
 y 50
 end
@@ -22529,7 +19388,7 @@ arch marble
 x 30
 y 51
 end
-arch cave19
+arch cave25
 x 30
 y 51
 end
@@ -22641,47 +19500,23 @@ arch marble
 x 30
 y 67
 end
-arch cave20
+arch cave22
 x 30
 y 67
 end
-arch marble
+arch cave_15
 x 30
 y 68
 end
-arch blocked
-x 30
-y 68
-end
-arch marble
+arch cave_15
 x 30
 y 69
 end
-arch slevel_3_1
-x 30
-y 69
-end
-arch blocked
-x 30
-y 69
-end
-arch marble
+arch cave_15
 x 30
 y 70
 end
-arch slevel_3_1
-x 30
-y 70
-end
-arch blocked
-x 30
-y 70
-end
-arch oil_sea
-x 30
-y 71
-end
-arch blocked
+arch cave_15
 x 30
 y 71
 end
@@ -22712,19 +19547,11 @@ arch cave2
 x 30
 y 74
 end
-arch oil_sea
+arch cave_15
 x 30
 y 75
 end
-arch blocked
-x 30
-y 75
-end
-arch oil_sea
-x 30
-y 76
-end
-arch blocked
+arch cave_15
 x 30
 y 76
 end
@@ -22732,7 +19559,7 @@ arch oil_sea
 x 30
 y 77
 end
-arch cave19
+arch cave25
 x 30
 y 77
 end
@@ -22912,365 +19739,186 @@ arch oil_sea
 x 30
 y 106
 end
-arch cave20
+arch cave22
 x 30
 y 106
 end
-arch oil_sea
+arch cave_15
 x 30
 y 107
 end
-arch blocked
-x 30
-y 107
-end
-arch oil_sea
+arch cave_15
 x 30
 y 108
 end
-arch blocked
-x 30
-y 108
-end
-arch oil_sea
+arch cave_15
 x 30
 y 109
 end
-arch blocked
-x 30
-y 109
-end
-arch oil_sea
+arch cave_15
 x 30
 y 110
 end
-arch blocked
-x 30
-y 110
-end
-arch oil_sea
+arch cave_15
 x 30
 y 111
 end
-arch blocked
-x 30
-y 111
-end
-arch oil_sea
+arch cave_15
 x 30
 y 112
 end
-arch blocked
-x 30
-y 112
-end
-arch oil_sea
+arch cave_15
 x 30
 y 113
 end
-arch blocked
-x 30
-y 113
-end
-arch oil_sea
+arch cave_15
 x 30
 y 114
 end
-arch blocked
-x 30
-y 114
-end
-arch oil_sea
+arch cave_15
 x 30
 y 115
 end
-arch blocked
-x 30
-y 115
-end
-arch oil_sea
+arch cave_15
 x 30
 y 116
 end
-arch blocked
-x 30
-y 116
-end
-arch oil_sea
+arch cave_15
 x 30
 y 117
 end
-arch blocked
-x 30
-y 117
-end
-arch marble
+arch cave_15
 x 31
 end
-arch blocked
-x 31
-end
-arch marble
+arch cave_15
 x 31
 y 1
 end
-arch blocked
-x 31
-y 1
-end
-arch marble
+arch cave_15
 x 31
 y 2
 end
-arch blocked
-x 31
-y 2
-end
-arch marble
+arch cave_15
 x 31
 y 3
 end
-arch blocked
-x 31
-y 3
-end
-arch marble
+arch cave_15
 x 31
 y 4
 end
-arch blocked
-x 31
-y 4
-end
-arch marble
+arch cave_15
 x 31
 y 5
 end
-arch blocked
-x 31
-y 5
-end
-arch marble
+arch cave_15
 x 31
 y 6
 end
-arch blocked
-x 31
-y 6
-end
-arch marble
+arch cave_15
 x 31
 y 7
 end
-arch blocked
-x 31
-y 7
-end
-arch marble
+arch cave_15
 x 31
 y 8
 end
-arch blocked
-x 31
-y 8
-end
-arch marble
+arch cave_15
 x 31
 y 9
 end
-arch blocked
-x 31
-y 9
-end
-arch marble
+arch cave_15
 x 31
 y 10
 end
-arch blocked
-x 31
-y 10
-end
-arch marble
+arch cave_15
 x 31
 y 11
 end
-arch blocked
-x 31
-y 11
-end
-arch marble
+arch cave_15
 x 31
 y 12
 end
-arch blocked
-x 31
-y 12
-end
-arch marble
+arch cave_15
 x 31
 y 13
 end
-arch blocked
-x 31
-y 13
-end
-arch marble
+arch cave_15
 x 31
 y 14
 end
-arch blocked
-x 31
-y 14
-end
-arch marble
+arch cave_15
 x 31
 y 15
 end
-arch blocked
-x 31
-y 15
-end
-arch marble
+arch cave_15
 x 31
 y 16
 end
-arch blocked
-x 31
-y 16
-end
-arch marble
+arch cave_15
 x 31
 y 17
 end
-arch blocked
-x 31
-y 17
-end
-arch marble
+arch cave_15
 x 31
 y 18
 end
-arch blocked
-x 31
-y 18
-end
-arch marble
+arch cave_15
 x 31
 y 19
 end
-arch blocked
-x 31
-y 19
-end
-arch marble
+arch cave_15
 x 31
 y 20
 end
-arch blocked
-x 31
-y 20
-end
-arch marble
+arch cave_15
 x 31
 y 21
 end
-arch blocked
-x 31
-y 21
-end
-arch marble
+arch cave_15
 x 31
 y 22
 end
-arch blocked
-x 31
-y 22
-end
-arch marble
+arch cave_15
 x 31
 y 23
 end
-arch blocked
-x 31
-y 23
-end
-arch marble
+arch cave_15
 x 31
 y 24
 end
-arch blocked
-x 31
-y 24
-end
-arch marble
+arch cave_15
 x 31
 y 25
 end
-arch blocked
-x 31
-y 25
-end
-arch marble
+arch cave_15
 x 31
 y 26
 end
-arch blocked
-x 31
-y 26
-end
-arch marble
+arch cave_15
 x 31
 y 27
 end
-arch blocked
-x 31
-y 27
-end
-arch marble
+arch cave_15
 x 31
 y 28
 end
-arch blocked
-x 31
-y 28
-end
-arch marble
+arch cave_15
 x 31
 y 29
 end
-arch blocked
-x 31
-y 29
-end
-arch marble
+arch cave_15
 x 31
 y 30
 end
-arch blocked
-x 31
-y 30
-end
-arch marble
+arch cave_15
 x 31
 y 31
 end
-arch blocked
-x 31
-y 31
-end
-arch marble
+arch cave_15
 x 31
 y 32
 end
-arch blocked
-x 31
-y 32
-end
-arch marble
-x 31
-y 33
-end
-arch blocked
+arch cave_15
 x 31
 y 33
 end
@@ -23278,7 +19926,7 @@ arch marble
 x 31
 y 34
 end
-arch cave19
+arch cave25
 x 31
 y 34
 end
@@ -23334,119 +19982,63 @@ arch marble
 x 31
 y 41
 end
-arch cave20
+arch cave22
 x 31
 y 41
 end
-arch marble
+arch cave_15
 x 31
 y 42
 end
-arch blocked
-x 31
-y 42
-end
-arch marble
+arch cave_15
 x 31
 y 43
 end
-arch blocked
-x 31
-y 43
-end
-arch marble
+arch cave_15
 x 31
 y 44
 end
-arch blocked
-x 31
-y 44
-end
-arch marble
+arch cave_15
 x 31
 y 45
 end
-arch blocked
-x 31
-y 45
-end
-arch marble
+arch cave_15
 x 31
 y 46
 end
-arch blocked
-x 31
-y 46
-end
-arch marble
+arch cave_15
 x 31
 y 47
 end
-arch blocked
-x 31
-y 47
-end
-arch marble
+arch cave_15
 x 31
 y 48
 end
-arch blocked
-x 31
-y 48
-end
-arch marble
+arch cave_15
 x 31
 y 49
 end
-arch blocked
-x 31
-y 49
-end
-arch marble
+arch cave_15
 x 31
 y 50
 end
-arch blocked
-x 31
-y 50
-end
-arch marble
+arch cave_15
 x 31
 y 51
 end
-arch blocked
-x 31
-y 51
-end
-arch marble
+arch cave_15
 x 31
 y 52
 end
-arch blocked
-x 31
-y 52
-end
-arch marble
+arch cave_15
 x 31
 y 53
 end
-arch blocked
-x 31
-y 53
-end
-arch marble
+arch cave_15
 x 31
 y 54
 end
-arch blocked
-x 31
-y 54
-end
-arch marble
-x 31
-y 55
-end
-arch blocked
+arch cave_15
 x 31
 y 55
 end
@@ -23454,7 +20046,7 @@ arch marble
 x 31
 y 56
 end
-arch cave19
+arch cave25
 x 31
 y 56
 end
@@ -23494,95 +20086,47 @@ arch marble
 x 31
 y 61
 end
-arch cave20
+arch cave22
 x 31
 y 61
 end
-arch marble
+arch cave_15
 x 31
 y 62
 end
-arch blocked
-x 31
-y 62
-end
-arch marble
+arch cave_15
 x 31
 y 63
 end
-arch blocked
-x 31
-y 63
-end
-arch marble
+arch cave_15
 x 31
 y 64
 end
-arch blocked
-x 31
-y 64
-end
-arch marble
+arch cave_15
 x 31
 y 65
 end
-arch blocked
-x 31
-y 65
-end
-arch marble
+arch cave_15
 x 31
 y 66
 end
-arch blocked
-x 31
-y 66
-end
-arch marble
+arch cave_15
 x 31
 y 67
 end
-arch blocked
-x 31
-y 67
-end
-arch marble
+arch cave_15
 x 31
 y 68
 end
-arch blocked
-x 31
-y 68
-end
-arch marble
+arch cave_15
 x 31
 y 69
 end
-arch slevel_3_1
-x 31
-y 69
-end
-arch blocked
-x 31
-y 69
-end
-arch marble
+arch cave_15
 x 31
 y 70
 end
-arch slevel_3_1
-x 31
-y 70
-end
-arch blocked
-x 31
-y 70
-end
-arch oil_sea
-x 31
-y 71
-end
-arch blocked
+arch cave_15
 x 31
 y 71
 end
@@ -23590,7 +20134,7 @@ arch oil_sea
 x 31
 y 72
 end
-arch cave19
+arch cave25
 x 31
 y 72
 end
@@ -23606,95 +20150,51 @@ arch oil_sea
 x 31
 y 74
 end
-arch cave20
+arch cave22
 x 31
 y 74
 end
-arch oil_sea
+arch cave_15
 x 31
 y 75
 end
-arch blocked
-x 31
-y 75
-end
-arch oil_sea
+arch cave_15
 x 31
 y 76
 end
-arch blocked
-x 31
-y 76
-end
-arch oil_sea
+arch cave_15
 x 31
 y 77
 end
-arch blocked
-x 31
-y 77
-end
-arch oil_sea
+arch cave_15
 x 31
 y 78
 end
-arch blocked
-x 31
-y 78
-end
-arch oil_sea
+arch cave_15
 x 31
 y 79
 end
-arch blocked
-x 31
-y 79
-end
-arch oil_sea
+arch cave_15
 x 31
 y 80
 end
-arch blocked
-x 31
-y 80
-end
-arch oil_sea
+arch cave_15
 x 31
 y 81
 end
-arch blocked
-x 31
-y 81
-end
-arch oil_sea
+arch cave_15
 x 31
 y 82
 end
-arch blocked
-x 31
-y 82
-end
-arch oil_sea
+arch cave_15
 x 31
 y 83
 end
-arch blocked
-x 31
-y 83
-end
-arch oil_sea
+arch cave_15
 x 31
 y 84
 end
-arch blocked
-x 31
-y 84
-end
-arch oil_sea
-x 31
-y 85
-end
-arch cave19
+arch cave25
 x 31
 y 85
 end
@@ -23806,151 +20306,79 @@ arch oil_sea
 x 31
 y 99
 end
-arch cave20
+arch cave22
 x 31
 y 99
 end
-arch oil_sea
+arch cave_15
 x 31
 y 100
 end
-arch blocked
-x 31
-y 100
-end
-arch oil_sea
+arch cave_15
 x 31
 y 101
 end
-arch blocked
-x 31
-y 101
-end
-arch oil_sea
+arch cave_15
 x 31
 y 102
 end
-arch blocked
-x 31
-y 102
-end
-arch oil_sea
+arch cave_15
 x 31
 y 103
 end
-arch blocked
-x 31
-y 103
-end
-arch oil_sea
+arch cave_15
 x 31
 y 104
 end
-arch blocked
-x 31
-y 104
-end
-arch oil_sea
+arch cave_15
 x 31
 y 105
 end
-arch blocked
-x 31
-y 105
-end
-arch oil_sea
+arch cave_15
 x 31
 y 106
 end
-arch blocked
-x 31
-y 106
-end
-arch oil_sea
+arch cave_15
 x 31
 y 107
 end
-arch blocked
-x 31
-y 107
-end
-arch oil_sea
+arch cave_15
 x 31
 y 108
 end
-arch blocked
-x 31
-y 108
-end
-arch oil_sea
+arch cave_15
 x 31
 y 109
 end
-arch blocked
-x 31
-y 109
-end
-arch oil_sea
+arch cave_15
 x 31
 y 110
 end
-arch blocked
-x 31
-y 110
-end
-arch oil_sea
+arch cave_15
 x 31
 y 111
 end
-arch blocked
-x 31
-y 111
-end
-arch oil_sea
+arch cave_15
 x 31
 y 112
 end
-arch blocked
-x 31
-y 112
-end
-arch oil_sea
+arch cave_15
 x 31
 y 113
 end
-arch blocked
-x 31
-y 113
-end
-arch oil_sea
+arch cave_15
 x 31
 y 114
 end
-arch blocked
-x 31
-y 114
-end
-arch oil_sea
+arch cave_15
 x 31
 y 115
 end
-arch blocked
-x 31
-y 115
-end
-arch oil_sea
+arch cave_15
 x 31
 y 116
 end
-arch blocked
-x 31
-y 116
-end
-arch oil_sea
-x 31
-y 117
-end
-arch blocked
+arch cave_15
 x 31
 y 117
 end

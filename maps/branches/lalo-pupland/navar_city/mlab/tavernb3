@@ -1,332 +1,352 @@
 arch map
-name Western Navar Tavern
+name Western Navar Tavern, Basement Level 3
 reset_timeout 7200
 difficulty 1
 region navar
 darkness 5
 width 60
-height 40
-enter_x 1
-enter_y 1
+height 17
+enter_x 7
+enter_y 6
 msg
 Created:  2002-02-20 mikeeusa
+Modified: 2013-07-18 Kevin Zheng
 endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
-arch blocked
+arch cave_15
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
-arch blocked
+arch cave_15
 y 4
 end
-arch blocked
+arch cave_15
 y 5
 end
-arch blocked
+arch cave_15
 y 6
 end
-arch blocked
+arch cave_15
 y 7
 end
-arch blocked
+arch cave_15
 y 8
 end
-arch blocked
+arch cave_15
 y 9
 end
-arch blocked
+arch cave_15
 y 10
 end
-arch blocked
+arch cave_15
 y 11
 end
-arch blocked
+arch cave_15
 y 12
 end
-arch blocked
+arch cave_15
 y 13
 end
-arch blocked
+arch cave_15
 y 14
 end
-arch blocked
+arch cave_15
 y 15
 end
-arch blocked
+arch cave_15
+y 16
+end
+arch cave_15
 x 1
 end
-arch blocked
+arch cave_15
 x 1
 y 1
 end
-arch blocked
+arch cave_15
 x 1
 y 2
 end
-arch blocked
+arch cave_15
 x 1
 y 3
 end
-arch blocked
+arch cave_15
 x 1
 y 4
 end
-arch blocked
+arch cave_15
 x 1
 y 5
 end
-arch blocked
+arch cave_15
 x 1
 y 6
 end
-arch blocked
+arch cave_15
 x 1
 y 7
 end
-arch blocked
+arch cave_15
 x 1
 y 8
 end
-arch blocked
+arch cave_15
 x 1
 y 9
 end
-arch blocked
+arch cave_15
 x 1
 y 10
 end
-arch blocked
+arch cave_15
 x 1
 y 11
 end
-arch blocked
+arch cave_15
 x 1
 y 12
 end
-arch blocked
+arch cave_15
 x 1
 y 13
 end
-arch blocked
+arch cave_15
 x 1
 y 14
 end
-arch blocked
+arch cave_15
 x 1
 y 15
 end
-arch blocked
+arch cave_15
+x 1
+y 16
+end
+arch cave_15
 x 2
 end
-arch blocked
+arch cave_15
 x 2
 y 1
 end
-arch blocked
+arch cave_15
 x 2
 y 2
 end
-arch blocked
+arch cave_15
 x 2
 y 3
 end
-arch blocked
+arch cave_15
 x 2
 y 4
 end
-arch blocked
+arch cave_15
 x 2
 y 5
 end
-arch blocked
+arch cave_15
 x 2
 y 6
 end
-arch blocked
+arch cave_15
 x 2
 y 7
 end
-arch blocked
+arch cave_15
 x 2
 y 8
 end
-arch blocked
+arch cave_15
 x 2
 y 9
 end
-arch blocked
+arch cave_15
 x 2
 y 10
 end
-arch blocked
+arch cave_15
 x 2
 y 11
 end
-arch blocked
+arch cave_15
 x 2
 y 12
 end
-arch blocked
+arch cave_15
 x 2
 y 13
 end
-arch blocked
+arch cave_15
 x 2
 y 14
 end
-arch blocked
+arch cave_15
 x 2
 y 15
 end
-arch blocked
+arch cave_15
+x 2
+y 16
+end
+arch cave_15
 x 3
 end
-arch blocked
+arch cave_15
 x 3
 y 1
 end
-arch blocked
+arch cave_15
 x 3
 y 2
 end
-arch blocked
+arch cave_15
 x 3
 y 3
 end
-arch blocked
+arch cave_15
 x 3
 y 4
 end
-arch blocked
+arch cave_15
 x 3
 y 5
 end
-arch blocked
+arch cave_15
 x 3
 y 6
 end
-arch blocked
+arch cave_15
 x 3
 y 7
 end
-arch blocked
+arch cave_15
 x 3
 y 8
 end
-arch blocked
+arch cave_15
 x 3
 y 9
 end
-arch blocked
+arch cave_15
 x 3
 y 10
 end
-arch blocked
+arch cave_15
 x 3
 y 11
 end
-arch blocked
+arch cave_15
 x 3
 y 12
 end
-arch blocked
+arch cave_15
 x 3
 y 13
 end
-arch blocked
+arch cave_15
 x 3
 y 14
 end
-arch blocked
+arch cave_15
 x 3
 y 15
 end
-arch blocked
+arch cave_15
+x 3
+y 16
+end
+arch cave_15
 x 4
 end
-arch blocked
+arch cave_15
 x 4
 y 1
 end
-arch blocked
+arch cave_15
 x 4
 y 2
 end
-arch blocked
+arch cave_15
 x 4
 y 3
 end
-arch blocked
+arch cave_15
 x 4
 y 4
 end
-arch blocked
+arch cave_15
 x 4
 y 5
 end
-arch blocked
+arch cave_15
 x 4
 y 6
 end
-arch blocked
+arch cave_15
 x 4
 y 7
 end
-arch blocked
+arch cave_15
 x 4
 y 8
 end
-arch blocked
+arch cave_15
 x 4
 y 9
 end
-arch blocked
+arch cave_15
 x 4
 y 10
 end
-arch blocked
+arch cave_15
 x 4
 y 11
 end
-arch blocked
+arch cave_15
 x 4
 y 12
 end
-arch blocked
+arch cave_15
 x 4
 y 13
 end
-arch blocked
+arch cave_15
 x 4
 y 14
 end
-arch blocked
+arch cave_15
 x 4
 y 15
 end
-arch blocked
+arch cave_15
+x 4
+y 16
+end
+arch cave_15
 x 5
 end
-arch blocked
+arch cave_15
 x 5
 y 1
 end
-arch blocked
+arch cave_15
 x 5
 y 2
 end
-arch blocked
+arch cave_15
 x 5
 y 3
 end
-arch blocked
+arch cave_15
 x 5
 y 4
 end
@@ -334,7 +354,7 @@ arch dirtfloor
 x 5
 y 5
 end
-arch cave18
+arch cave24
 x 5
 y 5
 end
@@ -374,46 +394,50 @@ arch dirtfloor
 x 5
 y 10
 end
-arch cave17
+arch cave23
 x 5
 y 10
 end
-arch blocked
+arch cave_15
 x 5
 y 11
 end
-arch blocked
+arch cave_15
 x 5
 y 12
 end
-arch blocked
+arch cave_15
 x 5
 y 13
 end
-arch blocked
+arch cave_15
 x 5
 y 14
 end
-arch blocked
+arch cave_15
 x 5
 y 15
 end
-arch blocked
+arch cave_15
+x 5
+y 16
+end
+arch cave_15
 x 6
 end
-arch blocked
+arch cave_15
 x 6
 y 1
 end
-arch blocked
+arch cave_15
 x 6
 y 2
 end
-arch blocked
+arch cave_15
 x 6
 y 3
 end
-arch blocked
+arch cave_15
 x 6
 y 4
 end
@@ -449,42 +473,46 @@ arch cave2
 x 6
 y 10
 end
-arch blocked
+arch cave_15
 x 6
 y 11
 end
-arch blocked
+arch cave_15
 x 6
 y 12
 end
-arch blocked
+arch cave_15
 x 6
 y 13
 end
-arch blocked
+arch cave_15
 x 6
 y 14
 end
-arch blocked
+arch cave_15
 x 6
 y 15
 end
-arch blocked
+arch cave_15
+x 6
+y 16
+end
+arch cave_15
 x 7
 end
-arch blocked
+arch cave_15
 x 7
 y 1
 end
-arch blocked
+arch cave_15
 x 7
 y 2
 end
-arch blocked
+arch cave_15
 x 7
 y 3
 end
-arch blocked
+arch cave_15
 x 7
 y 4
 end
@@ -535,42 +563,46 @@ arch cave2
 x 7
 y 10
 end
-arch blocked
+arch cave_15
 x 7
 y 11
 end
-arch blocked
+arch cave_15
 x 7
 y 12
 end
-arch blocked
+arch cave_15
 x 7
 y 13
 end
-arch blocked
+arch cave_15
 x 7
 y 14
 end
-arch blocked
+arch cave_15
 x 7
 y 15
 end
-arch blocked
+arch cave_15
+x 7
+y 16
+end
+arch cave_15
 x 8
 end
-arch blocked
+arch cave_15
 x 8
 y 1
 end
-arch blocked
+arch cave_15
 x 8
 y 2
 end
-arch blocked
+arch cave_15
 x 8
 y 3
 end
-arch blocked
+arch cave_15
 x 8
 y 4
 end
@@ -614,42 +646,46 @@ arch cave2
 x 8
 y 10
 end
-arch blocked
+arch cave_15
 x 8
 y 11
 end
-arch blocked
+arch cave_15
 x 8
 y 12
 end
-arch blocked
+arch cave_15
 x 8
 y 13
 end
-arch blocked
+arch cave_15
 x 8
 y 14
 end
-arch blocked
+arch cave_15
 x 8
 y 15
 end
-arch blocked
+arch cave_15
+x 8
+y 16
+end
+arch cave_15
 x 9
 end
-arch blocked
+arch cave_15
 x 9
 y 1
 end
-arch blocked
+arch cave_15
 x 9
 y 2
 end
-arch blocked
+arch cave_15
 x 9
 y 3
 end
-arch blocked
+arch cave_15
 x 9
 y 4
 end
@@ -686,10 +722,8 @@ y 9
 end
 arch chest
 name old chest
-name_pl Grandpas old chest
 x 9
 y 9
-carrying 45000
 arch skeleton
 end
 arch skeleton
@@ -707,42 +741,46 @@ arch cave2
 x 9
 y 10
 end
-arch blocked
+arch cave_15
 x 9
 y 11
 end
-arch blocked
+arch cave_15
 x 9
 y 12
 end
-arch blocked
+arch cave_15
 x 9
 y 13
 end
-arch blocked
+arch cave_15
 x 9
 y 14
 end
-arch blocked
+arch cave_15
 x 9
 y 15
 end
-arch blocked
+arch cave_15
+x 9
+y 16
+end
+arch cave_15
 x 10
 end
-arch blocked
+arch cave_15
 x 10
 y 1
 end
-arch blocked
+arch cave_15
 x 10
 y 2
 end
-arch blocked
+arch cave_15
 x 10
 y 3
 end
-arch blocked
+arch cave_15
 x 10
 y 4
 end
@@ -750,7 +788,7 @@ arch dirtfloor
 x 10
 y 5
 end
-arch cave19
+arch cave25
 x 10
 y 5
 end
@@ -790,545 +828,1979 @@ arch dirtfloor
 x 10
 y 10
 end
-arch cave20
+arch cave22
 x 10
 y 10
 end
-arch blocked
+arch cave_15
 x 10
 y 11
 end
-arch blocked
+arch cave_15
 x 10
 y 12
 end
-arch blocked
+arch cave_15
 x 10
 y 13
 end
-arch blocked
+arch cave_15
 x 10
 y 14
 end
-arch blocked
+arch cave_15
 x 10
 y 15
 end
-arch blocked
+arch cave_15
+x 10
+y 16
+end
+arch cave_15
 x 11
 end
-arch blocked
+arch cave_15
 x 11
 y 1
 end
-arch blocked
+arch cave_15
 x 11
 y 2
 end
-arch blocked
+arch cave_15
 x 11
 y 3
 end
-arch blocked
+arch cave_15
 x 11
 y 4
 end
-arch blocked
+arch cave_15
 x 11
 y 5
 end
-arch blocked
+arch cave_15
 x 11
 y 6
 end
-arch blocked
+arch cave_15
 x 11
 y 7
 end
-arch blocked
+arch cave_15
 x 11
 y 8
 end
-arch blocked
+arch cave_15
 x 11
 y 9
 end
-arch blocked
+arch cave_15
 x 11
 y 10
 end
-arch blocked
+arch cave_15
 x 11
 y 11
 end
-arch blocked
+arch cave_15
 x 11
 y 12
 end
-arch blocked
+arch cave_15
 x 11
 y 13
 end
-arch blocked
+arch cave_15
 x 11
 y 14
 end
-arch blocked
+arch cave_15
 x 11
 y 15
 end
-arch blocked
+arch cave_15
+x 11
+y 16
+end
+arch cave_15
 x 12
 end
-arch blocked
+arch cave_15
 x 12
 y 1
 end
-arch blocked
+arch cave_15
 x 12
 y 2
 end
-arch blocked
+arch cave_15
 x 12
 y 3
 end
-arch blocked
+arch cave_15
 x 12
 y 4
 end
-arch blocked
+arch cave_15
 x 12
 y 5
 end
-arch blocked
+arch cave_15
 x 12
 y 6
 end
-arch blocked
+arch cave_15
 x 12
 y 7
 end
-arch blocked
+arch cave_15
 x 12
 y 8
 end
-arch blocked
+arch cave_15
 x 12
 y 9
 end
-arch blocked
+arch cave_15
 x 12
 y 10
 end
-arch blocked
+arch cave_15
 x 12
 y 11
 end
-arch blocked
+arch cave_15
 x 12
 y 12
 end
-arch blocked
+arch cave_15
 x 12
 y 13
 end
-arch blocked
+arch cave_15
 x 12
 y 14
 end
-arch blocked
+arch cave_15
 x 12
 y 15
 end
-arch blocked
+arch cave_15
+x 12
+y 16
+end
+arch cave_15
 x 13
 end
-arch blocked
+arch cave_15
 x 13
 y 1
 end
-arch blocked
+arch cave_15
 x 13
 y 2
 end
-arch blocked
+arch cave_15
 x 13
 y 3
 end
-arch blocked
+arch cave_15
 x 13
 y 4
 end
-arch blocked
+arch cave_15
 x 13
 y 5
 end
-arch blocked
+arch cave_15
 x 13
 y 6
 end
-arch blocked
+arch cave_15
 x 13
 y 7
 end
-arch blocked
+arch cave_15
 x 13
 y 8
 end
-arch blocked
+arch cave_15
 x 13
 y 9
 end
-arch blocked
+arch cave_15
 x 13
 y 10
 end
-arch blocked
+arch cave_15
 x 13
 y 11
 end
-arch blocked
+arch cave_15
 x 13
 y 12
 end
-arch blocked
+arch cave_15
 x 13
 y 13
 end
-arch blocked
+arch cave_15
 x 13
 y 14
 end
-arch blocked
+arch cave_15
 x 13
 y 15
 end
-arch blocked
+arch cave_15
+x 13
+y 16
+end
+arch cave_15
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 2
 end
-arch blocked
+arch cave_15
 x 14
 y 3
 end
-arch blocked
+arch cave_15
 x 14
 y 4
 end
-arch blocked
+arch cave_15
 x 14
 y 5
 end
-arch blocked
+arch cave_15
 x 14
 y 6
 end
-arch blocked
+arch cave_15
 x 14
 y 7
 end
-arch blocked
+arch cave_15
 x 14
 y 8
 end
-arch blocked
+arch cave_15
 x 14
 y 9
 end
-arch blocked
+arch cave_15
 x 14
 y 10
 end
-arch blocked
+arch cave_15
 x 14
 y 11
 end
-arch blocked
+arch cave_15
 x 14
 y 12
 end
-arch blocked
+arch cave_15
 x 14
 y 13
 end
-arch blocked
+arch cave_15
 x 14
 y 14
 end
-arch blocked
+arch cave_15
 x 14
 y 15
 end
-arch blocked
+arch cave_15
+x 14
+y 16
+end
+arch cave_15
 x 15
 end
-arch blocked
+arch cave_15
 x 15
 y 1
 end
-arch blocked
+arch cave_15
 x 15
 y 2
 end
-arch blocked
+arch cave_15
 x 15
 y 3
 end
-arch blocked
+arch cave_15
 x 15
 y 4
 end
-arch blocked
+arch cave_15
 x 15
 y 5
 end
-arch blocked
+arch cave_15
 x 15
 y 6
 end
-arch blocked
+arch cave_15
 x 15
 y 7
 end
-arch blocked
+arch cave_15
 x 15
 y 8
 end
-arch blocked
+arch cave_15
 x 15
 y 9
 end
-arch blocked
+arch cave_15
 x 15
 y 10
 end
-arch blocked
+arch cave_15
 x 15
 y 11
 end
-arch blocked
+arch cave_15
 x 15
 y 12
 end
-arch blocked
+arch cave_15
 x 15
 y 13
 end
-arch blocked
+arch cave_15
 x 15
 y 14
 end
-arch blocked
+arch cave_15
 x 15
 y 15
 end
-arch blocked
+arch cave_15
+x 15
+y 16
+end
+arch cave_15
 x 16
 end
-arch blocked
+arch cave_15
 x 16
 y 1
 end
-arch blocked
+arch cave_15
 x 16
 y 2
 end
-arch blocked
+arch cave_15
 x 16
 y 3
 end
-arch blocked
+arch cave_15
 x 16
 y 4
 end
-arch blocked
+arch cave_15
 x 16
 y 5
 end
-arch blocked
+arch cave_15
 x 16
 y 6
 end
-arch blocked
+arch cave_15
 x 16
 y 7
 end
-arch blocked
+arch cave_15
 x 16
 y 8
 end
-arch blocked
+arch cave_15
 x 16
 y 9
 end
-arch blocked
+arch cave_15
 x 16
 y 10
 end
-arch blocked
+arch cave_15
 x 16
 y 11
 end
-arch blocked
+arch cave_15
 x 16
 y 12
 end
-arch blocked
+arch cave_15
 x 16
 y 13
 end
-arch blocked
+arch cave_15
 x 16
 y 14
 end
-arch blocked
+arch cave_15
 x 16
 y 15
 end
-arch blocked
+arch cave_15
+x 16
+y 16
+end
+arch cave_15
+x 17
+end
+arch cave_15
+x 17
+y 1
+end
+arch cave_15
+x 17
+y 2
+end
+arch cave_15
+x 17
+y 3
+end
+arch cave_15
+x 17
+y 4
+end
+arch cave_15
+x 17
+y 5
+end
+arch cave_15
+x 17
+y 6
+end
+arch cave_15
+x 17
+y 7
+end
+arch cave_15
+x 17
+y 8
+end
+arch cave_15
+x 17
+y 9
+end
+arch cave_15
+x 17
+y 10
+end
+arch cave_15
+x 17
+y 11
+end
+arch cave_15
+x 17
+y 12
+end
+arch cave_15
+x 17
+y 13
+end
+arch cave_15
+x 17
+y 14
+end
+arch cave_15
+x 17
+y 15
+end
+arch cave_15
+x 17
+y 16
+end
+arch cave_15
+x 18
+end
+arch cave_15
+x 18
+y 1
+end
+arch cave_15
+x 18
+y 2
+end
+arch cave_15
+x 18
+y 3
+end
+arch cave_15
+x 18
+y 4
+end
+arch cave_15
+x 18
+y 5
+end
+arch cave_15
+x 18
+y 6
+end
+arch cave_15
+x 18
+y 7
+end
+arch cave_15
+x 18
+y 8
+end
+arch cave_15
+x 18
+y 9
+end
+arch cave_15
+x 18
+y 10
+end
+arch cave_15
+x 18
+y 11
+end
+arch cave_15
+x 18
+y 12
+end
+arch cave_15
+x 18
+y 13
+end
+arch cave_15
+x 18
+y 14
+end
+arch cave_15
+x 18
+y 15
+end
+arch cave_15
+x 18
+y 16
+end
+arch cave_15
+x 19
+end
+arch cave_15
+x 19
+y 1
+end
+arch cave_15
+x 19
+y 2
+end
+arch cave_15
+x 19
+y 3
+end
+arch cave_15
+x 19
+y 4
+end
+arch cave_15
+x 19
+y 5
+end
+arch cave_15
+x 19
+y 6
+end
+arch cave_15
+x 19
+y 7
+end
+arch cave_15
+x 19
+y 8
+end
+arch cave_15
+x 19
+y 9
+end
+arch cave_15
+x 19
+y 10
+end
+arch cave_15
+x 19
+y 11
+end
+arch cave_15
+x 19
+y 12
+end
+arch cave_15
+x 19
+y 13
+end
+arch cave_15
+x 19
+y 14
+end
+arch cave_15
+x 19
+y 15
+end
+arch cave_15
+x 19
+y 16
+end
+arch cave_15
+x 20
+end
+arch cave_15
+x 20
+y 1
+end
+arch cave_15
+x 20
+y 2
+end
+arch cave_15
+x 20
+y 3
+end
+arch cave_15
+x 20
+y 4
+end
+arch cave_15
+x 20
+y 5
+end
+arch cave_15
+x 20
+y 6
+end
+arch cave_15
+x 20
+y 7
+end
+arch cave_15
+x 20
+y 8
+end
+arch cave_15
+x 20
+y 9
+end
+arch cave_15
+x 20
+y 10
+end
+arch cave_15
+x 20
+y 11
+end
+arch cave_15
+x 20
+y 12
+end
+arch cave_15
+x 20
+y 13
+end
+arch cave_15
+x 20
+y 14
+end
+arch cave_15
+x 20
+y 15
+end
+arch cave_15
+x 20
+y 16
+end
+arch cave_15
+x 21
+end
+arch cave_15
+x 21
+y 1
+end
+arch cave_15
+x 21
+y 2
+end
+arch cave_15
+x 21
+y 3
+end
+arch cave_15
+x 21
+y 4
+end
+arch cave_15
+x 21
+y 5
+end
+arch cave_15
+x 21
+y 6
+end
+arch cave_15
+x 21
+y 7
+end
+arch cave_15
+x 21
+y 8
+end
+arch cave_15
+x 21
+y 9
+end
+arch cave_15
+x 21
+y 10
+end
+arch cave_15
+x 21
+y 11
+end
+arch cave_15
+x 21
+y 12
+end
+arch cave_15
+x 21
+y 13
+end
+arch cave_15
+x 21
+y 14
+end
+arch cave_15
+x 21
+y 15
+end
+arch cave_15
+x 21
+y 16
+end
+arch cave_15
+x 22
+end
+arch cave_15
+x 22
+y 1
+end
+arch cave_15
+x 22
+y 2
+end
+arch cave_15
+x 22
+y 3
+end
+arch cave_15
+x 22
+y 4
+end
+arch cave_15
+x 22
+y 5
+end
+arch cave_15
+x 22
+y 6
+end
+arch cave_15
+x 22
+y 7
+end
+arch cave_15
+x 22
+y 8
+end
+arch cave_15
+x 22
+y 9
+end
+arch cave_15
+x 22
+y 10
+end
+arch cave_15
+x 22
+y 11
+end
+arch cave_15
+x 22
+y 12
+end
+arch cave_15
+x 22
+y 13
+end
+arch cave_15
+x 22
+y 14
+end
+arch cave_15
+x 22
+y 15
+end
+arch cave_15
+x 22
+y 16
+end
+arch cave_15
+x 23
+end
+arch cave_15
+x 23
+y 1
+end
+arch cave_15
+x 23
+y 2
+end
+arch cave_15
+x 23
+y 3
+end
+arch cave_15
+x 23
+y 4
+end
+arch cave_15
+x 23
+y 5
+end
+arch cave_15
+x 23
+y 6
+end
+arch cave_15
+x 23
+y 7
+end
+arch cave_15
+x 23
+y 8
+end
+arch cave_15
+x 23
+y 9
+end
+arch cave_15
+x 23
+y 10
+end
+arch cave_15
+x 23
+y 11
+end
+arch cave_15
+x 23
+y 12
+end
+arch cave_15
+x 23
+y 13
+end
+arch cave_15
+x 23
+y 14
+end
+arch cave_15
+x 23
+y 15
+end
+arch cave_15
+x 23
+y 16
+end
+arch cave_15
+x 24
+end
+arch cave_15
+x 24
+y 1
+end
+arch cave_15
+x 24
+y 2
+end
+arch cave_15
+x 24
+y 3
+end
+arch cave_15
+x 24
+y 4
+end
+arch cave_15
+x 24
+y 5
+end
+arch cave_15
+x 24
+y 6
+end
+arch cave_15
+x 24
+y 7
+end
+arch cave_15
+x 24
+y 8
+end
+arch cave_15
+x 24
+y 9
+end
+arch cave_15
+x 24
+y 10
+end
+arch cave_15
+x 24
+y 11
+end
+arch cave_15
+x 24
+y 12
+end
+arch cave_15
+x 24
+y 13
+end
+arch cave_15
+x 24
+y 14
+end
+arch cave_15
+x 24
+y 15
+end
+arch cave_15
+x 24
+y 16
+end
+arch cave_15
+x 25
+end
+arch cave_15
+x 25
+y 1
+end
+arch cave_15
+x 25
+y 2
+end
+arch cave_15
+x 25
+y 3
+end
+arch cave_15
+x 25
+y 4
+end
+arch cave_15
+x 25
+y 5
+end
+arch cave_15
+x 25
+y 6
+end
+arch cave_15
+x 25
+y 7
+end
+arch cave_15
+x 25
+y 8
+end
+arch cave_15
+x 25
+y 9
+end
+arch cave_15
+x 25
+y 10
+end
+arch cave_15
+x 25
+y 11
+end
+arch cave_15
+x 25
+y 12
+end
+arch cave_15
+x 25
+y 13
+end
+arch cave_15
+x 25
+y 14
+end
+arch cave_15
+x 25
+y 15
+end
+arch cave_15
+x 25
+y 16
+end
+arch cave_15
+x 26
+end
+arch cave_15
+x 26
+y 1
+end
+arch cave_15
+x 26
+y 2
+end
+arch cave_15
+x 26
+y 3
+end
+arch cave_15
+x 26
+y 4
+end
+arch cave_15
+x 26
+y 5
+end
+arch cave_15
+x 26
+y 6
+end
+arch cave_15
+x 26
+y 7
+end
+arch cave_15
+x 26
+y 8
+end
+arch cave_15
+x 26
+y 9
+end
+arch cave_15
+x 26
+y 10
+end
+arch cave_15
+x 26
+y 11
+end
+arch cave_15
+x 26
+y 12
+end
+arch cave_15
+x 26
+y 13
+end
+arch cave_15
+x 26
+y 14
+end
+arch cave_15
+x 26
+y 15
+end
+arch cave_15
+x 26
+y 16
+end
+arch cave_15
+x 27
+end
+arch cave_15
+x 27
+y 1
+end
+arch cave_15
+x 27
+y 2
+end
+arch cave_15
+x 27
+y 3
+end
+arch cave_15
+x 27
+y 4
+end
+arch cave_15
+x 27
+y 5
+end
+arch cave_15
+x 27
+y 6
+end
+arch cave_15
+x 27
+y 7
+end
+arch cave_15
+x 27
+y 8
+end
+arch cave_15
+x 27
+y 9
+end
+arch cave_15
+x 27
+y 10
+end
+arch cave_15
+x 27
+y 11
+end
+arch cave_15
+x 27
+y 12
+end
+arch cave_15
+x 27
+y 13
+end
+arch cave_15
+x 27
+y 14
+end
+arch cave_15
+x 27
+y 15
+end
+arch cave_15
+x 27
+y 16
+end
+arch cave_15
+x 28
+end
+arch cave_15
+x 28
+y 1
+end
+arch cave_15
+x 28
+y 2
+end
+arch cave_15
+x 28
+y 3
+end
+arch cave_15
+x 28
+y 4
+end
+arch cave_15
+x 28
+y 5
+end
+arch cave_15
+x 28
+y 6
+end
+arch cave_15
+x 28
+y 7
+end
+arch cave_15
+x 28
+y 8
+end
+arch cave_15
+x 28
+y 9
+end
+arch cave_15
+x 28
+y 10
+end
+arch cave_15
+x 28
+y 11
+end
+arch cave_15
+x 28
+y 12
+end
+arch cave_15
+x 28
+y 13
+end
+arch cave_15
+x 28
+y 14
+end
+arch cave_15
+x 28
+y 15
+end
+arch cave_15
+x 28
+y 16
+end
+arch cave_15
+x 29
+end
+arch cave_15
+x 29
+y 1
+end
+arch cave_15
+x 29
+y 2
+end
+arch cave_15
+x 29
+y 3
+end
+arch cave_15
+x 29
+y 4
+end
+arch cave_15
+x 29
+y 5
+end
+arch cave_15
+x 29
+y 6
+end
+arch cave_15
+x 29
+y 7
+end
+arch cave_15
+x 29
+y 8
+end
+arch cave_15
+x 29
+y 9
+end
+arch cave_15
+x 29
+y 10
+end
+arch cave_15
+x 29
+y 11
+end
+arch cave_15
+x 29
+y 12
+end
+arch cave_15
+x 29
+y 13
+end
+arch cave_15
+x 29
+y 14
+end
+arch cave_15
+x 29
+y 15
+end
+arch cave_15
+x 29
+y 16
+end
+arch cave_15
+x 30
+end
+arch cave_15
+x 30
+y 1
+end
+arch cave_15
+x 30
+y 2
+end
+arch cave_15
+x 30
+y 3
+end
+arch cave_15
+x 30
+y 4
+end
+arch cave_15
+x 30
+y 5
+end
+arch cave_15
+x 30
+y 6
+end
+arch cave_15
+x 30
+y 7
+end
+arch cave_15
+x 30
+y 8
+end
+arch cave_15
+x 30
+y 9
+end
+arch cave_15
+x 30
+y 10
+end
+arch cave_15
+x 30
+y 11
+end
+arch cave_15
+x 30
+y 12
+end
+arch cave_15
+x 30
+y 13
+end
+arch cave_15
+x 30
+y 14
+end
+arch cave_15
+x 30
+y 15
+end
+arch cave_15
+x 30
+y 16
+end
+arch cave_15
+x 31
+end
+arch cave_15
+x 31
+y 1
+end
+arch cave_15
+x 31
+y 2
+end
+arch cave_15
+x 31
+y 3
+end
+arch cave_15
+x 31
+y 4
+end
+arch cave_15
+x 31
+y 5
+end
+arch cave_15
+x 31
+y 6
+end
+arch cave_15
+x 31
+y 7
+end
+arch cave_15
+x 31
+y 8
+end
+arch cave_15
+x 31
+y 9
+end
+arch cave_15
+x 31
+y 10
+end
+arch cave_15
+x 31
+y 11
+end
+arch cave_15
+x 31
+y 12
+end
+arch cave_15
+x 31
+y 13
+end
+arch cave_15
+x 31
+y 14
+end
+arch cave_15
+x 31
+y 15
+end
+arch cave_15
+x 31
+y 16
+end
+arch cave_15
+x 32
+end
+arch cave_15
+x 32
+y 1
+end
+arch cave_15
+x 32
+y 2
+end
+arch cave_15
+x 32
+y 3
+end
+arch cave_15
+x 32
+y 4
+end
+arch cave_15
+x 32
+y 5
+end
+arch cave_15
+x 32
+y 6
+end
+arch cave_15
+x 32
+y 7
+end
+arch cave_15
+x 32
+y 8
+end
+arch cave_15
+x 32
+y 9
+end
+arch cave_15
+x 32
+y 10
+end
+arch cave_15
+x 32
+y 11
+end
+arch cave_15
+x 32
+y 12
+end
+arch cave_15
+x 32
+y 13
+end
+arch cave_15
+x 32
+y 14
+end
+arch cave_15
+x 32
+y 15
+end
+arch cave_15
+x 32
+y 16
+end
+arch cave_15
+x 33
+end
+arch cave_15
+x 33
+y 1
+end
+arch cave_15
+x 33
+y 2
+end
+arch cave_15
+x 33
+y 3
+end
+arch cave_15
+x 33
+y 4
+end
+arch cave_15
+x 33
+y 5
+end
+arch cave_15
+x 33
+y 6
+end
+arch cave_15
+x 33
+y 7
+end
+arch cave_15
+x 33
+y 8
+end
+arch cave_15
+x 33
+y 9
+end
+arch cave_15
+x 33
+y 10
+end
+arch cave_15
+x 33
+y 11
+end
+arch cave_15
+x 33
+y 12
+end
+arch cave_15
+x 33
+y 13
+end
+arch cave_15
+x 33
+y 14
+end
+arch cave_15
+x 33
+y 15
+end
+arch cave_15
+x 33
+y 16
+end
+arch cave_15
+x 34
+end
+arch cave_15
+x 34
+y 1
+end
+arch cave_15
+x 34
+y 2
+end
+arch cave_15
+x 34
+y 3
+end
+arch cave_15
+x 34
+y 4
+end
+arch cave_15
+x 34
+y 5
+end
+arch cave_15
+x 34
+y 6
+end
+arch cave_15
+x 34
+y 7
+end
+arch cave_15
+x 34
+y 8
+end
+arch cave_15
+x 34
+y 9
+end
+arch cave_15
+x 34
+y 10
+end
+arch cave_15
+x 34
+y 11
+end
+arch cave_15
+x 34
+y 12
+end
+arch cave_15
+x 34
+y 13
+end
+arch cave_15
+x 34
+y 14
+end
+arch cave_15
+x 34
+y 15
+end
+arch cave_15
+x 34
+y 16
+end
+arch cave_15
+x 35
+end
+arch cave_15
+x 35
+y 1
+end
+arch cave_15
+x 35
+y 2
+end
+arch cave_15
+x 35
+y 3
+end
+arch cave_15
+x 35
+y 4
+end
+arch cave_15
+x 35
+y 5
+end
+arch cave_15
+x 35
+y 6
+end
+arch cave_15
+x 35
+y 7
+end
+arch cave_15
+x 35
+y 8
+end
+arch cave_15
+x 35
+y 9
+end
+arch cave_15
+x 35
+y 10
+end
+arch cave_15
+x 35
+y 11
+end
+arch cave_15
+x 35
+y 12
+end
+arch cave_15
+x 35
+y 13
+end
+arch cave_15
+x 35
+y 14
+end
+arch cave_15
+x 35
+y 15
+end
+arch cave_15
+x 35
+y 16
+end
+arch cave_15
+x 36
+end
+arch cave_15
+x 36
+y 1
+end
+arch cave_15
+x 36
+y 2
+end
+arch cave_15
+x 36
+y 3
+end
+arch cave_15
+x 36
+y 4
+end
+arch cave_15
+x 36
+y 5
+end
+arch cave_15
+x 36
+y 6
+end
+arch cave_15
+x 36
+y 7
+end
+arch cave_15
+x 36
+y 8
+end
+arch cave_15
+x 36
+y 9
+end
+arch cave_15
+x 36
+y 10
+end
+arch cave_15
+x 36
+y 11
+end
+arch cave_15
+x 36
+y 12
+end
+arch cave_15
+x 36
+y 13
+end
+arch cave_15
+x 36
+y 14
+end
+arch cave_15
+x 36
+y 15
+end
+arch cave_15
+x 36
+y 16
+end
+arch cave_15
+x 37
+end
+arch cave_15
+x 37
+y 1
+end
+arch cave_15
+x 37
+y 2
+end
+arch cave_15
+x 37
+y 3
+end
+arch cave_15
+x 37
+y 4
+end
+arch cave_15
+x 37
+y 5
+end
+arch cave_15
+x 37
+y 6
+end
+arch cave_15
+x 37
+y 7
+end
+arch cave_15
+x 37
+y 8
+end
+arch cave_15
+x 37
+y 9
+end
+arch cave_15
+x 37
+y 10
+end
+arch cave_15
+x 37
+y 11
+end
+arch cave_15
+x 37
+y 12
+end
+arch cave_15
+x 37
+y 13
+end
+arch cave_15
+x 37
+y 14
+end
+arch cave_15
+x 37
+y 15
+end
+arch cave_15
+x 37
+y 16
+end
+arch cave_15
 x 38
 end
-arch blocked
+arch cave_15
 x 38
 y 1
 end
-arch blocked
+arch cave_15
 x 38
 y 2
 end
-arch blocked
+arch cave_15
 x 38
 y 3
 end
-arch blocked
+arch cave_15
 x 38
 y 4
 end
-arch blocked
+arch cave_15
 x 38
 y 5
 end
-arch blocked
+arch cave_15
 x 38
 y 6
 end
-arch blocked
+arch cave_15
 x 38
 y 7
 end
-arch blocked
+arch cave_15
 x 38
 y 8
 end
-arch blocked
+arch cave_15
 x 38
 y 9
 end
-arch blocked
+arch cave_15
 x 38
 y 10
 end
-arch blocked
+arch cave_15
 x 38
 y 11
 end
-arch blocked
+arch cave_15
 x 38
 y 12
 end
-arch blocked
+arch cave_15
 x 38
 y 13
 end
-arch blocked
+arch cave_15
 x 38
 y 14
 end
-arch blocked
+arch cave_15
 x 38
 y 15
 end
-arch blocked
+arch cave_15
 x 38
 y 16
 end
-arch blocked
+arch cave_15
 x 39
 end
-arch blocked
+arch cave_15
 x 39
 y 1
 end
-arch blocked
+arch cave_15
 x 39
 y 2
 end
-arch blocked
+arch cave_15
 x 39
 y 3
 end
-arch blocked
+arch cave_15
 x 39
 y 4
 end
-arch blocked
+arch cave_15
 x 39
 y 5
 end
-arch blocked
+arch cave_15
 x 39
 y 6
 end
-arch blocked
+arch cave_15
 x 39
 y 7
 end
-arch blocked
+arch cave_15
 x 39
 y 8
 end
-arch blocked
+arch cave_15
 x 39
 y 9
 end
-arch blocked
+arch cave_15
 x 39
 y 10
 end
-arch blocked
+arch cave_15
 x 39
 y 11
 end
-arch blocked
+arch cave_15
 x 39
 y 12
 end
-arch blocked
+arch cave_15
 x 39
 y 13
 end
-arch blocked
+arch cave_15
 x 39
 y 14
 end
-arch blocked
+arch cave_15
 x 39
 y 15
 end
-arch blocked
+arch cave_15
 x 39
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 end
 arch cave24
@@ -1336,7 +2808,6 @@ x 40
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 1
 end
@@ -1346,7 +2817,6 @@ y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 2
 end
@@ -1356,7 +2826,6 @@ y 2
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 3
 end
@@ -1366,7 +2835,6 @@ y 3
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 4
 end
@@ -1376,7 +2844,6 @@ y 4
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 5
 end
@@ -1390,7 +2857,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 6
 end
@@ -1404,7 +2870,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 7
 end
@@ -1418,7 +2883,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 8
 end
@@ -1428,7 +2892,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 9
 end
@@ -1438,7 +2901,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 10
 end
@@ -1448,7 +2910,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 11
 end
@@ -1458,7 +2919,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 12
 end
@@ -1468,7 +2928,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 13
 end
@@ -1478,7 +2937,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 40
 y 14
 end
@@ -1486,17 +2944,16 @@ arch cave23
 x 40
 y 14
 end
-arch blocked
+arch cave_15
 x 40
 y 15
 end
-arch blocked
+arch cave_15
 x 40
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 end
 arch cave4
@@ -1504,7 +2961,6 @@ x 41
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 1
 end
@@ -1517,25 +2973,21 @@ y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 2
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 3
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 4
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 5
 end
@@ -1545,7 +2997,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 6
 end
@@ -1559,7 +3010,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 7
 end
@@ -1578,7 +3028,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 8
 end
@@ -1588,31 +3037,26 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 13
 end
@@ -1623,7 +3067,6 @@ glow_radius 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 41
 y 14
 end
@@ -1631,17 +3074,16 @@ arch cave2
 x 41
 y 14
 end
-arch blocked
+arch cave_15
 x 41
 y 15
 end
-arch blocked
+arch cave_15
 x 41
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 end
 arch cave4
@@ -1649,31 +3091,26 @@ x 42
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 2
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 3
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 4
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 5
 end
@@ -1683,7 +3120,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 6
 end
@@ -1704,7 +3140,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 7
 end
@@ -1714,7 +3149,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 8
 end
@@ -1725,37 +3159,31 @@ speed 0.500000
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 42
 y 14
 end
@@ -1763,17 +3191,16 @@ arch cave2
 x 42
 y 14
 end
-arch blocked
+arch cave_15
 x 42
 y 15
 end
-arch blocked
+arch cave_15
 x 42
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 43
 end
 arch cave4
@@ -1781,31 +3208,26 @@ x 43
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 43
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 43
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 43
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 43
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 43
 y 5
 end
@@ -1815,7 +3237,6 @@ y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 43
 y 6
 end
@@ -1830,7 +3251,6 @@ y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 43
 y 7
 end
@@ -1846,7 +3266,6 @@ y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 43
 y 8
 end
@@ -1857,37 +3276,31 @@ speed 0.500000
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 43
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 43
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 43
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 43
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 43
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 43
 y 14
 end
@@ -1895,17 +3308,16 @@ arch cave2
 x 43
 y 14
 end
-arch blocked
+arch cave_15
 x 43
 y 15
 end
-arch blocked
+arch cave_15
 x 43
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 44
 end
 arch cave4
@@ -1913,37 +3325,31 @@ x 44
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 44
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 44
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 44
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 44
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 44
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 44
 y 6
 end
@@ -1955,49 +3361,41 @@ connected 1008274
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 44
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 44
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 44
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 44
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 44
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 44
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 44
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 44
 y 14
 end
@@ -2005,17 +3403,16 @@ arch cave2
 x 44
 y 14
 end
-arch blocked
+arch cave_15
 x 44
 y 15
 end
-arch blocked
+arch cave_15
 x 44
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 45
 end
 arch cave4
@@ -2023,85 +3420,71 @@ x 45
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 45
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 45
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 45
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 45
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 45
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 45
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 45
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 45
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 45
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 45
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 45
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 45
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 45
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 45
 y 14
 end
@@ -2109,17 +3492,16 @@ arch cave2
 x 45
 y 14
 end
-arch blocked
+arch cave_15
 x 45
 y 15
 end
-arch blocked
+arch cave_15
 x 45
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 46
 end
 arch cave4
@@ -2127,85 +3509,71 @@ x 46
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 46
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 46
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 46
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 46
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 46
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 46
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 46
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 46
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 46
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 46
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 46
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 46
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 46
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 46
 y 14
 end
@@ -2213,17 +3581,16 @@ arch cave2
 x 46
 y 14
 end
-arch blocked
+arch cave_15
 x 46
 y 15
 end
-arch blocked
+arch cave_15
 x 46
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 end
 arch cave4
@@ -2231,85 +3598,71 @@ x 47
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 47
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 47
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 47
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 47
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 47
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 47
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 47
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 47
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 47
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 47
 y 14
 end
@@ -2317,17 +3670,16 @@ arch cave2
 x 47
 y 14
 end
-arch blocked
+arch cave_15
 x 47
 y 15
 end
-arch blocked
+arch cave_15
 x 47
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 end
 arch cave4
@@ -2335,85 +3687,71 @@ x 48
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 48
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 48
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 48
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 48
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 48
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 48
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 48
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 48
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 48
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 48
 y 14
 end
@@ -2421,17 +3759,16 @@ arch cave2
 x 48
 y 14
 end
-arch blocked
+arch cave_15
 x 48
 y 15
 end
-arch blocked
+arch cave_15
 x 48
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 end
 arch cave4
@@ -2439,85 +3776,71 @@ x 49
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 49
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 49
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 49
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 49
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 49
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 49
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 49
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 49
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 49
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 49
 y 14
 end
@@ -2525,17 +3848,16 @@ arch cave2
 x 49
 y 14
 end
-arch blocked
+arch cave_15
 x 49
 y 15
 end
-arch blocked
+arch cave_15
 x 49
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 end
 arch cave4
@@ -2543,85 +3865,71 @@ x 50
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 50
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 50
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 50
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 50
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 50
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 50
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 50
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 50
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 50
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 50
 y 14
 end
@@ -2629,17 +3937,16 @@ arch cave2
 x 50
 y 14
 end
-arch blocked
+arch cave_15
 x 50
 y 15
 end
-arch blocked
+arch cave_15
 x 50
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 end
 arch cave4
@@ -2647,85 +3954,71 @@ x 51
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 51
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 51
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 51
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 51
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 51
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 51
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 51
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 51
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 51
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 51
 y 14
 end
@@ -2733,17 +4026,16 @@ arch cave2
 x 51
 y 14
 end
-arch blocked
+arch cave_15
 x 51
 y 15
 end
-arch blocked
+arch cave_15
 x 51
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 end
 arch cave4
@@ -2751,85 +4043,71 @@ x 52
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 52
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 52
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 52
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 52
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 52
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 52
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 52
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 52
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 52
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 52
 y 14
 end
@@ -2837,17 +4115,16 @@ arch cave2
 x 52
 y 14
 end
-arch blocked
+arch cave_15
 x 52
 y 15
 end
-arch blocked
+arch cave_15
 x 52
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 end
 arch cave4
@@ -2855,85 +4132,71 @@ x 53
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 53
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 53
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 53
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 53
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 53
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 53
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 53
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 53
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 53
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 53
 y 14
 end
@@ -2941,17 +4204,16 @@ arch cave2
 x 53
 y 14
 end
-arch blocked
+arch cave_15
 x 53
 y 15
 end
-arch blocked
+arch cave_15
 x 53
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 54
 end
 arch cave4
@@ -2959,85 +4221,71 @@ x 54
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 54
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 54
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 54
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 54
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 54
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 54
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 54
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 54
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 54
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 54
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 54
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 54
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 54
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 54
 y 14
 end
@@ -3045,17 +4293,16 @@ arch cave2
 x 54
 y 14
 end
-arch blocked
+arch cave_15
 x 54
 y 15
 end
-arch blocked
+arch cave_15
 x 54
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 55
 end
 arch cave4
@@ -3063,85 +4310,71 @@ x 55
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 55
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 55
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 55
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 55
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 55
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 55
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 55
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 55
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 55
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 55
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 55
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 55
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 55
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 55
 y 14
 end
@@ -3149,17 +4382,16 @@ arch cave2
 x 55
 y 14
 end
-arch blocked
+arch cave_15
 x 55
 y 15
 end
-arch blocked
+arch cave_15
 x 55
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 56
 end
 arch cave4
@@ -3167,85 +4399,71 @@ x 56
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 56
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 56
 y 2
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 56
 y 3
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 56
 y 4
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 56
 y 5
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 56
 y 6
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 56
 y 7
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 56
 y 8
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 56
 y 9
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 56
 y 10
 end
 arch cobblestones2
 name safe roof
-name_pl safe roof
 x 56
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 56
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 56
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 56
 y 14
 end
@@ -3253,17 +4471,16 @@ arch cave2
 x 56
 y 14
 end
-arch blocked
+arch cave_15
 x 56
 y 15
 end
-arch blocked
+arch cave_15
 x 56
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 end
 arch cave4
@@ -3271,85 +4488,71 @@ x 57
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 2
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 3
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 4
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 5
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 57
 y 14
 end
@@ -3357,17 +4560,16 @@ arch cave2
 x 57
 y 14
 end
-arch blocked
+arch cave_15
 x 57
 y 15
 end
-arch blocked
+arch cave_15
 x 57
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 end
 arch cave4
@@ -3375,7 +4577,6 @@ x 58
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 1
 end
@@ -3386,13 +4587,11 @@ glow_radius 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 2
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 3
 end
@@ -3405,61 +4604,51 @@ y 3
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 4
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 5
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 13
 end
@@ -3470,7 +4659,6 @@ glow_radius 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 58
 y 14
 end
@@ -3478,17 +4666,16 @@ arch cave2
 x 58
 y 14
 end
-arch blocked
+arch cave_15
 x 58
 y 15
 end
-arch blocked
+arch cave_15
 x 58
 y 16
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 end
 arch cave25
@@ -3496,7 +4683,6 @@ x 59
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 1
 end
@@ -3506,7 +4692,6 @@ y 1
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 2
 end
@@ -3516,7 +4701,6 @@ y 2
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 3
 end
@@ -3526,7 +4710,6 @@ y 3
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 4
 end
@@ -3536,7 +4719,6 @@ y 4
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 5
 end
@@ -3546,7 +4728,6 @@ y 5
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 6
 end
@@ -3556,7 +4737,6 @@ y 6
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 7
 end
@@ -3566,7 +4746,6 @@ y 7
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 8
 end
@@ -3576,7 +4755,6 @@ y 8
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 9
 end
@@ -3586,7 +4764,6 @@ y 9
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 10
 end
@@ -3596,7 +4773,6 @@ y 10
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 11
 end
@@ -3606,7 +4782,6 @@ y 11
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 12
 end
@@ -3616,7 +4791,6 @@ y 12
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 13
 end
@@ -3626,7 +4800,6 @@ y 13
 end
 arch stonefloor2
 name stonefloor
-name_pl stonefloor
 x 59
 y 14
 end
@@ -3634,11 +4807,11 @@ arch cave22
 x 59
 y 14
 end
-arch blocked
+arch cave_15
 x 59
 y 15
 end
-arch blocked
+arch cave_15
 x 59
 y 16
 end

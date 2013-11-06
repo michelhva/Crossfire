@@ -1,11 +1,13 @@
 arch map
 name Deserted Warehouse
-difficulty 1
+difficulty 15
 region navar
 width 28
 height 21
+enter_y 1
 msg
 Created:  1993-11-15
+Modified: 2008-12-11 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -15,7 +17,7 @@ end
 arch woodfloor
 y 1
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_122_116
 hp 17
 sp 49

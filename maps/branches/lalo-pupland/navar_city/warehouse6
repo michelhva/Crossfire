@@ -1,11 +1,14 @@
 arch map
 name Warehouse #6
-difficulty 1
+difficulty 15
 region navar
 width 23
 height 28
+enter_x 4
+enter_y 27
 msg
 Created:  1993-11-15
+Modified: 2012-02-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -772,7 +775,7 @@ arch woodfloor
 x 4
 y 27
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_116
 hp 17
 sp 45
@@ -924,7 +927,7 @@ end
 arch skeleton
 msg
 @match *
-LEAVE NOW MORTAL, OR YE SHALL DIE
+LEAVE NOW MORTAL, OR YE SHALL DIE!
 endmsg
 hp 200
 maxhp 200
@@ -2596,7 +2599,7 @@ end
 arch wwall_2_1_1
 x 15
 y 4
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 15
@@ -2957,7 +2960,7 @@ end
 arch wwall_2_1_2
 x 17
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 17
@@ -3222,7 +3225,7 @@ end
 arch wwall_2_1_1
 x 19
 y 1
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 19

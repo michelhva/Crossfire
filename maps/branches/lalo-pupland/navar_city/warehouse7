@@ -1,11 +1,13 @@
 arch map
-name Warehouse #8
-difficulty 1
+name Warehouse #7
+difficulty 20
 region navar
 width 17
 height 27
+enter_x 7
 msg
 Created:  1993-11-15
+Modified: 2011-11-22 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1002,7 +1004,7 @@ end
 arch woodfloor
 x 7
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_116
 hp 17
 sp 47
@@ -1145,7 +1147,7 @@ end
 arch woodfloor
 x 8
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_116
 hp 17
 sp 47

@@ -1,5 +1,5 @@
 arch map
-name The Old Warehouse
+name The Old Warehouse, Entrance
 difficulty 7
 region navar
 darkness 3
@@ -9,7 +9,7 @@ enter_x 7
 enter_y 18
 msg
 Created:  2003-04-10 Avion
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-02-19 Rick Tanner
 endmsg
 end
 arch woodfloor2
@@ -419,7 +419,7 @@ food 1
 x 3
 y 7
 connected 10
-move_on walk fly_low
+move_on 0
 end
 arch woodfloor2
 x 3
@@ -472,7 +472,7 @@ connected 5
 end
 arch trap
 msg
-snick!
+Snick!
 endmsg
 dam 0
 x 3
@@ -612,7 +612,7 @@ connected 5
 end
 arch trap
 msg
-snick!
+Snick!
 endmsg
 dam 0
 x 4
@@ -750,7 +750,7 @@ connected 5
 end
 arch trap
 msg
-snick!
+Snick!
 endmsg
 dam 0
 x 5
@@ -1637,7 +1637,7 @@ speed 0.0
 level 10
 invisible 1
 connected 10
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_poison_cloud
 end

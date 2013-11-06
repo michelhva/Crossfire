@@ -1,12 +1,14 @@
 arch map
 name Warehouse #3
-difficulty 1
+difficulty 9
 region navar
 width 20
 height 35
+enter_x 2
+enter_y 34
 msg
 Created:  1993-11-10
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-05-12 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -202,13 +204,13 @@ end
 arch woodfloor
 y 32
 end
-arch wwall_2_1_1
+arch wwall_3_2
 y 32
 end
 arch woodfloor
 y 33
 end
-arch wwall_3_2
+arch wwall_2_1_1
 y 33
 end
 arch woodfloor
@@ -402,11 +404,15 @@ arch woodfloor
 x 1
 y 32
 end
+arch wwall_2_2_3
+x 1
+y 32
+end
 arch woodfloor
 x 1
 y 33
 end
-arch wwall_2_2_3
+arch wwall_2_1_1
 x 1
 y 33
 end
@@ -634,22 +640,22 @@ arch woodfloor
 x 2
 y 32
 end
+arch locked_door1
+slaying navar_smuggle
+face ldoor_brown1.111
+x 2
+y 32
+blocksview 1
+end
 arch woodfloor
 x 2
 y 33
-end
-arch locked_door1
-slaying set_individual_value smuggle
-face ldoor_brown1.111
-x 2
-y 33
-blocksview 1
 end
 arch woodfloor
 x 2
 y 34
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_116
 hp 17
 sp 39
@@ -865,11 +871,15 @@ arch woodfloor
 x 3
 y 32
 end
+arch wwall_2_2_2
+x 3
+y 32
+end
 arch woodfloor
 x 3
 y 33
 end
-arch wwall_2_2_2
+arch wwall_2_1_1
 x 3
 y 33
 end
@@ -1095,7 +1105,7 @@ arch woodfloor
 x 4
 y 32
 end
-arch door_look_2
+arch wwall_2_2_3
 x 4
 y 32
 end
@@ -1103,7 +1113,7 @@ arch woodfloor
 x 4
 y 33
 end
-arch wwall_2_2_3
+arch wwall_2_1_1
 x 4
 y 33
 end
@@ -1557,8 +1567,12 @@ level 6
 carrying 65600
 arch key2
 name Key
-slaying set_individual_value ware
+slaying navar_ware
 face key_brown.111
+arch quest_advance_pickup
+name navar/smugglers 20>30
+unique 1
+end
 end
 arch sword_4
 end
@@ -3588,7 +3602,7 @@ end
 arch wwall_2_1_1
 x 16
 y 7
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 16
@@ -3820,10 +3834,9 @@ y 9
 end
 arch locked_door1
 name wall
-slaying set_individual_value smugdoor
+slaying navar_smugdoor
 msg
-This wall sounds hollow, but you
-cannot get in, but there is a keyhole.
+This wall sounds hollow, but you cannot get in. There is a stained keyhole.
 endmsg
 face wwall_A.111
 x 17
@@ -3832,9 +3845,7 @@ blocksview 1
 end
 arch magic_mouth
 msg
-You hear some muffled voices....
-"Now where did those drunken slobs
-get off too? What! Out drinking again??
+You hear some muffled voices.... "Now where did those drunken slobs get off too? What! Out drinking again??"
 endmsg
 x 17
 y 10

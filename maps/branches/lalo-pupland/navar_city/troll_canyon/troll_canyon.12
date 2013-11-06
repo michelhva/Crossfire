@@ -1,10 +1,28 @@
 arch map
-name Troll Canyon
-difficulty 1
+name Troll Canyon Cavern
+difficulty 30
+region navar
 width 20
 height 20
+enter_x 19
+enter_y 9
+msg
+Created:  2007-02-03 Brad Reilly
+Modified: 2013-07-26 Kevin Zheng
+endmsg
 tile_path_2 troll_canyon.11
 tile_path_3 troll_canyon.9
+end
+arch cave_15
+end
+arch cave_15
+y 1
+end
+arch cave_15
+y 2
+end
+arch cave_15
+y 3
 end
 arch cave24
 y 4
@@ -17,6 +35,56 @@ y 5
 end
 arch cave23
 y 6
+end
+arch cave_15
+y 7
+end
+arch cave_15
+y 8
+end
+arch cave_15
+y 9
+end
+arch cave_15
+y 10
+end
+arch cave_15
+y 11
+end
+arch cave_15
+y 12
+end
+arch cave_15
+y 13
+end
+arch cave_15
+y 14
+end
+arch cave_15
+y 15
+end
+arch cave_15
+y 16
+end
+arch cave_15
+y 17
+end
+arch cave_15
+y 18
+end
+arch cave_15
+y 19
+end
+arch cave_15
+x 1
+end
+arch cave_15
+x 1
+y 1
+end
+arch cave_15
+x 1
+y 2
 end
 arch cave18
 x 1
@@ -74,11 +142,15 @@ arch cave23
 x 1
 y 10
 end
+arch cave_15
+x 1
+y 11
+end
 arch pstone_2
 x 1
 y 12
 end
-arch cave18
+arch cave24
 x 1
 y 12
 end
@@ -94,7 +166,7 @@ arch cave23
 x 1
 y 14
 end
-arch cave18
+arch cave24
 x 1
 y 15
 end
@@ -109,6 +181,21 @@ end
 arch cave23
 x 1
 y 17
+end
+arch cave_15
+x 1
+y 18
+end
+arch cave_15
+x 1
+y 19
+end
+arch cave_15
+x 2
+end
+arch cave_15
+x 2
+y 1
 end
 arch cave18
 x 2
@@ -214,7 +301,14 @@ arch cave17
 x 2
 y 18
 end
-arch cave18
+arch cave_15
+x 2
+y 19
+end
+arch cave_15
+x 3
+end
+arch cave24
 x 3
 y 1
 end
@@ -313,6 +407,9 @@ end
 arch cave17
 x 3
 y 19
+end
+arch cave_15
+x 4
 end
 arch pstone_2
 x 4
@@ -403,7 +500,7 @@ x 4
 y 15
 end
 arch troll
-name Fierce Troll
+name fierce troll
 hp 2000
 maxhp 2000
 exp 16000
@@ -436,6 +533,9 @@ end
 arch cave7
 x 4
 y 19
+end
+arch cave_15
+x 5
 end
 arch pstone_2
 x 5
@@ -472,6 +572,10 @@ end
 arch cave22
 x 5
 y 7
+end
+arch cave_15
+x 5
+y 8
 end
 arch cave25
 x 5
@@ -525,6 +629,9 @@ arch pstone_1
 x 5
 y 19
 end
+arch cave_15
+x 6
+end
 arch pstone_2
 x 6
 y 1
@@ -556,6 +663,22 @@ end
 arch cave20
 x 6
 y 6
+end
+arch cave_15
+x 6
+y 7
+end
+arch cave_15
+x 6
+y 8
+end
+arch cave_15
+x 6
+y 9
+end
+arch cave_15
+x 6
+y 10
 end
 arch cave19
 x 6
@@ -628,6 +751,30 @@ arch cave20
 x 7
 y 5
 end
+arch cave_15
+x 7
+y 6
+end
+arch cave_15
+x 7
+y 7
+end
+arch cave_15
+x 7
+y 8
+end
+arch cave_15
+x 7
+y 9
+end
+arch cave_15
+x 7
+y 10
+end
+arch cave_15
+x 7
+y 11
+end
 arch cave25
 x 7
 y 12
@@ -649,7 +796,7 @@ x 7
 y 15
 end
 arch troll
-name Fierce Troll
+name fierce troll
 hp 2000
 maxhp 2000
 exp 16000
@@ -693,6 +840,14 @@ arch pstone_2
 x 8
 y 2
 end
+arch sign_e
+msg
+trol den
+we liv here
+endmsg
+x 8
+y 2
+end
 arch pstone_2
 x 8
 y 3
@@ -705,9 +860,37 @@ arch cave7
 x 8
 y 4
 end
-arch cave17
+arch cave23
 x 8
 y 5
+end
+arch cave_15
+x 8
+y 6
+end
+arch cave_15
+x 8
+y 7
+end
+arch cave_15
+x 8
+y 8
+end
+arch cave_15
+x 8
+y 9
+end
+arch cave_15
+x 8
+y 10
+end
+arch cave_15
+x 8
+y 11
+end
+arch cave_15
+x 8
+y 12
 end
 arch cave19
 x 8
@@ -751,12 +934,18 @@ arch pstone_2
 x 9
 y 1
 end
+arch magic_mouth
+msg
+You get the feeling that you won't find the troll chief down here...
+endmsg
+x 9
+y 2
+end
 arch pstone_2
 x 9
 y 2
 end
-arch chole_1
-name Troll Den
+arch stair_3_down
 slaying /!
 msg
 layoutstyle rogue
@@ -799,6 +988,34 @@ end
 arch cave2
 x 9
 y 5
+end
+arch cave_15
+x 9
+y 6
+end
+arch cave_15
+x 9
+y 7
+end
+arch cave_15
+x 9
+y 8
+end
+arch cave_15
+x 9
+y 9
+end
+arch cave_15
+x 9
+y 10
+end
+arch cave_15
+x 9
+y 11
+end
+arch cave_15
+x 9
+y 12
 end
 arch cave24
 x 9
@@ -859,9 +1076,33 @@ arch cave25
 x 10
 y 4
 end
-arch cave20
+arch cave22
 x 10
 y 5
+end
+arch cave_15
+x 10
+y 6
+end
+arch cave_15
+x 10
+y 7
+end
+arch cave_15
+x 10
+y 8
+end
+arch cave_15
+x 10
+y 9
+end
+arch cave_15
+x 10
+y 10
+end
+arch cave_15
+x 10
+y 11
 end
 arch cave24
 x 10
@@ -884,7 +1125,7 @@ x 10
 y 15
 end
 arch troll
-name Fierce Troll
+name fierce troll
 hp 2000
 maxhp 2000
 exp 16000
@@ -914,7 +1155,10 @@ arch pstone_2
 x 10
 y 19
 end
-arch cave19
+arch cave_15
+x 11
+end
+arch cave25
 x 11
 y 1
 end
@@ -930,7 +1174,35 @@ arch cave22
 x 11
 y 3
 end
-arch cave18
+arch cave_15
+x 11
+y 4
+end
+arch cave_15
+x 11
+y 5
+end
+arch cave_15
+x 11
+y 6
+end
+arch cave_15
+x 11
+y 7
+end
+arch cave_15
+x 11
+y 8
+end
+arch cave_15
+x 11
+y 9
+end
+arch cave_15
+x 11
+y 10
+end
+arch cave24
 x 11
 y 11
 end
@@ -977,6 +1249,49 @@ end
 arch cave1
 x 11
 y 19
+end
+arch cave_15
+x 12
+end
+arch cave_15
+x 12
+y 1
+end
+arch cave_15
+x 12
+y 2
+end
+arch cave_15
+x 12
+y 3
+end
+arch cave_15
+x 12
+y 4
+end
+arch cave_15
+x 12
+y 5
+end
+arch cave_15
+x 12
+y 6
+end
+arch cave_15
+x 12
+y 7
+end
+arch cave_15
+x 12
+y 8
+end
+arch cave_15
+x 12
+y 9
+end
+arch cave_15
+x 12
+y 10
 end
 arch pstone_2
 x 12
@@ -1030,6 +1345,49 @@ arch cave2
 x 12
 y 18
 end
+arch cave_15
+x 12
+y 19
+end
+arch cave_15
+x 13
+end
+arch cave_15
+x 13
+y 1
+end
+arch cave_15
+x 13
+y 2
+end
+arch cave_15
+x 13
+y 3
+end
+arch cave_15
+x 13
+y 4
+end
+arch cave_15
+x 13
+y 5
+end
+arch cave_15
+x 13
+y 6
+end
+arch cave_15
+x 13
+y 7
+end
+arch cave_15
+x 13
+y 8
+end
+arch cave_15
+x 13
+y 9
+end
 arch cave18
 x 13
 y 10
@@ -1051,7 +1409,7 @@ x 13
 y 13
 end
 arch troll
-name Fierce Troll
+name fierce troll
 hp 2000
 maxhp 2000
 exp 16000
@@ -1088,6 +1446,45 @@ end
 arch cave22
 x 13
 y 18
+end
+arch cave_15
+x 13
+y 19
+end
+arch cave_15
+x 14
+end
+arch cave_15
+x 14
+y 1
+end
+arch cave_15
+x 14
+y 2
+end
+arch cave_15
+x 14
+y 3
+end
+arch cave_15
+x 14
+y 4
+end
+arch cave_15
+x 14
+y 5
+end
+arch cave_15
+x 14
+y 6
+end
+arch cave_15
+x 14
+y 7
+end
+arch cave_15
+x 14
+y 8
 end
 arch cave18
 x 14
@@ -1133,9 +1530,48 @@ arch pstone_2
 x 14
 y 17
 end
-arch cave20
+arch cave22
 x 14
 y 17
+end
+arch cave_15
+x 14
+y 18
+end
+arch cave_15
+x 14
+y 19
+end
+arch cave_15
+x 15
+end
+arch cave_15
+x 15
+y 1
+end
+arch cave_15
+x 15
+y 2
+end
+arch cave_15
+x 15
+y 3
+end
+arch cave_15
+x 15
+y 4
+end
+arch cave_15
+x 15
+y 5
+end
+arch cave_15
+x 15
+y 6
+end
+arch cave_15
+x 15
+y 7
 end
 arch cave18
 x 15
@@ -1180,6 +1616,45 @@ end
 arch cave20
 x 15
 y 16
+end
+arch cave_15
+x 15
+y 17
+end
+arch cave_15
+x 15
+y 18
+end
+arch cave_15
+x 15
+y 19
+end
+arch cave_15
+x 16
+end
+arch cave_15
+x 16
+y 1
+end
+arch cave_15
+x 16
+y 2
+end
+arch cave_15
+x 16
+y 3
+end
+arch cave_15
+x 16
+y 4
+end
+arch cave_15
+x 16
+y 5
+end
+arch cave_15
+x 16
+y 6
 end
 arch cave18
 x 16
@@ -1225,9 +1700,48 @@ arch cave1
 x 16
 y 14
 end
-arch cave20
+arch cave22
 x 16
 y 15
+end
+arch cave_15
+x 16
+y 16
+end
+arch cave_15
+x 16
+y 17
+end
+arch cave_15
+x 16
+y 18
+end
+arch cave_15
+x 16
+y 19
+end
+arch cave_15
+x 17
+end
+arch cave_15
+x 17
+y 1
+end
+arch cave_15
+x 17
+y 2
+end
+arch cave_15
+x 17
+y 3
+end
+arch cave_15
+x 17
+y 4
+end
+arch cave_15
+x 17
+y 5
 end
 arch cave24
 x 17
@@ -1269,6 +1783,53 @@ arch cave20
 x 17
 y 13
 end
+arch cave_15
+x 17
+y 14
+end
+arch cave_15
+x 17
+y 15
+end
+arch cave_15
+x 17
+y 16
+end
+arch cave_15
+x 17
+y 17
+end
+arch cave_15
+x 17
+y 18
+end
+arch cave_15
+x 17
+y 19
+end
+arch cave_15
+x 18
+end
+arch cave_15
+x 18
+y 1
+end
+arch cave_15
+x 18
+y 2
+end
+arch cave_15
+x 18
+y 3
+end
+arch cave_15
+x 18
+y 4
+end
+arch cave_15
+x 18
+y 5
+end
 arch pstone_2
 x 18
 y 6
@@ -1309,6 +1870,57 @@ arch cave22
 x 18
 y 12
 end
+arch cave_15
+x 18
+y 13
+end
+arch cave_15
+x 18
+y 14
+end
+arch cave_15
+x 18
+y 15
+end
+arch cave_15
+x 18
+y 16
+end
+arch cave_15
+x 18
+y 17
+end
+arch cave_15
+x 18
+y 18
+end
+arch cave_15
+x 18
+y 19
+end
+arch cave_15
+x 19
+end
+arch cave_15
+x 19
+y 1
+end
+arch cave_15
+x 19
+y 2
+end
+arch cave_15
+x 19
+y 3
+end
+arch cave_15
+x 19
+y 4
+end
+arch cave_15
+x 19
+y 5
+end
 arch cave25
 x 19
 y 6
@@ -1340,4 +1952,36 @@ end
 arch cave23
 x 19
 y 11
+end
+arch cave_15
+x 19
+y 12
+end
+arch cave_15
+x 19
+y 13
+end
+arch cave_15
+x 19
+y 14
+end
+arch cave_15
+x 19
+y 15
+end
+arch cave_15
+x 19
+y 16
+end
+arch cave_15
+x 19
+y 17
+end
+arch cave_15
+x 19
+y 18
+end
+arch cave_15
+x 19
+y 19
 end

@@ -1,188 +1,101 @@
 arch map
-name Wizard's Hideout
+name Wizard's Eastern Hideout
 difficulty 1
 region navar
 darkness 4
 width 7
 height 7
+enter_x 5
+enter_y 5
 msg
 Created:  2006-08-11 Alex Schultz
+Modified: 2011-11-16 Rick Tanner
 endmsg
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_2_2
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 1
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_1
 y 1
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 2
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_1
 y 2
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 3
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 3
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_1
 y 3
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 4
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_1
 y 4
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 5
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_1
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 6
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_2_1
 y 6
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_2
 x 1
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 1
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch desk
@@ -191,79 +104,39 @@ y 1
 no_pick 1
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 2
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 3
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 3
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 4
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 5
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch chair_1.4
@@ -271,22 +144,12 @@ x 1
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 6
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_2
@@ -294,63 +157,22 @@ x 1
 y 6
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_2
 x 2
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
-end
-arch altar_trigger
-slaying potion_empty
-food 1
-x 2
-y 1
-invisible 1
-last_sp 1
-connected 1
-end
-arch creator
-x 2
-y 1
-connected 1
-lifesave 1
-arch potion_shielding
-name potion of gem essence
-name_pl potions of gem essence
-resist_physical 0
-value 0
-end
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 1
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch gem
@@ -362,79 +184,39 @@ material 320
 no_pick 1
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 2
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 3
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 3
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 4
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 5
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch table_3
@@ -442,22 +224,12 @@ x 2
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 6
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_2
@@ -465,118 +237,58 @@ x 2
 y 6
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_2
 x 3
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
 y 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 1
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
 y 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 2
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
 y 3
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 3
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
 y 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 4
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
 y 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 5
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch chair_1.2
@@ -584,22 +296,12 @@ x 3
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 6
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_2
@@ -607,51 +309,31 @@ x 3
 y 6
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_2
 x 4
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 1
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch guildmaster
 msg
 @match Terrance|Rhyz|terrance|rhyz
 Oh! Terrance must have sent you? If he needs more gem essence, drop the bottle where the gem to magically fill it.
-@match magic|Magic
+@match magic
 For my own protection I've made an anti-magic field here.
-@match hiding|Hiding
+@match hiding
 Terrance and I are hiding from the kings of Scorn and Navar.
 @match *
 I'm too busy to help you.
@@ -659,100 +341,65 @@ endmsg
 x 4
 y 1
 stand_still 1
+arch npc_dialog
+name /navar_city/misc/wizard.msg
+end
+arch NPCGift
+arch potion_shielding
+name potion of gem essence
+name_pl potions of gem essence
+resist_physical 0
+value 0
+identified 1
+arch quest_prevent_drop
+name scorn/Rhyz 40
+end
+end
+end
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 2
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 3
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 3
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 4
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 5
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 6
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_2
@@ -760,42 +407,22 @@ x 4
 y 6
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_2
 x 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 1
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch barrel
@@ -803,105 +430,55 @@ x 5
 y 1
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 2
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 3
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 3
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 4
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 5
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stair2_up
 slaying city1mermaid
-hp 18
-sp 11
+hp 21
+sp 13
 x 5
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 6
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_2
@@ -909,42 +486,22 @@ x 5
 y 6
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_2_3
 x 6
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 1
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_1
@@ -952,22 +509,12 @@ x 6
 y 1
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 2
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_1
@@ -975,22 +522,12 @@ x 6
 y 2
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 3
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 3
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_1
@@ -998,22 +535,12 @@ x 6
 y 3
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 4
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_1
@@ -1021,22 +548,12 @@ x 6
 y 4
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 5
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_1_1
@@ -1044,22 +561,12 @@ x 6
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 6
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface woodfloor.111 empty_S.111
 end
 arch stwall_2_2_4

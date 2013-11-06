@@ -1,13 +1,15 @@
 arch map
-name Navar Jail
+name Navar Jail, Level 2
 reset_timeout 7200
 difficulty 6
 region navar
 width 18
 height 18
-enter_y 7
+enter_x 13
+enter_y 3
 msg
-Created:  2001-02-17
+Created:  2001-10-17
+Modified: 2011-11-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -18,10 +20,10 @@ end
 arch flagstone
 y 1
 end
-arch swall_1_1
+arch westcwall_1_2
 y 1
 end
-arch westcwall_1_2
+arch swall_1_1_half
 y 1
 end
 arch flagstone
@@ -33,7 +35,7 @@ end
 arch flagstone
 y 3
 end
-arch swall_1_2
+arch swall_1_2_half
 y 3
 end
 arch westcwall_1_1
@@ -45,13 +47,16 @@ end
 arch westcwall_2_2_1
 y 4
 end
+arch swall_1_1_half
+y 4
+end
 arch dungeon_floor
 y 5
 end
 arch slevel_3_2
 y 5
 end
-arch swall_1_1
+arch swall_2_1_1
 y 5
 end
 arch dungeon_floor
@@ -87,10 +92,13 @@ end
 arch slevel_3_2
 y 9
 end
-arch swall_1_2
+arch swall_2_1_1
 y 9
 end
 arch flagstone
+y 10
+end
+arch swall_1_2_half
 y 10
 end
 arch westcwall_2_2_2
@@ -99,10 +107,10 @@ end
 arch flagstone
 y 11
 end
-arch swall_1_1
+arch westcwall_1_2
 y 11
 end
-arch westcwall_1_2
+arch swall_1_1_half
 y 11
 end
 arch flagstone
@@ -114,7 +122,7 @@ end
 arch flagstone
 y 13
 end
-arch swall_1_2
+arch swall_1_2_half
 y 13
 end
 arch westcwall_1_1
@@ -132,7 +140,7 @@ end
 arch flagstone
 x 1
 end
-arch swall_1_4
+arch swall_1_4_half
 x 1
 end
 arch westcwall_1_3
@@ -214,7 +222,7 @@ arch flagstone
 x 1
 y 14
 end
-arch swall_1_4
+arch swall_1_4_half
 x 1
 y 14
 end
@@ -325,7 +333,7 @@ end
 arch flagstone
 x 3
 end
-arch swall_1_3
+arch swall_1_3_half
 x 3
 end
 arch westcwall_1_4
@@ -395,7 +403,7 @@ arch flagstone
 x 3
 y 14
 end
-arch swall_1_3
+arch swall_1_3_half
 x 3
 y 14
 end
@@ -404,6 +412,9 @@ x 3
 y 14
 end
 arch flagstone
+x 4
+end
+arch swall_1_4_half
 x 4
 end
 arch westcwall_2_2_3
@@ -497,6 +508,10 @@ arch flagstone
 x 4
 y 14
 end
+arch swall_1_4_half
+x 4
+y 14
+end
 arch westcwall_2_2_4
 x 4
 y 14
@@ -507,7 +522,7 @@ end
 arch slevel_3_3
 x 5
 end
-arch swall_1_4
+arch swall_2_1_2
 x 5
 end
 arch dungeon_floor
@@ -574,7 +589,7 @@ arch slevel_3_1
 x 5
 y 14
 end
-arch swall_1_4
+arch swall_2_1_2
 x 5
 y 14
 end
@@ -815,7 +830,7 @@ end
 arch slevel_3_3
 x 9
 end
-arch swall_1_3
+arch swall_2_1_2
 x 9
 end
 arch dungeon_floor
@@ -882,7 +897,7 @@ arch slevel_3_1
 x 9
 y 14
 end
-arch swall_1_3
+arch swall_2_1_2
 x 9
 y 14
 end
@@ -891,6 +906,9 @@ x 9
 y 17
 end
 arch flagstone
+x 10
+end
+arch swall_1_3_half
 x 10
 end
 arch westcwall_2_2_2
@@ -984,6 +1002,10 @@ arch flagstone
 x 10
 y 14
 end
+arch swall_1_3_half
+x 10
+y 14
+end
 arch westcwall_2_2_1
 x 10
 y 14
@@ -991,7 +1013,7 @@ end
 arch flagstone
 x 11
 end
-arch swall_1_4
+arch swall_1_4_half
 x 11
 end
 arch westcwall_1_3
@@ -1061,7 +1083,7 @@ arch flagstone
 x 11
 y 14
 end
-arch swall_1_4
+arch swall_1_4_half
 x 11
 y 14
 end
@@ -1172,7 +1194,7 @@ end
 arch flagstone
 x 13
 end
-arch swall_1_3
+arch swall_1_3_half
 x 13
 end
 arch westcwall_1_4
@@ -1261,7 +1283,7 @@ arch flagstone
 x 13
 y 14
 end
-arch swall_1_3
+arch swall_1_3_half
 x 13
 y 14
 end
@@ -1286,11 +1308,11 @@ arch flagstone
 x 14
 y 1
 end
-arch swall_1_1
+arch westcwall_1_2
 x 14
 y 1
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 14
 y 1
 end
@@ -1314,7 +1336,7 @@ arch flagstone
 x 14
 y 3
 end
-arch swall_1_2
+arch swall_1_2_half
 x 14
 y 3
 end
@@ -1334,6 +1356,10 @@ arch westcwall_2_2_4
 x 14
 y 4
 end
+arch swall_1_1_half
+x 14
+y 4
+end
 arch dungeon_magic
 x 14
 y 5
@@ -1346,7 +1372,7 @@ arch slevel_3_4
 x 14
 y 5
 end
-arch swall_1_1
+arch swall_2_1_1
 x 14
 y 5
 end
@@ -1410,7 +1436,7 @@ arch slevel_3_4
 x 14
 y 9
 end
-arch swall_1_2
+arch swall_2_1_1
 x 14
 y 9
 end
@@ -1419,6 +1445,10 @@ x 14
 y 10
 end
 arch flagstone
+x 14
+y 10
+end
+arch swall_1_2_half
 x 14
 y 10
 end
@@ -1434,11 +1464,11 @@ arch flagstone
 x 14
 y 11
 end
-arch swall_1_1
+arch westcwall_1_2
 x 14
 y 11
 end
-arch westcwall_1_2
+arch swall_1_1_half
 x 14
 y 11
 end
@@ -1462,7 +1492,7 @@ arch flagstone
 x 14
 y 13
 end
-arch swall_1_2
+arch swall_1_2_half
 x 14
 y 13
 end

@@ -1,5 +1,5 @@
 arch map
-name Central Library
+name Navar Central Library
 difficulty 1
 region navar
 shopitems *:-90
@@ -13,6 +13,7 @@ enter_x 9
 enter_y 15
 msg
 Created:  1996-04-28 b.t. (thomas@astro.psu.edu)
+Modified: 2012-04-11 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -707,7 +708,7 @@ arch woodfloor
 x 4
 y 12
 end
-arch wwall_3_3
+arch wwall_1_1
 x 4
 y 12
 end
@@ -960,7 +961,7 @@ arch woodfloor
 x 6
 y 5
 end
-arch wwall_3_1
+arch wwall_2_2_4
 x 6
 y 5
 end
@@ -1168,12 +1169,7 @@ y 8
 end
 arch sign
 msg
-NOTICE: no library books are to pass
-beyond these doors. Thieves will be
-punished to the full extent of the
-law! For your convenience, we have
-chained all books to the shelves.
-Have a nice day.
+NOTICE: no library books are to pass beyond these doors.  Thieves will be punished to the full extent of the law! For your convenience, we have chained all books to the shelves.  Have a nice day.
 endmsg
 x 7
 y 8
@@ -1318,7 +1314,7 @@ y 5
 end
 arch magic_mouth
 msg
-Rare books room. Card holders only.
+Rare books room.  Card holders only.
 endmsg
 x 8
 y 6
@@ -1382,11 +1378,11 @@ y 11
 end
 arch goldfloor
 name drop 50 platinum
-slaying platinacoin
+slaying money
 msg
 Thank you!
 endmsg
-food 50
+food 250
 x 8
 y 11
 connected 2
@@ -1402,17 +1398,12 @@ end
 arch sage
 name Nanoc the Sage
 msg
-@match Hi|hi|hello
-Err... well welcome (*harumph*). Please
-try to keep quiet in the library.
+@match hi|hello
+Err... well welcome (*harumph*).  Please try to keep quiet in the library.
 @match door|gate|enter|entrance|help
-Whats the matter, want to get in, eh?
-Either get a library card or pay a
-fair one-time entrance fee (drop the
-$$$ on the floor behind me).
+Whats the matter, want to get in, eh? Either get a library card or pay a fair one-time entrance fee (drop the $$$ on the floor behind me).
 @match *
-I'm too busy with my research to
-answer your queries.
+I'm too busy with my research to answer your queries.
 endmsg
 x 8
 y 12
@@ -1447,9 +1438,7 @@ end
 arch sign
 name Library
 msg
-NOTICE: leave your bags at the door.
-No admittance otherwise. Not respons-
-ible for lost or stolen bags!
+NOTICE: leave your bags at the door.  No admittance otherwise.  Not responsible for lost or stolen bags!
 endmsg
 x 8
 y 14
@@ -1471,7 +1460,7 @@ arch woodfloor
 x 8
 y 16
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 8
 y 16
 end
@@ -1669,7 +1658,7 @@ end
 arch door_look_1
 x 9
 y 16
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -1867,7 +1856,7 @@ end
 arch door_look_1
 x 10
 y 16
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -2031,7 +2020,7 @@ end
 arch door_look_2
 x 11
 y 15
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 11
@@ -2414,8 +2403,7 @@ y 4
 end
 arch magic_mouth
 msg
-Very rare books room. See librarian
-for admittance.
+Very rare books room.  See librarian for admittance.
 endmsg
 x 14
 y 5
@@ -2468,7 +2456,7 @@ end
 arch door_look_1
 x 14
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14
@@ -2489,15 +2477,12 @@ end
 arch sage
 name Conan the Librarian
 msg
-@match Hi|hi|hello
-Err... well welcome (*harumph*). Please
-try to keep quiet in the library.
+@match hi|hello
+Err... well welcome (*harumph*).  Please try to keep quiet in the library.
 @match door|gate|enter|entrance|help
-Oh, you need to buy the key from the
-shop.
+Oh, you need to buy the key from the shop.
 @match *
-I'm too busy with my research to
-answer your queries.
+I'm too busy with my research to answer your queries.
 endmsg
 x 14
 y 11
@@ -2518,7 +2503,7 @@ x 14
 y 12
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 14
 y 13
@@ -2528,13 +2513,13 @@ x 14
 y 13
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 14
 y 14
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 14
 y 15
@@ -2543,6 +2528,7 @@ arch scroll_literacy
 x 14
 y 15
 unpaid 1
+identified 1
 end
 arch woodfloor
 x 14
@@ -2699,7 +2685,7 @@ x 15
 y 12
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 15
 y 13
@@ -2713,7 +2699,7 @@ value 5000
 unpaid 1
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 15
 y 14
@@ -2728,7 +2714,7 @@ unpaid 1
 identified 1
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 15
 y 15

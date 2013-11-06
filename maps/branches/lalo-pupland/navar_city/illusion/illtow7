@@ -1,12 +1,14 @@
 arch map
-name Tower of Illusion
-difficulty 1
+name Tower of Illusion, 7th Level
+difficulty 15
 region navar
 width 19
 height 19
+enter_x 12
+enter_y 15
 msg
 Created:  1993-11-15
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-02-15 Rick Tanner
 endmsg
 end
 arch pstone_3
@@ -960,8 +962,7 @@ end
 arch magic_mouth
 msg
 A voice enters your head:
-YOU SHOULD HAVE QUIT WHILE YOU WERE
-AHEAD.
+YOU SHOULD HAVE QUIT WHILE YOU WERE AHEAD.
 endmsg
 x 10
 y 8
@@ -973,8 +974,7 @@ end
 arch magic_mouth
 msg
 A voice enters your head:
-YOU SHOULD HAVE QUIT WHILE YOU WERE
-AHEAD.
+YOU SHOULD HAVE QUIT WHILE YOU WERE AHEAD.
 endmsg
 x 10
 y 9
@@ -986,8 +986,7 @@ end
 arch magic_mouth
 msg
 A voice enters your head:
-YOU SHOULD HAVE QUIT WHILE YOU WERE
-AHEAD.
+YOU SHOULD HAVE QUIT WHILE YOU WERE AHEAD.
 endmsg
 x 10
 y 10

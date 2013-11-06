@@ -1,5 +1,5 @@
 arch map
-name Under The Old Warehouse
+name The Old Warehouse, Cavern
 difficulty 25
 region navar
 darkness 4
@@ -9,23 +9,24 @@ enter_x 2
 enter_y 7
 msg
 Created:  2003-06-10 Avion
+Modified: 2012-05-07 Nicolas Weeger
 endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
-arch blocked
+arch cave_15
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
-arch blocked
+arch cave_15
 y 4
 end
-arch blocked
+arch cave_15
 y 5
 end
 arch dirtfloor
@@ -46,13 +47,13 @@ end
 arch cave2
 y 9
 end
-arch blocked
+arch cave_15
 y 10
 end
-arch blocked
+arch cave_15
 y 11
 end
-arch blocked
+arch cave_15
 y 12
 end
 arch cave24
@@ -82,7 +83,7 @@ end
 arch cave23
 y 17
 end
-arch blocked
+arch cave_15
 y 18
 end
 arch dirtfloor
@@ -115,29 +116,29 @@ end
 arch cave23
 y 23
 end
-arch blocked
+arch cave_15
 y 24
 end
-arch blocked
+arch cave_15
 x 1
 end
-arch blocked
+arch cave_15
 x 1
 y 1
 end
-arch blocked
+arch cave_15
 x 1
 y 2
 end
-arch blocked
+arch cave_15
 x 1
 y 3
 end
-arch blocked
+arch cave_15
 x 1
 y 4
 end
-arch blocked
+arch cave_15
 x 1
 y 5
 end
@@ -179,11 +180,11 @@ arch cave2
 x 1
 y 9
 end
-arch blocked
+arch cave_15
 x 1
 y 10
 end
-arch blocked
+arch cave_15
 x 1
 y 11
 end
@@ -259,26 +260,26 @@ arch cave23
 x 1
 y 24
 end
-arch blocked
+arch cave_15
 x 2
 end
-arch blocked
+arch cave_15
 x 2
 y 1
 end
-arch blocked
+arch cave_15
 x 2
 y 2
 end
-arch blocked
+arch cave_15
 x 2
 y 3
 end
-arch blocked
+arch cave_15
 x 2
 y 4
 end
-arch blocked
+arch cave_15
 x 2
 y 5
 end
@@ -306,11 +307,11 @@ arch cave2
 x 2
 y 9
 end
-arch blocked
+arch cave_15
 x 2
 y 10
 end
-arch blocked
+arch cave_15
 x 2
 y 11
 end
@@ -395,22 +396,22 @@ arch cave2
 x 2
 y 24
 end
-arch blocked
+arch cave_15
 x 3
 end
-arch blocked
+arch cave_15
 x 3
 y 1
 end
-arch blocked
+arch cave_15
 x 3
 y 2
 end
-arch blocked
+arch cave_15
 x 3
 y 3
 end
-arch blocked
+arch cave_15
 x 3
 y 4
 end
@@ -442,7 +443,7 @@ arch cave2
 x 3
 y 9
 end
-arch blocked
+arch cave_15
 x 3
 y 10
 end
@@ -527,18 +528,18 @@ arch cave2
 x 3
 y 24
 end
-arch blocked
+arch cave_15
 x 4
 end
-arch blocked
+arch cave_15
 x 4
 y 1
 end
-arch blocked
+arch cave_15
 x 4
 y 2
 end
-arch blocked
+arch cave_15
 x 4
 y 3
 end
@@ -625,7 +626,7 @@ arch cave2
 x 4
 y 16
 end
-arch blocked
+arch cave_15
 x 4
 y 17
 end
@@ -669,14 +670,14 @@ arch cave2
 x 4
 y 24
 end
-arch blocked
+arch cave_15
 x 5
 end
-arch blocked
+arch cave_15
 x 5
 y 1
 end
-arch blocked
+arch cave_15
 x 5
 y 2
 end
@@ -724,7 +725,7 @@ arch dirtfloor
 x 5
 y 9
 end
-arch blocked
+arch cave_15
 x 5
 y 9
 end
@@ -806,6 +807,11 @@ x 5
 y 20
 see_invisible 1
 can_see_in_dark 1
+no_mood_change 1
+arch bones2
+name giant rat's skull
+material 0
+end
 end
 arch dirtfloor
 x 5
@@ -831,10 +837,10 @@ arch cave2
 x 5
 y 24
 end
-arch blocked
+arch cave_15
 x 6
 end
-arch blocked
+arch cave_15
 x 6
 y 1
 end
@@ -874,7 +880,7 @@ arch cave22
 x 6
 y 7
 end
-arch blocked
+arch cave_15
 x 6
 y 8
 end
@@ -962,7 +968,7 @@ arch cave2
 x 6
 y 24
 end
-arch blocked
+arch cave_15
 x 7
 end
 arch cave24
@@ -1001,7 +1007,7 @@ arch cave22
 x 7
 y 6
 end
-arch blocked
+arch cave_15
 x 7
 y 7
 end
@@ -1116,7 +1122,7 @@ arch cave22
 x 8
 y 5
 end
-arch blocked
+arch cave_15
 x 8
 y 6
 end
@@ -1204,7 +1210,7 @@ arch cave22
 x 8
 y 23
 end
-arch blocked
+arch cave_15
 x 8
 y 24
 end
@@ -1243,11 +1249,11 @@ arch cave2
 x 9
 y 4
 end
-arch blocked
+arch cave_15
 x 9
 y 5
 end
-arch blocked
+arch cave_15
 x 9
 y 6
 end
@@ -1323,15 +1329,15 @@ arch cave22
 x 9
 y 21
 end
-arch blocked
+arch cave_15
 x 9
 y 22
 end
-arch blocked
+arch cave_15
 x 9
 y 23
 end
-arch blocked
+arch cave_15
 x 9
 y 24
 end
@@ -1361,11 +1367,11 @@ arch cave2
 x 10
 y 4
 end
-arch blocked
+arch cave_15
 x 10
 y 5
 end
-arch blocked
+arch cave_15
 x 10
 y 6
 end
@@ -1415,6 +1421,11 @@ x 10
 y 15
 see_invisible 1
 can_see_in_dark 1
+no_mood_change 1
+arch bones2
+name giant rat's skull
+material 0
+end
 end
 arch dirtfloor
 x 10
@@ -1448,15 +1459,15 @@ arch cave2
 x 10
 y 21
 end
-arch blocked
+arch cave_15
 x 10
 y 22
 end
-arch blocked
+arch cave_15
 x 10
 y 23
 end
-arch blocked
+arch cave_15
 x 10
 y 24
 end
@@ -1487,11 +1498,11 @@ arch cave2
 x 11
 y 4
 end
-arch blocked
+arch cave_15
 x 11
 y 5
 end
-arch blocked
+arch cave_15
 x 11
 y 6
 end
@@ -1599,7 +1610,7 @@ arch cave23
 x 11
 y 24
 end
-arch blocked
+arch cave_15
 x 12
 end
 arch dirtfloor
@@ -1630,11 +1641,11 @@ arch cave23
 x 12
 y 5
 end
-arch blocked
+arch cave_15
 x 12
 y 6
 end
-arch blocked
+arch cave_15
 x 12
 y 7
 end
@@ -1722,6 +1733,16 @@ arch dirtfloor
 x 12
 y 23
 end
+arch woman
+name Susan
+x 12
+y 23
+stand_still 1
+no_mood_change 1
+arch npc_dialog
+name /navar_city/smugglers_cove/susan.msg
+end
+end
 arch dirtfloor
 x 12
 y 24
@@ -1730,7 +1751,7 @@ arch cave2
 x 12
 y 24
 end
-arch blocked
+arch cave_15
 x 13
 end
 arch dirtfloor
@@ -1769,11 +1790,11 @@ arch cave23
 x 13
 y 6
 end
-arch blocked
+arch cave_15
 x 13
 y 7
 end
-arch blocked
+arch cave_15
 x 13
 y 8
 end
@@ -1869,10 +1890,10 @@ arch cave2
 x 13
 y 24
 end
-arch blocked
+arch cave_15
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
@@ -2005,14 +2026,14 @@ arch cave2
 x 14
 y 24
 end
-arch blocked
+arch cave_15
 x 15
 end
-arch blocked
+arch cave_15
 x 15
 y 1
 end
-arch blocked
+arch cave_15
 x 15
 y 2
 end
@@ -2125,18 +2146,18 @@ arch cave2
 x 15
 y 24
 end
-arch blocked
+arch cave_15
 x 16
 end
-arch blocked
+arch cave_15
 x 16
 y 1
 end
-arch blocked
+arch cave_15
 x 16
 y 2
 end
-arch blocked
+arch cave_15
 x 16
 y 3
 end
@@ -2742,27 +2763,27 @@ arch cave23
 x 20
 y 13
 end
-arch blocked
+arch cave_15
 x 20
 y 14
 end
-arch blocked
+arch cave_15
 x 20
 y 15
 end
-arch blocked
+arch cave_15
 x 20
 y 16
 end
-arch blocked
+arch cave_15
 x 20
 y 17
 end
-arch blocked
+arch cave_15
 x 20
 y 18
 end
-arch blocked
+arch cave_15
 x 20
 y 19
 end
@@ -2952,18 +2973,18 @@ arch cave2
 x 21
 y 24
 end
-arch blocked
+arch cave_15
 x 22
 end
-arch blocked
+arch cave_15
 x 22
 y 1
 end
-arch blocked
+arch cave_15
 x 22
 y 2
 end
-arch blocked
+arch cave_15
 x 22
 y 3
 end
@@ -3079,10 +3100,10 @@ arch cave2
 x 22
 y 24
 end
-arch blocked
+arch cave_15
 x 23
 end
-arch blocked
+arch cave_15
 x 23
 y 1
 end
@@ -3214,7 +3235,7 @@ arch cave2
 x 23
 y 24
 end
-arch blocked
+arch cave_15
 x 24
 end
 arch cave24
@@ -3345,7 +3366,7 @@ arch cave2
 x 24
 y 24
 end
-arch blocked
+arch cave_15
 x 25
 end
 arch dirtfloor
@@ -3400,15 +3421,15 @@ arch cave2
 x 25
 y 9
 end
-arch blocked
+arch cave_15
 x 25
 y 10
 end
-arch blocked
+arch cave_15
 x 25
 y 11
 end
-arch blocked
+arch cave_15
 x 25
 y 12
 end
@@ -3492,7 +3513,7 @@ arch cave2
 x 25
 y 24
 end
-arch blocked
+arch cave_15
 x 26
 end
 arch dirtfloor
@@ -3647,7 +3668,7 @@ arch cave2
 x 26
 y 24
 end
-arch blocked
+arch cave_15
 x 27
 end
 arch dirtfloor
@@ -3774,7 +3795,7 @@ arch cave2
 x 27
 y 24
 end
-arch blocked
+arch cave_15
 x 28
 end
 arch dirtfloor
@@ -3898,7 +3919,7 @@ arch cave2
 x 28
 y 24
 end
-arch blocked
+arch cave_15
 x 29
 end
 arch dirtfloor
@@ -3951,6 +3972,11 @@ x 29
 y 10
 see_invisible 1
 can_see_in_dark 1
+no_mood_change 1
+arch bones2
+name giant rat's skull
+material 0
+end
 end
 arch dirtfloor
 x 29
@@ -4024,7 +4050,7 @@ arch cave2
 x 29
 y 24
 end
-arch blocked
+arch cave_15
 x 30
 end
 arch dirtfloor
@@ -4155,7 +4181,7 @@ arch cave2
 x 30
 y 24
 end
-arch blocked
+arch cave_15
 x 31
 end
 arch dirtfloor
@@ -4278,10 +4304,10 @@ arch cave2
 x 31
 y 24
 end
-arch blocked
+arch cave_15
 x 32
 end
-arch blocked
+arch cave_15
 x 32
 y 1
 end
@@ -4409,14 +4435,14 @@ arch cave2
 x 32
 y 24
 end
-arch blocked
+arch cave_15
 x 33
 end
-arch blocked
+arch cave_15
 x 33
 y 1
 end
-arch blocked
+arch cave_15
 x 33
 y 2
 end
@@ -4442,6 +4468,11 @@ x 33
 y 5
 see_invisible 1
 can_see_in_dark 1
+no_mood_change 1
+arch bones2
+name giant rat's skull
+material 0
+end
 end
 arch dirtfloor
 x 33
@@ -4540,10 +4571,10 @@ arch cave2
 x 33
 y 24
 end
-arch blocked
+arch cave_15
 x 34
 end
-arch blocked
+arch cave_15
 x 34
 y 1
 end
@@ -4659,10 +4690,10 @@ arch cave2
 x 34
 y 24
 end
-arch blocked
+arch cave_15
 x 35
 end
-arch blocked
+arch cave_15
 x 35
 y 1
 end
@@ -4795,10 +4826,10 @@ arch cave2
 x 35
 y 24
 end
-arch blocked
+arch cave_15
 x 36
 end
-arch blocked
+arch cave_15
 x 36
 y 1
 end
@@ -4834,7 +4865,7 @@ arch cave2
 x 36
 y 6
 end
-arch blocked
+arch cave_15
 x 36
 y 7
 end
@@ -4922,10 +4953,10 @@ arch cave2
 x 36
 y 24
 end
-arch blocked
+arch cave_15
 x 37
 end
-arch blocked
+arch cave_15
 x 37
 y 1
 end
@@ -4961,7 +4992,7 @@ arch cave22
 x 37
 y 6
 end
-arch blocked
+arch cave_15
 x 37
 y 7
 end
@@ -5061,10 +5092,10 @@ arch cave2
 x 37
 y 24
 end
-arch blocked
+arch cave_15
 x 38
 end
-arch blocked
+arch cave_15
 x 38
 y 1
 end
@@ -5096,19 +5127,19 @@ arch cave22
 x 38
 y 5
 end
-arch blocked
+arch cave_15
 x 38
 y 6
 end
-arch blocked
+arch cave_15
 x 38
 y 7
 end
-arch blocked
+arch cave_15
 x 38
 y 8
 end
-arch blocked
+arch cave_15
 x 38
 y 9
 end
@@ -5164,7 +5195,7 @@ arch cave22
 x 38
 y 17
 end
-arch blocked
+arch cave_15
 x 38
 y 18
 end
@@ -5216,58 +5247,58 @@ arch cave22
 x 38
 y 24
 end
-arch blocked
+arch cave_15
 x 39
 end
-arch blocked
+arch cave_15
 x 39
 y 1
 end
-arch blocked
+arch cave_15
 x 39
 y 2
 end
-arch blocked
+arch cave_15
 x 39
 y 3
 end
-arch blocked
+arch cave_15
 x 39
 y 4
 end
-arch blocked
+arch cave_15
 x 39
 y 5
 end
-arch blocked
+arch cave_15
 x 39
 y 6
 end
-arch blocked
+arch cave_15
 x 39
 y 7
 end
-arch blocked
+arch cave_15
 x 39
 y 8
 end
-arch blocked
+arch cave_15
 x 39
 y 9
 end
-arch blocked
+arch cave_15
 x 39
 y 10
 end
-arch blocked
+arch cave_15
 x 39
 y 11
 end
-arch blocked
+arch cave_15
 x 39
 y 12
 end
-arch cave19
+arch cave25
 x 39
 y 13
 end
@@ -5291,39 +5322,39 @@ arch dirtfloor
 x 39
 y 16
 end
-arch cave20
+arch cave22
 x 39
 y 16
 end
-arch blocked
+arch cave_15
 x 39
 y 17
 end
-arch blocked
+arch cave_15
 x 39
 y 18
 end
-arch blocked
+arch cave_15
 x 39
 y 19
 end
-arch blocked
+arch cave_15
 x 39
 y 20
 end
-arch blocked
+arch cave_15
 x 39
 y 21
 end
-arch blocked
+arch cave_15
 x 39
 y 22
 end
-arch blocked
+arch cave_15
 x 39
 y 23
 end
-arch blocked
+arch cave_15
 x 39
 y 24
 end
