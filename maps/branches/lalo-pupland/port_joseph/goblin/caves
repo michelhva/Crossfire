@@ -1,14 +1,15 @@
 arch map
 name Caves on Goblin Island
-difficulty 1
+difficulty 20
 region portjoseph
 darkness 5
 width 16
 height 24
+enter_x 1
+enter_y 1
 msg
-Creator: llangley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Sep  3 18:38:33 1994
+Created:  1994-09-03 langley (langley@fermat.dartmouth.edu)
+Modified: 2011-11-22 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -27,22 +28,22 @@ end
 arch cave23
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
-arch blocked
+arch cave_15
 y 4
 end
-arch blocked
+arch cave_15
 y 5
 end
-arch blocked
+arch cave_15
 y 6
 end
-arch blocked
+arch cave_15
 y 7
 end
-arch blocked
+arch cave_15
 y 8
 end
 arch small_stones
@@ -75,34 +76,34 @@ end
 arch cave23
 y 13
 end
-arch blocked
+arch cave_15
 y 14
 end
-arch blocked
+arch cave_15
 y 15
 end
-arch blocked
+arch cave_15
 y 16
 end
-arch blocked
+arch cave_15
 y 17
 end
-arch blocked
+arch cave_15
 y 18
 end
-arch blocked
+arch cave_15
 y 19
 end
-arch blocked
+arch cave_15
 y 20
 end
-arch blocked
+arch cave_15
 y 21
 end
-arch blocked
+arch cave_15
 y 22
 end
-arch blocked
+arch cave_15
 y 23
 end
 arch small_stones
@@ -131,27 +132,27 @@ arch cave2
 x 1
 y 2
 end
-arch blocked
+arch cave_15
 x 1
 y 3
 end
-arch blocked
+arch cave_15
 x 1
 y 4
 end
-arch blocked
+arch cave_15
 x 1
 y 5
 end
-arch blocked
+arch cave_15
 x 1
 y 6
 end
-arch blocked
+arch cave_15
 x 1
 y 7
 end
-arch blocked
+arch cave_15
 x 1
 y 8
 end
@@ -211,11 +212,11 @@ arch cave23
 x 1
 y 16
 end
-arch blocked
+arch cave_15
 x 1
 y 17
 end
-arch blocked
+arch cave_15
 x 1
 y 18
 end
@@ -223,7 +224,7 @@ arch small_stones
 x 1
 y 19
 end
-arch cave18
+arch cave24
 x 1
 y 19
 end
@@ -251,7 +252,7 @@ arch cave23
 x 1
 y 22
 end
-arch blocked
+arch cave_15
 x 1
 y 23
 end
@@ -273,11 +274,11 @@ arch cave2
 x 2
 y 2
 end
-arch blocked
+arch cave_15
 x 2
 y 3
 end
-arch blocked
+arch cave_15
 x 2
 y 4
 end
@@ -401,7 +402,7 @@ arch cave2
 x 2
 y 22
 end
-arch blocked
+arch cave_15
 x 2
 y 23
 end
@@ -423,11 +424,11 @@ arch cave2
 x 3
 y 2
 end
-arch blocked
+arch cave_15
 x 3
 y 3
 end
-arch blocked
+arch cave_15
 x 3
 y 4
 end
@@ -535,7 +536,7 @@ arch cave2
 x 3
 y 22
 end
-arch blocked
+arch cave_15
 x 3
 y 23
 end
@@ -565,7 +566,7 @@ arch cave17
 x 4
 y 3
 end
-arch blocked
+arch cave_15
 x 4
 y 4
 end
@@ -711,7 +712,7 @@ arch small_stones
 x 5
 y 4
 end
-arch cave17
+arch cave23
 x 5
 y 4
 end
@@ -901,7 +902,7 @@ arch small_stones
 x 6
 y 8
 end
-arch cave20
+arch cave22
 x 6
 y 8
 end
@@ -1009,7 +1010,7 @@ arch cave2
 x 6
 y 23
 end
-arch blocked
+arch cave_15
 x 7
 end
 arch small_stones
@@ -1040,15 +1041,15 @@ arch cave2
 x 7
 y 4
 end
-arch blocked
+arch cave_15
 x 7
 y 5
 end
-arch blocked
+arch cave_15
 x 7
 y 6
 end
-arch blocked
+arch cave_15
 x 7
 y 7
 end
@@ -1144,7 +1145,7 @@ arch small_stones
 x 7
 y 20
 end
-arch cave19
+arch cave25
 x 7
 y 20
 end
@@ -1172,7 +1173,7 @@ arch cave22
 x 7
 y 23
 end
-arch blocked
+arch cave_15
 x 8
 end
 arch small_stones
@@ -1207,11 +1208,11 @@ arch cave2
 x 8
 y 4
 end
-arch blocked
+arch cave_15
 x 8
 y 5
 end
-arch blocked
+arch cave_15
 x 8
 y 6
 end
@@ -1283,31 +1284,31 @@ arch cave2
 x 8
 y 16
 end
-arch blocked
+arch cave_15
 x 8
 y 17
 end
-arch blocked
+arch cave_15
 x 8
 y 18
 end
-arch blocked
+arch cave_15
 x 8
 y 19
 end
-arch blocked
+arch cave_15
 x 8
 y 20
 end
-arch blocked
+arch cave_15
 x 8
 y 21
 end
-arch blocked
+arch cave_15
 x 8
 y 22
 end
-arch blocked
+arch cave_15
 x 8
 y 23
 end
@@ -1348,6 +1349,10 @@ end
 arch cave24
 x 9
 y 5
+end
+arch small_stones
+x 9
+y 6
 end
 arch cave3
 x 9
@@ -1417,15 +1422,15 @@ arch cave2
 x 9
 y 16
 end
-arch blocked
+arch cave_15
 x 9
 y 17
 end
-arch blocked
+arch cave_15
 x 9
 y 18
 end
-arch blocked
+arch cave_15
 x 9
 y 19
 end
@@ -1433,7 +1438,7 @@ arch small_stones
 x 9
 y 20
 end
-arch cave18
+arch cave24
 x 9
 y 20
 end
@@ -1619,6 +1624,10 @@ arch magic_banned
 x 10
 y 22
 end
+arch small_stones
+x 10
+y 23
+end
 arch cave2
 x 10
 y 23
@@ -1725,17 +1734,11 @@ arch chinese_dragon
 name Nyerival
 msg
 @match treasure
-Content yourself with your shiny
-rocks.
+Content yourself with your shiny rocks.
 @match temple|dragon king
-Heh, heh, you seek aid upon
-your quest.  Well my pretty insect,
-Know this:  You must speak the fifth
-verse at the table of gold, and
-leave its body there as well.
+Heh, heh, you seek aid upon your quest.  Well my pretty insect, Know this:  You must speak the fifth verse at the table of gold, and leave its body there as well.
 @match *
->Yawn<  Yes little creature? Why
-do you disturb me?
+>Yawn<  Yes little creature? Why do you disturb me?
 endmsg
 hp 1200
 x 11
@@ -1956,6 +1959,10 @@ arch cave12
 x 12
 y 22
 end
+arch small_stones
+x 12
+y 23
+end
 arch cave23
 x 12
 y 23
@@ -2122,7 +2129,7 @@ arch cave2
 x 13
 y 23
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch small_stones
@@ -2221,11 +2228,11 @@ arch cave22
 x 14
 y 15
 end
-arch blocked
+arch cave_15
 x 14
 y 16
 end
-arch blocked
+arch cave_15
 x 14
 y 17
 end
@@ -2285,10 +2292,10 @@ arch cave2
 x 14
 y 23
 end
-arch blocked
+arch cave_15
 x 15
 end
-arch blocked
+arch cave_15
 x 15
 y 1
 end
@@ -2396,23 +2403,19 @@ arch cave22
 x 15
 y 14
 end
-arch small_stones
+arch cave_15
 x 15
 y 15
 end
-arch blocked
-x 15
-y 15
-end
-arch blocked
+arch cave_15
 x 15
 y 16
 end
-arch blocked
+arch cave_15
 x 15
 y 17
 end
-arch blocked
+arch cave_15
 x 15
 y 18
 end
@@ -2420,7 +2423,7 @@ arch small_stones
 x 15
 y 19
 end
-arch cave19
+arch cave25
 x 15
 y 19
 end
