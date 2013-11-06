@@ -1,5 +1,6 @@
 arch map
-name TheGreenWay
+name The Green Way
+difficulty 20
 region greenway
 darkness 1
 width 50
@@ -7,13 +8,12 @@ height 50
 enter_x 18
 enter_y 37
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    5/24/2004
+Created:  2004-05-24 Avion
+Modified: 2008-09-20 Rick Tanner
 endmsg
 tile_path_1 greenway6
-tile_path_2 greenway9
-tile_path_3 greenway7
+tile_path_2 greenway1
+tile_path_3 greenway9
 tile_path_4 greenway2
 end
 arch evergreens

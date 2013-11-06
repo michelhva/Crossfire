@@ -1,6 +1,6 @@
 arch map
 name The Green Way
-difficulty 1
+difficulty 20
 region greenway
 width 50
 height 50
@@ -8,6 +8,7 @@ enter_x 18
 enter_y 24
 msg
 Created:  2004-05-24 Avion
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 tile_path_1 greenway8
 tile_path_2 greenway6
@@ -92,7 +93,6 @@ level 8
 attacktype 3
 weight 1000
 can_use_ring 1
-can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -3007,7 +3007,6 @@ level 8
 attacktype 3
 weight 1000
 can_use_ring 1
-can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -6284,7 +6283,6 @@ level 8
 attacktype 3
 weight 1000
 can_use_ring 1
-can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -8795,7 +8793,6 @@ level 8
 attacktype 3
 weight 1000
 can_use_ring 1
-can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog

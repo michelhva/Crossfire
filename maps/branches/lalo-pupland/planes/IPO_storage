@@ -1,12 +1,14 @@
 arch map
-name IPO storage room
-region scorn
+name IPO Storage Room
+difficulty 1
+region creation
 width 5
 height 5
+enter_x 2
 enter_y 2
 msg
-Creator: CF Java Map Editor
-Date:    9/29/2005
+Created:  2005-09-29
+Modified: 2013-08-04 Kevin Zheng
 endmsg
 end
 arch grass
