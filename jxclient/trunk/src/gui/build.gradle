@@ -9,7 +9,7 @@ sourceCompatibility = 1.6
 
 applicationName = 'jxclient'
 mainClassName = 'com.realtime.crossfire.jxclient.main.JXClient'
-run.args '-ea'
+run.jvmArgs '-ea'
 
 jar.baseName = 'jxclient'
 jar.classifier = 'plain'
