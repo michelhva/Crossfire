@@ -8,7 +8,7 @@ enter_x 8
 enter_y 25
 msg
 Created:  1995-04-03
-Modified: 2012-02-07 Rick Tanner
+Modified: 2013-11-14 SilverNexus
 endmsg
 end
 arch woodfloor
@@ -912,7 +912,7 @@ end
 arch sign
 msg
 Warning 1:
-Do not litter on teleporters, or other transporters; or have it littered.  That will stop it from properly functioning.
+Do not leave litter on teleporters or other transporters.  That will stop them from properly functioning.
 endmsg
 x 8
 y 8
@@ -1031,7 +1031,7 @@ end
 arch sign
 msg
 Warning 2:
-Specially named monsters maybe a lot harder than others of its kind.  They selected out of its kind to perform certain functions.
+Specially named monsters may be a lot harder than others of their kind.  They were selected out of their kind to perform certain functions.
 endmsg
 x 9
 y 8
