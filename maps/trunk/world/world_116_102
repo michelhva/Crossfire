@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2013-08-17 Kevin Zheng
+Modified: 2013-11-21 SilverNexus
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -6633,6 +6633,7 @@ name tame chicken
 msg
 Ooh, a tame chicken! And look, it's a new pet shop!
 endmsg
+invisible 0
 face chicken.172
 x 23
 y 44
