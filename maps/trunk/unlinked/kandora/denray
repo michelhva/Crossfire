@@ -5,7 +5,7 @@ height 16
 enter_x 15
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2009-10-23 Andreas Kirschbaum
+Modified: 2013-11-22 SilverNexus
 endmsg
 end
 arch cobblestones2
@@ -1430,7 +1430,7 @@ arch cobblestones2
 x 13
 y 7
 end
-arch stwall_closed_1
+arch cwall_closed_1
 x 13
 y 7
 connected 3
@@ -1454,7 +1454,7 @@ arch cobblestones2
 x 13
 y 9
 end
-arch stwall_closed_1
+arch cwall_closed_1
 x 13
 y 9
 connected 3
