@@ -4,7 +4,7 @@ width 14
 height 6
 msg
 Created:  1999-02-04 King Zoobus
-Modified: 2008-06-03 Arvid Norlander
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch woodfloor
@@ -44,7 +44,7 @@ end
 arch woodfloor
 x 1
 end
-arch wall_2_1_2
+arch wall_1_3
 x 1
 end
 arch woodfloor
@@ -82,7 +82,7 @@ end
 arch woodfloor
 x 2
 end
-arch oakdoor
+arch oakdoor_2
 slaying dun_marksel
 hp 7
 sp 12
@@ -130,7 +130,7 @@ end
 arch woodfloor
 x 3
 end
-arch wall_2_1_2
+arch wall_1_4
 x 3
 end
 arch woodfloor
@@ -221,7 +221,7 @@ arch woodfloor
 x 5
 y 2
 end
-arch wall_2_1_2
+arch wall_1_3
 x 5
 y 2
 end

@@ -6,7 +6,7 @@ enter_x 39
 enter_y 39
 msg
 Created:  1999-02-18 King Zoobus
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch desert
@@ -4855,6 +4855,7 @@ end
 arch goblin_head
 x 24
 y 9
+level 1
 end
 arch brush
 x 24
@@ -5087,6 +5088,7 @@ end
 arch dragon_steak
 x 25
 y 11
+level 1
 end
 arch grassmedium
 x 25
@@ -8323,6 +8325,7 @@ end
 arch tooth
 x 39
 y 22
+level 1
 end
 arch fernsdense
 x 39

@@ -8,7 +8,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2009-10-23 Andreas Kirschbaum
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch afloor_right
@@ -197,7 +197,7 @@ arch afloor_right
 x 2
 y 4
 end
-arch wall_2_1_2
+arch wall_1_4
 x 2
 y 4
 end
@@ -209,7 +209,7 @@ arch afloor_right
 x 2
 y 6
 end
-arch wall_2_1_2
+arch wall_1_4
 x 2
 y 6
 end
@@ -435,7 +435,7 @@ arch afloor_right
 x 4
 y 9
 end
-arch wall_2_1_1
+arch wall_1_2
 x 4
 y 9
 end
@@ -571,7 +571,7 @@ arch afloor_right
 x 6
 y 2
 end
-arch wall_2_1_1
+arch wall_1_1
 x 6
 y 2
 end
@@ -687,7 +687,7 @@ arch afloor_left
 x 7
 y 5
 end
-arch wall_2_1_1
+arch wall_1_2
 x 7
 y 5
 end
@@ -719,7 +719,7 @@ arch afloor_left
 x 7
 y 9
 end
-arch wall_2_1_1
+arch wall_1_1
 x 7
 y 9
 end

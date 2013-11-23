@@ -7,7 +7,7 @@ height 11
 enter_x 5
 msg
 Created:  1999-02-27 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch woodfloor2
@@ -185,7 +185,7 @@ arch woodfloor2
 x 2
 y 2
 end
-arch wall_2_1_1
+arch wall_1_2
 x 2
 y 2
 end
@@ -207,7 +207,7 @@ arch woodfloor2
 x 2
 y 4
 end
-arch wall_2_1_1
+arch wall_1_1
 x 2
 y 4
 end
@@ -497,7 +497,7 @@ arch woodfloor2
 x 5
 y 6
 end
-arch wall_2_1_1
+arch wall_1_2
 x 5
 y 6
 end
@@ -516,7 +516,7 @@ arch woodfloor2
 x 5
 y 8
 end
-arch wall_2_1_1
+arch wall_1_1
 x 5
 y 8
 end
@@ -875,6 +875,7 @@ end
 arch random_mineral
 end
 arch liver
+level 1
 end
 arch true_lead
 end

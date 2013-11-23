@@ -5,6 +5,7 @@ height 6
 enter_x 5
 msg
 Created:  1999-02-27 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch permanent_lava
@@ -121,7 +122,7 @@ x 3
 y 3
 end
 arch magic_portal
-slaying /dd_alchemy3
+slaying dd_alchemy3
 hp 5
 sp 3
 x 3
