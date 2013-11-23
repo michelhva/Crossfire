@@ -6,7 +6,7 @@ enter_x 16
 enter_y 8
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2009-10-23 Andreas Kirschbaum
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch woodfloor
@@ -213,8 +213,8 @@ y 15
 end
 arch stair_3_down
 slaying dd_alchemy2
-hp -1
-sp -1
+hp 6
+sp 1
 x 1
 y 15
 end

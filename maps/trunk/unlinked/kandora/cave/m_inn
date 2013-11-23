@@ -5,7 +5,7 @@ height 14
 enter_y 10
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch grass
@@ -30,10 +30,13 @@ end
 arch woodfloor2
 y 4
 end
-arch wall_1_2
+arch wall_2_1_1
 y 4
 end
 arch flagstone
+y 5
+end
+arch wall_2_1_1
 y 5
 end
 arch flagstone_2_2_2
@@ -257,7 +260,7 @@ arch flagstone
 x 2
 y 13
 end
-arch oakdoor
+arch oakdoor_2
 slaying mithril
 hp 10
 sp 9
@@ -824,11 +827,15 @@ arch woodfloor2
 x 9
 y 4
 end
-arch wall_1_2
+arch wall_2_1_1
 x 9
 y 4
 end
 arch flagstone
+x 9
+y 5
+end
+arch wall_2_1_1
 x 9
 y 5
 end

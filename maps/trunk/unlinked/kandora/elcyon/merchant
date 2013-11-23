@@ -5,7 +5,7 @@ height 11
 enter_x 15
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2008-06-03 Arvid Norlander
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch woodfloor
@@ -443,7 +443,7 @@ arch woodfloor
 x 5
 y 1
 end
-arch wall_2_1_1
+arch wall_1_2
 x 5
 y 1
 end
@@ -461,7 +461,7 @@ arch woodfloor
 x 5
 y 3
 end
-arch wall_2_1_1
+arch wall_1_1
 x 5
 y 3
 end
@@ -505,7 +505,7 @@ arch woodfloor
 x 5
 y 10
 end
-arch oakdoor
+arch oakdoor_2
 slaying seacity
 hp 2
 sp 8

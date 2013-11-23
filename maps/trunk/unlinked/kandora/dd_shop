@@ -7,7 +7,7 @@ height 11
 enter_x 5
 msg
 Created:  1999-02-27 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch woodfloor
@@ -284,7 +284,7 @@ end
 arch woodfloor
 x 4
 end
-arch wall_2_1_2
+arch wall_1_3
 x 4
 end
 arch woodfloor
@@ -346,7 +346,7 @@ end
 arch woodfloor
 x 5
 end
-arch oakdoor
+arch oakdoor_2
 slaying denray
 hp 4
 sp 14
@@ -448,7 +448,7 @@ arch woodfloor
 x 5
 y 7
 end
-arch wall_2_1_1
+arch wall_1_2
 x 5
 y 7
 end
@@ -460,7 +460,7 @@ arch woodfloor
 x 5
 y 9
 end
-arch wall_2_1_1
+arch wall_1_1
 x 5
 y 9
 end
@@ -475,7 +475,7 @@ end
 arch woodfloor
 x 6
 end
-arch wall_2_1_2
+arch wall_1_4
 x 6
 end
 arch woodfloor

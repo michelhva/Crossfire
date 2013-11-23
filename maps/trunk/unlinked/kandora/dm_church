@@ -6,7 +6,7 @@ enter_x 3
 enter_y 10
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch cobblestones2
@@ -211,7 +211,7 @@ arch cobblestones2
 x 2
 y 10
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 2
 y 10
 end
@@ -349,7 +349,7 @@ arch cobblestones2
 x 3
 y 10
 end
-arch oakdoor
+arch oakdoor_2
 slaying dun_marksel
 hp 13
 sp 12
@@ -449,7 +449,7 @@ arch cobblestones2
 x 4
 y 10
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 4
 y 10
 end

@@ -6,7 +6,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2008-06-03 Arvid Norlander
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch dungeon_magic
@@ -443,7 +443,7 @@ arch flagstone
 x 2
 y 13
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 2
 y 13
 end
@@ -455,7 +455,7 @@ arch flagstone
 x 2
 y 15
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 2
 y 15
 end
@@ -502,7 +502,7 @@ arch flagstone
 x 2
 y 19
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 2
 y 19
 end
@@ -813,7 +813,7 @@ arch flagstone
 x 4
 y 13
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 4
 y 13
 end
@@ -833,7 +833,7 @@ arch flagstone
 x 4
 y 16
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
 x 4
 y 16
 end
@@ -849,7 +849,7 @@ arch flagstone
 x 4
 y 18
 end
-arch flagstone_2_1_1
+arch flagstone_1_1
 x 4
 y 18
 end
@@ -1263,7 +1263,7 @@ arch flagstone
 x 6
 y 19
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 6
 y 19
 end
@@ -1425,7 +1425,7 @@ arch flagstone
 x 7
 y 13
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 7
 y 13
 end
@@ -1642,7 +1642,7 @@ arch flagstone
 x 8
 y 19
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 8
 y 19
 end
@@ -1865,7 +1865,7 @@ arch flagstone
 x 10
 y 2
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
 x 10
 y 2
 end
@@ -1884,7 +1884,7 @@ arch flagstone
 x 10
 y 4
 end
-arch flagstone_2_1_1
+arch flagstone_1_1
 x 10
 y 4
 end
@@ -1924,7 +1924,7 @@ arch flagstone
 x 10
 y 9
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
 x 10
 y 9
 end
@@ -1941,7 +1941,7 @@ arch flagstone
 x 10
 y 11
 end
-arch flagstone_2_1_1
+arch flagstone_1_1
 x 10
 y 11
 end
@@ -2146,7 +2146,7 @@ arch flagstone
 x 11
 y 15
 end
-arch flagstone_2_1_1
+arch flagstone_1_1
 x 11
 y 15
 end
@@ -2634,7 +2634,7 @@ arch flagstone
 x 13
 y 21
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 13
 y 21
 end
@@ -2909,7 +2909,7 @@ arch flagstone
 x 14
 y 21
 end
-arch oakdoor
+arch oakdoor_2
 slaying denray
 hp 2
 sp 8
@@ -3153,7 +3153,7 @@ arch flagstone
 x 15
 y 21
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 15
 y 21
 end

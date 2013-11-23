@@ -6,6 +6,7 @@ enter_x 3
 enter_y 10
 msg
 Created:  1999-02-03 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch flagstone
@@ -245,7 +246,7 @@ arch flagstone
 x 2
 y 10
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 2
 y 10
 end
@@ -299,7 +300,7 @@ arch cobblestones2
 x 3
 y 10
 end
-arch oakdoor
+arch oakdoor_2
 slaying denray
 hp 9
 sp 4
@@ -405,7 +406,7 @@ arch flagstone
 x 4
 y 10
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 4
 y 10
 end
