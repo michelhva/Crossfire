@@ -7,6 +7,7 @@ enter_y 19
 msg
 Created:  2006-06-05 K. Ahlers
 Mail: info@knutshome.de
+Modified: 2013-11-24 SilverNexus
 endmsg
 end
 arch magic_banned
@@ -2198,7 +2199,7 @@ arch woodfloor2
 x 9
 y 19
 end
-arch oakdoor
+arch oakdoor_2
 slaying city
 hp 27
 sp 12
@@ -5303,11 +5304,15 @@ arch wwall_2_2_1
 x 28
 y 7
 end
+arch swall_1_1_half
+x 28
+y 7
+end
 arch shop_empty
 x 28
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 28
 y 8
 end
@@ -5331,7 +5336,7 @@ arch shop_empty
 x 28
 y 11
 end
-arch swall_1_2
+arch swall_2_1_1
 x 28
 y 11
 end
@@ -5340,6 +5345,10 @@ x 28
 y 12
 end
 arch wwall_2_2_2
+x 28
+y 12
+end
+arch swall_1_2_half
 x 28
 y 12
 end
@@ -5406,6 +5415,10 @@ x 29
 y 5
 end
 arch shop_empty
+x 29
+y 6
+end
+arch swall_1_4_half
 x 29
 y 6
 end
@@ -5473,6 +5486,10 @@ arch shop_empty
 x 29
 y 13
 end
+arch swall_1_4_half
+x 29
+y 13
+end
 arch wwall_2_2_4
 x 29
 y 13
@@ -5535,7 +5552,7 @@ arch shop_empty
 x 30
 y 6
 end
-arch swall_1_4
+arch swall_2_1_2
 x 30
 y 6
 end
@@ -5605,7 +5622,7 @@ arch shop_empty
 x 30
 y 13
 end
-arch swall_1_4
+arch swall_2_1_2
 x 30
 y 13
 end
@@ -5903,7 +5920,7 @@ arch shop_empty
 x 33
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 33
 y 6
 end
@@ -5973,7 +5990,7 @@ arch shop_empty
 x 33
 y 13
 end
-arch swall_1_3
+arch swall_2_1_2
 x 33
 y 13
 end
@@ -6039,6 +6056,10 @@ arch wwall_2_2_2
 x 34
 y 6
 end
+arch swall_1_3_half
+x 34
+y 6
+end
 arch shop_empty
 x 34
 y 7
@@ -6092,6 +6113,10 @@ x 34
 y 13
 end
 arch wwall_2_2_1
+x 34
+y 13
+end
+arch swall_1_3_half
 x 34
 y 13
 end
@@ -6165,11 +6190,15 @@ arch wwall_2_2_4
 x 35
 y 7
 end
+arch swall_1_1_half
+x 35
+y 7
+end
 arch shop_empty
 x 35
 y 8
 end
-arch swall_1_1
+arch swall_2_1_1
 x 35
 y 8
 end
@@ -6193,11 +6222,15 @@ arch shop_empty
 x 35
 y 11
 end
-arch swall_1_2
+arch swall_2_1_1
 x 35
 y 11
 end
 arch shop_empty
+x 35
+y 12
+end
+arch swall_1_2_half
 x 35
 y 12
 end
