@@ -8,7 +8,7 @@ enter_y 2
 msg
 Created:  2005-07-17 K. Ahlers
 Mail: info@knutshome.de
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2013-11-24 SilverNexus
 endmsg
 end
 arch cobblestones2
@@ -421,7 +421,7 @@ x 1
 y 22
 end
 arch altar
-name Drop 200pp for a teleport to scorn
+name Drop 200pp for a teleport to Scorn
 slaying platinum coin
 exp 30
 food 200
@@ -722,7 +722,7 @@ x 2
 y 22
 end
 arch altar
-name Drop 200pp for a teleport to navar
+name Drop 200pp for a teleport to Navar
 slaying platinum coin
 exp 30
 food 200
@@ -1037,7 +1037,7 @@ x 3
 y 22
 end
 arch altar
-name Drop 200pp for a teleport to wolfsburg
+name Drop 200pp for a teleport to Wolfsburg
 slaying platinum coin
 exp 30
 food 200
@@ -1331,7 +1331,7 @@ x 4
 y 22
 end
 arch altar
-name Drop 200pp for a teleport to st. Dominion
+name Drop 200pp for a teleport to St. Dominion
 slaying platinum coin
 exp 30
 food 200
@@ -1611,7 +1611,7 @@ x 5
 y 22
 end
 arch altar
-name Drop 200pp for a teleport to red town
+name Drop 200pp for a teleport to Red Town
 slaying platinum coin
 exp 30
 food 200
@@ -1886,7 +1886,7 @@ x 6
 y 22
 end
 arch altar
-name Drop 200pp for a teleport to lone town
+name Drop 200pp for a teleport to Lone Town
 slaying platinum coin
 exp 30
 food 200
@@ -6347,7 +6347,7 @@ x 25
 y 2
 end
 arch dark_palace
-name Palace of forgotten Town
+name Palace of Forgotten Town
 slaying palace
 hp 9
 sp 19
