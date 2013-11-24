@@ -11,7 +11,7 @@ Creator: jesse@phiwumbda.org
 Date:    2008-01-21
 
 This dark cave looks like a Dwarven mine town, fallen on very hard times indeed.  The ogrish lot at the mouth of the cave seems fairly pleased with its plunder!
-Modified: 2013-07-19 Andreas Kirschbaum
+Modified: 2013-11-24 SilverNexus
 endmsg
 end
 arch dirtfloor
@@ -3921,7 +3921,7 @@ arch dirtfloor
 x 8
 y 26
 end
-arch bridge_ns
+arch river_bridge_ns
 x 8
 y 26
 end
@@ -5563,7 +5563,7 @@ arch dirtfloor
 x 12
 y 23
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 12
 y 23
 end
@@ -5576,7 +5576,7 @@ arch dirtfloor
 x 12
 y 24
 end
-arch rjunct_ns-nw
+arch river_crook_ns-sw
 x 12
 y 24
 end
@@ -8718,7 +8718,7 @@ arch dirtfloor
 x 19
 y 8
 end
-arch ford_we
+arch river_ford_we
 x 19
 y 8
 end
