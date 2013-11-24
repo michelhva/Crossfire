@@ -10,6 +10,7 @@ enter_x 13
 enter_y 13
 msg
 Created:  2005-07-21 Knut Ahlers
+Modified: 2013-11-24 SilverNexus
 endmsg
 end
 arch stonefloor2
@@ -198,11 +199,11 @@ name ancient mage
 msg
 @match altar|why
 The merchant in the generalshop came
-to me and have stolen my rod. That rod
+to me and has stolen my rod. That rod
 was a gift from the high council of the
 ancient mages for me. I had it in the cage
-here in the shop. As I were outside the
-merchant came and have stolen it. Would
+here in the shop. As I was outside the
+merchant came and has stolen it. Would
 you help me to get it back?
 @match yes
 Ok you must go to the generalshop. In
@@ -1055,7 +1056,7 @@ x 13
 y 13
 end
 arch oakdoor
-slaying /darcap/forgotten_town/city
+slaying ../city
 hp 19
 sp 3
 x 13

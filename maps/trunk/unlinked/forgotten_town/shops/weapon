@@ -10,6 +10,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  2005-07-18 Knut Ahlers
+Modified: 2013-11-24 SilverNexus
 endmsg
 end
 arch dungeon_magic
@@ -965,7 +966,7 @@ x 7
 y 14
 end
 arch oakdoor
-slaying /darcap/forgotten_town/city
+slaying ../city
 hp 22
 sp 3
 x 7
