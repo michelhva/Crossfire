@@ -7,7 +7,7 @@ enter_y 12
 msg
 Created:  2006-08-02 K. Ahlers
 Email: info@knutshome.de
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2013-11-24 SilverNexus
 endmsg
 end
 arch dirtfloor
@@ -3847,7 +3847,7 @@ arch flagstone
 x 32
 y 4
 end
-arch oakdoor
+arch oakdoor_2
 slaying ../city
 hp 24
 sp 37
@@ -3924,7 +3924,7 @@ arch flagstone
 x 32
 y 12
 end
-arch oakdoor
+arch oakdoor_2
 slaying ../city
 hp 24
 sp 37
