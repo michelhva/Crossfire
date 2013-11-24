@@ -7,6 +7,7 @@ enter_x 9
 enter_y 19
 msg
 Created:  2005-07-19 Knut Ahlers
+Modified: 2013-11-24 SilverNexus
 endmsg
 end
 arch dungeon_magic
@@ -1733,8 +1734,8 @@ arch marble
 x 9
 y 19
 end
-arch oakdoor
-slaying /darcap/forgotten_town/city
+arch oakdoor_2
+slaying city
 hp 25
 sp 4
 x 9
