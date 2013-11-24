@@ -7,7 +7,7 @@ enter_y 18
 msg
 Created:  2006-06-06 K. Ahlers
 Mail: info@knutshome.de
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2013-11-24 SilverNexus
 endmsg
 end
 arch flagstone
@@ -2942,7 +2942,7 @@ x 25
 y 14
 end
 arch teleporter
-slaying /darcap/forgotten_town/city
+slaying ../city
 hp 4
 sp 28
 x 25
@@ -2957,7 +2957,7 @@ x 25
 y 16
 end
 arch teleporter
-slaying /darcap/forgotten_town/city
+slaying ../city
 hp 4
 sp 28
 x 25
@@ -3332,7 +3332,7 @@ x 27
 y 14
 end
 arch teleporter
-slaying /darcap/forgotten_town/city
+slaying ../city
 hp 4
 sp 28
 x 27
@@ -3347,7 +3347,7 @@ x 27
 y 16
 end
 arch teleporter
-slaying /darcap/forgotten_town/city
+slaying ../city
 hp 4
 sp 28
 x 27
@@ -4666,7 +4666,7 @@ x 37
 y 12
 end
 arch teleporter
-slaying /darcap/forgotten_town/city
+slaying ../city
 hp 4
 sp 28
 x 37
