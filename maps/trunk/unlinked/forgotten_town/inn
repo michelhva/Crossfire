@@ -7,6 +7,7 @@ enter_x 9
 enter_y 14
 msg
 Created:  2005-07-21 Knut Ahlers
+Modified: 2013-11-24 SilverNexus
 endmsg
 end
 arch woodfloor2
@@ -688,6 +689,7 @@ end
 arch heart
 x 7
 y 10
+level 1
 end
 arch woodfloor2
 x 7
@@ -875,7 +877,7 @@ arch woodfloor2
 x 9
 y 14
 end
-arch oakdoor
+arch oakdoor_2
 slaying city
 hp 24
 sp 12
@@ -956,7 +958,7 @@ arch woodfloor2
 x 10
 y 14
 end
-arch oakdoor
+arch oakdoor_2
 slaying city
 hp 24
 sp 12
