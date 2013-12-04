@@ -1,6 +1,12 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Commented out the x and y default attributes on map arch.
+They were being added to the x and y values when the arch was placed
+on a map and can cause segfaults by placing the map arch off the map.
+system/map.arc
+SilverNexus 2013-12-03
+
 Pixel cleanup on the map arch face.
 system/map.base.111.png
 SilverNexus 2013-12-03
