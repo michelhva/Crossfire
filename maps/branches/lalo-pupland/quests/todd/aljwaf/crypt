@@ -1,15 +1,15 @@
 arch map
-name Aljwaf Crypt
+name Aljwaf Crypt, Entrance
 difficulty 6
+region narcopin
 darkness 2
 width 15
 height 15
 enter_x 1
 enter_y 1
 msg
-Todd Mitchell
-Created:  2002-03-31
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  2002-03-31 Todd Mitchell
+Modified: 2012-01-04 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -280,8 +280,7 @@ y 10
 end
 arch scroll_2
 msg
-The tomb is finished, I have placed your gems where you may find them beloved.
-Hurry to me.  You have but to step through the gate.
+The tomb is finished, I have placed your gems where you may find them my beloved.  Hurry to me.  You have but to step through the gate.
 endmsg
 x 2
 y 10
@@ -361,10 +360,7 @@ end
 arch note
 name graverobber's note
 msg
-The tomb lies deep below.
-...many traps...
-...keep to the coloured tile...
-Beware the guardians!
+The tomb lies deep below. ...many traps... ...keep to the coloured tile... Beware the guardians!
 endmsg
 x 3
 y 6
@@ -629,6 +625,10 @@ arch marble
 x 5
 y 9
 end
+arch swall_2_1_2
+x 5
+y 9
+end
 arch brazier
 x 5
 y 9
@@ -852,6 +852,10 @@ x 7
 y 8
 end
 arch marble
+x 7
+y 9
+end
+arch swall_2_1_2
 x 7
 y 9
 end

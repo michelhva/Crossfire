@@ -1,6 +1,6 @@
 arch map
 name Goblin Chief
-difficulty 1
+difficulty 10
 region scorn
 width 17
 height 24
@@ -8,8 +8,12 @@ enter_x 14
 enter_y 9
 msg
 Created:  2000-06-05
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2010-05-05 Cavesomething
 endmsg
+maplore
+@quest Scorn Royalty Quest
+the goblin chief is here
+endmaplore
 end
 arch pstone_4
 end
@@ -635,7 +639,7 @@ end
 arch brazier
 x 3
 y 17
-no_pass 0
+move_block 0
 end
 arch goblin
 x 3
@@ -802,7 +806,7 @@ end
 arch barrel
 x 4
 y 15
-no_pass 0
+move_block 0
 end
 arch generate_goblin
 x 4
@@ -1598,6 +1602,15 @@ arch goblin_head
 name Head of the Goblin Chief
 slaying Head of the Goblin Chief
 material 0
+arch quest_advance_pickup
+name scorn/GoblinKing 30>40
+end
+arch quest_prevent_drop
+name scorn/GoblinKing 50
+end
+end
+arch quest_advance_death
+name scorn/GoblinKing 20>30
 end
 end
 arch pstone_4
@@ -1761,7 +1774,7 @@ end
 arch brazier
 x 9
 y 22
-no_pass 0
+move_block 0
 end
 arch pstone_4
 x 9
@@ -1808,7 +1821,7 @@ end
 arch brazier
 x 10
 y 6
-no_pass 0
+move_block 0
 end
 arch pstone_4
 x 10
@@ -2007,7 +2020,7 @@ end
 arch brazier
 x 11
 y 7
-no_pass 0
+move_block 0
 end
 arch pstone_4
 x 11
@@ -2060,7 +2073,7 @@ end
 arch barrel
 x 11
 y 15
-no_pass 0
+move_block 0
 end
 arch pstone_4
 x 11
@@ -2093,7 +2106,7 @@ end
 arch brazier
 x 11
 y 19
-no_pass 0
+move_block 0
 end
 arch goblin
 x 11
@@ -2421,7 +2434,7 @@ end
 arch brazier
 x 13
 y 13
-no_pass 0
+move_block 0
 end
 arch pstone_4
 x 13
@@ -2735,7 +2748,7 @@ end
 arch barrel
 x 15
 y 5
-no_pass 0
+move_block 0
 end
 arch pstone_4
 x 15
@@ -2752,7 +2765,7 @@ end
 arch barrel
 x 15
 y 7
-no_pass 0
+move_block 0
 end
 arch pstone_4
 x 15

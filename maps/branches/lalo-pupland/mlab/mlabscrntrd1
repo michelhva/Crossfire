@@ -1,19 +1,19 @@
 arch map
-name West Scorn Trade Market
+name West Scorn Trade Market, Entrance
 reset_timeout 1
 difficulty 1
 region scorn
 shopitems food:0;*:-95
-shopgreed 1.00000
 shopmin 1
 shopmax 500
 shoprace human
-width 64
-height 64
+width 29
+height 26
 enter_x 1
-enter_y 1
+enter_y 10
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2012-03-14 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -106,34 +106,26 @@ end
 arch dungeon_magic
 y 10
 end
-arch invis_exit
+arch flagstone
+y 10
+end
+arch oakdoor_1
 slaying /world/world_104_115
 hp 43
 sp 35
 y 10
-end
-arch flagstone
-y 10
-end
-arch door_1
-y 10
-no_pass 0
 end
 arch dungeon_magic
 y 11
 end
-arch invis_exit
+arch flagstone
+y 11
+end
+arch oakdoor_1
 slaying /world/world_104_115
 hp 43
 sp 35
 y 11
-end
-arch flagstone
-y 11
-end
-arch door_1
-y 11
-no_pass 0
 end
 arch dungeon_magic
 y 12
@@ -232,22 +224,16 @@ arch blocked
 y 23
 end
 arch dungeon_magic
-y 61
+y 24
 end
 arch blocked
-y 61
+y 24
 end
 arch dungeon_magic
-y 62
+y 25
 end
 arch blocked
-y 62
-end
-arch dungeon_magic
-y 63
-end
-arch blocked
-y 63
+y 25
 end
 arch dungeon_magic
 x 1
@@ -452,44 +438,36 @@ y 23
 end
 arch dungeon_magic
 x 1
-y 61
+y 24
 end
 arch blocked
 x 1
-y 61
+y 24
 end
 arch dungeon_magic
 x 1
-y 62
+y 25
 end
 arch dungeon_floor
 x 1
-y 62
+y 25
 end
 arch button_plate
 x 1
-y 62
+y 25
 connected 5
 end
 arch grate_closed_2
 x 1
-y 62
+y 25
 speed 0.500000
 connected 4
 end
 arch grate_closed_2
 x 1
-y 62
+y 25
 speed 0.500000
 connected 3
-end
-arch dungeon_magic
-x 1
-y 63
-end
-arch blocked
-x 1
-y 63
 end
 arch dungeon_magic
 x 2
@@ -646,7 +624,6 @@ y 17
 end
 arch afloor_left
 name floor
-name_pl floor
 x 2
 y 17
 end
@@ -660,7 +637,6 @@ y 18
 end
 arch afloor_left
 name floor
-name_pl floor
 x 2
 y 18
 end
@@ -678,7 +654,6 @@ y 19
 end
 arch afloor_left
 name floor
-name_pl floor
 x 2
 y 19
 end
@@ -712,49 +687,41 @@ y 23
 end
 arch dungeon_magic
 x 2
-y 61
+y 24
 end
 arch blocked
 x 2
-y 61
+y 24
 end
 arch dungeon_magic
 x 2
-y 62
+y 25
 end
 arch dungeon_floor
 x 2
-y 62
+y 25
 end
 arch spikes_open
 x 2
-y 62
+y 25
 speed 0.500000
 value 1
 connected 4
 end
 arch spikes_open
 x 2
-y 62
+y 25
 speed 0.500000
 value 1
 connected 3
 end
 arch button_plate
 x 2
-y 62
+y 25
 end
 arch boulder
 x 2
-y 62
-end
-arch dungeon_magic
-x 2
-y 63
-end
-arch blocked
-x 2
-y 63
+y 25
 end
 arch dungeon_magic
 x 3
@@ -901,7 +868,7 @@ end
 arch door_2
 x 3
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 3
@@ -921,7 +888,6 @@ y 17
 end
 arch afloor_left
 name floor
-name_pl floor
 x 3
 y 17
 end
@@ -939,7 +905,6 @@ y 18
 end
 arch afloor_right
 name floor
-name_pl floor
 x 3
 y 18
 end
@@ -957,7 +922,6 @@ y 19
 end
 arch afloor_left
 name floor
-name_pl floor
 x 3
 y 19
 end
@@ -995,27 +959,19 @@ y 23
 end
 arch dungeon_magic
 x 3
-y 61
+y 24
 end
 arch blocked
 x 3
-y 61
+y 24
 end
 arch dungeon_magic
 x 3
-y 62
+y 25
 end
 arch blocked
 x 3
-y 62
-end
-arch dungeon_magic
-x 3
-y 63
-end
-arch blocked
-x 3
-y 63
+y 25
 end
 arch dungeon_magic
 x 4
@@ -1104,13 +1060,12 @@ y 9
 end
 arch sign
 name West Scorn Trademarket
-name_pl Trader Joe's
 msg
 Welcome to the West Scorn Trademarket.
-Here 2 players may place their
-tradeable goods in the trade zones.
-Then both players can turn their
-levers to complete the trade.
+...
+Here 2 players may place their tradable goods in the trade zones.
+...
+Then both players can turn their levers to complete the trade.
 endmsg
 x 4
 y 9
@@ -1166,7 +1121,7 @@ end
 arch door_2
 x 4
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 4
@@ -1186,7 +1141,6 @@ y 17
 end
 arch afloor_left
 name floor
-name_pl floor
 x 4
 y 17
 end
@@ -1204,7 +1158,6 @@ y 18
 end
 arch afloor_right
 name floor
-name_pl floor
 x 4
 y 18
 end
@@ -1222,7 +1175,6 @@ y 19
 end
 arch afloor_left
 name floor
-name_pl floor
 x 4
 y 19
 end
@@ -1285,7 +1237,6 @@ y 2
 end
 arch guildmaster
 name shopkeeper
-name_pl shopkeeper
 x 5
 y 2
 end
@@ -1337,7 +1288,6 @@ arch sign_e
 name Warning
 msg
 High level.
-
 endmsg
 x 5
 y 7
@@ -1432,7 +1382,6 @@ y 17
 end
 arch afloor_left
 name floor
-name_pl floor
 x 5
 y 17
 end
@@ -1446,7 +1395,6 @@ y 18
 end
 arch afloor_left
 name floor
-name_pl floor
 x 5
 y 18
 end
@@ -1464,7 +1412,6 @@ y 19
 end
 arch afloor_left
 name floor
-name_pl floor
 x 5
 y 19
 end
@@ -1569,11 +1516,7 @@ arch stair_3_up
 name high level
 slaying mlabscrntrd2
 msg
-You suddenly become greatly full of
-dread.
-
-
-
+You suddenly become greatly full of dread.
 endmsg
 hp 6
 sp 7
@@ -2447,10 +2390,6 @@ arch dungeon_magic
 x 10
 y 3
 end
-arch swall_2_2_2
-x 10
-y 3
-end
 arch flagstone
 x 10
 y 3
@@ -2458,12 +2397,9 @@ end
 arch longtable_2_2_2
 x 10
 y 3
+move_block all
 end
 arch dungeon_magic
-x 10
-y 4
-end
-arch swall_2_1_1
 x 10
 y 4
 end
@@ -2474,12 +2410,9 @@ end
 arch longtable_2_1_1
 x 10
 y 4
+move_block all
 end
 arch dungeon_magic
-x 10
-y 5
-end
-arch swall_2_1_1
 x 10
 y 5
 end
@@ -2490,12 +2423,9 @@ end
 arch longtable_2_1_1
 x 10
 y 5
+move_block all
 end
 arch dungeon_magic
-x 10
-y 6
-end
-arch swall_2_1_1
 x 10
 y 6
 end
@@ -2506,12 +2436,9 @@ end
 arch longtable_2_1_1
 x 10
 y 6
+move_block all
 end
 arch dungeon_magic
-x 10
-y 7
-end
-arch swall_2_1_1
 x 10
 y 7
 end
@@ -2522,12 +2449,9 @@ end
 arch longtable_2_1_1
 x 10
 y 7
+move_block all
 end
 arch dungeon_magic
-x 10
-y 8
-end
-arch swall_2_1_1
 x 10
 y 8
 end
@@ -2538,12 +2462,9 @@ end
 arch longtable_2_1_1
 x 10
 y 8
+move_block all
 end
 arch dungeon_magic
-x 10
-y 9
-end
-arch swall_2_1_1
 x 10
 y 9
 end
@@ -2554,12 +2475,9 @@ end
 arch longtable_2_1_1
 x 10
 y 9
+move_block all
 end
 arch dungeon_magic
-x 10
-y 10
-end
-arch swall_2_1_1
 x 10
 y 10
 end
@@ -2570,12 +2488,9 @@ end
 arch longtable_2_1_1
 x 10
 y 10
+move_block all
 end
 arch dungeon_magic
-x 10
-y 11
-end
-arch swall_2_1_1
 x 10
 y 11
 end
@@ -2586,12 +2501,9 @@ end
 arch longtable_2_1_1
 x 10
 y 11
+move_block all
 end
 arch dungeon_magic
-x 10
-y 12
-end
-arch swall_2_1_1
 x 10
 y 12
 end
@@ -2602,12 +2514,9 @@ end
 arch longtable_2_1_1
 x 10
 y 12
+move_block all
 end
 arch dungeon_magic
-x 10
-y 13
-end
-arch swall_2_1_1
 x 10
 y 13
 end
@@ -2618,12 +2527,9 @@ end
 arch longtable_2_1_1
 x 10
 y 13
+move_block all
 end
 arch dungeon_magic
-x 10
-y 14
-end
-arch swall_2_1_1
 x 10
 y 14
 end
@@ -2634,12 +2540,9 @@ end
 arch longtable_2_1_1
 x 10
 y 14
+move_block all
 end
 arch dungeon_magic
-x 10
-y 15
-end
-arch swall_2_1_1
 x 10
 y 15
 end
@@ -2650,12 +2553,9 @@ end
 arch longtable_2_1_1
 x 10
 y 15
+move_block all
 end
 arch dungeon_magic
-x 10
-y 16
-end
-arch swall_2_1_1
 x 10
 y 16
 end
@@ -2666,12 +2566,9 @@ end
 arch longtable_2_1_1
 x 10
 y 16
+move_block all
 end
 arch dungeon_magic
-x 10
-y 17
-end
-arch swall_2_1_1
 x 10
 y 17
 end
@@ -2682,12 +2579,9 @@ end
 arch longtable_2_1_1
 x 10
 y 17
+move_block all
 end
 arch dungeon_magic
-x 10
-y 18
-end
-arch swall_2_2_1
 x 10
 y 18
 end
@@ -2698,6 +2592,7 @@ end
 arch longtable_2_2_1
 x 10
 y 18
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -2772,10 +2667,6 @@ arch dungeon_magic
 x 11
 y 3
 end
-arch swall_2_1_2
-x 11
-y 3
-end
 arch flagstone
 x 11
 y 3
@@ -2783,6 +2674,7 @@ end
 arch longtable_2_1_2
 x 11
 y 3
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -2919,10 +2811,6 @@ arch dungeon_magic
 x 11
 y 18
 end
-arch swall_2_1_2
-x 11
-y 18
-end
 arch flagstone
 x 11
 y 18
@@ -2930,6 +2818,7 @@ end
 arch longtable_2_1_2
 x 11
 y 18
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -3004,10 +2893,6 @@ arch dungeon_magic
 x 12
 y 3
 end
-arch swall_2_1_2
-x 12
-y 3
-end
 arch flagstone
 x 12
 y 3
@@ -3015,6 +2900,7 @@ end
 arch longtable_2_1_2
 x 12
 y 3
+move_block all
 end
 arch dungeon_magic
 x 12
@@ -3190,10 +3076,6 @@ arch dungeon_magic
 x 12
 y 18
 end
-arch swall_2_1_2
-x 12
-y 18
-end
 arch flagstone
 x 12
 y 18
@@ -3201,6 +3083,7 @@ end
 arch longtable_2_1_2
 x 12
 y 18
+move_block all
 end
 arch dungeon_magic
 x 12
@@ -3275,10 +3158,6 @@ arch dungeon_magic
 x 13
 y 3
 end
-arch swall_2_1_2
-x 13
-y 3
-end
 arch flagstone
 x 13
 y 3
@@ -3286,6 +3165,7 @@ end
 arch longtable_2_1_2
 x 13
 y 3
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -3485,10 +3365,6 @@ arch dungeon_magic
 x 13
 y 18
 end
-arch swall_2_1_2
-x 13
-y 18
-end
 arch flagstone
 x 13
 y 18
@@ -3496,6 +3372,7 @@ end
 arch longtable_2_1_2
 x 13
 y 18
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -3570,10 +3447,6 @@ arch dungeon_magic
 x 14
 y 3
 end
-arch swall_2_1_2
-x 14
-y 3
-end
 arch flagstone
 x 14
 y 3
@@ -3581,6 +3454,7 @@ end
 arch longtable_2_1_2
 x 14
 y 3
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -3776,10 +3650,6 @@ arch dungeon_magic
 x 14
 y 18
 end
-arch swall_2_1_2
-x 14
-y 18
-end
 arch flagstone
 x 14
 y 18
@@ -3787,6 +3657,7 @@ end
 arch longtable_2_1_2
 x 14
 y 18
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -3861,10 +3732,6 @@ arch dungeon_magic
 x 15
 y 3
 end
-arch swall_2_1_2
-x 15
-y 3
-end
 arch flagstone
 x 15
 y 3
@@ -3872,6 +3739,7 @@ end
 arch longtable_2_1_2
 x 15
 y 3
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -4090,10 +3958,6 @@ arch dungeon_magic
 x 15
 y 18
 end
-arch swall_1_3
-x 15
-y 18
-end
 arch flagstone
 x 15
 y 18
@@ -4101,6 +3965,7 @@ end
 arch longtable_1_3
 x 15
 y 18
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -4175,10 +4040,6 @@ arch dungeon_magic
 x 16
 y 3
 end
-arch swall_2_1_2
-x 16
-y 3
-end
 arch flagstone
 x 16
 y 3
@@ -4186,6 +4047,7 @@ end
 arch longtable_2_1_2
 x 16
 y 3
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -4345,9 +4207,8 @@ y 16
 end
 arch sign_w
 name Trader 1
-name_pl Trader 1
 msg
-Trader
+Trader 1
 endmsg
 x 16
 y 16
@@ -4437,10 +4298,6 @@ arch dungeon_magic
 x 17
 y 3
 end
-arch swall_2_1_2
-x 17
-y 3
-end
 arch flagstone
 x 17
 y 3
@@ -4448,6 +4305,7 @@ end
 arch longtable_2_1_2
 x 17
 y 3
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -4607,7 +4465,9 @@ y 16
 end
 arch sign_e
 name Trader 2
-name_pl Trader 2
+msg
+Trader 2
+endmsg
 x 17
 y 16
 end
@@ -4696,10 +4556,6 @@ arch dungeon_magic
 x 18
 y 3
 end
-arch swall_2_1_2
-x 18
-y 3
-end
 arch flagstone
 x 18
 y 3
@@ -4707,6 +4563,7 @@ end
 arch longtable_2_1_2
 x 18
 y 3
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -4925,10 +4782,6 @@ arch dungeon_magic
 x 18
 y 18
 end
-arch swall_1_4
-x 18
-y 18
-end
 arch flagstone
 x 18
 y 18
@@ -4936,6 +4789,7 @@ end
 arch longtable_1_4
 x 18
 y 18
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -5010,10 +4864,6 @@ arch dungeon_magic
 x 19
 y 3
 end
-arch swall_2_1_2
-x 19
-y 3
-end
 arch flagstone
 x 19
 y 3
@@ -5021,6 +4871,7 @@ end
 arch longtable_2_1_2
 x 19
 y 3
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -5216,10 +5067,6 @@ arch dungeon_magic
 x 19
 y 18
 end
-arch swall_2_1_2
-x 19
-y 18
-end
 arch flagstone
 x 19
 y 18
@@ -5227,6 +5074,7 @@ end
 arch longtable_2_1_2
 x 19
 y 18
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -5301,10 +5149,6 @@ arch dungeon_magic
 x 20
 y 3
 end
-arch swall_2_1_2
-x 20
-y 3
-end
 arch flagstone
 x 20
 y 3
@@ -5312,6 +5156,7 @@ end
 arch longtable_2_1_2
 x 20
 y 3
+move_block all
 end
 arch dungeon_magic
 x 20
@@ -5511,10 +5356,6 @@ arch dungeon_magic
 x 20
 y 18
 end
-arch swall_2_1_2
-x 20
-y 18
-end
 arch flagstone
 x 20
 y 18
@@ -5522,6 +5363,7 @@ end
 arch longtable_2_1_2
 x 20
 y 18
+move_block all
 end
 arch dungeon_magic
 x 20
@@ -5596,10 +5438,6 @@ arch dungeon_magic
 x 21
 y 3
 end
-arch swall_2_1_2
-x 21
-y 3
-end
 arch flagstone
 x 21
 y 3
@@ -5607,6 +5445,7 @@ end
 arch longtable_2_1_2
 x 21
 y 3
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -5782,10 +5621,6 @@ arch dungeon_magic
 x 21
 y 18
 end
-arch swall_2_1_2
-x 21
-y 18
-end
 arch flagstone
 x 21
 y 18
@@ -5793,6 +5628,7 @@ end
 arch longtable_2_1_2
 x 21
 y 18
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -5867,10 +5703,6 @@ arch dungeon_magic
 x 22
 y 3
 end
-arch swall_2_1_2
-x 22
-y 3
-end
 arch flagstone
 x 22
 y 3
@@ -5878,6 +5710,7 @@ end
 arch longtable_2_1_2
 x 22
 y 3
+move_block all
 end
 arch dungeon_magic
 x 22
@@ -6014,10 +5847,6 @@ arch dungeon_magic
 x 22
 y 18
 end
-arch swall_2_1_2
-x 22
-y 18
-end
 arch flagstone
 x 22
 y 18
@@ -6025,6 +5854,7 @@ end
 arch longtable_2_1_2
 x 22
 y 18
+move_block all
 end
 arch dungeon_magic
 x 22
@@ -6099,10 +5929,6 @@ arch dungeon_magic
 x 23
 y 3
 end
-arch swall_2_2_3
-x 23
-y 3
-end
 arch flagstone
 x 23
 y 3
@@ -6110,12 +5936,9 @@ end
 arch longtable_2_2_3
 x 23
 y 3
+move_block all
 end
 arch dungeon_magic
-x 23
-y 4
-end
-arch swall_2_1_1
 x 23
 y 4
 end
@@ -6126,12 +5949,9 @@ end
 arch longtable_2_1_1
 x 23
 y 4
+move_block all
 end
 arch dungeon_magic
-x 23
-y 5
-end
-arch swall_2_1_1
 x 23
 y 5
 end
@@ -6142,12 +5962,9 @@ end
 arch longtable_2_1_1
 x 23
 y 5
+move_block all
 end
 arch dungeon_magic
-x 23
-y 6
-end
-arch swall_2_1_1
 x 23
 y 6
 end
@@ -6158,12 +5975,9 @@ end
 arch longtable_2_1_1
 x 23
 y 6
+move_block all
 end
 arch dungeon_magic
-x 23
-y 7
-end
-arch swall_2_1_1
 x 23
 y 7
 end
@@ -6174,12 +5988,9 @@ end
 arch longtable_2_1_1
 x 23
 y 7
+move_block all
 end
 arch dungeon_magic
-x 23
-y 8
-end
-arch swall_2_1_1
 x 23
 y 8
 end
@@ -6190,12 +6001,9 @@ end
 arch longtable_2_1_1
 x 23
 y 8
+move_block all
 end
 arch dungeon_magic
-x 23
-y 9
-end
-arch swall_2_1_1
 x 23
 y 9
 end
@@ -6206,12 +6014,9 @@ end
 arch longtable_2_1_1
 x 23
 y 9
+move_block all
 end
 arch dungeon_magic
-x 23
-y 10
-end
-arch swall_2_1_1
 x 23
 y 10
 end
@@ -6222,12 +6027,9 @@ end
 arch longtable_2_1_1
 x 23
 y 10
+move_block all
 end
 arch dungeon_magic
-x 23
-y 11
-end
-arch swall_2_1_1
 x 23
 y 11
 end
@@ -6238,12 +6040,9 @@ end
 arch longtable_2_1_1
 x 23
 y 11
+move_block all
 end
 arch dungeon_magic
-x 23
-y 12
-end
-arch swall_2_1_1
 x 23
 y 12
 end
@@ -6254,12 +6053,9 @@ end
 arch longtable_2_1_1
 x 23
 y 12
+move_block all
 end
 arch dungeon_magic
-x 23
-y 13
-end
-arch swall_2_1_1
 x 23
 y 13
 end
@@ -6270,12 +6066,9 @@ end
 arch longtable_2_1_1
 x 23
 y 13
+move_block all
 end
 arch dungeon_magic
-x 23
-y 14
-end
-arch swall_2_1_1
 x 23
 y 14
 end
@@ -6286,12 +6079,9 @@ end
 arch longtable_2_1_1
 x 23
 y 14
+move_block all
 end
 arch dungeon_magic
-x 23
-y 15
-end
-arch swall_2_1_1
 x 23
 y 15
 end
@@ -6302,12 +6092,9 @@ end
 arch longtable_2_1_1
 x 23
 y 15
+move_block all
 end
 arch dungeon_magic
-x 23
-y 16
-end
-arch swall_2_1_1
 x 23
 y 16
 end
@@ -6318,12 +6105,9 @@ end
 arch longtable_2_1_1
 x 23
 y 16
+move_block all
 end
 arch dungeon_magic
-x 23
-y 17
-end
-arch swall_2_1_1
 x 23
 y 17
 end
@@ -6334,12 +6118,9 @@ end
 arch longtable_2_1_1
 x 23
 y 17
+move_block all
 end
 arch dungeon_magic
-x 23
-y 18
-end
-arch swall_2_2_4
 x 23
 y 18
 end
@@ -6350,6 +6131,7 @@ end
 arch longtable_2_2_4
 x 23
 y 18
+move_block all
 end
 arch dungeon_magic
 x 23

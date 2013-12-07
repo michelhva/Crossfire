@@ -1,10 +1,14 @@
 arch map
 name Castle of Ra-Gar
-difficulty 1
+difficulty 15
+region wilderness
 width 20
 height 27
+enter_x 9
+enter_y 25
 msg
 Created:  1993-10-18
+Modified: 2012-03-10 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1582,7 +1586,7 @@ connected 1
 end
 arch magic_ear
 msg
-@match something|Something
+@match something
 Click.
 endmsg
 x 9
@@ -1600,6 +1604,10 @@ end
 arch dungeon_floor
 x 9
 y 25
+end
+arch dungeon_floor
+x 9
+y 26
 end
 arch exit
 name stones
@@ -1745,6 +1753,10 @@ end
 arch dungeon_floor
 x 10
 y 25
+end
+arch dungeon_floor
+x 10
+y 26
 end
 arch exit
 name stones
@@ -2106,10 +2118,9 @@ y 6
 end
 arch locked_door2
 name Earth Door
-slaying set_individual_value earth
+slaying ra-gar-earth
 msg
-You need the Earth Key to open this
-door
+You need the Earth Key to open this door.
 endmsg
 x 13
 y 6
@@ -2259,9 +2270,9 @@ y 6
 end
 arch locked_door2
 name Air Door
-slaying set_individual_value air
+slaying ra-gar-air
 msg
-You need the Air Key to open this door
+You need the Air Key to open this door.
 endmsg
 x 14
 y 6
@@ -2419,9 +2430,9 @@ y 6
 end
 arch locked_door2
 name Fire Door
-slaying set_individual_value fire
+slaying ra-gar-fire
 msg
-You need the Fire Key to open this doo
+You need the Fire Key to open this door.
 endmsg
 x 15
 y 6
@@ -2599,10 +2610,9 @@ y 6
 end
 arch locked_door2
 name Water Door
-slaying set_individual_value water
+slaying ra-gar-water
 msg
-You need the Water Key to open this
-doo
+You need the Water Key to open this door.
 endmsg
 x 16
 y 6

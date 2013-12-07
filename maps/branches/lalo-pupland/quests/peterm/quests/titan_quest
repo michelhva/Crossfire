@@ -1,13 +1,18 @@
 arch map
 name Titan Quest
-difficulty 1
+difficulty 35
+region wilderness
 width 37
 height 35
 enter_x 35
 enter_y 33
 msg
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2010-05-05 Cavesomething
 endmsg
+maplore
+@quest Scorn Royalty Quest
+Meganthropopulos is here
+endmaplore
 end
 arch woodfloor2
 end
@@ -2243,7 +2248,7 @@ end
 arch flagstone_2_1_1
 x 10
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 10
@@ -2428,7 +2433,7 @@ end
 arch flagstone_2_1_1
 x 10
 y 29
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 10
@@ -3783,6 +3788,15 @@ carrying 12300
 arch crown
 name Meganthropopulos' Crown
 material 0
+arch quest_advance_pickup
+name scorn/TitanCrown 60>70
+end
+arch quest_prevent_drop
+name scorn/TitanCrown 80
+end
+end
+arch quest_advance_death
+name scorn/TitanCrown 50>60
 end
 end
 arch woodfloor2
@@ -5757,7 +5771,7 @@ end
 arch flagstone_2_1_1
 x 26
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 26
@@ -5942,7 +5956,7 @@ end
 arch flagstone_2_1_1
 x 26
 y 29
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 26

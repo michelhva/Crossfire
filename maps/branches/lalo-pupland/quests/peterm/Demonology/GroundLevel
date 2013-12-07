@@ -1,10 +1,14 @@
 arch map
 name Tower of Demonology Ground Level
 difficulty 1
+region wilderness
 width 20
 height 20
+enter_x 9
+enter_y 19
 msg
 Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
+Modified: 2012-03-12 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -249,12 +253,7 @@ arch guildmaster
 name admissions officer
 msg
 @match *
-Welcome to the school of Demonology
-and Summoning.
-Our instruction includes the summoning
-and control of demons, undead, djinn,
-and elementals.  Talk to the
-receptionist about admission.
+Welcome to the school of Demonology and Summoning.  Our instruction includes the summoning and control of demons, undead, djinn, and elementals.  Talk to the receptionist about admission.
 endmsg
 x 2
 y 2
@@ -522,8 +521,7 @@ y 7
 end
 arch magic_mouth
 msg
-These people don't look quite
-as dumb as the bureaucrats did.
+These people don't look quite as dumb as the bureaucrats did.
 endmsg
 x 4
 y 8
@@ -534,7 +532,7 @@ y 8
 end
 arch magic_mouth
 msg
-Admissions
+Admissions.
 endmsg
 x 4
 y 9
@@ -552,7 +550,7 @@ lifesave 1
 end
 arch magic_mouth
 msg
-Lecture room
+Lecture room.
 endmsg
 x 4
 y 10
@@ -804,10 +802,8 @@ end
 arch guildmaster
 name receptionist
 msg
-@match admission|Admission|enroll|teach
-Admission is 1500 gold.
-Be careful, the apprentices
-can be rambunctious.
+@match admission|enroll|teach
+Admission is 1500 gold.  Be careful, the apprentices can be rambunctious.
 endmsg
 x 6
 y 6
@@ -1177,9 +1173,7 @@ x 9
 end
 arch magic_mouth
 msg
-A wild cacophony wafts down the stairs.
-You wonder what sort of chaos could
-produce all the noises you hear
+A wild cacophony wafts down the stairs.  You wonder what sort of chaos could produce all the noises you hear.
 endmsg
 x 9
 y 1
@@ -1214,6 +1208,7 @@ x 9
 y 3
 end
 arch altar
+name altar (1500 gp)
 slaying money
 food 15000
 x 9
@@ -1257,10 +1252,7 @@ y 10
 end
 arch sign
 msg
-Welcome to the Tower of Demonology
-and Summoning
-Here is taught the summoning and
-control of beings from other planes.
+Welcome to the Tower of Demonology and Summoning.  Here is taught the summoning and control of beings from other planes.
 endmsg
 x 9
 y 10
@@ -1333,9 +1325,7 @@ x 10
 end
 arch magic_mouth
 msg
-A wild cacophony wafts down the stairs.
-You wonder what chaos could produce
-the sounds you hear
+A wild cacophony wafts down the stairs.  You wonder what chaos could produce the sounds you hear.
 endmsg
 x 10
 y 1
@@ -1851,9 +1841,7 @@ arch guildmaster
 name lord high bureaucrat
 msg
 @match *
-I'm too busy to help you, you utterly
-meaningless clod of dirt.  Go and talk
-to the admissions people.
+I'm too busy to help you, you utterly meaningless clod of dirt.  Go and talk to the admissions people.
 endmsg
 hp 500
 x 13
@@ -1887,9 +1875,7 @@ arch guildmaster
 name bureaucrat
 msg
 @match *
-I'm too busy to help you.  Go talk
-to the admissions people if you want
-to get in.
+I'm too busy to help you.  Go talk to the admissions people if you want to get in.
 endmsg
 x 13
 y 7
@@ -2128,10 +2114,7 @@ y 7
 end
 arch magic_mouth
 msg
-You take one look at the vacant
-faces of these bureaucrats and
-decide they have nothing useful to
-say.
+You take one look at the vacant faces of these bureaucrats and decide they have nothing useful to say.
 endmsg
 x 15
 y 8
@@ -2149,7 +2132,7 @@ lifesave 1
 end
 arch magic_mouth
 msg
-Administration
+Administration.
 endmsg
 x 15
 y 9
@@ -2167,7 +2150,7 @@ lifesave 1
 end
 arch magic_mouth
 msg
-Demonstration room
+Demonstration room.
 endmsg
 x 15
 y 10
@@ -2185,8 +2168,7 @@ lifesave 1
 end
 arch magic_mouth
 msg
-You look at the pentagram but see
-nothing which might activate it.
+You look at the pentagram but see nothing which might activate it.
 endmsg
 x 15
 y 11
@@ -2394,8 +2376,7 @@ arch guildmaster
 name bureaucrat
 msg
 @match *
-I'm too busy to help you.  Go talk
-to the admissions people.
+I'm too busy to help you.  Go talk to the admissions people.
 endmsg
 x 17
 y 6
@@ -2482,8 +2463,7 @@ arch guildmaster
 name bureaucrat
 msg
 @match *
-I'm too busy to help you.  Go bother
-the admissions people instead of me.
+I'm too busy to help you.  Go bother the admissions people instead of me.
 endmsg
 x 18
 y 2

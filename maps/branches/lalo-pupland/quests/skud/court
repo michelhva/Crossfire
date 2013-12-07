@@ -1,13 +1,14 @@
 arch map
-name Skud Tower Court
-difficulty 1
+name Skud Tower, Court
+difficulty 20
+region wilderness
 width 40
 height 40
 enter_x 19
 enter_y 39
 msg
 Created:  1993-11-13
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-03-24 Rick Tanner
 endmsg
 end
 arch marble
@@ -705,6 +706,10 @@ speed 0.500000
 value 1
 connected 8
 end
+arch marble
+x 2
+y 38
+end
 arch lightningwall_t
 x 2
 y 38
@@ -1149,6 +1154,10 @@ speed 0.500000
 value 1
 connected 8
 end
+arch marble
+x 4
+y 38
+end
 arch lightningwall_1
 x 4
 y 38
@@ -1363,6 +1372,10 @@ y 37
 speed 0.500000
 value 1
 connected 8
+end
+arch marble
+x 5
+y 38
 end
 arch lightningwall_t
 x 5
@@ -1582,6 +1595,10 @@ y 37
 speed 0.500000
 value 1
 connected 8
+end
+arch marble
+x 6
+y 38
 end
 arch lightningwall_t
 x 6
@@ -2004,10 +2021,7 @@ arch grimreaper
 name Evil Spirit
 msg
 @match *
-Begone from here or I feed off your
-flesh. Have you ever Danced with Death?
-*The spirit holds out his hand to
-you.*
+Begone from here or I feed off your flesh.  Have you ever Danced with Death? *The spirit holds out his hand to you.*
 endmsg
 hp 600
 maxhp 200
@@ -3846,8 +3860,7 @@ y 4
 end
 arch magic_mouth
 msg
-You hear a most unholy roar and wonder
-what type of creature awaits you
+You hear a most unholy roar and wonder what type of creature awaits you.
 endmsg
 x 18
 y 5
@@ -3996,9 +4009,7 @@ y 36
 end
 arch magic_mouth
 msg
-WHO DARES ENTER THESE WALLS!!!!!!!
-You'll shall parish and I will feast
-on your soul
+WHO DARES ENTER THESE WALLS!!!!!!! You'll shall perish and I will feast on your soul!
 endmsg
 x 18
 y 37
@@ -4037,7 +4048,7 @@ end
 arch locked_door1
 slaying northwing
 msg
-The door to the north wing is locked
+The door to the north wing is locked.
 endmsg
 x 19
 y 1
@@ -4056,8 +4067,7 @@ y 4
 end
 arch magic_mouth
 msg
-You hear a most unholy roar and wonder
-what type of creature awaits you
+You hear a most unholy roar and wonder what type of creature awaits you.
 endmsg
 x 19
 y 5
@@ -4242,9 +4252,7 @@ y 36
 end
 arch magic_mouth
 msg
-WHO DARES ENTER THESE WALLS!!!!!!!
-You'll shall parish and I will feast
-on your soul
+WHO DARES ENTER THESE WALLS!!!!!!! You'll shall perish and I will feast on your soul!
 endmsg
 x 19
 y 37
@@ -4283,7 +4291,7 @@ end
 arch locked_door1
 slaying northwing
 msg
-The door to the north wing is locked
+The door to the north wing is locked.
 endmsg
 x 20
 y 1
@@ -4302,8 +4310,7 @@ y 4
 end
 arch magic_mouth
 msg
-You hear a most unholy roar and wonder
-what type of creature awaits you
+You hear a most unholy roar and wonder what type of creature awaits you.
 endmsg
 x 20
 y 5
@@ -4489,8 +4496,7 @@ y 4
 end
 arch magic_mouth
 msg
-You hear a most unholy roar and wonder
-what type of creature awaits you
+You hear a most unholy roar and wonder what type of creature awaits you.
 endmsg
 x 21
 y 5
@@ -5479,7 +5485,7 @@ y 3
 end
 arch magic_mouth
 msg
-You here an evil laugh
+You hear an evil laugh.
 endmsg
 x 26
 y 3
@@ -6448,9 +6454,7 @@ arch grimreaper
 name Evil Spirit
 msg
 @match *
-Begone from here or I feed off your
-flesh. Have you ever Danced with Death?
-*The spirit holds out his hand to you.
+Begone from here or I feed off your flesh.  Have you ever Danced with Death? *The spirit holds out his hand to you.*
 endmsg
 hp 200
 maxhp 200
@@ -6606,7 +6610,7 @@ y 3
 end
 arch magic_mouth
 msg
-You here an evil laugh
+You hear an evil laugh.
 endmsg
 x 32
 y 3
@@ -6729,7 +6733,7 @@ y 17
 end
 arch magic_mouth
 msg
-You here an evil laugh
+You hear an evil laugh.
 endmsg
 x 32
 y 18
@@ -6822,8 +6826,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -7198,8 +7201,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -7226,8 +7228,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -7254,8 +7255,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -7282,8 +7282,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -7602,8 +7601,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -7630,8 +7628,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -7658,8 +7655,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -8006,8 +8002,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -8034,8 +8029,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -8062,8 +8056,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -8386,8 +8379,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -8414,8 +8406,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -8752,8 +8743,7 @@ arch dwarf_wiz
 name Crazed dwarf
 msg
 @match *
-Your not our master! Who are you! who
-are you!? AEEEEEEEIIIIIIIIIIII!!
+You're not our master! Who are you! who are you!? AEEEEEEEIIIIIIIIIIII!!
 endmsg
 hp 600
 maxhp 400
@@ -8877,7 +8867,7 @@ end
 arch locked_door2
 slaying eastwing
 msg
-The door to the east wing is locked
+The door to the east wing is locked.
 endmsg
 x 38
 y 5

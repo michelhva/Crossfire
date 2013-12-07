@@ -1,12 +1,19 @@
 arch map
-name Tower
+name Warriors' Tower, Level 2
 swap_time 5300
-difficulty 1
+difficulty 25
+region wilderness
 width 32
 height 30
+enter_x 14
+enter_y 17
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-04-14 Nicolas Weeger
 endmsg
+maplore
+@quest Lorkas
+endmaplore
 end
 arch cobblestones
 end
@@ -350,41 +357,9 @@ arch cobblestones
 x 2
 y 6
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 2
 y 6
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 2
@@ -426,43 +401,9 @@ arch cobblestones
 x 2
 y 15
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 2
 y 15
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 2
@@ -480,43 +421,9 @@ arch cobblestones
 x 2
 y 19
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 2
 y 19
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 2
@@ -550,43 +457,9 @@ arch cobblestones
 x 2
 y 26
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 2
 y 26
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 2
@@ -650,41 +523,9 @@ arch cobblestones
 x 3
 y 10
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 3
 y 10
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 3
@@ -750,41 +591,9 @@ arch cobblestones
 x 3
 y 24
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 3
 y 24
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 3
@@ -798,43 +607,9 @@ arch cobblestones
 x 3
 y 27
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 3
 y 27
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 3
@@ -870,41 +645,9 @@ arch cobblestones
 x 4
 y 4
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 4
 y 4
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 4
@@ -918,43 +661,9 @@ arch cobblestones
 x 4
 y 7
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 4
 y 7
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 4
@@ -992,43 +701,9 @@ arch cobblestones
 x 4
 y 15
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 4
 y 15
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 4
@@ -1042,41 +717,9 @@ arch cobblestones
 x 4
 y 18
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 4
 y 18
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 4
@@ -1086,43 +729,9 @@ arch cobblestones
 x 4
 y 20
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 4
 y 20
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 4
@@ -1148,43 +757,9 @@ arch cobblestones
 x 4
 y 25
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 4
 y 25
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 4
@@ -1328,41 +903,9 @@ arch cobblestones
 x 5
 y 27
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 5
 y 27
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 5
@@ -1422,41 +965,9 @@ arch cobblestones
 x 6
 y 10
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 6
 y 10
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 6
@@ -1486,41 +997,9 @@ arch cobblestones
 x 6
 y 16
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 6
 y 16
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 6
@@ -1562,43 +1041,9 @@ arch cobblestones
 x 6
 y 25
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 6
 y 25
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 6
@@ -1634,43 +1079,9 @@ arch cobblestones
 x 7
 y 2
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 7
 y 2
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 7
@@ -1688,41 +1099,9 @@ arch cobblestones
 x 7
 y 6
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 7
 y 6
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 7
@@ -1780,83 +1159,17 @@ arch cobblestones
 x 7
 y 19
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 7
 y 19
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 7
 y 20
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 7
 y 20
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 7
@@ -1952,43 +1265,9 @@ arch cobblestones
 x 8
 y 11
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 8
 y 11
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 8
@@ -2124,41 +1403,9 @@ arch cobblestones
 x 9
 y 5
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 9
 y 5
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 9
@@ -2204,41 +1451,9 @@ arch cobblestones
 x 9
 y 15
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 9
 y 15
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 9
@@ -2252,41 +1467,9 @@ arch cobblestones
 x 9
 y 18
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 9
 y 18
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 9
@@ -2354,43 +1537,9 @@ arch cobblestones
 x 10
 y 2
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 10
 y 2
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 10
@@ -2420,41 +1569,9 @@ arch cobblestones
 x 10
 y 9
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 10
 y 9
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 10
@@ -2536,43 +1653,9 @@ arch cobblestones
 x 10
 y 27
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 10
 y 27
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 10
@@ -2696,43 +1779,9 @@ arch cobblestones
 x 11
 y 24
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 11
 y 24
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 11
@@ -3142,43 +2191,9 @@ arch cobblestones
 x 14
 y 2
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 14
 y 2
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 14
@@ -3220,40 +2235,9 @@ arch cobblestones
 x 14
 y 11
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch shadow_elf
 x 14
 y 11
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
 end
 arch cobblestones
 x 14
@@ -3303,43 +2287,9 @@ arch cobblestones
 x 14
 y 22
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 14
 y 22
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 14
@@ -3399,41 +2349,9 @@ arch cobblestones
 x 15
 y 4
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 15
 y 4
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 15
@@ -3575,41 +2493,9 @@ arch cobblestones
 x 16
 y 1
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 16
 y 1
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 16
@@ -3619,43 +2505,9 @@ arch cobblestones
 x 16
 y 3
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 16
 y 3
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 16
@@ -3780,43 +2632,9 @@ arch cobblestones
 x 16
 y 27
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 16
 y 27
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 16
@@ -3848,41 +2666,9 @@ arch cobblestones
 x 17
 y 3
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 17
 y 3
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 17
@@ -3908,40 +2694,9 @@ arch cobblestones
 x 17
 y 8
 end
-arch dark_elf
-name shadow elf
-Str 15
-Dex 0
-Con 15
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch shadow_elf
 x 17
 y 8
-speed -0.400000
-level 22
-resist_magic 30
-resist_cold 100
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-arch abil_fear
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
 end
 arch cobblestones
 x 17
@@ -4010,43 +2765,9 @@ arch cobblestones
 x 17
 y 22
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 17
 y 22
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 17
@@ -4522,43 +3243,9 @@ arch cobblestones
 x 20
 y 16
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 20
 y 16
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 20
@@ -4608,43 +3295,9 @@ arch cobblestones
 x 20
 y 27
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 20
 y 27
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 20
@@ -4700,43 +3353,9 @@ arch cobblestones
 x 21
 y 9
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 21
 y 9
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 21
@@ -4806,43 +3425,9 @@ arch cobblestones
 x 21
 y 24
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 21
 y 24
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 21
@@ -4946,41 +3531,9 @@ arch cobblestones
 x 22
 y 17
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 22
 y 17
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 22
@@ -4994,41 +3547,9 @@ arch cobblestones
 x 22
 y 20
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 22
 y 20
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 22
@@ -5092,41 +3613,9 @@ arch cobblestones
 x 23
 y 3
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 23
 y 3
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 23
@@ -5140,41 +3629,9 @@ arch cobblestones
 x 23
 y 6
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 23
 y 6
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 23
@@ -5216,43 +3673,9 @@ arch cobblestones
 x 23
 y 15
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 23
 y 15
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 23
@@ -5502,43 +3925,9 @@ arch cobblestones
 x 25
 y 5
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 25
 y 5
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 25
@@ -5584,41 +3973,9 @@ arch cobblestones
 x 25
 y 15
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 25
 y 15
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 25
@@ -5628,43 +3985,9 @@ arch cobblestones
 x 25
 y 17
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 25
 y 17
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 25
@@ -5674,43 +3997,9 @@ arch cobblestones
 x 25
 y 19
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 25
 y 19
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 25
@@ -5744,43 +4033,9 @@ arch cobblestones
 x 25
 y 26
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 25
 y 26
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 25
@@ -5812,43 +4067,9 @@ arch cobblestones
 x 26
 y 2
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 26
 y 2
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 26
@@ -5878,43 +4099,9 @@ arch cobblestones
 x 26
 y 9
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 26
 y 9
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 26
@@ -5984,43 +4171,9 @@ arch cobblestones
 x 26
 y 24
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 26
 y 24
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 26
@@ -6068,41 +4221,9 @@ arch cobblestones
 x 27
 y 4
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 27
 y 4
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 27
@@ -6200,43 +4321,9 @@ arch cobblestones
 x 27
 y 26
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 27
 y 26
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 27
@@ -6292,41 +4379,9 @@ arch cobblestones
 x 28
 y 8
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 28
 y 8
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 28
@@ -6336,41 +4391,9 @@ arch cobblestones
 x 28
 y 10
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 28
 y 10
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 28
@@ -6400,41 +4423,9 @@ arch cobblestones
 x 28
 y 16
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 28
 y 16
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 28
@@ -6448,41 +4439,9 @@ arch cobblestones
 x 28
 y 19
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 28
 y 19
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 28
@@ -6512,43 +4471,9 @@ arch cobblestones
 x 28
 y 25
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 28
 y 25
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 28
@@ -6562,41 +4487,9 @@ arch cobblestones
 x 28
 y 28
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 28
 y 28
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 28
@@ -6684,43 +4577,9 @@ arch cobblestones
 x 29
 y 17
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 29
 y 17
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 29
@@ -6808,43 +4667,9 @@ arch cobblestones
 x 30
 y 6
 end
-arch sailor
-name Blade Dancer
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch blade_dancer_master
 x 30
 y 6
-speed -0.800000
-level 20
-attacktype 256
-resist_physical 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-carrying 20000
-see_invisible 1
-unaggressive 0
-can_use_skill 0
-arch katana_1
-name sleek katana
-slaying unnatural
-dam 15
-nrof 2
-attacktype 256
-resist_drain -100
-weight 10000
-magic 4
-last_sp 0
-end
 end
 arch cobblestones
 x 30
@@ -6930,41 +4755,9 @@ arch cobblestones
 x 30
 y 25
 end
-arch dwarf_priest
-name renegade priest
-Str 25
-Con 15
-Wis 15
-Pow 40
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 50000
-dam 20
-wc -10
-ac -8
+arch renegade_priest
 x 30
 y 25
-speed -0.400000
-attack_movement 7
-level 20
-resist_magic 30
-resist_confusion 100
-resist_paralyze 100
-resist_fear 100
-see_invisible 1
-unaggressive 0
-arch spell_cause_heavy_wounds
-end
-arch spell_cause_medium_wounds
-end
-arch spell_cause_heavy_wounds
-end
-arch spell_summon_pet_monster
-end
-arch spell_heal
-end
 end
 arch cobblestones
 x 30

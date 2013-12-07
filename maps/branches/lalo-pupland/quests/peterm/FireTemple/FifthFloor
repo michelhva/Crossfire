@@ -1,10 +1,14 @@
 arch map
-name Fire Temple -- Fifth Floor
-difficulty 1
+name Fire Temple, Fifth Floor
+difficulty 60
+region wilderness
 width 40
 height 40
+enter_x 12
+enter_y 9
 msg
 Created:  1997-05-23 PeterM (peterm@soda.csua.berkeley.edu)
+Modified: 2012-03-12 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -3944,6 +3948,10 @@ arch mine5
 x 14
 y 12
 end
+arch swall_1_1_half
+x 14
+y 12
+end
 arch cobblestones
 x 14
 y 13
@@ -3965,6 +3973,10 @@ x 14
 y 15
 end
 arch mine12
+x 14
+y 15
+end
+arch swall_1_1_half
 x 14
 y 15
 end
@@ -3997,6 +4009,10 @@ x 14
 y 19
 end
 arch mine5
+x 14
+y 19
+end
+arch swall_1_1_half
 x 14
 y 19
 end
@@ -4184,6 +4200,10 @@ x 15
 y 10
 end
 arch cobblestones
+x 15
+y 11
+end
+arch swall_1_4_half
 x 15
 y 11
 end
@@ -4574,6 +4594,10 @@ x 16
 y 21
 end
 arch cobblestones
+x 16
+y 22
+end
+arch swall_1_4_half
 x 16
 y 22
 end
@@ -5466,6 +5490,10 @@ arch cobblestones
 x 19
 y 22
 end
+arch swall_1_4_half
+x 19
+y 22
+end
 arch mine9
 x 19
 y 22
@@ -5978,6 +6006,10 @@ arch cobblestones
 x 21
 y 11
 end
+arch swall_1_4_half
+x 21
+y 11
+end
 arch mine7
 x 21
 y 11
@@ -6397,6 +6429,10 @@ x 22
 y 21
 end
 arch cobblestones
+x 22
+y 22
+end
+arch swall_1_4_half
 x 22
 y 22
 end
@@ -7135,6 +7171,10 @@ arch mine5
 x 25
 y 12
 end
+arch swall_1_1_half
+x 25
+y 12
+end
 arch cobblestones
 x 25
 y 13
@@ -7156,6 +7196,10 @@ x 25
 y 15
 end
 arch mine4
+x 25
+y 15
+end
+arch swall_1_1_half
 x 25
 y 15
 end
@@ -7180,6 +7224,10 @@ x 25
 y 18
 end
 arch mine4
+x 25
+y 18
+end
+arch swall_1_1_half
 x 25
 y 18
 end
@@ -7360,10 +7408,12 @@ end
 arch cobblestones
 x 26
 y 9
+end
 arch rune_large_fireball
 Cha 30
+x 26
+y 9
 level 20
-end
 end
 arch cobblestones
 x 26
@@ -9518,12 +9568,7 @@ end
 arch marker
 slaying fire alchemist
 msg
-While reading through the scroll,
-you discover the secret methods
-of demonic fire alchemy! Now you are
-able to mix potions of fire resistance
-on your own, when you have the proper
-ingredients.
+While reading through the scroll, you discover the secret methods of demonic fire alchemy! Now you are able to mix potions of fire resistance on your own, when you have the proper ingredients.
 endmsg
 hp 1
 food 0
@@ -9532,11 +9577,7 @@ y 1
 end
 arch scroll
 msg
-This scroll contains the final secrets
-for the alchemical preparation which
-grants temporary immunity to fire.
-It's pre-publication, so you're getting
-a scoop on the rest of the world.
+This scroll contains the final secrets for the alchemical preparation which grants temporary immunity to fire.  It's pre-publication, so you're getting a scoop on the rest of the world.
 endmsg
 x 35
 y 1

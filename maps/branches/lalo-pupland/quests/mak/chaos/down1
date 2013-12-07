@@ -1,14 +1,19 @@
 arch map
-name Dungeon
+name Warriors' Tower, Dungeon Level 1
 reset_timeout 7200
-difficulty 13
+difficulty 50
+region wilderness
 width 32
 height 29
-enter_x 1
+enter_x 15
 enter_y 1
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-04-14 Nicolas Weeger
 endmsg
+maplore
+@quest Lorkas
+endmaplore
 end
 arch dungeon_floor
 end
@@ -189,36 +194,9 @@ arch dungeon_floor
 x 1
 y 1
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 1
 y 1
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 1
@@ -256,36 +234,9 @@ arch dungeon_floor
 x 1
 y 10
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 1
 y 10
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 1
@@ -553,36 +504,9 @@ arch dungeon_floor
 x 2
 y 25
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 2
 y 25
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 2
@@ -592,7 +516,7 @@ arch dungeon_floor
 x 2
 y 27
 end
-arch oakdoor
+arch stair_3_down
 slaying down2
 hp 14
 sp 15
@@ -1128,36 +1052,9 @@ arch dungeon_floor
 x 6
 y 3
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 6
 y 3
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 6
@@ -1175,36 +1072,9 @@ arch dungeon_floor
 x 6
 y 7
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 6
 y 7
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 6
@@ -2076,36 +1946,9 @@ arch dungeon_floor
 x 11
 y 5
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 11
 y 5
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 11
@@ -2191,8 +2034,7 @@ y 21
 end
 arch magic_mouth
 msg
-These kobolds seem to have gone insane
-by the madness of this place
+These kobolds seem to have gone insane by the madness of this place.
 endmsg
 x 11
 y 22
@@ -2268,36 +2110,9 @@ arch dungeon_floor
 x 12
 y 8
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 12
 y 8
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 12
@@ -2424,36 +2239,9 @@ arch dungeon_floor
 x 13
 y 4
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 13
 y 4
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 13
@@ -2521,36 +2309,9 @@ arch dungeon_floor
 x 13
 y 16
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 13
 y 16
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 13
@@ -2572,36 +2333,9 @@ arch dungeon_floor
 x 13
 y 21
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 13
 y 21
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 13
@@ -2677,36 +2411,9 @@ arch dungeon_floor
 x 14
 y 7
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 14
 y 7
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 14
@@ -2847,36 +2554,9 @@ arch dungeon_floor
 x 15
 y 4
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 15
 y 4
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 15
@@ -2936,36 +2616,9 @@ arch dungeon_floor
 x 15
 y 14
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 15
 y 14
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 15
@@ -2987,36 +2640,9 @@ arch dungeon_floor
 x 15
 y 19
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 15
 y 19
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 15
@@ -3253,36 +2879,9 @@ arch dungeon_floor
 x 17
 y 6
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 17
 y 6
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 17
@@ -3453,36 +3052,9 @@ arch dungeon_floor
 x 18
 y 9
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 18
 y 9
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_magic
 x 18
@@ -3574,39 +3146,9 @@ arch dungeon_floor
 x 18
 y 23
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 18
 y 23
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 18
@@ -3655,36 +3197,9 @@ arch dungeon_floor
 x 19
 y 4
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 19
 y 4
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 19
@@ -3694,36 +3209,9 @@ arch dungeon_floor
 x 19
 y 6
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 19
 y 6
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 19
@@ -3924,36 +3412,9 @@ arch dungeon_floor
 x 20
 y 16
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 20
 y 16
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 20
@@ -3967,36 +3428,9 @@ arch dungeon_floor
 x 20
 y 19
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 20
 y 19
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 20
@@ -4512,39 +3946,9 @@ arch dungeon_floor
 x 23
 y 23
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 23
 y 23
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 23
@@ -4592,36 +3996,9 @@ arch dungeon_floor
 x 24
 y 3
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 24
 y 3
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 24
@@ -4643,36 +4020,9 @@ arch dungeon_floor
 x 24
 y 8
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 24
 y 8
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 24
@@ -4706,36 +4056,9 @@ arch dungeon_floor
 x 24
 y 14
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 24
 y 14
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 24
@@ -4907,36 +4230,9 @@ arch dungeon_floor
 x 25
 y 20
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 25
 y 20
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 25
@@ -5279,36 +4575,9 @@ arch dungeon_floor
 x 27
 y 23
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 27
 y 23
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 27
@@ -5648,36 +4917,9 @@ arch dungeon_floor
 x 30
 y 1
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 30
 y 1
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 30
@@ -5715,36 +4957,9 @@ arch dungeon_floor
 x 30
 y 10
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 30
 y 10
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 30
@@ -5770,36 +4985,9 @@ arch dungeon_floor
 x 30
 y 15
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 30
 y 15
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 30
@@ -5813,36 +5001,9 @@ arch dungeon_floor
 x 30
 y 18
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 30
 y 18
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 30

@@ -1,10 +1,14 @@
 arch map
-name Outer Temple
-difficulty 1
+name Dark Forest, Outer Temple
+difficulty 15
+region wilderness
 width 16
 height 30
+enter_x 7
+enter_y 29
 msg
-Created:  1994-02-14
+Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
+Modified: 2012-03-13 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -193,8 +197,7 @@ x 1
 end
 arch magic_mouth
 msg
-This Taifu seems to be
-an excellent weapon.
+This Taifu seems to be an excellent weapon.
 endmsg
 food 1
 x 1
@@ -1209,7 +1212,7 @@ arch pstone_1
 x 4
 y 8
 end
-arch cave_0
+arch dun18
 x 4
 y 8
 end
@@ -1261,7 +1264,7 @@ arch pstone_1
 x 4
 y 13
 end
-arch cave_0
+arch dun18
 x 4
 y 13
 end
@@ -1317,7 +1320,7 @@ arch pstone_1
 x 4
 y 18
 end
-arch cave_0
+arch dun18
 x 4
 y 18
 end
@@ -1373,7 +1376,7 @@ arch pstone_1
 x 4
 y 23
 end
-arch cave_0
+arch dun18
 x 4
 y 23
 end
@@ -1797,7 +1800,7 @@ arch pstone_1
 x 6
 y 4
 end
-arch cave13
+arch cave9
 x 6
 y 4
 end
@@ -2003,18 +2006,17 @@ y 29
 end
 arch magic_mouth
 msg
-These doors must lead to the inner
-temple.
+These doors must lead to the inner temple.
 endmsg
 x 7
 end
 arch pstone_1
 x 7
 end
-arch oakdoor
+arch oakdoor_2
 slaying InnerTemple
 msg
-The Chamber of the Acolytes
+The Chamber of the Acolytes.
 endmsg
 hp 7
 sp 39
@@ -2049,8 +2051,7 @@ connected 1
 end
 arch magic_mouth
 msg
-The altar here has ten small angular depressions
-shaped like gemstones.
+The altar here has ten small angular depressions shaped like gemstones.
 endmsg
 x 7
 y 4
@@ -2287,18 +2288,17 @@ y 29
 end
 arch magic_mouth
 msg
-These doors must lead to the inner
-temple.
+These doors must lead to the inner temple.
 endmsg
 x 8
 end
 arch pstone_1
 x 8
 end
-arch oakdoor
+arch oakdoor_2
 slaying InnerTemple
 msg
-The Chamber of the Acolytes
+The Chamber of the Acolytes.
 endmsg
 hp 8
 sp 39
@@ -2333,8 +2333,7 @@ connected 1
 end
 arch magic_mouth
 msg
-The altar here has some depressions
-in the shape of gemstones.
+The altar here has some depressions in the shape of gemstones.
 endmsg
 x 8
 y 4
@@ -2590,7 +2589,7 @@ arch pstone_1
 x 9
 y 4
 end
-arch cave14
+arch cave10
 x 9
 y 4
 end
@@ -3182,7 +3181,7 @@ arch pstone_1
 x 11
 y 8
 end
-arch cave_0
+arch dun18
 x 11
 y 8
 end
@@ -3234,7 +3233,7 @@ arch pstone_1
 x 11
 y 13
 end
-arch cave_0
+arch dun18
 x 11
 y 13
 end
@@ -3290,7 +3289,7 @@ arch pstone_1
 x 11
 y 18
 end
-arch cave_0
+arch dun18
 x 11
 y 18
 end
@@ -3346,7 +3345,7 @@ arch pstone_1
 x 11
 y 23
 end
-arch cave_0
+arch dun18
 x 11
 y 23
 end

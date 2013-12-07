@@ -1,38 +1,31 @@
 arch map
-name Cave
+name Grey Cavern Entrance
+difficulty 30
+region wilderness
 width 16
 height 16
+enter_x 2
 enter_y 13
 msg
 Created:  1996-09-16 Chris Jeske
+Modified: 2011-12-26 Rick Tanner
 endmsg
 end
-arch blackrock
+arch cave_15
 end
-arch blocked
-end
-arch blackrock
+arch cave_15
 y 1
 end
-arch blocked
-y 1
-end
-arch blackrock
+arch cave_15
 y 2
 end
-arch blocked
-y 2
-end
-arch blackrock
-y 3
-end
-arch blocked
+arch cave_15
 y 3
 end
 arch blackrock
 y 4
 end
-arch cave18
+arch cave24
 y 4
 end
 arch blackrock
@@ -56,25 +49,19 @@ end
 arch blackrock
 y 8
 end
-arch cave17
+arch cave23
 y 8
 end
-arch blackrock
+arch cave_15
 y 9
 end
-arch blocked
-y 9
-end
-arch blackrock
-y 10
-end
-arch blocked
+arch cave_15
 y 10
 end
 arch blackrock
 y 11
 end
-arch cave18
+arch cave24
 y 11
 end
 arch blackrock
@@ -92,34 +79,20 @@ end
 arch blackrock
 y 14
 end
-arch cave17
+arch cave23
 y 14
 end
-arch blackrock
+arch cave_15
 y 15
 end
-arch blocked
-y 15
-end
-arch blackrock
+arch cave_15
 x 1
 end
-arch blocked
-x 1
-end
-arch blackrock
+arch cave_15
 x 1
 y 1
 end
-arch blocked
-x 1
-y 1
-end
-arch blackrock
-x 1
-y 2
-end
-arch blocked
+arch cave_15
 x 1
 y 2
 end
@@ -127,7 +100,7 @@ arch blackrock
 x 1
 y 3
 end
-arch cave18
+arch cave24
 x 1
 y 3
 end
@@ -207,29 +180,18 @@ arch blackrock
 x 1
 y 15
 end
-arch cave17
+arch cave23
 x 1
 y 15
 end
-arch blackrock
+arch cave_15
 x 2
 end
-arch blocked
-x 2
-end
-arch blackrock
+arch cave_15
 x 2
 y 1
 end
-arch blocked
-x 2
-y 1
-end
-arch blackrock
-x 2
-y 2
-end
-arch blocked
+arch cave_15
 x 2
 y 2
 end
@@ -424,7 +386,7 @@ arch blackrock
 x 4
 y 3
 end
-arch cave19
+arch cave25
 x 4
 y 3
 end
@@ -514,7 +476,7 @@ arch blackrock
 x 5
 y 3
 end
-arch cave18
+arch cave24
 x 5
 y 3
 end
@@ -586,7 +548,7 @@ arch blackrock
 x 5
 y 15
 end
-arch cave20
+arch cave22
 x 5
 y 15
 end
@@ -672,15 +634,11 @@ arch blackrock
 x 6
 y 14
 end
-arch cave20
+arch cave22
 x 6
 y 14
 end
-arch blackrock
-x 6
-y 15
-end
-arch blocked
+arch cave_15
 x 6
 y 15
 end
@@ -1325,14 +1283,14 @@ arch blackrock
 x 13
 y 15
 end
-arch cave20
+arch cave22
 x 13
 y 15
 end
 arch blackrock
 x 14
 end
-arch cave19
+arch cave25
 x 14
 end
 arch blackrock
@@ -1406,7 +1364,7 @@ arch blackrock
 x 14
 y 11
 end
-arch cave20
+arch cave22
 x 14
 y 11
 end
@@ -1434,25 +1392,18 @@ arch cave22
 x 14
 y 14
 end
-arch blackrock
+arch cave_15
 x 14
 y 15
 end
-arch blocked
-x 14
-y 15
-end
-arch blackrock
-x 15
-end
-arch blocked
+arch cave_15
 x 15
 end
 arch blackrock
 x 15
 y 1
 end
-arch cave19
+arch cave25
 x 15
 y 1
 end
@@ -1476,7 +1427,7 @@ arch blackrock
 x 15
 y 4
 end
-arch cave20
+arch cave22
 x 15
 y 4
 end
@@ -1484,7 +1435,7 @@ arch blackrock
 x 15
 y 5
 end
-arch cave19
+arch cave25
 x 15
 y 5
 end
@@ -1524,47 +1475,27 @@ arch blackrock
 x 15
 y 10
 end
-arch cave20
+arch cave22
 x 15
 y 10
 end
-arch blackrock
+arch cave_15
 x 15
 y 11
 end
-arch blocked
-x 15
-y 11
-end
-arch blackrock
+arch cave_15
 x 15
 y 12
 end
-arch blocked
-x 15
-y 12
-end
-arch blackrock
+arch cave_15
 x 15
 y 13
 end
-arch blocked
-x 15
-y 13
-end
-arch blackrock
+arch cave_15
 x 15
 y 14
 end
-arch blocked
-x 15
-y 14
-end
-arch blackrock
-x 15
-y 15
-end
-arch blocked
+arch cave_15
 x 15
 y 15
 end

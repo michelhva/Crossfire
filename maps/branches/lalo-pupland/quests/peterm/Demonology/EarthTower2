@@ -1,11 +1,14 @@
 arch map
-name Tower of Demonology Earth Tower
-difficulty 1
+name Tower of Demonology Earth Tower, Elementals
+difficulty 20
+region wilderness
 width 9
 height 9
+enter_x 1
+enter_y 1
 msg
 Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-03-11 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -740,9 +743,7 @@ y 6
 end
 arch magic_mouth
 msg
-to the Earth Master's room.
-You sense great danger above you.
-
+To the Earth Master's room.  You sense great danger above you.
 endmsg
 x 7
 y 7

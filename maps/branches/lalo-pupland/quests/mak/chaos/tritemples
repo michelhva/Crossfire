@@ -1,12 +1,27 @@
 arch map
-name Temples
+name Warriors' Tower, Tri Temples
 swap_time 5300
-difficulty 1
+difficulty 30
+region wilderness
 width 54
 height 25
+enter_x 17
+enter_y 23
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-04-14 Nicolas Weeger
 endmsg
+maplore
+@def Lorkas
+This temple gives access to Lorkas's lair.
+</p>
+<p><font color="red">TODO: add hints to Lorkas</font>
+@end
+
+@quest Lorkas
+Main entrance, accessible from Warriors' Tower.
+@end
+endmaplore
 end
 arch blocked
 end
@@ -189,7 +204,7 @@ end
 arch pillars
 x 1
 y 15
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 1
@@ -235,7 +250,7 @@ end
 arch pillars
 x 1
 y 19
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 1
@@ -368,9 +383,7 @@ arch holy_priest
 name Priest
 msg
 @match *
-This is the one true path, give
-yourself to the devourers and the
-way shall open.
+This is the one true path, give yourself to the devourers and the way shall open.
 endmsg
 Con 15
 Wis 9
@@ -383,7 +396,7 @@ maxsp 75
 exp 20000
 dam 20
 wc -10
-ac -8
+ac -4
 x 2
 y 17
 speed 0.200000
@@ -514,7 +527,7 @@ end
 arch pillars
 x 3
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -583,7 +596,7 @@ end
 arch pillars
 x 3
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 3
@@ -668,8 +681,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power.
 endmsg
 Con 11
 Wis 7
@@ -682,7 +694,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 4
 y 13
 speed 0.400000
@@ -787,8 +799,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power.
 endmsg
 Con 11
 Wis 7
@@ -801,7 +812,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 4
 y 21
 speed 0.400000
@@ -896,7 +907,7 @@ end
 arch pillars
 x 5
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 5
@@ -965,7 +976,7 @@ end
 arch pillars
 x 5
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 5
@@ -1050,8 +1061,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power.
 endmsg
 Con 11
 Pow 30
@@ -1063,7 +1073,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 6
 y 13
 speed 0.400000
@@ -1168,8 +1178,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power.
 endmsg
 Con 11
 Pow 30
@@ -1181,7 +1190,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 6
 y 21
 speed 0.400000
@@ -1280,7 +1289,7 @@ end
 arch pillars
 x 7
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 7
@@ -1349,7 +1358,7 @@ end
 arch pillars
 x 7
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 7
@@ -1434,8 +1443,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power.
 endmsg
 Con 11
 Wis 3
@@ -1448,7 +1456,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 8
 y 13
 speed 0.400000
@@ -1553,8 +1561,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Let yourself be devoured and you shall
-know true power
+Let yourself be devoured and you shall know true power.
 endmsg
 Con 11
 Wis 3
@@ -1567,7 +1574,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 8
 y 21
 speed 0.400000
@@ -1666,7 +1673,7 @@ end
 arch pillars
 x 9
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 9
@@ -1735,7 +1742,7 @@ end
 arch pillars
 x 9
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 9
@@ -2281,7 +2288,7 @@ end
 arch pillars
 x 13
 y 3
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -2295,7 +2302,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Ruggilli will burn your sins away
+Ruggilli will burn your sins away.
 endmsg
 Con 11
 Wis 6
@@ -2308,7 +2315,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 13
 y 4
 speed 0.400000
@@ -2336,7 +2343,7 @@ end
 arch pillars
 x 13
 y 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -2350,7 +2357,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Ruggilli will burn your sins away
+Ruggilli will burn your sins away.
 endmsg
 Con 11
 Wis 4
@@ -2363,7 +2370,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 13
 y 6
 speed 0.400000
@@ -2391,7 +2398,7 @@ end
 arch pillars
 x 13
 y 7
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -2405,7 +2412,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Ruggilli will burn your sins away
+Ruggilli will burn your sins away.
 endmsg
 Con 11
 Wis 2
@@ -2418,7 +2425,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 13
 y 8
 speed 0.400000
@@ -2446,7 +2453,7 @@ end
 arch pillars
 x 13
 y 9
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -2508,7 +2515,7 @@ arch sign_w
 name Devourers
 msg
 Devourers the Soul eaters
- Harbringers of Death
+ Harbingers of Death
  Nameless Lords of the Tomb
 endmsg
 x 13
@@ -2709,7 +2716,7 @@ end
 arch pillars
 x 15
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -2826,7 +2833,7 @@ end
 arch pillars
 x 15
 y 15
-no_pass 1
+move_block all
 end
 arch marble
 x 15
@@ -2847,7 +2854,7 @@ end
 arch pillars
 x 15
 y 19
-no_pass 1
+move_block all
 end
 arch marble
 x 15
@@ -3074,7 +3081,7 @@ arch holy_priest
 name Priest
 msg
 @match *
-In fire we walk and in fire we will be reborn
+In fire we walk and in fire we will be reborn.
 endmsg
 Con 15
 Wis 8
@@ -3087,7 +3094,7 @@ maxsp 30
 exp 20000
 dam 20
 wc -10
-ac -8
+ac -4
 x 17
 y 2
 speed 0.200000
@@ -3450,7 +3457,7 @@ end
 arch pillars
 x 19
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -3576,7 +3583,7 @@ end
 arch pillars
 x 19
 y 15
-no_pass 1
+move_block all
 end
 arch marble
 x 19
@@ -3597,7 +3604,7 @@ end
 arch pillars
 x 19
 y 19
-no_pass 1
+move_block all
 end
 arch marble
 x 19
@@ -3810,7 +3817,7 @@ end
 arch pillars
 x 21
 y 3
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -3824,7 +3831,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Ruggilli will burn your sins away
+Ruggilli will burn your sins away.
 endmsg
 Con 11
 Wis 6
@@ -3837,7 +3844,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 21
 y 4
 speed 0.400000
@@ -3865,7 +3872,7 @@ end
 arch pillars
 x 21
 y 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -3879,7 +3886,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Ruggilli will burn your sins away
+Ruggilli will burn your sins away.
 endmsg
 Con 11
 Wis 4
@@ -3892,7 +3899,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 21
 y 6
 speed 0.400000
@@ -3920,7 +3927,7 @@ end
 arch pillars
 x 21
 y 7
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -3934,7 +3941,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Ruggilli will burn your sins away
+Ruggilli will burn your sins away.
 endmsg
 Con 11
 Wis 2
@@ -3947,7 +3954,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 21
 y 8
 speed 0.400000
@@ -3975,7 +3982,7 @@ end
 arch pillars
 x 21
 y 9
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -4627,7 +4634,7 @@ end
 arch pillars
 x 25
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 25
@@ -4696,7 +4703,7 @@ end
 arch pillars
 x 25
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 25
@@ -4781,8 +4788,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power.
 endmsg
 Con 11
 Wis 2
@@ -4795,7 +4801,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 26
 y 13
 speed 0.400000
@@ -4900,8 +4906,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power.
 endmsg
 Con 11
 Wis 2
@@ -4914,7 +4919,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 26
 y 21
 speed 0.400000
@@ -5013,7 +5018,7 @@ end
 arch pillars
 x 27
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 27
@@ -5082,7 +5087,7 @@ end
 arch pillars
 x 27
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 27
@@ -5167,8 +5172,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power.
 endmsg
 Con 11
 Wis 4
@@ -5181,7 +5185,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 28
 y 13
 speed 0.400000
@@ -5286,8 +5290,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power.
 endmsg
 Con 11
 Wis 4
@@ -5300,7 +5303,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 28
 y 21
 speed 0.400000
@@ -5399,7 +5402,7 @@ end
 arch pillars
 x 29
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 29
@@ -5468,7 +5471,7 @@ end
 arch pillars
 x 29
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 29
@@ -5553,8 +5556,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power.
 endmsg
 Con 11
 Wis 6
@@ -5567,7 +5569,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 30
 y 13
 speed 0.400000
@@ -5672,8 +5674,7 @@ arch a_priest
 name acolyte
 msg
 @match *
-Give yourself to Gorokh and he will
-show you the true meaning of power
+Give yourself to Gorokh and he will show you the true meaning of power.
 endmsg
 Con 11
 Wis 6
@@ -5686,7 +5687,7 @@ maxsp 50
 exp 10000
 dam 10
 wc -10
-ac -8
+ac -4
 x 30
 y 21
 speed 0.400000
@@ -5785,7 +5786,7 @@ end
 arch pillars
 x 31
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 31
@@ -5854,7 +5855,7 @@ end
 arch pillars
 x 31
 y 21
-no_pass 1
+move_block all
 end
 arch marble
 x 31
@@ -6115,7 +6116,7 @@ name Priest
 msg
 @match *
 INFIDEL!
-Gorokh will punish you for your blasfem
+Gorokh will punish you for your blasphemy!!
 endmsg
 Con 15
 Wis 8
@@ -6128,7 +6129,7 @@ maxsp 30
 exp 20000
 dam 20
 wc -10
-ac -8
+ac -4
 x 33
 y 17
 speed 0.200000
@@ -6284,7 +6285,7 @@ end
 arch pillars
 x 34
 y 15
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 34
@@ -6330,7 +6331,7 @@ end
 arch pillars
 x 34
 y 19
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 34
@@ -7346,71 +7347,23 @@ end
 arch pillars
 x 43
 y 5
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 43
 y 6
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 43
 y 6
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 43
 y 7
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 43
 y 7
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 43
@@ -7419,71 +7372,23 @@ end
 arch pillars
 x 43
 y 8
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 43
 y 9
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 43
 y 9
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 43
 y 10
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 43
 y 10
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 43
@@ -7492,71 +7397,23 @@ end
 arch pillars
 x 43
 y 11
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 43
 y 12
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 43
 y 12
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 43
 y 13
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 43
 y 13
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 43
@@ -7565,7 +7422,7 @@ end
 arch pillars
 x 43
 y 14
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 43
@@ -7629,7 +7486,7 @@ end
 arch pillars
 x 44
 y 2
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 44
@@ -7882,7 +7739,7 @@ maxsp 150
 exp 50000
 dam 25
 wc -15
-ac -13
+ac -6
 x 46
 y 3
 level 25
@@ -7928,36 +7785,9 @@ name floor
 x 46
 y 7
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 46
 y 7
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch afloor_right
 name floor
@@ -7973,36 +7803,9 @@ name floor
 x 46
 y 9
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 46
 y 9
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch afloor_right
 name floor
@@ -8018,36 +7821,9 @@ name floor
 x 46
 y 11
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 46
 y 11
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch afloor_right
 name floor
@@ -8283,8 +8059,7 @@ y 19
 end
 arch magic_mouth
 msg
-Hm... three gates here... three rooms
-upstairs... Maybe there is a relation?
+Hm... three gates here... three rooms upstairs... Maybe there is a relation?
 endmsg
 x 47
 y 19
@@ -8366,7 +8141,7 @@ maxsp 150
 exp 50000
 dam 25
 wc -15
-ac -13
+ac -6
 x 48
 y 3
 level 25
@@ -8417,36 +8192,9 @@ name floor
 x 48
 y 7
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 48
 y 7
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch afloor_right
 name floor
@@ -8462,36 +8210,9 @@ name floor
 x 48
 y 9
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 48
 y 9
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch afloor_right
 name floor
@@ -8507,36 +8228,9 @@ name floor
 x 48
 y 11
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 48
 y 11
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch afloor_right
 name floor
@@ -8763,7 +8457,7 @@ end
 arch pillars
 x 50
 y 2
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 50
@@ -8887,71 +8581,23 @@ end
 arch pillars
 x 51
 y 5
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 51
 y 6
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 51
 y 6
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 51
 y 7
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 51
 y 7
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 51
@@ -8960,71 +8606,23 @@ end
 arch pillars
 x 51
 y 8
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 51
 y 9
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 51
 y 9
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 51
 y 10
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 51
 y 10
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 51
@@ -9033,71 +8631,23 @@ end
 arch pillars
 x 51
 y 11
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 51
 y 12
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 51
 y 12
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 51
 y 13
 end
-arch c_priest
-Str 25
-Dex 0
-Con 15
-Wis 15
-Pow 30
-Int 0
-hp 1500
-maxhp 1500
-sp 100
-maxsp 100
-exp 35000
-dam 20
-wc -10
-ac -8
+arch master_chaos_priest
 x 51
 y 13
-speed -0.400000
-level 13
-resist_magic 100
-resist_fire 100
-see_invisible 1
-stand_still 1
-arch spell_hellfire
-end
-arch spell_dragonbreath
-end
 end
 arch blackmarble
 x 51
@@ -9106,7 +8656,7 @@ end
 arch pillars
 x 51
 y 14
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 51

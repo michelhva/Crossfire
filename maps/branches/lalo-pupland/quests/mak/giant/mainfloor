@@ -1,10 +1,13 @@
 arch map
-name Giants Main Floor
-difficulty 1
+name Warriors' Tower, Giants Main Floor
+difficulty 20
+region wilderness
 width 32
 height 27
+enter_x 15
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2011-12-27 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -1627,8 +1630,7 @@ y 20
 end
 arch magic_mouth
 msg
-You can here loud snoring coming from
-behind this door.
+You can here loud snoring coming from behind this door.
 endmsg
 x 10
 y 21
@@ -2086,7 +2088,7 @@ end
 arch cobblestones
 x 14
 end
-arch wall_2_1_2
+arch wall_1_3
 x 14
 end
 arch cobblestones
@@ -2212,7 +2214,7 @@ end
 arch cobblestones
 x 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying ../MainFloor
 hp 25
 sp 10
@@ -2349,7 +2351,7 @@ end
 arch cobblestones
 x 16
 end
-arch wall_2_1_2
+arch wall_1_4
 x 16
 end
 arch cobblestones

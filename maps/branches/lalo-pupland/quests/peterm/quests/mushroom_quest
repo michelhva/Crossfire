@@ -1,14 +1,21 @@
 arch map
 name Mushroom Quest
-difficulty 1
+difficulty 14
+region wilderness
 width 16
 height 35
-enter_x 1
-enter_y 1
+enter_x 2
+enter_y 2
 msg
 Created:  2000-06-05
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2010-05-05 Cavesomething
 endmsg
+maplore
+@quest Scorn Royalty Quest
+the blue mushroom is here
+@quest Lursendis
+Here is the mushroom Farnass needs.
+endmaplore
 end
 arch grass_only
 end
@@ -1601,9 +1608,16 @@ x 8
 y 27
 end
 arch mushroom_3
-slaying bunion
+name blue mushroom
+name_pl blue mushrooms
 x 8
 y 27
+arch quest_prevent_drop
+name scorn/BlueMushroom 50
+end
+arch quest_advance_pickup
+name scorn/BlueMushroom 30>40
+end
 end
 arch sea
 x 8

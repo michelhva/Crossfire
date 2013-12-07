@@ -1,12 +1,14 @@
 arch map
 name Strange Mountain Cavern
-difficulty 1
+difficulty 25
+region wilderness
 width 30
 height 30
 enter_x 14
 enter_y 12
 msg
 Created:  1993-12-07 Chris Hendelberg (hendel@ecst.csuchico.edu)
+Modified: 2008-12-22 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -1013,6 +1015,10 @@ end
 arch bwall_0
 x 4
 y 24
+end
+arch pstone_1
+x 4
+y 25
 end
 arch bwall_0
 x 4
@@ -3055,6 +3061,10 @@ end
 arch bwall_0
 x 13
 y 23
+end
+arch pstone_1
+x 13
+y 24
 end
 arch bwall_0
 x 13

@@ -1,11 +1,14 @@
 arch map
-name Tower of Demonology Air Tower
-difficulty 1
+name Tower of Demonology Air Tower, Elementals
+difficulty 20
+region wilderness
 width 9
 height 9
+enter_x 1
+enter_y 1
 msg
 Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-03-11 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -571,7 +574,7 @@ exp 2000
 ac -3
 x 5
 y 5
-speed -0.050000
+speed -0.05
 level 15
 resist_magic 100
 arch spell_summon_air_elemental
@@ -740,8 +743,7 @@ y 6
 end
 arch magic_mouth
 msg
-To the Air Master's room.  You
-sense very great danger above you.
+To the Air Master's room.  You sense very great danger above you.
 endmsg
 x 7
 y 7

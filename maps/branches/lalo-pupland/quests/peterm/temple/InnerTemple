@@ -1,10 +1,14 @@
 arch map
-name Inner Temple
-difficulty 1
+name Dark Forest, Inner Temple
+difficulty 18
+region wilderness
 width 16
 height 40
+enter_x 7
+enter_y 39
 msg
 Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
+Modified: 2012-03-13 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -401,7 +405,7 @@ y 24
 end
 arch magic_mouth
 msg
-Something smells yummy up ahead
+Something smells yummy up ahead.
 endmsg
 x 1
 y 25
@@ -1469,8 +1473,7 @@ y 6
 end
 arch magic_mouth
 msg
-A corpse!  Well, at least it's fresh
-and doesn't stink yet.  Poor bastard!
+A corpse!  Well, at least it's fresh and doesn't stink yet.  Poor bastard!
 endmsg
 x 5
 y 7
@@ -2073,7 +2076,8 @@ end
 arch dwarf_priest
 name High Priest
 msg
-
+@match *
+Curse you!
 endmsg
 hp 300
 dam 24
@@ -2282,7 +2286,7 @@ arch cobblestones2
 x 7
 y 39
 end
-arch oakdoor
+arch oakdoor_2
 slaying OuterTemple
 hp 7
 x 7
@@ -2571,7 +2575,7 @@ arch cobblestones2
 x 8
 y 39
 end
-arch oakdoor
+arch oakdoor_2
 slaying OuterTemple
 hp 8
 x 8
@@ -3238,9 +3242,7 @@ y 6
 end
 arch magic_mouth
 msg
-Diabolical!  They've stored the food
-just out of the reach of the starving
-prisoners.
+Diabolical!  They've stored the food just out of the reach of the starving prisoners.
 endmsg
 x 11
 y 7
@@ -3795,9 +3797,7 @@ x 13
 end
 arch magic_mouth
 msg
-A foul reek emanates from the hole.
-Somehow, the hole seems like a huge
-maw, ready to swallow you up
+A foul reek emanates from the hole.  Somehow, the hole seems like a huge maw, ready to swallow you up.
 endmsg
 x 13
 y 1
@@ -3812,10 +3812,7 @@ y 1
 end
 arch magic_mouth
 msg
-A foul reek wafts from the hole.  A
-scary analogy between that hole and
-the mouth of a demon blows through
-your mind briefly.
+A foul reek wafts from the hole.  A scary analogy between that hole and the mouth of a demon blows through your mind briefly.
 endmsg
 x 13
 y 2
@@ -3847,9 +3844,7 @@ end
 arch prisoner
 msg
 @match *
-Thank goodness you're here!  Those
-monsters were planning to use us as
-sacrifices to their dark God..
+Thank goodness you're here!  Those monsters were planning to use us as sacrifices to their dark God..
 endmsg
 hp 100
 maxhp 100
@@ -3867,7 +3862,7 @@ arch cobblestones2
 x 13
 y 7
 end
-arch cave_0
+arch dun18
 x 13
 y 7
 end
@@ -3879,9 +3874,7 @@ arch prisoner
 name starving prisoner
 msg
 @match altar|sacrifice
-Please set me free!
-I don't want to be sacrificed on the
-altar!
+Please set me free! I don't want to be sacrificed on the altar!
 endmsg
 hp 100
 maxhp 100
@@ -4149,10 +4142,7 @@ y 1
 end
 arch magic_mouth
 msg
-You peer down the hole into the smelly
-torchlit depths....  It goes down, and
-down, and down...  Somehow, you don't
-look forward to seeing the end of it
+You peer down the hole into the smelly torchlit depths....  It goes down, and down, and down...  Somehow, you don't look forward to seeing the end of it.
 endmsg
 x 14
 y 2
@@ -4187,9 +4177,8 @@ y 5
 end
 arch prisoner
 msg
-@match sacrifice|altar|god|Gods|God
-They sacrifice someone on the altar to
-please their god....
+@match sacrifice|altar|god|gods
+They sacrifice someone on the altar to please their god....
 endmsg
 hp 100
 maxhp 100
@@ -4301,7 +4290,7 @@ y 24
 end
 arch magic_mouth
 msg
-Something smells yummy up ahead
+Something smells yummy up ahead.
 endmsg
 x 14
 y 25
