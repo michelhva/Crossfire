@@ -1,12 +1,14 @@
 arch map
-name Lord Ramsdre Mansion
-difficulty 1
+name Lord Ramsdre Mansion, Dungeon Level 2
+difficulty 30
 region santodominion
 width 16
 height 16
+enter_x 1
+enter_y 1
 msg
 Created:  1995-06-08
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-12-23 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -374,7 +376,7 @@ arch dungeon_floor
 x 3
 y 9
 end
-arch swall_2_1_1
+arch swall_1_1
 x 3
 y 9
 end
@@ -1282,14 +1284,6 @@ arch bwall_2_1_2
 x 13
 y 15
 end
-arch bwall_3_1
-x 13
-y 15
-end
-arch bwall_2_1_2
-x 13
-y 15
-end
 arch dungeon_floor
 x 14
 end
@@ -1499,10 +1493,6 @@ x 15
 y 12
 end
 arch dungeon_floor
-x 15
-y 13
-end
-arch bwall_2_1_1
 x 15
 y 13
 end

@@ -1,11 +1,14 @@
 arch map
-name South Lighthouse
-difficulty 1
+name South Lighthouse, Level 1
+difficulty 15
 region santodominion
 width 33
 height 40
+enter_x 16
+enter_y 1
 msg
-Created:  1994-02-12
+Created:  1994-10-12
+Modified: 2008-11-30 Rick Tanner
 endmsg
 end
 arch afloor_left
@@ -4475,7 +4478,7 @@ name floor
 x 16
 y 1
 end
-arch oakdoor
+arch exit
 slaying /world/world_102_108
 hp 9
 sp 12

@@ -7,6 +7,9 @@ width 26
 height 24
 enter_x 9
 enter_y 23
+msg
+Modified: 2012-01-04 Rick Tanner
+endmsg
 end
 arch grass
 end
@@ -818,7 +821,7 @@ arch grass
 x 5
 y 11
 end
-arch swall_1_3
+arch swall_2_1_2
 x 5
 y 11
 end
@@ -850,7 +853,7 @@ arch grass
 x 5
 y 17
 end
-arch swall_1_3
+arch swall_2_1_2
 x 5
 y 17
 end
@@ -961,6 +964,10 @@ arch wwall_2_2_2
 x 6
 y 11
 end
+arch swall_1_3_half
+x 6
+y 11
+end
 arch woodfloor
 x 6
 y 12
@@ -1006,6 +1013,10 @@ x 6
 y 17
 end
 arch wwall_3_2
+x 6
+y 17
+end
+arch swall_1_3_half
 x 6
 y 17
 end
@@ -1461,7 +1472,7 @@ arch woodfloor
 x 9
 y 23
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_102_108
 hp 23
 sp 18
@@ -1551,8 +1562,7 @@ Gaea is the mother of nature.
 @match cabbage
 Don't dare to touch my cabbages!
 @match *
-Ah, what a wonderful day today.
-I can almost hear my cabbages growing.
+Ah, what a wonderful day today.  I can almost hear my cabbages growing.
 endmsg
 hp 200
 maxhp 200
@@ -2549,11 +2559,15 @@ arch grass
 x 17
 y 10
 end
-arch swall_1_2
+arch swall_2_1_1
 x 17
 y 10
 end
 arch woodfloor
+x 17
+y 11
+end
+arch swall_1_2_half
 x 17
 y 11
 end
@@ -2602,6 +2616,10 @@ x 17
 y 16
 end
 arch woodfloor
+x 17
+y 17
+end
+arch swall_1_4_half
 x 17
 y 17
 end
@@ -2766,7 +2784,7 @@ arch grass
 x 18
 y 17
 end
-arch swall_1_4
+arch swall_2_1_2
 x 18
 y 17
 end
@@ -3644,8 +3662,7 @@ arch magic_mouth
 name 2
 msg
 The worshipper of Gaea says:
-Arrgh! My cabbages!!
-Gaea, help me...
+Arrgh! My cabbages!! Gaea, help me...
 endmsg
 x 25
 y 2

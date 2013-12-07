@@ -1,11 +1,14 @@
 arch map
-name A Little Opara
-difficulty 1
+name A Little Opera
+difficulty 18
 region santodominion
 width 33
 height 33
 enter_x 1
 enter_y 12
+msg
+Modified: 2009-07-05 Kevin Bulgrien
+endmsg
 end
 arch marble
 end
@@ -56,19 +59,22 @@ end
 arch marble
 y 11
 end
-arch dwall_2_2_2
+arch dwall_1_4
 y 11
 end
 arch marble
 y 12
 end
-arch dwall_2_1_1
+arch oakdoor_1
+slaying /world/world_102_108
+hp 15
+sp 17
 y 12
 end
 arch marble
 y 13
 end
-arch dwall_2_2_1
+arch dwall_1_4
 y 13
 end
 arch blocked
@@ -307,13 +313,6 @@ x 1
 y 11
 end
 arch marble
-x 1
-y 12
-end
-arch oakdoor
-slaying /world/world_102_108
-hp 15
-sp 17
 x 1
 y 12
 end
@@ -6053,7 +6052,7 @@ end
 arch slevel_2_2_2
 x 21
 y 8
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 21
@@ -6062,7 +6061,7 @@ end
 arch slevel_3_2
 x 21
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 21
@@ -6071,7 +6070,7 @@ end
 arch slevel_3_2
 x 21
 y 10
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 21
@@ -6107,7 +6106,7 @@ end
 arch slevel_3_2
 x 21
 y 14
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 21
@@ -6116,7 +6115,7 @@ end
 arch slevel_3_2
 x 21
 y 15
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 21
@@ -6125,7 +6124,7 @@ end
 arch slevel_2_2_1
 x 21
 y 16
-no_pass 1
+move_block all
 end
 arch marble
 x 21
@@ -6312,7 +6311,7 @@ end
 arch slevel_3_2
 x 22
 y 5
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 22
@@ -6321,7 +6320,7 @@ end
 arch slevel_3_2
 x 22
 y 6
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 22
@@ -6330,7 +6329,7 @@ end
 arch slevel_3_2
 x 22
 y 7
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 22
@@ -6387,7 +6386,7 @@ end
 arch slevel_3_2
 x 22
 y 17
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 22
@@ -6396,7 +6395,7 @@ end
 arch slevel_3_2
 x 22
 y 18
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 22
@@ -6405,7 +6404,7 @@ end
 arch slevel_3_2
 x 22
 y 19
-no_pass 1
+move_block all
 end
 arch marble
 x 22

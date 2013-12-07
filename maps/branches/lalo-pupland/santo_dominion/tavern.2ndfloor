@@ -1,11 +1,12 @@
 arch map
-name The Golden Lion
+name The Golden Lion, 2nd Floor
 difficulty 1
 region santodominion
 width 33
 height 31
 msg
 Created:  Andreas Vogl (red.blaze@gmx.net)
+Modified: 2012-06-03 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -826,8 +827,7 @@ end
 arch guard
 msg
 @match *
-These are the private rooms of Bonzo
-the Banker. You cannot pass.
+These are the private rooms of Bonzo the Banker.  You cannot pass.
 endmsg
 face guard_med.111
 x 5
@@ -859,8 +859,8 @@ y 16
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 5
@@ -1028,20 +1028,15 @@ arch woodfloor
 x 6
 y 17
 end
-arch sage
+arch thief
 name Thief
 msg
 @match money|bonzo|bank|guard
-I'd like to sneak in there and steal
-Bonzo's money. But the guard never
-moves out. Damn it.
+I'd like to sneak in there and steal Bonzo's money.  But the guard never moves out.  Damn it.
 @match *
-Bonzo the Banker's room is on the
-opposite side of the corridor.
-I'm sure he wouldn't employ guards if
-there wasn't good money in there.
+@question money And why is money important?
+Bonzo the Banker's room is on the opposite side of the corridor.  I'm sure he wouldn't employ guards if there wasn't good money in there.
 endmsg
-face thief.171
 hp 500
 maxhp 500
 x 6
@@ -1051,7 +1046,6 @@ resist_magic 50
 resist_fire 90
 resist_electricity 90
 resist_cold 90
-randomitems thief
 monster 0
 end
 arch woodfloor
@@ -1322,8 +1316,7 @@ end
 arch magic_mouth
 msg
 Bonzo the Banker says:
-Hey stranger - Stop right there!
-This money is mine. Don't touch it! Get out!!!
+Hey stranger - Stop right there! This money is mine.  Don't touch it! Get out!!!
 endmsg
 food 1
 x 8
@@ -1764,9 +1757,7 @@ end
 arch c_man
 msg
 @match *
-Have you seen the barns, to the east of
-here? I've heard those are dangerous
-places, don't go there.
+Have you seen the barns, to the east of here? I've heard those are dangerous places, don't go there.
 endmsg
 x 10
 y 19
@@ -1886,8 +1877,7 @@ arch fatman
 name Bonzo the Banker
 msg
 @match *
-Nooo! Don't steal my money. It's all
-mine, mine, miiiine!
+Nooo! Don't steal my money.  It's all mine, mine, miiiine!
 endmsg
 x 11
 y 7
@@ -1950,8 +1940,8 @@ y 16
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 11
@@ -2572,8 +2562,8 @@ y 25
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 14
@@ -3080,8 +3070,8 @@ y 3
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 18
@@ -3191,21 +3181,20 @@ arch wwall_1_2
 x 18
 y 18
 end
-arch woodfloor
-hp 30
-sp 26
+arch duplicator
+other_arch locked_door2
 x 18
 y 19
-type 41
 connected 14
-activate_on_push 1
-activate_on_release 1
+end
+arch woodfloor
+x 18
+y 19
 end
 arch locked_door2
 slaying no_key_available
 msg
-There's a note on the door:
-I am ill. Please do not disturb.
+There's a note on the door: I am ill.  Please do not disturb.
 endmsg
 face ldoor_white2.111
 x 18
@@ -3264,8 +3253,8 @@ y 25
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 18
@@ -3446,16 +3435,6 @@ arch bookshelf
 x 19
 y 23
 no_pick 1
-arch note
-name list of ingredients
-msg
-Three ingredients are needed for the cure:
-- a beholder's tongue
-- a scorpion's stinger
-- skin of the shadow viper
-When you have them, put them into the cauldron.
-endmsg
-end
 end
 arch woodfloor
 x 19
@@ -3511,11 +3490,7 @@ arch book_clasp
 name history book
 msg
 ...
-After the great famine in the second year of
-Lord Byron's reign, the plan for a permanent
-mass food storage place was developed.
-The big barns were constructed east of
-St. Dominion.
+After the great famine in the second year of Lord Byron's reign, the plan for a permanent mass food storage place was developed.  The big barns were constructed east of Santo Dominion.
 ...
 endmsg
 end
@@ -3698,15 +3673,7 @@ arch book_clasp
 name history book
 msg
 ...
-In the fifth year of Lord Byron's reign, St.
-Dominion fell to a surprise attack of wild and
-cruel monsters from the north. It turned out that
-the attackers were driven simply by lack of food
-in their homeland. So the farmers opened the
-barns which were filled to the roof with grain
-and dried meat. The lives of the townsmen were
-spared. Unfortunately, some monsters never
-returned to their homeland but stayed in the barns.
+In the fifth year of Lord Byron's reign, Santo Dominion fell to a surprise attack of wild and cruel monsters from the north.  It turned out that the attackers were driven simply by lack of food in their homeland.  So the farmers opened the barns which were filled to the roof with grain and dried meat.  The lives of the townsmen were spared. Unfortunately, some monsters never returned to their homeland but stayed in the barns.
 ...
 endmsg
 end
@@ -3773,8 +3740,8 @@ y 12
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 21
@@ -3816,56 +3783,36 @@ arch woodfloor
 x 21
 y 20
 end
-arch woodfloor
-hp 28
-sp 28
+arch duplicator
+other_arch sage
 x 21
 y 21
-type 41
-connected 14
-activate_on_push 1
-activate_on_release 1
+connected 15
+end
+arch woodfloor
+x 21
+y 21
 end
 arch sage
 name Gorgon the Warrior
 msg
 @match plate|mail
-You greedy... rascal... get me the cure
-first. *cough, cough*
+You greedy... rascal... get me the cure first. *cough, cough*
 @match viper
-Shadow... vipers? Ask my friend about it.
-He might... know... *cough*
+Shadow... vipers? Ask my friend about it. He might... know... *cough*
 @match *
-I got... poisoned by the... *cough*
-mudman. Please... help my friend...
-to mix a... cure... *cough*.
-If you do... I would... give you my...
-best plate mail.
+@question plate Your best plate mail, really?
+I got... poisoned by the... *cough* mudman. Please... help my friend... to mix a... cure... *cough*. If you do... I would... give you my... best plate mail.
 endmsg
 face corpse.111
+animation NONE
 hp 500
 maxhp 500
 x 21
 y 21
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_poison 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_godpower 100
-resist_holyword 100
-resist_blind 100
+randomitems none
 monster 0
+no_damage 1
 end
 arch dungeon_magic
 x 21
@@ -3881,10 +3828,7 @@ y 22
 end
 arch magic_mouth
 msg
-In the other room you see a warrior
-lying on the floor. His face is pale and
-gaunt, he is coughing. The poor guy
-seems to be very ill.
+In the other room you see a warrior lying on the floor.  His face is pale and gaunt, he is coughing.  The poor guy seems to be very ill.
 endmsg
 food 1
 x 21
@@ -3902,69 +3846,6 @@ arch woodfloor
 x 21
 y 25
 end
-arch sage
-name Warloc Druid
-msg
-@match viper
-A brood of shadow vipers exists
-somewhere down the well of St. Dominion.
-We've got only one well here in town,
-so you can't miss it. Anyways, be careful
-down there!
-@match mudman
-The mudman is a vile creature. He lurks in
-the marshes south-west of this town.
-It is said that in very dark nights, when no moon
-is shining, he leaves the swamp to sneak around
-our houses.
-@match yes|cure|okay
-I'm still lacking three essential ingredients
-to mix a cure for my friend:
-- a beholder's tongue
-- a scorpion's stinger
-- skin of the shadow viper
-When you have the ingredients, put them
-into the cauldron here. As a reminder you
-can take the list of ingredients from the
-bookshelf with you.
-@match help|gorgon|poison
-Gorgon is a mighty warrior. A week ago
-he went into the marshes looking for the
-mudman who dwells there.
-During battle, the mudman infected Gorgon
-with deadly poison. Gorgon fled, but his
-life is fading.
-Would you help me to create a cure for him?
-@match *
-Do you see my friend Gorgon in the other
-room? He got poisoned. We need your help!
-endmsg
-face mage.131
-hp 500
-maxhp 500
-x 21
-y 25
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_poison 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_godpower 100
-resist_holyword 100
-resist_blind 100
-randomitems none
-stand_still 1
-end
 arch woodfloor
 x 21
 y 26
@@ -3972,6 +3853,41 @@ end
 arch woodfloor
 x 21
 y 27
+end
+arch mage
+name Warloc Druid
+msg
+@match viper
+A brood of shadow vipers exists somewhere down the well of Santo Dominion.  We've got only one well here in town, so you can't miss it.  Anyways, be careful down there!
+@match mudman
+The mudman is a vile creature.  He lurks in the marshes south-west of this town.  It is said that in very dark nights, when no moon is shining, he leaves the swamp to sneak around our houses.
+@match yes|cure|okay
+@question viper Where can I find a shadow viper?
+I'm still lacking three essential ingredients to mix a cure for my friend:
+- a beholder's tongue
+- a scorpion's stinger
+- skin of the shadow viper
+When you have the ingredients, put them into the cauldron here.  As a reminder you can take the list of ingredients from the bookshelf with you.
+@match help|gorgon|poison
+@question mudman What is the mudman?
+@reply yes Ok, I'll help.
+Gorgon is a mighty warrior.  A week ago he went into the marshes looking for the mudman who dwells there.  During battle, the mudman infected Gorgon with deadly poison.  Gorgon fled, but his life is fading.  Would you help me to create a cure for him?
+@match *
+@question help How can I help?
+Do you see my friend Gorgon in the other room? He got poisoned.  We need your help!
+endmsg
+face mage.131
+hp 500
+maxhp 500
+x 21
+y 27
+randomitems none
+move_type walk
+stand_still 1
+no_damage 1
+arch npc_dialog
+name /santo_dominion/warloc_druid.msg
+end
 end
 arch woodfloor
 x 21
@@ -4056,17 +3972,13 @@ arch c_man
 name Sorcerer
 msg
 @match yes|story
-North of St. Dominion there is a huge
-tower, called the "Tower of Demonology".
-It has been a school for summoning wizards
-long ago. Someday, an evil shadow crept
-in there. Rumors tell that a group of wizards
-had abused their power to summon demons.
+North of Santo Dominion there is a huge tower, called the "Tower of Demonology."  It has been a school for summoning wizards long ago.  Someday, an evil shadow crept in there.  Rumors tell that a group of wizards had abused their power to summon demons.
 @match *
-You look like you are seeking adventures.
-Care to hear a story?
+@reply yes Sure, I always enjoy adventure stories.
+You look like you are seeking adventures.  Care to hear a story?
 endmsg
 face sorcerer.151
+animation sorcerer_class
 Pow 3
 hp 200
 maxhp 200
@@ -4078,6 +3990,7 @@ ac -5
 x 22
 y 8
 level 6
+direction 4
 resist_physical 50
 resist_electricity 100
 randomitems none
@@ -4123,14 +4036,6 @@ end
 arch wwall_2_1_2
 x 22
 y 16
-end
-arch magic_mouth
-msg
-This chest is decorated with silver
-ornaments of crossed hammers.
-endmsg
-x 22
-y 17
 end
 arch woodfloor
 x 22
@@ -4307,8 +4212,7 @@ y 16
 end
 arch magic_mouth
 msg
-This chest is decorated with silver
-ornaments of crossed hammers.
+This chest is decorated with silver ornaments of crossed hammers.
 endmsg
 x 23
 y 17
@@ -4324,14 +4228,18 @@ y 17
 arch plate_mail
 title of dominion
 msg
-This plate mail is forged of high quality
-steel. It is lighter than usual but just
-as strong. It even seems to protect a
-little against fire.
+This plate mail is forged of high quality steel.  It is lighter than usual but just as strong.  It even seems to protect a little against fire.
 endmsg
 resist_fire 20
 value 5000
 weight 60000
+arch quest_advance_pickup
+name santo_dominion/Gordon 30>40
+unique 1
+end
+end
+arch quest_apply_if
+name santo_dominion/Gordon 30
 end
 end
 arch woodfloor
@@ -4374,49 +4282,22 @@ arch afloor_right
 x 23
 y 24
 end
-arch altar
-name 13
-slaying shadow viper's skin
-food 1
-x 23
-y 25
-connected 13
-end
-arch altar
-name 12
-slaying scorpion's stinger
-food 1
-x 23
-y 25
-connected 12
-end
-arch altar
-name 11
-slaying beholder's tongue
-food 1
-x 23
-y 25
-connected 11
-end
-arch permanent_lava
+arch woodfloor
 name fireplace
-hp 0
-dam 0
-wc 0
+face lava.111
+animation permanent_lava
 x 23
 y 25
-type 0
-attacktype 0
-move_on 0
-lifesave 0
+speed 0.2
+is_animated 1
+anim_speed 0.2
 end
-arch boulder
-name cauldron
-face cauldron_open.111
+arch cauldron
 x 23
 y 25
-no_pass 0
-can_roll 0
+no_pick 1
+identified 1
+is_cauldron 0
 end
 arch afloor_right
 x 23
@@ -4881,8 +4762,7 @@ end
 arch northman
 msg
 @match *
-Come have a bite with me.
-This food is real good.
+Come have a bite with me.  This food is real good.
 endmsg
 x 26
 y 9
@@ -5085,8 +4965,8 @@ y 16
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 27
@@ -5308,37 +5188,9 @@ arch blocked
 x 28
 y 25
 end
-arch woodfloor
+arch blocked
 x 28
 y 26
-end
-arch button_small
-name 14
-x 28
-y 26
-weight 25000
-connected 14
-end
-arch creator
-name 13
-other_arch ten_kilo
-x 28
-y 26
-connected 13
-end
-arch creator
-name 12
-other_arch ten_kilo
-x 28
-y 26
-connected 12
-end
-arch creator
-name 11
-other_arch ten_kilo
-x 28
-y 26
-connected 11
 end
 arch blocked
 x 28
@@ -5507,54 +5359,9 @@ arch blocked
 x 29
 y 25
 end
-arch woodfloor
+arch blocked
 x 29
 y 26
-end
-arch magic_mouth
-name 14 - done
-msg
-The Warlock Druid says:
-Hooray! The potion is completed. Now my
-friend Gorgon can be cured.
-endmsg
-x 29
-y 26
-connected 14
-move_on 0
-end
-arch magic_mouth
-name 13
-msg
-You put the shadow viper's skin
-into the cauldron.
-endmsg
-x 29
-y 26
-connected 13
-move_on 0
-end
-arch magic_mouth
-name 12
-msg
-You put the scorpion's stinger into
-the cauldron.
-endmsg
-x 29
-y 26
-connected 12
-move_on 0
-end
-arch magic_mouth
-name 11
-msg
-You put the beholder's tongue into
-the cauldron.
-endmsg
-x 29
-y 26
-connected 11
-move_on 0
 end
 arch blocked
 x 29
@@ -5761,15 +5568,13 @@ sp 20
 x 30
 y 28
 speed 0.0
-connected 14
+connected 15
 end
 arch fighter
 name Gorgon the Warrior
 msg
 @match *
-Thank you for saving me. You shall have
-my famous plate mail as reward.
-It's in the chest right there.
+Thank you for saving me.  You shall have my famous plate mail as reward.  It's in the chest right there.
 endmsg
 x 30
 y 28
@@ -5778,6 +5583,9 @@ resist_magic 100
 resist_fire 100
 resist_electricity 100
 resist_cold 100
+arch npc_dialog
+name /santo_dominion/gordon.msg
+end
 end
 arch blocked
 x 30
@@ -6095,13 +5903,31 @@ arch blocked
 x 32
 y 27
 end
+arch sign
+name readme
+msg
+The buttons are merely here to please Gridarta, the connections 14 and 15 will be called by the animation
+endmsg
+x 32
+y 27
+end
 arch blocked
 x 32
 y 28
 end
+arch button_trigger
+x 32
+y 28
+connected 15
+end
 arch blocked
 x 32
 y 29
+end
+arch button_trigger
+x 32
+y 29
+connected 14
 end
 arch blocked
 x 32

@@ -1,11 +1,14 @@
 arch map
-name Stig's Hut
-difficulty 1
+name Stig's Hut, Level 2
+difficulty 16
 region santodominion
 width 19
 height 17
-enter_x 22
-enter_y 21
+enter_x 7
+enter_y 5
+msg
+Modified: 2012-01-04 Rick Tanner
+endmsg
 end
 arch dirtfloor
 end
@@ -597,7 +600,11 @@ arch dirtfloor
 x 5
 y 7
 end
-arch awall_3_1
+arch awall_2_2_4
+x 5
+y 7
+end
+arch swall_1_4_half
 x 5
 y 7
 end
@@ -1036,7 +1043,11 @@ arch dirtfloor
 x 9
 y 7
 end
-arch awall_3_1
+arch awall_2_2_1
+x 9
+y 7
+end
+arch swall_1_3_half
 x 9
 y 7
 end
@@ -1566,14 +1577,9 @@ arch fatman
 name Stig
 msg
 @match mudman
-Oh, yeah - That guy is a real pain.
-He lives in the swamp south-west of
-town. But I advise you not to go there.
+Oh, yeah - That guy is a real pain.  He lives in the swamp south-west of town.  But I advise you not to go there.
 @match *
-Well, maybe my house is in bad shape,
-but I hate nothing more than cleaning
-up. And compared to the Mudman's, my
-place is looking good.
+Well, maybe my house is in bad shape, but I hate nothing more than cleaning up.  And compared to the Mudman's, my place is looking good.
 endmsg
 hp 100
 maxhp 100

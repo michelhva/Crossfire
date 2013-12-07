@@ -1,13 +1,13 @@
 arch map
-name Lord Byron's Castle
-difficulty 1
+name Lord Byron's Castle, 1st Floor
+difficulty 18
 region santodominion
 width 40
 height 40
 enter_x 20
 enter_y 5
 msg
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2013-03-20 Kevin Zheng
 endmsg
 end
 arch woodfloor
@@ -258,21 +258,14 @@ arch woodfloor
 x 1
 y 1
 end
-arch stair2_up
-slaying 2nd_floor
-hp 5
-sp 5
+arch stair2_down
+slaying main
+hp 7
+sp 7
 x 1
 y 1
 end
 arch woodfloor
-x 1
-y 2
-end
-arch stair2_down
-slaying main
-hp 7
-sp 8
 x 1
 y 2
 end
@@ -517,13 +510,6 @@ x 1
 y 37
 end
 arch woodfloor
-x 1
-y 38
-end
-arch stair_up
-slaying 2nd_floor
-hp 5
-sp 26
 x 1
 y 38
 end
@@ -1515,11 +1501,6 @@ x 5
 y 33
 end
 arch woodfloor
-x 5
-y 34
-end
-arch exit
-slaying main
 x 5
 y 34
 end
@@ -3745,6 +3726,8 @@ y 22
 end
 arch exit
 slaying main
+hp -1
+sp -1
 x 14
 y 23
 end
@@ -4570,7 +4553,7 @@ connected 8
 end
 arch stair2_up
 slaying 2nd_floor
-hp 5
+hp 6
 sp 9
 x 17
 y 20
@@ -5058,7 +5041,7 @@ arch woodfloor
 x 19
 y 9
 end
-arch bwall_2_2_1
+arch bwall_1_2
 x 19
 y 9
 end
@@ -5328,10 +5311,6 @@ arch woodfloor
 x 20
 y 9
 end
-arch bwall_2_1_2
-x 20
-y 9
-end
 arch woodfloor
 x 20
 y 10
@@ -5596,7 +5575,7 @@ arch woodfloor
 x 21
 y 9
 end
-arch bwall_2_2_4
+arch bwall_1_2
 x 21
 y 9
 end
@@ -9385,11 +9364,6 @@ arch woodfloor
 x 35
 y 36
 end
-arch exit
-slaying main
-x 35
-y 36
-end
 arch woodfloor
 x 35
 y 37
@@ -9828,21 +9802,14 @@ arch woodfloor
 x 38
 y 1
 end
-arch stair2_up
-slaying 2nd_floor
-hp 26
-sp 5
+arch stair2_down
+slaying main
+hp 42
+sp 7
 x 38
 y 1
 end
 arch woodfloor
-x 38
-y 2
-end
-arch stair2_down
-slaying main
-hp 42
-sp 8
 x 38
 y 2
 end
@@ -10031,13 +9998,6 @@ x 38
 y 37
 end
 arch woodfloor
-x 38
-y 38
-end
-arch stair_up
-slaying 2nd_floor
-hp 26
-sp 26
 x 38
 y 38
 end

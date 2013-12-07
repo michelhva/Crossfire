@@ -1,13 +1,14 @@
 arch map
-name The Golden Lion
-difficulty 1
+name The Golden Lion, Downstairs
+difficulty 16
 region santodominion
 width 32
 height 32
-enter_x 25
-enter_y 24
+enter_x 21
+enter_y 19
 msg
-Created:  2000-02-17
+Created:  2000-11-17
+Modified: 2008-12-23 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -310,7 +311,7 @@ arch pstone_1
 x 1
 y 21
 end
-arch awall_2_1_2
+arch awall_1_3
 x 1
 y 21
 end
@@ -546,7 +547,7 @@ arch pstone_1
 x 3
 y 2
 end
-arch awall_2_2_1
+arch awall_1_4
 x 3
 y 2
 end
@@ -808,7 +809,7 @@ arch pstone_1
 x 4
 y 21
 end
-arch awall_3_4
+arch awall_2_1_1
 x 4
 y 21
 end
@@ -1007,7 +1008,7 @@ arch pstone_1
 x 5
 y 23
 end
-arch awall_3_3
+arch awall_2_2_3
 x 5
 y 23
 end
@@ -1346,7 +1347,7 @@ arch pstone_1
 x 7
 y 7
 end
-arch awall_3_2
+arch awall_2_1_1
 x 7
 y 7
 end
@@ -1945,7 +1946,7 @@ arch pstone_1
 x 10
 y 7
 end
-arch awall_3_4
+arch awall_2_1_1
 x 10
 y 7
 end
@@ -2053,7 +2054,7 @@ arch pstone_1
 x 10
 y 23
 end
-arch awall_3_4
+arch awall_2_1_1
 x 10
 y 23
 end
@@ -2299,7 +2300,7 @@ arch pstone_1
 x 11
 y 28
 end
-arch awall_2_2_3
+arch awall_1_3
 x 11
 y 28
 end
@@ -2317,7 +2318,7 @@ arch pstone_1
 x 11
 y 30
 end
-arch awall_2_1_1
+arch awall_1_1
 x 11
 y 30
 end
@@ -2396,7 +2397,7 @@ arch pstone_1
 x 12
 y 11
 end
-arch awall_3_3
+arch awall_2_1_2
 x 12
 y 11
 end
@@ -2422,7 +2423,7 @@ arch pstone_1
 x 12
 y 14
 end
-arch awall_3_4
+arch awall_1_3
 x 12
 y 14
 end
@@ -2446,7 +2447,7 @@ arch pstone_1
 x 12
 y 17
 end
-arch awall_3_2
+arch awall_2_2_2
 x 12
 y 17
 end
@@ -2930,7 +2931,7 @@ arch pstone_1
 x 15
 y 7
 end
-arch awall_3_3
+arch awall_2_1_2
 x 15
 y 7
 end
@@ -2946,7 +2947,7 @@ arch pstone_1
 x 15
 y 9
 end
-arch awall_2_1_1
+arch awall_0
 x 15
 y 9
 end
@@ -2962,7 +2963,7 @@ arch pstone_1
 x 15
 y 11
 end
-arch awall_2_2_4
+arch awall_1_3
 x 15
 y 11
 end
@@ -2994,7 +2995,7 @@ arch pstone_1
 x 15
 y 17
 end
-arch awall_3_3
+arch awall_2_1_2
 x 15
 y 17
 end
@@ -3010,7 +3011,7 @@ arch pstone_1
 x 15
 y 19
 end
-arch awall_2_1_1
+arch awall_1_1
 x 15
 y 19
 end
@@ -3508,7 +3509,7 @@ arch pstone_1
 x 18
 y 17
 end
-arch awall_3_4
+arch awall_2_2_4
 x 18
 y 17
 end
@@ -3532,7 +3533,7 @@ arch pstone_1
 x 18
 y 20
 end
-arch awall_2_1_1
+arch awall_1_1
 x 18
 y 20
 end
@@ -3618,7 +3619,7 @@ arch pstone_1
 x 19
 y 2
 end
-arch awall_2_1_1
+arch awall_1_2
 x 19
 y 2
 end
@@ -3634,7 +3635,7 @@ arch pstone_1
 x 19
 y 4
 end
-arch awall_2_1_1
+arch awall_1_1
 x 19
 y 4
 end
@@ -3933,7 +3934,7 @@ arch pstone_1
 x 20
 y 27
 end
-arch awall_3_4
+arch awall_2_2_4
 x 20
 y 27
 end
@@ -3957,7 +3958,7 @@ arch pstone_1
 x 20
 y 30
 end
-arch awall_2_1_1
+arch awall_1_1
 x 20
 y 30
 end
@@ -4007,7 +4008,7 @@ arch pstone_1
 x 21
 y 7
 end
-arch awall_3_3
+arch awall_2_2_3
 x 21
 y 7
 end
@@ -4071,7 +4072,7 @@ arch pstone_1
 x 21
 y 15
 end
-arch awall_3_1
+arch awall_2_2_4
 x 21
 y 15
 end
@@ -4358,7 +4359,7 @@ arch pstone_1
 x 23
 y 3
 end
-arch awall_2_2_1
+arch awall_1_2
 x 23
 y 3
 end
@@ -4378,7 +4379,7 @@ arch pstone_1
 x 23
 y 7
 end
-arch awall_3_3
+arch awall_2_2_2
 x 23
 y 7
 end
@@ -4442,7 +4443,7 @@ arch pstone_1
 x 23
 y 15
 end
-arch awall_3_1
+arch awall_2_2_1
 x 23
 y 15
 end
@@ -4614,7 +4615,7 @@ arch pstone_1
 x 24
 y 15
 end
-arch awall_2_1_2
+arch awall_1_3
 x 24
 y 15
 end
@@ -4654,7 +4655,7 @@ arch pstone_1
 x 24
 y 22
 end
-arch awall_3_4
+arch awall_2_2_4
 x 24
 y 22
 end
@@ -4678,7 +4679,7 @@ arch pstone_1
 x 24
 y 25
 end
-arch awall_2_1_1
+arch awall_1_1
 x 24
 y 25
 end
@@ -4744,7 +4745,7 @@ arch pstone_1
 x 25
 y 3
 end
-arch awall_3_4
+arch awall_2_1_1
 x 25
 y 3
 end
@@ -4954,7 +4955,7 @@ arch pstone_1
 x 26
 y 7
 end
-arch awall_2_1_2
+arch awall_1_3
 x 26
 y 7
 end
@@ -5188,7 +5189,7 @@ arch pstone_1
 x 27
 y 15
 end
-arch awall_2_2_3
+arch awall_1_1
 x 27
 y 15
 end
@@ -5430,7 +5431,7 @@ arch pstone_1
 x 28
 y 26
 end
-arch awall_2_1_2
+arch awall_1_3
 x 28
 y 26
 end
@@ -5770,7 +5771,7 @@ arch pstone_1
 x 30
 y 26
 end
-arch awall_1_3
+arch awall_1_4
 x 30
 y 26
 end

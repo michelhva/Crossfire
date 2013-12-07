@@ -1,10 +1,14 @@
 arch map
-name Temple Naive
-difficulty 1
+name Temple Naive, Level 1
+difficulty 30
+region santodominion
 width 32
 height 32
+enter_x 30
+enter_y 15
 msg
 Created:  2006-05-28 Bort
+Modified: 2012-01-07 Rick Tanner
 endmsg
 end
 arch marble
@@ -1896,7 +1900,7 @@ arch marble
 x 9
 y 12
 end
-arch gargolye
+arch gargoyle
 x 9
 y 12
 end
@@ -1952,7 +1956,7 @@ arch marble
 x 9
 y 19
 end
-arch gargolye
+arch gargoyle
 x 9
 y 19
 end
@@ -3187,7 +3191,7 @@ arch marble
 x 15
 y 12
 end
-arch gargolye
+arch gargoyle
 x 15
 y 12
 end
@@ -3253,7 +3257,7 @@ arch marble
 x 15
 y 19
 end
-arch gargolye
+arch gargoyle
 x 15
 y 19
 end
@@ -5004,6 +5008,10 @@ arch marble
 x 24
 y 2
 end
+arch swall_1_4_half
+x 24
+y 2
+end
 arch stwall_2_1_1
 x 24
 y 2
@@ -5017,6 +5025,10 @@ x 24
 y 3
 end
 arch marble
+x 24
+y 4
+end
+arch swall_1_4_half
 x 24
 y 4
 end
@@ -5208,6 +5220,10 @@ arch marble
 x 24
 y 27
 end
+arch swall_1_4_half
+x 24
+y 27
+end
 arch stwall_2_1_1
 x 24
 y 27
@@ -5221,6 +5237,10 @@ x 24
 y 28
 end
 arch marble
+x 24
+y 29
+end
+arch swall_1_4_half
 x 24
 y 29
 end
@@ -5263,7 +5283,7 @@ arch marble
 x 25
 y 2
 end
-arch swall_1_4
+arch swall_2_1_2
 x 25
 y 2
 end
@@ -5280,11 +5300,9 @@ arch marble
 x 25
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 25
 y 4
-no_magic 1
-damned 1
 end
 arch marble
 x 25
@@ -5450,11 +5468,9 @@ arch marble
 x 25
 y 27
 end
-arch swall_1_4
+arch swall_2_1_2
 x 25
 y 27
-no_magic 1
-damned 1
 end
 arch marble
 x 25
@@ -5469,7 +5485,7 @@ arch marble
 x 25
 y 29
 end
-arch swall_1_4
+arch swall_2_1_2
 x 25
 y 29
 end
@@ -6241,8 +6257,7 @@ name drop 10 diamonds
 msg
 Danger.
 How high is your grace?
-Low to Mid level characters
-should probably be in a party.
+Low to Mid level characters should probably be in a party.
 endmsg
 x 28
 y 14
@@ -6261,10 +6276,7 @@ y 17
 end
 arch coffin
 msg
-You peer into the coffin...
-Scratched on the back of
-the lid you can decipher:
-'br.zi.r .ev.r'
+You peer into the coffin... Scratched on the back of the lid you can decipher: 'br.zi.r .ev.r'
 endmsg
 x 28
 y 17
@@ -6722,7 +6734,7 @@ arch marble
 x 30
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 30
 y 2
 end
@@ -6745,11 +6757,9 @@ arch marble
 x 30
 y 4
 end
-arch swall_1_3
+arch swall_2_1_2
 x 30
 y 4
-no_magic 1
-damned 1
 end
 arch marble
 x 30
@@ -6828,21 +6838,7 @@ arch marble
 x 30
 y 14
 end
-arch oakdoor
-slaying /world/world_101_107
-hp 25
-sp 7
-x 30
-y 14
-end
 arch marble
-x 30
-y 15
-end
-arch oakdoor
-slaying /world/world_101_107
-hp 25
-sp 7
 x 30
 y 15
 end
@@ -6850,21 +6846,7 @@ arch marble
 x 30
 y 16
 end
-arch oakdoor
-slaying /world/world_101_107
-hp 25
-sp 7
-x 30
-y 16
-end
 arch marble
-x 30
-y 17
-end
-arch oakdoor
-slaying /world/world_101_107
-hp 25
-sp 7
 x 30
 y 17
 end
@@ -6945,11 +6927,9 @@ arch marble
 x 30
 y 27
 end
-arch swall_1_3
+arch swall_2_1_2
 x 30
 y 27
-no_magic 1
-damned 1
 end
 arch marble
 x 30
@@ -6970,7 +6950,7 @@ arch marble
 x 30
 y 29
 end
-arch swall_1_3
+arch swall_2_1_2
 x 30
 y 29
 end
@@ -7017,6 +6997,10 @@ arch stwall_2_1_1
 x 31
 y 2
 end
+arch swall_1_3_half
+x 31
+y 2
+end
 arch marble
 x 31
 y 3
@@ -7030,6 +7014,10 @@ x 31
 y 4
 end
 arch stwall_2_1_1
+x 31
+y 4
+end
+arch swall_1_3_half
 x 31
 y 4
 end
@@ -7101,7 +7089,7 @@ arch marble
 x 31
 y 13
 end
-arch stwall_3_4
+arch stwall_2_2_4
 x 31
 y 13
 end
@@ -7109,7 +7097,10 @@ arch marble
 x 31
 y 14
 end
-arch stwall_2_1_1
+arch oakdoor_1
+slaying /world/world_101_107
+hp 25
+sp 7
 x 31
 y 14
 end
@@ -7117,7 +7108,10 @@ arch marble
 x 31
 y 15
 end
-arch stwall_2_1_1
+arch oakdoor_1
+slaying /world/world_101_107
+hp 25
+sp 7
 x 31
 y 15
 end
@@ -7125,7 +7119,10 @@ arch marble
 x 31
 y 16
 end
-arch stwall_2_1_1
+arch oakdoor_1
+slaying /world/world_101_107
+hp 25
+sp 7
 x 31
 y 16
 end
@@ -7133,7 +7130,10 @@ arch marble
 x 31
 y 17
 end
-arch stwall_2_1_1
+arch oakdoor_1
+slaying /world/world_101_107
+hp 25
+sp 7
 x 31
 y 17
 end
@@ -7141,7 +7141,7 @@ arch marble
 x 31
 y 18
 end
-arch stwall_3_4
+arch stwall_2_2_3
 x 31
 y 18
 end
@@ -7214,6 +7214,10 @@ x 31
 y 27
 end
 arch stwall_2_1_1
+x 31
+y 27
+end
+arch swall_1_3_half
 x 31
 y 27
 end
@@ -7230,6 +7234,10 @@ x 31
 y 29
 end
 arch stwall_2_1_1
+x 31
+y 29
+end
+arch swall_1_3_half
 x 31
 y 29
 end
