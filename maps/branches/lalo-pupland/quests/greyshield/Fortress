@@ -1,13 +1,14 @@
 arch map
-name Fortress
+name Grey Castle Fortress
 difficulty 50
+region wilderness
 width 32
 height 32
-enter_x 16
+enter_x 15
 enter_y 30
 msg
 Created:  1996-09-24 Chris Jeske
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-03-09 Rick Tanner
 endmsg
 end
 arch marble
@@ -831,57 +832,29 @@ arch cwall_2_1_2
 x 4
 y 20
 end
-arch marble
-x 4
-y 21
-end
 arch shop_books
 x 4
 y 21
 end
-arch marble
+arch shop_books
 x 4
 y 22
 end
 arch shop_books
 x 4
-y 22
-end
-arch marble
-x 4
 y 23
 end
 arch shop_books
-x 4
-y 23
-end
-arch marble
 x 4
 y 24
 end
 arch shop_books
 x 4
-y 24
-end
-arch marble
-x 4
 y 25
 end
 arch shop_books
 x 4
-y 25
-end
-arch marble
-x 4
 y 26
-end
-arch shop_books
-x 4
-y 26
-end
-arch marble
-x 4
-y 27
 end
 arch shop_books
 x 4
@@ -1017,17 +990,9 @@ arch cwall_2_1_2
 x 5
 y 20
 end
-arch marble
-x 5
-y 21
-end
 arch shop_books
 x 5
 y 21
-end
-arch marble
-x 5
-y 22
 end
 arch shop_empty
 x 5
@@ -1037,41 +1002,21 @@ arch shop_mat
 x 5
 y 22
 end
-arch marble
-x 5
-y 23
-end
 arch shop_empty
 x 5
 y 23
 end
-arch marble
+arch shop_empty
 x 5
 y 24
 end
 arch shop_empty
 x 5
-y 24
-end
-arch marble
-x 5
 y 25
 end
 arch shop_empty
 x 5
-y 25
-end
-arch marble
-x 5
 y 26
-end
-arch shop_empty
-x 5
-y 26
-end
-arch marble
-x 5
-y 27
 end
 arch shop_books
 x 5
@@ -1251,33 +1196,17 @@ arch cwall_1_4
 x 6
 y 23
 end
-arch marble
+arch shop_books
 x 6
 y 24
 end
 arch shop_books
 x 6
-y 24
-end
-arch marble
-x 6
 y 25
-end
-arch shop_books
-x 6
-y 25
-end
-arch marble
-x 6
-y 26
 end
 arch shop_empty
 x 6
 y 26
-end
-arch marble
-x 6
-y 27
 end
 arch shop_books
 x 6
@@ -1441,33 +1370,17 @@ arch cwall_2_1_2
 x 7
 y 23
 end
-arch marble
+arch shop_books
 x 7
 y 24
 end
 arch shop_books
 x 7
-y 24
-end
-arch marble
-x 7
 y 25
-end
-arch shop_books
-x 7
-y 25
-end
-arch marble
-x 7
-y 26
 end
 arch shop_empty
 x 7
 y 26
-end
-arch marble
-x 7
-y 27
 end
 arch shop_books
 x 7
@@ -1623,33 +1536,17 @@ arch cwall_2_1_2
 x 8
 y 23
 end
-arch marble
+arch shop_books
 x 8
 y 24
 end
 arch shop_books
 x 8
-y 24
-end
-arch marble
-x 8
 y 25
-end
-arch shop_books
-x 8
-y 25
-end
-arch marble
-x 8
-y 26
 end
 arch shop_empty
 x 8
 y 26
-end
-arch marble
-x 8
-y 27
 end
 arch shop_books
 x 8
@@ -1873,33 +1770,17 @@ arch cwall_2_1_2
 x 9
 y 23
 end
-arch marble
-x 9
-y 24
-end
 arch shop_books
 x 9
 y 24
 end
-arch marble
+arch shop_books
 x 9
 y 25
 end
 arch shop_books
 x 9
-y 25
-end
-arch marble
-x 9
 y 26
-end
-arch shop_books
-x 9
-y 26
-end
-arch marble
-x 9
-y 27
 end
 arch shop_books
 x 9
@@ -2532,7 +2413,7 @@ end
 arch altar
 slaying Princess' Hair
 msg
-Thank you very much
+Thank you very much.
 endmsg
 food 1
 x 12
@@ -3227,24 +3108,16 @@ name Guardian Dragon
 msg
 @match altar|trigger
 <mumble> <sigh>
-@match King|king|Grey|grey
-You better get the king's permission
-first, and then I will let you in!
-Unfortunately, the king is inside...
-<chortle>
-@match rincess
-Princess? mmm.... princess...
-I collect princess scalps, did you
-know?
+@match king|grey
+You better get the king's permission first, and then I will let you in! Unfortunately, the king is inside... <chortle>
+@match princess
+Princess? mmm.... princess... I collect princess scalps, did you know?
 @match scalp|hair
-Bring me all the hair of a princess,
-and I will let you in!
+Bring me all the hair of a princess, and I will let you in!
 @match in|open|enter
-Ha! NONE MAY ENTER! Didn't you read
-the sign? <snort>
+Ha! NONE MAY ENTER! Didn't you read the sign? <snort>
 @match *
-Watch it, moron! You are trying my
-patience...<rumble>
+Watch it, moron! You are trying my patience...<rumble>
 endmsg
 x 15
 y 24
@@ -3265,16 +3138,15 @@ arch marble
 x 15
 y 25
 end
-arch marble
-x 15
-y 26
-end
 arch magic_ear
 msg
 @match altar|trigger
-The dragon appears to be daydreaming
-about a princess...
+The dragon appears to be daydreaming about a princess...
 endmsg
+x 15
+y 26
+end
+arch marble
 x 15
 y 26
 end
@@ -3292,8 +3164,7 @@ y 29
 end
 arch sign
 msg
-None may enter except by the
-Grey King's request!
+None may enter except by the Grey King's request!
 endmsg
 x 15
 y 29
@@ -3334,34 +3205,18 @@ end
 arch sage
 name Grey King
 msg
-@match Seal|seal
-Ahh, whats-his-face must have sent you.
-You may go upstairs and talk to the
-sphinx.
+@match seal
+Ahh, whats-his-face must have sent you.  You may go upstairs and talk to the sphinx.
 @match upstairs|sphinx
-Use my seal to open the door. Bring me
-my crown, and I will let you go
-downstairs.
+Use my seal to open the door.  Bring me my crown, and I will let you go downstairs.
 @match door|open
-Do you have my seal? You need my seal
-to open the door.
-@match crown|Crown
-It's very simple, moron!
-Go upstairs, get my crown, and place
-it on the altar. THEN you may continue
-on your quest.
-<Geez, some people are so stupid...>
+Do you have my seal? You need my seal to open the door.
+@match crown
+It's very simple, moron! Go upstairs, get my crown, and place it on the altar.  THEN you may continue on your quest. <Geez, some people are so stupid...>
 @match Grey|shield|sword|quest|treasure
-Ahh, you are looking for the
-Greyshield are you? If you get my
-sword (the Greysword), then I will
-let you into the treasure room...
-You must be worthy to gain the
-Greyshield!
+Ahh, you are looking for the Greyshield are you? If you get my sword (the Greysword), then I will let you into the treasure room... You must be worthy to gain the Greyshield!
 @match *
-<That stupid whats-his-face! He can
-never take care of anything himself!>
-What do you want? <sigh>
+<That stupid whats-his-face! He can never take care of anything himself!> What do you want? <sigh>
 endmsg
 hp 5000
 maxhp 5000
@@ -5439,7 +5294,11 @@ arch marble
 x 25
 y 16
 end
-arch cwall_2_2_1
+arch swall_1_4_half
+x 25
+y 16
+end
+arch cwall_1_2
 x 25
 y 16
 end
@@ -5459,25 +5318,13 @@ arch cwall_2_1_2
 x 25
 y 18
 end
-arch marble
+arch shop_potions
 x 25
 y 19
 end
 arch shop_potions
 x 25
-y 19
-end
-arch marble
-x 25
 y 20
-end
-arch shop_potions
-x 25
-y 20
-end
-arch marble
-x 25
-y 21
 end
 arch shop_potions
 x 25
@@ -5643,17 +5490,9 @@ level 10
 arch spell_create_fire_wall
 end
 end
-arch marble
-x 26
-y 13
-end
 arch shop_empty
 x 26
 y 13
-end
-arch marble
-x 26
-y 14
 end
 arch shop_empty
 x 26
@@ -5662,10 +5501,6 @@ end
 arch create_serpent_cloak
 x 26
 y 14
-end
-arch marble
-x 26
-y 15
 end
 arch shop_empty
 x 26
@@ -5711,25 +5546,13 @@ arch cwall_1_3
 x 26
 y 18
 end
-arch marble
+arch shop_potions
 x 26
 y 19
 end
 arch shop_potions
 x 26
-y 19
-end
-arch marble
-x 26
 y 20
-end
-arch shop_potions
-x 26
-y 20
-end
-arch marble
-x 26
-y 21
 end
 arch shop_potions
 x 26
@@ -5924,10 +5747,6 @@ arch cwall_2_1_2
 x 27
 y 12
 end
-arch marble
-x 27
-y 13
-end
 arch shop_empty
 x 27
 y 13
@@ -5936,10 +5755,6 @@ arch smith
 x 27
 y 13
 end
-arch marble
-x 27
-y 14
-end
 arch shop_empty
 x 27
 y 14
@@ -5947,10 +5762,6 @@ end
 arch create_mithril_ar_ele
 x 27
 y 14
-end
-arch marble
-x 27
-y 15
 end
 arch shop_empty
 x 27
@@ -5964,10 +5775,6 @@ arch swall_2_1_2
 x 27
 y 16
 end
-arch marble
-x 27
-y 17
-end
 arch shop_empty
 x 27
 y 17
@@ -5976,33 +5783,17 @@ arch shop_mat
 x 27
 y 17
 end
-arch marble
-x 27
-y 18
-end
 arch shop_potions
 x 27
 y 18
 end
-arch marble
+arch shop_potions
 x 27
 y 19
 end
 arch shop_potions
 x 27
-y 19
-end
-arch marble
-x 27
 y 20
-end
-arch shop_potions
-x 27
-y 20
-end
-arch marble
-x 27
-y 21
 end
 arch shop_potions
 x 27
@@ -6184,17 +5975,9 @@ level 10
 arch spell_create_fire_wall
 end
 end
-arch marble
-x 28
-y 13
-end
 arch shop_empty
 x 28
 y 13
-end
-arch marble
-x 28
-y 14
 end
 arch shop_empty
 x 28
@@ -6203,10 +5986,6 @@ end
 arch create_eyeshield
 x 28
 y 14
-end
-arch marble
-x 28
-y 15
 end
 arch shop_empty
 x 28
@@ -6220,41 +5999,21 @@ arch swall_2_1_2
 x 28
 y 16
 end
-arch marble
-x 28
-y 17
-end
 arch shop_empty
 x 28
 y 17
 end
-arch marble
-x 28
-y 18
-end
 arch shop_potions
 x 28
 y 18
 end
-arch marble
+arch shop_potions
 x 28
 y 19
 end
 arch shop_potions
 x 28
-y 19
-end
-arch marble
-x 28
 y 20
-end
-arch shop_potions
-x 28
-y 20
-end
-arch marble
-x 28
-y 21
 end
 arch shop_potions
 x 28
@@ -6438,10 +6197,6 @@ arch cwall_2_1_2
 x 29
 y 12
 end
-arch marble
-x 29
-y 13
-end
 arch shop_empty
 x 29
 y 13
@@ -6450,10 +6205,6 @@ arch smith
 x 29
 y 13
 end
-arch marble
-x 29
-y 14
-end
 arch shop_empty
 x 29
 y 14
@@ -6461,10 +6212,6 @@ end
 arch create_dragon_shield
 x 29
 y 14
-end
-arch marble
-x 29
-y 15
 end
 arch shop_empty
 x 29
@@ -6478,41 +6225,21 @@ arch swall_1_3
 x 29
 y 16
 end
-arch marble
-x 29
-y 17
-end
 arch shop_empty
 x 29
 y 17
 end
-arch marble
-x 29
-y 18
-end
 arch shop_potions
 x 29
 y 18
 end
-arch marble
+arch shop_potions
 x 29
 y 19
 end
 arch shop_potions
 x 29
-y 19
-end
-arch marble
-x 29
 y 20
-end
-arch shop_potions
-x 29
-y 20
-end
-arch marble
-x 29
-y 21
 end
 arch shop_potions
 x 29
@@ -6680,17 +6407,9 @@ level 10
 arch spell_create_fire_wall
 end
 end
-arch marble
-x 30
-y 13
-end
 arch shop_empty
 x 30
 y 13
-end
-arch marble
-x 30
-y 14
 end
 arch shop_empty
 x 30
@@ -6700,21 +6419,9 @@ arch create_dragon_mail
 x 30
 y 14
 end
-arch marble
-x 30
-y 15
-end
 arch shop_empty
 x 30
 y 15
-end
-arch marble
-x 30
-y 16
-end
-arch shop_empty
-x 30
-y 16
 end
 arch magic_mouth
 msg
@@ -6723,41 +6430,25 @@ endmsg
 x 30
 y 16
 end
-arch marble
+arch shop_empty
 x 30
-y 17
+y 16
 end
 arch shop_empty
 x 30
 y 17
 end
-arch marble
-x 30
-y 18
-end
 arch shop_potions
 x 30
 y 18
 end
-arch marble
+arch shop_potions
 x 30
 y 19
 end
 arch shop_potions
 x 30
-y 19
-end
-arch marble
-x 30
 y 20
-end
-arch shop_potions
-x 30
-y 20
-end
-arch marble
-x 30
-y 21
 end
 arch shop_potions
 x 30

@@ -1,13 +1,15 @@
 arch map
-name Finish
+name Grey Castle Finale
+difficulty 60
+region wilderness
 darkness 4
-width 24
+width 22
 height 16
 enter_x 7
 enter_y 7
 msg
 Created:  1996-10-26 Chris Jeske
-Modified: 2008-01-04 Nicolas Weeger
+Modified: 2012-03-09 Rick Tanner
 endmsg
 end
 arch marble
@@ -115,7 +117,7 @@ arch magic_banned
 x 1
 y 1
 end
-arch oakdoor
+arch exit
 name exit to Grey Isle
 slaying /world/world_107_128
 hp 13
@@ -243,7 +245,7 @@ arch magic_banned
 x 1
 y 13
 end
-arch oakdoor
+arch exit
 name exit to Grey Isle
 slaying /world/world_107_128
 hp 13
@@ -2095,7 +2097,7 @@ arch magic_banned
 x 13
 y 1
 end
-arch oakdoor
+arch exit
 name exit to Grey Isle
 slaying /world/world_107_128
 hp 13
@@ -2223,7 +2225,7 @@ arch magic_banned
 x 13
 y 13
 end
-arch oakdoor
+arch exit
 name exit to Grey Isle
 slaying /world/world_107_128
 hp 13
@@ -2599,18 +2601,9 @@ end
 arch holy_shield
 name Greyshield
 msg
-The arts that crafted this shield have long
-been lost. The Grey Master's works are but
-a distant shadow of the might contained in
-the shield!!!
+The arts that crafted this shield have long been lost.  The Grey Master's works are but a distant shadow of the might contained in the shield!!!
 
-As you look away from the shield, its
-image still seems to burn before you, as
-if you had been looking at a bright light.
-But looking back at the shield, you
-decide that it certainly doesn't emit any
-light. As a matter of fact, it looks as if
-it would absorb light, were that possible...
+As you look away from the shield, its image still seems to burn before you, as if you had been looking at a bright light.  But looking back at the shield, you decide that it certainly doesn't emit any light.  As a matter of fact, it looks as if it would absorb light, were that possible...
 endmsg
 Dex 3
 Con 3

@@ -1,12 +1,19 @@
 arch map
-name Chamber
+name Warriors' Tower, Chamber
 swap_time 5300
-difficulty 1
+difficulty 45
+region wilderness
 width 32
 height 29
+enter_x 4
+enter_y 1
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-04-14 Nicolas Weeger
 endmsg
+maplore
+@quest Lorkas
+endmaplore
 end
 arch blocked
 end
@@ -265,39 +272,9 @@ arch dungeon_floor
 x 1
 y 17
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 1
 y 17
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 1
@@ -358,38 +335,9 @@ sp 1
 x 1
 y 27
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 1
 y 27
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 1
@@ -462,39 +410,9 @@ arch dungeon_floor
 x 2
 y 13
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 2
 y 13
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 2
@@ -540,39 +458,9 @@ arch dungeon_floor
 x 2
 y 23
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 2
 y 23
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 2
@@ -594,76 +482,17 @@ arch dungeon_floor
 x 2
 y 26
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 2
 y 26
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 2
 y 27
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 2
 y 27
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 2
@@ -695,36 +524,9 @@ arch dungeon_floor
 x 3
 y 3
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 3
 y 3
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 3
@@ -754,39 +556,9 @@ arch dungeon_floor
 x 3
 y 9
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 3
 y 9
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 3
@@ -836,39 +608,9 @@ arch dungeon_floor
 x 3
 y 20
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 3
 y 20
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 3
@@ -898,76 +640,17 @@ arch dungeon_floor
 x 3
 y 25
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 3
 y 25
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 3
 y 26
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 3
 y 26
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 3
@@ -995,7 +678,7 @@ arch dungeon_floor
 x 4
 y 1
 end
-arch oakdoor
+arch stair2_up
 slaying down2
 hp 14
 sp 9
@@ -1046,39 +729,9 @@ arch dungeon_floor
 x 4
 y 11
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 4
 y 11
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 4
@@ -1108,39 +761,9 @@ arch dungeon_floor
 x 4
 y 17
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 4
 y 17
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 4
@@ -1178,76 +801,17 @@ arch dungeon_floor
 x 4
 y 24
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 4
 y 24
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 4
 y 25
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 4
 y 25
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 4
@@ -1295,36 +859,9 @@ arch dungeon_floor
 x 5
 y 4
 end
-arch c_knight
-Str 40
-Dex 0
-Con 25
-Wis 15
-Int 0
-hp 2000
-maxhp 2000
-exp 35000
-dam 20
-wc -20
-ac -15
+arch high_chaos_knight
 x 5
 y 4
-speed -0.700000
-level 20
-attacktype 262145
-resist_physical 100
-resist_electricity 100
-resist_confusion 100
-resist_paralyze 100
-carrying 13000
-see_invisible 1
-arch falchion
-name wicked sabre
-dam 25
-attacktype 262145
-resist_weaponmagic -100
-last_sp 4
-end
 end
 arch dungeon_floor
 x 5
@@ -1422,76 +959,17 @@ arch dungeon_floor
 x 5
 y 23
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 5
 y 23
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 5
 y 24
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 5
 y 24
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 5
@@ -1568,39 +1046,9 @@ arch dungeon_floor
 x 6
 y 9
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 6
 y 9
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 6
@@ -1614,39 +1062,9 @@ arch dungeon_floor
 x 6
 y 12
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 6
 y 12
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 6
@@ -1700,76 +1118,17 @@ arch dungeon_floor
 x 6
 y 22
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 6
 y 22
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 6
 y 23
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 6
 y 23
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 6
@@ -1914,76 +1273,17 @@ arch dungeon_floor
 x 7
 y 21
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 7
 y 21
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 7
 y 22
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 7
 y 22
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 7
@@ -2196,76 +1496,17 @@ arch dungeon_floor
 x 8
 y 20
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 8
 y 20
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 8
 y 21
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 8
 y 21
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 8
@@ -2417,76 +1658,17 @@ arch dungeon_floor
 x 9
 y 19
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 9
 y 19
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 9
 y 20
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 9
 y 20
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 9
@@ -2508,39 +1690,9 @@ arch dungeon_floor
 x 9
 y 23
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 9
 y 23
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 9
@@ -2576,39 +1728,9 @@ arch dungeon_floor
 x 10
 y 1
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 10
 y 1
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 10
@@ -2650,39 +1772,9 @@ arch dungeon_floor
 x 10
 y 10
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 10
 y 10
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 10
@@ -2692,39 +1784,9 @@ arch dungeon_floor
 x 10
 y 12
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 10
 y 12
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 10
@@ -2758,76 +1820,17 @@ arch dungeon_floor
 x 10
 y 18
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 10
 y 18
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 10
 y 19
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 10
 y 19
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 10
@@ -2923,39 +1926,9 @@ arch dungeon_floor
 x 11
 y 5
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 11
 y 5
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 11
@@ -3017,76 +1990,17 @@ arch dungeon_floor
 x 11
 y 17
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 11
 y 17
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 11
 y 18
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 11
 y 18
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 11
@@ -3112,39 +2026,9 @@ arch dungeon_floor
 x 11
 y 22
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 11
 y 22
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 11
@@ -3232,39 +2116,9 @@ arch dungeon_floor
 x 12
 y 10
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 12
 y 10
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 12
@@ -3274,39 +2128,9 @@ arch dungeon_floor
 x 12
 y 12
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 12
 y 12
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 12
@@ -3332,76 +2156,17 @@ arch dungeon_floor
 x 12
 y 16
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 12
 y 16
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 12
 y 17
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 12
 y 17
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 12
@@ -3485,39 +2250,9 @@ arch dungeon_floor
 x 13
 y 3
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 13
 y 3
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 13
@@ -3579,76 +2314,17 @@ arch dungeon_floor
 x 13
 y 15
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 13
 y 15
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 13
 y 16
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 13
 y 16
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 13
@@ -3690,38 +2366,9 @@ arch dungeon_floor
 x 13
 y 22
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 13
 y 22
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 13
@@ -3731,38 +2378,9 @@ arch dungeon_floor
 x 13
 y 24
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 13
 y 24
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 13
@@ -3866,76 +2484,17 @@ arch dungeon_floor
 x 14
 y 14
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 14
 y 14
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 14
 y 15
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 14
 y 15
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 14
@@ -4051,39 +2610,9 @@ arch dungeon_floor
 x 15
 y 6
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 15
 y 6
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 15
@@ -4125,76 +2654,17 @@ arch dungeon_floor
 x 15
 y 13
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 15
 y 13
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 15
 y 14
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 15
 y 14
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 15
@@ -4248,38 +2718,9 @@ arch dungeon_floor
 x 15
 y 21
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 15
 y 21
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 15
@@ -4335,39 +2776,9 @@ arch dungeon_floor
 x 16
 y 2
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 16
 y 2
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch spell_paralyze
-end
-arch spell_burning_hands
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 16
@@ -4425,76 +2836,17 @@ arch dungeon_floor
 x 16
 y 12
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 16
 y 12
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 16
 y 13
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 16
 y 13
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 16
@@ -4568,39 +2920,9 @@ arch dungeon_floor
 x 16
 y 24
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 16
 y 24
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 16
@@ -4692,76 +3014,17 @@ arch dungeon_floor
 x 17
 y 11
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 17
 y 11
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 17
 y 12
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 17
 y 12
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 17
@@ -4835,39 +3098,9 @@ arch dungeon_floor
 x 17
 y 22
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 17
 y 22
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 17
@@ -4942,10 +3175,7 @@ end
 arch magic_mouth
 name 2 - has dshield
 msg
-As the tree monster attacks you,
-the Demonspawn Shield vibrates!
-You struggle to remain control over
-yourself.
+As the tree monster attacks you, the Demonspawn Shield vibrates! You struggle to remain control over yourself.
 endmsg
 food 1
 x 18
@@ -4955,9 +3185,7 @@ move_on 0
 end
 arch magic_mouth
 msg
-A big tree monster attacks you!
-It seems to hurt you without even
-touching.
+A big tree monster attacks you! It seems to hurt you without even touching.
 endmsg
 food 1
 x 18
@@ -5032,76 +3260,17 @@ arch dungeon_floor
 x 18
 y 10
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 18
 y 10
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 18
 y 11
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 18
 y 11
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 18
@@ -5183,38 +3352,9 @@ arch dungeon_floor
 x 18
 y 22
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 18
 y 22
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 18
@@ -5294,7 +3434,7 @@ arch dungeon_floor
 x 19
 y 6
 end
-arch oakdoor
+arch stair_3_down
 slaying down3
 hp 23
 sp 21
@@ -5321,76 +3461,17 @@ arch dungeon_floor
 x 19
 y 9
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 19
 y 9
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 19
 y 10
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 19
 y 10
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 19
@@ -5436,38 +3517,9 @@ arch dungeon_floor
 x 19
 y 17
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 19
 y 17
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch abil_fear
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 19
@@ -5505,38 +3557,9 @@ arch dungeon_floor
 x 19
 y 24
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 19
 y 24
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 19
@@ -5620,76 +3643,17 @@ arch dungeon_floor
 x 20
 y 8
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 20
 y 8
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 20
 y 9
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 20
 y 9
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 20
@@ -5821,38 +3785,9 @@ arch dungeon_floor
 x 21
 y 2
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 21
 y 2
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 21
@@ -5886,76 +3821,17 @@ arch dungeon_floor
 x 21
 y 7
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 21
 y 7
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 21
 y 8
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 21
 y 8
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 21
@@ -6107,76 +3983,17 @@ arch dungeon_floor
 x 22
 y 6
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 22
 y 6
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 22
 y 7
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 22
 y 7
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 22
@@ -6238,38 +4055,9 @@ arch dungeon_floor
 x 22
 y 16
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 22
 y 16
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch abil_fear
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 22
@@ -6393,76 +4181,17 @@ arch dungeon_floor
 x 23
 y 5
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 23
 y 5
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 23
 y 6
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 23
 y 6
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 23
@@ -6560,7 +4289,7 @@ arch dungeon_floor
 x 23
 y 21
 end
-arch oakdoor
+arch stair2_up
 slaying down3
 hp 19
 sp 6
@@ -6633,76 +4362,17 @@ arch dungeon_floor
 x 24
 y 4
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 24
 y 4
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 24
 y 5
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 24
 y 5
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 24
@@ -6862,76 +4532,17 @@ arch dungeon_floor
 x 25
 y 3
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 25
 y 3
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 25
 y 4
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 25
 y 4
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 25
@@ -6989,38 +4600,9 @@ arch dungeon_floor
 x 25
 y 15
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 25
 y 15
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 25
@@ -7070,38 +4652,9 @@ arch dungeon_floor
 x 25
 y 26
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 25
 y 26
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 25
@@ -7133,76 +4686,17 @@ arch dungeon_floor
 x 26
 y 2
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 26
 y 2
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 26
 y 3
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 26
 y 3
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 26
@@ -7232,38 +4726,9 @@ arch dungeon_floor
 x 26
 y 7
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 26
 y 7
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 26
@@ -7277,38 +4742,9 @@ arch dungeon_floor
 x 26
 y 10
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 26
 y 10
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 26
@@ -7350,38 +4786,9 @@ arch dungeon_floor
 x 26
 y 18
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 26
 y 18
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch abil_fear
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 26
@@ -7441,76 +4848,17 @@ arch dungeon_floor
 x 27
 y 1
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 27
 y 1
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 27
 y 2
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 27
 y 2
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 27
@@ -7662,39 +5010,9 @@ arch dungeon_floor
 x 28
 y 1
 end
-arch broo
-name Hulking Beast
-Str 30
-Dex 0
-Con 20
-Wis 15
-Pow 45
-Int 0
-hp 3500
-maxhp 3500
-sp 150
-maxsp 150
-exp 100000
-dam 25
-wc -20
-ac -12
+arch hulking_beast
 x 28
 y 1
-speed -0.400000
-level 22
-resist_fire 100
-resist_confusion 100
-resist_paralyze 100
-see_invisible 1
-can_cast_spell 1
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_burning_hands
-end
-arch spell_paralyze
-end
 end
 arch dungeon_floor
 x 28
@@ -7820,38 +5138,9 @@ arch dungeon_floor
 x 28
 y 25
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 28
 y 25
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 28
@@ -7931,38 +5220,9 @@ arch dungeon_floor
 x 29
 y 8
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 29
 y 8
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 29
@@ -7972,38 +5232,9 @@ arch dungeon_floor
 x 29
 y 10
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 29
 y 10
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 29
@@ -8029,38 +5260,9 @@ arch dungeon_floor
 x 29
 y 15
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 29
 y 15
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 29
@@ -8074,38 +5276,9 @@ arch dungeon_floor
 x 29
 y 18
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 29
 y 18
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 29
@@ -8281,38 +5454,9 @@ arch dungeon_floor
 x 30
 y 22
 end
-arch deathtree
-name wandering terror
-Str 80
-Con 56
-Wis 15
-Pow 5
-hp 8000
-maxhp 8000
-sp 20
-maxsp 20
-exp 100000
-dam 40
-wc -15
-ac -10
+arch wandering_terror
 x 30
 y 22
-speed -0.350000
-level 25
-attacktype 16897
-resist_physical 30
-resist_confusion 100
-resist_poison -100
-resist_paralyze 100
-resist_fear 100
-resist_chaos 100
-see_invisible 1
-can_cast_spell 1
-stand_still 0
-arch spell_paralyze
-end
-arch abil_fear
-end
 end
 arch dungeon_floor
 x 30

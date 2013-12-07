@@ -1,12 +1,14 @@
 arch map
-name Aljwaf Tower
+name Decaying Tower
 difficulty 6
+region narcopin
 width 35
 height 13
 enter_x 6
 enter_y 12
 msg
-Created:  2002-10-20
+Created:  2002-10-20 Todd Mitchell
+Modified: 2012-03-24 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1365,7 +1367,7 @@ arch spikes_open
 x 16
 y 1
 connected 1
-no_pass 1
+move_block all
 end
 arch boulder
 x 16
@@ -1388,7 +1390,7 @@ arch spikes_open
 x 16
 y 5
 connected 3
-no_pass 1
+move_block all
 end
 arch boulder
 x 16
@@ -1472,7 +1474,7 @@ arch spikes_open
 x 19
 y 1
 connected 2
-no_pass 1
+move_block all
 end
 arch boulder
 x 19
@@ -1495,7 +1497,7 @@ arch spikes_open
 x 19
 y 5
 connected 4
-no_pass 1
+move_block all
 end
 arch boulder
 x 19
@@ -2660,7 +2662,7 @@ x 33
 y 5
 arch claypipe
 msg
-looks like a good smokin pipe.
+Looks like a good smoking pipe.
 endmsg
 end
 end

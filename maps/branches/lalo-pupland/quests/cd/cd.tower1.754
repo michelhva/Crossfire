@@ -1,10 +1,13 @@
 arch map
-name Fortress Ang
-difficulty 1
+name Fortress Ang, Tower Level 1
+difficulty 18
+region wilderness
 width 70
 height 70
+enter_x 9
+enter_y 7
 msg
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-12-21 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -13070,7 +13073,6 @@ x 65
 y 60
 carrying 117725
 has_ready_bow 1
-has_ready_wand 1
 arch wand
 food 3
 value 833

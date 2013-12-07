@@ -1,10 +1,14 @@
 arch map
-name Castle Ra-Gar, Level of Earth
-difficulty 1
+name Castle of Ra-Gar, Level of Earth
+difficulty 10
+region wilderness
 width 9
 height 16
+enter_x 7
+enter_y 14
 msg
 Created:  1993-10-19
+Modified: 2008-12-21 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -118,7 +122,7 @@ y 1
 carrying 100
 arch key2
 name Earth Key
-slaying set_individual_value earth
+slaying ra-gar-earth
 end
 end
 arch dirtfloor

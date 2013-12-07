@@ -1,14 +1,20 @@
 arch map
-name The Fallen
+name Warriors' Tower, The Fallen
 reset_timeout 7200
-difficulty 25
+difficulty 125
+region wilderness
 width 32
 height 33
-enter_x 1
-enter_y 1
+enter_x 2
+enter_y 31
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-03-09 Rick Tanner
 endmsg
+maplore
+@quest Lorkas
+Final map.
+endmaplore
 end
 arch blocked
 end
@@ -138,7 +144,7 @@ end
 arch pillars
 x 1
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 1
@@ -159,7 +165,7 @@ end
 arch pillars
 x 1
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 1
@@ -243,7 +249,7 @@ end
 arch sign
 name shortcut
 msg
-This way leads outside
+This way leads outside.
 endmsg
 x 1
 y 18
@@ -562,7 +568,7 @@ end
 arch pillars
 x 3
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 3
@@ -583,7 +589,7 @@ end
 arch pillars
 x 3
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 3
@@ -641,7 +647,7 @@ arch small_stones
 x 3
 y 17
 end
-arch cave_4
+arch dun22
 x 3
 y 17
 end
@@ -712,8 +718,7 @@ y 30
 end
 arch magic_mouth
 msg
-You have a really bad feeling about
-this place.
+You have a really bad feeling about this place.
 endmsg
 x 3
 y 31
@@ -842,7 +847,7 @@ arch pstone_3
 x 4
 y 18
 end
-arch cave_4
+arch dun22
 x 4
 y 18
 end
@@ -1039,7 +1044,7 @@ arch pstone_3
 x 5
 y 19
 end
-arch cave_4
+arch dun22
 x 5
 y 19
 end
@@ -1229,7 +1234,7 @@ arch pstone_3
 x 6
 y 20
 end
-arch cave_4
+arch dun22
 x 6
 y 20
 end
@@ -1417,7 +1422,7 @@ arch pstone_3
 x 7
 y 21
 end
-arch cave_4
+arch dun22
 x 7
 y 21
 end
@@ -1444,10 +1449,7 @@ end
 arch magic_mouth
 name 50
 msg
-Only half of the gates have opened...
-Could this mean there is a second
-lever, yet to be found?
-Could this mean you're only half done?
+Only half of the gates have opened... Could this mean there is a second lever, yet to be found? Could this mean you're only half done?
 endmsg
 x 7
 y 27
@@ -1635,7 +1637,7 @@ arch small_stones
 x 8
 y 22
 end
-arch cave_4
+arch dun22
 x 8
 y 22
 end
@@ -1823,7 +1825,7 @@ arch small_stones
 x 9
 y 23
 end
-arch cave_4
+arch dun22
 x 9
 y 23
 end
@@ -2011,7 +2013,7 @@ arch small_stones
 x 10
 y 24
 end
-arch cave_4
+arch dun22
 x 10
 y 24
 end
@@ -2199,7 +2201,7 @@ arch small_stones
 x 11
 y 25
 end
-arch cave_4
+arch dun22
 x 11
 y 25
 end
@@ -2998,7 +3000,7 @@ sp 1000
 maxsp 1000
 exp 5000000
 wc -70
-ac -80
+ac -19
 x 15
 y 12
 speed 1.000000
@@ -3034,7 +3036,6 @@ can_use_weapon 0
 can_use_ring 0
 sleep 1
 can_use_skill 0
-can_apply 0
 arch spell_regenerate_spellpoints
 end
 arch abil_icestorm
@@ -4195,7 +4196,7 @@ arch small_stones
 x 20
 y 25
 end
-arch cave_3
+arch dun21
 x 20
 y 25
 end
@@ -4375,7 +4376,7 @@ arch small_stones
 x 21
 y 24
 end
-arch cave_3
+arch dun21
 x 21
 y 24
 end
@@ -4555,7 +4556,7 @@ arch small_stones
 x 22
 y 23
 end
-arch cave_3
+arch dun21
 x 22
 y 23
 end
@@ -4735,7 +4736,7 @@ arch small_stones
 x 23
 y 22
 end
-arch cave_3
+arch dun21
 x 23
 y 22
 end
@@ -4915,7 +4916,7 @@ arch pstone_3
 x 24
 y 21
 end
-arch cave_3
+arch dun21
 x 24
 y 21
 end
@@ -5095,7 +5096,7 @@ arch pstone_3
 x 25
 y 20
 end
-arch cave_3
+arch dun21
 x 25
 y 20
 end
@@ -5280,7 +5281,7 @@ arch pstone_3
 x 26
 y 19
 end
-arch cave_3
+arch dun21
 x 26
 y 19
 end
@@ -5462,7 +5463,7 @@ arch pstone_3
 x 27
 y 18
 end
-arch cave_3
+arch dun21
 x 27
 y 18
 end
@@ -5566,7 +5567,7 @@ end
 arch pillars
 x 28
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 28
@@ -5587,7 +5588,7 @@ end
 arch pillars
 x 28
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 28
@@ -5645,7 +5646,7 @@ arch small_stones
 x 28
 y 17
 end
-arch cave_3
+arch dun21
 x 28
 y 17
 end
@@ -5707,8 +5708,7 @@ y 30
 end
 arch magic_mouth
 msg
-You have a really bad feeling about
-this place.
+You have a really bad feeling about this place.
 endmsg
 x 28
 y 31
@@ -5760,8 +5760,7 @@ end
 arch sorcerer_book
 name rainbow colored spellbook
 msg
-This spellbook ripples with the
-colors of the rainbow
+This spellbook ripples with the colors of the rainbow.
 endmsg
 x 29
 y 3
@@ -5924,7 +5923,7 @@ end
 arch pillars
 x 30
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 30
@@ -5945,7 +5944,7 @@ end
 arch pillars
 x 30
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 30

@@ -1,0 +1,91 @@
+quest quests/Narcopin
+title The Ruins of Narcopin
+face ruins.111
+description
+Find the devasted kingdom of Narcopin, and claim its treasures for yourself.
+end_description
+step 10
+description
+You've heard of a kingdom which was destroyed, west of Navar.
+end_description
+end_step
+step 20
+description
+Explore the ruins of Narcopin.
+end_description
+end_step
+step 30
+finishes_quest
+description
+You've found the treasure of Aljwaf.
+end_description
+end_step
+end_quest
+
+quest quests/BaradDur
+title Fortress of Barad-Dur
+face tower_a.x11
+description
+Find the legendary fortress of Barad-Dur. Beware, evil monsters lurk in it.
+end_description
+step 10
+description
+You've heard of the fortress of Barad-Dur, located north-west of the great city.
+end_description
+end_step
+step 20
+finishes_quest
+description
+You've found the legendary fortress of Barad-Dur.
+end_description
+end_step
+end_quest
+
+quest quests/FortressAng
+title The Fortress of Ang
+face fort.x11
+description
+It is said a fortress was once built on the sea shore, east-north-east of what is now Navar, and that an unusual artifact can be found there.
+end_description
+step 10
+description
+I've heard of a fortress on the sea shore, east-north-east of Scorn, which has an unusual artifact.
+end_description
+end_step
+step 20
+description
+I have found the Fortress of Ang, and should try to get the artifact.
+end_description
+end_step
+step 30
+finishes_quest
+description
+I've claimed the treasures for myself.
+end_description
+end_step
+end_quest
+
+quest quests/Nilplur
+title The hunt for Nilplur
+face dragon.x71
+description
+Nilplur the dragon is said to hide in a cave in the mountain range east of the lake between Scorn and Euthville. According to reports, he accumulated some decent treasure, including powerful spells.
+end_description
+step 10
+description
+I've heard rumors of a dragon hiding in a cave in the mountain range east of the lake between Scorn and Euthville.
+end_description
+end_step
+step 20
+description
+I've found Nilplur's lair.
+end_description
+end_step
+step 30
+finishes_quest
+description
+I've killed Nilplur and can now claim his treasure.
+end_description
+end_step
+end_quest
+

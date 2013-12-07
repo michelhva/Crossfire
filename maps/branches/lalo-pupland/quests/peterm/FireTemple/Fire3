@@ -1,10 +1,14 @@
 arch map
-name Fire Temple
-difficulty 1
+name Fire Temple, Level 3
+difficulty 45
+region wilderness
 width 40
 height 32
+enter_x 1
+enter_y 14
 msg
 Created:  1997-06-07 PeterM (peterm@soda.csua.berkeley.edu)
+Modified: 2012-03-12 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -2400,15 +2404,15 @@ end
 arch firebreath
 slaying Fire3d1
 msg
-The fire refuses you passage
+The fire refuses you passage.
 endmsg
 x 14
 y 12
 speed 0.000000
 type 20
 glow_radius 3
-move_type walk
-no_pass 1
+move_type 0
+move_block all
 end
 arch pstone_1
 x 14
@@ -2421,15 +2425,15 @@ end
 arch firebreath
 slaying Fire3d1
 msg
-The fire refuses you passage
+The fire refuses you passage.
 endmsg
 x 14
 y 13
 speed 0.000000
 type 20
 glow_radius 3
-move_type walk
-no_pass 1
+move_type 0
+move_block all
 end
 arch pstone_1
 x 14
@@ -2442,15 +2446,15 @@ end
 arch firebreath
 slaying Fire3d1
 msg
-The fire refuses you passage
+The fire refuses you passage.
 endmsg
 x 14
 y 14
 speed 0.000000
 type 20
 glow_radius 3
-move_type walk
-no_pass 1
+move_type 0
+move_block all
 end
 arch pstone_1
 x 14
@@ -2463,15 +2467,15 @@ end
 arch firebreath
 slaying Fire3d1
 msg
-The fire refuses you passage
+The fire refuses you passage.
 endmsg
 x 14
 y 15
 speed 0.000000
 type 20
 glow_radius 3
-move_type walk
-no_pass 1
+move_type 0
+move_block all
 end
 arch pstone_1
 x 14
@@ -2484,15 +2488,15 @@ end
 arch firebreath
 slaying Fire3d1
 msg
-The fire refuses you passage
+The fire refuses you passage.
 endmsg
 x 14
 y 16
 speed 0.000000
 type 20
 glow_radius 3
-move_type walk
-no_pass 1
+move_type 0
+move_block all
 end
 arch pstone_1
 x 14
@@ -4653,7 +4657,7 @@ arch statue
 name Statue of the Fire God
 x 26
 y 14
-no_pass 0
+move_block 0
 end
 arch altar
 name Statue of the Fire Lord
@@ -5528,11 +5532,7 @@ y 22
 end
 arch magic_mouth
 msg
-You see before you the most amazing
-effect.  A lavafall is pouring down
-through a rift in the ceiling and
-falling into a crevice in the floor.
-Passage seems difficult.
+You see before you the most amazing effect.  A lavafall is pouring down through a rift in the ceiling and falling into a crevice in the floor.  Passage seems difficult.
 endmsg
 x 30
 y 23
@@ -5548,7 +5548,7 @@ end
 arch permanent_lava
 x 30
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 30
@@ -5561,7 +5561,7 @@ end
 arch permanent_lava
 x 30
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 30
@@ -5570,7 +5570,7 @@ end
 arch permanent_lava
 x 30
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 30
@@ -5579,7 +5579,7 @@ end
 arch permanent_lava
 x 30
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 30
@@ -5592,7 +5592,7 @@ end
 arch permanent_lava
 x 30
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 30
@@ -5750,11 +5750,7 @@ y 22
 end
 arch magic_mouth
 msg
-You see before you the most amazing
-effect.  A lavafall is pouring down
-through a rift in the ceiling and
-falling into a crevice in the floor.
-Passage seems difficult.
+You see before you the most amazing effect.  A lavafall is pouring down through a rift in the ceiling and falling into a crevice in the floor.  Passage seems difficult.
 endmsg
 x 31
 y 23
@@ -5770,7 +5766,7 @@ end
 arch permanent_lava
 x 31
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 31
@@ -5783,7 +5779,7 @@ end
 arch permanent_lava
 x 31
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 31
@@ -5792,7 +5788,7 @@ end
 arch permanent_lava
 x 31
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 31
@@ -5801,7 +5797,7 @@ end
 arch permanent_lava
 x 31
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 31
@@ -5814,7 +5810,7 @@ end
 arch permanent_lava
 x 31
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 31
@@ -5968,11 +5964,7 @@ y 22
 end
 arch magic_mouth
 msg
-You see before you the most amazing
-effect.  A lavafall is pouring down
-through a rift in the ceiling and
-falling into a crevice in the floor.
-Passage seems difficult.
+You see before you the most amazing effect.  A lavafall is pouring down through a rift in the ceiling and falling into a crevice in the floor.  Passage seems difficult.
 endmsg
 x 32
 y 23
@@ -5988,7 +5980,7 @@ end
 arch permanent_lava
 x 32
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 32
@@ -6001,7 +5993,7 @@ end
 arch permanent_lava
 x 32
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 32
@@ -6010,7 +6002,7 @@ end
 arch permanent_lava
 x 32
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 32
@@ -6019,7 +6011,7 @@ end
 arch permanent_lava
 x 32
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 32
@@ -6032,7 +6024,7 @@ end
 arch permanent_lava
 x 32
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 32
@@ -6210,11 +6202,7 @@ y 22
 end
 arch magic_mouth
 msg
-You see before you the most amazing
-effect.  A lavafall is pouring down
-through a rift in the ceiling and
-falling into a crevice in the floor.
-Passage seems difficult.
+You see before you the most amazing effect.  A lavafall is pouring down through a rift in the ceiling and falling into a crevice in the floor.  Passage seems difficult.
 endmsg
 x 33
 y 23
@@ -6230,7 +6218,7 @@ end
 arch permanent_lava
 x 33
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 33
@@ -6243,7 +6231,7 @@ end
 arch permanent_lava
 x 33
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 33
@@ -6252,7 +6240,7 @@ end
 arch permanent_lava
 x 33
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 33
@@ -6261,7 +6249,7 @@ end
 arch permanent_lava
 x 33
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 33
@@ -6274,7 +6262,7 @@ end
 arch permanent_lava
 x 33
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 33
@@ -6448,8 +6436,7 @@ y 21
 end
 arch magic_mouth
 msg
-The crater you see here is filled
-with a strange, almost burning liquid.
+The crater you see here is filled with a strange, almost burning liquid.
 endmsg
 x 34
 y 22
@@ -6484,11 +6471,7 @@ connected 20
 end
 arch magic_mouth
 msg
-You see before you the most amazing
-effect.  A lavafall is pouring down
-through a rift in the ceiling and
-falling into a crevice in the floor.
-Passage seems difficult.
+You see before you the most amazing effect.  A lavafall is pouring down through a rift in the ceiling and falling into a crevice in the floor.  Passage seems difficult.
 endmsg
 x 34
 y 23
@@ -6818,11 +6801,7 @@ y 22
 end
 arch magic_mouth
 msg
-You see before you the most amazing
-effect.  A lavafall is pouring down
-through a rift in the ceiling and
-falling into a crevice in the floor.
-Passage seems difficult.
+You see before you the most amazing effect.  A lavafall is pouring down through a rift in the ceiling and falling into a crevice in the floor.  Passage seems difficult.
 endmsg
 x 35
 y 23
@@ -6838,7 +6817,7 @@ end
 arch permanent_lava
 x 35
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 35
@@ -6851,7 +6830,7 @@ end
 arch permanent_lava
 x 35
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 35
@@ -6860,7 +6839,7 @@ end
 arch permanent_lava
 x 35
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 35
@@ -6869,7 +6848,7 @@ end
 arch permanent_lava
 x 35
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 35
@@ -6882,7 +6861,7 @@ end
 arch permanent_lava
 x 35
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 35
@@ -7036,11 +7015,7 @@ y 22
 end
 arch magic_mouth
 msg
-You see before you the most amazing
-effect.  A lavafall is pouring down
-through a rift in the ceiling and
-falling into a crevice in the floor.
-Passage seems difficult.
+You see before you the most amazing effect.  A lavafall is pouring down through a rift in the ceiling and falling into a crevice in the floor.  Passage seems difficult.
 endmsg
 x 36
 y 23
@@ -7056,7 +7031,7 @@ end
 arch permanent_lava
 x 36
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 36
@@ -7069,7 +7044,7 @@ end
 arch permanent_lava
 x 36
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 36
@@ -7078,7 +7053,7 @@ end
 arch permanent_lava
 x 36
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 36
@@ -7087,7 +7062,7 @@ end
 arch permanent_lava
 x 36
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 36
@@ -7100,7 +7075,7 @@ end
 arch permanent_lava
 x 36
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 36
@@ -7254,11 +7229,7 @@ y 22
 end
 arch magic_mouth
 msg
-You see before you the most amazing
-effect.  A lavafall is pouring down
-through a rift in the ceiling and
-falling into a crevice in the floor.
-Passage seems difficult.
+You see before you the most amazing effect.  A lavafall is pouring down through a rift in the ceiling and falling into a crevice in the floor.  Passage seems difficult.
 endmsg
 x 37
 y 23
@@ -7274,7 +7245,7 @@ end
 arch permanent_lava
 x 37
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 37
@@ -7287,7 +7258,7 @@ end
 arch permanent_lava
 x 37
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 37
@@ -7296,7 +7267,7 @@ end
 arch permanent_lava
 x 37
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 37
@@ -7305,7 +7276,7 @@ end
 arch permanent_lava
 x 37
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 37
@@ -7318,7 +7289,7 @@ end
 arch permanent_lava
 x 37
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 37
@@ -7472,11 +7443,7 @@ y 22
 end
 arch magic_mouth
 msg
-You see before you the most amazing
-effect.  A lavafall is pouring down
-through a rift in the ceiling and
-falling into a crevice in the floor.
-Passage seems difficult.
+You see before you the most amazing effect.  A lavafall is pouring down through a rift in the ceiling and falling into a crevice in the floor.  Passage seems difficult.
 endmsg
 x 38
 y 23
@@ -7492,7 +7459,7 @@ end
 arch permanent_lava
 x 38
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 38
@@ -7505,7 +7472,7 @@ end
 arch permanent_lava
 x 38
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 38
@@ -7514,7 +7481,7 @@ end
 arch permanent_lava
 x 38
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 38
@@ -7523,7 +7490,7 @@ end
 arch permanent_lava
 x 38
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 38
@@ -7536,7 +7503,7 @@ end
 arch permanent_lava
 x 38
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 38

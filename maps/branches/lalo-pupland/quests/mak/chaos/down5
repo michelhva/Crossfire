@@ -1,14 +1,19 @@
 arch map
-name Rancid
+name Warriors' Tower, Rancid's Chamber
 reset_timeout 7200
-difficulty 13
+difficulty 99
+region wilderness
 width 23
 height 26
-enter_x 1
-enter_y 1
+enter_x 11
+enter_y 22
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2012-03-31 Nicolas Weeger
 endmsg
+maplore
+@quest Lorkas
+endmaplore
 end
 arch blocked
 end
@@ -986,7 +991,7 @@ end
 arch pillars
 x 8
 y 11
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 8
@@ -1015,7 +1020,7 @@ end
 arch pillars
 x 8
 y 17
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 8
@@ -1389,7 +1394,7 @@ sp 500
 maxsp 500
 exp 1000000
 dam 80
-ac -40
+ac -17
 x 11
 y 10
 speed -0.600000
@@ -1412,13 +1417,8 @@ see_invisible 1
 unaggressive 0
 can_cast_spell 1
 arch gem
-title of exceptional beauty
-face pretty_crystal.111
-speed 0.000000
 nrof 50
-value 40000
-weight 65
-is_animated 0
+artifact exceptional beauty
 end
 arch wine
 name a bottle filled with blood
@@ -1456,8 +1456,7 @@ y 13
 end
 arch magic_mouth
 msg
-This pentagram seems to hunger for
-a sacrifice.
+This pentagram seems to hunger for a sacrifice.
 endmsg
 x 11
 y 14
@@ -1845,7 +1844,7 @@ end
 arch pillars
 x 14
 y 11
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 14
@@ -1874,7 +1873,7 @@ end
 arch pillars
 x 14
 y 17
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 14

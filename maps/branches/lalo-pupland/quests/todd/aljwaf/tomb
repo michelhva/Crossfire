@@ -1,14 +1,15 @@
 arch map
 name Aljwaf Tomb
 difficulty 15
+region narcopin
 darkness 4
 width 10
 height 10
 enter_x 5
-enter_y 4
+enter_y 5
 msg
-Todd Mitchell
-Created:  2002-06-29
+Created:  2002-06-29 Todd Mitchell
+Modified: 2012-03-24 Rick Tanner
 endmsg
 end
 arch marble
@@ -342,13 +343,11 @@ y 4
 end
 arch gravestone2
 msg
-Here lies the bones of our Lord Aljwaf
-the terrible.
-May none disturb his eternal slumber.
+Here lies the bones of our Lord Aljwaf the terrible.  May none disturb his eternal slumber.
 endmsg
 x 4
 y 4
-no_pass 1
+move_block all
 end
 arch light4
 x 4
@@ -642,9 +641,7 @@ arch battle_axe
 title of the Phantom
 slaying undead
 msg
-This axe was crafted by the Durant mystics to
-aid the town guard in their defense against the
-swamp wraiths.
+This axe was crafted by the Durant mystics to aid the town guard in their defense against the swamp wraiths.
 endmsg
 x 8
 y 4

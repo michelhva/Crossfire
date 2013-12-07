@@ -1,11 +1,15 @@
 arch map
-name Dark Temple -- AnteChamber
-difficulty 1
+name Dark Temple, AnteChamber
+difficulty 20
+region wilderness
 darkness 5
 width 24
 height 24
+enter_x 21
+enter_y 1
 msg
 Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
+Modified: 2012-03-13 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -748,8 +752,7 @@ y 10
 end
 arch magic_mouth
 msg
-You hear faint zapping sounds,
-and smell an odor of ozone.
+You hear faint zapping sounds, and smell an odor of ozone.
 endmsg
 food 1
 x 5
@@ -776,8 +779,7 @@ connected 5
 end
 arch magic_mouth
 msg
-You might want to simply run past this
-fellow!  He looks very dangerous
+You might want to simply run past this fellow!  He looks very dangerous
 endmsg
 food 1
 x 5
@@ -1781,8 +1783,7 @@ connected 4
 end
 arch magic_mouth
 msg
-An ominous grunting sound comes from
-beyond the door.
+An ominous grunting sound comes from beyond the door.
 endmsg
 x 12
 y 5
@@ -2732,11 +2733,7 @@ x 19
 end
 arch magic_mouth
 msg
-Hmmm.  Are those magical writings near
-that handle across the room?  They
-must be guarding their treasure with
-magical traps as well as with their
-foul pets
+Hmmm.  Are those magical writings near that handle across the room?  They must be guarding their treasure with magical traps as well as with their foul pets!
 endmsg
 x 19
 y 1
@@ -2864,8 +2861,7 @@ x 20
 end
 arch magic_mouth
 msg
-Ugh!  A troll.  Better get those
-fire spells ready!
+Ugh!  A troll.  Better get those fire spells ready!
 endmsg
 x 20
 y 1
@@ -2966,8 +2962,7 @@ y 21
 end
 arch magic_mouth
 msg
-You wonder what kind of treasure lies
-hidden down there...
+You wonder what kind of treasure lies hidden down there...
 endmsg
 food 1
 x 20
@@ -3101,8 +3096,7 @@ y 21
 end
 arch magic_mouth
 msg
-You wonder what kind of treasure lies
-hidden down there...
+You wonder what kind of treasure lies hidden down there...
 endmsg
 food 1
 x 21

@@ -1,10 +1,14 @@
 arch map
-name Dungeon or Ra-Gar
-difficulty 1
+name Castle of Ra-Gar, Dungeon
+difficulty 25
+region wilderness
 width 16
 height 30
+enter_x 1
+enter_y 1
 msg
 Created:  1993-10-19
+Modified: 2012-03-11 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -525,9 +529,7 @@ y 20
 end
 arch sign
 msg
-WARNING!!!!!
-Do not pull the lever if you
-value your life!!
+WARNING!!!!!  Do not pull the lever if you value your life!!
 endmsg
 x 2
 y 20
@@ -2396,6 +2398,10 @@ end
 arch skeleton
 x 12
 y 18
+end
+arch small_stones
+x 12
+y 19
 end
 arch rough_wall_0
 x 12
