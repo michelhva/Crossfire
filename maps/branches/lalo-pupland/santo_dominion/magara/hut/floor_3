@@ -1,11 +1,14 @@
 arch map
-name A Nice Little Hut
-difficulty 1
+name A Nice Little Hut, Level 3
+difficulty 23
 region santodominion
 width 16
 height 16
+enter_x 1
+enter_y 1
 msg
-Created:  1994-02-30
+Created:  1994-04-30
+Modified: 2012-01-06 Rick Tanner
 endmsg
 end
 arch dun10
@@ -106,8 +109,8 @@ y 1
 end
 arch stair_up
 slaying floor_2
-hp 17
-sp 7
+hp 18
+sp 8
 x 1
 y 1
 end

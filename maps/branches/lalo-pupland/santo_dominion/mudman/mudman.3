@@ -1,11 +1,14 @@
 arch map
-name Mudman's Place
-difficulty 1
+name Mudman's Place, Eastern Swamp
+difficulty 22
 region santodominion
 width 22
 height 22
+enter_x 1
+enter_y 7
 msg
-Created:  2000-02-17
+Created:  2000-11-17
+Modified: 2012-01-06 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -20,8 +23,7 @@ exp 0
 y 1
 type 0
 end
-arch biglake_nw
-name sea
+arch sea_nw
 y 1
 end
 arch sea
@@ -38,8 +40,7 @@ exp 0
 y 5
 type 0
 end
-arch biglake_sw
-name sea
+arch sea_sw
 y 5
 end
 arch mover_4
@@ -86,8 +87,7 @@ end
 arch swamp
 y 9
 end
-arch biglake_nw
-name sea
+arch sea_nw
 y 9
 end
 arch dungeon_magic
@@ -109,8 +109,7 @@ arch grassdark
 name grass
 y 12
 end
-arch biglake_sw
-name sea
+arch sea_sw
 y 12
 end
 arch dungeon_magic
@@ -144,7 +143,7 @@ end
 arch mountain3
 exp 0
 y 16
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -188,8 +187,7 @@ exp 0
 x 1
 type 0
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 1
 end
 arch dungeon_magic
@@ -222,8 +220,7 @@ x 1
 y 6
 type 0
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 1
 y 6
 end
@@ -284,8 +281,7 @@ name grass
 x 1
 y 13
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 1
 y 13
 end
@@ -351,8 +347,7 @@ x 1
 y 19
 type 0
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 1
 y 19
 end
@@ -401,8 +396,7 @@ x 2
 y 6
 type 0
 end
-arch biglake_se
-name sea
+arch sea_se
 x 2
 y 6
 end
@@ -426,8 +420,7 @@ arch river_sw-e
 x 2
 y 9
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 2
 y 9
 end
@@ -497,8 +490,7 @@ x 2
 y 17
 type 0
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 2
 y 17
 end
@@ -596,7 +588,7 @@ x 3
 y 9
 type 0
 end
-arch rjunct_we-sw
+arch river_junct_we-sw
 x 3
 y 9
 end
@@ -632,8 +624,7 @@ x 3
 y 15
 type 0
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 3
 y 15
 end
@@ -677,8 +668,7 @@ name grass
 x 4
 y 3
 end
-arch biglake_se
-name sea
+arch sea_se
 x 4
 y 3
 end
@@ -710,17 +700,24 @@ maxhp 600
 sp 100
 maxsp 100
 exp 5000
-dam 20
 x 4
 y 6
 level 18
 attacktype 7233
-resist_fire 100
+resist_magic 0
+resist_fire -100
+resist_confusion 100
+resist_acid 0
+resist_weaponmagic 0
+resist_slow 100
+resist_fear 0
+resist_chaos 0
+resist_godpower 0
+arch spell_summon_earth_elemental
+end
 arch abil_poison_cloud
 hp 0
 sp 21
-end
-arch spell_summon_earth_elemental
 end
 end
 arch grassmedium
@@ -786,8 +783,7 @@ x 4
 y 17
 type 0
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 4
 y 17
 end
@@ -964,8 +960,7 @@ x 6
 y 2
 type 0
 end
-arch biglake_se
-name sea
+arch sea_se
 x 6
 y 2
 end
@@ -985,8 +980,7 @@ x 6
 y 5
 type 0
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 6
 y 5
 end
@@ -1052,7 +1046,7 @@ arch mountain3
 exp 0
 x 6
 y 14
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1097,8 +1091,7 @@ x 7
 y 2
 type 0
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 7
 y 2
 end
@@ -1134,8 +1127,7 @@ x 7
 y 5
 type 0
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 7
 y 5
 end
@@ -1149,8 +1141,7 @@ x 7
 y 6
 type 0
 end
-arch biglake_se
-name sea
+arch sea_se
 x 7
 y 6
 end
@@ -1236,8 +1227,7 @@ x 7
 y 19
 type 0
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 7
 y 19
 end
@@ -1331,8 +1321,7 @@ arch swamp
 x 8
 y 11
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 8
 y 11
 end
@@ -1361,8 +1350,7 @@ arch swamp
 x 8
 y 13
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 8
 y 13
 end
@@ -1431,8 +1419,7 @@ x 9
 y 4
 type 0
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 9
 y 4
 end
@@ -1480,8 +1467,7 @@ arch swamp
 x 9
 y 10
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 9
 y 10
 end
@@ -1493,8 +1479,7 @@ arch gstone_4
 x 9
 y 11
 end
-arch biglake_se
-name sea
+arch sea_se
 x 9
 y 11
 end
@@ -1510,8 +1495,7 @@ arch gstone_4
 x 9
 y 13
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 9
 y 13
 end
@@ -1523,8 +1507,7 @@ arch swamp
 x 9
 y 14
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 9
 y 14
 end
@@ -1571,8 +1554,7 @@ arch grassmedium
 name grass
 x 10
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 10
 end
 arch sea
@@ -1652,8 +1634,6 @@ x 10
 y 12
 end
 arch mudman
-sp 150
-maxsp 150
 x 10
 y 12
 carrying 70
@@ -1672,6 +1652,12 @@ name Mudman's residue
 type 0
 material 0
 value 4000
+arch quest_advance_pickup
+name santo_dominion/Mudman 20>30
+end
+arch quest_prevent_drop
+name santo_dominion/Mudman 40
+end
 end
 arch spell_mass_confusion
 end
@@ -1731,8 +1717,7 @@ x 10
 y 19
 type 0
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 10
 y 19
 end
@@ -1814,8 +1799,7 @@ arch swamp
 x 11
 y 10
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 11
 y 10
 end
@@ -1827,8 +1811,7 @@ arch gstone_4
 x 11
 y 11
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 11
 y 11
 end
@@ -1844,8 +1827,7 @@ arch gstone_4
 x 11
 y 13
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 11
 y 13
 end
@@ -1857,8 +1839,7 @@ arch swamp
 x 11
 y 14
 end
-arch biglake_se
-name sea
+arch sea_se
 x 11
 y 14
 end
@@ -1913,6 +1894,10 @@ arch sea
 x 12
 y 3
 end
+arch sea_sew
+x 12
+y 3
+end
 arch sea
 x 12
 y 4
@@ -1922,11 +1907,6 @@ exp 0
 x 12
 y 5
 type 0
-end
-arch biglake_sew
-name sea
-x 12
-y 5
 end
 arch deep_swamp
 x 12
@@ -1964,8 +1944,7 @@ arch swamp
 x 12
 y 11
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 12
 y 11
 end
@@ -1994,8 +1973,7 @@ arch swamp
 x 12
 y 13
 end
-arch biglake_se
-name sea
+arch sea_se
 x 12
 y 13
 end
@@ -2156,8 +2134,7 @@ x 13
 y 19
 type 0
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 13
 y 19
 end
@@ -2204,7 +2181,7 @@ arch mountain3
 exp 0
 x 14
 y 7
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -2271,8 +2248,7 @@ arch grassmedium
 name grass
 x 15
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 15
 end
 arch dungeon_magic
@@ -2313,8 +2289,7 @@ x 15
 y 5
 type 0
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 15
 y 5
 end
@@ -2412,8 +2387,7 @@ name grass
 x 16
 y 1
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 16
 y 1
 end
@@ -2451,8 +2425,7 @@ x 16
 y 6
 type 0
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 16
 y 6
 end
@@ -2502,8 +2475,7 @@ x 16
 y 16
 type 0
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 16
 y 16
 end
@@ -2545,8 +2517,7 @@ x 16
 y 21
 type 0
 end
-arch biglake_se
-name sea
+arch sea_se
 x 16
 y 21
 end
@@ -2636,8 +2607,7 @@ x 17
 y 9
 type 0
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 17
 y 9
 end
@@ -2651,8 +2621,7 @@ x 17
 y 11
 type 0
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 17
 y 11
 end
@@ -2666,8 +2635,7 @@ x 17
 y 13
 type 0
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 17
 y 13
 end
@@ -2705,8 +2673,7 @@ x 17
 y 19
 type 0
 end
-arch biglake_se
-name sea
+arch sea_se
 x 17
 y 19
 end
@@ -2909,8 +2876,7 @@ name grass
 x 19
 y 4
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 19
 y 4
 end
@@ -3098,9 +3064,7 @@ arch magic_mouth
 name 3
 msg
 The Mudman says:
-Ssstranger! The ssswamp iss just like
-you... Ssswallowing, never getsss
-enough...
+Ssstranger! The ssswamp iss just like you... Ssswallowing, never getsss enough...
 endmsg
 x 21
 y 1
@@ -3156,8 +3120,7 @@ arch magic_mouth
 name 4
 msg
 The Mudman says:
-The ssswamp sshall be your grave!
-Sstupid... ssstranger....
+The ssswamp sshall be your grave! Sstupid... ssstranger....
 endmsg
 x 21
 y 9

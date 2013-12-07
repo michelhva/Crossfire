@@ -1,9 +1,14 @@
 arch map
-name South Lighthouse
-difficulty 1
+name South Lighthouse, Level 4
+difficulty 18
 region santodominion
 width 70
 height 19
+enter_x 1
+enter_y 1
+msg
+Modified: 2008-10-25 Rick Tanner
+endmsg
 end
 arch small_stones
 end
@@ -4422,7 +4427,7 @@ arch small_stones
 x 41
 y 18
 end
-arch blocked
+arch cave23
 x 41
 y 18
 end
@@ -5656,6 +5661,9 @@ arch cave2
 x 54
 y 18
 end
+arch small_stones
+x 55
+end
 arch cave4
 x 55
 end
@@ -5730,11 +5738,18 @@ end
 arch small_stones
 x 55
 y 17
+end
+arch small_stones
+x 55
+y 18
 end
 arch cave2
 x 55
 y 18
 end
+arch small_stones
+x 56
+end
 arch cave4
 x 56
 end
@@ -5809,6 +5824,10 @@ end
 arch small_stones
 x 56
 y 17
+end
+arch small_stones
+x 56
+y 18
 end
 arch cave2
 x 56

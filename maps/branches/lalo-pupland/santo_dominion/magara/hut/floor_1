@@ -1,9 +1,14 @@
 arch map
-name A Nice Little Hut
-difficulty 1
+name A Nice Little Hut, Level 1
+difficulty 15
 region santodominion
 width 20
 height 20
+enter_x 1
+enter_y 1
+msg
+Modified: 2012-08-30 Rick Tanner
+endmsg
 end
 arch cobblestones2
 end
@@ -135,8 +140,8 @@ y 1
 end
 arch stair_up
 slaying /world/world_102_108
-hp 13
-sp 20
+hp 21
+sp 18
 x 1
 y 1
 end
@@ -166,6 +171,7 @@ y 5
 end
 arch stair_down
 slaying floor_2
+hp 1
 sp 1
 x 1
 y 5

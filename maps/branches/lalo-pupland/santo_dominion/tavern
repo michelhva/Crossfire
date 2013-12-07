@@ -8,11 +8,10 @@ enter_x 14
 enter_y 18
 msg
 Created:  1994-04-05 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2013-03-20 Kevin Zheng
 endmsg
 end
 arch grass
-end
-arch mine2
 end
 arch grass
 y 1
@@ -81,9 +80,6 @@ arch cobblestones
 y 22
 end
 arch grass
-x 1
-end
-arch mine2
 x 1
 end
 arch grass
@@ -229,9 +225,6 @@ end
 arch grass
 x 2
 end
-arch mine2
-x 2
-end
 arch grass
 x 2
 y 1
@@ -347,9 +340,6 @@ end
 arch grass
 x 3
 end
-arch mine2
-x 3
-end
 arch grass
 x 3
 y 1
@@ -401,14 +391,11 @@ end
 arch man
 msg
 @match mudman
-He lives in the swamp to the south.
-You should avoid that place!
+He lives in the swamp to the west of the town.  You should avoid that place!
 @match yes
 Grmbl... Leave me alone!
 @match no|stig
-He lives north of this town. There's
-one big mess in his house, but you
-might find some useful stuff too.
+He lives north of this town.  There's one big mess in his house, but you might find some useful stuff too.
 @match *
 Do you know Stig?
 endmsg
@@ -502,9 +489,6 @@ x 3
 y 22
 end
 arch grass
-x 4
-end
-arch mine2
 x 4
 end
 arch woodfloor
@@ -662,9 +646,6 @@ end
 arch grass
 x 5
 end
-arch mine2
-x 5
-end
 arch woodfloor
 x 5
 y 1
@@ -772,20 +753,16 @@ end
 arch fighter
 name TCI Representative
 msg
-@match TCI|tci
-Training Centers Incorporated is the best dang training
-you'll ever get. We have locations all over the world in
-exotic settings. Come fight with us! (heh, they tell us we
-have to say all that)
-@match Location|location
-Well, I don't know about all of them. But our local TCI
-is off the road south of here. Just look for one of our
-signs!
-@match Hello|hello|Hi|hi
-Well, hello there! Sit down and chat with me a bit. I am
-always looking for new people to tell about TCI.
+@match tci
+@question location location And what are those locations?
+Training Centers Incorporated is the best dang training you'll ever get.  We have locations all over the world in exotic settings.  Come fight with us! (heh, they tell us we have to say all that)
+@match location
+Well, I don't know about all of them. But our local TCI is off the road south of here.  Just look for one of our signs!
+@match hello|hi
+@question tci What is TCI?
+Well, hello there! Sit down and chat with me a bit.  I am always looking for new people to tell about TCI.
 @match *
-Hi there young'un. Wanna join TCI?
+Hi there young'un.  Wanna join TCI?
 endmsg
 x 5
 y 17
@@ -839,9 +816,6 @@ x 5
 y 22
 end
 arch grass
-x 6
-end
-arch mine2
 x 6
 end
 arch woodfloor
@@ -999,9 +973,6 @@ end
 arch grass
 x 7
 end
-arch mine2
-x 7
-end
 arch woodfloor
 x 7
 y 1
@@ -1126,9 +1097,6 @@ end
 arch grass
 x 8
 end
-arch mine2
-x 8
-end
 arch woodfloor
 x 8
 y 1
@@ -1146,8 +1114,8 @@ arch cauldron
 x 8
 y 2
 material 0
+move_block all
 no_pick 1
-no_pass 1
 is_cauldron 0
 end
 arch woodfloor
@@ -1192,8 +1160,8 @@ y 7
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -1230,12 +1198,13 @@ y 13
 end
 arch sailor
 msg
+@match apartment
+Sure, it's just a matter of having enough money.  I made some sailing, and the pay was good, so here I am.
 @match mudman
 Huh... Mudman? What's that?
 @match *
-St. Dominion is a nice little town.
-I bought one of the apartments and
-now I'm staying here for the weekends.
+@question apartment You can buy a apartment around here?
+Santo Dominion is a nice little town.  I bought one of the apartments and now I'm staying here for the weekends.
 endmsg
 hp 100
 maxhp 100
@@ -1294,9 +1263,6 @@ x 8
 y 22
 end
 arch grass
-x 9
-end
-arch mine2
 x 9
 end
 arch woodfloor
@@ -1455,9 +1421,6 @@ end
 arch grass
 x 10
 end
-arch mine2
-x 10
-end
 arch woodfloor
 x 10
 y 1
@@ -1580,9 +1543,6 @@ x 10
 y 22
 end
 arch grass
-x 11
-end
-arch mine2
 x 11
 end
 arch woodfloor
@@ -1712,9 +1672,6 @@ end
 arch grass
 x 12
 end
-arch mine2
-x 12
-end
 arch woodfloor
 x 12
 y 1
@@ -1752,8 +1709,8 @@ y 4
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -1864,9 +1821,6 @@ end
 arch grass
 x 13
 end
-arch mine2
-x 13
-end
 arch woodfloor
 x 13
 y 1
@@ -1971,11 +1925,14 @@ arch wwall_1_3
 x 13
 y 19
 end
-arch dungeon_magic
+arch cobblestones
 x 13
 y 20
 end
-arch cobblestones
+arch invis_exit
+slaying /world/world_102_108
+hp 16
+sp 7
 x 13
 y 20
 end
@@ -1988,9 +1945,6 @@ x 13
 y 22
 end
 arch grass
-x 14
-end
-arch mine2
 x 14
 end
 arch woodfloor
@@ -2048,14 +2002,12 @@ end
 arch woman
 msg
 @match mudman
-Shhh! You must not speak HIS name!
-It's not healthy to be that curious.
+Shhh! You must not speak HIS name! It's not healthy to be that curious.
 @match warrior|wound|upstairs
 Maybe you should look after him?
 @match *
-There's a wounded warrior in one of the
-rooms upstairs. That guy is in real bad
-shape. I wonder what happened to him?
+@question warrior A warrior, really?
+There's a wounded warrior in one of the rooms upstairs.  That guy is in real bad shape.  I wonder what happened to him?
 endmsg
 x 14
 y 8
@@ -2106,13 +2058,6 @@ arch woodfloor
 x 14
 y 18
 end
-arch invis_exit
-slaying /world/world_102_108
-hp 16
-sp 7
-x 14
-y 19
-end
 arch woodfloor
 x 14
 y 19
@@ -2126,15 +2071,18 @@ y 19
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
-arch dungeon_magic
+arch cobblestones
 x 14
 y 20
 end
-arch cobblestones
+arch invis_exit
+slaying /world/world_102_108
+hp 16
+sp 7
 x 14
 y 20
 end
@@ -2147,9 +2095,6 @@ x 14
 y 22
 end
 arch grass
-x 15
-end
-arch mine2
 x 15
 end
 arch woodfloor
@@ -2250,8 +2195,8 @@ y 14
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -2289,11 +2234,14 @@ arch wwall_1_4
 x 15
 y 19
 end
-arch dungeon_magic
+arch cobblestones
 x 15
 y 20
 end
-arch cobblestones
+arch invis_exit
+slaying /world/world_102_108
+hp 16
+sp 7
 x 15
 y 20
 end
@@ -2306,9 +2254,6 @@ x 15
 y 22
 end
 arch grass
-x 16
-end
-arch mine2
 x 16
 end
 arch woodfloor
@@ -2465,9 +2410,6 @@ x 16
 y 22
 end
 arch grass
-x 17
-end
-arch mine2
 x 17
 end
 arch woodfloor
@@ -2629,9 +2571,6 @@ end
 arch grass
 x 18
 end
-arch mine2
-x 18
-end
 arch woodfloor
 x 18
 y 1
@@ -2671,6 +2610,13 @@ end
 arch flowers_permanent
 x 18
 y 5
+end
+arch altar
+name note: here to satisfy Gridarta, the connection will be activated from the blue wizard's message file.
+food 1
+x 18
+y 6
+connected 1
 end
 arch woodfloor
 x 18
@@ -2767,9 +2713,6 @@ end
 arch grass
 x 19
 end
-arch mine2
-x 19
-end
 arch woodfloor
 x 19
 y 1
@@ -2843,15 +2786,10 @@ arch wizard
 name blue wizard
 msg
 @match mudman|hero|yes|gate
-The inhabitants of St. Dominion are
-scared of the Mudman. Kill him and
-put his residue on my table. Then I
-will open the gate for you.
+The Mudman is a vile creature lurking in swamps just west of this town.  The inhabitants of St. Dominion are scared of the Mudman.  Kill him and put his residue on my table.  Then I will open the gate for you.
 @match *
-Do you see this room behind me? It's
-the "hero's room". You may enter if
-you prove yourself worthy by killing
-the Mudman.
+@question mudman What is the mudman?
+Do you see this room behind me? It's the "hero's room."  You may enter if you prove yourself worthy by killing the Mudman.
 endmsg
 face wizard_blue.151
 Str 10
@@ -2865,26 +2803,9 @@ type 0
 move_type walk
 monster 1
 friendly 1
+arch npc_dialog
+name santo_dominion/blue_wizard.msg
 end
-arch altar
-name 1
-slaying Mudman's residue
-food 1
-x 19
-y 9
-connected 1
-end
-arch magic_mouth
-name 1
-msg
-The blue wizard says:
-You defeated the Mudman, you are
-truly a hero! Take your reward.
-endmsg
-x 19
-y 9
-connected 1
-move_on 0
 end
 arch woodfloor
 x 19
@@ -2985,9 +2906,6 @@ x 19
 y 22
 end
 arch grass
-x 20
-end
-arch mine2
 x 20
 end
 arch woodfloor
@@ -3134,9 +3052,6 @@ x 20
 y 22
 end
 arch grass
-x 21
-end
-arch mine2
 x 21
 end
 arch woodfloor
@@ -3254,8 +3169,7 @@ arch lesser_dwarven_guard
 name dwarf
 msg
 @match *
-Damn! Those chairs are too high for
-me. I hate this world...
+Damn! Those chairs are too high for me.  I hate this world...
 endmsg
 x 21
 y 16
@@ -3294,9 +3208,6 @@ x 21
 y 22
 end
 arch grass
-x 22
-end
-arch mine2
 x 22
 end
 arch woodfloor
@@ -3471,9 +3382,6 @@ end
 arch grass
 x 23
 end
-arch mine2
-x 23
-end
 arch woodfloor
 x 23
 y 1
@@ -3607,9 +3515,6 @@ x 23
 y 22
 end
 arch grass
-x 24
-end
-arch mine2
 x 24
 end
 arch woodfloor
@@ -3795,9 +3700,6 @@ end
 arch grass
 x 25
 end
-arch mine2
-x 25
-end
 arch grass
 x 25
 y 1
@@ -3899,9 +3801,6 @@ x 25
 y 22
 end
 arch grass
-x 26
-end
-arch mine2
 x 26
 end
 arch grass
