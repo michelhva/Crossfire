@@ -8,7 +8,7 @@ enter_x 29
 enter_y 29
 msg
 Created:  1994-12-28 Morten Hanshaugen
-Modified: 2013-08-09 Kevin Zheng
+Modified: 2013-11-23 Kevin Zheng
 endmsg
 end
 arch grass
@@ -11068,8 +11068,7 @@ arch small_stones
 x 29
 y 29
 end
-arch well
-name wishing well
+arch stair_3_up
 slaying entrance
 hp 23
 sp 43
