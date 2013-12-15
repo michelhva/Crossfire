@@ -7,7 +7,7 @@ height 48
 enter_x 15
 enter_y 46
 msg
-Modified: 2013-08-09 Kevin Zheng
+Modified: 2013-11-23 Kevin Zheng
 endmsg
 end
 arch Nimground3_purple
@@ -1366,25 +1366,6 @@ arch random_talisman
 end
 end
 arch Nimground3_purple
-x 5
-y 16
-end
-arch perm_magic_portal
-slaying /!
-msg
-floorstyle stones2
-wallstyle cave
-exitstyle sstair
-orientation 1
-decorstyle religious_devourers
-monsterstyle undead_planar
-dungeon_level 1
-dungeon_depth 96
-final_map devourers_city_outskirts
-final_exit_style sstair
-endmsg
-hp 0
-sp 0
 x 5
 y 16
 end
