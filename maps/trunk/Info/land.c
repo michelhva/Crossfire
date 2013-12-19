@@ -21,7 +21,7 @@ int altitude[MAX_SIZE][MAX_SIZE];
 #define MAP_SIZE    50
 
 /* There will be a total of 2500 maps (eek) - 50 in
- * each diretion.  startx and starty are where to start
+ * each direction.  startx and starty are where to start
  * numbering from.  I chose 100 for a few reasons - 1) it
  * gives room to the left and above to add some things (another
  * continent for that matter), and 2) since the format allows
@@ -356,7 +356,7 @@ main(int argc, char *argv)
 	}
     }
 
-    /* This basically produces areas of high varience (eg, islands, peaks, valleys, etc) */
+    /* This basically produces areas of high variance (eg, islands, peaks, valleys, etc) */
 
     for (l=0; l<npasses; l++) {
 	x = random()%max_x;
@@ -468,11 +468,11 @@ main(int argc, char *argv)
 
 /* Make this 100 so that we eliminate/reduce the lakiness of
  * the map that is otherwise generated - otherwise, the map
- * looks like an archipelligo
+ * looks like an archipelago
  */
 #define AVG_PT	-10
 
-    /* water - does the same as above, but try to more equally balnace the spaces*/
+    /* water - does the same as above, but try to more equally balance the spaces*/
     r = 1;
     for (k=0; k<40; k++) {
 	for (x=2; x<max_x-2; x++) {
@@ -512,7 +512,7 @@ main(int argc, char *argv)
 		    fprintf(fp, "0 0 127 ");
 		/* Shallow water should really be just at the coastal
 		 * area, so put a big gap between shallow and deep.
-		 * this also evens out the occurance of the different types
+		 * this also evens out the occurrence of the different types
 		 * to be more equal
 		 */
 		else if (junk < -99)
