@@ -4,8 +4,11 @@ difficulty 1
 region scorn
 width 39
 height 22
+enter_x 19
+enter_y 1
 msg
 Created:  2000-11-11 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch exit
@@ -3348,12 +3351,9 @@ x 16
 y 3
 end
 arch sign_e
-name chess club
+name Chess Club
 msg
-Welcome to the scorn chess club!
---------------------------------
-created by Andreas Vogl,
-mail: <red.blaze@gmx.net>
+Welcome to the Scorn Chess Club!
 endmsg
 x 16
 y 3
@@ -3385,7 +3385,7 @@ y 5
 carrying 8000
 no_pick 1
 arch tome
-name the art of chess
+name The Art of Chess
 end
 end
 arch dungeon_magic
@@ -3412,9 +3412,7 @@ arch sailor
 name rookie
 msg
 @match *
-I used to be an adventurer. But then I
-got bored and started playing chess
-instead. This is way more fun!
+I used to be an adventurer.  But then I got bored and started playing chess instead.  This is way more fun!
 endmsg
 hp 100
 maxhp 100
@@ -4152,8 +4150,7 @@ arch sage
 name club owner
 msg
 @match yes
-Very well then. Get a gaming-partner,
-pay 100 gold coins and start playing.
+Very well then.  Get a gaming-partner, pay 100 gold coins and start playing.
 @match no
 Idiot! Chess is such a beautiful game...
 @match *
@@ -4481,8 +4478,7 @@ arch conjurer2
 name average player
 msg
 @match *
-Scorn chess club is the best!
-Come join us.
+Scorn chess club is the best! Come join us.
 endmsg
 x 21
 y 10
@@ -4631,8 +4627,7 @@ y 5
 end
 arch sign
 msg
-Please don't take away the chess-
-figures! They're worthless anyways.
+Please don't take away the chess-figures! They're worthless anyways.
 endmsg
 x 22
 y 5

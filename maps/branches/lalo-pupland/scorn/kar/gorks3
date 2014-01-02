@@ -1,11 +1,13 @@
 arch map
-name Gork's Grovel
-difficulty 1
+name Gork's Grovel, Level 3
+difficulty 9
 region scorn
-width 16
-height 16
+width 14
+height 14
+enter_x 6
+enter_y 6
 msg
-Modified: 2007-12-22 tchize
+Modified: 2010-03-26 Cavesomething
 endmsg
 end
 arch cobblestones2
@@ -160,11 +162,15 @@ arch cobblestones2
 x 3
 y 12
 end
-arch dwall_2_1_2
+arch dwall_2_2_3
 x 3
 y 12
 end
 arch cobblestones2
+x 3
+y 13
+end
+arch dwall_2_2_1
 x 3
 y 13
 end
@@ -224,15 +230,11 @@ arch cobblestones2
 x 4
 y 12
 end
-arch dwall_2_2_3
-x 4
-y 12
-end
 arch cobblestones2
 x 4
 y 13
 end
-arch dwall_2_2_1
+arch dwall_2_1_2
 x 4
 y 13
 end
@@ -279,6 +281,13 @@ end
 arch dwall_1_2
 x 5
 y 7
+end
+arch check_floor
+x 5
+y 8
+arch quest_advance_trigger
+name scorn/GorksTreasure 40>50
+end
 end
 arch cobblestones2
 x 5
@@ -577,20 +586,14 @@ y 8
 end
 arch troll
 msg
-@match [Hh]ello
-Youse want Gork's hoards?  I crush you...
-@match [Gg]ork|[Hh]oard*
-Gork not like you...  I not as nice as Mork.
-@match [Mm]ork
-Mork be Gork's friend.  Mork live in tower.
-@match [Ff]riend
-Mork share Gork's treasure.
-@match [Tt]reasure
-Only Gork can open treasure door.
+
 endmsg
 x 9
 y 8
 unaggressive 1
+arch npc_dialog
+name scorn/kar/gork.msg
+end
 end
 arch cobblestones2
 x 9

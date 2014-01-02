@@ -2,12 +2,15 @@ arch map
 name Hospitality Room
 swap_time 100
 reset_timeout 720
-difficulty 1
+difficulty 8
 region scorn
 width 35
 height 16
+enter_x 1
+enter_y 7
 msg
-Created:  2000-02-16
+Created:  2000-06-16
+Modified: 2012-01-12 Rick Tanner
 endmsg
 end
 arch woodfloor2
@@ -425,9 +428,7 @@ y 3
 end
 arch magic_mouth
 msg
-Welcome, Sir Knight.
-We have laid out some refreshments for
-you.
+Welcome, Sir Knight.  We have laid out some refreshments for you.
 endmsg
 x 3
 y 4
@@ -436,11 +437,15 @@ arch woodfloor2
 x 3
 y 4
 end
-arch check_inv
-slaying Noble Rank Knight
+arch check_floor
+hp 1
 x 3
 y 4
-connected 1
+arch event_trigger
+name scorn/Aristocracy 10 1
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 3
@@ -464,11 +469,15 @@ arch woodfloor2
 x 3
 y 6
 end
-arch check_inv
-slaying Noble Rank Knight
+arch check_floor
+hp 1
 x 3
 y 6
-connected 1
+arch event_trigger
+name scorn/Aristocracy 10 1
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 3
@@ -489,11 +498,15 @@ arch woodfloor2
 x 3
 y 9
 end
-arch check_inv
-slaying Noble Rank Baronet
+arch check_floor
+hp 1
 x 3
 y 9
-connected 10
+arch event_trigger
+name scorn/Aristocracy 20 10
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 3
@@ -508,9 +521,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Welcome, My Lord Baronet.
-We have laid out some refreshments for
-you.
+Welcome, My Lord Baronet.  We have laid out some refreshments for you.
 endmsg
 x 3
 y 11
@@ -519,11 +530,15 @@ arch woodfloor2
 x 3
 y 11
 end
-arch check_inv
-slaying Noble Rank Baronet
+arch check_floor
+hp 1
 x 3
 y 11
-connected 10
+arch event_trigger
+name scorn/Aristocracy 20 10
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 3
@@ -1263,9 +1278,7 @@ y 3
 end
 arch magic_mouth
 msg
-Welcome, My Lord Baron.
-We have laid out some refreshments for
-you.
+Welcome, My Lord Baron.  We have laid out some refreshments for you.
 endmsg
 x 9
 y 4
@@ -1274,11 +1287,15 @@ arch woodfloor2
 x 9
 y 4
 end
-arch check_inv
-slaying Noble Rank Baron
+arch check_floor
+hp 1
 x 9
 y 4
-connected 20
+arch event_trigger
+name scorn/Aristocracy 30 20
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 9
@@ -1302,11 +1319,15 @@ arch woodfloor2
 x 9
 y 6
 end
-arch check_inv
-slaying Noble Rank Baron
+arch check_floor
+hp 1
 x 9
 y 6
-connected 20
+arch event_trigger
+name scorn/Aristocracy 30 20
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 9
@@ -1327,11 +1348,15 @@ arch woodfloor2
 x 9
 y 9
 end
-arch check_inv
-slaying Noble Rank Marquis
+arch check_floor
+hp 1
 x 9
 y 9
-connected 30
+arch event_trigger
+name scorn/Aristocracy 40 30
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 9
@@ -1346,9 +1371,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Welcome, Your Honor.
-We have laid out some refreshments for
-you.
+Welcome, Your Honor.  We have laid out some refreshments for you.
 endmsg
 x 9
 y 11
@@ -1357,11 +1380,15 @@ arch woodfloor2
 x 9
 y 11
 end
-arch check_inv
-slaying Noble Rank Marquis
+arch check_floor
+hp 1
 x 9
 y 11
-connected 30
+arch event_trigger
+name scorn/Aristocracy 40 30
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 9
@@ -2107,9 +2134,7 @@ y 3
 end
 arch magic_mouth
 msg
-Welcome, Your Lordship.
-We have laid out some refreshments for
-you.
+Welcome, Your Lordship.  We have laid out some refreshments for you.
 endmsg
 x 15
 y 4
@@ -2118,11 +2143,15 @@ arch woodfloor2
 x 15
 y 4
 end
-arch check_inv
-slaying Noble Rank Earl
+arch check_floor
+hp 1
 x 15
 y 4
-connected 40
+arch event_trigger
+name scorn/Aristocracy 50 40
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 15
@@ -2146,11 +2175,15 @@ arch woodfloor2
 x 15
 y 6
 end
-arch check_inv
-slaying Noble Rank Earl
+arch check_floor
+hp 1
 x 15
 y 6
-connected 40
+arch event_trigger
+name scorn/Aristocracy 50 40
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 15
@@ -2171,11 +2204,15 @@ arch woodfloor2
 x 15
 y 9
 end
-arch check_inv
-slaying Noble Rank Count
+arch check_floor
+hp 1
 x 15
 y 9
-connected 50
+arch event_trigger
+name scorn/Aristocracy 60 50
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 15
@@ -2190,9 +2227,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Welcome, Your Excellency.
-We have laid out a feast for
-you.
+Welcome, Your Excellency.  We have laid out a feast for you.
 endmsg
 x 15
 y 11
@@ -2201,11 +2236,15 @@ arch woodfloor2
 x 15
 y 11
 end
-arch check_inv
-slaying Noble Rank Count
+arch check_floor
+hp 1
 x 15
 y 11
-connected 50
+arch event_trigger
+name scorn/Aristocracy 60 50
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 15
@@ -3081,9 +3120,7 @@ y 3
 end
 arch magic_mouth
 msg
-Welcome, Your Grace.
-We have laid out a feast for
-you.
+Welcome, Your Grace.  We have laid out a feast for you.
 endmsg
 x 22
 y 4
@@ -3092,11 +3129,15 @@ arch woodfloor2
 x 22
 y 4
 end
-arch check_inv
-slaying Noble Rank Duke
+arch check_floor
+hp 1
 x 22
 y 4
-connected 60
+arch event_trigger
+name scorn/Aristocracy 70 60
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 22
@@ -3120,11 +3161,15 @@ arch woodfloor2
 x 22
 y 6
 end
-arch check_inv
-slaying Noble Rank Duke
+arch check_floor
+hp 1
 x 22
 y 6
-connected 60
+arch event_trigger
+name scorn/Aristocracy 70 60
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 22
@@ -3145,11 +3190,15 @@ arch woodfloor2
 x 22
 y 9
 end
-arch check_inv
-slaying Noble Rank Archduke
+arch check_floor
+hp 1
 x 22
 y 9
-connected 70
+arch event_trigger
+name scorn/Aristocracy 80 70
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 22
@@ -3164,9 +3213,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Welcome, Your Grace.
-We have laid out a feast for
-you.
+Welcome, Your Grace.  We have laid out a feast for you.
 endmsg
 x 22
 y 11
@@ -3175,11 +3222,15 @@ arch woodfloor2
 x 22
 y 11
 end
-arch check_inv
-slaying Noble Rank Archduke
+arch check_floor
+hp 1
 x 22
 y 11
-connected 70
+arch event_trigger
+name scorn/Aristocracy 80 70
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 22
@@ -3552,11 +3603,15 @@ arch woodfloor2
 x 25
 y 7
 end
-arch check_inv
-slaying Noble Rank Prince
+arch check_floor
+hp 1
 x 25
 y 7
-connected 80
+arch event_trigger
+name scorn/Aristocracy 90 80
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch magic_mouth
 msg
@@ -3569,11 +3624,15 @@ arch woodfloor2
 x 25
 y 8
 end
-arch check_inv
-slaying Noble Rank Prince
+arch check_floor
+hp 1
 x 25
 y 8
-connected 80
+arch event_trigger
+name scorn/Aristocracy 90 80
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 25
@@ -3869,9 +3928,7 @@ connected 80
 end
 arch magic_mouth
 msg
-Welcome, Your Highness.
-We have prepared a feast in your
-honor.
+Welcome, Your Highness.  We have prepared a feast in your honor.
 endmsg
 x 27
 y 7
@@ -3880,17 +3937,19 @@ arch woodfloor2
 x 27
 y 7
 end
-arch check_inv
-slaying Noble Rank Prince
+arch check_floor
+hp 1
 x 27
 y 7
-connected 80
+arch event_trigger
+name scorn/Aristocracy 90 80
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch magic_mouth
 msg
-Welcome, Your Highness.
-We have prepared a feast in your
-honor.
+Welcome, Your Highness.  We have prepared a feast in your honor.
 endmsg
 x 27
 y 8
@@ -3899,11 +3958,15 @@ arch woodfloor2
 x 27
 y 8
 end
-arch check_inv
-slaying Noble Rank Prince
+arch check_floor
+hp 1
 x 27
 y 8
-connected 80
+arch event_trigger
+name scorn/Aristocracy 90 80
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch woodfloor2
 x 27
@@ -4863,10 +4926,6 @@ x 33
 y 7
 connected 80
 end
-arch woodfloor2
-x 33
-y 8
-end
 arch magic_ear
 msg
 @match shazam
@@ -4875,6 +4934,10 @@ endmsg
 x 33
 y 8
 connected 6684
+end
+arch woodfloor2
+x 33
+y 8
 end
 arch longtable_2_1_1
 x 33

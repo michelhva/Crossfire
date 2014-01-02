@@ -4,9 +4,13 @@ difficulty 1
 region scorn
 width 24
 height 17
+enter_x 22
+enter_y 14
 msg
 Created:  2003-04-27 Avion
+Modified: 2013-08-12 Kevin Zheng
 endmsg
+outdoor 1
 end
 arch grass
 end
@@ -190,11 +194,16 @@ arch horn2
 name Gramps' earhorn
 slaying Gramp's earhorn
 msg
-Property of Gramps Malone
-Git yer paws offa it!
+Property of Gramps Malone.  Git yer paws offa it!
 endmsg
 type 21
 value 1
+arch quest_advance_pickup
+name scorn/Earhorn 20-30>50 0>10
+end
+arch quest_prevent_drop
+name scorn/Earhorn 60
+end
 end
 end
 arch grass
@@ -236,6 +245,10 @@ arch woodfloor
 x 2
 y 4
 end
+arch light3
+x 2
+y 4
+end
 arch button_small
 x 2
 y 5
@@ -264,6 +277,10 @@ x 2
 y 7
 end
 arch woodfloor
+x 2
+y 8
+end
+arch light3
 x 2
 y 8
 end
@@ -346,8 +363,10 @@ x 3
 y 3
 end
 arch stove
+name cooking stove
 x 3
 y 3
+identified 1
 is_cauldron 0
 end
 arch woodfloor
@@ -360,32 +379,20 @@ y 5
 end
 arch woman
 name Fran
-msg
-@match mark
-That bum, all this time he had a girl on the side.
-Too bad he was coming into some coin too...
-Some deal with that bird of his.
-@match Oled
-He's ok to work for, but he's a pincher if you know what I mean.
-He's usually pretty mellow, but lately he seems a bit tense.
-@match pincher
-You try it an I'll deck you I says to him...
-@match bird|goose
-Ya I heard Mark stole a goose.
-@match who|who
-Your pretty nosey there fella.
-@match service|order
-Hey buddy just take a seat, I work two jobs you know.
-@match job|Job
-Ya I work part time at Oled's Cafe too.
-@match *
-Hey kitchen is off limits!
-Keep it in your scabbard and take a seat there chum.
-endmsg
 x 3
 y 5
 randomitems jail
 stand_still 1
+arch npc_dialog
+name scorn/taverns/fran.msg
+end
+arch NPCGift
+arch white_key
+name Alfalfa's Front Door Key
+name_pl Alfalfa's Front Door Keys
+slaying alfalfakey
+end
+end
 end
 arch woodfloor
 x 3
@@ -481,18 +488,15 @@ arch wall_2_1_2
 x 4
 y 2
 end
-arch blocked
-x 4
-y 3
-blocksview 0
-end
 arch woodfloor
 x 4
 y 3
 end
 arch stove
+name cooking stove
 x 4
 y 3
+identified 1
 is_cauldron 0
 end
 arch woodfloor
@@ -610,7 +614,7 @@ end
 arch longtable_1_4
 x 5
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 5
@@ -691,19 +695,21 @@ end
 arch red_dragon2
 name Cindy Loo
 msg
-@match hi|hello
-Hello, welcome to the Barking Mule,
-I'm Cindy Loo. Do you want a drink?
+@match hi|hello|greet
+Hello, welcome to the Barking Mule, I'm Cindy Loo. Would you like a drink?
 @match yes|drink
 Drinks are 3 gold sweety pie.
+@match quest
+You better ask the guys sitting around here; they know more about that stuff than old Cindy Loo.
 @match *
-Humm-dee-dumm... oh, pardon me you were saying?
+Humm-dee-dumm... oh, pardon me, what were you saying?
 endmsg
+exp 50
 x 6
 y 3
-speed -0.1
 level 5
 randomitems jail
+run_away 10
 stand_still 1
 end
 arch woodfloor
@@ -713,11 +719,7 @@ end
 arch longtable_2_1_2
 x 6
 y 4
-no_pass 1
-end
-arch woodfloor
-x 6
-y 5
+move_block all
 end
 arch booze_table
 slaying money
@@ -725,6 +727,10 @@ food 30
 x 6
 y 5
 invisible 1
+end
+arch woodfloor
+x 6
+y 5
 end
 arch chair_1.3
 x 6
@@ -811,10 +817,6 @@ arch woodfloor
 x 7
 y 3
 end
-arch light4
-x 7
-y 3
-end
 arch woodfloor
 x 7
 y 4
@@ -822,11 +824,7 @@ end
 arch longtable_2_1_2
 x 7
 y 4
-no_pass 1
-end
-arch woodfloor
-x 7
-y 5
+move_block all
 end
 arch booze_table
 slaying money
@@ -834,6 +832,10 @@ food 30
 x 7
 y 5
 invisible 1
+end
+arch woodfloor
+x 7
+y 5
 end
 arch chair_1.3
 x 7
@@ -850,6 +852,7 @@ end
 arch light4
 x 7
 y 6
+glow_radius 6
 end
 arch woodfloor
 x 7
@@ -937,7 +940,7 @@ end
 arch longtable_1_1
 x 8
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 8
@@ -946,7 +949,7 @@ end
 arch longtable_2_2_4
 x 8
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 8
@@ -1255,11 +1258,11 @@ arch woodfloor
 x 11
 y 9
 end
-arch light4
-x 11
-y 9
-end
 arch woodfloor
+x 11
+y 10
+end
+arch light2
 x 11
 y 10
 end
@@ -1345,12 +1348,15 @@ end
 arch warrior_1
 name Chad
 msg
+@match quest
+Chad doesn't know any.
 @match *
-Chad likes his drinky winky, yes he do.
-Hello drinky winky.
+Chad likes his drinky winky, yes he do. Hello drinky winky.
 endmsg
 x 12
 y 3
+direction 7
+randomitems jail
 end
 arch woodfloor
 x 12
@@ -1579,15 +1585,14 @@ end
 arch c_man
 name Milt
 msg
-@match work|job
-I hear the fellow at the
-coffee shop is looking for
-someone to do a job.
+@match work|job|quest
+I hear the fellow at the coffee shop is looking for someone to do a job.
 @match *
-Nother day, nother ale...
+'Nother day, 'nother sale...
 endmsg
 x 14
 y 9
+direction 7
 end
 arch woodfloor
 x 14
@@ -1678,6 +1683,7 @@ end
 arch light4
 x 15
 y 6
+glow_radius 6
 end
 arch woodfloor
 x 15
@@ -2070,17 +2076,14 @@ end
 arch farmer
 name Ole
 msg
+@match quest
+*Hic* no... I dunno about any of those...
 @match *
-Sure I had a bit too much,
-but at least I'm not seeing things....
-Hey what was that?
+Sure I had a bit too much, but at least I'm not seeing things... Hey what was that?
 endmsg
 x 19
 y 4
-speed -0.08
 randomitems jail
-will_apply 0
-monster 0
 stand_still 1
 end
 arch woodfloor
@@ -2173,10 +2176,6 @@ arch woodfloor
 x 20
 y 4
 end
-arch light4
-x 20
-y 4
-end
 arch woodfloor
 x 20
 y 5
@@ -2275,6 +2274,11 @@ end
 arch woodfloor
 x 21
 y 6
+end
+arch light4
+x 21
+y 6
+glow_radius 6
 end
 arch woodfloor
 x 21
@@ -2335,12 +2339,9 @@ arch elf_man
 name Celebrity lookalike
 msg
 @match *
-Some guy named Avion paid
-me 30 gold to stand here
-and look busy...
+Some guy named Avion paid me 30 gold to stand here and look busy...
 endmsg
 face spock.111
-animation spock
 Wis 5
 x 22
 attack_movement 112
@@ -2401,19 +2402,18 @@ end
 arch halfling3
 name Timmy
 msg
-@match hi|hello
-Hello stranger.
-Looking for adventure?
-@match adventure
-Well I did hear about some dangerous caves nearby.
+@match hi|hello|greet
+Hello stranger. Looking for adventure?
+@match adventure|quest
+Well, I did hear about some dangerous caves nearby.
 @match caves
-If you go south road, past a large rock there are some dangerous
-caves in the mountains to the west of there.
+If you go south on the road, past a large rock, there are some dangerous caves in the mountains to the west.
 @match *
 Me, I like beer too much to go adventuring.
 endmsg
 x 22
 y 9
+direction 7
 randomitems jail
 stand_still 1
 end
@@ -2543,7 +2543,7 @@ end
 arch invis_exit
 slaying /world/world_104_116
 hp 42
-sp 3
+sp 2
 x 23
 y 14
 end
@@ -2554,7 +2554,7 @@ end
 arch invis_exit
 slaying /world/world_104_116
 hp 42
-sp 3
+sp 2
 x 23
 y 15
 end

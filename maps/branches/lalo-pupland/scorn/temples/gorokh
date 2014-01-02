@@ -1,14 +1,14 @@
 arch map
 name Church of Gorokh
-difficulty 1
+difficulty 3
 region scorn
 width 16
 height 16
-enter_x 7
-enter_y 13
+enter_x 6
+enter_y 15
 msg
-Created:  1999-01-22 Raphael Quinet (quinet@gamers.org)
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1999-01-22 Raphaël Quinet (raphael@gimp.org)
+Modified: 2012-01-22 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -904,6 +904,19 @@ arch marble
 x 10
 y 5
 end
+arch sign
+msg
+Here is the list of heroes who discovered Gorokh's secret treasure:
+-------------------------------------------------------
+endmsg
+x 10
+y 5
+arch event_apply
+name scorn-gorokh-church
+title Python
+slaying /python/misc/hall_of_fame.py
+end
+end
 arch marble
 x 10
 y 6
@@ -976,7 +989,7 @@ exitstyle sstair
 doorstyle door_look
 decorstyle religious_gorokh
 monsterstyle demon
-final_map /dungeons/gorokh/gorokh_final
+final_map /scorn/temples/gorokh_final
 xsize 30
 ysize 30
 symmetry 1
@@ -1072,9 +1085,8 @@ end
 arch sage
 name old priest
 msg
-@match Gorokh|gorokh
-We worship Gorokh, our master, and we
-seek redemption in Hell.
+@match gorokh
+We worship Gorokh, our master, and we seek redemption in Hell.
 @match *
 Welcome to the temple of Gorokh!
 endmsg

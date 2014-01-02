@@ -1,6 +1,6 @@
 arch map
 name Undead Church
-difficulty 1
+difficulty 5
 region scorn
 darkness 4
 width 16
@@ -9,7 +9,12 @@ enter_x 10
 enter_y 15
 msg
 Created:  1993-10-15
+Modified: 2012-06-28 Rick Tanner
 endmsg
+maplore
+@quest Scorn Royalty Quest
+entrance to get the animator ring
+endmaplore
 end
 arch grass
 end
@@ -519,6 +524,9 @@ final_map /scorn/peterm/undead_quest
 endmsg
 x 4
 y 14
+arch quest_advance_apply
+name scorn/Animator 10>20
+end
 end
 arch tree
 x 4
@@ -888,8 +896,7 @@ y 13
 end
 arch magic_mouth
 msg
-HELP!
-This church has been overrun with zombies
+HELP! This church has been overrun with zombies!!
 endmsg
 x 7
 y 14
@@ -1142,11 +1149,7 @@ end
 arch book_read
 name Binary Bible
 msg
-In the beginning, the Giver of Data
-(GOD) generated silicon and carbon, and
-the system without architecture, and
-un-initialized, randomness was upon
-the arrangement of the matrix.......
+In the beginning, the Giver of Data (GOD) generated silicon and carbon, and the system without architecture, and un-initialized, randomness was upon the arrangement of the matrix.......
 endmsg
 x 10
 y 4
@@ -1470,7 +1473,7 @@ end
 arch door_look_1
 x 13
 y 3
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1543,8 +1546,7 @@ y 13
 end
 arch magic_mouth
 msg
-HELP!
-This church has been overrun with zombies
+HELP! This church has been overrun with zombies!!
 endmsg
 x 13
 y 14
@@ -1586,7 +1588,7 @@ end
 arch door_look_1
 x 14
 y 3
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1663,7 +1665,7 @@ arch grass
 x 15
 y 2
 end
-arch swall_1_2
+arch swall_2_1_1
 x 15
 y 2
 end
@@ -1672,6 +1674,10 @@ x 15
 y 3
 end
 arch dwall_1_1
+x 15
+y 3
+end
+arch swall_1_2_half
 x 15
 y 3
 end

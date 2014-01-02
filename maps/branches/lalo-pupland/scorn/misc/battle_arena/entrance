@@ -5,9 +5,11 @@ difficulty 1
 region scornarena
 width 23
 height 27
+enter_x 11
+enter_y 24
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch pstone_2
@@ -337,13 +339,14 @@ arch veiled_woman3
 name veiled woman
 msg
 @match *
-I want to get in! Could you buy me
-a ticket please?
+I want to get in! Could you buy me a ticket please?
 endmsg
 x 1
 y 10
+speed 0.15
 friendly 1
 unaggressive 0
+random_movement 1
 end
 arch pstone_2
 x 1
@@ -668,7 +671,7 @@ end
 arch bench_1_4
 x 3
 y 14
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -679,13 +682,10 @@ x 3
 y 15
 end
 arch man
-name ticket-vendor
+name ticket vendor
 msg
 @match *
-Buy an arena ticket. Watching the
-gladiator's duels is so much fun...
-It costs only 500 diamonds, and you
-get one bag of popcorn for free.
+Buy an arena ticket! Watching the gladiators' duels is so much fun. It costs only 100 diamonds, and you get one bag of popcorn for free!
 endmsg
 hp 180
 maxhp 180
@@ -700,7 +700,7 @@ end
 arch bench_1_4
 x 3
 y 16
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 3
@@ -854,11 +854,11 @@ arch pstone_2
 x 4
 y 6
 end
-arch swall_1_1
+arch cwall_2_2_1
 x 4
 y 6
 end
-arch cwall_2_2_1
+arch swall_1_1_half
 x 4
 y 6
 end
@@ -917,7 +917,7 @@ end
 arch bench_2_2_3
 x 4
 y 14
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 4
@@ -926,7 +926,7 @@ end
 arch bench_2_1_1
 x 4
 y 15
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 4
@@ -935,7 +935,7 @@ end
 arch bench_2_2_4
 x 4
 y 16
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 4
@@ -1060,9 +1060,7 @@ arch knight
 name Arena Guard
 msg
 @match *
-To enter the terraces of the arena,
-drop 50 platinum on the desk or buy
-a ticket.
+To enter the terraces of the arena, drop 20 platinum on the desk or buy a ticket.
 endmsg
 x 5
 y 7
@@ -1083,11 +1081,10 @@ y 8
 end
 arch altar_trigger
 name 1
-slaying platinacoin
-food 20
+slaying money
+food 1000
 x 5
 y 9
-resist_physical 30
 connected 1
 end
 arch pstone_2
@@ -1128,10 +1125,7 @@ end
 arch magic_mouth
 name 5
 msg
-The ticket-vendor says:
-Here is your ARENA ticket. Now you
-can enter the terraces of the arena
-whenever you want.
+The ticket vendor says: Here is your arena ticket. Now you can enter the terraces of the arena whenever you want!
 endmsg
 x 5
 y 15
@@ -1145,13 +1139,11 @@ x 5
 y 15
 end
 arch altar_trigger
-name ARENA ticket (100 diamonds)
+name Buy Arena Ticket (100 diamonds)
 slaying diamond
 food 100
 x 5
 y 15
-resist_physical 30
-resist_fire 30
 connected 5
 end
 arch pstone_2
@@ -1586,7 +1578,7 @@ x 8
 y 10
 end
 arch sign_w
-name ARENA west
+name West Entrance
 x 8
 y 10
 end
@@ -1611,11 +1603,9 @@ x 8
 y 15
 end
 arch sign_w
-name permanent tickets
+name Tickets
 msg
-Two ways of entering the terraces of the
-area: Pay 50 plat to the guards each
-time, or buy a permanent ticket once!
+Two ways of entering the terraces of the area: Pay 50 plat to the guards each time, or buy a permanent ticket once!
 endmsg
 x 8
 y 15
@@ -1996,13 +1986,10 @@ x 11
 y 2
 end
 arch lesser_dwarven_guard
-name ARENA director
+name Arena Director
 msg
 @match *
-Welcome, gladiators! Drop 100 platinum
-on the desk and step onto the
-teleporters. Obviously two players are
-required to enter.
+Welcome, gladiators! Drop 100 platinum on the desk and step onto the teleporters. Obviously two players are required to enter.
 endmsg
 sp 0
 maxsp 0
@@ -2045,7 +2032,6 @@ can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
-can_apply 0
 end
 arch dungeon_magic
 x 11
@@ -2053,12 +2039,10 @@ y 3
 end
 arch altar_trigger
 name 6
-slaying platinacoin
-food 100
+slaying money
+food 5000
 x 11
 y 3
-resist_magic 30
-resist_fire 30
 connected 6
 end
 arch pstone_2
@@ -2088,12 +2072,7 @@ arch sign
 msg
 All payments are final. No refunds.
 -=-=-=-=-=-=-=-=-=-
-Items placed up for betting are
-forfeit if one or both players quit
-the arena before a final decision
-(kill) is made. Items will be sold
-to defray the cost of refunding
-the spectator fees.
+Items placed up for betting are forfeit if one or both players quit the arena before a final decision (kill) is made.  Items will be sold to defray the cost of refunding the spectator fees.
 endmsg
 x 11
 y 6
@@ -2125,12 +2104,9 @@ x 11
 y 10
 end
 arch sign
-name gladiator's registry office
+name Gladiator's Registry Office
 msg
-Ever wanted to battle your friends
-without having to fear death?
-- Then step ahead. (If the spikes are
-closed the ARENA is already occupied.)
+Ever wanted to battle your friends without having to fear death? - Then step ahead. (If the spikes are closed the ARENA is already occupied.)
 endmsg
 x 11
 y 10
@@ -2180,16 +2156,9 @@ x 11
 y 21
 end
 arch sign
-name welcome
+name Scorn Battle Arena
 msg
-Welcome to the famous battle-ARENA!
-If you don't know how it works, visit
-the info point to the right.
-----------------------------
-This map (as well as the whole arena
-concept) was created by Andreas Vogl.
-Please send impressions, ideas and
-bug reports to <red.blaze@gmx.net>.
+Welcome to the famous Scorn Battle Arena! If you don't know how it works, visit the information booth to the right.
 endmsg
 x 11
 y 21
@@ -2480,14 +2449,12 @@ x 13
 y 17
 end
 arch a_townsman2
-name ARENA-fan
+name Arena fan
 msg
 @match sword|arena
 "there can only be ONE"...
 @match *
-Man those souvenirs are SO cool.
-If I had any money left I would buy
-that sword...
+Man those souvenirs are SO cool.  If I had any money left I would buy that sword...
 endmsg
 x 13
 y 17
@@ -2623,7 +2590,7 @@ x 14
 y 10
 end
 arch sign_e
-name ARENA east
+name East Entrance
 x 14
 y 10
 end
@@ -2648,7 +2615,7 @@ x 14
 y 15
 end
 arch sign_e
-name souvenirs
+name Souvenirs
 msg
 Buy souvenirs!
 endmsg
@@ -2680,10 +2647,9 @@ x 14
 y 21
 end
 arch sign_e
-name ARENA info point
+name Information Booth
 msg
-Here you'll find everything what you
-need to know about the ARENA.
+Here you'll find everything you need to know about the arena.
 endmsg
 x 14
 y 21
@@ -2964,6 +2930,10 @@ y 13
 end
 arch knight
 name Arena Guard
+msg
+@match *
+Go buy something or leave me alone.
+endmsg
 x 16
 y 13
 friendly 1
@@ -3009,11 +2979,13 @@ x 16
 y 19
 end
 arch sage
+name Arena librarian
 msg
+@match question
+I don't know, I'm just a librarian. Go ask other adventurers or something.
 @match *
-I'm doomed to stand here just because
-the map-maker thought that books can't
-exist without a sage gambling around.
+Arrgghh, quit bothering me! If you have a question, go read the books over there!
+@reply question What if I have a different question?
 endmsg
 x 16
 y 19
@@ -3122,9 +3094,7 @@ arch knight
 name Arena Guard
 msg
 @match *
-To enter the terraces of the arena,
-drop 50 platinum on the desk or buy
-a ticket.
+To enter the terraces of the arena, drop 20 platinum on the desk or buy a ticket.
 endmsg
 x 17
 y 7
@@ -3145,12 +3115,10 @@ y 8
 end
 arch altar_trigger
 name 3
-slaying platinacoin
-food 20
+slaying money
+food 1000
 x 17
 y 9
-resist_physical 30
-resist_magic 30
 connected 3
 end
 arch pstone_2
@@ -3190,13 +3158,10 @@ y 14
 end
 arch altar
 name 37
-slaying platinacoin
-food 150
+slaying money
+food 7500
 x 17
 y 15
-resist_physical 30
-resist_fire 30
-resist_confusion 30
 connected 37
 end
 arch pstone_2
@@ -3237,19 +3202,6 @@ end
 arch pstone_2
 x 17
 y 19
-end
-arch book_clasp
-name instructions, part 4
-msg
-In the ARENA, peaceful mode will
-automatically be ignored. That means
-by running into your opponent you will
-hit instead of just pushing him.
-endmsg
-x 17
-y 19
-material 0
-no_pick 1
 end
 arch dungeon_magic
 x 17
@@ -3350,11 +3302,11 @@ arch pstone_2
 x 18
 y 6
 end
-arch swall_1_1
+arch cwall_2_2_4
 x 18
 y 6
 end
-arch cwall_2_2_4
+arch swall_1_1_half
 x 18
 y 6
 end
@@ -3439,14 +3391,9 @@ x 18
 y 19
 end
 arch book_clasp
-name instructions, part 3
+name Safety
 msg
-The looser will find himself in the
-first-aide station. No loss of exp nor
-stats. Moreover, inside the ARENA
-draining attacks don't take effect and
-acid doesn't harm equipment.
-So there is NOTHING to be afraid of ;-)
+The Arena Director takes safety very seriously. Because of this, the Arena is a very safe place. The loser will find himself in the first-aid station, with no loss of experience or stats. Moreoever, inside the arena, draining attacks don't take effect and acid doesn't harm equipment, so there is NOTHING to be afraid of.
 endmsg
 x 18
 y 19
@@ -3462,16 +3409,9 @@ x 18
 y 20
 end
 arch book_clasp
-name instructions, part 2
+name How it Works
 msg
-Before combat, both players have the
-option of placing winning-bets. The one
-who is victorious on battleground
-will gain all of that treasure. And
-he will also get one finger of the
-defeated foe - the trophy for his
-heroic victory.
-But he will definitely NOT gain his exp!
+Before combat, both players are given the opportunity to set certain conditions, such as obstacles, for the match. They can also decide to place winning bets. Peaceful mode is automatically ignored. This means that you can attack your opponents by simply running into them. The one who is victorious will gain all of the treasure. This is not required. The winner also receives one finger of the defeated foe as a trophy for victory. Neither combatant will earn experience.
 endmsg
 x 18
 y 20
@@ -3487,13 +3427,9 @@ x 18
 y 21
 end
 arch book_clasp
-name instructions, part 1
+name About the Arena
 msg
-The ARENA is a place where friends
-can fight each other without facing
-death penalties. Two players and
-1000 platinum are needed to enter.
-(go to the registration office north)
+The Arena is a place where friends can fight each other without facing actual death penalties. Two players and 100 platinum are needed to enter; just go to the registration office to the north.
 endmsg
 x 18
 y 21
@@ -3608,12 +3544,10 @@ y 12
 end
 arch altar
 name 34
-slaying platinacoin
-food 50
+slaying money
+food 250
 x 19
 y 13
-resist_magic 30
-resist_confusion 30
 connected 34
 end
 arch pstone_2
@@ -3637,13 +3571,10 @@ y 14
 end
 arch altar
 name 35
-slaying platinacoin
-food 100
+slaying money
+food 5000
 x 19
 y 15
-resist_physical 30
-resist_magic 30
-resist_confusion 30
 connected 35
 end
 arch pstone_2
@@ -3667,12 +3598,10 @@ y 16
 end
 arch altar
 name 36
-slaying platinacoin
-food 50
+slaying money
+food 250
 x 19
 y 17
-resist_fire 30
-resist_confusion 30
 connected 36
 end
 arch pstone_2
@@ -4041,7 +3970,7 @@ arch pstone_2
 x 21
 y 14
 end
-arch swall_1_3
+arch swall_2_1_2
 x 21
 y 14
 end
@@ -4064,7 +3993,7 @@ arch pstone_2
 x 21
 y 16
 end
-arch swall_1_3
+arch swall_2_1_2
 x 21
 y 16
 end
@@ -4310,6 +4239,10 @@ arch cwall_2_1_1
 x 22
 y 14
 end
+arch swall_1_3_half
+x 22
+y 14
+end
 arch pstone_2
 x 22
 y 15
@@ -4323,6 +4256,10 @@ x 22
 y 16
 end
 arch cwall_2_1_1
+x 22
+y 16
+end
+arch swall_1_3_half
 x 22
 y 16
 end

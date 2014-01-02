@@ -1,0 +1,1229 @@
+arch map
+name Castle Kitchen
+difficulty 4
+region scorn
+width 14
+height 14
+enter_x 6
+enter_y 3
+msg
+Created:  2007-05-26 Nicolas Weeger
+Modified: 2013-03-19 Kevin Zheng
+endmsg
+maplore
+@quest Lursendis
+Farnass is here.
+endmaplore
+end
+arch cobblestones2
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch tree5
+y 7
+end
+arch grass_only
+y 8
+end
+arch tree5
+y 8
+end
+arch grass_only
+y 9
+end
+arch tree5
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch grass_only
+y 12
+end
+arch grass_only
+y 13
+end
+arch cobblestones2
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch tree5
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
+arch cobblestones2
+x 2
+end
+arch grass_only
+x 2
+y 1
+end
+arch cobblestones2
+x 2
+y 2
+end
+arch stwall_2_2_2
+x 2
+y 2
+end
+arch cobblestones2
+x 2
+y 3
+end
+arch stwall_2_1_1
+x 2
+y 3
+end
+arch cobblestones2
+x 2
+y 4
+end
+arch stwall_2_1_1
+x 2
+y 4
+end
+arch cobblestones2
+x 2
+y 5
+end
+arch stwall_2_1_1
+x 2
+y 5
+end
+arch cobblestones2
+x 2
+y 6
+end
+arch stwall_2_1_1
+x 2
+y 6
+end
+arch cobblestones2
+x 2
+y 7
+end
+arch stwindow_win1
+x 2
+y 7
+end
+arch cobblestones2
+x 2
+y 8
+end
+arch stwall_2_1_1
+x 2
+y 8
+end
+arch cobblestones2
+x 2
+y 9
+end
+arch stwall_2_1_1
+x 2
+y 9
+end
+arch cobblestones2
+x 2
+y 10
+end
+arch stwall_2_1_1
+x 2
+y 10
+end
+arch cobblestones2
+x 2
+y 11
+end
+arch stwall_2_2_1
+x 2
+y 11
+end
+arch grass_only
+x 2
+y 12
+end
+arch grass_only
+x 2
+y 13
+end
+arch cobblestones2
+x 3
+end
+arch grass_only
+x 3
+y 1
+end
+arch cobblestones2
+x 3
+y 2
+end
+arch stwindow_win2
+x 3
+y 2
+end
+arch beigemarble
+x 3
+y 3
+end
+arch table_1x2
+x 3
+y 3
+end
+arch apple
+x 3
+y 3
+no_pick 1
+end
+arch beigemarble
+x 3
+y 4
+end
+arch blackroot
+x 3
+y 4
+no_pick 1
+end
+arch beigemarble
+x 3
+y 5
+end
+arch table_1x2
+x 3
+y 5
+end
+arch cabbage
+x 3
+y 5
+no_pick 1
+end
+arch beigemarble
+x 3
+y 6
+end
+arch mandrake_root
+x 3
+y 6
+no_pick 1
+end
+arch beigemarble
+x 3
+y 7
+end
+arch table_1x2
+x 3
+y 7
+end
+arch tomato
+x 3
+y 7
+no_pick 1
+end
+arch beigemarble
+x 3
+y 8
+end
+arch potato
+x 3
+y 8
+no_pick 1
+end
+arch beigemarble
+x 3
+y 9
+end
+arch table_1x2
+x 3
+y 9
+end
+arch onion
+x 3
+y 9
+no_pick 1
+end
+arch beigemarble
+x 3
+y 10
+end
+arch orange
+x 3
+y 10
+no_pick 1
+end
+arch cobblestones2
+x 3
+y 11
+end
+arch stwall_2_1_2
+x 3
+y 11
+end
+arch grass_only
+x 3
+y 12
+end
+arch grass_only
+x 3
+y 13
+end
+arch cobblestones2
+x 4
+end
+arch grass_only
+x 4
+y 1
+end
+arch cobblestones2
+x 4
+y 2
+end
+arch stwall_2_1_2
+x 4
+y 2
+end
+arch beigemarble
+x 4
+y 3
+end
+arch beigemarble
+x 4
+y 4
+end
+arch light4
+x 4
+y 4
+end
+arch beigemarble
+x 4
+y 5
+end
+arch beigemarble
+x 4
+y 6
+end
+arch beigemarble
+x 4
+y 7
+end
+arch beigemarble
+x 4
+y 8
+end
+arch beigemarble
+x 4
+y 9
+end
+arch light4
+x 4
+y 9
+end
+arch beigemarble
+x 4
+y 10
+end
+arch table_2x1
+x 4
+y 10
+end
+arch clover
+x 4
+y 10
+no_pick 1
+end
+arch cobblestones2
+x 4
+y 11
+end
+arch stwindow_win2
+x 4
+y 11
+end
+arch grass_only
+x 4
+y 12
+end
+arch grass_only
+x 4
+y 13
+end
+arch cobblestones2
+x 5
+end
+arch grass_only
+x 5
+y 1
+end
+arch cobblestones2
+x 5
+y 2
+end
+arch stwall_2_2_3
+x 5
+y 2
+end
+arch cobblestones2
+x 5
+y 3
+end
+arch stwall_2_1_1
+x 5
+y 3
+end
+arch cobblestones2
+x 5
+y 4
+end
+arch stwall_2_1_1
+x 5
+y 4
+end
+arch magic_ear
+msg
+@match clickety
+Click.
+endmsg
+x 5
+y 5
+connected 1
+end
+arch cobblestones2
+x 5
+y 5
+end
+arch stwall_1_2
+x 5
+y 5
+end
+arch beigemarble
+x 5
+y 6
+end
+arch beigemarble
+x 5
+y 7
+end
+arch beigemarble
+x 5
+y 8
+end
+arch beigemarble
+x 5
+y 9
+end
+arch beigemarble
+x 5
+y 10
+end
+arch frypan_closed
+x 5
+y 10
+no_pick 1
+arch event_close
+title Python
+slaying /python/monsters/farnass.py
+end
+end
+arch cobblestones2
+x 5
+y 11
+end
+arch stwall_2_1_2
+x 5
+y 11
+end
+arch grass_only
+x 5
+y 12
+end
+arch grass_only
+x 5
+y 13
+end
+arch cobblestones2
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch exit
+slaying /world/world_104_115
+hp 43
+sp 48
+x 6
+y 2
+end
+arch cobblestones2
+x 6
+y 2
+end
+arch light4
+x 6
+y 2
+end
+arch cobblestones2
+x 6
+y 3
+end
+arch magic_mouth
+msg
+Castle kitchen - authorized personnel only.
+endmsg
+x 6
+y 4
+end
+arch cobblestones2
+x 6
+y 4
+end
+arch cobblestones2
+x 6
+y 5
+end
+arch mdoor_closed_1
+x 6
+y 5
+connected 1
+end
+arch beigemarble
+x 6
+y 6
+end
+arch beigemarble
+x 6
+y 7
+end
+arch armless_cook
+name Farnass
+msg
+@match sentrio|egg|eggs
+My friend Sentrio lives somewhere in Lake Country, but I don't remember where exactly, sorry...
+
+I do know eggs from his chicken are the only ones worth my cooking skill!
+
+@match mushroom
+Yes, it's a blue one, I think it grows in a marsh in the west.  I've heard it can be used for medicine, too.
+@match ingredients
+You need the following:
+- 4 eggs from my friend Sentrio's chicken
+- a special mushroom
+@match caramel
+So you want a caramel, he?
+
+Then you'll have to bring me the ingredients.
+
+As you can see, I've lost my both arms during the last war against the Gnolls, so would you be kind enough to put whatever you found during your travel to make the recipe in the frypan, please?
+
+You wonder how I cook without arms? Heh, rookie, that's what makes the difference between a cooker and me, Farnass! I told you already: I'm simply wonderful.
+@match lursendis
+Ha, this old friend of me.  I haven't seen him in years, I wonder how he's doing...
+@match *
+Please don't disturb me, I'm trying a really hard recipe.
+endmsg
+x 6
+y 7
+speed 0.25
+random_movement 1
+arch event_say
+title Python
+slaying /python/monsters/farnass.py
+end
+arch event_time
+title Python
+slaying /python/monsters/farnass.py
+end
+end
+arch beigemarble
+x 6
+y 8
+end
+arch beigemarble
+x 6
+y 9
+end
+arch beigemarble
+x 6
+y 10
+end
+arch stove
+name Royal stove
+x 6
+y 10
+is_cauldron 0
+end
+arch cobblestones2
+x 6
+y 11
+end
+arch stwall_2_1_2
+x 6
+y 11
+end
+arch grass_only
+x 6
+y 12
+end
+arch grass_only
+x 6
+y 13
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch exit
+slaying /world/world_104_115
+hp 43
+sp 48
+x 7
+y 2
+end
+arch cobblestones2
+x 7
+y 2
+end
+arch light4
+x 7
+y 2
+end
+arch cobblestones2
+x 7
+y 3
+end
+arch magic_mouth
+msg
+Castle kitchen - authorized personnel only.
+endmsg
+x 7
+y 4
+end
+arch cobblestones2
+x 7
+y 4
+end
+arch cobblestones2
+x 7
+y 5
+end
+arch mdoor_closed_1
+x 7
+y 5
+connected 1
+end
+arch beigemarble
+x 7
+y 6
+end
+arch beigemarble
+x 7
+y 7
+end
+arch beigemarble
+x 7
+y 8
+end
+arch beigemarble
+x 7
+y 9
+end
+arch beigemarble
+x 7
+y 10
+end
+arch stove
+name Royal stove
+x 7
+y 10
+is_cauldron 0
+end
+arch cobblestones2
+x 7
+y 11
+end
+arch stwall_2_1_2
+x 7
+y 11
+end
+arch grass_only
+x 7
+y 12
+end
+arch grass_only
+x 7
+y 13
+end
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
+y 1
+end
+arch cobblestones2
+x 8
+y 2
+end
+arch stwall_2_2_2
+x 8
+y 2
+end
+arch cobblestones2
+x 8
+y 3
+end
+arch stwall_2_1_1
+x 8
+y 3
+end
+arch cobblestones2
+x 8
+y 4
+end
+arch stwall_2_1_1
+x 8
+y 4
+end
+arch cobblestones2
+x 8
+y 5
+end
+arch stwall_1_2
+x 8
+y 5
+end
+arch beigemarble
+x 8
+y 6
+end
+arch beigemarble
+x 8
+y 7
+end
+arch beigemarble
+x 8
+y 8
+end
+arch beigemarble
+x 8
+y 9
+end
+arch beigemarble
+x 8
+y 10
+end
+arch table_2x1
+x 8
+y 10
+end
+arch mint
+x 8
+y 10
+no_pick 1
+end
+arch cobblestones2
+x 8
+y 11
+end
+arch stwall_2_1_2
+x 8
+y 11
+end
+arch grass_only
+x 8
+y 12
+end
+arch grass_only
+x 8
+y 13
+end
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch cobblestones2
+x 9
+y 2
+end
+arch stwall_2_1_2
+x 9
+y 2
+end
+arch beigemarble
+x 9
+y 3
+end
+arch beigemarble
+x 9
+y 4
+end
+arch light4
+x 9
+y 4
+end
+arch beigemarble
+x 9
+y 5
+end
+arch beigemarble
+x 9
+y 6
+end
+arch beigemarble
+x 9
+y 7
+end
+arch beigemarble
+x 9
+y 8
+end
+arch beigemarble
+x 9
+y 9
+end
+arch light4
+x 9
+y 9
+end
+arch beigemarble
+x 9
+y 10
+end
+arch pear
+x 9
+y 10
+no_pick 1
+end
+arch cobblestones2
+x 9
+y 11
+end
+arch stwindow_win2
+x 9
+y 11
+end
+arch grass_only
+x 9
+y 12
+end
+arch grass_only
+x 9
+y 13
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
+y 1
+end
+arch cobblestones2
+x 10
+y 2
+end
+arch stwindow_win2
+x 10
+y 2
+end
+arch beigemarble
+x 10
+y 3
+end
+arch table_1x2
+x 10
+y 3
+end
+arch cheeseburger
+x 10
+y 3
+no_pick 1
+end
+arch beigemarble
+x 10
+y 4
+end
+arch leg_mutton
+x 10
+y 4
+no_pick 1
+end
+arch beigemarble
+x 10
+y 5
+end
+arch table_1x2
+x 10
+y 5
+end
+arch mushroom_1
+x 10
+y 5
+no_pick 1
+end
+arch beigemarble
+x 10
+y 6
+end
+arch mushroom_2
+x 10
+y 6
+no_pick 1
+end
+arch beigemarble
+x 10
+y 7
+end
+arch table_1x2
+x 10
+y 7
+end
+arch mushroom_3
+x 10
+y 7
+no_pick 1
+end
+arch beigemarble
+x 10
+y 8
+end
+arch pipeweed
+x 10
+y 8
+no_pick 1
+end
+arch beigemarble
+x 10
+y 9
+end
+arch table_1x2
+x 10
+y 9
+end
+arch roast_bird
+x 10
+y 9
+no_pick 1
+end
+arch beigemarble
+x 10
+y 10
+end
+arch s_weasel
+x 10
+y 10
+no_pick 1
+end
+arch cobblestones2
+x 10
+y 11
+end
+arch stwall_2_1_2
+x 10
+y 11
+end
+arch grass_only
+x 10
+y 12
+end
+arch grass_only
+x 10
+y 13
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
+y 1
+end
+arch cobblestones2
+x 11
+y 2
+end
+arch stwall_2_2_3
+x 11
+y 2
+end
+arch cobblestones2
+x 11
+y 3
+end
+arch stwall_2_1_1
+x 11
+y 3
+end
+arch cobblestones2
+x 11
+y 4
+end
+arch stwall_2_1_1
+x 11
+y 4
+end
+arch cobblestones2
+x 11
+y 5
+end
+arch stwall_2_1_1
+x 11
+y 5
+end
+arch cobblestones2
+x 11
+y 6
+end
+arch stwall_2_1_1
+x 11
+y 6
+end
+arch cobblestones2
+x 11
+y 7
+end
+arch stwindow_win1
+x 11
+y 7
+end
+arch cobblestones2
+x 11
+y 8
+end
+arch stwall_2_1_1
+x 11
+y 8
+end
+arch cobblestones2
+x 11
+y 9
+end
+arch stwall_2_1_1
+x 11
+y 9
+end
+arch cobblestones2
+x 11
+y 10
+end
+arch stwall_2_1_1
+x 11
+y 10
+end
+arch cobblestones2
+x 11
+y 11
+end
+arch stwall_2_2_4
+x 11
+y 11
+end
+arch grass_only
+x 11
+y 12
+end
+arch grass_only
+x 11
+y 13
+end
+arch cobblestones2
+x 12
+end
+arch grass_only
+x 12
+y 1
+end
+arch grass_only
+x 12
+y 2
+end
+arch grass_only
+x 12
+y 3
+end
+arch grass_only
+x 12
+y 4
+end
+arch grass_only
+x 12
+y 5
+end
+arch grass_only
+x 12
+y 6
+end
+arch grass_only
+x 12
+y 7
+end
+arch grass_only
+x 12
+y 8
+end
+arch grass_only
+x 12
+y 9
+end
+arch grass_only
+x 12
+y 10
+end
+arch tree5
+x 12
+y 10
+end
+arch grass_only
+x 12
+y 11
+end
+arch grass_only
+x 12
+y 12
+end
+arch grass_only
+x 12
+y 13
+end
+arch cobblestones2
+x 13
+end
+arch grass_only
+x 13
+y 1
+end
+arch grass_only
+x 13
+y 2
+end
+arch grass_only
+x 13
+y 3
+end
+arch grass_only
+x 13
+y 4
+end
+arch grass_only
+x 13
+y 5
+end
+arch grass_only
+x 13
+y 6
+end
+arch grass_only
+x 13
+y 7
+end
+arch grass_only
+x 13
+y 8
+end
+arch grass_only
+x 13
+y 9
+end
+arch tree5
+x 13
+y 9
+end
+arch grass_only
+x 13
+y 10
+end
+arch tree5
+x 13
+y 10
+end
+arch grass_only
+x 13
+y 11
+end
+arch tree5
+x 13
+y 11
+end
+arch grass_only
+x 13
+y 12
+end
+arch grass_only
+x 13
+y 13
+end

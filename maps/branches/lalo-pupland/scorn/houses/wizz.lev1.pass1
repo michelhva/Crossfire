@@ -1,12 +1,15 @@
 arch map
-name Yarid's House
+name Yarid's House, Dark Tunnel
 swap_time 3600
-difficulty 1
+difficulty 15
 region scorn
 width 16
 height 16
+enter_x 12
+enter_y 2
 msg
 Created:  1996-01-06 Bjoern Helfesrieder (helfesri@igd.fhg.de)
+Modified: 2012-01-10 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -298,8 +301,7 @@ y 1
 end
 arch magic_mouth
 msg
-You hear some smaller rocks fall down
-near you!
+You hear some smaller rocks fall down near you!
 endmsg
 x 3
 y 2
@@ -677,8 +679,7 @@ y 10
 end
 arch magic_mouth
 msg
-You hear some smaller rocks fall down
-near you!
+You hear some smaller rocks fall down near you!
 endmsg
 x 6
 y 11
@@ -894,10 +895,6 @@ x 8
 y 9
 end
 arch dungeon_floor
-x 8
-y 10
-end
-arch bwall_2_1_1
 x 8
 y 10
 end

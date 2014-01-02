@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  2001-02-27
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
 arch shop_empty
@@ -108,7 +109,13 @@ end
 arch wall_2_1_2
 x 1
 end
-arch shop_empty
+arch dungeon_magic
+x 1
+y 1
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 1
 end
@@ -321,11 +328,13 @@ end
 arch wall_2_1_2
 x 2
 end
-arch shop_empty
+arch dungeon_magic
 x 2
 y 1
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 1
 end
@@ -531,11 +540,13 @@ end
 arch wall_2_1_2
 x 3
 end
-arch shop_empty
+arch dungeon_magic
 x 3
 y 1
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 1
 end
@@ -750,6 +761,16 @@ end
 arch wall_2_1_2
 x 4
 end
+arch dungeon_magic
+x 4
+y 1
+end
+arch flagstone
+name floor
+face shop_empty.111
+x 4
+y 1
+end
 arch shop_empty
 x 4
 y 2
@@ -952,7 +973,13 @@ end
 arch wall_2_1_2
 x 5
 end
-arch shop_empty
+arch dungeon_magic
+x 5
+y 1
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 5
 y 1
 end

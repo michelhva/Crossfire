@@ -1,7 +1,7 @@
 arch map
 name Mess Hall
 reset_timeout 7200
-difficulty 1
+difficulty 12
 region scorn
 width 25
 height 10
@@ -9,6 +9,7 @@ enter_x 24
 enter_y 4
 msg
 Created:  2003-02-04
+Modified: 2012-01-09 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -275,7 +276,7 @@ end
 arch bench_2_2_2
 x 4
 y 3
-no_pass 1
+move_block all
 end
 arch wine
 x 4
@@ -288,7 +289,7 @@ end
 arch bench_2_1_1
 x 4
 y 4
-no_pass 1
+move_block all
 end
 arch potato
 x 4
@@ -301,7 +302,7 @@ end
 arch bench_2_1_1
 x 4
 y 5
-no_pass 1
+move_block all
 end
 arch potato
 x 4
@@ -314,7 +315,7 @@ end
 arch bench_2_2_1
 x 4
 y 6
-no_pass 1
+move_block all
 end
 arch poison
 x 4
@@ -366,7 +367,7 @@ end
 arch bench_2_2_3
 x 5
 y 3
-no_pass 1
+move_block all
 end
 arch roast_bird
 x 5
@@ -379,7 +380,7 @@ end
 arch bench_2_1_1
 x 5
 y 4
-no_pass 1
+move_block all
 end
 arch w_glass
 x 5
@@ -392,7 +393,7 @@ end
 arch bench_2_1_1
 x 5
 y 5
-no_pass 1
+move_block all
 end
 arch potato
 x 5
@@ -405,7 +406,7 @@ end
 arch bench_2_2_4
 x 5
 y 6
-no_pass 1
+move_block all
 end
 arch poison
 x 5
@@ -776,7 +777,7 @@ end
 arch bench_2_2_2
 x 11
 y 3
-no_pass 1
+move_block all
 end
 arch poison
 x 11
@@ -789,7 +790,7 @@ end
 arch bench_2_1_1
 x 11
 y 4
-no_pass 1
+move_block all
 end
 arch potato
 x 11
@@ -802,7 +803,7 @@ end
 arch bench_2_1_1
 x 11
 y 5
-no_pass 1
+move_block all
 end
 arch potato
 x 11
@@ -815,7 +816,7 @@ end
 arch bench_2_2_1
 x 11
 y 6
-no_pass 1
+move_block all
 end
 arch poison
 x 11
@@ -859,7 +860,7 @@ end
 arch bench_2_2_3
 x 12
 y 3
-no_pass 1
+move_block all
 end
 arch roast_bird
 x 12
@@ -872,7 +873,7 @@ end
 arch bench_2_1_1
 x 12
 y 4
-no_pass 1
+move_block all
 end
 arch poison
 x 12
@@ -885,7 +886,7 @@ end
 arch bench_2_1_1
 x 12
 y 5
-no_pass 1
+move_block all
 end
 arch potato
 x 12
@@ -898,7 +899,7 @@ end
 arch bench_2_2_4
 x 12
 y 6
-no_pass 1
+move_block all
 end
 arch potato
 x 12
@@ -1586,7 +1587,7 @@ arch dirtfloor
 x 22
 y 3
 end
-arch cwall_2_2_2
+arch cwall_1_4
 x 22
 y 3
 end
@@ -1610,7 +1611,7 @@ arch dirtfloor
 x 22
 y 6
 end
-arch cwall_2_2_1
+arch cwall_1_4
 x 22
 y 6
 end

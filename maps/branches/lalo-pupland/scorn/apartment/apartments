@@ -4,8 +4,11 @@ difficulty 1
 region scorn
 width 18
 height 10
+enter_x 1
+enter_y 1
 msg
 Created:  1998-03-27 Christian Stieber (stieber@informatik.tu-muenchen.de)
+Modified: 2012-04-02 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -63,7 +66,7 @@ arch wall_2_1_1
 y 7
 end
 arch locked_door1
-name woodfloor
+name wood floor
 slaying ExtendedApartmentKey
 face woodfloor.111
 y 7
@@ -165,7 +168,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 1
@@ -287,7 +290,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 2
@@ -375,7 +378,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 3
@@ -452,7 +455,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 4
@@ -529,7 +532,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 5
@@ -606,7 +609,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 6
@@ -673,7 +676,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 7
@@ -740,7 +743,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 8
@@ -807,7 +810,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 9
@@ -874,7 +877,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 10
@@ -941,7 +944,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 11
@@ -1021,7 +1024,7 @@ arch locked_door1
 name wall
 slaying ExtendedApartmentKey
 msg
-You need to buy the apartment extender to remove this wall
+You need to buy the apartment extender to remove this wall.
 endmsg
 face wall_A.111
 x 12
@@ -1116,7 +1119,7 @@ x 13
 y 7
 end
 arch locked_door1
-name woodfloor
+name wood floor
 slaying ExtendedApartmentKey
 face woodfloor.111
 x 13
@@ -1165,7 +1168,7 @@ arch check_inv
 slaying KurteKeyEureca
 x 14
 y 1
-no_pass 1
+move_block all
 end
 arch cobblestones
 x 14
@@ -1180,7 +1183,7 @@ end
 arch locked_door1
 slaying SiegfriedKey201169
 msg
-Please say the pupland password.
+Please say the Pup Land password.
 endmsg
 face cobblesto2.111
 x 14
@@ -1189,7 +1192,7 @@ invisible 1
 end
 arch whirlwind_exit
 name Nurnberg
-slaying /nurnberg/city
+slaying /pup_land/nurnberg/city
 hp 25
 sp 15
 x 14
@@ -1281,8 +1284,8 @@ y 1
 end
 arch magic_ear
 msg
-@match Siegfried|siegfried
-Ok. Have fun!
+@match siegfried
+Ok.  Have fun!
 endmsg
 x 15
 y 2

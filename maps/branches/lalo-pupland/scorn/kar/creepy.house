@@ -1,13 +1,14 @@
 arch map
-name Haunted House
-difficulty 1
+name Harry's Place, Basement
+difficulty 15
 region scorn
 width 25
 height 25
 enter_x 1
 enter_y 1
 msg
-Created:  1993-02-07
+Created:  1993-12-07
+Modified: 2012-01-10 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -104,16 +105,16 @@ end
 arch mine3
 y 15
 end
-arch dirtfloor
+arch pstone_1
 y 16
 end
-arch mine4
+arch mine17
 y 16
 end
 arch pstone_1
 y 17
 end
-arch mine8
+arch mine3
 y 17
 end
 arch pstone_1
@@ -273,7 +274,7 @@ end
 arch mine2
 x 1
 y 16
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 1
@@ -319,8 +320,7 @@ x 2
 end
 arch magic_mouth
 msg
-WHO DARES ENTER THE CREEPY CRYPT?
-YOU WILL PARISH!
+WHO DARES ENTER THE CREEPY CRYPT? YOU WILL PERISH!
 endmsg
 x 2
 y 1
@@ -393,7 +393,7 @@ arch dirtfloor
 x 2
 y 16
 end
-arch mine2
+arch mine16
 x 2
 y 16
 end
@@ -401,7 +401,7 @@ arch pstone_1
 x 2
 y 17
 end
-arch mine8
+arch mine11
 x 2
 y 17
 end
@@ -746,8 +746,7 @@ y 1
 end
 arch gravestone
 msg
-Here lies Ender,
-What a troubled soul.
+Here lies Ender, What a troubled soul.
 endmsg
 x 5
 y 1
@@ -1025,6 +1024,9 @@ arch mine2
 x 6
 y 24
 end
+arch cobblestones2
+x 7
+end
 arch mine2
 x 7
 end
@@ -1205,6 +1207,9 @@ arch mine2
 x 7
 y 24
 end
+arch cobblestones2
+x 8
+end
 arch mine2
 x 8
 end
@@ -1311,12 +1316,13 @@ end
 arch mine3
 x 8
 y 15
+move_block 0
 end
 arch dirtfloor
 x 8
 y 16
 end
-arch mine12
+arch mine14
 x 8
 y 16
 end
@@ -1324,7 +1330,7 @@ arch pstone_1
 x 8
 y 17
 end
-arch mine8
+arch mine3
 x 8
 y 17
 end
@@ -1384,6 +1390,9 @@ arch mine2
 x 8
 y 24
 end
+arch cobblestones2
+x 9
+end
 arch mine2
 x 9
 end
@@ -1405,9 +1414,7 @@ y 4
 end
 arch magic_mouth
 msg
-Heh, Heh Heh, you thought you beat my
-haunted house, but you have only yet to
-begin!  You shall perish...
+Heh, Heh Heh, you thought you beat my haunted house, but you have only yet to begin!  You shall perish...
 endmsg
 x 9
 y 5
@@ -1525,6 +1532,9 @@ end
 arch mine2
 x 9
 y 24
+end
+arch cobblestones2
+x 10
 end
 arch mine2
 x 10
@@ -1654,6 +1664,9 @@ arch mine2
 x 10
 y 24
 end
+arch cobblestones2
+x 11
+end
 arch mine2
 x 11
 end
@@ -1773,6 +1786,9 @@ arch mine2
 x 11
 y 24
 end
+arch cobblestones2
+x 12
+end
 arch mine2
 x 12
 end
@@ -1883,6 +1899,9 @@ end
 arch mine2
 x 12
 y 24
+end
+arch cobblestones2
+x 13
 end
 arch mine2
 x 13
@@ -3025,10 +3044,7 @@ y 19
 end
 arch letter
 msg
-The house is being over run with all
-types of monsters, help me. Arrghh!
-They are at the door! Help me, come
-quick
+The house is being over run with all types of monsters, help me.  Arrghh! They are at the door! Help me, come quick.
 endmsg
 x 20
 y 19

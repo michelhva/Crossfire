@@ -1,14 +1,14 @@
 arch map
 name Scorn Pawn Shop
-difficulty 1
+difficulty 3
 region scorn
 width 21
 height 20
 enter_x 10
-enter_y 2
+enter_y 1
 msg
-Created:  Gene Alexander (gene@eracc.com)
-Using ideas of: Andreas Vogl (red.blaze@gmx.net)
+Created:  2004-07-01 Gene Alexander (gene@eracc.com)
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch shop_empty
@@ -150,7 +150,6 @@ arch shop_empty
 x 1
 y 3
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -165,7 +164,6 @@ arch shop_empty
 x 1
 y 4
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -180,7 +178,6 @@ arch shop_empty
 x 1
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -195,7 +192,6 @@ arch shop_empty
 x 1
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -210,7 +206,6 @@ arch shop_empty
 x 1
 y 7
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -225,7 +220,6 @@ arch shop_empty
 x 1
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -240,7 +234,6 @@ arch shop_empty
 x 1
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -255,7 +248,6 @@ arch shop_empty
 x 1
 y 10
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -270,7 +262,6 @@ arch shop_empty
 x 1
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -285,7 +276,6 @@ arch shop_empty
 x 1
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -300,7 +290,6 @@ arch shop_empty
 x 1
 y 13
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -315,7 +304,6 @@ arch shop_empty
 x 1
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -330,7 +318,6 @@ arch shop_empty
 x 1
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -345,7 +332,6 @@ arch shop_empty
 x 1
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -360,7 +346,6 @@ arch shop_empty
 x 1
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -402,7 +387,6 @@ arch shop_empty
 x 2
 y 2
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -417,7 +401,6 @@ arch shop_empty
 x 2
 y 3
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -432,7 +415,6 @@ arch shop_empty
 x 2
 y 4
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -447,7 +429,6 @@ arch shop_empty
 x 2
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -462,7 +443,6 @@ arch shop_empty
 x 2
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -477,7 +457,6 @@ arch shop_empty
 x 2
 y 7
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -492,7 +471,6 @@ arch shop_empty
 x 2
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -507,7 +485,6 @@ arch shop_empty
 x 2
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -522,7 +499,6 @@ arch shop_empty
 x 2
 y 10
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -537,7 +513,6 @@ arch shop_empty
 x 2
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -552,7 +527,6 @@ arch shop_empty
 x 2
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -567,7 +541,6 @@ arch shop_empty
 x 2
 y 13
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -582,7 +555,6 @@ arch shop_empty
 x 2
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -597,7 +569,6 @@ arch shop_empty
 x 2
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -612,7 +583,6 @@ arch shop_empty
 x 2
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -627,7 +597,6 @@ arch shop_empty
 x 2
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -642,7 +611,6 @@ arch shop_empty
 x 2
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -676,7 +644,6 @@ arch shop_empty
 x 3
 y 2
 unique 1
-damned 1
 end
 arch dwall_win1
 x 3
@@ -686,7 +653,6 @@ arch shop_empty
 x 3
 y 3
 unique 1
-damned 1
 end
 arch dwall_3_2
 x 3
@@ -696,7 +662,6 @@ arch shop_empty
 x 3
 y 4
 unique 1
-damned 1
 end
 arch dwall_3_2
 x 3
@@ -706,7 +671,6 @@ arch shop_empty
 x 3
 y 5
 unique 1
-damned 1
 end
 arch dwall_win1
 x 3
@@ -716,7 +680,6 @@ arch shop_empty
 x 3
 y 6
 unique 1
-damned 1
 end
 arch dwall_3_2
 x 3
@@ -726,7 +689,6 @@ arch shop_empty
 x 3
 y 7
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 3
@@ -736,7 +698,6 @@ arch shop_empty
 x 3
 y 8
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 3
@@ -746,7 +707,6 @@ arch shop_empty
 x 3
 y 9
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 3
@@ -756,7 +716,6 @@ arch shop_empty
 x 3
 y 10
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 3
@@ -766,7 +725,6 @@ arch shop_empty
 x 3
 y 11
 unique 1
-damned 1
 end
 arch dwall_2_2_1
 x 3
@@ -776,7 +734,6 @@ arch shop_empty
 x 3
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -791,7 +748,6 @@ arch shop_empty
 x 3
 y 13
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -806,7 +762,6 @@ arch shop_empty
 x 3
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -821,7 +776,6 @@ arch shop_empty
 x 3
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -836,7 +790,6 @@ arch shop_empty
 x 3
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -851,7 +804,6 @@ arch shop_empty
 x 3
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -866,7 +818,6 @@ arch shop_empty
 x 3
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -913,7 +864,6 @@ arch shop_empty
 x 4
 y 3
 unique 1
-damned 1
 end
 arch dwall_3_3
 x 4
@@ -923,7 +873,6 @@ arch shop_empty
 x 4
 y 4
 unique 1
-damned 1
 end
 arch dwall_3_1
 x 4
@@ -946,7 +895,6 @@ arch shop_empty
 x 4
 y 6
 unique 1
-damned 1
 end
 arch dwall_2_1_2
 x 4
@@ -988,7 +936,6 @@ arch shop_empty
 x 4
 y 11
 unique 1
-damned 1
 end
 arch dwall_2_1_2
 x 4
@@ -998,7 +945,6 @@ arch shop_empty
 x 4
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1013,7 +959,6 @@ arch shop_empty
 x 4
 y 13
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1028,7 +973,6 @@ arch shop_empty
 x 4
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1043,7 +987,6 @@ arch shop_empty
 x 4
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1058,7 +1001,6 @@ arch shop_empty
 x 4
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1073,7 +1015,6 @@ arch shop_empty
 x 4
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1088,7 +1029,6 @@ arch shop_empty
 x 4
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1117,10 +1057,6 @@ end
 arch dwall_2_1_2
 x 5
 y 1
-end
-arch check_inv
-x 5
-y 2
 end
 arch dungeon_magic
 x 5
@@ -1140,7 +1076,6 @@ arch shop_empty
 x 5
 y 3
 unique 1
-damned 1
 end
 arch dwall_3_3
 x 5
@@ -1150,7 +1085,6 @@ arch shop_empty
 x 5
 y 4
 unique 1
-damned 1
 end
 arch dwall_3_1
 x 5
@@ -1174,7 +1108,6 @@ arch shop_empty
 x 5
 y 6
 unique 1
-damned 1
 end
 arch dwall_2_1_2
 x 5
@@ -1194,10 +1127,7 @@ y 8
 end
 arch sign
 msg
-This area is set aside for
-Dungeon Masters to be able
-to reset the Scorn Sale Shop
-if necessary.
+This area is set aside for Dungeon Masters to be able to reset the Scorn Sale Shop if necessary.
 endmsg
 x 5
 y 8
@@ -1232,7 +1162,6 @@ arch shop_empty
 x 5
 y 11
 unique 1
-damned 1
 end
 arch dwall_3_3
 x 5
@@ -1242,7 +1171,6 @@ arch shop_empty
 x 5
 y 12
 unique 1
-damned 1
 end
 arch dwall_win1
 x 5
@@ -1252,7 +1180,6 @@ arch shop_empty
 x 5
 y 13
 unique 1
-damned 1
 end
 arch dwall_2_2_1
 x 5
@@ -1262,7 +1189,6 @@ arch shop_empty
 x 5
 y 14
 unique 1
-damned 1
 end
 arch dwall_0
 x 5
@@ -1272,7 +1198,6 @@ arch shop_empty
 x 5
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1287,7 +1212,6 @@ arch shop_empty
 x 5
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1302,7 +1226,6 @@ arch shop_empty
 x 5
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1317,7 +1240,6 @@ arch shop_empty
 x 5
 y 18
 unique 1
-damned 1
 end
 arch dwall_0
 x 5
@@ -1361,7 +1283,6 @@ arch shop_empty
 x 6
 y 3
 unique 1
-damned 1
 end
 arch dwall_3_3
 x 6
@@ -1371,7 +1292,6 @@ arch shop_empty
 x 6
 y 4
 unique 1
-damned 1
 end
 arch dwall_3_1
 x 6
@@ -1396,7 +1316,6 @@ arch shop_empty
 x 6
 y 6
 unique 1
-damned 1
 end
 arch dwall_2_1_2
 x 6
@@ -1438,7 +1357,6 @@ arch shop_empty
 x 6
 y 11
 unique 1
-damned 1
 end
 arch dwall_2_1_2
 x 6
@@ -1448,7 +1366,6 @@ arch shop_empty
 x 6
 y 12
 unique 1
-damned 1
 end
 arch table_3
 x 6
@@ -1479,7 +1396,6 @@ arch shop_empty
 x 6
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1494,7 +1410,6 @@ arch shop_empty
 x 6
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1509,7 +1424,6 @@ arch shop_empty
 x 6
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1524,7 +1438,6 @@ arch shop_empty
 x 6
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1539,7 +1452,6 @@ arch shop_empty
 x 6
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1590,7 +1502,6 @@ arch shop_empty
 x 7
 y 3
 unique 1
-damned 1
 end
 arch dwall_2_2_3
 x 7
@@ -1600,7 +1511,6 @@ arch shop_empty
 x 7
 y 4
 unique 1
-damned 1
 end
 arch dwall_2_2_4
 x 7
@@ -1624,7 +1534,6 @@ arch shop_empty
 x 7
 y 6
 unique 1
-damned 1
 end
 arch dwall_2_2_3
 x 7
@@ -1634,7 +1543,6 @@ arch shop_empty
 x 7
 y 7
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 7
@@ -1644,7 +1552,6 @@ arch shop_empty
 x 7
 y 8
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 7
@@ -1654,7 +1561,6 @@ arch shop_empty
 x 7
 y 9
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 7
@@ -1664,7 +1570,6 @@ arch shop_empty
 x 7
 y 10
 unique 1
-damned 1
 end
 arch dwall_3_2
 x 7
@@ -1674,7 +1579,6 @@ arch shop_empty
 x 7
 y 11
 unique 1
-damned 1
 end
 arch dwall_3_4
 x 7
@@ -1684,7 +1588,6 @@ arch shop_empty
 x 7
 y 12
 unique 1
-damned 1
 end
 arch dwall_win1
 x 7
@@ -1694,7 +1597,6 @@ arch shop_empty
 x 7
 y 13
 unique 1
-damned 1
 end
 arch dwall_3_1
 x 7
@@ -1704,7 +1606,6 @@ arch shop_empty
 x 7
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1719,7 +1620,6 @@ arch shop_empty
 x 7
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1734,7 +1634,6 @@ arch shop_empty
 x 7
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1749,7 +1648,6 @@ arch shop_empty
 x 7
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1764,7 +1662,6 @@ arch shop_empty
 x 7
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1798,7 +1695,7 @@ x 8
 y 1
 end
 arch palm
-name House Plant
+name house plant
 x 8
 y 1
 move_block all
@@ -1828,13 +1725,9 @@ x 8
 y 4
 end
 arch sign_w
-name Pawn
+name Pawn Booth
 msg
-Items sold in these booths will be moved
-to the pawn shop floor. Note if one picks
-up an item after dropping it in a booth
-one has to pay the purchase price to get
-the item back.
+Items sold in these booths will be moved to the pawn shop floor.  Note if one picks up an item after dropping it in a booth one has to pay the purchase price to get the item back.
 endmsg
 x 8
 y 4
@@ -1856,18 +1749,11 @@ x 8
 y 6
 end
 arch sign
-name info
+name Info
 msg
 Scorn Pawn Shop
 ---
-Items you sell here will stay roughly
-"forever" unless someone buys the
-item. If the shop gets too crowded
-with items a Proprietor will clear
-out the excess.
-You can sell items in the pawn booths
-or you can go and browse our inventory
-of items for a small fee.
+Items you sell here will stay roughly "forever" unless someone buys the item.  If the shop gets too crowded with items a Proprietor will clear out the excess.  You can sell items in the pawn booths or you can go and browse our inventory of items for a small fee.
 endmsg
 x 8
 y 6
@@ -1897,6 +1783,7 @@ x 8
 y 9
 end
 arch palm
+name house plant
 x 8
 y 9
 end
@@ -1950,7 +1837,6 @@ arch shop_empty
 x 8
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1965,7 +1851,6 @@ arch shop_empty
 x 8
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1980,7 +1865,6 @@ arch shop_empty
 x 8
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -1995,7 +1879,6 @@ arch shop_empty
 x 8
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2010,7 +1893,6 @@ arch shop_empty
 x 8
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2179,7 +2061,6 @@ arch shop_empty
 x 9
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2194,7 +2075,6 @@ arch shop_empty
 x 9
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2209,7 +2089,6 @@ arch shop_empty
 x 9
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2224,7 +2103,6 @@ arch shop_empty
 x 9
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2239,7 +2117,6 @@ arch shop_empty
 x 9
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2365,9 +2242,9 @@ connected 88
 end
 arch altar_trigger
 name Drop 500 gold for day pass
-slaying goldcoin
+slaying money
 face chalice.111
-food 500
+food 5000
 x 10
 y 9
 connected 88
@@ -2425,7 +2302,6 @@ arch shop_empty
 x 10
 y 13
 unique 1
-damned 1
 end
 arch dwall_win2
 x 10
@@ -2443,7 +2319,6 @@ arch shop_empty
 x 10
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2458,7 +2333,6 @@ arch shop_empty
 x 10
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2473,7 +2347,6 @@ arch shop_empty
 x 10
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2488,7 +2361,6 @@ arch shop_empty
 x 10
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2648,7 +2520,6 @@ arch shop_empty
 x 11
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2663,7 +2534,6 @@ arch shop_empty
 x 11
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2678,7 +2548,6 @@ arch shop_empty
 x 11
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2693,7 +2562,6 @@ arch shop_empty
 x 11
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2708,7 +2576,6 @@ arch shop_empty
 x 11
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2742,7 +2609,7 @@ x 12
 y 1
 end
 arch palm
-name House Plant
+name house plant
 x 12
 y 1
 move_block all
@@ -2772,13 +2639,9 @@ x 12
 y 4
 end
 arch sign_e
-name Pawn
+name Pawn Booth
 msg
-Items sold in these booths will be moved
-to the pawn shop floor. Note if one picks
-up an item after dropping it in a booth
-one has to pay the purchase price to get
-the item back.
+Items sold in these booths will be moved to the pawn shop floor.  Note if one picks up an item after dropping it in a booth one has to pay the purchase price to get the item back.
 endmsg
 x 12
 y 4
@@ -2800,13 +2663,11 @@ x 12
 y 6
 end
 arch sign
-name charity
+name Charity
 msg
 Charity - Help keep Scorn clean
 -----
-Please use this shop entry area
-for dropping free items to be used
-by other citizens in need.
+Please use this shop entry area for dropping free items to be used by other citizens in need.
 endmsg
 x 12
 y 6
@@ -2846,6 +2707,7 @@ x 12
 y 9
 end
 arch palm
+name house plant
 x 12
 y 9
 end
@@ -2897,7 +2759,6 @@ arch shop_empty
 x 12
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2912,7 +2773,6 @@ arch shop_empty
 x 12
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2927,7 +2787,6 @@ arch shop_empty
 x 12
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2942,7 +2801,6 @@ arch shop_empty
 x 12
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -2957,7 +2815,6 @@ arch shop_empty
 x 12
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3008,7 +2865,6 @@ arch shop_empty
 x 13
 y 3
 unique 1
-damned 1
 end
 arch dwall_2_2_2
 x 13
@@ -3018,7 +2874,6 @@ arch shop_empty
 x 13
 y 4
 unique 1
-damned 1
 end
 arch dwall_2_2_1
 x 13
@@ -3042,7 +2897,6 @@ arch shop_empty
 x 13
 y 6
 unique 1
-damned 1
 end
 arch dwall_2_2_2
 x 13
@@ -3052,7 +2906,6 @@ arch shop_empty
 x 13
 y 7
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 13
@@ -3062,7 +2915,6 @@ arch shop_empty
 x 13
 y 8
 unique 1
-damned 1
 end
 arch dwall_3_4
 x 13
@@ -3072,7 +2924,6 @@ arch shop_empty
 x 13
 y 9
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 13
@@ -3082,32 +2933,20 @@ arch shop_empty
 x 13
 y 10
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 13
 y 10
 end
-arch magic_ear
-msg
-@match P|price
-Stuff not much. Buy lot!
-@match K|key
-Manager office for employee only.
-You not go there.
-@match O|oorgh
-That my name. Not wear out.
-@match *
-Oorgh welcome you to shop!
-endmsg
-x 13
-y 11
-end
 arch shop_empty
 x 13
 y 11
 end
-arch dwall_3_2
+arch dwall_2_2_1
+x 13
+y 11
+end
+arch swall_1_1_half
 x 13
 y 11
 end
@@ -3115,7 +2954,6 @@ arch shop_empty
 x 13
 y 12
 unique 1
-damned 1
 end
 arch swall_2_1_1
 x 13
@@ -3125,9 +2963,12 @@ arch shop_empty
 x 13
 y 13
 unique 1
-damned 1
 end
-arch dwall_3_1
+arch swall_1_2_half
+x 13
+y 13
+end
+arch dwall_2_1_2
 x 13
 y 13
 end
@@ -3135,7 +2976,6 @@ arch shop_empty
 x 13
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3150,7 +2990,6 @@ arch shop_empty
 x 13
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3165,7 +3004,6 @@ arch shop_empty
 x 13
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3180,7 +3018,6 @@ arch shop_empty
 x 13
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3195,7 +3032,6 @@ arch shop_empty
 x 13
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3244,7 +3080,6 @@ arch shop_empty
 x 14
 y 3
 unique 1
-damned 1
 end
 arch dwall_3_3
 x 14
@@ -3254,7 +3089,6 @@ arch shop_empty
 x 14
 y 4
 unique 1
-damned 1
 end
 arch dwall_3_1
 x 14
@@ -3279,7 +3113,6 @@ arch shop_empty
 x 14
 y 6
 unique 1
-damned 1
 end
 arch dwall_2_1_2
 x 14
@@ -3326,7 +3159,7 @@ x 14
 y 10
 end
 arch palm
-name House Plant
+name house plant
 x 14
 y 10
 move_block all
@@ -3335,7 +3168,6 @@ arch shop_empty
 x 14
 y 11
 unique 1
-damned 1
 end
 arch ggate_closed
 name Employees Only
@@ -3350,10 +3182,19 @@ arch shop_empty
 x 14
 y 12
 unique 1
-damned 1
 end
 arch small_troll
 name Oorgh
+msg
+@match price
+Stuff not much.  Buy lot!
+@match key
+Manager office for employee only.  You not go there.
+@match oorgh
+That my name.  Not wear out.
+@match *
+Oorgh welcome you to shop!
+endmsg
 x 14
 y 12
 resist_magic 100
@@ -3367,13 +3208,13 @@ sleep 0
 arch key2
 name Oorgh key
 name_pl Oorgh keys
+slaying Oorgh key
 end
 end
 arch shop_empty
 x 14
 y 13
 unique 1
-damned 1
 end
 arch dwall_win2
 x 14
@@ -3383,7 +3224,6 @@ arch shop_empty
 x 14
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3398,7 +3238,6 @@ arch shop_empty
 x 14
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3413,7 +3252,6 @@ arch shop_empty
 x 14
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3428,7 +3266,6 @@ arch shop_empty
 x 14
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3443,7 +3280,6 @@ arch shop_empty
 x 14
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3491,7 +3327,6 @@ arch shop_empty
 x 15
 y 3
 unique 1
-damned 1
 end
 arch dwall_3_3
 x 15
@@ -3501,7 +3336,6 @@ arch shop_empty
 x 15
 y 4
 unique 1
-damned 1
 end
 arch dwall_3_1
 x 15
@@ -3525,7 +3359,6 @@ arch shop_empty
 x 15
 y 6
 unique 1
-damned 1
 end
 arch dwall_2_1_2
 x 15
@@ -3540,7 +3373,7 @@ x 15
 y 7
 end
 arch palm
-name House Plant
+name house plant
 x 15
 y 7
 move_block all
@@ -3617,7 +3450,6 @@ arch shop_empty
 x 15
 y 11
 unique 1
-damned 1
 end
 arch dwall_3_3
 x 15
@@ -3627,7 +3459,6 @@ arch shop_empty
 x 15
 y 12
 unique 1
-damned 1
 end
 arch dwall_win1
 x 15
@@ -3637,7 +3468,6 @@ arch shop_empty
 x 15
 y 13
 unique 1
-damned 1
 end
 arch dwall_2_2_4
 x 15
@@ -3647,7 +3477,6 @@ arch shop_empty
 x 15
 y 14
 unique 1
-damned 1
 end
 arch dwall_0
 x 15
@@ -3657,7 +3486,6 @@ arch shop_empty
 x 15
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3672,7 +3500,6 @@ arch shop_empty
 x 15
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3687,7 +3514,6 @@ arch shop_empty
 x 15
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3702,7 +3528,6 @@ arch shop_empty
 x 15
 y 18
 unique 1
-damned 1
 end
 arch dwall_0
 x 15
@@ -3744,7 +3569,6 @@ arch shop_empty
 x 16
 y 3
 unique 1
-damned 1
 end
 arch dwall_3_3
 x 16
@@ -3754,7 +3578,6 @@ arch shop_empty
 x 16
 y 4
 unique 1
-damned 1
 end
 arch dwall_3_1
 x 16
@@ -3777,7 +3600,6 @@ arch shop_empty
 x 16
 y 6
 unique 1
-damned 1
 end
 arch dwall_2_1_2
 x 16
@@ -3824,7 +3646,7 @@ x 16
 y 10
 end
 arch palm
-name House Plant
+name house plant
 x 16
 y 10
 move_block all
@@ -3833,7 +3655,6 @@ arch shop_empty
 x 16
 y 11
 unique 1
-damned 1
 end
 arch dwall_2_1_2
 x 16
@@ -3843,7 +3664,6 @@ arch shop_empty
 x 16
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3858,7 +3678,6 @@ arch shop_empty
 x 16
 y 13
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3873,7 +3692,6 @@ arch shop_empty
 x 16
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3888,7 +3706,6 @@ arch shop_empty
 x 16
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3903,7 +3720,6 @@ arch shop_empty
 x 16
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3918,7 +3734,6 @@ arch shop_empty
 x 16
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3933,7 +3748,6 @@ arch shop_empty
 x 16
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -3967,7 +3781,6 @@ arch shop_empty
 x 17
 y 2
 unique 1
-damned 1
 end
 arch dwall_win1
 x 17
@@ -3977,7 +3790,6 @@ arch shop_empty
 x 17
 y 3
 unique 1
-damned 1
 end
 arch dwall_3_4
 x 17
@@ -3987,7 +3799,6 @@ arch shop_empty
 x 17
 y 4
 unique 1
-damned 1
 end
 arch dwall_3_4
 x 17
@@ -3997,7 +3808,6 @@ arch shop_empty
 x 17
 y 5
 unique 1
-damned 1
 end
 arch dwall_win1
 x 17
@@ -4007,7 +3817,6 @@ arch shop_empty
 x 17
 y 6
 unique 1
-damned 1
 end
 arch dwall_3_4
 x 17
@@ -4017,7 +3826,6 @@ arch shop_empty
 x 17
 y 7
 unique 1
-damned 1
 end
 arch dwall_2_1_1
 x 17
@@ -4027,7 +3835,6 @@ arch shop_empty
 x 17
 y 8
 unique 1
-damned 1
 end
 arch dwall_1_2
 x 17
@@ -4037,7 +3844,6 @@ arch shop_empty
 x 17
 y 9
 unique 1
-damned 1
 end
 arch locked_door2
 name Employees Only
@@ -4053,7 +3859,6 @@ arch shop_empty
 x 17
 y 10
 unique 1
-damned 1
 end
 arch dwall_1_1
 x 17
@@ -4063,7 +3868,6 @@ arch shop_empty
 x 17
 y 11
 unique 1
-damned 1
 end
 arch dwall_2_2_4
 x 17
@@ -4073,7 +3877,6 @@ arch shop_empty
 x 17
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4088,7 +3891,6 @@ arch shop_empty
 x 17
 y 13
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4103,7 +3905,6 @@ arch shop_empty
 x 17
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4118,7 +3919,6 @@ arch shop_empty
 x 17
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4133,7 +3933,6 @@ arch shop_empty
 x 17
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4148,7 +3947,6 @@ arch shop_empty
 x 17
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4163,7 +3961,6 @@ arch shop_empty
 x 17
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4197,7 +3994,6 @@ arch shop_empty
 x 18
 y 2
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4212,7 +4008,6 @@ arch shop_empty
 x 18
 y 3
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4227,7 +4022,6 @@ arch shop_empty
 x 18
 y 4
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4242,7 +4036,6 @@ arch shop_empty
 x 18
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4257,7 +4050,6 @@ arch shop_empty
 x 18
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4272,7 +4064,6 @@ arch shop_empty
 x 18
 y 7
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4287,7 +4078,6 @@ arch shop_empty
 x 18
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4302,7 +4092,6 @@ arch shop_empty
 x 18
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4317,7 +4106,6 @@ arch shop_empty
 x 18
 y 10
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4332,7 +4120,6 @@ arch shop_empty
 x 18
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4347,7 +4134,6 @@ arch shop_empty
 x 18
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4362,7 +4148,6 @@ arch shop_empty
 x 18
 y 13
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4377,7 +4162,6 @@ arch shop_empty
 x 18
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4392,7 +4176,6 @@ arch shop_empty
 x 18
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4407,7 +4190,6 @@ arch shop_empty
 x 18
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4422,7 +4204,6 @@ arch shop_empty
 x 18
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4437,7 +4218,6 @@ arch shop_empty
 x 18
 y 18
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4479,7 +4259,6 @@ arch shop_empty
 x 19
 y 3
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4494,7 +4273,6 @@ arch shop_empty
 x 19
 y 4
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4509,7 +4287,6 @@ arch shop_empty
 x 19
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4524,7 +4301,6 @@ arch shop_empty
 x 19
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4539,7 +4315,6 @@ arch shop_empty
 x 19
 y 7
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4554,7 +4329,6 @@ arch shop_empty
 x 19
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4569,7 +4343,6 @@ arch shop_empty
 x 19
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4584,7 +4357,6 @@ arch shop_empty
 x 19
 y 10
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4599,7 +4371,6 @@ arch shop_empty
 x 19
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4614,7 +4385,6 @@ arch shop_empty
 x 19
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4629,7 +4399,6 @@ arch shop_empty
 x 19
 y 13
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4644,7 +4413,6 @@ arch shop_empty
 x 19
 y 14
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4659,7 +4427,6 @@ arch shop_empty
 x 19
 y 15
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4674,7 +4441,6 @@ arch shop_empty
 x 19
 y 16
 unique 1
-damned 1
 end
 arch teleporter
 hp 16
@@ -4689,7 +4455,6 @@ arch shop_empty
 x 19
 y 17
 unique 1
-damned 1
 end
 arch teleporter
 hp 16

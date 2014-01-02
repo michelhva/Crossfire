@@ -1,5 +1,5 @@
 arch map
-name Cornerbrook
+name Cornerbrook Estates
 difficulty 2
 region scorn
 width 25
@@ -8,6 +8,7 @@ enter_x 11
 enter_y 1
 msg
 Created:  2003-04-27 Avion
+Modified: 2013-08-12 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -435,10 +436,10 @@ x 2
 y 11
 end
 arch phole_3
-name hole
+name small hole
 slaying cornerbrook_under
 msg
-Icky, there is a bitter smell in here.
+Ick... there is a bitter smell in here...
 endmsg
 hp 1
 sp 1
@@ -571,12 +572,10 @@ y 6
 end
 arch fatwoman
 msg
-@match landlord|Witherspoon
-Yes old man Witherspoon is a real slum lord.
-@match move|leave|Move
-Bugs aren't so bad,
-you should see the other
-slums around here
+@match landlord|witherspoon
+Yes, old man Witherspoon is a real slum lord.
+@match move|leave
+Bugs aren't so bad, you should see the other slums around here.
 @match *
 I told the landlord about the bugs, but he's a tightwad.
 endmsg
@@ -753,13 +752,13 @@ end
 arch evergreen
 x 4
 y 11
-no_pass 1
+move_block all
 blocksview 1
 end
 arch evergreen
 x 4
 y 12
-no_pass 1
+move_block all
 blocksview 1
 end
 arch woodfloor
@@ -929,8 +928,13 @@ x 5
 y 14
 end
 arch woman
+msg
+@match *
+Get lost! You think you can just barge into other people's houses?
+endmsg
 x 5
 y 14
+randomitems jail
 end
 arch woodfloor
 x 5
@@ -1032,6 +1036,8 @@ y 7
 end
 arch fatman
 msg
+@match eat
+I woke up this morning to find that most of our food was gone!
 @match *
 Gods! I can't seem to find anything to eat around here!
 endmsg
@@ -2179,9 +2185,8 @@ x 14
 end
 arch sign_w
 msg
-**CornerBrook Estates**
-Highly Desirable Condominimums at
-Afordable Rates.
+Cornerbrook Estates
+Highly desirable condominimums at affordable rates!
 endmsg
 x 14
 end
@@ -2482,6 +2487,10 @@ arch woodfloor
 x 15
 y 22
 end
+arch wheelbarrow
+x 15
+y 22
+end
 arch woodfloor
 x 15
 y 23
@@ -2674,7 +2683,7 @@ arch woodfloor
 x 17
 y 3
 end
-arch chair
+arch chair_1.2
 x 17
 y 3
 end
@@ -2705,21 +2714,14 @@ end
 arch sailor
 name Swabbie
 msg
-@match Mark|mark
-Ya I know him,
-he told me not to tell anyone he was
-at Goth..Oh you said 'Mark'...
-I never heard of him.
+@match mark
+Ya I know him, he told me not to tell anyone he was at Goth... Oh you said 'Mark'... I never heard of him.
 @match wife|married
-Can't cook, can't clean and keeps
-stabbin me alla time.
-Never marry a pirate lass...
-@match sheep|Chancy
-Chancy is my pet sheep, and don't you make any
-wise cracks about it.
+Can't cook, can't clean and keeps stabbin me alla' time. Never marry a pirate lass...
+@match sheep|chancy
+Chancy is my pet sheep, and don't you make any wise cracks about it.
 @match *
-I never should have married her.
-I should have stayed at sea.
+I never should have married her. I should have stayed at sea.
 endmsg
 x 17
 y 8
@@ -2764,9 +2766,11 @@ x 17
 y 14
 end
 arch stove
+name cooking stove
 x 17
 y 14
-type 0
+identified 1
+is_cauldron 0
 end
 arch woodfloor
 x 17
@@ -2797,20 +2801,15 @@ x 17
 y 20
 end
 arch woman
-msg
-@match staff|Staff|stick|Stick
-You'll know its his because he carved
-his name on it.
-@match father|Father|ear|earhorn
-My father is a bit hard of hearing.
-He lost his earhorn too...
-@match *
-My father lost his walking stick,
-if you find it please bring it back to him.
-endmsg
+name Molly
 x 17
 y 20
+type 0
 randomitems jail
+stand_still 1
+arch npc_dialog
+name scorn/houses/molly_malone.msg
+end
 end
 arch woodfloor
 x 17
@@ -2881,7 +2880,7 @@ end
 arch door_1
 x 18
 y 5
-no_pass 0
+move_block 0
 end
 arch light3
 x 18
@@ -3049,18 +3048,14 @@ y 3
 end
 arch pirate_lass
 msg
-@match ahoy|Ahoy
+@match ahoy|hi|hello|greet
 Hey sailor, want some treasure?
 @match old|pirate|Swabbie
-I shouldn't have married him,
-I should have stuck with Tomasso the Pirate.
-I hear he found a treasure map.
-@match Tomasso|tomasso|map|Map
-There was a real pirate,
-he set sail for Port Joseph.
-Said he found a treasure map.
+I shouldn't have married him, I should have stuck with Tomasso the Pirate. I hear he found a treasure map.
+@match tomasso|map|treasure
+Now he was a real pirate! He set sail for Port Joseph. Said he found a treasure map.
 @match *
-Never marry an old pirate..
+Never marry an old pirate...
 endmsg
 x 19
 y 3
@@ -3207,8 +3202,10 @@ x 20
 y 3
 end
 arch stove
+name cooking stove
 x 20
 y 3
+identified 1
 is_cauldron 0
 end
 arch woodfloor
@@ -3449,37 +3446,9 @@ arch woodfloor
 x 21
 y 18
 end
-arch check_inv
-slaying Gramp's walking stick
-x 21
-y 18
-last_heal 1
-connected 5
-end
-arch check_inv
-slaying Gramp's earhorn
-x 21
-y 18
-last_heal 1
-connected 6
-end
 arch woodfloor
 x 21
 y 19
-end
-arch check_inv
-slaying Gramp's walking stick
-x 21
-y 19
-last_heal 1
-connected 5
-end
-arch check_inv
-slaying Gramp's earhorn
-x 21
-y 19
-last_heal 1
-connected 6
 end
 arch woodfloor
 x 21
@@ -3571,19 +3540,18 @@ arch woodfloor
 x 22
 y 8
 end
-arch woodfloor
-x 22
-y 9
-end
 arch magic_ear
 msg
 @match mumblypeg
-Bah!  Baaah!
-(I think he wants you to follow him...)
+Bah!  Baaah! (I think he wants you to follow him...)
 endmsg
 x 22
 y 9
 connected 3
+end
+arch woodfloor
+x 22
+y 9
 end
 arch woodfloor
 x 22
@@ -3644,15 +3612,12 @@ end
 arch sage
 name Gramps Malone
 msg
-@match staff|Staff|walking|Walking
+@match staff|walking
 Yup lost my walking stick - have ya seen it?
-@match stick|Stick
-Ya say yer sick?  That's a darn shame!
-I get a touch of the wind myself sometimes...
-@match ear|Ear
-You looking for deer?
-Used to be a woodsman myself.
-Try the woods to the east - lots of game there...
+@match stick
+Ya say yer sick?  That's a darn shame! I get a touch of the wind myself sometimes...
+@match ear
+You looking for deer? Used to be a woodsman myself.  Try the woods to the east - lots of game there...
 match woods|east
 Don't mumble - out with it now...
 @match *
@@ -3665,33 +3630,14 @@ randomitems jail
 monster 0
 can_cast_spell 0
 stand_still 1
+arch NPCGift
+arch gem
+nrof 5
 end
-arch magic_mouth
-msg
-You found my staff, thanks.
-Heres a little something for you.
-Don't spend it all on sweets now.
-endmsg
-food 1
-x 22
-y 19
-connected 5
-move_on 0
 end
-arch magic_mouth
-msg
-My horn!  Thanks.
-Here's a little spending money for your trouble.
-Now I can hear again.
-....err drat now she'll be gabbin
-at me all day.  Maybe I better hide
-it again...
-endmsg
-food 1
-x 22
-y 19
-connected 6
-move_on 0
+arch npc_dialog
+name scorn/houses/gramps_malone.msg
+end
 end
 arch woodfloor
 x 22
@@ -3732,7 +3678,7 @@ slaying Chancy
 x 23
 y 1
 speed 1.0
-connected 6
+connected 8
 end
 arch brush
 x 23
@@ -3889,6 +3835,20 @@ end
 arch blocked
 x 23
 y 21
+end
+arch creator
+name creator_put_key
+other_arch food
+x 23
+y 24
+connected 6
+end
+arch altar_trigger
+name altar_put_key
+food 1
+x 23
+y 24
+connected 8
 end
 arch grass
 x 24
@@ -4064,42 +4024,19 @@ x 24
 y 21
 end
 arch teleporter
-hp 20
-sp 18
-x 24
-y 22
-speed 0.0
-connected 6
-end
-arch gem
-x 24
-y 22
-nrof 3
-end
-arch teleporter
-hp 20
-sp 18
-x 24
-y 23
-speed 0.0
-connected 5
-end
-arch gem
-x 24
-y 23
-nrof 2
-end
-arch teleporter
 hp 22
 sp 1
 x 24
 y 24
 speed 0.0
-connected 6
+connected 8
 end
 arch key2
 name Mark's key
 slaying marks_key
 x 24
 y 24
+arch quest_advance_pickup
+name scorn/CoffeeGoose 47>50 20-45>60
+end
 end

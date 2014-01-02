@@ -1,9 +1,14 @@
 arch map
-name Haunted House
-difficulty 1
+name Creepy House, Dungeon Level 2
+difficulty 12
 region scorn
 width 25
 height 25
+enter_x 12
+enter_y 11
+msg
+Modified: 2012-01-10 Rick Tanner
+endmsg
 end
 arch dirtfloor
 end
@@ -1389,8 +1394,7 @@ end
 arch mine3
 x 9
 y 12
-no_pass 0
-can_pass_thru 1
+move_block 0
 end
 arch dirtfloor
 x 9
@@ -1546,6 +1550,10 @@ arch wraith
 x 10
 y 14
 end
+arch dungeon_floor
+x 10
+y 15
+end
 arch mine2
 x 10
 y 15
@@ -1679,6 +1687,10 @@ arch dungeon_floor
 x 11
 y 14
 end
+arch dungeon_floor
+x 11
+y 15
+end
 arch mine16
 x 11
 y 15
@@ -1780,8 +1792,7 @@ end
 arch mine2
 x 12
 y 8
-no_pass 0
-can_pass_thru 1
+move_block 0
 end
 arch dungeon_floor
 x 12
@@ -1816,11 +1827,14 @@ arch dungeon_floor
 x 12
 y 14
 end
+arch dungeon_floor
+x 12
+y 15
+end
 arch mine2
 x 12
 y 15
-no_pass 0
-can_pass_thru 1
+move_block 0
 end
 arch dirtfloor
 x 12
@@ -1944,6 +1958,10 @@ arch dungeon_floor
 x 13
 y 14
 end
+arch dungeon_floor
+x 13
+y 15
+end
 arch mine16
 x 13
 y 15
@@ -2042,6 +2060,10 @@ arch dungeon_floor
 x 14
 y 7
 end
+arch dungeon_floor
+x 14
+y 8
+end
 arch mine2
 x 14
 y 8
@@ -2077,6 +2099,10 @@ end
 arch wraith
 x 14
 y 14
+end
+arch dungeon_floor
+x 14
+y 15
 end
 arch mine2
 x 14
@@ -2203,8 +2229,7 @@ end
 arch mine3
 x 15
 y 12
-no_pass 0
-can_pass_thru 1
+move_block 0
 end
 arch dungeon_floor
 x 15
@@ -2222,7 +2247,7 @@ arch mine3
 x 15
 y 14
 end
-arch dungeon_floor
+arch dirtfloor
 x 15
 y 15
 end
@@ -2810,6 +2835,9 @@ arch mine2
 x 19
 y 24
 end
+arch dungeon_floor
+x 20
+end
 arch mine2
 x 20
 end
@@ -2968,6 +2996,9 @@ end
 arch mine2
 x 20
 y 24
+end
+arch dungeon_floor
+x 21
 end
 arch mine2
 x 21
@@ -3143,6 +3174,9 @@ arch mine2
 x 21
 y 24
 end
+arch dungeon_floor
+x 22
+end
 arch mine2
 x 22
 end
@@ -3218,7 +3252,6 @@ end
 arch mine2
 x 22
 y 7
-can_pass_thru 1
 end
 arch dirtfloor
 x 22
@@ -3308,6 +3341,9 @@ arch mine2
 x 22
 y 24
 end
+arch dungeon_floor
+x 23
+end
 arch mine2
 x 23
 end
@@ -3382,7 +3418,7 @@ end
 arch mine2
 x 23
 y 7
-no_pass 0
+move_block 0
 end
 arch dirtfloor
 x 23
@@ -3475,6 +3511,9 @@ end
 arch mine2
 x 23
 y 24
+end
+arch dungeon_floor
+x 24
 end
 arch mine9
 x 24

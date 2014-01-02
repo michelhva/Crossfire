@@ -1,15 +1,16 @@
 arch map
-name Scorn Sale shop
+name Scorn Sale Shop
+difficulty 3
 region scorn
 shopitems *:10
 shopmax 1500
 width 21
 height 20
-enter_x 9
-enter_y 16
+enter_x 10
+enter_y 17
 msg
 Created:  2004-07-01 Gene Alexander
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -242,11 +243,11 @@ x 2
 y 2
 end
 arch palm
-name House Plant
+name house plant
 x 2
 y 2
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 2
@@ -301,11 +302,11 @@ x 2
 y 15
 end
 arch palm
-name House Plant
+name house plant
 x 2
 y 15
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 2
@@ -348,11 +349,11 @@ x 3
 y 1
 end
 arch palm
-name House Plant
+name house plant
 x 3
 y 1
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -470,11 +471,11 @@ x 3
 y 16
 end
 arch palm
-name House Plant
+name house plant
 x 3
 y 16
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 3
@@ -571,6 +572,10 @@ end
 arch shop_empty
 x 4
 y 16
+end
+arch dungeon_magic
+x 4
+y 17
 end
 arch woodfloor
 x 4
@@ -832,6 +837,10 @@ arch shop_empty
 x 6
 y 16
 end
+arch dungeon_magic
+x 6
+y 17
+end
 arch woodfloor
 x 6
 y 17
@@ -870,16 +879,20 @@ arch woodfloor
 x 7
 y 3
 end
+arch dungeon_magic
+x 7
+y 4
+end
 arch woodfloor
 x 7
 y 4
 end
 arch palm
-name House Plant
+name house plant
 x 7
 y 4
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 7
@@ -892,6 +905,10 @@ end
 arch woodfloor
 x 7
 y 7
+end
+arch dungeon_magic
+x 7
+y 8
 end
 arch woodfloor
 x 7
@@ -985,6 +1002,10 @@ arch woodfloor
 x 8
 y 3
 end
+arch dungeon_magic
+x 8
+y 4
+end
 arch woodfloor
 x 8
 y 4
@@ -993,7 +1014,7 @@ arch bench_1_4
 name Service Counter
 x 8
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 8
@@ -1008,11 +1029,11 @@ x 8
 y 7
 end
 arch palm
-name House Plant
+name house plant
 x 8
 y 7
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 8
@@ -1060,6 +1081,10 @@ arch dwall_2_2_2
 x 8
 y 13
 end
+arch dungeon_magic
+x 8
+y 14
+end
 arch woodfloor
 x 8
 y 14
@@ -1068,6 +1093,10 @@ arch dwall_win1
 x 8
 y 14
 end
+arch dungeon_magic
+x 8
+y 15
+end
 arch woodfloor
 x 8
 y 15
@@ -1075,6 +1104,10 @@ end
 arch dwall_win1
 x 8
 y 15
+end
+arch dungeon_magic
+x 8
+y 16
 end
 arch woodfloor
 x 8
@@ -1126,6 +1159,10 @@ arch woodfloor
 x 9
 y 3
 end
+arch dungeon_magic
+x 9
+y 4
+end
 arch woodfloor
 x 9
 y 4
@@ -1134,7 +1171,7 @@ arch bench_2_1_2
 name Service Counter
 x 9
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 9
@@ -1147,6 +1184,10 @@ end
 arch woodfloor
 x 9
 y 7
+end
+arch dungeon_magic
+x 9
+y 8
 end
 arch woodfloor
 x 9
@@ -1182,6 +1223,10 @@ name No Sale Area
 x 9
 y 12
 end
+arch dungeon_magic
+x 9
+y 13
+end
 arch woodfloor
 x 9
 y 13
@@ -1207,12 +1252,7 @@ arch magic_mouth
 name A tiny fairy voice
 msg
 A tiny fairy appears and says in a tiny voice:
-"The first floor is for selling your less desirables
-for money. The second floor is for trading,
-charity and pawn shop. There is an "identify
-items" table on the second floor. Items dropped
-in the pawn shop will stay ... oh, Peter's calling
-me. Bye!"
+"The first floor is for selling your less desirables for money.  The second floor is for trading, charity and pawn shop.  There is an "identify items" table on the second floor.  Items dropped in the pawn shop will stay ... oh, Peter's calling me. Bye!"
 The tiny fairy disappears.
 endmsg
 x 9
@@ -1235,7 +1275,7 @@ x 9
 y 17
 end
 arch palm
-name House Plant
+name house plant
 x 9
 y 17
 glow_radius 2
@@ -1244,13 +1284,18 @@ arch woodfloor
 x 9
 y 18
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 9
 y 18
+end
+arch dungeon_magic
+x 9
+y 19
 end
 arch cobblestones2
 x 9
 y 19
+move_block all
 end
 arch woodfloor
 x 10
@@ -1278,16 +1323,16 @@ arch woodfloor
 x 10
 y 3
 end
+arch dungeon_magic
+x 10
+y 4
+end
 arch magic_ear
 msg
-@match P|plants
-Yeah! I like plants. So what? I also like smashing
-the heads of bothersome pipsqueaks like you.
-Quit bothering me.
+@match plants
+Yeah! I like plants.  So what? I also like smashing the heads of bothersome pipsqueaks like you.  Quit bothering me.
 @match *
-Are you blind? Can you not see I am busy!
-Go talk to Oorgh on the second floor! I'm sure
-that lazy troll has nothing better to do.
+Are you blind? Can you not see I am busy!  Go talk to Oorgh on the second floor! I'm sure that lazy troll has nothing better to do.
 endmsg
 x 10
 y 4
@@ -1300,7 +1345,7 @@ arch bench_2_1_2
 name Service Counter
 x 10
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 10
@@ -1389,6 +1434,10 @@ arch shop_mat
 x 10
 y 12
 end
+arch dungeon_magic
+x 10
+y 13
+end
 arch woodfloor
 x 10
 y 13
@@ -1396,6 +1445,10 @@ end
 arch dwall_win2
 x 10
 y 13
+end
+arch dungeon_magic
+x 10
+y 14
 end
 arch woodfloor
 x 10
@@ -1409,12 +1462,7 @@ arch magic_mouth
 name A tiny fairy voice
 msg
 A tiny fairy appears and says in a tiny voice:
-"The first floor is for selling your less desirables
-for money. The second floor is for trading,
-charity and pawn shop. There is an "identify
-items" table on the second floor. Items dropped
-in the pawn shop will stay ... oh, Peter's calling
-me. Bye!"
+"The first floor is for selling your less desirables for money.  The second floor is for trading, charity and pawn shop.  There is an "identify items" table on the second floor.  Items dropped in the pawn shop will stay ... oh, Peter's calling me. Bye!"
 The tiny fairy disappears.
 endmsg
 x 10
@@ -1432,7 +1480,11 @@ arch woodfloor
 x 10
 y 17
 end
-arch oakdoor
+arch woodfloor
+x 10
+y 18
+end
+arch oakdoor_2
 slaying /world/world_105_115
 msg
 Thanks for your business!
@@ -1440,19 +1492,16 @@ endmsg
 hp 1
 sp 32
 x 10
-y 17
-end
-arch woodfloor
-x 10
 y 18
 end
-arch dwall_2_1_2
+arch dungeon_magic
 x 10
-y 18
+y 19
 end
 arch cobblestones2
 x 10
 y 19
+move_block all
 end
 arch woodfloor
 x 11
@@ -1476,6 +1525,10 @@ arch woodfloor
 x 11
 y 3
 end
+arch dungeon_magic
+x 11
+y 4
+end
 arch woodfloor
 x 11
 y 4
@@ -1484,7 +1537,7 @@ arch bench_2_1_2
 name Service Counter
 x 11
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 11
@@ -1497,6 +1550,10 @@ end
 arch woodfloor
 x 11
 y 7
+end
+arch dungeon_magic
+x 11
+y 8
 end
 arch woodfloor
 x 11
@@ -1532,6 +1589,10 @@ name No Sale Area
 x 11
 y 12
 end
+arch dungeon_magic
+x 11
+y 13
+end
 arch woodfloor
 x 11
 y 13
@@ -1545,9 +1606,9 @@ x 11
 y 14
 end
 arch altar
-name altar of detect curse (25 gp)
+name altar of detect curse (25 sp)
 slaying money
-food 250
+food 25
 x 11
 y 14
 arch spell_detect_curse
@@ -1557,12 +1618,7 @@ arch magic_mouth
 name A tiny fairy voice
 msg
 A tiny fairy appears and says in a tiny voice:
-"The first floor is for selling your less desirables
-for money. The second floor is for trading,
-charity and pawn shop. There is an "identify
-items" table on the second floor. Items dropped
-in the pawn shop will stay ... oh, Peter's calling
-me. Bye!"
+"The first floor is for selling your less desirables for money.  The second floor is for trading, charity and pawn shop.  There is an "identify items" table on the second floor.  Items dropped in the pawn shop will stay ... oh, Peter's calling me. Bye!"
 The tiny fairy disappears.
 endmsg
 x 11
@@ -1585,7 +1641,7 @@ x 11
 y 17
 end
 arch palm
-name House Plant
+name house plant
 x 11
 y 17
 glow_radius 2
@@ -1594,13 +1650,18 @@ arch woodfloor
 x 11
 y 18
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 11
 y 18
+end
+arch dungeon_magic
+x 11
+y 19
 end
 arch cobblestones2
 x 11
 y 19
+move_block all
 end
 arch woodfloor
 x 12
@@ -1624,6 +1685,10 @@ arch woodfloor
 x 12
 y 3
 end
+arch dungeon_magic
+x 12
+y 4
+end
 arch woodfloor
 x 12
 y 4
@@ -1632,7 +1697,7 @@ arch bench_1_3
 name Service Counter
 x 12
 y 4
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 12
@@ -1647,11 +1712,11 @@ x 12
 y 7
 end
 arch palm
-name House Plant
+name house plant
 x 12
 y 7
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 12
@@ -1679,12 +1744,11 @@ x 12
 y 11
 end
 arch sign
+name Notice
 msg
 NOTICE!
 -=<>=-
-The No Sale Area floor will NOT pay you for items
-dropped there. Use the white tiles for dropping
-items for which you wish to be paid.
+The No Sale Area floor will NOT pay you for items dropped there.  Use the white tiles for dropping items for which you wish to be paid.
 -=<>=-
 The Management
 endmsg
@@ -1709,6 +1773,10 @@ arch dwall_2_2_3
 x 12
 y 13
 end
+arch dungeon_magic
+x 12
+y 14
+end
 arch woodfloor
 x 12
 y 14
@@ -1717,6 +1785,10 @@ arch dwall_win1
 x 12
 y 14
 end
+arch dungeon_magic
+x 12
+y 15
+end
 arch woodfloor
 x 12
 y 15
@@ -1724,6 +1796,10 @@ end
 arch dwall_win1
 x 12
 y 15
+end
+arch dungeon_magic
+x 12
+y 16
 end
 arch woodfloor
 x 12
@@ -1775,16 +1851,20 @@ arch woodfloor
 x 13
 y 3
 end
+arch dungeon_magic
+x 13
+y 4
+end
 arch woodfloor
 x 13
 y 4
 end
 arch palm
-name House Plant
+name house plant
 x 13
 y 4
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 13
@@ -1797,6 +1877,10 @@ end
 arch woodfloor
 x 13
 y 7
+end
+arch dungeon_magic
+x 13
+y 8
 end
 arch woodfloor
 x 13
@@ -2004,6 +2088,10 @@ arch shop_empty
 x 14
 y 16
 end
+arch dungeon_magic
+x 14
+y 17
+end
 arch woodfloor
 x 14
 y 17
@@ -2208,6 +2296,10 @@ arch shop_empty
 x 16
 y 16
 end
+arch dungeon_magic
+x 16
+y 17
+end
 arch woodfloor
 x 16
 y 17
@@ -2235,11 +2327,11 @@ x 17
 y 1
 end
 arch palm
-name House Plant
+name house plant
 x 17
 y 1
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -2357,11 +2449,11 @@ x 17
 y 16
 end
 arch palm
-name House Plant
+name house plant
 x 17
 y 16
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 17
@@ -2399,11 +2491,11 @@ x 18
 y 2
 end
 arch palm
-name House Plant
+name house plant
 x 18
 y 2
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 18
@@ -2458,11 +2550,11 @@ x 18
 y 15
 end
 arch palm
-name House Plant
+name house plant
 x 18
 y 15
 glow_radius 2
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 18

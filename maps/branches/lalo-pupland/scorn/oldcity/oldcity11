@@ -1,11 +1,14 @@
 arch map
 name Old City
-difficulty 1
+difficulty 12
 region scornoldcity
 width 20
 height 40
+enter_x 4
+enter_y 15
 msg
 Created:  1993-10-05 skud the great (tvangod@ecst.csuchico.edu)
+Modified: 2012-01-15 Rick Tanner
 endmsg
 tile_path_1 oldcity14
 tile_path_3 oldcity10
@@ -1217,14 +1220,14 @@ arch locked_door1
 name Temple Door
 slaying temple
 msg
-Locked
+Locked.
 endmsg
 x 4
 y 31
 end
 arch magic_mouth
 msg
-You enter a very old temple
+You enter a very old temple.
 endmsg
 x 4
 y 32
@@ -1448,7 +1451,7 @@ arch pstone_1
 x 5
 y 27
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 5
 y 27
 end
@@ -1527,9 +1530,7 @@ end
 arch scroll
 name Temple Scroll
 msg
-Bring forth the Cup.
-Bring forth the Crown.
-This will open your way down
+Bring forth the Cup.  Bring forth the Crown.  This will open your way down.
 endmsg
 x 5
 y 36
@@ -3431,7 +3432,7 @@ arch medium_stones
 x 14
 y 3
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 14
 y 3
 end
@@ -3854,7 +3855,7 @@ arch medium_stones
 x 16
 y 3
 end
-arch wwall_2_2_4
+arch wwall_1_2
 x 16
 y 3
 end

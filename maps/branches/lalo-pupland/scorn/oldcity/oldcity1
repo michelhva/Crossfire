@@ -1,6 +1,6 @@
 arch map
 name Old City
-difficulty 1
+difficulty 12
 region scornoldcity
 width 20
 height 20
@@ -8,6 +8,7 @@ enter_x 18
 enter_y 11
 msg
 Created:  1993-10-16
+Modified: 2012-03-27 Rick Tanner
 endmsg
 tile_path_1 oldcity10
 tile_path_3 oldcity2
@@ -26,7 +27,7 @@ end
 arch large_stones
 y 2
 end
-arch awall_2_1_1
+arch awall_1_2
 y 2
 end
 arch large_stones
@@ -35,7 +36,7 @@ end
 arch large_stones
 y 4
 end
-arch awall_2_1_1
+arch awall_1_1
 y 4
 end
 arch large_stones
@@ -163,7 +164,7 @@ arch large_stones
 x 1
 y 7
 end
-arch awall_2_1_2
+arch awall_1_3
 x 1
 y 7
 end
@@ -770,11 +771,7 @@ y 5
 end
 arch magic_mouth
 msg
-You see a small stream, is winds its way
-through the ruble of the old city. You see
-several pipes running upwards and you realize
-that this stream provides water to the city
-streets above
+You see a small stream, is winds its way through the rubble of the old city.  You see several pipes running upwards and you realize that this stream provides water to the city streets above.
 endmsg
 x 7
 y 6
@@ -1395,8 +1392,7 @@ y 17
 end
 arch magic_mouth
 msg
-You see a hole in the south wall beyond the
-ruble
+You see a hole in the south wall beyond the rubble.
 endmsg
 x 12
 y 18
@@ -1451,8 +1447,7 @@ arch small_troll
 name Gnad
 msg
 @match *
-MY TREASURE!!!! MY TREASURE!!!!
-Stay away!!!
+MY TREASURE!!!! MY TREASURE!!!! Stay away!!!
 endmsg
 hp 20
 maxhp 20
@@ -2126,9 +2121,7 @@ end
 arch letter
 name blood smeared letter
 msg
-t h eee old city is infested with be asts!!
-The....monsters have been coming throu....
-through....a......a.......
+T h eee old city is infested with be asts!! The....monsters have been coming throu.... through....a......a.......
 endmsg
 x 18
 y 10

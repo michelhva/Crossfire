@@ -8,8 +8,11 @@ shopgreed 1.40000
 shopmax 2000
 width 11
 height 11
+enter_x 10
+enter_y 5
 msg
-Created:  2000-02-28
+Created:  2000-10-28
+Modified: 2013-03-18 Kevin Zheng
 endmsg
 end
 arch flagstone
@@ -236,6 +239,9 @@ end
 arch cwall_1_3
 x 4
 end
+arch swall_1_1_half
+x 4
+end
 arch dungeon_magic
 x 4
 y 1
@@ -244,7 +250,7 @@ arch flagstone
 x 4
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 4
 y 1
 end
@@ -340,11 +346,15 @@ arch flagstone
 x 4
 y 9
 end
-arch swall_1_2
+arch swall_2_1_1
 x 4
 y 9
 end
 arch flagstone
+x 4
+y 10
+end
+arch swall_1_2_half
 x 4
 y 10
 end
@@ -355,7 +365,7 @@ end
 arch flagstone
 x 5
 end
-arch oakdoor
+arch oakdoor_2
 slaying arena
 hp 1
 sp 31
@@ -423,7 +433,7 @@ arch bench_1_1
 name desk
 x 6
 y 1
-no_pass 1
+move_block all
 end
 arch flagstone
 x 6
@@ -433,7 +443,7 @@ arch bench_2_2_1
 name desk
 x 6
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 6
@@ -463,7 +473,7 @@ arch bench_2_2_2
 name desk
 x 6
 y 8
-no_pass 1
+move_block all
 end
 arch flagstone
 x 6
@@ -473,7 +483,7 @@ arch bench_1_2
 name desk
 x 6
 y 9
-no_pass 1
+move_block all
 end
 arch flagstone
 x 6
@@ -501,15 +511,16 @@ arch bench_2_1_2
 name desk
 x 7
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 7
 y 3
 end
 arch booze_table
-name serving popcorn (30 g.c @)
+name Popcorn (30 gold each)
 other_arch bag_popcorn
+sp 1
 food 30
 x 7
 y 3
@@ -531,7 +542,8 @@ x 7
 y 7
 end
 arch booze_table
-name serving booze (10 g.c @)
+name Booze (10 gold each)
+sp 1
 food 10
 x 7
 y 7
@@ -544,7 +556,7 @@ arch bench_2_1_2
 name desk
 x 7
 y 8
-no_pass 1
+move_block all
 end
 arch flagstone
 x 7
@@ -569,11 +581,13 @@ x 8
 y 1
 end
 arch man
-name vendor
+name Randy
+title the vendor
 msg
+@match hi|hello|greetings
+Hello, can I get you something?
 @match *
-Drop gold on the tables to buy popcorn
-and beer.
+Just drop 30 gold to get a bag of popcorn.
 endmsg
 x 8
 y 1
@@ -586,7 +600,7 @@ arch bench_2_2_3
 name desk
 x 8
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -596,7 +610,7 @@ arch bench_2_1_1
 name desk
 x 8
 y 3
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -606,7 +620,7 @@ arch bench_2_2_1
 name desk
 x 8
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -620,7 +634,7 @@ arch bench_2_2_2
 name desk
 x 8
 y 6
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -630,7 +644,7 @@ arch bench_2_1_1
 name desk
 x 8
 y 7
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -640,19 +654,22 @@ arch bench_2_2_4
 name desk
 x 8
 y 8
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
 y 9
 end
 arch man
-name vendor
+name Ralph
+title the vendor
 msg
+@match hi|hello|greetings
+Howdy, what can I get ya?
 @match *
-Drop gold on the tables to buy popcorn
-and beer.
+Just drop 10 gold to get a bottle of booze.
 endmsg
+face man2.151
 x 8
 y 9
 end
@@ -694,7 +711,7 @@ arch bench_1_3
 name desk
 x 9
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 9
@@ -708,7 +725,7 @@ arch bench_1_3
 name desk
 x 9
 y 6
-no_pass 1
+move_block all
 end
 arch flagstone
 x 9
@@ -776,7 +793,7 @@ arch flagstone
 x 10
 y 5
 end
-arch oakdoor
+arch oakdoor_1
 slaying arena
 hp 3
 sp 33

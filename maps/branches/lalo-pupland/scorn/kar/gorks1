@@ -1,11 +1,14 @@
 arch map
-name Gork's Grovel
-difficulty 1
+name Gork's Grovel, Level 1
+difficulty 8
 region scorn
 width 20
 height 20
-enter_x 9
-enter_y 16
+enter_x 10
+enter_y 17
+msg
+Modified: 2012-03-16 Rick Tanner
+endmsg
 end
 arch grass
 end
@@ -341,18 +344,15 @@ arch card
 name Gate Pass
 slaying gate_pass
 msg
-The holder of this card is allowed free
-access into and out of the City of Scorn
-to the rest of the continent without
-further charges and penalties. The City
-of Scorn reserves the right to revoke
-said access at any time of its choosing
-without recompense or liability.
+The holder of this card is allowed free access into and out of the City of Scorn to the rest of the continent without further charges and penalties.  The City of Scorn reserves the right to revoke said access at any time of its choosing without recompense or liability.
 endmsg
 x 3
 y 3
 value 800
 identified 1
+arch quest_advance_pickup
+name scorn/GatePass 0-10>30
+end
 end
 arch woodfloor
 x 3
@@ -1158,7 +1158,7 @@ y 16
 end
 arch sign_e
 msg
-'ere be Gork's.  you be eatn if youse come en here.
+'Ere be Gork's.   You be eatn if youse come en here.
 -GORK
 endmsg
 x 9
