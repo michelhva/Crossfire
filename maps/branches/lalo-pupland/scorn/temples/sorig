@@ -1,13 +1,14 @@
 arch map
-name Temple of Sorig
-difficulty 1
+name Temple to Sorig
+difficulty 3
 region scorn
 width 18
 height 17
 enter_x 8
-enter_y 14
+enter_y 15
 msg
-Created:  1999-01-24 Raphael Quinet (quinet@gamers.org)
+Created:  1999-01-24 Raphaël Quinet (raphael@gimp.org)
+Modified: 2008-10-26 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -816,9 +817,9 @@ end
 arch conjurer
 name high priest of Sorig
 msg
-@match Sorig|sorig
+@match sorig
 Sorig the almighty, Lord of the Skies!
-@match Skies|skies|Sky|sky
+@match skies|sky
 The kingdom of Sorig has no limits.
 @match *
 Fear the wrath of Sorig!

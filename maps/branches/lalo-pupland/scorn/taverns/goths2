@@ -1,15 +1,17 @@
 arch map
-name Goth's Tavern
-difficulty 1
+name Goth's Tavern, Guest Rooms
+difficulty 4
 region scorn
 width 33
 height 30
+enter_x 31
+enter_y 1
 msg
-The nightman down the hall spot you and
-shout "HALT! THIEF!!!"
-It seems they have mistaken you with
-somebody else.
+Modified: 2012-03-29 Rick Tanner
 endmsg
+maplore
+The nightman down the hall spots you and shouts "HALT! THIEF!!!"  It seems they have mistaken you with somebody else.
+endmaplore
 end
 arch cobblestones2
 end
@@ -1903,15 +1905,13 @@ arch card
 name Port Pass
 slaying port_pass
 msg
-This is a merchants pass allowing paid
-access between the City of Scorn and the
-Port of Scorn, for the purposes of trade
-and commerce. Animal or plants entering
-the city of scorn must be quarantined in
-the Quarantine Warehouse in the port area
+This is a merchants pass allowing paid access between the City of Scorn and the Port of Scorn, for the purposes of trade and commerce.  Animal or plants entering the city of scorn must be quarantined in the Quarantine Warehouse in the port area.
 endmsg
 value 2500
 identified 1
+arch quest_advance_pickup
+name scorn/PortPass 0-10>30
+end
 end
 end
 arch cobblestones2
@@ -3797,20 +3797,16 @@ end
 arch thief_1
 name a sly thief
 msg
-@match apprentice|Apprentice
-ok ok...it figures...be quiet and lets
-open this chest.
-@match chest|Chest
-Yeah, under the bed.....geez did you
-study your rogue book?
-@match name|Name
-Just call me Toad...shhhh
-@match job|Job
-ohhhhh...newbies! I hate them!
+@match apprentice
+Ok ok... it figures... be quiet and lets open this chest.
+@match chest
+Yeah, under the bed..... geez did you study your rogue book?
+@match name
+Just call me Toad... shhhh.
+@match job
+Ohhhhh... newbies! I hate them!
 @match *
-shhhhhhhhhhhhhhhh...hey man..he'll hear
-you. Are you that apprentice they
-promised me
+Shhhhhhhhhhhhhhhh... hey man.. he'll hear you.  Are you that apprentice they promised me?
 endmsg
 x 19
 y 19
@@ -6046,8 +6042,8 @@ y 1
 end
 arch stair_3_down
 slaying goths
-hp 32
-sp 1
+hp 34
+sp 3
 x 31
 y 1
 end

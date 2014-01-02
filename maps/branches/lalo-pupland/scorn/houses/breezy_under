@@ -1,6 +1,6 @@
 arch map
 name Under Breezy Acres
-difficulty 2
+difficulty 9
 region scorn
 darkness 3
 width 30
@@ -9,7 +9,7 @@ enter_x 14
 enter_y 8
 msg
 Created:  2003-05-11 Avion
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-01-08 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -3774,8 +3774,7 @@ y 25
 end
 arch sign
 msg
-Pull the handle to fire the device.
-This is powerful magic - beware.
+Pull the handle to fire the device.  This is powerful magic - beware.
 endmsg
 x 21
 y 25
@@ -4921,7 +4920,7 @@ arch statue
 face statue_gargoyle.111
 x 28
 y 16
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -4931,7 +4930,7 @@ arch statue
 face statue_gargoyle.111
 x 28
 y 17
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -4949,7 +4948,7 @@ arch statue
 face statue_knight.111
 x 28
 y 18
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -4959,7 +4958,7 @@ arch statue
 face statue_gargoyle.111
 x 28
 y 19
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -4969,7 +4968,7 @@ arch statue
 face statue_gargoyle.111
 x 28
 y 20
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -4979,7 +4978,7 @@ arch statue
 face statue_gargoyle.111
 x 28
 y 21
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -4997,7 +4996,7 @@ arch statue
 face statue_knight.111
 x 28
 y 22
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -5015,7 +5014,7 @@ arch statue
 face statue_knight.111
 x 28
 y 23
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -5025,7 +5024,7 @@ arch statue
 face statue_gargoyle.111
 x 28
 y 24
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -5035,7 +5034,7 @@ arch statue
 face statue_gargoyle.111
 x 28
 y 25
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 28
@@ -5262,6 +5261,10 @@ end
 arch dun_2_1_1
 x 29
 y 25
+end
+arch dungeon_floor
+x 29
+y 26
 end
 arch dun_2_2_4
 x 29

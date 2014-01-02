@@ -1,5 +1,5 @@
 arch map
-name Jail
+name Scorn Jail
 reset_timeout 7200
 difficulty 6
 region scorn
@@ -7,7 +7,8 @@ width 17
 height 15
 enter_y 7
 msg
-Created:  2001-02-17
+Created:  2001-10-17
+Modified: 2012-03-27 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -58,6 +59,9 @@ end
 arch flagstone
 y 5
 end
+arch swall_1_4_half
+y 5
+end
 arch stwall_1_2
 y 5
 end
@@ -67,7 +71,7 @@ end
 arch flagstone
 y 6
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_105_115
 hp 6
 sp 43
@@ -79,7 +83,7 @@ end
 arch flagstone
 y 7
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_105_115
 hp 6
 sp 43
@@ -91,7 +95,7 @@ end
 arch flagstone
 y 8
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_105_115
 hp 6
 sp 43
@@ -101,6 +105,9 @@ arch dungeon_magic
 y 9
 end
 arch flagstone
+y 9
+end
+arch swall_1_4_half
 y 9
 end
 arch stwall_1_1
@@ -324,6 +331,10 @@ y 13
 last_sp 0
 connected 15
 end
+arch dungeon_magic
+x 1
+y 13
+end
 arch flagstone
 x 1
 y 13
@@ -427,7 +438,7 @@ slaying prisoner
 x 2
 y 5
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -483,7 +494,7 @@ slaying prisoner
 x 2
 y 9
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -826,6 +837,9 @@ end
 arch stwall_2_1_2
 x 4
 end
+arch swall_1_1_half
+x 4
+end
 arch dungeon_magic
 x 4
 y 1
@@ -991,6 +1005,10 @@ x 4
 y 14
 end
 arch flagstone
+x 4
+y 14
+end
+arch swall_1_2_half
 x 4
 y 14
 end
@@ -1278,7 +1296,7 @@ slaying prisoner
 x 6
 y 5
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1334,7 +1352,7 @@ slaying prisoner
 x 6
 y 9
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1664,6 +1682,9 @@ end
 arch stwall_2_1_2
 x 8
 end
+arch swall_1_1_half
+x 8
+end
 arch dungeon_magic
 x 8
 y 1
@@ -1829,6 +1850,10 @@ x 8
 y 14
 end
 arch flagstone
+x 8
+y 14
+end
+arch swall_1_2_half
 x 8
 y 14
 end
@@ -2116,7 +2141,7 @@ slaying prisoner
 x 10
 y 5
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -2172,7 +2197,7 @@ slaying prisoner
 x 10
 y 9
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -2504,6 +2529,9 @@ arch flagstone
 x 12
 end
 arch stwall_2_1_2
+x 12
+end
+arch swall_1_1_half
 x 12
 end
 arch dungeon_magic
@@ -2671,6 +2699,10 @@ x 12
 y 14
 end
 arch flagstone
+x 12
+y 14
+end
+arch swall_1_2_half
 x 12
 y 14
 end
@@ -2870,7 +2902,7 @@ y 1
 end
 arch magic_mouth
 msg
-15 minutes
+15 minutes.
 endmsg
 x 14
 y 1
@@ -2882,7 +2914,7 @@ end
 arch slevel_3_4
 x 14
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -2902,7 +2934,7 @@ y 3
 end
 arch magic_mouth
 msg
-30 minutes
+30 minutes.
 endmsg
 x 14
 y 3
@@ -2914,7 +2946,7 @@ end
 arch slevel_3_4
 x 14
 y 3
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -2934,7 +2966,7 @@ y 5
 end
 arch magic_mouth
 msg
-1 hour
+1 hour.
 endmsg
 x 14
 y 5
@@ -2946,7 +2978,7 @@ end
 arch slevel_3_4
 x 14
 y 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -2971,12 +3003,12 @@ end
 arch sign
 name Instructions
 msg
-Step into a box and stand next to the teleporter. Summon a character there and they will be teleported into a cell and will not be able to leave until their time has expired.
+Step into a box and stand next to the teleporter.  Summon a character there and they will be teleported into a cell and will not be able to leave until their time has expired.
 Alternatively one may use the 'arrest' command to give a player a 15 minute jail sentence without having to be in the jail yourself.
 Times are actual playing time, so a character has to be logged in in order for their time to expire.
 Saying 'sorry' in a cell will deliver bread and water to a character.
-Teleporters are damned, so the characters save bed will be changed to the center of their cell. They will not be able to suicide and get out early.
-The Warden's key will allow you to open cell doors when you are not flying (dm). Prisoners will not be able to leave even if the door is open.
+Teleporters are damned, so the characters save bed will be changed to the center of their cell.  They will not be able to suicide and get out early.
+The Warden's key will allow you to open cell doors when you are not flying (dm).  Prisoners will not be able to leave even if the door is open.
 endmsg
 x 14
 y 7
@@ -2999,7 +3031,7 @@ y 9
 end
 arch magic_mouth
 msg
-2 hours
+2 hours.
 endmsg
 x 14
 y 9
@@ -3011,7 +3043,7 @@ end
 arch slevel_3_4
 x 14
 y 9
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -3031,7 +3063,7 @@ y 11
 end
 arch magic_mouth
 msg
-4 hours
+4 hours.
 endmsg
 x 14
 y 11
@@ -3043,7 +3075,7 @@ end
 arch slevel_3_4
 x 14
 y 11
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -3063,8 +3095,7 @@ y 13
 end
 arch magic_mouth
 msg
-Get comfortable.. you're here for
-life
+Get comfortable.. you're here for life.
 endmsg
 x 14
 y 13
@@ -3076,7 +3107,7 @@ end
 arch slevel_3_4
 x 14
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -3101,8 +3132,7 @@ x 15
 end
 arch magic_mouth
 msg
-You have been jailed for 15 minutes
-for your actions
+You have been jailed for 15 minutes for your actions.
 endmsg
 x 15
 y 1
@@ -3146,8 +3176,7 @@ y 2
 end
 arch magic_mouth
 msg
-You have been jailed for 30 minutes
-for your actions
+You have been jailed for 30 minutes for your actions.
 endmsg
 x 15
 y 3
@@ -3191,8 +3220,7 @@ y 4
 end
 arch magic_mouth
 msg
-You have been jailed for 1 hour
-for your actions
+You have been jailed for 1 hour for your actions.
 endmsg
 x 15
 y 5
@@ -3262,8 +3290,7 @@ y 8
 end
 arch magic_mouth
 msg
-You have been jailed for 2 hours
-for your actions
+You have been jailed for 2 hours for your actions.
 endmsg
 x 15
 y 9
@@ -3307,8 +3334,7 @@ y 10
 end
 arch magic_mouth
 msg
-You have been jailed for 4 hours
-for your actions
+You have been jailed for 4 hours for your actions.
 endmsg
 x 15
 y 11
@@ -3351,8 +3377,7 @@ y 12
 end
 arch magic_mouth
 msg
-You have been jailed for life
-for your actions
+You have been jailed for life for your actions.
 endmsg
 x 15
 y 13

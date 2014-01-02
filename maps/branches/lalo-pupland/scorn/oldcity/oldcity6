@@ -1,11 +1,11 @@
 arch map
 name Old City
-difficulty 1
+difficulty 12
 region scornoldcity
 width 40
 height 40
 msg
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-03-18 Rick Tanner
 endmsg
 tile_path_1 oldcity54
 tile_path_2 oldcity3
@@ -2575,9 +2575,6 @@ end
 arch swall_1_3
 x 11
 end
-arch swall_2_1_2
-x 11
-end
 arch cobblestones2
 x 11
 y 1
@@ -2828,7 +2825,7 @@ x 12
 end
 arch magic_mouth
 msg
-You get a very uneasy feeling
+You get a very uneasy feeling.
 endmsg
 x 12
 y 1
@@ -3055,9 +3052,6 @@ arch cobblestones2
 x 13
 end
 arch swall_1_4
-x 13
-end
-arch swall_2_1_2
 x 13
 end
 arch cobblestones2
@@ -5305,31 +5299,24 @@ y 25
 end
 arch magic_mouth
 msg
-The Demlick laughs evilly at you
+The Demilich laughs evilly at you.
 endmsg
-x 22
-y 26
-end
-arch pstone_2
 x 22
 y 26
 end
 arch magic_ear
 msg
-@match subject|Subject|summon|Summon
-Why yes, I am going to take over your
-precious little city. I have built a way in for
-my hords!
-*The Demlick says evilly*
+@match subject|summon
+Why yes, I am going to take over your precious little city.  I have built a way in for my hordes! *The Demilich says evilly*
 @match hords|way|Hords|Way
-Nod, the entrance is nearer then you think!
-Of course, you'll never Find IT!
+Yes, the entrance is nearer then you think! Of course, you'll never find IT!
 @match *
-You have killed many of my subjects, but I
-will summon more and the ones you have yet
-to face will surely kill you, so give up now
-foolish human.
+You have killed many of my subjects, but I will summon more and the ones you have yet to face will surely kill you, so give up now foolish vermin.
 endmsg
+x 22
+y 26
+end
+arch pstone_2
 x 22
 y 26
 end
@@ -5518,8 +5505,7 @@ y 17
 end
 arch magic_mouth
 msg
-You hear a low voice to the south say :
-"Hey you, come here!
+You hear a low voice to the south say: "Hey you, come here!"
 endmsg
 x 23
 y 18
@@ -6682,17 +6668,29 @@ name stream
 x 28
 y 33
 end
+arch pstone_1
+x 28
+y 34
+end
 arch firewall_3
 x 28
 y 34
 arch spell_small_fireball
 end
 end
+arch pstone_1
+x 28
+y 35
+end
 arch firewall_3
 x 28
 y 35
 arch spell_small_fireball
 end
+end
+arch pstone_1
+x 28
+y 36
 end
 arch firewall_3
 x 28
@@ -6951,7 +6949,7 @@ end
 arch pstone_1
 x 30
 end
-arch swall_1_3
+arch swall_2_1_2
 x 30
 end
 arch pstone_1
@@ -7193,6 +7191,9 @@ x 30
 y 39
 end
 arch pstone_1
+x 31
+end
+arch swall_1_3_half
 x 31
 end
 arch cwall_0

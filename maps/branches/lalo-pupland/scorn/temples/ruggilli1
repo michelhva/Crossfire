@@ -1,14 +1,15 @@
 arch map
-name Temple of Ruggilli
+name Temple to Ruggilli
 reset_timeout 3000
-difficulty 1
+difficulty 3
 region scorn
 width 16
 height 16
-enter_x 4
-enter_y 16
+enter_x 3
+enter_y 14
 msg
 Created:  2001-01-03 dnh (dnh@hawthorn.csse.monash.edu.au)
+Modified: 2012-01-17 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -186,28 +187,18 @@ end
 arch faerie_dragon
 name Devotee of Ruggilli
 msg
-@match Ruggilli|ruggilli
-Ruggilli, God of Destruction and
-Chaos! His Followers are feared among
-all living!
-@match flame|Flame
-Ruggilli will lend the immolating
-fires to any who choose to follow!
-@match immolating|Immolating|fires|Fires
-Yes! A Flame which will consume your
-enemies!
-@match follow|Follow|worship|Worship|Door|door|Gate|gate|stair|Stair
-The Consuming worm Ruggilli will only
-accept followers who can pass his
-test. Descend down these stairs and
-destroy all the of His enemies and a
-pass shall be granted.
-@match quest|Quest
-When you are ready, your quest shall
-be given!
+@match ruggilli
+Ruggilli, God of Destruction and Chaos! His Followers are feared among all living!
+@match flame
+Ruggilli will lend the immolating fires to any who choose to follow!
+@match immolating|fires
+Yes! A Flame which will consume your enemies!
+@match follow|worship|door|gate|stair
+The Consuming worm Ruggilli will only accept followers who can pass his test.  Descend down these stairs and destroy all the of His enemies and a pass shall be granted.
+@match quest
+When you are ready, your quest shall be given!
 @match *
-The eternal flame of Ruggilli will
-prevail
+The eternal flame of Ruggilli will prevail!
 endmsg
 hp 80
 x 2
@@ -441,12 +432,10 @@ end
 arch fire_elemental
 name Knight of Ruggilli
 msg
-@match ruggilli|Ruggilli
-....Massster...We...Live...In...His...
-rath....
+@match ruggilli
+....Massster...We...Live...In...His...Wrath....
 @match *
-....Do...Not...Attempt...To...Pervent.
-.This...Place...
+....Do...Not...Attempt...To...Pervent...This...Place...
 endmsg
 hp 4000
 x 5
@@ -679,7 +668,7 @@ end
 arch fire_elemental
 name Templar of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....My...Looord....and masssster...
 @match *
 ....We...are...Watchhhing...You...
@@ -773,9 +762,7 @@ connected 10
 end
 arch magic_mouth
 msg
-Proceed down those stairs and defeat
-The Servant. Ruggilli will then permit
-entrance
+Proceed down those stairs and defeat The Servant.  Ruggilli will then permit entrance.
 endmsg
 x 8
 y 7
@@ -1030,12 +1017,10 @@ end
 arch fire_elemental
 name Knight of Ruggilli
 msg
-@match ruggilli|Ruggilli
-....Massster...We...Live...In...His...
-rath....
+@match ruggilli
+....Massster...We...Live...In...His...Wrath....
 @match *
-....Do...Not...Attempt...To...Pervent.
-.This...Place...
+....Do...Not...Attempt...To...Pervent...This...Place...
 endmsg
 hp 4000
 x 11
@@ -1141,7 +1126,7 @@ end
 arch fire_elemental
 name Templar of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....My...Looord....and masssster...
 @match *
 ....We...are...Watchhhing...You...
@@ -1175,12 +1160,10 @@ end
 arch fire_elemental
 name Knight of Ruggilli
 msg
-@match ruggilli|Ruggilli
-....Massster...We...Live...In...His...
-rath....
+@match ruggilli
+....Massster...We...Live...In...His...Wrath....
 @match *
-....Do...Not...Attempt...To...Pervent.
-.This...Place...
+....Do...Not...Attempt...To...Pervent...This...Place...
 endmsg
 hp 4000
 x 12

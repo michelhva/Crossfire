@@ -1,11 +1,14 @@
 arch map
-name Scorn Castle
-difficulty 1
+name Scorn Castle, Royal Court
+difficulty 5
 region scorn
 width 24
 height 24
+enter_x 10
+enter_y 13
 msg
-Created:  1997-02-27
+Created:  1997-04-27
+Modified: 2010-06-08 Cavesomething
 endmsg
 end
 arch grass
@@ -1029,7 +1032,7 @@ y 16
 end
 arch stair_up
 slaying HallOfQuests
-hp 30
+hp 20
 sp 7
 x 7
 y 16
@@ -1571,22 +1574,34 @@ y 5
 end
 arch mage
 name the king
-Con 126
-hp 32767
 x 11
 y 5
+level 120
 type 0
-resist_physical 99
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_acid 100
-resist_weaponmagic 100
-resist_godpower 99
 move_type walk
 monster 1
 unaggressive 1
+no_damage 1
+arch NPCGift
+arch carton_box_1
+name Prince Reward
+arch defender
+end
+end
+arch carton_box_1
+name Archduke Reward
+arch holy_shield
+end
+end
+arch carton_box_1
+name Duke Reward
+arch dragonslayer
+end
+end
+end
+arch npc_dialog
+name scorn/misc/king.msg
+end
 end
 arch woodfloor2
 x 11
@@ -1604,29 +1619,15 @@ arch woodfloor2
 x 11
 y 9
 end
-arch check_inv
-slaying Noble Rank Count
+arch check_floor
+hp 1
 x 11
 y 9
-connected 99
+arch event_trigger
+name scorn/Aristocracy 60-90 99
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Duke
-x 11
-y 9
-connected 99
-end
-arch check_inv
-slaying Noble Rank Archduke
-x 11
-y 9
-connected 99
-end
-arch check_inv
-slaying Noble Rank Prince
-x 11
-y 9
-connected 99
 end
 arch woodfloor2
 x 11
@@ -1642,29 +1643,15 @@ arch woodfloor2
 x 11
 y 11
 end
-arch check_inv
-slaying Noble Rank Count
+arch check_floor
+hp 1
 x 11
 y 11
-connected 99
+arch event_trigger
+name scorn/Aristocracy 60-90 99
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Duke
-x 11
-y 11
-connected 99
-end
-arch check_inv
-slaying Noble Rank Archduke
-x 11
-y 11
-connected 99
-end
-arch check_inv
-slaying Noble Rank Prince
-x 11
-y 11
-connected 99
 end
 arch woodfloor2
 x 11
@@ -1757,6 +1744,7 @@ arch princess
 name The Queen
 x 12
 y 5
+level 120
 end
 arch woodfloor2
 x 12
@@ -1774,29 +1762,15 @@ arch woodfloor2
 x 12
 y 9
 end
-arch check_inv
-slaying Noble Rank Count
+arch check_floor
+hp 1
 x 12
 y 9
-connected 99
+arch event_trigger
+name scorn/Aristocracy 60-90 99
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Duke
-x 12
-y 9
-connected 99
-end
-arch check_inv
-slaying Noble Rank Archduke
-x 12
-y 9
-connected 99
-end
-arch check_inv
-slaying Noble Rank Prince
-x 12
-y 9
-connected 99
 end
 arch woodfloor2
 x 12
@@ -1812,29 +1786,15 @@ arch woodfloor2
 x 12
 y 11
 end
-arch check_inv
-slaying Noble Rank Count
+arch check_floor
+hp 1
 x 12
 y 11
-connected 99
+arch event_trigger
+name scorn/Aristocracy 60-90 99
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch check_inv
-slaying Noble Rank Duke
-x 12
-y 11
-connected 99
-end
-arch check_inv
-slaying Noble Rank Archduke
-x 12
-y 11
-connected 99
-end
-arch check_inv
-slaying Noble Rank Prince
-x 12
-y 11
-connected 99
 end
 arch woodfloor2
 x 12

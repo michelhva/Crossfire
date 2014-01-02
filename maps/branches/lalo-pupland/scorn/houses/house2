@@ -7,7 +7,7 @@ height 16
 enter_x 11
 msg
 Created:  1993-10-15
-Modified: Dec 26 199
+Modified: 2012-01-09 Rick Tanner
 endmsg
 end
 arch grass
@@ -355,7 +355,7 @@ end
 arch door_look_2
 x 3
 y 14
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -416,7 +416,7 @@ end
 arch door_look_1
 x 4
 y 9
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -526,8 +526,7 @@ arch man
 name David
 msg
 @match *
-We're playing a game here...
-come back later.
+We're playing a game here... come back later.
 endmsg
 x 5
 y 12
@@ -694,7 +693,7 @@ end
 arch door_look_1
 x 7
 y 9
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -953,7 +952,7 @@ end
 arch door_look_1
 x 10
 y 5
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1033,7 +1032,7 @@ end
 arch door_look_1
 x 11
 y 5
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1179,7 +1178,7 @@ end
 arch door_look_2
 x 12
 y 13
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1189,7 +1188,7 @@ end
 arch door_look_2
 x 12
 y 14
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -1317,10 +1316,10 @@ end
 arch woman
 name Mrs. Patch
 msg
-@match name|Name
+@match name
 I'm Jane Patch.
 @match *
-Go away. I'm busy preparing dinner.
+Go away.  I'm busy preparing dinner.
 endmsg
 x 14
 y 7
@@ -2086,7 +2085,7 @@ end
 arch door_look_2
 x 23
 y 6
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -2152,7 +2151,7 @@ end
 arch door_look_2
 x 23
 y 14
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -2212,7 +2211,7 @@ end
 arch door_look_1
 x 24
 y 8
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch pstone_1
@@ -2435,11 +2434,10 @@ end
 arch man
 name Mr. Patch
 msg
-@match name|Name
+@match name
 I'm Art Patch.
 @match *
-Right now, my wife wants me to
-make the beds.
+Right now, my wife wants me to make the beds.
 endmsg
 x 27
 y 3

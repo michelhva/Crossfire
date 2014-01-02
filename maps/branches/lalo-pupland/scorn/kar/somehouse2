@@ -1,9 +1,14 @@
 arch map
-name Friendly Giant's Tower
-difficulty 1
+name Friendly Giant's Tower, Level 2
+difficulty 5
 region scorn
 width 16
 height 16
+enter_x 1
+enter_y 14
+msg
+Modified: 2011-08-23 Rick Tanner
+endmsg
 end
 arch dungeon_floor
 end
@@ -161,6 +166,11 @@ arch dungeon_floor
 x 1
 y 12
 end
+arch button_handle
+x 1
+y 12
+connected 1
+end
 arch generate_orc
 x 1
 y 12
@@ -179,8 +189,8 @@ y 14
 end
 arch stair_3_down
 slaying somehouse
-hp 1
-sp 14
+hp 9
+sp 3
 x 1
 y 14
 end

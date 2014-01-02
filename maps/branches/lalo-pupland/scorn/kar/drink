@@ -1,13 +1,14 @@
 arch map
 name Drinking Fountain
-difficulty 1
+difficulty 7
 region scorn
 width 40
 height 40
 enter_x 1
 enter_y 1
 msg
-Created:  1993-02-05
+Created:  1993-10-05
+Modified: 2012-01-10 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -71,7 +72,7 @@ end
 arch cobblestones2
 y 10
 end
-arch awall_1_2
+arch awall_2_1_1
 y 10
 end
 arch pstone_1
@@ -2629,20 +2630,15 @@ arch sage
 name grumpy old man
 msg
 @match hello
-RATS! my rats!  You killed my rats!  I should
-just hit you with my cane you rude...rude...
-whippersnapper.
+RATS! my rats!  You killed my rats!  I should just hit you with my cane you rude...rude... whippersnapper.
 @match sorry
-Sorry? Sorry?  There's no excuse for your
-kind...
+Sorry? Sorry?  There's no excuse for your kind...
 @match kind
-I was one of your kind once... a long time
-ago.
+I was one of your kind once... a long time ago.
 @match long time ago
 In a land far far away.
 @match far far
-You're starting to sound like the movies now,
-get outta here you punk!
+You're starting to sound like the movies now, get outta here you punk!
 endmsg
 x 11
 y 3

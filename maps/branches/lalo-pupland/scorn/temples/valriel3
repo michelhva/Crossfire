@@ -1,14 +1,15 @@
 arch map
-name Church of Valriel Belltower
-difficulty 1
+name Church of Valriel, Bell Tower
+difficulty 3
 region scorn
 darkness 2
 width 16
 height 16
+enter_x 2
 enter_y 3
 msg
-Created:  1999-01-22 Raphael Quinet (quinet@gamers.org)
-Modified: 2007-12-16 Nicolas Weeger
+Created:  1999-01-22 Raphaël Quinet (raphael@gimp.org)
+Modified: 2012-03-15 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -143,9 +144,18 @@ arch woodfloor
 x 1
 y 13
 end
-arch spider_web
+arch sign
+msg
+Here are recorded the heroes who reached the top of Valriel's church:
+----------------------------------------------------------
+endmsg
 x 1
 y 13
+arch event_apply
+name scorn-valriel-church
+title Python
+slaying /python/misc/hall_of_fame.py
+end
 end
 arch woodfloor
 x 1
@@ -246,7 +256,7 @@ ysize 30
 exitstyle sstair
 decorstyle religious_valriel
 monsterstyle angel
-final_map /dungeons/valriel/valriel_final
+final_map /scorn/temples/valriel_final
 symmetry 4
 orientation 2
 dungeon_depth 99
@@ -351,11 +361,7 @@ end
 arch letter
 msg
 Dear Mr Redwood,
-As you are our town's best carpenter,
-could you have a look at the belltower
-of our church?  That part of our church
-is quite old and I am afraid that a
-bell might fall down and hurt someone.
+As you are our town's best carpenter, could you have a look at the bell tower of our church?  That part of our church is quite old and I am afraid that a bell might fall down and hurt someone.
 endmsg
 x 3
 y 13

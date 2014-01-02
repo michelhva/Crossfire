@@ -1,19 +1,23 @@
 arch map
 name Mosely's Magic Books
-difficulty 1
+difficulty 3
 region scorn
 shopitems spellbook:80
 shopgreed 2.00000
 shopmax 2000
-width 13
-height 13
+width 15
+height 15
+enter_x 7
+enter_y 10
 msg
-Created:  2000-02-18
+Created:  2000-10-18
+Modified: 2011-11-01 Rick Tanner
 endmsg
+outdoor 1
 end
 arch cobblestones2
 end
-arch grass
+arch cobblestones2
 y 1
 end
 arch grass
@@ -49,354 +53,390 @@ end
 arch grass
 y 12
 end
+arch grass
+y 13
+end
+arch grass
+y 14
+end
 arch cobblestones2
 x 1
 end
-arch woodfloor
+arch cobblestones2
 x 1
 y 1
+end
+arch grass
+x 1
+y 2
+end
+arch grass
+x 1
+y 3
+end
+arch grass
+x 1
+y 4
+end
+arch grass
+x 1
+y 5
+end
+arch grass
+x 1
+y 6
+end
+arch grass
+x 1
+y 7
+end
+arch grass
+x 1
+y 8
+end
+arch grass
+x 1
+y 9
+end
+arch grass
+x 1
+y 10
+end
+arch grass
+x 1
+y 11
+end
+arch grass
+x 1
+y 12
+end
+arch grass
+x 1
+y 13
+end
+arch grass
+x 1
+y 14
+end
+arch dungeon_magic
+x 2
+end
+arch cobblestones2
+x 2
+move_block all
+end
+arch dungeon_magic
+x 2
+y 1
+end
+arch cobblestones2
+x 2
+y 1
+move_block all
+end
+arch woodfloor
+x 2
+y 2
 end
 arch wwall_2_2_2
-x 1
-y 1
-end
-arch woodfloor
-x 1
+x 2
 y 2
 end
-arch wwall_win1
-x 1
-y 2
-end
-arch woodfloor
-x 1
-y 3
-end
-arch wwall_2_1_1
-x 1
+arch light2
+x 2
 y 3
 end
 arch woodfloor
-x 1
+x 2
+y 3
+end
+arch wwall_win1
+x 2
+y 3
+end
+arch woodfloor
+x 2
 y 4
 end
-arch wwall_3_2
-x 1
+arch wwall_2_1_1
+x 2
 y 4
 end
 arch woodfloor
-x 1
+x 2
 y 5
 end
 arch wwall_2_1_1
-x 1
+x 2
 y 5
 end
 arch woodfloor
-x 1
+x 2
 y 6
 end
-arch wwall_win1
-x 1
+arch wwall_2_1_1
+x 2
 y 6
 end
-arch woodfloor
-x 1
-y 7
-end
-arch wwall_win1
-x 1
+arch light2
+x 2
 y 7
 end
 arch woodfloor
-x 1
-y 8
-end
-arch wwall_2_1_1
-x 1
-y 8
-end
-arch woodfloor
-x 1
-y 9
+x 2
+y 7
 end
 arch wwall_win1
-x 1
+x 2
+y 7
+end
+arch light2
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 8
+end
+arch wwall_win1
+x 2
+y 8
+end
+arch woodfloor
+x 2
 y 9
 end
-arch woodfloor
-x 1
-y 10
-end
 arch wwall_2_1_1
-x 1
+x 2
+y 9
+end
+arch light2
+x 2
 y 10
 end
 arch woodfloor
-x 1
+x 2
+y 10
+end
+arch wwall_win1
+x 2
+y 10
+end
+arch woodfloor
+x 2
 y 11
+end
+arch wwall_2_1_1
+x 2
+y 11
+end
+arch woodfloor
+x 2
+y 12
 end
 arch wwall_2_2_1
-x 1
-y 11
-end
-arch grass
-x 1
-y 12
-end
-arch cobblestones2
-x 2
-end
-arch woodfloor
-x 2
-y 1
-end
-arch wwall_2_1_2
-x 2
-y 1
-end
-arch woodfloor
-x 2
-y 2
-end
-arch oakdoor
-name Exit back to town
-slaying /world/world_104_115
-hp 49
-sp 34
-x 2
-y 2
-end
-arch woodfloor
-x 2
-y 3
-end
-arch woodfloor
-x 2
-y 4
-end
-arch swall_2_1_2
-x 2
-y 4
-end
-arch shop_empty
-x 2
-y 5
-end
-arch bookshelf
-name Books on causing harm
-x 2
-y 5
-carrying 95000
-no_pick 1
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_medium_wounds
-end
-end
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_heavy_wounds
-end
-end
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_light_wounds
-end
-end
-end
-arch shop_empty
-x 2
-y 6
-end
-arch bookshelf
-name Books on causing harm
-x 2
-y 6
-carrying 95000
-no_pick 1
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_medium_wounds
-end
-end
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_heavy_wounds
-end
-end
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_light_wounds
-end
-end
-end
-arch shop_empty
-x 2
-y 7
-end
-arch bookshelf
-name Books on causing harm
-x 2
-y 7
-carrying 95000
-no_pick 1
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_medium_wounds
-end
-end
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_heavy_wounds
-end
-end
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_light_wounds
-end
-end
-end
-arch shop_empty
-x 2
-y 8
-end
-arch bookshelf
-name Books on causing harm
-x 2
-y 8
-carrying 95000
-no_pick 1
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_medium_wounds
-end
-end
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_heavy_wounds
-end
-end
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_light_wounds
-end
-end
-end
-arch shop_empty
-x 2
-y 9
-end
-arch bookshelf
-name Books on causing harm
-x 2
-y 9
-carrying 95000
-no_pick 1
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_medium_wounds
-end
-end
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_heavy_wounds
-end
-end
-arch cleric_book
-randomitems none
-unpaid 1
-identified 1
-arch spell_cause_light_wounds
-end
-end
-end
-arch shop_empty
-x 2
-y 10
-end
-arch woodfloor
-x 2
-y 11
-end
-arch wwall_2_1_2
-x 2
-y 11
-end
-arch grass
 x 2
 y 12
 end
+arch grass
+x 2
+y 13
+end
+arch grass
+x 2
+y 14
+end
+arch dungeon_magic
+x 3
+end
 arch cobblestones2
 x 3
+move_block all
 end
-arch woodfloor
+arch dungeon_magic
 x 3
 y 1
 end
-arch wwall_win2
+arch cobblestones2
 x 3
 y 1
+move_block all
 end
 arch woodfloor
 x 3
 y 2
 end
-arch woodfloor
+arch wwall_2_1_2
+x 3
+y 2
+end
+arch light4
 x 3
 y 3
 end
-arch shop_mat
+arch shop_empty
 x 3
 y 3
 end
-arch woodfloor
+arch bookshelf
+name Books on causing harm
+x 3
+y 3
+carrying 95000
+no_pick 1
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_medium_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_heavy_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_light_wounds
+end
+end
+end
+arch shop_empty
 x 3
 y 4
 end
-arch swall_2_1_2
+arch bookshelf
+name Books on causing harm
 x 3
 y 4
+carrying 95000
+no_pick 1
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_medium_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_heavy_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_light_wounds
+end
+end
 end
 arch shop_empty
 x 3
 y 5
 end
-arch shop_empty
+arch bookshelf
+name Books on causing harm
+x 3
+y 5
+carrying 95000
+no_pick 1
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_medium_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_heavy_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_light_wounds
+end
+end
+end
+arch light4
 x 3
 y 6
 end
 arch shop_empty
 x 3
+y 6
+end
+arch bookshelf
+name Books on causing harm
+x 3
+y 6
+carrying 95000
+no_pick 1
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_medium_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_heavy_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_light_wounds
+end
+end
+end
+arch shop_empty
+x 3
 y 7
+end
+arch bookshelf
+name Books on causing harm
+x 3
+y 7
+carrying 95000
+no_pick 1
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_medium_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_heavy_wounds
+end
+end
+arch cleric_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_cause_light_wounds
+end
+end
 end
 arch shop_empty
 x 3
@@ -410,61 +450,167 @@ arch shop_empty
 x 3
 y 10
 end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 3
+y 10
+unpaid 1
+identified 1
+end
+arch light4
+x 3
+y 11
+end
+arch shop_empty
+x 3
+y 11
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 3
+y 11
+unpaid 1
+identified 1
+end
 arch woodfloor
-x 3
-y 11
-end
-arch wwall_win2
-x 3
-y 11
-end
-arch grass
 x 3
 y 12
 end
+arch wwall_2_1_2
+x 3
+y 12
+end
+arch grass
+x 3
+y 13
+end
+arch grass
+x 3
+y 14
+end
+arch dungeon_magic
+x 4
+end
 arch cobblestones2
 x 4
+move_block all
 end
-arch woodfloor
+arch dungeon_magic
 x 4
 y 1
 end
-arch wwall_3_3
+arch cobblestones2
 x 4
 y 1
+move_block all
+end
+arch light2
+x 4
+y 2
 end
 arch woodfloor
 x 4
 y 2
 end
-arch swall_2_1_1
+arch wwall_win2
 x 4
 y 2
 end
-arch woodfloor
+arch shop_empty
 x 4
 y 3
 end
-arch swall_2_1_1
-x 4
-y 3
-end
-arch woodfloor
-x 4
-y 4
-end
-arch swall_2_2_4
+arch shop_empty
 x 4
 y 4
 end
 arch shop_empty
 x 4
 y 5
+end
+arch shop_empty
+x 4
+y 6
+end
+arch shop_empty
+x 4
+y 7
+end
+arch shop_empty
+x 4
+y 8
+end
+arch shop_empty
+x 4
+y 9
+end
+arch shop_empty
+x 4
+y 10
+end
+arch shop_empty
+x 4
+y 11
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 4
+y 11
+unpaid 1
+identified 1
+end
+arch light2
+x 4
+y 12
+end
+arch woodfloor
+x 4
+y 12
+end
+arch wwall_win2
+x 4
+y 12
+end
+arch grass
+x 4
+y 13
+end
+arch grass
+x 4
+y 14
+end
+arch cobblestones2
+x 5
+end
+arch cobblestones2
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch wwall_2_1_2
+x 5
+y 2
+end
+arch shop_empty
+x 5
+y 3
 end
 arch bookshelf
 name Books for Evokers
-x 4
-y 5
+x 5
+y 3
 carrying 20000
 no_pick 1
 arch evoker_book
@@ -497,13 +643,13 @@ end
 end
 end
 arch shop_empty
-x 4
-y 6
+x 5
+y 4
 end
 arch bookshelf
 name Books for Evokers
-x 4
-y 6
+x 5
+y 4
 carrying 20000
 no_pick 1
 arch evoker_book
@@ -536,13 +682,13 @@ end
 end
 end
 arch shop_empty
-x 4
-y 7
+x 5
+y 5
 end
 arch bookshelf
 name Books for Evokers
-x 4
-y 7
+x 5
+y 5
 carrying 20000
 no_pick 1
 arch evoker_book
@@ -575,13 +721,13 @@ end
 end
 end
 arch shop_empty
-x 4
-y 8
+x 5
+y 6
 end
 arch bookshelf
 name Books for Evokers
-x 4
-y 8
+x 5
+y 6
 carrying 20000
 no_pick 1
 arch evoker_book
@@ -614,13 +760,13 @@ end
 end
 end
 arch shop_empty
-x 4
-y 9
+x 5
+y 7
 end
 arch bookshelf
 name Books for Evokers
-x 4
-y 9
+x 5
+y 7
 carrying 20000
 no_pick 1
 arch evoker_book
@@ -653,95 +799,26 @@ end
 end
 end
 arch shop_empty
-x 4
+x 5
+y 8
+end
+arch light4
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 9
+end
+arch swall_2_2_2
+x 5
+y 9
+end
+arch woodfloor
+x 5
 y 10
 end
-arch woodfloor
-x 4
-y 11
-end
-arch wwall_win2
-x 4
-y 11
-end
-arch grass
-x 4
-y 12
-end
-arch cobblestones2
-x 5
-end
-arch woodfloor
-x 5
-y 1
-end
-arch wwall_2_1_2
-x 5
-y 1
-end
-arch shop_empty
-x 5
-y 2
-end
-arch cleric_book
-slaying holy word
-msg
-holy word
-endmsg
-x 5
-y 2
-unpaid 1
-identified 1
-end
-arch shop_empty
-x 5
-y 3
-end
-arch shop_empty
-x 5
-y 4
-end
-arch shop_mat
-x 5
-y 4
-end
-arch shop_empty
-x 5
-y 5
-end
-arch woodfloor
-x 5
-y 6
-end
-arch shop_empty
-x 5
-y 6
-end
-arch woodfloor
-x 5
-y 7
-end
-arch shop_empty
-x 5
-y 7
-end
-arch woodfloor
-x 5
-y 8
-end
-arch shop_empty
-x 5
-y 8
-end
-arch woodfloor
-x 5
-y 9
-end
-arch shop_empty
-x 5
-y 9
-end
-arch shop_empty
+arch swall_2_1_1
 x 5
 y 10
 end
@@ -749,55 +826,164 @@ arch woodfloor
 x 5
 y 11
 end
-arch wwall_2_1_2
+arch swall_2_1_1
 x 5
 y 11
 end
-arch grass
+arch woodfloor
 x 5
 y 12
+end
+arch swall_1_2_half
+x 5
+y 12
+end
+arch wwall_2_1_2
+x 5
+y 12
+end
+arch grass
+x 5
+y 13
+end
+arch grass
+x 5
+y 14
 end
 arch cobblestones2
 x 6
 end
+arch cobblestones2
+x 6
+y 1
+end
 arch woodfloor
 x 6
-y 1
-end
-arch wwall_win2
-x 6
-y 1
-end
-arch shop_empty
-x 6
 y 2
 end
-arch cleric_book
-slaying holy word
-msg
-holy word
-endmsg
+arch wwall_2_1_2
 x 6
 y 2
-unpaid 1
-identified 1
 end
 arch shop_empty
 x 6
 y 3
 end
-arch shop_empty
+arch woodfloor
 x 6
 y 4
 end
 arch shop_empty
 x 6
+y 4
+end
+arch woodfloor
+x 6
 y 5
+end
+arch shop_empty
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch shop_empty
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch shop_empty
+x 6
+y 7
+end
+arch shop_empty
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch swall_2_1_2
+x 6
+y 9
+end
+arch woodfloor
+x 6
+y 10
+end
+arch button_small
+x 6
+y 11
+connected 1
+end
+arch woodfloor
+x 6
+y 11
+end
+arch woodfloor
+x 6
+y 12
+end
+arch wwall_1_3
+x 6
+y 12
+end
+arch dungeon_magic
+x 6
+y 13
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 49
+sp 34
+x 6
+y 13
+end
+arch grass
+x 6
+y 13
+end
+arch grass
+x 6
+y 14
+end
+arch cobblestones2
+x 7
+end
+arch cobblestones2
+x 7
+y 1
+end
+arch light2
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 2
+end
+arch wwall_win2
+x 7
+y 2
+end
+arch light4
+x 7
+y 3
+end
+arch shop_empty
+x 7
+y 3
 end
 arch bookshelf
 name Books for Pyromancers
-x 6
-y 5
+x 7
+y 3
 carrying 20000
 no_pick 1
 arch pyro_book
@@ -830,13 +1016,13 @@ end
 end
 end
 arch shop_empty
-x 6
-y 6
+x 7
+y 4
 end
 arch bookshelf
 name Books for Pyromancers
-x 6
-y 6
+x 7
+y 4
 carrying 20000
 no_pick 1
 arch pyro_book
@@ -869,13 +1055,13 @@ end
 end
 end
 arch shop_empty
-x 6
-y 7
+x 7
+y 5
 end
 arch bookshelf
 name Books for Pyromancers
-x 6
-y 7
+x 7
+y 5
 carrying 20000
 no_pick 1
 arch pyro_book
@@ -907,14 +1093,18 @@ arch spell_rune_of_fire
 end
 end
 end
+arch light4
+x 7
+y 6
+end
 arch shop_empty
-x 6
-y 8
+x 7
+y 6
 end
 arch bookshelf
 name Books for Pyromancers
-x 6
-y 8
+x 7
+y 6
 carrying 20000
 no_pick 1
 arch pyro_book
@@ -947,13 +1137,13 @@ end
 end
 end
 arch shop_empty
-x 6
-y 9
+x 7
+y 7
 end
 arch bookshelf
 name Books for Pyromancers
-x 6
-y 9
+x 7
+y 7
 carrying 20000
 no_pick 1
 arch pyro_book
@@ -986,75 +1176,6 @@ end
 end
 end
 arch shop_empty
-x 6
-y 10
-end
-arch woodfloor
-x 6
-y 11
-end
-arch wwall_2_1_2
-x 6
-y 11
-end
-arch grass
-x 6
-y 12
-end
-arch cobblestones2
-x 7
-end
-arch woodfloor
-x 7
-y 1
-end
-arch wwall_2_1_2
-x 7
-y 1
-end
-arch shop_empty
-x 7
-y 2
-end
-arch cleric_book
-slaying holy word
-msg
-holy word
-endmsg
-x 7
-y 2
-unpaid 1
-identified 1
-end
-arch shop_empty
-x 7
-y 3
-end
-arch shop_empty
-x 7
-y 4
-end
-arch shop_empty
-x 7
-y 5
-end
-arch woodfloor
-x 7
-y 6
-end
-arch shop_empty
-x 7
-y 6
-end
-arch woodfloor
-x 7
-y 7
-end
-arch shop_empty
-x 7
-y 7
-end
-arch shop_empty
 x 7
 y 8
 end
@@ -1062,67 +1183,186 @@ arch woodfloor
 x 7
 y 9
 end
-arch shop_empty
+arch swall_2_1_2
 x 7
 y 9
 end
-arch shop_empty
+arch woodfloor
 x 7
 y 10
+end
+arch button_small
+x 7
+y 11
+connected 1
 end
 arch woodfloor
 x 7
 y 11
 end
-arch wwall_2_1_2
+arch button_small
 x 7
-y 11
+y 12
+connected 1
+end
+arch woodfloor
+x 7
+y 12
+end
+arch odoorn2_closed_1
+x 7
+y 12
+connected 1
+end
+arch dungeon_magic
+x 7
+y 13
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 49
+sp 34
+x 7
+y 13
 end
 arch grass
 x 7
-y 12
+y 13
+end
+arch grass
+x 7
+y 14
 end
 arch cobblestones2
 x 8
 end
-arch woodfloor
+arch cobblestones2
 x 8
 y 1
+end
+arch woodfloor
+x 8
+y 2
 end
 arch wwall_2_1_2
 x 8
-y 1
-end
-arch shop_empty
-x 8
 y 2
-end
-arch cleric_book
-slaying holy word
-msg
-holy word
-endmsg
-x 8
-y 2
-unpaid 1
-identified 1
 end
 arch shop_empty
 x 8
 y 3
 end
-arch shop_empty
+arch woodfloor
 x 8
 y 4
 end
 arch shop_empty
 x 8
+y 4
+end
+arch woodfloor
+x 8
 y 5
+end
+arch shop_empty
+x 8
+y 5
+end
+arch shop_empty
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch shop_empty
+x 8
+y 7
+end
+arch shop_empty
+x 8
+y 8
+end
+arch shop_mat
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch swall_2_1_2
+x 8
+y 9
+end
+arch woodfloor
+x 8
+y 10
+end
+arch shop_mat
+x 8
+y 10
+end
+arch button_small
+x 8
+y 11
+connected 1
+end
+arch woodfloor
+x 8
+y 11
+end
+arch woodfloor
+x 8
+y 12
+end
+arch wwall_1_4
+x 8
+y 12
+end
+arch dungeon_magic
+x 8
+y 13
+end
+arch invis_exit
+slaying /world/world_104_115
+hp 49
+sp 34
+x 8
+y 13
+end
+arch grass
+x 8
+y 13
+end
+arch grass
+x 8
+y 14
+end
+arch cobblestones2
+x 9
+end
+arch cobblestones2
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch wwall_2_1_2
+x 9
+y 2
+end
+arch shop_empty
+x 9
+y 3
 end
 arch bookshelf
 name Books for Sorcerers
-x 8
-y 5
+x 9
+y 3
 carrying 20000
 no_pick 1
 arch sorcerer_book
@@ -1153,15 +1393,22 @@ identified 1
 arch spell_marking_rune
 end
 end
+arch sorcerer_book
+randomitems none
+unpaid 1
+identified 1
+arch spell_spark_shower
+end
+end
 end
 arch shop_empty
-x 8
-y 6
+x 9
+y 4
 end
 arch bookshelf
 name Books for Sorcerers
-x 8
-y 6
+x 9
+y 4
 carrying 20000
 no_pick 1
 arch sorcerer_book
@@ -1194,13 +1441,13 @@ end
 end
 end
 arch shop_empty
-x 8
-y 7
+x 9
+y 5
 end
 arch bookshelf
 name Books for Sorcerers
-x 8
-y 7
+x 9
+y 5
 carrying 20000
 no_pick 1
 arch sorcerer_book
@@ -1233,13 +1480,13 @@ end
 end
 end
 arch shop_empty
-x 8
-y 8
+x 9
+y 6
 end
 arch bookshelf
 name Books for Sorcerers
-x 8
-y 8
+x 9
+y 6
 carrying 20000
 no_pick 1
 arch sorcerer_book
@@ -1272,13 +1519,13 @@ end
 end
 end
 arch shop_empty
-x 8
-y 9
+x 9
+y 7
 end
 arch bookshelf
 name Books for Sorcerers
-x 8
-y 9
+x 9
+y 7
 carrying 20000
 no_pick 1
 arch sorcerer_book
@@ -1311,91 +1558,26 @@ end
 end
 end
 arch shop_empty
-x 8
+x 9
+y 8
+end
+arch light4
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 9
+end
+arch swall_2_2_3
+x 9
+y 9
+end
+arch woodfloor
+x 9
 y 10
 end
-arch woodfloor
-x 8
-y 11
-end
-arch wwall_win2
-x 8
-y 11
-end
-arch grass
-x 8
-y 12
-end
-arch cobblestones2
-x 9
-end
-arch woodfloor
-x 9
-y 1
-end
-arch wwall_win2
-x 9
-y 1
-end
-arch shop_empty
-x 9
-y 2
-end
-arch cleric_book
-slaying holy word
-msg
-holy word
-endmsg
-x 9
-y 2
-unpaid 1
-identified 1
-end
-arch shop_empty
-x 9
-y 3
-end
-arch shop_empty
-x 9
-y 4
-end
-arch shop_empty
-x 9
-y 5
-end
-arch woodfloor
-x 9
-y 6
-end
-arch shop_empty
-x 9
-y 6
-end
-arch woodfloor
-x 9
-y 7
-end
-arch shop_empty
-x 9
-y 7
-end
-arch woodfloor
-x 9
-y 8
-end
-arch shop_empty
-x 9
-y 8
-end
-arch woodfloor
-x 9
-y 9
-end
-arch shop_empty
-x 9
-y 9
-end
-arch shop_empty
+arch swall_2_1_1
 x 9
 y 10
 end
@@ -1403,28 +1585,100 @@ arch woodfloor
 x 9
 y 11
 end
-arch wwall_win2
+arch swall_2_1_1
 x 9
 y 11
 end
-arch grass
+arch woodfloor
 x 9
 y 12
 end
-arch cobblestones2
-x 10
-end
-arch woodfloor
-x 10
-y 1
+arch swall_1_2_half
+x 9
+y 12
 end
 arch wwall_2_1_2
+x 9
+y 12
+end
+arch grass
+x 9
+y 13
+end
+arch grass
+x 9
+y 14
+end
+arch cobblestones2
+x 10
+end
+arch cobblestones2
 x 10
 y 1
 end
-arch shop_empty
+arch light2
 x 10
 y 2
+end
+arch woodfloor
+x 10
+y 2
+end
+arch wwall_win2
+x 10
+y 2
+end
+arch shop_empty
+x 10
+y 3
+end
+arch woodfloor
+x 10
+y 4
+end
+arch shop_empty
+x 10
+y 4
+end
+arch woodfloor
+x 10
+y 5
+end
+arch shop_empty
+x 10
+y 5
+end
+arch woodfloor
+x 10
+y 6
+end
+arch shop_empty
+x 10
+y 6
+end
+arch woodfloor
+x 10
+y 7
+end
+arch shop_empty
+x 10
+y 7
+end
+arch shop_empty
+x 10
+y 8
+end
+arch shop_empty
+x 10
+y 9
+end
+arch shop_empty
+x 10
+y 10
+end
+arch shop_empty
+x 10
+y 11
 end
 arch cleric_book
 slaying holy word
@@ -1432,26 +1686,57 @@ msg
 holy word
 endmsg
 x 10
-y 2
+y 11
 unpaid 1
 identified 1
 end
-arch shop_empty
+arch light2
 x 10
+y 12
+end
+arch woodfloor
+x 10
+y 12
+end
+arch wwall_win2
+x 10
+y 12
+end
+arch grass
+x 10
+y 13
+end
+arch grass
+x 10
+y 14
+end
+arch cobblestones2
+x 11
+end
+arch cobblestones2
+x 11
+y 1
+end
+arch woodfloor
+x 11
+y 2
+end
+arch wwall_2_1_2
+x 11
+y 2
+end
+arch light4
+x 11
 y 3
 end
 arch shop_empty
-x 10
-y 4
-end
-arch shop_empty
-x 10
-y 5
+x 11
+y 3
 end
 arch bookshelf
 name Books for Summoners
-x 10
-y 5
+x 11
+y 3
 carrying 20000
 no_pick 1
 arch summoner_book
@@ -1484,13 +1769,13 @@ end
 end
 end
 arch shop_empty
-x 10
-y 6
+x 11
+y 4
 end
 arch bookshelf
 name Books for Summoners
-x 10
-y 6
+x 11
+y 4
 carrying 20000
 no_pick 1
 arch summoner_book
@@ -1523,13 +1808,13 @@ end
 end
 end
 arch shop_empty
-x 10
-y 7
+x 11
+y 5
 end
 arch bookshelf
 name Books for Summoners
-x 10
-y 7
+x 11
+y 5
 carrying 20000
 no_pick 1
 arch summoner_book
@@ -1561,14 +1846,18 @@ arch spell_counterspell
 end
 end
 end
+arch light4
+x 11
+y 6
+end
 arch shop_empty
-x 10
-y 8
+x 11
+y 6
 end
 arch bookshelf
 name Books for Summoners
-x 10
-y 8
+x 11
+y 6
 carrying 20000
 no_pick 1
 arch summoner_book
@@ -1601,13 +1890,13 @@ end
 end
 end
 arch shop_empty
-x 10
-y 9
+x 11
+y 7
 end
 arch bookshelf
 name Books for Summoners
-x 10
-y 9
+x 11
+y 7
 carrying 20000
 no_pick 1
 arch summoner_book
@@ -1640,172 +1929,295 @@ end
 end
 end
 arch shop_empty
-x 10
+x 11
+y 8
+end
+arch shop_empty
+x 11
+y 9
+end
+arch shop_empty
+x 11
 y 10
 end
-arch woodfloor
-x 10
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 11
+y 10
+unpaid 1
+identified 1
+end
+arch light4
+x 11
 y 11
+end
+arch shop_empty
+x 11
+y 11
+end
+arch cleric_book
+slaying holy word
+msg
+holy word
+endmsg
+x 11
+y 11
+unpaid 1
+identified 1
+end
+arch woodfloor
+x 11
+y 12
 end
 arch wwall_2_1_2
-x 10
-y 11
-end
-arch grass
-x 10
+x 11
 y 12
 end
+arch grass
+x 11
+y 13
+end
+arch grass
+x 11
+y 14
+end
 arch cobblestones2
-x 11
+x 12
 end
-arch swall_2_2_4
-x 11
+arch cobblestones2
+x 12
 y 1
 end
 arch woodfloor
-x 11
-y 1
-end
-arch woodfloor
-x 11
-y 1
+x 12
+y 2
 end
 arch wwall_2_2_3
-x 11
-y 1
-end
-arch woodfloor
-x 11
+x 12
 y 2
 end
-arch wwall_win1
-x 11
-y 2
-end
-arch woodfloor
-x 11
-y 3
-end
-arch wwall_2_1_1
-x 11
+arch light2
+x 12
 y 3
 end
 arch woodfloor
-x 11
+x 12
+y 3
+end
+arch wwall_win1
+x 12
+y 3
+end
+arch woodfloor
+x 12
 y 4
 end
 arch wwall_2_1_1
-x 11
+x 12
 y 4
 end
 arch woodfloor
-x 11
+x 12
 y 5
 end
 arch wwall_2_1_1
-x 11
+x 12
 y 5
 end
 arch woodfloor
-x 11
+x 12
 y 6
 end
-arch wwall_win1
-x 11
+arch wwall_2_1_1
+x 12
 y 6
 end
-arch woodfloor
-x 11
-y 7
-end
-arch wwall_win1
-x 11
+arch light2
+x 12
 y 7
 end
 arch woodfloor
-x 11
-y 8
-end
-arch wwall_2_1_1
-x 11
-y 8
-end
-arch woodfloor
-x 11
-y 9
+x 12
+y 7
 end
 arch wwall_win1
-x 11
+x 12
+y 7
+end
+arch light2
+x 12
+y 8
+end
+arch woodfloor
+x 12
+y 8
+end
+arch wwall_win1
+x 12
+y 8
+end
+arch woodfloor
+x 12
 y 9
 end
-arch woodfloor
-x 11
-y 10
-end
 arch wwall_2_1_1
-x 11
+x 12
+y 9
+end
+arch light2
+x 12
 y 10
 end
 arch woodfloor
-x 11
+x 12
+y 10
+end
+arch wwall_win1
+x 12
+y 10
+end
+arch woodfloor
+x 12
 y 11
+end
+arch wwall_2_1_1
+x 12
+y 11
+end
+arch woodfloor
+x 12
+y 12
 end
 arch wwall_2_2_4
-x 11
-y 11
-end
-arch grass
-x 11
+x 12
 y 12
 end
-arch cobblestones2
+arch grass
 x 12
+y 13
 end
 arch grass
 x 12
+y 14
+end
+arch cobblestones2
+x 13
+end
+arch cobblestones2
+x 13
 y 1
 end
 arch grass
-x 12
+x 13
 y 2
 end
 arch grass
-x 12
+x 13
 y 3
 end
 arch grass
-x 12
+x 13
 y 4
 end
 arch grass
-x 12
+x 13
 y 5
 end
 arch grass
-x 12
+x 13
 y 6
 end
 arch grass
-x 12
+x 13
 y 7
 end
 arch grass
-x 12
+x 13
 y 8
 end
 arch grass
-x 12
+x 13
 y 9
 end
 arch grass
-x 12
+x 13
 y 10
 end
 arch grass
-x 12
+x 13
 y 11
 end
 arch grass
-x 12
+x 13
 y 12
+end
+arch grass
+x 13
+y 13
+end
+arch grass
+x 13
+y 14
+end
+arch cobblestones2
+x 14
+end
+arch cobblestones2
+x 14
+y 1
+end
+arch grass
+x 14
+y 2
+end
+arch grass
+x 14
+y 3
+end
+arch grass
+x 14
+y 4
+end
+arch grass
+x 14
+y 5
+end
+arch grass
+x 14
+y 6
+end
+arch grass
+x 14
+y 7
+end
+arch grass
+x 14
+y 8
+end
+arch grass
+x 14
+y 9
+end
+arch grass
+x 14
+y 10
+end
+arch grass
+x 14
+y 11
+end
+arch grass
+x 14
+y 12
+end
+arch grass
+x 14
+y 13
+end
+arch grass
+x 14
+y 14
 end

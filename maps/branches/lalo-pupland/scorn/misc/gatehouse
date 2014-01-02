@@ -1,13 +1,14 @@
 arch map
-name Gate House
-difficulty 1
+name Eastern Gate of Scorn
+difficulty 7
 region scorn
 width 28
 height 14
+enter_x 1
 enter_y 7
 msg
 Created:  1993-10-15
-Modified: 1998-12-28 Anthony Thyssen (anthony@cit.gu.edu.au)
+Modified: 2012-03-27 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -160,32 +161,13 @@ y 4
 end
 arch guard
 name gatehouse guard
-msg
-@match monster|Monster
-They keep trying to sneak in, but we
-always kill them.
-@match Open|Gate|open|gate
-The gate opens only for certain people.
-@match who|people
-Only those who are
-* Citizens of Scorn with a Password
-* Have a merchants ``Gate Pass''
-* Or knighted ``Hero'' by the king
-may pass through these gates.
-@match gate|pass
-See the ``Office of Gate Passes''
-next to the Port Gate.
-@match secret|door|wall|password
-I can't tell you that!
-Do you want to be thrown in JAIL?
-@match *
-Good to see a friend!
-Have you seen any monsters lately?
-endmsg
 x 2
 y 4
 friendly 1
 unaggressive 0
+arch npc_dialog
+name scorn/misc/gateguardinside.msg
+end
 end
 arch cobblestones2
 x 2
@@ -198,10 +180,14 @@ y 5
 connected 13
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 2
 y 5
-connected 14
+arch event_trigger
+name scorn/Aristocracy 10-100 14
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 2
@@ -214,10 +200,14 @@ y 6
 connected 13
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 2
 y 6
-connected 14
+arch event_trigger
+name scorn/Aristocracy 10-100 14
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 2
@@ -230,10 +220,14 @@ y 7
 connected 13
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 2
 y 7
-connected 14
+arch event_trigger
+name scorn/Aristocracy 10-100 14
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 2
@@ -246,20 +240,14 @@ y 8
 connected 13
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 2
 y 8
-connected 14
+arch event_trigger
+name scorn/Aristocracy 10-100 14
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch magic_ear
-msg
-@match chain|Chain|CHAIN
-Well, you know the password,
-so you must be ok.   Pass Friend.
-endmsg
-x 2
-y 8
-connected 12
 end
 arch flagstone
 x 2
@@ -427,13 +415,37 @@ arch mine_2_1_2
 x 4
 y 4
 end
+arch check_floor
+hp 1
+x 4
+y 5
+arch quest_advance_trigger
+name scorn/CityGate 0-10>20
+end
+end
 arch cobblestones2
 x 4
 y 5
 end
+arch check_floor
+hp 1
+x 4
+y 6
+arch quest_advance_trigger
+name scorn/CityGate 0-10>20
+end
+end
 arch cobblestones2
 x 4
 y 6
+end
+arch check_floor
+hp 1
+x 4
+y 7
+arch quest_advance_trigger
+name scorn/CityGate 0-10>20
+end
 end
 arch cobblestones2
 x 4
@@ -445,32 +457,13 @@ y 8
 end
 arch guard
 name gatehouse guard
-msg
-@match monster|Monster
-They keep trying to sneak in, but we
-always kill them.
-@match Open|Gate|open|gate
-The gate opens only for certain people.
-@match who|people
-Only those who are
-* Citizens of Scorn with a Password
-* Have a merchants ``Gate Pass''
-* Or knighted ``Hero'' by the king
-may pass through these gates.
-@match gate|pass
-See the ``Office of Gate Passes''
-next to the Port Gate.
-@match secret|door|wall|password
-I can't tell you that!
-Do you want to be thrown in JAIL?
-@match *
-Good to see a friend!
-Have you seen any monsters lately?
-endmsg
 x 4
 y 8
 friendly 1
 unaggressive 0
+arch npc_dialog
+name scorn/misc/gateguardinside.msg
+end
 end
 arch cobblestones
 x 4
@@ -670,7 +663,10 @@ end
 arch dungeon_magic
 x 7
 end
-arch mine_1_1
+arch flagstone
+x 7
+end
+arch mine_2_1_1
 x 7
 end
 arch dungeon_magic
@@ -741,7 +737,11 @@ arch dungeon_magic
 x 7
 y 13
 end
-arch mine_1_2
+arch flagstone
+x 7
+y 13
+end
+arch mine_2_1_1
 x 7
 y 13
 end
@@ -939,13 +939,9 @@ arch fighter
 name Off duty Guard
 msg
 @match monsters
-Yeah! Its like they were coming out of
-the walls, one got into the gatehouse
-and killed Lodus while he was sleeping,
-poor chap.
+Yeah! Its like they were coming out of the walls, one got into the gatehouse and killed Lodus while he was sleeping, poor chap.
 @match *
-I can't understand where those monsters are
-coming from
+I can't understand where those monsters are coming from.
 endmsg
 x 9
 y 11
@@ -1213,9 +1209,7 @@ end
 arch magic_mouth
 name magic_mouth (gate open/close)
 msg
-You hear from behind the northern wall,
-the sound of great wheels turning as
-the inner gates are set in motion.
+You hear from behind the northern wall the sound of great wheels turning as the inner gates are set in motion.
 endmsg
 x 12
 connected 10
@@ -1318,9 +1312,7 @@ end
 arch magic_mouth
 name magic_mouth (gate pass)
 msg
-On seeing you have a gate pass the guard
-turns the handle nearby and says...
-Arrhh, a merchant off on trade.. Pass..
+On seeing you have a gate pass the guard turns the handle nearby and says... Arrhh, a merchant off on trade.. Pass..
 endmsg
 x 13
 connected 13
@@ -1384,7 +1376,7 @@ end
 arch mine_secret_1_1
 x 13
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 13
@@ -1420,9 +1412,7 @@ end
 arch magic_mouth
 name magic_mouth (hero of scorn)
 msg
-A guard yells.. The Hero of Scorn!
-Open the gates, open, we can't keep
-the Hero waiting. Hurry Hurry.
+A guard yells.. The Hero of Scorn! Open the gates, open, we can't keep the Hero waiting.  Hurry Hurry.
 endmsg
 x 14
 connected 14
@@ -1506,11 +1496,7 @@ end
 arch magic_mouth
 name magic_mouth (hero of scorn)
 msg
-The guard shouts....
-The brave hero of Scorn returns to us!
-Open the gates, prepare the way!
-You think you hear muffled laughing
-from somewhere...
+The guard shouts.... The brave hero of Scorn returns to us! Open the gates, prepare the way! You think you hear muffled laughing from somewhere...
 endmsg
 x 14
 y 13
@@ -1592,9 +1578,7 @@ msg
 @match monster|Monsters
 What about them!
 @match *
-And where do you think your GOING?
-Not downstairs!....
-You'll have to kill me first!
+And where do you think your GOING? Not downstairs!.... You'll have to kill me first!
 endmsg
 x 15
 y 11
@@ -1618,9 +1602,7 @@ end
 arch magic_mouth
 name magic_mouth (gate pass)
 msg
-Halt! Who wishes to enter?
-You show your gate pass...
-Oh a merchant, Pass Friend.
+Halt! Who wishes to enter? You show your gate pass... Oh a merchant, Pass Friend.
 endmsg
 x 15
 y 13
@@ -1725,9 +1707,7 @@ end
 arch magic_mouth
 name magic_mouth (gate open/close)
 msg
-The rusted outer gate is set in motion
-with loud noise emanating from the
-southern wall.
+The rusted outer gate is set in motion with loud noise emanating from the southern wall.
 endmsg
 x 16
 y 13
@@ -1878,31 +1858,15 @@ end
 arch guard
 name gatehouse guard
 msg
-@match monster|Monster
-They keep trying to sneak in, but we
-always kill them.
-@match Open|Gate|open|gate
-The gate opens only for certain people.
-@match who|people
-Only those who are
-* Citizens of Scorn with a Password
-* Have a merchants ``Gate Pass''
-* Or knighted ``Hero'' by the king
-may pass through these gates.
-@match gate|pass
-See the ``Office of Gate Passes''
-next to the Port Gate.
-@match secret|door|wall|password
-I can't tell you that!
-Do you want to be thrown in JAIL?
-@match *
-Good to see a friend!
-Have you seen any monsters lately?
+
 endmsg
 x 18
 y 5
 friendly 1
 unaggressive 0
+arch npc_dialog
+name scorn/misc/gateguardoutside.msg
+end
 end
 arch cobblestones2
 x 18
@@ -2154,20 +2118,14 @@ y 5
 connected 23
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 20
 y 5
-connected 24
+arch event_trigger
+name scorn/Aristocracy 10-100 24
+title Python
+slaying python/quests/QuestTriggerConnect.py
 end
-arch magic_ear
-msg
-@match chain|Chain|CHAIN
-Well, you know the password,
-so you must be ok.   Pass Friend.
-endmsg
-x 20
-y 5
-connected 21
 end
 arch cobblestones2
 x 20
@@ -2180,10 +2138,14 @@ y 6
 connected 23
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 20
 y 6
-connected 24
+arch event_trigger
+name scorn/Aristocracy 10-100 24
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 20
@@ -2196,10 +2158,14 @@ y 7
 connected 23
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 20
 y 7
-connected 24
+arch event_trigger
+name scorn/Aristocracy 10-100 24
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 20
@@ -2212,10 +2178,14 @@ y 8
 connected 23
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 20
 y 8
-connected 24
+arch event_trigger
+name scorn/Aristocracy 10-100 24
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones
 x 20
@@ -2276,7 +2246,7 @@ end
 arch dwall_2_2_2
 x 21
 end
-arch mine_1_1
+arch mine_2_1_1
 x 21
 end
 arch dungeon_magic
@@ -2391,7 +2361,7 @@ arch dwall_2_2_1
 x 21
 y 13
 end
-arch mine_1_2
+arch mine_2_1_1
 x 21
 y 13
 end
@@ -2448,10 +2418,9 @@ end
 arch guard
 name gatehouse guard
 msg
-@match monster|Monster
-They keep trying to sneak in, but we
-always kill them.
-@match Open|Gate|open|gate
+@match monster
+They keep trying to sneak in, but we always kill them.
+@match open|gate
 The gate opens only for certain people.
 @match who|people
 Only those who are
@@ -2460,20 +2429,20 @@ Only those who are
 * Or knighted ``Hero'' by the king
 may pass through these gates.
 @match gate|pass
-See the ``Office of Gate Passes''
-next to the Port Gate.
+See the ``Office of Gate Passes'' next to the Port Gate.
 @match secret|door|wall|password
-I can't tell you that!
-Do you want to be thrown in JAIL?
+I can't tell you that! Do you want to be thrown in JAIL?
 @match *
-Good to see a friend!
-Have you seen any monsters lately?
+Good to see a friend! Have you seen any monsters lately?
 endmsg
 x 22
 y 9
 speed_left -0.520000
 friendly 1
 unaggressive 0
+arch npc_dialog
+name scorn/misc/gateguardoutside.msg
+end
 end
 arch flagstone
 x 22
@@ -2761,8 +2730,7 @@ end
 arch sign
 name WARNING...
 msg
-WARNING: Once beyond the city walls,
-you are on your OWN!
+WARNING: Once beyond the city walls, you are on your OWN!
 endmsg
 x 26
 y 9

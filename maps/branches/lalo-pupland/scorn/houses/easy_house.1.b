@@ -1,11 +1,15 @@
 arch map
 name Easy House Top
+difficulty 5
 region scorn
 darkness 2
 width 16
 height 16
+enter_x 14
+enter_y 4
 msg
 Created:  2006-05-26 Bort
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor2
@@ -510,8 +514,6 @@ msg
 @match *
 Ogarth kil yu now!
 endmsg
-hp 25
-maxhp 25
 exp 100
 wc 10
 ac 15

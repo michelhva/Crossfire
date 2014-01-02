@@ -1,14 +1,14 @@
 arch map
-name Scorn Mansion - Garden
-difficulty 1
+name Wishing Well in Scorn Mansion
+difficulty 12
 region scorn
 width 61
 height 59
-enter_x 31
+enter_x 29
 enter_y 29
 msg
-Created:  1994-02-28
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1994-12-28 Morten Hanshaugen
+Modified: 2013-11-23 Kevin Zheng
 endmsg
 end
 arch grass
@@ -3363,12 +3363,6 @@ arch small_stones
 x 8
 y 39
 end
-arch button_handle
-name Careful...
-x 8
-y 39
-connected 4
-end
 arch guard
 name Syvsovern
 x 8
@@ -3713,7 +3707,7 @@ end
 arch stair_down
 slaying muriskunes
 hp 15
-sp 20
+sp 46
 x 9
 y 39
 end
@@ -6141,6 +6135,10 @@ end
 arch bwall_0
 x 16
 y 7
+end
+arch small_stones
+x 16
+y 8
 end
 arch false_wall
 x 16
@@ -10830,6 +10828,10 @@ arch random_treasure
 x 28
 y 44
 end
+arch small_stones
+x 28
+y 45
+end
 arch block_door_closed
 x 28
 y 45
@@ -11066,8 +11068,7 @@ arch small_stones
 x 29
 y 29
 end
-arch well
-name wishing well
+arch stair_3_up
 slaying entrance
 hp 23
 sp 43
@@ -11161,6 +11162,10 @@ end
 arch earthwall
 x 29
 y 44
+end
+arch small_stones
+x 29
+y 45
 end
 arch block_door_closed
 x 29
@@ -11522,6 +11527,10 @@ arch small_stones
 x 30
 y 44
 end
+arch small_stones
+x 30
+y 45
+end
 arch block_door_closed
 x 30
 y 45
@@ -11842,6 +11851,10 @@ end
 arch small_stones
 x 31
 y 44
+end
+arch small_stones
+x 31
+y 45
 end
 arch block_door_closed
 x 31
@@ -13173,19 +13186,6 @@ x 35
 y 25
 end
 arch small_stones
-x 35
-y 26
-end
-arch sign
-name Creator
-msg
-Created by Morten Hanshaugen
-University of Oslo, Norway
-Comments and bugreports can
-be mailed to:
-<meh@ifi.uio.no> or
-<meh@usit.uio.no>
-endmsg
 x 35
 y 26
 end
@@ -15037,7 +15037,7 @@ end
 arch guard
 name Arnold
 msg
-Ill be back ...
+Ill be back...
 endmsg
 x 40
 y 27
@@ -20664,7 +20664,7 @@ y 34
 end
 arch magic_mouth
 msg
-You feel an unusual draft against this
+You feel an unusual draft against this.
 wall
 endmsg
 x 55
@@ -22108,6 +22108,10 @@ end
 arch small_stones
 x 59
 y 24
+end
+arch small_stones
+x 59
+y 25
 end
 arch weak_wall_6
 x 59

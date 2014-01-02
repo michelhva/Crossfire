@@ -1,13 +1,15 @@
 arch map
-name Jail
+name Scorn Jail, Upperlevel
 reset_timeout 7200
 difficulty 6
 region scorn
 width 17
 height 15
+enter_x 3
 enter_y 7
 msg
-Created:  2004-11-09 Casper and Salathar (salathar@hotmail.com)2004
+Created:  2004-11-09 Casper and Salathar (salathar@hotmail.com)
+Modified: 2012-03-27 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -58,7 +60,10 @@ end
 arch flagstone
 y 5
 end
-arch stwall_3_2
+arch swall_1_4_half
+y 5
+end
+arch stwall_2_1_1
 y 5
 end
 arch dungeon_magic
@@ -94,7 +99,10 @@ end
 arch flagstone
 y 9
 end
-arch stwall_3_2
+arch swall_1_4_half
+y 9
+end
+arch stwall_2_1_1
 y 9
 end
 arch dungeon_magic
@@ -195,13 +203,25 @@ arch swall_1_3
 x 1
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 1
 y 6
 end
 arch flagstone
 x 1
+y 6
+end
+arch dungeon_magic
+x 1
 y 7
+end
+arch flagstone
+x 1
+y 7
+end
+arch dungeon_magic
+x 1
+y 8
 end
 arch flagstone
 x 1
@@ -302,9 +322,7 @@ y 4
 end
 arch magic_mouth
 msg
-You were summoned here because you have been
-naughty.
-Say "I understand" and the door will open.
+You were summoned here because you have been naughty.  Say "I understand" and the door will open.
 endmsg
 x 2
 y 4
@@ -348,6 +366,10 @@ end
 arch flagstone
 x 2
 y 6
+end
+arch dungeon_magic
+x 2
+y 7
 end
 arch flagstone
 x 2
@@ -395,9 +417,7 @@ y 10
 end
 arch magic_mouth
 msg
-You were summoned here because you have been
-naughty.
-Say "I understand" and the door will open.
+You were summoned here because you have been naughty.  Say "I understand" and the door will open.
 endmsg
 x 2
 y 10
@@ -495,9 +515,17 @@ arch swall_1_4
 x 3
 y 5
 end
+arch dungeon_magic
+x 3
+y 6
+end
 arch flagstone
 x 3
 y 6
+end
+arch dungeon_magic
+x 3
+y 7
 end
 arch flagstone
 x 3
@@ -509,6 +537,10 @@ hp 3
 sp 7
 x 3
 y 7
+end
+arch dungeon_magic
+x 3
+y 8
 end
 arch flagstone
 x 3
@@ -576,7 +608,10 @@ end
 arch flagstone
 x 4
 end
-arch stwall_3_3
+arch stwall_2_1_2
+x 4
+end
+arch swall_1_1_half
 x 4
 end
 arch dungeon_magic
@@ -639,6 +674,10 @@ arch swall_3_1
 x 4
 y 5
 end
+arch dungeon_magic
+x 4
+y 6
+end
 arch flagstone
 x 4
 y 6
@@ -648,9 +687,17 @@ name Waiting Cell Guard
 x 4
 y 6
 end
+arch dungeon_magic
+x 4
+y 7
+end
 arch flagstone
 x 4
 y 7
+end
+arch dungeon_magic
+x 4
+y 8
 end
 arch flagstone
 x 4
@@ -729,7 +776,11 @@ arch flagstone
 x 4
 y 14
 end
-arch stwall_3_1
+arch swall_1_2_half
+x 4
+y 14
+end
+arch stwall_2_1_2
 x 4
 y 14
 end
@@ -786,13 +837,25 @@ arch swall_1_3
 x 5
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 5
 y 6
 end
 arch flagstone
 x 5
+y 6
+end
+arch dungeon_magic
+x 5
 y 7
+end
+arch flagstone
+x 5
+y 7
+end
+arch dungeon_magic
+x 5
+y 8
 end
 arch flagstone
 x 5
@@ -893,9 +956,7 @@ y 4
 end
 arch magic_mouth
 msg
-You were summoned here because you have been
-naughty.
-Say "I understand" and the door will open.
+You were summoned here because you have been naughty.  Say "I understand" and the door will open.
 endmsg
 x 6
 y 4
@@ -939,6 +1000,10 @@ end
 arch flagstone
 x 6
 y 6
+end
+arch dungeon_magic
+x 6
+y 7
 end
 arch flagstone
 x 6
@@ -986,9 +1051,7 @@ y 10
 end
 arch magic_mouth
 msg
-You were summoned here because you have been
-naughty.
-Say "I understand" and the door will open.
+You were summoned here because you have been naughty.  Say "I understand" and the door will open.
 endmsg
 x 6
 y 10
@@ -1086,13 +1149,25 @@ arch swall_1_4
 x 7
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 7
 y 6
 end
 arch flagstone
 x 7
+y 6
+end
+arch dungeon_magic
+x 7
 y 7
+end
+arch flagstone
+x 7
+y 7
+end
+arch dungeon_magic
+x 7
+y 8
 end
 arch flagstone
 x 7
@@ -1160,7 +1235,10 @@ end
 arch flagstone
 x 8
 end
-arch stwall_3_3
+arch stwall_2_1_2
+x 8
+end
+arch swall_1_1_half
 x 8
 end
 arch dungeon_magic
@@ -1223,6 +1301,10 @@ arch swall_3_1
 x 8
 y 5
 end
+arch dungeon_magic
+x 8
+y 6
+end
 arch flagstone
 x 8
 y 6
@@ -1232,9 +1314,17 @@ name Waiting Cell Guard
 x 8
 y 6
 end
+arch dungeon_magic
+x 8
+y 7
+end
 arch flagstone
 x 8
 y 7
+end
+arch dungeon_magic
+x 8
+y 8
 end
 arch flagstone
 x 8
@@ -1313,7 +1403,11 @@ arch flagstone
 x 8
 y 14
 end
-arch stwall_3_1
+arch swall_1_2_half
+x 8
+y 14
+end
+arch stwall_2_1_2
 x 8
 y 14
 end
@@ -1370,13 +1464,25 @@ arch swall_1_3
 x 9
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 9
 y 6
 end
 arch flagstone
 x 9
+y 6
+end
+arch dungeon_magic
+x 9
 y 7
+end
+arch flagstone
+x 9
+y 7
+end
+arch dungeon_magic
+x 9
+y 8
 end
 arch flagstone
 x 9
@@ -1477,9 +1583,7 @@ y 4
 end
 arch magic_mouth
 msg
-You were summoned here because you have been
-naughty.
-Say "I understand" and the door will open.
+You were summoned here because you have been naughty.  Say "I understand" and the door will open.
 endmsg
 x 10
 y 4
@@ -1523,6 +1627,10 @@ end
 arch flagstone
 x 10
 y 6
+end
+arch dungeon_magic
+x 10
+y 7
 end
 arch flagstone
 x 10
@@ -1570,9 +1678,7 @@ y 10
 end
 arch magic_mouth
 msg
-You were summoned here because you have been
-naughty.
-Say "I understand" and the door will open.
+You were summoned here because you have been naughty.  Say "I understand" and the door will open.
 endmsg
 x 10
 y 10
@@ -1670,13 +1776,25 @@ arch swall_1_4
 x 11
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 11
 y 6
 end
 arch flagstone
 x 11
+y 6
+end
+arch dungeon_magic
+x 11
 y 7
+end
+arch flagstone
+x 11
+y 7
+end
+arch dungeon_magic
+x 11
+y 8
 end
 arch flagstone
 x 11
@@ -1744,7 +1862,10 @@ end
 arch flagstone
 x 12
 end
-arch stwall_3_3
+arch stwall_2_1_2
+x 12
+end
+arch swall_1_1_half
 x 12
 end
 arch dungeon_magic
@@ -1807,13 +1928,25 @@ arch swall_2_2_4
 x 12
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 12
 y 6
 end
 arch flagstone
 x 12
+y 6
+end
+arch dungeon_magic
+x 12
 y 7
+end
+arch flagstone
+x 12
+y 7
+end
+arch dungeon_magic
+x 12
+y 8
 end
 arch flagstone
 x 12
@@ -1887,7 +2020,11 @@ arch flagstone
 x 12
 y 14
 end
-arch stwall_3_1
+arch swall_1_2_half
+x 12
+y 14
+end
+arch stwall_2_1_2
 x 12
 y 14
 end
@@ -2095,10 +2232,14 @@ x 14
 y 1
 connected 12
 end
+arch dungeon_magic
+x 14
+y 2
+end
 arch flagstone
 x 14
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 14
@@ -2118,10 +2259,14 @@ x 14
 y 3
 connected 22
 end
+arch dungeon_magic
+x 14
+y 4
+end
 arch flagstone
 x 14
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 14
@@ -2144,7 +2289,7 @@ end
 arch flagstone
 x 14
 y 6
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -2161,12 +2306,12 @@ end
 arch flagstone
 x 14
 y 7
-no_pass 1
+move_block all
 end
 arch sign
 name Instructions
 msg
-Step into a waiting cell. Summon a character there.
+Step into a waiting cell.  Summon a character there.
 Saying 'I understand' near a waiting cell door will open it.
 The Warden's key will allow you to open waiting cell doors when you are not flying (dm).
 When the door is open the character will be able to leave.
@@ -2177,7 +2322,7 @@ end
 arch flagstone
 x 14
 y 8
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -2205,10 +2350,14 @@ x 14
 y 9
 connected 42
 end
+arch dungeon_magic
+x 14
+y 10
+end
 arch flagstone
 x 14
 y 10
-no_pass 1
+move_block all
 end
 arch flagstone
 x 14
@@ -2228,10 +2377,14 @@ x 14
 y 11
 connected 52
 end
+arch dungeon_magic
+x 14
+y 12
+end
 arch flagstone
 x 14
 y 12
-no_pass 1
+move_block all
 end
 arch flagstone
 x 14
@@ -2297,10 +2450,14 @@ arch boulder
 x 15
 y 1
 end
+arch dungeon_magic
+x 15
+y 2
+end
 arch flagstone
 x 15
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 15
@@ -2327,10 +2484,14 @@ arch boulder
 x 15
 y 3
 end
+arch dungeon_magic
+x 15
+y 4
+end
 arch flagstone
 x 15
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 15
@@ -2360,7 +2521,7 @@ end
 arch flagstone
 x 15
 y 6
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -2377,7 +2538,7 @@ end
 arch flagstone
 x 15
 y 7
-no_pass 1
+move_block all
 end
 arch key2
 name Warden's Key
@@ -2388,7 +2549,7 @@ end
 arch flagstone
 x 15
 y 8
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -2423,10 +2584,14 @@ arch boulder
 x 15
 y 9
 end
+arch dungeon_magic
+x 15
+y 10
+end
 arch flagstone
 x 15
 y 10
-no_pass 1
+move_block all
 end
 arch flagstone
 x 15
@@ -2453,10 +2618,14 @@ arch boulder
 x 15
 y 11
 end
+arch dungeon_magic
+x 15
+y 12
+end
 arch flagstone
 x 15
 y 12
-no_pass 1
+move_block all
 end
 arch flagstone
 x 15

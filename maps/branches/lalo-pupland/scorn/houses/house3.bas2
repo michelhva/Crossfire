@@ -1,12 +1,14 @@
 arch map
 name Mike Miller's cellar 2
-difficulty 1
+difficulty 12
 region scorn
 width 10
 height 20
+enter_x 8
+enter_y 18
 msg
 Created:  2005-03-23 Huhanhi
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -189,7 +191,7 @@ end
 arch river_nw-se_l
 x 1
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 1
@@ -257,8 +259,7 @@ y 10
 end
 arch button_plate
 msg
-The button looks broken.
-You will need something *heavy* to activate it.
+The button looks broken.  You will need something *heavy* to activate it.
 endmsg
 x 1
 y 10
@@ -269,8 +270,8 @@ arch chest_2
 x 1
 y 10
 arch wine
-name bottle of Château Lapompe 1969
-name_pl bottles of Château Lapompe 1969
+name bottle of ChÃ¢teau Lapompe 1969
+name_pl bottles of ChÃ¢teau Lapompe 1969
 nrof 6
 value 100
 end
@@ -461,8 +462,8 @@ arch chest_2
 x 2
 y 10
 arch wine
-name bottle of Château Lapompe 1969
-name_pl bottles of Château Lapompe 1969
+name bottle of ChÃ¢teau Lapompe 1969
+name_pl bottles of ChÃ¢teau Lapompe 1969
 nrof 6
 value 100
 end
@@ -511,7 +512,7 @@ arch dungeon_floor
 x 2
 y 17
 end
-arch bridge_we
+arch river_bridge_we
 x 2
 y 17
 end
@@ -638,8 +639,8 @@ arch chest_2
 x 3
 y 10
 arch wine
-name bottle of Château Lapompe 1969
-name_pl bottles of Château Lapompe 1969
+name bottle of ChÃ¢teau Lapompe 1969
+name_pl bottles of ChÃ¢teau Lapompe 1969
 nrof 6
 value 100
 end
@@ -687,7 +688,7 @@ end
 arch river_sw-ne_l
 x 3
 y 16
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 3
@@ -983,8 +984,8 @@ arch dungeon_floor
 x 5
 y 9
 arch wine
-name bottle of Château Lapompe 1969
-name_pl bottles of Château Lapompe 1969
+name bottle of ChÃ¢teau Lapompe 1969
+name_pl bottles of ChÃ¢teau Lapompe 1969
 nrof 6
 value 100
 end
@@ -1123,7 +1124,7 @@ arch flagstone
 x 6
 y 5
 end
-arch rjunct_we-s
+arch river_junct_we-s
 x 6
 y 5
 end
@@ -1357,7 +1358,7 @@ end
 arch tree6
 x 7
 y 12
-no_pass 1
+move_block all
 blocksview 1
 end
 arch flagstone
@@ -1367,7 +1368,7 @@ end
 arch tree6
 x 7
 y 13
-no_pass 1
+move_block all
 blocksview 1
 end
 arch flagstone
@@ -1445,7 +1446,6 @@ sp 10
 maxsp 10
 exp 500
 dam 4
-wc 15
 ac 8
 x 8
 y 2
@@ -1467,7 +1467,6 @@ resist_chaos 20
 resist_holyword 40
 resist_blind 20
 can_use_scroll 1
-can_use_rod 1
 arch wand
 title of Firebolt of Plenty
 food 50
@@ -1558,7 +1557,8 @@ arch flagstone
 x 8
 y 12
 end
-arch rain2
+arch rain1
+face rain2.111
 x 8
 y 12
 end
@@ -1573,7 +1573,7 @@ end
 arch tree6
 x 8
 y 13
-no_pass 1
+move_block all
 blocksview 1
 end
 arch flagstone

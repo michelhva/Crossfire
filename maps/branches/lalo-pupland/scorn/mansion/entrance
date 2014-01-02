@@ -1,12 +1,13 @@
 arch map
 name Scorn Mansion - Entrance
-difficulty 1
+difficulty 6
 region scorn
 width 30
 height 50
 enter_x 14
 msg
-Created:  1994-02-27
+Created:  1994-12-27 Morten Hanshaugen
+Modified: 2013-08-09 Kevin Zheng
 endmsg
 end
 arch woodfloor
@@ -437,8 +438,7 @@ x 1
 y 18
 arch note
 msg
-To meet Filur, enter the
-cave and call his name.
+To meet Filur, enter the cave and call his name.
 endmsg
 level 3
 end
@@ -526,7 +526,6 @@ end
 arch orc
 x 1
 y 37
-speed_left -0.700000
 end
 arch woods_2
 x 1
@@ -3086,7 +3085,6 @@ end
 arch kobold
 x 11
 y 48
-speed_left -0.900000
 end
 arch brush
 x 11
@@ -3561,7 +3559,7 @@ end
 arch woodfloor
 x 14
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_105_115
 hp 19
 sp 40
@@ -4533,19 +4531,6 @@ x 18
 y 5
 end
 arch woodfloor
-x 18
-y 6
-end
-arch sign
-name Creator
-msg
-Created by Morten Hanshaugen
-University of Oslo, Norway
-Comments and bugreports can
-be mailed to:
-<meh@ifi.uio.no> or
-<meh@usit.uio.no>
-endmsg
 x 18
 y 6
 end
@@ -6017,7 +6002,7 @@ x 23
 y 43
 end
 arch well
-name Wishing well
+name wishing well
 slaying garden
 hp 29
 sp 29
@@ -6267,7 +6252,6 @@ end
 arch goblin
 x 24
 y 37
-speed_left -0.900000
 smoothlevel 20
 end
 arch hills_rocky

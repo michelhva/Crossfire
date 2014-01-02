@@ -1,11 +1,15 @@
 arch map
 name Easy House Basement
+difficulty 5
 region scorn
 darkness 3
 width 16
 height 16
+enter_x 7
+enter_y 5
 msg
 Created:  2006-05-26 Bort
+Modified: 2012-01-08 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -649,8 +653,7 @@ y 3
 end
 arch magic_mouth
 msg
-There seems to be a lot of smoke.
-Was something burning?
+There seems to be a lot of smoke.  Was something burning?
 endmsg
 food 1
 x 6
@@ -670,8 +673,7 @@ y 5
 end
 arch magic_mouth
 msg
-There seems to be a lot of smoke.
-Was something burning?
+There seems to be a lot of smoke.  Was something burning?
 endmsg
 food 1
 x 6
@@ -829,7 +831,6 @@ name orc champion Slupb
 hp 20
 maxhp 20
 exp 45
-wc 16
 x 7
 y 13
 level 4

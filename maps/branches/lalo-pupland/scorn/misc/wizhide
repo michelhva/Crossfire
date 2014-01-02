@@ -1,34 +1,25 @@
 arch map
-name Wizard's Hideout
-difficulty 1
+name Wizard's Western Hideout
+difficulty 3
 region scorn
 darkness 4
 width 12
 height 14
+enter_x 10
+enter_y 12
 msg
 Created:  2006-08-05 Alex Schultz
+Modified: 2012-03-27 Rick Tanner
 endmsg
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 end
 arch wall_2_2_2
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 y 1
@@ -37,13 +28,7 @@ arch wall_2_1_1
 y 1
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 y 2
@@ -52,13 +37,7 @@ arch wall_2_1_1
 y 2
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 3
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 y 3
@@ -67,13 +46,7 @@ arch wall_3_2
 y 3
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 y 4
@@ -82,13 +55,7 @@ arch wall_2_1_1
 y 4
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 y 5
@@ -97,13 +64,7 @@ arch wall_2_1_1
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 y 6
@@ -115,133 +76,67 @@ arch blocked
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave24
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave3
 y 9
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave3
 y 10
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave3
 y 11
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 12
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 y 12
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave3
 y 12
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 y 13
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 y 13
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave23
 y 13
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 1
@@ -276,20 +171,12 @@ arch note
 name torn page
 name_pl torn pages
 msg
-Unlike Dhelyy Olyy, his contemporary rival for the Seat, Rhyz focused mostly on closing the gap that existed between the art of fighting and the Arcane. While Dhelyy Olyy believed in the dual association of the Warrior and the Wizard, each with its own strength increased by a long specialization in their respective fields, Rhyz believed in the idea of a "super warriard", a combination of a powerful wizard and a strong warrior. As such, he devised many items that increased the strength and combat capabilities of their wearers, hoping that wizard apprentices would so be more inclined to learn the battle skills of warriors.
+Unlike Dhelyy Olyy, his contemporary rival for the Seat, Rhyz focused mostly on closing the gap that existed between the art of fighting and the Arcane.  While Dhelyy Olyy believed in the dual association of the Warrior and the Wizard, each with its own strength increased by a long specialization in their respective fields, Rhyz believed in the idea of a "super warriard," a combination of a powerful wizard and a strong warrior.  As such, he devised many items that increased the strength and combat capabilities of their wearers, hoping that wizard apprentices would so be more inclined to learn the battle skills of warriors.
 endmsg
 end
 arch random_reading
-face randomRead.111
-hp 1
-randomitems random_read
-auto_apply 1
 end
 arch random_reading
-face randomRead.111
-hp 1
-randomitems random_read
-auto_apply 1
 end
 end
 arch woodfloor2
@@ -297,14 +184,8 @@ x 1
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 1
@@ -319,22 +200,12 @@ x 1
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 1
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave4
@@ -342,26 +213,16 @@ x 1
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch light2
 x 1
 y 9
 end
 arch stonefloor2
-face stfloor.111
 x 1
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch stair2_up
@@ -372,79 +233,39 @@ x 1
 y 9
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 1
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 1
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 12
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 1
 y 12
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 1
 y 13
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 1
 y 13
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave2
@@ -452,26 +273,13 @@ x 1
 y 13
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 2
 end
 arch wall_2_1_2
 x 2
-end
-arch creator
-other_arch potion_empty
-hp 25
-x 2
-y 1
-connected 2
 end
 arch woodfloor2
 x 2
@@ -497,22 +305,10 @@ arch bookshelf
 x 2
 y 4
 arch random_reading
-face randomRead.111
-hp 1
-randomitems random_read
-auto_apply 1
 end
 arch random_reading
-face randomRead.111
-hp 1
-randomitems random_read
-auto_apply 1
 end
 arch random_reading
-face randomRead.111
-hp 1
-randomitems random_read
-auto_apply 1
 end
 end
 arch woodfloor2
@@ -520,14 +316,8 @@ x 2
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 2
@@ -542,22 +332,12 @@ x 2
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 2
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave25
@@ -565,22 +345,12 @@ x 2
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 2
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave10
@@ -588,41 +358,21 @@ x 2
 y 9
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 2
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 2
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave11
@@ -630,22 +380,12 @@ x 2
 y 11
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 12
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 2
 y 12
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave1
@@ -653,22 +393,12 @@ x 2
 y 12
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 2
 y 13
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 2
 y 13
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave22
@@ -676,13 +406,7 @@ x 2
 y 13
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 3
@@ -694,38 +418,57 @@ arch light2
 x 3
 y 1
 end
-arch magic_ear
-msg
-@match yes|Yes|sure|Sure
-endmsg
-x 3
-y 1
-connected 2
-end
 arch woodfloor2
 x 3
 y 1
 end
 arch c_sage
-name old mage
+name Terrance Rhyz
 msg
-@match yes|Yes|sure|Sure
-Thank you so much. I think he is somewhere in The Frolicing Mermaid in Navar. Bring this bottle to him, tell him that Terrance send you, and ask him to fill it for me. As a reward I'll let you try out one of the amulets. When you get back, place the filled bottle on that table in the corner.
-@match amulet|Amulet
-I am currently working with a fellow mage in Navar who has a similar gem, to make an amulet which can indicate the distance and direction to each gem, and hence to Scorn and Navar. Right now I need a special golden potion delievered from him, containing the essence of the magical enegeries of his gem. Can you help get some from him?
-@match gem|Gem|purple|Purple|desk|Desk
-The gem in my desk was a work started by my father. It was made to have a strong and distinct magical enegry which can be detected from a long way away. I am currently working on amulets to work with the gem.
-@match rhyz|Rhyz|family|entorinaas|Entorinaas
-I am a decendent of the great Entorinaas Durdennis Rhyz. A long time ago, he set out to create the perfect "warriard", one highly adept with both combat and magic, however he failed. Recently I have come to believe that modern adventurers are becoming much like the "warriards"  that my ancestor believed in, so I have been trying to continue his vision by encouraging adventurers.
-@match hide|Hide
+@match yes|sure
+Thank you so much.  I think he is somewhere in The Frolicing Mermaid in Navar.  Bring this bottle to him, tell him that Terrance send you, and ask him to fill it for me.  As a reward I'll let you try out one of the amulets.  When you get back, place the filled bottle on that table in the corner.
+@match amulet
+I am currently working with a fellow mage in Navar who has a similar gem, to make an amulet which can indicate the distance and direction to each gem, and hence to Scorn and Navar.  Right now I need a special golden potion delievered from him, containing the essence of the magical enegeries of his gem.  Can you help get some from him?
+@match gem|purple|desk
+The gem in my desk was a work started by my father.  It was made to have a strong and distinct magical enegry which can be detected from a long way away.  I am currently working on amulets to work with the gem.
+@match rhyz|family|entorinaas
+I am a decendent of the great Entorinaas Durdennis Rhyz.  A long time ago, he set out to create the perfect "warriard", one highly adept with both combat and magic, however he failed.  Recently I have come to believe that modern adventurers are becoming much like the "warriards" that my ancestor believed in, so I have been trying to continue his vision by encouraging adventurers.
+@match hide
 I am hiding from the king of Scorn, he fears what my happen if his enemies get some of my works.
 @match *
-I am Terrance Rhyz. How may I help you?
+I am Terrance Rhyz.  How may I help you?
 endmsg
 x 3
 y 1
+direction 4
 randomitems mage
 stand_still 1
+arch npc_dialog
+name /scorn/misc/rhyz.msg
+end
+arch NPCGift
+arch clock
+name rhyzian amulet
+name_pl rhyzian amulets
+msg
+For every flash there are 8 furlongs; Scorn is red while Navar is blue.
+endmsg
+face amulet_gray.111
+animation NONE
+value 0
+weight 700
+anim_speed 0
+client_anim_random 0
+arch event_apply
+name event_apply
+title Python
+slaying /python/items/rhyzian_amulet.py
+end
+end
+arch potion_empty
+identified 1
+end
+end
 end
 arch woodfloor2
 x 3
@@ -748,14 +491,8 @@ x 3
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 3
@@ -769,23 +506,17 @@ arch blocked
 x 3
 y 7
 end
+arch cave_15
+x 3
+y 8
+end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 3
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave4
@@ -793,55 +524,37 @@ x 3
 y 9
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 3
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 3
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 3
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave2
 x 3
 y 11
 end
+arch cave_15
+x 3
+y 12
+end
+arch cave_15
+x 3
+y 13
+end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 4
@@ -863,16 +576,8 @@ name_pl strange gems
 no_pick 1
 end
 arch random_mineral
-face randomMin.111
-hp 1
-randomitems random_inorganic
-auto_apply 1
 end
 arch random_potion
-face randomPoti.111
-hp 1
-randomitems random_potion
-auto_apply 1
 end
 end
 arch woodfloor2
@@ -892,14 +597,8 @@ x 4
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 4
@@ -914,22 +613,12 @@ x 4
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 4
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave24
@@ -937,22 +626,12 @@ x 4
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 4
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave9
@@ -960,55 +639,37 @@ x 4
 y 9
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 4
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 4
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 4
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave2
 x 4
 y 11
 end
+arch cave_15
+x 4
+y 12
+end
+arch cave_15
+x 4
+y 13
+end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 5
@@ -1032,49 +693,17 @@ arch woodfloor2
 x 5
 y 4
 end
-arch altar_trigger
-slaying potion of gem essence
-food 1
-x 5
-y 5
-last_sp 1
-connected 1
-end
 arch woodfloor2
 x 5
 y 5
 end
-arch creator
-name table
-face table_3.111
-hp 0
+arch table_3
 x 5
 y 5
-invisible 0
-connected 1
-lifesave 1
-arch amulet_gray
-name rhyzian amulet
-name_pl rhyzian amulets
-msg
-For every flash there are 8 furlongs; Scorn is red while navar is blue.
-endmsg
-type 9
-arch event_apply
-title Python
-slaying /python/items/rhyzian_amulet.py
-end
-end
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 5
@@ -1089,22 +718,12 @@ x 5
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 5
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave25
@@ -1112,22 +731,12 @@ x 5
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 5
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave10
@@ -1135,41 +744,21 @@ x 5
 y 9
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 5
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 5
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave12
@@ -1177,22 +766,12 @@ x 5
 y 11
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 12
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 5
 y 12
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave3
@@ -1200,22 +779,12 @@ x 5
 y 12
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 5
 y 13
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 5
 y 13
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave23
@@ -1223,13 +792,7 @@ x 5
 y 13
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 6
@@ -1238,14 +801,8 @@ arch wall_2_2_3
 x 6
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 1
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 6
@@ -1256,14 +813,8 @@ x 6
 y 1
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 2
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 6
@@ -1285,14 +836,8 @@ x 6
 y 3
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 4
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 6
@@ -1303,14 +848,8 @@ x 6
 y 4
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 5
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 6
@@ -1321,14 +860,8 @@ x 6
 y 5
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 6
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 6
@@ -1343,22 +876,12 @@ x 6
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 6
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave24
@@ -1366,22 +889,12 @@ x 6
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 6
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave9
@@ -1389,41 +902,21 @@ x 6
 y 9
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 6
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 6
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave11
@@ -1431,22 +924,12 @@ x 6
 y 11
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 12
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 6
 y 12
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave1
@@ -1454,22 +937,12 @@ x 6
 y 12
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 6
 y 13
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 6
 y 13
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave22
@@ -1520,22 +993,12 @@ x 7
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 7
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 7
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave4
@@ -1543,87 +1006,55 @@ x 7
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 7
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 7
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 7
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 7
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 7
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 7
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave2
 x 7
 y 11
 end
+arch cave_15
+x 7
+y 12
+end
+arch cave_15
+x 7
+y 13
+end
 arch blocked
 x 8
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 8
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 8
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave4
@@ -1631,41 +1062,21 @@ x 8
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 8
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 8
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 8
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 8
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave11
@@ -1673,49 +1084,37 @@ x 8
 y 10
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 8
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 8
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave22
 x 8
 y 11
 end
+arch cave_15
+x 8
+y 12
+end
+arch cave_15
+x 8
+y 13
+end
 arch blocked
 x 9
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 9
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 9
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave4
@@ -1723,41 +1122,21 @@ x 9
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 9
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 9
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 9
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 9
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave12
@@ -1765,22 +1144,12 @@ x 9
 y 10
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 9
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 9
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave3
@@ -1788,22 +1157,12 @@ x 9
 y 11
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 9
 y 12
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 9
 y 12
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave3
@@ -1811,22 +1170,12 @@ x 9
 y 12
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 9
 y 13
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 9
 y 13
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave23
@@ -1838,22 +1187,12 @@ x 10
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 10
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 10
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave4
@@ -1861,79 +1200,39 @@ x 10
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 10
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 10
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 10
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 10
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 10
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 10
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 10
 y 12
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 10
 y 12
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch stair2_up
@@ -1944,22 +1243,12 @@ x 10
 y 12
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 10
 y 13
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 10
 y 13
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave2
@@ -1971,22 +1260,12 @@ x 11
 y 7
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 11
 y 8
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 11
 y 8
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave25
@@ -1994,22 +1273,12 @@ x 11
 y 8
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 11
 y 9
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 11
 y 9
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave1
@@ -2017,22 +1286,12 @@ x 11
 y 9
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 11
 y 10
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 11
 y 10
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave1
@@ -2040,22 +1299,12 @@ x 11
 y 10
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 11
 y 11
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 11
 y 11
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave1
@@ -2063,22 +1312,12 @@ x 11
 y 11
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 11
 y 12
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 11
 y 12
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave1
@@ -2086,22 +1325,12 @@ x 11
 y 12
 end
 arch dungeon_magic
-name no_spells
-face no_spells.111
 x 11
 y 13
-invisible 1
-no_pick 1
-no_magic 1
-damned 1
 end
 arch stonefloor2
-face stfloor.111
 x 11
 y 13
-smoothlevel 30
-no_pick 1
-is_floor 1
 smoothface stfloor.111 empty_S.111
 end
 arch cave22
