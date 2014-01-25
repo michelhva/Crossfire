@@ -10,9 +10,3 @@ dependencies {
     compile project(':src:protocol')
     compile project(':src:util')
 }
-
-repositories {
-    flatDir {
-        dirs rootProject.file('lib')
-    }
-}
