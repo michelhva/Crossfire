@@ -26,12 +26,6 @@ dependencies {
     testCompile project(':src:network').sourceSets.test.output
 }
 
-repositories {
-    flatDir {
-        dirs rootProject.file('lib')
-    }
-}
-
 task createJar(type: Jar, dependsOn: assemble) {
     description = 'Creates the jxclient.jar application.'
     baseName = 'jxclient'

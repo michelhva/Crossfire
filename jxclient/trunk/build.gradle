@@ -1,5 +1,14 @@
 defaultTasks 'build', 'createJar', 'doc'
 
+// Add lib directory as repository for .jar files.
+allprojects {
+    repositories {
+        flatDir {
+            dirs rootProject.file('lib')
+        }
+    }
+}
+
 // Use 'UTF-8' encoding when compiling Java sources.
 allprojects.each { project ->
     project.afterEvaluate { project2 ->

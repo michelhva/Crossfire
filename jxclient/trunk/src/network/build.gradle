@@ -14,9 +14,3 @@ dependencies {
     compile project(':src:util')
     testCompile project(':src:model').sourceSets.test.output
 }
-
-repositories {
-    flatDir {
-        dirs rootProject.file('lib')
-    }
-}
