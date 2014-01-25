@@ -44,7 +44,7 @@
         <depend srcDir="${src.gui.main}:${src.model.main}:${src.network.main}:${src.protocol.main}:${src.util.main}" destDir="${build}/jxclient" cache="${build}/cache.jxclient" closure="true"/>
         <javac srcdir="${src.gui.main}:${src.model.main}:${src.network.main}:${src.protocol.main}:${src.util.main}" destdir="${build}/jxclient" source="1.6" debug="yes" fork="yes" includeantruntime="false">
             <classpath>
-                <pathelement location="lib/annotations.jar"/>
+                <pathelement location="lib/annotations-0.0.jar"/>
             </classpath>
             <compilerarg value="-Xlint:unchecked"/>
         </javac>
@@ -60,7 +60,7 @@
         <javac srcdir="${src.gui.test}:${src.model.test}:${src.network.test}:${src.protocol.test}:${src.util.test}" destdir="${build}/test" source="1.6" debug="yes" fork="yes" includeantruntime="false">
             <classpath>
                 <pathelement location="jxclient.jar"/>
-                <pathelement location="lib/annotations.jar"/>
+                <pathelement location="lib/annotations-0.0.jar"/>
                 <pathelement location="lib/junit-4.2.jar"/>
             </classpath>
             <compilerarg value="-Xlint:unchecked"/>
@@ -103,7 +103,7 @@
         <junit fork="yes" haltonerror="yes" haltonfailure="yes">
             <jvmarg value="-ea"/>
             <classpath>
-                <pathelement location="lib/annotations.jar"/>
+                <pathelement location="lib/annotations-0.0.jar"/>
                 <pathelement location="lib/junit-4.2.jar"/>
                 <pathelement location="${build}/test"/>
                 <pathelement location="jxclient.jar"/>
@@ -129,7 +129,7 @@
                 <pathelement path="${src.util.main}"/>
             </sourcepath>
             <classpath>
-                <pathelement location="lib/annotations.jar"/>
+                <pathelement location="lib/annotations-0.0.jar"/>
             </classpath>
             <tag name="noinspection" description="No Inspection:"/>
         </javadoc>
