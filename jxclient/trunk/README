@@ -30,11 +30,30 @@ line, run the client, then check the content of java2d.log.
 
 Compiling the sources:
 ----------------------
-Install Ant on your system; be sure to install the optional tasks as well. Make
-sure both the JAVA_HOME and ANT_HOME environment variables are set correctly.
+Run "./gradlew" (or gradlew on Windows) to build the client. This first
+downloads Gradle (http://www.gradle.org), then builds the client.
 
-Change into the jxclient directory. On the console type "ant" - that's all. Run
-the client with "java -jar jxclient.jar".
+If your Internet connection requires a proxy try one of the following:
+
+    ./gradlew -DsocksProxyHost=... -DsocksProxyPort=...
+    ./gradlew -Dhttp.proxyHost=... -Dhttp.proxyPort=...
+
+You need the proxy only during the first build. Afterwards no further Internet
+access is needed.
+
+If you have more than one Java version installed, you can select the right
+version with
+
+    JAVA_HOME=/.../jdk1.6.0_21 ./gradlew
+
+or
+
+    SET JAVA_HOME=\...\jdk1.6.0_21
+    gradlew
+
+on Windows.
+
+Run the client with "java -jar jxclient.jar".
 
 Connecting through a proxy:
 ---------------------------
