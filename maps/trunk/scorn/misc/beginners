@@ -9,7 +9,7 @@ enter_x 14
 enter_y 28
 msg
 Created:  1993-10-15 Morten Hanshaugen
-Modified: 2012-01-11 Rick Tanner
+Modified: 2014-02-15 leaf
 endmsg
 end
 arch woodfloor
@@ -1444,11 +1444,15 @@ arch woodfloor
 x 7
 y 5
 end
-arch bwall_2_1_2
+arch bwall_3_3
 x 7
 y 5
 end
 arch woodfloor
+x 7
+y 6
+end
+arch bwall_1_2
 x 7
 y 6
 end
