@@ -1,5 +1,5 @@
 Object wraith_player
-name Wraith
+name wraith
 race undead
 randomitems wraith_player_items
 face wraithp.151

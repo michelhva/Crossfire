@@ -1,9 +1,14 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Change Wraith to wraith in the Player archetype, so it shows up consistently
+in the character creation dialoge.
+player/race/wraithp.arc
+RJT 2014-02-19
+
 Cleaned up stray pixels in wall borders to make them look smoother.
 construct/town/t_house2.base.x11.png
-RJT 2014092-19
+RJT 2014-02-19
 
 Commented out the x and y default attributes on map arch.
 They were being added to the x and y values when the arch was placed
