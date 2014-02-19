@@ -1,6 +1,10 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Cleaned up stray pixels in wall borders to make them look smoother.
+construct/town/t_house2.base.x11.png
+RJT 2014092-19
+
 Commented out the x and y default attributes on map arch.
 They were being added to the x and y values when the arch was placed
 on a map and can cause segfaults by placing the map arch off the map.
