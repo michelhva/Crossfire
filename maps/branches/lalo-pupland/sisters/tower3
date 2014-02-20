@@ -1,10 +1,14 @@
 arch map
-name Three Sisters Tower
-difficulty 1
+name Three Sisters Tower, Level 3
+difficulty 75
+region threesisters
 width 22
 height 16
+enter_x 7
+enter_y 1
 msg
 Created:  1994-12-18 bt (thomas@nomad.astro.psu.edu)
+Modified: 2012-03-29 Rick Tanner
 endmsg
 end
 arch sea
@@ -120,10 +124,7 @@ end
 arch lapron
 name Carrillium apron of great protection
 msg
-This apron surrounds the user with
-a protective force which unfortunately
-deadens the magical powers of the
-wearer.
+This apron surrounds the user with a protective force which unfortunately deadens the magical powers of the wearer.
 endmsg
 sp -2
 x 1
@@ -361,6 +362,10 @@ arch flagstone
 x 3
 y 6
 end
+arch awall_1_3
+x 3
+y 6
+end
 arch cwall_0
 x 3
 y 6
@@ -563,6 +568,10 @@ arch flagstone
 x 5
 y 6
 end
+arch awall_1_4
+x 5
+y 6
+end
 arch cwall_0
 x 5
 y 6
@@ -657,7 +666,7 @@ arch flagstone
 x 6
 y 6
 end
-arch awall_3_1
+arch awall_2_2_4
 x 6
 y 6
 end
@@ -752,7 +761,7 @@ end
 arch door_look_1
 x 7
 y 6
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 7
@@ -777,7 +786,7 @@ end
 arch altar
 slaying hands
 msg
-Thank You good mortal!
+Thank you good mortal!
 endmsg
 food 1
 x 7
@@ -803,14 +812,18 @@ maxsp 1000
 exp 5000000
 dam 100
 wc -20
-ac -20
+ac -10
 x 7
 y 13
-speed 0.900000
+speed 0.9
 attack_movement 7
 level 40
 attacktype 1048576
-resist_godpower 100
+resist_magic 30
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower -100
 see_invisible 1
 arch spell_hellfire
 end
@@ -876,7 +889,7 @@ end
 arch door_look_1
 x 8
 y 6
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 8
@@ -928,14 +941,18 @@ maxsp 1000
 exp 5000000
 dam 100
 wc -20
-ac -20
+ac -10
 x 8
 y 13
-speed 0.900000
+speed 0.9
 attack_movement 7
 level 50
 attacktype 1048576
-resist_godpower 100
+resist_magic 30
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower -100
 see_invisible 1
 arch spell_sm_lightning
 end
@@ -1002,7 +1019,7 @@ arch flagstone
 x 9
 y 6
 end
-arch awall_3_1
+arch awall_2_2_1
 x 9
 y 6
 end
@@ -1059,14 +1076,18 @@ maxsp 1000
 exp 5000000
 dam 100
 wc -20
-ac -20
+ac -10
 x 9
 y 13
-speed 0.900000
+speed 0.9
 attack_movement 7
 level 70
 attacktype 1048576
-resist_godpower 100
+resist_magic 30
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower -100
 see_invisible 1
 arch spell_paralyze
 end
@@ -1138,6 +1159,10 @@ x 10
 y 5
 end
 arch flagstone
+x 10
+y 6
+end
+arch awall_1_3
 x 10
 y 6
 end
@@ -1312,6 +1337,10 @@ x 12
 y 5
 end
 arch flagstone
+x 12
+y 6
+end
+arch awall_1_4
 x 12
 y 6
 end
@@ -1761,11 +1790,7 @@ end
 arch cloak
 name Many-colored cloak
 msg
-Once completely wrapped in this
-cloak (making the user blind) the
-wearer is rendered invisible. Forces
-which power this cloak more closely
-attune the wearer to magical damage.
+Once completely wrapped in this cloak (making the user blind) the wearer is rendered invisible.  Forces which power this cloak more closely attune the wearer to magical damage.
 endmsg
 Dex -15
 x 19

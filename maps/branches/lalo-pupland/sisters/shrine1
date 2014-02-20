@@ -1,12 +1,15 @@
 arch map
-name Evil Shrine
-difficulty 15
+name Evil Shrine, Central Chambers
+difficulty 75
+region threesisters
 darkness 5
 width 32
 height 34
+enter_x 15
+enter_y 32
 msg
 Created:  1994-12-19 bt (thomas@nomad.astro.psu.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch blocked
@@ -731,9 +734,7 @@ y 23
 end
 arch magic_mouth
 msg
-This side of the under-shrine
-looks like it will collapse any
-minute now.
+This side of the under-shrine looks like it will collapse any minute now.
 endmsg
 x 4
 y 24
@@ -1168,8 +1169,7 @@ blocksview 1
 end
 arch magic_mouth
 msg
-Beyond this door lies the Warden
-of the second gate.
+Beyond this door lies the Warden of the second gate.
 endmsg
 x 7
 y 7
@@ -1196,8 +1196,7 @@ y 11
 end
 arch magic_mouth
 msg
-Beyond this door lies the Warden
-of the first gate.
+Beyond this door lies the Warden of the first gate.
 endmsg
 x 7
 y 12
@@ -1328,12 +1327,14 @@ exp 50000
 dam 50
 x 8
 y 3
-speed -0.300000
+speed -0.3
 level 20
 attacktype 16
-resist_magic 100
+resist_physical 100
+resist_magic 30
+resist_drain 100
+resist_chaos 100
 see_invisible 1
-can_pass_thru 0
 can_cast_spell 1
 arch abil_icestorm
 end
@@ -1437,12 +1438,14 @@ exp 50000
 dam 50
 x 8
 y 16
-speed -0.300000
+speed -0.3
 level 20
 attacktype 16
-resist_magic 100
+resist_physical 100
+resist_magic 30
+resist_drain 100
+resist_chaos 100
 see_invisible 1
-can_pass_thru 0
 can_cast_spell 1
 arch abil_icestorm
 end
@@ -2862,8 +2865,7 @@ y 30
 end
 arch magic_mouth
 msg
-The entrance to the tunnel here looks
-like the mouth of a large serpent.
+The entrance to the tunnel here looks like the mouth of a large serpent.
 endmsg
 x 15
 y 31
@@ -2876,7 +2878,7 @@ arch blocked
 name path of night
 x 15
 y 32
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch exit
@@ -2890,7 +2892,7 @@ arch blocked
 name path of night
 x 15
 y 33
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
@@ -4111,12 +4113,14 @@ exp 50000
 dam 50
 x 22
 y 2
-speed -0.300000
+speed -0.3
 level 20
 attacktype 16
-resist_magic 100
+resist_physical 100
+resist_magic 30
+resist_drain 100
+resist_chaos 100
 see_invisible 1
-can_pass_thru 0
 can_cast_spell 1
 arch abil_icestorm
 end
@@ -4204,12 +4208,14 @@ exp 50000
 dam 50
 x 22
 y 17
-speed -0.300000
+speed -0.3
 level 20
 attacktype 16
-resist_fire 100
+resist_physical 100
+resist_magic 30
+resist_drain 100
+resist_chaos 100
 see_invisible 1
-can_pass_thru 0
 can_cast_spell 1
 arch abil_icestorm
 end
@@ -4469,8 +4475,7 @@ blocksview 1
 end
 arch magic_mouth
 msg
-Beyond this door lies the Warden
-of the fourth gate.
+Beyond this door lies the Warden of the fourth gate.
 endmsg
 x 24
 y 7
@@ -4505,8 +4510,7 @@ y 11
 end
 arch magic_mouth
 msg
-Beyond this door lies the Warden
-of the third gate.
+Beyond this door lies the Warden of the third gate.
 endmsg
 x 24
 y 12

@@ -1,11 +1,15 @@
 arch map
-name Evil Shrine
-difficulty 5
+name Evil Shrine, East
+difficulty 30
+region threesisters
 darkness 5
 width 33
 height 25
+enter_x 5
+enter_y 12
 msg
 Created:  1995-01-03 bt (thomas@nomad.astro.psu.edu)
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch blocked
@@ -159,12 +163,12 @@ end
 arch marble
 x 3
 y 12
-no_pass 1
+move_block all
 end
 arch marble
 x 3
 y 13
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 3
@@ -722,8 +726,7 @@ y 11
 end
 arch magic_mouth
 msg
-This chamber looks like a large
-tomb.
+This chamber looks like a large tomb.
 endmsg
 x 13
 y 12
@@ -734,8 +737,7 @@ y 12
 end
 arch magic_mouth
 msg
-This chamber looks like a large
-tomb.
+This chamber looks like a large tomb.
 endmsg
 x 13
 y 13
@@ -1002,12 +1004,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 15
 y 5
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 15
@@ -1017,12 +1020,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 15
 y 6
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 15
@@ -1101,12 +1105,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 15
 y 18
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 15
@@ -1116,17 +1121,17 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 15
 y 19
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 15
 y 20
@@ -1198,12 +1203,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 16
 y 5
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 16
@@ -1213,12 +1219,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 16
 y 6
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 16
@@ -1296,12 +1303,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 16
 y 18
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 16
@@ -1311,12 +1319,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 16
 y 19
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 16
@@ -1368,11 +1377,7 @@ end
 arch book_read
 name cryptic book of Hsam
 msg
-... and the believer shall pass through
-the runed wall and into blackness, thereby
-walking the path of night into the domain
-of the lamia, where the four wardens
-keep her eternally imprisoned ...
+... and the believer shall pass through the runed wall and into blackness, thereby walking the path of night into the domain of the lamia, where the four wardens keep her eternally imprisoned ...
 endmsg
 x 17
 y 2
@@ -1391,8 +1396,7 @@ y 4
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 17
 y 5
@@ -1459,8 +1463,7 @@ y 19
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 17
 y 20
@@ -1568,12 +1571,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 18
 y 12
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 18
@@ -1583,12 +1587,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 18
 y 13
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 18
@@ -1737,12 +1742,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 19
 y 12
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 19
@@ -1752,12 +1758,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 19
 y 13
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 19
@@ -1984,8 +1991,7 @@ y 20
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 20
 y 21
@@ -2055,8 +2061,7 @@ y 4
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 21
 y 5
@@ -2113,12 +2118,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 21
 y 12
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 21
@@ -2128,12 +2134,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 21
 y 13
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 21
@@ -2286,12 +2293,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 22
 y 12
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 22
@@ -2301,12 +2309,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 22
 y 13
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 22
@@ -2520,8 +2529,7 @@ y 4
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 24
 y 5
@@ -2538,12 +2546,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 24
 y 6
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 24
@@ -2553,12 +2562,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 24
 y 7
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 24
@@ -2628,12 +2638,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 24
 y 17
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 24
@@ -2643,12 +2654,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 24
 y 18
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 24
@@ -2721,12 +2733,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 25
 y 6
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 25
@@ -2736,12 +2749,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 25
 y 7
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 25
@@ -2811,12 +2825,13 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 25
 y 17
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch flagstone
 x 25
@@ -2826,17 +2841,17 @@ arch black_pudding
 name crawling chaos
 Con 10
 hp 500
-exp 1200
 ac 0
 x 25
 y 18
-speed -0.180000
-resist_physical 0
+speed -0.18
+resist_physical 30
+resist_acid 100
+resist_chaos 100
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 25
 y 19
@@ -2898,8 +2913,7 @@ y 5
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 26
 y 6
@@ -2918,8 +2932,7 @@ y 8
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 26
 y 9
@@ -2946,8 +2959,7 @@ y 11
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 26
 y 12
@@ -3299,8 +3311,7 @@ y 18
 end
 arch magic_mouth
 msg
-There are cryptic symbols on the
-wall here.
+There are cryptic symbols on the wall here.
 endmsg
 x 28
 y 19
