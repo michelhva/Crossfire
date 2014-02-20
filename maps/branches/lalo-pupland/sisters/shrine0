@@ -1,11 +1,15 @@
 arch map
-name Evil Shrine
+name Evil Shrine, Antechamber
 difficulty 1
+region threesisters
 darkness 4
 width 36
 height 55
+enter_x 17
+enter_y 33
 msg
 Created:  1994-12-20 bt (thomas@Nomad.astro.psu.edu)
+Modified: 2012-01-19 Rick Tanner
 endmsg
 end
 arch blocked
@@ -166,12 +170,12 @@ end
 arch marble
 x 3
 y 23
-no_pass 1
+move_block all
 end
 arch marble
 x 3
 y 24
-no_pass 1
+move_block all
 end
 arch marble
 x 3
@@ -1797,10 +1801,7 @@ y 7
 end
 arch magic_mouth
 msg
-You see here a mural of a figure
-walking along a ribbon of black
-into the open maw of a large
-snake being.
+You see here a mural of a figure walking along a ribbon of black into the open maw of a large snake being.
 endmsg
 x 16
 y 8
@@ -2196,35 +2197,35 @@ arch blocked
 name path of night
 x 17
 y 1
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
 name path of night
 x 17
 y 2
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
 name path of night
 x 17
 y 3
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
 name path of night
 x 17
 y 4
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
 name path of night
 x 17
 y 5
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch cobblestones2
@@ -2235,11 +2236,11 @@ arch awall_2_1_2
 name rune marked wall
 x 17
 y 6
-no_pass 0
+move_block 0
 end
 arch magic_mouth
 msg
-You see here a rune covered wall
+You see here a rune covered wall.
 endmsg
 x 17
 y 7
@@ -2282,10 +2283,7 @@ connected 20
 end
 arch magic_mouth
 msg
-Sacrilege! Your kind is not
-tolerated here! The Snake god
-becomes very angry! Snakes
-pour from the pits!
+Sacrilege! Your kind is not tolerated here! The Snake god becomes very angry! Snakes pour from the pits!
 endmsg
 x 17
 y 13
@@ -2419,7 +2417,7 @@ end
 arch pit_open
 slaying /sisters/shrine0
 msg
-You fall into a snake pit
+You fall into a snake pit!
 endmsg
 hp 16
 sp 45
@@ -2520,7 +2518,7 @@ end
 arch marble
 x 17
 y 35
-no_pass 1
+move_block all
 end
 arch marble
 x 17
@@ -2833,7 +2831,7 @@ end
 arch pit_open
 slaying /sisters/shrine0
 msg
-You fall into a snake pit
+You fall into a snake pit!
 endmsg
 hp 17
 sp 45
@@ -2938,7 +2936,7 @@ end
 arch marble
 x 18
 y 35
-no_pass 1
+move_block all
 end
 arch marble
 x 18
@@ -3085,9 +3083,7 @@ y 7
 end
 arch magic_mouth
 msg
-You see here a mural of several
-priests gathered near a rune covered
-wall.
+You see here a mural of several priests gathered near a rune covered wall.
 endmsg
 x 19
 y 8
@@ -5134,12 +5130,12 @@ end
 arch marble
 x 32
 y 23
-no_pass 1
+move_block all
 end
 arch marble
 x 32
 y 24
-no_pass 1
+move_block all
 end
 arch marble
 x 32

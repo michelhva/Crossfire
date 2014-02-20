@@ -1,11 +1,15 @@
 arch map
-name The Necropolis of Gax
+name The Necropolis of Gax, Entrance
 reset_timeout 120
-difficulty 1
+difficulty 20
+region threesisters
 width 33
 height 32
+enter_x 1
+enter_y 13
 msg
 Created:  1994-12-28 bt (thomas@nomad.astro.psu.edu)
+Modified: 2008-10-28 Rick Tanner
 endmsg
 end
 arch evergreen
@@ -979,6 +983,7 @@ x 7
 y 10
 end
 arch ruins
+name Ruins
 slaying /sisters/necro_ruin1
 hp 23
 sp 9
@@ -1261,7 +1266,8 @@ x 9
 y 11
 attacktype 17
 resist_physical 100
-resist_cold 100
+resist_magic 30
+resist_cold 30
 end
 arch pstone_1
 x 9
@@ -1444,7 +1450,8 @@ x 10
 y 21
 attacktype 17
 resist_physical 100
-resist_cold 100
+resist_magic 30
+resist_cold 30
 end
 arch small_stones
 x 10
@@ -1808,7 +1815,8 @@ x 13
 y 8
 attacktype 17
 resist_physical 100
-resist_cold 100
+resist_magic 30
+resist_cold 30
 end
 arch small_stones
 x 13
@@ -2387,7 +2395,8 @@ x 17
 y 12
 attacktype 17
 resist_physical 100
-resist_cold 100
+resist_magic 30
+resist_cold 30
 end
 arch large_stones
 x 17
@@ -2669,7 +2678,8 @@ x 19
 y 16
 attacktype 17
 resist_physical 100
-resist_cold 100
+resist_magic 30
+resist_cold 30
 end
 arch cobblestones2
 x 19
