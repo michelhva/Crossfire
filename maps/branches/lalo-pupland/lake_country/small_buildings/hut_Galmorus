@@ -7,7 +7,7 @@ height 24
 enter_x 9
 msg
 Created:  1995-03-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2013-03-25 Kevin Zheng
+Modified: 2014-02-16 Rick Tanner
 endmsg
 end
 arch grass
@@ -113,7 +113,7 @@ end
 arch grass
 y 17
 end
-arch swall_2_1_1
+arch swall_1_2_half
 y 17
 end
 arch shallow_sea
@@ -137,7 +137,7 @@ end
 arch grass
 x 1
 end
-arch swall_1_3
+arch swall_2_1_2
 x 1
 end
 arch woods
@@ -236,6 +236,9 @@ arch woodfloor
 x 2
 end
 arch wwall_2_2_2
+x 2
+end
+arch swall_1_3_half
 x 2
 end
 arch woodfloor
