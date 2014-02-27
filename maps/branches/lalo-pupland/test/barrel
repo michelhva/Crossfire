@@ -3,8 +3,7 @@ name throw test
 width 20
 height 20
 msg
-Creator: CF Java Map Editor
-Date:    12/1/2002
+Created:  2002-01-12
 endmsg
 end
 arch cobblestones2
@@ -138,7 +137,7 @@ end
 arch barrel
 x 1
 y 1
-no_pass 0
+move_block 0
 end
 arch goblin
 x 1
@@ -151,7 +150,7 @@ end
 arch barrel
 x 1
 y 2
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 1
@@ -160,7 +159,7 @@ end
 arch barrel
 x 1
 y 3
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 1
@@ -169,7 +168,7 @@ end
 arch barrel
 x 1
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 1
@@ -178,7 +177,7 @@ end
 arch barrel
 x 1
 y 5
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 1
@@ -187,7 +186,7 @@ end
 arch barrel
 x 1
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 1
@@ -196,7 +195,7 @@ end
 arch barrel
 x 1
 y 7
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 1
@@ -263,7 +262,7 @@ end
 arch barrel
 x 2
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 2
@@ -272,7 +271,7 @@ end
 arch barrel
 x 2
 y 2
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 2
@@ -359,7 +358,7 @@ end
 arch barrel
 x 3
 y 1
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -368,7 +367,7 @@ end
 arch barrel
 x 3
 y 2
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3

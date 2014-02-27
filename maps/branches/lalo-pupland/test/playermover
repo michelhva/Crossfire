@@ -1,11 +1,10 @@
 arch map
 name <unnamed>
 width 16
-height 16
+height 5
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Sep 16 01:26:01 1998
+Created:  1998-02-16
+Modified: 2010-09-21 Nicolas Weeger
 endmsg
 end
 arch afloor_right
@@ -45,6 +44,15 @@ arch mover_3
 x 7
 y 4
 level 1
+end
+arch mover_3
+x 8
+y 2
+level 1
+end
+arch door_1
+x 8
+y 2
 end
 arch mover_3
 x 8
