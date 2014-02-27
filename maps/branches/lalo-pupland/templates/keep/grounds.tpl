@@ -6,13 +6,14 @@ enter_x 9
 enter_y 28
 msg
 Created:  2002-03-09 Avion
+Modified: 2012-03-30 Rick Tanner
 endmsg
 outdoor 1
 end
 arch dungeon_magic
 end
 arch goldfloor
-name drop 100000 diamonds for Basement
+name Drop 100000 diamonds for Basement.
 slaying gem
 face button_sma.111
 food 100000
@@ -33,9 +34,9 @@ arch man
 name gardener
 msg
 @match hello|hi|good day
-good day for it eh?
+Good day for it eh?
 @match bugger off
-Well, I never...hmmph
+Well, I never... hmmph.
 @match *
 Hmmm, looks like that hedge needs a good trim...
 endmsg
@@ -1058,7 +1059,7 @@ x 7
 end
 arch hedge_2_1_2
 x 7
-no_pass 1
+move_block all
 end
 arch grass
 x 7
@@ -1259,7 +1260,7 @@ end
 arch hedge_2_1_2
 x 7
 y 29
-no_pass 1
+move_block all
 end
 arch grass
 x 8
@@ -4047,7 +4048,7 @@ x 24
 end
 arch hedge_2_1_2
 x 24
-no_pass 1
+move_block all
 end
 arch grass
 x 24
@@ -4261,7 +4262,7 @@ x 25
 end
 arch hedge_2_1_2
 x 25
-no_pass 1
+move_block all
 end
 arch grass
 x 25
@@ -4465,7 +4466,7 @@ x 26
 end
 arch hedge_2_1_2
 x 26
-no_pass 1
+move_block all
 end
 arch grass
 x 26
@@ -4684,7 +4685,7 @@ x 27
 end
 arch hedge_2_1_2
 x 27
-no_pass 1
+move_block all
 end
 arch grass
 x 27
@@ -4830,7 +4831,7 @@ x 28
 end
 arch hedge_2_1_2
 x 28
-no_pass 1
+move_block all
 end
 arch hole
 name escape tunnel
@@ -4848,7 +4849,6 @@ arch woods_3
 x 28
 y 2
 blocksview 1
-is_floor 1
 end
 arch grass
 x 28
@@ -4982,7 +4982,7 @@ x 29
 end
 arch hedge_2_2_3
 x 29
-no_pass 1
+move_block all
 end
 arch grass
 x 29
@@ -4991,7 +4991,7 @@ end
 arch hedge_2_1_1
 x 29
 y 1
-no_pass 1
+move_block all
 end
 arch grass
 x 29
@@ -5000,7 +5000,7 @@ end
 arch hedge_2_1_1
 x 29
 y 2
-no_pass 1
+move_block all
 end
 arch grass
 x 29
@@ -5009,7 +5009,7 @@ end
 arch hedge_2_1_1
 x 29
 y 3
-no_pass 1
+move_block all
 end
 arch grass
 x 29
@@ -5018,7 +5018,7 @@ end
 arch hedge_2_1_1
 x 29
 y 4
-no_pass 1
+move_block all
 end
 arch grass
 x 29
@@ -5139,7 +5139,7 @@ end
 arch hedge_2_1_1
 x 29
 y 19
-no_pass 1
+move_block all
 end
 arch grass
 x 29

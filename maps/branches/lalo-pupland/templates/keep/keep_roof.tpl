@@ -339,7 +339,7 @@ end
 arch biglake_2_2_2
 x 3
 y 2
-no_pass 0
+move_block 0
 end
 arch grass
 x 3
@@ -348,7 +348,7 @@ end
 arch biglake_2_2_1
 x 3
 y 3
-no_pass 0
+move_block 0
 end
 arch grass
 x 3
@@ -431,17 +431,17 @@ end
 arch biglake_2_2_2
 x 4
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_4
 x 4
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_3_1
 x 4
 y 3
-no_pass 0
+move_block 0
 end
 arch grass
 x 4
@@ -560,12 +560,12 @@ end
 arch biglake_3_3
 x 5
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_4
 x 5
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_3_1
 x 5
@@ -694,12 +694,12 @@ end
 arch biglake_4
 x 6
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_3_1
 x 6
 y 3
-no_pass 0
+move_block 0
 end
 arch grass
 x 6
@@ -808,12 +808,12 @@ end
 arch biglake_2_2_3
 x 7
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_4
 x 7
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_3_1
 x 7
@@ -1438,7 +1438,7 @@ end
 arch hedge_2_1_2
 x 12
 y 6
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1472,7 +1472,7 @@ end
 arch hedge_2_1_2
 x 12
 y 12
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1536,7 +1536,7 @@ end
 arch hedge_2_1_2
 x 13
 y 6
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1578,7 +1578,7 @@ end
 arch hedge_2_1_2
 x 13
 y 12
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1646,7 +1646,7 @@ end
 arch hedge_2_1_2
 x 14
 y 6
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1692,7 +1692,7 @@ end
 arch hedge_2_1_2
 x 14
 y 12
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1760,7 +1760,7 @@ end
 arch hedge_2_1_2
 x 15
 y 6
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1806,7 +1806,7 @@ end
 arch hedge_2_1_2
 x 15
 y 12
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1874,7 +1874,7 @@ end
 arch hedge_2_1_2
 x 16
 y 6
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1924,7 +1924,7 @@ end
 arch hedge_2_1_2
 x 16
 y 12
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1988,7 +1988,7 @@ end
 arch hedge_2_2_3
 x 17
 y 6
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -1998,7 +1998,7 @@ end
 arch hedge_2_1_1
 x 17
 y 7
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -2008,7 +2008,7 @@ end
 arch hedge_2_1_1
 x 17
 y 8
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -2018,7 +2018,7 @@ end
 arch hedge_2_1_1
 x 17
 y 9
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -2028,7 +2028,7 @@ end
 arch hedge_2_1_1
 x 17
 y 10
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -2038,7 +2038,7 @@ end
 arch hedge_2_1_1
 x 17
 y 11
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass
@@ -2048,7 +2048,7 @@ end
 arch hedge_2_2_4
 x 17
 y 12
-no_pass 1
+move_block all
 blocksview 0
 end
 arch grass

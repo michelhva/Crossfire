@@ -7,6 +7,7 @@ enter_x 13
 enter_y 17
 msg
 Created:  2002-03-09 Avion
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch teleporter
@@ -1092,7 +1093,6 @@ end
 arch fireplace
 x 7
 y 5
-glow_radius 2
 end
 arch dungeon_magic
 x 7
