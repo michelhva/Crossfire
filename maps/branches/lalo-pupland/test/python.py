@@ -8,25 +8,43 @@ whoami=Crossfire.WhoAmI()
 who = Crossfire.WhoIsActivator()
 
 def do_help():
-	whoami.Say('Usage: say <test name>\nAvailable tests:')
-	whoami.Say(' - arch: archetypes-related tests')
-	whoami.Say(' - maps: maps-related tests')
-	whoami.Say(' - party: party-related tests')
-	whoami.Say(' - region: party-related tests')
-	whoami.Say(' - ref: some checks on objects references')
-	whoami.Say(' - mark: marked item')
-	whoami.Say(' - memory: storage-related tests')
-	whoami.Say(' - time: time of day tests')
-	whoami.Say(' - timer: timer activation test')
-	whoami.Say(' - timer_kill: kill specified timer')
-	whoami.Say(' - misc: other tests')
-	whoami.Say(' - exp')
-	whoami.Say(' - const: constants and such')
-	whoami.Say(' - move')
-	whoami.Say(' - bed')
-	whoami.Say(' - readkey')
-	whoami.Say(' - writekey')
-	whoami.Say(' - speed')
+	help = ''
+	help += 'Usage: say <test name>\nAvailable tests:\n'
+	help += ' - arch: archetypes-related tests\n'
+	help += ' - maps: maps-related tests\n'
+	help += ' - party: party-related tests\n'
+	help += ' - region: party-related tests\n'
+	help += ' - ref: some checks on objects references\n'
+	help += ' - mark: marked item\n'
+	help += ' - memory: storage-related tests\n'
+	help += ' - time: time of day tests\n'
+	help += ' - timer: timer activation test\n'
+	help += ' - timer_kill: kill specified timer\n'
+	help += ' - misc: other tests\n'
+	help += ' - exp\n'
+	help += ' - const: constants and such\n'
+	help += ' - move\n'
+	help += ' - bed\n'
+	help += ' - readkey\n'
+	help += ' - writekey\n'
+	help += ' - speed\n'
+	help += ' - owner\n'
+	help += ' - friendlylist\n'
+	help += ' - create\n'
+	help += ' - directory\n'
+	help += ' - event\n'
+	help += ' - light\n'
+	help += ' - attacktype\n'
+	help += ' - players\n'
+	help += ' - checkinv\n'
+	help += ' - face\n'
+	help += ' - anim\n'
+	help += ' - hook\n'
+	help += ' - checkinventory\n'
+	help += ' - nosave\n'
+	help += ' - move_to\n'
+
+	whoami.Say(help)
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -34,22 +52,43 @@ def do_arch():
 	which = random.randint(0,len(archs))
 	arch = archs[which]
 	whoami.Say('random = %s'%arch.Name)
+	head = ''
+	more = ''
+	next = ''
+	if (arch.Head):
+		head = arch.Head.Name
+	if (arch.More):
+		more = arch.More.Name
+	if (arch.Next):
+		next = arch.Next.Name
+	whoami.Say(' head = %s, more = %s, clone = %s, next = %s'%(head, more, arch.Clone.Name, next))
 
 	arch = who.Archetype
 	whoami.Say('your archetype is %s'%arch.Name)
 
 def do_maps():
+	whoami.Say('Current map is %s'%who.Map.Name)
 	maps = Crossfire.GetMaps()
 	whoami.Say('%d maps loaded'%len(maps))
 	for map in maps:
-		whoami.Say('%s   -> %d players'%(map.Name,map.Players))
+		whoami.Say('%s [%d]   -> %d players'%(map.Name, map.Unique, map.Players))
 #activator=Crossfire.WhoIsActivator()
+	whoami.Say('this map is %s, size %d, %d'%(whoami.Map.Name, whoami.Map.Width, whoami.Map.Height))
+	if (len(topic) > 1):
+		flag = 0
+		if len(topic) > 2:
+			flag = int(topic[2]);
+		ready = Crossfire.ReadyMap(topic[1], flag)
+		if (ready):
+			whoami.Say('ok, loaded %d map %s'%(flag,ready.Name))
+		else:
+			whoami.Say('can\'t load %d map %s'%(flag,topic[1]))
 
 def do_party():
 	parties = Crossfire.GetParties()
 	whoami.Say('%d parties'%len(parties))
 	for party in parties:
-		whoami.Say('%s'%(party.Name))
+		whoami.Say('%s (%s)'%(party.Name, party.Password))
 		players = party.GetPlayers()
 		for player in players:
 			whoami.Say('   %s'%player.Name)
@@ -58,21 +97,25 @@ def do_party():
 		whoami.Say('changed your party!')
 
 def do_region():
-	whoami.Say('Known regions, region for current map is signaled by ***')
+	msg = 'Known regions, region for current map is signaled by ***\n'
 	cur = whoami.Map.Region
-	whoami.Say('This map\'s region is %s'%(cur.Name))
+	msg += 'This map\'s region is %s (msg: %s)\n'%(cur.Name, cur.Message)
 	regions = Crossfire.GetRegions()
-	whoami.Say('%d regions'%len(regions))
+	msg += ('%d regions\n'%len(regions))
 	for region in regions:
 		if cur == region:
-			whoami.Say('*** %s - %s'%(region.Name,region.Longname))
+			msg += ('*** %s - %s\n'%(region.Name,region.Longname))
 		else:
-			whoami.Say('%s - %s'%(region.Name,region.Longname))
+			msg += ('%s - %s\n'%(region.Name,region.Longname))
 	parent = cur.GetParent()
 	if parent:
-		whoami.Say('Parent is %s'%parent.Name)
+		msg += ('Parent is %s\n'%parent.Name)
 	else:
-		whoami.Say('Region without parent')
+		msg += ('Region without parent\n')
+
+	msg += "Jail: %s (%d,%d)"%(cur.JailPath, cur.JailX, cur.JailY)
+
+	whoami.Say(msg)
 
 def do_activator():
 	who2 = Crossfire.WhoIsOther()
@@ -98,7 +141,7 @@ def do_marker():
 def do_memory():
 	whoami.Say('Value save test')
 	dict = Crossfire.GetPrivateDictionary()
-	if dict.has_key('s'):
+	if 's' in dict:
 		x = dict['s']
 		whoami.Say(' x was %d'%x)
 		x = x + 1
@@ -107,7 +150,7 @@ def do_memory():
 		whoami.Say(' new x')
 
 	dict['s'] = x
-		
+
 
 def do_resist():
 	whoami.Say('Resistance test')
@@ -117,7 +160,15 @@ def do_resist():
 def do_basics():
 	whoami.Say('Basic test')
 	whoami.Say(' your type is %d'%who.Type)
+	whoami.Say(' your race is %s'%who.Race)
 	whoami.Say(' your level is %d'%who.Level)
+	whoami.Say(' your nrof is %d'%who.Quantity)
+	whoami.Say(' your weight is %d'%who.Weight)
+	whoami.Say(' your name is %s'%who.Name)
+	whoami.Say(' your archname is %s'%who.ArchName)
+	whoami.Say(' your title is %s'%who.Title)
+	whoami.Say(' your ip is %s'%who.IP)
+	whoami.Say(' my name is %s'%whoami.Name)
 
 def do_time():
 	cftime = Crossfire.GetTime()
@@ -153,6 +204,13 @@ def do_misc():
 	else:
 		whoami.Say("Empty inv??")
 
+	if len(topic) > 1:
+		map = Crossfire.MapHasBeenLoaded(topic[1])
+		if map:
+			whoami.Say('map %s is loaded, size = %d, %d'%(map.Name, map.Width, map.Height))
+		else:
+			whoami.Say('map %s is not loaded'%topic[1])
+
 def do_inventory():
 	whoami.Say('You have:');
 	inv = who.Inventory
@@ -162,7 +220,7 @@ def do_inventory():
 
 def do_exp():
 	if ( len(topic) < 2 ):
-		whoami.Say("Your exp is %d"%who.Exp)
+		whoami.Say("Your exp is %d, perm is %d, mult is %d"%(who.Exp, who.PermExp, who.ExpMul))
 		whoami.Say("Syntax is: exp <value> [option] [skill]")
 	else:
 		value = int(topic[1])
@@ -180,9 +238,14 @@ def do_exp():
 		whoami.Say("ok, added %d exp to %s"%(value,skill))
 
 def do_const():
-	whoami.Say("%s => %d"%(Crossfire.DirectionName[Crossfire.Direction.NORTH],Crossfire.Direction.NORTH))
-	whoami.Say("Player type => %d"%Crossfire.Type.PLAYER)
-	whoami.Say("Move Fly High => %d"%Crossfire.Move.FLY_HIGH)
+	ret = '\n'
+	ret += "%s => %d\n"%(Crossfire.DirectionName[Crossfire.Direction.NORTH],Crossfire.Direction.NORTH)
+	ret += "Player type => %d\n"%Crossfire.Type.PLAYER
+	ret += "Move Fly High => %d\n"%Crossfire.Move.FLY_HIGH
+	ret += "MessageFlag NDI_BLUE => %d\n"%Crossfire.MessageFlag.NDI_BLUE
+	ret += "CostFlag F_NO_BARGAIN => %d\n"%Crossfire.CostFlag.NOBARGAIN
+	ret += "AttackMovement PETMOVE => %d\n"%Crossfire.AttackMovement.PETMOVE
+	whoami.Say(ret)
 
 def dump_move(title, move):
 	moves = [
@@ -224,59 +287,250 @@ def do_writekey():
 	val = ''
 	if (len(topic) > 3):
 		val = topic[3]
-	
+
 	whoami.Say('writekey returned %d'%who.WriteKey(topic[1], val, int(topic[2])))
-	
+
 def do_speed():
 	whoami.Say('Your speed is %f and your speed_left %f'%(who.Speed, who.SpeedLeft))
 #	who.Speed = 0.2
 	who.SpeedLeft = -50
 	whoami.Say('Changed your speed, now %f and %f'%(who.Speed, who.SpeedLeft))
 
-topic = Crossfire.WhatIsMessage().split()
-#whoami.Say('topic = %s'%topic)
-#whoami.Say('topic[0] = %s'%topic[0])
-if topic[0] == 'arch':
-	do_arch()
-elif topic[0] == 'maps':
-	do_maps()
-elif topic[0] == 'party':
-	do_party()
-elif topic[0] == 'region':
-	do_region()
-elif topic[0] == 'mark':
-	do_marker()
-elif topic[0] == 'ref':
-	do_activator()
-elif topic[0] == 'memory':
-	do_memory()
-elif topic[0] == 'resist':
-	do_resist()
-elif topic[0] == 'basics':
-	do_basics()
-elif topic[0] == 'time':
-	do_time()
-elif topic[0] == 'timer':
-	do_timer()
-elif topic[0] == 'timer_kill':
-	do_timer_kill()
-elif topic[0] == 'misc':
-	do_misc()
-elif topic[0] == 'exp':
-	do_exp()
-elif topic[0] == 'const':
-	do_const()
-elif topic[0] == 'move':
-	do_move()
-elif topic[0] == 'inv':
-	do_inventory()
-elif topic[0] == 'bed':
-	do_bed()
-elif topic[0] == 'readkey':
-	do_readkey()
-elif topic[0] == 'writekey':
-	do_writekey()
-elif topic[0] == 'speed':
-	do_speed()
-else:
-	do_help()
+def do_owner():
+	whoami.Say('Not implemented.');
+
+def do_friendlylist():
+	friends = Crossfire.GetFriendlyList()
+	for ob in friends:
+		if (ob.Owner):
+			n = ob.Owner.Name
+		else:
+			n = ''
+		whoami.Say(' - %s (%s)'%(ob.Name, n))
+
+def do_create():
+	first = Crossfire.CreateObjectByName('gem')
+	if (first):
+		whoami.Say('created gem: %s'%first.Name)
+		first.Teleport(whoami.Map, 2, 2)
+	second = Crossfire.CreateObjectByName('diamond')
+	if (second):
+		whoami.Say('created diamond: %s'%second.Name)
+		second.Teleport(whoami.Map, 2, 2)
+
+def do_directory():
+	whoami.Say('map = %s'%Crossfire.MapDirectory());
+	whoami.Say('unique = %s'%Crossfire.UniqueDirectory());
+	whoami.Say('temp = %s'%Crossfire.TempDirectory());
+	whoami.Say('config = %s'%Crossfire.ConfigDirectory());
+	whoami.Say('local = %s'%Crossfire.LocalDirectory());
+	whoami.Say('player = %s'%Crossfire.PlayerDirectory());
+	whoami.Say('data = %s'%Crossfire.DataDirectory());
+	whoami.Say('scriptname = %s'%Crossfire.ScriptName());
+
+def do_event():
+	whoami.Say('event title = %s' %Crossfire.WhatIsEvent().Title)
+	whoami.Say('event slaying = %s' %Crossfire.WhatIsEvent().Slaying)
+	whoami.Say('event msg = %s' %Crossfire.WhatIsEvent().Message)
+
+def do_light():
+	whoami.Say('current light: %d'%whoami.Map.Light)
+	if (len(topic) > 1):
+		chg = int(topic[1])
+		whoami.Map.ChangeLight(chg)
+		whoami.Say('new light: %d'%whoami.Map.Light)
+
+def do_attacktype():
+	att = [ Crossfire.AttackType.FIRE, Crossfire.AttackType.COLD, Crossfire.AttackType.ELECTRICITY ]
+	whoami.Say('Your attacktype are:')
+	for at in att:
+		if ( at & Crossfire.WhoIsActivator().AttackType == at):
+			whoami.Say(Crossfire.AttackTypeName[ at ])
+
+def do_players():
+	players = Crossfire.GetPlayers()
+	whoami.Say('Players logged in:')
+	for pl in players:
+		whoami.Say(' - %s'%pl.Name)
+
+def do_checkinv():
+	if len(topic) > 1:
+		what = topic[1]
+	else:
+		what = 'force'
+	find = who.CheckInventory(what)
+	if find:
+		whoami.Say('Found %s in your inventory.'%find.Name)
+	else:
+		whoami.Say('Can\'t find %s in your inventory.'%what)
+
+def do_face():
+	obj = whoami.Map.ObjectAt(4, 4)
+	if len(topic) == 1:
+		whoami.Say('Face is %s'%obj.Face)
+		return
+
+	face = topic[1]
+
+	try:
+		obj.Face = face
+		whoami.Say('Face changed to %s'%face)
+	except:
+		whoami.Say('Invalid face %s'%face)
+
+def do_anim():
+	obj = whoami.Map.ObjectAt(4, 4).Above
+	if len(topic) == 1:
+		whoami.Say('Animation is %s'%obj.Anim)
+		return
+
+	anim = topic[1]
+	try:
+		obj.Anim = anim
+		whoami.Say('Animation changed to %s'%anim)
+	except:
+		whoami.Say('Invalid animation %s'%anim)
+
+def do_hook():
+	item = whoami.Map.CreateObject('food', 0, 0)
+	whoami.Say('Created item.')
+	item2 = whoami.Map.ObjectAt(0, 0)
+	while item2.Above:
+		item2 = item2.Above
+	if item != item2:
+		whoami.Say('Not the same items!')
+	item.Remove()
+	whoami.Say('Trying to access removed item, exception coming')
+	try:
+		item2.Quantity = 1
+		whoami.Say('No exception! Error!')
+	except:
+		whoami.Say('Exception came, ok')
+
+def do_check_inventory():
+  if len(topic) == 1:
+    whoami.Say('use: checkinventory <item''s name>')
+    return
+
+  what = ' '.join(topic[1:])
+  item = who.CheckInventory(what)
+  if item != None:
+    whoami.Say('found item: ' + item.Name)
+  else:
+    whoami.Say('did not find anything matching ' + what)
+
+def do_no_save():
+  item = whoami.Map.CreateObject('food', 2, 1)
+  item.NoSave = 1
+  whoami.Say('no_save set, the food should not be saved')
+
+def do_move_to():
+  if whoami.X == 2 and whoami.Y == 2:
+    whoami.WriteKey('dest_x', '0', 1)
+    whoami.WriteKey('dest_y', '4', 1)
+  else:
+    whoami.WriteKey('dest_x', '2', 1)
+    whoami.WriteKey('dest_y', '2', 1)
+
+def handle_say():
+  if whoami.ReadKey('dest_x') != '' or whoami.ReadKey('dest_y') != '':
+    return
+
+  topic = Crossfire.WhatIsMessage().split()
+  #whoami.Say('topic = %s'%topic)
+  #whoami.Say('topic[0] = %s'%topic[0])
+  if topic[0] == 'arch':
+    do_arch()
+  elif topic[0] == 'maps':
+    do_maps()
+  elif topic[0] == 'party':
+    do_party()
+  elif topic[0] == 'region':
+    do_region()
+  elif topic[0] == 'mark':
+    do_marker()
+  elif topic[0] == 'ref':
+    do_activator()
+  elif topic[0] == 'memory':
+    do_memory()
+  elif topic[0] == 'resist':
+    do_resist()
+  elif topic[0] == 'basics':
+    do_basics()
+  elif topic[0] == 'time':
+    do_time()
+  elif topic[0] == 'timer':
+    do_timer()
+  elif topic[0] == 'timer_kill':
+    do_timer_kill()
+  elif topic[0] == 'misc':
+    do_misc()
+  elif topic[0] == 'exp':
+    do_exp()
+  elif topic[0] == 'const':
+    do_const()
+  elif topic[0] == 'move':
+    do_move()
+  elif topic[0] == 'inv':
+    do_inventory()
+  elif topic[0] == 'bed':
+    do_bed()
+  elif topic[0] == 'readkey':
+    do_readkey()
+  elif topic[0] == 'writekey':
+    do_writekey()
+  elif topic[0] == 'speed':
+    do_speed()
+  elif topic[0] == 'owner':
+    do_owner()
+  elif topic[0] == 'friendlylist':
+    do_friendlylist()
+  elif topic[0] == 'create':
+    do_create()
+  elif topic[0] == 'directory':
+    do_directory()
+  elif topic[0] == 'event':
+    do_event()
+  elif topic[0] == 'light':
+    do_light()
+  elif topic[0] == 'attacktype':
+    do_attacktype()
+  elif topic[0] == 'players':
+    do_players()
+  elif topic[0] == 'checkinv':
+    do_checkinv()
+  elif topic[0] == 'anim':
+    do_anim()
+  elif topic[0] == 'face':
+    do_face()
+  elif topic[0] == 'hook':
+    do_hook()
+  elif topic[0] == 'checkinventory':
+    do_check_inventory()
+  elif topic[0] == 'nosave':
+    do_no_save()
+  elif topic[0] == 'move_to':
+    do_move_to()
+  else:
+    do_help()
+
+def handle_time():
+  x = whoami.ReadKey('dest_x')
+  y = whoami.ReadKey('dest_y')
+  if x == '' or y == '':
+    return
+  x = int(x)
+  y = int(y)
+  result = whoami.MoveTo(x, y)
+  if (result == 0):
+    whoami.WriteKey('dest_x', '', 1)
+    whoami.WriteKey('dest_y', '', 1)
+    whoami.Say("I'm there")
+  elif (result == 2):
+    whoami.Say('blocked...')
+
+event = Crossfire.WhatIsEvent()
+if event.Subtype == Crossfire.EventType.SAY:
+  handle_say()
+elif event.Subtype == Crossfire.EventType.TIME:
+  handle_time()

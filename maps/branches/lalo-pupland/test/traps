@@ -9,9 +9,8 @@ height 29
 enter_x 9
 enter_y 4
 msg
-Creator: Tchize
-CF Java Map Editor
-Date:    7/31/2003
+Created:  2003-07-31 Tchize
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_magic
@@ -135,7 +134,7 @@ y 17
 end
 arch mountain3
 y 17
-no_pass 1
+move_block all
 is_floor 1
 end
 arch dungeon_magic
@@ -544,7 +543,7 @@ x 2
 end
 arch mountain
 x 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -553,7 +552,7 @@ end
 arch mountain
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -1255,8 +1254,7 @@ close again...Ouch.
 endmsg
 x 4
 y 7
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 4
@@ -1445,8 +1443,7 @@ endmsg
 x 4
 y 25
 connected 87
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch trap
@@ -1960,7 +1957,7 @@ arch check_inv
 hp 1
 x 6
 y 15
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1974,7 +1971,7 @@ arch check_inv
 hp 1
 x 6
 y 16
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -2204,8 +2201,7 @@ Beds to reality
 endmsg
 x 7
 y 10
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 7
@@ -2268,7 +2264,7 @@ Just run into the ants.
 endmsg
 x 7
 y 15
-walk_on 1
+move_on walk
 end
 arch dungeon_magic
 x 7
@@ -2784,8 +2780,7 @@ They give you useful information.
 endmsg
 x 9
 y 5
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 9
@@ -3438,8 +3433,7 @@ Doors and keys.
 endmsg
 x 11
 y 10
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 11
@@ -3489,7 +3483,7 @@ key binder.
 endmsg
 x 11
 y 12
-walk_on 1
+move_on walk
 end
 arch dungeon_magic
 x 11
@@ -3950,7 +3944,7 @@ end
 arch woodfloor2
 x 12
 y 22
-no_pass 1
+move_block all
 end
 arch altar
 food 0
@@ -4646,7 +4640,7 @@ arch check_inv
 hp 1
 x 14
 y 26
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -4808,8 +4802,7 @@ can only be opened with special keys...
 endmsg
 x 15
 y 9
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 15
@@ -5034,7 +5027,7 @@ x 16
 end
 arch mountain
 x 16
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -5043,7 +5036,7 @@ end
 arch mountain
 x 16
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -5207,6 +5200,8 @@ end
 arch lightningwall_3
 x 16
 y 16
+arch spell_sm_lightning
+end
 end
 arch dungeon_magic
 x 16
@@ -5849,7 +5844,7 @@ end
 arch mountain3
 x 18
 y 23
-no_pass 1
+move_block all
 is_floor 1
 end
 arch dungeon_magic
