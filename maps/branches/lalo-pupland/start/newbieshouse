@@ -9,9 +9,8 @@ height 29
 enter_x 9
 enter_y 4
 msg
-Creator: Tchize
-CF Java Map Editor
-Date:    7/31/2003
+Created:  2003-07-31 Tchize
+Modified: 2013-03-21 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -73,6 +72,13 @@ arch grass_only
 y 9
 end
 arch dungeon_magic
+y 9
+end
+arch mountain
+y 9
+move_block all
+end
+arch dungeon_magic
 y 10
 end
 arch grass_only
@@ -96,7 +102,7 @@ end
 arch grass_only
 y 13
 end
-arch silvercoin
+arch platinacoin
 y 13
 nrof 12
 end
@@ -127,13 +133,9 @@ end
 arch dungeon_magic
 y 17
 end
-arch grass_only
+arch mountain
 y 17
-end
-arch mountain3
-y 17
-no_pass 1
-is_floor 1
+move_block all
 end
 arch dungeon_magic
 y 18
@@ -304,6 +306,10 @@ arch woodfloor2
 x 1
 y 9
 end
+arch swall_1_4_half
+x 1
+y 9
+end
 arch wwall_2_1_1
 x 1
 y 9
@@ -316,11 +322,7 @@ arch woodfloor2
 x 1
 y 10
 end
-arch swall_1_1
-x 1
-y 10
-end
-arch wwall_2_1_1
+arch wwall_weak_1
 x 1
 y 10
 end
@@ -329,10 +331,6 @@ x 1
 y 11
 end
 arch woodfloor2
-x 1
-y 11
-end
-arch swall_1_2
 x 1
 y 11
 end
@@ -541,7 +539,7 @@ x 2
 end
 arch mountain
 x 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -550,7 +548,7 @@ end
 arch mountain
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -601,6 +599,12 @@ end
 arch dungeon_magic
 x 2
 y 6
+end
+arch button_small
+x 2
+y 6
+invisible 1
+connected 88
 end
 arch woodfloor2
 x 2
@@ -695,9 +699,9 @@ x 2
 y 13
 end
 arch sign
+name Food
 msg
-Food is good stuff you need to keep healthy.
-You eat food by applying it.
+Food is important for you to stay alive. Apply it to eat it. If your food bar runs down, you will begin to rapidly lose HP. Regenerating HP and mana also requires food, so remember to bring plenty to battles!
 endmsg
 x 2
 y 13
@@ -727,6 +731,7 @@ x 2
 y 15
 resist_physical 100
 resist_magic 100
+generator_limit 50
 end
 arch dungeon_magic
 x 2
@@ -988,7 +993,7 @@ arch woodfloor2
 x 3
 y 9
 end
-arch swall_1_4
+arch swall_2_1_2
 x 3
 y 9
 end
@@ -1243,17 +1248,13 @@ x 4
 y 7
 end
 arch sign
-name Gates and doors
+name Gates and Doors
 msg
-Some doors and gates actually swing open
-and by triggering a (sometimes hidden) button or switch.
-Be careful not to stand in the way when they swing
-close again...Ouch.
+Some doors and gates automatically swing open by triggering a (sometimes hidden) button or switch.  Be careful not to stand in the way when they are swinging open or closed...  Ouch.
 endmsg
 x 4
 y 7
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 4
@@ -1332,10 +1333,6 @@ x 4
 y 14
 end
 arch woodfloor2
-x 4
-y 14
-end
-arch swall_0
 x 4
 y 14
 end
@@ -1442,8 +1439,7 @@ endmsg
 x 4
 y 25
 connected 87
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch trap
@@ -1592,32 +1588,36 @@ y 12
 end
 arch guildmaster
 name Manu
-title crazy key binder
+title the Crazy Key Binder
 msg
-@match *
-Hello,
-I will teach you how to use
-keybindings. There are two ways
-to do so. The first is to use the
-keybinding window provided
-with your client (see documentation
-of client for additional help).
-The second is to use the command
-'bind <command>'. Your client
-will then ask you to push the key
-you want to associate with
-<command>.
-Let's try and example. type
-the command
+@match yes
+There are two ways to bind commands to keys. Which way you use will depend on your personal preference and client capabilites. Would you like to use the graphical keybinding menu or the command method yourself?
+@reply command I'd like to learn how to do it via commands.
+@reply graphical I prefer the graphical method, thank you.
+@match graphical
+Most clients will have a dialog in which you can list and add keybindings of your choice. You'll have to refer to your client's documentation for more information, but generally this is fairly self-explanatory.
+@match command
+Ahh, of course. To create a new keybinding, type 'bind <command>', where the command is the action you'd like to perform. Then, your client will ask you to push the key you want to associate with the command.
+@reply example Can you show me an example?
+@match example
+Let me show you how to bind the 'apply' command to your 'a' key. On most clients, this will already be done for you, but we're going to do it anyways. Type in the command:
 ---------
 bind apply
 ---------
-and push the key 'a' when your
-client asks for a key. Is it done?
-Congratulation, you have done
-your first keybinding! Now each
-time you push the key 'a' you
-will apply an item on the ground.
+Then push the 'a' key when your client asks for it.
+@match thank
+You're welcome.
+@match no
+Suit yourself.
+@match why
+Keybindings allow you to run client commands, like casting spells or disarming traps, with the press of a button. This is extremely useful in combat situations. So, do you want to learn about keybindings?
+@reply no No, I'm alright.
+@reply yes Yes, of course!
+@match *
+Hello, would you like to learn about keybindings?
+@reply why Why would I ever need keybindings?
+@reply no No, some other time.
+@reply yes Yes, please!
 endmsg
 x 5
 y 12
@@ -1957,7 +1957,7 @@ arch check_inv
 hp 1
 x 6
 y 15
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1971,7 +1971,7 @@ arch check_inv
 hp 1
 x 6
 y 16
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -2196,13 +2196,13 @@ x 7
 y 10
 end
 arch sign_w
+name Beds to reality
 msg
 Beds to reality
 endmsg
 x 7
 y 10
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 7
@@ -2253,19 +2253,16 @@ x 7
 y 15
 end
 arch sign
+name Fighting
 msg
--------------------
-Tutorial: fighting
 Get your first experience points!
-Ants are the most easy to kill
-creatures in the world of crossfire.
-To fight, nothing is more easy.
-Just run into the ants.
--------------------
+Ants are the easiest creatures to kill in the world of Crossfire.
+Nothing is easier than fighting.  Just run into the ants.
+Go ahead, you can kill them!
 endmsg
 x 7
 y 15
-walk_on 1
+move_on walk
 end
 arch dungeon_magic
 x 7
@@ -2298,32 +2295,26 @@ end
 arch sign
 msg
 -------------------
-Tutorial: traps
-Searching for traps can save
-your life in crossfire. Some traps
-are difficult to find, others are
-easy. Some traps are dangerous,
-others are harmless. To find a
-trap, use your traps finding
-skill. To do so, type
+Tutorial: Traps
+Searching for traps can save your life in Crossfire.
+Some traps are difficult to find, others are easy.
+Some traps are dangerous, others are harmless.
+To find a trap, use your trap finding skills by typing
 ------
 use_skill find traps
 ------
-You may need to disarm them,
-so you can continue your way
-fully secure. To disarm a trap,
-use the command
+but it is a lot easier to use the default "s" keybinding to find traps.
+Some traps are hard to find, so you might want to search a number of times.
+If you find a trap, disarm them so you can continue your way fully secure.
+To disarm a trap, use the command
 ------
 use_skill disarm traps
 ------
-It is really useful to bind those
-skills to keys, since they
-are used a lot in the game.
-If you don't know how to bind
-a key, talk with Manu, 'the crazy
-key binder' north from here.
-Now, follow the black marbled
-path and try to find traps around.
+If at first you do not succeed, try, try again.
+The "d" key is bound to the disarm command by default.
+It is really useful to use keybindings for these actions since they are used a lot.
+Now follow the black marbled path and try to find and disarm all the traps.
+Are you confused yet?
 -------------------
 endmsg
 x 7
@@ -2366,36 +2357,19 @@ x 7
 y 22
 end
 arch farmer
-name doorman
+name Doorman
 msg
+@match beds
+You can find beds to reality at inns scattered all over the world.
+@match talk
+You can talk to other players by using the commands 'chat', 'shout', 'say', and 'tell'. To hear chat messages, use the command 'listen 10' (set by default). If you only want to hear shouts, use 'listen 9'.
+@help
+If you get stuck, try talking to other players. And, as a parting word to the wise, don't forget the most useful command: 'help'.
 @match *
-So you are ready for the world
-of crossfire? You will need to use
-the knowledge you learned
-in the tutorials to go outside.
-There is no way back. You
-can find beds to reality at Inns.
-One more thing:
-Some places will be inaccessible
-until you reach level 3. In the
-beginning, you won't be able to
-use magic or wisdom. When you
-are level 5 you can go to the city
-hall to get a teleporter for the
-famous city of Scorn.
-Never mind speaking with other
-players. The commands shout, say
-and tell are very useful. The
-command chat is useful too, but you
-have to be listening carefully to
-hear it. So use the command
-'listen 10' to do that.
-After you do that, if you
-get tired of all that noise use
-'listen 9' to ignore it.
-And don't forget the most useful
-command:
-help
+So you're ready for the world of Crossfire? To go outside, use the knowledge you've just learned in the tutorials. There is no way back once you pass through the gate ahead. Do you have any questions?
+@question beds Where can I find beds to reality?
+@question talk How do I talk to other players?
+@question help Who can I ask for more help?
 endmsg
 x 7
 y 22
@@ -2403,6 +2377,8 @@ resist_physical 100
 resist_magic 100
 weight 5000000
 no_pick 1
+friendly 1
+stand_still 1
 end
 arch dungeon_magic
 x 7
@@ -2445,6 +2421,7 @@ x 7
 y 26
 resist_physical 100
 resist_magic 100
+generator_limit 50
 end
 arch dungeon_magic
 x 7
@@ -2742,17 +2719,19 @@ arch dungeon_magic
 x 9
 y 4
 end
-arch grass_only
-x 9
-y 4
-end
 arch marker
 slaying quest initial training start
+msg
+Go through the newbiehouse, and learn how to play the game.
+endmsg
 food 0
 x 9
 y 4
 speed 1.0
-Go through the newbiehouse, and learn how to play the game.
+end
+arch grass_only
+x 9
+y 4
 end
 arch dungeon_magic
 x 9
@@ -2763,30 +2742,21 @@ x 9
 y 5
 end
 arch sign
+name sign
 msg
-Welcome to crossfire, newbie!
-You are new to this game?
-If this is the case, this map is
-made for you. You will find lots
-of information on how to play
-Crossfire. Want a quick start?
-Speak with Sigmund at the
-entrance. Don't know how to
-speak? just type
+Welcome to Crossfire!
+If you are new to this game, this map was made for you! Here you will find information on how to play.
+Want a quick start? Speak to Sigmund at the entrance. Don't remember how to speak? Just type:
 -------
 say hello
 -------
-in the command box of your
-client or use the chat boxes if
-(there are any). You will find lots of signs
-like this one in the game.
-Never forget to read them.
-They give you useful information.
+in the command box of your client or use the chat boxes if (there are any).
+You will find many signs like this one in the game.
+Never forget to read them as they give you useful information.
 endmsg
 x 9
 y 5
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 9
@@ -2980,11 +2950,6 @@ arch woodfloor2
 x 9
 y 27
 end
-arch oakdoor
-face odoor_2.111
-x 9
-y 27
-end
 arch dungeon_magic
 x 9
 y 28
@@ -2993,9 +2958,9 @@ arch woodfloor2
 x 9
 y 28
 end
-arch invis_exit
+arch oakdoor_2
 slaying /start/Nexus
-hp 12
+hp 6
 sp 12
 x 9
 y 28
@@ -3135,14 +3100,12 @@ x 10
 y 16
 end
 arch sign
+name Ranged Weapons
 msg
-If you have a ranged weapon this would be a good chance
-to practice firing it at some ants.  First you ready the weapon,
-then hold down the fire key and press the direction
-key for the direction you wish to fire your missile.
-Fire is usually bound to <shift> key and the directions
-you would have learned already to even get to this sign.
-Make sure you always have enough ammo!
+If you have a ranged weapon this would be a good chance to practice firing it at the ants.
+First you ready the weapon, then hold down the fire key and press a direction key to fire a missile.
+Fire is usually bound to the <shift> key by now you must know what direction keys are to have gotten as far as this sign.
+Make sure to keep enough ammo on hand!
 endmsg
 x 10
 y 16
@@ -3248,11 +3211,6 @@ arch woodfloor2
 x 10
 y 27
 end
-arch oakdoor
-face odoor_2.111
-x 10
-y 27
-end
 arch dungeon_magic
 x 10
 y 28
@@ -3261,9 +3219,9 @@ arch woodfloor2
 x 10
 y 28
 end
-arch invis_exit
+arch oakdoor_2
 slaying /start/Nexus
-hp 12
+hp 6
 sp 12
 x 10
 y 28
@@ -3333,47 +3291,7 @@ end
 arch guildmaster
 name Sigmund
 msg
-@match yes|Yes|YES|bed to reality|Bed to reality|beds to reality|Beds to reality
-A bed to reality is the way you quit
-the crossfire world to get back to
-your real life. While you are in
-real life, your character is asleep.
-Nothing can happens to it. But
-beware! If you use a bed to
-reality all items you could have
-left on the ground may disappear
-or be stolen by other players. If
-you want to keep them with you,
-they must be put in your inventory
-or in your permanent apartments.
-You can not use a bed to reality
-until you have earned at least
-one experience point. You must
-use a bed to reality at least
-once to have you character saved.
-You can find beds to reality
-just southwest of here.
-You may also want to get
-extra information on how to
-apply an object in crossfire.
-@match *
-Hello, dear newbie. I am a NPC.
-This mean you can interact with
-me. To do this, just speak with me.
-Like all NPCs in crossfire, i react
-to some words you could say when
-you are near me (using the
-'say <message>' command).
-If you want some additional
-information, just ask me.
-I know everything about what
-you should do next, where to heal,
-how to bind keys, how to use items,
-beds to reality and experience.
-Would you like me to tell you
-about beds to reality? That's one
-of the most important things in
-crossfire.
+
 endmsg
 x 11
 y 7
@@ -3382,6 +3300,9 @@ resist_magic 100
 weight 50000000
 friendly 1
 stand_still 1
+arch npc_dialog
+name start/sigmund.msg
+end
 end
 arch dungeon_magic
 x 11
@@ -3407,6 +3328,14 @@ arch wwall_1_2
 x 11
 y 9
 end
+arch check_floor
+hp 1
+x 11
+y 10
+arch quest_advance_trigger
+name tutorial/keys 0>10
+end
+end
 arch dungeon_magic
 x 11
 y 10
@@ -3416,13 +3345,13 @@ x 11
 y 10
 end
 arch sign_e
+name Doors and Keys
 msg
-Doors and keys.
+Doors and Keys
 endmsg
 x 11
 y 10
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 11
@@ -3445,34 +3374,24 @@ x 11
 y 12
 end
 arch sign
+name Using Items
 msg
 -------------------
-Tutorial: using items
-To use items in crossfire,
-there are 2 ways. The first is
-to use mouse buttons in your
-inventory. The second is to
-use the command
+Tutorial: Using items
+To use items in Crossfire, there are two basic methods.
+The first is to use mouse buttons on your inventory.
+The second is to use the command
 -----
 apply
 -----
-which will use the first object on
-the ground where you are standing.
-Of course it isn't easy to type
-the command each time you want
-to use a lever on the ground or
-eat some food. I recommend you
-bind the command to a key.
-If you don't know how to do so,
-i recommend you follow the
-binding tutorial on your left
-and talk with Manu, the crazy
-key binder.
+which uses the top object on the ground where you are standing.
+Of course it isn't easy to type the command each time you want to use a lever or eat some food.  I recommend you bind the command to a key.
+If you don't know how to do bind commands to keys, follow the binding tutorial by talking to Manu, the crazy key binder.  He is to your left.
 -------------------
 endmsg
 x 11
 y 12
-walk_on 1
+move_on walk
 end
 arch dungeon_magic
 x 11
@@ -3499,6 +3418,10 @@ x 11
 y 15
 end
 arch woodfloor2
+x 11
+y 15
+end
+arch swall_1_4_half
 x 11
 y 15
 end
@@ -3539,21 +3462,16 @@ x 11
 y 18
 end
 arch sign
+name Books
 msg
--------------------
-Tutorial: books
-You will find a lot of books
-in the crossfire world. Their
-content is not always
-interesting. Some are so
-difficult your character may
-not understand them.
-But there is one important
-fact with books:
-Reading them may brings you
-some experience.
+You will find a lot of books in the Crossfire world.
+Some are so difficult your character may not understand them.
+Not everyone finds all books interesting, but one important fact is: Reading them often yields experience.
 Simply apply a book to read it.
--------------------
+
+Reading is important for two reasons:
+- learning high-level spells requires a high literacy level, gained by reading a lot
+- texts contain various information about the world, including places that may be interesting to visit
 endmsg
 x 11
 y 18
@@ -3587,22 +3505,10 @@ x 11
 y 21
 end
 arch sign
+name Food
 msg
--------------------
-Tutorial: food
-You need to eat in crossfire, or
-you'll starve. Never forget to
-carry food with you. When you cast
-spells or are healing, you are
-consuming more food than usual.
-When your food level reach zero, you
-begin to lose life very fast.
-If you carry food with you and your
-food level reach zero, your character
-will randomly eat some of it. You want
-food now? Go near the altar and
-say food
--------------------
+Remember, you need to eat or you'll starve. Never forget to carry food with you. If you have food and your food level reaches zero, your character will randomly eat some of it.
+Would you like some more food now? If so, go near the altar and say 'food'.
 endmsg
 x 11
 y 21
@@ -3616,12 +3522,11 @@ x 11
 y 22
 end
 arch creator
-slaying Magical food
 other_arch food
+hp 12
 x 11
 y 22
 connected 11
-lifesave 1
 end
 arch dungeon_magic
 x 11
@@ -3825,8 +3730,7 @@ y 13
 end
 arch sign
 msg
-Apply one of those 2 levers
-to open one door.
+Apply one of those 2 levers to open one door.
 endmsg
 x 12
 y 13
@@ -3852,7 +3756,7 @@ arch woodfloor2
 x 12
 y 15
 end
-arch swall_1_4
+arch swall_2_1_2
 x 12
 y 15
 end
@@ -3920,7 +3824,7 @@ end
 arch magic_ear
 msg
 @match food
-Food for you
+Food for you.
 endmsg
 x 12
 y 21
@@ -3933,10 +3837,9 @@ end
 arch woodfloor2
 x 12
 y 22
-no_pass 1
+move_block all
 end
 arch altar
-food 0
 x 12
 y 22
 end
@@ -3982,19 +3885,18 @@ arch dungeon_magic
 x 12
 y 26
 end
-arch woodfloor2
-x 12
-y 26
-end
 arch magic_ear
 msg
-@match Hello world|hello world|HELLO WORLD
-Have a nice trip and don't die too
-quickly.
+@match hello world
+Have a nice trip and don't die too quickly.
 endmsg
 x 12
 y 26
 connected 32
+end
+arch woodfloor2
+x 12
+y 26
 end
 arch dungeon_magic
 x 12
@@ -4294,15 +4196,14 @@ arch dungeon_magic
 x 13
 y 26
 end
-arch woodfloor2
+arch magic_mouth
+msg
+Say 'hello world' if you want the door to open.
+endmsg
 x 13
 y 26
 end
-arch magic_mouth
-msg
-say hello world
-if you want the door to open
-endmsg
+arch woodfloor2
 x 13
 y 26
 end
@@ -4412,6 +4313,9 @@ arch random_wealth
 end
 arch random_food
 end
+arch quest_advance_apply
+name tutorial/keys 40>50
+end
 end
 arch dungeon_magic
 x 14
@@ -4475,8 +4379,7 @@ y 13
 end
 arch sign
 msg
-This door will open when you
-walk near it.
+This door opens when you walk near it.
 endmsg
 x 14
 y 13
@@ -4629,7 +4532,7 @@ arch check_inv
 hp 1
 x 14
 y 26
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -4699,11 +4602,8 @@ y 4
 end
 arch sign
 msg
-Keys can also be used to open locked chests.
-Not all chests are locked and some doors
-and chests are trapped so use caution.
-This chest is locked and by chance the key to
-open it is right here.
+Keys can also be used to open locked chests, but not all chests are locked. Beware, though, as some doors and chests are trapped. Use caution.
+The chest is locked by chance, but the key to open it is right there.
 endmsg
 x 15
 y 4
@@ -4725,6 +4625,9 @@ Use this key to open the locked door in the training house.
 endmsg
 x 15
 y 5
+arch quest_prevent_drop
+name tutorial/keys 50
+end
 end
 arch dungeon_magic
 x 15
@@ -4772,27 +4675,17 @@ x 15
 y 9
 end
 arch sign
+name sign
 msg
-Doors.
-There are many varieties of door
-the most basic type is a simple closed
-door.  You can open this type of door
-with a generic key like the one beside this sign.
-If you have no key you can try to break
-the door down by attacking it.
-If you have the skill lockpicking
-you can try to open the door that way
-too by typing 'ready_skill lockpicking'
-then 'firing' (usually pressing shift + <direction>)
-towards the door like you would fire
-an arrow or a bolt.
-There are also locked doors which
-can only be opened with special keys...
+There are many different types of doors.
+The most basic type is a simple closed door.  You can open this kind of door with a generic key like the one beside this sign.
+If you have no keys you can try to break the door down by attacking it.
+If you have the lockpicking skill you can try to open the door by typing 'ready_skill lockpicking' and then 'firing' (usually pressing shift + <direction>) towards the door like you would fire an arrow or a bolt.
+There are also locked doors which can only be opened with special keys...
 endmsg
 x 15
 y 9
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 15
@@ -4850,7 +4743,7 @@ y 14
 end
 arch magic_ear
 msg
-@match Shazam|shazam
+@match shazam
 endmsg
 x 15
 y 14
@@ -5017,7 +4910,7 @@ x 16
 end
 arch mountain
 x 16
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -5026,7 +4919,7 @@ end
 arch mountain
 x 16
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -5058,6 +4951,12 @@ slaying open_door
 msg
 Use this key to open the locked door in the training house.
 endmsg
+arch quest_prevent_drop
+name tutorial/keys 50
+end
+arch quest_advance_pickup
+name tutorial/keys 30>40
+end
 end
 end
 arch dungeon_magic
@@ -5075,6 +4974,14 @@ end
 arch woodfloor2
 x 16
 y 5
+end
+arch check_floor
+hp 1
+x 16
+y 6
+arch quest_advance_trigger
+name tutorial/keys 20>30
+end
 end
 arch dungeon_magic
 x 16
@@ -5096,6 +5003,14 @@ end
 arch woodfloor2
 x 16
 y 7
+end
+arch check_floor
+hp 1
+x 16
+y 8
+arch quest_advance_trigger
+name tutorial/keys 10>20
+end
 end
 arch dungeon_magic
 x 16
@@ -5175,7 +5090,7 @@ arch woodfloor2
 x 16
 y 15
 end
-arch swall_1_3
+arch swall_2_1_2
 x 16
 y 15
 end
@@ -5190,6 +5105,8 @@ end
 arch lightningwall_3
 x 16
 y 16
+arch spell_sm_lightning
+end
 end
 arch dungeon_magic
 x 16
@@ -5491,6 +5408,10 @@ arch wwall_2_1_1
 x 17
 y 15
 end
+arch swall_1_3_half
+x 17
+y 15
+end
 arch dungeon_magic
 x 17
 y 16
@@ -5828,12 +5749,6 @@ end
 arch grass_only
 x 18
 y 23
-end
-arch mountain3
-x 18
-y 23
-no_pass 1
-is_floor 1
 end
 arch dungeon_magic
 x 18
