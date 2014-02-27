@@ -1,10 +1,14 @@
 arch map
 name Team War Register
 difficulty 1
+region firevolcano
 width 17
 height 14
+enter_x 11
+enter_y 11
 msg
 Created:  2005-03-21 josh@woosworld.net
+Modified: 2012-01-20 Rick Tanner
 endmsg
 end
 arch wasteland
@@ -105,7 +109,7 @@ end
 arch permanent_lava
 x 1
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -139,7 +143,7 @@ end
 arch permanent_lava
 x 1
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -149,7 +153,7 @@ end
 arch permanent_lava
 x 1
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -172,7 +176,7 @@ end
 arch permanent_lava
 x 1
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -182,7 +186,7 @@ end
 arch permanent_lava
 x 1
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -243,7 +247,7 @@ end
 arch permanent_lava
 x 2
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -277,7 +281,7 @@ end
 arch permanent_lava
 x 2
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -326,7 +330,7 @@ end
 arch permanent_lava
 x 2
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -387,7 +391,7 @@ end
 arch permanent_lava
 x 3
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -438,7 +442,7 @@ end
 arch permanent_lava
 x 3
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -491,7 +495,7 @@ end
 arch permanent_lava
 x 3
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -548,7 +552,7 @@ end
 arch permanent_lava
 x 4
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -582,7 +586,7 @@ end
 arch permanent_lava
 x 4
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -631,7 +635,7 @@ end
 arch permanent_lava
 x 4
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -644,7 +648,7 @@ end
 arch permanent_lava
 x 5
 y 1
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -654,7 +658,7 @@ end
 arch permanent_lava
 x 5
 y 2
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -664,7 +668,7 @@ end
 arch permanent_lava
 x 5
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -674,7 +678,7 @@ end
 arch permanent_lava
 x 5
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -684,7 +688,7 @@ end
 arch permanent_lava
 x 5
 y 5
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -725,7 +729,7 @@ end
 arch permanent_lava
 x 5
 y 9
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -735,7 +739,7 @@ end
 arch permanent_lava
 x 5
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -745,7 +749,7 @@ end
 arch permanent_lava
 x 5
 y 11
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -755,7 +759,7 @@ end
 arch permanent_lava
 x 5
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -765,7 +769,7 @@ end
 arch permanent_lava
 x 5
 y 13
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -846,8 +850,7 @@ end
 arch magic_mouth
 name magicmouth
 msg
-The Sphere in the center of the lava somehow floats in the air.  Small red tinted tendrils seem to flow from the piles of rubies to the sphere - almost as if it is feeding on them.
-Pereodically you notice guards drop more rubies on the piles.
+The Sphere in the center of the lava somehow floats in the air.  Small red tinted tendrils seem to flow from the piles of rubies to the sphere - almost as if it is feeding on them.  Periodically you notice guards drop more rubies on the piles.
 endmsg
 x 6
 y 9
@@ -863,8 +866,7 @@ end
 arch magic_mouth
 name magicmouth
 msg
-The Sphere in the center of the lava somehow floats in the air.  Small red tinted tendrils seem to flow from the piles of rubies to the sphere - almost as if it is feeding on them.
-Pereodically you notice guards drop more rubies on the piles.
+The Sphere in the center of the lava somehow floats in the air.  Small red tinted tendrils seem to flow from the piles of rubies to the sphere - almost as if it is feeding on them.  Periodically you notice guards drop more rubies on the piles.
 endmsg
 x 6
 y 10
@@ -880,11 +882,11 @@ end
 arch magic_mouth
 name Frosty
 msg
-@match hi|Hi|Hello|hello
+@match hi|hello
 Hello, isn't the Sphere beeautiful?
-@match Sphere|sphere
+@match sphere
 The Sphere draws it's power from the rubies.
-@match ruby|Ruby|rubies|Rubies
+@match ruby|rubies
 Rubies are very valuable to our society.
 endmsg
 x 6
@@ -909,8 +911,7 @@ end
 arch magic_mouth
 name magicmouth
 msg
-The Sphere in the center of the lava somehow floats in the air.  Small red tinted tendrils seem to flow from the piles of rubies to the sphere - almost as if it is feeding on them.
-Pereodically you notice guards drop more rubies on the piles.
+The Sphere in the center of the lava somehow floats in the air.  Small red tinted tendrils seem to flow from the piles of rubies to the sphere - almost as if it is feeding on them.  Periodically you notice guards drop more rubies on the piles.
 endmsg
 x 6
 y 12
@@ -1363,7 +1364,7 @@ end
 arch permanent_lava
 x 11
 y 1
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1373,7 +1374,7 @@ end
 arch permanent_lava
 x 11
 y 2
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1383,7 +1384,7 @@ end
 arch permanent_lava
 x 11
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1393,7 +1394,7 @@ end
 arch permanent_lava
 x 11
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1474,7 +1475,7 @@ end
 arch permanent_lava
 x 12
 y 1
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1509,7 +1510,7 @@ end
 arch permanent_lava
 x 12
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1594,8 +1595,7 @@ arch magic_mouth
 name Tourist Guide
 msg
 @match *
-Greetings!  You can purchase premium tickets right here!
-Premium tickets give you access to the exclusive view from the center of the arena, right where all the action is!
+Greetings!  You can purchase premium tickets right here! Premium tickets give you access to the exclusive view from the center of the arena, right where all the action is!
 endmsg
 x 12
 y 10
@@ -1659,7 +1659,7 @@ end
 arch permanent_lava
 x 13
 y 1
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1669,7 +1669,7 @@ end
 arch permanent_lava
 x 13
 y 2
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1679,7 +1679,7 @@ end
 arch permanent_lava
 x 13
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1757,7 +1757,7 @@ end
 arch permanent_lava
 x 13
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1767,7 +1767,7 @@ end
 arch permanent_lava
 x 13
 y 11
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1777,7 +1777,7 @@ end
 arch permanent_lava
 x 13
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1794,7 +1794,7 @@ end
 arch permanent_lava
 x 14
 y 1
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1829,7 +1829,7 @@ end
 arch permanent_lava
 x 14
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1909,7 +1909,7 @@ end
 arch permanent_lava
 x 14
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1941,7 +1941,7 @@ end
 arch permanent_lava
 x 14
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1958,7 +1958,7 @@ end
 arch permanent_lava
 x 15
 y 1
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1968,7 +1968,7 @@ end
 arch permanent_lava
 x 15
 y 2
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1978,7 +1978,7 @@ end
 arch permanent_lava
 x 15
 y 3
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -1988,7 +1988,7 @@ end
 arch permanent_lava
 x 15
 y 4
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2038,7 +2038,7 @@ end
 arch permanent_lava
 x 15
 y 10
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2048,7 +2048,7 @@ end
 arch permanent_lava
 x 15
 y 11
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
@@ -2058,7 +2058,7 @@ end
 arch permanent_lava
 x 15
 y 12
-no_pass 1
+move_block all
 cursed 1
 end
 arch dungeon_magic
