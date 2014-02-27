@@ -4,9 +4,8 @@ width 16
 height 16
 enter_x 15
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Wed Feb  3 18:14:20 1999
+Created:  1999-02-03 King Zoobus
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch jungle_2
@@ -833,6 +832,8 @@ connected 40
 end
 arch teleporter
 slaying fall
+hp -1
+sp -1
 x 10
 y 4
 speed 0.000000
@@ -1177,7 +1178,7 @@ arch jungle_2
 x 14
 y 6
 end
-arch rjunct_we-se
+arch river_junct_we-se
 x 14
 y 6
 end
@@ -1244,7 +1245,7 @@ arch jungle_2
 x 15
 y 6
 end
-arch rjunct_we-sw
+arch river_junct_we-sw
 x 15
 y 6
 end

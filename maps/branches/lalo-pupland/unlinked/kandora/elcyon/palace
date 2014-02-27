@@ -4,9 +4,8 @@ width 20
 height 21
 enter_y 10
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Wed Feb  3 18:14:20 1999
+Created:  1999-02-03 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch marble
@@ -1269,7 +1268,7 @@ end
 arch marble
 x 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 12
 end
 arch marble
@@ -1442,7 +1441,7 @@ arch marble
 x 13
 y 6
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 13
 y 6
 end
@@ -1478,7 +1477,7 @@ arch marble
 x 13
 y 14
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 13
 y 14
 end
@@ -1654,7 +1653,7 @@ arch marble
 x 15
 y 6
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 15
 y 6
 end
@@ -1690,7 +1689,7 @@ arch marble
 x 15
 y 14
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 15
 y 14
 end
@@ -2063,12 +2062,24 @@ y 9
 carrying 120920
 unaggressive 1
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch bracers_ac
 end
@@ -2077,6 +2088,9 @@ end
 arch crown
 end
 arch rod_heavy
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch dragon_shield
 end

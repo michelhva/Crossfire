@@ -4,9 +4,8 @@ width 16
 height 16
 enter_x 15
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Wed Feb  3 18:14:20 1999
+Created:  1999-02-03 King Zoobus
+Modified: 2013-11-22 SilverNexus
 endmsg
 end
 arch cobblestones2
@@ -171,6 +170,8 @@ y 7
 end
 arch keep
 slaying dd_keep
+hp -1
+sp -1
 x 1
 y 7
 end
@@ -483,6 +484,8 @@ y 13
 end
 arch store_weapons
 slaying dd_shop
+hp -1
+sp -1
 x 4
 y 13
 end
@@ -530,6 +533,8 @@ y 4
 end
 arch church
 slaying dd_church
+hp -1
+sp -1
 x 5
 y 4
 end
@@ -661,6 +666,8 @@ y 13
 end
 arch guild
 slaying dd_alchemy
+hp -1
+sp -1
 x 6
 y 13
 end
@@ -800,6 +807,8 @@ y 5
 end
 arch inn
 slaying dd_inn
+hp -1
+sp -1
 x 8
 y 5
 end
@@ -888,6 +897,8 @@ y 4
 end
 arch tavern
 slaying dd_tavern
+hp -1
+sp -1
 x 9
 y 4
 end
@@ -945,6 +956,8 @@ y 14
 end
 arch market1
 slaying dd_market
+hp -1
+sp -1
 x 9
 y 14
 end
@@ -1057,6 +1070,8 @@ y 14
 end
 arch market2
 slaying dd_market
+hp -1
+sp -1
 x 10
 y 14
 end
@@ -1202,6 +1217,8 @@ y 14
 end
 arch market3
 slaying dd_market
+hp -1
+sp -1
 x 11
 y 14
 end
@@ -1267,14 +1284,6 @@ arch cwall_3_2
 x 12
 y 7
 end
-arch cobblestones2
-x 12
-y 8
-end
-arch paved_1_3
-x 12
-y 8
-end
 arch magic_ear
 msg
 @match Wilhema|wilhema
@@ -1283,6 +1292,14 @@ endmsg
 x 12
 y 8
 connected 2
+end
+arch cobblestones2
+x 12
+y 8
+end
+arch paved_1_3
+x 12
+y 8
 end
 arch igateTrg2
 x 12
@@ -1406,23 +1423,17 @@ end
 arch firewall_5
 x 13
 y 6
+arch spell_small_fireball
+end
 end
 arch cobblestones2
 x 13
 y 7
 end
-arch stwall_closed_1
+arch cwall_closed_1
 x 13
 y 7
 connected 3
-end
-arch cobblestones2
-x 13
-y 8
-end
-arch paved_2_1_2
-x 13
-y 8
 end
 arch magic_mouth
 msg
@@ -1433,9 +1444,17 @@ y 8
 end
 arch cobblestones2
 x 13
+y 8
+end
+arch paved_2_1_2
+x 13
+y 8
+end
+arch cobblestones2
+x 13
 y 9
 end
-arch stwall_closed_1
+arch cwall_closed_1
 x 13
 y 9
 connected 3
@@ -1447,6 +1466,8 @@ end
 arch lightningwall_1
 x 13
 y 10
+arch spell_sm_lightning
+end
 end
 arch cobblestones2
 x 13
@@ -1554,14 +1575,6 @@ arch cwall_2_2_4
 x 14
 y 7
 end
-arch cobblestones2
-x 14
-y 8
-end
-arch paved_2_1_2
-x 14
-y 8
-end
 arch magic_ear
 msg
 @match yes
@@ -1570,6 +1583,14 @@ endmsg
 x 14
 y 8
 connected 1
+end
+arch cobblestones2
+x 14
+y 8
+end
+arch paved_2_1_2
+x 14
+y 8
 end
 arch igateTrg2
 x 14
@@ -1700,18 +1721,18 @@ arch paved_2_1_1
 x 15
 y 7
 end
+arch magic_mouth
+msg
+A voice shout: Are you a man of honor
+endmsg
+x 15
+y 8
+end
 arch cobblestones2
 x 15
 y 8
 end
 arch paved_4
-x 15
-y 8
-end
-arch magic_mouth
-msg
-A voice shout: Are you a man of honor
-endmsg
 x 15
 y 8
 end

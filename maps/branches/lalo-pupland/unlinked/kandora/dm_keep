@@ -5,9 +5,8 @@ height 15
 enter_x 7
 enter_y 14
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Thu Jan 28 12:25:58 1999
+Created:  1999-02-28 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch flagstone
@@ -128,7 +127,7 @@ arch flagstone
 x 1
 y 6
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 1
 y 6
 end
@@ -305,7 +304,7 @@ arch flagstone
 x 3
 y 6
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 3
 y 6
 end
@@ -587,7 +586,7 @@ arch flagstone
 x 6
 y 4
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 6
 y 4
 end
@@ -635,7 +634,7 @@ arch flagstone
 x 6
 y 14
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 6
 y 14
 end
@@ -762,7 +761,7 @@ arch flagstone
 x 7
 y 14
 end
-arch oakdoor
+arch oakdoor_2
 slaying dun_marksel
 hp 12
 sp 14
@@ -802,16 +801,20 @@ x 8
 y 3
 type 0
 carrying 2500
+move_type walk
 monster 1
 unaggressive 1
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 end
 arch flagstone
 x 8
 y 4
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 8
 y 4
 end
@@ -865,7 +868,7 @@ arch flagstone
 x 8
 y 14
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 8
 y 14
 end
@@ -1077,6 +1080,8 @@ y 2
 end
 arch stair_down_4
 slaying dm_cellar
+hp -1
+sp -1
 x 11
 y 2
 end
@@ -1104,7 +1109,7 @@ arch flagstone
 x 11
 y 6
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 11
 y 6
 end
@@ -1311,7 +1316,7 @@ arch flagstone
 x 13
 y 6
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 13
 y 6
 end

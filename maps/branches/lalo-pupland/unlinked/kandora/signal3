@@ -5,9 +5,7 @@ height 7
 enter_x 3
 enter_y 3
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Thu Jan 28 19:53:07 1999
+Created:  1999-02-28 King Zoobus
 endmsg
 end
 arch woodfloor2
@@ -200,6 +198,7 @@ x 4
 y 2
 type 0
 carrying 46510
+move_type walk
 monster 1
 unaggressive 1
 arch key

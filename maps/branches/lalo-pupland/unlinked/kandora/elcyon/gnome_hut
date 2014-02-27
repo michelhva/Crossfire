@@ -4,9 +4,8 @@ width 9
 height 9
 enter_x 15
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Wed Feb  3 18:14:20 1999
+Created:  1999-02-03 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch earth
@@ -215,7 +214,7 @@ arch earth
 x 3
 y 8
 end
-arch wall_2_1_2
+arch wall_1_3
 x 3
 y 8
 end
@@ -245,7 +244,7 @@ arch earth
 x 4
 y 5
 end
-arch wall_2_1_2
+arch window_win2
 x 4
 y 5
 end
@@ -322,7 +321,7 @@ arch earth
 x 5
 y 8
 end
-arch wall_2_1_2
+arch wall_1_4
 x 5
 y 8
 end

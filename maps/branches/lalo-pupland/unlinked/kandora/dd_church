@@ -5,9 +5,8 @@ height 11
 enter_x 3
 enter_y 10
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Wed Feb  3 17:23:14 1999
+Created:  1999-02-03 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch cobblestones2
@@ -228,7 +227,7 @@ arch cobblestones2
 x 2
 y 10
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 2
 y 10
 end
@@ -242,11 +241,11 @@ arch cobblestones2
 x 3
 y 1
 end
-arch altar_jehovah
+arch dungeon_magic
 x 3
 y 1
 end
-arch dungeon_magic
+arch altar_valriel
 x 3
 y 1
 end
@@ -318,7 +317,7 @@ arch cobblestones2
 x 3
 y 10
 end
-arch oakdoor
+arch oakdoor_2
 slaying denray
 hp 5
 sp 6
@@ -428,7 +427,7 @@ arch cobblestones2
 x 4
 y 10
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 4
 y 10
 end

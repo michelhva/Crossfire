@@ -5,9 +5,8 @@ height 22
 enter_x 14
 enter_y 14
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Thu Jan 28 12:25:58 1999
+Created:  1999-02-28 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch dungeon_magic
@@ -444,7 +443,7 @@ arch flagstone
 x 2
 y 13
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 2
 y 13
 end
@@ -456,7 +455,7 @@ arch flagstone
 x 2
 y 15
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 2
 y 15
 end
@@ -503,7 +502,7 @@ arch flagstone
 x 2
 y 19
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 2
 y 19
 end
@@ -814,7 +813,7 @@ arch flagstone
 x 4
 y 13
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 4
 y 13
 end
@@ -834,7 +833,7 @@ arch flagstone
 x 4
 y 16
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
 x 4
 y 16
 end
@@ -850,7 +849,7 @@ arch flagstone
 x 4
 y 18
 end
-arch flagstone_2_1_1
+arch flagstone_1_1
 x 4
 y 18
 end
@@ -1264,7 +1263,7 @@ arch flagstone
 x 6
 y 19
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 6
 y 19
 end
@@ -1426,7 +1425,7 @@ arch flagstone
 x 7
 y 13
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 7
 y 13
 end
@@ -1643,7 +1642,7 @@ arch flagstone
 x 8
 y 19
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 8
 y 19
 end
@@ -1866,7 +1865,7 @@ arch flagstone
 x 10
 y 2
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
 x 10
 y 2
 end
@@ -1885,7 +1884,7 @@ arch flagstone
 x 10
 y 4
 end
-arch flagstone_2_1_1
+arch flagstone_1_1
 x 10
 y 4
 end
@@ -1925,7 +1924,7 @@ arch flagstone
 x 10
 y 9
 end
-arch flagstone_2_1_1
+arch flagstone_1_2
 x 10
 y 9
 end
@@ -1942,7 +1941,7 @@ arch flagstone
 x 10
 y 11
 end
-arch flagstone_2_1_1
+arch flagstone_1_1
 x 10
 y 11
 end
@@ -2120,10 +2119,6 @@ arch flagstone_2_1_2
 x 11
 y 13
 end
-arch flagstone
-x 11
-y 14
-end
 arch magic_ear
 msg
 @match hope
@@ -2133,6 +2128,10 @@ endmsg
 x 11
 y 14
 connected 1
+end
+arch flagstone
+x 11
+y 14
 end
 arch dungeon_magic
 x 11
@@ -2147,7 +2146,7 @@ arch flagstone
 x 11
 y 15
 end
-arch flagstone_2_1_1
+arch flagstone_1_1
 x 11
 y 15
 end
@@ -2635,7 +2634,7 @@ arch flagstone
 x 13
 y 21
 end
-arch flagstone_2_1_2
+arch flagstone_1_3
 x 13
 y 21
 end
@@ -2697,6 +2696,9 @@ unaggressive 1
 arch gauntlets
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch bighorned_helmet
 end
@@ -2886,16 +2888,16 @@ arch dungeon_magic
 x 14
 y 19
 end
-arch flagstone
-x 14
-y 20
-end
 arch magic_mouth
 msg
 The throne room is empty of both queen
 & king. Forlorn looking guards look to
 you questioningly
 endmsg
+x 14
+y 20
+end
+arch flagstone
 x 14
 y 20
 end
@@ -2907,7 +2909,7 @@ arch flagstone
 x 14
 y 21
 end
-arch oakdoor
+arch oakdoor_2
 slaying denray
 hp 2
 sp 8
@@ -3151,7 +3153,7 @@ arch flagstone
 x 15
 y 21
 end
-arch flagstone_2_1_2
+arch flagstone_1_4
 x 15
 y 21
 end

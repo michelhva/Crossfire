@@ -6,9 +6,8 @@ width 11
 height 11
 enter_x 5
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Wed Jan 27 18:57:19 1999
+Created:  1999-02-27 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch woodfloor2
@@ -186,7 +185,7 @@ arch woodfloor2
 x 2
 y 2
 end
-arch wall_2_1_1
+arch wall_1_2
 x 2
 y 2
 end
@@ -208,7 +207,7 @@ arch woodfloor2
 x 2
 y 4
 end
-arch wall_2_1_1
+arch wall_1_1
 x 2
 y 4
 end
@@ -498,7 +497,7 @@ arch woodfloor2
 x 5
 y 6
 end
-arch wall_2_1_1
+arch wall_1_2
 x 5
 y 6
 end
@@ -517,7 +516,7 @@ arch woodfloor2
 x 5
 y 8
 end
-arch wall_2_1_1
+arch wall_1_1
 x 5
 y 8
 end
@@ -625,6 +624,8 @@ end
 arch cannon_8
 x 6
 y 9
+arch spell_magic_bullet
+end
 end
 arch woodfloor2
 x 6
@@ -671,6 +672,7 @@ speed 0.100000
 level 15
 type 46
 resist_physical 100
+move_type walk
 alive 1
 monster 1
 reflect_missile 1
@@ -873,6 +875,7 @@ end
 arch random_mineral
 end
 arch liver
+level 1
 end
 arch true_lead
 end
@@ -936,12 +939,12 @@ All you need is 2 parts lead to each
 part of philosophical phosphorus.  One
 can protect themself by quafing a
 potion made from the water of ruby,
-the tounge of a beholde
+the tongue of a beholder.
 endmsg
 end
 arch tome
-name tome of holyness
-name_pl tome of holyness
+name tome of holiness
+name_pl tome of holiness
 msg
 A priest's blessing is always nice,
 but it helps to have the power of

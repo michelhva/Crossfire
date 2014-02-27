@@ -5,9 +5,7 @@ height 20
 enter_x 7
 enter_y 3
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Nov 17 15:18:23 1997
+Created:  1997-02-17
 endmsg
 end
 arch sea
@@ -638,7 +636,7 @@ x 8
 end
 arch sea
 x 8
-no_pass 0
+move_block 0
 end
 arch sea
 x 8
@@ -997,7 +995,7 @@ end
 arch sea
 x 11
 y 11
-no_pass 0
+move_block 0
 end
 arch s_ship
 name grey galleon
@@ -1010,7 +1008,7 @@ end
 arch sea
 x 11
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 11
@@ -1090,12 +1088,12 @@ end
 arch sea
 x 12
 y 11
-no_pass 0
+move_block 0
 end
 arch sea
 x 12
 y 12
-no_pass 0
+move_block 0
 end
 arch sea
 x 12

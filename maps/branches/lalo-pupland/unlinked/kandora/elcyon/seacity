@@ -5,9 +5,8 @@ height 16
 enter_x 1
 enter_y 1
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Thu May  6 13:09:57 1999
+Created:  1999-02-06 King Zoobus
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -19,6 +18,8 @@ y 1
 end
 arch cannon_1
 y 1
+arch spell_magic_bullet
+end
 end
 arch cobblestones2
 y 2
@@ -514,6 +515,8 @@ end
 arch rl_house1
 name Dwarven Embassy
 slaying dwarf
+hp -1
+sp -1
 x 6
 y 7
 end
@@ -589,6 +592,18 @@ end
 arch cobblestones2
 x 7
 y 2
+end
+arch cobblestones
+x 7
+y 3
+end
+arch cobblestones
+x 7
+y 4
+end
+arch cobblestones
+x 7
+y 5
 end
 arch cobblestones
 x 7
@@ -671,6 +686,18 @@ end
 arch cobblestones2
 x 8
 y 2
+end
+arch cobblestones
+x 8
+y 3
+end
+arch cobblestones
+x 8
+y 4
+end
+arch cobblestones
+x 8
+y 5
 end
 arch cobblestones
 x 8
@@ -1070,6 +1097,8 @@ end
 arch barrack_up
 name inn by the plaza
 slaying plaza
+hp -1
+sp -1
 x 12
 y 9
 end
