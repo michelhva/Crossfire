@@ -2055,7 +2055,7 @@ end
 arch dun_3_3
 x 13
 y 18
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 13
@@ -2065,7 +2065,7 @@ end
 arch dun_3_1
 x 13
 y 19
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 13
@@ -2534,7 +2534,7 @@ end
 arch dun_3_3
 x 16
 y 18
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 16
@@ -2544,7 +2544,7 @@ end
 arch dun_3_1
 x 16
 y 19
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 16

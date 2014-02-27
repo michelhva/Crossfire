@@ -2689,7 +2689,7 @@ end
 arch hedge_1_4
 x 14
 y 4
-no_pass 1
+move_block all
 end
 arch stwall_2_2_3
 x 14
@@ -2877,7 +2877,7 @@ end
 arch hedge_2_1_2
 x 15
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3006,7 +3006,7 @@ end
 arch hedge_2_2_3
 x 15
 y 18
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3019,7 +3019,7 @@ end
 arch hedge_2_1_1
 x 15
 y 19
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3032,7 +3032,7 @@ end
 arch hedge_2_2_1
 x 15
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3061,7 +3061,7 @@ end
 arch hedge_2_1_2
 x 16
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -3195,7 +3195,7 @@ end
 arch hedge_2_1_2
 x 16
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -3224,7 +3224,7 @@ end
 arch hedge_2_1_2
 x 17
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -3358,7 +3358,7 @@ end
 arch hedge_2_1_2
 x 17
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -3387,7 +3387,7 @@ end
 arch hedge_2_1_2
 x 18
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -3553,7 +3553,7 @@ end
 arch hedge_2_1_2
 x 18
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -3582,7 +3582,7 @@ end
 arch hedge_2_1_2
 x 19
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -3744,7 +3744,7 @@ end
 arch hedge_2_1_2
 x 19
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -3773,7 +3773,7 @@ end
 arch hedge_2_1_2
 x 20
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 20
@@ -3939,7 +3939,7 @@ end
 arch hedge_2_1_2
 x 20
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 20
@@ -3968,7 +3968,7 @@ end
 arch hedge_2_1_2
 x 21
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -4126,7 +4126,7 @@ end
 arch hedge_2_1_2
 x 21
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -4155,7 +4155,7 @@ end
 arch hedge_2_1_2
 x 22
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 22
@@ -4321,7 +4321,7 @@ end
 arch hedge_2_1_2
 x 22
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 22
@@ -4350,7 +4350,7 @@ end
 arch hedge_2_1_2
 x 23
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 23
@@ -4505,7 +4505,7 @@ end
 arch hedge_2_1_2
 x 23
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 23
@@ -4534,7 +4534,7 @@ end
 arch hedge_2_1_2
 x 24
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 24
@@ -4673,7 +4673,7 @@ end
 arch hedge_2_1_2
 x 24
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 24
@@ -4702,7 +4702,7 @@ end
 arch hedge_2_1_2
 x 25
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 25
@@ -4864,7 +4864,7 @@ end
 arch hedge_2_1_2
 x 25
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 25
@@ -4893,7 +4893,7 @@ end
 arch hedge_2_1_2
 x 26
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 26
@@ -5052,7 +5052,7 @@ end
 arch hedge_2_1_2
 x 26
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 26
@@ -5081,7 +5081,7 @@ end
 arch hedge_2_1_2
 x 27
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 27
@@ -5243,7 +5243,7 @@ end
 arch hedge_2_1_2
 x 27
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 27
@@ -5272,7 +5272,7 @@ end
 arch hedge_2_2_3
 x 28
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5285,7 +5285,7 @@ end
 arch hedge_2_1_1
 x 28
 y 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5298,7 +5298,7 @@ end
 arch hedge_2_1_1
 x 28
 y 6
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5311,7 +5311,7 @@ end
 arch hedge_2_1_1
 x 28
 y 7
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5324,7 +5324,7 @@ end
 arch hedge_2_1_1
 x 28
 y 8
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5337,7 +5337,7 @@ end
 arch hedge_2_1_1
 x 28
 y 9
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5350,7 +5350,7 @@ end
 arch hedge_2_1_1
 x 28
 y 10
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5363,7 +5363,7 @@ end
 arch hedge_2_1_1
 x 28
 y 11
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5376,7 +5376,7 @@ end
 arch hedge_2_1_1
 x 28
 y 12
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5389,7 +5389,7 @@ end
 arch hedge_2_1_1
 x 28
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5402,7 +5402,7 @@ end
 arch hedge_2_1_1
 x 28
 y 14
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5415,7 +5415,7 @@ end
 arch hedge_2_1_1
 x 28
 y 15
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5428,7 +5428,7 @@ end
 arch hedge_2_1_1
 x 28
 y 16
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5441,7 +5441,7 @@ end
 arch hedge_2_1_1
 x 28
 y 17
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5454,7 +5454,7 @@ end
 arch hedge_2_1_1
 x 28
 y 18
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5467,7 +5467,7 @@ end
 arch hedge_2_1_1
 x 28
 y 19
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5480,7 +5480,7 @@ end
 arch hedge_2_2_4
 x 28
 y 20
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 28

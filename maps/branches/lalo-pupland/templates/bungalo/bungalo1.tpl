@@ -929,7 +929,7 @@ arch check_inv
 slaying OWNER_MARKER
 x 4
 y 17
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 4
@@ -2143,7 +2143,7 @@ end
 arch door_look_2
 x 10
 y 17
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch dungeon_magic
@@ -2252,7 +2252,7 @@ end
 arch door_1
 x 11
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -3053,7 +3053,7 @@ end
 arch tree5
 x 17
 y 16
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -3160,7 +3160,7 @@ end
 arch tree5
 x 18
 y 16
-no_pass 1
+move_block all
 blocksview 1
 end
 arch hole
