@@ -3,9 +3,8 @@ name undead_quest_21
 width 6
 height 30
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Dec 26 17:48:15 1998
+Created:  1998-02-26
+Modified: 2012-11-18 Nicolas Weeger
 endmsg
 end
 arch nightmare
@@ -95,7 +94,7 @@ arch spectre
 y 28
 end
 arch spectre
-name Lord Spectre
+name Master Spectre
 Pow 50
 hp 1500
 maxhp 1500

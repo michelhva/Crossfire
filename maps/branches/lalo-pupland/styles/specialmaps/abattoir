@@ -1,11 +1,10 @@
 arch map
-name minichapel_devourers
+name Abattoir
 width 6
 height 6
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 18 15:47:50 1999
+Created:  1999-02-18
+Modified: 2008-11-25 Rick Tanner
 endmsg
 end
 arch director_3
@@ -18,6 +17,8 @@ y 2
 speed 4.000000
 level 100
 state 6
+arch spell_lg_magic_bullet
+end
 end
 arch director_1
 x 1

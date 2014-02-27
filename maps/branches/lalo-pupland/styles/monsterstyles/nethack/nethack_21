@@ -3,9 +3,8 @@ name nethack_2
 width 13
 height 26
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat May  5 16:44:39 2001
+Created:  2001-05-05
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 end
 arch Balrog
@@ -119,7 +118,6 @@ name Golden Naga
 hp 930
 maxhp 930
 exp 10000
-dam 15
 x 2
 y 5
 speed 0.200000
@@ -171,8 +169,8 @@ attacktype 1029
 resist_magic 60
 randomitems none
 end
-arch gargolye
-name winged gargolye
+arch gargoyle
+name winged gargoyle
 hp 900
 maxhp 900
 exp 30000
@@ -251,8 +249,8 @@ x 4
 y 24
 attacktype 1
 end
-arch gargolye
-name winged gargolye
+arch gargoyle
+name winged gargoyle
 hp 900
 maxhp 900
 exp 30000
@@ -308,8 +306,8 @@ resist_paralyze 0
 resist_fear 0
 randomitems giant
 end
-arch gargolye
-name winged gargolye
+arch gargoyle
+name winged gargoyle
 hp 900
 maxhp 900
 exp 30000
@@ -346,7 +344,6 @@ name stone golem
 Con 15
 hp 5000
 maxhp 5000
-ac -20
 x 6
 y 12
 resist_physical 40
@@ -451,7 +448,6 @@ name Guardian Naga
 hp 1230
 maxhp 1230
 exp 20000
-dam 15
 x 8
 y 9
 speed 0.200000
