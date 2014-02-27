@@ -3,9 +3,8 @@ name nethack_2
 width 6
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat May  5 16:44:39 2001
+Created:  2001-02-05
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch snake
@@ -277,6 +276,7 @@ y 11
 speed 0.200000
 type 0
 attacktype 4192
+move_type walk
 monster 1
 undead 1
 end
@@ -485,7 +485,6 @@ end
 arch spider
 name cave spider
 exp 20
-dam 5
 x 5
 y 2
 speed 0.200000

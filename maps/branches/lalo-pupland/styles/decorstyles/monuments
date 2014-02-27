@@ -3,12 +3,12 @@ name <unnamed>
 width 6
 height 6
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Dec 26 17:10:45 1998
+Created:  1998-02-26
+Modified: 2010-08-07 Nicolas Weeger
 endmsg
 end
 arch statue
+move_block swim
 end
 arch fountain
 x 1

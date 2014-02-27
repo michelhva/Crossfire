@@ -7,9 +7,8 @@ height 6
 enter_x 1
 enter_y 1
 msg
-Creator: Raphael Quinet
-Email: quinet@gamers.org
-Date: Mon Jan 25 12:41:08 1999
+Created:  1999-01-25 Raphaël Quinet (raphael@gimp.org)
+Modified: 2010-08-07 Nicolas Weeger
 endmsg
 end
 arch altar_gorokh
@@ -32,31 +31,38 @@ end
 arch statue
 face statue_gargoyle.111
 x 2
+move_block swim
 end
 arch statue
 face statue_gargoyle.111
 x 2
 y 1
+move_block swim
 end
 arch statue
 face statue_gargoyle.111
 x 2
 y 2
+move_block swim
 end
 arch brazier
 x 3
+move_block swim
 end
 arch brazier
 x 3
 y 1
+move_block swim
 end
 arch brazier
 x 3
 y 2
+move_block swim
 end
 arch brazier
 x 3
 y 3
+move_block swim
 end
 arch pentagram
 x 4

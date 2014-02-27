@@ -1,14 +1,18 @@
 arch map
-name minitrade
+name Mini Trading Post
+shopitems *:0
+shopmin 5
+shopmax 2500
 width 8
 height 8
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 18 15:47:50 1999
+Created:  1999-02-18
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
-arch shop_empty
+arch flagstone
+name floor
+face shop_empty.111
 y 2
 end
 arch shop_mat
@@ -22,19 +26,25 @@ arch woodwall_1_4
 x 1
 y 1
 end
-arch woodfloor2
+arch swall_1_1_half
 x 1
-y 2
+y 1
 end
-arch shop_empty
+arch woodfloor2
 x 1
 y 2
 end
 arch swall_2_1_1
 x 1
 y 2
+no_magic 1
+damned 1
 end
 arch woodfloor2
+x 1
+y 3
+end
+arch swall_1_2_half
 x 1
 y 3
 end

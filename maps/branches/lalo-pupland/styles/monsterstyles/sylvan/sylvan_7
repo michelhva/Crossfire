@@ -3,9 +3,8 @@ name <untitled>
 width 6
 height 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Dec 22 20:37:46 1998
+Created:  1998-02-22
+Modified: 2013-07-19 Andreas Kirschbaum
 endmsg
 end
 arch knight
@@ -100,7 +99,6 @@ level 8
 attacktype 3
 weight 1000
 can_use_ring 1
-can_use_rod 1
 arch spell_curse
 end
 arch spell_missile_swarm
@@ -151,7 +149,6 @@ level 8
 attacktype 3
 weight 1000
 can_use_ring 1
-can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -201,7 +198,6 @@ level 8
 attacktype 3
 weight 1000
 can_use_ring 1
-can_use_rod 1
 arch spell_curse
 end
 arch spell_missile_swarm
@@ -256,7 +252,6 @@ level 8
 attacktype 3
 weight 1000
 can_use_ring 1
-can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
