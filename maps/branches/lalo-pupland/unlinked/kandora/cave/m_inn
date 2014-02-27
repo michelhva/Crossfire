@@ -4,14 +4,13 @@ width 10
 height 14
 enter_y 10
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Thu Jan 28 18:58:12 1999
+Created:  1999-02-28 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch grass
 end
-arch rjunct_we-ne
+arch river_junct_we-ne
 end
 arch grass
 y 1
@@ -31,10 +30,13 @@ end
 arch woodfloor2
 y 4
 end
-arch wall_1_2
+arch wall_2_1_1
 y 4
 end
 arch flagstone
+y 5
+end
+arch wall_2_1_1
 y 5
 end
 arch flagstone_2_2_2
@@ -91,7 +93,7 @@ end
 arch grass
 x 1
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 x 1
 end
 arch grass
@@ -169,7 +171,7 @@ end
 arch grass
 x 2
 end
-arch rjunct_we-se
+arch river_junct_we-se
 x 2
 end
 arch grass
@@ -254,7 +256,11 @@ arch flagstone
 x 2
 y 12
 end
-arch oakdoor
+arch flagstone
+x 2
+y 13
+end
+arch oakdoor_2
 slaying mithril
 hp 10
 sp 9
@@ -264,7 +270,7 @@ end
 arch grass
 x 3
 end
-arch rcrook_we-se
+arch river_crook_we-se
 x 3
 end
 arch grass
@@ -363,7 +369,7 @@ end
 arch grass
 x 4
 end
-arch rjunct_we-ne
+arch river_junct_we-ne
 x 4
 end
 arch grass
@@ -382,15 +388,15 @@ arch woodfloor2
 x 4
 y 4
 end
-arch flagstone
-x 4
-y 5
-end
 arch magic_mouth
 msg
 A nice porch with a view over the
 river..
 endmsg
+x 4
+y 5
+end
+arch flagstone
 x 4
 y 5
 end
@@ -445,7 +451,7 @@ end
 arch grass
 x 5
 end
-arch rcrook_we-ne
+arch river_crook_we-ne
 x 5
 end
 arch grass
@@ -531,7 +537,7 @@ end
 arch grass
 x 6
 end
-arch rjunct_we-se
+arch river_junct_we-se
 x 6
 end
 arch grass
@@ -609,7 +615,7 @@ end
 arch grass
 x 7
 end
-arch rjunct_we-sw
+arch river_junct_we-sw
 x 7
 end
 arch grass
@@ -821,11 +827,15 @@ arch woodfloor2
 x 9
 y 4
 end
-arch wall_1_2
+arch wall_2_1_1
 x 9
 y 4
 end
 arch flagstone
+x 9
+y 5
+end
+arch wall_2_1_1
 x 9
 y 5
 end

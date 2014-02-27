@@ -3,9 +3,8 @@ name c
 width 15
 height 13
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Fri Jan 15 08:46:56 1999
+Created:  1999-02-15 King Zoobus
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch goldfloor
@@ -15,6 +14,8 @@ y 1
 end
 arch oakdoor
 slaying ../../town2
+hp -1
+sp -1
 y 1
 end
 arch goldfloor
@@ -75,7 +76,7 @@ msg
 You should be at least 15th level to
 complete the quest.  Newbies can look,
 but heed Tim's warning!  Note: any
-persons resembling  real or ficticious
+persons resembling real or fictitious
 people is purely coincidental...
 endmsg
 x 1
@@ -576,6 +577,8 @@ x 7
 end
 arch lbulletwall_5
 x 7
+arch spell_lg_magic_bullet
+end
 end
 arch goldfloor
 x 7
@@ -623,6 +626,8 @@ name happy horn
 luck 2
 x 7
 y 3
+arch spell_magic_bullet
+end
 end
 arch goldfloor
 x 7

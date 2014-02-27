@@ -7,9 +7,8 @@ height 14
 enter_x 1
 enter_y 7
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Mon Feb  1 19:58:35 1999
+Created:  1999-02-01 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch cobblestones
@@ -49,13 +48,13 @@ end
 arch cobblestones
 y 6
 end
-arch wall_2_1_1
+arch wall_1_2
 y 6
 end
 arch cobblestones
 y 7
 end
-arch oakdoor
+arch oakdoor_1
 slaying dun_marksel
 hp 20
 sp 7
@@ -64,7 +63,7 @@ end
 arch cobblestones
 y 8
 end
-arch wall_2_1_1
+arch wall_1_1
 y 8
 end
 arch cobblestones
@@ -237,7 +236,7 @@ msg
 @match *
 yah git better <hic> service, if ya
 sit at one them tables by the bar and
-plop down some coinage. <hic
+plop down some coinage. <hic>
 endmsg
 x 2
 y 7
@@ -655,7 +654,7 @@ end
 arch dwarf_wiz
 msg
 @match mine
-I'd sooner cut out my tounge than tell
+I'd sooner cut out my tongue than tell
 where the hidden valley lies.
 @match *
 I'm too busy to answer your queries.
@@ -1156,7 +1155,7 @@ arch cobblestones
 x 13
 y 2
 end
-arch wall_2_1_1
+arch wall_1_1
 x 13
 y 2
 end
@@ -1220,7 +1219,7 @@ arch cobblestones
 x 13
 y 10
 end
-arch wall_2_1_1
+arch wall_1_2
 x 13
 y 10
 end
@@ -1236,7 +1235,7 @@ arch cobblestones
 x 13
 y 12
 end
-arch wall_2_1_1
+arch wall_1_1
 x 13
 y 12
 end

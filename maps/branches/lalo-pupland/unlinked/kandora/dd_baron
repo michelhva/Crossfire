@@ -3,9 +3,8 @@ name dm_inn
 width 14
 height 6
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Thu Feb  4 07:48:04 1999
+Created:  1999-02-04 King Zoobus
+Modified: 2013-11-22 SilverNexus
 endmsg
 end
 arch cobblestones
@@ -278,7 +277,7 @@ arch cobblestones
 x 6
 y 5
 end
-arch oakdoor
+arch oakdoor_2
 slaying denray
 hp 3
 sp 4
@@ -526,7 +525,7 @@ x 12
 y 3
 end
 arch book_read
-name compendum on poisons
+name compendium on poisons
 x 12
 y 3
 end

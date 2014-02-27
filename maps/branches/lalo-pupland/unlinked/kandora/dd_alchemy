@@ -5,9 +5,8 @@ height 17
 enter_x 16
 enter_y 8
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Thu Jan 28 12:25:58 1999
+Created:  1999-02-28 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch woodfloor
@@ -214,6 +213,8 @@ y 15
 end
 arch stair_3_down
 slaying dd_alchemy2
+hp 6
+sp 1
 x 1
 y 15
 end
@@ -251,6 +252,7 @@ endmsg
 x 2
 y 2
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -978,7 +980,7 @@ end
 arch woodfloor
 x 9
 end
-arch wwall_win2
+arch window_win2
 x 9
 end
 arch woodfloor
@@ -1163,6 +1165,7 @@ hp 80
 x 10
 y 6
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -1376,7 +1379,7 @@ y 4
 end
 arch card
 msg
-Guild Membership Car
+Guild Membership Card
 endmsg
 x 12
 y 4
@@ -1465,6 +1468,9 @@ end
 arch random_weapon
 end
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 end
 arch woodfloor
@@ -1789,6 +1795,8 @@ arch potion_heal
 name elixer
 x 15
 y 12
+arch spell_heal
+end
 end
 arch block_door_closed
 name stone table

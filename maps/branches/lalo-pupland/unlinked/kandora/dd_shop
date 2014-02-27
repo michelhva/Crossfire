@@ -6,9 +6,8 @@ width 11
 height 11
 enter_x 5
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Wed Jan 27 18:57:19 1999
+Created:  1999-02-27 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch woodfloor
@@ -285,7 +284,7 @@ end
 arch woodfloor
 x 4
 end
-arch wall_2_1_2
+arch wall_1_3
 x 4
 end
 arch woodfloor
@@ -347,7 +346,7 @@ end
 arch woodfloor
 x 5
 end
-arch oakdoor
+arch oakdoor_2
 slaying denray
 hp 4
 sp 14
@@ -383,8 +382,14 @@ x 5
 y 2
 carrying 76525
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch high_boots
 end
@@ -443,7 +448,7 @@ arch woodfloor
 x 5
 y 7
 end
-arch wall_2_1_1
+arch wall_1_2
 x 5
 y 7
 end
@@ -455,7 +460,7 @@ arch woodfloor
 x 5
 y 9
 end
-arch wall_2_1_1
+arch wall_1_1
 x 5
 y 9
 end
@@ -470,7 +475,7 @@ end
 arch woodfloor
 x 6
 end
-arch wall_2_1_2
+arch wall_1_4
 x 6
 end
 arch woodfloor

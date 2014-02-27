@@ -6,9 +6,8 @@ width 20
 height 6
 enter_x 10
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Thu Feb  4 08:25:55 1999
+Created:  1999-02-04 King Zoobus
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -556,6 +555,7 @@ end
 arch key
 x 15
 y 3
+unpaid 1
 end
 arch shop_amulets
 x 15
@@ -591,6 +591,7 @@ end
 arch key
 x 16
 y 3
+unpaid 1
 end
 arch shop_throw
 x 16
@@ -625,6 +626,7 @@ end
 arch key
 x 17
 y 3
+unpaid 1
 end
 arch shop_food
 x 17
@@ -663,6 +665,7 @@ end
 arch key
 x 18
 y 3
+unpaid 1
 end
 arch shop_armour
 x 18

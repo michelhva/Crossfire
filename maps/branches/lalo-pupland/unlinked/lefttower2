@@ -5,9 +5,7 @@ height 16
 msg
 This map's old name is kundi_area/quest/lefttower2
 Nothing linked to it, and the exits it have doesn't exist.
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jun 28 16:32:48 1995
+Created:  1995-02-28
 endmsg
 end
 arch mountain
@@ -309,7 +307,7 @@ arch afloor_right
 x 3
 y 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 1
 end
@@ -921,7 +919,7 @@ arch afloor_right
 x 8
 y 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 y 1
 end

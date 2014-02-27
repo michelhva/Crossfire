@@ -5,14 +5,13 @@ region start
 width 24
 height 16
 msg
-Creator:  Mhoram, http://aaron.baugher.biz/
-Software: CF Java Map Editor
-Date:    1/23/2007
+Created:  2007-01-23 Mhoram (http://aaron.baugher.biz/)
 
 This map is intended for use as a tutorial for
 complete newbies, to teach them some of the
 basic concepts of Crossfire.  Players should
 enter at x-11, y-1.
+Modified: 2010-11-05 Andreas Kirschbaum
 endmsg
 unique 1
 end
@@ -370,6 +369,8 @@ end
 arch woodfloor
 x 3
 y 3
+no_magic 1
+damned 1
 end
 arch shop_mat
 x 3
@@ -432,6 +433,8 @@ end
 arch potion_heal
 x 3
 y 10
+arch spell_heal
+end
 end
 arch woodfloor
 x 3
@@ -707,10 +710,12 @@ y 10
 end
 arch scroll_new
 name scroll of detect magic
-sp 76
 x 5
 y 10
 level 1
+randomitems none
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 5
@@ -1155,10 +1160,11 @@ slaying money
 msg
 Drop one silver piece to see if you are carrying any cursed items.
 endmsg
-sp 79
 food 1
 x 9
 y 3
+arch spell_detect_curse
+end
 end
 arch woodfloor
 x 9
@@ -1178,10 +1184,11 @@ slaying money
 msg
 Drop one silver piece to see if you are carrying any magic items.
 endmsg
-sp 76
 food 1
 x 9
 y 5
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 9
@@ -1376,7 +1383,7 @@ msg
 Welcome to Crossfire!
 
 You are now in the beginner's area, which will
-teach you the fundamentals of playing Crossifre,
+teach you the fundamentals of playing Crossfire,
 and prepare you to survive in this vast and
 sometimes dangerous world.
 
@@ -1397,7 +1404,7 @@ msg
 Welcome to Crossfire!
 
 You are now in the beginner's area, which will
-teach you the fundamentals of playing Crossifre,
+teach you the fundamentals of playing Crossfire,
 and prepare you to survive in this vast and
 sometimes dangerous world.
 
@@ -2044,7 +2051,7 @@ end
 arch rune_mark
 msg
 See that rune to the north?  You may have to
-wait a few seconds to see it.  Don't step on it; itmight hurt you!  If you have the find traps and disarm traps skills mentioned earlier, you can step NEXT to it and attempt to find and disarm it.  Since it's at the end of the hallway, you might decide it's not worth the risk, since there's nothing beyond it, but it's good to increase your experience in those skills whenever possible.
+wait a few seconds to see it.  Don't step on it; it might hurt you!  If you have the find traps and disarm traps skills mentioned earlier, you can step NEXT to it and attempt to find and disarm it.  Since it's at the end of the hallway, you might decide it's not worth the risk, since there's nothing beyond it, but it's good to increase your experience in those skills whenever possible.
 
 Remember: to search for traps, press 'f' (or type 'use_skill find traps), and to attempt to disarm any traps you find, press 'd' (or type 'use_skill disarm traps).
 endmsg

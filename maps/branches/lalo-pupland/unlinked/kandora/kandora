@@ -3,9 +3,8 @@ name kandora
 width 40
 height 28
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Tue Jan 26 18:06:47 1999
+Created:  1999-02-26 King Zoobus
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 end
 arch woods
@@ -27,6 +26,8 @@ y 5
 end
 arch stronghold_sym
 slaying dun_marksel
+hp -1
+sp -1
 y 5
 end
 arch woods
@@ -35,7 +36,7 @@ end
 arch grass
 y 7
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 y 7
 end
 arch brush
@@ -74,6 +75,8 @@ end
 arch fort
 name Dun Denray
 slaying denray
+hp -1
+sp -1
 y 17
 end
 arch grassmedium
@@ -146,7 +149,7 @@ arch grass
 x 1
 y 7
 end
-arch bridge_ns
+arch river_bridge_ns
 x 1
 y 7
 end
@@ -308,6 +311,8 @@ end
 arch tower_tob
 name signal tower
 slaying signal
+hp -1
+sp -1
 x 2
 y 9
 end
@@ -585,7 +590,7 @@ arch grassmedium
 x 4
 y 7
 end
-arch rcrook_we-ne
+arch river_crook_we-ne
 x 4
 y 7
 end
@@ -693,8 +698,15 @@ arch woods_3
 x 4
 y 27
 end
+arch hills_rocky
+x 5
+end
 arch mountain3
 x 5
+end
+arch hills_rocky
+x 5
+y 1
 end
 arch mountain3
 x 5
@@ -720,7 +732,7 @@ arch grassmedium
 x 5
 y 7
 end
-arch rcrook_we-nw
+arch river_crook_we-nw
 x 5
 y 7
 end
@@ -825,6 +837,8 @@ y 2
 end
 arch mountain_cave2
 slaying cave/entrance
+hp -1
+sp -1
 x 6
 y 2
 end
@@ -840,7 +854,7 @@ arch grassmedium
 x 6
 y 7
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 x 6
 y 7
 end
@@ -958,11 +972,6 @@ arch mountain4
 x 7
 y 4
 end
-arch mountain4
-x 7
-y 5
-no_pass 0
-end
 arch magic_ear
 msg
 @match mithril|Mithril
@@ -974,11 +983,17 @@ x 7
 y 5
 connected 22
 end
+arch mountain4
+x 7
+y 5
+move_block 0
+end
 arch teleporter
 slaying cave/mithril
 sp 15
 x 7
 y 5
+speed 0.0
 invisible 1
 connected 22
 end
@@ -1562,6 +1577,8 @@ y 18
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 11
 y 18
 end
@@ -1583,6 +1600,8 @@ y 22
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 11
 y 22
 end
@@ -1691,6 +1710,8 @@ y 17
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 12
 y 17
 end
@@ -1712,6 +1733,8 @@ y 21
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 12
 y 21
 end
@@ -1733,6 +1756,8 @@ y 25
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 12
 y 25
 end
@@ -1829,6 +1854,8 @@ y 19
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 13
 y 19
 end
@@ -1838,6 +1865,8 @@ y 20
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 13
 y 20
 end
@@ -1855,6 +1884,8 @@ y 23
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 13
 y 23
 end
@@ -1872,6 +1903,8 @@ y 26
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 13
 y 26
 end
@@ -2129,6 +2162,8 @@ y 27
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 15
 y 27
 end
@@ -2237,6 +2272,8 @@ y 24
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 16
 y 24
 end
@@ -2246,6 +2283,8 @@ y 25
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 16
 y 25
 end
@@ -2255,6 +2294,8 @@ y 26
 end
 arch invis_exit
 slaying ambush1
+hp -1
+sp -1
 x 16
 y 26
 end

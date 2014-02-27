@@ -4,9 +4,8 @@ width 16
 height 16
 enter_x 8
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Mon Jan 18 17:25:50 1999
+Created:  1999-02-18 King Zoobus
+Modified: 2013-11-23 SilverNexus
 endmsg
 end
 arch dungeon_floor
@@ -516,7 +515,7 @@ end
 arch pillars
 x 5
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 5
@@ -553,7 +552,7 @@ arch dungeon_floor
 x 6
 y 2
 end
-arch cwall_2_1_2
+arch dwall_1_4
 x 6
 y 2
 end
@@ -637,7 +636,7 @@ end
 arch pillars
 x 6
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 6
@@ -653,6 +652,9 @@ name The Holy Handgrenade
 x 6
 y 14
 level 2
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch giant_bat
 x 6
@@ -669,7 +671,7 @@ end
 arch dungeon_floor
 x 7
 end
-arch cwall_2_1_2
+arch dwall_1_3
 x 7
 end
 arch dungeon_floor
@@ -779,7 +781,7 @@ end
 arch pillars
 x 7
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 7
@@ -800,21 +802,21 @@ end
 arch dungeon_floor
 x 8
 end
-arch oakdoor
+arch oakdoor_2
 slaying mp_world
 hp 26
 sp 21
 x 8
-end
-arch dungeon_floor
-x 8
-y 1
 end
 arch magic_mouth
 msg
 smells of incense & sounds of chanting
 eminate beyond the doors
 endmsg
+x 8
+y 1
+end
+arch dungeon_floor
 x 8
 y 1
 end
@@ -940,7 +942,7 @@ arch dungeon_floor
 x 8
 y 12
 end
-arch altar_jehovah
+arch altar_valriel
 x 8
 y 12
 end
@@ -971,7 +973,7 @@ end
 arch dungeon_floor
 x 9
 end
-arch cwall_2_1_2
+arch dwall_1_4
 x 9
 end
 arch dungeon_floor
@@ -1065,7 +1067,7 @@ end
 arch pillars
 x 9
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 9
@@ -1101,7 +1103,7 @@ arch dungeon_floor
 x 10
 y 2
 end
-arch cwall_2_1_2
+arch dwall_1_3
 x 10
 y 2
 end
@@ -1189,7 +1191,7 @@ end
 arch pillars
 x 10
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 10
@@ -1289,7 +1291,7 @@ end
 arch pillars
 x 11
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 11

@@ -4,9 +4,8 @@ width 20
 height 14
 enter_x 1
 msg
-Creator: King Zoobus
-Email: gnu@foo.bar
-Date: Thu Jan 28 18:58:12 1999
+Created:  1999-02-28 King Zoobus
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -166,7 +165,7 @@ arch dungeon_magic
 x 1
 y 8
 end
-arch gargolye
+arch gargoyle
 x 1
 y 8
 end
@@ -1070,6 +1069,8 @@ slaying cave2
 msg
 scorching hot air wafts from below.
 endmsg
+hp -1
+sp -1
 x 9
 y 5
 end
@@ -1963,7 +1964,7 @@ end
 arch biglake_w
 x 18
 y 4
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 18
@@ -2042,7 +2043,7 @@ end
 arch biglake_w
 x 19
 y 3
-no_pass 0
+move_block 0
 end
 arch biglake_w
 x 19
@@ -2103,4 +2104,6 @@ end
 arch firewall_7
 x 19
 y 13
+arch spell_small_fireball
+end
 end
