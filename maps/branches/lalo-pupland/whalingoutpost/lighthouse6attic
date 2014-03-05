@@ -1,13 +1,15 @@
 arch map
-name Frozen Lighthouse
+name Frozen Lighthouse, Level 6 - Attic
 reset_timeout 7200
 difficulty 1
-width 32
-height 32
-enter_x 1
-enter_y 1
+region whalingoutpost
+width 17
+height 18
+enter_x 8
+enter_y 9
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2011-11-14 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -224,7 +226,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 8
 end
@@ -234,7 +235,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 9
 end
@@ -244,7 +244,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 10
 end
@@ -306,7 +305,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 7
 end
@@ -316,7 +314,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 8
 end
@@ -330,7 +327,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 10
 end
@@ -340,7 +336,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 11
 end
@@ -394,7 +389,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 6
 end
@@ -404,7 +398,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 7
 end
@@ -426,7 +419,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 11
 end
@@ -436,7 +428,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 12
 end
@@ -482,7 +473,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 5
 end
@@ -492,7 +482,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 6
 end
@@ -530,7 +519,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 12
 end
@@ -540,7 +528,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 13
 end
@@ -582,7 +569,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 5
 end
@@ -627,7 +613,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 13
 end
@@ -669,7 +654,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 5
 end
@@ -679,7 +663,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 6
 end
@@ -717,7 +700,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 12
 end
@@ -727,7 +709,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 13
 end
@@ -773,7 +754,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 6
 end
@@ -783,7 +763,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 7
 end
@@ -805,7 +784,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 11
 end
@@ -815,7 +793,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 12
 end
@@ -869,7 +846,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 7
 end
@@ -879,7 +855,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 8
 end
@@ -893,7 +868,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 10
 end
@@ -903,7 +877,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 11
 end
@@ -965,7 +938,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 8
 end
@@ -975,7 +947,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 9
 end
@@ -985,7 +956,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 10
 end

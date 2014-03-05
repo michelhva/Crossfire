@@ -1,14 +1,16 @@
 arch map
-name Glacier Keep
+name Glacier Keep, Foundation
 reset_timeout 7200
-difficulty 1
+difficulty 35
+region whalingoutpost
 darkness 3
-width 64
-height 64
-enter_x 1
-enter_y 1
+width 40
+height 40
+enter_x 24
+enter_y 28
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2011-11-14 Rick Tanner
 endmsg
 end
 arch blocked
@@ -2349,10 +2351,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2364,10 +2365,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2379,10 +2379,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2394,10 +2393,9 @@ y 24
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 24
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2409,10 +2407,9 @@ y 25
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 25
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2424,10 +2421,9 @@ y 26
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 26
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2439,10 +2435,9 @@ y 27
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 27
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2454,10 +2449,9 @@ y 28
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 28
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2469,10 +2463,9 @@ y 29
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 29
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2484,10 +2477,9 @@ y 30
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 30
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2499,10 +2491,9 @@ y 31
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 31
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2514,10 +2505,9 @@ y 32
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 32
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2529,10 +2519,9 @@ y 33
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 33
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2544,10 +2533,9 @@ y 34
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 34
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2559,10 +2547,9 @@ y 35
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 35
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2574,10 +2561,9 @@ y 36
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 36
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2589,10 +2575,9 @@ y 37
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 37
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2604,10 +2589,9 @@ y 38
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 38
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -2627,10 +2611,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2642,10 +2625,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2657,10 +2639,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2672,10 +2653,9 @@ y 24
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 24
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2687,10 +2667,9 @@ y 25
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 25
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2702,10 +2681,9 @@ y 26
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 26
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2717,10 +2695,9 @@ y 27
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 27
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2732,10 +2709,9 @@ y 28
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 28
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2747,10 +2723,9 @@ y 29
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 29
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2762,10 +2737,9 @@ y 30
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 30
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2777,10 +2751,9 @@ y 31
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 31
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2792,10 +2765,9 @@ y 32
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 32
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2807,10 +2779,9 @@ y 33
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 33
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2822,10 +2793,9 @@ y 34
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 34
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2837,10 +2807,9 @@ y 35
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 35
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2852,10 +2821,9 @@ y 36
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 36
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2867,10 +2835,9 @@ y 37
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 37
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2882,10 +2849,9 @@ y 38
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 38
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -2905,10 +2871,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -2920,10 +2885,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -2935,10 +2899,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -2950,10 +2913,9 @@ y 24
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 24
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -2965,10 +2927,9 @@ y 25
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 25
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -2980,10 +2941,9 @@ y 26
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 26
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -2999,14 +2959,13 @@ y 27
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 27
 end
 arch ice
 x 23
 y 27
-no_pass 1
+move_block all
 end
 arch light1
 x 23
@@ -3018,14 +2977,13 @@ y 28
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 28
 end
 arch ice
 x 23
 y 28
-no_pass 1
+move_block all
 end
 arch light1
 x 23
@@ -3037,14 +2995,13 @@ y 29
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 29
 end
 arch ice
 x 23
 y 29
-no_pass 1
+move_block all
 end
 arch light1
 x 23
@@ -3052,10 +3009,9 @@ y 30
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 30
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -3067,10 +3023,9 @@ y 31
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 31
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -3082,10 +3037,9 @@ y 32
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 32
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -3097,10 +3051,9 @@ y 33
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 33
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -3112,10 +3065,9 @@ y 34
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 34
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -3127,10 +3079,9 @@ y 35
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 35
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -3142,10 +3093,9 @@ y 36
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 36
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -3157,10 +3107,9 @@ y 37
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 37
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -3172,10 +3121,9 @@ y 38
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 38
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -3195,10 +3143,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 24
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 24
@@ -3210,10 +3157,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 24
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 24
@@ -3225,10 +3171,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 24
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 24
@@ -3395,10 +3340,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 25
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 25
@@ -3410,10 +3354,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 25
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 25
@@ -3425,10 +3368,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 25
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 25
@@ -3442,19 +3384,11 @@ arch cave2
 x 25
 y 24
 end
-arch blocked
+arch cave_15
 x 25
 y 25
 end
-arch dungeon_floor
-x 25
-y 26
-end
-arch mine6
-x 25
-y 26
-end
-arch blocked
+arch cave_15
 x 25
 y 26
 end
@@ -3478,79 +3412,39 @@ arch cave2
 x 25
 y 29
 end
-arch dungeon_floor
+arch cave_15
 x 25
 y 30
 end
-arch mine6
-x 25
-y 30
-end
-arch blocked
-x 25
-y 30
-end
-arch blocked
+arch cave_15
 x 25
 y 31
 end
-arch blocked
+arch cave_15
 x 25
 y 32
 end
-arch dungeon_floor
+arch cave_15
 x 25
 y 33
 end
-arch mine10
-x 25
-y 33
-end
-arch blocked
-x 25
-y 33
-end
-arch dungeon_floor
+arch cave_15
 x 25
 y 34
 end
-arch mine4
-x 25
-y 34
-end
-arch blocked
-x 25
-y 34
-end
-arch blocked
+arch cave_15
 x 25
 y 35
 end
-arch dungeon_floor
+arch cave_15
 x 25
 y 36
 end
-arch mine10
-x 25
-y 36
-end
-arch blocked
-x 25
-y 36
-end
-arch dungeon_floor
+arch cave_15
 x 25
 y 37
 end
-arch mine4
-x 25
-y 37
-end
-arch blocked
-x 25
-y 37
-end
-arch blocked
+arch cave_15
 x 25
 y 38
 end
@@ -3568,10 +3462,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 26
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 26
@@ -3583,10 +3476,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 26
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 26
@@ -3598,10 +3490,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 26
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 26
@@ -3615,27 +3506,11 @@ arch cave2
 x 26
 y 24
 end
-arch dungeon_floor
+arch cave_15
 x 26
 y 25
 end
-arch mine10
-x 26
-y 25
-end
-arch blocked
-x 26
-y 25
-end
-arch dungeon_floor
-x 26
-y 26
-end
-arch mine13
-x 26
-y 26
-end
-arch blocked
+arch cave_15
 x 26
 y 26
 end
@@ -3773,15 +3648,7 @@ arch blocked
 x 26
 y 37
 end
-arch dungeon_floor
-x 26
-y 38
-end
-arch mine4
-x 26
-y 38
-end
-arch blocked
+arch cave_15
 x 26
 y 38
 end
@@ -3799,10 +3666,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 27
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 27
@@ -3814,10 +3680,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 27
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 27
@@ -3829,10 +3694,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 27
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 27
@@ -3846,31 +3710,11 @@ arch cave2
 x 27
 y 24
 end
-arch dungeon_floor
+arch cave_15
 x 27
 y 25
 end
-arch mine9
-x 27
-y 25
-end
-arch blocked
-x 27
-y 25
-end
-arch dungeon_floor
-x 27
-y 26
-end
-arch snow4
-x 27
-y 26
-end
-arch mine17
-x 27
-y 26
-end
-arch blocked
+arch cave24
 x 27
 y 26
 end
@@ -3970,15 +3814,7 @@ arch blocked
 x 27
 y 37
 end
-arch dungeon_floor
-x 27
-y 38
-end
-arch mine12
-x 27
-y 38
-end
-arch blocked
+arch cave_15
 x 27
 y 38
 end
@@ -3996,10 +3832,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 28
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 28
@@ -4011,10 +3846,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 28
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 28
@@ -4026,10 +3860,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 28
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 28
@@ -4043,7 +3876,7 @@ arch cave2
 x 28
 y 24
 end
-arch blocked
+arch cave_15
 x 28
 y 25
 end
@@ -4156,7 +3989,7 @@ arch blocked
 x 28
 y 37
 end
-arch blocked
+arch cave_15
 x 28
 y 38
 end
@@ -4174,10 +4007,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 29
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 29
@@ -4189,10 +4021,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 29
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 29
@@ -4204,10 +4035,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 29
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 29
@@ -4221,27 +4051,11 @@ arch cave2
 x 29
 y 24
 end
-arch dungeon_floor
-x 29
-y 25
-end
-arch snow5
-x 29
-y 25
-end
-arch mine10
-x 29
-y 25
-end
-arch blocked
+arch cave_15
 x 29
 y 25
 end
 arch dungeon_floor
-x 29
-y 26
-end
-arch snow5
 x 29
 y 26
 end
@@ -4341,15 +4155,7 @@ arch blocked
 x 29
 y 37
 end
-arch dungeon_floor
-x 29
-y 38
-end
-arch mine4
-x 29
-y 38
-end
-arch blocked
+arch cave_15
 x 29
 y 38
 end
@@ -4367,10 +4173,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 30
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 30
@@ -4382,10 +4187,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 30
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 30
@@ -4397,10 +4201,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 30
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 30
@@ -4414,23 +4217,11 @@ arch cave2
 x 30
 y 24
 end
-arch dungeon_floor
-x 30
-y 25
-end
-arch mine9
-x 30
-y 25
-end
-arch blocked
+arch cave_15
 x 30
 y 25
 end
 arch dungeon_floor
-x 30
-y 26
-end
-arch snow5
 x 30
 y 26
 end
@@ -4558,15 +4349,7 @@ arch blocked
 x 30
 y 37
 end
-arch dungeon_floor
-x 30
-y 38
-end
-arch mine12
-x 30
-y 38
-end
-arch blocked
+arch cave_15
 x 30
 y 38
 end
@@ -4584,10 +4367,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 31
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 31
@@ -4599,10 +4381,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 31
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 31
@@ -4614,10 +4395,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 31
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 31
@@ -4631,7 +4411,7 @@ arch cave2
 x 31
 y 24
 end
-arch blocked
+arch cave_15
 x 31
 y 25
 end
@@ -4738,7 +4518,7 @@ arch blocked
 x 31
 y 37
 end
-arch blocked
+arch cave_15
 x 31
 y 38
 end
@@ -4756,10 +4536,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 32
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 32
@@ -4771,10 +4550,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 32
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 32
@@ -4786,10 +4564,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 32
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 32
@@ -4803,7 +4580,7 @@ arch cave2
 x 32
 y 24
 end
-arch blocked
+arch cave_15
 x 32
 y 25
 end
@@ -4907,7 +4684,7 @@ arch blocked
 x 32
 y 37
 end
-arch blocked
+arch cave_15
 x 32
 y 38
 end
@@ -4925,10 +4702,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 33
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 33
@@ -4940,10 +4716,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 33
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 33
@@ -4955,10 +4730,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 33
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 33
@@ -4972,15 +4746,7 @@ arch cave2
 x 33
 y 24
 end
-arch dungeon_floor
-x 33
-y 25
-end
-arch mine10
-x 33
-y 25
-end
-arch blocked
+arch cave_15
 x 33
 y 25
 end
@@ -5064,15 +4830,7 @@ arch blocked
 x 33
 y 37
 end
-arch dungeon_floor
-x 33
-y 38
-end
-arch mine4
-x 33
-y 38
-end
-arch blocked
+arch cave_15
 x 33
 y 38
 end
@@ -5090,10 +4848,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 34
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 34
@@ -5105,10 +4862,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 34
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 34
@@ -5120,10 +4876,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 34
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 34
@@ -5137,15 +4892,7 @@ arch cave2
 x 34
 y 24
 end
-arch dungeon_floor
-x 34
-y 25
-end
-arch mine9
-x 34
-y 25
-end
-arch blocked
+arch cave_15
 x 34
 y 25
 end
@@ -5213,15 +4960,7 @@ arch blocked
 x 34
 y 37
 end
-arch dungeon_floor
-x 34
-y 38
-end
-arch mine12
-x 34
-y 38
-end
-arch blocked
+arch cave_15
 x 34
 y 38
 end
@@ -5239,10 +4978,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 35
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 35
@@ -5254,10 +4992,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 35
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 35
@@ -5269,10 +5006,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 35
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 35
@@ -5286,7 +5022,7 @@ arch cave2
 x 35
 y 24
 end
-arch blocked
+arch cave_15
 x 35
 y 25
 end
@@ -5366,7 +5102,7 @@ arch blocked
 x 35
 y 37
 end
-arch blocked
+arch cave_15
 x 35
 y 38
 end
@@ -5384,10 +5120,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 36
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 36
@@ -5399,10 +5134,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 36
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 36
@@ -5414,10 +5148,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 36
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 36
@@ -5431,15 +5164,7 @@ arch cave2
 x 36
 y 24
 end
-arch dungeon_floor
-x 36
-y 25
-end
-arch mine10
-x 36
-y 25
-end
-arch blocked
+arch cave_15
 x 36
 y 25
 end
@@ -5538,15 +5263,7 @@ arch blocked
 x 36
 y 37
 end
-arch dungeon_floor
-x 36
-y 38
-end
-arch mine4
-x 36
-y 38
-end
-arch blocked
+arch cave_15
 x 36
 y 38
 end
@@ -5564,10 +5281,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 37
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 37
@@ -5579,10 +5295,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 37
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 37
@@ -5594,10 +5309,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 37
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 37
@@ -5611,15 +5325,7 @@ arch cave2
 x 37
 y 24
 end
-arch dungeon_floor
-x 37
-y 25
-end
-arch mine9
-x 37
-y 25
-end
-arch blocked
+arch cave_15
 x 37
 y 25
 end
@@ -5723,15 +5429,7 @@ arch blocked
 x 37
 y 37
 end
-arch dungeon_floor
-x 37
-y 38
-end
-arch mine12
-x 37
-y 38
-end
-arch blocked
+arch cave_15
 x 37
 y 38
 end
@@ -5749,10 +5447,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 38
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 38
@@ -5764,10 +5461,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 38
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 38
@@ -5779,10 +5475,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 38
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 38
@@ -5796,123 +5491,59 @@ arch cave16
 x 38
 y 24
 end
-arch blocked
+arch cave_15
 x 38
 y 25
 end
-arch dungeon_floor
+arch cave_15
 x 38
 y 26
 end
-arch mine9
-x 38
-y 26
-end
-arch blocked
-x 38
-y 26
-end
-arch dungeon_floor
+arch cave_15
 x 38
 y 27
 end
-arch mine12
-x 38
-y 27
-end
-arch blocked
-x 38
-y 27
-end
-arch blocked
+arch cave_15
 x 38
 y 28
 end
-arch dungeon_floor
+arch cave_15
 x 38
 y 29
 end
-arch mine9
-x 38
-y 29
-end
-arch blocked
-x 38
-y 29
-end
-arch dungeon_floor
+arch cave_15
 x 38
 y 30
 end
-arch mine12
-x 38
-y 30
-end
-arch blocked
-x 38
-y 30
-end
-arch blocked
+arch cave_15
 x 38
 y 31
 end
-arch blocked
+arch cave_15
 x 38
 y 32
 end
-arch dungeon_floor
+arch cave_15
 x 38
 y 33
 end
-arch mine9
-x 38
-y 33
-end
-arch blocked
-x 38
-y 33
-end
-arch dungeon_floor
+arch cave_15
 x 38
 y 34
 end
-arch mine12
-x 38
-y 34
-end
-arch blocked
-x 38
-y 34
-end
-arch blocked
+arch cave_15
 x 38
 y 35
 end
-arch dungeon_floor
+arch cave_15
 x 38
 y 36
 end
-arch mine9
-x 38
-y 36
-end
-arch blocked
-x 38
-y 36
-end
-arch dungeon_floor
+arch cave_15
 x 38
 y 37
 end
-arch mine12
-x 38
-y 37
-end
-arch blocked
-x 38
-y 37
-end
-arch blocked
+arch cave_15
 x 38
 y 38
 end

@@ -1,13 +1,15 @@
 arch map
-name Glacier Keep
+name Glacier Keep, Level 1
 reset_timeout 7200
-difficulty 1
+difficulty 35
+region whalingoutpost
 width 64
 height 64
-enter_x 1
-enter_y 1
+enter_x 31
+enter_y 62
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2011-11-14 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1025,7 +1027,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 8
 end
@@ -1035,7 +1036,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 9
 end
@@ -1045,7 +1045,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 10
 end
@@ -1251,13 +1250,11 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 54
 end
@@ -1270,7 +1267,6 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 55
 end
@@ -1362,7 +1358,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 6
 end
@@ -1372,7 +1367,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 7
 end
@@ -1382,7 +1376,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 8
 end
@@ -1392,7 +1385,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 9
 end
@@ -1402,7 +1394,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 10
 end
@@ -1412,7 +1403,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 11
 end
@@ -1422,7 +1412,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 12
 end
@@ -1600,7 +1589,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 51
 end
@@ -1622,7 +1610,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 53
 end
@@ -1633,13 +1620,11 @@ connected 1000
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 55
 end
@@ -1657,7 +1642,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 57
 end
@@ -1733,7 +1717,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 5
 end
@@ -1743,7 +1726,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 6
 end
@@ -1753,37 +1735,31 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 12
 end
@@ -1793,7 +1769,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 13
 end
@@ -1963,7 +1938,6 @@ y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 50
 end
@@ -1973,7 +1947,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 51
 end
@@ -2045,7 +2018,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 57
 end
@@ -2055,7 +2027,6 @@ y 57
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 58
 end
@@ -2119,7 +2090,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 4
 end
@@ -2129,7 +2099,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 5
 end
@@ -2139,13 +2108,11 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 7
 end
@@ -2155,7 +2122,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 8
 end
@@ -2165,7 +2131,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 9
 end
@@ -2175,7 +2140,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 10
 end
@@ -2185,7 +2149,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 11
 end
@@ -2195,13 +2158,11 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 13
 end
@@ -2211,7 +2172,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 14
 end
@@ -2365,7 +2325,6 @@ y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 49
 end
@@ -2375,7 +2334,6 @@ y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 50
 end
@@ -2385,49 +2343,41 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 55
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 57
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 58
 end
@@ -2437,7 +2387,6 @@ y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 59
 end
@@ -2497,7 +2446,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 4
 end
@@ -2507,19 +2455,16 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 7
 end
@@ -2529,7 +2474,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 8
 end
@@ -2539,7 +2483,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 9
 end
@@ -2549,7 +2492,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 10
 end
@@ -2559,7 +2501,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 11
 end
@@ -2569,19 +2510,16 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 14
 end
@@ -2743,7 +2681,6 @@ y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 49
 end
@@ -2753,19 +2690,16 @@ y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 52
 end
@@ -2775,25 +2709,21 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 55
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 56
 end
@@ -2803,19 +2733,16 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 57
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 59
 end
@@ -2871,7 +2798,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 3
 end
@@ -2881,7 +2807,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 4
 end
@@ -2891,19 +2816,16 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 7
 end
@@ -2933,31 +2855,26 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 15
 end
@@ -3219,43 +3136,36 @@ y 47
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 54
 end
@@ -3269,31 +3179,26 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 55
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 57
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 59
 end
@@ -3303,7 +3208,6 @@ y 59
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 60
 end
@@ -3351,7 +3255,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 3
 end
@@ -3361,7 +3264,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 4
 end
@@ -3371,19 +3273,16 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 7
 end
@@ -3423,31 +3322,26 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 15
 end
@@ -3462,7 +3356,7 @@ end
 arch door_2
 x 9
 y 16
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 9
@@ -3647,11 +3541,10 @@ end
 arch door_2
 x 9
 y 47
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 48
 end
@@ -3661,19 +3554,16 @@ y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 51
 end
@@ -3683,13 +3573,11 @@ y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 53
 end
@@ -3711,7 +3599,6 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 55
 end
@@ -3725,13 +3612,11 @@ y 55
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 57
 end
@@ -3741,13 +3626,11 @@ y 57
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 59
 end
@@ -3757,7 +3640,6 @@ y 59
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 60
 end
@@ -3805,7 +3687,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 3
 end
@@ -3815,7 +3696,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 4
 end
@@ -3825,19 +3705,16 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 7
 end
@@ -3867,31 +3744,26 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 15
 end
@@ -3906,7 +3778,7 @@ end
 arch door_2
 x 10
 y 16
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 10
@@ -4087,11 +3959,10 @@ end
 arch door_2
 x 10
 y 47
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 48
 end
@@ -4101,37 +3972,31 @@ y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 54
 end
@@ -4145,31 +4010,26 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 55
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 57
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 59
 end
@@ -4179,7 +4039,6 @@ y 59
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 60
 end
@@ -4235,25 +4094,21 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 7
 end
@@ -4263,7 +4118,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 8
 end
@@ -4273,7 +4127,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 9
 end
@@ -4283,7 +4136,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 10
 end
@@ -4293,7 +4145,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 11
 end
@@ -4303,19 +4154,16 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 14
 end
@@ -4713,7 +4561,6 @@ y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 49
 end
@@ -4723,19 +4570,16 @@ y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 52
 end
@@ -4745,25 +4589,21 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 55
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 56
 end
@@ -4773,19 +4613,16 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 57
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 59
 end
@@ -4845,7 +4682,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 4
 end
@@ -4855,19 +4691,16 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 7
 end
@@ -4877,7 +4710,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 8
 end
@@ -4887,7 +4719,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 9
 end
@@ -4897,7 +4728,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 10
 end
@@ -4907,7 +4737,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 11
 end
@@ -4917,19 +4746,16 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 14
 end
@@ -5083,7 +4909,6 @@ y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 49
 end
@@ -5093,7 +4918,6 @@ y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 50
 end
@@ -5103,25 +4927,21 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 54
 end
@@ -5131,25 +4951,21 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 55
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 57
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 58
 end
@@ -5159,7 +4975,6 @@ y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 59
 end
@@ -5223,7 +5038,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 5
 end
@@ -5233,49 +5047,41 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 13
 end
@@ -5461,7 +5267,6 @@ y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 50
 end
@@ -5471,7 +5276,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 51
 end
@@ -5481,37 +5285,31 @@ y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 55
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 57
 end
@@ -5521,7 +5319,6 @@ y 57
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 58
 end
@@ -5597,7 +5394,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 6
 end
@@ -5607,37 +5403,31 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 12
 end
@@ -5835,7 +5625,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 51
 end
@@ -5845,7 +5634,6 @@ y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 52
 end
@@ -5855,25 +5643,21 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 55
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 56
 end
@@ -5883,7 +5667,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 57
 end
@@ -5975,13 +5758,11 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 9
 end
@@ -5991,7 +5772,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 10
 end
@@ -6213,7 +5993,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 53
 end
@@ -6223,7 +6002,6 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 54
 end
@@ -6233,7 +6011,6 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 15
 y 55
 end
@@ -6338,7 +6115,7 @@ end
 arch door_1
 x 16
 y 9
-no_pass 0
+move_block 0
 end
 arch istone
 x 16
@@ -6347,7 +6124,7 @@ end
 arch door_1
 x 16
 y 10
-no_pass 0
+move_block 0
 end
 arch istone
 x 16
@@ -6544,7 +6321,7 @@ end
 arch door_1
 x 16
 y 53
-no_pass 0
+move_block 0
 end
 arch istone
 x 16
@@ -6553,7 +6330,7 @@ end
 arch door_1
 x 16
 y 54
-no_pass 0
+move_block 0
 end
 arch istone
 x 16
@@ -7951,10 +7728,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -7962,10 +7738,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -7973,10 +7748,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -7984,10 +7758,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 24
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -7995,10 +7768,9 @@ y 24
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 25
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8006,10 +7778,9 @@ y 25
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 26
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8017,10 +7788,9 @@ y 26
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 27
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8028,10 +7798,9 @@ y 27
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 28
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8039,10 +7808,9 @@ y 28
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 29
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8050,10 +7818,9 @@ y 29
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 30
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8061,10 +7828,9 @@ y 30
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 31
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8072,10 +7838,9 @@ y 31
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 32
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8083,10 +7848,9 @@ y 32
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 33
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8094,10 +7858,9 @@ y 33
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 34
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8105,10 +7868,9 @@ y 34
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 35
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8116,10 +7878,9 @@ y 35
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 36
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8127,10 +7888,9 @@ y 36
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 37
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8138,10 +7898,9 @@ y 37
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 38
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8149,10 +7908,9 @@ y 38
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 39
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8160,10 +7918,9 @@ y 39
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8171,10 +7928,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8182,10 +7938,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 21
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 21
@@ -8403,10 +8158,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8414,10 +8168,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8429,10 +8182,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8440,10 +8192,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 24
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8451,10 +8202,9 @@ y 24
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 25
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8462,10 +8212,9 @@ y 25
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 26
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8473,10 +8222,9 @@ y 26
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 27
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8484,10 +8232,9 @@ y 27
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 28
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8499,10 +8246,9 @@ y 28
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 29
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8510,10 +8256,9 @@ y 29
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 30
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8521,10 +8266,9 @@ y 30
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 31
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8532,10 +8276,9 @@ y 31
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 32
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8543,10 +8286,9 @@ y 32
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 33
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8554,10 +8296,9 @@ y 33
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 34
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8565,10 +8306,9 @@ y 34
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 35
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8576,10 +8316,9 @@ y 35
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 36
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8587,10 +8326,9 @@ y 36
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 37
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8598,10 +8336,9 @@ y 37
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 38
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8609,10 +8346,9 @@ y 38
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 39
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8620,10 +8356,9 @@ y 39
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8631,10 +8366,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8642,10 +8376,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 22
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 22
@@ -8867,10 +8600,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8878,10 +8610,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8889,10 +8620,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8900,10 +8630,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 24
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8911,10 +8640,9 @@ y 24
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 25
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8922,10 +8650,9 @@ y 25
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 26
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8933,10 +8660,9 @@ y 26
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 27
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8944,10 +8670,9 @@ y 27
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 28
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8955,10 +8680,9 @@ y 28
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 29
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8966,10 +8690,9 @@ y 29
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 30
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8977,10 +8700,9 @@ y 30
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 31
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8988,10 +8710,9 @@ y 31
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 32
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -8999,10 +8720,9 @@ y 32
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 33
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -9010,10 +8730,9 @@ y 33
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 34
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -9021,10 +8740,9 @@ y 34
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 35
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -9032,10 +8750,9 @@ y 35
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 36
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -9043,10 +8760,9 @@ y 36
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 37
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -9054,10 +8770,9 @@ y 37
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 38
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -9065,10 +8780,9 @@ y 38
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 39
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -9076,10 +8790,9 @@ y 39
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -9087,10 +8800,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -9098,10 +8810,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 23
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 23
@@ -9327,10 +9038,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 24
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 24
@@ -9338,10 +9048,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 24
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 24
@@ -9349,10 +9058,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 24
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 24
@@ -9364,7 +9072,6 @@ y 24
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 24
 y 24
 blocksview 0
@@ -9375,7 +9082,6 @@ y 25
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 25
 blocksview 0
@@ -9386,7 +9092,6 @@ y 26
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 26
 blocksview 0
@@ -9417,7 +9122,6 @@ y 30
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 30
 blocksview 0
@@ -9428,7 +9132,6 @@ y 31
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 31
 blocksview 0
@@ -9439,7 +9142,6 @@ y 32
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 32
 blocksview 0
@@ -9450,7 +9152,6 @@ y 33
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 33
 blocksview 0
@@ -9461,7 +9162,6 @@ y 34
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 34
 blocksview 0
@@ -9472,7 +9172,6 @@ y 35
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 35
 blocksview 0
@@ -9483,7 +9182,6 @@ y 36
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 36
 blocksview 0
@@ -9494,7 +9192,6 @@ y 37
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 37
 blocksview 0
@@ -9505,7 +9202,6 @@ y 38
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 24
 y 38
 blocksview 0
@@ -9516,17 +9212,15 @@ y 39
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 24
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 24
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 24
@@ -9534,10 +9228,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 24
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 24
@@ -9545,10 +9238,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 24
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 24
@@ -9766,10 +9458,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 25
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 25
@@ -9777,10 +9468,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 25
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 25
@@ -9788,10 +9478,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 25
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 25
@@ -9803,7 +9492,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 25
 y 24
 blocksview 0
@@ -9826,7 +9514,6 @@ y 27
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 25
 y 27
 blocksview 0
@@ -9848,10 +9535,9 @@ y 28
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 25
 y 28
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch istone
@@ -9860,7 +9546,6 @@ y 29
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 25
 y 29
 blocksview 0
@@ -9931,17 +9616,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 25
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 25
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 25
@@ -9949,10 +9632,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 25
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 25
@@ -9960,10 +9642,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 25
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 25
@@ -10189,10 +9870,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 26
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 26
@@ -10200,10 +9880,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 26
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 26
@@ -10211,10 +9890,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 26
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 26
@@ -10226,7 +9904,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 26
 y 24
 blocksview 0
@@ -10349,17 +10026,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 26
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 26
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 26
@@ -10367,10 +10042,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 26
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 26
@@ -10378,10 +10052,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 26
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 26
@@ -10595,10 +10268,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 27
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 27
@@ -10606,10 +10278,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 27
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 27
@@ -10617,10 +10288,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 27
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 27
@@ -10632,7 +10302,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 27
 y 24
 blocksview 0
@@ -10655,13 +10324,11 @@ y 26
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 27
 y 27
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 27
 y 28
 end
@@ -10671,7 +10338,6 @@ y 28
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 27
 y 29
 end
@@ -10681,19 +10347,16 @@ y 29
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 27
 y 30
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 27
 y 31
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 27
 y 32
 end
@@ -10703,25 +10366,21 @@ y 32
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 27
 y 33
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 27
 y 34
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 27
 y 35
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 27
 y 36
 end
@@ -10747,17 +10406,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 27
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 27
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 27
@@ -10765,10 +10422,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 27
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 27
@@ -10776,10 +10432,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 27
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 27
@@ -11005,10 +10660,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 28
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 28
@@ -11016,10 +10670,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 28
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 28
@@ -11027,10 +10680,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 28
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 28
@@ -11042,7 +10694,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 28
 y 24
 blocksview 0
@@ -11061,7 +10712,6 @@ y 26
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 28
 y 27
 end
@@ -11071,7 +10721,6 @@ y 27
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 28
 y 28
 end
@@ -11081,7 +10730,6 @@ y 28
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 28
 y 29
 end
@@ -11091,7 +10739,6 @@ y 29
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 28
 y 30
 end
@@ -11101,37 +10748,31 @@ y 30
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 28
 y 31
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 28
 y 32
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 28
 y 33
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 28
 y 34
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 28
 y 35
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 28
 y 36
 end
@@ -11153,17 +10794,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 28
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 28
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 28
@@ -11171,10 +10810,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 28
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 28
@@ -11182,10 +10820,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 28
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 28
@@ -11423,10 +11060,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 29
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 29
@@ -11434,10 +11070,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 29
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 29
@@ -11445,10 +11080,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 29
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 29
@@ -11460,7 +11094,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 29
 y 24
 blocksview 0
@@ -11483,7 +11116,6 @@ y 26
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 29
 y 27
 end
@@ -11493,7 +11125,6 @@ y 27
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 29
 y 28
 end
@@ -11507,7 +11138,6 @@ y 28
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 29
 y 29
 end
@@ -11517,7 +11147,6 @@ y 29
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 29
 y 30
 end
@@ -11527,37 +11156,31 @@ y 30
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 29
 y 31
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 29
 y 32
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 29
 y 33
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 29
 y 34
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 29
 y 35
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 29
 y 36
 end
@@ -11588,17 +11211,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 29
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 29
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 29
@@ -11606,10 +11227,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 29
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 29
@@ -11617,10 +11237,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 29
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 29
@@ -11674,11 +11293,15 @@ arch cwall_1_2
 x 29
 y 51
 end
+arch swall_1_1_half
+x 29
+y 51
+end
 arch flagstone
 x 29
 y 52
 end
-arch swall_1_1
+arch swall_2_1_1
 x 29
 y 52
 end
@@ -11694,11 +11317,15 @@ arch flagstone
 x 29
 y 54
 end
-arch swall_1_2
+arch swall_2_1_1
 x 29
 y 54
 end
 arch istone
+x 29
+y 55
+end
+arch swall_1_2_half
 x 29
 y 55
 end
@@ -11862,10 +11489,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 30
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 30
@@ -11873,10 +11499,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 30
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 30
@@ -11884,10 +11509,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 30
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 30
@@ -11899,7 +11523,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 30
 y 24
 blocksview 0
@@ -11922,7 +11545,6 @@ y 26
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 30
 y 27
 end
@@ -11932,7 +11554,6 @@ y 27
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 30
 y 28
 end
@@ -11942,7 +11563,6 @@ y 28
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 30
 y 29
 end
@@ -11952,7 +11572,6 @@ y 29
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 30
 y 30
 end
@@ -12026,17 +11645,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 30
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 30
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 30
@@ -12044,10 +11661,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 30
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 30
@@ -12055,10 +11671,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 30
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 30
@@ -12118,7 +11733,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 30
 y 51
 end
@@ -12128,7 +11742,6 @@ y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 30
 y 52
 end
@@ -12138,7 +11751,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 30
 y 53
 end
@@ -12148,7 +11760,6 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 30
 y 54
 end
@@ -12158,7 +11769,6 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 30
 y 55
 end
@@ -12299,6 +11909,10 @@ arch dungeon_floor
 x 31
 y 14
 end
+arch swall_1_4_half
+x 31
+y 14
+end
 arch woodwall_1_2
 x 31
 y 14
@@ -12327,6 +11941,10 @@ arch dungeon_floor
 x 31
 y 18
 end
+arch swall_1_4_half
+x 31
+y 18
+end
 arch woodwall_1_1
 x 31
 y 18
@@ -12349,10 +11967,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 31
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 31
@@ -12360,10 +11977,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 31
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 31
@@ -12371,10 +11987,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 31
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 31
@@ -12386,7 +12001,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 31
 y 24
 blocksview 0
@@ -12405,7 +12019,6 @@ y 26
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 31
 y 27
 end
@@ -12415,7 +12028,6 @@ y 27
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 31
 y 28
 end
@@ -12425,7 +12037,6 @@ y 28
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 31
 y 29
 end
@@ -12435,7 +12046,6 @@ y 29
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 31
 y 30
 end
@@ -12517,10 +12127,9 @@ y 39
 end
 arch shallow_sea
 name water
-name_pl water
 x 31
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 31
@@ -12528,10 +12137,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 31
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 31
@@ -12539,10 +12147,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 31
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 31
@@ -12598,7 +12205,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 31
 y 51
 end
@@ -12608,7 +12214,6 @@ y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 31
 y 52
 end
@@ -12618,7 +12223,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 31
 y 53
 end
@@ -12628,7 +12232,6 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 31
 y 54
 end
@@ -12643,7 +12246,6 @@ connected 10021
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 31
 y 55
 end
@@ -12787,7 +12389,7 @@ arch dungeon_floor
 x 32
 y 14
 end
-arch swall_1_4
+arch swall_2_1_2
 x 32
 y 14
 end
@@ -12807,7 +12409,7 @@ arch dungeon_floor
 x 32
 y 18
 end
-arch swall_1_4
+arch swall_2_1_2
 x 32
 y 18
 end
@@ -12829,10 +12431,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 32
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 32
@@ -12840,10 +12441,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 32
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 32
@@ -12855,10 +12455,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 32
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 32
@@ -12870,7 +12469,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 32
 y 24
 blocksview 0
@@ -12889,25 +12487,21 @@ y 26
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 32
 y 27
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 32
 y 28
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 32
 y 29
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 32
 y 30
 end
@@ -12967,10 +12561,9 @@ y 39
 end
 arch shallow_sea
 name water
-name_pl water
 x 32
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 32
@@ -12978,10 +12571,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 32
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 32
@@ -12989,10 +12581,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 32
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 32
@@ -13056,7 +12647,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 32
 y 51
 end
@@ -13066,7 +12656,6 @@ y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 32
 y 52
 end
@@ -13076,7 +12665,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 32
 y 53
 end
@@ -13086,7 +12674,6 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 32
 y 54
 end
@@ -13101,7 +12688,6 @@ connected 10021
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 32
 y 55
 end
@@ -13232,7 +12818,7 @@ end
 arch door_2
 x 33
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 33
@@ -13304,10 +12890,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 33
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 33
@@ -13315,10 +12900,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 33
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 33
@@ -13326,10 +12910,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 33
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 33
@@ -13341,7 +12924,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 33
 y 24
 blocksview 0
@@ -13456,17 +13038,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 33
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 33
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 33
@@ -13474,10 +13054,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 33
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 33
@@ -13485,10 +13064,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 33
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 33
@@ -13544,7 +13122,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 33
 y 51
 end
@@ -13554,7 +13131,6 @@ y 51
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 33
 y 52
 end
@@ -13564,7 +13140,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 33
 y 53
 end
@@ -13574,7 +13149,6 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 33
 y 54
 end
@@ -13584,7 +13158,6 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 33
 y 55
 end
@@ -13755,10 +13328,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 34
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 34
@@ -13766,10 +13338,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 34
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 34
@@ -13777,10 +13348,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 34
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 34
@@ -13792,7 +13362,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 34
 y 24
 blocksview 0
@@ -13815,61 +13384,51 @@ y 26
 end
 arch afloor_right
 name floor
-name_pl floor
 x 34
 y 27
 end
 arch afloor_right
 name floor
-name_pl floor
 x 34
 y 28
 end
 arch afloor_right
 name floor
-name_pl floor
 x 34
 y 29
 end
 arch afloor_right
 name floor
-name_pl floor
 x 34
 y 30
 end
 arch afloor_right
 name floor
-name_pl floor
 x 34
 y 31
 end
 arch afloor_right
 name floor
-name_pl floor
 x 34
 y 32
 end
 arch afloor_right
 name floor
-name_pl floor
 x 34
 y 33
 end
 arch afloor_right
 name floor
-name_pl floor
 x 34
 y 34
 end
 arch afloor_right
 name floor
-name_pl floor
 x 34
 y 35
 end
 arch afloor_right
 name floor
-name_pl floor
 x 34
 y 36
 end
@@ -13895,17 +13454,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 34
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 34
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 34
@@ -13913,10 +13470,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 34
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 34
@@ -13924,10 +13480,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 34
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 34
@@ -13985,11 +13540,15 @@ arch cwall_1_2
 x 34
 y 51
 end
+arch swall_1_1_half
+x 34
+y 51
+end
 arch flagstone
 x 34
 y 52
 end
-arch swall_1_1
+arch swall_2_1_1
 x 34
 y 52
 end
@@ -14005,11 +13564,15 @@ arch flagstone
 x 34
 y 54
 end
-arch swall_1_2
+arch swall_2_1_1
 x 34
 y 54
 end
 arch istone
+x 34
+y 55
+end
+arch swall_1_2_half
 x 34
 y 55
 end
@@ -14189,10 +13752,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 35
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 35
@@ -14200,10 +13762,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 35
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 35
@@ -14211,10 +13772,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 35
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 35
@@ -14226,7 +13786,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 35
 y 24
 blocksview 0
@@ -14245,7 +13804,6 @@ y 26
 end
 arch afloor_right
 name floor
-name_pl floor
 x 35
 y 27
 end
@@ -14255,19 +13813,16 @@ y 27
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 28
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 29
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 30
 end
@@ -14277,25 +13832,21 @@ y 30
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 31
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 32
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 33
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 34
 end
@@ -14305,13 +13856,11 @@ y 34
 end
 arch afloor_left
 name floor
-name_pl floor
 x 35
 y 35
 end
 arch afloor_right
 name floor
-name_pl floor
 x 35
 y 36
 end
@@ -14333,17 +13882,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 35
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 35
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 35
@@ -14351,10 +13898,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 35
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 35
@@ -14362,10 +13908,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 35
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 35
@@ -14603,10 +14148,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 36
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 36
@@ -14614,10 +14158,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 36
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 36
@@ -14625,10 +14168,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 36
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 36
@@ -14640,7 +14182,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 36
 y 24
 blocksview 0
@@ -14663,61 +14204,51 @@ y 26
 end
 arch afloor_right
 name floor
-name_pl floor
 x 36
 y 27
 end
 arch afloor_right
 name floor
-name_pl floor
 x 36
 y 28
 end
 arch afloor_right
 name floor
-name_pl floor
 x 36
 y 29
 end
 arch afloor_right
 name floor
-name_pl floor
 x 36
 y 30
 end
 arch afloor_right
 name floor
-name_pl floor
 x 36
 y 31
 end
 arch afloor_right
 name floor
-name_pl floor
 x 36
 y 32
 end
 arch afloor_right
 name floor
-name_pl floor
 x 36
 y 33
 end
 arch afloor_right
 name floor
-name_pl floor
 x 36
 y 34
 end
 arch afloor_right
 name floor
-name_pl floor
 x 36
 y 35
 end
 arch afloor_right
 name floor
-name_pl floor
 x 36
 y 36
 end
@@ -14743,17 +14274,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 36
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 36
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 36
@@ -14761,10 +14290,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 36
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 36
@@ -14772,10 +14300,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 36
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 36
@@ -15033,10 +14560,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 37
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 37
@@ -15044,10 +14570,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 37
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 37
@@ -15055,10 +14580,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 37
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 37
@@ -15070,7 +14594,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 37
 y 24
 blocksview 0
@@ -15193,17 +14716,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 37
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 37
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 37
@@ -15211,10 +14732,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 37
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 37
@@ -15222,10 +14742,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 37
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 37
@@ -15455,10 +14974,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 38
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 38
@@ -15466,10 +14984,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 38
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 38
@@ -15477,10 +14994,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 38
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 38
@@ -15492,7 +15008,6 @@ y 24
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 38
 y 24
 blocksview 0
@@ -15591,17 +15106,15 @@ y 39
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 38
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 38
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 38
@@ -15609,10 +15122,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 38
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 38
@@ -15620,10 +15132,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 38
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 38
@@ -15869,10 +15380,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 39
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 39
@@ -15880,10 +15390,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 39
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 39
@@ -15891,10 +15400,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 39
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 39
@@ -15906,7 +15414,6 @@ y 24
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 39
 y 24
 blocksview 0
@@ -15917,7 +15424,6 @@ y 25
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 25
 blocksview 0
@@ -15928,7 +15434,6 @@ y 26
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 26
 blocksview 0
@@ -15939,7 +15444,6 @@ y 27
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 27
 blocksview 0
@@ -15950,7 +15454,6 @@ y 28
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 28
 blocksview 0
@@ -15961,7 +15464,6 @@ y 29
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 29
 blocksview 0
@@ -15972,7 +15474,6 @@ y 30
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 30
 blocksview 0
@@ -15983,7 +15484,6 @@ y 31
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 31
 blocksview 0
@@ -15994,7 +15494,6 @@ y 32
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 32
 blocksview 0
@@ -16005,7 +15504,6 @@ y 33
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 33
 blocksview 0
@@ -16016,7 +15514,6 @@ y 34
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 34
 blocksview 0
@@ -16027,7 +15524,6 @@ y 35
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 35
 blocksview 0
@@ -16038,7 +15534,6 @@ y 36
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 36
 blocksview 0
@@ -16049,7 +15544,6 @@ y 37
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 37
 blocksview 0
@@ -16060,7 +15554,6 @@ y 38
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 38
 blocksview 0
@@ -16071,17 +15564,15 @@ y 39
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 39
 y 39
 blocksview 0
 end
 arch shallow_sea
 name water
-name_pl water
 x 39
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 39
@@ -16089,10 +15580,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 39
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 39
@@ -16100,10 +15590,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 39
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 39
@@ -16337,10 +15826,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16348,10 +15836,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16359,10 +15846,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16370,10 +15856,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 24
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16381,10 +15866,9 @@ y 24
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 25
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16392,10 +15876,9 @@ y 25
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 26
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16403,10 +15886,9 @@ y 26
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 27
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16414,10 +15896,9 @@ y 27
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 28
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16425,10 +15906,9 @@ y 28
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 29
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16436,10 +15916,9 @@ y 29
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 30
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16447,10 +15926,9 @@ y 30
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 31
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16458,10 +15936,9 @@ y 31
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 32
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16469,10 +15946,9 @@ y 32
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 33
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16480,10 +15956,9 @@ y 33
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 34
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16491,10 +15966,9 @@ y 34
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 35
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16502,10 +15976,9 @@ y 35
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 36
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16513,10 +15986,9 @@ y 36
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 37
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16524,10 +15996,9 @@ y 37
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 38
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16535,10 +16006,9 @@ y 38
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 39
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16546,10 +16016,9 @@ y 39
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16557,10 +16026,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16568,10 +16036,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 40
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 40
@@ -16801,10 +16268,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16812,10 +16278,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16823,10 +16288,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16834,10 +16298,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 24
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16845,10 +16308,9 @@ y 24
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 25
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16856,10 +16318,9 @@ y 25
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 26
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16867,10 +16328,9 @@ y 26
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 27
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16878,10 +16338,9 @@ y 27
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 28
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16893,10 +16352,9 @@ y 28
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 29
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16904,10 +16362,9 @@ y 29
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 30
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16915,10 +16372,9 @@ y 30
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 31
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16926,10 +16382,9 @@ y 31
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 32
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16937,10 +16392,9 @@ y 32
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 33
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16948,10 +16402,9 @@ y 33
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 34
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16959,10 +16412,9 @@ y 34
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 35
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16970,10 +16422,9 @@ y 35
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 36
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16981,10 +16432,9 @@ y 36
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 37
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -16992,10 +16442,9 @@ y 37
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 38
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -17003,10 +16452,9 @@ y 38
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 39
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -17014,10 +16462,9 @@ y 39
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -17025,10 +16472,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -17036,10 +16482,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 41
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 41
@@ -17277,10 +16722,9 @@ y 20
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 21
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17288,10 +16732,9 @@ y 21
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 22
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17299,10 +16742,9 @@ y 22
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 23
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17310,10 +16752,9 @@ y 23
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 24
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17321,10 +16762,9 @@ y 24
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 25
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17332,10 +16772,9 @@ y 25
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 26
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17343,10 +16782,9 @@ y 26
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 27
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17354,10 +16792,9 @@ y 27
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 28
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17365,10 +16802,9 @@ y 28
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 29
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17376,10 +16812,9 @@ y 29
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 30
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17387,10 +16822,9 @@ y 30
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 31
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17398,10 +16832,9 @@ y 31
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 32
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17409,10 +16842,9 @@ y 32
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 33
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17420,10 +16852,9 @@ y 33
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 34
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17431,10 +16862,9 @@ y 34
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 35
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17442,10 +16872,9 @@ y 35
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 36
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17453,10 +16882,9 @@ y 36
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 37
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17468,10 +16896,9 @@ y 37
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 38
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17479,10 +16906,9 @@ y 38
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 39
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17490,10 +16916,9 @@ y 39
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 40
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17501,10 +16926,9 @@ y 40
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 41
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -17512,10 +16936,9 @@ y 41
 end
 arch shallow_sea
 name water
-name_pl water
 x 42
 y 42
-no_pass 0
+move_block 0
 end
 arch ice
 x 42
@@ -18322,7 +17745,7 @@ end
 arch door_2
 x 45
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 45
@@ -18678,7 +18101,7 @@ arch dungeon_floor
 x 46
 y 14
 end
-arch swall_1_3
+arch swall_2_1_2
 x 46
 y 14
 end
@@ -18698,7 +18121,7 @@ arch dungeon_floor
 x 46
 y 18
 end
-arch swall_1_3
+arch swall_2_1_2
 x 46
 y 18
 end
@@ -18971,7 +18394,7 @@ end
 arch door_1
 x 47
 y 9
-no_pass 0
+move_block 0
 end
 arch istone
 x 47
@@ -18980,7 +18403,7 @@ end
 arch door_1
 x 47
 y 10
-no_pass 0
+move_block 0
 end
 arch istone
 x 47
@@ -19014,6 +18437,10 @@ arch woodwall_1_2
 x 47
 y 14
 end
+arch swall_1_3_half
+x 47
+y 14
+end
 arch dungeon_floor
 x 47
 y 15
@@ -19039,6 +18466,10 @@ x 47
 y 18
 end
 arch woodwall_1_1
+x 47
+y 18
+end
+arch swall_1_3_half
 x 47
 y 18
 end
@@ -19310,19 +18741,16 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 48
 y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 48
 y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 48
 y 10
 end
@@ -19545,7 +18973,6 @@ connected 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 48
 y 53
 end
@@ -19564,7 +18991,6 @@ connected 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 48
 y 54
 end
@@ -19574,7 +19000,6 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 48
 y 55
 end
@@ -19662,7 +19087,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 49
 y 6
 end
@@ -19713,7 +19137,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 49
 y 12
 end
@@ -19926,7 +19349,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 49
 y 51
 end
@@ -19944,19 +19366,16 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 49
 y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 49
 y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 49
 y 55
 end
@@ -19975,7 +19394,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 49
 y 57
 end
@@ -20051,7 +19469,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 5
 end
@@ -20061,7 +19478,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 6
 end
@@ -20071,7 +19487,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 7
 end
@@ -20081,7 +19496,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 8
 end
@@ -20091,7 +19505,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 9
 end
@@ -20101,7 +19514,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 10
 end
@@ -20119,7 +19531,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 12
 end
@@ -20129,7 +19540,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 13
 end
@@ -20303,7 +19713,6 @@ y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 50
 end
@@ -20313,7 +19722,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 51
 end
@@ -20363,7 +19771,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 50
 y 57
 end
@@ -20431,7 +19838,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 4
 end
@@ -20441,7 +19847,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 5
 end
@@ -20451,7 +19856,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 6
 end
@@ -20461,7 +19865,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 7
 end
@@ -20471,19 +19874,16 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 10
 end
@@ -20497,7 +19897,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 12
 end
@@ -20507,7 +19906,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 13
 end
@@ -20517,7 +19915,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 14
 end
@@ -20678,7 +20075,6 @@ y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 49
 end
@@ -20688,7 +20084,6 @@ y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 50
 end
@@ -20698,7 +20093,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 51
 end
@@ -20716,7 +20110,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 53
 end
@@ -20729,7 +20122,6 @@ speed_left -0.860000
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 54
 end
@@ -20739,7 +20131,6 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 55
 end
@@ -20753,7 +20144,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 57
 end
@@ -20771,7 +20161,6 @@ y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 51
 y 59
 end
@@ -20831,7 +20220,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 52
 y 4
 end
@@ -20841,7 +20229,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 52
 y 5
 end
@@ -20851,7 +20238,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 52
 y 6
 end
@@ -21351,7 +20737,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 52
 y 53
 end
@@ -21361,13 +20746,11 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 52
 y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 52
 y 55
 end
@@ -21381,7 +20764,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 52
 y 57
 end
@@ -21453,7 +20835,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 3
 end
@@ -21467,7 +20848,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 4
 end
@@ -21477,7 +20857,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 5
 end
@@ -21487,7 +20866,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 6
 end
@@ -21505,7 +20883,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 8
 end
@@ -21515,13 +20892,11 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 10
 end
@@ -21539,7 +20914,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 12
 end
@@ -21549,7 +20923,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 13
 end
@@ -21567,7 +20940,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 15
 end
@@ -21582,7 +20954,7 @@ end
 arch door_2
 x 53
 y 16
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 53
@@ -21755,7 +21127,6 @@ speed 0.500000
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 48
 end
@@ -21769,13 +21140,11 @@ y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 50
 end
@@ -21785,7 +21154,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 51
 end
@@ -21799,7 +21167,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 53
 end
@@ -21809,13 +21176,11 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 55
 end
@@ -21836,7 +21201,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 57
 end
@@ -21857,13 +21221,11 @@ y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 59
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 53
 y 60
 end
@@ -21911,7 +21273,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 3
 end
@@ -21925,7 +21286,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 4
 end
@@ -21935,7 +21295,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 5
 end
@@ -21945,7 +21304,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 6
 end
@@ -21963,7 +21321,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 8
 end
@@ -21973,7 +21330,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 9
 end
@@ -21986,7 +21342,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 10
 end
@@ -22004,7 +21359,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 12
 end
@@ -22021,7 +21375,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 13
 end
@@ -22040,7 +21393,6 @@ speed 0.500000
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 15
 end
@@ -22055,7 +21407,7 @@ end
 arch door_2
 x 54
 y 16
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 54
@@ -22252,7 +21604,6 @@ speed 0.500000
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 48
 end
@@ -22262,19 +21613,16 @@ y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 51
 end
@@ -22336,7 +21684,6 @@ y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 59
 end
@@ -22346,7 +21693,6 @@ y 59
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 54
 y 60
 end
@@ -22390,7 +21736,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 3
 end
@@ -22404,7 +21749,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 4
 end
@@ -22414,7 +21758,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 5
 end
@@ -22424,7 +21767,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 6
 end
@@ -22442,7 +21784,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 8
 end
@@ -22452,7 +21793,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 9
 end
@@ -22462,7 +21802,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 10
 end
@@ -22480,7 +21819,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 12
 end
@@ -22490,7 +21828,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 13
 end
@@ -22508,7 +21845,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 15
 end
@@ -22775,24 +22111,21 @@ connected 1
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 48
 end
 arch fireplace
 x 55
 y 48
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 50
 end
@@ -22802,7 +22135,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 51
 end
@@ -22820,7 +22152,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 53
 end
@@ -22830,7 +22161,6 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 54
 end
@@ -22840,7 +22170,6 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 55
 end
@@ -22858,7 +22187,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 57
 end
@@ -22872,13 +22200,11 @@ y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 59
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 55
 y 60
 end
@@ -22930,7 +22256,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 56
 y 4
 end
@@ -22940,7 +22265,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 56
 y 5
 end
@@ -22950,7 +22274,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 56
 y 6
 end
@@ -23000,7 +22323,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 56
 y 12
 end
@@ -23010,7 +22332,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 56
 y 13
 end
@@ -23244,7 +22565,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 56
 y 57
 end
@@ -23316,7 +22636,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 4
 end
@@ -23326,7 +22645,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 5
 end
@@ -23336,7 +22654,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 6
 end
@@ -23346,7 +22663,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 7
 end
@@ -23356,7 +22672,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 8
 end
@@ -23366,7 +22681,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 9
 end
@@ -23376,7 +22690,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 10
 end
@@ -23386,7 +22699,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 11
 end
@@ -23396,7 +22708,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 12
 end
@@ -23406,7 +22717,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 13
 end
@@ -23416,7 +22726,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 14
 end
@@ -23574,7 +22883,6 @@ y 48
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 49
 end
@@ -23587,7 +22895,6 @@ y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 50
 end
@@ -23597,7 +22904,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 51
 end
@@ -23611,7 +22917,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 53
 end
@@ -23621,7 +22926,6 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 54
 end
@@ -23631,7 +22935,6 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 55
 end
@@ -23649,7 +22952,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 57
 end
@@ -23663,7 +22965,6 @@ y 58
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 57
 y 59
 end
@@ -23727,7 +23028,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 5
 end
@@ -23737,7 +23037,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 6
 end
@@ -23747,7 +23046,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 7
 end
@@ -23757,7 +23055,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 8
 end
@@ -23767,7 +23064,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 9
 end
@@ -23777,7 +23073,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 10
 end
@@ -23787,7 +23082,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 11
 end
@@ -23797,7 +23091,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 12
 end
@@ -23807,7 +23100,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 13
 end
@@ -23977,13 +23269,11 @@ y 49
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 51
 end
@@ -24029,7 +23319,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 58
 y 57
 end
@@ -24113,7 +23402,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 6
 end
@@ -24123,7 +23411,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 7
 end
@@ -24133,7 +23420,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 8
 end
@@ -24143,7 +23429,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 9
 end
@@ -24153,7 +23438,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 10
 end
@@ -24163,7 +23447,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 11
 end
@@ -24173,7 +23456,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 12
 end
@@ -24351,7 +23633,6 @@ y 50
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 51
 end
@@ -24365,7 +23646,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 53
 end
@@ -24375,13 +23655,11 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 55
 end
@@ -24395,7 +23673,6 @@ y 56
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 59
 y 57
 end
@@ -24487,7 +23764,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 60
 y 8
 end
@@ -24497,7 +23773,6 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 60
 y 9
 end
@@ -24507,7 +23782,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 60
 y 10
 end
@@ -24709,7 +23983,6 @@ y 52
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 60
 y 53
 end
@@ -24719,7 +23992,6 @@ y 53
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 60
 y 54
 end
@@ -24729,7 +24001,6 @@ y 54
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 60
 y 55
 end
