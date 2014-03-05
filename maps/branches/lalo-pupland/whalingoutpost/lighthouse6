@@ -1,13 +1,15 @@
 arch map
-name Frozen Lighthouse
+name Frozen Lighthouse, Level 6
 reset_timeout 7200
 difficulty 1
-width 32
-height 32
-enter_x 1
-enter_y 1
+region whalingoutpost
+width 17
+height 18
+enter_x 12
+enter_y 13
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2011-11-14 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -68,18 +70,16 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_2
@@ -92,10 +92,9 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_1_2
@@ -108,10 +107,9 @@ y 5
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -180,10 +178,9 @@ y 13
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_1
@@ -196,26 +193,23 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 1
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -232,10 +226,9 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -252,10 +245,9 @@ y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_4
@@ -268,10 +260,9 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -288,7 +279,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 7
 end
@@ -298,13 +288,11 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 9
 end
@@ -314,13 +302,11 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 2
 y 11
 end
@@ -350,10 +336,9 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_1
@@ -366,18 +351,16 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 2
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -398,10 +381,9 @@ y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_4
@@ -414,10 +396,9 @@ y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -438,7 +419,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 6
 end
@@ -448,7 +428,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 7
 end
@@ -458,7 +437,6 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 8
 end
@@ -468,19 +446,16 @@ y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 11
 end
@@ -490,7 +465,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 3
 y 12
 end
@@ -516,10 +490,9 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_1
@@ -532,10 +505,9 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 3
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -556,10 +528,9 @@ y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -580,7 +551,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 5
 end
@@ -590,7 +560,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 6
 end
@@ -600,7 +569,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 7
 end
@@ -610,7 +578,6 @@ y 7
 end
 arch afloor_left
 name floor
-name_pl floor
 x 4
 y 8
 end
@@ -620,7 +587,6 @@ y 8
 end
 arch afloor_right
 name floor
-name_pl floor
 x 4
 y 9
 end
@@ -630,7 +596,6 @@ y 9
 end
 arch afloor_right
 name floor
-name_pl floor
 x 4
 y 10
 end
@@ -640,13 +605,11 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 12
 end
@@ -656,7 +619,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 4
 y 13
 end
@@ -686,10 +648,9 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 4
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -718,13 +679,11 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 5
 end
@@ -734,7 +693,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 6
 end
@@ -744,7 +702,6 @@ y 6
 end
 arch afloor_left
 name floor
-name_pl floor
 x 5
 y 7
 end
@@ -754,7 +711,6 @@ y 7
 end
 arch afloor_left
 name floor
-name_pl floor
 x 5
 y 8
 end
@@ -764,7 +720,6 @@ y 8
 end
 arch afloor_right
 name floor
-name_pl floor
 x 5
 y 9
 end
@@ -774,7 +729,6 @@ y 9
 end
 arch afloor_right
 name floor
-name_pl floor
 x 5
 y 10
 end
@@ -784,7 +738,6 @@ y 10
 end
 arch afloor_right
 name floor
-name_pl floor
 x 5
 y 11
 end
@@ -794,19 +747,16 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 5
 y 14
 end
@@ -844,7 +794,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 3
 end
@@ -854,7 +803,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 4
 end
@@ -864,7 +812,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 5
 end
@@ -874,7 +821,6 @@ y 5
 end
 arch afloor_left
 name floor
-name_pl floor
 x 6
 y 6
 end
@@ -884,7 +830,6 @@ y 6
 end
 arch afloor_left
 name floor
-name_pl floor
 x 6
 y 7
 end
@@ -894,7 +839,6 @@ y 7
 end
 arch afloor_left
 name floor
-name_pl floor
 x 6
 y 8
 end
@@ -904,7 +848,6 @@ y 8
 end
 arch afloor_right
 name floor
-name_pl floor
 x 6
 y 9
 end
@@ -914,7 +857,6 @@ y 9
 end
 arch afloor_right
 name floor
-name_pl floor
 x 6
 y 10
 end
@@ -924,7 +866,6 @@ y 10
 end
 arch afloor_right
 name floor
-name_pl floor
 x 6
 y 11
 end
@@ -934,7 +875,6 @@ y 11
 end
 arch afloor_right
 name floor
-name_pl floor
 x 6
 y 12
 end
@@ -944,13 +884,11 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 14
 end
@@ -960,7 +898,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 6
 y 15
 end
@@ -986,7 +923,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 3
 end
@@ -996,7 +932,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 4
 end
@@ -1006,7 +941,6 @@ y 4
 end
 arch afloor_left
 name floor
-name_pl floor
 x 7
 y 5
 end
@@ -1016,7 +950,6 @@ y 5
 end
 arch afloor_left
 name floor
-name_pl floor
 x 7
 y 6
 end
@@ -1026,7 +959,6 @@ y 6
 end
 arch afloor_left
 name floor
-name_pl floor
 x 7
 y 7
 end
@@ -1036,7 +968,6 @@ y 7
 end
 arch afloor_left
 name floor
-name_pl floor
 x 7
 y 8
 end
@@ -1046,7 +977,6 @@ y 8
 end
 arch afloor_right
 name floor
-name_pl floor
 x 7
 y 9
 end
@@ -1056,7 +986,6 @@ y 9
 end
 arch afloor_right
 name floor
-name_pl floor
 x 7
 y 10
 end
@@ -1066,7 +995,6 @@ y 10
 end
 arch afloor_right
 name floor
-name_pl floor
 x 7
 y 11
 end
@@ -1076,7 +1004,6 @@ y 11
 end
 arch afloor_right
 name floor
-name_pl floor
 x 7
 y 12
 end
@@ -1086,7 +1013,6 @@ y 12
 end
 arch afloor_right
 name floor
-name_pl floor
 x 7
 y 13
 end
@@ -1096,13 +1022,11 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 7
 y 15
 end
@@ -1132,13 +1056,11 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 4
 end
@@ -1148,7 +1070,6 @@ y 4
 end
 arch afloor_left
 name floor
-name_pl floor
 x 8
 y 5
 end
@@ -1158,7 +1079,6 @@ y 5
 end
 arch afloor_left
 name floor
-name_pl floor
 x 8
 y 6
 end
@@ -1168,7 +1088,6 @@ y 6
 end
 arch afloor_left
 name floor
-name_pl floor
 x 8
 y 7
 end
@@ -1178,7 +1097,6 @@ y 7
 end
 arch afloor_left
 name floor
-name_pl floor
 x 8
 y 8
 end
@@ -1188,7 +1106,6 @@ y 8
 end
 arch afloor_right
 name floor
-name_pl floor
 x 8
 y 9
 end
@@ -1198,7 +1115,6 @@ y 9
 end
 arch afloor_left
 name floor
-name_pl floor
 x 8
 y 10
 end
@@ -1208,7 +1124,6 @@ y 10
 end
 arch afloor_left
 name floor
-name_pl floor
 x 8
 y 11
 end
@@ -1218,7 +1133,6 @@ y 11
 end
 arch afloor_left
 name floor
-name_pl floor
 x 8
 y 12
 end
@@ -1228,7 +1142,6 @@ y 12
 end
 arch afloor_left
 name floor
-name_pl floor
 x 8
 y 13
 end
@@ -1238,13 +1151,11 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 8
 y 15
 end
@@ -1278,7 +1189,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 3
 end
@@ -1288,7 +1198,6 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 4
 end
@@ -1298,7 +1207,6 @@ y 4
 end
 arch afloor_right
 name floor
-name_pl floor
 x 9
 y 5
 end
@@ -1308,7 +1216,6 @@ y 5
 end
 arch afloor_right
 name floor
-name_pl floor
 x 9
 y 6
 end
@@ -1318,7 +1225,6 @@ y 6
 end
 arch afloor_right
 name floor
-name_pl floor
 x 9
 y 7
 end
@@ -1328,7 +1234,6 @@ y 7
 end
 arch afloor_right
 name floor
-name_pl floor
 x 9
 y 8
 end
@@ -1338,7 +1243,6 @@ y 8
 end
 arch afloor_right
 name floor
-name_pl floor
 x 9
 y 9
 end
@@ -1348,7 +1252,6 @@ y 9
 end
 arch afloor_left
 name floor
-name_pl floor
 x 9
 y 10
 end
@@ -1358,7 +1261,6 @@ y 10
 end
 arch afloor_left
 name floor
-name_pl floor
 x 9
 y 11
 end
@@ -1368,7 +1270,6 @@ y 11
 end
 arch afloor_left
 name floor
-name_pl floor
 x 9
 y 12
 end
@@ -1378,7 +1279,6 @@ y 12
 end
 arch afloor_left
 name floor
-name_pl floor
 x 9
 y 13
 end
@@ -1388,13 +1288,11 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 9
 y 15
 end
@@ -1424,7 +1322,6 @@ y 2
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 3
 end
@@ -1434,13 +1331,11 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 5
 end
@@ -1450,7 +1345,6 @@ y 5
 end
 arch afloor_right
 name floor
-name_pl floor
 x 10
 y 6
 end
@@ -1460,7 +1354,6 @@ y 6
 end
 arch afloor_right
 name floor
-name_pl floor
 x 10
 y 7
 end
@@ -1470,7 +1363,6 @@ y 7
 end
 arch afloor_right
 name floor
-name_pl floor
 x 10
 y 8
 end
@@ -1480,7 +1372,6 @@ y 8
 end
 arch afloor_right
 name floor
-name_pl floor
 x 10
 y 9
 end
@@ -1490,7 +1381,6 @@ y 9
 end
 arch afloor_left
 name floor
-name_pl floor
 x 10
 y 10
 end
@@ -1500,7 +1390,6 @@ y 10
 end
 arch afloor_left
 name floor
-name_pl floor
 x 10
 y 11
 end
@@ -1510,7 +1399,6 @@ y 11
 end
 arch afloor_left
 name floor
-name_pl floor
 x 10
 y 12
 end
@@ -1520,7 +1408,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 13
 end
@@ -1530,7 +1417,6 @@ y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 14
 end
@@ -1540,7 +1426,6 @@ y 14
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 10
 y 15
 end
@@ -1578,19 +1463,16 @@ y 3
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 6
 end
@@ -1600,7 +1482,6 @@ y 6
 end
 arch afloor_right
 name floor
-name_pl floor
 x 11
 y 7
 end
@@ -1610,7 +1491,6 @@ y 7
 end
 arch afloor_right
 name floor
-name_pl floor
 x 11
 y 8
 end
@@ -1620,7 +1500,6 @@ y 8
 end
 arch afloor_right
 name floor
-name_pl floor
 x 11
 y 9
 end
@@ -1630,7 +1509,6 @@ y 9
 end
 arch afloor_left
 name floor
-name_pl floor
 x 11
 y 10
 end
@@ -1640,7 +1518,6 @@ y 10
 end
 arch afloor_left
 name floor
-name_pl floor
 x 11
 y 11
 end
@@ -1650,7 +1527,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 12
 end
@@ -1660,13 +1536,11 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 13
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 11
 y 14
 end
@@ -1708,10 +1582,9 @@ y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -1724,7 +1597,6 @@ y 4
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 5
 end
@@ -1734,7 +1606,6 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 6
 end
@@ -1744,13 +1615,11 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 7
 end
 arch afloor_right
 name floor
-name_pl floor
 x 12
 y 8
 end
@@ -1760,7 +1629,6 @@ y 8
 end
 arch afloor_right
 name floor
-name_pl floor
 x 12
 y 9
 end
@@ -1770,7 +1638,6 @@ y 9
 end
 arch afloor_left
 name floor
-name_pl floor
 x 12
 y 10
 end
@@ -1780,7 +1647,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 11
 end
@@ -1790,7 +1656,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 12
 end
@@ -1800,7 +1665,6 @@ y 12
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 12
 y 13
 end
@@ -1833,10 +1697,9 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 12
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -1857,10 +1720,9 @@ y 2
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_1
@@ -1873,10 +1735,9 @@ y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -1893,13 +1754,11 @@ y 5
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 7
 end
@@ -1909,25 +1768,21 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 11
 end
@@ -1937,7 +1792,6 @@ y 11
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 13
 y 12
 end
@@ -1967,10 +1821,9 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_4
@@ -1983,10 +1836,9 @@ y 16
 end
 arch blocked
 name nothing
-name_pl nothing
 x 13
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -1999,10 +1851,9 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -2019,10 +1870,9 @@ y 3
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_1
@@ -2035,10 +1885,9 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -2051,7 +1900,6 @@ y 6
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 7
 end
@@ -2061,13 +1909,11 @@ y 7
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 8
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 9
 end
@@ -2077,7 +1923,6 @@ y 9
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 10
 end
@@ -2087,7 +1932,6 @@ y 10
 end
 arch woodfloor2
 name woodfloor
-name_pl woodfloor
 x 14
 y 11
 end
@@ -2117,10 +1961,9 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_4
@@ -2133,18 +1976,16 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 14
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -2161,18 +2002,16 @@ y 1
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_3
@@ -2185,10 +2024,9 @@ y 4
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_1_2
@@ -2201,10 +2039,9 @@ y 5
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -2257,10 +2094,9 @@ y 13
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_4
@@ -2273,18 +2109,16 @@ y 14
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -2293,10 +2127,9 @@ y 15
 end
 arch blocked
 name nothing
-name_pl nothing
 x 15
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
