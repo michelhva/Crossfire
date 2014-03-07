@@ -1,19 +1,20 @@
 arch map
-name Ye Olde Shoppe of Transport
+name Wolfsburg's Ye Olde Shoppe of Transport
 reset_timeout 1800
 difficulty 110
 region wolfsburg
-shopitems amulet:95;ring:90;potion:90;book:85;scroll:90;spellbook:90;skillscroll:90;wand:90;rod:90;horn:95;*:0
+shopitems amulet:95;ring:90;potion:90;book:85;scroll:90;spellbook:90;skillscroll:90;wand:90;rod:90;*:0
 shopmin 100
 shopmax 2000000
 width 25
 height 25
 enter_x 17
-enter_y 21
+enter_y 22
 msg
 Created:  2007-04-08 Gene Alexander
-Modified: 2008-03-18 leaf
+Modified: 2012-04-01 Rick Tanner
 endmsg
+outdoor 1
 end
 arch dungeon_floor
 end
@@ -277,6 +278,10 @@ name barred window
 x 2
 y 10
 end
+arch light4
+x 2
+y 11
+end
 arch dungeon_magic
 x 2
 y 11
@@ -430,6 +435,10 @@ hp 49
 sp 35
 x 3
 y 3
+end
+arch light4
+x 3
+y 4
 end
 arch dungeon_magic
 x 3
@@ -659,6 +668,10 @@ x 4
 y 10
 level 120
 end
+arch light4
+x 4
+y 11
+end
 arch dungeon_magic
 x 4
 y 11
@@ -690,6 +703,10 @@ end
 arch shop_books
 x 4
 y 14
+end
+arch light4
+x 4
+y 15
 end
 arch shop_empty
 x 4
@@ -751,6 +768,10 @@ identified 1
 arch spell_town_portal
 end
 end
+arch light4
+x 4
+y 20
+end
 arch shop_empty
 x 4
 y 20
@@ -811,6 +832,10 @@ sp 18
 x 5
 y 3
 end
+arch light4
+x 5
+y 4
+end
 arch dungeon_magic
 x 5
 y 4
@@ -840,6 +865,10 @@ arch pentagram
 name Brest 5 Jade Coins
 x 5
 y 5
+end
+arch light4
+x 5
+y 6
 end
 arch woodfloor2
 x 5
@@ -925,6 +954,10 @@ end
 arch shop_empty
 x 5
 y 18
+end
+arch light4
+x 5
+y 19
 end
 arch shop_empty
 x 5
@@ -1160,6 +1193,10 @@ sp 46
 x 7
 y 3
 end
+arch light4
+x 7
+y 4
+end
 arch dungeon_magic
 x 7
 y 4
@@ -1228,6 +1265,10 @@ x 7
 y 10
 level 120
 end
+arch light4
+x 7
+y 11
+end
 arch dungeon_magic
 x 7
 y 11
@@ -1264,6 +1305,10 @@ arch shop_empty
 x 7
 y 15
 end
+arch light4
+x 7
+y 16
+end
 arch shop_empty
 x 7
 y 16
@@ -1287,6 +1332,10 @@ end
 arch shop_gems
 x 7
 y 21
+end
+arch light4
+x 7
+y 22
 end
 arch dungeon_magic
 x 7
@@ -1355,6 +1404,10 @@ end
 arch wall_1_2
 x 8
 y 5
+end
+arch light4
+x 8
+y 6
 end
 arch woodfloor2
 x 8
@@ -1550,6 +1603,10 @@ sp 46
 x 9
 y 3
 end
+arch light4
+x 9
+y 4
+end
 arch dungeon_magic
 x 9
 y 4
@@ -1650,6 +1707,10 @@ arch shop_empty
 x 9
 y 14
 end
+arch light4
+x 9
+y 15
+end
 arch shop_empty
 x 9
 y 15
@@ -1665,6 +1726,10 @@ end
 arch shop_empty
 x 9
 y 18
+end
+arch light4
+x 9
+y 19
 end
 arch shop_empty
 x 9
@@ -1924,10 +1989,6 @@ arch shop_empty
 x 10
 y 21
 end
-arch shop_empty
-x 10
-y 22
-end
 arch woodfloor2
 x 10
 y 22
@@ -1974,11 +2035,15 @@ y 3
 end
 arch teleporter
 name Nurnberg
-slaying /nurnberg/city
+slaying /pup_land/nurnberg/city
 hp 14
 sp 17
 x 11
 y 3
+end
+arch light4
+x 11
+y 4
 end
 arch dungeon_magic
 x 11
@@ -2037,6 +2102,10 @@ x 11
 y 6
 connected 12
 end
+arch light4
+x 11
+y 7
+end
 arch magic_mouth
 msg
 Please supply the Pup Land password for teleport to Nurnberg.
@@ -2076,6 +2145,10 @@ arch altar_sorig
 x 11
 y 10
 level 120
+end
+arch light4
+x 11
+y 11
 end
 arch dungeon_magic
 x 11
@@ -2201,10 +2274,6 @@ arch swall_2_1_1
 x 11
 y 21
 end
-arch shop_empty
-x 11
-y 22
-end
 arch woodfloor2
 x 11
 y 22
@@ -2279,7 +2348,7 @@ end
 arch magic_ear
 msg
 @match siegfried
-Swoosh
+Swoosh!
 endmsg
 x 12
 y 6
@@ -2308,9 +2377,7 @@ Information on using our teleporters
 ------------------------------
 1. Supply the proper payment.
 2. Step forward *quickly*.
-3. Apply the teleporter or wait a
-moment for the teleporter to
-activate.
+3. Apply the teleporter or wait a moment for the teleporter to activate.
 endmsg
 x 12
 y 8
@@ -2335,6 +2402,8 @@ arch altar_valkyrie
 x 12
 y 10
 level 120
+arch altar_valkyrie_pray_event
+end
 end
 arch dungeon_magic
 x 12
@@ -2423,10 +2492,6 @@ end
 arch woodfloor2
 x 12
 y 21
-end
-arch shop_empty
-x 12
-y 22
 end
 arch woodfloor2
 x 12
@@ -2479,6 +2544,10 @@ hp 28
 sp 11
 x 13
 y 3
+end
+arch light4
+x 13
+y 4
 end
 arch dungeon_magic
 x 13
@@ -2580,13 +2649,16 @@ y 13
 end
 arch platinum_converter
 name Holy symbol (120 platinum)
-name_pl Holy symbol (120 platinum)
 other_arch holy_symbol
 sp 1
 food 120
 x 13
 y 13
 end
+arch light4
+x 13
+y 14
+end
 arch dungeon_magic
 x 13
 y 14
@@ -2611,6 +2683,10 @@ arch woodfloor2
 x 13
 y 16
 end
+arch light4
+x 13
+y 17
+end
 arch dungeon_magic
 x 13
 y 17
@@ -2634,6 +2710,10 @@ end
 arch woodfloor2
 x 13
 y 19
+end
+arch light4
+x 13
+y 20
 end
 arch dungeon_magic
 x 13
@@ -2655,10 +2735,6 @@ arch altar_none
 x 13
 y 21
 level 1
-end
-arch shop_empty
-x 13
-y 22
 end
 arch woodfloor2
 x 13
@@ -2727,6 +2803,10 @@ arch woodfloor2
 x 14
 y 6
 end
+arch light4
+x 14
+y 7
+end
 arch woodfloor2
 x 14
 y 7
@@ -2767,10 +2847,6 @@ connected 1
 no_magic 1
 damned 1
 end
-arch shop_empty
-x 14
-y 12
-end
 arch woodfloor2
 x 14
 y 12
@@ -2778,10 +2854,6 @@ end
 arch wall_1_1
 x 14
 y 12
-end
-arch shop_empty
-x 14
-y 13
 end
 arch woodfloor2
 x 14
@@ -2791,10 +2863,6 @@ arch wall_3_2
 x 14
 y 13
 end
-arch shop_empty
-x 14
-y 14
-end
 arch woodfloor2
 x 14
 y 14
@@ -2802,10 +2870,6 @@ end
 arch wall_2_1_1
 x 14
 y 14
-end
-arch shop_empty
-x 14
-y 15
 end
 arch woodfloor2
 x 14
@@ -2815,10 +2879,6 @@ arch wall_2_1_1
 x 14
 y 15
 end
-arch shop_empty
-x 14
-y 16
-end
 arch woodfloor2
 x 14
 y 16
@@ -2826,10 +2886,6 @@ end
 arch wall_2_1_1
 x 14
 y 16
-end
-arch shop_empty
-x 14
-y 17
 end
 arch woodfloor2
 x 14
@@ -2839,10 +2895,6 @@ arch wall_2_1_1
 x 14
 y 17
 end
-arch shop_empty
-x 14
-y 18
-end
 arch woodfloor2
 x 14
 y 18
@@ -2850,10 +2902,6 @@ end
 arch wall_2_1_1
 x 14
 y 18
-end
-arch shop_empty
-x 14
-y 19
 end
 arch woodfloor2
 x 14
@@ -2863,10 +2911,6 @@ arch wall_2_1_1
 x 14
 y 19
 end
-arch shop_empty
-x 14
-y 20
-end
 arch woodfloor2
 x 14
 y 20
@@ -2875,10 +2919,6 @@ arch wall_2_1_1
 x 14
 y 20
 end
-arch shop_empty
-x 14
-y 21
-end
 arch woodfloor2
 x 14
 y 21
@@ -2886,10 +2926,6 @@ end
 arch wall_2_1_1
 x 14
 y 21
-end
-arch shop_empty
-x 14
-y 22
 end
 arch woodfloor2
 x 14
@@ -2937,11 +2973,15 @@ y 3
 end
 arch teleporter
 name Lone Town
-slaying /lone_town/town
+slaying /pup_land/lone_town/town
 hp 2
 sp 15
 x 15
 y 3
+end
+arch light4
+x 15
+y 4
 end
 arch dungeon_magic
 x 15
@@ -3021,10 +3061,6 @@ arch woodfloor2
 x 15
 y 11
 end
-arch shop_empty
-x 15
-y 12
-end
 arch woodfloor2
 x 15
 y 12
@@ -3073,6 +3109,10 @@ arch chair_2.4
 x 15
 y 17
 end
+arch light4
+x 15
+y 18
+end
 arch woodfloor2
 x 15
 y 18
@@ -3200,6 +3240,10 @@ arch woodfloor2
 x 16
 y 13
 end
+arch light4
+x 16
+y 14
+end
 arch woodfloor2
 x 16
 y 14
@@ -3228,6 +3272,11 @@ arch woodfloor2
 x 16
 y 20
 end
+arch button_small
+x 16
+y 21
+connected 13
+end
 arch woodfloor2
 x 16
 y 21
@@ -3243,7 +3292,13 @@ end
 arch dungeon_magic
 x 16
 y 23
-move_block all
+end
+arch invis_exit
+slaying /world/world_128_109
+hp 32
+sp 2
+x 16
+y 23
 end
 arch dungeon_floor
 x 16
@@ -3289,6 +3344,10 @@ sp 39
 x 17
 y 3
 end
+arch light4
+x 17
+y 4
+end
 arch dungeon_magic
 x 17
 y 4
@@ -3324,9 +3383,17 @@ arch woodfloor2
 x 17
 y 6
 end
+arch light4
+x 17
+y 7
+end
 arch woodfloor2
 x 17
 y 7
+end
+arch light4
+x 17
+y 8
 end
 arch woodfloor2
 x 17
@@ -3339,6 +3406,10 @@ end
 arch woodfloor2
 x 17
 y 10
+end
+arch light4
+x 17
+y 11
 end
 arch woodfloor2
 x 17
@@ -3380,28 +3451,39 @@ arch woodfloor2
 x 17
 y 20
 end
+arch button_small
+x 17
+y 21
+connected 13
+end
 arch woodfloor2
 x 17
 y 21
 end
+arch button_small
+x 17
+y 22
+connected 13
+end
 arch woodfloor2
 x 17
 y 22
 end
-arch oakdoor
-slaying /world/world_128_109
-msg
-Thank you for visiting.
-endmsg
-hp 32
-sp 2
+arch odoorn2_closed_1
 x 17
 y 22
+connected 13
 end
 arch dungeon_magic
 x 17
 y 23
-move_block all
+end
+arch invis_exit
+slaying /world/world_128_109
+hp 32
+sp 2
+x 17
+y 23
 end
 arch dungeon_floor
 x 17
@@ -3518,6 +3600,11 @@ arch woodfloor2
 x 18
 y 20
 end
+arch button_small
+x 18
+y 21
+connected 13
+end
 arch woodfloor2
 x 18
 y 21
@@ -3533,7 +3620,13 @@ end
 arch dungeon_magic
 x 18
 y 23
-move_block all
+end
+arch invis_exit
+slaying /world/world_128_109
+hp 32
+sp 2
+x 18
+y 23
 end
 arch dungeon_floor
 x 18
@@ -3578,6 +3671,10 @@ hp 18
 sp 24
 x 19
 y 3
+end
+arch light4
+x 19
+y 4
 end
 arch dungeon_magic
 x 19
@@ -3819,9 +3916,17 @@ arch woodfloor2
 x 20
 y 6
 end
+arch light4
+x 20
+y 7
+end
 arch woodfloor2
 x 20
 y 7
+end
+arch light4
+x 20
+y 8
 end
 arch woodfloor2
 x 20
@@ -3871,6 +3976,10 @@ arch woodfloor2
 x 20
 y 14
 end
+arch light4
+x 20
+y 15
+end
 arch woodfloor2
 x 20
 y 15
@@ -3894,7 +4003,7 @@ msg
 @match pirate
 I knows nothin' 'bout no pirates! Nothin' I says!
 @match *
-Welcome traveler. Teleports 're in th' rear. Travelin' spells and such as that 're in th' shop.
+Welcome traveler.  Teleports 're in th' rear.  Travelin' spells and such as that 're in th' shop.
 endmsg
 x 20
 y 18
@@ -3907,6 +4016,10 @@ end
 arch woodfloor2
 x 20
 y 19
+end
+arch light4
+x 20
+y 20
 end
 arch woodfloor2
 x 20
@@ -3967,6 +4080,10 @@ hp 5
 sp 17
 x 21
 y 3
+end
+arch light4
+x 21
+y 4
 end
 arch dungeon_magic
 x 21
@@ -4030,6 +4147,10 @@ end
 arch identify_table
 x 21
 y 10
+end
+arch light4
+x 21
+y 11
 end
 arch woodfloor2
 x 21
@@ -4187,6 +4308,10 @@ arch swall_2_1_1
 name barred window
 x 22
 y 10
+end
+arch light4
+x 22
+y 11
 end
 arch dungeon_magic
 x 22

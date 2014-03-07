@@ -1,11 +1,14 @@
 arch map
 name Undling's Hut
-difficulty 1
+difficulty 7
 region wolfsburg
 width 15
 height 16
-enter_x 3
+enter_x 2
 enter_y 3
+msg
+Modified: 2012-01-22 Rick Tanner
+endmsg
 end
 arch woodfloor
 y 1
@@ -105,7 +108,6 @@ y 2
 end
 arch exit
 slaying /world/world_128_108
-face oakdoor.111
 hp 19
 sp 30
 x 1
@@ -485,18 +487,18 @@ y 6
 end
 arch sage
 msg
-@match name|Name
-I am Undling
-@match job|Job
-I am a scholar
-@match scholar|Scholar
-I study the Underworld
-@match underworld|Underworld
-Pwill is the master of the underworld
-@match hello|Hello|hi|Hi
+@match name
+I am Undling.
+@match job
+I am a scholar.
+@match scholar
+I study the underworld.
+@match underworld
+Pwill is the master of the underworld.
+@match hello|hi
 Hello sonny!
 @match *
-I enjoy reading
+I enjoy reading.
 endmsg
 x 5
 y 6
@@ -736,6 +738,7 @@ hp 5
 sp 2
 x 7
 y 10
+is_animated 0
 end
 arch woodfloor
 x 7
@@ -938,13 +941,14 @@ x 9
 y 10
 end
 arch teleporter
-name woodfloor
+name wood floor
 slaying hut
 face woodfloor.111
 hp 7
 sp 6
 x 9
 y 10
+is_animated 0
 end
 arch woodfloor
 x 9

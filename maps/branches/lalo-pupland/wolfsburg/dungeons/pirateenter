@@ -1,13 +1,14 @@
 arch map
 name Seaside Tavern
-difficulty 1
+difficulty 7
 region wolfsburg
 width 27
 height 22
 enter_x 12
-enter_y 1
+enter_y 2
 msg
-Created:  1993-10-19
+Created:  1993-10-19 Ender
+Modified: 2012-03-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -738,10 +739,7 @@ end
 arch book_read
 name Scurvy Dog's Of the Sea
 msg
-This is the story of Bucaneer Bodingo,
-Lord of the Isle of Dread, Scourge of the
-Seven Seas, and the single most blood-thirsty
-pirate in history.
+This is the story of Buccaneer Bodingo, Lord of the Isle of Dread, Scourge of the Seven Seas, and the single most blood-thirsty pirate in history.
 endmsg
 x 5
 y 15
@@ -1240,7 +1238,7 @@ end
 arch sign_w
 name A sign on the wall
 msg
-Treasure
+Treasure.
 endmsg
 x 9
 y 6
@@ -1647,6 +1645,9 @@ arch swall_2_2_4
 x 11
 y 21
 end
+arch cobblestones2
+x 12
+end
 arch exit
 slaying /world/world_127_109
 face cobblesto1.111
@@ -1656,13 +1657,6 @@ x 12
 is_animated 0
 end
 arch cobblestones2
-msg
-This area and all areas which can be
-accessed through it are the creation
-of Ender.
-E-mail Questions and Comments to
-ende@hairball.ecst.csuchico.ed
-endmsg
 x 12
 y 1
 end
@@ -1777,6 +1771,10 @@ end
 arch cobblestones2
 x 12
 y 20
+end
+arch cobblestones2
+x 12
+y 21
 end
 arch exit
 slaying /world/world_127_109

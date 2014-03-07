@@ -1,11 +1,14 @@
 arch map
-name Castle of Magara
-difficulty 1
+name Castle of Magara, Entrance
+difficulty 17
 region wolfsburg
 width 49
 height 40
+enter_x 1
+enter_y 1
 msg
-Created:  1994-02-12
+Created:  1994-10-12
+Modified: 2012-01-22 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -253,11 +256,14 @@ arch cwall_2_1_2
 x 1
 end
 arch flagstone
+slaying /world/world_128_109
+hp 23
+sp 11
 x 1
 y 1
 end
-arch oakdoor
-slaying /world/world_128_109
+arch exit
+slaying ../../../world/world_128_109
 hp 23
 sp 11
 x 1
@@ -454,11 +460,7 @@ end
 arch sign
 name info
 msg
-This is a new version of the Castle
-of Magara. The outlook has been
-improved and some valuable treasure
-has been put in to make it more
-attractive. =)
+This is a new version of the Castle of Magara.  The outlook has been improved and some valuable treasure has been put in to make it more attractive. =)
 endmsg
 x 2
 y 1

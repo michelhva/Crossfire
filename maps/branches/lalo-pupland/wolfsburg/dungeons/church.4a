@@ -1,11 +1,14 @@
 arch map
-name Well to Catabombs
-difficulty 1
+name Well to Catabombs, Level 4a
+difficulty 14
 region wolfsburg
 width 36
 height 23
+enter_x 7
+enter_y 16
 msg
-Created:  1994-02-15
+Created:  1994-11-15
+Modified: 2012-01-20 Rick Tanner
 endmsg
 end
 arch blocked
@@ -152,7 +155,7 @@ y 7
 end
 arch magic_mouth
 msg
-A great sadness sweeps over you
+A great sadness sweeps over you.
 endmsg
 x 1
 y 8
@@ -426,7 +429,7 @@ arch dungeon_floor
 x 3
 y 16
 end
-arch cave_14
+arch dun32
 x 3
 y 16
 end
@@ -434,7 +437,7 @@ arch dungeon_floor
 x 3
 y 17
 end
-arch cave_11
+arch dun29
 x 3
 y 17
 end
@@ -733,7 +736,7 @@ y 6
 end
 arch magic_mouth
 msg
-You feel uneasy as you enter this room
+You feel uneasy as you enter this room.
 endmsg
 x 6
 y 7
@@ -830,7 +833,11 @@ arch dungeon_floor
 x 6
 y 22
 end
-arch dun6
+arch dungeon_floor
+x 6
+y 22
+end
+arch dun5
 x 6
 y 22
 end
@@ -931,18 +938,14 @@ arch dungeon_floor
 x 7
 y 21
 end
-arch oakdoor
-slaying church.4c
-hp 18
-sp 20
-x 7
-y 21
-end
 arch dungeon_floor
 x 7
 y 22
 end
-arch dun2
+arch oakdoor_2
+slaying church.4c
+hp 18
+sp 20
 x 7
 y 22
 end
@@ -998,9 +1001,7 @@ y 6
 end
 arch magic_mouth
 msg
-This room has the mustiness of a place that
-once saw death a long time ago. The furniture
-is sturdy but finely made
+This room has the mustiness of a place that once saw death a long time ago.  The furniture is sturdy but finely made.
 endmsg
 x 8
 y 7
@@ -1097,7 +1098,11 @@ arch dungeon_floor
 x 8
 y 22
 end
-arch dun12
+arch dungeon_floor
+x 8
+y 22
+end
+arch dun5
 x 8
 y 22
 end
@@ -1435,7 +1440,7 @@ arch dungeon_floor
 x 11
 y 16
 end
-arch cave_14
+arch dun32
 x 11
 y 16
 end
@@ -1443,7 +1448,7 @@ arch dungeon_floor
 x 11
 y 17
 end
-arch cave_11
+arch dun29
 x 11
 y 17
 end
@@ -2067,8 +2072,7 @@ y 10
 end
 arch magic_mouth
 msg
-The smell of death is sharp like a knife blade
-in this room
+The smell of death is sharp like a knife blade in this room.
 endmsg
 x 16
 y 11
@@ -4135,21 +4139,7 @@ arch dungeon_floor
 x 33
 y 16
 end
-arch oakdoor
-slaying church.4b
-hp 1
-sp 16
-x 33
-y 16
-end
 arch dungeon_floor
-x 33
-y 17
-end
-arch oakdoor
-slaying church.4b
-hp 1
-sp 17
 x 33
 y 17
 end
@@ -4172,13 +4162,6 @@ arch dun2
 x 34
 end
 arch dungeon_floor
-x 34
-y 1
-end
-arch oakdoor
-slaying church.4b
-hp 1
-sp 1
 x 34
 y 1
 end
@@ -4290,7 +4273,11 @@ arch dungeon_floor
 x 34
 y 15
 end
-arch dun14
+arch dungeon_floor
+x 34
+y 15
+end
+arch dun12
 x 34
 y 15
 end
@@ -4298,7 +4285,10 @@ arch dungeon_floor
 x 34
 y 16
 end
-arch dun3
+arch oakdoor_1
+slaying church.4b
+hp 1
+sp 16
 x 34
 y 16
 end
@@ -4306,7 +4296,10 @@ arch dungeon_floor
 x 34
 y 17
 end
-arch dun3
+arch oakdoor_1
+slaying church.4b
+hp 1
+sp 17
 x 34
 y 17
 end
@@ -4325,14 +4318,20 @@ end
 arch dungeon_floor
 x 35
 end
-arch dun9
+arch dungeon_floor
+x 35
+end
+arch dun7
 x 35
 end
 arch dungeon_floor
 x 35
 y 1
 end
-arch dun11
+arch oakdoor_1
+slaying church.4b
+hp 1
+sp 1
 x 35
 y 1
 end

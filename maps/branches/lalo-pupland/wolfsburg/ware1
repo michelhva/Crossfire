@@ -1,15 +1,18 @@
 arch map
 name Warehouse
-difficulty 1
+difficulty 9
 region wolfsburg
 width 35
 height 35
 enter_x 1
 enter_y 1
+msg
+Modified: 2008-12-02 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
-arch wwall_2_2_2
+arch wwall_1_1
 end
 arch woodfloor
 y 1
@@ -218,18 +221,14 @@ end
 arch woodfloor
 x 1
 end
-arch wwall_2_1_2
-x 1
-end
-arch woodfloor
-x 1
-y 1
-end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_128_109
 hp 16
 sp 2
 x 1
+end
+arch woodfloor
+x 1
 y 1
 end
 arch woodfloor
@@ -423,7 +422,7 @@ end
 arch woodfloor
 x 2
 end
-arch wwall_3_3
+arch wwall_2_2_2
 x 2
 end
 arch woodfloor
@@ -5928,7 +5927,7 @@ end
 arch wwall_2_1_2
 x 33
 y 6
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 33
@@ -5977,7 +5976,7 @@ end
 arch wwall_2_1_2
 x 33
 y 17
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 33
@@ -6018,7 +6017,7 @@ end
 arch wwall_2_1_2
 x 33
 y 26
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 33

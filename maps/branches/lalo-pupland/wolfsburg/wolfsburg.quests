@@ -1,0 +1,112 @@
+quest wolfsburg/Lursendis
+title Lursendis's unforgettable banquet
+face caramel.111
+description
+Lursendis, a gourmet, wants to eat a caramel by his great friend Farnass the cook.
+end_description
+restart 1
+step 10
+description
+I need to find where Farnass, the Recipe Spellcrafter, lives.
+
+According to Lursendis, he lives in Scorn or some island around.
+end_description
+end_step
+step 40
+description
+I need to find 2 ingredients for Farnass:
+- 4 eggs from Sentrio's farm
+- one blue mushroom
+end_description
+end_step
+step 70
+description
+I have the caramel, I need to bring it back to Lursendis.
+end_description
+end_step
+step 100
+finishes_quest
+description
+Lursendis is happy, the caramel was really good.
+end_description
+end_step
+end_quest
+
+quest wolfsburg/Heimser
+title Heimser's experiments
+face cauldron.111
+description
+Heimser is making experiments related to magical crystals.
+end_description
+step 10
+description
+Heimser seems to have a laboratory hidden in his hut, I should ask him what this is about.
+end_description
+end_step
+step 20
+description
+Heimser needs 10 mithril crystals for some recipe.
+end_description
+end_step
+step 30
+description
+I brought back the crystals, but Heimser doesn't remember if they should be melted or broken, and asked me to go check with his friend Lordil in Navar's university.
+end_description
+end_step
+step 40
+description
+I have Lordil's reply, I should tell it to Heimser.
+end_description
+end_step
+step 50
+finishes_quest
+description
+Heimser rewarded me.
+end_description
+end_step
+end_quest
+
+quest wolfsburg/treasure-island
+title The Treasure Island
+face biggalleon.x11
+description
+Find the key to a hidden treasure on an island.
+end_description
+step 10
+description
+I found what claims to be a treasure island, but I don't know how to claim that treasure. I should investigate in Wolfsburg.
+end_description
+end_step
+step 20
+description
+I should talk to Long John Silver, in the Eternal reward taven.
+end_description
+end_step
+step 30
+description
+Long John Silver gave me the key to his den, which contains a map he needs. The den is located on some island I can reach in boat from Wolfsburg.
+end_description
+end_step
+step 40
+description
+I have Long John Silver's map, I should go talk to him.
+end_description
+end_step
+step 50
+description
+I must go find the magic shovel. Long John Silver made me a map, and a gallion from Wolfsburg should be able to transport me to that island.
+end_description
+end_step
+step 60
+description
+I have the magic shovel, I can now go claim the treasure on the island.
+end_description
+end_step
+step 70
+finishes_quest
+description
+I claimed the treasure.
+end_description
+end_step
+end_quest
+

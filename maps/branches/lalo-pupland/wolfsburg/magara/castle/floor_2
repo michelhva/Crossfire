@@ -1,9 +1,14 @@
 arch map
-name Castle of Magara
-difficulty 1
+name Castle of Magara, 2nd Floor
+difficulty 20
 region wolfsburg
 width 30
 height 30
+enter_x 27
+enter_y 12
+msg
+Modified: 2012-01-22 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
@@ -4831,8 +4836,7 @@ y 17
 end
 arch sign_w
 msg
-Beware! Try to kill those creatures
-from distance
+Beware! Try to kill those creatures from distance!!
 endmsg
 x 24
 y 17

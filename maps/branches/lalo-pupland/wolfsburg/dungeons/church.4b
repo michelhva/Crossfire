@@ -1,21 +1,29 @@
 arch map
-name Well to Catabombs
-difficulty 1
+name Well to Catabombs, Level 4b
+difficulty 14
 region wolfsburg
 width 30
 height 30
+enter_x 1
+enter_y 1
 msg
-Created:  1994-02-15
+Created:  1994-11-15
+Modified: 2012-03-30 Rick Tanner
 endmsg
 end
 arch dungeon_floor
 end
-arch dun11
+arch dungeon_floor
+end
+arch dun6
 end
 arch dungeon_floor
 y 1
 end
-arch dun3
+arch oakdoor_1
+slaying church.4a
+hp 34
+sp 1
 y 1
 end
 arch dungeon_floor
@@ -78,16 +86,46 @@ end
 arch dun3
 y 14
 end
-arch dun3
+arch dungeon_magic
 y 15
 end
-arch dun3
+arch dungeon_floor
+y 15
+end
+arch dun5
+y 15
+end
+arch dungeon_magic
 y 16
 end
-arch dun3
+arch dungeon_floor
+y 16
+end
+arch oakdoor_1
+slaying church.4a
+hp 33
+sp 16
+y 16
+end
+arch dungeon_magic
 y 17
 end
-arch dun3
+arch dungeon_floor
+y 17
+end
+arch oakdoor_1
+slaying church.4a
+hp 33
+sp 17
+y 17
+end
+arch dungeon_magic
+y 18
+end
+arch dungeon_floor
+y 18
+end
+arch dun8
 y 18
 end
 arch dun3
@@ -124,13 +162,6 @@ arch dun2
 x 1
 end
 arch dungeon_floor
-x 1
-y 1
-end
-arch oakdoor
-slaying church.4a
-hp 34
-sp 1
 x 1
 y 1
 end
@@ -238,25 +269,11 @@ arch dungeon_floor
 x 1
 y 16
 end
-arch oakdoor
-slaying church.4a
-hp 33
-sp 16
-x 1
-y 16
-end
 arch dungeon_magic
 x 1
 y 17
 end
 arch dungeon_floor
-x 1
-y 17
-end
-arch oakdoor
-slaying church.4a
-hp 33
-sp 17
 x 1
 y 17
 end
@@ -1205,20 +1222,13 @@ arch giant
 name Strom The Wise
 msg
 @match hi|hello
-Greetings travellers. What knowledge do
-you seek ?
+Greetings travellers.  What knowledge do you seek?
 @match danger
-There are many dangers. The deeper you
-travel the worse it becomes. Don't
-wander into the caverns, they are full
-of hungry mouths.
-@match Veloria|veloria
-Beware their pet dragon. Although they
-are all dead, their pet is not. Just
-because they are dead, do not assume
-they are no longer here...
+There are many dangers.  The deeper you travel the worse it becomes.  Don't wander into the caverns, they are full of hungry mouths.
+@match veloria
+Beware their pet dragon.  Although they are all dead, their pet is not.  Just because they are dead, do not assume they are no longer here...
 @match bonesway
-The bonesway is the graveyard
+The bonesway is the graveyard.
 endmsg
 x 6
 y 15
@@ -5559,7 +5569,11 @@ arch dungeon_floor
 x 26
 y 29
 end
-arch dun13
+arch dungeon_floor
+x 26
+y 29
+end
+arch dun12
 x 26
 y 29
 end
@@ -5681,18 +5695,14 @@ arch dungeon_floor
 x 27
 y 28
 end
-arch oakdoor
-slaying church.4d
-hp 60
-sp 12
-x 27
-y 28
-end
 arch dungeon_floor
 x 27
 y 29
 end
-arch dun2
+arch oakdoor_2
+slaying church.4d
+hp 60
+sp 12
 x 27
 y 29
 end
@@ -5814,18 +5824,14 @@ arch dungeon_floor
 x 28
 y 28
 end
-arch oakdoor
-slaying church.4d
-hp 61
-sp 12
-x 28
-y 28
-end
 arch dungeon_floor
 x 28
 y 29
 end
-arch dun2
+arch oakdoor_2
+slaying church.4d
+hp 61
+sp 12
 x 28
 y 29
 end
@@ -6063,7 +6069,15 @@ arch dungeon_floor
 x 29
 y 29
 end
-arch dun2
+arch dungeon_magic
+x 29
+y 29
+end
+arch dungeon_floor
+x 29
+y 29
+end
+arch dun5
 x 29
 y 29
 end

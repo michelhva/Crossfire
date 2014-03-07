@@ -1,11 +1,14 @@
 arch map
-name Castle of Magara
-difficulty 1
+name Castle of Magara, Cellar
+difficulty 22
 region wolfsburg
 width 30
 height 30
+enter_x 28
+enter_y 1
 msg
-Created:  2000-02-21
+Created:  2000-05-21
+Modified: 2008-12-13 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -59,6 +62,9 @@ y 8
 end
 arch cave3
 y 8
+end
+arch small_stones
+y 9
 end
 arch cave3
 y 9
@@ -3509,11 +3515,19 @@ arch cave2
 x 17
 y 3
 end
-arch blocked
+arch small_stones
 x 17
 y 4
 end
-arch blocked
+arch cave_15
+x 17
+y 4
+end
+arch small_stones
+x 17
+y 5
+end
+arch cave_15
 x 17
 y 5
 end
@@ -3723,11 +3737,19 @@ arch cave2
 x 18
 y 3
 end
-arch blocked
+arch small_stones
 x 18
 y 4
 end
-arch blocked
+arch cave_15
+x 18
+y 4
+end
+arch small_stones
+x 18
+y 5
+end
+arch cave_15
 x 18
 y 5
 end
@@ -3945,11 +3967,19 @@ arch cave2
 x 19
 y 3
 end
-arch blocked
+arch small_stones
 x 19
 y 4
 end
-arch blocked
+arch cave_15
+x 19
+y 4
+end
+arch small_stones
+x 19
+y 5
+end
+arch cave_15
 x 19
 y 5
 end
