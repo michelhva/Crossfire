@@ -1,12 +1,14 @@
 arch map
-name Well to Catabombs
-difficulty 1
+name Well to Catabombs, Level 4d
+difficulty 18
 region wolfsburg
 width 63
 height 33
+enter_x 60
+enter_y 12
 msg
-Created:  1994-02-15
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1994-11-15
+Modified: 2012-03-30 Rick Tanner
 endmsg
 end
 arch blocked
@@ -5989,8 +5991,7 @@ y 29
 end
 arch magic_mouth
 msg
-A small village has been built in what
-was once a great meeting hall
+A small village has been built in what was once a great meeting hall.
 endmsg
 x 41
 y 30
@@ -6006,8 +6007,7 @@ connected 2
 end
 arch magic_mouth
 msg
-A small village has been built in what
-was once a great meeting hall
+A small village has been built in what was once a great meeting hall.
 endmsg
 x 41
 y 31
@@ -8198,7 +8198,11 @@ arch flagstone
 x 59
 y 11
 end
-arch dun11
+arch flagstone
+x 59
+y 11
+end
+arch dun8
 x 59
 y 11
 end
@@ -8366,19 +8370,15 @@ arch flagstone
 x 60
 y 11
 end
-arch dun2
-x 60
-y 11
-end
-arch flagstone
-x 60
-y 12
-end
-arch oakdoor
+arch oakdoor_2
 slaying church.4b
 hp 27
 sp 28
 x 60
+y 11
+end
+arch flagstone
+x 60
 y 12
 end
 arch flagstone
@@ -8473,19 +8473,15 @@ arch flagstone
 x 61
 y 11
 end
-arch dun2
-x 61
-y 11
-end
-arch flagstone
-x 61
-y 12
-end
-arch oakdoor
+arch oakdoor_2
 slaying church.4b
 hp 28
 sp 28
 x 61
+y 11
+end
+arch flagstone
+x 61
 y 12
 end
 arch flagstone
@@ -8580,7 +8576,11 @@ arch flagstone
 x 62
 y 11
 end
-arch dun16
+arch flagstone
+x 62
+y 11
+end
+arch dun8
 x 62
 y 11
 end

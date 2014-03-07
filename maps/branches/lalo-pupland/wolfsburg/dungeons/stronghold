@@ -1,6 +1,6 @@
 arch map
 name Captain Connor's Stronghold
-difficulty 1
+difficulty 8
 region wolfsburg
 width 35
 height 25
@@ -8,6 +8,7 @@ enter_x 1
 enter_y 23
 msg
 Created:  1993-10-14
+Modified: 2012-03-16 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -155,7 +156,7 @@ end
 arch dungeon_floor
 y 24
 end
-arch bwall_2_2_1
+arch bwall_1_2
 y 24
 end
 arch dungeon_floor
@@ -294,18 +295,14 @@ arch dungeon_floor
 x 1
 y 23
 end
-arch oakdoor
-slaying /world/world_127_109
-hp 48
-sp 38
-x 1
-y 23
-end
 arch dungeon_floor
 x 1
 y 24
 end
-arch bwall_2_1_2
+arch oakdoor_2
+slaying /world/world_127_109
+hp 48
+sp 38
 x 1
 y 24
 end
@@ -463,7 +460,7 @@ arch dungeon_floor
 x 2
 y 24
 end
-arch bwall_2_1_2
+arch bwall_1_4
 x 2
 y 24
 end
@@ -745,11 +742,9 @@ y 18
 end
 arch statue
 msg
-Buckaneer Bodingo
+Buccaneer Bodingo
 Ships El Buracho
-"Drinking and Wenching,
-Drinking and Wenching,
-When do we attack?
+"Drinking and Wenching, Drinking and Wenching, When do we attack?"
 endmsg
 x 4
 y 18
@@ -1041,7 +1036,7 @@ msg
 Sable Hoxie
 First he led the Clan,
 Now, he plays the fiddle.
-Where do you think Nero learned
+Where do you think Nero learned?
 endmsg
 x 6
 y 18
@@ -1204,7 +1199,7 @@ arch statue
 msg
 Wiggs the Priest
 The Posterboy for the Seven Deadly Sins
-He puts the Adult in Adultr
+He puts the Adult in Adultery
 endmsg
 x 7
 y 19
@@ -1220,7 +1215,7 @@ end
 arch statue
 msg
 Julian the Apostate
-Harbringer of the Doomed Rat
+Harbinger of the Doomed Rat
 Ship's Navigator
 And a ruthless Bastard
 endmsg
@@ -1238,8 +1233,7 @@ end
 arch statue
 msg
 Captain Connor
-He'd never ask us to do anything (or
-one) he wouldn't do himself
+He'd never ask us to do anything (or one) he wouldn't do himself
 endmsg
 x 7
 y 23

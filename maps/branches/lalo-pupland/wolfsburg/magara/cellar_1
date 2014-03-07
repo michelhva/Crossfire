@@ -1,12 +1,14 @@
 arch map
 name Stairs Down to Cellar
-difficulty 1
+difficulty 35
 region wolfsburg
 width 35
 height 35
+enter_x 1
+enter_y 13
 msg
-Created:  1994-02-15
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1994-10-15
+Modified: 2011-06-26 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -2495,7 +2497,7 @@ arch small_stones
 x 11
 y 6
 end
-arch bwall_0
+arch earthwall
 x 11
 y 6
 end
@@ -2511,7 +2513,7 @@ arch small_stones
 x 11
 y 8
 end
-arch bwall_0
+arch earthwall
 x 11
 y 8
 end
@@ -4073,7 +4075,7 @@ arch small_stones
 x 17
 y 24
 end
-arch blocked
+arch cave_15
 x 17
 y 24
 end
@@ -4081,7 +4083,7 @@ arch small_stones
 x 17
 y 25
 end
-arch blocked
+arch cave_15
 x 17
 y 25
 end
@@ -4089,7 +4091,7 @@ arch small_stones
 x 17
 y 26
 end
-arch blocked
+arch cave_15
 x 17
 y 26
 end
@@ -4097,7 +4099,7 @@ arch small_stones
 x 17
 y 27
 end
-arch blocked
+arch cave_15
 x 17
 y 27
 end
@@ -4105,7 +4107,7 @@ arch small_stones
 x 17
 y 28
 end
-arch blocked
+arch cave_15
 x 17
 y 28
 end
@@ -4113,7 +4115,7 @@ arch small_stones
 x 17
 y 29
 end
-arch blocked
+arch cave_15
 x 17
 y 29
 end
@@ -4121,7 +4123,7 @@ arch small_stones
 x 17
 y 30
 end
-arch blocked
+arch cave_15
 x 17
 y 30
 end
@@ -4129,7 +4131,7 @@ arch small_stones
 x 17
 y 31
 end
-arch blocked
+arch cave_15
 x 17
 y 31
 end
@@ -4137,7 +4139,7 @@ arch small_stones
 x 17
 y 32
 end
-arch blocked
+arch cave_15
 x 17
 y 32
 end
@@ -4145,7 +4147,7 @@ arch small_stones
 x 17
 y 33
 end
-arch blocked
+arch cave_15
 x 17
 y 33
 end
@@ -4153,7 +4155,7 @@ arch small_stones
 x 17
 y 34
 end
-arch blocked
+arch cave_15
 x 17
 y 34
 end
@@ -4191,7 +4193,7 @@ arch small_stones
 x 18
 y 6
 end
-arch bwall_0
+arch earthwall
 x 18
 y 6
 end
@@ -4703,7 +4705,7 @@ arch small_stones
 x 20
 y 6
 end
-arch bwall_0
+arch earthwall
 x 20
 y 6
 end
@@ -6295,9 +6297,10 @@ arch small_stones
 x 28
 y 8
 end
-arch door_2
+arch spikes_closed
 x 28
 y 8
+connected 1
 end
 arch small_stones
 x 28
@@ -6481,9 +6484,10 @@ arch small_stones
 x 29
 y 8
 end
-arch door_2
+arch spikes_closed
 x 29
 y 8
+connected 1
 end
 arch small_stones
 x 29
@@ -6671,9 +6675,10 @@ arch small_stones
 x 30
 y 8
 end
-arch door_2
+arch spikes_closed
 x 30
 y 8
+connected 1
 end
 arch small_stones
 x 30
