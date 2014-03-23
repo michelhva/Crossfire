@@ -8,7 +8,7 @@ enter_x 6
 enter_y 3
 msg
 Created:  2007-05-26 Nicolas Weeger
-Modified: 2013-03-19 Kevin Zheng
+Modified: 2014-03-23 Karla Stenger
 endmsg
 maplore
 @quest Lursendis
@@ -424,6 +424,7 @@ end
 arch grass_only
 x 5
 y 1
+move_block all
 end
 arch cobblestones2
 x 5
@@ -517,6 +518,7 @@ end
 arch grass_only
 x 6
 y 1
+move_block all
 end
 arch exit
 slaying /world/world_104_115
@@ -645,6 +647,7 @@ end
 arch grass_only
 x 7
 y 1
+move_block all
 end
 arch exit
 slaying /world/world_104_115
@@ -733,6 +736,7 @@ end
 arch grass_only
 x 8
 y 1
+move_block all
 end
 arch cobblestones2
 x 8
