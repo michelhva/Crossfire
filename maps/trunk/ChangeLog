@@ -1,3 +1,409 @@
+2014-03-30 14:25  partmedia
+
+	* world/world_105_115: Add default entry coordinate for emergency
+	  map.
+
+2014-03-30 14:25  partmedia
+
+	* quests/peterm/quests/dragonquest2, scorn/houses/tyl,
+	  scorn/houses/tyl_attic, scorn/houses/woodhouse: Fix
+	  capitalization and improve map names.
+
+2014-03-30 14:25  partmedia
+
+	* scorn/misc/battle_arena/entrance, scorn/taverns/goths,
+	  world/world_111_117: Fix invalid object attributes.
+	  
+	  While around, fix text capitalization and a few dialogs.
+
+2014-03-23 16:03  kstenger
+
+	* scorn/misc/castle_kitchen: Simple Fix to prevent farnass from
+	  leaving the kitchen area.
+
+2014-02-19 20:22  rjtanner
+
+	* scorn/misc/beginners: Added a short wall section near the rolling
+	  boulder to help reduce the chance of it getting stuck or give
+	  players a second chance to move the boulder on to the button in
+	  the real combat test to Beginners (scorn/misc/beginners) in
+	  Scorn.
+
+2014-02-19 20:04  rjtanner
+
+	* lake_country/small_buildings/hut_Galmorus: Comsetic change with
+	  how the fence (swall) merges with nearby walls in Galmorus' Hut
+	  (lake_country/small_buildings/hut_Galmorus) in Lake Country. No
+	  functional changes.
+
+2014-02-19 20:02  rjtanner
+
+	* navar_city/misc/highcourt: Moved the message board in High Court
+	  Building (navar_city/misc/highcourt) in Navar so it doesn't
+	  conflict with nearby NPC dialogue.
+
+2013-12-19 08:24  rjtanner
+
+	* Info/land.c: Spelling corrections in the comments. No functional
+	  changes.
+
+2013-12-15 21:41  partmedia
+
+	* scorn/temples/devourers_lower: Remove inaccessible tiles from the
+	  map.
+
+2013-12-15 21:41  partmedia
+
+	* scorn/mansion/garden, scorn/mansion/muriskunes: Fix a few exits
+	  in the Scorn Mansion.
+	  
+	  Remove a portal to a random map that leads to no final
+	  destination.
+	  Replace the Wishing Well exit with stairs going up.
+
+2013-11-25 02:48  silvernexus
+
+	* unlinked/forgotten_town/city,
+	  unlinked/forgotten_town/quests/ft_quest_3: Created third quest
+	  for set of 40 in Forgotten Town. Linked it to the Forgotten Town
+	  city map for further testing.
+
+2013-11-24 21:50  silvernexus
+
+	* dungeons/dark-cave/dark-cave: Fixed a few nonexistant river
+	  archetypes in dark-cave.
+
+2013-11-24 20:56  silvernexus
+
+	* unlinked/forgotten_town/inn,
+	  unlinked/forgotten_town/quests/ft_quest_40: Fixed doors in
+	  Forgotten Town inn and quest map 40.
+
+2013-11-24 20:54  silvernexus
+
+	* unlinked/forgotten_town/city: Capitalization changes on Forgotten
+	  Town city map.
+
+2013-11-24 15:44  silvernexus
+
+	* unlinked/forgotten_town/quests/ft_quest_1: Fixed exit path on
+	  teleporters in quest dungeon #1 in Forgotten Town.
+
+2013-11-24 15:37  silvernexus
+
+	* unlinked/forgotten_town/ft_dragonslib: Fixed exit perspective and
+	  shop fence appearance in Forgotten Town Dragon Library.
+
+2013-11-24 15:21  silvernexus
+
+	* unlinked/forgotten_town/palace: Replace flat exit door with
+	  in-perspective equivalent. Fix the absolute map path on the exit,
+	  too.
+
+2013-11-24 15:14  silvernexus
+
+	* unlinked/forgotten_town/shops/armour,
+	  unlinked/forgotten_town/shops/general,
+	  unlinked/forgotten_town/shops/magic,
+	  unlinked/forgotten_town/shops/weapon: Fixed absolute (and
+	  outdated) exit paths in forgotten town shops.
+
+2013-11-24 15:06  silvernexus
+
+	* unlinked/forgotten_town/shops/potion: Fixed absolute (and
+	  outdated) exit path in forgotten town potion shop.
+
+2013-11-23 19:41  silvernexus
+
+	* unlinked/kandora/cave/m_inn, unlinked/kandora/circus/mp_church,
+	  unlinked/kandora/circus/mp_start,
+	  unlinked/kandora/circus/mp_tavern,
+	  unlinked/kandora/circus/mp_world, unlinked/kandora/dd_alchemy,
+	  unlinked/kandora/dd_alchemy2, unlinked/kandora/dd_alchemy3,
+	  unlinked/kandora/dd_chaos, unlinked/kandora/dd_church,
+	  unlinked/kandora/dd_court, unlinked/kandora/dd_inn,
+	  unlinked/kandora/dd_keep, unlinked/kandora/dd_shop,
+	  unlinked/kandora/dd_tavern, unlinked/kandora/dm_cellar,
+	  unlinked/kandora/dm_church, unlinked/kandora/dm_inn,
+	  unlinked/kandora/dm_keep, unlinked/kandora/dm_shop,
+	  unlinked/kandora/dm_tavern, unlinked/kandora/dm_wizard,
+	  unlinked/kandora/dun_marksel,
+	  unlinked/kandora/elcyon/elcyon_start,
+	  unlinked/kandora/elcyon/g_store,
+	  unlinked/kandora/elcyon/gnome_hut,
+	  unlinked/kandora/elcyon/merchant, unlinked/kandora/elcyon/palace,
+	  unlinked/kandora/elcyon/plaza,
+	  unlinked/kandora/elcyon/witch_house, unlinked/kandora/ship_dog,
+	  unlinked/kandora/signal, unlinked/kandora/signal2: Tweaks to most
+	  of Kandora's maps, mainly fixing outdated wall endings and exits.
+
+2013-11-22 21:17  silvernexus
+
+	* unlinked/kandora/dd_baron, unlinked/kandora/denray: Replaced a
+	  few arches in kandora with up-to-date equivalents.
+
+2013-11-21 13:44  silvernexus
+
+	* world/world_116_102: Make the chicken outside the pet shop
+	  appear, since the message it provides acknowledges the chicken.
+
+2013-11-21 07:12  rjtanner
+
+	* navar_city/colosseum: Changes with various wall sections for
+	  nicer merging to Colosseum (navar_city/colosseum) in Navar.
+	  Cosmetic change only, no functional changes.
+
+2013-11-21 07:08  rjtanner
+
+	* navar_city/colosseum: Fixed the teleporter in the Navar City
+	  Colosseum (navar_city/colosseum). It was still set to the old and
+	  wrongly spelled map name.
+
+2013-11-21 07:03  rjtanner
+
+	* world/world_121_116: Fix broken map path in Navar City world map
+	  (world/world_121_116) to the Colosseum.
+
+2013-11-16 18:02  silvernexus
+
+	* lake_country/RETower/tower2: Fixing parallel strucure of
+	  comma-separated list on a sign in Butakis' Tower.
+
+2013-11-15 02:46  silvernexus
+
+	* lake_country/RETower/tower0: Pronoun agreement and clarity tweaks
+	  to Butakis' Tower signs.
+
+2013-11-15 02:14  silvernexus
+
+	* dungeons/train/gobl_zomb_train: Make the goblin statues face the
+	  aisle. The same should be done to the orc, gnoll, and zombie
+	  statues when they have extra facings.
+
+2013-11-15 02:03  silvernexus
+
+	* unlinked/chadfire/towns/port/apartment: Fixed broken exit in
+	  unlinked chadfire apartment.
+
+2013-10-14 19:46  kstenger
+
+	* quests/peterm/Demonology/Demon3: Fix typo as pointed out by H. S.
+	  Teoh in patch #341. Thanks for reporting.
+
+2013-10-03 22:42  rjtanner
+
+	* navar_city/smugglers_cove/sc_warehouse2: Removed extra space in
+	  message text to The Old Warehouse, Cellar
+	  (navar_city/smugglers_cove/sc_warehouse2) in Navar. No functional
+	  changes.
+
+2013-10-03 22:32  rjtanner
+
+	* darcap/darcap/circus/bigtop: Punctuation in sign text to Darcap
+	  Circus Bigtop (darcap/darcap/circus/bigtop). No functional
+	  changes.
+
+2013-10-03 22:05  rjtanner
+
+	* world/world_106_122: Grammar correction (distant -> distance) in
+	  message text to world map, world_106_122. No functional changes.
+
+2013-10-03 22:02  rjtanner
+
+	* world/world_100_116, world/world_106_122: Removed forced line
+	  breaks in message text to world maps (world_106_122,
+	  world_100_116). No functional changes.
+
+2013-10-03 21:39  rjtanner
+
+	* brest/pshops/pshop1/floor2, brest/pshops/pshop10/floor2,
+	  brest/pshops/pshop11/floor2, brest/pshops/pshop12/floor2,
+	  brest/pshops/pshop13/floor2, brest/pshops/pshop14/floor2,
+	  brest/pshops/pshop15/floor2, brest/pshops/pshop16/floor2,
+	  brest/pshops/pshop17/floor2, brest/pshops/pshop18/floor2,
+	  brest/pshops/pshop19/floor2, brest/pshops/pshop2/floor2,
+	  brest/pshops/pshop20/floor2, brest/pshops/pshop21/floor2,
+	  brest/pshops/pshop22/floor2, brest/pshops/pshop23/floor2,
+	  brest/pshops/pshop24/floor2, brest/pshops/pshop25/floor2,
+	  brest/pshops/pshop26/floor2, brest/pshops/pshop27/floor2,
+	  brest/pshops/pshop3/floor2, brest/pshops/pshop4/floor2,
+	  brest/pshops/pshop5/floor2, brest/pshops/pshop6/floor2,
+	  brest/pshops/pshop7/floor2, brest/pshops/pshop8/floor2,
+	  brest/pshops/pshop9/floor2: Removed forced line breaks in message
+	  text to Brest Private Shop maps (pshop*/floor2). No functional
+	  changes.
+
+2013-09-28 16:42  rjtanner
+
+	* quests/todd/aljwaf/crypt4: Removed forced line breaks in message
+	  text to Barren Crypt (quests/todd/aljwaf/crypt4). No functional
+	  changes.
+
+2013-09-28 16:35  rjtanner
+
+	* world/world_109_125: Removed forced line breaks in message text
+	  to world map (world/world_109_125). No functional changes.
+
+2013-09-28 07:06  rjtanner
+
+	* mlab/mlabscrntrdb1: Removed forced line breaks in message text to
+	  West Scorn Trade Market, Vault Level 1 (mlab/mlabscrntrdb1). No
+	  functional changes.
+
+2013-09-28 06:11  rjtanner
+
+	* darcap/darcap/circus/wurfbude: Magic mouth text clarification to
+	  Darcap Circus Throwing Gallery (darcap/darcap/circus/wurfbude).
+	  No functional changes.
+
+2013-09-14 01:12  partmedia
+
+	* darcap/darcap/library_ground, world/world_116_102: Improvements
+	  to Darcap Library.
+
+2013-09-13 23:03  partmedia
+
+	* santo_dominion/city_hall, santo_dominion/ship_scorn,
+	  scorn/port/ship_santo_dominion, scorn/port/ship_stoneville,
+	  scorn/port/ticket_office: Improve ship boarding passes.
+
+2013-08-18 21:12  partmedia
+
+	* darcap/darcap/church, darcap/darcap/random_house: Minor textual
+	  changes to Darcap.
+
+2013-08-18 21:12  partmedia
+
+	* navar_city/collosium, navar_city/colosseum, world/world_121_116:
+	  Cosmetic fixes to Navar Colosseum.
+	  
+	  Big spelling fix, drop invalid fields in archtype.
+
+2013-08-18 21:12  partmedia
+
+	* navar_city/temples/mostrai, navar_city/temples/sorig,
+	  navar_city/temples/valriel, world/world_121_117,
+	  world/world_122_117: Cosmetic changes to temples in Navar.
+	  
+	  Bring back old Valkyrie Church, adjust map name properties of a
+	  few
+	  maps, and overhaul the temple->church of Sorig.
+
+2013-08-18 21:12  partmedia
+
+	* world/world_121_116, world/world_121_117, world/world_122_116,
+	  world/world_122_117: Cosmetic changes to Navar City.
+	  
+	  Improve pixmaps on several churches/temples, as well as fix some
+	  text on
+	  some buildings. Also move the well so that it's not in the middle
+	  of the
+	  road. Building changes to reflect the new pixmaps are coming.
+
+2013-08-18 01:14  partmedia
+
+	* darcap/darcap/airhouse, darcap/darcap/earthhouse,
+	  darcap/darcap/firehouse, darcap/darcap/house_tunnels,
+	  darcap/darcap/waterhouse, world/world_116_102: Cosmetic
+	  improvements to Elemental Houses.
+
+2013-08-18 01:14  partmedia
+
+	* world/world_116_102: Various textual changes to Darcap.
+
+2013-08-18 01:14  partmedia
+
+	* world.quests: Sort global quest 'include' statements.
+
+2013-08-18 01:14  partmedia
+
+	* scorn/README: Remove legacy, outdated README file.
+
+2013-08-18 01:14  partmedia
+
+	* world.quests: Improve documentation in header for quest
+	  description files.
+
+2013-08-12 15:49  partmedia
+
+	* scorn/towers/tower.mad0, scorn/towers/tower.mad1,
+	  scorn/towers/tower.mad2, scorn/towers/tower.mad3: Make Mad Mage's
+	  Tower look more like a tower.
+
+2013-08-12 15:49  partmedia
+
+	* world/world_105_116: Fix bad properties.
+
+2013-08-12 15:49  partmedia
+
+	* world/world_104_116: Rename "hovels" to "Cornerbrook Estates".
+
+2013-08-12 15:49  partmedia
+
+	* scorn/houses/riverside_manor, scorn/houses/riverside_under:
+	  Prevent dimension dooring into Esmerelda.
+
+2013-08-12 15:49  partmedia
+
+	* scorn/houses/cornerbrook, scorn/houses/riverside_manor,
+	  scorn/taverns/barking_mule: Rename non-cauldron stoves to
+	  "cooking stove".
+	  
+	  Also mark map as outdoor and improve NPC messages.
+
+2013-08-11 13:23  partmedia
+
+	* world/world_107_123: Correct capitalization for street lamps.
+
+2013-08-10 13:57  partmedia
+
+	* python/pshop/rent.py: Remove empty file.
+
+2013-08-10 13:57  partmedia
+
+	* python/pshop/Ice.py, templates/guild/convert.py,
+	  templates/keep/grounds.tpl, templates/keep/keep1.tpl,
+	  templates/keep/keep2.tpl, templates/keep/keep3.tpl,
+	  templates/keep/keep_b.tpl, templates/keep/keep_roof.tpl: Fix
+	  executable flags.
+
+2013-08-10 12:34  partmedia
+
+	* unlinked/black_knight, unlinked/black_knight_cellar: Import Black
+	  Knight's Cellar from Invidious.
+
+2013-08-10 12:22  partmedia
+
+	* unlinked/tutorial, unlinked/tutorial/tutorialdungeon,
+	  unlinked/tutorial/tutorialhouse,
+	  unlinked/tutorial/tutorialisland, unlinked/tutorial/tutorialshop:
+	  Import new tutorial from Patch #235.
+	  
+	  An earlier version also existed on Invidious; the newer version
+	  from the
+	  bug tracker was used instead.
+
+2013-08-10 03:16  partmedia
+
+	* scorn/mansion/entrance, scorn/mansion/garden,
+	  scorn/mansion/muriskunes, scorn/mansion/subbasement1: Expand
+	  Scorn's Old Mansion deeper underground.
+	  
+	  This is part of the stuff left in the working directory of
+	  Invidious,
+	  with some changes. Attribution for this map goes to either
+	  "neodeno" or
+	  "chris", from the "Modified" line in the original map.
+
+2013-08-08 23:03  rjtanner
+
+	* world/world_105_115: Removed forced line breaks in sign text to
+	  Scorn (world/world_105_115).
+
+2013-08-08 19:51  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl.
+
 2013-08-08 18:19  rjtanner
 
 	* unlinked/chadfire/towns/castle/inn,
