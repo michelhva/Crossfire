@@ -1,20 +1,19 @@
 arch map
-name Small wood house
+name Wood House
 difficulty 5
 region scorn
-width 14
+width 12
 height 10
 enter_x 2
 enter_y 8
 msg
 Created:  2007-05-27 Nicolas Weeger
-Modified: 2008-09-28 Rick Tanner
+Modified: 2014-03-28 Kevin Zheng
 endmsg
 maplore
 @quest Lursendis
 Hospital and entrance to the trappers.
 endmaplore
-outdoor 1
 end
 arch woodfloor
 end
@@ -162,10 +161,6 @@ x 2
 y 1
 end
 arch woodfloor
-x 2
-y 2
-end
-arch light4
 x 2
 y 2
 end
@@ -577,10 +572,6 @@ arch woodfloor
 x 7
 y 2
 end
-arch light4
-x 7
-y 2
-end
 arch woodwall_1_3
 x 7
 y 2
@@ -614,10 +605,6 @@ x 7
 y 6
 end
 arch woodfloor
-x 7
-y 7
-end
-arch light4
 x 7
 y 7
 end
@@ -684,7 +671,7 @@ y 6
 end
 arch magic_ear
 msg
-@match scorn's trappers
+@match trappers
 Click.
 endmsg
 x 8
@@ -696,9 +683,9 @@ x 8
 y 7
 end
 arch nun
-name Nurse
+name nurse
 msg
-@match scorn's trappers
+@match trappers
 Oh, you want to buy some goods? Please go down and check what we offer.
 @match *
 Go away, you're bothering us! We have many patients to help!
@@ -797,88 +784,48 @@ x 9
 y 9
 end
 arch blocked
-x 11
+x 10
 end
 arch blocked
-x 11
+x 10
 y 1
 end
 arch blocked
-x 11
+x 10
 y 2
 end
 arch blocked
-x 11
+x 10
 y 3
 end
 arch blocked
-x 11
+x 10
 y 4
 end
 arch blocked
-x 11
+x 10
 y 5
 end
 arch blocked
-x 11
+x 10
 y 6
 end
 arch blocked
-x 11
+x 10
 y 7
 end
 arch blocked
-x 11
+x 10
 y 8
 end
 arch blocked
-x 11
-y 9
-end
-arch blocked
-x 12
-end
-arch blocked
-x 12
-y 1
-end
-arch blocked
-x 12
-y 2
-end
-arch blocked
-x 12
-y 3
-end
-arch blocked
-x 12
-y 4
-end
-arch blocked
-x 12
-y 5
-end
-arch blocked
-x 12
-y 6
-end
-arch blocked
-x 12
-y 7
-end
-arch blocked
-x 12
-y 8
-end
-arch blocked
-x 12
+x 10
 y 9
 end
 arch teleporter
 hp 8
 sp 8
-x 13
-y 2
+x 11
 speed 0.0
 connected 1
 end
@@ -886,6 +833,5 @@ arch stair_3_down
 slaying scorn_trappers
 hp 8
 sp 8
-x 13
-y 2
+x 11
 end

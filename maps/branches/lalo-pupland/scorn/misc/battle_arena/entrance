@@ -9,7 +9,7 @@ enter_x 11
 enter_y 24
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2013-03-18 Kevin Zheng
+Modified: 2014-03-15 Kevin Zheng
 endmsg
 end
 arch pstone_2
@@ -685,7 +685,7 @@ arch man
 name ticket vendor
 msg
 @match *
-Buy an arena ticket! Watching the gladiators' duels is so much fun. It costs only 100 diamonds, and you get one bag of popcorn for free!
+Buy an arena ticket! Watching the gladiators duel is so much fun. It only costs 100 diamonds, and you get a bag of popcorn for free!
 endmsg
 hp 180
 maxhp 180
@@ -1122,18 +1122,6 @@ arch pstone_2
 x 5
 y 14
 end
-arch magic_mouth
-name 5
-msg
-The ticket vendor says: Here is your arena ticket. Now you can enter the terraces of the arena whenever you want!
-endmsg
-x 5
-y 15
-resist_physical 30
-resist_fire 30
-connected 5
-move_on 0
-end
 arch pstone_2
 x 5
 y 15
@@ -1141,6 +1129,9 @@ end
 arch altar_trigger
 name Buy Arena Ticket (100 diamonds)
 slaying diamond
+msg
+Here is your arena ticket. Now you can enter the terraces of the arena whenever you want!
+endmsg
 food 100
 x 5
 y 15
@@ -1687,9 +1678,7 @@ hp 12
 sp 41
 x 9
 y 2
-speed 0.000000
-resist_magic 30
-resist_electricity 30
+speed 0.0
 connected 10
 end
 arch dungeon_magic
@@ -1703,10 +1692,6 @@ end
 arch grate_closed_1
 x 9
 y 3
-speed 0.500000
-resist_physical 30
-resist_magic 30
-resist_fire 30
 connected 7
 end
 arch pstone_2
@@ -2362,9 +2347,7 @@ hp 22
 sp 41
 x 13
 y 2
-speed 0.000000
-resist_magic 30
-resist_electricity 30
+speed 0.0
 connected 10
 end
 arch dungeon_magic
@@ -2378,10 +2361,6 @@ end
 arch grate_closed_1
 x 13
 y 3
-speed 0.500000
-resist_physical 30
-resist_magic 30
-resist_fire 30
 connected 7
 end
 arch pstone_2
