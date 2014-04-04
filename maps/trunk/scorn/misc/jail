@@ -8,7 +8,7 @@ height 15
 enter_y 7
 msg
 Created:  2001-10-17
-Modified: 2012-03-27 Rick Tanner
+Modified: 2014-04-04 Kevin Zheng
 endmsg
 end
 arch dungeon_magic
@@ -616,17 +616,17 @@ y 1
 end
 arch creator
 other_arch loaf
+hp 3
 x 3
 y 1
 connected 2
-lifesave 1
 end
 arch creator
 other_arch water
+hp 3
 x 3
 y 1
 connected 2
-lifesave 1
 end
 arch table_4
 x 3
@@ -800,17 +800,17 @@ y 13
 end
 arch creator
 other_arch loaf
+hp 3
 x 3
 y 13
 connected 1
-lifesave 1
 end
 arch creator
 other_arch water
+hp 3
 x 3
 y 13
 connected 1
-lifesave 1
 end
 arch table_4
 x 3
@@ -1474,17 +1474,17 @@ y 1
 end
 arch creator
 other_arch loaf
+hp 3
 x 7
 y 1
 connected 4
-lifesave 1
 end
 arch creator
 other_arch water
+hp 3
 x 7
 y 1
 connected 4
-lifesave 1
 end
 arch table_4
 x 7
@@ -1645,17 +1645,17 @@ y 13
 end
 arch creator
 other_arch loaf
+hp 3
 x 7
 y 13
 connected 3
-lifesave 1
 end
 arch creator
 other_arch water
+hp 3
 x 7
 y 13
 connected 3
-lifesave 1
 end
 arch table_4
 x 7
@@ -2319,17 +2319,17 @@ y 1
 end
 arch creator
 other_arch loaf
+hp 3
 x 11
 y 1
 connected 6
-lifesave 1
 end
 arch creator
 other_arch water
+hp 3
 x 11
 y 1
 connected 6
-lifesave 1
 end
 arch table_4
 x 11
@@ -2494,17 +2494,17 @@ y 13
 end
 arch creator
 other_arch loaf
+hp 3
 x 11
 y 13
 connected 5
-lifesave 1
 end
 arch creator
 other_arch water
+hp 3
 x 11
 y 13
 connected 5
-lifesave 1
 end
 arch table_4
 x 11
