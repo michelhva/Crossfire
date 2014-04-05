@@ -1,0 +1,1098 @@
+arch map
+name Turl's Small House
+difficulty 1
+region navar
+width 14
+height 14
+enter_x 4
+enter_y 9
+msg
+Created:  2012-03-20 Rick Tanner
+Modified: 2012-08-14 Rick Tanner
+endmsg
+end
+arch cobblestones2
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch grass_only
+y 8
+end
+arch grass_only
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch grass_only
+y 12
+end
+arch cobblestones2
+y 13
+end
+arch cobblestones2
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 1
+y 12
+end
+arch cobblestones2
+x 1
+y 13
+end
+arch cobblestones2
+x 2
+end
+arch grass_only
+x 2
+y 1
+end
+arch dungeon_floor
+x 2
+y 2
+end
+arch bwall_2_2_2
+x 2
+y 2
+end
+arch dungeon_floor
+x 2
+y 3
+end
+arch bwall_2_1_1
+x 2
+y 3
+end
+arch dungeon_floor
+x 2
+y 4
+end
+arch bwall_2_1_1
+x 2
+y 4
+end
+arch dungeon_floor
+x 2
+y 5
+end
+arch bwall_2_1_1
+x 2
+y 5
+end
+arch dungeon_floor
+x 2
+y 6
+end
+arch wall_2_1_1
+x 2
+y 6
+end
+arch bwall_1_2
+x 2
+y 6
+end
+arch dungeon_floor
+x 2
+y 7
+end
+arch window_win1
+x 2
+y 7
+end
+arch dungeon_floor
+x 2
+y 8
+end
+arch wall_2_1_1
+x 2
+y 8
+end
+arch bwall_2_2_2
+x 2
+y 8
+end
+arch dungeon_floor
+x 2
+y 9
+end
+arch bwall_2_1_1
+x 2
+y 9
+end
+arch dungeon_floor
+x 2
+y 10
+end
+arch bwall_2_1_1
+x 2
+y 10
+end
+arch dungeon_floor
+x 2
+y 11
+end
+arch bwall_2_2_1
+x 2
+y 11
+end
+arch grass_only
+x 2
+y 12
+end
+arch cobblestones2
+x 2
+y 13
+end
+arch cobblestones2
+x 3
+end
+arch grass_only
+x 3
+y 1
+end
+arch dungeon_floor
+x 3
+y 2
+end
+arch bwall_2_1_2
+x 3
+y 2
+end
+arch dungeon_floor
+x 3
+y 3
+end
+arch bed_1
+x 3
+y 3
+end
+arch dungeon_floor
+x 3
+y 4
+end
+arch dungeon_floor
+x 3
+y 5
+end
+arch dungeon_floor
+x 3
+y 6
+end
+arch dungeon_floor
+x 3
+y 7
+end
+arch table_4
+x 3
+y 7
+end
+arch dungeon_floor
+x 3
+y 8
+end
+arch bwall_2_1_2
+x 3
+y 8
+end
+arch dungeon_floor
+x 3
+y 9
+end
+arch button_small
+x 3
+y 10
+connected 1
+end
+arch dungeon_floor
+x 3
+y 10
+end
+arch dungeon_floor
+x 3
+y 11
+end
+arch bwall_1_3
+x 3
+y 11
+end
+arch dungeon_magic
+x 3
+y 12
+end
+arch invis_exit
+slaying /world/world_121_116
+hp 44
+sp 42
+x 3
+y 12
+end
+arch grass_only
+x 3
+y 12
+end
+arch cobblestones2
+x 3
+y 13
+end
+arch cobblestones2
+x 4
+end
+arch grass_only
+x 4
+y 1
+end
+arch dungeon_floor
+x 4
+y 2
+end
+arch bwall_2_1_2
+x 4
+y 2
+end
+arch dungeon_floor
+x 4
+y 3
+end
+arch dungeon_floor
+x 4
+y 4
+end
+arch creator
+other_arch angry_floor
+x 4
+y 5
+connected 6
+end
+arch dungeon_floor
+x 4
+y 5
+end
+arch dwarf
+name Turl
+dam 30
+x 4
+y 5
+end
+arch dungeon_floor
+x 4
+y 6
+end
+arch chair_1.1
+x 4
+y 6
+end
+arch dungeon_floor
+x 4
+y 7
+end
+arch chair_1.1
+x 4
+y 7
+end
+arch dungeon_floor
+x 4
+y 8
+end
+arch bwall_2_1_2
+x 4
+y 8
+end
+arch dungeon_floor
+x 4
+y 9
+end
+arch button_small
+x 4
+y 10
+connected 1
+end
+arch dungeon_floor
+x 4
+y 10
+end
+arch button_small
+x 4
+y 11
+connected 1
+end
+arch dungeon_floor
+x 4
+y 11
+end
+arch odoorn2_closed_1
+x 4
+y 11
+connected 1
+end
+arch dungeon_magic
+x 4
+y 12
+end
+arch invis_exit
+slaying /world/world_121_116
+hp 44
+sp 42
+x 4
+y 12
+end
+arch grass_only
+x 4
+y 12
+end
+arch cobblestones2
+x 4
+y 13
+end
+arch cobblestones2
+x 5
+end
+arch grass_only
+x 5
+y 1
+end
+arch dungeon_floor
+x 5
+y 2
+end
+arch bwall_2_1_2
+x 5
+y 2
+end
+arch dungeon_floor
+x 5
+y 3
+end
+arch dungeon_floor
+x 5
+y 4
+end
+arch dungeon_floor
+x 5
+y 5
+end
+arch dungeon_floor
+x 5
+y 6
+end
+arch dungeon_floor
+x 5
+y 7
+end
+arch table_4
+x 5
+y 7
+end
+arch dungeon_floor
+x 5
+y 8
+end
+arch bwall_2_1_2
+x 5
+y 8
+end
+arch dungeon_floor
+x 5
+y 9
+end
+arch button_small
+x 5
+y 10
+connected 1
+end
+arch dungeon_floor
+x 5
+y 10
+end
+arch dungeon_floor
+x 5
+y 11
+end
+arch bwall_1_4
+x 5
+y 11
+end
+arch dungeon_magic
+x 5
+y 12
+end
+arch invis_exit
+slaying /world/world_121_116
+hp 44
+sp 42
+x 5
+y 12
+end
+arch grass_only
+x 5
+y 12
+end
+arch cobblestones2
+x 5
+y 13
+end
+arch cobblestones2
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch dungeon_floor
+x 6
+y 2
+end
+arch bwall_2_1_2
+x 6
+y 2
+end
+arch dungeon_floor
+x 6
+y 3
+end
+arch dungeon_floor
+x 6
+y 4
+end
+arch dungeon_floor
+x 6
+y 5
+end
+arch dungeon_floor
+x 6
+y 6
+end
+arch creator
+other_arch angry_floor
+x 6
+y 7
+connected 6
+end
+arch dungeon_floor
+x 6
+y 7
+end
+arch dwarf
+name Morg
+dam 30
+x 6
+y 7
+end
+arch dungeon_floor
+x 6
+y 8
+end
+arch bwall_2_1_2
+x 6
+y 8
+end
+arch dungeon_floor
+x 6
+y 9
+end
+arch dungeon_floor
+x 6
+y 10
+end
+arch dungeon_floor
+x 6
+y 11
+end
+arch bwall_2_1_2
+x 6
+y 11
+end
+arch grass_only
+x 6
+y 12
+end
+arch cobblestones2
+x 6
+y 13
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch dungeon_floor
+x 7
+y 2
+end
+arch bwall_2_1_2
+x 7
+y 2
+end
+arch pedestal
+x 7
+y 3
+invisible 1
+connected 6
+end
+arch dungeon_floor
+x 7
+y 3
+end
+arch chest
+x 7
+y 3
+carrying 75
+arch note
+msg
+We hid th. st.len bank l.ot i. the cav. . The p.ss .s ali b.rb.a.
+endmsg
+arch quest_advance_apply
+name navar/Ali-treasure 0>10
+end
+end
+end
+arch dungeon_floor
+x 7
+y 4
+end
+arch dungeon_floor
+x 7
+y 5
+end
+arch dungeon_floor
+x 7
+y 6
+end
+arch dungeon_floor
+x 7
+y 7
+end
+arch dungeon_floor
+x 7
+y 8
+end
+arch bwall_2_1_2
+x 7
+y 8
+end
+arch dungeon_floor
+x 7
+y 9
+end
+arch dungeon_floor
+x 7
+y 10
+end
+arch dungeon_floor
+x 7
+y 11
+end
+arch wall_2_1_2
+x 7
+y 11
+end
+arch bwall_1_3
+x 7
+y 11
+end
+arch grass_only
+x 7
+y 12
+end
+arch cobblestones2
+x 7
+y 13
+end
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
+y 1
+end
+arch dungeon_floor
+x 8
+y 2
+end
+arch bwall_3_3
+x 8
+y 2
+end
+arch dungeon_floor
+x 8
+y 3
+end
+arch bwall_2_1_1
+x 8
+y 3
+end
+arch dungeon_floor
+x 8
+y 4
+end
+arch bwall_1_2
+x 8
+y 4
+end
+arch dungeon_floor
+x 8
+y 5
+end
+arch door_look_2
+x 8
+y 5
+end
+arch dungeon_floor
+x 8
+y 6
+end
+arch bwall_1_1
+x 8
+y 6
+end
+arch dungeon_floor
+x 8
+y 7
+end
+arch bwall_2_1_1
+x 8
+y 7
+end
+arch dungeon_floor
+x 8
+y 8
+end
+arch bwall_2_2_4
+x 8
+y 8
+end
+arch dungeon_floor
+x 8
+y 9
+end
+arch dungeon_floor
+x 8
+y 10
+end
+arch dungeon_floor
+x 8
+y 11
+end
+arch window_win2
+x 8
+y 11
+end
+arch grass_only
+x 8
+y 12
+end
+arch cobblestones2
+x 8
+y 13
+end
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch dungeon_floor
+x 9
+y 2
+end
+arch bwall_2_1_2
+x 9
+y 2
+end
+arch dungeon_floor
+x 9
+y 3
+end
+arch dungeon_floor
+x 9
+y 4
+end
+arch dungeon_floor
+x 9
+y 5
+end
+arch dungeon_floor
+x 9
+y 6
+end
+arch dungeon_floor
+x 9
+y 7
+end
+arch dungeon_floor
+x 9
+y 8
+end
+arch dungeon_floor
+x 9
+y 9
+end
+arch dungeon_floor
+x 9
+y 10
+end
+arch dungeon_floor
+x 9
+y 11
+end
+arch wall_2_1_2
+x 9
+y 11
+end
+arch bwall_1_4
+x 9
+y 11
+end
+arch grass_only
+x 9
+y 12
+end
+arch cobblestones2
+x 9
+y 13
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
+y 1
+end
+arch dungeon_floor
+x 10
+y 2
+end
+arch bwall_2_1_2
+x 10
+y 2
+end
+arch dungeon_floor
+x 10
+y 3
+end
+arch dungeon_floor
+x 10
+y 4
+end
+arch dungeon_floor
+x 10
+y 5
+end
+arch dungeon_floor
+x 10
+y 6
+end
+arch dungeon_floor
+x 10
+y 7
+end
+arch dungeon_floor
+x 10
+y 8
+end
+arch dungeon_floor
+x 10
+y 9
+end
+arch dungeon_floor
+x 10
+y 10
+end
+arch dungeon_floor
+x 10
+y 11
+end
+arch bwall_2_1_2
+x 10
+y 11
+end
+arch grass_only
+x 10
+y 12
+end
+arch cobblestones2
+x 10
+y 13
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
+y 1
+end
+arch dungeon_floor
+x 11
+y 2
+end
+arch bwall_2_2_3
+x 11
+y 2
+end
+arch dungeon_floor
+x 11
+y 3
+end
+arch bwall_2_1_1
+x 11
+y 3
+end
+arch dungeon_floor
+x 11
+y 4
+end
+arch bwall_2_1_1
+x 11
+y 4
+end
+arch dungeon_floor
+x 11
+y 5
+end
+arch bwall_2_1_1
+x 11
+y 5
+end
+arch dungeon_floor
+x 11
+y 6
+end
+arch wall_2_1_1
+x 11
+y 6
+end
+arch bwall_1_2
+x 11
+y 6
+end
+arch dungeon_floor
+x 11
+y 7
+end
+arch window_win1
+x 11
+y 7
+end
+arch dungeon_floor
+x 11
+y 8
+end
+arch wall_2_1_1
+x 11
+y 8
+end
+arch bwall_1_1
+x 11
+y 8
+end
+arch dungeon_floor
+x 11
+y 9
+end
+arch bwall_2_1_1
+x 11
+y 9
+end
+arch dungeon_floor
+x 11
+y 10
+end
+arch bwall_2_1_1
+x 11
+y 10
+end
+arch dungeon_floor
+x 11
+y 11
+end
+arch bwall_2_2_4
+x 11
+y 11
+end
+arch grass_only
+x 11
+y 12
+end
+arch cobblestones2
+x 11
+y 13
+end
+arch cobblestones2
+x 12
+end
+arch grass_only
+x 12
+y 1
+end
+arch grass_only
+x 12
+y 2
+end
+arch grass_only
+x 12
+y 3
+end
+arch grass_only
+x 12
+y 4
+end
+arch grass_only
+x 12
+y 5
+end
+arch grass_only
+x 12
+y 6
+end
+arch grass_only
+x 12
+y 7
+end
+arch grass_only
+x 12
+y 8
+end
+arch grass_only
+x 12
+y 9
+end
+arch grass_only
+x 12
+y 10
+end
+arch grass_only
+x 12
+y 11
+end
+arch grass_only
+x 12
+y 12
+end
+arch cobblestones2
+x 12
+y 13
+end
+arch cobblestones2
+x 13
+end
+arch grass_only
+x 13
+y 1
+end
+arch grass_only
+x 13
+y 2
+end
+arch grass_only
+x 13
+y 3
+end
+arch grass_only
+x 13
+y 4
+end
+arch grass_only
+x 13
+y 5
+end
+arch grass_only
+x 13
+y 6
+end
+arch grass_only
+x 13
+y 7
+end
+arch grass_only
+x 13
+y 8
+end
+arch grass_only
+x 13
+y 9
+end
+arch grass_only
+x 13
+y 10
+end
+arch grass_only
+x 13
+y 11
+end
+arch grass_only
+x 13
+y 12
+end
+arch cobblestones2
+x 13
+y 13
+end

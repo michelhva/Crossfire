@@ -1,0 +1,766 @@
+arch map
+name Gemstone Alchemist
+difficulty 1
+region butakisfortress
+width 12
+height 12
+enter_x 7
+enter_y 8
+msg
+Created:  1995-09-13 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2012-06-11 Rick Tanner
+endmsg
+end
+arch grass_only
+end
+arch grass_only
+y 1
+end
+arch grass_only
+y 2
+end
+arch grass_only
+y 3
+end
+arch grass_only
+y 4
+end
+arch grass_only
+y 5
+end
+arch grass_only
+y 6
+end
+arch grass_only
+y 7
+end
+arch grass_only
+y 8
+end
+arch grass_only
+y 9
+end
+arch grass_only
+y 10
+end
+arch grass_only
+y 11
+end
+arch grass_only
+x 1
+end
+arch grass_only
+x 1
+y 1
+end
+arch grass_only
+x 1
+y 2
+end
+arch grass_only
+x 1
+y 3
+end
+arch grass_only
+x 1
+y 4
+end
+arch grass_only
+x 1
+y 5
+end
+arch grass_only
+x 1
+y 6
+end
+arch grass_only
+x 1
+y 7
+end
+arch grass_only
+x 1
+y 8
+end
+arch grass_only
+x 1
+y 9
+end
+arch grass_only
+x 1
+y 10
+end
+arch grass_only
+x 1
+y 11
+end
+arch grass_only
+x 2
+end
+arch grass_only
+x 2
+y 1
+end
+arch pstone_1
+x 2
+y 2
+end
+arch wall_2_2_2
+x 2
+y 2
+end
+arch pstone_1
+x 2
+y 3
+end
+arch wall_2_1_1
+x 2
+y 3
+end
+arch pstone_1
+x 2
+y 4
+end
+arch window_win1
+x 2
+y 4
+end
+arch pstone_1
+x 2
+y 5
+end
+arch wall_2_1_1
+x 2
+y 5
+end
+arch pstone_1
+x 2
+y 6
+end
+arch wall_2_1_1
+x 2
+y 6
+end
+arch pstone_1
+x 2
+y 7
+end
+arch window_win1
+x 2
+y 7
+end
+arch pstone_1
+x 2
+y 8
+end
+arch wall_2_1_1
+x 2
+y 8
+end
+arch pstone_1
+x 2
+y 9
+end
+arch wall_2_2_1
+x 2
+y 9
+end
+arch grass_only
+x 2
+y 10
+end
+arch grass_only
+x 2
+y 11
+end
+arch grass_only
+x 3
+end
+arch grass_only
+x 3
+y 1
+end
+arch pstone_1
+x 3
+y 2
+end
+arch window_win2
+x 3
+y 2
+end
+arch pstone_1
+x 3
+y 3
+end
+arch pstone_1
+x 3
+y 4
+end
+arch silver_converter
+x 3
+y 5
+end
+arch platinum_converter
+x 3
+y 5
+end
+arch pstone_1
+x 3
+y 5
+end
+arch alchemy_ruby_converter
+x 3
+y 5
+speed 0.290000
+end
+arch pstone_1
+x 3
+y 6
+end
+arch platinum_converter
+x 3
+y 7
+end
+arch silver_converter
+x 3
+y 7
+end
+arch pstone_1
+x 3
+y 7
+end
+arch pstone_1
+name alchemy bath: create gold
+face polymorph.111
+x 3
+y 7
+end
+arch pstone_1
+x 3
+y 8
+end
+arch pstone_1
+x 3
+y 9
+end
+arch window_win2
+x 3
+y 9
+end
+arch grass_only
+x 3
+y 10
+end
+arch grass_only
+x 3
+y 11
+end
+arch grass_only
+x 4
+end
+arch grass_only
+x 4
+y 1
+end
+arch pstone_1
+x 4
+y 2
+end
+arch wall_2_1_2
+x 4
+y 2
+end
+arch pstone_1
+x 4
+y 3
+end
+arch pstone_1
+x 4
+y 4
+end
+arch pstone_1
+x 4
+y 5
+end
+arch pstone_1
+x 4
+y 6
+end
+arch smith
+name alchemist
+face wizard.131
+x 4
+y 6
+end
+arch pstone_1
+x 4
+y 7
+end
+arch pstone_1
+x 4
+y 8
+end
+arch pstone_1
+x 4
+y 9
+end
+arch wall_2_1_2
+x 4
+y 9
+end
+arch grass_only
+x 4
+y 10
+end
+arch grass_only
+x 4
+y 11
+end
+arch grass_only
+x 5
+end
+arch grass_only
+x 5
+y 1
+end
+arch pstone_1
+x 5
+y 2
+end
+arch wall_2_1_2
+x 5
+y 2
+end
+arch pstone_1
+x 5
+y 3
+end
+arch pstone_1
+x 5
+y 4
+end
+arch silver_converter
+x 5
+y 5
+end
+arch platinum_converter
+x 5
+y 5
+end
+arch pstone_1
+x 5
+y 5
+end
+arch alchemy_diamond_converter
+x 5
+y 5
+speed 0.310000
+end
+arch pstone_1
+x 5
+y 6
+end
+arch silver_converter
+x 5
+y 7
+end
+arch platinum_converter
+x 5
+y 7
+end
+arch pstone_1
+x 5
+y 7
+end
+arch alchemy_pearl_converter
+x 5
+y 7
+speed 0.300000
+end
+arch pstone_1
+x 5
+y 8
+end
+arch pstone_1
+x 5
+y 9
+end
+arch window_win2
+x 5
+y 9
+end
+arch grass_only
+x 5
+y 10
+end
+arch grass_only
+x 5
+y 11
+end
+arch grass_only
+x 6
+end
+arch grass_only
+x 6
+y 1
+end
+arch pstone_1
+x 6
+y 2
+end
+arch wall_2_1_2
+x 6
+y 2
+end
+arch pstone_1
+x 6
+y 3
+end
+arch pstone_1
+x 6
+y 4
+end
+arch pstone_1
+x 6
+y 5
+end
+arch pstone_1
+x 6
+y 6
+end
+arch pstone_1
+x 6
+y 7
+end
+arch wall_0
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch wall_1_3
+x 6
+y 9
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch grass_only
+x 6
+y 10
+move_block all
+end
+arch grass_only
+x 6
+y 11
+end
+arch grass_only
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch pstone_1
+x 7
+y 2
+end
+arch wall_3_3
+x 7
+y 2
+end
+arch pstone_1
+x 7
+y 3
+end
+arch wall_1_2
+x 7
+y 3
+end
+arch pstone_1
+x 7
+y 4
+end
+arch pstone_1
+x 7
+y 5
+end
+arch wall_0
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch oakdoor_2
+slaying Butakis0
+hp 9
+sp 14
+x 7
+y 9
+end
+arch dungeon_magic
+x 7
+y 10
+end
+arch grass_only
+x 7
+y 10
+move_block all
+end
+arch grass_only
+x 7
+y 11
+end
+arch grass_only
+x 8
+end
+arch grass_only
+x 8
+y 1
+end
+arch pstone_1
+x 8
+y 2
+end
+arch window_win2
+x 8
+y 2
+end
+arch pstone_1
+x 8
+y 3
+end
+arch pstone_1
+x 8
+y 4
+end
+arch pstone_1
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch wall_1_4
+x 8
+y 9
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch grass_only
+x 8
+y 10
+move_block all
+end
+arch grass_only
+x 8
+y 11
+end
+arch grass_only
+x 9
+end
+arch grass_only
+x 9
+y 1
+end
+arch pstone_1
+x 9
+y 2
+end
+arch wall_2_2_3
+x 9
+y 2
+end
+arch pstone_1
+x 9
+y 3
+end
+arch wall_2_1_1
+x 9
+y 3
+end
+arch pstone_1
+x 9
+y 4
+end
+arch window_win1
+x 9
+y 4
+end
+arch pstone_1
+x 9
+y 5
+end
+arch wall_2_1_1
+x 9
+y 5
+end
+arch pstone_1
+x 9
+y 6
+end
+arch wall_2_1_1
+x 9
+y 6
+end
+arch pstone_1
+x 9
+y 7
+end
+arch window_win1
+x 9
+y 7
+end
+arch pstone_1
+x 9
+y 8
+end
+arch wall_2_1_1
+x 9
+y 8
+end
+arch pstone_1
+x 9
+y 9
+end
+arch wall_2_2_4
+x 9
+y 9
+end
+arch grass_only
+x 9
+y 10
+end
+arch grass_only
+x 9
+y 11
+end
+arch grass_only
+x 10
+end
+arch grass_only
+x 10
+y 1
+end
+arch grass_only
+x 10
+y 2
+end
+arch grass_only
+x 10
+y 3
+end
+arch grass_only
+x 10
+y 4
+end
+arch grass_only
+x 10
+y 5
+end
+arch grass_only
+x 10
+y 6
+end
+arch grass_only
+x 10
+y 7
+end
+arch grass_only
+x 10
+y 8
+end
+arch grass_only
+x 10
+y 9
+end
+arch grass_only
+x 10
+y 10
+end
+arch grass_only
+x 10
+y 11
+end
+arch grass_only
+x 11
+end
+arch grass_only
+x 11
+y 1
+end
+arch grass_only
+x 11
+y 2
+end
+arch grass_only
+x 11
+y 3
+end
+arch grass_only
+x 11
+y 4
+end
+arch grass_only
+x 11
+y 5
+end
+arch grass_only
+x 11
+y 6
+end
+arch grass_only
+x 11
+y 7
+end
+arch grass_only
+x 11
+y 8
+end
+arch grass_only
+x 11
+y 9
+end
+arch grass_only
+x 11
+y 10
+end
+arch grass_only
+x 11
+y 11
+end

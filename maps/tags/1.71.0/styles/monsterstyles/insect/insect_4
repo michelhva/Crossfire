@@ -1,0 +1,52 @@
+arch map
+name <unnamed>
+width 6
+height 6
+msg
+Created:  1998-02-26
+endmsg
+end
+arch ant
+end
+arch ant
+y 1
+end
+arch bee
+y 2
+end
+arch ant_larvae
+x 1
+end
+arch ant
+x 1
+y 1
+end
+arch generate_bee
+x 1
+y 2
+end
+arch ant_egg
+x 2
+end
+arch ant
+x 2
+y 1
+end
+arch killer_bee
+x 2
+y 2
+end
+arch generate_ant
+x 3
+end
+arch work_ant
+x 3
+y 1
+end
+arch war_ant
+x 4
+y 1
+end
+arch guard_ant
+x 5
+end

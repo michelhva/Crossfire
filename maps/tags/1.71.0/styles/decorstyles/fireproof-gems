@@ -1,0 +1,79 @@
+arch map
+name <unnamed>
+width 5
+height 6
+msg
+Created:  1999-02-02
+endmsg
+end
+arch gem
+title of Lava
+resist_fire 100
+value 480
+end
+arch ruby
+title of Lava
+x 1
+resist_fire 100
+value 240
+end
+arch ruby
+title of Lava
+x 1
+y 1
+resist_fire 100
+value 240
+end
+arch sapphire
+title of Lava
+x 2
+resist_fire 100
+value 222
+end
+arch sapphire
+title of Lava
+x 2
+y 1
+resist_fire 100
+value 222
+end
+arch sapphire
+title of Lava
+x 2
+y 2
+resist_fire 100
+value 222
+end
+arch emerald
+title of Lava
+x 3
+resist_fire 100
+value 192
+end
+arch emerald
+title of Lava
+x 3
+y 1
+resist_fire 100
+value 192
+end
+arch emerald
+title of Lava
+x 3
+y 2
+resist_fire 100
+value 192
+end
+arch emerald
+title of Lava
+x 3
+y 3
+resist_fire 100
+value 192
+end
+arch mithril
+title of Lava
+x 4
+resist_fire 100
+value 960
+end

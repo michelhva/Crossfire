@@ -1,0 +1,44 @@
+# world.quests -- global quest definition file
+#
+# This file describes the various quests known in the game. It is used by the
+# functions in 'server/quest.c'.
+#
+# This file describes the various quests known in the game, which is used by
+# the functions in 'server/quest.c'. For the most part, this file pulls in
+# additional quest description files that are region-specific.
+#
+# Quest definition files are written much like other files in the game. Each
+# quest is defined by several keys, which are read from the file line-by-line.
+# Some keys contain fields that may span multiple lines (i.e. 'description').
+# The best way to understand the format is to look at an existing example.
+#
+# Key Reference:
+#   quest           - internal name, which must be globally unique
+#   title           - short, one-line descriptive title for the quest
+#   description     - start of a description field for the block it is in
+#   end_description - end a description field
+#   restart         - (optional) when set to a non-zero integer, the quest can
+#                     is replayable (can be completed multiple times)
+#   step            - integer value for the beginning of a step block; this
+#                     block must also contain its own description block (see
+#                     examples for details)
+#   end_step        - end a step field
+#   end_quest       - end of a quest definition
+#
+#   include         - include another quest file, either as a relative path to
+#                     the current directory or an absolute path from the top
+#                     level maps directory
+
+include brest/brest.quests
+include darcap/darcap.quests
+include darcap/darcap/elemental.quests
+include euthville/euthville.quests
+include lake_country/lake_country.quests
+include navar_city/navar_city.quests
+include port_joseph/port_joseph.quests
+include quests/quests.quests
+include santo_dominion/santo_dominion.quests
+include scorn/scorn.quests
+include start/start.quests
+include test/test.quests
+include wolfsburg/wolfsburg.quests

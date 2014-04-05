@@ -1,0 +1,4271 @@
+arch map
+name Tutorial Passage
+width 30
+height 20
+msg
+Created:  2008-07-07 lampshade
+Modified: 2008-07-08 lampshade
+endmsg
+end
+arch dirtfloor
+end
+arch wall_2_2_2
+end
+arch dirtfloor
+y 1
+end
+arch wall_2_1_1
+y 1
+end
+arch dirtfloor
+y 2
+end
+arch wall_2_1_1
+y 2
+end
+arch dirtfloor
+y 3
+end
+arch wall_2_1_1
+y 3
+end
+arch dirtfloor
+y 4
+end
+arch wall_2_1_1
+y 4
+end
+arch dirtfloor
+y 5
+end
+arch wall_2_1_1
+y 5
+end
+arch dirtfloor
+y 6
+end
+arch wall_2_1_1
+y 6
+end
+arch dirtfloor
+y 7
+end
+arch wall_2_1_1
+y 7
+end
+arch dirtfloor
+y 8
+end
+arch wall_2_1_1
+y 8
+end
+arch wall_3_2
+y 8
+end
+arch dirtfloor
+y 9
+end
+arch wall_2_1_1
+y 9
+end
+arch dirtfloor
+y 10
+end
+arch wall_2_1_1
+y 10
+end
+arch dirtfloor
+y 11
+end
+arch wall_2_1_1
+y 11
+end
+arch wall_3_2
+y 11
+end
+arch dirtfloor
+y 12
+end
+arch wall_2_1_1
+y 12
+end
+arch dirtfloor
+y 13
+end
+arch wall_2_1_1
+y 13
+end
+arch dirtfloor
+y 14
+end
+arch wall_2_1_1
+y 14
+end
+arch dirtfloor
+y 15
+end
+arch wall_2_1_1
+y 15
+end
+arch dirtfloor
+y 16
+end
+arch wall_2_1_1
+y 16
+end
+arch dirtfloor
+y 17
+end
+arch wall_2_1_1
+y 17
+end
+arch dirtfloor
+y 18
+end
+arch wall_2_1_1
+y 18
+end
+arch dirtfloor
+y 19
+end
+arch wall_2_2_1
+y 19
+end
+arch dirtfloor
+x 1
+end
+arch wall_2_1_2
+x 1
+end
+arch dirtfloor
+x 1
+y 1
+end
+arch cobblestones
+x 1
+y 2
+end
+arch cobblestones
+x 1
+y 3
+end
+arch tile_white_floor
+x 1
+y 4
+end
+arch cobblestones
+x 1
+y 5
+end
+arch cobblestones
+x 1
+y 6
+end
+arch dirtfloor
+x 1
+y 7
+end
+arch dirtfloor
+x 1
+y 8
+end
+arch wall_2_1_2
+x 1
+y 8
+end
+arch dirtfloor
+x 1
+y 9
+end
+arch ladder_up
+slaying tutorialisland
+hp 20
+sp 44
+x 1
+y 9
+end
+arch dirtfloor
+x 1
+y 10
+end
+arch sign_e
+msg
+Hello, you need a key to get past these doors.
+To pick the key up, press . Then simply move
+in to the door to unlock it.
+But beware! Some doors are trapped.
+endmsg
+x 1
+y 10
+end
+arch dirtfloor
+x 1
+y 11
+end
+arch wall_2_1_2
+x 1
+y 11
+end
+arch dirtfloor
+x 1
+y 12
+end
+arch dirtfloor
+x 1
+y 13
+end
+arch dirtfloor
+x 1
+y 14
+end
+arch dirtfloor
+x 1
+y 15
+end
+arch dirtfloor
+x 1
+y 16
+end
+arch dirtfloor
+x 1
+y 17
+end
+arch dirtfloor
+x 1
+y 18
+end
+arch dirtfloor
+x 1
+y 19
+end
+arch wall_2_1_2
+x 1
+y 19
+end
+arch dirtfloor
+x 2
+end
+arch wall_2_1_2
+x 2
+end
+arch dirtfloor
+x 2
+y 1
+end
+arch cobblestones
+x 2
+y 2
+end
+arch tile_white_floor
+x 2
+y 3
+end
+arch afloor_left
+x 2
+y 4
+end
+arch magic_mouth
+msg
+A message is scrawled on the floor:
+
+This is your standard food. You can 'a'pply it on the floor to eat it
+or you can take it with you to eat it later.
+endmsg
+x 2
+y 4
+end
+arch food
+x 2
+y 4
+end
+arch tile_white_floor
+x 2
+y 5
+end
+arch cobblestones
+x 2
+y 6
+end
+arch dirtfloor
+x 2
+y 7
+end
+arch dirtfloor
+x 2
+y 8
+end
+arch wall_2_1_2
+x 2
+y 8
+end
+arch dirtfloor
+x 2
+y 9
+end
+arch key2
+slaying tutorial_house_door
+x 2
+y 9
+end
+arch dirtfloor
+x 2
+y 10
+end
+arch dirtfloor
+x 2
+y 11
+end
+arch wall_2_1_2
+x 2
+y 11
+end
+arch cobblestones
+x 2
+y 12
+end
+arch rune_confusion
+x 2
+y 12
+end
+arch cobblestones
+x 2
+y 13
+end
+arch rune_confusion
+x 2
+y 13
+end
+arch cobblestones
+x 2
+y 14
+end
+arch rune_confusion
+x 2
+y 14
+end
+arch cobblestones
+x 2
+y 15
+end
+arch rune_confusion
+x 2
+y 15
+end
+arch cobblestones
+x 2
+y 16
+end
+arch rune_confusion
+x 2
+y 16
+end
+arch cobblestones
+x 2
+y 17
+end
+arch rune_confusion
+x 2
+y 17
+end
+arch dirtfloor
+x 2
+y 18
+end
+arch dirtfloor
+x 2
+y 19
+end
+arch wall_2_1_2
+x 2
+y 19
+end
+arch dirtfloor
+x 3
+end
+arch wall_2_1_2
+x 3
+end
+arch dirtfloor
+x 3
+y 1
+end
+arch cobblestones
+x 3
+y 2
+end
+arch tile_white_floor
+x 3
+y 3
+end
+arch afloor_magenta_left
+x 3
+y 4
+end
+arch magic_mouth
+msg
+A message is scrawled on the floor:
+
+There are a variety of foods. Some with more nutrition and others less.
+endmsg
+x 3
+y 4
+end
+arch apple
+x 3
+y 4
+end
+arch tile_white_floor
+x 3
+y 5
+end
+arch cobblestones
+x 3
+y 6
+end
+arch dirtfloor
+x 3
+y 7
+end
+arch dirtfloor
+x 3
+y 8
+end
+arch wall_2_1_2
+x 3
+y 8
+end
+arch dirtfloor
+x 3
+y 9
+end
+arch door_1
+slaying tutorial_house_door
+msg
+It's locked, you need a key to open this.
+endmsg
+x 3
+y 9
+type 20
+move_block all
+end
+arch dirtfloor
+x 3
+y 10
+end
+arch door_1
+slaying tutorial_house_door
+msg
+It's locked, you need a key to open this.
+endmsg
+x 3
+y 10
+type 20
+move_block all
+end
+arch dirtfloor
+x 3
+y 11
+end
+arch wall_2_1_2
+x 3
+y 11
+end
+arch dirtfloor
+x 3
+y 12
+end
+arch strangefloor
+x 3
+y 12
+end
+arch dirtfloor
+x 3
+y 13
+end
+arch strangefloor
+x 3
+y 13
+end
+arch dirtfloor
+x 3
+y 14
+end
+arch strangefloor
+x 3
+y 14
+end
+arch dirtfloor
+x 3
+y 15
+end
+arch strangefloor
+x 3
+y 15
+end
+arch dirtfloor
+x 3
+y 16
+end
+arch strangefloor
+x 3
+y 16
+end
+arch cobblestones
+x 3
+y 17
+end
+arch rune_confusion
+x 3
+y 17
+end
+arch dirtfloor
+x 3
+y 18
+end
+arch dirtfloor
+x 3
+y 19
+end
+arch wall_2_1_2
+x 3
+y 19
+end
+arch dirtfloor
+x 4
+end
+arch wall_2_1_2
+x 4
+end
+arch dirtfloor
+x 4
+y 1
+end
+arch cobblestones
+x 4
+y 2
+end
+arch tile_white_floor
+x 4
+y 3
+end
+arch goldfloor
+name a floor
+x 4
+y 4
+end
+arch magic_mouth
+msg
+A message is scrawled on the floor:
+
+Some monsters drop body parts. You can eat those too.
+endmsg
+x 4
+y 4
+end
+arch liver
+x 4
+y 4
+end
+arch tile_white_floor
+x 4
+y 5
+end
+arch cobblestones
+x 4
+y 6
+end
+arch sign
+msg
+In order to survive you need food.
+If your food meter goes to zero you'll
+start losing health.
+endmsg
+x 4
+y 6
+end
+arch button_small
+x 4
+y 7
+invisible 1
+connected 21
+end
+arch dirtfloor
+x 4
+y 7
+end
+arch button_small
+x 4
+y 8
+invisible 1
+connected 21
+end
+arch dirtfloor
+x 4
+y 8
+end
+arch odoorn2_closed_1
+x 4
+y 8
+connected 21
+end
+arch button_small
+x 4
+y 9
+invisible 1
+connected 21
+end
+arch dirtfloor
+x 4
+y 9
+end
+arch sign
+msg
+The Virtues of Food
+endmsg
+x 4
+y 9
+end
+arch button_small
+x 4
+y 10
+invisible 1
+connected 22
+end
+arch dirtfloor
+x 4
+y 10
+end
+arch sign
+msg
+The Tricks of Traps
+endmsg
+x 4
+y 10
+end
+arch button_small
+x 4
+y 11
+invisible 1
+connected 22
+end
+arch dirtfloor
+x 4
+y 11
+end
+arch odoorn2_closed_1
+x 4
+y 11
+connected 22
+end
+arch button_small
+x 4
+y 12
+invisible 1
+connected 22
+end
+arch strangefloor
+x 4
+y 12
+end
+arch strangefloor
+x 4
+y 13
+end
+arch rune_mark
+msg
+Stop where you are!
+
+The yellow floors are littered with traps, enter with caution!
+In order to detect them, stand by them and wait a while or use
+the 'find traps' skill. If you have the 'disarm traps' skill you also
+disarm them if you have located them.
+
+Beware of chests also, for they can be trapped too.
+endmsg
+x 4
+y 13
+end
+arch dirtfloor
+x 4
+y 14
+end
+arch strangefloor
+x 4
+y 14
+end
+arch dirtfloor
+x 4
+y 15
+end
+arch strangefloor
+x 4
+y 15
+end
+arch dirtfloor
+x 4
+y 16
+end
+arch strangefloor
+x 4
+y 16
+end
+arch cobblestones
+x 4
+y 17
+end
+arch rune_confusion
+x 4
+y 17
+end
+arch dirtfloor
+x 4
+y 18
+end
+arch dirtfloor
+x 4
+y 19
+end
+arch wall_2_1_2
+x 4
+y 19
+end
+arch dirtfloor
+x 5
+end
+arch wall_2_1_2
+x 5
+end
+arch dirtfloor
+x 5
+y 1
+end
+arch cobblestones
+x 5
+y 2
+end
+arch tile_white_floor
+x 5
+y 3
+end
+arch afloor_blue_left
+x 5
+y 4
+end
+arch magic_mouth
+msg
+A message scrawled on the floor says:
+
+Waybreads are the MRE (Meals-Ready-to-Eat)
+of Crossfire.  They weigh very little but pack
+a large food value.  They are much more
+expensive than normal food, but when you
+can afford them, they are the best food to
+take on long trips or dungeon excursions,
+since their light weight won't slow you down.
+endmsg
+x 5
+y 4
+end
+arch waybread
+x 5
+y 4
+end
+arch tile_white_floor
+x 5
+y 5
+end
+arch cobblestones
+x 5
+y 6
+end
+arch dirtfloor
+x 5
+y 7
+end
+arch dirtfloor
+x 5
+y 8
+end
+arch wall_2_1_2
+x 5
+y 8
+end
+arch dirtfloor
+x 5
+y 9
+end
+arch dirtfloor
+x 5
+y 10
+end
+arch dirtfloor
+x 5
+y 11
+end
+arch wall_2_1_2
+x 5
+y 11
+end
+arch dirtfloor
+x 5
+y 12
+end
+arch strangefloor
+x 5
+y 12
+end
+arch dirtfloor
+x 5
+y 13
+end
+arch strangefloor
+x 5
+y 13
+end
+arch dirtfloor
+x 5
+y 14
+end
+arch strangefloor
+x 5
+y 14
+end
+arch dirtfloor
+x 5
+y 15
+end
+arch strangefloor
+x 5
+y 15
+end
+arch dirtfloor
+x 5
+y 16
+end
+arch strangefloor
+x 5
+y 16
+end
+arch cobblestones
+x 5
+y 17
+end
+arch rune_confusion
+x 5
+y 17
+end
+arch dirtfloor
+x 5
+y 18
+end
+arch dirtfloor
+x 5
+y 19
+end
+arch wall_2_1_2
+x 5
+y 19
+end
+arch dirtfloor
+x 6
+end
+arch wall_2_1_2
+x 6
+end
+arch dirtfloor
+x 6
+y 1
+end
+arch cobblestones
+x 6
+y 2
+end
+arch tile_white_floor
+x 6
+y 3
+end
+arch blackmarble
+x 6
+y 4
+end
+arch magic_mouth
+msg
+A message is scrawled on the floor:
+
+An easy way to identify food to check if its poisonous or not
+is to use the 'woodsman' skill.
+endmsg
+x 6
+y 4
+end
+arch booze
+x 6
+y 4
+end
+arch tile_white_floor
+x 6
+y 5
+end
+arch cobblestones
+x 6
+y 6
+end
+arch dirtfloor
+x 6
+y 7
+end
+arch dirtfloor
+x 6
+y 8
+end
+arch wall_2_1_2
+x 6
+y 8
+end
+arch dirtfloor
+x 6
+y 9
+end
+arch dirtfloor
+x 6
+y 10
+end
+arch dirtfloor
+x 6
+y 11
+end
+arch wall_2_1_2
+x 6
+y 11
+end
+arch cobblestones
+x 6
+y 12
+end
+arch rune_confusion
+x 6
+y 12
+end
+arch cobblestones
+x 6
+y 13
+end
+arch rune_confusion
+x 6
+y 13
+end
+arch cobblestones
+x 6
+y 14
+end
+arch rune_confusion
+x 6
+y 14
+end
+arch cobblestones
+x 6
+y 15
+end
+arch rune_confusion
+x 6
+y 15
+end
+arch cobblestones
+x 6
+y 16
+end
+arch rune_confusion
+x 6
+y 16
+end
+arch cobblestones
+x 6
+y 17
+end
+arch rune_confusion
+x 6
+y 17
+end
+arch dirtfloor
+x 6
+y 18
+end
+arch dirtfloor
+x 6
+y 19
+end
+arch wall_2_1_2
+x 6
+y 19
+end
+arch dirtfloor
+x 7
+end
+arch wall_2_1_2
+x 7
+end
+arch dirtfloor
+x 7
+y 1
+end
+arch cobblestones
+x 7
+y 2
+end
+arch cobblestones
+x 7
+y 3
+end
+arch tile_white_floor
+x 7
+y 4
+end
+arch cobblestones
+x 7
+y 5
+end
+arch cobblestones
+x 7
+y 6
+end
+arch dirtfloor
+x 7
+y 7
+end
+arch dirtfloor
+x 7
+y 8
+end
+arch wall_2_1_2
+x 7
+y 8
+end
+arch dirtfloor
+x 7
+y 9
+end
+arch sign_e
+msg
+There are walls that you can break, like these earth walls.
+endmsg
+x 7
+y 9
+end
+arch dirtfloor
+x 7
+y 10
+end
+arch dirtfloor
+x 7
+y 11
+end
+arch wall_2_1_2
+x 7
+y 11
+end
+arch dirtfloor
+x 7
+y 12
+end
+arch dirtfloor
+x 7
+y 13
+end
+arch dirtfloor
+x 7
+y 14
+end
+arch dirtfloor
+x 7
+y 15
+end
+arch dirtfloor
+x 7
+y 16
+end
+arch dirtfloor
+x 7
+y 17
+end
+arch dirtfloor
+x 7
+y 18
+end
+arch dirtfloor
+x 7
+y 19
+end
+arch wall_2_1_2
+x 7
+y 19
+end
+arch dirtfloor
+x 8
+end
+arch wall_2_1_2
+x 8
+end
+arch wall_3_3
+x 8
+end
+arch dirtfloor
+x 8
+y 1
+end
+arch wall_2_1_1
+x 8
+y 1
+end
+arch dirtfloor
+x 8
+y 2
+end
+arch wall_2_1_1
+x 8
+y 2
+end
+arch dirtfloor
+x 8
+y 3
+end
+arch wall_2_1_1
+x 8
+y 3
+end
+arch dirtfloor
+x 8
+y 4
+end
+arch wall_2_1_1
+x 8
+y 4
+end
+arch dirtfloor
+x 8
+y 5
+end
+arch wall_2_1_1
+x 8
+y 5
+end
+arch dirtfloor
+x 8
+y 6
+end
+arch wall_2_1_1
+x 8
+y 6
+end
+arch dirtfloor
+x 8
+y 7
+end
+arch wall_2_1_1
+x 8
+y 7
+end
+arch dirtfloor
+x 8
+y 8
+end
+arch wall_2_1_2
+x 8
+y 8
+end
+arch wall_3_1
+x 8
+y 8
+end
+arch dirtfloor
+x 8
+y 9
+end
+arch weak_wall_5
+x 8
+y 9
+end
+arch dirtfloor
+x 8
+y 10
+end
+arch weak_wall_5
+x 8
+y 10
+end
+arch dirtfloor
+x 8
+y 11
+end
+arch wall_2_1_2
+x 8
+y 11
+end
+arch wall_3_3
+x 8
+y 11
+end
+arch dirtfloor
+x 8
+y 12
+end
+arch wall_2_1_1
+x 8
+y 12
+end
+arch dirtfloor
+x 8
+y 13
+end
+arch wall_2_1_1
+x 8
+y 13
+end
+arch dirtfloor
+x 8
+y 14
+end
+arch wall_2_1_1
+x 8
+y 14
+end
+arch dirtfloor
+x 8
+y 15
+end
+arch wall_2_1_1
+x 8
+y 15
+end
+arch dirtfloor
+x 8
+y 16
+end
+arch wall_2_1_1
+x 8
+y 16
+end
+arch dirtfloor
+x 8
+y 17
+end
+arch wall_2_1_1
+x 8
+y 17
+end
+arch dirtfloor
+x 8
+y 18
+end
+arch wall_2_1_1
+x 8
+y 18
+end
+arch dirtfloor
+x 8
+y 19
+end
+arch wall_2_1_2
+x 8
+y 19
+end
+arch wall_3_1
+x 8
+y 19
+end
+arch dirtfloor
+x 9
+end
+arch wall_2_1_2
+x 9
+end
+arch mountain
+x 9
+y 1
+end
+arch mountain
+x 9
+y 2
+end
+arch mountain
+x 9
+y 3
+end
+arch mountain
+x 9
+y 4
+end
+arch grass
+x 9
+y 5
+end
+arch grass
+x 9
+y 6
+end
+arch fernssparse
+x 9
+y 6
+end
+arch grass
+x 9
+y 7
+end
+arch tree5
+x 9
+y 7
+end
+arch dirtfloor
+x 9
+y 8
+end
+arch wall_2_1_2
+x 9
+y 8
+end
+arch dirtfloor
+x 9
+y 9
+end
+arch dirtfloor
+x 9
+y 10
+end
+arch dirtfloor
+x 9
+y 11
+end
+arch wall_2_1_2
+x 9
+y 11
+end
+arch dungeon_floor
+x 9
+y 12
+end
+arch chest_2
+x 9
+y 12
+no_pick 1
+arch goldcoin
+end
+end
+arch dungeon_floor
+x 9
+y 13
+end
+arch dungeon_floor
+x 9
+y 14
+end
+arch dungeon_floor
+x 9
+y 15
+end
+arch dungeon_floor
+x 9
+y 16
+end
+arch sign
+msg
+There is no key for this door.
+However bashing it open or picklocking it is a viable solution to the problem.
+endmsg
+x 9
+y 16
+end
+arch dungeon_floor
+x 9
+y 17
+end
+arch door_2
+hp 100
+x 9
+y 17
+end
+arch dungeon_floor
+x 9
+y 18
+end
+arch random_gem
+x 9
+y 18
+end
+arch dirtfloor
+x 9
+y 19
+end
+arch wall_2_1_2
+x 9
+y 19
+end
+arch dirtfloor
+x 10
+end
+arch wall_2_1_2
+x 10
+end
+arch mountain
+x 10
+y 1
+end
+arch mountain_2
+x 10
+y 2
+end
+arch mountain
+x 10
+y 4
+end
+arch grass
+x 10
+y 5
+end
+arch grass
+x 10
+y 6
+end
+arch fernssparse
+x 10
+y 6
+end
+arch grass
+x 10
+y 7
+end
+arch tree4
+x 10
+y 7
+end
+arch dirtfloor
+x 10
+y 8
+end
+arch wall_2_1_2
+x 10
+y 8
+end
+arch dirtfloor
+x 10
+y 9
+end
+arch dirtfloor
+x 10
+y 10
+end
+arch dirtfloor
+x 10
+y 11
+end
+arch wall_2_1_2
+x 10
+y 11
+end
+arch dungeon_floor
+x 10
+y 12
+end
+arch sign_w
+msg
+How to use a chest:
+
+Just 'a'pply it and right click the item shown in the chest.
+Right clicking items will either pick up or drop them, depending on where they're at.
+endmsg
+x 10
+y 12
+end
+arch dungeon_floor
+x 10
+y 13
+end
+arch dungeon_floor
+x 10
+y 14
+end
+arch dungeon_floor
+x 10
+y 15
+end
+arch dungeon_floor
+x 10
+y 16
+end
+arch dungeon_floor
+x 10
+y 17
+end
+arch wwall_2_2_3
+x 10
+y 17
+end
+arch dungeon_floor
+x 10
+y 18
+end
+arch wwall_win1
+x 10
+y 18
+end
+arch dirtfloor
+x 10
+y 19
+end
+arch wall_2_1_2
+x 10
+y 19
+end
+arch dirtfloor
+x 11
+end
+arch wall_2_1_2
+x 11
+end
+arch mountain
+x 11
+y 1
+end
+arch mountain
+x 11
+y 4
+end
+arch grass
+x 11
+y 5
+end
+arch grass
+x 11
+y 6
+end
+arch fernssparse
+x 11
+y 6
+end
+arch grass
+x 11
+y 7
+end
+arch tree4
+x 11
+y 7
+end
+arch dirtfloor
+x 11
+y 8
+end
+arch wall_2_1_2
+x 11
+y 8
+end
+arch dirtfloor
+x 11
+y 9
+end
+arch dirtfloor
+x 11
+y 10
+end
+arch dirtfloor
+x 11
+y 11
+end
+arch wall_2_1_2
+x 11
+y 11
+end
+arch dungeon_floor
+x 11
+y 12
+end
+arch dungeon_floor
+x 11
+y 13
+end
+arch dungeon_floor
+x 11
+y 14
+end
+arch dungeon_floor
+x 11
+y 15
+end
+arch dungeon_floor
+x 11
+y 16
+end
+arch dungeon_floor
+x 11
+y 17
+end
+arch button_handle
+x 11
+y 17
+connected 3
+end
+arch dungeon_floor
+x 11
+y 18
+end
+arch gate_closed_1
+x 11
+y 18
+connected 3
+end
+arch dirtfloor
+x 11
+y 19
+end
+arch wall_2_1_2
+x 11
+y 19
+end
+arch dirtfloor
+x 12
+end
+arch wall_2_1_2
+x 12
+end
+arch mountain
+x 12
+y 1
+end
+arch mountain
+x 12
+y 2
+end
+arch mountain
+x 12
+y 3
+end
+arch mountain
+x 12
+y 4
+end
+arch grass
+x 12
+y 5
+end
+arch grass
+x 12
+y 6
+end
+arch sign
+msg
+Crossfire has a variety of terrain.
+Experiment with them!
+endmsg
+x 12
+y 6
+end
+arch button_small
+x 12
+y 7
+invisible 1
+connected 23
+end
+arch grass
+x 12
+y 7
+end
+arch button_small
+x 12
+y 8
+invisible 1
+connected 23
+end
+arch dirtfloor
+x 12
+y 8
+end
+arch odoorn2_closed_1
+x 12
+y 8
+connected 23
+end
+arch button_small
+x 12
+y 9
+invisible 1
+connected 23
+end
+arch dirtfloor
+x 12
+y 9
+end
+arch sign
+msg
+The Ways of Walking
+endmsg
+x 12
+y 9
+end
+arch button_small
+x 12
+y 10
+invisible 1
+connected 24
+end
+arch dirtfloor
+x 12
+y 10
+end
+arch sign
+msg
+Dungeon Features 101
+endmsg
+x 12
+y 10
+end
+arch button_small
+x 12
+y 11
+invisible 1
+connected 24
+end
+arch dirtfloor
+x 12
+y 11
+end
+arch odoorn2_closed_1
+x 12
+y 11
+connected 24
+end
+arch button_small
+x 12
+y 12
+invisible 1
+connected 24
+end
+arch dirtfloor
+x 12
+y 12
+end
+arch sign
+msg
+Levers and buttons are part of dungeons.
+They're easy to use! Just 'a'pply them.
+endmsg
+x 12
+y 12
+end
+arch dungeon_floor
+x 12
+y 13
+end
+arch dungeon_floor
+x 12
+y 14
+end
+arch dungeon_floor
+x 12
+y 15
+end
+arch dungeon_floor
+x 12
+y 16
+end
+arch dungeon_floor
+x 12
+y 17
+end
+arch button_small
+x 12
+y 17
+connected 2
+end
+arch dungeon_floor
+x 12
+y 18
+end
+arch ggate_closed
+x 12
+y 18
+connected 2
+end
+arch dirtfloor
+x 12
+y 19
+end
+arch wall_2_1_2
+x 12
+y 19
+end
+arch dirtfloor
+x 13
+end
+arch wall_2_1_2
+x 13
+end
+arch grass
+x 13
+y 1
+end
+arch biglake_2_2_2
+name lake
+x 13
+y 1
+end
+arch grass
+x 13
+y 2
+end
+arch biglake_n
+name lake
+x 13
+y 2
+end
+arch grass
+x 13
+y 3
+end
+arch biglake_n
+name lake
+x 13
+y 3
+end
+arch grass
+x 13
+y 4
+end
+arch biglake_2_2_1
+name lake
+x 13
+y 4
+end
+arch grass
+x 13
+y 5
+end
+arch grass
+x 13
+y 6
+end
+arch forestsparse
+x 13
+y 6
+end
+arch grass
+x 13
+y 7
+end
+arch tree4
+x 13
+y 7
+end
+arch dirtfloor
+x 13
+y 8
+end
+arch wall_2_1_2
+x 13
+y 8
+end
+arch dirtfloor
+x 13
+y 9
+end
+arch dirtfloor
+x 13
+y 10
+end
+arch dirtfloor
+x 13
+y 11
+end
+arch wall_2_1_2
+x 13
+y 11
+end
+arch dungeon_floor
+x 13
+y 12
+end
+arch dungeon_floor
+x 13
+y 13
+end
+arch dungeon_floor
+x 13
+y 14
+end
+arch dungeon_floor
+x 13
+y 15
+end
+arch dungeon_floor
+x 13
+y 16
+end
+arch spikes_closed
+x 13
+y 16
+connected 1
+end
+arch dungeon_floor
+x 13
+y 17
+end
+arch spikes_closed
+x 13
+y 17
+connected 1
+end
+arch dungeon_floor
+x 13
+y 18
+end
+arch spikes_closed
+x 13
+y 18
+connected 1
+end
+arch dirtfloor
+x 13
+y 19
+end
+arch wall_2_1_2
+x 13
+y 19
+end
+arch dirtfloor
+x 14
+end
+arch wall_2_1_2
+x 14
+end
+arch grass
+x 14
+y 1
+end
+arch biglake_n
+name lake
+x 14
+y 1
+end
+arch grass
+x 14
+y 2
+end
+arch biglake_n
+name sea
+x 14
+y 2
+end
+arch grass
+x 14
+y 3
+end
+arch biglake_n
+name sea
+x 14
+y 3
+end
+arch grass
+x 14
+y 4
+end
+arch biglake_n
+name sea
+x 14
+y 4
+end
+arch grass
+x 14
+y 5
+end
+arch biglake_2_2_1
+name lake
+x 14
+y 5
+end
+arch grass
+x 14
+y 6
+end
+arch forestsparse
+x 14
+y 6
+end
+arch grass
+x 14
+y 7
+end
+arch tree4
+x 14
+y 7
+end
+arch dirtfloor
+x 14
+y 8
+end
+arch wall_2_1_2
+x 14
+y 8
+end
+arch dirtfloor
+x 14
+y 9
+end
+arch dirtfloor
+x 14
+y 10
+end
+arch dirtfloor
+x 14
+y 11
+end
+arch wall_2_1_2
+x 14
+y 11
+end
+arch dungeon_floor
+x 14
+y 12
+end
+arch dungeon_floor
+x 14
+y 13
+end
+arch dungeon_floor
+x 14
+y 14
+end
+arch dungeon_floor
+x 14
+y 15
+end
+arch sign
+msg
+Players aren't heavy enough to press a large button.
+But rolling boulders on top of one will activate it.
+endmsg
+x 14
+y 15
+end
+arch dungeon_floor
+x 14
+y 16
+end
+arch boulder
+x 14
+y 16
+end
+arch dungeon_floor
+x 14
+y 17
+end
+arch button_plate
+x 14
+y 17
+connected 1
+end
+arch dungeon_floor
+x 14
+y 18
+end
+arch spikes_closed
+x 14
+y 18
+connected 1
+end
+arch dirtfloor
+x 14
+y 19
+end
+arch wall_2_1_2
+x 14
+y 19
+end
+arch dirtfloor
+x 15
+end
+arch wall_2_1_2
+x 15
+end
+arch grass
+x 15
+y 1
+end
+arch biglake_2_2_3
+name lake
+x 15
+y 1
+end
+arch grass
+x 15
+y 2
+end
+arch biglake_n
+name lake
+x 15
+y 2
+end
+arch grass
+x 15
+y 3
+end
+arch biglake_n
+name lake
+x 15
+y 3
+end
+arch grass
+x 15
+y 4
+end
+arch biglake_n
+name lake
+x 15
+y 4
+end
+arch grass
+x 15
+y 5
+end
+arch biglake_2_2_4
+name lake
+x 15
+y 5
+end
+arch grass
+x 15
+y 6
+end
+arch forestsparse
+x 15
+y 6
+end
+arch grass
+x 15
+y 7
+end
+arch tree5
+x 15
+y 7
+end
+arch dirtfloor
+x 15
+y 8
+end
+arch wall_2_1_2
+x 15
+y 8
+end
+arch dirtfloor
+x 15
+y 9
+end
+arch dirtfloor
+x 15
+y 10
+end
+arch dirtfloor
+x 15
+y 11
+end
+arch wall_2_1_2
+x 15
+y 11
+end
+arch dungeon_floor
+x 15
+y 12
+end
+arch dungeon_floor
+x 15
+y 13
+end
+arch dungeon_floor
+x 15
+y 14
+end
+arch dungeon_floor
+x 15
+y 15
+end
+arch dungeon_floor
+x 15
+y 16
+end
+arch spikes_closed
+x 15
+y 16
+connected 1
+end
+arch dungeon_floor
+x 15
+y 17
+end
+arch spikes_closed
+x 15
+y 17
+connected 1
+end
+arch dungeon_floor
+x 15
+y 18
+end
+arch spikes_closed
+x 15
+y 18
+connected 1
+end
+arch dirtfloor
+x 15
+y 19
+end
+arch wall_2_1_2
+x 15
+y 19
+end
+arch dirtfloor
+x 16
+end
+arch wall_2_1_2
+x 16
+end
+arch wall_3_3
+x 16
+end
+arch dirtfloor
+x 16
+y 1
+end
+arch wall_2_1_1
+x 16
+y 1
+end
+arch dirtfloor
+x 16
+y 2
+end
+arch wall_2_1_1
+x 16
+y 2
+end
+arch dirtfloor
+x 16
+y 3
+end
+arch wall_2_1_1
+x 16
+y 3
+end
+arch dirtfloor
+x 16
+y 4
+end
+arch wall_2_1_1
+x 16
+y 4
+end
+arch dirtfloor
+x 16
+y 5
+end
+arch wall_2_1_1
+x 16
+y 5
+end
+arch dirtfloor
+x 16
+y 6
+end
+arch wall_2_1_1
+x 16
+y 6
+end
+arch dirtfloor
+x 16
+y 7
+end
+arch wall_2_1_1
+x 16
+y 7
+end
+arch dirtfloor
+x 16
+y 8
+end
+arch wall_2_1_2
+x 16
+y 8
+end
+arch wall_3_1
+x 16
+y 8
+end
+arch dirtfloor
+x 16
+y 9
+end
+arch dirtfloor
+x 16
+y 10
+end
+arch dirtfloor
+x 16
+y 11
+end
+arch wall_2_1_2
+x 16
+y 11
+end
+arch wall_3_3
+x 16
+y 11
+end
+arch dirtfloor
+x 16
+y 12
+end
+arch wall_2_1_1
+x 16
+y 12
+end
+arch dirtfloor
+x 16
+y 13
+end
+arch wall_2_1_1
+x 16
+y 13
+end
+arch dirtfloor
+x 16
+y 14
+end
+arch wall_2_1_1
+x 16
+y 14
+end
+arch dirtfloor
+x 16
+y 15
+end
+arch wall_2_1_1
+x 16
+y 15
+end
+arch dirtfloor
+x 16
+y 16
+end
+arch wall_2_1_1
+x 16
+y 16
+end
+arch dirtfloor
+x 16
+y 17
+end
+arch wall_2_1_1
+x 16
+y 17
+end
+arch dirtfloor
+x 16
+y 18
+end
+arch wall_2_1_1
+x 16
+y 18
+end
+arch dirtfloor
+x 16
+y 19
+end
+arch wall_2_1_2
+x 16
+y 19
+end
+arch wall_3_1
+x 16
+y 19
+end
+arch dirtfloor
+x 17
+end
+arch wall_2_1_2
+x 17
+end
+arch dirtfloor
+x 17
+y 1
+end
+arch marble
+x 17
+y 1
+end
+arch dirtfloor
+x 17
+y 2
+end
+arch marble
+x 17
+y 2
+end
+arch dirtfloor
+x 17
+y 3
+end
+arch marble
+x 17
+y 3
+end
+arch dirtfloor
+x 17
+y 4
+end
+arch marble
+x 17
+y 4
+end
+arch dirtfloor
+x 17
+y 5
+end
+arch marble
+x 17
+y 5
+end
+arch dirtfloor
+x 17
+y 6
+end
+arch marble
+x 17
+y 6
+end
+arch dirtfloor
+x 17
+y 7
+end
+arch marble
+x 17
+y 7
+end
+arch dirtfloor
+x 17
+y 8
+end
+arch wall_2_1_2
+x 17
+y 8
+end
+arch dirtfloor
+x 17
+y 9
+end
+arch dirtfloor
+x 17
+y 10
+end
+arch dirtfloor
+x 17
+y 11
+end
+arch wall_2_1_2
+x 17
+y 11
+end
+arch dirtfloor
+x 17
+y 12
+end
+arch dirtfloor
+x 17
+y 13
+end
+arch dirtfloor
+x 17
+y 14
+end
+arch dirtfloor
+x 17
+y 15
+end
+arch grate_closed_1
+x 17
+y 15
+connected 5
+end
+arch dirtfloor
+x 17
+y 16
+end
+arch bones5
+x 17
+y 16
+end
+arch dirtfloor
+x 17
+y 17
+end
+arch bones1
+x 17
+y 17
+end
+arch dirtfloor
+x 17
+y 18
+end
+arch dirtfloor
+x 17
+y 19
+end
+arch wall_2_1_2
+x 17
+y 19
+end
+arch dirtfloor
+x 18
+end
+arch wall_2_1_2
+x 18
+end
+arch dirtfloor
+x 18
+y 1
+end
+arch marble
+x 18
+y 1
+end
+arch dirtfloor
+x 18
+y 2
+end
+arch marble
+x 18
+y 2
+end
+arch dirtfloor
+x 18
+y 3
+end
+arch marble
+x 18
+y 3
+end
+arch dirtfloor
+x 18
+y 4
+end
+arch marble
+x 18
+y 4
+end
+arch dirtfloor
+x 18
+y 5
+end
+arch marble
+x 18
+y 5
+end
+arch dirtfloor
+x 18
+y 6
+end
+arch marble
+x 18
+y 6
+end
+arch dirtfloor
+x 18
+y 7
+end
+arch marble
+x 18
+y 7
+end
+arch dirtfloor
+x 18
+y 8
+end
+arch wall_2_1_2
+x 18
+y 8
+end
+arch dirtfloor
+x 18
+y 9
+end
+arch dirtfloor
+x 18
+y 10
+end
+arch dirtfloor
+x 18
+y 11
+end
+arch wall_2_1_2
+x 18
+y 11
+end
+arch dirtfloor
+x 18
+y 12
+end
+arch dirtfloor
+x 18
+y 13
+end
+arch dirtfloor
+x 18
+y 14
+end
+arch dirtfloor
+x 18
+y 15
+end
+arch grate_closed_1
+x 18
+y 15
+connected 5
+end
+arch dirtfloor
+x 18
+y 16
+end
+arch dirtfloor
+x 18
+y 17
+end
+arch dirtfloor
+x 18
+y 18
+end
+arch bones3
+x 18
+y 18
+end
+arch dirtfloor
+x 18
+y 19
+end
+arch wall_2_1_2
+x 18
+y 19
+end
+arch dirtfloor
+x 19
+end
+arch wall_2_1_2
+x 19
+end
+arch dirtfloor
+x 19
+y 1
+end
+arch marble
+x 19
+y 1
+end
+arch dirtfloor
+x 19
+y 2
+end
+arch marble
+x 19
+y 2
+end
+arch dirtfloor
+x 19
+y 3
+end
+arch marble
+x 19
+y 3
+end
+arch pillars
+x 19
+y 3
+end
+arch dirtfloor
+x 19
+y 4
+end
+arch marble
+x 19
+y 4
+end
+arch dirtfloor
+x 19
+y 5
+end
+arch marble
+x 19
+y 5
+end
+arch dirtfloor
+x 19
+y 6
+end
+arch marble
+x 19
+y 6
+end
+arch dirtfloor
+x 19
+y 7
+end
+arch marble
+x 19
+y 7
+end
+arch dirtfloor
+x 19
+y 8
+end
+arch wall_2_1_2
+x 19
+y 8
+end
+arch dirtfloor
+x 19
+y 9
+end
+arch dirtfloor
+x 19
+y 10
+end
+arch dirtfloor
+x 19
+y 11
+end
+arch wall_2_1_2
+x 19
+y 11
+end
+arch dirtfloor
+x 19
+y 12
+end
+arch dirtfloor
+x 19
+y 13
+end
+arch dirtfloor
+x 19
+y 14
+end
+arch dirtfloor
+x 19
+y 15
+end
+arch grate_closed_1
+x 19
+y 15
+connected 5
+end
+arch dirtfloor
+x 19
+y 16
+end
+arch dirtfloor
+x 19
+y 17
+end
+arch bones3
+x 19
+y 17
+end
+arch dirtfloor
+x 19
+y 18
+end
+arch dirtfloor
+x 19
+y 19
+end
+arch wall_2_1_2
+x 19
+y 19
+end
+arch dirtfloor
+x 20
+end
+arch wall_2_1_2
+x 20
+end
+arch dirtfloor
+x 20
+y 1
+end
+arch marble
+x 20
+y 1
+end
+arch dirtfloor
+x 20
+y 2
+end
+arch marble
+x 20
+y 2
+end
+arch brazier
+x 20
+y 2
+end
+arch dirtfloor
+x 20
+y 3
+end
+arch marble
+x 20
+y 3
+end
+arch altar_none
+x 20
+y 3
+end
+arch dirtfloor
+x 20
+y 4
+end
+arch marble
+x 20
+y 4
+end
+arch dirtfloor
+x 20
+y 5
+end
+arch marble
+x 20
+y 5
+end
+arch dirtfloor
+x 20
+y 6
+end
+arch marble
+x 20
+y 6
+end
+arch sign
+msg
+Welcome to the Pantheon, where you get to worship a god.
+In order to worship a god you need the 'prayer' skill which
+can be granted by a class, a holy symbol, or a scroll of prayer.
+Remember to choose your god wisely! Converting to another
+god will produce BAD effects.
+endmsg
+x 20
+y 6
+end
+arch button_small
+x 20
+y 7
+invisible 1
+connected 23
+end
+arch marble
+x 20
+y 7
+end
+arch button_small
+x 20
+y 8
+invisible 1
+connected 23
+end
+arch dirtfloor
+x 20
+y 8
+end
+arch odoorn2_closed_1
+x 20
+y 8
+connected 23
+end
+arch button_small
+x 20
+y 9
+invisible 1
+connected 23
+end
+arch dirtfloor
+x 20
+y 9
+end
+arch sign
+msg
+Regions of Religion
+endmsg
+x 20
+y 9
+end
+arch button_small
+x 20
+y 10
+invisible 1
+connected 24
+end
+arch dirtfloor
+x 20
+y 10
+end
+arch sign
+msg
+Hall of Monsters
+endmsg
+x 20
+y 10
+end
+arch button_small
+x 20
+y 11
+invisible 1
+connected 24
+end
+arch dirtfloor
+x 20
+y 11
+end
+arch odoorn2_closed_1
+x 20
+y 11
+connected 24
+end
+arch button_small
+x 20
+y 12
+invisible 1
+connected 24
+end
+arch dirtfloor
+x 20
+y 12
+end
+arch sign
+msg
+In here you get to fight some monsters.
+Don't worry about dying though, the ants are weak.
+There's also a 'generator' which produces
+the ants. Go to the next sign to learn how to
+fight monsters.
+endmsg
+x 20
+y 12
+end
+arch dirtfloor
+x 20
+y 13
+end
+arch sign
+msg
+How to fight melee - Very easy! Just move in to the monster and you'll attack it.
+
+How to fight with a bow - Apply the bow, hold shift and press the directional arrow keys.
+
+How to cast magic - Same as bow, use the command 'cast' then hold shift and press the directional arrow keys.
+endmsg
+x 20
+y 13
+end
+arch dirtfloor
+x 20
+y 14
+end
+arch button_lever
+x 20
+y 14
+connected 5
+end
+arch dirtfloor
+x 20
+y 15
+end
+arch grate_closed_1
+x 20
+y 15
+connected 5
+end
+arch dirtfloor
+x 20
+y 16
+end
+arch bones4
+x 20
+y 16
+end
+arch dirtfloor
+x 20
+y 17
+end
+arch dirtfloor
+x 20
+y 18
+end
+arch generate_ant
+x 20
+y 18
+end
+arch dirtfloor
+x 20
+y 19
+end
+arch wall_2_1_2
+x 20
+y 19
+end
+arch dirtfloor
+x 21
+end
+arch wall_2_1_2
+x 21
+end
+arch dirtfloor
+x 21
+y 1
+end
+arch marble
+x 21
+y 1
+end
+arch dirtfloor
+x 21
+y 2
+end
+arch marble
+x 21
+y 2
+end
+arch dirtfloor
+x 21
+y 3
+end
+arch marble
+x 21
+y 3
+end
+arch pillars
+x 21
+y 3
+end
+arch dirtfloor
+x 21
+y 4
+end
+arch marble
+x 21
+y 4
+end
+arch dirtfloor
+x 21
+y 5
+end
+arch marble
+x 21
+y 5
+end
+arch dirtfloor
+x 21
+y 6
+end
+arch marble
+x 21
+y 6
+end
+arch dirtfloor
+x 21
+y 7
+end
+arch marble
+x 21
+y 7
+end
+arch dirtfloor
+x 21
+y 8
+end
+arch wall_2_1_2
+x 21
+y 8
+end
+arch dirtfloor
+x 21
+y 9
+end
+arch dirtfloor
+x 21
+y 10
+end
+arch dirtfloor
+x 21
+y 11
+end
+arch wall_2_1_2
+x 21
+y 11
+end
+arch dirtfloor
+x 21
+y 12
+end
+arch dirtfloor
+x 21
+y 13
+end
+arch dirtfloor
+x 21
+y 14
+end
+arch dirtfloor
+x 21
+y 15
+end
+arch grate_closed_1
+x 21
+y 15
+connected 5
+end
+arch dirtfloor
+x 21
+y 16
+end
+arch bones1
+x 21
+y 16
+end
+arch dirtfloor
+x 21
+y 17
+end
+arch bones2
+x 21
+y 17
+end
+arch dirtfloor
+x 21
+y 18
+end
+arch dirtfloor
+x 21
+y 19
+end
+arch wall_2_1_2
+x 21
+y 19
+end
+arch dirtfloor
+x 22
+end
+arch wall_2_1_2
+x 22
+end
+arch dirtfloor
+x 22
+y 1
+end
+arch marble
+x 22
+y 1
+end
+arch dirtfloor
+x 22
+y 2
+end
+arch marble
+x 22
+y 2
+end
+arch dirtfloor
+x 22
+y 3
+end
+arch marble
+x 22
+y 3
+end
+arch dirtfloor
+x 22
+y 4
+end
+arch marble
+x 22
+y 4
+end
+arch dirtfloor
+x 22
+y 5
+end
+arch marble
+x 22
+y 5
+end
+arch dirtfloor
+x 22
+y 6
+end
+arch marble
+x 22
+y 6
+end
+arch dirtfloor
+x 22
+y 7
+end
+arch marble
+x 22
+y 7
+end
+arch dirtfloor
+x 22
+y 8
+end
+arch wall_2_1_2
+x 22
+y 8
+end
+arch dirtfloor
+x 22
+y 9
+end
+arch sign_e
+msg
+Your next task is to convince
+this guard to open the gate.
+Use
+----
+say hello
+----
+to him to engage
+conversation.
+
+If you're feeling evil and want to attack the guard,
+hold down ctrl. However he's very tough so
+you might want to run away fast by holding
+down ctrl too!
+endmsg
+x 22
+y 9
+end
+arch dirtfloor
+x 22
+y 10
+end
+arch dirtfloor
+x 22
+y 11
+end
+arch wall_2_1_2
+x 22
+y 11
+end
+arch dirtfloor
+x 22
+y 12
+end
+arch dirtfloor
+x 22
+y 13
+end
+arch dirtfloor
+x 22
+y 14
+end
+arch dirtfloor
+x 22
+y 15
+end
+arch grate_closed_1
+x 22
+y 15
+connected 5
+end
+arch dirtfloor
+x 22
+y 16
+end
+arch dirtfloor
+x 22
+y 17
+end
+arch dirtfloor
+x 22
+y 18
+end
+arch bones4
+x 22
+y 18
+end
+arch dirtfloor
+x 22
+y 19
+end
+arch wall_2_1_2
+x 22
+y 19
+end
+arch dirtfloor
+x 23
+end
+arch wall_2_1_2
+x 23
+end
+arch dirtfloor
+x 23
+y 1
+end
+arch marble
+x 23
+y 1
+end
+arch dirtfloor
+x 23
+y 2
+end
+arch marble
+x 23
+y 2
+end
+arch dirtfloor
+x 23
+y 3
+end
+arch marble
+x 23
+y 3
+end
+arch dirtfloor
+x 23
+y 4
+end
+arch marble
+x 23
+y 4
+end
+arch dirtfloor
+x 23
+y 5
+end
+arch marble
+x 23
+y 5
+end
+arch dirtfloor
+x 23
+y 6
+end
+arch marble
+x 23
+y 6
+end
+arch dirtfloor
+x 23
+y 7
+end
+arch marble
+x 23
+y 7
+end
+arch dirtfloor
+x 23
+y 8
+end
+arch wall_2_1_2
+x 23
+y 8
+end
+arch dirtfloor
+x 23
+y 9
+end
+arch magic_ear
+msg
+@match yes
+Click.
+endmsg
+x 23
+y 9
+connected 10
+end
+arch dirtfloor
+x 23
+y 10
+end
+arch dirtfloor
+x 23
+y 11
+end
+arch wall_2_1_2
+x 23
+y 11
+end
+arch dirtfloor
+x 23
+y 12
+end
+arch dirtfloor
+x 23
+y 13
+end
+arch dirtfloor
+x 23
+y 14
+end
+arch dirtfloor
+x 23
+y 15
+end
+arch grate_closed_1
+x 23
+y 15
+connected 5
+end
+arch dirtfloor
+x 23
+y 16
+end
+arch bones2
+x 23
+y 16
+end
+arch dirtfloor
+x 23
+y 17
+end
+arch bones5
+x 23
+y 17
+end
+arch dirtfloor
+x 23
+y 18
+end
+arch dirtfloor
+x 23
+y 19
+end
+arch wall_2_1_2
+x 23
+y 19
+end
+arch dirtfloor
+x 24
+end
+arch wall_2_1_2
+x 24
+end
+arch wall_3_3
+x 24
+end
+arch dirtfloor
+x 24
+y 1
+end
+arch wall_2_1_1
+x 24
+y 1
+end
+arch dirtfloor
+x 24
+y 2
+end
+arch wall_2_1_1
+x 24
+y 2
+end
+arch dirtfloor
+x 24
+y 3
+end
+arch wall_2_1_1
+x 24
+y 3
+end
+arch dirtfloor
+x 24
+y 4
+end
+arch wall_2_1_1
+x 24
+y 4
+end
+arch dirtfloor
+x 24
+y 5
+end
+arch wall_2_1_1
+x 24
+y 5
+end
+arch dirtfloor
+x 24
+y 6
+end
+arch wall_2_1_1
+x 24
+y 6
+end
+arch dirtfloor
+x 24
+y 7
+end
+arch wall_2_1_1
+x 24
+y 7
+end
+arch dirtfloor
+x 24
+y 8
+end
+arch wall_2_1_2
+x 24
+y 8
+end
+arch wall_3_1
+x 24
+y 8
+end
+arch dirtfloor
+x 24
+y 9
+end
+arch guard
+msg
+@match hello
+Greetings, I am the guard of this gate.
+@match gate
+Oh, do you want me to open the gate for you?
+endmsg
+x 24
+y 9
+end
+arch dirtfloor
+x 24
+y 10
+end
+arch dirtfloor
+x 24
+y 11
+end
+arch wall_2_1_2
+x 24
+y 11
+end
+arch wall_3_3
+x 24
+y 11
+end
+arch dirtfloor
+x 24
+y 12
+end
+arch wall_2_1_1
+x 24
+y 12
+end
+arch dirtfloor
+x 24
+y 13
+end
+arch wall_2_1_1
+x 24
+y 13
+end
+arch dirtfloor
+x 24
+y 14
+end
+arch wall_2_1_1
+x 24
+y 14
+end
+arch dirtfloor
+x 24
+y 15
+end
+arch wall_2_1_1
+x 24
+y 15
+end
+arch dirtfloor
+x 24
+y 16
+end
+arch wall_2_1_1
+x 24
+y 16
+end
+arch dirtfloor
+x 24
+y 17
+end
+arch wall_2_1_1
+x 24
+y 17
+end
+arch dirtfloor
+x 24
+y 18
+end
+arch wall_2_1_1
+x 24
+y 18
+end
+arch dirtfloor
+x 24
+y 19
+end
+arch wall_2_1_2
+x 24
+y 19
+end
+arch wall_3_1
+x 24
+y 19
+end
+arch dirtfloor
+x 25
+end
+arch wall_2_1_2
+x 25
+end
+arch dirtfloor
+x 25
+y 1
+end
+arch dirtfloor
+x 25
+y 2
+end
+arch dirtfloor
+x 25
+y 3
+end
+arch dirtfloor
+x 25
+y 4
+end
+arch dirtfloor
+x 25
+y 5
+end
+arch dirtfloor
+x 25
+y 6
+end
+arch dirtfloor
+x 25
+y 7
+end
+arch dirtfloor
+x 25
+y 8
+end
+arch wall_2_1_2
+x 25
+y 8
+end
+arch dirtfloor
+x 25
+y 9
+end
+arch igate_closed_2
+x 25
+y 9
+connected 10
+end
+arch dirtfloor
+x 25
+y 10
+end
+arch igate_closed_2
+x 25
+y 10
+connected 10
+end
+arch dirtfloor
+x 25
+y 11
+end
+arch wall_2_1_2
+x 25
+y 11
+end
+arch dirtfloor
+x 25
+y 12
+end
+arch dirtfloor
+x 25
+y 13
+end
+arch dirtfloor
+x 25
+y 14
+end
+arch chair_1.1
+x 25
+y 14
+end
+arch dirtfloor
+x 25
+y 15
+end
+arch table_2
+x 25
+y 15
+end
+arch dirtfloor
+x 25
+y 16
+end
+arch dirtfloor
+x 25
+y 17
+end
+arch dirtfloor
+x 25
+y 18
+end
+arch dirtfloor
+x 25
+y 19
+end
+arch wall_2_1_2
+x 25
+y 19
+end
+arch dirtfloor
+x 26
+end
+arch wall_2_1_2
+x 26
+end
+arch dirtfloor
+x 26
+y 1
+end
+arch dirtfloor
+x 26
+y 2
+end
+arch dirtfloor
+x 26
+y 3
+end
+arch dirtfloor
+x 26
+y 4
+end
+arch sign_e
+msg
+There are many secrets in Crossfire.
+Always think out of the box when you're stuck!
+endmsg
+x 26
+y 4
+end
+arch dirtfloor
+x 26
+y 5
+end
+arch dirtfloor
+x 26
+y 6
+end
+arch dirtfloor
+x 26
+y 7
+end
+arch dirtfloor
+x 26
+y 8
+end
+arch wall_2_1_2
+x 26
+y 8
+no_pass 0
+end
+arch dirtfloor
+x 26
+y 9
+end
+arch button_small
+x 26
+y 10
+invisible 1
+connected 25
+end
+arch dirtfloor
+x 26
+y 10
+end
+arch button_small
+x 26
+y 11
+invisible 1
+connected 25
+end
+arch dirtfloor
+x 26
+y 11
+end
+arch odoorn2_closed_1
+x 26
+y 11
+connected 25
+end
+arch button_small
+x 26
+y 12
+invisible 1
+connected 25
+end
+arch dirtfloor
+x 26
+y 12
+end
+arch dirtfloor
+x 26
+y 13
+end
+arch dirtfloor
+x 26
+y 14
+end
+arch dirtfloor
+x 26
+y 15
+end
+arch dirtfloor
+x 26
+y 16
+end
+arch dirtfloor
+x 26
+y 17
+end
+arch bed_save
+x 26
+y 17
+end
+arch dirtfloor
+x 26
+y 18
+end
+arch dirtfloor
+x 26
+y 19
+end
+arch wall_2_1_2
+x 26
+y 19
+end
+arch dirtfloor
+x 27
+end
+arch wall_2_1_2
+x 27
+end
+arch dirtfloor
+x 27
+y 1
+end
+arch dirtfloor
+x 27
+y 2
+end
+arch dirtfloor
+x 27
+y 3
+end
+arch dirtfloor
+x 27
+y 4
+end
+arch silvercoin
+x 27
+y 4
+nrof 100
+end
+arch dirtfloor
+x 27
+y 5
+end
+arch dirtfloor
+x 27
+y 6
+end
+arch dirtfloor
+x 27
+y 7
+end
+arch dirtfloor
+x 27
+y 8
+end
+arch wall_2_1_2
+x 27
+y 8
+no_pass 0
+end
+arch dirtfloor
+x 27
+y 9
+end
+arch button_small
+x 27
+y 10
+invisible 1
+connected 26
+end
+arch dirtfloor
+x 27
+y 10
+end
+arch button_small
+x 27
+y 11
+invisible 1
+connected 26
+end
+arch dirtfloor
+x 27
+y 11
+end
+arch odoorn2_closed_1
+x 27
+y 11
+connected 26
+end
+arch button_small
+x 27
+y 12
+invisible 1
+connected 26
+end
+arch dirtfloor
+x 27
+y 12
+end
+arch dirtfloor
+x 27
+y 13
+end
+arch dirtfloor
+x 27
+y 14
+end
+arch dirtfloor
+x 27
+y 15
+end
+arch dirtfloor
+x 27
+y 16
+end
+arch dirtfloor
+x 27
+y 17
+end
+arch bed_save
+x 27
+y 17
+end
+arch dirtfloor
+x 27
+y 18
+end
+arch dirtfloor
+x 27
+y 19
+end
+arch wall_2_1_2
+x 27
+y 19
+end
+arch dirtfloor
+x 28
+end
+arch wall_2_1_2
+x 28
+end
+arch dirtfloor
+x 28
+y 1
+end
+arch dirtfloor
+x 28
+y 2
+end
+arch dirtfloor
+x 28
+y 3
+end
+arch dirtfloor
+x 28
+y 4
+end
+arch dirtfloor
+x 28
+y 5
+end
+arch dirtfloor
+x 28
+y 6
+end
+arch dirtfloor
+x 28
+y 7
+end
+arch dirtfloor
+x 28
+y 8
+end
+arch wall_2_1_2
+x 28
+y 8
+end
+arch dirtfloor
+x 28
+y 9
+end
+arch ladder_up
+slaying tutorialisland
+hp 22
+sp 44
+x 28
+y 9
+end
+arch dirtfloor
+x 28
+y 10
+end
+arch dirtfloor
+x 28
+y 11
+end
+arch wall_2_1_2
+x 28
+y 11
+end
+arch dirtfloor
+x 28
+y 12
+end
+arch sign
+msg
+Need to take a break from Crossfire and save?
+
+Applying a bed of reality will save your character.
+
+However DO NOT save if you have zero experience
+because your character will then be deleted.
+endmsg
+x 28
+y 12
+end
+arch dirtfloor
+x 28
+y 13
+end
+arch dirtfloor
+x 28
+y 14
+end
+arch chair_1.1
+x 28
+y 14
+end
+arch dirtfloor
+x 28
+y 15
+end
+arch table_2
+x 28
+y 15
+end
+arch dirtfloor
+x 28
+y 16
+end
+arch dirtfloor
+x 28
+y 17
+end
+arch dirtfloor
+x 28
+y 18
+end
+arch dirtfloor
+x 28
+y 19
+end
+arch wall_2_1_2
+x 28
+y 19
+end
+arch dirtfloor
+x 29
+end
+arch wall_2_2_3
+x 29
+end
+arch dirtfloor
+x 29
+y 1
+end
+arch wall_2_1_1
+x 29
+y 1
+end
+arch dirtfloor
+x 29
+y 2
+end
+arch wall_2_1_1
+x 29
+y 2
+end
+arch dirtfloor
+x 29
+y 3
+end
+arch wall_2_1_1
+x 29
+y 3
+end
+arch dirtfloor
+x 29
+y 4
+end
+arch wall_2_1_1
+x 29
+y 4
+end
+arch dirtfloor
+x 29
+y 5
+end
+arch wall_2_1_1
+x 29
+y 5
+end
+arch dirtfloor
+x 29
+y 6
+end
+arch wall_2_1_1
+x 29
+y 6
+end
+arch dirtfloor
+x 29
+y 7
+end
+arch wall_2_1_1
+x 29
+y 7
+end
+arch dirtfloor
+x 29
+y 8
+end
+arch wall_2_1_1
+x 29
+y 8
+end
+arch wall_3_4
+x 29
+y 8
+end
+arch dirtfloor
+x 29
+y 9
+end
+arch wall_2_1_1
+x 29
+y 9
+end
+arch dirtfloor
+x 29
+y 10
+end
+arch wall_2_1_1
+x 29
+y 10
+end
+arch dirtfloor
+x 29
+y 11
+end
+arch wall_2_1_1
+x 29
+y 11
+end
+arch wall_3_4
+x 29
+y 11
+end
+arch dirtfloor
+x 29
+y 12
+end
+arch wall_2_1_1
+x 29
+y 12
+end
+arch dirtfloor
+x 29
+y 13
+end
+arch wall_2_1_1
+x 29
+y 13
+end
+arch dirtfloor
+x 29
+y 14
+end
+arch wall_2_1_1
+x 29
+y 14
+end
+arch dirtfloor
+x 29
+y 15
+end
+arch wall_2_1_1
+x 29
+y 15
+end
+arch dirtfloor
+x 29
+y 16
+end
+arch wall_2_1_1
+x 29
+y 16
+end
+arch dirtfloor
+x 29
+y 17
+end
+arch wall_2_1_1
+x 29
+y 17
+end
+arch dirtfloor
+x 29
+y 18
+end
+arch wall_2_1_1
+x 29
+y 18
+end
+arch dirtfloor
+x 29
+y 19
+end
+arch wall_2_2_4
+x 29
+y 19
+end

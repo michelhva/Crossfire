@@ -1,0 +1,20 @@
+[Config]
+victimtype= object
+victim= who
+unique= no
+always_delete= no
+time_representation= second
+#animation=MakePotion
+[special_pen]
+1 moveto 7 2
+2 stop
+0 message Hasphatois makes the fire hotter.
+3 stop
+0 message Hasphatois puts the graphite in the forge.
+2 stop
+0 message Blue smoke erupts from the forge.
+1 stop
+1 moveto 10 5
+1 stop
+0 trigger 1
+0 say Here you go.
