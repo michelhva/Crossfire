@@ -1,0 +1,1865 @@
+arch map
+name Tutorial Shop
+width 15
+height 15
+msg
+Created:  2008-07-07 lampshade
+Modified: 2008-07-08 lampshade
+endmsg
+end
+arch cobblestones
+end
+arch ewall_2_2_2
+end
+arch cobblestones
+y 1
+end
+arch ewall_2_1_1
+y 1
+end
+arch cobblestones
+y 2
+end
+arch ewall_2_1_1
+y 2
+end
+arch cobblestones
+y 2
+end
+arch ewall_2_1_1
+y 2
+end
+arch ewall_3_2
+y 2
+end
+arch cobblestones
+y 3
+end
+arch ewall_2_1_1
+y 3
+end
+arch cobblestones
+y 4
+end
+arch ewall_2_1_1
+y 4
+end
+arch cobblestones
+y 4
+end
+arch ewall_2_1_1
+y 4
+end
+arch ewall_3_2
+y 4
+end
+arch cobblestones
+y 5
+end
+arch ewall_2_1_1
+y 5
+end
+arch cobblestones
+y 6
+end
+arch ewall_2_1_1
+y 6
+end
+arch cobblestones
+y 6
+end
+arch ewall_2_1_1
+y 6
+end
+arch ewall_3_2
+y 6
+end
+arch cobblestones
+y 7
+end
+arch ewall_2_1_1
+y 7
+end
+arch cobblestones
+y 8
+end
+arch ewall_2_1_1
+y 8
+end
+arch cobblestones
+y 8
+end
+arch ewall_2_1_1
+y 8
+end
+arch ewall_3_2
+y 8
+end
+arch cobblestones
+y 9
+end
+arch ewall_2_1_1
+y 9
+end
+arch cobblestones
+y 10
+end
+arch ewall_2_1_1
+y 10
+end
+arch cobblestones
+y 10
+end
+arch ewall_2_1_1
+y 10
+end
+arch ewall_3_2
+y 10
+end
+arch cobblestones
+y 11
+end
+arch ewall_2_1_1
+y 11
+end
+arch cobblestones
+y 12
+end
+arch ewall_2_1_1
+y 12
+end
+arch ewall_3_2
+y 12
+end
+arch cobblestones
+y 13
+end
+arch ewall_2_1_1
+y 13
+end
+arch cobblestones
+y 14
+end
+arch ewall_2_2_1
+y 14
+end
+arch cobblestones
+x 1
+end
+arch ewall_2_1_2
+x 1
+end
+arch cobblestones
+x 1
+y 1
+end
+arch shop_general
+x 1
+y 1
+end
+arch cobblestones
+x 1
+y 2
+end
+arch cobblestones
+x 1
+y 2
+end
+arch ewall_2_1_2
+x 1
+y 2
+end
+arch cobblestones
+x 1
+y 3
+end
+arch shop_weapon
+x 1
+y 3
+end
+arch cobblestones
+x 1
+y 4
+end
+arch cobblestones
+x 1
+y 4
+end
+arch ewall_2_1_2
+x 1
+y 4
+end
+arch cobblestones
+x 1
+y 5
+end
+arch shop_scrolls
+x 1
+y 5
+end
+arch cobblestones
+x 1
+y 6
+end
+arch cobblestones
+x 1
+y 6
+end
+arch ewall_2_1_2
+x 1
+y 6
+end
+arch cobblestones
+x 1
+y 7
+end
+arch shop_ring
+x 1
+y 7
+end
+arch cobblestones
+x 1
+y 8
+end
+arch cobblestones
+x 1
+y 8
+end
+arch ewall_2_1_2
+x 1
+y 8
+end
+arch cobblestones
+x 1
+y 9
+end
+arch shop_potions
+x 1
+y 9
+end
+arch cobblestones
+x 1
+y 10
+end
+arch cobblestones
+x 1
+y 10
+end
+arch ewall_2_1_2
+x 1
+y 10
+end
+arch cobblestones
+x 1
+y 11
+end
+arch shop_minerals
+x 1
+y 11
+end
+arch cobblestones
+x 1
+y 12
+end
+arch ewall_2_1_2
+x 1
+y 12
+end
+arch cobblestones
+x 1
+y 13
+end
+arch shop_light
+x 1
+y 13
+end
+arch cobblestones
+x 1
+y 14
+end
+arch ewall_win2
+x 1
+y 14
+end
+arch cobblestones
+x 2
+end
+arch ewall_2_1_2
+x 2
+end
+arch cobblestones
+x 2
+y 1
+end
+arch shop_general
+x 2
+y 1
+end
+arch cobblestones
+x 2
+y 2
+end
+arch cobblestones
+x 2
+y 2
+end
+arch ewall_1_3
+x 2
+y 2
+end
+arch cobblestones
+x 2
+y 3
+end
+arch shop_weapon
+x 2
+y 3
+end
+arch cobblestones
+x 2
+y 4
+end
+arch cobblestones
+x 2
+y 4
+end
+arch ewall_1_3
+x 2
+y 4
+end
+arch cobblestones
+x 2
+y 5
+end
+arch shop_scrolls
+x 2
+y 5
+end
+arch cobblestones
+x 2
+y 6
+end
+arch cobblestones
+x 2
+y 6
+end
+arch ewall_1_3
+x 2
+y 6
+end
+arch cobblestones
+x 2
+y 7
+end
+arch shop_ring
+x 2
+y 7
+end
+arch cobblestones
+x 2
+y 8
+end
+arch cobblestones
+x 2
+y 8
+end
+arch ewall_1_3
+x 2
+y 8
+end
+arch cobblestones
+x 2
+y 9
+end
+arch shop_potions
+x 2
+y 9
+end
+arch cobblestones
+x 2
+y 10
+end
+arch cobblestones
+x 2
+y 10
+end
+arch ewall_1_3
+x 2
+y 10
+end
+arch cobblestones
+x 2
+y 11
+end
+arch shop_minerals
+x 2
+y 11
+end
+arch cobblestones
+x 2
+y 12
+end
+arch ewall_1_3
+x 2
+y 12
+end
+arch cobblestones
+x 2
+y 13
+end
+arch shop_light
+x 2
+y 13
+end
+arch cobblestones
+x 2
+y 14
+end
+arch ewall_2_1_2
+x 2
+y 14
+end
+arch cobblestones
+x 3
+end
+arch ewall_2_1_2
+x 3
+end
+arch cobblestones
+x 3
+y 1
+end
+arch shop_general
+x 3
+y 1
+end
+arch cobblestones
+x 3
+y 2
+end
+arch cobblestones
+x 3
+y 3
+end
+arch cobblestones
+x 3
+y 4
+end
+arch cobblestones
+x 3
+y 5
+end
+arch cobblestones
+x 3
+y 6
+end
+arch cobblestones
+x 3
+y 7
+end
+arch cobblestones
+x 3
+y 8
+end
+arch cobblestones
+x 3
+y 9
+end
+arch cobblestones
+x 3
+y 10
+end
+arch cobblestones
+x 3
+y 11
+end
+arch cobblestones
+x 3
+y 12
+end
+arch cobblestones
+x 3
+y 13
+end
+arch cobblestones
+x 3
+y 14
+end
+arch ewall_2_1_2
+x 3
+y 14
+end
+arch cobblestones
+x 4
+end
+arch ewall_2_1_2
+x 4
+end
+arch cobblestones
+x 4
+y 1
+end
+arch shop_general
+x 4
+y 1
+end
+arch cobblestones
+x 4
+y 2
+end
+arch cobblestones
+x 4
+y 3
+end
+arch cobblestones
+x 4
+y 4
+end
+arch cobblestones
+x 4
+y 5
+end
+arch cobblestones
+x 4
+y 6
+end
+arch cobblestones
+x 4
+y 7
+end
+arch cobblestones
+x 4
+y 8
+end
+arch cobblestones
+x 4
+y 9
+end
+arch swall_2_2_2
+x 4
+y 9
+end
+arch cobblestones
+x 4
+y 10
+end
+arch swall_2_1_1
+x 4
+y 10
+end
+arch cobblestones
+x 4
+y 11
+end
+arch swall_2_1_1
+x 4
+y 11
+end
+arch cobblestones
+x 4
+y 12
+end
+arch swall_2_1_1
+x 4
+y 12
+end
+arch cobblestones
+x 4
+y 13
+end
+arch swall_2_1_1
+x 4
+y 13
+end
+arch cobblestones
+x 4
+y 14
+end
+arch ewall_2_1_2
+x 4
+y 14
+end
+arch cobblestones
+x 5
+end
+arch ewall_2_1_2
+x 5
+end
+arch cobblestones
+x 5
+y 1
+end
+arch shop_general
+x 5
+y 1
+end
+arch cobblestones
+x 5
+y 2
+end
+arch cobblestones
+x 5
+y 2
+end
+arch ewall_1_4
+x 5
+y 2
+end
+arch cobblestones
+x 5
+y 3
+end
+arch shop_general
+x 5
+y 3
+end
+arch cobblestones
+x 5
+y 4
+end
+arch cobblestones
+x 5
+y 5
+end
+arch shop_general
+x 5
+y 5
+end
+arch cobblestones
+x 5
+y 6
+end
+arch cobblestones
+x 5
+y 6
+end
+arch ewall_1_4
+x 5
+y 6
+end
+arch cobblestones
+x 5
+y 7
+end
+arch shop_general
+x 5
+y 7
+end
+arch cobblestones
+x 5
+y 8
+end
+arch cobblestones
+x 5
+y 9
+end
+arch swall_2_1_2
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 10
+end
+arch scroll_new
+name scroll of detect magic
+x 5
+y 10
+level 1
+randomitems none
+arch spell_detect_magic
+end
+end
+arch woodfloor
+x 5
+y 11
+end
+arch sign
+msg
+In the world of Crossfire, items are unknown to you.
+Some are even cursed! In the event of equipping a cursed item,
+use a scroll of 'remove curse'.
+Some items are magical, using the spell 'detect magic' will help you find one.
+But beware, it also detects cursed items too!
+endmsg
+x 5
+y 11
+end
+arch woodfloor
+x 5
+y 12
+end
+arch woodfloor
+x 5
+y 13
+end
+arch cobblestones
+x 5
+y 14
+end
+arch ewall_2_1_2
+x 5
+y 14
+end
+arch cobblestones
+x 6
+end
+arch ewall_2_1_2
+x 6
+end
+arch cobblestones
+x 6
+y 1
+end
+arch shop_general
+x 6
+y 1
+end
+arch cobblestones
+x 6
+y 2
+end
+arch cobblestones
+x 6
+y 2
+end
+arch cobblestones
+x 6
+y 2
+end
+arch ewall_2_1_2
+x 6
+y 2
+end
+arch cobblestones
+x 6
+y 3
+end
+arch shop_general
+x 6
+y 3
+end
+arch cobblestones
+x 6
+y 4
+end
+arch merchant
+name Delph
+msg
+@match hello
+Greetings! Do you like my wares?
+@match wares
+Hehehe I got them all from my god.
+@match god
+The god Lampshade of course!
+@match lampshade
+Lampshade is a very erratic and unpredictable god. Only a professional worshipper can be prepared to handle him.
+endmsg
+x 6
+y 4
+end
+arch cobblestones
+x 6
+y 5
+end
+arch shop_general
+x 6
+y 5
+end
+arch cobblestones
+x 6
+y 6
+end
+arch cobblestones
+x 6
+y 6
+end
+arch cobblestones
+x 6
+y 6
+end
+arch ewall_2_1_2
+x 6
+y 6
+end
+arch cobblestones
+x 6
+y 7
+end
+arch shop_general
+x 6
+y 7
+end
+arch cobblestones
+x 6
+y 8
+end
+arch sign_e
+msg
+Buying items from a shop is very easy!
+Just pick up the item you want, then walk out of the store.
+You'll automatically pay for it, that is, if you have enough money.
+endmsg
+x 6
+y 8
+end
+arch cobblestones
+x 6
+y 9
+end
+arch swall_2_1_2
+x 6
+y 9
+end
+arch woodfloor
+x 6
+y 10
+end
+arch shop_mat
+x 6
+y 10
+end
+arch woodfloor
+x 6
+y 11
+end
+arch woodfloor
+x 6
+y 12
+end
+arch woodfloor
+x 6
+y 13
+end
+arch woodfloor
+x 6
+y 14
+end
+arch oakdoor
+slaying tutorialisland
+msg
+Thanks, and come again! Oh wait...
+endmsg
+hp 19
+sp 25
+x 6
+y 14
+end
+arch cobblestones
+x 7
+end
+arch ewall_2_1_2
+x 7
+end
+arch cobblestones
+x 7
+y 1
+end
+arch shop_general
+x 7
+y 1
+end
+arch cobblestones
+x 7
+y 2
+end
+arch cobblestones
+x 7
+y 2
+end
+arch cobblestones
+x 7
+y 2
+end
+arch ewall_2_1_2
+x 7
+y 2
+end
+arch cobblestones
+x 7
+y 3
+end
+arch shop_general
+x 7
+y 3
+end
+arch cobblestones
+x 7
+y 4
+end
+arch cobblestones
+x 7
+y 5
+end
+arch shop_general
+x 7
+y 5
+end
+arch cobblestones
+x 7
+y 6
+end
+arch cobblestones
+x 7
+y 6
+end
+arch cobblestones
+x 7
+y 6
+end
+arch ewall_2_1_2
+x 7
+y 6
+end
+arch cobblestones
+x 7
+y 7
+end
+arch shop_general
+x 7
+y 7
+end
+arch cobblestones
+x 7
+y 8
+end
+arch shop_mat
+x 7
+y 8
+end
+arch cobblestones
+x 7
+y 9
+end
+arch swall_2_1_2
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch woodfloor
+x 7
+y 11
+end
+arch woodfloor
+x 7
+y 12
+end
+arch woodfloor
+x 7
+y 13
+end
+arch woodfloor
+x 7
+y 14
+end
+arch oakdoor
+slaying tutorialisland
+msg
+Thanks, and come again! Oh wait...
+endmsg
+hp 19
+sp 25
+x 7
+y 14
+end
+arch cobblestones
+x 8
+end
+arch ewall_2_1_2
+x 8
+end
+arch cobblestones
+x 8
+y 1
+end
+arch shop_general
+x 8
+y 1
+end
+arch cobblestones
+x 8
+y 2
+end
+arch cobblestones
+x 8
+y 2
+end
+arch ewall_1_3
+x 8
+y 2
+end
+arch cobblestones
+x 8
+y 3
+end
+arch shop_general
+x 8
+y 3
+end
+arch cobblestones
+x 8
+y 4
+end
+arch cobblestones
+x 8
+y 5
+end
+arch shop_general
+x 8
+y 5
+end
+arch cobblestones
+x 8
+y 6
+end
+arch cobblestones
+x 8
+y 6
+end
+arch ewall_1_3
+x 8
+y 6
+end
+arch cobblestones
+x 8
+y 7
+end
+arch shop_general
+x 8
+y 7
+end
+arch cobblestones
+x 8
+y 8
+end
+arch cobblestones
+x 8
+y 9
+end
+arch swall_2_1_2
+x 8
+y 9
+end
+arch cobblestones
+x 8
+y 10
+end
+arch woodfloor
+x 8
+y 10
+end
+arch altar
+name altar of detect magic (10 gp)
+slaying money
+food 100
+x 8
+y 10
+arch spell_detect_magic
+end
+end
+arch woodfloor
+x 8
+y 11
+end
+arch altar
+name altar of detect curse (25 gp)
+slaying money
+food 250
+x 8
+y 11
+arch spell_detect_curse
+end
+end
+arch cobblestones
+x 8
+y 12
+end
+arch woodfloor
+x 8
+y 12
+end
+arch identify_table
+x 8
+y 12
+end
+arch woodfloor
+x 8
+y 13
+end
+arch sign
+msg
+How to use a table of identify:
+
+First mark an item you want to identify (by holding shift and middle clicking it)
+Then drop the specified amount of coins. (10 silver coins = 1 gold coin if you want to use silver)
+endmsg
+x 8
+y 13
+end
+arch cobblestones
+x 8
+y 14
+end
+arch ewall_2_1_2
+x 8
+y 14
+end
+arch cobblestones
+x 9
+end
+arch ewall_2_1_2
+x 9
+end
+arch cobblestones
+x 9
+y 1
+end
+arch shop_general
+x 9
+y 1
+end
+arch cobblestones
+x 9
+y 2
+end
+arch cobblestones
+x 9
+y 3
+end
+arch cobblestones
+x 9
+y 4
+end
+arch cobblestones
+x 9
+y 5
+end
+arch cobblestones
+x 9
+y 6
+end
+arch cobblestones
+x 9
+y 7
+end
+arch cobblestones
+x 9
+y 8
+end
+arch cobblestones
+x 9
+y 9
+end
+arch swall_2_2_3
+x 9
+y 9
+end
+arch cobblestones
+x 9
+y 10
+end
+arch swall_2_1_1
+x 9
+y 10
+end
+arch cobblestones
+x 9
+y 11
+end
+arch swall_2_1_1
+x 9
+y 11
+end
+arch cobblestones
+x 9
+y 12
+end
+arch swall_2_1_1
+x 9
+y 12
+end
+arch cobblestones
+x 9
+y 13
+end
+arch swall_2_1_1
+x 9
+y 13
+end
+arch cobblestones
+x 9
+y 14
+end
+arch ewall_2_1_2
+x 9
+y 14
+end
+arch cobblestones
+x 10
+end
+arch ewall_2_1_2
+x 10
+end
+arch cobblestones
+x 10
+y 1
+end
+arch shop_general
+x 10
+y 1
+end
+arch cobblestones
+x 10
+y 2
+end
+arch cobblestones
+x 10
+y 3
+end
+arch cobblestones
+x 10
+y 4
+end
+arch cobblestones
+x 10
+y 5
+end
+arch cobblestones
+x 10
+y 6
+end
+arch cobblestones
+x 10
+y 7
+end
+arch cobblestones
+x 10
+y 8
+end
+arch cobblestones
+x 10
+y 9
+end
+arch cobblestones
+x 10
+y 10
+end
+arch cobblestones
+x 10
+y 11
+end
+arch cobblestones
+x 10
+y 12
+end
+arch cobblestones
+x 10
+y 13
+end
+arch cobblestones
+x 10
+y 14
+end
+arch ewall_2_1_2
+x 10
+y 14
+end
+arch cobblestones
+x 11
+end
+arch ewall_2_1_2
+x 11
+end
+arch cobblestones
+x 11
+y 1
+end
+arch shop_general
+x 11
+y 1
+end
+arch cobblestones
+x 11
+y 2
+end
+arch cobblestones
+x 11
+y 2
+end
+arch ewall_1_4
+x 11
+y 2
+end
+arch cobblestones
+x 11
+y 3
+end
+arch shop_weapon
+x 11
+y 3
+end
+arch cobblestones
+x 11
+y 4
+end
+arch cobblestones
+x 11
+y 4
+end
+arch ewall_1_4
+x 11
+y 4
+end
+arch cobblestones
+x 11
+y 5
+end
+arch shop_scrolls
+x 11
+y 5
+end
+arch cobblestones
+x 11
+y 6
+end
+arch cobblestones
+x 11
+y 6
+end
+arch ewall_1_4
+x 11
+y 6
+end
+arch cobblestones
+x 11
+y 7
+end
+arch shop_ring
+x 11
+y 7
+end
+arch cobblestones
+x 11
+y 8
+end
+arch cobblestones
+x 11
+y 8
+end
+arch ewall_1_4
+x 11
+y 8
+end
+arch cobblestones
+x 11
+y 9
+end
+arch shop_potions
+x 11
+y 9
+end
+arch cobblestones
+x 11
+y 10
+end
+arch cobblestones
+x 11
+y 10
+end
+arch ewall_1_4
+x 11
+y 10
+end
+arch cobblestones
+x 11
+y 11
+end
+arch shop_minerals
+x 11
+y 11
+end
+arch cobblestones
+x 11
+y 12
+end
+arch ewall_1_4
+x 11
+y 12
+end
+arch cobblestones
+x 11
+y 13
+end
+arch shop_light
+x 11
+y 13
+end
+arch cobblestones
+x 11
+y 14
+end
+arch ewall_2_1_2
+x 11
+y 14
+end
+arch cobblestones
+x 12
+end
+arch ewall_2_1_2
+x 12
+end
+arch cobblestones
+x 12
+y 1
+end
+arch shop_general
+x 12
+y 1
+end
+arch cobblestones
+x 12
+y 2
+end
+arch cobblestones
+x 12
+y 2
+end
+arch ewall_2_1_2
+x 12
+y 2
+end
+arch cobblestones
+x 12
+y 3
+end
+arch shop_weapon
+x 12
+y 3
+end
+arch cobblestones
+x 12
+y 4
+end
+arch cobblestones
+x 12
+y 4
+end
+arch ewall_2_1_2
+x 12
+y 4
+end
+arch cobblestones
+x 12
+y 5
+end
+arch shop_scrolls
+x 12
+y 5
+end
+arch cobblestones
+x 12
+y 6
+end
+arch cobblestones
+x 12
+y 6
+end
+arch ewall_2_1_2
+x 12
+y 6
+end
+arch cobblestones
+x 12
+y 7
+end
+arch shop_ring
+x 12
+y 7
+end
+arch cobblestones
+x 12
+y 8
+end
+arch cobblestones
+x 12
+y 8
+end
+arch ewall_2_1_2
+x 12
+y 8
+end
+arch cobblestones
+x 12
+y 9
+end
+arch shop_potions
+x 12
+y 9
+end
+arch cobblestones
+x 12
+y 10
+end
+arch cobblestones
+x 12
+y 10
+end
+arch ewall_2_1_2
+x 12
+y 10
+end
+arch cobblestones
+x 12
+y 11
+end
+arch shop_minerals
+x 12
+y 11
+end
+arch cobblestones
+x 12
+y 12
+end
+arch ewall_2_1_2
+x 12
+y 12
+end
+arch cobblestones
+x 12
+y 13
+end
+arch shop_light
+x 12
+y 13
+end
+arch cobblestones
+x 12
+y 14
+end
+arch ewall_2_1_2
+x 12
+y 14
+end
+arch cobblestones
+x 13
+end
+arch ewall_2_1_2
+x 13
+end
+arch cobblestones
+x 13
+y 1
+end
+arch shop_general
+x 13
+y 1
+end
+arch cobblestones
+x 13
+y 2
+end
+arch cobblestones
+x 13
+y 2
+end
+arch ewall_2_1_2
+x 13
+y 2
+end
+arch cobblestones
+x 13
+y 3
+end
+arch shop_weapon
+x 13
+y 3
+end
+arch cobblestones
+x 13
+y 4
+end
+arch cobblestones
+x 13
+y 4
+end
+arch ewall_2_1_2
+x 13
+y 4
+end
+arch cobblestones
+x 13
+y 5
+end
+arch shop_scrolls
+x 13
+y 5
+end
+arch cobblestones
+x 13
+y 6
+end
+arch cobblestones
+x 13
+y 6
+end
+arch ewall_2_1_2
+x 13
+y 6
+end
+arch cobblestones
+x 13
+y 7
+end
+arch shop_ring
+x 13
+y 7
+end
+arch cobblestones
+x 13
+y 8
+end
+arch cobblestones
+x 13
+y 8
+end
+arch ewall_2_1_2
+x 13
+y 8
+end
+arch cobblestones
+x 13
+y 9
+end
+arch shop_potions
+x 13
+y 9
+end
+arch cobblestones
+x 13
+y 10
+end
+arch cobblestones
+x 13
+y 10
+end
+arch ewall_2_1_2
+x 13
+y 10
+end
+arch cobblestones
+x 13
+y 11
+end
+arch shop_minerals
+x 13
+y 11
+end
+arch cobblestones
+x 13
+y 12
+end
+arch ewall_2_1_2
+x 13
+y 12
+end
+arch cobblestones
+x 13
+y 13
+end
+arch shop_light
+x 13
+y 13
+end
+arch cobblestones
+x 13
+y 14
+end
+arch ewall_win2
+x 13
+y 14
+end
+arch cobblestones
+x 14
+end
+arch ewall_2_2_3
+x 14
+end
+arch cobblestones
+x 14
+y 1
+end
+arch ewall_2_1_1
+x 14
+y 1
+end
+arch cobblestones
+x 14
+y 2
+end
+arch ewall_2_1_1
+x 14
+y 2
+end
+arch cobblestones
+x 14
+y 2
+end
+arch ewall_2_1_1
+x 14
+y 2
+end
+arch ewall_3_4
+x 14
+y 2
+end
+arch cobblestones
+x 14
+y 3
+end
+arch ewall_2_1_1
+x 14
+y 3
+end
+arch cobblestones
+x 14
+y 4
+end
+arch ewall_2_1_1
+x 14
+y 4
+end
+arch cobblestones
+x 14
+y 4
+end
+arch ewall_2_1_1
+x 14
+y 4
+end
+arch ewall_3_4
+x 14
+y 4
+end
+arch cobblestones
+x 14
+y 5
+end
+arch ewall_2_1_1
+x 14
+y 5
+end
+arch cobblestones
+x 14
+y 6
+end
+arch ewall_2_1_1
+x 14
+y 6
+end
+arch cobblestones
+x 14
+y 6
+end
+arch ewall_2_1_1
+x 14
+y 6
+end
+arch ewall_3_4
+x 14
+y 6
+end
+arch cobblestones
+x 14
+y 7
+end
+arch ewall_2_1_1
+x 14
+y 7
+end
+arch cobblestones
+x 14
+y 8
+end
+arch ewall_2_1_1
+x 14
+y 8
+end
+arch cobblestones
+x 14
+y 8
+end
+arch ewall_2_1_1
+x 14
+y 8
+end
+arch ewall_3_4
+x 14
+y 8
+end
+arch cobblestones
+x 14
+y 9
+end
+arch ewall_2_1_1
+x 14
+y 9
+end
+arch cobblestones
+x 14
+y 10
+end
+arch ewall_2_1_1
+x 14
+y 10
+end
+arch cobblestones
+x 14
+y 10
+end
+arch ewall_2_1_1
+x 14
+y 10
+end
+arch ewall_3_4
+x 14
+y 10
+end
+arch cobblestones
+x 14
+y 11
+end
+arch ewall_2_1_1
+x 14
+y 11
+end
+arch cobblestones
+x 14
+y 12
+end
+arch ewall_2_1_1
+x 14
+y 12
+end
+arch ewall_3_4
+x 14
+y 12
+end
+arch cobblestones
+x 14
+y 13
+end
+arch ewall_2_1_1
+x 14
+y 13
+end
+arch cobblestones
+x 14
+y 14
+end
+arch ewall_2_2_4
+x 14
+y 14
+end
