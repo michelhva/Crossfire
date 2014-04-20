@@ -2,8 +2,8 @@
 #
 Object ability_dragonbreath
 anim_suffix spellcasting
-name dragonbreath ability
-name_pl dragonbreath ability
+name breath fire
+name_pl breath fire
 face spell_dragonbreath.111
 level 12
 sp 13
