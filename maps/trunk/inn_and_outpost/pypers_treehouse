@@ -1,5 +1,5 @@
 arch map
-name Pyper's Treehouse
+name Pyper's Fine Jewellery
 difficulty 10
 region wilderness
 width 15
@@ -8,7 +8,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  2004-08-13 Avion
-Modified: 2013-07-19 Andreas Kirschbaum
+Modified: 2014-04-19 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -1157,15 +1157,19 @@ arch elf_man
 name Pyper
 msg
 @match name|who
-I am Pyper, a jewler of some small reputation.
+I am Pyper, a jeweler of some small reputation.
 @match jewelry|sell
-Yes, I make some fancy trinkets now and again.  Only one of a kind stuff - no retail I'm afraid.
+Yes, I make some fancy trinkets now and again. Only one of a kind stuff - no retail I'm afraid.
+@match bench
+Of course, feel free to borrow it. Please be careful, though.
 @match portal|greenway
-The three trees point the way to the heart of the forest.
-@match darkforest
-The darkforest is a chaotic place, it is not evil but it can be very dangerous.
+There are three bare trees in a line to the north of here. If you head south from there, it will point you to the heart of the forest.
+@match dark|forest
+The dark forest is a chaotic place. It is not evil but it can be very dangerous.
 @match *
 Greetings, can I help you?
+@question sell What can you sell me?
+@question who Who are you?
 endmsg
 sp 70
 maxsp 70
