@@ -3,7 +3,7 @@ name world_104_114
 width 50
 height 50
 msg
-Modified: 2010-05-29 Kevin Bulgrien
+Modified: 2014-04-19 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_104_113
@@ -7885,8 +7885,9 @@ y 17
 elevation 813
 end
 arch treehouse
+name outpost
 slaying /inn_and_outpost/treehouse_df5
-hp 5
+hp 6
 sp 6
 x 30
 y 17
@@ -9312,6 +9313,8 @@ wallstyle trees
 final_map /planes/greenway3
 exit_on_final_map no
 endmsg
+hp 18
+sp 37
 x 35
 y 12
 elevation 154
@@ -9441,8 +9444,9 @@ y 34
 elevation 459
 end
 arch treehouse
+name outpost
 slaying /inn_and_outpost/treehouse_df6
-hp 5
+hp 6
 sp 6
 x 35
 y 34
@@ -12123,8 +12127,9 @@ y 18
 elevation 450
 end
 arch treehouse
+name outpost
 slaying /inn_and_outpost/treehouse_df4
-hp 5
+hp 6
 sp 6
 x 44
 y 18
