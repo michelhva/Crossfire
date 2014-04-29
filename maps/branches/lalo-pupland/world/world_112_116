@@ -1170,44 +1170,50 @@ arch cobblestones
 x 4
 y 36
 end
-arch hills
+arch footpath_2_1_1
 x 4
 y 37
-elevation 3267
 end
-arch grass_only
+arch footpath_2_1_1
 x 4
 y 38
 elevation 2208
 end
-arch tree5
-x 4
-y 38
-end
-arch hills
+arch footpath_2_1_1
 x 4
 y 39
 elevation 4342
 end
-arch hills
+arch footpath_2_1_1
 x 4
 y 40
 elevation 4857
 end
-arch hills
+arch footpath_2_1_1
 x 4
 y 41
 elevation 4439
 end
-arch hills
+arch footpath_2_2_1
 x 4
 y 42
 elevation 3452
 end
-arch hills
+arch invis_exit
+slaying /dungeons/dark-cave/dwarven_camp
+hp 9
 x 4
 y 43
 elevation 3519
+move_on all
+end
+arch hills
+x 4
+y 43
+end
+arch campfire
+x 4
+y 43
 end
 arch hills_rocky
 x 4
@@ -1474,32 +1480,25 @@ x 5
 y 41
 elevation 4703
 end
-arch hills
+arch footpath_2_2_3
 x 5
 y 42
 elevation 4201
 end
-arch hills_rocky
+arch footpath_2_1_1
 x 5
 y 43
 elevation 3690
 end
-arch hills
+arch footpath_2_1_1
 x 5
 y 44
-elevation 3253
 end
-arch woods_3
+arch footpath_2_1_1
 x 5
 y 45
-elevation 2492
 end
-arch grass_only
-x 5
-y 46
-elevation 1183
-end
-arch tree5
+arch footpath_2_2_1
 x 5
 y 46
 end
@@ -1757,33 +1756,21 @@ x 6
 y 45
 elevation 2459
 end
-arch grass_only
-x 6
-y 46
-elevation 1722
-end
-arch tree5
+arch footpath_2_2_3
 x 6
 y 46
 end
-arch grass_only
-x 6
-y 47
-elevation 1821
-end
-arch tree5
+arch footpath_2_1_1
 x 6
 y 47
 end
-arch hills
+arch footpath_2_1_1
 x 6
 y 48
-elevation 1705
 end
-arch hills
+arch footpath_2_1_1
 x 6
 y 49
-elevation 3238
 end
 arch steppe
 x 7

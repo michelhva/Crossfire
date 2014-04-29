@@ -3,7 +3,7 @@ name world_102_115
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2010-06-01 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_102_114
@@ -11,18 +11,18 @@ tile_path_2 world_103_115
 tile_path_3 world_102_116
 tile_path_4 world_101_115
 end
-arch sea
+arch deep_sea
 elevation -3870
 end
-arch sea
+arch deep_sea
 y 1
 elevation -3795
 end
-arch sea
+arch deep_sea
 y 2
 elevation -3705
 end
-arch sea
+arch deep_sea
 y 3
 elevation -3598
 end
@@ -210,21 +210,21 @@ arch sea
 y 49
 elevation -507
 end
-arch sea
+arch deep_sea
 x 1
 elevation -3674
 end
-arch sea
+arch deep_sea
 x 1
 y 1
 elevation -3591
 end
-arch sea
+arch deep_sea
 x 1
 y 2
 elevation -3493
 end
-arch sea
+arch deep_sea
 x 1
 y 3
 elevation -3377
@@ -298,6 +298,9 @@ difficulty_increase 0.5
 endmsg
 x 1
 y 14
+arch quest_advance_trigger
+name scorn/BlueMushroom 10>30
+end
 end
 arch swamp
 x 1
@@ -482,16 +485,16 @@ x 1
 y 49
 elevation -757
 end
-arch sea
+arch deep_sea
 x 2
 elevation -3492
 end
-arch sea
+arch deep_sea
 x 2
 y 1
 elevation -3403
 end
-arch sea
+arch deep_sea
 x 2
 y 2
 elevation -3297
@@ -732,16 +735,16 @@ x 2
 y 49
 elevation -977
 end
-arch sea
+arch deep_sea
 x 3
 elevation -3326
 end
-arch sea
+arch deep_sea
 x 3
 y 1
 elevation -3231
 end
-arch sea
+arch deep_sea
 x 3
 y 2
 elevation -3119
@@ -985,16 +988,16 @@ x 3
 y 49
 elevation -1171
 end
-arch sea
+arch deep_sea
 x 4
 elevation -3177
 end
-arch sea
+arch deep_sea
 x 4
 y 1
 elevation -3076
 end
-arch sea
+arch deep_sea
 x 4
 y 2
 elevation -2959
@@ -1233,11 +1236,11 @@ x 4
 y 49
 elevation -1337
 end
-arch sea
+arch deep_sea
 x 5
 elevation -3044
 end
-arch sea
+arch deep_sea
 x 5
 y 1
 elevation -2939
@@ -1481,11 +1484,11 @@ x 5
 y 49
 elevation -1478
 end
-arch sea
+arch deep_sea
 x 6
 elevation -2927
 end
-arch sea
+arch deep_sea
 x 6
 y 1
 elevation -2819
@@ -1729,11 +1732,11 @@ x 6
 y 49
 elevation -1593
 end
-arch sea
+arch deep_sea
 x 7
 elevation -2825
 end
-arch sea
+arch deep_sea
 x 7
 y 1
 elevation -2715
@@ -1979,7 +1982,7 @@ x 7
 y 49
 elevation -1684
 end
-arch sea
+arch deep_sea
 x 8
 elevation -2738
 end
@@ -2226,7 +2229,7 @@ x 8
 y 49
 elevation -1750
 end
-arch sea
+arch deep_sea
 x 9
 elevation -2664
 end

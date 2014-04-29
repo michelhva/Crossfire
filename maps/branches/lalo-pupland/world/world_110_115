@@ -3,7 +3,7 @@ name world_110_115
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_110_114
@@ -1434,7 +1434,7 @@ x 4
 y 9
 elevation 2101
 end
-arch ford_ns
+arch river_ford_ns
 x 4
 y 9
 elevation 2101
@@ -6694,7 +6694,7 @@ x 19
 y 3
 elevation 2571
 end
-arch ford_we
+arch river_ford_we
 x 19
 y 3
 elevation 2571

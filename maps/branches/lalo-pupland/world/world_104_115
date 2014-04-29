@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2007-12-24 tchize
+Modified: 2014-04-19 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -2664,7 +2664,7 @@ y 49
 end
 arch shallow_sea
 x 10
-elevation -15
+elevation -25
 end
 arch shallow_sea
 x 10
@@ -2927,14 +2927,14 @@ x 10
 y 49
 elevation 2449
 end
-arch shallow_sea
+arch sea
 x 11
-elevation -12
+elevation -52
 end
 arch shallow_sea
 x 11
 y 1
-elevation -11
+elevation -32
 end
 arch shallow_sea
 x 11
@@ -2948,7 +2948,6 @@ elevation 72
 end
 arch hut
 name An ancient hut
-name_pl An ancient hut
 slaying /dungeons/hut/ancient_hut
 hp 6
 x 11
@@ -3187,14 +3186,14 @@ x 11
 y 49
 elevation 4337
 end
-arch shallow_sea
+arch sea
 x 12
-elevation -10
+elevation -60
 end
 arch shallow_sea
 x 12
 y 1
-elevation -11
+elevation -31
 end
 arch shallow_sea
 x 12
@@ -3456,19 +3455,19 @@ x 12
 y 49
 elevation 5559
 end
-arch shallow_sea
+arch sea
 x 13
-elevation -8
+elevation -98
 end
-arch shallow_sea
+arch sea
 x 13
 y 1
-elevation -10
+elevation -70
 end
 arch shallow_sea
 x 13
 y 2
-elevation -17
+elevation -37
 end
 arch shallow_sea
 x 13
@@ -3725,19 +3724,19 @@ x 13
 y 49
 elevation 5070
 end
-arch brush
+arch sea
 x 14
-elevation 14
+elevation -94
 end
-arch shallow_sea
+arch sea
 x 14
 y 1
-elevation -9
+elevation -99
 end
-arch shallow_sea
+arch sea
 x 14
 y 2
-elevation -24
+elevation -84
 end
 arch shallow_sea
 x 14
@@ -3998,24 +3997,24 @@ x 14
 y 49
 elevation 6916
 end
-arch brush
+arch sea
 x 15
-elevation 320
+elevation -65
 end
-arch shallow_sea
+arch sea
 x 15
 y 1
-elevation -4
+elevation -94
 end
-arch shallow_sea
+arch sea
 x 15
 y 2
-elevation -33
+elevation -93
 end
-arch shallow_sea
+arch sea
 x 15
 y 3
-elevation -58
+elevation -98
 end
 arch shallow_sea
 x 15
@@ -4267,24 +4266,24 @@ x 15
 y 49
 elevation 5661
 end
-arch brush
-x 16
-elevation 232
-end
 arch shallow_sea
+x 16
+elevation -42
+end
+arch sea
 x 16
 y 1
-elevation -8
+elevation -58
 end
-arch shallow_sea
+arch sea
 x 16
 y 2
-elevation -44
+elevation -94
 end
-arch shallow_sea
+arch sea
 x 16
 y 3
-elevation -77
+elevation -110
 end
 arch sea
 x 16
@@ -4536,21 +4535,21 @@ x 16
 y 49
 elevation 6299
 end
-arch brush
+arch shallow_sea
 x 17
-elevation 13
+elevation -33
 end
 arch shallow_sea
 x 17
 y 1
-elevation -9
+elevation -49
 end
-arch shallow_sea
+arch sea
 x 17
 y 2
-elevation -63
+elevation -83
 end
-arch shallow_sea
+arch sea
 x 17
 y 3
 elevation -98
@@ -4795,14 +4794,14 @@ elevation 8096
 end
 arch shallow_sea
 x 18
-elevation -3
+elevation -23
 end
 arch shallow_sea
 x 18
 y 1
 elevation -47
 end
-arch shallow_sea
+arch sea
 x 18
 y 2
 elevation -87
@@ -5050,7 +5049,7 @@ arch shallow_sea
 x 19
 elevation -29
 end
-arch shallow_sea
+arch sea
 x 19
 y 1
 elevation -79
@@ -5305,7 +5304,7 @@ elevation 10291
 end
 arch shallow_sea
 x 20
-elevation -71
+elevation -31
 end
 arch sea
 x 20
@@ -8070,7 +8069,7 @@ x 30
 y 13
 elevation -7
 end
-arch rcrook_ns-ne
+arch river_crook_ns-ne
 x 30
 y 13
 end
@@ -8079,7 +8078,7 @@ x 30
 y 14
 elevation 80
 end
-arch rjunct_ns-ne
+arch river_junct_ns-ne
 x 30
 y 14
 end
@@ -9654,7 +9653,7 @@ x 35
 y 40
 elevation 8124
 end
-arch bridge_ns
+arch river_bridge_ns
 x 35
 y 40
 end
@@ -10251,7 +10250,7 @@ x 37
 y 39
 elevation 9122
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 37
 y 39
 end
@@ -10260,7 +10259,7 @@ x 37
 y 40
 elevation 8571
 end
-arch rcrook_ns-sw
+arch river_crook_ns-sw
 x 37
 y 40
 end
@@ -10426,7 +10425,7 @@ x 38
 y 18
 elevation 2154
 end
-arch rjunct_ns-ne
+arch river_junct_ns-ne
 x 38
 y 18
 end
@@ -10516,7 +10515,7 @@ x 38
 y 28
 elevation 8478
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 38
 y 28
 end
@@ -10525,7 +10524,7 @@ x 38
 y 29
 elevation 9503
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 38
 y 29
 end
@@ -10543,7 +10542,7 @@ x 38
 y 31
 elevation 9387
 end
-arch bridge_we
+arch river_bridge_we
 x 38
 y 31
 end
@@ -11616,7 +11615,6 @@ y 28
 end
 arch barn
 name dragon hangar
-name_pl dragon hangar
 x 41
 y 28
 end
@@ -11649,11 +11647,10 @@ x 41
 y 31
 end
 arch store_magic
-name Magic Shop
-name_pl Magic Shop
+name Scorn Magic Shop
 slaying /scorn/shops/magicshop
-hp 14
-sp 14
+hp 38
+sp 21
 x 41
 y 31
 end
@@ -11684,7 +11681,8 @@ end
 arch city_tower
 name Friendly Giant's Tower
 slaying /scorn/kar/somehouse
-hp 14
+hp 9
+sp 16
 x 41
 y 34
 end
@@ -11737,11 +11735,11 @@ x 41
 y 39
 end
 arch small_temple2
-name Temple of Lythander
-name_pl Temple of Lythander
-slaying /scorn/misc/templelyth
+name Temple to Lythander
+slaying /scorn/temples/lythander
+face lyth_temple.111
 hp 7
-sp 15
+sp 18
 x 41
 y 39
 end
@@ -11799,6 +11797,7 @@ x 41
 y 44
 end
 arch stronghold
+name Castle of Scorn
 slaying /scorn/misc/castle
 hp 11
 sp 20
@@ -11984,8 +11983,7 @@ x 42
 y 23
 end
 arch dragon_exit
-name to Pupland Terminal
-name_pl to Pupland Terminal
+name To Pup Land Terminal
 slaying /pup_land/terminal
 hp 10
 sp 2
@@ -12064,7 +12062,7 @@ arch dungeon_magic
 x 42
 y 32
 end
-arch brush
+arch cobblestones2
 x 42
 y 32
 end
@@ -12130,8 +12128,8 @@ slaying /scorn/misc/kboldtemp1
 msg
 It looks as if someone took up refuge here...
 endmsg
-hp 8
-sp 1
+hp 10
+sp 3
 x 42
 y 39
 end
@@ -12145,7 +12143,6 @@ y 40
 end
 arch s_shop2
 name Temple of Mostrai
-name_pl Temple of Mostrai
 slaying /scorn/temples/mostrai
 hp 13
 sp 16
@@ -12162,7 +12159,6 @@ y 41
 end
 arch well
 name dry well
-name_pl dry well
 slaying /scorn/misc/drywell
 hp 1
 sp 1
@@ -12433,7 +12429,6 @@ y 28
 end
 arch barn
 name dragon hangar
-name_pl dragon hangar
 x 43
 y 28
 end
@@ -12495,9 +12490,8 @@ y 34
 end
 arch guild
 name West Scorn Trademarket
-name_pl West Scorn Trademarket
 slaying /mlab/mlabscrntrd1
-hp 1
+hp 0
 sp 10
 x 43
 y 34
@@ -12519,6 +12513,10 @@ x 43
 y 36
 end
 arch house_2
+name Private Shop 2
+slaying /scorn/shops/privateshop_43_36
+hp 17
+sp 35
 x 43
 y 36
 end
@@ -12531,6 +12529,10 @@ x 43
 y 37
 end
 arch house_2
+name Private Shop 3
+slaying /scorn/shops/privateshop_43_37
+hp 17
+sp 35
 x 43
 y 37
 end
@@ -12550,9 +12552,7 @@ arch brush
 x 43
 y 39
 end
-arch church
-name Church of Valriel
-name_pl Church of Valriel
+arch valriel_church
 slaying /scorn/temples/valriel
 hp 9
 sp 28
@@ -12636,7 +12636,10 @@ x 43
 y 48
 end
 arch tavern
-name Castle kitchen
+name Castle Kitchen
+slaying /scorn/misc/castle_kitchen
+hp 6
+sp 3
 x 43
 y 48
 end
@@ -12860,10 +12863,9 @@ y 31
 end
 arch store_weapons
 name Weapon Shop
-name_pl Weapon shop
 slaying /scorn/shops/weaponshop
-hp 1
-sp 14
+hp 11
+sp 19
 x 44
 y 31
 end
@@ -12909,10 +12911,9 @@ y 36
 end
 arch store_alchemy
 name Alchemy Shop
-name_pl Alchemy Shop
 slaying /scorn/shops/potionshop
-hp 14
-sp 14
+hp 6
+sp 16
 x 44
 y 36
 end
@@ -12920,7 +12921,7 @@ arch dungeon_magic
 x 44
 y 37
 end
-arch grass
+arch cobblestones2
 x 44
 y 37
 end
@@ -13198,7 +13199,7 @@ arch cobblestones2
 x 45
 y 26
 end
-arch bridge_we
+arch river_bridge_we
 x 45
 y 26
 end
@@ -13284,10 +13285,9 @@ y 34
 end
 arch house_2
 name Mike Miller's house
-name_pl Mike Miller's house
 slaying /scorn/houses/house3.1st
-hp 6
-sp 8
+hp 8
+sp 10
 x 45
 y 34
 end
@@ -13300,8 +13300,7 @@ x 45
 y 35
 end
 arch house_2
-name Abandoned house
-name_pl Abandoned house
+name Abandoned House
 slaying /scorn/houses/house3.2nd
 hp 5
 sp 9
@@ -13342,7 +13341,6 @@ y 39
 end
 arch t_house2
 name Temple of Gaea
-name_pl Temple of Gaea
 slaying /scorn/temples/gaea
 hp 12
 sp 18
@@ -13385,12 +13383,6 @@ arch grass
 x 45
 y 43
 end
-arch marker
-slaying hello
-x 45
-y 43
-speed_left -1.100000
-end
 arch dungeon_magic
 x 45
 y 44
@@ -13440,19 +13432,6 @@ end
 arch grass
 x 45
 y 48
-end
-arch detector
-slaying hello
-hp 1
-x 45
-y 48
-speed_left -0.600000
-resist_electricity 30
-resist_cold 30
-resist_acid 30
-resist_drain 30
-invisible 1
-connected 216
 end
 arch dungeon_magic
 x 45
@@ -13580,7 +13559,7 @@ arch cobblestones2
 x 46
 y 22
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 46
 y 22
 end
@@ -13604,7 +13583,7 @@ arch cobblestones2
 x 46
 y 24
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 46
 y 24
 end
@@ -13616,7 +13595,7 @@ arch cobblestones2
 x 46
 y 25
 end
-arch rcrook_ns-sw
+arch river_crook_ns-sw
 x 46
 y 25
 end
@@ -13628,7 +13607,7 @@ arch cobblestones2
 x 46
 y 26
 end
-arch bridge_we
+arch river_bridge_we
 x 46
 y 26
 end
@@ -13640,7 +13619,7 @@ arch cobblestones2
 x 46
 y 27
 end
-arch rcrook_ns-nw
+arch river_crook_ns-nw
 x 46
 y 27
 end
@@ -13652,7 +13631,7 @@ arch cobblestones2
 x 46
 y 28
 end
-arch rjunct_ns-nw
+arch river_junct_ns-nw
 x 46
 y 28
 end
@@ -13664,7 +13643,7 @@ arch cobblestones2
 x 46
 y 29
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 46
 y 29
 end
@@ -13723,7 +13702,6 @@ y 34
 end
 arch barrack_long
 name Barracks
-name_pl Barracks
 slaying /scorn/houses/barracks
 hp 24
 sp 4
@@ -13740,7 +13718,6 @@ y 35
 end
 arch barrack_long
 name Mess Hall
-name_pl Mess Hall
 slaying /scorn/houses/messhall
 hp 24
 sp 4
@@ -13758,8 +13735,8 @@ end
 arch barrack_up
 name Mercenaries Agency
 slaying /scorn/misc/mercenaries
-hp 6
-sp 15
+hp 8
+sp 16
 x 46
 y 36
 end
@@ -13982,6 +13959,10 @@ x 47
 y 19
 end
 arch s_ship
+name Ship to Stoneville
+slaying /scorn/port/ship_stoneville
+hp 9
+sp 10
 x 47
 y 19
 end
@@ -14091,10 +14072,9 @@ y 31
 end
 arch store_armour
 name Armour Shop
-name_pl Armour Shop
 slaying /scorn/shops/armourshop
-hp 14
-sp 1
+hp 5
+sp 19
 x 47
 y 31
 end
@@ -14138,11 +14118,11 @@ arch grass
 x 47
 y 36
 end
-arch store_weapons
+arch store_bows
 name Scorn's Best Bows
 slaying /scorn/shops/bowshop
-hp 14
-sp 14
+hp 11
+sp 16
 x 47
 y 36
 end
@@ -14150,7 +14130,7 @@ arch dungeon_magic
 x 47
 y 37
 end
-arch grass
+arch cobblestones2
 x 47
 y 37
 end
@@ -14183,8 +14163,7 @@ x 47
 y 40
 end
 arch barrack_small
-name Temple of Ruggilli
-name_pl Temple of Ruggilli
+name Temple to Ruggilli
 slaying /scorn/temples/ruggilli1
 hp 3
 sp 14
@@ -14413,10 +14392,9 @@ y 24
 end
 arch barn
 name Training Center
-name_pl Training Center
-slaying /scorn/crow/train/train
-hp 4
-sp 17
+slaying /scorn/misc/training_center
+hp 6
+sp 18
 x 48
 y 24
 end
@@ -14511,6 +14489,10 @@ x 48
 y 34
 end
 arch house_2
+name Private Shop 4
+slaying /scorn/shops/privateshop_48_34
+hp 17
+sp 35
 x 48
 y 34
 end
@@ -14523,6 +14505,10 @@ x 48
 y 35
 end
 arch house_2
+name Private Shop 5
+slaying /scorn/shops/privateshop_48_35
+hp 17
+sp 35
 x 48
 y 35
 end
@@ -14559,8 +14545,7 @@ x 48
 y 39
 end
 arch temple1
-name Temple of Sorig
-name_pl Temple of Sorig
+name Temple to Sorig
 slaying /scorn/temples/sorig
 hp 8
 sp 15
@@ -14871,10 +14856,9 @@ y 31
 end
 arch barrack_up
 name Food Shop Warehouse
-name_pl Food Shop
 slaying /scorn/shops/foodshop
-hp 2
-sp 14
+hp 5
+sp 18
 x 49
 y 31
 end
@@ -14905,8 +14889,8 @@ end
 arch shrine
 name Mosely's Magic Books
 slaying /scorn/shops/BasicSpells
-hp 2
-sp 2
+hp 7
+sp 10
 x 49
 y 34
 end
@@ -14936,13 +14920,13 @@ y 37
 elevation 1191
 end
 arch s_shop2
-name Imperial Post Office
+name Scorn Imperial Post Office
 slaying /scorn/shops/IPO_scorn
 msg
 Ding!
 endmsg
-hp 5
-sp 8
+hp 8
+sp 9
 x 49
 y 37
 end

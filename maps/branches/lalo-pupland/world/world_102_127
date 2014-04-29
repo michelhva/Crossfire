@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2013-07-14 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_102_126
@@ -10476,10 +10476,10 @@ x 42
 y 10
 end
 arch s_ship
-name Ship to Santo Dominion
-slaying /world/world_102_108
-hp 15
-sp 10
+name Ship to Scorn
+slaying /world/world_104_115
+hp 48
+sp 20
 x 42
 y 10
 end
@@ -10492,10 +10492,6 @@ x 42
 y 12
 end
 arch s_ship
-name Ship to Scorn
-slaying /world/world_105_115
-hp 9
-sp 22
 x 42
 y 12
 end
@@ -11251,6 +11247,14 @@ x 45
 y 11
 end
 arch grass
+x 45
+y 12
+end
+arch house_small
+name Stoneville Ticket Office
+slaying /dragonisland/ticket_office
+hp 7
+sp 8
 x 45
 y 12
 end

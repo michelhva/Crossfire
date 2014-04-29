@@ -8,7 +8,7 @@ height 50
 enter_x 25
 enter_y 25
 msg
-Modified: 2007-12-24 tchize
+Modified: 2013-03-25 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_109_125
@@ -3481,9 +3481,7 @@ end
 arch magic_ear
 msg
 @match Twak
-Wind starts to build up.
-You sway into unity with a giant tree
-next to you.
+Wind starts to build up.  You sway into unity with a giant tree next to you.
 endmsg
 x 13
 y 42
@@ -3491,11 +3489,9 @@ connected 1
 end
 arch teleporter
 name jungle
-name_pl jungle
 slaying /world/world_109_126
 msg
-You ride the wind as if the spirit of
-the forest
+You ride the wind as if the spirit of the forest.
 endmsg
 face jungle_1.111
 hp 30
@@ -3666,7 +3662,7 @@ arch grass
 x 14
 y 22
 end
-arch rjunct_ns-e
+arch river_junct_ns-e
 x 14
 y 22
 end
@@ -3674,7 +3670,7 @@ arch brush
 x 14
 y 23
 end
-arch bridge_we
+arch river_bridge_we
 x 14
 y 23
 end
@@ -3715,11 +3711,10 @@ x 14
 y 28
 end
 arch tavern
-name Oldie Moldie's jewelery
-name_pl Oldie Moldie's jewelery
+name Oldie Moldie's Jewelry
 slaying /lake_country/shops/Olds_jewel
-hp 6
-sp 12
+hp 16
+sp 21
 x 14
 y 28
 end
@@ -3817,8 +3812,7 @@ y 41
 end
 arch magic_mouth
 msg
-Wind brings a voice
-"... call .. my name ."
+Wind brings a voice, "... call .. my name."
 endmsg
 x 14
 y 42
@@ -4038,7 +4032,7 @@ arch grass
 x 15
 y 29
 end
-arch bridge_we
+arch river_bridge_we
 x 15
 y 29
 end
@@ -4046,7 +4040,7 @@ arch grass
 x 15
 y 30
 end
-arch rjunct_ns-e
+arch river_junct_ns-e
 x 15
 y 30
 end
@@ -4078,7 +4072,7 @@ arch grass
 x 15
 y 34
 end
-arch rjunct_ns-se
+arch river_junct_ns-se
 x 15
 y 34
 end
@@ -4086,7 +4080,7 @@ arch grass
 x 15
 y 35
 end
-arch rcrook_ns-se
+arch river_crook_ns-se
 x 15
 y 35
 end
@@ -4101,14 +4095,14 @@ x 15
 y 36
 move_block 0
 end
-arch rjunct_ns-sw
+arch river_junct_ns-sw
 x 15
 y 36
 move_block 0
 end
 arch magic_mouth
 msg
-You are taken by a strong current
+You are taken by a strong current.
 endmsg
 x 15
 y 37
@@ -4282,7 +4276,7 @@ arch grass
 x 16
 y 22
 end
-arch bridge_ns
+arch river_bridge_ns
 x 16
 y 22
 end
@@ -4338,7 +4332,7 @@ arch grass
 x 16
 y 30
 end
-arch bridge_ns
+arch river_bridge_ns
 x 16
 y 30
 end
@@ -4382,7 +4376,7 @@ arch grass
 x 16
 y 36
 end
-arch rjunct_ns-se
+arch river_junct_ns-se
 x 16
 y 36
 end
@@ -4391,7 +4385,7 @@ x 16
 y 37
 move_block 0
 end
-arch rcrook_ns-se
+arch river_crook_ns-se
 x 16
 y 37
 end
@@ -4551,24 +4545,16 @@ Map finished:
 Snake pit (near Mopoon's weapon shop)
 Wizard tower in the marsh.
 Training tower (level 1-4) in front.
-Butakis castle (Still things to be put
-in the castle.)
+Butakis castle (Still things to be put in the castle.)
 Quests:
-Quest of the crowns in Oldie's
-Jewelery.
-Mopoon's quest for successor in his
-shop.
-Quest for powerful artifacts in
-Ebony thief guild.
+Quest of the crowns in Oldie's Jewelry.
+Mopoon's quest for successor in his shop.
+Quest for powerful artifacts in Ebony thief guild.
 Map fixed:
-Oldie jewelery
+Oldie jewelry
 Clem's archery
 Ebony thief guild master level.
-Ultimate artifacts you can acquire in
-this land include: Sword of Chaos,
-Golden Unicorn Horn, Spellbook of
-meteor swarm, Spellbook of face of
-death, and so on
+Ultimate artifacts you can acquire in this land include: Sword of Chaos, Golden Unicorn Horn, Spellbook of meteor swarm, Spellbook of face of death, and so on.
 endmsg
 x 17
 y 20
@@ -4632,8 +4618,8 @@ end
 arch tavern
 name Clem's Fine Archery
 slaying /lake_country/shops/clems_archery
-hp 7
-sp 4
+hp 15
+sp 14
 x 17
 y 28
 end
@@ -4718,7 +4704,7 @@ attacktype 1
 end
 arch magic_mouth
 msg
-You are taken by a strong current
+You are taken by a strong current.
 endmsg
 x 17
 y 42
@@ -4866,7 +4852,6 @@ y 20
 end
 arch biglake_nw
 name lake
-name_pl lake
 x 18
 y 20
 end
@@ -4880,7 +4865,6 @@ y 21
 end
 arch biglake_sw
 name lake
-name_pl lake
 x 18
 y 21
 end
@@ -4927,8 +4911,8 @@ end
 arch tavern
 name Klondor's Wand Shop
 slaying /lake_country/shops/klondors_wands
-hp 8
-sp 7
+hp 15
+sp 15
 x 18
 y 29
 end
@@ -5134,8 +5118,8 @@ end
 arch house_1
 name Small Inn
 slaying /lake_country/small_buildings/LC_inn1
-hp 1
-sp 2
+hp 3
+sp 4
 x 19
 y 18
 end
@@ -5153,7 +5137,6 @@ y 20
 end
 arch biglake_ne
 name lake
-name_pl lake
 x 19
 y 20
 end
@@ -5167,7 +5150,6 @@ y 21
 end
 arch biglake_se
 name lake
-name_pl lake
 x 19
 y 21
 end
@@ -5181,7 +5163,6 @@ y 22
 end
 arch city_tower
 name Butakis' Elite Training Tower
-name_pl Butakis' Elite Training Tower
 slaying /lake_country/RETower/tower0
 hp 8
 sp 15
@@ -5197,6 +5178,14 @@ x 19
 y 24
 end
 arch grass
+x 19
+y 25
+end
+arch house_small
+name Lake Country Imperial Post Office
+slaying ../lake_country/shops/IPO_lakecountry
+hp 9
+sp 9
 x 19
 y 25
 end
@@ -5484,7 +5473,7 @@ arch grass
 x 20
 y 28
 end
-arch bridge_we
+arch river_bridge_we
 x 20
 y 28
 end
@@ -5533,6 +5522,10 @@ x 20
 y 35
 end
 arch house_small
+name Sentrio's House
+slaying /lake_country/small_buildings/sentrio_house
+hp 4
+sp 1
 x 20
 y 35
 end
@@ -5759,7 +5752,7 @@ y 27
 end
 arch magic_mouth
 msg
-Welcome to Lord Butakis' Fortress
+Welcome to Fortress of Lord Butakis.
 endmsg
 x 21
 y 28
@@ -5769,8 +5762,7 @@ x 21
 y 28
 end
 arch fort_sym
-name Lord Butakis' fortress
-name_pl Lord Butakis' fortress
+name Fortress of Lord Butakis
 slaying /lake_country/Butakis/gate_outer
 hp 1
 sp 7
@@ -5843,7 +5835,7 @@ y 40
 end
 arch magic_mouth
 msg
-The current pushes you ashore
+The current pushes you ashore.
 endmsg
 x 21
 y 41
@@ -7176,7 +7168,7 @@ x 26
 y 42
 end
 arch hut
-name Galmorus's Hut
+name Galmorus' Hut
 slaying /lake_country/small_buildings/hut_Galmorus
 hp 9
 x 26
@@ -7318,18 +7310,14 @@ y 17
 end
 arch magic_mouth
 name warning1
-name_pl warning1
 msg
-The west wind is like no other wind you
-have experienced. You were ripped off
-rock you were holding onto
+The west wind is like no other wind you have experienced.  You were ripped off rock you were holding onto.
 endmsg
 x 27
 y 18
 end
 arch mover_4
 name mover1
-name_pl mover1
 x 27
 y 18
 level 1
@@ -7385,8 +7373,7 @@ y 29
 end
 arch magic_mouth
 msg
-Wind brings a voice,
-"Whisper ... my name ."
+Wind brings a voice, "Whisper ... my name."
 endmsg
 x 27
 y 30
@@ -7590,20 +7577,19 @@ y 16
 end
 arch invis_exit
 name To burial ground
-name_pl To burial ground
 slaying /lake_country/small_buildings/burial_ground
 hp 3
 sp 3
 x 28
 y 17
+arch quest_advance_trigger
+name lake_country/undead_catacomb 0-10>20
+end
 end
 arch magic_mouth
 name fall
-name_pl fall
 msg
-Strong wind peels you off the mountain
-surface. You fall like a rock. Light
-is blocked by mountain peaks.
+Strong wind peels you off the mountain surface.  You fall like a rock.  Light is blocked by mountain peaks.
 ...
 You plunge into a dark mist.
 endmsg
@@ -7612,10 +7598,8 @@ y 17
 end
 arch magic_mouth
 name warning1
-name_pl warning1
 msg
-West wind picks up more speed and you
-almost fell off the cliff!
+West wind picks up more speed and you almost fell off the cliff!
 endmsg
 x 28
 y 18
@@ -7682,8 +7666,7 @@ y 30
 end
 arch magic_mouth
 msg
-Wind brings a voice,
-"... remember my name  ."
+Wind brings a voice, "... remember my name."
 endmsg
 x 28
 y 31
@@ -7871,11 +7854,8 @@ y 17
 end
 arch magic_mouth
 name warning1
-name_pl warning1
 msg
-West wind picks up speed. You sway
-unsteadily in the wind. Uncanny feeling
-creeps up your spine
+West wind picks up speed.  You sway unsteadily in the wind.  Uncanny feeling creeps up your spine.
 endmsg
 x 29
 y 18
@@ -7956,8 +7936,7 @@ y 34
 end
 arch magic_mouth
 msg
-You hear the ground grunts,
-"Twak  ...  spirit of the forest ."
+You hear the ground grunts, "Twak  ...  spirit of the forest."
 endmsg
 x 29
 y 35
@@ -8170,8 +8149,7 @@ end
 arch magic_ear
 msg
 @match Twak
-A section of the oak tree quivers with
-liquid colors, and allows you in
+A section of the oak tree quivers with liquid colors, and allows you in.
 endmsg
 x 30
 y 30
@@ -8180,24 +8158,18 @@ end
 arch grass
 msg
 @match druid|teleport|enter|help
-The ancient oak speaks, "Tell me the
-word of passage and I will let you
-enter.".
+The ancient oak speaks, "Tell me the word of passage and I will let you enter.".
 @match *
-The leaves whisper to you, but you can
-not make out what the words are
+The leaves whisper to you, but you can not make out what the words are.
 endmsg
 x 30
 y 30
 end
 arch teleporter
 name A giant oak tree.
-name_pl A giant oak tree.
 slaying /world/world_109_126
 msg
-Someone whispers to your mind, 'In the
-name of Twak ... '
-You step into the giant tree and melt.
+Someone whispers to your mind, 'In the name of Twak ...' You step into the giant tree and melt.
 endmsg
 face tree_1.111
 hp 14
@@ -8273,7 +8245,6 @@ y 42
 end
 arch hut
 name A huge oak, somewhat strange
-name_pl A huge oak, somewhat strange
 slaying /lake_country/small_buildings/oak_twak1
 face tree_1.111
 hp 7
@@ -8472,9 +8443,7 @@ end
 arch magic_mouth
 msg
 The leaves rustle,
-".. call . upon the spirit of the forest
-... and you can ride the wind; be one
-with the forest ..."
+".. call . upon the spirit of the forest ... and you can ride the wind; be one with the forest ..."
 endmsg
 x 31
 y 36
@@ -8646,10 +8615,8 @@ y 19
 end
 arch magic_mouth
 name bellow
-name_pl bellow
 msg
-Bestily bellows reverate within the
-cave mouth
+Beastily bellows reverberate within the cave mouth.
 endmsg
 x 32
 y 22
@@ -8971,14 +8938,13 @@ y 36
 end
 arch magic_mouth
 msg
-Vast swamp and water ahead
+Vast swamp and water ahead.
 endmsg
 x 33
 y 37
 end
 arch exit
 name Entrance to the marsh maze.
-name_pl Entrance to the marsh maze.
 slaying /lake_country/marsh/marsh1_1
 hp 2
 sp 2
@@ -8988,7 +8954,6 @@ invisible 1
 end
 arch swamp
 name Entrance to swamp maze
-name_pl Entrance to swamp maze
 x 33
 y 37
 end
@@ -9002,9 +8967,7 @@ y 38
 end
 arch magic_mouth
 msg
-The swamp bubbles with strange power.
-Someone must have done something to
-it!!
+The swamp bubbles with strange power.  Someone must have done something to it!!
 endmsg
 x 33
 y 39
@@ -9012,8 +8975,7 @@ end
 arch magic_ear
 msg
 @match Zykie
-Water is drained around you.
-You are standing on an ebony rock.
+Water is drained around you.  You are standing on an ebony rock.
 endmsg
 x 33
 y 39
@@ -9021,12 +8983,9 @@ connected 3
 end
 arch teleporter
 name swamp
-name_pl swamp
 slaying /world/world_109_126
 msg
-A streak of black lightning strikes
-you.  'kaC..Boom!! ... ' Everything
-shifts
+A streak of black lightning strikes you.  'kaC..Boom!! ... '  Everything shifts.
 endmsg
 face deep_swamp.111
 hp 37
@@ -9589,10 +9548,7 @@ y 17
 end
 arch magic_mouth
 msg
-A beam of orange light from the top of
-the Wist's tower hits you and you are
-teleported back. You realize it's
-impossible to approach this way
+A beam of orange light from the top of the Wist's tower hits you and you are teleported back.  You realize it's impossible to approach this way.
 endmsg
 x 36
 y 18
@@ -10065,9 +10021,7 @@ y 19
 end
 arch magic_mouth
 msg
-A beam of orange light from the lower
-level of the Wist's tower hit you. You
-are teleported back.
+A beam of orange light from the lower level of the Wist's tower hit you.  You are teleported back.
 endmsg
 x 38
 y 20
@@ -10288,7 +10242,6 @@ y 18
 end
 arch wizard_tower
 name wizard tower
-name_pl wizard tower
 slaying /lake_country/Mwizard/Mwizard0
 hp 12
 sp 1

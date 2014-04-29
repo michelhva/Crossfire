@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2007-12-24 tchize
+Modified: 2013-08-06 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -4094,8 +4094,7 @@ x 16
 y 20
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -4743,11 +4742,21 @@ x 18
 y 21
 elevation 2837
 end
-arch brush
+arch grass
 x 18
 y 22
+elevation 10076
 end
-arch house_1
+arch market1
+name Private Shop - West
+slaying /brest/privateshops/privateshop_main
+msg
+As you enter the street you can sense the enormous
+treasure hordes contained within the walls of the
+nearby buildings.
+endmsg
+hp 1
+sp 4
 x 18
 y 22
 end
@@ -4762,8 +4771,7 @@ y 24
 elevation 10076
 end
 arch market1
-name Private Shops - West
-name_pl Private Shops - West
+name Private Museum - West
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
@@ -5041,7 +5049,21 @@ x 19
 y 21
 elevation 467
 end
-arch woods_2
+arch grass
+x 19
+y 22
+elevation 511
+end
+arch market2
+name Private Shop - West
+slaying /brest/privateshops/privateshop_main
+msg
+As you enter the street you can sense the enormous
+treasure hordes contained within the walls of the
+nearby buildings.
+endmsg
+hp 1
+sp 4
 x 19
 y 22
 end
@@ -5060,8 +5082,7 @@ y 24
 elevation 511
 end
 arch market2
-name Private Shops - West
-name_pl Private Shops - West
+name Private Museum - West
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
@@ -5323,12 +5344,21 @@ arch woods
 x 20
 y 21
 end
-arch brush
+arch grass
 x 20
 y 22
-elevation 2401
+elevation 511
 end
-arch house_1
+arch market2
+name Private Shop - East
+slaying /brest/privateshops/privateshop_main
+msg
+As you enter the street you can sense the enormous
+treasure hordes contained within the walls of the
+nearby buildings.
+endmsg
+hp 41
+sp 4
 x 20
 y 22
 end
@@ -5343,8 +5373,7 @@ y 24
 elevation 511
 end
 arch market2
-name Private Shops - East
-name_pl Private Shops - East
+name Private Museum - East
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
@@ -5429,16 +5458,9 @@ x 20
 y 39
 end
 arch sign
-name Tower of  Ludo
-name_pl Tower of  Ludo
+name Tower of Ludo
 msg
-Lord Ludo invites to step in
-And discover his treasures
-Please deposit 500 gold coins
-at the Payment Booth.
-Special fees for groups of
-adventurers.
-Please don't touch the artefacts.
+Lord Ludo invites to step in and discover his treasures. Please deposit 100 platinum coins at the Payment Booth. Special fees for groups of adventurers. Please don't touch the artifacts.
 endmsg
 x 20
 y 39
@@ -5447,23 +5469,20 @@ arch flagstone
 x 20
 y 40
 end
-arch altar
-slaying money
-food 5000
-x 20
-y 41
-invisible 1
-connected 1
-end
 arch flagstone
 x 20
 y 41
 end
-arch tower_tob_fant
+arch altar
 name Payment Booth
-name_pl Payment Booth
+slaying money
+msg
+You may enter.
+endmsg
+food 5000
 x 20
 y 41
+connected 1
 end
 arch pstone_1
 x 20
@@ -5615,10 +5634,21 @@ arch woods
 x 21
 y 21
 end
-arch brush
+arch grass
 x 21
 y 22
-elevation 1384
+elevation 10851
+end
+arch market3
+name Private Shop - East
+slaying /brest/privateshops/privateshop_main
+msg
+As you enter the street you can sense the enormous treasure hordes contained within the walls of the nearby buildings.
+endmsg
+hp 41
+sp 4
+x 21
+y 22
 end
 arch woods_2
 x 21
@@ -5631,13 +5661,10 @@ y 24
 elevation 10851
 end
 arch market3
-name Private Shops - East
-name_pl Private Shops - East
+name Private Museum - East
 slaying ../brest/pshops/pshops_main
 msg
-As you enter the street you can sense the enormous
-treasure hordes contained within the walls of the
-nearby buildings.
+As you enter the street you can sense the enormous treasure hordes contained within the walls of the nearby buildings.
 endmsg
 hp 41
 sp 4
@@ -5650,9 +5677,9 @@ y 25
 elevation 1384
 end
 arch lamppost
-name Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 21
 y 25
@@ -5677,7 +5704,7 @@ y 29
 elevation 2581
 end
 arch minihouse
-name A small shop
+name A Small Shop
 slaying /brest/shops/a_small_shop
 hp 11
 sp 12
@@ -5694,7 +5721,7 @@ y 31
 elevation 1566
 end
 arch l_shop1
-name Acme Inc.
+name Acme Inc. Building Shop
 slaying /brest/shops/buildshop
 hp 6
 sp 24
@@ -5731,10 +5758,9 @@ y 36
 elevation 1066
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 21
 y 36
@@ -6043,8 +6069,7 @@ y 39
 elevation 2813
 end
 arch city_tower_fant
-name Tower of  Tanguy
-name_pl Tower of  Tanguy
+name Tower of Ludo
 slaying /brest/ludo1
 hp 22
 sp 8
@@ -6192,7 +6217,7 @@ arch flagstone
 x 23
 y 13
 end
-arch bridge_we
+arch river_bridge_we
 x 23
 y 13
 end
@@ -6251,10 +6276,9 @@ y 20
 elevation 2311
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 23
 y 20
@@ -6331,10 +6355,9 @@ y 29
 elevation 2875
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 23
 y 29
@@ -6401,7 +6424,7 @@ arch flagstone
 x 23
 y 37
 end
-arch bridge_we
+arch river_bridge_we
 x 23
 y 37
 end
@@ -6955,7 +6978,7 @@ arch flagstone
 x 25
 y 19
 end
-arch bridge_we
+arch river_bridge_we
 x 25
 y 19
 end
@@ -7035,7 +7058,7 @@ arch flagstone
 x 25
 y 30
 end
-arch bridge_we
+arch river_bridge_we
 x 25
 y 30
 end
@@ -7069,7 +7092,7 @@ x 25
 y 35
 end
 arch t_house2_fant
-name Brest town house
+name Permenant Apartments
 slaying /brest/apartments/brest_town_house
 hp 8
 sp 32
@@ -7100,6 +7123,7 @@ x 25
 y 40
 end
 arch castle_a
+name Castle of Brittany
 slaying /brest/Castle/castle
 hp 9
 sp 16
@@ -7351,10 +7375,9 @@ y 34
 elevation 1448
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 26
 y 34
@@ -7379,9 +7402,9 @@ y 38
 elevation 2308
 end
 arch lamppost
-name Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 26
 y 38
@@ -7613,9 +7636,8 @@ x 27
 y 28
 elevation 2182
 end
-arch guild_fant
-name Black Shield's storage room
-name_pl Black Shield's storage room
+arch guildstorage
+name Black Shield's Storage Room
 slaying /brest/black_shield/storage_room
 hp 1
 sp 10
@@ -7847,7 +7869,11 @@ x 28
 y 18
 elevation 402
 end
-arch house_1
+arch small_temple
+name Shrine of Valkyrie
+slaying ../brest/temples/valkyrie
+hp 12
+sp 21
 x 28
 y 18
 end
@@ -7860,10 +7886,9 @@ x 28
 y 20
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 28
 y 20
@@ -7973,9 +7998,9 @@ elevation 2688
 end
 arch store_general_fant
 name Brest Food
-slaying /brest/brest.food
-hp 9
-sp 18
+slaying /brest/shops/brest.food
+hp 19
+sp 20
 x 28
 y 37
 end
@@ -8157,6 +8182,14 @@ x 29
 y 20
 elevation 656
 end
+arch draughts_house
+name Draughts House of Brest
+slaying ../brest/misc/draughts
+hp 15
+sp 23
+x 29
+y 20
+end
 arch grass
 x 29
 y 21
@@ -8174,10 +8207,9 @@ elevation 2171
 end
 arch palace
 name Kingdom Palace
-name_pl Kingdom Palace
 slaying /brest/asyvan/palace1
-hp 8
-sp 15
+hp 12
+sp 21
 x 29
 y 23
 end
@@ -8211,10 +8243,9 @@ y 29
 elevation 39
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 29
 y 29
@@ -8594,9 +8625,9 @@ elevation 1036
 end
 arch store_armour_fant
 name Brest Armour
-slaying /brest/brest.armour
-hp 9
-sp 18
+slaying /brest/shops/brest.armour
+hp 5
+sp 20
 x 30
 y 40
 end
@@ -8789,7 +8820,7 @@ end
 arch grass
 x 31
 y 22
-elevation 2324
+elevation 2227
 end
 arch grass
 x 31
@@ -8825,10 +8856,10 @@ y 29
 elevation 2520
 end
 arch inn_fant
-name Brest inn
+name Brest Inn
 slaying /brest/brest.inn
 hp 14
-sp 23
+sp 19
 x 31
 y 29
 end
@@ -8890,9 +8921,9 @@ elevation 1276
 end
 arch store_weapons_fant
 name Brest Weapon
-slaying /brest/brest.weapon
-hp 9
-sp 18
+slaying /brest/shops/brest.weapon
+hp 12
+sp 20
 x 31
 y 36
 end
@@ -8910,10 +8941,9 @@ x 31
 y 39
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 31
 y 39
@@ -9386,13 +9416,8 @@ x 33
 y 17
 elevation 2081
 end
-arch evergreens2
-x 33
-y 17
-end
 arch fort
 name Nasty Hallway
-name_pl Nasty Hallway
 slaying /brest/pantheon
 hp 1
 sp 17
@@ -9413,10 +9438,9 @@ y 20
 elevation 1688
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 33
 y 20
@@ -9488,10 +9512,9 @@ y 32
 elevation 2319
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 33
 y 32
@@ -9550,9 +9573,9 @@ y 39
 end
 arch store_magic_fant
 name Brest Magic
-slaying /brest/brest.magic
-hp 6
-sp 11
+slaying /brest/shops/brest.magic
+hp 38
+sp 22
 x 33
 y 39
 end
@@ -9757,10 +9780,6 @@ x 34
 y 17
 elevation 2408
 end
-arch evergreens2
-x 34
-y 17
-end
 arch brush
 x 34
 y 18
@@ -9871,7 +9890,6 @@ elevation 2097
 end
 arch courthouse
 name Administration
-name_pl Administration
 slaying /brest/jes.admini
 hp 21
 sp 1
@@ -9889,9 +9907,9 @@ y 37
 elevation 1509
 end
 arch lamppost
-name Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 34
 y 37
@@ -10155,12 +10173,11 @@ x 35
 y 29
 elevation 1509
 end
-arch house_1
-name IPO
-name_pl IPO
+arch s_shop2
+name Brest Imperial Post Office
 slaying /brest/brest.IPO
-hp 5
-sp 8
+hp 7
+sp 9
 x 35
 y 29
 end
@@ -10471,8 +10488,8 @@ x 36
 y 29
 elevation 1283
 end
-arch house_1
-name trademarket
+arch bungalow
+name Trade Market
 slaying /brest/brest.trademarket
 hp 7
 sp 15
@@ -10546,11 +10563,11 @@ x 36
 y 38
 elevation 100
 end
-arch guild_fant
+arch store_general_fant
 name Brest CVT
-slaying /brest/brest.cvt
-hp 9
-sp 18
+slaying /brest/shops/brest.cvt
+hp 11
+sp 17
 x 36
 y 38
 end
@@ -10760,10 +10777,9 @@ y 24
 elevation 46
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 37
 y 24
@@ -10793,10 +10809,9 @@ y 29
 elevation 1160
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 37
 y 29
@@ -11135,10 +11150,9 @@ x 38
 y 38
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 38
 y 38
@@ -11319,7 +11333,6 @@ elevation 1166
 end
 arch store_magic_fant
 name Scrolls Galore
-name_pl Scrolls Galore
 slaying /brest/brest.scrolls
 hp 3
 sp 37
@@ -11343,10 +11356,9 @@ y 20
 elevation 1166
 end
 arch lamppost
-name Street Lamp
-name_pl Street Lamp
+name street lamp
 msg
-Property of Brest Lighting Department
+Property of Brest Lighting Department.
 endmsg
 x 39
 y 20
@@ -11439,14 +11451,13 @@ x 39
 y 31
 elevation 1072
 end
-arch house_1
-x 39
-y 32
-end
 arch brush
 x 39
 y 32
-elevation 1397
+end
+arch house_1
+x 39
+y 32
 end
 arch brush
 x 39
@@ -11469,7 +11480,6 @@ elevation 652
 end
 arch prison_fant
 name Amphis...
-name_pl Amphis...
 slaying /brest/amphis
 hp 1
 sp 23
@@ -11488,7 +11498,6 @@ elevation 2092
 end
 arch tavern
 name Nasty House
-name_pl Nasty House
 slaying /brest/nasty_house
 hp 1
 sp 1
@@ -11510,11 +11519,11 @@ x 39
 y 40
 elevation 485
 end
-arch guild_fant
+arch guild2
 name Guild of the Black Shield
-slaying /brest/black_shield/ground
-hp 12
-sp 23
+slaying /brest/black_shield/mainfloor
+hp 15
+sp 28
 x 39
 y 40
 end
@@ -11774,14 +11783,9 @@ x 40
 y 36
 elevation 1311
 end
-arch brush
-x 40
-y 37
-end
 arch grass_only
 x 40
 y 37
-elevation 1416
 end
 arch tree3
 x 40
@@ -13507,7 +13511,7 @@ arch barrack_long
 name Brest Seaside Tavern
 slaying /brest/taverns/brest.seaside.tavern
 msg
-You enter the tavern. The air is smoky and the guests are raucous.
+You enter the tavern.  The air is smoky and the guests are raucous.
 endmsg
 hp 6
 sp 4

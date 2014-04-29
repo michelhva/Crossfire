@@ -5,11 +5,11 @@ difficulty 1
 region scorn
 width 50
 height 50
-enter_x 1
-enter_y 1
+enter_x 5
+enter_y 37
 msg
 Created:  2001-02-16
-Modified: 2007-12-24 tchize
+Modified: 2014-03-29 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -171,6 +171,10 @@ y 27
 elevation 169
 end
 arch house_2
+name Puddings Place
+slaying /scorn/misc/puddings.place
+hp 24
+sp 24
 y 27
 elevation 169
 end
@@ -207,10 +211,9 @@ elevation 4274
 end
 arch guild
 name Scorn Sale Shop
-name_pl Scorn Sale Shop
 slaying /scorn/shops/scorn.sale1
 hp 10
-sp 16
+sp 18
 y 31
 end
 arch dungeon_magic
@@ -236,7 +239,6 @@ elevation 8100
 end
 arch market1
 name Permanent Apartments
-name_pl Permanent Apartments
 slaying /scorn/apartment/apartments
 hp 1
 sp 2
@@ -259,7 +261,6 @@ elevation 11542
 end
 arch courthouse
 name City Hall
-name_pl City Hall
 slaying /scorn/misc/cityhall
 hp 13
 sp 26
@@ -638,7 +639,6 @@ elevation 8657
 end
 arch market3
 name Permanent Apartments
-name_pl Permanent Apartments
 slaying /scorn/apartment/apartments
 hp 1
 sp 2
@@ -656,7 +656,6 @@ y 35
 end
 arch house_long
 name Resir's house
-name_pl Resir's house
 slaying /scorn/houses/resir
 hp 24
 sp 4
@@ -701,13 +700,12 @@ elevation 14247
 end
 arch sign_w
 name Street of the Gods
-name_pl Street of the Gods
 msg
 Street of the Gods...
-On the back of the sign is some graffiti
+On the back of the sign is some graffiti:
 Be ever so humble,
 in the presence of greatness,
-or thou shalt face the rath,
+or thou shalt face the wrath,
 of a God Scorned!  -- Eric the Cleric
 endmsg
 x 1
@@ -724,7 +722,6 @@ elevation 13494
 end
 arch shrine
 name Church of Gorokh
-name_pl Church of Gorokh
 slaying /scorn/temples/gorokh
 hp 6
 sp 14
@@ -795,6 +792,7 @@ end
 arch guard_house_1
 x 1
 y 45
+type 0
 end
 arch dungeon_magic
 x 1
@@ -808,6 +806,7 @@ end
 arch guard_house_1
 x 1
 y 46
+type 0
 end
 arch dungeon_magic
 x 1
@@ -1157,9 +1156,9 @@ elevation 13712
 end
 arch small_temple
 name Temple of the Devourers
-name_pl Temple of the Devourers
-slaying /scorn/misc/templedevour
+slaying /scorn/temples/devourers
 hp 13
+sp 1
 x 2
 y 39
 end
@@ -1236,6 +1235,7 @@ end
 arch guard_house_2
 x 2
 y 45
+type 0
 end
 arch dungeon_magic
 x 2
@@ -1249,6 +1249,7 @@ end
 arch guard_house_2
 x 2
 y 46
+type 0
 end
 arch dungeon_magic
 x 2
@@ -1414,7 +1415,8 @@ x 3
 y 21
 elevation -133
 end
-arch big_galleon
+arch sailing_big_galleon
+name big sailing galleon
 x 3
 y 21
 end
@@ -1542,13 +1544,9 @@ elevation 4205
 end
 arch sign_w
 name Street of Merchants
-name_pl Street of Merchants
 msg
 Street of Merchants...
-We the merchants of Scorn cater to the
-needs of all adventurers. If you
-need Food, Equipment, Armour, Weapons,
-Magic, come and see us
+We the merchants of Scorn cater to the needs of all adventurers. If you need Food, Equipment, Armour, Weapons, Magic, come and visit us.
 endmsg
 x 3
 y 32
@@ -1965,6 +1963,7 @@ y 29
 elevation 1588
 end
 arch guard_house_4
+name Port Gate of Scorn
 slaying /scorn/anthony/portgate
 hp 9
 x 4
@@ -1981,10 +1980,12 @@ y 30
 elevation 69
 end
 arch guard_house_3
+name Port Gate of Scorn
 x 4
 y 30
 end
 arch guard_house_4
+name Port Gate of Scorn
 x 4
 y 30
 end
@@ -1998,6 +1999,7 @@ y 31
 elevation 3771
 end
 arch guard_house_3
+name Port Gate of Scorn
 slaying /scorn/anthony/portgate
 hp 8
 sp 12
@@ -2213,7 +2215,7 @@ end
 arch shrine
 name Shrine of Ixalovh
 slaying /scorn/temples/ixalovh
-hp 6
+hp 8
 sp 13
 x 5
 y 8
@@ -2431,7 +2433,6 @@ elevation 5214
 end
 arch sign
 name To the Port
-name_pl To the Port
 msg
 Port Area of Scorn
 endmsg
@@ -2481,13 +2482,10 @@ elevation 9133
 end
 arch sign
 name Central Square of Scorn
-name_pl Central Square of Scorn
 msg
-Read The Signs to the right for
-information on where to go and do.
+Read the signs to the right for information on where to go and what to do.
 --oOo--
-WARNING: Magic is not permitted
-within Scorn city limits.
+WARNING: Magic is not permitted within Scorn city limits.
 --oOo--
 Please do not litter.
 endmsg
@@ -2726,16 +2724,9 @@ x 6
 y 19
 elevation -2256
 end
-arch galleon
-name sailing galleon
+arch sailing_galleon
 x 6
 y 19
-speed 0.5
-type 2
-container 10000000
-move_type boat
-move_allow walk
-passenger_limit 2
 end
 arch dungeon_magic
 x 6
@@ -2809,7 +2800,6 @@ elevation -17
 end
 arch barn
 name Pirates' Arena
-name_pl Pirates' Arena
 slaying /scorn/misc/port_arena
 hp 38
 sp 6
@@ -2878,12 +2868,11 @@ x 6
 y 31
 elevation 4536
 end
-arch store_general
-name Gem Shop
-name_pl Gem Shop
+arch store_gems
+name Scorn Gem Shop
 slaying /scorn/shops/gemshop
-hp 1
-sp 14
+hp 16
+sp 17
 x 6
 y 31
 end
@@ -2961,7 +2950,6 @@ elevation 9033
 end
 arch well
 name Drinking Fountain
-name_pl Drinking Fountain
 slaying /scorn/kar/drink
 hp 1
 sp 1
@@ -2985,6 +2973,14 @@ arch grass
 x 6
 y 41
 elevation 8287
+end
+arch house_2
+name Private Shop
+slaying /scorn/shops/privateshop
+hp 17
+sp 35
+x 6
+y 41
 end
 arch dungeon_magic
 x 6
@@ -3035,8 +3031,9 @@ y 45
 elevation 10251
 end
 arch sign_e
+name Old South Road
 msg
-Old South Road
+Old South Road...
 endmsg
 x 6
 y 45
@@ -3070,10 +3067,9 @@ elevation 10859
 end
 arch church
 name Undead Church
-name_pl Undead Church
 slaying /scorn/misc/church
 hp 10
-sp 15
+sp 14
 x 6
 y 48
 end
@@ -3280,8 +3276,10 @@ y 28
 elevation 127
 end
 arch tavern
-name The Rowdy Sailor
-name_pl The Rowdy Sailor
+name Scorn Port Ticket Office
+slaying /scorn/port/ticket_office
+hp 7
+sp 8
 x 7
 y 28
 end
@@ -3296,7 +3294,6 @@ elevation 1564
 end
 arch bungalow
 name Angry Giant's Bungalow
-name_pl Angry Giant's Bungalow
 slaying /scorn/houses/angrygiant
 hp 7
 sp 14
@@ -3329,7 +3326,7 @@ arch dungeon_magic
 x 7
 y 32
 end
-arch grass
+arch cobblestones2
 x 7
 y 32
 elevation 4987
@@ -3453,7 +3450,6 @@ elevation 10499
 end
 arch farmhouse
 name Smith's House
-name_pl Smith's House
 slaying /scorn/houses/house1
 hp 10
 sp 14
@@ -3603,16 +3599,10 @@ x 8
 y 19
 elevation -2256
 end
-arch big_galleon
-name sailing big galleon
+arch sailing_big_galleon
+name big sailing galleon
 x 8
 y 19
-speed 0.5
-type 2
-container 10000000
-move_type boat
-move_allow walk
-passenger_limit 4
 end
 arch dungeon_magic
 x 8
@@ -3633,11 +3623,10 @@ y 21
 elevation -406
 end
 arch s_ship
-name to Stoneville
-name_pl to Stoneville
-slaying /world/world_102_127
-hp 43
-sp 13
+name Ship to Santo Dominion
+slaying /scorn/port/ship_santo_dominion
+hp 9
+sp 10
 x 8
 y 21
 end
@@ -3769,7 +3758,6 @@ elevation 3055
 end
 arch sign_e
 name Road of Riches
-name_pl Road of Riches
 msg
 Road of Riches...
 endmsg
@@ -3787,7 +3775,6 @@ elevation 2469
 end
 arch house_2
 name Random House
-name_pl Random House
 slaying /!
 msg
 layoutstyle onion
@@ -3821,18 +3808,19 @@ elevation 6009
 end
 arch sign
 name General Information
-name_pl General Information
 msg
-Safe Places to visit...
-Wanderer Inn (Sleep to save!)
-Pirate Inn (in port area)
-Goth's tavern (near GuardHouse)
-City Hall (west of central square)
-Zoo (Old SOuth road) place to see many monsters
-Patch's house (Wanderer's Way)
+Safe places to visit...
 Central Library
+City Hall (west of central square)
+Goth's Tavern (near guard house)
+Oled's Cafe
+Patch's House (Wanderer's Way)
+Piriate Inn (in port area)
 Prison of Scorn
-And all the stores
+The Barking Mule
+Wanderers' Inn (sleep to save!)
+Zoo (Old South Road) place to see many monsters
+...and all the stores and temples.
 endmsg
 x 8
 y 37
@@ -3856,6 +3844,7 @@ y 39
 elevation 8157
 end
 arch chess_club
+name Chess Club
 slaying /scorn/houses/chess_club
 hp 19
 sp 1
@@ -3954,7 +3943,6 @@ elevation 10029
 end
 arch well
 name Dark Well
-name_pl Dark Well
 slaying /scorn/oldcity/oldcity7
 hp 5
 sp 38
@@ -4124,8 +4112,7 @@ elevation -48
 end
 arch barn
 name Animal Quarantine
-name_pl Animal Quarantine
-slaying /scorn/cannery/ware1
+slaying /scorn/misc/animal_quarantine
 hp 19
 sp 36
 x 9
@@ -4160,10 +4147,9 @@ elevation -9
 end
 arch guild
 name Acme Inc. Building Shop
-name_pl Acme Inc. Building Shop
 slaying /scorn/shops/buildshop
-hp 17
-sp 17
+hp 12
+sp 19
 x 9
 y 28
 end
@@ -4200,10 +4186,9 @@ elevation 2125
 end
 arch guild
 name Bank of Skud
-name_pl Bank of Skud
 slaying /scorn/shops/bank
-hp 7
-sp 14
+hp 12
+sp 16
 x 9
 y 31
 end
@@ -4271,24 +4256,23 @@ elevation 5402
 end
 arch sign
 name Beginner Dungeons
-name_pl Beginner Dungeons
 msg
 Beginner Dungeons:
-Beginners 1&2 (Wanderer's Way)
-Jones' House (River road)
-Old City (Dark Well,  Old South road)
-Drinking Well (just below central square)
-Gork's Grovel. (Below Eastern Gate)
-Undead Church (Old South road)
-Smith's House (Old South road)
-Goth's Tavern Cellar
-Friendly Giant's Tower (west wall)
-Newbie Tower. (River road, east)
-Mad Mage's Tower. (south)
-Dangerous Bungalow (West port area)
-Houser of Porters (near fenced area)
-Fun House (North side of main road)
 Alfalfa's House (River road)
+Beginners 1 & 2 (Wanderer's Way)
+Dangerous Bungalow (west port area)
+Drinking Well (just below central square)
+Friendly Giant's Tower (near west wall)
+Fun House (North side of main road)
+Gork's Grovel (Below Eastern Gate)
+Goth's Tavern Cellar
+Houser of Porters (near fenced area)
+Jones' House (River Road)
+Lighthouse (northeast port area)
+Old City (Dark Well, Old South Road)
+Scorn Brewery Cellar (River Road, east)
+Smith's House (Old South Road)
+Undead Church (Old South Road)
 endmsg
 x 9
 y 37
@@ -4357,9 +4341,9 @@ elevation 9490
 end
 arch city_tower
 name Mad Mage's Tower
-slaying /scorn/towers/tower.mad
+slaying /scorn/towers/tower.mad0
 hp 7
-sp 13
+sp 14
 x 9
 y 43
 end
@@ -4669,7 +4653,6 @@ elevation 2009
 end
 arch barrack_long
 name Apartment Building
-name_pl Apartment Building
 slaying /scorn/taverns/apartments
 hp 13
 sp 3
@@ -4687,10 +4670,9 @@ elevation 707
 end
 arch house_small
 name Fun House
-name_pl Fun House
 slaying /scorn/houses/maze1
-hp 1
-sp 18
+hp 3
+sp 20
 x 10
 y 35
 end
@@ -4714,18 +4696,17 @@ elevation 2250
 end
 arch sign
 name Advanced Dungeons
-name_pl Advanced Dungeons
 msg
 Advanced Dungeons:
-Prison Courtyard
-Old City (Gatehouse, secret door,quest)
-Old City (well, next to weapon shop)
-Old City Port (well in Port Area)
-The Arena (Port Area)
 Animal Quarantine (Port Area)
 Haunted House (South East of lake)
+Old City (Gatehouse, secret door quest)
+Old City (well, next to weapon shop)
+Old City Port (well in Port Area)
 Old Mansion (South of East Gate)
-Puddings Place (near Prison)
+Prison Courtyard
+Puddings Place (Port Area)
+The Arena (Port Area)
 endmsg
 x 10
 y 37
@@ -4749,11 +4730,10 @@ y 39
 elevation 10712
 end
 arch house_small
-name Smithery
-name_pl Smithery
+name Metal Smith's Workshop
 slaying /scorn/houses/smithery
-hp 4
-sp 11
+hp 7
+sp 13
 x 10
 y 39
 end
@@ -4960,7 +4940,6 @@ elevation -890
 end
 arch fishboat
 name to shrine
-name_pl to shrine
 slaying world_105_115
 msg
 A nice day for a sail.
@@ -5105,10 +5084,9 @@ elevation 141
 end
 arch church
 name House of Healing
-name_pl House of Healing
 slaying /scorn/misc/HouseofHealing
-hp 10
-sp 33
+hp 11
+sp 35
 x 11
 y 31
 end
@@ -5172,15 +5150,12 @@ elevation 4147
 end
 arch sign
 name More Information
-name_pl More Information
 msg
 PLAYER KILLING WILL NOT BE TOLERATED.
 Unless BOTH combatants agree to it.
 Killing Town folk will upset the guards!
 --oOo--
-For a lot of adventure information,
-talk to people in Goth's tavern, above
-the Eastern Gate House.
+For a lot of adventure information, talk to people in Goth's tavern, above the Eastern Gate House.
 endmsg
 x 11
 y 37
@@ -5204,11 +5179,10 @@ y 39
 elevation 12017
 end
 arch house_small
-name Tannery
-name_pl Tannery
+name Scorn Tannery
 slaying /scorn/houses/tannery
-hp 5
-sp 10
+hp 7
+sp 11
 x 11
 y 39
 end
@@ -5221,20 +5195,14 @@ x 11
 y 40
 elevation 11883
 end
-arch barrack_long
-name large house
-name_pl large house
-x 11
-y 40
-end
 arch dungeon_magic
 x 11
 y 41
+elevation 12197
 end
 arch grass
 x 11
 y 41
-elevation 10369
 end
 arch biglake_nes
 x 11
@@ -5243,15 +5211,14 @@ end
 arch dungeon_magic
 x 11
 y 42
+elevation 12197
 end
 arch grass
 x 11
 y 42
-elevation 8584
 end
-arch house_1
-name Lake House
-name_pl Lake House
+arch barrack_long
+name large house
 slaying /scorn/houses/map.fr.ruin
 hp 1
 sp 19
@@ -5269,9 +5236,8 @@ elevation 5697
 end
 arch house_small
 name Wizard's Workshop
-name_pl Wizard's Workshop
 slaying /scorn/houses/wizardw
-hp 4
+hp 6
 sp 13
 x 11
 y 43
@@ -5287,7 +5253,6 @@ elevation 7453
 end
 arch woodhouse
 name Yarid's House
-name_pl Yarid's House
 slaying /scorn/houses/wizz.entry
 hp 14
 sp 7
@@ -5305,7 +5270,6 @@ elevation 7373
 end
 arch house_small
 name Old Basement
-name_pl Old Basement
 slaying /scorn/misc/map.esben.2
 hp 22
 sp 22
@@ -5340,10 +5304,8 @@ y 48
 elevation 7066
 end
 arch zoo_1
-name The Zoo
-name_pl The Zoo
+name Zoo
 slaying /scorn/misc/zoo
-hp 1
 sp 16
 x 11
 y 48
@@ -5522,12 +5484,11 @@ x 12
 y 25
 elevation -412
 end
-arch barn
+arch guildstorage
 name Mailed Fist's storage room
-name_pl Mailed Fist's storage room
 slaying /scorn/guilds/mailed_fist/storage_room
-hp 1
-sp 10
+hp -1
+sp -1
 x 12
 y 25
 end
@@ -5560,7 +5521,6 @@ elevation -141
 end
 arch inn
 name Port Inn
-name_pl Port Inn
 slaying /scorn/taverns/inn2
 hp 4
 sp 2
@@ -5578,6 +5538,9 @@ elevation -67
 end
 arch woodhouse
 name wood house
+slaying /scorn/houses/woodhouse
+hp 2
+sp 8
 x 12
 y 29
 end
@@ -5632,10 +5595,9 @@ elevation 4731
 end
 arch t_house1
 name Central Library
-name_pl Central Library
 slaying /scorn/misc/library
 hp 9
-sp 15
+sp 16
 x 12
 y 34
 end
@@ -5686,10 +5648,9 @@ elevation 12614
 end
 arch house_small
 name Bowyer's Workshop
-name_pl Bowyer's Workshop
 slaying /scorn/houses/bowyer
-hp 6
-sp 14
+hp 7
+sp 12
 x 12
 y 39
 end
@@ -5903,7 +5864,8 @@ x 13
 y 20
 elevation -2256
 end
-arch big_galleon
+arch sailing_big_galleon
+name big sailing galleon
 x 13
 y 20
 end
@@ -5989,6 +5951,10 @@ y 29
 elevation -90
 end
 arch bungalow
+name Tyl's house
+slaying /scorn/houses/tyl
+hp 3
+sp 9
 x 13
 y 29
 end
@@ -6016,8 +5982,8 @@ end
 arch store_magic
 name House of Power
 slaying /scorn/misc/PowerHouse
-hp 10
-sp 33
+hp 40
+sp 21
 x 13
 y 31
 end
@@ -6094,11 +6060,10 @@ y 39
 elevation 12419
 end
 arch house_small
-name Jeweler's Workshop
-name_pl Jeweler's Workshop
+name Jeweler's Workshop of Scorn
 slaying /scorn/houses/jeweler
-hp 7
-sp 13
+hp 8
+sp 12
 x 13
 y 39
 end
@@ -6131,7 +6096,6 @@ elevation 8067
 end
 arch r_house2
 name Harry's Place
-name_pl Harry's Place
 slaying /scorn/houses/house.haunted
 hp 16
 sp 18
@@ -6370,7 +6334,9 @@ elevation -2256
 end
 arch tower_a
 name Lighthouse
-name_pl Lighthouse
+slaying ../scorn/towers/lighthouse.0
+hp 7
+sp 13
 x 14
 y 23
 glow_radius 4
@@ -6455,7 +6421,7 @@ arch dungeon_magic
 x 14
 y 32
 end
-arch grass
+arch cobblestones2
 x 14
 y 32
 elevation 3090
@@ -6525,9 +6491,8 @@ elevation 11144
 end
 arch house_small
 name Medieval Kitchen
-name_pl Medieval Kitchen
 slaying /scorn/houses/kitchen
-hp 4
+hp 6
 sp 11
 x 14
 y 39
@@ -6805,7 +6770,6 @@ elevation -543
 end
 arch sign
 name Out of Business
-name_pl Out of Business
 msg
 **NOTICE**
 Shipage to Wolfsburg is now closed due to lack of profitability.
@@ -6882,8 +6846,7 @@ y 31
 elevation 359
 end
 arch well
-name A small well
-name_pl A small well
+name Small Well
 slaying /scorn/oldcity/oldcity11
 hp 4
 sp 15
@@ -6917,11 +6880,10 @@ x 15
 y 34
 elevation 4816
 end
-arch fort
-name dragon guild
-name_pl dragon guild
+arch Dragon Guild
+name Scorn Dragon Guild
 slaying /scorn/misc/dragon_guild
-hp 7
+hp 9
 sp 15
 x 15
 y 34
@@ -6973,7 +6935,6 @@ elevation 10124
 end
 arch market1
 name Guild Houses Inc.
-name_pl Guild Houses Inc.
 slaying /scorn/guilds/guildhousesinc
 hp 9
 sp 9
@@ -6991,7 +6952,6 @@ elevation 6093
 end
 arch barrack_long
 name large house
-name_pl large house
 x 15
 y 40
 end
@@ -7014,8 +6974,10 @@ y 42
 elevation 7179
 end
 arch house_small
-name house
-name_pl house
+name House of Doors
+slaying ../scorn/houses/doors_galore
+hp 14
+sp 16
 x 15
 y 42
 end
@@ -7254,7 +7216,6 @@ elevation -832
 end
 arch big_galleon
 name old galleon
-name_pl old galleon
 x 16
 y 22
 end
@@ -7359,11 +7320,11 @@ x 16
 y 31
 elevation -1
 end
-arch guild
+arch guild2
 name Guild of the Mailed Fist
-slaying /scorn/guilds/mailed_fist/ground
-hp 12
-sp 23
+slaying /scorn/guilds/mailed_fist/mainfloor
+hp -1
+sp -1
 x 16
 y 31
 end
@@ -7441,7 +7402,6 @@ elevation 9163
 end
 arch market3
 name Guild Houses Inc.
-name_pl Guild Houses Inc.
 slaying /scorn/guilds/guildhousesinc
 hp 9
 sp 9
@@ -7494,7 +7454,6 @@ elevation 6257
 end
 arch stronghold_sym
 name Stronghold
-name_pl Stronghold
 slaying /scorn/mansion/stronghold
 hp 36
 sp 27
@@ -7524,8 +7483,7 @@ y 45
 elevation 5401
 end
 arch collesium
-name the ARENA
-name_pl the ARENA
+name The Arena
 slaying /scorn/misc/battle_arena/entrance
 hp 11
 sp 24
@@ -7835,13 +7793,10 @@ x 17
 y 35
 elevation 4991
 end
-arch house_2
-name Puddings Place
-name_pl Puddings Place
-slaying /scorn/misc/puddings.place
-hp 22
+arch woodhouse
 x 17
 y 35
+elevation 596
 end
 arch dungeon_magic
 x 17
@@ -7882,8 +7837,8 @@ end
 arch minihouse
 name Jacob's Lighting Emporium
 slaying /scorn/shops/light_shop
-hp 1
-sp 12
+hp 17
+sp 17
 x 17
 y 39
 end
@@ -8188,8 +8143,7 @@ y 26
 elevation -2256
 end
 arch big_galleon
-name to Port Joseph
-name_pl to Port Joseph
+name Galleon to Port Joseph
 slaying /world/world_101_114
 hp 16
 sp 43
@@ -8340,7 +8294,6 @@ elevation 8223
 end
 arch house_long
 name Old Mansion
-name_pl Old Mansion
 slaying /scorn/mansion/entrance
 hp 14
 x 18
@@ -8684,8 +8637,7 @@ elevation 129
 end
 arch prison
 name Prison
-name_pl Prison
-slaying /scorn/anthony/prison
+slaying ../scorn/misc/prison.1
 hp 9
 sp 23
 x 19
@@ -8720,9 +8672,8 @@ elevation 3490
 end
 arch l_shop1
 name Goth's Tavern
-name_pl Goth's Tavern
 slaying /scorn/taverns/goths
-hp 18
+hp 5
 sp 32
 x 19
 y 34
@@ -9092,7 +9043,7 @@ x 20
 y 29
 end
 arch invis_exit
-slaying /scorn/anthony/prison
+slaying ../scorn/misc/prison.1
 hp 15
 sp 1
 x 20
@@ -9179,6 +9130,7 @@ y 37
 elevation 4519
 end
 arch guard_house_1
+name Eastern Gate of Scorn
 slaying /scorn/misc/gatehouse
 hp 1
 sp 7
@@ -9638,6 +9590,7 @@ x 21
 y 37
 end
 arch guard_house_1
+name Eastern Gate of Scorn
 x 21
 y 37
 type 0
@@ -9646,6 +9599,7 @@ move_block all
 is_floor 1
 end
 arch guard_house_2
+name Eastern Gate of Scorn
 x 21
 y 37
 end
@@ -10034,6 +9988,7 @@ x 22
 y 37
 end
 arch guard_house_2
+name Eastern Gate of Scorn
 slaying /scorn/misc/gatehouse
 hp 26
 sp 7
@@ -12154,19 +12109,15 @@ x 30
 y 37
 end
 arch wagon
+name wagon
 x 30
 y 37
-speed 1
+speed 3.0
+type 2
+container 5000000
 move_type walk
-unique 1
-arch event_say
-title Python
-slaying /python/items/roll-o-matic.py
-end
-arch event_time
-title Python
-slaying /python/items/roll-o-matic.py
-end
+move_allow walk
+passenger_limit 2
 end
 arch cobblestones
 x 30
@@ -12880,6 +12831,9 @@ endmsg
 x 33
 y 15
 elevation 10852
+arch quest_advance_apply
+name scorn/GoblinKing 10>20
+end
 end
 arch mountain
 x 33
@@ -13007,7 +12961,6 @@ elevation 46
 end
 arch sign_w
 name Scorn City Limits
-name_pl Scorn City Limits
 msg
 Santo Dominion - 350 chains north
 Brest - 518 chains south

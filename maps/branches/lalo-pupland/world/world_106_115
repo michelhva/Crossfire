@@ -2,13 +2,14 @@ arch map
 name world_106_115
 reset_timeout 7200
 difficulty 1
+region scorncounty
 width 50
 height 50
 enter_x 1
 enter_y 1
 msg
 Created:  2002-02-31
-Modified: 2007-12-24 tchize
+Modified: 2010-05-05 Cavesomething
 endmsg
 outdoor 1
 tile_path_1 world_106_114
@@ -2344,7 +2345,7 @@ x 9
 y 18
 elevation 5615
 end
-arch hole
+arch chole_2
 slaying /!
 msg
 layoutstyle maze
@@ -2360,6 +2361,9 @@ endmsg
 x 9
 y 18
 is_floor 0
+arch quest_advance_apply
+name scorn/OgreKing 10>20
+end
 end
 arch hills
 x 9
