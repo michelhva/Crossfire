@@ -8,7 +8,7 @@ enter_x 15
 enter_y 12
 msg
 Created:  2002-10-27 Todd Mitchell
-Modified: 2013-07-19 Andreas Kirschbaum
+Modified: 2014-04-19 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -700,6 +700,8 @@ msg
 Greetings, I am Sweet.  Please take advantage of my services.
 @match Sweet
 My mother was a real barrel of laughs...
+@match portal|greenway|dark|forest
+Sorry, I don't know much about that.
 @match services
 I have food and drink aviailable at the bar, I can also identify items.  I sell healing potions and do simple money conversion.
 @match *
@@ -1036,6 +1038,9 @@ arch elf_1
 msg
 @match greenway|portal
 I wouldn't know about that - you could ask Pyper.
+@question Pyper Who is Pyper?
+@match Pyper
+He's the local jeweler, you should be able to find him at his shop.
 @match *
 Ah, what a fine view of the sea...
 endmsg
@@ -1651,9 +1656,11 @@ end
 arch elf_man
 msg
 @match Sweet
-No, I'm not Sweet.  Sweet is the big pixie over in the corner.
+No, I'm not Sweet. Sweet is the big pixie over in the corner.
 @match hi|hello
-Hello, welcome to Sweets.  Food and drink available at a reasonable rate.  Rooms are 50 gold.
+Hello, welcome to Sweets. Food and drink available at a reasonable rate. Rooms are 50 gold.
+@match portal|greenway|dark|forest
+I've heard about that, but I don't know much about it. I'm sure someone here knows.
 @match *
 What can I do for you?
 endmsg
@@ -2409,7 +2416,9 @@ end
 arch elf_guard
 msg
 @match rough
-Ya, we just spent a week northwest of the forest keeping an eye on the ogre caves.  What a job...
+Ya, we just spent a week northwest of the forest keeping an eye on the ogre caves. What a job...
+@match portal|greenway|dark|forest
+Woah, that's a whole 'nother can of worms you're talking about.
 @match *
 Whew, what a rough week.
 endmsg
