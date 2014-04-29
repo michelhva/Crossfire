@@ -3,7 +3,7 @@ name world_109_125
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2013-09-28 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_109_124
@@ -4376,10 +4376,7 @@ elevation 3734
 end
 arch sign
 msg
-The province of Brittany lies ahead. This road
-leads over the ice crown mountains, which is
-a dangerous path to follow. Don't go any further
-unless you are level 15 at least.
+The province of Brittany lies ahead. This road leads over the ice crown mountains, which is a dangerous path to follow. Don't go any further unless you are level 15 at least.
 endmsg
 x 16
 y 35
@@ -7181,9 +7178,7 @@ end
 arch ladder_up
 slaying world_109_125
 msg
-An icy wind is blowing up here.
-The wind seems to carry voices, angry
-whispers from a distant. Or is it just an echo?
+An icy wind is blowing up here. The wind seems to carry voices, angry whispers from a distant. Or is it just an echo?
 endmsg
 hp 26
 sp 16

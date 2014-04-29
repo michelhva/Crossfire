@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2007-12-24 tchize
+Modified: 2008-10-21 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_107_123
@@ -2291,6 +2291,7 @@ y 32
 elevation 555
 end
 arch mountain_cave
+name Enigme
 slaying /brest/brittany/enigme.1
 hp 16
 sp 33
@@ -2500,6 +2501,7 @@ y 20
 elevation 1484
 end
 arch tower_a
+name Dol-Guldur
 slaying /brest/brittany/dol-guldur.1
 hp 3
 x 9
@@ -3791,6 +3793,7 @@ y 16
 elevation 106
 end
 arch mountain_cave2
+name Khazad
 slaying /brest/brittany/khazad.1
 hp 1
 sp 20

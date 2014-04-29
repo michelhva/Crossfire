@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2013-07-15 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_103_126
@@ -49,9 +49,6 @@ end
 arch grass
 y 9
 end
-arch grass_only
-y 9
-end
 arch tree3
 y 9
 end
@@ -59,9 +56,6 @@ arch cobblestones2
 y 10
 end
 arch grass
-y 11
-end
-arch grass_only
 y 11
 end
 arch tree3
@@ -89,9 +83,6 @@ arch grass
 y 18
 end
 arch grass
-y 19
-end
-arch grass_only
 y 19
 end
 arch tree3
@@ -258,6 +249,14 @@ arch grass
 x 1
 y 9
 end
+arch house_1
+name Stonville Imperial Post Office
+slaying ../dragonisland/shops/IPO_stoneville
+hp 9
+sp 9
+x 1
+y 9
+end
 arch cobblestones2
 x 1
 y 10
@@ -286,10 +285,6 @@ arch grass
 x 1
 y 16
 end
-arch grass_only
-x 1
-y 16
-end
 arch tree3
 x 1
 y 16
@@ -314,7 +309,7 @@ arch cobblestones2
 x 1
 y 21
 end
-arch well
+arch bloodwell
 name Bloodwell
 slaying /dragonisland/bloodwell
 hp 14
@@ -514,10 +509,6 @@ arch grass
 x 2
 y 10
 end
-arch grass_only
-x 2
-y 10
-end
 arch tree3
 x 2
 y 10
@@ -545,8 +536,8 @@ end
 arch house_1
 name The Burning Adventurer
 slaying /dragonisland/tavern
-hp 8
-sp 15
+hp 10
+sp 17
 x 2
 y 15
 end
@@ -589,10 +580,6 @@ arch grass
 x 2
 y 20
 end
-arch grass_only
-x 2
-y 20
-end
 arch tree3
 x 2
 y 20
@@ -605,19 +592,11 @@ arch grass
 x 2
 y 22
 end
-arch grass_only
-x 2
-y 22
-end
 arch tree3
 x 2
 y 22
 end
 arch grass
-x 2
-y 23
-end
-arch grass_only
 x 2
 y 23
 end
@@ -669,16 +648,9 @@ x 2
 y 32
 elevation -322
 end
-arch big_galleon
-name sailing big galleon
+arch sailing_big_galleon
 x 2
 y 32
-speed 0.5
-type 2
-container 10000000
-move_type boat
-move_allow walk
-passenger_limit 4
 end
 arch sea
 x 2
@@ -815,7 +787,7 @@ x 3
 y 9
 end
 arch barn
-name dragon hangar
+name Stoneville Dragon Hangar
 slaying /dragonisland/hangar
 hp 15
 x 3
@@ -842,10 +814,10 @@ x 3
 y 13
 end
 arch house_2
-name Key Sale House
+name Stoneville Estates
 slaying /dragonisland/keysale
 hp 7
-sp 15
+sp 14
 x 3
 y 13
 end
@@ -885,19 +857,11 @@ arch grass
 x 3
 y 22
 end
-arch grass_only
-x 3
-y 22
-end
 arch tree3
 x 3
 y 22
 end
 arch grass
-x 3
-y 23
-end
-arch grass_only
 x 3
 y 23
 end
@@ -1130,10 +1094,6 @@ arch grass
 x 4
 y 19
 end
-arch grass_only
-x 4
-y 19
-end
 arch tree3
 x 4
 y 19
@@ -1142,10 +1102,6 @@ arch grass
 x 4
 y 20
 end
-arch grass_only
-x 4
-y 20
-end
 arch tree3
 x 4
 y 20
@@ -1154,19 +1110,11 @@ arch grass
 x 4
 y 21
 end
-arch grass_only
-x 4
-y 21
-end
 arch tree3
 x 4
 y 21
 end
 arch grass
-x 4
-y 22
-end
-arch grass_only
 x 4
 y 22
 end
@@ -1362,10 +1310,6 @@ arch grass
 x 5
 y 11
 end
-arch grass_only
-x 5
-y 11
-end
 arch tree3
 x 5
 y 11
@@ -1387,7 +1331,7 @@ x 5
 y 15
 end
 arch sign
-name Newest Additions to this City
+name Newest Additions
 msg
 Myrnek's House
 Damaris' House
@@ -1399,7 +1343,6 @@ Hangar
 Pixie's Delight
 Dreadful House
 Adventurers Guild
-key sale house + some apartments
 Note: most of these additions are
 dangerous!
 endmsg
@@ -1431,10 +1374,10 @@ x 5
 y 19
 end
 arch minihouse
-name Small House
+name Timothius' House
 slaying /dragonisland/house8
-hp 8
-sp 8
+hp 9
+sp 10
 x 5
 y 19
 end
@@ -1646,7 +1589,7 @@ end
 arch house_small
 name Pixie's Delight
 slaying /dragonisland/house6
-hp 9
+hp 11
 sp 19
 x 6
 y 13
@@ -1676,10 +1619,10 @@ x 6
 y 19
 end
 arch house_2
-name House
+name Master's House
 slaying /dragonisland/house9
-hp 1
-sp 4
+hp 5
+sp 6
 x 6
 y 19
 end
@@ -1696,10 +1639,6 @@ x 6
 y 22
 end
 arch grass
-x 6
-y 23
-end
-arch grass_only
 x 6
 y 23
 end
@@ -1885,10 +1824,6 @@ arch grass
 x 7
 y 10
 end
-arch grass_only
-x 7
-y 10
-end
 arch tree3
 x 7
 y 10
@@ -1912,7 +1847,8 @@ msg
 You have a creepy feeling while
 entering this house.
 endmsg
-sp 8
+hp 3
+sp 10
 x 7
 y 13
 end
@@ -1940,19 +1876,11 @@ arch grass
 x 7
 y 19
 end
-arch grass_only
-x 7
-y 19
-end
 arch tree3
 x 7
 y 19
 end
 arch grass
-x 7
-y 20
-end
-arch grass_only
 x 7
 y 20
 end
@@ -2182,8 +2110,8 @@ end
 arch guild
 name Adventurers Guild
 slaying /dragonisland/advguild
-hp 15
-sp 31
+hp 17
+sp 32
 x 8
 y 15
 end
@@ -2203,7 +2131,7 @@ arch house_2
 name Enter at Own Risk
 slaying /dragonisland/house5
 hp 14
-sp 7
+sp 16
 x 8
 y 18
 end
@@ -2216,10 +2144,6 @@ x 8
 y 20
 end
 arch grass
-x 8
-y 21
-end
-arch grass_only
 x 8
 y 21
 end
@@ -2413,10 +2337,6 @@ arch grass
 x 9
 y 10
 end
-arch grass_only
-x 9
-y 10
-end
 arch tree3
 x 9
 y 10
@@ -2454,7 +2374,7 @@ x 9
 y 18
 end
 arch barrack_small
-name Little house
+name Little House
 slaying /dragonisland/house1
 hp 1
 sp 2
@@ -2474,10 +2394,6 @@ x 9
 y 21
 end
 arch grass
-x 9
-y 22
-end
-arch grass_only
 x 9
 y 22
 end
@@ -3144,7 +3060,7 @@ x 12
 y 9
 end
 arch darkhold_sym
-name Brxzl's home
+name Brxzl's House
 slaying /dragonisland/housebrxzl
 hp 10
 sp 18
@@ -3162,8 +3078,8 @@ end
 arch well
 name Well of Intelligence
 slaying /dragonisland/intwell
-hp 1
-sp 21
+hp 2
+sp 22
 x 12
 y 11
 end
@@ -3187,15 +3103,19 @@ arch grass
 x 12
 y 14
 end
+arch minihouse
+name Stoneville Bank and Savings
+slaying ../dragonisland/shops/bank_stoneville
+hp 10
+sp 11
+x 12
+y 14
+end
 arch grass
 x 12
 y 15
 end
 arch grass
-x 12
-y 16
-end
-arch grass_only
 x 12
 y 16
 end
@@ -3408,10 +3328,6 @@ arch grass
 x 13
 y 9
 end
-arch grass_only
-x 13
-y 9
-end
 arch tree3
 x 13
 y 9
@@ -3441,10 +3357,6 @@ x 13
 y 15
 end
 arch grass
-x 13
-y 16
-end
-arch grass_only
 x 13
 y 16
 end
@@ -3666,18 +3578,10 @@ arch grass
 x 14
 y 10
 end
-arch grass
-x 14
-y 10
-end
 arch tower_a
 name Tall Tower
 x 14
 y 10
-end
-arch grass
-x 14
-y 11
 end
 arch grass
 x 14

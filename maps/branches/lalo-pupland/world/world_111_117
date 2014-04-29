@@ -3,7 +3,7 @@ name world_111_117
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2014-03-28 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_111_116
@@ -10284,7 +10284,6 @@ hp 1
 sp 7
 x 31
 y 43
-is_floor 0
 end
 arch mountain
 x 31
@@ -12378,8 +12377,7 @@ elevation 9882
 end
 arch magic_mouth
 msg
-You notice a well-hidden cave, high in
-the mountains here.
+You notice a well-hidden cave, high in the mountains here.
 endmsg
 x 39
 y 42
@@ -12390,6 +12388,7 @@ y 42
 elevation 9882
 end
 arch mountain_cave2
+name eyrie
 slaying /!
 msg
 floorstyle stones2
@@ -12403,7 +12402,9 @@ dungeon_depth 12
 endmsg
 x 39
 y 42
-is_floor 0
+arch quest_advance_apply
+name scorn/DragonWhisker 10-40>50
+end
 end
 arch mountain2
 x 39

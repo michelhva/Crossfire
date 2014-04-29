@@ -1459,6 +1459,9 @@ arch hills_rocky
 x 6
 elevation 4291
 end
+arch footpath_2_2_1
+x 6
+end
 arch hills_rocky
 x 6
 y 1
@@ -1965,7 +1968,9 @@ arch mountain
 x 8
 elevation 5220
 end
-arch mountain
+arch mountain_cave2
+slaying /dungeons/dark-cave/dark-cave
+sp 6
 x 8
 y 1
 elevation 5671

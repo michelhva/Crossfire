@@ -3,7 +3,7 @@ name world_109_111
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2011-11-05 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_109_110
@@ -8016,7 +8016,7 @@ arch evergreens2
 x 26
 y 45
 end
-arch rcrook_ns-ne
+arch river_crook_ns-ne
 x 26
 y 45
 elevation 1531
@@ -8026,7 +8026,7 @@ x 26
 y 46
 elevation 509
 end
-arch rjunct_ns-ne
+arch river_junct_ns-ne
 x 26
 y 46
 elevation 509
@@ -8064,7 +8064,7 @@ x 26
 y 49
 elevation 695
 end
-arch ford_we
+arch river_ford_we
 x 26
 y 49
 elevation 695
@@ -9019,7 +9019,7 @@ x 29
 y 38
 elevation 1403
 end
-arch ford_we
+arch river_ford_we
 x 29
 y 38
 elevation 1403

@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2008-02-03 Nicolas Weeger
+Modified: 2013-08-12 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_115
@@ -274,13 +274,13 @@ y 1
 elevation 14615
 end
 arch s_shop2
-name coffee shop
+name Eswald's Coffee Shop
 slaying /scorn/shops/coffeeshop
 msg
 Ding!
 endmsg
-hp 4
-sp 8
+hp 9
+sp 10
 x 1
 y 1
 end
@@ -312,10 +312,10 @@ y 4
 elevation 15568
 end
 arch house_small
-name Beginners2
+name Beginners 2
 slaying /scorn/misc/beginners2
-hp 8
-sp 14
+hp 10
+sp 15
 x 1
 y 4
 end
@@ -601,8 +601,9 @@ y 1
 elevation 13035
 end
 arch sign_w
+name Wanderer's Way
 msg
-Wanderer's Way
+Wanderer's Way...
 endmsg
 x 2
 y 1
@@ -635,11 +636,10 @@ y 4
 elevation 13597
 end
 arch tavern
-name Beginners
-name_pl Beginners
-slaying /scorn/misc/beginners
-hp 14
-sp 28
+name Beginners 1
+slaying ../scorn/misc/beginners_entry
+hp 6
+sp 6
 x 2
 y 4
 end
@@ -653,8 +653,9 @@ y 5
 elevation 13056
 end
 arch sign_w
+name River Road
 msg
-River Road
+River Road...
 endmsg
 x 2
 y 5
@@ -688,7 +689,6 @@ elevation 9507
 end
 arch house_small
 name The Jones'
-name_pl The Jones'
 slaying /scorn/houses/jones
 hp 2
 sp 2
@@ -1293,12 +1293,8 @@ arch magic_mouth
 msg
 ---------------------------------------
 Welcome to Crossfire.
-To read these signs walk onto them
-and press `a' to apply. The same
-command will allow you to enter and
-leave any open buildings and dungeons.
-Apply to a `Bed of Reality' to save.
-Enjoy.
+To read these signs walk onto them and press `a' to apply (read) them. The same command will allow you to enter and leave any open buildings and dungeons.
+Enjoy!
 ---------------------------------------
 endmsg
 x 4
@@ -1311,20 +1307,19 @@ y 4
 end
 arch sign
 name General Information
-name_pl General Information
 msg
-Safe Places to visit...
-Wanderer Inn (Sleep to save!)
-Pirate Inn (in port area)
-Goth's tavern (near GuardHouse)
-City Hall (west of central square)
-Zoo (Old South Road) place to see many monsters
-Patch's house (Wanderer's Way)
+Safe places to visit...
 Central Library
-Prison of Scorn
-The Barking Mule Tavern
+City Hall (west of central square)
+Goth's Tavern (near guard house)
 Oled's Cafe
-...and all the stores
+Patch's House (Wanderer's Way)
+Piriate Inn (in port area)
+Prison of Scorn
+The Barking Mule
+Wanderers' Inn (sleep to save!)
+Zoo (Old South Road) place to see many monsters
+...and all the stores and temples.
 Visit the Central Square for more information (due north)
 endmsg
 x 4
@@ -1340,15 +1335,11 @@ y 5
 elevation 12659
 end
 arch sign
-name Beginners
+name Beginners' Information
 msg
-Beginners should head to the
-houses to the west,
-Beginners 1
-for valuable life lessons
-and
-Beginners 2
-for more advanced topics.
+Beginners should head towards the houses to the west:
+Beginners 1 provides valuable life lessons, and
+Beginners 2 for some more advanced topics.
 endmsg
 x 4
 y 5
@@ -2024,10 +2015,9 @@ elevation 11843
 end
 arch house_2
 name Alfalfa's House
-name_pl Alfalfa's House
-slaying /scorn/houses/newhouse1
-hp 2
-sp 1
+slaying /scorn/houses/alfalfa_ground
+hp 10
+sp 19
 x 6
 y 5
 end
@@ -2324,11 +2314,10 @@ y 1
 elevation 11305
 end
 arch inn
-name Wanderer Inn
-name_pl Wanderer Inn
+name Wanderers' Inn
 slaying /scorn/taverns/inn
-hp 8
-sp 15
+hp 12
+sp 18
 x 7
 y 1
 end
@@ -2361,6 +2350,9 @@ elevation 11718
 end
 arch house_2
 name Rolanda's house
+slaying /scorn/houses/rolanda
+hp 5
+sp 9
 x 7
 y 4
 end
@@ -2372,6 +2364,14 @@ arch grass
 x 7
 y 5
 elevation 11649
+end
+arch house_2
+name Eric's Place
+slaying /scorn/houses/newhouse1
+hp 2
+sp 1
+x 7
+y 5
 end
 arch dungeon_magic
 x 7
@@ -2687,7 +2687,6 @@ elevation 10990
 end
 arch farmhouse
 name Patch's House
-name_pl Patch's House
 slaying /scorn/houses/house2
 hp 10
 sp 1
@@ -3026,7 +3025,7 @@ end
 arch house_small
 slaying /scorn/houses/easy_house.1.a
 hp 10
-sp 19
+sp 18
 x 9
 y 5
 end
@@ -3141,12 +3140,11 @@ end
 arch mountain_cave
 name Goblin Den
 slaying /scorn/dtabb/cave3
-hp 19
+hp 22
 sp 3
 x 9
 y 21
 elevation 5443
-is_floor 0
 end
 arch mountain
 x 9
@@ -3609,10 +3607,10 @@ y 1
 elevation 5799
 end
 arch store_general
-name Scorn General store
+name Scorn General Store
 slaying /scorn/shops/generalshop
-hp 13
-sp 13
+hp 16
+sp 16
 x 11
 y 1
 end
@@ -3985,10 +3983,10 @@ y 5
 elevation 2552
 end
 arch city_tower
-name Newbie Tower
-slaying /scorn/towers/tower
-hp 16
-sp 30
+name Scorn's Brewery
+slaying /scorn/towers/brewery.2
+hp 7
+sp 8
 x 12
 y 5
 end
@@ -5672,7 +5670,6 @@ sp 10
 x 18
 y 10
 elevation 6541
-is_floor 0
 end
 arch mountain
 x 18
@@ -11149,6 +11146,9 @@ elevation 1318
 end
 arch barn2
 name Cider House
+slaying /scorn/misc/cider_house
+hp 9
+sp 19
 x 38
 y 24
 end
@@ -12044,6 +12044,9 @@ elevation 1262
 end
 arch house_largish
 name Witherspoon Manor
+slaying /scorn/mansion/witherspoon_manor
+hp 5
+sp 8
 x 41
 y 24
 end

@@ -3,7 +3,7 @@ name world_110_100
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2008-12-17 Rick Tanner
 endmsg
 outdoor 1
 tile_path_2 world_111_100
@@ -707,7 +707,7 @@ x 2
 y 49
 elevation -8743
 end
-arch sea
+arch deep_sea
 x 3
 elevation -4960
 end
@@ -960,7 +960,7 @@ arch deep_sea
 x 4
 elevation -6084
 end
-arch sea
+arch deep_sea
 x 4
 y 1
 elevation -3157
@@ -1454,7 +1454,7 @@ x 5
 y 49
 elevation -8393
 end
-arch sea
+arch deep_sea
 x 6
 elevation -4148
 end
@@ -5189,7 +5189,7 @@ x 20
 y 49
 elevation -7029
 end
-arch deep_sea
+arch sea1
 x 21
 elevation -6246
 end
@@ -5945,7 +5945,7 @@ x 24
 y 1
 elevation -5936
 end
-arch sea
+arch deep_sea
 x 24
 y 2
 elevation -4899
@@ -6687,7 +6687,7 @@ arch deep_sea
 x 27
 elevation -9205
 end
-arch sea
+arch deep_sea
 x 27
 y 1
 elevation -4827
@@ -7928,11 +7928,11 @@ x 31
 y 49
 elevation -4624
 end
-arch deep_sea
+arch sea1
 x 32
 elevation -6288
 end
-arch deep_sea
+arch sea1
 x 32
 y 1
 elevation -5116
@@ -8181,12 +8181,12 @@ arch sea
 x 33
 elevation -3072
 end
-arch deep_sea
+arch sea1
 x 33
 y 1
 elevation -6188
 end
-arch deep_sea
+arch sea1
 x 33
 y 2
 elevation -5085
@@ -8430,7 +8430,7 @@ arch sea
 x 34
 elevation -4144
 end
-arch deep_sea
+arch sea1
 x 34
 y 1
 elevation -5116
@@ -8924,11 +8924,11 @@ x 35
 y 49
 elevation -3139
 end
-arch deep_sea
+arch sea1
 x 36
 elevation -6496
 end
-arch deep_sea
+arch sea1
 x 36
 y 1
 elevation -5612
@@ -11080,32 +11080,32 @@ x 44
 y 32
 elevation -1683
 end
-arch sea
+arch shallow_sea
 x 44
 y 33
 elevation -1235
 end
-arch sea
+arch shallow_sea
 x 44
 y 34
 elevation -878
 end
-arch sea
+arch shallow_sea
 x 44
 y 35
 elevation -654
 end
-arch sea
+arch shallow_sea
 x 44
 y 36
 elevation -608
 end
-arch sea
+arch shallow_sea
 x 44
 y 37
 elevation -654
 end
-arch sea
+arch shallow_sea
 x 44
 y 38
 elevation -726
@@ -11324,52 +11324,52 @@ x 45
 y 31
 elevation -1719
 end
-arch sea
+arch shallow_sea
 x 45
 y 32
 elevation -1188
 end
-arch sea
+arch shallow_sea
 x 45
 y 33
 elevation -647
 end
-arch brush
+arch beach
 x 45
 y 34
 elevation 191
 end
-arch brush
+arch beach
 x 45
 y 35
 elevation 217
 end
-arch brush
+arch beach
 x 45
 y 36
 elevation 163
 end
-arch brush
+arch beach
 x 45
 y 37
 elevation 45
 end
-arch sea
+arch shallow_sea
 x 45
 y 38
 elevation -280
 end
-arch sea
+arch shallow_sea
 x 45
 y 39
 elevation -356
 end
-arch sea
+arch shallow_sea
 x 45
 y 40
 elevation -410
 end
-arch sea
+arch shallow_sea
 x 45
 y 41
 elevation -459
@@ -11384,22 +11384,22 @@ x 45
 y 43
 elevation -451
 end
-arch sea
+arch shallow_sea
 x 45
 y 44
 elevation -364
 end
-arch sea
+arch shallow_sea
 x 45
 y 45
 elevation -271
 end
-arch sea
+arch shallow_sea
 x 45
 y 46
 elevation -206
 end
-arch sea
+arch shallow_sea
 x 45
 y 47
 elevation -170
@@ -11573,57 +11573,57 @@ x 46
 y 31
 elevation -1456
 end
-arch sea
+arch shallow_sea
 x 46
 y 32
 elevation -851
 end
-arch brush
+arch beach
 x 46
 y 33
 elevation 167
 end
-arch brush
+arch beach
 x 46
 y 34
 elevation 295
 end
-arch brush
+arch dunes
 x 46
 y 35
 elevation 329
 end
-arch brush
+arch dunes
 x 46
 y 36
 elevation 272
 end
-arch brush
+arch beach
 x 46
 y 37
 elevation 143
 end
-arch brush
+arch beach
 x 46
 y 38
 elevation 36
 end
-arch brush
+arch beach
 x 46
 y 39
 elevation 60
 end
-arch brush
+arch beach
 x 46
 y 40
 elevation 81
 end
-arch sea
+arch shallow_sea
 x 46
 y 41
 elevation -184
 end
-arch sea
+arch shallow_sea
 x 46
 y 42
 elevation -236
@@ -11633,17 +11633,17 @@ x 46
 y 43
 elevation -215
 end
-arch sea
+arch shallow_sea
 x 46
 y 44
 elevation -105
 end
-arch brush
+arch beach
 x 46
 y 45
 elevation 98
 end
-arch brush
+arch beach
 x 46
 y 46
 elevation 100
@@ -11822,32 +11822,32 @@ x 47
 y 31
 elevation -1331
 end
-arch sea
+arch shallow_sea
 x 47
 y 32
 elevation -746
 end
-arch brush
+arch beach
 x 47
 y 33
 elevation 105
 end
-arch brush
+arch beach
 x 47
 y 34
 elevation 289
 end
-arch brush
+arch dunes
 x 47
 y 35
 elevation 364
 end
-arch brush
+arch beach
 x 47
 y 36
 elevation 265
 end
-arch brush
+arch beach
 x 47
 y 37
 elevation 98
@@ -11857,17 +11857,17 @@ x 47
 y 38
 elevation 0
 end
-arch brush
+arch beach
 x 47
 y 39
 elevation 59
 end
-arch brush
+arch beach
 x 47
 y 40
 elevation 99
 end
-arch swamp
+arch beach
 x 47
 y 41
 elevation 5
@@ -11882,32 +11882,32 @@ x 47
 y 43
 elevation -31
 end
-arch brush
+arch beach
 x 47
 y 44
 elevation 16
 end
-arch brush
+arch beach
 x 47
 y 45
 elevation 375
 end
-arch brush
+arch beach
 x 47
 y 46
 elevation 482
 end
-arch brush
+arch beach
 x 47
 y 47
 elevation 237
 end
-arch brush
+arch beach
 x 47
 y 48
 elevation 24
 end
-arch brush
+arch beach
 x 47
 y 49
 elevation 81
@@ -12071,27 +12071,27 @@ x 48
 y 31
 elevation -1333
 end
-arch sea
+arch shallow_sea
 x 48
 y 32
 elevation -864
 end
-arch sea
+arch shallow_sea
 x 48
 y 33
 elevation -417
 end
-arch brush
+arch beach
 x 48
 y 34
 elevation 85
 end
-arch brush
+arch beach
 x 48
 y 35
 elevation 246
 end
-arch brush
+arch beach
 x 48
 y 36
 elevation 145
@@ -12111,52 +12111,52 @@ x 48
 y 39
 elevation -18
 end
-arch brush
+arch beach
 x 48
 y 40
 elevation 10
 end
-arch brush
+arch beach
 x 48
 y 41
 elevation 17
 end
-arch brush
+arch beach
 x 48
 y 42
 elevation 23
 end
-arch brush
+arch beach
 x 48
 y 43
 elevation 99
 end
-arch brush
+arch beach
 x 48
 y 44
 elevation 235
 end
-arch brush
+arch dunes
 x 48
 y 45
 elevation 554
 end
-arch brush
+arch dunes
 x 48
 y 46
 elevation 618
 end
-arch brush
+arch dunes
 x 48
 y 47
 elevation 751
 end
-arch grass
+arch dunes
 x 48
 y 48
 elevation 884
 end
-arch grass
+arch dunes
 x 48
 y 49
 elevation 866
@@ -12325,27 +12325,27 @@ x 49
 y 32
 elevation -1067
 end
-arch sea
+arch shallow_sea
 x 49
 y 33
 elevation -713
 end
-arch sea
+arch shallow_sea
 x 49
 y 34
 elevation -424
 end
-arch sea
+arch shallow_sea
 x 49
 y 35
 elevation -247
 end
-arch sea
+arch shallow_sea
 x 49
 y 36
 elevation -189
 end
-arch sea
+arch shallow_sea
 x 49
 y 37
 elevation -181
@@ -12365,51 +12365,47 @@ x 49
 y 40
 elevation -10
 end
-arch brush
+arch beach
 x 49
 y 41
 elevation 107
 end
-arch brush
+arch dunes
 x 49
 y 42
 elevation 130
 end
-arch brush
+arch dunes
 x 49
 y 43
 elevation 557
 end
-arch brush
+arch dunes
 x 49
 y 44
 elevation 693
 end
-arch brush
+arch dunes
 x 49
 y 45
 elevation 605
 end
-arch brush
+arch grassmedium
 x 49
 y 46
 elevation 505
 end
-arch brush
+arch grassmedium
 x 49
 y 47
 elevation 366
 end
-arch grass_only
+arch grassmedium
 x 49
 y 48
 elevation 1743
 end
-arch tree5
-x 49
-y 48
-end
-arch woods_2
+arch grassmedium
 x 49
 y 49
 elevation 1950
