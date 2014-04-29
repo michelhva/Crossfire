@@ -9,7 +9,7 @@ enter_x 14
 enter_y 28
 msg
 Created:  1993-10-15 Morten Hanshaugen
-Modified: 2014-02-15 leaf
+Modified: 2014-04-28 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -2601,11 +2601,18 @@ arch woodfloor
 x 13
 y 28
 end
+arch exit
+slaying beginners_entry
+hp 6
+sp 6
+x 13
+y 28
+end
 arch woodfloor
 x 13
 y 29
 end
-arch bwall_1_3
+arch bwall_2_1_2
 x 13
 y 29
 end
@@ -2755,10 +2762,7 @@ arch woodfloor
 x 14
 y 29
 end
-arch exit
-slaying beginners_entry
-hp 6
-sp 6
+arch bwall_2_1_2
 x 14
 y 29
 end
@@ -2948,7 +2952,7 @@ arch woodfloor
 x 15
 y 29
 end
-arch bwall_1_4
+arch bwall_2_1_2
 x 15
 y 29
 end
