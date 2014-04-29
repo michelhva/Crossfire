@@ -8,7 +8,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  2004-05-30 Avion
-Modified: 2012-02-03 Rick Tanner
+Modified: 2014-04-19 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -476,8 +476,11 @@ y 2
 end
 arch elf_guard
 msg
+@match forest
+The dark forest, it can get quite dangerous.
 @match village
 The village is to the southwest - beware of entering the forest.
+@question forest What forest?
 @match *
 Greetings.
 endmsg
