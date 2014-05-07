@@ -1,6 +1,7 @@
 Object fly_ant
 face fly_ant.131
 race insect
+name flying ant
 animation fly_ant
 monster 1
 move_type walk fly_low
