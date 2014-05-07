@@ -1,3 +1,10 @@
+Redesigned the wild pyromaniac face (based off madman face)
+monster/humanoid/pyromaniac.base.111.png
+monster/humanoid/pyromaniac.base.112.png
+monster/humanoid/pyromaniac.base.113.png
+monster/humanoid/pyromaniac.base.114.png
+SilverNexus 2014-05-06
+
 Fix name for flying ant arch (was fly_ant)
 monster/insect/ant/fly_ant.arc
 SilverNexus 2014-05-06
@@ -6,6 +13,9 @@ SilverNexus 2014-05-06
 	* spell/Ability/abil_burning_hands.arc: Rename to "breath flame".
 	* spell/Ability/ability_dragonbreath.arc: Rename to "breath fire".
 
+==============================================================================
+Changes for 1.71.0
+==============================================================================
 Change Wraith to wraith in the Player archetype, so it shows up consistently
 in the character creation dialoge.
 player/race/wraithp.arc
