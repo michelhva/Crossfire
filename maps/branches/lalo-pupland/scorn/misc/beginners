@@ -9,7 +9,7 @@ enter_x 14
 enter_y 28
 msg
 Created:  1993-10-15 Morten Hanshaugen
-Modified: 2014-02-15 leaf
+Modified: 2014-04-28 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -200,6 +200,12 @@ arch woodfloor
 x 1
 y 1
 end
+arch button_handle
+name Escape lever
+x 1
+y 1
+connected 8
+end
 arch goblin
 x 1
 y 1
@@ -215,6 +221,12 @@ end
 arch woodfloor
 x 1
 y 3
+end
+arch button_handle
+name Escape lever
+x 1
+y 3
+connected 9
 end
 arch goblin
 x 1
@@ -2601,11 +2613,18 @@ arch woodfloor
 x 13
 y 28
 end
+arch exit
+slaying beginners_entry
+hp 6
+sp 6
+x 13
+y 28
+end
 arch woodfloor
 x 13
 y 29
 end
-arch bwall_1_3
+arch bwall_2_1_2
 x 13
 y 29
 end
@@ -2755,10 +2774,7 @@ arch woodfloor
 x 14
 y 29
 end
-arch exit
-slaying beginners_entry
-hp 6
-sp 6
+arch bwall_2_1_2
 x 14
 y 29
 end
@@ -2948,7 +2964,7 @@ arch woodfloor
 x 15
 y 29
 end
-arch bwall_1_4
+arch bwall_2_1_2
 x 15
 y 29
 end
@@ -3727,6 +3743,12 @@ arch woodfloor
 x 20
 y 8
 end
+arch button_handle
+name Escape lever
+x 20
+y 8
+connected 7
+end
 arch woodfloor
 x 20
 y 9
@@ -3780,6 +3802,12 @@ arch woodfloor
 x 20
 y 16
 end
+arch button_handle
+name Escape lever
+x 20
+y 16
+connected 5
+end
 arch woodfloor
 x 20
 y 17
@@ -3799,6 +3827,12 @@ end
 arch woodfloor
 x 20
 y 19
+end
+arch button_lever
+name Escape lever
+x 20
+y 19
+connected 4
 end
 arch woodfloor
 x 20
@@ -3832,6 +3866,12 @@ arch woodfloor
 x 20
 y 23
 end
+arch button_handle
+name Escape lever
+x 20
+y 23
+connected 3
+end
 arch woodfloor
 x 20
 y 24
@@ -3843,6 +3883,12 @@ end
 arch woodfloor
 x 20
 y 25
+end
+arch button_handle
+name Escape lever
+x 20
+y 25
+connected 2
 end
 arch woodfloor
 x 20
@@ -3859,6 +3905,12 @@ end
 arch woodfloor
 x 20
 y 28
+end
+arch button_handle
+name Escape lever
+x 20
+y 28
+connected 1
 end
 arch woodfloor
 x 20
