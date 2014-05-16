@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2007-12-24 tchize
+Modified: 2013-08-18 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_121_116
@@ -5721,7 +5721,7 @@ x 21
 y 49
 elevation 3847
 end
-arch bridge_ns
+arch river_bridge_ns
 x 21
 y 49
 end
@@ -7496,7 +7496,7 @@ y 36
 elevation 4602
 end
 arch barn
-name dragon hangar - Navar
+name Navar Dragon Hangar
 slaying /navar_city/dragon_hangar/hangar
 hp 15
 sp 1
@@ -8262,7 +8262,7 @@ x 31
 y 29
 elevation 3932
 end
-arch bridge_ns
+arch river_bridge_ns
 x 31
 y 29
 end
@@ -9610,7 +9610,6 @@ y 3
 end
 arch wizard_tower
 name very tall tower
-name_pl very tall tower
 slaying /navar_city/mlab/tavern
 hp 1
 sp 20
@@ -9639,7 +9638,6 @@ y 5
 end
 arch house_small
 name Zealot's House
-name_pl Zealot's House
 slaying /navar_city/mlab/tavern
 hp 1
 sp 70
@@ -9966,17 +9964,12 @@ x 37
 end
 arch sign_e
 name Royal Barracks
-name_pl Royal Barracks
 msg
-12th Navar City Regiment
+12th Navar City Regiment.
 endmsg
 x 37
 end
 arch dungeon_magic
-x 37
-y 1
-end
-arch grass
 x 37
 y 1
 end
@@ -10034,7 +10027,6 @@ y 5
 end
 arch house_2
 name Run down house
-name_pl Run down house
 slaying /navar_city/mlab/tavern
 hp 39
 sp 76
@@ -10101,7 +10093,6 @@ end
 arch guard
 x 37
 y 10
-speed_left -4.000000
 end
 arch dungeon_magic
 x 37
@@ -10392,7 +10383,6 @@ y 4
 end
 arch s_shop2
 name Adobe House
-name_pl adobe house
 slaying /navar_city/mlab/tavern
 hp 78
 sp 2
@@ -10413,7 +10403,6 @@ y 5
 end
 arch small_temple2
 name private house
-name_pl private house
 slaying /navar_city/mlab/tavern
 hp 80
 sp 76
@@ -10432,6 +10421,10 @@ arch westcwall_1_3
 x 38
 y 6
 end
+arch swall_1_1_half
+x 38
+y 6
+end
 arch dungeon_magic
 x 38
 y 7
@@ -10440,7 +10433,7 @@ arch cobblestones2
 x 38
 y 7
 end
-arch swall_1_1
+arch swall_2_1_1
 x 38
 y 7
 end
@@ -10542,6 +10535,10 @@ x 38
 y 15
 end
 arch grass
+x 38
+y 16
+end
+arch swall_1_2_half
 x 38
 y 16
 end
@@ -10737,10 +10734,10 @@ arch grass
 x 39
 end
 arch house_up
-name Crazy house
-slaying /navar_city/city1houses2
-hp 28
-sp 8
+name Crazy House
+slaying ../navar_city/houses/crazyhouse
+hp 3
+sp 15
 x 39
 end
 arch dungeon_magic
@@ -10760,9 +10757,10 @@ x 39
 y 2
 end
 arch house_long
-slaying /navar_city/city1houses2
-hp 10
-sp 12
+name Bone House
+slaying ../navar_city/houses/bonehouse
+hp 15
+sp 9
 x 39
 y 2
 end
@@ -10854,7 +10852,6 @@ end
 arch guard
 x 39
 y 10
-speed_left -4.000000
 end
 arch dungeon_magic
 x 39
@@ -10866,7 +10863,6 @@ y 11
 end
 arch cabbage
 name rotting cabbage
-name_pl rotting cabbage
 x 39
 y 11
 nrof 6
@@ -10881,10 +10877,8 @@ y 12
 end
 arch sign
 name City Stocks
-name_pl City Stocks
 msg
-Feel free to throw rotten veges
-provided
+Feel free to throw rotten vegies provided.
 endmsg
 x 39
 y 12
@@ -10922,6 +10916,28 @@ x 39
 y 15
 end
 arch prisoner
+msg
+@match *
+We are doomed!  The city guards, the walls.. those won't protect us when the walking dead return!
+@match dead|undead|walking dead
+They are waiting for the command to plunder our fine city.  Just waiting for the gate to open so they can return!!
+@match gate|return|waiting
+The army of undead are waiting for the ritual to finish to open the gateway.
+@match gateway
+The vile demilich Morkov still holds residence in this city.
+@match demilich|morkov
+One of the demilich minions attacked my home - I was dazed by some sort of yellow light which left me unable to move or speak.  I was then taken to a tall and dark tower.
+@match tower|dark tower
+It was one of the towers here in the city.  We did not go beyond the city walls.  I am certain of that.
+@match help|guard|mayor|story
+It was easier to lock me up here and have rotten vegetables thrown at me like I'm some sort of looney then to put the city in some sort of panic or to chase ghost stories.
+@match minion
+The skeletal mage wore the pendent of the demilich around it's neck.  That's how I know Morkov is still here.
+@match capture|escape
+I found myself suddenly able to move again, so I ran as fast as I could but stumbled in to the river.. a city guard found me and thought I was some sort of drunk on a bender.  I was taken here.  When I told them what I saw.. well, you see where that has gotten me.
+@match ritual|dark
+The mage said they needed six more people for the dark ritual sacrifice to open the grand portal and allow undead to storm the city.  The mage then said, "Our master will then be proud.." while pointing to the pendent around it's neck.
+endmsg
 x 39
 y 15
 end
@@ -11118,9 +11134,8 @@ x 40
 end
 arch house_1
 name Demonic House
-name_pl Demonic House
-slaying /navar_city/city1houses3
-hp 6
+slaying ../navar_city/houses/demonichouse
+hp 15
 sp 11
 x 40
 end
@@ -11189,7 +11204,7 @@ x 40
 y 7
 end
 arch slum3
-name Rockgardens
+name Rock Gardens
 slaying /navar_city/slums/rockgardens
 hp 21
 sp 2
@@ -11456,11 +11471,10 @@ arch grass
 x 41
 end
 arch house_1
-name smokey house
-name_pl smokey house
-slaying /navar_city/city1houses3
-hp 5
-sp 1
+name Smokey House
+slaying ../navar_city/houses/smokeyhouse
+hp 14
+sp 11
 x 41
 end
 arch dungeon_magic
@@ -11480,11 +11494,10 @@ x 41
 y 2
 end
 arch minihouse
-name destitute house
-name_pl destitute house
-slaying /navar_city/city1houses2
-hp 22
-sp 16
+name Destitute House
+slaying ../navar_city/houses/destitutehouse
+hp 10
+sp 11
 x 41
 y 2
 end
@@ -11572,9 +11585,8 @@ arch grass
 x 41
 y 12
 end
-arch guild_west
+arch guild2storage_west
 name Dreaming Sage's Storage Room
-name_pl Dreaming Sage's Storage Room
 slaying /navar_city/dreaming_sage/storage_room
 hp 1
 sp 10
@@ -11607,7 +11619,6 @@ y 15
 end
 arch gravestone
 name Je..y Sei....l.
-name_pl Je..y Sei....l.
 x 41
 y 15
 end
@@ -11727,7 +11738,7 @@ x 41
 y 36
 elevation 3805
 end
-arch rcrook_we-nw
+arch river_crook_we-nw
 x 41
 y 36
 end
@@ -11834,12 +11845,10 @@ arch grass
 x 42
 y 4
 end
-arch temple1
-name temple of Sorig
-name_pl temple of Sorig
+arch sorig_church
 slaying /navar_city/temples/sorig
 hp 7
-sp 13
+sp 16
 x 42
 y 4
 end
@@ -11896,11 +11905,10 @@ x 42
 y 10
 end
 arch woodhouse
-name Rundown house
-name_pl Rundown house
-slaying /navar_city/city1houses3
-hp 13
-sp 1
+name Run-down House
+slaying ../navar_city/houses/rundownhouse
+hp 4
+sp 11
 x 42
 y 10
 end
@@ -11950,7 +11958,6 @@ y 15
 end
 arch gravestone
 name K..e M..s
-name_pl K..e M..s
 x 42
 y 15
 end
@@ -12066,7 +12073,7 @@ x 42
 y 36
 elevation 4225
 end
-arch rjunct_we-nw
+arch river_junct_we-nw
 x 42
 y 36
 end
@@ -12141,11 +12148,10 @@ end
 arch grass
 x 43
 end
-arch small_temple
-name Temple of Ruggilli
+arch ruggilli_temple
 slaying /navar_city/temples/ruggilli
-hp 3
-sp 13
+hp 11
+sp 22
 x 43
 end
 arch dungeon_magic
@@ -12278,7 +12284,6 @@ y 15
 end
 arch gravestone
 name M.ss .ulia ..berts
-name_pl M.ss .ulia ..berts
 x 43
 y 15
 end
@@ -12505,6 +12510,10 @@ arch grass
 x 44
 y 5
 end
+arch well
+x 44
+y 5
+end
 arch dungeon_magic
 x 44
 y 6
@@ -12563,10 +12572,9 @@ y 11
 end
 arch bungalow
 name Charlie's Place
-name_pl Charlie's Place
-slaying /navar_city/city1houses3
-hp 22
-sp 9
+slaying ../navar_city/houses/charliesplace
+hp 3
+sp 10
 x 44
 y 11
 end
@@ -12580,10 +12588,9 @@ y 12
 end
 arch minihouse
 name Herbert's Undertakers
-name_pl Herbert's Undertakers
-slaying /navar_city/city1houses3
-hp 10
-sp 12
+slaying ../navar_city/houses/herbertsundertakers
+hp 14
+sp 15
 x 44
 y 12
 end
@@ -12597,7 +12604,7 @@ y 13
 end
 arch minihouse
 name mouse infested house
-slaying /navar_city/mouse_house
+slaying ../navar_city/houses/mouse_house
 hp 14
 sp 17
 x 44
@@ -12620,8 +12627,7 @@ x 44
 y 15
 end
 arch gravestone2
-name Cross of St Hathwaite
-name_pl Cross of St Hathwaite
+name Cross of St. Hathwaite
 x 44
 y 15
 end
@@ -12813,10 +12819,10 @@ arch grass
 x 45
 end
 arch house_small
-name Freddy's house
-slaying /navar_city/city1houses2
-hp 22
-sp 9
+name Freddy's House
+slaying ../navar_city/houses/freddyshouse
+hp 12
+sp 13
 x 45
 end
 arch dungeon_magic
@@ -12841,10 +12847,9 @@ y 2
 end
 arch house_1
 name Dancing Lessons
-name_pl Dancing Lessons
-slaying /navar_city/city1houses3
-hp 27
-sp 4
+slaying ../navar_city/houses/dancinglessons
+hp 12
+sp 10
 x 45
 y 2
 end
@@ -12877,10 +12882,6 @@ x 45
 y 6
 end
 arch cobblestones2
-x 45
-y 6
-end
-arch well
 x 45
 y 6
 end
@@ -13148,8 +13149,7 @@ arch grass
 x 46
 end
 arch tavern
-name Earth house
-name_pl Earth house
+name Earthen House
 slaying /navar_city/magara/houses/earth_house
 hp 1
 sp 1
@@ -13164,8 +13164,7 @@ x 46
 y 1
 end
 arch tavern
-name Family house
-name_pl Family house
+name Family House
 slaying /navar_city/magara/houses/family_house
 hp 1
 sp 1
@@ -13225,8 +13224,7 @@ x 46
 y 7
 end
 arch house_up
-name Iggy's house
-name_pl Iggy's house
+name Iggy's House
 slaying /navar_city/slums/Iggys_house
 hp 1
 sp 15
@@ -13269,12 +13267,10 @@ arch cobblestones2
 x 46
 y 11
 end
-arch cathedral
-name Mostrai Cathedral
-name_pl Mostrai cathedral
-slaying /navar_city/city1church1
-hp 8
-sp 25
+arch mostrai_cathedral
+slaying ../navar_city/temples/mostrai
+hp 14
+sp 33
 x 46
 y 11
 move_block 0
@@ -13831,7 +13827,7 @@ arch grass
 x 48
 end
 arch rl_house_west
-name Private apartments
+name Private Apartments
 slaying /navar_city/apartments/apartment
 hp 10
 sp 13
@@ -13872,10 +13868,9 @@ y 4
 end
 arch minihouse
 name Bingo Hall
-name_pl Bingo Hall
-slaying /navar_city/city1houses3
-hp 1
-sp 27
+slaying ../navar_city/houses/bingohall
+hp 11
+sp 16
 x 48
 y 4
 end
@@ -13901,10 +13896,9 @@ y 6
 end
 arch house_1
 name Wise House
-name_pl Wise House
-slaying /navar_city/city1houses3
-hp 22
-sp 16
+slaying ../navar_city/houses/wisehouse
+hp 14
+sp 11
 x 48
 y 6
 end
@@ -13934,7 +13928,7 @@ slaying /navar_city/misc/thamshop
 msg
 You hear the flap of batwings.
 endmsg
-hp 4
+hp 8
 sp 13
 x 48
 y 8

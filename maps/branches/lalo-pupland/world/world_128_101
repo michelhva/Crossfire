@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-11
-Modified: 2007-12-24 tchize
+Modified: 2008-12-17 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_128_100
@@ -32,7 +32,6 @@ elevation 2773
 end
 arch cave2
 name mountain top
-name_pl mountain top
 y 2
 blocksview 0
 end
@@ -62,7 +61,6 @@ blocksview 0
 end
 arch cave2
 name mountain top
-name_pl mountain top
 y 4
 blocksview 0
 end
@@ -71,7 +69,6 @@ y 5
 end
 arch flagstone
 name mountain
-name_pl mountain
 face mountain5.111
 y 5
 elevation 11000
@@ -90,7 +87,6 @@ y 6
 end
 arch cave4
 name mountain top
-name_pl mountain top
 y 6
 blocksview 0
 end
@@ -113,7 +109,6 @@ elevation 2773
 end
 arch cave4
 name mountain top
-name_pl mountain top
 y 9
 blocksview 0
 end
@@ -182,7 +177,6 @@ elevation 521
 end
 arch market1_east
 name itteifuhen apa-to
-name_pl itteifuhen apa-to
 slaying /azumauindo/suno-yamatoshi/apartments/lapartment1
 hp 7
 sp 1
@@ -217,7 +211,6 @@ elevation 358
 end
 arch building5_east
 name Nenshou Youso's Chozou Kutsurogi
-name_pl Nenshou Youso's Chozou Kutsurogi
 slaying /azumauindo/suno-yamatoshi/nenshou_youso/storage_room
 hp 1
 sp 10
@@ -234,14 +227,14 @@ end
 arch cwall_2_1_2
 y 23
 end
-arch desert
+arch beach
 y 24
 elevation 637
 end
 arch building1_east
 y 24
 end
-arch desert
+arch beach
 y 25
 elevation 688
 end
@@ -284,7 +277,7 @@ decorstyle furniture
 endmsg
 y 31
 end
-arch desert
+arch beach
 y 32
 elevation 216
 end
@@ -381,7 +374,6 @@ elevation 2693
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 1
 y 2
 blocksview 0
@@ -404,7 +396,6 @@ elevation 3812
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 1
 y 4
 blocksview 0
@@ -425,7 +416,6 @@ y 5
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 1
 y 5
 blocksview 0
@@ -446,7 +436,6 @@ y 6
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 1
 y 6
 blocksview 0
@@ -470,7 +459,6 @@ elevation 2773
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 1
 y 9
 blocksview 0
@@ -506,7 +494,7 @@ arch flagstone
 x 1
 y 15
 end
-arch desert
+arch beach
 x 1
 y 16
 elevation 105
@@ -539,7 +527,7 @@ arch flagstone
 x 1
 y 20
 end
-arch desert
+arch beach
 x 1
 y 21
 elevation 752
@@ -558,12 +546,12 @@ arch cwall_2_1_2
 x 1
 y 23
 end
-arch desert
+arch beach
 x 1
 y 24
 elevation 637
 end
-arch desert
+arch beach
 x 1
 y 25
 elevation 688
@@ -605,7 +593,7 @@ x 1
 y 31
 elevation 29
 end
-arch desert
+arch beach
 x 1
 y 32
 elevation 216
@@ -735,7 +723,6 @@ elevation 1197
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 2
 y 2
 blocksview 0
@@ -751,7 +738,6 @@ elevation 2773
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 2
 y 3
 blocksview 0
@@ -811,7 +797,6 @@ elevation 2773
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 2
 y 8
 end
@@ -826,7 +811,6 @@ elevation 2773
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 2
 y 9
 blocksview 0
@@ -866,7 +850,6 @@ elevation 2715
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 2
 y 12
 blocksview 0
@@ -878,7 +861,6 @@ elevation 577
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 2
 y 13
 blocksview 0
@@ -901,14 +883,13 @@ x 2
 y 15
 elevation 999
 end
-arch desert
+arch beach
 x 2
 y 16
 elevation 500
 end
 arch market3_east
 name itteifuhen apa-to
-name_pl itteifuhen apa-to
 slaying /azumauindo/suno-yamatoshi/apartments/lapartment1
 hp 27
 sp 1
@@ -959,7 +940,7 @@ arch cwall_2_1_2
 x 2
 y 23
 end
-arch desert
+arch beach
 x 2
 y 24
 elevation 281
@@ -968,7 +949,7 @@ arch building2_east
 x 2
 y 24
 end
-arch desert
+arch beach
 x 2
 y 25
 elevation 833
@@ -977,7 +958,7 @@ arch flagstone
 x 2
 y 26
 end
-arch desert
+arch beach
 x 2
 y 27
 elevation 833
@@ -1029,22 +1010,22 @@ endmsg
 x 2
 y 30
 end
-arch desert
+arch beach
 x 2
 y 31
 elevation 216
 end
-arch desert
+arch beach
 x 2
 y 32
 elevation 216
 end
-arch desert
+arch beach
 x 2
 y 33
 elevation 216
 end
-arch desert
+arch beach
 x 2
 y 34
 elevation 216
@@ -1054,7 +1035,7 @@ x 2
 y 35
 elevation 340
 end
-arch desert
+arch beach
 x 2
 y 36
 elevation 216
@@ -1151,7 +1132,6 @@ elevation 2773
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 3
 y 3
 blocksview 0
@@ -1171,7 +1151,6 @@ y 4
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 3
 y 4
 blocksview 0
@@ -1191,7 +1170,6 @@ y 5
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 3
 y 5
 blocksview 0
@@ -1211,7 +1189,6 @@ y 6
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 3
 y 6
 blocksview 0
@@ -1231,7 +1208,6 @@ y 7
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 3
 y 7
 blocksview 0
@@ -1243,7 +1219,6 @@ elevation 2693
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 3
 y 8
 blocksview 0
@@ -1282,7 +1257,6 @@ elevation 577
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 3
 y 12
 blocksview 0
@@ -1302,7 +1276,7 @@ x 3
 y 15
 elevation 734
 end
-arch desert
+arch beach
 x 3
 y 16
 elevation 637
@@ -1357,12 +1331,12 @@ arch cwall_2_1_2
 x 3
 y 23
 end
-arch desert
+arch beach
 x 3
 y 24
 elevation 281
 end
-arch desert
+arch beach
 x 3
 y 25
 elevation 833
@@ -1375,7 +1349,7 @@ arch dungeon_magic
 x 3
 y 27
 end
-arch desert
+arch beach
 x 3
 y 27
 elevation 41
@@ -1592,7 +1566,6 @@ y 4
 end
 arch flagstone
 name hill
-name_pl hill
 face hillsrocky.111
 x 4
 y 5
@@ -1649,7 +1622,6 @@ elevation 2773
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 4
 y 11
 blocksview 0
@@ -1661,7 +1633,6 @@ elevation 577
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 4
 y 12
 blocksview 0
@@ -1756,7 +1727,7 @@ arch cwall_2_2_4
 x 4
 y 23
 end
-arch desert
+arch beach
 x 4
 y 24
 elevation 674
@@ -1837,7 +1808,6 @@ y 29
 end
 arch rune_mark
 name Suno-yamatoshi
-name_pl Suno-yamatoshi
 msg
 Suno-yamatoshi
 ^
@@ -2053,7 +2023,6 @@ elevation 2773
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 5
 y 10
 blocksview 0
@@ -2065,7 +2034,6 @@ elevation 577
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 5
 y 11
 blocksview 0
@@ -2135,7 +2103,7 @@ arch cwall_2_1_2
 x 5
 y 21
 end
-arch desert
+arch beach
 x 5
 y 22
 elevation 637
@@ -2148,12 +2116,12 @@ sp 14
 x 5
 y 22
 end
-arch desert
+arch beach
 x 5
 y 23
 elevation 661
 end
-arch desert
+arch beach
 x 5
 y 24
 elevation 833
@@ -2176,7 +2144,7 @@ arch flagstone
 x 5
 y 25
 end
-arch desert
+arch beach
 x 5
 y 26
 elevation 650
@@ -2199,7 +2167,7 @@ arch dungeon_magic
 x 5
 y 27
 end
-arch desert
+arch beach
 x 5
 y 27
 elevation 510
@@ -2424,7 +2392,6 @@ elevation 577
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 6
 y 10
 blocksview 0
@@ -2553,12 +2520,12 @@ arch cwall_3_1
 x 6
 y 21
 end
-arch desert
+arch beach
 x 6
 y 22
 elevation 637
 end
-arch desert
+arch beach
 x 6
 y 23
 elevation 637
@@ -2571,7 +2538,7 @@ arch flagstone
 x 6
 y 25
 end
-arch desert
+arch beach
 x 6
 y 26
 elevation 893
@@ -2590,7 +2557,7 @@ endmsg
 x 6
 y 26
 end
-arch desert
+arch beach
 x 6
 y 27
 elevation 661
@@ -2785,7 +2752,6 @@ elevation 452
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 7
 blocksview 0
 end
@@ -2796,7 +2762,6 @@ elevation 1537
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 7
 y 1
 blocksview 0
@@ -2991,7 +2956,7 @@ arch flagstone
 x 7
 y 24
 end
-arch desert
+arch beach
 x 7
 y 25
 elevation 661
@@ -3000,12 +2965,12 @@ arch building2_east
 x 7
 y 25
 end
-arch desert
+arch beach
 x 7
 y 26
 elevation 637
 end
-arch desert
+arch beach
 x 7
 y 27
 elevation 637
@@ -3033,12 +2998,12 @@ arch cwall_2_1_2
 x 7
 y 28
 end
-arch desert
+arch beach
 x 7
 y 29
 elevation 990
 end
-arch desert
+arch beach
 x 7
 y 30
 elevation 789
@@ -3168,7 +3133,6 @@ elevation 139
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 8
 y 1
 blocksview 0
@@ -3180,7 +3144,6 @@ elevation 1537
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 8
 y 2
 blocksview 0
@@ -3277,7 +3240,7 @@ arch cwall_2_1_2
 x 8
 y 17
 end
-arch desert
+arch beach
 x 8
 y 18
 elevation 833
@@ -3365,12 +3328,12 @@ arch flagstone
 x 8
 y 24
 end
-arch desert
+arch beach
 x 8
 y 25
 elevation 637
 end
-arch desert
+arch beach
 x 8
 y 26
 elevation 688
@@ -3521,7 +3484,6 @@ elevation 1095
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 9
 y 2
 blocksview 0
@@ -3533,7 +3495,6 @@ elevation 406
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 9
 y 3
 blocksview 0
@@ -3545,7 +3506,6 @@ elevation 647
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 9
 y 4
 blocksview 0
@@ -3557,7 +3517,6 @@ elevation 358
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 9
 y 5
 blocksview 0
@@ -3569,7 +3528,6 @@ elevation 820
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 9
 y 6
 blocksview 0
@@ -3627,7 +3585,7 @@ x 9
 y 15
 elevation 51
 end
-arch desert
+arch beach
 x 9
 y 16
 elevation 41
@@ -3670,7 +3628,7 @@ arch flagstone
 x 9
 y 23
 end
-arch desert
+arch beach
 x 9
 y 24
 elevation 613
@@ -3689,7 +3647,7 @@ endmsg
 x 9
 y 24
 end
-arch desert
+arch beach
 x 9
 y 25
 elevation 281
@@ -3708,7 +3666,7 @@ endmsg
 x 9
 y 25
 end
-arch desert
+arch beach
 x 9
 y 26
 elevation 833
@@ -3775,7 +3733,7 @@ x 9
 y 34
 elevation 1039
 end
-arch desert
+arch beach
 x 9
 y 35
 elevation 79
@@ -3868,11 +3826,11 @@ x 9
 y 49
 elevation -1520
 end
-arch desert
+arch beach
 x 10
 elevation 771
 end
-arch desert
+arch beach
 x 10
 y 1
 elevation 825
@@ -3986,7 +3944,7 @@ arch cwall_2_1_2
 x 10
 y 18
 end
-arch desert
+arch beach
 x 10
 y 19
 elevation 613
@@ -4005,7 +3963,7 @@ endmsg
 x 10
 y 19
 end
-arch desert
+arch beach
 x 10
 y 20
 elevation 281
@@ -4043,7 +4001,7 @@ endmsg
 x 10
 y 21
 end
-arch desert
+arch beach
 x 10
 y 22
 elevation 893
@@ -4081,7 +4039,7 @@ endmsg
 x 10
 y 23
 end
-arch desert
+arch beach
 x 10
 y 24
 elevation 893
@@ -4169,7 +4127,7 @@ arch evergreens2
 x 10
 y 33
 end
-arch desert
+arch beach
 x 10
 y 34
 elevation 737
@@ -4254,7 +4212,7 @@ x 10
 y 49
 elevation -1459
 end
-arch desert
+arch beach
 x 11
 elevation 817
 end
@@ -4727,12 +4685,12 @@ arch tree3
 x 12
 y 28
 end
-arch desert
+arch beach
 x 12
 y 29
 elevation 33
 end
-arch desert
+arch beach
 x 12
 y 30
 elevation 12
@@ -4848,11 +4806,11 @@ x 12
 y 49
 elevation -1236
 end
-arch desert
+arch beach
 x 13
 elevation 824
 end
-arch desert
+arch beach
 x 13
 y 1
 elevation 749
@@ -4992,7 +4950,7 @@ arch tree3
 x 13
 y 25
 end
-arch desert
+arch beach
 x 13
 y 26
 elevation 690
@@ -5002,7 +4960,7 @@ x 13
 y 27
 elevation 449
 end
-arch desert
+arch beach
 x 13
 y 28
 elevation 11
@@ -5264,7 +5222,7 @@ x 14
 y 25
 elevation 1499
 end
-arch desert
+arch beach
 x 14
 y 26
 elevation 990
@@ -5416,7 +5374,7 @@ arch brush
 x 15
 elevation 514
 end
-arch desert
+arch beach
 x 15
 y 1
 elevation 560
@@ -5712,11 +5670,11 @@ arch dungeon_magic
 x 15
 y 49
 end
-arch desert
+arch beach
 x 16
 elevation 158
 end
-arch desert
+arch beach
 x 16
 y 1
 elevation 280
@@ -5847,7 +5805,6 @@ elevation 1907
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 16
 y 21
 blocksview 0
@@ -5859,7 +5816,6 @@ elevation 1280
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 16
 y 22
 blocksview 0
@@ -5871,7 +5827,6 @@ elevation 1907
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 16
 y 23
 blocksview 0
@@ -6166,14 +6121,12 @@ elevation 1907
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 17
 y 21
 blocksview 0
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 17
 y 22
@@ -6186,12 +6139,11 @@ elevation 1318
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 17
 y 23
 blocksview 0
 end
-arch desert
+arch beach
 x 17
 y 24
 elevation 603
@@ -6201,12 +6153,12 @@ x 17
 y 25
 elevation 1151
 end
-arch desert
+arch beach
 x 17
 y 26
 elevation 729
 end
-arch desert
+arch beach
 x 17
 y 27
 elevation 40
@@ -6452,7 +6404,7 @@ x 18
 y 19
 elevation -7
 end
-arch desert
+arch beach
 x 18
 y 20
 elevation 145
@@ -6464,14 +6416,12 @@ elevation 1907
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 18
 y 21
 blocksview 0
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 18
 y 22
@@ -6484,7 +6434,6 @@ elevation 1907
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 18
 y 23
 blocksview 0
@@ -6496,17 +6445,16 @@ elevation 1907
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 18
 y 24
 blocksview 0
 end
-arch desert
+arch beach
 x 18
 y 25
 elevation 12
 end
-arch desert
+arch beach
 x 18
 y 26
 elevation 103
@@ -6785,7 +6733,7 @@ x 19
 y 19
 elevation -5
 end
-arch desert
+arch beach
 x 19
 y 20
 elevation 105
@@ -6797,14 +6745,12 @@ elevation 1318
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 19
 y 21
 blocksview 0
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 19
 y 22
@@ -6812,7 +6758,6 @@ elevation 3812
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 19
 y 23
@@ -6825,7 +6770,6 @@ elevation 1318
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 19
 y 24
 blocksview 0
@@ -6953,7 +6897,7 @@ y 43
 end
 arch invis_exit
 slaying /azumauindo/misc/entrance1
-hp 8
+hp 6
 sp 1
 x 19
 y 43
@@ -6974,7 +6918,7 @@ y 44
 end
 arch invis_exit
 slaying /azumauindo/misc/entrance1
-hp 8
+hp 6
 sp 13
 x 19
 y 44
@@ -7140,14 +7084,12 @@ elevation 1907
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 20
 y 21
 blocksview 0
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 20
 y 22
@@ -7155,7 +7097,6 @@ elevation 3812
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 20
 y 23
@@ -7168,7 +7109,6 @@ elevation 1057
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 20
 y 24
 blocksview 0
@@ -7180,7 +7120,6 @@ elevation 1907
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 20
 y 25
 blocksview 0
@@ -7273,7 +7212,7 @@ arch dungeon_magic
 x 20
 y 41
 end
-arch desert
+arch beach
 x 20
 y 42
 elevation 79
@@ -7448,7 +7387,7 @@ x 21
 y 19
 elevation 370
 end
-arch desert
+arch beach
 x 21
 y 20
 elevation 920
@@ -7460,14 +7399,12 @@ elevation 1318
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 21
 y 21
 blocksview 0
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 21
 y 22
@@ -7475,7 +7412,6 @@ elevation 3812
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 21
 y 23
@@ -7483,14 +7419,12 @@ elevation 3812
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 21
 y 23
 blocksview 0
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 21
 y 24
@@ -7498,7 +7432,6 @@ elevation 3812
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 21
 y 24
 blocksview 0
@@ -7510,27 +7443,26 @@ elevation 1318
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 21
 y 25
 blocksview 0
 end
-arch desert
+arch beach
 x 21
 y 26
 elevation 532
 end
-arch desert
+arch beach
 x 21
 y 27
 elevation 815
 end
-arch desert
+arch beach
 x 21
 y 28
 elevation 879
 end
-arch desert
+arch beach
 x 21
 y 29
 elevation 481
@@ -7781,12 +7713,12 @@ x 22
 y 18
 elevation 3
 end
-arch desert
+arch beach
 x 22
 y 19
 elevation 617
 end
-arch desert
+arch beach
 x 22
 y 20
 elevation 967
@@ -7798,7 +7730,6 @@ elevation 1348
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 22
 y 21
 blocksview 0
@@ -7810,14 +7741,12 @@ elevation 1746
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 22
 y 22
 blocksview 0
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 22
 y 23
@@ -7825,14 +7754,12 @@ elevation 3812
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 22
 y 23
 blocksview 0
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 22
 y 24
@@ -7840,7 +7767,6 @@ elevation 3812
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 22
 y 24
 blocksview 0
@@ -7852,7 +7778,6 @@ elevation 1746
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 22
 y 25
 blocksview 0
@@ -7864,7 +7789,6 @@ elevation 1746
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 22
 y 26
 blocksview 0
@@ -7876,7 +7800,6 @@ elevation 1746
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 22
 y 27
 blocksview 0
@@ -7891,7 +7814,7 @@ x 22
 y 29
 elevation 861
 end
-arch desert
+arch beach
 x 22
 y 30
 elevation 309
@@ -7923,12 +7846,12 @@ arch dungeon_magic
 x 22
 y 33
 end
-arch desert
+arch beach
 x 22
 y 34
 elevation 95
 end
-arch desert
+arch beach
 x 22
 y 35
 elevation 138
@@ -8132,22 +8055,22 @@ x 23
 y 17
 elevation -82
 end
-arch desert
+arch beach
 x 23
 y 18
 elevation 197
 end
-arch desert
+arch beach
 x 23
 y 19
 elevation 538
 end
-arch desert
+arch beach
 x 23
 y 20
 elevation 778
 end
-arch desert
+arch beach
 x 23
 y 21
 elevation 848
@@ -8159,7 +8082,6 @@ elevation 1746
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 23
 y 22
 blocksview 0
@@ -8171,14 +8093,12 @@ elevation 1979
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 23
 y 23
 blocksview 0
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 23
 y 24
@@ -8186,7 +8106,6 @@ elevation 3812
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 23
 y 25
@@ -8194,7 +8113,6 @@ elevation 3812
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 23
 y 26
@@ -8207,7 +8125,6 @@ elevation 1200
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 23
 y 27
 blocksview 0
@@ -8219,7 +8136,6 @@ elevation 1746
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 23
 y 28
 blocksview 0
@@ -8231,7 +8147,6 @@ elevation 1907
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 23
 y 29
 blocksview 0
@@ -8246,12 +8161,12 @@ x 23
 y 31
 elevation 64
 end
-arch desert
+arch beach
 x 23
 y 32
 elevation 177
 end
-arch desert
+arch beach
 x 23
 y 33
 elevation 415
@@ -8271,7 +8186,7 @@ x 23
 y 36
 elevation 753
 end
-arch desert
+arch beach
 x 23
 y 37
 elevation 385
@@ -8452,7 +8367,7 @@ x 24
 y 20
 elevation 248
 end
-arch desert
+arch beach
 x 24
 y 21
 elevation 739
@@ -8469,7 +8384,6 @@ elevation 1746
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 24
 y 23
 blocksview 0
@@ -8481,7 +8395,6 @@ elevation 1476
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 24
 y 24
 blocksview 0
@@ -8493,14 +8406,12 @@ elevation 1746
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 24
 y 25
 blocksview 0
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 24
 y 26
@@ -8508,7 +8419,6 @@ elevation 3812
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 24
 y 27
@@ -8516,7 +8426,6 @@ elevation 3812
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 24
 y 28
@@ -8529,12 +8438,11 @@ elevation 1318
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 24
 y 29
 blocksview 0
 end
-arch desert
+arch beach
 x 24
 y 30
 elevation 86
@@ -8544,7 +8452,7 @@ x 24
 y 31
 elevation 225
 end
-arch desert
+arch beach
 x 24
 y 32
 elevation 570
@@ -8752,17 +8660,17 @@ x 25
 y 19
 elevation -9
 end
-arch desert
+arch beach
 x 25
 y 20
 elevation 23
 end
-arch desert
+arch beach
 x 25
 y 21
 elevation 342
 end
-arch desert
+arch beach
 x 25
 y 22
 elevation 996
@@ -8772,7 +8680,7 @@ x 25
 y 23
 elevation 1381
 end
-arch desert
+arch beach
 x 25
 y 24
 elevation 913
@@ -8784,7 +8692,6 @@ elevation 1746
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 25
 y 25
 blocksview 0
@@ -8796,7 +8703,6 @@ elevation 1907
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 25
 y 26
 blocksview 0
@@ -8808,7 +8714,6 @@ elevation 1280
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 25
 y 27
 blocksview 0
@@ -8820,7 +8725,6 @@ elevation 1907
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 25
 y 28
 blocksview 0
@@ -8832,7 +8736,6 @@ elevation 1746
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 25
 y 29
 blocksview 0
@@ -9080,12 +8983,12 @@ arch tree5
 x 26
 y 23
 end
-arch desert
+arch beach
 x 26
 y 24
 elevation 926
 end
-arch desert
+arch beach
 x 26
 y 25
 elevation 611
@@ -9095,17 +8998,17 @@ x 26
 y 26
 elevation 397
 end
-arch desert
+arch beach
 x 26
 y 27
 elevation 111
 end
-arch desert
+arch beach
 x 26
 y 28
 elevation 100
 end
-arch desert
+arch beach
 x 26
 y 29
 elevation 445
@@ -9348,7 +9251,7 @@ x 27
 y 22
 elevation 277
 end
-arch desert
+arch beach
 x 27
 y 23
 elevation 641
@@ -9358,12 +9261,12 @@ x 27
 y 24
 elevation 701
 end
-arch desert
+arch beach
 x 27
 y 25
 elevation 531
 end
-arch desert
+arch beach
 x 27
 y 26
 elevation 279
@@ -9373,27 +9276,27 @@ x 27
 y 27
 elevation 118
 end
-arch desert
+arch beach
 x 27
 y 28
 elevation 210
 end
-arch desert
+arch beach
 x 27
 y 29
 elevation 508
 end
-arch desert
+arch beach
 x 27
 y 30
 elevation 754
 end
-arch desert
+arch beach
 x 27
 y 31
 elevation 879
 end
-arch desert
+arch beach
 x 27
 y 32
 elevation 883
@@ -9413,7 +9316,7 @@ x 27
 y 35
 elevation 836
 end
-arch desert
+arch beach
 x 27
 y 36
 elevation 977
@@ -9644,12 +9547,12 @@ x 28
 y 29
 elevation 44
 end
-arch desert
+arch beach
 x 28
 y 30
 elevation 435
 end
-arch desert
+arch beach
 x 28
 y 31
 elevation 559
@@ -9913,7 +9816,7 @@ x 29
 y 29
 elevation 30
 end
-arch desert
+arch beach
 x 29
 y 30
 elevation 72
@@ -10434,12 +10337,12 @@ x 31
 y 28
 elevation -3
 end
-arch desert
+arch beach
 x 31
 y 29
 elevation 188
 end
-arch desert
+arch beach
 x 31
 y 30
 elevation 293
@@ -10764,7 +10667,7 @@ x 32
 y 31
 elevation 667
 end
-arch desert
+arch beach
 x 32
 y 32
 elevation 612
@@ -11399,7 +11302,6 @@ y 35
 end
 arch rune_mark
 name Minatomachi
-name_pl Minatomachi
 msg
 Minatomachi
 >-->
@@ -11666,7 +11568,7 @@ x 35
 y 29
 elevation 341
 end
-arch desert
+arch beach
 x 35
 y 30
 elevation 918
@@ -11730,7 +11632,6 @@ y 35
 end
 arch guard_house_1
 name goei mezon
-name_pl goei mezon
 x 35
 y 35
 end
@@ -12011,7 +11912,7 @@ arch tree5
 x 36
 y 31
 end
-arch desert
+arch beach
 x 36
 y 32
 elevation 719
@@ -12065,7 +11966,6 @@ y 35
 end
 arch guard_house_2
 name goei mezon
-name_pl goei mezon
 x 36
 y 35
 end
@@ -12224,7 +12124,7 @@ arch dungeon_magic
 x 36
 y 45
 end
-arch desert
+arch beach
 x 36
 y 46
 elevation 36
@@ -12436,7 +12336,7 @@ x 37
 y 28
 elevation -10
 end
-arch desert
+arch beach
 x 37
 y 29
 elevation 127
@@ -12553,7 +12453,7 @@ x 37
 y 41
 elevation 13
 end
-arch desert
+arch beach
 x 37
 y 41
 elevation 833
@@ -12572,7 +12472,7 @@ endmsg
 x 37
 y 41
 end
-arch desert
+arch beach
 x 37
 y 42
 elevation 36
@@ -12852,12 +12752,12 @@ arch building1_east
 x 38
 y 39
 end
-arch desert
+arch beach
 x 38
 y 40
 elevation 69
 end
-arch desert
+arch beach
 x 38
 y 41
 elevation 12
@@ -12881,7 +12781,7 @@ endmsg
 x 38
 y 41
 end
-arch desert
+arch beach
 x 38
 y 42
 elevation 36
@@ -13212,7 +13112,7 @@ arch flagstone
 x 39
 y 36
 end
-arch desert
+arch beach
 x 39
 y 37
 elevation 76
@@ -13225,7 +13125,7 @@ sp 14
 x 39
 y 37
 end
-arch desert
+arch beach
 x 39
 y 38
 elevation 84
@@ -13235,7 +13135,7 @@ x 39
 y 39
 elevation 98
 end
-arch desert
+arch beach
 x 39
 y 40
 elevation 116
@@ -13245,7 +13145,7 @@ x 39
 y 41
 elevation 13
 end
-arch desert
+arch beach
 x 39
 y 41
 elevation 833
@@ -13264,7 +13164,7 @@ endmsg
 x 39
 y 41
 end
-arch desert
+arch beach
 x 39
 y 42
 elevation 36
@@ -13493,9 +13393,9 @@ x 40
 y 23
 end
 arch invis_exit
-slaying /azumauindo/zaseki_dzuki_ryoku/ground
-hp 12
-sp 33
+slaying /azumauindo/zaseki_dzuki_ryoku/mainfloor
+hp 15
+sp 28
 x 40
 y 23
 end
@@ -13558,7 +13458,7 @@ arch cwall_2_1_2
 x 40
 y 31
 end
-arch desert
+arch beach
 x 40
 y 32
 elevation 543
@@ -13608,7 +13508,7 @@ x 40
 y 39
 elevation 265
 end
-arch desert
+arch beach
 x 40
 y 39
 elevation 833
@@ -13632,7 +13532,7 @@ x 40
 y 40
 elevation 187
 end
-arch desert
+arch beach
 x 40
 y 40
 elevation 833
@@ -13675,7 +13575,7 @@ endmsg
 x 40
 y 41
 end
-arch desert
+arch beach
 x 40
 y 42
 elevation 36
@@ -14000,7 +13900,7 @@ x 41
 y 35
 elevation 96
 end
-arch desert
+arch beach
 x 41
 y 35
 elevation 833
@@ -14058,7 +13958,7 @@ endmsg
 x 41
 y 41
 end
-arch desert
+arch beach
 x 41
 y 42
 elevation 36
@@ -14408,7 +14308,7 @@ x 42
 y 38
 elevation 504
 end
-arch desert
+arch beach
 x 42
 y 38
 elevation 833
@@ -14455,7 +14355,7 @@ x 42
 y 41
 elevation 267
 end
-arch desert
+arch beach
 x 42
 y 41
 elevation 833
@@ -14474,7 +14374,7 @@ endmsg
 x 42
 y 41
 end
-arch desert
+arch beach
 x 42
 y 42
 elevation 36
@@ -14761,7 +14661,7 @@ x 43
 y 33
 elevation 243
 end
-arch desert
+arch beach
 x 43
 y 33
 elevation 893
@@ -14999,7 +14899,6 @@ elevation 455
 end
 arch building5_east
 name Zaseki Dzuki Ryoku's Chozou Kutsurogi
-name_pl Zaseki Dzuki Ryoku's Chozou Kutsurogi
 slaying /azumauindo/zaseki_dzuki_ryoku/storage_room
 hp 1
 sp 10
@@ -15131,7 +15030,7 @@ x 44
 y 33
 elevation 747
 end
-arch desert
+arch beach
 x 44
 y 33
 elevation 833
@@ -15159,7 +15058,7 @@ x 44
 y 35
 elevation 397
 end
-arch desert
+arch beach
 x 44
 y 35
 elevation 893
@@ -15227,7 +15126,6 @@ y 38
 end
 arch guard_house_1
 name goei mezon
-name_pl goei mezon
 x 44
 y 38
 end
@@ -15245,7 +15143,7 @@ x 44
 y 40
 elevation 18
 end
-arch desert
+arch beach
 x 44
 y 40
 elevation 833
@@ -15273,7 +15171,7 @@ x 44
 y 42
 elevation 127
 end
-arch desert
+arch beach
 x 44
 y 42
 elevation 833
@@ -15615,7 +15513,6 @@ y 38
 end
 arch guard_house_2
 name goei mezon
-name_pl goei mezon
 x 45
 y 38
 end
@@ -15633,7 +15530,7 @@ x 45
 y 40
 elevation 105
 end
-arch desert
+arch beach
 x 45
 y 40
 elevation 833
@@ -15942,10 +15839,9 @@ elevation 566
 end
 arch building4_east
 name Shougyoukumiai Sumai Inc.
-name_pl Shougyoukumiai Sumai Inc.
 slaying /azumauindo/minatomachi/buildings/guildkeybuilding1
-hp 17
-sp 58
+hp 14
+sp 22
 x 46
 y 36
 end
@@ -15972,7 +15868,7 @@ x 46
 y 40
 elevation 267
 end
-arch desert
+arch beach
 x 46
 y 40
 elevation 833

@@ -4,7 +4,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2012-07-15 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_129_108
@@ -1717,6 +1717,8 @@ y 9
 end
 arch big_galleon
 slaying /wolfsburg/dungeons/ship
+hp -1
+sp -1
 x 7
 y 9
 end
@@ -4860,8 +4862,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 19
@@ -4876,8 +4877,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 19
@@ -4892,8 +4892,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 19
@@ -5139,8 +5138,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 20
@@ -5155,8 +5153,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 20
@@ -5174,13 +5171,15 @@ hp 3
 sp 2
 x 20
 y 42
+arch quest_advance_trigger
+name wolfsburg/treasure-island 60>70
+end
 end
 arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 20
@@ -5195,8 +5194,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 20
@@ -5438,8 +5436,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 21
@@ -5454,8 +5451,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 21
@@ -5474,8 +5470,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 21
@@ -5720,8 +5715,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 22
@@ -5736,8 +5730,7 @@ arch locked_door1
 name rocks
 slaying shovel
 msg
-You need a special tool to get past
-these rocks.
+You need a special tool to get past these rocks.
 endmsg
 face mountain3.111
 x 22
@@ -6238,6 +6231,9 @@ hp 12
 sp 14
 x 24
 y 40
+arch quest_advance_apply
+name wolfsburg/treasure-island 0>10
+end
 end
 arch pstone_1
 x 24
