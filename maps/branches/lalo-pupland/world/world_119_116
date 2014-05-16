@@ -1,9 +1,10 @@
 arch map
 name world_119_116
+region narcopin
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2012-03-18 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_119_115
@@ -5627,11 +5628,15 @@ y 26
 elevation 1888
 end
 arch ruined_tower
+name Ruined Tower
 slaying /quests/todd/aljwaf/tower2
 hp 6
 sp 12
 x 21
 y 26
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch desert
 x 21
@@ -5835,6 +5840,7 @@ y 14
 elevation 783
 end
 arch ruins
+name Narcopin Ruins
 slaying /quests/todd/aljwaf/crypt2
 hp 2
 sp 2
@@ -6422,6 +6428,7 @@ y 10
 elevation 783
 end
 arch ruins
+name Narcopin Ruins
 slaying /quests/todd/aljwaf/crypt4
 hp 8
 sp 1
@@ -8031,11 +8038,15 @@ y 25
 elevation 1632
 end
 arch ruined_tower
+name Ruined Tower
 slaying /quests/todd/aljwaf/tower3
 hp 6
 sp 12
 x 29
 y 25
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch pstone_3
 x 29
@@ -8694,11 +8705,15 @@ y 24
 elevation 1200
 end
 arch ruins
+name Narcopin Ruins
 slaying /quests/todd/aljwaf/crypt3
 hp 1
 sp 1
 x 31
 y 24
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch pstone_1
 x 31
@@ -8789,11 +8804,15 @@ x 31
 y 36
 end
 arch ruined_tower
+name Ruined Tower
 slaying /quests/todd/aljwaf/tower1
 hp 6
 sp 12
 x 31
 y 36
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch pstone_1
 x 31
@@ -10538,11 +10557,15 @@ y 6
 elevation 733
 end
 arch ruined_tower
+name Ruined Tower
 slaying /quests/todd/aljwaf/tower4
 hp 6
 sp 12
 x 37
 y 6
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch pstone_1
 x 37
@@ -11195,7 +11218,7 @@ y 12
 elevation 733
 end
 arch ruins
-name ruined crypt
+name Narcopin Ruins
 slaying /quests/todd/aljwaf/crypt
 msg
 You enter the ruined crypt.
@@ -11204,6 +11227,9 @@ hp 1
 sp 1
 x 39
 y 12
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch desert
 x 39
@@ -11244,11 +11270,15 @@ y 18
 elevation 672
 end
 arch ruins
+name Narcopin Ruins
 slaying /quests/todd/aljwaf/crypt5
 hp 8
 sp 3
 x 39
 y 18
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch desert
 x 39
@@ -13445,6 +13475,9 @@ hp 1
 sp 1
 x 47
 y 18
+arch quest_advance_apply
+name quests/Narcopin 10>20
+end
 end
 arch desert
 x 47

@@ -2,13 +2,14 @@ arch map
 name world_123_123
 reset_timeout 7200
 difficulty 1
+region whalingoutpost
 width 50
 height 50
 enter_x 1
 enter_y 1
 msg
 Created:  2005-02-26
-Modified: 2007-12-24 tchize
+Modified: 2013-07-22 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_123_122
@@ -688,9 +689,9 @@ elevation 233
 end
 arch bungalow
 name Fisherman's House
-slaying /whalingoutpost/houses/fishershouse1
-hp 16
-sp 22
+slaying ../whalingoutpost/houses/fisherhouseswest
+hp 1
+sp 8
 x 2
 y 37
 end
@@ -967,9 +968,9 @@ elevation 26
 end
 arch bungalow
 name Fisherman's House
-slaying /whalingoutpost/houses/fishershouse1
-hp 27
-sp 9
+slaying ../whalingoutpost/houses/fisherhousesouthwest
+hp 1
+sp 8
 x 3
 y 39
 end
@@ -1225,9 +1226,9 @@ elevation 1744
 end
 arch bungalow
 name Fisherman's House
-slaying /whalingoutpost/houses/fishershouse1
-hp 16
-sp 9
+slaying ../whalingoutpost/houses/fisherhousenorth
+hp 1
+sp 7
 x 4
 y 36
 end
@@ -1514,9 +1515,9 @@ elevation 3021
 end
 arch bungalow
 name Fisherman's House
-slaying /whalingoutpost/houses/fishershouse1
-hp 4
-sp 22
+slaying ../whalingoutpost/houses/fisherhousesouth
+hp 1
+sp 8
 x 5
 y 40
 end
@@ -1765,9 +1766,9 @@ elevation 2558
 end
 arch bungalow
 name Fisherman's House
-slaying /whalingoutpost/houses/fishershouse1
-hp 4
-sp 9
+slaying ../whalingoutpost/houses/fisherhouseeast
+hp 1
+sp 8
 x 6
 y 38
 end
@@ -4920,12 +4921,7 @@ end
 arch fishboat
 slaying world_124_124
 msg
-The fisherman captain has some
-illicit trade to take part in. As he
-sails his boat south the air becomes
-slightly colder and the seas
-choppier. He comes upon an island
-where a large ship has set anchor.
+The fisherman captain has some illicit trade to take part in. As he sails his boat south the air becomes slightly colder and the seas choppier. He comes upon an island where a large ship has set anchor.
 endmsg
 hp 6
 sp 6

@@ -4,7 +4,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2008-01-12 lauwenmark
+Modified: 2013-02-13 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_129_107
@@ -860,9 +860,9 @@ x 3
 y 25
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 24
-sp 1
+slaying ../wolfsburg/volcano/huts/hut-03
+hp 5
+sp 7
 x 3
 y 25
 end
@@ -880,9 +880,9 @@ x 3
 y 28
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 30
-sp 18
+slaying ../wolfsburg/volcano/huts/hut-14
+hp 5
+sp 2
 x 3
 y 28
 end
@@ -1118,6 +1118,9 @@ x 4
 y 23
 end
 arch hut
+slaying ../wolfsburg/volcano/heimser_hut_0
+hp 5
+sp 7
 x 4
 y 23
 end
@@ -1384,9 +1387,9 @@ x 5
 y 22
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 2
-sp 18
+slaying ../wolfsburg/volcano/huts/hut-10
+hp 5
+sp 7
 x 5
 y 22
 end
@@ -1433,9 +1436,9 @@ x 5
 y 30
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 31
-sp 1
+slaying ../wolfsburg/volcano/huts/hut-04
+hp 5
+sp 7
 x 5
 y 30
 end
@@ -1682,9 +1685,9 @@ x 6
 y 26
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 10
-sp 1
+slaying ../wolfsburg/volcano/huts/hut-01
+hp 5
+sp 7
 x 6
 y 26
 end
@@ -1975,9 +1978,9 @@ x 7
 y 32
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 17
-sp 9
+slaying ../wolfsburg/volcano/huts/hut-07
+hp 5
+sp 7
 x 7
 y 32
 end
@@ -2192,9 +2195,9 @@ x 8
 y 24
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 31
-sp 9
+slaying ../wolfsburg/volcano/huts/hut-09
+hp 5
+sp 7
 x 8
 y 24
 end
@@ -2219,9 +2222,9 @@ x 8
 y 27
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 23
-sp 18
+slaying ../wolfsburg/volcano/huts/hut-12
+hp 3
+sp 2
 x 8
 y 27
 end
@@ -2235,9 +2238,9 @@ x 8
 y 29
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 17
-sp 1
+slaying ../wolfsburg/volcano/huts/hut-02
+hp 5
+sp 7
 x 8
 y 29
 end
@@ -2754,9 +2757,9 @@ x 10
 y 29
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 23
-sp 24
+slaying ../wolfsburg/volcano/huts/hut-13
+hp 2
+sp 2
 x 10
 y 29
 end
@@ -2974,9 +2977,9 @@ x 11
 y 22
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 24
-sp 9
+slaying ../wolfsburg/volcano/huts/hut-08
+hp 5
+sp 7
 x 11
 y 22
 end
@@ -3005,9 +3008,9 @@ x 11
 y 28
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 10
-sp 9
+slaying ../wolfsburg/volcano/huts/hut-06
+hp 5
+sp 7
 x 11
 y 28
 end
@@ -3242,9 +3245,9 @@ x 12
 y 25
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 3
-sp 9
+slaying ../wolfsburg/volcano/huts/hut-05
+hp 5
+sp 7
 x 12
 y 25
 end
@@ -4986,9 +4989,9 @@ x 19
 y 23
 end
 arch hut
-slaying /wolfsburg/volcano/vvhuts
-hp 9
-sp 18
+slaying ../wolfsburg/volcano/huts/hut-11
+hp 3
+sp 3
 x 19
 y 23
 end

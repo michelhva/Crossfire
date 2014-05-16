@@ -2,6 +2,9 @@ arch map
 name world_129_100
 width 50
 height 50
+msg
+Modified: 2008-12-17 Rick Tanner
+endmsg
 outdoor 1
 tile_path_3 world_129_101
 tile_path_4 world_128_100
@@ -2201,7 +2204,7 @@ arch deep_sea
 x 9
 elevation -7950
 end
-arch sea
+arch deep_sea
 x 9
 y 1
 elevation -2892
@@ -2944,7 +2947,7 @@ x 11
 y 49
 elevation -6658
 end
-arch sea
+arch deep_sea
 x 12
 elevation -4484
 end
@@ -4687,7 +4690,7 @@ x 18
 y 49
 elevation -6932
 end
-arch deep_sea
+arch sea
 x 19
 elevation -5430
 end

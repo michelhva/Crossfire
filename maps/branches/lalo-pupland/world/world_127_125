@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-27
-Modified: 2007-12-24 tchize
+Modified: 2013-07-22 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_127_124
@@ -3090,7 +3090,6 @@ elevation -3939
 end
 arch s_ship
 name whaler
-name_pl Sturdy Ship
 slaying world_126_124
 hp 45
 sp 32
@@ -4174,19 +4173,9 @@ y 36
 end
 arch s_ship
 name Icebreaker
-name_pl Sturdy Ship
 slaying world_128_128
 msg
-A very sturdy and strong vessel this
-is. The capitan with his icebreaker
-ship has little fear of the icy
-waters that inhabit the most
-southerly points of this world. The
-ship caches a strong gust from one of
-a countless number of storms. The
-temperature plummets even further
-below zero as the ship makes its way
-towards the very bottom of this world.
+A very sturdy and strong vessel this is. The capitan with his icebreaker has little fear of the icy waters that inhabit the most southerly points of this world. The ship caches a strong gust from one of a countless number of storms. The temperature plummets even further below zero as the ship makes its way towards the very bottom of this world.
 
 endmsg
 hp 19

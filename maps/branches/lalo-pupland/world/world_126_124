@@ -2,13 +2,14 @@ arch map
 name world_126_124
 reset_timeout 7200
 difficulty 1
+region whalingoutpost
 width 50
 height 50
 enter_x 1
 enter_y 1
 msg
 Created:  2005-02-26
-Modified: 2007-12-24 tchize
+Modified: 2013-07-22 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_126_123
@@ -10511,7 +10512,6 @@ elevation -664
 end
 arch big_galleon
 name rum runner
-name_pl rum runner
 slaying world_124_124
 hp 11
 sp 11
@@ -11561,20 +11561,9 @@ elevation 1155
 end
 arch s_ship
 name whaler
-name_pl Sturdy Ship
 slaying world_127_125
 msg
-The whaling ship sets sail!
-With fresh barrels of booze and a
-quick breeze the ship starts it's
-voyage as air is captured in the white
-fabric. The vessel travels southerly
-and the air becomes increasingly
-colder. The ship then takes anchor at
-a cold and desolate island in the
-south sea. The captain will go no
-further south for fear of ice.
-
+The whaling ship sets sail! With fresh barrels of booze and a quick breeze the ship starts it's voyage as air is captured in the white fabric. The vessel travels southerly and the air becomes increasingly colder. The ship then takes anchor at a cold and desolate island in the south sea. The captain will go no further south for fear of ice.
 endmsg
 hp 12
 sp 27

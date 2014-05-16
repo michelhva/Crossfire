@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2012-09-10 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -4359,10 +4359,10 @@ x 17
 y 13
 end
 arch barn
-name Acme Homebuilding Inc.
+name Acme Building Supply of Wolfsburg
 slaying /wolfsburg/shops/buildshop
-hp 17
-sp 38
+hp 14
+sp 39
 x 17
 y 13
 end
@@ -4831,8 +4831,8 @@ end
 arch city_tower
 name Old Tower
 slaying /wolfsburg/magara/tower1/entrance
-hp 4
-sp 12
+hp 6
+sp 16
 x 19
 y 7
 end
@@ -5349,8 +5349,8 @@ end
 arch church
 name The Eternal Reward
 slaying /wolfsburg/etern_rew
-hp 7
-sp 23
+hp 9
+sp 24
 x 21
 y 13
 end
@@ -5547,7 +5547,6 @@ y 4
 end
 arch house_2
 name Dank House
-name_pl Dank House
 slaying /wolfsburg/magara/cellar1/hole
 hp 1
 sp 1
@@ -5803,7 +5802,6 @@ y 1
 end
 arch house_2
 name Stairs down to Cellar
-name_pl Stairs down to Cellar
 slaying /wolfsburg/magara/cellar_1
 hp 1
 sp 13
@@ -6067,6 +6065,9 @@ y 4
 end
 arch house_2
 name Lursendis's house
+slaying /wolfsburg/lursendis
+hp 8
+sp 4
 x 24
 y 4
 end
@@ -6333,7 +6334,10 @@ arch dungeon_floor
 x 25
 y 4
 end
-arch house_2
+arch house_small
+slaying ../wolfsburg/shops/IPO_wolfsburg
+hp 9
+sp 9
 x 25
 y 4
 end
@@ -6349,7 +6353,7 @@ arch dungeon_floor
 x 25
 y 7
 end
-arch guild
+arch guildstorage
 name Damned Heretics's Storage Room
 slaying /wolfsburg/guilds/damned_heretics/storage_room
 hp 1
@@ -6879,11 +6883,11 @@ arch dungeon_floor
 x 27
 y 14
 end
-arch guild
+arch guild2
 name Guild of the Damned Heretics
-slaying /wolfsburg/guilds/damned_heretics/ground
-hp 12
-sp 23
+slaying /wolfsburg/guilds/damned_heretics/mainfloor
+hp 15
+sp 28
 x 27
 y 14
 end
@@ -7314,8 +7318,8 @@ y 7
 end
 arch guild
 name One-Eyed Mike's Department Store
-slaying /wolfsburg/dept_store_weapon
-sp 1
+slaying /wolfsburg/shops/dept_store_weapon
+sp 3
 x 29
 y 7
 end
@@ -7531,8 +7535,12 @@ x 30
 y 4
 end
 arch house_2
+name Personal Pet Apartment
+slaying ../wolfsburg/apartments/pet-apartment/pet-apartment
+hp 4
 x 30
 y 4
+unique 1
 end
 arch dungeon_floor
 x 30
@@ -7793,7 +7801,7 @@ arch sign_e
 msg
 Here be the slave pit of Wolfsburg.
 ENTER AT YOUR OWN RISK
-(This is NOT a newbie area! Be Careful
+(This is NOT a newbie area! Be Careful!!)
 endmsg
 x 31
 y 11
@@ -7983,7 +7991,6 @@ y 1
 end
 arch tower_tob
 name short tower
-name_pl short tower
 slaying /wolfsburg/magara/tower2/floor_1
 sp 16
 x 32
@@ -7994,10 +8001,10 @@ x 32
 y 2
 end
 arch house_2
-name Ye Olde Transport Shoppe
+name Wolfsburg's Ye Olde Shoppe of Transport
 slaying /wolfsburg/shops/transport.shoppe
 hp 17
-sp 22
+sp 20
 x 32
 y 2
 end
@@ -8328,7 +8335,6 @@ y 18
 end
 arch big_galleon
 name Island Tours
-name_pl Island Tours
 slaying /world/world_129_107
 hp 22
 sp 18
@@ -8356,13 +8362,17 @@ x 33
 y 23
 end
 arch big_galleon
-name Island Tours
-name_pl Island Tours
 slaying /world/world_128_107
 hp 19
 sp 23
 x 33
 y 23
+arch quest_apply_if
+name wolfsburg/treasure-island 50-70
+msg
+The captain looks at Long John Silver's map, and agrees to take you there.
+endmsg
+end
 end
 arch sea1
 x 33
@@ -8756,8 +8766,8 @@ end
 arch prison
 name Wolfsburg Prison
 slaying /wolfsburg/prison
-hp 13
-sp 1
+hp 4
+sp 25
 x 35
 y 1
 end
@@ -8826,7 +8836,7 @@ Red Light District
 Twin Towers
 Bloody Cutlass
 Dolphin's Delight
-Enternal Reward (To West)
+Eternal Reward (To West)
 Pirate Church (North East Corner)
 Prison (due North)
 Warehouse (Middle one along north wall)
@@ -9111,10 +9121,9 @@ y 11
 end
 arch inn
 name The Bloody Cutlass
-name_pl The Bloody Cutlass
-slaying /wolfsburg/inns
-hp 1
-sp 1
+slaying ../wolfsburg/taverns/thebloodycutlass
+hp 12
+sp 12
 x 36
 y 11
 end
@@ -9156,7 +9165,6 @@ y 20
 end
 arch big_galleon
 name Island Tours
-name_pl Island Tours
 slaying /world/world_127_109
 hp 21
 sp 11
@@ -9823,10 +9831,9 @@ y 11
 end
 arch inn
 name Dolphin's Delight
-name_pl Dolphin's Delight
-slaying /wolfsburg/inns
-hp 16
-sp 1
+slaying ../wolfsburg/taverns/dolphinsdelight
+hp 12
+sp 15
 x 39
 y 11
 end
@@ -10496,8 +10503,8 @@ end
 arch church
 name Run-down Church
 slaying /wolfsburg/piratechurch
-hp 5
-sp 14
+hp 7
+sp 16
 x 42
 y 2
 end
@@ -10594,6 +10601,10 @@ x 42
 y 19
 end
 arch big_galleon
+name To Darcap
+slaying /world/world_116_102
+hp 32
+sp 37
 x 42
 y 19
 end
@@ -10619,7 +10630,6 @@ y 24
 end
 arch big_galleon
 name to Navar
-name_pl to Navar
 slaying /world/world_122_116
 hp 21
 sp 47

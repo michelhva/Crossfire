@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-26
-Modified: 2007-12-24 tchize
+Modified: 2013-07-22 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_124_123
@@ -1498,11 +1498,7 @@ end
 arch fishboat
 slaying world_123_123
 msg
-North to his home village the
-fisherman sails... with some new and
-untaxed barrels of the finest booze
-he could afford. The air and wind
-become a little warmer.
+North to his home village the fisherman sails... with some new and untaxed barrels of the finest booze he could afford. The air and wind become a little warmer.
 
 endmsg
 hp 18
@@ -2778,19 +2774,9 @@ elevation 517
 end
 arch big_galleon
 name rum runner
-name_pl rum runner
 slaying world_126_124
 msg
-After offloading some cargo into the
-possession of the captain of a much
-smaller boat the great ship of
-illicit and unaccounted trade sets
-sail for a little known island to the
-south; it is here from where the
-stocks will be replenished and some
-liquor traded for whale oil which is,
-by now, running low. As the ship
-sails south the air chills.
+After offloading some cargo into the possession of the captain of a much smaller boat the great ship of illicit and unaccounted trade sets sail for a little known island to the south; it is here from where the stocks will be replenished and some liquor traded for whale oil which is, by now, running low. As the ship sails south the air chills.
 endmsg
 hp 41
 sp 26

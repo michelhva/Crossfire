@@ -1,9 +1,10 @@
 arch map
 name world_120_109
+region marksel
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2013-07-28 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_120_108
@@ -2791,7 +2792,7 @@ arch dirtroad_2_1_2
 x 10
 y 37
 end
-arch bridge_we
+arch river_bridge_we
 x 10
 y 37
 end
@@ -9208,10 +9209,10 @@ y 39
 elevation 2244
 end
 arch city_tower
-name Sages Tower
+name Sages' Tower
 slaying /marksel/wizard
-hp 13
-sp 7
+hp 10
+sp 16
 x 35
 y 39
 end
@@ -9976,14 +9977,10 @@ x 38
 y 37
 elevation 3207
 end
-arch dirtroad_1_1
-x 38
-y 37
-end
 arch keep_sym
 slaying /marksel/keep
 hp 7
-sp 14
+sp 13
 x 38
 y 37
 end
@@ -9992,7 +9989,7 @@ x 38
 y 38
 elevation 4177
 end
-arch dirtroad_2_2_1
+arch dirtroad_1_1
 x 38
 y 38
 end
@@ -10000,6 +9997,10 @@ arch hills
 x 38
 y 39
 elevation 4008
+end
+arch dirtroad_2_2_1
+x 38
+y 39
 end
 arch hills
 x 38
@@ -10257,16 +10258,12 @@ x 39
 y 38
 elevation 4104
 end
-arch dirtroad_2_2_3
-x 39
-y 38
-end
 arch steppe
 x 39
 y 39
 elevation 3609
 end
-arch dirtroad_2_1_1
+arch dirtroad_2_2_3
 x 39
 y 39
 end
@@ -10326,10 +10323,18 @@ x 39
 y 47
 elevation 1453
 end
-arch desert
+arch hills
 x 39
 y 48
 elevation 828
+end
+arch house_1
+name Marksel Imperial Post Office
+slaying ../marksel/shops/IPO_marksel
+hp 9
+sp 9
+x 39
+y 48
 end
 arch hills
 x 39
@@ -10786,15 +10791,13 @@ end
 arch mountain_cave
 slaying /under_world/uworld_120_109
 msg
-Going through the old mine tunnels should save a lot
-of time compared to going overland.  You've heard
-it isn't too dangerous if you stick to the lighted path.
+Going through the old mine tunnels should save a lot of time compared to going overland.
+You've heard it isn't too dangerous if you stick to the lighted path.
 endmsg
 hp 24
 sp 58
 x 41
 y 37
-is_floor 0
 end
 arch cobblestones
 x 41
@@ -11070,8 +11073,8 @@ end
 arch inn
 name Grumm's Inn
 slaying /marksel/grumms_inn
-hp 7
-sp 13
+hp 9
+sp 15
 x 42
 y 43
 end
@@ -11347,8 +11350,9 @@ y 45
 elevation 1791
 end
 arch s_shop2
-slaying /marksel/shop
-hp 3
+slaying /marksel/shops/shop
+hp 10
+sp 11
 x 43
 y 45
 end
@@ -11368,6 +11372,10 @@ y 48
 elevation 2768
 end
 arch woodhouse
+name Marksel Blacksmith
+slaying /marksel/shops/smith
+hp 7
+sp 13
 x 43
 y 48
 end
@@ -11596,9 +11604,9 @@ y 43
 elevation 3423
 end
 arch shrine
-name Church of Valriel
+name Church to Valriel
 slaying /marksel/church
-hp 3
+hp 5
 sp 10
 x 44
 y 43

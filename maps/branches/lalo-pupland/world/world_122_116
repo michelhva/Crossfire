@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2007-12-24 tchize
+Modified: 2013-08-18 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -263,9 +263,7 @@ y 42
 end
 arch mailbox
 name The Dean
-name_pl The Dean
 y 42
-no_pick 1
 end
 arch dungeon_magic
 y 43
@@ -733,8 +731,8 @@ end
 arch mountain_cave
 name Ali's Cave
 slaying /navar_city/misc/aliscave
-hp 53
-sp 54
+hp 55
+sp 56
 x 2
 y 6
 end
@@ -940,6 +938,10 @@ y 39
 move_block all
 end
 arch university
+name Navar University
+slaying /navar_city/university
+hp 24
+sp 37
 x 2
 y 39
 end
@@ -999,8 +1001,7 @@ x 2
 y 45
 end
 arch palace
-name Navr City Palace
-name_pl Navr City Palace
+name Navar City Palace
 x 2
 y 45
 end
@@ -3018,11 +3019,22 @@ arch cobblestones2
 x 8
 y 45
 end
+arch westcwall_2_2_2
+x 8
+y 45
+end
 arch dungeon_magic
 x 8
 y 46
 end
 arch cobblestones2
+x 8
+y 46
+end
+arch westguard_house_1
+slaying ../navar_city/westgatehouse
+hp 1
+sp 6
 x 8
 y 46
 end
@@ -3031,6 +3043,10 @@ x 8
 y 47
 end
 arch cobblestones2
+x 8
+y 47
+end
+arch westcwall_2_2_1
 x 8
 y 47
 end
@@ -3359,10 +3375,6 @@ arch westcwall_2_1_1
 x 9
 y 44
 end
-arch westcwall_1_1
-x 9
-y 44
-end
 arch dungeon_magic
 x 9
 y 45
@@ -3371,7 +3383,7 @@ arch cobblestones2
 x 9
 y 45
 end
-arch westcityport_b
+arch westcwall_4
 x 9
 y 45
 end
@@ -3383,7 +3395,14 @@ arch cobblestones2
 x 9
 y 46
 end
-arch westcityport_b
+arch westguard_house_1
+x 9
+y 46
+type 0
+move_block all
+is_floor 1
+end
+arch westguard_house_2
 x 9
 y 46
 end
@@ -3395,7 +3414,7 @@ arch cobblestones2
 x 9
 y 47
 end
-arch westcityport_b
+arch westcwall_4
 x 9
 y 47
 end
@@ -3408,10 +3427,6 @@ x 9
 y 48
 end
 arch westcwall_2_1_1
-x 9
-y 48
-end
-arch westcwall_1_1
 x 9
 y 48
 end
@@ -3691,11 +3706,10 @@ x 10
 y 41
 end
 arch minihouse
-name Tannery
-name_pl Tannery
+name Tannery of Navar
 slaying /navar_city/misc/tannery
-hp 5
-sp 9
+hp 10
+sp 10
 x 10
 y 41
 end
@@ -3708,6 +3722,10 @@ x 10
 y 42
 end
 arch hovels
+name Ava's House
+slaying ../navar_city/houses/avashouse
+hp 6
+sp 8
 x 10
 y 42
 end
@@ -3720,6 +3738,10 @@ x 10
 y 43
 end
 arch hovels
+name Rudy's Cottage
+slaying ../navar_city/houses/rudyscottage
+hp 5
+sp 7
 x 10
 y 43
 end
@@ -3732,6 +3754,10 @@ x 10
 y 44
 end
 arch hovels
+name Dorgan's House
+slaying ../navar_city/houses/dorganshouse
+hp 5
+sp 7
 x 10
 y 44
 end
@@ -3743,11 +3769,22 @@ arch cobblestones2
 x 10
 y 45
 end
+arch westcwall_2_2_3
+x 10
+y 45
+end
 arch dungeon_magic
 x 10
 y 46
 end
 arch cobblestones2
+x 10
+y 46
+end
+arch westguard_house_2
+slaying ../navar_city/westgatehouse
+hp 19
+sp 6
 x 10
 y 46
 end
@@ -3756,6 +3793,10 @@ x 10
 y 47
 end
 arch cobblestones2
+x 10
+y 47
+end
+arch westcwall_2_2_4
 x 10
 y 47
 end
@@ -4380,6 +4421,10 @@ x 12
 y 42
 end
 arch house_small
+name Han's Hut
+slaying ../navar_city/houses/hanshut
+hp 12
+sp 13
 x 12
 y 42
 end
@@ -4392,6 +4437,10 @@ x 12
 y 43
 end
 arch house_small
+name Jeb's House
+slaying ../navar_city/houses/jebshouse
+hp 12
+sp 13
 x 12
 y 43
 end
@@ -4412,9 +4461,10 @@ x 12
 y 45
 end
 arch house_1
-slaying /navar_city/city1houses
-hp 13
-sp 25
+name Ian's House
+slaying ../navar_city/houses/ianshouse
+hp 10
+sp 11
 x 12
 y 45
 end
@@ -4435,9 +4485,10 @@ x 12
 y 47
 end
 arch house_small
-slaying /navar_city/city1houses
-hp 25
-sp 25
+name Little Rumble House
+slaying ../navar_city/houses/littlerumblehouse
+hp 12
+sp 13
 x 12
 y 47
 end
@@ -4450,9 +4501,10 @@ x 12
 y 48
 end
 arch house_1
-slaying /navar_city/city1houses2
-hp 1
-sp 27
+name Meeting House
+slaying ../navar_city/houses/meetinghouse
+hp 10
+sp 11
 x 12
 y 48
 end
@@ -4811,8 +4863,7 @@ arch grass
 x 13
 y 47
 end
-arch church
-name Church of Ixalovh
+arch ixalovh_church
 slaying /navar_city/temples/ixalovh
 msg
 Under construction!
@@ -5121,9 +5172,10 @@ x 14
 y 41
 end
 arch house_1
-slaying /navar_city/city1houses
-hp 5
-sp 25
+name Ben's Cottage
+slaying ../navar_city/houses/benscottage
+hp 11
+sp 12
 x 14
 y 41
 end
@@ -5168,9 +5220,10 @@ x 14
 y 45
 end
 arch house_1
-slaying /navar_city/city1houses
-hp 21
-sp 25
+name Eli's House
+slaying ../navar_city/houses/elishouse
+hp 10
+sp 11
 x 14
 y 45
 end
@@ -7754,10 +7807,9 @@ move_block all
 end
 arch big_galleon
 name To Darcap
-name_pl To Darcap
 slaying /world/world_116_102
 hp 32
-sp 37
+sp 41
 x 21
 y 42
 end
@@ -7783,10 +7835,9 @@ y 45
 move_block all
 end
 arch big_galleon
-name to Wolfsburg
-name_pl to Wolfsburg
+name To Wolfsburg
 slaying /world/world_128_109
-hp 44
+hp 43
 sp 25
 x 21
 y 45

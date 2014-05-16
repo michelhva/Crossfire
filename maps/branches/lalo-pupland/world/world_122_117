@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2007-12-24 tchize
+Modified: 2013-08-18 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -37,7 +37,7 @@ arch grass
 y 2
 end
 arch tavern
-name Kaisa's place
+name Kaisa's Place
 slaying /navar_city/magara/houses/kaisas_place
 hp 1
 sp 3
@@ -55,8 +55,7 @@ end
 arch grass
 y 4
 end
-arch church
-name Church of Valriel
+arch valriel_church
 slaying /navar_city/temples/valriel
 hp 9
 sp 27
@@ -84,7 +83,7 @@ arch r_house1
 name Rosco's Kitchen
 slaying /navar_city/misc/kitchen
 hp 4
-sp 10
+sp 11
 y 7
 end
 arch dungeon_magic
@@ -119,6 +118,7 @@ arch grass
 y 11
 end
 arch market1
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 2
 sp 10
@@ -146,6 +146,10 @@ arch grass
 y 14
 end
 arch s_house1
+name Iscar's House
+slaying /navar_city/iscar
+hp 2
+sp 9
 y 14
 end
 arch dungeon_magic
@@ -347,10 +351,9 @@ y 1
 end
 arch house_up
 name House of Gossip
-name_pl House of Gossip
-slaying /navar_city/city1houses3
-hp 28
-sp 8
+slaying ../navar_city/houses/houseofgossip
+hp 3
+sp 15
 x 1
 y 1
 end
@@ -403,14 +406,13 @@ x 1
 y 7
 end
 arch s_shop1
-name Imperial Post
-name_pl Imperial Post
+name Navar Imperial Post Office
 slaying /navar_city/misc/IPO_navar
 msg
-!Ding
+Ding!
 endmsg
-hp 5
-sp 8
+hp 4
+sp 9
 x 1
 y 7
 end
@@ -431,6 +433,7 @@ x 1
 y 9
 end
 arch market2
+name Navar Market
 slaying /navar_city/misc/market1
 hp 2
 sp 10
@@ -454,6 +457,7 @@ x 1
 y 11
 end
 arch market2
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 2
 sp 10
@@ -766,8 +770,8 @@ end
 arch s_shop2
 name Small House
 slaying /navar_city/spyhouse
-hp 16
-sp 18
+hp 18
+sp 20
 x 2
 y 7
 end
@@ -788,6 +792,7 @@ x 2
 y 9
 end
 arch market2
+name Navar Market
 slaying /navar_city/misc/market1
 hp 14
 sp 10
@@ -811,7 +816,7 @@ x 2
 y 11
 end
 arch market2
-name Condemmed Market
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 14
 sp 10
@@ -835,6 +840,10 @@ x 2
 y 13
 end
 arch hovels
+name Large House
+slaying /navar_city/magara/houses/large_house
+hp 1
+sp 1
 x 2
 y 13
 end
@@ -846,11 +855,11 @@ arch grass
 x 2
 y 14
 end
-arch guild_west
+arch Dragon Guild 2
 name Navar Dragon Guild
 slaying /navar_city/misc/dragon_guild
-hp 7
-sp 14
+hp 9
+sp 15
 x 2
 y 14
 end
@@ -866,7 +875,7 @@ arch grass
 x 2
 y 16
 end
-arch westcwall_2_1_2
+arch westcwall_2_2_3
 x 2
 y 16
 end
@@ -874,6 +883,10 @@ arch steppe
 x 2
 y 17
 elevation 3750
+end
+arch westcwall_2_2_1
+x 2
+y 17
 end
 arch hills_rocky
 x 2
@@ -1083,7 +1096,7 @@ x 3
 end
 arch a_civic
 name High Court Building
-slaying /navar_city/city1court
+slaying ../navar_city/misc/highcourt
 hp 10
 sp 15
 x 3
@@ -1152,8 +1165,7 @@ arch grass
 x 3
 y 7
 end
-arch small_temple2
-name Temple of Lythander
+arch lyth_temple
 slaying /navar_city/temples/templelyth
 hp 7
 sp 13
@@ -1177,6 +1189,7 @@ x 3
 y 9
 end
 arch market2
+name Navar Market
 slaying /navar_city/misc/market1
 hp 30
 sp 10
@@ -1200,6 +1213,7 @@ x 3
 y 11
 end
 arch market2
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 30
 sp 10
@@ -1242,28 +1256,37 @@ arch grass
 x 3
 y 15
 end
+arch dungeon_magic
+x 3
+y 16
+end
+arch cobblestones2
+x 3
+y 16
+end
 arch grass
 x 3
-y 16
+y 17
 end
-arch westcwall_2_1_2
-x 3
-y 16
-end
-arch hills_rocky
+arch westcwall_2_2_3
 x 3
 y 17
-elevation 3173
 end
-arch steppe
+arch grass
 x 3
 y 18
-elevation 3347
 end
-arch hills
+arch westcwall_2_1_1
+x 3
+y 18
+end
+arch grass
 x 3
 y 19
-elevation 3266
+end
+arch westcwall_2_2_1
+x 3
+y 19
 end
 arch steppe
 x 3
@@ -1522,6 +1545,7 @@ x 4
 y 9
 end
 arch market2
+name Navar Market
 slaying /navar_city/misc/market1
 hp 45
 sp 10
@@ -1545,6 +1569,7 @@ x 4
 y 11
 end
 arch market2
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 45
 sp 10
@@ -1583,28 +1608,37 @@ arch cobblestones2
 x 4
 y 15
 end
-arch grass
+arch dungeon_magic
 x 4
 y 16
+end
+arch cobblestones2
+x 4
+y 16
+end
+arch dungeon_magic
+x 4
+y 17
+end
+arch cobblestones2
+x 4
+y 17
+end
+arch dungeon_magic
+x 4
+y 18
+end
+arch cobblestones2
+x 4
+y 18
+end
+arch grass
+x 4
+y 19
 end
 arch westcwall_2_1_2
 x 4
-y 16
-end
-arch steppe
-x 4
-y 17
-elevation 3318
-end
-arch hills
-x 4
-y 18
-elevation 2705
-end
-arch woods_2
-x 4
 y 19
-elevation 1011
 end
 arch brush
 x 4
@@ -1634,7 +1668,7 @@ x 4
 y 23
 elevation 1688
 end
-arch bridge_we
+arch river_bridge_we
 x 4
 y 23
 end
@@ -1865,8 +1899,8 @@ end
 arch l_shop1
 name Museum of Arms
 slaying /navar_city/magara/houses/museum
-hp 4
-sp 18
+hp 5
+sp 34
 x 5
 y 6
 end
@@ -1895,6 +1929,7 @@ x 5
 y 9
 end
 arch market2
+name Navar Market
 slaying /navar_city/misc/market1
 hp 45
 sp 10
@@ -1918,6 +1953,7 @@ x 5
 y 11
 end
 arch market2
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 45
 sp 10
@@ -1940,11 +1976,11 @@ arch brush
 x 5
 y 13
 end
-arch guild_west
+arch guild2_west
 name Guild of the Dreaming Sage
-slaying /navar_city/dreaming_sage/ground
-hp 12
-sp 23
+slaying /navar_city/dreaming_sage/mainfloor
+hp 15
+sp 28
 x 5
 y 13
 end
@@ -1960,48 +1996,61 @@ arch dungeon_magic
 x 5
 y 15
 end
-arch grass
+arch cobblestones2
 x 5
 y 15
 end
+arch dungeon_magic
+x 5
+y 16
+end
 arch grass
 x 5
 y 16
 end
-arch westcwall_2_1_2
+arch store_magic_west
+name Emporium of Power
+slaying ../navar_city/misc/emporiumofpower
+hp 40
+sp 21
 x 5
 y 16
 end
-arch hills_rocky
+arch dungeon_magic
 x 5
 y 17
-elevation 3188
 end
-arch woods_2
+arch grass
+x 5
+y 17
+end
+arch dungeon_magic
 x 5
 y 18
-elevation 2046
 end
-arch brush
+arch cobblestones2
+x 5
+y 18
+end
+arch grass
 x 5
 y 19
-elevation 275
+end
+arch westcwall_2_1_2
+x 5
+y 19
 end
 arch brush
 x 5
 y 20
 elevation 169
 end
-arch river_sw-ne_u
-x 5
-y 20
-end
 arch desert
 x 5
 y 21
 elevation 639
 end
-arch river_sw-ne
+arch river_sw-e
 x 5
 y 21
 end
@@ -2196,12 +2245,6 @@ y 2
 end
 arch sign_w
 name Civic St.
-name_pl Civic St.
-msg
-Civic St.
-High Court Building
-Lots of civil servants ....
-endmsg
 x 6
 y 2
 end
@@ -2262,6 +2305,7 @@ x 6
 y 9
 end
 arch market3
+name Navar Market
 slaying /navar_city/misc/market1
 hp 57
 sp 10
@@ -2285,6 +2329,7 @@ x 6
 y 11
 end
 arch market3
+name Condemned Market
 slaying /navar_city/misc/market2
 hp 57
 sp 10
@@ -2319,52 +2364,52 @@ arch dungeon_magic
 x 6
 y 15
 end
-arch grass
+arch cobblestones2
 x 6
 y 15
 end
+arch dungeon_magic
+x 6
+y 16
+end
 arch grass
 x 6
 y 16
 end
-arch westcwall_2_1_2
-x 6
-y 16
-end
-arch hills
+arch dungeon_magic
 x 6
 y 17
-elevation 2290
 end
-arch hills
+arch grass
+x 6
+y 17
+end
+arch dungeon_magic
 x 6
 y 18
-elevation 2219
 end
-arch woods_2
+arch cobblestones2
+x 6
+y 18
+end
+arch grass
 x 6
 y 19
-elevation 1309
 end
-arch river_sw-ne_u
+arch westcwall_2_1_2
 x 6
 y 19
 end
 arch brush
 x 6
 y 20
-elevation 479
+elevation 169
 end
-arch river_sw-ne
-x 6
-y 20
-end
-arch jungle_1
+arch brush
 x 6
 y 21
-elevation 2020
 end
-arch river_sw-ne_l
+arch river_w-e
 x 6
 y 21
 end
@@ -2638,50 +2683,54 @@ arch cobblestones2
 x 7
 y 15
 end
-arch grass
+arch dungeon_magic
 x 7
 y 16
 end
-arch westcwall_2_1_2
+arch cobblestones2
 x 7
 y 16
 end
-arch hills
+arch dungeon_magic
 x 7
 y 17
-elevation 2197
 end
-arch hills
+arch cobblestones2
+x 7
+y 17
+end
+arch dungeon_magic
 x 7
 y 18
-elevation 2048
 end
-arch river_sw-ne_u
+arch cobblestones2
 x 7
 y 18
 end
-arch woods_2
+arch grass
 x 7
 y 19
 elevation 1766
 end
-arch river_sw-ne
+arch westcwall_2_1_2
 x 7
 y 19
 end
 arch brush
 x 7
 y 20
-elevation 665
 end
-arch river_sw-ne_l
+arch river_sw-ne_u
 x 7
 y 20
 end
-arch steppe
+arch brush
 x 7
 y 21
-elevation 3025
+end
+arch river_ne-w
+x 7
+y 21
 end
 arch steppe
 x 7
@@ -2961,7 +3010,7 @@ arch cobblestones2
 x 8
 y 12
 end
-arch bridge_we
+arch river_bridge_we
 x 8
 y 12
 end
@@ -2973,7 +3022,7 @@ arch cobblestones2
 x 8
 y 13
 end
-arch bridge_we
+arch river_bridge_we
 x 8
 y 13
 end
@@ -3001,6 +3050,10 @@ arch river_n-s
 x 8
 y 15
 end
+arch dungeon_magic
+x 8
+y 16
+end
 arch grass
 x 8
 y 16
@@ -3009,9 +3062,9 @@ arch river_n-s
 x 8
 y 16
 end
-arch westcityport_a
+arch dungeon_magic
 x 8
-y 16
+y 17
 end
 arch brush
 x 8
@@ -3021,21 +3074,29 @@ arch river_n-s
 x 8
 y 17
 end
-arch woods_2
+arch dungeon_magic
 x 8
 y 18
 elevation 1762
 end
-arch river_sw-n
+arch cobblestones2
 x 8
 y 18
 end
-arch jungle_1
+arch river_bridge_we
+x 8
+y 18
+end
+arch grass
 x 8
 y 19
 elevation 1639
 end
-arch river_sw-ne_l
+arch river_n-s
+x 8
+y 19
+end
+arch westcityport_a
 x 8
 y 19
 end
@@ -3044,10 +3105,17 @@ x 8
 y 20
 elevation 2422
 end
-arch steppe
+arch river_sw-n
+x 8
+y 20
+end
+arch brush
 x 8
 y 21
-elevation 3560
+end
+arch river_sw-ne_l
+x 8
+y 21
 end
 arch steppe
 x 8
@@ -3262,8 +3330,8 @@ arch brush
 x 9
 y 5
 end
-arch shrine
-name Gaea's shrine
+arch gaea_temple
+name Gaea's Shrine
 slaying /navar_city/temples/gaea
 hp 14
 sp 18
@@ -3302,7 +3370,7 @@ arch cobblestones2
 x 9
 y 8
 end
-arch bridge_we
+arch river_bridge_we
 x 9
 y 8
 end
@@ -3367,9 +3435,9 @@ x 9
 y 14
 end
 arch s_shop2
-name Jeweler
+name Jeweler's Workshop of Navar
 slaying /navar_city/misc/jeweler
-hp 7
+hp 10
 sp 12
 x 9
 y 14
@@ -3382,28 +3450,45 @@ arch brush
 x 9
 y 15
 end
+arch dungeon_magic
+x 9
+y 16
+end
 arch grass
 x 9
 y 16
 end
-arch westcwall_2_1_2
+arch tree5
 x 9
 y 16
 end
-arch woods_2
+arch dungeon_magic
 x 9
 y 17
-elevation 1943
 end
-arch jungle_1
+arch grass
+x 9
+y 17
+end
+arch lamppost
+x 9
+y 17
+end
+arch dungeon_magic
 x 9
 y 18
-elevation 1495
 end
-arch hills_rocky
+arch cobblestones2
+x 9
+y 18
+end
+arch grass
 x 9
 y 19
-elevation 1743
+end
+arch westcwall_2_1_2
+x 9
+y 19
 end
 arch woods_2
 x 9
@@ -3708,29 +3793,29 @@ arch cobblestones2
 x 10
 y 15
 end
-arch grass
+arch dungeon_magic
 x 10
 y 16
 end
-arch westcwall_2_1_2
+arch cobblestones2
 x 10
 y 16
 end
-arch grass_only
+arch dungeon_magic
 x 10
 y 17
 elevation 2691
 end
-arch evergreens2
+arch cobblestones2
 x 10
 y 17
 end
-arch grass_only
+arch dungeon_magic
 x 10
 y 18
 elevation 2136
 end
-arch evergreens2
+arch cobblestones2
 x 10
 y 18
 end
@@ -3739,7 +3824,7 @@ x 10
 y 19
 elevation 2112
 end
-arch evergreens2
+arch westcwall_2_1_2
 x 10
 y 19
 end
@@ -3981,10 +4066,9 @@ y 7
 end
 arch house_larg_west
 name Gunther's Smithy
-name_pl Gunther's Smithy
 slaying /navar_city/misc/city1smith
-hp 8
-sp 8
+hp 10
+sp 11
 x 11
 y 7
 end
@@ -4044,7 +4128,11 @@ arch grass_only
 x 11
 y 14
 end
-arch tree5
+arch small_temple
+name Church of Valkyrie
+slaying ../navar_city/temples/valkyrie
+hp 12
+sp 21
 x 11
 y 14
 end
@@ -4056,32 +4144,46 @@ arch cobblestones2
 x 11
 y 15
 end
+arch dungeon_magic
+x 11
+y 16
+end
 arch grass
 x 11
 y 16
 end
-arch westcwall_2_1_2
+arch church
+name Temple of Healing
+slaying ../navar_city/misc/templeofhealing
+hp 11
+sp 34
 x 11
 y 16
 end
-arch woods
+arch dungeon_magic
 x 11
 y 17
-elevation 2596
 end
-arch grass_only
+arch grass
+x 11
+y 17
+end
+arch dungeon_magic
 x 11
 y 18
 elevation 1298
 end
-arch evergreens2
+arch cobblestones2
 x 11
 y 18
 end
-arch woods_3
+arch grass
 x 11
 y 19
-elevation 1939
+end
+arch westcwall_2_1_2
+x 11
+y 19
 end
 arch woods_2
 x 11
@@ -4250,8 +4352,8 @@ end
 arch inn
 name The Frolicing Mermaid
 slaying /navar_city/misc/city1mermaid
-hp 11
-sp 12
+hp 13
+sp 13
 x 12
 end
 arch dungeon_magic
@@ -4272,10 +4374,9 @@ y 2
 end
 arch farmhouse
 name Traveller's Wayhouse
-name_pl Traveller's Wayhouse
-slaying /navar_city/city1houses3
-hp 28
-sp 22
+slaying ../navar_city/houses/travellerswayhouse
+hp 7
+sp 7
 x 12
 y 2
 end
@@ -4353,10 +4454,9 @@ y 9
 end
 arch bank_west
 name Bank of Skud, Navar Branch
-name_pl Bank of Skud, Navar Branch
 slaying /navar_city/misc/city1bank
-hp 7
-sp 14
+hp 10
+sp 16
 x 12
 y 9
 end
@@ -4378,9 +4478,9 @@ y 11
 end
 arch store_general_west
 name Eddie's Store by the Wall
-slaying /navar_city/misc/city1gen
-hp 1
-sp 1
+slaying ../navar_city/shops/city1gen
+hp 19
+sp 18
 x 12
 y 11
 end
@@ -4409,10 +4509,10 @@ x 12
 y 14
 end
 arch farmhouse
-name A Large house
-slaying /navar_city/magara/houses/large_house
-hp 1
-sp 1
+name Pimol's Fine Bow Shop
+slaying ../navar_city/shops/bow_shop
+hp 7
+sp 7
 x 12
 y 14
 end
@@ -4424,28 +4524,37 @@ arch cobblestones2
 x 12
 y 15
 end
+arch dungeon_magic
+x 12
+y 16
+end
 arch grass
 x 12
 y 16
+end
+arch dungeon_magic
+x 12
+y 17
+end
+arch grass
+x 12
+y 17
+end
+arch dungeon_magic
+x 12
+y 18
+end
+arch cobblestones2
+x 12
+y 18
+end
+arch grass
+x 12
+y 19
 end
 arch westcwall_2_1_2
 x 12
-y 16
-end
-arch jungle_1
-x 12
-y 17
-elevation 2141
-end
-arch grass
-x 12
-y 18
-elevation 46
-end
-arch jungle_1
-x 12
 y 19
-elevation 1775
 end
 arch jungle_1
 x 12
@@ -4632,7 +4741,7 @@ arch cobblestones2
 x 13
 y 3
 end
-arch westcwall_2_1_2
+arch westcwall_3_3
 x 13
 y 3
 end
@@ -4644,15 +4753,9 @@ arch grass
 x 13
 y 4
 end
-arch guard
-msg
-@match *
-'Ello, 'ello, 'ello...
-'Wot have we 'ere then?
-endmsg
+arch westcwall_2_2_1
 x 13
 y 4
-speed_left -4.000000
 end
 arch dungeon_magic
 x 13
@@ -4688,10 +4791,9 @@ y 7
 end
 arch sign_w
 name Smith St.
-name_pl Smith St.
 msg
 Blacksmith
-Visit Gunther for Special Service
+Visit Gunther for Special Service.
 endmsg
 x 13
 y 7
@@ -4760,28 +4862,39 @@ arch cobblestones2
 x 13
 y 15
 end
-arch grass
+arch dungeon_magic
 x 13
 y 16
 end
-arch westcwall_2_1_2
+arch cobblestones2
 x 13
 y 16
 end
-arch jungle_1
+arch dungeon_magic
 x 13
 y 17
-elevation 1766
 end
-arch woods_2
+arch cobblestones2
+x 13
+y 17
+end
+arch dungeon_magic
+x 13
+y 18
+end
+arch cobblestones2
 x 13
 y 18
 elevation 1212
 end
-arch woods
+arch grass
 x 13
 y 19
 elevation 1281
+end
+arch westcwall_2_1_2
+x 13
+y 19
 end
 arch jungle_1
 x 13
@@ -4937,9 +5050,8 @@ x 14
 end
 arch sign_w
 name Tavern St.
-name_pl Tavern St.
 msg
-Convivial Times for Scurvey Knaves!
+Convivial Times for Scurvy Knaves!
 endmsg
 x 14
 end
@@ -4967,7 +5079,10 @@ arch cobblestones2
 x 14
 y 3
 end
-arch westcityport_a
+arch westguard_house_4
+slaying ../navar_city/southgatehouse
+hp 7
+sp 1
 x 14
 y 3
 end
@@ -4979,6 +5094,13 @@ arch cobblestones2
 x 14
 y 4
 end
+arch westguard_house_3
+slaying ../navar_city/southgatehouse
+hp 6
+sp 16
+x 14
+y 4
+end
 arch dungeon_magic
 x 14
 y 5
@@ -4987,7 +5109,7 @@ arch cobblestones2
 x 14
 y 5
 end
-arch bridge_ns
+arch river_bridge_ns
 x 14
 y 5
 end
@@ -5070,29 +5192,33 @@ end
 arch cobblestones2
 x 14
 y 15
+end
+arch dungeon_magic
+x 14
+y 16
 end
 arch grass
 x 14
 y 16
 end
-arch westcwall_2_1_2
-x 14
-y 16
-end
-arch desert
+arch grass
 x 14
 y 17
 elevation 253
 end
-arch desert
+arch grass
 x 14
 y 18
 elevation 435
 end
-arch desert
+arch grass
 x 14
 y 19
 elevation 846
+end
+arch westcwall_2_1_2
+x 14
+y 19
 end
 arch desert
 x 14
@@ -5267,7 +5393,10 @@ arch cobblestones2
 x 15
 y 3
 end
-arch westcityport_a
+arch westguard_house_4
+slaying ../navar_city/southgatehouse
+hp 14
+sp 1
 x 15
 y 3
 end
@@ -5279,6 +5408,13 @@ arch cobblestones2
 x 15
 y 4
 end
+arch westguard_house_3
+slaying ../navar_city/southgatehouse
+hp 13
+sp 16
+x 15
+y 4
+end
 arch dungeon_magic
 x 15
 y 5
@@ -5287,7 +5423,7 @@ arch cobblestones2
 x 15
 y 5
 end
-arch bridge_ns
+arch river_bridge_ns
 x 15
 y 5
 end
@@ -5379,28 +5515,32 @@ arch grass
 x 15
 y 16
 end
-arch westcwall_2_1_2
-x 15
-y 16
-end
 arch grass_only
 x 15
 y 17
 elevation 2147
 end
-arch evergreens2
+arch draughts_house
+name Draughts of Navar
+slaying ../navar_city/misc/draughts
+hp 15
+sp 23
 x 15
 y 17
 end
-arch jungle_1
+arch grass
 x 15
 y 18
 elevation 1678
 end
-arch hills
+arch grass
 x 15
 y 19
 elevation 1241
+end
+arch westcwall_2_1_2
+x 15
+y 19
 end
 arch woods_3
 x 15
@@ -5469,12 +5609,15 @@ y 31
 elevation 4298
 end
 arch barn2
-name The Old Warehouse
+name Old Warehouse
 slaying /navar_city/smugglers_cove/sc_warehouse
 hp 7
 sp 18
 x 15
 y 31
+arch quest_advance_apply
+name navar/rescue-daughters 10-20>30
+end
 end
 arch steppe
 x 15
@@ -5580,10 +5723,9 @@ y 1
 end
 arch store_armour
 name Olaf's Armor Emporium
-name_pl Olaf's Armor Emporium
-slaying /navar_city/misc/city1armour
-hp 1
-sp 1
+slaying ../navar_city/shops/city1armour
+hp 4
+sp 15
 x 16
 y 1
 end
@@ -5603,7 +5745,7 @@ arch cobblestones2
 x 16
 y 3
 end
-arch westcwall_2_1_2
+arch westcwall_3_3
 x 16
 y 3
 end
@@ -5615,14 +5757,9 @@ arch grass
 x 16
 y 4
 end
-arch guard
-msg
-@match *
-You may pass...
-endmsg
+arch westcwall_2_2_4
 x 16
 y 4
-speed_left -4.000000
 end
 arch dungeon_magic
 x 16
@@ -5653,10 +5790,10 @@ x 16
 y 7
 end
 arch store_weapons
-name Red's Weapons Bazzar
-slaying /navar_city/misc/city1weapon
-hp 1
-sp 1
+name Red's Weapons Bazaar
+slaying ../navar_city/shops/city1weapon
+hp 12
+sp 18
 x 16
 y 7
 end
@@ -5690,9 +5827,9 @@ y 10
 end
 arch store_magic_west
 name Wizzo's Magic Shop
-slaying /navar_city/misc/city1magic
-hp 1
-sp 1
+slaying ../navar_city/shops/city1magic
+hp 10
+sp 25
 x 16
 y 10
 end
@@ -5748,28 +5885,23 @@ arch grass
 x 16
 y 16
 end
-arch westcwall_2_1_2
-x 16
-y 16
-end
-arch hills
+arch grass
 x 16
 y 17
-elevation 2931
 end
-arch grass_only
+arch grass
 x 16
 y 18
 elevation 2486
 end
-arch evergreens2
-x 16
-y 18
-end
-arch jungle_1
+arch grass
 x 16
 y 19
 elevation 2229
+end
+arch westcwall_2_1_2
+x 16
+y 19
 end
 arch grass_only
 x 16
@@ -5981,9 +6113,9 @@ y 4
 end
 arch house_larg_west
 name Ye ol' Home Depote
-slaying /navar_city/misc/buildshop
-hp 6
-sp 10
+slaying ../navar_city/shops/buildshop
+hp 8
+sp 12
 x 17
 y 4
 end
@@ -5995,7 +6127,7 @@ arch cobblestones2
 x 17
 y 5
 end
-arch bridge_ns
+arch river_bridge_ns
 x 17
 y 5
 end
@@ -6083,24 +6215,24 @@ arch grass
 x 17
 y 16
 end
-arch westcwall_2_1_2
-x 17
-y 16
-end
-arch hills
+arch grass
 x 17
 y 17
 elevation 2535
 end
-arch hills
+arch grass
 x 17
 y 18
 elevation 2551
 end
-arch hills
+arch grass
 x 17
 y 19
 elevation 2442
+end
+arch westcwall_2_1_2
+x 17
+y 19
 end
 arch hills
 x 17
@@ -6270,8 +6402,7 @@ arch cobblestones2
 x 18
 y 1
 end
-arch city_tower_west
-name Lighthouse
+arch lighthouse_west
 slaying /navar_city/light/light1
 hp 1
 sp 11
@@ -6405,11 +6536,7 @@ arch grassdark
 x 18
 y 15
 end
-arch grass
-x 18
-y 16
-end
-arch westcwall_2_1_2
+arch grassdark
 x 18
 y 16
 end
@@ -6418,19 +6545,19 @@ x 18
 y 17
 elevation 830
 end
-arch grass_only
+arch grass
 x 18
 y 18
 elevation 2598
 end
-arch evergreens2
-x 18
-y 18
-end
-arch hills
+arch grass
 x 18
 y 19
 elevation 2063
+end
+arch westcwall_2_1_2
+x 18
+y 19
 end
 arch woods_2
 x 18
@@ -6582,8 +6709,7 @@ elevation 4319
 end
 arch magic_mouth
 msg
-Hmmm...what is that ship doing so far
-out in the bay??
+Hmmm...what is that ship doing so far out in the bay??
 endmsg
 x 19
 end
@@ -6724,24 +6850,36 @@ arch grass
 x 19
 y 16
 end
-arch westcwall_2_2_4
+arch westcwall_2_1_1
 x 19
 y 16
 end
-arch steppe
+arch grass
 x 19
 y 17
 elevation 3325
 end
-arch jungle_1
+arch westcwall_2_1_1
+x 19
+y 17
+end
+arch grass
 x 19
 y 18
 elevation 2899
 end
-arch hills
+arch westcwall_2_1_1
+x 19
+y 18
+end
+arch grass
 x 19
 y 19
 elevation 2318
+end
+arch westcwall_2_2_4
+x 19
+y 19
 end
 arch hills
 x 19
@@ -7459,7 +7597,7 @@ x 22
 y 4
 end
 arch big_galleon
-name Smugglers Boat
+name Smugglers' Boat
 x 22
 y 4
 end
@@ -7607,7 +7745,6 @@ elevation 35
 end
 arch brazier
 name campfire
-name_pl campfire
 face campfire.111
 animation campfire
 x 22
