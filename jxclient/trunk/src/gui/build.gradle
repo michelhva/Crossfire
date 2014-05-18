@@ -32,14 +32,8 @@ task createJar(type: Jar, dependsOn: assemble) {
     manifest.attributes 'Main-Class': mainClassName
     manifest.attributes 'SplashScreen-Image': 'resource/splashscreen.png'
     from sourceSets.main.output
-    doFirst {
-        // The following must be executed in doFirst since the configuration
-        // has not been initialized at configuration time.
-        from(configurations.runtime.resolve().collect {
-            it.isDirectory() ? it : zipTree(it)
-        }) {
-            exclude 'META-INF/**'
-            exclude 'org/jetbrains/**'
-        }
+    from(configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) }) {
+        exclude 'META-INF/**'
+        exclude 'org/jetbrains/**'
     }
 }
