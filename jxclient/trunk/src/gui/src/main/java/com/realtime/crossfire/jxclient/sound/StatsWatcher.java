@@ -39,7 +39,7 @@ public class StatsWatcher {
     /**
      * Duration for which to ignore level changes after login.
      */
-    private static final long DELAY = 1000;
+    private static final long DELAY = 5000;
 
     /**
      * The {@link SoundManager} instance to watch.
