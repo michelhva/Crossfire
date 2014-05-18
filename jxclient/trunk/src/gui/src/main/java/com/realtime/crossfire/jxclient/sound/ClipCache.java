@@ -96,8 +96,9 @@ public class ClipCache {
         try {
             final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(name, action));
             try {
-                final Clip clip = AudioSystem.getClip();
+                final Clip clip;
                 try {
+                    clip = AudioSystem.getClip();
                     clip.open(audioInputStream);
                 } catch (final IllegalArgumentException ex) {
                     throw new UnsupportedAudioFileException(ex.getMessage());
