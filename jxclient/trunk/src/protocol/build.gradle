@@ -6,5 +6,5 @@ sourceCompatibility = 1.6
 
 dependencies {
     compile name: 'annotations', version: '0.0'
-    compile name: 'junit', version: '4.2'
+    testCompile name: 'junit', version: '4.2'
 }
