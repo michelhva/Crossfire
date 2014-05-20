@@ -1,3 +1,8 @@
+Retire splitter.pl, as it splits images into 24x24 xpm
+files, neither of which are correct anymore.
+dev/splitter.pl
+SilverNexus 2014-05-19
+
 Redesigned the wild pyromaniac face (based off madman face)
 monster/humanoid/pyromaniac.base.111.png
 monster/humanoid/pyromaniac.base.112.png
