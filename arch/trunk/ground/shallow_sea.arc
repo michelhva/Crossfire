@@ -1,4 +1,5 @@
 Object shallow_sea
+name shallow sea
 face shallow_sea.111
 animation shallow_sea
 smoothface shallow_sea.111 shallow_sea_S.111
