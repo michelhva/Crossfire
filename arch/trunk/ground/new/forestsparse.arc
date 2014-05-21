@@ -1,4 +1,5 @@
 Object forestsparse
+name sparse forest
 face forestsparse.111
 type 67
 race /terrain/forest

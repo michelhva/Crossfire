@@ -1,4 +1,5 @@
 Object fernsdense
+name dense ferns
 face fernsdense.111
 type 67
 race /terrain/forest
