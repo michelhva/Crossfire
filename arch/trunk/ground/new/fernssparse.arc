@@ -1,4 +1,5 @@
 Object fernssparse
+name sparse ferns
 face fernssparse.111
 type 67
 race /terrain/forest
