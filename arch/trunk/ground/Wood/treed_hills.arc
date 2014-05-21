@@ -1,4 +1,5 @@
 Object treed_hills
+name treed hills
 face treed_hills.111
 type 67
 race /terrain/hills
