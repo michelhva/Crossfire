@@ -1,7 +1,6 @@
 Object ironore
-name ore
-name_pl ores
-title of iron
+name iron ore
+name_pl iron ores
 race gold and jewels
 face ore_r.111
 nrof 1

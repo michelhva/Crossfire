@@ -1,7 +1,6 @@
 Object tinore
-name ore
-name_pl ores
-title of tin
+name tin ore
+name_pl tin ores
 race gold and jewels
 face ore_b.111
 nrof 1
