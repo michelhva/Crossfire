@@ -1,7 +1,6 @@
 Object leadore
-name ore
-name_pl ores
-title of lead
+name lead ore
+name_pl lead ores
 race gold and jewels
 face ore_b.111
 nrof 1

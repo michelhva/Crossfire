@@ -1,7 +1,6 @@
 Object goldore
-name ore
-name_pl ores
-title of gold
+name gold ore
+name_pl gold ores
 race gold and jewels
 face ore_y.111
 nrof 1

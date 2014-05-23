@@ -1,7 +1,6 @@
 Object silverore
-name ore
-name_pl ores
-title of silver
+name silver ore
+name_pl silver ores
 race gold and jewels
 face ore_b.111
 nrof 1

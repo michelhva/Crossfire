@@ -1,7 +1,6 @@
 Object zincore
-name ore
-name_pl ores
-title of zinc
+name zinc ore
+name_pl zinc ores
 race gold and jewels
 face ore_b.111
 nrof 1

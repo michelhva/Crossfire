@@ -1,7 +1,6 @@
 Object copperore
-name ore
-name_pl ores
-title of copper
+name copper ore
+name_pl copper ores
 race gold and jewels
 face ore_g.111
 nrof 1
