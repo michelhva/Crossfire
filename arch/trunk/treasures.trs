@@ -1658,6 +1658,37 @@ treasureone random_artifact
   list rare_artifacts
     chance 5
   end
+treasureone random_ore
+  arch rubble
+    chance 50
+  more
+  arch zincore
+    chance 30
+  more
+  arch copperore
+    chance 30
+  more
+  arch leadore
+    chance 25
+  more
+  arch tinore
+    chance 20
+  more
+  arch ironore
+    chance 15
+  more
+  arch uraniumore
+    chance 12
+  more
+  arch silverore
+    chance 9
+  more
+  arch goldore
+    chance 3
+  more
+  arch platore
+    chance 1
+  end
 treasureone uncommon_items
   arch horn
     chance 5
