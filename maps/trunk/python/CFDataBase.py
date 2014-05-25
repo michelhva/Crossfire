@@ -41,11 +41,8 @@ class CFDataBase:
 
         return 1
 
-    def get(self,name):
-        if name in self.bankdb:
-                return self.bankdb[name]
-        else:
-                return 0
+    def get(self, name, default = 0):
+        return self.bankdb.get(name, default)
 
     def remove_record(self,name):
         if name in self.bankdb:
