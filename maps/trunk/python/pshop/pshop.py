@@ -46,7 +46,7 @@ def Expire():
 
 		Inventory=Inventory.Below
 
-	Dict=CFDB.get(pshop)
+	Dict=CFDB.get(pshop, {})
 
 	for i in Dict:
 		This=Dict.get(i)
@@ -65,25 +65,41 @@ def Expire():
 		Chest.Teleport(mymap, 15,10)
 	for i in range(0,34):
 		for a in range(0,35):
-			b=GetObjectAt(whoami.Map,i,a,'NoBuild')
-			b.Remove
-			b=GetObjectAt(whoami.Map,i,a,'NoSpell')
-			b.Remove()
+			for obj in [GetObjectAt(whoami.Map,i,a,'NoBuild'),
+						GetObjectAt(whoami.Map,i,a,'NoSpell')]:
+				if obj:
+					obj.Remove()
 
-	GetObjectAt(whoami.Map,30,5,"Brazier material").Remove()
-	GetObjectAt(whoami.Map,30,6,"Firepot material").Remove()
-	GetObjectAt(whoami.Map,30,7,"Bright Firepot Material").Remove()
-	GetObjectAt(whoami.Map,29,8,"Red CWall material").Remove()
-	whoami.Map.ObjectAt(49,5).Teleport(whoami.Map,30,5)
-	whoami.Map.ObjectAt(49,4).Teleport(whoami.Map,30,6)
-	whoami.Map.ObjectAt(49,6).Teleport(whoami.Map,30,7)
-	whoami.Map.ObjectAt(49,7).Teleport(whoami.Map,29,8)
+	for obj in [GetObjectAt(whoami.Map,30,5,"Brazier material"),
+				GetObjectAt(whoami.Map,30,6,"Firepot material"),
+				GetObjectAt(whoami.Map,30,7,"Bright Firepot Material"),
+				GetObjectAt(whoami.Map,29,8,"Red CWall material")]:
+		if obj:
+			obj.Remove()
+
+
+	for pos_from, pos_to in [((49, 5), (30, 5)),
+						     ((49, 4), (30, 6)),
+						     ((49, 6), (30, 7)),
+						     ((49, 7), (29, 8))]:
+	   obj = whoami.Map.ObjectAt(*pos_from)
+
+	   if obj:
+		   obj.Teleport(whoami.Map, *pos_to)
 def GetObjectByName(object, Name):
 	while object.Name!=Name:
 		object=object.Above
 		if not object:
 			return 0
 	return object
+def GetObjectAt(Map,X,Y,Name):
+    Object=Map.ObjectAt(X,Y)
+    while Object!=None:
+        if Object.Name==Name:
+            return Object
+        else:
+            Object=Object.Above
+    return Object
 def GetObjectByWeightLimit(object, WeightLimit):
 	while object.WeightLimit!=WeightLimit:
 		object=object.Above
@@ -210,11 +226,7 @@ if whoami.Name.find("Store")>-1:
 		if Item.Value!=0:
 			Message+="\nValue: "+str(Item.Value)
 		GlassReplica.Message=Message
-		Dict=CFDB.get(pshop)
-		if Dict==0:
-			Dict={}
-		if Dict==None:
-			Dict={}
+		Dict=CFDB.get(pshop, {})
 		Dict.update({str(whoami.Value):(Value,"PickedUp",Message)})
 
 
@@ -228,7 +240,7 @@ elif whoami.Name.find("Rent Box")>-1:
 	while Inventory!=None:
 
 		if Inventory.ArchName=="event_close":
-			Inventory=Inventory.Above
+			Inventory=Inventory.Below
 		else:
 			Value+=Inventory.Value*Inventory.Quantity
 
@@ -404,14 +416,11 @@ elif Params=="InventorySay":
 	Message=Crossfire.WhatIsMessage().split()
 	if Message[0]=="Remove":
 
-		CFDB.store(pshop,None)
+		CFDB.remove_record(pshop)
 	if Message[0].upper().find("DETAIL")>-1:
 		Item=' '.join(Message[1:])
 
-		Dict=CFDB.get(pshop)
-
-		if Dict==0:
-			Dict={}
+		Dict=CFDB.get(pshop, {})
 
 		Ctrl=1
 		for i in Dict:
@@ -467,7 +476,7 @@ elif Params=="InventorySay":
 					whoami.Say(Message)
 					Ctrl=0
 elif Params=="AutoCheckout":
-	Dict=CFDB.get(pshop)
+	Dict=CFDB.get(pshop, {})
 	Inv=activator.Inventory
 	Items=[]
 	RealItems=[]
@@ -554,7 +563,7 @@ elif Params=="AutoCheckout":
 	else:
 		whoami.Say("You do not have enough cash, "+str(Price)+" silver needed.")
 elif Params=="BankCheckout":
-	Dict=CFDB.get(pshop)
+	Dict=CFDB.get(pshop, {})
 	Inv=activator.Inventory
 	Items=[]
 	RealItems=[]
@@ -661,9 +670,7 @@ elif Params=="TrashClose":
 
 else:
 	whoami.Message="xyzzy"
-	Dict=CFDB.get(pshop)
-	if Dict==0:
-		Dict={}
+	Dict=CFDB.get(pshop, {})
 	whoami.Message=''
 	for i in Dict:
 		Str=Dict.get(i)[2].split('\n')[0]
