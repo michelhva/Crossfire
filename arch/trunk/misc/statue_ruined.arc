@@ -1,4 +1,5 @@
 Object statue_ruined
+name ruined statue
 type 98
 subtype 45
 no_pick 1
