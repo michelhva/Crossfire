@@ -1,4 +1,5 @@
 Object ball_lightning
+name ball lightning
 type 102
 subtype 35
 face ball_lightning.111
