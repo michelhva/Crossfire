@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2014-04-19 Kevin Zheng
+Modified: 2014-06-05 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -11223,7 +11223,7 @@ arch dungeon_magic
 x 40
 y 31
 end
-arch cobblestones2
+arch grass
 x 40
 y 31
 end
@@ -11235,7 +11235,7 @@ arch dungeon_magic
 x 40
 y 32
 end
-arch cobblestones2
+arch grass
 x 40
 y 32
 end
@@ -11247,7 +11247,7 @@ arch dungeon_magic
 x 40
 y 33
 end
-arch cobblestones2
+arch grass
 x 40
 y 33
 end
@@ -11259,7 +11259,7 @@ arch dungeon_magic
 x 40
 y 34
 end
-arch cobblestones2
+arch grass
 x 40
 y 34
 end
@@ -11271,7 +11271,7 @@ arch dungeon_magic
 x 40
 y 35
 end
-arch cobblestones2
+arch grass
 x 40
 y 35
 end
@@ -11283,7 +11283,7 @@ arch dungeon_magic
 x 40
 y 36
 end
-arch cobblestones2
+arch grass
 x 40
 y 36
 end
@@ -11295,7 +11295,7 @@ arch dungeon_magic
 x 40
 y 37
 end
-arch cobblestones2
+arch grass
 x 40
 y 37
 end
@@ -11307,7 +11307,7 @@ arch dungeon_magic
 x 40
 y 38
 end
-arch cobblestones2
+arch grass
 x 40
 y 38
 end
@@ -11319,7 +11319,7 @@ arch dungeon_magic
 x 40
 y 39
 end
-arch cobblestones2
+arch grass
 x 40
 y 39
 end
@@ -11331,7 +11331,7 @@ arch dungeon_magic
 x 40
 y 40
 end
-arch cobblestones2
+arch grass
 x 40
 y 40
 end
@@ -11343,7 +11343,7 @@ arch dungeon_magic
 x 40
 y 41
 end
-arch cobblestones2
+arch grass
 x 40
 y 41
 end
@@ -11355,7 +11355,7 @@ arch dungeon_magic
 x 40
 y 42
 end
-arch cobblestones2
+arch grass
 x 40
 y 42
 end
@@ -11367,7 +11367,7 @@ arch dungeon_magic
 x 40
 y 43
 end
-arch cobblestones2
+arch grass
 x 40
 y 43
 end
@@ -11379,7 +11379,7 @@ arch dungeon_magic
 x 40
 y 44
 end
-arch cobblestones2
+arch grass
 x 40
 y 44
 end
@@ -11391,7 +11391,7 @@ arch dungeon_magic
 x 40
 y 45
 end
-arch cobblestones2
+arch grass
 x 40
 y 45
 end
@@ -11403,7 +11403,7 @@ arch dungeon_magic
 x 40
 y 46
 end
-arch cobblestones2
+arch grass
 x 40
 y 46
 end
@@ -11415,7 +11415,7 @@ arch dungeon_magic
 x 40
 y 47
 end
-arch cobblestones2
+arch grass
 x 40
 y 47
 end
@@ -11427,7 +11427,7 @@ arch dungeon_magic
 x 40
 y 48
 end
-arch cobblestones2
+arch grass
 x 40
 y 48
 end
@@ -11439,11 +11439,11 @@ arch dungeon_magic
 x 40
 y 49
 end
-arch cobblestones2
+arch grass
 x 40
 y 49
 end
-arch cwall_3_2
+arch cwall_2_2_1
 x 40
 y 49
 end
@@ -11666,7 +11666,7 @@ arch dungeon_magic
 x 41
 y 33
 end
-arch cobblestones2
+arch grass
 x 41
 y 33
 end
@@ -11768,7 +11768,7 @@ arch dungeon_magic
 x 41
 y 42
 end
-arch cobblestones2
+arch grass
 x 41
 y 42
 end
@@ -11780,7 +11780,7 @@ arch dungeon_magic
 x 41
 y 43
 end
-arch cobblestones2
+arch grass
 x 41
 y 43
 end
@@ -11836,7 +11836,7 @@ arch dungeon_magic
 x 41
 y 48
 end
-arch cobblestones2
+arch grass
 x 41
 y 48
 end
@@ -11848,7 +11848,7 @@ arch dungeon_magic
 x 41
 y 49
 end
-arch cobblestones2
+arch grass
 x 41
 y 49
 end
@@ -12169,7 +12169,7 @@ arch dungeon_magic
 x 42
 y 42
 end
-arch cobblestones2
+arch grass
 x 42
 y 42
 end
@@ -12237,7 +12237,7 @@ arch dungeon_magic
 x 42
 y 49
 end
-arch cobblestones2
+arch grass
 x 42
 y 49
 end
@@ -12579,7 +12579,7 @@ arch dungeon_magic
 x 43
 y 42
 end
-arch cobblestones2
+arch grass
 x 43
 y 42
 end
@@ -12647,7 +12647,7 @@ arch dungeon_magic
 x 43
 y 49
 end
-arch cobblestones2
+arch grass
 x 43
 y 49
 end
@@ -12961,7 +12961,7 @@ arch dungeon_magic
 x 44
 y 42
 end
-arch cobblestones2
+arch grass
 x 44
 y 42
 end
@@ -13029,7 +13029,7 @@ arch dungeon_magic
 x 44
 y 49
 end
-arch cobblestones2
+arch grass
 x 44
 y 49
 end
@@ -13367,7 +13367,7 @@ arch dungeon_magic
 x 45
 y 42
 end
-arch cobblestones2
+arch grass
 x 45
 y 42
 end
@@ -13437,7 +13437,7 @@ arch dungeon_magic
 x 45
 y 49
 end
-arch cobblestones2
+arch grass
 x 45
 y 49
 end
@@ -13784,7 +13784,7 @@ arch dungeon_magic
 x 46
 y 42
 end
-arch cobblestones2
+arch grass
 x 46
 y 42
 end
@@ -13852,7 +13852,7 @@ arch dungeon_magic
 x 46
 y 49
 end
-arch cobblestones2
+arch grass
 x 46
 y 49
 end
@@ -14182,7 +14182,7 @@ arch dungeon_magic
 x 47
 y 42
 end
-arch cobblestones2
+arch grass
 x 47
 y 42
 end
@@ -14252,11 +14252,11 @@ arch dungeon_magic
 x 47
 y 49
 end
-arch cobblestones2
+arch grass
 x 47
 y 49
 end
-arch cwall_2_1_2
+arch cwall_3_3
 x 47
 y 49
 end
@@ -14572,7 +14572,7 @@ arch dungeon_magic
 x 48
 y 42
 end
-arch cobblestones2
+arch grass
 x 48
 y 42
 end
@@ -14644,7 +14644,7 @@ arch dungeon_magic
 x 48
 y 49
 end
-arch cobblestones2
+arch grass
 x 48
 y 49
 end
@@ -14966,7 +14966,7 @@ arch dungeon_magic
 x 49
 y 42
 end
-arch cobblestones2
+arch grass
 x 49
 y 42
 end
@@ -15036,7 +15036,7 @@ arch dungeon_magic
 x 49
 y 49
 end
-arch cobblestones2
+arch grass
 x 49
 y 49
 end
