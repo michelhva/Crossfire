@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2013-08-12 Kevin Zheng
+Modified: 2014-06-05 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_115
@@ -18,80 +18,57 @@ tile_path_4 world_104_116
 end
 arch dungeon_magic
 end
-arch cobblestones2
-elevation 12489
+arch grass
+end
+arch house_small
+name Beginners 2
+slaying /scorn/misc/beginners2
+hp 10
+sp 15
 end
 arch dungeon_magic
 y 1
 end
 arch cobblestones2
 y 1
-elevation 14576
+elevation 14076
 end
 arch dungeon_magic
 y 2
-end
-arch cobblestones2
-y 2
-elevation 16382
-end
-arch dungeon_magic
-y 3
-end
-arch cobblestones2
-y 3
-elevation 17007
-end
-arch dungeon_magic
-y 4
 end
 arch grass
-y 4
+y 2
 elevation 16100
 end
 arch dungeon_magic
-y 5
+y 3
 end
 arch grass
-y 5
+y 3
 elevation 13733
 end
-arch dungeon_magic
-y 6
+arch cwall_2_1_2
+y 3
+end
+arch grass
+y 4
+end
+arch grass
+y 5
 end
 arch cobblestones2
 y 6
-elevation 9568
-end
-arch dungeon_magic
-y 7
 end
 arch cobblestones2
 y 7
-elevation 10989
-end
-arch dungeon_magic
-y 8
 end
 arch grass
 y 8
-elevation 9829
-end
-arch dungeon_magic
-y 9
 end
 arch woods_3
 y 9
-elevation 9345
-end
-arch dungeon_magic
-y 10
 end
 arch grass
-y 10
-elevation 7257
-end
-arch cwall_2_1_2
 y 10
 end
 arch hills_rocky
@@ -257,127 +234,74 @@ end
 arch dungeon_magic
 x 1
 end
-arch cobblestones2
+arch grass
 x 1
-elevation 13085
 end
-arch cwall_2_2_1
+arch tavern
+name Beginners 1
+slaying ../scorn/misc/beginners_entry
+hp 6
+sp 6
 x 1
 end
 arch dungeon_magic
 x 1
 y 1
 end
-arch grass
+arch cobblestones2
 x 1
 y 1
-elevation 14615
-end
-arch s_shop2
-name Eswald's Coffee Shop
-slaying /scorn/shops/coffeeshop
-msg
-Ding!
-endmsg
-hp 9
-sp 10
-x 1
-y 1
+elevation 14076
 end
 arch dungeon_magic
 x 1
 y 2
 end
-arch cobblestones2
+arch grass
 x 1
 y 2
-elevation 15699
 end
 arch dungeon_magic
 x 1
 y 3
 end
-arch cobblestones2
+arch grass
 x 1
 y 3
-elevation 16154
 end
-arch dungeon_magic
+arch cwall_2_1_2
+x 1
+y 3
+end
+arch grass
 x 1
 y 4
 end
 arch grass
 x 1
-y 4
-elevation 15568
-end
-arch house_small
-name Beginners 2
-slaying /scorn/misc/beginners2
-hp 10
-sp 15
-x 1
-y 4
-end
-arch dungeon_magic
-x 1
 y 5
-end
-arch grass
-x 1
-y 5
-elevation 13598
 end
 arch lamppost
 x 1
 y 5
 end
-arch dungeon_magic
+arch cobblestones2
 x 1
 y 6
 end
 arch cobblestones2
 x 1
-y 6
-elevation 11832
-end
-arch dungeon_magic
-x 1
 y 7
 end
-arch cobblestones2
-x 1
-y 7
-elevation 10732
-end
-arch dungeon_magic
+arch woods_3
 x 1
 y 8
 end
 arch woods_3
 x 1
-y 8
-elevation 10355
-end
-arch dungeon_magic
-x 1
 y 9
-end
-arch woods_3
-x 1
-y 9
-elevation 9819
-end
-arch dungeon_magic
-x 1
-y 10
 end
 arch grass
-x 1
-y 10
-elevation 9605
-end
-arch cwall_2_1_2
 x 1
 y 10
 end
@@ -584,73 +508,54 @@ end
 arch dungeon_magic
 x 2
 end
-arch cobblestones2
-x 2
-elevation 13028
-end
-arch dwall_2_1_2
-x 2
-end
-arch dungeon_magic
-x 2
-y 1
-end
 arch grass
 x 2
-y 1
-elevation 13035
 end
 arch sign_w
-name Wanderer's Way
+name Wanderers' Way
 msg
-Wanderer's Way...
+Beginners should head towards the houses to the west:
+Beginners 1 provides valuable life lessons, and
+Beginners 2 for some more advanced topics.
 endmsg
+x 2
+end
+arch dungeon_magic
 x 2
 y 1
 end
+arch cobblestones2
+x 2
+y 1
+elevation 14076
+end
 arch dungeon_magic
 x 2
 y 2
 end
-arch cobblestones2
+arch grass
 x 2
 y 2
-elevation 13740
 end
 arch dungeon_magic
 x 2
 y 3
 end
-arch cobblestones2
+arch grass
 x 2
 y 3
-elevation 15176
 end
-arch dungeon_magic
+arch cwall_2_1_2
+x 2
+y 3
+end
+arch grass
 x 2
 y 4
 end
 arch grass
 x 2
-y 4
-elevation 13597
-end
-arch tavern
-name Beginners 1
-slaying ../scorn/misc/beginners_entry
-hp 6
-sp 6
-x 2
-y 4
-end
-arch dungeon_magic
-x 2
 y 5
-end
-arch grass
-x 2
-y 5
-elevation 13056
 end
 arch sign_w
 name River Road
@@ -660,32 +565,17 @@ endmsg
 x 2
 y 5
 end
-arch dungeon_magic
+arch cobblestones2
 x 2
 y 6
 end
 arch cobblestones2
 x 2
-y 6
-elevation 11694
-end
-arch dungeon_magic
-x 2
 y 7
-end
-arch cobblestones2
-x 2
-y 7
-elevation 10015
-end
-arch dungeon_magic
-x 2
-y 8
 end
 arch grass
 x 2
 y 8
-elevation 9507
 end
 arch house_small
 name The Jones'
@@ -695,25 +585,11 @@ sp 2
 x 2
 y 8
 end
-arch dungeon_magic
-x 2
-y 9
-end
 arch woods_3
 x 2
 y 9
-elevation 9660
-end
-arch dungeon_magic
-x 2
-y 10
 end
 arch grass
-x 2
-y 10
-elevation 9698
-end
-arch cwall_2_1_2
 x 2
 y 10
 end
@@ -926,23 +802,16 @@ x 3
 end
 arch cobblestones2
 x 3
-elevation 13470
-end
-arch cwall_2_2_4
-x 3
+elevation 13306
 end
 arch dungeon_magic
 x 3
 y 1
 end
-arch grass
+arch cobblestones2
 x 3
 y 1
-elevation 14391
-end
-arch pillars
-x 3
-y 1
+elevation 11694
 end
 arch dungeon_magic
 x 3
@@ -951,7 +820,6 @@ end
 arch cobblestones2
 x 3
 y 2
-elevation 14549
 end
 arch dungeon_magic
 x 3
@@ -960,7 +828,11 @@ end
 arch cobblestones2
 x 3
 y 3
-elevation 14252
+elevation 7118
+end
+arch cwall_3_3
+x 3
+y 3
 end
 arch dungeon_magic
 x 3
@@ -971,61 +843,31 @@ x 3
 y 4
 elevation 13813
 end
-arch dungeon_magic
+arch cwall_2_2_1
 x 3
-y 5
+y 4
 end
 arch cobblestones2
 x 3
 y 5
-elevation 13009
 end
-arch dungeon_magic
+arch cobblestones2
 x 3
 y 6
 end
 arch cobblestones2
 x 3
-y 6
-elevation 11508
-end
-arch dungeon_magic
-x 3
 y 7
 end
-arch cobblestones2
-x 3
-y 7
-elevation 7118
-end
-arch dungeon_magic
+arch hills
 x 3
 y 8
 end
 arch hills
 x 3
-y 8
-elevation 6327
-end
-arch dungeon_magic
-x 3
 y 9
-end
-arch hills
-x 3
-y 9
-elevation 8966
-end
-arch dungeon_magic
-x 3
-y 10
 end
 arch grass
-x 3
-y 10
-elevation 9142
-end
-arch cwall_2_1_2
 x 3
 y 10
 end
@@ -1256,16 +1098,46 @@ x 4
 end
 arch cobblestones2
 x 4
-elevation 13804
+elevation 13306
 end
 arch dungeon_magic
 x 4
 y 1
 end
+arch magic_mouth
+msg
+---------------------------------------
+Welcome to Crossfire.
+To read these signs walk onto them and press `a' to apply (read) them. The same command will allow you to enter and leave any open buildings and dungeons.
+Enjoy!
+---------------------------------------
+endmsg
+x 4
+y 1
+elevation 12659
+end
 arch cobblestones2
 x 4
 y 1
-elevation 14402
+end
+arch cross_sign
+msg
+Safe places to visit...
+Central Library
+City Hall (west of central square)
+Goth's Tavern (near guard house)
+Oled's Cafe
+Patch's House (Wanderer's Way)
+Piriate Inn (in port area)
+Prison of Scorn
+The Barking Mule
+Wanderers' Inn (sleep to save!)
+Zoo (Old South Road) place to see many monsters
+...and all the stores and temples.
+Visit the Central Square for more information (due north)
+endmsg
+x 4
+y 1
 end
 arch dungeon_magic
 x 4
@@ -1285,111 +1157,44 @@ x 4
 y 3
 elevation 13299
 end
+arch guard_house_4
+x 4
+y 3
+end
 arch dungeon_magic
 x 4
 y 4
-end
-arch magic_mouth
-msg
----------------------------------------
-Welcome to Crossfire.
-To read these signs walk onto them and press `a' to apply (read) them. The same command will allow you to enter and leave any open buildings and dungeons.
-Enjoy!
----------------------------------------
-endmsg
-x 4
-y 4
-elevation 12659
 end
 arch cobblestones2
 x 4
 y 4
+elevation 12023
 end
-arch sign
-name General Information
-msg
-Safe places to visit...
-Central Library
-City Hall (west of central square)
-Goth's Tavern (near guard house)
-Oled's Cafe
-Patch's House (Wanderer's Way)
-Piriate Inn (in port area)
-Prison of Scorn
-The Barking Mule
-Wanderers' Inn (sleep to save!)
-Zoo (Old South Road) place to see many monsters
-...and all the stores and temples.
-Visit the Central Square for more information (due north)
-endmsg
+arch guard_house_3
 x 4
 y 4
-end
-arch dungeon_magic
-x 4
-y 5
 end
 arch cobblestones2
 x 4
 y 5
-elevation 12659
 end
-arch sign
-name Beginners' Information
-msg
-Beginners should head towards the houses to the west:
-Beginners 1 provides valuable life lessons, and
-Beginners 2 for some more advanced topics.
-endmsg
-x 4
-y 5
-end
-arch dungeon_magic
+arch cobblestones2
 x 4
 y 6
 end
 arch cobblestones2
 x 4
-y 6
-elevation 11347
-end
-arch dungeon_magic
-x 4
 y 7
-end
-arch cobblestones2
-x 4
-y 7
-elevation 9470
-end
-arch dungeon_magic
-x 4
-y 8
 end
 arch grass
 x 4
 y 8
-elevation 7767
-end
-arch dungeon_magic
-x 4
-y 9
 end
 arch hills
 x 4
 y 9
-elevation 8861
-end
-arch dungeon_magic
-x 4
-y 10
 end
 arch grass
-x 4
-y 10
-elevation 8800
-end
-arch cwall_2_1_2
 x 4
 y 10
 end
@@ -1643,7 +1448,6 @@ end
 arch cobblestones2
 x 5
 y 2
-elevation 12021
 end
 arch dungeon_magic
 x 5
@@ -1654,6 +1458,10 @@ x 5
 y 3
 elevation 11981
 end
+arch cwall_3_3
+x 5
+y 3
+end
 arch dungeon_magic
 x 5
 y 4
@@ -1663,41 +1471,25 @@ x 5
 y 4
 elevation 12023
 end
-arch dungeon_magic
+arch cwall_2_2_4
 x 5
-y 5
+y 4
 end
 arch cobblestones2
 x 5
 y 5
-elevation 12049
 end
-arch dungeon_magic
+arch cobblestones2
 x 5
 y 6
 end
 arch cobblestones2
 x 5
-y 6
-elevation 11110
-end
-arch dungeon_magic
-x 5
 y 7
-end
-arch cobblestones2
-x 5
-y 7
-elevation 9899
-end
-arch dungeon_magic
-x 5
-y 8
 end
 arch grass
 x 5
 y 8
-elevation 9534
 end
 arch hovels2
 name Riverside Manor
@@ -1707,25 +1499,11 @@ sp 1
 x 5
 y 8
 end
-arch dungeon_magic
+arch grass
 x 5
 y 9
 end
 arch grass
-x 5
-y 9
-elevation 9213
-end
-arch dungeon_magic
-x 5
-y 10
-end
-arch grass
-x 5
-y 10
-elevation 8473
-end
-arch cwall_2_1_2
 x 5
 y 10
 end
@@ -1959,59 +1737,51 @@ arch grass
 x 6
 elevation 12179
 end
+arch lamppost
+x 6
+end
 arch dungeon_magic
 x 6
 y 1
 end
-arch grass
+arch cobblestones2
 x 6
 y 1
+elevation 14076
+end
+arch dungeon_magic
+x 6
+y 2
+end
+arch grass
+x 6
+y 2
 elevation 12018
 end
-arch pillars
-x 6
-y 1
-end
-arch dungeon_magic
-x 6
-y 2
-end
-arch cobblestones2
-x 6
-y 2
-elevation 7941
-end
 arch dungeon_magic
 x 6
 y 3
 end
-arch cobblestones2
+arch grass
 x 6
 y 3
-elevation 10136
 end
-arch dungeon_magic
+arch cwall_2_1_2
 x 6
-y 4
+y 3
 end
 arch grass
 x 6
 y 4
-elevation 12005
 end
 arch house_2
 name Yolanda's House
 x 6
 y 4
 end
-arch dungeon_magic
-x 6
-y 5
-end
 arch grass
 x 6
 y 5
-elevation 11843
 end
 arch house_2
 name Alfalfa's House
@@ -2021,60 +1791,23 @@ sp 19
 x 6
 y 5
 end
-arch dungeon_magic
-x 6
-y 6
-end
 arch cobblestones2
 x 6
 y 6
-elevation 8851
-end
-arch dungeon_magic
-x 6
-y 6
-end
-arch cobblestones2
-x 6
-y 6
-end
-arch dungeon_magic
-x 6
-y 7
 end
 arch cobblestones2
 x 6
 y 7
-elevation 9914
 end
-arch dungeon_magic
+arch grass
 x 6
 y 8
 end
 arch grass
 x 6
-y 8
-elevation 9295
-end
-arch dungeon_magic
-x 6
 y 9
-end
-arch grass
-x 6
-y 9
-elevation 8913
-end
-arch dungeon_magic
-x 6
-y 10
 end
 arch hills
-x 6
-y 10
-elevation 7775
-end
-arch cwall_2_1_2
 x 6
 y 10
 end
@@ -2308,9 +2041,18 @@ arch dungeon_magic
 x 7
 y 1
 end
-arch grass
+arch cobblestones2
 x 7
 y 1
+elevation 14076
+end
+arch dungeon_magic
+x 7
+y 2
+end
+arch grass
+x 7
+y 2
 elevation 11305
 end
 arch inn
@@ -2319,34 +2061,23 @@ slaying /scorn/taverns/inn
 hp 12
 sp 18
 x 7
-y 1
-end
-arch dungeon_magic
-x 7
 y 2
-end
-arch cobblestones2
-x 7
-y 2
-elevation 10474
 end
 arch dungeon_magic
 x 7
 y 3
 end
-arch cobblestones2
+arch grass
 x 7
 y 3
-elevation 10689
 end
-arch dungeon_magic
+arch cwall_2_1_2
 x 7
-y 4
+y 3
 end
 arch grass
 x 7
 y 4
-elevation 11718
 end
 arch house_2
 name Rolanda's house
@@ -2356,14 +2087,9 @@ sp 9
 x 7
 y 4
 end
-arch dungeon_magic
-x 7
-y 5
-end
 arch grass
 x 7
 y 5
-elevation 11649
 end
 arch house_2
 name Eric's Place
@@ -2373,52 +2099,23 @@ sp 1
 x 7
 y 5
 end
-arch dungeon_magic
+arch cobblestones2
 x 7
 y 6
 end
 arch cobblestones2
 x 7
-y 6
-elevation 10747
-end
-arch dungeon_magic
-x 7
 y 7
-end
-arch cobblestones2
-x 7
-y 7
-elevation 9909
-end
-arch dungeon_magic
-x 7
-y 8
 end
 arch grass
 x 7
 y 8
-elevation 8090
-end
-arch dungeon_magic
-x 7
-y 9
 end
 arch hills
 x 7
 y 9
-elevation 8526
-end
-arch dungeon_magic
-x 7
-y 10
 end
 arch hills
-x 7
-y 10
-elevation 6889
-end
-arch cwall_2_1_2
 x 7
 y 10
 end
@@ -2653,37 +2350,34 @@ arch dungeon_magic
 x 8
 y 1
 end
-arch grass
+arch cobblestones2
 x 8
 y 1
-elevation 10675
+elevation 14076
 end
 arch dungeon_magic
 x 8
 y 2
 end
-arch cobblestones2
+arch grass
 x 8
 y 2
-elevation 10129
 end
 arch dungeon_magic
 x 8
 y 3
 end
-arch cobblestones2
+arch grass
 x 8
 y 3
-elevation 9930
 end
-arch dungeon_magic
+arch cwall_2_1_2
 x 8
-y 4
+y 3
 end
 arch grass
 x 8
 y 4
-elevation 10990
 end
 arch farmhouse
 name Patch's House
@@ -2693,65 +2387,31 @@ sp 1
 x 8
 y 4
 end
-arch dungeon_magic
-x 8
-y 5
-end
 arch grass
 x 8
 y 5
-elevation 11118
 end
-arch dungeon_magic
+arch cobblestones2
 x 8
 y 6
 end
 arch cobblestones2
 x 8
-y 6
-elevation 10600
-end
-arch dungeon_magic
-x 8
 y 7
-end
-arch cobblestones2
-x 8
-y 7
-elevation 10094
-end
-arch dungeon_magic
-x 8
-y 8
 end
 arch hills
 x 8
 y 8
-elevation 9531
-end
-arch dungeon_magic
-x 8
-y 9
 end
 arch grass
 x 8
 y 9
-elevation 8449
 end
 arch mountain3
 x 8
 y 9
 end
-arch dungeon_magic
-x 8
-y 10
-end
 arch grass
-x 8
-y 10
-elevation 6225
-end
-arch cwall_2_1_2
 x 8
 y 10
 end
@@ -2981,46 +2641,50 @@ arch dungeon_magic
 x 9
 y 1
 end
-arch grass
+arch cobblestones2
 x 9
 y 1
-elevation 9384
+elevation 14076
 end
 arch dungeon_magic
 x 9
 y 2
 end
-arch cobblestones2
+arch grass
 x 9
 y 2
-elevation 8478
+elevation 14615
+end
+arch s_shop2
+name Eswald's Coffee Shop
+slaying /scorn/shops/coffeeshop
+msg
+Ding!
+endmsg
+hp 9
+sp 10
+x 9
+y 2
 end
 arch dungeon_magic
 x 9
 y 3
 end
-arch cobblestones2
+arch grass
 x 9
 y 3
-elevation 8926
 end
-arch dungeon_magic
+arch cwall_2_1_2
+x 9
+y 3
+end
+arch grass
 x 9
 y 4
 end
 arch grass
 x 9
-y 4
-elevation 9102
-end
-arch dungeon_magic
-x 9
 y 5
-end
-arch grass
-x 9
-y 5
-elevation 9429
 end
 arch house_small
 slaying /scorn/houses/easy_house.1.a
@@ -3029,56 +2693,27 @@ sp 18
 x 9
 y 5
 end
-arch dungeon_magic
+arch cobblestones2
 x 9
 y 6
 end
 arch cobblestones2
 x 9
-y 6
-elevation 9669
-end
-arch dungeon_magic
-x 9
 y 7
-end
-arch cobblestones2
-x 9
-y 7
-elevation 9759
-end
-arch dungeon_magic
-x 9
-y 8
 end
 arch grass
 x 9
 y 8
-elevation 9589
 end
 arch lamppost
 x 9
 y 8
 end
-arch dungeon_magic
-x 9
-y 9
-end
 arch hills
 x 9
 y 9
-elevation 8488
-end
-arch dungeon_magic
-x 9
-y 10
 end
 arch grass
-x 9
-y 10
-elevation 6922
-end
-arch cwall_2_1_2
 x 9
 y 10
 end
@@ -3297,101 +2932,65 @@ arch dungeon_magic
 x 10
 y 1
 end
-arch grass
+arch cobblestones2
 x 10
 y 1
+elevation 14076
+end
+arch dungeon_magic
+x 10
+y 2
+end
+arch grass
+x 10
+y 2
 elevation 7653
 end
 arch lamppost
 x 10
-y 1
-end
-arch dungeon_magic
-x 10
 y 2
-end
-arch cobblestones2
-x 10
-y 2
-elevation 7383
 end
 arch dungeon_magic
 x 10
 y 3
 end
-arch cobblestones2
+arch grass
 x 10
 y 3
-elevation 7172
 end
-arch dungeon_magic
+arch cwall_2_1_2
 x 10
-y 4
+y 3
 end
 arch grass
 x 10
 y 4
-elevation 5985
-end
-arch dungeon_magic
-x 10
-y 5
 end
 arch woods_3
 x 10
 y 5
-elevation 6137
 end
-arch dungeon_magic
+arch cobblestones2
 x 10
 y 6
 end
 arch cobblestones2
 x 10
-y 6
-elevation 8452
-end
-arch dungeon_magic
-x 10
 y 7
-end
-arch cobblestones2
-x 10
-y 7
-elevation 8800
-end
-arch dungeon_magic
-x 10
-y 8
 end
 arch grass
 x 10
 y 8
-elevation 8932
 end
 arch mountain3
 x 10
 y 8
 end
-arch dungeon_magic
-x 10
-y 9
-end
 arch hills
 x 10
 y 9
-elevation 8581
-end
-arch dungeon_magic
-x 10
-y 10
 end
 arch grass
-x 10
-y 10
-elevation 7552
-end
-arch cwall_2_1_2
 x 10
 y 10
 end
@@ -3627,91 +3226,55 @@ arch dungeon_magic
 x 11
 y 3
 end
-arch cobblestones2
+arch grass
 x 11
 y 3
-elevation 5899
 end
-arch dungeon_magic
+arch cwall_2_1_2
 x 11
-y 4
+y 3
 end
 arch grass
 x 11
 y 4
-elevation 6055
 end
 arch house_small
 x 11
 y 4
 end
-arch dungeon_magic
-x 11
-y 5
-end
 arch hills
 x 11
 y 5
-elevation 6472
 end
 arch woods5
 x 11
 y 5
-end
-arch dungeon_magic
-x 11
-y 6
 end
 arch cobblestones2
 x 11
 y 6
-elevation 7276
-end
-arch dungeon_magic
-x 11
-y 7
 end
 arch woods_3
 x 11
 y 7
-elevation 7857
-end
-arch dungeon_magic
-x 11
-y 8
 end
 arch hills
 x 11
 y 8
-elevation 7421
 end
 arch woods5
 x 11
 y 8
 end
-arch dungeon_magic
-x 11
-y 9
-end
 arch grass
 x 11
 y 9
-elevation 7899
 end
 arch mountain3
 x 11
 y 9
 end
-arch dungeon_magic
-x 11
-y 10
-end
 arch hills
-x 11
-y 10
-elevation 7413
-end
-arch cwall_2_1_2
 x 11
 y 10
 end
@@ -3959,28 +3522,17 @@ x 12
 y 3
 elevation 5731
 end
-arch dungeon_magic
+arch cwall_2_1_2
 x 12
-y 4
+y 3
 end
 arch woods_3
 x 12
 y 4
-elevation 4934
-end
-arch dungeon_magic
-x 12
-y 5
-end
-arch dungeon_magic
-x 12
-y 5
-elevation 5541
 end
 arch brush
 x 12
 y 5
-elevation 2552
 end
 arch city_tower
 name Scorn's Brewery
@@ -3990,52 +3542,23 @@ sp 8
 x 12
 y 5
 end
-arch dungeon_magic
-x 12
-y 6
-end
 arch brush
 x 12
 y 6
-elevation 6401
-end
-arch dungeon_magic
-x 12
-y 7
 end
 arch hills
 x 12
 y 7
-elevation 7019
-end
-arch dungeon_magic
-x 12
-y 8
 end
 arch woods_3
 x 12
 y 8
-elevation 7097
-end
-arch dungeon_magic
-x 12
-y 9
 end
 arch grass
 x 12
 y 9
-elevation 5412
-end
-arch dungeon_magic
-x 12
-y 10
 end
 arch hills
-x 12
-y 10
-elevation 7150
-end
-arch cwall_2_1_2
 x 12
 y 10
 end
@@ -4279,98 +3802,35 @@ x 13
 y 3
 elevation 6321
 end
-arch cwall_2_1_1
+arch cwall_2_2_4
 x 13
 y 3
 end
-arch dungeon_magic
+arch grass
 x 13
 y 4
 end
 arch grass
-x 13
-y 4
-elevation 5961
-end
-arch cwall_2_1_1
-x 13
-y 4
-end
-arch dungeon_magic
 x 13
 y 5
 end
 arch grass
 x 13
-y 5
-elevation 5821
-end
-arch cwall_2_1_1
-x 13
-y 5
-end
-arch dungeon_magic
-x 13
 y 6
 end
 arch grass
-x 13
-y 6
-elevation 5498
-end
-arch cwall_2_1_1
-x 13
-y 6
-end
-arch dungeon_magic
 x 13
 y 7
 end
 arch grass
 x 13
-y 7
-elevation 6549
-end
-arch cwall_2_1_1
-x 13
-y 7
-end
-arch dungeon_magic
-x 13
 y 8
 end
 arch grass
 x 13
-y 8
-elevation 7070
-end
-arch cwall_2_1_1
-x 13
-y 8
-end
-arch dungeon_magic
-x 13
 y 9
 end
 arch grass
-x 13
-y 9
-elevation 7219
-end
-arch cwall_2_1_1
-x 13
-y 9
-end
-arch dungeon_magic
-x 13
-y 10
-end
-arch grass
-x 13
-y 10
-elevation 7076
-end
-arch cwall_2_2_4
 x 13
 y 10
 end
